@@ -1,0 +1,2096 @@
+{
+  "submission": {
+    "id": "67853a3a-4a8c-4f65-9e5a-7b930feb670a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:29:27.885258Z",
+    "updated_at": "2025-12-03T12:29:27.885258Z"
+  },
+  "content": [
+    {
+      "id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "submission_id": "67853a3a-4a8c-4f65-9e5a-7b930feb670a",
+      "content_type": "manuscript",
+      "content_text": "# A functional screen of RNA binding proteins identifies genes that promote or limit the accumulation of CD138+ plasma cells\n\n## Authors\n\n- David J Turner<sup>1</sup> ([ORCID: 0000-0003-4379-6152](https://orcid.org/0000-0003-4379-6152))\n- Alexander Saveliev<sup>1</sup>\n- Fiamma Salerno<sup>1</sup>\n- Louise S Matheson<sup>1</sup>\n- Michael Screen<sup>1</sup>\n- Hannah Lawson<sup>3</sup>\n- David Wotherspoon<sup>3</sup>\n- Kamil R Kranc<sup>3</sup>\n- Martin Turner<sup>1</sup> ([ORCID: 0000-0002-3801-9896](https://orcid.org/0000-0002-3801-9896)) \u2020\n\n### Affiliations\n\n1. Immunology Programme, The Babraham Institute,Babraham Research Campus Cambridge United Kingdom ([ROR:01d5qpn59](https://ror.org/01d5qpn59))\n2. RNA Biology Laboratory, Center for Cancer Research, National Cancer Institute (NCI) Frederick United States ([ROR:040gcmg81](https://ror.org/040gcmg81))\n3. Laboratory of Haematopoietic Stem Cell and Leukaemia Biology, Queen Mary University of London London United Kingdom ([ROR:026zzn846](https://ror.org/026zzn846))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo identify roles of RNA binding proteins (RBPs) in the differentiation or survival of antibody secreting plasma cells we performed a CRISPR/Cas9 knockout screen of 1213 mouse RBPs for their ability to affect proliferation and/or survival, and the abundance of differentiated CD138 + cells in vitro. We validated the binding partners CSDE1 and STRAP as well as the m6A binding protein YTHDF2 as promoting the accumulation of CD138 + cells in vitro. We validated the EIF3 subunits EIF3K and EIF3L and components of the CCR4-NOT complex as inhibitors of CD138 + cell accumulation in vitro. In chimeric mouse models YTHDF2-deficient plasma cells failed to accumulate.\n\n## Introduction\n\nHumoral immunity requires the generation of antibody-secreting plasmablasts and plasma cells. These are derived from naive B cell precursors that enter the extrafollicular response and the germinal centre (GC) reaction (Nutt et al., 2015). Germinal centre derived antibody secreting cells may migrate to the bone marrow where they survive as long-lived plasma cells secreting high-affinity antibody.\n\nThe B- to plasma-cell transition requires substantial reprogramming of the transcriptome. This is achieved in part by the actions of transcription factors and epigenetic regulators that act within a layered system to control the timing of differentiation and its coordination with extracellular cues. Dynamic control within this system is further endowed by the integration of signal transduction pathways and post-transcriptional regulators. A central role for post-transcriptional control is mediated by microRNAs such as Mir148a (Porstner et al., 2015) and Mir155 (Lu et al., 2014) which promote and Mir125b (Gururajan et al., 2010) which suppresses plasma cell differentiation. RNA binding proteins (RBPs) act co- or post-transcriptionally to influence the quality and quantity of expressed genes. However, while estimates of the numbers of RBPs encoded in the mammalian genome vary between one to five thousand, few have been implicated in plasma cell differentiation, survival, and migration. These include, HNRNPLL which promotes differentiation indirectly by suppressing BCL6 expression (Chang et al., 2015); the non-canonical poly(A) polymerase FAM46C/TENT5C which acts as a tumour suppressor in myeloma (Bilska et al., 2020); and ZFP36L1 which is required for the emigration of plasma cells (Saveliev et al., 2021).\n\nMotivated by a lack of known roles of RBPs in plasma cell emergence and survival, we developed a CRISPR library targeting mouse RBPs and performed genetic screens for roles in B cell proliferation and survival, and for roles in regulating the accumulation of CD138 + cells in vitro as a surrogate for authentic plasma cells. We identified 103 RBPs that promote and 189 RBPs that inhibit plasma cell abundance and validated some of these using follow up assays with independent single guide RNA (sgRNA) sequences. Using mouse models, we demonstrated that YTHDF2, an N6-methyladenosine (m6A) RNA modification binding protein, acting within B cells is necessary for the accumulation of plasma cells in the bone marrow.\n\n## Results and discussion\n\n### Genetic screening identifies RBPs regulating CD138+ cell abundance\n\nWe curated a list of 1213 mouse RBPs (excluding ribosomal subunit proteins) compiled from the compendium by Gerstberger et al and presence in at least two RNA interactome capture studies (Castello et al., 2012; Baltz et al., 2012; Beckmann et al., 2015; Gerstberger et al., 2014; Kwon et al., 2013; He et al., 2016; Liepelt et al., 2016; Supplementary file 1A). A custom sgRNA library targeting these was constructed in a vector backbone expressing puromycin resistance and CD90.1 as selection markers (Figure 1\u2014figure supplement 1A). The library encodes 10 sgRNAs per gene, targets 72 positive control genes and contains 500 negative control sgRNAs. It contains 13,350 sgRNAs in total with >98.8% of sgRNAs normally distributed within a 16-fold range (Figure 1\u2014figure supplement 1B; Supplementary file 1B).\n\nTo screen RBPs that regulate cell expansion (proliferation or survival), primary mouse B cells expressing Cas9 from the Rosa26 locus were cultured in vitro on fibroblasts expressing CD40ligand and BAFF for 4 days with IL-4 followed by 4 days with IL-2115. The representation of sgRNAs at day 4 and day 8 was determined by next generation sequencing (NGS) and compared (Figure 1\u2014figure supplement 1C; Supplementary file 1C). sgRNAs targeting Trp53 and Myc enriched as expected for inhibiting and supporting cell expansion, respectively (Figure 1\u2014figure supplement 1D, E). Rc3h1, Caprin1, and Fam46c were the only RBPs enriched for limiting B cell proliferation or survival (Figure 1\u2014figure supplement 1D, E). FAM46C has been implicated in impairing the proliferation and/or survival of B cells (Mroczek et al., 2017; Bilska et al., 2020). Further supporting the predictive power of our dataset, we validated the role for Rc3h1 as limiting proliferation or survival with individual sgRNAs (Figure 1\u2014figure supplement 1F).\n\nOn day 8 of the culture, we sorted cells based on the expression of CD138, a marker of differentiated plasma cells that co-express CD267, IRF4, and BLIMP1 (encoded by Prdm1) (Figure 1\u2014figure supplement 1G), and determined the representation of sgRNAs by NGS (Figure 1\u2014figure supplement 1C; Supplementary file 1D). To identify RBPs that regulate the accumulation of CD138 + cells, but not B cell expansion between days 4 and 8, we considered the intersection between the two screens (Figure 1A). The transcription factors: Bach2, Bcl6, Spi1, and Irf8 enriched for inhibiting CD138 + cell accumulation, and Prdm1 enriched for promoting CD138 + cell accumulation, while Irf4 was required for CD138 + cell accumulation as well as B cell expansion (Figure 1A, B). These results are consistent with the established roles (Bilska et al., 2020; Ochiai et al., 2008; Ochiai et al., 2006; Muto et al., 2010; Shaffer et al., 2000; Tunyaplin et al., 2004; Carotta et al., 2014; Shapiro-Shelef et al., 2003; Lin et al., 2002; Shaffer et al., 2002; Sciammas et al., 2006; Ochiai et al., 2013) of these genes in B cells and plasma cells, and therefore underpin our confidence that novel findings in this system reflect meaningful biological effects.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72313/elife-72313-fig1-v2.jpg)\n\n**Figure 1.:** (A) Dot plot representation of genetic screens of B cell proliferation/survival, and CD138 + cell accumulation: X-axis shows z-score of gene-level log2 fold change (LFC) for CD138 + cell accumulation (CD138 +v CD138- cells) and Y-axis shows z-score of gene-level LFC (day 8 v day 4 cells) for B cell expansion calculated by MAGECK. (B) Top: Distribution of enrichments of all sgRNAs (z-scores of sgRNA-level LFC: CD138 +v CD138- cells) for the CD138 + cell accumulation screen. Bottom: Enrichment for each of the ten sgRNAs, represented as red lines, targeting one of the indicated genes in comparison to the overall distribution of sgRNAs in the screen, depicted as the grey density in the middle of each bar. (C) The ratio of the proportion of cells expressing CD138 in Cas9 + cells and Cas9- cells transduced by viruses with non-targeting (NT), Prmd1, Bach2, Csde1, Strap, Eif3k, Eif3l targeting sgRNAs at day-8 of the in vitro B cell culture the data are representative of between two and four experiments performed on different days. Statistical significance was determined by two-tailed unpaired Student\u2019s t-test, p values unadjusted for multiple testing are plotted. Each symbol is representative of a distinct sgRNA. (D) Same as in (A) with additional genes highlighted. (E) Same as in (B) with additional genes highlighted. (F) Same as in (C) with Ythdf2, Mettl3, Tnrc6a, Cnot9 targeting sgRNAs and paired sgRNAs against Cnot10/Cnot11. the data are representative of between two and four experiments performed on different days. (G) Left: representative flow cytometry for Ythdf2 CTL and Ythdf2 CKO and right: summary data of the proportion of cells expressing CD138 at day 8 of an in vitro culture of B cells from Ythdf2fl/fl mice (closed circles) or Ythdf2fl/fl-Vav1-iCre mice (open squares); the data are representative of three experiments performed on different days. Statistical significance was determined by two-tailed unpaired Student\u2019s t-test. Each symbol is representative of cells from a single mouse.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72313/elife-72313-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic representation of the vector for the custom sgRNA library. (B) Distribution of the relative representation of sgRNAs within the sgRNA library. Red vertical lines indicate the upper and lower bounds of a 16-fold range in representation that includes 98.8% of all sgRNAs. (C) Schematic representation of the pooled CRISPR/Cas9 knockout screens in primary mouse B cells. Comparison of sgRNA representation between day 4 and day 8 identified genes involved in proliferation and/or survival. Comparison of representation between day 8 cells sorted as CD138 +ve or -ve identified genes promoting or inhibiting plasma cell accumulation. (D) Enrichment plot for the proliferation and/or survival screen. The Y-axis shows z-score of gene-level log2 fold change (LFC) (day 8 v day 4 cells). X-axis shows rank of genes by z-score of gene-level LFC. (E) Top: Distribution of enrichments of all sgRNAs (z-scores of sgRNA-level LFC: day 8 v day 4 cells) for the B cell proliferation and/or survival screen. Bottom: LFC (day 8 v day 4 cells) for all ten sgRNAs targeting the indicated genes. The grey gradient in the middle of each bar depicts the overall distribution. Red lines represent individual sgRNAs targeting a given gene. (F) Left: Representative flow cytometry and right: quantification of the proportion of cells in coculture that are expressing Cas9-GFP at day 8 of an in vitro culture. Each symbol represents an individual non-targeting (NT) sgRNA (closed circles) or Rc3h1 sgRNA (open squares). Statistical significance was determined by two-tailed unpaired Student\u2019s t-test. (G) Representative flow cytometry of B220hi CD138- or B220lo CD138 +in vitro derived cells for expression of IRF4, BLIMP1, CD267 and CD19. (H) Volcano plot representation of CRISPR/Cas9 screen of plasma cell accumulation. X-axis shows z-score of gene-level LFC (CD138 +v CD138- cells) and the Y-axis shows FDR adjusted p-value calculated by MAGECK. (I) Top: The percentage of Cas9 +and Cas9- cells expressing CD138 transduced by viruses with non-targeting (NT), Ythdf2, Csde1, Strap, Eif3k, Eif3l, Tnrca, Cnot9 sgRNAs or paired sgRNAs against Cnot10/Cnot11 at day-8 of the in vitro B cell culture. The data are representative of between two and four experiments performed on different days. Each symbol is representative of a distinct sgRNA. Bottom: Representative flow cytometry showing B220 and CD138 staining of GFP+ (Cas9 expressing) and GFP- (Cas9 non-expressing) cells at day 8 of an in vitro culture following transduction with viruses expressing non-targeting sgRNA or sgRNA targeting Ythdf2. (J) Left: representative flow cytometry analysis of cell trace dilution of 72 hr anti-IgM stimulated B cells. Right: Enumeration of absolute cell number per generation. (K) Left: representative flow cytometry analysis for Ythdf2 CTL and Ythdf2 CKO of the proportions of cells expressing IgG1 and IgE at day 8 of an in vitro culture. Right: Quantification of the proportion of cells expressing each IgH isotype.\n\nWe focused on the 137 RBPs that enriched for a role in regulating plasma cell accumulation that did not enrich for a role in the proliferation and/or survival of B cells (Supplementary file 1E). These enriched genes may regulate the emergence, proliferation or survival of CD138 + cells. We validated CSDE1 and STRAP which bind to each other (Hunt et al., 1999) as promoting CD138 + cell accumulation and the eIF3 octamer subunits eIF3K and eIF3L as limiting CD138 + cell accumulation (Figure 1C, Figure 1\u2014figure supplement 1H, I). Loss-of-function mutations in eIF3K and eIF3L have previously been shown to extend Caenorhabditis elegans lifespan by enhancing resistance to endoplasmic reticulum (ER) stress (Cattie et al., 2016). Hence, eIF3K and eIF3L may inhibit CD138 + cell appearance by limiting tolerance to ER stress. All three YTHDF-family members of m6A binding proteins were also enriched for increasing CD138 + cell abundance (Figure 1D) of which Ythdf2 had the most pronounced effect (Figure 1E, F; Figure 1\u2014figure supplement 1H, I). In further support of a role of m6A in promoting CD138 + cell accumulation, the three core components of the m6A writer complex (Mettl3, Mettl14 and Wtap), had convergent enrichment close to our cutoff for significance as promoting CD138 + cell abundance (Figure 1D, F). By contrast, ZFP36, an AU-rich element binding protein, and the TNRC6 family critical for miRNA mediated repression were enriched for limiting CD138 + cell abundance (Figure 1D\u2013F and Figure 1\u2014figure supplement 1H, I). ZFP36 has been previously reported to limit CD138 + cell appearance in vitro (Chu et al., 2016).\n\nThe YTHDF-, ZFP36- and TNRC6-families of RBPs are all known to promote RNA decay by recruiting the CCR4-NOT complex leading to deadenylation and subsequent decay (Du et al., 2016; Fabian et al., 2013; Chen et al., 2014). Interestingly, CNOT9, and the interacting partners CNOT-10 and \u201311 which form a CNOT submodule were enriched for limiting CD138 + cell abundance (Figure 1D\u2013F). We hypothesise that the CCR4-NOT complex via its interactions with different adapters may act as a post-transcriptional hub that controls survival or the decision to differentiate. In this model, we envisage the ZFP36- and TNRC6-families suppress transcripts that promote plasma cell differentiation or survival, while the YTHDF-family suppress transcripts that inhibit plasma cell differentiation or survival.\n\n### Antibody secreting cells deficient for YTHDF2 fail to accumulate\n\nOur screen demonstrated that Ythdf2 and its paralogues promote CD138 + cell accumulation, without appreciably affecting B cell expansion. To confirm this, we took advantage of Ythdf2fl/fl;Vav1-iCre (Ythdf2 CKO) mice, in which Ythdf2 is conditionally deleted from the haematopoietic system (Paris et al., 2019; Mapperley et al., 2021). Following anti-IgM stimulation in vitro the numbers of Ythdf2 CKO B cells at each division was not different from Ythdf2fl/fl control (Ythdf2 CTL) B cells (Figure 1\u2014figure supplement 1J). Moreover, Ythdf2 CKO B cells showed no difference in the proportions of IgG1 +and IgE + cells generated in vitro compared to Ythdf2 CTL B cells (Figure 1\u2014figure supplement 1K), indicating that class switch recombination (CSR) did not require YTHDF2 in vitro. Because Ythdf2 CKO B cells generated fewer CD138 + cells compared to Ythdf2 CTL B cells (Figure 1G), we hypothesise that YTHDF2 promotes B cell differentiation independently of a role in CSR, cell proliferation or survival, or specifically promotes the survival of differentiated CD138 + cells.\n\nTo investigate an in vivo role of Ythdf2, we established mixed bone-marrow chimeras in B6.SJL recipients with \u03bcMT and either Ythdf2 CTL or Ythdf2 CKO bone marrow cells. In these chimeras, CD45.1+ \u03bcMT stem cells, which cannot generate B cells, ensure that non-B cells are primarily Ythdf2-sufficient, whereas all B cells derive from CD45.2 + control or experimental donors. Ythdf2-deficient cells efficiently reconstituted the splenic B cell pool (Figure 2A) enabling us to test the hapten-specific responses of mature B cells lacking YTHDF2 in two independent immunisation experiments with alum precipitated 4-Hydroxy-3-nitrophenylacetyl coupled to the carrier protein Keyhole-Limpet Hemocyanin (NP-KLH). At 21 days after immunisation the ratio of high and low valency NP-binding IgG1 in Ythdf2 CKO chimeras was comparable to controls (Figure 2B), however, a slight defect may exist that remains undetected by the power of our experiment. At day 21, the number of CD138 +CD267+ (Figure 2\u2014figure supplement 1A) NIP +IgG1 + splenic plasmablasts (Figure 2C) and NIP +IgG1 + plasma cells in the bone marrow (Figure 2D) were both threefold lower in the Ythdf2 CKO compared to the controls. We observed no difference in CXCR4 expression in CD138 +CD267 + cells between genotypes (Figure 2\u2014figure supplement 1B). Together these results demonstrate a role for YTHDF2 in the accumulation of plasma cells in vivo.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72313/elife-72313-fig2-v2.jpg)\n\n**Figure 2.:** (A) Left: Representative flow cytometry analysis of cells expressing CD45.2 and CD19 in spleen of \u00b5MT chimeras 14 weeks after reconstitution. Numbers refer to the proportion of viable single cells within CD45.2 + CD19 + gate. Right: The number of cells expressing CD45.2 and CD19, n = 11. (B) Left: End point titre of serum for anti-NP20 IgG1 antibody. Center: End point titre of serum for anti-NP1.5 IgG1 antibody Right: Ratio of end point titres of serum for anti-NP1.5 and anti-NP20 IgG1 antibodies. Representative flow cytometry analysis of NIP and IgG1 intracellular staining of spleen (C) or bone marrow (D) cells expressing CD138 and CD267. The numbers in the bottom right corner of left-hand panels of C and D show the number of events plotted. The numbers adjacent to the gates indicate the proportion of NIP +IgG1 + cells. The right-hand panels of C and D show the number of cells expressing NIP and IgG1 per million viable cells as calculated from the indicated gates. Each symbol represents an individual Ythdf2fl/fl control (closed circles, n = 6) and Ythdf2fl/fl-Vav1-iCre knockout (open squares, n = 8) mouse. Statistical significance was determined by a two-tailed unpaired Student\u2019s t-test. The data are pooled from two separate immunisation experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72313/elife-72313-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative flow cytometry plots of CD138, CD267 staining on splenic cells of \u03bcMT chimeras gated as CD45.2+. (B) Representative histograms and geometric mean fluorescent intensities (gMFIs) for CXCR4 signal in CD138 +CD267 + cells in the spleen of \u03bcMT chimeras 21 days after immunisation.\n\nAs an independent experimental approach of addressing the role of YTHDF2 in plasma cell accumulation, we also generated competitive mixed bone marrow chimeras in lethally irradiated B6.SJL recipients with equal amounts of CD45.1 + B6.SJL and either CD45.2 + Ythdf2 CTL or Ythdf2 CKO bone marrow cells and performed one immunisation experiment with NP-KLH. This system allows YTHDF2-deficient B cells to be in competition with YTHDF2-sufficient B cells at all developmental stages, thus offering a stringent test for functionality of YTHDF2-deficient cells. The Ythdf2 conditional allele was engineered to express a GFP-YTHDF2 fusion protein in the absence of Cre recombinase, so that GFP expression reliably indicates cells that express YTHDF2 (Ivanova et al., 2017). Previously, Ythdf2 was reported to have a minor role in promoting B cell development (Zheng et al., 2020). In our competitive chimeras, YTHDF2-deficient cells efficiently reconstituted the mature B cell pool (Figure 3A) with >98% being GFP negative and thus having undergone Cre-mediated deletion (Figure 3\u2014figure supplement 1A). At 21 days after immunisation, the number of NIP +IgG1 + splenic plasmablasts was fivefold lower in the Ythdf2 CKO chimeras compared to the controls (Figure 3B). Ythdf2 CKO plasma cells were depleted in the bone marrow compartment (Figure 3C) and those present were predominantly deficient for Ythdf2 (Figure 3\u2014figure supplement 1B). Moreover, Ythdf2 CKO antigen specific IgG1 +plasma cells in the bone marrow were also fivefold less abundant in the Ythdf2 CKO chimeras compared to the controls (Figure 3D and Figure 3\u2014figure supplement 1C). This defect was specific to the mutation of Ythdf2 as there were similar numbers of CD45.1 B6.SJL-derived plasma cells (Figure 3\u2014figure supplement 1D) and NIP +IgG1 + plasma cells (Figure 3\u2014figure supplement 1E) in the bone marrow of Ythdf2 CTL and Ythdf2 CKO chimeras. These data are consistent with the findings from the \u03bcMT chimeras and suggests Ythdf2 is required for the accumulation of plasma cells in vivo.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72313/elife-72313-fig3-v2.jpg)\n\n**Figure 3.:** (A) Left: Representative flow cytometry analysis of cells expressing CD45.2 and CD19 in spleen of competitive chimeras twelve weeks after reconstitution. Numbers refer to the proportion of viable single cells within CD45.2 + CD19 + gate. Right: The number of cells expressing CD45.2 and CD19, n \u2265 10. (B) Representative flow cytometry analysis of NIP and IgG1 intracellular staining on spleen cells gated as CD45.2 + CD138+, CD267 + cells at day 21. (C) Representative flow cytometry analysis of CD138 and CD267 staining on bone marrow cells gated as CD45.2 + at day 21. (D) Representative flow cytometry analysis of NIP and IgG1 intracellular staining on bone marrow cells gated as CD45.2 + CD138+, CD267 +at day 21. For each condition, the numbers in the bottom right corner of left-hand panels show the number of events plotted. The numbers adjacent to the gates indicate the proportion of cells within the gate. For each condition, the right-hand plots show the number of cells per million viable cells. Symbols represent data from an individual Ythdf2fl/fl control (closed circles, n = 3) and Ythdf2fl/fl-Vav1-iCre knockout (open squares, n = 6) mouse. Statistical significance was determined by two-tailed unpaired Student\u2019s t-test. The data are from a single immunisation experiment.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72313/elife-72313-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Left: Representative histograms of GFP-YTHDF2 fusion protein expression in surface stained CD45.2 positive total splenic B cells, splenic germinal centre B cells, splenic plasmablasts of competitive chimeras. Right: proportion of CD45.2 + cells within Ythdf2 CKO competitive chimeras expressing GFP-YTHDF2 +fusion protein, n = 6. (B) Left: Representative histograms of GFP-fluorescence in CD45.2 positive bone marrow plasma cells of competitive chimeras following fixation and intracellular staining for NIP and GFP. Right: proportion of CD45.2 + cells within Ythdf2 CKO competitive chimeras expressing GFP-YTHDF2 +fusion protein, n = 6. (C) Enumeration of CD138 +CD267 + NIP + IgG1 + cells that stained or lacked staining for CD45.2 in Ythdf2 CKO competitive chimeras at day 21, n = 6. (D) Representative flow cytometry analysis of CD138, CD267 staining on bone marrow cells of competitive chimeras gated as CD45.2- at day 21. (E) Representative flow cytometry analysis of NIP and IgG1 intracellular staining on bone marrow cells of competitive chimeras gated as CD45.2- CD138+, CD267 +at day 21. For each condition, the numbers in the bottom right corner of left-hand panels show the number of events plotted; the numbers adjacent to the gates indicate the proportion of cells within the gate. For each condition, the right-hand plots show the number of cells per million viable cells. Symbols represent data from an individual Ythdf2fl/fl control (closed circles, n = 3) and Ythdf2fl/fl-Vav1-iCre knockout (open squares, n = 6) mouse.\n\n### The spectrum of m6A modified transcripts in B cells\n\nTo further understand how the m6A modification of mRNA may impact B cell activation we performed m6A-eCLIP to identify methylated transcripts within the B cell transcriptome. In total 3370 high confidence m6A sites were identified among 2658 transcripts in wild-type B cells cultured on 40LB cells for 8 days. These m6A sites were strongly enriched for DRACH (D = G/A/U, R = G/A, H = A/U/C) and more specifically the RRACU motifs (Figure 4A). m6A sites were enriched in the terminal exon and in the location of the STOP codon in accordance with published datasets (Figure 4B; Dominissini et al., 2012; Meyer et al., 2012; Gerald et al., 2015). We hypothesised that m6A may mark B cell specific transcripts for turnover upon differentiation. To investigate this, we performed RNA-seq of wild-type B cells cultured on 40LB cells in vitro for eight days and sorted by flow cytometry based on B220hi CD138- or B220lo CD138 +expression. However, the m6A sites present in the B cell transcriptome (at the 3\u2019UTR and/or CDS) were not characteristic of transcripts specific to either differentiation state and were not biased to transcripts of high expression levels (Figure 4C). As YTHDF paralogues are expected to bind all available m6A sites in a transcriptome we speculate that YTHDF2 binds transcripts specific to both differentiation states (Zaccara and Jaffrey, 2020). However, we cannot rule out the possibility that YTHDF2 has an m6A independent role. Among the methylated transcripts identified were Bach2, Pax5, Irf8, and Spi1 all of which encode transcription factors that inhibit B cell terminal differentiation, and Prdm1 which promotes differentiation (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72313/elife-72313-fig4-v2.jpg)\n\n**Figure 4.:** (A) Z-scores showing enrichment of five base motifs centred at in vitro derived B cell m6A-eCLIP crosslink sites relative to randomised control sites in each replicate, n = 2. (B) Metagene analysis of the location of m6A clusters throughout the B cell transcriptome. (C) Log2 fold change for differentially expressed (FDR-adjusted p-values < 0.05) methylated (black - identified using the CLIPper pipeline) and unmethylated (grey) transcripts between CD138 +B220 lo and CD138- B220hi in vitro cultured cells, n = 3. (Left) 3\u00b4UTR methylated transcripts, (centre) CDS methylated transcripts, (right) transcripts methylated in both their 3\u00b4UTR and CDS. (D) Methylation pattern of individual transcripts encoding regulators (Bach2, Pax5, Irf8, Spi1, Prdm1) of B cell differentiation.\n\nIn summary, we have provided evidence that hundreds of RBPs regulate the accumulation of CD138 + cells. ZFP36- and TNRC6-families, as well as CNOT9 and the interacting partners CNOT10 and CNOT11 of the CCR4-NOT complex have roles in limiting the accumulation of CD138 + cells. By contrast, the CCR4-NOT binding partner YTHDF2 has an essential role in promoting the accumulation of plasma cells in the spleen and bone marrow. The mechanisms by which these RBPs limit CD138 + cell accumulation remain to be investigated. Our in vitro data support a role for YTHDF2 in promoting plasma cell accumulation via differentiation or survival, while our in vivo bone marrow data could also be explained by a role for YTHDF2 in plasma cell migration. We also observed a defect in Ythdf2 deficient plasma cell accumulation in the spleen and identified m6A methylation on transcripts encoding transcriptional repressors and promotors of plasma cell differentiation; together these indicate that YTHDF2 mediated regulation of differentiation or migration are not sufficient to fully explain YTHDF2 support of plasma cell accumulation. One tempting hypothesis is that YTHDF2 promotes plasma cell accumulation by limiting apoptosis induced by ER stress (Einstein et al., 2021) specifically within differentiated plasma cells. Furthermore, METTL3 is required for GC formation and YTHDF2 has been previously shown to have a role in supporting the germinal centre reaction (Grenov et al., 2021), which may promote plasma cell accumulation. Determining the precise mechanism by which YTHDF2 impacts plasma cell biology requires further studies of differentiation, survival and migration.\n\n## Materials and methods\n\n### Construction of sgRNA vector backbone and mouse RBP sgRNA library\n\nMSCV_hU6_BbsI-ccdB-BbsI_iScaffold_mPGK_puro-2A-CD90.1 was generated in one round of cloning from a similar plasmid previously generated in our lab (Turner and Turner, 2021) (iScaffold refers to an improved sgRNA scaffold design Dang et al., 2015). A PCR product encoding hU6_BbsI-ccdB-BbsI_iScaffold_mPGK_puro-2A-CD90.1 and the appropriate flanking sequences was generated and ligated by Gibson assembly into a XhoI +SalI linearised vector (MIGRI). Our mouse RBP sgRNA library was generated as previously described (Turner and Turner, 2021). For individual sgRNAs, two 24nt oligonucleotides were annealed and ligated by T4 ligation into our BbsI linearised MSCV backbone vector. For pairwise sgRNAs, PCR products encoding hU6_sgRNA1 and mU6_sgRNA2 with the appropriate flanking sequences were generated and ligated by Gibson assembly into a BbsI linearised RetroQ_BbsI-ccdB-BbsI_iScaffold_mPGK_CD90.1 vector. We targeted mouse RBPs identified by multiple high-throughput studies employing mRNA interactome capture (RIC) (Castello et al., 2012; Baltz et al., 2012; Beckmann et al., 2015; Gerstberger et al., 2014; Kwon et al., 2013; He et al., 2016; Liepelt et al., 2016). Our library targets RBPs identified in at least two mouse RIC studies; the mouse orthologues of RBPs identified in at least two human RIC studies; and manually curated RBPs identified in only one RIC study that had \u201cRNA binding\u201d gene ontology or were paralogues of a human RBP orthologue.\n\n### In vitro plasma cell differentiation\n\n3T3 cells expressing mouse CD40L and human BAFF (40LB cells Nojima et al., 2011) were maintained in Roswell Park Memorial Institute 1640 (RPMI-1640) media supplemented with 10% FBS and 1 x GlutaMAX (Gibco: 35050061). Irradiated (~120G\u03b3) 40LB cells were seeded at 80 \u00d7 103 cells per well in a 12-well plate in supplemented RPMI-1640 media. The next day, naive B cells were isolated from the spleens of mice using the B cell isolation kit (Miltenyi Biotec: 130-090-862) and 30 \u00d7 103 cultured on the irradiated 40LB cells with IL-4 in supplemented RPMI-1640 media (final: 10% FBS, 1 x GlutaMAX, 50 \u00b5M 2-mercaptoethanol Thermo Scientific: 31350\u2013010, 100 units/ml penicillin, and 100 \u03bcg/ml streptomycin Thermo Scientific: 15140, 10 ng/ml mIL-4 PeproTech 214\u201314). On day 4 B cells were reseeded on freshly irradiated 40LB cells with IL-21 in supplemented RPMI-1640 media (final: 10% FBS, 1 x GlutaMAX, 50 \u00b5M 2-mercaptoethanol, 100 units/ml penicillin, and 100 \u03bcg/ml streptomycin, 10 ng/ml mIL-21 PeproTech 210\u201321). On day 8, B cells were harvested and analysed. 40LB cells were a kind gift from Prof D. Kitamura, they were negative for mycoplasma contamination, and authenticated for CD40L expression by flow cytometry.\n\n### Retrovirus production and transduction\n\nThe Plat-E retrovirus packaging cell line was maintained in supplemented Dulbecco\u2019s modified Eagle\u2019s (DMEM) high glucose media (Gibco: 41965) with 10% fetal bovine serum (FBS). Plat-E cells in logarithmic growth phase were seeded in dishes (Nunc 150350). The next day, a transfection mix of 1000 \u03bcl OptiMEM (Gibco: 31985), 30 \u03bcl TransIT\u2013293 (Mirus Bio: MIR2700), 9 \u00b5g transfer vector, 2 \u00b5g packaging pCL-ECO vector was added dropwise and incubated with the cells overnight. The media was replaced. Then, for 2 sequential days the viral supernatant was harvested. B cells cultured on 40LBs for 3 days were transduced with retrovirus particles encoding sgRNAs in the presence of 4 ng/ml polybrene (Sigma-Aldrich: H9268), by spin-fection at 1000 g for 45 min at 32 \u00b0C.\n\n### CRISPR/Cas9 genetic screen of B cell differentiation, proliferation, and survival\n\nB cells were cultured with 40LB, on day 3 cells were transduced with the mouse RBP sgRNA library at an MOI of 0.1 with a predetermined amount of retrovirus supernatant. On day 4, transduced cells were positively selected by magnetic assisted cell sorting (MACS) via the cell surface antigen CD90.1 (Thy1.1) using microbeads (Miltenyi Biotec: 130-094-523); the manufacturer\u2019s protocol was adjusted by using 4 x less reagents and by maintaining cells at room temperature. On day 8, CD138- and CD138 +B cells were physically separated by fluorescence activated cell sorting, washed in PBS, and snap frozen on dry ice in a 15 ml conical tube before storage at \u201380 \u00b0C for future analysis of CD138 + cell accumulation. In addition, on day 4 and day 8, bulk B cells, unselected for transduction or CD138 expression, were processed and stored in a comparable fashion for future analysis of B cell proliferation/survival. Enough cells to ensure a representation of >1000 x transduced cells per sgRNA in the library were maintained at all timepoints and in all populations.\n\n### Next generation sequencing library generation for CRISPR screen\n\nGenomic DNA (gDNA) was isolated as previously described (Chen et al., 2015). Next generation sequencing (NGS) libraries were generated as previously described (Joung et al., 2017). Multiplexed NGS libraries were sequenced with an Illumina HiSeq with a 100 bp single end read. The start of the iCRISPR scaffold sequence (GTTTAAGAGCTAT) within each read was identified, and the reads trimmed to encompass the 19 bases immediately preceding this sequence. Bowtie (Langmead et al., 2009) was used to map these sequences with zero mismatches to a custom genome comprising the sgRNA sequences, and Seqmonk used to quantify the abundance of each sgRNA (https://www.bioinformatics.babraham.ac.uk/projects/seqmonk/). Analysis of our genetic screens was performed with the MAGeCK software (Li et al., 2014). MAGeCK determined gene-level LFC for the proliferation/survival (day 8 cells v day 4 cells) and plasma cell abundance (CD138 + cells v CD138- cells) screens. The non-targeting negative control sgRNAs were used to build a mean-variance model for null distribution, which in turn was used to calculate significant sgRNA enrichment. Positive and negative enrichments were calculated, then independently used in robust rank aggregation to obtain gene-level scores. This process identified the extent to which each sgRNA enriched out of the distribution of negative control sgRNAs, then ranked genes by the consistency of their sgRNAs to outperform the null hypothesis (that they would not enrich outside the NT-sgRNAs). Gene-level p-values were calculated by randomizing sgRNA to target gene allocation in permutation tests; false discovery was controlled by the Benjamini\u2013Hochberg procedure. Log2 fold changes (LFC) were calculated as the median LFC for all sgRNAs for a targeted gene that enriched in the same direction. Z-scores were calculated as the number of standard deviations from the mean of all negative control LFCs. Our statistical cutoff for gene level enrichment was set at a Z-score of greater than or equal to +/-2, and an FDR adjusted p-value of less than 0.05.\n\n### Validation of targets from CRISPR/Cas9 knockout screens\n\nA mixed population of GFP-Cas9 positive and GFP-Cas9 negative B cells, at a ratio of 75:25, were cocultured and transduced with individual sgRNA vectors against genes of interest. The ratio of transduced cells that were differentiated between the Cas9 positive and Cas9 negative populations was calculated and used to control for the variation of the in vitro germinal centre B cell culture between experiments. Furthermore, the change in GFP+: GFP- ratio over the culture indicated whether genetically modified cells (Cas9+) had a competitive advantage over unperturbed cells (Cas9-).\n\n### Proliferation assay\n\nNa-ve B cell were labelled with CellTrace Violet (Thermo Scientific: C34557), following the manufacturer\u2019s protocol, then seeded at 2 \u00d7 106 cells/ml in 100 \u03bcl per well of a 96-well plate and stimulated with anti-IgM (2.5 \u03bcg/ml) (F(ab')2 fragment, polyclonal) (Jackson ImmunoResearch: 115-006-020) with IL-4 (10 ng/ml) and IL-21 (10 ng/ml) (PeproTech: 210\u201321). The inclusion of counting beads enabled the calculation of absolute cell numbers.\n\n### Mice\n\nAll mice were on a C57BL/6 background. R26-GFP-Cas9 Mb1-Cre mice were derived from C57BL/6Cd79atm1(cre)Reth (Hobeika et al., 2006) and C57BL/6Gt(ROSA)26Sortm1(CAG-cas9*,-EGFP)Fezh (Platt et al., 2014). For \u00b5MT bone marrow chimera experiments B6.SJL-PtprcaPepcb/Boy (B6.SJL) mice were used as recipients and reconstituted with CD45.1 \u00b5MT (Ighmtm1Cgn) (Kitamura et al., 1991) and either CD45.2 Ythdf2 CTL (Ythdf2Tg(Vav1-icre)A2Kio) or CD45.2 Ythdf2 CKO (Ythdf2tm1.1Doca + Tg(Vav1-icre)A2Kio) mice (Paris et al., 2019; Mapperley et al., 2021; Ivanova et al., 2017). For competitive bone marrow chimeras, B6.SJL-PtprcaPepcb/Boy (B6.SJL) mice were used as recipients and reconstituted with B6.SJL mice and either CD45.2 Ythdf2 CTL or CD45.2 Ythdf2 CKO mice.\n\nEthics Statement: All mouse experimentation was approved by the Babraham Institute Animal Welfare and Ethical Review Body and was licensed by the United Kingdom Home Office under PPL P4D4AF812. Mice were bred and maintained in the Babraham Institute Biological Support Unit. Since the opening of this barrier facility in 2009 no primary pathogens or additional agents listed in the FELASA recommendations have been confirmed during health monitoring surveys of the stock holding rooms. Ambient temperature was ~19\u201321 \u00b0C and relative humidity 52%. Lighting was provided on a 12 hr light: 12 hr dark cycle including 15 min 'dawn' and 'dusk' periods of subdued lighting. After weaning, mice were transferred to individually ventilated cages with 1\u20135 mice per cage. Mice were fed CRM (P) VP diet (Special Diet Services) ad libitum and received seeds (e.g. sunflower, millet) at the time of cage-cleaning as part of their environmental enrichment.\n\n### Generation and primary immunisation of chimeric mouse models\n\nB6.SJL recipient mice were lethally irradiated with two doses of 5.0 Gy. For \u00b5MT chimeras, recipients were reconstituted with 3 \u00d7 106 total bone marrow cells composed from 80% \u03bcMT donor bone marrow cells and 20% either Ythdf2 CTL or Ythdf2 CKO donor bone marrow cells. For competitive chimeras, recipients were reconstituted with 3 \u00d7 106 total bone marrow cells composed from 50% B6SJL donor bone marrow cells and 50% either Ythdf2 CTL or Ythdf2 CKO donor bone marrow cells. Mice received intraperitoneal injection of 200 \u03bcl sterile PBS containing 100 \u03bcg of NP(23)KLH adsorbed in 40% v/v Alum (Serva: 12261). NP-KLH was emulsified in Alum by rotation for 30 min at room temperature protected from light.\n\n### ELISA\n\nNP-specific antibodies were detected by ELISA as previously described (Saveliev et al., 2021); antibody end point titres were used as a measure of relative concentration.\n\n### Flow cytometry\n\nCell suspensions from spleen and bone marrow were prepared and stained as previously described (Saveliev et al., 2021). NIP and IgG1 expression in CD138 +CD267 + plasma cells was detected with intracellular staining. A list of antibodies is provided in Supplementary file 1F.\n\n### m6A-eCLIP\n\nB cells were cultured in vitro and on day 8 total B cell and plasma cells were separated from 40LB cells by negative selection with H-2Kd-biotin antibody and anti-biotin microbeads (Miltenyi 130-090-485) following the manufacturer\u2019s instructions. Total RNA was prepared with a kit (Zymo R2050) following the manufacturer\u2019s instructions and sent to Eclipse Bioinnovations who isolated poly(A) RNA, crosslinked an m6A antibody, performed immunoprecipitation and NGS.\n\nData were analysed by Eclipse Bioinnovations according to their standard m6A-eCLIP analysis pipeline (https://eclipsebio.com/wp-content/uploads/2021/06/eclipsebio_data_analysis_review_m6A-eCLIP.pdf). Briefly: The first 10 bases of each read (which comprise a UMI) were trimmed using UMI-tools (Smith et al., 2017; Li et al., 2011), followed by trimming of poor quality and adaptor sequences from the 3' end of the reads using cutadapt. Reads mapping to repetitive elements were filtered out, and the remaining reads mapped to the mouse GRCm38 genome build using STAR. PCR duplicates were removed using UMI-tools. Clusters of reads (peaks of m6A modification) were identified using CLIPper (https://github.com/YeoLab/clipper/wiki/CLIPper-Home), and log2 fold change relative to the corresponding input sample calculated. Clusters that were reproducible between replicates were then identified using IDR (Krakau et al., 2017) (https://github.com/nboley/idr). Single nucleotide resolution crosslink sites with enrichment relative to input were also identified using PureCLIP (Ram\u00edrez et al., 2016). The gene or feature type to which each crosslink site was assigned was based on the Ensembl Mouse GRCm38.97 annotation release. If the site overlapped multiple genes or feature types, the most likely was chosen in a hierarchical way: first, protein coding isoforms were prioritised; second, transcript isoforms with support level <4 were prioritised; third by a hierarchy of feature types (CDS >3\u2019UTR >5\u2019UTR >intron > non-coding exon >non-coding intron); third, higher confidence isoforms (based first on transcript support level and second on whether they have a CCDS) were prioritised.\n\nTo assess enrichment of 5 base motifs at the crosslink sites, the 5 bases centred on each crosslink site for each replicate were identified, and the representation of all 5-mers quantified. This was repeated for 100 sets of control sites, where the locations of the crosslink sites were randomised across all genes that contain at least one crosslink site, ensuring the same distribution across features as in the m6A-eCLIP dataset. The z-score for each 5mer was then calculated as: (occurrence at eCLIP crosslink sites - mean occurrence at control sites) / standard deviation of occurrence at control sites.\n\nMetagene analysis of the distribution of m6A was performed on the Galaxy server using deepTools (Kim et al., 2015). The computeCoverage tool was first used using the Ensembl Mouse GRCm38.97 GTF file, scaling all CDS annotations and additionally analysing 1 kb up- and downstream of each. A BED file containing the reproducible clusters was used as the score file, and the maximum value calculated, without skipping 0 s (therefore, this will be 1 for windows containing a cluster and 0 for those without). The resulting matrix was then used as input to plotProfile, and the average across all genes plotted.\n\n### Generation and analysis of mRNA sequencing libraries\n\nFor transcriptomic analysis, total RNA was isolated from 0.4 \u00d7 106 FACS-sorted B220hi CD138- and B220lo CD138 +B cells (derived from 3 biological replicates after eight days in culture) using the RNeasy Mini Kit (Qiagen). cDNA was generated from polyadenylated transcripts employing the SMART-Seq v4 ultra low input RNA kit (Takara Bio). RNA and cDNA quality was analysed on a 2100 Bioanalyser (Agilent). mRNAseq libraries were prepared using Nextera XT DNA library preparation kit (Illumina) and quantified with KAPA library quantification kit (Roche). Barcoded libraries were multiplexed and sequenced on an Illumina HiSeq 2500-RapidRun system on a 50 bp single-end mode with a coverage of 20 M reads per sample. Reads were trimmed using Trim Galore and mapped to mouse genome GRCm38.97 using HiSat2 (2.1.0) (Love et al., 2014). Raw counts were calculated over mRNA features (excluding Ig molecules) using SeqMonk (1.47.2; https://www.bioinformatics.babraham.ac.uk/projects/seqmonk/). DESeq2 (1.30.1)60 was used to calculate differential RNA abundance and performed using default parameters, with \u2018normal\u2019 log2 fold change shrinkage. p Values were adjusted for false discovery rate using the Benjamini-Hochberg method. Information on biological replicates were included in the design formula to have paired analysis. Differentially expressed transcripts were cross-referenced with transcripts that contained peaks of m6A modification identified using CLIPper.\n",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "6be18422-3a9a-4f83-9e8d-7d6083747a0f",
+      "submission_id": "67853a3a-4a8c-4f65-9e5a-7b930feb670a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tomohiro Kurosaki, https://ror.org/035t8zc32 Osaka University Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72313.sa0](https://doi.org/10.7554/eLife.72313.sa0)\n\nThis paper utilizes an elegant Crispr-Cas9 screen to identify RNA binding proteins that may regulate B cell differentiation. With some additional work to verify that the identified proteins are important in vivo, the paper will be of interest to a broad audience of immunologists studying the signals regulating B cell differentiation during an immune response.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Tomohiro Kurosaki, https://ror.org/035t8zc32 Osaka University Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72313.sa1](https://doi.org/10.7554/eLife.72313.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The RNA m6A binding protein YTHDF2 promotes the B cell to plasma cell transition.\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Satyajit Rath as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Koji Tokoyoda (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The discrepancy of Figure 2C and 3D is confusing. Does YTHDR2 affect the formation of germinal centre B cells? If the authors just claim that GC can be formed, to support the cytometric data, histological analyses should be performed.\n\n2. Was the detection of NIP/IgG1 in CD138+ plasma cells performed by intracellular staining? Since most NP-specific IgG1-secreting plasma cells lose surface Igs, the detection may be underestimated. Alternatively, an ELISPOT assay can be also utilized.\n\n3. The identification of YTHDF2-related genes in B/plasma cells should be further assessed. The protein expression of CXCR4, S1PR, integrin alpha4, etc. by flow cytometry will be supportive to Figure 4, even if it makes no difference.\n\n4. Data presented in Figure 1C, 1F, 1G, Figure 2 and Figure 3 should be confirmed in at least 2 independent experiments performed on independent days with appropriate group sizes. The data presented here appears to be from one experimental cohort.\n\n5. For the YTHDF2 knockout experiments did the authors also measure antibody titers to the high valency NP molecules? The data showing a small but significant drop in antibody titers to low-valency NP and if high-valency titers are normal this would suggests affinity maturation maybe affected in the absence of YTHDF2. This experiment would add support to the authors conclusion that the germinal center is not affected in the absence of YTHDF2. Additionally, ELISpot assays should be used as an additional method for enumerating NP-specific plasma cells in the spleens and bone marrow since the numbers that are counted by flow cytometry are so rare.\n\n6.The statistical cutoffs and other metrics (i.e., z-score or fold change) used to define sgRNA enrichment should be clearly stated in the methods section, manuscript text, and/or figure legends.\n\n7. Details and steps for how the CRISPR/Cas9 screen, RNA-seq analysis, and eCLIP data was processed were included in the reporting summary but should also be included in the appropriate section of the manuscript.\n\n8. CD138 expression alone is not necessarily sufficient to identify plasma cells. To determine the relationship between CD138+ cells induced in their in vitro system and in vivo plasma cells, the authors should perform a principal component analysis comparing the gene expression profile obtained from their RNA-seq analysis of CD138+B220lo cells with publicly available gene expression data from plasma cells. The authors could also show the percentage of CD138+B220lo cells that express key markers of plasma cell differentiation such as Blimp1.\n\n9. The authors used mixed bone marrow chimera approaches to determine that YTHDF2 acts in a B cell intrinsic manner. However, these results do not indicate the stage of B cell differentiation where YTHDF2 acts to regulate plasma cell differentiation. Crossing the Ythdf2f/f mice to mice expressing Cre recombinase specifically in germinal center or plasma cells, such as the Jchain Cre, could clarify this issue. Alternatively, the authors could generate chimeras where they transduce Ythdf2f/f bone marrow with a tamoxifen inducible Cre to allow them to specifically ablate Ythdf2 after B cell activation has already occurred.\n\n10. It is also unclear whether YTHDF2 is regulating migration to the bone marrow or maintenance within the bone marrow. A kinetic assessment of the frequency of bone marrow plasma cells in cKO mice could clarify this question.\n\n11. The authors should include the number of times each experiment was repeated, and the total number of mice used in the figure legend. Based on the reporting form it seems that some experiments were only done once with 3-4 mice in the control group. Key experiments should be repeated at least twice with 3-6 mice per group to verify the reproducibility of their results.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors show an important role of an RNA-binding protein (RBP), YTHDF2 in the accumulation of plasma cells. In addition, by a CRISPR/Cas9 knockout screening of RBPs, the authors suggest that some RBPs are involved in plasma cell differentiation. The roles of RBPs in a lymphocyte differentiation system are very interesting, but some technical problems should be solved before publication.\n\n1. The discrepancy of Figure 2C and 3D is confusing. Does YTHDR2 affect the formation of germinal centre B cells? If the authors just claim that GC can be formed, to support the cytometric data, histological analyses should be performed.\n\n2. Was the detection of NIP/IgG1 in CD138+ plasma cells performed by intracellular staining? Since most NP-specific IgG1-secreting plasma cells lose surface Igs, the detection may be underestimated. Alternatively, an ELISPOT assay can be also utilized.\n\n3. The identification of YTHDF2-related genes in B/plasma cells should be further assessed. The protein expression of CXCR4, S1PR, integrin alpha4, etc. by flow cytometry will be supportive to Figure 4, even if it makes no difference.\n\n4. Grenov et al., (bioRxiv, 2020) show that B cell-specific METTL3-deficient mice fail to generate GC B cells and plasma cells. As METTL3 is closed to YTHDF2, the similarities and differences in the two papers should be discussed.\n\nReviewer #2 (Recommendations for the authors):\n\nData presented in Figure 1C, 1F, 1G, Figure 2 and Figure 3 should be confirmed in at least 2 independent experiments performed on independent days with appropriate group sizes. The data presented here appears to be from one experimental cohort.\n\nFor the YTHDF2 knockout experiments did the authors also measure antibody titers to the high valency NP molecules? The data showing a small but significant drop in antibody titers to low-valency NP and if high-valency titers are normal this would suggests affinity maturation maybe affected in the absence of YTHDF2. This experiment would add support to the authors conclusion that the germinal center is not affected in the absence of YTHDF2. Additionally, ELISpot assays should be used as an additional method for enumerating NP-specific plasma cells in the spleens and bone marrow since the numbers that are counted by flow cytometry are so rare.\n\nThe statistical cutoffs and other metrics (i.e., z-score or fold change) used to define sgRNA enrichment should be clearly stated in the methods section, manuscript text, and/or figure legends.\n\nDetails and steps for how the CRISPR/Cas9 screen, RNA-seq analysis, and eCLIP data was processed were included in the reporting summary but should also be included in the appropriate section of the manuscript.\n\nMultiple typos were found throughout the manuscript that should be corrected.\n\nReviewer #3 (Recommendations for the authors):\n\n1) CD138 expression alone is not necessarily sufficient to identify plasma cells. To determine the relationship between CD138+ cells induced in their in vitro system and in vivo plasma cells, the authors should perform a principal component analysis comparing the gene expression profile obtained from their RNA-seq analysis of CD138+B220lo cells with publicly available gene expression data from plasma cells. The authors could also show the percentage of CD138+B220lo cells that express key markers of plasma cell differentiation such as Blimp1.\n\n2) The authors used mixed bone marrow chimera approaches to determine that YTHDF2 acts in a B cell intrinsic manner. However, these results do not indicate the stage of B cell differentiation where YTHDF2 acts to regulate plasma cell differentiation. Crossing the Ythdf2f/f mice to mice expressing Cre recombinase specifically in germinal center or plasma cells, such as the Jchain Cre, could clarify this issue. Alternatively, the authors could generate chimeras where they transduce Ythdf2f/f bone marrow with a tamoxifen inducible Cre to allow them to specifically ablate Ythdf2 after B cell activation has already occurred.\n\n3) It is also unclear whether YTHDF2 is regulating migration to the bone marrow or maintenance within the bone marrow. A kinetic assessment of the frequency of bone marrow plasma cells in cKO mice could clarify this question.\n\n4) The authors should include the number of times each experiment was repeated, and the total number of mice used in the figure legend. Based on the reporting form it seems that some experiments were only done once with 3-4 mice in the control group. Key experiments should be repeated at least twice with 3-6 mice per group to verify the reproducibility of their results.\n",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "caa4ae1a-627c-430f-888d-a46b91bcc306",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C1",
+      "claim": "A CRISPR/Cas9 knockout screen of 1213 mouse RBPs was performed to identify their ability to affect proliferation and/or survival, and the abundance of differentiated CD138+ cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify roles of RNA binding proteins (RBPs) in the differentiation or survival of antibody secreting plasma cells we performed a CRISPR/Cas9 knockout screen of 1213 mouse RBPs for their ability to affect proliferation and/or survival, and the abundance of differentiated CD138 + cells in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the experimental approach and the number of RBPs screened.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "d61de6f4-656d-4923-9d98-58a02edf8105",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C2",
+      "claim": "CSDE1 promotes the accumulation of CD138+ cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the binding partners CSDE1 and STRAP as well as the m6A binding protein YTHDF2 as promoting the accumulation of CD138 + cells in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states validation of CSDE1 as promoting CD138+ cell accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "f2a8060b-8fb9-45ae-9467-74cf4775effd",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C3",
+      "claim": "STRAP promotes the accumulation of CD138+ cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the binding partners CSDE1 and STRAP as well as the m6A binding protein YTHDF2 as promoting the accumulation of CD138 + cells in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states validation of STRAP as promoting CD138+ cell accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "1d7d5da9-1663-4b32-930f-e99fb2f3b17f",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C4",
+      "claim": "YTHDF2 promotes the accumulation of CD138+ cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the binding partners CSDE1 and STRAP as well as the m6A binding protein YTHDF2 as promoting the accumulation of CD138 + cells in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states validation of YTHDF2 as promoting CD138+ cell accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "63ab0dfe-ff4e-46e9-b222-e7f72fc428b4",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C5",
+      "claim": "EIF3K inhibits CD138+ cell accumulation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the EIF3 subunits EIF3K and EIF3L and components of the CCR4-NOT complex as inhibitors of CD138 + cell accumulation in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states validation of EIF3K as inhibiting CD138+ cell accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "52931c7d-553c-4971-8b61-8673c69dcfda",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C6",
+      "claim": "EIF3L inhibits CD138+ cell accumulation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the EIF3 subunits EIF3K and EIF3L and components of the CCR4-NOT complex as inhibitors of CD138 + cell accumulation in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states validation of EIF3L as inhibiting CD138+ cell accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "dd78a83c-971e-4283-848c-61bd938605a6",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C7",
+      "claim": "Components of the CCR4-NOT complex inhibit CD138+ cell accumulation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the EIF3 subunits EIF3K and EIF3L and components of the CCR4-NOT complex as inhibitors of CD138 + cell accumulation in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states validation of CCR4-NOT complex components as inhibiting CD138+ cell accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "70d4b16a-ec8c-4525-9909-e2a1ee757d1e",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C8",
+      "claim": "YTHDF2-deficient plasma cells failed to accumulate in chimeric mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "In chimeric mouse models YTHDF2-deficient plasma cells failed to accumulate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states the in vivo finding from chimeric mouse models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "0f9a199d-e4b5-4e41-be19-63f09f341c27",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C9",
+      "claim": "Humoral immunity requires the generation of antibody-secreting plasmablasts and plasma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Humoral immunity requires the generation of antibody-secreting plasmablasts and plasma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about humoral immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "3bd77e30-7e42-4ae0-9000-da70b6961d13",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C10",
+      "claim": "Antibody secreting cells are derived from naive B cell precursors that enter the extrafollicular response and the germinal centre (GC) reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "These are derived from naive B cell precursors that enter the extrafollicular response and the germinal centre (GC) reaction (Nutt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nutt et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "7e8b6485-5d9c-4d00-b89b-2b7b745b4e6e",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C11",
+      "claim": "Germinal centre derived antibody secreting cells may migrate to the bone marrow where they survive as long-lived plasma cells secreting high-affinity antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Germinal centre derived antibody secreting cells may migrate to the bone marrow where they survive as long-lived plasma cells secreting high-affinity antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about plasma cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "11532c19-4c9f-490a-a84f-077738db7e78",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C12",
+      "claim": "The B- to plasma-cell transition requires substantial reprogramming of the transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "The B- to plasma-cell transition requires substantial reprogramming of the transcriptome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about B cell differentiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "0a3e1a8e-d80f-42a6-bf24-e2a77e9514dc",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C13",
+      "claim": "Transcriptome reprogramming during B- to plasma-cell transition is achieved in part by the actions of transcription factors and epigenetic regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "This is achieved in part by the actions of transcription factors and epigenetic regulators that act within a layered system to control the timing of differentiation and its coordination with extracellular cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about gene regulation during differentiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "21373a1f-9247-4e36-9446-48371f74b63e",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C14",
+      "claim": "Mir148a promotes plasma cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "A central role for post-transcriptional control is mediated by microRNAs such as Mir148a (Porstner et al., 2015) and Mir155 (Lu et al., 2014) which promote and Mir125b (Gururajan et al., 2010) which suppresses plasma cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Porstner et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "9a82ea06-03e0-4b90-b32d-c2c5af4659ad",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C15",
+      "claim": "Mir155 promotes plasma cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "A central role for post-transcriptional control is mediated by microRNAs such as Mir148a (Porstner et al., 2015) and Mir155 (Lu et al., 2014) which promote and Mir125b (Gururajan et al., 2010) which suppresses plasma cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "7cb6f0b7-a116-4fa2-a8ac-6c066bfe36a1",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C16",
+      "claim": "Mir125b suppresses plasma cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "A central role for post-transcriptional control is mediated by microRNAs such as Mir148a (Porstner et al., 2015) and Mir155 (Lu et al., 2014) which promote and Mir125b (Gururajan et al., 2010) which suppresses plasma cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gururajan et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "568a446e-a47d-4124-bd7b-f21b6c6177b9",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C17",
+      "claim": "RNA binding proteins (RBPs) act co- or post-transcriptionally to influence the quality and quantity of expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA binding proteins (RBPs) act co- or post-transcriptionally to influence the quality and quantity of expressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about RBP function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "4e569ccd-6050-49b5-9857-311e92e2480e",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C18",
+      "claim": "Estimates of the numbers of RBPs encoded in the mammalian genome vary between one to five thousand.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while estimates of the numbers of RBPs encoded in the mammalian genome vary between one to five thousand, few have been implicated in plasma cell differentiation, survival, and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the range of estimates in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "bcdec5d3-cd94-47a4-a506-f5295d975e10",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C19",
+      "claim": "Few RBPs have been implicated in plasma cell differentiation, survival, and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while estimates of the numbers of RBPs encoded in the mammalian genome vary between one to five thousand, few have been implicated in plasma cell differentiation, survival, and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "8d330dfd-02c7-4ebd-ab5b-d1c13448e4ac",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C20",
+      "claim": "HNRNPLL promotes differentiation indirectly by suppressing BCL6 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These include, HNRNPLL which promotes differentiation indirectly by suppressing BCL6 expression (Chang et al., 2015); the non-canonical poly(A) polymerase FAM46C/TENT5C which acts as a tumour suppressor in myeloma (Bilska et al., 2020); and ZFP36L1 which is required for the emigration of plasma cells (Saveliev et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "0ef3de17-b58e-42b6-be39-072f4669a56b",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C21",
+      "claim": "FAM46C/TENT5C acts as a tumour suppressor in myeloma.",
+      "claim_type": "EXPLICIT",
+      "source": "These include, HNRNPLL which promotes differentiation indirectly by suppressing BCL6 expression (Chang et al., 2015); the non-canonical poly(A) polymerase FAM46C/TENT5C which acts as a tumour suppressor in myeloma (Bilska et al., 2020); and ZFP36L1 which is required for the emigration of plasma cells (Saveliev et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bilska et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "26098b4a-075c-4f05-8165-3a3e9024fc6e",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C22",
+      "claim": "ZFP36L1 is required for the emigration of plasma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These include, HNRNPLL which promotes differentiation indirectly by suppressing BCL6 expression (Chang et al., 2015); the non-canonical poly(A) polymerase FAM46C/TENT5C which acts as a tumour suppressor in myeloma (Bilska et al., 2020); and ZFP36L1 which is required for the emigration of plasma cells (Saveliev et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Saveliev et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "98d84a4d-71b6-4f6e-b300-21d69d73afea",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C23",
+      "claim": "The study identified 103 RBPs that promote CD138+ cell abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 103 RBPs that promote and 189 RBPs that inhibit plasma cell abundance and validated some of these using follow up assays with independent single guide RNA (sgRNA) sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the screening results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "9991d086-966e-4fe2-a7d1-33192c4f9ca2",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C24",
+      "claim": "The study identified 189 RBPs that inhibit CD138+ cell abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 103 RBPs that promote and 189 RBPs that inhibit plasma cell abundance and validated some of these using follow up assays with independent single guide RNA (sgRNA) sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the screening results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "7778085f-abe0-4b9b-9b27-8095d77a4301",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C25",
+      "claim": "YTHDF2, an N6-methyladenosine (m6A) RNA modification binding protein, acting within B cells is necessary for the accumulation of plasma cells in the bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mouse models, we demonstrated that YTHDF2, an N6-methyladenosine (m6A) RNA modification binding protein, acting within B cells is necessary for the accumulation of plasma cells in the bone marrow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the in vivo experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "7c1dfd1a-cc12-4993-a931-6178b4e91792",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C26",
+      "claim": "The custom sgRNA library was constructed in a vector backbone expressing puromycin resistance and CD90.1 as selection markers.",
+      "claim_type": "EXPLICIT",
+      "source": "A custom sgRNA library targeting these was constructed in a vector backbone expressing puromycin resistance and CD90.1 as selection markers (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the construction of the screening library with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "79173140-9462-4863-951a-fe55dbc09f5c",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C27",
+      "claim": "The library encodes 10 sgRNAs per gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The library encodes 10 sgRNAs per gene, targets 72 positive control genes and contains 500 negative control sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the sgRNA library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "54231349-92e3-4906-8f40-fe7e7b4abfc9",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C28",
+      "claim": "The library targets 72 positive control genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The library encodes 10 sgRNAs per gene, targets 72 positive control genes and contains 500 negative control sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the sgRNA library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "61c10e09-8a35-4d11-b1a7-d7e0d3a2c8fc",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C29",
+      "claim": "The library contains 500 negative control sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The library encodes 10 sgRNAs per gene, targets 72 positive control genes and contains 500 negative control sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the sgRNA library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "2ff09bb8-1792-4422-aec2-61c19987b8ce",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C30",
+      "claim": "The library contains 13,350 sgRNAs in total.",
+      "claim_type": "EXPLICIT",
+      "source": "It contains 13,350 sgRNAs in total with >98.8% of sgRNAs normally distributed within a 16-fold range (Figure 1\u2014figure supplement 1B; Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the total number of sgRNAs in the library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "20c83ec4-aed7-4568-adcf-8df28adfa663",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C31",
+      "claim": ">98.8% of sgRNAs are normally distributed within a 16-fold range.",
+      "claim_type": "EXPLICIT",
+      "source": "It contains 13,350 sgRNAs in total with >98.8% of sgRNAs normally distributed within a 16-fold range (Figure 1\u2014figure supplement 1B; Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the distribution of sgRNAs in the library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "a0bce0e0-c2ff-4746-bb7f-e95b45e58c0f",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C32",
+      "claim": "Primary mouse B cells expressing Cas9 from the Rosa26 locus were cultured in vitro on fibroblasts expressing CD40ligand and BAFF for 4 days with IL-4 followed by 4 days with IL-21.",
+      "claim_type": "EXPLICIT",
+      "source": "To screen RBPs that regulate cell expansion (proliferation or survival), primary mouse B cells expressing Cas9 from the Rosa26 locus were cultured in vitro on fibroblasts expressing CD40ligand and BAFF for 4 days with IL-4 followed by 4 days with IL-2115.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental culture conditions for the screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "47d9bad2-1bc4-490e-9940-056328962e85",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C33",
+      "claim": "sgRNAs targeting Trp53 enriched as expected for inhibiting cell expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "sgRNAs targeting Trp53 and Myc enriched as expected for inhibiting and supporting cell expansion, respectively (Figure 1\u2014figure supplement 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the validation of the screen using known control genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "84195380-97c0-4c0c-bf7d-e3f6b2c748ac",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C34",
+      "claim": "sgRNAs targeting Myc enriched as expected for supporting cell expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "sgRNAs targeting Trp53 and Myc enriched as expected for inhibiting and supporting cell expansion, respectively (Figure 1\u2014figure supplement 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the validation of the screen using known control genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "c1bbde45-a5ae-4b77-8f29-6189b100d606",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C35",
+      "claim": "Rc3h1, Caprin1, and Fam46c were the only RBPs enriched for limiting B cell proliferation or survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Rc3h1, Caprin1, and Fam46c were the only RBPs enriched for limiting B cell proliferation or survival (Figure 1\u2014figure supplement 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the screening results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "46312837-89ed-47a5-af94-9184014f3d22",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C36",
+      "claim": "FAM46C has been implicated in impairing the proliferation and/or survival of B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "FAM46C has been implicated in impairing the proliferation and/or survival of B cells (Mroczek et al., 2017; Bilska et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mroczek et al., 2017 and Bilska et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "735540e1-f8ca-442d-b0f6-19a316f4aee3",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C37",
+      "claim": "The role for Rc3h1 as limiting proliferation or survival was validated with individual sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further supporting the predictive power of our dataset, we validated the role for Rc3h1 as limiting proliferation or survival with individual sgRNAs (Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes validation experiments with individual sgRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "8d935fe2-52d7-4211-8c72-54b4e4d33290",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C38",
+      "claim": "On day 8 of the culture, CD138+ cells co-express CD267, IRF4, and BLIMP1 (encoded by Prdm1).",
+      "claim_type": "EXPLICIT",
+      "source": "On day 8 of the culture, we sorted cells based on the expression of CD138, a marker of differentiated plasma cells that co-express CD267, IRF4, and BLIMP1 (encoded by Prdm1) (Figure 1\u2014figure supplement 1G), and determined the representation of sgRNAs by NGS (Figure 1\u2014figure supplement 1C; Supplementary file 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the characterization of CD138+ cells with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "f6bbfe20-ee10-485b-bbdf-b3591f23e325",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C39",
+      "claim": "The transcription factors Bach2, Bcl6, Spi1, and Irf8 enriched for inhibiting CD138+ cell accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factors: Bach2, Bcl6, Spi1, and Irf8 enriched for inhibiting CD138 + cell accumulation, and Prdm1 enriched for promoting CD138 + cell accumulation, while Irf4 was required for CD138 + cell accumulation as well as B cell expansion (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the screening results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "337a5b65-aadd-46d0-82d0-9bb3c6e763ad",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C40",
+      "claim": "Prdm1 enriched for promoting CD138+ cell accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factors: Bach2, Bcl6, Spi1, and Irf8 enriched for inhibiting CD138 + cell accumulation, and Prdm1 enriched for promoting CD138 + cell accumulation, while Irf4 was required for CD138 + cell accumulation as well as B cell expansion (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the screening results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "e6d83570-c034-4478-9e3f-0e81aca7fe65",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C41",
+      "claim": "Irf4 was required for CD138+ cell accumulation as well as B cell expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factors: Bach2, Bcl6, Spi1, and Irf8 enriched for inhibiting CD138 + cell accumulation, and Prdm1 enriched for promoting CD138 + cell accumulation, while Irf4 was required for CD138 + cell accumulation as well as B cell expansion (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the screening results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "f7abffa1-165b-487a-a941-2b6eb9c529dd",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C42",
+      "claim": "The screening results for Bach2, Bcl6, Spi1, Irf8, Prdm1, and Irf4 are consistent with the established roles of these genes in B cells and plasma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the established roles (Bilska et al., 2020; Ochiai et al., 2008; Ochiai et al., 2006; Muto et al., 2010; Shaffer et al., 2000; Tunyaplin et al., 2004; Carotta et al., 2014; Shapiro-Shelef et al., 2003; Lin et al., 2002; Shaffer et al., 2002; Sciammas et al., 2006; Ochiai et al., 2013) of these genes in B cells and plasma cells, and therefore underpin our confidence that novel findings in this system reflect meaningful biological effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations and serves as validation of the screening approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "f880e67b-297e-40a7-af31-effbbbb7a807",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C43",
+      "claim": "CSDE1 and STRAP bind to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated CSDE1 and STRAP which bind to each other (Hunt et al., 1999) as promoting CD138 + cell accumulation and the eIF3 octamer subunits eIF3K and eIF3L as limiting CD138 + cell accumulation (Figure 1C, Figure 1\u2014figure supplement 1H, I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hunt et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "9e299311-d908-4c56-9191-c72d70524202",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C44",
+      "claim": "Loss-of-function mutations in eIF3K and eIF3L have previously been shown to extend Caenorhabditis elegans lifespan by enhancing resistance to endoplasmic reticulum (ER) stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations in eIF3K and eIF3L have previously been shown to extend Caenorhabditis elegans lifespan by enhancing resistance to endoplasmic reticulum (ER) stress (Cattie et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cattie et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "55eeb8fd-b791-4124-af0d-f14442b4018f",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C45",
+      "claim": "eIF3K and eIF3L may inhibit CD138+ cell appearance by limiting tolerance to ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, eIF3K and eIF3L may inhibit CD138 + cell appearance by limiting tolerance to ER stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference from prior knowledge.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "7b001fe5-97c7-4c3f-aa6b-2854e5185562",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C46",
+      "claim": "All three YTHDF-family members of m6A binding proteins were enriched for increasing CD138+ cell abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "All three YTHDF-family members of m6A binding proteins were also enriched for increasing CD138 + cell abundance (Figure 1D) of which Ythdf2 had the most pronounced effect (Figure 1E, F; Figure 1\u2014figure supplement 1H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the screening results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "fd852201-40cb-43a2-a28b-21c90535b7ef",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C47",
+      "claim": "Ythdf2 had the most pronounced effect among YTHDF-family members on CD138+ cell abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "All three YTHDF-family members of m6A binding proteins were also enriched for increasing CD138 + cell abundance (Figure 1D) of which Ythdf2 had the most pronounced effect (Figure 1E, F; Figure 1\u2014figure supplement 1H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the screening results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "d86e3f8e-6496-4145-809a-6b3651a7f269",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C48",
+      "claim": "The three core components of the m6A writer complex (Mettl3, Mettl14 and Wtap) had convergent enrichment close to the cutoff for significance as promoting CD138+ cell abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "In further support of a role of m6A in promoting CD138 + cell accumulation, the three core components of the m6A writer complex (Mettl3, Mettl14 and Wtap), had convergent enrichment close to our cutoff for significance as promoting CD138 + cell abundance (Figure 1D, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the screening results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "bbf8ce54-0d0e-4b8d-8f93-473599e8b114",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C49",
+      "claim": "ZFP36, an AU-rich element binding protein, was enriched for limiting CD138+ cell abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, ZFP36, an AU-rich element binding protein, and the TNRC6 family critical for miRNA mediated repression were enriched for limiting CD138 + cell abundance (Figure 1D\u2013F and Figure 1\u2014figure supplement 1H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the screening results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "384fff5d-08c1-4749-9159-00c48a2e1067",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C50",
+      "claim": "The TNRC6 family critical for miRNA mediated repression was enriched for limiting CD138+ cell abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, ZFP36, an AU-rich element binding protein, and the TNRC6 family critical for miRNA mediated repression were enriched for limiting CD138 + cell abundance (Figure 1D\u2013F and Figure 1\u2014figure supplement 1H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the screening results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "ad4a9e36-3ff2-4239-bdba-03fe63db2cad",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C51",
+      "claim": "ZFP36 has been previously reported to limit CD138+ cell appearance in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "ZFP36 has been previously reported to limit CD138 + cell appearance in vitro (Chu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chu et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "eb2d12e9-dfb1-4c9b-ba2b-9b2fa414fa52",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C52",
+      "claim": "The YTHDF-, ZFP36- and TNRC6-families of RBPs are all known to promote RNA decay by recruiting the CCR4-NOT complex leading to deadenylation and subsequent decay.",
+      "claim_type": "EXPLICIT",
+      "source": "The YTHDF-, ZFP36- and TNRC6-families of RBPs are all known to promote RNA decay by recruiting the CCR4-NOT complex leading to deadenylation and subsequent decay (Du et al., 2016; Fabian et al., 2013; Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Du et al., 2016; Fabian et al., 2013; Chen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "c507ba12-9cd5-4ffe-b589-93cc7d31a083",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C53",
+      "claim": "CNOT9, and the interacting partners CNOT-10 and \u201311 which form a CNOT submodule were enriched for limiting CD138+ cell abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CNOT9, and the interacting partners CNOT-10 and \u201311 which form a CNOT submodule were enriched for limiting CD138 + cell abundance (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the screening results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "322b68ca-4baa-4766-86b6-51cf7bef1398",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C54",
+      "claim": "The CCR4-NOT complex via its interactions with different adapters may act as a post-transcriptional hub that controls survival or the decision to differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesise that the CCR4-NOT complex via its interactions with different adapters may act as a post-transcriptional hub that controls survival or the decision to differentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis based on the screening results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "595eef99-d11f-4794-bbdf-398fc3649779",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C55",
+      "claim": "The ZFP36- and TNRC6-families suppress transcripts that promote plasma cell differentiation or survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, we envisage the ZFP36- and TNRC6-families suppress transcripts that promote plasma cell differentiation or survival, while the YTHDF-family suppress transcripts that inhibit plasma cell differentiation or survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "ebbc3a8f-bf12-4fc5-b459-d825104bdb40",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C56",
+      "claim": "The YTHDF-family suppress transcripts that inhibit plasma cell differentiation or survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, we envisage the ZFP36- and TNRC6-families suppress transcripts that promote plasma cell differentiation or survival, while the YTHDF-family suppress transcripts that inhibit plasma cell differentiation or survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "1702bdfa-98ba-492f-bf64-11613429e8e0",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C57",
+      "claim": "Ythdf2 and its paralogues promote CD138+ cell accumulation, without appreciably affecting B cell expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our screen demonstrated that Ythdf2 and its paralogues promote CD138 + cell accumulation, without appreciably affecting B cell expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the screening results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "7f91d28c-95ef-4b8d-ab6b-f127801248e7",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C58",
+      "claim": "Following anti-IgM stimulation in vitro the numbers of Ythdf2 CKO B cells at each division was not different from Ythdf2fl/fl control (Ythdf2 CTL) B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Following anti-IgM stimulation in vitro the numbers of Ythdf2 CKO B cells at each division was not different from Ythdf2fl/fl control (Ythdf2 CTL) B cells (Figure 1\u2014figure supplement 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "121d6c82-1cfd-4bf7-91a5-4c7599a85ede",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C59",
+      "claim": "Ythdf2 CKO B cells showed no difference in the proportions of IgG1+ and IgE+ cells generated in vitro compared to Ythdf2 CTL B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Ythdf2 CKO B cells showed no difference in the proportions of IgG1 +and IgE + cells generated in vitro compared to Ythdf2 CTL B cells (Figure 1\u2014figure supplement 1K), indicating that class switch recombination (CSR) did not require YTHDF2 in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "386d7151-83d8-4a16-87aa-668d6a378d50",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C60",
+      "claim": "Class switch recombination (CSR) did not require YTHDF2 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Ythdf2 CKO B cells showed no difference in the proportions of IgG1 +and IgE + cells generated in vitro compared to Ythdf2 CTL B cells (Figure 1\u2014figure supplement 1K), indicating that class switch recombination (CSR) did not require YTHDF2 in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "883ac587-e8b3-48c6-8dde-d2b36699bbfb",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C61",
+      "claim": "Ythdf2 CKO B cells generated fewer CD138+ cells compared to Ythdf2 CTL B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Ythdf2 CKO B cells generated fewer CD138 + cells compared to Ythdf2 CTL B cells (Figure 1G), we hypothesise that YTHDF2 promotes B cell differentiation independently of a role in CSR, cell proliferation or survival, or specifically promotes the survival of differentiated CD138 + cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "c7906b35-5bb1-43bb-bf37-9a5754d7e0f5",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C62",
+      "claim": "YTHDF2 promotes B cell differentiation independently of a role in CSR, cell proliferation or survival, or specifically promotes the survival of differentiated CD138+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Ythdf2 CKO B cells generated fewer CD138 + cells compared to Ythdf2 CTL B cells (Figure 1G), we hypothesise that YTHDF2 promotes B cell differentiation independently of a role in CSR, cell proliferation or survival, or specifically promotes the survival of differentiated CD138 + cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis based on the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "bf840420-185a-4458-9e56-a8497d085e4a",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C63",
+      "claim": "Ythdf2-deficient cells efficiently reconstituted the splenic B cell pool in mixed bone-marrow chimeras.",
+      "claim_type": "EXPLICIT",
+      "source": "Ythdf2-deficient cells efficiently reconstituted the splenic B cell pool (Figure 2A) enabling us to test the hapten-specific responses of mature B cells lacking YTHDF2 in two independent immunisation experiments with alum precipitated 4-Hydroxy-3-nitrophenylacetyl coupled to the carrier protein Keyhole-Limpet Hemocyanin (NP-KLH).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "c1251c6c-460b-406b-9bc8-6289fbbdecce",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C64",
+      "claim": "At 21 days after immunisation the ratio of high and low valency NP-binding IgG1 in Ythdf2 CKO chimeras was comparable to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "At 21 days after immunisation the ratio of high and low valency NP-binding IgG1 in Ythdf2 CKO chimeras was comparable to controls (Figure 2B), however, a slight defect may exist that remains undetected by the power of our experiment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "33027ac1-9af4-4a8f-ab1e-a6578eb04f62",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C65",
+      "claim": "A slight defect in the ratio of high and low valency NP-binding IgG1 may exist in Ythdf2 CKO chimeras that remains undetected by the power of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "At 21 days after immunisation the ratio of high and low valency NP-binding IgG1 in Ythdf2 CKO chimeras was comparable to controls (Figure 2B), however, a slight defect may exist that remains undetected by the power of our experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential limitations of the experiment.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "7b662627-9e94-4640-86e8-030030fe32b5",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C66",
+      "claim": "At day 21, the number of CD138+CD267+ NIP+IgG1+ splenic plasmablasts were threefold lower in the Ythdf2 CKO compared to the controls.",
+      "claim_type": "EXPLICIT",
+      "source": "At day 21, the number of CD138 +CD267+ (Figure 2\u2014figure supplement 1A) NIP +IgG1 + splenic plasmablasts (Figure 2C) and NIP +IgG1 + plasma cells in the bone marrow (Figure 2D) were both threefold lower in the Ythdf2 CKO compared to the controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "5040d21e-0cee-4399-9afc-d94162e13074",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C67",
+      "claim": "At day 21, NIP+IgG1+ plasma cells in the bone marrow were threefold lower in the Ythdf2 CKO compared to the controls.",
+      "claim_type": "EXPLICIT",
+      "source": "At day 21, the number of CD138 +CD267+ (Figure 2\u2014figure supplement 1A) NIP +IgG1 + splenic plasmablasts (Figure 2C) and NIP +IgG1 + plasma cells in the bone marrow (Figure 2D) were both threefold lower in the Ythdf2 CKO compared to the controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "3bb1e4f1-9398-4bb2-aaa1-565423811036",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C68",
+      "claim": "No difference in CXCR4 expression in CD138+CD267+ cells was observed between genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no difference in CXCR4 expression in CD138 +CD267 + cells between genotypes (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "9719809e-43b5-41d8-91f2-2173a3375516",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C69",
+      "claim": "YTHDF2 has a role in the accumulation of plasma cells in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results demonstrate a role for YTHDF2 in the accumulation of plasma cells in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "af43494d-dcac-4459-9a76-7b577ad07814",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C70",
+      "claim": "Ythdf2 was reported to have a minor role in promoting B cell development.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, Ythdf2 was reported to have a minor role in promoting B cell development (Zheng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zheng et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "4465f945-48ad-4e57-8a6e-069dadf566bc",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C71",
+      "claim": "In competitive chimeras, YTHDF2-deficient cells efficiently reconstituted the mature B cell pool.",
+      "claim_type": "EXPLICIT",
+      "source": "In our competitive chimeras, YTHDF2-deficient cells efficiently reconstituted the mature B cell pool (Figure 3A) with >98% being GFP negative and thus having undergone Cre-mediated deletion (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "954e785f-2ec3-4f21-a176-d5a7cddb95db",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C72",
+      "claim": ">98% of YTHDF2-deficient cells in competitive chimeras were GFP negative and thus having undergone Cre-mediated deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "In our competitive chimeras, YTHDF2-deficient cells efficiently reconstituted the mature B cell pool (Figure 3A) with >98% being GFP negative and thus having undergone Cre-mediated deletion (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "383e0b74-feea-4265-9830-b4d9a7424f7e",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C73",
+      "claim": "At 21 days after immunisation, the number of NIP+IgG1+ splenic plasmablasts was fivefold lower in the Ythdf2 CKO chimeras compared to the controls.",
+      "claim_type": "EXPLICIT",
+      "source": "At 21 days after immunisation, the number of NIP +IgG1 + splenic plasmablasts was fivefold lower in the Ythdf2 CKO chimeras compared to the controls (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "7771d02f-4edf-4f8c-a42a-6d941eb3d5d1",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C74",
+      "claim": "Ythdf2 CKO plasma cells were depleted in the bone marrow compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ythdf2 CKO plasma cells were depleted in the bone marrow compartment (Figure 3C) and those present were predominantly deficient for Ythdf2 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "05c61bac-2d95-422a-a047-4591c54dbb3a",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C75",
+      "claim": "Ythdf2 CKO plasma cells present in the bone marrow were predominantly deficient for Ythdf2.",
+      "claim_type": "EXPLICIT",
+      "source": "Ythdf2 CKO plasma cells were depleted in the bone marrow compartment (Figure 3C) and those present were predominantly deficient for Ythdf2 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "f4a39409-4809-4053-ae51-64e3653754e1",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C76",
+      "claim": "Ythdf2 CKO antigen specific IgG1+ plasma cells in the bone marrow were fivefold less abundant in the Ythdf2 CKO chimeras compared to the controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Ythdf2 CKO antigen specific IgG1 +plasma cells in the bone marrow were also fivefold less abundant in the Ythdf2 CKO chimeras compared to the controls (Figure 3D and Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "9a3d09d6-aa85-445d-bdcc-d873cbf811cf",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C77",
+      "claim": "There were similar numbers of CD45.1 B6.SJL-derived plasma cells in the bone marrow of Ythdf2 CTL and Ythdf2 CKO chimeras.",
+      "claim_type": "EXPLICIT",
+      "source": "This defect was specific to the mutation of Ythdf2 as there were similar numbers of CD45.1 B6.SJL-derived plasma cells (Figure 3\u2014figure supplement 1D) and NIP +IgG1 + plasma cells (Figure 3\u2014figure supplement 1E) in the bone marrow of Ythdf2 CTL and Ythdf2 CKO chimeras.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "7b57ac00-4ed9-4c5f-bce4-57196fb5701b",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C78",
+      "claim": "There were similar numbers of NIP+IgG1+ plasma cells in the bone marrow of Ythdf2 CTL and Ythdf2 CKO chimeras.",
+      "claim_type": "EXPLICIT",
+      "source": "This defect was specific to the mutation of Ythdf2 as there were similar numbers of CD45.1 B6.SJL-derived plasma cells (Figure 3\u2014figure supplement 1D) and NIP +IgG1 + plasma cells (Figure 3\u2014figure supplement 1E) in the bone marrow of Ythdf2 CTL and Ythdf2 CKO chimeras.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental results with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "fdb5db1e-077d-428e-9a33-b60d475b7007",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C79",
+      "claim": "The defect in plasma cell accumulation was specific to the mutation of Ythdf2.",
+      "claim_type": "EXPLICIT",
+      "source": "This defect was specific to the mutation of Ythdf2 as there were similar numbers of CD45.1 B6.SJL-derived plasma cells (Figure 3\u2014figure supplement 1D) and NIP +IgG1 + plasma cells (Figure 3\u2014figure supplement 1E) in the bone marrow of Ythdf2 CTL and Ythdf2 CKO chimeras.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing that control cells were unaffected.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "9937b619-0489-4dd1-8273-65aaa9a26fc4",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C80",
+      "claim": "Ythdf2 is required for the accumulation of plasma cells in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with the findings from the \u03bcMT chimeras and suggests Ythdf2 is required for the accumulation of plasma cells in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "9232d89f-0062-4189-abaf-382a9d7c1438",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C81",
+      "claim": "3370 high confidence m6A sites were identified among 2658 transcripts in wild-type B cells cultured on 40LB cells for 8 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In total 3370 high confidence m6A sites were identified among 2658 transcripts in wild-type B cells cultured on 40LB cells for 8 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of m6A-eCLIP analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "f4ba5eaa-be69-4ee9-9de9-29065360cd3d",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C82",
+      "claim": "m6A sites were strongly enriched for DRACH (D = G/A/U, R = G/A, H = A/U/C) and more specifically the RRACU motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "These m6A sites were strongly enriched for DRACH (D = G/A/U, R = G/A, H = A/U/C) and more specifically the RRACU motifs (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the results of m6A-eCLIP analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "24b5cd0f-153c-4ba8-967f-4a495895e900",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C83",
+      "claim": "m6A sites were enriched in the terminal exon and in the location of the STOP codon in accordance with published datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "m6A sites were enriched in the terminal exon and in the location of the STOP codon in accordance with published datasets (Figure 4B; Dominissini et al., 2012; Meyer et al., 2012; Gerald et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the results of m6A-eCLIP analysis with reference to a figure and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "edf4aedc-c757-4ffc-90e9-8e7e8b7385c7",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C84",
+      "claim": "The m6A sites present in the B cell transcriptome (at the 3'UTR and/or CDS) were not characteristic of transcripts specific to either differentiation state and were not biased to transcripts of high expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the m6A sites present in the B cell transcriptome (at the 3'UTR and/or CDS) were not characteristic of transcripts specific to either differentiation state and were not biased to transcripts of high expression levels (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the results of m6A-eCLIP analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "baab485a-d2b6-4759-b805-c2e554b282a6",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C85",
+      "claim": "YTHDF paralogues are expected to bind all available m6A sites in a transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "As YTHDF paralogues are expected to bind all available m6A sites in a transcriptome we speculate that YTHDF2 binds transcripts specific to both differentiation states (Zaccara and Jaffrey, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zaccara and Jaffrey, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "8abcf9c8-60ef-496e-801e-89f73743bf33",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C86",
+      "claim": "YTHDF2 binds transcripts specific to both differentiation states.",
+      "claim_type": "EXPLICIT",
+      "source": "As YTHDF paralogues are expected to bind all available m6A sites in a transcriptome we speculate that YTHDF2 binds transcripts specific to both differentiation states (Zaccara and Jaffrey, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation based on inference from prior knowledge.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "cd72de27-54de-40f0-8194-cea2e60298d4",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C87",
+      "claim": "YTHDF2 may have an m6A independent role.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we cannot rule out the possibility that YTHDF2 has an m6A independent role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a possibility that cannot be ruled out.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "353f22de-72b4-4052-b70e-8246874d08b9",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C88",
+      "claim": "Among the methylated transcripts identified were Bach2, Pax5, Irf8, and Spi1 all of which encode transcription factors that inhibit B cell terminal differentiation, and Prdm1 which promotes differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the methylated transcripts identified were Bach2, Pax5, Irf8, and Spi1 all of which encode transcription factors that inhibit B cell terminal differentiation, and Prdm1 which promotes differentiation (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the results of m6A-eCLIP analysis with reference to a figure and incorporates established knowledge about these transcription factors.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "b5a43daf-4bb9-4dc3-8153-cd97d0b77b7a",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C89",
+      "claim": "Hundreds of RBPs regulate the accumulation of CD138+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have provided evidence that hundreds of RBPs regulate the accumulation of CD138 + cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the screening results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "e355ca88-9710-438e-a58a-935938c3055f",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C90",
+      "claim": "ZFP36- and TNRC6-families, as well as CNOT9 and the interacting partners CNOT10 and CNOT11 of the CCR4-NOT complex have roles in limiting the accumulation of CD138+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ZFP36- and TNRC6-families, as well as CNOT9 and the interacting partners CNOT10 and CNOT11 of the CCR4-NOT complex have roles in limiting the accumulation of CD138 + cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the screening results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "11ed3574-07bf-45a9-a822-e7a56d1c4edd",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C91",
+      "claim": "The CCR4-NOT binding partner YTHDF2 has an essential role in promoting the accumulation of plasma cells in the spleen and bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the CCR4-NOT binding partner YTHDF2 has an essential role in promoting the accumulation of plasma cells in the spleen and bone marrow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "de1d3c6c-c7eb-441a-a6b5-4d66c630681f",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C92",
+      "claim": "The mechanisms by which these RBPs limit CD138+ cell accumulation remain to be investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanisms by which these RBPs limit CD138 + cell accumulation remain to be investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the current study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "e3b25c29-1b1a-47be-8fff-61aac6743927",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C93",
+      "claim": "In vitro data support a role for YTHDF2 in promoting plasma cell accumulation via differentiation or survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vitro data support a role for YTHDF2 in promoting plasma cell accumulation via differentiation or survival, while our in vivo bone marrow data could also be explained by a role for YTHDF2 in plasma cell migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "e4b411d7-5418-4a99-be1b-5b80d2976c57",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C94",
+      "claim": "In vivo bone marrow data could be explained by a role for YTHDF2 in plasma cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vitro data support a role for YTHDF2 in promoting plasma cell accumulation via differentiation or survival, while our in vivo bone marrow data could also be explained by a role for YTHDF2 in plasma cell migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "4b03523b-34f6-4432-883f-678819e1bf2d",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C95",
+      "claim": "A defect in Ythdf2 deficient plasma cell accumulation was observed in the spleen.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a defect in Ythdf2 deficient plasma cell accumulation in the spleen and identified m6A methylation on transcripts encoding transcriptional repressors and promotors of plasma cell differentiation; together these indicate that YTHDF2 mediated regulation of differentiation or migration are not sufficient to fully explain YTHDF2 support of plasma cell accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "5dc085af-a9f8-4d9b-937e-270af3be9d18",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C96",
+      "claim": "m6A methylation was identified on transcripts encoding transcriptional repressors and promotors of plasma cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a defect in Ythdf2 deficient plasma cell accumulation in the spleen and identified m6A methylation on transcripts encoding transcriptional repressors and promotors of plasma cell differentiation; together these indicate that YTHDF2 mediated regulation of differentiation or migration are not sufficient to fully explain YTHDF2 support of plasma cell accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "b368ffb5-8629-47d7-b526-635d3d680da3",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C97",
+      "claim": "YTHDF2 mediated regulation of differentiation or migration are not sufficient to fully explain YTHDF2 support of plasma cell accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a defect in Ythdf2 deficient plasma cell accumulation in the spleen and identified m6A methylation on transcripts encoding transcriptional repressors and promotors of plasma cell differentiation; together these indicate that YTHDF2 mediated regulation of differentiation or migration are not sufficient to fully explain YTHDF2 support of plasma cell accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "0a1f02be-3ba9-4dd0-92dc-c03ba0489e74",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C98",
+      "claim": "YTHDF2 may promote plasma cell accumulation by limiting apoptosis induced by ER stress specifically within differentiated plasma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "One tempting hypothesis is that YTHDF2 promotes plasma cell accumulation by limiting apoptosis induced by ER stress (Einstein et al., 2021) specifically within differentiated plasma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis with a supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "d5673979-3bdc-4d20-b2ad-c11d39aaa037",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C99",
+      "claim": "METTL3 is required for GC formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, METTL3 is required for GC formation and YTHDF2 has been previously shown to have a role in supporting the germinal centre reaction (Grenov et al., 2021), which may promote plasma cell accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Grenov et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "09048ebe-afff-460d-8859-0ef9ebe2c754",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C100",
+      "claim": "YTHDF2 has been previously shown to have a role in supporting the germinal centre reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, METTL3 is required for GC formation and YTHDF2 has been previously shown to have a role in supporting the germinal centre reaction (Grenov et al., 2021), which may promote plasma cell accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Grenov et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "6ad83aae-c8f4-46bf-aa57-3adb63706cac",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C101",
+      "claim": "YTHDF2's role in supporting the germinal centre reaction may promote plasma cell accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, METTL3 is required for GC formation and YTHDF2 has been previously shown to have a role in supporting the germinal centre reaction (Grenov et al., 2021), which may promote plasma cell accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference from prior knowledge.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "5583f948-ce87-4860-9bb9-8d9fcf7002b4",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C102",
+      "claim": "Determining the precise mechanism by which YTHDF2 impacts plasma cell biology requires further studies of differentiation, survival and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Determining the precise mechanism by which YTHDF2 impacts plasma cell biology requires further studies of differentiation, survival and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "0a5dbd46-e6df-40ec-84ee-45c0bb4c3643",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C103",
+      "claim": "The custom sgRNA library targets mouse RBPs identified by multiple high-throughput studies employing mRNA interactome capture (RIC).",
+      "claim_type": "EXPLICIT",
+      "source": "We targeted mouse RBPs identified by multiple high-throughput studies employing mRNA interactome capture (RIC) (Castello et al., 2012; Baltz et al., 2012; Beckmann et al., 2015; Gerstberger et al., 2014; Kwon et al., 2013; He et al., 2016; Liepelt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the sgRNA library with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "f2fe0833-f87d-4aaa-9129-4f982b2db95b",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C104",
+      "claim": "The library targets RBPs identified in at least two mouse RIC studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our library targets RBPs identified in at least two mouse RIC studies; the mouse orthologues of RBPs identified in at least two human RIC studies; and manually curated RBPs identified in only one RIC study that had \"RNA binding\" gene ontology or were paralogues of a human RBP orthologue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design criteria for the sgRNA library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "8cf02f13-2ea5-4569-8d1e-e2c7bba9ab3a",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C105",
+      "claim": "The library targets the mouse orthologues of RBPs identified in at least two human RIC studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our library targets RBPs identified in at least two mouse RIC studies; the mouse orthologues of RBPs identified in at least two human RIC studies; and manually curated RBPs identified in only one RIC study that had \"RNA binding\" gene ontology or were paralogues of a human RBP orthologue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design criteria for the sgRNA library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "2d51473e-1bc9-4007-9d07-6573ed1f47c8",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C106",
+      "claim": "The library targets manually curated RBPs identified in only one RIC study that had \"RNA binding\" gene ontology or were paralogues of a human RBP orthologue.",
+      "claim_type": "EXPLICIT",
+      "source": "Our library targets RBPs identified in at least two mouse RIC studies; the mouse orthologues of RBPs identified in at least two human RIC studies; and manually curated RBPs identified in only one RIC study that had \"RNA binding\" gene ontology or were paralogues of a human RBP orthologue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design criteria for the sgRNA library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "c91ab6d8-68e7-4bba-896c-28acf17745e1",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C107",
+      "claim": "The Ythdf2 conditional allele was engineered to express a GFP-YTHDF2 fusion protein in the absence of Cre recombinase.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ythdf2 conditional allele was engineered to express a GFP-YTHDF2 fusion protein in the absence of Cre recombinase, so that GFP expression reliably indicates cells that express YTHDF2 (Ivanova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the conditional allele with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "57313fcf-6e15-411e-95b9-081ad80a01e2",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "claim_id": "C108",
+      "claim": "GFP expression reliably indicates cells that express YTHDF2 in the Ythdf2 conditional allele system.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ythdf2 conditional allele was engineered to express a GFP-YTHDF2 fusion protein in the absence of Cre recombinase, so that GFP expression reliably indicates cells that express YTHDF2 (Ivanova et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the conditional allele with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "917e382e-dc1b-411c-b651-e4200b574b11",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A custom CRISPR/Cas9 sgRNA library was designed and constructed targeting 1213 mouse RNA binding proteins (RBPs). The library contains 13,350 sgRNAs total (10 per gene), 72 positive control genes, and 500 negative control sgRNAs, with >98.8% of sgRNAs normally distributed within a 16-fold range. RBPs were selected from multiple RNA interactome capture studies based on specific criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C26-C31 provide detailed specifications of the library design that are internally consistent and well-documented. Claims C103-C106 describe rational selection criteria for RBP targets with appropriate citations. The library design appears methodologically sound with appropriate controls and coverage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "19cba327-4123-447b-98d1-6a9f38bb7c16",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A screen for RBPs affecting B cell proliferation/survival identified only three RBPs (Rc3h1, Caprin1, Fam46c) that limit B cell expansion. Control genes Trp53 and Myc enriched as expected, and the role of Rc3h1 was validated with individual sgRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 describe a well-controlled screen with appropriate positive controls (C33, C34) that behaved as expected. The finding that only three RBPs affect proliferation/survival (C35) is validated by prior literature for FAM46C (C36) and by independent sgRNA validation for Rc3h1 (C37), supporting the screen's validity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "1cb9d0d3-01a6-4f04-88e7-81509526f9de",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The screen identified 103 RBPs that promote and 189 RBPs that inhibit CD138+ cell abundance. Known transcription factors (Bach2, Bcl6, Spi1, Irf8, Prdm1, Irf4) enriched as expected based on their established roles, validating the screening approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 report the primary screening results. Claims C39-C42 demonstrate that known regulators of plasma cell differentiation behaved as expected, with extensive literature support (C42), providing strong validation of the screening methodology and confidence in novel findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "d3e4672f-b788-428f-a7e4-45004fa5011b",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CSDE1 and STRAP, which are known binding partners, both promote CD138+ cell accumulation in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 report validation of CSDE1 and STRAP as promoters of CD138+ cells, supported by Figure 1C showing statistical significance. The fact that these proteins are known binding partners (C43) provides biological plausibility and internal consistency to the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "60cf06bb-abcc-414d-b1d2-cf8ff8703bd1",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EIF3K and EIF3L inhibit CD138+ cell accumulation in vitro, potentially by limiting tolerance to ER stress based on their known role in C. elegans lifespan extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5-C6 report validated screening hits with statistical support (Figure 1C). However, the mechanistic interpretation (C45) is explicitly speculative and based on cross-species inference from C. elegans (C44). The proposed ER stress mechanism requires direct experimental validation in the plasma cell system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "beb5c6d6-6e19-4e8c-888a-5cb7c2ae2d13",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Components of the CCR4-NOT complex (CNOT9, CNOT10, CNOT11) limit CD138+ cell accumulation. The authors propose that the CCR4-NOT complex acts as a post-transcriptional hub, with different adapter proteins (ZFP36-, TNRC6-, and YTHDF-families) recruiting it to suppress distinct transcript populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C49-C50, C53 report validated screening results showing CCR4-NOT components and adapter families affect CD138+ cells. The mechanistic model (C54-C56) is explicitly hypothetical and speculative. While the model is biologically plausible given known interactions (C52), it lacks direct experimental validation of which transcripts each adapter targets in this system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "444b39eb-6935-4d54-bdef-55be1129433d",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "All three YTHDF-family m6A binding proteins promote CD138+ cell accumulation, with YTHDF2 showing the most pronounced effect. The m6A writer complex components (Mettl3, Mettl14, Wtap) showed convergent enrichment near significance, supporting a role for m6A modification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C46-C47 report screening and validation data showing all YTHDF family members promote CD138+ cells, with YTHDF2 having the strongest effect (Figures 1D-F). Claim C48 provides supporting evidence from m6A writers. The convergent evidence from readers and writers strengthens the conclusion about m6A's role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "9f02b001-f605-4e8c-848b-d1670358b715",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "YTHDF2 deficiency reduces CD138+ cell generation in vitro without affecting B cell proliferation, class switch recombination, or IgG1/IgE generation. The authors hypothesize YTHDF2 promotes differentiation or survival of CD138+ cells specifically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 provide experimental data showing YTHDF2 specifically affects CD138+ cell accumulation without affecting other B cell functions. The hypothesis (C62) is appropriately qualified as speculation but is well-supported by the negative results for other processes. However, the mechanism remains to be definitively determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "2c20dbac-2e1a-4033-bbfd-b29a513b1a90",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In \u03bcMT chimeric mice, YTHDF2-deficient B cells efficiently reconstituted the B cell pool but showed threefold reductions in splenic plasmablasts and bone marrow plasma cells at day 21 post-immunization, with comparable antibody affinity maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C69 describe a well-controlled in vivo experiment showing YTHDF2 is required for plasma cell accumulation (threefold reduction, C66-C67) without affecting B cell development (C63) or CXCR4 expression (C68). The antibody ratio data (C64) suggests affinity maturation is intact, though the authors appropriately note potential power limitations (C65).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "42d2af81-9d13-4001-b93e-3e4a70a2d6ec",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In competitive bone marrow chimeras, YTHDF2-deficient cells efficiently reconstituted the B cell pool with >98% Cre-mediated deletion, but showed fivefold reductions in splenic plasmablasts and bone marrow plasma cells. Control CD45.1+ cells were unaffected, demonstrating specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C80 describe a stringent competitive chimera experiment with appropriate controls. The fivefold reduction in plasma cells (C73, C76) is more pronounced than in \u03bcMT chimeras, likely due to competition. The specificity is well-demonstrated by unaffected control cells (C77-C79), and high deletion efficiency is confirmed (C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "e2cad863-b7ce-4b5c-80ad-bb9a79d8213b",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "m6A-eCLIP identified 3370 m6A sites in 2658 transcripts in cultured B cells, enriched for DRACH/RRACU motifs and terminal exons. m6A sites were not biased to differentiation state-specific transcripts or high expression levels. Methylated transcripts include key differentiation regulators (Bach2, Pax5, Irf8, Spi1, Prdm1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 report m6A-eCLIP results with expected motif enrichment (C82) and genomic distribution (C83) consistent with published data. The lack of bias toward differentiation-specific transcripts (C84) is clearly stated. Claim C88 identifies biologically relevant methylated transcripts. The speculation about YTHDF2 binding (C86) and potential m6A-independent roles (C87) are appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "64d28e2e-a4dd-4cc7-a2a8-a923e99bfc24",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study demonstrates that hundreds of RBPs regulate CD138+ cell accumulation, with YTHDF2 having an essential role in promoting plasma cell accumulation in spleen and bone marrow. The precise mechanism (differentiation, survival, or migration) remains unclear and requires further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 appropriately summarize the major findings. Claims C92-C97 acknowledge important limitations: mechanisms are unclear (C92), multiple explanations are possible (C93-C94), and the data suggest complexity beyond simple differentiation or migration defects (C95-C97). This honest assessment of uncertainty is scientifically appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "28bc943d-3d79-44e2-8dad-4e32b9faa868",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose YTHDF2 may promote plasma cell accumulation by limiting ER stress-induced apoptosis or through supporting the germinal center reaction. Further studies are needed to determine the precise mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-C101 present hypotheses based on prior literature (citations provided) but lack direct experimental support in this study. Claim C102 appropriately acknowledges that mechanistic determination requires additional work. These are reasonable hypotheses for future investigation but remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about plasma cell biology, transcriptional regulation, and the limited prior knowledge of RBP roles in plasma cell differentiation, survival, and migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C22 present established background knowledge with appropriate citations. These claims provide context for the study's rationale and are well-supported by the cited literature. The statement that few RBPs have been implicated in plasma cell biology (C19) justifies the screening approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    },
+    {
+      "id": "e5ee666d-4479-4086-bc32-00e2af398732",
+      "content_id": "c47d3ae9-cf11-4404-b0b7-cfd1e4965b8e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The Ythdf2 conditional allele expresses a GFP-YTHDF2 fusion protein that reliably indicates YTHDF2 expression. Prior work reported a minor role for Ythdf2 in B cell development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C108 describe the genetic tool with appropriate citation. Claim C70 accurately cites prior work. The efficient reconstitution of B cells in chimeras (C63, C71) is consistent with only a minor developmental role, validating the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:29:27.885258Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "caa4ae1a-627c-430f-888d-a46b91bcc306",
+      "result_id": "917e382e-dc1b-411c-b651-e4200b574b11"
+    },
+    {
+      "claim_id": "7c1dfd1a-cc12-4993-a931-6178b4e91792",
+      "result_id": "917e382e-dc1b-411c-b651-e4200b574b11"
+    },
+    {
+      "claim_id": "79173140-9462-4863-951a-fe55dbc09f5c",
+      "result_id": "917e382e-dc1b-411c-b651-e4200b574b11"
+    },
+    {
+      "claim_id": "54231349-92e3-4906-8f40-fe7e7b4abfc9",
+      "result_id": "917e382e-dc1b-411c-b651-e4200b574b11"
+    },
+    {
+      "claim_id": "61c10e09-8a35-4d11-b1a7-d7e0d3a2c8fc",
+      "result_id": "917e382e-dc1b-411c-b651-e4200b574b11"
+    },
+    {
+      "claim_id": "2ff09bb8-1792-4422-aec2-61c19987b8ce",
+      "result_id": "917e382e-dc1b-411c-b651-e4200b574b11"
+    },
+    {
+      "claim_id": "20c83ec4-aed7-4568-adcf-8df28adfa663",
+      "result_id": "917e382e-dc1b-411c-b651-e4200b574b11"
+    },
+    {
+      "claim_id": "0a5dbd46-e6df-40ec-84ee-45c0bb4c3643",
+      "result_id": "917e382e-dc1b-411c-b651-e4200b574b11"
+    },
+    {
+      "claim_id": "f2fe0833-f87d-4aaa-9129-4f982b2db95b",
+      "result_id": "917e382e-dc1b-411c-b651-e4200b574b11"
+    },
+    {
+      "claim_id": "8cf02f13-2ea5-4569-8d1e-e2c7bba9ab3a",
+      "result_id": "917e382e-dc1b-411c-b651-e4200b574b11"
+    },
+    {
+      "claim_id": "2d51473e-1bc9-4007-9d07-6573ed1f47c8",
+      "result_id": "917e382e-dc1b-411c-b651-e4200b574b11"
+    },
+    {
+      "claim_id": "a0bce0e0-c2ff-4746-bb7f-e95b45e58c0f",
+      "result_id": "19cba327-4123-447b-98d1-6a9f38bb7c16"
+    },
+    {
+      "claim_id": "47d9bad2-1bc4-490e-9940-056328962e85",
+      "result_id": "19cba327-4123-447b-98d1-6a9f38bb7c16"
+    },
+    {
+      "claim_id": "84195380-97c0-4c0c-bf7d-e3f6b2c748ac",
+      "result_id": "19cba327-4123-447b-98d1-6a9f38bb7c16"
+    },
+    {
+      "claim_id": "c1bbde45-a5ae-4b77-8f29-6189b100d606",
+      "result_id": "19cba327-4123-447b-98d1-6a9f38bb7c16"
+    },
+    {
+      "claim_id": "46312837-89ed-47a5-af94-9184014f3d22",
+      "result_id": "19cba327-4123-447b-98d1-6a9f38bb7c16"
+    },
+    {
+      "claim_id": "735540e1-f8ca-442d-b0f6-19a316f4aee3",
+      "result_id": "19cba327-4123-447b-98d1-6a9f38bb7c16"
+    },
+    {
+      "claim_id": "98d84a4d-71b6-4f6e-b300-21d69d73afea",
+      "result_id": "1cb9d0d3-01a6-4f04-88e7-81509526f9de"
+    },
+    {
+      "claim_id": "9991d086-966e-4fe2-a7d1-33192c4f9ca2",
+      "result_id": "1cb9d0d3-01a6-4f04-88e7-81509526f9de"
+    },
+    {
+      "claim_id": "8d935fe2-52d7-4211-8c72-54b4e4d33290",
+      "result_id": "1cb9d0d3-01a6-4f04-88e7-81509526f9de"
+    },
+    {
+      "claim_id": "f6bbfe20-ee10-485b-bbdf-b3591f23e325",
+      "result_id": "1cb9d0d3-01a6-4f04-88e7-81509526f9de"
+    },
+    {
+      "claim_id": "337a5b65-aadd-46d0-82d0-9bb3c6e763ad",
+      "result_id": "1cb9d0d3-01a6-4f04-88e7-81509526f9de"
+    },
+    {
+      "claim_id": "e6d83570-c034-4478-9e3f-0e81aca7fe65",
+      "result_id": "1cb9d0d3-01a6-4f04-88e7-81509526f9de"
+    },
+    {
+      "claim_id": "f7abffa1-165b-487a-a941-2b6eb9c529dd",
+      "result_id": "1cb9d0d3-01a6-4f04-88e7-81509526f9de"
+    },
+    {
+      "claim_id": "d61de6f4-656d-4923-9d98-58a02edf8105",
+      "result_id": "d3e4672f-b788-428f-a7e4-45004fa5011b"
+    },
+    {
+      "claim_id": "f2a8060b-8fb9-45ae-9467-74cf4775effd",
+      "result_id": "d3e4672f-b788-428f-a7e4-45004fa5011b"
+    },
+    {
+      "claim_id": "f880e67b-297e-40a7-af31-effbbbb7a807",
+      "result_id": "d3e4672f-b788-428f-a7e4-45004fa5011b"
+    },
+    {
+      "claim_id": "63ab0dfe-ff4e-46e9-b222-e7f72fc428b4",
+      "result_id": "60cf06bb-abcc-414d-b1d2-cf8ff8703bd1"
+    },
+    {
+      "claim_id": "52931c7d-553c-4971-8b61-8673c69dcfda",
+      "result_id": "60cf06bb-abcc-414d-b1d2-cf8ff8703bd1"
+    },
+    {
+      "claim_id": "9e299311-d908-4c56-9191-c72d70524202",
+      "result_id": "60cf06bb-abcc-414d-b1d2-cf8ff8703bd1"
+    },
+    {
+      "claim_id": "55eeb8fd-b791-4124-af0d-f14442b4018f",
+      "result_id": "60cf06bb-abcc-414d-b1d2-cf8ff8703bd1"
+    },
+    {
+      "claim_id": "dd78a83c-971e-4283-848c-61bd938605a6",
+      "result_id": "beb5c6d6-6e19-4e8c-888a-5cb7c2ae2d13"
+    },
+    {
+      "claim_id": "bbf8ce54-0d0e-4b8d-8f93-473599e8b114",
+      "result_id": "beb5c6d6-6e19-4e8c-888a-5cb7c2ae2d13"
+    },
+    {
+      "claim_id": "384fff5d-08c1-4749-9159-00c48a2e1067",
+      "result_id": "beb5c6d6-6e19-4e8c-888a-5cb7c2ae2d13"
+    },
+    {
+      "claim_id": "ad4a9e36-3ff2-4239-bdba-03fe63db2cad",
+      "result_id": "beb5c6d6-6e19-4e8c-888a-5cb7c2ae2d13"
+    },
+    {
+      "claim_id": "eb2d12e9-dfb1-4c9b-ba2b-9b2fa414fa52",
+      "result_id": "beb5c6d6-6e19-4e8c-888a-5cb7c2ae2d13"
+    },
+    {
+      "claim_id": "c507ba12-9cd5-4ffe-b589-93cc7d31a083",
+      "result_id": "beb5c6d6-6e19-4e8c-888a-5cb7c2ae2d13"
+    },
+    {
+      "claim_id": "322b68ca-4baa-4766-86b6-51cf7bef1398",
+      "result_id": "beb5c6d6-6e19-4e8c-888a-5cb7c2ae2d13"
+    },
+    {
+      "claim_id": "595eef99-d11f-4794-bbdf-398fc3649779",
+      "result_id": "beb5c6d6-6e19-4e8c-888a-5cb7c2ae2d13"
+    },
+    {
+      "claim_id": "ebbc3a8f-bf12-4fc5-b459-d825104bdb40",
+      "result_id": "beb5c6d6-6e19-4e8c-888a-5cb7c2ae2d13"
+    },
+    {
+      "claim_id": "1d7d5da9-1663-4b32-930f-e99fb2f3b17f",
+      "result_id": "444b39eb-6935-4d54-bdef-55be1129433d"
+    },
+    {
+      "claim_id": "7b001fe5-97c7-4c3f-aa6b-2854e5185562",
+      "result_id": "444b39eb-6935-4d54-bdef-55be1129433d"
+    },
+    {
+      "claim_id": "fd852201-40cb-43a2-a28b-21c90535b7ef",
+      "result_id": "444b39eb-6935-4d54-bdef-55be1129433d"
+    },
+    {
+      "claim_id": "d86e3f8e-6496-4145-809a-6b3651a7f269",
+      "result_id": "444b39eb-6935-4d54-bdef-55be1129433d"
+    },
+    {
+      "claim_id": "1702bdfa-98ba-492f-bf64-11613429e8e0",
+      "result_id": "444b39eb-6935-4d54-bdef-55be1129433d"
+    },
+    {
+      "claim_id": "7f91d28c-95ef-4b8d-ab6b-f127801248e7",
+      "result_id": "9f02b001-f605-4e8c-848b-d1670358b715"
+    },
+    {
+      "claim_id": "121d6c82-1cfd-4bf7-91a5-4c7599a85ede",
+      "result_id": "9f02b001-f605-4e8c-848b-d1670358b715"
+    },
+    {
+      "claim_id": "386d7151-83d8-4a16-87aa-668d6a378d50",
+      "result_id": "9f02b001-f605-4e8c-848b-d1670358b715"
+    },
+    {
+      "claim_id": "883ac587-e8b3-48c6-8dde-d2b36699bbfb",
+      "result_id": "9f02b001-f605-4e8c-848b-d1670358b715"
+    },
+    {
+      "claim_id": "c7906b35-5bb1-43bb-bf37-9a5754d7e0f5",
+      "result_id": "9f02b001-f605-4e8c-848b-d1670358b715"
+    },
+    {
+      "claim_id": "70d4b16a-ec8c-4525-9909-e2a1ee757d1e",
+      "result_id": "2c20dbac-2e1a-4033-bbfd-b29a513b1a90"
+    },
+    {
+      "claim_id": "7778085f-abe0-4b9b-9b27-8095d77a4301",
+      "result_id": "2c20dbac-2e1a-4033-bbfd-b29a513b1a90"
+    },
+    {
+      "claim_id": "bf840420-185a-4458-9e56-a8497d085e4a",
+      "result_id": "2c20dbac-2e1a-4033-bbfd-b29a513b1a90"
+    },
+    {
+      "claim_id": "c1251c6c-460b-406b-9bc8-6289fbbdecce",
+      "result_id": "2c20dbac-2e1a-4033-bbfd-b29a513b1a90"
+    },
+    {
+      "claim_id": "33027ac1-9af4-4a8f-ab1e-a6578eb04f62",
+      "result_id": "2c20dbac-2e1a-4033-bbfd-b29a513b1a90"
+    },
+    {
+      "claim_id": "7b662627-9e94-4640-86e8-030030fe32b5",
+      "result_id": "2c20dbac-2e1a-4033-bbfd-b29a513b1a90"
+    },
+    {
+      "claim_id": "5040d21e-0cee-4399-9afc-d94162e13074",
+      "result_id": "2c20dbac-2e1a-4033-bbfd-b29a513b1a90"
+    },
+    {
+      "claim_id": "3bb1e4f1-9398-4bb2-aaa1-565423811036",
+      "result_id": "2c20dbac-2e1a-4033-bbfd-b29a513b1a90"
+    },
+    {
+      "claim_id": "9719809e-43b5-41d8-91f2-2173a3375516",
+      "result_id": "2c20dbac-2e1a-4033-bbfd-b29a513b1a90"
+    },
+    {
+      "claim_id": "4465f945-48ad-4e57-8a6e-069dadf566bc",
+      "result_id": "42d2af81-9d13-4001-b93e-3e4a70a2d6ec"
+    },
+    {
+      "claim_id": "954e785f-2ec3-4f21-a176-d5a7cddb95db",
+      "result_id": "42d2af81-9d13-4001-b93e-3e4a70a2d6ec"
+    },
+    {
+      "claim_id": "383e0b74-feea-4265-9830-b4d9a7424f7e",
+      "result_id": "42d2af81-9d13-4001-b93e-3e4a70a2d6ec"
+    },
+    {
+      "claim_id": "7771d02f-4edf-4f8c-a42a-6d941eb3d5d1",
+      "result_id": "42d2af81-9d13-4001-b93e-3e4a70a2d6ec"
+    },
+    {
+      "claim_id": "05c61bac-2d95-422a-a047-4591c54dbb3a",
+      "result_id": "42d2af81-9d13-4001-b93e-3e4a70a2d6ec"
+    },
+    {
+      "claim_id": "f4a39409-4809-4053-ae51-64e3653754e1",
+      "result_id": "42d2af81-9d13-4001-b93e-3e4a70a2d6ec"
+    },
+    {
+      "claim_id": "9a3d09d6-aa85-445d-bdcc-d873cbf811cf",
+      "result_id": "42d2af81-9d13-4001-b93e-3e4a70a2d6ec"
+    },
+    {
+      "claim_id": "7b57ac00-4ed9-4c5f-bce4-57196fb5701b",
+      "result_id": "42d2af81-9d13-4001-b93e-3e4a70a2d6ec"
+    },
+    {
+      "claim_id": "fdb5db1e-077d-428e-9a33-b60d475b7007",
+      "result_id": "42d2af81-9d13-4001-b93e-3e4a70a2d6ec"
+    },
+    {
+      "claim_id": "9937b619-0489-4dd1-8273-65aaa9a26fc4",
+      "result_id": "42d2af81-9d13-4001-b93e-3e4a70a2d6ec"
+    },
+    {
+      "claim_id": "9232d89f-0062-4189-abaf-382a9d7c1438",
+      "result_id": "e2cad863-b7ce-4b5c-80ad-bb9a79d8213b"
+    },
+    {
+      "claim_id": "f4ba5eaa-be69-4ee9-9de9-29065360cd3d",
+      "result_id": "e2cad863-b7ce-4b5c-80ad-bb9a79d8213b"
+    },
+    {
+      "claim_id": "24b5cd0f-153c-4ba8-967f-4a495895e900",
+      "result_id": "e2cad863-b7ce-4b5c-80ad-bb9a79d8213b"
+    },
+    {
+      "claim_id": "edf4aedc-c757-4ffc-90e9-8e7e8b7385c7",
+      "result_id": "e2cad863-b7ce-4b5c-80ad-bb9a79d8213b"
+    },
+    {
+      "claim_id": "baab485a-d2b6-4759-b805-c2e554b282a6",
+      "result_id": "e2cad863-b7ce-4b5c-80ad-bb9a79d8213b"
+    },
+    {
+      "claim_id": "8abcf9c8-60ef-496e-801e-89f73743bf33",
+      "result_id": "e2cad863-b7ce-4b5c-80ad-bb9a79d8213b"
+    },
+    {
+      "claim_id": "cd72de27-54de-40f0-8194-cea2e60298d4",
+      "result_id": "e2cad863-b7ce-4b5c-80ad-bb9a79d8213b"
+    },
+    {
+      "claim_id": "353f22de-72b4-4052-b70e-8246874d08b9",
+      "result_id": "e2cad863-b7ce-4b5c-80ad-bb9a79d8213b"
+    },
+    {
+      "claim_id": "b5a43daf-4bb9-4dc3-8153-cd97d0b77b7a",
+      "result_id": "64d28e2e-a4dd-4cc7-a2a8-a923e99bfc24"
+    },
+    {
+      "claim_id": "e355ca88-9710-438e-a58a-935938c3055f",
+      "result_id": "64d28e2e-a4dd-4cc7-a2a8-a923e99bfc24"
+    },
+    {
+      "claim_id": "11ed3574-07bf-45a9-a822-e7a56d1c4edd",
+      "result_id": "64d28e2e-a4dd-4cc7-a2a8-a923e99bfc24"
+    },
+    {
+      "claim_id": "de1d3c6c-c7eb-441a-a6b5-4d66c630681f",
+      "result_id": "64d28e2e-a4dd-4cc7-a2a8-a923e99bfc24"
+    },
+    {
+      "claim_id": "e3b25c29-1b1a-47be-8fff-61aac6743927",
+      "result_id": "64d28e2e-a4dd-4cc7-a2a8-a923e99bfc24"
+    },
+    {
+      "claim_id": "e4b411d7-5418-4a99-be1b-5b80d2976c57",
+      "result_id": "64d28e2e-a4dd-4cc7-a2a8-a923e99bfc24"
+    },
+    {
+      "claim_id": "4b03523b-34f6-4432-883f-678819e1bf2d",
+      "result_id": "64d28e2e-a4dd-4cc7-a2a8-a923e99bfc24"
+    },
+    {
+      "claim_id": "5dc085af-a9f8-4d9b-937e-270af3be9d18",
+      "result_id": "64d28e2e-a4dd-4cc7-a2a8-a923e99bfc24"
+    },
+    {
+      "claim_id": "b368ffb5-8629-47d7-b526-635d3d680da3",
+      "result_id": "64d28e2e-a4dd-4cc7-a2a8-a923e99bfc24"
+    },
+    {
+      "claim_id": "0a1f02be-3ba9-4dd0-92dc-c03ba0489e74",
+      "result_id": "28bc943d-3d79-44e2-8dad-4e32b9faa868"
+    },
+    {
+      "claim_id": "d5673979-3bdc-4d20-b2ad-c11d39aaa037",
+      "result_id": "28bc943d-3d79-44e2-8dad-4e32b9faa868"
+    },
+    {
+      "claim_id": "09048ebe-afff-460d-8859-0ef9ebe2c754",
+      "result_id": "28bc943d-3d79-44e2-8dad-4e32b9faa868"
+    },
+    {
+      "claim_id": "6ad83aae-c8f4-46bf-aa57-3adb63706cac",
+      "result_id": "28bc943d-3d79-44e2-8dad-4e32b9faa868"
+    },
+    {
+      "claim_id": "5583f948-ce87-4860-9bb9-8d9fcf7002b4",
+      "result_id": "28bc943d-3d79-44e2-8dad-4e32b9faa868"
+    },
+    {
+      "claim_id": "0f9a199d-e4b5-4e41-be19-63f09f341c27",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "3bd77e30-7e42-4ae0-9000-da70b6961d13",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "7e8b6485-5d9c-4d00-b89b-2b7b745b4e6e",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "11532c19-4c9f-490a-a84f-077738db7e78",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "0a3e1a8e-d80f-42a6-bf24-e2a77e9514dc",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "21373a1f-9247-4e36-9446-48371f74b63e",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "9a82ea06-03e0-4b90-b32d-c2c5af4659ad",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "7cb6f0b7-a116-4fa2-a8ac-6c066bfe36a1",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "568a446e-a47d-4124-bd7b-f21b6c6177b9",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "4e569ccd-6050-49b5-9857-311e92e2480e",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "bcdec5d3-cd94-47a4-a506-f5295d975e10",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "8d330dfd-02c7-4ebd-ab5b-d1c13448e4ac",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "0ef3de17-b58e-42b6-be39-072f4669a56b",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "26098b4a-075c-4f05-8165-3a3e9024fc6e",
+      "result_id": "492855f8-f75d-4711-89d4-4aba6a7b1fe1"
+    },
+    {
+      "claim_id": "af43494d-dcac-4459-9a76-7b577ad07814",
+      "result_id": "e5ee666d-4479-4086-bc32-00e2af398732"
+    },
+    {
+      "claim_id": "c91ab6d8-68e7-4bba-896c-28acf17745e1",
+      "result_id": "e5ee666d-4479-4086-bc32-00e2af398732"
+    },
+    {
+      "claim_id": "57313fcf-6e15-411e-95b9-081ad80a01e2",
+      "result_id": "e5ee666d-4479-4086-bc32-00e2af398732"
+    }
+  ],
+  "comparisons": []
+}

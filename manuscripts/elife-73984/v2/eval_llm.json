@@ -1,0 +1,424 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C114"
+    ],
+    "result": "ESX-1 and PDIM are established virulence factors that mediate phagosomal membrane damage during Mtb infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C114 establish the known role of ESX-1 and PDIM in phagosomal membrane damage, supported by multiple citations to prior literature. This provides the foundational context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Wild-type Mtb, PDIM mutants, and ESX-1 mutants are taken up at similar rates into macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is supported by CFU and flow cytometry data (Figure 1\u2014figure supplement 1A\u2013B), establishing that differential uptake does not confound subsequent transcriptional comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Infection of BMDM with wild-type Mtb induces 907 genes that cluster into three temporal patterns: progressive induction (cluster 1), progressive repression (cluster 2), and transient early induction (cluster 3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4\u2013C7 describe RNAseq-based clustering of temporal gene expression patterns (Figure 1A). The clustering approach and temporal patterns are clearly documented, though the RNAseq experiment was performed only once.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Cluster 1 genes divide into subcluster 1A (type I IFN response genes, diminished by PDIM/ESX-1 mutants) and subcluster 1B (enhanced by PDIM/ESX-1 mutants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8\u2013C13 describe the subdivision of cluster 1 based on differential responses to mutants. Subcluster 1A identification as type I IFN response is supported by pathway analysis and prior literature. The data clearly show opposing effects of PDIM/ESX-1 on the two subclusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C115"
+    ],
+    "result": "Subcluster 1B contains host-protective genes (Marco, prostaglandin E synthase, lipocalin 2, Irg1, MMP14) that show enhanced expression in response to PDIM/ESX-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14\u2013C19 and C115 identify specific genes in subcluster 1B with known roles in TB control (supported by citations). The enhanced expression in response to mutants is demonstrated by RNAseq data (Figures 1C\u2013D, 2A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Enhanced expression of subcluster 1B genes in response to PDIM/ESX-1 mutants is robust across different MOIs, mouse strains, and multiple independent mutations, and is reversed by genetic complementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20\u2013C23 demonstrate the robustness and specificity of the enhanced response through multiple experimental controls (Figure 2B\u2013D, Figure 2\u2014figure supplement 1A). Complementation data (C23) provide strong genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The enhanced subcluster 1B response to PDIM/ESX-1 mutants is not a general response to growth-attenuated mutants, as demonstrated by the pckA mutant control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24\u2013C27 use the pckA mutant as a critical control to demonstrate specificity. The pckA mutant is growth-attenuated (C25, supported by citation and data) but does not elicit enhanced subcluster 1B expression (C26), supporting the specificity of the PDIM/ESX-1 effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Subcluster 1B gene expression is strictly dependent on MYD88 and TLR2, but not TLR4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28\u2013C32 use knockout BMDM to identify upstream regulators. The complete loss of expression in Myd88-/- and Tlr2-/- cells (Figure 3A) versus preserved expression in Tlr4-/- cells (Figure 3B) provides strong genetic evidence for the signaling pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Tnf and co-regulated genes represent an early TLR2-dependent response (cluster 3) that is minimally impacted by PDIM/ESX-1 and only partially dependent on TLR2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33\u2013C41 characterize Tnf as part of a distinct early response. The temporal separation from subcluster 1B (C34), minimal impact of PDIM/ESX-1 (C35), and partial TLR2 dependence (C36) are supported by RNAseq and qPCR data (Figure 3C\u2013G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Mtb infection induces distinct early and late TLR2-dependent transcriptional responses, with PDIM/ESX-1 preferentially blunting the late response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42\u2013C43 synthesize the findings into a biphasic model. This is well-supported by the combined data showing temporal separation, differential PDIM/ESX-1 effects, and distinct TLR2 dependencies of the two response components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Synthetic TLR2 ligands (PAM3CSK4, PAM2CSK4, PIM6) recapitulate the biphasic response observed with Mtb infection, indicating this is an inherent feature of TLR2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44\u2013C48 demonstrate that synthetic ligands produce similar early and late responses (Figure 4A\u2013F), both dependent on TLR2 and MYD88. This supports the conclusion that the biphasic response is intrinsic to TLR2 signaling rather than pathogen-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The late TLR2 response does not require known adapters TRIF, TRAM, or TIRAP, nor is it driven by TNF receptor signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49\u2013C50 use knockout cells to rule out specific signaling mechanisms (Figure 4\u2014figure supplement 1C\u2013D, Figure 5\u2014figure supplement 1A). These negative controls help define the signaling pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The late TLR2 response requires endosomal uptake, while the early response can be initiated from the plasma membrane, as demonstrated by dynasore inhibition experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51\u2013C58 use dynasore to block endocytosis. The differential effects on early (preserved) versus late (blocked) responses for both synthetic ligands and Mtb (Figure 5A\u2013E) provide strong evidence for compartment-specific signaling. Validation that dynasore blocks Mtb uptake (C53) is critical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The endosome-specific late TLR2 response is distinct from the type I IFN response, which is TLR2-independent and requires STING.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59\u2013C66 distinguish the late TLR2 response from type I IFN induction through multiple lines of evidence: different kinetics/magnitude (C62), TLR2 independence of IFN response to Mtb (C63), and experiments in Sting-/- cells (C66, Figure 5\u2014figure supplement 2G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Phagosomes containing PDIM/ESX-1 mutants are more acidic than those containing wild-type Mtb, as measured by pHrodo fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67\u2013C71 use pHrodo imaging to demonstrate differential phagosome acidification (Figure 6A). The method is validated by prior literature (C67\u2013C69), and the quantitative imaging data show significantly higher pHrodo signal around mutant bacteria at multiple timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Phagosome acidification enhances the late TLR2 response but not the early response, and PDIM/ESX-1-mediated membrane damage limits acidification to blunt the late response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72\u2013C79 use concanamycin A to block acidification. The differential effects on early (preserved) versus late (blocked) responses for both Mtb and synthetic ligands (Figure 6B\u2013E) demonstrate acidification dependence. Combined with phagosome pH data, this supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Endosomal TLRs (TLR7, TLR9) require acid-activated proteases for signaling, providing precedent for pH-dependent TLR regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 cites prior literature to provide mechanistic context for pH-dependent TLR signaling. This is appropriately used as supporting background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "PDIM/ESX-1 mutants induce less macrophage cell death than wild-type Mtb in wild-type macrophages, but this protective effect is partially lost in Tlr2-/- macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81\u2013C90 demonstrate that TLR2-dependent responses contribute to the attenuated cytotoxicity of PDIM/ESX-1 mutants. The key finding is the genotype-by-strain interaction (C89), supported by cell viability data (Figure 7A\u2013B). Prior literature (C81\u2013C86) provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "PDIM/ESX-1 mutants show attenuated growth in wild-type macrophages, but grow significantly better in Tlr2-/- macrophages, approaching wild-type Mtb levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91\u2013C95 demonstrate that TLR2-dependent responses contribute to growth restriction of PDIM/ESX-1 mutants. The restoration of mutant growth in Tlr2-/- cells (C93, Figure 7C) provides strong evidence for TLR2's role in controlling these mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Prior studies show TLR2 plays a modest role in controlling Mtb infection in mice, with variable effects on bacterial burden but consistent effects on pathology and survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96\u2013C100 summarize prior literature on TLR2 knockout mice. This provides appropriate context for interpreting the in vivo experiments, though the synthesis (C100) is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "PDIM mutant Mtb shows attenuated growth in wild-type mice but increased growth in Tlr2-/- mice, indicating PDIM interference with TLR2 responses contributes to bacterial growth in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101\u2013C104 demonstrate a genotype-by-strain interaction in mice (Figure 7D). The PDIM mutant grows better in Tlr2-/- mice while wild-type Mtb grows similarly in both strains, supporting the model. However, sample sizes are modest (n=5 mice per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Histopathology shows trends toward increased inflammation in Tlr2-/- mice infected with PDIM mutant, though PDIM mutant growth is only partially restored, indicating additional attenuation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105\u2013C109 describe histopathological trends (Figure 7\u2014figure supplement 1B\u2013C). The data show trends but lack statistical analysis, and the authors appropriately note partial restoration (C109), indicating complexity. The histopathology supports but does not definitively prove the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "TLR2 can signal from plasma membrane and endosomes, and Mtb has complex PAMPs recognized by multiple PRRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110\u2013C113 provide background on TLR2 signaling and Mtb recognition, supported by citations and established knowledge. This appropriately frames the study's context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "PDIM and ESX-1 contribute to Mtb virulence by blunting a protective endosome-specific TLR2 response through interference with phagosome acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116\u2013C117 present the study's central model, integrating transcriptional, mechanistic, and functional data. The model is well-supported by the combined evidence from macrophage and mouse experiments, though some mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The late TLR2 response includes genes important for Mtb control and adaptive immunity, and undermining this response contributes to Mtb pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118\u2013C120 synthesize the functional significance of the findings. The importance of late response genes is supported by citations (C119), and the contribution to pathogenesis is supported by the macrophage and mouse infection data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Mycobacteria have evolved multiple strategies to interfere with TLR2 activation, including PDIM masking of ligands, Hip1-mediated cytokine suppression, and sulfolipid-1 interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121\u2013C124 integrate the current findings with prior literature to propose that mycobacteria use multiple mechanisms to evade TLR2 responses. This synthesis is well-supported by citations and the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "TLR2 activation can dampen IFN-dependent functions, adding complexity to TLR2's role in TB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 cites prior literature on TLR2-IFN interactions. This is appropriately included as additional context for understanding TLR2's complex role in TB immunity.",
+    "result_type": "MINOR"
+  }
+]

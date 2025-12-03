@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study analyzed 486 long-term abundance records (10-35 years, mean 15.7 years) from 157 terrestrial mammal species across 13 biomes, with geographic bias toward northwestern Europe and North America. Most records were from Artiodactyla (n=172), Carnivora (n=127), and Rodentia (n=82), with 1-17 records per species (mean 3.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C36 and C108-C112 provide consistent, detailed descriptions of the dataset characteristics including sample sizes, temporal coverage, taxonomic representation, and geographic distribution. The data are clearly documented with specific numbers and ranges that are internally consistent across claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "No directional effect of temperature or precipitation anomalies on annual population growth rates was found across terrestrial mammals. The posterior mean global intercept for temperature was 0.02 [-0.21, 0.25] and for precipitation was -0.07 [-0.31, 0.15], with 95% of records showing coefficients within moderate ranges, though ~8% of temperature and ~1% of precipitation coefficients showed extreme responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C38-C43 present consistent statistical results from Bayesian meta-regression showing no overall directional effects, with credible intervals overlapping zero. The quantitative results are specific and internally consistent, though the interpretation of 'extreme' responses (C43) for 8-9% of populations could benefit from additional context about biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C62"
+    ],
+    "result": "Record length influenced the variance and magnitude of temperature effects, with shorter records displaying larger variation and larger absolute responses to temperature and precipitation anomalies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C62 consistently describe the relationship between record length and effect estimates. The authors acknowledge this relationship and state they accounted for record length in all models, which is appropriate. However, this finding raises questions about potential bias in shorter time series that may affect interpretation of results from records with fewer years of data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "No evidence was found for differences in weather responses across biomes or for spatial autocorrelation in weather responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 report negative findings from model comparison (\u0394elpd values near zero) and spatial autocorrelation tests. The authors appropriately used leave-one-out cross-validation for model comparison and tested for spatial patterns, though the geographic bias in the dataset (C31, C104) may limit power to detect biome-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C93",
+      "C94"
+    ],
+    "result": "Population responses to weather anomalies showed far greater within-species variation than among-species variance, with no evidence for phylogenetic covariance. Species-level variance in temperature effects (0.2 [0.01, 0.4]) was 20 times greater than phylogenetic covariance (0.01 [0.0, 0.03]).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C50-C54, C93-C94 present consistent statistical results showing minimal phylogenetic signal and high within-species variation. The quantitative estimates are specific with credible intervals. This finding is notable and well-supported, though it contrasts with findings from other taxa (C95-C96), which the authors appropriately acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C97"
+    ],
+    "result": "Different populations of the same species exhibited substantial variation in weather responses, exemplified by Myodes glareolus showing temperature effects ranging from -3.33 to 3.86 across nine populations, compared to -11.60 to 9.22 across all Rodentia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 and C97 provide a concrete example supporting the within-species variation finding. The specific numerical ranges for M. glareolus are consistent with the broader statistical results (C50-C54). This example effectively illustrates the magnitude of within-species variation, though it represents only one species and may not be representative of all taxa.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C66",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C81"
+    ],
+    "result": "Longer-lived species with smaller litter sizes had lower absolute population responses to weather anomalies. Maximum longevity was the best predictor, with a change from 10 months to 80 years associated with a 2.36-fold decrease in temperature response magnitude and 2.05-fold decrease in precipitation response magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C66, C69-C72, C81 present consistent results from model selection and Gamma regression showing life history effects on absolute weather responses. The model selection approach using leave-one-out cross-validation is appropriate, and the quantitative effect sizes are specific. However, the use of maximum longevity as a life history metric has acknowledged limitations (C87), which may affect the precision of these estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Litter size positively predicted absolute population responses to weather anomalies, with no evidence for two-way interactions between life-history variables. A change in litter size from 1 to 17 was associated with a 1.99-fold increase in temperature responses and 1.60-fold increase in precipitation responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C75-C79 present consistent results showing litter size effects on absolute weather responses. The lack of interaction effects (C65) simplifies interpretation. The quantitative estimates are specific, though the biological interpretation of these fold-changes across such extreme litter size ranges (1 to 17) should be considered carefully as few species occupy the extremes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83",
+      "C107"
+    ],
+    "result": "The study provides an empirical link between life history and population responses to environmental change, supporting the hypothesis that longevity buffers organisms against short-term environmental variability. The results suggest that increased extreme weather events will have greater impacts on short-lived mammals with higher reproductive output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80, C82-C83, C107 present interpretations and implications of the findings. While C80 and C83 are reasonable interpretations of the data, C82 and C107 involve speculation about future impacts and predictive utility that extend beyond what the current data directly demonstrate. The study shows associations with weather anomalies but does not directly test responses to future climate scenarios or validate predictive models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study used temperature and precipitation anomalies from CHELSA climate data (1979-2013) as key weather variables, averaged over 5 km buffer radii around population locations. Results were robust to buffer radius choice, and the focus on anomalies was justified by evolutionary adaptation to environmental context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 describe the weather data processing methodology. The robustness testing across buffer radii (C116) strengthens confidence in the approach. The justification for using anomalies rather than raw values (C118-C119) is reasonable from an evolutionary perspective, though alternative approaches (e.g., absolute values, variance) were also tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C87"
+    ],
+    "result": "The study used three life-history traits (maximum longevity, litter size, adult body mass) from established databases, which showed high covariance with longevity positively associated with body mass and negatively with litter size. Maximum longevity is acknowledged as flawed but was well-correlated with more robust demographic traits for a subset of species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 and C87 describe the life history data sources and acknowledge limitations. The high covariance among traits (C123) is expected from life history theory. The acknowledgment that maximum longevity is flawed (C87) but validated against demographic rates for a subset is appropriate, though this limitation may affect the precision of life history effect estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C132"
+    ],
+    "result": "The study used a two-step meta-regression approach: first estimating weather effects on population growth rates using GAMMs accounting for temporal autocorrelation and trends, then analyzing these effects using Bayesian meta-regression. The GAMM approach was validated against state-space models showing highly correlated results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C130 and C132 describe the analytical framework with appropriate detail. The validation against alternative approaches (C128, C130, C132) strengthens confidence in the methodological choices. The accounting for temporal autocorrelation (C129) and density dependence (C130) addresses important confounders. The two-step approach is reasonable for comparative analysis across many populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The Bayesian meta-regression used conservative regularizing priors obtained from prior predictive simulations and assessed model performance using leave-one-out cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 describe appropriate Bayesian methodology. The use of prior predictive simulation to set regularizing priors (C134) and leave-one-out cross-validation for model comparison (C135) represent best practices in Bayesian analysis. These methodological choices enhance the reliability of the statistical inferences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "The study's results contrast with previous findings of linear associations between mammal abundance and temperature change, potentially due to differences in analyzing annual changes versus long-term trends. The findings align with recent studies showing most Living Planet Database records do not exhibit population declines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C91-C92 appropriately contextualize the findings relative to prior work. The discussion of why results differ from Spooner et al. 2018 (C88-C89) is reasonable, acknowledging that annual effects may differ from long-term trends. The alignment with recent findings about lack of widespread declines (C92) provides supporting context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The lack of phylogenetic signal contrasts with findings from birds and butterflies. Within-species variation has implications for population viability assessments and species distribution models, suggesting that single-population studies may not accurately represent species-level patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 and C98-C103 discuss implications of the within-species variation finding. The contrasts with other taxa (C95-C96) are appropriately noted. The implications for PVAs (C101-C102) and species distribution models (C103) are reasonable inferences from the high within-species variation, though these represent suggested future directions rather than directly tested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C106"
+    ],
+    "result": "The study acknowledges limitations including geographic bias toward temperate biomes and Europe/North America, and emphasizes the importance of increased long-term monitoring for assessing population dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C106 appropriately acknowledge data limitations. The geographic bias (C104) is a common issue in macroecological studies and may limit generalizability to underrepresented regions. The call for increased monitoring (C106) is reasonable given the observed effects of record length on estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The introduction establishes that climate change threatens biodiversity, with species showing varied responses based on their life-history traits. While habitat loss is currently the dominant driver of extinction, climate change impacts are already evident and predicted to worsen, with life-history traits potentially buffering or exacerbating responses to environmental variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide background context supported by appropriate citations. These claims establish the scientific rationale for the study by synthesizing prior work on climate change impacts, species variation in responses, and life-history theory. The claims are well-supported by the cited literature and represent accurate summaries of current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Long-lived species with slow life-history traits are slower to recover from perturbations over longer time-scales and face additional threats from poaching and habitat loss. Only 1.3% of tetrapods have sufficient demographic data to estimate population dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 provide important context about limitations of slow life-history species and data availability. These claims are supported by appropriate citations and help qualify the main findings by noting that buffering against short-term weather variability does not necessarily confer overall resilience to environmental change.",
+    "result_type": "MINOR"
+  }
+]

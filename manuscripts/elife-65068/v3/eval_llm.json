@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Human embryo polarization occurs in two sequential steps during the 8-16 cell stage: F-actin polarization precedes PAR complex (PARD6, aPKC) polarization. F-actin enrichment at the apical surface is detected at 77-80 hours post-fertilization and coincides with compaction, while PARD6 polarization occurs later at 93-97 hours post-fertilization. The degree of PARD6 polarization increases progressively with embryo development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C36-C50 provide converging temporal evidence from immunofluorescence imaging at multiple time points (2hr, 9hr, 24hr post-warming; 74-75, 77-80, 93-97 hours post-fertilization) showing F-actin polarizes before PARD6. The data include appropriate sample sizes (N=17-33 embryos, 135-519 blastomeres) and demonstrate positive correlations between PARD6 localization metrics and cell number. The two-step model is well-supported by the temporal separation observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "PLC signaling, specifically through PLCB1 and PLCE1 isoforms, is required for establishing cell polarity in human embryos. Both pharmacological inhibition (U73122) and siRNA-mediated knockdown of PLCB1/PLCE1 significantly reduced F-actin and PARD6 apical enrichment without substantially affecting compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C57 reveal a critical confounding issue: while U73122 treatment reduced F-actin polarization compared to untreated controls, the effect was not statistically significant when compared to DMSO vehicle controls. This undermines the pharmacological evidence. The siRNA data (C59-C62) showing 71-90% knockdown and reduced polarization is more convincing, but the small sample sizes (N=12-17 embryos) and lack of rescue experiments limit confidence. The claim that PLC is required (C64) is overstated given the vehicle control issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C101",
+      "C102"
+    ],
+    "result": "GATA3 expression initiation is independent of cell polarization, but polarization reinforces GATA3 levels and TE fate. GATA3 is expressed in both polarized and unpolarized cells at day 4, though nuclear GATA3 intensity is significantly higher in polarized cells. PLC inhibition and PLCB1/PLCE1 knockdown reduce GATA3 expression specifically in unpolarized cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72, C74 demonstrate GATA3 expression in unpolarized cells with higher levels in polarized cells (N=33 embryos, 519 blastomeres), supporting polarity-independent initiation. Claims C77-C80 show that PLC perturbation reduces GATA3 specifically in unpolarized cells, consistent with the model that the effect is mediated through reduced polarization rather than direct transcriptional control. YAP1 data (C75) provides additional support. The logic connecting these observations is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Human embryo compaction is heterogeneous, beginning at 78.2\u00b16.6 hours post-fertilization when embryos have ~10 cells and completing at 80.2\u00b18.5 hours with ~11.6 cells. Compaction starts at the eight-cell stage but extends through the 8-16 cell transition, contrasting with mouse embryos where compaction completes by the end of the eight-cell stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 provide quantitative timing data with appropriate sample sizes (N=54-83 embryos) and standard deviations. The heterogeneity claim (C28) is supported by the observed variability. However, the methods note that cell numbers may be underestimated because some divisions inside compacted embryos are untraceable, which could affect the precision of these measurements. Despite this limitation, the overall conclusion about timing and heterogeneity is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C107",
+      "C108"
+    ],
+    "result": "Inner cell generation in human embryos differs mechanistically from mouse embryos. In 37% of human embryos, inner cells are present before full polarization (with <8 outer polarized cells). Some inner cells are larger than expected from asymmetric division, and time-lapse imaging captured at least one case of cell internalization during compaction, suggesting alternative mechanisms of inner cell allocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 provides quantitative data (37%, N=21 embryos), but the sample size is modest. Claims C87-C89 on cell size are interesting but based on limited observations (N=53 inner cells from 21 embryos). Most critically, claim C91 relies on a single observed case of internalization during compaction, which is insufficient to establish this as a general mechanism. The authors acknowledge they could only label a small number of embryos for live imaging. While suggestive of mechanistic differences from mouse, the evidence is preliminary and requires more extensive live-imaging studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The experimental system using cryopreserved day-3 human embryos is of good quality. Embryos averaged 8 cells at warming, increased to ~12 cells after 24hr culture, showed decreased cell cycle time from 4-8 cell (22.15hr) to 8-16 cell (14.49hr) transitions, and had minimal cell degeneration (89.4% intact after warming, 95.3% after 24hr culture).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 provide clear quantitative data with appropriate sample sizes (N=85-260 embryos). Claim C23 (embryo quality not compromised) is a reasonable inference from the low degeneration rates. These quality control metrics are important for validating the experimental system and are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C63"
+    ],
+    "result": "PLC inhibition impairs F-actin polarization but does not significantly compromise embryo compaction, suggesting alternative pathways may drive compaction in human embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 shows compaction was not significantly affected by U73122 or siRNA treatment, and C66 confirms this observation. However, claim C67 is explicitly speculative ('might be sufficient') and the authors acknowledge this requires future testing. The observation is interesting but the mechanistic interpretation is premature. Additionally, the vehicle control issues noted earlier (C56-C57) complicate interpretation of the U73122 effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Human embryo compaction and polarization timing is more heterogeneous than in mouse embryos, which may reflect species-specific features or individual differences in embryo donors (genetic factors, age).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by the observed variability in timing data (C26-C30). Claims C94-C95 appropriately present alternative explanations as speculative. The authors acknowledge using embryos from different clinics and countries, which could contribute to variability. The heterogeneity observation is well-supported, though the causes remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C32",
+      "C33",
+      "C34",
+      "C68",
+      "C73",
+      "C83",
+      "C84",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Background context on mammalian embryo development and lineage specification from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C7-C17, C32-C34, C68, C73, C83-C84, C97-C100) summarize established knowledge from cited literature about embryo lineages, mouse embryo development, and prior findings. They provide appropriate context and are supported by citations. These are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Summary of main findings: PLC signaling triggers polarization in human embryos, F-actin polarization precedes PAR complex polarization, and TE factor expression initiates independently of polarity but is reinforced by polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C103-C106) synthesize the major findings from the study. C103 is supported by the RNAi and inhibitor data (though with caveats noted above). C104-C105 are well-supported by the temporal analysis. C106 is supported by the GATA3 expression data. These represent appropriate summary statements of the work, though C103 should be interpreted with the uncertainties noted in the PLC signaling result evaluation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2010 @@
+{
+  "submission": {
+    "id": "ed82909f-dbc9-45c2-8777-1a59d2ce24fe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:12:40.075043Z",
+    "updated_at": "2025-12-03T08:12:40.075043Z"
+  },
+  "content": [
+    {
+      "id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "submission_id": "ed82909f-dbc9-45c2-8777-1a59d2ce24fe",
+      "content_type": "manuscript",
+      "content_text": "# Linking functional and molecular mechanisms of host resilience to malaria infection\n\n## Authors\n\n- Tsukushi Kamiya<sup>1</sup> ([ORCID: 0000-0002-9020-6699](https://orcid.org/0000-0002-9020-6699)) \u2020\n- Nicole M Davis<sup>2</sup>\n- Megan A Greischar<sup>3</sup> ([ORCID: 0000-0002-7521-9344](https://orcid.org/0000-0002-7521-9344))\n- David Schneider<sup>2</sup> ([ORCID: 0000-0002-2391-9963](https://orcid.org/0000-0002-2391-9963))\n- Nicole Mideo<sup>1</sup>\n\n### Affiliations\n\n1. Department of Ecology and Evolutionary Biology, University of Toronto Toronto Canada\n2. Department of Microbiology and Immunology, Stanford University Stanford United States\n3. Department of Ecology and Evolutionary Biology, Cornell University Ithaca United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIt remains challenging to understand why some hosts suffer severe illnesses, while others are unscathed by the same infection. We fitted a mathematical model to longitudinal measurements of parasite and red blood cell density in murine hosts from diverse genetic backgrounds to identify aspects of within-host interactions that explain variation in host resilience and survival during acute malaria infection. Among eight mouse strains that collectively span 90% of the common genetic diversity of laboratory mice, we found that high host mortality was associated with either weak parasite clearance, or a strong, yet imprecise response that inadvertently removes uninfected cells in excess. Subsequent cross-sectional cytokine assays revealed that the two distinct functional mechanisms of poor survival were underpinned by low expression of either pro- or anti-inflammatory cytokines, respectively. By combining mathematical modelling and molecular immunology assays, our study uncovered proximate mechanisms of diverse infection outcomes across multiple host strains and biological scales.\n\n## Introduction\n\nIn human malaria, infection outcomes range widely from sub-clinical to fatal. While it is difficult to disentangle the factors contributing to this variation in resilience to malaria, host genetics is a major determinant (Hernandez-Valladares et al., 2005; L\u00f3pez et al., 2010; Hedrick, 2011). Even in experimental rodent malaria infections, where environment, diet, and as many other factors as possible are highly controlled, different mouse strains infected with the same strain of Plasmodium chabaudi demonstrate remarkable variation in infection dynamics and malaria mortality. Among eight strains of inbred laboratory mice (129S1/SvImJ, A/J, C57BL/6, CAST/EiJ, NOD/ShiLtJ, NZO/HILtJ, PWK/PhJ, WSB/EiJ) that collectively span 90% of the mouse genetic diversity commonly used in laboratory experiments (Roberts et al., 2007), survival from malaria infection ranges from less than 5\u2013100% (Figure 1). Underlying this survival variation are likely differences in functional properties of within-host ecology (i.e. parasite growth, parasite clearance, and replenishment of red blood cells [RBCs]), which are difficult to measure directly. However, longitudinal measurements of host health and parasite burden can inform processes of within-host ecology (i.e. RBCs and infected red blood cells (iRBCs), respectively, in malaria infections). For example, a \u2018disease curve\u2019 \u2014 longitudinal data of health and parasites plotted against each other in a phase plane \u2014 helps visualise the process of parasite growth, host sickness and recovery at the individual host level (Figure 2; Schneider, 2011). Furthermore, a mathematical model fitted to these data can predict particular functional mechanisms (e.g. parasite proliferation [Mideo et al., 2011], specific versus non-specific immunity [Wale et al., 2019] and dose-dependent host responses [Haydon et al., 2003; Metcalf et al., 2011; Kamiya et al., 2020]) that lead to divergent infection dynamics (Mideo et al., 2008a; Metcalf et al., 2012). These model predictions can then be independently tested by follow-up experiments: for example, Mideo et al., 2011 chemically manipulated RBC replenishment to interrogate the role of RBC age structure in parasite growth predicted by a previous model (Mideo et al., 2008b). Crucially, however, model predictions of host immune responses against malaria are rarely examined together with immunological data. Thus, it remains unclear whether and how modelled responses at the level of within-host ecology (e.g. rate of parasite clearance) are linked to observable quantities at the cellular and molecular levels (e.g. cytokines).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65846/elife-65846-fig1-v1.jpg)\n\n**Figure 1.:** Eight mouse strains are shown (with total sample sizes given in parentheses): WSB/EiJ (30), 129S1/SvImJ (10), NZO/HILtJ (10), C57BL/6 (20), CAST/EiJ (32), NOD/ShiLtJ (15), A/J (15), and PWK/PhJ (22). The dataset is a compilation of two experiments (Davis et al., 2021 and Gupta et al. unpublished). The lines for WSB/EiJ, 129S1/SvImJ and NZO/HILtJ are jittered as 100% of mice of each strain survived for 15 days.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65846/elife-65846-fig2-v1.jpg)\n\n**Figure 2.:** In a phase plot bound by parasite burden and host health (i.e. disease space, sensu [Schneider, 2011; Torres et al., 2016]), infection progresses clockwise from the top-left corner (i.e. many RBCs, few iRBCs). Top left panel illustrates common trajectories. Following a rapid parasite growth phase (rightward movement along the x-axis), host health deteriorates (downward movement along the y-axis) during acute malaria infection. In the meantime, the parasite density starts to decline due to resource limitation and/or upregulated immunity. If a host is resilient, the trajectory tends towards the starting healthy state as parasites further decline and RBCs are replenished (path a, light grey). In contrast, the damage to host health may be irreparable in non-resilient hosts (path b, dark grey) (Schneider, 2011). The small, coloured plots at the bottom show the empirically\u00a0observed trajectories of the first wave of malaria infection in 80 mice across eight strains in disease space, with the densities of iRBCs and RBCs on the x- and y-axis, respectively. The top right panel shows the median trajectory of the eight strains. Generally speaking, highly resilient strains (WSB/EiJ, 129S1/SvImJ, NZO/HILtJ, C57BL/6) follow path a, and less resilient strains (CAST/EiJ, NOD/ShiLtJ, A/J, PWK/PhJ) follow path b.\n\nThe immune system is a critical proximate mechanism of host genetic resilience to infection (L\u00f3pez et al., 2010). Failure to mount a robust immune response can lead to unchecked parasite proliferation, while dysregulated responses may cause collateral damage, that\u00a0is, immunopathology. While the benefit of immune protection often outweighs any costs associated with these responses (Sorci et al., 2017), severe outcomes of many infectious diseases are a consequence of immunopathology rather than direct damage caused by parasites (Graham et al., 2005). Thus, a \u2018healthy\u2019 immune response requires striking a delicate balance.\n\nDuring the acute phase of blood-stage malaria infection, innate responses target and remove iRBCs as well as short-lived extracellular parasites known as merozoites (Stevenson and Riley, 2004). In addition, RBCs \u2014 regardless of infection status \u2014 are susceptible to clearance by immune effectors such as macrophages (Jakeman et al., 1999; Chua et al., 2013). While the targeted response removes more iRBCs, data-driven modelling studies highlight the importance of indiscriminate RBC clearance for lowering parasite burden (Wale et al., 2019; Kamiya et al., 2020; Metcalf et al., 2012; Miller et al., 2010). Functionally, this host-driven destruction of RBCs can have both favourable and unfavourable consequences for host health. On the one hand, it has been proposed as a host adaptation in the presence of malaria parasites to clear the parasites directly (i.e. top-down effect) as well as to limit resources for the parasite (i.e. bottom-up effect) (Wale et al., 2019; Haydon et al., 2003; Metcalf et al., 2012; Cromer et al., 2009). On the other hand, an excessive loss of RBCs brings forth adverse health implications. In immune naive infants and children, severe malarial anaemia is the most common severe manifestation of disease, and its associated mortality rate can reach 30% (Perkins et al., 2011). A variety of processes cause malaria-related anaemia, including loss due to parasite exploitation, RBC clearance (e.g. phagocytosis of both infected and uninfected cells), suppression of RBC production, and defective RBC development (Chua et al., 2013). Among them, clearance is the most important process, accounting for between 75% and 90% of the total RBC deficit during malaria infections (Jakeman et al., 1999). In comparison, direct exploitation by malaria parasites has been estimated to account for less than 10% of the RBC deficit (Jakeman et al., 1999; Price et al., 2001; Fonseca et al., 2016).\n\nAt the molecular level, vertebrate host responses are regulated by immune signalling molecules, known as cytokines (Lamb et al., 2006). Acute malaria infection induces pro-inflammatory cytokines required for mounting a timely and robust response while anti-inflammatory cytokines inhibit excess immune reactions to safeguard against collateral damage (Lamb et al., 2006). For instance, tumour necrosis factor alpha ($TNF-\u2062\\alpha$) and interferon-gamma ($IFN-\u2062\\gamma$), are pro-inflammatory cytokines responsible for a myriad of inflammatory responses, including the production of nitric oxide and reactive oxygen species (Bouharoun-Tayoun et al., 1995; Bogdan et al., 2000), which are associated with rapid clearance of P. falciparum, the deadliest human malaria parasite (Rockett et al., 1992; Kremsner et al., 1995; Mordm\u00fcller et al., 1997; Hernandez-Valladares et al., 2006; Franklin et al., 2007). However, the same inflammatory responses can also be damaging to the organisms that produce them (Clark et al., 1991; King and Lamb, 2015). For example, TNF-\u03b1 overproduction \u2014 which can result from a deficit of anti-inflammatory cytokines like interleukin 10 (IL-10) and transforming growth factor-beta (TGF-\u03b2) \u2014 could lead to adverse effects including worsened anaemia, weight loss and survival in the mouse model (Omer and Riley, 1998; Li et al., 2003; Long et al., 2006; Long et al., 2008). Balanced expression of these cytokines is likely a mechanism that promotes resilience (survival) to malaria infection. However, mechanistic studies usually focus on just one or two inbred mouse strains with similar cytokine responses, limiting our ability to link molecular signatures with functional variation in host traits (e.g. indiscriminate versus targeted RBC clearance) that impacts the infection dynamics.\n\nTo uncover the functional mechanisms underlying malaria survival and variation thereof, we formulated a mathematical model of within-host malaria ecology that describes the asexual replicative cycle and qualitatively distinct components of host immunity (Figure 3). Rather than aiming for a mechanistically precise description of host immunity, we employed a simple mathematical model to track the net effects of host responses, that\u00a0is, clearance rate of iRBCs and RBCs (Kamiya et al., 2020; Figure 3a). Using a hierarchical Bayesian approach, we fitted the model to longitudinal data of RBCs and iRBCs from eight mouse strains with varied resilience to P. chabaudi. We then examined cross-sectional cytokine data from the same eight strains to uncover the molecular underpinnings of our model predictions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65846/elife-65846-fig3-v1.jpg)\n\n**Figure 3.:** (a) A dynamical regulation model of host responses against blood-stage malaria. We condensed the complexity of the vertebrate acute innate response against malaria into two independent pathways responsible for general RBC clearance and targeted iRBC clearance (represented by the yellow and green block, respectively). Activation of each response occurs when the host detects the presence of pathogen-associated molecular patterns (PAMPs): f1 and f2 are linear functions of the iRBC density. For general RBC clearance, the activity resets daily. In contrast, the activity of the targeted responses against iRBCs accumulates over multiple days (see methods for further explanation). The output of each host response feeds back to influence the within-host infection dynamics (indicated by the coloured arrows in panel b). (b) Dynamics of RBCs and blood-stage malaria parasites within the host. Recruitment into and transitions among components of the asexual cycle are indicated with black arrows. Grey arrows indicate background mortality for different components. General clearance of RBCs and targeted clearance of iRBCs are marked with yellow and green arrows, respectively. Replenishment of RBCs (erythropoiesis) is indicated in blue.\n\n## Results and discussion\n\n### Functional mechanisms underlying resilience to malaria\n\nOur mathematical model of within-host malaria infection accurately described the time-course of RBCs and iRBCs during the acute phase of malaria infection in all mouse strains (Appendices 1 and 2). Several estimated model parameters varied with mouse strain (Figure 4). To characterise these multivariate, within-host ecological differences, we carried out principal component analysis (PCA) on the estimated parameter set, \u03b8. We found several clusters that distinguished mouse strains revealing functional diversity of host resilience to malaria infection (Figure 5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65846/elife-65846-fig4-v1.jpg)\n\n**Figure 4.:** (a) Strain-specific variation, $s$, in each parameter of the set $\\theta\u220b(\\mu_{R}^{\u2032},\\mu_{R}^{\u2032\u2032},\u03c1,\u03c8_{N_{1}},\u03c8_{N_{2}},\\beta)$. The eight strains are ordered according to overall survival percentage from the top (see Figure 1). The average parameter value across the eight strains is indicated by $s=0$. (b) Ordered parameter stacks show functional similarities and differences between individual mice of different strains (indicated by colours). Each slice of a stack represents the median estimate for an individual mouse.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65846/elife-65846-fig5-v1.jpg)\n\n**Figure 5.:** The PCA biplot displays the relationship between individual mice in the first two principal components, which collectively account for 66.7% of the total variance in parameters describing within-host malaria ecology, $\\theta\u220b(\\mu_{R}^{\u2032},\\mu_{R}^{\u2032\u2032},\u03c1,\u03c8_{N_{1}},\u03c8_{N_{2}},\\beta)$. The direction and length of the grey arrows indicate the contribution of each parameter to the principal components. Parameter descriptions are found in Table 1.\n\n**Table 1.**\n Description of model parameters and their fixed values, or prior distributions used in Bayesian statistical inference.Where parameters were estimated (indicated by $^{*}$ on the description), we assigned generic priors (for immune parameters, $\u03c8_{N_{1}}$ and $\u03c8_{N_{2}}$, and hyperpriors $\\sigma_{s}$ and $\\sigma_{u}$) and weakly informative priors centred around specific estimates from previous studies for the rest.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Symbol</th>\n      <th>Description</th>\n      <th>Fixed value or prior</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Host responses</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03c1</td>\n      <td>Proportion of deviation from Rc restored per day *</td>\n      <td>0.25\u00d7exp\u2062(\ud835\udca9\u2062(0,1))</td>\n      <td>Miller et al., 2010</td>\n    </tr>\n    <tr>\n      <td>\u03c8N1</td>\n      <td>Activation strength of indiscriminate RBC clearance *</td>\n      <td>exp\u2062(\ud835\udca9\u2062(0,1))</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03c8N2</td>\n      <td>Activation strength of targeted iRBC clearance *</td>\n      <td>exp\u2062(\ud835\udca9\u2062(0,1))</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Within-host infection dynamics</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rc</td>\n      <td>RBC density at homeostatic equilibrium</td>\n      <td>RBC(t=0)</td>\n      <td>data</td>\n    </tr>\n    <tr>\n      <td>Imax</td>\n      <td>Maximum iRBC density observed</td>\n      <td>2.65\u00d7106 per microliter</td>\n      <td>data</td>\n    </tr>\n    <tr>\n      <td>\u03bcR</td>\n      <td>Daily background RBC mortality rate</td>\n      <td>0.025</td>\n      <td>Miller et al., 2010</td>\n    </tr>\n    <tr>\n      <td>\u03bcR\u2032</td>\n      <td>Daily background RBC mortality rate (during infection) *</td>\n      <td>0.025\u00d7exp\u2062(\ud835\udca9\u2062(0,1))</td>\n      <td>Miller et al., 2010</td>\n    </tr>\n    <tr>\n      <td>\u03bcR\u2032\u2032</td>\n      <td>Density-independent RBC replenishment rate (during infection) *</td>\n      <td>0.025\u00d7exp\u2062(\ud835\udca9\u2062(0,1))</td>\n      <td>Miller et al., 2010</td>\n    </tr>\n    <tr>\n      <td>\u03b2</td>\n      <td>Parasite burst size *</td>\n      <td>7\u00d7exp\u2062(\ud835\udca9\u2062(0,1))</td>\n      <td>Miller et al., 2010</td>\n    </tr>\n    <tr>\n      <td>p</td>\n      <td>Merozoite invasion rate</td>\n      <td>1.5\u00d710-5 per day</td>\n      <td>Mideo et al., 2011</td>\n    </tr>\n    <tr>\n      <td>\u03bcM</td>\n      <td>Merozoite mortality rate</td>\n      <td>48 per day</td>\n      <td>McAlister, 1977</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Hyperpriors</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03c3s</td>\n      <td>Standard deviations for strain-level variation</td>\n      <td>exp\u2062(\ud835\udca9\u2062(0,1))</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03c3u</td>\n      <td>Standard deviations for individual-level variation</td>\n      <td>exp\u2062(\ud835\udca9\u2062(0,1))</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Measurement errors</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u03c3RBC</td>\n      <td>Standard deviation for total RBC density *</td>\n      <td>5\u00d7105\u00d7exp\u2062(\ud835\udca9\u2062(0,1))</td>\n      <td>Miller et al., 2010</td>\n    </tr>\n    <tr>\n      <td>\u03c3iRBC</td>\n      <td>Standard deviation for log10 iRBC count *</td>\n      <td>0.2\u00d7exp\u2062(\ud835\udca9\u2062(0,1))</td>\n      <td>Mideo et al., 2008b</td>\n    </tr>\n  </tbody>\n</table>\n\nFirst, we identified C57BL/6 (80% survival; Figure 1) as the most \u2018functionally average\u2019 of the eight strains, indicated by the most central position in the PCA biplot (Figure 5) and near-zero estimates for strain-specificity, $s$ (Figure 4a). Two fully resilient (100% survival) strains, 129S1/SvImJ and NZO/HILtJ, were functionally similar to C57BL/6, but 129S1/SvImJ showed a slightly smaller parasite burst size, \u03b2, and higher background RBC clearance during infection, $\\mu_{R}^{\u2032}$, while NZO/HILtJ showed slightly higher activation of both the indiscriminate response ($\u03c8_{N_{1}}$) and lower propensity to replenish RBCs, \u03c1 (Figure 4b). These subtle functional differences contribute to suppressing parasite density and likely promote better resistance and survival outcomes, at least against this particular parasite genotype (Figure 1).\n\nIn addition to having the highest propensity to activate targeted clearance of iRBCs (highest $\u03c8_{N_{2}}$), WSB/EiJ, another fully resilient strain, demonstrated the smallest burst size, \u03b2 (Figure 4). While we found a general negative association between \u03b2 and host survival (Figure 4) \u2014 with a notable exception of PWK/PhJ mice \u2014 little is documented on the host\u2019s contribution to variation in iRBC burst size. One host factor that could affect parasite burst size is intrinsic differences in RBC properties among mouse strains. For example, the flow cytometry marker, TER119, a standard marker for mouse erythroid cells, works poorly with WSB/EiJ, hinting at a possible difference in RBC surface proteins (Davis, personal observation). WSB/EiJ also showed the highest capacity to increase background RBC mortality during infection, $\\mu_{R}^{\u2032}$, which contributes to limiting parasite growth through lowered resource availability. Overall, WSB/EiJ excelled in every facet of resilience against P. chabaudi AJ and maintained comparatively much lower iRBC densities (Figure 2). Infection resilience in this mouse strain may generalise to other malaria parasites, including P. berghei (Bopp et al., 2010), yet interestingly, these mice are highly vulnerable to Salmonella infections (Zhang et al., 2019).\n\nThree less resilient strains (CAST/EiJ, NOD/ShiLtJ, and PWK/PhJ) clustered together in the PCA biplot (Figure 5), indicating their functional similarity. We found a combination of top-down (immune-mediated) and bottom-up (resource-mediated) factors that distinguish these strains from the rest. Specifically, they showed low propensity to trigger a targeted immune response (low $\u03c8_{N_{2}}$, which hinders effective parasite clearance) and high erythropoiesis during infection (high \u03c1 and $\\mu_{R}^{\u2032\u2032}$, which may inadvertently fuel parasite growth; Figures 4 and 5). Distinguishing moderately poor surviving strains (CAST/EiJ and NOD/ShiLtJ; 72% and 40% survival, respectively) from an extremely fragile strain (PWK/PhJ; $<5%$ survival) is likely the markedly lower immune activation, $\u03c8_{N_{2}}$, in the latter, since other traits were similar among the three strains.\n\nFinally, the A/J mouse strain showed the strongest activation of indiscriminate RBC clearance, $\u03c8_{N_{1}}$ and the second-highest activation of the targeted response, $\u03c8_{N_{2}}$ (Figure 4b). Given the poor resilience of these mice (20% survival; Figure 1), general RBC clearance is likely harmful, at least in this strain of mice. While the host potentially stands to benefit from destroying RBCs by removing some iRBCs and taking the resource away from malaria parasites, this \u2018scorched-earth tactic\u2019 (Wale et al., 2019) could remove healthy RBCs in excess and trigger severe anaemia that causes host mortality. The significant role of indiscriminate RBC clearance on severe anaemia is empirically supported by a study that demonstrated a high turnover of transfused RBCs in BALB/c mice infected with P. berghei (Evans et al., 2006). The clearance was likely immune-mediated as severe anaemia was alleviated by depletion of immune cells (Evans et al., 2006). Another study observed lower young RBC (i.e., reticulocyte) counts in A/J mice and postulated that these mice are defective in the production of new RBCs during malaria infection (Chang et al., 2004). This is consistent with our model prediction that, among poorly resilient strains, A/J mice showed the lowest propensity to upregulate erythropoiesis (lower \u03c1 values, relative to CAST/EiJ, NOD/ShiLtJ, and PWK/PhJ; Figure 4). Together with our finding that A/J mice mount a stronger response than other poorly resilient strains (Figure 4), the lower \u03c1 values in A/J mice may reflect the inhibitory effect of inflammation on the steady-state erythropoiesis that takes place in the bone marrow (Morceau et al., 2009). As the interactions between inflammation and erythropoiesis are complex (e.g., inflammatory responses also induce stress erythropoiesis in the spleen [Paulson et al., 2020] and erythropoietin [EPO, cytokine primarily responsible for RBC production] inhibits inflammation [Nairz et al., 2012]), further investigation is needed to better understand the net impact of malaria-induced immune responses on RBC production.\n\nThe potentially negative impact of RBC clearance highlights vital implications for clinical interventions against malaria. First, blood transfusion or EPO injection to replenish depleted RBCs in severe anaemia may be most effective against patients that are particularly prone to indiscriminate RBC clearance. In fact, timely EPO injection alleviates anaemia and improves survival in A/J mice (Chang et al., 2004). However, the same treatment may be less effective against other poorly resilient patients (similar to CAST/EiJ, NOD/ShiLtJ, and PWK/PhJ) whose mortality is attributed to insufficient immune responses (Figures 4 and 5). Second, the potentially pathological consequence of indiscriminate RBC clearance should be considered during the development of a blood-stage malaria vaccine. Alarmingly, the possibility of immunopathology has so far been largely overlooked in the vaccine development process (Stanisic and Good, 2016). It is pertinent to ensure that vaccine-triggered immunity that helps clear malaria parasites also avoids immunopathology, including severe anaemia. In summary, our model predicted that poor survival was associated with hosts with the weakest activation of the targeted response (in CAST/EiJ, NOD/ShiLtJ and PWK/PhJ), or the strongest activation of the indiscriminate response (in A/J). Thus, the host\u2019s ability to mount a precise response to clear parasites is likely a major determinant of host survival.\n\n### Cytokine assays uncover molecular variation in immune responses\n\nAs our mathematical model identified the strength and precision of host immunity as the key functional motif of malaria resilience, we carried out a separate cross-sectional assay (with destructive sampling) and characterised the expression patterns of pro- and anti-inflammatory cytokines (i.e. immune signalling molecules), which play a pivotal role in regulating immune responses (Figure 6). Notably, pro-inflammatory cytokines such as TNF-\u03b1 and IFN-\u03b3 impact malaria parasite clearance, while anti-inflammatory cytokines like IL-10 and TGF-\u03b2 are crucial for limiting inflammation and immunopathology (Artavanis-Tsakonas et al., 2003).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65846/elife-65846-fig6-v1.jpg)\n\n**Figure 6.:** Raw temporal expression intensity in (a) uninfected control and (b) infected mice between day 3 and 9 post-infection. (c) The intensity of cytokine expression scaled by the median iRBC density of the strain per day. A higher value indicates higher propensity to express cytokines against the same density of parasites on a given day. (d) The ratio of pro- to anti-inflammatory cytokine expressions. Shown are additive expressions (i.e. TNF-\u03b1 + IFN-\u03b3 and IL-10 + TGF-\u03b2), but multiplicative expression patterns (i.e. TNF-\u03b1 \u00d7 IFN-\u03b3 and IL-10 \u00d7 TGF-\u03b2) were qualitatively identical (results not shown). The points and error bars are the means and standard deviations, respectively. For each day, the strains are ordered from left to right according to host survival as listed in Figure 1.\n\nIn general, resilient strains (WSB/EiJ, 129S1/SvImJ, NZO/HILtJ, C57BL/6) showed a higher level of cytokine activity (both pro- and anti-inflammatory; Figure 6a,b and c) while poorly resilient strains showed either a relatively stunted activity (CAST/EiJ and PWK/PhJ), or tendency towards pro-inflammatory biased expression (NOD/ShiLtJ and A/J). These findings provided explanations at the molecular level that dovetail with our model inference about the variation in the strength and precision of the net effect of immune responses in these strains. Specifically, the model predicted that the highly resilient mouse strains 129S1/SvImJ, NZO/HILtJ and to a large extent C57BL/6, activate the targeted response more strongly than the less resilient CAST/EiJ, NOD/ShiLtJ, and PWK/PhJ. This prediction was consistent with the higher expression of pro-inflammatory cytokines in these strains (Figure 6a,b and c), in comparison to two of the lesser resilient strains (CAST/EiJ and PWK/PhJ) for which we predicted weak immune responses (Figures 4 and 5). Importantly, in the three strains that show higher survival (129S1/SvImJ, NZO/HILtJ, and C57BL/6), the robust expression of TNF-\u03b1 and IFN-\u03b3 was matched by equally robust expression of IL-10 and TGF-\u03b2 (Figure 6d), which inhibit overproduction of immune effectors (Artavanis-Tsakonas et al., 2003). Less resilient CAST/EiJ and PWK/PhJ showed a comparatively low expression of both pro- and anti-inflammatory cytokines (Figure 6a,b and c). The lower pro-inflammatory cytokine expression draws a parallel with our modelling results that CAST/EiJ and PWK/PhJ show comparatively weaker immune activation (Figure 4).\n\nWe found signs of pro-inflammatory bias in the cytokine expressions of NOD/ShiLtJ and A/J (Figure 6), both of which are poorly resilient at 40% and 20% survival, respectively (Figure 1). In these strains, we observed elevated expression of pro-inflammatory cytokines (particularly IFN-\u03b3) without a matched increase in anti-inflammatory responses (Figure 6b,c and d), which inhibit overproduction of immune effectors (Artavanis-Tsakonas et al., 2003). For the A/J mice, our model predicted strong immune responses, both indiscriminate and targeted (high $\u03c8_{N_{1}}$ and $\u03c8_{N_{2}}$; Figure 4), consistent with the expectation that a pro-inflammatory bias leads to strong host responses (King and Lamb, 2015). However, immunoregulatory imbalance is also associated with immunopathology during malaria infections (King and Lamb, 2015). In particular, overproduction of immune effectors could cause collateral host tissue damage and excessive indiscriminate RBC clearance may lead to severe anaemia. Although generally less pronounced than A/J, resilient strains NZO/HILtJ and C57BL/6 also showed a relatively high ratio of pro- to anto-inflammatory cytokines (Figure 6d). Our model predicted that AJ, NZO/HILtJ, and C57BL/6 also exhibit strong activation of indiscriminate RBC clearance (high $\u03c8_{N_{1}}$; Figure 4). Thus, our modelling results and cytokine assays together suggest a causal link between the strength of host-driven destruction of RBCs \u2014 which may be both beneficial and detrimental to the host (Wale et al., 2019; Perkins et al., 2011) \u2014 and the underlying pro-inflammatory bias (Figure 6d). At first glance, our model prediction that NOD/ShiLtJ mice trigger weaker than average immune activation (low $\u03c8_{N_{1}}$ and $\u03c8_{N_{2}}$; Figure 4) appears incongruent with the strong relative expression of pro-inflammatory cytokines (Figure 6d). However, NOD mice are documented for immunodeficiencies downstream of inflammatory cytokines: for\u00a0example, severely reduced natural killer cell activity (Kataoka et al., 1983), hyporesponsiveness of macrophages to growth factors and IFN-\u03b3 (Serreze et al., 1993), and defective development of antigen-presenting dendritic cells (Pearson et al., 2003). Thus, our model prediction and cytokine assay together indicate that inflammatory responses at the molecular level failed to translate functionally to effective clearance of malaria parasites.\n\nWe observed low raw intensity of both pro- and anti-inflammatory cytokines in WSB/EiJ (Figure 6b), for which our model predicted exceptional parasite control (through small parasite burst size and high parasite clearance, low \u03b2 and high $\u03c8_{N_{2}}$) and resource suppression (heightened RBC mortality, high $\\mu_{R}^{\u2032}$; Figures 4 and 5). At first, low cytokine intensity appeared to be at odds with high parasite clearance. However, it is worth highlighting that the WSB/EiJ mice experience exceptionally low iRBC density (Figure 2) and hence the cue for triggering cytokine production remains low. When scaled by the iRBC density, it becomes apparent that the propensity of WSB/EiJ to express both pro- and anti-inflammatory cytokines generally exceeds that of other resilient strains (Figure 6d). Further studies are needed to empirically determine what explains the exceptionally low iRBC density in this strain. However, our modelling results suggest that mechanisms other than inflammation may also facilitate WSB/EiJ\u2019s resilience: for\u00a0example, small parasite burst size, low \u03b2, may be linked to natural RBC resistance to parasite invasion (Taylor and Fairhurst, 2014).\n\nOverall, cytokine assays complemented mathematical modelling by uncovering variation in molecular mechanisms that underlies functional differences among host strains that show diverse infection outcomes. Host resilience to Plasmodium infection was linked to a balanced expression of pro- and anti-inflammatory cytokines. Poorly resilient strains either showed stunted activation of pro-inflammatory cytokines associated with insufficient parasite control, or pro-inflammatory bias that has been implicated in immunopathology (Artavanis-Tsakonas et al., 2003).\n\n### Conclusion\n\nIt is well documented that immune responses are a key host factor influencing protection from malaria infections (L\u00f3pez et al., 2010). However, it remains difficult to relate health outcomes to the underlying variation in host immunity because parasite load, immune regulation and host health are intertwined and are variable over time. Over the past two decades, several dynamical models have inferred mechanisms of complex within-host ecological interactions from longitudinal data of parasite load and RBCs (i.e. parasite resource and indicator of host health) in the rodent malaria system (e.g. Haydon et al., 2003; Mideo et al., 2008b; Kochin et al., 2010; Miller et al., 2010; Mideo et al., 2011; Metcalf et al., 2011; Metcalf et al., 2012; Santhanam et al., 2014; Wale et al., 2019; Kamiya et al., 2020). However, a knowledge gap exists between what is empirically measurable (at the molecular and cellular level, for\u00a0example immune molecules and cells) to what is functionally important to infection dynamics (at the within-host ecological level, for\u00a0example net effect of parasite clearance). At the within-host ecological level, our dynamical modelling of infection revealed that better host survival during malaria infection was associated with precisely targeted, robust clearance of blood-stage parasites. Using cross-sectional cytokine assays, we uncovered well-regulated inflammatory cytokine expressions are key molecular signatures of inbred mouse strains that survive malaria infections. By augmenting mathematical modelling of within-host ecology with cross-sectional cytokine assays, our study narrows the gap between functional and molecular mechanisms of host resilience to malaria infection.\n\n## Materials and methods\n\n### Data\n\n#### Mouse strains\n\nMice were purchased from Jackson Laboratories (WSB/EiJ stock #001145), 129S1/SvImJ stock #002448, NZO/HILtJ stock #002105, CAST/EiJ stock #000928, A/J stock #000646, NOD/ ShiLtJ stock #001976, and PWK/PhJ stock #003715 and Charles River (C57BL/6). A subset of mice (WSB/EiJ, NZO/HILtJ, and PWK/PhJ) were also bred in-house at Stanford University. Animals were housed in the Stanford Research Animal Facility according to Stanford University guidelines. All mouse experiments were approved by the Stanford Administrative Panel on Laboratory Care (APLAC).\n\n#### Infection with P. chabaudi\n\nWe administered the AJ strain of Plasmodium chabaudi to the experimental animals at a dose of 105 iRBCs and monitored infections longitudinally, for 15 days, as previously described (Torres et al., 2016). RBCs were quantified using a BD Accuri C6 Plus cytometer. We quantified parasitemia (i.e. proportion of RBCs infected) via thin blood smears and manual microscope counting. We report parasite density as the number of iRBCs per microliter of blood, which was calculated by multiplying parasitemia by the number of total RBCs per microliter of blood. Survival was monitored daily until day 15 post-infection.\n\n#### Cross-sectional cytokine assay\n\nWe infected mice with P. chabaudi as described above. For cross-sectional sampling, between three and five infected mice of each strain were euthanised each day between 10 am and 2 pm from days 3\u00a0to\u00a012 post-infection. For each mouse strain, two uninfected control animals were euthanised at baseline and generally on odd-numbered days. Following euthanasia, 75 microliters of plasma was used for immunoassay using the mouse 38-plex kit (eBiosciences/Affymetrix). Further details are available from Davis et al., 2021.\n\n### Model\n\n#### Dynamical model of malaria asexual cycle\n\nIn the experiment, mice were inoculated with iRBCs. Synchronously at midnight, the initial cohort of iRBCs rupture, releasing a new generation of merozoites into the bloodstream (Paul et al., 2003). These merozoites then rapidly invade further RBCs where the parasites develop to release the next generation of merozoites with a 24 hr interval. We assumed that regulation of immune responses takes place continuously throughout the day ($0<t\\leq1$ where $t$ is the fraction of a day) and demographic processes of the host and parasite (i.e., turnover of RBCs, iRBC bursting and RBC invasion by merozoites) happen at the end of each day at midnight ($t=1$).\n\n##### Regulation of host responses\n\nMalaria infection triggers a variety of host responses (Stevenson and Riley, 2004; Price et al., 2001; Castro-Gomes et al., 2014), of which we considered two previously identified as the most quantitatively important: indiscriminate clearance of RBCs and targeted clearance of iRBCs (Miller et al., 2010). Similar to previous studies (Kochin et al., 2010; Kamiya et al., 2020), consider a set of ordinary differential equations tracking the change in the rate of activity of each response $N_{i}$, where $i$ indicates the type of response (i.e. general RBC clearance, $i=1$; targeted iRBC clearance, $i=2$):\n\n$$\n\\frac{d\u2062N_{i\u2062(t)}}{d\u2062t}=\u03c8_{N_{i}}\u2062\\frac{I_{(t)}}{I_{m\u2062a\u2062x}}-\u03d5_{N_{i}}\u2062N_{i\u2062(t)},\n$$\n\nwhere $\u03c8_{N_{i}}$ and $\u03d5_{N_{i}}$ are the activation and decay strength of $N_{i}$, respectively. Assuming that the abundance of iRBCs reflects that of pathogen-associated molecular patterns (PAMPs), we defined the scaled density of iRBCs, $\\frac{I_{(t)}}{I_{m\u2062a\u2062x}}$, as the within-host cue driving these responses, where $I_{m\u2062a\u2062x}$ is the maximum observed iRBC density in the experiment. We assumed that there is no activity in the absence of infection, consequently there is no constitutive immunity in this model. Because demographic events are formulated in discrete time with a unit of one day, the iRBC density on day $d$, is assumed a constant during the time scale of immune regulation (i.e. $0<t\\leq1$). Previous estimates indicate that the response activity of indiscriminate clearance decays in approximately one day while the targeted response decays with a half-life an order of magnitude longer than the duration of the acute phase of infection (Kamiya et al., 2020): mean half-life of 0.96 and 332.6 days, respectively. Based on these estimates, we made the following simplifying assumptions, eliminating parameters $\u03d5_{N_{1}}$ and $\u03d5_{N_{2}}$: the indiscriminate activity decays at one day following the Dirac-delta distribution and the targeted activity does not decay during the acute phase. Consequently, we can reformulate Equation 1 in discrete-time, assuming that the former response resets daily while the latter accumulates over multiple days without any decay:\n\n$$\nN_{1(d,t=1)}=\u03c8_{N_{1}}\\times\\frac{I_{(d,t=0)}}{I_{m\u2062a\u2062x}}\n$$\n\n\n\n$$\nN_{2(d,t=1)}=\u03c8_{N_{2}}\\times\\frac{I_{(d,t=0)}}{I_{m\u2062a\u2062x}}+N_{2(d,t=0)}.\n$$\n\n##### Turnover of RBCs\n\nThe first event at the end of the day ($t=1$), is clearance and replenishment of RBCs. In the absence of infection, we assumed that RBCs are subjected to background RBC mortality, $\\mu_{R}$. The host replaces RBCs lost to baseline cell mortality by producing $R_{c}\u2062(1-e^{-\\mu_{R}})$ new RBCs, where $R_{c}$ is the RBC density at homeostatic equilibrium, assumed equal to the RBC density measured per mouse before parasite inoculation. While we have prior information on baseline mortality and replenishment in the absence of infection (i.e. $\\mu_{R}$; Van Putten and Croon, 1958; Foster et al., 2014), we fitted two new parameters ($\\mu_{R}^{\u2032}$ and $\\mu_{R}^{\u2032\u2032}$, respectively) that allow these processes to be qualitatively different during infection. Our motivation for this was the following. First, during malaria infection experiments, RBCs are lost to daily blood sampling and perhaps handling related stress. Second, fitting $\\mu_{R}^{\u2032}$ allows for the possibility that some indiscriminate clearance of RBCs is independent of iRBC dynamics (unlike in Equation 2). Third, there is evidence that erythropoiesis is downregulated during malaria infection (Wale et al., 2019), and fitting $\\mu_{R}^{\u2032\u2032}$ allowed us to capture this possibility.\n\nIndiscriminate RBC clearance, due to the action of the immune response, occurs at a daily rate $N_{1(d,t=1)}$. In addition to baseline replenishment of RBCs (governed by $\\mu_{R}^{\u2032\u2032}$ as described above), RBCs are produced in a density-dependent manner during infection to restore the RBC population (Chang et al., 2004) with a time-lag of 2\u20133 days before the newly produced RBCs are released in the bloodstream (Savill et al., 2009). Here assuming a 2-day lag (indicated by $d-2$), the host produces a fraction \u03c1 of the deviation from RBC density at $R_{c}$. Infected cells incur an additional rate of mortality, $N_{2(d,t=1)}$ through targeted killing. Together, the turnover of RBCs is expressed as:\n\n$$\nR_{(d,t=1)}=R_{(d,t=0)}\u2062e^{-(\\mu_{R}^{\u2032}+N_{1(d,t=1)})}+R_{c}\u2062(1-e^{-\\mu_{R}^{\u2032\u2032}})+\u03c1\u2062(R_{c}-(R_{(d-2,t=1)}+I_{(d-2,t=1)}))\n$$\n\n\n\n$$\nI_{(d,t=1)}=I_{(d,t=0)}\u2062e^{-(\\mu_{R}^{\u2032}+N_{1(,\u22c5t=1)}+N_{2(d,t=1)})},\n$$\n\nwhere $R_{(d,t=1)}$ and $I_{(d,t=1)}$ are the post-turnover densities.\n\n##### iRBC bursting\n\nGiven synchronous iRBC bursting and the short lifespan of merozoites relative to the length of a day, we modelled iRBC bursting and merozoite invasion as instantaneous events. As iRBCs rupture and release merozoites into the bloodstream at midnight ($t=1$), the density of merozoites, $M_{(d,t=1)}$ equals $\\beta\u2062I_{(d,t=1)}$ where \u03b2 is the parasite burst size per iRBC.\n\n##### RBC invasion by merozoites\n\nUpon release, a merozoite either invades an uninfected red blood cell (uRBC), $R_{(d,t=1)}$, at a per capita invasion rate $p$, or it gets cleared before invasion, with a short halflife of 1/\u03bcM (\u223c30 min [McAlister, 1977]). For simplicity, we ignore infections of RBCs by multiple merozoites. Thus, the probability that a given merozoite successfully invades an uRBC is:\n\n$$\n\\frac{p\u2062R_{(d,t=1)}}{p\u2062R_{(d,t=1)}+\\mu_{M}}.\n$$\n\nMultiplying the probability by the density of merozoites, and dividing by $R_{(d,t=1)}$, the average number of invading merozoites per uRBC, \u03bb is:\n\n$$\n\\lambda=\\frac{M_{(d,t=1)}}{R_{(d,t=1)}+\\frac{\\mu_{M}}{p}}.\n$$\n\nWe assumed that the probability of RBC invasion by merozoites is Poisson-distributed with parameter \u03bb, that\u00a0is, $Prob(invasionbykmezoroites)=\\frac{\\lambda^{k}e^{\u2212\\lambda}}{k!}$ (Miller et al., 2010; Mideo et al., 2011). Thus, the probability that a given uRBC gets invaded by a merozoite (i.e. $k=1$) is $\\lambda\u2062e^{-\\lambda}$ and the probability that an uRBC escapes merozoite invasion altogether (i.e. $k=0$) is $e^{-\\lambda}$. Ignoring infections of RBCs by multiple merozoites, it follows that the numbers of uRBCs and iRBCs after merozoite invasion (i.e. $R_{(d,t=1)}^{*}$ and $I_{(d,t=1)}^{*}$ with the asterisk denoting the post-invasion densities) are:\n\n$$\nR_{(d,t=1)}^{*}=R_{(d,t=1)}\u2062e^{-\\lambda}\n$$\n\n\n\n$$\nI_{(d,t=1)}^{*}=R_{(d,t=1)}\u2062\\lambda\u2062e^{-\\lambda}.\n$$\n\n#### Hierarchical Bayesian inference\n\nWe fitted the above within-host infection model to the corresponding longitudinal data from 80 mice using a Bayesian statistical approach, which allows for parameter estimation in high dimensional spaces, for example, in hierarchical models where observations are organised in multiple levels of sampling units (Mugglin et al., 2002; Cressie et al., 2009). In this study, there are two levels of sampling units: mouse strains and subjects (i.e. individual mice).\n\n##### Strain-specific and individual variation\n\nWe estimated host strain- and individual-specific effects in a set of nine fitted parameters describing within-host ecological processes: that\u00a0is, samples $s$ and $u$ from $\ud835\udca9\u2062(0,\\sigma_{s})$ and $\ud835\udca9\u2062(0,\\sigma_{u})$, respectively. Below, we collectively refer to the parameter set as \u03b8 ($\\theta\u220b\\mu_{R}^{\u2032},\\mu_{R}^{\u2032\u2032},\u03c1,\u03c8_{N_{1}},\u03c8_{N_{2}},\\beta$). The prior distributions for these parameters are provided in Table 1.\n\n##### Likelihood\n\nA Bayesian approach requires a likelihood function to assess the probability of observing the data given model parameters and associated predictions. Our log-likelihood function assumed that the measurement error for the total density of RBCs (i.e. sum of uRBCs and iRBCs), and iRBCs is distributed normally and log10-normally, respectively (Mideo et al., 2008b; Mideo et al., 2011):\n\n$$\nlnL=\\sumin_{mice}{\\sumdn_{days}\u00a0ln{\\frac{1}{\\sigma_{RBC}\\sqrt{2\\pi}}exp[\u2212\\frac{(D_{i,d}^{RBC}\u2212M_{i,d}^{RBC})^{2}}{2(\\sigma_{RBC})^{2}}]}+\\sumdn_{days}\u00a0ln{\\frac{1}{\\sigma_{iRBC}\\sqrt{2\\pi}}exp[\u2212\\frac{(log_{10}(D_{i,d}^{iRBC}+1)\u2212log_{10}(M_{i,d}^{iRBC}+1))^{2}}{2(\\sigma_{iRBC})^{2}}]}}\n$$\n\nwhere $D_{i,d}^{RBC}$ and $D_{i,d}^{iRBC}$ are the observed count of total RBCs and iRBCs, $M_{i,d}^{RBC}$ and $M_{i,d}^{iRBC}$ are the model predictions of total RBCs and iRBCs for individual $i$ at day $d$. We estimated standard deviations, $\\sigma_{RBC}$ and $\\sigma_{iRBC}$ for the total RBC and iRBC count, respectively, with specific informative priors (Mideo et al., 2008b; Miller et al., 2010; Table 1). Our modelling focused on the first wave of infection, thus we fitted data up to two weeks post-infection ($n_{days}=14$ at maximum). In mice that succumbed to infection, we fitted the model to data until the last sampling prior to death.\n\n##### MCMC sampling\n\nEstimating the posterior probability density of parameters of a complex model requires a Markov Chain Monte Carlo (MCMC) sampling algorithm. Our model was written in Stan 2.21.2 and fitted through the RStan interface (Carpenter et al., 2017; Stan Development Team, 2019), which provides an efficient, general-purpose MCMC sampler (No-U-Turn Hamiltonian Monte Carlo) and a Bayesian inference environment. The model was fitted in parallel in four independent chains, each with 3000 sampled iterations and 1000 warmup iterations. For diagnostics, we confirmed over 400 effective samples and ensured convergence of independent chains using the $R^$ metric (values below 1.1 are considered an indication of multi-chain convergence) for all parameters (Gelman et al., 2013; Stan Development Team, 2018). We assessed the goodness of fit to data using standardised residuals (Appendix 1). We also quantified the posterior z-score and posterior contraction to examine the accuracy and precision of posterior distributions, and the relative strength of data to prior information (Schad et al., 2021) (Appendix 2).\n",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "e0cc6a65-278b-45d6-9f54-04e63cfff1ea",
+      "submission_id": "ed82909f-dbc9-45c2-8777-1a59d2ce24fe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer Flegg, The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65846.sa1](https://doi.org/10.7554/eLife.65846.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper will be of interest to parasitologists, immunologists and modellers working in the field of malaria. It provides a model-based approach to quantify different host responses to malaria infection and identify the response(s) best explaining the infection outcomes (i.e., survival rate and host resilience to malaria infection). The methods for model construction and fitting and data analysis are appropriate and rigorous, however, extra work is required for validation of model predictions, which are critical for the interpretation of the results.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Within-host dynamics reveal functional diversity of host resilience to malaria infection\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Jennifer Flegg as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Miles Davenport as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Parameter correlations. The results of the manuscript are primarily based on the parameter estimates, which are calculated by the samples of the posterior distributions, so the correlations between model parameters (based on the posterior samples) should be examined. One example for the correlated parameter would be the activation rate and decay rate of immune response in equation 1. Since the immune response Ni was not measured and used in model fitting, the two parameters should show a strong positive correlation, which would prevent accurate estimates. A clear view of the parameter correlations is critical for the reliability of the estimates and in turn any conclusion based on the estimates.\n\n2) Prior distributions. These were not shown on top of the posteriors such that it is difficult to judge how much information was from the priors and how much was from the data. Since the priors are relatively informative, e.g. 2.5 and sqrt(2.5) (see Table 1), it is also necessary to examine the impact of the choice of the priors on the posteriors by a sensitivity analysis. The choice of priors is not well-justified. How were the hyperparameters for the host response parameters chosen? Is the model sensitive to these?\n\n3) The authors showed that the too strong and too weak immune activation predicted by the model was associated with high host mortality and concluded that a balanced immune response may be a major determinant of host survival. However, a stronger immune activation in the model refers to a higher activation rate (i.e., a higher value of parameter psi in equation 1). This is not necessarily related to a balance immune response, which is a balanced level of expression of pro-inflammatory and anti- inflammatory cytokines and is mathematically interpreted by that a strong/weak activation should be associated with a strong/weak decay such that the net effect (Ni in equation 1) is maintained at a healthy level. Further clarification on this point is necessary.\n\n4) Cytokine dynamics. In the results, the authors selected and discussed some model predictions that are consistent with what the cytokine data suggest. However, it lacks a comprehensive comparison between the data and the model prediction. I am wondering if it is possible to create a figure similar to Figure 3b (only psi's and phi's) using the cytokine data and compare with the model prediction. It will tell clearly how well the model predictions are consistent with the data. Could you connect the cytokine dynamics with the mechanistic model more directly? This seems like a missed opportunity \u2013 you have beautiful timecourses here \u2013 could you reframe the model to directly include processes reflected by the cytokines?\n\n5) Figures. It would be useful to have a detailed graphical representation of the model in the main text. The temporal information in Figure 5 is hard to process.\n\nReviewer #1:\n\nThis paper presents a dynamic mathematical model of malaria parasites and red blood cells in a mouse model. A strength of the paper is the collection of experimental data to fit to the mathematical model, however the model is overly simplified and is therefore unlikely to have high impact in the field.\n\nReviewer #2:\n\nKamiya, Davis et al., studied the associations between the diversity of host responses to malaria infection and infection outcomes (i.e., survival rate and host resilience to malaria infection). In detail, they collected the longitudinal data from mice that are genetically different and estimated some key biological parameters governing the parasite replication dynamics and immune responses by fitting a mathematical model to the data. By comparing the parameter estimates and a set of cytokine data collected from the same pool of mice, they identified some consistency between model predictions and data and concluded that the longitudinal data contain important information that may facilitate the explanation of the diverse infection outcomes. The methods for model fitting and data analysis are appropriate and rigorous. The conclusion about balanced immune response is partly supported by the data but not clearly associated with model predictions. Some further analyses on fitting results are necessary in order to ensure the reliability of some conclusions.\n\nReviewer #3:\n\nThe first section of the analysis connects parameter estimates with outcome. With such a large model this section needs a thorough analysis of correlations between parameters \u2013 the PCA goes a little way towards this, but not enough. Identifying parameter subspaces might also make the interpretation of these fitted values simpler.\n\nThe second section \u2013 the data are rich, but it feels let down slightly by its qualitative nature. Could the authors connect the cytokine dynamics with the mechanistic model more directly? This seems like a missed opportunity \u2013 there are beautiful timecourses here \u2013 could the model be reframed to directly include processes reflected by the cytokines?\n\nIt would be useful to have a detailed graphical representation of the model\n\nin the main text.\n\nThe temporal information in Figure 5 is hard to process. I like the idea of the 'phase-space' view but here I think it would be clearer to have the timecourses of pro and anti-inflammatory cytokines stacked on top of each other.\n\nAt what time(s) of day were the cytokine measurements made? Were they consistent? Given there is a daily replication/infection cycle, I would guess timing matters.\n\np9 \"We found that reducing the expression of anti-inflammatory \u2026\" This phrase is misleading as there was no intervention that reduced expression.\n",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "029011d0-7312-474c-841b-8af404f4447a",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C1",
+      "claim": "Eight mouse strains (129S1/SvImJ, A/J, C57BL/6, CAST/EiJ, NOD/ShiLtJ, NZO/HILtJ, PWK/PhJ, WSB/EiJ) collectively span 90% of the mouse genetic diversity commonly used in laboratory experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Among eight strains of inbred laboratory mice (129S1/SvImJ, A/J, C57BL/6, CAST/EiJ, NOD/ShiLtJ, NZO/HILtJ, PWK/PhJ, WSB/EiJ) that collectively span 90% of the mouse genetic diversity commonly used in laboratory experiments (Roberts et al., 2007), survival from malaria infection ranges from less than 5\u2013100% (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Roberts et al., 2007, which provides the basis for the genetic diversity estimate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "772b4087-9e27-4c8a-9b2d-88271854777f",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C2",
+      "claim": "Survival from malaria infection in eight mouse strains ranges from less than 5% to 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "Among eight strains of inbred laboratory mice (129S1/SvImJ, A/J, C57BL/6, CAST/EiJ, NOD/ShiLtJ, NZO/HILtJ, PWK/PhJ, WSB/EiJ) that collectively span 90% of the mouse genetic diversity commonly used in laboratory experiments (Roberts et al., 2007), survival from malaria infection ranges from less than 5\u2013100% (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1, which displays survival data across the eight mouse strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "c6a5e4db-7a7d-429c-94e7-781013c87850",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C3",
+      "claim": "Host genetics is a major determinant of variation in resilience to malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is difficult to disentangle the factors contributing to this variation in resilience to malaria, host genetics is a major determinant (Hernandez-Valladares et al., 2005; L\u00f3pez et al., 2010; Hedrick, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three studies (Hernandez-Valladares et al., 2005; L\u00f3pez et al., 2010; Hedrick, 2011) that establish host genetics as a major determinant.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "8c96f3d9-678b-4b3c-99e3-7c439d2ebdd5",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C4",
+      "claim": "Different mouse strains infected with the same strain of Plasmodium chabaudi demonstrate remarkable variation in infection dynamics and malaria mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in experimental rodent malaria infections, where environment, diet, and as many other factors as possible are highly controlled, different mouse strains infected with the same strain of Plasmodium chabaudi demonstrate remarkable variation in infection dynamics and malaria mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "a611f3df-5cb4-4338-8af4-ae664281bfff",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C5",
+      "claim": "A mathematical model fitted to longitudinal data can predict particular functional mechanisms that lead to divergent infection dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a mathematical model fitted to these data can predict particular functional mechanisms (e.g. parasite proliferation [Mideo et al., 2011], specific versus non-specific immunity [Wale et al., 2019] and dose-dependent host responses [Haydon et al., 2003; Metcalf et al., 2011; Kamiya et al., 2020]) that lead to divergent infection dynamics (Mideo et al., 2008a; Metcalf et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous modeling studies that have demonstrated this capability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "7e1fecf7-bdcb-4163-b8a9-7d4285e6d28a",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C6",
+      "claim": "Model predictions of host immune responses against malaria are rarely examined together with immunological data.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, however, model predictions of host immune responses against malaria are rarely examined together with immunological data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field based on the authors' assessment of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "952fbbba-c6b4-470b-9c6d-ccadd0ba5dbd",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C7",
+      "claim": "It remains unclear whether and how modelled responses at the level of within-host ecology are linked to observable quantities at the cellular and molecular levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it remains unclear whether and how modelled responses at the level of within-host ecology (e.g. rate of parasite clearance) are linked to observable quantities at the cellular and molecular levels (e.g. cytokines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a knowledge gap in the field based on the previous statement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "2b325685-be14-488a-8c32-cbb38fd83630",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C8",
+      "claim": "The immune system is a critical proximate mechanism of host genetic resilience to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The immune system is a critical proximate mechanism of host genetic resilience to infection (L\u00f3pez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to L\u00f3pez et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "f5db64a5-7259-4e3b-86ac-8d8d1f9cb559",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C9",
+      "claim": "Failure to mount a robust immune response can lead to unchecked parasite proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Failure to mount a robust immune response can lead to unchecked parasite proliferation, while dysregulated responses may cause collateral damage, that is, immunopathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established immunological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "3ae846d5-e7c0-465e-aa22-c6c8029df6e9",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C10",
+      "claim": "Dysregulated immune responses may cause collateral damage (immunopathology).",
+      "claim_type": "EXPLICIT",
+      "source": "Failure to mount a robust immune response can lead to unchecked parasite proliferation, while dysregulated responses may cause collateral damage, that is, immunopathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established immunological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "e0432e96-aca4-4122-b382-ad2a36278c26",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C11",
+      "claim": "Severe outcomes of many infectious diseases are a consequence of immunopathology rather than direct damage caused by parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "While the benefit of immune protection often outweighs any costs associated with these responses (Sorci et al., 2017), severe outcomes of many infectious diseases are a consequence of immunopathology rather than direct damage caused by parasites (Graham et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Graham et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "8ea774f5-710c-4a7c-a01d-6c0bdd3798d8",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C12",
+      "claim": "A 'healthy' immune response requires striking a delicate balance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a 'healthy' immune response requires striking a delicate balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the previous statements about immune responses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "65758112-8b13-4ee3-9544-cfc04ba267a5",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C13",
+      "claim": "During the acute phase of blood-stage malaria infection, innate responses target and remove iRBCs as well as short-lived extracellular parasites known as merozoites.",
+      "claim_type": "EXPLICIT",
+      "source": "During the acute phase of blood-stage malaria infection, innate responses target and remove iRBCs as well as short-lived extracellular parasites known as merozoites (Stevenson and Riley, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Stevenson and Riley, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "90b7947f-db45-4809-b888-2e09d621724b",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C14",
+      "claim": "RBCs, regardless of infection status, are susceptible to clearance by immune effectors such as macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, RBCs \u2014 regardless of infection status \u2014 are susceptible to clearance by immune effectors such as macrophages (Jakeman et al., 1999; Chua et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jakeman et al., 1999 and Chua et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "e18efaed-46a3-4fe0-9ae3-1d0db84ff3ae",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C15",
+      "claim": "Data-driven modelling studies highlight the importance of indiscriminate RBC clearance for lowering parasite burden.",
+      "claim_type": "EXPLICIT",
+      "source": "While the targeted response removes more iRBCs, data-driven modelling studies highlight the importance of indiscriminate RBC clearance for lowering parasite burden (Wale et al., 2019; Kamiya et al., 2020; Metcalf et al., 2012; Miller et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "1c2c6faa-dbed-44fc-a0c9-2f6723100917",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C16",
+      "claim": "Host-driven destruction of RBCs has been proposed as a host adaptation to clear parasites directly (top-down effect) and to limit resources for the parasite (bottom-up effect).",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, it has been proposed as a host adaptation in the presence of malaria parasites to clear the parasites directly (i.e. top-down effect) as well as to limit resources for the parasite (i.e. bottom-up effect) (Wale et al., 2019; Haydon et al., 2003; Metcalf et al., 2012; Cromer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies proposing this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "3173b69b-602d-4175-93ac-d3f72c824c88",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C17",
+      "claim": "An excessive loss of RBCs brings forth adverse health implications.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, an excessive loss of RBCs brings forth adverse health implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "61c02bce-c973-40ae-9cb8-fb700735d22e",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C18",
+      "claim": "In immune naive infants and children, severe malarial anaemia is the most common severe manifestation of disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In immune naive infants and children, severe malarial anaemia is the most common severe manifestation of disease, and its associated mortality rate can reach 30% (Perkins et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Perkins et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "022785f4-8644-4354-883e-e952c9342ae1",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C19",
+      "claim": "The mortality rate associated with severe malarial anaemia can reach 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "In immune naive infants and children, severe malarial anaemia is the most common severe manifestation of disease, and its associated mortality rate can reach 30% (Perkins et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Perkins et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "a4f95d1e-a7ba-4b70-8598-4a99280cedae",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C20",
+      "claim": "Clearance is the most important process causing malaria-related anaemia, accounting for between 75% and 90% of the total RBC deficit during malaria infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, clearance is the most important process, accounting for between 75% and 90% of the total RBC deficit during malaria infections (Jakeman et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jakeman et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "97913f57-95ed-4734-ab09-46bb07de56e9",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C21",
+      "claim": "Direct exploitation by malaria parasites accounts for less than 10% of the RBC deficit.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, direct exploitation by malaria parasites has been estimated to account for less than 10% of the RBC deficit (Jakeman et al., 1999; Price et al., 2001; Fonseca et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "15329883-5c8e-4d22-b0d4-77a598a7741f",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C22",
+      "claim": "Vertebrate host responses are regulated by immune signalling molecules known as cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, vertebrate host responses are regulated by immune signalling molecules, known as cytokines (Lamb et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lamb et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "10439404-3ab2-45ee-ba13-7024b13470ce",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C23",
+      "claim": "Acute malaria infection induces pro-inflammatory cytokines required for mounting a timely and robust response.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute malaria infection induces pro-inflammatory cytokines required for mounting a timely and robust response while anti-inflammatory cytokines inhibit excess immune reactions to safeguard against collateral damage (Lamb et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lamb et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "0abdd7b3-5948-4f5c-bce2-8aae736c9eaa",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C24",
+      "claim": "Anti-inflammatory cytokines inhibit excess immune reactions to safeguard against collateral damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute malaria infection induces pro-inflammatory cytokines required for mounting a timely and robust response while anti-inflammatory cytokines inhibit excess immune reactions to safeguard against collateral damage (Lamb et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lamb et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "50d1fdb6-65bb-4943-aa93-5cb4221d6202",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C27",
+      "claim": "Inflammatory responses can be damaging to the organisms that produce them.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same inflammatory responses can also be damaging to the organisms that produce them (Clark et al., 1991; King and Lamb, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Clark et al., 1991 and King and Lamb, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "7a79ed66-762b-421f-aa7a-7772f3fbb8e1",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C28",
+      "claim": "TNF-\u03b1 overproduction could lead to adverse effects including worsened anaemia, weight loss and survival in the mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, TNF-\u03b1 overproduction \u2014 which can result from a deficit of anti-inflammatory cytokines like interleukin 10 (IL-10) and transforming growth factor-beta (TGF-\u03b2) \u2014 could lead to adverse effects including worsened anaemia, weight loss and survival in the mouse model (Omer and Riley, 1998; Li et al., 2003; Long et al., 2006; Long et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "172df07e-17eb-49e2-96e5-06fc41f748b3",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C29",
+      "claim": "TNF-\u03b1 overproduction can result from a deficit of anti-inflammatory cytokines like IL-10 and TGF-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, TNF-\u03b1 overproduction \u2014 which can result from a deficit of anti-inflammatory cytokines like interleukin 10 (IL-10) and transforming growth factor-beta (TGF-\u03b2) \u2014 could lead to adverse effects including worsened anaemia, weight loss and survival in the mouse model (Omer and Riley, 1998; Li et al., 2003; Long et al., 2006; Long et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "0ff0abb8-2cb5-4ef2-a8e9-ee22f5430821",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C30",
+      "claim": "Balanced expression of cytokines is likely a mechanism that promotes resilience (survival) to malaria infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Balanced expression of these cytokines is likely a mechanism that promotes resilience (survival) to malaria infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the previous discussion of cytokine effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "5f46ec69-ea45-4c5f-9aad-5235524c0f9a",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C31",
+      "claim": "Mechanistic studies usually focus on just one or two inbred mouse strains with similar cytokine responses, limiting our ability to link molecular signatures with functional variation in host traits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mechanistic studies usually focus on just one or two inbred mouse strains with similar cytokine responses, limiting our ability to link molecular signatures with functional variation in host traits (e.g. indiscriminate versus targeted RBC clearance) that impacts the infection dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of current research approaches based on the authors' assessment of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "8f8ce14e-cebc-4e61-be68-7e5668d442e7",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C32",
+      "claim": "The mathematical model of within-host malaria ecology accurately described the time-course of RBCs and iRBCs during the acute phase of malaria infection in all mouse strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mathematical model of within-host malaria infection accurately described the time-course of RBCs and iRBCs during the acute phase of malaria infection in all mouse strains (Appendices 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to model fitting results in Appendices 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "8d1b058e-cae1-4ef5-9add-9891db934488",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C33",
+      "claim": "Several estimated model parameters varied with mouse strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Several estimated model parameters varied with mouse strain (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 4, which shows parameter variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "2ba30828-867f-4445-964c-58cd65595184",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C38",
+      "claim": "There is a general negative association between \u03b2 and host survival.",
+      "claim_type": "EXPLICIT",
+      "source": "While we found a general negative association between \u03b2 and host survival (Figure 4) \u2014 with a notable exception of PWK/PhJ mice \u2014 little is documented on the host's contribution to variation in iRBC burst size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "fbea8a6e-bc4a-4c18-81f2-13d7102bd748",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C39",
+      "claim": "The flow cytometry marker TER119 works poorly with WSB/EiJ.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the flow cytometry marker, TER119, a standard marker for mouse erythroid cells, works poorly with WSB/EiJ, hinting at a possible difference in RBC surface proteins (Davis, personal observation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on a personal observation by Davis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "20a9b2c5-639a-489a-ac71-c6a841d9c14c",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C41",
+      "claim": "WSB/EiJ maintained comparatively much lower iRBC densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, WSB/EiJ excelled in every facet of resilience against P. chabaudi AJ and maintained comparatively much lower iRBC densities (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "cca0b3f8-5754-43fc-bd09-e73205c29c53",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C42",
+      "claim": "Infection resilience in WSB/EiJ may generalise to other malaria parasites, including P. berghei.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection resilience in this mouse strain may generalise to other malaria parasites, including P. berghei (Bopp et al., 2010), yet interestingly, these mice are highly vulnerable to Salmonella infections (Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bopp et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "7193aee7-a276-404d-8b33-bbd406ebd855",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C43",
+      "claim": "WSB/EiJ mice are highly vulnerable to Salmonella infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection resilience in this mouse strain may generalise to other malaria parasites, including P. berghei (Bopp et al., 2010), yet interestingly, these mice are highly vulnerable to Salmonella infections (Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zhang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "0b96bcee-aedf-4e02-ae69-8c4e3ebef791",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C44",
+      "claim": "Three less resilient strains (CAST/EiJ, NOD/ShiLtJ, and PWK/PhJ) clustered together in the PCA biplot, indicating their functional similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Three less resilient strains (CAST/EiJ, NOD/ShiLtJ, and PWK/PhJ) clustered together in the PCA biplot (Figure 5), indicating their functional similarity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "7042b9b5-0a20-4faa-929f-0607abb70140",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C49",
+      "claim": "General RBC clearance is likely harmful in A/J mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the poor resilience of these mice (20% survival; Figure 1), general RBC clearance is likely harmful, at least in this strain of mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the combination of high indiscriminate clearance and poor survival.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "34bb7c6e-7019-420e-91fe-b6c53ae3a55a",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C50",
+      "claim": "The 'scorched-earth tactic' could remove healthy RBCs in excess and trigger severe anaemia that causes host mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "While the host potentially stands to benefit from destroying RBCs by removing some iRBCs and taking the resource away from malaria parasites, this 'scorched-earth tactic' (Wale et al., 2019) could remove healthy RBCs in excess and trigger severe anaemia that causes host mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the potential negative consequences of indiscriminate RBC clearance.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "59443100-5cc8-46a5-bf58-875f59d3f679",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C51",
+      "claim": "The significant role of indiscriminate RBC clearance on severe anaemia is empirically supported by a study that demonstrated a high turnover of transfused RBCs in BALB/c mice infected with P. berghei.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant role of indiscriminate RBC clearance on severe anaemia is empirically supported by a study that demonstrated a high turnover of transfused RBCs in BALB/c mice infected with P. berghei (Evans et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Evans et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "9062cc24-527c-4645-b45a-600f8a1c80b9",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C52",
+      "claim": "The clearance of transfused RBCs was likely immune-mediated as severe anaemia was alleviated by depletion of immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The clearance was likely immune-mediated as severe anaemia was alleviated by depletion of immune cells (Evans et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Evans et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "6e595301-3ebe-4514-a761-3f23fc2554e2",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C53",
+      "claim": "A/J mice are defective in the production of new RBCs during malaria infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study observed lower young RBC (i.e., reticulocyte) counts in A/J mice and postulated that these mice are defective in the production of new RBCs during malaria infection (Chang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chang et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "e113c872-2d15-470a-9190-5fdbde39fec6",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C54",
+      "claim": "Among poorly resilient strains, A/J mice showed the lowest propensity to upregulate erythropoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our model prediction that, among poorly resilient strains, A/J mice showed the lowest propensity to upregulate erythropoiesis (lower \u03c1 values, relative to CAST/EiJ, NOD/ShiLtJ, and PWK/PhJ; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "1ae428a8-8c53-46c8-9c9a-9801c6be1a45",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C55",
+      "claim": "The lower \u03c1 values in A/J mice may reflect the inhibitory effect of inflammation on the steady-state erythropoiesis that takes place in the bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with our finding that A/J mice mount a stronger response than other poorly resilient strains (Figure 4), the lower \u03c1 values in A/J mice may reflect the inhibitory effect of inflammation on the steady-state erythropoiesis that takes place in the bone marrow (Morceau et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on model results and a citation to Morceau et al., 2009.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "f0835b07-5663-4c7a-81b9-e93fa003b335",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C56",
+      "claim": "Inflammatory responses induce stress erythropoiesis in the spleen.",
+      "claim_type": "EXPLICIT",
+      "source": "As the interactions between inflammation and erythropoiesis are complex (e.g., inflammatory responses also induce stress erythropoiesis in the spleen [Paulson et al., 2020] and erythropoietin [EPO, cytokine primarily responsible for RBC production] inhibits inflammation [Nairz et al., 2012]), further investigation is needed to better understand the net impact of malaria-induced immune responses on RBC production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Paulson et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "98a80be7-bdd1-40f8-9739-596eed6de0c0",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C57",
+      "claim": "Erythropoietin inhibits inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "As the interactions between inflammation and erythropoiesis are complex (e.g., inflammatory responses also induce stress erythropoiesis in the spleen [Paulson et al., 2020] and erythropoietin [EPO, cytokine primarily responsible for RBC production] inhibits inflammation [Nairz et al., 2012]), further investigation is needed to better understand the net impact of malaria-induced immune responses on RBC production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nairz et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "a6c328d6-fd32-4ff9-aa6f-09b32fa9ed81",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C58",
+      "claim": "Blood transfusion or EPO injection to replenish depleted RBCs in severe anaemia may be most effective against patients that are particularly prone to indiscriminate RBC clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "First, blood transfusion or EPO injection to replenish depleted RBCs in severe anaemia may be most effective against patients that are particularly prone to indiscriminate RBC clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about clinical implications based on the model results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "596217bc-e5b4-40d3-ae74-e046ec790758",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C59",
+      "claim": "Timely EPO injection alleviates anaemia and improves survival in A/J mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, timely EPO injection alleviates anaemia and improves survival in A/J mice (Chang et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chang et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "dfb71f6e-cf00-4b6c-a51c-71b475d59d20",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C60",
+      "claim": "EPO treatment may be less effective against poorly resilient patients whose mortality is attributed to insufficient immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same treatment may be less effective against other poorly resilient patients (similar to CAST/EiJ, NOD/ShiLtJ, and PWK/PhJ) whose mortality is attributed to insufficient immune responses (Figures 4 and 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about clinical implications based on the model results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "7faca9f8-a9d4-47de-bb31-7bcd7f8469ed",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C61",
+      "claim": "The possibility of immunopathology has been largely overlooked in the vaccine development process.",
+      "claim_type": "EXPLICIT",
+      "source": "Alarmingly, the possibility of immunopathology has so far been largely overlooked in the vaccine development process (Stanisic and Good, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Stanisic and Good, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "49f2e609-2ade-473e-a524-6b06bc13ac83",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C62",
+      "claim": "Poor survival was associated with hosts with the weakest activation of the targeted response (in CAST/EiJ, NOD/ShiLtJ and PWK/PhJ), or the strongest activation of the indiscriminate response (in A/J).",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our model predicted that poor survival was associated with hosts with the weakest activation of the targeted response (in CAST/EiJ, NOD/ShiLtJ and PWK/PhJ), or the strongest activation of the indiscriminate response (in A/J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model predictions based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "46d78a4e-76b4-4d42-9870-a35575067432",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C63",
+      "claim": "The host's ability to mount a precise response to clear parasites is likely a major determinant of host survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the host's ability to mount a precise response to clear parasites is likely a major determinant of host survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "4829810e-a5d8-45d7-b4a7-3d0bcbe6c79f",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C64",
+      "claim": "Pro-inflammatory cytokines such as TNF-\u03b1 and IFN-\u03b3 impact malaria parasite clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, pro-inflammatory cytokines such as TNF-\u03b1 and IFN-\u03b3 impact malaria parasite clearance, while anti-inflammatory cytokines like IL-10 and TGF-\u03b2 are crucial for limiting inflammation and immunopathology (Artavanis-Tsakonas et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Artavanis-Tsakonas et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "4d783695-cf5d-4b57-8383-c55db98b93d0",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C65",
+      "claim": "Anti-inflammatory cytokines like IL-10 and TGF-\u03b2 are crucial for limiting inflammation and immunopathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, pro-inflammatory cytokines such as TNF-\u03b1 and IFN-\u03b3 impact malaria parasite clearance, while anti-inflammatory cytokines like IL-10 and TGF-\u03b2 are crucial for limiting inflammation and immunopathology (Artavanis-Tsakonas et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Artavanis-Tsakonas et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "c747f120-3ca3-498f-8fb2-6c2ebaaa9329",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C66",
+      "claim": "Resilient strains (WSB/EiJ, 129S1/SvImJ, NZO/HILtJ, C57BL/6) showed a higher level of cytokine activity (both pro- and anti-inflammatory).",
+      "claim_type": "EXPLICIT",
+      "source": "In general, resilient strains (WSB/EiJ, 129S1/SvImJ, NZO/HILtJ, C57BL/6) showed a higher level of cytokine activity (both pro- and anti-inflammatory; Figure 6a,b and c) while poorly resilient strains showed either a relatively stunted activity (CAST/EiJ and PWK/PhJ), or tendency towards pro-inflammatory biased expression (NOD/ShiLtJ and A/J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "b155c3d0-d4de-4512-b4ac-a454c9adccf3",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C67",
+      "claim": "Poorly resilient strains showed either a relatively stunted cytokine activity (CAST/EiJ and PWK/PhJ), or tendency towards pro-inflammatory biased expression (NOD/ShiLtJ and A/J).",
+      "claim_type": "EXPLICIT",
+      "source": "In general, resilient strains (WSB/EiJ, 129S1/SvImJ, NZO/HILtJ, C57BL/6) showed a higher level of cytokine activity (both pro- and anti-inflammatory; Figure 6a,b and c) while poorly resilient strains showed either a relatively stunted activity (CAST/EiJ and PWK/PhJ), or tendency towards pro-inflammatory biased expression (NOD/ShiLtJ and A/J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "604c2c90-61d0-48f0-a3ef-64a0cf6a72bb",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C68",
+      "claim": "The model predicted that highly resilient mouse strains 129S1/SvImJ, NZO/HILtJ and C57BL/6 activate the targeted response more strongly than the less resilient CAST/EiJ, NOD/ShiLtJ, and PWK/PhJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the model predicted that the highly resilient mouse strains 129S1/SvImJ, NZO/HILtJ and to a large extent C57BL/6, activate the targeted response more strongly than the less resilient CAST/EiJ, NOD/ShiLtJ, and PWK/PhJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "307fe2c2-d5b9-4f47-9bb3-7974044292cb",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C69",
+      "claim": "The model prediction of stronger targeted response in resilient strains was consistent with the higher expression of pro-inflammatory cytokines in these strains.",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction was consistent with the higher expression of pro-inflammatory cytokines in these strains (Figure 6a,b and c), in comparison to two of the lesser resilient strains (CAST/EiJ and PWK/PhJ) for which we predicted weak immune responses (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference linking model predictions to cytokine data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "de6dccdc-ec2a-48af-a7d6-9552874dedd2",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C70",
+      "claim": "In 129S1/SvImJ, NZO/HILtJ, and C57BL/6, the robust expression of TNF-\u03b1 and IFN-\u03b3 was matched by equally robust expression of IL-10 and TGF-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in the three strains that show higher survival (129S1/SvImJ, NZO/HILtJ, and C57BL/6), the robust expression of TNF-\u03b1 and IFN-\u03b3 was matched by equally robust expression of IL-10 and TGF-\u03b2 (Figure 6d), which inhibit overproduction of immune effectors (Artavanis-Tsakonas et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "c0d1176d-1510-4842-a009-21d9473ebeb5",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C71",
+      "claim": "Less resilient CAST/EiJ and PWK/PhJ showed a comparatively low expression of both pro- and anti-inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "Less resilient CAST/EiJ and PWK/PhJ showed a comparatively low expression of both pro- and anti-inflammatory cytokines (Figure 6a,b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "0c9a74fd-e1c6-4f77-a435-d577251463ba",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C72",
+      "claim": "The lower pro-inflammatory cytokine expression in CAST/EiJ and PWK/PhJ draws a parallel with modelling results that these strains show comparatively weaker immune activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower pro-inflammatory cytokine expression draws a parallel with our modelling results that CAST/EiJ and PWK/PhJ show comparatively weaker immune activation (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference linking cytokine data to model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "2682fce1-8305-47de-a0ee-d3ee73db35f0",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C73",
+      "claim": "NOD/ShiLtJ and A/J showed signs of pro-inflammatory bias in cytokine expressions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found signs of pro-inflammatory bias in the cytokine expressions of NOD/ShiLtJ and A/J (Figure 6), both of which are poorly resilient at 40% and 20% survival, respectively (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "a1bd2669-e91b-4d4e-b4c4-00671d381f4f",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C74",
+      "claim": "In NOD/ShiLtJ and A/J, elevated expression of pro-inflammatory cytokines (particularly IFN-\u03b3) was not matched by a corresponding increase in anti-inflammatory responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In these strains, we observed elevated expression of pro-inflammatory cytokines (particularly IFN-\u03b3) without a matched increase in anti-inflammatory responses (Figure 6b,c and d), which inhibit overproduction of immune effectors (Artavanis-Tsakonas et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "eaed5172-4459-41a3-a782-2a73cd70f51a",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C77",
+      "claim": "Immunoregulatory imbalance is associated with immunopathology during malaria infections.",
+      "claim_type": "EXPLICIT",
+      "source": "However, immunoregulatory imbalance is also associated with immunopathology during malaria infections (King and Lamb, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to King and Lamb, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "4d5f75e0-9c5d-46f7-8413-7c2238f8e9a6",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C78",
+      "claim": "Overproduction of immune effectors could cause collateral host tissue damage and excessive indiscriminate RBC clearance may lead to severe anaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, overproduction of immune effectors could cause collateral host tissue damage and excessive indiscriminate RBC clearance may lead to severe anaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established immunological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "e7741b01-5be6-40cb-abcb-543c0c9870da",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C80",
+      "claim": "Modelling results and cytokine assays together suggest a causal link between the strength of host-driven destruction of RBCs and the underlying pro-inflammatory bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our modelling results and cytokine assays together suggest a causal link between the strength of host-driven destruction of RBCs \u2014 which may be both beneficial and detrimental to the host (Wale et al., 2019; Perkins et al., 2011) \u2014 and the underlying pro-inflammatory bias (Figure 6d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference linking model predictions to cytokine data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "13a21919-9e8d-441f-a8b7-c380688cb0e8",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C81",
+      "claim": "NOD mice are documented for immunodeficiencies downstream of inflammatory cytokines, including severely reduced natural killer cell activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, NOD mice are documented for immunodeficiencies downstream of inflammatory cytokines: for example, severely reduced natural killer cell activity (Kataoka et al., 1983), hyporesponsiveness of macrophages to growth factors and IFN-\u03b3 (Serreze et al., 1993), and defective development of antigen-presenting dendritic cells (Pearson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kataoka et al., 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "995b3dbd-001d-4a64-8c0e-5a54afb74745",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C82",
+      "claim": "NOD mice show hyporesponsiveness of macrophages to growth factors and IFN-\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, NOD mice are documented for immunodeficiencies downstream of inflammatory cytokines: for example, severely reduced natural killer cell activity (Kataoka et al., 1983), hyporesponsiveness of macrophages to growth factors and IFN-\u03b3 (Serreze et al., 1993), and defective development of antigen-presenting dendritic cells (Pearson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Serreze et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "15cbea22-b8b0-43e0-9b58-0bcfcc04a3c2",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C83",
+      "claim": "NOD mice show defective development of antigen-presenting dendritic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, NOD mice are documented for immunodeficiencies downstream of inflammatory cytokines: for example, severely reduced natural killer cell activity (Kataoka et al., 1983), hyporesponsiveness of macrophages to growth factors and IFN-\u03b3 (Serreze et al., 1993), and defective development of antigen-presenting dendritic cells (Pearson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pearson et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "fe1324c2-d286-4711-9fcd-7ea14835e100",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C84",
+      "claim": "Model prediction and cytokine assay together indicate that inflammatory responses at the molecular level failed to translate functionally to effective clearance of malaria parasites in NOD/ShiLtJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our model prediction and cytokine assay together indicate that inflammatory responses at the molecular level failed to translate functionally to effective clearance of malaria parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference linking model predictions, cytokine data, and known immunodeficiencies in NOD mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "a0d1a60b-77a2-4f17-9b6a-b66c4ef30119",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C87",
+      "claim": "WSB/EiJ mice experience exceptionally low iRBC density.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is worth highlighting that the WSB/EiJ mice experience exceptionally low iRBC density (Figure 2) and hence the cue for triggering cytokine production remains low.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "c4390947-9de1-41ee-9e06-330067d4fe9b",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C88",
+      "claim": "When scaled by iRBC density, the propensity of WSB/EiJ to express both pro- and anti-inflammatory cytokines generally exceeds that of other resilient strains.",
+      "claim_type": "EXPLICIT",
+      "source": "When scaled by the iRBC density, it becomes apparent that the propensity of WSB/EiJ to express both pro- and anti-inflammatory cytokines generally exceeds that of other resilient strains (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "c96feb50-bff3-430c-8814-737a67e23974",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C89",
+      "claim": "Cytokine assays complemented mathematical modelling by uncovering variation in molecular mechanisms that underlies functional differences among host strains that show diverse infection outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, cytokine assays complemented mathematical modelling by uncovering variation in molecular mechanisms that underlies functional differences among host strains that show diverse infection outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the integration of modeling and cytokine data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "6243b79e-cab1-4eef-9135-1c773ecd4c81",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C90",
+      "claim": "Host resilience to Plasmodium infection was linked to a balanced expression of pro- and anti-inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "Host resilience to Plasmodium infection was linked to a balanced expression of pro- and anti-inflammatory cytokines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference from the cytokine data and survival outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "466640ff-e8f6-4be9-a8aa-2daed6470224",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C91",
+      "claim": "Poorly resilient strains either showed stunted activation of pro-inflammatory cytokines associated with insufficient parasite control, or pro-inflammatory bias that has been implicated in immunopathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Poorly resilient strains either showed stunted activation of pro-inflammatory cytokines associated with insufficient parasite control, or pro-inflammatory bias that has been implicated in immunopathology (Artavanis-Tsakonas et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference from the cytokine data and survival outcomes, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "815885ae-005e-470c-91ca-5a3d86e26eeb",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C92",
+      "claim": "Immune responses are a key host factor influencing protection from malaria infections.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well documented that immune responses are a key host factor influencing protection from malaria infections (L\u00f3pez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to L\u00f3pez et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "49376e6a-681b-48a5-97a9-a6d7f75051e5",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C93",
+      "claim": "It remains difficult to relate health outcomes to the underlying variation in host immunity because parasite load, immune regulation and host health are intertwined and are variable over time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it remains difficult to relate health outcomes to the underlying variation in host immunity because parasite load, immune regulation and host health are intertwined and are variable over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenges in the field based on the authors' assessment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "3e62cecb-c6b2-41ad-9332-38634df3c87a",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C94",
+      "claim": "A knowledge gap exists between what is empirically measurable at the molecular and cellular level to what is functionally important to infection dynamics at the within-host ecological level.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a knowledge gap exists between what is empirically measurable (at the molecular and cellular level, for example immune molecules and cells) to what is functionally important to infection dynamics (at the within-host ecological level, for example net effect of parasite clearance).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a knowledge gap in the field based on the authors' assessment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "5807f73f-8664-4b53-a408-5f14138dfdb2",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C95",
+      "claim": "Better host survival during malaria infection was associated with precisely targeted, robust clearance of blood-stage parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "At the within-host ecological level, our dynamical modelling of infection revealed that better host survival during malaria infection was associated with precisely targeted, robust clearance of blood-stage parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model predictions based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "e3f5b57e-1b09-421b-bbac-6576dea2a39b",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C96",
+      "claim": "Well-regulated inflammatory cytokine expressions are key molecular signatures of inbred mouse strains that survive malaria infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Using cross-sectional cytokine assays, we uncovered well-regulated inflammatory cytokine expressions are key molecular signatures of inbred mouse strains that survive malaria infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the cytokine assay findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "4cc10cb7-7480-4b39-ac16-7a8541543ae5",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C97",
+      "claim": "By augmenting mathematical modelling of within-host ecology with cross-sectional cytokine assays, the study narrows the gap between functional and molecular mechanisms of host resilience to malaria infection.",
+      "claim_type": "EXPLICIT",
+      "source": "By augmenting mathematical modelling of within-host ecology with cross-sectional cytokine assays, our study narrows the gap between functional and molecular mechanisms of host resilience to malaria infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "382c47c0-5129-471e-b57c-554fec8090cb",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C98",
+      "claim": "Mice were administered the AJ strain of Plasmodium chabaudi at a dose of 10^5 iRBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We administered the AJ strain of Plasmodium chabaudi to the experimental animals at a dose of 105 iRBCs and monitored infections longitudinally, for 15 days, as previously described (Torres et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "ed235337-fb76-41e7-b7cc-c84a5772cc5f",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C99",
+      "claim": "Infections were monitored longitudinally for 15 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We administered the AJ strain of Plasmodium chabaudi to the experimental animals at a dose of 105 iRBCs and monitored infections longitudinally, for 15 days, as previously described (Torres et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "ca6e1966-1bc1-49b5-a2a8-5249763b1888",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C100",
+      "claim": "RBCs were quantified using a BD Accuri C6 Plus cytometer.",
+      "claim_type": "EXPLICIT",
+      "source": "RBCs were quantified using a BD Accuri C6 Plus cytometer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "329195d5-db51-4683-a07d-748f0fa161a0",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C101",
+      "claim": "Parasitemia was quantified via thin blood smears and manual microscope counting.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified parasitemia (i.e. proportion of RBCs infected) via thin blood smears and manual microscope counting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "787ac709-340b-4146-9657-b606017318ad",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C102",
+      "claim": "Parasite density was calculated by multiplying parasitemia by the number of total RBCs per microliter of blood.",
+      "claim_type": "EXPLICIT",
+      "source": "We report parasite density as the number of iRBCs per microliter of blood, which was calculated by multiplying parasitemia by the number of total RBCs per microliter of blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "8dcf90ed-13b7-46c1-a17b-79ede759e0a9",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C103",
+      "claim": "Survival was monitored daily until day 15 post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Survival was monitored daily until day 15 post-infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "e03a598d-3d48-4024-8cbb-de048f20a3e6",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C104",
+      "claim": "Between three and five infected mice of each strain were euthanised each day between days 3 to 12 post-infection for cross-sectional sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "For cross-sectional sampling, between three and five infected mice of each strain were euthanised each day between 10 am and 2 pm from days 3 to 12 post-infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "8ac4060d-def2-48fc-8b83-9cbce01b17f2",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C105",
+      "claim": "75 microliters of plasma was used for immunoassay using the mouse 38-plex kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Following euthanasia, 75 microliters of plasma was used for immunoassay using the mouse 38-plex kit (eBiosciences/Affymetrix).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "6d3461ce-28fe-4038-b5e0-a1173f13cef6",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C106",
+      "claim": "In the experiment, mice were inoculated with iRBCs that rupture synchronously at midnight.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiment, mice were inoculated with iRBCs. Synchronously at midnight, the initial cohort of iRBCs rupture, releasing a new generation of merozoites into the bloodstream (Paul et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the biological process, supported by a citation to Paul et al., 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "62d3446c-a938-442a-8a2e-92614b954017",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C107",
+      "claim": "Merozoites rapidly invade further RBCs where the parasites develop to release the next generation of merozoites with a 24 hr interval.",
+      "claim_type": "EXPLICIT",
+      "source": "These merozoites then rapidly invade further RBCs where the parasites develop to release the next generation of merozoites with a 24 hr interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the biological process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "c7a32d10-f45c-4256-865b-c12548cddb96",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C118",
+      "claim": "The model was fitted to data from 80 mice using a Bayesian statistical approach.",
+      "claim_type": "EXPLICIT",
+      "source": "We fitted the above within-host infection model to the corresponding longitudinal data from 80 mice using a Bayesian statistical approach, which allows for parameter estimation in high dimensional spaces, for example, in hierarchical models where observations are organised in multiple levels of sampling units (Mugglin et al., 2002; Cressie et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the statistical methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "8f8e6f66-2ea8-486d-8b17-d466067d49ef",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C119",
+      "claim": "The model was written in Stan 2.21.2 and fitted through the RStan interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model was written in Stan 2.21.2 and fitted through the RStan interface (Carpenter et al., 2017; Stan Development Team, 2019), which provides an efficient, general-purpose MCMC sampler (No-U-Turn Hamiltonian Monte Carlo) and a Bayesian inference environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "8e5f980e-afb2-4040-a2fa-f29d2c95d1c9",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C120",
+      "claim": "The model was fitted in parallel in four independent chains, each with 3000 sampled iterations and 1000 warmup iterations.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was fitted in parallel in four independent chains, each with 3000 sampled iterations and 1000 warmup iterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "aab2e35e-7403-409a-973d-a6a890bf164e",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C121",
+      "claim": "High host mortality was associated with either weak parasite clearance, or a strong, yet imprecise response that inadvertently removes uninfected cells in excess.",
+      "claim_type": "EXPLICIT",
+      "source": "Among eight mouse strains that collectively span 90% of the common genetic diversity of laboratory mice, we found that high host mortality was associated with either weak parasite clearance, or a strong, yet imprecise response that inadvertently removes uninfected cells in excess.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "287cb898-0cd1-426a-ba51-643a8e136d86",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "claim_id": "C122",
+      "claim": "The two distinct functional mechanisms of poor survival were underpinned by low expression of either pro- or anti-inflammatory cytokines, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent cross-sectional cytokine assays revealed that the two distinct functional mechanisms of poor survival were underpinned by low expression of either pro- or anti-inflammatory cytokines, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the cytokine assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eaa20353-5ab7-4bc3-82fd-0f57e7fa3a18",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Eight genetically diverse mouse strains show remarkable variation in malaria infection outcomes, with survival ranging from <5% to 100%, demonstrating that host genetics is a major determinant of resilience to P. chabaudi infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish the experimental foundation showing survival variation across eight mouse strains spanning 90% of laboratory mouse genetic diversity. The survival data (C2, Figure 1) and genetic diversity claim (C1, cited from Roberts et al., 2007) provide strong empirical support. The variation in infection dynamics (C4) is directly observable in the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "94ea0940-ffef-4a42-8077-5eee2ecfe803",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A hierarchical Bayesian mathematical model accurately described RBC and iRBC dynamics during acute malaria infection across all eight mouse strains, revealing strain-specific variation in multiple within-host ecological parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 assert model accuracy and parameter variation, supported by references to Appendices 1-2 and Figure 4. The statistical methodology (C118-C120) is appropriately described with proper software specification (Stan 2.21.2), MCMC diagnostics, and hierarchical structure. Model convergence metrics (R-hat <1.1, >400 effective samples) indicate reliable parameter estimation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "ec3fb9d0-916c-4bb9-8245-e15473c64ea1",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mathematical modeling identified two distinct functional mechanisms underlying poor survival: weak targeted parasite clearance (in CAST/EiJ, NOD/ShiLtJ, PWK/PhJ) or excessive indiscriminate RBC clearance (in A/J), indicating that precise immune responses are critical for host survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C62-C63, C68, C95, and C121 collectively describe the core modeling findings linking immune response parameters to survival outcomes. The PCA analysis (C44, Figure 5) and parameter estimates (Figure 4) provide quantitative support. The dichotomy between insufficient and excessive responses is well-documented across multiple claims with consistent interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "35f7b9ef-6e35-44b8-bfd6-54e888aa4fb2",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Resilient mouse strains exhibited balanced expression of pro- and anti-inflammatory cytokines, while poorly resilient strains showed either stunted cytokine activity or pro-inflammatory bias, establishing cytokine balance as a molecular signature of malaria resilience.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67, C70-C71, C90, and C96 describe cytokine expression patterns across strains with different survival outcomes. Figure 6 provides direct empirical support showing higher balanced cytokine activity in resilient strains (WSB/EiJ, 129S1/SvImJ, NZO/HILtJ, C57BL/6) versus stunted or biased expression in poorly resilient strains. The cross-sectional assay methodology (C104-C105) is adequately described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "af9e9bde-1bbd-4d1e-bea5-cc44505f71ae",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Integration of mathematical modeling predictions with cytokine assay data revealed concordance between functional immune parameters and molecular signatures, bridging the gap between within-host ecological dynamics and cellular/molecular mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C72, C80, C84, C89, and C97 describe the integration of modeling and molecular data. The consistency between predicted immune activation strength (from modeling) and measured cytokine expression (from assays) is demonstrated across multiple strains. This represents the study's key methodological contribution, though the cross-sectional nature of cytokine data (versus longitudinal modeling data) introduces some temporal uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "0383cb94-6353-41e9-9fe2-b83015fe33bc",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NOD/ShiLtJ and A/J strains showed pro-inflammatory bias with elevated IFN-\u03b3 expression not matched by anti-inflammatory responses, consistent with immunopathology associated with poor survival outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 describe pro-inflammatory bias in NOD/ShiLtJ and A/J (Figure 6), while C77-C78 link this to immunopathology. The cytokine ratio data (Figure 6d) directly supports the imbalance claim. However, the causal link to immunopathology is inferential rather than directly demonstrated through pathological measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "bdf087e5-563a-46b2-82bc-527d2a493aa8",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In NOD/ShiLtJ mice, elevated pro-inflammatory cytokine expression failed to translate into effective parasite clearance due to documented downstream immunodeficiencies, explaining the discordance between molecular and functional immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 cite established immunodeficiencies in NOD mice (reduced NK cell activity, macrophage hyporesponsiveness, defective dendritic cells), while C84 integrates this with the study's findings. The explanation reconciles the apparent contradiction between high cytokine expression and weak modeled immune function. The reliance on prior literature for NOD immunodeficiencies is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "8256bf9f-50d1-4864-9e39-be141948ae16",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "WSB/EiJ mice maintained exceptionally low iRBC densities and, when scaled by parasite burden, showed the highest propensity to express both pro- and anti-inflammatory cytokines among resilient strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 and C41 describe WSB/EiJ's exceptional performance. Figure 2 shows low iRBC density, and Figure 6d shows high cytokine propensity when scaled by iRBC density. The scaling analysis appropriately accounts for the low parasite burden when interpreting cytokine expression levels. This strain represents an extreme phenotype of resilience.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "4512cf79-7d88-43b8-961c-a3f69e061c47",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A/J mice showed the strongest indiscriminate RBC clearance and lowest erythropoiesis upregulation among poorly resilient strains, suggesting that excessive general clearance causes harmful severe anemia in this strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 infer harm from indiscriminate clearance in A/J, supported by C51-C52 citing Evans et al., 2006 showing immune-mediated RBC turnover causes anemia. Claim C54 provides model evidence for low erythropoiesis (Figure 4). The inference of harm is reasonable given 20% survival and high \u03c8_N1, though direct measurement of anemia severity in A/J would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "5a54cb08-024b-4ff6-9135-23e79cb05849",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A general negative association exists between parasite burst size (\u03b2) and host survival, with WSB/EiJ showing the smallest burst size; potential RBC surface protein differences may contribute to this variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C38 describes a negative \u03b2-survival association (Figure 4) with PWK/PhJ as a notable exception, weakening the generality. Claim C39 about TER119 marker issues in WSB/EiJ is based on personal observation, providing only suggestive evidence for RBC surface protein differences. The mechanism linking host genetics to burst size variation remains speculative and requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "8eda5e0a-d5de-44a4-94bf-4a92ab04f497",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Blood transfusion or EPO injection may be most effective for patients with excessive indiscriminate RBC clearance (like A/J) but less effective for those with insufficient immune responses (like CAST/EiJ, NOD/ShiLtJ, PWK/PhJ).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 and C60 are explicitly speculative about clinical implications. While C59 cites evidence that EPO improves A/J survival (Chang et al., 2004), the extrapolation to human patients and prediction of differential efficacy across patient types is not empirically tested. These represent reasonable hypotheses for future work rather than supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "57ed27a2-5731-4d85-aadb-f98969d65368",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "WSB/EiJ resilience may generalize to other malaria parasites including P. berghei, though these mice are highly vulnerable to Salmonella infections, suggesting pathogen-specific immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are both supported by appropriate citations (Bopp et al., 2010 for P. berghei resilience; Zhang et al., 2019 for Salmonella vulnerability). This highlights that resilience is not universally protective across all pathogens, an important caveat for interpreting the malaria-specific findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "233f8495-c046-4e0a-8391-bd8e1486329a",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The lower erythropoiesis upregulation (\u03c1) in A/J mice may reflect inflammatory inhibition of bone marrow erythropoiesis, though interactions between inflammation and erythropoiesis are complex and require further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C55 proposes a mechanism linking inflammation to reduced \u03c1 in A/J (citing Morceau et al., 2009), while C56-C57 acknowledge complexity (stress erythropoiesis in spleen, EPO's anti-inflammatory effects). The authors appropriately note that \"further investigation is needed,\" indicating this is a plausible hypothesis rather than a demonstrated mechanism. The complexity of erythropoiesis-inflammation interactions limits confident interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "a1c960c1-47e2-448e-b62f-dbf581ec8bb5",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The possibility of immunopathology has been largely overlooked in malaria vaccine development, raising concerns about vaccine-triggered immunity causing harm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by citation to Stanisic and Good, 2016. This represents an important translational implication of the study's findings about immunopathology, though it is based on prior literature assessment rather than new data from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "7e95053d-5c09-4052-b805-eaa2cdc97c28",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The experimental methodology involved infecting eight mouse strains with 10^5 P. chabaudi AJ iRBCs, monitoring infections longitudinally for 15 days, and conducting cross-sectional cytokine assays on days 3-12 post-infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C105 describe the experimental methods with appropriate detail. The longitudinal infection monitoring and cross-sectional cytokine sampling are clearly specified. Methods reference prior work (Torres et al., 2016) and specify equipment (BD Accuri C6 Plus cytometer, eBiosciences 38-plex kit). The methodology is adequately described for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "e0e239f3-9032-462c-b552-b4a45dafd0f1",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "P. chabaudi exhibits synchronous 24-hour replication cycles with iRBCs rupturing at midnight to release merozoites that rapidly invade new RBCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 describe the parasite life cycle, with C106 supported by citation to Paul et al., 2003. This biological background is well-established and appropriately cited. It provides necessary context for the mathematical model structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "17a0e67d-7380-4bab-aba2-c6f3bb862c92",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "While mathematical models can predict functional mechanisms underlying infection dynamics, model predictions of immune responses are rarely examined with immunological data, creating a knowledge gap between ecological and molecular scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 and C94 describe the state of the field and identify the knowledge gap this study addresses. C5 is supported by multiple citations to prior modeling work. C6-C7 and C94 represent the authors' assessment of the literature, appropriately identifying the gap that motivates the study's integrative approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "c209aac9-e63e-4555-81df-eefd10f41269",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The immune system is critical for host resilience to infection, but requires balance between mounting robust responses to control parasites and avoiding immunopathology from dysregulated responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 establish general immunological principles supported by appropriate citations (L\u00f3pez et al., 2010; Graham et al., 2005). These provide necessary background context for interpreting the study's findings. The claims represent well-established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "92fc34c2-69d6-4e26-885b-5c52ca4ff0c9",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "During acute malaria, innate responses target both iRBCs and uninfected RBCs, with indiscriminate RBC clearance accounting for 75-90% of RBC deficit (versus <10% from direct parasite exploitation) and playing an important role in parasite control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16, C20-C21 describe malaria immunology and RBC clearance mechanisms, all supported by appropriate citations. The quantitative estimates (75-90% from clearance, <10% from exploitation) are from Jakeman et al., 1999 and related studies. This background establishes the biological rationale for the model structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "9415201a-3fce-402b-98db-a2eae48e3a45",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Cytokines regulate host immune responses during malaria, with pro-inflammatory cytokines (TNF-\u03b1, IFN-\u03b3) promoting parasite clearance and anti-inflammatory cytokines (IL-10, TGF-\u03b2) limiting inflammation and immunopathology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 and C64-C65 describe cytokine functions, supported by citations to Lamb et al., 2006 and Artavanis-Tsakonas et al., 2003. This represents established immunological knowledge providing context for the cytokine assay results. The functional roles are well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "56f60906-661c-41d0-86ee-478f42ee6beb",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Excessive RBC loss causes adverse health effects, with severe malarial anemia being the most common severe manifestation in immune-naive children and associated with up to 30% mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 describe clinical consequences of anemia, with C18-C19 supported by citation to Perkins et al., 2011. This provides important clinical context for understanding the health implications of indiscriminate RBC clearance. The mortality rate is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "9f55f05a-14e9-4414-a584-66298e1f9e58",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Inflammatory responses can damage the host, with TNF-\u03b1 overproduction (resulting from deficits in IL-10 and TGF-\u03b2) causing worsened anemia, weight loss, and reduced survival in mouse models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 describe immunopathology mechanisms, supported by multiple citations (Clark et al., 1991; King and Lamb, 2015; Omer and Riley, 1998; Li et al., 2003; Long et al., 2006, 2008). This establishes the biological basis for expecting pro-inflammatory bias to be harmful, supporting the study's interpretations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "547ebc96-9fa1-4a50-8b90-df5ab2a3c430",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Balanced cytokine expression likely promotes malaria resilience, but mechanistic studies typically focus on one or two strains with similar responses, limiting ability to link molecular signatures with functional variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is an inference from prior discussion, while C31 describes a limitation of existing research approaches. These claims appropriately motivate the study's multi-strain approach. The assessment of the field's limitations is reasonable and justifies the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    },
+    {
+      "id": "74ee3320-8c7e-4494-bf1b-b865e9aa3398",
+      "content_id": "e1704114-ac09-4c7f-a033-cc54514ea64f",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Immune responses are key to malaria protection, but relating health outcomes to immunity variation is difficult because parasite load, immune regulation, and host health are intertwined and temporally variable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 describe challenges in the field, with C92 supported by L\u00f3pez et al., 2010. These claims appropriately frame the difficulty of the research problem and justify the need for integrative modeling approaches. The assessment represents a fair characterization of the field's challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:12:40.075043Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "029011d0-7312-474c-841b-8af404f4447a",
+      "result_id": "eaa20353-5ab7-4bc3-82fd-0f57e7fa3a18"
+    },
+    {
+      "claim_id": "772b4087-9e27-4c8a-9b2d-88271854777f",
+      "result_id": "eaa20353-5ab7-4bc3-82fd-0f57e7fa3a18"
+    },
+    {
+      "claim_id": "c6a5e4db-7a7d-429c-94e7-781013c87850",
+      "result_id": "eaa20353-5ab7-4bc3-82fd-0f57e7fa3a18"
+    },
+    {
+      "claim_id": "8c96f3d9-678b-4b3c-99e3-7c439d2ebdd5",
+      "result_id": "eaa20353-5ab7-4bc3-82fd-0f57e7fa3a18"
+    },
+    {
+      "claim_id": "8f8ce14e-cebc-4e61-be68-7e5668d442e7",
+      "result_id": "94ea0940-ffef-4a42-8077-5eee2ecfe803"
+    },
+    {
+      "claim_id": "8d1b058e-cae1-4ef5-9add-9891db934488",
+      "result_id": "94ea0940-ffef-4a42-8077-5eee2ecfe803"
+    },
+    {
+      "claim_id": "c7a32d10-f45c-4256-865b-c12548cddb96",
+      "result_id": "94ea0940-ffef-4a42-8077-5eee2ecfe803"
+    },
+    {
+      "claim_id": "8f8e6f66-2ea8-486d-8b17-d466067d49ef",
+      "result_id": "94ea0940-ffef-4a42-8077-5eee2ecfe803"
+    },
+    {
+      "claim_id": "8e5f980e-afb2-4040-a2fa-f29d2c95d1c9",
+      "result_id": "94ea0940-ffef-4a42-8077-5eee2ecfe803"
+    },
+    {
+      "claim_id": "0b96bcee-aedf-4e02-ae69-8c4e3ebef791",
+      "result_id": "ec3fb9d0-916c-4bb9-8245-e15473c64ea1"
+    },
+    {
+      "claim_id": "49f2e609-2ade-473e-a524-6b06bc13ac83",
+      "result_id": "ec3fb9d0-916c-4bb9-8245-e15473c64ea1"
+    },
+    {
+      "claim_id": "46d78a4e-76b4-4d42-9870-a35575067432",
+      "result_id": "ec3fb9d0-916c-4bb9-8245-e15473c64ea1"
+    },
+    {
+      "claim_id": "604c2c90-61d0-48f0-a3ef-64a0cf6a72bb",
+      "result_id": "ec3fb9d0-916c-4bb9-8245-e15473c64ea1"
+    },
+    {
+      "claim_id": "5807f73f-8664-4b53-a408-5f14138dfdb2",
+      "result_id": "ec3fb9d0-916c-4bb9-8245-e15473c64ea1"
+    },
+    {
+      "claim_id": "aab2e35e-7403-409a-973d-a6a890bf164e",
+      "result_id": "ec3fb9d0-916c-4bb9-8245-e15473c64ea1"
+    },
+    {
+      "claim_id": "c747f120-3ca3-498f-8fb2-6c2ebaaa9329",
+      "result_id": "35f7b9ef-6e35-44b8-bfd6-54e888aa4fb2"
+    },
+    {
+      "claim_id": "b155c3d0-d4de-4512-b4ac-a454c9adccf3",
+      "result_id": "35f7b9ef-6e35-44b8-bfd6-54e888aa4fb2"
+    },
+    {
+      "claim_id": "de6dccdc-ec2a-48af-a7d6-9552874dedd2",
+      "result_id": "35f7b9ef-6e35-44b8-bfd6-54e888aa4fb2"
+    },
+    {
+      "claim_id": "c0d1176d-1510-4842-a009-21d9473ebeb5",
+      "result_id": "35f7b9ef-6e35-44b8-bfd6-54e888aa4fb2"
+    },
+    {
+      "claim_id": "6243b79e-cab1-4eef-9135-1c773ecd4c81",
+      "result_id": "35f7b9ef-6e35-44b8-bfd6-54e888aa4fb2"
+    },
+    {
+      "claim_id": "e3f5b57e-1b09-421b-bbac-6576dea2a39b",
+      "result_id": "35f7b9ef-6e35-44b8-bfd6-54e888aa4fb2"
+    },
+    {
+      "claim_id": "307fe2c2-d5b9-4f47-9bb3-7974044292cb",
+      "result_id": "af9e9bde-1bbd-4d1e-bea5-cc44505f71ae"
+    },
+    {
+      "claim_id": "0c9a74fd-e1c6-4f77-a435-d577251463ba",
+      "result_id": "af9e9bde-1bbd-4d1e-bea5-cc44505f71ae"
+    },
+    {
+      "claim_id": "e7741b01-5be6-40cb-abcb-543c0c9870da",
+      "result_id": "af9e9bde-1bbd-4d1e-bea5-cc44505f71ae"
+    },
+    {
+      "claim_id": "fe1324c2-d286-4711-9fcd-7ea14835e100",
+      "result_id": "af9e9bde-1bbd-4d1e-bea5-cc44505f71ae"
+    },
+    {
+      "claim_id": "c96feb50-bff3-430c-8814-737a67e23974",
+      "result_id": "af9e9bde-1bbd-4d1e-bea5-cc44505f71ae"
+    },
+    {
+      "claim_id": "4cc10cb7-7480-4b39-ac16-7a8541543ae5",
+      "result_id": "af9e9bde-1bbd-4d1e-bea5-cc44505f71ae"
+    },
+    {
+      "claim_id": "2682fce1-8305-47de-a0ee-d3ee73db35f0",
+      "result_id": "0383cb94-6353-41e9-9fe2-b83015fe33bc"
+    },
+    {
+      "claim_id": "a1bd2669-e91b-4d4e-b4c4-00671d381f4f",
+      "result_id": "0383cb94-6353-41e9-9fe2-b83015fe33bc"
+    },
+    {
+      "claim_id": "eaed5172-4459-41a3-a782-2a73cd70f51a",
+      "result_id": "0383cb94-6353-41e9-9fe2-b83015fe33bc"
+    },
+    {
+      "claim_id": "4d5f75e0-9c5d-46f7-8413-7c2238f8e9a6",
+      "result_id": "0383cb94-6353-41e9-9fe2-b83015fe33bc"
+    },
+    {
+      "claim_id": "13a21919-9e8d-441f-a8b7-c380688cb0e8",
+      "result_id": "bdf087e5-563a-46b2-82bc-527d2a493aa8"
+    },
+    {
+      "claim_id": "995b3dbd-001d-4a64-8c0e-5a54afb74745",
+      "result_id": "bdf087e5-563a-46b2-82bc-527d2a493aa8"
+    },
+    {
+      "claim_id": "15cbea22-b8b0-43e0-9b58-0bcfcc04a3c2",
+      "result_id": "bdf087e5-563a-46b2-82bc-527d2a493aa8"
+    },
+    {
+      "claim_id": "fe1324c2-d286-4711-9fcd-7ea14835e100",
+      "result_id": "bdf087e5-563a-46b2-82bc-527d2a493aa8"
+    },
+    {
+      "claim_id": "a0d1a60b-77a2-4f17-9b6a-b66c4ef30119",
+      "result_id": "8256bf9f-50d1-4864-9e39-be141948ae16"
+    },
+    {
+      "claim_id": "c4390947-9de1-41ee-9e06-330067d4fe9b",
+      "result_id": "8256bf9f-50d1-4864-9e39-be141948ae16"
+    },
+    {
+      "claim_id": "20a9b2c5-639a-489a-ac71-c6a841d9c14c",
+      "result_id": "8256bf9f-50d1-4864-9e39-be141948ae16"
+    },
+    {
+      "claim_id": "7042b9b5-0a20-4faa-929f-0607abb70140",
+      "result_id": "4512cf79-7d88-43b8-961c-a3f69e061c47"
+    },
+    {
+      "claim_id": "34bb7c6e-7019-420e-91fe-b6c53ae3a55a",
+      "result_id": "4512cf79-7d88-43b8-961c-a3f69e061c47"
+    },
+    {
+      "claim_id": "59443100-5cc8-46a5-bf58-875f59d3f679",
+      "result_id": "4512cf79-7d88-43b8-961c-a3f69e061c47"
+    },
+    {
+      "claim_id": "9062cc24-527c-4645-b45a-600f8a1c80b9",
+      "result_id": "4512cf79-7d88-43b8-961c-a3f69e061c47"
+    },
+    {
+      "claim_id": "e113c872-2d15-470a-9190-5fdbde39fec6",
+      "result_id": "4512cf79-7d88-43b8-961c-a3f69e061c47"
+    },
+    {
+      "claim_id": "2ba30828-867f-4445-964c-58cd65595184",
+      "result_id": "5a54cb08-024b-4ff6-9135-23e79cb05849"
+    },
+    {
+      "claim_id": "fbea8a6e-bc4a-4c18-81f2-13d7102bd748",
+      "result_id": "5a54cb08-024b-4ff6-9135-23e79cb05849"
+    },
+    {
+      "claim_id": "a6c328d6-fd32-4ff9-aa6f-09b32fa9ed81",
+      "result_id": "8eda5e0a-d5de-44a4-94bf-4a92ab04f497"
+    },
+    {
+      "claim_id": "596217bc-e5b4-40d3-ae74-e046ec790758",
+      "result_id": "8eda5e0a-d5de-44a4-94bf-4a92ab04f497"
+    },
+    {
+      "claim_id": "dfb71f6e-cf00-4b6c-a51c-71b475d59d20",
+      "result_id": "8eda5e0a-d5de-44a4-94bf-4a92ab04f497"
+    },
+    {
+      "claim_id": "cca0b3f8-5754-43fc-bd09-e73205c29c53",
+      "result_id": "57ed27a2-5731-4d85-aadb-f98969d65368"
+    },
+    {
+      "claim_id": "7193aee7-a276-404d-8b33-bbd406ebd855",
+      "result_id": "57ed27a2-5731-4d85-aadb-f98969d65368"
+    },
+    {
+      "claim_id": "1ae428a8-8c53-46c8-9c9a-9801c6be1a45",
+      "result_id": "233f8495-c046-4e0a-8391-bd8e1486329a"
+    },
+    {
+      "claim_id": "f0835b07-5663-4c7a-81b9-e93fa003b335",
+      "result_id": "233f8495-c046-4e0a-8391-bd8e1486329a"
+    },
+    {
+      "claim_id": "98a80be7-bdd1-40f8-9739-596eed6de0c0",
+      "result_id": "233f8495-c046-4e0a-8391-bd8e1486329a"
+    },
+    {
+      "claim_id": "7faca9f8-a9d4-47de-bb31-7bcd7f8469ed",
+      "result_id": "a1c960c1-47e2-448e-b62f-dbf581ec8bb5"
+    },
+    {
+      "claim_id": "382c47c0-5129-471e-b57c-554fec8090cb",
+      "result_id": "7e95053d-5c09-4052-b805-eaa2cdc97c28"
+    },
+    {
+      "claim_id": "ed235337-fb76-41e7-b7cc-c84a5772cc5f",
+      "result_id": "7e95053d-5c09-4052-b805-eaa2cdc97c28"
+    },
+    {
+      "claim_id": "ca6e1966-1bc1-49b5-a2a8-5249763b1888",
+      "result_id": "7e95053d-5c09-4052-b805-eaa2cdc97c28"
+    },
+    {
+      "claim_id": "329195d5-db51-4683-a07d-748f0fa161a0",
+      "result_id": "7e95053d-5c09-4052-b805-eaa2cdc97c28"
+    },
+    {
+      "claim_id": "787ac709-340b-4146-9657-b606017318ad",
+      "result_id": "7e95053d-5c09-4052-b805-eaa2cdc97c28"
+    },
+    {
+      "claim_id": "8dcf90ed-13b7-46c1-a17b-79ede759e0a9",
+      "result_id": "7e95053d-5c09-4052-b805-eaa2cdc97c28"
+    },
+    {
+      "claim_id": "e03a598d-3d48-4024-8cbb-de048f20a3e6",
+      "result_id": "7e95053d-5c09-4052-b805-eaa2cdc97c28"
+    },
+    {
+      "claim_id": "8ac4060d-def2-48fc-8b83-9cbce01b17f2",
+      "result_id": "7e95053d-5c09-4052-b805-eaa2cdc97c28"
+    },
+    {
+      "claim_id": "6d3461ce-28fe-4038-b5e0-a1173f13cef6",
+      "result_id": "e0e239f3-9032-462c-b552-b4a45dafd0f1"
+    },
+    {
+      "claim_id": "62d3446c-a938-442a-8a2e-92614b954017",
+      "result_id": "e0e239f3-9032-462c-b552-b4a45dafd0f1"
+    },
+    {
+      "claim_id": "a611f3df-5cb4-4338-8af4-ae664281bfff",
+      "result_id": "17a0e67d-7380-4bab-aba2-c6f3bb862c92"
+    },
+    {
+      "claim_id": "7e1fecf7-bdcb-4163-b8a9-7d4285e6d28a",
+      "result_id": "17a0e67d-7380-4bab-aba2-c6f3bb862c92"
+    },
+    {
+      "claim_id": "952fbbba-c6b4-470b-9c6d-ccadd0ba5dbd",
+      "result_id": "17a0e67d-7380-4bab-aba2-c6f3bb862c92"
+    },
+    {
+      "claim_id": "3e62cecb-c6b2-41ad-9332-38634df3c87a",
+      "result_id": "17a0e67d-7380-4bab-aba2-c6f3bb862c92"
+    },
+    {
+      "claim_id": "2b325685-be14-488a-8c32-cbb38fd83630",
+      "result_id": "c209aac9-e63e-4555-81df-eefd10f41269"
+    },
+    {
+      "claim_id": "f5db64a5-7259-4e3b-86ac-8d8d1f9cb559",
+      "result_id": "c209aac9-e63e-4555-81df-eefd10f41269"
+    },
+    {
+      "claim_id": "3ae846d5-e7c0-465e-aa22-c6c8029df6e9",
+      "result_id": "c209aac9-e63e-4555-81df-eefd10f41269"
+    },
+    {
+      "claim_id": "e0432e96-aca4-4122-b382-ad2a36278c26",
+      "result_id": "c209aac9-e63e-4555-81df-eefd10f41269"
+    },
+    {
+      "claim_id": "8ea774f5-710c-4a7c-a01d-6c0bdd3798d8",
+      "result_id": "c209aac9-e63e-4555-81df-eefd10f41269"
+    },
+    {
+      "claim_id": "65758112-8b13-4ee3-9544-cfc04ba267a5",
+      "result_id": "92fc34c2-69d6-4e26-885b-5c52ca4ff0c9"
+    },
+    {
+      "claim_id": "90b7947f-db45-4809-b888-2e09d621724b",
+      "result_id": "92fc34c2-69d6-4e26-885b-5c52ca4ff0c9"
+    },
+    {
+      "claim_id": "e18efaed-46a3-4fe0-9ae3-1d0db84ff3ae",
+      "result_id": "92fc34c2-69d6-4e26-885b-5c52ca4ff0c9"
+    },
+    {
+      "claim_id": "1c2c6faa-dbed-44fc-a0c9-2f6723100917",
+      "result_id": "92fc34c2-69d6-4e26-885b-5c52ca4ff0c9"
+    },
+    {
+      "claim_id": "a4f95d1e-a7ba-4b70-8598-4a99280cedae",
+      "result_id": "92fc34c2-69d6-4e26-885b-5c52ca4ff0c9"
+    },
+    {
+      "claim_id": "97913f57-95ed-4734-ab09-46bb07de56e9",
+      "result_id": "92fc34c2-69d6-4e26-885b-5c52ca4ff0c9"
+    },
+    {
+      "claim_id": "15329883-5c8e-4d22-b0d4-77a598a7741f",
+      "result_id": "9415201a-3fce-402b-98db-a2eae48e3a45"
+    },
+    {
+      "claim_id": "10439404-3ab2-45ee-ba13-7024b13470ce",
+      "result_id": "9415201a-3fce-402b-98db-a2eae48e3a45"
+    },
+    {
+      "claim_id": "0abdd7b3-5948-4f5c-bce2-8aae736c9eaa",
+      "result_id": "9415201a-3fce-402b-98db-a2eae48e3a45"
+    },
+    {
+      "claim_id": "4829810e-a5d8-45d7-b4a7-3d0bcbe6c79f",
+      "result_id": "9415201a-3fce-402b-98db-a2eae48e3a45"
+    },
+    {
+      "claim_id": "4d783695-cf5d-4b57-8383-c55db98b93d0",
+      "result_id": "9415201a-3fce-402b-98db-a2eae48e3a45"
+    },
+    {
+      "claim_id": "3173b69b-602d-4175-93ac-d3f72c824c88",
+      "result_id": "56f60906-661c-41d0-86ee-478f42ee6beb"
+    },
+    {
+      "claim_id": "61c02bce-c973-40ae-9cb8-fb700735d22e",
+      "result_id": "56f60906-661c-41d0-86ee-478f42ee6beb"
+    },
+    {
+      "claim_id": "022785f4-8644-4354-883e-e952c9342ae1",
+      "result_id": "56f60906-661c-41d0-86ee-478f42ee6beb"
+    },
+    {
+      "claim_id": "50d1fdb6-65bb-4943-aa93-5cb4221d6202",
+      "result_id": "9f55f05a-14e9-4414-a584-66298e1f9e58"
+    },
+    {
+      "claim_id": "7a79ed66-762b-421f-aa7a-7772f3fbb8e1",
+      "result_id": "9f55f05a-14e9-4414-a584-66298e1f9e58"
+    },
+    {
+      "claim_id": "172df07e-17eb-49e2-96e5-06fc41f748b3",
+      "result_id": "9f55f05a-14e9-4414-a584-66298e1f9e58"
+    },
+    {
+      "claim_id": "0ff0abb8-2cb5-4ef2-a8e9-ee22f5430821",
+      "result_id": "547ebc96-9fa1-4a50-8b90-df5ab2a3c430"
+    },
+    {
+      "claim_id": "5f46ec69-ea45-4c5f-9aad-5235524c0f9a",
+      "result_id": "547ebc96-9fa1-4a50-8b90-df5ab2a3c430"
+    },
+    {
+      "claim_id": "815885ae-005e-470c-91ca-5a3d86e26eeb",
+      "result_id": "74ee3320-8c7e-4494-bf1b-b865e9aa3398"
+    },
+    {
+      "claim_id": "49376e6a-681b-48a5-97a9-a6d7f75051e5",
+      "result_id": "74ee3320-8c7e-4494-bf1b-b865e9aa3398"
+    }
+  ],
+  "comparisons": []
+}

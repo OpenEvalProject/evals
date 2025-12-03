@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C91",
+      "C94"
+    ],
+    "result": "The authors established an optogenetic stimulation method combined with high-pressure freezing (Opto-HPF) for studying IHC ribbon synapses with millisecond temporal resolution. ChR2 expression was verified in IHCs using immunofluorescence and immunogold electron microscopy, showing efficient membrane localization without intracellular accumulation. The Vglut3 promoter controlled Cre recombination in ~99% of IHCs. A strategy for precise synchronization of HPF with optogenetic stimulation was developed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C34, C91, and C94 collectively demonstrate successful establishment of the Opto-HPF method. Immunofluorescence (Figure 1A,B,D) and immunogold EM (Figure 1C) provide direct evidence of ChR2 membrane expression. The technical setup for synchronization (Figure 3, Figure 5) is well-documented with sensor data and timing measurements. The methodological validation is comprehensive and well-supported by multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C93",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C154"
+    ],
+    "result": "Optogenetic stimulation of ChR2-expressing IHCs was characterized by patch-clamp recordings, demonstrating robust depolarization and neurotransmitter release. Light pulses of 5-50 ms duration at 2-11.5 mW/mm\u00b2 depolarized IHCs by 27-65 mV within 10-20 ms, with higher irradiances decreasing time to peak. A 10 ms light pulse at 2-11.5 mW/mm\u00b2 was sufficient to depolarize IHCs by 50 mV and trigger EPSCs at individual synapses with latencies of 15-20 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39-C44, C93, C98-C101, and C154 are well-supported by patch-clamp data shown in Figures 2 and 4. The electrophysiological characterization is comprehensive, with quantitative measurements of depolarization amplitude, kinetics, and dose-response relationships. The data demonstrate that the optogenetic stimulation is effective and physiologically relevant for triggering IHC exocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Postsynaptic recordings from boutons demonstrated that optogenetic stimulation triggered neurotransmitter release from individual IHC active zones. EPSCs showed variable amplitudes (200-700 pA) between boutons but remained consistent for individual boutons. Light pulse duration significantly affected EPSC duration and charge transfer, with 50 ms stimulation producing three times longer release than 10 ms pulses. Based on EPSC charge (236-2450 pC), the stimulation triggered release of more than 10 SVs per AZ, indicating RRP depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 and C103-C105 are supported by postsynaptic bouton recordings shown in Figure 4. The quantitative analysis of EPSC properties (amplitude, duration, charge transfer, latency) is comprehensive. The calculation of SV numbers released is based on cited estimates of single SV charge (C104), providing reasonable inference about RRP depletion. The data convincingly demonstrate that the optogenetic paradigm triggers physiologically relevant exocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Analysis of ribbon synapse numbers across three age groups (4-5, 6-7, and 9-12 months) showed that both WT and ChR2-expressing IHCs exhibited age-related decline in ribbon numbers, but there were no differences between ChR2-expressing and WT IHCs within the same age groups. This indicates that ChR2 expression does not adversely affect synapse number or cause chronic depolarization effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by confocal microscopy data in Figure 1D and Table 1. Statistical analysis (two-way ANOVA with Tukey's test) shows significant age-related decline in both genotypes but no genotype effect within age groups. This is an important control demonstrating that the ChR2 expression system does not cause pathological changes to the synapses being studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The radiant flux at the sample in the HPM was measured to be 37.3 mW with a peak irradiance of 6 mW/mm\u00b2, which corresponds to the irradiance values that triggered sufficient IHC depolarization and exocytosis in patch-clamp experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C57 are supported by irradiance measurements shown in Figure 3E-F and comparison to patch-clamp data in Figure 2. The calibration of light intensity in the HPM setup is well-documented, and the correspondence between HPM irradiance and effective stimulation in electrophysiology validates the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C107"
+    ],
+    "result": "Two stimulation paradigms were established: ShortStim (~17-25 ms) aimed to capture RRP release, and LongStim (~48-76 ms) aimed to capture sustained exocytosis. These durations were chosen to match stimulus paradigms widely used in IHC electrophysiology and correspond to known kinetics of phasic and sustained release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 and C107 are supported by timing data in Figure 5D and citations to prior electrophysiology studies. The rationale for the stimulation durations is well-justified based on established knowledge of IHC exocytosis kinetics (C108-C109). The technical implementation using sensor data to precisely time stimulation relative to freezing is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C95"
+    ],
+    "result": "Ultrastructural analysis revealed that the number of docked SVs increased upon both short (17-25 ms) and long (48-76 ms) optogenetic stimulation, with the increase being more prominent upon longer stimulation. The fraction of docked SVs increased from 0.01 in controls to 0.10 after short stimulation and 0.20 after long stimulation. Concurrently, the fraction of non-tethered SVs decreased after short stimulation, and the fraction of tethered SVs decreased upon long stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C72-C75, and C95 are strongly supported by electron tomography data in Figure 6 and quantification in Table 2. Statistical analysis (one-way ANOVA/Kruskal-Wallis with post-hoc tests) shows significant differences between conditions. The finding of increased docking upon stimulation is a major result, with clear dose-response relationship to stimulation duration. The data quality and quantification appear rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C96"
+    ],
+    "result": "Upon stimulation, the distances of MP-SVs to the AZ membrane decreased, with SVs found closer to the presynaptic density (PD) upon long stimulation. Enhanced docking primarily accounted for the decreased average SV distances to the AZ membrane. Docked SVs in control conditions were located at greater distances from the PD compared to stimulated conditions, suggesting SVs are recruited to dock closer to Ca\u00b2\u207a channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 and C96 are supported by distance measurements in Figure 7A-B and Table 2. The analysis distinguishes between overall distance changes and sub-pool specific changes, showing that docking is the primary driver. The inference about proximity to Ca\u00b2\u207a channels (C79) is reasonable given cited evidence that Ca\u00b2\u207a channels localize near the PD (C150-C151). Statistical support is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C90",
+      "C97",
+      "C124",
+      "C125",
+      "C157"
+    ],
+    "result": "No enlarged SVs or morphological correlates of homotypic fusion events were observed in the MP-SV pool upon stimulation, except for a slight increase in diameter of non-tethered SVs after short stimulation. There were no obvious shifts in SV diameter frequency distributions. RA-SVs and docked SVs showed slightly reduced sizes compared to controls. These findings do not support multivesicular release via compound or cumulative fusion as the prevailing mechanism at IHC synapses under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C82-C85, C90, C97, C124-C125, and C157 are supported by SV diameter analysis in Figure 7C and Table 2. The absence of enlarged SVs is a negative finding but is important for addressing the MVR vs UVR debate. The analysis is comprehensive, examining both mean diameters and frequency distributions. The slight increase in non-tethered SV diameter (C83) is statistically significant but small and does not indicate homotypic fusion. The conclusion is appropriately cautious (C90, C126).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C121",
+      "C126"
+    ],
+    "result": "The results indicate rapid recruitment of SVs to the docked state upon stimulation and suggest that univesicular release prevails as the quantal mechanism of exocytosis at IHC ribbon synapses. However, since some AZs harbored more than one docked SV in stimulated conditions, coordinated release of few SVs cannot be fully excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9 represent the authors' interpretation of the data, particularly the absence of enlarged SVs (C7, C85, C90) and the increase in docked SVs (C5-C6, C74). While the data support rapid SV recruitment to docking (C8), the conclusion about UVR (C9) is more tentative. The authors appropriately acknowledge (C126) that multiple docked SVs per AZ could allow coordinated MVR. The ultrastructural data alone cannot definitively distinguish between UVR and coordinated MVR of multiple independently docked SVs. Additional functional evidence would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C158",
+      "C159"
+    ],
+    "result": "No alterations in the total size of MP-SV and RA-SV pools were found among conditions, except for a larger MP-SV pool in ChR2 NoLight compared to B6J Light, which may reflect genetic background differences. The MP-SV and RA-SV pools stayed stable or were rapidly replenished upon stimulation, with a decrease in the fraction of non-tethered SVs within the MP-SV pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69, C158-C159 are supported by SV pool quantification in Figure 6E and Table 2. The finding that total pool sizes remain stable despite ongoing release (C127) is important and suggests rapid replenishment. The comparison to prior studies (C69) provides context. The difference between ChR2 NoLight and B6J Light (C67-C68) highlights the importance of appropriate controls and is appropriately interpreted as a potential genetic background effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Analysis of ribbon-associated SVs showed no changes in SV counts at distal and proximal ribbon halves, but a significant reduction in SV diameters at both halves upon stimulation. A decreased fraction of ribbon-attached SVs was found upon long stimulation, and an increased fraction of interconnected SVs upon short stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by RA-SV analysis in Figure 7\u2014figure supplement 2 and Supplementary file 2. The reduction in RA-SV diameter upon stimulation is statistically significant and interesting, though its functional significance is unclear. The changes in RA-SV sub-pool fractions suggest dynamic reorganization of the ribbon-associated pool during stimulation. These are secondary findings that complement the main MP-SV results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C106"
+    ],
+    "result": "Direct Ca\u00b2\u207a influx via ChR2 is not considered to trigger exocytosis in IHCs. ChR2 in HEK293 cells raises intracellular Ca\u00b2\u207a only to ~90 nM even with 90 mM extracellular Ca\u00b2\u207a, while IHC exocytosis requires ~70 \u00b5M Ca\u00b2\u207a with little release below 10 \u00b5M. Additionally, powerful Ca\u00b2\u207a buffering and extrusion by hair cells would counter ChR2-mediated Ca\u00b2\u207a influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 and C106 address an important control concern about whether ChR2-mediated Ca\u00b2\u207a influx could directly trigger release. The reasoning is well-supported by cited evidence about ChR2 Ca\u00b2\u207a permeability (C58) and IHC Ca\u00b2\u207a sensitivity (C59-C60). The argument about Ca\u00b2\u207a buffering (C61) is reasonable given cited properties of hair cells. This analysis appropriately rules out a potential confound in interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C131",
+      "C132"
+    ],
+    "result": "IHC ribbon synapses did not display a significant reduction in MP-SVs upon optogenetic stimulation at the ultrastructural level, contrasting with electrophysiological evidence for partial RRP depletion. This differs from conventional and retinal ribbon synapses, where prominent increases in docked SVs upon stimulation are not typically observed. The accumulation of docked SVs seems puzzling given estimated SV replenishment and fusion rates of 180-2000 SV/s at IHC synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127, C131-C132 highlight an apparent discrepancy between structural (no decrease in MP-SV pool size, C67) and functional (RRP depletion, C105) observations. The authors acknowledge this puzzle (C132) and discuss several possible explanations in the Discussion (C134-C143), including limited clearance, kiss-and-run, and reversible docking/undocking. However, the manuscript does not definitively resolve this discrepancy. The comparison to other synapse types (C131) is interesting but the cited studies used different methods. This represents an important unresolved question that would benefit from additional experiments or modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C138",
+      "C139",
+      "C141",
+      "C142",
+      "C143",
+      "C160"
+    ],
+    "result": "The rarity of docked SVs at rest might reflect spontaneous univesicular release via 'kiss and run' fusion and/or rapid undocking of vesicles. The accumulation of docked SVs during stimulation could represent 'kiss and run' or 'kiss and stay' release events. Evidence for reversible priming and docking has been reported in various preparations, and the balance of Ca\u00b2\u207a/otoferlin-dependent replenishment with fusion and/or undocking would set the standing RRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C120, C138-C139, C141-C143, and C160 represent speculative hypotheses to explain the observed docking dynamics. While these hypotheses are reasonable and supported by citations to prior work, they are not directly tested in this study. The authors appropriately present these as possibilities (using 'might' and 'could') rather than conclusions. The evidence for kiss-and-run at IHCs (C138) is cited but the current study does not provide direct evidence for this mechanism. These remain open questions requiring future investigation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1813 @@
+{
+  "submission": {
+    "id": "e8b10bad-b21a-4706-982b-3da54854aa11",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:17:41.879605Z",
+    "updated_at": "2025-12-03T09:17:41.879605Z"
+  },
+  "content": [
+    {
+      "id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "submission_id": "e8b10bad-b21a-4706-982b-3da54854aa11",
+      "content_type": "manuscript",
+      "content_text": "# Disentangling bias between Gq, GRK2, and arrestin3 recruitment to the M3 muscarinic acetylcholine receptor\n\n## Authors\n\n- Anja Fl\u00f6ser<sup>1</sup> ([ORCID: 0000-0002-0876-1184](https://orcid.org/0000-0002-0876-1184))\n- Katharina Becker<sup>2</sup> ([ORCID: 0000-0003-4104-7844](https://orcid.org/0000-0003-4104-7844))\n- Evi Kostenis<sup>3</sup>\n- Gabriele K\u00f6nig<sup>3</sup>\n- Cornelius Krasel<sup>2</sup>\n- Peter Kolb<sup>1</sup> ([ORCID: 0000-0003-4089-614X](https://orcid.org/0000-0003-4089-614X)) \u2020\n- Moritz B\u00fcnemann<sup>2</sup> ([ORCID: 0000-0002-2259-4378](https://orcid.org/0000-0002-2259-4378)) \u2020\n\n### Affiliations\n\n1. Department of Pharmaceutical Chemistry, Philipps-University Marburg Marburg Germany\n2. Department of Pharmacology and Clinical Pharmacy, Faculty of Pharmacy, Philipps-University Marburg Marburg Germany\n3. Molecular, Cellular and Pharmacobiology Section, Institute for Pharmaceutical Biology, University of Bonn Bonn Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nG protein-coupled receptors (GPCRs) transmit extracellular signals to the inside by activation of intracellular effector proteins. Different agonists can promote differential receptor-induced signaling responses \u2013 termed bias \u2013 potentially by eliciting different levels of recruitment of effector proteins. As activation and recruitment of effector proteins might influence each other, thorough analysis of bias is difficult. Here, we compared the efficacy of seven agonists to induce G protein, G protein-coupled receptor kinase 2 (GRK2), as well as arrestin3 binding to the muscarinic acetylcholine receptor M3 by utilizing FRET-based assays. In order to avoid interference between these interactions, we studied GRK2 binding in the presence of inhibitors of Gi and Gq proteins and analyzed arrestin3 binding to prestimulated M3 receptors to avoid differences in receptor phosphorylation influencing arrestin recruitment. We measured substantial differences in the agonist efficacies to induce M3R-arrestin3 versus M3R-GRK2 interaction. However, the rank order of the agonists for G protein- and GRK2-M3R interaction was the same, suggesting that G protein and GRK2 binding to M3R requires similar receptor conformations, whereas requirements for arrestin3 binding to M3R are distinct.\n\n## Introduction\n\nG protein-coupled receptors (GPCRs) are membrane-spanning proteins that convert extracellular to intracellular signals. GPCRs can sense a wide variety of different agents, from single photons in the case of rhodopsin to small proteins that activate chemokine receptors (Shichida and Imai, 1998; Griffith et al., 2014). The canonical sequence of events during receptor activation (not taking into account precoupling of G protein) is the following: (1) an agonist, increasing the population of active receptor conformations, binds to the orthosteric pocket; this leads to a further conformational change of the transmembrane helix bundle that results in an opening of the intracellular effector-binding cavity; (2) G proteins bind to the intracellular pocket of the receptors, are thereby activated and enabled to transmit and modulate a multitude of signals; (3) G protein-coupled receptor kinases (GRKs) are recruited to the activated receptors, leading to receptor phosphorylation; and (4) arrestins bind to the active conformation of these receptors after being activated by an initial binding to phosphorylated residues at the intracellular end of the receptors. Subsequently, arrestins induce internalization and desensitization of the receptors (Ritter and Hall, 2009; Mart\u00ed-Solano et al., 2016; Scheerer and Sommer, 2017; Kenakin, 2019). In the sequence of events described above, the three GPCR-binding proteins investigated in this work (G proteins, GRKs, and arrestins) recognize agonist-induced receptor conformations independently of each other, as shown in Figure 1\u2014figure supplement 1. There is strong evidence that different agonists can stabilize distinct receptor conformations and thereby influence the recruitment of effector proteins leading to \u2018functional selectivity\u2019 or, more specifically, \u2018ligand bias\u2019 to better reflect the nomenclature in the upcoming BJP guidelines (Costa-Neto et al., 2016; Mart\u00ed-Solano et al., 2016; Wingler et al., 2019; Xu et al., 2019; Kenakin, 2019). It has been shown before that receptor conformations exist that are preferentially recognized by either arrestins or G proteins. What these different receptor conformations might look like is a hot topic of current research (Wingler et al., 2020; Suomivuori et al., 2020). The recent study of Stoeber et al., 2020 has shown that agonist-dependent recruitment of GRK2 to an opioid receptor exists. This leads to the question whether a functional bias at the level of arrestin recruitment (Carr et al., 2016) is affected by both receptor recruitment rates of GRKs and arrestins. Experimentally it has been difficult to distinguish between both events. Here, we set out to address agonist selectivity independently for all three receptor interaction events by comparing agonist-induced binding of Gq proteins, GRK2, as well as arrestin3 to muscarinic acetylcholine M3 receptors (M3R) as a model. These effector proteins and their recruitment were monitored by means of single-cell F\u00f6rster resonance energy transfer (FRET) imaging under conditions specifically optimized to minimize interference of upstream events (G protein activation in case of GRK2 and prephosphorylation in case of arrestin). By investigating the effect of seven different agonists on these effectors, we answered the following two questions: firstly, can we detect biased recruitment of effector proteins at the M3R between these seven agonists? Secondly, is a potential bias in arrestin3 recruitment caused by a bias in GRK2 recruitment or can both arrestin3 and GRK2 recruitment be biased differently in comparison to Gq binding and activation?\n\nOur results show that ligand-induced biased recruitment can indeed be detected at the M3R. Assessing bias as a change in sequence when ranking the agonists with respect to their efficacy to induce Gq, GRK2, or arrestin3 recruitment, we found a difference between arrestin3 recruitment and the other two effector proteins. In contrast, no such difference was found between GRK2 recruitment and G protein binding and activation, suggesting that very similar active receptor conformations are required for Gq activation and GRK2 recruitment.\n\n## Results\n\n### Assays measuring agonist bias at the M3R\n\nWe selected seven agonists with pharmacological relevance or structural similarity to a pharmacologically relevant agonist (Figure 1\u2014figure supplement 2): acetylcholine (ACh), arecoline (Are), methacholine (Metha), pilocarpine (Pilo), guvacoline (Guva), methyl-3-dimethylaminopropionate (Mda), and 5-methyl-furmethiodide (Fur). The ability of every agonist to enable Gq, GRK2, or arrestin3 binding to the M3R was investigated with single-cell FRET-based measurements in human embryonic kidney 293T (HEK293T) cells. As expected, receptor stimulation with 30 \u00b5M ACh resulted in a reversible increase in YFP fluorescence and a corresponding decrease in mTurq fluorescence, reflecting the FRET development due to Gq, GRK2, or arrestin3 binding to the M3R, respectively (Figure 1\u2014figure supplement 3). Thus, we were able to compare multiple agonists in the same cell under the same conditions.\n\n### Agonist efficacy is reflected in the amplitudes of M3R-Gq protein binding\n\nFor many receptors including M3R, it is well known that signal amplification at the level of G protein activation leads to a spare receptor phenomenon, which allows only indirect determination of agonist efficacy by means of comparing of concentration-response curves with those of ligand binding. Therefore, we determined agonist evoked binding of Gq to M3R by means of single-cell FRET recording as a direct measurement of agonist efficacy (Figure 1A and B). During laminar superfusion of cells, we sequentially switched between buffer and all seven agonists used in the study. Due to fast kinetics, we were able to wash out the respective agonists before we added the next. In order to get a robust assessment of agonist efficacy, we used high agonist concentrations for all agonists and kept them constant for comparison in the GRK2 and arrrestin3 recruitment assays. At the end of the protocol, we reapplied 30 \u00b5M ACh in order to test for the stability of the signal. Our results showed the highest recruitment of Gq for ACh, followed by Metha and Fur (\u223c60% of the ACh signal), and much weaker recruitment for Guva and Are (\u223c20%) followed by even lower values for Pilo and Mda (\u223c8%) (Figure 1B), leading to the following ranking in efficacy: ACh>Metha\u2248Fur>Are\u2248Guva>Pilo>Mda. We also performed bioluminescence resonance energy transfer (BRET)-based assays to study Gq activation by these agonists (Figure 1\u2014figure supplement 4), with the following similar ranking in potency: ACh>Metha\u2248Fur>Are>Guva>Pilo>Mda. In addition, radioligand displacement assays were performed (Figure 1\u2014figure supplement 5) in order to determine the rank order of agonist affinity: Pilo>ACh>Metha\u2248Fur>Are>Guva\u00bbMda. Mda failed to displace the radioligand at concentrations up to 100 mM, indicating a very low affinity for the orthosteric binding pocket of M3R or \u2013 despite its structural similarity to ACh \u2013 a noncompetitive binding mode.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig1-v2.jpg)\n\n**Figure 1.:** (B) G protein-M3R interaction was measured as described in Figure 1\u2014figure supplement 3 by means of single-cell F\u00f6rster resonance energy transfer (FRET) recording. The cells were stimulated with distinct concentrations of each agonist as indicated. The amplitudes were normalized to the ACh amplitude of every cell. An ordinary one-way ANOVA (****p<0.0001) with Tukey\u2019s multiple comparison test, and additionally for paired measurements a paired Student\u2019s t-test, was conducted. Only the significant differences (ANOVA: black, t-test: purple) in terms of biased recruitment to the M3R are shown. All data are plotted as mean values \u00b1 SD for each condition.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** This results in the opening of the intracellular effector-binding cavity and leads to the recruitment of intracellular effector proteins to the active receptor, like G proteins, G protein-coupled receptor kinases (GRKs), and arrestins. While activated G proteins transmit and modulate a multitude of signals, recruitment of GRKs leads to receptor phosphorylation, enabling and modulating the recruitment of arrestins to the receptor, which can then lead to receptor internalization and desensitization. Agonists can lead to different levels of effector protein recruitment, depicted here as arrows of different length.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Schematic illustration of single-cell F\u00f6rster resonance energy transfer (FRET) imaging and example measurements of Gq (A), GRK2 (B), and arrestin3 (C) interaction with M3R upon stimulation with 30 \u03bcM ACh.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Gq activation was measured with BRET imaging in HEK293T cells. The BRET ratio was normalized to the maximum response of ACh (50 \u03bcM) of every well. A concentration-response curve for Gq activation with GRK2 overexpression was plotted for ACh (n = 4\u201314), Are (n = 4\u20139), Guva (n = 4\u201314), Pilo (n = 7), Metha (n = 8), Fur (n = 8), and Mda (n = 4\u201310). All data are plotted as mean values \u00b1 SD for each condition.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) In a radioligand displacement assay, the competition between 0.2 nM [3H] 1,1-dimethyl-4-diphenylacetoxypiperidinium ([3H]4-DAMP) and increasing concentrations of agonist was measured. Atropine (1 \u03bcM) was used to detect unspecific binding. Results are expressed as % of control specific binding with n = 2 \u00b1 SD for each condition. The calculated log Ki values \u00b1 SD are shown in (B). (C) Relative agonist activity of five agonists for Gq activation. Data from (A), (B), and (Figure 1\u2014figure supplement 4) were used for the calculation. The \u0394log (\u03c4/Ki) values were calculated relative to ACh as reference agonist. \u03c4 was calculated according to the operational model by Black and Leff, 1997. The error was estimated with Gaussian error propagation.\n\n### G protein-independent GRK2 recruitment to the M3R\n\nOur aim to measure and compare the efficacy of the agonists also at the level of GRK2 recruitment to M3R was complicated by the fact that GRK2 is activated by G protein-induced recruitment to the plasma membrane. The rank order of the efficacy of the different agonists to recruit GRK2 to M3R, determined by single-cell FRET assays, was the same as determined for Gq recruitment (Figure 2\u2014figure supplement 1A and B in comparison with Figure 1A and B). However, due to possible interference with Gq in the recruitment of M3R, these data are difficult to interpret. Indeed, when Gq activation was completely abolished by pretreatment with FR900359, no recruitment of GRK2 to M3R was observed in cells transfected with Gq and fluorescently labeled M3R and GRK2 (Figure 2\u2014figure supplement 1C). Likewise, preincubation with PTX completely abolished agonist-evoked FRET between G\u03b2\u03b3 and GRK2 (Figure 2\u2014figure supplement 1D). Interestingly, without overexpression of G\u03b1q proteins, preincubation with PTX and FR900359 pretreatment did not lead to a full inhibition of agonist evoked FRET between G\u03b2\u03b3 and GRK2 (Figure 2\u2014figure supplement 1E), presumably due to bystander FRET upon G protein-independent translocation of GRK2 to M3R. Kinetic analysis of agonist-evoked FRET between G\u03b2\u03b3 and GRK2 with or without pretreatment with PTX and FR900359 showed fast one-phased decays for signals measured with pretreatment and slower two-phased decays for signals measured without pretreatment (Figure 2\u2014figure supplement 1F and G). In order to abolish the possible involvement of G\u03b2\u03b3 and G\u03b1q proteins in the recruitment process of GRK2 to M3R (Wolters et al., 2015) further, we aimed to bypass Gq-dependent translocation of GRK2 to the plasma membrane by introducing a CAAX-box at the C-terminus of GRK2-YFP to allow for G protein-independent plasma membrane localization of GRK2 (Inglese et al., 1992). In addition, we mutated D110 to alanine, which attenuates G\u03b1q binding to GRK2 (Wolters et al., 2015). Under conditions of complete Gq and Gi inhibition (see for control Figure 2\u2014figure supplement 1D and E), amplitudes of agonist-evoked FRET increases were reduced and offset kinetics after agonist withdrawal were substantially faster (compare Figure 2A and Figure 2\u2014figure supplement 1A). However, we were still able to measure agonist-specific interactions between (D110A)GRK2-CAAX and M3R (Figure 2A and B, Figure 2\u2014figure supplement 1H). Our measurements of the relative efficacy of the agonists to recruit this GRK2 construct without the influence of G proteins resulted in the following ranking: ACh>Metha\u2248Fur>Guva\u2248Are>Pilo (Figure 2B). Mda did not lead to detectable responses. Even though the relative responses induced by the weak partial agonists were substantially reduced compared to the G protein-dependent recruitment of GRK2 (Figure 2\u2014figure supplement 1A and B), the rank order of the agonists was essentially unchanged. We ensured that the color switch of the attached fluorophores had no effect on the relative agonist efficacies (Figure 2\u2014figure supplement 1I). Control experiments without overexpression of G\u03b1q, but in the context of non-mutated fluorescent GRK2, showed a similar efficacy of the partial agonists Pilo and Are for GRK2 binding to M3R compared to those measured under complete G protein inhibition with the G protein-insensitive GRK2 (Figure 2\u2014figure supplement 1J and K). These results demonstrate, as previously reported (Wolters et al., 2015), that the overexpression of Gq proteins leads to an enhanced affinity of GKR2 for the M3R.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) M3R-(D110A)GRK2-CAAX interaction without G\u03b1q overexpression was measured with a single-cell F\u00f6rster resonance energy transfer (FRET)-based assay, after cells were preincubated with 50 ng/mL of PTX overnight and additionally for 10 min before the start of the measurement, while continuously superfused with FR900359 at a concentration of 1 \u00b5M during the whole measurement. (C\u2013F) M3R-arrestin3 interaction was measured with a single-cell FRET-based assay. Each cell was stimulated for 30 \u2009s with saturating concentrations of each indicated agonist. (C) Stimulation with agonist (first stimulation), thereafter with ACh and after that with agonist again (second stimulation) shows that M3R-arrestin3 interaction increases with repeated stimulation by an agonist in the same cell. (D) Mean amplitude values of first and second stimulation were statistically analyzed with a paired t-test. (B, D, F) All amplitudes were normalized to the ACh amplitude of the same cell (norm. to max. ACh). One-way ANOVA (****p<0.0001) with Tukey\u2019s multiple comparison test, and additionally for paired measurements a paired Student\u2019s t-test, was conducted. Only the significant differences (ANOVA: black, t-test: purple) in terms of biased recruitment to the M3R are shown. Data are shown as mean \u00b1 SD, *p<0.05, **p<0.001, ***p<0.001, ****p<0.0001. The number of experiments is indicated in parentheses.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) M3R-GRK2 interaction was measured with a single-cell FRET-based assay. Each cell was stimulated for 30 \u2009s with saturating concentrations of each indicated agonist. All amplitudes were normalized to the ACh amplitude of the same cell (norm. to max. ACh). One-way ANOVA (****p<0.0001) with Tukey\u2019s multiple comparison test, and additionally for paired measurements a paired Student\u2019s t-test, was conducted. Only the significant differences (ANOVA: black, t-test: purple) in terms of biased recruitment to the M3R are shown. (C) M3R-YFP-GRK2-mTurq interaction was measured as described in (A). The cells were stimulated with each agonist as indicated (ACh: 30 \u00b5M; Are and Pilo: 50 \u00b5M). The cells were incubated 10 min before the measurement and superfused during the whole measurement with 1 \u2009\u00b5M FR900359. (D, E) Shown are the control measurements of the G protein inhibitor function. (D) G\u03b2/G\u03b3 GRK2 interaction induced by the activated M2R was measured in single cells. The cells were stimulated with 30 \u2009\u00b5M ACh for 30 s, where one condition was pretreated with 50 ng/mL PTX overnight (n = 6). (E) G\u03b2/G\u03b3 GRK2 interaction induced by the stimulated M3R was measured without G\u03b1q overexpression. In addition to the pretreatment of PTX as described in (B), 1 \u2009\u00b5M FR900359 was present for one condition 10 min before and during the whole measurement (n = 8\u20139). (F) The data of (E) were normalized to the maximum response of ACh in order to determine (G) the half-lives by fitting a one-phase exponential decay for ACh and a two-phase decay for the treatment together with the inhibitors (percent fast: 60.16 \u00b1 14.44) (H) Complete time series of the measurement shown in Figure 2A. (I) The amplitudes of FRET between M3R-YFP-GRK2-mTurq evoked by the indicated agonists were normalized to those obtained by 30 \u00b5M ACh and were compared to those measured between M3R-mTurq-GRK2-YFP. (G, I) The analysis was verified by an unpaired t-test. (J, K) The M3R-GRK2 interaction measurement was performed analog to (A), but without G\u03b1q overexpression. Data are shown as mean \u00b1 SD, *p<0.05, **p<0.001, ***p<0.001, ****p<0.0001.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) M3R-arrestin3 interaction was measured with a single-cell F\u00f6rster resonance energy transfer (FRET)-based assay in HEK293T cells. Each cell was stimulated repeatedly with ACh (30 \u00b5M) for 5 \u2009s. After an increase in M3R-arrestin3 interaction could no longer be observed, the cell was stimulated for 30 \u2009s and thereafter again for 5 \u2009s with ACh. The stimulations are numbered (1\u20139). (B) To analyze the increase, mean amplitude values of (A) of n = 6 were plotted and analyzed statistically by a one-way ANOVA (**p=0.0022) with Tukey\u2019s multiple comparison test. (C) M3R-arrestin3 interaction was measured with single-cell FRET-based measurements. Each cell was stimulated for 30 \u2009s with a saturating concentration of agonist (first stimulation), thereafter with ACh and after that with agonist again (second stimulation). The resulting amplitudes from the stimulation of the cell with Pilo and ACh were used as control and for normalization. (D) Comparison of mean amplitude values between first and second stimulation for each agonist was analyzed statistically with a paired t-test. (E) The amplitude of the first stimulation was subtracted from the amplitude of the second stimulation and normalized to the amplitude of the second stimulation, yielding the individual interaction increase. A one-way ANOVA (***p<0.001) with Tukey\u2019s multiple comparison test was conducted. (F) M3R-arrestin3 interaction was measured as described in (C) without overexpression of GRK2 (w/o GRK2). (G) M3R-arrestin3 interaction, induced by stimulation with ACh (30 \u2009\u00b5M) in cells overexpressing GRK2, without GRK2 and cells overexpressing the kinase-deficient mutant K220R (Kong et al., 1994; Wolters et al., 2015). Data are shown as mean \u00b1 SD, *p<0.05, **p<0.001, ***p<0.001, ****p<0.0001. The number of experiments is indicated in parentheses.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** M3R-arrestin3 interaction was measured as shown in Figure 1\u2014figure supplement 3C. Saturating concentrations of each agonist were measured sequentially in the same cell after prestimulation with ACh as shown in Figure 2E. The resulting normalized amplitudes for each agonist (Figure 2F) were compared with the arrestin3 recruitment of each agonist directly after ACh stimulation as described in Figure 2C and Figure 2\u2014figure supplement 2.\n\n### Agonist-induced arrestin3 recruitment to prestimulated M3R\n\nPrevious studies have shown that GRK2-mediated phosphorylation of the receptor is initially the rate-limiting step of arrestin binding and that \u03b22-adrenergic receptor-arrestin interaction and M3R-arrestin interaction accelerate with repeated stimulation of the same cell (Krasel et al., 2005; Wolters et al., 2015). Since GRK-mediated receptor phosphorylation is in most cases a prerequisite for agonist-evoked arrestin3 binding (Choi et al., 2018), it is difficult to selectively measure the efficacy of agonists to induce binding of arrestin3 to (phosphorylated) receptors. The dependency on agonist-induced phosphorylation for arrestin binding is exemplarily shown in Figure 2C and D as Metha-induced arrestin3 recruitment is significantly enhanced after a prepulse with the full agonist ACh.\n\nTo minimize the influence on arrestin3 recruitment by each agonist\u2019s potentially different ability to activate G proteins and subsequently GRK2, we analyzed the time dependency and GRK2 dependency of the arrestin3 recruitment (Figure 2\u2014figure supplement 2A\u2013G) and developed a prestimulation protocol. The amplitudes measured for prestimulated and not prestimulated M3R differed for all seven agonists except for ACh (Figure 2\u2014figure supplement 2D). This indicates that the increase in amplitude after prestimulation is specific for each agonist (Figure 2\u2014figure supplement 2E), presumably due to differences in their capability to induce phosphorylation of M3R (Butcher et al., 2011). The prestimulation protocol contained a first stimulation with saturating concentrations of ACh, followed by a brief washout, immediately followed by test pulses (Figure 2E). We verified the reliability of the protocol by comparing relative FRET amplitudes, evoked by the test compounds when applied in different order, with the amplitudes obtained directly after prestimulation with ACh (Figure 2\u2014figure supplement 3). By applying each of the seven agonists to the M3R subsequent to the prestimulation with ACh, we obtained results that show marked differences in the ability of the individual agonists to recruit arrestin3 to M3R (Figure 2E and F). This led to the following efficacy ranking of the agonists: ACh>Metha\u2248Fur>Pilo\u2248Guva>Are>Mda. It is important to note that the rank order for the efficacy to recruit arrestin3 to M3R differs in comparison to the one obtained for Gq recruitment and activation.\n\n### Agonist-induced M3R-arrestin3 recruitment can be different from M3R-Gq and M3R-GRK2 recruitment\n\nIn order to compare the relative efficacies (normalized to ACh) of all agonists tested for binding of the three different effector proteins to M3R as determined from experiments shown in Figures 1B, 2B and F, we used 2D plots and compared all three modalities pairwise, as depicted in Figure 3A\u2013C. As shown in Figure 3A, the agonist efficacies to recruit Gq to M3R in comparison to D110A-GRK-CAAX were very similar, showing nearly equal efficacy for each agonist. In contrast, both 2D plots comparing agonist efficacies for arrestin3 binding to M3R with those for either Gq or D110A-GRK2-CAAX showed higher relative agonist efficacies for arrestin binding. Most importantly, the rank order of agonist efficacies was different for arrestin3 binding as Pilo was more efficient than Are and similarly efficient as Guva to induce arrestin3 recruitment, whereas for both GRK2 recruitment and Gq binding to M3R, Pilo was less efficient than Are and Guva. We further determined efficacies of the agonists with respect to G protein activation (Figure 1\u2014figure supplement 4), GRK2 recruitment with Gq expression and without G protein inhibitors (Figure 3\u2014figure supplement 1B, Figure 3\u2014figure supplement 2) as well as arrestin3 recruitment (Figure 3\u2014figure supplement 1A, Figure 3\u2014figure supplement 2). Using the determined binding affinities for the agonists (Figure 1\u2014figure supplement 5), the obtained curves were fitted according to the operational model of Black and Leff, 1997, yielding their respective \u03c4 values. The $\u0394\u2062l\u2062o\u2062g\u2062(\\frac{\\tau}{K_{i}})$ values of the selected agonists relative to ACh in all three assays were then plotted in a radar plot (Figure 3\u2014figure supplement 2). The results confirmed that agonist efficacies for GRK2 recruitment and Gq activation followed a similar pattern with the identical rank order of agonists, whereas in the case of arrestin3 binding, at least Pilo exhibited a reverted rank order relative to Are and Guva.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig3-v2.jpg)\n\n**Figure 3.:** Recruitment of Gq (data from Figure 1) was plotted in relation to (A) recruitment of (D110A)GRK2-CAAX and (B) recruitment of arrestin3 (data from Figure 2) for six agonists normalized to the maximum amplitude of ACh at a concentration of 30 \u2009\u00b5M. (C) The normalized M3R-arrestin3 recruitment was plotted in relation to the M3R-(D110A)GRK2-CAAX recruitment.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B) The interaction with M3R was measured as shown in Figure 1\u2014figure supplement 3. After a first stimulation with ACh, concentrations of Fur and Mda were measured in the same cell and each amplitude was normalized to the maximum response of ACh. Data are shown as mean \u00b1 SD. The number of experiments is indicated in parentheses.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58442/elife-58442-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) After a first stimulation with ACh, increasing concentrations of agonist were measured in the same cell and each amplitude was normalized to the maximum response of ACh, n = 5\u20138. (B) Increasing concentrations of agonist were measured in the same cell and each amplitude was normalized to ACh, n = 5\u20137. All data are shown as mean \u00b1 SD. (C) Relative agonist activity of five agonists for Gq activation, M3R-arrestin3, and M3R-GRK2 recruitment. Data from (A), (B), and Figure 1\u2014figure supplements 4 and 5 were used for the calculation. The \u0394log (\u03c4/Ki) values relative to ACh as reference agonist are plotted in a radar plot. \u03c4 was calculated according to the operational model by Black and Leff, 1997.\n\n## Discussion\n\nThe notion that different agonists can stabilize different conformational states of the receptor is well accepted within the field of GPCR pharmacology, and numerous studies indicate that selective activation of signaling pathways might at least in part be induced by these different conformations (Wingler et al., 2019). So far, a direct comparison of the bias of agonists at the level of binding of G proteins, GRKs, and arrestins to receptors has been lacking. Instead of analyzing downstream signaling, we directly investigated the recruitment of Gq, GRK2, and arrestin3 to the M3R using FRET-based approaches. The specific aim and, at the same time, difficulty was to analyze these events, which are ultimately interconnected, in a mutually independent way in order to differentiate between their conformational requirements. Specifically, there are two main dependencies that need special attention: (1) recruitment of GRK2 to the plasma membrane is enhanced by G\u03b1q and G\u03b2\u03b3 subunits upon G protein activation; and (2) arrestin binding to receptors requires both GRK-mediated phosphorylation of receptors and receptor activation. Our experimental design accounted for both processes.\n\n(1) We measured GRK2 recruitment under conditions of complete Gi/o and Gq inhibition by preincubation with PTX and FR900359 (Figure 2A and B). To circumvent G protein-mediated membrane recruitment of GRK2, we included a CAAX-motif at the C-terminus of the fluorophore to induce isoprenylation (Inglese et al., 1992), and in addition a D110A mutation to attenuate interaction with G\u03b1q (Wolters et al., 2015). However, we had to omit coexpression of Gq in FR900359-treated cells, otherwise the interaction between M3R and GRK2 was completely blocked (Figure 2\u2014figure supplement 1C), presumably due to occupation of receptors by inactivated G proteins, and thereby blockade of the interaction site for GRK2 binding. Strikingly, the rank order of agonist efficacies to recruit GRK2 was the same, independent of whether G proteins were inhibited or not. However, the overall FRET amplitudes and also the agonist responses normalized to the one of ACh were considerably larger and their overall kinetics considerably slower in the absence of G protein inhibition, demonstrating the contribution of G proteins to translocating GRK2 to the plasma membrane. Importantly, the rank order of the efficacy of Metha, Are, and Pilo to recruit GRK2 to the M3R (Figure 2A and B, Figure 2\u2014figure supplement 1A and B) is the same as observed for M3R phosphorylation determined by Butcher et al. (Figure 6 in Butcher et al., 2011), indicating that GRK2 recruitment to the M3R correlates with functional phosphorylation.\n\n(2) To avoid an influence of the different efficacies of agonists when recruiting GRK2 and thus the receptor being phosphorylated, we established a specific single-cell FRET protocol. We confirmed arrestin recruitment to the M3R to be dependent on GRK2-mediated phosphorylation (Figure 2\u2014figure supplement 2), as in the absence of coexpression of GRK2 or upon expression of the dominant negative GRK2(K220R), a decrease of the arrestin recruitment was detected as expected based on previous observations at the \u03b22-adrenergic receptor (Krasel et al., 2005). All cells were preexposed to the full agonist ACh for a defined period of time, in order to allow for phosphorylation of receptors before ACh was withdrawn, followed by the measurement of arrestin recruitment induced by the seven different agonists (Figure 2E and F) to the thus prephosphorylated receptors. As the dephosphorylation of receptors typically occurs on the order of at least several minutes, our experimental design allowed the comparison of agonist efficacies to prephosphorylated receptors, minimizing any influence of agonist efficacy towards G protein activation and GRK2 binding. Our results show that unlike for G protein and GRK2 recruitment, Pilo induces significantly more arrestin3 recruitment compared to Are. These results are in line with a potential bias of Pilo towards arrestin that was reported by Pronin et al., 2017. However, here we were able to observe that the bias towards arrestin recruitment was not introduced by a bias towards GRK2 recruitment. In contrast, no detectable bias was observed between Gq recruitment and GRK2 recruitment for any of these agonists. Our findings disentangle bias between Gq, GRK2, and arrestin3 recruitment to the M3R. Arrestin3 recruitment was tested in an overexpression system for all agonists under exactly the same conditions regarding prephosphorylation and kinase expression. The influence of endogenous GRK and arrestin isoforms is therefore negligible. However, we cannot rule out that the overall agonist-dependent recruitment might as well depend on the expression pattern of GRKs. Since M3R-mediated signaling is regulated by distinct mechanisms (Luo et al., 2008), our results represent the first step on the way to completely disentangle bias signaling. Measurement of agonist-induced G protein recruitment to receptors by means of FRET is a much more direct way to study the efficacy of agonists to activate receptors compared to the measurement of G protein activation or downstream signaling due to its lack of signal amplification, which typically leads to the phenomenon of signal saturation at submaximal levels of receptor activation. However, our determination of the efficacy of the different agonists to activate G proteins by calculating $\u0394\u2062l\u2062o\u2062g\u2062(\\frac{\\tau}{K_{i}})$ resulted in the same rank order for the agonists, confirming the applicability of receptor G protein interaction assay. We determined also saturating agonist concentration for our GRK2 and arrestin3 recruitment measurements. These concentrations were used for our measurement of agonist efficacies, and, to ensure comparable conditions, to measure G protein binding as well. Having taken very serious care of measuring all three binding events completely independent of each other, a comparison of the agonist efficacies for all three events was possible. Metha and Fur recruited arrestin3, GRK2, and Gq to a similar extent compared to the full agonist ACh, whereas the partial agonists Are, Guva, and Pilo differed substantially in their relative efficacy to recruit arrestin3 versus GRK2 and Gq (Figures 1B, 2B and F). The strongest deviation in the rank order was observed for Pilo, which from the set of partial agonists was the poorest GRK2 and Gq recruiter, but the best arrestin3 recruiter, indicating a relative bias towards arrestin3 binding. Mda did not show a detectable effect in the radioligand replacement assay and in the recruitment of (D110A)GRK2-CAAX. Furthermore, it showed only very low levels of recruitment with respect to Gq, low level of recruitment with respect to arrestin3, and a medium level of Gq activation and GRK2 recruitment in the presence of intact Gq. Therefore, it is difficult to ascertain its precise mechanism of action. Even though we did not directly measure GRK2-mediated phosphorylation, we found that the slow component of arrestin3 recruitment upon first stimulation with agonist was dependent on the expression of catalytically active GRK2, similar to what has been described for \u03b22-adrenergic receptors (Krasel et al., 2005).\n\nHowever, this slow component, even though it is smaller in amplitude, was also visible during subsequent applications of agonist. This could either indicate incomplete phosphorylation at the time points of the repetitive agonist applications or could reflect phosphorylation-independent effects, such as the interaction of arrestin3 with the membrane and a thus prolonged residence time of arrestin3 at the membrane after the first recruitment to the receptor (Lally et al., 2017). Our finding that agonist bias with respect to the ability to activate G proteins versus the ability to induce arrestin recruitment to the receptor can be detected correlates nicely with recent advancements in the determinnation of conformational differences of the angiotensin-II receptor type 1 when bound to Gq or arrestin (Wingler et al., 2020; Suomivuori et al., 2020). Furthermore, our results demonstrating the existence of functional agonist-dependent patterns of differential recruitment of arrestin3 and GRK2 to the M3R are supported by a recent study demonstrating agonist-dependent patterns of recruitment of G proteins, GRK2, and a conformationally selective nanobody directed against the intracellular cavity of activated opioid receptors (Stoeber et al., 2020). The finding that different receptor ligands can differentially affect binding of G proteins, arrestins, and GRKs opens up the potential for future drug development to specifically direct signaling in one or the other direction. In summary, our findings highlight the existence of ligand-induced bias at the M3R and the importance of understanding GRK2 recruitment and its role for the subsequent arrestin3 recruitment in order to fully differentiate between a bias in GRK2 recruitment and a bias in arrestin3 recruitment. While developed for the M3R, the methodology is generally applicable to all GPCRs, G proteins, GRKs, and arrestins, and therefore offers new possibilities to disentangle biased effector pathway engagement at the level of effector protein recruitment and activation.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Acetylcholine iodide</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS number: 2260-50-6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Arecoline hydrobromide</td>\n      <td>TCI Chemicals</td>\n      <td>CAS number: 300-08-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methacholine chloride</td>\n      <td>TCI Chemicals</td>\n      <td>CAS number: 62-51-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Guvacoline hydrobromide</td>\n      <td>TRC Canada</td>\n      <td>CAS number: 17210-51-4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methyl-3-(dimethylamino) propionate</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS number: 3853-06-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pilocarpine hydrochloride</td>\n      <td>TCI Chemicals</td>\n      <td>CAS number: 54-71-7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trimethyl-(5-methyl-furan-2-ylmethyl)-ammonium iodide</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS number: 1197-60-0</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Reagents\n\nCoelenterazine h was obtained from NanoLight, Pinetop, AZ. Dulbecco\u2019s Modified Eagle\u2019s Medium (DMEM), PBS, penicillin/streptomycin, and Trypsin-EDTA were from Capricorn Scientific Gmbh, Ebsdorfergrund, Germany. Poly-L-lysine hydrobromide, FCS, L-glutamine, PEI, acetlycholine iodide, methyl-3-(dimethylamino)propionate (Mda), and trimethyl-(5-methyl-furan-2-ylmethyl)-ammonium iodide (Fur) were obtained from Sigma-Aldrich, Merck KGaA, Darmstadt, Germany. Arecoline hydrobromide, pilocarpine hydrochloride, and methacholine chloride were from TCI Chemicals, Eschborn, Germany, and guvacoline hydrobromide from TRC Canada, Toronto, Canada. Pertussis toxin was purchased from EMD Millipore Corp., Merck KGaA. FR900359 was isolated from Ardisia crenata leaves as previously described in Schrage et al., 2015.\n\n### Plasmids\n\ncDNAs for G\u03b1q, G\u03b1q-yellow fluorescent protein (YFP), where YFP was inserted between residues 124 and 125 of G\u03b1q (Hughes et al., 2001), G\u03b21, G\u03b32 (B\u00fcnemann et al., 2003), G\u03b1o, mTurquoise2-G\u03b32, where mTurquoise2 was fused to the N-terminus of G\u03b32 (Jelinek et al., 2021), M3R-YFP, where YFP was fused C-terminally to M3R (Hoffmann et al., 2012), GRK2 (Winstel et al., 1996), GRK2-mTurquoise, and GRK2-YFP, where mTurquoise or YFP were fused to the GRK2 C-terminus (Wolters et al., 2015), and arrestin3-mTurquoise, where mTurquoise was fused to the C-terminus of arrestin3 (Krasel et al., 2005; Miess et al., 2018; Roseberry et al., 2001), were described previously. M3R-mTurquoise was cloned by an exchange of mCit to mTurquoise of M3R-mCit (Jelinek et al., 2021), where mTurquoise was fused at the C-terminus. The cDNA for the M3R was obtained from the Missouri S&T cDNA Resource Center and pcDNA3 from Invitrogen. cDNA containing pNluc was kindly provided by Dr. N. Lambert (Augusta Medical College, GA), and pNluc-G\u03b32, where Nluc was fused to the N-Terminus of GG\u03b32, was kindly provided by Dr. C. Krasel (Philipps-Universit\u00e4t Marburg, Germany). GRK2-YFP-CAAX was cloned by amplifying the cDNA for YFP or mTurquoise by PCR with the forward primer AAA AAA TCT AGA GTG AGC AAG GGC GAG G and the reverse primerAAAAAAGCGGCCGCCTAggagagcacacacttgcagctcatgcagcccgggccactctcatcaggagggttCTTGTACAGCTCGTCCATGC. The reverse primer attaches the last 18 amino acids of H-Ras to the C-terminus of the fluorescent protein. The resulting PCR product was digested with XbaI and NotI and cloned into pcGRK2-YFP (Wolters et al., 2015) that had been digested with the same enzymes, replacing the YFP with the modified fluorescent protein. (D110A)-GRK2-YFP-CAAX was generated from GRK2-YFP-CAAX by mutagenesis analogously to (D110)-GRK2-YFP in Wolters et al., 2015 using the primer: CCG GGA GAT CTT CGC CTC ATA CAT CAT G.\n\n### Cell culture and transfection\n\nFor experiments HEK tsA 201 cell line was used, which was a kind gift from the Lohse laboratory, University of W\u00fcrzburg. Therefore, all experiments were carried out in HEK293T cells. They were cultured in DMEM with high glucose and supplemented with 10% FCS, 2 \u2009mM L-glutamine, 100 \u2009U/mL penicillin, and 0.1 \u2009mg/mL streptomycin. Cells were transiently transfected 24 \u2009hr after seeding (6 \u2009cm dish) with linear polyethylenimine (PEI) 25 \u2009kDa as transfecting agent. For M3R-G protein interaction experiments, cells were transfected with cDNAs as follows: 1.5 \u2009\u00b5g M3R -YFP, 2.4 \u2009\u00b5g G\u03b1q, 0.75 \u2009\u00b5g G\u03b21, and 0.3 \u2009\u00b5g mTurquoise2-G\u03b32. For M3R GRK2 interaction experiments, cells were transfected with the following cDNAs: 1.5 \u2009\u00b5g M3R-YFP, 2.4 \u2009\u00b5g G\u03b1q, 0.75 \u2009\u00b5g G\u03b21, 0.3 \u2009\u00b5g G\u03b32, and 0.75 \u2009\u00b5g GRK2-mTurquoise. For M3R (D110A)-GRK2-YFP-CAAX interaction experiments, the cells were transfected with 1.5 \u2009\u00b5g M3R-mTurquoise, 2.4 \u2009\u00b5g pcDNA3, 0.75 \u2009\u00b5g G\u03b21, 0.3 \u2009\u00b5g G\u03b32, and 0.75 \u2009\u00b5g (D110A)-GRK2-YFP-CAAX. For M3R GRK2 interaction experiments without G\u03b1q overexpression, the cells were transfected with 1.5 \u2009\u00b5g M3R-mTurquoise, 2.4 \u2009\u00b5g pcDNA3, 0.75 \u2009\u00b5g G\u03b21, 0.3 \u2009\u00b5g G\u03b32, and 0.75 \u2009\u00b5g GRK2-YFP. For M3R-arrestin interaction experiments, cells were transfected with the following amounts of cDNAs: 1.5 \u2009\u00b5g M3R-YFP, 0.75 \u2009\u00b5g GRK2, and 1.5 \u2009\u00b5g arrestin3-mTurquoise. For G\u03b21/G\u03b32 GRK2 interaction experiments, the cells were transfected with: 1.5 \u2009\u00b5g M3R, 2.4 \u2009\u00b5g pcDNA3, 0.75 \u2009\u00b5g G\u03b21, 0.3 \u2009\u00b5g mTurquoise2-G\u03b32, and 0.75 \u2009\u00b5g GRK2-YFP and at the M2R with 1.5 \u2009\u00b5g M2R 2.4 \u2009\u00b5g G\u03b1o, 0.75 \u2009\u00b5g G\u03b21, 0.3 \u2009\u00b5g mTurquoise2-G\u03b32, and 0.75 \u2009\u00b5g GRK2-YFP. For BRET-based G\u03b1q activation experiments, cells were transfected with cDNAs as follows: 1.5 \u2009\u00b5g M3R, 2.4 \u2009\u00b5g G\u03b1q-YFP, 0.75 \u2009\u00b5g G\u03b21, 0.3 \u2009\u00b5g pNuc-G\u03b32, and 0.75 \u2009\u00b5g GRK2. The mixing ratio of PEI to DNA was 3:1. Per 1 \u2009\u00b5g DNA, 50 \u2009\u00b5L DMEM without FCS were added to the DNA and PEI solutions, respectively. Both solutions were mixed, added together and incubated, protected against light, at 20\u2009\u00b0C for 30 min. The mix was added to the cells and incubated at 37\u00b0C in a humidified atmosphere of 95% air and 5% CO2. For FRET-based experiments, cells were seeded onto 6-well plates with 25 \u2009mm coverslips coated with poly-L-lysine after 24 \u2009hr. For BRET-based experiments, cells were counted after 24 \u2009hr and 16,000 cells/well were seeded in 96-well plates (Greiner 96 Flat White) coated with poly-L-lysine. After 48 \u2009hr of transfection, measurements were performed at room temperature.\n\n### Single-cell FRET-based measurements\n\nUnless indicated otherwise, FRET-based measurements on single cells were performed as described in Milde et al., 2013. Transiently transfected cells were subjected to single-cell time-resolved FRET imaging with constant superfusion of either buffer (137 \u2009mM NaCl, 5.4 \u2009mM KCl, 2 \u2009mM CaCl2, 1 \u2009mM MgCl2, 10 \u2009mM HEPES, pH 7.3) or buffer-containing agonist. Cells were measured with an inverted fluorescence microscope (Eclipse Ti; Nikon, D\u00fcsseldorf, Germany). Light-emitting diodes (LED) at 425 nm and 500 nm were used for excitation. The intensity of both LEDs of the excitation system (pE-2; CoolLED, Andover, UK) was set to 2%. Fluorescence intensity was measured using the imaging software NIS-Elements advanced research (Nikon Corporation) and recorded at 2 \u2009Hz. The FRET ratio was calculated as the fluorescence intensity ratio of YFP and mTurquoise emission after mTurquoise excitation at 425 \u2009nm. Stimulation with agonist led to an increase in fluorescence intensity ratio, reflecting the interaction of the M3R with arrestin3 or GRK2. The fluorescence data were corrected for background fluorescence, bleed-through, and false excitation, and then plotted over time. The presented data were baseline-corrected to account for photobleaching. Time intervals of every measurement are indicated in the corresponding figure legend. For averaging the single FRET-based measurements, each measurement was normalized to the induced individual maximum response of saturating concentrations of ACh (30 \u2009\u00b5M concentration) if not indicated otherwise. Amplitudes were determined by calculating the difference between the mean of FRET ratio values 5 s before stimulation with the agonist and 5 s before withdrawal of the agonist. For FRET-based measurements analyzing the increase of receptor-arrestin3 interaction upon repeated stimulation by the same agonist, each cell was stimulated with agonist for 30 \u2009s, followed by a stimulation with ACh to make sure that the maximum of the effect was reached. Afterward, another stimulation of 30 \u2009s with agonist followed, termed the second stimulation. Pilo and ACh were measured as additional controls in every cell, and the amplitude of the stimulation with ACh was used for normalization. The normalized M3R -arrestin3 interaction level of each agonist was compared between first and second stimulation. For FRET-based experiments using pertussis toxin for G\u03b1i/o inhibition, the cells were pretreated overnight with a resulting concentration of 50 ng/mL PTX. For inhibition of G\u03b1q using FR900359, the cells were preincubated 10 min before the start of the measurement and superfused during the whole measurement as buffer and agonist solutions contained 1 \u2009\u00b5M FR900359.\n\n### BRET-based measurement\n\nBioluminescence resonance energy transfer (BRET)-based measurements were conducted with the luciferase reporter Nluc (Hall et al., 2012). Transiently transfected adherent cells were measured with a Spark 20M Multimode Microplate Reader from Tecan. Fluorescence and luminescence intensities were obtained using the SparkControl application (Tecan). Cells were carefully washed with buffer (as described in single-cell FRET-based measurements). Afterward, coelenterazine h in buffer was added to the cells. Every well contained a volume of 80 \u2009\u00b5L and a final concentration of 3.07 \u2009\u00b5M coelenterazine h. The BRET ratio was calculated as the quotient of the YFP signal (light emitted between 520 \u2009nm and 700 \u2009nm) and the nanoLuc signal (light emitted between 415 \u2009nm and 485 \u2009nm). After 10 \u2009min incubation with coelenterazine h, measurement of the baseline BRET ratio took place for 10 cycles (baseline phase). One cycle had a duration of about 44 \u2009s. After 10 cycles, this led to a total of 6.5 \u2009min of baseline measurement. The measurement was paused and 20 \u2009\u00b5L buffer (negative control) or agonist was added to the cells. The development of BRET was measured for 10 cycles (agonist phase) and then paused again for the addition of 20 \u2009\u00b5L of a solution containing ACh in buffer. The final concentration of ACh in each well was at least 50 \u2009\u00b5M, aimed at creating saturating conditions and measuring the maximum response obtainable in each individual well. Afterward, 10 more cycles were measured (saturation phase). Every phase was fitted by a line fit, and the change in BRET signal was calculated as the distance of the last time point of the previous phase and the first point of its following phase. Hence, the agonist-induced change in BRET signal was calculated as the distance between the baseline phase and the agonist phase. The additional change induced by saturating concentrations of ACh was calculated as the distance between the agonist phase and the saturation phase. The maximum change in BRET signal was then calculated as the sum of the agonist-induced change and the additional change upon application of saturating concentrations of ACh. The change in BRET signal was normalized to the maximum change in BRET signal for every well.\n\n### Radioligand displacement assay\n\nThe human M3R antagonist radioligand receptor binding assay was performed by Eurofins Cerep, Celle-Levescault, France (item 95). Competition between [3H]4-DAMP (0.2 \u2009nM) and increasing concentrations of each compound for M3R in CHO whole cells was measured after incubation for 60 min at room temperature. Nonspecific binding was determined in the presence of 1 \u2009\u00b5M atropine, and 4-DAMP was used as a reference compound. Radioactivity was quantified by scintillation counting. Results are expressed as percent of control specific binding, that is, (specific binding/control-specific binding) \u00d7 100 obtained in the presence of the test compound.\n\n### Statistics and data analysis\n\nThe radioligand displacement measurements performed by Eurofins are presented as mean \u00b1 SD of n experiments with two independent experiments. All other measurements are presented as mean \u00b1 SD of n experiments with at least three independent transfections. For statistical analysis, a paired Student\u2019s t-test as well as a one-way ANOVA with Tukey\u2019s multiple comparison test were conducted using GraphPad Prism 6.01. EC50 values were obtained by using GraphPad Prism\u2019s nonlinear regression curve fit for the concentration-response curves, fitting the Hill equation with four parameters, variable slope, and by setting the bottom parameter to zero. For the radioligand displacement assay, IC50 values were obtained from the inhibition curves and Ki values were calculated using the Cheng and Prusoff method (Cheng, 2001).\n\nFor the evaluation of the offset kinetics, each cell was normalized to the maximum response of agonist, and a one-phase exponential decay for the treatment with ACh and a two-phase decay for the treatment together with the inhibitors were fitted using GraphPad Prism 8.3.0. The following equation was used for fitting the one-phase decay:\n\n$Y=(Y\u20620-P\u2062l\u2062a\u2062t\u2062e\u2062a\u2062u)\u22c5e^{(-K\u22c5x)}+P\u2062l\u2062a\u2062t\u2062e\u2062a\u2062u$.\n\nThe following equation was used for fitting the two-phase decay:\n\n$$\nSpanFast=(Y0\u2212Plateau)\u22c5%Fast\u22c5.01\n$$\n\n\n\n$$\nSpanSlow=(Y0\u2212Plateau)\u22c5(100\u2212%tFast)\u22c5.01\n$$\n\n\n\n$$\nY=Plateau+SpanFast\u22c5e^{(\u2212KFast\u2217x)}+SpanSlow\u22c5e^{(\u2212KSlow\u22c5x)}\n$$\n\nwhere Y0 is the y value when x is zero and Plateau is the y value at infinite times. For both conditions, the Y0 was constrained to 1 and the Plateau to 0.\n\nThe concentration-response data for Gq activation, arrestin3 recruitment, and GRK2 recruitment to the M3R were analyzed using the operational model of agonism by Black and Leff, 1997. The following equation was used for fitting and calculation of \u03c4:\n\n$Y=\\frac{[A]^{n}\u22c5\\tau^{n}\u22c5E_{m\u2062a\u2062x}}{[A]^{n}\u22c5\\tau^{n}+([A]+K_{i})^{n}}$.\n\nwhere $[A]$ is the molar concentration of agonist, $E_{m\u2062a\u2062x}$ is the theoretical maximum response of the system, $K_{i}$ is the equilibrium dissociation constant of the agonist-receptor complex, $n$ represents a slope factor, and \u03c4 is the operational factor of efficacy. The following equation was implemented in GraphPad Prism:\n\n$$\nY=\\frac{(10^{x})^{n}\u22c5\\tau^{n}\u22c5E_{m\u2062a\u2062x}}{(10^{x})^{n}\u22c5\\tau^{n}+(10^{x}+K_{i})^{n}}\n$$\n\nwhere $x$ is the log of the molar concentration of agonist [A]. Each $K_{i}$ value was set individually to the $K_{i}$ value determined by the competition binding experiment for each agonist. Because the response of GRK2 and arrestin3 recruitment for each agonist was normalized to the maximum response of ACh, $E_{m\u2062a\u2062x}$ was set to 1. For Gq activation, where each agonist concentration was normalized to the maximum response of ACh in the same well, $E_{m\u2062a\u2062x}$ was set to the maximum response of ACh, to 98.63. One $n$ value was determined for all agonists, and $n$ and \u03c4 were constrained to be greater than 0. The fitted value of \u03c4 was used to calculate $l\u2062o\u2062g\u2062(\\frac{\\tau}{K_{i}})$ for each agonist. ACh was used as a reference compound that all other agonists were scaled to, thus allowing the calculation of $\u0394\u2062l\u2062o\u2062g\u2062(\\frac{\\tau}{K_{i}})$.\n",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "16090de2-af17-4dfe-ac0b-9d9b7ae7e388",
+      "submission_id": "e8b10bad-b21a-4706-982b-3da54854aa11",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- William I Weis, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58442.sa0](https://doi.org/10.7554/eLife.58442.sa0)\n\nThis paper investigates the molecular mechanism of ligand bias in G protein-coupled receptors, specifically the M3 muscarinic receptor, which is the property that different receptor agonists favor activation of G protein signaling vs. arrestin-mediated signaling. The interaction with arrestin is promoted by receptor phosphorylation by G protein-coupled receptor kinases (GRK), and GRK recruitment is expected to influence arrestin-recruiting activity of a particular ligand. However, the possibility of a distinct agonist-dependent receptor conformation on GRK association has not been investigated. This study demonstrates that the G protein Gq and GRK2 appear to interact with a similar M3 receptor conformation, whereas arrestin3 interacts with a distinct conformation. This represents a significant advance in understanding the mechanism of ligand bias in G protein-coupled receptors.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- William I Weis, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58442.sa1](https://doi.org/10.7554/eLife.58442.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Disentangling bias between Gq activation, GRK2 recruitment, and arrestin3 recruitment at the M3R\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis paper uses fluorescent probes attached to different the M3 muscarinic receptor (M3R) interacting proteins Gq, arrestin and GRK2 in cellular BRET assays to examine bias among different M3R ligands. Bias is typically discussed in terms of preferential activation of the partner G protein vs. arrestin. GRK recruitment/activity is important for arrestin binding and is expected to influence arrestin-recruiting activity of a particular ligand. However, the possibility of a distinct agonist-dependent receptor conformation on GRK association has not been investigated. This study attempts to answer this question.\n\nEssential revisions:\n\nWhile the work addresses a very important problem and is technically excellent, all of the reviewers agree that the data do not decisively establish that the receptor adopts a conformation distinct from that which binds arrestin or G protein. As you will see in points 1-3 below, the major concern is that the experiments have not completely disentangled GRK and G protein interactions. If you are able to obtain data that convincingly shows a GRK interaction without the influence of G proteins (which would require mutants or some other way of getting rid of/maximally activating G proteins), then the work would provide new and important information regarding bias between GRK- and arrestin-preferring conformations. The reviewers recognize that this may be very hard to do, but there are some suggestions along these lines as outlined below.\n\n1. The main difficulty encountered by the authors relates to the fact, as the same group showed convincingly in Wolters et al., 2015, that agonist-dependent FRET between active M3 receptors and GRK2 depends almost entirely on the interactions of GRK2 with Gq\u03b1 and betagamma subunits, which translocate GRK2 to the plasma membrane. The authors make the argument that under the conditions of their experiments Gq is maximally activated by all of the agonists they used, therefore any differences in GRK2 recruitment efficacy must be due to differences in the direct interaction between GRK2 and activated receptors. Setting aside possible differences in G protein activation due to the presence of inserted fluorescent tags and the different preparations this is a reasonable argument. However, there are a number of alternative approaches that could be used to validate the findings. Adding a membrane anchor to GRK2, overexpressing G betagamma subunits alone, blocking Gq activation with small molecules or gene deletion, maximally activating Gq with GTPgammaS, or a combination of these approaches, would greatly increase confidence that the result is fundamentally correct. Since the authors observe essentially no bias between Gq activation and GRK2 recruitment with the ligands they tested (Figure 7C), this could be because (as the authors conclude) the receptor conformations that activate Gq are the same as those that recruit GRK2, or alternatively that the GRK2 signals they measure still reflect primarily the efficiency of Gq activation. This is indeed a very important question because of the possibility that arrestin bias is actually a reflection of GRK bias, therefore the equivalency of G protein activation and GRK recruitment (the main novel conclusion of the paper) deserves very stringent testing.\n\n2. GRK2 also binds to activated Galphaq subunits, which may have an effect on the kinetics of G protein activation and/or deactivation (along with the Gbg binding). This seems to be the case because the presence of overexpressed GRK2 left-shifts the G protein activation dose response curves in Figure 3.\n\n3. Comparison of the data from Figure 3A with Figure 7B, which is used by the authors to argue that they don't need to worry about G protein-dependent effects on GRK2 recruitment seems invalid because GRKs likely have less affinity for phosphorylated receptors (Pulvermuller et al. 1993), as is the case in 7B, and they would compete poorly with arretin-bound GPCRs (endogenous or not). Regardless, also not sure if it is valid to say that there should be no coupling between G protein activation efficacy versus GRK recruitment because their EC50 curves are not similar. The affinity is what it is, and could still be dependent the amount of G protein subunits liberated. Issues like this is what makes interpreting this data very complicated.\n\n4. How do the expression levels of tagged proteins compare to the endogenous levels? Do the M3R-YFP receptors used in the GRK2 experiments express at the same level as the unlabeled M3R receptors used in the G protein activation experiments? Activating the Gq BRET constructs with M3R-YFP might also be useful to address this point. Can the authors comment on how GRK2 overexpression increases the potency of Gq activation?\n\n5. The authors have not tested or understood how the endogenous GRK and arrestin isoforms might be adding to or competing with the tagged proteins, raising the possibility that bias is instead for a specific GRK or arrestin 2 versus arrestin 3. The activated M3R is phosphorylated by several GRKs other than GRK2, such as GRK3 and GRK6 (J Luo et al. M3 muscarinic acetylcholine receptor-mediated signaling is regulated by distinct mechanisms. Mol. Pharmacol. 2008). This latter work was also carried out with HEK293 cells. The Luo et al. paper needs to be cited, and the results of this paper need to be discussed in the context of the new data. How does the Luo et al. study affect the conclusions here?\n\n6. Is there anything known that different muscarinic agonists recruit different GRKs to the receptor, leading to different phosphorylation patterns? This could explain the observed discrepancies in rank order of agonist potencies (GRK2 vs. arrestin3 recruitment). No attempt is made to verify that the M3R is getting phosphorylated at GRK2 specific sites.\n\n7. The potential implications of this study for drug development efforts should be discussed in more detail.\n\n8. The times that people normally cite for full GRK phosphorylation of GPCRs is on the order of minutes unless one is talking about rhodopsin. The full activation of the \"GRK\" interaction shown after application of agonist suggests that this is really a GRK-G protein interaction, not a GRK-GPCR interaction. If so, how would this affect interpretation? It would have been good to see how a non-Gbg dependent GRK would respond in this assay.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Disentangling bias between Gq, GRK2 and arrestin3 recruitment at the M3 muscarinic acetylcholine receptor\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: John JG Tesmer (Reviewer #2); Nevin A Lambert (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers agree that the paper has been greatly strengthened by the new experimental data. They do agree, however, that the important message of the paper is weakened by inclusion of the \"mixed signal\" data in figures 2 and 4A,B (see Reviewer 3 comments below), which by their nature do not cleanly decouple signals from different sources. These data do support the separation of direct receptor vs. G protein-dependent signals and emphasize the importance of the decoupled assays in Fig. 4C,D , so we ask that the paper be revised with those data provided as supplemental rather than main figures. You may also want to consider commenting on the kinetics mentioned by reviewer 3.\n\nReviewer #2:\n\nI am impressed with the robust experimental response to the two reviews and I think it is an example where things did dramatically improve in terms of rigor. I am satisfied with their response to my comments. I think this is a very interesting comparative study and I cannot think of many better ways to disentangle how bias manifests itself at the M3R. One could quibble onwards because of the complexities of the system and the fact that overexpressed proteins were used, but I think this data should be seen by the community at large now.\n\nReviewer #3:\n\nThe authors have done a very nice job in addressing a most difficult problem, i.e. separating G protein-dependent and -independent GRK2 signals. They did this with a CAAX anchor and PTX/FR900359. I still suggest that Figures 1 and 2 are not necessary and do not add to the story, and in fact confuse the situation by showing \"M3R-GRK2 interaction\" that is clearly a mixed response that includes bystander FRET- the signal is largely free Gbetagamma-GRK, not receptor-GRK. Figure 4A and 4B are similarly confusing and unnecessary- why show FRET signals that are not interpretable?\n\nThe results in 4C and 4D are key, and should take center stage. The authors should also point out that the kinetics of the isolated G protein-independent GRK signals are fast, as would be expected for what is essentially a reporter of receptor conformation. In contrast, the mixed GRK signals in 4A, 4B and Figure 2 have slow decays, presumably because this is rate-limited by G protein deactivation (GTP hydrolysis). This kinetic difference supports their claim that they've successfully isolated the receptor-GRK interaction from G proteins. Along these same lines, it's worth noting that the presumed bystander signal after PTX/FR900358 in Figure 4S1 C is also fast; the slower components due to G proteins get blocked by the PTX/FR. Indeed, the decay of the untreated trace in this figure could be fitted to two exponentials, the slower of the two would be consistent with GTP hydrolysis, the faster with receptor deactivation. A brief kinetic analysis of this sort would strengthen the paper.\n",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "75a0cd31-8ce0-4c04-aff4-59edb0bbf401",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C1",
+      "claim": "G protein-coupled receptors (GPCRs) transmit extracellular signals to the inside by activation of intracellular effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "G protein-coupled receptors (GPCRs) transmit extracellular signals to the inside by activation of intracellular effector proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in GPCR biology, representing established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "ad1bf0dc-d250-4f5d-b0cb-0c0610a0168f",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C2",
+      "claim": "Different agonists can promote differential receptor-induced signaling responses, termed bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Different agonists can promote differential receptor-induced signaling responses \u2013 termed bias \u2013 potentially by eliciting different levels of recruitment of effector proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known concept in GPCR pharmacology supported by the scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "a84016f5-e8ba-4a86-aef7-b1eebaf7a6a4",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C3",
+      "claim": "Bias is potentially caused by different agonists eliciting different levels of recruitment of effector proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Different agonists can promote differential receptor-induced signaling responses \u2013 termed bias \u2013 potentially by eliciting different levels of recruitment of effector proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the mechanism of bias.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "3ad3b5f3-1bdd-47d1-945b-b1a1375fe756",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C4",
+      "claim": "The study compared the efficacy of seven agonists to induce G protein, GRK2, and arrestin3 binding to the M3 muscarinic acetylcholine receptor using FRET-based assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we compared the efficacy of seven agonists to induce G protein, G protein-coupled receptor kinase 2 (GRK2), as well as arrestin3 binding to the muscarinic acetylcholine receptor M3 by utilizing FRET-based assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "c019c5ca-3caf-464f-a662-a5559e3031ba",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C5",
+      "claim": "GRK2 binding was studied in the presence of inhibitors of Gi and Gq proteins to avoid interference between G protein activation and GRK2 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to avoid interference between these interactions, we studied GRK2 binding in the presence of inhibitors of Gi and Gq proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design to isolate GRK2 recruitment from G protein effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "7672544e-553e-4fff-837e-4f3c21e28e9e",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C6",
+      "claim": "Arrestin3 binding was analyzed to prestimulated M3 receptors to avoid differences in receptor phosphorylation influencing arrestin recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "analyzed arrestin3 binding to prestimulated M3 receptors to avoid differences in receptor phosphorylation influencing arrestin recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design to control for phosphorylation differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "a480c2cc-33f2-495a-a7e1-1a4f30015c5a",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C7",
+      "claim": "Substantial differences were measured in the agonist efficacies to induce M3R-arrestin3 versus M3R-GRK2 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured substantial differences in the agonist efficacies to induce M3R-arrestin3 versus M3R-GRK2 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "3e447b92-c6c5-4e6f-81ac-2e28b631a20e",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C8",
+      "claim": "The rank order of the agonists for G protein- and GRK2-M3R interaction was the same.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the rank order of the agonists for G protein- and GRK2-M3R interaction was the same",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from comparing experimental data across different assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "1c721801-ff7b-4297-8565-328773838c57",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C9",
+      "claim": "G protein and GRK2 binding to M3R requires similar receptor conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that G protein and GRK2 binding to M3R requires similar receptor conformations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that G protein and GRK2 recruitment have the same rank order.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "b9aaca20-0c6d-4035-a2cd-014bb6770ef3",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C10",
+      "claim": "Requirements for arrestin3 binding to M3R are distinct from those for G protein and GRK2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas requirements for arrestin3 binding to M3R are distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the different rank orders observed for arrestin3 versus G protein/GRK2 recruitment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "512dd4ca-9f82-4bc9-ab4f-eaebe425d726",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C11",
+      "claim": "GPCRs can sense a wide variety of different agents, from single photons in the case of rhodopsin to small proteins that activate chemokine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "GPCRs can sense a wide variety of different agents, from single photons in the case of rhodopsin to small proteins that activate chemokine receptors (Shichida and Imai, 1998; Griffith et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "f385274d-0dce-4508-b081-5f07f4ea0fc7",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C12",
+      "claim": "An agonist binding to the orthosteric pocket increases the population of active receptor conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "an agonist, increasing the population of active receptor conformations, binds to the orthosteric pocket",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GPCR activation mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "1c0f4063-672e-4753-96d8-b162e5e843a1",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C13",
+      "claim": "Agonist binding leads to a conformational change of the transmembrane helix bundle that results in an opening of the intracellular effector-binding cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "this leads to a further conformational change of the transmembrane helix bundle that results in an opening of the intracellular effector-binding cavity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural mechanism of GPCR activation, which is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "eae91937-f577-4714-9ff9-cfa5512a2549",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C14",
+      "claim": "G proteins bind to the intracellular pocket of the receptors and are thereby activated.",
+      "claim_type": "EXPLICIT",
+      "source": "G proteins bind to the intracellular pocket of the receptors, are thereby activated and enabled to transmit and modulate a multitude of signals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about G protein activation by GPCRs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "a38e1b81-5c2b-44d7-a83a-a0c11d3680f9",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C15",
+      "claim": "G protein-coupled receptor kinases (GRKs) are recruited to the activated receptors, leading to receptor phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "G protein-coupled receptor kinases (GRKs) are recruited to the activated receptors, leading to receptor phosphorylation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the role of GRKs in GPCR signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "86918e59-52c4-4fff-bfd3-b60a3eed68f4",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C16",
+      "claim": "Arrestins bind to the active conformation of receptors after being activated by an initial binding to phosphorylated residues at the intracellular end of the receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "arrestins bind to the active conformation of these receptors after being activated by an initial binding to phosphorylated residues at the intracellular end of the receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about arrestin recruitment to GPCRs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "5c31cae7-40f8-45cf-95fa-792ee90bf501",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C17",
+      "claim": "Arrestins induce internalization and desensitization of the receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, arrestins induce internalization and desensitization of the receptors (Ritter and Hall, 2009; Mart\u00ed-Solano et al., 2016; Scheerer and Sommer, 2017; Kenakin, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "da9b4ef2-a05a-457e-afb9-623529e94645",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C18",
+      "claim": "Different agonists can stabilize distinct receptor conformations and thereby influence the recruitment of effector proteins leading to 'functional selectivity' or 'ligand bias'.",
+      "claim_type": "EXPLICIT",
+      "source": "There is strong evidence that different agonists can stabilize distinct receptor conformations and thereby influence the recruitment of effector proteins leading to 'functional selectivity' or, more specifically, 'ligand bias' to better reflect the nomenclature in the upcoming BJP guidelines (Costa-Neto et al., 2016; Mart\u00ed-Solano et al., 2016; Wingler et al., 2019; Xu et al., 2019; Kenakin, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "454c364c-1c7c-4f3b-90a3-77ca46f132ed",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C19",
+      "claim": "Receptor conformations exist that are preferentially recognized by either arrestins or G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown before that receptor conformations exist that are preferentially recognized by either arrestins or G proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previous findings in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "2bd31d7e-41c3-4330-9cca-3464dbaf9dee",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C20",
+      "claim": "Agonist-dependent recruitment of GRK2 to an opioid receptor exists.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent study of Stoeber et al., 2020 has shown that agonist-dependent recruitment of GRK2 to an opioid receptor exists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "8f9bfc38-f2e7-49c3-ab39-7c9fc3d49ad3",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C21",
+      "claim": "Functional bias at the level of arrestin recruitment is affected by both receptor recruitment rates of GRKs and arrestins.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to the question whether a functional bias at the level of arrestin recruitment (Carr et al., 2016) is affected by both receptor recruitment rates of GRKs and arrestins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a question posed based on previous findings, representing speculation about mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "868b689e-ab3c-4c2c-b445-f89278f9ce24",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C22",
+      "claim": "Receptor stimulation with 30 \u00b5M ACh resulted in a reversible increase in YFP fluorescence and a corresponding decrease in mTurq fluorescence, reflecting FRET development due to Gq, GRK2, or arrestin3 binding to the M3R.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, receptor stimulation with 30 \u00b5M ACh resulted in a reversible increase in YFP fluorescence and a corresponding decrease in mTurq fluorescence, reflecting the FRET development due to Gq, GRK2, or arrestin3 binding to the M3R, respectively (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental observations from FRET measurements shown in a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "c7ae8f38-98ec-46e3-89d8-4b304c2def97",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C23",
+      "claim": "For many receptors including M3R, signal amplification at the level of G protein activation leads to a spare receptor phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "For many receptors including M3R, it is well known that signal amplification at the level of G protein activation leads to a spare receptor phenomenon",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in GPCR pharmacology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "cf6c3ca7-4ae2-4f77-b21f-e0d71ce12206",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C24",
+      "claim": "The spare receptor phenomenon allows only indirect determination of agonist efficacy by means of comparing concentration-response curves with those of ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "which allows only indirect determination of agonist efficacy by means of comparing of concentration-response curves with those of ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about limitations in measuring agonist efficacy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "3d30c792-65fe-4afc-9821-09ea3b8ff756",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C25",
+      "claim": "The efficacy ranking for Gq recruitment to M3R is: ACh>Metha\u2248Fur>Are\u2248Guva>Pilo>Mda.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed the highest recruitment of Gq for ACh, followed by Metha and Fur (\u223c60% of the ACh signal), and much weaker recruitment for Guva and Are (\u223c20%) followed by even lower values for Pilo and Mda (\u223c8%) (Figure 1B), leading to the following ranking in efficacy: ACh>Metha\u2248Fur>Are\u2248Guva>Pilo>Mda.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "4f7a5193-7f7a-4d66-91b6-950fdce55e9e",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C26",
+      "claim": "The ranking in potency for Gq activation measured by BRET is: ACh>Metha\u2248Fur>Are>Guva>Pilo>Mda.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed bioluminescence resonance energy transfer (BRET)-based assays to study Gq activation by these agonists (Figure 1\u2014figure supplement 4), with the following similar ranking in potency: ACh>Metha\u2248Fur>Are>Guva>Pilo>Mda.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from BRET experiments shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "83e98891-ef13-4b46-ae5b-948b22b5ee11",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C27",
+      "claim": "The rank order of agonist affinity determined by radioligand displacement assays is: Pilo>ACh>Metha\u2248Fur>Are>Guva\u00bbMda.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, radioligand displacement assays were performed (Figure 1\u2014figure supplement 5) in order to determine the rank order of agonist affinity: Pilo>ACh>Metha\u2248Fur>Are>Guva\u00bbMda.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from radioligand displacement experiments shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "f3d87869-aaf8-4fd5-b886-7a491aefdaff",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C28",
+      "claim": "Mda failed to displace the radioligand at concentrations up to 100 mM, indicating a very low affinity for the orthosteric binding pocket of M3R or a noncompetitive binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Mda failed to displace the radioligand at concentrations up to 100 mM, indicating a very low affinity for the orthosteric binding pocket of M3R or \u2013 despite its structural similarity to ACh \u2013 a noncompetitive binding mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the radioligand displacement data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "f21ff7e7-e985-4437-b926-60bfe9114fb3",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C29",
+      "claim": "The rank order of the efficacy of different agonists to recruit GRK2 to M3R was the same as determined for Gq recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "The rank order of the efficacy of the different agonists to recruit GRK2 to M3R, determined by single-cell FRET assays, was the same as determined for Gq recruitment (Figure 2\u2014figure supplement 1A and B in comparison with Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing experimental data across different assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "b5557478-f758-4230-8554-a18d27601090",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C30",
+      "claim": "When Gq activation was completely abolished by pretreatment with FR900359, no recruitment of GRK2 to M3R was observed in cells transfected with Gq and fluorescently labeled M3R and GRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when Gq activation was completely abolished by pretreatment with FR900359, no recruitment of GRK2 to M3R was observed in cells transfected with Gq and fluorescently labeled M3R and GRK2 (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from FRET measurements shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "e1b0f871-fc9f-4882-a39e-8b72d2e0b79b",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C31",
+      "claim": "Preincubation with PTX completely abolished agonist-evoked FRET between G\u03b2\u03b3 and GRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, preincubation with PTX completely abolished agonist-evoked FRET between G\u03b2\u03b3 and GRK2 (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from FRET measurements shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "8797a5ea-01c1-4a3b-a755-306d80597dcf",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C32",
+      "claim": "Without overexpression of G\u03b1q proteins, preincubation with PTX and FR900359 pretreatment did not lead to a full inhibition of agonist evoked FRET between G\u03b2\u03b3 and GRK2, presumably due to bystander FRET upon G protein-independent translocation of GRK2 to M3R.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, without overexpression of G\u03b1q proteins, preincubation with PTX and FR900359 pretreatment did not lead to a full inhibition of agonist evoked FRET between G\u03b2\u03b3 and GRK2 (Figure 2\u2014figure supplement 1E), presumably due to bystander FRET upon G protein-independent translocation of GRK2 to M3R.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation with a speculative explanation for the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "6e2d8b2d-7edf-4d65-9ae0-4a28b7390d7d",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C33",
+      "claim": "Kinetic analysis of agonist-evoked FRET between G\u03b2\u03b3 and GRK2 with or without pretreatment with PTX and FR900359 showed fast one-phased decays for signals measured with pretreatment and slower two-phased decays for signals measured without pretreatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic analysis of agonist-evoked FRET between G\u03b2\u03b3 and GRK2 with or without pretreatment with PTX and FR900359 showed fast one-phased decays for signals measured with pretreatment and slower two-phased decays for signals measured without pretreatment (Figure 2\u2014figure supplement 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from kinetic analysis of experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "c6dc0709-d288-475a-bdf7-1a42b0419dc0",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C34",
+      "claim": "A CAAX-box was introduced at the C-terminus of GRK2-YFP to allow for G protein-independent plasma membrane localization of GRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to abolish the possible involvement of G\u03b2\u03b3 and G\u03b1q proteins in the recruitment process of GRK2 to M3R (Wolters et al., 2015) further, we aimed to bypass Gq-dependent translocation of GRK2 to the plasma membrane by introducing a CAAX-box at the C-terminus of GRK2-YFP to allow for G protein-independent plasma membrane localization of GRK2 (Inglese et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental design strategy supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "abdea185-f054-4755-ac8e-6291e1523c95",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C35",
+      "claim": "D110 was mutated to alanine in GRK2, which attenuates G\u03b1q binding to GRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we mutated D110 to alanine, which attenuates G\u03b1q binding to GRK2 (Wolters et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental design strategy supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "539fa57f-994d-4a0b-90a0-278908b30221",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C36",
+      "claim": "Under conditions of complete Gq and Gi inhibition, amplitudes of agonist-evoked FRET increases were reduced and offset kinetics after agonist withdrawal were substantially faster for (D110A)GRK2-CAAX compared to wild-type GRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Under conditions of complete Gq and Gi inhibition (see for control Figure 2\u2014figure supplement 1D and E), amplitudes of agonist-evoked FRET increases were reduced and offset kinetics after agonist withdrawal were substantially faster (compare Figure 2A and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing experimental data across different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "c431cc9d-7728-4267-9ee1-dd3763e566b4",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C37",
+      "claim": "Agonist-specific interactions between (D110A)GRK2-CAAX and M3R were still measurable under conditions of complete G protein inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were still able to measure agonist-specific interactions between (D110A)GRK2-CAAX and M3R (Figure 2A and B, Figure 2\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from FRET measurements shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "126a10d2-6b5e-4682-be79-1e463590bfd6",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C38",
+      "claim": "The relative efficacy ranking of agonists to recruit (D110A)GRK2-CAAX without the influence of G proteins is: ACh>Metha\u2248Fur>Guva\u2248Are>Pilo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements of the relative efficacy of the agonists to recruit this GRK2 construct without the influence of G proteins resulted in the following ranking: ACh>Metha\u2248Fur>Guva\u2248Are>Pilo (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "bf200fba-96ee-44cf-bf22-2ad0fd9ec33c",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C39",
+      "claim": "Mda did not lead to detectable responses in (D110A)GRK2-CAAX recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mda did not lead to detectable responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the GRK2 recruitment assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "10a4a48d-c6f6-4e82-bae5-5724aa516d56",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C40",
+      "claim": "The relative responses induced by weak partial agonists were substantially reduced in G protein-independent GRK2 recruitment compared to G protein-dependent recruitment of GRK2, but the rank order of the agonists was essentially unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the relative responses induced by the weak partial agonists were substantially reduced compared to the G protein-dependent recruitment of GRK2 (Figure 2\u2014figure supplement 1A and B), the rank order of the agonists was essentially unchanged.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing experimental data across different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "3a7f18ba-41f8-4cfb-a57e-954c2c2493f2",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C41",
+      "claim": "The color switch of the attached fluorophores had no effect on the relative agonist efficacies for GRK2 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "We ensured that the color switch of the attached fluorophores had no effect on the relative agonist efficacies (Figure 2\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "79657fa6-16ea-4e09-8303-203b229a67aa",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C42",
+      "claim": "Control experiments without overexpression of G\u03b1q showed a similar efficacy of the partial agonists Pilo and Are for GRK2 binding to M3R compared to those measured under complete G protein inhibition with the G protein-insensitive GRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments without overexpression of G\u03b1q, but in the context of non-mutated fluorescent GRK2, showed a similar efficacy of the partial agonists Pilo and Are for GRK2 binding to M3R compared to those measured under complete G protein inhibition with the G protein-insensitive GRK2 (Figure 2\u2014figure supplement 1J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from control experiments shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "d2be6e8a-92f5-4c0d-9c35-ee8a6feff6dc",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C43",
+      "claim": "Overexpression of Gq proteins leads to an enhanced affinity of GRK2 for the M3R.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate, as previously reported (Wolters et al., 2015), that the overexpression of Gq proteins leads to an enhanced affinity of GKR2 for the M3R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data, supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "041b9fcb-089c-450d-bee5-6ed6b158b8ec",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C44",
+      "claim": "GRK2-mediated phosphorylation of the receptor is initially the rate-limiting step of arrestin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that GRK2-mediated phosphorylation of the receptor is initially the rate-limiting step of arrestin binding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by references to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "6714d08e-1e52-4268-bc81-547ac3c1e56e",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C45",
+      "claim": "\u03b22-adrenergic receptor-arrestin interaction and M3R-arrestin interaction accelerate with repeated stimulation of the same cell.",
+      "claim_type": "EXPLICIT",
+      "source": "and that \u03b22-adrenergic receptor-arrestin interaction and M3R-arrestin interaction accelerate with repeated stimulation of the same cell (Krasel et al., 2005; Wolters et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "01c1d5cf-f87b-46da-ab09-e2b2398a0def",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C46",
+      "claim": "GRK-mediated receptor phosphorylation is in most cases a prerequisite for agonist-evoked arrestin3 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Since GRK-mediated receptor phosphorylation is in most cases a prerequisite for agonist-evoked arrestin3 binding (Choi et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "de6836bb-ab1b-4571-ab70-cd727d2a388b",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C47",
+      "claim": "Metha-induced arrestin3 recruitment is significantly enhanced after a prepulse with the full agonist ACh.",
+      "claim_type": "EXPLICIT",
+      "source": "The dependency on agonist-induced phosphorylation for arrestin binding is exemplarily shown in Figure 2C and D as Metha-induced arrestin3 recruitment is significantly enhanced after a prepulse with the full agonist ACh.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "b7285618-4a71-4e68-8443-a60106b86460",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C48",
+      "claim": "The amplitudes measured for prestimulated and not prestimulated M3R differed for all seven agonists except for ACh.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitudes measured for prestimulated and not prestimulated M3R differed for all seven agonists except for ACh (Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "57161185-9db3-453c-b618-7d516691a7c3",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C49",
+      "claim": "The increase in arrestin3 recruitment amplitude after prestimulation is specific for each agonist, presumably due to differences in their capability to induce phosphorylation of M3R.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the increase in amplitude after prestimulation is specific for each agonist (Figure 2\u2014figure supplement 2E), presumably due to differences in their capability to induce phosphorylation of M3R (Butcher et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data, with a speculative explanation supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "469f9149-b467-45f6-b6a8-ff886c5d6a54",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C50",
+      "claim": "The efficacy ranking of agonists for arrestin3 recruitment to prestimulated M3R is: ACh>Metha\u2248Fur>Pilo\u2248Guva>Are>Mda.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying each of the seven agonists to the M3R subsequent to the prestimulation with ACh, we obtained results that show marked differences in the ability of the individual agonists to recruit arrestin3 to M3R (Figure 2E and F). This led to the following efficacy ranking of the agonists: ACh>Metha\u2248Fur>Pilo\u2248Guva>Are>Mda.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from experimental data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "df789a47-c376-4ce0-91d8-49496d3a95f6",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C51",
+      "claim": "The rank order for the efficacy to recruit arrestin3 to M3R differs in comparison to the one obtained for Gq recruitment and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that the rank order for the efficacy to recruit arrestin3 to M3R differs in comparison to the one obtained for Gq recruitment and activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from comparing experimental data across different assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "549ce9e8-11ca-4bb2-9282-99953923fdd1",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C52",
+      "claim": "The agonist efficacies to recruit Gq to M3R in comparison to D110A-GRK-CAAX were very similar, showing nearly equal efficacy for each agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3A, the agonist efficacies to recruit Gq to M3R in comparison to D110A-GRK-CAAX were very similar, showing nearly equal efficacy for each agonist.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "ffe9015b-49b6-4ca7-80cc-f4817cc6a541",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C53",
+      "claim": "2D plots comparing agonist efficacies for arrestin3 binding to M3R with those for either Gq or D110A-GRK2-CAAX showed higher relative agonist efficacies for arrestin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both 2D plots comparing agonist efficacies for arrestin3 binding to M3R with those for either Gq or D110A-GRK2-CAAX showed higher relative agonist efficacies for arrestin binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing experimental data shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "e13fffc1-9100-4a56-a042-83ebc9b63fb3",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C54",
+      "claim": "The rank order of agonist efficacies was different for arrestin3 binding as Pilo was more efficient than Are and similarly efficient as Guva to induce arrestin3 recruitment, whereas for both GRK2 recruitment and Gq binding to M3R, Pilo was less efficient than Are and Guva.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, the rank order of agonist efficacies was different for arrestin3 binding as Pilo was more efficient than Are and similarly efficient as Guva to induce arrestin3 recruitment, whereas for both GRK2 recruitment and Gq binding to M3R, Pilo was less efficient than Are and Guva.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from comparing experimental data across different assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "c6761602-b667-45b0-90e6-4a207f3b6028",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C55",
+      "claim": "Agonist efficacies for GRK2 recruitment and Gq activation followed a similar pattern with the identical rank order of agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "The results confirmed that agonist efficacies for GRK2 recruitment and Gq activation followed a similar pattern with the identical rank order of agonists",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analyzing data using the operational model, shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "e5284219-2d09-4ee8-a4b5-73fc19be789d",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C56",
+      "claim": "In the case of arrestin3 binding, at least Pilo exhibited a reverted rank order relative to Are and Guva.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas in the case of arrestin3 binding, at least Pilo exhibited a reverted rank order relative to Are and Guva.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analyzing data using the operational model, shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "e05c1426-62fe-46f7-856e-f3869a8cca36",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C57",
+      "claim": "Ligand-induced biased recruitment can be detected at the M3R.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that ligand-induced biased recruitment can indeed be detected at the M3R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "e13f1bf4-4460-4bb3-afbf-fe02b4699cf8",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C58",
+      "claim": "A difference in bias was found between arrestin3 recruitment and the other two effector proteins (Gq and GRK2).",
+      "claim_type": "EXPLICIT",
+      "source": "Assessing bias as a change in sequence when ranking the agonists with respect to their efficacy to induce Gq, GRK2, or arrestin3 recruitment, we found a difference between arrestin3 recruitment and the other two effector proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "69d76d29-f8f3-4b79-87ac-9371fb394f9e",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C59",
+      "claim": "No difference in bias was found between GRK2 recruitment and G protein binding and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no such difference was found between GRK2 recruitment and G protein binding and activation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "a00acf54-c4b4-4ac1-aa29-019ad6caf708",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C60",
+      "claim": "Very similar active receptor conformations are required for Gq activation and GRK2 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that very similar active receptor conformations are required for Gq activation and GRK2 recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that Gq and GRK2 recruitment have the same rank order.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "eeb997ed-e5fe-4a62-9fa2-5e17ffe2b649",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C61",
+      "claim": "The rank order of agonist efficacies to recruit GRK2 was the same, independent of whether G proteins were inhibited or not.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the rank order of agonist efficacies to recruit GRK2 was the same, independent of whether G proteins were inhibited or not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing experimental data under different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "67c154ef-0f01-48c5-8c20-d447c9f3b50e",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C62",
+      "claim": "The overall FRET amplitudes and agonist responses normalized to ACh were considerably larger and their overall kinetics considerably slower in the absence of G protein inhibition, demonstrating the contribution of G proteins to translocating GRK2 to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the overall FRET amplitudes and also the agonist responses normalized to the one of ACh were considerably larger and their overall kinetics considerably slower in the absence of G protein inhibition, demonstrating the contribution of G proteins to translocating GRK2 to the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing experimental data under different conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "250efb91-6314-4877-b666-753f659aebc7",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C63",
+      "claim": "The rank order of the efficacy of Metha, Are, and Pilo to recruit GRK2 to the M3R is the same as observed for M3R phosphorylation determined by Butcher et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the rank order of the efficacy of Metha, Are, and Pilo to recruit GRK2 to the M3R (Figure 2A and B, Figure 2\u2014figure supplement 1A and B) is the same as observed for M3R phosphorylation determined by Butcher et al. (Figure 6 in Butcher et al., 2011)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with previous literature findings, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "e7cdbe12-8d85-49dd-b28e-9784fbacbbdb",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C64",
+      "claim": "GRK2 recruitment to the M3R correlates with functional phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that GRK2 recruitment to the M3R correlates with functional phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing the current data with previous findings.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "57adb356-a51c-453c-bc61-3e49e4d1bfa6",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C65",
+      "claim": "Arrestin recruitment to the M3R is dependent on GRK2-mediated phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed arrestin recruitment to the M3R to be dependent on GRK2-mediated phosphorylation (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "c37a15f3-b46c-4a0f-8f98-133f1fb7ec2a",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C66",
+      "claim": "In the absence of coexpression of GRK2 or upon expression of the dominant negative GRK2(K220R), a decrease of the arrestin recruitment was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "as in the absence of coexpression of GRK2 or upon expression of the dominant negative GRK2(K220R), a decrease of the arrestin recruitment was detected as expected based on previous observations at the \u03b22-adrenergic receptor (Krasel et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "a3671d9b-5329-43bd-9cdc-fe03b89280a4",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C67",
+      "claim": "The dephosphorylation of receptors typically occurs on the order of at least several minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "As the dephosphorylation of receptors typically occurs on the order of at least several minutes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about receptor dephosphorylation kinetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "ecbfffc3-4cba-4492-94f3-aeddc8755045",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C68",
+      "claim": "The experimental design allowed the comparison of agonist efficacies to prephosphorylated receptors, minimizing any influence of agonist efficacy towards G protein activation and GRK2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "our experimental design allowed the comparison of agonist efficacies to prephosphorylated receptors, minimizing any influence of agonist efficacy towards G protein activation and GRK2 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "d6e1670c-661f-4463-8b6d-1feba21ae434",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C69",
+      "claim": "Unlike for G protein and GRK2 recruitment, Pilo induces significantly more arrestin3 recruitment compared to Are.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that unlike for G protein and GRK2 recruitment, Pilo induces significantly more arrestin3 recruitment compared to Are.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "28b35b4f-ca4d-483e-8b7a-43e23280ac51",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C70",
+      "claim": "The results are in line with a potential bias of Pilo towards arrestin that was reported by Pronin et al., 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with a potential bias of Pilo towards arrestin that was reported by Pronin et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current findings with previous literature, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "31614c86-b79a-43cc-b638-f7d5f8c94dd2",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C71",
+      "claim": "The bias towards arrestin recruitment was not introduced by a bias towards GRK2 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, here we were able to observe that the bias towards arrestin recruitment was not introduced by a bias towards GRK2 recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "47023986-ebfc-4abf-9e8f-46cad29beaeb",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C72",
+      "claim": "No detectable bias was observed between Gq recruitment and GRK2 recruitment for any of these agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no detectable bias was observed between Gq recruitment and GRK2 recruitment for any of these agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "15395624-d035-4a59-96e2-eb9beb846e30",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C73",
+      "claim": "The findings disentangle bias between Gq, GRK2, and arrestin3 recruitment to the M3R.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings disentangle bias between Gq, GRK2, and arrestin3 recruitment to the M3R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "2c296158-5f61-4127-b031-8db1d1d05e03",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C74",
+      "claim": "Arrestin3 recruitment was tested in an overexpression system for all agonists under exactly the same conditions regarding prephosphorylation and kinase expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Arrestin3 recruitment was tested in an overexpression system for all agonists under exactly the same conditions regarding prephosphorylation and kinase expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "8908da04-7d80-494e-bc50-dbb2c76901e7",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C75",
+      "claim": "The influence of endogenous GRK and arrestin isoforms is negligible in the experimental system used.",
+      "claim_type": "EXPLICIT",
+      "source": "The influence of endogenous GRK and arrestin isoforms is therefore negligible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the experimental system based on the overexpression approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "a0cffedb-df06-462f-8f07-586f8a790b63",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C76",
+      "claim": "The overall agonist-dependent recruitment might depend on the expression pattern of GRKs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we cannot rule out that the overall agonist-dependent recruitment might as well depend on the expression pattern of GRKs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential limitations of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "4bc2b50a-8480-4820-b669-b5edaca10ccb",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C77",
+      "claim": "M3R-mediated signaling is regulated by distinct mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Since M3R-mediated signaling is regulated by distinct mechanisms (Luo et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "90a2c9f5-8e9f-436c-8a11-678b4ea8bcbd",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C78",
+      "claim": "The results represent the first step on the way to completely disentangle bias signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "our results represent the first step on the way to completely disentangle bias signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the significance and limitations of the current findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "b7f876c3-ec19-4123-b8e6-a0d74ed13a01",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C79",
+      "claim": "Measurement of agonist-induced G protein recruitment to receptors by means of FRET is a much more direct way to study the efficacy of agonists to activate receptors compared to the measurement of G protein activation or downstream signaling due to its lack of signal amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of agonist-induced G protein recruitment to receptors by means of FRET is a much more direct way to study the efficacy of agonists to activate receptors compared to the measurement of G protein activation or downstream signaling due to its lack of signal amplification, which typically leads to the phenomenon of signal saturation at submaximal levels of receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the FRET-based approach, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "175e210f-ac9a-4693-9d42-d8dc05db44c0",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C81",
+      "claim": "Metha and Fur recruited arrestin3, GRK2, and Gq to a similar extent compared to the full agonist ACh.",
+      "claim_type": "EXPLICIT",
+      "source": "Metha and Fur recruited arrestin3, GRK2, and Gq to a similar extent compared to the full agonist ACh",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing experimental data across different assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "77671fa6-ef35-44fc-a065-b5b97862592c",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C82",
+      "claim": "The partial agonists Are, Guva, and Pilo differed substantially in their relative efficacy to recruit arrestin3 versus GRK2 and Gq.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the partial agonists Are, Guva, and Pilo differed substantially in their relative efficacy to recruit arrestin3 versus GRK2 and Gq (Figures 1B, 2B and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing experimental data across different assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "877db356-d16a-44ef-aff0-c6de7127adf6",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C83",
+      "claim": "Pilo was the poorest GRK2 and Gq recruiter among the partial agonists, but the best arrestin3 recruiter, indicating a relative bias towards arrestin3 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest deviation in the rank order was observed for Pilo, which from the set of partial agonists was the poorest GRK2 and Gq recruiter, but the best arrestin3 recruiter, indicating a relative bias towards arrestin3 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "863bb6da-ff26-4e6c-b721-e69bdb2856ea",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C84",
+      "claim": "The slow component of arrestin3 recruitment upon first stimulation with agonist was dependent on the expression of catalytically active GRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though we did not directly measure GRK2-mediated phosphorylation, we found that the slow component of arrestin3 recruitment upon first stimulation with agonist was dependent on the expression of catalytically active GRK2, similar to what has been described for \u03b22-adrenergic receptors (Krasel et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation supported by a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "c30a5030-d489-461c-91b7-6413ef1f01c0",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C85",
+      "claim": "The slow component of arrestin3 recruitment was also visible during subsequent applications of agonist, which could indicate incomplete phosphorylation or reflect phosphorylation-independent effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this slow component, even though it is smaller in amplitude, was also visible during subsequent applications of agonist. This could either indicate incomplete phosphorylation at the time points of the repetitive agonist applications or could reflect phosphorylation-independent effects, such as the interaction of arrestin3 with the membrane and a thus prolonged residence time of arrestin3 at the membrane after the first recruitment to the receptor (Lally et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental observations, with a citation to support one possible mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "7e965c2b-bc4e-4364-851a-ad527c505560",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C86",
+      "claim": "The finding that agonist bias with respect to the ability to activate G proteins versus the ability to induce arrestin recruitment to the receptor can be detected correlates with recent advancements in the determination of conformational differences of the angiotensin-II receptor type 1 when bound to Gq or arrestin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that agonist bias with respect to the ability to activate G proteins versus the ability to induce arrestin recruitment to the receptor can be detected correlates nicely with recent advancements in the determinnation of conformational differences of the angiotensin-II receptor type 1 when bound to Gq or arrestin (Wingler et al., 2020; Suomivuori et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current findings with recent literature, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "947b0815-5278-4f98-a922-72f7cfd0271a",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C87",
+      "claim": "The results demonstrating the existence of functional agonist-dependent patterns of differential recruitment of arrestin3 and GRK2 to the M3R are supported by a recent study demonstrating agonist-dependent patterns of recruitment of G proteins, GRK2, and a conformationally selective nanobody directed against the intracellular cavity of activated opioid receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results demonstrating the existence of functional agonist-dependent patterns of differential recruitment of arrestin3 and GRK2 to the M3R are supported by a recent study demonstrating agonist-dependent patterns of recruitment of G proteins, GRK2, and a conformationally selective nanobody directed against the intracellular cavity of activated opioid receptors (Stoeber et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current findings with recent literature, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "8e8ff94e-65f0-46e7-b4fe-3123e8b1c187",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C88",
+      "claim": "The finding that different receptor ligands can differentially affect binding of G proteins, arrestins, and GRKs opens up the potential for future drug development to specifically direct signaling in one or the other direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that different receptor ligands can differentially affect binding of G proteins, arrestins, and GRKs opens up the potential for future drug development to specifically direct signaling in one or the other direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the implications of the findings for drug development.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "8fa75c5f-626b-4785-83dc-b70342070c35",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C89",
+      "claim": "The findings highlight the existence of ligand-induced bias at the M3R and the importance of understanding GRK2 recruitment and its role for the subsequent arrestin3 recruitment in order to fully differentiate between a bias in GRK2 recruitment and a bias in arrestin3 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our findings highlight the existence of ligand-induced bias at the M3R and the importance of understanding GRK2 recruitment and its role for the subsequent arrestin3 recruitment in order to fully differentiate between a bias in GRK2 recruitment and a bias in arrestin3 recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the study's findings and their implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "7e5bd914-02da-4220-a42f-e984f9b6c572",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C90",
+      "claim": "The methodology developed for the M3R is generally applicable to all GPCRs, G proteins, GRKs, and arrestins.",
+      "claim_type": "EXPLICIT",
+      "source": "While developed for the M3R, the methodology is generally applicable to all GPCRs, G proteins, GRKs, and arrestins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generalizability of the methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "23adbe09-a3be-4fe7-894a-8139742dcd23",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C91",
+      "claim": "The methodology offers new possibilities to disentangle biased effector pathway engagement at the level of effector protein recruitment and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "and therefore offers new possibilities to disentangle biased effector pathway engagement at the level of effector protein recruitment and activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the significance and potential applications of the methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "08f190ec-7830-469f-8968-0adb085d2091",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C92",
+      "claim": "HEK tsA 201 cell line was used for experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "For experiments HEK tsA 201 cell line was used, which was a kind gift from the Lohse laboratory, University of W\u00fcrzburg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell line used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "d2a7c2cf-0a05-421e-83f2-cd95be09b7d0",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C93",
+      "claim": "All experiments were carried out in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, all experiments were carried out in HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell type used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "5a17c863-cf72-4428-97fe-d3e6db18a7cf",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "claim_id": "C94",
+      "claim": "FR900359 was isolated from Ardisia crenata leaves.",
+      "claim_type": "EXPLICIT",
+      "source": "FR900359 was isolated from Ardisia crenata leaves as previously described in Schrage et al., 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of a reagent used in the study, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e314bd9d-65ac-42b1-b33b-451940e7b26f",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study employed FRET-based assays in HEK293T cells to measure recruitment of Gq, GRK2, and arrestin3 to M3R by seven agonists. To isolate these interactions, GRK2 binding was studied with G protein inhibitors (PTX and FR900359), and arrestin3 binding was measured after prestimulation to control for phosphorylation differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C22, and C92-C94 describe the experimental design and methodology. The approach is well-documented with appropriate controls (G protein inhibition for GRK2, prestimulation for arrestin3) to minimize confounding between interconnected signaling events. The use of FRET imaging in HEK293T cells is standard and appropriate for measuring protein-protein interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "138a9694-cd46-4343-b886-c640459623a7",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Seven agonists were characterized for Gq recruitment (ACh>Metha\u2248Fur>Are\u2248Guva>Pilo>Mda), Gq activation by BRET (ACh>Metha\u2248Fur>Are>Guva>Pilo>Mda), and binding affinity by radioligand displacement (Pilo>ACh>Metha\u2248Fur>Are>Guva>>Mda). Mda showed very low affinity, failing to displace radioligand up to 100 mM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 present primary experimental findings from FRET, BRET, and radioligand displacement assays. The rank orders are consistent across methods, with appropriate statistical analysis shown in figures. The observation that Mda has very low affinity is supported by the radioligand data, though the inference about noncompetitive binding (C28) remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "07082ec4-ac94-4c06-adba-980e98abf68f",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GRK2 recruitment to M3R was initially measured with G protein overexpression, showing the same rank order as Gq recruitment. However, complete G protein inhibition (PTX + FR900359) abolished GRK2 recruitment when Gq was overexpressed. Using a membrane-targeted, Gq-insensitive GRK2 mutant (D110A-GRK2-CAAX), G protein-independent GRK2 recruitment was measured, yielding the rank order ACh>Metha\u2248Fur>Guva\u2248Are>Pilo, essentially unchanged from G protein-dependent conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C43 describe a sophisticated experimental strategy to isolate G protein-independent GRK2 recruitment using multiple controls and a modified GRK2 construct. The finding that rank order is preserved across conditions (C40, C61) is well-supported by data in multiple figures. Control experiments (C41, C42) validate that fluorophore choice and Gq overexpression don't alter relative efficacies. The conclusion that Gq overexpression enhances GRK2 affinity (C43) is supported by comparison of conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "6258b6db-2142-4375-9d03-3eff42cfca72",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Arrestin3 recruitment to M3R was measured using a prestimulation protocol to control for differences in GRK2-mediated phosphorylation. After prestimulation with ACh, the efficacy ranking for arrestin3 recruitment was ACh>Metha\u2248Fur>Pilo\u2248Guva>Are>Mda, which differs from the rank order for Gq and GRK2 recruitment. The dependency on GRK2-mediated phosphorylation was confirmed by reduced arrestin recruitment without GRK2 or with kinase-dead GRK2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C51 and C65-C68 describe the arrestin3 recruitment experiments with appropriate controls for phosphorylation. The prestimulation protocol is well-justified (C67, C68) to minimize confounding from differential GRK2 recruitment. The finding that arrestin3 rank order differs from Gq/GRK2 (C51) is a key result supported by data in Figures 2 and 3. Controls demonstrating GRK2 dependence (C65, C66) strengthen the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "f4b89a1a-4928-44c2-b103-8d21360f88fc",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Comparative analysis of agonist efficacies across effector proteins revealed that Gq and GRK2 recruitment showed nearly equal efficacy for each agonist with identical rank order. In contrast, arrestin3 binding showed different rank order, with Pilo being more efficient than Are and similarly efficient as Guva for arrestin3, while being less efficient for Gq and GRK2. Analysis using the operational model confirmed these patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 present the key comparative findings shown in Figure 3 and supplementary analyses. The 2D plots (C52, C53) and rank order comparisons (C54) clearly demonstrate the differential pattern. The operational model analysis (C55, C56) provides quantitative support for the qualitative observations. The statistical analyses appear appropriate with multiple replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study demonstrates ligand-induced biased recruitment at M3R, with substantial differences in agonist efficacies for arrestin3 versus GRK2 recruitment, while Gq and GRK2 recruitment showed the same rank order. This suggests that similar receptor conformations are required for Gq and GRK2 binding, whereas arrestin3 binding has distinct conformational requirements. Specifically, Pilo showed bias toward arrestin3 recruitment that was not due to bias in GRK2 recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 and C57-C73 present the main conclusions of the study. The evidence for biased recruitment is strong, based on the differential rank orders observed across multiple assays with appropriate controls. The inference about conformational requirements (C9, C10, C60) is reasonable given the data, though it remains indirect. The specific finding about Pilo (C69, C71, C83) is well-supported and consistent with prior literature (C70). The conclusion that bias was disentangled between effectors (C73) is justified by the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "ec04ad91-a7bb-4e9f-bf9e-65701715a7af",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The rank order of agonist efficacies for GRK2 recruitment was identical regardless of G protein inhibition, though amplitudes and kinetics differed. The rank order for Metha, Are, and Pilo matched that observed for M3R phosphorylation in prior studies, indicating that GRK2 recruitment correlates with functional phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 compare current findings with previous literature on M3R phosphorylation. The consistency of rank order across conditions (C61) is well-documented. The comparison with Butcher et al. (C63) strengthens the interpretation that GRK2 recruitment reflects functional phosphorylation (C64), though this remains correlative rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "38654745-bf79-4e79-b967-c8c1344631cb",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Metha and Fur recruited all three effector proteins (arrestin3, GRK2, Gq) to similar extents as the full agonist ACh, while partial agonists Are, Guva, and Pilo showed substantial differences in relative efficacy for arrestin3 versus GRK2/Gq recruitment. Pilo showed the strongest deviation, being the poorest GRK2/Gq recruiter but the best arrestin3 recruiter among partial agonists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 summarize key findings about agonist-specific patterns. The data supporting these conclusions are presented in Figures 1B, 2B, and 2F with appropriate statistical analysis. The characterization of Pilo's bias (C83) is particularly well-supported and represents a major finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "bf01abf1-feb6-4ad2-ba2c-40b391b16ca7",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The slow component of arrestin3 recruitment upon first stimulation was dependent on catalytically active GRK2, similar to \u03b22-adrenergic receptors. However, a slow component persisted during subsequent agonist applications, which could indicate incomplete phosphorylation or phosphorylation-independent effects such as prolonged membrane residence time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 describe kinetic observations of arrestin3 recruitment. The GRK2 dependence (C84) is supported by experimental data and consistent with prior literature. The interpretation of the persistent slow component (C85) is appropriately presented as speculative with alternative explanations provided. The citation to Lally et al. supports one possible mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "abddf093-1244-49ec-a4ef-7f460d66813b",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The findings on agonist bias between G protein activation and arrestin recruitment correlate with recent structural studies showing conformational differences in angiotensin-II receptor type 1 when bound to Gq versus arrestin, and with functional studies on opioid receptors showing agonist-dependent recruitment patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 place the current findings in context of recent literature. The comparisons are appropriate and strengthen the interpretation of the results. The citations to Wingler et al., Suomivuori et al., and Stoeber et al. are relevant and support the broader significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "5264b1a8-7f0d-4a4f-b5fb-18a098299265",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study used an overexpression system with controlled conditions for all agonists, minimizing influence of endogenous GRK/arrestin isoforms. The findings represent a first step in disentangling bias signaling at M3R and highlight the importance of understanding GRK2 recruitment for interpreting arrestin3 bias. The methodology is generally applicable to other GPCRs and offers potential for future drug development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C91 discuss the experimental system, limitations, and implications. The acknowledgment of limitations (C76, C77, C78) is appropriate. The claims about methodology generalizability (C90, C91) and drug development potential (C88) are reasonable but somewhat speculative. The main conclusion about disentangling bias (C89) is well-supported by the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "5e9d58fd-bb7a-41d6-90ae-44a70e49888e",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "FRET-based measurement of G protein recruitment to receptors is more direct for studying agonist efficacy than measuring G protein activation or downstream signaling, due to lack of signal amplification that typically causes saturation at submaximal receptor activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 describes an advantage of the FRET approach. This is supported by established knowledge about signal amplification in GPCR systems and is validated by the consistency between FRET recruitment data and operational model analysis of G protein activation (C55).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    },
+    {
+      "id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d",
+      "content_id": "4efb5186-d666-42cb-b8e4-361ae2e4bcb4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction provides established background on GPCR signaling, including the canonical activation sequence, the concept of ligand bias, and the roles of G proteins, GRKs, and arrestins. The spare receptor phenomenon and its implications for measuring agonist efficacy are described.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C11-C24 present background knowledge and context from the literature. These are appropriately cited and represent established concepts in GPCR pharmacology. The speculative elements (C3, C21) are appropriately qualified. This background provides necessary context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:17:41.879605Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3ad3b5f3-1bdd-47d1-945b-b1a1375fe756",
+      "result_id": "e314bd9d-65ac-42b1-b33b-451940e7b26f"
+    },
+    {
+      "claim_id": "c019c5ca-3caf-464f-a662-a5559e3031ba",
+      "result_id": "e314bd9d-65ac-42b1-b33b-451940e7b26f"
+    },
+    {
+      "claim_id": "7672544e-553e-4fff-837e-4f3c21e28e9e",
+      "result_id": "e314bd9d-65ac-42b1-b33b-451940e7b26f"
+    },
+    {
+      "claim_id": "868b689e-ab3c-4c2c-b445-f89278f9ce24",
+      "result_id": "e314bd9d-65ac-42b1-b33b-451940e7b26f"
+    },
+    {
+      "claim_id": "08f190ec-7830-469f-8968-0adb085d2091",
+      "result_id": "e314bd9d-65ac-42b1-b33b-451940e7b26f"
+    },
+    {
+      "claim_id": "d2a7c2cf-0a05-421e-83f2-cd95be09b7d0",
+      "result_id": "e314bd9d-65ac-42b1-b33b-451940e7b26f"
+    },
+    {
+      "claim_id": "5a17c863-cf72-4428-97fe-d3e6db18a7cf",
+      "result_id": "e314bd9d-65ac-42b1-b33b-451940e7b26f"
+    },
+    {
+      "claim_id": "3d30c792-65fe-4afc-9821-09ea3b8ff756",
+      "result_id": "138a9694-cd46-4343-b886-c640459623a7"
+    },
+    {
+      "claim_id": "4f7a5193-7f7a-4d66-91b6-950fdce55e9e",
+      "result_id": "138a9694-cd46-4343-b886-c640459623a7"
+    },
+    {
+      "claim_id": "83e98891-ef13-4b46-ae5b-948b22b5ee11",
+      "result_id": "138a9694-cd46-4343-b886-c640459623a7"
+    },
+    {
+      "claim_id": "f3d87869-aaf8-4fd5-b886-7a491aefdaff",
+      "result_id": "138a9694-cd46-4343-b886-c640459623a7"
+    },
+    {
+      "claim_id": "f21ff7e7-e985-4437-b926-60bfe9114fb3",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "b5557478-f758-4230-8554-a18d27601090",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "e1b0f871-fc9f-4882-a39e-8b72d2e0b79b",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "8797a5ea-01c1-4a3b-a755-306d80597dcf",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "6e2d8b2d-7edf-4d65-9ae0-4a28b7390d7d",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "c6dc0709-d288-475a-bdf7-1a42b0419dc0",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "abdea185-f054-4755-ac8e-6291e1523c95",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "539fa57f-994d-4a0b-90a0-278908b30221",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "c431cc9d-7728-4267-9ee1-dd3763e566b4",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "126a10d2-6b5e-4682-be79-1e463590bfd6",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "bf200fba-96ee-44cf-bf22-2ad0fd9ec33c",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "10a4a48d-c6f6-4e82-bae5-5724aa516d56",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "3a7f18ba-41f8-4cfb-a57e-954c2c2493f2",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "79657fa6-16ea-4e09-8303-203b229a67aa",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "d2be6e8a-92f5-4c0d-9c35-ee8a6feff6dc",
+      "result_id": "07082ec4-ac94-4c06-adba-980e98abf68f"
+    },
+    {
+      "claim_id": "041b9fcb-089c-450d-bee5-6ed6b158b8ec",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "6714d08e-1e52-4268-bc81-547ac3c1e56e",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "01c1d5cf-f87b-46da-ab09-e2b2398a0def",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "de6836bb-ab1b-4571-ab70-cd727d2a388b",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "b7285618-4a71-4e68-8443-a60106b86460",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "57161185-9db3-453c-b618-7d516691a7c3",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "469f9149-b467-45f6-b6a8-ff886c5d6a54",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "df789a47-c376-4ce0-91d8-49496d3a95f6",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "57adb356-a51c-453c-bc61-3e49e4d1bfa6",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "c37a15f3-b46c-4a0f-8f98-133f1fb7ec2a",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "a3671d9b-5329-43bd-9cdc-fe03b89280a4",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "ecbfffc3-4cba-4492-94f3-aeddc8755045",
+      "result_id": "6258b6db-2142-4375-9d03-3eff42cfca72"
+    },
+    {
+      "claim_id": "549ce9e8-11ca-4bb2-9282-99953923fdd1",
+      "result_id": "f4b89a1a-4928-44c2-b103-8d21360f88fc"
+    },
+    {
+      "claim_id": "ffe9015b-49b6-4ca7-80cc-f4817cc6a541",
+      "result_id": "f4b89a1a-4928-44c2-b103-8d21360f88fc"
+    },
+    {
+      "claim_id": "e13fffc1-9100-4a56-a042-83ebc9b63fb3",
+      "result_id": "f4b89a1a-4928-44c2-b103-8d21360f88fc"
+    },
+    {
+      "claim_id": "c6761602-b667-45b0-90e6-4a207f3b6028",
+      "result_id": "f4b89a1a-4928-44c2-b103-8d21360f88fc"
+    },
+    {
+      "claim_id": "e5284219-2d09-4ee8-a4b5-73fc19be789d",
+      "result_id": "f4b89a1a-4928-44c2-b103-8d21360f88fc"
+    },
+    {
+      "claim_id": "a480c2cc-33f2-495a-a7e1-1a4f30015c5a",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "3e447b92-c6c5-4e6f-81ac-2e28b631a20e",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "1c721801-ff7b-4297-8565-328773838c57",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "b9aaca20-0c6d-4035-a2cd-014bb6770ef3",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "e05c1426-62fe-46f7-856e-f3869a8cca36",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "e13f1bf4-4460-4bb3-afbf-fe02b4699cf8",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "69d76d29-f8f3-4b79-87ac-9371fb394f9e",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "a00acf54-c4b4-4ac1-aa29-019ad6caf708",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "d6e1670c-661f-4463-8b6d-1feba21ae434",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "28b35b4f-ca4d-483e-8b7a-43e23280ac51",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "31614c86-b79a-43cc-b638-f7d5f8c94dd2",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "47023986-ebfc-4abf-9e8f-46cad29beaeb",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "15395624-d035-4a59-96e2-eb9beb846e30",
+      "result_id": "114ad4dc-aecd-46bb-ba97-2b766e677c4e"
+    },
+    {
+      "claim_id": "eeb997ed-e5fe-4a62-9fa2-5e17ffe2b649",
+      "result_id": "ec04ad91-a7bb-4e9f-bf9e-65701715a7af"
+    },
+    {
+      "claim_id": "67c154ef-0f01-48c5-8c20-d447c9f3b50e",
+      "result_id": "ec04ad91-a7bb-4e9f-bf9e-65701715a7af"
+    },
+    {
+      "claim_id": "250efb91-6314-4877-b666-753f659aebc7",
+      "result_id": "ec04ad91-a7bb-4e9f-bf9e-65701715a7af"
+    },
+    {
+      "claim_id": "e7cdbe12-8d85-49dd-b28e-9784fbacbbdb",
+      "result_id": "ec04ad91-a7bb-4e9f-bf9e-65701715a7af"
+    },
+    {
+      "claim_id": "175e210f-ac9a-4693-9d42-d8dc05db44c0",
+      "result_id": "38654745-bf79-4e79-b967-c8c1344631cb"
+    },
+    {
+      "claim_id": "77671fa6-ef35-44fc-a065-b5b97862592c",
+      "result_id": "38654745-bf79-4e79-b967-c8c1344631cb"
+    },
+    {
+      "claim_id": "877db356-d16a-44ef-aff0-c6de7127adf6",
+      "result_id": "38654745-bf79-4e79-b967-c8c1344631cb"
+    },
+    {
+      "claim_id": "863bb6da-ff26-4e6c-b721-e69bdb2856ea",
+      "result_id": "bf01abf1-feb6-4ad2-ba2c-40b391b16ca7"
+    },
+    {
+      "claim_id": "c30a5030-d489-461c-91b7-6413ef1f01c0",
+      "result_id": "bf01abf1-feb6-4ad2-ba2c-40b391b16ca7"
+    },
+    {
+      "claim_id": "7e965c2b-bc4e-4364-851a-ad527c505560",
+      "result_id": "abddf093-1244-49ec-a4ef-7f460d66813b"
+    },
+    {
+      "claim_id": "947b0815-5278-4f98-a922-72f7cfd0271a",
+      "result_id": "abddf093-1244-49ec-a4ef-7f460d66813b"
+    },
+    {
+      "claim_id": "2c296158-5f61-4127-b031-8db1d1d05e03",
+      "result_id": "5264b1a8-7f0d-4a4f-b5fb-18a098299265"
+    },
+    {
+      "claim_id": "8908da04-7d80-494e-bc50-dbb2c76901e7",
+      "result_id": "5264b1a8-7f0d-4a4f-b5fb-18a098299265"
+    },
+    {
+      "claim_id": "a0cffedb-df06-462f-8f07-586f8a790b63",
+      "result_id": "5264b1a8-7f0d-4a4f-b5fb-18a098299265"
+    },
+    {
+      "claim_id": "4bc2b50a-8480-4820-b669-b5edaca10ccb",
+      "result_id": "5264b1a8-7f0d-4a4f-b5fb-18a098299265"
+    },
+    {
+      "claim_id": "90a2c9f5-8e9f-436c-8a11-678b4ea8bcbd",
+      "result_id": "5264b1a8-7f0d-4a4f-b5fb-18a098299265"
+    },
+    {
+      "claim_id": "8e8ff94e-65f0-46e7-b4fe-3123e8b1c187",
+      "result_id": "5264b1a8-7f0d-4a4f-b5fb-18a098299265"
+    },
+    {
+      "claim_id": "8fa75c5f-626b-4785-83dc-b70342070c35",
+      "result_id": "5264b1a8-7f0d-4a4f-b5fb-18a098299265"
+    },
+    {
+      "claim_id": "7e5bd914-02da-4220-a42f-e984f9b6c572",
+      "result_id": "5264b1a8-7f0d-4a4f-b5fb-18a098299265"
+    },
+    {
+      "claim_id": "23adbe09-a3be-4fe7-894a-8139742dcd23",
+      "result_id": "5264b1a8-7f0d-4a4f-b5fb-18a098299265"
+    },
+    {
+      "claim_id": "b7f876c3-ec19-4123-b8e6-a0d74ed13a01",
+      "result_id": "5e9d58fd-bb7a-41d6-90ae-44a70e49888e"
+    },
+    {
+      "claim_id": "75a0cd31-8ce0-4c04-aff4-59edb0bbf401",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "ad1bf0dc-d250-4f5d-b0cb-0c0610a0168f",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "a84016f5-e8ba-4a86-aef7-b1eebaf7a6a4",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "512dd4ca-9f82-4bc9-ab4f-eaebe425d726",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "f385274d-0dce-4508-b081-5f07f4ea0fc7",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "1c0f4063-672e-4753-96d8-b162e5e843a1",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "eae91937-f577-4714-9ff9-cfa5512a2549",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "a38e1b81-5c2b-44d7-a83a-a0c11d3680f9",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "86918e59-52c4-4fff-bfd3-b60a3eed68f4",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "5c31cae7-40f8-45cf-95fa-792ee90bf501",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "da9b4ef2-a05a-457e-afb9-623529e94645",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "454c364c-1c7c-4f3b-90a3-77ca46f132ed",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "2bd31d7e-41c3-4330-9cca-3464dbaf9dee",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "8f9bfc38-f2e7-49c3-ab39-7c9fc3d49ad3",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "c7ae8f38-98ec-46e3-89d8-4b304c2def97",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    },
+    {
+      "claim_id": "cf6c3ca7-4ae2-4f77-b21f-e0d71ce12206",
+      "result_id": "15b1b15b-fa08-4bd5-80ce-58122cbbed4d"
+    }
+  ],
+  "comparisons": []
+}

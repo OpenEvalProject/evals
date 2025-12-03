@@ -1,0 +1,401 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "CoSMO is an engineered yeast cooperative system where two strains (L-H+ and H-L+) exchange costly metabolites (lysine and hypoxanthine) and model natural metabolic cooperation. The system can transition from cooperation to competition when metabolites are externally supplied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the CoSMO system design and its relevance to natural systems. The claims are well-supported by multiple citations to prior work and Figure 1A. The system design is clearly described with appropriate references to the engineering and validation of the strains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Evolution experiments in CoSMO communities and lysine-limited monoculture chemostats repeatedly produced similar mutations (ecm21, rsp5, DISOMY14) in L-H+ strains. These mutations arose independently of the cooperative partner, as evidenced by their appearance in monocultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C20-C23 describe the experimental evolution setup and genomic analysis results. The repeated emergence of similar mutations in both community and monoculture settings (Table 1) strongly supports the conclusion that these mutations arose independently of the partner. The whole-genome sequencing data and experimental design are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors define a 'win-win mutation' as one that is both self-serving (improves self fitness) and partner-serving (increases benefit supply rate per intake benefit). For L-H+, partner-serving is quantified as the H-L exchange ratio (rH/cL), representing hypoxanthine release rate per lysine consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 establish clear operational definitions for win-win mutations and the partner-serving phenotype. The definitions are logically consistent and build on prior work (Hart et al., 2019b). The mathematical framework for quantifying the exchange ratio is well-justified and provides a testable metric.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C50"
+    ],
+    "result": "Evolved L-H+ clones with ecm21 or rsp5 mutations display self-serving phenotypes, growing faster than ancestors in low lysine by stabilizing the lysine permease Lyp1 on the cell membrane. Engineered mutations are sufficient to confer this phenotype, and ecm21\u0394 outcompetes ancestors 4.4-fold in chemostats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 and C50 demonstrate the self-serving nature of the mutations through multiple lines of evidence: growth rate measurements (Figure 2A), competition experiments (Figure 2\u2014figure supplement 2), and microscopy showing Lyp1 stabilization (Figure 2B). The engineered mutations recapitulate the evolved phenotypes, providing strong causal evidence. The 4.4-fold growth advantage is quantitatively supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C51"
+    ],
+    "result": "ecm21 mutants exhibit partner-serving phenotypes by increasing the hypoxanthine-lysine exchange ratio (rH/cL) compared to ancestors. This increased exchange ratio represents improved metabolic efficiency in converting lysine consumption to hypoxanthine release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C51 are supported by chemostat experiments showing higher steady-state hypoxanthine concentrations in ecm21\u0394 cultures (Figure 3A) and consistently higher exchange ratios across multiple doubling times (Figure 3B). The measurements are quantitative and statistically significant. However, the molecular mechanism remains speculative (C56-C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C47"
+    ],
+    "result": "ecm21\u0394 increases the steady-state growth rate of both the partner strain H-L+ and the entire CoSMO community by approximately 21%, demonstrating that ecm21 is partner-serving. This effect is explained by the increased exchange ratio rather than new metabolic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 and C47 are supported by growth measurements in spatially structured CoSMO communities (Figure 4). The ~21% increase in partner growth rate is statistically significant (p<10^-5) and matches the predicted 26% increase based on the exchange ratio measurements. The mechanistic explanation linking exchange ratio to partner growth is mathematically justified and consistent with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C69",
+      "C78"
+    ],
+    "result": "Win-win ecm21 mutations that are both self-serving and partner-serving can rapidly evolve in well-mixed environments without any prior history of cooperation or presence of a cooperative partner. The partner-serving phenotype emerged as a side effect of adaptation to lysine limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C52-C53, C69, and C78 represent the central conclusion of the manuscript. The evidence is strong: ecm21 mutations arose in both community and monoculture settings (Table 1), display both self-serving (Figures 2) and partner-serving (Figures 3-4) phenotypes, and the monoculture evolution demonstrates independence from the partner. This is a novel finding that challenges previous assumptions about pleiotropy and cooperation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C67"
+    ],
+    "result": "Not all self-serving mutations are partner-serving. DISOMY14, which duplicates the lysine permease LYP1, improves lysine affinity without increasing the exchange ratio or partner growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 and C67 provide an important control showing that self-serving and partner-serving phenotypes are separable. The DISOMY14 data (Figures 2, 3A) demonstrate improved self-fitness without partner-serving effects, supporting the specificity of the ecm21 win-win phenotype. This strengthens the overall argument by showing not all mutations have pleiotropic effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Two possible mechanisms for how ecm21 mutants achieve higher exchange ratios are proposed: increased purine overproduction creating steeper concentration gradients, or stabilization of purine permeases similar to lysine permease stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C57 are explicitly speculative and not tested in this study. While the hypotheses are reasonable given the known functions of Ecm21 and Rsp5, no experimental evidence is provided to distinguish between these mechanisms or test them directly. Future work is needed to determine the molecular basis of the increased exchange ratio.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "The authors propose three mechanisms for stabilizing nascent cooperation without partner choice: physiological responses to new environments, self-benefiting changes that indirectly promote partner fitness, and pleiotropic win-win mutations that directly promote both self and partner fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 and C68 synthesize known mechanisms with the current findings. The three mechanisms are well-supported by citations and the authors' own data. The distinction between indirect (C65-C66) and direct (C68) partner-serving effects is conceptually important and supported by the DISOMY14 vs. ecm21 comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Pleiotropic linkage between self-serving and partner-serving traits has been observed in natural cooperative systems with long evolutionary histories. Such linkage arises when traits are co-regulated by the same gene and may be common given small-world network connectivity, though it can be broken during evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 provide important context from prior work on pleiotropy and cooperation. The claims are well-supported by multiple citations to literature. The characterization that previous examples involved systems with long evolutionary histories (C77) sets up the novelty of the current findings. The discussion of network connectivity (C73) provides a mechanistic rationale for pleiotropy prevalence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C12"
+    ],
+    "result": "Win-win mutations have been identified in other synthetic cooperative communities, raising the possibility that pre-existing pleiotropy may stabilize nascent cooperation in natural communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C81 and C12 extend the findings to broader implications. While C79 is supported by citations, C80 is speculative ('suggesting'), and C81 and C12 are explicitly stated as possibilities. The generalization to natural communities is reasonable but requires further validation. The evidence from synthetic systems is suggestive but not definitive for natural community dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "CoSMO evolution experiments were conducted with nine independent lines at different initial strain ratios, grown in well-mixed conditions at 30\u00b0C with periodic dilutions to maintain OD below 0.5, tracking turbidity and freezing samples for later analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C92 describe the experimental evolution methodology in detail. The experimental design is sound with appropriate replication (nine independent lines), controls for mating (ste3\u0394 mutation), and measures to avoid confounding nutrient limitations. The methods are clearly described and consistent with prior work (Hart et al., 2019a).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C107"
+    ],
+    "result": "Chemostat monoculture evolution of L-H+ was conducted in six independent vessels at two different doubling times (7 hr and 11 hr) with 21 \u00b5M lysine, achieving steady-state cell densities between 4\u00d710^6 and 1.2\u00d710^7 cells/ml. Experiments ran contamination-free for 500 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C102 and C107 describe the chemostat evolution methodology. The experimental design is appropriate with independent replicates at different growth rates. The observation that L-H+ rapidly evolved (C107) motivated the short-term chemostat experiments for phenotypic characterization. The contamination-free operation for 500 hours demonstrates good experimental technique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Growth rates were measured using a fluorescence microscopy assay where cells were diluted to low densities, imaged periodically, and analyzed using ImageJ plugin Bioact. Growth rate was calculated as the maximal slope of ln(normalized fluorescence intensity) over consecutive time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 describe the growth rate quantification method. The approach is validated in prior work (Hart et al., 2019c) and appropriate for measuring growth rates at different metabolite concentrations. The use of low cell densities minimizes metabolite depletion, which is important for accurate measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Short-term chemostat experiments measured exchange ratios by setting flow rates to achieve desired doubling times, sampling periodically to measure cell densities via flow cytometry with fluorescent beads, and quantifying hypoxanthine concentration using a yield-based bioassay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 describe the methods for measuring exchange ratios. The approach is well-designed to minimize evolution during measurements (experiments kept within 24 hours). The use of fluorescent beads for absolute cell density quantification and the yield-based bioassay for hypoxanthine are appropriate and validated methods (Hart et al., 2019a).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "CoSMO community growth rates were measured in spatially structured environments on agarose pads, with periodic sampling by cutting out patches, extracting cells, and analyzing by flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 describe the method for measuring community growth rates. The use of spatially structured environments prevents rapid evolution, which is important for accurate phenotypic measurements. The method is described in prior work (Hart et al., 2019a) and appropriate for the experimental goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Lyp1-GFP localization was imaged using fluorescence microscopy at 40\u00d7 magnification in cells grown in high or low lysine, using identical exposure times for evolved and ancestral cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 describe the microscopy methods for visualizing Lyp1 localization. The methods are appropriate and the use of identical exposure times ensures fair comparison. Note: C119 contains a likely typo (300\u00b0C instead of 30\u00b0C), but this doesn't affect the validity of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The rsp5(P772L) point mutation was introduced into ancestral strains using a two-step strategy involving a drug resistance cassette placed downstream of the mutation site. PCR verification showed 11/11 correct integration, but Sanger sequencing revealed only 1/11 had the correct mutation due to recombination during transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 describe the genetic engineering approach for introducing the rsp5 mutation. The method is appropriate for an essential gene, and the authors correctly recognized the need for sequencing verification beyond PCR. The low frequency of correct mutation incorporation (1/11) is explained by the large homologous region allowing recombination without the mutation. This demonstrates good experimental rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Cooperation, defined as paying a fitness cost to generate benefits for others, is widespread and drives major evolutionary transitions. However, cooperation is vulnerable to cheaters who consume benefits without reciprocating, as seen in cancers and rhizobia-legume interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C136 provide background on cooperation and cheating. These are well-established concepts in evolutionary biology, supported by appropriate citations. The definitions are standard and the examples (multicellularity, mutualism, cheating) are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Known mechanisms for protecting cooperation include partner choice, spatial structure (partner fidelity feedback), and pleiotropy where reducing benefit supply also harms self. Examples include cleaner fish-client interactions, spatial structure effects, and Dictyostelium dimA mutants that fail at both cheating and reproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C146 review established mechanisms for maintaining cooperation. The claims are well-supported by citations and provide important context for understanding the novelty of the current findings. The Dictyostelium example (C144-C146) is particularly relevant as a prior example of pleiotropy stabilizing cooperation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Prior to this work, pleiotropic linkage between self-serving and partner-serving traits was only demonstrated in systems with long evolutionary histories of cooperation. It was unclear how easily such linkage could arise, with two non-mutually exclusive possibilities: cooperation promotes pleiotropy, or pleiotropy promotes cooperation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C153 identify the knowledge gap addressed by this study. The characterization of prior work is accurate and the theoretical framework (cooperation promotes pleiotropy vs. pleiotropy promotes cooperation) is supported by citations. This effectively motivates the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Principles from CoSMO have been validated in natural microbial communities. In well-mixed environments, self-serving mutations are favored regardless of partner effects because benefits are uniformly distributed, and all characterized CoSMO mutants outcompeted ancestors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158 establish the relevance of CoSMO to natural systems and explain the evolutionary dynamics in well-mixed environments. The claims are supported by citations to prior work showing CoSMO principles apply to natural communities. The explanation for why self-serving mutations are favored in well-mixed environments is logically sound.",
+    "result_type": "MINOR"
+  }
+]

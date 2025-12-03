@@ -1,0 +1,528 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors establish background knowledge about feedback mechanisms in signaling networks, noting that negative feedback enables rapid, tightly regulated responses, prevents pathway hyperactivation, ensures resistance to perturbations, and may optimize energetic costs. They note that dysfunctional signaling underlies complex diseases and that overshoot dynamics in Akt recruitment indicate acute negative feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C12-C15 represent well-established background knowledge supported by appropriate citations. These claims provide context for the study and are not contested findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors describe the canonical insulin/PI3K/Akt signaling pathway, including insulin receptor activation, IRS binding, PI3K recruitment and PIP3 production, PTEN-mediated PIP3 degradation, Akt recruitment via PH domains, Akt phosphorylation by PDPK1 and mTORC2, and the existence of over 100 Akt substrates. They note dysregulated PI3K/Akt activity is linked to cancer and diabetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C29 describe established mechanisms of insulin signaling supported by appropriate citations. These provide necessary background for understanding the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors establish that insulin-stimulated Akt recruitment displays overshoot and oscillatory behavior indicative of acute negative feedback. They note that mTORC1/S6K are activated downstream of Akt and have been reported to provide negative feedback through RICTOR phosphorylation and IRS1 phosphorylation, but it remains unclear whether these feedbacks are responsible for the observed overshoot dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 establish the knowledge gap the study addresses. The overshoot behavior is supported by citations and data in Figure 1B, and the uncertainty about mTORC1/S6K's role in acute feedback is appropriately identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors characterize insulin-stimulated Akt dynamics in 3T3-L1 adipocytes, showing that 1 nM insulin causes Akt PM recruitment peaking at 75s followed by decline to half-maximum by 10 min, while 100 nM insulin causes 4-fold higher maximum recruitment with overshoot and secondary increase. Akt phosphorylation at T309 and S474 shows similar overshoot, with T309 phosphorylation kinetics faster than S474. Akt substrate phosphorylation (AS160, FOXO1, GSK3, PRAS40) did not exhibit overshoot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are directly supported by experimental data in Figure 1B-D. The characterization of Akt recruitment and phosphorylation dynamics provides the foundation for investigating feedback mechanisms. The observation that substrate phosphorylation lacks overshoot is consistent with delayed S474 phosphorylation extending peak Akt activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors note that Akt singly phosphorylated at T309 is active, and that delayed S474 phosphorylation doubles Akt activity and likely extends peak substrate phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by citation to previous work (Kearney et al., 2019) and provide mechanistic interpretation of the observed kinetics. The inference about extended substrate phosphorylation (C46) is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors test whether mTORC1 mediates the acute negative feedback by modeling and experiment. The computational model predicted that rapamycin would eliminate overshoot and increase Akt recruitment by 25%. However, despite complete mTORC1 inhibition by rapamycin, no change was observed in Akt recruitment or phosphorylation, indicating the feedback mechanism is mTORC1-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by model predictions (Figure 1F) and experimental data (Figure 1G-H). The discrepancy between model prediction and experimental observation provides strong evidence against mTORC1-mediated acute feedback. Complete mTORC1 inhibition is demonstrated by loss of S6K phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The authors develop and compare nine computational models with different feedback architectures. Quantitative assessment revealed that Model 9 (Akt to IRS/PI3K) best matched experimental data, followed by Model 7 (mTORC2 to PTEN) and Model 8 (Akt to PTEN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by quantitative model fitting shown in Figure 2B. The objective function values clearly distinguish model performance, though identifiability analysis (Supplementary file 2) shows all models have some non-identifiable parameters, which is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors test model predictions by inhibiting Akt with GDC0068. They observe a 3-fold increase in Akt PM recruitment and loss of overshoot upon insulin stimulation. This was confirmed by subcellular fractionation showing increased endogenous Akt2 at the PM, and was observed across multiple cell types (HEK293E, HeLa, 3T3-L1 fibroblasts, MCF7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are directly supported by experimental data in Figure 2D-E and Figure 2\u2014figure supplement 2B-E. The consistency across multiple cell types and experimental approaches strengthens the finding. The magnitude and kinetics closely match Model 9 predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The authors use chemical genetics to confirm Akt-dependent feedback. Two kinase-dead Akt mutants (W80A-T309A-S474A and W80A-K181A) exhibited 3.5-fold augmented recruitment and loss of overshoot compared to active W80A Akt in the presence of MK2206. This indicates an Akt-dependent feedback signal limiting Akt activation at the PM, likely through the IRS/PI3K node.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by data in Figure 2F. The use of two different kinase-dead mutants (one preventing phosphorylation, one preventing ATP binding) provides orthogonal validation. The phenotype matches pharmacological Akt inhibition and Model 9 predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors investigate the role of S474 phosphorylation in feedback engagement. Loss of S474 phosphorylation (W80A-S474A) resulted in attenuated overshoot but no change in response magnitude with 1 nM insulin. Loss of T309 phosphorylation (W80A-T309A) caused loss of overshoot and 3-fold increased PM association. Combined modeling and experimental analyses support that S474 phosphorylation is largely redundant for activating negative feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by experimental data in Figure 2I and model predictions in Figure 2H. The differential effects of T309A vs S474A mutations are consistent with T309 being essential for kinase activity while S474 only enhances it. The conclusion about S474 redundancy is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The authors test whether Akt regulates PIP3 abundance by measuring PIP3 levels with Akt inhibition. Three Akt inhibitors (GDC0068, MK2206, GSK2334470) each augmented insulin-stimulated PIP3 abundance approximately 5-fold relative to insulin alone, suggesting Akt regulates PIP3 abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by PIP3 ELISA data in Figure 3A. The use of three mechanistically distinct inhibitors strengthens the conclusion. The 5-fold increase is substantial and consistent across inhibitors. PIP3 normalization to PI(4,5)P2 is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors show that Akt regulation of PIP3 alters localization of PIP3-binding proteins. PDPK1 and Gab2PH recruitment to the PM was markedly enhanced with GDC0068 and MK2206. MK2206-dependent hyper-recruitment of Gab2PH was rescued by co-expression of active W80A Akt but not kinase-dead W80A-T309A Akt, demonstrating that Akt activity is required for the effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by data in Figure 3B-F. The rescue experiment with W80A Akt (Figure 3F) provides strong evidence that Akt kinase activity is necessary and sufficient to regulate PIP3-dependent protein recruitment. This extends the PIP3 measurement to functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors test whether Akt regulates PIP3 degradation by PTEN. Following PI3K inhibition, there was no difference in PM dissociation rate between active and kinase-dead Akt, or for PDPK1 regardless of Akt inhibition. In cells expressing constitutively active PI3K (p110*), kinase-dead Akt showed no increased recruitment with MK2206. In PTEN-null HCC1937 cells, Akt recruitment increased with IGF1 and further with GDC0068, indicating Akt-mediated feedback operates independently of PTEN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by data in Figure 4B-E. The dissociation rate experiments rule out PTEN-mediated feedback, consistent with Model 9 (Akt to IRS/PI3K) over Models 7-8 (feedback to PTEN). The p110* and PTEN-null experiments provide orthogonal evidence supporting feedback upstream of PIP3 production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The authors show that Akt controls PI3K localization. Subcellular fractionation revealed increased PI3K p85 and p110 at the PM upon insulin stimulation, which was potentiated with Akt inhibitors GDC0068 and MK2206. This was corroborated by immunofluorescence/TIRFM showing increased PM PI3K p85 with Akt inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by data in Figure 4F-G. The use of two complementary techniques (fractionation and imaging) strengthens the finding. The immunofluorescence was less sensitive but still detected the effect with Akt inhibitors, consistent with the fractionation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The authors propose that upon growth factor stimulation, Akt translocates to the PM where it is activated, then engages negative feedback that limits PM-associated PI3K and lowers PIP3 abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 synthesizes the findings from multiple experiments (C48-C72) into a coherent model. The conclusion is well-supported by the collective evidence ruling out PTEN-mediated feedback and demonstrating Akt-dependent regulation of PI3K localization and PIP3 levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors investigate IRS1/2 localization as the mechanism of feedback. Following insulin stimulation, IRS1 and IRS2 at the PM decreased. However, in the presence of Akt inhibitors (GDC0068 and MK2206), IRS1 and IRS2 were retained at the PM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by TIRFM data in Figure 5A-B. The Akt-dependent depletion of PM IRS1/2 provides a mechanism for reduced PI3K recruitment. The use of two different Akt inhibitors strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors show that IRS1/2 depletion from the PM is mTORC1/S6K-independent. Rapamycin was unable to inhibit the insulin-stimulated decrease in PM-associated IRS1 or IRS2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by data in Figure 5C-D. This is consistent with the earlier finding that rapamycin does not affect Akt recruitment (C48-C49) and further establishes that the feedback is distinct from known mTORC1/S6K-mediated mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The authors characterize the destination of IRS1 upon insulin stimulation. Subcellular fractionation demonstrated an Akt-dependent decrease in endogenous IRS1 at the PM and showed that IRS1 moves from the PM to the cytosol rather than to internal membranes (HDM/LDM fractions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by fractionation data in Figure 5E. The comprehensive fractionation distinguishing PM, cytosol, LDM, and HDM provides clear evidence for PM-to-cytosol translocation rather than membrane-to-membrane trafficking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors identify the PH domain as responsible for basal IRS PM localization. Deletion of the IRS1 PH domain (DelPH IRS1) decreased its PM abundance in unstimulated cells. They conclude that IRS1/2 is PM-localized in unstimulated cells via a PH domain-dependent interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by data in Figure 5F showing reduced TIRF/epifluorescence ratio for DelPH IRS1. The PH domain's affinity for PI(4,5)P2 is established knowledge. This finding explains the basal PM localization of IRS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The authors conclude that upon insulin stimulation, Akt induces translocation of IRS1/2 from the PM to the cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 synthesizes findings from C74-C85. The conclusion is well-supported by TIRFM showing Akt-dependent IRS depletion from PM, fractionation showing PM-to-cytosol movement, and the mTORC1-independence of the process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The authors show that Akt inhibitors do not alter insulin receptor localization or activation. Treatment with Akt inhibitors did not alter IR localization or tyrosine phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by data in Figure 5G-H. This rules out indirect effects through IR and supports direct regulation of IRS by Akt. The use of total tyrosine phosphorylation as a measure of IR activation is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The authors show that IRS removal from the PM is IR-independent. Deletion of the IRS1 PTB domain (DelPTB IRS1), which mediates IR interaction, did not impact IRS1 removal from the PM upon insulin stimulation. This suggests Akt removes IRS from the PM via disruption of IR-independent interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by data in Figure 5I. The DelPTB experiment elegantly demonstrates that IR binding is not required for IRS translocation, supporting a mechanism involving disruption of PH domain-membrane interactions rather than IR-IRS interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors show that Akt controls IR-IRS interaction levels. Following immunoprecipitation of endogenous IRS1 or IRS2, the IR was only detected with insulin. However, IR detection was augmented approximately 17- and 7-fold for IRS1, and 19- and 12-fold for IRS2, in the presence of Akt inhibitors GDC0068 and MK2206, suggesting Akt controls the level of IR-IRS interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by mass spectrometry data in Figure 5J. The large fold-changes with Akt inhibition are striking. While the mechanism is indirect (Akt depletes PM IRS, reducing the pool available for IR interaction), the conclusion that Akt controls IR-IRS interaction levels is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The authors propose that Akt limits PI3K-mediated PIP3 production by depleting PM-associated IRS, reducing the pool available to interact with activated IR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 synthesizes the mechanistic findings from C74-C95. The model is well-supported by the collective evidence showing Akt-dependent IRS depletion from PM, PM-to-cytosol translocation, increased IR-IRS interaction with Akt inhibition, and increased PI3K at PM with Akt inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The authors identify that IRS1 and IRS2 collectively contain 11 phosphorylation sites within an Akt substrate motif (R-X-R-X-X-S/T).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is based on sequence analysis using the established Akt substrate motif. This provides the basis for investigating which sites mediate the feedback.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors test whether phosphorylation of IRS at Akt motif sites drives PM dissociation. Following insulin stimulation, wild-type IRS1/2 dissociated from the PM, but mutants with six (6P IRS1) or five (5P IRS2) Akt motif sites mutated to alanine showed increased PM abundance. Expression of 6P IRS1 or 5P IRS2 resulted in hyper-recruitment of Akt to the PM compared to wild-type, suggesting phosphorylation of IRS1/2 facilitates PM removal and drives negative feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 are supported by TIRFM data in Figure 6C-D. The multi-site mutants phenocopy Akt inhibition, providing strong evidence that phosphorylation at these sites drives IRS translocation. The increased Akt recruitment with mutant IRS indicates loss of feedback.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors identify IRS2 S306 and S577 as novel Akt substrates. These sites were phosphorylated by Akt in vitro, and in cells were sensitive to Akt inhibitors (GDC0068/MK2206) but not mTORC1 inhibitors (rapamycin/rapalink), meeting the criteria for direct Akt substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 are supported by mass spectrometry data in Figure 6E-F. The three-pronged approach (in vitro kinase assay, Akt inhibitor sensitivity, mTORC1 inhibitor insensitivity) provides strong evidence for direct Akt-mediated phosphorylation. The classification as novel Akt substrates is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors show that IRS2 S306 and S577 synergistically drive feedback. Concurrent mutation of both sites (S306/577A IRS2) prevented PM dissociation of IRS2 following insulin stimulation and resulted in hyper-recruitment of Akt and PDPK1 to the PM compared to wild-type IRS2, consistent with increased PIP3 levels. This suggests Akt-mediated phosphorylation of these sites synergistically dissociates PM-associated IRS2 to limit PIP3 production and Akt activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by data in Figure 6G-H. The double mutant phenocopies Akt inhibition (compare to Figure 5A-B), while single mutants had only subtle effects (Figure 6\u2014figure supplement 2A,D), demonstrating synergy. This identifies the key regulatory sites driving the feedback.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The authors show differential regulation between IRS isoforms. Mutation of the corresponding sites in IRS1 (S270/527A) did not prevent PM dissociation upon insulin stimulation and had only subtle effects on Akt recruitment, demonstrating alternate regulation between IRS1 and IRS2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by data in Figure 6\u2014figure supplement 4. The differential effects of equivalent mutations in IRS1 vs IRS2 indicate isoform-specific regulation. This suggests additional IRS1 sites or mechanisms contribute to its regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors propose a comprehensive model: In unstimulated cells, IRS is PM-localized via PH domain interaction. Upon insulin binding, Akt is rapidly activated and directly phosphorylates IRS at key residues (IRS2 S306/S577), causing IRS translocation from PM to cytosol, depleting the pool available for IR interaction, and ultimately limiting PM-associated PI3K and PIP3 synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 synthesize all major findings into a coherent model illustrated in Figure 7. Each component is supported by experimental evidence: PH domain-dependent basal localization (C83-C85), Akt-mediated phosphorylation (C105-C109), PM-to-cytosol translocation (C81-C82), reduced IR-IRS interaction (C91-C95), and reduced PI3K/PIP3 (C71-C72, C60-C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors speculate about the evolutionary and functional significance of the feedback mechanism, suggesting it may have co-evolved with IRS proteins to enhance IR signaling capacity by providing precise temporal control, enabling pathway-specific regulation, and potentially allowing crosstalk through phosphorylation by other kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C123 are speculative interpretations about the broader significance of the mechanism. While plausible, these hypotheses are not directly tested in the study. They represent reasonable discussion points but lack experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors distinguish their findings from mTORC1/S6K feedback. The feedback reported does not require mTORC1 activation (rapamycin had no effect on Akt recruitment, phosphorylation, or IRS1/2 localization). The Akt-derived feedback is activated acutely (~1 min) following growth factor exposure, likely much faster than mTORC1/S6K feedbacks that rely on IRS degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are supported by rapamycin experiments (Figure 1G-H, Figure 5C-D) and the kinetics observed throughout the study. The distinction from slower mTORC1/S6K feedback is important for understanding the temporal organization of feedback mechanisms. The speculation about relative speeds (C126) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors establish that T309 phosphorylation alone is sufficient for feedback. Previous work showed that in the absence of S474 phosphorylation, Akt is active and sustains T309 phosphorylation. The current study shows negative feedback is engaged without S474 phosphorylation. Collectively, these findings demonstrate that Akt phosphorylated at T309 alone is capable of substrate phosphorylation and sufficient for eliciting feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 integrate previous findings (supported by citations) with current data (Figure 2I). The conclusion that T309 phosphorylation is sufficient for feedback is well-supported by the S474A mutant experiments and consistent with the known partial activity of T309-only phosphorylated Akt.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "The authors show that losing negative feedback from Akt to IRS resulted in a profound increase in PIP3 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is directly supported by data in Figure 3A showing ~5-fold increase in PIP3 with Akt inhibition. This demonstrates the physiological importance of the feedback mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors provide clinical context, noting that Akt hyperactivation due to genetic lesions can cause uncontrolled cell proliferation and survival, that Akt is frequently hyperactivated in cancers, but that no Akt inhibitors have been approved despite clinical trials with MK2206 and GDC0068 showing severe side effects and limited tumor shrinkage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 represent established clinical knowledge supported by appropriate citations. This provides important context for the therapeutic implications discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The authors discuss therapeutic implications, demonstrating that Akt inhibition has unexpected effects on signaling networks through loss of feedback. Akt inhibition increased PIP3 levels >5-fold and enhanced PM recruitment of PDPK1 and GAB2. Since PDPK1 regulates PKC, S6K, and SGK, its mislocalization would likely influence these networks. The central importance of PIP3 beyond Akt signaling may have contributed to the lack of clinical efficacy of Akt inhibitors, highlighting the need for better understanding of feedback and crosstalk for effective therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C141 are supported by the experimental findings (Figure 3A-D) and represent important implications for drug development. The connection to clinical failures is speculative but reasonable given the data. The call for better understanding of feedback mechanisms (C141) is well-justified by the findings.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C71",
+      "C73",
+      "C74"
+    ],
+    "result": "Larval gustatory neurons exhibit multimodal taste responses with approximately 30-40% of neurons responding to multiple taste modalities, including tastants of opposite hedonic valence. Approximately 60-70% of neurons showed unimodal responses, with the most frequent unimodal responses to sucrose and high salt. Distinct temporal dynamics including ON responses, OFF responses, and late activation were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C46-C54, C71, C73-C74 collectively demonstrate multimodal taste integration in larval gustatory neurons through whole-organ calcium imaging data (Figure 2). The quantitative measurements of response proportions are consistent across different experimental paradigms (group stimulation vs. individual tastants), and the data show clear evidence of neurons responding to multiple taste modalities including opposite valences. The temporal dynamics are documented in Figure 3 and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C10",
+      "C45",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C68",
+      "C88",
+      "C96",
+      "C105"
+    ],
+    "result": "The C2 neuron in the terminal organ ganglion (TOG) contributes to external sucrose sensing in Drosophila larvae. Silencing C2 using tetanus toxin or optogenetic approaches resulted in reduced sucrose preference, particularly on denser (2.5%) agarose substrates where food ingestion is impaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64, C68, C88, C96, and C105 provide converging evidence from calcium imaging (C7, C45), behavioral assays with neuronal silencing (C59-C64), and optogenetic manipulation (C68) that C2 contributes to sucrose sensing. The behavioral defects are statistically significant (p<0.05, Figure 4A) and consistent across multiple experimental approaches. The substrate-dependent effect (2.5% vs 1% agarose) strengthens the interpretation that C2 functions in external taste sensing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C69",
+      "C70",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "External and internal gustatory systems use distinct and complementary mechanisms for sugar sensing in Drosophila larvae. External TOG neurons (particularly C2) contribute to sugar detection when food ingestion is limited, while the pharyngeal Gr43a receptor system functions primarily during food ingestion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C69-C70, C96-C98 are supported by the combined behavioral data showing substrate-dependent roles of C2 (Figure 4B) and Gr43a (Figure 4\u2014figure supplement 1B, B'). The food ingestion assay (C65-C67, Figure 4C) provides direct evidence that larvae cannot readily ingest 2.5% agarose at early timepoints, supporting the proposed complementary mechanism. The model is consistent with prior literature on Gr43a function and the new C2 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Larval gustatory neurons exhibit distinct temporal response dynamics including OFF responses, late activation, and fluorescence decreases (deactivation). The CDL2 neuron shows stereotypical deactivation responses to citric acid while the neighboring CDL1 neuron shows canonical activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C75-C78 describe distinct temporal dynamics supported by calcium imaging data in Figure 3 and Figure 3\u2014figure supplement 1. The concomitant activation of CDL1 and deactivation of CDL2 in response to citric acid is documented across multiple preparations (n\u22654). However, the mechanistic interpretation of these responses (C76, C79) remains speculative and would require additional experiments to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The synchronous activation and deactivation responses in adjacent neurons (CDL1 and CDL2) resemble ephaptic signaling, though this mechanism has not been confirmed in Drosophila taste neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 proposes ephaptic signaling as a mechanism based on the observed activation-deactivation pattern, but this is explicitly speculative. Claim C80 notes that ephaptic transmission has been described in adult fly olfaction but remains unconfirmed in taste. The observed pattern is consistent with ephaptic signaling but alternative mechanisms (e.g., lateral inhibition through other means) have not been ruled out. Electrophysiological or other direct evidence would be needed to confirm this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The order of tastant presentation does not significantly affect neuronal responses, as demonstrated by C7 neuron responses to sucrose before and after denatonium presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by statistical analysis (one-way ANOVA, p=0.57, N=4) shown in Figure 2\u2014figure supplement 2. This control experiment validates the sequential stimulation approach used in the study. However, the sample size is relatively small (N=4) and only one neuron type was tested, limiting generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Larvae can readily ingest 1% agarose substrate but show impaired ingestion of 2.5% agarose, particularly at early timepoints (2-5 minutes), as demonstrated by food dye ingestion assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by the food ingestion test data shown in Figure 4C. The visual evidence of blue dye in larval intestines provides clear qualitative support for differential ingestion rates. This result is critical for interpreting the behavioral differences between 1% and 2.5% agarose conditions and supports the proposed model of complementary external and internal taste sensing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "C6 and C7 neurons do not show behavioral defects for direct sucrose preference when silenced. C6 is known for CO2 sensing and may integrate sucrose taste in the context of detecting fermenting substrates. C7 integrates opposed valence tastants (sucrose and bitter compounds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C83-C87 are supported by behavioral data (Figure 4A) and prior literature. The lack of behavioral defect for C6 and C7 silencing is clearly shown, and the interpretation regarding C6's role in CO2 sensing is well-cited (C86). The speculation about C6's role in mixed taste computation (C87) is reasonable but explicitly noted as requiring future confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Additional TOG neurons beyond C2 likely participate in sugar behavior, as C2 silencing does not completely abolish sucrose attraction. C5 neuron silencing showed a trend toward reduced preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 are reasonable inferences from the incomplete behavioral defect observed with C2 silencing, but direct evidence for other neurons is limited. Claim C94 regarding C5 shows only a trend (Figure 4\u2014figure supplement 1A) without statistical significance reported. While the hypothesis is plausible and supported by the calcium imaging data showing multiple neurons responding to sucrose, definitive identification of additional sugar-sensing neurons requires further experimentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Sucrose activated a large proportion of neurons responsive to single tastants and also elicited responses in multimodal neurons in various combinations with other taste modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by the data presented in Figure 2D and 2D', showing that sucrose was the most frequent unimodal response and appeared in numerous multimodal combinations. This observation is consistent with the overall finding of widespread sucrose responsiveness in the TOG and supports the investigation of external sugar sensing mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The observed tuning proportions (60-70% unimodal vs 30-40% multimodal) are comparable to those reported for mouse fungiform taste sensing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 makes a comparative statement supported by citation to Jisoo Han, 2018. The comparison is appropriate and places the larval Drosophila findings in a broader context of taste neurobiology across species. However, the evaluation is limited by the fact that the cited work is not fully detailed in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Taste sensing in Drosophila larva integrates multiple organizational principles: cell multimodality for food mixture processing, combinatorial taste through co-activation of neurons with distinct valence, and anatomical/molecular segregation of specific tastant detection across TOG, pharyngeal, and brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 synthesize the current findings with prior literature to present a comprehensive model of larval taste organization (Figure 5). The model is well-supported by the combination of new data (C2, C5 sucrose sensing) and extensively cited prior work on bitter detection, Gr43a function, and other taste modalities. The three organizational principles (C110-C112) are logical conclusions from the collective evidence, though some aspects remain to be fully characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "C2 neuron may sense attractive cues while also enhancing aversive behavior when co-activated with bitter-sensing C1 neuron, potentially as a mechanism for avoiding risky food mixtures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C90 accurately cite prior work (Hernandez-Nunez et al., 2015), but claim C91 is explicitly speculative. While the hypothesis is reasonable given the cited optogenetic data and the current findings on C2's role in sucrose sensing, direct experimental evidence for this proposed mechanism is lacking. The interpretation requires validation through additional experiments examining C2-C1 interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The Gr43a receptor has a central role in larval sugar sensing, expressed in pharyngeal neurons, gut, and brain, functioning as a hemolymph fructose sensor and influencing feeding behavior through metabolic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C97, C99-C102 are well-supported by multiple citations to prior literature (Mishra et al., 2013; Miyamoto et al., 2012; Ugrankar et al., 2018; Joseph et al., 2017). These claims establish the context for the current study's findings on external sugar sensing. The speculative aspects (C99) regarding how Gr43a mutant phenotypes relate to metabolic pathways are appropriately qualified as requiring future investigation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,439 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Seven distinct Mfd-EC complexes were visualized using cryo-EM, and stable Mfd-EC complexes with 1:1 stoichiometry were formed in the presence of ATP, as demonstrated by EMSA, SDS-PAGE, and native mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12-C15 collectively demonstrate the formation and characterization of stable Mfd-EC complexes. The cryo-EM structures (C3), EMSA showing unique complex formation (C13), SDS-PAGE confirming both proteins present (C14), and native MS showing 1:1 stoichiometry (C15) provide converging, independent lines of evidence supporting complex formation and structural heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Across all seven Mfd-EC structures, the RNAP and nucleic acid conformations remain similar (rmsd 0.59-3.64 \u00c5), the Mfd-D4(RID) maintains interactions with the RNAP \u03b2protrusion, but the conformation of Mfd and disposition of upstream duplex DNA vary dramatically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by quantitative structural analysis (rmsd values in Supplementary file 3-4) and visual inspection of the structures in Figure 2. The consistency of EC conformation and D4(RID) interactions contrasts with the dramatic Mfd conformational changes, establishing the structural basis for the proposed pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In ATP-bound structures, conserved residues G874, R902, and R905 interact with the ATP \u03b3-phosphate; loss of these interactions in ADP structures causes TD2 to rotate ~16\u00b0 away from TD1, shifting the TD2 center of mass 3.5 \u00c5 downstream, corresponding to one base pair rise of B-form DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 describe the structural basis for ATP-dependent conformational changes. The interactions are directly observed in cryo-EM maps (C35), the residues are conserved (C36), and the conformational changes are quantified (C38-C40). The 3.5 \u00c5 shift corresponding to one bp rise provides a structural basis for the translocation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The structural observations suggest an inchworm model for Mfd translocation with a stepsize of one nucleotide per ATP hydrolysis cycle, consistent with models proposed for SF1 helicases and prior single-molecule observations of Mfd.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 propose a mechanistic model based on the structural data. The model is supported by the observed 3.5 \u00c5 TD2 shift (one bp rise), citations to similar mechanisms in SF1 helicases, and consistency with single-molecule data. The prediction of one nucleotide per ATP (C43) is a testable inference from the structural observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "L1(atp) is the first structure in the pathway because it is most similar to apo-Mfd (rmsd <10 \u00c5), while L1(atp) and L2(adp) form a 'Loading' pathway distinct from the C1-C5 nucleotide hydrolysis cycle structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 establish the ordering of structures based on quantitative rmsd analysis (Supplementary file 4). The grouping into loading (L1, L2) vs. NHC (C1-C5) states is supported by rmsd values showing L1/L2 are distinct from C1-C5 (19-47 \u00c5 vs. 3.7-11.4 \u00c5). This provides a rational basis for the proposed pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The [L0]\u2192L1 transition involves large conformational changes (TD1: 11 \u00c5 translation, 43\u00b0 rotation; TD2: 16 \u00c5 translation, 37\u00b0 rotation), and Mfd(atp)L1 interacts with DNA from -38 to -27, explaining the requirement for ~40 bp of upstream duplex DNA and confirming L1(atp) as an obligate intermediate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by quantitative structural analysis (Supplementary file 5) and comparison with prior biochemical data (Park et al., 2002). The DNA interaction footprint of L1 (C55) directly explains the upstream DNA requirement (C54), providing strong support that L1 is an obligate intermediate (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The L1(atp)\u2192L2(adp) transition involves remarkable rearrangements (minimum 60 \u00c5 translation, 148\u00b0 rotation), resulting in Mfd topologically wrapping around DNA, which likely explains the high processivity of Mfd translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 describe major conformational changes quantified in Supplementary file 6 and visualized in Figures 4-5. The topological wrapping (C63) is directly observed in the structures. The connection to processivity (C64) is a reasonable inference supported by citations to processivity measurements and the well-established principle that topological wrapping confers processivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The alternating nucleotide states in the L1(atp)\u2192L2(adp)\u2192C1(ATP) transition suggest that complete Mfd loading involves rounds of ATP hydrolysis; since the translocation module traverses nine base pairs in the L1\u2192L2 transition, at least nine ATP molecules must be hydrolyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 make inferences from the structural observations. The alternating nucleotide states (C70) are directly observed in the structures. The calculation that nine ATP molecules are hydrolyzed (C71) follows logically from the nine base pair translocation and the one nucleotide per ATP model established earlier, making this a well-supported inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Vanadate experiments demonstrate that at least one round of ATP hydrolysis is required for Mfd to form a stable complex with an EC: ADP+vanadate does not support complex formation while ATP+vanadate does, and ATP+vanadate completely inhibits Mfd function in EC displacement assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by direct experimental evidence shown in Figure 6A-B. The differential effects of ADP+vanadate vs. ATP+vanadate on complex formation (C74) and the complete inhibition of EC displacement (C75) provide strong biochemical evidence that ATP hydrolysis is required for stable complex formation (C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "After loading, Mfd loops through an ATP hydrolysis cycle captured in five states (C1-C5) with similar Mfd conformations (rmsd 3.95-7.68 \u00c5) but wobbling >30\u00b0 relative to the EC, during which Mfd translocates downstream on duplex DNA tracking in the minor groove.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 describe the nucleotide hydrolysis cycle. The similar conformations (C78) are quantified in Supplementary file 4, the wobbling motion (C79) is quantified in Supplementary file 6 and shown in Figure 7, and the translocation direction (C80) is shown in Figure 3 and Video 1. These provide strong structural evidence for the proposed NHC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C85",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "During the NHC, Mfd induces significant RNAP conformational changes including clamp opening (peak 17.3\u00b0 at C3) and \u03b2lobe-Si1 rotation (peak 14.3\u00b0 at C5), which are proposed to destabilize RNAP-nucleic acid contacts and facilitate EC disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 describe RNAP conformational changes quantified in Figure 7 and Figure 5-figure supplement 1. The clamp opening (C83, C88) and \u03b2lobe-Si1 rotation (C85, C89) are directly measured from the structures. The proposed destabilizing effect (C87) is a reasonable inference supported by citation to prior work on EC stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The slow, reversible loading pathway enables Mfd to kinetically discriminate stalled from paused ECs: the expected time for Mfd to displace an EC (~45 s) is more than an order of magnitude longer than the longest-lived transcriptional pauses in vivo (~1.3 s), explaining why Mfd overexpression is not toxic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 integrate structural observations with kinetic data from the literature. The comparison of timescales (C95-C97) is based on cited measurements, and the inference about kinetic discrimination (C93-C94, C98) is well-supported by the quantitative comparison. This provides a mechanistic explanation for the biological selectivity of Mfd.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The NHC states (C1-C5) are considerably more stable than the loading states (L1, L2), indicating that entry into the NHC is essentially irreversible, functioning as a molecular switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by particle number analysis shown in Figure 4-figure supplement 1A. The higher particle counts for C1-C5 compared to L1-L2 indicate greater stability. The inference that this represents an irreversible molecular switch (C101) is reasonable given the large stability difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Mfd engagement significantly distorts the upstream duplex DNA, inducing a localized kink (7-15\u00b0) centered in the translocation module footprint from the minor groove, accompanied by significant minor groove widening, and the entire upstream DNA bends away from Mfd by 16-45\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 describe DNA distortions directly observed in the structures and quantified in Figure 2-figure supplement 3. The kink angles (C28), bending angles (C29), and minor groove engagement (C27) are measured from the structures. Consistency with prior single-molecule observations (C30) provides independent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The TRG motif contains a helical hairpin and loop structure with three conserved residues (R929, R953, Q963) that interact with DNA; the linker connecting the TRG helical hairpin acts as a hinge for TD1/TD2 conformational changes, with TD2 opening causing the TRG helical-hairpin to close.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 describe structural features of the TRG motif shown in Figure 3D. The conserved residues (C45) are supported by citations to mutagenesis studies, their DNA interactions (C46) are observed in the structures, and the hinge mechanism (C47-C49) is inferred from the structural observations and rotation axis analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "During the loading pathway, the UvrA-interacting surface of D2 is initially occluded by D7 in L1(atp), remains occluded by DNA in L2(adp), and is finally exposed to solution after the L2\u2192C1 transition involving large D1-D3 rearrangement (45 \u00c5 translation, 102\u00b0 rotation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 describe the progressive exposure of the UvrA-binding site shown in Figures 4-5. The occlusion by D7 (C65), DNA (C67), and final exposure (C69) are directly observed in the structures. The D1-D3 rearrangement (C68) is quantified in Supplementary file 5. This explains how premature UvrA recruitment is prevented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In apo-Mfd, the D4(RID) is connected to TD1 by a 30-residue Relay Helix (RH) that interacts with hook helices at the TD2 C-terminus; in the [L0]\u2192L1(atp) transition, seven residues in the middle of the RH unfold, the RH kinks ~112\u00b0, and the first hook helix completely unfolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 describe structural changes in the RH shown in Figure 4D-E. The RH structure in apo-Mfd (C58-C59) is from the crystal structure, and the conformational changes (C60-C61) are directly observed by comparing structures. These changes are necessary to accommodate the large domain movements during loading.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The initial Mfd-RNAP engagement is through the Mfd-D4(RID):\u03b2protrusion interaction (average interface area 553 \u00c5\u00b2); in L1, the translocation module interacts with upstream DNA (-38 to -27) without contacting RNAP, but upon transition to L2, it walks toward the RNAP until D6(TD2) contacts the \u03b2protrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 describe the progressive engagement of Mfd with the EC, supported by interface area calculations (Figure 5-figure supplement 1) and DNA interaction footprints (Figure 4-figure supplement 1B). The sequential establishment of D4(RID) then D6(TD2) contacts with the \u03b2protrusion provides a structural basis for the loading mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The connection between topological wrapping/clamping and high processivity is well-established for nucleic acid processing enzymes (e.g., replicative DNA polymerases with processivity clamps, cellular RNAPs); it is proposed that Mfd's extremely high processivity is due to topological wrapping around duplex DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 connect the observed topological wrapping to processivity. The general principle (C111-C113) is established knowledge supported by citations. The proposal for Mfd (C114) is a reasonable inference from the structural observation of topological wrapping and is consistent with measured high processivity cited in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "L1(atp) is the least stable structure in the pathway (lowest particle count), indicating that the first step of Mfd engagement with DNA is reversible and L1(atp) is likely in dynamic equilibrium with [L0] and/or Mfd in solution, consistent with single-molecule observations of weak initial binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by particle number analysis (Figure 4-figure supplement 1A) and consistency with single-molecule data (Howan et al., 2012). The low particle count for L1 indicates low stability, supporting the inference of reversible binding. This is consistent with the kinetic discrimination mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background on transcription-coupled repair: TCR is a sub-pathway of NER that preferentially removes t-strand lesions (notably UV-induced cyclobutane dimers) that stall RNAP ECs; Mfd mediates TCR in bacteria and was discovered through genetic analysis, then identified, purified, and biochemically characterized as necessary and sufficient for TCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide established background knowledge supported by multiple citations to foundational work in the field. These claims set the context for the current study but do not represent new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on Mfd structure and regulation: Mfd's biochemical activities are repressed in apo-Mfd through interdomain interactions; the apo-Mfd crystal structure revealed six structural modules in a compact, inactive conformation; Mfd activities are unleashed by EC engagement, expected to involve profound conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C16-C20 provide established background on Mfd structure and regulation, supported by citations to prior structural and biochemical studies. These claims establish the foundation for understanding the conformational changes observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "Sequence analysis identifies Mfd as an SF2 ATPase most closely related to RecG; Mfd and RecG uniquely harbor a conserved TRG motif following the seven SF2 ATPase signature motifs, and mutations in the TRG motif uncouple ATP hydrolysis from translocation; the seven SF2 motifs cluster at the TD1/TD2 interface where nucleotide binds, with key residues G874, R902, and R905 absolutely conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C36 provide sequence analysis and evolutionary context supported by citations. The conservation of key residues (C36) and the unique TRG motif (C32-C33) establish the structural and functional framework for understanding the ATP-dependent conformational changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Mechanistic basis for vanadate experiments: ADP and vanadate bind directly without ATP hydrolysis since no ATP is present; with ATP and vanadate, at least one round of ATP hydrolysis can occur before vanadate substitutes for the leaving phosphate, inhibiting further hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe the established mechanism of vanadate inhibition, supported by citations. This provides the mechanistic basis for interpreting the vanadate experiments (C74-C76) that test the requirement for ATP hydrolysis in complex formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C84",
+      "C86"
+    ],
+    "result": "The observed RNAP conformational changes are consistent with prior structural studies: similar magnitudes of clamp opening have been observed in other structures with and without nucleic acids, and the \u03b2lobe-Si1 rotation is very similar to that induced by TraR binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C86 place the observed RNAP conformational changes in the context of prior structural studies through citations. This validates that the observed conformational changes are within the known range of RNAP flexibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Prior work established that interdomain interactions maintain Mfd in a repressed state, amino acid substitutions disrupting these interactions unleash Mfd activities, and single-molecule studies showed weak initial binding followed by a slow catalytic step requiring multiple ATP hydrolysis rounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 summarize prior biochemical and single-molecule studies supported by citations. These provide the functional context for interpreting the structural observations and support the proposed kinetic discrimination mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C24",
+      "C57"
+    ],
+    "result": "All Mfd/DNA interactions occur through the DNA phosphate backbone, with the Mfd translocation module making extensive interactions with both DNA strands but slightly favoring the t-strand (~60% of direct interactions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C57 describe the nature of Mfd-DNA interactions based on structural analysis. The phosphate backbone interactions (C24) are expected for a sequence-independent DNA translocase, and the slight t-strand preference (C57) is quantified from the structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The slow, reversible loading pathway allows Mfd to probe EC lifetime while keeping the UvrA-binding determinant occluded; premature UvrA recruitment would disrupt the Mfd-EC complex or counterproductively recruit NER components to undamaged sites; the elaborate conformational choreography is evolutionarily tuned to prevent disruption of normal transcription elongation while engaging NER when a lesion is encountered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C106 present a functional interpretation of the structural observations. While the occlusion of the UvrA-binding site (C103) is directly observed, the proposed consequences of premature UvrA recruitment (C104-C105) are speculative inferences not directly tested. The evolutionary tuning argument (C106) is a reasonable interpretation but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "If RNAP is backtracked, continued Mfd translocation forward translocates the RNAP until the active EC configuration is reached; in the presence of NTP substrates, RNA chain elongation can resume and the RNAP (translocating at ~15-20 nt/s) runs away from Mfd (translocating at ~4 nt/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 describe the functional consequences of Mfd translocation, supported by citations to prior biochemical studies and translocation rate measurements. These explain how Mfd can rescue backtracked ECs while allowing productive ECs to escape.",
+    "result_type": "MINOR"
+  }
+]

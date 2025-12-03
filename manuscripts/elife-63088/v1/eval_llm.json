@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript provides background on circRNA biology, noting that circRNAs are abundant and conserved, formed by backsplicing, and that their biogenesis mechanisms\u2014particularly for those without inverted repeats\u2014are not fully understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9-C16 establish the scientific context by citing prior literature and stating known facts about circRNA structure, biogenesis, and the role of complementary sequences and RBPs. These are well-supported by citations and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors identified and characterized circRNAs in HepG2 and K562 cells, defining DALI and PASI subclasses based on flanking intron length and inverted Alu element distance. DALI circRNAs are more highly expressed, have longer genomic lengths, and are enriched among conserved circRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 are supported by computational analysis of RNA-seq data and figures showing circRNA distributions and characteristics. The classification into DALI and PASI is clearly defined and data-driven, with statistical support (e.g., Figure 1D, 1E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "SFPQ and NONO are enriched around circRNA loci, with SFPQ showing specific enrichment in DALI circRNA flanking regions in HepG2 cells and NONO enriched in K562 cells. Both proteins are significantly more enriched around circRNA exons compared to control exons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by eCLIP data analysis (Figure 2A-D, Figure 2\u2014figure supplement 1E-H) and RIP-qPCR validation (Figure 2F-H). The statistical significance is reported (p\u22641.2e-16 for C28), and controls (DALI-like exons) were used to rule out length bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "SFPQ depletion specifically reduces DALI circRNA expression in HEK293T and HepG2 cells, while PASI circRNAs remain largely unaffected. NONO depletion has minimal impact on circRNA production in both cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by RNA-seq differential expression analysis (Figure 3B-E) and validated by RT-qPCR (Figure 3G, 3I). The specificity for DALI circRNAs is clearly demonstrated, and the lack of NONO effect is consistently observed across replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "SFPQ binding in flanking regions is significantly associated with deregulated circRNAs, with SFPQ associating both upstream and downstream of repressed circRNAs but only upstream of upregulated circRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by integrated eCLIP and RNA-seq analysis (Figure 3J). The differential binding patterns for up- vs. downregulated circRNAs suggest distinct regulatory mechanisms, though the mechanistic interpretation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In mouse brain, DALI and PASI circRNAs are prevalent subclasses with DALI showing higher abundance. SFPQ depletion affects global circRNA expression with a more balanced distribution of up- and downregulated circRNAs compared to cell lines, and DALI circRNAs are significantly more prone to SFPQ-mediated regulation (25% vs 5%, p=8.2e-80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by analysis of published mouse brain SFPQ knockout data (Figure 3\u2014figure supplement 3A-F). The statistical significance is strong (p=8.2e-80), and the conservation of DALI/PASI classification across species strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "SFPQ depletion triggers general repression of long genes, with a characteristic 'drop-off' phenotype showing unaffected 5' read densities but dramatic 3' reduction. This effect correlates with gene length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by differential gene expression analysis and k-means clustering (Figure 4A-C, Figure 4\u2014figure supplement 1A-D). The length-dependent effect is clearly demonstrated across multiple cell types and mouse brain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "SFPQ depletion results in extensive upregulation of alternative splicing events correlating with intron length across HepG2, HEK293T, and mouse brain. The vast majority (>90%) of deregulated inclusion events are upregulated and unannotated, suggesting they represent cryptic or aberrant splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by comprehensive alternative splicing analysis (Figure 4E-F, Figure 4\u2014figure supplement 2D,I). The high percentage of unannotated events (76-88%) across systems provides strong evidence for cryptic splicing, though the inference in C51 is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SFPQ depletion causes intron-length-dependent intron retention that correlates with exon inclusion. SFPQ eCLIP signal is enriched in regions with alternative splicing and intron retention, and rescue experiments confirm SFPQ's direct role in preventing cryptic splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by intron retention analysis (Figure 4G-I) and rescue experiments (Figure 4\u2014figure supplement 3C-E). The correlation analysis and eCLIP enrichment provide mechanistic support, and the rescue experiment strengthens causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Intron retention and alternative splicing are conserved effects of SFPQ depletion, and SFPQ plays a vital role in maintaining splicing integrity particularly for long introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 synthesize findings from multiple systems (HepG2, HEK293T, mouse brain) showing consistent intron-length-dependent effects. The conservation across species and the mechanistic data support these conclusions, though they represent interpretive summaries of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SFPQ knockdown shows enrichment of intronic polyA site (PAS) usage and repression of exonic PAS, with upregulated PASs predominantly in 5' regions. There is significant overlap between alternative exon inclusion and enriched PASs, particularly in gene cluster kc4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by quantseq analysis (Figure 5A-B, 5E, Figure 5\u2014figure supplement 1D). The 5' bias of upregulated PASs and the overlap with alternative splicing are clearly demonstrated, though the inference about downstream repression (C61) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "U1 snRNA levels show little or no response to SFPQ knockdown in HepG2 and HEK293T cells, indicating that SFPQ-dependent premature termination is independent from U1 telescripting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by northern blot and RT-qPCR data (Figure 5\u2014figure supplement 2A-D). The lack of U1 level changes provides evidence against U1 telescripting as the mechanism, though this is a negative result and alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "CircRNA deregulation is not explained by premature termination. There is no clear correlation between backsplicing and linear splicing changes, no significant difference in upstream PAS or alternative splicing events between up- and downregulated circRNAs, though premature termination is more prominent upstream of DALI circRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by multiple analyses (Figure 5F-G, Figure 5\u2014figure supplement 3G-I) showing lack of correlation between premature termination and circRNA deregulation. The conclusion (C69) is an inference but is well-supported by the negative correlations observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Multivariate regression analysis reveals that 5' features (upstream intron retention, intron length, cryptic SA usage) correlate positively with circRNA production while 3' features correlate negatively. These features are conserved between HepG2 and mouse brain, suggesting conserved mechanisms of SFPQ-mediated circRNA regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C73 are based on multivariate regression analysis (Figure 6B-E, Figure 6\u2014figure supplement 4A-C). While the model shows significant correlations and convergence between systems, the predictive performance is modest (Pearson r=0.41-0.43), and the mechanistic interpretation (C72) is inferential. The model identifies associations but causality is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The manuscript provides background on SFPQ and NONO, noting they belong to the DBHS family, form heterodimeric complexes, localize to paraspeckles, and have been implicated in various RNA processing functions and neurological diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 establish context by citing prior literature about SFPQ/NONO structure, function, and disease associations. These are well-supported by citations and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Sequencing data has been deposited in a public repository (GEO accession GSE157622) and analysis scripts are available on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is a straightforward statement about data availability that can be verified. This supports reproducibility of the work.",
+    "result_type": "MINOR"
+  }
+]

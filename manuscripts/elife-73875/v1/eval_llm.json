@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A quantitative proteomics approach identified 146 putative Lon substrates in C. crescentus, including 26 proteins meeting all four criteria and 120 meeting three criteria. The putative substrates were enriched for proteins involved in cell cycle, differentiation, signal transduction, and stress responses compared to all detected proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomics approach is well-described with clear criteria (C44-C47), and the functional categorization shows statistically meaningful enrichment patterns (C48-C49). The methodology appropriately uses multiple conditions and biological replicates, though the relatively low threshold ratios are acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "StaR is a direct Lon substrate that is degraded with a half-life of approximately 12 minutes in vivo and is completely stabilized in \u0394lon cells. In vitro degradation assays demonstrate ATP-dependent degradation by Lon without requiring additional factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (proteomics C52, C54-C56; Western blots C57-C59; in vivo degradation C60-C62; in vitro degradation C63-C64) converge on the same conclusion. The in vitro data particularly strengthen the claim of direct substrate recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Lon recognizes StaR via its C-terminus, as C-terminal tagging completely abolishes degradation while N-terminal tagging permits degradation, though the N-terminally tagged variant is also degraded by another protease in \u0394lon cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tagging experiments (C65, C67) provide clear evidence for C-terminal recognition. The observation that N-terminally tagged StaR is degraded in \u0394lon cells (C68) appropriately qualifies the interpretation and suggests the tag may alter protein folding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Lon-dependent degradation establishes cell cycle-dependent oscillations of StaR protein levels. In WT cells, StaR peaks in swarmer/early stalked cells and is then degraded, while in \u0394lon cells StaR levels remain constitutively high throughout the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell cycle synchronization experiments (C73-C74) directly demonstrate loss of oscillations in \u0394lon cells. This is consistent with prior transcriptional data (C71-C72) and the expected timing of StaR function (C70). The conclusion (C75) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Lon-mediated degradation of StaR is required for proper stalk biogenesis during the cell cycle. The elongated stalk phenotype of \u0394lon cells is suppressed by deletion of staR, demonstrating that Lon affects stalk length through StaR. However, StaR and Lon are not required for starvation-dependent stalk elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic epistasis experiment (C79-C80) provides strong evidence that Lon acts through StaR to control stalk length. The starvation experiment (C81-C82) appropriately distinguishes between cell cycle-dependent and starvation-dependent mechanisms. The phenotypic data are consistent with prior literature (C76-C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The genes previously annotated as CCNA_00944 and motD actually form a single continuous open reading frame encoding FliK, a flagella hook length determination protein. This was determined through sequencing, RNA-seq data, and Western blot analysis showing a single high molecular weight protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support the gene annotation correction: sequencing showing an additional guanosine (C89), RNA-seq data (C89), Western blot showing a single protein band (C91-C92), and consistency with annotations in related bacteria (C95). This is a significant correction to the genome annotation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "FliK is a Lon substrate recognized via its C-terminal domain. The C-terminal portion of FliK (FliK-C) containing the Flg hook domain is sufficient for Lon-dependent degradation both in vivo and in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by multiple complementary experiments: increased stability in \u0394lon cells (C96), degradation of N-terminally tagged full-length and truncated FliK (C98, C100), and in vitro degradation of FliK-C (C101). The conclusion about C-terminal recognition (C102) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The C-terminal five amino acids (LDIRI) of FliK are essential for Lon-dependent degradation. Deletion of these amino acids completely stabilizes FliK-C, while deletion of internal unordered regions does not affect degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic deletion analysis (C103-C105) clearly identifies the minimal degron. The in vivo data (C105) demonstrating complete stabilization upon deletion of the C-terminal five amino acids provides strong evidence for their essential role in Lon recognition (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Lon ensures temporally restricted accumulation of FliK during the cell cycle. In WT cells, FliK accumulates in late stalked/predivisional cells when flagella are assembled, while in \u0394lon cells FliK is present throughout the cell cycle at constitutively high levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell cycle synchronization experiments (C108-C109) directly demonstrate loss of temporal regulation in \u0394lon cells. This is consistent with the transcriptional regulation data (C107) and supports the conclusion about Lon's role in temporal restriction (C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Elevated FliK levels impair motility and reduce flagellin levels. Overexpression of FliK or FliK-C reduces motility and flagellin levels, while overexpression of FliK-C\u03945 (lacking the C-terminal five amino acids) has minimal effects. This suggests that FliK contributes to the motility defects of \u0394lon cells along with other factors like SciP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overexpression experiments (C116-C122) provide clear dose-response evidence linking FliK levels to motility and flagellin levels. The critical role of the C-terminus (C118-C120, C125) is demonstrated by comparing FliK-C and FliK-C\u03945. The interpretation that FliK contributes to \u0394lon motility defects (C124) is reasonable but appropriately qualified given multiple factors are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C126",
+      "C127"
+    ],
+    "result": "Lon has a critical role in coordinating developmental processes with cell cycle progression in C. crescentus by ensuring temporally restricted accumulation of regulatory proteins like StaR and FliK through C-terminal recognition and degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C6, C126) is well-supported by the combined evidence for StaR and FliK showing: (1) C-terminal recognition (C3), (2) temporal restriction of protein accumulation (C4, C127), and (3) phenotypic consequences when this regulation is disrupted (C5). The conclusion appropriately integrates the specific findings into a broader mechanistic framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C143"
+    ],
+    "result": "This study provides the first characterization of FliK in C. crescentus and reveals a dual role of the C-terminal amino acids in both protein function (motility/flagellin regulation) and degradation by Lon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim (C7) is supported by the genome annotation correction and functional characterization. The dual role (C8, C143) is demonstrated by showing the same C-terminal amino acids are required for both degradation (Figure 4G) and functional effects on motility/flagellin levels (Figure 5F-G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "FlgE (flagella hook protein) is partially regulated by Lon in C. crescentus, consistent with findings in E. coli. This reinforces the importance of precise regulation of both FlgE and FliK concentrations for proper flagella assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomics identification (C144) and Western blot verification (C145) provide evidence for Lon-dependent regulation of FlgE. The consistency with E. coli data (C146) and the broader interpretation about coordinated regulation (C147) are appropriately supported, though the partial dependence suggests additional regulatory mechanisms exist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The known Lon substrates DnaA, CcrM, and SciP show increased stability and abundance in \u0394lon cells and reduced abundance upon lon overexpression, validating the proteomics approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These positive controls (C41-C43) demonstrate that the experimental system is working as expected and validate the proteomics approach. The Western blot data in Figure 1A-C clearly show the expected patterns for known substrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The proteomics experiment did not detect FixT and HipB2, two recently reported Lon substrates in C. crescentus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This negative result (C50) is appropriately reported and contextualized with citations to studies identifying these proteins as Lon substrates (C51). This highlights a limitation of the proteomics approach, possibly due to low abundance or expression conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151"
+    ],
+    "result": "Unlike some Lon substrates in other bacteria that require adaptor proteins, both StaR and FliK are robustly degraded by Lon in vitro without additional factors, though additional modulatory factors may exist in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro degradation data (C150) clearly demonstrate direct recognition without adaptors. The caveat about potential modulatory factors (C151) is appropriately speculative and acknowledges the difference between in vitro and in vivo conditions.",
+    "result_type": "MINOR"
+  }
+]

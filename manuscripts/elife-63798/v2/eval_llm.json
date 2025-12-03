@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C81"
+    ],
+    "result": "Using two-photon calcium imaging in awake macaques, the authors identified cortical patches in dorsal V4 (V4d) that are significantly selective for curves or corners. The imaging sites were positioned at ~0.7-0.9\u00b0 eccentricity from the fovea, and a large area (3.4 \u00d7 3.4 mm) was scanned using a 4\u00d7 objective lens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34-C39, C42, and C81 collectively describe the experimental approach and primary finding of curve- and corner-selective patches in V4d. The methodology is clearly described with appropriate technical details (viral injection, imaging parameters, eccentricity measurements), and the finding is supported by statistical analysis (FDR tests with q=0.01, cluster permutation tests) shown in Figure 1F-G. The experimental design is sound and the statistical approach is appropriate for identifying significant patches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C82",
+      "C100"
+    ],
+    "result": "Single-cell resolution imaging using a 16\u00d7 objective confirmed that curve- and corner-selective neurons are spatially clustered into functional domains. Of 535 visually responsive neurons recorded, 70.5% with CVSI > 0.2 significantly preferred curves, and 76.9% with CNSI > 0.2 significantly preferred corners. Neurons within ~300 \u03bcm showed more correlated tuning and similar selectivity indices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C43-C48, C50-C52, C82, and C100 provide converging evidence for spatial clustering of curve- and corner-selective neurons. The statistical tests (one-way ANOVA, p<0.05) are appropriate, sample sizes are adequate (535 neurons from two animals), and the spatial correlation analysis (Figure 2I-K) quantitatively demonstrates clustering within ~300 \u03bcm. The consistency between 4\u00d7 and 16\u00d7 imaging (C48) provides additional validation. The finding is well-supported by both population-level and single-cell data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Stimulus smoothness is the cardinal difference between curve and corner selectivity in V4. Neurons selective for smooth curves did not respond strongly to \u03a0-shape stimuli (hexagonal segments lacking smoothness). The curve/\u03a0-shape index (CVPII) was highly correlated with curve/corner index (CVCNI) (R = 0.72, p<0.001), and K-means clustering analysis confirmed that smooth curves are encoded differently from rectilinear shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C67-C73 establish smoothness as the key distinguishing feature between curve and corner selectivity. The experimental design using \u03a0-shape stimuli as controls is appropriate for testing whether neurons respond to multiple orientations versus smoothness. The strong correlation (R = 0.72, p<0.001) between CVPII and CVCNI (C69) and the K-means clustering analysis (C72, Figure 4\u2014figure supplement 1) provide robust statistical support. The conclusion is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C65",
+      "C66",
+      "C85",
+      "C113",
+      "C114"
+    ],
+    "result": "Curves and corners are encoded by different neuronal clusters organized into distinct functional domains in V4. These domains are separate from those representing single orientations, and the neurons are tuned to integral features rather than local orientation or combinations of orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C65-C66, C85, C113-C114 represent the main conclusion of the study. This conclusion is well-supported by multiple lines of evidence: (1) spatial clustering demonstrated at both population (4\u00d7) and single-cell (16\u00d7) levels, (2) statistical validation through FDR tests and spatial correlation analysis, (3) weak responses to single bars (C63) indicating encoding of complex features, and (4) smoothness selectivity experiments distinguishing these domains from simple orientation domains. The integration of cortical population responses with single-neuron analysis provides strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C63",
+      "C64",
+      "C102",
+      "C106"
+    ],
+    "result": "The majority (64.7%) of neurons in the imaged V4d areas significantly preferred curves and corners over single bars, with only 1.5% preferring bars. Neurons heavily biased to curves or corners responded very weakly to single bars, suggesting they encode complex integral shape features rather than simple orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C63-C64, C102, and C106 demonstrate that neurons in curve and corner domains encode complex features. The statistical results are clear (64.7% vs 1.5%, one-way ANOVA p<0.05), and the negative correlation between bar responses and absolute CVCNI values (Figure 3E) provides quantitative support. However, the interpretation that these neurons encode 'integral features' (C64, C106) is somewhat inferential. The sampling bias acknowledged by the authors (C104) should be considered, but the overall conclusion is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Classical polar grating selectivity is closely related to curve and corner selectivity. 48.4% of neurons significantly preferred concentric or radial gratings over Cartesian gratings. The concentric/radial index (CRI) correlated with curve/corner index (CVCNI) (R = 0.38, p<0.001), and this selectivity was consistent across spatial frequencies (1, 2, 4 cycle/\u00b0), indicating it is not directly related to spatial frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 establish a relationship between polar grating selectivity and curve/corner selectivity. The correlation (R = 0.38, p<0.001) is statistically significant, though moderate in strength. The consistency across spatial frequencies (C78-C79, all R > 0.5, p<0.001) supports the inference that selectivity is not spatial-frequency dependent (C80). The finding connects the current results to classical V4 literature (C27-C28), providing important context. The evidence is solid, though the moderate correlation suggests other factors also contribute to selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Neurons with similar curve/corner index (CVCNI) values were spatially clustered. Neurons in 4\u00d7-defined curve domains had positive CVCNI values, while those in corner domains had negative values. Curve- and corner-selective neurons exhibited diverse tuning properties, being either selective or invariant to stimulus parameters like radius, radian, bar length, and separation angle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 describe the spatial organization and diversity of tuning within domains. The spatial clustering of similar CVCNI values is demonstrated in Figure 3A-C, and the statistical test (ANOVA p<0.05) for neurons with |CVCNI| > 0.2 (C59) is appropriate. The diversity of tuning (C60-C61, Figure 3\u2014figure supplement 1B-D) is well-documented. The inference that this diversity enables encoding of multiple shape segments (C62) is reasonable but somewhat speculative. Overall, the claims are well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C94",
+      "C99",
+      "C101"
+    ],
+    "result": "The findings are consistent with previous fMRI studies reporting curvature-biased patches in macaque V4, though the patches found here were smaller (~300 \u03bcm) due to improved spatial resolution of 2P imaging. The percentage of complex feature-selective neurons found is higher than in previous electrophysiology studies, likely due to sampling within curve and corner domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C94, C99, and C101 contextualize the current findings within existing literature. The comparison with fMRI studies (C88, Yue et al., 2014) and recent 2P/ISOI studies (C91-C93) is appropriate. The explanation for smaller patch size (C89) and higher percentage of selective neurons (C101) is reasonable given the methodological differences. The authors appropriately acknowledge the sampling bias (C104). The integration with prior work strengthens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C86",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Orientation is organized in linear iso-orientation domains or pinwheel-like patterns in V4, consistent with previous ISOI studies. Two-photon imaging provides higher spatial resolution than ISOI, enabling more precise characterization of domain transitions, which occur within ~300 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C86, C95-C97 describe methodological advantages and confirm known V4 organization. The observation of orientation domains (C40, Figure 1\u2014figure supplement 2) validates the imaging approach. The comparison of 2P and ISOI resolution (C95-C96) is accurate based on established knowledge. The quantification of transition distance (~300 \u03bcm, C97, Figure 2\u2014figure supplement 3) is a novel contribution enabled by the higher resolution. These claims are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C125",
+      "C126",
+      "C127",
+      "C130",
+      "C131"
+    ],
+    "result": "The functionally specific population architecture of curve and corner domains bridges the gap between early (V1) and late (IT) cortices of the ventral pathway. This organization provides support for integration of shape information at intermediate stages and may form the basis for more complex feature columns and object domains in IT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C125-C127, C130-C131 make broader interpretive statements about the role of V4 in the visual hierarchy. While the existence of curve and corner domains is well-established by the data, the claims about 'bridging the gap' (C9, C125) and forming the basis for IT organization (C130) are largely speculative. These claims are supported by citations to related work (C131) and are consistent with the hierarchical organization of the ventral stream, but direct evidence for these functional relationships is not provided in the current study. The speculation is reasonable but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Complex feature-selective neurons may receive inputs or modulation from nearby neurons or downstream areas to form a recurrent network, which might underlie temporally heterogeneous response profiles observed in previous studies. However, this question is difficult to address with current calcium imaging temporal resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C119 propose a mechanistic explanation for how complex selectivity emerges but acknowledge this is speculative. The hypothesis of recurrent networks (C115-C116) is plausible and consistent with recent IT cortex findings (C117), but no direct evidence is provided in the current study. The authors appropriately acknowledge the limitation of calcium imaging temporal resolution (C118) and suggest future approaches (C119). This is reasonable speculation that identifies important future directions but lacks empirical support in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study acknowledges potential limitations including that stimulation was not isolated to optimal receptive field locations, which may modulate domain properties through stimulus translation variance. The sample was near-foveal (~0.7-0.9\u00b0 eccentricity), and the relationship of visual eccentricity to these functional domains remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 appropriately identify limitations of the current study. The acknowledgment of potential receptive field position effects (C120) and the near-foveal sampling (C122) are important caveats. The statement about unknown eccentricity relationships (C124) identifies a gap for future research. These are honest assessments of study limitations that do not undermine the main findings but appropriately qualify their generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "One possible explanation for the separation of smooth curves and rectilinear corners in V4 is that smooth curves are more prevalent in living animals or foods of interest to primates, while corners are found in background environments. This may relate to statistical regularities in natural images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C136 offer an evolutionary/ecological explanation for the observed functional organization. While this speculation is interesting and supported by citations to work on natural image statistics (C135), it is highly speculative with no direct evidence provided. The proposed relationship to natural image statistics is plausible but would require systematic analysis comparing V4 responses to natural image statistics, which is suggested as future work (C136). This is reasonable speculation but lacks empirical support.",
+    "result_type": "MINOR"
+  }
+]

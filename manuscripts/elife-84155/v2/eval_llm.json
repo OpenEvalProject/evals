@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C64",
+      "C81"
+    ],
+    "result": "Rep1 is essential for galactose utilization in C. albicans. The rep1 mutant exhibits severe growth defects on galactose as the sole carbon source and dramatically reduced expression of GAL1 and GAL10, while growth on glucose or glycerol remains normal. Genetic screens of knockout and GRACE libraries found no other mutants unable to grow on galactose, establishing Rep1 as the exclusive regulator for galactose utilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 provide strong phenotypic evidence (growth assays and gene expression) that Rep1 is required for galactose utilization. Claim C81 strengthens this by showing no other genes in large-scale screens are essential for galactose growth, supporting the exclusivity of Rep1's role. The rescue experiments (C17) confirm specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Rep1 binds constitutively to GAL gene promoters independent of galactose presence. Rep1 protein levels and nuclear localization are unchanged by galactose, indicating that Rep1-mediated transcriptional activation is not regulated by expression, DNA-binding, or localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide multiple lines of evidence (Western blot, ChIP, microscopy) showing Rep1 is constitutively present at promoters and in the nucleus regardless of galactose. This supports the model that Rep1 acts as a pre-bound scaffold rather than being recruited by galactose.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Rep1 directly binds galactose with high specificity and affinity (Kd ~0.25 \u03bcM) through a galectin-like fold. The Y526 residue is critical for this interaction, and disrupting galactose binding by Y526A mutation abolishes galactose utilization and GAL gene induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (galactose-agarose pull-down C26-C27, ITC C30-C32, molecular docking C28, mutagenesis C29, C33) converge to demonstrate direct, specific galactose binding. The functional importance is validated by the Y526A mutant phenotype (C33). The structural prediction (C25) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C89",
+      "C90"
+    ],
+    "result": "Galactose binding to Rep1 recruits the transcriptional activator Cga1 to GAL gene promoters. Rep1 itself lacks transcriptional activity, while Cga1 possesses it. The Rep1-Cga1 interaction and Cga1 promoter recruitment occur specifically in the presence of galactose, both in vivo and in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 establish that Rep1 lacks but Cga1 has transcriptional activity. Claims C37-C38 show Cga1 is essential for galactose utilization. Claims C41-C44 demonstrate galactose-dependent interaction between Rep1 and Cga1 through multiple methods (co-IP, ChIP, GST pull-down). The mechanistic model is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C91",
+      "C92"
+    ],
+    "result": "The activation domain (AD) of Rep1 is dispensable for galactose signaling but essential for GlcNAc signaling. The AD domain recruits Ngs1 for GlcNAc-responsive transcription, while galactose signaling operates through a different domain recruiting Cga1. This demonstrates Rep1 uses distinct domains to link galactose and GlcNAc catabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 show Rep1\u0394AD retains galactose function. Claims C45-C48 demonstrate the AD domain is required for GlcNAc signaling and Ngs1 recruitment. This domain-specific recruitment model is logically consistent and experimentally supported, showing Rep1 acts as a scaffold with modular interaction surfaces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C67",
+      "C69"
+    ],
+    "result": "Rep1 and Cga1 are conserved across CTG species and limited Eurotiales species. Cross-species complementation experiments show that Rep1 and Cga1 orthologs from C. tropicalis and C. parapsilosis can rescue C. albicans mutants, demonstrating functional conservation of the Rep1-Cga1 galactose sensing mechanism in CTG species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Phylogenetic analysis (C57-C58, C69) identifies the distribution of Rep1 and Cga1. Cross-species complementation experiments (C59-C61) functionally validate conservation. The absence of clear orthologs in S. cerevisiae (C67) supports the evolutionary distinctness of this regulatory mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C63",
+      "C86",
+      "C87",
+      "C122"
+    ],
+    "result": "Rep1 functions as a DNA-binding scaffold protein that lacks intrinsic transcriptional activity but recruits different transcriptional regulators (Cga1 for galactose, Ngs1 for GlcNAc) in response to environmental signals. Rep1 binds target promoters constitutively regardless of transcriptional state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C34, C63 establish Rep1 lacks transcriptional activity. Claims C86-C87 show Rep1 binds promoters constitutively. The scaffold model recruiting different factors (C7, C122) is supported by the differential recruitment of Cga1 and Ngs1 demonstrated in other result groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ChIP-Seq analysis identified 108 Rep1 target genes with an adenine-rich binding motif distinct from Ndt80. Target genes are enriched for diverse processes including carbohydrate metabolism, response to extracellular stimulus, and organelle disassembly. Both galactose and GlcNAc catabolic genes are direct Rep1 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-Seq data (C51-C53) identify Rep1 targets and functional enrichment. Motif analysis (C49-C50) distinguishes Rep1 from Ndt80. The identification of known targets (GAL and GlcNAc genes, C52) validates the approach. However, the functional significance of most targets under non-inducing conditions is limited (C121).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C129",
+      "C130"
+    ],
+    "result": "The Rep1-Cga1 regulatory cascade in C. albicans is simpler than the S. cerevisiae Gal3-Gal80-Gal4 system, lacking a repressor component. This shorter cascade is consistent with faster GAL gene induction in C. albicans compared to S. cerevisiae, supporting the principle that short cascades enable rapid responses to environmental stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison (C71, C129) is well-established from experimental data. The faster induction kinetics in C. albicans (C72) is cited from prior work. The connection to cascade length theory (C73, C130) is a reasonable inference supported by the cited literature, though the causal relationship is correlative rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "REP1 and CGA1 are constitutively expressed regardless of carbon source, unlike Gal4 in S. cerevisiae which is glucose-repressed. This difference in glucose repression likely underlies quantitative differences in GAL gene induction: C. albicans shows higher basal levels, lower induction ratios, and graded induction, while S. cerevisiae exhibits bimodal on-off switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Constitutive expression of Rep1 and Cga1 (C74) is experimentally demonstrated. The comparison to S. cerevisiae Gal4 regulation (C131) and the quantitative differences in induction patterns (C75, C133) are supported by cited literature. The mechanistic connection (C132) is a reasonable inference linking regulatory architecture to phenotypic output.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The Rep1-Cga1 mode represents substantial regulatory network rewiring from the Gal3-Gal80-Gal4 mode in S. cerevisiae, involving both de novo genes and changes in cis-regulatory sequences. This discovery adds significantly to understanding transcriptional network evolution for galactose utilization in fungi and suggests diverse regulatory modes exist across fungal species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The network rewiring (C125) is well-documented through the identification of Rep1-Cga1 and their absence in S. cerevisiae. The mechanistic basis (C126) is a reasonable inference from the data. The phylogenetic distribution (C127) suggests regulatory diversity. The significance claim (C128) is justified given the GAL pathway's role as a model system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C123",
+      "C134",
+      "C135"
+    ],
+    "result": "The Rep1-Cga1 regulatory mode may facilitate metabolic flexibility and crosstalk among signaling pathways, potentially providing adaptive advantages for C. albicans to colonize diverse host niches with dynamic nutritional conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C103, C123, C134, C135) are largely speculative about adaptive significance and ecological implications. While the mechanistic data on Rep1's scaffold function and dual pathway regulation are solid, the connection to host colonization and adaptive advantage is not directly tested. These represent reasonable hypotheses for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C88"
+    ],
+    "result": "Previously implicated regulators Rtg1, Rtg3, and Cph1 are not required for galactose utilization under standard conditions. Rtg1 and Rtg3 mutants show no defects in GAL gene induction or in Rep1 binding and Cga1 recruitment to GAL promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Growth assays (C78, C80) and gene expression analysis (C79) show these factors are dispensable for galactose utilization without respiratory inhibition. ChIP experiments (C88) confirm they don't affect the Rep1-Cga1 mechanism. This clarifies prior literature and establishes Rep1's exclusive role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C82"
+    ],
+    "result": "Ngs1 and Ndt80 are not required for growth on galactose as the sole carbon source, distinguishing them from Rep1's essential role in galactose utilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Spot assays (C19, C82) clearly show these mutants grow normally on galactose, contrasting with the rep1 mutant phenotype. This helps define the specificity of Rep1's role in galactose signaling versus other Ndt80-family members or GlcNAc signaling components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C117"
+    ],
+    "result": "The C-terminal extension domain unique to Rep1 (distinguishing it from Ndt80) is essential for galactose signaling function. A chimeric protein with Ndt80 fused to Rep1's C domain cannot rescue rep1 mutants, indicating additional regions beyond the C domain are required for Rep1's galactose-responsive activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Domain deletion experiments (C84-C85) and chimera experiments (C83) demonstrate the C domain is necessary but not sufficient. The structural distinction from Ndt80 (C117) is documented. These experiments help define the functional architecture of Rep1, though they don't fully elucidate the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Cga1 expression and nuclear localization are constitutive and independent of carbon source, similar to Rep1, suggesting regulation occurs at the level of protein-protein interaction rather than expression or localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "qRT-PCR (C39) and microscopy (C40) data show Cga1 behaves like Rep1 in terms of constitutive expression and localization. This supports the model that galactose-dependent recruitment, not expression changes, drives the response. The parallel behavior strengthens the mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Rep1 mediates transcriptional activation of GlcNAc catabolic genes (DAC1, NAG1) in response to galactose, though with much lower induction (~10-fold) than in GlcNAc (>100-fold). For most other Rep1 target genes, Rep1 deletion increases expression, consistent with a repressive role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "qRT-PCR data (C54-C56) document these expression patterns. The crosstalk between galactose and GlcNAc pathways is interesting but the weak induction in galactose suggests this may not be physiologically significant. The repressive role for most targets is consistent with Rep1 as a scaffold requiring specific activators.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Rep1-mediated transcriptional activation occurs through two distinct mechanisms: galactose-inducible recruitment of Cga1, or Ngs1-induced chromatin acetylation upon GlcNAc binding. The GlcNAc mechanism involves Ngs1's N-acetyltransferase activity being activated by GlcNAc binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Cga1 recruitment mechanism (C93) is well-supported by data in this study. The Ngs1 mechanism (C93-C94) relies heavily on prior work (Su et al., 2016) and is more speculative regarding the activation mechanism. The dual-mechanism model is reasonable but the GlcNAc pathway details are less directly demonstrated here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C118",
+      "C120"
+    ],
+    "result": "Control experiments demonstrate that Y526A mutation and chimeric constructs do not affect protein expression levels, and that other candidate interactors (Orf19.1772, Orf19.2265) are not required for galactose utilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blots (C119, C118) confirm protein levels are comparable, validating that phenotypes are due to functional defects not expression. Growth and expression assays (C120) rule out these candidates. These are important controls supporting the specificity of the Rep1-Cga1 mechanism.",
+    "result_type": "MINOR"
+  }
+]

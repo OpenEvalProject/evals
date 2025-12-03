@@ -1,0 +1,2162 @@
+{
+  "submission": {
+    "id": "77f72d6e-1687-4940-84b8-66f3b65811b9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:34:47.483466Z",
+    "updated_at": "2025-12-03T20:34:47.483466Z"
+  },
+  "content": [
+    {
+      "id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "submission_id": "77f72d6e-1687-4940-84b8-66f3b65811b9",
+      "content_type": "manuscript",
+      "content_text": "# Cryo-EM structure of the endothelin-1-ETB-Gi complex\n\n## Authors\n\n- Fumiya K Sano<sup>1</sup> ([ORCID: 0000-0002-8965-788X](https://orcid.org/0000-0002-8965-788X))\n- Hiroaki Akasaka<sup>1</sup> ([ORCID: 0000-0003-2118-0912](https://orcid.org/0000-0003-2118-0912))\n- Wataru Shihoya<sup>1</sup> ([ORCID: 0000-0003-4813-5740](https://orcid.org/0000-0003-4813-5740)) \u2020\n- Osamu Nureki<sup>1</sup> ([ORCID: 0000-0003-1813-7008](https://orcid.org/0000-0003-1813-7008)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences, Graduate School of Science, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe endothelin ETB receptor is a promiscuous G-protein coupled receptor that is activated by vasoactive peptide endothelins. ETB signaling induces reactive astrocytes in the brain and vasorelaxation in vascular smooth muscle. Consequently, ETB agonists are expected to be drugs for neuroprotection and improved anti-tumor drug delivery. Here, we report the cryo-electron microscopy structure of the endothelin-1-ETB-Gi complex at 2.8 \u00c5 resolution, with complex assembly stabilized by a newly established method. Comparisons with the inactive ETB receptor structures revealed how endothelin-1 activates the ETB receptor. The NPxxY motif, essential for G-protein activation, is not conserved in ETB, resulting in a unique structural change upon G-protein activation. Compared with other GPCR-G-protein complexes, ETB binds Gi in the shallowest position, further expanding the diversity of G-protein binding modes. This structural information will facilitate the elucidation of G-protein activation and the rational design of ETB agonists.\n\n## Introduction\n\nEndothelins are 21-amino-acid vasoconstricting peptides produced primarily in the endothelium Yanagisawa et al., 1988 and play a key role in vascular homeostasis. Among the three endothelin isopeptides (ET-1\u20133), ET-1 was first discovered as a potent vasoconstrictor Maguire and Davenport, 2014; Davenport et al., 2016. ET-1 transmits signals through two receptor subtypes, the ETA and ETB receptors, which belong to the class A G-protein-coupled receptors (GPCRs) Arai et al., 1990; Sakurai et al., 1990. The endothelin receptors exert regulatory control over cellular processes important for growth, survival, invasion, and angiogenesis Haryono et al., 2022; Barton and Yanagisawa, 2019. In the vascular system, the ETA receptor serves as the primary mediator of vasoconstriction, and its irreversible binding to ET-1 leads to prolonged vasoconstriction. By contrast, the ETB receptor primarily induces vasorelaxation via the nitric oxide-mediated pathway, and it acts as a clearance receptor that removes circulating ET-1 via the lysosomal pathway Bremnes et al., 2000. The ETB receptor is known to be a promiscuous GPCR, capable of activating multiple types of G-proteins Inoue et al., 2019; Doi et al., 1999. In vascular smooth muscle, it induces nitric oxide-mediated vasorelaxation via Gq signaling. Furthermore, the astrocytic ETB receptor-mediated Gi signal reduces intercellular communication through gap junctions Tenc\u00e9 et al., 2012, and the Rho signal in astrocytes leads to cytoskeletal reorganization and cell-adhesion-dependent proliferation Koyama and Baba, 1996, promoting the induction of reactive astrocytes and neuroprotection Koyama, 2021.\n\nDrug development targeting the endothelin receptors has primarily focused on antagonists owing to the vasodilation effect Haryono et al., 2022; Barton and Yanagisawa, 2019. Bosentan, the first non-peptide antagonist for ETA and ETB, is currently in clinical use for the treatment of pulmonary arterial hypertension. Moreover, ETA-selective antagonists are used as therapeutic agents with fewer side effects. Notably, endothelin-1 acts primarily through the ETA receptor and is implicated in the neoplastic growth of multiple tumor types. Thus, endothelin receptor antagonists such as atrasentan and zibotentan have demonstrated potential anticancer activity in preclinical studies Rosan\u00f2 et al., 2013. The development of ETB agonists is also underway, as they provide therapeutic benefits such as vasodilation and neuroprotection Davenport et al., 2016; Koyama, 2021. IRL1620, a truncated analog of ET-1, is the smallest ETB-selective agonist that has been shown to selectively and transiently increase tumor blood flow Gulati et al., 2012, making it a potential adjuvant cancer therapy for enhancing the delivery of anti-tumor drugs and acute ischemic stroke Ranjan and Gulati, 2022. However, IRL1620 is a linear peptide with exposed N- and C-termini and thus has problems in terms of pharmacokinetics and drug delivery. Currently, small-molecule ETB-selective agonists have not been developed, hindering drug development targeting the ETB receptor.\n\nTo date, eight crystal structures of the human ETB receptor have been reported, elucidating the structure-activity relationships of the peptide agonists and small-molecule clinical antagonists Shihoya et al., 2016; Nagiri et al., 2019; Izume et al., 2020; Shihoya et al., 2018; Shihoya et al., 2017. Nevertheless, the detailed activation mechanism has remained elusive due to the crystallization constructs containing T4 lysozyme in the intracellular loop (ICL) 3 and thermostabilizing mutations Okuta et al., 2016; Nakai et al., 2022 that stabilize the inactive state. Moreover, the conserved N7.49P7.50xxY7.53 motif (superscripts indicate Ballesteros\u2013Weinstein numbers Ballesteros and Weinstein, 1995) essential for G-protein activation Venkatakrishnan et al., 2013 is altered to N7.49P7.50xxL7.53Y7.54 in the wild-type ETB receptor. Thus, little is known about ETB-mediated G-protein activation. Here, we report the 2.8 \u00c5-resolution cryo-electron microscopy (cryo-EM) structure of the human ETB-Gi signaling complex bound to ET-1, revealing the unique mechanisms of receptor activation and G-protein coupling.\n\n## Results\n\n### Development of fusion-G system for structural determination\n\nFor the cryo-EM analysis, we initially used the thermostabilized receptor ETB-Y5, which contains five thermostabilizing mutations Okuta et al., 2016. However, the purified ETB-Y5 could not form a stable complex with the Gi trimer because the mutations were known to stabilize the inactive conformation. Thus, we chose to use the wild-type ETB for the structural study. To purify the stable GPCR-G-protein complex, we developed a \u2018Fusion-G system\u2019 (Figure 1A) by combining two complex stabilization techniques. One of these techniques was the NanoBiT tethering strategy Duan et al., 2020; Dixon et al., 2016, where the large part of NanoBiT (LgBiT) was fused to the C-terminus of the receptor, and a modified 13-amino acid peptide of NanoBiT (HiBiT) was fused to the C-terminus of G\u03b2 via the GS linker. HiBit has a potent affinity for LgBiT (Kd = 700 pM) and thus provides an additional linkage to stabilize the interface between H8 of the receptor and the G\u03b2 subunit of the G-protein. This strategy has been successfully used to solve several GPCR/G-protein complex structures Duan et al., 2020; Xia et al., 2021. The other technique was a 3-in-1 vector for G-protein expression, in which the G\u03b1 subunit was fused to the C-terminus of the G\u03b3 subunit (Kim et al., 2020; Nureki et al., 2022; Figure 1A). The resulting pFastBac-Dual vector could produce a virus that expressed the G-protein trimer. Moreover, the protease-cleavable green fluorescent protein (EGFP) was connected to the C-terminus of the receptor-LgBiT fusion, allowing analysis of complex formation by fluorescence-detection size-exclusion chromatography (FSEC) Hattori et al., 2012. Using this system, we confirmed the complex formation of LPA1 and S1P5 with Gi (Figure 1\u2014figure supplement 1A, B), whose structures in complex with the Gi trimer had previously been reported Akasaka et al., 2022; Liu et al., 2022; Yuan et al., 2021; Xu et al., 2022a.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representations of the fusion-G system. (B) Fluorescence-detection size-exclusion chromatography (FSEC) analysis of complex formation by the ETB receptor. The fluorescence intensities are adjusted to equalize those corresponding to the void volumes. (C) Cryo-electron microscopy (cryo-EM) map with variously colored densities. (D) Structure of the complex determined after refinement in the cryo-EM map, shown as a ribbon representation. (E) Density focused on ET-1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) Fluorescence-detection size-exclusion chromatography (FSEC) analysis of the complex formation of LPA1 (A) and S1P5 (B). The fluorescence intensities are adjusted to equalize those corresponding to the void volumes. When co-expressed with the Gi trimer, the peak corresponding to the complex appears on the high molecular weight side of the receptor, reflecting the basal activity and the HiBiT-LgBiT binding, independent of the G-protein. When the co-expressed cells were treated with the agonists and apyrase, the complex peak of LPA1 and S1P5 became larger, corresponding to the GPCR-G-protein complex. (C) Size-exclusion chromatography elution profiles of the ETB -Gi complex. (D) SDS-PAGE analysis of the gel filtration fractions. Although the unbound receptor was present, the complex could be separated and purified effectively.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Flow chart of the cryo-EM data processing for the ETB -Gi complex, including particle projection selection, classification, and three-dimensional (3D) density map reconstruction. Local resolution maps, FSC curves, and cryo-EM density maps are also shown. Unless otherwise noted, analysis jobs were run on cryoSPARC v3.3. Details are provided in the Methods section.\n\nWe cloned the full-length human ETB receptor into the LgBiT vector. Using the fusion-G-system, we confirmed the formation of the ETB-Gi complex (Figure 1B). The co-expressed cells from a 300 ml culture were solubilized and purified by Flag affinity chromatography. After incubation with scFv16, the complex was purified by size exclusion chromatography (Figure 1\u2014figure supplement 1C, D). The structure of the purified complex was determined by single-particle cryo-EM analysis with an overall resolution of 2.8 \u2009\u00c5 (Figure 1C and D, Figure 1\u2014figure supplement 2, Table 1). No density corresponding to NanoBiT was observed in the 2D class averages and reconstructed 3D density map, as in the previous structural studies using the NanoBiT tethering strategy Duan et al., 2020; Xia et al., 2021; Wang et al., 2021; Xu et al., 2022b. We refined with a mask on the receptor and obtained the receptor structure with a nominal resolution of 3.1 \u2009\u00c5 (Figure 1\u2014figure supplement 2, Table 1). The agonist ET-1 is well resolved (Figure 1E).\n\n**Table 1.**\n Cryo-EM data collection, refinement, and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data collection</th>\n      <th>ETB-Gi (overall)</th>\n      <th>ETB-Gi (receptor focused)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Microscope</td>\n      <td colspan=\"2\">Titan Krios (Thermo Fisher Scientific)</td>\n    </tr>\n    <tr>\n      <td>Voltage (keV)</td>\n      <td colspan=\"2\">300</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e-/\u00c52)</td>\n      <td colspan=\"2\">49.965</td>\n    </tr>\n    <tr>\n      <td>Detector</td>\n      <td colspan=\"2\">Gatan K3 summit camera (Gatan)</td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td colspan=\"2\">\u00d7105,000</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td colspan=\"2\">\u20130.8\u20131.6</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5/pix)</td>\n      <td colspan=\"2\">0.83</td>\n    </tr>\n    <tr>\n      <td>Number of movies</td>\n      <td colspan=\"2\">10,408</td>\n    </tr>\n    <tr>\n      <td>Symmetry</td>\n      <td colspan=\"2\">C1</td>\n    </tr>\n    <tr>\n      <td>Picked particles</td>\n      <td colspan=\"2\">3,863,134</td>\n    </tr>\n    <tr>\n      <td>Final particles</td>\n      <td colspan=\"2\">260,085</td>\n    </tr>\n    <tr>\n      <td>Map resolution (\u00c5)</td>\n      <td>2.80</td>\n      <td>3.13</td>\n    </tr>\n    <tr>\n      <td>FSC threshold</td>\n      <td colspan=\"2\">0.143</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Model refinement</td>\n    </tr>\n    <tr>\n      <td>Atoms</td>\n      <td>9,367</td>\n      <td>2,523</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">R.m.s. deviations for ideal</td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.002</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.56</td>\n      <td>0.52</td>\n    </tr>\n    <tr>\n      <td>Validation</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>11.68</td>\n      <td>7.7</td>\n    </tr>\n    <tr>\n      <td>Rotamers (%)</td>\n      <td>0.00</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Ramachandran plot</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>96.55</td>\n      <td>98.04</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>3.19</td>\n      <td>1.96</td>\n    </tr>\n    <tr>\n      <td>Outlier (%)</td>\n      <td>0.26</td>\n      <td>0.00</td>\n    </tr>\n  </tbody>\n</table>\n\n### Receptor conformational changes upon Gi activation\n\nThe extracellular half of the receptor superimposes well on the ET-1-bound crystal structure, and ET-1 interacts closely with the receptor in a similar manner (Figure 2A). Previous crystallographic analyses have suggested that the ET-1 binding leads to the downward movement of N3787.45 and W3366.48 in the C6.47W6.48xP6.50 motif at the bottom of the ligand binding pocket, which ultimately results in the downward rotation of F3326.44 in the P5.50I3.40F6.44 motif, and leading to the intracellular opening Shihoya et al., 2016; Nagiri et al., 2019; Izume et al., 2020; Shihoya et al., 2018; Shihoya et al., 2017. The downward movement of the residues is larger in the ETB-Gi complex than in the ET-1-bound crystal structure (Figure 2B), which consequently results in the outward displacement of the intracellular portion of the transmembrane helix (TM) 6 by 6.8 \u00c5 as compared to the apo state (Figure 2C), and by 5.1 \u00c5 as compared to the ET-1-bound crystal structure (Figure 2D). The degree of TM6 opening observed is less than those of other Gi-coupled receptors (e.g. \u03bcOR: 10 \u00c5, CB1: 11.6 \u00c5, and S1P1: 9 \u00c5) Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig2-v1.jpg)\n\n**Figure 2.:** (A) Superimposition of the ET-1-bound receptor in the crystal and cryo-electron microscopy (cryo-EM) structures. (B) Superimposition of the ETB structures, focused on the receptor core. (C, D) Superimpositions of the Gi-complexed ETB structure with the ET-1-bound crystal structure (C) and apo structure (D). (E-G) D3.49R3.50Y3.51 and N7.49P7.50xxY7.53 motifs in ETB (E), \u03b22AR (F), and \u03bcOR (G). Black dashed lines indicate hydrogen bonds.\n\nIn most class A GPCRs, the highly conserved D3.49R3.50Y3.51 and N7.49P7.50xxY7.53 motifs on the intracellular side play an essential role in G-protein coupling Venkatakrishnan et al., 2013. The D3.49R3.50Y3.51 motif is conserved in the ETB receptor. Upon receptor activation, the ionic lock between D1983.49 and R1993.50 is broken, and R1993.50 becomes oriented towards the intracellular cavity (Figure 2E), similar to other GPCRs Zhuang et al., 2022; Rasmussen et al., 2011; Ring et al., 2013; Cherezov et al., 2007; Manglik et al., 2012; Huang et al., 2015 (Figure 2F and G). In contrast, the N7.49P7.50xxY7.53 motif is altered to N7.49P7.50xxL7.53Y7.54, where Y7.53 is replaced by L3867.53. In most class A GPCRs, receptor activation disrupts the stacking interaction between Y7.53 and F8.50 Carpenter and Tate, 2017. Y7.53 moves inwardly and forms a water-mediated hydrogen bond with the highly conserved Y5.58 (Figure 2F and G; Ring et al., 2013; Huang et al., 2015; Deupi et al., 2012). The mutations of the tyrosines significantly reduce G-protein activation Goncalves et al., 2010; Flock et al., 2015, indicating that the interaction between Y5.58-and Y7.53 stabilizes the active conformation of the receptor. Along with the motion, the intracellular portion of TM7 is displaced by approximately 4 \u00c5. As L3867.53 is a hydrophobic residue, it cannot form a polar interaction, and hence in the ETB-Gi complex, TM7 is not displaced inwardly (Figure 2C). Nonetheless, the stacking interaction with F3938.50 is disrupted similarly. Moreover, the intracellular portion of TM7 is displaced downward by 2.8 \u00c5. As expected, Y7.54 is directed towards the membrane plane, and its rotamer does not change upon receptor activation (Figure 2E). The substitution of Y7.53 with L3867.53 affects the movement of TM7 upon receptor activation, thereby distinguishing it from other GPCRs.\n\n### Shallow Gi coupling\n\nThese conformational changes create an intracellular cavity for G-protein recognition (Figure 3A, Figure 3\u2014figure supplement 1). The cavity closely interacts with the C-terminal \u03b15-helix of G\u03b1i, the primary determinant for G-protein coupling. In particular, R1993.50 forms a hydrogen bond with the backbone carbonyl of C351G.H5.23 (superscript indicates the common G\u03b1 numbering [CGN] system Flock et al., 2015), which is commonly observed in other GPCR-Gi complexes Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020; Kato et al., 2019. Additionally, the C-terminal carboxylate of \u03b15-helix forms electrostatic interactions with the backbone nitrogen atom of K3918.48. There are several other hydrogen-bonding interactions between the \u03b15-helix and the receptor (Figure 3A). On ICL2, W206ICL2 fits into a hydrophobic pocket formed by L194G.S3.01, F336G.H5.08, T340G.H5.12, I343G.H5.15, and I344G.H5.16 in the G\u03b1i subunit. Moreover, ICL2 forms extensive van der Waals interactions with the \u03b1N (Figure 3\u2014figure supplement 1), which are not observed in other GPCR-Gi complexes (Figure 3\u2014figure supplement 1; Yuan et al., 2021; Hua et al., 2020).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig3-v1.jpg)\n\n**Figure 3.:** (A) Hydrogen-bonding interactions between ETB and the \u03b15-helix, indicated by black dashed lines. (B) Comparison of the G\u03b1 positions in the GPCR-G-protein complexes. The structures are superimposed on the receptor structure of the NTS1-C state.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B) Receptor-Gi interactions within 4.5 \u00c5. Black dashed lines indicate hydrogen bonds. (C-E) Structural comparisons of the interactions between ICL2 and Gi in ETB (C), S1P1 (D), and CB1 (E). Residues are shown as stick and CPK models. (F) Structural comparison of the G\u03b1i1 subunits.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A-F) Interactions between the \u03b15-helix and TM7-H8 within 4.5 \u00c5 in the respective complexes.\n\nUpon receptor activation, the intracellular portion of TM7 moves downwards, resulting in the unique Gi coupling mode. Along with this motion, L3867.53 directly forms a hydrophobic contact with G352G.H5.24. Moreover, TM7 and H8 extensively interact with the \u03b15-helix (Figure 3\u2014figure supplement 2), which is not observed in other GPCR-Gi complexes (Figure 3\u2014figure supplement 2; Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020; Kato et al., 2019). These structural features enable the \u03b15-helix of ETB-Gi to be located in the shallowest position relative to the receptor among the Gs, Gi, and Gq-coupled GPCR structures (Kim et al., 2020; Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020; Rasmussen et al., 2011; Kato et al., 2019; Figure 3B). Nevertheless, the G\u03b1i structure adopts a nucleic acid-free state, similar to the \u03bcOR-Gi complex (Figure 3\u2014figure supplement 1; Zhuang et al., 2022; Wall et al., 1995). The interacting surface area between the receptor and G\u03b1i subunit is 1,196 \u00c52, which is comparable to those in other GPCR-Gi complexes (\u00b5OR : 1,260 \u00c52. NTS1 : 1,197 \u00c52. and S1P1: 1,376 \u00c52. Yuan et al., 2021; Zhuang et al., 2022; Kato et al., 2019). As described above, ICL2 and TM7 extensively interact with the \u03b1N and \u03b15 helix of the G\u03b1i subunit, respectively. These interactions are uniquely observed in the ETB-Gi complex and can compensate for the shallow binding of Gi.\n\n## Discussion\n\nIn this study, we established the Fusion-G system, which facilitates the efficient expression and purification of the GPCR-G-protein complex. Additionally, the ability to monitor the fluorescence of GFP fused in the C-terminus of the receptor makes it easier to optimize the expression and purification conditions. The tethering strategy only increases the proportion of the complex by constantly placing the G-protein around the receptor rather than tightly anchoring the complex, suggesting that the fusion-G-system has minimal effect on the complex structure. It should be noted that the potential artifacts resulting from the tethering strategy cannot be entirely ruled out. The hybrid approach we have developed, combining NanoBiT tethering and FSEC methodology, is an effective option for comprehensive structural analysis of various other membrane protein complexes.\n\nThe ETB-Gi structure determined by this strategy filled in the last piece of the puzzle, and our understanding of the mechanism of receptor activation has been significantly deepened. The ligand binding pocket is essentially similar in both the crystal structure of the receptor alone and in the Gi protein complex (Figure 2A). However, the W3366.48 rotamer, which comprises the bottom of the ligand-binding pocket, differs (Figure 2B), thereby leading to the activation of the intracellular side of the receptor (Figure 2C and D). Thus, it may be crucial to choose and evaluate compounds based on the bottom of the ligand pocket in the current ETB-Gi structure (Figure 2B) to develop small molecule ETB agonists for neuroprotection and cancer therapy.\n\nPrevious structural analyses have demonstrated that docking the \u03b15-helix to the receptor cavity leads to destabilization of the nucleic acid binding site located at the root of the \u03b15-helix (Figure 3\u2014figure supplement 1; Zhuang et al., 2022; Rasmussen et al., 2011; Su et al., 2020), thus promoting the GDP/GTP exchange reaction. While the binding of G\u03b1s remains mostly indistinguishable in all complexes, the binding of G\u03b1i varies, displaying different G\u03b1 rotations in relation to the receptor Okamoto et al., 2021. Nevertheless, the depth of the docking towards the receptor remains constant (Figure 3B). Since the N7.49P7.50xxY7.53 motif is not conserved in ETB, TM7 undergoes the downward movement upon the Gi binding, resulting in the shallow position of the \u03b15-helix. Thus, the restrictions of the residues in the \u03b15-helix may be less strict, accounting for the G-protein promiscuity of ETB. Since the other promiscuous GPCRs (e.g. NTS1) preserve the N7.49P7.50xxY7.53 motif, the proposed mechanism for G-protein promiscuity may be unique to ETB. Such information is essential for understanding the mechanism of G-protein activation by GPCRs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td>ET-1</td>\n      <td>PEPTIDE INSTITUTE, INC.</td>\n      <td>Cat #,4198 v</td>\n      <td>Ligand for ETB</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sf-900 II SFM</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat #,10902088</td>\n      <td>Expression medium for sf9 cells</td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>n-dodecyl-\u03b2-D-maltoside</td>\n      <td>Calbiochem</td>\n      <td>CAS number:69227-93-6</td>\n      <td>Detergents used in purification of ETB-Gi complex</td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Cholesteryl hemisuccinate</td>\n      <td>Merck Millipore</td>\n      <td>CAS number:1510-21-0</td>\n      <td>For purifying ETB-Gi complex</td>\n    </tr>\n    <tr>\n      <td>peptide, recombinant protein</td>\n      <td>Apyrase</td>\n      <td>New England Biolabs</td>\n      <td>Cat #,M0398</td>\n      <td>Enzyme used for ETB-Gi complex formation</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Anti-DYKDDDDK G1 Affinity resin</td>\n      <td>Gen Script</td>\n      <td>Cat #,L00432</td>\n      <td>Affinity resin for DYKDDDDK tags</td>\n    </tr>\n    <tr>\n      <td>chemical compound, drug</td>\n      <td>Lauryl Maltose Neopentyl Glycol</td>\n      <td>Anatrace</td>\n      <td>CAS number:1257852-96-2</td>\n      <td>Detergents used in purification of ETB-Gi complex</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>EPU</td>\n      <td>Thermo Fisher Scientific</td>\n      <td></td>\n      <td>For Cryo-EM data collection</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION-3.1</td>\n      <td>Zivanov et al., 2018</td>\n      <td>RRID:SCR_016274</td>\n      <td>For Cryo-EM data processing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryoSPARC v3.3</td>\n      <td>STRUCTURA BIOTECHNOLOGY</td>\n      <td>RRID:SCR_016501</td>\n      <td>For cryo-EM data processing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>Emsley et al., 2010</td>\n      <td>RRID:SCR_014222</td>\n      <td>For structure model building</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix 1.19\u20134092</td>\n      <td>Afonine et al., 2018</td>\n      <td>RRID:SCR_014224</td>\n      <td>For structure refinement</td>\n    </tr>\n    <tr>\n      <td>other</td>\n      <td>Quantifoil holey carbon grid</td>\n      <td>Quantifoil</td>\n      <td>R1.2/1.3, Au, 300 mesh</td>\n      <td>For cryo-EM specimen preparation</td>\n    </tr>\n  </tbody>\n</table>\n\n### Constructs\n\nThe full-length human ETB gene was subcloned into the pFastBac vector with an HA-signal peptide sequence on its N-terminus and the LgBiT fused to its C-terminus followed by a 3 C protease site and EGFP-His8 tag. A 15 amino sequence of GGSGGGGSGGSSSGG was inserted into both the N-terminal and C-terminal sides of LgBiT. The Flag epitope tag (DYKDDDDK) was introduced between G57 and L66. The native signal peptide was replaced with the haemagglutinin signal peptide. Rat G\u03b21 and bovine G\u03b32 were subcloned into the pFastBac Dual vector, as described previously Kobayashi et al., 2020. In detail, rat G\u03b21 was cloned with a C-terminal HiBiT connected with a 15 amino sequence of GGSGGGGSGGSSSGG. Moreover, human G\u03b1i1 was subcloned into the C-terminus of the bovine G\u03b32 with a nine amino sequence GSAGSAGSA linker. The resulting pFastBac dual vector can express the Gi trimer.\n\n### Complex formation and FSEC analysis\n\nBacmid preparation and virus production was performed according to the Bac-to-Bac baculovirus system manual (Gibco, Invitrogen). Spodoptera frugiperda Sf9 cells at a density of 3 \u00d7 106 cells/ml were co-infected with baculoviruses encoding receptor and Gi trimer at the ratio of 1:1. For the expression of the receptor alone, the baculovirus encoding receptor was only used. Cells were harvested 48 \u2009hr after infection. 1 ml cell pellets were solubilized in 200 \u03bcl buffer, containing 20 \u2009mM Tris-HCl, pH\u20098.0, 150 \u2009mM NaCl, 1% n-dodecyl-\u03b2-D-maltoside (DDM) (Calbiochem), 0.2% cholesteryl hemisuccinate (CHS) (Merck) and rotated for 1 \u2009hr at 4 \u00b0C.\n\nFor the complex formation with the agonist, cell pellets were resuspended in 20 \u2009mM Tris-HCl, pH\u20098.0, 100 \u2009mM NaCl, and 10% Glycerol, and homogenized by douncing ~20 times. Apyrase was added to the lysis at a final concentration of 25 mU/ml. Each agonist was added at a final concentration of 10 \u2009\u00b5M. The homogenate was incubated at room temperature for 1 \u2009hr with flipping. Then, DDM and CHS were added to a final concentration of 1% and 0.2%, respectively for 1 \u2009hr at 4 \u00b0C.\n\nThe supernatants were separated from the insoluble material by ultracentrifugation at 100,000 g for 20 \u2009min. A fraction of the resulting supernatant (10 \u03bcl) was loaded onto a Superdex 200 increase 10/300 column in 20 \u2009mM Tris-HCl, pH 8.0, 150 \u2009mM NaCl, and 0.03% DDM, and run at the flow rate of 0.5 ml/min. The eluent was detected by a fluorometer with the excitation wavelength (480 nm) and emission wavelength settings (512 nm).\n\n### ET-1\u2013ETB\u2013Gi complex formation and purification\n\nFor expression, 300 ml of the Sf9 cells at a density of 3 \u00d7 106 cells/ml were co-infected with baculovirus encoding the ETB-LgBiT-EGFP and Gi trimer at the ratio of 1:1. Cells were harvested 48 \u2009hr after infection. Cell pellets were resuspended in 20 \u2009mM Tris-HCl, pH\u20098.0, 100 \u2009mM NaCl, and 10% Glycerol, and homogenized by douncing ~30 times. Apyrase was added to the lysis at a final concentration of 25 mU/ml. ET-1 was added at a final concentration of 2 \u2009\u00b5M. The lysate was incubated at room temperature for 1 \u2009hr with flipping. Then, the membrane fraction was collected by ultracentrifugation at 180,000 g for 1 hr. The cell membrane was solubilized in buffer, containing 20 \u2009mM Tris-HCl, pH\u20098.0, 150 \u2009mM NaCl, 1% DDM, 0.2% CHS, 10% glycerol, and 2 \u03bcM ET-1 for 1 \u2009hr at 4 \u00b0C. The supernatant was separated from the insoluble material by ultracentrifugation at 180,000 g for 30 \u2009min and then incubated with the Anti-DYKDDDDK G1 resin (Genscript) for 1 hr. The resin was washed with 20 column volumes of wash buffer containing 20 \u2009mM Tris-HCl, pH 8.0, 500 \u2009mM NaCl, 10% Glycerol, 0.1% Lauryl Maltose Neopentyl Glycol (LMNG) (Anatrace), and 0.01% CHS. The complex was eluted by the wash buffer containing 0.15 mg ml\u20131 Flag peptide. The eluate was treated with 0.5 mg of HRV-3C protease (homemade) and dialyzed against buffer (20 \u2009mM Tris-HCl, pH\u20098.0, and 300 \u2009mM NaCl). Then, cleavaged GFP-His8 and HRV-3C protease were removed with Ni+-NTA resin. The flow-through was incubated with the scFv16, prepared as described previously Okamoto et al., 2021. The complex was concentrated and loaded onto a Superdex 200 increase 10/300 column in 20 \u2009mM Tris-HCl, pH 8.0, 150 \u2009mM NaCl, 0.01% LMNG, 0.001% CHS, and 1 \u03bcM agonist. Peak fractions were concentrated to 8 mg/ml.\n\n### Cryo-EM grid preparation and data acquisition\n\nThe purified complex was applied onto a freshly glow-discharged Quantifoil holey carbon grid (R1.2/1.3, Au, 300 mesh) and plunge-frozen in liquid ethane by using a Vitrobot Mark IV (FEI). Cryo-EM data collection was performed on a 300\u2009kV Titan Krios G3i microscope (Thermo Fisher Scientific) equipped with a BioQuantum K3 imaging filter (Gatan) and a K3 direct electron detector (Gatan). In total, 10,408 movies were acquired with a calibrated pixel size of 0.83 \u2009\u00c5 pix\u22121 and with a defocus range of \u22120.8 to \u22121.6 \u2009\u03bcm, using the EPU software (Thermo Fisher\u2019s single-particle data collection software). Each movie was acquired for 2.3 \u2009s and split into 48 frames, resulting in an accumulated exposure of about 49.965\u2009e\u2212 \u00c5\u22122.\n\nAll acquired movies in super-resolution mode were binned by 2x and were dose-fractionated and subjected to beam-induced motion correction implemented in RELION 3.1 Zivanov et al., 2018. The contrast transfer function (CTF) parameters were estimated using patch CTF estimation in cryoSPARC v3.3 Punjani et al., 2017. Particles were initially picked from a small fraction with the Blob picker and subjected to several rounds of two-dimensional (2D) classification in cryoSPARC. Selected particles were used for training of topaz model Bepler et al., 2019. For the full dataset, 3,863,134 particles were picked and extracted with a pixel size of 3.32 \u00c5, followed by 2D classification to remove carbon edges and ice contaminations. A total of 1,442,243 particles were re-extracted with the pixel size of 1.16 \u00c5 and curated by three-dimensional (3D) classification without alignment in RELION. Finally, the 260,085 particles in the best class were reconstructed using non-uniform refinement, resulting in a 2.80 \u00c5 overall resolution reconstruction, with the gold standard Fourier Shell Correlation (FSC = 0.143) criteria in cryoSPARC. Moreover, the 3D model was refined with a mask on the receptor. As a result, the local resolution of the receptor portion improved with a nominal resolution of 3.13 \u2009\u00c5. The local resolution was estimated by cryoSPARC. The processing strategy is described in Figure 1\u2014figure supplement 2.\n\n### Model building and refinement\n\nThe quality of the density map was sufficient to build an atomic model. Previously reported high-resolution crystal structure of the ET-3 bound ETB receptor (PDB 6IGK) and cryo-EM MT1-Gi structure (PDB 7DB6) were used as the initial models for the model building of receptor and Gi portions, respectively Shihoya et al., 2018; Okamoto et al., 2021. Initially, the models were fitted into the density map by jiggle fit using COOT Emsley et al., 2010. Then, atomic models were readjusted into the density map using COOT and refined using phenix.real_space_refine (v1.19) with the secondary structure restraints using phenix.secondary_structure_restraints Adams et al., 2010; Afonine et al., 2018.\n",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "3f662a58-2c29-4525-8813-42c27c3e71b3",
+      "submission_id": "77f72d6e-1687-4940-84b8-66f3b65811b9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Drew, https://ror.org/05f0yaq80 Stockholm University Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85821.sa0](https://doi.org/10.7554/eLife.85821.sa0)\n\nBy combining NanoBiT tethering and FSEC methodology, the authors present a useful strategy for the efficient expression and purification of the GPCR-G-protein complex, as demonstrated here by the cryo-EM structure of human ETB in complex with the vasoconstrictioning peptide ET-1 and the inhibitory G-protein (Gi). The ETB-Gi-protein complex provides valuable and convincing data on how ET-1 binding is coupled to Gi-protein binding. The complex structure is solid and will appeal to the GPCR and pharmacology communities.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- David Drew, https://ror.org/05f0yaq80 Stockholm University Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85821.sa1](https://doi.org/10.7554/eLife.85821.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cryo-EM structure of the endothelin-1-ETB-Gi complex\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including David Drew as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Kenton Swartz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Arun Shukla (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nOverall, this is an excellent manuscript. Please consider the following comments in a revised version of the manuscript.\n\n1. Regarding Figure 3B. It might true helpful to also include the amount of buried SA of the Gi interaction to better compare the extent of interaction between a5 and the different solved G-protein complex structures.\n\n2. Authors highlight a shallow binding modality of alpha5 helix on the receptor and also corelate it with previous studies. It would be helpful if they also comment the functional implications, if any, for this observation? For example, does it have a role in lose G-protein subtype selectivity of ETbR compared to other GPCR where a deeper insertion is observed?\n\n3. Please consider commentsing on the use of NanoBIT and if this coupling could influence lipid binding, such as PIP2? Also, we would invite the discussion of the use of this technology in the manuscript for other membrane protein complexes.\n\n4. Please consider expanding the discussion of their findings beyond the structural biology point of view and the potential implications of this work from a clinical point of view in the background and discussion to add more depth to this manuscript.\n\n5. \"Junk particles\" are mentioned in the method section on cryo-EM data processing. While we all use this term in our conversations, I wonder if a better terminology can be used when describing such particles in a research manuscript.\n\nReviewer #2 (Recommendations for the authors):\n\nThe study by Sano et al. observed detailed G-protein activation by endothelin receptor type B after its activation. This is an important study of an underreported topic that revealed novel findings that could be potentially valuable in various disciplines. However, the reviewer feels that the authors would be better served to expand on the discussion of their findings beyond the structural biology point of view. It would be better if the authors put clinical point of view in the background and discussion to add more value in this manuscript.\n",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d0c53918-ef29-4afd-ae9c-18288fc775f3",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C1",
+      "claim": "The endothelin ETB receptor is a promiscuous G-protein coupled receptor that is activated by vasoactive peptide endothelins.",
+      "claim_type": "EXPLICIT",
+      "source": "The endothelin ETB receptor is a promiscuous G-protein coupled receptor that is activated by vasoactive peptide endothelins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement in the abstract that characterizes the ETB receptor based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "720848cd-d332-48e7-9a38-b6d581628d7e",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C2",
+      "claim": "ETB signaling induces reactive astrocytes in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "ETB signaling induces reactive astrocytes in the brain and vasorelaxation in vascular smooth muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "5f9d37e6-ccd8-457c-894f-747de12d8c73",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C3",
+      "claim": "ETB signaling induces vasorelaxation in vascular smooth muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "ETB signaling induces reactive astrocytes in the brain and vasorelaxation in vascular smooth muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "a1b6050a-2c37-4340-ab1b-fb6c5aef3b15",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C4",
+      "claim": "ETB agonists are expected to be drugs for neuroprotection and improved anti-tumor drug delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, ETB agonists are expected to be drugs for neuroprotection and improved anti-tumor drug delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future drug applications based on the biological functions of ETB.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "87d444b0-4d8c-45cd-8d57-23016283e7bf",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C5",
+      "claim": "The cryo-electron microscopy structure of the endothelin-1-ETB-Gi complex was determined at 2.8 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the cryo-electron microscopy structure of the endothelin-1-ETB-Gi complex at 2.8 \u00c5 resolution, with complex assembly stabilized by a newly established method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding directly stated in the abstract and supported by experimental data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "9cedddc2-0acf-4077-9e2d-298168c66874",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C6",
+      "claim": "The NPxxY motif, essential for G-protein activation, is not conserved in ETB.",
+      "claim_type": "EXPLICIT",
+      "source": "The NPxxY motif, essential for G-protein activation, is not conserved in ETB, resulting in a unique structural change upon G-protein activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis and comparison with other GPCRs in the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "24e7887f-c4b4-4e5f-9d3f-847f4097ad20",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C7",
+      "claim": "The non-conservation of the NPxxY motif in ETB results in a unique structural change upon G-protein activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The NPxxY motif, essential for G-protein activation, is not conserved in ETB, resulting in a unique structural change upon G-protein activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from structural comparisons presented in the results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "dce17774-ad0d-4222-b786-dc7121f77c5e",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C8",
+      "claim": "ETB binds Gi in the shallowest position compared with other GPCR-G-protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with other GPCR-G-protein complexes, ETB binds Gi in the shallowest position, further expanding the diversity of G-protein binding modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparisons shown in Figure 3B and discussed in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "123c25b0-7903-4306-889d-6e610b4c5328",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C9",
+      "claim": "Endothelins are 21-amino-acid vasoconstricting peptides produced primarily in the endothelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelins are 21-amino-acid vasoconstricting peptides produced primarily in the endothelium Yanagisawa et al., 1988 and play a key role in vascular homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "4c24e478-0124-49c7-af96-8a14adb6cc79",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C10",
+      "claim": "Endothelins play a key role in vascular homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelins are 21-amino-acid vasoconstricting peptides produced primarily in the endothelium Yanagisawa et al., 1988 and play a key role in vascular homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "89a99ac9-e8a5-482b-bfcd-9c7e3d18b8fa",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C11",
+      "claim": "ET-1 was first discovered as a potent vasoconstrictor.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the three endothelin isopeptides (ET-1\u20133), ET-1 was first discovered as a potent vasoconstrictor Maguire and Davenport, 2014; Davenport et al., 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "b6ac3efc-935c-4465-878a-19f99245c4b2",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C12",
+      "claim": "ET-1 transmits signals through two receptor subtypes, the ETA and ETB receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "ET-1 transmits signals through two receptor subtypes, the ETA and ETB receptors, which belong to the class A G-protein-coupled receptors (GPCRs) Arai et al., 1990; Sakurai et al., 1990.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "448bfd77-c009-42f2-a1a4-c07f03396ee3",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C13",
+      "claim": "ETA and ETB receptors belong to the class A G-protein-coupled receptors (GPCRs).",
+      "claim_type": "EXPLICIT",
+      "source": "ET-1 transmits signals through two receptor subtypes, the ETA and ETB receptors, which belong to the class A G-protein-coupled receptors (GPCRs) Arai et al., 1990; Sakurai et al., 1990.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "c2f73bd8-2ae9-42e9-8cc8-7fd82a1efacc",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C14",
+      "claim": "The endothelin receptors exert regulatory control over cellular processes important for growth, survival, invasion, and angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The endothelin receptors exert regulatory control over cellular processes important for growth, survival, invasion, and angiogenesis Haryono et al., 2022; Barton and Yanagisawa, 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "2eef7f03-b9a2-4ebe-a884-aa58401bd602",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C15",
+      "claim": "In the vascular system, the ETA receptor serves as the primary mediator of vasoconstriction.",
+      "claim_type": "EXPLICIT",
+      "source": "In the vascular system, the ETA receptor serves as the primary mediator of vasoconstriction, and its irreversible binding to ET-1 leads to prolonged vasoconstriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ETA receptor function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "ff1b847b-7bda-41ff-84de-e4cec7f6509d",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C16",
+      "claim": "Irreversible binding of ETA to ET-1 leads to prolonged vasoconstriction.",
+      "claim_type": "EXPLICIT",
+      "source": "In the vascular system, the ETA receptor serves as the primary mediator of vasoconstriction, and its irreversible binding to ET-1 leads to prolonged vasoconstriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the binding characteristics of the ETA receptor.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "841a5236-d678-4ab1-bd4a-79892e80aaad",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C17",
+      "claim": "The ETB receptor primarily induces vasorelaxation via the nitric oxide-mediated pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the ETB receptor primarily induces vasorelaxation via the nitric oxide-mediated pathway, and it acts as a clearance receptor that removes circulating ET-1 via the lysosomal pathway Bremnes et al., 2000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "8bfd6447-a912-41b6-bb70-9c2c43256837",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C18",
+      "claim": "The ETB receptor acts as a clearance receptor that removes circulating ET-1 via the lysosomal pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the ETB receptor primarily induces vasorelaxation via the nitric oxide-mediated pathway, and it acts as a clearance receptor that removes circulating ET-1 via the lysosomal pathway Bremnes et al., 2000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "637f5b17-cf82-4988-9310-beb45697f74a",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C19",
+      "claim": "The ETB receptor is known to be a promiscuous GPCR, capable of activating multiple types of G-proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The ETB receptor is known to be a promiscuous GPCR, capable of activating multiple types of G-proteins Inoue et al., 2019; Doi et al., 1999.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "f6bbdecb-7b38-45ee-a8e3-c10e2b860fcc",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C20",
+      "claim": "In vascular smooth muscle, ETB induces nitric oxide-mediated vasorelaxation via Gq signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In vascular smooth muscle, it induces nitric oxide-mediated vasorelaxation via Gq signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ETB signaling pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "11f805f0-4c56-471d-9ffc-4ff330cd6a05",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C21",
+      "claim": "The astrocytic ETB receptor-mediated Gi signal reduces intercellular communication through gap junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the astrocytic ETB receptor-mediated Gi signal reduces intercellular communication through gap junctions Tenc\u00e9 et al., 2012, and the Rho signal in astrocytes leads to cytoskeletal reorganization and cell-adhesion-dependent proliferation Koyama and Baba, 1996, promoting the induction of reactive astrocytes and neuroprotection Koyama, 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "accee07b-bf54-4231-8bec-5e48007c97c2",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C22",
+      "claim": "The Rho signal in astrocytes leads to cytoskeletal reorganization and cell-adhesion-dependent proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the astrocytic ETB receptor-mediated Gi signal reduces intercellular communication through gap junctions Tenc\u00e9 et al., 2012, and the Rho signal in astrocytes leads to cytoskeletal reorganization and cell-adhesion-dependent proliferation Koyama and Baba, 1996, promoting the induction of reactive astrocytes and neuroprotection Koyama, 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "64441ffc-96d9-49ab-a0ec-c7c602eea2f1",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C23",
+      "claim": "Rho signaling in astrocytes promotes the induction of reactive astrocytes and neuroprotection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the astrocytic ETB receptor-mediated Gi signal reduces intercellular communication through gap junctions Tenc\u00e9 et al., 2012, and the Rho signal in astrocytes leads to cytoskeletal reorganization and cell-adhesion-dependent proliferation Koyama and Baba, 1996, promoting the induction of reactive astrocytes and neuroprotection Koyama, 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "05eae458-a28f-42ff-9f53-c74a9d93abcc",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C24",
+      "claim": "Drug development targeting the endothelin receptors has primarily focused on antagonists owing to the vasodilation effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug development targeting the endothelin receptors has primarily focused on antagonists owing to the vasodilation effect Haryono et al., 2022; Barton and Yanagisawa, 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "3591d90b-3a33-4a6c-a476-d13d39fcf5fb",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C25",
+      "claim": "Bosentan is the first non-peptide antagonist for ETA and ETB.",
+      "claim_type": "EXPLICIT",
+      "source": "Bosentan, the first non-peptide antagonist for ETA and ETB, is currently in clinical use for the treatment of pulmonary arterial hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about a clinical drug.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "c9c9caaf-2858-4436-9dd0-37e7508fdbe6",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C26",
+      "claim": "Bosentan is currently in clinical use for the treatment of pulmonary arterial hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Bosentan, the first non-peptide antagonist for ETA and ETB, is currently in clinical use for the treatment of pulmonary arterial hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about a clinical drug.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "0f9df287-f30b-4f4f-baee-10fe19b1c926",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C27",
+      "claim": "ETA-selective antagonists are used as therapeutic agents with fewer side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ETA-selective antagonists are used as therapeutic agents with fewer side effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about clinical therapeutics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "81012ef2-5340-49cd-8818-f39cf278b905",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C28",
+      "claim": "Endothelin-1 acts primarily through the ETA receptor and is implicated in the neoplastic growth of multiple tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, endothelin-1 acts primarily through the ETA receptor and is implicated in the neoplastic growth of multiple tumor types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ET-1 function in cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "cb217a8a-e432-4522-a855-6bfc26eb274b",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C29",
+      "claim": "Endothelin receptor antagonists such as atrasentan and zibotentan have demonstrated potential anticancer activity in preclinical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, endothelin receptor antagonists such as atrasentan and zibotentan have demonstrated potential anticancer activity in preclinical studies Rosan\u00f2 et al., 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "48da4d3c-2c65-49f2-9106-0f5f6e1dbcef",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C30",
+      "claim": "ETB agonists provide therapeutic benefits such as vasodilation and neuroprotection.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of ETB agonists is also underway, as they provide therapeutic benefits such as vasodilation and neuroprotection Davenport et al., 2016; Koyama, 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "5fa7471e-7c30-4f22-94bd-3979dffa5f6b",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C31",
+      "claim": "IRL1620 is a truncated analog of ET-1.",
+      "claim_type": "EXPLICIT",
+      "source": "IRL1620, a truncated analog of ET-1, is the smallest ETB-selective agonist that has been shown to selectively and transiently increase tumor blood flow Gulati et al., 2012, making it a potential adjuvant cancer therapy for enhancing the delivery of anti-tumor drugs and acute ischemic stroke Ranjan and Gulati, 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about IRL1620.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "1d2fbe36-2dcf-487c-a637-337b5c50f60a",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C32",
+      "claim": "IRL1620 is the smallest ETB-selective agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "IRL1620, a truncated analog of ET-1, is the smallest ETB-selective agonist that has been shown to selectively and transiently increase tumor blood flow Gulati et al., 2012, making it a potential adjuvant cancer therapy for enhancing the delivery of anti-tumor drugs and acute ischemic stroke Ranjan and Gulati, 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "baa1bccf-d9d2-487c-b6ad-8fe1489e5c66",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C33",
+      "claim": "IRL1620 has been shown to selectively and transiently increase tumor blood flow.",
+      "claim_type": "EXPLICIT",
+      "source": "IRL1620, a truncated analog of ET-1, is the smallest ETB-selective agonist that has been shown to selectively and transiently increase tumor blood flow Gulati et al., 2012, making it a potential adjuvant cancer therapy for enhancing the delivery of anti-tumor drugs and acute ischemic stroke Ranjan and Gulati, 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "e17cb54b-1add-42b2-8652-40c1e443d3cf",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C34",
+      "claim": "IRL1620 is a potential adjuvant cancer therapy for enhancing the delivery of anti-tumor drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "IRL1620, a truncated analog of ET-1, is the smallest ETB-selective agonist that has been shown to selectively and transiently increase tumor blood flow Gulati et al., 2012, making it a potential adjuvant cancer therapy for enhancing the delivery of anti-tumor drugs and acute ischemic stroke Ranjan and Gulati, 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "9bebaa59-c027-4fc7-977e-c5b5c53ad584",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C35",
+      "claim": "IRL1620 is a linear peptide with exposed N- and C-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "However, IRL1620 is a linear peptide with exposed N- and C-termini and thus has problems in terms of pharmacokinetics and drug delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the structure of IRL1620.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "6631993f-b232-489a-857e-39562a3b1295",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C36",
+      "claim": "IRL1620 has problems in terms of pharmacokinetics and drug delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "However, IRL1620 is a linear peptide with exposed N- and C-termini and thus has problems in terms of pharmacokinetics and drug delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural characteristics of linear peptides.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "fdbc0773-33a8-45ec-a89c-d25cdb57c27b",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C37",
+      "claim": "Small-molecule ETB-selective agonists have not been developed.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, small-molecule ETB-selective agonists have not been developed, hindering drug development targeting the ETB receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of drug development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "7df879cc-7379-4b7d-a783-369039c21dc6",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C38",
+      "claim": "Eight crystal structures of the human ETB receptor have been reported to date.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, eight crystal structures of the human ETB receptor have been reported, elucidating the structure-activity relationships of the peptide agonists and small-molecule clinical antagonists Shihoya et al., 2016; Nagiri et al., 2019; Izume et al., 2020; Shihoya et al., 2018; Shihoya et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "d9bbd4e6-1085-4e9a-a3ed-14892080eb38",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C39",
+      "claim": "Previous crystal structures of ETB have elucidated the structure-activity relationships of the peptide agonists and small-molecule clinical antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, eight crystal structures of the human ETB receptor have been reported, elucidating the structure-activity relationships of the peptide agonists and small-molecule clinical antagonists Shihoya et al., 2016; Nagiri et al., 2019; Izume et al., 2020; Shihoya et al., 2018; Shihoya et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "b8af552c-12c7-4cf5-803f-07075584be0c",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C40",
+      "claim": "The detailed activation mechanism of ETB has remained elusive due to the crystallization constructs containing T4 lysozyme in the intracellular loop (ICL) 3 and thermostabilizing mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the detailed activation mechanism has remained elusive due to the crystallization constructs containing T4 lysozyme in the intracellular loop (ICL) 3 and thermostabilizing mutations Okuta et al., 2016; Nakai et al., 2022 that stabilize the inactive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of previous structural studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "09375fb1-5717-4d6c-8ac0-2a3465dbac9a",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C41",
+      "claim": "The conserved N7.49P7.50xxY7.53 motif essential for G-protein activation is altered to N7.49P7.50xxL7.53Y7.54 in the wild-type ETB receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the conserved N7.49P7.50xxY7.53 motif (superscripts indicate Ballesteros\u2013Weinstein numbers Ballesteros and Weinstein, 1995) essential for G-protein activation Venkatakrishnan et al., 2013 is altered to N7.49P7.50xxL7.53Y7.54 in the wild-type ETB receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "137eb7be-8515-4d6b-8f95-9017a89a48be",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C42",
+      "claim": "Little is known about ETB-mediated G-protein activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, little is known about ETB-mediated G-protein activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "679f3060-eab9-4a30-ae30-ebf6b4c435da",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C43",
+      "claim": "The purified ETB-Y5 could not form a stable complex with the Gi trimer because the mutations were known to stabilize the inactive conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the purified ETB-Y5 could not form a stable complex with the Gi trimer because the mutations were known to stabilize the inactive conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations and knowledge about thermostabilizing mutations.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "44c7db54-6875-43b4-833c-eda5cad71806",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C44",
+      "claim": "The wild-type ETB was chosen for the structural study.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we chose to use the wild-type ETB for the structural study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "40ca1ad0-fc4e-48dd-86ac-ae649e5423ae",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C45",
+      "claim": "The Fusion-G system was developed by combining two complex stabilization techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "To purify the stable GPCR-G-protein complex, we developed a 'Fusion-G system' (Figure 1A) by combining two complex stabilization techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological development described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "edfd5d61-a1d3-40bd-ab6a-eca983f26982",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C46",
+      "claim": "One of the techniques used in the Fusion-G system was the NanoBiT tethering strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these techniques was the NanoBiT tethering strategy Duan et al., 2020; Dixon et al., 2016, where the large part of NanoBiT (LgBiT) was fused to the C-terminus of the receptor, and a modified 13-amino acid peptide of NanoBiT (HiBiT) was fused to the C-terminus of G\u03b2 via the GS linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "c2f3d2bb-17a9-4cb2-8177-507175f99054",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C47",
+      "claim": "HiBit has a potent affinity for LgBiT (Kd = 700 pM).",
+      "claim_type": "EXPLICIT",
+      "source": "HiBit has a potent affinity for LgBiT (Kd = 700 pM) and thus provides an additional linkage to stabilize the interface between H8 of the receptor and the G\u03b2 subunit of the G-protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the NanoBiT system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "b0cb6cf6-934a-45a6-b12e-81d3c0eb0c9b",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C48",
+      "claim": "The NanoBiT tethering strategy has been successfully used to solve several GPCR/G-protein complex structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy has been successfully used to solve several GPCR/G-protein complex structures Duan et al., 2020; Xia et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "96b23fa2-2829-495e-a8ce-c872eb7d6499",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C49",
+      "claim": "The other technique used in the Fusion-G system was a 3-in-1 vector for G-protein expression, in which the G\u03b1 subunit was fused to the C-terminus of the G\u03b3 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The other technique was a 3-in-1 vector for G-protein expression, in which the G\u03b1 subunit was fused to the C-terminus of the G\u03b3 subunit (Kim et al., 2020; Nureki et al., 2022; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "44861029-262e-4f42-825c-d9a5dcc64cd0",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C50",
+      "claim": "The resulting pFastBac-Dual vector could produce a virus that expressed the G-protein trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting pFastBac-Dual vector could produce a virus that expressed the G-protein trimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological outcome described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "5795d188-2808-411c-80ad-ebda954815c4",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C51",
+      "claim": "The protease-cleavable green fluorescent protein (EGFP) was connected to the C-terminus of the receptor-LgBiT fusion, allowing analysis of complex formation by fluorescence-detection size-exclusion chromatography (FSEC).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the protease-cleavable green fluorescent protein (EGFP) was connected to the C-terminus of the receptor-LgBiT fusion, allowing analysis of complex formation by fluorescence-detection size-exclusion chromatography (FSEC) Hattori et al., 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "7231a1bc-9bdc-41ba-b826-a44f9800f334",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C52",
+      "claim": "Complex formation of LPA1 and S1P5 with Gi was confirmed using the Fusion-G system.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this system, we confirmed the complex formation of LPA1 and S1P5 with Gi (Figure 1\u2014figure supplement 1A, B), whose structures in complex with the Gi trimer had previously been reported Akasaka et al., 2022; Liu et al., 2022; Yuan et al., 2021; Xu et al., 2022a.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in supplementary figures and citations to previous structural studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "5555d9c0-9315-4fae-b74b-675a82f6d744",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C53",
+      "claim": "The structure of the ETB-Gi complex was determined with an overall resolution of 2.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the purified complex was determined by single-particle cryo-EM analysis with an overall resolution of 2.8  \u00c5 (Figure 1C and D, Figure 1\u2014figure supplement 2, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by experimental data and shown in figures and tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "fe757de7-f6a5-494b-83b4-d2a5b87aad2f",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C54",
+      "claim": "No density corresponding to NanoBiT was observed in the 2D class averages and reconstructed 3D density map.",
+      "claim_type": "EXPLICIT",
+      "source": "No density corresponding to NanoBiT was observed in the 2D class averages and reconstructed 3D density map, as in the previous structural studies using the NanoBiT tethering strategy Duan et al., 2020; Xia et al., 2021; Wang et al., 2021; Xu et al., 2022b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the cryo-EM data analysis, consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "65a782ac-91d2-4182-a10a-669c629fa0a9",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C55",
+      "claim": "The receptor structure was refined with a mask on the receptor and obtained with a nominal resolution of 3.1 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "We refined with a mask on the receptor and obtained the receptor structure with a nominal resolution of 3.1  \u00c5 (Figure 1\u2014figure supplement 2, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological outcome supported by data shown in figures and tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "77d680a1-e806-4bfc-b558-1a8dbb669d1c",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C56",
+      "claim": "The agonist ET-1 is well resolved in the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The agonist ET-1 is well resolved (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryo-EM density map shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "7a4e5043-f877-4f4d-8be6-cfd859155069",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C57",
+      "claim": "The extracellular half of the receptor superimposes well on the ET-1-bound crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular half of the receptor superimposes well on the ET-1-bound crystal structure, and ET-1 interacts closely with the receptor in a similar manner (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "9fa5c7ef-b3ec-45aa-bf5e-0897959878dc",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C58",
+      "claim": "ET-1 interacts closely with the receptor in a similar manner to the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular half of the receptor superimposes well on the ET-1-bound crystal structure, and ET-1 interacts closely with the receptor in a similar manner (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "5cdafc10-1730-4fad-a73a-b5c3f42ae2d1",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C59",
+      "claim": "Previous crystallographic analyses have suggested that ET-1 binding leads to the downward movement of N3787.45 and W3366.48 in the C6.47W6.48xP6.50 motif at the bottom of the ligand binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous crystallographic analyses have suggested that the ET-1 binding leads to the downward movement of N3787.45 and W3366.48 in the C6.47W6.48xP6.50 motif at the bottom of the ligand binding pocket, which ultimately results in the downward rotation of F3326.44 in the P5.50I3.40F6.44 motif, and leading to the intracellular opening Shihoya et al., 2016; Nagiri et al., 2019; Izume et al., 2020; Shihoya et al., 2018; Shihoya et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous crystallographic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "1e57a39e-57d3-4eed-ae15-f22cc3898875",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C60",
+      "claim": "The downward movement of N3787.45 and W3366.48 is larger in the ETB-Gi complex than in the ET-1-bound crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The downward movement of the residues is larger in the ETB-Gi complex than in the ET-1-bound crystal structure (Figure 2B), which consequently results in the outward displacement of the intracellular portion of the transmembrane helix (TM) 6 by 6.8 \u00c5 as compared to the apo state (Figure 2C), and by 5.1 \u00c5 as compared to the ET-1-bound crystal structure (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "fd433428-7a57-41f0-8a27-cf8b13e3757f",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C61",
+      "claim": "The downward movement of N3787.45 and W3366.48 results in the outward displacement of the intracellular portion of TM6 by 6.8 \u00c5 as compared to the apo state.",
+      "claim_type": "EXPLICIT",
+      "source": "The downward movement of the residues is larger in the ETB-Gi complex than in the ET-1-bound crystal structure (Figure 2B), which consequently results in the outward displacement of the intracellular portion of the transmembrane helix (TM) 6 by 6.8 \u00c5 as compared to the apo state (Figure 2C), and by 5.1 \u00c5 as compared to the ET-1-bound crystal structure (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural measurement shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "19c85425-6855-4494-9971-a31ce927161a",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C62",
+      "claim": "The intracellular portion of TM6 is displaced by 5.1 \u00c5 in the ETB-Gi complex as compared to the ET-1-bound crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The downward movement of the residues is larger in the ETB-Gi complex than in the ET-1-bound crystal structure (Figure 2B), which consequently results in the outward displacement of the intracellular portion of the transmembrane helix (TM) 6 by 6.8 \u00c5 as compared to the apo state (Figure 2C), and by 5.1 \u00c5 as compared to the ET-1-bound crystal structure (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural measurement shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "9a24d76c-acb0-4b31-8215-1ab81d236c64",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C63",
+      "claim": "The degree of TM6 opening observed in ETB is less than those of other Gi-coupled receptors (e.g. \u03bcOR: 10 \u00c5, CB1: 11.6 \u00c5, and S1P1: 9 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of TM6 opening observed is less than those of other Gi-coupled receptors (e.g. \u03bcOR: 10 \u00c5, CB1: 11.6 \u00c5, and S1P1: 9 \u00c5) Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural comparison supported by citations to other GPCR structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "c51774cf-bc38-4b34-8f02-ae705069d186",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C64",
+      "claim": "In most class A GPCRs, the highly conserved D3.49R3.50Y3.51 and N7.49P7.50xxY7.53 motifs on the intracellular side play an essential role in G-protein coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "In most class A GPCRs, the highly conserved D3.49R3.50Y3.51 and N7.49P7.50xxY7.53 motifs on the intracellular side play an essential role in G-protein coupling Venkatakrishnan et al., 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "a06409a8-b7c1-469d-b873-de422627462c",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C65",
+      "claim": "The D3.49R3.50Y3.51 motif is conserved in the ETB receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The D3.49R3.50Y3.51 motif is conserved in the ETB receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the ETB structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "12eec7d8-4d99-482b-951d-5e5381446504",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C66",
+      "claim": "Upon receptor activation, the ionic lock between D1983.49 and R1993.50 is broken, and R1993.50 becomes oriented towards the intracellular cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon receptor activation, the ionic lock between D1983.49 and R1993.50 is broken, and R1993.50 becomes oriented towards the intracellular cavity (Figure 2E), similar to other GPCRs Zhuang et al., 2022; Rasmussen et al., 2011; Ring et al., 2013; Cherezov et al., 2007; Manglik et al., 2012; Huang et al., 2015 (Figure 2F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation shown in Figure 2E and supported by citations to other GPCR structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "c927b454-881e-47a4-93b8-17edcacbaeb5",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C67",
+      "claim": "In the ETB receptor, the N7.49P7.50xxY7.53 motif is altered to N7.49P7.50xxL7.53Y7.54, where Y7.53 is replaced by L3867.53.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the N7.49P7.50xxY7.53 motif is altered to N7.49P7.50xxL7.53Y7.54, where Y7.53 is replaced by L3867.53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the ETB structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "67361c89-7de7-4929-b0f6-528feff9faad",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C68",
+      "claim": "In most class A GPCRs, receptor activation disrupts the stacking interaction between Y7.53 and F8.50.",
+      "claim_type": "EXPLICIT",
+      "source": "In most class A GPCRs, receptor activation disrupts the stacking interaction between Y7.53 and F8.50 Carpenter and Tate, 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "ef3aea38-3a55-4e3f-9469-6c7708e1c51e",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C69",
+      "claim": "In most class A GPCRs, Y7.53 moves inwardly and forms a water-mediated hydrogen bond with the highly conserved Y5.58.",
+      "claim_type": "EXPLICIT",
+      "source": "Y7.53 moves inwardly and forms a water-mediated hydrogen bond with the highly conserved Y5.58 (Figure 2F and G; Ring et al., 2013; Huang et al., 2015; Deupi et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations and shown in figures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "0a632b0d-117e-4a1a-a782-1f968b66735d",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C70",
+      "claim": "The mutations of Y5.58 and Y7.53 significantly reduce G-protein activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations of the tyrosines significantly reduce G-protein activation Goncalves et al., 2010; Flock et al., 2015, indicating that the interaction between Y5.58-and Y7.53 stabilizes the active conformation of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous mutagenesis studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "a12b121a-773f-4fdf-868c-0370a7c037d0",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C71",
+      "claim": "The interaction between Y5.58 and Y7.53 stabilizes the active conformation of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations of the tyrosines significantly reduce G-protein activation Goncalves et al., 2010; Flock et al., 2015, indicating that the interaction between Y5.58-and Y7.53 stabilizes the active conformation of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on mutagenesis data cited in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "f2961661-6cfd-4f77-a30e-c6da0d56ddd4",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C72",
+      "claim": "Along with the motion of Y7.53, the intracellular portion of TM7 is displaced by approximately 4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with the motion, the intracellular portion of TM7 is displaced by approximately 4 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural measurement from the ETB-Gi structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "40efc849-835b-47ef-94b4-f517e187b5ee",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C73",
+      "claim": "L3867.53 cannot form a polar interaction because it is a hydrophobic residue.",
+      "claim_type": "EXPLICIT",
+      "source": "As L3867.53 is a hydrophobic residue, it cannot form a polar interaction, and hence in the ETB-Gi complex, TM7 is not displaced inwardly (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the chemical properties of leucine.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "9883d882-c90e-4b41-ad93-d82b3d10a131",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C74",
+      "claim": "In the ETB-Gi complex, TM7 is not displaced inwardly.",
+      "claim_type": "EXPLICIT",
+      "source": "As L3867.53 is a hydrophobic residue, it cannot form a polar interaction, and hence in the ETB-Gi complex, TM7 is not displaced inwardly (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "b211bf07-466f-46e5-936f-956b6f84769b",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C75",
+      "claim": "The stacking interaction between L3867.53 and F3938.50 is disrupted in the ETB-Gi complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the stacking interaction with F3938.50 is disrupted similarly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the ETB-Gi structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "79ff9808-e9c5-40fe-9369-102a3be13862",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C76",
+      "claim": "The intracellular portion of TM7 is displaced downward by 2.8 \u00c5 in the ETB-Gi complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the intracellular portion of TM7 is displaced downward by 2.8 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural measurement from the ETB-Gi structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "ce6ff42e-614e-45b4-a8b2-9bfc10b44d4f",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C77",
+      "claim": "Y7.54 is directed towards the membrane plane, and its rotamer does not change upon receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Y7.54 is directed towards the membrane plane, and its rotamer does not change upon receptor activation (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "f2fbe503-1183-4ca7-957b-3667de048afa",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C78",
+      "claim": "The substitution of Y7.53 with L3867.53 affects the movement of TM7 upon receptor activation, thereby distinguishing it from other GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The substitution of Y7.53 with L3867.53 affects the movement of TM7 upon receptor activation, thereby distinguishing it from other GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural comparisons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "31113fe3-5e17-424d-8411-64a5314880d8",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C79",
+      "claim": "The conformational changes in ETB create an intracellular cavity for G-protein recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "These conformational changes create an intracellular cavity for G-protein recognition (Figure 3A, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "db1b6551-d066-40ed-ae23-4a54a475e29d",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C80",
+      "claim": "The intracellular cavity closely interacts with the C-terminal \u03b15-helix of G\u03b1i, the primary determinant for G-protein coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "The cavity closely interacts with the C-terminal \u03b15-helix of G\u03b1i, the primary determinant for G-protein coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the ETB-Gi complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "a24ccbd8-6d6e-4599-978a-74b3a31775f0",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C81",
+      "claim": "R1993.50 forms a hydrogen bond with the backbone carbonyl of C351G.H5.23, which is commonly observed in other GPCR-Gi complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, R1993.50 forms a hydrogen bond with the backbone carbonyl of C351G.H5.23 (superscript indicates the common G\u03b1 numbering [CGN] system Flock et al., 2015), which is commonly observed in other GPCR-Gi complexes Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020; Kato et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation supported by citations to other GPCR-Gi structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "167c7875-5253-4525-b77e-39040410b446",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C82",
+      "claim": "The C-terminal carboxylate of \u03b15-helix forms electrostatic interactions with the backbone nitrogen atom of K3918.48.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the C-terminal carboxylate of \u03b15-helix forms electrostatic interactions with the backbone nitrogen atom of K3918.48.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the ETB-Gi complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "2d594af2-e652-4867-b0f7-88745f45560c",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C83",
+      "claim": "There are several other hydrogen-bonding interactions between the \u03b15-helix and the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "There are several other hydrogen-bonding interactions between the \u03b15-helix and the receptor (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "ec460388-65e9-49dd-91f1-07a195cdc268",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C84",
+      "claim": "W206ICL2 fits into a hydrophobic pocket formed by L194G.S3.01, F336G.H5.08, T340G.H5.12, I343G.H5.15, and I344G.H5.16 in the G\u03b1i subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "On ICL2, W206ICL2 fits into a hydrophobic pocket formed by L194G.S3.01, F336G.H5.08, T340G.H5.12, I343G.H5.15, and I344G.H5.16 in the G\u03b1i subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the ETB-Gi complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "3b63400d-700f-47c4-b57e-8f3dc9b6b6a8",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C85",
+      "claim": "ICL2 forms extensive van der Waals interactions with the \u03b1N.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ICL2 forms extensive van der Waals interactions with the \u03b1N (Figure 3\u2014figure supplement 1), which are not observed in other GPCR-Gi complexes (Figure 3\u2014figure supplement 1; Yuan et al., 2021; Hua et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation shown in supplementary figures and compared with other structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "c19de8a8-92c3-4e96-a2dc-9a4cb89f5a7f",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C86",
+      "claim": "The ICL2-\u03b1N interactions are not observed in other GPCR-Gi complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ICL2 forms extensive van der Waals interactions with the \u03b1N (Figure 3\u2014figure supplement 1), which are not observed in other GPCR-Gi complexes (Figure 3\u2014figure supplement 1; Yuan et al., 2021; Hua et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison with other GPCR-Gi complexes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "cc59fc53-d46d-491f-8226-0a1c650a017d",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C87",
+      "claim": "Upon receptor activation, the intracellular portion of TM7 moves downwards, resulting in the unique Gi coupling mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon receptor activation, the intracellular portion of TM7 moves downwards, resulting in the unique Gi coupling mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "9f1f3256-2b4a-4f17-ab24-c73c04f7a05b",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C88",
+      "claim": "L3867.53 directly forms a hydrophobic contact with G352G.H5.24.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with this motion, L3867.53 directly forms a hydrophobic contact with G352G.H5.24.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the ETB-Gi complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "11ef6696-a726-4dff-b052-e078e716b944",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C89",
+      "claim": "TM7 and H8 extensively interact with the \u03b15-helix in the ETB-Gi complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TM7 and H8 extensively interact with the \u03b15-helix (Figure 3\u2014figure supplement 2), which is not observed in other GPCR-Gi complexes (Figure 3\u2014figure supplement 2; Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020; Kato et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation shown in supplementary figures and compared with other structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "ce1bb5a0-f190-4fc5-b274-344e53a97e2d",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C90",
+      "claim": "The TM7-H8 interactions with the \u03b15-helix are not observed in other GPCR-Gi complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TM7 and H8 extensively interact with the \u03b15-helix (Figure 3\u2014figure supplement 2), which is not observed in other GPCR-Gi complexes (Figure 3\u2014figure supplement 2; Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020; Kato et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison with other GPCR-Gi complexes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "35a557d7-7b9d-4f55-a39c-aceb519c5ec0",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C91",
+      "claim": "The \u03b15-helix of ETB-Gi is located in the shallowest position relative to the receptor among the Gs, Gi, and Gq-coupled GPCR structures.",
+      "claim_type": "EXPLICIT",
+      "source": "These structural features enable the \u03b15-helix of ETB-Gi to be located in the shallowest position relative to the receptor among the Gs, Gi, and Gq-coupled GPCR structures (Kim et al., 2020; Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020; Rasmussen et al., 2011; Kato et al., 2019; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison shown in Figure 3B and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "107e6c6a-149a-40ff-b967-2ebe20237fbc",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C92",
+      "claim": "The G\u03b1i structure adopts a nucleic acid-free state, similar to the \u03bcOR-Gi complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the G\u03b1i structure adopts a nucleic acid-free state, similar to the \u03bcOR-Gi complex (Figure 3\u2014figure supplement 1; Zhuang et al., 2022; Wall et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation compared with the \u03bcOR-Gi complex.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "9cf839c7-32e5-48e8-bc39-e91d7f606e7e",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C93",
+      "claim": "The interacting surface area between the receptor and G\u03b1i subunit is 1,196 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The interacting surface area between the receptor and G\u03b1i subunit is 1,196 \u00c52, which is comparable to those in other GPCR-Gi complexes (\u00b5OR : 1,260 \u00c52. NTS1 : 1,197 \u00c52. and S1P1: 1,376 \u00c52. Yuan et al., 2021; Zhuang et al., 2022; Kato et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural measurement compared with other GPCR-Gi complexes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "e26b9467-deed-44e8-b482-057a89d95336",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C94",
+      "claim": "ICL2 and TM7 extensively interact with the \u03b1N and \u03b15 helix of the G\u03b1i subunit, respectively, which are uniquely observed in the ETB-Gi complex.",
+      "claim_type": "EXPLICIT",
+      "source": "As described above, ICL2 and TM7 extensively interact with the \u03b1N and \u03b15 helix of the G\u03b1i subunit, respectively. These interactions are uniquely observed in the ETB-Gi complex and can compensate for the shallow binding of Gi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "1c9e6233-3fe9-45c0-9470-7161831d9054",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C95",
+      "claim": "The unique interactions between ICL2-\u03b1N and TM7-\u03b15 can compensate for the shallow binding of Gi.",
+      "claim_type": "EXPLICIT",
+      "source": "As described above, ICL2 and TM7 extensively interact with the \u03b1N and \u03b15 helix of the G\u03b1i subunit, respectively. These interactions are uniquely observed in the ETB-Gi complex and can compensate for the shallow binding of Gi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the functional significance of the structural features.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "7d68319c-ee7c-41a4-8869-44c7ea8b7000",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C96",
+      "claim": "The Fusion-G system facilitates the efficient expression and purification of the GPCR-G-protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we established the Fusion-G system, which facilitates the efficient expression and purification of the GPCR-G-protein complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the methodological development described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "dde77bd2-ea76-4ade-8b1c-b3873364fb18",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C97",
+      "claim": "The ability to monitor the fluorescence of GFP fused in the C-terminus of the receptor makes it easier to optimize the expression and purification conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the ability to monitor the fluorescence of GFP fused in the C-terminus of the receptor makes it easier to optimize the expression and purification conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological advantage of the Fusion-G system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "9d9d376f-8fc3-4db6-a39d-3730d3db59c9",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C98",
+      "claim": "The tethering strategy only increases the proportion of the complex by constantly placing the G-protein around the receptor rather than tightly anchoring the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The tethering strategy only increases the proportion of the complex by constantly placing the G-protein around the receptor rather than tightly anchoring the complex, suggesting that the fusion-G-system has minimal effect on the complex structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism of the tethering strategy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "09bd7681-a50e-4532-aa1c-b7889f6a2e1b",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C99",
+      "claim": "The fusion-G-system has minimal effect on the complex structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The tethering strategy only increases the proportion of the complex by constantly placing the G-protein around the receptor rather than tightly anchoring the complex, suggesting that the fusion-G-system has minimal effect on the complex structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the impact of the methodology.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "6c66695c-a5d9-425b-878d-c3ef4c70fe9c",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C100",
+      "claim": "The potential artifacts resulting from the tethering strategy cannot be entirely ruled out.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the potential artifacts resulting from the tethering strategy cannot be entirely ruled out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of methodological limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "572e9d94-745e-4f8f-8b95-4049d5fcbfe4",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C101",
+      "claim": "The hybrid approach combining NanoBiT tethering and FSEC methodology is an effective option for comprehensive structural analysis of various other membrane protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The hybrid approach we have developed, combining NanoBiT tethering and FSEC methodology, is an effective option for comprehensive structural analysis of various other membrane protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the broader applicability of the method.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "c341aaab-a9e7-40cf-a2f0-01af7ba16539",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C102",
+      "claim": "The ETB-Gi structure filled in the last piece of the puzzle, and our understanding of the mechanism of receptor activation has been significantly deepened.",
+      "claim_type": "EXPLICIT",
+      "source": "The ETB-Gi structure determined by this strategy filled in the last piece of the puzzle, and our understanding of the mechanism of receptor activation has been significantly deepened.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the significance of the structural findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "9b20dc9b-226c-4e59-9bde-b866a4fe6de9",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C103",
+      "claim": "The ligand binding pocket is essentially similar in both the crystal structure of the receptor alone and in the Gi protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The ligand binding pocket is essentially similar in both the crystal structure of the receptor alone and in the Gi protein complex (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "b30f7755-12e7-4a0d-841b-7b1e68247678",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C104",
+      "claim": "The W3366.48 rotamer, which comprises the bottom of the ligand-binding pocket, differs between the crystal structure and the Gi complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the W3366.48 rotamer, which comprises the bottom of the ligand-binding pocket, differs (Figure 2B), thereby leading to the activation of the intracellular side of the receptor (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "ed4cfacc-7269-4d38-bb8b-b9f2865d30e5",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C105",
+      "claim": "The difference in the W3366.48 rotamer leads to the activation of the intracellular side of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the W3366.48 rotamer, which comprises the bottom of the ligand-binding pocket, differs (Figure 2B), thereby leading to the activation of the intracellular side of the receptor (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural observations shown in Figures 2C and D.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "9de8ef05-8a80-4ba9-befa-3942275aef36",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C106",
+      "claim": "It may be crucial to choose and evaluate compounds based on the bottom of the ligand pocket in the current ETB-Gi structure to develop small molecule ETB agonists for neuroprotection and cancer therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it may be crucial to choose and evaluate compounds based on the bottom of the ligand pocket in the current ETB-Gi structure (Figure 2B) to develop small molecule ETB agonists for neuroprotection and cancer therapy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative recommendation for drug development based on structural insights.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "97174137-e8b3-4d82-aa19-f9d7cc5f81a7",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C107",
+      "claim": "Previous structural analyses have demonstrated that docking the \u03b15-helix to the receptor cavity leads to destabilization of the nucleic acid binding site located at the root of the \u03b15-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous structural analyses have demonstrated that docking the \u03b15-helix to the receptor cavity leads to destabilization of the nucleic acid binding site located at the root of the \u03b15-helix (Figure 3\u2014figure supplement 1; Zhuang et al., 2022; Rasmussen et al., 2011; Su et al., 2020), thus promoting the GDP/GTP exchange reaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "eff9cc9b-7ad4-4756-97a0-283bd0121c33",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C108",
+      "claim": "Docking the \u03b15-helix to the receptor cavity promotes the GDP/GTP exchange reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous structural analyses have demonstrated that docking the \u03b15-helix to the receptor cavity leads to destabilization of the nucleic acid binding site located at the root of the \u03b15-helix (Figure 3\u2014figure supplement 1; Zhuang et al., 2022; Rasmussen et al., 2011; Su et al., 2020), thus promoting the GDP/GTP exchange reaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural mechanisms supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "e9af29c8-fa0a-4b32-824c-6d1a9bef35ba",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C109",
+      "claim": "The binding of G\u03b1s remains mostly indistinguishable in all complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the binding of G\u03b1s remains mostly indistinguishable in all complexes, the binding of G\u03b1i varies, displaying different G\u03b1 rotations in relation to the receptor Okamoto et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural comparison supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "d1f3dfb9-eb2a-4990-ab1b-e451f57e9d03",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C110",
+      "claim": "The binding of G\u03b1i varies, displaying different G\u03b1 rotations in relation to the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "While the binding of G\u03b1s remains mostly indistinguishable in all complexes, the binding of G\u03b1i varies, displaying different G\u03b1 rotations in relation to the receptor Okamoto et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural comparison supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "ad734ceb-7e20-44f3-bd93-2b99a653ae3e",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C111",
+      "claim": "The depth of the docking towards the receptor remains constant in most GPCR-Gi complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the depth of the docking towards the receptor remains constant (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "9209be01-40ce-4a5b-8864-512910c8e8b9",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C112",
+      "claim": "Since the N7.49P7.50xxY7.53 motif is not conserved in ETB, TM7 undergoes the downward movement upon the Gi binding, resulting in the shallow position of the \u03b15-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the N7.49P7.50xxY7.53 motif is not conserved in ETB, TM7 undergoes the downward movement upon the Gi binding, resulting in the shallow position of the \u03b15-helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "dcb0a18a-ed8a-4407-88ef-6157a6611c9e",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C113",
+      "claim": "The restrictions of the residues in the \u03b15-helix may be less strict, accounting for the G-protein promiscuity of ETB.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the restrictions of the residues in the \u03b15-helix may be less strict, accounting for the G-protein promiscuity of ETB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the mechanism of G-protein promiscuity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "f0c1c2ff-0b7f-4be5-929d-8c8793ac610a",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C114",
+      "claim": "Other promiscuous GPCRs (e.g. NTS1) preserve the N7.49P7.50xxY7.53 motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the other promiscuous GPCRs (e.g. NTS1) preserve the N7.49P7.50xxY7.53 motif, the proposed mechanism for G-protein promiscuity may be unique to ETB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about other GPCRs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "dfa187db-5a3d-41c4-b923-c719c115ba7f",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C115",
+      "claim": "The proposed mechanism for G-protein promiscuity may be unique to ETB.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the other promiscuous GPCRs (e.g. NTS1) preserve the N7.49P7.50xxY7.53 motif, the proposed mechanism for G-protein promiscuity may be unique to ETB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on structural comparisons.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "d4b387e4-fcb6-4444-a5ad-816f78ab1b02",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "claim_id": "C116",
+      "claim": "The structural information will facilitate the elucidation of G-protein activation and the rational design of ETB agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "This structural information will facilitate the elucidation of G-protein activation and the rational design of ETB agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the future applications of the structural findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a 'Fusion-G system' combining NanoBiT tethering and a 3-in-1 G-protein expression vector to stabilize and purify GPCR-G-protein complexes. The system was validated with LPA1 and S1P5 receptors and facilitates efficient expression and purification with FSEC monitoring capability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C52 and C96-C97 describe the methodological development with experimental validation shown in Figure 1 and supplementary figures. The system successfully produced complexes for structural determination. However, C98-C100 acknowledge potential artifacts, and C101 is speculative about broader applicability without additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "e5146aa0-0dfb-465a-9054-9b28d7c1b2df",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of the ET-1-ETB-Gi complex was determined at 2.8 \u00c5 overall resolution (3.1 \u00c5 for the receptor-focused refinement), with well-resolved density for the agonist ET-1 and no observable NanoBiT density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C53, C55 are directly supported by experimental data shown in Figure 1, Table 1, and Figure 1\u2014figure supplement 2. The resolution values, particle counts, and validation statistics are provided. C54 and C56 describe specific observations from the density maps consistent with previous NanoBiT studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "cd294fb8-bf70-47fd-a5f8-afc16dec63cd",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ETB-Gi structure reveals that ET-1 binding induces larger downward movement of N378^7.45 and W336^6.48 compared to the crystal structure, resulting in TM6 outward displacement of 6.8 \u00c5 (vs. apo) and 5.1 \u00c5 (vs. ET-1-bound crystal structure). The W336^6.48 rotamer differs between structures, leading to intracellular activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 and C103-C105 are supported by structural comparisons shown in Figure 2A-D. Specific displacement measurements are provided and compared to previous structures. C63 appropriately contextualizes the TM6 opening relative to other Gi-coupled receptors with citations. The ligand binding pocket similarity (C103) and W336 rotamer difference (C104-C105) are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "8efbab66-e6d1-42b0-8949-617e258236a5",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ETB lacks the conserved NPxxY motif (N^7.49P^7.50xxY^7.53), instead having N^7.49P^7.50xxL^7.53Y^7.54 where Y^7.53 is replaced by L386^7.53. This substitution prevents the typical inward TM7 displacement and Y5.58-Y7.53 interaction seen in other GPCRs, resulting in a unique 2.8 \u00c5 downward TM7 movement upon activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C41, C67, C73-C78 describe the structural basis for ETB's unique activation mechanism, supported by data in Figure 2E-G. C64-C66 establish the conserved mechanism in other GPCRs (with citations), while C68-C72 describe the typical Y7.53 behavior. The structural observations clearly show ETB's deviation from this pattern due to the leucine substitution, with specific measurements provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ETB-Gi complex exhibits a unique shallow Gi binding mode with the \u03b15-helix positioned higher than in other GPCR-G-protein complexes. This is compensated by extensive unique interactions: ICL2 forms van der Waals contacts with \u03b1N, and TM7-H8 interact extensively with the \u03b15-helix. The interface area (1,196 \u00c5\u00b2) is comparable to other GPCR-Gi complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C94 are supported by structural data in Figure 3 and supplementary figures. C91 is directly demonstrated in Figure 3B with appropriate citations. C85-C86 and C89-C90 show unique interactions not observed in other complexes. C93 provides quantitative comparison. However, C95 is somewhat speculative about functional compensation, though structurally reasonable. The G\u03b1i adopts a nucleotide-free state (C92) as shown in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "d3f30965-87f6-405e-9a0d-62e75cce4f3c",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The shallow Gi binding position in ETB results from the downward TM7 movement caused by the non-conserved NPxxY motif. This may account for ETB's G-protein promiscuity through less strict \u03b15-helix residue restrictions, a mechanism potentially unique to ETB since other promiscuous GPCRs preserve the NPxxY motif.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C8 and C112 are supported by structural data showing the shallow binding and its relationship to TM7 movement. However, C113 and C115 are speculative inferences about the mechanism of G-protein promiscuity without direct experimental validation. C114 correctly notes that other promiscuous GPCRs (e.g., NTS1) preserve the motif, but the proposed unique mechanism requires additional functional studies to confirm.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "8035721c-a54b-4c37-b5b2-8d041de340de",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The ETB-Gi structure provides insights into receptor activation mechanisms and G-protein coupling diversity. The authors suggest that targeting the ligand pocket bottom (W336^6.48 region) may be crucial for developing small-molecule ETB agonists for therapeutic applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C102 is a broad interpretive claim about the significance of the structure. C106 and C116 are speculative recommendations for drug development without experimental validation. C107-C108 correctly cite previous work on \u03b15-helix docking and GDP/GTP exchange. C109-C111 describe known variations in G-protein binding modes. These claims represent reasonable inferences but lack direct experimental support for the proposed drug development strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "55df068e-b34a-483b-aa55-057c3dfdacba",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological functions of endothelins and ETB receptor, including vasoconstriction/vasorelaxation, astrocyte activation, neuroprotection, and G-protein promiscuity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C3, C9-C23) represent established knowledge supported by appropriate citations to prior literature. They provide necessary context for the study but are not novel findings of this manuscript. The claims accurately represent the current understanding of endothelin biology and ETB receptor function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "ee789f18-f53d-439a-b5da-3daf96bc9f60",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims on drug development targeting endothelin receptors, including antagonists (bosentan, atrasentan, zibotentan) and agonists (IRL1620), and limitations of previous structural studies of ETB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C24-C37 describe the therapeutic landscape and drug development challenges, supported by citations. C38-C40 and C42 accurately describe limitations of previous crystallographic studies. These are contextual claims establishing the rationale for the current structural study, not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    },
+    {
+      "id": "dab7c42e-361a-4687-9e19-1f7c5fbdbdc7",
+      "content_id": "a89e0537-3628-4583-bf44-027759dda8de",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The thermostabilized ETB-Y5 construct could not form a stable complex with Gi, leading to the decision to use wild-type ETB for structural studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 describe a methodological decision based on experimental observations. This is a straightforward negative result that justified the choice of wild-type receptor, supported by knowledge about thermostabilizing mutations stabilizing inactive conformations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:34:47.483466Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "40ca1ad0-fc4e-48dd-86ac-ae649e5423ae",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "edfd5d61-a1d3-40bd-ab6a-eca983f26982",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "c2f3d2bb-17a9-4cb2-8177-507175f99054",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "b0cb6cf6-934a-45a6-b12e-81d3c0eb0c9b",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "96b23fa2-2829-495e-a8ce-c872eb7d6499",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "44861029-262e-4f42-825c-d9a5dcc64cd0",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "5795d188-2808-411c-80ad-ebda954815c4",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "7231a1bc-9bdc-41ba-b826-a44f9800f334",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "7d68319c-ee7c-41a4-8869-44c7ea8b7000",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "dde77bd2-ea76-4ade-8b1c-b3873364fb18",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "9d9d376f-8fc3-4db6-a39d-3730d3db59c9",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "09bd7681-a50e-4532-aa1c-b7889f6a2e1b",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "6c66695c-a5d9-425b-878d-c3ef4c70fe9c",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "572e9d94-745e-4f8f-8b95-4049d5fcbfe4",
+      "result_id": "3b6404ec-37c0-44e2-8dfe-18f9cb149d6c"
+    },
+    {
+      "claim_id": "87d444b0-4d8c-45cd-8d57-23016283e7bf",
+      "result_id": "e5146aa0-0dfb-465a-9054-9b28d7c1b2df"
+    },
+    {
+      "claim_id": "5555d9c0-9315-4fae-b74b-675a82f6d744",
+      "result_id": "e5146aa0-0dfb-465a-9054-9b28d7c1b2df"
+    },
+    {
+      "claim_id": "fe757de7-f6a5-494b-83b4-d2a5b87aad2f",
+      "result_id": "e5146aa0-0dfb-465a-9054-9b28d7c1b2df"
+    },
+    {
+      "claim_id": "65a782ac-91d2-4182-a10a-669c629fa0a9",
+      "result_id": "e5146aa0-0dfb-465a-9054-9b28d7c1b2df"
+    },
+    {
+      "claim_id": "77d680a1-e806-4bfc-b558-1a8dbb669d1c",
+      "result_id": "e5146aa0-0dfb-465a-9054-9b28d7c1b2df"
+    },
+    {
+      "claim_id": "7a4e5043-f877-4f4d-8be6-cfd859155069",
+      "result_id": "cd294fb8-bf70-47fd-a5f8-afc16dec63cd"
+    },
+    {
+      "claim_id": "9fa5c7ef-b3ec-45aa-bf5e-0897959878dc",
+      "result_id": "cd294fb8-bf70-47fd-a5f8-afc16dec63cd"
+    },
+    {
+      "claim_id": "5cdafc10-1730-4fad-a73a-b5c3f42ae2d1",
+      "result_id": "cd294fb8-bf70-47fd-a5f8-afc16dec63cd"
+    },
+    {
+      "claim_id": "1e57a39e-57d3-4eed-ae15-f22cc3898875",
+      "result_id": "cd294fb8-bf70-47fd-a5f8-afc16dec63cd"
+    },
+    {
+      "claim_id": "fd433428-7a57-41f0-8a27-cf8b13e3757f",
+      "result_id": "cd294fb8-bf70-47fd-a5f8-afc16dec63cd"
+    },
+    {
+      "claim_id": "19c85425-6855-4494-9971-a31ce927161a",
+      "result_id": "cd294fb8-bf70-47fd-a5f8-afc16dec63cd"
+    },
+    {
+      "claim_id": "9a24d76c-acb0-4b31-8215-1ab81d236c64",
+      "result_id": "cd294fb8-bf70-47fd-a5f8-afc16dec63cd"
+    },
+    {
+      "claim_id": "9b20dc9b-226c-4e59-9bde-b866a4fe6de9",
+      "result_id": "cd294fb8-bf70-47fd-a5f8-afc16dec63cd"
+    },
+    {
+      "claim_id": "b30f7755-12e7-4a0d-841b-7b1e68247678",
+      "result_id": "cd294fb8-bf70-47fd-a5f8-afc16dec63cd"
+    },
+    {
+      "claim_id": "ed4cfacc-7269-4d38-bb8b-b9f2865d30e5",
+      "result_id": "cd294fb8-bf70-47fd-a5f8-afc16dec63cd"
+    },
+    {
+      "claim_id": "9cedddc2-0acf-4077-9e2d-298168c66874",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "24e7887f-c4b4-4e5f-9d3f-847f4097ad20",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "09375fb1-5717-4d6c-8ac0-2a3465dbac9a",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "c51774cf-bc38-4b34-8f02-ae705069d186",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "a06409a8-b7c1-469d-b873-de422627462c",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "12eec7d8-4d99-482b-951d-5e5381446504",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "c927b454-881e-47a4-93b8-17edcacbaeb5",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "67361c89-7de7-4929-b0f6-528feff9faad",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "ef3aea38-3a55-4e3f-9469-6c7708e1c51e",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "0a632b0d-117e-4a1a-a782-1f968b66735d",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "a12b121a-773f-4fdf-868c-0370a7c037d0",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "f2961661-6cfd-4f77-a30e-c6da0d56ddd4",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "40efc849-835b-47ef-94b4-f517e187b5ee",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "9883d882-c90e-4b41-ad93-d82b3d10a131",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "b211bf07-466f-46e5-936f-956b6f84769b",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "79ff9808-e9c5-40fe-9369-102a3be13862",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "ce6ff42e-614e-45b4-a8b2-9bfc10b44d4f",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "f2fbe503-1183-4ca7-957b-3667de048afa",
+      "result_id": "8efbab66-e6d1-42b0-8949-617e258236a5"
+    },
+    {
+      "claim_id": "31113fe3-5e17-424d-8411-64a5314880d8",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "db1b6551-d066-40ed-ae23-4a54a475e29d",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "a24ccbd8-6d6e-4599-978a-74b3a31775f0",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "167c7875-5253-4525-b77e-39040410b446",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "2d594af2-e652-4867-b0f7-88745f45560c",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "ec460388-65e9-49dd-91f1-07a195cdc268",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "3b63400d-700f-47c4-b57e-8f3dc9b6b6a8",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "c19de8a8-92c3-4e96-a2dc-9a4cb89f5a7f",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "cc59fc53-d46d-491f-8226-0a1c650a017d",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "9f1f3256-2b4a-4f17-ab24-c73c04f7a05b",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "11ef6696-a726-4dff-b052-e078e716b944",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "ce1bb5a0-f190-4fc5-b274-344e53a97e2d",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "35a557d7-7b9d-4f55-a39c-aceb519c5ec0",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "107e6c6a-149a-40ff-b967-2ebe20237fbc",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "9cf839c7-32e5-48e8-bc39-e91d7f606e7e",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "e26b9467-deed-44e8-b482-057a89d95336",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "1c9e6233-3fe9-45c0-9470-7161831d9054",
+      "result_id": "0fb1c72b-8fb5-4dae-9368-ffad7bfefd8a"
+    },
+    {
+      "claim_id": "dce17774-ad0d-4222-b786-dc7121f77c5e",
+      "result_id": "d3f30965-87f6-405e-9a0d-62e75cce4f3c"
+    },
+    {
+      "claim_id": "9209be01-40ce-4a5b-8864-512910c8e8b9",
+      "result_id": "d3f30965-87f6-405e-9a0d-62e75cce4f3c"
+    },
+    {
+      "claim_id": "dcb0a18a-ed8a-4407-88ef-6157a6611c9e",
+      "result_id": "d3f30965-87f6-405e-9a0d-62e75cce4f3c"
+    },
+    {
+      "claim_id": "f0c1c2ff-0b7f-4be5-929d-8c8793ac610a",
+      "result_id": "d3f30965-87f6-405e-9a0d-62e75cce4f3c"
+    },
+    {
+      "claim_id": "dfa187db-5a3d-41c4-b923-c719c115ba7f",
+      "result_id": "d3f30965-87f6-405e-9a0d-62e75cce4f3c"
+    },
+    {
+      "claim_id": "c341aaab-a9e7-40cf-a2f0-01af7ba16539",
+      "result_id": "8035721c-a54b-4c37-b5b2-8d041de340de"
+    },
+    {
+      "claim_id": "9de8ef05-8a80-4ba9-befa-3942275aef36",
+      "result_id": "8035721c-a54b-4c37-b5b2-8d041de340de"
+    },
+    {
+      "claim_id": "97174137-e8b3-4d82-aa19-f9d7cc5f81a7",
+      "result_id": "8035721c-a54b-4c37-b5b2-8d041de340de"
+    },
+    {
+      "claim_id": "eff9cc9b-7ad4-4756-97a0-283bd0121c33",
+      "result_id": "8035721c-a54b-4c37-b5b2-8d041de340de"
+    },
+    {
+      "claim_id": "e9af29c8-fa0a-4b32-824c-6d1a9bef35ba",
+      "result_id": "8035721c-a54b-4c37-b5b2-8d041de340de"
+    },
+    {
+      "claim_id": "d1f3dfb9-eb2a-4990-ab1b-e451f57e9d03",
+      "result_id": "8035721c-a54b-4c37-b5b2-8d041de340de"
+    },
+    {
+      "claim_id": "ad734ceb-7e20-44f3-bd93-2b99a653ae3e",
+      "result_id": "8035721c-a54b-4c37-b5b2-8d041de340de"
+    },
+    {
+      "claim_id": "d4b387e4-fcb6-4444-a5ad-816f78ab1b02",
+      "result_id": "8035721c-a54b-4c37-b5b2-8d041de340de"
+    },
+    {
+      "claim_id": "d0c53918-ef29-4afd-ae9c-18288fc775f3",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "720848cd-d332-48e7-9a38-b6d581628d7e",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "5f9d37e6-ccd8-457c-894f-747de12d8c73",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "123c25b0-7903-4306-889d-6e610b4c5328",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "4c24e478-0124-49c7-af96-8a14adb6cc79",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "89a99ac9-e8a5-482b-bfcd-9c7e3d18b8fa",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "b6ac3efc-935c-4465-878a-19f99245c4b2",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "448bfd77-c009-42f2-a1a4-c07f03396ee3",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "c2f73bd8-2ae9-42e9-8cc8-7fd82a1efacc",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "2eef7f03-b9a2-4ebe-a884-aa58401bd602",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "ff1b847b-7bda-41ff-84de-e4cec7f6509d",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "841a5236-d678-4ab1-bd4a-79892e80aaad",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "8bfd6447-a912-41b6-bb70-9c2c43256837",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "637f5b17-cf82-4988-9310-beb45697f74a",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "f6bbdecb-7b38-45ee-a8e3-c10e2b860fcc",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "11f805f0-4c56-471d-9ffc-4ff330cd6a05",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "accee07b-bf54-4231-8bec-5e48007c97c2",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "64441ffc-96d9-49ab-a0ec-c7c602eea2f1",
+      "result_id": "55df068e-b34a-483b-aa55-057c3dfdacba"
+    },
+    {
+      "claim_id": "a1b6050a-2c37-4340-ab1b-fb6c5aef3b15",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "05eae458-a28f-42ff-9f53-c74a9d93abcc",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "3591d90b-3a33-4a6c-a476-d13d39fcf5fb",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "c9c9caaf-2858-4436-9dd0-37e7508fdbe6",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "0f9df287-f30b-4f4f-baee-10fe19b1c926",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "81012ef2-5340-49cd-8818-f39cf278b905",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "cb217a8a-e432-4522-a855-6bfc26eb274b",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "48da4d3c-2c65-49f2-9106-0f5f6e1dbcef",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "5fa7471e-7c30-4f22-94bd-3979dffa5f6b",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "1d2fbe36-2dcf-487c-a637-337b5c50f60a",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "baa1bccf-d9d2-487c-b6ad-8fe1489e5c66",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "e17cb54b-1add-42b2-8652-40c1e443d3cf",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "9bebaa59-c027-4fc7-977e-c5b5c53ad584",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "6631993f-b232-489a-857e-39562a3b1295",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "fdbc0773-33a8-45ec-a89c-d25cdb57c27b",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "7df879cc-7379-4b7d-a783-369039c21dc6",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "d9bbd4e6-1085-4e9a-a3ed-14892080eb38",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "b8af552c-12c7-4cf5-803f-07075584be0c",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "137eb7be-8515-4d6b-8f95-9017a89a48be",
+      "result_id": "ee789f18-f53d-439a-b5da-3daf96bc9f60"
+    },
+    {
+      "claim_id": "679f3060-eab9-4a30-ae30-ebf6b4c435da",
+      "result_id": "dab7c42e-361a-4687-9e19-1f7c5fbdbdc7"
+    },
+    {
+      "claim_id": "44c7db54-6875-43b4-833c-eda5cad71806",
+      "result_id": "dab7c42e-361a-4687-9e19-1f7c5fbdbdc7"
+    }
+  ],
+  "comparisons": []
+}

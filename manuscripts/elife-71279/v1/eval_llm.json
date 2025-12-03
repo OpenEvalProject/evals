@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Arp53D arose approximately 65 million years ago at the origin of Drosophila and has been retained throughout Drosophila evolution, implying it performs an important function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by phylogenetic analysis, synteny data (Figure 1A, Table 1), and evolutionary reasoning. The presence of orthologs in divergent Drosophila species but not in other Diptera provides strong evidence for the timing and retention of Arp53D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Arp53D has a unique 40-amino acid N-terminal domain that is predicted to be mostly unstructured and evolves more rapidly than the actin fold domain, with no homology to other sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 are supported by structural predictions (Figure 1B) and sequence comparisons showing differential conservation between the N-terminus (42% identity) and actin fold (70% identity) across species. The lack of homology to other sequences is based on comprehensive database searches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Arp53D has evolved under positive selection during D. melanogaster-D. simulans divergence, unlike canonical Arps, though no evidence exists for recurrent site-specific positive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 are supported by McDonald-Kreitman tests showing statistically significant positive selection (p=0.001 after correcting for deletion polymorphism, Figure 1\u2014figure supplement 1C). The PAML analysis appropriately shows no site-specific recurrent selection. The statistical tests are properly conducted with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Arp53D shows male-biased expression with highest levels in testis across all Drosophila species examined, contrasting with ubiquitous expression of canonical actin and Arps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are well-supported by extensive RNA-seq data from multiple species (Figure 1C, Figure 1\u2014figure supplement 1F, Table 2) and ModENCODE data. The expression pattern is consistently male-biased across species with multiple independent datasets confirming the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Arp53D localizes specifically to the fusome during meiosis and post-meiosis in male germline, with localization becoming progressively stronger post-meiosis, distinct from broader actin localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by comprehensive cytological imaging using sfGFP-tagged Arp53D and co-localization with \u03b1-spectrin (Figure 2). The temporal dynamics and specificity of localization are well-documented through multiple developmental stages with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Arp53D localizes to the leading edge of actin cones during sperm individualization, where branched actin networks drive cytoplasm extrusion, and is subsequently degraded in the waste bag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are supported by detailed imaging of actin cone dynamics (Figure 3) and proteomic data. The localization to the leading edge is clearly shown, and absence in mature sperm is confirmed by both proteomics (Wasbrough et al., 2010) and cytology (Figure 3\u2014figure supplement 1B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The N-terminal domain of Arp53D is both necessary and sufficient for localization to germline actin structures when combined with an actin fold domain, but the N-terminus alone or the actin fold alone cannot confer this specialized localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by systematic domain deletion and chimera experiments (Figure 4). The \u0394N-term construct fails to localize, the Nt-Actin chimera localizes properly, and Nt-sfGFP alone fails to localize, providing strong evidence for the requirement of both domains. Expression levels are confirmed by immunoblot.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Arp53D-KO males exhibit significantly increased fertility compared to WT males at both 25\u00b0C and 29\u00b0C, with the effect being dose-dependent and maintained even in competitive mating situations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are supported by multiple independent fertility assays with appropriate statistical tests (Figure 5A, B). The dose-dependence is shown with heterozygotes, RNAi knockdown confirms the effect, and competition assays demonstrate the advantage persists in competitive contexts. However, the rescue experiment (C53) shows only partial rescue, which slightly weakens the conclusion that the effect is solely due to Arp53D loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Loss of Arp53D does not cause gross defects in actin cone organization or sperm quantity but results in accelerated sperm production with more actin cone-containing cysts per testis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by cytological analysis (Figure 5C-D) and seminal vesicle measurements (Figure 5\u2014figure supplement 2G). The quantification of actin cone-containing cysts shows a statistically significant increase in KO males, suggesting accelerated spermatogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Despite increased male fertility in KO flies, WT Arp53D confers a 30-40% selective advantage per generation in population cage experiments, with WT homozygotes reaching 67% frequency in 20 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by population cage experiments with three biological replicates showing consistent results (Figure 6B). The modeling approach (Figure 6\u2014figure supplement 1) appropriately estimates fitness coefficients, though the model is simplified and doesn't account for sex-specific and life-stage-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Arp53D is expressed in adult females at much lower levels than males, with highest expression in ovaries but still much lower than testis expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by sensitive RT-PCR analysis (Figure 7\u2014figure supplement 1A, B) that detects low-level expression not visible in standard RNA-seq. The tissue-specific expression pattern is confirmed, and the findings are consistent with published RNA-seq data showing very low/undetectable levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Arp53D-KO females exhibit a maternal effect with reduced fertility at high temperature, confirmed by reciprocal crosses showing differential progeny counts depending on maternal genotype, and rescued by transgene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by well-designed reciprocal cross experiments (Figure 7B) showing statistically significant differences (p<0.0001) and rescue experiments (Figure 7C). The experimental design properly controls for zygotic genotype effects by comparing crosses with identical progeny genotypes but different maternal genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Complete loss of Arp53D in KO \u00d7 KO crosses leads to additional zygotic disadvantage beyond maternal effects, with KO zygotes showing reduced survival that can be partially masked by maternal Arp53D contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by comparing progeny counts from different crosses (Figure 7A, 8A) with appropriate statistical analysis. The deviation from expected Mendelian ratios in KO \u00d7 HET crosses (p<0.0001) provides strong evidence for zygotic effects, and the comparison with HET \u00d7 KO crosses demonstrates maternal masking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Maternal contributions of Arp53D are primarily responsible for its contribution to Drosophila fitness, with zygotic effects nearly masked when maternal Arp53D is present, but loss of both maternal and zygotic Arp53D causes the most significant fitness costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by HET \u00d7 HET crosses showing Mendelian ratios (Figure 8B) and comprehensive analysis of multiple cross types (Figures 7A, 8C). The synthesis of genetic data clearly demonstrates the hierarchy of maternal > zygotic effects, with appropriate statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Arp53D RNA is detected in early embryonic stages 1-3 (likely maternal contribution) and becomes more evident during stages 10-17 after zygotic transcription initiates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by in situ hybridization data (Figure 8\u2014figure supplement 1) and RNA-seq data distinguishing maternal from zygotic transcripts. The timing relative to zygotic transcription onset is appropriately referenced to established literature (Tadros and Lipshitz, 2009).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Arp53D is required for optimal embryonic development post-fertilization, with 25% of eggs failing to develop in KO \u00d7 WT crosses and nearly 40% in KO \u00d7 KO crosses at 29\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by embryonic development assays (Figure 9A) showing statistically significant differences (p=0.04, p=0.02) and controls showing no differences in egg laying or fertilization rates (Figure 9\u2014figure supplement 1A, B). The experimental design properly isolates post-fertilization effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Arp53D-KO embryos exhibit increased nuclear abnormalities (28% vs 3% in WT) and more nuclear fallout gaps, with partial rescue by transgene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by quantitative cytological analysis of embryos (Figure 9B-E) with highly significant differences (p<0.0001) and rescue experiments showing partial restoration (p=0.005, Figure 9\u2014figure supplement 1C). The sample sizes are adequate (n=166-186 embryos) for the observed effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Arp53D plays a key maternal and zygotic role in embryonic development despite being primarily testis-enriched in expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is a synthesis conclusion supported by the combined genetic (Figures 7, 8) and cytological (Figure 9) data. The apparent paradox between expression pattern and function is well-documented through multiple independent lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Canonical actins and Arps are highly conserved and ubiquitously expressed, while non-canonical Arps like Arp53D are evolutionarily young, rapidly evolving, and predominantly expressed in male germline across multiple species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 establish the broader context through established knowledge and appropriate citations. The claims about actin conservation, canonical Arp evolution, and non-canonical Arp expression patterns are well-supported by cited literature and provide important background for interpreting the Arp53D findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Despite its recent evolution, testis-specific expression, and paradoxical effect on male fertility, Arp53D is conserved, evolves under positive selection, and is required for optimal embryonic development and overall fitness in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 represent the main synthesis of the study's findings. These summary claims are well-supported by the comprehensive data presented throughout the manuscript, including evolutionary analysis, localization studies, fertility assays, population cage experiments, and embryonic development assays. The apparent paradoxes are acknowledged and investigated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Arp53D was proposed to arise from retroduplication of Act88F, but sequence analysis shows it is nearly equally similar to Act88F and Act5C at the nucleotide level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 appropriately cite prior work (Bai et al., 2007) and present new sequence comparison data that questions the specific parental gene assignment. The analysis is straightforward and the conclusion is appropriately cautious about the origin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The fusome and actin cones are specialized germline-specific actin structures with well-characterized roles in spermatogenesis, including cytoplasm exchange and sperm individualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 describe established biological structures and processes, appropriately cited from the literature (de Cuevas and Spradling, 1998; Lin et al., 1994; Noguchi and Miller, 2003; Fabrizio et al., 1998). These provide essential context for understanding Arp53D localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "N-terminal tails in actin proteins, though typically short (3 amino acids), regulate binding of regulatory proteins and can affect actin localization and function through post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are appropriately cited from the literature (Sutoh et al., 1991; Hansen et al., 2000; Varland et al., 2019) and provide important context for interpreting the functional significance of Arp53D's extended N-terminus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Another non-canonical Arp that independently arose in the D. pseudoobscura lineage also specialized to localize to actin cones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by citation to the authors' previous work (Schroeder et al., 2020) and provides important comparative context suggesting convergent evolution of non-canonical Arps for germline-specific functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Actin networks are reorganized during heat stress response in Drosophila embryos, and Arp53D may regulate these networks, potentially explaining temperature-dependent embryonic defects upon Arp53D loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 is supported by citation (Figard et al., 2019), but C102 is explicitly speculative. While the speculation is reasonable given the temperature-dependent phenotypes observed, there is no direct experimental evidence linking Arp53D to heat stress response pathways. This remains a hypothesis requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The 'out-of-testis' hypothesis and examples of other testis-enriched genes with broader functions suggest that testis-specific expression patterns may not accurately predict gene function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are appropriately cited from the literature and provide important context for interpreting the paradox of Arp53D's testis-enriched expression but critical embryonic function. The examples of histone variants and Umbrea are relevant comparisons.",
+    "result_type": "MINOR"
+  }
+]

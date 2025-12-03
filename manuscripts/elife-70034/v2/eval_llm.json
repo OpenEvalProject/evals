@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Morphogens are signaling molecules that pre-pattern tissues during animal development by instructing cells to acquire distinct cell fates in a concentration-dependent manner, with positional information encoded in local morphogen concentration translated into specific gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, C9, and C10 collectively describe established knowledge about morphogen function in developmental biology, supported by foundational citations (Turing, Wolpert, Crick). These claims provide the conceptual framework for the study and are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C33",
+      "C45"
+    ],
+    "result": "Boundary location accuracy is limited by morphogen concentration fluctuations, with a fundamental trade-off where producing more morphogen molecules reduces relative fluctuations and positional errors but incurs greater thermodynamic cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C33, and C45 establish the theoretical basis for the cost-precision trade-off. The relationship follows from statistical principles (central limit theorem) and thermodynamic fundamentals, with the mathematical relationship in Equation 1 linking concentration fluctuations to positional error through the gradient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C60"
+    ],
+    "result": "In the classical diffusion-depletion model, morphogen profiles display exponentially decaying concentration with characteristic length \u03bb, and the theory predicts that \u03bb should be roughly half the distance to the target boundary (\u03bb \u2248 0.43-0.50 x_b) to minimize the cost-precision trade-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C60 present the main theoretical result. C5 describes the established SDD model, while C6 and C60 present the novel theoretical prediction derived from mathematical optimization of the trade-off product. The derivation is supported by equations and analytical results shown in Figures 2 and 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C77"
+    ],
+    "result": "The morphogen profiles of Bcd, Wg, Hh, and Dpp that pattern the Drosophila embryo and wing imaginal disk are formed with nearly optimal \u03bb values, close to the theoretical predictions for minimizing the cost-precision trade-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C18-C30, and C77 present the key empirical validation. The experimental data on morphogen profiles and target gene boundaries (supported by multiple citations and shown in Figures 2-3 and Figure 2\u2014figure supplement 1) are compared against theoretical predictions. The \u03bb values for all four Drosophila morphogens fall close to the optimal values predicted by the theory, providing strong support for the cost-effectiveness hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Quantitative measurements of morphogen gradients have been performed, and theoretical studies have addressed the precision and speed of morphogen gradient formation and interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 describe the state of the field, supported by extensive citations to both experimental measurements and theoretical studies. These establish the context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Morphogen gradient generation incurs thermodynamic cost and requires energy influx, which is a limited resource in biological systems, particularly during embryonic development, but the relationship between cost and precision/speed has rarely been addressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 establish the motivation for the study, supported by citations to relevant literature on thermodynamics and energetics of development. These claims justify why examining the cost-precision trade-off is important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C41",
+      "C42"
+    ],
+    "result": "The cost of morphogen profile formation includes resources to generate and maintain the steady-state profile, with thermodynamic cost proportional to the total number of morphogens produced, and the steady-state concentration profile obeys Poisson statistics for zeroth or first-order reactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C36, C41, and C42 describe the theoretical framework for quantifying cost and precision. The Poisson statistics assumption (C41) is supported by citation and is appropriate for the zeroth/first-order reaction system (C42). The cost formulation (C36) is theoretically justified and supported by citation to Lynch and Marinov 2015.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The Bcd profile must be measured within 10 minutes by the nuclei during Drosophila embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by citation to Lucas et al. 2018 and provides an important temporal constraint for the space-time-averaged measurement model. This empirical constraint is used in the Discussion to evaluate the applicability of the two limiting measurement scenarios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Biological pattern formation by morphogen gradients operates out of equilibrium with thermodynamic cost incurred to generate gradients against stochastic fluctuations, and while the cost-precision trade-off differs fundamentally from thermodynamic uncertainty relations (TUR), pattern formation is quantitatively bounded by dissipation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 connect the work to broader thermodynamic principles. The distinction from TUR (C55-C56) is theoretically sound\u2014morphogen concentration is not a current-like observable with odd time-reversal parity. The connection to dissipation bounds (C57) is supported by the analysis in Appendix 1 with the reversible reaction-diffusion model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Thermodynamic cost is one of the key physical constraints in designing morphogen profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is presented as a hypothesis supported by the findings. While the near-optimal \u03bb values for Drosophila morphogens provide suggestive evidence, the claim acknowledges this is a hypothesis rather than a definitive conclusion. The zebrafish counterexample (C69-C71) shows this may not be universal, and alternative explanations exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The molecular mechanisms underlying morphogen profile formation are more complex than the SDD model, with Wg and Hh potentially spreading through active transport rather than passive diffusion, morphogens inducing multiple target gene expressions, and the current theory only optimizing the trade-off at a single boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 acknowledge important limitations of the study. C66 is supported by citations to studies proposing active transport mechanisms. C67 is supported by citations showing multiple target genes. These limitations are appropriately discussed and do not invalidate the main findings but indicate areas for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The \u03bb values for morphogens patterning zebrafish embryo endoderm and mesoderm are far greater than optimal values, which may indicate either that thermodynamic cost is not a key constraint or that more complex mechanisms are involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 present a negative result that provides important context. C69 is supported by data in Appendix 2\u2014figure 2b. C70 and C71 offer speculative but reasonable interpretations supported by citations to zebrafish development studies. This appropriately qualifies the generality of the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Multiple morphogen profiles relay combinatorial signals determining target gene expression, each morphogen profile is a fundamental component of pattern formation with thermodynamic cost that must be considered in the energy budget, and the theory provides a quantitative framework to evaluate individual morphogen profile cost-precision trade-offs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 contextualize the work within broader developmental biology and summarize the contribution. C72-C73 are supported by citations to relevant literature. C74-C76 appropriately frame the scope and contribution of the theoretical framework developed in the study.",
+    "result_type": "MINOR"
+  }
+]

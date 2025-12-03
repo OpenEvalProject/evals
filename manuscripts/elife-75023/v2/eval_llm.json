@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C13"
+    ],
+    "result": "BMP/Smad signaling transcriptionally represses the CypD gene (Ppif) in osteogenic cells. Multiple Smad-binding elements (SBEs) are present in the Ppif promoter, Smad1 binds to this promoter in a BMP-dependent manner, and Smad1 overexpression or BMP2 treatment decreases Ppif promoter activity and CypD mRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 and C13 provide converging evidence from in silico analysis (C1), transfection experiments (C2), ChIP assays (C3-C4), luciferase reporter assays (C5-C6, C9-C10), and rescue experiments with Smad7 and mutated promoters (C8-C9). The data consistently demonstrate that BMP/Smad signaling directly represses Ppif transcription in osteogenic cells from different embryonic origins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Ppif regulation by Smad signaling is tissue-specific, with opposite effects observed in myogenic C2C12 cells compared to osteogenic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 demonstrate that while Smad1 represses Ppif in osteogenic cells, it activates Ppif in myogenic C2C12 cells (C11), supporting the conclusion that Smad-mediated Ppif regulation is tissue-specific (C12). This is consistent with known bidirectional effects of Smads on gene regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C68"
+    ],
+    "result": "CypD expression and MPTP activity decrease during osteoblast differentiation in multiple cell types and species. During osteogenic differentiation, Ppif mRNA and CypD protein levels decrease while MPTP activity is reduced, despite increased ROS production from elevated OxPhos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 provide comprehensive evidence from multiple osteogenic cell types (BMSCs, ST2, MC3T3-e1) and species (mouse and human) showing coordinated downregulation of CypD at mRNA (C16-C17) and protein (C18) levels, along with decreased MPTP activity (C19) during differentiation. Controls for mitochondrial mass (C20) strengthen the interpretation. Claim C68 provides context for why this regulation is important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Wnt3a treatment does not affect Ppif promoter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 demonstrates through dose-response luciferase reporter assays that Wnt3a, even at concentrations that activate osteogenic differentiation, has no effect on Ppif promoter activity. This helps rule out Wnt signaling as a regulator of Ppif.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "BMP/Smad signaling directly represses Ppif independent of downstream osteogenic differentiation, as demonstrated in differentiation-arrested 143b osteosarcoma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 use 143b cells, which cannot complete osteogenic differentiation due to Runx2 degradation (C23-C24), to demonstrate that Smad1 still represses CypD expression (C25) and Ppif promoter activity (C26) in these cells. This provides strong evidence that Ppif repression is a direct effect of BMP/Smad signaling rather than an indirect consequence of differentiation (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "CypD gain-of-function impairs osteoblast differentiation and mitochondrial function in vitro. Expression of constitutively active CypD (K166Q mutant) decreases osteogenic markers, impairs differentiation, and reduces mitochondrial membrane potential in both cell lines and primary cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 demonstrate through multiple experimental systems (MC3T3e1 cells with stable transfection, primary BMSCs from transgenic mice) that CypD gain-of-function consistently impairs osteogenic differentiation (C30-C31) and mitochondrial function (C32). This is supported by prior loss-of-function data (C28-C29) and leads to the conclusion that CypD downregulation is necessary for osteogenesis (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "An inverse correlation exists between BMP signaling and CypD expression in physiological and pathological bone conditions. Analysis of published datasets and immunofluorescence studies show that decreased BMP signaling correlates with increased CypD in aging, while increased BMP signaling correlates with decreased CypD during fracture repair and pathological calcification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 provide converging evidence from multiple independent datasets (aging, fracture repair, osteoarthritis, cardiac valve calcification) and the authors' own immunofluorescence studies showing consistent inverse correlation between BMP signaling and CypD expression. The combination of transcriptomic data (C34-C36) and protein-level validation (C37-C40) strengthens this conclusion (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Osteoblast-specific CypD deletion protects against bone loss in aging. Conditional deletion of CypD in osteoblasts increases bone volume fraction and torsional rigidity in aged mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 demonstrate through conditional knockout experiments that osteoblast-specific CypD deletion protects against age-related bone loss, as evidenced by increased bone volume fraction (C45) and improved biomechanical properties (C44). This corroborates previous global knockout data (C42-C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Osteoblast-specific CypD re-expression and gain-of-function impair bone phenotype in aged mice. Viral delivery of constitutively active CypD to osteoblasts in aged mice with conditional CypD deletion decreases cortical thickness, bone mechanical properties, and osteoblast function without affecting osteoclast activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 demonstrate through a sophisticated rescue experiment that re-expressing constitutively active CypD in osteoblasts of aged mice reverses the protective effects of CypD deletion. The data show decreased cortical thickness (C46-C47), impaired biomechanical properties (C48), reduced osteoblast function (C49), and no change in osteoclast activity (C50), supporting the conclusion that osteoblast-specific CypD affects bone phenotype (C51). The use of contralateral controls and normalization strengthens the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C83",
+      "C84"
+    ],
+    "result": "The BMP/Smad-Ppif regulatory axis is relevant for bone homeostasis and pathological calcification conditions. CypD downregulation via BMP/Smad signaling during osteoblast differentiation is sufficient to affect bone phenotype even over short time periods in aged mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C83, and C84 synthesize the findings to demonstrate the physiological and pathological relevance of the BMP/Smad-Ppif axis. The observation that only 2 months of CypD overexpression is sufficient to impair bone mechanical properties in aged mice (C83) highlights the importance of this regulatory mechanism. The relevance to pathological calcification conditions (C84) extends the significance beyond normal bone homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C85",
+      "C86"
+    ],
+    "result": "Background knowledge and literature context for MPTP, CypD, BMP signaling, and their roles in differentiation and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C86 provide established scientific knowledge and literature citations that contextualize the study. These claims are appropriately cited and represent accepted knowledge in the field, providing necessary background for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Aged mouse bones have higher CypD levels compared to young mouse bones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by immunofluorescence data comparing 3-month-old and 18-month-old mice, demonstrating increased CypD protein levels in aged bones. This finding is consistent with the inverse correlation between BMP signaling and CypD expression observed in aging.",
+    "result_type": "MINOR"
+  }
+]

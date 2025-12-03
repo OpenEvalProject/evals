@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C21"
+    ],
+    "result": "The authors develop a theoretical framework showing that population growth rate can be expanded by cumulants of a fitness landscape, enabling quantification of contributions from variance, skewness, and other statistical features. This expansion decomposes population growth into chronological mean fitness and selection strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C21 present the core theoretical contribution. The mathematical derivation is shown through equations (particularly Equations 8-14), and the framework is validated through both analytical models (Appendices 1-2) and simulations (Figure 4). The theoretical relationships are internally consistent and properly derived.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C40"
+    ],
+    "result": "The framework reveals a quantitative relationship between fitness heterogeneity and population growth rate response to perturbation, where populations with higher selection strength exhibit greater changes in growth rate upon perturbation. This relationship is independent of mother-daughter correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38, and C40 describe a theoretical prediction (Equation 19) that is validated through simulations (Figure 4 and Figure 4\u2014figure supplement 1). The simulations test the relationship across different generation time distributions and mother-daughter correlation strengths, confirming the generality of the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C50"
+    ],
+    "result": "Application of the framework to experimental data from bacteria to mammalian cells reveals distinct levels of growth rate gain from fitness heterogeneity across organisms and environments. Division count heterogeneity contributes to population growth (W\u2081\u207d\u1d30\u207e < 1 in all cases), with third or higher-order cumulants contributing negligibly under constant growth conditions (W\u2082\u207d\u1d30\u207e \u2248 1 in most cases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45, C46, and C50 are supported by experimental analysis of multiple datasets (Figure 5, Tables 2-3). The finding that W\u2081\u207d\u1d30\u207e < 1 across all conditions is consistent and well-documented. The near-unity values of W\u2082\u207d\u1d30\u207e for most conditions indicate negligible higher-order contributions. Error bars from resampling provide statistical confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C68",
+      "C72",
+      "C74",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "In regrowth from stationary phase, higher-order cumulants become significant, with selection strength contributing over 70% to population growth from late stationary phase versus only 5% from early stationary phase. The level of selection strongly depends on stationary phase duration, with late stationary phase populations showing extreme heterogeneity (90% non-dividing cells) and significant distribution skew.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C60-C74, C122-C124 describe experimental findings from the stationary phase regrowth experiments (Figure 6). The data clearly show contrasting behavior: W\u2081\u207d\u1d30\u207e = 0.95\u00b10.02 for early versus 0.27\u00b10.04 for late stationary phase, and W\u2082\u207d\u1d30\u207e \u2248 1 for early versus 0.61\u00b10.04 for late. The lineage tree structures (Figure 6C-D) visually confirm the heterogeneity differences. The quantitative measurements are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C32",
+      "C59",
+      "C128",
+      "C131"
+    ],
+    "result": "The framework identifies cellular populations where selection increases fitness variance in retrospective statistics compared to chronological statistics. This occurs when the fitness distribution has positive skew, and is possible even in the long-term limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C32, C59, C128, and C131 describe a theoretical prediction confirmed by experimental data. The convexity analysis of K'_D(\u03be) (Figure 5F-H, Figure 5\u2014figure supplement 2) shows downward convexity for some S. pombe EMM conditions, indicating increased variance. The theoretical basis (Equation 15, Figure 3) and analytical model (Appendix 2) support this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C35"
+    ],
+    "result": "Differences between the two selection strength measures (S_KL^(1) and S_KL^(2)) can detect subpopulations with distinct division statistics. This is demonstrated for S. pombe in EMM medium and L1210 cells, with the latter previously shown to contain slow-cycling lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C56, C57, and C35 are supported by experimental analysis (Figure 5) showing deviations of W\u2082\u207d\u1d30\u207e from 1 and distribution skew for these populations. The connection to L1210 slow-cycling cells is supported by citation (C56). The theoretical framework (Equation 15) explains how higher-order cumulants reflect subpopulation structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "RpoS-mCherry expression heterogeneity correlates with lineage fitness in a condition-dependent manner. Under glucose-37\u00b0C and glucose-30\u00b0C, RpoS shows 2.6-fold and significantly higher selection strength than GFP, respectively, but under glycerol-37\u00b0C, RpoS selection strength is not significantly different from GFP. Fitness landscapes and expression distributions vary independently across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C94 describe experimental findings from the RpoS analysis (Figure 7). The fitness landscapes (Figure 7A-B), selection strengths (Figure 7C), and distributions (Figure 7D-E) are directly measured from lineage data. The condition-dependent differences are statistically supported by error bars from resampling. The independence of distributions and fitness landscapes (C99-C101) is demonstrated by comparing across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Higher-order fitness cumulants contribute non-negligibly to RpoS-mCherry expression (W\u2081\u207d\u02e3\u207e < 1), though under glycerol-37\u00b0C, RpoS expression barely correlates with fitness heterogeneity. Expression distributions and fitness landscapes can vary independently, suggesting cells can modulate selection strength by changing either.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C98-C102 are supported by experimental measurements (Figure 7F-H). The W\u2081\u207d\u02e3\u207e values show non-negligible higher-order contributions, with the glycerol-37\u00b0C condition showing minimal correlation. The observation that distributions (Figure 7D) and landscapes (Figure 7A) vary independently is empirically demonstrated. However, C102 is speculative about cellular modulation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C119",
+      "C120"
+    ],
+    "result": "Analytical modeling shows that unlike the central limit theorem, higher-order cumulants contribute to population growth even in the long-term limit. The shape of generation time distribution influences long-term growth rate by constantly introducing selection, making inherent stochasticity of interdivision times essential for population growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 and C119-C120 describe conclusions from analytical models in Appendix 2. While the appendix is referenced but not fully shown in the manuscript body, the claims are presented as derived results. The theoretical framework supports these conclusions, though C120 includes speculative elements about evolutionary success.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C143",
+      "C144"
+    ],
+    "result": "The framework is model-independent, requiring only cell numbers at initial/end timepoints and division counts per lineage. It applies to non-stationary conditions without modification, though this independence limits its ability to report influences from heterogeneous environments or non-quantified traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C107-C111, C143, and C144 describe properties of the theoretical framework. The model independence is demonstrated by successful application to diverse datasets (bacteria, yeast, mammalian cells) and non-stationary conditions (stationary phase regrowth). The stated limitation (C111) is acknowledged by the authors. The framework's generality is a key strength validated by the breadth of applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Division count heterogeneity has dual facets: increasing population growth rate (quantified by S_KL^(1)[D]/\u03c4\u039b) while sensitizing populations to perturbations (quantified by S_KL^(2)[D]/\u03c4\u039b).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 summarizes a key conceptual finding supported by both theory (Equations 3-4, 19) and experiments (Figures 4-5). The dual nature is demonstrated through the perturbation response analysis and the experimental measurements across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Most cells gradually lose the ability to quickly resume growth during stationary phase, with only a fraction contributing to future populations. However, preserving non-growing lineages may be beneficial for unpredictable harsh environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 is supported by the late stationary phase regrowth data (Figure 6), but C76 is speculative, supported only by a citation to prior work on bet-hedging. The speculation is reasonable but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "The differences in selection strength values between early and late stationary phase regrowth depend on the time window and might be valid only at this time scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 is an important caveat acknowledged by the authors about the interpretation of their stationary phase results. This limitation is appropriately stated and reflects careful interpretation of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "All experimental data examined exhibited stable convergence of the cumulant expansion, including regrowth from late stationary phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by the convergence analysis shown in Figures 5A and 6E. Even the extreme case of late stationary phase regrowth showed convergence by approximately 10th-order cumulants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "From a practical viewpoint, higher-order cumulants become negligible under steady growth conditions, and significant differences between S_KL^(1) and S_KL^(2) could probe non-stationarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C135 is presented as speculation ('might suggest') based on the experimental findings. While supported by the data showing W\u2082\u207d\u1d30\u207e \u2248 1 for most steady-state conditions, the authors appropriately note this requires further experimental validation across diverse conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The framework requires complete lineage tree information, but many single-cell measurement methods provide only partial trees. Extending the framework to infer probabilities from incomplete trees is an essential future direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 accurately describe a limitation of the current framework and identify an important future research direction. The authors appropriately acknowledge this limitation while demonstrating a workaround for mother machine data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C103",
+      "C104",
+      "C114",
+      "C115",
+      "C116",
+      "C126",
+      "C127",
+      "C141",
+      "C142"
+    ],
+    "result": "Background knowledge claims about cellular heterogeneity, fitness, selection, RpoS function, and evolutionary biology concepts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C13, C77-C80, C103-C104, C114-C116, C126-C127, C141-C142 represent established knowledge in the field, supported by citations or general acceptance. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Time-lapse single-cell measurements provide lineage tree information, with 22 lineages observed in the example shown in Figure 1A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C20 describe the experimental methodology and a specific observation from Figure 1. These are straightforward descriptive claims supported by the figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Causal traits should have large selection strength values, and the framework helps narrow down candidates for essential traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 is speculative about the utility of the framework. While logically reasonable that causal traits would show strong selection, the framework measures correlation, not causation, as the authors acknowledge. This speculation is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "The inference precision of population growth rate has non-monotonic dependence on cell lineage length in mother machine devices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 cites prior work (Levien et al., 2020) as established knowledge relevant to the framework's application. This is appropriately cited background information.",
+    "result_type": "MINOR"
+  }
+]

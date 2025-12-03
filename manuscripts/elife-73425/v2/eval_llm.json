@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "All four intergenerational stress adaptations in C. elegans (bacterial infection, eukaryotic infection, osmotic stress, and nutrient stress) are conserved in at least one other Caenorhabditis species, but each shows a distinct pattern of conservation across C. briggsae, C. kamaaina, and C. tropicalis. The adaptations require conserved genes (cysl-1, rhy-1 for P. vranovensis; gpdh-2 for osmotic stress) in species that exhibit the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C32 provide comprehensive phenotypic data across four species for four different stresses, with appropriate controls and genetic validation. The data show clear species-specific patterns of conservation with statistical support (p-values provided) and genetic requirements confirmed through RNAi/mutant analysis. The conclusion that all four adaptations are conserved in at least one other species is well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Intergenerational adaptations to stress are stress-specific rather than conferring general stress resistance. Parental exposure to osmotic stress eliminates the ability to adapt to P. vranovensis, while parental P. vranovensis exposure does not affect osmotic stress adaptation. Similar specificity is observed between osmotic stress and N. parisii infection, and between bacterial and eukaryotic pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37, C56-C62 demonstrate stress specificity through multiple cross-stress experiments with clear statistical support. The data show that gene expression changes are largely distinct between stresses (C37) and that mismatched stress exposures either eliminate adaptation or have no effect, supporting the conclusion of stress-specific rather than general stress responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "Intergenerational adaptations to stress have deleterious tradeoffs in mismatched environments. Parental osmotic stress exposure completely eliminates offspring adaptation to P. vranovensis, and combined osmotic stress and N. parisii exposure reduces protection against N. parisii compared to N. parisii exposure alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C57, C58, C60 provide experimental evidence for tradeoffs with statistical support. The complete elimination of P. vranovensis adaptation by osmotic stress (C57) and the genetic control using osm-8 mutants (C58) strengthen the conclusion. The N. parisii data (C60) provide additional support for tradeoffs in mismatched environments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Parental exposure to P. vranovensis and osmotic stress causes substantial changes in offspring gene expression across species. 367 genes showed >2-fold changes in C. elegans and at least one other species for P. vranovensis, with 35 genes changing in all four species. For osmotic stress, 235 genes changed in both C. elegans and C. briggsae, with 5 genes changing in all four species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C41 are supported by RNA-seq data with appropriate statistical thresholds (padj <0.01, >2-fold change). The analysis used 7587 single-copy orthologs across species, providing a robust comparative framework. Sample sizes (n=3 replicates) and statistical methods (DESeq2) are appropriate for RNA-seq analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "37 genes exhibited >2-fold intergenerational changes in expression in all four species in response to either P. vranovensis or osmotic stress. These genes are significantly enriched for extracellular proteins (p < 2.278 \u00d7 10\u207b\u00b3) and include three genes (C30B5.6, hphd-1, C42D4.3) that respond to both stresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35, C40-C42 are supported by RNA-seq data with appropriate statistical analysis. The gene ontology enrichment analysis provides functional context. However, the biological significance of these 37 genes remains unclear as none have been previously linked to the studied adaptations, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C75"
+    ],
+    "result": "Presumed adaptive and deleterious intergenerational effects are molecularly related at the gene expression level. The gene rhy-1 shows increased expression in C. elegans and C. kamaaina (which adapt to P. vranovensis) but decreased expression in C. briggsae (which shows deleterious effects), correlating with phenotypic outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44-C48, C75 provide a compelling correlation between gene expression patterns and phenotypic outcomes. The hypergeometric probability analysis (P < 1.337e\u207b\u2070\u2078) strongly supports the enrichment of known adaptation genes in the species-specific expression pattern. The rhy-1 inversion is particularly striking and well-documented. However, this remains correlative rather than causative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C53",
+      "C55",
+      "C74",
+      "C93"
+    ],
+    "result": "None of the 1515 genes showing differential expression in F1 progeny after P. vranovensis or osmotic stress exposure were differentially expressed in C. elegans F3 progeny. Only two genes (hphd-1 and C09B8.4 orthologs) showed differential expression in both F1 and F3 in C. kamaaina for osmotic stress, which may represent false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C53, C55, C74, C93 are supported by F3 RNA-seq data in both C. elegans and C. kamaaina. The authors appropriately note that the two genes in C. kamaaina could be false positives given the 1% FDR threshold. The conclusion that intergenerational effects are not maintained transgenerationally is well-supported, though the authors appropriately acknowledge alternative possibilities (germ cell-specific effects, weak broad effects).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49"
+    ],
+    "result": "Pairing gene expression and phenotypic data across species enriches for genes required for intergenerational adaptations. All three genes known to be required for P. vranovensis adaptation (rhy-1, cysl-1, cysl-2) were among 17 genes showing species-specific expression patterns correlating with phenotype (P < 1.337e\u207b\u2070\u2078). Similarly, four genes including gpdh-1 showed expression patterns correlating with osmotic stress adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46, C49 demonstrate a powerful approach for identifying candidate genes by integrating phenotypic and transcriptomic data. The significant enrichment of known genes validates the approach. However, the remaining genes in these lists require functional validation to confirm their roles in the adaptations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Approximately 50% of genes differentially expressed in offspring of stressed parents show expression changes more than one standard deviation outside their average expression across embryo development time points, suggesting these changes are not due to developmental timing differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by comparison to published developmental time-course data (Boeck et al., 2016). The analysis appropriately addresses the concern that expression differences could be due to developmental asynchrony. The finding that ~50% of genes fall outside normal developmental variation supports programmed changes, though the other 50% may still include some developmental timing effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Intergenerational responses to bacterial pathogens show specificity. Parental exposure to P. vranovensis or Pseudomonas sp. 15C5 provides cross-protection between these two Pseudomonas species, with 309 genes specifically differentially expressed in offspring. In contrast, exposure to S. plymuthica or Aeromonas sp. causes deleterious effects and does not protect against P. vranovensis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 demonstrate pathogen specificity within bacterial responses. The identification of Pseudomonas sp. 15C5 by 16S rRNA and rpoD sequencing is appropriate. The cross-protection between P. vranovensis and Pseudomonas sp. 15C5 but not P. aeruginosa (C66) suggests specificity within the genus. RNA-seq data support distinct transcriptional responses. However, the mechanisms underlying cross-protection versus deleterious effects remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "The four Caenorhabditis species studied (C. elegans, C. briggsae, C. kamaaina, C. tropicalis) shared a last common ancestor approximately 30 million years ago and have diverged to approximately 0.05 substitutions per site at the nucleotide level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 are supported by citation to Cutter, 2008. This evolutionary context is important for interpreting the conservation patterns observed. The divergence level is appropriate for comparative studies of conserved mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "7587 single-copy orthologs are conserved across C. elegans, C. briggsae, C. kamaaina, and C. tropicalis, providing the basis for comparative gene expression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by orthology analysis using OrthoFinder. The methods describe appropriate quality control (BUSCO analysis) and selection of longest isoforms. The inclusion of 385 additional ortholog groups where multiple orthologs existed but only one was expressed is reasonable and transparently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C85"
+    ],
+    "result": "Intergenerational responses to stress are evolutionarily conserved, with all four models showing conservation in at least one other species, though each exhibits a different pattern of conservation across the phylogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C85 represent the overarching conclusion supported by the comprehensive phenotypic data (C11-C32). The different conservation patterns for different stresses suggest distinct evolutionary trajectories and molecular mechanisms, which is consistent with the genetic and transcriptomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Background claims about intergenerational effects in the literature, including that N. parisii is a natural pathogen of C. elegans and C. briggsae, that intergenerational effects have been reported across diverse species, and that such effects can lead to substantial survival increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 are background information supported by appropriate citations. These claims provide context for the current study but are not novel findings. The citations appear appropriate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "C. elegans, C. briggsae, and C. tropicalis are hermaphroditic while C. kamaaina is an exclusively male-female species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is a factual statement about the reproductive modes of these species, which is well-established in the literature. This biological difference is noted as an example of variation among the species studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Speculative proposals that the 37 conserved genes might be involved in intergenerational responses in more distantly related species, that molecular consequences might be more easily identifiable than physiological consequences, and that deleterious effects in humans might be molecularly related to adaptive effects in other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C89 are explicitly speculative hypotheses proposed by the authors. While these are reasonable hypotheses based on the data, they require future experimental validation. The authors appropriately present these as speculation rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Evolutionary modeling suggests that intergenerational effects are favored when offspring environmental conditions are predictable from the parental environment, that such adaptations have costs, and that transgenerational effects are favored when parental cues are unreliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by appropriate citations to theoretical work. These claims provide theoretical context for interpreting the empirical findings, particularly regarding the lack of transgenerational persistence and the observed tradeoffs.",
+    "result_type": "MINOR"
+  }
+]

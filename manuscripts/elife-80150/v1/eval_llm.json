@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C15",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C57",
+      "C62"
+    ],
+    "result": "The authors developed a nine-gene artificial intelligence-derived prognostic signature (AIDPS) for pancreatic cancer by screening 32 consensus prognostic genes from 1570 samples across 13 cohorts, using 76 machine-learning algorithm combinations derived from 10 classical algorithms, with CoxBoost and Survival-SVM selected as the optimal combination based on average C-index (0.675) in nine testing cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C15, C43, C44, C45, C46, C57, and C62 collectively describe a rigorous methodological approach with specific sample sizes, algorithm combinations, and selection criteria. The methodology is well-documented with clear thresholds (p<0.05, HR consistently >1 or <1 in >8/10 cohorts) and the final model selection is justified by quantitative performance metrics (C-index 0.675).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C63",
+      "C64"
+    ],
+    "result": "AIDPS demonstrated consistent prognostic value across training, testing, Meta-Cohort, and external validation cohorts, with the high AIDPS group showing significantly longer overall survival (OS) and relapse-free survival (RFS), independent of clinical features in multivariate analysis (HR: 0.593-0.603 for OS, 0.667-0.762 for RFS), and AUC values ranging from 0.671-0.761 for predicting 1-, 2-, and 3-year OS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C16-C20, C63-C64 provide extensive validation data across multiple independent cohorts with consistent statistical significance (p<0.05), specific hazard ratios with confidence intervals, and AUC values demonstrating good discriminative ability. The multivariate Cox analysis adjusting for clinical features strengthens the independence of AIDPS as a prognostic factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C21",
+      "C22",
+      "C23",
+      "C58",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "AIDPS exhibited superior and robust predictive capability compared to 86 published signatures and common clinicopathological features, ranking first in four cohorts, second in three cohorts, and third in two cohorts, with only AIDPS and one other signature (Demirkol CS) showing consistent statistical significance across all 13 cohorts, and achieving a maximum mean C-index of 0.666 with the vast majority of cohorts showing C-index >0.65.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C21-C23, C58, C65-C67 demonstrate comprehensive comparative analysis against 86 published signatures and multiple clinical features across 13 independent cohorts. The consistent performance (C-index >0.65 in most cohorts) and statistical superiority over existing models, including those that performed well only in their training cohorts, supports the robustness and generalizability of AIDPS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C25"
+    ],
+    "result": "The nine-gene AIDPS accurately stratified prognosis in other digestive system tumors including liver hepatocellular carcinoma (LIHC), stomach adenocarcinoma (STAD), colon adenocarcinoma (COAD), and rectum adenocarcinoma (READ), with significantly worse OS for low AIDPS groups (p=0.016-0.037).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C25 demonstrate the generalizability of AIDPS beyond pancreatic cancer with specific p-values for four different tumor types. The consistent direction of effect (low AIDPS associated with worse prognosis) across multiple cancer types supports the broader applicability of the signature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C56"
+    ],
+    "result": "Patients with low AIDPS possessed more advanced tumor grades but showed no significant differences in age, gender, or TNM stage compared to high AIDPS patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C56 are supported by clinical characteristic comparisons shown in Figure 5, with statistical testing indicating significant differences only in grade (p<0.05) but not in age, gender, or TNM stage. This suggests AIDPS captures biological features beyond traditional staging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Gene set enrichment analysis revealed that the high AIDPS group was enriched for digestive and metabolism-related pathways (insulin secretion, pancreatic secretion, diabetes mellitus), while the low AIDPS group was predominantly correlated with immune-related pathways (T cell proliferation, IL-17 signaling) and proliferation-related biological processes (cell cycle, homologous recombination).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C27 are supported by GSEA analysis shown in Figure 5I-L. The pathway enrichment patterns are biologically coherent with the observed clinical outcomes (worse prognosis in low AIDPS with proliferation/immune pathways) and provide mechanistic insights into the signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The low AIDPS group exhibited higher tumor mutation burden (TMB), more frequent mutations in TP53, CDKN2A, and KRAS, enrichment of age-related mutational signature 1, and higher amplification/deletion frequencies at specific chromosomal regions (8q24.21, 19q13.2, 8p11.22 amplification; 9p21.3, 18q21.2, 6p22.2, 22q13.31 deletion), while the high AIDPS group showed enrichment of BRCA1/2-related mutational signature 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by comprehensive genomic analysis shown in Figure 6A-D with specific chromosomal locations and mutation frequencies. The findings are internally consistent and align with known cancer biology (TP53, KRAS, CDKN2A as key pancreatic cancer drivers). However, the analysis is limited to TCGA-PAAD cohort only.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Four methylation driver genes (MDGs) were identified with inverse relationships between methylation and expression levels, where the high AIDPS group showed higher MAP3K8 and PCDH7 methylation with lower expression, and lower PCDHB1 and SPAG6 methylation with higher expression, with higher MAP3K8 and PCDH7 methylation and lower SPAG6 methylation associated with significantly prolonged OS (all p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by methylation analysis shown in Figure 6E-J with Kaplan-Meier survival curves demonstrating statistical significance. The inverse correlation between methylation and expression is a well-established epigenetic mechanism, lending biological plausibility to the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The low AIDPS group exhibited higher infiltration of immune cell types (activated CD4+ T cells, CD56dim natural killer cells, central memory CD8+ T cells, gamma delta T cells, type 2T helper cells) and dramatically increased expression of immune checkpoint molecules (CD274, CD276, PDCD1LG2, CD40, CD70, TNFRSF18, TNFRSF4, TNFRSF9, NT5E), indicating that PACA patients with low AIDPS were more likely to respond to immunotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by ssGSEA analysis (Figure 7A-B) and immune checkpoint expression analysis (Figure 7C) with statistical significance (p<0.05). The conclusion about immunotherapy response is a reasonable inference based on established relationships between immune cell infiltration, checkpoint molecule expression, and immunotherapy efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The low AIDPS group demonstrated significantly lower TIDE scores, higher immunotherapy response rates, and expression patterns more similar to melanoma patients who responded to immune checkpoint inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 are supported by TIDE analysis (Figure 8A-B) and Submap analysis (Figure 8C). These computational predictions are consistent with the immune landscape findings (C35-C37) and use established tools (TIDE, Submap) for predicting immunotherapy response. However, these remain computational predictions without actual immunotherapy outcome data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C14"
+    ],
+    "result": "Drug sensitivity analysis identified 13 potentially sensitive agents for the high AIDPS group (4 CTRP-derived and 9 PRISM-derived), with panobinostat (CMap score -98.11) identified as a potential therapeutic agent for high AIDPS patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40, C41, and C14 describe computational drug sensitivity predictions using CTRP, PRISM, and CMap databases. While the methodology is described and panobinostat is supported by prior literature (C53), these remain in silico predictions without experimental validation in pancreatic cancer patients. The speculative language ('may be', 'suggesting', 'could become') appropriately reflects this uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Patients with low PAK1 expression possessed distinctly lower estimated AUC values, suggesting greater sensitivity to gemcitabine, consistent with laboratory findings that elevated PAK1 activity is required for gemcitabine resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 demonstrate validation of the drug sensitivity prediction approach using gemcitabine as a positive control. The consistency between computational predictions (Figure 8F) and known laboratory findings strengthens confidence in the drug sensitivity analysis methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The nine AIDPS genes showed strong biological correlations with each other, immune checkpoint molecules, immune cell types, and genomic alterations, with SELENBP1 and PLCB4 (positively correlated with AIDPS) negatively correlated with immune features and genomic burden, while DCBLD2, PRR11, UNC13D, EREG, ADM, CDCA4, and TGM2 (negatively correlated with AIDPS) positively correlated with immune features and genomic burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by Pearson correlation analysis shown in Figure 7\u2014figure supplements 2 and 3. The correlation patterns are internally consistent and provide biological context for how individual genes contribute to the AIDPS signature. However, correlation does not establish causation, and the patterns differ between high and low AIDPS groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C42"
+    ],
+    "result": "Pancreatic cancer has poor prognosis (5-year survival 11%, ranks fourth in tumor-related deaths), with 80-85% of patients presenting with advanced disease, limited response to immune checkpoint inhibitors and targeted therapies, high heterogeneity leading to variable outcomes within stages, and minimal improvement in 5-year survival (5.26% to 10%) over the past 20 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C42 provide background context supported by appropriate citations to recent literature (Siegel et al. 2022, Mizrahi et al. 2020, Bear et al. 2020, Golan et al. 2019, O'Hara et al. 2021, Liu et al. 2022c, Park et al. 2021). These claims establish the clinical need for the study but are not original findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The genomic alterations, methylation patterns, and gene expression changes observed in AIDPS groups are supported by prior literature, including associations of specific chromosomal amplifications/deletions with poor prognosis, roles of TP53/CDKN2A/KRAS mutations in invasion and immune escape, relationships between TMB and immunotherapy response, and functions of individual AIDPS genes in tumor biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55, C59-C61 cite appropriate literature to support the biological interpretation of findings. These claims demonstrate that the observed patterns align with established cancer biology, strengthening the biological plausibility of the AIDPS signature. However, these are interpretations of current work based on prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript provides background on ParABS systems, describing their components (ParA, ParB, parS), phylogenetic types (1a, 1b, chromosomal), and established mechanisms including ParB spreading, ParA gradient formation, and regular positioning patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 are well-supported by citations to prior literature and represent established knowledge in the field. These claims provide necessary context for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Previous studies have described oscillatory dynamics for F plasmid and pB171, but the lack of quantitative measurements has hindered evaluation of positioning models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are supported by appropriate citations and accurately identify a gap in the field that motivates the current study. This establishes the rationale for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "F plasmid exhibits true regular positioning with dynamics characteristic of an over-damped spring-like force, with plasmids positioned at mid-cell (one plasmid) or quarter positions (two plasmids), showing linear velocity dependence on position and no population-level oscillatory behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C27 are strongly supported by extensive experimental data in Figure 1 and supplements. The velocity profile analysis (C22-C23), autocorrelation functions (C24-C25), and positioning distributions (C18-C21) provide converging evidence for the spring-like force model. The characteristic timescale of ~2 minutes (C27) is derived consistently from multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Quantitative parameters of F plasmid dynamics were determined: intrinsic diffusion coefficient D=(2.27\u00b10.24)\u00d710\u207b\u2074 \u03bcm\u00b2s\u207b\u00b9, spring constant keff/(kBT)=36.8\u00b14.1 \u03bcm\u207b\u00b2, and characteristic force ~0.02 pN, validated by short-timescale MSD measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are well-supported by fitting the over-damped spring model to experimental data. The consistency between the diffusion coefficient estimated from the velocity profile (C28) and that measured directly from short-timescale MSD (C31: 2.01\u00b10.14\u00d710\u207b\u2074 \u03bcm\u00b2s\u207b\u00b9) provides strong validation of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Neither existing stochastic model (DNA relay nor Brownian Ratchet) exhibits true regular positioning as observed for F plasmid. Regular positioning requires ParA-ATP dimers to diffuse on the nucleoid a distance greater than L/(2n) before dissociating, enabling flux balance through competition for ParA-ATP dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 provide a clear theoretical framework supported by citations to prior work (C33-C36, C41) and logical reasoning (C39-C40). The flux balance mechanism and the importance of ParA diffusion length-scale are well-established concepts appropriately applied here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C57",
+      "C60"
+    ],
+    "result": "The unified stochastic model produces different dynamical regimes (static, diffusive, oscillatory, regular positioning) depending on two dimensionless parameters \u03bb and \u03b5. F plasmid sits within the regular positioning regime but near the oscillatory boundary. Only parameters Dh and kh can push the system between regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 are supported by extensive simulation data shown in Figure 3 and supplements. The phase diagram clearly delineates different regimes, and the parameter sweep (C60, Figure 3\u2014figure supplement 4) demonstrates that only Dh and kh affect regime transitions. The mechanistic explanation for oscillations (C52-C53) is consistent with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The model reproduces quarter positioning for two plasmids irrespective of initial positions, and simulated plasmid replication events show rapid movement toward quarter positions similar to experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by simulation data in Figure 5A-E showing both steady-state positioning and replication dynamics. The qualitative agreement with experimental data (Figure 5D-E) supports the model, though the authors note that better parameter knowledge could improve quantitative agreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "F plasmid exhibits a length-dependent transition to oscillatory dynamics, with up to 50% of timepoints classified as oscillatory in cells >3 \u03bcm with one plasmid. This effect is weaker for two plasmids, suggesting ParA-ATP dimers diffuse ~1.5 \u03bcm before dissociating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by experimental data in Figure 6B-D and the trajectory classification method (Figure 6\u2014figure supplement 1). The length-dependence is consistent with model predictions, and the estimated diffusion distance (C71) follows logically from the threshold analysis. However, the classification method has acknowledged limitations (small window size may produce false positives).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Oscillatory behavior of F plasmid decreases upon plasmid replication within cells and shows rapid decay in autocorrelation across generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by data in Figure 6\u2014figure supplements 2-3. The lack of correlation in oscillatory status before and after replication, and across generations, is clearly demonstrated. This supports the model prediction that oscillatory behavior depends on plasmid number.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "pB171 exhibits clear oscillatory behavior in ~80% of cells with one plasmid, with flat-topped position distribution and positive velocity autocorrelation between frames. Oscillations are much less apparent with two plasmids. Both F plasmid and pB171 operate just below the oscillatory threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 are well-supported by experimental data in Figure 7 and supplements. The oscillatory dynamics of pB171 are unambiguous (C75-C78), contrasting sharply with F plasmid. The plasmid-number dependence (C81) and the conclusion that both systems operate near the oscillatory threshold (C82) are consistent with the model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The unified model explains all plasmid dynamics in terms of two dimensionless parameters \u03bb and \u03b5. ParABS regularly positions plasmids but operates just below the oscillatory threshold, which minimizes ATP consumption because the oscillatory regime has the least flux of ParA-ATP dimers and fewest tethers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 represent the main conclusions of the study. The phase diagram (Figure 3I, 8A) demonstrates that \u03bb and \u03b5 determine dynamics (C83). The positioning of both systems near the oscillatory boundary (C84) is supported by experimental data. The ATP consumption analysis (C85-C87, Figure 8B) provides a functional explanation, though this is based on simulation rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The Brownian Ratchet model exhibits 'local excursions' rather than regular positioning because its ParA diffusion length-scale (\u03bb=0.5) places it outside the regular positioning regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by the phase diagram analysis (Figure 3F, 8A) showing that \u03bb=0.5 lies outside the regular positioning regime. This explains why the Brownian Ratchet model did not observe regular positioning for single plasmids.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Experimental details: F plasmid experiments used strain DLT3125 with mean cell cycle 101.17\u00b134.55 min, birth length 2.46\u00b10.38 \u03bcm, division length 4.92\u00b10.63 \u03bcm, and 1.9\u00b10.78 foci at birth, 3.58\u00b10.96 at division. pB171 experiments used strain SR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 provide essential methodological details supported by data in Figure 1\u2014figure supplement 1. These are straightforward measurements that establish the experimental conditions.",
+    "result_type": "MINOR"
+  }
+]

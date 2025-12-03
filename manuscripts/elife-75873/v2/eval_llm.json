@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C98"
+    ],
+    "result": "CPEB4 expression is elevated in sepsis patients, particularly in myeloid cells. Analysis of two independent GEO datasets (GSE65682 and GSE57065) showed significant upregulation of Cpeb4 mRNA in blood of sepsis patients, while Cpeb1-3 showed no major changes. Deconvolution analysis indicated this upregulation occurs in myeloid cells, particularly monocytes/macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C98 are well-supported by microarray analysis of two independent patient cohorts with appropriate statistical testing (limma-moderated t-test with Benjamini-Hochberg correction). Deconvolution analysis appropriately controls for cell composition differences. The convergence of findings across two datasets strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C12",
+      "C113"
+    ],
+    "result": "Myeloid-specific deletion of CPEB4 impairs survival and exacerbates inflammation in LPS-induced septic shock. Cpeb4MKO mice showed lower survival rates, splenomegaly, and increased splenic levels of key inflammatory cytokines (Il6, Tnf, Il1a) compared to wildtype controls following LPS challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 and C113 are supported by appropriate in vivo experiments with adequate sample sizes (n>7/group across three independent experiments). Statistical analysis using likelihood-ratio test for survival and two-way ANOVA for other measurements is appropriate. The phenotype is clear and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18"
+    ],
+    "result": "CPEB4 expression and phosphorylation are temporally regulated during LPS response in macrophages. Cpeb4 mRNA is transiently upregulated (peaking at 3-6 hr), followed by protein accumulation. The protein appears as a doublet with the slow-migrating band representing the hyperphosphorylated active form, which accumulates during the late phase of LPS response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 and C18 are supported by time-course RT-qPCR and immunoblot data with appropriate controls. Lambda phosphatase assay confirms phosphorylation status. The temporal dynamics are clearly demonstrated with multiple time points and biological replicates (n=3-6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "CPEB4 deletion disrupts the resolution phase of LPS-induced inflammatory response in macrophages. Transcriptomic analysis showed most differences between WT and Cpeb4-/- BMDMs appeared 6-9 hr post-LPS, with increases in hypoxia, glycolysis, and mTOR pathways, and decreases in anti-inflammatory transcripts like Il10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 are supported by comprehensive RNAseq analysis (n=4) with appropriate statistical methods (DESeq2). The temporal specificity of transcriptomic changes aligns with CPEB4 phosphorylation kinetics. Gene set enrichment analysis appropriately identifies pathway-level changes. However, the claim about 'disrupting development' (C25) is somewhat overstated as most effects are in the resolution phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C43",
+      "C44"
+    ],
+    "result": "Cpeb4 mRNA stability is regulated by the p38\u03b1-HuR-TTP axis. The Cpeb4 3'-UTR contains 17 ARE repeats. Cpeb4 mRNA levels are reduced in p38\u03b1MKO macrophages and decay faster after transcription inhibition. HuR binding to Cpeb4 mRNA is enriched after LPS treatment in a p38\u03b1-dependent manner, while TTP binding occurs at later time points and promotes decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36, C43-C44 are well-supported by multiple complementary approaches: sequence analysis, genetic knockouts, pharmacological inhibition, RNA-IP, and mRNA stability assays. The use of p38\u03b1MKO mice and chemical inhibitors provides orthogonal validation. However, the competitive binding model (C44) is inferred rather than directly demonstrated through simultaneous binding studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "TTP binds to Cpeb4 3'-UTR and promotes its decay. TTP binding to Cpeb4 3'-UTR was observed at 6 hr post-LPS when TTP protein levels are high. Cpeb4 and Tnf mRNAs showed reduced decay rates in TTPMKO macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by published iCLIP data (Sedlyarov et al., 2016) and immunoblot analysis. The use of TTPMKO mice provides genetic validation. However, the study relies heavily on published data rather than generating new TTP binding data, which is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "p38\u03b1 activation is sufficient to increase Cpeb4 mRNA levels through HuR. In U2OS cells with inducible MKK6 expression, p38\u03b1 activation increased Cpeb4 mRNA levels, which was reversed by p38\u03b1 inhibitors or HuR depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by experiments in an orthogonal cell system (U2OS) with appropriate controls. The use of both pharmacological inhibition and genetic depletion strengthens the conclusion. However, sample sizes appear limited (n=2-3) and the relevance of findings in a non-immune cell line to macrophage biology requires cautious interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CPEB4 binds to mRNAs encoding anti-inflammatory feedback regulators. RIP-seq identified 1173 and 1829 CPEB4-associated mRNAs in untreated and LPS-treated BMDMs, respectively. These mRNAs are enriched in canonical CPE motifs and CPE variants, and include negative regulators of LPS response such as Dusp1, Il1rn, Socs1, Socs3, Zfp36, and Tnfaip3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 are supported by RIP-seq with appropriate controls (Cpeb4-/- BMDMs, IgG controls). Motif enrichment analysis is statistically sound (Fisher's exact test). Validation by RT-qPCR strengthens key findings. However, RIP-seq was performed with n=1, which is a significant limitation for genome-wide conclusions, though validation experiments had adequate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "CPEB4 stabilizes anti-inflammatory mRNAs post-transcriptionally. Socs1, Il1rn, Dusp1, Socs3, Tnfaip3, and Zfp36 mRNA and protein levels were reduced in Cpeb4-/- BMDMs. Actinomycin D chase experiments showed reduced stability of Socs1 and Il1rn mRNAs in the absence of CPEB4. Reporter assays confirmed CPE-dependent mRNA stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are well-supported by multiple complementary approaches: RNAseq, RT-qPCR, immunoblotting, mRNA stability assays, and reporter assays. The convergence of evidence from endogenous genes and reporters is compelling. Sample sizes are adequate (n=3-6). The post-transcriptional mechanism is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "CPEB4-bound mRNAs are enriched in AREs and overlap substantially with TTP targets. CPEB4-bound mRNAs showed ARE enrichment, with 53% of TTP-bound mRNAs also co-immunoprecipitated by CPEB4. Genome-wide analysis revealed linear correlation between CPE and ARE numbers in 3'-UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by motif enrichment analysis and overlap analysis with published TTP targets. Statistical testing (Fisher's exact test) is appropriate. The correlation analysis (R\u00b2=0.6364) is meaningful. This establishes the foundation for the ARE:CPE ratio model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The relative abundance of CPEs and AREs in mRNA 3'-UTRs determines sensitivity to CPEB4 versus TTP regulation. mRNAs with different ARE:CPE ratios showed differential responses to CPEB4 or TTP depletion. CPE-enriched mRNAs (Socs1, Il1rn) were more affected by CPEB4 deletion, while ARE-enriched mRNAs (Cxcl1, Ptgs2) were more affected by TTP deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 are supported by comparative analysis of Cpeb4-/- and TTPMKO macrophages with motif analysis. The examples provided (Socs1, Il1rn, Cxcl1, Ptgs2, Ccl2, Cxcl2) illustrate the principle clearly. However, C73 is a hypothesis rather than a demonstrated result, and the mechanistic basis for how ARE:CPE ratio determines outcome is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The ARE:CPE ratio, but not ARE number alone, correlates with mRNA expression patterns during inflammation resolution. ARE-dominant mRNAs showed more pronounced downregulation at late time points (6-9 hr) compared to CPE-dominant mRNAs. Downregulated mRNAs had lower ARE:CPE scores than sustained mRNAs, but no difference was observed when considering ARE number alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by comprehensive expression kinetics analysis with appropriate statistical testing (Mann-Whitney t-test). The comparison between ARE:CPE ratio and ARE number alone is critical and well-executed. Sample size is adequate (n=4). This is a key result supporting the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Reporter assays demonstrate that CPEs and AREs combinatorially regulate mRNA levels during LPS response. Reporters with CPEs showed higher mRNA levels at late time points, which were progressively reduced by adding AREs. ARE number alone (without CPEs) had no significant impact on reporter expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by well-designed dual luciferase reporter assays with systematic variation of CPE and ARE numbers. Statistical analysis (one-way ANOVA Friedman test) is appropriate. This provides direct experimental validation of the ARE:CPE ratio model. However, the number of replicates is not clearly stated, and the assay measures steady-state levels rather than directly measuring stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "CPEB4 and TTP activities are coordinately regulated through MAPK signaling and feedback loops. p38\u03b1 MAPK regulates the HuR/TTP equilibrium, stabilizing Cpeb4 mRNA. ERK1/2 MAPK controls CPEB4 hyperphosphorylation. CPEB4 regulates its own mRNA (positive feedback) and TTP mRNA (negative feedback).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 are supported by the combined experimental evidence from earlier results. The regulatory circuit is logically inferred from the data. However, some aspects are more speculative (C87, C92, C93) as they are not directly demonstrated but inferred from binding data and expression patterns. The ERK regulation (C91) relies on a single citation rather than new data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "CPE-dominant and ARE-dominant mRNAs encode functionally distinct classes of inflammatory regulators. ARE-dominant mRNAs encode pro-inflammatory cytokines expressed during early LPS response, while CPE-dominant mRNAs encode factors contributing to inflammation resolution (Socs1, Il1rn, Dusp1, TTP). CPEB4 targets include negative regulators of MAPKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by Gene Ontology analysis and the identity of specific targets. The functional categorization is logical and consistent with the phenotype. However, C96 is explicitly speculative ('could explain') and C97 is inferred from GO analysis rather than directly demonstrated. The citations for C94 provide appropriate support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "CPEB4's role in mRNA stabilization suggests poly(A) tail length is regulated by dynamic equilibrium between deadenylation and polyadenylation, modulated by CPE and ARE numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C104 represent a mechanistic model based on prior knowledge (C102, supported by citation) and inference from the current results (C103-C104). While the model is plausible and consistent with CPEB4's known function, the study does not directly measure poly(A) tail length or demonstrate the proposed equilibrium. This is a reasonable hypothesis requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C51",
+      "C83",
+      "C84",
+      "C99",
+      "C100",
+      "C101",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Background knowledge and literature context establishing the importance of mRNA stability in inflammation resolution and the roles of TTP, HuR, and p38\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C21, C27-C29, C51, C83-C84, C99-C101, C105-C108 represent established knowledge supported by appropriate citations. These provide necessary context for the study but are not novel findings. The citations appear appropriate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Summary claims and proposed model: CPEB4 acts opposingly to TTP to stabilize anti-inflammatory transcripts and is required for inflammation resolution. The counterbalancing actions of CPEB4 and TTP, along with CPE/ARE distribution, define transcript-specific decay patterns. Disruption of this balance can lead to disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 and C114-C116 represent the main conclusions and proposed model. These are well-supported by the collective experimental evidence, though some aspects (C114-C116) are more speculative as they represent proposed mechanisms rather than directly demonstrated phenomena. The model is internally consistent and supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  }
+]

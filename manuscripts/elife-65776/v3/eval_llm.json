@@ -1,0 +1,450 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establish that placental malaria caused by P. falciparum expressing VAR2CSA is a major health problem in pregnant women, with antibodies to VAR2CSA developing in a parity-dependent manner and mediating protection through blocking adhesion and promoting phagocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 are well-established background knowledge supported by multiple citations to prior literature. These claims provide the scientific context for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C3"
+    ],
+    "result": "Prior studies have struggled to identify robust antibody correlates of protection from placental malaria, with antibody responses often correlating with exposure rather than protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 and C3 accurately summarize the state of the field based on cited systematic reviews and prior studies. This establishes the rationale for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C60",
+      "C61",
+      "C126",
+      "C127"
+    ],
+    "result": "The study used a prospective case-control design with 127 pregnant women from Papua New Guinea, frequency-matched for key variables, with blinded antibody measurements to minimize bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C60-C61, C126-C127 describe the study design with appropriate detail. The frequency matching, blinding procedures, and prospective design are clearly documented and strengthen the study's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C64"
+    ],
+    "result": "The study measured 169 antibody features across 127 women with 99.2% data completeness, including multiplex assays for antibody isotypes, subclasses, and Fc receptor binding, plus cellular functional assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C56-C59, C64 document comprehensive antibody profiling with excellent data completeness (99.2%). The methods are well-described and the minimal missing data (0.82%) was appropriately imputed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C79"
+    ],
+    "result": "Antibody levels at enrollment did not differ between non-infected women and those with placental malaria at delivery, leading to exclusion of the non-infected group from further analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C79 are supported by Figure 1A showing no significant differences. This finding is appropriately interpreted and led to a logical decision to focus on the two infected groups for subsequent analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C77"
+    ],
+    "result": "Multiple antibody features were significantly higher in women with non-placental infection compared to placental malaria, particularly DBL2-specific IgG3, IgA2, IgG2, and IgG4, as well as DBL3 and DBL5-specific antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C77 are supported by Figure 1B and univariate analyses. The volcano plot clearly shows multiple features with both statistical significance and meaningful fold-changes favoring the non-placental infection group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "IgG levels to non-pregnancy-specific antigens (MSP-1 and schizont extract) did not differ between groups, suggesting differences in VAR2CSA-specific antibodies were not simply due to exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 provides important negative control data showing that general malaria exposure markers did not differ between groups, strengthening the interpretation that VAR2CSA-specific responses are protective rather than merely markers of exposure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C66",
+      "C67",
+      "C68",
+      "C72",
+      "C73"
+    ],
+    "result": "Elastic net logistic regression with resampling (50,000 iterations) identified antibody features with high selection frequency that were positively associated with non-placental infection, with effect sizes increasing with selection frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C66-C68, C72-C73 describe a rigorous statistical approach with extensive resampling to account for uncertainty. The downsampling to balance groups and the relationship between selection frequency and effect size support the validity of the feature selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C74",
+      "C4"
+    ],
+    "result": "A minimal set of six antibody features achieved 86% accuracy in classifying women, with performance significantly better than random permutation tests and not improving with additional features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C74, and C4 are supported by Figure 3 showing AUROC curves, permutation tests, and accuracy metrics. The 86% accuracy is well-validated through cross-validation and permutation testing, though validation in an independent cohort is acknowledged as needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The six selected features included IgG3 to DBL2, ADCP and ADNP of CSA-binding IE, CSA binding inhibition, IgA2 to DBL2, and IgG3 to CSA-binding IE, all significantly higher in the non-placental infection group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 identify the specific protective features with statistical support from Figure 5A-F. All six features show significant differences (p\u22640.009) between groups, providing strong evidence for their protective role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The PLSDA segregation was primarily driven by the top two features: DBL2-specific IgG3 and ADCP of CSA-binding IE by THP-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by Figure 3D showing the loading components. This provides insight into which features contribute most to the classification model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C46"
+    ],
+    "result": "The six selected features were dispersed throughout the correlation network and not well-correlated with each other, suggesting distinct pathways contribute to protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C46 are supported by Figure 4 showing the correlation network. The spatial distribution of selected features and their lack of strong intercorrelation support the interpretation of multiple protective pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C75",
+      "C76",
+      "C47",
+      "C6",
+      "C52",
+      "C54"
+    ],
+    "result": "Individual antibody profiles varied substantially within groups, with 81% of protected women having elevated levels of at least 4 features and 52% having both phagocytosis-promoting and binding-inhibiting antibodies, but no single consistent pattern, indicating multiple pathways to protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C75-C76, C47, C6, C52, C54 are supported by the heat map analysis in Figure 5G. The heterogeneity in antibody profiles among protected women, with some lacking specific features, provides strong evidence for multiple protective mechanisms rather than a single required pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "CSA binding inhibition was the only antibody feature showing a positive association with gravidity (p=0.046) in this cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by univariate linear regression analysis. This finding is consistent with the known parity-dependent development of immunity to placental malaria, though the lack of association for other features is somewhat surprising.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "When excluding women infected at enrollment, four of six antibody features remained significantly higher in the non-placental infection cohort (p\u22640.013), with the remaining two trending higher (p\u22640.064).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 demonstrates robustness of the findings through sensitivity analysis. The persistence of associations after excluding early infections strengthens confidence that the identified features are truly protective rather than artifacts of timing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C89"
+    ],
+    "result": "The identified protective features include previously established mechanisms: CSA binding inhibition and ADCP by THP-1 cells have been associated with protection in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C89 appropriately cite prior literature supporting the protective roles of binding inhibition and ADCP. This validates the machine learning approach by identifying known protective mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "ADNP of infected erythrocytes, which has not been systematically studied in malaria immunity, correlated with placental infection status and should be included in future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 identify ADNP as a novel correlate of protection. While the mechanism is plausible given neutrophil biology, this finding requires validation in independent cohorts as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "IgA2 to DBL2 was identified as protective, though serum IgA2 levels are generally low, suggesting it may be a marker rather than directly protective, warranting further investigation of VAR2CSA-specific B cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C43, C96-C98 identify IgA2 as a novel feature, supported by a recent vaccine study. However, the authors appropriately note uncertainty about whether IgA2 is directly protective or a marker, given its low serum levels. The hypothesis that it's a marker (C97) is speculative and requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C99"
+    ],
+    "result": "Four of six top features involved IE-based assays (despite representing only 11% of features), and both recombinant protein features targeted DBL2, supporting that antibodies to functionally important targets are key to protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95, C99 make a compelling argument about the importance of native antigen presentation and the CSA-binding domain. The overrepresentation of IE-based assays and DBL2 in selected features supports the biological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C44"
+    ],
+    "result": "The selected features measured antibodies to dominant VAR2CSA clades used in vaccine candidates, though limited VAR2CSA sequences from Papua New Guinea exist, and it's unclear whether protection requires targeting multiple clades or varies by region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103, C44 appropriately acknowledge limitations regarding VAR2CSA diversity and regional variation. The connection to vaccine candidates is relevant, though the limited heterologous protection from vaccination (C44) raises questions about generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Few antibody responses to VAR2CSA recombinant domains were selected as correlates of protection, possibly due to high correlation between domain responses or differential antibody longevity compared to functional responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 provide reasonable explanations for why recombinant domain antibodies were not strongly selected despite being good exposure markers. The correlation network (Figure 4) supports the collinearity explanation, and cited studies support differential antibody longevity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The lack of differences between non-infected and placental malaria groups may reflect heterogeneity in the non-infected group (including both protected and unexposed women) or protection by other antigens, highlighting the importance of controlling for exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide plausible interpretations of the null finding between non-infected and placental malaria groups. The heterogeneity explanation is reasonable, and the emphasis on exposure control (C83) is an important methodological insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "A study in Cameroon found that multigravid women protected from placental malaria had greater breadth and intensity of antibody responses to DBL domains, suggesting broad, high-affinity IgG responses may correlate with protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 appropriately cite prior work showing different patterns of protective immunity. This provides context for the current findings and suggests that multiple immunological profiles may confer protection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "Similar to findings with viral pathogens, polyfunctional antibody responses rather than single functional correlates contribute to protection from disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 appropriately contextualizes the findings within broader immunology literature. The parallel to viral immunity supports the biological plausibility of multiple protective pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "None of the selected features targeted multiple parasite strains, possibly because protective epitopes vary between strains, suggesting protective features may vary by population and that future studies should include multiple VAR2CSA clades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C112 raise important questions about strain specificity and generalizability. The speculation about epitope variation (C110) and population differences (C111) is plausible but not directly tested. The recommendation for future studies (C112) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C48",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Placental malaria was defined by histological detection of IE in the placenta (associated with adverse outcomes in prior studies), excluding submicroscopic PCR-positive infections that may represent circulating rather than sequestering parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C116-C118 justify the outcome definition with appropriate citations. The distinction between sequestering and circulating parasites is biologically sound and strengthens the specificity of the outcome measure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Study strengths include 169 assays, minimal missing data, prospective design, exposure control, and native antigens; weaknesses include lack of full-length VAR2CSA, group imbalance, high collinearity, and need for validation in other cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C119-C121 provide balanced assessment of strengths and limitations. The authors appropriately acknowledge that validation in independent cohorts is needed (C120) and that collinearity limits interpretation of individual features (C119).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C51",
+      "C53",
+      "C122",
+      "C123"
+    ],
+    "result": "The study identified candidate antibody features that accurately classify protected women in this cohort, with relevance to vaccine and therapeutic development, though validation in other settings and assessment of clinical outcomes are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C53, C122-C123 appropriately summarize the findings and their implications while acknowledging the need for validation. The caveat about validation in a second cohort (C51) is important for proper interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The systems serology approach used here could be applied to identify protective immunity to other malaria syndromes like cerebral malaria, which is associated with specific PfEMP1 subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 appropriately suggest future applications of the methodology. The parallel to the RTS,S vaccine study (C113) validates the approach, and the suggestion for cerebral malaria (C114-C115) is a logical extension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Methodological details include CSA-binding phenotype monitoring and selection, PLSDA with sequential feature addition to identify minimal feature sets, and 500 repeats of 10-fold cross-validation for accuracy estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C69-C71 provide appropriate methodological detail. The parasite selection procedures and statistical validation approaches are well-described and appropriate for the study design.",
+    "result_type": "MINOR"
+  }
+]

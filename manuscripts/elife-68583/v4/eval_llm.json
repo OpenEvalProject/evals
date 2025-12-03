@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The honey bee gut microbiota consists of a few phylotypes including Lactobacillus Firm5, which comprises four species (Lapi, Lhel, Lmel, Lkul) that consistently co-occur in individual bees despite being closely related (<85% gANI) and exhibiting genomic variation in carbohydrate metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 establish the background context through citations to prior work and are consistently supported by multiple published studies. These claims describe well-established characteristics of the honey bee microbiota and provide the foundation for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "When mono-colonized in gnotobiotic bees, all four Lactobacillus species established successfully regardless of diet, but colonization levels were higher with pollen supplementation. The sum of mono-colonization bacterial loads exceeded co-colonization loads, suggesting negative interactions among species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 are supported by experimental data in Figure 1A with appropriate statistical analysis (ANOVA q-value < 0.01). The inference of negative interactions (C17) is reasonable given the quantitative data, though the mechanism is not yet established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "During serial passage in vivo, the four species stably coexisted only when bees were fed pollen; with sugar water alone, three species declined and Lhel dominated. This supports the hypothesis that pollen facilitates niche partitioning enabling coexistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are strongly supported by serial passage data in Figures 1B-C showing clear diet-dependent community dynamics across seven passages. The niche partitioning hypothesis (C21) is a reasonable inference from the data, though the molecular mechanism remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "In vitro serial passage experiments recapitulated the in vivo findings: all four species grew in mono-culture with glucose, pollen extract, or pollen grains, but only coexisted stably across 21 passages in pollen-containing media. In glucose, Lapi dominated. This suggests pollen-derived nutrient partitioning is sufficient for coexistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by extensive in vitro serial passage data (Figures 2A-C, Figure 2\u2014figure supplements 1-2) showing parallel dynamics to the in vivo experiments. The conclusion that nutrient partitioning is sufficient (C26) is a strong inference supported by the ability to recapitulate coexistence in vitro.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "RNA-seq analysis of the four-species community in bees revealed 687 differentially expressed genes between pollen and sugar water diets. Carbohydrate transport and metabolism (COG G) was the most abundant upregulated category in pollen, enriched in three species, with PTS transporters being the largest fraction. Despite gene homology across species, differential expression was typically species-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 are supported by RNA-seq data with appropriate statistical thresholds (log2FC \u2265 |2|, p \u2264 0.01) and enrichment analysis (Fisher's exact test, p<0.01). The data in Figures 3B-F clearly show the patterns described. The inference of species-specific transcriptional responses (C33) is well-supported by the gene family analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Each of the four species upregulated distinct carbohydrate metabolism functions in response to pollen: Lhel (sugar alcohols, ribose), Lmel (xylose/mannose/rhamnose/arabinose cleavage, bacteriocins), Lkul (starch, oligopeptides), and Lapi (nucleoside salvage). Multiple species upregulated citrate fermentation, glycerol metabolism, and surface proteins. These species-specific responses support niche partitioning as the basis for coexistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 are supported by detailed RNA-seq data and gene annotation analysis shown in Figure 4 and Supplementary files. The species-specific metabolic specializations are clearly documented. The conclusion about niche partitioning (C43) is a reasonable inference from the transcriptional data, though direct metabolic validation strengthens this in later results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In vitro RNA-seq showed 159-393 differentially expressed genes per species between pollen extract and glucose, with COG G enriched in all comparisons. 25-37% of genes upregulated in vivo were also upregulated in vitro, particularly the species-specific carbohydrate metabolism functions. Adhesin genes showed different patterns. This indicates species-specific carbohydrate utilization responses to pollen independent of the host environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by in vitro RNA-seq data (Figure 5B-D) with appropriate statistics and direct comparison to in vivo data. The concordance between in vivo and in vitro transcriptional responses for carbohydrate metabolism genes is clearly demonstrated, supporting the conclusion about host-independent responses (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Comparison of mono-culture and co-culture transcriptomes showed that 58-88% of genes upregulated in pollen were shared between conditions, while only 9-149 genes differed between mono- and co-culture. This indicates that pollen presence, rather than the presence of other Lactobacillus species, is the main driver of gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by RNA-seq data comparing culture conditions (Figure 5E-F). The quantitative comparison clearly shows that nutritional factors have a much larger effect than co-culture, supporting the conclusion (C52). However, the few genes that do respond to co-culture suggest some bacterial interactions occur.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Untargeted metabolomics identified 76 pollen-derived ions significantly depleted during bacterial growth. Species showed differential depletion patterns: Lmel depleted six flavonoids including rutin (producing quercetin precipitate), Lapi depleted three flavonoids, Lkul depleted one flavonoid, and Lhel depleted no flavonoids but uniquely depleted sugar alcohols. This demonstrates species-specific targeting of different pollen metabolites, particularly secondary plant metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 are supported by Q-TOF metabolomics data with appropriate statistics (log2FC \u2264 \u22121, p\u22640.01) shown in Figure 6A and supplements. The rutin/quercetin observation (C58-C59) is particularly strong, combining metabolomics, visual observation, and transcriptomics data. The species-specific patterns are clear and support the niche partitioning hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "GC-MS metabolomics showed all four species utilized multiple substrates simultaneously at different rates. All consumed citrate and malate, with Lkul and Lhel consuming citrate fastest (consistent with citrate fermentation gene upregulation). Lmel consumed simple monosaccharides slower than other species, suggesting specialization in pollen-derived glycosylated compounds. Overall, metabolite changes were consistent with transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are supported by GC-MS data (Figure 6C-D, supplements 4-5) showing time-resolved metabolite consumption patterns. The integration with transcriptomics data (C65, C67, C69) strengthens the conclusions. The inference about Lmel specialization (C67) is reasonable given both metabolomics and transcriptomics data, though stated as speculative ('could indicate').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The four-species community dynamics are governed by negative interactions, as growth of each member was lower in co-culture than mono-culture regardless of environment or nutrient condition. This is consistent with prior observations that negative interactions predominate in nutrient-rich environments, and the species have small genomes with similar auxotrophies suggesting overlapping requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 synthesize results from both in vivo and in vitro experiments showing consistent negative interactions. C70-C71 are supported by the serial passage data. C72 is supported by appropriate citations. C73 is supported by citations to genomic studies. The integration of these observations provides a coherent picture of competitive dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Coexistence of the four species depends primarily on the pollen diet rather than the host environment, as demonstrated by recapitulation of in vivo community dynamics in vitro. Pollen supported stable coexistence while simple sugars led to single-species dominance in both environments. This is consistent with consumer-resource theory predicting that coexistence depends on resource diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 represent key conclusions integrating in vivo and in vitro data. The parallel dynamics in both systems (C75-C76) strongly support the diet-dependence conclusion (C74). The connection to consumer-resource theory (C77-C78) is appropriate and supported by citation, though the theory is not tested directly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Cross-feeding does not appear important for coexistence; instead, coexistence is facilitated by specialization toward distinct pollen-derived nutrients. All four species upregulated different carbohydrate transport and metabolism functions in pollen both in vivo and in vitro. This metabolic specialization on plant glycans may be common in animal gut communities and is consistent with theory that resource preference for at least one substrate enables coexistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 synthesize the mechanistic conclusions. The rejection of cross-feeding (C79) is supported by lack of evidence in metabolomics/transcriptomics. The niche partitioning mechanism (C80-C81) is well-supported by the combined multi-omics data. C82 is appropriately speculative with supporting citations. C83-C84 connect to theory appropriately, though C84 is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The findings provide first experimental evidence linking coexistence of the four Lactobacillus species to the diversity of carbohydrate metabolism functions in their genomes and the pollen diet. This supports prior hypotheses about adaptation to pollen and nutrient competition. The results suggest dietary differences may influence Lactobacillus Firm5 diversity across host species, potentially explaining why A. cerana harbors only one species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 place the work in broader context. C85-C86 appropriately cite prior work. C87 correctly identifies this as the first experimental evidence for the proposed mechanism. C88-C89 are appropriately speculative about broader implications, with C89 supported by citation about A. cerana.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Despite longstanding host association, gut bacterial interactions can be recapitulated in vitro, providing insights about bacterial coexistence when combined with in vivo experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 represents a key methodological conclusion supported by the successful recapitulation of community dynamics in vitro. This has important implications for studying host-associated microbiomes and is well-demonstrated by the parallel results across experimental systems.",
+    "result_type": "MAJOR"
+  }
+]

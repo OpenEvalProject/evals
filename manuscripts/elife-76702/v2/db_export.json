@@ -1,0 +1,1781 @@
+{
+  "submission": {
+    "id": "640d75c0-ff21-4558-93b1-c545f2a256df",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:14:58.682683Z",
+    "updated_at": "2025-12-03T13:14:58.682683Z"
+  },
+  "content": [
+    {
+      "id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "submission_id": "640d75c0-ff21-4558-93b1-c545f2a256df",
+      "content_type": "manuscript",
+      "content_text": "# Spontaneous neuronal oscillations in the human insula are hierarchically organized traveling waves\n\n## Authors\n\n- Anup Das<sup>1</sup> ([ORCID: 0000-0002-8897-7021](https://orcid.org/0000-0002-8897-7021)) \u2020\n- John Myers<sup>2</sup> ([ORCID: 0000-0002-2412-7124](https://orcid.org/0000-0002-2412-7124)) \u2020\n- Raissa Mathura<sup>2</sup>\n- Ben Shofty<sup>2</sup>\n- Brian A Metzger<sup>2</sup>\n- Kelly Bijanki<sup>2</sup> ([ORCID: 0000-0003-1624-8767](https://orcid.org/0000-0003-1624-8767))\n- Chengyuan Wu<sup>3</sup>\n- Joshua Jacobs<sup>1</sup> ([ORCID: 0000-0003-1807-6882](https://orcid.org/0000-0003-1807-6882)) \u2020\n- Sameer A Sheth<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n2. Department of Neurosurgery, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n3. Department of Neurosurgery, Thomas Jefferson University Philadelphia United States ([ROR:00ysqcn41](https://ror.org/00ysqcn41))\n4. Department of Neurological Surgery, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe insula plays a fundamental role in a wide range of adaptive human behaviors, but its electrophysiological dynamics are poorly understood. Here, we used human intracranial electroencephalographic recordings to investigate the electrophysiological properties and hierarchical organization of spontaneous neuronal oscillations within the insula. We analyzed the neuronal oscillations of the insula directly and found that rhythms in the theta and beta frequency oscillations are widespread and spontaneously present. These oscillations are largely organized along the anterior\u2013posterior (AP) axis of the insula. Both the left and right insula showed anterior-\u00adto-posterior decreasing gradients for the power of oscillations in the beta frequency band. The left insula also showed a posterior-to-anterior decreasing frequency gradient and an anterior-to-posterior decreasing power gradient in the theta frequency band. In addition to measuring the power of these oscillations, we also examined the phase of these signals across simultaneous recording channels and found that the insula oscillations in the theta and beta bands are traveling waves. The strength of the traveling waves in each frequency was positively correlated with the amplitude of each oscillation. However, the theta and beta traveling waves were uncoupled to each other in terms of phase and amplitude, which suggested that insular traveling waves in the theta and beta bands operate independently. Our findings provide new insights into the spatiotemporal dynamics and hierarchical organization of neuronal oscillations within the insula, which, given its rich connectivity with widespread cortical regions, indicates that oscillations and traveling waves have an important role in intrainsular and interinsular communications.\n\n## Introduction\n\nThe insula plays a critical role in cognitive control (Menon and Uddin, 2010), awareness (Craig, 2009; Critchley et al., 2004), and adaptive human behaviors (Menon and Uddin, 2010; Singer et al., 2009). Dysfunction of the human insula is prominent in many psychiatric and neurological disorders (Jilka et al., 2014; King-Casas et al., 2008; Sha et al., 2019). Human functional magnetic resonance imaging (fMRI) studies have demonstrated insula involvement in detection and attentional capture of goal-relevant stimuli across a wide range of cognitive tasks (Cai et al., 2014; Dosenbach et al., 2008; Dosenbach et al., 2006; Menon and Uddin, 2010; Sridharan et al., 2008). Despite its critical role in cognitive function and dysfunction (Menon, 2011; Uddin, 2015), the electrophysiological foundations of the insula, its hierarchical organization, and sub-second spatiotemporal dynamics are poorly understood, in part due to the low temporal resolution of fMRI data. Neuronal oscillations are a fundamental feature of cortical networks and are critical for facilitating communication among brain areas (Berger, 1929). Understanding the fundamental features of insula oscillations is therefore important, given its rich connectivity with widespread cortical regions (Menon and Uddin, 2010). Here, we address these challenges and investigate, for the first time, the hierarchical organization and spatiotemporal gradients in the insula using a unique human intracranial electroencephalography (iEEG) dataset.\n\nHuman fMRI studies have shown that the insula plays a foundational role in human cognitive processes by interacting with other large-scale brain networks such as the medial default mode network (DMN) and lateral frontal\u2013parietal network (FPN), which are two other large-scale brain networks that play an important role in external stimulus-related cognition and monitoring internal mental processes (Menon, 2011; Power et al., 2011). Crucially, the intrinsic connectivity of the insula displays close correspondence with task-related coactivation patterns (Sridharan et al., 2008; Supekar and Menon, 2012), and this correspondence has allowed intrinsic and task-related connectivity associated with the insula to be demarcated and studied under a common, triple-network model framework (Menon, 2011).\n\nCytoarchitectonics studies in non-human primates have shown functional subdivisions within the insula. These studies revealed that the non-human primate insula can be divided into an anterior-basal agranular part and a posterior granular part (Augustine, 1996; Mesulam and Mufson, 1985). These studies, as well as direct tract-tracing studies, have also shown that the anterior insula (AI) is structurally connected to orbitofrontal, entorhinal, amygdala, periamygdaloid, piriform, olfactory cortices, and the temporal pole whereas the posterior insula (PI) is connected to primary and secondary sensory and motor cortices (Fudge et al., 2005; H\u00f6istad and Barbas, 2008; Mesulam and Mufson, 1985; Stefanacci and Amaral, 2002). Similar to the findings in non-human primates, MRI studies in humans have also shown subdivisions in the insula (Ghaziri et al., 2017; Morel et al., 2013). Previous fMRI studies have shown functional subdivisions within the insula, as the AI was involved in task-related engagement and disengagement with the DMN and FPN across a wide range of cognitive and affective tasks (Cai et al., 2016; Cai et al., 2021; Chen et al., 2016; Lamm and Singer, 2010; Sridharan et al., 2008). The AI, along with the anterior cingulate cortex, is known as the salience network, which is activated simultaneously across most cognitive task domains, thus forming a core task-set system (Dosenbach et al., 2008; Dosenbach et al., 2006; Ouyang et al., 2008). Together, these findings suggest a common hierarchical organization within the insula across species.\n\nNeuronal oscillations are a fundamental feature of cortical networks and are critical for facilitating communication among a wide range of brain areas across species (Berger, 1929). Understanding the fundamental features of insula oscillations is therefore important, given its rich connectivity with widespread cortical regions (Menon and Uddin, 2010). However, the electrophysiological basis of the functional subdivisions in the insula and its spatiotemporal gradients and hierarchical organization of spontaneous neuronal oscillations are poorly understood. iEEG recordings with adequate sampling of electrodes from both the anterior and posterior subdivisions of the insula provide one way to address this challenge. We examined a resting-state iEEG dataset of 10 participants who underwent treatment for intractable epilepsy and had a total of 239 electrodes implanted across both the anterior and posterior subdivisions of the insula. The first goal of our study was to determine the hierarchical spatial organization of the electrophysiological patterns across the insula and, in particular, explaining how they relate to the frequency and power of neuronal oscillations. Global brain intrinsic gradients have been known to be closely associated with the structural connectivity of the brain areas and the degree of task-related activations (Huntenburg et al., 2018; Paquola et al., 2019; Zhang et al., 2019). Analyses of intrinsic oscillatory gradients in the insula are, therefore, crucial to understand the structure\u2013function relationship of areas within the insula and between the insula and other regions of the cortex (Huntenburg et al., 2018; V\u00e1zquez-Rodr\u00edguez et al., 2019) and provide a more mechanistic understanding of oscillations as a means of intrainsular and interinsular communications in the human brain. Based on recent findings that showed a brain-wide posterior-to-anterior frequency gradient and an anterior-to-posterior power gradient using resting-state magnetoencephalography (MEG) recordings from humans (Mahjoory et al., 2020), as well as similar findings from direct recordings at the cortical surface (Zhang et al., 2018), we hypothesized that the insula would have a posterior-to-anterior frequency gradient and an anterior-to-posterior power gradient as well.\n\nRecent studies in humans suggested that the hierarchical organization of neuronal activity across the cortex is not a stationary phenomenon, rather that it has a dynamic phenomenon, which propagates across the cortex in space and time (Alamia and VanRullen, 2019; Halgren et al., 2019; Hangya et al., 2011; Kleen et al., 2021; Lozano-Soldevilla and VanRullen, 2019; Massimini et al., 2004; Muller et al., 2016; Stolk et al., 2019; Zhang and Jacobs, 2015; Zhang et al., 2018). This phenomenon, also known as \u2018traveling waves,\u2019 consists of oscillations that propagate progressively across the cortex. Traveling waves have been shown to be relevant for visual perception (Besserve et al., 2015; Davis et al., 2020; Gabriel and Eckhorn, 2003; Muller et al., 2014; Nauhaus et al., 2009; Townsend et al., 2015; Vinck et al., 2010; Zanos et al., 2015) and movement initiation (Balasubramanian et al., 2020; Denker et al., 2018; Rubino et al., 2006; Rule et al., 2018; Takahashi et al., 2015) in non-human primates and visual processing (Liang et al., 2021; Stroh et al., 2013; Xu et al., 2007) and spatial navigation (Agarwal et al., 2014; Patel et al., 2012; Patel et al., 2013) in rodents. In humans, traveling waves have been observed during sleep (Dickey et al., 2021; Hangya et al., 2011; Massimini et al., 2004; Muller et al., 2016) as well as during behavior (Alamia and VanRullen, 2019; Kleen et al., 2021; Stolk et al., 2019; Zhang and Jacobs, 2015; Zhang et al., 2018). However, it is unclear whether these traveling waves, which are mostly observed on the surface of the cortex, are also relevant for deep neocortical structures such as the insula.\n\nIn light of this emerging literature, the second goal of our study was to detect traveling waves within the human insula. We adopted a novel method using circular statistics to identify traveling waves amidst the neuronal oscillations that we measured in each participant individually. In addition to detecting traveling waves, we also analyzed differences in the characteristics of the observed traveling waves across participants, and we measured traveling waves at a range of frequencies. Based on findings from human electrocorticography studies that showed low-frequency alpha and high-frequency beta traveling waves were weakly or uncorrelated with each other in the sensorimotor cortex (Stolk et al., 2019), we tested whether there was a link between the properties of traveling waves in the human insula between different frequencies. Our findings provide the first electrophysiological evidence for the presence of spontaneous oscillatory gradients and traveling waves in the human insula.\n\n## Results\n\n### Theta frequency and power gradients in the insula\n\nOur first goal was to investigate the spatial properties of the frequency and power gradients in the neuronal oscillations in the insula. These analyses were inspired by recent findings showing a posterior-to-anterior fast-to-slow frequency gradient and an anterior-to-posterior power gradient in oscillations measured from resting-state MEG recordings from humans (Mahjoory et al., 2020) and a hippocampal posterior-to-anterior frequency gradient using iEEG recordings in human spatial navigation (Goyal et al., 2020). We examined a dataset of subjects with iEEG recordings conducted during rest and used spectral analyses to measure the peak frequency and spectral power of the oscillations from each electrode in the insula (Materials and methods). Individual subjects in this dataset had multiple electrodes in their insula, including contacts in both hemispheres (Figure 1). To characterize the properties of the insula oscillations in these data, for each electrode we first detected oscillations by measuring the frequency bands where power exceeded one standard deviation above the 1/f spectrum using the multiple oscillations detection algorithm (MODAL) (Watrous et al., 2018). Theta (~6\u20139 Hz) and beta (~15\u201332 Hz) were the most prominent oscillations in the insula (Figure 1). However, there were no 9\u201315 Hz oscillations in the insula (Figure 1). In the left hemisphere,~90% of electrodes (n=107) showed a peak frequency in the theta range and 99% showed a peak in the beta frequency band. In the right hemisphere,~80% of electrodes (n=95) had theta-band peaks and ~81% had beta-band peaks. We next conducted tests of these theta and beta oscillations to evaluate their spatial and hierarchical organization.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig1-v2.jpg)\n\n**Figure 1.:** (a) Lateral and frontal views of the brain showing electrodes in the left insula (n=125) and right insula (n=114) across all participants. (b) An oscillation-detection algorithm known as multiple oscillations detection algorithm (MODAL) detected theta (~6\u20139 Hz) and beta (~15\u201332 Hz) oscillations across all electrodes in the insula (Materials and methods). The black line depicts the power spectrum, the red dotted line depicts the 1/f regression line, and the red shaded region around the spectrum represents the standard error of the mean power for each frequency. Gray shaded regions indicate the detected frequency bands at which the power spectrum was higher than the 1/f background signal. (c) The distribution of the peak frequencies detected across all insula electrodes. In the left insula, 90% of electrodes had theta oscillations and 99% had beta oscillations. In the right insula, 80% of electrodes had theta oscillations and 81% had beta oscillations. Peak frequencies of theta and beta oscillations appear to have relatively normal distributions across the insula.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The clustering of t-scores indicates that the single-subject gradient effects directionally align with the results from the group-level statistical tests. Black vertical lines mark the center zero point, where little to no measurable effects of spatial axes on neural data were present.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** AP: apex; SA: short anterior gyrus; SM: short middle gyrus; SP: short posterior gyrus; CS: central sulcus; LA: long anterior gyrus; LP: long posterior gyrus; PCS: posterior central sulcus; H: Heschl\u2019s gyrus.\n\nTo localize the electrode positions within the insula while accounting for inter-subject anatomical variability (Kurth et al., 2010; Naidich et al., 2004), we used a novel approach of modeling the shape of each subject\u2019s insula and then transforming each subject\u2019s electrode position to a standard Montreal Neurological Institute (MNI) coordinate space using an iterative, semiautomated coregistration approach (Materials and methods). Using this pooled dataset, we then evaluated how the spectral dynamics (frequency and power) of the measured neuronal oscillations correlated with the coordinates of the electrodes within the insula (y-axis and z-axis) across all participants, using linear mixed-effect (LME) models (see Materials and methods). The y-coordinate of each electrode represents its position along the AP axis and the z-coordinate corresponds to the superior\u2013inferior (SI) axis. We separately measured oscillations within the left and right hemispheres because interhemispheric differences in structure and function could affect oscillatory organization (Jakab et al., 2012; Sridharan et al., 2008).\n\nThe AP axis coordinates (y-coordinates) of electrodes within the left insula predicted the peak frequency and power of the measured oscillations in the theta band (Figure 2). In the left insula, the frequency of theta was slower in the anterior insula (t[74] = \u20134.09, p<0.001, LME model) (Figure 2a); the amplitude of theta oscillations was higher in the left anterior insula (t[84] = 2.52, p<0.05) (Figure 2c). There was no indication of theta frequency (t[74] = \u20130.56, p>0.05) or theta power (t[74] = \u20130.19, p>0.05) gradients along the SI axis of the left insula.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig2-v2.jpg)\n\n**Figure 2.:** (a) Peak frequencies within the theta band (~6\u20139 Hz) showed posterior-to-anterior gradient in the left insula. Coordinates of electrodes along the AP axis predicted peak theta frequency, where slower theta frequencies were more prominent in the anterior insula and faster theta frequencies were prominent posteriorly (t[74]=\u20134.09, p<0.001). (b) Theta frequencies in the right insula were not hierarchically organized along the AP axis (t[57]=\u20130.14, p>0.05), or the superior\u2013inferior (SI) axis (t[57]=0.07, p>0.05). (c) Theta power showed anterior-to-posterior gradient in the left insula with theta power being higher in the anterior insula (t[74]=2.52, p<0.05). (d) Theta power showed a superior-to-inferior gradient in the right insula where higher amplitude theta oscillations were prominent in the superior portion of the insula (t[57]=2.92, p<0.01). A marginally significant AP gradient suggests that theta power was slightly more concentrated in the right anterior insula, similar to the power gradient in the left hemisphere (t[57]=1.98, p=0.053). No interaction effect was observed between AP and SI axes (t[57]=\u20131.14, p>0.05). Results were computed using linear regression where the y-axis (AP) and z-axis (SI) electrode coordinates were used as continuous independent variables to predict spectral power and frequency dynamics. Variability across participants has been accounted for in all t-statistics. Images were generated via automatic selection of insular vertices from anatomical parcellations using the Desikan\u2013Killiany (DK) atlas.\n\nIn the right insula, the frequencies of theta oscillations were not hierarchically organized along the AP axis (t[57]=\u20130.14, p>0.05) or the SI axis (t[57]=0.07, p>0.05) (Figure 2b). However, theta power trended toward an AP gradient, where theta power was greater in the right anterior insula (t[57]=1.98, p=0.053) (Figure 2d), consistent with the left hemisphere. Theta power also showed a significant SI gradient with higher amplitudes in the superior portion of the right insula (t[57]=2.92, p<0.01) (Figure 2d).\n\n### Beta frequency and power gradients in the insula\n\nIn addition to theta oscillations, we also observed widespread insula oscillations in the beta band. In the left insula, the power of beta oscillations showed an anterior-to-posterior gradient, with higher power anteriorly (t[84]=3.07, p<0.01) (Figure 3c). However, the frequency of beta rhythms was not hierarchically organized along the AP axis (t[84]=\u20130.95, p>0.05) or the SI axis (t[84]=\u20130.59, p>0.05) in the left insula (Figure 3a). In the right insula, beta power also showed a significant anterior-to-posterior gradient (t[58]=2.97, p<0.01) (Figure 3d), with higher power oscillations in the anterior insula. Thus, beta amplitude was greater in the anterior insula across both hemispheres. However, in the right hemisphere, the frequency of insula beta rhythms showed no gradients, in neither the AP (t[58]=\u20130.63, p>0.05) nor SI directions (t[58]=\u20131.10, p>0.05) (Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig3-v2.jpg)\n\n**Figure 3.:** (a) Peak frequencies within the beta band (~15\u201332 Hz) showed no spatial organization in the left insula (t[84]=\u20130.95, p>0.05). (b) Beta frequencies in the right insula did not show AP (t[58]=\u20130.63, p>0.05), or SI gradients (t[58]=\u20131.10, p>0.05). (c) Electrode coordinates along the AP axis of the left insula predicted beta power, revealing that higher power oscillations were prominent in the anterior insula (t[84]=3.07, p<0.01). (d) Beta power in the right insula also showed an AP gradient where higher amplitude beta oscillations were prominent in the right anterior portion (t[58]=2.97, p<0.01). Results were computed using linear regression where the y-axis (AP) and z-axis (SI) electrode coordinates were used as continuous independent variables to predict spectral power and frequency dynamics. Variability across participants has been accounted for in all t-statistics. Images were generated via automatic selection of insular vertices from anatomical parcellations using the Desikan\u2013Killiany (DK) atlas.\n\nThese findings reveal that spontaneous theta and beta oscillations are spatially organized across the insula, especially along the AP axis. In both hemispheres, higher amplitude beta oscillations were concentrated anteriorly, whereas theta frequency and power showed opposing AP gradients in the left insula. More importantly, we used LME models to analyze these patterns, which included a categorical factor for subject identity and thus ensured that our results were not caused by inter-subject differences. Therefore, all reported t-statistics above specifically reflect the overall strength (effect size) and spatial direction of spectral gradients across electrodes, while accounting for differences between individual subjects. The number of electrodes contributed by each subject was also similar (mean=23.9 contacts, standard error=\u00b12.43 contacts). Notably, the single-subject gradients also directionally align with the group level results (Figure 1\u2014figure supplement 1).\n\n### Oscillation clusters are traveling waves in the human insula\n\nPrevious work on the computational modeling of weakly coupled oscillators has shown that traveling waves can naturally emerge from spatially varying gradients of oscillations across different frequencies (Ermentrout and Kopell, 1984). Therefore, given that we observed spatial gradients in the amplitude and frequencies of insula oscillations, we next examined the phase dynamics of these signals to test whether the frequency gradients contributed to traveling waves. A prerequisite for identifying a neural traveling wave is that a spatially contiguous region of cortex must show an oscillation at a single frequency. Thus, as a first step to identify traveling waves in the human insula, we sought to find oscillation clusters in each participant. We defined an oscillation cluster as a spatially contiguous group of electrodes having narrowband oscillations at a given frequency band (see Materials and methods). To identify electrode clusters, as in earlier work (Zhang et al., 2018), we first computed the mean power spectrum of each electrode and then removed the 1/f background signal to find narrowband oscillation peaks at a particular frequency. We then used a spatial clustering algorithm to identify all the groups of contiguous electrodes that showed narrowband oscillations at the same frequency. We defined these groups of electrodes, adjacent in both frequency and space, as an oscillation cluster.\n\nFigure 4 shows examples of oscillation clusters in the theta and beta frequency bands for the insula electrodes in participant #3. We found 28 oscillation clusters (15 in the left insula and 13 in the right insula) across 10 participants (see Figure 4\u2014figure supplements 1\u20139 for oscillation clusters from other participants). Oscillation clusters were present at both theta and beta frequencies, with 14 oscillation clusters in the theta band (8 in the left insula and 6 in the right insula) and 14 oscillation clusters in the beta band (7 in the left insula and 7 in the right insula), in 9 out of 10 participants (participant #4 did not have any oscillation clusters). Overall, 79% of all electrodes (186 out of 239 electrodes) participated in at least one oscillation cluster.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig4-v2.jpg)\n\n**Figure 4.:** A cluster was identified as a spatially contiguous groups of electrodes that had narrowband oscillations at either theta or beta frequency band (Materials and methods). (a) Insula electrodes visualized in a brain surface plot in participant #3. (b) Insula electrodes projected on to a flat brain which was subsequently used for visualization of oscillation clusters and traveling waves. (c) Theta frequency oscillation cluster in participant #3 (electrodes with black circles denote electrodes without any narrowband peaks in the power spectrum). (d) Beta frequency oscillation cluster in the same participant. (e) Mean power spectrum (blue) in log\u2013log coordinates from an example electrode in participant #3. Black line denotes fitted 1/f line to the mean power spectrum in log\u2013log coordinates using robust linear regression (see Materials and methods). (f) Normalized power spectrum (red) after removal of the 1/f background signal. This approach emphasizes narrowband oscillations as positive deflections. Stars (cyan) denote the narrowband peaks in the normalized power spectrum, identified as any local maximum greater than one standard deviation above the mean (see Materials and methods).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig4-figsupp1-v2.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig4-figsupp2-v2.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig4-figsupp3-v2.jpg)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig4-figsupp4-v2.jpg)\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig4-figsupp5-v2.jpg)\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig4-figsupp6-v2.jpg)\n\n![Figure 4\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig4-figsupp7-v2.jpg)\n\n![Figure 4\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig4-figsupp8-v2.jpg)\n\n![Figure 4\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig4-figsupp9-v2.jpg)\n\nOur next goal was to test whether the signals on these oscillation clusters behaved as traveling waves (Materials and methods). We first informally inspected the signals from the oscillation clusters and found that the instantaneous phases of their oscillations varied systematically with electrode locations, indicating the presence of traveling waves. Figure 5a\u2013f shows an example of the systematic variation of the instantaneous phases across a subset of electrodes for both low-frequency theta-band and higher-frequency beta-band oscillation clusters in participant #3. Importantly, this example shows that a single group of electrodes could exhibit traveling waves at multiple frequencies simultaneously.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig5-v2.jpg)\n\n**Figure 5.:** We estimated Hilbert-transformed instantaneous phases of electrodes in the oscillation clusters, and if they vary systematically with the location of the electrodes then they constitute a traveling wave. We used a localized circular-linear regression approach to detect complex patterns of traveling waves in addition to linear traveling waves, in an oscillation cluster. This localized circular-linear regression approach estimated the direction of traveling waves for each electrode (Materials and methods). (a) Raw traces from electrodes as numbered in (b) for participant #3. (c) Filtered signals in the theta frequency band. (d) Filtered signals in the beta frequency band. (e) and (f) are zoomed-in versions of filtered signals in (c) and (d), respectively, to show (denoted as red plus signs) a spatially progressive variation of the phases across the electrodes (electrodes 7\u201310 for theta frequency and electrodes 1\u20136 for beta frequency). (g) Visual demonstration of circular-linear regression approach to detect traveling waves. 3D Talairach coordinates of electrodes were mapped to 2D coordinates using principal component analysis (PCA) (PC 1 and PC 2 denote the first and second principal components, respectively) and phases of the electrodes were fitted with these coordinates in the regression model. Solid circles denote the actual phases of the electrodes with the bars denoting the residuals between the actual phases and the predicted phases (Materials and methods). (h) Left panel: arrow plot showing instantaneous propagation direction of the theta traveling wave corresponding to t=25.225 s, right panel: arrow plot showing instantaneous propagation direction of the beta traveling wave corresponding to the same time-instant as in the left panel. (i) Panel 1 shows histogram of the instantaneous propagation directions across time for theta traveling wave. Panels 2\u20135: arrow plots showing variation of instantaneous propagation directions of the theta traveling waves corresponding to t=36 s, 37 s, 38 s, and 39 s, respectively. (j) Panel 1 shows histogram of the instantaneous propagation directions across time for the beta traveling wave. Panels 2\u20135: arrow plots showing variation of instantaneous propagation directions of beta traveling waves corresponding to t=36 s, 37 s, 38 s, and 39 s, respectively. Ant: anterior; Post: posterior; Sup: superior; Inf: inferior.\n\nWe used circular statistics (Fisher, 1993) to identify traveling waves at each time-point and electrode in a given oscillation cluster by measuring the phase of the oscillations on each electrode and testing for progressive shifts between neighboring electrodes. To do this systematically, for each electrode in a given oscillation cluster, we first identified a subcluster of neighboring electrodes, as those within a distance of 20 mm. Then, for each subcluster, we used a 2D circular\u2013linear regression to characterize the spatial relation between the instantaneous phases of the oscillations and the positions of the electrodes (Figure 5g). Thus, this procedure models each subcluster\u2019s instantaneous phase distribution as a plane wave, estimated by finding the spatial gradient that provides the best fit to the propagation of phases across the nearby electrodes. The fitted phase gradient provides a quantitative estimate of the speed and direction of traveling wave propagation at each time-point (Figure 5h). With this procedure, we found that the instantaneous features of traveling waves varied across time (Figures 5h\u2013j\u20136). We computed the instantaneous wave-strength of the traveling waves as the mean proportion of phase variation explained by the circular\u2013linear models across the cluster (Materials and methods).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig6-v2.jpg)\n\n**Figure 6.:** Traveling waves changed their directions with respect to time. Insula electrodes visualized in a brain surface plot in (a) participant #6 and (b) participant #7. (c) and (d) are histograms of the instantaneous propagation directions across time for theta (~8 Hz) and beta (~18 Hz) traveling waves in participant #6. (e) and (f) are the same as in (c) and (d), respectively, for participant #7. (g) Panels 1\u20134: arrow plots showing variation of instantaneous propagation direction of theta traveling waves corresponding to t=36 s, 37 s, 38 s, and 39 s, respectively, in participant #6, visualized in a zoomed-in version of flat brain. (h) Panels 1\u20134: arrow plots showing instantaneous propagation directions of beta traveling waves corresponding to t=36 s, 37 s, 38 s, and 39 s, respectively, in participant #6, visualized in a zoomed-in version of flat brain. (i) and (j) are same as in (g) and (h), respectively, for participant #7. (k) and (l) are the histograms of the instantaneous propagation directions of traveling waves across time, clusters, and participants for left and right insula, respectively. Solid circles represent electrodes without narrowband oscillations. Ant: anterior; Post: posterior; Sup: superior, Inf: inferior.\n\nTo assess the statistical reliability of each cluster\u2019s traveling waves, we used statistics based on permutation testing. In this procedure, we compared each cluster\u2019s average wave-strength to the distribution of wave-strength values expected by chance under the null hypothesis that there was no relation between oscillation phase and electrode location within each cluster (Materials and methods). Because this shuffling procedure specifically evaluated the spatial arrangement of the recording electrodes, our results precluded the possibility that the results are driven by a specific subset of electrodes or their spatial arrangement. With this approach, we found that traveling waves were reliably present in this resting-state dataset, in all 9 of the participants. Significant traveling waves were present ~35% of the time on average across all clusters. Moreover, traveling waves were almost evenly present in both the left and right insula, in ~35% of timepoints in the left insula and ~35% in the right insula. Individual clusters varied in the prevalence of traveling waves, ranging from ~10% to~87%. 93% of all insula oscillation clusters (26 out of 28 clusters) showed traveling waves at statistically significant levels. Overall, traveling waves had a median propagation speed of ~0.7 m/s, consistent with earlier work on traveling waves across the cortical surface (Halgren et al., 2019; Stolk et al., 2019; Zhang et al., 2018).\n\n### Amplitude of oscillations is positively correlated with the strength of traveling waves\n\nWe next sought to investigate the relationship between the amplitude of the oscillations measured at individual electrodes and the strength of cluster-wide traveling waves, based on emerging findings from motor cortical local field potentials in non-human primates (Denker et al., 2018). Visual inspection revealed that such a link might be present, as we saw that the amplitude of oscillations from a cluster correlated with the simultaneous strength of traveling waves (Figure 7a\u2013f).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76702/elife-76702-fig7-v2.jpg)\n\n**Figure 7.:** (a) Filtered signals in the beta frequency band from all electrodes in participant #3 in time interval 103.25 s to 104.125 s. (b) Average amplitude across all electrodes in the same time interval. We defined the average amplitude for each oscillation cluster to be the average of the Hilbert-transformed instantaneous amplitudes of filtered signals of all electrodes. (c) Wave-strength, averaged across all electrodes, in the same time interval. Higher wave-strength corresponds to higher amplitudes of electrodes in (b) (But observe that the amplitude peaks earlier than the wave-strength; see Results). Time-instant corresponding to the local maximum of wave-strength in (c) is denoted by the red lines in (a), (b), and (c). (d) Arrow plot showing instantaneous propagation direction of electrodes for the beta traveling wave at the time-instant corresponding to the red line in (c). Note the smooth variation of phases across space, which results in the high value of wave-strength in (c). (e) Circular-linear regression fit at the time-instant corresponding to the red line in (c). Solid circles denote the actual phases of the electrodes with the bars denoting the residuals between the actual phases and the predicted phases. Note the relatively low values of the residuals indicated by the low heights of the bars. (f) Circular-linear regression fit at a time-instant (denoted as dotted red line in (c)) for which the wave-strength is relatively low. Note the relatively high values of the residuals. (g\u2013i) Strength (denoted as $\u03c1_{adj}^{2}$) of traveling waves is positively correlated with Hilbert-transformed amplitude of signals. We estimated the average (averaged across electrodes) Hilbert-transformed instantaneous amplitudes of signals of the electrodes for each oscillation cluster and estimated their correlation with the wave-strength of traveling waves. We used a circular-shuffling procedure to test the significance of correlations where we circularly shuffle the wave-strength values with respect to the average amplitude and estimate the correlation on this shuffled data to build a distribution of surrogate correlation values against which the observed correlation was tested (p<0.05) (Materials and methods). (g) Amplitude- $\u03c1_{adj}^{2}$ scatter plot for cluster 1 of participant #7 where there was no statistically significant correlation (p>0.05). (h) Amplitude- $\u03c1_{adj}^{2}$ scatter plot for cluster 2 of participant #8 where there was a statistically significant correlation (p<0.05). (i) Histogram of correlations across all clusters (also see Supplementary file 1a).\n\nTo systematically examine how local oscillation features correlated with traveling waves, at each timepoint we measured the instantaneous amplitude of the oscillations on each individual electrode in a cluster with the Hilbert transform and then measured the average amplitude across electrodes. Then, for each cluster, we computed the correlation over time between mean oscillation amplitude and traveling wave-strength using a permutation procedure to test statistical significance (Materials and methods). This analysis revealed that for ~71% of clusters (20 out of 28 clusters), there was a statistically significant correlation between amplitude and wave-strength (Figure 7g\u2013i, Supplementary file 1a). This indicates that the strength of the traveling waves correlates with the amplitude of neuronal oscillations in the human insula.\n\nVisual inspection also revealed temporal structure in this pattern, in which the amplitude of oscillations in a cluster peaked before wave-strength (Figure 7b\u2013c). To quantify the temporal delay between the amplitude and wave-strength time-series, we carried out a cross-correlation analysis (Rabiner and Gold, 1975). This analysis revealed that oscillation amplitude increases prior to increase in wave-strength, with a mean shift of 8 ms for theta traveling waves and 4 ms for beta traveling waves. Together, these results suggest a putative causal role of higher amplitude oscillations in driving stronger traveling waves.\n\n### Theta and beta traveling waves are temporally uncorrelated\n\nFinally, we investigated the relationship between the lower-frequency theta traveling waves and higher-frequency beta traveling waves, based on emerging findings that showed that low-frequency alpha and higher-frequency beta traveling waves are uncorrelated or weakly correlated with each other in the sensorimotor cortex (Stolk et al., 2019). To explore the relationship between the theta and beta traveling waves in our dataset, we carried out correlation analyses examining the interrelations between the instantaneous strength, phase, and oscillatory power of traveling waves between low and high frequencies for any oscillation clusters that showed significant traveling wave clusters at multiple frequencies. To test the statistical significance of links between the features of low-frequency and high-frequency traveling waves, we circularly shuffled the values of the higher-frequency and lower-frequency traveling waves relative to each other to build a surrogate distribution of correlation values corresponding to the null hypothesis that the features of simultaneous traveling waves at different frequencies were uncorrelated over time.\n\nOverall, this analysis showed that, overwhelmingly, when individual electrodes participated in multiple traveling waves at different frequencies, these effects were largely independent. Across all clusters that showed beta and theta traveling waves, the instantaneous strengths of these traveling waves were uncorrelated (Pearson r, p>0.05) for all but two clusters (Supplementary file 1b). In addition to testing for correlations in wave-strength, to test for more fine-grained links between different traveling waves, we compared how the instantaneous phase and power of slower theta-band traveling waves related to the strength of the beta traveling waves. However, we found no such links (Pearson r, p>0.05) (Supplementary file 1b). Together, these results suggest that across the insula, low-frequency theta and higher-frequency beta traveling waves operate independently.\n\n## Discussion\n\nHere, we used a unique resting-state iEEG dataset of 10 participants who underwent treatment for intractable epilepsy, and electrodes were sampled along the extent of the insula with implants in both the anterior and posterior subdivisions of the insula across participants. With this dataset, we carried out a comprehensive analysis of frequency and power gradients along the oscillations we measured along the AP and SI axes in the insula, for the first time. Using spectral analyses, we found that oscillations in the theta and beta bands are the most prominent spontaneous oscillations in the insula (Figure 1), and these oscillations are largely organized along the AP axis. Notably, there were no 9\u201315 Hz oscillations in the insula (Figure 1). The left and right insula showed convergent patterns of anterior-to-posterior spectral power gradients in the beta band (~15\u201332 Hz). Intriguingly, theta (~6\u20139 Hz) oscillations were heterogeneous across hemispheres and showed a gradient of frequency that matched the insula\u2019s hierarchical organization. In the left insula, theta oscillations showed a posterior-to-anterior frequency gradient and an anterior-to-posterior power gradient. However, in the right insula, theta oscillations showed a superior-to-inferior power gradient, but no frequency gradient.\n\nWe next identified traveling waves corresponding to the theta and beta oscillations. We identified spatially contiguous clusters of electrodes at theta and beta frequency bands and then used a novel, localized circular\u2013linear regression approach to detect traveling waves, assuming that the relative phases of the oscillation clusters exhibit a linear relationship with electrode locations locally. In addition to detecting traveling waves in most of these participants, we also found that the amplitudes of neuronal oscillations are positively correlated with the strength of traveling waves in the insula. Furthermore, this analysis also revealed that theta and beta oscillatory traveling waves in the insula are uncorrelated with each other. These findings provide a more complete understanding of spontaneous neuronal oscillations in the human insula by showing that this structure shows multiple independent traveling waves during rest.\n\nThe insula is a key brain region that was shown with fMRI to play a crucial role in a wide range of adaptive human behaviors (Menon and Uddin, 2010; Singer et al., 2009). However, its electrophysiological foundations have remained unexplored due to the lack of sufficient electrode coverage. Recently, with the increased popularity of stereo EEG recording technology (Abou-Al-Shaar et al., 2018), we have much more access to deep brain structures such as the insula in epilepsy patients and can explore the electrophysiological foundations, subsecond dynamics, and spatiotemporal gradients in this area for the first time. Crucially, our findings of spontaneous gradients and traveling waves in the insula suggest a fundamental new principle that could be used by the insula to link its processing to widespread cortical areas.\n\n### Hierarchical organization of spectral frequency and power of theta and beta oscillations in the human insula\n\nThe first goal of our study was to detect frequency and power gradients in the human insula. Our analysis of the hierarchical organization of theta oscillations in the insula revealed that, in the left insula, theta oscillations have a posterior-to-anterior frequency gradient and an anterior-to-posterior power gradient. This finding is consistent with the global frequency and power gradients found in the human neocortex with MEG (Mahjoory et al., 2020) and iEEG (Zhang et al., 2018), as well as the hippocampal frequency gradients seen in iEEG recordings in humans during virtual spatial navigation (Goyal et al., 2020). Our findings show that the frequency and power gradients observed in other cortical areas also extend to the insula. Our findings also corroborate previous resting-state fMRI (Deen et al., 2011; Faillenot et al., 2017) and diffusion MRI (Menon et al., 2020) findings in humans, which identified distinct functional subdivisions in the insula based on differential patterns of intrinsic functional connectivity and extended them to electrophysiological data. These findings also converge with work showing the presence of spindle-shaped von Economo neurons in AI (Cobos and Seeley, 2015; Evrard et al., 2012; Seeley et al., 2012; von Economo, 1926; Watson et al., 2006), which form the agranular part of the insula. The AI lacks external (layer II) and internal granular (IV) layers, which may subserve its special role of integrating information across wide-spread neuronal networks (Mesulam and Mufson, 1985; Morel et al., 2013; Wylie et al., 2015). By showing distinctive patterns of oscillations for the AI versus PI that match broader cortex-wide patterns, it supports the notion of the insula as a communication hub and suggests that distinctive patterns of oscillations play a role in allowing it to engage with other regions, such as the DMN and FPN, across a range of cognitive and affective tasks (Cai et al., 2016; Cai et al., 2021; Chen et al., 2016; Lamm and Singer, 2010; Sridharan et al., 2008).\n\nIn our previous study involving the AI using resting-state iEEG recordings in humans, we showed that low-frequency delta (~0.5\u20134 Hz) oscillations underlie higher directed causal information flow from the AI to other brain regions such as the DMN and the FPN (Das and Menon, 2020). Taken together with our current results, lower-frequency and higher power oscillations in the AI compared to PI seem to be a putative mechanism that enables the AI to maintain stability and flexibility with other large-scale brain networks (Cai et al., 2016; Cai et al., 2021; Chen et al., 2016; Lamm and Singer, 2010; Sridharan et al., 2008).\n\nHowever, surprisingly, in the right insula, we found no AP theta gradients in frequency and only weak AP theta gradients in power. Moreover, right insula theta oscillations showed a superior-to-inferior power gradient, but no frequency gradient. This finding is consistent with structural MRI studies in humans that showed a left-insula-dominated connectivity profile with the prefrontal and frontal brain regions (Jakab et al., 2012). This left insula dominance has also been confirmed by other structural MRI studies (Chiarello et al., 2013; Van Essen et al., 2012). Thus, our findings of left-insula-dominated theta frequency and power gradients converge with the structural MRI studies and provide novel evidence for the electrophysiological basis of this structural asymmetry. These structural MRI studies have further shown that the anterior, rather than the posterior, insula in the left hemisphere is more involved in semantic decisions (Chiarello et al., 2013), consistent with the frequency and power gradients that we found along the AP axis of the insula. We hypothesize that these spontaneous frequency and power gradients in the left insula also play a key role in modulating human behavior. With the structural MRI findings, these results suggest that oscillatory gradients may help the AI in integrating information from other parts of the insula and projecting them to other parts of the cortex for further processing, given its widespread cortical connectivity. Future studies with denser sampling of electrodes in both the AI and the PI are needed to further probe the hemispheric heterogeneity of low-frequency gradients that we observed.\n\nWe next investigated the hierarchical organization of beta oscillations. This analysis revealed that both the left and right insula have anterior-to-posterior spectral power gradients. Gradients in the human brain in previous iEEG studies have predominantly been found in low-frequency oscillations (Das and Menon, 2020; Goyal et al., 2020; Zhang et al., 2018). However, consistent with our results, some recent electrophysiological studies have also found a crucial role for beta oscillations in feedback signaling in both non-human primate and human brains (Bastos et al., 2015; Das and Menon, 2021). Beta oscillations have been hypothesized to underlie directed causal information flow from one brain region to another and may contribute to transitioning latent neuronal ensembles into \u2018active\u2019 representations (Spitzer and Haegens, 2017), as well as the subsequent maintenance of information in cell assemblies (Engel and Fries, 2010). Thus, higher beta power in the AI may facilitate communication with other large-scale brain networks via feedback signaling. In summary, the frequency gradients were most prominent in the left insula, whereas the power gradients were present in both hemispheres. We hypothesize that the left hemisphere insula communicates via both frequency and power gradients, whereas the right hemisphere insula communicates via power gradients. Multiplexing of frequency and power gradients and hemispheric asymmetry may help the AI maintain a powerful and flexible role in the cognitive control mechanisms as hypothesized previously in human fMRI studies (Cai et al., 2016; Cai et al., 2021; Chen et al., 2016; Lamm and Singer, 2010; Sridharan et al., 2008).\n\n### Oscillation clusters in the human insula are spatially localized traveling waves\n\nOur second overarching goal was to detect traveling waves of theta and beta frequency oscillations. This was inspired by previous work on computational modeling of weakly coupled oscillators that has shown that traveling waves can naturally emerge from linear frequency gradients (Ermentrout and Kopell, 1984). Therefore, we examined whether the frequency and power gradients that we observed also exhibited traveling waves. We found that traveling waves are present ~35% of the time in the human insula across all clusters. Our findings converge with resting-state rodent (Matsui et al., 2016) and human (Bahramisharif et al., 2013; Halgren et al., 2019) electrophysiology studies as well as more recent resting-state human fMRI studies (Raut et al., 2021), which detected traveling waves of spontaneous neuronal oscillations and extend these findings to the human insula. These findings also converge with recent findings that have detected relatively sparse traveling waves in the rodent somatosensory cortex (Moldakarimov et al., 2018), visual cortex of non-human primates (Davis et al., 2020), and iEEG recordings in humans (Zhang et al., 2018). Intriguingly, previous resting-state iEEG studies in humans (Bahramisharif et al., 2013; Halgren et al., 2019) found traveling waves in the alpha band only, which we specifically did not observe here. However, the role of traveling waves of spontaneous beta oscillations in the human cortex is relatively unknown, although traveling waves have been detected during sleep spindles, which tend to occur in the beta frequency range (~11\u201315 Hz) (Muller et al., 2016). Our finding of traveling waves in the beta frequency band in the human insula suggests a role for beta band for communicating information within the insula and also dynamically coordinating this information with other brain networks. This result may explain the role of the insula in a wide range of adaptive human behaviors (Menon and Uddin, 2010), which has been hypothesized as an important role of beta frequency oscillations (Betti et al., 2021).\n\nLack of sufficient electrode placements (Figure 4\u2014figure supplements 1\u20139) simultaneously along both the AP and dorsal\u2013ventral portions of the insula in individual participants precluded a complete population-level analysis of the propagation directions of the traveling waves. Nevertheless, analysis of the propagation directions of the traveling waves in selected participants with adequate electrode sampling (Figures 5\u20136) revealed directional modulation of insular traveling waves; however, they were different across participants. Future studies with adequate sampling of electrodes in the insula of individual participants are needed to rigorously analyze the instantaneous propagation directions of traveling waves and to relate them directly to the frequency and power gradients that we observed in the insula.\n\n### Features of theta and beta traveling waves in the human insula\n\nFinally, we also investigated the relationship between the amplitude of low-frequency and high-frequency oscillations and the strength of simultaneous traveling waves. For ~71% of clusters, we found a statistically significant correlation between oscillation amplitude and wave-strength, and this correlation was positive in almost every case (19 of these 20 clusters). Cross-correlation analysis revealed that the median temporal delay between amplitude and wave-strength is ~8 ms for theta traveling waves and ~4 ms for beta traveling waves, with the wave-strength time-series leading the amplitude time-series in both cases. Together, these time shifts suggest a putative causal role of higher amplitude oscillations underlying higher wave-strength traveling waves in the human insula. Finally, we investigated the relationship between traveling waves at theta and beta frequencies. Recent findings in human electrocorticography studies have shown that low-frequency alpha and high-frequency beta traveling waves are temporally uncorrelated or weakly correlated with each other in the sensorimotor cortex (Stolk et al., 2019). Our analysis confirmed that this pattern also persists in the human insula.\n\nInterestingly, our findings also converge on a recent study (Marks et al., 2021) which used a large dataset of iEEG recordings from 164 participants showing temporal independence of low-frequency and high-frequency oscillations during the memory encoding period of a verbal episodic memory task. This pattern suggests that putatively orthogonal frequency channels may support spatiotemporal information transfer within the insula. We hypothesize that these spatiotemporally orthogonal channels enable the insula to operate at the apex of cognitive control networks observed in the human brain (Cai et al., 2021) and initiate dynamic switching with the DMN and FPN, which has been reported across a wide range of cognitive and affective tasks (Cai et al., 2016; Cai et al., 2021; Chen et al., 2016; Lamm and Singer, 2010; Sridharan et al., 2008).\n\n### Conclusions\n\nThe insula plays a critical role in a range of adaptive human behaviors (Menon and Uddin, 2010; Singer et al., 2009) and insula dysfunction is prominent in many psychiatric and neurological disorders (Jilka et al., 2014; King-Casas et al., 2008; Sha et al., 2019). Crucially, the intrinsic connectivity of the insula displays close correspondence with task-related coactivation patterns, and this correspondence has allowed the intrinsic and task-related connectivity associated with the insula to be demarcated and studied under a common framework (Sridharan et al., 2008; Supekar and Menon, 2012). Using a unique dataset of resting-state human iEEG recordings from 10 participants and 239 electrodes in the insula, we probed its hierarchical organization and spatiotemporal dynamics and, for the first time, detected traveling waves of neuronal oscillations in theta and beta frequency bands in the human insula. Our findings significantly advance the understanding of the neurophysiological basis of spontaneous neuronal oscillations in the insula and, more broadly, of the foundational mechanisms underlying large-scale cortical hierarchies in the brain. Crucially, our findings of spontaneous gradients and traveling waves in the insula suggest a fundamental new principle that could be used by the insula to link its processing to widespread cortical areas.\n\n## Materials and methods\n\n### Participants\n\nIntracranial electroencephalography (iEEG) recordings were acquired from 10 patients (5 females; 9 right-handed, 1 ambidextrous) with drug-intractable epilepsy. The average age of the patients was ~31 with an age of seizure onset between 9 months old and 46 years old. All decisions regarding the location and coverage of the iEEG probes were based solely on clinical criteria. The Baylor College of Medicine Institutional Review Board approved the placement of all electrodes (IRB-18112). All patients provided informed consent before participating. The insula was not the origin of seizure onset for any patients in this study.\n\n### Electrophysiological recordings and preprocessing\n\nWe used resting state electrophysiological recordings from participants performing a passive fixation resting state task, where they focused on a white crosshair at the center of a black background on a computer monitor for ~5 min duration. Data was recorded from 239 iEEG electrodes using a neural signal processor (Blackrock Microsystems). The spacing between neighboring electrodes varied from 3.5 mm to 5.53 mm (center-to-center). The data was amplified, band-pass filtered (0.3 Hz\u20137.5 kHz), and digitized at 2 kHz. For analysis of spectral frequency and power gradients, we used bipolar referencing (iEEG electrodes re-referenced to their closest neighbors) and for analysis of traveling waves, we used common average referencing (iEEG electrodes re-referenced to the average signal of all electrodes). Automatic data rejection was performed with EEGLAB based on 3\u00d7 the SD of spectra from 1 to 50 Hz in order to remove data with artifactual voltage deflections and epileptiform discharges (Delorme and Makeig, 2004). Each subject contributed an average of 23.9 (\u00b12.43) electrodes, with 12.5 (\u00b14.04) in the left insula and 11.4 (\u00b12.55) in the right insula. We also report, in Figure 1\u2014figure supplement 2 the anatomical distribution of electrodes across the insula. This shows wide coverage of electrodes across both the anterior (which includes the short-anterior, short-middle, and short-posterior gyri subdivisions) and posterior (which includes the long-anterior and long-posterior subdivisions) regions as well as the apex region of the insula. Four of the ten subjects had bilateral insula coverage. A zero-phase notch filter was used to remove 60 Hz line noise and harmonics.\n\n### Electrode localization\n\nAn automatic cortical reconstruction was performed on the preoperative T1-weighted MRI FreeSurfer (https://surfer.nmr.mgh.harvard.edu/). All iEEG electrodes were localized by co-registering each patient\u2019s presurgical structural T1-weighted MRI with their postsurgical CT images (Fischl, 2012) using the Functional Magnetic Resonance Imaging for the Brain Software Library\u2019s (FMRIB\u2019s) Linear Image Registration Tool (FLIRT) (Jenkinson et al., 2002; Jenkinson and Smith, 2001). All neuroimages were coregistered to standard MNI 152 space in an iterative semiautomated manner. With ITK-SNAP (version 3.8.0) (Yushkevich et al., 2006), the presurgical T1-weighted MRI was manually aligned to the standard MNI 152 atlas image before a rigid registration was performed. A global affine transformation was subsequently applied to refine the coregistration. Bilateral insula regions from the MNI 152 atlas were dilated by five voxels and combined to create a mask, which was then used in the final registration step. A local affine transformation with this mask was applied three times to optimize insular coregistration from patient space to MNI 152 space. Mutual information was used as the similarity metric for all registrations. The accuracy of each registration was manually verified before the resulting transformation matrix was applied to the postsurgical CT images. With the postsurgical CT registered to MNI 152 space, the resulting electrode coordinates were localized and extracted using BioImage Suite (Joshi et al., 2011). An expert rater (B. S.) examined the fused MRI to CT images and determined whether each contact was in white or gray matter based on its location on the brain slice. Contacts labeled \u2018white matter\u2019 had no voxels within 3 mm of gray matter. The vast majority (~97%) of all contacts in this study were in insula gray matter. Additionally, to verify the results of our co-registration approach, electrodes located in the insula were first visually identified by a neurosurgeon and further verified using the latest Desikan\u2013Killiany (DK) atlas, available in the Freesurfer software (Desikan et al., 2006; Fischl, 2012). Anatomical parcellation of the insula for image generation was performed using the DK atlas.\n\n### Analysis of frequency and power gradients\n\nPower spectral density (PSD) was computed for each electrode via wavelet convolution. Each signal, $x(t)$, from a given electrode, was convolved with a Morlet wavelet defined by\n\n$$\n\\omegat,f=A*e^{\\frac{-t^{2}}{2\\sigma_{t}^{2}}}* e^{i2\\pif_{t}}\n$$\n\nwhere $t$ is time, $f$ is frequency, and $\\sigma_{t}$ is wavelet duration. $A$ is normalized amplitude, such that $A= \\sigma_{t}\\sqrt{\\pi}^{-1/2}$ . The number of cycles in each wavelet function was 6. The resting-state recordings were 5 min duration and analyzed from 1 to 50 Hz in 0.1 Hz intervals (491 frequencies). Frequency bands for spatial gradient analyses were selected from the average of all electrodes using an oscillation detecting procedure called MODAL (Watrous et al., 2018). MODAL detects frequency bands where power exceeds one SD above the 1/f background spectrum. Across the insula, theta (~6\u20139 Hz) and beta (~15\u201332 Hz) oscillations were detected, however, we did not observe significant oscillation clusters in the ~9\u201315 Hz frequency band (Figure 1). Peak frequencies and the corresponding power within theta and beta bands were selected by applying a robust (bisquare) linear fit to the power spectral density function and then locating the frequencies that corresponded to the maximum amplitude above the residuals.\n\n### Traveling waves analysis\n\nWe adopted a novel method to identify traveling waves in the insula corresponding to neuronal oscillations in each participant individually. These consisted of two primary steps: (i) identification of spatially contiguous clusters of electrodes at theta and beta bands and (ii) identification of systematic spatial variation of instantaneous oscillatory phase across the electrodes for each cluster, which we defined as a traveling phase wave. These steps are detailed below.\n\n### Identification of spatial clusters\n\nTo characterize propagating traveling waves, we first sought to identify spatial clusters of electrodes with narrowband oscillations at the theta and beta bands. We adopted methods similar to our previous approach (Zhang et al., 2018). This algorithm accounted for several complexities of human brain oscillations measured with iEEG signals, including differences in electrode positions across subjects and variations in oscillation frequencies across individuals.\n\nSimilar to the PSD analysis above, we first used Morlet wavelets to compute the power of the neuronal oscillations throughout the resting-state recordings of \u223c5 min duration at 200 frequencies logarithmically spaced from 3 to 40 Hz. To identify narrowband oscillations at each site, we fit a line to each patient\u2019s mean power spectrum in log\u2013log coordinates using a robust linear regression as above (Figure 4). We then subtracted the actual power spectrum from the regression line. This normalized power spectrum removes the 1/f background signal and emphasizes narrowband oscillations as positive deflections. We identified narrowband peaks in the normalized power spectrum as any local maximum greater than one standard deviation above the mean.\n\nNext, we implemented a spatial clustering algorithm to identify oscillation clusters, which we defined as contiguous groups of electrodes in each subject that exhibited narrowband oscillations at theta (~4\u20138 Hz) and beta (~12\u201330 Hz) frequencies. To test whether the electrodes comprised a spatially contiguous group, we created a pairwise-adjacency matrix to judge their spatial proximity. This matrix indicated whether each electrode pair was separated by less than 20 Talairach units (20 mm). Finally, we used this adjacency matrix to identify mutually connected spatial clusters of electrodes by computing the connected components of this graph (Tarjan, 1972). We included in our analyses only clusters with at least four connected electrodes. The clustering analysis was performed based only on the proximity of the electrodes with respect to frequency and distance and not by their position along the anteroposterior axis. Consequently, we do not distinguish electrodes or clusters based on their position within AI or PI for the traveling waves analysis.\n\n### Identification of traveling waves\n\nWe next identified traveling waves corresponding to the spatially contiguous groups of electrodes oscillating at theta and beta frequencies (Figure 4, Figure 4\u2014figure supplements 1\u20139) that showed oscillations moving progressively across the cortex. Quantitatively, a traveling phase wave can be defined as a set of simultaneously recorded neuronal oscillations at the same frequency band whose instantaneous phases vary systematically with the location of the recording electrode. We used a localized circular\u2013linear regression approach, assuming that the relative phases of the oscillation clusters exhibit a linear relationship with electrode locations locally. This local circular-linear fitting of phase-location can detect complex patterns (Ermentrout and Kleinfeld, 2001; Muller et al., 2016) of traveling waves in an oscillation cluster in addition to linear traveling waves. This is different than our previous approach (Zhang et al., 2018) in which we carried out circular-linear fitting of phase-location with one direction for an entire oscillation cluster at a time, which assumed that phase gradients exhibit a fixed linear relationship with electrode location across the entire cluster.\n\nTo identify traveling waves from the phases of each oscillation cluster, we first measured the instantaneous phases of the signals from each electrode of a given cluster by applying a third-order Butterworth filter at the cluster\u2019s narrowband peak frequency (bandwidth [fp\u00d70.85, fp/0.85] where fp is the peak frequency). We used a Hilbert transform on each electrode\u2019s filtered signal to extract the instantaneous phases.\n\nWe used circular statistics to identify traveling waves of phase progression for each oscillation cluster at each time point (Fisher, 1993). For each spatial phase distribution, we used 2D localized circular\u2013linear regression to assess whether the observed phase pattern varied linearly with the electrode\u2019s coordinates in 2D. In this regression, for each electrode in a given oscillation cluster, we first identified the neighboring electrodes located within 20 mm distance of the given electrode, constituting a sub-cluster of the given cluster. We included in our subsequent analyses only sub-clusters with at least four electrodes. Let xi and yi represent the 2D coordinates and \u03b8i the instantaneous phase of the ith electrode. The 2D coordinates xi and yi are determined by projecting the 3D Talairach coordinates for each sub-cluster into the best-fitting 2D plane using the principal component analysis. We projected the electrode coordinates into a 2D space to simplify visualizing and interpreting the data.\n\nWe used a 2D circular-linear model:\n\n$$\n\\theta^_{i}=(ax_{i}+by_{i}+\\theta)mod360^{\u2218},\n$$\n\nwhere $\\theta^_{i}$ is the predicted phase, a and b are the phase slopes corresponding to the rate of phase change (or spatial frequencies) in each dimension, and \u03b8 is the phase offset. We converted this model to polar coordinates to simplify fitting. We define \u03b1=atan2(b, a) which denotes the angle of wave propagation and $\u03be$ = $\\sqrt{a^{2}+b^{2}}$ which denotes the spatial frequency. Circular\u2013linear models do not have an analytical solution and must be fitted iteratively (Fisher, 1993). We fitted \u03b1 and \u03be to the distribution of oscillation phases at each time point by conducting a grid search over $\\alpha\\in[0^{0},\u00a0360^{0}]$ and $\u03be$ in increments of 50 and 0.50/mm, respectively (Note that \u03be=32.5 corresponds to the spatial Nyquist frequency of 32.50 /mm corresponding to the highest spacing between neighboring electrodes of 5.53 mm.). The model parameters (a = $\u03be$cos(\u03b1) and b = $\u03be$sin(\u03b1)) for each time point are fitted to most closely match the phase observed at each electrode in the subcluster. We computed the goodness of fit as the mean vector length $r\u00af$ of the residuals between the predicted ($\\theta^_{i}$) and actual (\u03b8i) phases (Fisher, 1993),\n\n$$\nr\u00af=\\sqrt{[\\frac{1}{n}\\sumi=1ncos(\\theta_{i}\u2212\\theta^_{i})]^{2}+[\\frac{1}{n}\\sumi=1nsin(\\theta_{i}\u2212\\theta^_{i})]^{2}},\n$$\n\nwhere n is the number of electrodes. The selected values of \u03b1 and \u03be are chosen to maximize $r\u00af$. This procedure is repeated for each sub-cluster of a given oscillation cluster. To measure the statistical reliability of each fitted traveling wave, we examined the phase variance that was explained by the best fitting model. To do this, we computed the circular correlation $\u03c1_{cc}$ between the predicted ($\\theta^_{i}$) and actual (\u03b8i) phases at each electrode:\n\n$$\n\u03c1_{cc}=\\frac{\\sumi=1nsin(\\theta_{i}\u2212\\theta\u00af)sin(\\theta^_{i}\u2212\\theta^\u00af)}{\\sqrt{\\sumi=1nsin^{2}(\\theta_{i}\u2212\\theta\u00af)\\sumi=1nsin^{2}(\\theta^_{i}\u2212\\theta^\u00af)}},\n$$\n\nwhere bar denotes averaging across electrodes. Finally, we applied an adjustment for number of fitted model parameters:\n\n$$\n\u03c1_{adj}^{2}=1\u2212\\frac{(1\u2212\u03c1_{cc}^{2})(n\u22121)}{n\u2212k\u22121},\n$$\n\nwhere k is the number of independent regressors (k=3 in this case). We refer to $\u03c1_{adj}^{2}$ as the wave-strength of the traveling wave (Zhang et al., 2018) as it quantifies the strength of the traveling wave (note that $\u03c1_{adj}^{2}$ has been referred to as phase gradient directionality (PGD) in some prior studies [Muller et al., 2016; Rubino et al., 2006; Zhang et al., 2018]).\n\n### Statistical analysis\n\nWe used linear mixed-effects models to test the statistical significance of the frequency and power gradients. For analysis of frequency gradients, the peak frequency of each electrode was the dependent variable and the y-axis (AP) and z-axis (SI) coordinates of the electrodes were used as independent variables. Furthermore, a categorical independent variable, indicating the subject that contributed to the given frequency, was also included to account for variance across subjects. Interaction terms between all independent variables were included in the models as well. The spatial models were constructed as follows,\n\n$$\nEPHYS= \\beta_{0}+\\beta_{AP}+\\beta_{SI}+\\beta_{SUBJ}+ (\\beta_{AP}*\\beta_{SI})+(\\beta_{AP}*\\beta_{SUBJ})+(\\beta_{SI}*\\beta_{SUBJ})\n$$\n\nwhere $EPHYS$ can represent spectral frequency, or spectral power. Left and right hemisphere data were analyzed separately because they are known to play different functional roles that may contribute to differences in oscillatory organization (Sridharan et al., 2008). False discovery rate (FDR) correction was applied to all resulting p-values to control for multiple comparisons.\n\nSurrogate analysis was used to test statistical significance of the detected traveling waves. The coordinates of the electrodes with respect to the Hilbert-transformed phases were shuffled so that the contiguous spatial variation of the phases is destroyed. This ensured that our statistical test specifically evaluated the spatial arrangement of the recording electrodes. For each iteration of this procedure, the circular-linear regression analysis was repeated on this shuffled data to build a distribution of surrogate $\u03c1_{adj}^{2}$ values against which the observed $\u03c1_{adj}^{2}$ was tested (p<0.05). Similarly, to test the statistical significance of the correlations for amplitude-$\u03c1_{adj}^{2}$, $\u03c1_{adj}^{2}$(low)- $\u03c1_{adj}^{2}$(high), phase (low)-$\u03c1_{adj}^{2}$(high), and power (low)-$\u03c1_{adj}^{2}$(high), the values from one time-series were circularly shuffled with respect to the other so that the instantaneous correlation between the two time-series is destroyed. We used standard Pearson correlation coefficients to test the correlations for amplitude-$\u03c1_{adj}^{2}$, $\u03c1_{adj}^{2}$(low)- $\u03c1_{adj}^{2}$(high), and power (low)- $\u03c1_{adj}^{2}$(high). We used circular-linear correlation coefficients (Johnson and Wehrly, 1977; Mardia, 1976) to compare the correlations involving phase (i.e. phase (low)- $\u03c1_{adj}^{2}$(high)).\n",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "bfbe8a18-5d71-4568-ba20-3f224a44268c",
+      "submission_id": "640d75c0-ff21-4558-93b1-c545f2a256df",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Shella Keilholz, https://ror.org/03czfpz43 Emory University and Georgia Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76702.sa0](https://doi.org/10.7554/eLife.76702.sa0)\n\nThis manuscript is of interest to neuroscientists willing to deepen their knowledge related to the role of the insula and to any scientist interested in oscillatory activity and traveling waves in the brain. The substantial dataset and the novel methodological approach provide interesting insights on the functional organization of this brain region.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Shella Keilholz, https://ror.org/03czfpz43 Emory University and Georgia Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76702.sa1](https://doi.org/10.7554/eLife.76702.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Spontaneous Neuronal Oscillations in the Human Insula are Hierarchically Organized Traveling Waves\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Anais LLorens (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The reviewers raise important points about the results being driven by particular subjects or electrodes. This is particularly true for the traveling waves, which are sparse, but also applies to other analyses. Any revision needs to address this issue.\n\n2) It is unclear why the 9-15 Hz frequency range is currently excluded. This range should either be included, or its exclusion should be justified and any resulting bias in the algorithm addressed.\n\n3) The possibility that power differences are driven by the relative positions of the electrodes should be investigated.\n\nReviewer #1 (Recommendations for the authors):\n\nThe manuscript should provide figures of the direction of the traveling waves across all subjects, not only in participants 3, 6, 7.\n\nThe z-axes in Figure 2 differ, a consistent presentation would help.\n\nSince there are no SI power gradients, the data could additionally be collapsed across the SI and shown only for the AP gradient to more clearly show the results in addition to the 3D plots.\n\nIt is unclear in the methods whether electrode positions are assessed using the MNI152 conversion or using the more detailed Freesurfer extraction.\n\nThe connection between the first set of studies of gradient analyses and the second set of traveling wave studies is not clear. The preprocessing steps and referencing scheme are different for each set. It seems like the reader should think that prominent oscillations are first identified and then it is studied specifically whether these oscillations present as traveling waves.\n\nReviewer #2 (Recommendations for the authors):\n\nOverall, this manuscript is interesting, well written and well executed. I am impressed by the insular coverage and the methodological approach is novel and well explained and allows to answer most of the questions asked.\n\nIn the following sections I will detail the couple of remarks and questions I have regarding ways to improve the manuscript. My general comment concerns the lack of information regarding the localization of some effects. Indeed, the first section of the manuscript gives many details regarding the laterality of the effect as well as on the y- and z-axes, while the second section does not. Albeit being analyzed at the individual level with contacts that can be included in several clusters, I think that more information regarding the anatomical location of the clusters and the traveling waves need to be reported.\n\n1 \u2013 The Coverage:\n\nThe overall coverage figure 1 shows some electrodes that seem to be in the temporal or frontal opercula, I know that it might be due to the projection onto the MNI brain but specifying the percentage of electrodes in the different subregions of the insula (or at least in the anterior and posterior parts of it) would still be informative.\n\n2\u2013 Clusters and traveling waves:\n\n\u2013 The manuscript could benefit from some precisions regarding the localization of the clusters. For instance, when the authors report having found 28 oscillation clusters across the 10 participants, they should report the proportion by hemisphere and, if possible, on the anteroposterior axis. Same comment for the 35% of clusters presenting traveling waves.\n\n\u2013 In my opinion, adding a histogram of the instantaneous direction of propagation of the traveling waves across time for all the clusters across all the participants, for one hemisphere at the time, could clarify visually the lack of convergence of direction between clusters.\n\n\u2013 I also wonder whether using a smaller number of connected electrodes (3 instead of 4 for instance) could improve the anatomical resolution of the clusters.\n",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "95451333-a145-4ffb-b88d-43e383cd6de8",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C1",
+      "claim": "The insula plays a fundamental role in a wide range of adaptive human behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The insula plays a fundamental role in a wide range of adaptive human behaviors, but its electrophysiological dynamics are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a foundational claim about the insula's function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "000911cf-5ece-4da0-b252-503547f73527",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C2",
+      "claim": "The electrophysiological dynamics of the insula are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The insula plays a fundamental role in a wide range of adaptive human behaviors, but its electrophysiological dynamics are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "45a91180-7fb7-4a82-bbd9-cd80c90495dd",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C3",
+      "claim": "Rhythms in the theta and beta frequency oscillations are widespread and spontaneously present in the insula.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the neuronal oscillations of the insula directly and found that rhythms in the theta and beta frequency oscillations are widespread and spontaneously present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's analysis of iEEG data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "4fbeeb67-1c97-460a-a55f-137457bdbd7a",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C4",
+      "claim": "Insula oscillations are largely organized along the anterior\u2013posterior (AP) axis.",
+      "claim_type": "EXPLICIT",
+      "source": "These oscillations are largely organized along the anterior\u2013posterior (AP) axis of the insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's spatial analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "7c4b4e62-daa3-4fee-9780-16f3c2f1f18b",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C5",
+      "claim": "Both the left and right insula showed anterior-to-posterior decreasing gradients for the power of oscillations in the beta frequency band.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the left and right insula showed anterior-\u00adto-posterior decreasing gradients for the power of oscillations in the beta frequency band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's analysis of beta oscillations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "e664ee9c-3240-4c52-a7d1-561bf0c80254",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C6",
+      "claim": "The left insula showed a posterior-to-anterior decreasing frequency gradient in the theta frequency band.",
+      "claim_type": "EXPLICIT",
+      "source": "The left insula also showed a posterior-to-anterior decreasing frequency gradient and an anterior-to-posterior decreasing power gradient in the theta frequency band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's analysis of theta oscillations in the left insula.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "7958a776-3102-49aa-a5b1-1c4da3414a18",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C7",
+      "claim": "The left insula showed an anterior-to-posterior decreasing power gradient in the theta frequency band.",
+      "claim_type": "EXPLICIT",
+      "source": "The left insula also showed a posterior-to-anterior decreasing frequency gradient and an anterior-to-posterior decreasing power gradient in the theta frequency band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's analysis of theta oscillations in the left insula.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "77c92f20-629d-45d1-b136-7b4b3a7a5a5b",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C8",
+      "claim": "The insula oscillations in the theta and beta bands are traveling waves.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to measuring the power of these oscillations, we also examined the phase of these signals across simultaneous recording channels and found that the insula oscillations in the theta and beta bands are traveling waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's phase analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "6480cb57-b1d4-4a1d-aa5b-e4bc3148ce05",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C9",
+      "claim": "The strength of the traveling waves in each frequency was positively correlated with the amplitude of each oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of the traveling waves in each frequency was positively correlated with the amplitude of each oscillation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "86336ca7-96af-4b01-bde3-82cb0f47e150",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C10",
+      "claim": "The theta and beta traveling waves were uncoupled to each other in terms of phase and amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the theta and beta traveling waves were uncoupled to each other in terms of phase and amplitude, which suggested that insular traveling waves in the theta and beta bands operate independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's analysis of relationships between different frequency bands.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "80612135-ad6c-4500-9b3b-31fa32e73faf",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C11",
+      "claim": "Insular traveling waves in the theta and beta bands operate independently.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the theta and beta traveling waves were uncoupled to each other in terms of phase and amplitude, which suggested that insular traveling waves in the theta and beta bands operate independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the uncoupling finding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "81bb8d5c-93e7-4125-88cd-d970c33f348a",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C12",
+      "claim": "The insula plays a critical role in cognitive control.",
+      "claim_type": "EXPLICIT",
+      "source": "The insula plays a critical role in cognitive control (Menon and Uddin, 2010), awareness (Craig, 2009; Critchley et al., 2004), and adaptive human behaviors (Menon and Uddin, 2010; Singer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "f5aea751-27fe-45ba-be43-06d3f6ed54aa",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C13",
+      "claim": "The insula plays a critical role in awareness.",
+      "claim_type": "EXPLICIT",
+      "source": "The insula plays a critical role in cognitive control (Menon and Uddin, 2010), awareness (Craig, 2009; Critchley et al., 2004), and adaptive human behaviors (Menon and Uddin, 2010; Singer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "b01a1a3a-a5e5-4ed1-bc5e-556dd0b8c613",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C14",
+      "claim": "Dysfunction of the human insula is prominent in many psychiatric and neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysfunction of the human insula is prominent in many psychiatric and neurological disorders (Jilka et al., 2014; King-Casas et al., 2008; Sha et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "44df1e78-a052-48de-9726-5ebf01e2a8b9",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C15",
+      "claim": "Human fMRI studies have demonstrated insula involvement in detection and attentional capture of goal-relevant stimuli across a wide range of cognitive tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Human functional magnetic resonance imaging (fMRI) studies have demonstrated insula involvement in detection and attentional capture of goal-relevant stimuli across a wide range of cognitive tasks (Cai et al., 2014; Dosenbach et al., 2008; Dosenbach et al., 2006; Menon and Uddin, 2010; Sridharan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior fMRI literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "558c3655-ff9a-4cb9-9323-e89ee46cba34",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C16",
+      "claim": "Neuronal oscillations are a fundamental feature of cortical networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal oscillations are a fundamental feature of cortical networks and are critical for facilitating communication among brain areas (Berger, 1929).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to foundational work by Berger.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "e9887624-2d6c-4003-bb24-4da952d4bc07",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C17",
+      "claim": "Neuronal oscillations are critical for facilitating communication among brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal oscillations are a fundamental feature of cortical networks and are critical for facilitating communication among brain areas (Berger, 1929).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to foundational work by Berger.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "68e71b93-a8b0-4213-b0e2-b36bd18a7351",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C18",
+      "claim": "The insula has rich connectivity with widespread cortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the fundamental features of insula oscillations is therefore important, given its rich connectivity with widespread cortical regions (Menon and Uddin, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "0f03fd7c-0506-4c4f-83c7-69c547a2e139",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C19",
+      "claim": "The intrinsic connectivity of the insula displays close correspondence with task-related coactivation patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the intrinsic connectivity of the insula displays close correspondence with task-related coactivation patterns (Sridharan et al., 2008; Supekar and Menon, 2012), and this correspondence has allowed intrinsic and task-related connectivity associated with the insula to be demarcated and studied under a common, triple-network model framework (Menon, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "386f0bf7-c6f7-495f-ba53-058b35cc4990",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C20",
+      "claim": "Cytoarchitectonics studies in non-human primates have shown functional subdivisions within the insula.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoarchitectonics studies in non-human primates have shown functional subdivisions within the insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "2195c084-a9c8-4526-8113-80b64104842d",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C21",
+      "claim": "The non-human primate insula can be divided into an anterior-basal agranular part and a posterior granular part.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies revealed that the non-human primate insula can be divided into an anterior-basal agranular part and a posterior granular part (Augustine, 1996; Mesulam and Mufson, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior cytoarchitectonic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "f0b1cac0-2fb5-4089-b703-e9b04505a86c",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C22",
+      "claim": "The anterior insula (AI) is structurally connected to orbitofrontal, entorhinal, amygdala, periamygdaloid, piriform, olfactory cortices, and the temporal pole.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies, as well as direct tract-tracing studies, have also shown that the anterior insula (AI) is structurally connected to orbitofrontal, entorhinal, amygdala, periamygdaloid, piriform, olfactory cortices, and the temporal pole whereas the posterior insula (PI) is connected to primary and secondary sensory and motor cortices (Fudge et al., 2005; H\u00f6istad and Barbas, 2008; Mesulam and Mufson, 1985; Stefanacci and Amaral, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to tract-tracing studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "5c1a1d44-1c0c-456c-b0e0-9fb422c8a191",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C23",
+      "claim": "The posterior insula (PI) is connected to primary and secondary sensory and motor cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies, as well as direct tract-tracing studies, have also shown that the anterior insula (AI) is structurally connected to orbitofrontal, entorhinal, amygdala, periamygdaloid, piriform, olfactory cortices, and the temporal pole whereas the posterior insula (PI) is connected to primary and secondary sensory and motor cortices (Fudge et al., 2005; H\u00f6istad and Barbas, 2008; Mesulam and Mufson, 1985; Stefanacci and Amaral, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to tract-tracing studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "ed56c9c2-56d2-4baf-bb8b-ef6c73c8e5e6",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C24",
+      "claim": "MRI studies in humans have shown subdivisions in the insula similar to findings in non-human primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the findings in non-human primates, MRI studies in humans have also shown subdivisions in the insula (Ghaziri et al., 2017; Morel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to human MRI studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "70e620a8-dd6d-4b9a-a012-89afb07a3c5c",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C25",
+      "claim": "Previous fMRI studies have shown functional subdivisions within the insula, as the AI was involved in task-related engagement and disengagement with the DMN and FPN across a wide range of cognitive and affective tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous fMRI studies have shown functional subdivisions within the insula, as the AI was involved in task-related engagement and disengagement with the DMN and FPN across a wide range of cognitive and affective tasks (Cai et al., 2016; Cai et al., 2021; Chen et al., 2016; Lamm and Singer, 2010; Sridharan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior fMRI studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "cbacc55e-b046-482b-b898-83dce6e6eb74",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C26",
+      "claim": "The AI, along with the anterior cingulate cortex, is known as the salience network.",
+      "claim_type": "EXPLICIT",
+      "source": "The AI, along with the anterior cingulate cortex, is known as the salience network, which is activated simultaneously across most cognitive task domains, thus forming a core task-set system (Dosenbach et al., 2008; Dosenbach et al., 2006; Ouyang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "072d0787-1340-45ac-9cf8-6ca3509c6a60",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C27",
+      "claim": "The salience network is activated simultaneously across most cognitive task domains, thus forming a core task-set system.",
+      "claim_type": "EXPLICIT",
+      "source": "The AI, along with the anterior cingulate cortex, is known as the salience network, which is activated simultaneously across most cognitive task domains, thus forming a core task-set system (Dosenbach et al., 2008; Dosenbach et al., 2006; Ouyang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "a7a4c612-b2c6-4779-b070-1130f94894bc",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C28",
+      "claim": "There is a common hierarchical organization within the insula across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest a common hierarchical organization within the insula across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited studies on non-human primates and humans.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "0dc5b62a-1844-4d44-af2a-f216210138ae",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C29",
+      "claim": "The electrophysiological basis of the functional subdivisions in the insula and its spatiotemporal gradients and hierarchical organization of spontaneous neuronal oscillations are poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the electrophysiological basis of the functional subdivisions in the insula and its spatiotemporal gradients and hierarchical organization of spontaneous neuronal oscillations are poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "8119e0fb-969e-4cbd-874c-770aa6147af7",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C30",
+      "claim": "The study examined a resting-state iEEG dataset of 10 participants who underwent treatment for intractable epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined a resting-state iEEG dataset of 10 participants who underwent treatment for intractable epilepsy and had a total of 239 electrodes implanted across both the anterior and posterior subdivisions of the insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "8916cb1b-eb90-439a-a8e1-01a251c061b1",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C31",
+      "claim": "A total of 239 electrodes were implanted across both the anterior and posterior subdivisions of the insula in the study participants.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined a resting-state iEEG dataset of 10 participants who underwent treatment for intractable epilepsy and had a total of 239 electrodes implanted across both the anterior and posterior subdivisions of the insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode coverage in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "a89b784b-c086-40bd-a303-bbdb18f7dd9d",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C32",
+      "claim": "Global brain intrinsic gradients have been known to be closely associated with the structural connectivity of the brain areas and the degree of task-related activations.",
+      "claim_type": "EXPLICIT",
+      "source": "Global brain intrinsic gradients have been known to be closely associated with the structural connectivity of the brain areas and the degree of task-related activations (Huntenburg et al., 2018; Paquola et al., 2019; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "0c7b63e7-c2da-4513-aa11-4133a0572c65",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C33",
+      "claim": "Recent findings showed a brain-wide posterior-to-anterior frequency gradient using resting-state magnetoencephalography (MEG) recordings from humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on recent findings that showed a brain-wide posterior-to-anterior frequency gradient and an anterior-to-posterior power gradient using resting-state magnetoencephalography (MEG) recordings from humans (Mahjoory et al., 2020), as well as similar findings from direct recordings at the cortical surface (Zhang et al., 2018), we hypothesized that the insula would have a posterior-to-anterior frequency gradient and an anterior-to-posterior power gradient as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior MEG studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "968d8c2e-efdb-4b68-8c88-1c1c08534f11",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C34",
+      "claim": "Recent findings showed an anterior-to-posterior power gradient using resting-state magnetoencephalography (MEG) recordings from humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on recent findings that showed a brain-wide posterior-to-anterior frequency gradient and an anterior-to-posterior power gradient using resting-state magnetoencephalography (MEG) recordings from humans (Mahjoory et al., 2020), as well as similar findings from direct recordings at the cortical surface (Zhang et al., 2018), we hypothesized that the insula would have a posterior-to-anterior frequency gradient and an anterior-to-posterior power gradient as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior MEG studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "25fd8c6c-5f14-4815-887d-6ac156622848",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C35",
+      "claim": "The authors hypothesized that the insula would have a posterior-to-anterior frequency gradient and an anterior-to-posterior power gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on recent findings that showed a brain-wide posterior-to-anterior frequency gradient and an anterior-to-posterior power gradient using resting-state magnetoencephalography (MEG) recordings from humans (Mahjoory et al., 2020), as well as similar findings from direct recordings at the cortical surface (Zhang et al., 2018), we hypothesized that the insula would have a posterior-to-anterior frequency gradient and an anterior-to-posterior power gradient as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the stated hypothesis of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "6a8ef345-5177-484d-a1f0-db47cb7d0001",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C36",
+      "claim": "Recent studies in humans suggested that the hierarchical organization of neuronal activity across the cortex is a dynamic phenomenon, which propagates across the cortex in space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies in humans suggested that the hierarchical organization of neuronal activity across the cortex is not a stationary phenomenon, rather that it has a dynamic phenomenon, which propagates across the cortex in space and time (Alamia and VanRullen, 2019; Halgren et al., 2019; Hangya et al., 2011; Kleen et al., 2021; Lozano-Soldevilla and VanRullen, 2019; Massimini et al., 2004; Muller et al., 2016; Stolk et al., 2019; Zhang and Jacobs, 2015; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "4f49c84c-8fc0-4669-94e4-8f18971c5a78",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C37",
+      "claim": "Traveling waves consist of oscillations that propagate progressively across the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon, also known as 'traveling waves,' consists of oscillations that propagate progressively across the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of traveling waves.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "a1d54c4d-f31e-4000-a7c9-adb94fc35a6b",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C38",
+      "claim": "Traveling waves have been shown to be relevant for visual perception in non-human primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Traveling waves have been shown to be relevant for visual perception (Besserve et al., 2015; Davis et al., 2020; Gabriel and Eckhorn, 2003; Muller et al., 2014; Nauhaus et al., 2009; Townsend et al., 2015; Vinck et al., 2010; Zanos et al., 2015) and movement initiation (Balasubramanian et al., 2020; Denker et al., 2018; Rubino et al., 2006; Rule et al., 2018; Takahashi et al., 2015) in non-human primates and visual processing (Liang et al., 2021; Stroh et al., 2013; Xu et al., 2007) and spatial navigation (Agarwal et al., 2014; Patel et al., 2012; Patel et al., 2013) in rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on non-human primates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "c96cd6e2-0960-41ef-8b00-8ae9499c2790",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C39",
+      "claim": "Traveling waves have been shown to be relevant for movement initiation in non-human primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Traveling waves have been shown to be relevant for visual perception (Besserve et al., 2015; Davis et al., 2020; Gabriel and Eckhorn, 2003; Muller et al., 2014; Nauhaus et al., 2009; Townsend et al., 2015; Vinck et al., 2010; Zanos et al., 2015) and movement initiation (Balasubramanian et al., 2020; Denker et al., 2018; Rubino et al., 2006; Rule et al., 2018; Takahashi et al., 2015) in non-human primates and visual processing (Liang et al., 2021; Stroh et al., 2013; Xu et al., 2007) and spatial navigation (Agarwal et al., 2014; Patel et al., 2012; Patel et al., 2013) in rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on non-human primates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "ce6e2a8c-1954-4044-942a-7441a340220a",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C40",
+      "claim": "Traveling waves have been shown to be relevant for visual processing in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Traveling waves have been shown to be relevant for visual perception (Besserve et al., 2015; Davis et al., 2020; Gabriel and Eckhorn, 2003; Muller et al., 2014; Nauhaus et al., 2009; Townsend et al., 2015; Vinck et al., 2010; Zanos et al., 2015) and movement initiation (Balasubramanian et al., 2020; Denker et al., 2018; Rubino et al., 2006; Rule et al., 2018; Takahashi et al., 2015) in non-human primates and visual processing (Liang et al., 2021; Stroh et al., 2013; Xu et al., 2007) and spatial navigation (Agarwal et al., 2014; Patel et al., 2012; Patel et al., 2013) in rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on rodents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "8d0bb769-e351-4f45-ab6c-2fee67d7487c",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C41",
+      "claim": "Traveling waves have been shown to be relevant for spatial navigation in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Traveling waves have been shown to be relevant for visual perception (Besserve et al., 2015; Davis et al., 2020; Gabriel and Eckhorn, 2003; Muller et al., 2014; Nauhaus et al., 2009; Townsend et al., 2015; Vinck et al., 2010; Zanos et al., 2015) and movement initiation (Balasubramanian et al., 2020; Denker et al., 2018; Rubino et al., 2006; Rule et al., 2018; Takahashi et al., 2015) in non-human primates and visual processing (Liang et al., 2021; Stroh et al., 2013; Xu et al., 2007) and spatial navigation (Agarwal et al., 2014; Patel et al., 2012; Patel et al., 2013) in rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on rodents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "e75060f7-c095-4898-8626-be63ce5bb60b",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C42",
+      "claim": "In humans, traveling waves have been observed during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, traveling waves have been observed during sleep (Dickey et al., 2021; Hangya et al., 2011; Massimini et al., 2004; Muller et al., 2016) as well as during behavior (Alamia and VanRullen, 2019; Kleen et al., 2021; Stolk et al., 2019; Zhang and Jacobs, 2015; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on humans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "2fc041b3-dd33-42df-a893-f76073e47975",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C43",
+      "claim": "In humans, traveling waves have been observed during behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, traveling waves have been observed during sleep (Dickey et al., 2021; Hangya et al., 2011; Massimini et al., 2004; Muller et al., 2016) as well as during behavior (Alamia and VanRullen, 2019; Kleen et al., 2021; Stolk et al., 2019; Zhang and Jacobs, 2015; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on humans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "8da5e64f-4cae-4f9b-93f2-c9c81c106d19",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C44",
+      "claim": "It is unclear whether traveling waves observed on the surface of the cortex are also relevant for deep neocortical structures such as the insula.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unclear whether these traveling waves, which are mostly observed on the surface of the cortex, are also relevant for deep neocortical structures such as the insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "38f4eb3e-8da6-4a7f-9411-1bba19e012cc",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C45",
+      "claim": "Human electrocorticography studies showed that low-frequency alpha and high-frequency beta traveling waves were weakly or uncorrelated with each other in the sensorimotor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on findings from human electrocorticography studies that showed low-frequency alpha and high-frequency beta traveling waves were weakly or uncorrelated with each other in the sensorimotor cortex (Stolk et al., 2019), we tested whether there was a link between the properties of traveling waves in the human insula between different frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "b6d2e801-54e3-4324-9653-080313fe46e0",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C46",
+      "claim": "In the left hemisphere, ~90% of electrodes (n=107) showed a peak frequency in the theta range.",
+      "claim_type": "EXPLICIT",
+      "source": "In the left hemisphere,~90% of electrodes (n=107) showed a peak frequency in the theta range and 99% showed a peak in the beta frequency band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "1503a666-47c2-44aa-8d27-e276b6e0e891",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C47",
+      "claim": "In the left hemisphere, 99% of electrodes showed a peak in the beta frequency band.",
+      "claim_type": "EXPLICIT",
+      "source": "In the left hemisphere,~90% of electrodes (n=107) showed a peak frequency in the theta range and 99% showed a peak in the beta frequency band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "d204be34-c55f-427e-a53b-2a55b970a5f1",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C48",
+      "claim": "In the right hemisphere, ~80% of electrodes (n=95) had theta-band peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "In the right hemisphere,~80% of electrodes (n=95) had theta-band peaks and ~81% had beta-band peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "dc6f301d-df0c-4bba-b165-bc9aa55d75ce",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C49",
+      "claim": "In the right hemisphere, ~81% of electrodes had beta-band peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "In the right hemisphere,~80% of electrodes (n=95) had theta-band peaks and ~81% had beta-band peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "7aad5f13-11a3-400c-8d6d-23b28637baf2",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C50",
+      "claim": "There were no 9\u201315 Hz oscillations in the insula.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were no 9\u201315 Hz oscillations in the insula (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's spectral analysis, supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "8cf7f690-b211-4b9a-87c1-4a78cd0e6f9a",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C51",
+      "claim": "In the left insula, the frequency of theta was slower in the anterior insula (t[74] = \u20134.09, p<0.001, LME model).",
+      "claim_type": "EXPLICIT",
+      "source": "In the left insula, the frequency of theta was slower in the anterior insula (t[74] = \u20134.09, p<0.001, LME model) (Figure 2a); the amplitude of theta oscillations was higher in the left anterior insula (t[84] = 2.52, p<0.05) (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "c54bee9e-fa2f-402d-b3a5-054e441dfc76",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C52",
+      "claim": "The amplitude of theta oscillations was higher in the left anterior insula (t[84] = 2.52, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In the left insula, the frequency of theta was slower in the anterior insula (t[74] = \u20134.09, p<0.001, LME model) (Figure 2a); the amplitude of theta oscillations was higher in the left anterior insula (t[84] = 2.52, p<0.05) (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "27a6a647-ccff-4ad8-9e36-88941f89bd45",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C53",
+      "claim": "There was no indication of theta frequency gradients along the SI axis of the left insula (t[74] = \u20130.56, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no indication of theta frequency (t[74] = \u20130.56, p>0.05) or theta power (t[74] = \u20130.19, p>0.05) gradients along the SI axis of the left insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "a4707032-5c68-4b3f-8a37-6c0f55e42d14",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C54",
+      "claim": "There was no indication of theta power gradients along the SI axis of the left insula (t[74] = \u20130.19, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no indication of theta frequency (t[74] = \u20130.56, p>0.05) or theta power (t[74] = \u20130.19, p>0.05) gradients along the SI axis of the left insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "7e9059b5-8d35-452c-b399-8a2acff9d59c",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C55",
+      "claim": "Theta frequencies in the right insula were not hierarchically organized along the AP axis (t[57]=\u20130.14, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In the right insula, the frequencies of theta oscillations were not hierarchically organized along the AP axis (t[57]=\u20130.14, p>0.05) or the SI axis (t[57]=0.07, p>0.05) (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "32d01811-9fff-43e5-bc22-f3095d6ed9f4",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C56",
+      "claim": "Theta frequencies in the right insula were not hierarchically organized along the SI axis (t[57]=0.07, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In the right insula, the frequencies of theta oscillations were not hierarchically organized along the AP axis (t[57]=\u20130.14, p>0.05) or the SI axis (t[57]=0.07, p>0.05) (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "fb82c112-7a02-4af6-b8c5-01e010841ffc",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C57",
+      "claim": "Theta power trended toward an AP gradient in the right insula, where theta power was greater in the right anterior insula (t[57]=1.98, p=0.053).",
+      "claim_type": "EXPLICIT",
+      "source": "However, theta power trended toward an AP gradient, where theta power was greater in the right anterior insula (t[57]=1.98, p=0.053) (Figure 2d), consistent with the left hemisphere.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "26da3ded-938f-4ca8-860a-b5b59935f521",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C58",
+      "claim": "Theta power showed a significant SI gradient with higher amplitudes in the superior portion of the right insula (t[57]=2.92, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Theta power also showed a significant SI gradient with higher amplitudes in the superior portion of the right insula (t[57]=2.92, p<0.01) (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "b342235f-f3cf-4c49-95e2-90ab12419b55",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C59",
+      "claim": "In the left insula, the power of beta oscillations showed an anterior-to-posterior gradient, with higher power anteriorly (t[84]=3.07, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In the left insula, the power of beta oscillations showed an anterior-to-posterior gradient, with higher power anteriorly (t[84]=3.07, p<0.01) (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "66c4ed37-34d6-4684-8fdc-05c22c4a8bf3",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C60",
+      "claim": "The frequency of beta rhythms was not hierarchically organized along the AP axis in the left insula (t[84]=\u20130.95, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the frequency of beta rhythms was not hierarchically organized along the AP axis (t[84]=\u20130.95, p>0.05) or the SI axis (t[84]=\u20130.59, p>0.05) in the left insula (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "c67c9c35-9d17-4ca4-afe8-23d615ae811d",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C61",
+      "claim": "The frequency of beta rhythms was not hierarchically organized along the SI axis in the left insula (t[84]=\u20130.59, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the frequency of beta rhythms was not hierarchically organized along the AP axis (t[84]=\u20130.95, p>0.05) or the SI axis (t[84]=\u20130.59, p>0.05) in the left insula (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "3fee5865-4ac6-4506-9ec0-5e66fdc5b60b",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C62",
+      "claim": "In the right insula, beta power showed a significant anterior-to-posterior gradient (t[58]=2.97, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In the right insula, beta power also showed a significant anterior-to-posterior gradient (t[58]=2.97, p<0.01) (Figure 3d), with higher power oscillations in the anterior insula.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "12a11f41-e3cc-46ef-925e-13fcb9bc90c8",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C63",
+      "claim": "Beta amplitude was greater in the anterior insula across both hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, beta amplitude was greater in the anterior insula across both hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the beta power gradient findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "f9e88cb9-991b-4c58-b3be-31f358ccd876",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C64",
+      "claim": "In the right hemisphere, the frequency of insula beta rhythms showed no gradients in the AP direction (t[58]=\u20130.63, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the right hemisphere, the frequency of insula beta rhythms showed no gradients, in neither the AP (t[58]=\u20130.63, p>0.05) nor SI directions (t[58]=\u20131.10, p>0.05) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "0a3497fc-6f2a-4137-ad8d-1bcd4006994c",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C65",
+      "claim": "In the right hemisphere, the frequency of insula beta rhythms showed no gradients in the SI direction (t[58]=\u20131.10, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the right hemisphere, the frequency of insula beta rhythms showed no gradients, in neither the AP (t[58]=\u20130.63, p>0.05) nor SI directions (t[58]=\u20131.10, p>0.05) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's LME analysis, supported by Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "f9cb3476-ccbf-43a5-a201-d5c2742748a6",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C66",
+      "claim": "Computational modeling of weakly coupled oscillators has shown that traveling waves can naturally emerge from spatially varying gradients of oscillations across different frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work on the computational modeling of weakly coupled oscillators has shown that traveling waves can naturally emerge from spatially varying gradients of oscillations across different frequencies (Ermentrout and Kopell, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior computational modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "d1aeadd8-eee5-4c1f-a0df-3f69a60be86f",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C67",
+      "claim": "The study found 28 oscillation clusters (15 in the left insula and 13 in the right insula) across 10 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 28 oscillation clusters (15 in the left insula and 13 in the right insula) across 10 participants (see Figure 4\u2014figure supplements 1\u20139 for oscillation clusters from other participants).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study's cluster analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "c3314bd4-228d-400e-a313-1ade6df89dc3",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C68",
+      "claim": "Oscillation clusters were present at both theta and beta frequencies, with 14 oscillation clusters in the theta band (8 in the left insula and 6 in the right insula) and 14 oscillation clusters in the beta band (7 in the left insula and 7 in the right insula), in 9 out of 10 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Oscillation clusters were present at both theta and beta frequencies, with 14 oscillation clusters in the theta band (8 in the left insula and 6 in the right insula) and 14 oscillation clusters in the beta band (7 in the left insula and 7 in the right insula), in 9 out of 10 participants (participant #4 did not have any oscillation clusters).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's cluster analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "6088a979-f785-4156-b7c2-f320f98be3b0",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C69",
+      "claim": "79% of all electrodes (186 out of 239 electrodes) participated in at least one oscillation cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 79% of all electrodes (186 out of 239 electrodes) participated in at least one oscillation cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's cluster analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "dfba3338-14b9-4421-8bba-d983366acb2d",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C70",
+      "claim": "Significant traveling waves were present ~35% of the time on average across all clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "With this approach, we found that traveling waves were reliably present in this resting-state dataset, in all 9 of the participants. Significant traveling waves were present ~35% of the time on average across all clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's traveling wave analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "c6228a97-2c73-492a-bdfb-f92a37488244",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C71",
+      "claim": "Traveling waves were almost evenly present in both the left and right insula, in ~35% of timepoints in the left insula and ~35% in the right insula.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, traveling waves were almost evenly present in both the left and right insula, in ~35% of timepoints in the left insula and ~35% in the right insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's traveling wave analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "67f0a19e-642d-4ed4-84dc-2e2411ab190e",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C72",
+      "claim": "Individual clusters varied in the prevalence of traveling waves, ranging from ~10% to~87%.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual clusters varied in the prevalence of traveling waves, ranging from ~10% to~87%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's traveling wave analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "ed6ea18e-27ff-4681-b6f7-58e6ff7d8d49",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C73",
+      "claim": "93% of all insula oscillation clusters (26 out of 28 clusters) showed traveling waves at statistically significant levels.",
+      "claim_type": "EXPLICIT",
+      "source": "93% of all insula oscillation clusters (26 out of 28 clusters) showed traveling waves at statistically significant levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's traveling wave analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "e048c0f4-d723-41e9-a12d-b039ad4bf587",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C74",
+      "claim": "Traveling waves had a median propagation speed of ~0.7 m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, traveling waves had a median propagation speed of ~0.7 m/s, consistent with earlier work on traveling waves across the cortical surface (Halgren et al., 2019; Stolk et al., 2019; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's traveling wave analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "2d7cbfd4-619f-46b3-b325-7289af6bf2e9",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C75",
+      "claim": "The median propagation speed of traveling waves is consistent with earlier work on traveling waves across the cortical surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, traveling waves had a median propagation speed of ~0.7 m/s, consistent with earlier work on traveling waves across the cortical surface (Halgren et al., 2019; Stolk et al., 2019; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "4af4507c-1af5-46fc-b64f-2ce94074e615",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C76",
+      "claim": "For ~71% of clusters (20 out of 28 clusters), there was a statistically significant correlation between amplitude and wave-strength.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that for ~71% of clusters (20 out of 28 clusters), there was a statistically significant correlation between amplitude and wave-strength (Figure 7g\u2013i, Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study's correlation analysis, supported by Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "ebf7b4b6-b727-4f6b-8489-3ee991c1ec21",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C77",
+      "claim": "The strength of the traveling waves correlates with the amplitude of neuronal oscillations in the human insula.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the strength of the traveling waves correlates with the amplitude of neuronal oscillations in the human insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "52525879-aa37-4b17-8306-cdb717ea3d3e",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C78",
+      "claim": "Oscillation amplitude increases prior to increase in wave-strength, with a mean shift of 8 ms for theta traveling waves and 4 ms for beta traveling waves.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that oscillation amplitude increases prior to increase in wave-strength, with a mean shift of 8 ms for theta traveling waves and 4 ms for beta traveling waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's cross-correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "d19bcc76-52aa-4d94-90e2-5ce4d6a29807",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C79",
+      "claim": "There is a putative causal role of higher amplitude oscillations in driving stronger traveling waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest a putative causal role of higher amplitude oscillations in driving stronger traveling waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the temporal delay finding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "89d2b374-d2bc-4d20-ac29-d001add08c85",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C80",
+      "claim": "Across all clusters that showed beta and theta traveling waves, the instantaneous strengths of these traveling waves were uncorrelated (Pearson r, p>0.05) for all but two clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all clusters that showed beta and theta traveling waves, the instantaneous strengths of these traveling waves were uncorrelated (Pearson r, p>0.05) for all but two clusters (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "07f1ba77-41dc-4c8c-91eb-26896d11b91b",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C81",
+      "claim": "There were no links between the instantaneous phase and power of slower theta-band traveling waves and the strength of the beta traveling waves (Pearson r, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to testing for correlations in wave-strength, to test for more fine-grained links between different traveling waves, we compared how the instantaneous phase and power of slower theta-band traveling waves related to the strength of the beta traveling waves. However, we found no such links (Pearson r, p>0.05) (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "76f63db3-be31-40a9-a765-38d7c61cfc01",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C82",
+      "claim": "Across the insula, low-frequency theta and higher-frequency beta traveling waves operate independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that across the insula, low-frequency theta and higher-frequency beta traveling waves operate independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the uncoupling findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "53d1746c-3481-4a9e-9751-528e1203a50c",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C83",
+      "claim": "The study used a unique dataset of resting-state human iEEG recordings from 10 participants and 239 electrodes in the insula.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a unique dataset of resting-state human iEEG recordings from 10 participants and 239 electrodes in the insula, we probed its hierarchical organization and spatiotemporal dynamics and, for the first time, detected traveling waves of neuronal oscillations in theta and beta frequency bands in the human insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "37a1a0c5-964b-4a6b-bba3-7639fad25a2d",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C84",
+      "claim": "The study detected traveling waves of neuronal oscillations in theta and beta frequency bands in the human insula for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a unique dataset of resting-state human iEEG recordings from 10 participants and 239 electrodes in the insula, we probed its hierarchical organization and spatiotemporal dynamics and, for the first time, detected traveling waves of neuronal oscillations in theta and beta frequency bands in the human insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim about the novelty of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "c421351a-c2a7-47a8-b739-81b83d988cfe",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C85",
+      "claim": "Spontaneous gradients and traveling waves in the insula suggest a fundamental new principle that could be used by the insula to link its processing to widespread cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, our findings of spontaneous gradients and traveling waves in the insula suggest a fundamental new principle that could be used by the insula to link its processing to widespread cortical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "de2186b7-c4d8-4a0b-bfa9-d921572c5880",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C86",
+      "claim": "Intracranial electroencephalography (iEEG) recordings were acquired from 10 patients (5 females; 9 right-handed, 1 ambidextrous) with drug-intractable epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracranial electroencephalography (iEEG) recordings were acquired from 10 patients (5 females; 9 right-handed, 1 ambidextrous) with drug-intractable epilepsy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "7a21caf1-7405-4ec8-8f36-a20694e3e1a7",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C87",
+      "claim": "The average age of the patients was ~31 with an age of seizure onset between 9 months old and 46 years old.",
+      "claim_type": "EXPLICIT",
+      "source": "The average age of the patients was ~31 with an age of seizure onset between 9 months old and 46 years old.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "691d1a17-c7d1-446f-aef7-0b63b4de4c3c",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C88",
+      "claim": "All decisions regarding the location and coverage of the iEEG probes were based solely on clinical criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "All decisions regarding the location and coverage of the iEEG probes were based solely on clinical criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode placement methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "0da3fa2f-ec2b-49be-8312-82325bf6b757",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C89",
+      "claim": "The insula was not the origin of seizure onset for any patients in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The insula was not the origin of seizure onset for any patients in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key characteristic of the patient population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "d0e8dd59-4ab6-4eed-b4c4-f54038f920ab",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C90",
+      "claim": "Resting state electrophysiological recordings were used from participants performing a passive fixation resting state task, where they focused on a white crosshair at the center of a black background on a computer monitor for ~5 min duration.",
+      "claim_type": "EXPLICIT",
+      "source": "We used resting state electrophysiological recordings from participants performing a passive fixation resting state task, where they focused on a white crosshair at the center of a black background on a computer monitor for ~5 min duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "cdbc3614-a28f-4f04-a3ad-db81478efc42",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C91",
+      "claim": "Data was recorded from 239 iEEG electrodes using a neural signal processor (Blackrock Microsystems).",
+      "claim_type": "EXPLICIT",
+      "source": "Data was recorded from 239 iEEG electrodes using a neural signal processor (Blackrock Microsystems).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recording equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "45872480-0c54-4df0-bbe1-bc48cc20c573",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C92",
+      "claim": "The spacing between neighboring electrodes varied from 3.5 mm to 5.53 mm (center-to-center).",
+      "claim_type": "EXPLICIT",
+      "source": "The spacing between neighboring electrodes varied from 3.5 mm to 5.53 mm (center-to-center).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode spacing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "9152ab9c-2b2b-41f4-b929-683be5b71471",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C93",
+      "claim": "The data was amplified, band-pass filtered (0.3 Hz\u20137.5 kHz), and digitized at 2 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "The data was amplified, band-pass filtered (0.3 Hz\u20137.5 kHz), and digitized at 2 kHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "d4cdd81f-aee5-4655-ad75-bb8dd15252d8",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C94",
+      "claim": "For analysis of spectral frequency and power gradients, bipolar referencing was used (iEEG electrodes re-referenced to their closest neighbors).",
+      "claim_type": "EXPLICIT",
+      "source": "For analysis of spectral frequency and power gradients, we used bipolar referencing (iEEG electrodes re-referenced to their closest neighbors) and for analysis of traveling waves, we used common average referencing (iEEG electrodes re-referenced to the average signal of all electrodes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the referencing method for gradient analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "5be1bb7f-ab3f-450d-b15f-338ce00d493a",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C95",
+      "claim": "For analysis of traveling waves, common average referencing was used (iEEG electrodes re-referenced to the average signal of all electrodes).",
+      "claim_type": "EXPLICIT",
+      "source": "For analysis of spectral frequency and power gradients, we used bipolar referencing (iEEG electrodes re-referenced to their closest neighbors) and for analysis of traveling waves, we used common average referencing (iEEG electrodes re-referenced to the average signal of all electrodes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the referencing method for traveling wave analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "89d004a8-abfa-4ae2-86c8-6351c2d046e9",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C96",
+      "claim": "Each subject contributed an average of 23.9 (\u00b12.43) electrodes, with 12.5 (\u00b14.04) in the left insula and 11.4 (\u00b12.55) in the right insula.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subject contributed an average of 23.9 (\u00b12.43) electrodes, with 12.5 (\u00b14.04) in the left insula and 11.4 (\u00b12.55) in the right insula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode distribution across subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "f25f1bf7-7026-41b7-9bf1-4265c1213c59",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "claim_id": "C97",
+      "claim": "The vast majority (~97%) of all contacts in this study were in insula gray matter.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority (~97%) of all contacts in this study were in insula gray matter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f46a0d9b-bef2-4e85-9c6b-ed27f0918b94",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The insula plays a fundamental role in adaptive human behaviors, cognitive control, and awareness, but its electrophysiological dynamics and hierarchical organization are poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12-C15 establish the insula's functional importance through citations to prior literature, while C2 and C29 identify the knowledge gap. These claims provide appropriate context and motivation for the study, supported by established literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "e55ddd3d-5dd9-4e68-a5cf-5c1363b2c37b",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Theta (~6-9 Hz) and beta (~15-32 Hz) oscillations are widespread and spontaneously present in the insula, organized largely along the anterior-posterior axis, with no 9-15 Hz oscillations detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 state the main finding, while C46-C50 provide quantitative support showing ~80-99% of electrodes exhibited these oscillations across hemispheres. The absence of 9-15 Hz oscillations (C50) is explicitly shown in Figure 1. The data directly support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "e46393ca-ab28-4505-ab29-0c79d7119719",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Both left and right insula showed anterior-to-posterior decreasing gradients for beta oscillation power, with higher power anteriorly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C62 provide statistical evidence (t[84]=3.07, p<0.01 for left; t[58]=2.97, p<0.01 for right) from LME models, with C63 summarizing the bilateral finding. The statistical tests are appropriate and account for inter-subject variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "4204bc96-dd46-4ba9-9be8-12ae0ab97e74",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The left insula showed a posterior-to-anterior decreasing frequency gradient and an anterior-to-posterior decreasing power gradient in the theta frequency band, with no gradients along the superior-inferior axis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 provide statistical support (t[74]=-4.09, p<0.001 for frequency; t[84]=2.52, p<0.05 for power) from LME models. Claims C53-C54 report non-significant SI gradients (p>0.05). The statistical approach is appropriate and accounts for subject variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "b4e41144-b4be-46da-9139-92d239fa1aca",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the right insula, theta frequencies showed no AP or SI gradients, but theta power showed a marginally significant AP gradient (p=0.053) and a significant SI gradient with higher amplitudes superiorly (p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 provide statistical evidence from LME models. The marginally significant AP gradient (C57) and significant SI gradient (C58) are appropriately reported with exact p-values. The hemispheric asymmetry in theta organization is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "f1242c96-4453-468c-9063-9af4f5796e5d",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Beta frequency showed no hierarchical organization along AP or SI axes in either hemisphere.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 and C64-C65 report non-significant effects (all p>0.05) from LME models for both hemispheres. The statistical tests are appropriate and the negative findings are clearly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "24c5f237-6ea7-4d57-9121-ac16fc24503b",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Traveling waves were detected in theta and beta bands in the human insula for the first time, present in ~35% of timepoints across 93% of oscillation clusters, with median propagation speed of ~0.7 m/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C73 provide detailed quantitative findings about cluster identification and traveling wave prevalence. C74 reports propagation speed consistent with prior cortical surface studies (C75). The novel circular-linear regression method and permutation testing provide rigorous statistical support. This represents a major novel finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "bfba163f-029f-4786-9024-fda893ccdb9c",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The strength of traveling waves was positively correlated with oscillation amplitude in ~71% of clusters, with amplitude increases preceding wave-strength increases by 8 ms (theta) and 4 ms (beta), suggesting a causal role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C77 report significant correlations in 71% of clusters with appropriate statistical testing. However, the causal interpretation (C79) based on temporal delays (C78) of 4-8 ms is speculative. Cross-correlation analysis shows temporal precedence but cannot establish causation without additional experimental manipulation or modeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "99d0e2e0-f3ab-4341-9147-c88a23b28ebb",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Theta and beta traveling waves were uncoupled in terms of phase, amplitude, and wave-strength, operating independently across the insula.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 provide statistical evidence showing no correlations (p>0.05) between theta and beta traveling wave properties for all but two clusters. The permutation testing approach is appropriate. The independence interpretation (C82) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "eb6dec0e-91dc-4274-9542-645e16291076",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study used resting-state iEEG recordings from 10 epilepsy patients with 239 electrodes in the insula, with ~97% of contacts in gray matter and the insula not being the seizure onset zone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31, C83, C86-C97 provide comprehensive methodological details about participants, recording parameters, and electrode localization. The exclusion of seizure onset zones (C89) and high proportion of gray matter contacts (C97) strengthen data quality. Methods are clearly described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "25a1ac2d-48ce-4623-ae68-d232b10460a8",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Based on prior MEG studies showing brain-wide posterior-to-anterior frequency gradients and anterior-to-posterior power gradients, the authors hypothesized similar gradients in the insula.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 cite prior MEG work (Mahjoory et al., 2020) establishing the precedent, and C35 states the hypothesis. The hypothesis is appropriately grounded in prior literature, though the actual findings showed hemispheric asymmetry not fully predicted by the hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "a498a04e-7815-4533-bc68-ca5e578dbe1d",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Computational modeling shows traveling waves can emerge from spatially varying frequency gradients in weakly coupled oscillators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 cites Ermentrout and Kopell (1984) for this theoretical foundation. This provides appropriate theoretical motivation for investigating traveling waves given the observed frequency gradients.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    },
+    {
+      "id": "e73dfda5-f512-4b32-a6b0-3aae7ba47aa5",
+      "content_id": "9459ce5b-2f68-46af-9fab-76efb5a19350",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Spontaneous gradients and traveling waves in the insula suggest a fundamental new principle for linking insula processing to widespread cortical areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is a speculative interpretation of the findings. While the observed gradients and traveling waves are well-supported, the claim that this represents a 'fundamental new principle' for inter-regional communication is not directly tested and remains hypothetical. Additional experiments would be needed to establish this mechanistic link.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:58.682683Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "95451333-a145-4ffb-b88d-43e383cd6de8",
+      "result_id": "f46a0d9b-bef2-4e85-9c6b-ed27f0918b94"
+    },
+    {
+      "claim_id": "000911cf-5ece-4da0-b252-503547f73527",
+      "result_id": "f46a0d9b-bef2-4e85-9c6b-ed27f0918b94"
+    },
+    {
+      "claim_id": "81bb8d5c-93e7-4125-88cd-d970c33f348a",
+      "result_id": "f46a0d9b-bef2-4e85-9c6b-ed27f0918b94"
+    },
+    {
+      "claim_id": "f5aea751-27fe-45ba-be43-06d3f6ed54aa",
+      "result_id": "f46a0d9b-bef2-4e85-9c6b-ed27f0918b94"
+    },
+    {
+      "claim_id": "b01a1a3a-a5e5-4ed1-bc5e-556dd0b8c613",
+      "result_id": "f46a0d9b-bef2-4e85-9c6b-ed27f0918b94"
+    },
+    {
+      "claim_id": "44df1e78-a052-48de-9726-5ebf01e2a8b9",
+      "result_id": "f46a0d9b-bef2-4e85-9c6b-ed27f0918b94"
+    },
+    {
+      "claim_id": "0dc5b62a-1844-4d44-af2a-f216210138ae",
+      "result_id": "f46a0d9b-bef2-4e85-9c6b-ed27f0918b94"
+    },
+    {
+      "claim_id": "45a91180-7fb7-4a82-bbd9-cd80c90495dd",
+      "result_id": "e55ddd3d-5dd9-4e68-a5cf-5c1363b2c37b"
+    },
+    {
+      "claim_id": "4fbeeb67-1c97-460a-a55f-137457bdbd7a",
+      "result_id": "e55ddd3d-5dd9-4e68-a5cf-5c1363b2c37b"
+    },
+    {
+      "claim_id": "b6d2e801-54e3-4324-9653-080313fe46e0",
+      "result_id": "e55ddd3d-5dd9-4e68-a5cf-5c1363b2c37b"
+    },
+    {
+      "claim_id": "1503a666-47c2-44aa-8d27-e276b6e0e891",
+      "result_id": "e55ddd3d-5dd9-4e68-a5cf-5c1363b2c37b"
+    },
+    {
+      "claim_id": "d204be34-c55f-427e-a53b-2a55b970a5f1",
+      "result_id": "e55ddd3d-5dd9-4e68-a5cf-5c1363b2c37b"
+    },
+    {
+      "claim_id": "dc6f301d-df0c-4bba-b165-bc9aa55d75ce",
+      "result_id": "e55ddd3d-5dd9-4e68-a5cf-5c1363b2c37b"
+    },
+    {
+      "claim_id": "7aad5f13-11a3-400c-8d6d-23b28637baf2",
+      "result_id": "e55ddd3d-5dd9-4e68-a5cf-5c1363b2c37b"
+    },
+    {
+      "claim_id": "7c4b4e62-daa3-4fee-9780-16f3c2f1f18b",
+      "result_id": "e46393ca-ab28-4505-ab29-0c79d7119719"
+    },
+    {
+      "claim_id": "b342235f-f3cf-4c49-95e2-90ab12419b55",
+      "result_id": "e46393ca-ab28-4505-ab29-0c79d7119719"
+    },
+    {
+      "claim_id": "3fee5865-4ac6-4506-9ec0-5e66fdc5b60b",
+      "result_id": "e46393ca-ab28-4505-ab29-0c79d7119719"
+    },
+    {
+      "claim_id": "12a11f41-e3cc-46ef-925e-13fcb9bc90c8",
+      "result_id": "e46393ca-ab28-4505-ab29-0c79d7119719"
+    },
+    {
+      "claim_id": "e664ee9c-3240-4c52-a7d1-561bf0c80254",
+      "result_id": "4204bc96-dd46-4ba9-9be8-12ae0ab97e74"
+    },
+    {
+      "claim_id": "7958a776-3102-49aa-a5b1-1c4da3414a18",
+      "result_id": "4204bc96-dd46-4ba9-9be8-12ae0ab97e74"
+    },
+    {
+      "claim_id": "8cf7f690-b211-4b9a-87c1-4a78cd0e6f9a",
+      "result_id": "4204bc96-dd46-4ba9-9be8-12ae0ab97e74"
+    },
+    {
+      "claim_id": "c54bee9e-fa2f-402d-b3a5-054e441dfc76",
+      "result_id": "4204bc96-dd46-4ba9-9be8-12ae0ab97e74"
+    },
+    {
+      "claim_id": "27a6a647-ccff-4ad8-9e36-88941f89bd45",
+      "result_id": "4204bc96-dd46-4ba9-9be8-12ae0ab97e74"
+    },
+    {
+      "claim_id": "a4707032-5c68-4b3f-8a37-6c0f55e42d14",
+      "result_id": "4204bc96-dd46-4ba9-9be8-12ae0ab97e74"
+    },
+    {
+      "claim_id": "7e9059b5-8d35-452c-b399-8a2acff9d59c",
+      "result_id": "b4e41144-b4be-46da-9139-92d239fa1aca"
+    },
+    {
+      "claim_id": "32d01811-9fff-43e5-bc22-f3095d6ed9f4",
+      "result_id": "b4e41144-b4be-46da-9139-92d239fa1aca"
+    },
+    {
+      "claim_id": "fb82c112-7a02-4af6-b8c5-01e010841ffc",
+      "result_id": "b4e41144-b4be-46da-9139-92d239fa1aca"
+    },
+    {
+      "claim_id": "26da3ded-938f-4ca8-860a-b5b59935f521",
+      "result_id": "b4e41144-b4be-46da-9139-92d239fa1aca"
+    },
+    {
+      "claim_id": "66c4ed37-34d6-4684-8fdc-05c22c4a8bf3",
+      "result_id": "f1242c96-4453-468c-9063-9af4f5796e5d"
+    },
+    {
+      "claim_id": "c67c9c35-9d17-4ca4-afe8-23d615ae811d",
+      "result_id": "f1242c96-4453-468c-9063-9af4f5796e5d"
+    },
+    {
+      "claim_id": "f9e88cb9-991b-4c58-b3be-31f358ccd876",
+      "result_id": "f1242c96-4453-468c-9063-9af4f5796e5d"
+    },
+    {
+      "claim_id": "0a3497fc-6f2a-4137-ad8d-1bcd4006994c",
+      "result_id": "f1242c96-4453-468c-9063-9af4f5796e5d"
+    },
+    {
+      "claim_id": "77c92f20-629d-45d1-b136-7b4b3a7a5a5b",
+      "result_id": "24c5f237-6ea7-4d57-9121-ac16fc24503b"
+    },
+    {
+      "claim_id": "d1aeadd8-eee5-4c1f-a0df-3f69a60be86f",
+      "result_id": "24c5f237-6ea7-4d57-9121-ac16fc24503b"
+    },
+    {
+      "claim_id": "c3314bd4-228d-400e-a313-1ade6df89dc3",
+      "result_id": "24c5f237-6ea7-4d57-9121-ac16fc24503b"
+    },
+    {
+      "claim_id": "6088a979-f785-4156-b7c2-f320f98be3b0",
+      "result_id": "24c5f237-6ea7-4d57-9121-ac16fc24503b"
+    },
+    {
+      "claim_id": "dfba3338-14b9-4421-8bba-d983366acb2d",
+      "result_id": "24c5f237-6ea7-4d57-9121-ac16fc24503b"
+    },
+    {
+      "claim_id": "c6228a97-2c73-492a-bdfb-f92a37488244",
+      "result_id": "24c5f237-6ea7-4d57-9121-ac16fc24503b"
+    },
+    {
+      "claim_id": "67f0a19e-642d-4ed4-84dc-2e2411ab190e",
+      "result_id": "24c5f237-6ea7-4d57-9121-ac16fc24503b"
+    },
+    {
+      "claim_id": "ed6ea18e-27ff-4681-b6f7-58e6ff7d8d49",
+      "result_id": "24c5f237-6ea7-4d57-9121-ac16fc24503b"
+    },
+    {
+      "claim_id": "e048c0f4-d723-41e9-a12d-b039ad4bf587",
+      "result_id": "24c5f237-6ea7-4d57-9121-ac16fc24503b"
+    },
+    {
+      "claim_id": "37a1a0c5-964b-4a6b-bba3-7639fad25a2d",
+      "result_id": "24c5f237-6ea7-4d57-9121-ac16fc24503b"
+    },
+    {
+      "claim_id": "6480cb57-b1d4-4a1d-aa5b-e4bc3148ce05",
+      "result_id": "bfba163f-029f-4786-9024-fda893ccdb9c"
+    },
+    {
+      "claim_id": "4af4507c-1af5-46fc-b64f-2ce94074e615",
+      "result_id": "bfba163f-029f-4786-9024-fda893ccdb9c"
+    },
+    {
+      "claim_id": "ebf7b4b6-b727-4f6b-8489-3ee991c1ec21",
+      "result_id": "bfba163f-029f-4786-9024-fda893ccdb9c"
+    },
+    {
+      "claim_id": "52525879-aa37-4b17-8306-cdb717ea3d3e",
+      "result_id": "bfba163f-029f-4786-9024-fda893ccdb9c"
+    },
+    {
+      "claim_id": "d19bcc76-52aa-4d94-90e2-5ce4d6a29807",
+      "result_id": "bfba163f-029f-4786-9024-fda893ccdb9c"
+    },
+    {
+      "claim_id": "86336ca7-96af-4b01-bde3-82cb0f47e150",
+      "result_id": "99d0e2e0-f3ab-4341-9147-c88a23b28ebb"
+    },
+    {
+      "claim_id": "80612135-ad6c-4500-9b3b-31fa32e73faf",
+      "result_id": "99d0e2e0-f3ab-4341-9147-c88a23b28ebb"
+    },
+    {
+      "claim_id": "89d2b374-d2bc-4d20-ac29-d001add08c85",
+      "result_id": "99d0e2e0-f3ab-4341-9147-c88a23b28ebb"
+    },
+    {
+      "claim_id": "07f1ba77-41dc-4c8c-91eb-26896d11b91b",
+      "result_id": "99d0e2e0-f3ab-4341-9147-c88a23b28ebb"
+    },
+    {
+      "claim_id": "76f63db3-be31-40a9-a765-38d7c61cfc01",
+      "result_id": "99d0e2e0-f3ab-4341-9147-c88a23b28ebb"
+    },
+    {
+      "claim_id": "8119e0fb-969e-4cbd-874c-770aa6147af7",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "8916cb1b-eb90-439a-a8e1-01a251c061b1",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "53d1746c-3481-4a9e-9751-528e1203a50c",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "de2186b7-c4d8-4a0b-bfa9-d921572c5880",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "7a21caf1-7405-4ec8-8f36-a20694e3e1a7",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "691d1a17-c7d1-446f-aef7-0b63b4de4c3c",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "0da3fa2f-ec2b-49be-8312-82325bf6b757",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "d0e8dd59-4ab6-4eed-b4c4-f54038f920ab",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "cdbc3614-a28f-4f04-a3ad-db81478efc42",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "45872480-0c54-4df0-bbe1-bc48cc20c573",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "9152ab9c-2b2b-41f4-b929-683be5b71471",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "d4cdd81f-aee5-4655-ad75-bb8dd15252d8",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "5be1bb7f-ab3f-450d-b15f-338ce00d493a",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "89d004a8-abfa-4ae2-86c8-6351c2d046e9",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "f25f1bf7-7026-41b7-9bf1-4265c1213c59",
+      "result_id": "eb6dec0e-91dc-4274-9542-645e16291076"
+    },
+    {
+      "claim_id": "0c7b63e7-c2da-4513-aa11-4133a0572c65",
+      "result_id": "25a1ac2d-48ce-4623-ae68-d232b10460a8"
+    },
+    {
+      "claim_id": "968d8c2e-efdb-4b68-8c88-1c1c08534f11",
+      "result_id": "25a1ac2d-48ce-4623-ae68-d232b10460a8"
+    },
+    {
+      "claim_id": "25fd8c6c-5f14-4815-887d-6ac156622848",
+      "result_id": "25a1ac2d-48ce-4623-ae68-d232b10460a8"
+    },
+    {
+      "claim_id": "f9cb3476-ccbf-43a5-a201-d5c2742748a6",
+      "result_id": "a498a04e-7815-4533-bc68-ca5e578dbe1d"
+    },
+    {
+      "claim_id": "c421351a-c2a7-47a8-b739-81b83d988cfe",
+      "result_id": "e73dfda5-f512-4b32-a6b0-3aae7ba47aa5"
+    }
+  ],
+  "comparisons": []
+}

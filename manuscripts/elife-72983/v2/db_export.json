@@ -1,0 +1,1828 @@
+{
+  "submission": {
+    "id": "524cdc3d-604a-4dc3-ad3f-cbb5581a4eb8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:11:23.932589Z",
+    "updated_at": "2025-12-03T10:11:23.932589Z"
+  },
+  "content": [
+    {
+      "id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "submission_id": "524cdc3d-604a-4dc3-ad3f-cbb5581a4eb8",
+      "content_type": "manuscript",
+      "content_text": "# Regeneration of the larval sea star nervous system by wounding induced respecification to the Sox2 lineage\n\n## Authors\n\n- Minyan Zheng<sup>1</sup> ([ORCID: 0000-0001-7990-1773](https://orcid.org/0000-0001-7990-1773))\n- Olga Zueva<sup>1</sup>\n- Veronica F Hinman<sup>1</sup> ([ORCID: 0000-0003-3414-1357](https://orcid.org/0000-0003-3414-1357)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences, Carnegie Mellon University Pittsburgh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ability to restore lost body parts following traumatic injury is a fascinating area of biology that challenges current understanding of the ontogeny of differentiation. The origin of new cells needed to regenerate lost tissue, and whether they are pluripotent or have de- or trans-differentiated, remains one of the most important open questions . Additionally, it is not known whether developmental gene regulatory networks are reused or whether regeneration specific networks are deployed. Echinoderms, including sea stars, have extensive ability for regeneration, however, the technologies for obtaining transgenic echinoderms are limited and tracking cells involved in regeneration, and thus identifying the cellular sources and potencies has proven challenging. In this study, we develop new transgenic tools to follow the fate of populations of cells in the regenerating larva of the sea star Patiria miniata. We show that the larval serotonergic nervous system can regenerate following decapitation. Using a BAC-transgenesis approach we show that expression of the pan ectodermal marker, sox2, is induced in previously sox2 minus cells , even when cell division is inhibited. sox2+ cells give rise to new sox4+ neural precursors that then proceed along an embryonic neurogenesis pathway to reform the anterior nervous systems. sox2+ cells contribute to only neural and ectoderm lineages, indicating that these progenitors maintain their normal, embryonic lineage restriction. This indicates that sea star larval regeneration uses a combination of existing lineage restricted stem cells, as well as respecification of cells into neural lineages, and at least partial reuse of developmental GRNs to regenerate their nervous system.\n\n## Introduction\n\nRegeneration is a fascinating phenomena that challenges the tenet of an irreversible, directional ontogeny. Decades of research have provided extensive understanding of how embryonic cells acquire their fate through the action of GRNs and the sequential turning on, and off, of regulatory genes. During embryogenesis, these developmental GRNs start from a very particular cell type, the single-celled zygote, while in regeneration another source of multi-, or toti-potent cells must be the source of cells for regeneration. The source of the cells, their molecular state and how, or even whether, developmental GRNs are re-established in these cells are open questions. This knowledge, however, is needed as a prerequisite for understanding the molecular mechanisms of regeneration. Furthermore, an understanding of whether any processes are homologous or if there are taxon-specific mechanisms that are related to the ability for extensive or limited regeneration awaits sufficient sampling across the metazoa.\n\nThe deuterostomes, that is vertebrates, invertebrate chordates, echinoderms and hemichordates, are an especially important system to study from the standpoint of regeneration. The vertebrates, with some few exceptions, have limited capacity for regeneration that is usually restricted to specific cells, tissues and organs (Rodriguez and Kang, 2020; Tanaka and Reddien, 2011). The emerging evidence points to the use of tissue-specific stem cells and corresponding specific niches as a cellular source for regeneration (Kragl et al., 2009). Echinoderms on the other hand have an impressive ability for extensive whole body regeneration found in most species of the phylum (Ferrario et al., 2020). For this reason, there has been extensive research into the mechanisms of regeneration in many species of echinoderms (Ferrario et al., 2020; Kondo and Akasaka, 2010; Dupont and Thorndyke, 2007; Piovani et al., 2021; Vickery et al., 2001; Garc\u00eda-Arrar\u00e1s et al., 2018; Mashanov and Zueva, 2019; Mashanov et al., 2020). For example, molecular and ultrastructural studies in brittle star arm regeneration point to use of adjacent epithelial cells to differentiate into sclerocytes needed for arm skeleton regeneration, recapitulating, at least in part, a development program (Piovani et al., 2021). Comprehensive studies in the regeneration of radial nerve chords in sea cucumbers also point to the use of radial glial dedifferentiation in nervous system regeneration (Mashanov and Zueva, 2019; Mashanov et al., 2015a). The emerging consensus from these and other studies is that echinoderms rely extensively on wound-adjacent dedifferentiation for regenerating lost tissues (Ferrario et al., 2020; Mashanov and Zueva, 2019). Conversely, expression of stem-cell marker genes have been identified as possible cell sources in some species (Mashanov et al., 2015b; Reinardy et al., 2015). Whether echinoderms and vertebrates use similar cellular sources and mechanisms for regeneration (Zhang et al., 2003; Joven and Simon, 2018) is important for untangling whether these mechanisms are causative of whole-body versus limited regeneration potential. Understanding these processes in naturally regenerating contexts also has important implications for improved translational applications of induced pluripotent stem cells and other stem cell therapies.\n\nTo date, however, while there has been a comprehensive series of studies of the molecular and ultrastructural basis of regeneration in many species of echinoderms, there have been no cell lineage tracking studies. Only cell tracking can definitively establish the origin and trajectory of cells during regeneration and resolve the debate as to the role of stem cells versus cellular reprogramming in echinoderms. Cell tracking, however, is technically challenging, especially in adult echinoderms where there are many cells and cell types, and regeneration proceeds over days or weeks. Transgenic tools are also limited in adult echinoderms. Indeed, the challenges associated with accurately tracking cell lineages have greatly limited the taxonomic distribution of animals for which we have this knowledge across the metazoa.\n\nHere, we sought to fill this important gap by turning to the echinoderm larval regeneration model. Echinoderms, typically for many marine invertebrates, have a biphasic lifestyle, producing a planktonic larval form that exists for up to many months before undergoing dramatic metamorphosis. It has now been well documented that the larval forms are also capable of extensive regeneration (Oulhen et al., 2016; Vickery et al., 2001; Kasahara et al., 2019). We have recently introduced the larval sea star Patiria miniata as a model system for the study of whole body regeneration (Cary et al., 2019b). Sea stars, as typical for echinoderms, have extensive regenerative capacities, a feature which extends across both their adult and larval life phases (Vickery et al., 2001; Vickery et al., 2002; Ben Khadra et al., 2017; Hernroth et al., 2010; Oulhen et al., 2016). Although pentaradial as adults, there are many parallels between echinoderm larval development and early vertebrate development, particularly in the formation of the anterior-posterior axis and development of the nervous system (Angerer et al., 2011; Hinman and Burke, 2018; Range et al., 2013). Therefore, while vertebrates and sea stars have very different regenerative capacities, there are commonalities in their early development. There are also extensive genomic resources (Cary and Hinman, 2017; Cary et al., 2019a, Cary et al., 2018; Cary et al., 2017; Gildor et al., 2019) and detailed developmental GRNs available for P. miniata (Cary et al., 2020) allows comparisons between developmental and regenerative GRNs and clear gene orthology mapping.\n\nPrevious work has shown that when these sea star larvae are decapitated, they are able to regenerate their anterior structures (Cary et al., 2019b; Oulhen et al., 2016; Vickery et al., 2001). Larvae have an anterior serotonergic nervous system, which we show here is removed by this decapitation. Extensive previous work in P. miniata embryos has shown how these neurons form during embryogenesis. The SRY-box transcription factor (TF), sox2 (formerly soxb1), is expressed broadly throughout the ectoderm by blastula stage (Yankura et al., 2010). Sox4+ (formerly soxc) neural progenitors arise in the ectoderm, and then divide asymmetrically to produce LIM homeodomain TF lhx2+ (formerly lhx2/9) daughter cells, which in turn divide asymmetrically to form differentiated serotonergic neurons (Cheatle Jarvela et al., 2016). This occurs within the anterior ectoderm, which expresses TFs such as six3 and foxq2, and is a wnt ligand negative territory (Cheatle Jarvela et al., 2016; Yankura et al., 2013).\n\nIn this study, we took advantage of cell-type-specific markers of differentiated neurons to confirm that the sea star larvae are able to regenerate their anterior nervous system. We establish a novel photoconvertible BAC reporter system to trace populations of cells to determine the cellular origin of these regenerated neurons. This allows us to specifically test whether regenerated neurons arise through embryonic neurogenesis pathways, and to determine the origin and potency of progenitors. Using a small molecule inhibitor of nuclear DNA replication (to question whether new gene expression can arise in the absence of divisions that are a prerequisite of stem cell origin), we show that expression of the putative pluripotency factor sox2 is induced in previously sox2 minus cells at the wound site. As this occurs even in the absence of new cell division, this result suggests that these cells are respecified rather than arising from asymmetric stem cell division. Both the newly induced and existing, sox2+ cells now give rise to new sox4+ neural precursors that then proceed along an embryonic neurogenesis pathway to reform the anterior nervous systems. The sox2+ cells contribute to only neural and ectoderm lineages, indicating that these progenitors maintain their normal, embryonic lineage restriction.\n\n## Results\n\n### Patiria miniata larvae fully regenerate their nervous system\n\nSea star bipinnaria larvae have an extensive nervous system (Katow et al., 2009; Murabe et al., 2008; Nakajima et al., 2004; Carter et al., 2021; Elia et al., 2009; Hinman and Burke, 2018). Figure 1A\u2013B\u2019\u2019 shows the 7-day post fertilization (7dpf) P. miniata larval nervous system labeled via localization of anti-synaptotagmin B (SynB) and serotonin antibodies. It has been shown that the pan-neuronal marker SynB labels all neurons in many echinoderm species (Burke et al., 2006; Nakajima et al., 2004). The neural bodies and axonal tracts are apparent throughout the two ciliary bands, the lip of the mouth, domains lateral to the mouth that mark the location of the apical ganglia in this stage, and the esophagus (Figure 1A). Serotonin immunoreactivity is concentrated predominantly in the anterior part of the larvae; in the dorsal ganglia with a subset of cells across the aboral surface (Figure 1B, D\u2019 and E\u2019). The presence of serotonin, characteristic neural cell morphology including long axonal processes and lack of markers of cell division, are taken as evidence that these are differentiated cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic of a 7-day old Patiria miniata larva. (B-B\u201d) Immunostaining with anti-synaptotagmin B (SynB; red) and anti-serotonin (5-HT; green) shows the larval nervous system organisation. Serotonergic neurons are distributed along the pre-oral ciliary band, post-oral ciliary bands and around the mouth. Larvae are bisected beneath the lip of the mouth shown by the dotted line (B\u2019\u2019 and C\u2019). (C-C\u2019\u2019) A latero-ventral view of regenerated larva at 7 days post bisection, the nervous system stained with Syn B. As bisection was performed at the site represented with the white dashed line. Above the dashed line in (C\u2019) is the regenerated anterior tissue with reformed pre-oral ciliary band and the mouth. (D\u2013I) Schematics of larvae at the normal (uncut) and regenerated stages corresponding to immunostaining with 5-HT images in (D\u2019-I\u2019) and (d-i). (d-i). The expanded view of the region highlighted with the dashed-line box in (D\u2019-I\u2019). (D\u2019) The serotonergic neurons are located bilaterally in uncut larvae, on the dorsal side as shown in lateral view in (E\u2019). (d-e). Neural bodies are embedded in the ectoderm, and project long axonal processes typical of this neural type. (F\u2019-f) Bisection removes the serotonergic neurons. (G\u2019) By 5 dpb, serotonergic neurons are detected at the regeneration leading edge with emerging neural morphology as shown in (g). (H\u2019) By 7 dpb, regenerated serotonergic neurons with mature neural morphology (h) are located at the lateral side of the regenerated anterior. (I\u2019-i). Regenerated serotonergic neurons are bilaterally located to reform the dorsal ganglia by 21 dpb. Arrowheads highlight the serotonergic neurons. Dpf: day-post fertilization; dpb: day-post bisection. DV: dorsal view. LV: lateral view. Scale bar: 50 \u00b5m. The numbers shown in the lower right corner of each image indicate the number of larvae showing a positive IHC signal among the larvae examined.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B) A schematic (A) and bright-field micrograph (B) of a 7 day post-fertilization (dpf) Patiria miniata sea star larva. Bisection is performed at the midline along the anterior-posterior (AP) body axis beneath the lip of the mouth and through the foregut as indicated by the dotted line. (C) Morphology of posterior sea star regeneration. The panel on top is the morphology of uncut control larvae at corresponding time points. These larvae continue to feed and develop towards a brachiolaria larva. The panel on the bottom is the morphology of regenerating posterior larvae. By 3 days post bisection (dpb), the wound is sealed and the mouth is reformed. In larvae from 3 to 5 dpb, a pre-oral regeneration leading edge is formed at the anterior. By 7dpb, a primitive anterior structure, the pre-oral ciliary band is formed. The posterior regenerant larvae appear morphologically fully reformed by about 14 days. Scale bar: 100 \u00b5m. dpf: day-post-fertilization; dpb: day-post-bisection.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Serotonergic neurons were counted manually in Z-stack images of 5-HT immunostaining of larvae at different time points using Fiji image processing software.\n\nWe have shown previously that larvae are able to regenerate their anterior body when they are bisected below the mouth (Cary et al., 2019b; Figure 1D\u2013I, and Figure 1\u2014figure supplement 1). This bisection, therefore, removes much of the anterior nervous system, including the anterior ciliary band loop (preoral ciliary band), the dorsal ganglia, as well as the mouth and its associated neurons. We tested whether these bisected larvae regenerate their nervous system. By one week post bisection (Figure 1C\u2013C\u2019), we find neural bodies and axonal tracts along the newly formed anterior ciliary band and complex neural networks lateral to the mouth suggestive of the dorsal ganglia. The reformed mouth also has associated neurons. We also specifically examined the serotonergic neurons (Figure 1D\u2019\u2013i). This neural subtype is found in the dorsal ganglia where they are present as clusters of large cell bodies with long axonal processes (Figure 1D\u2019\u2013e). These cells originally form in the anterior-most ectoderm of the late gastrula but migrate posteriorly to a location dorsal to the mouth in the larva (Cheatle Jarvela et al., 2016; Yankura et al., 2013). Serotonergic neurons are also found on the lower lip of the mouth where they have smaller cell bodies and shorter axonal processes. We therefore reasoned that serotonergic neural bodies were removed entirely by our manual bisection protocol. Indeed, when we bisect the larvae across the midline, 40 of 45 stained larvae show no remaining serotonergic neurons 1 day later, when they were first assayed. Figure 1F\u2019\u2013f shows one such example. Of the remaining five, only one or two cells were found which, due to their location, are likely those normally associated with the lower lip of the mouth.\n\nBy examining a time series of regeneration, we show that serotonergic neurons are first revealed by antibody staining at the anterior regenerating leading edge in 8/14 larvae 5 days following bisection (Figure 1G\u2019\u2013g). By 7 days post bisection (dpb), serotonergic neurons are found in 12/15 regenerating larvae at the anterior edge (Figure 1H\u2019\u2013h). Three weeks following bisection, the regenerated serotonergic neurons are bilaterally patterned at the dorsal side of the regenerating larvae, resembling the dorsal ganglia structure found in intact larvae (Figure 1I\u2019\u2013i).\n\nThese data therefore show that the anterior serotonergic neurons are removed following anterior bisection and are reformed in the correct general location and with extensive axonal projections by 21 days of regeneration.\n\n### Embryonic neurogenesis pathways re-emerge during regeneration\n\nWe next questioned whether the regenerated serotonergic neurons formed using the embryonic neurogenesis pathway. We have shown that, during normal embryogenesis, the SRY-box TF, sox2, (formerly soxb1) is expressed broadly throughout the neurogenic ectoderm (Yankura et al., 2013). Serotonergic neurons form from cells expressing the SRY-box TF, sox4 (formerly soxc) that are first present and distributed in a \u2018salt and pepper\u2019 pattern throughout the ectoderm of the embryonic blastula (Yankura et al., 2013; Yankura et al., 2010). Two transcription factors, foxq2 and six3, are expressed in the anterior ectoderm of the early gastrula and are required for the correct progression of the anteriorly most located sox4+ neural progenitors to become lhx2+ cells. After asymmetric cell divisions, lhx2+ progenitors in turn give rise to post-mitotic neurons expressing elav (Figure 2A\u2013C). These post-mitotic neurons will produce serotonin when they mature (Cheatle Jarvela et al., 2016). Thus we sought to determine whether these genes are re-expressed following bisection. If so, this can provide the first indication that embryonic neurogenesis is reactivated during regeneration.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig2-v2.jpg)\n\n**Figure 2.:** (A) In normal development, the embryonic apical pole domain (APD) gives rise to serotonergic neurons via the APD-associated neurogenesis pathway illustrated in (B). (C\u2013D) Fluorescent in situ hybridization (FISH) of APD marker gene foxq2 in embryos (C) and in the leading edge of the regenerating larvae at three dpb (D). (E-j\u2019) EdU labeled and FISH (EdU-FISH) results show that sox2 and sox4 are expressed in proliferative cells at the regeneration leading edge. (E\u2013G) EdU-FISH of gene sox2. (e\u2013g). Expanded view of the boxed area in (E\u2013G). (E) Upon bisection, sox2+ cells are highly concentrated at the wound site and later in (F\u2013G) at the regeneration leading edge. Throughout the time-course, sox2+ cells constantly undergo cell cycling (e\u2013g). (H\u2013J) EdU-FISH of sox4. (h\u2013j). Expanded view of the boxed area in (H\u2013J). (H). Upon bisection, sox4+ cells are detected at the regeneration leading edge and later in (I\u2013J) expanded to the mouth. Throughout the time-course, sox4+ cells constantly undergo cell division (h\u2013j). (h\u2019-j\u2019) 3D visualization of EdU + sox4+ cells using Imaris software, highlighted in (h\u2013j), indicated by white arrowheads. This shows clear double detection of EdU and sox4: the EdU + nucleus is surrounded by sox4 signal. (K-i\u2019) Double fluorescent in situ hybridization (FISH) shows the recapitulation of APD gene expression trajectory. (K) In 5dpb larvae, sox4 and lhx2 are co-expressed in cells at the lateral regeneration leading edge. (k1\u2019-k2\u2019) show the Imaris 3D reconstructed view of boxed areas k1 and k2. In the highlighted cells (arrowheads), nucleus labeled with DAPI is surrounded by both lhx2 and sox4 signals, indicating co-expression in the same cell. Scale bar in (c1): 5 \u00b5m; (c2): 7 \u00b5m. (L) In 5 dpb larvae, lhx2 and elav are co-expressed in cells at the lateral regeneration leading edge, scale bar: 100 \u00b5m. This is amplified in (l). (l\u2019) shows the 3D reconstructed view of the cell marked by arrowheads in (l). (M) A proposed Model for the regeneration of neurons in sea star larvae. Dpb: day-post-bisection. Scale bar in (E\u2013K): 50 \u00b5m; (L): 100 \u00b5m; (e\u2013i,l): 20 \u00b5m; (j): 30 \u00b5m; (h\u2019-j\u2019,k1 and l\u2019): 5 \u00b5m; (k2): 7 \u00b5m. Dpf: day-post fertilization; dpb: day-post bisection; mo, mouth. The numbers shown in the lower right corner of each image indicate the number of larvae showing a positive FISH signal among the larvae examined.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013D) WMISH of foxq2 which is normally expressed in the apical pole domain of the embryo. (A) Foxq2 expression is undetectable by WMISH in intact larvae (some nonspecific background staining is present in the stomach). Upon decapitation, (B) foxq2 is first expressed in the anterior-most regeneration leading edge at 3dpb. (C) Foxq2 expression remains concentrated at the regeneration leading edge by 5dpb. (D) Is a lateral view of a regenerating larva. The expression of foxq2 is detected in the anterior. (E\u2013H) WMISH of six3 which is normally expressed in the anterior ectoderm of developing embryos. (E) Six3 is expressed at the bilaterally located coeloms in uncut 7dpf larvae. Upon decapitation, (F) Six3 expression is detected at the wound ectoderm and the regenerating coeloms in 1 dpb larva. (G\u2013H) Six3 expression extends to the entire regenerated anterior. (I\u2013K) WMISH of wnt3 which is normally expressed in the posterior ectoderm of embryos. (I) In intact larvae, wnt3 is expressed in the ciliary bands, marked by black arrowheads. It is also expressed in the mouth ectoderm indicated by the black arrow. Upon decapitation, (J) wnt3 is expressed in the posterior domain by 1dpb. (K) The expression extends to the entire foxq2-free posterior domain by 3dpb. Gene expression is highlighted in circles with black dashed line. Scale bar: 100 \u00b5m. RL, regeneration leading edge; co, coeloms; mo, mouth; CB, ciliary band; D, dorsal; V, ventral. About 30\u201350 larvae from two separate matings were analyzed in each in situs.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013D) WMISH of sox2. (A) In intact larvae, sox2 expression is detected in the ciliary band, indicated by the black arrowheads. (B) Upon bisection, sox2 is expressed at the wound site and then at the regeneration leading edge as shown in (C\u2013D). (E\u2013H) WMISH of sox4. (E) In intact larvae, sox4 expression is detected in the ciliary band, indicated by the black arrowheads, and in the mouth and foregut, marked by the arrows. Sox4 is also expressed in the dorsal ganglia, highlighted with black circles. (F) Upon bisection, sox4 expression is detected at the wound site and then in (G\u2013H) at the regeneration leading edge, indicated by circles. In regenerating larvae, sox4 is also expressed in the oral cells, arrows in (G\u2013H). (I\u2013J) WMISH of lhx2. (I) Lhx2 is expressed at the dorsal ganglia in larvae. (J) In regenerating larvae, lhx2 expression is first detected at five dpb at the regeneration leading edge. (K\u2013L) WMISH of gene elav. (K) Post-mitotic neuron marker elav is expressed along the ciliary bands (black arrowheads) and the dorsal ganglia (circles). (L) In 5 dpb regenerated larvae, elav expression is detected at the regenerated (circle) and remains in the post-oral ciliary band (arrowheads). Scale bar: 100 \u00b5m. Dpf: day-post fertilization; dpb: day-post bisection. About 30\u201350 larvae from two separate matings were analyzed in each in situs.\n\nFollowing bisection, we find that foxq2 and six3 are expressed in the anterior ectoderm of the leading regenerating edge by 3dpb (Figure 2D, and Figure 2\u2014figure supplement 1A-H). It is important to note therefore, that foxq2 is now expressed in cells that, in the normal larvae, reside along the middle of the AP axis and would never normally express anterior markers such as foxq2. We find similar patterns with other regulatory genes that are expressed along the embryonic AP axis, with wnt3 re-expressed in posterior regenerating larvae (Figure 2\u2014figure supplement 1I-K). This indicates that the anterior leading edge cells are being respecified, as defined by expressing new sets of genes, during regeneration. This respecification, at least partially, recapitulates the embryonic axial state required for neurogenesis.\n\nSox2 is expressed at low levels throughout the ectoderm of the normal larvae (Yankura et al., 2013; Figure 2\u2014figure supplement 2A) but within 1 day following bisection, sox2 expression is dramatically up-regulated at the wound site (Figure 2E\u2013e, and Figure 2\u2014figure supplement 2B), when compared to larval expression levels. We have previously shown that cell division occurs throughout the normal larva, but then decreases in the early bisected larva and is then predominantly localized to the wound adjacent anterior at 3dpb (Cary et al., 2019b). Thus, localized sox2 expression precedes the formation of the proliferative zone but then remains within this anterior region. This regenerative proliferative zone is readily visualized by staining for 5-Ethynyl-2\u00b4-deoxyuridine (EdU), by incubating larvae for one to six hours in EdU sea water. This costaining shows that sox2 is highly expressed throughout this ectodermal zone and within some of these proliferating cells at 3dpb (Figure 2F\u2013f, and Figure 2\u2014figure supplement 2C) and that this remains through to 5dpb (Figure 2G\u2013g, and Figure 2\u2014figure supplement 2D).\n\nSox4 expression, a marker of neural precursor cells, is also observed at the wound site within one day following bisection (Figure 2H\u2013h\u2019, and Figure 2\u2014figure supplement 2F). In 3dpb larvae, sox4 expression is detected at the regeneration leading edge (Figure 2\u2014figure supplement 2G). Fluorescent labels allow for the detection of coexpression of genes and colocalization of gene expression with EdU staining. The large number of cells at these stages make colocalization difficult to establish through conventional confocal microscopy and thus we used Imaris Software (Oxford Instruments) 3D visualization analysis to identify overlapping signals with confidence (Imaris visualization is shown Figure 2h\u2019 and i\u2019 j\u2019, k1, k2). Thus we show that sox4+ cells clearly undergo cell divisions as FISH staining colocalizes with EdU (Figure 2I\u2013i\u2019). Proliferating sox4+ cells are also detected in the regenerating ectodermal/endodermal mouth (Figure 2I). By 5dpb, sox4 expression is concentrated to the regenerating anterior, again in dividing cells (Figure 2J\u2013j\u2019, and Figure 2\u2014figure supplement 2H).\n\nThe expression of lhx2 is also detected by 5-7dpb in dispersed cells at the regenerating leading edge (Figure 2 K-K2, and Figure 2\u2014figure supplement 2J). Similarly, the expression of post-mitotic neural marker elav is also restored at the regenerating anterior at 5-7dpb (Figure 2L\u2013l\u2019, and Figure 2\u2014figure supplement 2L). Two-color FISH shows that, similar to embryogenesis, sox4/lhx2 co-expression is found in cells located at the lateral sides of the regeneration leading edge (Figure 2K\u2013l\u2019) and that lhx2 and elav are also co-expressed.\n\nCollectively, these data show that bisection leads to the activation of embryonic neurogenesis gene expression states. Sox2 and sox4 expressions are induced upon wounding, and sox4+ cells located at the lateral leading edge give rise to lhx2+ cells. The lhx2+ cells at the leading edge in turn become post-mitotic neurons expressing elav (Figure 2M). The location of lhx2 expression at the leading edge, within the zone of foxq2 expression, also recapitulates the spatial localization of embryonic serotonergic cell specification.\n\n### Newly specified sox4+ neural cell lineage is induced by bisection\n\nThe gene expression states propose the intriguing model that neural progenitors, that is newly specified sox4+ cells, arise at the leading edge following bisection, and that these newly specified neural progenitors will reform the serotonergic neurons by entering the embryonic neurogenesis pathways. To test this hypothesis, we needed to establish a reporter system that would distinguish new sox4+ cells from existing sox4+ cells and also follow their fate for several days.\n\nTo this end, we developed a highly stable, photoconvertible fluorescent reporter. We modified an approach we have used previously in which eGFP (GFP) was homologously recombined into the sox4 coding region of a Bacterial Artificial Chromosome (BAC) clone, to replace the coding sequence of sox4 with that of GFP while leaving the endogenous basal promoter and 5\u2019UTR in place (Buckley and Ettensohn, 2019). When the sox4:GFP recombinant BAC is injected into embryos, it faithfully expresses GFP in sox4+ cells, recapitulating endogenous sox4 expression (Cheatle Jarvela et al., 2016). It should be noted that transgenic DNAs are inherited mosaically and thus any individual larva expresses the reporter in only a subset of cells. This demonstrates that the approximately 150 Kbp surrounding the genomic locus of the sox4 coding region, including the endogenous basal promoter, is sufficient to drive correct expression of the transgenic GFP reporter gene.\n\nWe now exchanged GFP for the photoconvertible Kaede sequence. Kaede fluorescent protein (FPbase ID: Q31FH) stably converts from green to red after exposure to UV light (Ando et al., 2002). We experimentally measured the stability of Kaede, by injecting in vitro synthesized kaede mRNA into zygotes and quantifying fluorescence over time. We show that translated Kaede protein is detectable above background for at least 7 days in P. miniata embryos and larvae when grown at 15\u00b0C (Figure 3\u2014figure supplement 1, and Figure 3\u2014source data 1). This supports previous work which shows that GFP is extremely stable in these embryos, likely because they are grown at low temperatures (Arnone et al., 1997).\n\nThe sox4:Kaede BAC construct (Figure 3A) was injected into zygotes, and larvae grown to 7dpf bipinnaria larval stage. The BAC DNA construct is stably inherited by clones of cells and therefore present mosaically in the cells of the larvae. The larvae were then bisected and immediately photo-converted by exposure to 405 nm light (Figure 3\u2014figure supplement 1, and Figure 3\u2014source data 1). Larvae were inspected under fluorescent microscopy to assess photoconversion, and we confirm that all cells that had expressed sox4 within the previous 7 days now fluoresce at 560 nm (red). Decapitated larvae were then individually cultured in 24-well dishes so that we could follow individual cell populations in each larva (Figure 3C). At 2dpb and 3dpb we observe green-only, red-only, as well as yellow (green plus red) cells (Figure 3B and D\u2013d). Red cells in the regenerating larvae are the historically labeled cells that have expressed sox4 at some point prior to bisection but no longer express sox4. For example, these may have been differentiated neurons that no longer express the progenitor marker sox4. The yellow cells are from existing larval and regenerative sox4+ cell lineages. That is, these cells expressed sox4 in the intact larvae and continue to express sox4 in their progeny after wounding. Most interestingly, there are green-only cells. These are cells that have not previously expressed sox4 but are induced to start expressing sox4 only upon decapitation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig3-v2.jpg)\n\n**Figure 3.:** (A) The design of Sox4:Kaede BAC construct. (B\u2013C) Design of photo-conversion experiment. Sea star zygotes are injected with the Sox4-Kaede BAC. Injected embryos are incubated till larvae for bisection. Photo-conversion is immediately performed on bisected posterior segments. After regenerating for periods of time as shown (dpb), larvae are observed to examine the Sox4+ lineages. (D) In Sox4-Kaede transgenic regenerating larvae, there are multiple sources of Sox4+ cells at the regeneration leading edge. Some Sox4+ cells are derived from the yellow, existing Sox4 lineage (marked by asterisks). Some Sox4+ cells are differentiated cells that no longer express Kaede (arrows). There are also green Sox4+ cells that are newly specified upon decapitation (arrowheads). The boxed areas in the regeneration leading edge are amplified in (d1), (d2) and (d3). Scale bar in (D): 50 \u00b5m. At least 30 regenerating larvae in two independent batches were examined.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013E) Dynamics of photoconversion of Kaede protein. Kaede mRNAs were injected into fertilized eggs where they are endogenously translated by the embryos. Then we photoconverted the Kaede in injected embryos at 24 hpf. The embryos were imaged every 10 s during photoconversion, and then incubated in sea water for at least one week and were imaged again at larval stages. This experiment shows that Kaede proteins unconverted (green) and converted (red) are stably detected above background autofluorescence for at least one week after photoconversion. (A) Shows the fluorescent intensity (FI) of the green and red protein. (B) Photoconversion rate of Kaede protein. This rate is the ratio of the FI (red) over the FI (green). The 560 nm FI gradually increases as the 488 nm FI is progressively reducing with a converging point at ~50 s. (C) FI of Kaede protein at different time points. The 488 nm fluorescent intensity rises dramatically at two dpf, likely due to the continuous translation of kaede mRNA. Red and green proteins in the embryos remain confidently detectable above background in the larvae until at least seven dpf. Therefore, we conclude that the Kaede proteins can be effectively detected for 7 days. (D) Confocal images of the embryos during the photoconversion. (E) Detection of Kaede in larvae injected with kaede mRNA. This shows that Kaede can be stably detected for 7 days. (F-F\u201d) Then we generated a sox4-Kaede BAC to trace the expression of sox4 at larval stages. The expression pattern of sox4-Kaede BAC recapitulates the sox4 mRNA expression data (SP. Figure 3), (E) Some of the sox4+ cells have clear neural phenotypes. Scale bar in (F): 100 \u03bcm; (F\u2019-F\u201d): 50 \u03bcm. Cb, ciliary band; cp, coelomic pouch; f, foregut; m, mouth; dpf, day post fertilization.\n\nWe questioned whether the presence of newly expressing sox4+ cells is induced by wounding, or whether there is normally a pool of progenitor cells that are set to become sox4+ over the timepoints we observed. We therefore compared the rate of sox4+ cell specification between embryogenesis and larval development. We again injected Sox4:Kaede BAC into zygotes and photoconverted either 2dpf embryos or 4dpf larvae (Figure 4A). We then quantified the numbers of green, red and yellow cells 3 days later (5dpf or 7dpf) over normal development (i.e. without bisection, Figure 4\u2014source data 1). We find that there are high numbers of green+ cells in larvae photoconverted at 2dpf (Figure 4B\u2013C), but almost none in larvae converted at 4dpf (Figure 4D\u2013E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig4-v2.jpg)\n\n**Figure 4.:** (A) A schematic for the experimental plan to determine the source of normal larval Sox4+ cell lineage. Sox4:Kaede transgenic embryos were photoconverted at either embryonic stage or larval stage. Sox4 expression was examined three days later. (B) Embryo injected with Sox4-Kaede BAC is converted at 2dpf. Red Kaede localization therefore marks all labeled Sox4+ cells. (C) By 5dpf there are several newly specified, green Sox4+ cells indicated by arrowheads. However, (D) when converted at 4dpf (larval stage), only yellow cells and red cells are observed 3 days later as shown in (E), indicating no specification of Sox4+ cell occurs in the larva. (F) Quantification of Sox4 specification in embryos, larvae and regeneration. The Hedges' g for two comparisons against the embryonic group are shown in the above Cumming estimation plot. The raw data is plotted on the upper axes. On the lower axes, mean differences are plotted as bootstrap sampling distributions. Each mean difference is depicted as a dot. Each 95% confidence interval is indicated by the ends of the vertical error bars. Sox4+ cell specification event is close to 0 by 4dpf, significantly decreased compared to the embryonic (2dpf) state. Specification of Sox4+ cells is restored in regenerating larvae. Scale bar in (B\u2013E): 50 \u00b5m. dpf: day-post-fertilization. At least 40 embryos were examined from five independent batches.\n\nThis is evidence that new sox4+ cells are actively being specified in embryos, but that this specification has stopped by 4dpf (i.e. larval stage). Comparing the numbers of green (newly expressing) sox4+ cells during normal development with those counted in regeneration, we see that specification of new sox4+ cells is highest in embryos, ends by late embryogenesis, and resumes in response to bisection induced regeneration (Figure 4F, and Figure 4\u2014source data 1). Thus, decapitation induces a wound response that re-initiates the specification of new sox4+ cells, a process which had stopped by day four of embryogenesis. These sox4+ cells then reenter into embryonic neurogenesis pathways (Figure 2).\n\n### Sox2+ progenitor cells are specified to Sox4+ cells to regenerate neurons\n\nWe have shown that there arises a new population of sox4+ cells induced by bisection. During normal embryogenesis, the neural precursor cells are derived from sox2+ ectoderm. Sox2 is expressed throughout the ectoderm in embryos and therefore broadly marks this germ layer (Yankura et al., 2013; Yankura et al., 2010). We therefore asked whether these new bisection-induced neural progenitors similarly arise from ectodermal lineages.\n\nOur gene expression analysis showed that sox2 is broadly upregulated throughout the anterior of the regenerating larva (Figure 2E\u2013g) and that new, dividing, sox4+ cells also form in this region (Figures 2H\u2013j\u20133D). We therefore generated a sox2:Kaede BAC. We first tested whether this BAC recombinant recapitulated normal Sox2 expression in sea stars. After BAC injection, zygotes started to express Kaede at 24-48hpf in broad patches of ectodermal cells. By larval stage, Kaede was detected on the ectoderm including the ciliary bands, dorsal ganglia, and ectodermally derived neurons (Figure 5\u2014figure supplement 1A-C'). This localization pattern recapitulates the embryonic sox2 expression pattern reported previously (Yankura et al., 2013; Yankura et al., 2010; Figure 2\u2014figure supplement 2A).\n\nWe next generated a sox4:Cardinal BAC recombinant so that we could examine the potential colocalization of sox2+ and sox4+ lineages. This is the same BAC recombinant as sox4:Kaede (Figure 3A) but with the Kaede coding sequencing replaced by Cardinal (FPbase ID: 7EWEM), which fluoresces in the far-red range (633 nm). These two BAC recombinants were co-injected to identify potential double labeling of sox2+ cell lineages (green, red, or yellow depending on the assay) and sox4+ cell lineages. It is important to note that multiple constructs when co-injected into echinoderm zygotes are then co-integrated, and are therefore inherited in the same cellular lineages (Cheatle Jarvela et al., 2014). When we examine expression in normal developing larvae, we find that sox4+ cells overlap completely with sox2+ cells on the ectoderm as is expected in normally developing larvae (Figure 5\u2014figure supplement 1D-D''), although not all sox2+ cells are sox4+, as sox2+ also produce non neural ectoderm.\n\nWe next photo-converted the double BAC recombinant larvae (i.e. all sox2:Kaede+ cells are converted to red), and immediately bisected the larvae and allowed them to regenerate for 2\u20133 days (Figure 5A). Strikingly, we found new (green+ cells) expression of sox2, indicating that cell that had not previously expressed sox2 are now expressing the sox2 gene following bisection. Furthermore, four of 15 observed larvae exhibited cells with colocalized green Kaede (new sox2 expression) and Cardinal (sox4,far red, pseudo-colored blue) at the regenerating leading edge (Figure 5 B(b-b3))at 3dpb. For example, in the larva shown in Figure 5, there are 3 cells located at the left side of the regeneration leading edge that contain green Kaede and Cardinal. As the green Kaede reporter labels de novo sox2 expression, this shows that these new sox2+ cells start to express sox4 and thereby enter into neurogenesis pathways. We observe only few newly expressing sox2+ and sox4+ cells in this assay, likely as our reporter system is mosaic, and because there are in reality only small numbers of newly expressing sox2+ cells at this stage. Our whole mount in situ analyses in Figure 2 also suggested that there will be new sox2+ cells, and that these will become sox4+. The Cardinal reporter can potentially represent both pre-existing and regenerative sox4 expressions. However, it is important to note that at the time of bisection, all labeled sox4+ cells overlapped with sox2+ lineage in the imaged larvae. In other words, all Cardinal + cells are also red Kaede+ at the time of photoconversion. Thus, the sox4:Cardinal in Figure 5B must be expressed after wounding. This therefore supports the hypothesis that cells derived from non sox2+ lineages are induced to express sox2 in regenerating larvae and will contribute to neural progenitors. Indeed when we follow these larvae through to 7dpb (Figure 5\u2014figure supplement 2A-B) we find fluorescence in the neural projections which are characteristic of fully formed neurons (Figure 5\u2014figure supplement 2a1-a3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic representation of the experimental design. Two BACs: sox2:Kaede and sox4:Cardinal were coinjected. Seven days old transgenic larvae were bisected, Kaede protein was photoconverted immediately following bisection, then regenerated larvae were analysed at 3 days later. (B3) Some sox4+ cells at the regeneration leading edge are made from de novo sox2+ cells. Boxed area in (B) is amplified in (b). In 3dpb transgenic larvae, sox4+ cells with de novo sox2 expression are located at the lateral side of the regeneration leading edge (black solid circle). These cells have (b1) newly expressed, regenerative sox2:Kaede and (b3) sox4:Cardinal expression (both highlighted with white solid circle), (b2) but have no historic sox2:Kaede (white dotted circle). (C). Sox2+ cells at the regeneration leading edge have multiple sources. (c) Is the amplified view of the boxed area. Apart from the de novo sox2+ cells, there are also yellow, larval sox2 lineage at the regeneration leading edge (black solid circle). These cells do not enter sox4-mediated pathways. They are labeled with (c1) green and (c2) red Kaede (white solid circle), (c3) but not Cardinal (white dotted circle). Images B and C are representative of at least 15 observed samples. Scale bar in (B\u2013C): 50 \u00b5m; (b\u2013b3, c\u2013c3): 20 \u00b5m; (d-d3). RL, regeneration leading edge; CB, ciliary band. Dpb: day-post-bisection. Sox2: Kaede (red, yellow, green) and Sox4: Cardinal (far red, false-colored to blue).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013B). Sox2 transgenic embryos. (C-C\u2019). In the larval stage sox2+ cells are found in the ciliary band, mouth, and foregut. Some cells have clear long, axonal projections characteristic of neural morphology (arrowheads). The boxed area in (C) amplifies in C\u2019. (D-D\u201d). Normal transgenic larvae coexpressed two BACs: sox2:Kaede and sox4:Cardinal. This shows that the majority of sox2+ cell lineage are neurogenic and give rise to ectodermal sox4+ cells. Some sox2+ cells (white arrowheads) do not express sox4 BAC. (E-F\u201d). In 7dpb regenerating larva sox2+ cells reused (yellow) and de novo (green, F\u2019, F\u201d) located in the restored mouth, ciliary band. The boxed area in (F) amplifies in (F\u2019, F\u201d). Scale bars in (A, B): 25 \u03bcm, in (C, D, E, F): 50 \u03bcm. Ant, anterior; cb, ciliary band; f, foregut; m, mouth. All confocal images (A-F\u201d) are representative of at least ten observed samples from two independent batches.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A). De novo sox2 cells form neurons through the sox4-mediated pathway in the regenerating anterior. (a) Amplification of boxed area in (A). There are two neurons at the lateral side of the regenerating anterior (black solid circle) derived from the newly specified sox2+/sox4+ cells. They contain (a1) regenerative green sox2-Kaede and (a3) blue sox4-Cardinal (white solid circle), (a2) but do not have historic sox2 expression (dotted white circle). Other than the de novo sox2+ cells, the existing sox2+ lineages also contribute to the regenerated neurons at the anterior marked by the black solid square in (a). (a1\u2013a3). This neuron contains all three colors (white solid box), suggesting it is derived from the existing sox2+ cell lineage through sox4-mediated pathway. (B). Historic sox2+ cells present neural morphology. (b). There are red only, historic sox2+ neural cells at the regeneration leading edge and the oral domain (black solid circles). These cells are likely to be differentiated cells or cells taken other fates in regeneration, thus no longer express sox2. (b2). They contain the historic Kaede marker, (b1) but do not express new, green Kaede or (b3) Cardinal (white dotted circle). Scale bar in (A\u2013B): 50 \u00b5m. RL, regeneration leading edge; CB, ciliary band. Images (A,B) are representative of at least eight analyzed samples from two separate batches.\n\n### Bisection induced Sox2+ cells maintain usual embryonic cell restriction\n\nWe were interested to determine whether these newly specified sox2+ cells, which were not previously ectodermal, now maintain an ectodermal lineage. We examined at least 10 larvae over three independent injection batches and found that in all regenerating larvae the newly expressing sox2+ cells contributed to only tissues normally derived from sox2+ lineages (e.g. Figure 5\u2014figure supplement 1E-F''). We observed sox2:Kaede green cells in the outer ectodermal epithelium, the mouth, and ciliary bands. This indicates that once induced these cells will maintain their normal, embryonic fate potential.\n\nIt is worth noting that not all sox2+ cells enter the neurogenesis pathway in regeneration (Figure 5 C(c1-c3)). For example, in the larva shown in Figure 5, there are two cells at the regeneration leading edge that contain both green and red Kaede, derived from the sox2 lineage. These cells do not express sox4:Cardinal by 3dpb. This suggests that while larval sox2 cell lineages are restricted to ectodermal potency, they do not necessarily contribute only sox4+ neural fates.\n\n### New sox2 expression is induced in the absence of cell division\n\nFinally, we questioned whether new sox2 expression could arise in the absence of cell division. Stem cells, by definition, require an asymmetric division to produce a new daughter cell type and maintained stem cell. Thus new sox2 expression should not be present when cell division is blocked if it is solely derived from asymmetric stem cell division. We bathed sea star larvae in Aphidicolin, a conserved inhibitor of cell division, that is particularly well characterized in echinoderms where it is known to block DNA polymerase function, nuclear break down and microtubule organizing centers (Mashanov et al., 2017; Nishioka et al., 1984). We first used a serial dilution test to determine that the 25 \u00b5M of Aphidicolin was the minimum concentration needed to reliably inhibit cell division as assayed by EdU staining, while cells in DMSO controls divided normally (Figure 6B). We incubated regenerated larvae in the drug or vehicle for up to 1 week, with daily changes into fresh drug or vehicle, and analyzed them every 24 hr to test that Aphidicolin consistently blocked cell division over this time (Figure 6\u2014figure supplement 1). We then microinjected the sox2:Kaede recombinant into fertilized oocytes, bisected 7dpf larvae, photoconverted and added Aphidicolin or DMSO as a control in the sea water immediately after post bisection. Bisected transgenic larvae were continuously incubated in drug or control solutions over three days (Figure 6A). The aphidicolin treatment, therefore, covered the phases of regeneration, and preceded the first observed sox2 and sox4 expression by at least one day. At least 10 larvae over three independent injections were analyzed. We then assayed for red, green, or yellow-positive cells (Figure 6C\u2013D\u201d, and Figure 6\u2014source data 1). We show that there are multiple yellow, green cells along the leading regenerated edge. This confirms that cells which were not previously expressing sox2 are now able to initiate expression of this gene in the absence of cell division and are thus not the result of asymmetric stem cell division.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic representation of the experimental design. Sox2:Kaede transgenic larvae were bisected and photoconverted. The first dose of 25 \u00b5M aphidicolin or vehicle (0.08% DMSO) were applied after 3hpb, changed every 24 hr until 3dpb then the regenerated larvae were analyzed. (B-B\u201d) To monitor the effect of aphidicolin on DNA synthesis, we used an EdU cell proliferation assay. 3dpb larvae in aphidicolin, DMSO or sea water solutions were incubated in 15 \u00b5M EdU for 1 hr. (C\u2013D) Sox2-Kaede cell specification by three dpb under aphidicolin (D-D\u201d) or vehicle (C-C\u201d) treatment. Scale bar in (B-B\u201d), (C-D) is 50 \u00b5m. Dpb: day-post-bisection. Hpb: hour-post-bisection. Arrowheads highlight de novo sox2 expression. The numbers shown in the lower right corner of (B-B\u2019\u2019) indicate the number of larvae analyzed. (C and D) images are representative of at least 15 transgenic samples from two independent batches. A percentage of yellow (re-used) and green (de novo) Kaede expressing cells at the wound site during vehicle or drug admission are 71.6 and 2.1; 80 and 1.7 correspondent (Figure 6\u2014source data 1).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72983/elife-72983-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Schematic representation of the experimental design. The first dose of 25 \u00b5M aphidicolin or vehicle (0.08% DMSO) were applied after 3hpb, changed every 24 hr until the regenerated larvae were analyzed. To test the drug leakage possibility the larvae were analyzed every 24 hr using an EdU cell proliferation assay. Drug or DMSO-treated samples were incubated in 15 \u00b5M EdU for 1 hr. (B\u2013G) Representative confocal images at different regeneration time points: (B) 1dpb, (C) 2dpb, (D) 3dpb, (E) 4dpb, (F) 5dpb, (G) 6dpb. Scale bar in (B\u2013G): 50 \u00b5m. Dpb: day-post bisection. At least 15 larvae were examined from two independent batches for each time point. The numbers shown in the lower right corner of (B\u2013G) indicate the number of larvae analyzed.\n\nThis experiment additionally addresses a concern that green FP only cells may actually be Green + Red, but have lost red FP signal through dilution if the precursor cells are highly proliferative. We thought this unlikely as green+ FP cells are identified prior to extensive regenerative proliferation and we individually followed larvae to track previously identified Red FP cells. We now however, can definitely exclude dilution based on proliferation as a cause for loss of Red FP as Green FP cells emerge in the absence of any division.\n\n## Discussion\n\nThe ability that some animals have to restore tissues and body parts following traumatic injury challenges our current understanding of the mechanisms of cell specification and differentiation. Significant questions remain surrounding the source of new cells needed to regenerate lost tissues and organs, their potencies and whether developmental GRNs are re-used. A further open question is whether any of these processes are shared across taxa, and can explain the differing capacities for regeneration.\n\nEchinoderms are an especially important system for the study of these questions as they are well known for their extensive capacities for regeneration (Ben Khadra et al., 2018; Byrne, 2020). There has, therefore, been extensive research on regeneration of multiple species, tissues and stages in echinoderms (Vickery et al., 2001; Kasahara et al., 2019; Garc\u00eda-Arrar\u00e1s et al., 2018; Mashanov and Zueva, 2019; Piovani et al., 2021). While providing important insight and an emerging consensus on the role of local dedifferentiation, the availability of transgenic tools has precluded the cell lineage analysis needed to definitively identify cell sources and their potencies. The discovery that many echinoderm larvae are able to regenerate (Wolff and Hinman, 2021), opens the possibility to use genetic engineering tools that are available for embryos, to probe regeneration. Additionally, developmental GRNs and the cell specification pathways are extremely well characterized for many species of echinoderms, providing an opportunity to compare developmental to regenerative GRNs of the same larval cell types. In this study, we develop a new BAC-based transgenesis protocol to identify and track the cellular sources of regenerated neurons of the sea star bipinnaria larva, and to compare neurogenesis pathways between development and regeneration.\n\nWe show that bipinnaria larvae of the bat star, P. miniata, are able to regenerate their anterior nervous system. Sea star larvae have remarkably complex nervous systems (Carter et al., 2021; Elia et al., 2009) given their small size and presumably simple behavior. We took advantage of the highly specific marker of differentiated serotonergic neurons, which includes immunoreactivity to anti-serotonin antibody (Sigma, S5545), characteristic axonal projections, and location within the larvae, to confirm that these neurons are removed by surgery and reform within 21 days. The removed pre-oral ciliary band and lip of the mouth are also reformed during regeneration.\n\nWe used fluorescent in situ hybridization (FISH) to show that genes involved in embryonic AP axis specification are re- expressed along the axis of bisected larvae. For example, foxq2, six3, and wnt3 are key nodes in the embryonic GRN for axial specification (Cheatle Jarvela et al., 2016; Yankura et al., 2013), and are re-expressed along the AP axis of the posterior regenerating segment. Reestablishing axial patterning is a commonly observed early feature in many species undergoing whole body regeneration (Gehrke et al., 2019; Reddien, 2019), which we now show also occurs in sea star larvae. Sox2 and sox4 expression is similarly induced adjacent to the wound site within one day. This region will form a proliferative epithelial zone by the third day following bisection. In embryos, sox2 is expressed throughout the ectoderm, while sox4+ cells are scattered throughout the ectoderm where they function as precursors for multiple neural types in the larvae (Cheatle Jarvela et al., 2016). This is the first indication that there is a resetting of gene expression states adjacent to the wound and is consistent with a broad respecification of these cells.\n\nOne of the most fascinating questions in regeneration is whether animals reuse their embryonic GRNs to regenerate cell types. If different pathways are used, this indicates that there are regeneration-specific GRNs deployed after traumatic wounding. This further suggests that such pathways may independently evolve under different selection pathways than the embryonic pathways. If embryonic GRNS are reused, the challenge is to understand how they are reactivated in non-zygotic cells. The new expression of embryonic axial patterning genes across the bisected larva (Figure 2C\u2013D) is consistent with re-entry into an embryonic state. We further show, using FISH and using IMARIS to confidently assess colocalization of signal, that sox2+ cells overlap with sox4+ cells, that sox4 expression overlaps with lhx2 expression, which in turn overlaps with elav (Figure 2). We have previously demonstrated that these gene products mark the embryonic neurogenesis pathways, and that ectodermal elav expression is a marker of differentiated neurons (Cheatle Jarvela et al., 2016). We have also previously shown that lhx2 is needed for the differentiation of serotonergic neurons (Cheatle Jarvela et al., 2016). This data therefore supports the hypothesis that embryonic serotonergic neurogenesis pathways are reactivated in the induced sox2+ cells, although we are not yet able to show that any of these gene products are functionally required for neurogenesis in the regeneration context.\n\nThe presence of sox2+ and sox4+ cells adjacent to the wound site provide the possibility that these are the cellular source of regenerated neurons. Cell tracking however is needed to test whether these cells do indeed form neurons, and to identify the cellular origin of sox2 and sox4 expression. The wound adjacent expression could arise from existing sox2+ or sox4+ cells in the larvae. This would suggest that these cells function as a resident stem cell population of regenerated neurons. Alternatively, they would arise from other, existing, cells, which may either be derived from an additional source of stem cell or through de- or trans-differentiation. We therefore developed a novel transgenic reporter system based on BAC recombineering that takes advantage of highly stable, irreversibly photoconvertible, fluorescence Kaede reporter (Ando et al., 2002). The injected BAC DNA construct is stably inherited in clonal lineages of cells after one to several embryonic cell division and hence the reporter will express mosaically. In the system we developed, cells that are currently expressing the gene of interest will fluoresce green, and may also contain red FP if they have previously expressed the gene prior to photoconversion. Using this reporter system, we show that the sox4 gene is expressed in existing sox4+ cells, and in cells that have not expressed sox4 within the last seven days (Figure 3). We reasoned that new neural precursor cells (i.e. green only sox4+ cells) may be continuously generated as a normal development process and therefore not specifically induced by wounding. We therefore compared the formation of new sox4+ neural precursors in development and regeneration. We find many new sox4+ cells being produced in early embryos (days 2\u20135 development) as expected, but this has almost entirely stopped by swimming larval phase (days 4\u20137 development) and resumed upon wounding (Figure 4). The subsidence of sox4+ cell formation in the larval stage is consistent with data showing that the serotonergic postmitotic neuronal number is stable in larvae from day 4 or 5 of development (Figure 1\u2014figure supplement 2). Using the same experimental strategy, but now with sox2 BAC reporter, we show the sox2 gene is also expressed in existing and new cells. Using an additional Cardinal reporter, we show that some, but not all, of these new sox2+ cells become sox4+ (Figure 5), indicating that they can become neural precursors but also other cell types. We followed these reporters through regeneration to show that they are later found in cells with characteristic axonal projections and located in the lower lip of the mouth, and dorso-lateral domains adjacent to the mouth as stereotypic of serotonergic neurons. Thus, we show that these wound-induced sox2 cells do become neurons, other ectodermal cells and mouth endo/ectoderm in a similar lineage potential as the embryonic sox2+ lineage.\n\nThe existing, sox2+ sox4+ cells that continue to express these genes (i.e. the yellow cells in our assay) likely function as resident ectodermal- and neural- stem cells as we show that they are dividing and contribute to neural and ectodermal tissues. We wanted to investigate whether the new sox2+ cells (green) arose from existing cells or might arise from another, possibly totipotent resident stem cell population. As stem cells must, by definition, divide to produce a daughter that can be directed along a new differentiation pathway we used small molecule inhibitors to block cell division following bisection. We find that new sox2+ cells still emerge in these larvae (Figure 6). This therefore shows that new sox2+ expression does not require the asymmetric division from a stem cell progenitor, and instead, therefore, is the result of respecifying existing cells.\n\nThe human and mouse orthologs of the sea star sox2 gene have well-characterized functions in the induction of pluripotency and maintenance of stem cells, especially neurogenic stem cells (Feng and Wen, 2015). In combination with Oct4, Klf4, and c-Myc, sox2 can reprogram human and mouse somatic cells to pluripotent states (Soufi et al., 2015; Takahashi and Yamanaka, 2006). Other models of echinoderm regeneration have implicated, although not demonstrated, a role for orthologs of these pluripotency factors in de-differentiation (Mashanov and Zueva, 2019; Mashanov et al., 2015a). We have also previously shown that Klf4 is expressed at the wound edge following bisection and is thus presumably co-localized with sox2 (Cary et al., 2019b). The new wound-induced expression of sox2, therefore, presents the hypothesis that induction of sox2 expression is the actual cause of the dedifferentiation of cells, and/or may now function to maintain an ectodermal stem cell population. We have not yet formally shown whether new induction of sox2 leads to dedifferentiation (i.e. reprogramming into a progenitor state), or whether there are other types of reprogramming, as we do not know the differentiation state of cells induced to express sox2 or whether these cells now adopt an identical molecular signature to existing sox2 cells. The extent of lineage conversion are unknown and open questions in stem cell biology in any system, and yet is critical knowledge for translational applications of stem cells. The work here provides foundational knowledge in a tractable system to work toward answers to these questions. We have shown that once respecified, sox2+ cells are restricted to become ectoderm, and the lip of mouth ectoderm/endoderm cell types, indicating that they are multi-potent but germline restricted. In embryos, sox2+ cells are also restricted to ectodermal lineages and the lip of the mouth, and therefore, the wound-induced sox2+ cells now enter their normal, embryonic lineage. A subset of these induced cells recapitulate an embryonic neurogenesis pathway to reform serotonergic neurons around the mouth, and the latero-dorsal ganglia.\n\nAs new model systems are added to the study of regeneration, they present an opportunity to re-examine our understanding of regeneration and the ways in which cellular reprogramming is induced by wounding. Early concepts around cellular origins of whole body regeneration suggested a dichotomy between use of stem cells and de- or trans-differentiation, although more recent studies suggest a greater complexity, with a range of mechanisms often existing in any given species. For example, the freshwater planarian, Schmidtea mediterranea, utilizes a population of heterogeneous pluripotent somatic stem cells, called neoblasts, to proliferate and differentiate to replace body parts (S\u00e1nchez Alvarado, 2006). Recent work shows that specialized neoblasts can also divide to produce neoblasts that are pluripotent, suggesting a plasticity of their fate (Raz et al., 2021) Species such as Hydra and axolotl, refate differentiated cells either through dedifferentiation or transdifferentiation (Gerber et al., 2018). Although, Hydra also utilizes interstitial cells as a population of stem cells (Siebert et al., 2008). Cellular plasticity also varies widely, from the totipotent planarian neoblasts to lineage restricted progenitors used by vertebrate animals (Kragl et al., 2009; Zhu and Pearson, 2016).Our data indicate that echinoderm larvae induce non-stem cells into ectodermal neural stem cells, possibly through dedifferentiation or other mechanisms of fate conversion, as we see de novo sox2+ cells becoming neurons in regenerating larvae. This is reminiscent of the mechanisms of refating seen in cnidarian models such as Hydra. Additionally, we show that there is a maintained lineage of sox2+ and sox4+ progenitors in bisected larvae, also reforming the nervous system, as we see yellow neurons in regenerating larvae (Figure 5\u2014figure supplement 2A). This at a broad level echoes the use of lineage restricted stem cells seen in vertebrates and other systems. We posit that echinoderms may have a natural capacity to maintain a cellular plasticity that permits induction of new lineage stem-cells, as well as an ability to use existing lineage-restricted stem cells and that this flexibility may underlie their extensive abilities for regeneration.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Label IT Nucleic Acid Labeling Kit, DNP</td>\n      <td>Mirus</td>\n      <td>MIR 3825</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TSA Plus System</td>\n      <td>Perkin Elmer</td>\n      <td>NEL753001KT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DIG RNA Labeling Kit (SP6/T7)</td>\n      <td>Roche</td>\n      <td>11175025910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Click-iT Plus EdU Cell Proliferation Kit for Imaging, Alexa Fluor 488 dye</td>\n      <td>Invitrogen</td>\n      <td>C10637</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>mMESSAGE mMachine T7 transcription kit</td>\n      <td>Thermo-Fisher Scientific</td>\n      <td>AM1344</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Sheep polyclonal anti-digoxigenin AP-conjugate</td>\n      <td>Roche</td>\n      <td>11093274910,RRID:AB_2734716</td>\n      <td>IHC (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Sheep polyclonal anti-digoxigenin POD-conjugate</td>\n      <td>Roche</td>\n      <td>1120773391,RRID:AB_514500</td>\n      <td>IHC (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-DNP HRP-conjugate</td>\n      <td>Perkin Elmer</td>\n      <td>FP1129,RRID:AB_2629439</td>\n      <td>IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-serotonin</td>\n      <td>Sigma</td>\n      <td>S5545,RRID:AB_477522</td>\n      <td>IHC (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal1E11</td>\n      <td>DSHB (Nakajima et al., 2004)</td>\n      <td></td>\n      <td>IHC (1:5)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse polyclonalCy3</td>\n      <td>Jackson Immuno-research</td>\n      <td>115-165-146,RRID:AB_2491007</td>\n      <td>IHC (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit polyclonalCy3</td>\n      <td>Jackson Immuno-research</td>\n      <td>115-165-144</td>\n      <td>IHC (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit polyclonalAlexa Fluor 488</td>\n      <td>Invitrogen</td>\n      <td>A11008,RRID:AB_143165</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>sox2:Kaede BAC</td>\n      <td>This paper</td>\n      <td></td>\n      <td>http://echinobase.org</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>sox4:Kaede BAC</td>\n      <td>This paper</td>\n      <td></td>\n      <td>http://echinobase.org</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>sox4:mCardinal BAC</td>\n      <td>This paper</td>\n      <td></td>\n      <td>http://echinobase.org</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>sox4:GFP BAC</td>\n      <td>This paper</td>\n      <td></td>\n      <td>http://echinobase.org</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Aphidicolin</td>\n      <td>Sigma</td>\n      <td>A0781</td>\n      <td>25 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>Fiji(http://fiji.sc)</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Inkscape</td>\n      <td>Inkscape(https://inkscape.org/en/)</td>\n      <td>RRID:SCR_014479</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GNU Image Manipulation Program</td>\n      <td>GIMP(http://www.gimp.org)</td>\n      <td>RRID:SCR_003182</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Imaris</td>\n      <td>Imaris(http://www.bitplane.com/imaris/imaris)</td>\n      <td>RRID:SCR_007370</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Culture and regeneration\n\nAdult Sea star, Patiria miniata, were obtained from the southern coast of California, USA (Pete Halmay or Marinus Scientific) and housed in artificial sea water (ASW, Instant Ocean, Aquarium Systems) at 12\u00b0C\u201315\u00b0C. Embryos were cultured in ASW and fed Rhodomonas lens ad libitum as previously described (Cheatle Jarvela and Hinman, 2014). All studies of regenerating larvae were conducted with larval cultures beginning at 7dpf at which point the larvae were manually bisected stereotypically through the foregut, midway along the AP body axis as described earlier (Cary et al., 2019b). Regenerating larvae were photographed using differential interference contrast (DIC) optics over the course of regeneration on a Leica DMI4000B microscope at \u00d7100 magnification using Leica Application Suite software (Leica; Wetzlar, Germany).\n\n### Whole-mount in situ hybridization (WMISH)\n\nEmbryos, intact and regenerating larvae for WMISH were fixed in 4% paraformaldehyde (PFA) in a high-salt MOPS-fix buffer (100 mM MOPS pH 7.5, 2 mM MgSO4, 1 mM EGTA, and 0.8 M NaCl) for 90 mintes at room temperature or overnight at 4 \u00b0C. Following fixation, embryos were washed in (v/v) 25%, 50%, 75%, and 100% ice-cold 70% ethanol. Fixed embryos and larvae were stored at \u201320 \u00b0C. WMISH was conducted as described previously (Hinman et al., 2003; Yankura et al., 2010) with the following modification. Hybridization of sox4 and lhx2 riboprobes (final concentration of 0.2 ng/mL) was performed at 55 \u00b0C for 5 days. Hybridization of elav riboprobes (final concentration of 0.2 ng/mL) was performed at 58 \u00b0C for 5 days. Hybridization of foxq2, wnt3 and six3 riboprobes (final concentration of 0.1 ng/mL) was performed at 58 \u00b0C for 5 days. Larvae were imaged on a Leica DMI4000B inverted light microscope using DIC microscopy at \u00d7100 magnification and the Leica Application Suite software (Leica; Wetzlar, Germany). Primer sequences used to prepare insitu probes are listed in Supplementary file 1.\n\n### Double fluorescent in situ hybridization (FISH)\n\nIntact and regenerating larvae of P. miniata at the indicated time points were fixed in a solution of 4% paraformaldehyde in MOPS-fix buffer (0.1 \u2009M MOPS pH\u20097.5, 2 \u2009mM MgSO4, 1 \u2009mM EGTA, and 0.8 M NaCl) for 90 \u2009min at room temperature and transferred into 70% ethanol for long-term storage at \u2212\u200920 \u2009\u00b0C. Double FISH experiments were performed as previously described (McCauley et al., 2013) using digoxigenin-labeled antisense RNA probes (final concentration of 0.1\u20130.2 ng/mL) and dinitrophenol-labeled antisense RNA probes (final concentration of 0.1\u20130.2 ng/mL). Hybridized probes were detected using anti-DIG-POD antibody (1:1000, Roche, RRID:AB_514500), anti-DNP-HRP antibody (1:1000, Perkin Elmer, RRID:AB_2629439) and tyramide signal amplification (Perkin Elmer). A 1:100 dilution of Cy3 or FITC labeled tyramide in an amplification buffer was used to treat larvae for 7 min at room temperature in the dark. A Cy3- or FITC-labeled tyramide was deposited near the hybridized probe in a horseradish peroxidase mediated reaction. This allowed for fluorescence detection of labeled probes. During PBST washes, larvae were incubated for a total of 20 min in solution with 1:10,000 dilution of 10.9 mM DAPI, followed by PBST washes. Larvae were photographed with Zeiss 880 Laser Scanning Microscope at \u00d7200 magnification with 405 nm, 488 nm, and 560 nm channels in Z-stack settings.\n\n### EdU-FISH\n\nLabeling and detection of proliferating cells in P. miniata intact and regenerating larvae were performed using the Click-it Plus EdU 488 Imaging Kit (Life Technologies), with the following modifications. Larvae were incubated in a 10 \u2009\u03bcM solution of EdU for 15 min or 6 \u2009hr in seawater at 15 \u2009\u00b0C followed by immediate fixation in 4% PFA in PBS buffer with 0.1% Triton x-100. Fixation was performed at room temperature for 90 min. FISH was conducted as described above in the double FISH method with the following modification. Either FITC- or Cy3-labeled tyramide was used to detect labeled probes.\n\n### Immuno-fluorescent (IF) staining\n\nWhole mount IF staining was performed as described elsewhere (Cheatle Jarvela et al., 2016). Briefly animals were fixed in 4% PFA prepared in PBS (pH 7.4) at room temperature for 15 min. The samples were post-fixed in ice-cold methanol for 10 min, allowing for setting of larvae by gravity. The samples were then washed in PBS, permeabilized in PBS/0.5% Triton X-100 for 30 min, then incubated in 0.1 M glycine for 30 min to quench autofluorescence. After another wash in PBS/0.1% Triton X-100 (3 \u00d7 15 min), the larvae were blocked using 3% BSA/PBS/0.1% Triton X-100 for 1 hr. The primary antibodies (Supplementary file 2) were applied at 4 \u00b0C overnight. After extensive washing in PBS/0.1% Triton X-100 (6 \u00d7 15 min), the samples were incubated in the secondary antibodies (Supplementary file 2) for 1 hr at room temperature. Unbound antibodies were removed in four changes of PBS /0.1% Triton X-100 (15 min each) and nuclei were stained in 1:10,000 dilution of 10.9 mM DAPI (Invitrogen) for 30 min. After the final round of washes (3 \u00d7 10 min), the samples were coverslipped in SlowFade antifade medium (Invitrogen). Stacks of optical sections were taken using the Zeiss 880 confocal laser scanning microscope. Z-projections were generated in the Fiji image processing software (RRID:SCR_002285) and Imaris (Oxford Instruments, RRID:SCR_007370). Figures were constructed using Inkscape 1.1 (RRID:SCR_014479) and GIMP 2.10.30 (RRID:SCR_003182).\n\n### Generation of BAC-reporters\n\nThe sox4-BAC was recombineered with different fluorescent reporters (Supplementary file 3) following the established protocol (Buckley and Ettensohn, 2019). The EL250 cells and the GFP recombination cassette were generous gifts from Dr. Buckley. The GFP coding sequence was replaced with either Kaede coding sequence or mCardinal coding sequence in the recombination cassette. Using the same protocol, we generated a sox2-Kaede BAC (Supplementary file 3). Embryos injected with recombineered BACs were observed at 2dpf, 4dpf, and 7dpf to confirm the expression pattern recapitulating sox2 or sox4.\n\n### Microinjection of BACs\n\nBAC-reporters were injected into fertilized eggs at a final concentration of 10 ng/\u03bcl as previously described (Cheatle Jarvela and Hinman, 2014). For double lineage tracing an equivalent amount of sox2-Kaede BAC and sox4-Cardinal BAC were mixed at a final concentration of 10 ng/\u03bcl. Injected positive embryos were sorted under fluorescent stereo microscope at 24\u201348 hpf and then were kept in sea water at 15 \u00b0C until future manipulations.\n\n### Photo-conversion of Kaede P. miniata cells\n\nKaede is a photoconvertible fluorescent protein that changes irreversibly from green to red upon exposure to violet light (Ando et al., 2002). Photo-conversion of the Kaede was performed using an Andor Revolution XD spinning Disk confocal microscope emitting at 405 nm with 100% laser power for 60\u201380 s with snapshots taken every 10 s. After conversion transgenic embryos and larva were inspected for completion of conversion using the same microscope as quickly as possible to reduce the stress and transferred back to the plate with ASW.\n\n### Live embryos/larva manipulation and live imaging\n\nTo trace cell fate we kept transgenic embryos and larvae individually in a small petri dish with ASW at 15 \u00b0C. Before imaging the animals were immobilized in 500 mM high-salt sea water for 1\u20132 min to remove the cilia, then mounted on the slides. Immediately after imaging, coverslip was carefully picked up and animals were transferred back to the dish. To increase survival rate the animals were manipulated as quickly as possible, the different laser power settings were used to minimize tissue damage in embryonic and larval stages. Regenerated larvae at different time points were imaged with consistent settings for comparison. Imaging was performed by using the Andor Revolution XD spinning Disk confocal microscope with Andor IQ3 system. Z-projections of stacks of optical sections were generated in the Fiji image software (RRID:SCR_002285). Figures were constructed using Inkscape 1.1(RRID:SCR_014479) and GIMP 2.10.30 (RRID:SCR_003182).\n\n### Establishing Kaede protein stability in embryos\n\n#### Generation and injection of kaede mRNA\n\nKaede PCR product was amplified from the plasmid (RRID:Addgene_54726) for generating the template for capped mRNA synthesis (primers F: 5'- TAA TAC GAC TCA CTA TAG GGG TCG CCA CCA TGA GTC TGA T \u20133'; R: 5'-TTG CCG ATT TCG GCC TAT TGG \u20133') with mMESSAGE mMACHINE T7 transcription kit (ThermoFischer). Kaede mRNA was injected into the fertilized eggs at a final concentration of 300 ng/\u00b5l. Kaede-positive embryos were sorted under 488 nm fluorescent light at 15 hpf, then were kept in a plate with artificial sea water (ASW) at 15 \u00b0C until live imaging. These embryos were starved prior to imaging to avoid fluorescent background from their algal stomach contents.\n\n#### Generation of the conversion plot and the conversion rate plot\n\nPhoto-conversion was completed manually with Andor Revolution XD spinning Disk confocal microscope as described above. The time-lapse data were analyzed with Fiji. The pixel values (fluorescent intensity, or FI) of 488 nm and 560 nm channels within selected areas were measured at each time point. The background FI was subtracted to obtain the net FI which was plotted over time to generate the photo-conversion plot. The ratio of net FI (560 nm) over net FI (488 nm) was calculated and plotted over time to generate the conversion rate plot (Figure 3\u2014source data 1).\n\n#### Kaede stability - the fluorescence intensity curve\n\nTwelve embryos injected with Kaede mRNA were photoconverted at 24 hpf and were imaged everyday up to 12dpf. Out of the 12 converted embryos, 6 survived the repetitive imaging session. The net FI of the 488 nm and 560 nm channels were collected and calculated following the steps described above. The net FI of both channels were plotted over time to generate the fluorescence intensity curve (Figure 3\u2014source data 1).\n\n### Quantification of green Sox4+ cells and statistical analyses\n\nQuantification of green Sox4+ cells was conducted manually in larvae. Unhealthy, abnormal or dying larvae were not quantified. Quantification data of 5dpf larvae (Kaede converted at 2dpf embryonic stage, or embryonic conversion) and 7dpf larvae (Kaede converted at 4dpf larval stage, or larval conversion) were then processed for statistical analyses using the website https://www.estimationstats.com/#/. Shared control comparison was performed using Hedge\u2019s g comparison (Ho et al., 2019). The confidence interval width was 95%. Hedge\u2019s g was chosen because it compares effect sizes across experiments and is corrected for small-sample bias. The p-value was calculated with the permutation T test.\n\nThe green Sox4+ cells at the regeneration leading edge were quantified manually in seven larvae at 3dpb using Fiji. The data was compared to the 2dpf embryonic conversion data. The effect size was Cliff\u2019s delta and the mean of data. The confidence interval width was 95%. Two side p-value was calculated with the Brunner-Munzel test. The data was compared to the 7dpf larval conversion data. Delta\u2019s cliff did not apply to these two groups. Instead, we compared the means of the two groups. The confidence interval width was 95%. Two side p-value was calculated with the Mann Whitney test (Figure 4\u2014source data 1).\n\n### Quantification of Kaede+ cells and determination of colors\n\nQuantification of green, red and yellow Sox4+ cells was conducted manually in Z-stack images. The cellular area of each colored cell was compared to an adjacent background area with no Kaede signal to measure FI of 488 nm and 560 nm channels, respectively. The FI in the background area was subtracted from the FI at each channel within the cellular area to generate the net FI of the colored cell at 488 nm and 560 nm channels. We then calculated the ratio of net FI (560 nm) over net FI (488 nm) for each cell. The three colored groups were defined as follows: if the net FI ratio of 560 nm/488 nm >5, the cell is considered as a red cell; if the ratio is between Y and 5, the cell is considered as a yellow cell; if the ratio of 560 nm/488 nm< Y, the cell is considered as a green cell.\n\n### Inhibition of cell division\n\nTo inhibit cell division, we used aphidicolin (Sigma A0781) at a dosage of 8.3 \u03bcg/g (25 \u03bcM) in sea water. To prevent drug elimination, we changed Aphidicolin and vehicle (DMSO) every 24 hr, so the larvae were continuously exposed. The first treatment was done immediately post-injury, followed by two more drug changes every 24 hr. Control animals received 0.08% DMSO (vehicle) incubation. The aphidicolin treatment, therefore, covered the phases of regeneration, and preceded the first observed sox2 and sox4 expression by at least 1 day. These treatment parameters were established after a series of pilot experiments using two drug concentrations (25 uM, 50 uM), followed by 1 hr incubation in 15 uM EdU, which was detected by standard protocol (invitrogen C10637). To elucidate sox2+, sox4+ cells fate without cell division the fertilized eggs were injected with sox2, sox4 Bacs, 1-week-old larvae were bisected, photoconverted, incubated in aphidicolin solution for 3 days and then imaged.\n\n### Sample size of experiments\n\nAt least 30\u201350 embryos and/or larvae in three to five separate trials were analyzed in each in situ and immunostaining experiment. For quantification of FPs expression in live embryos and/or larvae were analyzed 7\u201310 samples from three to five separate matings for each injection of each BAC construct.\n",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "217cb298-5a4a-4d86-84c4-13ddf12f7553",
+      "submission_id": "524cdc3d-604a-4dc3-ad3f-cbb5581a4eb8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Phillip A Newmark, Morgridge Institute for Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72983.sa0](https://doi.org/10.7554/eLife.72983.sa0)\n\nThis manuscript presents a careful study of nervous system regeneration in the larval sea star using new transgenic tools for marking and following cells involved in regeneration. The authors find that these animals can regenerate their nervous system by the re-specification of existing cells, which are induced to express the embryonic neurogenesis program. The experimental approach is robust and creative and the data interpretation sound. For its contribution to our understanding of how cells are induced to contribute to specific cell lineages during regeneration, this work will be of interest to the broad community of researchers in regenerative and developmental biology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Phillip A Newmark, Morgridge Institute for Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72983.sa1](https://doi.org/10.7554/eLife.72983.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Regeneration of the larval sea star nervous system by wounding induced respecification to the Sox2 lineage\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Phillip Newmark as Reviewing Editor and Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) In this carefully performed and thoughtfully presented manuscript, the only conclusion that requires either additional data or softening of claims is that new Sox2 expression is induced in the absence of cell division. The results look suggestive of that, but Figure 6 only shows the effect on EdU labeling at 3 dpb (after 3 treatments with aphidicolin). Because lack of EdU labeling is shown only at 3 dpb, it is not clear to what extent proliferation is inhibited during the preceding 3 aphidicolin pulses. If there were any leakiness in the effects of the drug, some cells may still be dividing during the time at which sox2+ cells are specified. The authors' case would be strengthened if they show earlier time points to confirm lack of EdU incorporation during the initial stages of aphidicolin treatment. In the absence of such additional validation, the authors should soften their claims.\n\n2) For all figures please include sample sizes (the numbers of larvae analyzed and the numbers of cells analyzed in each larva). For figures 5 and 6, it is unclear how many samples were analyzed.\n\n3) The bottom panel of Figure 4F is not described in the figure legend or text. Please describe or delete it.\n\n4) Reviewer #1's public review raised concerns about the description of the bac transgenesis system used here as \"a lineage tracing system\" and suggests replacing it with wording that more accurately reflects the true nature of these reporters. Please either revise the manuscript accordingly or provide a rationale for describing the system in this way.\n\n5) Reviewer #1's public review asked for clarification about the infrequency of observing newly specified sox2+ cells that also express sox4 (Figure 5), so it would be helpful for the authors to provide additional interpretations about rarely observed colocalization patterns.\n\n6) Reviewer #1's public review also suggested that the final paragraph of the discussion be revised to reflect the current, more nuanced and complex understanding of how stem cells, specialized/committed stem cells, and de- and trans-differentiating cells contribute to different animal models of regeneration, including Hydra and axolotl.\n\n7) The authors should provide a supplementary table providing details on the length, sequence region, and accession number for each probe used for WMISH and FISH riboprobes.\n\n8) The \"Historic Kaede\" label in red text in Figure 6 is difficult to read superimposed upon the red staining in the image. Please change the text to provide better contrast.\n",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7c76fc9c-e708-4f25-a004-c9eca10590f5",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C1",
+      "claim": "Patiria miniata larvae have an extensive nervous system at 7 days post fertilization (7dpf).",
+      "claim_type": "EXPLICIT",
+      "source": "Sea star bipinnaria larvae have an extensive nervous system (Katow et al., 2009; Murabe et al., 2008; Nakajima et al., 2004; Carter et al., 2021; Elia et al., 2009; Hinman and Burke, 2018). Figure 1A\u2013B'' shows the 7-day post fertilization (7dpf) P. miniata larval nervous system labeled via localization of anti-synaptotagmin B (SynB) and serotonin antibodies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to previous literature and immunostaining data shown in Figure 1A-B''",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "48697e77-9cb5-44a6-bc46-c372f65a9c13",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C2",
+      "claim": "Anti-synaptotagmin B (SynB) labels all neurons in many echinoderm species.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the pan-neuronal marker SynB labels all neurons in many echinoderm species (Burke et al., 2006; Nakajima et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "efb4fe94-1d92-4cc1-b3fc-11b97021bce5",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C3",
+      "claim": "Serotonin immunoreactivity is concentrated predominantly in the anterior part of P. miniata larvae, in the dorsal ganglia with a subset of cells across the aboral surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Serotonin immunoreactivity is concentrated predominantly in the anterior part of the larvae; in the dorsal ganglia with a subset of cells across the aboral surface (Figure 1B, D' and E').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 1B, D', and E'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "156d573c-0540-4b9f-949c-74e075b0c427",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C4",
+      "claim": "Bisection of P. miniata larvae removes the anterior serotonergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when we bisect the larvae across the midline, 40 of 45 stained larvae show no remaining serotonergic neurons 1 day later, when they were first assayed. Figure 1F'\u2013f shows one such example. Of the remaining five, only one or two cells were found which, due to their location, are likely those normally associated with the lower lip of the mouth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data from immunostaining experiments and shown in Figure 1F'-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "d0b6f18f-cb9c-4653-bd03-fd787bd5922d",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C5",
+      "claim": "Serotonergic neurons are first detected at the anterior regenerating leading edge in 8/14 larvae 5 days following bisection.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining a time series of regeneration, we show that serotonergic neurons are first revealed by antibody staining at the anterior regenerating leading edge in 8/14 larvae 5 days following bisection (Figure 1G'\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative immunostaining data shown in Figure 1G'-g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "638ddbb3-0f5c-4575-a935-645a02c66d11",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C6",
+      "claim": "By 7 days post bisection (dpb), serotonergic neurons are found in 12/15 regenerating larvae at the anterior edge.",
+      "claim_type": "EXPLICIT",
+      "source": "By 7 days post bisection (dpb), serotonergic neurons are found in 12/15 regenerating larvae at the anterior edge (Figure 1H'\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative immunostaining data shown in Figure 1H'-h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "e1b734ca-711d-4291-95e9-4b3c19110648",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C7",
+      "claim": "Three weeks following bisection, the regenerated serotonergic neurons are bilaterally patterned at the dorsal side of the regenerating larvae, resembling the dorsal ganglia structure found in intact larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Three weeks following bisection, the regenerated serotonergic neurons are bilaterally patterned at the dorsal side of the regenerating larvae, resembling the dorsal ganglia structure found in intact larvae (Figure 1I'\u2013i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 1I'-i",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "87731c96-b647-48a8-b67e-d700f40cf3fd",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C8",
+      "claim": "The anterior serotonergic neurons are removed following anterior bisection and are reformed in the correct general location and with extensive axonal projections by 21 days of regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "These data therefore show that the anterior serotonergic neurons are removed following anterior bisection and are reformed in the correct general location and with extensive axonal projections by 21 days of regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the immunostaining time series data presented in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "a36766d9-7169-473e-b081-5a4c895204b2",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C9",
+      "claim": "During normal embryogenesis, sox2 is expressed broadly throughout the neurogenic ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that, during normal embryogenesis, the SRY-box TF, sox2, (formerly soxb1) is expressed broadly throughout the neurogenic ectoderm (Yankura et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "66639630-f4d2-452d-867b-6587d57ff2e5",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C10",
+      "claim": "Serotonergic neurons form from cells expressing sox4 that are first present and distributed in a 'salt and pepper' pattern throughout the ectoderm of the embryonic blastula.",
+      "claim_type": "EXPLICIT",
+      "source": "Serotonergic neurons form from cells expressing the SRY-box TF, sox4 (formerly soxc) that are first present and distributed in a 'salt and pepper' pattern throughout the ectoderm of the embryonic blastula (Yankura et al., 2013; Yankura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "ae02d26d-db38-4bd4-a616-f9f94d24f155",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C11",
+      "claim": "Foxq2 and six3 are expressed in the anterior ectoderm of the early gastrula and are required for the correct progression of the anteriorly most located sox4+ neural progenitors to become lhx2+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Two transcription factors, foxq2 and six3, are expressed in the anterior ectoderm of the early gastrula and are required for the correct progression of the anteriorly most located sox4+ neural progenitors to become lhx2+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to embryonic neurogenesis pathway shown in Figure 2A-C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "12871d9f-31c9-49e2-ab5b-1039c15f5bd7",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C12",
+      "claim": "After asymmetric cell divisions, lhx2+ progenitors give rise to post-mitotic neurons expressing elav.",
+      "claim_type": "EXPLICIT",
+      "source": "After asymmetric cell divisions, lhx2+ progenitors in turn give rise to post-mitotic neurons expressing elav (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the embryonic neurogenesis pathway diagram in Figure 2A-C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "e0d1104c-6b2d-4dc6-b8d0-6a8a3200d409",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C13",
+      "claim": "Post-mitotic neurons expressing elav produce serotonin when they mature.",
+      "claim_type": "EXPLICIT",
+      "source": "These post-mitotic neurons will produce serotonin when they mature (Cheatle Jarvela et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "faaa5a34-ccf4-42fc-a2d6-9b148b864cdb",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C14",
+      "claim": "Foxq2 and six3 are re-expressed in the anterior ectoderm of the leading regenerating edge by 3dpb.",
+      "claim_type": "EXPLICIT",
+      "source": "Following bisection, we find that foxq2 and six3 are expressed in the anterior ectoderm of the leading regenerating edge by 3dpb (Figure 2D, and Figure 2\u2014figure supplement 1A-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data shown in Figure 2D and Figure 2\u2014figure supplement 1A-H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "ff2a8112-fa12-4263-900c-4469ad0ce480",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C15",
+      "claim": "Foxq2 is expressed in cells that, in the normal larvae, reside along the middle of the AP axis and would never normally express anterior markers such as foxq2.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note therefore, that foxq2 is now expressed in cells that, in the normal larvae, reside along the middle of the AP axis and would never normally express anterior markers such as foxq2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the spatial location of foxq2 expression in regenerating larvae compared to normal development",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "5c29eb52-3598-4e72-8c3c-23c06a87f1f9",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C16",
+      "claim": "The anterior leading edge cells are being respecified during regeneration, at least partially recapitulating the embryonic axial state required for neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the anterior leading edge cells are being respecified, as defined by expressing new sets of genes, during regeneration. This respecification, at least partially, recapitulates the embryonic axial state required for neurogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from gene expression data showing re-expression of embryonic axial markers",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "b111b5d7-fa31-4dbb-bf52-63c13f5c3718",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C17",
+      "claim": "Sox2 expression is dramatically up-regulated at the wound site within 1 day following bisection.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox2 is expressed at low levels throughout the ectoderm of the normal larvae (Yankura et al., 2013; Figure 2\u2014figure supplement 2A) but within 1 day following bisection, sox2 expression is dramatically up-regulated at the wound site (Figure 2E\u2013e, and Figure 2\u2014figure supplement 2B), when compared to larval expression levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data shown in Figure 2E-e and Figure 2\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "df3ab1ea-1be9-4c31-83d3-5194574753b2",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C18",
+      "claim": "Localized sox2 expression precedes the formation of the proliferative zone but then remains within the anterior region.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that cell division occurs throughout the normal larva, but then decreases in the early bisected larva and is then predominantly localized to the wound adjacent anterior at 3dpb (Cary et al., 2019b). Thus, localized sox2 expression precedes the formation of the proliferative zone but then remains within this anterior region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of sox2 expression timing with previously published cell division data",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "8595c216-c0cb-4a06-b255-63b930e7dc04",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C19",
+      "claim": "Sox2 is highly expressed throughout the ectodermal proliferative zone and within some proliferating cells at 3dpb.",
+      "claim_type": "EXPLICIT",
+      "source": "This costaining shows that sox2 is highly expressed throughout this ectodermal zone and within some of these proliferating cells at 3dpb (Figure 2F\u2013f, and Figure 2\u2014figure supplement 2C) and that this remains through to 5dpb (Figure 2G\u2013g, and Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EdU-FISH data shown in Figure 2F-f and Figure 2\u2014figure supplement 2C-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "174d7dca-949c-451b-8d95-6aed3004084a",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C20",
+      "claim": "Sox4 expression is observed at the wound site within one day following bisection.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox4 expression, a marker of neural precursor cells, is also observed at the wound site within one day following bisection (Figure 2H\u2013h', and Figure 2\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data shown in Figure 2H-h' and Figure 2\u2014figure supplement 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "ae6a67f7-e1a6-4b54-b034-c3d8cbfad0d2",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C21",
+      "claim": "Sox4+ cells undergo cell divisions as FISH staining colocalizes with EdU.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus we show that sox4+ cells clearly undergo cell divisions as FISH staining colocalizes with EdU (Figure 2I\u2013i').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EdU-FISH data shown in Figure 2I-i' with 3D visualization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "c27aa479-0e8f-42a1-b53b-bb2b22b4457d",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C22",
+      "claim": "By 5dpb, sox4 expression is concentrated to the regenerating anterior, in dividing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By 5dpb, sox4 expression is concentrated to the regenerating anterior, again in dividing cells (Figure 2J\u2013j', and Figure 2\u2014figure supplement 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EdU-FISH data shown in Figure 2J-j' and Figure 2\u2014figure supplement 2H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "f1b4a810-37f2-44e3-8038-dd5dab0d2c80",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C23",
+      "claim": "The expression of lhx2 is detected by 5-7dpb in dispersed cells at the regenerating leading edge.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of lhx2 is also detected by 5-7dpb in dispersed cells at the regenerating leading edge (Figure 2 K-K2, and Figure 2\u2014figure supplement 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data shown in Figure 2K-K2 and Figure 2\u2014figure supplement 2J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "14e8d09b-2195-4ec3-bcff-9c98074c158e",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C24",
+      "claim": "The expression of post-mitotic neural marker elav is restored at the regenerating anterior at 5-7dpb.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the expression of post-mitotic neural marker elav is also restored at the regenerating anterior at 5-7dpb (Figure 2L\u2013l', and Figure 2\u2014figure supplement 2L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data shown in Figure 2L-l' and Figure 2\u2014figure supplement 2L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "f0485e30-0c69-4ee0-8547-ad2dc6c916c5",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C25",
+      "claim": "Sox4/lhx2 co-expression is found in cells located at the lateral sides of the regeneration leading edge.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-color FISH shows that, similar to embryogenesis, sox4/lhx2 co-expression is found in cells located at the lateral sides of the regeneration leading edge (Figure 2K\u2013l')",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by two-color FISH data shown in Figure 2K-l'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "77a43613-a987-452b-8a7e-daacdbf225f3",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C26",
+      "claim": "Lhx2 and elav are co-expressed in regenerating larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "and that lhx2 and elav are also co-expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by two-color FISH data shown in Figure 2L-l'",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "0a3a2f06-fa82-4ed3-bb6b-52d42aecda7a",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C27",
+      "claim": "Bisection leads to the activation of embryonic neurogenesis gene expression states.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data show that bisection leads to the activation of embryonic neurogenesis gene expression states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the gene expression data showing sequential expression of sox2, sox4, lhx2, and elav",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "f82960fa-f2d1-4847-a23b-9ede930e4680",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C28",
+      "claim": "Sox2 and sox4 expressions are induced upon wounding, and sox4+ cells located at the lateral leading edge give rise to lhx2+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox2 and sox4 expressions are induced upon wounding, and sox4+ cells located at the lateral leading edge give rise to lhx2+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the sequential gene expression and colocalization data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "7d0c1779-06a5-484a-b566-179e914010f3",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C29",
+      "claim": "The lhx2+ cells at the leading edge become post-mitotic neurons expressing elav.",
+      "claim_type": "EXPLICIT",
+      "source": "The lhx2+ cells at the leading edge in turn become post-mitotic neurons expressing elav (Figure 2M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from colocalization data and shown in model in Figure 2M",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "e4a4ead0-370a-4da2-b2d6-5a6043c4f986",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C30",
+      "claim": "The location of lhx2 expression at the leading edge, within the zone of foxq2 expression, recapitulates the spatial localization of embryonic serotonergic cell specification.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of lhx2 expression at the leading edge, within the zone of foxq2 expression, also recapitulates the spatial localization of embryonic serotonergic cell specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of spatial gene expression patterns between regeneration and embryonic development",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "060082d6-fa73-4f5a-be9d-3237fdaea7f7",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C31",
+      "claim": "The sox4:GFP recombinant BAC faithfully expresses GFP in sox4+ cells, recapitulating endogenous sox4 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "When the sox4:GFP recombinant BAC is injected into embryos, it faithfully expresses GFP in sox4+ cells, recapitulating endogenous sox4 expression (Cheatle Jarvela et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "39ebe180-f5e5-47d3-92d8-92100b754a9d",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C32",
+      "claim": "The approximately 150 Kbp surrounding the genomic locus of the sox4 coding region, including the endogenous basal promoter, is sufficient to drive correct expression of the transgenic GFP reporter gene.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the approximately 150 Kbp surrounding the genomic locus of the sox4 coding region, including the endogenous basal promoter, is sufficient to drive correct expression of the transgenic GFP reporter gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observation that the BAC recombinant recapitulates endogenous expression",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "399ac91e-19fb-4766-9aeb-d0c28a3582cf",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C33",
+      "claim": "Kaede fluorescent protein stably converts from green to red after exposure to UV light.",
+      "claim_type": "EXPLICIT",
+      "source": "Kaede fluorescent protein (FPbase ID: Q31FH) stably converts from green to red after exposure to UV light (Ando et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "c4264bde-b2f0-4a02-a41f-2b0ee04adffa",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C34",
+      "claim": "Translated Kaede protein is detectable above background for at least 7 days in P. miniata embryos and larvae when grown at 15\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "We experimentally measured the stability of Kaede, by injecting in vitro synthesized kaede mRNA into zygotes and quantifying fluorescence over time. We show that translated Kaede protein is detectable above background for at least 7 days in P. miniata embryos and larvae when grown at 15\u00b0C (Figure 3\u2014figure supplement 1, and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "65ad5163-d148-4c8f-a891-5775547302e1",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C35",
+      "claim": "GFP is extremely stable in P. miniata embryos, likely because they are grown at low temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports previous work which shows that GFP is extremely stable in these embryos, likely because they are grown at low temperatures (Arnone et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "f3e3016d-b1a1-4f48-9639-affdd22c58e9",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C36",
+      "claim": "At 2dpb and 3dpb, green-only, red-only, as well as yellow (green plus red) cells are observed in regenerating larvae injected with sox4:Kaede BAC.",
+      "claim_type": "EXPLICIT",
+      "source": "At 2dpb and 3dpb we observe green-only, red-only, as well as yellow (green plus red) cells (Figure 3B and D\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live imaging data shown in Figure 3B and D-d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "b28357fa-862f-4e79-a4de-db6a1edf5487",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C37",
+      "claim": "Red cells in the regenerating larvae are historically labeled cells that have expressed sox4 at some point prior to bisection but no longer express sox4.",
+      "claim_type": "EXPLICIT",
+      "source": "Red cells in the regenerating larvae are the historically labeled cells that have expressed sox4 at some point prior to bisection but no longer express sox4. For example, these may have been differentiated neurons that no longer express the progenitor marker sox4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the properties of the photoconvertible Kaede reporter system",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "4e3de341-02da-463d-a377-3f5f088d142b",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C38",
+      "claim": "Yellow cells are from existing larval and regenerative sox4+ cell lineages that expressed sox4 in the intact larvae and continue to express sox4 in their progeny after wounding.",
+      "claim_type": "EXPLICIT",
+      "source": "The yellow cells are from existing larval and regenerative sox4+ cell lineages. That is, these cells expressed sox4 in the intact larvae and continue to express sox4 in their progeny after wounding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the properties of the photoconvertible Kaede reporter system",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "61c6acd7-af36-4cc3-9eef-0042b384b41c",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C39",
+      "claim": "Green-only cells are cells that have not previously expressed sox4 but are induced to start expressing sox4 only upon decapitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, there are green-only cells. These are cells that have not previously expressed sox4 but are induced to start expressing sox4 only upon decapitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the properties of the photoconvertible Kaede reporter system",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "a7eab4a9-9788-4b65-b621-4c72f65da167",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C40",
+      "claim": "There are high numbers of green+ sox4 cells in larvae photoconverted at 2dpf and examined at 5dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that there are high numbers of green+ cells in larvae photoconverted at 2dpf (Figure 4B\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data from live imaging shown in Figure 4B-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "6640b41b-4106-4811-b500-e0e1864d0970",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C41",
+      "claim": "There are almost no green+ sox4 cells in larvae photoconverted at 4dpf and examined at 7dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "but almost none in larvae converted at 4dpf (Figure 4D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data from live imaging shown in Figure 4D-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "308ee5ef-e621-4ac7-a92d-2247ae4b5c87",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C42",
+      "claim": "New sox4+ cells are actively being specified in embryos, but this specification has stopped by 4dpf (larval stage).",
+      "claim_type": "EXPLICIT",
+      "source": "This is evidence that new sox4+ cells are actively being specified in embryos, but that this specification has stopped by 4dpf (i.e. larval stage).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the quantitative comparison of green sox4+ cells between embryonic and larval stages",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "ca7c1167-2e7f-4fb1-b8d9-bafcfa10b4f1",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C43",
+      "claim": "Specification of new sox4+ cells is highest in embryos, ends by late embryogenesis, and resumes in response to bisection induced regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the numbers of green (newly expressing) sox4+ cells during normal development with those counted in regeneration, we see that specification of new sox4+ cells is highest in embryos, ends by late embryogenesis, and resumes in response to bisection induced regeneration (Figure 4F, and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative comparison shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "3dd0ba7b-1d86-413c-ab2d-29fedb908a9e",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C44",
+      "claim": "Decapitation induces a wound response that re-initiates the specification of new sox4+ cells, a process which had stopped by day four of embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, decapitation induces a wound response that re-initiates the specification of new sox4+ cells, a process which had stopped by day four of embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the quantitative comparison of sox4+ cell specification across development and regeneration",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "43eac142-ea96-4e2e-b818-713b6e47a4d0",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C45",
+      "claim": "Sox2 is expressed throughout the ectoderm in embryos and therefore broadly marks this germ layer.",
+      "claim_type": "EXPLICIT",
+      "source": "During normal embryogenesis, the neural precursor cells are derived from sox2+ ectoderm. Sox2 is expressed throughout the ectoderm in embryos and therefore broadly marks this germ layer (Yankura et al., 2013; Yankura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "086ff823-1b65-411b-98ac-406e7bfbba51",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C46",
+      "claim": "The sox2:Kaede BAC recombinant recapitulates the embryonic sox2 expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "After BAC injection, zygotes started to express Kaede at 24-48hpf in broad patches of ectodermal cells. By larval stage, Kaede was detected on the ectoderm including the ciliary bands, dorsal ganglia, and ectodermally derived neurons (Figure 5\u2014figure supplement 1A-C'). This localization pattern recapitulates the embryonic sox2 expression pattern reported previously (Yankura et al., 2013; Yankura et al., 2010; Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of BAC expression pattern with previously published sox2 expression data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "9378a4dc-3cde-44ed-9131-68e6c1650155",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C47",
+      "claim": "Sox4+ cells overlap completely with sox2+ cells on the ectoderm in normally developing larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examine expression in normal developing larvae, we find that sox4+ cells overlap completely with sox2+ cells on the ectoderm as is expected in normally developing larvae (Figure 5\u2014figure supplement 1D-D''), although not all sox2+ cells are sox4+, as sox2+ also produce non neural ectoderm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by double BAC labeling data shown in Figure 5\u2014figure supplement 1D-D''",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "9d6bd2bd-878e-41a6-83e3-9e560668f324",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C48",
+      "claim": "New (green+ cells) expression of sox2 is found following bisection, indicating that cells that had not previously expressed sox2 are now expressing the sox2 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found new (green+ cells) expression of sox2, indicating that cell that had not previously expressed sox2 are now expressing the sox2 gene following bisection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by live imaging data from photoconverted sox2:Kaede larvae",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "c627cc91-a70d-4427-a69f-8a190a75bb3a",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C49",
+      "claim": "Four of 15 observed larvae exhibited cells with colocalized green Kaede (new sox2 expression) and Cardinal (sox4) at the regenerating leading edge at 3dpb.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, four of 15 observed larvae exhibited cells with colocalized green Kaede (new sox2 expression) and Cardinal (sox4,far red, pseudo-colored blue) at the regenerating leading edge (Figure 5 B(b-b3))at 3dpb.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data from double BAC labeling shown in Figure 5B(b-b3)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "072e8b46-355a-4284-a14e-0602199a49bc",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C50",
+      "claim": "New sox2+ cells start to express sox4 and thereby enter into neurogenesis pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "As the green Kaede reporter labels de novo sox2 expression, this shows that these new sox2+ cells start to express sox4 and thereby enter into neurogenesis pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the colocalization of green Kaede and Cardinal in the same cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "9f2e1e40-951a-44fc-bca4-d513ab9d5120",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C51",
+      "claim": "At the time of bisection, all labeled sox4+ cells overlapped with sox2+ lineage in the imaged larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note that at the time of bisection, all labeled sox4+ cells overlapped with sox2+ lineage in the imaged larvae. In other words, all Cardinal + cells are also red Kaede+ at the time of photoconversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the double BAC labeling experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "e95167e7-fe50-4f27-a4b2-0d8abd12e56d",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C52",
+      "claim": "Cells derived from non sox2+ lineages are induced to express sox2 in regenerating larvae and will contribute to neural progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the sox4:Cardinal in Figure 5B must be expressed after wounding. This therefore supports the hypothesis that cells derived from non sox2+ lineages are induced to express sox2 in regenerating larvae and will contribute to neural progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observation that green Kaede+ Cardinal+ cells are present after wounding",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "4d3781c1-49a8-44d0-ae8b-39fe87e252f8",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C53",
+      "claim": "Sox2+ cells followed through to 7dpb show fluorescence in neural projections characteristic of fully formed neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed when we follow these larvae through to 7dpb (Figure 5\u2014figure supplement 2A-B) we find fluorescence in the neural projections which are characteristic of fully formed neurons (Figure 5\u2014figure supplement 2a1-a3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live imaging data shown in Figure 5\u2014figure supplement 2A-B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "5266bc5f-7697-441c-a720-642f9a61dc23",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C54",
+      "claim": "Newly specified sox2+ cells contributed to only tissues normally derived from sox2+ lineages in all regenerating larvae examined.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined at least 10 larvae over three independent injection batches and found that in all regenerating larvae the newly expressing sox2+ cells contributed to only tissues normally derived from sox2+ lineages (e.g. Figure 5\u2014figure supplement 1E-F'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative observation across multiple larvae shown in Figure 5\u2014figure supplement 1E-F''",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "e0c52864-dea2-4915-87c9-a7c15fe3b0ee",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C55",
+      "claim": "Sox2:Kaede green cells are observed in the outer ectodermal epithelium, the mouth, and ciliary bands.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed sox2:Kaede green cells in the outer ectodermal epithelium, the mouth, and ciliary bands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by observation from live imaging of sox2:Kaede larvae",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "fdd009e5-fcb0-46af-ba84-5f0c1771719e",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C56",
+      "claim": "Once induced, sox2+ cells maintain their normal, embryonic fate potential.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that once induced these cells will maintain their normal, embryonic fate potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the observation that newly expressing sox2+ cells only contribute to normal sox2+ lineages",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "d3f86c5d-39d4-495e-a095-568c0ab9d9da",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C57",
+      "claim": "Not all sox2+ cells enter the neurogenesis pathway in regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that not all sox2+ cells enter the neurogenesis pathway in regeneration (Figure 5 C(c1-c3)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by observation from double BAC labeling shown in Figure 5C(c1-c3)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "8f2de075-28c6-4962-af1b-d6b09fe8bd3f",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C58",
+      "claim": "While larval sox2 cell lineages are restricted to ectodermal potency, they do not necessarily contribute only sox4+ neural fates.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that while larval sox2 cell lineages are restricted to ectodermal potency, they do not necessarily contribute only sox4+ neural fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observation that some sox2+ cells do not express sox4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "d274b3f4-8207-4d51-a733-dd6ea0aeeea3",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C59",
+      "claim": "25 \u00b5M of Aphidicolin is the minimum concentration needed to reliably inhibit cell division as assayed by EdU staining.",
+      "claim_type": "EXPLICIT",
+      "source": "We first used a serial dilution test to determine that the 25 \u00b5M of Aphidicolin was the minimum concentration needed to reliably inhibit cell division as assayed by EdU staining, while cells in DMSO controls divided normally (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "ba834b4c-7ae8-47db-b63e-39dd0526c017",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C60",
+      "claim": "Aphidicolin consistently blocked cell division over one week when applied with daily changes.",
+      "claim_type": "EXPLICIT",
+      "source": "We incubated regenerated larvae in the drug or vehicle for up to 1 week, with daily changes into fresh drug or vehicle, and analyzed them every 24 hr to test that Aphidicolin consistently blocked cell division over this time (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "402cf485-16c3-42be-a22d-42d2c40bdefe",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C61",
+      "claim": "There are multiple yellow and green cells along the leading regenerated edge in aphidicolin-treated larvae at 3dpb.",
+      "claim_type": "EXPLICIT",
+      "source": "We then assayed for red, green, or yellow-positive cells (Figure 6C\u2013D\", and Figure 6\u2014source data 1). We show that there are multiple yellow, green cells along the leading regenerated edge.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live imaging data shown in Figure 6C-D'' and quantitative data in Figure 6\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "a2af750a-1e9a-4b7d-9bab-0fabf119b406",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C62",
+      "claim": "Cells which were not previously expressing sox2 are able to initiate expression of this gene in the absence of cell division and are thus not the result of asymmetric stem cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that cells which were not previously expressing sox2 are now able to initiate expression of this gene in the absence of cell division and are thus not the result of asymmetric stem cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the observation of green sox2+ cells in aphidicolin-treated larvae",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "e583fc8e-26f1-43ba-9e40-8ac510462449",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C63",
+      "claim": "Echinoderms have an impressive ability for extensive whole body regeneration found in most species of the phylum.",
+      "claim_type": "EXPLICIT",
+      "source": "Echinoderms on the other hand have an impressive ability for extensive whole body regeneration found in most species of the phylum (Ferrario et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "019b8689-96c3-4dd3-ac9e-854565783e56",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C64",
+      "claim": "The emerging consensus from echinoderm regeneration studies is that echinoderms rely extensively on wound-adjacent dedifferentiation for regenerating lost tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The emerging consensus from these and other studies is that echinoderms rely extensively on wound-adjacent dedifferentiation for regenerating lost tissues (Ferrario et al., 2020; Mashanov and Zueva, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "e9304164-e07f-4263-8105-3fe3637a3def",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C65",
+      "claim": "Expression of stem-cell marker genes have been identified as possible cell sources in some echinoderm species.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, expression of stem-cell marker genes have been identified as possible cell sources in some species (Mashanov et al., 2015b; Reinardy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "1a7351b3-9fb8-4ada-858c-09c797169e70",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C66",
+      "claim": "There are many parallels between echinoderm larval development and early vertebrate development, particularly in the formation of the anterior-posterior axis and development of the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Although pentaradial as adults, there are many parallels between echinoderm larval development and early vertebrate development, particularly in the formation of the anterior-posterior axis and development of the nervous system (Angerer et al., 2011; Hinman and Burke, 2018; Range et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "34bd438d-18c5-4606-90ce-3809df1b214e",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C67",
+      "claim": "When sea star larvae are decapitated, they are able to regenerate their anterior structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that when these sea star larvae are decapitated, they are able to regenerate their anterior structures (Cary et al., 2019b; Oulhen et al., 2016; Vickery et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "d6a4379b-0d7a-4dc5-9b40-fd46f8cf73c4",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C68",
+      "claim": "Sox4+ cells are scattered throughout the ectoderm where they function as precursors for multiple neural types in P. miniata larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryos, sox2 is expressed throughout the ectoderm, while sox4+ cells are scattered throughout the ectoderm where they function as precursors for multiple neural types in the larvae (Cheatle Jarvela et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "bc457e53-e832-4002-83d4-ff1b861b32b1",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C69",
+      "claim": "Lhx2 is needed for the differentiation of serotonergic neurons in P. miniata embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also previously shown that lhx2 is needed for the differentiation of serotonergic neurons (Cheatle Jarvela et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "0de4c3bd-d241-4267-9d58-f976b72cd678",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C70",
+      "claim": "Ectodermal elav expression is a marker of differentiated neurons in P. miniata.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously demonstrated that these gene products mark the embryonic neurogenesis pathways, and that ectodermal elav expression is a marker of differentiated neurons (Cheatle Jarvela et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "de7cd8c1-78d0-4ead-a689-44538dab4df3",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C71",
+      "claim": "The human and mouse orthologs of the sea star sox2 gene have well-characterized functions in the induction of pluripotency and maintenance of stem cells, especially neurogenic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The human and mouse orthologs of the sea star sox2 gene have well-characterized functions in the induction of pluripotency and maintenance of stem cells, especially neurogenic stem cells (Feng and Wen, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "6406524c-16d9-4e31-b6dd-607dfb763fd7",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C72",
+      "claim": "In combination with Oct4, Klf4, and c-Myc, sox2 can reprogram human and mouse somatic cells to pluripotent states.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with Oct4, Klf4, and c-Myc, sox2 can reprogram human and mouse somatic cells to pluripotent states (Soufi et al., 2015; Takahashi and Yamanaka, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "dab2cd67-7bc8-4eb4-9905-94d0db3b643c",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C73",
+      "claim": "Other models of echinoderm regeneration have implicated, although not demonstrated, a role for orthologs of pluripotency factors in de-differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Other models of echinoderm regeneration have implicated, although not demonstrated, a role for orthologs of these pluripotency factors in de-differentiation (Mashanov and Zueva, 2019; Mashanov et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "f1572383-4c70-4f49-a6ce-309d455b7af2",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C74",
+      "claim": "Klf4 is expressed at the wound edge following bisection and is presumably co-localized with sox2.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also previously shown that Klf4 is expressed at the wound edge following bisection and is thus presumably co-localized with sox2 (Cary et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work and inference about colocalization",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "03620638-9f32-4815-89f4-cd9481261a94",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C75",
+      "claim": "Once respecified, sox2+ cells are restricted to become ectoderm, and the lip of mouth ectoderm/endoderm cell types, indicating that they are multi-potent but germline restricted.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that once respecified, sox2+ cells are restricted to become ectoderm, and the lip of mouth ectoderm/endoderm cell types, indicating that they are multi-potent but germline restricted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the lineage tracing data showing sox2+ cells only contribute to ectodermal lineages",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "9ab17435-4325-438d-8b85-b7de18b73d52",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C76",
+      "claim": "In embryos, sox2+ cells are restricted to ectodermal lineages and the lip of the mouth.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryos, sox2+ cells are also restricted to ectodermal lineages and the lip of the mouth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by previous knowledge of embryonic sox2 expression and lineage",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "3169eedb-d019-4f82-ac7f-bf26244e22f6",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C77",
+      "claim": "The wound-induced sox2+ cells enter their normal, embryonic lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "and therefore, the wound-induced sox2+ cells now enter their normal, embryonic lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison of regenerative and embryonic sox2+ cell lineages",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "fd27ed44-7913-47ba-bf2e-2b998e7b462f",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C78",
+      "claim": "A subset of induced sox2+ cells recapitulate an embryonic neurogenesis pathway to reform serotonergic neurons around the mouth, and the latero-dorsal ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of these induced cells recapitulate an embryonic neurogenesis pathway to reform serotonergic neurons around the mouth, and the latero-dorsal ganglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the lineage tracing and gene expression data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "9fc15fe2-0cf1-40ff-9a4b-5d2ceaa5c8b2",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C79",
+      "claim": "The freshwater planarian, Schmidtea mediterranea, utilizes a population of heterogeneous pluripotent somatic stem cells, called neoblasts, to proliferate and differentiate to replace body parts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the freshwater planarian, Schmidtea mediterranea, utilizes a population of heterogeneous pluripotent somatic stem cells, called neoblasts, to proliferate and differentiate to replace body parts (S\u00e1nchez Alvarado, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "c13a5b5b-7c19-4b50-928e-1003dada32e5",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C80",
+      "claim": "Specialized neoblasts can divide to produce neoblasts that are pluripotent, suggesting a plasticity of their fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work shows that specialized neoblasts can also divide to produce neoblasts that are pluripotent, suggesting a plasticity of their fate (Raz et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to recent work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "262cb872-3371-4c56-a484-d54b409b33f9",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C81",
+      "claim": "Species such as Hydra and axolotl refate differentiated cells either through dedifferentiation or transdifferentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Species such as Hydra and axolotl, refate differentiated cells either through dedifferentiation or transdifferentiation (Gerber et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "a1119915-f8e8-4209-b962-6c99c485ebd9",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C82",
+      "claim": "Hydra also utilizes interstitial cells as a population of stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, Hydra also utilizes interstitial cells as a population of stem cells (Siebert et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "a58889c6-b3c2-4095-ad9d-252fcda3a620",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C83",
+      "claim": "Cellular plasticity varies widely, from the totipotent planarian neoblasts to lineage restricted progenitors used by vertebrate animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular plasticity also varies widely, from the totipotent planarian neoblasts to lineage restricted progenitors used by vertebrate animals (Kragl et al., 2009; Zhu and Pearson, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "c62f124f-d2cf-452e-b61c-837e404afddb",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C84",
+      "claim": "Echinoderm larvae induce non-stem cells into ectodermal neural stem cells, possibly through dedifferentiation or other mechanisms of fate conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that echinoderm larvae induce non-stem cells into ectodermal neural stem cells, possibly through dedifferentiation or other mechanisms of fate conversion, as we see de novo sox2+ cells becoming neurons in regenerating larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the lineage tracing data showing de novo sox2+ cells contribute to neurons",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "f6088a94-3d75-4e82-a03b-5cf8b384e255",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C85",
+      "claim": "There is a maintained lineage of sox2+ and sox4+ progenitors in bisected larvae that reform the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we show that there is a maintained lineage of sox2+ and sox4+ progenitors in bisected larvae, also reforming the nervous system, as we see yellow neurons in regenerating larvae (Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lineage tracing data showing yellow neurons in Figure 5\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "d6b997c8-a2e8-47b7-a517-f828a85545d5",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C86",
+      "claim": "Echinoderms may have a natural capacity to maintain a cellular plasticity that permits induction of new lineage stem-cells, as well as an ability to use existing lineage-restricted stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit that echinoderms may have a natural capacity to maintain a cellular plasticity that permits induction of new lineage stem-cells, as well as an ability to use existing lineage-restricted stem cells and that this flexibility may underlie their extensive abilities for regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative conclusion drawn from the combined observations of de novo sox2+ cell induction and maintained sox2+/sox4+ lineages",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "0c906942-73cd-42fe-9d0e-1959bfbf75b3",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C87",
+      "claim": "The BAC DNA construct is stably inherited by clones of cells and therefore present mosaically in the cells of the larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "The BAC DNA construct is stably inherited by clones of cells and therefore present mosaically in the cells of the larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of BAC transgenesis in echinoderms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "4eb68167-a8ea-4f03-98f3-854b8859ca61",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C88",
+      "claim": "Multiple constructs when co-injected into echinoderm zygotes are co-integrated, and are therefore inherited in the same cellular lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that multiple constructs when co-injected into echinoderm zygotes are then co-integrated, and are therefore inherited in the same cellular lineages (Cheatle Jarvela et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "b746b74d-85ed-4be8-a806-aa29f0f7c7fd",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C89",
+      "claim": "Aphidicolin is a conserved inhibitor of cell division that is particularly well characterized in echinoderms where it is known to block DNA polymerase function, nuclear break down and microtubule organizing centers.",
+      "claim_type": "EXPLICIT",
+      "source": "We bathed sea star larvae in Aphidicolin, a conserved inhibitor of cell division, that is particularly well characterized in echinoderms where it is known to block DNA polymerase function, nuclear break down and microtubule organizing centers (Mashanov et al., 2017; Nishioka et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "bcaf5bb4-86c7-4c30-bcbe-3ebb90786037",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C90",
+      "claim": "Reestablishing axial patterning is a commonly observed early feature in many species undergoing whole body regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Reestablishing axial patterning is a commonly observed early feature in many species undergoing whole body regeneration (Gehrke et al., 2019; Reddien, 2019), which we now show also occurs in sea star larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "d31316e7-9a47-4ab3-b145-389b46eae0f9",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C91",
+      "claim": "The vertebrates, with some few exceptions, have limited capacity for regeneration that is usually restricted to specific cells, tissues and organs.",
+      "claim_type": "EXPLICIT",
+      "source": "The vertebrates, with some few exceptions, have limited capacity for regeneration that is usually restricted to specific cells, tissues and organs (Rodriguez and Kang, 2020; Tanaka and Reddien, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to review literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "6ef0da40-dac7-4dbf-a9bf-28384121e840",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C92",
+      "claim": "The emerging evidence in vertebrates points to the use of tissue-specific stem cells and corresponding specific niches as a cellular source for regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "The emerging evidence points to the use of tissue-specific stem cells and corresponding specific niches as a cellular source for regeneration (Kragl et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "49c97a0a-4670-4e94-86c3-bc5f465ab9b4",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C93",
+      "claim": "Molecular and ultrastructural studies in brittle star arm regeneration point to use of adjacent epithelial cells to differentiate into sclerocytes needed for arm skeleton regeneration, recapitulating, at least in part, a development program.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, molecular and ultrastructural studies in brittle star arm regeneration point to use of adjacent epithelial cells to differentiate into sclerocytes needed for arm skeleton regeneration, recapitulating, at least in part, a development program (Piovani et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "fc053fc8-74fc-4a2b-b211-3ca2f5cacf2c",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C94",
+      "claim": "Comprehensive studies in the regeneration of radial nerve chords in sea cucumbers point to the use of radial glial dedifferentiation in nervous system regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Comprehensive studies in the regeneration of radial nerve chords in sea cucumbers also point to the use of radial glial dedifferentiation in nervous system regeneration (Mashanov and Zueva, 2019; Mashanov et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "eae19a9b-36a0-4128-8d20-48312a280a21",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C95",
+      "claim": "It has been well documented that echinoderm larval forms are capable of extensive regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "It has now been well documented that the larval forms are also capable of extensive regeneration (Oulhen et al., 2016; Vickery et al., 2001; Kasahara et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "32d73b69-727d-4c80-adfc-c424c819813d",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C96",
+      "claim": "Sea stars have extensive regenerative capacities, a feature which extends across both their adult and larval life phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Sea stars, as typical for echinoderms, have extensive regenerative capacities, a feature which extends across both their adult and larval life phases (Vickery et al., 2001; Vickery et al., 2002; Ben Khadra et al., 2017; Hernroth et al., 2010; Oulhen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "3fe106b5-f4dc-499e-ada1-588376f5d89c",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C97",
+      "claim": "The serotonergic postmitotic neuronal number is stable in larvae from day 4 or 5 of development.",
+      "claim_type": "EXPLICIT",
+      "source": "The subsidence of sox4+ cell formation in the larval stage is consistent with data showing that the serotonergic postmitotic neuronal number is stable in larvae from day 4 or 5 of development (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "2367c5a7-6b3d-4d77-9366-a8464971a0cf",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "claim_id": "C98",
+      "claim": "Cell division occurs throughout the normal larva, but then decreases in the early bisected larva and is then predominantly localized to the wound adjacent anterior at 3dpb.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that cell division occurs throughout the normal larva, but then decreases in the early bisected larva and is then predominantly localized to the wound adjacent anterior at 3dpb (Cary et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d1d195b2-46bb-44ed-9b5d-7e752bac484a",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "P. miniata larvae possess an extensive nervous system at 7dpf with serotonergic neurons concentrated in the anterior dorsal ganglia. Following bisection that removes these anterior serotonergic neurons, they regenerate at the anterior leading edge by 5dpb, are present in 12/15 larvae by 7dpb, and by 21dpb are bilaterally patterned resembling intact dorsal ganglia with extensive axonal projections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide converging evidence from immunostaining with validated markers (SynB, serotonin antibody), quantitative data across multiple time points (40/45 larvae show removal, 8/14 at 5dpb, 12/15 at 7dpb), and morphological characterization showing proper spatial patterning and neural morphology. The time series provides strong support for complete regeneration of the serotonergic nervous system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Following bisection, embryonic neurogenesis gene expression states are reactivated in regenerating larvae. Axial patterning genes (foxq2, six3) and neurogenesis pathway genes (sox2, sox4, lhx2, elav) are sequentially re-expressed at the wound site and regenerating anterior in cells that would not normally express these markers, with sox2 upregulated by 1dpb, sox4 by 1dpb, lhx2 by 5-7dpb, and elav by 5-7dpb. Co-expression patterns (sox4/lhx2, lhx2/elav) and spatial localization recapitulate embryonic serotonergic neurogenesis pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C30 are well-supported by FISH data showing sequential gene expression, EdU co-staining demonstrating proliferation of progenitors, two-color FISH with 3D Imaris visualization confirming co-expression, and comparison to embryonic expression patterns from prior work. The spatial and temporal progression of gene expression strongly supports reactivation of embryonic neurogenesis pathways during regeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using a novel sox4:Kaede photoconvertible BAC reporter system, the authors demonstrate that new sox4+ neural progenitor cells are specified upon bisection. Green-only (newly expressing) sox4+ cells are observed at 2-3dpb in regenerating larvae, while photoconversion experiments show high numbers of new sox4+ cells in embryos (2dpf) but almost none in larvae (4dpf), indicating that sox4+ cell specification normally stops by 4dpf but is re-initiated by wounding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C44 are supported by experimental validation of the Kaede reporter system (7-day stability, recapitulation of endogenous expression), live imaging data showing distinct populations of green, red, and yellow cells, and quantitative comparison across developmental stages and regeneration (Figure 4F with statistical analysis). The photoconversion approach provides strong evidence for de novo specification of sox4+ cells upon injury.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "37d29711-f626-4933-9bc1-8c1705e13449",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using sox2:Kaede and sox4:Cardinal double BAC reporters, the authors show that cells not previously expressing sox2 are induced to express sox2 following bisection, and a subset of these newly specified sox2+ cells co-express sox4 and enter neurogenesis pathways. These newly specified sox2+ cells contribute only to tissues normally derived from sox2+ lineages (ectoderm, mouth, ciliary bands, neurons), indicating they maintain normal embryonic lineage restriction and fate potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C58 are supported by double BAC labeling experiments showing green Kaede+ Cardinal+ cells (4/15 larvae at 3dpb), lineage tracing through 7dpb showing neural projections, and examination of at least 10 larvae across three batches confirming lineage restriction. The observation that all sox4:Cardinal+ cells were red Kaede+ at photoconversion strengthens the inference that green Kaede+ Cardinal+ cells represent de novo sox2 expression followed by sox4 activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "b79ccf7f-b7fe-41f7-8fe6-acb97cf6b2a0",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Treatment with 25 \u00b5M aphidicolin reliably blocks cell division (as confirmed by EdU staining) for up to one week with daily changes. In aphidicolin-treated regenerating larvae, green (newly expressing) sox2+ cells are still observed at the regenerating leading edge at 3dpb, demonstrating that new sox2 expression can be initiated in the absence of cell division and thus is not the result of asymmetric stem cell division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are well-supported by dose-response experiments establishing effective aphidicolin concentration, time-course validation of sustained division inhibition (Figure 6\u2014figure supplement 1), and live imaging showing green sox2+ cells in drug-treated larvae. This experiment provides strong evidence against a stem cell division mechanism and supports cellular respecification. The logic is sound: if new sox2 expression required asymmetric division, it should not occur when division is blocked.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "92817b9f-a8b1-4040-a4a3-74017b783319",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors conclude that echinoderm larvae use dual mechanisms for nervous system regeneration: (1) induction of non-stem cells into ectodermal neural stem cells (de novo sox2+ cells) that maintain germline-restricted, multipotent fate (ectoderm and mouth ectoderm/endoderm), and (2) maintained lineages of existing sox2+ and sox4+ progenitors. This cellular plasticity, combining induced lineage stem cells with existing lineage-restricted stem cells, may underlie extensive regenerative capacity in echinoderms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78, C84-C86 represent integrative conclusions supported by the lineage tracing data (C54-C56 showing lineage restriction, C85 showing yellow neurons from existing lineages) and the photoconversion experiments (C48-C52, C62 showing de novo sox2 induction). The conclusion is appropriately cautious about mechanisms (\"possibly through dedifferentiation\") and acknowledges that C86 is somewhat speculative. The dual mechanism model is well-supported by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "ad6a342c-416a-4b3b-9082-d48c4645aede",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background context from prior literature on echinoderm regeneration, comparative regeneration mechanisms across taxa, embryonic neurogenesis in P. miniata, and the role of sox2 orthologs in pluripotency and cellular reprogramming in vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C74, C79-C83, C90-C96 are appropriately cited to prior literature and represent accurate summaries of established knowledge in the field. These claims provide necessary context for interpreting the current results but do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    },
+    {
+      "id": "393a17d6-7b15-470c-a7af-e34b21c9bd75",
+      "content_id": "362a41a1-e922-43b9-8ed5-6877879574c0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript describes established technical properties and prior findings that support the experimental design: BAC constructs are stably inherited mosaically and co-integrate when co-injected; aphidicolin blocks DNA polymerase and cell division in echinoderms; serotonergic neuron numbers stabilize by 4-5dpf; and cell division localizes to the wound-adjacent anterior by 3dpb.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89, C97-C98 describe established technical knowledge (C87-C89) or cite prior work (C97-C98) that provides important methodological context. These are appropriately documented and support the interpretation of the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:11:23.932589Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7c76fc9c-e708-4f25-a004-c9eca10590f5",
+      "result_id": "d1d195b2-46bb-44ed-9b5d-7e752bac484a"
+    },
+    {
+      "claim_id": "48697e77-9cb5-44a6-bc46-c372f65a9c13",
+      "result_id": "d1d195b2-46bb-44ed-9b5d-7e752bac484a"
+    },
+    {
+      "claim_id": "efb4fe94-1d92-4cc1-b3fc-11b97021bce5",
+      "result_id": "d1d195b2-46bb-44ed-9b5d-7e752bac484a"
+    },
+    {
+      "claim_id": "156d573c-0540-4b9f-949c-74e075b0c427",
+      "result_id": "d1d195b2-46bb-44ed-9b5d-7e752bac484a"
+    },
+    {
+      "claim_id": "d0b6f18f-cb9c-4653-bd03-fd787bd5922d",
+      "result_id": "d1d195b2-46bb-44ed-9b5d-7e752bac484a"
+    },
+    {
+      "claim_id": "638ddbb3-0f5c-4575-a935-645a02c66d11",
+      "result_id": "d1d195b2-46bb-44ed-9b5d-7e752bac484a"
+    },
+    {
+      "claim_id": "e1b734ca-711d-4291-95e9-4b3c19110648",
+      "result_id": "d1d195b2-46bb-44ed-9b5d-7e752bac484a"
+    },
+    {
+      "claim_id": "87731c96-b647-48a8-b67e-d700f40cf3fd",
+      "result_id": "d1d195b2-46bb-44ed-9b5d-7e752bac484a"
+    },
+    {
+      "claim_id": "a36766d9-7169-473e-b081-5a4c895204b2",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "66639630-f4d2-452d-867b-6587d57ff2e5",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "ae02d26d-db38-4bd4-a616-f9f94d24f155",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "12871d9f-31c9-49e2-ab5b-1039c15f5bd7",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "e0d1104c-6b2d-4dc6-b8d0-6a8a3200d409",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "faaa5a34-ccf4-42fc-a2d6-9b148b864cdb",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "ff2a8112-fa12-4263-900c-4469ad0ce480",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "5c29eb52-3598-4e72-8c3c-23c06a87f1f9",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "b111b5d7-fa31-4dbb-bf52-63c13f5c3718",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "df3ab1ea-1be9-4c31-83d3-5194574753b2",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "8595c216-c0cb-4a06-b255-63b930e7dc04",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "174d7dca-949c-451b-8d95-6aed3004084a",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "ae6a67f7-e1a6-4b54-b034-c3d8cbfad0d2",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "c27aa479-0e8f-42a1-b53b-bb2b22b4457d",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "f1b4a810-37f2-44e3-8038-dd5dab0d2c80",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "14e8d09b-2195-4ec3-bcff-9c98074c158e",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "f0485e30-0c69-4ee0-8547-ad2dc6c916c5",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "77a43613-a987-452b-8a7e-daacdbf225f3",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "0a3a2f06-fa82-4ed3-bb6b-52d42aecda7a",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "f82960fa-f2d1-4847-a23b-9ede930e4680",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "7d0c1779-06a5-484a-b566-179e914010f3",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "e4a4ead0-370a-4da2-b2d6-5a6043c4f986",
+      "result_id": "45795bb9-2042-4b73-85fa-1a3f9e5d30b6"
+    },
+    {
+      "claim_id": "060082d6-fa73-4f5a-be9d-3237fdaea7f7",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "39ebe180-f5e5-47d3-92d8-92100b754a9d",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "399ac91e-19fb-4766-9aeb-d0c28a3582cf",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "c4264bde-b2f0-4a02-a41f-2b0ee04adffa",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "65ad5163-d148-4c8f-a891-5775547302e1",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "f3e3016d-b1a1-4f48-9639-affdd22c58e9",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "b28357fa-862f-4e79-a4de-db6a1edf5487",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "4e3de341-02da-463d-a377-3f5f088d142b",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "61c6acd7-af36-4cc3-9eef-0042b384b41c",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "a7eab4a9-9788-4b65-b621-4c72f65da167",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "6640b41b-4106-4811-b500-e0e1864d0970",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "308ee5ef-e621-4ac7-a92d-2247ae4b5c87",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "ca7c1167-2e7f-4fb1-b8d9-bafcfa10b4f1",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "3dd0ba7b-1d86-413c-ab2d-29fedb908a9e",
+      "result_id": "5d65021c-fd7d-44a4-a3c3-cbe524d08165"
+    },
+    {
+      "claim_id": "43eac142-ea96-4e2e-b818-713b6e47a4d0",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "086ff823-1b65-411b-98ac-406e7bfbba51",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "9378a4dc-3cde-44ed-9131-68e6c1650155",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "9d6bd2bd-878e-41a6-83e3-9e560668f324",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "c627cc91-a70d-4427-a69f-8a190a75bb3a",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "072e8b46-355a-4284-a14e-0602199a49bc",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "9f2e1e40-951a-44fc-bca4-d513ab9d5120",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "e95167e7-fe50-4f27-a4b2-0d8abd12e56d",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "4d3781c1-49a8-44d0-ae8b-39fe87e252f8",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "5266bc5f-7697-441c-a720-642f9a61dc23",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "e0c52864-dea2-4915-87c9-a7c15fe3b0ee",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "fdd009e5-fcb0-46af-ba84-5f0c1771719e",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "d3f86c5d-39d4-495e-a095-568c0ab9d9da",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "8f2de075-28c6-4962-af1b-d6b09fe8bd3f",
+      "result_id": "37d29711-f626-4933-9bc1-8c1705e13449"
+    },
+    {
+      "claim_id": "d274b3f4-8207-4d51-a733-dd6ea0aeeea3",
+      "result_id": "b79ccf7f-b7fe-41f7-8fe6-acb97cf6b2a0"
+    },
+    {
+      "claim_id": "ba834b4c-7ae8-47db-b63e-39dd0526c017",
+      "result_id": "b79ccf7f-b7fe-41f7-8fe6-acb97cf6b2a0"
+    },
+    {
+      "claim_id": "402cf485-16c3-42be-a22d-42d2c40bdefe",
+      "result_id": "b79ccf7f-b7fe-41f7-8fe6-acb97cf6b2a0"
+    },
+    {
+      "claim_id": "a2af750a-1e9a-4b7d-9bab-0fabf119b406",
+      "result_id": "b79ccf7f-b7fe-41f7-8fe6-acb97cf6b2a0"
+    },
+    {
+      "claim_id": "03620638-9f32-4815-89f4-cd9481261a94",
+      "result_id": "92817b9f-a8b1-4040-a4a3-74017b783319"
+    },
+    {
+      "claim_id": "9ab17435-4325-438d-8b85-b7de18b73d52",
+      "result_id": "92817b9f-a8b1-4040-a4a3-74017b783319"
+    },
+    {
+      "claim_id": "3169eedb-d019-4f82-ac7f-bf26244e22f6",
+      "result_id": "92817b9f-a8b1-4040-a4a3-74017b783319"
+    },
+    {
+      "claim_id": "fd27ed44-7913-47ba-bf2e-2b998e7b462f",
+      "result_id": "92817b9f-a8b1-4040-a4a3-74017b783319"
+    },
+    {
+      "claim_id": "c62f124f-d2cf-452e-b61c-837e404afddb",
+      "result_id": "92817b9f-a8b1-4040-a4a3-74017b783319"
+    },
+    {
+      "claim_id": "f6088a94-3d75-4e82-a03b-5cf8b384e255",
+      "result_id": "92817b9f-a8b1-4040-a4a3-74017b783319"
+    },
+    {
+      "claim_id": "d6b997c8-a2e8-47b7-a517-f828a85545d5",
+      "result_id": "92817b9f-a8b1-4040-a4a3-74017b783319"
+    },
+    {
+      "claim_id": "e583fc8e-26f1-43ba-9e40-8ac510462449",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "019b8689-96c3-4dd3-ac9e-854565783e56",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "e9304164-e07f-4263-8105-3fe3637a3def",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "1a7351b3-9fb8-4ada-858c-09c797169e70",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "34bd438d-18c5-4606-90ce-3809df1b214e",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "d6a4379b-0d7a-4dc5-9b40-fd46f8cf73c4",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "bc457e53-e832-4002-83d4-ff1b861b32b1",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "0de4c3bd-d241-4267-9d58-f976b72cd678",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "de7cd8c1-78d0-4ead-a689-44538dab4df3",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "6406524c-16d9-4e31-b6dd-607dfb763fd7",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "dab2cd67-7bc8-4eb4-9905-94d0db3b643c",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "f1572383-4c70-4f49-a6ce-309d455b7af2",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "9fc15fe2-0cf1-40ff-9a4b-5d2ceaa5c8b2",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "c13a5b5b-7c19-4b50-928e-1003dada32e5",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "262cb872-3371-4c56-a484-d54b409b33f9",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "a1119915-f8e8-4209-b962-6c99c485ebd9",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "a58889c6-b3c2-4095-ad9d-252fcda3a620",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "bcaf5bb4-86c7-4c30-bcbe-3ebb90786037",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "d31316e7-9a47-4ab3-b145-389b46eae0f9",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "6ef0da40-dac7-4dbf-a9bf-28384121e840",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "49c97a0a-4670-4e94-86c3-bc5f465ab9b4",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "fc053fc8-74fc-4a2b-b211-3ca2f5cacf2c",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "eae19a9b-36a0-4128-8d20-48312a280a21",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "32d73b69-727d-4c80-adfc-c424c819813d",
+      "result_id": "ad6a342c-416a-4b3b-9082-d48c4645aede"
+    },
+    {
+      "claim_id": "0c906942-73cd-42fe-9d0e-1959bfbf75b3",
+      "result_id": "393a17d6-7b15-470c-a7af-e34b21c9bd75"
+    },
+    {
+      "claim_id": "4eb68167-a8ea-4f03-98f3-854b8859ca61",
+      "result_id": "393a17d6-7b15-470c-a7af-e34b21c9bd75"
+    },
+    {
+      "claim_id": "b746b74d-85ed-4be8-a806-aa29f0f7c7fd",
+      "result_id": "393a17d6-7b15-470c-a7af-e34b21c9bd75"
+    },
+    {
+      "claim_id": "3fe106b5-f4dc-499e-ada1-588376f5d89c",
+      "result_id": "393a17d6-7b15-470c-a7af-e34b21c9bd75"
+    },
+    {
+      "claim_id": "2367c5a7-6b3d-4d77-9366-a8464971a0cf",
+      "result_id": "393a17d6-7b15-470c-a7af-e34b21c9bd75"
+    }
+  ],
+  "comparisons": []
+}

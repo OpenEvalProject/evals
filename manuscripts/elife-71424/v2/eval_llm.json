@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors characterized 277 cortical neurons from juvenile rat barrel cortex (layers I-IV) using scRT-PCR and electrophysiology, identifying seven neuronal subtypes including glutamatergic neurons (RS and IB) and GABAergic interneurons (Vip, Sst, Npy, and FS-Pvalb subtypes) based on molecular markers and electrophysiological properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C41 provide comprehensive molecular and electrophysiological characterization of cortical neuron subtypes. The classification is based on established methods (Ward's clustering, scRT-PCR) with clear molecular markers (Slc17a7 for glutamatergic, Gad1/2 for GABAergic) and distinct electrophysiological properties. Sample sizes are adequate (n=277 total) and the approach has been validated in prior publications by the same group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors detected KATP channel subunits Kcnj11 and Abcc8 in cortical neurons by scRT-PCR, with detection rates of 25% and 10% respectively, distributed similarly across neuronal subtypes. Co-detection of both subunits (n=14 of 248) suggests functional KATP channel expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C46 report low mRNA detection rates that the authors later acknowledge as underdetection (C59). The inference of functional channel expression from co-detection in only 5.6% of neurons (C46) is weak, especially given the acknowledged technical limitations. The claim requires validation with functional data, which is provided later but creates uncertainty about the molecular profiling accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Pharmacological characterization revealed that cortical neurons (n=63) express functional KATP channels that respond to diazoxide (ABCC8-preferring opener) but not pinacidil (ABCC9-preferring), with currents reversing near the potassium equilibrium potential. KATP activation doubled whole-cell conductance regardless of neuronal subtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 provide strong pharmacological evidence for functional KATP channels with appropriate controls (pinacidil negative control, tolbutamide reversal, ROS scavenger control). The reversal potential near EK confirms potassium selectivity. Statistical analyses show consistency across subtypes. The discrepancy between high pharmacological responsiveness (100%) and low mRNA detection (25-10%) is noted but addressed with technical explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors conclude that the large majority of cortical neurons express functional ABCC8-mediated KATP channels, despite low scRT-PCR detection rates (35% Kcnj11, 7% Abcc8 in responsive neurons), which they attribute to technical underdetection due to low mRNA copy numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 acknowledge the mRNA-protein detection discrepancy and provide reasonable technical explanations (low copy number, intronless gene issues, cytoplasm collection limitations). The conclusion is supported by the pharmacological data showing universal responsiveness and is consistent with published transcriptomic data showing ~5 mRNA copies per cell. The inference is logical given the technical constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Using Kcnj11 knockout mice, the authors demonstrate that ATP-free dialysis with elevated sodium induces outward currents in wild-type neurons (n=19/26 responsive) but not in Kcnj11\u2212/\u2212 neurons, confirming that cortical KATP channels are composed of KCNJ11 and ABCC8 subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 provide strong genetic evidence using knockout mice. The ATP washout approach is well-designed to activate KATP channels via Na+/K+ ATPase stimulation. The clear difference between genotypes (outward current in WT vs. inward current in KO) with appropriate statistics (p=2.4\u00d710\u22126) strongly supports the conclusion. The inward current in KO mice (C66) suggests compensatory changes, which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "KATP channels modulate neuronal excitability across all cortical neuron subtypes: tolbutamide (blocker) caused depolarization (2.6\u00b10.8 mV) and increased firing (0.3\u00b10.2 Hz), while diazoxide (opener) caused hyperpolarization (\u22124.0\u00b10.6 mV) without affecting basal firing. Most neurons (32/39) were responsive, with similar modulation across subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 demonstrate functional consequences of KATP channel modulation with appropriate statistics and controls. The modest effects on membrane potential and firing are consistent with the channels' role as metabolic sensors. The lack of diazoxide effect on basal firing (C71) is explained by low baseline activity. Statistical comparisons across subtypes are appropriate, though the apparent lack of FS-Pvalb responsiveness could be better explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Lactate, but not glucose, enhances cortical neuron firing in a dose-dependent manner via KATP channel closure. Reducing glucose from 10 to 2.5 mM had no effect, but adding 15 mM lactate doubled firing rate. This effect was blocked by diazoxide and absent in Kcnj11\u2212/\u2212 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 provide the central finding with strong experimental design using perforated patch to preserve metabolism. The dose-response (C79), pharmacological blockade (C80-C81), and genetic validation (C82) provide converging evidence. The occlusion by tolbutamide (C81) suggests saturating lactate levels. Statistical significance is demonstrated throughout. This is a key mechanistic finding linking metabolism to neuronal activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Cortical neurons express monocarboxylate transporters (MCT1/Slc16a1: 19.5%, MCT2/Slc16a7: 28.2% detection) and the MCT inhibitor 4-CIN (250 \u00b5M) reversed lactate-induced firing enhancement, indicating that facilitated lactate transport is required for the effect on neuronal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 establish the requirement for lactate transport. Despite low scRT-PCR detection rates (similar to KATP subunits), the functional evidence from 4-CIN blockade (C87, p=7.686\u00d710\u22123) is convincing. The concentration used (250 \u00b5M) is appropriate based on cited literature. The inference that transport is required (C88) is well-supported, though the authors appropriately note that 4-CIN could also affect astrocyte lactate release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Cortical neurons express lactate dehydrogenase subunits (Ldha and Ldhb) and can oxidize lactate, as demonstrated by increased NADH fluorescence upon lactate application (p=3.1\u00d710\u221224) and decreased NADH with pyruvate (p=2.08\u00d710\u22124). Pyruvate enhanced firing similarly to lactate, ruling out GPR81 receptor involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide strong evidence for neuronal lactate metabolism. The NADH imaging directly demonstrates lactate oxidation with highly significant statistics. The pyruvate control (C91-C92) elegantly rules out the GPR81 receptor mechanism since pyruvate doesn't activate this receptor but has similar effects. The opposite NADH changes with lactate vs. pyruvate are consistent with LDH directionality. High LDH detection rates support the molecular basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C100"
+    ],
+    "result": "Using FRET-based ATP biosensor AT1.03YEMK, the authors show that ATP production in cortical neurons derives largely from oxidative phosphorylation (KCN reduced ATP by 52.3\u00b10.6%) and only modestly from glycolysis (IAA reduced ATP by 2.9\u00b10.2%), with KCN also inducing strong NADH increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95, C100 provide direct evidence for the metabolic basis of lactate preference. The FRET biosensor approach is appropriate and the dramatic difference between glycolysis inhibition (IAA, 2.9% decrease) and oxidative phosphorylation inhibition (KCN, 52.3% decrease) is highly significant (p=2.44\u00d710\u221213 for both). The NADH increase with KCN confirms active oxidative phosphorylation. This explains why lactate (oxidative substrate) is more effective than glucose (requires glycolysis).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "The authors conclude that lactate is preferred over glucose as an energy substrate in active cortical neurons and acts as both a metabolic substrate and signaling molecule that enhances neuronal activity through KATP channel closure, with KCNJ11/ABCC8 channels functionally expressed across neuronal types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99, C101-C102, C104 represent the main conclusions synthesizing all experimental findings. The preference for lactate is supported by: (1) glucose insensitivity at normoglycemic levels, (2) lactate-induced firing enhancement, (3) predominant oxidative metabolism, (4) lactate uptake and oxidation capacity. The dual role as substrate and signal is well-supported. The mechanistic link through KATP channels is demonstrated by pharmacology, genetics, and metabolic manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors propose that neurovascular and neurometabolic coupling creates a lactate 'up state' that enhances neuronal processing and plasticity. Glutamatergic transmission stimulates astrocyte glucose uptake and lactate release, which diffuses through gap junctions and enhances firing of both excitatory and inhibitory neurons, supporting memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103, C105-C111 represent interpretations and model building based on the current findings and literature. While the experimental data support lactate's effects on individual neurons, the network-level predictions about 'up states' and memory formation (C105) are speculative. The supporting citations (C106-C107, C110-C111) provide context but the specific temporal and spatial dynamics proposed require additional experimental validation. This is appropriate discussion but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors discuss that extracellular lactate levels (up to 5 mM basally, doubled during activity) and peripheral lactate from exercise (up to 15 mM in plasma) could contribute to enhanced neuronal activity. Blood-borne lactate promotes learning via BDNF, whose production is altered in Kcnj11\u2212/\u2212 mice and impaired by KATP openers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 integrate the findings with physiological context using appropriate citations. The lactate concentrations used experimentally (5-15 mM) are justified by physiological measurements (C112-C113). The connection to BDNF (C115-C116) provides additional mechanistic insight linking KATP channels to plasticity, though this is based on cited work rather than new experiments. This contextualizes the findings appropriately within broader brain function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The introduction establishes background on brain energy metabolism: the brain consumes 20% of blood oxygen and glucose despite being 2% of body mass, with 50-80% of energy consumed by Na+/K+ ATPase. Neurovascular coupling maintains glucose at 2-3 mM and lactate increases to twice its 2-5 mM baseline during activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide well-established background information supported by appropriate citations to classic papers in the field. These are not new findings but necessary context. The values cited (brain mass percentage, energy consumption, glucose/lactate concentrations) are consistent with the literature and provide justification for the experimental design, particularly the glucose and lactate concentrations used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The introduction reviews the astrocyte-neuron lactate shuttle hypothesis, noting evidence for lactate gradients between astrocytes and neurons, preferential lactate use in cultured neurons, and lactate's ability to support activity during glucose shortage, while also noting contradictory evidence of neuronal glycolysis and lactate release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 accurately summarize the controversial state of the field with appropriate citations to both supporting and contradictory evidence. This establishes the rationale for the study by highlighting the unresolved question of glucose vs. lactate contributions to neuronal metabolism. The balanced presentation of conflicting evidence (C15 challenges C12-C14) appropriately motivates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes that KATP channels act as metabolic sensors regulated by ATP/ADP ratio, are activated when ATP/ADP \u22645, and are expressed in neocortex where they protect against ischemia and modulate excitability and firing. Neuronal activity activates Na+/K+ ATPase, which alters ATP/ADP ratio sufficiently to activate KATP channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22, C25-C28 provide essential background on KATP channel biology with appropriate citations. The mechanistic link between neuronal activity, Na+/K+ ATPase, and KATP channel activation (C20-C21) is well-established and provides the conceptual framework for using KATP channels as metabolic readouts. The prior evidence for cortical KATP expression and function (C25-C28) justifies the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

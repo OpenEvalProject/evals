@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C52",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C181",
+      "C182",
+      "C184",
+      "C185",
+      "C191",
+      "C192",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C220"
+    ],
+    "result": "The study developed a network-based framework using ~26,000 tetrapod species to identify climatic niche domains by projecting species' realized niches onto a two-dimensional climatic space (PET and AP), translating this into a weighted bipartite network, and applying the Infomap community detection algorithm to identify groups of climatic bins with similar species pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C3, C52, C63-C67, C70-C73, C181-C182, C184-C185, C191-C192, C212-C215, C220) are internally consistent and describe a coherent analytical pipeline. The data sources are properly cited (C174-C176, C188-C190), sample sizes are reported (C181), and the network approach is well-established in the literature (C73, C215-C219). The methodology is sufficiently detailed to be reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C68",
+      "C92",
+      "C93",
+      "C94",
+      "C126",
+      "C127"
+    ],
+    "result": "High-energy climates (deserts, tropical savannas, steppes) show consistency across tetrapod groups and K\u00f6ppen's plant-based classification, with desert climates being the most similar across all groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C68, C92-C94, C126-C127 are supported by the comparative analysis presented in Figures 2-3 and Table 1. The AMI values (C88-C91) provide quantitative support for these qualitative observations. The consistency across multiple independent analyses (individual tetrapod classes and K\u00f6ppen) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C99",
+      "C100",
+      "C101",
+      "C131"
+    ],
+    "result": "Temperate climates (medium energy) were the least congruent between tetrapod groups and K\u00f6ppen's regions, showed the lowest statistical support in bootstrap analyses, and exhibited the highest transitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C99-C101, C131 are supported by multiple lines of evidence: comparative analysis (Figures 2-3), bootstrap analysis (C82-C84), and specificity analysis (C109-C111). The correlation between bootstrap p-values and mean specificity (C111: GLMM coeff. 6.21; p < 0.001) provides statistical support for the relationship between these measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C102",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Temperate climates allow for idiosyncratic adaptations, possibly because alternative climatic variables (e.g., seasonality) may be important or because these conditions do not prevent colonization by species with different climatic optima.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C102, C132-C136 are speculative interpretations (evidence_type: SPECULATION) of the observed patterns in temperate climates. While the interpretations are plausible and consistent with the data, they are not directly tested. The authors acknowledge uncertainty (C137) and call for future investigation (C138). Additional experiments or analyses would be needed to distinguish between alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C124"
+    ],
+    "result": "The clustering algorithm identified 16 main climatic niche domains for all tetrapods combined, which are similar to those of the independent tetrapod classes but lack some class-specific particularities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C124 are directly supported by the analysis results shown in Figure 2. The number of domains (16) is explicitly stated and the similarity to independent class domains is demonstrated through visual comparison and AMI values (C89: mean AMI = 0.71, ranging from 0.66 to 0.77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "While the number of major domains is similar across tetrapod classes (13-15), there are well-supported group-specific domains that relate to physiological adaptations: mammals and birds show low-energy domains (polar climates) absent in reptiles and amphibians, while reptiles show domains in arid conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78, C139-C142 are supported by the niche domain analysis (Figure 2) and comparative analysis. The group-specific domains are clearly visible in the figures and are consistent with known physiological differences between homeothermic (birds, mammals) and ectothermic (reptiles, amphibians) tetrapods. The citation for reptile adaptations to arid environments (C142: Pie et al., 2017) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Adjusted mutual information (AMI) analysis shows moderate similarity among tetrapod class regions (mean AMI = 0.62, range 0.57-0.68), higher similarity between combined tetrapod regions and individual classes (mean AMI = 0.71, range 0.66-0.77), and lower similarity between K\u00f6ppen's regions and tetrapod regions (AMI = 0.44 for all tetrapods, mean AMI = 0.44 for individual classes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 present quantitative results from the AMI analysis with specific values reported in Table 1. The AMI metric is properly described (C227-C229) and appropriately applied to compare regional classifications. The values are internally consistent and support the qualitative observations about congruence and differences between classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Three different tropical-humid regions were identified, each corresponding to one of the three major tropical rainforest masses: Amazonian, African, and Southeast Asian rainforests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by the analysis results shown in Figures 2 and 3, where three distinct EHWH domains (EHWH1, EHWH2, EHWH3) are identified and mapped to the three major tropical rainforest regions. This finding represents a refinement of K\u00f6ppen's classification, which groups these regions together.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C128",
+      "C129"
+    ],
+    "result": "Specificity analysis reveals that harsh climates (deserts, continental-polar) have the highest specificity levels regardless of group, while temperate regions show the lowest specificity. Lower specificity values are generally associated with climatic region boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109, C128-C129 are supported by the specificity analysis presented in Figure 4A and Appendix 1\u2014figure 2. The methodology for calculating specificity is clearly described (C230-C233), and the interpretation that high specificity reflects difficulty of colonization (C108, C129) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Bootstrap p-values and mean specificity are significantly correlated (GLMM coeff. 6.21; p < 0.001, R\u00b2 = 0.29), supporting the idea that temperate climatic conditions impose less restrictive conditions on tetrapods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 reports a statistically significant correlation with specific coefficient and p-value. However, the R\u00b2 value of 0.29 indicates that only 29% of variance is explained, suggesting a weak to moderate relationship. The interpretation in C112 is reasonable but should be considered cautiously given the modest explanatory power. The statistical test appears appropriate (GLMM with taxonomic group as random effect).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Notable geographic agreement exists between species and climatic conditions within niche domains, but differences occur across groups and regions. Extreme climates show larger mismatches, with desert climates defined mainly by Australian species (except reptiles) and northern regions of amphibians/reptiles defined by species at lower latitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 are supported by the geographical signal analysis presented in Figure 4B-C and Appendix 1\u2014figures 3-7. The specific examples (Australian desert species, latitudinal patterns) are documented in the figures. These findings demonstrate that historical and geographical processes influence species distributions beyond pure climate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C146",
+      "C148",
+      "C149"
+    ],
+    "result": "Amphibians and reptiles (poor dispersers) show stronger geographical signals than mammals and birds, suggesting that dispersal capabilities contribute to geographical signal in niche domains, with poor dispersers having more difficulty tracking preferred climates and colonizing disjoint areas with similar climates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121, C146, C148-C149 are supported by the quantitative geographical signal analysis (Figure 4D) and are consistent with known dispersal capabilities of tetrapod groups (C147, C151). The interpretation is supported by citation to relevant literature (C149: Ara\u00fajo and Pearson, 2005). The pattern is biologically plausible and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C150"
+    ],
+    "result": "All tetrapods together showed the lowest geographical signal, suggesting that increased evolutionary time can reduce geographical signal, possibly through convergent adaptations to similar climates in different geographic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C122 is supported by the data (Figure 4D), but the interpretation in C123 and C150 is speculative. The lower signal could result from multiple factors including evolutionary time, taxonomic diversity in dispersal strategies (C151-C152), or averaging effects. The authors acknowledge this uncertainty (C153) and call for further investigation. Alternative explanations are not adequately tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225"
+    ],
+    "result": "Bootstrap analysis with 100 resampled networks assessed domain robustness, revealing that niche domains with intermediate energy (1000-1500 PET) and low to moderate water (up to 800 ml) were less robust than other domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85, C221-C225 describe a rigorous bootstrap procedure to assess uncertainty. The methodology is well-described and appropriate for assessing the stability of network community detection results. The community-stability approach is properly cited (C224: Calatayud et al., 2019a). The finding that intermediate energy/water domains are less robust is clearly shown in Figure 2 with bootstrap support values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C69",
+      "C143",
+      "C144",
+      "C173"
+    ],
+    "result": "The results call for caution when using general climate classifications to study ecology, evolution, or conservation of specific taxa, questioning the validity of plant-based classifications for animal studies and highlighting the need for taxon-specific climatic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C69, C143-C144, C173 are reasonable recommendations based on the demonstrated differences between tetrapod groups and between tetrapod and K\u00f6ppen classifications. The AMI values (C88-C91) quantitatively support the existence of meaningful differences. However, the strength of this recommendation depends on the specific application\u2014for some purposes, general classifications may still be adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The climatic axes were divided into quantiles based on Earth's climatic value distribution, resulting in nearly uniform PET divisions and AP divisions skewed toward low values (higher resolution for low-precipitation conditions). The optimal number of divisions was 17 for most groups and 18 for amphibians.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C202 describe methodological choices for discretizing the climatic space. The approach is reasonable and addresses the issue of non-uniform distribution of climatic values (C194). The optimization procedure for selecting the number of divisions is mentioned (C201) with reference to Appendix 1, though the specific optimization criterion is not detailed in the main text. The results are shown in Appendix 1\u2014figure 8.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "To address commission errors in range maps, the study extracted climatic values from high-resolution rasters (0.08\u00b0) and averaged them within 0.5\u00b0 cells, reducing errors at both borders and inside species ranges. Non-parametric bootstrap analysis was used to address potential issues with mean values under high variability or non-normal distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203-C211 describe a thoughtful approach to handling known limitations of range map data. The two-step procedure (high-resolution extraction followed by averaging at coarser resolution) represents a reasonable compromise between different sources of error. The citations supporting these concerns (C203-C204, C206) are appropriate. The bootstrap approach (C211) provides an additional check on the robustness of results to these data quality issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The study acknowledges limitations including taxonomic bias in the ~26,000 species used, potential for other climatic variables to refine poorly supported regions, and uncertainties from using realized rather than fundamental niches, which may be influenced by non-climatic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C165 represent appropriate acknowledgment of study limitations. The taxonomic bias (C159) is a real constraint, though 26,000 species is still a substantial dataset. The suggestion that additional climatic variables might improve classification (C160-C161) is reasonable, particularly for temperate regions. The distinction between realized and fundamental niches (C162-C165) is an important conceptual point, with proper citations (C164). These limitations do not invalidate the results but suggest directions for future improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "The considerable congruence of several climatic regions across studied groups and K\u00f6ppen's system provides confidence in their robustness, suggesting that better data would not produce substantially different regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C167 is a reasonable inference from the observed congruence (AMI values), but C168 is speculative. While the consistency across multiple independent analyses does suggest robustness, the claim that better data would not produce substantially different results cannot be verified without actually using better data. The moderate AMI values (0.44-0.71) indicate both similarities and differences, so the degree of expected change with improved data is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "The Infomap algorithm was selected because it uses the minimum description length principle to identify hierarchically nested communities by finding modules of highly interconnected nodes that minimize description length, and it is known for high performance in regionalization studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C216-C219 accurately describe the Infomap algorithm and provide appropriate justification for its selection. The citations supporting its performance (C219: Lancichinetti and Fortunato, 2009; Bernardo-Madrid et al., 2019; Bloomfield et al., 2018; Vilhena and Antonelli, 2015) are relevant. The explanation of how the algorithm applies to this specific problem (C217) is clear and correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C58",
+      "C64",
+      "C183",
+      "C186",
+      "C187"
+    ],
+    "result": "Water (annual precipitation) and energy (potential evapotranspiration) were selected as the two climatic variables because they are widely recognized to best explain climatic effects on tetrapod species distributions and have been used in previous climate classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C64, C183, C186-C187 are well-supported by multiple citations to relevant literature (C58: Hawkins et al., 2003; Currie, 1991; Tingley et al., 2009; Gouveia et al., 2014; Pie et al., 2017; Cooper et al., 2011; C186: Currie, 1991; Tingley et al., 2009; Gouveia et al., 2014; C187: Thornthwaite, 1948; Unep and Thomas, 1992; Fuller et al., 2016). The choice is well-justified, though the authors acknowledge that additional variables might refine some regions (C160).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The study included only native ranges of terrestrial species, used only breeding ranges for birds, and removed species with ranges less than five grid cells (0.5\u00b0) due to higher uncertainty in determining realized niches of narrow-ranging species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C180 describe reasonable data filtering decisions. The exclusion of non-native ranges (C177) is appropriate for studying climatic niches. Using breeding ranges for birds (C178) is a standard practice. The removal of narrow-ranging species (C179-C180) is justified by citation (C179: Lehmann et al., 2002), though the threshold of five grid cells is acknowledged as arbitrary. These choices are transparent and defensible.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Experimental observations across multiple brain regions show that synaptic connections exhibit substantial ongoing turnover and modification (hours to days timescale), with more than 50% of this plasticity persisting even when neural activity or known plasticity pathways are suppressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C12 collectively present a consistent picture from multiple experimental systems (Table 1) showing that synaptic fluctuations dominate baseline plasticity. The cited studies use diverse approaches (activity suppression, covariance analysis) and consistently find >50% activity-independent changes. The specific quantitative measurements (C7-C9) from cited sources provide concrete support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C19",
+      "C50"
+    ],
+    "result": "The authors' theoretical analysis predicts that optimal compensatory plasticity should be at most equal in magnitude to synaptic fluctuations at steady state, and often less, independent of circuit architecture or biologically plausible learning algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15, C19, and C50 state the main theoretical finding, which is derived mathematically (Equations 9-11) and validated through simulations (Figures 1, 5). The mathematical framework using loss landscape geometry provides rigorous support, and simulation results across linear and nonlinear networks confirm the prediction across different parameter regimes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Simulations demonstrate that task error is minimized when compensatory plasticity rate is smaller than synaptic fluctuation rate, while individual synaptic weights continually change despite stable overall performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are directly supported by simulation data shown in Figure 1b-c. The simulations systematically vary the ratio of compensatory plasticity to fluctuations and measure resulting task error, clearly showing an optimal ratio <1. The weight dynamics in Figure 1c visually confirm ongoing changes at steady state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C21"
+    ],
+    "result": "The precision of compensatory plasticity mechanisms inversely correlates with the optimal magnitude of compensatory plasticity: more accurate gradient-based learning requires lower compensatory plasticity rates relative to fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C21 are supported by both theoretical analysis (Equation 15 and surrounding discussion) and numerical simulations (Figure 5, Figure 5\u2014figure supplement 1). The simulations systematically vary gradient corruption (\u03b3\u2082/\u03b3\u2081 ratio) and show that higher noise corruption increases the optimal compensatory plasticity rate, confirming the theoretical prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C20"
+    ],
+    "result": "The loss landscape framework establishes that compensatory plasticity moves downhill (reduces error) while synaptic fluctuations increase error in expectation due to landscape curvature, with steep downhill directions typically exhibiting higher upward curvature than arbitrary directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C20 describe fundamental geometric properties of the loss landscape framework that underpin the main results. These are mathematically rigorous statements illustrated in Figures 2-3. The curvature argument (C17) is formalized through the Q operator and Hessian analysis, providing solid theoretical foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C24"
+    ],
+    "result": "The optimal compensatory plasticity rate is higher during active learning than at steady state, implying that synaptic fluctuations should contribute relatively less to total plasticity during learning phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C24 follow logically from Equation 10, which shows that the learning condition (E[\u0394F]<0) requires higher compensatory plasticity than the steady-state condition (E[\u0394F]=0). This is a mathematical consequence of the framework and represents a testable prediction, though direct experimental validation is not provided in this theoretical study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C25"
+    ],
+    "result": "Covariance measurements in coinnervated synapses differ between hippocampus and neocortex, potentially reflecting different learning regimes (continual learning vs. consolidation) as predicted by the theory linking covariance to activity-dependent plasticity proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C22 compares figures from two different studies (Bartol et al. 2015, Dvorkin and Ziv 2016) without quantitative analysis or statistical comparison. While C23 correctly cites cognitive theory and C25 provides logical reasoning, the inference connecting hippocampal/neocortical differences to learning regimes is speculative. The comparison relies on visual assessment of figures from different experimental systems, which may have methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Learning depends on systematic changes to synaptic connectivity and strengths in neural circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is a well-established principle in neuroscience, supported by multiple experimental citations (Moczulska et al., Lai et al., Hayashi-Takagi et al.) and theoretical frameworks (Hebb, Bienenstock et al., Gerstner et al.). This represents accepted background knowledge rather than a novel finding of this study.",
+    "result_type": "MINOR"
+  }
+]

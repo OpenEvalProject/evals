@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors developed the LABL reporter system, which consists of a per promoter fused to mCherry flanked by FRT sequences, followed by Luc2. Tissue-specific FLP expression excises mCherry, leaving luciferase under per promoter control. In vitro testing in S2 cells demonstrated that FLP expression activates luminescence and eliminates mCherry fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 describe the construction and in vitro validation of LABL. The design is clearly described (C24-C27), and functional validation in S2 cells (C28-C30) demonstrates the system works as intended. The data show appropriate controls (with/without FLP) and expected outcomes (luminescence gain, mCherry loss).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "TUG-activated LABL flies exhibit oscillating luminescence with a ~23.5 hr period that decays over time. The amplitude decay (A50) at day 6 in constant darkness matches the decay observed in behavioral rhythms, demonstrating consistency between molecular clock oscillations and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 demonstrate that LABL reports circadian oscillations in vivo. The data show appropriate controls (C32), quantitative analysis of amplitude decay (C33-C35), and period determination (C36-C37). The concordance between luminescence and behavioral measurements strengthens the validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "LABL signal is comparable to existing luciferase reporters (plo and PER-BG::Luc) and is clock-dependent. TUG-activated LABL shows similar amplitude, period, and phase to plo, while PER-BG::Luc shows expected phase delay. In tim01 mutants lacking a functional clock, both locomotor activity and LABL oscillations are arrhythmic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 validate LABL against established reporters and demonstrate clock-dependence. The comparison to plo and PER-BG::Luc (C38-C39) shows LABL performs as expected, and the tim01 control (C40-C41) confirms the signal requires a functional clock. These are appropriate validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "han5304 flies (lacking functional PDF receptor) become behaviorally arrhythmic but exhibit initial ~24 hr LABL oscillations that decay into reproducible ~60 hr infradian oscillations. The period distribution in han5304 flies is significantly different from tim01 flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 describe a novel finding of infradian rhythms in han5304 mutants. The data show behavioral arrhythmicity (C42), emergence of 60-hr oscillations (C43), and statistical validation distinguishing this from tim01 arrhythmicity (C44). The Kolmogorov-Smirnov test provides appropriate statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "LABL can be activated using tissue-specific Gal4 drivers to monitor distinct neuronal clocks. Pdf-Gal4 activates LABL in LNvs, DvPdf-Gal4 in LNvs and LNds, and R18H11-Gal4 in DN1s, as confirmed by luminescence imaging and G-TRACE analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C53-C56 demonstrate tissue-specific activation of LABL. The anatomical localization is confirmed by both luminescence imaging (C53-C55) and G-TRACE validation (C56), providing converging evidence that the drivers activate LABL in predicted neuronal populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Aged flies (39-41 days old) show rapid loss of oscillation amplitude compared to young flies. In aged flies, some neuronal populations (Pdf- and R18H11-Gal4) develop infradian oscillations by day 3, while others (DvPdf-Gal4) maintain circadian oscillations until day 7. This demonstrates that age-dependent clock deterioration varies by neuronal population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 show age-dependent changes in clock function. The data demonstrate reproducibility of A50 measurements (C46), inability to measure A50 in aged flies due to pre-existing amplitude decay (C47-C48), and differential responses across neuronal populations (C49-C51). The conclusion that infradian oscillations can emerge with age is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Computational simulations demonstrate that phase-shifted variability of oscillations over time cannot explain the observed infradian rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by simulation results showing that phase drift can explain amplitude decay but not the emergence of 60-hr oscillations. This addresses an alternative explanation for the infradian rhythms and strengthens the interpretation that they represent a genuine biological phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "perS mutant flies exhibit short-period luminescence oscillations that correlate with behavioral rhythms and show higher amplitude than wild-type when activated by TUG. The perS mutation differentially affects amplitude stability across neuronal populations, advancing A50 in Pdf- and DvPdf-Gal4 neurons but not in R18H11-Gal4 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 validate LABL using the well-characterized perS mutation. The data show expected short periods (C57-C58), increased amplitude consistent with prior work (C59), and differential effects across neuronal populations (C60-C61). This demonstrates LABL can detect known clock phenotypes and reveals tissue-specific differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "perL mutant flies show noisier oscillations with lower amplitude and longer period across all measured clocks. In DvPdf-Gal4 activated LABL flies, the signal becomes too weak to measure by day 6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 show LABL detects the expected perL phenotype of noisy, low-amplitude, long-period oscillations. The observation that DvPdf-Gal4 signal becomes undetectable (C63) is consistent with the known weak oscillations in perL mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Loss of PDF signaling differentially affects neuronal clocks. Pdf- and DvPdf-Gal4 neurons retain oscillations, R18H11-Gal4 neurons oscillate until day 6, while body drivers (Clk4.1-, Mai179-, Clk9M-Gal4, TUG) deteriorate after one cycle. All han5304 mutants show higher amplitude oscillations than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 demonstrate differential effects of PDF signaling loss across tissues. The data show tissue-specific responses (C64-C66) and increased amplitude consistent with prior work (C67). This is a key finding showing that not all clocks respond identically to loss of PDF signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In han5304 flies, Mai179-Gal4 activated LABL exhibits ~30 hr period before becoming arrhythmic on day 3. All oscillators that lose rhythmicity form narrow-range infradian rhythms (~60 hr). PDF signaling has distinct effects on different neurons and tissues in clock stability, period, and amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 quantify period changes in han5304 mutants. The data show tissue-specific period lengthening (C69), convergence to infradian rhythms (C70), and the conclusion that PDF signaling differentially regulates distinct clocks (C71) is well-supported by the comprehensive analysis across multiple drivers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Peripheral clocks in han5304 flies show noisy oscillations, suggesting PDF signaling plays a stabilizing role. mef2- and esg-Gal4 activated clocks lose oscillations between days 4-6 but re-establish rhythms in reverse phase. PDF signaling has varying influence on different peripheral clocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 describe peripheral clock responses to PDF signaling loss. The noisiness observation (C72) is supported by comparison to mouse data. The transient loss and phase reversal (C73-C74) is a novel finding. The conclusion of varying PDF influence (C75) is supported by the diverse responses observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Peripheral clocks show distinct oscillation properties. Fat body and intestine drivers exhibit periods >48 hr in wild-type, suggesting lower robustness. Loss of PDF signaling destabilizes peripheral clock periods variably: intestine clocks form infradian oscillations, while fat body clocks show shortened periods. LABL distinguishes between loss of rhythmicity and destabilized oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 characterize peripheral clock responses. The data show tissue-specific baseline periods (C76), differential destabilization (C77), distinct responses (intestine vs. fat body; C78-C79), and the conclusion that LABL can distinguish different types of clock dysfunction (C80) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Clocks in different tissues oscillate differently, demonstrating that circadian clocks have distinct oscillatory properties and respond differently to mutations, suggesting differential regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 present the main conclusions of the study. These are well-supported by the comprehensive data showing tissue-specific differences in period, amplitude, stability, and responses to mutations (perS, perL, han5304) and aging across multiple neuronal and peripheral clocks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "LABL reveals specific features of clock oscillations including a sharp dip in the first luminescence peak (transcription-specific), maintenance differences under constant conditions (some clocks require environmental input), and discordance between protein and transcript oscillations in specific neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 describe specific observations about clock properties. The dip in luminescence (C91) is consistently observed and distinguished from PER-BG::Luc. The observation that some clocks aren't maintained in constant darkness (C92) and the citation of protein/transcript discordance (C93) are appropriately supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Loss of PDF signaling causes tissue-specific period changes: most clocks lengthen (except fat body clocks which shorten), R18H11-Gal4 neurons show no period change, peripheral tissues become less stable but continue oscillating, and mef2/esg-Gal4 clocks transiently lose then regain oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 summarize period and stability changes in han5304 mutants. These are well-supported by the comprehensive LABL measurements across multiple drivers and represent key findings about differential PDF signaling effects on distinct clocks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The observed infradian oscillations in han5304 flies are unlikely to be caused by desynchronized individual flies, feeding, metabolism, or genetic differences, suggesting an underlying clock-related mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 address alternative explanations for infradian rhythms. The logic is sound: genetically identical flies show different oscillation periods (24 hr vs. 60 hr) depending on which neurons are measured, ruling out population desynchrony and metabolic explanations. However, the mechanism remains unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C12",
+      "C100",
+      "C101"
+    ],
+    "result": "LABL is an effective tool for rapid, affordable, direct real-time monitoring of individual circadian clocks in vivo. It reveals clock oscillations at the intersection of per promoter activity and Gal4 expression, allowing measurement of subtle changes in neuronal and peripheral clocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C12, C100-C101 present the overall utility of LABL. These conclusions are well-supported by the extensive validation and application data showing LABL can detect known clock phenotypes, reveal tissue-specific differences, and monitor clocks in intact animals over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C9",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93"
+    ],
+    "result": "Background knowledge claims about circadian clocks, their conservation, distribution, disease associations, current measurement limitations, and prior findings about neuronal clock organization and PDF function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C5, C9, C13-C23, C26, C84-C90, C93) represent established knowledge supported by appropriate citations. They provide context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  }
+]

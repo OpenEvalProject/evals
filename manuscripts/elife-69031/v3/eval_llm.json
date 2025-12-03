@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The lamellipodial dendritic actin network structure and its characteristic \u00b135\u00b0 filament orientation pattern are well-established features supported by electron microscopy and prior modeling studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 describe established knowledge about lamellipodial structure, supported by multiple citations to electron microscopy studies (C9) and prior experimental work (C10). These are background claims that provide context for the current study and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Single-molecule speckle microscopy reveals transient actin assembly with short lifetimes (few seconds) throughout the lamellipodium, which cannot be explained by treadmilling and led to the hypothesis of frequent severing near barbed ends followed by annealing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C13 describe prior SiMS observations and the hypothesis they motivated. These are well-supported by citations to experimental studies (Yamashiro et al., 2018; Watanabe and Mitchison, 2002; Miyoshi and Watanabe, 2013) and provide the experimental motivation for the current modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "In vitro experiments and prior modeling studies support the plausibility of severing near filament ends, annealing, and local recycling of oligomers in lamellipodia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 cite multiple in vitro experimental studies demonstrating filament fragment dissociation and annealing (C14, C15), as well as prior modeling and experimental work suggesting local recycling (C16, C17). These provide biochemical and biophysical support for the mechanisms explored in the current model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Electron micrographs show structural differences across the lamellipodium: dense branched filaments near the leading edge versus longer, more linear filaments 3-4 \u03bcm away.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by citation to electron microscopy observations (Svitkina et al., 1997). This structural observation motivates the need for a mechanism explaining network remodeling, which is a key question addressed by the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C91",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C103",
+      "C105"
+    ],
+    "result": "A 3D stochastic simulation model was developed incorporating polymerization, depolymerization, branching, capping, uncapping, severing (uniform and enhanced near barbed ends), oligomer diffusion, annealing, and debranching, with parameters for keratocyte and XTC cell systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C91, C95, C97-C99, C101, C103, C105 describe the computational model architecture and key assumptions. The model components are clearly described in the Methods section and Figure 1, providing sufficient detail for evaluation. The choice to use two parameter sets (keratocyte and XTC) is appropriate for testing generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60"
+    ],
+    "result": "Restricting branching to occur primarily along the lamellipodial plane (quasi-2D, within 10\u00b0 off-plane) is necessary to reproduce the sharp \u00b135\u00b0 filament orientation pattern observed experimentally; uniform 3D branching produces weak orientation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C53-C57, C60 are supported by systematic simulation results in Figure 2 comparing 2D, quasi-2D, and 3D branching geometries. The quasi-2D restriction is justified by comparison to electron tomography data (Vinzenz et al., 2012) showing filaments oriented primarily along the lamellipodial plane. The analysis reconciles prior conflicting modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C32"
+    ],
+    "result": "A model with enhanced severing near barbed ends and oligomer annealing can simultaneously explain: (1) single-molecule actin lifetime distributions, (2) measured filament, end, and branch concentrations, and (3) structural remodeling with longer filaments away from the leading edge at the \u00b135\u00b0 orientation pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C32 represent the main findings. The parameter scans (Figures 4-5 and supplements) demonstrate that enhanced end severing with annealing can achieve all three criteria simultaneously, while models without annealing or without enhanced end severing cannot (Figure 3). The optimized parameters provide quantitative agreement with multiple experimental datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C81",
+      "C82"
+    ],
+    "result": "New sub-second resolution SiMS experiments on XTC cells show that approximately 16% and 30% of actin speckles near the leading edge disappear within 0.5 and 1 s respectively, strongly supporting frequent disassembly of newly polymerized F-actin near barbed ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C24, C81-C82 describe new experimental data at 0.1 s temporal resolution (Figure 6A). The experiments are appropriately designed to measure speckles appearing near the leading edge (within ~0.5 \u03bcm), which should represent monomer polymerization rather than oligomer annealing. The high fraction of short lifetimes provides direct experimental support for the enhanced end severing mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C85"
+    ],
+    "result": "Simulations with enhanced end severing predict 3-7% of speckle lifetimes within 0.5-1 s, consistent with the experimental range of 16-30%, suggesting the actual severing rate may be 2-4 times higher than the model estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C85 compare simulation predictions to the new experimental data. While the simulation underestimates the fraction of short lifetimes, the authors appropriately note this suggests even higher severing rates than modeled. The quantitative comparison is reasonable given model simplifications and parameter uncertainties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C27",
+      "C86",
+      "C87"
+    ],
+    "result": "Cytochalasin D treatment decreases the disassembly rate of actin speckles in XTC lamellipodia, providing further support for rapid disassembly of newly polymerized actin at barbed ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C27, C86-C87 describe cytochalasin D experiments (Figure 6C) showing increased speckle survival after treatment. The results are consistent with prior observations (Kueh et al., 2008) and support barbed-end disassembly mechanisms. However, the interpretation is somewhat indirect since CD has multiple effects (barbed end capping and inhibition of cofilin binding).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Tropomyosin SiMS are scarce near the leading edge of XTC lamellipodia and dissociate faster in lamellipodia than lamella, suggesting tropomyosin does not significantly stabilize actin filaments near the tip under the observation conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31, C88-C90 describe tropomyosin SiMS experiments (Figure 6\u2014figure supplement 1). The observations of low density near the leading edge and faster dissociation in lamellipodia are clearly documented. The conclusion is appropriately qualified ('under our observation conditions') and consistent with slow in vitro assembly kinetics of tropomyosin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C63"
+    ],
+    "result": "The model is consistent with prior SiMS measurements of Arp2/3 complex and capping protein lifetimes in XTC cells, with capping protein measurements used to constrain the uncapping rate constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C63 compare model predictions to prior SiMS data. The consistency with Arp2/3 complex distribution (narrow compared to F-actin) and capping protein lifetimes provides additional validation. The use of capping protein data to constrain uncapping rates is appropriate, though this makes the comparison partially circular.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The simulated effective severing rate (0.17-0.32 \u03bcM s\u207b\u00b9) is a few times smaller than the experimental estimate for Aip1-associated filament disruption (1.8 \u03bcM s\u207b\u00b9), suggesting the actual severing rate may be higher than modeled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C66-C68 compare calculated severing rates from simulations to prior Aip1 SiMS estimates. The comparison is reasonable though involves assumptions about what Aip1 appearance represents. The authors appropriately note the discrepancy and suggest it may indicate even higher severing rates, consistent with the short lifetime data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C61",
+      "C62"
+    ],
+    "result": "The model results are robust with respect to annealing rate constants and oligomer diffusion coefficients over a range of values, as long as key constraints are met (annealing occurs locally within ~1 \u03bcm, not dominated by same-filament reannealing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C61-C62 describe robustness analyses. Figure 4\u2014figure supplement 3C and Figure 5\u2014figure supplement 5C show that results hold over nearly two orders of magnitude variation in annealing rate. The constraints on parameter ranges are physically reasonable and the robustness analysis strengthens confidence in the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The model predicts average oligomer lengths of 40-80 subunits (0.11-0.21 \u03bcm), intermediate between estimates from other systems, with most F-actin at the back of the lamellipodium having undergone severing and annealing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 describe model predictions about oligomer properties (Figure 4\u2014figure supplement 2, Figure 5\u2014figure supplement 2). The predicted lengths are compared to estimates from other systems and fall in a reasonable range. The tracking of F-actin origin provides insight into the extent of remodeling, though direct experimental validation in lamellipodia is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The optimized model matches additional SiMS observations: weak dependence of lifetime distribution on appearance location, local oligomer rebinding within sub-\u03bcm distances, and visual similarity of simulated to experimental SiMS videos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 describe additional model validations. The weak spatial dependence of lifetimes (Figure 4\u2014figure supplement 3, Figure 5\u2014figure supplement 5) matches prior observations. The local rebinding is needed to match FRAP/photoactivation data. The visual comparison of simulated SiMS (Videos 3-4) to experiments provides qualitative validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "An alternative mechanism with frequent barbed end catastrophic depolymerization and rapid regrowth can come close to matching experimental criteria, but would require additional homeostatic controls, be energetically more costly, and be less consistent with FRAP/photoactivation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 describe an alternative 'dynamic instability-like' mechanism (Figure 4\u2014figure supplement 4). The authors appropriately test this alternative and show it can partially match data but has several disadvantages. The critical evaluation of alternatives strengthens the case for the severing/annealing mechanism, though the alternative cannot be fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The simulations demonstrate how severing and depolymerization regulate lamellipodium depth, consistent with prior models at various levels of description, and annealing leads to wider lamellipodia similar to prior lattice models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 place the current work in context of prior modeling studies. The comparison to multiple prior models (Carlsson, Michalski, and others) is appropriate and shows consistency with established modeling frameworks while adding new mechanistic detail about annealing of diffusing oligomers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The annealing mechanism in the prior Huber et al. 2008 model differs fundamentally from the current work: it involved joining filaments at the same distance from the leading edge without accounting for network topology, which would not contribute to SiMS speckle dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 critically compare the current model to the detailed prior model of Huber et al. 2008. The distinction between annealing mechanisms (topology-aware diffusing oligomers vs. distance-based filament joining) is important and the authors correctly note that the prior mechanism would not explain SiMS data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Prior work by Raz-Ben Aroush et al. 2017 found evidence for oligomers in keratocyte fragments consistent with the current model's assumptions, but their proposed mechanism without local reassembly may not explain FRAP/photoactivation data or filament length increases in other cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 compare to another relevant prior study. The authors appropriately note consistencies (oligomer presence, distributed turnover) while critically evaluating differences (absence of local reassembly in the prior model). The critique is fair and highlights the added explanatory power of the current mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C34",
+      "C64"
+    ],
+    "result": "The presence of slowly diffusing oligomers in the model could be consistent with observations of slowly diffusing capping proteins in XTC lamellipodia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34, C64 suggest a speculative connection between model oligomers and observed capping protein dynamics. While plausible, this connection is not directly tested and remains speculative. The claim is appropriately qualified with 'could be consistent' but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C36",
+      "C69"
+    ],
+    "result": "Filament shortening in keratocytes treated with low-dose cytochalasin D could be due to reduced structural remodeling through severing/destabilization near barbed ends, in addition to or instead of capping effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36, C69 offer a speculative reinterpretation of prior CD experiments. While the alternative explanation is plausible given the current model, it remains speculative without direct testing. The authors appropriately present this as a possibility ('could be due to') rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The severing and annealing mechanism could represent a general feature of actin dendritic networks including yeast, and might provide an energetically efficient mechanism for network remodeling matching different mechanical requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C49 speculate about broader implications. While the extension to yeast is supported by citation to short speckle lifetimes in fission yeast patches, the functional interpretation about mechanical requirements is speculative. These are reasonable hypotheses for future work but lack direct support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "For the optimized parameters, release of capped oligomers through end severing would not significantly contribute to capping protein SiMS lifetimes since the rate is 4-8 times slower than uncapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 makes a quantitative inference about the relative contributions of different processes affecting capping protein lifetimes. The calculation is straightforward given the model parameters and provides useful insight into which processes dominate under the optimized conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The characteristic peak at t=0 in speckle lifetime distributions is a general feature of barbed-end disassembly mechanisms where newly polymerized monomers near the barbed end disassemble at higher rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 provides a theoretical explanation for the model behavior. This is a logical consequence of the enhanced end severing mechanism and helps interpret the experimental observations. The explanation is sound and provides mechanistic insight.",
+    "result_type": "MINOR"
+  }
+]

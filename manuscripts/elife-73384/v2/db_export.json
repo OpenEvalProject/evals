@@ -1,0 +1,1513 @@
+{
+  "submission": {
+    "id": "4a6bcf92-0921-48ab-9866-8fb3affb062b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:56:53.618441Z",
+    "updated_at": "2025-12-03T10:56:53.618441Z"
+  },
+  "content": [
+    {
+      "id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "submission_id": "4a6bcf92-0921-48ab-9866-8fb3affb062b",
+      "content_type": "manuscript",
+      "content_text": "# Conformational decoupling in acid-sensing ion channels uncovers mechanism and stoichiometry of PcTx1-mediated inhibition\n\n## Authors\n\n- Stephanie A Heusser<sup>1</sup> ([ORCID: 0000-0003-3224-4547](https://orcid.org/0000-0003-3224-4547))\n- Christian B Borg<sup>1</sup> ([ORCID: 0000-0002-8974-2670](https://orcid.org/0000-0002-8974-2670))\n- Janne M Colding<sup>1</sup>\n- Stephan A Pless<sup>1</sup> ([ORCID: 0000-0001-6654-114X](https://orcid.org/0000-0001-6654-114X)) \u2020\n\n### Affiliations\n\n1. Center for Biopharmaceuticals, Department of Drug Design and Pharmacology, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAcid-sensing ion channels (ASICs) are trimeric proton-gated cation channels involved in fast synaptic transmission. Pharmacological inhibition of ASIC1a reduces neurotoxicity and stroke infarct volumes, with the cysteine knot toxin psalmotoxin-1 (PcTx1) being one of the most potent and selective inhibitors. PcTx1 binds at the subunit interface in the extracellular domain (ECD), but the mechanism and conformational consequences of the interaction, as well as the number of toxin molecules required for inhibition, remain unknown. Here, we use voltage-clamp fluorometry and subunit concatenation to decipher the mechanism and stoichiometry of PcTx1 inhibition of ASIC1a. Besides the known inhibitory binding mode, we propose PcTx1 to have at least two additional binding modes that are decoupled from the pore. One of these modes induces a long-lived ECD conformation that reduces the activity of an endogenous neuropeptide. This long-lived conformational state is proton-dependent and can be destabilized by a mutation that decreases PcTx1 sensitivity. Lastly, the use of concatemeric channel constructs reveals that disruption of a single PcTx1 binding site is sufficient to destabilize the toxin-induced conformation, while functional inhibition is not impaired until two or more binding sites are mutated. Together, our work provides insight into the mechanism of PcTx1 inhibition of ASICs and uncovers a prolonged conformational change with possible pharmacological implications.\n\n## Introduction\n\nAcid-sensing ion channels (ASICs) are trimeric proton-gated cation channels expressed throughout the central and peripheral nervous system (Gr\u00fcnder, 2020). The extracellular domains (ECDs) of ASICs sense pH changes, allowing cations to permeate through the channel pore comprised by the transmembrane domain (TMD) (Figure 1A). Research over the last two decades has shown that this pH-activated current underlies various physiological processes, such as fast synaptic transmission (Du et al., 2014) and learning and memory (Wemmie et al., 2002). Due to recent reports of peptide-induced ASIC1a inhibition exhibiting neuroprotective effects, these trimeric channels have emerged as a potential drug target in neurological diseases, including protection from acidosis-induced neurotoxicity and reduction of infarct volume in mouse models of ischemic stroke (Xiong et al., 2004; Wemmie et al., 2013; Chassagnon et al., 2017; Qiang et al., 2018; Gr\u00fcnder, 2020; Heusser and Pless, 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig1-v2.jpg)\n\n**Figure 1.:** (A) Structural overview (PDB ID 4FZ0) of chicken ASIC1 with positions V80 and K105, which were substituted for cysteine and used for channel labeling, highlighted in red. PcTx1 (teal) binds to the subunit interfaces. (B) Representative two-electrode voltage-clamp (TEVC) traces recorded from X. laevis oocytes of WT ASIC1a showing pH sensitivity of activation in the absence (upper panel) and presence (lower panel) of 30 nM PcTx1, added in the resting solution (pH 7.9). Scale bars are 4 \u00b5A (vertical) and 60 s (horizontal). (C) Same as in (B) but for steady-state desensitization (SSD). PcTx1 was applied to solutions of decreasing pH in between application of activating pH 5.6 solution. Scale bars are 4 \u00b5A (vertical) and 60 s (horizontal). (D) Concentration\u2013response relationship of WT ASIC1a activation and SSD in the absence and presence of 30 nM PcTx1 retrieved form experiments shown in (B) and (C) (n = 6\u201318). (E) Representative traces of voltage-clamp fluorometry (VCF) recordings of K105C* with the current in black and the fluorescence in red. PcTx1 (300 nM) was washed off for 3 min using pH 7.4 (left) or pH 8.4 (right). Scale bars are 60 s (black horizontal), 10 \u00b5A (black vertical), and 10% (red vertical). (F) Quantitative analysis of the fluorescence signal at the end of the 3 min washout protocols shown in (E) relative to the fluorescence observed upon PcTx1 application. (G) Representative trace of a VCF recording of V80C* equivalent to the ones shown in (E). Scale bars are 60s (black horizontal), 10 \u00b5A (black vertical), and 10% (red vertical).(H) Same as in (F) but for V80C*F350L. Data in (D), (F), and (H) are presented as mean \u00b1 95 CI.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative trace of a VCF recording of K105C* with the current in black and the fluorescence in red to establish steady-state desensitization (SSD) and pH-dependent fluorescence response. Inset shows pH 7.0 application without subsequent pH 5.5 activation. (B) SSD and fluorescence response curves for different acid-sensing ion channel 1a (ASIC1a) variants based on recording protocols shown in (A). Data are presented as mean \u00b1 95 CI, panel (B) of K105C* is adapted from Borg et al., 2020.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative trace of a VCF recording of K105C* showing application of PcTx1 (300 nM) washed off for 3 min with alternating pHs (20 s pH 7.4, 60 s pH 8.4, 40 s pH 7.4, 60 s pH 8.4) before switching to pH 7.4 again. (B) Comparison of the fluorescence of K105C* after a 3 min washout of 300 nM PcTx1 using pH 7.4, 8.4, or a mix of the two as shown in the protocol in (A) and Figure 1E and F. (C) Same as in (A) but for V80C* and running buffer 7.7 instead of 7.4. (D) Same as in (B) but for V80C* and base on the protocol shown in (C) and Figure 1G and H. All scale bars are 60 s (black horizontal), 10 \u00b5A (black vertical), and 5% (red vertical). Data in (B) and (D) are presented as mean \u00b1 95 CI, ordinary analysis of variance (ANOVA).\n\nASICs exhibit a rich pharmacology with complex molecular details. Modulators can affect both ASIC activation and steady-state desensitization (SSD)\u2014a state reached at sub-activating proton concentrations that reduces subsequent activation\u2014but also metabotropic downstream signaling (Kellenberger and Schild, 2015; Wang et al., 2015; Wang et al., 2020). Venom-derived peptides are currently the most selective and potent modulators of ASIC function and therefore serve as valuable tools to gain insights into the mechanisms of ASIC modulation (Cristofori-Armstrong and Rash, 2017). Psalmotoxin-1 (PcTx1) is a 40-residue cysteine knot peptide toxin extracted from tarantula venom (Escoubas et al., 2000). It acts as a potent gating modifier on most ASIC1a-containing channels (Chen et al., 2005; Chen et al., 2006) and shifts activation and SSD curves to more alkaline values, thereby effectively inhibiting the channel in the low nanomolar range at neutral pH (Cristofori-Armstrong and Rash, 2017). Structural studies have shown that PcTx1 binds to the subunit interfaces of cASIC1, forming contact points with the primary and complementary side of the acidic pocket (Dawson et al., 2012; Baconguis et al., 2014; Figure 1A). An aromatic side chain located at the entrance of the acidic pocket, F352 in human ASIC1a (F350 in mouse ASIC1a), plays an important role in PcTx1 activity because mutations to either alanine or leucine (or ASIC isoforms that naturally carry these residues at this position) display significantly attenuated PcTx1 sensitivity (Sherwood et al., 2009; Sherwood et al., 2011; Saez et al., 2015; Joeres et al., 2016; Cristofori-Armstrong et al., 2019). Additional species- and state-dependent factors greatly influence the functional outcome of PcTx1 modulation (Sherwood et al., 2011; Cristofori-Armstrong et al., 2019), but fundamental mechanistic aspects of this interaction remain unresolved. For example, it remains unclear how many toxin molecules are required to obtain functional inhibition, despite the availability of structural information on the PcTx1-ASIC1 complex (Baconguis and Gouaux, 2012; Dawson et al., 2012). Further, little is known about the conformational consequences of the interaction in different functional states and under varying pH conditions. This is relevant since long-lived conformational changes could affect the activity of endogenous ASIC1a modulators.\n\nHere, we show that PcTx1 adopts at least three distinct binding modes, of which one induces a long-lived conformational state in the ASIC1a ECD that alters the effects of the endogenous neuropeptide big dynorphin (BigDyn). Tracking the ECD conformational state further uncovers an unexpected decoupling from the state of the pore that has profound implications for the stoichiometry of the ASIC1a-PcTx1 interaction: while disrupting a single PcTx1 binding site in an ASIC1a trimer is sufficient to destabilize the long-lived PcTx1-induced ECD conformational state, functional inhibition of the channel is only affected when two or more PcTx1 binding sites are mutated. Collectively, we illustrate how a combination of voltage-clamp fluorometry (VCF) and subunit engineering provides detailed mechanistic insights on a potentially therapeutically relevant channel-toxin interaction and demonstrate how these findings affect fundamental pharmacological properties of the channel.\n\n## Results\n\n### PcTx1 induces a long-lived ECD conformation in ASIC1a\n\nFirst, we sought to establish the functional consequences of PcTx1 binding to mASIC1a. In line with previous findings, 30 nM of PcTx1 led to potent alkaline shifts in both the activation curve (\u0394pH50_Act > 0.5 pH units at pH 7.9; Figure 1B and D, Supplementary file 1a) and SSD of ASIC1a WT expressed in Xenopus laevis oocytes (\u0394pH50_SSD \u2248 0.4 pH units; Figure 1C and D, Supplementary file 1a; Escoubas et al., 2000; Chen et al., 2005). This electrophysiological characterization provides a detailed description of how PcTx1 affects channel function, as assessed by the state of the pore. By contrast, it is unable to capture the extent and time course of possible conformational consequences caused by the toxin-channel interaction in the ECD of ASIC1a. It therefore remained unclear if potential toxin-induced conformational changes extend across the entire ECD and how long they persist. To this end, we introduced a cysteine residue into the mASIC1a ECD at amino acid position 80 or 105 (Figure 1A) as labeling of these positions with the environmentally sensitive Alexa Fluor 488 dye reliably reports on conformational changes related to channel gating and modulation by peptides (Bonifacio et al., 2014; Borg et al., 2020). This allowed us to monitor changes in the fluorescence signal upon exposure to different proton or toxin concentrations and thus provide a proxy for ECD conformational changes at two spatially distant positions. For Alexa Fluor 488-labeled K105C mASIC1a (K105C*), application of pH 5.5 resulted in an inward current and a simultaneous upward deflection of the fluorescence signal (Figure 1E). The latter typically displayed a transient peak, which likely reflects a short-lived open state, followed by a sustained plateau with a pH dependence that was similar to the pH50_SSD, and thus likely reveals a transition related to a desensitized state (Figure 1\u2014figure supplement 1, Supplementary file 1b; note that pH changes between 7.4 and 9.0 did not lead to any fluorescence changes Borg et al., 2020). Application of 300 nM PcTx1 at pH 7.4 resulted in slow upward deflection of the fluorescence (Figure 1E, Supplementary file 1c), reminiscent of application of pH 7.0, which led to a similar functional inhibition of channel currents (Figure 1\u2014figure supplement 1A). However, and in stark contrast to the pH 7.0 application, the PcTx1-induced fluorescence signal displayed only a modest decrease after 3 min washout with pH 7.4. Post-PcTx1 exposure to pH 8.4 led to an immediate return of fluorescence to baseline level; yet, the fluorescence increased as soon as the pH was switched back to 7.4, suggesting the presence of a conformational change that is sustained at pH 7.4 (Figure 1E, left panel). We observed similar effects with two other pH application protocols after PcTx1 exposure (Figure 1E, right panel, Figure 1F, Figure 1\u2014figure supplement 2A and B, Supplementary file 1d).\n\nTo rule out a direct interaction between the fluorophore and PcTx1 or the possibility of a local conformational change, we also labeled the channel in position V80C of the palm domain (V80C*, Figure 1A) and characterized the pH and PcTx1 responses. Here, the direction of the fluorescence signals upon activation, desensitization, and application and washout of 300 nM PcTx1 at 0.3 pH units more alkaline than the pH50_fluorescence of V80C* were inverted (Figure 1G), but resulted in qualitatively similar effects as observed for K105C* (Figure 1E\u2013H, Figure 1\u2014figure supplement 2C and D, Supplementary file 1c and d). In light of the data obtained from K105C* and V80C*, we considered it implausible that the fluorescence changes are the consequence of a direct interaction between the dye and the peptide, but rather result from a global conformational change of the ECD after PcTx1 binding. We conclude that PcTx1 binding induces a long-lived conformational change and that this conformational alteration is not necessarily coupled to the channel pore.\n\n### PcTx1 has three distinct binding modes, and pre-exposure can alter channel pharmacology\n\nNext, we investigated the possibility that PcTx1 may have multiple distinct binding modes, as well as potential functional and pharmacological implications of the PcTx1-induced conformational states.\n\nFor this purpose, we first sought to define the PcTx1-induced inhibitory state in more detail. This tightly bound PcTx1 state leads to the characteristic functional change of the pore (i.e., current inhibition) and to a change in fluorescence (Figure 1E and G, Figure 1\u2014figure supplement 2A, Figure 2A, Figure 2\u2014figure supplement 1A and C). We thus term it the \u2018Global\u2019 state. Due to the gating-modifying properties of PcTx1 on activation and SSD, the functional consequences of this \u2018Global\u2019 state are highly pH dependent. In the presence of PcTx1 and at neutral pH, subsequent channel activation is temporarily inhibited (Figure 1E and G, Figure 1\u2014figure supplement 2A, Figure 2A, Figure 2\u2014figure supplement 1A), while exposure at high pH shows increased activation (Figure 2B, middle, Figure 2\u2014figure supplement 1C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig2-v2.jpg)\n\n**Figure 2.:** (A) Voltage-clamp fluorometry (VCF) trace of K105C* showing the introduction of the \u2018Global\u2019 inhibitory binding mode upon application of 300 nM PcTx1 at pH 7.4. During washout and repeated activation, the channel readily returns to a functional apo state (current, black trace) while the fluorescence change induced by PcTx1 is persistent over multiple ASIC1a activations at pH 5.5 (fluorescence, red trace), characteristic for the \u2018ECDonly\u2019 state. (B) VCF traces highlighting the fluorescence changes associated with application of PcTx1 at pH 8.0 with subsequent application of pH 5.5 (left), pH 7.4 (middle), and pH 8.0 (right). Respective PcTx1 binding modes are indicated below the traces. (C) Quantitative comparison of the fluorescence signal 60 s into the pH 7.4 application at the end of the experiments shown in (B) normalized to the fluorescence change induced by pH 5.5 application. (D) Schematic representation of the different pH-dependent binding modes of PcTx1: A \u2018Loose\u2019 closed state at high pH, a \u2018Global\u2019 state that exists at neutral/low pH that leads to conformational rearrangements in the extracellular domain (ECD) and the pore (indicated in orange), and an \u2018ECDonly\u2019 state in which the conformational rearrangements are only found in the ECD and that exists at neutral/low pH even when PcTx1 is absent in the extracellular solution. Teal background shading in the \u2018Loose\u2019 and \u2018Global\u2019 indicates the presence of PcTx1 in the extracellular solution (although not mandatory, see text for details). (E) VCF trace of K105C* exposed to pH 5.5, followed by a 60 s big dynorphin (BigDyn) (1 \u00b5M) application (purple bar), with subsequent washout and activation. BigDyn is reapplied after the \u2018ECDonly\u2019 state has been evoked through PcTx1 (300 nM) application, this time resulting in a smaller decrease in the fluorescence signal. (F) Quantitative comparison of the fluorescence change induced by a 60 s BigDyn application to the apo (control) and to the PcTx1-induced \u2018ECDonly\u2019 state (post PcTx1), normalized to the signal induced by pH 5.5. (G) VCF trace of K105C* where 300 nM PcTx1 is applied to the \u2018ECDonly\u2019 state. (H) Quantitative analysis of the protocol shown in (G) comparing the fluorescence change induced by PcTx1 to the apo state at 7.4 (control) with the PcTx1 application to the \u2018ECDonly\u2019 state. All scale bars are 60 s (black horizontal), 10 \u00b5A (black vertical), and 5% (red vertical). Data in (C), (F), and (H) are presented as mean \u00b1 95 CI.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative VCF trace of K105C* showing application of PcTx1 (300 nM) washout for 3 min before pH 5.5 stimulus. Corresponding binding modes are indicated below. (B) Comparison of the final pH 5.5-induced current (I) and fluorescence (\u0394F) at pH 7.4 in recordings shown in Figure 2A, where channels undergo three 1 min washouts at pH 7.4, each followed by pH 5.5 stimulus (left) or the protocol shown in (A) with a single 3 min washout (right). The final pH 5.5-induced current was normalized to the one at the beginning of the recording, the fluorescence was analyzed right before the final pH 5.5 activation and normalized to the deflection induced by PcTx1. (C) Representative VCF trace of K105C* showing pH 7.0 stimuli at various states of the recording. Corresponding binding modes are indicated below. (D) Representative trace of a VCF recording of K105C* depicting 30 s pre-conditioning with big dynorphin (BigDyn) (1 \u03bcM) and subsequent 30 s PcTx1 (300 nM) application and pH 5.5 activation. (E) Quantitative comparison of the fluorescence change induced by 300 nM PcTx1 at pH 7.4 in the apo state (control) and after BigDyn (1 \u03bc\u039c) application, normalized to the signal induced by pH 5.5. Data in (B) and (E) are presented as mean \u00b1 95CI.\n\nWe found that once the channel is in this \u2018Global\u2019 state, repeated exposure to pH 5.5 led to a gradual recovery of the current amplitude, while the fluorescence signal remained effectively unchanged (Figure 2A). Functional recovery from inhibition was dependent on washout time, but not activation (Figure 2\u2014figure supplement 1A and B, Supplementary file 1e), in line with previous observations of tight PcTx1 binding to the open state (Chen et al., 2006). This finding emphasized a clear decoupling between the conformational state of the ECD and the functional inhibitory consequences at the level of the pore: while the pore slowly recovered from its inhibited state and regained its ability to conduct ions, the ECD conformation remained essentially unaltered, even after minutes of washout. We therefore suggest the presence of an \u2018ECDonly\u2019 state, which is present following PcTx1 exposure and exists at neutral/low pH in the absence of PcTx1 in the solution. It causes long-lasting conformational alterations in the ECD but has no inhibitory effects on the pore (Figure 2A).\n\nLastly, we sought to address the possibility of additional PcTx1-induced states beyond the \u2018Global\u2019 and the \u2018ECDonly\u2019 state. To this end, we conducted a series of experiments in which we applied PcTx1 at pH 8.0, where PcTx1 neither activates the channel nor induces a significant increase in fluorescence. (i) If immediately after PcTx1 application (at pH 8.0) the channel is activated in the absence of PcTx1 and then washed with pH 7.4, the channel can enter into the long-lived \u2018ECDonly\u2019 state (Figure 2B, left panel, Figure 2C, Supplementary file 1f). (ii) Similarly, the \u2018ECDonly\u2019 state can be reached by administering PcTx1 during a pH 8.0-induced closed state before exposing the now highly proton-sensitive channel to pH 7.4 or 7.0, which results in temporary activation and SSD (Figure 2B, middle panel, Figure 2C, Figure 2\u2014figure supplement 1C, Supplementary file 1f). Thus, while exposure of PcTx1 at pH 8.0 has no effect on current and fluorescence, it primes the channel into a state where subsequent activation or desensitization can elicit a long-lived PcTx1-induced conformational state that is decoupled from the pore. (iii) But when a pH 8.0-induced closed state is maintained before, during, and after PcTx1 application, pH 7.4 is no longer able to elicit a conformational change (Figure 2B, right panel, Figure 2C, Supplementary file 1f). This indicates that PcTx1 binding to the closed state is readily reversible at high pH. Based on the findings from these three experiments, we infer the presence of a third state that we term \u2018Loose\u2019: a loosely bound high pH state that is not associated with ECD conformational changes that can be detected by VCF, nor with changes to the functional state of the pore. The \u2018Loose\u2019 state can exist in the presence (Figure 2B) or after the exposure to PcTx1 (Figure 1E and G, Figure 1\u2014figure supplement 2A and C, Figure 2\u2014figure supplement 1C) and prolonged exposure of this \u2018Loose\u2019 state to high pH can wash off PcTx1 (Figure 2B, right). A graphical summary of the proposed three states (\u2018Loose,\u2019 \u2018Global,\u2019 and \u2018ECDonly\u2019) is provided in Figure 2D.\n\nIf correct, the \u2018ECDonly\u2019 state would be expected to affect the activity of other ECD-targeting ASIC1a modulators. To test this possibility, we turned to BigDyn, a neuropeptide that competes with PcTx1 for the binding site and induces a distinct closed state in ASIC1a (Sherwood and Askwith, 2009; Borg et al., 2020; Leisle et al., 2021). The latter is indicated by a robust and distinct downward deflection of the K105C* fluorescence signal (Figure 2E). Strikingly, we found that when BigDyn (1 \u00b5M) is applied to the PcTx1-induced \u2018ECDonly\u2019 state, the neuropeptide has a much less pronounced effect on the fluorescence signal than without PcTx1 pre-exposure (Figure 2E and F, Supplementary file 1g). To ensure that this effect is indeed specific to PcTx1, we conducted a control experiment in which we first applied BigDyn and then switched to PcTx1 (Figure 2\u2014figure supplement 1D). In this case, the PcTx1-elicited fluorescence response post BigDyn exposure was unchanged compared to that observed in control cells (Figure 2\u2014figure supplement 1E, Supplementary file 1g). Conversely, reapplication of PcTx1 to the \u2018ECDonly\u2019 state evoked a similar inhibitory and fluorescence response as the initial application (Figure 2G and H, Supplementary file 1g), indicating that a transition from the \u2018ECDonly\u2019 to the \u2018Global\u2019 state is possible. In summary, these findings support the notion that the \u2018ECDonly\u2019 state, although without immediate inhibitory consequences for the channel pore, does have direct implications for binding of other ECD-targeting compounds.\n\n### F350L diminishes PcTx1 sensitivity and stability of toxin-induced conformation\n\nNext, we wanted to establish how PcTx1 sensitivity and binding modes change in the F350L mutation that renders the channel virtually insensitive to the toxin (Figure 3A; Sherwood et al., 2009; Saez et al., 2015). We thus compared the PcTx1 sensitivity of the F350L mutant to that of WT mASIC1a at a pH that would neither activate nor steady-state desensitize the channels in the absence of the toxin (pH 7.9 for WT; pH 7.6 for F350L). Consistent with previous findings (Sherwood et al., 2009), introducing the F350L mutation reduced the pH sensitivity of activation and SSD, and the presence of 30 nM PcTx1 only led to a slight shift in pH50_SSD, with no discernible effect on channel activation (Figure 3B and C, Supplementary file 1a). The inhibitory effect of PcTx1 under physiological pH (7.4) was still concentration dependent but dramatically decreased in the F350L variant compared to WT (IC50 ~ 1 \u00b5M for F350L compared to ~1 nM for WT; Figure 3D and E, Supplementary file 1h). Introduction of the F350L mutation therefore strongly reduced the gating-modifying properties of PcTx1 and diminished its inhibitory effect by three orders of magnitude.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig3-v2.jpg)\n\n**Figure 3.:** (A) Model of the co-crystal structure of cASIC1a and PcTx1 (teal) binding to the extracellular domain (PDBID 4FZO). Inset shows a closeup of the interaction site at the acidic pocket, including acid-sensing ion channel 1a (ASIC1a) residue F350 (orange). (B) Representative two-electrode voltage-clamp (TEVC) trace showing mASIC1a F350L pH activation in the absence (top) and presence (bottom) of 30 nM PcTx1. Scale bars are 4 \u00b5A (vertical) and 60 s (horizontal). (C) Activation and steady-state desensitization (SSD) curve of F350L mASIC1a without (orange) and with (teal) 30 nM PcTx1 (n = 5\u201312). (D) TEVC traces showing the effect of 1 nM PcTx1 on mASIC1a WT (top) and 100 nM PcTx1 on F350L (bottom) applied at pH 7.4. Scale bars are 4 \u00b5A (vertical) and 30 s (horizontal). (E) PcTx1 concentration\u2013response curve at pH 7.4 using the protocol shown in (D) (WT: n = 9\u201314, F350L: n = 4\u20137). (F) Representative voltage-clamp fluorometry (VCF) trace of the K105C*F350L mutant showing application of 300 nM PcTx1 at pH 7.4. (G) Left: representative VCF trace of the K105C*F350L mutant showing application of 300 nM PcTx1 at pH 7.3. Right: comparison of the fluorescence change upon PcTx1 application and after a 3 min washout between K105C* and K150C*F350L. (H) Left: representative trace of a VCF recording of V80C*F350L equivalent to the one shown in (G). Right: same analysis as in (G) but compared between V80C* and V80C*F350L. Data in (C), (E), (G), and (H) are presented as mean \u00b1 95 CI, unpaired Mann\u2013Whitney test, **p<0.005, ****p<0.0001.\n\nIn contrast to the K105C* variant, we found that application of 300 nM PcTx1 to K105C*F350L at pH 7.4 did not elicit any fluorescence changes (Figure 3F, Supplementary file 1c). Notably, the fluorescence response curve of the K105C*F350L variant is about 0.1 pH units shifted towards more acidic pH compared to K105C* (Figure 1\u2014figure supplement 1B, Supplementary file 1b). Taking this change into account, we applied PcTx1 at pH 7.3. Under these conditions, PcTx1 induced a similar slow-onset fluorescence signal as seen for K105C*, albeit slightly less pronounced, while the functional insensitivity of the F350L variant to PcTx1 remained (Figure 3G, Supplementary file 1c), indicating that the channel can still enter the \u2018ECDonly\u2019 state while the \u2018Global\u2019 binding mode is unfavorable. A striking difference was apparent in the washout: unlike in K105C*, the fluorescence signal of K105C*F350L readily returned to a level indicative of a closed apo state in the first 1\u20132 min of pH 7.4 washout, suggesting that the longevity of the \u2018ECDonly\u2019 state is destabilized (Figure 3G, Supplementary file 1d). Again, these observations were mirrored by the V80C*F350L variant (Figure 3H, Supplementary file 1c and d), thereby emphasizing the robust and ECD-wide nature of the observed conformational changes. Together, these data suggest that the functional PcTx1 insensitivity of the F350L variant primarily originates from a destabilization of the PcTx1-induced conformational states (\u2018Global\u2019 and \u2018ECDonly\u2019) rather than solely from impaired binding.\n\n### Contribution of individual F350L subunits to PcTx1 inhibition\n\nThe drastic reduction in PcTx1 sensitivity and notable destabilization of the PcTx1-induced \u2018ECDonly\u2019 state through the F350L mutation provided a unique opportunity to determine the stoichiometric requirements for functional PcTx1 modulation, as well as the contribution of individual F350L-containing ASIC1a subunits to PcTx1 insensitivity. Conventional approaches are inapt to answer these fundamental questions as it is technically challenging to introduce targeted mutation in a single subunit within a homotrimer, and co-expression of non-concatenated WT and mutant subunits can lead to undesired, heterogeneous subunit assemblies precluding accurate interpretation of functional data. The use of concatemeric constructs helps to overcome these limitations. By fusing cDNAs of subunits of interest in the desired order, this approach predetermines the subunit composition and assembly of channels, allowing us to directly address questions such as the number of intact PcTx1 binding sites needed for functional inhibition. Importantly, the trimeric assembly of ASICs has proven to be highly amenable to this approach (Joeres et al., 2016; Lynagh et al., 2017; Wu et al., 2019).\n\nWe therefore designed concatemeric ASIC1a constructs of triple WT subunits (WT/WT/WT) and constructs carrying the F350L substitution in one, two, or all three subunits (F350L/F350L/F350L) using a previously validated construct design (Figure 4A, Figure 4\u2014figure supplement 1; Lynagh et al., 2017). The pH dependence of the WT/WT/WT and the F350L/F350L/F350L concatemer constructs showed similar pH sensitivities compared to homotrimeric WT and F350L, respectively (Figure 4\u2014figure supplement 2A, Supplementary file 1i). The number of F350L subunits determined the pH dependence of concatemeric ASIC1a constructs but was not dependent on the relative positioning of the mutation within the concatemeric ASIC1a construct (Figure 4B\u2013E, Figure 4\u2014figure supplement 2B, Supplementary file 1i). These results provided a robust foundation to assess the effect of one, two, or three F350L-bearing subunits on PcTx1 inhibition.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic overview of the concatemeric constructs containing the F350L mutation (orange) in none, one, two, or all three subunits. (B) Representative two-electrode voltage-clamp (TEVC) trace of activation (C) Activation curve from recordings shown in (B) for the four different concatemeric constructs (n = 7\u201313). (D) Representative TEVC trace of steady-state desensitization (SSD). (E) SSD profiles from recordings shown in (D) (n = 4\u201311). (F) Representative TEVC trace of concentration-dependent PcTx1 inhibition at pH 7.4. (G) PcTx1 concentration\u2013response curves from data shown in (F) (n = 4\u201311). Scale bars are 4 \u00b5A (vertical) and 60 s (horizontal) for (B, D) and 30 s for (F). Data points in (C, E and G) represent mean \u00b1 95CI.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic representation of the concatemer design showing mASIC1a sequence in teal, linkers that connect subunits a, b, and c in red, with restriction sites underlined. (B) Primer pairs used to generate inserts a\u2013c for ligation into the concatemer constructs. Nucleotide spacers and untranslated sequences are shown in gray, restriction sites are shown in red, peptide linker are shown in black, and mASIC1a sequence is in teal. (C) Western blot of surface-purified membrane protein from oocytes expressing monomeric or concatemeric acid-sensing ion channel 1a (ASIC1a) constructs using a mASIC1a-specific antibody. Bands for monomeric ASIC1a WT and F350L subunits appear at ~60 kDa while the bands for concatemeric ASIC1a constructs appear at ~180 kDa, corresponding to three covalently linked ASIC1a subunits. Panels (A, B) adapted from Lynagh et al., 2017.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Activation and steady-state desensitization (SSD) curves for trimeric and concatemeric WT and F350L channels in comparison. (B) Activation curves for all concatemeric variants showing that concatemers with the same number of F350L-bearing subunits cluster around similar pH sensitivities. (C) Same as in (B), but for concentration-dependent PcTx1 inhibition. Data are presented as mean \u00b1 95 CI.\n\nFor the WT/WT/WT concatemer, pH 5.6-induced currents were inhibited by PcTx1 with an apparent IC50 of around 6 nM at pH 7.4 compared to an IC50 of 0.6 nM for WT ASIC1a (Figure 3E, Figure 4F and G, Supplementary file 1h). For the F350L/F350L/F350L concatemer, PcTx1 inhibited pH 5.6-induced currents with an apparent IC50 of around 800 nM, similar to the trimeric F350L ASIC1a mutant (Figure 3E, Figure 4F and G, Supplementary file 1h). This meant that despite the lower PcTx1 sensitivity of the WT/WT/WT concatenated construct the substantial decrease in PcTx1 sensitivity caused by the F350L mutation was maintained in the F350L/F350L/F350L construct. For concatenated constructs containing two F350L-bearing subunits (WT/F350L/F350L), pH 5.6-induced currents were inhibited by PcTx1 with an apparent IC50 around 100 nM (Figure 4F and G, Figure 4\u2014figure supplement 2C, Supplementary file 1h). This represented a 17-fold increase in apparent IC50 compared to the WT/WT/WT concatemer and an 8-fold decrease compared to the F350L/F350L/F350L concatemer. Remarkably, the concatemer with only a single F350L-containing subunit (WT/F350L/WT) closely matched the PcTx1 inhibition profile observed for the WT/WT/WT concatemer (Figure 4F and G, Figure 4\u2014figure supplement 2C, Supplementary file 1h).\n\nTaken together, we demonstrate that application of PcTx1 at pH 7.4 maintains the WT-like inhibitory effect on pH 5.6 activation even if one out of three subunits contains the F350L mutation. We conclude that two WT subunits per mASIC1a trimer are sufficient to observe WT-like functional inhibition by PcTx1.\n\n### PcTx1-induced conformational changes in concatemeric channels\n\nWe next wanted to test if a stepwise introduction of F350L-bearing subunits would result in a difference in the stability of the PcTx1-induced \u2018ECDonly\u2019 state observed in VCF experiments. To this end, we introduced the K105C mutation in all three subunits for Alexa Fluor 488 labeling, while increasing the number of F350L-containing subunits from one to two and three, respectively. We refer to subunits with WT background but labeled at K105C as WT*, while subunits labeled at K105C and containing the F350L mutation are designated F350L*. First, we established the pH dependence of the fluorescence signal. Overall, the pH50_fluorescence and the pH50_SSD matched in all constructs and were in a similar range as the non-concatenated channels (Figure 5\u2014figure supplement 1, Supplementary file 1b). PcTx1 (300 nM) was applied 0.3 pH units above the measured pH50_fluorescence. In the WT*/WT*/WT* concatemer, PcTx1 functionally inhibited channel activation and led to the characteristic increase in fluorescence maintained even after removal of PcTx1 from the buffer, and this was comparable to what we observed in the K105C* trimer (Figure 1E, Figure 5A, D, and E, Supplementary file 1c and d).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative voltage-clamp fluorometry (VCF) trace of 300 nM PcTx1 application to a concatemeric construct labeled at K105C* in all three subunits (red star) and subsequent washout for 3 min with pH 7.4 and 40 s pH 8.4. (B) Same as in (A) but one subunit carries a F350L mutation. (C) Same as in (A) but with two subunits carry a F350L mutation. (D) Comparison of the PcTx1-induced change in the fluorescence signal between the different concatemeric constructs shown in (A\u2013C). Results from non-concatenated channels are indicated for comparison (shown in light gray). (E) Comparison of the fluorescence intensity after a 3 min washout relative to the intensity upon PcTx1 application. Results from non-concatenated channels are indicated for comparison (shown in light gray). All scale bars represent 10 \u03bcA (black vertical), 60 s (black horizontal), 1% (red vertical). In (D) and (E), error bars represents 95CI, unpaired Mann\u2013Whitney test to neighboring bar on the left, *p<0.05, **p<0.005, ***p<0.0005.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Steady-state desensitization (SSD) and fluorescence response curves for the WT*/WT*/WT* concatemer. (B) Same as in (A) but for WT*/F350L*/WT* (C) Same as in (A) but for WT*/F350L*/F350L*. Data are presented as mean \u00b1 95 CI.\n\nIn WT*/F350L*/WT*concatemers, PcTx1 still had an inhibitory effect on activation, in line with the results from nonlabeled constructs, and produced a robust fluorescence response (Figure 5B and D, Supplementary file 1c). In this construct, a marked gradual decrease of the fluorescence signal during the 3 min washout at pH 7.4 was noticeable (Figure 5B and E, Supplementary file 1d). In constructs with two F350L-containing subunits, the response of the fluorescence signal to PcTx1 was further reduced, and the fluorescence signal returned to baseline levels (indicative of a closed apo state) in the first 1\u20132 min of the pH 7.4 washout (Figure 5C\u2013E, Supplementary file 1c and d), reminiscent of the PcTx1 effect on the non-concatemeric K105C*/F350L channel (Figure 3G). No reliable changes in fluorescence could be detected for the F350L*/F350L*/F350L*, likely due to low expression.\n\nIn summary, our VCF experiments demonstrate that in contrast to the functional modulation the presence of a single F350L-containing subunit is sufficient to destabilize the \u2018ECDonly\u2019 state introduced by PcTx1, further emphasizing that PcTx1 can elicit distinct responses in the ECD and the pore of ASIC1a (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73384/elife-73384-fig6-v2.jpg)\n\n**Figure 6.:** Schematic representation of a side view of acid-sensing ion channel 1a (ASIC1a) extracellular domain (ECD) and transmembrane domain (TMD) and top view of the three subunits and consequences of PcTx1 (teal) binding at neutral/low pH (as in Figure 2D) and with the F350L mutation (orange) in 0\u20133 subunits. The side view coloring shows the decreasing stability of the PcTx1-induced \u2018ECDonly\u2019 state with increasing number of F350L-containing subunits, and the decreasing inhibitory effect on the pore. In channels with a single F350L subunit, only the PcTx1-induced conformational state of the ECD is affected, while the TMD behaves WT-like.\n\n## Discussion\n\nPcTx1 is a widely used ASIC1a modulator in in vitro and in vivo studies, yet the molecular underpinnings of binding, resulting conformational changes, and stoichiometric requirements remained enigmatic. Here, we employ VCF and concatemeric ASIC1a constructs that carry a virtually PcTx1-insensitive mutation in one, two, or all three subunits to establish the stoichiometry of the ASIC1a-PcTx1 interaction. We establish three binding modes for PcTx1 and observe that at least one of them induces a \u2018ECDonly\u2019 conformational change, which leaves the state of the pore unaffected but impacts binding of an endogenous peptide modulator. Collectively, our work provides mechanistic insight into the ASIC1a-PcTx1 interaction and emphasizes the potential of protein engineering approaches for detailed studies of protein\u2212peptide interactions.\n\n### Origin of PcTx1-induced conformational changes\n\nVCF experiments on K105C* and V80C* showed slow-onset PcTx1-induced fluorescence changes, indicating changes in the local environment of the fluorophore attached to the finger or palm domain, respectively. As outlined above, we deem it unlikely that the fluorescence changes are brought on by a direct interaction of PcTx1 with the fluorophore as the fluorescence signal follows opposite directions depending on the position used for labeling (e.g., Figure 1E and G). This leaves the question if the conformational rearrangements reflect a transition into a different functional state or are related to more local PcTx1-induced conformational changes. The phenotype of the PcTx1-induced fluorescence change resembles the one observed for SSD (Figure 1E, Figure 1\u2014figure supplement 1A), and we detect good agreement between the pH50_fluorescence with the pH50_SSD in all variants tested here (Figure 1\u2014figure supplement 1B, Figure 5\u2014figure supplement 1, Supplementary file 1b). This could suggest that the fluorescence change upon PcTx1 application reflects the transition of the channels from a closed to an SSD state upon PcTx1 application. However, this hypothesis is contradicted by several observations. First, during the washout of PcTx1 in K105C* or V80C*, the sustained fluorescence signal indicates a long-lived conformation not observed after SSD, and the channels can already be fully activated even before the fluorescence signal fully returns to baseline (Figure 1E and G, Figure 1\u2014figure supplement 2A, Figure 2A, Figure 2\u2014figure supplement 1A). Secondly, in the K105C*F350L and V80C*F350L variants, PcTx1 still introduces comparable conformational changes as seen for K105C* or V80C*, respectively, yet no functional inhibition could be observed (Figure 3G and H), making it unlikely that channels have ever entered SSD. We therefore favor the notion that labeling allows us to track conformational changes that do not simply report on a known functional transition, but rather reflect unique ECD conformational alterations induced by PcTx1.\n\n### Identification of three distinct binding modes for PcTx1\n\nOur data suggest the presence of three distinct binding modes for PcTx1: a \u2018Loose,\u2019 a tight \u2018Global,\u2019 and a tight \u2018ECDonly.\u2019 We propose PcTx1 to bind loosely to the ASIC1a high-pH closed state that remains in the resting conformation even in the presence of PcTx1 (Figure 2B and D). This association does not result in an ECD conformational change, possibly due to the acidic pocket remaining in an expanded configuration (Yoder et al., 2018). Yet its physical nature is evident from the slight but consistent downward deflection in the fluorescence signal observed with PcTx1 application at pH 8.0, as well as the fact that it increases the proton sensitivity of the channel (Figure 2B, middle panel, Figure 2C, Figure 2\u2014figure supplement 1C). Importantly, this association of PcTx1 is readily reversible as long as the channel remains in a closed state, possibly as a result of unfavorable conformational and/or electrostatic interactions (Figure 2B, right panel, Figure 2C).\n\nIn the \u2018Global\u2019 mode, PcTx1 induces an alteration of the ECD conformation and modifies gating, likely through tight coupling to the channel pore. Since PcTx1 acts as an ASIC1a gating modifier, its functional consequences are pH dependent and can be inhibitory or result in enhanced activation. When PcTx1 is applied at neutral pH, the channel enters a \u2018Global\u2019 mode that leads to subsequent inhibition of pH 5.5 currents. By contrast, enhanced activation becomes more apparent when pH 7.0 is used as a subsequent stimulus instead: while pH 7.0 does not activate the channel directly, prior exposure to PcTx1 reveals the enhanced activation that decreases during washout (Figure 2\u2014figure supplement 1C). The contribution of the left shift in activation is most obvious when the pH is subsequently changed to pH 8.4 before pH 7.0 exposure, which then reveals a return to the \u2018Global\u2019 state with enhanced activation.\n\nInterestingly, an earlier study reported prolonged functional effects of PcTx1 even after washout (Escoubas et al., 2000), possibly due to slow dissociation (Dawson et al., 2012), indicating that the \u2018Global\u2019 binding mode can be long-lived. Here, we further observe conformational ECD changes that last substantially beyond the time frame of functional inhibition (Figure 2A). To our knowledge, this long-lasting \u2018ECDonly\u2019 binding mode has not been characterized before. Several observations indicate that PcTx1 remains bound in a distinct binding mode, such as the persistent conformational \u2018memory\u2019 of the \u2018ECDonly\u2019 state that appears to remain even after several functional and conformational transitions (e.g., Figure 1E, Figure 1\u2014figure supplement 2A), the enhanced activation of the pH 7.0 current long after PcTx1 exposure (Figure 2\u2014figure supplement 1C), and the slow dissociation constant described previously (Dawson et al., 2012). However, we cannot ultimately rule out that PcTx1 unbinds and leaves the channel in a distinct resting state, or that membrane-associated PcTx1 diffuses to the binding site (Gupta et al., 2015). Additionally, a heterogenous distribution of modes is likely co-existing across the population of receptors expressed on the cell surface, thereby further complicating measurements and interpretations. Lastly, we would like to point out that future studies may be capable of uncovering additional binding modes, for example, those associated with PcTx1-induced potentiation (Cristofori-Armstrong et al., 2019).\n\nThe potential physiological implications of this long-lasting conformational state are evident from our observation that it affects the activity of the endogenous neuropeptide BigDyn. And since increased BigDyn levels have been linked to acidosis-induced neuronal cell death (Sherwood and Askwith, 2009), this long-lasting interference of the \u2018ECDonly\u2019 conformation on the ASIC\u2013BigDyn interaction could contribute to neuroprotective effects and provide a conceptually new route for ASIC-targeting therapeutics. Interestingly, such functionally silent states and conformations have previously been suggested to occur also in other ligand-gated ion channels (Dahan et al., 2004; Pless et al., 2007; Pless and Lynch, 2009; Munro et al., 2019) and could, at least in theory, be used to modulate protein\u2013ligand and protein\u2013protein interactions. We further speculate that long-lasting conformational changes could also interfere with recently proposed metabotropic functions of ASIC1a by altering intracellular protein\u2013protein interactions (Wang et al., 2015; Wang et al., 2020), although this will require additional verification.\n\n### The F350L mutation destabilizes PcTx1-induced conformational states\n\nConsistent with previous work (Sherwood et al., 2009; Saez et al., 2015), we observed that although the F350L mutation shifts the PcTx1 IC50 by about three orders of magnitude, ASIC1a is not rendered completely insensitive towards PcTx1 modulation. Reduced PcTx1 inhibition could, in part, result from the reduced pH sensitivity of the F350L variant, in line with the critical role of pH on PcTx1 modulation observed for human and rat ASIC1a (Cristofori-Armstrong et al., 2019). A mutant whose pH50 is shifted towards higher proton concentrations (right-shifted) would show less inhibition even if PcTx1 sensitivity was maintained. However, our VCF experiments rule out decreased pH sensitivity as the main cause for reduced PcTx1 sensitivity since we corrected for the shifts in SSD and pH 5.5 is likely saturating for activation (Borg et al., 2020). Applied at pH 7.4, 300 nM PcTx1 (below the IC50 of the unlabeled F350L variant) does not lead to conformational changes, but does so at pH 7.3, although no functional effects are observed. These experiments indicate that PcTx1 interacts with F350L* and introduces conformational changes despite the lack of functional consequences at these concentrations. This is in line with earlier results that suggested PcTx1 to still bind to F352L hASIC1a as pre-incubation with PcTx1 prevented the modulatory effects of BigDyn (Sherwood and Askwith, 2009) and PcTx1 could still be crosslinked with the mutant channel (Braun et al., 2021). Similarly, experiments from ASIC1a/2a concatemers of different subunit stoichiometries suggested that PcTx1 also binds to ASIC1a-2a interfaces (Joeres et al., 2016) despite the fact that ASIC2a subunits contain a leucine at the position corresponding to 350 in mASIC1a. Hence, the F350L mutation diminishes functional modulation by PcTx1, but not necessarily binding. Indeed, our fluorescence data indicate that the F350L mutation appears to destabilize the PcTx1-induced \u2018ECDonly\u2019 state, leading to faster return of the fluorescence signal to baseline levels, suggestive of a closed apo state.\n\n### Stoichiometry of PcTx1 modulation\n\nStructural data have recently provided a wealth of insight into the molecular details of where and how drugs or toxins bind to ion channels. Yet these data cannot directly inform on the ligand\u2013receptor stoichiometry required for the full functional effect. For example, cryo-EM structures of homotetrameric KCNQ channels suggest a stoichiometric binding of the antiepileptic small-molecule drug retigabine (i.e., one drug per each of the four subunits), while functional work shows that binding of a single retigabine molecule is sufficient to elicit the full functional effect of the channel activator (Yau et al., 2018; Li et al., 2021a; Li et al., 2021b). Similarly, binding of a single alpha-bungarotoxin molecule to the heteromeric nAChR pentamer is sufficient for channel inhibition despite two molecules being present in a cryo-EM co-structure (daCosta et al., 2015; Rahman et al., 2020).\n\nHere, we show that concatemers with homomeric subunit composition display comparable pH sensitivities for activation and SSD, along with similar sensitivity to PcTx1 compared to their homotrimeric counterparts. Functionally, we demonstrate that two WT ASIC1a subunits are sufficient for WT-like PcTx1 sensitivity at physiological pH. Our VCF results, however, revealed that a single F350L subunit is sufficient to destabilize the PcTx1-induced ECD conformation, which then further decreases in channels containing two or three mutant subunits.\n\nWe would like to emphasize that we cannot categorically rule out nonlinear contributions of individual PcTx1 molecules to the net fluorescent signal. Yet we deem this possibility unlikely since the stability of the \u2018ECDonly\u2019 mode decreases in a roughly linear manner with increasing numbers of mutant subunits.\n\nTogether, the proposed binding modes emphasize that the conformational changes of the ECD are partially decoupled from the TMD: interfering with a single PcTx1 binding site is sufficient to alter the stability of the ECD conformation, while the pore (or the coupling to it) translates to closed channels only if two or more PcTx1 binding sites are intact (Figure 6).\n\n### Conclusions\n\nThe conformational landscape of ion channels is likely to far exceed the conformations uncovered by structural or functional studies as it is often challenging to capture such states in compelling ways. By combining concatemeric construct design with VCF, we provide insight into functionally silent conformational changes of the mASIC1a ECD during PcTx1 modulation and assess the contribution of individual subunits to the overall conformational state and on the functional state of the pore. We found that PcTx1 can bind to mASIC1a with at least three distinct binding modes. In addition, PcTx1 induces a long-lived conformational state in the ASIC1a ECD that is uncoupled from the pore but alters ASIC1a pharmacology. Lastly, the work presented here, to our knowledge, constitutes the first use of concatemeric multisubunit protein assemblies engineered for VCF recordings, thus offering the possibility to label a defined subset of subunits to unveil potential asymmetric gating and binding events, such as those proposed for a variety of ligand-gated ion channels (Jasti et al., 2007; Baconguis and Gouaux, 2012; Mowrey et al., 2013; Zhu et al., 2018; Guros et al., 2020; Zhang et al., 2021; Bergh et al., 2021).\n\n## Materials and methods\n\n### Molecular biology\n\nThe complementary DNA (cDNA) encoding mouse ASIC1a (mASIC1a) was used as previously described (Lynagh et al., 2017). Site-directed mutagenesis was performed using PfuUltraII Fusion polymerase (Agilent) and custom DNA mutagenesis primers (Eurofins Genomics). All sequences were confirmed by sequencing of the full coding frame (Eurofins Genomics or Macrogen). cDNAs were linearized with EcoRI, and capped cRNA was transcribed with the Ambion mMESSAGE mMACHINE SP6 kit (Thermo Fisher Scientific).\n\n### ASIC1a concatemer design\n\nMouse ASIC1a concatemeric constructs were generated as described previously (Lynagh et al., 2017). Briefly, the concatemeric mASIC1a constructs were generated by cloning out the mASIC1a insert from the pSP64 vector using forward and reverse primers containing additional HindIII and SalI, SalI and BamHI, or BamHI and SacI sequences, respectively (Figure 4\u2014figure supplement 1). This generated three distinct inserts, a, b, and c, which were gel-purified using the Gel/PCR DNA fragment kit (Geneaid). The inserts were digested with their respective restriction enzymes \u2013 insert a: HindIII and SalI; insert b: SalI and BamHI; and insert c: BamHI and SacI. Insert a was ligated into the empty pSP64 vector (Promega) double-digested with HindIII and SalI. The resulting vector was then double-digested with SalI and BamHI to insert segment b in similar way. The a-b plasmid was then double-digested using BamHI and SacI and segment c was ligated into it. This yielded the final \u2018a-b-c\u2019 mASIC1a concatemer. From this construct, WT inserts were replaced by mASIC1a inserts containing amino acid substitutions generated using the same primers and restriction sites. Full concatemer sequences were confirmed using primers recognizing the unique restriction sites.\n\n### Electrophysiological recordings\n\nOocytes were surgically removed from adult female X. laevis and prepared as previously described (Lynagh et al., 2017). Oocytes were injected with 0.1\u201310 ng cRNA of mASIC1a (volumes between 9 and 50 nL) and incubated for 1\u20134 days at 18\u00b0C in Leibovitz\u2019s L-15 medium (Gibco), supplemented with 3 mM L-glutamine, 2.5 mg/ml gentamycin, and 15 mM HEPES adjusted to pH 7.6. Typically, larger amounts of mutant mASIC1a cRNA were injected compared to WT mASIC1a. For electrophysiological recordings, oocytes were transferred to a recording chamber (Dahan et al., 2004), continuously perfused (2.5 mL/min) with buffer containing (in mM) 96 NaCl, 2 KCl, 1.8 BaCl2, 2 MgCl2, and 5 HEPES, pH adjusted by NaOH or HCl. Solutions exchange was achieved using a gravity-driven 8-line automated perfusion system operated by a ValveBank module (AutoMate Scientific). In experiments where PcTx1 was used, all solutions were supplemented with 0.05% bovine serum albumin (\u226598% essentially fatty acid-free, Sigma-Aldrich). Currents were recorded using microelectrodes (borosilicate capillaries 1.2 mm OD, 0.94 mm ID, Harvard Apparatus), backfilled with 3 M KCl (0.3\u20131.5 M\u03a9) and an OC-725C amplifier (Warner Instruments). The current signal was acquired at 500 Hz, filtered by a 50\u201360 Hz noise eliminator (Hum Bug, Quest Scientific) and digitized using an Axon Digidata 1550 Data Acquisition System and the pClamp (10.5.1.0) software (Molecular Devices). The current signal was further digitally filtered at 2.8 Hz using an 8-pole Bessel low-pass filter prior to analysis. Displayed current traces have been subjected to additional 50\u00d7 data reduction.\n\nSynthetic PcTx1 was obtained from Alomone Labs (>95% purity). BigDyn was synthesized using automated solid-phase peptide synthesis, followed by purification via reversed-phase high-performance liquid chromatography as described previously (Borg et al., 2020). Peptide stock solutions were prepared in MilliQ (18.2 M\u03a9 resistivity) and stored at \u201320\u00b0C. Prior to recording, the peptide was diluted to the desired concentration in recording solution.\n\nConcentration\u2013response relationships of mASIC1a activation were determined by 20 s applications of solutions with decreasing pH values. Between each 20 s application, the oocytes were left to recover for at least 1 min in pH 7.4 solution (unless stated otherwise). The currents elicited by the 20 s application of acidic pH were normalized to the largest current size for each of individual oocyte tested. SSD concentration\u2013response relationships were determined by exposing ASIC1a-expressing oocytes to a 20 s application of pH 5.6 (unless stated otherwise), while decreasing the resting pH in between applications of pH 5.6. In order to ensure that the observed current desensitization was not due to general current rundown, a final application of pH 5.6 was performed after a 2 min resting period at a resting pH that resulted in saturating current responses. Traces were used for further analysis only if the final pH 5.6 application resulted in currents that were \u226580% of the same resting pH prior to the SSD protocol. For testing the effect of PcTx1 on the ASIC1a current response, channels were activated by 20 s application of pH 5.6. Hereafter, the pH solution returned to resting pH to allow channel recovery. PcTx1 was then applied at the desired pH for 1 min prior to a 20 s application of pH 5.6. We tested addition of up to 3 \u03bcM PcTx1 to pH 7.4 buffer and 300 nM PcTx1 to pH 7.3 buffer, but did not measure an appreciable change in pH. For all protocols only traces with current sizes <30 \u00b5A were used for further analysis.\n\n### Voltage-clamp fluorometry\n\nFor VCF, 5\u201320 ng of mASIC1a mRNA or 50 ng for concatemeric constructs were injected into oocytes that were then incubated for 2\u20137 days. On the day of the recording, oocytes w ere labeled by incubating them for 30 min with 10 \u03bcM Alexa Fluor 488 C5-maleimide (Thermo Fisher Scientific) at room temperature in OR2 solution containing (in mM) 82.5 NaCl, 2 KCl, 1 MgCl2, pH 7.4, subsequently washed twice with OR2, and stored in the dark until further use. Concatemeric constructs were kept in the dark for several hours as it tended to reduce background fluorescence. VCF recordings were done as previously described (Borg et al., 2020) using an inverse microscope (IX73 with LUMPlanFL N \u00d740, Olympus), an Olympus TH4-200 halogen lamp as light source, and using a standard GFP filter set (Olympus). The emission was detected using a P25PC-19 photomultiplier tube (Sens-Tech) and photon-to-voltage converter (IonOptix). Current and fluorescence signals were acquired, filtered, digitized, and digitally filtered as described for the other electrophysiology recordings.\n\nFor SSD and pH-dependent fluorescence measurements, running buffer at pH 7.6 was used. Labeled channels were activated for 20 s using pH 6.0, washed for 60 s with pH 7.6 buffer, exposed for 60 s to buffer at conditioning pH, and then directly activated again (Figure 1\u2014figure supplement 1A). Control activations at pH 6.0 were conducted between each SSD measurement. For PcTx1 responses, running buffer at 0.3 pH units above the established pH50_fluorescence was used, unless stated otherwise. First channels were activated for 20 s with pH 5.5, washed for 60 s with running buffer before applying 300 nM PcTx1 for 80 s. Washout protocols either included 3 min exposure to running buffer, pH 8.4 buffer, or a mix of the two (20 s running buffer, 60 s pH 8.4, 40 s running buffer, 60 s pH 8.4). In experiments where PcTx1 was applied at pH 8.0 for 80 s, channels were subsequently either directly exposed to pH 7.4 or activated first with pH 5.5 for 20 s, or pH 8.0 for 80 s before switching to pH 7.4. Fluorescence levels 60 s after switching to pH 7.4 were compared to the levels reached during activation with pH 5.5. For BigDyn experiments, 1 \u00b5M BigDyn was applied at pH 7.4 either for 60 s before PcTx1 application or for 120 s once 300 nM PcTx1 had been washed off with pH 7.4 for 120 s.\n\n### Surface protein purification\n\nOocyte surface proteins were purified using the Pierce Cell Surface Protein Isolation Kit (Thermo Fisher Scientific), modified here for oocytes as previously described (Lynagh et al., 2017). In brief, 30 oocytes were injected with RNA of a single mASIC1a construct. After 2 days of incubation, the oocytes were washed with phosphate buffered saline (PBS) and incubated for 25 min at room temperature with sulfo-NHS-SS-biotin. Hereafter, the reaction was quenched and oocytes were washed with PBS. The oocytes were lysed, centrifuged, and the clarified supernatant was transferred to a spin column containing equilibrated NeutrAvidin Agarose and incubated for 1 hr at room temperature under gentle agitation. The flow-through was discarded, and the NeutrAvidin Agarose was washed and centrifuged. The wash procedure was repeated for a total of three times. Prior to elution, 200 \u00b5L SDS-PAGE sample buffer (62.5 mM Tris-HCl, 1% SDS, 10% glycerol, pH 6.8) containing 50 mM dithiothreitol (DTT) was added and the column was incubated for 60 min at room temperature under agitation. The protein was then eluted by centrifugation. The concentration of protein was determined using the NanoDrop OneC UV-Vis spectrophotometer, and the samples were stored at \u201320\u00b0C.\n\n### Western blot\n\nOocyte surface protein samples were denatured for 5 min at 90\u00b0C in LDS sample buffer containing reducing agent (50 mM DTT) (NuPAGE, Thermo Fisher Scientific). Protein samples (10\u2013120 \u00b5g, dependent on the construct in order to obtain approximately equal band intensity), Novex Sharp pre-stained standard (Thermo Fisher Scientific), were separated by SDS-PAGE using a 4\u201312% Bis-Tris protein gel (NuPAGE, Thermo Fisher Scientific). Protein bands were transferred to a polyvinylidene difluoride (PVDF) membrane (0.45 \u00b5m, Thermo Fisher Scientific) in transfer buffer (NuPAGE, Thermo Fisher Scientific) containing 10% methanol (MeOH). After transfer, the PVDF membrane was rinsed with Tris buffered saline 20 mM Tris, 150 mM NaCl, pH 7.6 with 0.1% Tween-20 added (TBST), and subsequently blocked with 0.5% non-fat dried milk (AppliChem) in TBST using the Snap i.d. 2.0 Protein Detection System (Millipore). The blot was then incubated for 10 min at room temperature with a 1:1000 dilution of rabbit polyclonal anti-ASIC1a antibody (OSR00097W, Thermo Fisher Scientific) in blocking buffer followed by 10 min incubation at room temperature with goat anti-rabbit IgG/horseradish peroxidase-conjugate (1:10,000 dilution of 1 mg/mL stock in blocking buffer; A16110, Thermo Fisher Scientific). The blot was developed using enhanced chemiluminescence detection reagents (Pierce ECL Western Blotting Substrate, Thermo Fisher Scientific) and visualized using a PXi Touch Gel Imaging System (Syngene).\n\n### Data analysis\n\nData analyses were performed in Prism (8.0; GraphPad Software). Fluorescence baseline was adjusted for all fluorescence traces before analysis. For pH\u2013response data, peak amplitudes were normalized to control activations, plotted as a function of pH, and fitted with the Hill equation constrained at min = 0 (and max = 1 for TEVC data) for each recording. The resulting EC50 and Hill values were averaged to give the reported means \u00b1 95 CI in the tables. For PcTx1 inhibition experiments, current responses after PcTx1 treatment were normalized to the current responses without PcTx1 incubation for each oocyte. The average data for the different PcTx1 concentrations were fitted using a Hill equation constrained at min = 0 and max = 1. For display in figures, a single fit to the average normalized responses (\u00b195 CI) is shown. The change in fluorescence upon PcTx1 application was normalized to the neighboring pH 5.5 application. Washout of PcTx1 in VCF experiments was reported as the level of fluorescence under running buffer at the end of the 3 min washout relative to the PcTx1-induced fluorescence change. Fluorescence signal intensity was reported as percentage change relative to the baseline fluorescence level.\n\nAll bar diagrams and summarized data points are presented as mean \u00b1 95 CI unless stated otherwise, and the number of replicates (n) represents individual experimental oocytes. Results were obtained from at least two batches of oocytes. An unpaired Mann\u2013Whitney test was used to compare two groups. Multiple comparisons were made with one-way analysis of variance with Dunnett\u2019s comparison to a control value (i.e., washout using running buffer). A significance level of p<0.05 was applied for all analyses. All graphs and illustrations were made in Prism (8.0, GraphPad Software) and Illustrator CC (Adobe), and structure rendering was done using ChimeraX (Pettersen et al., 2021).\n",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "e638935d-b992-4189-890e-8ca9b3772b85",
+      "submission_id": "4a6bcf92-0921-48ab-9866-8fb3affb062b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon T Sack, https://ror.org/05rrcem69 University of California Davis School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73384.sa0](https://doi.org/10.7554/eLife.73384.sa0)\n\nThis study provides direct evidence that PcTx1, a modulator commonly used to study acid-sensing ion channels, induces a conformational change that persists long after an effect on the channel activity has dissipated. The data support this central claim of the paper and invite future investigation of the precise mechanism. The work is of general interest to those studying ion channel biophysics and pharmacology and is an exemplar of the power of combined functional and fluorescence measurements.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jon T Sack, https://ror.org/05rrcem69 University of California Davis School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73384.sa1](https://doi.org/10.7554/eLife.73384.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Conformational decoupling in acid-sensing ion channels uncovers mechanism and stoichiometry of PcTx1-mediated inhibition\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Jon T Sack as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Kenton Swartz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: David M Maclean (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Address whether PcTx1 effects on F350L could be due to inadvertent acidification of PcTx1 solutions.\n\n2) Elaborate on when PcTx1 is bound in relation to ECD and pore conformational changes.\n\n3) Elaborate on basis for claims that uncoupling between the ECD and pore is occurring.\n\nA straightforward way to address these requests would be inclusion of additional results. Further details of these concerns are in the reviews, along with questions about the mechanistic implications and suggestions that we hope you will find helpful.\n\nReviewer #1 (Recommendations for the authors):\n\nThis is a beautiful study. I have one major concern: that some the effects of solutions with higher concentrations of PcTx1 on F350L may result from a more acidic pH. There is no indication that pH was checked after addition of PcTx1. The PcTx1 solutions are made from synthetic peptide, which are commonly lyophilized from acidic solution. The amount of acid in lyophilizates can vary between preparations. Even a small amount of acid in the extracellular buffer could lead to steady state desensitization. 3 pieces of the data seem consistent with this acidic concern:\n\n1) the Hill slopes >1 for PcTx1 concentration-effect on F350L: this is consistent with H+ desensitization, but not PcTx1 which shows no indication of cooperativity at lower concentrations.\n\n2) the variability of inhibition at [PcTx1] {greater than or equal to} 100 nM (Figures 3E, 4G)\n\n3) inexplicably dramatic difference in effect with pH 7.4 vs pH 7.3 solution (Figures 3F,G)\n\nCould result from changes in pH after addition of PcTx1 from different lots?\n\nDue to this concern, and the potential impacts on conclusions, I would suggest assessing whether the effects of PcTx1 solutions on F350L could result from merely a more acidic pH.\n\nIf this concern is without basis, I apologize for the trouble.\n\nSmall suggestions:\n\nPage 5 \"\u2026conformational change of the ECD upon PcTx1 binding.\"\n\nSuggest changing to \"\u2026after PcTx1 binding.\"\n\nPage 17 \"VCF experiments rule out decreased pH sensitivity as the main cause for reduced PcTx1 sensitivity since we corrected from shifts in the SSD.\"\n\nMight this statement be qualified due to unaccounted greater shifts of pH activation?\n\nReviewer #2 (Recommendations for the authors):\n\nThe PcTx1 stoichiometry (Figures 4 and 5) experiments are a valuable addition to the field. However, the long-lived effects of PcTx1 are the most intriguing aspect of the paper. It's well worth adding experiments to distinguish this novel conformation with states induced purely by pH, to more deeply contrast the proposed Global and ECDonly states and to test and refine their model.\n\nThe PcTx1-induced \u03b4 F signals observed with K105C* and V80C* are also seen with pH 6 stimulus (Bonifacio et al., 2014 Figure 1). And relatively weak pH stimulus (~ pH 6.9, Bonifacio et al., 2014 Figure 6) also produces \u03b4 F signals at these positions. PcTx1 works by increasing apparent affinity for protons (this study, Figure 1D). Very roughly, when the channel is incubated with PcTx1 at pH 7.4 it behaves as it would when alone at pH 7.1 or 7. I suspect that at either site, an SSD-style experiment from 7.4 to 7 would produce a \u03b4 F of similar direction but smaller magnitude as PcTx1 applied at 7.4 but the fluorescence would return to baseline much faster when moving back to 7.4.In other words, it would be good to compare the PcTx1+pH7.4-induced signal with that induced by a pH stimulus of similar functional consequence. This would further highlight that the conformation induced by PcTx1 at 7.4 is distinct from that induced by a functionally equivalent SSD causing stimulus.\n\nIn addition, the dissociation of Global from ECDo states could be done more rigorously through a few experiments. In the absence of PcTx1, pH 5.5 is saturating while pH 7 produces basically no current response. However, in the presence of PcTx1 pH 7 gives about 80% max response (Figure 1D). If the authors are correct that the ECDo state has uncoupled the ECD from the pore, than the pH 7 response should return back to near 0 in the ECDo state. Thus the relative response evoked by pH 7 could be used to distinguish the Global and ECDo states using the experiments in Figure 1E/G (left). After the PcTx1 application, stimulate with 7 and then repeat the stimulus 1-3 minutes into the washes. If the ECDo state is populated, the pH 7 response should be much smaller. However, if PcTx1 is still there in the Global state, the pH 7 responses should be relatively large. Alternative sweeps using pH 5.5 might be needed for normalizing purposes. The current amplitudes might be small with pH 7 stimulus but using a baseline of 7.5 or 7.6 might make the experiment more feasible. I think this would make for a much clearer distinction than the BigDyn experiment and much more compelling evidence for altered coupling (Figure 2 E,F).\n\nThe model in Figure 2D is very helpful in getting across the authors message but does imply PcTx1 is still bound in the ECDo state. I think this has problematic implications (see below). However, it can rather easily be tested by simply adding PcTx1 a second time. Using the protocol in Figure 1E/G (left), after PcTx1 incubation, pH 5.5 is applied and the current is much inhibited. pH 7.4 is applied and the fluorescence remains very different from baseline as the channels, presumably, enter the ECDo state. The model (Figure 2D) indicates PcTx1 is still bound in this state (but possibly to some distinct sub-site or altered pose?). If true, then applying PcTx1 again should do nothing. All PcTx1 sites are occupied by toxins holding the channel in the ECDo state. No new toxins can find spots so the fluorescence should be unchanged and the channels not modulated. However, if something else is going on (if PcTx1 has unbound but left the channel in a slightly different resting state for example), then a second PcTx1 application is likely to produce inhibition just as the first did. As above, I think this makes for a much more compelling distinction between Global and ECDo than the BigDyn experiment and a more explicit test of the model.\n\nWhy don't ASICs bound by PcTx1 always go into the ECDo state? If ASIC-PcTx1 complexes enter a novel long-lived non-modulated state where the toxin remains bound even well after removal from the bathing solution, then these complexes should also enter this same state when PcTX is still in the bathing solution. Fully toxin-bound channels should behave the same regardless of how much unbound toxin is floating around. From Results 4th para, all that is required for ECDo occupancy is PcTx1 plus \"conditions that temporarily activate and/or desensitize the channel\". Thus unless I am much mistaken, the proposed ECDo state should form during typical SSD or pH response curves in the continual presence of PcTx1. You should get ECDo states in the pH response curve in Figure 1C (lower) for example. The pH 7.6 incubation followed by pH 5.5 challenge should trigger the formation of the ECDo state which should preclude modulation by PcTx1 at pH 7.4, and the current should come back. But instead you get inhibition. I think a stronger interpretation of this data is that PcTx1 unbinding enables a distinct resting state (as seen with \u03b4 F) with dampened fluorescence responses to BigDyn. The strength of ECD-pore coupling in this state, and it's occupancy by PcTx1, needs further experimental examination of the type suggested above.\n\nA lot of the data might be explained by PcTx1 fluorescence and modulation have different stoichiometries. It could be that one bound PcTx1 induces a pretty big \u03b4 F (or even a global change in the trimer) but doesn't really provide much modulation. A second or third PcTx1 might produce smaller (or maybe even no) change in deltaF but the second and third are needed for channel modulation. Once you have a trimer saturated with PcTx1, sooner or later one PcTx1 and then a second will dissociate, leaving you with a channel that is no longer modulated, but that last residing PcTx1 keeps the fluorescence relatively high (or low for V80). This aligns nicely with their Figure 4G data. The only objection I see to this 'One PcTx1 changes Fluorescence, two change gating' model is the VCF in Figure 5. In 5C, two binding sites are disrupted. If the above model is correct, a single PcTx1 should give a high deltaF.\n\nIs it possible the pH's for this experiment in 5C are not optimal? They use 7.4 all the way through. But the SSD for the concatemers in 5C is shifted acidic by ~ 0.2 pH units. If they repeat 5C using 7.2 as the basal pH, I wager they would get a pretty big \u03b4 F from just that one PcTx1 binding. This would further support the 'One PcTx1 for the F, two for the gating' idea.\n\nUltimately, I think this is a very interesting and useful paper which will make a sizeable impact in the field and completely solving the mechanism of the PcTx1-induced \u03b4 F shouldn't be a requirement for publication.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The main claim in this study is that changes in the magnitude of fluorescent signals generated by fluorescent molecules attached to ASIC1a arise from a global conformational change of the ECD induced by binding of PcTx1 to the channel. Since the most important evidence relies on the interpretation of this measurement, I would like further explanation on the following points:\n\na) The two residues chosen for placing the fluorescent labels (V80 and K105) are entirely exposed to water (resting, open, desensitized) in all the structures of human and chicken ASIC available today. Therefore, it is expected that the environment of those sites would not change significantly. Can the authors explain the reason of choosing specifically those two residues?\n\nb) What is the mechanism of the small decrease in fluorescence seen after PcTx1 and pH 5.5 in Figure 1A and Figure 2A. Activation prior to the addition of PcTx1 produces a large increase in fluorescence in channels with K105C* but produces a small negative deflection when channels are activated after addition of the toxin; i.e., is the fluorescent signal produced only by desensitization but activation is silent? Is the downward deflection an artifact or reflects a physicala processs dismissed in the study? Please, provide an explanation.\n\nc) Figure 2A the fluorescent signal shows persistence of 'a long-lasting desensitized conformation' induced by PcTx1 but channels are functional not desensitized. Please, explain what factor(s) determines the shift from one mode the other and whether in a single cell there is heterogeneity of modes.\n\nd) The protocol in the first trace of Figure 2A shows multiple activations with low pH. Have the authors considered whether channel activation plays a role in regaining function while the fluorescent signal remains high. In this case the protocol will differ by waiting 3 min after PcTx1 to apply the first activation.\n\ne) The authors write in the first paragraph of results: 'During a 3 min washout out with pH 7.4 solution, the fluorescence signal displayed only a modest decrease, while exposure \u2026' Do they mean that the toxin was washed out during that period? PcTx could remain bound to the channel for much longer than 3 min as shown by Dawson et al., (DOI: 10.1038/ncomms1917) using SPR at pH 6.3 they measured KD = 1.79x10-9 M, Kon=7.99x105 M s, and Koff=1.4x10-3 that is a tao ~12 min, suggesting that after 3 min there is almost no washout of the toxin. The presence or absence of the toxin attached to the channels needs to be verified with additional experiments. Another caveat, is that affinity of the toxin may be also be pH dependent, complicating the interpretation of changes in fluorescence attributed to pH.\n\n2. The MN focuses in a narrow and highly specialized topic requiring a great deal of familiarity with the subject. The Introduction could make a better job in this regard. The following sentences in the Abstract are unintelligible prior to reading the whole MN: \u2018The loose and ECDonly modes are decoupled from the pore, with the latter inducing a long-lived ECD conformation that reduces the crossd of an endogenous neuropeptide. This long-lived conformational state is proton-dependent and can be destabilized by the F350L mutation\u201d. The MN will benefit from deeper description of modes, how are generated, and what underlies the long lived \u2018desensitization\u2019 while regaining response to protons.\n\n3. It would be informative to add to Figure 1B and 1C the fluorescence traces below the currents of activation and SSD. Here, the concentration of PcTx1 is 30 nM, ten-fold lower than in subsequent experiments (300 nM) but is sufficient to shift to the right the pH50ssd and pH50a by one pH unit. The question is whether the magnitude of the fluorescence signal is smaller or remains as in the experiments done with 300 nM. Also, if the fluorescent signal persists or wanes with subsequent activations.\n",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c3c72cea-ea65-4bf2-921f-8f06ac4f3828",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C2",
+      "claim": "Pharmacological inhibition of ASIC1a reduces neurotoxicity and stroke infarct volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of ASIC1a reduces neurotoxicity and stroke infarct volumes, with the cysteine knot toxin psalmotoxin-1 (PcTx1) being one of the most potent and selective inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as a known finding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "2831ce73-92b0-4d72-a370-b5eb4a082285",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C3",
+      "claim": "PcTx1 is one of the most potent and selective inhibitors of ASIC1a.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of ASIC1a reduces neurotoxicity and stroke infarct volumes, with the cysteine knot toxin psalmotoxin-1 (PcTx1) being one of the most potent and selective inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as a known finding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "e43056f4-1af1-42f4-b31d-f6269aeaf849",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C4",
+      "claim": "PcTx1 binds at the subunit interface in the extracellular domain (ECD) of ASIC1a.",
+      "claim_type": "EXPLICIT",
+      "source": "PcTx1 binds at the subunit interface in the extracellular domain (ECD), but the mechanism and conformational consequences of the interaction, as well as the number of toxin molecules required for inhibition, remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as a known finding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "3f7f1336-538b-4957-97de-2a2edd928333",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C5",
+      "claim": "PcTx1 has at least two additional binding modes that are decoupled from the pore besides the known inhibitory binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the known inhibitory binding mode, we propose PcTx1 to have at least two additional binding modes that are decoupled from the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental findings from voltage-clamp fluorometry experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "df2cf03a-02c6-4e7a-b757-87eb01250093",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C6",
+      "claim": "One of the PcTx1 binding modes induces a long-lived ECD conformation that reduces the activity of an endogenous neuropeptide.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these modes induces a long-lived ECD conformation that reduces the activity of an endogenous neuropeptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data showing reduced BigDyn activity after PcTx1 exposure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "9863861f-b05c-431e-a183-a6bfa4dfef8f",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C7",
+      "claim": "The long-lived conformational state induced by PcTx1 is proton-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This long-lived conformational state is proton-dependent and can be destabilized by a mutation that decreases PcTx1 sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data showing pH-dependent fluorescence changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "798a2c52-e95b-463c-b39b-3e60f7f11647",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C8",
+      "claim": "The long-lived conformational state induced by PcTx1 can be destabilized by the F350L mutation that decreases PcTx1 sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This long-lived conformational state is proton-dependent and can be destabilized by a mutation that decreases PcTx1 sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data comparing WT and F350L mutant channels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "c11872e3-f79a-405e-ba35-6986f5cb07c6",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C9",
+      "claim": "Disruption of a single PcTx1 binding site is sufficient to destabilize the toxin-induced conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the use of concatemeric channel constructs reveals that disruption of a single PcTx1 binding site is sufficient to destabilize the toxin-induced conformation, while functional inhibition is not impaired until two or more binding sites are mutated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from concatemeric constructs with varying numbers of F350L mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "2712c874-0010-4442-a03b-cc26f115aa06",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C10",
+      "claim": "Functional inhibition by PcTx1 is not impaired until two or more binding sites are mutated.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the use of concatemeric channel constructs reveals that disruption of a single PcTx1 binding site is sufficient to destabilize the toxin-induced conformation, while functional inhibition is not impaired until two or more binding sites are mutated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from concatemeric constructs showing functional inhibition profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "84805493-1a20-4ea9-b6a8-6c795d76c982",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C11",
+      "claim": "The extracellular domains (ECDs) of ASICs sense pH changes, allowing cations to permeate through the channel pore comprised by the transmembrane domain (TMD).",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular domains (ECDs) of ASICs sense pH changes, allowing cations to permeate through the channel pore comprised by the transmembrane domain (TMD) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about ASIC structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "b7737154-4b62-465f-a28e-bb815506c2d8",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C12",
+      "claim": "pH-activated current in ASICs underlies fast synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Research over the last two decades has shown that this pH-activated current underlies various physiological processes, such as fast synaptic transmission (Du et al., 2014) and learning and memory (Wemmie et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Du et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "9fcdeb4e-19f1-4658-b515-60718c74637c",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C13",
+      "claim": "pH-activated current in ASICs underlies learning and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Research over the last two decades has shown that this pH-activated current underlies various physiological processes, such as fast synaptic transmission (Du et al., 2014) and learning and memory (Wemmie et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wemmie et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "cf46d16f-d4af-4ea4-966a-c411d6f9645c",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C14",
+      "claim": "Peptide-induced ASIC1a inhibition exhibits neuroprotective effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to recent reports of peptide-induced ASIC1a inhibition exhibiting neuroprotective effects, these trimeric channels have emerged as a potential drug target in neurological diseases, including protection from acidosis-induced neurotoxicity and reduction of infarct volume in mouse models of ischemic stroke (Xiong et al., 2004; Wemmie et al., 2013; Chassagnon et al., 2017; Qiang et al., 2018; Gr\u00fcnder, 2020; Heusser and Pless, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "cbc08458-5d3e-43da-ac60-43ab53d0e81c",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C15",
+      "claim": "ASIC1a inhibition provides protection from acidosis-induced neurotoxicity in mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to recent reports of peptide-induced ASIC1a inhibition exhibiting neuroprotective effects, these trimeric channels have emerged as a potential drug target in neurological diseases, including protection from acidosis-induced neurotoxicity and reduction of infarct volume in mouse models of ischemic stroke (Xiong et al., 2004; Wemmie et al., 2013; Chassagnon et al., 2017; Qiang et al., 2018; Gr\u00fcnder, 2020; Heusser and Pless, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "7eea1510-94b1-4684-bf05-9fa0b2959c3b",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C16",
+      "claim": "ASIC1a inhibition reduces infarct volume in mouse models of ischemic stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to recent reports of peptide-induced ASIC1a inhibition exhibiting neuroprotective effects, these trimeric channels have emerged as a potential drug target in neurological diseases, including protection from acidosis-induced neurotoxicity and reduction of infarct volume in mouse models of ischemic stroke (Xiong et al., 2004; Wemmie et al., 2013; Chassagnon et al., 2017; Qiang et al., 2018; Gr\u00fcnder, 2020; Heusser and Pless, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "95208237-b477-4f29-bd4a-ff279614f9f1",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C17",
+      "claim": "30 nM of PcTx1 led to potent alkaline shifts in both the activation curve (\u0394pH50_Act > 0.5 pH units at pH 7.9) of ASIC1a WT.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous findings, 30 nM of PcTx1 led to potent alkaline shifts in both the activation curve (\u0394pH50_Act > 0.5 pH units at pH 7.9; Figure 1B and D, Supplementary file 1a) and SSD of ASIC1a WT expressed in Xenopus laevis oocytes (\u0394pH50_SSD \u2248 0.4 pH units; Figure 1C and D, Supplementary file 1a; Escoubas et al., 2000; Chen et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and D and Supplementary file 1a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "214142f0-50e0-44c3-bc37-709c45717799",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C18",
+      "claim": "30 nM of PcTx1 led to alkaline shifts in SSD of ASIC1a WT (\u0394pH50_SSD \u2248 0.4 pH units).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous findings, 30 nM of PcTx1 led to potent alkaline shifts in both the activation curve (\u0394pH50_Act > 0.5 pH units at pH 7.9; Figure 1B and D, Supplementary file 1a) and SSD of ASIC1a WT expressed in Xenopus laevis oocytes (\u0394pH50_SSD \u2248 0.4 pH units; Figure 1C and D, Supplementary file 1a; Escoubas et al., 2000; Chen et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C and D and Supplementary file 1a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "2d03485f-69f4-48b5-b10f-ca76cc60701b",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C19",
+      "claim": "Labeling of K105C and V80C positions with Alexa Fluor 488 dye reliably reports on conformational changes related to channel gating and modulation by peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we introduced a cysteine residue into the mASIC1a ECD at amino acid position 80 or 105 (Figure 1A) as labeling of these positions with the environmentally sensitive Alexa Fluor 488 dye reliably reports on conformational changes related to channel gating and modulation by peptides (Bonifacio et al., 2014; Borg et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bonifacio et al., 2014 and Borg et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "e3fd1c0a-5b9d-4d44-9abd-b15e4055abc3",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C20",
+      "claim": "Application of pH 5.5 to K105C* resulted in an inward current and a simultaneous upward deflection of the fluorescence signal.",
+      "claim_type": "EXPLICIT",
+      "source": "For Alexa Fluor 488-labeled K105C mASIC1a (K105C*), application of pH 5.5 resulted in an inward current and a simultaneous upward deflection of the fluorescence signal (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "eccc9e22-c159-4aa3-9b5d-942d238f610b",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C21",
+      "claim": "The fluorescence signal of K105C* typically displayed a transient peak followed by a sustained plateau with a pH dependence similar to pH50_SSD.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter typically displayed a transient peak, which likely reflects a short-lived open state, followed by a sustained plateau with a pH dependence that was similar to the pH50_SSD, and thus likely reveals a transition related to a desensitized state (Figure 1\u2014figure supplement 1, Supplementary file 1b; note that pH changes between 7.4 and 9.0 did not lead to any fluorescence changes Borg et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1 and Supplementary file 1b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "09db14b1-0c2f-47ba-aef4-3ea33454b2d5",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C22",
+      "claim": "Application of 300 nM PcTx1 at pH 7.4 to K105C* resulted in slow upward deflection of the fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of 300 nM PcTx1 at pH 7.4 resulted in slow upward deflection of the fluorescence (Figure 1E, Supplementary file 1c), reminiscent of application of pH 7.0, which led to a similar functional inhibition of channel currents (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E and Supplementary file 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "6b0aecd2-8f2f-4f8b-b120-d6a8ca40fbfa",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C23",
+      "claim": "The PcTx1-induced fluorescence signal of K105C* displayed only a modest decrease after 3 min washout with pH 7.4.",
+      "claim_type": "EXPLICIT",
+      "source": "However, and in stark contrast to the pH 7.0 application, the PcTx1-induced fluorescence signal displayed only a modest decrease after 3 min washout with pH 7.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations comparing PcTx1 and pH 7.0 washout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "6669c948-0c5a-4806-ab89-ce6615736757",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C24",
+      "claim": "Post-PcTx1 exposure to pH 8.4 led to an immediate return of fluorescence to baseline level in K105C*.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-PcTx1 exposure to pH 8.4 led to an immediate return of fluorescence to baseline level; yet, the fluorescence increased as soon as the pH was switched back to 7.4, suggesting the presence of a conformational change that is sustained at pH 7.4 (Figure 1E, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "db4ffd65-579c-4598-af53-03faefe76049",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C25",
+      "claim": "The fluorescence of K105C* increased when pH was switched back to 7.4 after pH 8.4 exposure following PcTx1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-PcTx1 exposure to pH 8.4 led to an immediate return of fluorescence to baseline level; yet, the fluorescence increased as soon as the pH was switched back to 7.4, suggesting the presence of a conformational change that is sustained at pH 7.4 (Figure 1E, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "ba9cc14e-9e1e-4864-bd8c-0189485697d5",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C26",
+      "claim": "V80C* showed inverted direction of fluorescence signals upon activation, desensitization, and PcTx1 application compared to K105C*.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the direction of the fluorescence signals upon activation, desensitization, and application and washout of 300 nM PcTx1 at 0.3 pH units more alkaline than the pH50_fluorescence of V80C* were inverted (Figure 1G), but resulted in qualitatively similar effects as observed for K105C* (Figure 1E\u2013H, Figure 1\u2014figure supplement 2C and D, Supplementary file 1c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "631ef9c2-6d88-4f07-8684-d9e0368e503e",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C27",
+      "claim": "PcTx1 binding induces a long-lived conformational change in the ASIC1a ECD.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that PcTx1 binding induces a long-lived conformational change and that this conformational alteration is not necessarily coupled to the channel pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from K105C* and V80C* showing persistent fluorescence changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "de83be18-7dd0-4fac-8d1c-34462c10f4e2",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C28",
+      "claim": "The PcTx1-induced conformational alteration is not necessarily coupled to the channel pore.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that PcTx1 binding induces a long-lived conformational change and that this conformational alteration is not necessarily coupled to the channel pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data showing decoupling between fluorescence and current recovery.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "d41fdfc6-f2e2-4a6d-8edc-8ce9bd7493f8",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C29",
+      "claim": "Repeated exposure to pH 5.5 after PcTx1 treatment led to gradual recovery of current amplitude while fluorescence signal remained unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that once the channel is in this 'Global' state, repeated exposure to pH 5.5 led to a gradual recovery of the current amplitude, while the fluorescence signal remained effectively unchanged (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "8f380ac7-eae4-48ea-93b7-d43815e0bc6a",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C30",
+      "claim": "Functional recovery from PcTx1 inhibition was dependent on washout time, but not activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional recovery from inhibition was dependent on washout time, but not activation (Figure 2\u2014figure supplement 1A and B, Supplementary file 1e), in line with previous observations of tight PcTx1 binding to the open state (Chen et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1A and B and Supplementary file 1e.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "7f93f726-4ef4-4b07-80a3-7178aef8461c",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C31",
+      "claim": "PcTx1 binds tightly to the open state of ASIC1a.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional recovery from inhibition was dependent on washout time, but not activation (Figure 2\u2014figure supplement 1A and B, Supplementary file 1e), in line with previous observations of tight PcTx1 binding to the open state (Chen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Chen et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "6ec13c93-46ba-4d4f-b364-64d8e158c563",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C32",
+      "claim": "When BigDyn (1 \u00b5M) is applied to the PcTx1-induced 'ECDonly' state, the neuropeptide has a much less pronounced effect on the fluorescence signal than without PcTx1 pre-exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that when BigDyn (1 \u00b5M) is applied to the PcTx1-induced 'ECDonly' state, the neuropeptide has a much less pronounced effect on the fluorescence signal than without PcTx1 pre-exposure (Figure 2E and F, Supplementary file 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E and F and Supplementary file 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "6afc068b-ad1a-443a-88d5-17dee138fc97",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C33",
+      "claim": "Reapplication of PcTx1 to the 'ECDonly' state evoked a similar inhibitory and fluorescence response as the initial application.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, reapplication of PcTx1 to the 'ECDonly' state evoked a similar inhibitory and fluorescence response as the initial application (Figure 2G and H, Supplementary file 1g), indicating that a transition from the 'ECDonly' to the 'Global' state is possible.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2G and H and Supplementary file 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "8900a000-f9c4-4e04-826b-2fd3103426f7",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C34",
+      "claim": "The F350L mutation reduced the pH sensitivity of activation and SSD in ASIC1a.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings (Sherwood et al., 2009), introducing the F350L mutation reduced the pH sensitivity of activation and SSD, and the presence of 30 nM PcTx1 only led to a slight shift in pH50_SSD, with no discernible effect on channel activation (Figure 3B and C, Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B and C and Supplementary file 1a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "73379870-f259-4b38-b4cd-713e6a2162a8",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C35",
+      "claim": "The presence of 30 nM PcTx1 only led to a slight shift in pH50_SSD in F350L mutant, with no discernible effect on channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings (Sherwood et al., 2009), introducing the F350L mutation reduced the pH sensitivity of activation and SSD, and the presence of 30 nM PcTx1 only led to a slight shift in pH50_SSD, with no discernible effect on channel activation (Figure 3B and C, Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B and C and Supplementary file 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "1d432898-89bd-4eda-884f-4f2f377571a3",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C36",
+      "claim": "The inhibitory effect of PcTx1 under physiological pH (7.4) was concentration dependent but dramatically decreased in the F350L variant compared to WT (IC50 ~ 1 \u00b5M for F350L compared to ~1 nM for WT).",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitory effect of PcTx1 under physiological pH (7.4) was still concentration dependent but dramatically decreased in the F350L variant compared to WT (IC50 ~ 1 \u00b5M for F350L compared to ~1 nM for WT; Figure 3D and E, Supplementary file 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D and E and Supplementary file 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "5778bd3f-759f-4c40-a94a-f2efb171f770",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C37",
+      "claim": "Application of 300 nM PcTx1 to K105C*F350L at pH 7.4 did not elicit any fluorescence changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the K105C* variant, we found that application of 300 nM PcTx1 to K105C*F350L at pH 7.4 did not elicit any fluorescence changes (Figure 3F, Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3F and Supplementary file 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "050c17dc-1a28-472e-b483-fa06b3111c0d",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C38",
+      "claim": "The fluorescence response curve of the K105C*F350L variant is about 0.1 pH units shifted towards more acidic pH compared to K105C*.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the fluorescence response curve of the K105C*F350L variant is about 0.1 pH units shifted towards more acidic pH compared to K105C* (Figure 1\u2014figure supplement 1B, Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1B and Supplementary file 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "e9cf5b3a-dd27-4ec7-9007-405e57cba492",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C39",
+      "claim": "PcTx1 applied at pH 7.3 to K105C*F350L induced a similar slow-onset fluorescence signal as seen for K105C*, albeit slightly less pronounced.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking this change into account, we applied PcTx1 at pH 7.3. Under these conditions, PcTx1 induced a similar slow-onset fluorescence signal as seen for K105C*, albeit slightly less pronounced, while the functional insensitivity of the F350L variant to PcTx1 remained (Figure 3G, Supplementary file 1c), indicating that the channel can still enter the 'ECDonly' state while the 'Global' binding mode is unfavorable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3G and Supplementary file 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "2a53d7a6-8eb5-4a0d-93ac-712bd212df9b",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C40",
+      "claim": "The fluorescence signal of K105C*F350L readily returned to a level indicative of a closed apo state in the first 1\u20132 min of pH 7.4 washout.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking difference was apparent in the washout: unlike in K105C*, the fluorescence signal of K105C*F350L readily returned to a level indicative of a closed apo state in the first 1\u20132 min of pH 7.4 washout, suggesting that the longevity of the 'ECDonly' state is destabilized (Figure 3G, Supplementary file 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3G and Supplementary file 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "76dd2981-f86d-44bb-b8ce-f04bc11d4aff",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C41",
+      "claim": "The functional PcTx1 insensitivity of the F350L variant primarily originates from a destabilization of the PcTx1-induced conformational states ('Global' and 'ECDonly') rather than solely from impaired binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that the functional PcTx1 insensitivity of the F350L variant primarily originates from a destabilization of the PcTx1-induced conformational states ('Global' and 'ECDonly') rather than solely from impaired binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing fluorescence changes in F350L mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "6cb22a2e-6409-4ae6-8278-93dd9a580240",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C42",
+      "claim": "The pH dependence of the WT/WT/WT and the F350L/F350L/F350L concatemer constructs showed similar pH sensitivities compared to homotrimeric WT and F350L, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The pH dependence of the WT/WT/WT and the F350L/F350L/F350L concatemer constructs showed similar pH sensitivities compared to homotrimeric WT and F350L, respectively (Figure 4\u2014figure supplement 2A, Supplementary file 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 2A and Supplementary file 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "260904c1-ddb5-435e-a85f-61ad0ceda3c1",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C43",
+      "claim": "The number of F350L subunits determined the pH dependence of concatemeric ASIC1a constructs but was not dependent on the relative positioning of the mutation within the concatemeric ASIC1a construct.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of F350L subunits determined the pH dependence of concatemeric ASIC1a constructs but was not dependent on the relative positioning of the mutation within the concatemeric ASIC1a construct (Figure 4B\u2013E, Figure 4\u2014figure supplement 2B, Supplementary file 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B\u2013E, Figure 4\u2014figure supplement 2B, and Supplementary file 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "1bcf8059-995e-47ec-b2ab-90301ec0913b",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C44",
+      "claim": "For the WT/WT/WT concatemer, pH 5.6-induced currents were inhibited by PcTx1 with an apparent IC50 of around 6 nM at pH 7.4.",
+      "claim_type": "EXPLICIT",
+      "source": "For the WT/WT/WT concatemer, pH 5.6-induced currents were inhibited by PcTx1 with an apparent IC50 of around 6 nM at pH 7.4 compared to an IC50 of 0.6 nM for WT ASIC1a (Figure 3E, Figure 4F and G, Supplementary file 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4F and G and Supplementary file 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "6114a36f-c011-4ecd-b6a5-169f7fca9f88",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C45",
+      "claim": "For the F350L/F350L/F350L concatemer, PcTx1 inhibited pH 5.6-induced currents with an apparent IC50 of around 800 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "For the F350L/F350L/F350L concatemer, PcTx1 inhibited pH 5.6-induced currents with an apparent IC50 of around 800 nM, similar to the trimeric F350L ASIC1a mutant (Figure 3E, Figure 4F and G, Supplementary file 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4F and G and Supplementary file 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "ed6a544f-eeeb-446c-bb57-52ca0584a794",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C46",
+      "claim": "For concatenated constructs containing two F350L-bearing subunits (WT/F350L/F350L), pH 5.6-induced currents were inhibited by PcTx1 with an apparent IC50 around 100 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "For concatenated constructs containing two F350L-bearing subunits (WT/F350L/F350L), pH 5.6-induced currents were inhibited by PcTx1 with an apparent IC50 around 100 nM (Figure 4F and G, Figure 4\u2014figure supplement 2C, Supplementary file 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4F and G, Figure 4\u2014figure supplement 2C, and Supplementary file 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "c24e5c1b-c9e6-43bd-aa3e-58187c69a764",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C47",
+      "claim": "The concatemer with only a single F350L-containing subunit (WT/F350L/WT) closely matched the PcTx1 inhibition profile observed for the WT/WT/WT concatemer.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the concatemer with only a single F350L-containing subunit (WT/F350L/WT) closely matched the PcTx1 inhibition profile observed for the WT/WT/WT concatemer (Figure 4F and G, Figure 4\u2014figure supplement 2C, Supplementary file 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4F and G, Figure 4\u2014figure supplement 2C, and Supplementary file 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "8a7c6b23-a68f-4425-94da-ca4858d4ae51",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C48",
+      "claim": "Two WT subunits per mASIC1a trimer are sufficient to observe WT-like functional inhibition by PcTx1.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that two WT subunits per mASIC1a trimer are sufficient to observe WT-like functional inhibition by PcTx1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data from concatemeric constructs showing functional inhibition profiles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "4fbb6b5e-6610-4b74-9506-efb9bb1a7863",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C49",
+      "claim": "In the WT*/WT*/WT* concatemer, PcTx1 functionally inhibited channel activation and led to the characteristic increase in fluorescence maintained even after removal of PcTx1 from the buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the WT*/WT*/WT* concatemer, PcTx1 functionally inhibited channel activation and led to the characteristic increase in fluorescence maintained even after removal of PcTx1 from the buffer, and this was comparable to what we observed in the K105C* trimer (Figure 1E, Figure 5A, D, and E, Supplementary file 1c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A, D, and E and Supplementary file 1c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "c6d7169e-f6d4-4d8a-b214-47e5e38e7263",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C50",
+      "claim": "In WT*/F350L*/WT* concatemers, PcTx1 still had an inhibitory effect on activation and produced a robust fluorescence response.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT*/F350L*/WT*concatemers, PcTx1 still had an inhibitory effect on activation, in line with the results from nonlabeled constructs, and produced a robust fluorescence response (Figure 5B and D, Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B and D and Supplementary file 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "9fae5e4f-6b96-4f58-86c5-048dac8a724c",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C51",
+      "claim": "In WT*/F350L*/WT* concatemers, a marked gradual decrease of the fluorescence signal during the 3 min washout at pH 7.4 was noticeable.",
+      "claim_type": "EXPLICIT",
+      "source": "In this construct, a marked gradual decrease of the fluorescence signal during the 3 min washout at pH 7.4 was noticeable (Figure 5B and E, Supplementary file 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B and E and Supplementary file 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "f3c6bc44-cbf2-4920-85a9-e0254e74e4d2",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C52",
+      "claim": "In constructs with two F350L-containing subunits, the response of the fluorescence signal to PcTx1 was further reduced, and the fluorescence signal returned to baseline levels in the first 1\u20132 min of the pH 7.4 washout.",
+      "claim_type": "EXPLICIT",
+      "source": "In constructs with two F350L-containing subunits, the response of the fluorescence signal to PcTx1 was further reduced, and the fluorescence signal returned to baseline levels (indicative of a closed apo state) in the first 1\u20132 min of the pH 7.4 washout (Figure 5C\u2013E, Supplementary file 1c and d), reminiscent of the PcTx1 effect on the non-concatemeric K105C*/F350L channel (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C\u2013E and Supplementary file 1c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "71e21648-f17d-4aa0-8410-741ecae2074a",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C53",
+      "claim": "The presence of a single F350L-containing subunit is sufficient to destabilize the 'ECDonly' state introduced by PcTx1.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our VCF experiments demonstrate that in contrast to the functional modulation the presence of a single F350L-containing subunit is sufficient to destabilize the 'ECDonly' state introduced by PcTx1, further emphasizing that PcTx1 can elicit distinct responses in the ECD and the pore of ASIC1a (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data from concatemeric constructs with varying numbers of F350L mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "7a00d189-ff97-4979-8da1-471db7c44fc5",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C54",
+      "claim": "PcTx1 can elicit distinct responses in the ECD and the pore of ASIC1a.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our VCF experiments demonstrate that in contrast to the functional modulation the presence of a single F350L-containing subunit is sufficient to destabilize the 'ECDonly' state introduced by PcTx1, further emphasizing that PcTx1 can elicit distinct responses in the ECD and the pore of ASIC1a (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data showing decoupling between ECD conformational changes and pore function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "f1baf55c-eed6-4e6a-9a6f-0992f150437f",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C55",
+      "claim": "Interfering with a single PcTx1 binding site is sufficient to alter the stability of the ECD conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the proposed binding modes emphasize that the conformational changes of the ECD are partially decoupled from the TMD: interfering with a single PcTx1 binding site is sufficient to alter the stability of the ECD conformation, while the pore (or the coupling to it) translates to closed channels only if two or more PcTx1 binding sites are intact (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data from concatemeric constructs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "4e720e17-e2fb-4bf5-9017-ecd7a05834b9",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C56",
+      "claim": "The pore translates to closed channels only if two or more PcTx1 binding sites are intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the proposed binding modes emphasize that the conformational changes of the ECD are partially decoupled from the TMD: interfering with a single PcTx1 binding site is sufficient to alter the stability of the ECD conformation, while the pore (or the coupling to it) translates to closed channels only if two or more PcTx1 binding sites are intact (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on experimental data from concatemeric constructs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "0cbd89dd-737f-412e-ac63-20ef1fe531f2",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C57",
+      "claim": "PcTx1 is a 40-residue cysteine knot peptide toxin extracted from tarantula venom.",
+      "claim_type": "EXPLICIT",
+      "source": "Psalmotoxin-1 (PcTx1) is a 40-residue cysteine knot peptide toxin extracted from tarantula venom (Escoubas et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Escoubas et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "280347f4-4f57-42ba-aa17-d3b8d74e3556",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C58",
+      "claim": "PcTx1 acts as a potent gating modifier on most ASIC1a-containing channels.",
+      "claim_type": "EXPLICIT",
+      "source": "It acts as a potent gating modifier on most ASIC1a-containing channels (Chen et al., 2005; Chen et al., 2006) and shifts activation and SSD curves to more alkaline values, thereby effectively inhibiting the channel in the low nanomolar range at neutral pH (Cristofori-Armstrong and Rash, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2005 and Chen et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "aaa70736-1912-4d5a-8259-c98baa75750e",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C59",
+      "claim": "PcTx1 shifts activation and SSD curves to more alkaline values, thereby effectively inhibiting the channel in the low nanomolar range at neutral pH.",
+      "claim_type": "EXPLICIT",
+      "source": "It acts as a potent gating modifier on most ASIC1a-containing channels (Chen et al., 2005; Chen et al., 2006) and shifts activation and SSD curves to more alkaline values, thereby effectively inhibiting the channel in the low nanomolar range at neutral pH (Cristofori-Armstrong and Rash, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Cristofori-Armstrong and Rash, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "f0798f13-264c-4113-a575-11f565701a79",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C60",
+      "claim": "Structural studies have shown that PcTx1 binds to the subunit interfaces of cASIC1, forming contact points with the primary and complementary side of the acidic pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies have shown that PcTx1 binds to the subunit interfaces of cASIC1, forming contact points with the primary and complementary side of the acidic pocket (Dawson et al., 2012; Baconguis et al., 2014; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Dawson et al., 2012 and Baconguis et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "79e24049-adaa-4129-9696-366c9463e82f",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C61",
+      "claim": "An aromatic side chain located at the entrance of the acidic pocket, F352 in human ASIC1a (F350 in mouse ASIC1a), plays an important role in PcTx1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "An aromatic side chain located at the entrance of the acidic pocket, F352 in human ASIC1a (F350 in mouse ASIC1a), plays an important role in PcTx1 activity because mutations to either alanine or leucine (or ASIC isoforms that naturally carry these residues at this position) display significantly attenuated PcTx1 sensitivity (Sherwood et al., 2009; Sherwood et al., 2011; Saez et al., 2015; Joeres et al., 2016; Cristofori-Armstrong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "c698394e-ac09-4d26-9787-2d6ccb66f936",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C62",
+      "claim": "Mutations of F352/F350 to either alanine or leucine display significantly attenuated PcTx1 sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "An aromatic side chain located at the entrance of the acidic pocket, F352 in human ASIC1a (F350 in mouse ASIC1a), plays an important role in PcTx1 activity because mutations to either alanine or leucine (or ASIC isoforms that naturally carry these residues at this position) display significantly attenuated PcTx1 sensitivity (Sherwood et al., 2009; Sherwood et al., 2011; Saez et al., 2015; Joeres et al., 2016; Cristofori-Armstrong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "cbd4da3d-7dc0-4b0b-b2ba-d31cfd37b132",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C63",
+      "claim": "Species- and state-dependent factors greatly influence the functional outcome of PcTx1 modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional species- and state-dependent factors greatly influence the functional outcome of PcTx1 modulation (Sherwood et al., 2011; Cristofori-Armstrong et al., 2019), but fundamental mechanistic aspects of this interaction remain unresolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Sherwood et al., 2011 and Cristofori-Armstrong et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "5b59e9ac-9a60-4991-a90f-f84e861d6275",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C64",
+      "claim": "Long-lived conformational changes induced by PcTx1 could affect the activity of endogenous ASIC1a modulators.",
+      "claim_type": "EXPLICIT",
+      "source": "This is relevant since long-lived conformational changes could affect the activity of endogenous ASIC1a modulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation about potential implications of the observed conformational changes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "d52c10a0-475e-4076-bb1d-acfb89427fb8",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C65",
+      "claim": "Increased BigDyn levels have been linked to acidosis-induced neuronal cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "And since increased BigDyn levels have been linked to acidosis-induced neuronal cell death (Sherwood and Askwith, 2009), this long-lasting interference of the 'ECDonly' conformation on the ASIC\u2013BigDyn interaction could contribute to neuroprotective effects and provide a conceptually new route for ASIC-targeting therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Sherwood and Askwith, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "a0ec4a09-b561-4cc0-aebd-4d27165c6fb6",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C66",
+      "claim": "The long-lasting interference of the 'ECDonly' conformation on the ASIC\u2013BigDyn interaction could contribute to neuroprotective effects.",
+      "claim_type": "EXPLICIT",
+      "source": "And since increased BigDyn levels have been linked to acidosis-induced neuronal cell death (Sherwood and Askwith, 2009), this long-lasting interference of the 'ECDonly' conformation on the ASIC\u2013BigDyn interaction could contribute to neuroprotective effects and provide a conceptually new route for ASIC-targeting therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation about potential therapeutic implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "831ee74b-0329-4b40-b4e5-5bb322b6c24c",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C67",
+      "claim": "Functionally silent states and conformations have previously been suggested to occur in other ligand-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, such functionally silent states and conformations have previously been suggested to occur also in other ligand-gated ion channels (Dahan et al., 2004; Pless et al., 2007; Pless and Lynch, 2009; Munro et al., 2019) and could, at least in theory, be used to modulate protein\u2013ligand and protein\u2013protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "488ca00d-e505-4129-9c8a-7418359016c4",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C68",
+      "claim": "Long-lasting conformational changes could interfere with recently proposed metabotropic functions of ASIC1a by altering intracellular protein\u2013protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We further speculate that long-lasting conformational changes could also interfere with recently proposed metabotropic functions of ASIC1a by altering intracellular protein\u2013protein interactions (Wang et al., 2015; Wang et al., 2020), although this will require additional verification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation about potential effects on metabotropic functions.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "00f2d7ff-366b-4ed6-9ba5-6ab4ecc37c9c",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C69",
+      "claim": "Reduced PcTx1 inhibition in F350L could, in part, result from the reduced pH sensitivity of the F350L variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced PcTx1 inhibition could, in part, result from the reduced pH sensitivity of the F350L variant, in line with the critical role of pH on PcTx1 modulation observed for human and rat ASIC1a (Cristofori-Armstrong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference and supported by citation to Cristofori-Armstrong et al., 2019.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "f5b4e4d3-96c2-444d-b381-5edd0858982a",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C70",
+      "claim": "PcTx1 still binds to F352L hASIC1a as pre-incubation with PcTx1 prevented the modulatory effects of BigDyn.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with earlier results that suggested PcTx1 to still bind to F352L hASIC1a as pre-incubation with PcTx1 prevented the modulatory effects of BigDyn (Sherwood and Askwith, 2009) and PcTx1 could still be crosslinked with the mutant channel (Braun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Sherwood and Askwith, 2009 and Braun et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "c3e91dd0-6abe-472c-bbe3-3e82e62daa39",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C71",
+      "claim": "PcTx1 could still be crosslinked with the F352L mutant channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with earlier results that suggested PcTx1 to still bind to F352L hASIC1a as pre-incubation with PcTx1 prevented the modulatory effects of BigDyn (Sherwood and Askwith, 2009) and PcTx1 could still be crosslinked with the mutant channel (Braun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Braun et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "b76975c5-ab77-4116-8a1a-be34456af1a8",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C72",
+      "claim": "Experiments from ASIC1a/2a concatemers of different subunit stoichiometries suggested that PcTx1 also binds to ASIC1a-2a interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, experiments from ASIC1a/2a concatemers of different subunit stoichiometries suggested that PcTx1 also binds to ASIC1a-2a interfaces (Joeres et al., 2016) despite the fact that ASIC2a subunits contain a leucine at the position corresponding to 350 in mASIC1a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Joeres et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "208ba3fc-92b3-4721-be43-612d812474bc",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C73",
+      "claim": "ASIC2a subunits contain a leucine at the position corresponding to 350 in mASIC1a.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, experiments from ASIC1a/2a concatemers of different subunit stoichiometries suggested that PcTx1 also binds to ASIC1a-2a interfaces (Joeres et al., 2016) despite the fact that ASIC2a subunits contain a leucine at the position corresponding to 350 in mASIC1a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a known fact about ASIC2a sequence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "72a7769b-1fdd-4758-8ea0-ad79dab7fae5",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C74",
+      "claim": "Cryo-EM structures of homotetrameric KCNQ channels suggest a stoichiometric binding of the antiepileptic small-molecule drug retigabine.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cryo-EM structures of homotetrameric KCNQ channels suggest a stoichiometric binding of the antiepileptic small-molecule drug retigabine (i.e., one drug per each of the four subunits), while functional work shows that binding of a single retigabine molecule is sufficient to elicit the full functional effect of the channel activator (Yau et al., 2018; Li et al., 2021a; Li et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Yau et al., 2018, Li et al., 2021a, and Li et al., 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "2561ac8c-6cc0-4307-9de4-58a5f40dc857",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C75",
+      "claim": "Functional work shows that binding of a single retigabine molecule is sufficient to elicit the full functional effect of the KCNQ channel activator.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cryo-EM structures of homotetrameric KCNQ channels suggest a stoichiometric binding of the antiepileptic small-molecule drug retigabine (i.e., one drug per each of the four subunits), while functional work shows that binding of a single retigabine molecule is sufficient to elicit the full functional effect of the channel activator (Yau et al., 2018; Li et al., 2021a; Li et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Yau et al., 2018, Li et al., 2021a, and Li et al., 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "82184ac8-7b03-403d-b900-6ea466ca8da0",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C76",
+      "claim": "Binding of a single alpha-bungarotoxin molecule to the heteromeric nAChR pentamer is sufficient for channel inhibition despite two molecules being present in a cryo-EM co-structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, binding of a single alpha-bungarotoxin molecule to the heteromeric nAChR pentamer is sufficient for channel inhibition despite two molecules being present in a cryo-EM co-structure (daCosta et al., 2015; Rahman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to daCosta et al., 2015 and Rahman et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "769fd6d6-1837-48df-b243-376c625a2c83",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C77",
+      "claim": "The conformational landscape of ion channels is likely to far exceed the conformations uncovered by structural or functional studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational landscape of ion channels is likely to far exceed the conformations uncovered by structural or functional studies as it is often challenging to capture such states in compelling ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general knowledge and reasoning about limitations of current methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "6c7dd7c0-ff08-42e7-9b55-1eed7abfa186",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "claim_id": "C78",
+      "claim": "Asymmetric gating and binding events have been proposed for a variety of ligand-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the work presented here, to our knowledge, constitutes the first use of concatemeric multisubunit protein assemblies engineered for VCF recordings, thus offering the possibility to label a defined subset of subunits to unveil potential asymmetric gating and binding events, such as those proposed for a variety of ligand-gated ion channels (Jasti et al., 2007; Baconguis and Gouaux, 2012; Mowrey et al., 2013; Zhu et al., 2018; Guros et al., 2020; Zhang et al., 2021; Bergh et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1c70025a-54dc-4965-a8e6-47d429d4f7ad",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established that pharmacological inhibition of ASIC1a, particularly by PcTx1, reduces neurotoxicity and stroke infarct volumes in mouse models. PcTx1 is one of the most potent and selective ASIC1a inhibitors and binds at the subunit interface in the extracellular domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C2-C4, C14-C16) summarize established knowledge from prior literature, supported by multiple citations. They provide the scientific context and rationale for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "8f5728ab-c53d-4b60-9dc9-af87d170f9e1",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PcTx1 (30 nM) induces potent alkaline shifts in both activation (\u0394pH50_Act > 0.5 pH units) and steady-state desensitization (\u0394pH50_SSD \u2248 0.4 pH units) of ASIC1a WT. Voltage-clamp fluorometry using K105C* labeled with Alexa Fluor 488 shows that PcTx1 application at pH 7.4 results in slow upward fluorescence deflection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 are well-supported by experimental data shown in Figures 1B-E and supplementary files. The functional effects of PcTx1 are consistent with prior literature (cited), and the VCF approach provides novel conformational insights.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "9e6da03d-5a9d-4af4-b5a3-54a634289f3d",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PcTx1 induces a long-lived conformational change in the ASIC1a ECD that persists after washout at pH 7.4 but is reversible at pH 8.4. This conformational change is observed at two spatially distinct labeling positions (K105C and V80C) with opposite fluorescence directions, indicating a global ECD conformational change that is decoupled from the channel pore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 are strongly supported by VCF data from both K105C* and V80C* (Figures 1E-H). The opposite fluorescence directions at different labeling sites argue against local dye-toxin interactions and support a global conformational change. The decoupling from pore function is demonstrated by persistent fluorescence despite current recovery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "807891eb-0f0e-4e5a-98cb-f3ce7408af02",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Following PcTx1 treatment, repeated pH 5.5 exposures lead to gradual recovery of current amplitude while fluorescence remains unchanged. Functional recovery depends on washout time but not activation, consistent with tight PcTx1 binding to the open state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by experimental data in Figure 2A and Figure 2\u2014figure supplement 1. The observation that functional recovery occurs without fluorescence recovery further supports the decoupling between ECD conformation and pore state. The citation to Chen et al., 2006 provides additional support for tight binding to the open state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "f8e01f7a-02b9-45a3-8c07-c51aecef323d",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PcTx1 has at least two additional binding modes beyond the known inhibitory mode, which are decoupled from the pore. One mode induces a long-lived, proton-dependent ECD conformation that reduces BigDyn activity and can be destabilized by the F350L mutation. Using concatemeric constructs, disruption of a single PcTx1 binding site destabilizes the toxin-induced conformation, while functional inhibition requires mutation of two or more binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C10 represent the major findings of the manuscript. They are supported by extensive VCF data (Figures 1-5), BigDyn competition experiments (Figure 2E-F), F350L mutant studies (Figure 3), and concatemeric construct experiments (Figures 4-5). The stoichiometric analysis using concatemers provides strong evidence for differential requirements for ECD conformational stability versus functional inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "a1432a11-8c76-497c-9373-da5e90c35a93",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When BigDyn is applied to the PcTx1-induced 'ECDonly' state, it has a much less pronounced effect on fluorescence compared to application without PcTx1 pre-exposure. Conversely, reapplication of PcTx1 to the 'ECDonly' state evokes a similar response as initial application.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by experimental data in Figures 2E-H and Supplementary file 1g. The differential effects of BigDyn versus PcTx1 on the 'ECDonly' state provide strong evidence for the functional relevance of this conformational state and suggest it affects binding of other ECD-targeting modulators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "1ca64c35-7280-482e-8aff-27d28d9ef407",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The F350L mutation reduces pH sensitivity of activation and SSD, and dramatically decreases PcTx1 inhibitory potency (IC50 ~1 \u00b5M vs ~1 nM for WT). VCF experiments show that at pH 7.3, PcTx1 can still induce conformational changes in K105C*F350L despite lack of functional inhibition, but the 'ECDonly' state is destabilized with faster fluorescence recovery. This suggests F350L primarily destabilizes PcTx1-induced conformational states rather than preventing binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41 are well-supported by functional and VCF data in Figure 3. The key insight that F350L destabilizes conformational states rather than preventing binding is supported by the observation that PcTx1 can still induce fluorescence changes at pH 7.3 despite lack of functional effects. The faster washout kinetics provide direct evidence for destabilization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "e5770269-5a1f-4033-af13-bb07c02c4cfc",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Concatemeric ASIC1a constructs with defined F350L subunit stoichiometry show that pH dependence is determined by the number but not position of F350L subunits. PcTx1 inhibition analysis reveals that two WT subunits are sufficient for WT-like functional inhibition (IC50 ~6 nM for WT/WT/WT and WT/F350L/WT concatemers), while constructs with two F350L subunits show intermediate sensitivity (IC50 ~100 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48 are strongly supported by systematic functional characterization of concatemeric constructs in Figure 4. The Western blot (Figure 4\u2014figure supplement 1C) confirms proper expression of concatemers. The finding that a single F350L subunit does not impair functional inhibition is a key stoichiometric insight supported by concentration-response curves.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "9852d492-ff0f-4e71-8db2-dc2b88429ad1",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "VCF experiments on labeled concatemeric constructs reveal that a single F350L subunit is sufficient to destabilize the 'ECDonly' state (faster fluorescence decay during washout), while functional inhibition remains WT-like. Constructs with two F350L subunits show further reduced fluorescence response and faster return to baseline. This demonstrates that PcTx1 elicits distinct responses in the ECD versus the pore, with different stoichiometric requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C56 are supported by VCF data from labeled concatemeric constructs in Figure 5. The systematic comparison across constructs with 0-3 F350L subunits provides strong evidence for the differential stoichiometric requirements for ECD conformational stability (1 WT subunit insufficient) versus functional inhibition (1 WT subunit sufficient). This is a major mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "c2f1ef36-e454-4388-a899-a2faf6b617ba",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that long-lived conformational changes induced by PcTx1 could affect the activity of endogenous ASIC1a modulators, potentially contribute to neuroprotective effects through interference with the ASIC-BigDyn interaction, and might interfere with metabotropic functions of ASIC1a.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64, C66, and C68 are explicitly speculative (using phrases like 'could affect,' 'could contribute,' 'we speculate'). While the BigDyn competition data (C32) provides some experimental support for altered modulator activity, the neuroprotective and metabotropic implications remain hypothetical and require additional verification as acknowledged by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    },
+    {
+      "id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e",
+      "content_id": "e4941b6b-a459-4d9f-91a6-66461372f35c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on ASIC structure and function, PcTx1 properties and binding, prior work on F350L mutations, and analogous findings in other ion channels regarding stoichiometry and functionally silent states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13, C57-C63, C65, C67, C69-C78 represent background knowledge and literature context, all supported by appropriate citations. These provide the scientific foundation for interpreting the current findings but are not novel results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:53.618441Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c3c72cea-ea65-4bf2-921f-8f06ac4f3828",
+      "result_id": "1c70025a-54dc-4965-a8e6-47d429d4f7ad"
+    },
+    {
+      "claim_id": "2831ce73-92b0-4d72-a370-b5eb4a082285",
+      "result_id": "1c70025a-54dc-4965-a8e6-47d429d4f7ad"
+    },
+    {
+      "claim_id": "e43056f4-1af1-42f4-b31d-f6269aeaf849",
+      "result_id": "1c70025a-54dc-4965-a8e6-47d429d4f7ad"
+    },
+    {
+      "claim_id": "cf46d16f-d4af-4ea4-966a-c411d6f9645c",
+      "result_id": "1c70025a-54dc-4965-a8e6-47d429d4f7ad"
+    },
+    {
+      "claim_id": "cbc08458-5d3e-43da-ac60-43ab53d0e81c",
+      "result_id": "1c70025a-54dc-4965-a8e6-47d429d4f7ad"
+    },
+    {
+      "claim_id": "7eea1510-94b1-4684-bf05-9fa0b2959c3b",
+      "result_id": "1c70025a-54dc-4965-a8e6-47d429d4f7ad"
+    },
+    {
+      "claim_id": "95208237-b477-4f29-bd4a-ff279614f9f1",
+      "result_id": "8f5728ab-c53d-4b60-9dc9-af87d170f9e1"
+    },
+    {
+      "claim_id": "214142f0-50e0-44c3-bc37-709c45717799",
+      "result_id": "8f5728ab-c53d-4b60-9dc9-af87d170f9e1"
+    },
+    {
+      "claim_id": "2d03485f-69f4-48b5-b10f-ca76cc60701b",
+      "result_id": "8f5728ab-c53d-4b60-9dc9-af87d170f9e1"
+    },
+    {
+      "claim_id": "e3fd1c0a-5b9d-4d44-9abd-b15e4055abc3",
+      "result_id": "8f5728ab-c53d-4b60-9dc9-af87d170f9e1"
+    },
+    {
+      "claim_id": "eccc9e22-c159-4aa3-9b5d-942d238f610b",
+      "result_id": "8f5728ab-c53d-4b60-9dc9-af87d170f9e1"
+    },
+    {
+      "claim_id": "09db14b1-0c2f-47ba-aef4-3ea33454b2d5",
+      "result_id": "8f5728ab-c53d-4b60-9dc9-af87d170f9e1"
+    },
+    {
+      "claim_id": "6b0aecd2-8f2f-4f8b-b120-d6a8ca40fbfa",
+      "result_id": "9e6da03d-5a9d-4af4-b5a3-54a634289f3d"
+    },
+    {
+      "claim_id": "6669c948-0c5a-4806-ab89-ce6615736757",
+      "result_id": "9e6da03d-5a9d-4af4-b5a3-54a634289f3d"
+    },
+    {
+      "claim_id": "db4ffd65-579c-4598-af53-03faefe76049",
+      "result_id": "9e6da03d-5a9d-4af4-b5a3-54a634289f3d"
+    },
+    {
+      "claim_id": "ba9cc14e-9e1e-4864-bd8c-0189485697d5",
+      "result_id": "9e6da03d-5a9d-4af4-b5a3-54a634289f3d"
+    },
+    {
+      "claim_id": "631ef9c2-6d88-4f07-8684-d9e0368e503e",
+      "result_id": "9e6da03d-5a9d-4af4-b5a3-54a634289f3d"
+    },
+    {
+      "claim_id": "de83be18-7dd0-4fac-8d1c-34462c10f4e2",
+      "result_id": "9e6da03d-5a9d-4af4-b5a3-54a634289f3d"
+    },
+    {
+      "claim_id": "d41fdfc6-f2e2-4a6d-8edc-8ce9bd7493f8",
+      "result_id": "807891eb-0f0e-4e5a-98cb-f3ce7408af02"
+    },
+    {
+      "claim_id": "8f380ac7-eae4-48ea-93b7-d43815e0bc6a",
+      "result_id": "807891eb-0f0e-4e5a-98cb-f3ce7408af02"
+    },
+    {
+      "claim_id": "7f93f726-4ef4-4b07-80a3-7178aef8461c",
+      "result_id": "807891eb-0f0e-4e5a-98cb-f3ce7408af02"
+    },
+    {
+      "claim_id": "3f7f1336-538b-4957-97de-2a2edd928333",
+      "result_id": "f8e01f7a-02b9-45a3-8c07-c51aecef323d"
+    },
+    {
+      "claim_id": "df2cf03a-02c6-4e7a-b757-87eb01250093",
+      "result_id": "f8e01f7a-02b9-45a3-8c07-c51aecef323d"
+    },
+    {
+      "claim_id": "9863861f-b05c-431e-a183-a6bfa4dfef8f",
+      "result_id": "f8e01f7a-02b9-45a3-8c07-c51aecef323d"
+    },
+    {
+      "claim_id": "798a2c52-e95b-463c-b39b-3e60f7f11647",
+      "result_id": "f8e01f7a-02b9-45a3-8c07-c51aecef323d"
+    },
+    {
+      "claim_id": "c11872e3-f79a-405e-ba35-6986f5cb07c6",
+      "result_id": "f8e01f7a-02b9-45a3-8c07-c51aecef323d"
+    },
+    {
+      "claim_id": "2712c874-0010-4442-a03b-cc26f115aa06",
+      "result_id": "f8e01f7a-02b9-45a3-8c07-c51aecef323d"
+    },
+    {
+      "claim_id": "6ec13c93-46ba-4d4f-b364-64d8e158c563",
+      "result_id": "a1432a11-8c76-497c-9373-da5e90c35a93"
+    },
+    {
+      "claim_id": "6afc068b-ad1a-443a-88d5-17dee138fc97",
+      "result_id": "a1432a11-8c76-497c-9373-da5e90c35a93"
+    },
+    {
+      "claim_id": "8900a000-f9c4-4e04-826b-2fd3103426f7",
+      "result_id": "1ca64c35-7280-482e-8aff-27d28d9ef407"
+    },
+    {
+      "claim_id": "73379870-f259-4b38-b4cd-713e6a2162a8",
+      "result_id": "1ca64c35-7280-482e-8aff-27d28d9ef407"
+    },
+    {
+      "claim_id": "1d432898-89bd-4eda-884f-4f2f377571a3",
+      "result_id": "1ca64c35-7280-482e-8aff-27d28d9ef407"
+    },
+    {
+      "claim_id": "5778bd3f-759f-4c40-a94a-f2efb171f770",
+      "result_id": "1ca64c35-7280-482e-8aff-27d28d9ef407"
+    },
+    {
+      "claim_id": "050c17dc-1a28-472e-b483-fa06b3111c0d",
+      "result_id": "1ca64c35-7280-482e-8aff-27d28d9ef407"
+    },
+    {
+      "claim_id": "e9cf5b3a-dd27-4ec7-9007-405e57cba492",
+      "result_id": "1ca64c35-7280-482e-8aff-27d28d9ef407"
+    },
+    {
+      "claim_id": "2a53d7a6-8eb5-4a0d-93ac-712bd212df9b",
+      "result_id": "1ca64c35-7280-482e-8aff-27d28d9ef407"
+    },
+    {
+      "claim_id": "76dd2981-f86d-44bb-b8ce-f04bc11d4aff",
+      "result_id": "1ca64c35-7280-482e-8aff-27d28d9ef407"
+    },
+    {
+      "claim_id": "6cb22a2e-6409-4ae6-8278-93dd9a580240",
+      "result_id": "e5770269-5a1f-4033-af13-bb07c02c4cfc"
+    },
+    {
+      "claim_id": "260904c1-ddb5-435e-a85f-61ad0ceda3c1",
+      "result_id": "e5770269-5a1f-4033-af13-bb07c02c4cfc"
+    },
+    {
+      "claim_id": "1bcf8059-995e-47ec-b2ab-90301ec0913b",
+      "result_id": "e5770269-5a1f-4033-af13-bb07c02c4cfc"
+    },
+    {
+      "claim_id": "6114a36f-c011-4ecd-b6a5-169f7fca9f88",
+      "result_id": "e5770269-5a1f-4033-af13-bb07c02c4cfc"
+    },
+    {
+      "claim_id": "ed6a544f-eeeb-446c-bb57-52ca0584a794",
+      "result_id": "e5770269-5a1f-4033-af13-bb07c02c4cfc"
+    },
+    {
+      "claim_id": "c24e5c1b-c9e6-43bd-aa3e-58187c69a764",
+      "result_id": "e5770269-5a1f-4033-af13-bb07c02c4cfc"
+    },
+    {
+      "claim_id": "8a7c6b23-a68f-4425-94da-ca4858d4ae51",
+      "result_id": "e5770269-5a1f-4033-af13-bb07c02c4cfc"
+    },
+    {
+      "claim_id": "4fbb6b5e-6610-4b74-9506-efb9bb1a7863",
+      "result_id": "9852d492-ff0f-4e71-8db2-dc2b88429ad1"
+    },
+    {
+      "claim_id": "c6d7169e-f6d4-4d8a-b214-47e5e38e7263",
+      "result_id": "9852d492-ff0f-4e71-8db2-dc2b88429ad1"
+    },
+    {
+      "claim_id": "9fae5e4f-6b96-4f58-86c5-048dac8a724c",
+      "result_id": "9852d492-ff0f-4e71-8db2-dc2b88429ad1"
+    },
+    {
+      "claim_id": "f3c6bc44-cbf2-4920-85a9-e0254e74e4d2",
+      "result_id": "9852d492-ff0f-4e71-8db2-dc2b88429ad1"
+    },
+    {
+      "claim_id": "71e21648-f17d-4aa0-8410-741ecae2074a",
+      "result_id": "9852d492-ff0f-4e71-8db2-dc2b88429ad1"
+    },
+    {
+      "claim_id": "7a00d189-ff97-4979-8da1-471db7c44fc5",
+      "result_id": "9852d492-ff0f-4e71-8db2-dc2b88429ad1"
+    },
+    {
+      "claim_id": "f1baf55c-eed6-4e6a-9a6f-0992f150437f",
+      "result_id": "9852d492-ff0f-4e71-8db2-dc2b88429ad1"
+    },
+    {
+      "claim_id": "4e720e17-e2fb-4bf5-9017-ecd7a05834b9",
+      "result_id": "9852d492-ff0f-4e71-8db2-dc2b88429ad1"
+    },
+    {
+      "claim_id": "5b59e9ac-9a60-4991-a90f-f84e861d6275",
+      "result_id": "c2f1ef36-e454-4388-a899-a2faf6b617ba"
+    },
+    {
+      "claim_id": "a0ec4a09-b561-4cc0-aebd-4d27165c6fb6",
+      "result_id": "c2f1ef36-e454-4388-a899-a2faf6b617ba"
+    },
+    {
+      "claim_id": "488ca00d-e505-4129-9c8a-7418359016c4",
+      "result_id": "c2f1ef36-e454-4388-a899-a2faf6b617ba"
+    },
+    {
+      "claim_id": "84805493-1a20-4ea9-b6a8-6c795d76c982",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "b7737154-4b62-465f-a28e-bb815506c2d8",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "9fcdeb4e-19f1-4658-b515-60718c74637c",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "0cbd89dd-737f-412e-ac63-20ef1fe531f2",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "280347f4-4f57-42ba-aa17-d3b8d74e3556",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "aaa70736-1912-4d5a-8259-c98baa75750e",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "f0798f13-264c-4113-a575-11f565701a79",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "79e24049-adaa-4129-9696-366c9463e82f",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "c698394e-ac09-4d26-9787-2d6ccb66f936",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "cbd4da3d-7dc0-4b0b-b2ba-d31cfd37b132",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "d52c10a0-475e-4076-bb1d-acfb89427fb8",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "831ee74b-0329-4b40-b4e5-5bb322b6c24c",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "00f2d7ff-366b-4ed6-9ba5-6ab4ecc37c9c",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "f5b4e4d3-96c2-444d-b381-5edd0858982a",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "c3e91dd0-6abe-472c-bbe3-3e82e62daa39",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "b76975c5-ab77-4116-8a1a-be34456af1a8",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "208ba3fc-92b3-4721-be43-612d812474bc",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "72a7769b-1fdd-4758-8ea0-ad79dab7fae5",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "2561ac8c-6cc0-4307-9de4-58a5f40dc857",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "82184ac8-7b03-403d-b900-6ea466ca8da0",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "769fd6d6-1837-48df-b243-376c625a2c83",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    },
+    {
+      "claim_id": "6c7dd7c0-ff08-42e7-9b55-1eed7abfa186",
+      "result_id": "138a972e-05bf-4a32-a64e-8f7fe8084f2e"
+    }
+  ],
+  "comparisons": []
+}

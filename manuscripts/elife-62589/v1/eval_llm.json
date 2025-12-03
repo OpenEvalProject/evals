@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The GE-MCM model integrates whole-brain transcriptomics with multimodal neuroimaging (PET, MRI) to quantify gene-specific impacts on longitudinal changes in macroscopic biological factors, gene-mediation effects on pairwise factor interactions, and spreading of aberrant effects across brain networks. The model identifies individual transcriptomic-imaging parameters that are interpreted as quantitative measures of gene dysregulation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 describe the GE-MCM model's capabilities and are supported by the mathematical formulation (Equation 1), the methodology section, and the successful application to ADNI data (C31). The model performance results (Figure 2, C39) demonstrate that the approach can reproduce longitudinal observations across six imaging modalities with R\u00b2 values ranging from 0.51\u00b10.24 (HC) to 0.80\u00b10.20 (AD).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In healthy aging, SVD analysis of 113 stable HC subjects identified 8 genes with stable causal contributions to multimodal imaging dynamics and cognitive changes. The first PC explained 50.3% of variance (p=0.0074). Specific genes were identified as modulating different biological factors: TSKU modulates A\u03b2, GNA15 and LSM6 modulate tau to drive A\u03b2 alterations, BIRC5/SESN1/PLSCR3 modulate tau/CBF/A\u03b2 to drive neuronal activity changes, and C5/CASP10 drive tau changes through functional activity and CBF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by the statistical analysis results shown in Figure 3. The SVD analysis with 10,000 permutations identified a significant first PC (p=0.0074), and bootstrap analysis with 10,000 iterations using a threshold of 2.58 (approximately p<0.01) identified 8 genes with stable contributions. The specific gene-factor relationships are visualized in Figure 3C and represent the model's output.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In AD progression, analysis of 129 AD patients/converters identified 993 stable transcriptomic-imaging parameters. SVD analysis revealed a significant first PC explaining 63.8% of variance (p=0.009). Bootstrap analysis identified 111 genes with stable causal contributions to macroscopic factor interactions and cognitive changes. PANTHER pathway analysis identified 65 functional pathways, with apoptosis, cholecystokinin receptor signaling, inflammation mediated by chemokine and cytokine, and gonadotropin-releasing hormone receptor pathways having the most genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by the statistical analysis results shown in Figure 4 and described in the text. The SVD analysis with 10,000 permutations identified a significant first PC (p=0.009), bootstrap analysis identified 111 genes (Figure 4B), and PANTHER analysis identified 65 pathways (Supplementary file 5). The substantially larger number of significant parameters in AD (~1000) versus healthy aging (~70) is noted in C107-C108.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "AD and healthy aging share specific biological mechanisms including apoptosis (CASP10, BIRC5, PLSCR3 in aging; CASP3, CASP7, PLSCR1, CREB1, RELB, IGF2R, DFFB in AD), oxidative stress pathways (SESN1 in aging; MEF2C, CBR1, NOSIP in AD), and GPCR-related genes (GNA15 in aging; GNAS, GNB5 in AD). LSM6 was the only gene common to both conditions. However, AD is a separate entity with considerably more altered pathways, evidenced by ~1000 significant parameters in AD versus ~70 in healthy aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C87-C93, C107-C109 are supported by the comparative analysis of genes and pathways identified in both cohorts. The dramatic difference in the number of significant parameters (~70 in aging vs ~1000 in AD, C107-C108) provides quantitative evidence for C4 and C109. The identification of overlapping pathways (apoptosis, oxidative stress, GPCR signaling) and the single common gene LSM6 (C93) support C3 and C87. These findings are corroborated by citations to previous research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C101"
+    ],
+    "result": "Many of the gene-imaging relationships identified by the GE-MCM model have been previously reported in vivo studies. For healthy aging genes: BIRC5 regulates microtubule dynamics and interacts with tau, SESN1 preserves blood-brain barrier integrity, C5 modulates synaptic pruning. For AD genes: FKBP4 alters tau phosphorylation, GNAS regulates glucose metabolism through insulin, MEF2C is linked to AD and glucose metabolism, CASP3 regulates synaptic plasticity, TRIB3 controls glucose metabolism, and numerous other genes show functional relationships consistent with their identified roles in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C86 and C101 are supported by extensive citations to previous research demonstrating the biological plausibility of the gene-imaging relationships identified by the model. Each claim is backed by at least one citation to experimental or observational studies. This external validation strengthens confidence in the model's ability to identify biologically meaningful relationships, though the authors acknowledge that novel associations require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study analyzed 460 subjects from ADNI with complete multimodal imaging data (6 modalities) and an average of 4.7\u00b12.5 longitudinal time points. The cohort included 151 HC, 161 EMCI, 113 LMCI, and 35 AD subjects. Gene expression data came from 976 landmark genes derived from 6 neurotypical brains in the Allen Human Brain Atlas. Missing imaging data were imputed using trimmed scores regression with internal PCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C110-C115 describe the study cohort and data sources, which are clearly documented in the Methods section and Figure 1\u2014figure supplement 1. The subject selection process is transparent, showing progression from 944 initial subjects to 460 final subjects after quality control and inclusion criteria. The use of 976 landmark genes from AHBA is justified by citation to Subramanian et al., 2017 (C33). The imputation method's accuracy was validated with leave-one-out cross-validation (p<10\u207b\u2076).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The GE-MCM model's performance improves with disease progression (R\u00b2: HC=0.51\u00b10.24, EMCI=0.57\u00b10.21, LMCI=0.59\u00b10.23, AD=0.80\u00b10.20), which is attributed to larger variation in biological factor alterations in later AD stages. The model demonstrates capacity to reproduce longitudinal observations across six PET and MRI modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by the model performance results shown in Figure 2. The progressive increase in R\u00b2 values across clinical groups is clearly demonstrated. The interpretation (C38) that this improvement is due to larger variation in later disease stages is reasonable given that more pronounced pathological changes would provide more signal for the model to fit, though this remains an inference rather than a directly tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Gene expression data processing involved Gaussian kernel regression to interpolate mRNA values for unobserved brain regions, with high correlations between observed and predicted values for most genes (Figure 1\u2014figure supplement 2). The brain was parcellated into 138 regions (from 144 initial regions after excluding 6 with outlier signals) using combined Julich and Brodmann atlases. The AHBA dataset contains 58,692 probes representing 20,267 unique genes from 3,702 tissue samples across 6 neurotypical brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C116-C123 describe the gene expression data processing and brain parcellation methodology. These are supported by the Methods section and Figure 1\u2014figure supplement 2, which shows validation of the interpolation approach. The high correlations for most genes (C104) support the feasibility of the spatial interpolation method, though the authors acknowledge some genes with low spatial dependence may have lower accuracy. The parcellation scheme is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C93"
+    ],
+    "result": "LSM6 was the only gene common to both healthy aging and AD. LSM6 regulates gene expression and mRNA splicing, and has been linked to aging in human muscle cells. Altered mRNA splicing is associated with AD, though the exact role of LSM6 in AD requires functional validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by the comparative analysis results and citations to previous research. The identification of LSM6 as the sole common gene (C93) is a direct result from the data analysis. The functional roles of LSM6 (C94-C95) are supported by citation to Ubaida-Mohien et al., 2019. The association of altered mRNA splicing with AD (C96) is supported by multiple citations, though the authors appropriately note that functional validation is needed to establish LSM6's specific role in AD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C103"
+    ],
+    "result": "Current AD treatments do not account for patient heterogeneity and may be ineffective or cause secondary effects. Previous work showed some patients need single-target interventions (tau, A\u03b2, CBF, or metabolism) while others require combinatorial therapy. The GE-MCM approach could enable gene therapy targeting highly influential genes modulating these factors. For example, APBB2 mediates glucose metabolism, so metabolic side effects should be considered when targeting it for amyloid processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C100 and C103 discuss therapeutic implications but are largely speculative. C97-C99 are supported by citation to previous work (Iturria-Medina et al., 2018), but C100 (gene therapy application) is explicitly speculative with no supporting data. C103 (APBB2 example) is a reasonable inference from the model results (C102) but represents a recommendation rather than a tested finding. These claims represent potential future applications rather than validated results from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Animal and human studies have reported large concordance between peripheral and brain gene expression, implying blood gene expression may be used as a surrogate for brain tissue gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106 are supported by citations to previous research showing concordance between peripheral and brain gene expression. However, this is presented as a potential future direction rather than something implemented in the current study, which used AHBA brain tissue data. The inference that blood could serve as a surrogate (C106) is reasonable based on the cited literature but remains to be validated in the context of the GE-MCM model. The authors acknowledge this as a limitation and future direction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C40",
+      "C41"
+    ],
+    "result": "The manuscript establishes context by reviewing established knowledge about aging and AD, including that both involve concurrent alterations in multiple biological factors, that increased lifespan is accompanied by predisposition to frailty and AD, that understanding molecular mechanisms is crucial, and that most previous studies have focused on single spatial scales or pre-selected genes rather than integrating multiple scales and comprehensive gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C21, C24, C40-C41 provide background context and literature review. These are supported by appropriate citations to previous research and represent established scientific knowledge or accurate characterizations of the literature. The critical assessment of previous approaches (C9, C19-C20) appropriately identifies gaps that motivate the current study. These claims establish the scientific rationale for the GE-MCM approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C30"
+    ],
+    "result": "The model identifies top genes modulating multiple biological factors to drive cognitive decline, and post-hoc analysis of transcriptomic-imaging parameters will reveal essential pathogenetic mechanisms in health and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 is supported by the results showing identification of 8 genes in healthy aging (C45) and 111 genes in AD (C52) with stable causal contributions. C30 was stated as a hypothesis and is supported by the subsequent successful identification of biologically plausible gene-imaging relationships (C56-C86, C101). However, C30 represents the study's hypothesis rather than a result per se.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C54",
+      "C55",
+      "C57",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Single-cell RNA sequencing of Strongylocentrotus purpuratus early pluteus larvae at 3 dpf identified 21 genetically distinct cell clusters representing cell types from all three germ layers, with 19,699 cells analyzed and 15,578 genes expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C54-C55, C57, C61-C66 collectively describe the experimental design, data collection, quality control, and computational analysis pipeline. The methods are clearly documented including sample preparation, sequencing parameters, genome version, filtering criteria, and software versions. The identification of 21 clusters is validated by in situ hybridization (C57), and the number of cells and genes is explicitly stated with appropriate quality control thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "scRNA-seq revealed novel expression domains for previously characterized genes: Sp-SoxC and Sp-Hbn are expressed in skeletal cells in addition to neurons, and Sp-Fgf9/16/20 is expressed in oral ectoderm, cardiac sphincter, intestine, and anus in addition to skeletal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 describe novel expression patterns validated by both scRNA-seq predictions and in situ hybridization confirmation (Figure 2). The manuscript cites previous work establishing the neuronal expression of these genes and provides new data showing additional expression domains. The validation by FISH/IHC strengthens these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Single-cell RNA sequencing has higher sensitivity than in situ hybridization for detecting gene expression in coelomic pouch cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C12 compares scRNA-seq to in situ hybridization sensitivity based on detection of genes previously tested but not detected by ISH. However, the manuscript does not provide a systematic comparison with appropriate controls, statistical analysis, or consideration of technical differences between methods (e.g., probe design, detection thresholds). The conclusion of 'higher sensitivity' may be premature without direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Cell proliferation markers are enriched in ciliary band, apical plate, coelomic pouch, immune, and skeletal cell clusters, validated by EdU pulse labeling showing S-phase cells in these populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 describe proliferation marker expression patterns identified by scRNA-seq (C13) and validated by independent EdU labeling experiments (C14). The convergence of computational prediction and experimental validation provides strong support for these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Cell populations from the same germ layer share more transcription factors with each other than with other germ layers, though nearly one third (187) of transcription factors are shared across all three germ layers, and mesodermal cells unexpectedly share more transcription factors with ectodermal than endodermal populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 describe transcription factor sharing patterns across germ layers with explicit quantification (C16: n=187). The findings are supported by computational analysis and phylogenetic tree reconstruction (Figure 3). The unexpected finding about mesoderm-ectoderm similarity (C17) is noted as such, suggesting appropriate interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Homeobox transcription factors are enriched in ectodermally derived cell populations, while ANTP Class and HNF class transcription factors are enriched in endodermal derivatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 describe transcription factor family enrichment patterns across germ layers, supported by dotplot visualization (Figure 4) and consistent with previous developmental studies cited in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "scRNA-seq data validates previously described gene regulatory networks and reveals novel expression domains: coelomic pouch specification genes are co-expressed in apical plate, aboral ectoderm GRN genes are expressed in both aboral ectoderm and apical plate, and pre-gastrula skeletogenic mesoderm GRN genes remain active and specific to skeletal cells in pluteus larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 demonstrate how scRNA-seq data both validates known GRNs and identifies new expression domains. Each claim cites relevant previous studies establishing the original GRNs, and the manuscript provides data showing both expected and novel expression patterns. This represents an appropriate use of scRNA-seq to refine existing knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C59"
+    ],
+    "result": "Subclustering analysis revealed 12 distinct neuronal populations, 8 immune cell populations, and 5 PMC populations in the early pluteus larva.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 and C59 describe subclustering results with explicit numbers for each cell type. The neuronal diversity finding (12 types) is validated by in situ hybridization for multiple markers (Figure 6D), and the 5 PMC subclusters corroborate previous reports (C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Immune cell subclustering identified two pigment cell populations expressing Sp-Pks1 and one globular cell population expressing Sp-MacpfA2; PMC subclustering identified 5 populations corroborating previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 identify specific immune and PMC subpopulations based on marker gene expression. C27 and C29 cite relevant previous studies, and C28 provides a reasonable inference based on marker expression. The corroboration with previous work (C29) strengthens these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Neuronal subclustering identified specific neuronal subtypes including three serotonergic populations expressing Tph in the apical domain, two cholinergic populations expressing Sp-Chat in the ciliary band, lateral/post-oral neurons co-expressing Sp-Pdx1/Sp-Brn1/2/4/Sp-An, two mouth neuron subtypes, and cardiac sphincter-associated neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 identify specific neuronal subtypes based on marker gene expression and anatomical location. Each identification is supported by expression of functionally relevant markers (e.g., Tph for serotonergic neurons, Chat for cholinergic neurons) and validated by in situ hybridization (Figure 6D). The claims cite relevant previous studies where appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C60"
+    ],
+    "result": "Sp-Pdx1/Sp-Brn1/2/4 positive neurons express 20 genes involved in vertebrate endocrine pancreas function, and Pdx1 knockdown results in downregulation of 249 genes (65% downregulated) including key neuronal differentiation factors, demonstrating that Sp-Pdx1 is necessary for neuronal identity acquisition and has an evolutionarily conserved role in endocrine fate specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 and C60 describe the molecular characterization of Sp-Pdx1/Sp-Brn1/2/4 neurons through scRNA-seq and functional validation via knockdown experiments. The anatomical characterization (C35), gene expression profiling (C36), and knockdown analysis (C37-C38) provide converging evidence. The statistical significance of pancreatic gene enrichment (C56: p<0.002) and the functional requirement demonstrated by knockdown (C39-C40) strongly support the conclusion about Pdx1's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The Sp-Pdx1/Sp-Brn1/2/4 neurons express a comprehensive pancreatic-like molecular signature including transcription factors (Sp-Notch, Sp-Pax6, Sp-Hb9, Sp-Hes, Sp-Ac/Sc, Sp-Mafs, Sp-Gbx2), cell adhesion molecules (Ncam), signaling pathway components (glutamate pathway genes, serotonin receptor Sp-5ht7, thyroid hormone receptor B), neurotransmitter biosynthesis enzymes (Th, Chat), and glucose transporters (Sp-Slc2a1, Sp-Slc5a9, Sp-Slc5a9L).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 comprehensively describe the molecular signature of these neurons, with each gene/pathway cited to relevant vertebrate pancreas literature. The convergence of multiple pancreatic-associated features in a single neuronal population is striking. However, some claims involve inference about functional similarity based on expression alone (C47-C49), which should be interpreted cautiously without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "An ancestral neuron in early deuterostomes may have given rise to endocrine cells in the vertebrate pancreas, with a Pdx1-orchestrated network active in an ancestral cell type inherited by neuronal and pancreatic developmental lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 present evolutionary hypotheses based on the shared molecular features between sea urchin neurons and vertebrate pancreatic cells. While the molecular similarities are well-documented, these claims represent speculative evolutionary interpretations rather than directly tested hypotheses. The manuscript appropriately frames these as hypotheses ('may have,' 'we hypothesize'), but they remain uncertain without additional comparative data from other deuterostome lineages or functional evidence of homology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The proportion of pancreatic genes expressed in the Sp-Pdx1/Sp-Brn1/2/4 neuronal subcluster is significantly different from randomized data (p < 0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 reports statistical validation of pancreatic gene enrichment using chi-squared test with 100,000 randomization iterations. The methods are clearly described and the p-value threshold is appropriate. This provides statistical support for the non-random enrichment of pancreatic genes in this neuronal population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Echinoderms are the phylogenetic sister group to chordates within deuterostomes, and sea urchin embryos/larvae are optically transparent, making them ideal models for studying deuterostome cell type evolution and development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 state established facts about echinoderm phylogeny and sea urchin experimental advantages. C52 cites an appropriate reference for the phylogenetic relationship, and C53 describes a well-known characteristic of sea urchin development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Most transcription factors are expressed pleiotropically independently of germ layer origins, yet tend to be cell type family-specific within a germ layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 summarizes the overall pattern of transcription factor expression across the dataset, supported by the detailed analyses in C15-C18 and visualizations in Figures 3-4. This represents an appropriate synthesis of the transcription factor analysis results.",
+    "result_type": "MAJOR"
+  }
+]

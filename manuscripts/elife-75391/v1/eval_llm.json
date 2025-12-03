@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "A novel microperiscope-based surgical procedure was developed for transverse imaging of the hippocampus. Two microperiscope versions were created (v1CA1 and v2HPC) with aluminum-coated hypotenuses to reflect the imaging plane onto the transverse hippocampal circuit. This approach eliminates cortical aspiration but results in severed connections and compressed tissue medial to the implant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C26-C29 collectively describe the development and characteristics of the microperiscope surgical approach. The methodological details are clearly documented with specific dimensions and surgical procedures, supported by experimental implementation across multiple animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C30",
+      "C31",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Neural tissue remained intact and healthy for prolonged periods (up to 10 months) following microperiscope implantation. Astrocyte density increased near the microperiscope face but returned to baseline beyond 300 \u03bcm. Both dendritic structure and calcium activity could be repeatedly measured, with imaging fields remaining stable for over 3 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C30, C31, C121-C123 demonstrate tissue viability and imaging stability. Immunohistochemistry data (Figure 1E-F) quantitatively shows astrocyte density normalization, and longitudinal imaging data (Figure 4E) confirms field stability. The recommendation to image >150 \u03bcm from the microperiscope face is appropriately conservative based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C48"
+    ],
+    "result": "Optical characterization revealed that imaging through the microperiscope reduces signal intensity (v1CA1: 59.0\u00b16.6%; v2HPC: 67.2\u00b18.5%) and decreases axial resolution (v1CA1: 11.7 \u03bcm; v2HPC: 9.5 \u03bcm) compared to standard coverslips (3.4 \u03bcm). Lateral resolution was less affected (v1CA1: 1.0 \u03bcm; v2HPC: 0.8 \u03bcm vs. coverslip: 0.6 \u03bcm). The resolution decrease is predominantly due to beam clipping reducing the functional numerical aperture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C32-C42, C48 provide comprehensive optical characterization with quantitative PSF measurements (Figure 2). The experimental measurements closely match theoretical predictions from optical modeling (C41-C42), validating the interpretation that beam clipping is the primary cause of resolution loss. Statistical analyses confirm uniformity across the imaging plane.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Adaptive optics did not significantly improve axial resolution but increased signal intensity by 40-80%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C44 report adaptive optics results but note that data are not shown. Without access to the actual measurements, statistical analyses, or methodological details, the magnitude and significance of these effects cannot be independently verified. This is particularly important given that the claim contradicts typical expectations for adaptive optics applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Resolution was mostly uniform across the microperiscope imaging plane. Lateral FWHM showed no significant variation with distance from the microperiscope face (F(19,109)=0.53, p=0.26), while axial FWHM showed a slight increase (F(19,109)=2.51, p=0.002) though no individual positions differed significantly after multiple comparison correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by appropriate statistical analyses (one-way ANOVA with post-hoc testing) shown in Figure 2I and 2K. The finding that axial FWHM increases with depth but without significant pairwise differences suggests a gradual trend that may be biologically or optically meaningful but not practically limiting for the imaging depths used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C49",
+      "C21",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The microperiscope approach achieved sufficient resolution to image and classify individual dendritic spines on CA1 apical dendrites. Spine distribution was 30.4% thin, 41.0% stubby, 26.2% mushroom, and 2.3% filopodium. Daily turnover was 15.0\u00b12.0% addition and 13.0\u00b11.9% subtraction, with filopodia showing highest turnover. Over 10 days, 23.5% net loss of original spines was observed, indicating most turnover occurs in a transient spine population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C49-C56 demonstrate successful spine imaging and quantification (Figure 3). The spine classification methodology is clearly described with morphological criteria. Statistical analyses (one-way ANOVA) support differences in spine type distribution and turnover rates. The interpretation that most turnover occurs in a transient population is logically consistent with high daily turnover (15%) but modest net loss (23.5% over 10 days).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Cumulative turnover and survival fraction results were similar to previous findings from basal dendrites in CA1, indicating that apical and basal dendrites exhibit similar spine dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 appropriately compare current results to prior literature (Attardo et al., 2015; Mizrahi et al., 2004; Pfeiffer et al., 2018). The conclusion that apical and basal dendrites show similar dynamics is reasonable given the comparable turnover rates and survival fractions, though the authors appropriately note potential resolution limitations (C52, C135) that may inflate stability estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The same dendritic processes could be identified over long time periods (up to 150 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is directly supported by imaging data in Figure 3\u2014figure supplement 2, which shows successful registration and identification of the same dendrite at day 17 and day 167 post-implantation. This demonstrates the chronic stability of the preparation for longitudinal structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The v2HPC microperiscope enabled simultaneous calcium imaging from CA1, CA3, and DG in the same animal, with normal calcium dynamics and clear transients observed in all subfields. In some cases, all three areas could be recorded simultaneously. Imaging fields remained stable for over 100 days, and the approach also allowed measurement of mossy cells in DG and deep-layer cortical neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are well-supported by imaging data in Figures 4A-E and supplementary figures. The calcium traces (Figure 4C-D) show clear transients consistent with normal neuronal activity. The ability to image multiple subfields simultaneously (Figure 4\u2014figure supplement 1) represents a key advantage over existing methods. Long-term stability is demonstrated in Figure 4E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A floating carbon fiber arena was used for behavioral testing during head-fixed imaging. This approach lacks vestibular information but captures somatosensory and proprioceptive cues. Place field width and spatial information using this approach are comparable to free foraging animals, and the curvilinear track design enabled robust spatial sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 appropriately describe the behavioral apparatus and its limitations. The citations to prior work (Go et al., 2021; Aghajan et al., 2015; Ravassard et al., 2013) support the characterization of this approach as intermediate between VR and free behavior. The validation that spatial responses are comparable to free foraging (C68) is important for interpreting the functional results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Place cells were identified in all three hippocampal subfields (CA1: 26.0%, n=1001; CA3: 18.9%, n=832; DG: 14.0%, n=463). Place field widths were comparable across regions (CA1: 18.8\u00b10.4 cm; CA3: 18.6\u00b10.5 cm; DG: 18.9\u00b10.8 cm), while spatial information was highest in CA1 (0.95\u00b10.03 bits/spike), followed by CA3 (0.89\u00b10.05) and DG (0.79\u00b10.08). These results are consistent with previous 2P imaging studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 present comprehensive functional characterization with appropriate sample sizes and statistical reporting. The place cell identification criteria are strict (0% false positive rate in shuffled data), which strengthens confidence in the results. Comparison with prior studies (Dong et al., 2021; Hainmueller and Bartos, 2018; Go et al., 2021) validates the approach. The finding that spatial information differs but place field width does not is interesting and consistent with different computational roles for these regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Place cell properties were examined as a function of imaging depth from the microperiscope face. Place field width did not vary significantly with depth (F(4,241)=1.6, p=0.17). Spatial information varied with depth (F(4,1872)=15.9, p=8.6\u00d710\u207b\u00b9\u00b3) but without systematic effect. Decay constant showed a significant relationship with depth (F(4,1872)=29.8, p=4.5\u00d710\u207b\u00b2\u2074), potentially due to aberrant activity in neurons \u2264130 \u03bcm from the microperiscope face.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide important validation that the microperiscope does not systematically distort functional measurements except very close to the implant. The statistical analyses are appropriate (one-way ANOVA), and the recommendation to avoid imaging within 150 \u03bcm of the microperiscope face (C123) is consistent with these findings. The lack of systematic spatial information changes with depth is particularly important for validating the functional integrity of the preparation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Speed cells were identified in all three hippocampal subfields, with cells showing both increased and decreased activity with running speed. Speed cells were most abundant in DG (30.2%) compared to CA1 (9.4%) and CA3 (13.5%). This is consistent with prior work showing that speed can be decoded from DG but not CA1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 appropriately identify and characterize speed cells using established methods (Kropff et al., 2015). The finding that DG has the highest proportion of speed cells is novel and well-supported by the data (Figure 5E, G). The consistency with prior decoding studies (Stefanini et al., 2020) strengthens the interpretation. Average running speeds were comparable across recordings, avoiding a potential confound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Spatial information distribution along the DG-to-CA1 axis was examined by simultaneously imaging 215\u00b174 neurons per recording (total: 1075 neurons) from pCA3 to pCA1. A non-uniform distribution of spatial information was found (F(4,1047)=5.10, p=4.6\u00d710\u207b\u2074), with pCA3 cells having spatial information closer to DG than mCA3, and mCA3 having greater spatial information than dCA3/CA2. This confirms prior electrophysiological findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 present a key functional result enabled by the microperiscope's ability to image across the transverse axis. The statistical analysis (general linear F-test against flat distribution) is appropriate. The spatial information gradient (Figure 6B-C) replicates prior electrophysiology studies (Lee et al., 2015; Lu et al., 2015; Mankin et al., 2015) but with superior spatial resolution and within-animal comparisons. The ability to identify each neuron's position relative to the CA3 inflection point (C143) is a methodological strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Place field widths were narrowest in mCA3, but no statistically significant non-uniform distribution was found across the DG-to-CA1 axis (F(4,206)=1.63, p=0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 report a negative result for place field width distribution, which contrasts with the positive finding for spatial information (C87). The statistical analysis is appropriate, and the authors appropriately acknowledge the failure to find significance. This suggests that spatial information and place field width may be dissociable properties, which is biologically plausible. The trend toward narrower fields in mCA3 is consistent with prior literature but not statistically robust in this dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Place fields were measured in the absence of reward to isolate spatial coding from reward-related modulation. Place cells are less stable without reward, which may explain lower lap-wise reliability compared to similar studies with reward. However, similar percentages of place cells were found as in other optical imaging studies, and properties did not change systematically with distance from the microperiscope face, supporting that functional properties remained intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C128 appropriately acknowledge an important experimental design decision and its implications. The choice to omit reward is justified for isolating spatial coding but introduces a potential confound when comparing to other studies. The authors appropriately cite relevant literature (Krishnan et al., 2020; Pettit et al., 2022; Gauthier and Tank, 2018) and acknowledge uncertainty about how reward might alter the measured characteristics (C128). The validation that place cell percentages match other studies despite strict criteria (C126) supports the preparation's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The microperiscope enables several novel experimental capabilities: (1) simultaneous recording from multiple hippocampal subfields, (2) morphological and genetic identification of cell types, (3) potential combination with retrograde viruses for projection-based identification, and (4) access to the entire dendritic tree of pyramidal neurons. These capabilities enable investigations not possible with existing approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 describe demonstrated and potential applications of the microperiscope. Simultaneous multi-subfield recording (C92) is directly demonstrated in the results. Morphological identification (C93) is shown through spine imaging and cell type identification. Access to dendritic trees (C96) is demonstrated in Figures 1C, 3A, 5B. The projection-based identification (C94) is speculative but reasonable given the optical access. These represent important advantages over electrophysiology and existing imaging methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The microperiscope approach allows large-scale imaging of neurons across multiple hippocampal subfields with known spatial and morphological relationships, genetically controlled labeling of cell types, imaging of cellular structures (dendrites and spines), and unequivocal tracking of cells across time\u2014capabilities not possible with electrophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 accurately summarize the key advantages of the microperiscope approach over electrophysiology. Each capability is demonstrated in the results: multi-subfield imaging (Figures 4, 6), genetic labeling (GCaMP6s, Thy1-GFP-M mice), structural imaging (Figure 3), and longitudinal tracking (Figures 3G, 4E). The comparison to electrophysiology is fair and accurate regarding spatial resolution, cell identification, and chronic tracking capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Existing optical imaging methods for hippocampus have been limited to horizontal imaging planes, making it difficult to image CA3 and DG, and intractable to image all three subfields in the same animal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 accurately characterize limitations of prior methods. The horizontal imaging plane limitation is inherent to gradient index lenses and cannula-based approaches when accessing hippocampus from above. The claim that imaging all three subfields in one animal was previously intractable is supported by the literature review and represents a key motivation for the microperiscope development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C121"
+    ],
+    "result": "All optical imaging methods for hippocampus cause brain damage. Some require cortical aspiration, with damage largely restricted to superficial hippocampus. The microperiscope is inserted into the septal hippocampus and causes damage similar to cortical microprisms in the orthogonal direction, with glial markers returning to baseline beyond 300 \u03bcm from the microperiscope face.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119, C121 provide a balanced assessment of tissue damage. The comparison to other methods is fair\u2014all invasive imaging causes some damage. The characterization of microperiscope damage is supported by immunohistochemistry (Figure 1E-F) showing astrocyte density normalization. The acknowledgment that the microperiscope causes damage to septal hippocampus is appropriately transparent, and the quantification of the damage extent is valuable for experimental planning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The larger v2HPC microperiscope had slightly better optical properties than the smaller v1CA1 microperiscope, likely due to reduced beam clipping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by the PSF measurements in Figure 2, which show better signal intensity (67.2% vs 59.0%) and axial resolution (9.5 \u03bcm vs 11.7 \u03bcm) for v2HPC. The interpretation that reduced beam clipping explains this difference is consistent with the optical modeling results (C40-C42) showing that beam clipping is the primary determinant of resolution. This provides useful guidance for optimizing microperiscope geometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The microperiscope resolution may underestimate spine dynamics compared to super-resolution approaches, potentially inflating stability estimates. However, the results support that dendritic spines are dynamic and unstable even without salient learning or reward signals. Understanding spine dynamics has implications for place cell instability. The microperiscope is compatible with super-resolution microscopy for future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 appropriately acknowledge resolution limitations while contextualizing the findings. The comparison to super-resolution studies (Attardo et al., 2015; Pfeiffer et al., 2018) is fair, and the acknowledgment that small spines may be missed is scientifically honest. The conclusion about spine dynamics (C137) is supported by the turnover data despite potential underestimation. The connection to place cell instability (C138) is appropriately speculative but well-motivated by the literature cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "Spatial information, but not place field width, differed significantly between CA1, CA3, and DG. The high spatial resolution and ability to simultaneously record across the DG-to-CA1 axis strengthens the hypothesis of distributed spatial coding across and within hippocampal subfields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 synthesize key functional findings. The dissociation between spatial information and place field width (C145) is supported by the statistical analyses in Figures 5H-I. The conclusion about distributed spatial coding (C146) is appropriately strengthened by the methodological advantages of the microperiscope (simultaneous recording, precise spatial localization) compared to prior electrophysiology studies that required separate animals for each location.",
+    "result_type": "MAJOR"
+  }
+]

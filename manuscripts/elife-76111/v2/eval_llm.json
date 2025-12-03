@@ -1,0 +1,389 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "GACh3.0 sensor validation demonstrates that it can measure fast decreases in task-evoked ACh levels with sub-second kinetics. Scopolamine abolished the GACh3.0 signal, confirming specificity. Optogenetic CIN inhibition induced ACh decreases within ~206 ms followed by rebound, demonstrating tight control of ACh by CIN activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 provide converging evidence from pharmacological validation (scopolamine, C44-C45), behavioral task measurements (C43, C46), and optogenetic experiments (C47-C48) that GACh3.0 reliably measures rapid ACh dynamics. The temporal resolution (~206 ms onset) and rebound observations are consistent with known CIN physiology (C49), supporting the sensor's validity for measuring fast ACh changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Inter-animal variability in initial ACh peak presence correlates with recording location, with more lateral/dorsal locations showing peaks while medial/ventral locations do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 document an observed phenomenon with anatomical correlation. While the mechanism is unclear, the observation is supported by data (Figure 1\u2014figure supplement 1) and consistent with prior single-neuron recordings (C53). This represents a descriptive finding rather than a mechanistic conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C107",
+      "C113",
+      "C114",
+      "C116",
+      "C117"
+    ],
+    "result": "DA and ACh signals co-develop during Pavlovian learning, shifting from unexpected reward to reward-predicting cues over training. Both signals follow neuronal activity with sub-second kinetics and develop even without anticipatory behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 and C107-C117 demonstrate parallel development of DA increases and ACh decreases during Pavlovian conditioning, consistent with prior primate electrophysiology (C113, C117). The observation that signals develop without anticipatory behavior (C59, C116) is particularly important, though based on limited animals (N=3). The sub-second kinetics (C114) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Systemic D2R antagonism (eticlopride) dose-dependently shortens the ACh decrease duration and enhances rebound without affecting dip amplitude, indicating D2Rs prolong but do not initiate the ACh decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 present a comprehensive dose-response analysis (N=5 mice, 6 doses) showing consistent effects on ACh signal shape. The lack of effect on amplitude (C67) while affecting duration (C66) and rebound (C64) supports the interpretation that D2Rs modulate rather than initiate the pause (C68). DA measurements confirm D2 autoreceptor effects (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Analysis of trials with press latencies >2 s isolates cue-induced from movement-associated ACh decreases, confirming that cue-induced ACh changes are regulated by D2Rs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 address a potential confound by separating cue-evoked from movement-related signals. The heatmap analysis (C70, Figure 4A) provides clear visual evidence, and the persistence of eticlopride effects in long-latency trials (C71) strengthens the conclusion that D2Rs specifically regulate cue-induced ACh changes (C72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "DA and ACh show strong negative correlation during cue presentation (DA peak leads ACh dip by ~179 ms, explaining 22% variance) and weaker positive correlation for rebound (~1.5 s lag). These correlations exist during both task trials and ITI, are dose-dependently reduced/enhanced by eticlopride, indicating D2R-dependent coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83 provide detailed temporal correlation analysis with appropriate statistical quantification (Pearson's r, lag analysis, variance explained). The presence of correlations during both task and ITI periods (C78-C79, C83) supports a general coordination mechanism. The dose-dependent eticlopride effects (C75, C77, C80-C81) strengthen causality. However, sensor kinetics differences (acknowledged in C125) may affect precise lag measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "ChATDrd2KO mice show smaller and shorter ACh decreases compared to controls, with reduced amplitude (unlike eticlopride), while stimulus-induced DA release remains unchanged, confirming CIN D2Rs mediate ACh regulation without affecting DA release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 use genetic deletion to establish cell-type specificity (N=4/genotype). The difference from eticlopride in affecting amplitude (C85) suggests chronic vs. acute effects or compensatory mechanisms. The unchanged DA release (C86-C87) is critical for ruling out indirect effects and is well-documented in Figure 7\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Eticlopride effects on ACh signals are absent in ChATDrd2KO mice but present in Drd2fl/fl controls, confirming that CIN D2Rs are necessary and sufficient for D2R antagonist effects on ACh modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 provide strong genetic evidence for cell-type specificity. The complete absence of eticlopride effects in ChATDrd2KO mice (C90) across all ACh parameters, contrasted with dose-dependent effects in controls (C89), definitively establishes that CIN D2Rs mediate the pharmacological effects (C91). This is a well-controlled experiment with appropriate genetic controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "ChATDrd2KO mice show significantly reduced negative correlation between DA and ACh during both task trials and ITI compared to controls, confirming D2Rs in CINs coordinate task-evoked and task-independent ACh-DA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 demonstrate that genetic deletion of CIN D2Rs reduces DA-ACh correlation by >twofold during both task and ITI periods. This extends the pharmacological findings to a genetic model and supports a general coordination mechanism (C93). The consistency across behavioral contexts strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Systemic D2R antagonism increases lever press latency dose-dependently in wild-type mice but not in ChATDrd2KO mice, while effects on trial completion persist in knockouts at higher doses, likely due to indirect pathway D2Rs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 demonstrate behavioral consequences of D2R manipulation with appropriate genetic controls. The genotype \u00d7 drug interaction for press latency (C95) is compelling, though the persistent effect on trial completion (C96) complicates interpretation. The speculation about indirect pathway involvement (C97) is reasonable but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Total and negative ACh AUC positively correlate with press latency in wild-type and control mice, but this correlation is disrupted in ChATDrd2KO mice. DA signals do not correlate with press latency, suggesting ACh but not DA regulates behavioral responding in the CRF task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 establish behavior-neural correlations across genotypes. The positive correlation between ACh decrease and press latency in controls (C98-C100) contrasted with disruption in knockouts (C101) supports a causal relationship. The absence of DA-behavior correlation (C103-C104) is important but should be interpreted cautiously as correlation absence doesn't prove lack of involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C131",
+      "C132",
+      "C133",
+      "C143"
+    ],
+    "result": "Optogenetic manipulation demonstrates that longer CIN inhibition (producing larger ACh decreases) shortens press latency compared to shorter inhibition, causally linking ACh decrease duration to motivated behavior initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 and C131-C133 provide causal evidence through optogenetic manipulation (N=4 mice). The significant difference in press latency between short and long inhibition (C105, Figure 11B) supports causality. However, the confound that longer inhibition also produces larger rebound (C132) complicates interpretation of which component drives behavior. The conclusion about phasic ACh sufficiency (C143) is reasonable but not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C108",
+      "C110",
+      "C111",
+      "C118",
+      "C119",
+      "C144",
+      "C145"
+    ],
+    "result": "CIN D2Rs are not necessary for initiating cue-induced ACh decreases but prolong their duration and inhibit rebound levels. D2R inactivation decreases DA-ACh temporal correlations during both cue presentation and ITI without altering cue-evoked DA release, demonstrating D2Rs coordinate the temporal boundaries of ACh signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C9 and C108-C111 represent the manuscript's central findings, synthesizing pharmacological, genetic, and correlational evidence. The conclusion that D2Rs modulate rather than initiate the pause (C3, C119) challenges prior slice physiology (C118, C120) and is well-supported by the persistence of ACh decreases after D2R blockade/deletion. The coordination mechanism (C9, C111, C145) is supported by correlation analyses across behavioral contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C112",
+      "C130",
+      "C146"
+    ],
+    "result": "D2R antagonism increases press latency in wild-type but not CIN D2R knockout mice. Press latency correlates with cue-evoked ACh decrease magnitude, and optogenetic CIN inhibition causally regulates press latency, implicating the ACh signal and its D2R regulation in motivation to initiate actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 and C112-C146 integrate behavioral, correlational, and causal evidence. The genotype-specific drug effect (C10-C11), correlation between ACh and behavior (C12, C130), and optogenetic causation (C13) provide converging support. However, the discrepancy between knockout and pharmacological effects on behavior (discussed in C140-C142) suggests complexity. The motivational interpretation (C14, C146) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The findings challenge prior slice physiology studies showing complete D2R-dependence of CIN pauses, and reveal that despite altered ACh signals in ChATDrd2KO mice, cue-induced DA release remains unchanged, possibly due to nicotinic receptor desensitization under behavioral conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C125 address discrepancies with prior work and unexpected findings. The challenge to slice physiology (C120) is well-supported by the current data, but the lack of DA changes in knockouts (C122) despite known ACh-DA interactions (C121) is surprising. The explanations offered (desensitization C124, sensor kinetics C125) are speculative and require further investigation. This represents an important observation but the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "CIN D2Rs regulate ACh rebound magnitude, constraining post-decrease rebounds. Larger ACh decreases may lead to SPN disinhibition while larger rebounds may cause stronger SPN inhibition, potentially explaining how D2R antagonism increases press latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C129 propose a mechanistic model linking ACh dynamics to SPN activity and behavior. While C126 is supported by the rebound data, the proposed mechanism (C127-C129) is largely speculative, based on known circuit properties but not directly tested. The model is plausible but requires validation through SPN recordings or additional manipulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "ChATDrd2KO mice learn Pavlovian associations normally despite altered ACh signals, consistent with prior work showing striatal ACh is important for behavioral flexibility rather than initial learning. D2R overexpression impairs Go/NoGo but not Pavlovian learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C139 address learning implications but rely partly on unpublished data (C135) and citations to other work (C137-C138). The consistency with prior literature (C138) is noted, but the mechanistic interpretation (C139) is speculative. The claim about normal learning in knockouts is important but would benefit from more detailed presentation of the learning data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The discrepancy between ChATDrd2KO mice (no press latency increase) and eticlopride-treated mice (increased latency) may reflect developmental compensation, chronic vs. acute D2R changes, or that tonic rather than phasic ACh changes regulate press latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C142 acknowledge an important inconsistency in the behavioral data. Multiple alternative explanations are proposed (compensation, tonic vs. phasic ACh) but none are tested. While the optogenetic data (C143) argues against the tonic explanation, the discrepancy remains unresolved and represents a limitation of the genetic approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "The finding that CIN inhibition duration affects press latency is consistent with prior work showing CIN inhibition in NAc during Pavlovian-to-instrumental transfer enhances cue-invigoration of behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 appropriately contextualizes the current findings within prior literature (Collins et al., 2019). The consistency strengthens the interpretation that ACh regulates motivational aspects of behavior, though the tasks differ (CRF vs. PIT).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims establish that striatal DA and ACh are co-modulated during reward learning, with DA encoding reward prediction error and CINs showing multiphasic responses to salient stimuli. Both neuromodulators regulate each other and are implicated in learning and motivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C15-C25 summarize established knowledge from prior literature with appropriate citations. These provide necessary context for the current work and are well-supported by the cited references. These are background claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Prior literature presents conflicting evidence on whether CIN pauses are DA-dependent: NHP and some rodent slice studies suggest complete dependence, while recent studies propose intrinsic mechanisms with DA augmentation. Prior studies had limitations including reliance on artificial stimulation and lack of cell-type specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C41 accurately summarize the controversial state of the field with appropriate citations. The critical assessment of prior work's limitations (C40-C41) is fair and motivates the current study's approach. This represents a thorough literature review rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The fast induction of ACh decrease suggests rapid degradation or diffusion of ACh in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 is speculative, proposing mechanisms (degradation vs. diffusion) that are not directly tested. While the observation of fast kinetics is supported, distinguishing between these mechanisms would require additional experiments (e.g., acetylcholinesterase inhibition, diffusion modeling).",
+    "result_type": "MINOR"
+  }
+]

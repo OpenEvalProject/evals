@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C61"
+    ],
+    "result": "A genome-wide CRISPR knockout screen identified CFIm25 (NUDT21) as a regulator of MAT2A intron detention. METTL16 was the top hit, validating the screen, and MED9 and CFIm25 were the other hits after excluding chromosome 19 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR screen data (Figure 1G, Supplementary file 1) clearly identifies CFIm25 as a hit. METTL16 as the top candidate validates the screen's efficacy (C60). The exclusion of chromosome 19 genes is justified due to potential recombination artifacts at the AAVS1 locus. The screen design and execution appear sound with appropriate controls and biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C74",
+      "C75"
+    ],
+    "result": "CFIm25 depletion decreases MAT2A mRNA accumulation and increases intron detention in reporter and endogenous MAT2A, phenocopying METTL16 knockdown. CFIm25 depletion also decreases intracellular SAM levels, supporting a role for CFIm25 in regulating MAT2A splicing to maintain SAM homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experiments using different reporter constructs (including hp2-6 mutants that eliminate mRNA stability effects) and endogenous MAT2A consistently show that CFIm25 knockdown increases intron detention and decreases mRNA levels (Figure 2). SAM measurements (Figure 2I) directly demonstrate the functional consequence. The use of hp2-6 mutants is critical for separating splicing from stability effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "CFIm25 does not regulate MAT2A expression by altering METTL16 abundance, and co-depletion of METTL16 and CFIm25 has no greater effect than individual depletion, suggesting they act in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (Figure 2G) shows CFIm25 knockdown does not affect METTL16 protein levels. The epistasis experiment (Figure 2H) showing no additive effect of co-depletion is consistent with both factors acting in the same pathway. These are appropriate controls to establish the relationship between the two factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C92",
+      "C93"
+    ],
+    "result": "Using a 116-\u0394DI cell line with the MAT2A detained intron deleted, the authors demonstrate that CFIm25's regulation of SAM levels requires the detained intron. In these cells, METTL16 or CFIm25 depletion does not decrease SAM levels, while APA patterns remain largely unchanged compared to parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 116-\u0394DI cell line is a critical genetic tool that cleanly separates CFIm25's role in MAT2A splicing from its role in APA. The SAM measurements (Figure 3C) showing no effect of CFIm25/METTL16 depletion in \u0394DI cells, combined with PAC-seq data (Figure 3D-J) showing similar APA patterns between cell lines, strongly support the conclusion that CFIm25 regulates SAM through the MAT2A DI independently of its APA function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "PAC-seq analysis detected over 2500 poly(A) site changes upon CFIm25 depletion, predominantly shifts to proximal site usage. Nearly identical APA patterns were observed in HCT116 and 116-\u0394DI cells, with minimal differences between the two cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PAC-seq data (Figure 3D-J, Supplementary file 2) provides comprehensive genome-wide analysis. The consistency of APA patterns between HCT116 and 116-\u0394DI cells despite different SAM levels is strong evidence for separable functions. The statistical analysis appears appropriate with clear visualization of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "CLIP-seq data shows CFIm complex binding to UGUA motifs in the MAT2A 3'UTR and detained intron. Mutation of 10/11 downstream 3'UTR UGUA motifs had no effect on splicing, but mutation of a conserved UGUA motif in the detained intron 9-12 nt upstream of the 3' splice site significantly reduced splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of published CLIP-seq data (Figure 4A) and functional mutagenesis (Figure 4C-F) provides strong evidence for the importance of the intronic UGUA site. The negative result with the 10/11 mutant is an important control showing specificity. The evolutionary conservation of the DI UGUA motif (Figure 4\u2014figure supplement 1B) adds support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "A non-canonical UGUU motif immediately upstream of hp1 is bound by CFIm25 and contributes to MAT2A splicing. Mutation to UGCU reduces splicing, while mutation to the canonical UGUA maintains splicing. In vitro binding assays confirm CFIm25 binds UGUU and UGUA more efficiently than UGCU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CLIP-seq peak (Figure 4A), evolutionary conservation (Figure 4\u2014figure supplement 1C), functional mutagenesis (Figure 4G-H), and in vitro binding data (Figure 4I-J) all converge to support CFIm25 binding to this non-canonical UGUU motif. The label transfer and competition assays provide direct biochemical evidence for binding specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Individual depletion of CFIm68 or CFIm59 has minimal effects on MAT2A intron detention, but co-depletion increases intron detention, suggesting functional redundancy between CFIm68 and CFIm59 in MAT2A splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The knockdown experiments (Figure 5A-D) show clear redundancy between CFIm68 and CFIm59. The modest effects of individual knockdowns but significant effect of co-depletion is consistent with functional redundancy. However, the authors acknowledge that co-dependent stability of CFIm complex members complicates interpretation. The lack of CFIm68/59 in the CRISPR screen is consistent with redundancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Tethering experiments demonstrate that CFIm25 can induce MAT2A splicing when artificially recruited to the RNA. This activity requires interaction with CFIm68/59 but not CFIm25's RNA-binding activity. CFIm68 and CFIm59 tethering induces splicing, but only when their RS domains are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MS2-tethering system (Figure 6) provides strong functional evidence. The use of CFIm25 mutants that cannot bind CFIm68/59 (m1, m2) shows loss of splicing activity, while the RNA-binding mutant (m3) retains activity when tethered (Figure 6B). The requirement for RS domains (Figure 6E) is clearly demonstrated. Co-IP data (Figure 6C) validates the mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Epistasis experiments using tethering combined with knockdowns establish that CFIm acts downstream of METTL16. METTL16 tethering cannot induce splicing when CFIm25 is depleted, but CFIm25 tethering induces splicing in METTL16-depleted cells. CFIm68 tethering is sufficient to induce splicing independent of METTL16 or CFIm25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epistasis experiments (Figure 7B-D) clearly establish the hierarchical relationship: METTL16 \u2192 CFIm25 \u2192 CFIm68/59. The logic is sound and the data are consistent. The observation that CFIm68 tethering bypasses the need for both METTL16 and CFIm25 (Figure 7D) is particularly compelling. The authors acknowledge reduced transgene expression in some knockdown conditions but show the levels remain sufficient for activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A SAM-responsive GFP reporter was developed and validated. The reporter unexpectedly uses an alternative splice site creating a more stable GFP fusion protein. METTL16 knockdown abrogates reporter induction upon methionine depletion, mirroring endogenous MAT2A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reporter validation is thorough (Figure 1B-E, Figure 1\u2014figure supplement 1). While the alternative splicing was unexpected, the authors characterize it well and show it produces a more stable reporter. The key point is that the reporter faithfully recapitulates endogenous MAT2A regulation in response to methionine/SAM levels and METTL16 depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors propose that MAT2A splicing regulation by CFIm is independent of its role in 3' end formation, though they note CFIm25 has been reported to regulate the glutaminase (GLS) gene through a complex mechanism involving both splicing and APA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 116-\u0394DI experiments (Figure 3) provide strong evidence for separation of CFIm's splicing and APA functions for MAT2A. The discussion of GLS regulation adds context but doesn't undermine the MAT2A findings. The observation that the GLS GAC isoform also has a UGUA near a weak 3' splice site suggests this may be a more general mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The authors were unable to detect direct interaction between METTL16 and CFIm25 by co-immunoprecipitation or other methods. They propose several alternative models including transient interaction, RNA conformational change, or involvement of additional factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The negative co-IP results and consistency with published data (Ignatova et al., 2019) are clearly stated. However, negative results are inherently difficult to interpret - the interaction could be transient, weak, or require specific conditions not tested. The proposed models are speculative but reasonable. This represents an important gap in understanding the mechanism but doesn't invalidate the functional data showing CFIm acts downstream of METTL16.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Both the DI UGUA and 3'UTR UGUU sites contribute equally to MAT2A splicing based on comparable effects of mutations. The authors discuss two models: independent binding or simultaneous binding with RNA looping, noting that CFIm25-mediated RNA looping has been proposed but not demonstrated in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis data (Figure 4E-H) clearly show comparable effects of mutating either site. The discussion of looping vs. independent binding is appropriately speculative. The authors cite relevant literature on CFIm25 dimers and potential looping (Yang et al., 2011) and note the 114 nt spacing is compatible with looping. The acknowledgment that looping hasn't been demonstrated in cells is appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors propose that the UGUA motif in the MAT2A detained intron interrupts the polypyrimidine tract, creating a weak 3' splice site that requires CFIm binding to overcome inefficient splicing. They discuss several models for how CFIm might functionally substitute for or recruit U2AF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation that the UGUA interrupts the polypyrimidine tract is clear from the sequence (Figure 4\u2014figure supplement 1B). The proposal that CFIm compensates for this weakness is logical and supported by the functional data. However, the specific mechanism (U2AF recruitment, substitution, or other) remains speculative. The cited literature on U2AF-independent splicing and SR protein complementation provides context but doesn't directly test the mechanism for MAT2A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "CFIm68 and CFIm59 show complex patterns of redundancy and non-redundancy. In knockdown experiments they appear redundant for MAT2A splicing, and tethering either protein induces splicing. However, tethered CFIm25 requires CFIm68 but not CFIm59, and tethered CFIm68 works independently while CFIm59 requires CFIm25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The data show complex and somewhat contradictory patterns. The knockdown experiments (Figure 5) suggest redundancy, but the tethering experiments (Figure 7C-D) suggest CFIm68 has a more dominant role. The authors acknowledge this complexity and suggest CFIm59 may have other functions in complex assembly. The co-dependent stability of complex members complicates interpretation. More work is needed to fully understand the distinct roles of CFIm68 and CFIm59.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C170",
+      "C172"
+    ],
+    "result": "The authors speculate that SAM reduction upon CFIm knockdown may contribute to cellular reprogramming and cancer growth, in addition to the well-established effects of 3'UTR shortening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative statements about potential implications of the findings. While the speculation is reasonable given the established links between SAM metabolism and cell state, no direct experimental evidence is provided to test these hypotheses. The speculation is appropriately qualified with phrases like \"may\" and \"it is possible.\"",
+    "result_type": "MINOR"
+  }
+]

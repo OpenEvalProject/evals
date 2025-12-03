@@ -1,0 +1,180 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C45",
+      "C46",
+      "C55",
+      "C56"
+    ],
+    "result": "Co-substrate cycling imposes an additional, independent flux limit on reactions, distinct from the primary enzyme kinetic limit. This additional limit is a mathematical function of the co-substrate pool size and turnover rate, creating a threshold effect where metabolite concentrations rise toward infinity as influx approaches the lower of the two limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical derivation (C3, C4) is analytically sound, with steady-state solutions showing two independent constraints (C31) arising from enzyme kinetics and co-substrate dynamics (C30). The threshold behavior (C29, C45, C46) is demonstrated both analytically and through simulations in Figures 1 and 2. The claims are internally consistent and the mathematical framework is rigorously developed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In linear pathways with co-substrate cycling, when influx exceeds the threshold, metabolites upstream of the cycling reaction accumulate without reaching steady state, while downstream metabolites reach steady-state levels independent of influx. The co-substrate pool shifts toward one form as influx increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by both analytical solutions (Appendix 4) and numerical simulations (Figure 2B-C). The behavior is demonstrated consistently across different pathway configurations, and the mathematical analysis provides clear mechanistic explanation for the observed dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C6"
+    ],
+    "result": "Analysis of E. coli central carbon metabolism reveals that approximately 80% of co-substrate-involving reactions carry flux lower than expected from primary enzyme kinetics alone. Three reactions (PGK, MDH, G6PDH) show significant correlation between flux and co-substrate pool size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data analysis is presented (Figure 3, C38, C39), the authors acknowledge significant limitations: small sample size (only 14 reactions with measured fluxes, half lacking enzyme concentration data), potential confounding by thermodynamic effects (acknowledged but incompletely analyzed), and inability to definitively exclude alternative explanations. The correlation analysis for specific reactions is suggestive but not conclusive evidence of co-substrate limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C41"
+    ],
+    "result": "In branched pathways with separate co-substrate pools, regulation of co-substrate pool size ratios allows regulation of flux ratios across branches, with flux ratio changes of the same order as pool size ratio changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation results (Figure 4) clearly demonstrate that varying the ratio of co-substrate pool sizes (A_tot/B_tot) controls flux distribution across branches. The quantitative relationship between pool size ratio and flux ratio is shown in Figure 4C-D. The mechanism is well-explained by the mathematical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "For pathways coupled via shared co-substrate cycling, the flux limit depends on the difference between pathway influxes rather than individual influxes. At low co-substrate pool sizes, pathway outputs become highly correlated despite significant influx fluctuations, with this effect most pronounced when pathway-independent co-substrate turnover is low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analytical derivation (Appendix 10, C42) and simulations (Figure 5) provide strong support. The correlation behavior is demonstrated across different parameter regimes, and two distinct sub-regimes (non-responsive and responsive) are identified. The mathematical basis for output correlation through co-substrate coupling is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The total concentration of a cycled metabolite at steady state is constant, determined by the ratio of influx to outflux rates. Experimental measurements show ATP and GTP pools remain constant under stable conditions but can rapidly change in response to perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C24 is mathematically derived (Appendices 2-3) and represents a fundamental conservation principle. C25 is supported by citation to experimental work (Walther et al., 2010) that directly measured these dynamics. The theoretical and experimental evidence converge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Co-substrate cycling is ubiquitous in metabolism, with well-known examples including ATP/ADP and NAD(P)H/NAD(P)+ as energy and electron carriers. Genome-scale metabolic models show hundreds of reactions linked to these cycling metabolites in both E. coli and human metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about metabolism (C1, C2, C18, C19) supported by general biochemical knowledge and specific examples. The quantitative analysis of genome-scale models (C20-C23) is based on established metabolic reconstructions (iJO1366, Recon3d) and provides concrete numbers for the prevalence of co-substrate cycling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Prior experimental work has linked substrate-induced death to ATP regeneration dynamics in glycolysis, shown that glucose influx thresholds for fermentative overflow change with NADH conversion capacity, connected sulfur excretions to NADPH pool alterations, and demonstrated ATP pool size changes in response to glucose influx perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize findings from cited prior work (Teusink et al., 1998; Koebmann et al., 2002; van Heerden et al., 2014; Vemuri et al., 2006, 2007; Olin-Sandoval et al., 2019; Green et al., 2020; Walther et al., 2010). The citations are appropriate and the summaries appear accurate based on the context provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors speculate that cells could dynamically alter co-substrate pool sizes to regulate flux distribution, that co-substrate pools could act as 'tuning points' for metabolic control, that substrate-induced death and metabolite excretions may relate to approaching co-substrate dynamic limits, and that such regulation could occur at timescales faster than gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims (marked as SPECULATION in evidence_type). While they are logical extensions of the theoretical framework and have some experimental support from prior work, they represent hypotheses for future testing rather than demonstrated results. The authors appropriately frame these as predictions and possibilities rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C60"
+    ],
+    "result": "Prior theoretical and experimental work has established various aspects of metabolic dynamics including the role of metabolic oscillations in cell cycles, metabolic shifts in cancer, flux-yield tradeoffs in linear pathways, the importance of enzyme expression changes, energy charge as a determinant of cell states, and the constraining effects of metabolite cycling on pathway fluxes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent the state of prior knowledge in the field, with appropriate citations to original work. They provide necessary context for the current study and are used to motivate the research questions. The summaries appear accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The authors conclude that measuring and controlling co-substrate dynamics is crucial for understanding and engineering metabolic fluxes in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion logically follows from the demonstrated theoretical results showing that co-substrate dynamics impose fundamental constraints and regulatory capabilities on metabolic fluxes. While the experimental validation is limited, the mathematical framework provides strong theoretical support for this conclusion.",
+    "result_type": "MAJOR"
+  }
+]

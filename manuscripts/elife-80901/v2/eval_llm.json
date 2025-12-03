@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors determined the high-resolution cryo-EM structure of the HOPS complex, revealing a largely extended, slender structure (~430 \u00c5 \u00d7 130 \u00c5) with a triangular shape. The structure shows that Vps11 and Vps18 form a stable antiparallel core through their \u03b1-solenoids with a large interface area (1972 \u00c5\u00b2), and that the SNARE-binding module (Vps16 and Vps33) is firmly attached to this core at the lateral side of the complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25, C26, C28-C32, C36-C37, C40-C44 collectively describe the cryo-EM structure determination and key structural features of HOPS. The data are directly observed in the cryo-EM density maps with resolutions between 3.6-5 \u00c5, providing strong structural evidence. The measurements (dimensions, interface areas, positions) are quantified and visualized in multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C47",
+      "C48",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors demonstrate that HOPS flexibility is limited and confined to its extremities (Vps41 and Vps39), which show angular re-orientations of ~9\u00b0 and ~20\u00b0 respectively, while the backbone (Vps11/Vps18 core) and SNARE-binding module are stably associated. This contradicts previous reports suggesting flexibility throughout the entire complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38-C39, C47-C48, C85-C87 are supported by 3D classification, variability analysis, and resolution measurements from cryo-EM data. The limited flexibility is inferred from the high resolution achieved in the core regions (3.6-4 \u00c5) versus lower resolution in peripheral regions (6.9-7.5 \u00c5), and is directly visualized through multi-modular classification showing specific angular movements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors show that mutations in the RING finger domains of Vps11 and Vps18 cause selective loss of Vps39 and Vps41 respectively, and that such mutations result in HOPS dysfunction and are associated with human diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by experimental mass spectrometry data (Figure 2\u2014figure supplement 2) showing selective loss of specific subunits in RING domain mutants. Claims C45-C46 are supported by citations to prior research on disease-causing mutations and experimental data showing assembly failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors demonstrate that HOPS complexes lacking \u03b2-propellers of Vps11 or Vps18 maintain tethering activity but completely lose fusion activity, while deletion of the Vps41 \u03b2-propeller abolishes both activities. The \u03b2-propellers of Vps11 and Vps18 are essential for full HOPS activity and may provide structural stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 are supported by multiple experimental assays: protein purification showing equimolar stoichiometry (C63), GST pull-down assays showing Ypt7 binding (C64-C65), tethering assays (C66-C67), fusion assays (C68), and negative stain EM (C69-C70). The functional data clearly demonstrate the differential requirements for tethering versus fusion, though the mechanistic explanation (C71-C73) is partially inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors used X-ray crystallography and AlphaFold predictions to model Ypt7 binding to Vps39 and Vps41. The crystal structure of C. thermophilum Vps39 \u03b2-propeller confirmed AlphaFold predictions. AlphaFold modeling suggests Ypt7 binds to the \u03b1-solenoid of Vps39 (not the \u03b2-propeller as expected) and to the \u03b2-propeller of Vps41 on the opposite side from the ALPS motif, with Vps39 binding Ypt7 more strongly than Vps41.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 are supported by experimental X-ray crystallography data. However, claims C54-C62 rely heavily on AlphaFold predictions without direct experimental validation of the HOPS-Ypt7 complex. The authors acknowledge that low binding affinity prevented reconstitution for structural studies (C51). While the predictions are reasonable and consistent with prior biochemical data (C60), they remain computational models requiring experimental confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose a working model where HOPS catalyzes fusion through a triangular three-point arrangement: two Ypt7-binding sites (Vps39 and Vps41) at the extremities provide flexible tethering to membranes, while the centrally-positioned SNARE-binding module (firmly attached to the stable backbone) binds and zippers SNAREs. The stable backbone acts as a lever arm, and this arrangement causes membrane stress to catalyze fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are directly supported by the structural data showing the triangular arrangement and differential flexibility. Claims C76-C78 and C80 are supported by the structural model combined with prior functional studies (citations provided). Claim C81 (membrane stress mechanism) is a reasonable mechanistic inference from the structural arrangement, though it remains speculative and would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors provide background on lysosomal fusion, HOPS function, and prior structural studies. Lysosomes are essential for cellular processes including recycling, autophagy, and viral invasion. HOPS is a conserved heterohexameric tethering complex required for lysosomal fusion, binds Rab GTPases and SNAREs, and is targeted by viruses and implicated in human diseases. Previous negative-stain EM studies revealed overall HOPS arrangement but were insufficient for detailed structural analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 are primarily background knowledge supported by extensive citations to established literature. These claims provide context for the current work and are well-documented in the field. The structural predictions (C17) and prior EM limitations (C23-C24) set up the rationale for the current high-resolution cryo-EM study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The authors found that a region in Vps11 (Q760-D784) predicted by AlphaFold to be unstructured is actually clearly resolved and organized in the cryo-EM density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by direct observation in the cryo-EM structure. This represents a case where experimental structure determination corrects computational predictions, demonstrating the value of the structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C82",
+      "C83",
+      "C84",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors discuss the broader implications of their findings, including HOPS as part of the fusion machinery (not just a tether), comparisons to other tethering complexes and synaptic fusion machinery, potential mechanisms for SNARE binding and zippering, explanations for mutant phenotypes, and applications for understanding disease mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C49-C50, C82-C103) represent a mix of established knowledge from prior work (C49, C82, C92-C93, C95, C97, C99-C100), reasonable inferences from the current structural data (C88, C90, C101-C102), and speculative mechanistic proposals (C91, C94, C96, C98, C103). While the discussion is well-reasoned and supported by citations, many of the mechanistic details remain to be experimentally validated. The speculative nature of several claims (particularly regarding detailed fusion mechanisms) prevents a fully SUPPORTED evaluation.",
+    "result_type": "MINOR"
+  }
+]

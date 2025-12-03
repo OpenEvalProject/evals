@@ -1,0 +1,398 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Six HIV-specific ADCC antibodies were previously isolated from subject QA255 at 914 days post-infection, with four targeting gp41 epitopes and two targeting gp120 epitopes; five were non-neutralizing while one (105) had modest neutralizing capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 describe previously published work that is appropriately cited (Williams et al., 2015; 2019). These claims establish the context for the current study and are supported by prior publications. The characterization of epitope targets and neutralization properties is consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Longitudinal antibody sequencing was performed on five timepoints spanning pre-infection to over 4 years post-infection, with sequencing coverage averaging 100% of sampled PBMCs but representing only ~0.22% of whole-body blood volume; clonal sequences were successfully recovered for all six lineages despite inherent sampling limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 describe the sequencing approach and its limitations. The data in Table 1 supports the coverage statistics (C7), the calculation of blood volume representation is straightforward (C8), and the successful recovery of sequences (C10) is demonstrated by the results presented. The acknowledgment of B cell repertoire fluctuation (C9) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Mature antibodies showed 3.3-11.5% somatic hypermutation; consensus sequence analysis revealed potential cloning artifacts at variable region ends in previously characterized antibodies, but sequence-corrected versions maintained equivalent binding and ADCC function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe quality control findings. The SHM levels (C24) are documented in Table 2. The identification of potential artifacts (C25) through consensus analysis is a reasonable approach. While C26 states equivalent function for corrected sequences, the data is noted as \"not shown,\" which is a minor weakness but the claim is plausible given the artifacts were at sequence ends.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "NGS-derived antibodies from day 462 post-infection (006-NGSVH/NGSVL and 016-NGSVH/2VL) demonstrated full ADCC function, suggesting ADCC activity developed by this timepoint in these lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by Figure 2, which shows that both NGS-derived antibodies had ADCC activity comparable to mature antibodies. The inference about timing (C29) is reasonable given the functional data, though it represents the latest possible timepoint for function development rather than the earliest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Inferred naive antibodies varied in antigen binding and ADCC function: the 072 naive bound gp41 (KD=34.4 nM) with low ADCC activity; 105 naive bound gp120 (KD=23.4 nM) without ADCC; 157 naive bound gp120 weakly (KD=41.1 \u00b5M) but mediated potent ADCC, demonstrating that binding affinity does not predict ADCC function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by Figure 3, which shows binding kinetics (panels A-B) and ADCC activity (panel C) for naive antibodies. The paradoxical observation that 105 naive binds with higher affinity than 157 naive but lacks ADCC while 157 naive has potent ADCC (C34) is clearly demonstrated and represents an important finding about the relationship between affinity and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Alternative computational inference methods generated naive sequences differing by 1-4 amino acids in CDR3/FWR4 for 7 of 12 chains; these differences did not affect function in five lineages, but in the 157 lineage, the alternative light chain (157-AVK) abolished binding and ADCC, creating uncertainty about the true naive precursor properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 describe validation of computational inference methods. The use of two independent methods (partis and linearham) is rigorous. The functional equivalence for most lineages (C37) and the critical difference for 157 (C38-C39) are supported by Figure 3\u2014figure supplement 1. The acknowledgment of uncertainty (C40) is scientifically appropriate given the conflicting results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Bayesian phylogenetic inference resolved 1-14 probable intermediate sequences per lineage between naive and mature antibodies, with 8 of 12 inferred lineages validated by NGS-sampled sequences identical in nucleotide or amino acid sequence to at least one intermediate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe the lineage reconstruction results. Table 2 documents the number of intermediates resolved (C41), and Figure 4 and supplements show validation by NGS sequences (C42, indicated by stars). The validation of 67% of lineages by actual sequenced intermediates strengthens confidence in the computational inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "For the 006 lineage, CDRH2 and CDRH3 mutations (1.4% VH SHM) were minimally required for antigen binding and ADCC activity (006-1VH0VL), with six light chain mutations in CDRL1, CDRL3, and FWRL2 augmenting binding and ADCC potency (006-1VH1VL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by Figure 5A, which shows the stepwise acquisition of function with specific mutations. The data clearly demonstrate that heavy chain CDR mutations confer initial function while light chain mutations enhance potency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "For the 016 lineage, detectable binding and ADCC required mutations in both heavy and light chain CDRs and FWRs (5.6% VH, 3.6% VL SHM in 016-1VH1VL); a CDRL3 insertion of S94 augmented ADCC (016-1VH2VL), and additional VH FWR and CDR mutations further strengthened function (016-2VH2VL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by Figure 5B and the methods description of how the S94 insertion chronology was resolved. The stepwise enhancement of function with specific mutations is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "For the 067 lineage, a single CDRL3 mutation (0.3% VL SHM) conferred detectable binding with indeterminate ADCC (067-0VH1VL); two CDRH2 mutations (1.0% VH SHM) were required for convincing ADCC function, and FWR mutations in either chain modestly increased ADCC potency to >50% of mature levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by Figure 5C, which shows the progressive acquisition of function. The acknowledgment of \"indeterminate\" ADCC for 067-0VH1VL (C48) is appropriately cautious given the signal was just above background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "For the 072 lineage, only VH mutations were necessary for ADCC potency enhancement; two substitutions in either CDRH1 or CDRH2 increased activity individually but were not additive when combined (072-3VH0VK), while FWRH3 and FWRH4 mutations (072-4VH0VK) were required for mature-level ADCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by Figure 5D, which demonstrates the non-additive effects of combining CDRH1 and CDRH2 mutations (C52) and the requirement for FWR mutations to achieve full potency (C53). This represents an interesting finding about epistatic interactions between mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "For the 105 lineage, naive and early intermediate antibodies bound gp120 but lacked clear ADCC function; CDRH1 and CDRH2 mutations (1.9% VH SHM in 105-1VH1VK) conferred ADCC gain-of-function without affecting binding affinity, though this intermediate lacked full breadth; mature-level breadth was achieved by 105-1VH2VK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by Figure 6A and Figure 6\u2014figure supplement 1A. The key finding that ADCC function can be gained without changes in binding affinity (C55) is clearly demonstrated and represents an important mechanistic insight. The breadth data (C56-C57) show progressive acquisition of cross-clade activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "For the 157 lineage, alternative naive sequences (157-0VHAVK vs 157-0VH0VK) differed in binding and ADCC capabilities, creating uncertainty about initial function; the 157-0VH0VK naive lacked full ADCC breadth, showing high activity against some strains but low or no activity against others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by Figure 6B and Figure 6\u2014figure supplement 1B. The uncertainty about the true naive precursor (C58) is appropriately acknowledged given the functional differences between alternative sequences. The breadth data (C59) demonstrate strain-specific activity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Across lineages, most required mutations in both heavy and light chains to achieve >50% mature ADCC potency; in five of six lineages, binding accompanied ADCC capacity (105 being the exception); CDR substitutions were typically required for ADCC gain-of-function while FWR substitutions augmented activity; in two cases (016 and 105), chronologically resolved single-chain mutations boosted ADCC potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 summarize patterns across all lineages and are supported by Figure 7 and the detailed lineage data in Figures 5-6. These represent important generalizations about ADCC antibody development, though the authors appropriately note exceptions and variations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Three lineages (067, 072, 105) contained antibodies with similar binding affinities but different ADCC capabilities; binding affinity and ADCC potency were positively correlated across all lineages, but the 157 lineage antibodies mediated potent ADCC despite much lower binding affinity than other lineages, indicating that affinity alone does not dictate ADCC potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by Figure 8, which plots binding affinity against ADCC activity. The positive correlation (C65) is evident, but the exceptions (C64, C66) demonstrate that affinity is not the sole determinant of ADCC (C67). This is a key mechanistic finding with important implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The C-C' loop epitopes targeted by 067 and 072 lineages remained stable between 21 and 1729 days post-infection in longitudinal QA255 Env sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by the cited prior work (Williams et al., 2019) for epitope identification and by the longitudinal sequence data (GenBank accessions provided). The epitope stability is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Phage-DMS mapping showed that 105 lineage antibodies bound peptides from BG505 and C.ZA.1197MB Env backgrounds but not BF520, likely due to sequence differences at positions 307-309 (IRI vs VHL); the epitope footprint centered on residues 308-316 (RIGPGQA) and was similar between naive and mature antibodies, suggesting SHM did not alter the major binding footprint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by Figure 9, Figure 9\u2014figure supplements 1-2, and the associated source data. The Phage-DMS approach provides high-resolution epitope mapping. The conclusion that maturation did not change epitope specificity (C74) is well-supported by the similar footprints between naive and mature antibodies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In the 105 epitope, the H308R mutation emerged at 189 dpi and swept the population by 560 dpi; this substitution likely enabled 105 lineage activation since the lineage prefers R308 over H308 and cannot mediate ADCC against the H308-containing transmitted founder virus; except for transient Q315R variants, residues 308-316 remained stable until 1729 dpi, suggesting limited selection pressure for escape from ADCC antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by Figure 9C and the longitudinal sequence data. The inference about H308R enabling lineage activation (C76) is logical given the antibody specificity data and inability to target the transmitted founder. The conclusion about limited escape pressure (C78) is reasonable based on the epitope stability data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Overall, most inferred naive antibodies lacked detectable ADCC; gain of binding and ADCC typically required CDR mutations in one or both chains, while enhancement to mature potency often required additional FWR mutations; binding and ADCC were largely correlated but affinity alone was insufficient to predict ADCC potency; most lineages required mutations in both chains for potent ADCC, with evidence that some changes contributed to breadth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 and C79-C84 represent the main conclusions of the study, synthesizing findings across all lineages. These are well-supported by the detailed lineage analyses (Figures 3-8) and represent important generalizations about ADCC antibody development. The conclusions are appropriately nuanced, acknowledging exceptions and variations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Antibody lineage studies require robust inference methods accounting for statistical uncertainty; the 157 lineage exemplifies this, as computational uncertainty in two CDRL3 residues resulted in alternative naive antibodies with different properties\u2014either fully capable of binding and ADCC from inception or requiring two CDRL3 substitutions to achieve both functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 highlight an important methodological point about computational inference uncertainty. The 157 lineage case study (supported by Figure 3\u2014figure supplement 1) demonstrates the practical importance of this issue. The use of multiple inference methods and functional validation is a strength of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Three gp41-specific lineages (006, 016, 067) lacked detectable binding by their inferred naive precursors; two (006, 067) gained binding through limited CDR mutations in single chains, while 016 required many mutations in CDRs and FWRs of both chains despite targeting a similar epitope as 006; gp41 antibodies can recognize self-antigens, which might explain how 016 emerged before gaining HIV-specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by the binding data (Figure 3A) and lineage analyses (Figure 5). The comparison between 006 and 016 (C91) highlights that different lineages can take different developmental paths to the same epitope. The speculation about self-reactivity (C92) is appropriately cited and presented as a possibility rather than a conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The RFADCC assay was chosen because it correlates with disease outcomes in humans; lineages required an average of 1.2% SHM (range 0.1-4.3%) for detectable ADCC and 2.2% SHM (range 0.6-4.8%) for >50% mature activity; these low mutation levels are promising for vaccine efforts since ADCC responses can develop within months of infection and such mutation levels are easily attainable by vaccines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 discuss the implications of the findings. The rationale for using RFADCC (C93-C94) is well-cited. The SHM requirements (C95-C96) are supported by the data. The interpretation for vaccine development (C98-C99) is reasonable and appropriately cited, though it represents an inference about future applications rather than a direct finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Most lineages required FWR mutations to achieve potent ADCC; while FWR mutations can cost thermostability, they contribute to bnAb properties by altering antibody conformation to enable high-affinity binding of conserved epitopes and can affect binding affinity indirectly; FWR mutations could also confer favorable flexibility or orientation for better Fc receptor dimerization and ADCC potency; the 006-1VH intermediate contained a CDRH3 elbow mutation (Y111F) associated with ADCC gain-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 discuss the role of FWR mutations. The requirement for FWR mutations (C100) is supported by the lineage data. The mechanistic interpretations (C101-C105) are appropriately cited and presented as possibilities. The specific example of the elbow mutation (C106) is supported by the data, though structural studies would be needed to confirm the proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "While binding affinity has been implicated in ADCC regulation in tumor-specific antibody studies, half of the HIV ADCC lineages studied contained antibodies with similar binding affinity but markedly different ADCC potencies, and the gp120-targeted lineages showed dramatic affinity differences among antibodies with equivalent ADCC activity; thus, ADCC function cannot be predicted by affinity alone, and factors such as epitope specificity, binding mode, and antibody-antigen interaction dynamics contribute to ADCC potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 synthesize the findings on the affinity-ADCC relationship. The observations (C108-C109) are supported by Figure 8 and the detailed lineage data. The conclusion (C110-C111) is well-supported and appropriately cites other studies emphasizing multiple factors in ADCC potency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Little directional escape was observed in the C-C' loop and V3 epitopes over ~4.5 years of infection, suggesting either that ADCC antibody selective pressure is insufficient to drive escape due to limited impact on infection dynamics, or that targeted killing of infected cells creates less escape pressure than neutralizing antibodies that block virus entry; if the latter is true, ADCC could be particularly useful for vaccines and therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 describe the viral escape analysis and its implications. The observation of limited escape (C112) is supported by the longitudinal sequence data. The alternative explanations (C113-C115) are appropriately presented as hypotheses rather than conclusions. The speculation about vaccine implications (C116) is reasonable but conditional.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The results are relevant to rational vaccine design, especially as reverse vaccinology technologies emerge, and the reliance on FWR mutations to achieve high ADCC functionality could inform antibody optimization strategies for therapeutic uses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 discuss the broader implications of the findings. These are reasonable inferences from the data, appropriately cited in the context of ongoing vaccine development efforts. However, they represent potential applications rather than direct findings of the study.",
+    "result_type": "MINOR"
+  }
+]

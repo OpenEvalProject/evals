@@ -1,0 +1,499 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Acd exhibits superior spectroscopic properties compared to Anap, including a red-shifted absorption peak (385 nm vs 350 nm), higher quantum yield (0.8 vs 0.3), and modest brightness advantage in aqueous environments, making it more compatible with 405 nm laser excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide direct spectroscopic measurements (absorption spectra, quantum yields, extinction coefficients) that consistently demonstrate Acd's advantageous photophysical properties. The data are internally consistent and support the conclusion that Acd is better suited for 405 nm excitation with lower cellular autofluorescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Acd is much less environmentally sensitive than Anap, with Anap showing brighter and blue-shifted emission in hydrophobic environments while Acd emission remains relatively stable across different solvents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 are supported by emission spectra data in different solvents (Figure 1C,D) showing that Anap's emission varies significantly with environment while Acd remains stable. This is important for FRET applications where environmental changes could confound distance measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Acd photobleaches approximately 10 times slower than Anap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by photobleaching measurements (Figure 1H) showing mean time constants of 18,000\u00b1863 s for Acd vs 1838\u00b152 s for Anap (n=4 each). The statistical analysis and replication support this ~10-fold difference, though the Acd excitation was 38% brighter, which would tend to increase photobleaching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Acd incorporated into proteins is robust in the cellular environment, while Anap undergoes a chemical change at some protein sites that dramatically decreases brightness and blue-shifts emission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by emission spectra data (Figure 1\u2014figure supplement 1) showing that Anap at position 295 develops a blue-shifted peak at 405 nm over time in culture, while Acd remains stable. The site-specificity (position 295 but not 322) and time-dependence suggest a genuine chemical modification rather than environmental effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Acd has structural and photophysical advantages over Anap including a longer fluorescence lifetime (16 ns vs 2-3 ns), single-exponential decay, and fewer rotameric states due to a shorter linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 are supported by frequency-domain lifetime measurements (Figure 1E,F, Table 1) showing Acd's single-exponential 16 ns lifetime vs Anap's double-exponential decay. The structural comparison is based on known molecular structures. These properties are critical for the time-resolved FRET applications that follow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "MBP is a clamshell-shaped protein that closes upon maltose binding, and the W340A mutation decreases maltose affinity to ~300 \u03bcM while preventing endogenous sugar binding during purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe well-established properties of MBP supported by cited literature (Martineau et al., 1990; Gordon et al., 2018) and structural data (Figure 3A,B). This provides the necessary context for using MBP as a model system to validate the tmFRET approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Acd was successfully and specifically incorporated into MBP at positions 295 and 322 in mammalian cells using amber codon suppression, with high purity achieved through FLAG-tag affinity purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are supported by multiple orthogonal methods: in-gel fluorescence (Figure 2A,B), western blots (Figure 2E,F), and FSEC (Figure 2G). The controls without Acd-RS show no full-length protein, confirming specificity. The use of dominant-negative eRF1 to reduce truncation is supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "MBP-295Acd exhibits approximately half the fluorescence of MBP-322Acd, which is attributed to partial quenching by nearby tyrosine Y307.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by FSEC data (Figure 2G,H) and subsequent lifetime measurements showing that the Y307F mutation restores the lifetime to that of MBP-322Acd (Claims C65-C66). The structural proximity of Y307 to position 295 (<5 \u00c5) and known quenching mechanisms support this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Based on X-ray crystal structures, MBP-295Acd-C undergoes an 8.4 \u00c5 distance decrease upon maltose binding (21.3 to 12.9 \u00c5), while MBP-322Acd-C undergoes a 4.2 \u00c5 distance increase (13.4 to 17.6 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 report \u03b2-carbon distances measured from published X-ray crystal structures (PDB 1OMP and 1ANF). These provide the structural basis for interpreting FRET measurements and are appropriate reference values for the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "tmFRET was readily observed in both MBP-Acd-C constructs upon Cu2+-TETAC labeling, with large fluorescence decreases that maintained spectral shape, indicating a FRET mechanism rather than environmental effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by emission spectra (Figure 3C-F) showing large quenching with preserved spectral shape, controls without cysteine showing minimal quenching (Figure 3\u2014figure supplement 1), and nearly complete labeling demonstrated by time courses and long-R0 quencher experiments (Figure 3\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "tmFRET measurements successfully detected the maltose-dependent conformational change in MBP, with increased quenching (shorter distance) for MBP-295Acd-C and decreased quenching (longer distance) for MBP-322Acd-C in the presence of maltose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by emission spectra (Figure 3E,F) showing opposite maltose-dependent changes in FRET efficiency for the two constructs, consistent with the expected clamshell closure bringing positions 295/237 closer while moving positions 322/309 apart.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Time-course experiments with Cu2+-TETAC showed rapid (<10 s) and reversible (with TCEP) fluorescence quenching in both Acd and Anap constructs, with Acd showing smaller quenching consistent with its lower R0 value (14.9 \u00c5 vs 17.2 \u00c5 for Anap).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 are supported by time-course data (Figure 4) showing rapid, reversible quenching with appropriate controls. The comparison between Acd and Anap is consistent with their calculated R0 values. The observation of some state-dependence in rotameric distribution (C55) is appropriately presented as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The R0 value for Acd/Cu2+-TETAC is 14.9 \u00c5, and experimentally determined distances show systematic deviations from predictions (smaller above R0, larger below R0), resulting in underestimation of maltose-dependent distance changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by spectroscopic measurements used to calculate R0 and comparison of experimental distances with X-ray structure predictions (Figure 4\u2014figure supplement 1). The systematic deviation is consistent with previous work (Gordon et al., 2018) and motivates the use of time-resolved FRET.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "MBP-322Acd exhibits a single-exponential lifetime of 15.1 ns, while MBP-295Acd shows double-exponential decay due to quenching by nearby Y307; the Y307F mutation restores single-exponential behavior with 15.5 ns lifetime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are supported by frequency-domain lifetime measurements (Figure 5, Table 1) showing that Y307F eliminates the double-exponential character of MBP-295Acd. The structural proximity of Y307 (<5 \u00c5, Figure 5B) and known quenching mechanisms (C64, cited) support the interpretation. The maintained FRET response (C67) validates the mutation's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The long, single-exponential lifetime of Acd enables more direct measurement of distance heterogeneity through time-resolved FRET compared to the FCG steady-state approach, without requiring the assumption of constant \u03c3 across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 describe the theoretical framework for time-resolved FRET analysis, supported by cited literature (Lakowicz et al., 1994a; Kulinski et al., 1997; Wozniak et al., 2008). The advantage over FCG (not requiring constant \u03c3) is a logical consequence of having lifetime data rather than just steady-state intensities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Frequency-domain lifetime measurements with Cu2+-TETAC showed that the Gaussian distance distribution model provided excellent fits to the data, with maltose-dependent shifts in phase delay and modulation ratio consistent with expected distance changes, and reversibility with TCEP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 are supported by comprehensive frequency-domain lifetime data (Figure 6A-D, Table 1) showing good fits to the Gaussian distance model, appropriate maltose-dependent changes, reversibility with TCEP, and proper controls without cysteine (Figure 6\u2014figure supplement 1). The data quality and internal consistency are high.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The estimated \u03c3 values with Cu2+-TETAC were quite large (6.2-6.5 \u00c5 for MBP-295Acd-Y307F-C, 5.3-5.5 \u00c5 for MBP-322Acd-C), consistent with predicted rotamer distributions and likely reflecting the relatively long linker of Cu2+-TETAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by fits to the Gaussian distance model (Table 1) and comparison with rotamer modeling (Figure 6\u2014figure supplement 2A,B). The large \u03c3 values are appropriately attributed to the flexibility of the Cu2+-TETAC acceptor, motivating the subsequent use of di-histidine sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Time-resolved FRET experiments can reveal sparse structural information on intramolecular distances and heterogeneity and quantify the energetics of conformational rearrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by the demonstrated capability to extract distance distributions (\u03c3 values) and distinguish conformational states from lifetime data. This represents a key advantage over steady-state FRET and is validated by the subsequent experiments with subsaturating maltose.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The di-histidine motif at positions 233/237 in MBP-295Acd-Y307F-HH creates a Cu2+-binding site with 3 \u03bcM affinity that exhibits reversible tmFRET with large maltose-dependent changes in FRET efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by fluorescence quenching data (Figure 7\u2014figure supplement 1) showing reversible quenching with Cu2+ and EDTA, and large maltose-dependent changes. The 3 \u03bcM affinity is cited from previous work (Gordon et al., 2018) using the same motif.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Addition of Cu2+ to MBP-295Acd-Y307F-HH caused shifts in phase delay and modulation ratio that increased with maltose concentration, indicating maltose-dependent increases in average FRET efficiency, with nearly complete reversibility by EDTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 are supported by frequency-domain lifetime data (Figure 7A, Table 1) showing progressive shifts with increasing maltose and reversibility with EDTA. The intermediate FRET efficiencies at subsaturating maltose concentrations set up the subsequent analysis of conformational state distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "With Cu2+-di-histidine, \u03c3 values were substantially smaller (2.5 \u00c5 apo, 1.3 \u00c5 holo) than with Cu2+-TETAC (6.2-6.5 \u00c5), likely reflecting the greater rigidity of the di-histidine motif, and \u03c3 was larger in apo than holo state, consistent with greater conformational heterogeneity in the open clamshell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are supported by fits to lifetime data (Table 1), rotamer modeling (Figure 6\u2014figure supplement 2C, 3), and cited literature on MBP conformational heterogeneity (Tang et al., 2007; Selmke et al., 2018). The smaller \u03c3 with di-histidine validates this approach for reducing probe-related heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "At subsaturating maltose concentrations (200 and 370 \u03bcM), the proportion of closed clamshell conformation was 0.38 and 0.60 respectively, closely matching predictions from steady-state FRET, yielding a maltose apparent affinity of ~400 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by fits to the two-Gaussian distance model (Table 1) and comparison with steady-state FRET measurements (Figure 7B). The agreement between methods validates the approach, and the ~400 \u03bcM affinity is consistent with the W340A mutation and cited literature values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Phasor plot analysis provided model-independent estimates of conformational state proportions (0.38 and 0.63 at 200 and 370 \u03bcM maltose) that closely matched the Gaussian distance model estimates (0.38 and 0.60), validating the modeling approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C124 are supported by phasor plot analysis (Figure 7D) showing that subsaturating maltose data fall on a line connecting apo and saturating maltose states, with fractional distances corresponding to population proportions. The close agreement with the Gaussian model provides important validation of the more complex modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "This work represents a significant expansion of tmFRET, demonstrating that Acd can be used as a donor with Cu2+-TETAC or Cu2+-di-histidine acceptors, and that its long single-exponential lifetime enables time-resolved measurements using a Gaussian distance distribution model that provides more direct heterogeneity measurements than previous FCG approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 accurately summarize the major findings of the paper, which are supported by the comprehensive experimental data described in previous results. The advantages over previous methods (FCG) are clearly demonstrated through the ability to measure different \u03c3 values in different conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The biggest advantage of Acd over Anap is its utility for time-resolved FRET, which can recover distance distributions revealing conformational heterogeneity and state distributions, enabling determination of free energy differences between states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 are supported by the demonstrated capability to extract distance distributions and conformational state populations from lifetime data, which is not possible with steady-state FRET. The connection to free energy through equilibrium populations is thermodynamically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Time-resolved FRET with Acd complements single-molecule FRET and DEER spectroscopy by operating under physiological conditions with nanosecond time resolution (16 ns for Acd) and high sensitivity (tens of nanomolar), though it cannot measure transition rates like single-molecule FRET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C145 provide a fair comparison of time-resolved FRET with complementary techniques, supported by cited literature and known properties of each method. The advantages (physiological conditions, time resolution, sensitivity) and limitations (no transition rate information) are appropriately balanced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Previous DEER and NMR studies have revealed distance distributions and conformational heterogeneity in MBP similar to those observed here, with the existence of multiple apo conformations likely responsible for the larger heterogeneity in the apo state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 appropriately cite relevant literature (Selmke et al., 2018; Tang et al., 2007; Kaczmarski et al., 2020) showing that the current results are consistent with previous studies using orthogonal methods. This provides important validation of the tmFRET approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Future improvements should include Bayesian statistical analysis for parameter confidence intervals, narrower distance distributions through smaller/more rigid acceptors (di-histidine sites help but bifunctional chelators might also be useful), and addressing probe rotameric heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C153 describe appropriate future directions but represent speculation about potential improvements rather than demonstrated results. The suggestions are reasonable based on the current limitations, but their effectiveness would need to be experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C154",
+      "C155"
+    ],
+    "result": "The lifetime of Acd may be affected by nearby residues or local environment (as demonstrated with MBP-295Acd), which can be remedied by modeling donor-only lifetimes with multiple exponentials, mutating offending residues, or alternative fluorophore placement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155 are supported by the MBP-295Acd example showing Y307 quenching and its resolution by the Y307F mutation. The suggested remedies are reasonable, with the mutation approach already demonstrated. The multiple exponential modeling approach is supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Acd's small size results in short-wavelength fluorescence and modest brightness compared to larger fluorophores, limiting sensitivity and precluding single-molecule measurements, though future improvements with brighter fluorophores and smaller acceptors could enhance the method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C159 acknowledge real limitations of Acd (brightness, wavelength) supported by cited literature (Lavis and Raines, 2008; Speight et al., 2013) while appropriately noting that the method still provides valuable insights despite these limitations. The suggestions for future improvements are reasonable speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "While Acd can be incorporated into proteins in living cells, several challenges limit cellular tmFRET applications: endogenous fluorophore background, difficulty distinguishing reduced Acd lifetime from autofluorescence, need for cell permeabilization to access intracellular donors, and TETAC inactivation in reducing environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C166 provide a realistic assessment of challenges for cellular applications, with C160 supported by cited work (Jones et al., 2021) and C161-C165 representing reasonable inferences about technical obstacles. The conclusion (C166) that the method is currently limited to in vitro applications is appropriately cautious.",
+    "result_type": "MINOR"
+  }
+]

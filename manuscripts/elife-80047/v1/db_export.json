@@ -1,0 +1,2623 @@
+{
+  "submission": {
+    "id": "0ffcede2-6384-4d0d-8314-b059a68d9971",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:11:47.911366Z",
+    "updated_at": "2025-12-03T15:11:47.911366Z"
+  },
+  "content": [
+    {
+      "id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "submission_id": "0ffcede2-6384-4d0d-8314-b059a68d9971",
+      "content_type": "manuscript",
+      "content_text": "# Automated systematic evaluation of cryo-EM specimens with SmartScope\n\n## Authors\n\n- Jonathan Bouvette<sup>1</sup> ([ORCID: 0000-0003-3550-5319](https://orcid.org/0000-0003-3550-5319))\n- Qinwen Huang<sup>2</sup> ([ORCID: 0000-0002-7082-5257](https://orcid.org/0000-0002-7082-5257))\n- Amanda A Riccio<sup>1</sup> ([ORCID: 0000-0001-7782-0363](https://orcid.org/0000-0001-7782-0363))\n- William C Copeland<sup>1</sup> ([ORCID: 0000-0002-0359-0953](https://orcid.org/0000-0002-0359-0953))\n- Alberto Bartesaghi<sup>2</sup> ([ORCID: 0000-0002-7360-1523](https://orcid.org/0000-0002-7360-1523)) \u2020\n- Mario J Borgnia<sup>1</sup> ([ORCID: 0000-0001-9159-1413](https://orcid.org/0000-0001-9159-1413)) \u2020\n\n### Affiliations\n\n1. Genome Integrity and Structural Biology Laboratory, National Institute of Environmental Health Sciences Research Triangle Park United States ([ROR:00j4k1h63](https://ror.org/00j4k1h63))\n2. Department of Computer Science, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))\n3. Department of Electrical and Computer Engineering, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))\n4. Department of Biochemistry, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))\n\n\u2020 Corresponding author\n\n## Abstract\n\nFinding the conditions to stabilize a macromolecular target for imaging remains the most critical barrier to determining its structure by cryo-electron microscopy (cryo-EM). While automation has significantly increased the speed of data collection, specimens are still screened manually, a laborious and subjective task that often determines the success of a project. Here, we present SmartScope, the first framework to streamline, standardize, and automate specimen evaluation in cryo-EM. SmartScope employs deep-learning-based object detection to identify and classify features suitable for imaging, allowing it to perform thorough specimen screening in a fully automated manner. A web interface provides remote control over the automated operation of the microscope in real time and access to images and annotation tools. Manual annotations can be used to re-train the feature recognition models, leading to improvements in performance. Our automated tool for systematic evaluation of specimens streamlines structure determination and lowers the barrier of adoption for cryo-EM.\n\n## Introduction\n\nOver the past decade, advances in hardware and software have improved the resolution and throughput of single particle analysis (SPA), establishing cryo-EM as a method of choice in structural biology. However, optimizing specimens for high-resolution cryo-EM imaging remains a significant barrier (Weissenberger et al., 2021). The ideal specimen for solving a structure is a single layer of randomly oriented macromolecular complexes embedded into a thin slab of vitreous ice. During specimen preparation, interactions with the air-water interface facilitated by the confinement into a thin layer of buffer can destabilize protein complexes leading to denaturation and aggregation or force the molecules into a \u2018preferred orientation\u2019 (Noble et al., 2018). In addition, vitrification methods typically yield variations in ice thickness across the grid. These artifacts can severely limit the quality of specimens and are typically addressed through an optimization process in which several parameters are varied to increase the stability and mono-dispersity of the target macromolecule (Passmore and Russo, 2016). Evaluating each combination of parameters involves comprehensive sampling of one or more grids using a cryo-EM. Testing all combinations is impractical because the number grows significantly with the inclusion of each parameter. Instead, an iterative search is performed in which a limited number of parameters are evaluated, and new conditions are selected based on the results.\n\nThe goal of specimen screening is to learn as much as possible from each condition, often taking advantage of the heterogeneous landscape of each grid to extract valuable information about the behavior of the macromolecule of interest. This process involves selecting areas for evaluation, adjusting the positioning and optical conditions of the microscope, and recording images at multiple magnifications. The lowest magnifications are used to assess the overall quality of the vitrification process, the number of potential areas amenable to sampling at higher resolution and some macroscopic indicators of sample instability such as aggregation. Higher magnification images provide direct information about the macromolecules of interest, such as particle integrity, distribution, affinity for the substrate, density, heterogeneity and orientation, as well as the quality of the ice, and the resolution limit of the images. This makes manual specimen screening a time-consuming activity with a steep learning curve in which the implicit subjectivity in the selection of areas can lead to suboptimal sampling, resulting in missing information. The quality of the results, the speed, and even the integrity of the instrument, all depend on the experience and skills of the operator.\n\nExisting software for automated cryo-EM is not designed to provide a thorough sampling of each grid. Instead, packages are optimized for acquiring a large number of high-quality images of a pre-selected set of targets (Mastronarde, 2005; Suloway et al., 2005). Although all data collection packages preserve lower magnification images and the associated stage positions, they are not designed to facilitate virtual navigation of the grid with the exception Leginon\u2019s companion software, Appion (Lander et al., 2009), which provides offline access to the results via a web user interface (WebUI). However, none of the existing packages is optimized for screening, nor they provide a web-based solution for controlling the microscope during specimen evaluation.\n\nHere, we present SmartScope, a web-based, highly available expert system capable of performing unsupervised screening of specimens and automated data collection for cryo-EM. SmartScope uses pretrained generalized deep learning (DL) models for feature detection and selection to maximize sampling and provide information to guide specimen optimization. By combining automation, machine learning, and remote control, we aim to increase the efficiency of the screening process, reducing costs and dramatically increasing availability. Finally, SmartScope is designed as a modular framework, facilitating the addition of new algorithms for area selection and navigation that can further improve targeting performance.\n\n## Results\n\nThe complexity of a screening workflow depends on several factors including the instrument used and the type of specimen. Here, we describe the extended operation of a microscope furnished with an autoloader device and loaded with frozen hydrated targets for SPA, which are prepared on a micropatterned holey substrate or continuous carbon (Figure 1 and Figure 1\u2014figure supplement 1). All the interactions with the software are carried out using the SmartScope WebUI which also allows to monitor progress and control the workflow with little to no training in cryo-EM. Further, SmartScope permits simultaneous access from multiple remote devices, greatly facilitating collaborative work.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80047/elife-80047-fig1-v1.jpg)\n\n**Figure 1.:** (A) Workflow for unsupervised grid navigation and imaging. SmartScope handles specimen exchange, atlas acquisition, regions of interest (ROIs) identification, classification, and selection. It then visits the selected regions and identifies and selects targets of interest (TOIs) which are acquired at higher magnification and preprocessed. (B) Detailed steps in ROI selection. After detection and classification, ROIs are also clustered into groups. In the example is a clustering by size. Then, from the ROIs are queried based on their class and ROIs from different clusters are selected. (C) Detailed steps in TOI selection. Shown here is the hole detection followed by a median intensity clustering. Then, holes are grouped by image-shift radius and groups from each cluster are selected for imaging.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80047/elife-80047-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Steps carried out by SerialEM (Mastronarde, 2005) are shown in purple and steps carried out by SmartScope are shown in blue. Steps that can be modified within the sessions setup or during the session are shown in bold (see Table 1 for descriptions of the parameters). The steps in the dashed boxes are executed asynchronously from the main workflow, meaning that the workflow moves to the next steps while these are executing.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80047/elife-80047-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The hole grouping function takes the coordinates of the holes in a square, the maximum grouping radius in microns and a minimum group size. The algorithm uses the distance matrix between the holes and attempts to group them to maximize the coverage while minimizing the number of groups. Each iteration, shown in the dark gray box, uses a randomized matrix. The iterations will stop after 500, unless 250 consecutive iterations did not improve the score. Scores can be weighted in favor of coverage or the number of groups by changing the weight (default weight = 2). (B) Example of how grouping can be optimized by labeling holes bad holes (red) and re-running the grouping algorithm (white scale bars are 10 \u03bcm).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80047/elife-80047-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** SmartScope uses a database server (MariaDB), a web application with a web server and a Worker that runs the main processes. Each component can be installed on different computers and communicate with each other using Socket or SSH connections. Ongoing sessions are updated in real time via a WebSocket connection. The worker is the only service that requires network access to the SerialEM computer. The worker and Web server need access to a shared disk to continuously update the results. After data is acquired, it can be moved to an optional long-term storage such as a local network drive or to an AWS S3 bucket.\n\n### Initialization\n\nAfter a cassette is inserted in the autoloader, a session is initialized by providing the list of grids to be evaluated along with a series of parameters applicable to all of them (Appendix 1\u2014table 1). SmartScope then initiates a connection to SerialEM (Mastronarde, 2005) via its python API to issue commands to the microscope. This connection is locked to prevent the simultaneous execution of multiple workflows. For instruments equipped with automated loading systems, grids are loaded sequentially into the column and subjected to the operations described in the sections below.\n\n### Grid analysis\n\nFor each grid loaded, a series of low magnification images are acquired and stitched together to generate a grid map or \u2018Atlas\u2019 which is analyzed by SmartScope\u2019s DL driven window detector and classifier (Figure 1A). Windows deemed suboptimal for imaging due to physical damage or heavy contamination are excluded from further analysis. The remaining \u2018good\u2019 windows are reclassified and clustered based on a selectable criterion (e.g. areas suitable for imaging). Representatives of each window cluster are added to a list of regions of interest (ROIs) with the goal of adequately sampling the diversity of imageable areas (Figure 1B). The program then proceeds to visit and select imaging targets from the ROIs in this list, which can be modified via the WebUI at any time before the grid is completed.\n\n### Selection of targets\n\nThe stage is moved to the next ROI, brought to eucentric height, and imaged at a magnification that ensures complete coverage of the area (Figure 1A). The next step is to identify targets of interest (TOIs) based on a programmable criterion that depends on the specimen. For example, SmartScope\u2019s DL based hole finder is used to detect holes in frozen hydrated SPA specimens. The current algorithm classifies the holes based on their average signal intensity (a proxy for ice thickness) and clusters them into a selectable number of groups. By default, the group containing the darkest targets is rejected as not suitable for imaging. To maximize diversity, holes are selected from the different clusters and added to a TOI list (Figure 1C). As with ROIs, this selection can be modified at any time during imaging of the grid. A protocol for selecting negative stain TOIs is also available and plug-ins for other types of specimens may be incorporated in the future.\n\nSelected TOIs are visited sequentially by moving the stage to their predicted coordinates. A series of images, at a magnification that encompasses the TOI and surrounding area, are used to recenter the imaging area on the target (a hole in the substrate for SPA). These intermediate resolution images are stored in the database as they often provide valuable information about the specimen, such as affinity of the macromolecules for the support material, aggregation, denaturation, etc. Autofocus and drift stabilization procedures are then performed before acquiring high-magnification images of the target. An optional random offset from the center of each hole can be specified to capture images at different distances from the edge of the substrate. The newly acquired images are processed using the routine alignframes in IMOD (Kremer et al., 1996) and the program CTFFIND4 (Rohou and Grigorieff, 2015) to facilitate assessment of data quality. This cycle is repeated until all TOIs are imaged; then the workflow proceeds to the next ROI.\n\nAfter all selected ROIs for the grid is finished, SmartScope automatically switches to the next grid. This behavior may be modified by selecting the \u2018pause between grids\u2019 option on the session menu. Pausing allows for the selection of additional ROIs at the end of the cycle, providing better control of unattended sessions or when evaluating unusual specimens where automated sampling may not be satisfactory.\n\n### Accessing and annotating results\n\nSmartScope systematically documents the results and facilitates their analysis. During collection, all images and their related metadata are stored in a consistent data structure. To display and interact with these data, SmartScope implements an intuitive WebUI that tracks the imaging process in real time. Moreover, it enables remote interaction with a running session, such as modifying area selection, changing labels and acquisition parameters, and taking notes about the specimen, all without interrupting the acquisition workflow.\n\nAfter a session is over, SmartScope can automatically copy the data to long-term or object storage. The data remains available through the WebUI and allows users to make additional annotations. Other tools, such as micrograph curation and exporting of metadata as star files are also available.\n\n### Tools for exhaustive screening and high-throughput data collection\n\nSmartScope can also perform high-throughput data collection. A session can be initialized in data collection mode or changed from screening to data collection by setting the number of TOI to sample to zero. This will select all the available TOIs for imaging.\n\nTo achieve high-throughput, SmartScope makes uses beam-image shift (BIS) for multi-hole imaging (Cheng et al., 2018). BIS can be used during screening for more exhaustive sampling, allowing for exploratory data collections that can provide enough images to carry out 2D classification or initial 3D reconstruction. The BIS grouping in SmartScope uses an algorithm that groups the holes within a given radius (Figure 1\u2014figure supplement 2). Only the targets that are labeled as \u2018good\u2019 and are in the included clusters are used for the grouping. The algorithm attempts to maximize the coverage of targets while minimizing the total number of groups. To maximize the speed of data collection, a minimal group size can also be specified to prevent the algorithm from assigning small groups of holes. The BIS radius and minimal group size is specified at the start of each session and can be modified during the session.\n\nOne way to alleviate the commonly occurring problem of orientation bias in single-particle cryo-EM is to collect data on a tilted specimen (Tan et al., 2017). SmartScope can perform BIS data collection on tilted specimens, where the position and defocus of the targets are corrected using geometrical tilt constraints with a throughput that is similar to regular non-tilted data collection. Moreover, the tilt angle can be seamlessly changed at any point during the acquisition process. Combined with the integrated in-line data processing, this allows to adapt the data collection strategy on-the-fly based on the newly acquired knowledge.\n\nThe combination of automated operations such as feature detection routines, multi-hole imaging, and tilted data collection capabilities, makes SmartScope a powerful tool that can accelerate screening of cryo-EM samples and achieve high-throughput data collection.\n\n### Asynchronous imaging and processing\n\nSmartScope was designed to maximize microscope efficiency and to remove much of the idling time in the imaging process. A common source of idling is the processing time required for rendering the frame averages or calculating the CTF fits. To minimize the impact of this, the microscope\u2019s imaging process and the image processing routines run as parallel processes. The newly acquired images or movies are queued up for analysis and processed sequentially on a separate thread. For the atlas and windows, processing includes detecting, classifying, and selecting targets. For high-magnification TOIs, it involves frame alignment when fractions are saved, and CTF estimation. This allows the microscope to immediately acquire the next target while the images are being analyzed (Figure 1\u2014figure supplement 1).\n\n### Installation and configuration\n\nSmartScope bundles a web server for the WebUI, a database server and the core package necessary to run the main imaging workflow. It relies on the database to store and query essential metadata (Figure 1\u2014figure supplement 3). To simplify the deployment and orchestration of these services, we created a Docker image that should be compatible with most Linux systems.\n\nThe application can be installed on a single workstation that will handle the execution of all the services. It can also be installed in a master-worker configuration where, for example, one computer handles the web server and the database (master), while the main workflow is executed on a workstation that is connected to the microscope network (worker). The minimal requirements are that all the systems can access the database that holds the metadata for the session and targets, and the filesystem where the images are saved.\n\nA long-term storage area that holds the data from previous sessions can be specified. Both mounted network drives and object-stores can be used to store the data. This allows to clear data from the main local drives leaving space for the ongoing sessions while keeping older data accessible through the WebUI.\n\nAfter installation, administrators can login to the WebUI management portal where microscope and detector information needs to be added to allow connection to the instruments. Multiple microscopes can be installed on a single instance of SmartScope, serving as a central hub for microscope access. To access the server, each user has an account and groups are created by an administrator. Users can only access the data from the groups they belong to.\n\nIn SerialEM, a settings file containing the magnification for low-dose imaging needs to be prepared for each microscope and detector. The conditions should be set as follows: full square image bound to the Search preset using a magnification that shows the entire square; the fine hole re-alignment condition in low SA magnification bound to the View preset; the data acquisition conditions bound to the Record preset with the acquisition and dose fractionation settings bound to the Preview. As different hardware combinations would require different settings, we included a table with the settings used on a Talos Arctica equipped with a K2 detector and Titan Krios G4 equipped a K3 detector and bio-continuum energy filter as guidelines (Appendix 1\u2014table 2).\n\n### Automated object detection and classification\n\nSmartScope identifies and classifies ROIs and TOIs suitable for cryo-EM imaging using DL approaches. At the atlas level, areas suitable for imaging appear as \u2018windows,\u2019 commonly shaped as squares, through the metallic grid in which the support layer is intact and not blocked by thick ice or large contaminants. Windows are automatically detected and classified using a pretrained Region-based Convolutional Neural Network (Girshick, 2015) that identifies the \u2018good\u2019 windows with 80% precision (Figure 2A, Figure 2\u2014figure supplement 1A, Appendix 1\u2014table 3), thus providing information that can effectively guide the instrument to avoid undesirable regions of the grid.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80047/elife-80047-fig2-v1.jpg)\n\n**Figure 2.:** Sample images show the performance of the square (A) and hole (B) detectors applied to gold (left) and carbon (right) grids. (A) Automatic detection of squares and classification into six different classes: small, cracked, dry, contaminated, good, and partial (white scale bars are 100 \u03bcm). Representative examples of squares assigned to each class and corresponding detection precision values are shown (bottom panel). (B) Hole detection performance on representative square images extracted from gold and carbon grids. The hole detector implements a classification step to filter out contaminants (shown in yellow) and increases hole detection precision (shown as pink circles) (white scale bars are 10 \u03bcm).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80047/elife-80047-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Atlas (A) and Windows (B) where manually picked and annotated. The annotated dataset was augmented using a combination of rotations, translations, contrast variations, magnifications, and flip transforms. The models were trained against their specific architectures.\n\nSelected windows are then acquired at a higher magnification where TOIs can take various shapes depending on whether the modality is single particle cryo-EM, tomography, or negative stain. In single particle cryo-EM, these TOIs usually show as holes in the substrate and are difficult to detect with traditional image processing tools due to the low contrast, especially when carbon mesh grids are used. We implemented a robust hole detector for frozen specimens based on the You-Only-Look-Once (Redmon et al., 2016) object detection architecture (Figure 2B and Figure 2\u2014figure supplement 1B). To prevent the network from incorrectly picking dark ice contaminants, we also added a classification step to separate holes from contaminants and were able to correctly identify 89% of the holes.\n\n### Screening mode statistics\n\nIn screening mode, the average time required for exchanging specimens and acquiring a partial atlas covering at least 25% of the grid surface is 7.8 min (Figure 3, Appendix 1\u2014table 4 and Appendix 1\u2014table 5). The median sampling time for a specimen is 21 min, yielding a median of 9.0 high-magnification images of holes sampled from 3.0 different windows. Each day, our screening microscope thoroughly screens an average of 16 specimens and performs data collection for approximately 16 hr.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80047/elife-80047-fig3-v1.jpg)\n\n**Figure 3.:** Screening rates with and without beam-image shift (BIS) were 1.0 and 0.7 holes per minute, respectively (RANSAC regression). The red arrow indicates the time of specimen loading and start of atlas acquisition. Dashed blue line represents the median session duration (21.6min) and the median number of high-magnification images (9.0) obtained per specimen during screening mode.\n\n### Data collection mode statistics\n\nSmartScope offers a convenient option to set up, track data collection and to label and annotate exposures. In data collection mode, the microscope continuously acquires areas and finds targets using operator assistance only to fine tune the selection to specific needs, significantly reducing setup time as compared to our manual workflow. The median data collection setup time, from specimen loading to the start of high-magnification acquisition, is 32 min with our K2 detector (Appendix 1\u2014table 6). As an example, we used SmartScope to determine a 3.4 \u00c5 map of the 55 kDa homodimer accessory subunit of the human mitochondrial DNA polymerase (Young and Copeland, 2013) (EMD-25764, Figure 4, Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2). For this specimen, we collected 4327 micrographs and seamlessly tilted to 30\u00b0 for the last third of the dataset to improve the angular sampling of the protein (Table 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80047/elife-80047-fig4-v1.jpg)\n\n**Figure 4.:** (A) Atlas of the specimen (left), typical micrograph (center) with some particles picked (purple circles) and 2D classes of POLG2 (right). (B) Resulting map of POLG2 colored by local resolution (left) and example of an alpha helix with atomic model fit into the density (left). (C) Masked Fourier-shell correlation curve between half-maps showing a resolution of 3.4\u00c5.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80047/elife-80047-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Screening of the specimen used for POLG2 data collection. Sample images from screening are shown. Data can be labeled from the webUI as a way to keep track of the quality. The holes will be colored according to their quality (red: thick ice, blue: great) (white scale bars are 100 nm). (B) Data collection of the same POLG2 specimen with sample squares and micrographs. Purple circles on the micrographs represent POLG2 particles (right). (C) Data processing of the POLG2 dataset using cryoSPARC (Punjani et al., 2017).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80047/elife-80047-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) For each set, the angular distribution plot, the map and a zoom into a helix where PDB ID: 2G4C was fitted. All maps are displayed at a contour level of 0.6. (B) FSC plot of each set. Resolutions values can be found in Table 1. The horizontal dashed line represents the 0.143 FSC threshold.\n\n**Table 1.**\n Cryo-EM data acquisition parameters and statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">POLG2 (EMD-25764)</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>No tilt</th>\n      <th>Tilted</th>\n      <th>Combined</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Hardware</td>\n    </tr>\n    <tr>\n      <td>Microscope</td>\n      <td colspan=\"3\">Talos Arctica (Thermo Fisher)</td>\n    </tr>\n    <tr>\n      <td>Detector</td>\n      <td colspan=\"3\">K2 summit (Gatan Inc)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Data collection and processing</td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td colspan=\"3\">45,000</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td colspan=\"3\">200</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e-/\u00c52)</td>\n      <td colspan=\"3\">50</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u00b5m)</td>\n      <td>1.2\u20131.8</td>\n      <td>1.4\u20131.6</td>\n      <td>1.2\u20131.8</td>\n    </tr>\n    <tr>\n      <td>Tilt angle (\u00b0)</td>\n      <td>0</td>\n      <td>30</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5/pixel)</td>\n      <td colspan=\"3\">0.932</td>\n    </tr>\n    <tr>\n      <td>Movie No.</td>\n      <td>3029 (70%)</td>\n      <td>1282 (30%)</td>\n      <td>4311</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td colspan=\"3\">C2</td>\n    </tr>\n    <tr>\n      <td>Final particles</td>\n      <td>99,189 (78%)</td>\n      <td>28,641 (22%)</td>\n      <td>127,860</td>\n    </tr>\n    <tr>\n      <td>Map resolution (unmasked)</td>\n      <td>3.7</td>\n      <td>4.3</td>\n      <td>3.7</td>\n    </tr>\n    <tr>\n      <td>Map resolution (masked)</td>\n      <td>3.5</td>\n      <td>3.9</td>\n      <td>3.4</td>\n    </tr>\n    <tr>\n      <td>FSC threshold</td>\n      <td colspan=\"3\">0.143</td>\n    </tr>\n    <tr>\n      <td>Data collection statistics</td>\n      <td colspan=\"3\"></td>\n    </tr>\n    <tr>\n      <td>Setup time* (min)</td>\n      <td colspan=\"3\">60</td>\n    </tr>\n    <tr>\n      <td>Throughput (movies/hr)</td>\n      <td colspan=\"3\">117.9</td>\n    </tr>\n    <tr>\n      <td>Throughput last hour (movies)</td>\n      <td colspan=\"3\">130</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Data collection times are calculated as the time needed from grid loading to the collection of the first 50 high-magnification targets minus the time required for these 50 targets to be acquired._\n\n## Discussion\n\nSmartScope is the first package specifically designed to assist, document, and automate specimen evaluation during the process of optimizing samples for cryo-EM. The program delivers a unique user experience through a WebUI that provides live remote supervision and control of the screening process using a standard web browser. The same WebUI facilitates analysis of results at any time during and after a session. Multiple users can access the same live or stored session simultaneously and multiple instruments can be controlled from the same server. Automated navigation routines provide control of the microscope without granting full access to functions that may compromise the integrity of the instrument. SmartScope uses fast and robust AI-driven feature recognition algorithms to fully automate the cryo-EM imaging workflow. The steps of target identification, object classification, and clustering offer a powerful way to sample a wide variety of areas during screening and help determine the next steps in specimen optimization. This enables complete unsupervised execution of a screening workflow as well as supervised exploration with minimal user training.\n\nSmartScope can also collect data in a semi-supervised or fully automated way. The areas automatically selected by SmartScope can be modified interactively or programmatically without interrupting the process of data collection. This maximizes the use of the microscope and offers the possibility of integrating feedback from in-line data processing workflows to adaptively improve image quality during acquisition, without user intervention. Unsupervised multi-specimen screening and short exploratory data collection sessions can be scheduled to run overnight, offering new ways of using the microscope.\n\nThe interface to the microscope hardware in SmartScope is currently achieved through SerialEM, which provides abstraction interfaces to the main microscope and detector manufacturers as well as being open source and well supported. However, the current integration is made so that interfaces to other software (e.g. Leginon, Digital Micrograph, SmartEPU) can also be integrated with SmartScope in the future.\n\nSmartScope has a modular design where new object detection and classification algorithms can be added as plugins, allowing integration of existing object detection, and area selection programs for cryo-EM (Fan et al., 2022; Kim et al., 2021; Rheinberger et al., 2021; Schorb et al., 2019; Xu et al., 2020; Yokoyama et al., 2020; Yonekura et al., 2021). Additionally, the ability to use multiple feature detection and clustering methods at different magnification levels enables the creation of customized protocols for specific applications. This provides flexibility to optimize the selection of areas on a wider variety of targets in cryo-EM, such as virions, filaments, and cells. Finally, as we gather more data about difficult specimens and edge cases, we envision the establishment of a globally accessible \u2018virtual microscopist\u2019 server capable of improving itself through periodic re-training based on voluntarily submitted labeled datasets.\n\nSmartScope has proven to be an extremely valuable tool in our facility. It has streamlined bookkeeping, which in turn resulted in better decision making for specimen optimization. It has also maximized microscope usage by eliminating idling time, reducing setup, and screening times. SmartScope facilitates data and instrumentation access as well as collaboration by easing access to cryo-EM technologies and improving the way cryo-EM experiments are carried out. With specimen screening as a primary focus, SmartScope addresses an important limiting step in cryo-EM.\n\n## Materials and methods\n\n### Cryo-EM\n\nAll the data presented in this study was acquired on a Talos Arctica (Thermo Fisher Scientific) operating at 200 kV and equipped with a K2 direct-electron detector (Gatan Inc). SmartScope was also tested on a Ceta CMOS detector and a Titan Krios (Thermo Fisher Scientific) equipped with a K3 detector and BioQuantum energy filter (Gatan Inc). The statistics were derived from data acquired exclusively with the K2 detector. For microscope and detector control, SmartScope uses SerialEM 4.0 through the python API library (Mastronarde, 2005).\n\n### Square finder\n\nTo localize and classify square windows, a Faster R-CNN-based framework (Girshick, 2015) that uses a ResNet50 architecture as the feature extraction backbone was adopted. It incorporates a feature pyramid network for identification of objects at different magnification levels. In addition, since most features have approximately equal width and height, the bounding boxes were constrained to have aspect ratios within the 0.8\u20131.2 range. To improve robustness and stability of the model, data augmentation was applied to the training data, including zoom-in/zoom-out, rotation, contrast adjustments, and flipping. The degree of augmentation for the contrast intensity was limited to the 0.8 and 1.2 range. To compensate for label imbalance, random oversampling was added during training. Squares are classified into six different classes: good (suitable for imaging), small (thick ice), contaminated, cracked, fractioned, and broken. The low-level magnification feature detector was trained using a total of 26 atlases from both carbon and gold mesh grids acquired on Ceta (Thermo Fisher Scientific) and K2 (Gatan Inc) detectors. Each atlas contains around 50\u2013100 squares on average. The original atlases, usually having widths and heights greater than 10,000 pixels were downsampled to 2048 \u00d7 2048 pixels to reduce memory requirements. The framework is implemented using the python library Detectron2 (Wu et al., 2019). Training the detector takes around 2 hr when running on a NVIDIA TITAN V GPU card with 32 GB of RAM. The pre-trained weights are then used for fast real-time square detection during screening, which can evaluate each atlas image in under a second.\n\n### Hole finder\n\nTo identify holes in all grid types and contrast levels, a deep neural-network architecture based on the YOLOv5 model was adopted (Jocher et al., 2020; Redmon et al., 2016). We used the Cross Stage Partial Network (CSPNet) (Wang et al., 2019) as the feature extraction backbone and standard convolutional layers as detection layers. Since holes have circular shapes, the aspect ratios of the bounding boxes were also constrained. To further facilitate training, instead of using arbitrary numbers for anchor bounding boxes generation, clustering algorithms to the ground truth boxes from the training dataset were applied to find the most common occurring sizes and we used these sizes to determine the anchor bounding box sizes. Data augmentation was applied during training, including contrast/brightness adjustment, rotation/translation, zoom-in/zoom-out, and cropping. To deal with small contamination areas that can be incorrectly detected as holes, an additional \u2018contaminants\u2019 class is used to filter out such areas. Training of the hole finder was done using 36 square images acquired on Ceta (Thermo Fisher Scientic) and K2 (Gatan Inc) detectors and took 1.5 hr when running on a NVIDIA TITAN V GPU card with 32 GB of RAM and inference takes less than a second. For memory efficiency, each square was resized to 1280 \u00d7 1280 pixels.\n\n### POLG2 purification\n\nProtein was expressed and purified essentially as described (Young et al., 2015) with the following exception: Triton-X was removed from all steps following lysis. Following Ni purification, pooled protein containing His6-POLG2, as determined by SDS-PAGE, was injected onto a monoS column. Protein was eluted from S column in a linear gradient from 5 to 50% Buffer B (25 mM HEPES, 1 M NaCl, 10% glycerol, 1 mM EDTA, 1 mM TCEP). Peak fractions were eluted around 310 mM NaCl. Fractions were checked for purity, combined, and concentrated using an Amicon concentrator (Millipore) to 28 \u00b5M. Protein is flash frozen and stored at \u201380 \u00b0C.\n\n4.1 \u00b5M (monomer) his-tag POLG2 was incubated in a 1:1 molar ratio with FORK1 DNA as previously described (6) Oligonucleotides: (i) DCRANDOM- 44 ACTTGAATGCGGCTTAGTATGCATTGTAAAACGACGGCCAGTGC (2) TSTEM GCACTGGCCGTCGTTTTACGGTCGTGACTGGGAAAACCCTGGCG (3) U25 CGCCAGGGTTTTCCCAGTCACGACC were all purchased from IDT. Protein in a final buffer of 20 mM HEPES pH 8, 1.5 mM Tris pH 7.5, 30 mM KCl, 50 mM imidazole pH 8, 0.3 mM EDTA, 225 mM NaCl, 1.5% glycerol, 1 mM TCEP was incubated on ice for approximately 30 min before grid application.\n\n### Cryo-EM specimen preparation\n\nUltraAUfoil R1.2/3 (Quantifoil Micro Tools GmbH) grids were glow-discharged on both sides for 30 s at 15 mA using a Pelco Easiglow. 3 \u00b5L of the final buffer was deposited on the back of the grid and 3 \u00b5L of POLG2 sample was deposited on front side of the grid. Excess sample was blotted 4 s with blotting force \u20131, the chamber set at 12 \u00b0C and 95% humidity using a Vitrobot Mark IV (Thermo Fisher Scientific).\n\n### Data collection of POLG2 with SmartScope\n\nData was collected on a Talos Arctica (Thermo Fisher Scientific) operating at 200 kV equipped with a Gatan K2 direct electron detector (Gatan Inc). Data collection was set up using SmartScope using a 6 \u00d7 6 tile atlas, image-shift grouping radius of 4 \u00b5m and minimum group size of four holes, rolling target defocus of \u20131.2 to \u20131.8 \u00b5m and drift settling threshold at 1 \u212b/s. A total of 4311 60-frame movies were collected at a 0.932 \u212b/pixel and a total dose of 54 e-/\u212b2. 3029 movies were collected at 0\u00b0 tilt angle and 1282 movies were collected with 30\u00b0 tilt angle. Data was collected at a rate of 120 movies per hour.\n\n### Cryo-EM data processing and refinement\n\nThe POLG2 dataset was processed using cryoSPARC (Punjani et al., 2017) as detailed in Figure 4\u2014figure supplement 1C. Final maps were sharpened using DeepEMhancer (Sanchez-Garcia et al., 2021). An atomic model from PDB ID: 2G4C (Fan et al., 2006) was fit into the map using Chimera (Pettersen et al., 2004).\n\n### Data availability\n\nTrained models used to obtain the results shown in Figures 1 and 2 are available to download from 10.5281/zenodo.6842025. The Jupyter notebook used to aggregate the statistic in Figure 3 and Appendix 1\u2014Tables 2\u20135 is part of the code repository (Bouvette et al., 2022a). Cryo-EM density maps of POLG2 collected using SmartScope have been deposited in the Electron Microscopy Data Bank (EMDB) with accession code EMD-25764. Square and hole images and corresponding labels used for training the ML models are available at 10.5281/zenodo.6814642 (square finder) and 10.5281/zenodo.6814652 (hole finder).\n\n### Code availability\n\nThe source code for SmartScope is distributed under the open source BSD 3-clause license available at https://github.com/NIEHS/SmartScope (copy archived at swh:1:rev:9e58e2a2b278ca65156390175d393819fbb16a3b, Bouvette et al., 2022a). The AI algorithms are available as a standalone package at https://gitlab.cs.duke.edu/bartesaghilab/smartscopeAI (copy archived at swh:1:rev:43b29ae8c333a94463e0a4d9ecb97a5d5b6adf92; Bouvette et al., 2022b).\n",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "3129add4-dcc1-48ef-b35e-be1892057bdd",
+      "submission_id": "0ffcede2-6384-4d0d-8314-b059a68d9971",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sjors HW Scheres, https://ror.org/00tw3jy02 MRC Laboratory of Molecular Biology United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80047.sa0](https://doi.org/10.7554/eLife.80047.sa0)\n\nThis paper describes a new software tool: SmartScope, for automated screening of cryo-EM grids. SmartScope can also perform automated data collection on suitable grids, including with beam-image shifts and tilted stage geometries. If it works in practice as advertised in the paper, then it will be a highly useful tool for the field, especially if other groups would also contribute to its open-source and modular code.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sjors HW Scheres, https://ror.org/00tw3jy02 MRC Laboratory of Molecular Biology United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80047.sa1](https://doi.org/10.7554/eLife.80047.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Automated systematic evaluation of cryo-EM specimens with SmartScope\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Sjors HW Scheres as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Kenton Swartz as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Arjen J Jakobi (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll three reviewers agreed that the software described in this paper would be a highly useful addition to the field and are in support of publication.\n\n1) A table summarising the data acquisition parameters and data collection statistics should be provided.\n\nStrong encouragements:\n\n1) The reviewers praise the authors for their intention to make the code available to the community and encourage them to do so as soon as possible.\n\n2) Besides providing the source of the smartScope program on github, the authors are also encouraged to provide the labelled raw training data for the convolutional neural networks. Public repositories like Zenodo or EMPIAR could be used.\n\n3) The 3 reviewers each make useful suggestions to improve the manuscript below. Although these are not essential for acceptance, the authors are encouraged to give this serious consideration.\n\nReviewer #1 (Recommendations for the authors):\n\nAll Supplementary Figures should become supplements to one of the main figures.\n\nReviewer #2 (Recommendations for the authors):\n\nThe paper is in my opinion very well structured with clear figures and procedure steps. In general, I really enjoyed reading it and I am willing to test it soon. Of course, a work of this type passes the real test when it starts being used by the community. I believe that SmartScope will be used as there are no other fully automated solutions for grid screening.\n\nFrom the description in the text, the software appears to be quite solid and the authors have pretty much answered in the text itself any questions that were coming to my mind while reading. In short, this manuscript is very detailed, easy to follow in a logical mind flow, and takes into consideration all aspects of specimen screening and data acquisition. From my side, the article is publishable as it is.\n\nSome more detailed comments:\n\nLine 143: SmartFlow is bound to serialEM, will it be possible to couple it to EPU for example, which is widely used, or other software used for the collection of diffraction data? How dependent is on serialEM 4.0? Will SmartScope be maintained as serialEM develops?\n\nLine 153: Is there a minimal magnification that has to be used for the window clustering to work properly? Can the authors include some comments/guidelines on this?\n\nLine 175: Do I understand correctly that some images are also taken in the carbon, or at the carbon/ice interface to evaluate the distribution of particles?\n\nLine 179: I would simplify the procedure to gain time, at least for relatively short exposure times. Probably not in all cases frames alignment and CTF estimation are necessary, to view the stability of the new microscopes equipped with autoloader. However, it is probably better to have these options while running the automatic screening e.g. overnight.\n\nLine 221: Out of full completeness the authors might comment on how their algorithm to maximise target coverage while minimising numbers of groups compares to the same procedure in EPU. There the BIS applied can be changed. Is that possible in SmartScope?\n\nThe fact that SmartScope can perform BIS collection on tilted specimens in a correct way is great.\n\nFor the evaluation of the network organisation part, I have asked the opinion of an expert colleague, who commented:\n\nLine 237: I don't quite understand what the authors mean with: \"bundles a webserver and the main imaging workflow\". I assume the webserver is for interacting with the program and the \"main imaging workflow\" is what runs on the worker if installed on separate computers, but it would be better to make it a bit more clear.\n\nThe Singularity container image is convenient and good that it's versatile enough to be installed on separate systems.\n\nLine 245: Why do both the web server and the worker need to have access to a shared disk? Does the worker write and the web server only reads the results to display to the user? What kind of information is stored in the database?\n\n248: The object store can be accessed via the Amazon S3 API. It's a nice feature for exporting data to \"the cloud\". Maybe the author should clarify a bit what are the full advantages that one can get from such a setup?\n\nSupplementary 43: \"communicate with each other using Socket or SSH connections\" Do they mean HTTP? In the graph, there is no mention of SSH connections, only HTTP.\n\nReviewer #3 (Recommendations for the authors):\n\nPoints for consideration:\n\n\u2013 The introduction describes many important concepts and limitations in the preparation of cryo-EM specimens and in screening/data collection, but only sparsely cites, and if, very general reviews on these topics. The reader may benefit if the authors would more specifically refer to the excellent primary literature on these topics.\n\n\u2013 In addition to their YOLO-based hole finder, the authors may consider mentioning that the open and modular approach of their software allows integration with approaches such as e.g. virtual maps in Py-EM, which could extend the reach of their method to more sophisticated screening/targeting scenarios and different sample supports.\n\n\u2013 The micrograph pre-processing routines implemented in SmartScope currently involve frame alignment and CTF estimation. The authors may consider including the possibility of image denoising workflows such as those implemented in data pre-processing pipelines (Warp, Scipion, SPHIRE, CryoSparc Live, \u2026), which can be useful tools for rapid selection of suitable imaging areas, in particular if particles are small.\n\n\u2013 The authors comment on the screening mode statistics from the operation of SmartScope in their facility. From their facility projects, are there statistics available on how many cases the screening procedure followed by automated, targeted data collection lead to successful structure determination, and how this compares to manual screening and subjective targeting on the same sample? This could be insightful.\n\n\u2013 The authors mention that data collection of human mitochondrial DNA polymerase involved tilting of the specimen in a subset of the dataset to improve angular sampling. It would be useful to show angular distribution plots for the data excluding and including the tilted images to illustrate this was required and how automation by SmartScope can help detect and mitigate such problems on the fly.\n\n\u2013 A table summarising the data acquisition parameters and data collection statistics should be provided.\n\n\u2013 It is laudable that the authors make their software and models publicly available. It would be more useful to have the repository public open at the moment of preprint posting so as to give reviewers the possibility to also screen review code. The data availability statement contains a remark of disclosure of data upon reasonable request. It is unclear what this statement means, and which requests are considered reasonable; these data can be useful for other academic projects following related but complementary approaches, as well as comparison and benchmarking. I encourage the authors to make raw ML data available through public repositories such as Zenodo, and to deposit raw micrographs at EMPIAR.\n",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dac8c3f1-c3fe-466d-9274-1480e61e0d5f",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C1",
+      "claim": "SmartScope is the first framework to streamline, standardize, and automate specimen evaluation in cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present SmartScope, the first framework to streamline, standardize, and automate specimen evaluation in cryo-EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract describing SmartScope as the first framework of its kind.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "9e0fd2b7-26b0-4914-977a-b4beb5240f6a",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C2",
+      "claim": "SmartScope employs deep-learning-based object detection to identify and classify features suitable for imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope employs deep-learning-based object detection to identify and classify features suitable for imaging, allowing it to perform thorough specimen screening in a fully automated manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the use of deep learning for object detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "5a4b34e8-415a-41df-890b-d310af82c189",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C3",
+      "claim": "SmartScope can perform thorough specimen screening in a fully automated manner.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope employs deep-learning-based object detection to identify and classify features suitable for imaging, allowing it to perform thorough specimen screening in a fully automated manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the capability for fully automated screening.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "36f90253-6a52-4989-949b-a027376fdadf",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C4",
+      "claim": "A web interface provides remote control over the automated operation of the microscope in real time.",
+      "claim_type": "EXPLICIT",
+      "source": "A web interface provides remote control over the automated operation of the microscope in real time and access to images and annotation tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the web interface functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "a768f417-0b04-4a1d-9aaf-2666ff41ad93",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C5",
+      "claim": "Manual annotations can be used to re-train the feature recognition models, leading to improvements in performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual annotations can be used to re-train the feature recognition models, leading to improvements in performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this capability and its effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "6c4770a3-a715-4d9a-91fd-88369667ca86",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C6",
+      "claim": "Optimizing specimens for high-resolution cryo-EM imaging remains a significant barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "However, optimizing specimens for high-resolution cryo-EM imaging remains a significant barrier (Weissenberger et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "275e5ec9-7f4b-45e0-84df-d90a96d46b9d",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C7",
+      "claim": "The ideal specimen for solving a structure is a single layer of randomly oriented macromolecular complexes embedded into a thin slab of vitreous ice.",
+      "claim_type": "EXPLICIT",
+      "source": "The ideal specimen for solving a structure is a single layer of randomly oriented macromolecular complexes embedded into a thin slab of vitreous ice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "9fde311c-2652-404c-a0c9-75fb998128e3",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C8",
+      "claim": "Interactions with the air-water interface can destabilize protein complexes leading to denaturation and aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "During specimen preparation, interactions with the air-water interface facilitated by the confinement into a thin layer of buffer can destabilize protein complexes leading to denaturation and aggregation or force the molecules into a 'preferred orientation' (Noble et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Noble et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "cf64b93d-1629-4be3-b7e4-aab7682e3ac0",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C9",
+      "claim": "Interactions with the air-water interface can force molecules into a 'preferred orientation'.",
+      "claim_type": "EXPLICIT",
+      "source": "During specimen preparation, interactions with the air-water interface facilitated by the confinement into a thin layer of buffer can destabilize protein complexes leading to denaturation and aggregation or force the molecules into a 'preferred orientation' (Noble et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Noble et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "7f5e44a9-4d47-4ac8-8f17-46ef7ef22437",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C10",
+      "claim": "Vitrification methods typically yield variations in ice thickness across the grid.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, vitrification methods typically yield variations in ice thickness across the grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of vitrification methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "73fed774-118b-4897-9efd-eaccafd60694",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C11",
+      "claim": "Manual specimen screening is a time-consuming activity with a steep learning curve.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes manual specimen screening a time-consuming activity with a steep learning curve in which the implicit subjectivity in the selection of areas can lead to suboptimal sampling, resulting in missing information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of manual screening based on the authors' understanding of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "b016f814-44c3-41de-b745-fda36cc594f6",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C12",
+      "claim": "Implicit subjectivity in the selection of areas during manual screening can lead to suboptimal sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes manual specimen screening a time-consuming activity with a steep learning curve in which the implicit subjectivity in the selection of areas can lead to suboptimal sampling, resulting in missing information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of subjective area selection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "0f653d42-8801-486a-8111-ef1c12e089f5",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C13",
+      "claim": "The quality of cryo-EM results depends on the experience and skills of the operator.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of the results, the speed, and even the integrity of the instrument, all depend on the experience and skills of the operator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of manual operation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "5e7cc992-1a9f-4cf4-9c7a-517726e2c8ac",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C14",
+      "claim": "Existing software for automated cryo-EM is not designed to provide a thorough sampling of each grid.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing software for automated cryo-EM is not designed to provide a thorough sampling of each grid. Instead, packages are optimized for acquiring a large number of high-quality images of a pre-selected set of targets (Mastronarde, 2005; Suloway et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing software packages.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "4ee83f44-ef72-40ae-a67a-01ad75965d94",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C15",
+      "claim": "Leginon's companion software, Appion, provides offline access to results via a web user interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all data collection packages preserve lower magnification images and the associated stage positions, they are not designed to facilitate virtual navigation of the grid with the exception Leginon's companion software, Appion (Lander et al., 2009), which provides offline access to the results via a web user interface (WebUI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lander et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "eff14a11-501b-48b9-a5d2-6463a6e8795a",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C16",
+      "claim": "None of the existing packages is optimized for screening.",
+      "claim_type": "EXPLICIT",
+      "source": "However, none of the existing packages is optimized for screening, nor they provide a web-based solution for controlling the microscope during specimen evaluation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about existing software capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "e5473504-5cd6-4fb9-bd75-005b7f177a9e",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C17",
+      "claim": "SmartScope uses pretrained generalized deep learning models for feature detection and selection.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope uses pretrained generalized deep learning (DL) models for feature detection and selection to maximize sampling and provide information to guide specimen optimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of SmartScope's methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "f2d51f5f-9c7d-40f0-8a13-3ad328eb5eef",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C18",
+      "claim": "SmartScope is designed as a modular framework, facilitating the addition of new algorithms for area selection and navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, SmartScope is designed as a modular framework, facilitating the addition of new algorithms for area selection and navigation that can further improve targeting performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about SmartScope's design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "d56a8005-6495-464e-9af5-c9f5344a1649",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C19",
+      "claim": "SmartScope permits simultaneous access from multiple remote devices.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, SmartScope permits simultaneous access from multiple remote devices, greatly facilitating collaborative work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about SmartScope's capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "44d36ed7-8c46-45be-8963-2d23d3824e59",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C20",
+      "claim": "SmartScope handles specimen exchange, atlas acquisition, regions of interest identification, classification, and selection.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope handles specimen exchange, atlas acquisition, regions of interest (ROIs) identification, classification, and selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "83f3c4e3-70b4-426f-b4cf-bbd51c64be26",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C21",
+      "claim": "After detection and classification, ROIs are clustered into groups.",
+      "claim_type": "EXPLICIT",
+      "source": "After detection and classification, ROIs are also clustered into groups.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "261c7163-7d56-4b5a-a759-fbb5743e0c54",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C22",
+      "claim": "SmartScope initiates a connection to SerialEM via its python API to issue commands to the microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope then initiates a connection to SerialEM (Mastronarde, 2005) via its python API to issue commands to the microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the technical implementation with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "b11ef257-0cf4-4c27-9081-396a31e4433c",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C23",
+      "claim": "The connection to SerialEM is locked to prevent the simultaneous execution of multiple workflows.",
+      "claim_type": "EXPLICIT",
+      "source": "This connection is locked to prevent the simultaneous execution of multiple workflows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the system's operation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "621b6fbc-8627-42b4-91f6-efbc690e311d",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C24",
+      "claim": "A series of low magnification images are acquired and stitched together to generate a grid map or 'Atlas'.",
+      "claim_type": "EXPLICIT",
+      "source": "For each grid loaded, a series of low magnification images are acquired and stitched together to generate a grid map or 'Atlas' which is analyzed by SmartScope's DL driven window detector and classifier (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the atlas generation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "b91c1d36-78b8-4a4b-940b-7f41ff2d3115",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C25",
+      "claim": "Windows deemed suboptimal for imaging due to physical damage or heavy contamination are excluded from further analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Windows deemed suboptimal for imaging due to physical damage or heavy contamination are excluded from further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "3aeb347d-c350-4b9c-b6e8-2bf17181a605",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C26",
+      "claim": "SmartScope's DL based hole finder is used to detect holes in frozen hydrated SPA specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, SmartScope's DL based hole finder is used to detect holes in frozen hydrated SPA specimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the hole detection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "ece22273-5889-4584-8f25-0b4403dea89d",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C27",
+      "claim": "The hole finding algorithm classifies holes based on their average signal intensity as a proxy for ice thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "The next step is to identify targets of interest (TOIs) based on a programmable criterion that depends on the specimen. For example, SmartScope's DL based hole finder is used to detect holes in frozen hydrated SPA specimens. The current algorithm classifies the holes based on their average signal intensity (a proxy for ice thickness) and clusters them into a selectable number of groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the classification method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "411e745c-ee9e-49a6-a5a7-0a883374e5b2",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C28",
+      "claim": "By default, the group containing the darkest targets is rejected as not suitable for imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "By default, the group containing the darkest targets is rejected as not suitable for imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the default selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "bd7ddda6-2658-4a1b-8166-de611bef8eb6",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C29",
+      "claim": "Intermediate resolution images often provide valuable information about the specimen, such as affinity of the macromolecules for the support material, aggregation, denaturation.",
+      "claim_type": "EXPLICIT",
+      "source": "These intermediate resolution images are stored in the database as they often provide valuable information about the specimen, such as affinity of the macromolecules for the support material, aggregation, denaturation, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of intermediate resolution images.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "3b28d99f-49e7-49a6-9386-cf401d563af6",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C30",
+      "claim": "SmartScope systematically documents the results and facilitates their analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope systematically documents the results and facilitates their analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about SmartScope's documentation capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "ddcc5eb4-110c-4398-aff8-cd204154c4b7",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C31",
+      "claim": "During collection, all images and their related metadata are stored in a consistent data structure.",
+      "claim_type": "EXPLICIT",
+      "source": "During collection, all images and their related metadata are stored in a consistent data structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the data storage approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "ddf942e7-8308-4780-8102-c354c632e237",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C32",
+      "claim": "SmartScope implements an intuitive WebUI that tracks the imaging process in real time.",
+      "claim_type": "EXPLICIT",
+      "source": "To display and interact with these data, SmartScope implements an intuitive WebUI that tracks the imaging process in real time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the WebUI functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "88c7ff1b-ca7f-498b-8e2f-ff4f34ccb715",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C33",
+      "claim": "SmartScope can automatically copy data to long-term or object storage after a session is over.",
+      "claim_type": "EXPLICIT",
+      "source": "After a session is over, SmartScope can automatically copy the data to long-term or object storage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about data management capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "2d973c18-8319-41d3-9ec7-042045d05a29",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C34",
+      "claim": "SmartScope can perform high-throughput data collection.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope can also perform high-throughput data collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about SmartScope's capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "f1dee4d1-ab18-4020-92d7-e51184c57772",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C35",
+      "claim": "SmartScope makes use of beam-image shift (BIS) for multi-hole imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve high-throughput, SmartScope makes uses beam-image shift (BIS) for multi-hole imaging (Cheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement with a citation to the BIS technique.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "10116f26-cfc0-446a-a5bb-99a7cf2703ce",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C36",
+      "claim": "BIS can be used during screening for more exhaustive sampling, allowing for exploratory data collections.",
+      "claim_type": "EXPLICIT",
+      "source": "BIS can be used during screening for more exhaustive sampling, allowing for exploratory data collections that can provide enough images to carry out 2D classification or initial 3D reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the utility of BIS during screening.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "19886071-9d49-4658-ac40-7f043041227e",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C37",
+      "claim": "The BIS grouping algorithm attempts to maximize the coverage of targets while minimizing the total number of groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The algorithm attempts to maximize the coverage of targets while minimizing the total number of groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the algorithm's objective.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "42eb654c-65ba-40e8-8a77-e35aa72c4485",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C38",
+      "claim": "SmartScope can perform BIS data collection on tilted specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope can perform BIS data collection on tilted specimens, where the position and defocus of the targets are corrected using geometrical tilt constraints with a throughput that is similar to regular non-tilted data collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about tilted specimen capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "770df9b5-db35-49ee-abb5-c8deedd237fd",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C39",
+      "claim": "The tilt angle can be seamlessly changed at any point during the acquisition process.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the tilt angle can be seamlessly changed at any point during the acquisition process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the flexibility of tilt angle adjustment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "1adb2390-732b-47c5-8cb7-f886aeb16d43",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C40",
+      "claim": "SmartScope was designed to maximize microscope efficiency and to remove much of the idling time in the imaging process.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope was designed to maximize microscope efficiency and to remove much of the idling time in the imaging process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about SmartScope's design goals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "3aafd1cb-9cfc-4414-a1a2-3b6c009dab0c",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C41",
+      "claim": "The microscope's imaging process and the image processing routines run as parallel processes in SmartScope.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize the impact of this, the microscope's imaging process and the image processing routines run as parallel processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the parallel processing implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "2899e86e-b656-4ba1-bb44-e9d6e16b370f",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C42",
+      "claim": "SmartScope bundles a web server for the WebUI, a database server and the core package necessary to run the main imaging workflow.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope bundles a web server for the WebUI, a database server and the core package necessary to run the main imaging workflow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of SmartScope's components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "efda62f3-a780-46ca-88fb-6446309a7dcb",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C43",
+      "claim": "SmartScope relies on the database to store and query essential metadata.",
+      "claim_type": "EXPLICIT",
+      "source": "It relies on the database to store and query essential metadata (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the database's role.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "d51ce8b2-3646-4061-a2b6-66d64ab82e66",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C44",
+      "claim": "A Docker image was created to simplify the deployment and orchestration of SmartScope services.",
+      "claim_type": "EXPLICIT",
+      "source": "To simplify the deployment and orchestration of these services, we created a Docker image that should be compatible with most Linux systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the deployment solution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "654e43c5-7765-413b-b94c-1cc35a09168b",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C45",
+      "claim": "Multiple microscopes can be installed on a single instance of SmartScope.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple microscopes can be installed on a single instance of SmartScope, serving as a central hub for microscope access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about multi-microscope support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "0fa0a2cc-3ebd-410f-b5ad-846895f7504d",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C46",
+      "claim": "SmartScope identifies and classifies ROIs and TOIs suitable for cryo-EM imaging using DL approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope identifies and classifies ROIs and TOIs suitable for cryo-EM imaging using DL approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the identification and classification methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "d8e2b894-8cc7-44af-bf62-152404c4b007",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C47",
+      "claim": "Windows are automatically detected and classified using a pretrained Region-based Convolutional Neural Network with 80% precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Windows are automatically detected and classified using a pretrained Region-based Convolutional Neural Network (Girshick, 2015) that identifies the 'good' windows with 80% precision (Figure 2A, Figure 2\u2014figure supplement 1A, Appendix 1\u2014table 3), thus providing information that can effectively guide the instrument to avoid undesirable regions of the grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement with citation and reference to data showing 80% precision.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "f60a8d22-18d5-4797-a182-58e0559ba520",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C48",
+      "claim": "SmartScope implemented a robust hole detector for frozen specimens based on the You-Only-Look-Once object detection architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "We implemented a robust hole detector for frozen specimens based on the You-Only-Look-Once (Redmon et al., 2016) object detection architecture (Figure 2B and Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement with citation to the YOLO architecture.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "0e464862-994a-482d-a46b-1d1a9fbe51be",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C49",
+      "claim": "The hole detector correctly identifies 89% of the holes.",
+      "claim_type": "EXPLICIT",
+      "source": "To prevent the network from incorrectly picking dark ice contaminants, we also added a classification step to separate holes from contaminants and were able to correctly identify 89% of the holes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the hole detection performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "74c712c9-e49a-4e2c-9ce3-71e16c037bf1",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C50",
+      "claim": "The average time required for exchanging specimens and acquiring a partial atlas covering at least 25% of the grid surface is 7.8 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In screening mode, the average time required for exchanging specimens and acquiring a partial atlas covering at least 25% of the grid surface is 7.8 min (Figure 3, Appendix 1\u2014table 4 and Appendix 1\u2014table 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of measured performance with reference to data tables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "7c183cfb-9be6-4612-8520-a43b41b94bee",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C51",
+      "claim": "The median sampling time for a specimen is 21 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The median sampling time for a specimen is 21 min, yielding a median of 9.0 high-magnification images of holes sampled from 3.0 different windows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of measured performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "58149733-1cbc-432f-9f87-37958e1ce273",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C52",
+      "claim": "The screening microscope thoroughly screens an average of 16 specimens per day.",
+      "claim_type": "EXPLICIT",
+      "source": "Each day, our screening microscope thoroughly screens an average of 16 specimens and performs data collection for approximately 16 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of measured throughput.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "3712617f-900f-4280-a36a-0a9052c7124f",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C53",
+      "claim": "The screening microscope performs data collection for approximately 16 hr per day.",
+      "claim_type": "EXPLICIT",
+      "source": "Each day, our screening microscope thoroughly screens an average of 16 specimens and performs data collection for approximately 16 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of measured operation time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "f8e12bb9-16ad-40de-b7ab-0f26b964fcfa",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C54",
+      "claim": "Screening rates with beam-image shift were 1.0 holes per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening rates with and without beam-image shift (BIS) were 1.0 and 0.7 holes per minute, respectively (RANSAC regression).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "7b99fff7-84c4-4e1e-9e41-72c15aa33e83",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C55",
+      "claim": "Screening rates without beam-image shift were 0.7 holes per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening rates with and without beam-image shift (BIS) were 1.0 and 0.7 holes per minute, respectively (RANSAC regression).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "90c40313-562c-4cdf-b887-d316667453e8",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C56",
+      "claim": "The median data collection setup time, from specimen loading to the start of high-magnification acquisition, is 32 min with the K2 detector.",
+      "claim_type": "EXPLICIT",
+      "source": "The median data collection setup time, from specimen loading to the start of high-magnification acquisition, is 32 min with our K2 detector (Appendix 1\u2014table 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of measured setup time with reference to data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "167f1d38-2ff7-419e-ab3a-08daa66f2268",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C57",
+      "claim": "SmartScope was used to determine a 3.4 \u00c5 map of the 55 kDa homodimer accessory subunit of the human mitochondrial DNA polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, we used SmartScope to determine a 3.4 \u00c5 map of the 55 kDa homodimer accessory subunit of the human mitochondrial DNA polymerase (Young and Copeland, 2013) (EMD-25764, Figure 4, Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the structure determination with citation and EMD accession code.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "aa3a2472-b4f3-42a3-afde-1214ba1d90b5",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C58",
+      "claim": "4327 micrographs were collected for the POLG2 specimen.",
+      "claim_type": "EXPLICIT",
+      "source": "For this specimen, we collected 4327 micrographs and seamlessly tilted to 30\u00b0 for the last third of the dataset to improve the angular sampling of the protein (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the number of micrographs collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "c444eafc-3c55-4481-a5a6-13bede62e47c",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C59",
+      "claim": "The specimen was seamlessly tilted to 30\u00b0 for the last third of the POLG2 dataset to improve the angular sampling of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "For this specimen, we collected 4327 micrographs and seamlessly tilted to 30\u00b0 for the last third of the dataset to improve the angular sampling of the protein (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data collection strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "4d96dd6c-ada9-47e8-a01e-1761fa99de3b",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C60",
+      "claim": "SmartScope is the first package specifically designed to assist, document, and automate specimen evaluation during the process of optimizing samples for cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope is the first package specifically designed to assist, document, and automate specimen evaluation during the process of optimizing samples for cryo-EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct claim about SmartScope's uniqueness.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "c2fd5f6f-b43b-4a4f-ac63-1c83b14038da",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C61",
+      "claim": "The program delivers a unique user experience through a WebUI that provides live remote supervision and control of the screening process using a standard web browser.",
+      "claim_type": "EXPLICIT",
+      "source": "The program delivers a unique user experience through a WebUI that provides live remote supervision and control of the screening process using a standard web browser.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the user experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "7e7bccd2-cc01-4d57-938d-f4d2a1b98cf6",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C62",
+      "claim": "Multiple users can access the same live or stored session simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple users can access the same live or stored session simultaneously and multiple instruments can be controlled from the same server.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about multi-user access.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "be98591a-8913-4585-9e05-5a0111bd13c2",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C63",
+      "claim": "Multiple instruments can be controlled from the same SmartScope server.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple users can access the same live or stored session simultaneously and multiple instruments can be controlled from the same server.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about multi-instrument control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "01e81141-6112-4858-84da-bb41612196fb",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C64",
+      "claim": "Automated navigation routines provide control of the microscope without granting full access to functions that may compromise the integrity of the instrument.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated navigation routines provide control of the microscope without granting full access to functions that may compromise the integrity of the instrument.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the safety features of the navigation routines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "ab1373aa-eed9-4d0c-95ed-8632e094d45f",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C65",
+      "claim": "SmartScope uses fast and robust AI-driven feature recognition algorithms to fully automate the cryo-EM imaging workflow.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope uses fast and robust AI-driven feature recognition algorithms to fully automate the cryo-EM imaging workflow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the automation capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "6ff68735-ee8c-4dcf-b817-b3ae56de2b79",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C66",
+      "claim": "The steps of target identification, object classification, and clustering offer a powerful way to sample a wide variety of areas during screening.",
+      "claim_type": "EXPLICIT",
+      "source": "The steps of target identification, object classification, and clustering offer a powerful way to sample a wide variety of areas during screening and help determine the next steps in specimen optimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the utility of these steps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "83c05940-fd64-45c2-92dd-4b1755ef7409",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C67",
+      "claim": "SmartScope enables complete unsupervised execution of a screening workflow.",
+      "claim_type": "EXPLICIT",
+      "source": "This enables complete unsupervised execution of a screening workflow as well as supervised exploration with minimal user training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the automation capability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "db5a8735-cfa1-4c0f-a89d-8fb3696b4a09",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C68",
+      "claim": "SmartScope can collect data in a semi-supervised or fully automated way.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope can also collect data in a semi-supervised or fully automated way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about data collection modes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "709b543b-fcc4-49e6-a98d-6d837b27c785",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C69",
+      "claim": "The areas automatically selected by SmartScope can be modified interactively or programmatically without interrupting the process of data collection.",
+      "claim_type": "EXPLICIT",
+      "source": "The areas automatically selected by SmartScope can be modified interactively or programmatically without interrupting the process of data collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the flexibility of area selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "bf70aab7-e8f0-43de-8103-94fbf9b00448",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C70",
+      "claim": "SmartScope offers the possibility of integrating feedback from in-line data processing workflows to adaptively improve image quality during acquisition, without user intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "This maximizes the use of the microscope and offers the possibility of integrating feedback from in-line data processing workflows to adaptively improve image quality during acquisition, without user intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the potential for adaptive data collection.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "906e93d0-5281-4f49-8b03-9ec84578f55f",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C71",
+      "claim": "Unsupervised multi-specimen screening and short exploratory data collection sessions can be scheduled to run overnight.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsupervised multi-specimen screening and short exploratory data collection sessions can be scheduled to run overnight, offering new ways of using the microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about scheduling capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "10324ea1-e508-4f3d-b9b3-15a6dade301c",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C72",
+      "claim": "The interface to the microscope hardware in SmartScope is currently achieved through SerialEM.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface to the microscope hardware in SmartScope is currently achieved through SerialEM, which provides abstraction interfaces to the main microscope and detector manufacturers as well as being open source and well supported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the current implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "05323ccc-cb6c-49c5-9229-70f316c4d6f5",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C73",
+      "claim": "SerialEM provides abstraction interfaces to the main microscope and detector manufacturers.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface to the microscope hardware in SmartScope is currently achieved through SerialEM, which provides abstraction interfaces to the main microscope and detector manufacturers as well as being open source and well supported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about SerialEM's capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "5449e15b-8c10-41c8-94f3-6b26cbf7f39d",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C74",
+      "claim": "Interfaces to other software (e.g. Leginon, Digital Micrograph, SmartEPU) can be integrated with SmartScope in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the current integration is made so that interfaces to other software (e.g. Leginon, Digital Micrograph, SmartEPU) can also be integrated with SmartScope in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about future extensibility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "aa44a0a6-feee-4342-a2e3-b09990bd3dd9",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C75",
+      "claim": "SmartScope has a modular design where new object detection and classification algorithms can be added as plugins.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope has a modular design where new object detection and classification algorithms can be added as plugins, allowing integration of existing object detection, and area selection programs for cryo-EM (Fan et al., 2022; Kim et al., 2021; Rheinberger et al., 2021; Schorb et al., 2019; Xu et al., 2020; Yokoyama et al., 2020; Yonekura et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the modular design with citations to existing programs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "136b4cf1-c0c8-4fff-9e2a-6683028fc638",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C76",
+      "claim": "The ability to use multiple feature detection and clustering methods at different magnification levels enables the creation of customized protocols for specific applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the ability to use multiple feature detection and clustering methods at different magnification levels enables the creation of customized protocols for specific applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the flexibility of the system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "6cccc404-50e9-491f-80c0-0e2892840219",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C77",
+      "claim": "SmartScope provides flexibility to optimize the selection of areas on a wider variety of targets in cryo-EM, such as virions, filaments, and cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides flexibility to optimize the selection of areas on a wider variety of targets in cryo-EM, such as virions, filaments, and cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the applicability to different specimen types.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "2862e410-0107-46d1-9403-f1b2ebd48b1e",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C78",
+      "claim": "SmartScope has streamlined bookkeeping, which resulted in better decision making for specimen optimization.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope has proven to be an extremely valuable tool in our facility. It has streamlined bookkeeping, which in turn resulted in better decision making for specimen optimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the observed benefits in the authors' facility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "8ac41f9e-6e69-4bfb-bf75-139ca1fd0269",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C79",
+      "claim": "SmartScope has maximized microscope usage by eliminating idling time, reducing setup, and screening times.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also maximized microscope usage by eliminating idling time, reducing setup, and screening times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the observed benefits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "bbe86107-b5b5-45ff-9df5-40be5f120edb",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C80",
+      "claim": "SmartScope facilitates data and instrumentation access as well as collaboration by easing access to cryo-EM technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope facilitates data and instrumentation access as well as collaboration by easing access to cryo-EM technologies and improving the way cryo-EM experiments are carried out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the benefits of SmartScope.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "5e03cd33-8a39-4881-b9ab-7b77f2b4b881",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C81",
+      "claim": "All the data presented in this study was acquired on a Talos Arctica operating at 200 kV and equipped with a K2 direct-electron detector.",
+      "claim_type": "EXPLICIT",
+      "source": "All the data presented in this study was acquired on a Talos Arctica (Thermo Fisher Scientific) operating at 200 kV and equipped with a K2 direct-electron detector (Gatan Inc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data acquisition hardware.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "79ae0c78-b02e-4553-8525-d091dd78d996",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C82",
+      "claim": "SmartScope was also tested on a Ceta CMOS detector and a Titan Krios equipped with a K3 detector and BioQuantum energy filter.",
+      "claim_type": "EXPLICIT",
+      "source": "SmartScope was also tested on a Ceta CMOS detector and a Titan Krios (Thermo Fisher Scientific) equipped with a K3 detector and BioQuantum energy filter (Gatan Inc).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about additional testing hardware.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "7cea6c76-fa66-4f81-97d4-9645dcfe3ad5",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C83",
+      "claim": "SmartScope uses SerialEM 4.0 through the python API library for microscope and detector control.",
+      "claim_type": "EXPLICIT",
+      "source": "For microscope and detector control, SmartScope uses SerialEM 4.0 through the python API library (Mastronarde, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the control software with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "a806bc96-bd6b-4ae2-a466-20ac3b46ad65",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C84",
+      "claim": "A Faster R-CNN-based framework that uses a ResNet50 architecture as the feature extraction backbone was adopted to localize and classify square windows.",
+      "claim_type": "EXPLICIT",
+      "source": "To localize and classify square windows, a Faster R-CNN-based framework (Girshick, 2015) that uses a ResNet50 architecture as the feature extraction backbone was adopted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the square finder architecture with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "34c21343-b327-4812-8284-bf2b4a68a5f9",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C85",
+      "claim": "The square finder incorporates a feature pyramid network for identification of objects at different magnification levels.",
+      "claim_type": "EXPLICIT",
+      "source": "It incorporates a feature pyramid network for identification of objects at different magnification levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the square finder architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "ef7fef73-7192-45b5-9665-37807335a302",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C86",
+      "claim": "The bounding boxes for square detection were constrained to have aspect ratios within the 0.8\u20131.2 range.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, since most features have approximately equal width and height, the bounding boxes were constrained to have aspect ratios within the 0.8\u20131.2 range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of a constraint in the square finder.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "5a927e0b-d4e8-47d2-a28b-37d6a7386733",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C87",
+      "claim": "Data augmentation was applied to the training data for the square finder, including zoom-in/zoom-out, rotation, contrast adjustments, and flipping.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve robustness and stability of the model, data augmentation was applied to the training data, including zoom-in/zoom-out, rotation, contrast adjustments, and flipping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the training methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "fe57735c-8f8a-437d-97b9-a6ea7d42792e",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C88",
+      "claim": "Random oversampling was added during training to compensate for label imbalance.",
+      "claim_type": "EXPLICIT",
+      "source": "To compensate for label imbalance, random oversampling was added during training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the training methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "228a329d-ebe5-4baa-9f82-e3c5998b51a0",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C89",
+      "claim": "Squares are classified into six different classes: good, small, contaminated, cracked, fractioned, and broken.",
+      "claim_type": "EXPLICIT",
+      "source": "Squares are classified into six different classes: good (suitable for imaging), small (thick ice), contaminated, cracked, fractioned, and broken.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the classification categories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "2c9a3399-5b79-4f49-a85c-9f827111f298",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C90",
+      "claim": "The low-level magnification feature detector was trained using a total of 26 atlases from both carbon and gold mesh grids acquired on Ceta and K2 detectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The low-level magnification feature detector was trained using a total of 26 atlases from both carbon and gold mesh grids acquired on Ceta (Thermo Fisher Scientific) and K2 (Gatan Inc) detectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the training dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "eb30818f-4c0c-4a8b-93ca-91d88d2fa3cc",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C91",
+      "claim": "Training the square detector takes around 2 hr when running on a NVIDIA TITAN V GPU card with 32 GB of RAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Training the detector takes around 2 hr when running on a NVIDIA TITAN V GPU card with 32 GB of RAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about training time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "1b4f87cc-9c90-4c7e-b386-1b7a77525179",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C92",
+      "claim": "The pre-trained square detector weights can evaluate each atlas image in under a second.",
+      "claim_type": "EXPLICIT",
+      "source": "The pre-trained weights are then used for fast real-time square detection during screening, which can evaluate each atlas image in under a second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about inference speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "b930cdc4-8eba-45c6-82c1-fd30447592bc",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C93",
+      "claim": "A deep neural-network architecture based on the YOLOv5 model was adopted to identify holes.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify holes in all grid types and contrast levels, a deep neural-network architecture based on the YOLOv5 model was adopted (Jocher et al., 2020; Redmon et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the hole finder architecture with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "4442cec1-80bf-4303-a929-da052ad0300d",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C94",
+      "claim": "The hole finder uses the Cross Stage Partial Network (CSPNet) as the feature extraction backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Cross Stage Partial Network (CSPNet) (Wang et al., 2019) as the feature extraction backbone and standard convolutional layers as detection layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the hole finder architecture with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "1f5d3f99-970f-4b12-9397-b468a312a418",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C95",
+      "claim": "The aspect ratios of the bounding boxes for hole detection were constrained because holes have circular shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since holes have circular shapes, the aspect ratios of the bounding boxes were also constrained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of a constraint in the hole finder.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "98faa89c-6df9-43cc-bee9-dc10d7754529",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C96",
+      "claim": "Clustering algorithms were applied to the ground truth boxes from the training dataset to determine the anchor bounding box sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "To further facilitate training, instead of using arbitrary numbers for anchor bounding boxes generation, clustering algorithms to the ground truth boxes from the training dataset were applied to find the most common occurring sizes and we used these sizes to determine the anchor bounding box sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the training methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "bcf4f3df-c601-4b01-9413-c2c1cddd94e4",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C97",
+      "claim": "An additional 'contaminants' class is used to filter out small contamination areas that can be incorrectly detected as holes.",
+      "claim_type": "EXPLICIT",
+      "source": "To deal with small contamination areas that can be incorrectly detected as holes, an additional 'contaminants' class is used to filter out such areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the classification approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "81934475-7a69-4de8-a60f-dcf2271e5895",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C98",
+      "claim": "Training of the hole finder was done using 36 square images acquired on Ceta and K2 detectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Training of the hole finder was done using 36 square images acquired on Ceta (Thermo Fisher Scientic) and K2 (Gatan Inc) detectors and took 1.5 hr when running on a NVIDIA TITAN V GPU card with 32 GB of RAM and inference takes less than a second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the training dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "1a0da353-f549-46eb-9539-6db7eebfbc32",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C99",
+      "claim": "Training of the hole finder took 1.5 hr when running on a NVIDIA TITAN V GPU card with 32 GB of RAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Training of the hole finder was done using 36 square images acquired on Ceta (Thermo Fisher Scientic) and K2 (Gatan Inc) detectors and took 1.5 hr when running on a NVIDIA TITAN V GPU card with 32 GB of RAM and inference takes less than a second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about training time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "25c991ea-60ab-43d7-bd09-92aafd89d30c",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C100",
+      "claim": "Inference for the hole finder takes less than a second.",
+      "claim_type": "EXPLICIT",
+      "source": "Training of the hole finder was done using 36 square images acquired on Ceta (Thermo Fisher Scientic) and K2 (Gatan Inc) detectors and took 1.5 hr when running on a NVIDIA TITAN V GPU card with 32 GB of RAM and inference takes less than a second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about inference speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "3d12eb50-0edb-44ca-9e93-60644b60d1dd",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C101",
+      "claim": "Each square was resized to 1280 \u00d7 1280 pixels for memory efficiency in hole detection.",
+      "claim_type": "EXPLICIT",
+      "source": "For memory efficiency, each square was resized to 1280 \u00d7 1280 pixels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the image preprocessing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "e47921d8-a3ef-4366-9fae-7616e0ad90d4",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C102",
+      "claim": "POLG2 protein was expressed and purified essentially as described by Young et al., 2015 with the exception that Triton-X was removed from all steps following lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein was expressed and purified essentially as described (Young et al., 2015) with the following exception: Triton-X was removed from all steps following lysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the purification protocol with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "9b497930-c082-403b-b820-e56f99f94835",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C103",
+      "claim": "Peak fractions of POLG2 were eluted around 310 mM NaCl from the monoS column.",
+      "claim_type": "EXPLICIT",
+      "source": "Peak fractions were eluted around 310 mM NaCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the purification conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "c0ff59b9-a2b1-4d8e-b5e1-2c927aade93e",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C104",
+      "claim": "POLG2 protein was concentrated to 28 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Fractions were checked for purity, combined, and concentrated using an Amicon concentrator (Millipore) to 28 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the protein concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "737fac2f-1c86-41f1-b42f-1bf1dba88ed2",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C105",
+      "claim": "4.1 \u00b5M (monomer) his-tag POLG2 was incubated in a 1:1 molar ratio with FORK1 DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "4.1 \u00b5M (monomer) his-tag POLG2 was incubated in a 1:1 molar ratio with FORK1 DNA as previously described (6)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the sample preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "f5de97f0-453d-42c0-9c60-9b49b6ffc01f",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C106",
+      "claim": "UltraAUfoil R1.2/3 grids were glow-discharged on both sides for 30 s at 15 mA using a Pelco Easiglow.",
+      "claim_type": "EXPLICIT",
+      "source": "UltraAUfoil R1.2/3 (Quantifoil Micro Tools GmbH) grids were glow-discharged on both sides for 30 s at 15 mA using a Pelco Easiglow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the grid preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "6efd7880-43c3-49c7-b1b7-69506f16a295",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C107",
+      "claim": "3 \u00b5L of POLG2 sample was deposited on front side of the grid.",
+      "claim_type": "EXPLICIT",
+      "source": "3 \u00b5L of the final buffer was deposited on the back of the grid and 3 \u00b5L of POLG2 sample was deposited on front side of the grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the sample application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "32ac8d6c-867f-4837-a60e-f9aa3a82b8ff",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C108",
+      "claim": "Excess sample was blotted 4 s with blotting force \u20131, the chamber set at 12 \u00b0C and 95% humidity using a Vitrobot Mark IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Excess sample was blotted 4 s with blotting force \u20131, the chamber set at 12 \u00b0C and 95% humidity using a Vitrobot Mark IV (Thermo Fisher Scientific).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the vitrification conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "00c4d211-8c45-4d1d-a8d0-508078c723cc",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C109",
+      "claim": "A total of 4311 60-frame movies were collected at a 0.932 \u00c5/pixel and a total dose of 54 e-/\u00c52 for POLG2.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 4311 60-frame movies were collected at a 0.932 \u00c5/pixel and a total dose of 54 e-/\u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data collection parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "89cfa3da-3679-4cdc-9dad-d9bf24ef37cb",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C110",
+      "claim": "3029 movies were collected at 0\u00b0 tilt angle for POLG2.",
+      "claim_type": "EXPLICIT",
+      "source": "3029 movies were collected at 0\u00b0 tilt angle and 1282 movies were collected with 30\u00b0 tilt angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "ef903b47-93c4-44ff-b99f-232611776ef8",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C111",
+      "claim": "1282 movies were collected with 30\u00b0 tilt angle for POLG2.",
+      "claim_type": "EXPLICIT",
+      "source": "3029 movies were collected at 0\u00b0 tilt angle and 1282 movies were collected with 30\u00b0 tilt angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "cbccf428-7e1b-43aa-bddb-418b9a23178e",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C112",
+      "claim": "Data for POLG2 was collected at a rate of 120 movies per hour.",
+      "claim_type": "EXPLICIT",
+      "source": "Data was collected at a rate of 120 movies per hour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data collection rate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "1ff66f01-00fc-489c-9d87-d85bb1827efb",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C113",
+      "claim": "The POLG2 dataset was processed using cryoSPARC.",
+      "claim_type": "EXPLICIT",
+      "source": "The POLG2 dataset was processed using cryoSPARC (Punjani et al., 2017) as detailed in Figure 4\u2014figure supplement 1C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data processing with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "7595f4ad-1b52-454e-9f8a-6555559751b7",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C114",
+      "claim": "Final maps of POLG2 were sharpened using DeepEMhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Final maps were sharpened using DeepEMhancer (Sanchez-Garcia et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the map processing with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "8a8bc0c8-05d1-4071-96fd-394fffc906db",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C115",
+      "claim": "An atomic model from PDB ID: 2G4C was fit into the POLG2 map using Chimera.",
+      "claim_type": "EXPLICIT",
+      "source": "An atomic model from PDB ID: 2G4C (Fan et al., 2006) was fit into the map using Chimera (Pettersen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the model fitting with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "e2ae5bf0-5fa7-4698-b5c7-71e9612786fb",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C116",
+      "claim": "Cryo-EM density maps of POLG2 collected using SmartScope have been deposited in the Electron Microscopy Data Bank with accession code EMD-25764.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM density maps of POLG2 collected using SmartScope have been deposited in the Electron Microscopy Data Bank (EMDB) with accession code EMD-25764.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "36bd045b-f517-4732-9d62-cf0163ca3cc0",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C117",
+      "claim": "The source code for SmartScope is distributed under the open source BSD 3-clause license.",
+      "claim_type": "EXPLICIT",
+      "source": "The source code for SmartScope is distributed under the open source BSD 3-clause license available at https://github.com/NIEHS/SmartScope (copy archived at swh:1:rev:9e58e2a2b278ca65156390175d393819fbb16a3b, Bouvette et al., 2022a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the software license.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "57b041c6-8509-49db-b182-531d458cab6e",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C118",
+      "claim": "The combined POLG2 dataset yielded a 3.4 \u00c5 resolution map with masked FSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Map resolution (masked)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 for the combined dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "d54bc4e7-1b10-49a3-bc49-68013359508b",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C119",
+      "claim": "127,860 final particles were used for the combined POLG2 reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Final particles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 for the combined dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "1b7529f1-4756-4e8a-9027-0dac0e0547cf",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C120",
+      "claim": "C2 symmetry was imposed on the POLG2 reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Symmetry imposed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "e0467163-1e69-409b-8933-ef9f475a9204",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C121",
+      "claim": "The throughput for POLG2 data collection was 117.9 movies/hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughput (movies/hr)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "0dff436d-0b4b-45b0-a739-98ef85fb9886",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C122",
+      "claim": "The throughput in the last hour of POLG2 data collection was 130 movies.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughput last hour (movies)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "3fe6712b-882c-4b4a-93e3-100a9fa049a7",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C123",
+      "claim": "The setup time for POLG2 data collection was 60 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Setup time* (min)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "2ca8f906-36ff-4836-89e0-3d7206fd306b",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C124",
+      "claim": "The no-tilt POLG2 dataset yielded a 3.5 \u00c5 resolution map with masked FSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Map resolution (masked)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 for the no tilt dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "7f855623-59b8-49f5-b805-50f2f1218d67",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C125",
+      "claim": "The 30\u00b0 tilted POLG2 dataset yielded a 3.9 \u00c5 resolution map with masked FSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Map resolution (masked)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 for the tilted dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "b2026db6-604d-4561-954d-c8292fbe8bdd",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C126",
+      "claim": "99,189 particles (78%) from the no-tilt dataset were used in the final POLG2 reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Final particles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 for the no tilt dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "4833be41-1673-4e10-ab18-af39e73cc70d",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C127",
+      "claim": "28,641 particles (22%) from the tilted dataset were used in the final POLG2 reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Final particles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 for the tilted dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "1588e29d-057d-4310-9015-0e9f87bf3d3d",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C128",
+      "claim": "The defocus range for the no-tilt POLG2 dataset was 1.2\u20131.8 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Defocus range (\u00b5m)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 for the no tilt dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "f34599a8-ca97-454b-abf9-f27be9962010",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C129",
+      "claim": "The defocus range for the tilted POLG2 dataset was 1.4\u20131.6 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Defocus range (\u00b5m)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1 for the tilted dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "89479f0a-7eb2-4d7d-9e1b-af089583aa74",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C130",
+      "claim": "The POLG2 data was collected at 45,000 magnification.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnification",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "9ed0b730-7bfc-436f-9358-d014189e1f70",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C131",
+      "claim": "The POLG2 data was collected at 200 kV.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage (kV)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "6df7fb70-acb4-4e73-88e8-d729c488300d",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C132",
+      "claim": "The electron exposure for POLG2 data collection was 50 e-/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron exposure (e-/\u00c52)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "726f0ff8-12ac-438f-9de5-8eeb15b590d2",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C133",
+      "claim": "The pixel size for POLG2 data collection was 0.932 \u00c5/pixel.",
+      "claim_type": "EXPLICIT",
+      "source": "Pixel size (\u00c5/pixel)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "a73dc08b-78c0-41d5-828b-b90fd0fe0fd9",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C134",
+      "claim": "The FSC threshold used for resolution determination was 0.143.",
+      "claim_type": "EXPLICIT",
+      "source": "FSC threshold",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "d8fca30f-ad9e-4571-8735-59559c0dbf94",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C135",
+      "claim": "The square finder framework is implemented using the python library Detectron2.",
+      "claim_type": "EXPLICIT",
+      "source": "The framework is implemented using the python library Detectron2 (Wu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the implementation with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "f5f360f4-36e7-461d-bf03-05a6b0626632",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C136",
+      "claim": "The original atlases were downsampled to 2048 \u00d7 2048 pixels to reduce memory requirements for square detection.",
+      "claim_type": "EXPLICIT",
+      "source": "The original atlases, usually having widths and heights greater than 10,000 pixels were downsampled to 2048 \u00d7 2048 pixels to reduce memory requirements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the preprocessing step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "6ee9930d-c28a-4479-8db2-84afdd9ab53f",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "claim_id": "C137",
+      "claim": "Data augmentation for the square finder included contrast/brightness adjustment, rotation/translation, zoom-in/zoom-out, and cropping.",
+      "claim_type": "EXPLICIT",
+      "source": "Data augmentation was applied during training, including contrast/brightness adjustment, rotation/translation, zoom-in/zoom-out, and cropping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the data augmentation for the hole finder.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1551ac4d-e63b-45f8-af80-2cca50a7a135",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SmartScope is presented as the first framework to streamline, standardize, and automate specimen evaluation in cryo-EM using deep learning-based object detection for fully automated screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the technical capabilities are demonstrated (C2, C3, C17), the claim of being 'first' (C1, C60) is not substantiated with systematic comparison to existing tools. The authors acknowledge Appion provides web-based offline access (C15) but dismiss it without detailed comparison. The novelty claim requires more rigorous benchmarking against existing automation software.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "25db08a4-3bf4-4e0f-a947-f34bb37cf0ef",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SmartScope provides a web-based interface for real-time remote control and monitoring of the microscope, supporting simultaneous multi-user access and multi-instrument control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The WebUI capabilities are clearly described (C4, C32, C61) with specific features documented (C19, C62, C63). The implementation details in Figure 1\u2014figure supplement 3 and the architectural description (C42-C45) provide technical support for these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "71445cc3-79a2-4a44-8e41-147ad98a9783",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SmartScope systematically documents results in a consistent data structure and enables manual annotations for model retraining, leading to improved performance and better decision-making for specimen optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the documentation capabilities are described (C30, C31, C33), the claim that manual annotations lead to 'improvements in performance' (C5) and 'better decision making' (C78) lacks quantitative evidence. No data showing performance improvements from retraining or comparative metrics for decision-making quality are provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A Faster R-CNN-based window detector with ResNet50 backbone and feature pyramid network achieves 80% precision in identifying 'good' windows across six classification categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The architecture is clearly described (C84, C85, C135) with specific design choices documented (C86, C87, C88). The training dataset (C90), computational requirements (C91, C92), and performance metric (C47) are explicitly stated. Figure 2A and Appendix 1\u2014table 3 provide visual and quantitative validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "fb907160-6bf3-434e-a166-91404832dc4a",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A YOLOv5-based hole detector with CSPNet backbone correctly identifies 89% of holes while filtering out contaminants through an additional classification step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The architecture (C93, C94), design constraints (C95, C96), contaminant filtering approach (C97), training details (C98, C99, C101), and performance metrics (C49, C100) are comprehensively documented. Figure 2B provides visual validation of the detector's performance on both gold and carbon grids.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "81b0104f-fc4b-4056-8ae4-8a7a546f09d5",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In screening mode, SmartScope achieves an average atlas acquisition time of 7.8 min covering \u226525% of grid surface, median specimen sampling time of 21 min yielding 9.0 high-magnification images from 3.0 windows, and throughput of 16 specimens per day with 16 hr of data collection. Screening rates are 1.0 holes/min with BIS and 0.7 holes/min without BIS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Performance metrics are explicitly stated with references to data tables (C50, C51, C52, C53) and supported by Figure 3 showing RANSAC regression analysis (C54, C55). The measurements appear to be from actual operational data, though sample sizes and statistical measures (e.g., standard deviations) are not fully reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "12381874-66b8-4311-ac68-7137e86eb8b9",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The median data collection setup time from specimen loading to start of high-magnification acquisition is 32 min with K2 detector (screening mode) and 60 min for POLG2 data collection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While specific times are stated (C56, C123), there's an apparent discrepancy between the 32 min median setup time cited for screening (C56) and the 60 min setup time for POLG2 (C123). The difference is not explained, and it's unclear whether these represent different operational modes or if there are confounding factors. More context is needed to reconcile these values.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "21a3ad17-5d87-401f-bab7-3278fb03acbc",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SmartScope was used to determine a 3.4 \u00c5 resolution structure of the 55 kDa POLG2 homodimer from 4327 micrographs (3029 at 0\u00b0 tilt, 1282 at 30\u00b0 tilt), yielding 127,860 final particles with C2 symmetry and achieving 117.9 movies/hr throughput.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structure determination is well-documented with comprehensive data collection parameters (C109-C112, C130-C133), processing statistics (C118-C120, C124-C127), and deposition information (C116, EMD-25764). The seamless tilt angle change (C59) demonstrates a key capability. Figure 4 and Table 1 provide detailed validation. The resolution and particle counts are consistent across claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "3f072223-fd07-4a39-81a8-2454272d1fc1",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SmartScope implements beam-image shift (BIS) for high-throughput multi-hole imaging with an optimization algorithm that maximizes target coverage while minimizing group numbers, and supports tilted specimen data collection with seamless tilt angle changes during acquisition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The BIS implementation is clearly described (C35) with algorithmic details (C37) and visual documentation in Figure 1\u2014figure supplement 2. The tilted specimen capability (C38) and dynamic tilt adjustment (C39) are demonstrated in the POLG2 dataset. The utility for exploratory data collection (C36) is supported by the screening performance data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "35e71d88-a80b-4f29-aec7-a60333126162",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SmartScope maximizes microscope efficiency through parallel processing of imaging and image analysis routines, eliminating idling time and reducing setup and screening times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The design goal (C40) and implementation approach (C41) are clearly stated and illustrated in Figure 1\u2014figure supplement 1. The observed benefits (C79) are supported by the performance metrics showing high throughput and minimal idle time. The asynchronous processing architecture is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "de139878-8e8f-4234-b066-13d29dc00f4f",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SmartScope's automated workflow handles specimen exchange, atlas acquisition, ROI identification/classification/selection, and TOI detection using DL-based hole finding that classifies holes by ice thickness and excludes unsuitable targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The workflow is comprehensively described (C20-C24) and illustrated in Figure 1A-C. The hole detection and classification methodology (C26-C28) is supported by the technical implementation details (C47-C49). The integration with SerialEM (C22) and workflow locking mechanism (C23) demonstrate practical implementation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "494c6e40-3443-4fc6-8f64-fa6e072f2f4a",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SmartScope's architecture bundles web server, database server, and core imaging workflow, with Docker-based deployment supporting multi-microscope installations and SerialEM 4.0 integration via Python API.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The system architecture is clearly documented (C42, C43) with deployment solution (C44) and multi-microscope support (C45) described. Figure 1\u2014figure supplement 3 provides architectural diagram. The SerialEM integration (C72, C73, C83) is well-specified with version information and appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "a3d07ece-ab98-4a41-b576-784b0b94f558",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SmartScope enables complete unsupervised or semi-supervised execution of screening and data collection workflows with safe automated navigation, interactive target modification during acquisition, and potential for adaptive feedback integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The automation capabilities (C65, C67, C68) and safety features (C64) are described, and interactive modification (C69) is demonstrated. However, the claim about 'adaptive feedback integration' (C70) is speculative without implementation or validation. The overnight scheduling capability (C71) is stated but not demonstrated with operational data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "d4061f78-31cc-47fe-989b-f052618274a2",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "SmartScope's modular design allows plugin-based integration of new algorithms for object detection and area selection, enabling customized protocols for diverse cryo-EM applications including virions, filaments, and cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The modular design (C18, C75) is described with appropriate citations to existing tools. However, the claims about applicability to diverse specimen types (C77) and customized protocols (C76) are largely speculative without demonstrated implementations or validation data for these alternative applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "91bf1b6a-a031-4412-9cd6-824158ff9aa0",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "POLG2 protein was purified, complexed with FORK1 DNA at 1:1 molar ratio, vitrified on glow-discharged UltraAUfoil grids, and processed using cryoSPARC with DeepEMhancer sharpening and model fitting from PDB 2G4C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sample preparation (C102-C108) and data processing (C113-C115) protocols are clearly described with appropriate citations. The methods are standard for the field and sufficiently detailed for reproduction. The processing workflow is illustrated in Figure 4\u2014figure supplement 1C.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "502597b2-a430-42f1-8849-f934bfd8b93a",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Manual cryo-EM specimen screening faces significant challenges including specimen optimization barriers, operator-dependent quality, time-consuming workflows with steep learning curves, and lack of existing software optimized for thorough grid sampling and web-based microscope control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The background claims about cryo-EM challenges are well-supported by appropriate citations (C6, C8, C9, C14, C15) and represent established knowledge in the field (C7, C10, C11, C13). The comparative assessment of existing software (C14, C16) is supported by citations, though more detailed benchmarking would strengthen the argument.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "f9d6d79d-38b8-41d9-9f4f-6f714efe5332",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "SmartScope facilitates collaboration and improves cryo-EM experimental workflows by providing valuable specimen information at intermediate resolutions and easing access to cryo-EM technologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the utility of intermediate resolution images is stated (C29), the broader claims about facilitating collaboration and improving workflows (C80) are largely qualitative assertions without quantitative validation or comparative studies demonstrating these benefits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    },
+    {
+      "id": "78254feb-9529-4c09-a1cc-03ead18a42be",
+      "content_id": "e8f913b3-524a-43f9-980e-5984218bb567",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "All data was acquired on Talos Arctica with K2 detector, with additional testing on Ceta detector and Titan Krios with K3/BioQuantum. Data and code are openly available with appropriate accession codes and licensing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The hardware specifications (C81, C82) and data availability (C116, C117) are clearly stated with specific model numbers and accession codes. The open-source distribution under BSD 3-clause license demonstrates commitment to reproducibility and community access.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:11:47.911366Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dac8c3f1-c3fe-466d-9274-1480e61e0d5f",
+      "result_id": "1551ac4d-e63b-45f8-af80-2cca50a7a135"
+    },
+    {
+      "claim_id": "9e0fd2b7-26b0-4914-977a-b4beb5240f6a",
+      "result_id": "1551ac4d-e63b-45f8-af80-2cca50a7a135"
+    },
+    {
+      "claim_id": "5a4b34e8-415a-41df-890b-d310af82c189",
+      "result_id": "1551ac4d-e63b-45f8-af80-2cca50a7a135"
+    },
+    {
+      "claim_id": "e5473504-5cd6-4fb9-bd75-005b7f177a9e",
+      "result_id": "1551ac4d-e63b-45f8-af80-2cca50a7a135"
+    },
+    {
+      "claim_id": "4d96dd6c-ada9-47e8-a01e-1761fa99de3b",
+      "result_id": "1551ac4d-e63b-45f8-af80-2cca50a7a135"
+    },
+    {
+      "claim_id": "36f90253-6a52-4989-949b-a027376fdadf",
+      "result_id": "25db08a4-3bf4-4e0f-a947-f34bb37cf0ef"
+    },
+    {
+      "claim_id": "d56a8005-6495-464e-9af5-c9f5344a1649",
+      "result_id": "25db08a4-3bf4-4e0f-a947-f34bb37cf0ef"
+    },
+    {
+      "claim_id": "ddf942e7-8308-4780-8102-c354c632e237",
+      "result_id": "25db08a4-3bf4-4e0f-a947-f34bb37cf0ef"
+    },
+    {
+      "claim_id": "c2fd5f6f-b43b-4a4f-ac63-1c83b14038da",
+      "result_id": "25db08a4-3bf4-4e0f-a947-f34bb37cf0ef"
+    },
+    {
+      "claim_id": "7e7bccd2-cc01-4d57-938d-f4d2a1b98cf6",
+      "result_id": "25db08a4-3bf4-4e0f-a947-f34bb37cf0ef"
+    },
+    {
+      "claim_id": "be98591a-8913-4585-9e05-5a0111bd13c2",
+      "result_id": "25db08a4-3bf4-4e0f-a947-f34bb37cf0ef"
+    },
+    {
+      "claim_id": "a768f417-0b04-4a1d-9aaf-2666ff41ad93",
+      "result_id": "71445cc3-79a2-4a44-8e41-147ad98a9783"
+    },
+    {
+      "claim_id": "3b28d99f-49e7-49a6-9386-cf401d563af6",
+      "result_id": "71445cc3-79a2-4a44-8e41-147ad98a9783"
+    },
+    {
+      "claim_id": "ddcc5eb4-110c-4398-aff8-cd204154c4b7",
+      "result_id": "71445cc3-79a2-4a44-8e41-147ad98a9783"
+    },
+    {
+      "claim_id": "88c7ff1b-ca7f-498b-8e2f-ff4f34ccb715",
+      "result_id": "71445cc3-79a2-4a44-8e41-147ad98a9783"
+    },
+    {
+      "claim_id": "2862e410-0107-46d1-9403-f1b2ebd48b1e",
+      "result_id": "71445cc3-79a2-4a44-8e41-147ad98a9783"
+    },
+    {
+      "claim_id": "d8e2b894-8cc7-44af-bf62-152404c4b007",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "a806bc96-bd6b-4ae2-a466-20ac3b46ad65",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "34c21343-b327-4812-8284-bf2b4a68a5f9",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "ef7fef73-7192-45b5-9665-37807335a302",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "5a927e0b-d4e8-47d2-a28b-37d6a7386733",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "fe57735c-8f8a-437d-97b9-a6ea7d42792e",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "228a329d-ebe5-4baa-9f82-e3c5998b51a0",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "2c9a3399-5b79-4f49-a85c-9f827111f298",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "eb30818f-4c0c-4a8b-93ca-91d88d2fa3cc",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "1b4f87cc-9c90-4c7e-b386-1b7a77525179",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "d8fca30f-ad9e-4571-8735-59559c0dbf94",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "f5f360f4-36e7-461d-bf03-05a6b0626632",
+      "result_id": "d5298a69-2c77-4552-ace5-6bb7c4fbe578"
+    },
+    {
+      "claim_id": "f60a8d22-18d5-4797-a182-58e0559ba520",
+      "result_id": "fb907160-6bf3-434e-a166-91404832dc4a"
+    },
+    {
+      "claim_id": "0e464862-994a-482d-a46b-1d1a9fbe51be",
+      "result_id": "fb907160-6bf3-434e-a166-91404832dc4a"
+    },
+    {
+      "claim_id": "b930cdc4-8eba-45c6-82c1-fd30447592bc",
+      "result_id": "fb907160-6bf3-434e-a166-91404832dc4a"
+    },
+    {
+      "claim_id": "4442cec1-80bf-4303-a929-da052ad0300d",
+      "result_id": "fb907160-6bf3-434e-a166-91404832dc4a"
+    },
+    {
+      "claim_id": "1f5d3f99-970f-4b12-9397-b468a312a418",
+      "result_id": "fb907160-6bf3-434e-a166-91404832dc4a"
+    },
+    {
+      "claim_id": "98faa89c-6df9-43cc-bee9-dc10d7754529",
+      "result_id": "fb907160-6bf3-434e-a166-91404832dc4a"
+    },
+    {
+      "claim_id": "bcf4f3df-c601-4b01-9413-c2c1cddd94e4",
+      "result_id": "fb907160-6bf3-434e-a166-91404832dc4a"
+    },
+    {
+      "claim_id": "81934475-7a69-4de8-a60f-dcf2271e5895",
+      "result_id": "fb907160-6bf3-434e-a166-91404832dc4a"
+    },
+    {
+      "claim_id": "1a0da353-f549-46eb-9539-6db7eebfbc32",
+      "result_id": "fb907160-6bf3-434e-a166-91404832dc4a"
+    },
+    {
+      "claim_id": "25c991ea-60ab-43d7-bd09-92aafd89d30c",
+      "result_id": "fb907160-6bf3-434e-a166-91404832dc4a"
+    },
+    {
+      "claim_id": "3d12eb50-0edb-44ca-9e93-60644b60d1dd",
+      "result_id": "fb907160-6bf3-434e-a166-91404832dc4a"
+    },
+    {
+      "claim_id": "74c712c9-e49a-4e2c-9ce3-71e16c037bf1",
+      "result_id": "81b0104f-fc4b-4056-8ae4-8a7a546f09d5"
+    },
+    {
+      "claim_id": "7c183cfb-9be6-4612-8520-a43b41b94bee",
+      "result_id": "81b0104f-fc4b-4056-8ae4-8a7a546f09d5"
+    },
+    {
+      "claim_id": "58149733-1cbc-432f-9f87-37958e1ce273",
+      "result_id": "81b0104f-fc4b-4056-8ae4-8a7a546f09d5"
+    },
+    {
+      "claim_id": "3712617f-900f-4280-a36a-0a9052c7124f",
+      "result_id": "81b0104f-fc4b-4056-8ae4-8a7a546f09d5"
+    },
+    {
+      "claim_id": "f8e12bb9-16ad-40de-b7ab-0f26b964fcfa",
+      "result_id": "81b0104f-fc4b-4056-8ae4-8a7a546f09d5"
+    },
+    {
+      "claim_id": "7b99fff7-84c4-4e1e-9e41-72c15aa33e83",
+      "result_id": "81b0104f-fc4b-4056-8ae4-8a7a546f09d5"
+    },
+    {
+      "claim_id": "90c40313-562c-4cdf-b887-d316667453e8",
+      "result_id": "12381874-66b8-4311-ac68-7137e86eb8b9"
+    },
+    {
+      "claim_id": "3fe6712b-882c-4b4a-93e3-100a9fa049a7",
+      "result_id": "12381874-66b8-4311-ac68-7137e86eb8b9"
+    },
+    {
+      "claim_id": "167f1d38-2ff7-419e-ab3a-08daa66f2268",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "aa3a2472-b4f3-42a3-afde-1214ba1d90b5",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "c444eafc-3c55-4481-a5a6-13bede62e47c",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "00c4d211-8c45-4d1d-a8d0-508078c723cc",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "89cfa3da-3679-4cdc-9dad-d9bf24ef37cb",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "ef903b47-93c4-44ff-b99f-232611776ef8",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "cbccf428-7e1b-43aa-bddb-418b9a23178e",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "57b041c6-8509-49db-b182-531d458cab6e",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "d54bc4e7-1b10-49a3-bc49-68013359508b",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "1b7529f1-4756-4e8a-9027-0dac0e0547cf",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "e0467163-1e69-409b-8933-ef9f475a9204",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "0dff436d-0b4b-45b0-a739-98ef85fb9886",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "2ca8f906-36ff-4836-89e0-3d7206fd306b",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "7f855623-59b8-49f5-b805-50f2f1218d67",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "b2026db6-604d-4561-954d-c8292fbe8bdd",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "4833be41-1673-4e10-ab18-af39e73cc70d",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "1588e29d-057d-4310-9015-0e9f87bf3d3d",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "f34599a8-ca97-454b-abf9-f27be9962010",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "89479f0a-7eb2-4d7d-9e1b-af089583aa74",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "9ed0b730-7bfc-436f-9358-d014189e1f70",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "6df7fb70-acb4-4e73-88e8-d729c488300d",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "726f0ff8-12ac-438f-9de5-8eeb15b590d2",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "a73dc08b-78c0-41d5-828b-b90fd0fe0fd9",
+      "result_id": "21a3ad17-5d87-401f-bab7-3278fb03acbc"
+    },
+    {
+      "claim_id": "2d973c18-8319-41d3-9ec7-042045d05a29",
+      "result_id": "3f072223-fd07-4a39-81a8-2454272d1fc1"
+    },
+    {
+      "claim_id": "f1dee4d1-ab18-4020-92d7-e51184c57772",
+      "result_id": "3f072223-fd07-4a39-81a8-2454272d1fc1"
+    },
+    {
+      "claim_id": "10116f26-cfc0-446a-a5bb-99a7cf2703ce",
+      "result_id": "3f072223-fd07-4a39-81a8-2454272d1fc1"
+    },
+    {
+      "claim_id": "19886071-9d49-4658-ac40-7f043041227e",
+      "result_id": "3f072223-fd07-4a39-81a8-2454272d1fc1"
+    },
+    {
+      "claim_id": "42eb654c-65ba-40e8-8a77-e35aa72c4485",
+      "result_id": "3f072223-fd07-4a39-81a8-2454272d1fc1"
+    },
+    {
+      "claim_id": "770df9b5-db35-49ee-abb5-c8deedd237fd",
+      "result_id": "3f072223-fd07-4a39-81a8-2454272d1fc1"
+    },
+    {
+      "claim_id": "1adb2390-732b-47c5-8cb7-f886aeb16d43",
+      "result_id": "35e71d88-a80b-4f29-aec7-a60333126162"
+    },
+    {
+      "claim_id": "3aafd1cb-9cfc-4414-a1a2-3b6c009dab0c",
+      "result_id": "35e71d88-a80b-4f29-aec7-a60333126162"
+    },
+    {
+      "claim_id": "8ac41f9e-6e69-4bfb-bf75-139ca1fd0269",
+      "result_id": "35e71d88-a80b-4f29-aec7-a60333126162"
+    },
+    {
+      "claim_id": "44d36ed7-8c46-45be-8963-2d23d3824e59",
+      "result_id": "de139878-8e8f-4234-b066-13d29dc00f4f"
+    },
+    {
+      "claim_id": "83f3c4e3-70b4-426f-b4cf-bbd51c64be26",
+      "result_id": "de139878-8e8f-4234-b066-13d29dc00f4f"
+    },
+    {
+      "claim_id": "261c7163-7d56-4b5a-a759-fbb5743e0c54",
+      "result_id": "de139878-8e8f-4234-b066-13d29dc00f4f"
+    },
+    {
+      "claim_id": "b11ef257-0cf4-4c27-9081-396a31e4433c",
+      "result_id": "de139878-8e8f-4234-b066-13d29dc00f4f"
+    },
+    {
+      "claim_id": "621b6fbc-8627-42b4-91f6-efbc690e311d",
+      "result_id": "de139878-8e8f-4234-b066-13d29dc00f4f"
+    },
+    {
+      "claim_id": "b91c1d36-78b8-4a4b-940b-7f41ff2d3115",
+      "result_id": "de139878-8e8f-4234-b066-13d29dc00f4f"
+    },
+    {
+      "claim_id": "3aeb347d-c350-4b9c-b6e8-2bf17181a605",
+      "result_id": "de139878-8e8f-4234-b066-13d29dc00f4f"
+    },
+    {
+      "claim_id": "ece22273-5889-4584-8f25-0b4403dea89d",
+      "result_id": "de139878-8e8f-4234-b066-13d29dc00f4f"
+    },
+    {
+      "claim_id": "411e745c-ee9e-49a6-a5a7-0a883374e5b2",
+      "result_id": "de139878-8e8f-4234-b066-13d29dc00f4f"
+    },
+    {
+      "claim_id": "2899e86e-b656-4ba1-bb44-e9d6e16b370f",
+      "result_id": "494c6e40-3443-4fc6-8f64-fa6e072f2f4a"
+    },
+    {
+      "claim_id": "efda62f3-a780-46ca-88fb-6446309a7dcb",
+      "result_id": "494c6e40-3443-4fc6-8f64-fa6e072f2f4a"
+    },
+    {
+      "claim_id": "d51ce8b2-3646-4061-a2b6-66d64ab82e66",
+      "result_id": "494c6e40-3443-4fc6-8f64-fa6e072f2f4a"
+    },
+    {
+      "claim_id": "654e43c5-7765-413b-b94c-1cc35a09168b",
+      "result_id": "494c6e40-3443-4fc6-8f64-fa6e072f2f4a"
+    },
+    {
+      "claim_id": "10324ea1-e508-4f3d-b9b3-15a6dade301c",
+      "result_id": "494c6e40-3443-4fc6-8f64-fa6e072f2f4a"
+    },
+    {
+      "claim_id": "05323ccc-cb6c-49c5-9229-70f316c4d6f5",
+      "result_id": "494c6e40-3443-4fc6-8f64-fa6e072f2f4a"
+    },
+    {
+      "claim_id": "7cea6c76-fa66-4f81-97d4-9645dcfe3ad5",
+      "result_id": "494c6e40-3443-4fc6-8f64-fa6e072f2f4a"
+    },
+    {
+      "claim_id": "01e81141-6112-4858-84da-bb41612196fb",
+      "result_id": "a3d07ece-ab98-4a41-b576-784b0b94f558"
+    },
+    {
+      "claim_id": "ab1373aa-eed9-4d0c-95ed-8632e094d45f",
+      "result_id": "a3d07ece-ab98-4a41-b576-784b0b94f558"
+    },
+    {
+      "claim_id": "6ff68735-ee8c-4dcf-b817-b3ae56de2b79",
+      "result_id": "a3d07ece-ab98-4a41-b576-784b0b94f558"
+    },
+    {
+      "claim_id": "83c05940-fd64-45c2-92dd-4b1755ef7409",
+      "result_id": "a3d07ece-ab98-4a41-b576-784b0b94f558"
+    },
+    {
+      "claim_id": "db5a8735-cfa1-4c0f-a89d-8fb3696b4a09",
+      "result_id": "a3d07ece-ab98-4a41-b576-784b0b94f558"
+    },
+    {
+      "claim_id": "709b543b-fcc4-49e6-a98d-6d837b27c785",
+      "result_id": "a3d07ece-ab98-4a41-b576-784b0b94f558"
+    },
+    {
+      "claim_id": "bf70aab7-e8f0-43de-8103-94fbf9b00448",
+      "result_id": "a3d07ece-ab98-4a41-b576-784b0b94f558"
+    },
+    {
+      "claim_id": "906e93d0-5281-4f49-8b03-9ec84578f55f",
+      "result_id": "a3d07ece-ab98-4a41-b576-784b0b94f558"
+    },
+    {
+      "claim_id": "f2d51f5f-9c7d-40f0-8a13-3ad328eb5eef",
+      "result_id": "d4061f78-31cc-47fe-989b-f052618274a2"
+    },
+    {
+      "claim_id": "5449e15b-8c10-41c8-94f3-6b26cbf7f39d",
+      "result_id": "d4061f78-31cc-47fe-989b-f052618274a2"
+    },
+    {
+      "claim_id": "aa44a0a6-feee-4342-a2e3-b09990bd3dd9",
+      "result_id": "d4061f78-31cc-47fe-989b-f052618274a2"
+    },
+    {
+      "claim_id": "136b4cf1-c0c8-4fff-9e2a-6683028fc638",
+      "result_id": "d4061f78-31cc-47fe-989b-f052618274a2"
+    },
+    {
+      "claim_id": "6cccc404-50e9-491f-80c0-0e2892840219",
+      "result_id": "d4061f78-31cc-47fe-989b-f052618274a2"
+    },
+    {
+      "claim_id": "e47921d8-a3ef-4366-9fae-7616e0ad90d4",
+      "result_id": "91bf1b6a-a031-4412-9cd6-824158ff9aa0"
+    },
+    {
+      "claim_id": "9b497930-c082-403b-b820-e56f99f94835",
+      "result_id": "91bf1b6a-a031-4412-9cd6-824158ff9aa0"
+    },
+    {
+      "claim_id": "c0ff59b9-a2b1-4d8e-b5e1-2c927aade93e",
+      "result_id": "91bf1b6a-a031-4412-9cd6-824158ff9aa0"
+    },
+    {
+      "claim_id": "737fac2f-1c86-41f1-b42f-1bf1dba88ed2",
+      "result_id": "91bf1b6a-a031-4412-9cd6-824158ff9aa0"
+    },
+    {
+      "claim_id": "f5de97f0-453d-42c0-9c60-9b49b6ffc01f",
+      "result_id": "91bf1b6a-a031-4412-9cd6-824158ff9aa0"
+    },
+    {
+      "claim_id": "6efd7880-43c3-49c7-b1b7-69506f16a295",
+      "result_id": "91bf1b6a-a031-4412-9cd6-824158ff9aa0"
+    },
+    {
+      "claim_id": "32ac8d6c-867f-4837-a60e-f9aa3a82b8ff",
+      "result_id": "91bf1b6a-a031-4412-9cd6-824158ff9aa0"
+    },
+    {
+      "claim_id": "1ff66f01-00fc-489c-9d87-d85bb1827efb",
+      "result_id": "91bf1b6a-a031-4412-9cd6-824158ff9aa0"
+    },
+    {
+      "claim_id": "7595f4ad-1b52-454e-9f8a-6555559751b7",
+      "result_id": "91bf1b6a-a031-4412-9cd6-824158ff9aa0"
+    },
+    {
+      "claim_id": "8a8bc0c8-05d1-4071-96fd-394fffc906db",
+      "result_id": "91bf1b6a-a031-4412-9cd6-824158ff9aa0"
+    },
+    {
+      "claim_id": "6c4770a3-a715-4d9a-91fd-88369667ca86",
+      "result_id": "502597b2-a430-42f1-8849-f934bfd8b93a"
+    },
+    {
+      "claim_id": "275e5ec9-7f4b-45e0-84df-d90a96d46b9d",
+      "result_id": "502597b2-a430-42f1-8849-f934bfd8b93a"
+    },
+    {
+      "claim_id": "9fde311c-2652-404c-a0c9-75fb998128e3",
+      "result_id": "502597b2-a430-42f1-8849-f934bfd8b93a"
+    },
+    {
+      "claim_id": "cf64b93d-1629-4be3-b7e4-aab7682e3ac0",
+      "result_id": "502597b2-a430-42f1-8849-f934bfd8b93a"
+    },
+    {
+      "claim_id": "7f5e44a9-4d47-4ac8-8f17-46ef7ef22437",
+      "result_id": "502597b2-a430-42f1-8849-f934bfd8b93a"
+    },
+    {
+      "claim_id": "73fed774-118b-4897-9efd-eaccafd60694",
+      "result_id": "502597b2-a430-42f1-8849-f934bfd8b93a"
+    },
+    {
+      "claim_id": "b016f814-44c3-41de-b745-fda36cc594f6",
+      "result_id": "502597b2-a430-42f1-8849-f934bfd8b93a"
+    },
+    {
+      "claim_id": "0f653d42-8801-486a-8111-ef1c12e089f5",
+      "result_id": "502597b2-a430-42f1-8849-f934bfd8b93a"
+    },
+    {
+      "claim_id": "5e7cc992-1a9f-4cf4-9c7a-517726e2c8ac",
+      "result_id": "502597b2-a430-42f1-8849-f934bfd8b93a"
+    },
+    {
+      "claim_id": "4ee83f44-ef72-40ae-a67a-01ad75965d94",
+      "result_id": "502597b2-a430-42f1-8849-f934bfd8b93a"
+    },
+    {
+      "claim_id": "eff14a11-501b-48b9-a5d2-6463a6e8795a",
+      "result_id": "502597b2-a430-42f1-8849-f934bfd8b93a"
+    },
+    {
+      "claim_id": "bd7ddda6-2658-4a1b-8166-de611bef8eb6",
+      "result_id": "f9d6d79d-38b8-41d9-9f4f-6f714efe5332"
+    },
+    {
+      "claim_id": "bbe86107-b5b5-45ff-9df5-40be5f120edb",
+      "result_id": "f9d6d79d-38b8-41d9-9f4f-6f714efe5332"
+    },
+    {
+      "claim_id": "5e03cd33-8a39-4881-b9ab-7b77f2b4b881",
+      "result_id": "78254feb-9529-4c09-a1cc-03ead18a42be"
+    },
+    {
+      "claim_id": "79ae0c78-b02e-4553-8525-d091dd78d996",
+      "result_id": "78254feb-9529-4c09-a1cc-03ead18a42be"
+    },
+    {
+      "claim_id": "e2ae5bf0-5fa7-4698-b5c7-71e9612786fb",
+      "result_id": "78254feb-9529-4c09-a1cc-03ead18a42be"
+    },
+    {
+      "claim_id": "36bd045b-f517-4732-9d62-cf0163ca3cc0",
+      "result_id": "78254feb-9529-4c09-a1cc-03ead18a42be"
+    }
+  ],
+  "comparisons": []
+}

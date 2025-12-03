@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C91",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "BIRDS is an open-source software implemented as a Fiji plugin containing five core modules (image preprocessing, bi-channel registration, manual correction, link with Imaris, and deep-learning segmentation), with source code, plugin, and tutorials publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9, C91, C120-C123 collectively establish that BIRDS is a complete, open-source software package with documented availability and implementation details. The software architecture, modules, and accessibility are clearly described and supported by the Materials and methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A dynamic preprocessing step subdivides brain image stacks into sub-stacks based on anatomical landmarks and applies variable z-axis resampling ratios (0.35-0.55) to correct for non-uniform deformation, improving similarity to the Allen template.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 describe a preprocessing method with specific technical parameters and demonstrate improved alignment (Figure 1b, Figure 1\u2014figure supplement 2). The approach addresses a known challenge (non-uniform deformation) with a quantifiable solution supported by visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A bi-channel registration algorithm combines raw brain images with feature maps (phase congruency for texture/edges and grayscale reversal for geometry) to achieve notably better registration accuracy than single-channel methods (aMAP, ClearMap, MIRACL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 establish the bi-channel approach with specific algorithmic details (PC algorithm, grayscale reversal) and demonstrate superiority over existing methods. The methodology is well-described with citations (C37, C38) and supported by Figure 1c-d and Figure 1\u2014figure supplement 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "BIRDS achieves superior registration accuracy compared to three existing methods (aMAP, ClearMap, MIRACL), with median error distance ~80 \u03bcm for STPT data and ~120 \u03bcm for LSFM data, and Dice scores >0.89 (p < 0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C54 provide comprehensive quantitative validation with specific metrics (MED, Dice scores), sample sizes (n=2 STPT, n=3 LSFM), and statistical testing (Wilcoxon test, p<0.05). The comparison is systematic across multiple datasets and methods, supported by Figure 2 and supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "BIRDS generates a 3D digital map (CCFv3) that enables visualization, navigation, neuron tracing, and quantification of axonal projections across the whole mouse brain at native resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 describe the digital mapping capabilities with specific examples (n=5 neurons traced, Figure 3). The integration with Imaris and quantification features are demonstrated with visual evidence (Figure 3, Videos 1-2), showing practical application of the registration results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "BIRDS-Imaris performs region-specific automated cell counting using local image statistics for each segmented brain area, achieving better consistency with manual counting than conventional Imaris, especially for regions with extreme signal intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 establish an improved cell counting method with clear rationale (local vs. global parameters) and validation against manual counting (Figure 4). The advantage is demonstrated for specific challenging cases (STR, BS regions with extreme signal intensities), though quantitative comparison metrics are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "A deep neural network (Deeplab V3+) trained on registration-generated data achieves high-accuracy segmentation (Dice scores 0.86-0.87) of incomplete brain datasets, including hemispheres, irregular cuts, and small volumes, with capability for fine sub-region segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C81 describe the DNN implementation with specific architecture (Deeplab V3+), training data (9 brains, 9500 slices), and validation results (Dice scores, Figure 5). The synergy between registration and DNN is demonstrated (C72), though some regions show sub-optimal performance (C77: PAL, MBsta, P-sen with Dice 0.78-0.8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C82",
+      "C83",
+      "C85",
+      "C87"
+    ],
+    "result": "The hybrid BIRDS pipeline demonstrates synergy between registration and deep learning: registration provides training data for the neural network, while the network segments incomplete/defective brain data difficult to register.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C25, C82, C83, C85, C87 establish the synergistic relationship between the two approaches. The bidirectional benefit is demonstrated: registration generates training data (C72) and DNN handles incomplete data (C74-C80). This represents a key conceptual advance of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C7",
+      "C8"
+    ],
+    "result": "BIRDS is adaptive to various microscopy platforms and enables minute-timescale registration-based segmentation or real-time inference-based segmentation of brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C7, C8 describe performance capabilities supported by testing on multiple platforms (STPT, LSFM with different modalities: C93-C101). The timing claims are supported by computational performance data (C103: ~5 min preprocessing for 180 GB data), though 'real-time' inference timing is not explicitly quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "BIRDS registration is currently limited to brains imaged with modalities similar to two-photon microscopy (wide-field, confocal, light-sheet) due to reliance on Allen CCF two-photon template images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 explicitly acknowledges a limitation of the method based on the template dependency. This is a reasonable constraint given the registration approach, though the manuscript demonstrates successful application to multiple compatible modalities (STPT, LSFM).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Full brain annotation using neural networks is currently more computationally demanding than registration-based segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 acknowledges a computational limitation of the DNN approach. This is supported by the training requirements (C115-C116: ~30,000 iterations, 40 hours on two GPUs) and the hybrid strategy employed in BIRDS that uses registration for complete brains and DNN for incomplete data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "BIRDS was validated on five brain datasets: two STPT datasets (~180 Gigavoxels each, 1\u00d71\u00d710 \u03bcm\u00b3) and three LSFM datasets (~700 Gigavoxels each, 1 \u03bcm\u00b3 isotropic) from different labeling methods and microscopy platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101 provide detailed specifications of the validation datasets including imaging modalities, resolutions, sample preparation methods, and labeling approaches. This establishes the breadth of testing, though the sample size is limited (n=2 STPT, n=3 LSFM).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The bi-channel registration is implemented using Elastix (v4.9.0) with a rigid+affine+B-spline three-level model, 30-pixel control point stepsize, and five-level pyramidal registration, requiring ~5 minutes for 180 GB STPT data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 provide specific implementation details with software version, registration parameters, and computational performance metrics. These technical specifications enable reproducibility and are supported by the Materials and methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "BIRDS uses Marching cubes algorithm for 3D surface generation and links with Imaris via programmable API for visualization and quantification at native resolution, enabling parallel cell counting across brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 describe the visualization and analysis implementation with specific algorithms (Marching cubes) and software integration (Imaris API). The capabilities are demonstrated in Figures 3-4, though the API implementation details are limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Ground truth segmentations were generated by two persons performing manual segmentation five times each, with results fused using STAPLE algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 describes a rigorous ground truth generation method with multiple annotators and repetitions (n=10 total segmentations per region) using an established fusion algorithm (STAPLE). This provides a robust reference for validation, though inter-rater reliability metrics are not reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The DNN was trained on 18 primary brain regions using 9,500 sagittal slices (5,000 complete + 4,500 incomplete) from nine brains, requiring ~30,000 iterations and ~40 hours on two GTX 1080Ti GPUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 provide comprehensive training specifications including region selection, dataset composition, training parameters (learning rate 0.001, momentum 0.9), and computational requirements. These details support reproducibility and establish the training scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "BIRDS requires a workstation with dual Xeon CPUs, 1 TB RAM, and two GTX 1080 Ti GPUs, with memory capacity at least 1.5\u00d7 data size for 3D digital framework generation; larger datasets (e.g., rat brain) require upgraded hardware (RTX 3090).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 specify hardware requirements with clear rationale (memory for 3D framework generation) and recommendations for scaling. The 1.5\u00d7 memory requirement is specific and practical, though the rat brain recommendation (C119) is speculative rather than tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction establishes the context of brain mapping efforts, limitations of existing registration-based methods (manual correction required, difficulty with incomplete data), and advantages/limitations of deep learning approaches (pixel-level features but requiring large training datasets).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C24 provide background context with appropriate citations. These claims establish the motivation for BIRDS by identifying gaps in existing approaches. The characterizations of prior work appear accurate based on the citations provided, though independent verification of cited claims was not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "BIRDS was developed to allow investigators to quantify and spatially map 3D brain data in its own 3D digital space with reference to Allen CCFv3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 states the primary objective of BIRDS development. This goal is achieved as demonstrated by the results (C55-C61 showing 3D digital map generation and analysis capabilities). The reference to Allen CCFv3 is consistent throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C92"
+    ],
+    "result": "The authors believe BIRDS provides a paradigm shift for 3D image segmentation in biology research, envision increasing importance of network-based segmentation, and expect the method to push resolution and scale limits in brain mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88, C89, C92 represent speculative statements about future impact and developments. While the technical achievements support potential for significant impact, these are subjective assessments and predictions rather than demonstrated results. The paradigm shift claim requires broader community adoption and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "BIRDS enables applications including tracing of long-distance neuronal projections and parallel counting of cell populations in different brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 describes enabled applications that are demonstrated in the Results section: neuronal projection tracing (C57-C61, Figure 3) and cell counting (C62-C68, Figure 4). These represent practical applications of the core registration and segmentation capabilities.",
+    "result_type": "MINOR"
+  }
+]

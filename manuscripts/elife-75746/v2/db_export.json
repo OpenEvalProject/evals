@@ -1,0 +1,1770 @@
+{
+  "submission": {
+    "id": "097cdb86-3826-4a56-b3a8-8ae525bdfe82",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:31:29.605982Z",
+    "updated_at": "2025-12-03T11:31:29.605982Z"
+  },
+  "content": [
+    {
+      "id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "submission_id": "097cdb86-3826-4a56-b3a8-8ae525bdfe82",
+      "content_type": "manuscript",
+      "content_text": "# A neural progenitor mitotic wave is required for asynchronous axon outgrowth and morphology\n\n## Authors\n\n- J\u00e9r\u00f4me Lacoste<sup>1</sup> \u2020\n- H\u00e9di Soula<sup>2</sup>\n- Ang\u00e9lique Burg<sup>1</sup>\n- Agn\u00e8s Audibert<sup>1</sup>\n- P\u00e9n\u00e9lope Darnat<sup>1</sup>\n- Michel Gho<sup>1</sup> \u2020\n- Sophie Louvet-Vall\u00e9e<sup>1</sup> ([ORCID: 0000-0001-7577-2329](https://orcid.org/0000-0001-7577-2329)) \u2020\n\n### Affiliations\n\n1. Sorbonne Universit\u00e9, CNRS, Laboratoire de Biologie du D\u00e9veloppement - Institut de Biologie Paris Seine (LBD-IBPS), Cell cycle and cell determination Team Paris France ([ROR:01c2cjg59](https://ror.org/01c2cjg59))\n2. Sorbonne Universit\u00e9, INSERM, NutriOmics Research Unit Paris France ([ROR:02vjkv261](https://ror.org/02vjkv261))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpatiotemporal mechanisms generating neural diversity are fundamental for understanding neural processes. Here, we investigated how neural diversity arises from neurons coming from identical progenitors. In the dorsal thorax of Drosophila, rows of mechanosensory organs originate from the division of sensory organ progenitor (SOPs). We show that in each row of the notum, an anteromedial located central SOP divides first, then neighbouring SOPs divide, and so on. This centrifugal wave of mitoses depends on cell-cell inhibitory interactions mediated by SOP cytoplasmic protrusions and Scabrous, a secreted protein interacting with the Delta/Notch complex. Furthermore, when this mitotic wave was reduced, axonal growth was more synchronous, axonal terminals had a complex branching pattern and fly behaviour was impaired. We show that the temporal order of progenitor divisions influences the birth order of sensory neurons, axon branching and impact on grooming behaviour. These data support the idea that developmental timing controls axon wiring neural diversity.\n\n## Introduction\n\nIt is commonly accepted that nervous system development relies on the precise spatio-temporal regulation of gene expression in neural progenitors (Holguera and Desplan, 2018). However, little is known about how neural diversity can be generated among neural progenitors that are homogenously specified (Hirata and Iwai, 2019), for example, in neurons that connect peripheral sensory organs with the central nervous system (Gatto et al., 2019).\n\nMicroch\u00e6tes are peripheral mechanosensory organs on the thorax of Drosophila melanogaster. These organs arise from sensory organ progenitor cells (SOPs) which are selected among G2 arrested cells of proneural clusters during pupal stage (Sato et al., 1999; Usui and Kimura, 1993). In the dorsal region of the thorax (notum), SOPs appear sequentially from five parallel proneural rows: first rows 5, followed by rows 1 and 3 and finally rows 2 and 4 (Usui and Kimura, 1993; Corson et al., 2017). SOPs selection involves Notch-dependent lateral inhibition from 6 to 12 hr after pupal formation (APF). Then, at 16.5 hr APF, SOPs resume the cell cycle and divide to generate a posterior secondary precursor cell (pIIa) and an anterior secondary precursor cell (pIIb). After subsequent asymmetric cell divisions, they give rise to the external (the socket and the shaft cells) and internal (the neuron, the sheath, and the glial cell) cells respectively (Gho et al., 1999; Fichelson and Gho, 2003). During these asymmetric cell divisions, daughter cells acquire different cell fates relied with a differential activation of the Notch (N) pathway (Schweisguth, 2015). During organogenesis, the bipolar neurons project their dendrite toward the base of the bristle, and their axons toward the ventral thoracic ganglion. The axons enter the ganglion through the posterior dorsal mesothoracic nerve root and extend branches anteriorly and posteriorly (Ghysen, 1980). The resulting arborization of the microch\u00e6te axon projections is variable. Their complexity is not correlated to the position of the organ but to the time at which rows appear. Thus, the microch\u00e6tes form the earlier born rows are more branched and arborised over a greater area within the neuropil than those from later born rows (Ghysen, 1980; Usui-Ishihara and Simpson, 2005). In adult flies, mechanical stimulation of thoracic bristles induces a cleaning reflex in which the first or third leg sweeps the stimulated area. This reflex requires the correct connectivity of the bristle neurons (Corfas and Dudai, 1989; Ghysen, 1980).\n\nSOPs distribution in the notum depends on N-signaling pathway as well as modulators, such as Scabrous (Sca). Scabrous is a secreted fibrinogen like protein that interacts physically with N and Dl and modulates their activities (Mok et al., 2005), The precise mechanism by which Sca regulates the N-signalling is unknown and moreover, is tissue specific. Thus, in the notum, sca mutants have an excess of bristles, a phenocopy of N mutants, indicating that Sca positively modulates N-activity (Renaud and Simpson, 2001). In wing discs, ectopic expression of sca inhibits N-pathway by reducing the interactions with its ligands (Lee et al., 2000). In eye discs, some studies indicate that Sca promotes N activation in response to Dl (Li et al., 2003) and others show that expression of sca in receptor precursor cells reduces N-activity (Munoz-Soriano et al., 2016; Powell et al., 2001).\n\nIn this work, we investigated how resumption of SOP division within the notum influences neurogenesis and ultimately fly behaviour. In a kinetic study, we show that SOPs enter mitosis successively according to a temporal wave that propagates from the centre towards the anterior and the posterior border of the thorax. We took a genetic approach to demonstrate that the Notch-ligand Delta and the secreted Notch-signalling modulator Scabrous control this wave. By altering cellular morphology, we show that propagation of the wave is mediated by cell-cell interactions through cell protrusions from SOPs. Finally, we present evidence showing that this mitotic wave has an impact on neural wiring and cleaning behaviour. Overall, our data support the idea that timing of neural progenitor divisions controls normal wiring in the central nervous system.\n\n## Results\n\n### SOP mitosis resumes in a temporal wave\n\nTo monitor mitosis in SOPs, transgenic pupae at 15 hr APF expressing GFP under the SOP specific neuralised driver (neurD> GFP) were monitored with live imaging. As a way to comparing nota, the first cell in each row to divide was used as both a temporal (division time, min) and a positional reference (metric rank, \u00b5m), designated SOP0. Centring our attention on SOPs located in the dorsal most region of the thorax (Rows 1\u20133 in Figure 1A), we observed that the SOP0 cells were located in the anteromedial region of each row and generally, the more distant a SOP was from its corresponding SOP0, the later it divided (Figure 1A\u2013B, Figure 1\u2014figure supplement 1A and Video 1). The order of mitosis of SOPs was not strict. However, plotting the time of SOP division against its metric rank relative to SOP0, reveals that on average SOPs resumed the cell cycle in a wave of mitoses spreading towards the anterior and the posterior ends along each row. Thus, all SOPs in a row divided in two hours for all rows analysed (Figure 1B\u2013C). No statistical difference was found between the rate of the mitotic waves in rows 1, 2, and 3 (p = 0.3954, ANOVA) or between left and right rows (p = 0.3038, ANOVA). SOP0 were not located precisely in the middle of each row, so the number of SOPs in the anterior and posterior portion of each row was unequal (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2). Still, no statistical difference was found between the rates of the anterior and posterior mitotic waves (p = 0.0689, ANOVA). To characterise each curve, the rate of the mitotic wave was calculated as the mean absolute value of the inverse of the slopes of the linear approximation of the curves for all conditions. For control conditions, this gives for the mean rate 3.14 \u00b5m min\u20131 (see Figure 1 and ). We conclude that the resumption of SOP mitosis is not random because the first division is in a specific region of the notum and a steady wave of division propagates towards the anterior and the posterior parts of the notum.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig1-v2.jpg)\n\n**Figure 1.:** (A) Four frames of a time-lapse recording of a control Drosophila melanogaster pupa from Video 1. The first three rows of cells in the most dorsal part of the thorax are indicated as R1, R2, and R3 respectively. The dashed line marks the midline, with anterior (Ant) to the left and posterior (Post) to the right. SOPs that have divided are highlighted in red in R1. The yellow arrows indicate the propagation of the wave from SOP0 marked by a yellow star. Scale bar, 50 \u00b5m. (B) Heatmap of a representative control notum depicting time of SOP division. Circles represent SOP cells arranged in rows. The relative time of division is colour coded according to the scale, each colour covering 6 min. Only rows 1\u20134 are represented. The dashed line shows the midline, with anterior to the left, and SOP0 in row one marked by white stars. (C) The time of SOP cell division (mean time\u00b1 SEM of n = 16 nota) in row 1 (R1), row 2 (R2), and row 3 (R3) is plotted according to position both relative to the position and time of division of the first cell to divide in each row. Negative and positive metric rank therefore corresponds to SOPs that are anterior and posterior to the SOP0, respectively. Red lines show standard linear regressions. SOPs were identified by GFP expression in a neur> GFP fly line. (D) Modelling the wave of SOP divisions. Left, a schematic view of the model at three consecutive times. Empty circles depict non-dividing cells. The flat-headed arrows indicate the inhibition that one cell exerts on immediate neighbours preventing entry into mitosis. Filled circles represent mitotic or post-mitotic cells which no longer have an inhibitory effect thus allowing neighbours to divide. These interactions allow the progression of mitosis along a row. Right, fit of experimental data with theoretical values obtained with the model using as parameters \u03c1 = 20 and \u00b5 = 0.65 (See Model description).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Heatmaps of nine nota showing the time of SOP division in control (A) and scaBP2 pupae (B). Circles represent SOP cells arranged in rows, anterior to the left. The relative time of division is colour coded according to the scale along the bottom, each colour covering 6 minutes. In each row, SOP0 are marked by white stars. Dashed lines show the midline. Note that in mutants, many cells are coloured in the reddish part of the spectra showing that several SOP cells divided simultaneously in the same row rather than in control where these cells are located in the anterior region of each row.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Location of the first dividing SOP (SOP0) in rows 1\u20133 in scaBP2 flies (B, n = 9) and its control, neur> GFP flies, (A, n = 9), after overexpression of rac1N17 (E, n = 6) or RNAi-sca (F, n = 9) and their control, pnr> GAL4 tub> Gal80 ts (D, n = 12). The line relaying the two antero-dorsocentral macroch\u00e6tes (aDC) was used as a spatial reference (dotted line on graphs A, B, D, E, F and vertical lines in C). Negative and positive metric ranks correspond to SOPs anterior and posterior to the aDC line respectively. Graphs represent the frequency of SOP0 at a given position recorded in row 1 (R1), row 2 (R2) and row 3 (R3). (C) Image of hemi-nota of a control, neur> GFP fly, and a scaBP2 homozygous mutant aligned anterior to the left showing the organisation of the SOPs in the notum. White vertical lines connecting the two aDC were used as spatial reference. Boxes show the locations of 68% of SOP0 in each row, corresponding to one standard deviation from the mean.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A\u2013E) The time of SOP cell division (mean time \u00b1 SEM) in row 1 (R1), row 2 (R2), and row 3 (R3) is plotted relative to the position and time of division of the first cell to divide in each row. The different conditions in which the mitotic wave amplitude was reduced were: (B) over-expression of rac1N17, using the conditional genetic context pnr> gal4 tub GAl80ts UAS-rac1N17 (C) conditional RNAi-sca, using the conditional genetic context pnr> gal4 tub GAl80ts RNAi-sca (E) scaBP2 null mutant. (A) and (D) corresponding controls to (B-C) and (E) respectively. Red lines depict the best fits obtained with our model. (F) Dot plot showing the distribution \u03bc and \u03c1 parameters extracted from the fits displayed in A-E. Note that in all cases the best fit was obtained after the reduction of the \u03bc parameter.\n\n![Video 1.](https://cdn.elifesciences.org/articles/75746/elife-75746-video1.mp4.jpg)\n\n**Video 1.:** The wave of SOP division is highlight in red in the row 1. Each frame was obtained by combining a z-stack (composed of 10 optical sections separated by 2 \u00b5m) acquired every 3 min. During the in vivo imaging, the pupae was maintained at 30 \u00b0C. Anterior is to the left and view is dorsal. Scale bar represents 50 \u00b5m.\n\nTo establish working hypotheses on the mechanism involved in the propagation of this mitotic wave, we developed a simple contagion model assuming that (1) neighbouring progenitor cells in a row inhibit each other from entering mitosis through cell-cell contact, (2) this inhibition is switched off when cells divide, (3) mitoses occur whenever a cellular compound concentration reaches a certain threshold and (4) this compound is produced at a constant rate. Given these assumptions, the system can be modelled by two differential equations characterised by four parameters (see Appendix 1). These parameters are: r, the rate of production of a pro-mitotic factor A; \u03bc, the rate of production of I, which inhibits A; \u03c1 and \u03b4 are degradations times of A and I, respectively. With this set of differential equations, our model accounts for the observed propagation of SOP mitoses very well (Figure 1D).\n\nIn particular, this simple model accounts for the non-linearity of the curve observed. Indeed, the interplay between the progressive capacity of SOPs to divide (modelled by the factor A) and the inhibitory effect on mitotic entry due to neighbouring cells (modelled by the factor I that inhibits A\u2019s production) brings cells farther from the start closer and closer to threshold to divide. The result is that, proportionally, cells take less and less time as the mitotic wave progresses along the row. Therefore, the mitotic wave accelerates over time. In other words, the relation between division time and SOP position is flattened for SOP position values far from the origin. This flattening is particularly observed for low inhibition conditions (Appendix 1\u2014figure 1). Conversely, at a very strong level of inhibition, the resulting curve is almost linear with a slope different to zero (Appendix 1\u2014figure 1). The non-linearity of the curve is accentuated between the 1st and 2nd division by the fact that the point 0, the location of SOP0, is also the temporal origin. As such, the time of division of SOP0 is for definition 0 and it is not a mean as the other points. Since all other values are positive (all cells divide obviously after the SOP0), this induces a positive jump in the delay between the 1st and following divisions.\n\nUsing this model, variations of only two parameters, \u03c1 and \u03bc, account for our experimental data (See Parameters estimation in Appendix 1\u2014figure 2). In the control condition, the best fit was obtained with values of \u03c1 and \u03bc of 40.38 and 0.52, respectively (Figure 1\u2014figure supplement 3\u2014source data 1).\n\n### Rac1N17 affects both cytoplasmic protrusions length and SOP mitotic wave progression\n\nBased on this model, SOPs are likely to influence neighbouring SOPs, so we analysed the potential ways by which they interact. SOPs in each row are actually separated by three to four epithelial cells, but SOPs produce dynamic actin-based protrusions several cell diameters in length that physically interact with protrusions from neighbouring SOPs and epithelial cells (Figure 2A left) (Cohen et al., 2010; Hunter et al., 2016; Renaud and Simpson, 2001). When SOPs divide, they become spherical and protrusions are drastically reduced (Figure 2\u2014video 1). To test the possibility that these protrusions control the mitotic wave, we overexpressed a dominant negative form of Rac1 (Rac1N17) (Figure 2A right and Figure 2\u2014video 2). Rac1, a factor implicated in F-actin polymerisation, is required for the growth of protrusions in SOPs (Cohen et al., 2010). To estimate the protrusion length, we have measured the protrusion extension area (Figure 2B). Under these conditions, SOP protrusions were shorter than in the control (Figure 2C, p < 0.0001, ANOVA). Although SOP divisions started at similar developmental times (control 15.7 \u00b1 0.5 hr APF, n = 9; rac1N17 overexpression 15.9 \u00b1 0.5 hr APF, n = 6), we observed that SOPs with shorter protrusions divide more synchronously than in the control (Figure 2E, mitotic wave rate 6.95 \u00b5m min\u20131). Indeed, all SOPs in a row divided within one hour for all rows analysed (Figure 2E, Row 1 p < 0.0001; Row 2 p = 0.0292, Row 3 p = 0.0014, ANOVA, and Figure 2\u2014figure supplement 1B). The lesser slopes of the time-rank curves of the mitotic wave in flies with short SOP protrusions shows that neighbouring SOPs resume mitosis earlier than normal. Although we cannot exclude that the effect observed with rac1N17 is exclusively due to the diminution of protrusions size, the observation that the protrusions regress prior to the SOP division, leads us to hypothesise that SOPs exchange inhibitory signals throughout protrusions to maintain neighbouring SOPs in G2-arrest. When a SOP divides, its protrusions are retracted so the inhibitory signal is suppressed allowing progression of the mitotic wave to the next SOP along the row. Interestingly, after fitting the experimental data with the model, the best fit was obtained with no change in the \u03c1 value (in row 1, 40,38 in control and 39,12 in rac1N17) whereas the value of the inhibitory parameter (\u03bc) decreases (in row 1, 0,52 in control and 0,36 in rac1N17). For the other rows, the parameter values for the best fit are shown in Figure 1\u2014figure supplement 3B.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig2-v2.jpg)\n\n**Figure 2.:** (A) Frames from live recordings showing cell protrusions of SOPs in control (left) and rac1N17 (right) pupae. tubGal80ts was used to conditionally express Gal4 and thus rac1N17 by maintaining flies at 18 \u00b0C and shifted them to 30 \u00b0C from 12 hr to 19 hr APF. Protrusions were visualised by specific expression of a membrane-tethered RFP form (ph-RFP), invert fluorescence. Scale bar, 20 \u00b5m. (B) Illustration of the polygonal line corresponding to the convex hull enclosing the extremities of the longer protrusions (Fiji software) to quantify the cell protrusion length. (C) Protrusion extension area over time in control and after rac1N17 conditional overexpression (mean \u00b1 SEM, n = 11 cells for control and n = 14 for rac1N17) measured from live recordings. Anaphase was taken as a temporal reference. (D) Protrusion extension area over time in control and in scaBP2 null mutant (mean \u00b1 SEM, n = 20 cells for control and n = 18 for scaBP2) measured from live recordings. Anaphase was taken as a temporal reference. (E) The SOP mitotic wave in row 1 (R1), row 2 (R2) and row 3 (R3) in control and after overexpression of rac1N17. Mean division time\u00b1 SEM of n = 6 nota. (F) Sca localisation in a SOP cell. Arrows indicate distinct Sca foci along cell protrusions. Scabrous (left panel) in SOP cell marked with a membrane-bound ph-RFP (middle panel), merged in right panel. Images are a maximum projection of three confocal sections. Two Sca foci are magnified in the inserts. Scale bar, 5 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Heatmaps of six nota showing the time of SOP division in control neur> ph (PLC\u03b4)::RFP/+; pnr> Gal4 tub> Gal80ts/+ pupae (A), when cell protrusions were reduced in neur> ph (PLC\u03b4)::RFP/+; pnr> Gal4 tub> Gal80ts/UAS-rac1N17 pupae (B) and when sca was specifically downregulated between 12 and 19 hr APF, using the conditional genetic context pnr> Gal4 tub Gal80ts RNAi-sca (C). Circles represent SOP cells arranged in rows, anterior to the left. The relative time of division is colour coded according to the scale along the bottom, each colour covering 6 min. In each row, SOP0 are marked by white stars. Dashed lines show the midline. Note that in (B) and (C) many cells are coloured in the reddish part of the spectra showing that several SOP cells divided simultaneously in the same row. Note also that the driver pnr used to overexpress rac1N17 disorganises the pattern of rows.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Images of nota in sca::GFSTF protein-trap flies at different developmental times. Sca::GFSTF protein was transiently detected as multiple foci in sensory organ cells. Scale bar, 20 \u00b5m.\n\n### The SOP mitotic wave is regulated by scabrous and delta\n\nCellular protrusions allow molecules to be exchanged between cells for direct and selective signalling (Buszczak et al., 2016; Kornberg and Roy, 2014). The candidate for such a signal would be a secreted molecule with a role in regulating the interactions and spacing of cells in the nervous system. One such molecule is the fibrinogen-like protein Scabrous (Sca) that regulates several processes such as the regularly spaced pattern of ommatidia in the eye or of bristles in the notum (Baker et al., 1990; Cohen et al., 2010; Gavish et al., 2016; Renaud and Simpson, 2001), or ommatidial rotation (Chou and Chien, 2002). In the protein trap line sca::GFP, Sca was detected as multiple spots of fluorescence in the cytoplasm and along the protrusions of SOPs (Figure 2F and Figure 2\u2014video 3). At 14h30 APF, very faint Sca spots were detected on the notum. The intensity of these spots reaches a peak at 24 hr APF then decreases rapidly and the spots were undetectable at 32 hr APF (Figure 2\u2014figure supplement 2). To investigate whether Sca is involved in the synchronisation of SOP mitosis, we studied the mitotic wave in the scaBP2 null mutant, which is viable at the developmental period studied. In this mutant, we observed SOP0 cells at different points along each row as they were not limited to the anterior region (Figure 3A, Figure 1\u2014figure supplement 1B and Figure 1\u2014figure supplement 2B, C). A similar effect on the localisation of SOP0 was observed after overexpression of rac1N17 (Figure 1\u2014figure supplement 2D-E). More importantly, in the scaBP2 mutant, SOPs divided more simultaneously than in the control (Row 1, p = 0.0015; Row 2, p = 0.0029; Row 3, p = 0.0014, ANOVA, Figure 3A\u2013B, Figure 1\u2014figure supplement 1, Figure 3\u2014figure supplement 2A, Video 2). For instance, Row one in scaBP2 divided in one-third of time taken for the control SOP row to divide, and the rate of the wave increased to 20.27 \u00b5m min1 (See Figure 1 and ). This change was not associated with change in the cell fate of the sensory organs (Figure 3\u2014figure supplement 1). The release of the inhibition observed in scaBP2 context was again well confirmed by fitting the experimental data with the model. For instance, for row 1, the best fit was obtained with no change in the \u03c1 value (37,71 in control and 41,08 in scaBP2), whereas the value of the inhibitory parameter (\u03bc) decreases from 0,52 (control) to 0,31 (scaBP2). The invariance of the \u03c1 and the reduction of \u03bc values were observed for all rows (Figure 3C, Figure 1\u2014figure supplement 3E-F and Figure 1\u2014figure supplement 3\u2014source data 1). This Sca-mediated inhibition is not likely to be related to protrusion length shortening because no difference was found between scaBP2 and control SOP protrusions (Figure 2D and see Renaud and Simpson, 2001). To exclude the possibility that the absence of Sca during the entirely development of scaBP2 mutant could secondarily impact the mitotic wave, sca expression was specifically downregulated using a conditional RNAi strategy between 12 and 19 hr APF (Figure 3\u2014figure supplement 2B), that is from just before and during the mitotic wave. In these conditions, as in null mutant, we again observed that the mitotic wave was flattened (Figure 2\u2014figure supplement 1C; Figure 3\u2014figure supplement 2C; Row 1, p < 0.0001; Row 2, p = 0.69; Row 3, p = 0.003, ANOVA). In this context, we also observed SOP0 location was not limited to the anteromedial region (Figure 1\u2014figure supplement 2D, F). Again, this effect was best fitted by a reduction on the inhibitory parameter compared to the control (Figure 1\u2014figure supplement 3A, C and F and Figure 1\u2014figure supplement 3\u2014source data 1). These data indicate that Sca transported through cell protrusions specifically controls the wave of SOP mitoses along the rows.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig3-v2.jpg)\n\n**Figure 3.:** (A) Heatmap of a representative heminota in control and scaBP2 homozygous null mutant aligned, anterior to the left. The relative time of SOPs division is colour coded according to the scale. (B) The SOP mitotic wave in row one in control and in scaBP2 homozygous mutant. (C) Dot plot showing the distribution of \u03bc and \u03c1 parameters extracted from the best fits displayed in Figure 1\u2014figure supplement 3D, E. Note that the best fit was obtained in scaBP2 null mutant after reduction of the \u03bc parameter only. (D\u2013F) Genetic interactions between Dl7 and scaBP2. Comparison of the SOP mitotic wave in control and Dl7/+ (D), scaBP2/+ (E) and Dl7/+, scaBP2/+ (F). Mean division time\u00b1 SEM, n = 9, 8, and 11 nota respectively. (G) Dot plot showing the distribution of \u03bc and \u03c1 parameters extracted from the fits displayed in Figure 1\u2014figure supplement 3D, E. . Note that in simple heterozygous backgrounds, \u03bc and \u03c1 were similar to the control while in Dl7/+, scaBP2/+ double heterozygous background, the best fit was obtained after reduction of the \u03bc parameter only. (H) Confocal image of one SOP in a sca::GFSTF protein-trap fly at the moment of the SOP wave (16 hr APF), immunostained for GFP (left panel) and Dl (middle panel), merged in the right panel (purple and green respectively). Arrowheads show co-localisation of Dl and Sca into vesicle-like structures with Sca::GFSTF as puncta surrounded by Dl staining. SOP soma is delimitated by a dashed line. Scale bar, 5 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Mechanosensory organ cells at two magnifications in control (A and C) and scaBP2 null mutant (B and D) pupae. Cells from sensory organs are identified by the neur> RFP construction (red). Fate of socket (so), shaft (sf), sheath (st), neuron (n) and glial (g) cells were characterised by nuclear size, relative position and specific markers: Su(H) (green in A and B) to identify socket cells. Prospero (blue in A and B) specifics of sheath cells. Pdm (green in C and D) to identify the two external cells, the socket and shaft cells. ELAV (blue in C and D) to identify neurons. Glial cells, when present, show a condensed nucleus. Nota from pupae at 24 hr APF (n = 8). Anterior to the left. The midline is represented by the dashed line. Scale bar = 10 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) The relative time of SOP cell division in control and scaBP2 homozygous mutant in row 1 (R1), row 2 (R2) and row 3 (R3) is plotted according to their relative position (mean time\u00b1 SEM, of 16 control nota and nine scaBP2 nota). The position and the absolute time of division of SOP0 in each row was taken as spatial and temporal references. The red lines correspond to standard linear regressions. (B) Efficiency of RNAi-sca. Immunostaining of Sca in control and after overexpression of RNAi-sca using the conditional genetic context pnr> gal4 tub GAl80ts RNAi-sca in the protein trap line sca::GFSTF. Pupae at 16 hr APF. Note that Sca spots (green, arrowheads) in SOP cells, identified by Cut staining (red), are not detected in RNAi-sca conditions. (C) The SOP mitotic wave in control and in flies where sca was specifically downregulated between 12 and 19 hr APF, starting just before and throughout the mitotic wave, using the conditional genetic context pnr> gal4 tub Gal80ts UAS-RNAi-sca in row 1 (R1), row 2, (R2) and row 3 (R3). Mean time\u00b1 SEM of 10 control nota and 10 RNAi-sca nota. The position and the absolute time of division of the first cell which divided in each row was taken as spatial and temporal reference. Red lines correspond to standard linear regressions.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The time of SOP cell division (mean time\u00b1 SEM) in row 1 (R1), row 2 (R2) and row 3 (R3) is plotted relative to the position and time of division of the first cell to divide in each row. The different conditions were: (A) control, (B) Dl7/+ heterozygous background, (C) scaBP2/+ heterozygous background, (D) Dl7/+, scaBP2/+ double heterozygous background. Red lines depict the best fits obtained with our model. (E) Dot plot showing the distribution \u03bc and \u03c1 parameters extracted from the fits displayed in A-D. Note that in simple heterozygous backgrounds, \u03bc and \u03c1 were similar to the control while in Dl7/+, scaBP2/+ double heterozygous background, the best fit was obtained after reduction of the \u03bc parameter only.\n\n![Video 2.](https://cdn.elifesciences.org/articles/75746/elife-75746-video2.mp4.jpg)\n\n**Video 2.:** For comparison, two hemi-nota are aligned. The observed difference in SOP nuclei size in the two movies is due to the lineage markers used (nuclear GFP and histone-RFP). The waves of SOP divisions are highlighted in red in the rows 1. Anterior is to the left and view is dorsal. Scale bar represents 50 \u00b5m.\n\nSca is known to modulate the Delta/Notch (Dl/N) pathway (Petruccelli et al., 2018), so we tested whether this pathway is involved in regulating the SOP mitotic wave. Since null Dl mutants are lethal, we studied the mitotic wave in Dl7/+ heterozygous background. We did not observe a statistically significant reduction in the mitotic wave rate in Dl7/+ SOPs (Figure 3D, p = 0.69, ANOVA). Similarly, we did not observe any difference in the rate of the SOP division wave in the scaBP2/+ heterozygous line (Figure 3E, p = 0.71, ANOVA). By contrast, when the gene dosage of both sca and Dl was reduced by half, the time-rank curves were flattened corresponding to a significant increase in the mitotic wave rate (from 3.14 to 43.35 \u00b5m min-1) (Figure 3F, p = 0.048, ANOVA). Again, this effect was best fitted by a reduction on the inhibitory parameter (Figure 3G, Figure 3\u2014figure supplement 3 and Figure 1\u2014figure supplement 3\u2014source data 1). These results demonstrate that sca and Dl genetically interact, which suggests that these factors act in concert to control the SOP mitotic wave. Indeed, we observed that Dl and Sca co-localise in vesicle-like structures inside the cytoplasm with Dl surrounding the Sca staining (Figure 3H). This co-localisation firstly described by Renaud and Simpson, 2001, evidences that these two proteins are transported from the endoplasmic reticulum to the membrane in the same vesicles.\n\nAltogether, our results show that the wave of SOP mitoses along rows depends on an inhibitory signal transmitted by protrusions from the progenitors and is controlled by Dl and Sca proteins.\n\n### Outcome of the mitotic wave on microch\u00e6te axonogenesis\n\nConsidering the invariability of sensory organ formation, we wondered whether differences in the wave of SOP mitosis might impact the timing of axonogenesis along each row. To this end, we measured axon length at the beginning of axonogenesis (24 hr APF) in control and scaBP2 pupae (Figure 4A). In control pupae, the axon length varied along the antero-posterior axis. Indeed, within a row, more the neurons were located at the extremities, the shorter their own axon. However, in scaBP2 animals, the length of the axon along a row was significantly more homogeneous (Figure 4B, p = 0.0232, ANOVA). These observations indicate that as a result of the SOP mitotic wave, neurogenesis and consequently axonogenesis progress from the centrally located neurons towards those located at the extremities in controls, while in sca mutants, in which the wave was disrupted, axonogenesis occurs simultaneously along each row. Thus, the mitotic wave of SOP division controls axonogenesis timing.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig4-v2.jpg)\n\n**Figure 4.:** (A) Axon immunostaining using anti-Futsch/22C10 antibodies in control (w1118) and scaBP2 heminota at 24 hr APF aligned, anterior to the left. Axons in row one were artificially coloured in green for w1118 and blue for scaBP2 homozygous flies. (B) Relative axon length of neurons belonging to sensory organs on row one plotted against relative position (mean length\u00b1 SEM of n = 18 rows). The neuron with the longest axon on the row was taken as temporal and spatial reference in control (w1118) and scaBP2 homozygous pupae at 24 hr APF. (C) Axon projections of single sensory organ neurons in an adult thoracic ganglion identified with MCFO strategy. The midline is indicated by vertical dotted lines, anterior (Ant) up and posterior (Post) down. The asterisks indicate the point of entry of the sensory nerve into the thoracic ganglion. (C1) A single axon projection (red) counterstained with the neuropile formed by all axon terminals from sensory organs on the central notum (green). (C2) Schematic drawing of an axon projection. The length of the anterior (a) and posterior (p) primary branches were used to quantify the degree of branching of axon terminals. (C3) Representative examples of axon projections into the thoracic ganglion in control fly (top panel) and when the SOP mitotic wave was impaired (UAS-RNAi-sca, tubGal80ts was used to conditionally express Gal4 by maintaining flies at 18 \u00b0C and shifted them to 30 \u00b0C from 12 hr to 19 hr APF, bottom panel). Arrowheads point to additional branches in RNAi-sca. (D) Lengths of anterior and posterior primary branches in single axon terminals of control (green, n = 30) and in flies where the SOP mitotic wave was impaired (conditional RNAi-sca) (blue, n = 43). Mean \u00b1 SEM ****p < 0.0001, ***p = 0.0001, two-tailed unpaired t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** On the left, the neuropile formed by all terminal axons from sensory organs on the central notum illustrating the absence (top) and presence (bottom) of the medial commissure (arrow) in thoracic ganglia of adult flies. On the right, quantification of the medial commissure occurrence in the thoracic ganglion of control and after overexpression of RNAi-sca using the conditional genetic context pnr> gal4 tub GAl80ts UAS-RNAi-sca; ***p = 0.0002, Fisher\u2019s exact test, control n = 64, RNAi-sca n = 63.\n\n### Disruption of the SOP mitotic wave leads to a modified organisation of microch\u00e6te axonal projections\n\nWe wondered whether the altered axonogenesis timing observed in the mutant bristle organs influences the patterning of axonal endings in the thoracic ganglion. To address this question, the morphology of these axon terminals was studied by expressing a membrane-bound GFP form in bristle cells using pannier-GAL4, as a driver of dorsal expression. Under these conditions, the neuropile in the thoracic ganglion formed by axon terminals from all bristles of the central dorsal notum was visualised as a mesh-like triangular structure formed by an anterior arm at each left and right sides and a posterior commissure that cross the midline (Figure 4 C1). In 11% of ganglia analysed in control flies a second medial commissure was observed (Figure 4\u2014figure supplement 1 arrow). Interestingly, in flies in which the mitotic wave was disrupted after sca downregulation (RNAi-sca), this percentage increased to 34% (Figure 4\u2014figure supplement 1, p = 0.0002, Fisher\u2019s exact test). These observations prompted us to analyse single axon terminals by immunodetecting individual axons using the stochastic labelling method MCFO (Nern et al., 2015). We observed in control flies that individual axon terminals have two main primary branches, an anterior branch that does not cross the midline and a posterior branch that crosses the midline (Figure 4 C1 and C3 top panel). In RNAi-sca animals, we observed that axon terminals are more branched (Figure 4 C3 bottom panel). The lengths of primary anterior and posterior branches, between the root and the first branch point (Figure 4 C2), of RNAi-sca axons were significantly shorter than those of control axons (Figure 4D, p < 0.0001 and p = 0.0001 respectively, ANOVA). Since on the one hand, sca was inactivated specifically and only during the mitotic wave, and on the other hand, sca expression turn-off prior to axonogenesis (Figure 2\u2014figure supplement 2), the effects observed could not be due to a possible effect of sca on axonogenesis itself. As primary branches were shorter when SOP division occurred simultaneously on the notum, the timing of axonogenesis is likely to be an important factor controlling axon branching. Interestingly, our data are in agreement with studies showing that axon terminals of bristles from rows that are formed earlier, are more branched than those from rows that develop later (Usui-Ishihara and Simpson, 2005). As such, our results led us to hypothesise that the order of birth of neurons in a given row contributes to the future connectivity of these neurons. Further experiments aimed to analyse the axon terminal of sensory organs at a given row are required to confirm this hypothesis.\n\n### Disruption of the SOP mitotic wave leads to changes in fly behaviour\n\nFinally, we wondered whether modifications in axon branching after disruption of normal timing of SOP mitosis led to behavioural changes. In order to test this possibility, we analysed the cleaning reflex, as a read out for the function of the mechanosensory system of flies, in conditions where the SOP mitotic wave was disrupted. The cleaning reflex is a patterned set of leg movements elicited in a fly when its thoracic bristles receive tactile stimulation (Figure 5A and Figure 5\u2014video 1; Corfas and Dudai, 1989; Vandervorst and Ghysen, 1980). When the SOP mitotic wave was impaired, after specific downregulation of sca during the wave, we found that the number of air puffs required to elicit a leg response was significantly higher than in control flies (Figure 5B, p = 0.028, ANOVA).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig5-v2.jpg)\n\n**Figure 5.:** (A) Eight frames of a time-lapse recording of a decapitated control fly showing the sequence of movements of the metathoracic leg (artificially coloured in green) upon stimulation of the dorsal bristles. (B) Number of air puffs required to elicit a cleaning reflex in control flies (n = 35) and in flies where the SOP wave was impaired (UAS-RNAi-sca, tubGal80ts was used to conditionally express Gal4 by maintaining flies at 18 \u00b0C and shifted them to 30 \u00b0C from 12 hr to 19 hr APF) (n = 35). Mean \u00b1 SEM. *p = 0.0238; ANOVA.\n\nAltogether, our results show that the temporal order of neural precursor cells division impact on neuronal cell diversity and ultimately on behaviour.\n\n## Discussion\n\nTo study how functional neuronal diversity can be generated from a homogenous set of neural precursors, we took advantage of the invariant way in which sensory organs are located on the dorsal epithelium of Drosophila. This spatial configuration greatly facilitated the study of the relative timing of SOP division and the identification of a distinct temporal wave of SOP mitosis. Asynchrony in mitotic reactivation timing has been described in Drosophila larva neuroblasts. This differential timing is related to two cell cycle arrests: one population of neuroblasts is arrested in G2 while another population is arrested in G0 (Otsuki and Brand, 2018). G2-arrested neuroblasts resume mitosis earlier than those in G0-arrest. As in our system, it has been proposed that this particular order of division ensures that neurons form appropriate functional wiring. It is relevant that other temporal processes controlling the wiring of peripheral receptors with the central nervous system have been described in the Drosophila eye, another highly organised structure (Fernandes et al., 2017). It is conceivable that these temporal patterning mechanisms of neurogenesis, to date identified only in organised tissues, could be more widespread.\n\nA core aspect of our work was to link cellular level of complexity (timing of SOP division) with uppermost level (behaviour). In this context, we presented evidences showing that the cleaning reflex was impaired when the SOP mitotic wave was disrupted. The cleaning reflex has been traditionally analysed after stimulation of macrochaetes rather than microchaetes as in the present work. Macro- and microchaetes have different patterns of terminal axon arborisation (Usui-Ishihara and Simpson, 2005). As such, it is remarkable that this fly behaviour was significantly affected by altering the timing of microchaete precursor division in the dorsal thorax. We show that the SOP mitotic wave leads to a progressive neurogenesis along each row of microchaetes. This, in turn, would likely induce a particular pattern of microch\u00e6te axon arrival in the thoracic ganglion required for the proper organisation of the neuropila in the central nervous system. Although we have documented this progressive axonogenesis, we do not know the strict pattern of axon arrival into the ventral ganglion. It would depend on the order of birth of neurons, and on the geometry of axon projections that fasciculate to form the dorsal mesothoracic nerves in the ganglion. In any case, we show here that, when sca function was specifically downregulated during the SOP mitotic wave, axonogenesis occurs almost simultaneously in each row of microchaetes. This certainly impairs the pattern of axon arrival into the ganglion leading to ectopic axon branching and changes in fly behaviour. It would be interesting to know whether these impairments are specifically due to neurogenesis occurring simultaneously. To test this, we need find a way to induce different patterns of SOP mitotic entry, for instance, a centripetal wave or a random order. If the observed effect is specifically due to the simultaneity, normal behaviour would be expected to be associated with other patterns of SOP division.\n\nWe observed that the first SOP to divide (SOP0) was always located in the anteromedial region of each row. This may reflect the existence of a pre-pattern that causes SOPs located in that region to start dividing earlier than the others. Although the anteromedial region corresponds approximately to the posterior limit of expression of the transcription factor BarH1 (Sato et al., 1999), no factors specifically expressed in this region have yet been identified. Alternatively, as the location of SOP0 is modified when Sca function was impaired, an interesting possibility is that SOP0 is selected by an emergent process related to cell-cell interaction in the epithelium, rather than by a passive pre-pattern that organises the first events in the notum.\n\nWe present evidence indicating that the secreted glycoprotein Scabrous, which is known to interact with the N-pathway to promote neural patterning, controls the kinetics of SOP mitosis in the notum. In proneural clusters, cells that express high levels of Dl and Sca become SOPs, while surrounding epithelial cells activate the N-pathway to prevent acquisition of a neural fate (Muskavitch, 1994; Renaud and Simpson, 2001; Buffin and Gho, 2010). In eye and notum systems, Sca modulates N-activity at a long range. Indeed, during eye development, sca is expressed in intermediate clusters in the morphogenic furrow and transported posteriorly in vesicles through cellular protrusions to negatively control ommatidial cluster rotation (Chou and Chien, 2002). Similarly, in the notum, SOP protrusions extend beyond several adjacent epithelial cells in which Dl and Scabrous are detected (Renaud and Simpson, 2001 and this study). Our data show that shorter protrusions (obtained after rac1N17 overexpression conditions) as well as loss of function of Dl or sca make the mitotic wave more synchronous. Since, we do not observe a reduction of the global level of sca expression associated with the wave progression, it is plausible that Sca, required to maintain SOPs in G2 arrest, is delivered focally through protrusions that are difficult to follow with in vivo analysis. Although we favoured this possibility, we cannot formally rule out the possibility that Rac1N17 overexpression affects Sca secretion per se without affects sca expression.\n\nAs in neuroblasts, G2 arrest in SOP cells is due to the downregulation of the promitotic factor Cdc25/String. Thus, overexpression of string in SOPs induces a premature entry into mitosis (Ayeni et al., 2016), while overexpression of negative regulators, like Wee1, maintain these cells in arrest (Fichelson and Gho, 2004). Possibly Sca negatively regulates string expression, perhaps through the N-pathway that it is known to control the level of String (Deng et al., 2001; Krejc\u00ed et al., 2009). Alternatively, it has been recently shown that the insulin-pathway also regulates String level (Otsuki and Brand, 2018). Moreover, in muscle precursors, cell proliferation is induced by the insulin-mediated activation of the N-pathway (Aradhya et al., 2015). These observations raise the interesting possibility that, in our system, insulin activates the N-pathway and Sca modulates this activation. Further investigations will be required in order to identify the link between Scabrous, the N/Dl- and insulin-pathways in the resumption of mitosis in SOPs.\n\nDuring nervous system development, the complex patterns of neuronal wiring are achieved through the interaction between neuronal cell surface receptors and their chemoattractive or repulsive ligands present in the environment (McCormick and Gupton, 2020). An essential condition for proper axon guidance is the competence of neurons to respond to these environmental clues. It is generally agreed that neuron competence depends on the specific expression of transcriptional factors regulating their identity (Petrovic and Hummel, 2008). We show here that the timing of neuron formation is also a factor controlling their terminal morphology. We propose that the SOP mitotic wave induces a particular pattern of arrival of microch\u00e6te axons in the thoracic ganglion (Figure 6). This pattern establishes a specific framework of guidance cues on which circuits will be built and ultimately influencing an organism\u2019s behaviour. Our findings support the idea that, in addition to genetic factors, neurogenic timing is a parameter of development in the mechanisms controlling neural branching.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75746/elife-75746-fig6-v2.jpg)\n\n**Figure 6.:** The mitotic wave of precursor cells induces an asynchronous arrival of sensory axons into the thoracic ganglion. This is depicted here by axons coloured according to the developmental time of sensory organs that in turn is controlled by the wave of precursor cell divisions. Red, early-formed; blue, late-formed sensory organs. This asynchrony would be associated with a particular axon connectivity in the thoracic central ganglion required for a normal cleaning behaviour in the fly.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Futsch (clone 22C10, mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>AB_528403</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA (clone 3F10, rabbit polyclonal)</td>\n      <td>Roche</td>\n      <td>AB_231 4,622</td>\n      <td>IF (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Flag (M2, mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>AB_259529</td>\n      <td>IF (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-V5 (E10/V4RR), DyLight650 (mouse monoclonal)</td>\n      <td>ThermoFisher</td>\n      <td>AB_2537642</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-cut (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>AB_528186</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ELAV (rat monoclonal)</td>\n      <td>DSHB</td>\n      <td>AB_7E8A10</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Su(H) (rat polyclonal)</td>\n      <td>Gift F. Schweisguth</td>\n      <td></td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Prospero (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>AB_528440</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-pdm (rabbit polyclonal)</td>\n      <td>Gift T. Preat</td>\n      <td></td>\n      <td>IF (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Dl (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>AB_528194</td>\n      <td>IF (1: 500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (B-2, rabbit polyclonal)</td>\n      <td>Santa Cruz</td>\n      <td>sc-9996</td>\n      <td>IF (1: 500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rabbit AlexaFluor 488</td>\n      <td>Molecular Probes</td>\n      <td>AB_2576217</td>\n      <td>IF (1: 1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rat AlexaFluor 488</td>\n      <td>Molecular Probes</td>\n      <td>AB_2534074</td>\n      <td>IF (1: 1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse AlexaFluor 488</td>\n      <td>Molecular Probes</td>\n      <td>AB_2534088</td>\n      <td>IF (1: 1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-rat AlexaFluor 568</td>\n      <td>Molecular Probes</td>\n      <td>AB_2534121</td>\n      <td>IF (1: 1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse AlexaFluor 568</td>\n      <td>Molecular Probes</td>\n      <td>AB_144696</td>\n      <td>IF (1: 1000)</td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>w1118</td>\n      <td>Bloomington Stock Center</td>\n      <td>BDSC_3605</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>neurD&gt; GFP</td>\n      <td>F.Schweisguth</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>scaBP2</td>\n      <td>Bloomington Stock Center</td>\n      <td>BDSC_7320</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>UAS sca-RNAi</td>\n      <td>Vienna Drosophila Resource Center</td>\n      <td>VDRC#44,527</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>sca::GFSTF</td>\n      <td>Bloomington Stock Center</td>\n      <td>BDSC_64443</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>neur&gt; ph (PLCd)::RFP</td>\n      <td>F.Schweisguth</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>UAS-MCFO-1</td>\n      <td>Bloomington Stock Center</td>\n      <td>BDSC_64085</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>UAS-rac1N17</td>\n      <td>Bloomington Stock Center</td>\n      <td>BDSC_6292</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>Dl7</td>\n      <td>Bloomington Stock Center</td>\n      <td>BDSC_485</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>UAS-ph::GFP</td>\n      <td>Y.Bellaiche</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>genetic reagent (D. melanogaster)</td>\n      <td>neurp72&gt; Gal4</td>\n      <td>Y.Bellaiche</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nAntibodies and fly lines used.\n\nFly genotypes corresponding to each figure and video.\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Figures / Videos</th>\n      <th>Genotypes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 1</td>\n      <td>A-C</td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 2</td>\n      <td>A-C</td>\n      <td>neur&gt; ph (PLC\u03b4)::mRFP/+; pnr&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>neur&gt; ph (PLC\u03b4)::mRFP/+; pnr&gt; Gal4 tub&gt; Gal80ts/UAS- rac1N17</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>D</td>\n      <td>neur&gt; ph (PLC\u03b4)::mRFP</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>neur&gt; ph (PLC\u03b4)::RFP; scaBP2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>E</td>\n      <td>neurD&gt; GFP/+; pnr&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>neurD&gt; GFP/+; pnr&gt; Gal4 tub&gt; Gal80ts/UAS- rac1N17</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>F</td>\n      <td>sca::GFSTF/+; neur&gt; ph (PLC\u03b4)::mRFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 3</td>\n      <td>A-C</td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>scaBP2/scaBP2; neurp72&gt; Gal4,UAS-H2B::RFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>D, G</td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>neurD&gt; GFP/+; Dl7/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>E, G</td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>scaBP2/+; neurp72&gt; Gal4,UAS-H2B::RFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>F, G</td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>scaBP2/ neurD &gt; GFP; Dl7/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>H</td>\n      <td>sca::GFSTF/CyO</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 4</td>\n      <td>A-B</td>\n      <td>w1118</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>scaBP2/scaBP2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>C1</td>\n      <td>y,w, hs-Flp; UAS-ph::GFP/+; pnr&gt; Gal4/ UAS-MCFO1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>C3, D</td>\n      <td>y,w, hs-Flp; +/+; pnr&gt; Gal4 tub&gt; Gal80ts/UAS-MCFO1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>y,w,hs-Flp;UAS-RNAi-sca/+; pnr&gt; Gal4 tub&gt; Gal80ts/UAS-MCFO1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 5</td>\n      <td></td>\n      <td>y,w,hs-Flp;UAS-RNAi-sca/+; pnr&gt; Gal4 tub&gt; Gal80ts/UAS-MCFO1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 1</td>\n      <td></td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>scaBP2/scaBP2; neurp72&gt; Gal4,UAS-H2B::RFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 2</td>\n      <td></td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>scaBP2/scaBP2; neurp72&gt; Gal4,UAS-H2B::RFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 2\u2014figure supplement 1</td>\n      <td></td>\n      <td>neurD&gt; GFP/+; pnr&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>neurD&gt; GFP/+; pnr&gt; Gal4 tub&gt; Gal80ts/UAS- rac1N17</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>neurD&gt; GFP/UAS RNAi-sca; pnr&gt; Gal4 tub&gt; Gal80ts /+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3</td>\n      <td>A, F</td>\n      <td>neurD&gt; GFP/+; pnr&gt; Gal4 tub&gt; Gal80ts /+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>B, F</td>\n      <td>neurD&gt; GFP/+; pnr&gt; Gal4 tub&gt; Gal80ts/UAS- rac1N17</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>C, F</td>\n      <td>neurD&gt; GFP/UAS RNAi-sca; pnr&gt; Gal4 tub&gt; Gal80ts /+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>D, F</td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>E, F</td>\n      <td>scaBP2/scaBP2; neurp72&gt; Gal4,UAS-H2B::RFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 2\u2014figure supplement 2</td>\n      <td></td>\n      <td>sca::GFSTF/CyO</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 3\u2014figure supplement 1</td>\n      <td>A, C</td>\n      <td>scaBP2/+; neurp72&gt; Gal4,UAS-H2B::RFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>B, D</td>\n      <td>scaBP2/scaBP2; neurp72&gt; Gal4,UAS-H2B::RFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 3\u2014figure supplement 2</td>\n      <td>A</td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>scaBP2/scaBP2; neurp72&gt; Gal4,UAS-H2B::RFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>B</td>\n      <td>sca::GFSTF/UAS RNAi-Sca; pnr&gt; Gal4 tub&gt; Gal80 ts /+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>C</td>\n      <td>neurD&gt; GFP/+; pnr&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>neurD&gt; GFP/UAS RNAi-sca; pnr&gt; Gal4 tub&gt; Gal80ts /+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 3\u2014figure supplement 3</td>\n      <td>A, E</td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>B, E</td>\n      <td>neurD&gt; GFP/+; Dl7/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>C, E</td>\n      <td>scaBP2/+; neurp72&gt; Gal4,UAS-H2B::RFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>D, E</td>\n      <td>scaBP2/neurD &gt; GFP; Dl7/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 4\u2014figure supplement 1</td>\n      <td></td>\n      <td>UAS-ph::GFP/+; pnr&gt; Gal4 /+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>UAS-ph::GFP/UAS RNAi-Sca; pnr&gt; Gal4/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Video 1</td>\n      <td></td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 2\u2014video 1</td>\n      <td></td>\n      <td>neur&gt; ph (PLC\u03b4)::mRFP; pnr&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 2\u2014video 2</td>\n      <td></td>\n      <td>neur&gt; ph (PLC\u03b4)::mRFP/+; pnr&gt; Gal4 tub&gt; Gal80ts/UAS- rac1N17</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 2\u2014video 3</td>\n      <td></td>\n      <td>sca::GFSTF/+; neur&gt; ph (PLC\u03b4)::mRFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Video 2</td>\n      <td></td>\n      <td>neurD&gt; GFP/+; neurp72&gt; Gal4 tub&gt; Gal80ts/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>scaBP2/scaBP2; neurp72&gt; Gal4,UAS-H2B::RFP/+</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Figure 5\u2014video 1</td>\n      <td></td>\n      <td>UAS-RNAi-sca/+; pnr&gt; Gal4 tub&gt; Gal80ts/UAS-MCFO1</td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly strains\n\nStandard methods were used to maintain fly stocks. The Gal4/UAS expression system was used to express several constructions in the mechanosensory bristle lineage as listed in the key resources table. Two drivers were used: neuralisedp72> Gal4 (Bella\u00efche et al., 2001) expressed in SOPs and their descendants and pannier> Gal4 (Sato and Saigo, 2000) expressed in the dorsal most domain all along pupal stage. For temporal control of transgene expression, Gal4 drivers were combined with tub-Gal80ts. Crossed flies, developing embryos and larvae were maintained at 18 \u00b0C and then pupae were shifted to 30 \u00b0C to allow the expression of Gal4. For the conditional inactivation of sca and the ovexpression of Rac dominant negative form, the shift was done from 12 hr APF to 19 hr APF at the moment of the mitotic wave. To visualise SOP membranes specifically, we used a transgenic line expressing the pleckstrin homology domain of PLC\u03b4 fused to RFP (ph-RFP) under the control of the neur regulatory sequences neur> ph(PLC\u03b4)-RFP (Couturier et al., 2012).\n\n### MultiColor FlipOut (MCFO) labelling\n\nMCFO-1 flies (Nern et al., 2015) were crossed with UAS-RNAi-sca, pnr> Gal4, tubGal80ts. For the control, the crosses were maintained at 18 \u00b0C until the progeny reached adulthood. For conditional inactivation of sca, pupae were shifted to 30 \u00b0C between 12 hr APF to 19 hr APF, then returned to 18 \u00b0C until they reached adulthood. In both cases, adults were heat-shocked at 37 \u00b0C for 12.5 min (to activate flipase expression), then left for two days at 25 \u00b0C to allow the expression of tags. After removing the head, the flies were fixed in 4% paraformaldehyde for 48 hr and rinsed in T-PBS (0.1% Triton X100 in PBS). After dissection, thoracic ventral ganglions were incubated with primary antibodies overnight at 4 \u00b0C. After three T-PBS washes, ganglions were incubated with secondary antibodies for 1 hr at room temperature. Ganglions were mounted in Glycerol-PBS (80% glycerol in PBS) and imaged the same day.\n\n### Immunostaining\n\nDissected nota from pupae at 16 hr APF for Scabrous detection or 24 hr APF for axon labelling were processed as described previously (Gho et al., 1999). The antibodies used are described in the key resources table. Incubations with primary antibodies were done overnight at 4 \u00b0C and with the secondary antibodies for 1 hr at room temperature. Nota were mounted in Glycerol-PBS (80% glycerol in PBS, 1% propylgalate).\n\n### Confocal microscopy\n\nImmunostaining was observed with an Olympus BX41 fluorescence microscope (objective 40 X/1.30 or 63 X/1.25) equipped with a Yokogawa spinning disc and a CoolSnapHQ2 camera driven by Metaview software (Universal Imaging).\n\nFor co-immunodetection of Scabrous and Delta, images were acquired with a Leica SP8 confocal microscope, with the HC PL APO CS2 93 X/1.30 GLYC objective. We tuned the white light laser (WLL) to 650 nm for the excitation. The detector was a HyD. The pixel size was 0.087 \u00b5m and the z step size was 0.332 \u00b5m. Deconvolution was done with Huygens software. All images were processed with Fiji software (Schindelin et al., 2012).\n\n### Time-lapse recording\n\nIn vivo imaging was carried out as described previously (Gho et al., 1999). The temperature during the recording was controlled using a homemade Peltier device.\n\n### Video and image analysis\n\nThe division time of SOPs was analysed for each row with Fiji. The first dividing SOP (SOP0) provided the \u2018zero time\u2019. For other SOPs, the timing of division was calculated according to this temporal reference. SOP0 also defined the \u2018rank zero\u2019. The rank of neighbouring SOPs was incremented by one unit from this spatial reference. In order to compare several nota and take account for the neurogenic effect (the increase in the number of SOPs per row) observed in scaBP2, we measured the distance between SOPs. In scaBP2, the mean number of SOPs was 18 \u00b1 3 separated by a distance of 22 \u00b1 7.2 \u00b5m, while in other genetic backgrounds, there are 13 \u00b1 1 SOPs separated by a distance of 30 \u00b1 9 \u00b5m. For each graph, the metric rank corresponds to the rank multiplied by the mean distance between two SOPs.\n\n### Heatmaps\n\nSOPs, identified using fly lines with the neuralised fluorescent construction, in pupae from 15 hr APF were tracked by live imaging and the time of their division (identified as the anaphase mitotic figures) recorded. The position of cells at the moment of the division as well the relative time of division, encoded according to a rainbow scale, were used to construct each heatmap. The absolute time of division of the first cell which divides in each row was taken as temporal reference. In the dorsal thorax, no migration occurs, so cells keep roughly the same position during the period of live recordings.\n\n### Measurement of protrusion length\n\nLive recording from neur> ph(PLC\u03b4)-RFP pupae at 15 hr APF were obtained by combining (max intensity) z-stacks (series of confocal optical sections separated by 1 \u00b5m) acquired every 3 min using a 40 X oil immersion objective. For each SOP analysed, the protrusion extension area was calculated from the convex hull of the polygonal line enclosing the extremities of the longer protrusions at each time frame using Fiji software (Figure 2B).\n\n### Measurement of axon length\n\nThe length of axons in the nota and of the axon terminals in the thoracic ganglion was measured using the Simple Neurite Tracer plugin of Fiji software. To compare the axon lengths of all the nota, the lengths were normalised to the longest axon in each row. The position of the neuron in each row was defined in the same as in the analysis of time of division. To estimate the extent of axon terminal branching in the thoracic ganglion, we measured the length of primary branches between the root and the first branch point (see Figure 4 C2).\n\n### Cleaning reflex assay\n\nExperiments were performed on headless flies. After decapitation, flies were allowed to recover for 1 hr, then pasted at the tip of needle. The most posterior thoracic bristles in the square formed by the four dorso-central macroch\u00e6te and the left dorso-central macroch\u00e6te were stimulated by air puffs from an Eppendorf microinjector. Specifically, a 0.1 s puff of 15 hPa was delivered every 0.5 s for a minute. For each fly, the stimulation was done 10 times. The number of puffs required to elicit the first leg movement was counted and the mean for each fly was calculated and plotted.\n\n### Statistics\n\nFor the mitotic wave study, all statistical analyses were performed using statistical software R. To compare division time, Linear Mixed Models (LMM) were used. Normality of residuals and homoscedasticity were first assessed. Then LMM was performed using various variables. When a condition was found to be non-significantly different (e.g. Left or Right side of the notum) data were pooled but fly identification was maintained as a fix factor. For example, formula such as this one: lmer(TIME~ COND + POS+ ROW + (1|ID), data = data) was used to assess the impact of TIME according to POS (position) and COND (genetic condition in this example), corrected for ROW and for fly ID as a fixed factor. This test will yield significant influences of factors corrected by the others as well as p-values. Post-hoc analyses were performed for the factor (e.g. ROW) only when the overall model was significant for this factor. For behavioural statistical tests, LMM was used to consider behavioural repetitions using fly ID as a fixed factor and the repetition number. Unpaired t tests and Fisher\u2019s exact tests were done using Prism seven software.\n",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "ee142f23-4ae0-422f-b7a9-5b72dd65e93c",
+      "submission_id": "097cdb86-3826-4a56-b3a8-8ae525bdfe82",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sonia Sen, https://ror.org/04xf4yw96 Tata Institute for Genetics and Society India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75746.sa0](https://doi.org/10.7554/eLife.75746.sa0)\n\nThis study investigates development of the mechanosensory organ on Drosophila notum. It combines live imaging, mathematical modelling, genetics and behavioural analysis to show that, in the peripheral nervous system of Drosophila, entry of progenitor cells into mitosis is spatially and temporally controlled. The authors suggest that this ensures proper targeting of sensory neurons within the ventral nerve cord. This timing is important for axonogenesis and proper spatial arborization, ultimately influencing the animal's behaviour. The study will be of broad interest to those who work on the developmental of sense organs, and in general on the role of timing in development.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sonia Sen, https://ror.org/04xf4yw96 Tata Institute for Genetics and Society India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75746.sa1](https://doi.org/10.7554/eLife.75746.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A neural progenitor mitotic wave is required for asynchronous axon outgrowth and morphology\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Sonia Sen as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Claude Desplan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Tatsumi Hirata (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThis study investigates development of the mechanosensory organ on Drosophila notum using various genetic techniques. They combine live imaging, mathematical modeling, genetics and behavioral analysis to show that in the peripheral nervous system of Drosophila, entry of progenitor cells into mitosis is spatially and temporally controlled. This, the authors suggest, ensures proper targeting of sensory neurons within the ventral nerve cord. The study will be of broad interest to those who work on developmental processes, and particularly to those interested in sense organ development.\n\nWhile appreciating the quality of the work and its presentation, we have a few suggestions for the authors that they should be able to address within the time frame of a revision:\n\n1. Related to the model: There are some questions and concerns about the model that have been raised in two of the reviews. They are largely clarification issues. Could the authors please respond to each of them in their revised version? The individual points can be found in the detailed reviews below.\n\n2. All three reviewers raised concerns about possible effect the genetic perturbations might have on bristle development in general. This would have implications for the axogenesis phenotypes that the authors report. So, could the authors check that this is not the case? For example, they could put the directly driven neur-H2B::RFP in their genetic background and look at the characteristic arrangement and size of the bristle lineage nuclei; or stain it with markers such as pros, cut, elav, or any others of their choice that report cell fate identities within an SOP lineage.\n\n3. Finally, there are concerns that in some cases, for example in the of timing of the mitotic wave and its effect on axogenesis, the interpretations of the data are too strongly made. The authors should revisit the text in these sections (Please read the individual reviews for the detailed comments.)\n\nReviewer #1 (Recommendations for the authors):\n\nWe found the study to be interesting, thoroughly executed, well documented, and a pleasure to read. We have a few comments and concerns, which I'm sure the authors should be able to address.\n\nRelated to the model\n\n\u2013 Is there any interaction between the rows? If SOPs are extending filopodia in all directions, one would expect the wave to move concentrically, and not in the A-P axis.\n\n\u2013 One of the predictions from this would be that the level of the inhibitor (Sca) should also follow a wave like progression \u2013 start off high in a G2 arrested SOP and drop off as the SOP divides. From the expression patterns shown, this is not possible to see, and the live imaging of Sca:GFP shows only one or two SOPs. Could the authors please comment on this?\n\n\u2013 If all SOPs are creating both the activator and the inhibitor, why does self-inhibition not occur?\n\n\u2013 The authors mention an acceleration of division with time. We could not see this clearly in the experimental data, but also don't understand what, in the model, might result in it. While section 1 in the Model Description attempts to explain this acceleration with a simpler example, in case of the activator-inhibitor model the \"acceleration\" behaviour seems to depend on the threshold theta. Specifically, whether theta is below r/(1+2*mu) or between r/(1+2*mu) and r/(1+mu) seems to dictate whether the wave will have an acceleration or an asymptotically constant velocity respectively. Could the authors please verify/comment on this?\n\n\u2013 Could the authors also elaborate on how they solved the equations (numerical scheme, initial conditions, boundary conditions) in the model description supplement? Specifically in the activator-inhibitor model, what were the boundary conditions used?\u00a0The value of theta seems to be unmentioned in the figures both in the main article and the model description. This might be useful for others who want to take a similar approach in other systems.\n\n\u2013 If inhibition stops upon losing contact, then the inhibition from cell k to its neighbours, and the inhibition from the neighbours to cell k, should all go to zero. This effect is better captured by a multiplication of Heaviside theta functions i.e. H(A_{K+1} \u2013 theta) * H(A_{k} \u2013 theta) + H(A_{k-1} \u2013 theta) * H(A_{k} \u2013 theta). Making this change allowed us to reproduce the figures in the article while the original equations did not yield the same results. Could the authors please comment on this?\n\nRelated to axon targeting and behaviour\n\n\u2013 We were concerned that some of the phenotypes might be due to inappropriate cell fate specification in the SOP due to the manipulation of the notch pathway. Can the authors show that this is not affected?\n\nGeneral\n\n\u2013 In the introduction, could the authors please talk about SOP cell division and fates, and the role of the notch pathway in it? This will help the reader interpret their results in the context of the entire process.\n\nReviewer #2 (Recommendations for the authors):\n\n1) This is a hypothesis-driven paper. Individual phenotypes caused by gene manipulations look coherent only based on several hypotheses provided by the authors, but each hypothesis is not well supported by previous or present studies. Even though this reviewer generally agrees that original speculation and interpretation should be more highly appreciated and included in papers, and also that the hypotheses in this manuscript serve as a good guide for readers to digest the contents, some parts of the manuscript are just too assertive. Hypothetical arguments should be addressed as hypothetical. A few details are explained below.\n\n2) The live analysis of mitosis timing is the strength of this study. Although the mitotic wave is not very clear in the heat-mapped pictures, the quantified data and the simple mathematical model help convincing understanding of the wave. The model intuitively explains the difference of characters in the wave propagation from the origin to second cells and that among other further SOPs. Although the authors discuss that the mitotic origin is determined by other mechanism, I still do not understand why the second origin does not appear upon suppression of the inhibitory signal. Or does it in fact appear? Notch-signaling mutants generally have more bristles in the thorax. Does this phenotype actually influence the analysis of scabrous mutants? The authors should discuss them in the paper.\n\n3) In scabrous mutants, the mitotic wave is disrupted, but is not abandoned or synchronized. The word choice should be more careful. The critical caveat of the scabrous mutants is that positions of mitotic origin are not the same as those in the wild-type (Figure S2). This means that the mutation somehow affected cell-intrinsic characters of SOP cells themselves. Therefore, the mutant phenotypes described later cannot be attributed solely to changes of mitotic timing. Does the RNAi mutant show a similar distribution of the origins?\n\n4) The cytoplasmic protrusions may be a candidate of cell-cell-communication, but this hypothesis still lacks experimental support in the SOP system. Because Rac1 is pleiotropic, it is similarly possible that the dominant negative form affected other aspects of the cells. The authors should be clearer about the limitations. Rephrase the conclusive subtitle of this paragraph.\n\n5) The association between neuron generation timing and axon patterns has no supportive evidence at this moment. It is a pure speculation with no ground. The paper by Usui-Ishihara and Simoson referred in this manuscript examines inter-raw but not intra-raw differences. They used the length of bristles as an indirect scale of differentiation timing but did not examine the birth timing of the cells per se. Top of that, these authors only discussed the rough correlation in a few sentences in the paper. In this regard, this manuscript's claim that axonal patterning is altered because of the change of mitotic timing is obviously overstatement and misleading to readers.\n\nReviewer #3 (Recommendations for the authors):\n\nThere are a number of points where the clarity and presentation of the manuscript could be improved:\n\n1. In Figure 1C, the authors use a linear regression to fit the data from individual SOP row, while in 1D the combined data from all three row is fitted with their model. However, no explanation is given for the difference in fit (linear vs non-linear) in the individual versus combined data. This should briefly be clarified in the text and/or theory supplement.\n\n2. The data motivating the assumptions used to build the model should be better introduced. On line 02-to-06, the authors state these assumptions, but without further explanations the choice of model seems rather arbitrary. In order not to break the flow of the manuscript, the authors could refer in the results to a more detailed section in the methods where they explain the thinking behind their model and cite the relevant literature.\n\n3. In general, it would be helpful to the reader to write the GAL4 driver used for the experiments in the actual Figures (e.g. 2A, 5B\u2026).\n\n4. Figure 4C, D: what developmental stage is this? It should be clearly indicated in the legend or main text.\n\n5. For the experiments where tubG80ts is used to temporally control sca-RNAi and dominant-negative Rac, it would be useful to state the timings in the Figure legends or indicate it on the figures themselves. These details are important to exclude confounding effects due to interference with other aspects of bristle development than the mitotic wave.\n",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "78bf1ff5-d215-40b9-a367-576dbc74f186",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C1",
+      "claim": "In the dorsal thorax of Drosophila, rows of mechanosensory organs originate from the division of sensory organ progenitor (SOPs).",
+      "claim_type": "EXPLICIT",
+      "source": "In the dorsal thorax of Drosophila, rows of mechanosensory organs originate from the division of sensory organ progenitor (SOPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract describing the biological system studied, supported by established knowledge of Drosophila development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "31175334-68de-48ef-b0d2-fa656a3c18eb",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C2",
+      "claim": "In each row of the notum, an anteromedial located central SOP divides first, then neighbouring SOPs divide in a centrifugal wave pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that in each row of the notum, an anteromedial located central SOP divides first, then neighbouring SOPs divide, and so on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by live imaging data presented in Figure 1 and Video 1, showing the temporal and spatial pattern of SOP divisions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "8d744ec7-22c0-4eb4-b89b-ad0a54e9a789",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C3",
+      "claim": "The centrifugal wave of mitoses depends on cell-cell inhibitory interactions mediated by SOP cytoplasmic protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "This centrifugal wave of mitoses depends on cell-cell inhibitory interactions mediated by SOP cytoplasmic protrusions and Scabrous, a secreted protein interacting with the Delta/Notch complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that manipulation of protrusions (rac1N17 overexpression) affects the mitotic wave, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "e751a166-5231-4dd7-93cb-ba62fedb4238",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C4",
+      "claim": "The centrifugal wave of mitoses depends on Scabrous, a secreted protein interacting with the Delta/Notch complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This centrifugal wave of mitoses depends on cell-cell inhibitory interactions mediated by SOP cytoplasmic protrusions and Scabrous, a secreted protein interacting with the Delta/Notch complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genetic experiments with scaBP2 mutants and RNAi knockdown showing altered mitotic wave patterns, as presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "2e51932e-8c79-4107-96c3-b7ca86ed9845",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C5",
+      "claim": "When the mitotic wave was reduced, axonal growth was more synchronous.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when this mitotic wave was reduced, axonal growth was more synchronous, axonal terminals had a complex branching pattern and fly behaviour was impaired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by axon length measurements at 24 hr APF in control and scaBP2 pupae shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "76aabf2b-9bfa-4f5c-92ec-143ea85fc7d1",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C6",
+      "claim": "When the mitotic wave was reduced, axonal terminals had a complex branching pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when this mitotic wave was reduced, axonal growth was more synchronous, axonal terminals had a complex branching pattern and fly behaviour was impaired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MCFO labeling data showing increased branching in RNAi-sca conditions, as presented in Figure 4C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "fde6a791-777e-4664-befa-a28c5f6b52f0",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C7",
+      "claim": "When the mitotic wave was reduced, fly behaviour was impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when this mitotic wave was reduced, axonal growth was more synchronous, axonal terminals had a complex branching pattern and fly behaviour was impaired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cleaning reflex assay data showing that flies with disrupted mitotic waves require more air puffs to elicit a response, as shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "4b222d17-0073-4023-a35f-7169eea8766e",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C8",
+      "claim": "The temporal order of progenitor divisions influences the birth order of sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the temporal order of progenitor divisions influences the birth order of sensory neurons, axon branching and impact on grooming behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between mitotic wave timing and axon length measurements shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "23626656-0bb4-4058-bf6a-1601455cfc6e",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C9",
+      "claim": "The temporal order of progenitor divisions influences axon branching.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the temporal order of progenitor divisions influences the birth order of sensory neurons, axon branching and impact on grooming behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that disruption of the mitotic wave leads to altered axon terminal morphology, as shown in Figure 4C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "c8215b6f-2ec0-4f4a-a6d0-675c3f2085e9",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C10",
+      "claim": "The temporal order of progenitor divisions impacts grooming behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the temporal order of progenitor divisions influences the birth order of sensory neurons, axon branching and impact on grooming behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral assay data showing impaired cleaning reflex when the mitotic wave is disrupted, as presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "1bd63a35-ae58-484d-ac13-309f0efb1e5d",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C11",
+      "claim": "Developmental timing controls axon wiring neural diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support the idea that developmental timing controls axon wiring neural diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined observations of mitotic wave timing, axon morphology, and behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "67fa6c76-0d9f-4b37-b387-80fd4ef97b30",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C12",
+      "claim": "In the dorsal region of the thorax (notum), SOPs appear sequentially from five parallel proneural rows: first rows 5, followed by rows 1 and 3 and finally rows 2 and 4.",
+      "claim_type": "EXPLICIT",
+      "source": "In the dorsal region of the thorax (notum), SOPs appear sequentially from five parallel proneural rows: first rows 5, followed by rows 1 and 3 and finally rows 2 and 4 (Usui and Kimura, 1993; Corson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by Usui and Kimura, 1993 and Corson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "7096dd1a-add6-4109-9630-decb4956caac",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C13",
+      "claim": "SOPs selection involves Notch-dependent lateral inhibition from 6 to 12 hr after pupal formation (APF).",
+      "claim_type": "EXPLICIT",
+      "source": "SOPs selection involves Notch-dependent lateral inhibition from 6 to 12 hr after pupal formation (APF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila SOP development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "c4a14878-fe71-4434-9e5d-59a8d0f7404e",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C14",
+      "claim": "At 16.5 hr APF, SOPs resume the cell cycle and divide to generate a posterior secondary precursor cell (pIIa) and an anterior secondary precursor cell (pIIb).",
+      "claim_type": "EXPLICIT",
+      "source": "Then, at 16.5 hr APF, SOPs resume the cell cycle and divide to generate a posterior secondary precursor cell (pIIa) and an anterior secondary precursor cell (pIIb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila SOP development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "d733e4d7-cd82-4dea-8588-db069fdf1546",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C15",
+      "claim": "After subsequent asymmetric cell divisions, pIIa and pIIb give rise to the external (the socket and the shaft cells) and internal (the neuron, the sheath, and the glial cell) cells respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "After subsequent asymmetric cell divisions, they give rise to the external (the socket and the shaft cells) and internal (the neuron, the sheath, and the glial cell) cells respectively (Gho et al., 1999; Fichelson and Gho, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by Gho et al., 1999 and Fichelson and Gho, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "36433810-7808-4b0b-a9ef-2f53869f6600",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C16",
+      "claim": "During organogenesis, the bipolar neurons project their dendrite toward the base of the bristle, and their axons toward the ventral thoracic ganglion.",
+      "claim_type": "EXPLICIT",
+      "source": "During organogenesis, the bipolar neurons project their dendrite toward the base of the bristle, and their axons toward the ventral thoracic ganglion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila mechanosensory neuron development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "f8b318a6-d7ca-4057-a386-71c5b8f66c30",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C17",
+      "claim": "The axons enter the ganglion through the posterior dorsal mesothoracic nerve root and extend branches anteriorly and posteriorly.",
+      "claim_type": "EXPLICIT",
+      "source": "The axons enter the ganglion through the posterior dorsal mesothoracic nerve root and extend branches anteriorly and posteriorly (Ghysen, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Ghysen, 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "a698e110-f231-4c06-8353-4147a2b75c9e",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C18",
+      "claim": "The microch\u00e6tes from earlier born rows are more branched and arborised over a greater area within the neuropil than those from later born rows.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the microch\u00e6tes form the earlier born rows are more branched and arborised over a greater area within the neuropil than those from later born rows (Ghysen, 1980; Usui-Ishihara and Simpson, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by Ghysen, 1980 and Usui-Ishihara and Simpson, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "3cdf3791-dfd0-44a6-9e49-2bcefe33d6be",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C19",
+      "claim": "In adult flies, mechanical stimulation of thoracic bristles induces a cleaning reflex in which the first or third leg sweeps the stimulated area.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult flies, mechanical stimulation of thoracic bristles induces a cleaning reflex in which the first or third leg sweeps the stimulated area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "7382d7f4-bc61-41be-b0cd-af37b817e3d0",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C20",
+      "claim": "The cleaning reflex requires the correct connectivity of the bristle neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This reflex requires the correct connectivity of the bristle neurons (Corfas and Dudai, 1989; Ghysen, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by Corfas and Dudai, 1989 and Ghysen, 1980.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "2f9376e0-2f24-421c-a223-55f58c640d9b",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C21",
+      "claim": "Scabrous is a secreted fibrinogen like protein that interacts physically with N and Dl and modulates their activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Scabrous is a secreted fibrinogen like protein that interacts physically with N and Dl and modulates their activities (Mok et al., 2005),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Mok et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "f3b64e22-1d0f-437a-87b2-ba13b393e634",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C22",
+      "claim": "In the notum, sca mutants have an excess of bristles, a phenocopy of N mutants, indicating that Sca positively modulates N-activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the notum, sca mutants have an excess of bristles, a phenocopy of N mutants, indicating that Sca positively modulates N-activity (Renaud and Simpson, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Renaud and Simpson, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "5a6dd48b-220e-4870-8491-375378263150",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C23",
+      "claim": "In wing discs, ectopic expression of sca inhibits N-pathway by reducing the interactions with its ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "In wing discs, ectopic expression of sca inhibits N-pathway by reducing the interactions with its ligands (Lee et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Lee et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "c3cb8ae8-2998-4c7a-b9cc-493a2a6187f3",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C24",
+      "claim": "The first cell in each row to divide (SOP0) was located in the anteromedial region of each row.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the SOP0 cells were located in the anteromedial region of each row and generally, the more distant a SOP was from its corresponding SOP0, the later it divided (Figure 1A\u2013B, Figure 1\u2014figure supplement 1A and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live imaging data shown in Figure 1A-B, Figure 1\u2014figure supplement 1A and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "9cfa98f6-3015-4286-936b-8daf570a9dee",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C25",
+      "claim": "The more distant a SOP was from its corresponding SOP0, the later it divided.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the SOP0 cells were located in the anteromedial region of each row and generally, the more distant a SOP was from its corresponding SOP0, the later it divided (Figure 1A\u2013B, Figure 1\u2014figure supplement 1A and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live imaging data and quantitative analysis shown in Figure 1A-B, Figure 1\u2014figure supplement 1A and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "059dcd01-1586-49db-9109-1ce66d7031f2",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C26",
+      "claim": "All SOPs in a row divided in two hours for all rows analysed.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, all SOPs in a row divided in two hours for all rows analysed (Figure 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of division timing shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "d962401d-f53a-4ea3-8395-7cd76dde1ebe",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C27",
+      "claim": "No statistical difference was found between the rate of the mitotic waves in rows 1, 2, and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "No statistical difference was found between the rate of the mitotic waves in rows 1, 2, and 3 (p = 0.3954, ANOVA)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis (ANOVA) of the mitotic wave rates across different rows.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "8fafb236-eba7-4e7e-aee1-39688c8ff061",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C28",
+      "claim": "No statistical difference was found between left and right rows.",
+      "claim_type": "EXPLICIT",
+      "source": "or between left and right rows (p = 0.3038, ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis (ANOVA) comparing left and right sides of the notum.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "52d5e4ec-3f71-47ca-b9f5-a114095d4e64",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C29",
+      "claim": "No statistical difference was found between the rates of the anterior and posterior mitotic waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, no statistical difference was found between the rates of the anterior and posterior mitotic waves (p = 0.0689, ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis (ANOVA) comparing anterior and posterior wave propagation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "e53361ed-b1ea-4d55-9249-64bbe65dbcc8",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C30",
+      "claim": "For control conditions, the mean rate of the mitotic wave is 3.14 \u00b5m min\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "For control conditions, this gives for the mean rate 3.14 \u00b5m min\u20131 (see Figure 1 and ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement derived from the data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "330082b1-8744-45f5-86bb-058d63c4daa8",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C31",
+      "claim": "SOPs produce dynamic actin-based protrusions several cell diameters in length that physically interact with protrusions from neighbouring SOPs and epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "SOPs in each row are actually separated by three to four epithelial cells, but SOPs produce dynamic actin-based protrusions several cell diameters in length that physically interact with protrusions from neighbouring SOPs and epithelial cells (Figure 2A left) (Cohen et al., 2010; Hunter et al., 2016; Renaud and Simpson, 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data in Figure 2A and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "c2b9d6aa-b04c-475d-947c-59cb5cbfaaa5",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C32",
+      "claim": "When SOPs divide, they become spherical and protrusions are drastically reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "When SOPs divide, they become spherical and protrusions are drastically reduced (Figure 2\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live imaging data shown in Figure 2\u2014video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "5e8ba7eb-afb8-47c3-b402-ebe35054177e",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C33",
+      "claim": "Overexpression of Rac1N17 results in shorter SOP protrusions than in the control.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, SOP protrusions were shorter than in the control (Figure 2C, p < 0.0001, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative measurements of protrusion extension area shown in Figure 2C with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "9d61aedb-5d15-41cb-a99b-488184f9f1a8",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C34",
+      "claim": "SOPs with shorter protrusions divide more synchronously than in the control.",
+      "claim_type": "EXPLICIT",
+      "source": "we observed that SOPs with shorter protrusions divide more synchronously than in the control (Figure 2E, mitotic wave rate 6.95 \u00b5m min\u20131).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of division timing in rac1N17 conditions shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "71be593d-30e0-4f52-a881-b134b8fd4b4e",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C35",
+      "claim": "In flies with short SOP protrusions, all SOPs in a row divided within one hour for all rows analysed.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, all SOPs in a row divided within one hour for all rows analysed (Figure 2E, Row 1 p < 0.0001; Row 2 p = 0.0292, Row 3 p = 0.0014, ANOVA, and Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis with statistical significance shown in Figure 2E and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "52814452-9efc-4902-92ac-fa222ca3756a",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C36",
+      "claim": "In the scaBP2 mutant, SOPs divided more simultaneously than in the control.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, in the scaBP2 mutant, SOPs divided more simultaneously than in the control (Row 1, p = 0.0015; Row 2, p = 0.0029; Row 3, p = 0.0014, ANOVA, Figure 3A\u2013B, Figure 1\u2014figure supplement 1, Figure 3\u2014figure supplement 2A, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis with statistical significance shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "8473f22a-c8dd-4c61-ba0a-917856475036",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C37",
+      "claim": "Row one in scaBP2 divided in one-third of time taken for the control SOP row to divide.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Row one in scaBP2 divided in one-third of time taken for the control SOP row to divide, and the rate of the wave increased to 20.27 \u00b5m min1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement comparing division timing between scaBP2 and control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "30629ee8-5f10-4843-967d-b9648aadba6c",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C38",
+      "claim": "The change in mitotic wave in scaBP2 was not associated with change in the cell fate of the sensory organs.",
+      "claim_type": "EXPLICIT",
+      "source": "This change was not associated with change in the cell fate of the sensory organs (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell fate marker analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "e011394c-08ec-48ec-82f5-6d36a32f1087",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C39",
+      "claim": "No difference was found between scaBP2 and control SOP protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "This Sca-mediated inhibition is not likely to be related to protrusion length shortening because no difference was found between scaBP2 and control SOP protrusions (Figure 2D and see Renaud and Simpson, 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative measurements shown in Figure 2D and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "3bbb0877-a6a1-4054-96c7-cede5599427c",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C40",
+      "claim": "When sca expression was specifically downregulated using a conditional RNAi strategy between 12 and 19 hr APF, the mitotic wave was flattened.",
+      "claim_type": "EXPLICIT",
+      "source": "In these conditions, as in null mutant, we again observed that the mitotic wave was flattened (Figure 2\u2014figure supplement 1C; Figure 3\u2014figure supplement 2C; Row 1, p < 0.0001; Row 2, p = 0.69; Row 3, p = 0.003, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis with statistical significance shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "4b1c169c-45d5-471c-a0aa-d3a732334b4a",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C41",
+      "claim": "Sca transported through cell protrusions specifically controls the wave of SOP mitoses along the rows.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Sca transported through cell protrusions specifically controls the wave of SOP mitoses along the rows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined genetic and imaging experiments with sca mutants and RNAi.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "4ea3ec35-7bfe-4062-99b4-a28694cc8cd1",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C42",
+      "claim": "In Dl7/+ heterozygous background, no statistically significant reduction in the mitotic wave rate was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe a statistically significant reduction in the mitotic wave rate in Dl7/+ SOPs (Figure 3D, p = 0.69, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "64c1914a-6284-418c-9e71-7a4418baec87",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C43",
+      "claim": "No difference in the rate of the SOP division wave was observed in the scaBP2/+ heterozygous line.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we did not observe any difference in the rate of the SOP division wave in the scaBP2/+ heterozygous line (Figure 3E, p = 0.71, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "71020a50-994f-4ced-ad46-f1de41071d2b",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C44",
+      "claim": "When the gene dosage of both sca and Dl was reduced by half, the time-rank curves were flattened corresponding to a significant increase in the mitotic wave rate (from 3.14 to 43.35 \u00b5m min-1).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, when the gene dosage of both sca and Dl was reduced by half, the time-rank curves were flattened corresponding to a significant increase in the mitotic wave rate (from 3.14 to 43.35 \u00b5m min-1) (Figure 3F, p = 0.048, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis with statistical significance shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "305e534c-6d23-43c7-b4a0-cf20c43148af",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C45",
+      "claim": "sca and Dl genetically interact to control the SOP mitotic wave.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that sca and Dl genetically interact, which suggests that these factors act in concert to control the SOP mitotic wave.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic interaction experiments showing synergistic effects in double heterozygotes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "cbbb5011-d5b0-4c42-8820-271950b5b887",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C46",
+      "claim": "Dl and Sca co-localise in vesicle-like structures inside the cytoplasm with Dl surrounding the Sca staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that Dl and Sca co-localise in vesicle-like structures inside the cytoplasm with Dl surrounding the Sca staining (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence imaging data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "7c58570c-3edb-43aa-86a4-b21468e2bb24",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C47",
+      "claim": "The wave of SOP mitoses along rows depends on an inhibitory signal transmitted by protrusions from the progenitors and is controlled by Dl and Sca proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results show that the wave of SOP mitoses along rows depends on an inhibitory signal transmitted by protrusions from the progenitors and is controlled by Dl and Sca proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the combined experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "4fb2ae6a-4a80-48e5-97ea-465ce3be5063",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C48",
+      "claim": "In control pupae, the axon length varied along the antero-posterior axis, with neurons located at the extremities having shorter axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In control pupae, the axon length varied along the antero-posterior axis. Indeed, within a row, more the neurons were located at the extremities, the shorter their own axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by axon length measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "af08baf3-2c77-4dbe-85eb-a148a107e720",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C49",
+      "claim": "In scaBP2 animals, the length of the axon along a row was significantly more homogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in scaBP2 animals, the length of the axon along a row was significantly more homogeneous (Figure 4B, p = 0.0232, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis with statistical significance shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "66d6c04b-68b0-4bf7-b0a2-b3895d061652",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C50",
+      "claim": "The mitotic wave of SOP division controls axonogenesis timing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mitotic wave of SOP division controls axonogenesis timing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the correlation between mitotic wave disruption and axon length homogeneity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "957014e5-3bec-4599-a444-ca326702673c",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C51",
+      "claim": "In control flies, 11% of ganglia analysed had a second medial commissure.",
+      "claim_type": "EXPLICIT",
+      "source": "In 11% of ganglia analysed in control flies a second medial commissure was observed (Figure 4\u2014figure supplement 1 arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from anatomical analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "2124f044-509b-4c47-9976-86ae02e03941",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C52",
+      "claim": "In flies in which the mitotic wave was disrupted after sca downregulation (RNAi-sca), the percentage of ganglia with a medial commissure increased to 34%.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in flies in which the mitotic wave was disrupted after sca downregulation (RNAi-sca), this percentage increased to 34% (Figure 4\u2014figure supplement 1, p = 0.0002, Fisher's exact test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis with statistical significance shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "cdf1f5c4-14e7-4270-bf16-26e76a5c9cc7",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C53",
+      "claim": "In control flies, individual axon terminals have two main primary branches, an anterior branch that does not cross the midline and a posterior branch that crosses the midline.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed in control flies that individual axon terminals have two main primary branches, an anterior branch that does not cross the midline and a posterior branch that crosses the midline (Figure 4 C1 and C3 top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MCFO labeling data shown in Figure 4 C1 and C3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "46bbebe7-9015-41f0-be1c-65b552680e5f",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C54",
+      "claim": "In RNAi-sca animals, axon terminals are more branched.",
+      "claim_type": "EXPLICIT",
+      "source": "In RNAi-sca animals, we observed that axon terminals are more branched (Figure 4 C3 bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 4 C3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "96c822e4-ee8a-45c9-b3f2-8aab9a6de432",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C55",
+      "claim": "The lengths of primary anterior and posterior branches of RNAi-sca axons were significantly shorter than those of control axons.",
+      "claim_type": "EXPLICIT",
+      "source": "The lengths of primary anterior and posterior branches, between the root and the first branch point (Figure 4 C2), of RNAi-sca axons were significantly shorter than those of control axons (Figure 4D, p < 0.0001 and p = 0.0001 respectively, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative measurements with statistical significance shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "cc008397-7292-4453-b704-0a38cafd05d1",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C56",
+      "claim": "The timing of axonogenesis is likely to be an important factor controlling axon branching.",
+      "claim_type": "EXPLICIT",
+      "source": "As primary branches were shorter when SOP division occurred simultaneously on the notum, the timing of axonogenesis is likely to be an important factor controlling axon branching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between synchronous SOP division and altered axon branching patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "cf9ecf82-baa9-485b-8db7-e9390a0d7728",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C57",
+      "claim": "The order of birth of neurons in a given row contributes to the future connectivity of these neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, our results led us to hypothesise that the order of birth of neurons in a given row contributes to the future connectivity of these neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observed correlation between birth order and axon morphology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "a915fa02-7634-46b5-a3e9-3fe983104195",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C58",
+      "claim": "When the SOP mitotic wave was impaired, the number of air puffs required to elicit a leg response was significantly higher than in control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "When the SOP mitotic wave was impaired, after specific downregulation of sca during the wave, we found that the number of air puffs required to elicit a leg response was significantly higher than in control flies (Figure 5B, p = 0.028, ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral assay data with statistical significance shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "1f045b7b-0732-4857-9846-4f413661cf83",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C59",
+      "claim": "The temporal order of neural precursor cells division impact on neuronal cell diversity and ultimately on behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results show that the temporal order of neural precursor cells division impact on neuronal cell diversity and ultimately on behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the combined results on mitotic wave, axon morphology, and behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "febc05c7-1967-4b41-ade5-f8baa042acf4",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C60",
+      "claim": "Asynchrony in mitotic reactivation timing has been described in Drosophila larva neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Asynchrony in mitotic reactivation timing has been described in Drosophila larva neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila neuroblast development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "ffd63beb-2874-4834-9ea1-044307430da3",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C61",
+      "claim": "G2-arrested neuroblasts resume mitosis earlier than those in G0-arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "G2-arrested neuroblasts resume mitosis earlier than those in G0-arrest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila neuroblast cell cycle regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "964588b5-c138-42e1-84e0-843a746e7f80",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C62",
+      "claim": "The particular order of neuroblast division ensures that neurons form appropriate functional wiring.",
+      "claim_type": "EXPLICIT",
+      "source": "As in our system, it has been proposed that this particular order of division ensures that neurons form appropriate functional wiring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal from previous work that is being compared to the current findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "d153785f-3936-4e1b-9ad4-496cd1a4ffe6",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C63",
+      "claim": "Temporal processes controlling the wiring of peripheral receptors with the central nervous system have been described in the Drosophila eye.",
+      "claim_type": "EXPLICIT",
+      "source": "It is relevant that other temporal processes controlling the wiring of peripheral receptors with the central nervous system have been described in the Drosophila eye, another highly organised structure (Fernandes et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Fernandes et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "445d0310-0ce8-4699-88a2-a273e391113a",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C64",
+      "claim": "Temporal patterning mechanisms of neurogenesis could be more widespread than currently identified only in organised tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable that these temporal patterning mechanisms of neurogenesis, to date identified only in organised tissues, could be more widespread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential generality of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "60169223-f66e-4923-ba4f-ec3ff716571b",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C65",
+      "claim": "The cleaning reflex was significantly affected by altering the timing of microchaete precursor division in the dorsal thorax.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, it is remarkable that this fly behaviour was significantly affected by altering the timing of microchaete precursor division in the dorsal thorax.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the behavioral assay data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "eac8810c-cba0-4c50-a0c3-138fe5164a58",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C66",
+      "claim": "The SOP mitotic wave leads to a progressive neurogenesis along each row of microchaetes.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the SOP mitotic wave leads to a progressive neurogenesis along each row of microchaetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between mitotic wave timing and axon length measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "a120f3fc-8a3a-4dfc-89df-c148709f90e4",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C67",
+      "claim": "Progressive neurogenesis would likely induce a particular pattern of microch\u00e6te axon arrival in the thoracic ganglion required for the proper organisation of the neuropila in the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, would likely induce a particular pattern of microch\u00e6te axon arrival in the thoracic ganglion required for the proper organisation of the neuropila in the central nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the observed progressive neurogenesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "05b0733b-8f0a-431a-9478-a75c5a70e515",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C68",
+      "claim": "When sca function was specifically downregulated during the SOP mitotic wave, axonogenesis occurs almost simultaneously in each row of microchaetes.",
+      "claim_type": "EXPLICIT",
+      "source": "In any case, we show here that, when sca function was specifically downregulated during the SOP mitotic wave, axonogenesis occurs almost simultaneously in each row of microchaetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the axon length homogeneity data in scaBP2 and RNAi-sca conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "fdba9812-c94d-415a-bad8-873e8c82a805",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C69",
+      "claim": "Simultaneous axonogenesis impairs the pattern of axon arrival into the ganglion leading to ectopic axon branching and changes in fly behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "This certainly impairs the pattern of axon arrival into the ganglion leading to ectopic axon branching and changes in fly behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined observations of altered axon morphology and impaired behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "6449c038-75b3-4b4c-b321-41ef1827c7dc",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C70",
+      "claim": "The anteromedial region corresponds approximately to the posterior limit of expression of the transcription factor BarH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the anteromedial region corresponds approximately to the posterior limit of expression of the transcription factor BarH1 (Sato et al., 1999), no factors specifically expressed in this region have yet been identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Sato et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "dfe7a626-93ee-4103-a6e2-d7f7b2029e7c",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C71",
+      "claim": "SOP0 may be selected by an emergent process related to cell-cell interaction in the epithelium, rather than by a passive pre-pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, as the location of SOP0 is modified when Sca function was impaired, an interesting possibility is that SOP0 is selected by an emergent process related to cell-cell interaction in the epithelium, rather than by a passive pre-pattern that organises the first events in the notum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the observation that SOP0 location changes in sca mutants.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "3ce7efb0-4180-4fac-9421-0cfe06918846",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C72",
+      "claim": "In proneural clusters, cells that express high levels of Dl and Sca become SOPs, while surrounding epithelial cells activate the N-pathway to prevent acquisition of a neural fate.",
+      "claim_type": "EXPLICIT",
+      "source": "In proneural clusters, cells that express high levels of Dl and Sca become SOPs, while surrounding epithelial cells activate the N-pathway to prevent acquisition of a neural fate (Muskavitch, 1994; Renaud and Simpson, 2001; Buffin and Gho, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "e53650f6-d103-4f02-afed-0c4636084f64",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C73",
+      "claim": "In eye and notum systems, Sca modulates N-activity at a long range.",
+      "claim_type": "EXPLICIT",
+      "source": "In eye and notum systems, Sca modulates N-activity at a long range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Scabrous function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "65dcf165-b066-419b-9a90-0dcfa27917fe",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C74",
+      "claim": "During eye development, sca is expressed in intermediate clusters in the morphogenic furrow and transported posteriorly in vesicles through cellular protrusions to negatively control ommatidial cluster rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, during eye development, sca is expressed in intermediate clusters in the morphogenic furrow and transported posteriorly in vesicles through cellular protrusions to negatively control ommatidial cluster rotation (Chou and Chien, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Chou and Chien, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "e381a1dd-fa62-491a-b08c-1cbfaa152cc6",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C75",
+      "claim": "In the notum, SOP protrusions extend beyond several adjacent epithelial cells in which Dl and Scabrous are detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the notum, SOP protrusions extend beyond several adjacent epithelial cells in which Dl and Scabrous are detected (Renaud and Simpson, 2001 and this study).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and data from the current study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "b10d0180-4803-444c-9311-6b23c93a1bb2",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C76",
+      "claim": "Sca, required to maintain SOPs in G2 arrest, is delivered focally through protrusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since, we do not observe a reduction of the global level of sca expression associated with the wave progression, it is plausible that Sca, required to maintain SOPs in G2 arrest, is delivered focally through protrusions that are difficult to follow with in vivo analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the observations about Sca localization and protrusion function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "cf7cb3f5-fb3d-418c-90c7-0904de4f3d36",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C77",
+      "claim": "G2 arrest in SOP cells is due to the downregulation of the promitotic factor Cdc25/String.",
+      "claim_type": "EXPLICIT",
+      "source": "As in neuroblasts, G2 arrest in SOP cells is due to the downregulation of the promitotic factor Cdc25/String.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cell cycle regulation in SOPs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "84c992e3-7fa2-4c32-a6fa-47d1c31329a0",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C78",
+      "claim": "Overexpression of string in SOPs induces a premature entry into mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, overexpression of string in SOPs induces a premature entry into mitosis (Ayeni et al., 2016),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Ayeni et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "3c921e0a-0937-43da-a6fe-0968723e494e",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C79",
+      "claim": "Overexpression of negative regulators, like Wee1, maintain SOPs in arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "while overexpression of negative regulators, like Wee1, maintain these cells in arrest (Fichelson and Gho, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Fichelson and Gho, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "94dad1b1-75ba-413c-8ddb-50ede4271421",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C80",
+      "claim": "Sca may negatively regulate string expression, perhaps through the N-pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Possibly Sca negatively regulates string expression, perhaps through the N-pathway that it is known to control the level of String (Deng et al., 2001; Krejc\u00ed et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis supported by citations to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "d7bc6527-f22c-4b86-8f36-288220317d35",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C81",
+      "claim": "The insulin-pathway regulates String level.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, it has been recently shown that the insulin-pathway also regulates String level (Otsuki and Brand, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Otsuki and Brand, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "9ee13c78-9d99-4840-a69b-30db4a66228e",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C82",
+      "claim": "In muscle precursors, cell proliferation is induced by the insulin-mediated activation of the N-pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in muscle precursors, cell proliferation is induced by the insulin-mediated activation of the N-pathway (Aradhya et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Aradhya et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "47fb2ed7-0a1b-4c48-97fc-37290e573948",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C83",
+      "claim": "Insulin may activate the N-pathway and Sca modulates this activation in the SOP system.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations raise the interesting possibility that, in our system, insulin activates the N-pathway and Sca modulates this activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on previous findings in other systems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "dfb1e557-0b51-48ff-81e5-e9dc0aceb2d5",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C84",
+      "claim": "An essential condition for proper axon guidance is the competence of neurons to respond to environmental clues.",
+      "claim_type": "EXPLICIT",
+      "source": "An essential condition for proper axon guidance is the competence of neurons to respond to these environmental clues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about axon guidance mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "d7a277e8-b35f-4713-a430-aaa86c1e9225",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C85",
+      "claim": "Neuron competence depends on the specific expression of transcriptional factors regulating their identity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is generally agreed that neuron competence depends on the specific expression of transcriptional factors regulating their identity (Petrovic and Hummel, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by Petrovic and Hummel, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "480ced10-82a3-4d77-ad51-987d3a5a25f8",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C86",
+      "claim": "The timing of neuron formation is a factor controlling their terminal morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that the timing of neuron formation is also a factor controlling their terminal morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results showing correlation between birth timing and axon morphology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "4bb5fda0-f6e8-418b-8fc2-64ec9e5a580e",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C87",
+      "claim": "The SOP mitotic wave induces a particular pattern of arrival of microch\u00e6te axons in the thoracic ganglion that establishes a specific framework of guidance cues on which circuits will be built.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the SOP mitotic wave induces a particular pattern of arrival of microch\u00e6te axons in the thoracic ganglion (Figure 6). This pattern establishes a specific framework of guidance cues on which circuits will be built and ultimately influencing an organism's behaviour.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the combined experimental findings, illustrated in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "723827d6-03c1-489e-95f4-18ca6abf96f4",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "claim_id": "C88",
+      "claim": "In addition to genetic factors, neurogenic timing is a parameter of development in the mechanisms controlling neural branching.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings support the idea that, in addition to genetic factors, neurogenic timing is a parameter of development in the mechanisms controlling neural branching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from all the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2033ddee-51e7-495a-9108-6dd3a49bd33a",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SOPs in each row of the Drosophila notum divide in a centrifugal wave pattern originating from an anteromedial SOP0, with all SOPs completing division within two hours at a mean rate of 3.14 \u00b5m min\u207b\u00b9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C24-C30 collectively demonstrate the mitotic wave through live imaging data (Figure 1, Video 1) with quantitative measurements and statistical analyses (ANOVA). The spatial and temporal patterns are well-documented with appropriate controls and replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "1b14cd0a-a233-4d1f-8d20-d19be49f9c79",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The mitotic wave depends on cell-cell inhibitory interactions mediated by SOP cytoplasmic protrusions, as demonstrated by Rac1N17 overexpression reducing protrusion length and accelerating the wave.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31-C35 are supported by imaging data showing protrusions (Figure 2A), quantitative measurements of protrusion extension area (Figure 2C, p<0.0001), and mitotic wave acceleration upon Rac1N17 overexpression (Figure 2E). However, the authors acknowledge they cannot exclude effects beyond protrusion reduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "b0e92668-cf8d-432e-846b-a182c4a76cdf",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The mitotic wave is controlled by Scabrous (Sca), with scaBP2 mutants and conditional RNAi showing significantly accelerated and more synchronous SOP divisions without affecting cell fate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C36-C41 are well-supported by genetic experiments with scaBP2 mutants (Figure 3A-B) and conditional RNAi (Figure 3\u2014figure supplement 2C), showing statistical significance (p<0.01 for all rows). Cell fate analysis (Figure 3\u2014figure supplement 1) confirms no developmental defects. The conclusion is strengthened by temporal specificity of the RNAi approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "ed008f62-06db-467d-a6ad-6124aac4703a",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Scabrous and Delta genetically interact to control the SOP mitotic wave, with double heterozygotes showing synergistic effects and the proteins co-localizing in vesicle-like structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 demonstrate genetic interaction through double heterozygote analysis (Figure 3F, p=0.048) where single heterozygotes show no effect but the double shows significant wave acceleration. Co-localization data (Figure 3H) provides cellular evidence for interaction. The genetic interaction is appropriately interpreted as synergistic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "1a1eb96c-0d67-464a-ad2c-d8e67ba3ad9a",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Disruption of the mitotic wave leads to more synchronous axonogenesis, with scaBP2 mutants showing significantly more homogeneous axon lengths along rows compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C48-C50, C66, C68 are supported by axon length measurements at 24 hr APF (Figure 4A-B, p=0.0232). The correlation between mitotic wave timing and axon length variation is clearly demonstrated. The temporal specificity of sca downregulation strengthens the causal interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "b1a9a429-c770-409b-8088-368369fa7045",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When the mitotic wave is disrupted, axon terminals show increased branching complexity, with shorter primary branches and increased frequency of medial commissures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C51-C56 are supported by MCFO labeling data (Figure 4C-D) showing significantly shorter primary branches (p<0.0001 and p=0.0001) and increased medial commissure frequency (11% to 34%, p=0.0002, Fisher's exact test). The morphological changes are well-quantified and statistically robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "8b09dc06-872f-4fad-bfc5-bc3b4aa74198",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Disruption of the SOP mitotic wave impairs fly grooming behavior, with flies requiring significantly more air puffs to elicit a cleaning reflex response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C58, C65 are supported by behavioral assay data (Figure 5B, p=0.028, ANOVA). The behavioral phenotype provides functional validation of the developmental perturbations. However, the mechanistic link between altered axon morphology and behavior is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "64956a8e-4ef9-4bae-8b8e-24a85272f19d",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The temporal order of progenitor divisions influences neuronal birth order, axon branching, and grooming behavior, supporting the idea that developmental timing controls neural diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11, C59, C86, C88 represent the main conclusion integrating all experimental findings. The correlation between mitotic timing, axon morphology, and behavior is well-established through multiple lines of evidence. However, some causal links are inferred rather than directly demonstrated (e.g., birth order to connectivity).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "b16fe7bc-fa41-4a21-9cda-4fa1e9609282",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The wave of SOP mitoses depends on an inhibitory signal transmitted by protrusions containing Delta and Scabrous proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47, C75, C76 synthesize the mechanism but include speculative elements. While Dl and Sca co-localization is shown (Figure 3H) and protrusions are implicated (Figure 2), the specific delivery mechanism through protrusions is inferred. The authors acknowledge difficulty in tracking focal delivery in vivo (C76).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "827b15e0-b7dc-4cf6-9c63-8a6bbb3a6fce",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mitotic wave establishes a specific pattern of axon arrival in the thoracic ganglion that creates a framework of guidance cues for circuit formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57, C67, C69, C87 propose a model for how timing affects connectivity, but this is largely speculative. While the correlation between timing and morphology is shown, the specific pattern of axon arrival and its role in establishing guidance cues is hypothesized rather than demonstrated. The authors acknowledge this requires further experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "d23ae095-de6b-49a3-b3da-81af13325a72",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The location of SOP0 may be determined by an emergent process related to cell-cell interactions rather than a pre-pattern, as suggested by its altered location in sca mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C71 present alternative hypotheses for SOP0 selection. While the observation that SOP0 location changes in sca mutants (Figure 1\u2014figure supplement 2) is documented, distinguishing between pre-pattern and emergent mechanisms requires additional experiments. The authors appropriately present this as speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "61b49db4-3bf4-4045-bede-a7ddbc51ac32",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Scabrous may regulate the mitotic wave through modulation of String/Cdc25 expression, potentially involving the Notch and/or insulin pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C83 propose molecular mechanisms based on literature (C78-C82) but lack direct experimental evidence in this system. These are reasonable hypotheses for future investigation but remain speculative. The authors appropriately present these as possibilities rather than conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "c594aced-767e-46c7-8813-05d957e1b972",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background information on Drosophila SOP development, mechanosensory organ formation, and cleaning reflex behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12-C20 provide established background knowledge supported by appropriate citations. These contextual claims are well-documented in the literature and accurately presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "99615435-4c12-4723-9d44-bcd0fc9f9d6b",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information on Scabrous function and its role in modulating Notch signaling in various Drosophila tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23, C72-C74 accurately summarize prior work on Scabrous with appropriate citations. The tissue-specific effects of Sca on Notch signaling are correctly presented as context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "d6dc4f41-5a94-4d12-bbd6-45a83413ff24",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Temporal patterning mechanisms in neurogenesis have been described in other Drosophila systems and may be more widespread than currently recognized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 provide comparative context from other systems (neuroblasts, eye) with appropriate citations. The speculation about broader applicability (C64) is appropriately qualified as conceivable rather than demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    },
+    {
+      "id": "cdea1a80-ee67-4d36-af51-e6c358939eca",
+      "content_id": "906ef1be-81b3-467b-8a4f-71257ed582f0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background information on cell cycle regulation in SOPs and general principles of axon guidance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79, C84-C85 provide established background on cell cycle control and axon guidance with appropriate citations. This contextual information is accurately presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:31:29.605982Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "31175334-68de-48ef-b0d2-fa656a3c18eb",
+      "result_id": "2033ddee-51e7-495a-9108-6dd3a49bd33a"
+    },
+    {
+      "claim_id": "c3cb8ae8-2998-4c7a-b9cc-493a2a6187f3",
+      "result_id": "2033ddee-51e7-495a-9108-6dd3a49bd33a"
+    },
+    {
+      "claim_id": "9cfa98f6-3015-4286-936b-8daf570a9dee",
+      "result_id": "2033ddee-51e7-495a-9108-6dd3a49bd33a"
+    },
+    {
+      "claim_id": "059dcd01-1586-49db-9109-1ce66d7031f2",
+      "result_id": "2033ddee-51e7-495a-9108-6dd3a49bd33a"
+    },
+    {
+      "claim_id": "d962401d-f53a-4ea3-8395-7cd76dde1ebe",
+      "result_id": "2033ddee-51e7-495a-9108-6dd3a49bd33a"
+    },
+    {
+      "claim_id": "8fafb236-eba7-4e7e-aee1-39688c8ff061",
+      "result_id": "2033ddee-51e7-495a-9108-6dd3a49bd33a"
+    },
+    {
+      "claim_id": "52d5e4ec-3f71-47ca-b9f5-a114095d4e64",
+      "result_id": "2033ddee-51e7-495a-9108-6dd3a49bd33a"
+    },
+    {
+      "claim_id": "e53361ed-b1ea-4d55-9249-64bbe65dbcc8",
+      "result_id": "2033ddee-51e7-495a-9108-6dd3a49bd33a"
+    },
+    {
+      "claim_id": "8d744ec7-22c0-4eb4-b89b-ad0a54e9a789",
+      "result_id": "1b14cd0a-a233-4d1f-8d20-d19be49f9c79"
+    },
+    {
+      "claim_id": "330082b1-8744-45f5-86bb-058d63c4daa8",
+      "result_id": "1b14cd0a-a233-4d1f-8d20-d19be49f9c79"
+    },
+    {
+      "claim_id": "c2b9d6aa-b04c-475d-947c-59cb5cbfaaa5",
+      "result_id": "1b14cd0a-a233-4d1f-8d20-d19be49f9c79"
+    },
+    {
+      "claim_id": "5e8ba7eb-afb8-47c3-b402-ebe35054177e",
+      "result_id": "1b14cd0a-a233-4d1f-8d20-d19be49f9c79"
+    },
+    {
+      "claim_id": "9d61aedb-5d15-41cb-a99b-488184f9f1a8",
+      "result_id": "1b14cd0a-a233-4d1f-8d20-d19be49f9c79"
+    },
+    {
+      "claim_id": "71be593d-30e0-4f52-a881-b134b8fd4b4e",
+      "result_id": "1b14cd0a-a233-4d1f-8d20-d19be49f9c79"
+    },
+    {
+      "claim_id": "e751a166-5231-4dd7-93cb-ba62fedb4238",
+      "result_id": "b0e92668-cf8d-432e-846b-a182c4a76cdf"
+    },
+    {
+      "claim_id": "52814452-9efc-4902-92ac-fa222ca3756a",
+      "result_id": "b0e92668-cf8d-432e-846b-a182c4a76cdf"
+    },
+    {
+      "claim_id": "8473f22a-c8dd-4c61-ba0a-917856475036",
+      "result_id": "b0e92668-cf8d-432e-846b-a182c4a76cdf"
+    },
+    {
+      "claim_id": "30629ee8-5f10-4843-967d-b9648aadba6c",
+      "result_id": "b0e92668-cf8d-432e-846b-a182c4a76cdf"
+    },
+    {
+      "claim_id": "e011394c-08ec-48ec-82f5-6d36a32f1087",
+      "result_id": "b0e92668-cf8d-432e-846b-a182c4a76cdf"
+    },
+    {
+      "claim_id": "3bbb0877-a6a1-4054-96c7-cede5599427c",
+      "result_id": "b0e92668-cf8d-432e-846b-a182c4a76cdf"
+    },
+    {
+      "claim_id": "4b1c169c-45d5-471c-a0aa-d3a732334b4a",
+      "result_id": "b0e92668-cf8d-432e-846b-a182c4a76cdf"
+    },
+    {
+      "claim_id": "4ea3ec35-7bfe-4062-99b4-a28694cc8cd1",
+      "result_id": "ed008f62-06db-467d-a6ad-6124aac4703a"
+    },
+    {
+      "claim_id": "64c1914a-6284-418c-9e71-7a4418baec87",
+      "result_id": "ed008f62-06db-467d-a6ad-6124aac4703a"
+    },
+    {
+      "claim_id": "71020a50-994f-4ced-ad46-f1de41071d2b",
+      "result_id": "ed008f62-06db-467d-a6ad-6124aac4703a"
+    },
+    {
+      "claim_id": "305e534c-6d23-43c7-b4a0-cf20c43148af",
+      "result_id": "ed008f62-06db-467d-a6ad-6124aac4703a"
+    },
+    {
+      "claim_id": "cbbb5011-d5b0-4c42-8820-271950b5b887",
+      "result_id": "ed008f62-06db-467d-a6ad-6124aac4703a"
+    },
+    {
+      "claim_id": "2e51932e-8c79-4107-96c3-b7ca86ed9845",
+      "result_id": "1a1eb96c-0d67-464a-ad2c-d8e67ba3ad9a"
+    },
+    {
+      "claim_id": "4fb2ae6a-4a80-48e5-97ea-465ce3be5063",
+      "result_id": "1a1eb96c-0d67-464a-ad2c-d8e67ba3ad9a"
+    },
+    {
+      "claim_id": "af08baf3-2c77-4dbe-85eb-a148a107e720",
+      "result_id": "1a1eb96c-0d67-464a-ad2c-d8e67ba3ad9a"
+    },
+    {
+      "claim_id": "66d6c04b-68b0-4bf7-b0a2-b3895d061652",
+      "result_id": "1a1eb96c-0d67-464a-ad2c-d8e67ba3ad9a"
+    },
+    {
+      "claim_id": "eac8810c-cba0-4c50-a0c3-138fe5164a58",
+      "result_id": "1a1eb96c-0d67-464a-ad2c-d8e67ba3ad9a"
+    },
+    {
+      "claim_id": "05b0733b-8f0a-431a-9478-a75c5a70e515",
+      "result_id": "1a1eb96c-0d67-464a-ad2c-d8e67ba3ad9a"
+    },
+    {
+      "claim_id": "76aabf2b-9bfa-4f5c-92ec-143ea85fc7d1",
+      "result_id": "b1a9a429-c770-409b-8088-368369fa7045"
+    },
+    {
+      "claim_id": "957014e5-3bec-4599-a444-ca326702673c",
+      "result_id": "b1a9a429-c770-409b-8088-368369fa7045"
+    },
+    {
+      "claim_id": "2124f044-509b-4c47-9976-86ae02e03941",
+      "result_id": "b1a9a429-c770-409b-8088-368369fa7045"
+    },
+    {
+      "claim_id": "cdf1f5c4-14e7-4270-bf16-26e76a5c9cc7",
+      "result_id": "b1a9a429-c770-409b-8088-368369fa7045"
+    },
+    {
+      "claim_id": "46bbebe7-9015-41f0-be1c-65b552680e5f",
+      "result_id": "b1a9a429-c770-409b-8088-368369fa7045"
+    },
+    {
+      "claim_id": "96c822e4-ee8a-45c9-b3f2-8aab9a6de432",
+      "result_id": "b1a9a429-c770-409b-8088-368369fa7045"
+    },
+    {
+      "claim_id": "cc008397-7292-4453-b704-0a38cafd05d1",
+      "result_id": "b1a9a429-c770-409b-8088-368369fa7045"
+    },
+    {
+      "claim_id": "fde6a791-777e-4664-befa-a28c5f6b52f0",
+      "result_id": "8b09dc06-872f-4fad-bfc5-bc3b4aa74198"
+    },
+    {
+      "claim_id": "a915fa02-7634-46b5-a3e9-3fe983104195",
+      "result_id": "8b09dc06-872f-4fad-bfc5-bc3b4aa74198"
+    },
+    {
+      "claim_id": "60169223-f66e-4923-ba4f-ec3ff716571b",
+      "result_id": "8b09dc06-872f-4fad-bfc5-bc3b4aa74198"
+    },
+    {
+      "claim_id": "4b222d17-0073-4023-a35f-7169eea8766e",
+      "result_id": "64956a8e-4ef9-4bae-8b8e-24a85272f19d"
+    },
+    {
+      "claim_id": "23626656-0bb4-4058-bf6a-1601455cfc6e",
+      "result_id": "64956a8e-4ef9-4bae-8b8e-24a85272f19d"
+    },
+    {
+      "claim_id": "c8215b6f-2ec0-4f4a-a6d0-675c3f2085e9",
+      "result_id": "64956a8e-4ef9-4bae-8b8e-24a85272f19d"
+    },
+    {
+      "claim_id": "1bd63a35-ae58-484d-ac13-309f0efb1e5d",
+      "result_id": "64956a8e-4ef9-4bae-8b8e-24a85272f19d"
+    },
+    {
+      "claim_id": "1f045b7b-0732-4857-9846-4f413661cf83",
+      "result_id": "64956a8e-4ef9-4bae-8b8e-24a85272f19d"
+    },
+    {
+      "claim_id": "480ced10-82a3-4d77-ad51-987d3a5a25f8",
+      "result_id": "64956a8e-4ef9-4bae-8b8e-24a85272f19d"
+    },
+    {
+      "claim_id": "723827d6-03c1-489e-95f4-18ca6abf96f4",
+      "result_id": "64956a8e-4ef9-4bae-8b8e-24a85272f19d"
+    },
+    {
+      "claim_id": "7c58570c-3edb-43aa-86a4-b21468e2bb24",
+      "result_id": "b16fe7bc-fa41-4a21-9cda-4fa1e9609282"
+    },
+    {
+      "claim_id": "e381a1dd-fa62-491a-b08c-1cbfaa152cc6",
+      "result_id": "b16fe7bc-fa41-4a21-9cda-4fa1e9609282"
+    },
+    {
+      "claim_id": "b10d0180-4803-444c-9311-6b23c93a1bb2",
+      "result_id": "b16fe7bc-fa41-4a21-9cda-4fa1e9609282"
+    },
+    {
+      "claim_id": "cf9ecf82-baa9-485b-8db7-e9390a0d7728",
+      "result_id": "827b15e0-b7dc-4cf6-9c63-8a6bbb3a6fce"
+    },
+    {
+      "claim_id": "a120f3fc-8a3a-4dfc-89df-c148709f90e4",
+      "result_id": "827b15e0-b7dc-4cf6-9c63-8a6bbb3a6fce"
+    },
+    {
+      "claim_id": "fdba9812-c94d-415a-bad8-873e8c82a805",
+      "result_id": "827b15e0-b7dc-4cf6-9c63-8a6bbb3a6fce"
+    },
+    {
+      "claim_id": "4bb5fda0-f6e8-418b-8fc2-64ec9e5a580e",
+      "result_id": "827b15e0-b7dc-4cf6-9c63-8a6bbb3a6fce"
+    },
+    {
+      "claim_id": "6449c038-75b3-4b4c-b321-41ef1827c7dc",
+      "result_id": "d23ae095-de6b-49a3-b3da-81af13325a72"
+    },
+    {
+      "claim_id": "dfe7a626-93ee-4103-a6e2-d7f7b2029e7c",
+      "result_id": "d23ae095-de6b-49a3-b3da-81af13325a72"
+    },
+    {
+      "claim_id": "94dad1b1-75ba-413c-8ddb-50ede4271421",
+      "result_id": "61b49db4-3bf4-4045-bede-a7ddbc51ac32"
+    },
+    {
+      "claim_id": "d7bc6527-f22c-4b86-8f36-288220317d35",
+      "result_id": "61b49db4-3bf4-4045-bede-a7ddbc51ac32"
+    },
+    {
+      "claim_id": "9ee13c78-9d99-4840-a69b-30db4a66228e",
+      "result_id": "61b49db4-3bf4-4045-bede-a7ddbc51ac32"
+    },
+    {
+      "claim_id": "47fb2ed7-0a1b-4c48-97fc-37290e573948",
+      "result_id": "61b49db4-3bf4-4045-bede-a7ddbc51ac32"
+    },
+    {
+      "claim_id": "78bf1ff5-d215-40b9-a367-576dbc74f186",
+      "result_id": "c594aced-767e-46c7-8813-05d957e1b972"
+    },
+    {
+      "claim_id": "67fa6c76-0d9f-4b37-b387-80fd4ef97b30",
+      "result_id": "c594aced-767e-46c7-8813-05d957e1b972"
+    },
+    {
+      "claim_id": "7096dd1a-add6-4109-9630-decb4956caac",
+      "result_id": "c594aced-767e-46c7-8813-05d957e1b972"
+    },
+    {
+      "claim_id": "c4a14878-fe71-4434-9e5d-59a8d0f7404e",
+      "result_id": "c594aced-767e-46c7-8813-05d957e1b972"
+    },
+    {
+      "claim_id": "d733e4d7-cd82-4dea-8588-db069fdf1546",
+      "result_id": "c594aced-767e-46c7-8813-05d957e1b972"
+    },
+    {
+      "claim_id": "36433810-7808-4b0b-a9ef-2f53869f6600",
+      "result_id": "c594aced-767e-46c7-8813-05d957e1b972"
+    },
+    {
+      "claim_id": "f8b318a6-d7ca-4057-a386-71c5b8f66c30",
+      "result_id": "c594aced-767e-46c7-8813-05d957e1b972"
+    },
+    {
+      "claim_id": "a698e110-f231-4c06-8353-4147a2b75c9e",
+      "result_id": "c594aced-767e-46c7-8813-05d957e1b972"
+    },
+    {
+      "claim_id": "3cdf3791-dfd0-44a6-9e49-2bcefe33d6be",
+      "result_id": "c594aced-767e-46c7-8813-05d957e1b972"
+    },
+    {
+      "claim_id": "7382d7f4-bc61-41be-b0cd-af37b817e3d0",
+      "result_id": "c594aced-767e-46c7-8813-05d957e1b972"
+    },
+    {
+      "claim_id": "2f9376e0-2f24-421c-a223-55f58c640d9b",
+      "result_id": "99615435-4c12-4723-9d44-bcd0fc9f9d6b"
+    },
+    {
+      "claim_id": "f3b64e22-1d0f-437a-87b2-ba13b393e634",
+      "result_id": "99615435-4c12-4723-9d44-bcd0fc9f9d6b"
+    },
+    {
+      "claim_id": "5a6dd48b-220e-4870-8491-375378263150",
+      "result_id": "99615435-4c12-4723-9d44-bcd0fc9f9d6b"
+    },
+    {
+      "claim_id": "3ce7efb0-4180-4fac-9421-0cfe06918846",
+      "result_id": "99615435-4c12-4723-9d44-bcd0fc9f9d6b"
+    },
+    {
+      "claim_id": "e53650f6-d103-4f02-afed-0c4636084f64",
+      "result_id": "99615435-4c12-4723-9d44-bcd0fc9f9d6b"
+    },
+    {
+      "claim_id": "65dcf165-b066-419b-9a90-0dcfa27917fe",
+      "result_id": "99615435-4c12-4723-9d44-bcd0fc9f9d6b"
+    },
+    {
+      "claim_id": "febc05c7-1967-4b41-ade5-f8baa042acf4",
+      "result_id": "d6dc4f41-5a94-4d12-bbd6-45a83413ff24"
+    },
+    {
+      "claim_id": "ffd63beb-2874-4834-9ea1-044307430da3",
+      "result_id": "d6dc4f41-5a94-4d12-bbd6-45a83413ff24"
+    },
+    {
+      "claim_id": "964588b5-c138-42e1-84e0-843a746e7f80",
+      "result_id": "d6dc4f41-5a94-4d12-bbd6-45a83413ff24"
+    },
+    {
+      "claim_id": "d153785f-3936-4e1b-9ad4-496cd1a4ffe6",
+      "result_id": "d6dc4f41-5a94-4d12-bbd6-45a83413ff24"
+    },
+    {
+      "claim_id": "445d0310-0ce8-4699-88a2-a273e391113a",
+      "result_id": "d6dc4f41-5a94-4d12-bbd6-45a83413ff24"
+    },
+    {
+      "claim_id": "cf7cb3f5-fb3d-418c-90c7-0904de4f3d36",
+      "result_id": "cdea1a80-ee67-4d36-af51-e6c358939eca"
+    },
+    {
+      "claim_id": "84c992e3-7fa2-4c32-a6fa-47d1c31329a0",
+      "result_id": "cdea1a80-ee67-4d36-af51-e6c358939eca"
+    },
+    {
+      "claim_id": "3c921e0a-0937-43da-a6fe-0968723e494e",
+      "result_id": "cdea1a80-ee67-4d36-af51-e6c358939eca"
+    },
+    {
+      "claim_id": "dfb1e557-0b51-48ff-81e5-e9dc0aceb2d5",
+      "result_id": "cdea1a80-ee67-4d36-af51-e6c358939eca"
+    },
+    {
+      "claim_id": "d7a277e8-b35f-4713-a430-aaa86c1e9225",
+      "result_id": "cdea1a80-ee67-4d36-af51-e6c358939eca"
+    }
+  ],
+  "comparisons": []
+}

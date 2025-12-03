@@ -1,0 +1,434 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The study recruited 15 expert programmers with an average of 11 years of programming experience and at least 3 years of Python experience. Two participants were excluded from the original 17 recruited (one due to claustrophobia, one due to excessive movement).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C146-C151 provide consistent information about participant recruitment and characteristics. The sample size (n=15), expertise level (mean 10.7 years programming, 5.7 years Python), and exclusion criteria are clearly documented with appropriate justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Behavioral performance on the code comprehension task showed similar accuracy across real and fake code trials (~92% and 90% respectively, p=0.23) and across for and if trials (~92% for both, p=0.77). However, participants responded significantly slower to fake code compared to real code (2.03s vs 1.73s, p=0.023) and slower to for loops compared to if conditionals (1.85s vs 1.60s, p=0.038).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 report behavioral results with appropriate statistical tests (logistic regression for accuracy, t-tests for reaction time). The pattern that fake code took longer despite similar accuracy is noteworthy and properly documented. All statistics include effect sizes and p-values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "In the language/math/logic localizer task, participants performed least accurately on logic trials (82%), followed by math (94%) and language (98%), with significant differences (F(2,42)=18.29, p<0.001). Response times followed the same pattern: logic was slowest (6.47s), followed by math (4.93s) and language (4.03s), F(2,42)=7.42, p=0.0017.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 report behavioral performance on the localizer task with appropriate one-way ANOVA statistics. The consistent ordering of difficulty across both accuracy and reaction time measures strengthens the validity of these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "In the MSIT task, hard and easy conditions showed similar accuracy (97% vs 98%, p=0.18) but hard trials took significantly longer to respond to than easy trials (0.792s vs 0.506s, t(28)=8.59, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 report MSIT behavioral results with appropriate statistics. The pattern of similar accuracy but different reaction times is typical for this task and indicates successful manipulation of cognitive control demands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C66",
+      "C67",
+      "C68",
+      "C140",
+      "C152"
+    ],
+    "result": "Real code comprehension (compared to fake code) activated a consistent left-lateralized fronto-parietal network including the lateral PFC (BA 44, 46, with partial activation in BA 6, 8, 9, 10, 47), parietal cortex (IPS, angular and supramarginal gyri; BA 7), posterior middle temporal gyrus (pMTG) and superior temporal sulcus (BA 22, 37), and early visual cortices. This network was more active during real than fake code despite fake code being more difficult as measured by reaction time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C66-C68, C140, C152 consistently describe the main fMRI activation pattern for code comprehension. The results are supported by whole-brain analysis (p<0.01 FWER corrected) and shown in Figure 1. The finding that real code elicited greater activation despite being behaviorally easier is particularly important as it suggests the network is not merely responding to task difficulty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C71",
+      "C141"
+    ],
+    "result": "Multi-voxel pattern analysis (MVPA) successfully decoded for vs. if code functions based on spatial activation patterns within the code-responsive network. Decoding accuracy was significant in PFC (64.7%, p<0.001), IPS (67.4%, p<0.001), and pMTG (68.4%, p<0.001). Early visual cortex also showed above-chance decoding (55.7%, p=0.015) but at significantly lower accuracy than the other regions (F(3,56)=4.78, p=0.0048).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C71, C141 report MVPA results with appropriate statistics and permutation testing. The successful decoding of code function types demonstrates that the network encodes code-relevant information rather than merely responding to general task demands. The lower accuracy in visual cortex compared to fronto-parietal regions is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The localizer tasks activated previously identified networks: language activated left perisylvian fronto-temporal regions; math and logic both activated parietal and anterior prefrontal areas plus posterior inferior temporal gyrus, with logic showing more anterior and extensive PFC activation than math; MSIT activated a fronto-parietal network including IPS, but with more posterior lateral frontal activation near the precentral gyrus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 describe localizer activations consistent with prior literature. The results are shown in Figure 3 and replicate well-established networks for these cognitive domains. The distinction between logic and math in terms of anterior PFC extent is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C73",
+      "C142",
+      "C153",
+      "C154"
+    ],
+    "result": "Code comprehension showed significant above-chance overlap with all localizer tasks (all p's<0.001), but the degree of overlap differed significantly across tasks (F(3,42)=5.04, p=0.0045). Code overlapped most with logic, followed by math, with language and MSIT showing the least overlap. Post-hoc tests revealed that overlap with logic was significantly higher than all other tasks, while overlaps with language, math, and MSIT were statistically indistinguishable from each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54, C73, C142, C153-C154 report the primary overlap analysis results with appropriate statistics (repeated-measures ANOVA and FDR-corrected post-hoc tests). The cosine similarity metric controls for overall activation extent. The finding that logic shows the greatest overlap is the key result supporting the main conclusion. However, the claim that math/language/MSIT overlaps are 'indistinguishable' should be interpreted cautiously given the small sample size (n=15).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Anatomically, code overlap with logic and math was observed in IPS, PFC (anterior middle frontal gyrus BA 46 and precentral gyrus BA 6), and posterior inferior temporal gyrus. Code-MSIT overlap was in IPS, precentral gyrus, and a small portion of inferior temporal sulcus. Code-language overlap was in portions of inferior frontal gyrus and posterior superior temporal sulcus/middle temporal gyrus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide anatomical details of the overlap patterns. These are supported by the overlap analysis and shown in Figure 3. The specific localization to anterior PFC (BA 46) for code-logic-math overlap versus more posterior frontal regions for MSIT is an important distinction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C74",
+      "C143",
+      "C155"
+    ],
+    "result": "The overlap between code and language was on average low, varied considerably across participants (cosine similarity range: 0.105-0.480), with only half of participants showing above-chance overlap. This low overlap indicates that the neural basis of code is distinct from the perisylvian fronto-temporal language network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C74, C143, C155 consistently report low and variable code-language overlap. The high inter-individual variability and the fact that only 50% showed above-chance overlap is important for interpreting the group-level findings. This supports the conclusion that code does not primarily depend on language networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "There was no relationship between code-language overlap and programming expertise, whether measured by years of coding experience (R\u00b2=0, p=0.99) or performance on coding assessments (R\u00b2=0.033, p=0.52). Similarly, code-math overlap showed no relationship with expertise (years: R\u00b2=0.033, p=0.52; assessment: R\u00b2=0.064, p=0.36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 report null findings for the relationship between neural overlap and expertise. The regression analyses are appropriate, though the small sample size (n=15) limits power to detect relationships. The null findings are important as they suggest the observed overlap patterns are not simply a function of expertise level within this expert sample.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C113",
+      "C134",
+      "C156"
+    ],
+    "result": "Code comprehension was as left-lateralized as language (code mean lateralization index=0.451, language=0.393, paired t-test p=0.25), with both showing significant left lateralization (both p<0.001 vs. zero). Moreover, lateralization indices of code and language were highly correlated across individuals (R\u00b2=0.658, p<0.001), such that individuals with highly left-lateralized language responses also showed highly left-lateralized code responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C113, C134, C156 report lateralization findings with appropriate statistics. The strong correlation (R\u00b2=0.658) between code and language lateralization is a novel and important finding shown in Figure 4. This suggests a relationship between the systems despite low spatial overlap. The statistical tests are appropriate for the sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The involvement of the fronto-parietal system in code processing is consistent with prior work using more complex coding tasks (debugging, editing). The fact that fronto-parietal involvement is observed even for simple code function comprehension suggests it is not related solely to cognitive control processes specific to more complex coding tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 appropriately contextualize the findings relative to prior literature (with citations). The inference that fronto-parietal involvement in simple comprehension indicates it's not merely about task complexity is logical, though alternative explanations (e.g., that even simple comprehension requires substantial cognitive control) are not fully ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C75"
+    ],
+    "result": "The code-responsive network represents code-relevant information and is not merely activated due to general difficulty demands, as evidenced by successful MVPA decoding of code function types. Furthermore, neural overlap between logic and code is specific and not fully accounted for by general involvement of the central executive system, as demonstrated by greater overlap with logic than with MSIT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C75 make important inferential conclusions supported by the MVPA results (C71) and the differential overlap patterns (C52-C54). The logic is sound: if the network only responded to difficulty, MVPA would not decode function types, and if overlap were only due to executive demands, MSIT overlap would be as high as logic overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C144",
+      "C157"
+    ],
+    "result": "Culturally-invented symbol systems (code, formal logic, and math) depend on a common fronto-parietal network including the executive system. All involve manipulation of abstract arbitrary symbols without inherent semantic content according to explicit rules. Rather than recycling domain-specific cortical mechanisms for language, code depends on a subset of the domain-general executive system, including anterior prefrontal areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86, C144, C157 present the main theoretical conclusion of the paper, which is well-supported by the overlap analysis results (C50-C54). The characterization of common features across these symbol systems (C85-C86) is reasonable. However, the conclusion is somewhat overstated given that the overlap analysis shows all tasks overlap significantly with code, just to different degrees.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C90",
+      "C91"
+    ],
+    "result": "Some activation in anterior prefrontal and parietal areas could reflect common operations such as manipulation of rules and symbols in working memory. The lower overlap between code and math (compared to code and logic) could stem from math uniquely involving quantitative processing. Code-relevant knowledge may be encoded within the identified fronto-parietal network, though at a finer neural scale, code and logic functions may dissociate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C83, C90-C91 are explicitly speculative interpretations (using 'could,' 'may,' 'speculate'). While these are reasonable hypotheses consistent with the data, they lack direct empirical support in the current study. The speculation about finer-scale dissociations (C91) appropriately acknowledges limitations of the spatial resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Code comprehension showed partial overlap with the MSIT task (a classic executive function localizer) particularly in parietal cortex and posterior frontal areas. Like code, most executive tasks involve maintenance, manipulation and selection of arbitrary stimulus-response mappings according to predetermined rules. The fronto-parietal executive system is involved in rule maintenance, switching, and variable representation. However, unlike culturally-invented symbol systems, simple experimental tasks involve simple stimulus-response mappings rather than mental manipulations of variables. Code comprehension may recycle neural machinery that originally evolved for maintenance and manipulation of simpler variables and rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C102 discuss the relationship between code and executive control, supported by the overlap analysis (C50, C57) and extensive prior literature (C94-C99 with citations). The distinction between simple rule-based tasks and complex symbol systems (C101) is important. However, the evolutionary speculation (C102) goes beyond the data, though it's appropriately framed as a possibility and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The regions showing overlap between language and code (left inferior frontal and middle temporal gyri) have been implicated in high-level linguistic processing including sentence-level syntax. While the results do not rule out some role for the language system in code, they do not support the hypothesis that the language system is recycled for code comprehension. Possible explanations include: (1) the language system may be evolutionarily predisposed to support natural language specifically and not generalizable to similar domains; (2) the language network may have a sensitive period and be incapable of taking on new functions by the time people learn to code; (3) the fronto-parietal system might be inherently more flexible throughout the lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 provide a nuanced interpretation of the language-code relationship. The conclusion that results 'do not support' language recycling (C105) is justified by the low overlap (C59-C61). The alternative explanations (C107-C112) are appropriately speculative and supported by relevant citations. The cautious phrasing (C104: 'do not rule out') is scientifically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The correlation between code and language lateralization suggests the relationship between code and language may be ontogenetic as well as phylogenetic. Code in its current form could not have been invented without language, and code-relevant neural representations might be enabled by the language system even though they are distinct from it. By analogy to reading, where the visual word form area is co-lateralized with language and has strong anatomical connectivity with the language network even prior to literacy, code comprehension may colonize a left-lateralized portion of the executive system due to stronger within-hemisphere connectivity with the language network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C119 present speculative interpretations of the lateralization correlation (C65). While the analogy to reading (C117-C118, with citations) is interesting and the hypothesis is plausible, these claims lack direct empirical support. The connectivity hypothesis (C119) is untested. These are reasonable speculations but should be clearly distinguished from empirically supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The current results are consistent with the co-published Ivanova et al. study, which also found fronto-parietal network involvement and low overlap with language. However, there are methodological differences: the current study used a working memory control task while Ivanova et al. used matched verbal descriptions; input values were provided after function presentation in the current study versus as part of the function in Ivanova et al.; language localization methods differed. The current study observed left-lateralization of code while Ivanova et al. did not, possibly because their sentence reading control subtracted out left-lateralized patterns, or because syntactic versus semantic aspects of code differ in lateralization. Differences in prefrontal involvement between Python and ScratchJr may relate to variable manipulation demands. Given the small sample size (n=15), differences should be interpreted with caution and replicated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C139 provide a thorough comparison with the co-published work. The identification of consistencies (C120-C121) and differences (C122-C138) is appropriate. The speculative explanations for differences (C136-C138) are reasonable but untested. The acknowledgment of sample size limitations (C139) is important and scientifically appropriate. This comparison strengthens confidence in the main findings while appropriately noting areas of uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The introduction establishes context by noting historical literacy rates (12% in 1800, >85% today), current programming proficiency (~0.5% of world population), the growing importance of coding across diverse fields, and the gap in understanding of the cognitive and neural mechanisms supporting coding. Programming is framed as a recent cultural invention that the brain was not evolutionarily adapted to support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide background context. C1-C2 are supported by citation to external data. C3-C5 are stated as general knowledge without specific citations, which is acceptable for widely known facts. C6 appropriately identifies the knowledge gap motivating the study. C7 is a reasonable characterization of programming as a recent invention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction reviews two competing hypotheses about the neural basis of coding: (1) code may recycle language mechanisms, supported by similarities in structure (borrowing symbols, formal grammars, recursion) and behavioral evidence that second language learning predicts programming aptitude; (2) code may depend on the same fronto-parietal networks as other culturally-invented symbol systems (logic, math) that involve manipulation of arbitrary variables according to learned rules. Prior neuroimaging studies of coding found fronto-parietal activation but did not localize language, logic, and math networks in the same participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C28 provide a comprehensive literature review with appropriate citations throughout. The characterization of the two competing hypotheses is fair and well-supported. The identification of the gap in prior work (C28) appropriately motivates the current study's within-subjects design. All cited claims are properly attributed to specific sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Prior research has established that anterior PFC is active during formal logical reasoning with quantifiers and connectives and plays a key role in deductive reasoning with variables. A fronto-parietal network has been consistently implicated in math, with some parietal responses linked to quantity processing (e.g., neurons in monkey IPS coding numerosity), though the same network is also active for mathematical statements free of digits and arithmetic operations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 review prior literature on logic and math with appropriate citations. These claims accurately represent established findings and provide important context for interpreting the current results. The distinction between quantity-specific and more general mathematical processing (C79-C81) is important for understanding the overlap patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "There are important differences between formal logic and programming: in formal logic, 'if P then Q' doesn't imply anything about what happens when P is false, whereas in Python and most programming languages, an if statement automatically implies that when the condition is false, the function isn't executed unless otherwise specified. Learning to program involves acquiring the conventionalized rules and syntax specific to programming languages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 accurately describe differences between formal logic and programming semantics. C87-C88 are based on established knowledge about these systems. C89 is supported by citations to prior research on programming education. These distinctions are important for understanding why code and logic might show both overlap and differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "The executive system may be uniquely suited as a flexible learning mechanism capable of supporting an array of cultural symbol systems acquired in adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C145 presents a broad speculative conclusion that goes beyond the data. While consistent with the findings, this claim about the executive system's unique suitability for learning cultural symbol systems is not directly tested and represents a theoretical interpretation rather than an empirical result.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2003 @@
+{
+  "submission": {
+    "id": "3556464c-a6f1-41ec-8679-9bc11feb1800",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:52:17.438944Z",
+    "updated_at": "2025-12-03T12:52:17.438944Z"
+  },
+  "content": [
+    {
+      "id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "submission_id": "3556464c-a6f1-41ec-8679-9bc11feb1800",
+      "content_type": "manuscript",
+      "content_text": "# Inflammatory response in hematopoietic stem and progenitor cells triggered by activating SHP2 mutations evokes blood defects\n\n## Authors\n\n- Maja Solman<sup>1</sup>\n- Sasja Blokzijl-Franke<sup>1</sup>\n- Florian Piques<sup>2</sup>\n- Chuan Yan<sup>4</sup>\n- Qiqi Yang<sup>4</sup>\n- Marion Strullu<sup>2</sup>\n- Sarah M Kamel<sup>1</sup> ([ORCID: 0000-0003-4424-9732](https://orcid.org/0000-0003-4424-9732))\n- Pakize Ak<sup>1</sup>\n- Jeroen Bakkers<sup>1</sup> ([ORCID: 0000-0002-9418-0422](https://orcid.org/0000-0002-9418-0422))\n- David M Langenau<sup>4</sup> ([ORCID: 0000-0001-6664-8318](https://orcid.org/0000-0001-6664-8318))\n- H\u00e9l\u00e8ne Cav\u00e9<sup>2</sup> ([ORCID: 0000-0003-2840-1511](https://orcid.org/0000-0003-2840-1511))\n- Jeroen den Hertog<sup>1</sup> ([ORCID: 0000-0002-8642-8088](https://orcid.org/0000-0002-8642-8088)) \u2020\n\n### Affiliations\n\n1. Hubrecht Institute-KNAW and UMC Utrecht Utrecht Netherlands ([ROR:023qc4a07](https://ror.org/023qc4a07))\n2. INSERM UMR_S1131, Institut de Recherche Saint-Louis, Universit\u00e9 de Paris Paris France ([ROR:05f82e368](https://ror.org/05f82e368))\n3. Assistance Publique des H\u00f4pitaux de Paris AP-HP, H\u00f4pital Robert Debr\u00e9, D\u00e9partement de G\u00e9n\u00e9tique Paris France ([ROR:02dcqy320](https://ror.org/02dcqy320))\n4. Molecular Pathology Unit, Massachusetts General Hospital Research Institute Charlestown United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n5. Massachusetts General Hospital Cancer Center Charlestown United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n6. Center for Regenerative Medicine, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n7. Harvard Stem Cell Institute Cambridge United States ([ROR:04kj1hn59](https://ror.org/04kj1hn59))\n8. Assistance Publique des H\u00f4pitaux de Paris AP-HP, H\u00f4pital Robert Debr\u00e9, Service d\u2019Onco-H\u00e9matologie P\u00e9diatrique Paris France ([ROR:02dcqy320](https://ror.org/02dcqy320))\n9. Department of Medical Physiology, Division of Heart and Lungs, UMC Utrecht Utrecht Netherlands ([ROR:0575yy874](https://ror.org/0575yy874))\n10. Institute of Biology Leiden, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))\n\n\u2020 Corresponding author\n\n## Abstract\n\nGain-of-function mutations in the protein-tyrosine phosphatase SHP2 are the most frequently occurring mutations in sporadic juvenile myelomonocytic leukemia (JMML) and JMML-like myeloproliferative neoplasm (MPN) associated with Noonan syndrome (NS). Hematopoietic stem and progenitor cells (HSPCs) are the disease propagating cells of JMML. Here, we explored transcriptomes of HSPCs with SHP2 mutations derived from JMML patients and a novel NS zebrafish model. In addition to major NS traits, CRISPR/Cas9 knock-in Shp2D61G mutant zebrafish recapitulated a JMML-like MPN phenotype, including myeloid lineage hyperproliferation, ex vivo growth of myeloid colonies, and in vivo transplantability of HSPCs. Single-cell mRNA sequencing of HSPCs from Shp2D61G zebrafish embryos and bulk sequencing of HSPCs from JMML patients revealed an overlapping inflammatory gene expression pattern. Strikingly, an anti-inflammatory agent rescued JMML-like MPN in Shp2D61G zebrafish embryos. Our results indicate that a common inflammatory response was triggered in the HSPCs from sporadic JMML patients and syndromic NS zebrafish, which potentiated MPN and may represent a future target for JMML therapies.\n\n## Introduction\n\nA broad spectrum of heterozygous germline activating mutations in the tyrosine phosphatase SHP2 encoded by PTPN11 has been found to cause Noonan syndrome (NS), a dominantly inherited developmental disorder from the RASopathy group affecting 1:1500 individuals. NS is characterized by a systemic impact on development, most commonly resulting in short stature, congenital heart defects, and specific craniofacial characteristics (Rauen, 2013; Tajan et al., 2018). Somatic activating mutations in PTPN11 are the most common cause of sporadic juvenile myelomonocytic leukemia (JMML), a rare but aggressive myelodysplastic and myeloproliferative neoplasm (MPN) occurring in young children (Caye et al., 2015; Tartaglia et al., 2003). Consistently, children with NS are predisposed to developing neonatal MPN, that either regresses without treatment or rapidly progresses to JMML leading to early death (Kratz et al., 2005; Strullu et al., 2014). Previous studies support the view of a strong endogenous role of germline PTPN11 mutations in the occurrence of myeloproliferative complications with the existence of high-risk mutations (Mulero-Navarro et al., 2015; Strullu et al., 2014). Given the aggressive nature of JMML and lack of therapies, a better understanding of the elusive JMML(-like MPN) pathophysiology and development of reliable preclinical models are essential.\n\nSeveral lines of evidence indicate the importance of prenatal hematopoiesis such as the young age window for both NS-associated and sporadic JMML. The prenatal origin of PTPN11 mutations in sporadic JMML suggests that JMML and NS-associated JMML-like MPN originate from fetal hematopoiesis (Behnert et al., 2022). Studying SHP2-driven JMML(-like MPN) during fetal hematopoiesis is challenging in conditional knock-in mouse models of JMML with PTPN11 mutations, because mutant SHP2 expression is induced only postnatally (Chan et al., 2009; Xu et al., 2011) or indolent MPN is induced (Tarnawsky et al., 2017; Tarnawsky et al., 2018). NS knock-in mice with activating PTPN11 mutations develop mild MPN only after 5 months of age (Araki et al., 2004; Araki et al., 2009).\n\nZebrafish (Danio rerio) with rapid ex utero development, transparent embryos, and conserved blood ontogeny emerged as a unique pediatric leukemia model that enables monitoring of leukemogenesis from its initial stages with high temporal and spatial resolution (de Pater and Trompouki, 2018; Gore et al., 2018). Furthermore, NS-associated features, such as shorter body axis length, craniofacial defects, defective gastrulation, and impaired heart looping, are recapitulated in zebrafish embryos upon transient overexpression of NS-associated protein variants (Bonetti et al., 2014; Jopling et al., 2007; Niihori et al., 2019; Paardekooper Overman et al., 2014; Runtuwene et al., 2011).\n\nTo better assess the link between dysregulated SHP2 and myeloproliferation in the context of NS, we developed and characterized a novel genetic zebrafish model of NS with Shp2-D61G mutation, a dominantly inherited NS-associated mutation that is most frequently associated with NS/JMML-like MPN in human patients (Strullu et al., 2014; Tartaglia et al., 2001). Mutant zebrafish developed hematopoietic defects consistent with JMML-like MPN. Transcriptomic comparison of HSPCs obtained from JMML patients with somatic PTPN11 mutations and HSPCs from mutant zebrafish harboring an NS-associated variant of Shp2 suggested common mechanisms of disease initiation in sporadic and syndromic PTPN11-driven JMML. Both datasets show a similar proinflammatory gene expression and an anti-inflammatory agent largely rescued the hematopoietic defects in mutant zebrafish, suggesting inflammation as potential drug target for sporadic and syndromic JMML(-like MPN). Our data show that Shp2 mutant zebrafish convincingly model the human NS-associated MPN thereby providing a valuable preclinical model for development of future therapies.\n\n## Results\n\n### Shp2D61G mutant zebrafish display typical NS traits\n\nTo investigate early hematopoietic defects associated with NS in a vertebrate animal model, we turned to zebrafish, which represents a versatile model to study leukemogenesis and in which it is feasible to introduce mutations at will using CRISPR/Cas9-mediated homology directed repair (Tessadori et al., 2018). NS is a dominant autosomal disorder and 50% of NS patients carry heterozygous mutations in the protein-tyrosine phosphatase SHP2 (PTPN11). The zebrafish genome contains two ptpn11 genes (ptpn11a and ptpn11b), encoding Shp2a and Shp2b. Shp2a is indispensable during zebrafish development, whereas loss of Shp2b function does not affect development (Bonetti et al., 2014). Certain NS mutations are more frequently associated with NS/JMML-like MPN than others. The D61G substitution in SHP2 is the most frequently occurring (Strullu et al., 2014; Tartaglia et al., 2001). The homology between human SHP2 and zebrafish Shp2a is 91% and the amino acid D61 is located in an absolutely conserved region of the protein (Figure 1\u2014figure supplement 1A). Thus, we introduced the D61G mutation in zebrafish Shp2a using CRISPR/Cas9-mediated homology directed repair (Figure 1\u2014figure supplement 1B), targeting the ptpn11a gene. Sequencing confirmed that the oligonucleotide used for the homology directed repair was incorporated correctly into the genome (Figure 1A) and that the introduced mutation did not have a detectable effect on Shp2a protein expression (Figure 1B). Prior to phenotypic analyses, the mutant lines were outcrossed twice to ensure that potential background mutations due to the CRISPR/Cas9 approach were removed.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73040/elife-73040-fig1-v2.jpg)\n\n**Figure 1.:** (A) Sequencing trace derived from Shp2D61G/D61G zebrafish. Oligonucleotide sequence used to generate the model is underlined. Nucleotide substitutions for D61G mutation (red), silent mutations close to the PAM site (green), and the PAM site (blue) are indicated. (B) Immunoblot of Shp2 levels from five pooled Shp2awtShp2b-/- or Shp2aD61G/D61GShp2b-/- embryos using antibodies for Shp2 and tubulin (loading control) (Figure 1\u2014source data 1). (C) Representative images of typical Shp2D61G zebrafish embryonic phenotypes at 5 days post fertilization (dpf). Blue arrows: jaw, green arrows: heart, red arrows: swim bladder. (D) Quantification of phenotypes of Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G embryos scored as in (C) normal, mild, and severe. (E) Body axis length of Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G embryos at 5 dpf. (F) Representative images of Alcian blue-stained head-cartilage of 4dpf Shp2wt and Shp2D61G/wt embryos (x) width of ceratohyal, (y) distance to Meckel\u2019s cartilage. (G) Quantified craniofacial defects (x/y ratio). (H) Representative ventricular kymographs derived from high-speed video recordings of beating hearts of 5 dpf Shp2wt and Shp2D61G/wt embryos. Red dotted lines indicate one heart period. (I) Heart rates derived from the ventricular kymographs. (J) Representative images of typical Shp2D61G zebrafish adult phenotypes at 24 weeks post fertilization (wpf). Red arrows indicate skin redness in the jaw region. Scale bar, 0.5 cm. Insets, zoom-in of boxed regions. (K) Body axis lengths of 10 Shp2wt, 25 Shp2D61G/wt, and 10 Shp2D61G/D61G zebrafish measured weekly between 5 dpf and 20 wpf of age. (D,E,G,I) Measurements originate from three distinct experiments. Number on bars: number of embryos. (E,G,I,K) Error bars: standard error of the mean (SEM), *p < 0.05; **p < 0.01, ***p < 0.001, ANOVA complemented by Tukey\u2019s HSD.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73040/elife-73040-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Sequence alignment of human SHP2 and zebrafish Shp2a polypeptides performed by ClustalW. The residue D61 is highlighted in red, while the identical amino acids are highlighted in black. The amino acid number is marked to the right of each row. (B) Schematic representation of the procedure used to establish the Shp2D61G mutant line, as described in the Materials and methods section. (C) Representative images of the WISH staining for myl7, ahmc, and vhmc expression in the hearts of 3 days post fertilization (dpf) old Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G zebrafish embryos. Numbers in the pictures indicate the number of embryos with the phenotype represented in the image. Ejection fraction (D) and cardiac output (E) determined from the high-speed videos of the heart of 5 dpf old Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G zebrafish embryos. Measurements originate from at least three distinct experiments. Numbers on the bars depict the number of embryos. Error bars represent standard error of the mean (SEM).*p < 0.05; **p < 0.01, ***p < 0.001, NS, non-significant, ANOVA complemented by Tukey\u2019s HSD.\n\nGenotypically, heterozygous Shp2D61G/wt zebrafish mutants correspond to NS patients. Consistently, in 32% of heterozygous Shp2D61G/wt and 45% of homozygous Shp2D61G/D61G embryos at 5 days post fertilization (dpf) we observed typical NS traits, such as reduced body axis extension, heart edema, and craniofacial deformities. Based on the extent of the phenotypes, defects were categorized as normal, mild, and severe (Figure 1C and D). The observed phenotypic defects were mostly mild, but in some cases severe defects were found, including severely stunted growth, edemas of the heart and jaw, and absence of the swim bladder (Figure 1C and D). A more detailed characterization of the typical NS traits showed that the body axis length was significantly reduced in Shp2D61G mutant embryos at 5 dpf (Figure 1E). Furthermore, imaging of Alcian blue-stained cartilage revealed NS-reminiscent craniofacial defects in 4 dpf Shp2D61G mutant embryos, characterized by broadening of the head (Figure 1F), leading to an increased ratio of the width of the ceratohyal and the distance to Meckel\u2019s cartilage (Figure 1G). We also assessed the general morphology and function of the mutant embryonic hearts. Whole-mount in situ hybridization (WISH) with cardiomyocyte (myl7), ventricular (vhmc), and atrial (ahmc) markers identified no obvious morphological heart defects, such as changes in heart size or heart looping, as well as heart chamber specification at 3 dpf (Figure 1\u2014figure supplement 1C). A decrease in heart rate (Figure 1I), ejection fraction, and cardiac output (Figure 1\u2014figure supplement 1D,E) was detected from the ventricular kymographs obtained from high-speed video recordings (Tessadori et al., 2012) of the Shp2D61G mutant hearts at 5 dpf (Figure 1H). Effects on cardiac function varied from embryo to embryo, which is reminiscent of variable heart defects in human patients.\n\nThe embryos with severe phenotypic defects did not develop a swim bladder and they did not survive to adulthood. The rest of both Shp2D61G/wt and Shp2D61G/D61G mutant zebrafish grew up normally, their life span was not affected, and they displayed rather mild defects in adult stages, such as shorter body axis (Figure 1J), with markedly reduced length observed from the embryonic stage of 5 dpf until the fully developed adults (Figure 1K). In 10% of Shp2D61G mutants the phenotypes were more severe, with markedly reduced body axis length compared to their siblings, skinny appearance and with overall redness, especially in the head and gill region (Figure 1J), which is not described in human NS patients and hence, may not be related to NS.\n\nTaken together, the NS Shp2D61G mutant zebrafish we established phenocopied several of the typical NS traits, such as stunted growth, craniofacial defects, and heart defects. Similar to differences in symptoms observed in individual human patients, the severity of the defects varied among individual Shp2D61G mutant zebrafish.\n\n### Increased numbers of HSPCs and myeloproliferative defects in Shp2D61G zebrafish embryos\n\nNext, we explored hematopoietic abnormalities in the Shp2D61G zebrafish during embryonic development, corresponding to prenatal hematopoietic ontogeny in human. We were not able to observe any effect of the Shp2D61G mutation on primitive hematopoiesis in embryos at 2 dpf using WISH for markers of erythroid progenitors (gata-1), myeloid progenitors (pu.1), and white blood cells (l-plastin) (Figure 2\u2014figure supplement 1A). On the other hand, a significant effect of the Shp2-D61G mutation on definitive hematopoiesis was observed at 5 dpf (Figure 2). First, the number of HSPCs was determined using the Tg(cd41:GFP, kdrl:mCherry-CAAX) transgenic line. CD41-GFP-positive cells mark HSPCs when the GFP signal is low (CD41-GFPlow) and thrombocytes when the GFP signal is high (CD41-GFPhigh). An increased number of CD41-GFPlow HSPCs was observed in the caudal hematopoietic tissue (CHT) region, corresponding to the fetal liver in human and the head kidney (corresponding to the bone marrow in human) of the mutant embryos (Figure 2A and B). Shp2D61G mutation seems to affect both proliferation and apoptosis of HSPCs, evident by an increase in CD41-GFPlow cells positive for phosphohistone H3 (pHis3), a marker for late G2 and M phase and a decrease in Acridine orange-positive cells in the CHT region, marking apoptotic cells (Figure 2\u2014figure supplement 1B,C). We observed an increase of c-myb-positive cells, marking HSPCs and of l-plastin-positive cells, marking all white blood cells, in both CHT and head kidney region of the Shp2D61G mutants (Figure 2C\u2013F). These latter cells appear not to be lymphocytes, since the size of the ikaros-positive thymus was not affected (Figure 2\u2014figure supplement 1D,E). On the other hand, the myeloid lineage was markedly expanded, evident from the increase in the number of mpx-GFP-positive neutrophils (Figure 2G and H) and mpeg-mCherry-positive macrophages (Figure 2G1), in Tg(mpx:GFP, mpeg:mCherry) double transgenic mutant embryos. Shp2D61G mutant embryos also displayed a mild decrease in the number of CD41-GFPhigh-positive thrombocytes and the number of \u03b2-globin-positive erythrocytes (Figure 2\u2014figure supplement 1F-H). The observed defects in all different blood lineages examined here were stronger in the homozygous Shp2D61G/D61G than heterozygous Shp2D61G/wt embryos, supporting a dosage effect. One of the clinical hallmarks of JMML is the hypersensitivity of myeloid progenitors to GM-CSF. GM-CSF is not present in zebrafish, but stimulation of HSPCs in ex vivo colony-forming assays in semi-solid media with granulocyte colony stimulating factor a (Gcsfa) or Gcsfb gives rise to colony-forming unit granulocyte (CFU-G) and colony-forming unit macrophage (CFU-M) type of colonies, similarly to GM-CSF stimulation in human, suggesting a compensatory role of Gcsfa/b for the missing GM-CSF in zebrafish (Oltova et al., 2018; Stachura et al., 2013). Compared to their wild type (wt) siblings, colonies developed from the CD41-GFPlow cells isolated from the Shp2D61G/wt zebrafish embryos at 5 dpf and exposed to Gcsfa were larger in size and number, demonstrating an enhanced CFU-G and CFU-M colony-forming ability (Figure 2J and K). Finally, we tested whether the observed myeloid expansion was reconstituted upon transplantation of the WKM cells harvested from Shp2D61G/wt animals in the Tg(mpx:GFP, mpeg:mCherry) background into the optically clear recipient prkdc-/- immunodeficient zebrafish (Moore et al., 2016). Animals injected with 1 \u00d7 105 mutant WKM cells (3/5) accumulated GFP- and mCherry-positive cells near the site of injection starting at 14 days and increasing until 28 days. By contrast, animals injected with WKM cells from control sibling animals with wt Shp2a (5/5) lacked any GFP- and mCherry-positive cells (Figure 2L).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73040/elife-73040-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative images of the caudal hematopoietic tissue (CHT) region of Shp2wt and Shp2D61G zebrafish embryos in Tg(cd41:GFP, kdrl:mCherry-CAAX) background at 5 days post fertilization (dpf). cd41:GFPlow cells mark hematopoietic stem and progenitor cells (HSPCs) and cd41:GFPhigh cells thrombocytes. Gray arrow heads indicate cd41:GFPlow cells. Scale bar, 20 \u03bcm. (B) The low-intensity cd41:GFP-positive cells in the CHT region were counted. (C) Whole-mount in situ hybridization (WISH) of 5 dpf Shp2wt and Shp2D61G/wt embryos using c-myb-specific probe. Head kidney (arrow) and CHT (box) are indicated; zoom-in in inset. Scale bars, 150 \u03bcm. (D) Quantification of c-myb WISH. C-myb expression in Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G embryos was scored as low, mid, and high. (E) WISH of 5 dpf Shp2wt and Shp2D61G/wt embryos using l-plastin-specific probe. Head kidney (arrow) and CHT (box) are indicated and zoom-in in inset. Scale bars, 150 \u03bcm. (F) Quantification of l-plastin expression in Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G embryos scored as low, mid, and high. (G) Representative images of Shp2wt and Shp2D61G zebrafish embryos in Tg(mpx:GFP, mpeg:mCherry) background at 5 dpf. Mpx:GFP marks neutrophils and mpeg:mCherry macrophages. Scale bars, 150 \u03bcm. (H,I) Number of mpx:GFP and mpeg:mCherry-positive cells per embryo. (J) Representative images of colonies developed from cd41:GFPlow cells isolated from the CHT of 5 dpf Shp2wt and Shp2D61G/wt zebrafish embryos, grown in methylcellulose with zebrafish cytokine granulocyte colony stimulating factor a (Gcsfa) for 2 days. Scale bar, 50 \u03bcm. (K) Quantification of number of colonies from J, t-test. (L) WKM cells harvested from Shp2wt and Shp2D61G zebrafish in the Tg(mpx:GFP, mpeg:mCherry) background were injected into the peritoneum of adult prkdc-/- zebrafish. Recipients were monitored by fluorescence imaging. (B,D,F,H,I,K) Measurements originate from at least three distinct experiments. Number on bars: number of embryos. (B,H,I,K) Error bars represent SEM. *p < 0.05, **p < 0.01, ***p < 0.001. (B,H,I) ANOVA complemented by Tukey\u2019s HSD.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73040/elife-73040-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative images of the whole-mount in situ hybridization (WISH) staining for gata1, pu.1, and l-plastin expression in the tail region of 48 hr post fertilization (hpf) old Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G zebrafish embryos. Scale bar, 250 \u00b5m. Numbers in the pictures indicate the number of embryos with the phenotype represented in the image. (B) Cell proliferation was assessed in the caudal hematopoietic tissue (CHT) region of 5 days post fertilization (dpf) old Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G embryos in the Tg(cd41:GFP) background by immunohistochemistry using antibodies specific for phosphohistone H3 (pHis3) and GFP. Cells positive for both GFP and pHis3 are indicated with white arrows in the merge panel. Scale bar, 10 \u03bcm. (C) Representative images of the Acridine orange staining of the CHT region of the 5 dpf old Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G embryos. Scale bar, 50 \u03bcm. (D) WISH of 5 dpf Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G embryos using ikaros-specific probe. Thymus is indicated (arrow). (E) Size of ikaros-positive thymus, NS, non-significant, ANOVA complemented by Tukey\u2019s HSD. (F) Number of cd41:GFPhigh cells in Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G zebrafish embryos at 5 dpf were counted and percentage of embryos with either 0\u201350, 50\u201375, or 75\u2013100 cd41:GFPhigh cells was plotted. (G) WISH of 5 dpf Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G embryos using \u03b2-globin-specific probe. Scale bar, 150 \u03bcm. (H) Quantification of \u03b2-globin expression in Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G embryos scored as low, mid, and high. (E,F,H) Measurements originate from at least three distinct experiments. Numbers on the bars depict the number of embryos.\n\nOur findings suggest that the Shp2D61G mutant zebrafish embryos develop multilineage hematopoietic defects during the definitive wave of fetal hematopoiesis, which originates in the HSPCs compartment. The observed defect is reminiscent of JMML-like MPN in human NS patients.\n\n### Myeloid bias is established during early differentiation of Shp2D61G HSPCs\n\nIn an effort to better understand the pathogenesis mechanisms in the Shp2D61G mutant HSPCs, single-cell RNA sequencing was performed using SORT-Seq on CD41-GFPlow cells derived from 5 dpf Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G zebrafish embryos in the Tg(cd41:GFP, kdrl:mCherry-CAAX) transgenic background (Figure 3A and B). Unlike in human and mouse, the distinct compartments of HSPCs cannot be isolated, due to lack of antibodies and transgenic lines. Thus, to group cells based on their transcriptional program into specific HSPCs clusters, unsupervised clustering was performed using the RaceID3 package (Herman and Gr\u00fcn, 2018). Clusters were visualized by t-distributed stochastic neighbor embedding (t-SNE) and four major clusters were further analyzed (Figure 3C). Based on the differentially expressed genes (DEGs) and GO term analysis, cells from Cluster 1 were determined to be thrombocyte and erythroid progenitors, cluster 2 hematopoietic stem cell (HSC)-like HSPCs, cluster 3 early myeloid progenitors, and cluster 4 monocyte/macrophage progenitors (Figure 3C, Figure 3\u2014figure supplement 1A, Supplementary file 1). A small subset of cells in cluster 4 represented more differentiated neutrophil progenitors (Figure 3\u2014figure supplement 1B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73040/elife-73040-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representation of the experimental procedure. At 5 days post fertilization (dpf), caudal hematopoietic tissues (CHTs) from Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G embryos in Tg(cd41:GFP, kdrl:mCherry-CAAX) background were isolated. Cells were dissociated and separated by fluorescence-activated cell sorting (FACS), based on cd41:GFPlow expression, prior to single-cell RNA sequencing, as described in the Materials and methods section. (B) Number of cells of distinct genotypes used in single-cell RNA sequencing analysis. (C) Combined t-distributed stochastic neighbor embedding (t-SNE) map generated using the cells of all three genotypes (Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G). Single cells from four major clusters are marked in dark green, blue, pink, and green, and their identities based on marker gene expression are indicated. Minor clusters are marked in gray. (D) Barplots showing the percentage of cells of Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G genotype in distinct clusters. (E) Cells of distinct genotypes Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G are visualized in t-distributed stochastic neighbor embedding (t-SNE) maps in red. (F) t-SNE maps showing log2-transformed read-counts of pu.1. (G) Representative images of the WISH staining for pu.1 expression in 5 dpf Shp2wt and Shp2D61G zebrafish embryos. Scale bar, 100 \u03bcm. (H) Expression of the pu.1 marker scored as low, mid, and high. (I) t-SNE maps showing log2-transformed read-counts of alas-2. (J) Representative images of the WISH staining for alas-2 expression in the tail region of 5 dpf Shp2wt and Shp2D61G zebrafish embryos. Scale bar, 100 \u03bcm. (K) Expression of the alas-2 marker scored as low, mid, and high. (H,K) Number on bars: number of embryos.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73040/elife-73040-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Heat map showing scaled expression (log TPM [transcripts per million] values) of representative genes (y-axis) in all cells (x-axis). Cells belonging to distinct clusters are squared with a dashed line and cluster identity is indicated on the top of the heat map. Cluster 1 is characterized by expression of genes characteristic for thrombocyte and erythroid differentiation, such as gata1a and klf1. Cells from cluster 2 express typical hematopoietic stem cell markers, such as c-myb and her6 (HES1 analogue in human). Cells from cluster 3 express early myeloid progenitor markers, such as runx3 and cxcr4b. Cells from cluster 4 express genes typical for both monocyte and macrophages, such as marco and ctsba. (B) t-Distributed stochastic neighbor embedding (t-SNE) maps showing the sum of total read-counts of selected neutrophil-specific genes.\n\nHSPCs of either Shp2wt or mutant Shp2D61G/wt and Shp2D61G/D61G genotypes were present in all four major clusters, indicating that distinct HSPCs phenotypes were maintained on a gene transcription level. However, the distribution of cells in clusters differed among genotypes. An overrepresentation of mutant Shp2D61G/wt and Shp2D61G/D61G cells was observed in the HSC-like HSPCs cluster and monocytes/macrophages progenitors cluster, whereas these were underrepresented in the thrombocyte and erythroid progenitors cluster (Figure 3D and E). To validate this observation, we investigated the expression of pu.1 and alas2 markers in Shp2D61G embryos of different genotypes by WISH. In the single-cell RNA sequencing dataset, expression of pu.1 and alas2 was upregulated in the myeloid progenitors and erythroid progenitors, respectively (Figure 3F1). An increased number of pu.1-positive cells was detected by WISH in 5 dpf old Shp2D61G embryos compared to their Shp2wt siblings (Figure 3G and H), whereas the number of alas2-positive cells in Shp2D61G mutants was decreased (Figure 3J and K).\n\nTaken together, single-cell RNA sequencing suggests that defects during early differentiation of HSPCs to monocyte/macrophage progenitors and erythroid/thrombocyte progenitors initiate the multilineage blood defect observed in Shp2D61G embryos, which recapitulates features of NS-JMML-like MPN.\n\n### Excessive proinflammatory response in monocyte/macrophage progenitors of Shp2D61G HSPCs\n\nWe further analyzed the cluster of monocyte/macrophage progenitors, in which we observed an overrepresentation of mutant Shp2D61G cells (Figure 4A). Functional annotation of the DEGs and the GO term enrichment analysis revealed enhanced expression of proinflammatory genes in mutant Shp2D61G cells (Figure 4A and B, Supplementary file 1). Interestingly, expression of inflammation-related genes, such as gcsfa, gcsfb, il1b, irg1, and nfkbiaa, was constrained to the cells of mutant Shp2D61G genotype in the monocyte/macrophage progenitors cluster, whereas the monocyte marker timp2b was equally expressed by cells of distinct genotypes (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73040/elife-73040-fig4-v2.jpg)\n\n**Figure 4.:** (A) The monocyte/macrophage progenitors cluster (boxed on the t-distributed stochastic neighbor embedding [t-SNE] map on left) was analyzed in detail. log2-transformed sum of read-counts of selected inflammation-related genes from the top 50 differentially expressed genes in the cells of the monocyte/macrophage progenitors cluster, with genotype and number of cells (n) indicated above. (B) Violin plots show the expression of specific genes in monocyte/macrophage progenitors of Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G genotypes. NS, not significant, ***p < 0.001, t-test. (C,D) Monocle pseudotime trajectory of Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G hematopoietic stem and progenitor cells (HSPCs) differentiation superimposed on the four clusters and indicated by color in D. A route leading from hematopoietic stem cell (HSC)-like cells to monocyte/macrophage progenitors was selected and its root (R) and end are marked with red circles. (E) Pseudotemporal expression dynamics of specific genes along the selected route. The lines represent the smoothened regression of the moving average for Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G genotypes. (F) In vivo imaging of the caudal hematopoietic tissue (CHT) region of Shp2wt and Shp2D61G/wt zebrafish embryos in Tg(il1b:eGFP, mpeg:mCherry) background at 5 days post fertilization (dpf). Representative images are shown. The dashed line boxed region of CHT is zoom-in in inset. Scale bar, 10 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73040/elife-73040-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Identities of the four clusters of HSPCs of Shp2wt, Shp2D61G/wt and Shp2D61G/D61G genotypes from the trajectory in Figure 4, ordered in pseudotime. (B) Heat map showing scaled expression (log TPM [transcripts per million] values) of representative genes (y-axis) in cells of Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G genotypes from the selected trajectory route, ordered along the pseudotime (x-axis). The cell type and pseudotime are annotated above the heat map.\n\nWe next aimed to determine at which point the observed inflammatory program initiated during the differentiation of HSC-like cells into monocyte/macrophage progenitors. We used Monocle trajectory inference to order cells from the four major clusters based on their differentiation state along the pseudotime. HSC-like cells were located at the start of the progression trajectory and from there, two differentiation routes were determined, one leading to the thrombocyte and erythrocyte progenitors, and the second one leading to the monocyte/macrophage progenitors (Figure 4C and D). The route that includes HSC-like cells, early myeloid progenitors, and monocyte/macrophage progenitors was then selected (Figure 4C and D, Figure 4\u2014figure supplement 1A) and the expression of inflammatory genes in distinct genotypes was computed along it (Figure 4E, Figure 4\u2014figure supplement 1B). Expression of the monocyte marker timp2b started during early differentiation of monocyte/macrophage progenitors. The level of timp2b expression was similar in Shp2wt and Shp2D61G HSPCs. Expression of the inflammatory genes, il1b, gcsfa, irg1, nfkbiaa, and tnfa, started at a similar pseudotime as timp2b expression, but with a more robust expression in Shp2D61G HSPCs than in Shp2wt HSPCs. Finally, high expression of IL-1\u03b2 was validated in mutant Tg(il1b:eGFP, mpeg:mCherry) transgenic embryos in vivo. IL-1\u03b2-eGFP-positive cells were more abundant in the CHT region of Shp2D61G embryos than in wt embryos (Figure 4F).\n\nTaken together, Shp2D61G embryos display proinflammatory gene expression in HSPCs, which is initiated during early differentiation of the monocyte/macrophage progenitor cells.\n\n### PTPN11 somatic mutations induce inflammatory response genes in HSPCs of JMML patients\n\nWe hypothesized that activating mutations in Shp2 may trigger an inflammatory response in a similar way in sporadic JMML as we observed in syndromic JMML-like MPN. To investigate this, we performed transcriptomic analysis of the HSPCs compartments derived from bone marrows of sporadic JMML patients with activating mutations in SHP2 (n = 5) and age-matched healthy donors (n = 7). The SHP2 mutations in JMML HSPCs were distinct among patients and both HSCs and progenitors were included (Supplementary file 2). Overall, we identified 1478 DEGs in HSPCs from JMML patients, compared to the healthy donor HSPCs (Figure 5A, Supplementary file 3). The functional analysis of DEGs using gene set enrichment analysis (GSEA) was performed to systematically explore hallmark gene signatures specific for JMML HSPCs (Figure 5B, Supplementary file 4). Strikingly, altered expression of genes related to inflammation was the most prominent, such as genes involved in TNF\u03b1 signaling via NF\u03baB. The inflammatory response genes were significantly enriched in JMML HSPCs (Figure 5B\u2013D). De-regulation of genes related to proliferation (G2M checkpoint, MYC targets, and E2F targets) was evident in JMML HSPCs, suggesting their decreased quiescence (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73040/elife-73040-fig5-v2.jpg)\n\n**Figure 5.:** (A) Volcano plot of differentially expressed genes of HSPCs derived from bone marrow of JMML patients with PTPN11 mutations (n = 5) and healthy bone marrow (n = 7). Underexpressed genes are marked in blue and overexpressed genes are marked in red. TNFA expression is highlighted. Green dashed lines indicate the significance level. (B) Gene set enrichment analysis (GSEA) for the MSigDB\u2019s hallmark gene sets in HSPCs from JMML compared to normal human age-matched bone marrow. GSEA plots for TNFA_SIGNALING_VIA_NFKB (C), INFLAMMATORY RESPONSE (D), and the custom zebrafish signature based on the top 100 human orthologous of genes upregulated in monocyte/macrophage progenitor cluster of zebrafish HSPCs (E). Violin plots show the expression of TNFA (F) and MARCKSL (G) in either human wild type (wt) vs. JMML HSPCs, and zebrafish Shp2wt vs. Shp2D61G/wt and Shp2D61G/D61G monocyte/macrophage HSPC progenitors. **p < 0.01, ***p < 0.001, t-test. (H) Principal component analysis (PCA) for the 100 genes included in the custom zebrafish signature. Green dots represent PTPN11 mutated JMML, gray ones represent normal human age-matched bone marrow. PC1: 19% of the variance, PC2: 16% of the variance, PC3: 14% of the variance.\n\nWe next studied whether the inflammatory-related gene signature overlaps between HSPCs from zebrafish NS/JMML-like MPN model and human JMML. GSEA revealed that human orthologs of the top 100 DEGs found in the zebrafish monocyte/macrophage progenitor cells were enriched significantly in patient JMML HSPCs (Figure 5E). Some of the top overexpressed inflammation-associated genes in JMML patients, such as TNF and MARCKSL, were also overexpressed in NS/JMML-like MPN mutant zebrafish embryos compared to the wt (Figure 5F and G). 3D principal component analysis (PCA) visualized that these zebrafish signature genes were able to clearly segregate HSPCs from JMML patients and healthy donors (Figure 5H). These findings suggest that mutant, activated SHP2 triggers proinflammatory gene expression in HSPCs both in sporadic JMML patients and in our zebrafish model of syndromic JMML-like MPN in a similar manner, suggesting a common underlying, endogenously driven process.\n\n### Inhibition of the proinflammatory response ameliorates the JMML-like MPN phenotype\n\nTo investigate the role of the inflammatory response in the blood defect, we assessed the effect of dexamethasone in Shp2D61G embryos. Dexamethasone is an anti-inflammatory agent, which is known to suppress the inflammatory response in the monocyte/macrophage lineage (Ehrchen et al., 2019; Xie et al., 2020). In parallel, inhibitors of the known Shp2-associated signaling pathways were used, targeting MEK (CI1040) or PI3K (LY294002) (Tajan et al., 2015). Shp2D61G embryos were exposed to inhibitors continuously from 2 to 5 dpf (Figure 6A). Both CI1040 and LY294002 led to a robust reduction in expansion of both HSPCs and myeloid lineage in mutant embryos, measured by WISH using markers for c-myb and l-plastin (Figure 6B and C), demonstrating that the NS-associated blood development defect in Shp2D61G embryos was largely caused by overactivation of the RAS-MAPK and PI3K pathways as expected.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73040/elife-73040-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic overview of the treatments with MEK inhibitor CI1040, PI3K inhibitor LY294002, and anti-inflammatory corticosteroid dexamethasone. Embryos were continuously treated from 48 hr post fertilization (hpf) until 5 days post fertilization (dpf), when either whole-mount in situ hybridization (WISH), confocal imaging, or quantitative reverse transcription PCR (RT-qPCR) was performed. (B,C) WISH staining for the expression of the c-myb and l-plastin markers was scored as low, mid, and high. Measurements originate from at least three distinct experiments. Number on bars: number of embryos. NS, not significant; *p < 0.05, **p < 0.01, ***p < 0.001, chi-squared test. (D) Representative images of 5 dpf Shp2wt and Shp2D61G zebrafish embryos in Tg(mpx:GFP, mpeg:mCherry) background without and with dexamethasone treatment. Scale bars, 150 \u03bcm. (E,F) Number of mpx:GFP and mpeg:mCherry-positive cells per embryo. Number on bars: number of embryos. Error bars represent SEM. (G) Expression of tnfa, gcsfb and il1b genes determined by RT-qPCR in Shp2wt and Shp2D61G/D61G zebrafish embryos without and with dexamethasone treatment at 5 dpf, normalized to ef1a expression. Standard deviation of four samples in duplicates for each condition are shown. (E,F,G) *p < 0.05, **p < 0.01, ***p < 0.001. ANOVA complemented by Tukey\u2019s HSD.\n\nTo our surprise, dexamethasone reduced c-myb and l-plastin expression to a similar extent as CI1040 and LY294002 (Figure 6B and C), indicating a profound role for the inflammatory response in the pathogenesis of NS-associated blood defects. We then examined whether dexamethasone treatment affected the expanded myeloid lineage in Shp2D61G embryos by determining the number of neutrophils and macrophages, in the Tg(mpx:GFP, mpeg:mCherry) double transgenic mutant embryos (Figure 6D\u2013F). Upon dexamethasone treatment, the number of mpx-GFP and mpeg-mCherry-positive cells decreased in Shp2D61G embryos to similar levels as observed in Shp2wt embryos, indicating that dexamethasone treatment rescued the expansion of the myeloid lineage in Shp2D61G embryos. Dexamethasone did not significantly alter the number of neutrophils or macrophages in wt embryos (Figure 6D\u2013F). Finally, the expression of proinflammatory genes, such as tnfa, il1b, and gcsfb in Shp2D61G embryos was reduced in response to dexamethasone treatment to levels observed in Shp2wt embryos (Figure 6G).\n\nTaken together, we observed a proinflammatory phenotype of the macrophage/monocyte lineage in Shp2D61G mutant zebrafish, which was established early during HSPCs differentiation. The anti-inflammatory agent dexamethasone largely rescued the hematopoietic defects, suggesting that the inflammatory response in Shp2D61G mutant zebrafish had a causal role in the pathogenesis of the NS/JMML-like MPN blood phenotype.\n\n## Discussion\n\nTo investigate the timing and pathophysiology of mutant SHP2-related myeloproliferative defects, we explored the transcriptomes of HSPCs with activating mutations in SHP2, derived from sporadic JMML patients and syndromic NS/JMML-like MPN zebrafish embryos, respectively. Proinflammatory gene expression was evident both in HSPCs from JMML patients and in mutant zebrafish. It should be noted that the type of data is different, bulk sequencing of the human samples and single-cell sequencing of the zebrafish material. In addition, the source of the material is distinct, fluorescence-activated cell sorting (FACS)-sorted CD41-GFPlow HSPCs from zebrafish embryos and immunophenotypically FACS-sorted postnatal HSCs and progenitors from human. Moreover, genotypically, the samples differed in that the zebrafish carried a single Shp2 mutation (D61G) and the human JMMLs carried distinct activating SHP2 mutations even with additional mutations. Therefore, it is not surprising that the ranking of overexpressed inflammatory genes in HSPCs from mutant zebrafish and human JMML patients was not identical. Nevertheless, the similarity of the proinflammatory signatures revealed by GSEA between these diverging samples is striking.\n\nAlready early studies reported high levels of proinflammatory cytokines, such as IL-1\u03b2, TNF-\u03b1, GM-CSF, in JMML patients plasma (Bagby et al., 1988; Freedman et al., 1992). However, little is known about the cellular origin of the proinflammatory status, its pathophysiological role, and therapeutic potential. The inflammatory response may be initiated in a cell autonomous way or in response to signals from the microenvironment. Dong et al. suggested that IL-1\u03b2 is secreted by differentiated monocytes which get recruited upon secretion of the chemokine, CCL3, by cells of the bone marrow microenvironment containing activating SHP2 mutations. However, the levels of CCL3 in the bone marrow of four NS patients varied (Dong et al., 2016). Furthermore, a microenvironment-driven inflammatory response would not explain high levels of cytokines in sporadic JMML, where niche cells are not mutated. On the other hand, recent reports indicate that JMML leukemia stem cells are heterogeneous but confined to the HSPCs compartment, defining JMML HSPCs as the origin of the disease (Caye et al., 2020; Louka et al., 2021). The pseudotime analysis of inflammatory genes in zebrafish HSPCs indicated that the initiation of the proinflammatory program happens during early differentiation of HSPCs toward the monocyte/macrophage progenitor lineage in Shp2D61G embryos. The limited number of human patients included in our analysis allowed us to establish that the HSPCs compartment from JMML patients showed an inflammatory response, but not which lineage. Transcriptomic analysis of individual progenitor lineages from additional patients will be required to conclude which cell type displayed an inflammatory response. Our data suggest that proinflammatory reprogramming of the monocyte/macrophage lineage might be endogenously driven at least in part, and detailed mechanisms remain to be elucidated in the future.\n\nTo our knowledge, the Shp2D61G mutant zebrafish we developed is the first NS zebrafish model carrying an activating Shp2 mutation at its endogenous locus generated by CRISPR/Cas9-based knock-in technology. Strikingly, phenotypes developed by the Shp2D61G zebrafish corroborate closely with the phenotypes displayed by human NS patients and the existing NS mouse models (Figure 1). Our model presents an exciting novel tool for deciphering pathogenesis mechanisms of NS with its complex traits and for finding novel therapies for this as yet poorly treatable condition.\n\nNS children with D61G mutation have a higher predisposition to develop JMML(-like MPN), and comparably Shp2D61G zebrafish embryos displayed typical JMML-like MPN characteristics, such as expansion of the myeloid lineage, increased sensitivity to Gcsfa, mild anemia, and thrombocytopenia (Figure 2). Furthermore, the observed blood defect was transplantable to secondary recipients and the disease originated in HSPCs, which displayed aberrant proliferation and apoptosis. Given the importance of fetal hematopoiesis during JMML(-like MPN) development, the zebrafish Shp2D61G mutant represents a reliable and unique model for JMML-like MPN, which allows us to study hematopoietic defects caused by mutant Shp2 during the prenatal development for the first time. Our results suggest that the JMML-like MPN defect is initiated at the CHT, which is the counterpart of fetal liver in human. Here, we observed expanded HSPCs, which displayed aberrant proliferation and apoptosis. We further characterized the transcriptomes of HSPCs specifically originating from the CHT, and studied their response to inhibitor treatments directly at the CHT. Striking similarities between the patient and zebrafish HSPCs transcriptomes indicate that the Shp2D61G zebrafish model is an exciting preclinical model for in vivo drug screens at relevant developmental time points, in a high throughput manner.\n\nThe only effective treatment of JMML is allogeneic stem cell transplantation, which has a high relapse rate of 50%. Hence, there is a great need for other means of therapeutic intervention. The role of inflammation as one of the drivers in myeloid leukemogenesis is emerging (Arranz et al., 2017; Craver et al., 2018). Here, we demonstrate that dampening inflammation using the glucocorticoid dexamethasone partially rescued the observed blood phenotype in Shp2D61G, suggesting that the inflammatory response evoked in the cells of myeloid/macrophage lineage was an important driver of the NS/JMML-like blood defect and might be a potential drug target for both sporadic and syndromic JMML(-like MPN). To our surprise, targeting inflammation reversed the blood defect to a similar extent as the MAPK and PI3K pathway inhibitors, emphasizing not only the crucial role of inflammation during JMML pathogenesis, but also its strong therapeutic potential. Since anti-inflammatory therapies are non-invasive and widely available, targeting inflammation might represent a novel avenue for JMML treatment, either alone or in combination with other therapies.\n\nIn conclusion, we observed striking similarities in expression patterns of HSPCs from sporadic human JMML patients with an activating SHP2 mutation and HSPCs from an engineered zebrafish model with an activating NS-associated mutation in Shp2. Particularly genes associated with the inflammatory response were upregulated and strikingly, pharmacological inhibition of the inflammatory response ameliorated JMML-like MPN in the zebrafish model, suggesting this may be a first step for therapeutic intervention in human patients.\n\n## Materials and methods\n\n### Zebrafish husbandry\n\nAll procedures involving experimental animals were approved by the animal experiments committee of the Royal Netherlands Academy of Arts and Sciences (KNAW), Dierexperimenten commissie protocol HI18-0702, and performed under the local guidelines in compliance with national and European law. The following zebrafish lines were used in the study: T\u00fcbingen longfin (TL, wt), Tg(cd41:GFP, kdrl:mCherry-CAAX) (Hogan et al., 2009; Lin et al., 2005), Tg(mpx:GFP, mpeg:mCherry) (Ellett et al., 2011; Renshaw et al., 2006), TgBAC(il1b:eGFP)sh445 (Ogryzko et al., 2019), ptpn11b-/- (Bonetti et al., 2014), prkdc-/- (Moore et al., 2016), and the novel Shp2D61G zebrafish line. Raising and maintenance of zebrafish was performed according to Alestr\u00f6m et al., 2020; Westerfield, 2000. When required, pigmentation of embryos was blocked by adding phenylthiourea (PTU) (Sigma-Aldrich, St Louis, MO, Ref: P7629) at a concentration of 0.003% (v/v) to the E3 medium at 24 hr post fertilization (hpf).\n\n### Patient material\n\nAll children\u2019s samples were obtained after parents had given their written informed consent. Experiments were approved by the institutional review board of the French Institute of Health and Medical Research (INSERM) (IORG0003254) in accordance with the Helsinki declaration. Healthy children bone marrows were obtained from intrafamilial BM transplantation donors and used with the approval of the Institutional Review Board of \u2018H\u00f4pitaux Universitaires Paris Nord Val-de-Seine\u2019, Paris 7 University, AP-HP (IRB: 00006477), in accordance with the Helsinki declaration.\n\nHSPCs fractions were FACS-sorted according to immunophenotypic signature as previously described (Caye et al., 2020), from PTPN11mut JMML (n = 5) and healthy children bone marrow (n = 7). Age, sex, mutations, and fractions available for each sample (HSCs, multipotent progenitors, common myeloid progenitors, granulocyte-macrophage progenitors, and megakaryocyte-erythroid progenitors) are indicated in Supplementary file 2.\n\n### Generation of the Shp2D61G zebrafish line\n\nThe Shp2D61G zebrafish line was generated using the previously described CRISPR/Cas9-based knock-in approach (Tessadori et al., 2018). The sgRNA targeting exon 3 of the ptpn11a gene (5\u2019-GGAGACTATTACGACCTGTA-3\u2019) was designed using the CHOP-CHOP database (http://chopchop.cbu.uib.no/), further processed according to the previously published guidelines (Gagnon et al., 2014) and finally transcribed using the Ambion MEGAscript T7 kit (Thermo Fisher Scientific, Waltham, MA, Ref: AMB13345). The sgRNA, constant oligonucleotide, and template oligonucleotide were all generated by Integrated DNA Technologies (Coralville, IA) as standard desalted oligos and template oligonucleotide was further purified using the QIAquick Nucleotide Removal Kit (Qiagen, Hilden, Germany, Ref: 28304). The oligonucleotide used for the homology repair is 59 nucleotides long and besides the D61G mutation, contains three additional silent mutations in proximity to the PAM site. The sequence of template oligonucleotide is 5\u2019-GAGTGGCAAACTTCTCTCCACCATATAAATCGTAATAGCCTCCTGTGTTTTGAATCTTA-3\u2019. TL wt zebrafish embryos at the one-cell stage were injected directly in the cell with 1 nl of the injection mixture containing 18.75 ng/ml of sgRNA, 37.5 ng/ml of template oligonucleotide, and 3.6 mg/ml of Cas9 protein in 300 mM KCl. Cas9 protein was a gift from the Niels Geijsen laboratory at the Hubrecht Institute. The injected embryos were grown into the adulthood. F0 generation zebrafish were outcrossed with the wt zebrafish. DNA extracted from the 12 distinct 1 dpf old F1 generation embryos was screened for the correct insertion of the template oligonucleotide. Screening was done by Sanger sequencing (Macrogen Europe B.V., Amsterdam, The Netherlands) of the 225 bp long PCR product encompassing the genomic regions of the CRISPR target sites, which was generated using the forward 5\u2019-TCATCTCCTCACTAGGCGAAAT-3\u2019 and reverse primer 5\u2019- TATGTATGTGCTCACCTCTCGG-3\u2019. The efficiency of the knock-in was 1.8% (1 founder zebrafish in 54 screened primary injected zebrafish). F1 generation was then established from the F0 founder. F1 generation adults were finclipped and sequenced for the presence of the mutation. All experiments were performed in zebrafish embryos and adults from the F3 and F4 generation. For all of the experiments except single-cell RNA sequencing and quantitative reverse transcription PCR (RT-qPCR), embryos were siblings derived from an incross of Shp2D61G/wt animals. After the experimental procedure, embryos were lysed and genotyped by sequencing as described above. Western blotting was performed as previously described (Hale and den Hertog, 2018) using the Shp2 (Santa Cruz Biotechnology, Dallas, TX, Ref: SC-280) and \u03b2-tubulin (Merck Millipore, Burlington, MA, Ref: CP06) antibodies.\n\n### Phenotyping of the NS traits\n\nBody axis lengths were measured from the tip of the head to the end of the trunk in the bright-field images of laterally positioned embryos, larva, and adults, which were anesthetized in 0.1% MS-222. Alcian blue (Sigma-Aldrich, Ref: A5268) staining was performed as previously described (Paardekooper Overman et al., 2014), on PTU-treated 4 dpf old embryos, which were anesthetized in 0.1% MS-222 and fixed in 4% PFA overnight. Embryos were positioned on their back in 70% glycerol in PBS and imaged with Leica M165 FC stereomicroscope (Leica Microsystems, Wetzlar, Germany). Analysis was performed in ImageJ. In vivo high-speed bright-field imaging of the embryonic hearts from PTU-treated embryos at 5 dpf, which were anesthetized in 0.1% MS-222 and embedded in 0.3% UltraPure agarose (Thermo Fisher Scientific, Waltham, MA) prepared in E3 medium containing 16 mg/ml MS-222. Measurements were performed at 28\u00b0C using a Leica DM IRBE inverted light microscope (Leica Microsystems) with a Hamamatsu C9300-221 high-speed CCD camera (Hamamatsu Photonics, Hamamatsu, Japan). Imaging was conducted at 150 frames per second using Hokawo 2.1 imaging software (Hamamatsu Photonics) for a period of 10 s (approximately 30 cardiac cycles). Heart rate measurements and contractility parameters were analyzed using ImageJ. Volumes were analyzed using ImageJ by drawing an ellipse on top of the ventricle at end-diastole and end-systole. Averages of three measurements per heart were determined. End diastolic and end systolic volume (EDV/ESV) were calculated by: (4/3)*(\u03c0)*(major axis/2)*((minor axis/2)^2). Stroke volume (SV) by: EDV-ESV. Ejection fraction (EF) by: (SV/EDV)*100. Cardiac output (CO) by: SV*Heart rate.\n\n### Whole-mount in situ hybridization\n\nPTU-treated embryos were anesthetized in 0.1% MS-222 (Sigma-Aldrich, Ref: A5040) and fixed in 4% PFA for at least 12 hr at 4\u00b0C. WISH was performed as described in Thisse et al., 1993. Probes specific for myl7, vhmc, and ahmc were described in Bonetti et al., 2014. Probes specific for c-myb, l-plastin, pu.1, gata1, ikaros, b-globin, and alas-2 were described in Choorapoikayil et al., 2014; Hu et al., 2014. Subsequently, embryos were mounted in 70% glycerol in PBS and imaged with Leica M165 FC stereomicroscope (Leica Microsystems). Images were processed in ImageJ (US National Institutes of Health, Bethesda, MD). Abundance of the probe signal was scored as low, mild, or high.\n\n### Inhibitors treatment\n\nPTU-treated embryos were incubated with either 0.15 \u03bcM of CI1040 (Sigma-Aldrich, Ref: PZ0181), 4 \u03bcM LY294002 (Sigma-Aldrich, Ref: L9908), or 10 \u03bcM of dexamethasone (Sigma-Aldrich, Ref: D4902) continuously from 48 hpf until 5 dpf in the same medium. At 5 dpf embryos were either fixed and half of the embryos was processed for WISH using probe specific for c-myb and the other half using probe specific for l-plastin, or snap-frozen and processed for RT-qPCR, while the live embryos in Tg(mpx:GFP, mpeg:mCherry) transgenic background were imaged by confocal microscopy.\n\n### Confocal microscopy\n\nAll confocal imaging was performed on a Leica SP8 confocal microscope (Leica Microsystems). Embryos were mounted in 0.3% agarose. Live embryos were anesthetized in MS-222. Whole embryos were imaged using a 10\u00d7 objective and z-stack step size of 3 \u03bcm, while the CHT area with 20\u00d7 objective and z-stack step size of 1 \u03bcm. The number of CD41-GFPlow cells was determined by imaging the CHT of the living 5 dpf old embryos of the Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G siblings in the Tg(cd41:GFP, kdrl:mCherry-CAAX) transgenic background, while the number of CD41-GFPhigh cells was determined by imaging whole embryos, which were fixed for 2 hr in 4% PFA prior to imaging. To determine the number of mpx-GFP and mpeg-mCherry cells, whole live 5 dpf old embryos of the Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G line in the Tg(mpx:GFP, mpeg:mCherry) transgenic background were imaged. Imaris V9.3.1 (Bitplane, Zurich, Switzerland) was used to reconstruct 3D images and count individual GFP and/or mCherry-positive cells.\n\n### pHis3 staining\n\nPTU-treated 5 dpf old Shp2D61G embryos in the Tg(cd41:GFP, kdrl:mCherry-CAAX) transgenic background were fixed in 2% PFA overnight and stained as described in Choorapoikayil et al., 2012. Primary pHis3 antibody (1:500 in blocking buffer, Abcam, Cambridge, UK, Ref: ab5176) and secondary GFP antibody (1:200 in blocking buffer, Aves Labs Inc, Tigard, OR, GFP-1010) were used. Embryos were mounted in 0.3% agarose, their CHT was imaged using the SP8 confocal microscope, and 3D images were subsequently reconstructed using Imaris.\n\n### Acridine orange staining\n\nPTU-treated embryos at 5 dpf were incubated in 5 \u03bcg/ml of Acridine orange (Sigma-Aldrich, Ref: A6014) in E3 medium, for 20 min at room temperature. They were then washed five times for 5 min in E3 medium, anesthetized in MS-222, and mounted in 0.3% agarose. Whole embryos were imaged with SP8 confocal microscope and 3D images were reconstructed using Imaris.\n\n### Colony-forming assay\n\nThe CD41-GFPlow cell population isolated from CHTs of Shp2wt, Shp2D61G/wt embryos at 5 dpf was FACS-sorted; 250 \u03bcl of solution containing 2500 cells, media prepared as described in Svoboda et al., 2016, and 100 ng/ml of Gcsfa (gift from the Petr Bartunek lab, Institute of Molecular Genetics, Academy of Sciences of the Czech Republic v.v.i. Prague) was plated per well of a 96-well plate in a triplicate. Cells were grown in humidified incubators at 32\u00b0C, 5% CO2. After 6 days, colonies were imaged and counted using the EVOS microscope (Thermo Fisher Scientific).\n\n### Quantitative reverse transcription PCR\n\nZebrafish siblings of either Shp2wt or Shp2D61G/D61G genotypes were crossed to generate embryos of Shp2wt and Shp2D61G/D61G genotype. At 5 dpf, five embryos of the same condition were pooled and snap-frozen in liquid nitrogen. Total RNA was extracted from embryos using the TRIzol reagent according to the manufacturer\u2019s instructions (Thermo Fisher Scientific, Invitrogen, Waltham, MA, Ref: 15596018). cDNA synthesis was performed from 800 ng of RNA using the SuperScript III First-Strand kit (Thermo Fisher Scientific, Invitrogen, Waltham, MA, Ref: 12574018). RT-qPCR was performed with an CFX Connect Real-Time system (Bio-Rad Laboratories Inc, Hercules, CA) using FastStart Universal SYBR Green Master (ROX) (Roche, Basel, Switzerland) and 1:20 dilution of cDNA. Reaction mixtures were incubated for 10 min at 95\u00b0C, followed by 42 cycles of product amplification (15 s at 95\u00b0C and 1 min at 58\u00b0C). For each condition four samples were used in duplicate. Gene expression was normalized against the expression of ef1a for each mRNA. The following primers were used: ef1a forward, 5\u2019-GAGAAGTTCGAGAAGGAAGC-3\u2019; ef1a reverse, 5\u2019-CGTAGTATTTGCTGGTCTCG-3\u2019; tnfa forward, 5\u2019-AGACCTTAGACTGGAGAGATGAC-3\u2019; tnfa reverse, 5\u2019-CAAAGACACCTGGCTGTAGAC-3\u2019; gcsfb forward, 5\u2019-AGAGAACCTACTGAACGACCT-3\u2019; gcsfb reverse, 5\u2019-CTTGAACTGGCTGAGTGGAG-3\u2019; il1b forward, 5\u2019-GAACAGAATGAAGCACATCAAACC-3\u2019; il1b reverse, 5\u2019-ACGGCACTGAATCCACCAC-3\u2019.\n\n### Transplantation experiments\n\nZebrafish kidney marrow transplantation were performed as previously described (Moore et al., 2016; Tang et al., 2014). In short, tissues were isolated from donor Shp2D61G/wt or wt animals in the Tg(mpx:GFP, mpeg:mCherry) background following Tricaine (Western Chemical, Brussels, Belgium) overdose. Excised tissues from dissected fish are placed into 500 \u00b5l of 0.9\u00d7 PBS + 5% FBS on a 10 cm Petri dish. Single-cell suspensions were obtained by maceration with a razor blade, followed by manual pipetting to disassociate cell clumps. Cells were filtered through a 40 \u00b5m Falcon cell strainer, centrifuged at 1000 g for 10 min, and resuspended to the 2 \u00d7 107 cells/ml. Five \u00b5l suspension containing 105 kidney marrow cells were injected into the peritoneal cavity of each recipient fish using a 26s Hamilton 80366 syringe. Cellular engraftment was assessed at 0, 7, 14, 28 dpt by epifluorescence microscopy.\n\n### Isolation of CD41-GFPlow cell population and single-cell RNA sequencing\n\nZebrafish siblings of either Shp2wt or Shp2D61G/D61G genotypes were crossed to generate embryos of Shp2wt, Shp2D61G/wt, and Shp2D61G/D61G genotype. From 24 hpf onward, embryos were grown in PTU-containing medium. The CHTs of approximately 50 randomly selected Shp2wt, ShptD61G/wt, and Shp2D61G/D61G embryos in Tg(cd41:GFP, kdrl:mCherry-CAAX) transgenic background at 5 dpf were dissected and CHTs of the same genotype were pooled in Leibovitz medium (Thermo Fisher Scientific, Gibco, Waltham, MA, Ref: 11415049). After washing with PBS0, the CHTs were dissociated with TryplE (Thermo Fisher Scientific, Gibco, Waltham, MA, Ref: 12605036) for 45 min at 32\u00b0C. The resulting cell suspension was washed with PBS0, resuspended in PBS0 supplemented with 2 mM EDTA, 2% FCS, and 0.5 \u00b5g/ml DAPI (Sigma-Aldrich, Ref: D9542) and passed through a 40 \u00b5m Falcon cell strainer. DAPI staining was used to exclude dead cells. Cells with CD41-GFPlow-positive signal were subjected to FACS with an influx cytometer (BD Biosciences, San Jose, CA). Single-cell RNA sequencing was performed according to an adapted version of the SORT-seq (Muraro et al., 2016) with adapted primers described in van den Brink et al., 2017. In short, single cells were FACS-sorted, as described above, on 384-well plates containing 384 primers and mineral oil (Sigma-Aldrich). After sorting, plates were snap-frozen on dry ice and stored at \u201380\u00b0C. For amplification, cells were heat-lysed at 65\u00b0C followed by cDNA synthesis using the CEL-seq2 (Hashimshony et al., 2016) and robotic liquid handling platforms. After the second strand cDNA synthesis, the barcoded material was pooled into libraries of 384 cells and amplified using in vitro transcription. Following amplification, the rest of the CEL-seq2 protocol was followed for preparation of the amplified cDNA library, using TruSeq small RNA primers (Illumina, San Diego, CA). The DNA library was paired-end sequenced on an Illumina Nextseq 500 (Illumina), high output, with a 1 \u00d7 75 bp Illumina kit (R1:26 cycles, index read: 6 cycles, R2:60 cycles).\n\n### Data analysis of single-cell RNA sequencing\n\nDuring sequencing, Read1 was assigned 26 base pairs and was used for identification of the Ilumina library barcode, cell barcode, and unique molecular identifier. Read2 was assigned 60 base pairs and used to map to the reference transcriptome of Zv9 D. rerio. Data was demultiplexed as described in Gr\u00fcn et al., 2014. Single-cell transcriptomics analysis was done using the RaceID3 algorithm (Herman and Gr\u00fcn, 2018), following an adapted version of the RaceID manual (https://cran.r-project.org/web/packages/RaceID/vignettes/RaceID.html) using R-3.5.2. In total 768 cells per genotype were sequenced for the datasets. After removing cells with less than 1000 UMIs and only keeping genes that were detected with at least 3 UMIs in 1 cell, 439 wt, 384 D61G/wt, and 543 D61G/D61G cells were left for further analysis. Batch effects observed for plates which were prepared on different days was removed using the scran function. Four major clusters and 5 minor clusters were identified. The minor clusters contained 130 cells in total and were excluded from further analysis for statistical reasons. Differential gene expression analysis was done as described in Muraro et al., 2016, with an adapted version of the DESseq2 (Love et al., 2014). GO term enrichment analysis for DEGs of each major cluster was performed using the DAVID Bioinformatics Resources 6.8 (https://david.ncifcrf.gov/). Trajectory inference and pseudotime analysis were done using Monocle3 (v1.0.0). The data was subset to include the major cell types: HSC-like cells, thrombocyte and erythrocyte progenitors, early myeloid progenitors, and monocyte/macrophage progenitors. The normalized counts, t-SNE coordinates, and clusters generated by RaceID3 were used for trajectory inference. To investigate the potential lineage differentiation path, the HSC-like cluster (center) was then selected as root for pseudotime analysis and used to order cells in pseudotime.\n\n### RNA sequencing and differential gene expression analysis of the patient material\n\nLibraries were prepared with TruSeq Stranded Total RNASample preparation kit (Illumina) according to supplier\u2019s recommendations. Briefly, the ribosomal RNA fraction was removed from 1 \u03bcg of total RNA using the Ribo-Zero Gold Kit (Illumina). Fragmentation was then achieved using divalent cations under elevated temperature to obtain approximately 300 bp pieces. Double strand cDNA synthesis was performed using reverse transcriptase and random primers, Illumina adapters were ligated, and cDNA library was PCR-amplified for sequencing. Paired-end 75b sequencing was then carried out on a HiSeq4000 (Illumina). Quality of reads was assessed for each sample using FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/). A subset of 500,000 reads from each Fastq file was aligned to the reference human genome hg19/GRCh37 with tophat2 to determine insert sizes with Picard. Full Fastq files were aligned to the reference human genome hg19/GRCh37 with tophat2 (-p 24r 150g 2 --library-type fr-firststrand) . We removed reads mapping to multiple locations. STAR was used to obtain the number of reads associated with each gene in the Gencode v26lift37 annotation (restricted to protein-coding genes, antisense, and lincRNAs). Raw counts for each sample were imported into R statistical software using the Bioconductor DESeq2 package. Extracted count matrix was normalized for library size and coding length of genes to compute TPM expression levels. Differential gene expression analysis was performed using the Bioconductor limma package and the voom transformation. To improve the statistical power of the analysis, only genes expressed in at least one sample (TPM > 0.3) were considered. A qval threshold of <0.05 and a minimum fold change of 1.2 were used to define DEGs. Due to the imbalance between male and female samples, sex differences were adjusted with the function model.matrix from the stats package. RNA sequencing data analysis was performed with Galileo v1.4.4, an interactive R shiny application. Representations of the gene expression levels were performed with the library ggplot2 and R 4.0.2.\n\n### Pathway enrichment analysis (GSEA) and PCA\n\nGSEA was performed by clusterProfiler::GSEA function using the fgsea algorithm. Gene list from the differential analysis was ordered by decreasing log2 (fold change) values. Hallmark classes gene sets from the MSigDB v7.2 database were selected keeping only gene sets defined by 10\u2013500 genes. The p-values were adjusted by the Benjamini-Hochberg (FDR) procedure. The custom zebrafish signature was built from the human orthologous genes of the 100 most overexpressed zebrafish genes based on the log2 (fold change) values derived from the monocyte/macrophage progenitor cluster of the zebrafish HSPCs single-cell sequencing dataset. The Bioconductor edgeR package was used to import raw counts into R, and compute normalized log2 CPM (counts per millions of mapped reads) using the TMM (weighted trimmed mean of M-values) as normalization procedure. The normalized expression matrix from the 100 most overexpressed genes (based on log2FC in the zebrafish dataset) was used to classify the samples according to their gene expression patterns using PCA. PCA was performed by FactoMineR::PCA function with \u2018ncp = 10, scale.unit = FALSE\u2019 parameters.\n\n### Statistical analysis\n\nData was plotted in GraphPad Prism 7.05 (GraphPad Software Inc, San Diego, CA), except for the violin plots of gene expression, which were plotted in R using ggplot2 (Wickham, 2009). Statistical difference analysis was performed using the one-way ANOVA supplemented by Tukey\u2019s HSD test in GraphPad Prism 7.05, except for the gene expression differences in single-cell RNA sequencing data, where t-test was performed in Rstudio 1.1.463 (Rstudio, Boston, MA), and the treatment WISH experiments, where chi-squared test was performed in GraphPad Prism 7.05. Significant difference was considered when p < 0.05 (*p < 0.05, **p < 0.01, ***p < 0.001, NS = non-significant).\n",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "301dc3a2-512f-497b-a5f7-742937c5da06",
+      "submission_id": "3556464c-a6f1-41ec-8679-9bc11feb1800",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard M White, https://ror.org/02yrq0923 Memorial Sloan Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73040.sa0](https://doi.org/10.7554/eLife.73040.sa0)\n\nThe authors of this paper model the D61G mutation in the gene PTPN11 that encodes the protein-tyrosine phosphatase SHP2 in zebrafish, creating a model consistent with the human Noonan syndrome (NS), which is predisposed to juvenile myelomonocytic leukemia (JMML) and myeloproliferative neoplasm (MPN)-like syndrome. The study nicely provides a new model that can be used as the basis for future studies in the field. Because the mutant variably displays phenotypes along a spectrum from NS to MPN, different researchers can choose to focus on this as they see fit.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Richard M White, https://ror.org/02yrq0923 Memorial Sloan Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73040.sa1](https://doi.org/10.7554/eLife.73040.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Inflammatory response in hematopoietic stem and progenitor cells triggered by activating SHP2 mutations potentiates leukemogenesis\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers and the evaluation has been overseen by Richard White as the Senior Editor and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe detailed revisions are explained below, but I wanted to highlight two important major things that were common across reviewers:\n\n1) Concordance between the fish and human diseases, especially in regards to HSPC vs macrophage/monocyte populations. This issue was brought up by several reviewers, as detailed below. As it stands, it makes the title of the paper confusing.\n\n2) A better way to address the effect of the anti-inflammatory drugs you have chosen in terms of staining for marker genes by in situ or via transgenic reporters of the various cells affected. This was also raised by several reviewers and needs clarification.\n\nReviewer #1 (Recommendations to the Authors):\n\n1. Is there evidence of splenomegaly, as is observed consistently in children with JMML, in the fish?\n\n2. Onlly two genes (pu.1 and alas-2) are fully evaluated for myeloid bias.\n\n3. Figure 3c does not show granulocytic lineage. Please explain.\n\n4. There is not much difference between heterozygous and homozygous D61G fish in terms of phenotype penetrance or gene expression. Please explain.\n\n5. What do the heterozygous or homozygous D61G fish die from?\n\n6. The title overstates the data presented, including the statement of \"potentiating leukemogenesis\".\n\nReviewer #2 (Recommendations for the authors):\n\nThe manuscript is well written and easy to read. I have some comments of parts that were incomplete or not very clear to me:\n\n1. It is not clear if this is a dominant or recessive mutation in patients.\n\n2. There is no mention how SHP2 is conserved between species (human vs zebrafish). A figure showing the amino acid conservation, especially the D61 amino acid would be helpful.\n\n3. In zebrafish there are two orthologues of SHP2: Shp2a and Shp2b. They authors do not address what is the difference between them and why they chose Sh2a. Are they expressed in different times during development? Or in different tissues? Do they see the same phenotype in Shp2b-/-?\n\n4. Figure 1J. The mutants that showed a severe phenotype after 24 wpf, do they have any hematological defect? Are they fertile?\n\n5. Figure 1K. There is not a legend. Is it statistical different?\n\n6. Figure 2. All images are wt and D61G/wt. Why not showing the D61G/G61G images?\n\n7. Figure 3A. Is each larvae genotyped before flow experiments? Do the larvae selected presented a phenotype at 5 dpf as described in lines 112-113. Is it a pool of 50 larvae per genotype?\n\n8. In material and methods is not included the anti-inflammatory treatments. It would be useful to include drug's company, concentrations, if change of media daily\u2026 etc. It would be interesting to see the effect of these drugs in neutrophils and macrophages using the transgenic lines Tg(mpx:GFP) and Tg(mpeg:mCherry).\n\nReviewer #3 (Recommendations for the authors):\n\nOverall, this is an interesting, well written and clear manuscript. The mutant is a very nice tool that can be use by others in the field, and makes good use of complementary fish and human samples. I find some of the RNA-seq comparisons confusing, which dovetails with a lack of clear mechanism. Although the paper is clearly set up as a \"model\" paper, rather than a mechanism paper, some of this confusion hampers the ability to make conclusions and would be strengthened by a few things:\n\n1) Fish vs human\n\nPerhaps the most confusing aspect of the study is where and when the inflammatory signature occurs in fish vs humans. In the fish scRNA, they mainly seem to identify this in the monocyte/macrophage clusters, yet the paper title and abstract implies that this occurs in the HSPC cluster. This is very aptly demonstrated in the human samples, where that signature seems robust. However, it is not clear from the data whether this signature truly exists in the fish HSPCs or is it restricted to the monocyte/macrophages? The authors need to show the pathway analysis for both clusters in detail, and then discuss why the fish might be different than the human (perhaps it is not).\n\n2) The cell of origin\n\nThe above leads to some confusion of what you think the cell of origin is in fish vs. human JMML/MPN phenotypes. Do you they diseases, although similar, arise in different populations? Do you have data to suggest this? One way of getting at this would be to do something like RNA Velocity in the scRNA data, since this may tell you where the inflammatory signature comes from. Transplantation of the HSPC vs monocyte/macrophage populations from the fish would be even better if that were technically feasible (this is not a required experiment). Depending on this data, a much clearer description of the cell of origin needs to be made.\n\n3) The mechanism\n\nI do not expect a detailed mechanism in this type of paper. Yet the RNA-seq is a real opportunity to at least suggest potential mechanisms. I am not convinced this is a cell autonomous effect, and I would think that there could be cell-cell interactions that help explain this. One idea would be to run something like NicheNet or CellPhoneDB on the HSPC vs. monocyte/macrophage populations from the scRNA-seq, which would at least propose potential cell-cell interaction mechanisms that could be explore by other researchers down the road.\n",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e195c6d4-c5e4-4f9a-a0b5-c346fd602951",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C1",
+      "claim": "Gain-of-function mutations in the protein-tyrosine phosphatase SHP2 are the most frequently occurring mutations in sporadic juvenile myelomonocytic leukemia (JMML).",
+      "claim_type": "EXPLICIT",
+      "source": "Gain-of-function mutations in the protein-tyrosine phosphatase SHP2 are the most frequently occurring mutations in sporadic juvenile myelomonocytic leukemia (JMML) and JMML-like myeloproliferative neoplasm (MPN) associated with Noonan syndrome (NS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and is supported by citations in the introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "13e4ac7e-0e3b-47f5-b0b3-0cffe6aa2efa",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C2",
+      "claim": "Hematopoietic stem and progenitor cells (HSPCs) are the disease propagating cells of JMML.",
+      "claim_type": "EXPLICIT",
+      "source": "Hematopoietic stem and progenitor cells (HSPCs) are the disease propagating cells of JMML.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and is supported by citations in the discussion section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "5ea49bef-6d83-487a-a80b-e584a9a42768",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C3",
+      "claim": "CRISPR/Cas9 knock-in Shp2D61G mutant zebrafish recapitulated a JMML-like MPN phenotype, including myeloid lineage hyperproliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to major NS traits, CRISPR/Cas9 knock-in Shp2D61G mutant zebrafish recapitulated a JMML-like MPN phenotype, including myeloid lineage hyperproliferation, ex vivo growth of myeloid colonies, and in vivo transplantability of HSPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 2, showing increased numbers of neutrophils and macrophages in mutant zebrafish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "bbefe864-b9d1-45fe-978e-08cddd5501a0",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C4",
+      "claim": "CRISPR/Cas9 knock-in Shp2D61G mutant zebrafish showed ex vivo growth of myeloid colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to major NS traits, CRISPR/Cas9 knock-in Shp2D61G mutant zebrafish recapitulated a JMML-like MPN phenotype, including myeloid lineage hyperproliferation, ex vivo growth of myeloid colonies, and in vivo transplantability of HSPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 2J and K showing colony-forming assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "db73c62e-0159-40a0-b043-b4015045cb4b",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C5",
+      "claim": "CRISPR/Cas9 knock-in Shp2D61G mutant zebrafish showed in vivo transplantability of HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to major NS traits, CRISPR/Cas9 knock-in Shp2D61G mutant zebrafish recapitulated a JMML-like MPN phenotype, including myeloid lineage hyperproliferation, ex vivo growth of myeloid colonies, and in vivo transplantability of HSPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 2L showing transplantation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "b0ec97be-f4ef-4cac-a16b-896d918424a2",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C6",
+      "claim": "Single-cell mRNA sequencing of HSPCs from Shp2D61G zebrafish embryos and bulk sequencing of HSPCs from JMML patients revealed an overlapping inflammatory gene expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell mRNA sequencing of HSPCs from Shp2D61G zebrafish embryos and bulk sequencing of HSPCs from JMML patients revealed an overlapping inflammatory gene expression pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in Figures 4 and 5, showing inflammatory gene expression in both zebrafish and human samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "a31fc29d-46ee-4730-b983-059fa259c52b",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C7",
+      "claim": "An anti-inflammatory agent rescued JMML-like MPN in Shp2D61G zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, an anti-inflammatory agent rescued JMML-like MPN in Shp2D61G zebrafish embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 6 showing dexamethasone treatment effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "aeb729d2-b77d-44f7-b558-4b96876669f5",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C8",
+      "claim": "A common inflammatory response was triggered in the HSPCs from sporadic JMML patients and syndromic NS zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that a common inflammatory response was triggered in the HSPCs from sporadic JMML patients and syndromic NS zebrafish, which potentiated MPN and may represent a future target for JMML therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative transcriptomic analysis presented in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "2aff89df-3602-44e4-9c73-a34d650dc5a1",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C9",
+      "claim": "50% of NS patients carry heterozygous mutations in the protein-tyrosine phosphatase SHP2 (PTPN11).",
+      "claim_type": "EXPLICIT",
+      "source": "NS is characterized by a systemic impact on development, most commonly resulting in short stature, congenital heart defects, and specific craniofacial characteristics (Rauen, 2013; Tajan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "4c5d4032-a779-40df-b29e-8c1c02a6f892",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C10",
+      "claim": "Somatic activating mutations in PTPN11 are the most common cause of sporadic juvenile myelomonocytic leukemia (JMML).",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic activating mutations in PTPN11 are the most common cause of sporadic juvenile myelomonocytic leukemia (JMML), a rare but aggressive myelodysplastic and myeloproliferative neoplasm (MPN) occurring in young children (Caye et al., 2015; Tartaglia et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "eb3bf9dd-d16d-4280-a188-7f373bde6b3d",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C11",
+      "claim": "Children with NS are predisposed to developing neonatal MPN.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, children with NS are predisposed to developing neonatal MPN, that either regresses without treatment or rapidly progresses to JMML leading to early death (Kratz et al., 2005; Strullu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "74cc573b-2420-4bfd-97ff-b681618b9c50",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C12",
+      "claim": "The D61G substitution in SHP2 is the most frequently occurring NS mutation associated with NS/JMML-like MPN.",
+      "claim_type": "EXPLICIT",
+      "source": "The D61G substitution in SHP2 is the most frequently occurring (Strullu et al., 2014; Tartaglia et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the results section and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "be8b8829-f1f4-4f12-827d-df5cd42bb520",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C13",
+      "claim": "The homology between human SHP2 and zebrafish Shp2a is 91%.",
+      "claim_type": "EXPLICIT",
+      "source": "The homology between human SHP2 and zebrafish Shp2a is 91% and the amino acid D61 is located in an absolutely conserved region of the protein (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "64858368-33ac-4800-9dc6-56cc178220bb",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C14",
+      "claim": "The amino acid D61 is located in an absolutely conserved region of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The homology between human SHP2 and zebrafish Shp2a is 91% and the amino acid D61 is located in an absolutely conserved region of the protein (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "1812ba59-3f65-4b6f-964f-82f23096ef6b",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C15",
+      "claim": "The introduced D61G mutation did not have a detectable effect on Shp2a protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing confirmed that the oligonucleotide used for the homology directed repair was incorporated correctly into the genome (Figure 1A) and that the introduced mutation did not have a detectable effect on Shp2a protein expression (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "1e3cf221-a6a2-440d-9bd2-1d8d46120f2b",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C16",
+      "claim": "In 32% of heterozygous Shp2D61G/wt zebrafish embryos at 5 days post fertilization, typical NS traits were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in 32% of heterozygous Shp2D61G/wt and 45% of homozygous Shp2D61G/D61G embryos at 5 days post fertilization (dpf) we observed typical NS traits, such as reduced body axis extension, heart edema, and craniofacial deformities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phenotypic analysis data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "dde5985a-f514-40ad-a1ed-818a109f2366",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C17",
+      "claim": "In 45% of homozygous Shp2D61G/D61G zebrafish embryos at 5 days post fertilization, typical NS traits were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, in 32% of heterozygous Shp2D61G/wt and 45% of homozygous Shp2D61G/D61G embryos at 5 days post fertilization (dpf) we observed typical NS traits, such as reduced body axis extension, heart edema, and craniofacial deformities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phenotypic analysis data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "c49ba53f-6c11-453d-a39d-9450f92dfb57",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C18",
+      "claim": "The body axis length was significantly reduced in Shp2D61G mutant embryos at 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "A more detailed characterization of the typical NS traits showed that the body axis length was significantly reduced in Shp2D61G mutant embryos at 5 dpf (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by measurement data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "4d536071-392d-4a69-a48c-f60fa784c906",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C19",
+      "claim": "Imaging of Alcian blue-stained cartilage revealed NS-reminiscent craniofacial defects in 4 dpf Shp2D61G mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, imaging of Alcian blue-stained cartilage revealed NS-reminiscent craniofacial defects in 4 dpf Shp2D61G mutant embryos, characterized by broadening of the head (Figure 1F), leading to an increased ratio of the width of the ceratohyal and the distance to Meckel's cartilage (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 1F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "904a19a7-a32a-4714-84d8-b16b26facc19",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C20",
+      "claim": "A decrease in heart rate was detected in Shp2D61G mutant hearts at 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "A decrease in heart rate (Figure 1I), ejection fraction, and cardiac output (Figure 1\u2014figure supplement 1D,E) was detected from the ventricular kymographs obtained from high-speed video recordings (Tessadori et al., 2012) of the Shp2D61G mutant hearts at 5 dpf (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by heart rate measurement data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "d692e705-25f7-4eb4-a802-c71d9c11978f",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C21",
+      "claim": "A decrease in ejection fraction was detected in Shp2D61G mutant hearts at 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "A decrease in heart rate (Figure 1I), ejection fraction, and cardiac output (Figure 1\u2014figure supplement 1D,E) was detected from the ventricular kymographs obtained from high-speed video recordings (Tessadori et al., 2012) of the Shp2D61G mutant hearts at 5 dpf (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ejection fraction measurement data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "225470d1-e61c-4278-baab-ebd14bd66680",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C22",
+      "claim": "A decrease in cardiac output was detected in Shp2D61G mutant hearts at 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "A decrease in heart rate (Figure 1I), ejection fraction, and cardiac output (Figure 1\u2014figure supplement 1D,E) was detected from the ventricular kymographs obtained from high-speed video recordings (Tessadori et al., 2012) of the Shp2D61G mutant hearts at 5 dpf (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cardiac output measurement data shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "3d68d72a-0562-4ac5-9317-fa9def81412f",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C23",
+      "claim": "The NS Shp2D61G mutant zebrafish phenocopied several of the typical NS traits, such as stunted growth, craniofacial defects, and heart defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the NS Shp2D61G mutant zebrafish we established phenocopied several of the typical NS traits, such as stunted growth, craniofacial defects, and heart defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the phenotypic data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "a8b89845-38b0-41b3-b12b-f89421e27dda",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C24",
+      "claim": "No effect of the Shp2D61G mutation on primitive hematopoiesis was observed in embryos at 2 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We were not able to observe any effect of the Shp2D61G mutation on primitive hematopoiesis in embryos at 2 dpf using WISH for markers of erythroid progenitors (gata-1), myeloid progenitors (pu.1), and white blood cells (l-plastin) (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WISH data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "e003123d-fa75-42e2-9749-c0c54aa23859",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C25",
+      "claim": "A significant effect of the Shp2-D61G mutation on definitive hematopoiesis was observed at 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a significant effect of the Shp2-D61G mutation on definitive hematopoiesis was observed at 5 dpf (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by multiple experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "a44bb46c-873c-47cd-aeb0-7b28cf386c84",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C26",
+      "claim": "An increased number of CD41-GFPlow HSPCs was observed in the caudal hematopoietic tissue (CHT) region of the mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "An increased number of CD41-GFPlow HSPCs was observed in the caudal hematopoietic tissue (CHT) region, corresponding to the fetal liver in human and the head kidney (corresponding to the bone marrow in human) of the mutant embryos (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging and quantification data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "de270c46-8f1c-4a55-853d-f4a97cdc5a9d",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C27",
+      "claim": "Shp2D61G mutation affects both proliferation and apoptosis of HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Shp2D61G mutation seems to affect both proliferation and apoptosis of HSPCs, evident by an increase in CD41-GFPlow cells positive for phosphohistone H3 (pHis3), a marker for late G2 and M phase and a decrease in Acridine orange-positive cells in the CHT region, marking apoptotic cells (Figure 2\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry and Acridine orange staining data shown in Figure 2\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "9bef8980-04f9-4fc5-ad9b-d1028abea0fb",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C28",
+      "claim": "An increase of c-myb-positive cells was observed in both CHT and head kidney region of the Shp2D61G mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an increase of c-myb-positive cells, marking HSPCs and of l-plastin-positive cells, marking all white blood cells, in both CHT and head kidney region of the Shp2D61G mutants (Figure 2C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WISH data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "54666dae-e242-41a7-a053-3c0667108e64",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C29",
+      "claim": "An increase of l-plastin-positive cells was observed in both CHT and head kidney region of the Shp2D61G mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an increase of c-myb-positive cells, marking HSPCs and of l-plastin-positive cells, marking all white blood cells, in both CHT and head kidney region of the Shp2D61G mutants (Figure 2C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WISH data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "36764375-81bc-49cf-8039-992744d64f61",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C30",
+      "claim": "The size of the ikaros-positive thymus was not affected in Shp2D61G mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "These latter cells appear not to be lymphocytes, since the size of the ikaros-positive thymus was not affected (Figure 2\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WISH data shown in Figure 2\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "7d4f1b29-0679-426b-84b6-dbef1e1116b7",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C31",
+      "claim": "The myeloid lineage was markedly expanded in Shp2D61G mutants, evident from the increase in the number of mpx-GFP-positive neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the myeloid lineage was markedly expanded, evident from the increase in the number of mpx-GFP-positive neutrophils (Figure 2G and H) and mpeg-mCherry-positive macrophages (Figure 2G1), in Tg(mpx:GFP, mpeg:mCherry) double transgenic mutant embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging and quantification data shown in Figure 2G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "226f0f93-70c9-4177-b4d0-bffb8960855f",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C32",
+      "claim": "The myeloid lineage was markedly expanded in Shp2D61G mutants, evident from the increase in the number of mpeg-mCherry-positive macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the myeloid lineage was markedly expanded, evident from the increase in the number of mpx-GFP-positive neutrophils (Figure 2G and H) and mpeg-mCherry-positive macrophages (Figure 2G1), in Tg(mpx:GFP, mpeg:mCherry) double transgenic mutant embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging and quantification data shown in Figure 2G and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "22bbda7f-a07f-4a29-a0d9-e26960d70db5",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C33",
+      "claim": "Shp2D61G mutant embryos displayed a mild decrease in the number of CD41-GFPhigh-positive thrombocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Shp2D61G mutant embryos also displayed a mild decrease in the number of CD41-GFPhigh-positive thrombocytes and the number of \u03b2-globin-positive erythrocytes (Figure 2\u2014figure supplement 1F-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "5648b207-4ba8-4bba-a4e4-6cc48192e916",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C34",
+      "claim": "Shp2D61G mutant embryos displayed a mild decrease in the number of \u03b2-globin-positive erythrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Shp2D61G mutant embryos also displayed a mild decrease in the number of CD41-GFPhigh-positive thrombocytes and the number of \u03b2-globin-positive erythrocytes (Figure 2\u2014figure supplement 1F-H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WISH data shown in Figure 2\u2014figure supplement 1G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "7950c295-6682-4b52-add8-2cafbe49ca69",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C35",
+      "claim": "The observed defects in all different blood lineages examined were stronger in the homozygous Shp2D61G/D61G than heterozygous Shp2D61G/wt embryos, supporting a dosage effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed defects in all different blood lineages examined here were stronger in the homozygous Shp2D61G/D61G than heterozygous Shp2D61G/wt embryos, supporting a dosage effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative data across genotypes shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "0806f773-1760-4a2a-8963-4ca6b9e84a8c",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C36",
+      "claim": "Colonies developed from the CD41-GFPlow cells isolated from the Shp2D61G/wt zebrafish embryos at 5 dpf and exposed to Gcsfa were larger in size and number compared to their wild type siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to their wild type (wt) siblings, colonies developed from the CD41-GFPlow cells isolated from the Shp2D61G/wt zebrafish embryos at 5 dpf and exposed to Gcsfa were larger in size and number, demonstrating an enhanced CFU-G and CFU-M colony-forming ability (Figure 2J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by colony-forming assay data shown in Figure 2J and K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "d9e96a5f-703b-4325-ae49-320291babc3b",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C37",
+      "claim": "Animals injected with mutant WKM cells accumulated GFP- and mCherry-positive cells near the site of injection starting at 14 days and increasing until 28 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals injected with 1 \u00d7 105 mutant WKM cells (3/5) accumulated GFP- and mCherry-positive cells near the site of injection starting at 14 days and increasing until 28 days.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transplantation experiment data shown in Figure 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "15356995-f22e-45ee-8ea6-cee8fe3f1894",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C38",
+      "claim": "Animals injected with WKM cells from control sibling animals with wt Shp2a lacked any GFP- and mCherry-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, animals injected with WKM cells from control sibling animals with wt Shp2a (5/5) lacked any GFP- and mCherry-positive cells (Figure 2L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transplantation experiment data shown in Figure 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "219d69ee-b2ed-4bd4-b374-be3bdf2d4e96",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C39",
+      "claim": "The Shp2D61G mutant zebrafish embryos develop multilineage hematopoietic defects during the definitive wave of fetal hematopoiesis, which originates in the HSPCs compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the Shp2D61G mutant zebrafish embryos develop multilineage hematopoietic defects during the definitive wave of fetal hematopoiesis, which originates in the HSPCs compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the hematopoietic defect data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "8edeee2f-0ac3-44ca-9d08-daaa62e76591",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C40",
+      "claim": "The observed defect in Shp2D61G zebrafish is reminiscent of JMML-like MPN in human NS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed defect is reminiscent of JMML-like MPN in human NS patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the similarity of phenotypes between zebrafish and human patients.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "65f121ee-dba8-49b4-919c-47da2ecfc027",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C41",
+      "claim": "Four major clusters were identified in the single-cell RNA sequencing analysis of CD41-GFPlow cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters were visualized by t-distributed stochastic neighbor embedding (t-SNE) and four major clusters were further analyzed (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNA sequencing data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "55d71329-0aef-4358-8d59-3a87134135f3",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C42",
+      "claim": "Cluster 1 cells were determined to be thrombocyte and erythroid progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the differentially expressed genes (DEGs) and GO term analysis, cells from Cluster 1 were determined to be thrombocyte and erythroid progenitors, cluster 2 hematopoietic stem cell (HSC)-like HSPCs, cluster 3 early myeloid progenitors, and cluster 4 monocyte/macrophage progenitors (Figure 3C, Figure 3\u2014figure supplement 1A, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis and GO term analysis shown in Figure 3C and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "457ad0c2-943b-4be1-87ce-ad943b0e2fe7",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C43",
+      "claim": "Cluster 2 cells were determined to be hematopoietic stem cell (HSC)-like HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the differentially expressed genes (DEGs) and GO term analysis, cells from Cluster 1 were determined to be thrombocyte and erythroid progenitors, cluster 2 hematopoietic stem cell (HSC)-like HSPCs, cluster 3 early myeloid progenitors, and cluster 4 monocyte/macrophage progenitors (Figure 3C, Figure 3\u2014figure supplement 1A, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis and GO term analysis shown in Figure 3C and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "0700e948-03f4-4d27-be18-c29472bef4d7",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C44",
+      "claim": "Cluster 3 cells were determined to be early myeloid progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the differentially expressed genes (DEGs) and GO term analysis, cells from Cluster 1 were determined to be thrombocyte and erythroid progenitors, cluster 2 hematopoietic stem cell (HSC)-like HSPCs, cluster 3 early myeloid progenitors, and cluster 4 monocyte/macrophage progenitors (Figure 3C, Figure 3\u2014figure supplement 1A, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis and GO term analysis shown in Figure 3C and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "c1b235f4-78fc-4d69-a95b-222b9a3c65f3",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C45",
+      "claim": "Cluster 4 cells were determined to be monocyte/macrophage progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the differentially expressed genes (DEGs) and GO term analysis, cells from Cluster 1 were determined to be thrombocyte and erythroid progenitors, cluster 2 hematopoietic stem cell (HSC)-like HSPCs, cluster 3 early myeloid progenitors, and cluster 4 monocyte/macrophage progenitors (Figure 3C, Figure 3\u2014figure supplement 1A, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis and GO term analysis shown in Figure 3C and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "dcc92e25-d1d5-457c-b7fd-99f74c1d3639",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C46",
+      "claim": "An overrepresentation of mutant Shp2D61G/wt and Shp2D61G/D61G cells was observed in the HSC-like HSPCs cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "An overrepresentation of mutant Shp2D61G/wt and Shp2D61G/D61G cells was observed in the HSC-like HSPCs cluster and monocytes/macrophages progenitors cluster, whereas these were underrepresented in the thrombocyte and erythroid progenitors cluster (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNA sequencing data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "f9c351cf-5353-42e9-946a-1c6a5cc4088c",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C47",
+      "claim": "An overrepresentation of mutant Shp2D61G/wt and Shp2D61G/D61G cells was observed in the monocytes/macrophages progenitors cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "An overrepresentation of mutant Shp2D61G/wt and Shp2D61G/D61G cells was observed in the HSC-like HSPCs cluster and monocytes/macrophages progenitors cluster, whereas these were underrepresented in the thrombocyte and erythroid progenitors cluster (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNA sequencing data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "566b3653-e589-41c3-a62f-e3fc7f862755",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C48",
+      "claim": "Mutant Shp2D61G/wt and Shp2D61G/D61G cells were underrepresented in the thrombocyte and erythroid progenitors cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "An overrepresentation of mutant Shp2D61G/wt and Shp2D61G/D61G cells was observed in the HSC-like HSPCs cluster and monocytes/macrophages progenitors cluster, whereas these were underrepresented in the thrombocyte and erythroid progenitors cluster (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNA sequencing data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "1b08472d-ca78-4aa1-8edc-f1ed7e80eac3",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C49",
+      "claim": "An increased number of pu.1-positive cells was detected by WISH in 5 dpf old Shp2D61G embryos compared to their Shp2wt siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "An increased number of pu.1-positive cells was detected by WISH in 5 dpf old Shp2D61G embryos compared to their Shp2wt siblings (Figure 3G and H), whereas the number of alas2-positive cells in Shp2D61G mutants was decreased (Figure 3J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WISH data shown in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "192e26df-be45-4d4a-8866-1c3e4c5527ea",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C50",
+      "claim": "The number of alas2-positive cells in Shp2D61G mutants was decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "An increased number of pu.1-positive cells was detected by WISH in 5 dpf old Shp2D61G embryos compared to their Shp2wt siblings (Figure 3G and H), whereas the number of alas2-positive cells in Shp2D61G mutants was decreased (Figure 3J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WISH data shown in Figure 3J and K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "501c0ec6-6772-4465-bed8-99462156191d",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C51",
+      "claim": "Single-cell RNA sequencing suggests that defects during early differentiation of HSPCs to monocyte/macrophage progenitors and erythroid/thrombocyte progenitors initiate the multilineage blood defect observed in Shp2D61G embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, single-cell RNA sequencing suggests that defects during early differentiation of HSPCs to monocyte/macrophage progenitors and erythroid/thrombocyte progenitors initiate the multilineage blood defect observed in Shp2D61G embryos, which recapitulates features of NS-JMML-like MPN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the single-cell RNA sequencing data presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "f9889645-0157-498a-8a4b-9a45d8be6cf0",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C52",
+      "claim": "Functional annotation of the DEGs and the GO term enrichment analysis revealed enhanced expression of proinflammatory genes in mutant Shp2D61G cells in the monocyte/macrophage progenitors cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional annotation of the DEGs and the GO term enrichment analysis revealed enhanced expression of proinflammatory genes in mutant Shp2D61G cells (Figure 4A and B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis and GO term analysis shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "4d052398-81eb-41d3-a3f9-607ab8c419bf",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C53",
+      "claim": "Expression of inflammation-related genes, such as gcsfa, gcsfb, il1b, irg1, and nfkbiaa, was constrained to the cells of mutant Shp2D61G genotype in the monocyte/macrophage progenitors cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, expression of inflammation-related genes, such as gcsfa, gcsfb, il1b, irg1, and nfkbiaa, was constrained to the cells of mutant Shp2D61G genotype in the monocyte/macrophage progenitors cluster, whereas the monocyte marker timp2b was equally expressed by cells of distinct genotypes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNA sequencing data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "4fd5611f-0e69-47e5-ab89-462d569cfc54",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C54",
+      "claim": "The monocyte marker timp2b was equally expressed by cells of distinct genotypes in the monocyte/macrophage progenitors cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, expression of inflammation-related genes, such as gcsfa, gcsfb, il1b, irg1, and nfkbiaa, was constrained to the cells of mutant Shp2D61G genotype in the monocyte/macrophage progenitors cluster, whereas the monocyte marker timp2b was equally expressed by cells of distinct genotypes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNA sequencing data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "c9711382-05bb-4815-a8bc-2dacb98c99b6",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C55",
+      "claim": "Expression of the monocyte marker timp2b started during early differentiation of monocyte/macrophage progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the monocyte marker timp2b started during early differentiation of monocyte/macrophage progenitors. The level of timp2b expression was similar in Shp2wt and Shp2D61G HSPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pseudotime analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "a8aad90e-9dbf-4619-88bb-e3370112b1f4",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C56",
+      "claim": "The level of timp2b expression was similar in Shp2wt and Shp2D61G HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the monocyte marker timp2b started during early differentiation of monocyte/macrophage progenitors. The level of timp2b expression was similar in Shp2wt and Shp2D61G HSPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pseudotime analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "25be1a92-e545-4058-8e0a-33f8e2ad5e82",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C57",
+      "claim": "Expression of the inflammatory genes, il1b, gcsfa, irg1, nfkbiaa, and tnfa, started at a similar pseudotime as timp2b expression, but with a more robust expression in Shp2D61G HSPCs than in Shp2wt HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the inflammatory genes, il1b, gcsfa, irg1, nfkbiaa, and tnfa, started at a similar pseudotime as timp2b expression, but with a more robust expression in Shp2D61G HSPCs than in Shp2wt HSPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pseudotime analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "17b7788c-3b62-4507-a356-b396f67019f7",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C58",
+      "claim": "High expression of IL-1\u03b2 was validated in mutant Tg(il1b:eGFP, mpeg:mCherry) transgenic embryos in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, high expression of IL-1\u03b2 was validated in mutant Tg(il1b:eGFP, mpeg:mCherry) transgenic embryos in vivo. IL-1\u03b2-eGFP-positive cells were more abundant in the CHT region of Shp2D61G embryos than in wt embryos (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo imaging data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "0f058158-7a63-4ff0-929e-947c7dd708de",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C59",
+      "claim": "IL-1\u03b2-eGFP-positive cells were more abundant in the CHT region of Shp2D61G embryos than in wt embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, high expression of IL-1\u03b2 was validated in mutant Tg(il1b:eGFP, mpeg:mCherry) transgenic embryos in vivo. IL-1\u03b2-eGFP-positive cells were more abundant in the CHT region of Shp2D61G embryos than in wt embryos (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo imaging data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "065d9d7b-2f5c-4fc1-8e07-28bfa77f469f",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C60",
+      "claim": "Shp2D61G embryos display proinflammatory gene expression in HSPCs, which is initiated during early differentiation of the monocyte/macrophage progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, Shp2D61G embryos display proinflammatory gene expression in HSPCs, which is initiated during early differentiation of the monocyte/macrophage progenitor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the inflammatory gene expression data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "cb4f348e-edb2-4790-b3ac-d37fc8db8e98",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C61",
+      "claim": "1478 DEGs were identified in HSPCs from JMML patients, compared to the healthy donor HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we identified 1478 DEGs in HSPCs from JMML patients, compared to the healthy donor HSPCs (Figure 5A, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "127865df-5b92-4d42-97bc-e87a94ec99dc",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C62",
+      "claim": "Altered expression of genes related to inflammation was the most prominent in JMML HSPCs, such as genes involved in TNF\u03b1 signaling via NF\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, altered expression of genes related to inflammation was the most prominent, such as genes involved in TNF\u03b1 signaling via NF\u03baB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GSEA analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "a698d9f7-338b-4b37-94f5-c82941d4f0ef",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C63",
+      "claim": "The inflammatory response genes were significantly enriched in JMML HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The inflammatory response genes were significantly enriched in JMML HSPCs (Figure 5B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GSEA analysis shown in Figure 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "b4a8a7f6-883c-4ccc-95f4-9adfa77de3b9",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C64",
+      "claim": "De-regulation of genes related to proliferation (G2M checkpoint, MYC targets, and E2F targets) was evident in JMML HSPCs, suggesting their decreased quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "De-regulation of genes related to proliferation (G2M checkpoint, MYC targets, and E2F targets) was evident in JMML HSPCs, suggesting their decreased quiescence (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GSEA analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "da4eb935-fd72-4a39-a007-3b7def5c3f08",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C65",
+      "claim": "GSEA revealed that human orthologs of the top 100 DEGs found in the zebrafish monocyte/macrophage progenitor cells were enriched significantly in patient JMML HSPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "GSEA revealed that human orthologs of the top 100 DEGs found in the zebrafish monocyte/macrophage progenitor cells were enriched significantly in patient JMML HSPCs (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GSEA analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "6e87a9e6-53d0-469b-9632-446e545a61df",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C66",
+      "claim": "Some of the top overexpressed inflammation-associated genes in JMML patients, such as TNF and MARCKSL, were also overexpressed in NS/JMML-like MPN mutant zebrafish embryos compared to the wt.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the top overexpressed inflammation-associated genes in JMML patients, such as TNF and MARCKSL, were also overexpressed in NS/JMML-like MPN mutant zebrafish embryos compared to the wt (Figure 5F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression comparison data shown in Figure 5F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "4c311331-d236-4b60-95b0-d290a505822e",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C67",
+      "claim": "Zebrafish signature genes were able to clearly segregate HSPCs from JMML patients and healthy donors in 3D principal component analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "3D principal component analysis (PCA) visualized that these zebrafish signature genes were able to clearly segregate HSPCs from JMML patients and healthy donors (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCA analysis shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "684b275e-fb45-4121-b12f-3b370f41040f",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C68",
+      "claim": "Mutant, activated SHP2 triggers proinflammatory gene expression in HSPCs both in sporadic JMML patients and in the zebrafish model of syndromic JMML-like MPN in a similar manner, suggesting a common underlying, endogenously driven process.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that mutant, activated SHP2 triggers proinflammatory gene expression in HSPCs both in sporadic JMML patients and in our zebrafish model of syndromic JMML-like MPN in a similar manner, suggesting a common underlying, endogenously driven process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the comparative transcriptomic analysis presented in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "3d1a923f-b5fa-41eb-a91e-02285a50f213",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C69",
+      "claim": "Both CI1040 and LY294002 led to a robust reduction in expansion of both HSPCs and myeloid lineage in mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CI1040 and LY294002 led to a robust reduction in expansion of both HSPCs and myeloid lineage in mutant embryos, measured by WISH using markers for c-myb and l-plastin (Figure 6B and C), demonstrating that the NS-associated blood development defect in Shp2D61G embryos was largely caused by overactivation of the RAS-MAPK and PI3K pathways as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by inhibitor treatment data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "df3c8eb9-2aea-42b9-8ede-cb8cc88af448",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C70",
+      "claim": "The NS-associated blood development defect in Shp2D61G embryos was largely caused by overactivation of the RAS-MAPK and PI3K pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CI1040 and LY294002 led to a robust reduction in expansion of both HSPCs and myeloid lineage in mutant embryos, measured by WISH using markers for c-myb and l-plastin (Figure 6B and C), demonstrating that the NS-associated blood development defect in Shp2D61G embryos was largely caused by overactivation of the RAS-MAPK and PI3K pathways as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by inhibitor treatment data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "654aaa50-b841-4f16-b331-aefb32065a7e",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C71",
+      "claim": "Dexamethasone reduced c-myb and l-plastin expression to a similar extent as CI1040 and LY294002.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, dexamethasone reduced c-myb and l-plastin expression to a similar extent as CI1040 and LY294002 (Figure 6B and C), indicating a profound role for the inflammatory response in the pathogenesis of NS-associated blood defects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by inhibitor treatment data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "c7265338-fce7-41de-89fb-e267468df280",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C72",
+      "claim": "The inflammatory response has a profound role in the pathogenesis of NS-associated blood defects.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, dexamethasone reduced c-myb and l-plastin expression to a similar extent as CI1040 and LY294002 (Figure 6B and C), indicating a profound role for the inflammatory response in the pathogenesis of NS-associated blood defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the dexamethasone treatment data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "3124d7aa-0c61-4e30-9d16-47477b903674",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C73",
+      "claim": "Upon dexamethasone treatment, the number of mpx-GFP and mpeg-mCherry-positive cells decreased in Shp2D61G embryos to similar levels as observed in Shp2wt embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon dexamethasone treatment, the number of mpx-GFP and mpeg-mCherry-positive cells decreased in Shp2D61G embryos to similar levels as observed in Shp2wt embryos, indicating that dexamethasone treatment rescued the expansion of the myeloid lineage in Shp2D61G embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dexamethasone treatment data shown in Figure 6D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "7138ce52-0b9c-405f-9635-658d3850b5d1",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C74",
+      "claim": "Dexamethasone treatment rescued the expansion of the myeloid lineage in Shp2D61G embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon dexamethasone treatment, the number of mpx-GFP and mpeg-mCherry-positive cells decreased in Shp2D61G embryos to similar levels as observed in Shp2wt embryos, indicating that dexamethasone treatment rescued the expansion of the myeloid lineage in Shp2D61G embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the dexamethasone treatment data shown in Figure 6D-F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "ffa3a584-38fe-4e1c-8358-fd0007738600",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C75",
+      "claim": "Dexamethasone did not significantly alter the number of neutrophils or macrophages in wt embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Dexamethasone did not significantly alter the number of neutrophils or macrophages in wt embryos (Figure 6D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dexamethasone treatment data shown in Figure 6D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "3f1929cc-3354-4989-a6c3-0906370f1f61",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C76",
+      "claim": "The expression of proinflammatory genes, such as tnfa, il1b, and gcsfb in Shp2D61G embryos was reduced in response to dexamethasone treatment to levels observed in Shp2wt embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the expression of proinflammatory genes, such as tnfa, il1b, and gcsfb in Shp2D61G embryos was reduced in response to dexamethasone treatment to levels observed in Shp2wt embryos (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "7b94d537-bf9d-455a-ad28-74f65f4d8271",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C77",
+      "claim": "A proinflammatory phenotype of the macrophage/monocyte lineage was observed in Shp2D61G mutant zebrafish, which was established early during HSPCs differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we observed a proinflammatory phenotype of the macrophage/monocyte lineage in Shp2D61G mutant zebrafish, which was established early during HSPCs differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the inflammatory gene expression data presented in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "1d0d2f38-bfaf-4cd1-a266-ec040723c200",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C78",
+      "claim": "The anti-inflammatory agent dexamethasone largely rescued the hematopoietic defects in Shp2D61G mutant zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-inflammatory agent dexamethasone largely rescued the hematopoietic defects, suggesting that the inflammatory response in Shp2D61G mutant zebrafish had a causal role in the pathogenesis of the NS/JMML-like MPN blood phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by dexamethasone treatment data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "a0d49edc-f7bc-4dc6-bc6f-7e5328c50d81",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C79",
+      "claim": "The inflammatory response in Shp2D61G mutant zebrafish had a causal role in the pathogenesis of the NS/JMML-like MPN blood phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-inflammatory agent dexamethasone largely rescued the hematopoietic defects, suggesting that the inflammatory response in Shp2D61G mutant zebrafish had a causal role in the pathogenesis of the NS/JMML-like MPN blood phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the dexamethasone treatment data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "faec6326-f374-4310-9bce-f8d638349857",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C80",
+      "claim": "Proinflammatory gene expression was evident both in HSPCs from JMML patients and in mutant zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Proinflammatory gene expression was evident both in HSPCs from JMML patients and in mutant zebrafish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by transcriptomic data presented in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "913b0d8e-f829-443f-8f37-2219b22b87ab",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C81",
+      "claim": "High levels of proinflammatory cytokines, such as IL-1\u03b2, TNF-\u03b1, GM-CSF, were reported in JMML patients plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Already early studies reported high levels of proinflammatory cytokines, such as IL-1\u03b2, TNF-\u03b1, GM-CSF, in JMML patients plasma (Bagby et al., 1988; Freedman et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "0b54d38d-ad8d-4e85-872b-ee03b0ded46b",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C82",
+      "claim": "The pseudotime analysis of inflammatory genes in zebrafish HSPCs indicated that the initiation of the proinflammatory program happens during early differentiation of HSPCs toward the monocyte/macrophage progenitor lineage in Shp2D61G embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "The pseudotime analysis of inflammatory genes in zebrafish HSPCs indicated that the initiation of the proinflammatory program happens during early differentiation of HSPCs toward the monocyte/macrophage progenitor lineage in Shp2D61G embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pseudotime analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "51a22e58-9b91-4843-b27f-f86bce2ca7ad",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C83",
+      "claim": "Proinflammatory reprogramming of the monocyte/macrophage lineage might be endogenously driven at least in part.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that proinflammatory reprogramming of the monocyte/macrophage lineage might be endogenously driven at least in part, and detailed mechanisms remain to be elucidated in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the transcriptomic data presented in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "c60111b4-a4c0-4df9-b34c-02646b3156f1",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C84",
+      "claim": "The Shp2D61G mutant zebrafish is the first NS zebrafish model carrying an activating Shp2 mutation at its endogenous locus generated by CRISPR/Cas9-based knock-in technology.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, the Shp2D61G mutant zebrafish we developed is the first NS zebrafish model carrying an activating Shp2 mutation at its endogenous locus generated by CRISPR/Cas9-based knock-in technology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion and is supported by the methods described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "8a4ab2fa-fd11-4ce4-9b4c-5a1c2f8ae5d9",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C85",
+      "claim": "Phenotypes developed by the Shp2D61G zebrafish corroborate closely with the phenotypes displayed by human NS patients and the existing NS mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, phenotypes developed by the Shp2D61G zebrafish corroborate closely with the phenotypes displayed by human NS patients and the existing NS mouse models (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by phenotypic data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "be2f33e5-1e0c-4e81-8ba2-e88c947a1727",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C86",
+      "claim": "NS children with D61G mutation have a higher predisposition to develop JMML(-like MPN).",
+      "claim_type": "EXPLICIT",
+      "source": "NS children with D61G mutation have a higher predisposition to develop JMML(-like MPN), and comparably Shp2D61G zebrafish embryos displayed typical JMML-like MPN characteristics, such as expansion of the myeloid lineage, increased sensitivity to Gcsfa, mild anemia, and thrombocytopenia (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is stated in the discussion and is supported by citations and data shown in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "7e0ad5fe-cf8e-4d3b-ac2b-a7295dd2a8dd",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C87",
+      "claim": "Shp2D61G zebrafish embryos displayed typical JMML-like MPN characteristics, such as expansion of the myeloid lineage, increased sensitivity to Gcsfa, mild anemia, and thrombocytopenia.",
+      "claim_type": "EXPLICIT",
+      "source": "NS children with D61G mutation have a higher predisposition to develop JMML(-like MPN), and comparably Shp2D61G zebrafish embryos displayed typical JMML-like MPN characteristics, such as expansion of the myeloid lineage, increased sensitivity to Gcsfa, mild anemia, and thrombocytopenia (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "6c0296fc-2b35-44c1-a487-e7abc843a0d3",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C88",
+      "claim": "The observed blood defect in Shp2D61G zebrafish was transplantable to secondary recipients.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the observed blood defect was transplantable to secondary recipients and the disease originated in HSPCs, which displayed aberrant proliferation and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by transplantation data shown in Figure 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "eabc0da6-1248-4544-8b4c-4f9f5770af2e",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C89",
+      "claim": "The disease in Shp2D61G zebrafish originated in HSPCs, which displayed aberrant proliferation and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the observed blood defect was transplantable to secondary recipients and the disease originated in HSPCs, which displayed aberrant proliferation and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "3f48955f-05cc-4872-a74b-219707432aee",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C90",
+      "claim": "The JMML-like MPN defect is initiated at the CHT, which is the counterpart of fetal liver in human.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the JMML-like MPN defect is initiated at the CHT, which is the counterpart of fetal liver in human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the data showing expanded HSPCs in the CHT region.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "36d2ba43-25a1-4092-874f-f00992c96f38",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C91",
+      "claim": "Expanded HSPCs were observed at the CHT, which displayed aberrant proliferation and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observed expanded HSPCs, which displayed aberrant proliferation and apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A, B and Figure 2\u2014figure supplement 1B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "924d59c0-d3d0-4bc5-b164-c8c4122d8281",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C92",
+      "claim": "Striking similarities between the patient and zebrafish HSPCs transcriptomes indicate that the Shp2D61G zebrafish model is an exciting preclinical model for in vivo drug screens at relevant developmental time points, in a high throughput manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Striking similarities between the patient and zebrafish HSPCs transcriptomes indicate that the Shp2D61G zebrafish model is an exciting preclinical model for in vivo drug screens at relevant developmental time points, in a high throughput manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the comparative transcriptomic data presented in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "d208e0a7-1994-417c-9b7c-0ffcfc644efd",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C93",
+      "claim": "The only effective treatment of JMML is allogeneic stem cell transplantation, which has a high relapse rate of 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "The only effective treatment of JMML is allogeneic stem cell transplantation, which has a high relapse rate of 50%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion and represents established clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "f3122c20-d9e4-45df-af95-0c21dc2b2c7f",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C94",
+      "claim": "Dampening inflammation using the glucocorticoid dexamethasone partially rescued the observed blood phenotype in Shp2D61G.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that dampening inflammation using the glucocorticoid dexamethasone partially rescued the observed blood phenotype in Shp2D61G, suggesting that the inflammatory response evoked in the cells of myeloid/macrophage lineage was an important driver of the NS/JMML-like blood defect and might be a potential drug target for both sporadic and syndromic JMML(-like MPN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by dexamethasone treatment data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "66bcaa95-19ef-4c1e-9ed3-a957af7d77a3",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C95",
+      "claim": "The inflammatory response evoked in the cells of myeloid/macrophage lineage was an important driver of the NS/JMML-like blood defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that dampening inflammation using the glucocorticoid dexamethasone partially rescued the observed blood phenotype in Shp2D61G, suggesting that the inflammatory response evoked in the cells of myeloid/macrophage lineage was an important driver of the NS/JMML-like blood defect and might be a potential drug target for both sporadic and syndromic JMML(-like MPN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the dexamethasone treatment data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "d54331fa-9b65-4e8c-a7c4-034b56e12e46",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C96",
+      "claim": "Inflammation might be a potential drug target for both sporadic and syndromic JMML(-like MPN).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that dampening inflammation using the glucocorticoid dexamethasone partially rescued the observed blood phenotype in Shp2D61G, suggesting that the inflammatory response evoked in the cells of myeloid/macrophage lineage was an important driver of the NS/JMML-like blood defect and might be a potential drug target for both sporadic and syndromic JMML(-like MPN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the dexamethasone treatment data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "fdfab889-f9a4-4fbd-91e3-83bfe446c5c1",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C97",
+      "claim": "Targeting inflammation reversed the blood defect to a similar extent as the MAPK and PI3K pathway inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, targeting inflammation reversed the blood defect to a similar extent as the MAPK and PI3K pathway inhibitors, emphasizing not only the crucial role of inflammation during JMML pathogenesis, but also its strong therapeutic potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by inhibitor treatment data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "f11cd411-59b4-4991-8047-569f9a6fe229",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C98",
+      "claim": "Inflammation has a crucial role during JMML pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, targeting inflammation reversed the blood defect to a similar extent as the MAPK and PI3K pathway inhibitors, emphasizing not only the crucial role of inflammation during JMML pathogenesis, but also its strong therapeutic potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the dexamethasone treatment data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "cd691ca8-88d8-410e-b48e-8f37001d1d2e",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C99",
+      "claim": "Inflammation has strong therapeutic potential for JMML.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, targeting inflammation reversed the blood defect to a similar extent as the MAPK and PI3K pathway inhibitors, emphasizing not only the crucial role of inflammation during JMML pathogenesis, but also its strong therapeutic potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the dexamethasone treatment data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "976c03a8-76ea-4abf-bccf-aa115663c744",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C100",
+      "claim": "Anti-inflammatory therapies are non-invasive and widely available.",
+      "claim_type": "EXPLICIT",
+      "source": "Since anti-inflammatory therapies are non-invasive and widely available, targeting inflammation might represent a novel avenue for JMML treatment, either alone or in combination with other therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "71c5bdd2-e3d4-47b5-85e7-53410789fc0c",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C101",
+      "claim": "Targeting inflammation might represent a novel avenue for JMML treatment, either alone or in combination with other therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Since anti-inflammatory therapies are non-invasive and widely available, targeting inflammation might represent a novel avenue for JMML treatment, either alone or in combination with other therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the dexamethasone treatment data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "b6f410db-9596-4d65-bf72-c3e03ba42c24",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C102",
+      "claim": "Striking similarities in expression patterns of HSPCs from sporadic human JMML patients with an activating SHP2 mutation and HSPCs from an engineered zebrafish model with an activating NS-associated mutation in Shp2 were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we observed striking similarities in expression patterns of HSPCs from sporadic human JMML patients with an activating SHP2 mutation and HSPCs from an engineered zebrafish model with an activating NS-associated mutation in Shp2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary of the comparative transcriptomic data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "71a518ae-8e46-46ed-9ef8-458f672549b1",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C103",
+      "claim": "Genes associated with the inflammatory response were upregulated in HSPCs from both JMML patients and Shp2D61G zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly genes associated with the inflammatory response were upregulated and strikingly, pharmacological inhibition of the inflammatory response ameliorated JMML-like MPN in the zebrafish model, suggesting this may be a first step for therapeutic intervention in human patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by transcriptomic data presented in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "cc10521d-89b2-4025-903a-8f8ac3dae0e3",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C104",
+      "claim": "Pharmacological inhibition of the inflammatory response ameliorated JMML-like MPN in the zebrafish model.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly genes associated with the inflammatory response were upregulated and strikingly, pharmacological inhibition of the inflammatory response ameliorated JMML-like MPN in the zebrafish model, suggesting this may be a first step for therapeutic intervention in human patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by dexamethasone treatment data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "2029c4a6-9780-46fc-b0fd-3bf6ae94b170",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "claim_id": "C105",
+      "claim": "Pharmacological inhibition of the inflammatory response may be a first step for therapeutic intervention in human JMML patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly genes associated with the inflammatory response were upregulated and strikingly, pharmacological inhibition of the inflammatory response ameliorated JMML-like MPN in the zebrafish model, suggesting this may be a first step for therapeutic intervention in human patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the zebrafish treatment data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6d62ac72-73ef-482c-816e-72506c2bcf05",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A novel CRISPR/Cas9 knock-in zebrafish model carrying the Shp2D61G mutation at the endogenous locus was successfully generated. The mutation is located in a highly conserved region (91% homology between human SHP2 and zebrafish Shp2a) and does not affect protein expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 and C84 are well-supported by sequence alignment data (Figure 1\u2014figure supplement 1A), Western blot analysis (Figure 1B), and detailed methods describing the CRISPR/Cas9 knock-in approach. The conservation of the D61 residue and successful generation of the model are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "19bfab4d-8ab0-4708-a6bd-c14973eb605e",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Shp2D61G mutant zebrafish recapitulate key Noonan syndrome (NS) phenotypes including stunted growth, craniofacial defects, and cardiac dysfunction. These phenotypes were observed in 32% of heterozygous and 45% of homozygous mutant embryos at 5 dpf, with variable severity similar to human NS patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 and C85 are strongly supported by comprehensive phenotypic characterization including body length measurements (Figure 1E), Alcian blue staining (Figure 1F-G), and cardiac functional analysis (Figure 1H-I). The data demonstrate that the zebrafish model faithfully recapitulates NS traits observed in human patients and mouse models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "dcc63f89-d9bb-4b32-b079-438bad5135a4",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Shp2D61G mutant zebrafish develop multilineage hematopoietic defects during definitive hematopoiesis at 5 dpf, originating in HSPCs. The defects include expansion of HSPCs and myeloid lineage (neutrophils and macrophages), mild decreases in thrombocytes and erythrocytes, altered proliferation and apoptosis of HSPCs, and transplantability to secondary recipients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C35 and C39, C87-C91 are comprehensively supported by multiple experimental approaches including confocal microscopy (Figure 2A-B, G-I), WISH (Figure 2C-F), proliferation/apoptosis assays (Figure 2\u2014figure supplement 1B-C), and transplantation experiments (Figure 2L). The data demonstrate a dosage-dependent effect and establish that the defect originates in the HSPC compartment at the CHT.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "172330fc-b708-4e5a-af03-d37ef58cb1cb",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Shp2D61G mutant zebrafish recapitulate JMML-like MPN phenotypes including myeloid lineage hyperproliferation, enhanced colony-forming ability in response to Gcsfa, and in vivo transplantability of HSPCs. These features are reminiscent of JMML-like MPN in human NS patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C36-C38, C40, and C86 are well-supported by experimental data showing increased myeloid cells (Figure 2G-I), enhanced CFU-G and CFU-M colony formation (Figure 2J-K), and successful transplantation of mutant cells (Figure 2L). The comparison to human JMML-like MPN is reasonable given the phenotypic similarities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing of CD41-GFPlow HSPCs identified four major cell clusters (thrombocyte/erythroid progenitors, HSC-like cells, early myeloid progenitors, and monocyte/macrophage progenitors). Mutant cells were overrepresented in HSC-like and monocyte/macrophage progenitor clusters and underrepresented in thrombocyte/erythroid progenitor clusters, suggesting defects during early HSPC differentiation initiate the multilineage blood defect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C51 are supported by comprehensive single-cell RNA sequencing analysis including t-SNE visualization (Figure 3C), cluster identification based on DEGs and GO terms (Figure 3\u2014figure supplement 1A), cell distribution analysis (Figure 3D-E), and validation by WISH (Figure 3G-K). The clustering and differential representation are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Shp2D61G mutant zebrafish HSPCs display enhanced proinflammatory gene expression specifically in monocyte/macrophage progenitors. Pseudotime analysis indicates this inflammatory program is initiated during early differentiation of HSPCs toward the monocyte/macrophage lineage, with inflammatory genes (il1b, gcsfa, irg1, nfkbiaa, tnfa) showing robust expression in mutant cells compared to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C60, C77, and C82 are strongly supported by single-cell RNA sequencing data showing inflammatory gene expression (Figure 4A-B), pseudotime trajectory analysis (Figure 4C-E), and in vivo validation of IL-1\u03b2 expression (Figure 4F). The data clearly demonstrate that inflammatory gene expression is constrained to mutant cells and initiated early during monocyte/macrophage differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "0e4b2396-42cb-4953-871a-d9f275158975",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Transcriptomic analysis of HSPCs from JMML patients with PTPN11 mutations revealed 1478 DEGs with prominent enrichment of inflammatory response genes (TNF\u03b1 signaling via NF\u03baB) and proliferation-related genes. Human orthologs of zebrafish inflammatory genes were significantly enriched in JMML patient HSPCs, and zebrafish signature genes could segregate JMML patients from healthy donors, indicating striking similarities between sporadic human JMML and syndromic zebrafish NS/JMML-like MPN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C68, C80, C102-C103 are supported by comprehensive transcriptomic analysis including differential gene expression (Figure 5A), GSEA (Figure 5B-E), comparative gene expression (Figure 5F-G), and PCA (Figure 5H). However, the authors acknowledge important caveats: different data types (bulk vs. single-cell sequencing), different sample sources (postnatal human vs. embryonic zebrafish), and different mutation profiles (single D61G mutation vs. diverse PTPN11 mutations). Despite these differences, the convergence on inflammatory signatures is striking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "b9c50fdc-bb6d-46ae-9714-f115396664d8",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pharmacological inhibition experiments demonstrate that the NS-associated blood defect in Shp2D61G embryos is caused by overactivation of RAS-MAPK and PI3K pathways. Strikingly, the anti-inflammatory agent dexamethasone rescued the hematopoietic defects to a similar extent as pathway inhibitors, reducing HSPC and myeloid expansion and normalizing inflammatory gene expression, indicating a causal role for inflammation in pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C76, C78-C79, C94-C95, C97-C98 are well-supported by inhibitor treatment experiments showing rescue of c-myb and l-plastin expression (Figure 6B-C), reduction in myeloid cells (Figure 6D-F), and decreased inflammatory gene expression (Figure 6G). The comparison between pathway inhibitors and dexamethasone is particularly compelling, though the mechanism by which dexamethasone acts remains to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "dbfad550-3398-452d-ae30-0614704bc41a",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Single-cell mRNA sequencing of HSPCs from Shp2D61G zebrafish embryos and bulk sequencing of HSPCs from JMML patients revealed overlapping inflammatory gene expression patterns. An anti-inflammatory agent (dexamethasone) rescued JMML-like MPN in Shp2D61G zebrafish embryos, suggesting a common inflammatory response was triggered in HSPCs from both sporadic JMML patients and syndromic NS zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 and C104 are supported by the combined transcriptomic analyses (Figures 4-5) and dexamethasone rescue experiments (Figure 6). The overlapping inflammatory signatures and successful pharmacological rescue provide strong evidence for a common inflammatory mechanism, though the authors appropriately note differences in data types and sample sources.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "d8515218-5b8b-477d-ad3f-c6f0b065ce76",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that proinflammatory reprogramming of the monocyte/macrophage lineage might be endogenously driven and that inflammation might represent a potential drug target for JMML treatment. They suggest that pharmacological inhibition of inflammation may be a first step for therapeutic intervention in human JMML patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83, C96, C99, C101, and C105 are explicitly speculative as indicated by the use of 'might' and 'may' in the text. While the zebrafish data showing dexamethasone rescue is compelling (C104), extrapolation to human therapeutic intervention requires additional validation. The authors appropriately acknowledge that 'detailed mechanisms remain to be elucidated in the future' (C83). The speculation is reasonable given the data but requires further work including testing in human JMML samples or patient-derived models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "2ba84670-e7be-44c7-91fb-ce9bef965182",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims about JMML, NS, and SHP2 mutations establish the clinical context, including that gain-of-function SHP2 mutations are the most common cause of sporadic JMML, HSPCs are the disease-propagating cells, NS children are predisposed to MPN, the D61G mutation is frequently associated with NS/JMML-like MPN, high levels of proinflammatory cytokines have been reported in JMML patients, and allogeneic stem cell transplantation is the only effective treatment with high relapse rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C12, C81, C93, and C100 represent established knowledge supported by citations to prior literature. These claims provide essential context for the study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    },
+    {
+      "id": "d0a946ab-2e23-47ae-b8d9-4269f1f7abf6",
+      "content_id": "ba909697-fa8c-4b5c-8619-35c9e60565e5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors infer that striking similarities between patient and zebrafish HSPC transcriptomes indicate the Shp2D61G zebrafish model is an exciting preclinical model for in vivo drug screens at relevant developmental time points in a high-throughput manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is a reasonable inference based on the demonstrated transcriptomic similarities (Figure 5) and the successful dexamethasone rescue experiment (Figure 6). Zebrafish are well-established for high-throughput drug screening, and the model's ability to recapitulate key features of human JMML supports its utility as a preclinical model. However, validation of additional therapeutic candidates would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:52:17.438944Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "be8b8829-f1f4-4f12-827d-df5cd42bb520",
+      "result_id": "6d62ac72-73ef-482c-816e-72506c2bcf05"
+    },
+    {
+      "claim_id": "64858368-33ac-4800-9dc6-56cc178220bb",
+      "result_id": "6d62ac72-73ef-482c-816e-72506c2bcf05"
+    },
+    {
+      "claim_id": "1812ba59-3f65-4b6f-964f-82f23096ef6b",
+      "result_id": "6d62ac72-73ef-482c-816e-72506c2bcf05"
+    },
+    {
+      "claim_id": "c60111b4-a4c0-4df9-b34c-02646b3156f1",
+      "result_id": "6d62ac72-73ef-482c-816e-72506c2bcf05"
+    },
+    {
+      "claim_id": "1e3cf221-a6a2-440d-9bd2-1d8d46120f2b",
+      "result_id": "19bfab4d-8ab0-4708-a6bd-c14973eb605e"
+    },
+    {
+      "claim_id": "dde5985a-f514-40ad-a1ed-818a109f2366",
+      "result_id": "19bfab4d-8ab0-4708-a6bd-c14973eb605e"
+    },
+    {
+      "claim_id": "c49ba53f-6c11-453d-a39d-9450f92dfb57",
+      "result_id": "19bfab4d-8ab0-4708-a6bd-c14973eb605e"
+    },
+    {
+      "claim_id": "4d536071-392d-4a69-a48c-f60fa784c906",
+      "result_id": "19bfab4d-8ab0-4708-a6bd-c14973eb605e"
+    },
+    {
+      "claim_id": "904a19a7-a32a-4714-84d8-b16b26facc19",
+      "result_id": "19bfab4d-8ab0-4708-a6bd-c14973eb605e"
+    },
+    {
+      "claim_id": "d692e705-25f7-4eb4-a802-c71d9c11978f",
+      "result_id": "19bfab4d-8ab0-4708-a6bd-c14973eb605e"
+    },
+    {
+      "claim_id": "225470d1-e61c-4278-baab-ebd14bd66680",
+      "result_id": "19bfab4d-8ab0-4708-a6bd-c14973eb605e"
+    },
+    {
+      "claim_id": "3d68d72a-0562-4ac5-9317-fa9def81412f",
+      "result_id": "19bfab4d-8ab0-4708-a6bd-c14973eb605e"
+    },
+    {
+      "claim_id": "8a4ab2fa-fd11-4ce4-9b4c-5a1c2f8ae5d9",
+      "result_id": "19bfab4d-8ab0-4708-a6bd-c14973eb605e"
+    },
+    {
+      "claim_id": "a8b89845-38b0-41b3-b12b-f89421e27dda",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "e003123d-fa75-42e2-9749-c0c54aa23859",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "a44bb46c-873c-47cd-aeb0-7b28cf386c84",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "de270c46-8f1c-4a55-853d-f4a97cdc5a9d",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "9bef8980-04f9-4fc5-ad9b-d1028abea0fb",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "54666dae-e242-41a7-a053-3c0667108e64",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "36764375-81bc-49cf-8039-992744d64f61",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "7d4f1b29-0679-426b-84b6-dbef1e1116b7",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "226f0f93-70c9-4177-b4d0-bffb8960855f",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "22bbda7f-a07f-4a29-a0d9-e26960d70db5",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "5648b207-4ba8-4bba-a4e4-6cc48192e916",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "7950c295-6682-4b52-add8-2cafbe49ca69",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "219d69ee-b2ed-4bd4-b374-be3bdf2d4e96",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "7e0ad5fe-cf8e-4d3b-ac2b-a7295dd2a8dd",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "6c0296fc-2b35-44c1-a487-e7abc843a0d3",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "eabc0da6-1248-4544-8b4c-4f9f5770af2e",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "3f48955f-05cc-4872-a74b-219707432aee",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "36d2ba43-25a1-4092-874f-f00992c96f38",
+      "result_id": "dcc63f89-d9bb-4b32-b079-438bad5135a4"
+    },
+    {
+      "claim_id": "5ea49bef-6d83-487a-a80b-e584a9a42768",
+      "result_id": "172330fc-b708-4e5a-af03-d37ef58cb1cb"
+    },
+    {
+      "claim_id": "bbefe864-b9d1-45fe-978e-08cddd5501a0",
+      "result_id": "172330fc-b708-4e5a-af03-d37ef58cb1cb"
+    },
+    {
+      "claim_id": "db73c62e-0159-40a0-b043-b4015045cb4b",
+      "result_id": "172330fc-b708-4e5a-af03-d37ef58cb1cb"
+    },
+    {
+      "claim_id": "0806f773-1760-4a2a-8963-4ca6b9e84a8c",
+      "result_id": "172330fc-b708-4e5a-af03-d37ef58cb1cb"
+    },
+    {
+      "claim_id": "d9e96a5f-703b-4325-ae49-320291babc3b",
+      "result_id": "172330fc-b708-4e5a-af03-d37ef58cb1cb"
+    },
+    {
+      "claim_id": "15356995-f22e-45ee-8ea6-cee8fe3f1894",
+      "result_id": "172330fc-b708-4e5a-af03-d37ef58cb1cb"
+    },
+    {
+      "claim_id": "8edeee2f-0ac3-44ca-9d08-daaa62e76591",
+      "result_id": "172330fc-b708-4e5a-af03-d37ef58cb1cb"
+    },
+    {
+      "claim_id": "be2f33e5-1e0c-4e81-8ba2-e88c947a1727",
+      "result_id": "172330fc-b708-4e5a-af03-d37ef58cb1cb"
+    },
+    {
+      "claim_id": "65f121ee-dba8-49b4-919c-47da2ecfc027",
+      "result_id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc"
+    },
+    {
+      "claim_id": "55d71329-0aef-4358-8d59-3a87134135f3",
+      "result_id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc"
+    },
+    {
+      "claim_id": "457ad0c2-943b-4be1-87ce-ad943b0e2fe7",
+      "result_id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc"
+    },
+    {
+      "claim_id": "0700e948-03f4-4d27-be18-c29472bef4d7",
+      "result_id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc"
+    },
+    {
+      "claim_id": "c1b235f4-78fc-4d69-a95b-222b9a3c65f3",
+      "result_id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc"
+    },
+    {
+      "claim_id": "dcc92e25-d1d5-457c-b7fd-99f74c1d3639",
+      "result_id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc"
+    },
+    {
+      "claim_id": "f9c351cf-5353-42e9-946a-1c6a5cc4088c",
+      "result_id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc"
+    },
+    {
+      "claim_id": "566b3653-e589-41c3-a62f-e3fc7f862755",
+      "result_id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc"
+    },
+    {
+      "claim_id": "1b08472d-ca78-4aa1-8edc-f1ed7e80eac3",
+      "result_id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc"
+    },
+    {
+      "claim_id": "192e26df-be45-4d4a-8866-1c3e4c5527ea",
+      "result_id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc"
+    },
+    {
+      "claim_id": "501c0ec6-6772-4465-bed8-99462156191d",
+      "result_id": "c63fed24-6443-4ab6-8656-23dfb1dba4cc"
+    },
+    {
+      "claim_id": "f9889645-0157-498a-8a4b-9a45d8be6cf0",
+      "result_id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6"
+    },
+    {
+      "claim_id": "4d052398-81eb-41d3-a3f9-607ab8c419bf",
+      "result_id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6"
+    },
+    {
+      "claim_id": "4fd5611f-0e69-47e5-ab89-462d569cfc54",
+      "result_id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6"
+    },
+    {
+      "claim_id": "c9711382-05bb-4815-a8bc-2dacb98c99b6",
+      "result_id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6"
+    },
+    {
+      "claim_id": "a8aad90e-9dbf-4619-88bb-e3370112b1f4",
+      "result_id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6"
+    },
+    {
+      "claim_id": "25be1a92-e545-4058-8e0a-33f8e2ad5e82",
+      "result_id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6"
+    },
+    {
+      "claim_id": "17b7788c-3b62-4507-a356-b396f67019f7",
+      "result_id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6"
+    },
+    {
+      "claim_id": "0f058158-7a63-4ff0-929e-947c7dd708de",
+      "result_id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6"
+    },
+    {
+      "claim_id": "065d9d7b-2f5c-4fc1-8e07-28bfa77f469f",
+      "result_id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6"
+    },
+    {
+      "claim_id": "7b94d537-bf9d-455a-ad28-74f65f4d8271",
+      "result_id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6"
+    },
+    {
+      "claim_id": "0b54d38d-ad8d-4e85-872b-ee03b0ded46b",
+      "result_id": "6f06a5ff-c675-4aa3-9568-a7b1551a7ed6"
+    },
+    {
+      "claim_id": "cb4f348e-edb2-4790-b3ac-d37fc8db8e98",
+      "result_id": "0e4b2396-42cb-4953-871a-d9f275158975"
+    },
+    {
+      "claim_id": "127865df-5b92-4d42-97bc-e87a94ec99dc",
+      "result_id": "0e4b2396-42cb-4953-871a-d9f275158975"
+    },
+    {
+      "claim_id": "a698d9f7-338b-4b37-94f5-c82941d4f0ef",
+      "result_id": "0e4b2396-42cb-4953-871a-d9f275158975"
+    },
+    {
+      "claim_id": "b4a8a7f6-883c-4ccc-95f4-9adfa77de3b9",
+      "result_id": "0e4b2396-42cb-4953-871a-d9f275158975"
+    },
+    {
+      "claim_id": "da4eb935-fd72-4a39-a007-3b7def5c3f08",
+      "result_id": "0e4b2396-42cb-4953-871a-d9f275158975"
+    },
+    {
+      "claim_id": "6e87a9e6-53d0-469b-9632-446e545a61df",
+      "result_id": "0e4b2396-42cb-4953-871a-d9f275158975"
+    },
+    {
+      "claim_id": "4c311331-d236-4b60-95b0-d290a505822e",
+      "result_id": "0e4b2396-42cb-4953-871a-d9f275158975"
+    },
+    {
+      "claim_id": "684b275e-fb45-4121-b12f-3b370f41040f",
+      "result_id": "0e4b2396-42cb-4953-871a-d9f275158975"
+    },
+    {
+      "claim_id": "faec6326-f374-4310-9bce-f8d638349857",
+      "result_id": "0e4b2396-42cb-4953-871a-d9f275158975"
+    },
+    {
+      "claim_id": "b6f410db-9596-4d65-bf72-c3e03ba42c24",
+      "result_id": "0e4b2396-42cb-4953-871a-d9f275158975"
+    },
+    {
+      "claim_id": "71a518ae-8e46-46ed-9ef8-458f672549b1",
+      "result_id": "0e4b2396-42cb-4953-871a-d9f275158975"
+    },
+    {
+      "claim_id": "3d1a923f-b5fa-41eb-a91e-02285a50f213",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "df3c8eb9-2aea-42b9-8ede-cb8cc88af448",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "654aaa50-b841-4f16-b331-aefb32065a7e",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "c7265338-fce7-41de-89fb-e267468df280",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "3124d7aa-0c61-4e30-9d16-47477b903674",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "7138ce52-0b9c-405f-9635-658d3850b5d1",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "ffa3a584-38fe-4e1c-8358-fd0007738600",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "3f1929cc-3354-4989-a6c3-0906370f1f61",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "1d0d2f38-bfaf-4cd1-a266-ec040723c200",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "a0d49edc-f7bc-4dc6-bc6f-7e5328c50d81",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "f3122c20-d9e4-45df-af95-0c21dc2b2c7f",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "66bcaa95-19ef-4c1e-9ed3-a957af7d77a3",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "fdfab889-f9a4-4fbd-91e3-83bfe446c5c1",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "f11cd411-59b4-4991-8047-569f9a6fe229",
+      "result_id": "b9c50fdc-bb6d-46ae-9714-f115396664d8"
+    },
+    {
+      "claim_id": "b0ec97be-f4ef-4cac-a16b-896d918424a2",
+      "result_id": "dbfad550-3398-452d-ae30-0614704bc41a"
+    },
+    {
+      "claim_id": "a31fc29d-46ee-4730-b983-059fa259c52b",
+      "result_id": "dbfad550-3398-452d-ae30-0614704bc41a"
+    },
+    {
+      "claim_id": "aeb729d2-b77d-44f7-b558-4b96876669f5",
+      "result_id": "dbfad550-3398-452d-ae30-0614704bc41a"
+    },
+    {
+      "claim_id": "cc10521d-89b2-4025-903a-8f8ac3dae0e3",
+      "result_id": "dbfad550-3398-452d-ae30-0614704bc41a"
+    },
+    {
+      "claim_id": "51a22e58-9b91-4843-b27f-f86bce2ca7ad",
+      "result_id": "d8515218-5b8b-477d-ad3f-c6f0b065ce76"
+    },
+    {
+      "claim_id": "d54331fa-9b65-4e8c-a7c4-034b56e12e46",
+      "result_id": "d8515218-5b8b-477d-ad3f-c6f0b065ce76"
+    },
+    {
+      "claim_id": "cd691ca8-88d8-410e-b48e-8f37001d1d2e",
+      "result_id": "d8515218-5b8b-477d-ad3f-c6f0b065ce76"
+    },
+    {
+      "claim_id": "71c5bdd2-e3d4-47b5-85e7-53410789fc0c",
+      "result_id": "d8515218-5b8b-477d-ad3f-c6f0b065ce76"
+    },
+    {
+      "claim_id": "2029c4a6-9780-46fc-b0fd-3bf6ae94b170",
+      "result_id": "d8515218-5b8b-477d-ad3f-c6f0b065ce76"
+    },
+    {
+      "claim_id": "e195c6d4-c5e4-4f9a-a0b5-c346fd602951",
+      "result_id": "2ba84670-e7be-44c7-91fb-ce9bef965182"
+    },
+    {
+      "claim_id": "13e4ac7e-0e3b-47f5-b0b3-0cffe6aa2efa",
+      "result_id": "2ba84670-e7be-44c7-91fb-ce9bef965182"
+    },
+    {
+      "claim_id": "2aff89df-3602-44e4-9c73-a34d650dc5a1",
+      "result_id": "2ba84670-e7be-44c7-91fb-ce9bef965182"
+    },
+    {
+      "claim_id": "4c5d4032-a779-40df-b29e-8c1c02a6f892",
+      "result_id": "2ba84670-e7be-44c7-91fb-ce9bef965182"
+    },
+    {
+      "claim_id": "eb3bf9dd-d16d-4280-a188-7f373bde6b3d",
+      "result_id": "2ba84670-e7be-44c7-91fb-ce9bef965182"
+    },
+    {
+      "claim_id": "74cc573b-2420-4bfd-97ff-b681618b9c50",
+      "result_id": "2ba84670-e7be-44c7-91fb-ce9bef965182"
+    },
+    {
+      "claim_id": "913b0d8e-f829-443f-8f37-2219b22b87ab",
+      "result_id": "2ba84670-e7be-44c7-91fb-ce9bef965182"
+    },
+    {
+      "claim_id": "d208e0a7-1994-417c-9b7c-0ffcfc644efd",
+      "result_id": "2ba84670-e7be-44c7-91fb-ce9bef965182"
+    },
+    {
+      "claim_id": "976c03a8-76ea-4abf-bccf-aa115663c744",
+      "result_id": "2ba84670-e7be-44c7-91fb-ce9bef965182"
+    },
+    {
+      "claim_id": "924d59c0-d3d0-4bc5-b164-c8c4122d8281",
+      "result_id": "d0a946ab-2e23-47ae-b8d9-4269f1f7abf6"
+    }
+  ],
+  "comparisons": []
+}

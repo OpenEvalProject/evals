@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Isw2 activity in yeast is specialized to a subset of target sites, where it positions only a single PIC-proximal nucleosome without global nucleosome spacing activity. PICs with Isw2-directed activity are bound by Isw2, while those lacking nucleosome organization are unbound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by MNase-seq and ChIP data (Figure 1A) showing Isw2 activity at specific PICs, correlation between Isw2 binding and nucleosome positioning, and decay of positioning with distance. The data directly demonstrate specialized, single-nucleosome positioning activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "At Ume6 target sites, Isw2 efficiently positions only the Ume6-proximal nucleosome with positioning decaying rapidly at distal nucleosomes. Nucleosomes are positioned toward Ume6 motifs at ~100 nucleotides rather than the expected ~200 nucleotides. Full-length Ume6 is required for Isw2 activity, as the DNA binding domain alone is insufficient and other remodelers cannot substitute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by MNase-seq data at Ume6 sites (Figure 1B and supplements) showing single nucleosome positioning, directional movement toward Ume6, and requirement for full-length Ume6. The data contradict the passive barrier model and support specific Ume6-Isw2 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "A small helical epitope spanning Ume6 residues 479-508 is necessary and sufficient for Isw2-directed nucleosome positioning. Deletion of residues 480-507 abolishes positioning without affecting Ume6 binding, while ectopic display of residues 479-508 via SpyTag-SpyCatcher can restore positioning at Ume6 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are supported by systematic truncation analysis (Figure 2A), ChIP showing preserved binding (Figure 2\u2014supplement 3), transcription data validating functional consequences (Figure 2B), and ectopic display experiments (Figure 2C). The convergent evidence from multiple approaches strongly supports the identification of this recruitment domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Swi6 functions as an adapter protein recruiting Isw2 to both Mbp1 (MBF) and Swi4 (SBF) target sites through a conserved helical element similar to that in Ume6. Deletion of Swi6, Mbp1, or Swi4 results in ectopic nucleosome positioning at respective target sites, and ectopic display of the Ume6 recruitment helix on Mbp1 can restore Isw2-directed positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are supported by MNase-seq data showing ectopic positioning in deletion strains (Figure 3A), sequence conservation analysis, and successful rescue by ectopic helix display (Figure 3B). The data establish Swi6 as a new Isw2 recruitment factor and demonstrate conservation of the recruitment mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The WAC domain (residues 24-130) of the Itc1 accessory protein is responsible for coupling with epitopes on DNA-bound factors. Deletion of the WAC domain abolishes targeted nucleosome positioning genome-wide without affecting nucleosome sliding activity in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by in vitro sliding assays showing preserved catalytic activity (Figure 4B) and genome-wide MNase-seq showing complete loss of targeted positioning with WAC deletion (Figure 4C-D). The dissociation of catalytic activity from targeting function strongly supports the WAC domain as the targeting interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The Itc1 WAC domain (residues 1-73) binds Isw2 targets genome-wide and is spatially offset from the catalytic subunit, with Itc1 positioned upstream of repositioned nucleosomes and Isw2 located on the selected nucleosome. Nucleosomes are always shifted toward the Itc1 subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by ChIP-seq data showing overlap between Itc1(1-73) and Isw2 binding (Figure 5B-C), consistent spatial offset at target sites, and correlation with nucleosome movement direction. The geometric arrangement supports a model where Itc1 anchors to recruitment factors while Isw2 engages nucleosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Two strictly conserved acidic residues (E33 and E40) in the Itc1 WAC domain are essential for targeted nucleosome positioning. The Drosophila genus underwent charge reversal at these positions, and mutation of E33R/E40H in yeast completely abolishes Isw2 activity at all genomic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by sequence alignment showing Drosophila-specific charge reversals (Figure 6A) and MNase-seq data demonstrating complete loss of positioning with E33R/E40H mutations but retention with less-conserved residue mutations (Figure 6B-C). The charge-reversal experiments provide strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Humans and most other organisms likely retain Isw2-like targeting potential as they preserve the mechanistically important acidic residues. Targeted nucleosome array formation has been observed in humans at specific transcription factor sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by sequence conservation analysis (Figure 6A) showing retention of critical acidic residues in humans and citation to prior work (Wiechens et al., 2016) demonstrating targeted positioning in human cells. The inference is reasonable based on sequence conservation and functional precedent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Isw2 may be in a globally repressed state in cells and activated only on target nucleosomes, potentially due to unknown inhibitory factors lost during purification or differences between in vitro and in vivo conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C63 are explicitly speculative and lack direct experimental evidence. While the speculation is reasonable given the discrepancy between in vitro and in vivo behavior, no experiments test these hypotheses. Additional work would be needed to validate these proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The charge reversal in Drosophila may increase nonspecific DNA binding, and the Itc1 N-terminus may bind both transcription factor epitopes and H4 tails to regulate Isw2 activity through autoinhibition at precise distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C67 are speculative models without direct experimental validation. While the speculation builds on the Hwang et al. model and observed data, no experiments test H4 tail binding, autoinhibition, or the proposed allosteric mechanism. These remain hypotheses requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "An interacting barrier provides advantages over non-interacting barriers including directional behavior and condition-specific modulation through post-translational modification. Only three Swi6-regulated genes show Swi6-mediated Isw2 recruitment, suggesting context-dependent tuning of the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by the directional positioning data throughout the manuscript and the observation of limited Swi6-Isw2 recruitment sites (C70). The inference about advantages is logical based on the demonstrated properties, though the post-translational modification hypothesis (C69) remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Other targeting factors likely exist that recruit Isw2 through various domains, and recruitment may be linked to cellular context such as cell cycle progression or stress response through transcription factor expression control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73 are predictive and based on inference from the identified Ume6 and Swi6 recruitment mechanisms. While the prediction is reasonable, no additional recruitment factors are identified or tested. The connection to cellular context is logical but remains speculative without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Isw2 acts as an obligately targeted nucleosome remodeler in vivo through physical interactions with sequence-specific factors using small epitopes that direct activity through conserved acidic residues in Itc1. This interaction orients Isw2 for precise positioning, defining an 'interacting barrier model' where Isw2 positions single targeted nucleosomes to establish phased chromatin arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 represent the main conclusions synthesizing all experimental results. They are well-supported by the convergent evidence from nucleosome positioning, truncation analysis, ChIP-seq, charge-reversal experiments, and ectopic display studies. The interacting barrier model is a reasonable inference from the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background claims establishing that nucleosomes are octamers wrapped by ~147 bp DNA, that nucleosome positioning affects gene expression, that ChRPs establish positioning, and that the barrier model and ChRP-transcription factor interactions have been previously described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are background knowledge supported by appropriate citations to prior work. These establish the context for the current study and are not novel findings but rather accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Prior characterization of Isw2 and related proteins established nonspecific activities in vitro, abundance estimates, and interactions with transcription factors. Previous work on Acf1, Mbp1, and ISWI proteins provides context for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C60 are background information supported by citations to prior work. These establish the existing knowledge base and apparent contradictions that motivated the current study. The claims accurately represent prior findings based on the citations provided.",
+    "result_type": "MINOR"
+  }
+]

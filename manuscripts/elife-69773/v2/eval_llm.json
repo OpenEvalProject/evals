@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "PER2 bioluminescence increases during spontaneous waking and decreases during sleep in freely behaving mice, with tissue-specific dynamics observed between peripheral (kidney) and central (cortical) signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C33-C38, and C45-C47 collectively demonstrate that PER2 bioluminescence changes with sleep-wake state transitions in both peripheral and central tissues. The data in Figure 1B-C show clear temporal associations between sleep-wake state and bioluminescence changes, with quantitative characterization of transition dynamics. The tissue-specific differences (immediate vs. delayed responses) are well-documented and strengthen the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Daily recurring sleep deprivations temporarily reinstate robust PER2-bioluminescence rhythmicity in behaviorally arrhythmic SCN-lesioned mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C51-C54 are supported by data in Figure 2 showing that SCN lesioning renders locomotor activity arrhythmic and reduces (but does not eliminate) PER2 rhythms, and that repeated sleep deprivations restore amplitude to pre-lesion levels. The observation that oscillations continue after sleep deprivations end (C54) provides strong evidence for the sleep-wake distribution's role in driving PER2 rhythms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C44"
+    ],
+    "result": "Sleep deprivation elicits tissue-specific acute responses in PER2 bioluminescence and causes long-term reduction of rhythm amplitude during recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 and C44 are supported by quantitative data in Figure 1A showing immediate central increases versus delayed peripheral increases after sleep deprivation, with statistical significance reported. The long-term amplitude reduction (30% peripheral, 32% central on first recovery day) is well-documented with confidence intervals. The tissue-specific response pattern is consistent with prior work (C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C61",
+      "C62",
+      "C64",
+      "C66",
+      "C68",
+      "C89",
+      "C92",
+      "C93",
+      "C121"
+    ],
+    "result": "PER2 dynamics can be accurately modeled as a damped harmonic oscillator driven by two forces: a sleep-wake-dependent force (F\u2192WAKE) and an SCN-independent circadian force (F\u2192PERI), with both forces required for accurate prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C61-C62, C64, C66, and C92-C93 are supported by modeling results in Figure 4 and Tables 1-2. The model accurately captures PER2 dynamics across three different experimental conditions (SCNx, 2hOnOff, 6hr SD) with high precision (low RSS, favorable BIC scores). Removal of either force significantly worsens model performance (Table 2), demonstrating that both forces are necessary. The synergistic effect of the two forces (C121) is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The 2hOnOff protocol reduced the amplitude of the circadian sleep-wake distribution consistently in all mice, but had variable effects on PER2-bioluminescence amplitude (decreased in 4/6 mice, increased in 2/6 mice), with all mice reverting to baseline during recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by data in Figure 3. The sleep-wake amplitude reduction is statistically significant and consistent across all mice (C59, Figure 3D-E). The bimodal PER2 response (C56-C57) is clearly documented, though unexpected. The reversion to baseline (C58) is observed in all mice. While the variable PER2 response was not predicted, the data are clearly presented and the authors acknowledge this in their modeling analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The kidneys are the primary source of peripheral bioluminescence in SKH1 mice, the cortex is the source of central bioluminescence in B6 mice, and luciferin delivery via osmotic mini-pumps is superior to drinking water administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by pilot experiment data in Figure 1\u2014figure supplement 2. Imaging data (C23-C24) clearly show the anatomical sources of bioluminescence signals. The comparison of luciferin delivery methods (C25-C26) demonstrates that drinking water administration introduces artifactual rhythms due to circadian drinking behavior, supporting the choice of osmotic mini-pumps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C113",
+      "C114"
+    ],
+    "result": "Bioluminescence changes at sleep-wake transitions are specific to the luciferase reporter construct and not artifacts of physiological changes, as demonstrated by differential responses in Pkg1-Luc, CAG-Luc, and Per2Luc mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 and C113-C114 are supported by control experiments in Figure 1\u2014figure supplement 5. The housekeeping gene Pkg1-Luc shows no changes at transitions (C41), while CAG-Luc shows larger changes than Per2Luc (C42), demonstrating construct-specific responses. This effectively rules out temperature or luciferin availability artifacts and validates that observed PER2 changes reflect genuine transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Tissue-specific differences exist in PER2 response to sleep-wake state, with brain showing immediate increases upon waking while kidney shows 5-10 minute delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by data comparing central and peripheral recordings. The immediate brain response versus delayed kidney response (C105-C107) is consistent with the sleep deprivation data (C27-C29) and reflects tissue-specific regulatory mechanisms. The observation is well-documented though the mechanistic basis is speculative (C108-C110).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C112",
+      "C113"
+    ],
+    "result": "Temperature effects do not account for observed PER2 bioluminescence changes, as evidenced by phase differences between temperature and PER2 rhythms and validation with anti-phase clock gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C112-C113 provide converging evidence against temperature artifacts. The 4-hour phase difference between temperature and PER2 (C40, Figure 1\u2014figure supplement 6) and the ability to detect anti-phase clock gene oscillations with the same delivery method (C112) effectively rule out temperature as the primary driver of observed changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior work has established that Per2 expression increases during sleep deprivation and at times when animals are predominantly awake, and that SCN lesioning attenuates peripheral clock gene amplitude, suggesting sleep-wake distribution contributes to Per2 rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C15-C19 accurately summarize established literature with appropriate citations. These claims provide the scientific context and rationale for the current study. The citations are appropriate and the synthesis of prior work correctly identifies the gap that motivated this research (difficulty dissecting sleep-wake from circadian contributions).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The harmonic oscillator model has limitations: it cannot reliably predict central PER2 dynamics due to phase differences, describes global but not acute effects, and does not capture immediate early gene (IEG) responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C108-C110 acknowledge important limitations of the model. The inability to predict central dynamics (C65, Figure 4\u2014figure supplement 2D) is clearly documented. The distinction between TTFL and IEG regulation (C108-C109) is a reasonable interpretation of why the model misses acute responses. These limitations are appropriately acknowledged and do not undermine the model's utility for peripheral PER2 dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C97",
+      "C98",
+      "C100"
+    ],
+    "result": "The biological basis of the SCN-independent circadian force (F\u2192PERI) may involve corticosterone rhythms from the adrenal gland or local TTFL activity, though the exact mechanism remains uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C97-C98, and C100 are speculative regarding the source of F\u2192PERI. While the cited evidence shows adrenal glands can generate circadian corticosterone rhythms ex vivo (C97) and adrenalectomy partially reduces SD-induced Per2 increases (C100), these observations do not definitively establish corticosterone as the basis of F\u2192PERI. Alternative mechanisms (temperature, local TTFL) are also plausible. The authors appropriately present this as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C49",
+      "C50",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C102",
+      "C111",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Background knowledge claims about circadian biology, molecular clock mechanisms, Per2 regulation, and prior validation of methods are accurately cited and provide appropriate scientific context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14, C49-C50, C71-C77, C79-C88, C90-C91, C102, C111, C116-C118 represent established knowledge with appropriate citations. These claims provide necessary background on circadian rhythms, TTFL mechanisms, Per2 regulation pathways, and sleep homeostasis. The citations are appropriate and the knowledge claims are accurate representations of the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The RT-Biolumicorder system allows continuous assessment of PER2 bioluminescence in freely moving mice, improving upon previous methods requiring anesthesia for each measurement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 accurately describe the methodological advance. Previous Per2Luc studies required anesthesia (C21), while the current approach enables continuous monitoring in freely behaving animals (C22). This methodological improvement is central to enabling the sleep-wake transition analyses that form the core of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Central PER2 bioluminescence signals are noisier than peripheral signals (signal-to-noise ratio: -1.15 vs 0.37 dB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 provides a quantitative comparison of signal quality between central and peripheral recordings. The reported signal-to-noise ratios are specific and support the authors' decision to focus on peripheral recordings for subsequent experiments. This is a straightforward technical observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C119",
+      "C120"
+    ],
+    "result": "The sleep-wake distribution profoundly affects PER2 bioluminescence both short and long term, with large amplitude rhythms providing protection from acute sleep disturbances while arrhythmic SCNx mice show immediate large effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C119-C120 represent summary conclusions drawn from the modeling analysis. The short and long-term effects (C115) are demonstrated across multiple experiments. The protective effect of large amplitude (C119) and vulnerability of SCNx mice (C120) are supported by the modeling results showing differential responses to the 2hOnOff protocol versus repeated SDs in SCNx mice.",
+    "result_type": "MAJOR"
+  }
+]

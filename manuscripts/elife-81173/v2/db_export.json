@@ -1,0 +1,1381 @@
+{
+  "submission": {
+    "id": "8ffad25a-c386-478d-9012-13f9960f16e5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:43:18.486586Z",
+    "updated_at": "2025-12-03T20:43:18.486586Z"
+  },
+  "content": [
+    {
+      "id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "submission_id": "8ffad25a-c386-478d-9012-13f9960f16e5",
+      "content_type": "manuscript",
+      "content_text": "# Shared enhancer gene regulatory networks between wound and oncogenic programs\n\n## Authors\n\n- Swann Floc'hlay<sup>1</sup> ([ORCID: 0000-0003-1477-830X](https://orcid.org/0000-0003-1477-830X))\n- Ramya Balaji<sup>3</sup>\n- Dimitrije Stankovi\u0107<sup>5</sup>\n- Valerie M Christiaens<sup>1</sup>\n- Carmen Bravo Gonz\u00e1lez-Blas<sup>1</sup>\n- Seppe De Winter<sup>1</sup> ([ORCID: 0000-0001-7907-1247](https://orcid.org/0000-0001-7907-1247))\n- Gert J Hulselmans<sup>1</sup>\n- Maxime De Waegeneer<sup>1</sup>\n- Xiaojiang Quan<sup>1</sup>\n- Duygu Koldere<sup>1</sup>\n- Mardelle Atkins<sup>6</sup> ([ORCID: 0000-0002-0245-2452](https://orcid.org/0000-0002-0245-2452))\n- Georg Halder<sup>7</sup>\n- Mirka Uhlirova<sup>5</sup> ([ORCID: 0000-0002-5735-8287](https://orcid.org/0000-0002-5735-8287))\n- Anne-Kathrin Classen<sup>3</sup> ([ORCID: 0000-0001-5157-0749](https://orcid.org/0000-0001-5157-0749)) \u2020\n- Stein Aerts<sup>1</sup> ([ORCID: 0000-0002-8006-0315](https://orcid.org/0000-0002-8006-0315)) \u2020\n\n### Affiliations\n\n1. VIB Center for Brain & Disease Research Leuven Belgium ([ROR:03xrhmk39](https://ror.org/03xrhmk39))\n2. Laboratory of Computational Biology, Department of Human Genetics, University of Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))\n3. Faculty of Biology, Hilde-Mangold-Haus, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))\n4. CIBSS Centre for Integrative Biological Signalling Studies, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))\n5. Institute for Genetics Cologne Excellence Cluster on Cellular Stress Responses in Aging-Associated Diseases (CECAD), University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))\n6. Department of Biological Sciences, Sam Houston State University Huntsville United States ([ROR:00yh3cz06](https://ror.org/00yh3cz06))\n7. VIB Center for Cancer Biology Leuven Belgium ([ROR:03xrhmk39](https://ror.org/03xrhmk39))\n8. Laboratory of Growth Control and Cancer Research, Department of Oncology, University of Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWound response programs are often activated during neoplastic growth in tumors. In both wound repair and tumor growth, cells respond to acute stress and balance the activation of multiple programs, including apoptosis, proliferation, and cell migration. Central to those responses are the activation of the JNK/MAPK and JAK/STAT signaling pathways. Yet, to what extent these signaling cascades interact at the cis-regulatory level and how they orchestrate different regulatory and phenotypic responses is still unclear. Here, we aim to characterize the regulatory states that emerge and cooperate in the wound response, using the Drosophila melanogaster wing disc as a model system, and compare these with cancer cell states induced by rasV12scrib-/- in the eye disc. We used single-cell multiome profiling to derive enhancer gene regulatory networks (eGRNs) by integrating chromatin accessibility and gene expression signals. We identify a \u2018proliferative\u2019 eGRN, active in the majority of wounded cells and controlled by AP-1 and STAT. In a smaller, but distinct population of wound cells, a \u2018senescent\u2019 eGRN is activated and driven by C/EBP-like transcription factors (Irbp18, Xrp1, Slow border, and Vrille) and Scalloped. These two eGRN signatures are found to be active in tumor cells at both gene expression and chromatin accessibility levels. Our single-cell multiome and eGRNs resource offers an in-depth characterization of the senescence markers, together with a new perspective on the shared gene regulatory programs acting during wound response and oncogenesis.\n\n## Introduction\n\nThe Drosophila wing imaginal disc (WID) is a classical model system to study developmental patterning and cell differentiation. This larval primordium is composed of two epithelial cell layers, the peripodial epithelium and the disc proper, along with muscle precursors (Figure 1a). Despite its rather complex structure, the wing disc is extensively studied for its regeneration capacities. Damaged wing discs can trigger a set of wound-response mechanisms allowing for disc repair and the formation of normal wings (Smith-Bolton, 2016; Tripathi and Irvine, 2022). The molecular pathways identified as key drivers for this regenerative process include the regulation of cell apoptosis (JNK, JAK/STAT; La Fortezza et al., 2016), cell proliferation (EGFR, Wnt, Wingless, Scalloped; Blanco et al., 2010; Herrera et al., 2013; Irvine and Harvey, 2015; Smith-Bolton et al., 2009; Yu et al., 2015), re-epithelialization (ERK, Grainy head; Mace et al., 2005), and developmental timing (insulin-like peptide 8; Katsuyama et al., 2015). Interestingly, the same regulatory pathways may lead to uncontrolled cell apoptosis or neoplastic growth when unrestricted (La Marca and Richardson, 2020; P\u00e9rez-Garijo et al., 2013; Pinal et al., 2019). Such tumor-like outcomes are observed in rasV12scrib-/- transformed cells, where the loss of cell polarity triggers a cellular stress that cells cannot escape via apoptosis (Atkins et al., 2016; Brumby and Richardson, 2003; Cosolo et al., 2019; Davie et al., 2015; La Fortezza et al., 2016; Igaki et al., 2006; K\u00fclshammer et al., 2015; Pagliarini and Xu, 2003; Pinal et al., 2019; Uhlirova and Bohmann, 2006). In light of these outcomes, it is still unclear how such antagonistic mechanisms (apoptosis and proliferation) interact in the vicinity of a wound to orchestrate tissue repair while controlling for overproliferation. To study this process at the gene regulatory level, we generated a multi-omic dataset, jointly measuring chromatin accessibility and gene expression changes at single-cell resolution, in wild-type and genetically ablated wing imaginal discs from third-instar larvae (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig1-v2.jpg)\n\n**Figure 1.:** (a) Top: schematic of the wing imaginal disc subdomains from a Drosophila third-instar larvae. The disc proper (DP) is composed of three domains and is shoehorned between the peripodial epithelium (PE) and the adult muscle precursors (AMP, or myoblasts). bottom: Design of the wound experiment, eiger expression is induced in the pouch for 24 hr, resulting in a localized apoptosis. (b) Representation of the wing disc scRNA Atlas tSNE (left) and the scRNA multiome data UMAP (right), where wound populations \u03b1 and \u03b2 can be detected. (c) Gene expression of marker genes across cell types (left) and wound subclusters in contrast to pouch (right) clusters. (d) Gene expression pattern of wound markers in multiome UMAP (top) and immunostaining (bottom). Ilp8, rn and upd3 are found to colocalize with JNK reporter (TRE-RFP), present at the wound site. (e) Relative expression (log2FC) of markers of wound response (first row, wounded/wild-type, \u25b2) and/or developmental timing (second row, 96 hr/120 hr after egg laying, \u25cf). Shared markers are marked by an asterisk (*).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Distribution of the number of detected genes and total read counts for the multiome scRNA-seq assays. Color represents the proportion of mitochondrial reads per cell. (b) Heatmap distribution of TSS enrichment score and total fragment counts for the multiome scATAC-seq assays.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a, b) Harmony-corrected tSNE visualization of the scRNA wing disc atlas, colored by the sample of origin (a) and annotations from Everetts et al. (b). (c) Gene expression patterns of the epithelial marker grainyhead and the myoblast marker zfh1. (d) Enrichment of cells originating from the wounded samples for each cluster. We note an imbalance in wild-type/wounded cell proportion in the pouch cluster (wound-depleted) and the wound cluster (wound-enriched). (e) cisTopic selection metrics across all tested LDA models. The selected model with best coherence scores comprises 76 topics. (f) tSNE representation of the topic embedding generated from the multiome scATAC data, colored by cell type identified from the scRNA view. (g) Relative expression (log2FC) of markers of wound response (1st row, wounded/wild-type, \u25b2) and/or developmental timing (second row, 96 hr/120 hr after egg laying, \u25cf) in the notum domain. Shared markers are marked by an asterisk.\n\nLeveraging the multidimensionality of our dataset, we constructed enhancer gene regulatory networks (eGRN), centered around transcription factors (TFs) and comprising both gene and enhancer signatures (Janssens et al., 2022). We detect two classes of wound populations, respectively expressing markers of proliferation and cellular senescence. The senescent cells are driven by eGRNs belonging to the C/EBP bZip family (Irbp18, Slow border, Vrille; Blanco et al., 2020), which we also found to be present in the tumor cells from the rasV12scrib-/- model.\n\n## Results\n\n### Single-cell multi-omics of the normal and wounded wing imaginal disc\n\nTo study the gene regulatory program of a wound response at single-cell resolution, we used a published genetic model that induces a sterile wound (La Fortezza et al., 2016; Smith-Bolton et al., 2009; see \u2018Materials and methods\u2019). In this model, the expression of the TNF ligand eiger (egr) is induced in the wing pouch, where rotund (rn) is expressed, at specific times through a temperature shift regime. The expression of egr causes a wound by inducing extensive local cell death (Figure 1a). Wing discs were dissected 24 hr after the induction of rn-Gal4, the time point when most rn-expressing cells have undergone apoptosis, and markers of wound response are observed (Herrera et al., 2013; P\u00e9rez-Garijo et al., 2013). After disc dissociation, we performed multiome experiments using 10X Genomics (combined scRNA & scATAC from the same cell), as well as on wild-type control discs. This yielded 17,402 high-quality cells, with a median of 1124 detected genes per cell, and a median of 3060 unique ATAC fragments per cell (Figure 1\u2014figure supplement 1).\n\nTo increase the power to robustly detect cell types and simultaneously validate our single-cell data, we integrated our scRNA dataset with several previously published scRNA-seq datasets of wild-type wing imaginal discs, generating an integrated atlas. This wing atlas is available through SCope, along with clustering and marker gene information (Figure 1b, Figure 1\u2014figure supplement 2a, https://scope.aertslab.org/#/WingAtlas/*/welcome). The integrated atlas contains 70,230 cells from 10X Genomics, across 10 replicates (four from this work, four from Everetts et al., 2021, one from Bageritz et al., 2019, and one from Deng et al., 2019).\n\nTo annotate the cell types of the wild-type disc, we compared markers from literature with significantly upregulated gene sets obtained from each cluster (see \u2018Materials and methods\u2019), resulting in the identification of the previously known wing disc cell types and patterning domains (Figure 1c, Supplementary file 1). We also confirmed our annotation by comparison with the annotations from the integrated public datasets (Figure 1\u2014figure supplement 2b). The annotated clusters form a continuum of epithelial cells, from the pouch over the hinge to the notum (globally marked by the epithelial marker grainyhead); and separate clusters of myoblasts (marked by myogenic genes such as twist, holes in muscle and zn finger homeodomain 1), hemocytes, and tracheal cells (Figure 1b, Figure 1\u2014figure supplement 2c).\n\nOne cluster was noticeably enriched for cells from the wounded disc samples, with markers linked to stress response pathways (e.g. kayak, insulin-like peptide 8, unpaired3, p-adj <10e\u20133, log2FC >1.7; Figure 1c, Figure 1\u2014figure supplement 2d) and localized at the wound site in the pouch domain (Figure 1d), suggesting that this cluster represents a wound-response cell state. This cluster can furthermore be subdivided at higher resolution into two distinct cell populations (population \u03b1 of 1211 cells and population \u03b2 of 94 cells, Figure 1b and c).\n\nNext, we analyzed the scATAC-seq part of our multiome dataset separately using cisTopic (Bravo Gonz\u00e1lez-Blas et al., 2019; Figure 1\u2014figure supplement 2e). Since multiome data delivers same-cell measures for RNA and ATAC, we could label the scATAC-seq based on the previously derived scRNA-seq annotations. The detected ATAC clusters, based solely on chromatin accessibility, also identify the hinge, pouch, notum, myoblast, peripodial epithelium, and wound clusters (Figure 1\u2014figure supplement 2f). Thus, both chromatin accessibility and gene expression independently identify normal cell types and a separate wound cell state.\n\n### The wounded disc is delayed in its developmental timing\n\nThe proper regeneration of a damaged wing disc is tied to the introduction of a developmental delay via a reduced ecdysone signaling. This delay provides the necessary time for tissue repair before pupation (Jaszczak and Halme, 2016; Katsuyama et al., 2015; Sanchez et al., 2019). To assess whether we can detect this regulatory response in our integrated dataset, we combined cells from multiple conditions (wounded/wild-type) but also normal discs dissected at different developmental time points (96 and 120 hr after egg laying, from Everetts et al., 2021). By comparing the up and downregulated genes with respect to the developmental time, we found that marker genes of late time points (e.g. ecdysone-inducible gene E2) are globally downregulated in the wounded disc samples dissected at the same time point. We furthermore found a significant overlap of downregulated markers for both wound response and developmental timing (21%, p-adj <10e\u20133, Fisher\u2019s exact test, Figure 1e). We confirmed this result when restricting the analysis outside of the wound site, in the notum domain (34% shared downregulated genes, p-adj <10e\u20133, Fisher\u2019s exact test, Figure 1\u2014figure supplement 2g). This resemblance of wounded disc cells with those from earlier stage wild-type larvae confirms that wounding triggers a global reaction across the whole disc which delays development to give more time for the wound to repair completely before metamorphosis. This delay is likely driven by insulin-like peptide 8 (ilp8), a critical long-range regulator of ecdysone signaling, highly expressed in the wound cluster (Figure 1c and d).\n\nWe additionally found genes significantly upregulated in the entire wing disc following wounding, with no strong change between developmental time points (p-adj <10e\u20133, log2FCwound > 1.7, log2FCtiming < 0.5, Figure 1e). Among these wound markers, suppressor of cytokine signaling at 36E (socs36E) is a known target of the JAK/STAT and EGFR pathways (Berez et al., 2020; Kang et al., 2018). We also noticed an upregulation of pickled eggs (pigs), a potential Notch regulator (Pines et al., 2010), in the hinge and peripodial cells of wounded discs.\n\n### Multi-ome gene regulatory network reconstruction\n\nAn important advantage of single-cell multiomics data is the power to detect regulatory interactions by synchronous changes in expression and/or accessibility across cells (Fiers et al., 2018). Here, we set out to infer enhancer-GRNs (eGRN) following a similar strategy as we recently applied to the fly brain (Janssens et al., 2022; Figure 2a, see \u2018Materials and methods\u2019). First, we defined differentially accessible regions (DARs) for each cell type, including the wound cluster, using cisTopic (Bravo Gonz\u00e1lez-Blas et al., 2019). Next, these DARs were tested for enrichment in TF binding motifs using cisTarget (Herrmann et al., 2012), which resulted in a list of TF-to-regions edges (i.e. regulatory links) with a significant motif hit. Next we determined co-variability between gene expression and accessibility of neighboring enhancer regions to generate a list of region-to-gene edges. We then completed the edges loop by using the TF-to-gene adjacency scores from pySCENIC (Van de Sande et al., 2020). Lastly, we filtered for high-quality TF-to-region-to-gene interactions by keeping the leading edges of a gene set enrichment analysis (GSEA), taking the TF-to-gene scores as ranking values.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig2-v2.jpg)\n\n**Figure 2.:** (a) eGRN construction is based on TF motif enrichment (1), co-variability of gene expression and chromatin accessibility (2\u20133), and followed by functional edge selection (4). (b) Aggregated wild-type chromatin accessibility signals around a target region (black rectangle, gold shaded box) of the blistered eGRN. The target region comprises a blistered motif hit, it is significantly correlated with expression of defective proventriculus (dve, orange arcs), and it overlaps a flylight reporter (green rectangle) expressed in the pouch domain. The activities of the blistered TF and its associated eGRN signatures are all similarly localized in the pouch (UMAP and violin plots). (c) Dotplot of the average gene-based (left) and region-based (right) activity of selected eGRNs with highest cell type specificity in wild-type conditions. (d) Aggregated chromatin accessibility signals similar to panel (b) for the target regions of two other eGRNs, active in the myoblast (twist, left) and the hinge domains (Sox15, right).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Dotplot of the average gene-based activity of selected eGRNs with highest cell type specificity for wild-type conditions. (b) Aggregated wild-type chromatin accessibility signals around a target gene of the opa (left) and C15 (right) eGRNs. The target regions are significantly correlated with expression of each TF (orange arcs), and C15 targets overlap a flylight reporter (green rectangle) expressed in the hinge. The eGRN activities (UMAP) are localized in the peripodial epithelium (opa) and the hinge (C15). (c) regulon specificity score of selected eGRNs for each cell type, based on wild-type gene expression. Top 10 eGRNs are shown in red.\n\nThis eGRN inference approach has the advantage of including distal enhancers, found up to 50 kb away from a putative target gene. This procedure resulted in 147 high-quality eGRNs (85 activating, 62 repressing), spanning 98 TFs, with on average 54 target genes and 58 target regions (Supplementary file 2). An example of an inferred eGRN is the TF blistered (bs), which is predicted to target the repressor defective proventriculus (dve) via multiple intronic enhancers (Figure 2b). Using the target genes and target regions sets as proxies, we scored the activity of a TF and its subsequent domain specificity via its entire eGRN by AUCell (Figure 2c, see \u2018Materials and methods\u2019). In the case of bs, we found the eGRN to be specifically active in the pouch, both from the gene expression and the region accessibility perspectives (Figure 2b and c).\n\nWe can further divide our final list of eGRNs into repressor and activator categories, based on linear correlation between TF expression and accessibility. For example, we identified mirror (mirr) as a repressor TF in control wing discs because its expression negatively correlated with accessibility of both its target genes and regions (Figure 2\u2014figure supplement 1a). The repressive action of Iroquois TFs like mirr has already been demonstrated in Drosophila (Andreu et al., 2012; Bilioni et al., 2005).\n\nWe used the TF activity scores derived from gene expression and chromatin accessibility to compute the regulon specificity score (RSS) of each eGRN across the disc domains (Suo et al., 2018). A high RSS score indicates an enrichment for the TF signature (gene or region targets) among the top markers of a given domain. One of the strongest regulatory programs was observed in the hinge with the Sox box protein 15 (Sox15) (Dichtel-Danjoy et al., 2009) eGRN (22 genes, 36 regions, Figure 2c and d) where the top predicted target genes included zn finger homeodomain 2, frizzled, dachsous, and homothorax. Several other well-known wing development TFs were identified, including tailup and odd-paired in the notum, ultrabithorax and C15 in the peripodial epithelium and twist in the myoblasts (Figure 2c and d, Figure 2\u2014figure supplement 1a\u2013c). Another interesting example is nubbin (nub), a POU/homeodomain transcription factor targeted by vestigial (Rodr\u00edguez D del \u00c1 et al., 2002), which is found specifically expressed in the pouch domain (Figure 2\u2014figure supplement 1a). An extended list of TFs and their target genes can be queried via SCope (https://scope.aertslab.org/#/WingAtlas/*/welcome), and is provided as a Supplementary file 2.\n\n### The wound site shows a strong JNK and JAK/STAT eGRN activity\n\nBoth \u03b1 and \u03b2 wound clusters are unique to the wounded disc and display markers of wound response at both gene expression and chromatin accessibility levels. These two clusters are associated to 3980 enhancers (DARs, see \u2018Materials and methods,\u2019 Supplementary file 3), among which 24% have been previously described as damage-responsive regulatory elements (Harris et al., 2020; Vizcaya-Molina et al., 2018), including the BRV118 locus (Gracia-Latorre et al., 2022; Figure 3\u2014figure supplement 1). Their signatures at the gene expression level also share enrichment for GO terms related to wound response and paracrine signaling (p-adj <10e\u20133).\n\nThe two wound clusters express high levels of stress-response genes, including ilp8 (Katsuyama et al., 2015), matrix metalloproteinase 1 (Mmp1; Harris et al., 2020), moladietz (mol; Khan et al., 2017), PDGF- and VEGF-related factor 1 (pvf1; Wu et al., 2009), and jun-related antigen/kayak (jra/kay, homologs of JUN and FOS, forming the AP-1 complex, involved in the JNK cascade); (Cosolo et al., 2019; Figure 1c and d), (p-adj <10e\u20133, log2FC > 1). The activity of the JNK pathway is further confirmed by a high and specific activity of the Jra/Kay eGRNs in the wound populations, at both gene expression and chromatin accessibility levels (Figure 3a). We also confirm the strong involvement of JAK/STAT as the eGRN of Signal-transducer and activator of transcription protein at 92E (Stat92E) is specifically active in the wound response clusters (Figure 3a), in agreement with the enrichment for the Stat92E binding motif in the wound-specific accessible regions (NES = 3.6) and the co-expression of the unpaired ligands (upd1/2/3, Figure 1c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig3-v2.jpg)\n\n**Figure 3.:** (a) Dotplot of the average gene-based (left) and region-based (right) activity of selected enhancer gene regulatory networks (eGRNs) with highest \u03b1 and/or \u03b2 specificity in wounded conditions. (b) Feature maps of six types of TF motifs on regions specifically accessible in the wound populations \u03b1 and/or \u03b2. AP1 bindings are homogeneously present, while Stat92E and C/EBP motifs are specifically enriched in wound population \u03b1 and \u03b2, respectively. One region targeted by both AP1 and C/EBP GRNs regulates two genes with antagonistic \u03b1/\u03b2 expression patterns (mys and Gclc). (c) Scatterplot of the relative changes in target gene expression and chromatin accessibility for all enhancers targeted by the C/EBP eGRNS (vri, Irbp18, Xrp1, slbo). We note the presence of the CEBP-TEAD dimer motif in regions strongly upregulated in \u03b2. (d) Wing disc immunostaining (left) and normalized average expression of three wound marker genes and a proliferation marker (CycE, right). Both \u03b1 and \u03b2 marker genes are expressed and localized at the wound site. (e) Expression change of Xrp1 eGRN target genes following Xrp1 overexpression, we note the strong upregulation of the Unpaired ligands.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Aggregated wild-type, wounded and rasV12scrib-/- chromatin accessibility signals around the BRV118 regulatory region (chr2L:7324275\u20137327234) and the AP-1 eGRN target genes Wnt6 and wg. The BRV118 region overlaps with three enhancer gene regulatory network (eGRN) enhancers that belong to the signature regions of the wound (pink rectangles) and the rasV12scrib-/- tumor models (green rectangles). Orange arcs represent region-to-gene edges inferred from eGRN analysis.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Expression pattern of marker genes across wound populations from our study (\u03b1 and \u03b2) and Worley et al. study. (b) Integrated wound atlas UMAP. Dark color clusters represent annotated wound populations from our study (\u03b1 and \u03b2) and Worley et al. study (blastema 1 and 2). Both blastema populations overlap with the proliferative population \u03b1.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Feature maps of six types of TF motifs on enhancers targeted by the C/EBP-like enhancer gene regulatory networks (eGRNS). AP-1 bindings are homogeneously present, while C/EBP-TEAD motifs are enriched in targets with higher activity in \u03b2 compared to \u03b1. (b) Example targets regions (lozenges) and genes (ellipses) of eGRNs active in the wound populations \u03b1 (left, kay and crc) and \u03b2 (right, kay and the Irbp18 partner Xrp1). Represented targets are the highest-scoring markers of each wound population. (c) Aggregated wild-type, wounded and rasV12scrib-/- chromatin accessibility signals around a target enhancer and a target gene (CG13024) of the C/EBP eGRNs. This enhancer comprises a C/EBP-TEAD dimer motif hit as shown in the first panel (purple triangle). Orange arcs represent region-to-gene edges and green rectangles represent the signature regions of the rasV12scrib-/- tumor model.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Tested gene sets correspond to (a) Reactome Pathway Database (Cellular Senescence pathway and related subsets), (b) markers from wound \u03b1 and \u03b2 populations, and (c) target genes inferred from enhancer gene regulatory networks (eGRNs) and associated TF binding motifs. All gene sets are significantly enriched (p-adj < 10e\u20133) with the exception of the Oxidative Stress Induced Senescence (Ind. S.) and the Oncogene Induced Senescence (NES = 0.49, p-adj=0.8, not shown).\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Wing disc immunostaining for overlapped and individual channel views as shown in Figure 1d and Figure 3d.\n\nOther transcription factors with induced eGRN activity in both wound clusters include the Cyclic-AMP response element binding protein A (CrebA, CREB3L2 ortholog, involved in resistance to infection), Cap'n'collar (Cnc, Nrf1/2 ortholog, involved in oxidative stress response), and Cryptocephal (Crc, ATF4 ortholog, involved in unfolded protein response) (Figure 3a), three basic-leucine zipper (bZip) TFs known to be involved in stress response (Brock et al., 2017; Brown et al., 2021; Ragheb et al., 2017; Sorge et al., 2020; Sykiotis and Bohmann, 2008; Troha et al., 2018). Interestingly, we note an additional upregulation of both Stat92E and AP-1 eGRN activity in the peripodial epithelium (PE) of the wounded disc (Figure 3a). Although the PE was not directly targeted by the genetic ablation, this domain is in close proximity with the pouch territory in wild-type wing discs (Figure 1a). We therefore hypothesized that stress signaling is capable of local diffusion across epithelial layers. We further identified a JAK/STAT repressor apontic (apt), to be specifically expressed in the peripodial epithelium in wounded conditions (p-adj < 10e\u20133, log2FC > 1). This finding supports a protective role of Apontic to block a response to Stat92E proliferative signaling in the vicinity of wounded tissues (Harris et al., 2020).\n\nTaken together, our results highlight JNK and JAK/STAT as the most prominent markers of the global wound response program, shared by the two cell populations \u03b1 and \u03b2. AP1 is the largest inferred wound eGRN (470 target genes, 689 target regions) and its binding motifs (CRE : TRE variants, Fonseca et al., 2019) are strongly enriched in DARs from both wound populations \u03b1 an \u03b2 (Figure 3b).\n\n### Proliferative and senescence signals separate the \u03b1 and \u03b2 populations\n\nIn the wound samples, we expect the rn-expressing pouch cells to be almost entirely lost upon apoptosis from the rn-Gal4 induction. However, we find persistent rn-positive cells in the wound cluster \u03b1 (p-adj < 10e\u20133, log2FC > 2) that are excluded from cluster \u03b2 (p-adj\u03b1/\u03b2 < 10e\u20133, log2FC\u03b1/\u03b2 > 2). These cells are distinct from the normal rn-positive pouch cells though as they also show stress response markers. We further observe an upregulation of markers of tissue patterning and proliferation in cluster \u03b1 relative to cluster \u03b2, like wingless (wg), Wnt oncogene analog 6 (Wnt6) (Figure 1c, p-adj\u03b1/\u03b2 < 10e\u20133, log2FC\u03b1/\u03b2 > 1) and CyclinE (CycE) (Figure 3d, log2FC\u03b1/\u03b2 > 0.8). Consistent with the higher enhancer activity of the Stat92E eGRN in wound \u03b1 compared to \u03b2 (Figure 3a and b), we find a significant overlap between the \u03b1 marker genes and a study that identified JAK/STAT as coordinating cell proliferation during wing disc regeneration (GSEA, NES = 1.292) (Katsuyama et al., 2015). We also find evidence for an upregulation of the pro-regenerative marker Ets at 21C (Ets21C) (Worley et al., 2022), with a combined enrichment of its gene expression (p-adj < 10e\u20133, log2FC > 8) and an enrichment of the Ets21C binding motif in cluster \u03b1 (cistarget, NES = 3.35). In line with Ets21C upregulation, we integrated our data with the study from Worley et al., 2022 that focused on disc regeneration and found strong similarities between their reported regenerative blastemas and our wound population \u03b1 (Figure 3\u2014figure supplement 2). These results demonstrate that pro-proliferative and pro-regenerative characteristics are specific to the \u03b1 population in the wound.\n\nIn contrast, cells from cluster \u03b2 do not show clear proliferative nor regeneration markers. Genes found upregulated in \u03b2 compared to \u03b1 include genes associated with innate immunity (Dorsal-related immunity factor), glutathione metabolism (Glutamate-cysteine ligase catalytic subunit, Glutathione S transferase D9)(p-adj\u03b2/\u03b1<10e\u20133, log2FC\u03b2/\u03b1 > 2), cell migration signaling (e.g rho1, slow border and pvf1, p-adj <10e\u20133), response to irradiation (e.g. inverted repeat-binding protein, p-adj <10e\u20133) and negative regulation of cell cycle (e.g. growth arrest and DNA damage-inducible 45, tribbles). Among these markers, tribbles (trbl) and slow border cells (slbo) encode a known repressor and a target of the JAK/STAT pathway in border cell migration, respectively (Berez et al., 2020; Dobens et al., 2021; Harris et al., 2020; R\u00f8rth et al., 2000; Starz-Gaiano et al., 2008). The cells expressing these markers are located at the center of the wounded pouch, despite their lack of pouch-specification markers (Figure 3d). These results suggest that cluster \u03b2 contains cells derived from the wild-type, rn-expressing domain that have de-differentiated and hence no longer express wing disc markers.\n\nIn addition to their loss of wing fate, the cells from cluster \u03b2 show interesting similarities with cellular senescence. Indeed, a recent study in wounded wing imaginal discs associate the emergence of senescent-like cells with the presence of markers of stress-response (jra, kay), DNA-damage response (gadd45), paracrine signaling (pvf1), and cell cycle stalling (trbl), as observed in our population \u03b2 (Cosolo et al., 2019; Jaiswal et al., 2022). Precisely, one marker of our cluster \u03b2 population, tribbles (trbl), was found to be partly responsible for cell cycle stalling in wounded cells. Nevertheless, it still remains unclear whether these wounded cells will later die or whether they will revert to the pouch disc fate after wounding (Jaiswal et al., 2022). Hence, we refer here to cellular senescence and associated secretory phenotype in terms of gene expression programs rather than evidence of a terminal cell cycle arrest. The slbo expression in population \u03b2 further corroborates the proximity with senescence-associated secretory phenotype (SASP) as slbo is homologous to the human C/EBPB homodimer, a major mediator of oncogene-induced senescence (Kuilman et al., 2008; Lee et al., 2010a; Lee et al., 2010b; Reactome ID R-DME-2559582). Together with the lack of pouch markers, our results suggest that wound-response population \u03b2 corresponds to cells that have lost their initial pouch fate, arrested cycling and express classical senescence markers.\n\n### The senescent population is characterized by C/EBP eGRN activity\n\nBy examining eGRN activities, we find several TFs with a strong specificity score for the senescent population (\u03b2), namely the heterodimer partners inverted repeat binding protein 18 kDa (irbp18) and xrp1, slbo, vrille (vri), and sox box protein 14 (sox14) (top 6% RSS, Figure 3a). Among them, the two bZip TFs irbp18 and vri are significantly upregulated in the senescent population compared to the proliferative population (\u03b1) (p-adj <2 * 10e\u20133, log2FC\u03b2/\u03b1>2.4) and share similarities in their TF binding motifs with the mammalian, senescence-associated C/EBP proteins (Figure 3b; Blanco et al., 2020). The Irbp18 eGRN (extended category, see method) is composed of 149 predicted target regions (80 wound-specific and 11 senescent-specific regions) and 116 target genes (52 markers of senescent population, p-adj <5 * 10e\u20133, log2FC > 1.5) including slbo, vri, ets at 98B (ets98B), socs36E, head involution defective (hid), growth arrest and DNA damage-inducible 45 (gadd45) and p53. The presence of these TFs in the senescent cluster (\u03b2) is further corroborated by the significant enrichment for C/EBPB-like binding motifs in senescent-specific peaks (NES = 5.25, Figure 3b and c) generated using MACS2 bdgdiff (Zhang et al., 2008a).\n\nOur eGRN approach has an important limitation, namely that TFs can be identified only if their expression co-varies with chromatin accessibility and target gene expression. A key TF that remains undetected in the eGRN approach is Scalloped (Sd). This homolog of mammalian TEAD factors is the effector TF of the Hippo signaling pathway (Zhang et al., 2008b). Despite the absence of Sd mRNA upregulation, nuclear Sd protein may increase in the senescent population since we find a significant enrichment for the Sd motif in the senescent-specific accessible regions (NES = 4.89). In fact, the top enriched motif in these senescent-specific regions is a C/EBP-TEAD dimer motif (NES = 7.48, Figure 3c), notably found in the enhancer of CG13024, a strong marker of both senescent and rasV12 scrib-/- cells (Figure 3\u2014figure supplement 3, see next section).\n\nOur results suggest that the eGRN activity of C/EBP orthologs, such as the Irbp18-Xrp1 heterodimer, is a strong marker of cellular senescence. To confirm the activity of C/EBP eGRNs in our wound populations, we used bulk RNA sequencing to compare gene expression changes induced by a tem\n\nporal overexpression of the short Xrp1 isoform (Xrp1-S) in the developing wing imaginal discs using rnts >driver (rnts >Xrp1S) in comparison to control discs (rnts>crossed to w1118; see \u2018Materials and methods\u2019). The 200 significantly upregulated genes (DEseq2, logFC > 1.5, p-adj < 5.10e\u20133) in response to Xrp1 overexpression were strongly enriched for markers of cellular senescence (Reactome Pathway Database, Gillespie et al., 2022) and \u03b1 and \u03b2 wound populations. As an additional validation of our eGRN construction, we also find the inferred target gene sets of C/EBP eGRNs significantly enriched among the upregulated genes (Figure 3e, Figure 3\u2014figure supplement 4).\n\nGiven that these eGRNs target multiple markers of cell migration, cell cycle stalling, and DNA damage response, we hypothesize that C/EBP signaling may be responsible for establishing a state of cellular senescence in the wound vicinity. By transiently escaping cell death, such cells play an essential role in stress response induction and may serve as a \u2018flagship\u2019 population to lead the regenerative cells toward wound closure (Cosolo et al., 2019; Kozyrska et al., 2022). The list of all significant marker genes for both wound populations is available in the Supplementary file 4.\n\n### Shared regulatory programs between wound response and cancer\n\nMultiple pathways associated with senescence, such as JNK and JAK/STAT, have been found to be associated with tumorigenesis when their activity becomes unrestricted (Atkins et al., 2016; Cosolo et al., 2019; Davie et al., 2015; La Fortezza et al., 2016; K\u00fclshammer et al., 2015; Pinal et al., 2019; Uhlirova and Bohmann, 2006). One oncogenic system widely used is the rasV12scrib-/- tumor model (Brumby and Richardson, 2003), where the scribble-/- (scrib-/-) mutation causes epithelial cells to lose polarity, while overexpression of ras85DV12 (rasV12) prevents them from being outcompeted (Figure 4a). The constant stress caused by tissue disorganization, combined with the reduction of apoptosis, leads to an overgrown population of cells in the eye-antennal disc (Atkins et al., 2016; Davie et al., 2015; K\u00fclshammer and Uhlirova, 2013), described as aberrant senescence (Cosolo et al., 2019; Rhinn et al., 2019). In order to compare the senescent state (\u03b2) observed in our transient wound model with tumor overgrowth, we performed scRNA-seq of rasV12scrib-/- eye-antennal discs (6717 cells). We combined this dataset with publicly available scRNA-seq data on wild-type eye-antennal discs (Bravo Gonz\u00e1lez-Blas et al., 2020) (4830 cells), scRNA-seq data on 14-day scrib-/- imaginal wing discs (Deng et al., 2019; Ji et al., 2019) (7554 cells), and bulk ATAC-seq data from rasV12scrib-/- tumors (Davie et al., 2015). Altogether, these datasets allowed us to compare wound response programs across different model systems (eye and wing discs), regulatory layers (RNA and ATAC), and conditions (following wound induction and during persistent oncogenic induction). In this context, we believe the cell-of-origin has minor to no effect, given that previous RNA-seq experiments performed in rasV12scrib-/- eye, antennal, wing, and leg discs showed strong overlap of ectopically expressed genes (Atkins et al., 2016). This was also confirmed by recent in vivo experiments showing similar marker gene expression in the rasV12scrib-/- models of both eye-antennal and wing imaginal discs (Jaiswal et al., 2022).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig4-v2.jpg)\n\n**Figure 4.:** (a) Top: schematic of the imaginal wing and eye-antennal discs. bottom. Genetic constructs used to trigger localized, transient, or persistent wounding. (b) Left: example of a wound-responsive locus: aggregated (WID) and bulk (EAD) chromatin accessibility signals in wild-type and wound conditions at Ets21C loci, including an AP-1 target region (TF motif). right. Distribution of ATAC measures in rasV12scrib-/- region signature; asterisks denote significant enrichment compared to wild-type. (c) Integrated wound atlas UMAP. Dark color clusters are enriched in wound cells. We detect our populations \u03b1 and \u03b2 from the egr wound and two additional rasV12scrib-/- and scrib-/- wound populations. (d) Distribution of RNA measures in wound \u03b1 and \u03b2 gene signature; asterisks denote significant enrichment compared to wild-type. (e) Scatter plot of the mean expression fold-change of gene sets extracted from eGRN, GO, marker genes (rasV12scrib-/- and scrib-/-), and \u03b2-specific regions with CEBP or CEBP-TEAD motifs hits (target genes inferred from the CEBP eGRNS). Fold-changes are contrasting gene expression changes between (x) wound population \u03b1 and \u03b2 and (y) between wild-type pouch domain and wound \u03b1. All elements are significantly up- or downregulated in at least one axis (p-adj < 5*10e\u20133, paired t-test, Bonferroni corrected).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Scaled activity of the rasV12scrib-/- signature inferred from bulk ATAC data, scored using AUCell on wing disc ATAC data. (b) Distribution of gene expression measures of the gene signatures from wound \u03b1 and \u03b2 contrasted against each other across aggregated signals, asterisks (p-adj < 10e\u20133) and star (p-adj < 5*10e\u20133) denote significant enrichment compared to wild-type (one-tailed t-test). We note a higher accessibility of wound \u03b2 signature in the rasV12scrib-/- ATAC signal. We also find a high accessibility of wound \u03b1 signature in wild-type pouch ATAC signals, indicative of pouch specification markers present in this signature. (c) Results of the differential analysis of scRNA signal in Transposable Element regions (p-adj < 10e\u20133, log2FC > 1). We do not find a strong global change in TE signal between wild-type and wounded conditions. However, we note a clear increase in scRNA signal in the population \u03b2 for the Invader4_I-int retrotransposon. (d) Activity of the grainyhead TF and its enhancer gene regulatory network (eGRN)-associated target genes in wounded and wild-type conditions.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81173/elife-81173-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) Integrated UMAP of rasV12scrib-/- tumor and wound \u03b1 and \u03b2 populations. (b) Expression pattern of differentially expressed genes (p-adj < 10e\u20133, log2FC > 1.5) listed as leading edges of the Cellular Senescence gene set in Xrp1 overexpression analysis. The ras_1 subpopulation mostly includes cells from the late tumor sample. (c) Expression pattern of differentially expressed genes (p-adj < 10e\u20133, log2FC > 1.5) listed as leading edges of the CEBP target gene set in Xrp1 overexpression analysis. (d) Expression patterns of marker genes from wound population \u03b2 and blastema populations from Worley et al.\n\nWe first characterized regions specifically accessible in the rasV12scrib-/- model compared to wild-type eye discs (Figure 4b). In agreement with Davie et al., 2015 this signature is enriched for the binding motifs of Stat92E (NES = 4.19) and AP-1 (NES = 7.17). Looking at pseudo-bulk ATAC aggregate wing disc data, we noted a significant enrichment for the rasV12scrib-/- signature regions for both proliferative (\u03b1) and senescent (\u03b2) wound populations in contrast to wild-type pouch cells (p-adj < 10e\u20133, one-tailed t-test, Figure 4b). In line with the observed AP-1 and Stat92E activity in wounded peripodial epithelium, we also find the rasV12scrib-/- signature enriched in this domain (Figure 4\u2014figure supplement 1a). These similar chromatin accessibility profiles between wound and tumor populations suggest at least part of the rasV12scrib-/- cells also activate the senescence and proliferative programs.\n\nWe further investigated the similarities with oncogenic induction at the gene expression level by integrating all single-cell RNA datasets into a combined, batch-corrected, analysis (44,759 cells, see \u2018Materials and methods\u2019). For each oncogenic model (rasV12scrib-/- and scrib-/-), we detect a tumor-specific cluster, mostly composed of cells originating from samples with induced tumorigenesis (Figure 4c). This analysis reveals a co-clustering of the senescent wound cells (\u03b2) with rasV12scrib-/- and scrib-/- cells (Figure 4c). We confirm the similarity in gene expression patterns between oncogenic models and both wound populations by computing the activity of the proliferative and senescent signatures (\u03b1 and \u03b2 relative to control pouch) in wild-type and oncogenic conditions (Figure 4d). We find both signatures to be upregulated, with the strongest increase in gene expression between wild-type and the two oncogenic models for the senescent signature (p-adj < 10e\u20133, one-tailed t-test, Figure 4d). We find a similar result for signatures contrasting the proliferative and senescent populations against each other (\u03b1 vs. \u03b2), further supporting the closest resemblance between the chronic oncogenic response and senescent population (Figure 4e, Figure 4\u2014figure supplement 1b).\n\nUnlike the wound response, we do not observe two distinct proliferative-like and senescent-like cell populations in tumors. Instead, the tumor population seems to activate both pro-proliferative and pro-senescence programs in an aberrant combination. To further explore cellular heterogeneity in rasV12scrib-/- tumors, we performed a sub-clustering analysis and detected four tumor subpopulations, delimited by the expression gradient of several markers of wound \u03b2 and C/EBP targets genes such as Gadd45 and CG13024 (Figure 4\u2014figure supplement 2, Supplementary file 5). We also found cellular senescence markers, including 6 of the 10 leading edge genes detected in the Xrp1 overexpression GSEA. Despite higher noise levels in the tumor clustering analysis, the detected cellular heterogeneity in rasV12scrib-/- tumors would corroborate the results from a recent study by Jaiswal et al., 2022, which depicts the emergence of cellular heterogeneity in early-stage rasV12scrib-/- tumors via a JNK/STAT regulatory feedback loop (Jaiswal et al., 2022). Our results suggest that the tumor and senescent populations de-differentiated from their original state (eye or wing discs) toward a similar senescent-like wound-response program, although we cannot clearly distinguish the specific activity of \u03b1 and \u03b2 signatures in distinct tumor clusters.\n\n## Discussion\n\nIn this study, we used several wound paradigms from Drosophila imaginal discs, both transient (following normal wounding) and persistent (continuous wound induction during tumor formation), to describe the mechanisms coordinating stress response. We constructed eGRNs from single-cell ATAC and RNA data, assigning TFs to their inferred regulatory target genes and target enhancer regions. Using this new eGRN viewpoint, we found two distinct populations respectively displaying proliferative (\u03b1) and senescent (\u03b2) properties. Both populations share a common wound response program, comprising JNK and JAK/STAT signaling. Yet, the senescent cells display an additional activation of DNA damage, paracrine signaling, and stress mitigation pathways (glutathione metabolism, FC\u03b1/\u03b2 > 1.8) that is distinct from the proliferative cells. In agreement with a possible de-differentiation process, TFs associated with pouch fate specification are also downregulated in senescent cells (Distal-less, blistered, engrailed). Concurrently, the senescence markers co-vary with C/EBP-like eGRN activity and the oncogenic signatures (rasV12scrib-/- and scrib-/-, top 100 target genes, Figure 4e). Taken together, these results highlight a common response program, shared by all wound populations and rasV12scrib-/- cancer cells (JNK, JAK/STAT), and an additional senescent-like program driven by C/EBP-like TFs that is shared between the senescent population and the tumorigenesis paradigms. To our knowledge, this study presents the first depiction of the senescence phenotype at the single cell multiomic level (scRNA+scATAC). We believe our characterized gene and enhancer signatures will help pave the way toward a universal marker set of senescence, which is currently outstanding (Cohn et al., 2023; Gorgoulis et al., 2019). Using these single-cell senescent profiles along with their eGRN signatures, we can already show here a close proximity between the senescence phenotype and oncogenic programs, mostly due to the shared upregulation of C/EBP transcription factors activity.\n\nThe persistent wound paradigm (e.g. rasV12scrib-/-) causes uncontrolled neoplastic growth and has previously been referred to as a tumor model (Dillard et al., 2021; Mirzoyan et al., 2019). In this study, we found tumor programs to be highly similar to the senescent-like cell population emerging following a transient wound. These findings corroborate the growing set of evidence suggesting a large overlap between the hallmarks of tumor and wound response (MacCarthy-Morrogh and Martin, 2020). From this perspective, we can see a tumor paradigm as a wound that never heals, where the failure to arrest cell proliferation would prevent the damaged cells to fully resorb.\n\nThe senescent phenotype has been extensively studied, notably in the context of wound repair (Demaria et al., 2014; Rhinn et al., 2019; Wilkinson and Hardman, 2020). It is defined as a state of arrested cell proliferation, combined with a strong paracrine signaling activity (SASP) promoting stress-response signaling and partly mediated by CEBP/B activation. Recent studies further suggest a guiding role, where senescent cells lead the collective migration of proliferative cells toward wound closure, where they are then discarded through mechanical competition (\u00c1lvarez-Fern\u00e1ndez et al., 2015; Kozyrska et al., 2022; Tsai et al., 2018).\n\nThe mechanism mediating the clearance of senescent cells is critical to prevent the persistence of stress signaling, as observed in tumor models (Baumgartner et al., 2021; Kozyrska et al., 2022; Pinal et al., 2019). In line with the hypothesis of competition-mediated clearance of senescent cells (Kozyrska et al., 2022), recent studies developed the importance of C/EBP in stress response and cell competition, although no clear consensus currently exists regarding its type of action (promoting or inhibiting growth and survival) (Baillon et al., 2018; Blanco et al., 2020; Boulan et al., 2019; Brown et al., 2021; Huggins et al., 2015; Lee et al., 2018; Logeay et al., 2022). Given the ambivalent needs for senescent cells to firstly survive a strong apoptotic signal (ablation) and secondly get discarded through competition (closure), we believe that further investigations of the C/EBP-mediated regulation of apoptosis susceptibility will be of high interest. Following this hypothesis, failure to arrest SASP signaling through senescent cell clearance would promote overproliferation in persistent oncogenic induction. This idea of competition-mediated clearance is supported by several studies showing that polarity sensing mutants (e.g. scrib-/-) would overproliferate when present as a homogeneous population, but would be cleared within a crowd of wild-type cells (Ballesteros-Arias et al., 2014; Brumby and Richardson, 2003; Pinal et al., 2019).\n\nThe mechanism governing the sporadic emergence and persistence of senescent cells at the wound site is still unclear. Previously it was shown that the DNA damage-responsive TF p53 and cell cycle stalling cooperate to trigger cellular senescence (Kozyrska et al., 2022). Such stalling has also been reported in the Drosophila wound model, where it is mediated by AP-1 and involves tribbles (Cosolo et al., 2019), two markers of our senescent population. The authors further highlight that JNK activity is protecting the damaged, senescent cells from competition as long as they do not resume cycling. Two other studies have also demonstrated the role of a positive feedback loop via moladietz (marker of our proliferative population \u03b1) to sustain JNK activity in the senescent cells after wounding (Khan et al., 2017; Pinal et al., 2018). Additional studies suggest the action of microRNAs (Bilak et al., 2014) and transposable elements (TE) (Azpiazu and Morata, 2022; Colombo et al., 2018) to induce cell senescence via chromatin remodeling pathways. In line with this hypothesis, we find specific expression of the retrotransposons TAHRE and Invader4 in the wound populations (p-adj < 10e\u20133, log2FC > 1, Figure 4\u2014figure supplement 1c), although further investigation would be necessary to fully characterize this TE-mediated response.\n\nWe do not detect a strong signal for the signature of several TFs that have been previously suggested to play a role in the wound response, such as p53. Indeed, we do not find evidence for the activity of p53 eGRN at the chromatin level (Jacobs et al., 2018), even in the senescent population where it is present as a C/EBP target gene (Figure 3\u2014figure supplement 3a). This is also not the case for Grainyhead, which is involved in ERK signaling and epithelial barrier repair (Mace et al., 2005), but is not upregulated in the wound response state (Figure 4\u2014figure supplement 1d). The Hippo pathway (pro-proliferative and pro-invasive in rasV12scrib-/-) is also not detected as a wound signature in our rn-egr model, although we find an enrichment of its effector\u2019s motif, Scalloped, in the senescent wound population. The presence of sd is consistent with the reported cooperation of its human ortholog, TEAD, with AP-1 in invasive mesenchymal-like cells (Verfaillie et al., 2015; Zanconato et al., 2015).\n\nBased on the eGRN signatures, our results indicate that the wound population \u03b2, marked by high paracrine and DNA-damage signaling, corresponds to a senescent cell type. Our data supports a model in which these senescent cells are capable of surviving apoptotic signals by cell-cycle stalling, and then further guide the migration and growth of the pro-regenerative population (\u03b1) via its strong secretory phenotype, notably targets of the JNK pathway (i.e. presence of Wg and Upd family ligands; La Marca and Richardson, 2020). The significant similarity between senescent cells and rasV12scrib-/- cells suggests that they share the same regulatory wound programs, highlighting the fact that mechanisms present in oncogenic induction may already be active in a genetically wild-type context. Nevertheless, our current data do not capture clear cellular heterogeneity in rasV12scrib-/- model, as observed in the wound data, and are inconclusive of whether the \u03b1 and \u03b2 signatures are activated in distinct populations or in an aberrant combination in tumor cells. A recent study from Jaiswal et al., 2022 observed different spatial patterns of markers at the wound site in the rasV12scrib-/- model. These populations arise after a persistent activity of a JNK/STAT regulatory network that stratifies signaling activity and cell behavior around the wound site, analogous to morphogen gradient fields in development. Their hypothesis of a wound organizer and supporting senescent marker stainings agrees with our observation of senescent cells being at the center of the wound, while representing a gradient of senescent marker activity in the rasV12scrib-/- tumor.\n\nGiven the preponderance of the C/EBP eGRNs we observe in tumor paradigms, we believe that further characterization of their signaling pathways and experimental validation of their predicted gene and enhancer targets will help to study the biology of cancer. Regarding TF cooperation events, multiple bZip TFs present in our study are conserved in the mammalian inflammatory pathways and are capable of forming heterodimers (Blanco et al., 2020; Deppmann et al., 2006; Deppmann et al., 2006; Huggins et al., 2015; Newton and Dixit, 2012; Shokri et al., 2019). Notably, a recent study in YAP/TAZ-bound regions upregulated in breast cancer has detected an increased binding co-occurrence for the orthologs of our key regulatory TFs: AP-1, STAT3, C/EBP, and TEAD (Jra, kay, Stat92E, Sd, Irbp18, slbo) (He et al., 2021b).\n\n## Materials and methods\n\n### Fly genotypes\n\nThe following fly stocks were used for rasV12, scrib-/- experiments: y,w,eyFlp; act>y +> Gal4, UAS-GFP/UAS-RasV12; FRT82 tub-Gal80/FRT82 scrib-,e. The fly stocks for egr experiments are w1118; +; rn-Gal4, UAS-eiger, tub-Gal80ts/TM6B. The fly stocks for Xrp1 experiments are w1118; w; UAS-Xrp1-S/TM6B (Boulan et al., 2019); w; UAS-mCD8-ChRFP; rn-Gal4, tub-Gal80ts/TM6B (Smith-Bolton et al., 2009, mCD8-ChRFP added in the Uhlirova Lab).\n\n### Genetic cell ablation using Gal4/UAS/Gal80ts\n\nTo induce expression of egr, experiments were carried out as described in Cosolo et al., 2019; La Fortezza et al., 2016; Smith-Bolton et al., 2009 with a few modifications. Briefly, larvae of genotype rn-Gal4, tub-Gal80ts and carrying the desired UAS-transgenes were staged with a 6 hr egg collection and raised at 18\u00b0C at a density of 50 larvae/vial. Overexpression of the TNF ligand egr transgene was induced by shifting the temperature to 30\u00b0C for 24 hr at day 7 after egg deposition and larvae were dissected right after. Imaginal wing discs were collected from wandering third-instar larvae in PBS and flash-frozen in liquid nitrogen.\n\n### Neoplastic growth induction using rasV12, scrib-/-\n\nFlies were raised at 25\u00b0C on a yeast-based medium under a 12 hr\u201312 hr day\u2013night light cycle. rasV12, scrib-/- early eye-antennal discs were dissected from wandering third-instar larvae (days 6\u20137) in PBS. rasV12, scrib-/- late were collected 4 d after larvae began wandering (days 10\u201311); this is possible because rasV12, scrib-/- do not pupate, but can persist more than 1 wk in a prolonged larval stage.\n\n### Xrp1 overexpression\n\nTo induce expression of UAS-based transgenes, control (rnts>; UAS-mCD8-ChRFP, rn-Gal4, tub-Gal80ts) and rnts >Xrp1S (UAS-mCD8-ChRFP, UAS-Xrp1-S, rn-Gal4, tub-Gal80ts) larvae were raised at 22\u00b0C and shifted to 29\u00b0C on day 7 AEL. Wing imaginal discs (120 WIDs for rnts>, 160 WIDs for rnts >Xrp1S) were dissected 48 hr later in PBS and flash-frozen in liquid nitrogen. Total RNA was isolated according to standard TRI Reagent protocol (Sigma-Aldrich, #T9424), followed by DNase I treatment (Invitrogen, #AM2238) and repurification as described in Mundorf and Uhlirova, 2016. RNA-seq libraries were prepared according to TruSeq stranded mRNA sample preparation guide (Illumina).\n\n### Immunohistochemistry\n\nWing discs from third-instar larvae were dissected and fixed for 15 min at room temperature in 4% paraformaldehyde in PBS. Washing steps were performed in PBS containing 0.1% TritonX-100 (PBT). Discs were then incubated with primary antibodies in PBT, gently mixing overnight at 4\u00b0C. Tissues were counterstained with DAPI (0.25 ng/\u00b5l, Sigma, D9542), Phalloidin-Alexa Fluor 488/647 (1:100, Life Technologies) or Phalloidin-conjugated TRITC (1:400, Sigma) during incubation with cross-absorbed secondary antibodies coupled to Alexa Fluorophores (Invitrogen or Abcam) at room temperature for 2 hr. The gstD-GFP is a GFP reporter under the control of 2.7 kB upstream regulatory region of GstD as published by Dirk Bohmann\u2019s lab (Sykiotis and Bohmann, 2008) and the Trbl GFP is a GFP-trap MIMIC line inserted in the intron of Trbl (Bloomington stock #61654). Tissues were mounted using SlowFade Gold Antifade (Invitrogen, S36936). Whenever possible, experimental and control discs were processed in the same vial and mounted on the same slides to ensure comparability in staining between different genotypes. Images were acquired using the Leica TCS SP8 Microscope, using the same confocal settings and processed using tools in Fiji. Per-channel views are shown in Figure 3\u2014figure supplement 5.\n\n### Sample and library preparation for single-cell gene expression\n\n#### Sample preparation\n\nEye-antennal discs or wing discs were dissected and transferred to a tube containing 100 \u00b5l ice-cold PBS. After centrifugation at 800 \u00d7 g for 5 min, the supernatant was replaced by 50 \u00b5l of dispase (3 mg/ml, Sigma-Aldrich_D4818-2mg) and 75 \u00b5l collagenase I (100 mg/ml, Invitrogen_17100-017). Discs were dissociated at 25\u00b0C in a Thermoshaker (Grant Bio PCMT) for 45 min at 25\u00b0C, 500 rpm. The enzymatic reaction was reinforced by pipette mixing every 15 min. Cells were washed with 1 ml ice-cold PBS and resuspended in 400 \u00b5l PBS supplemented with 0.04% BSA. Cell suspensions were passed through a 10 \u00b5M pluriStrainer (ImTec Diagnostics-435001050). Cell viability and concentration were assessed by the LUNA-FL Dual Fluorescence Cell Counter.\n\n#### Library preparation\n\nSingle-cell libraries were generated using the 10X Chromium Single-Cell Instrument and Single Cell 3\u2019 Gene Expression (GEX) kit according to the manufacturer\u2019s protocol. Briefly, single cells from eye-antennal discs or wing discs were suspended in 0.04% BSA-PBS. After generation of nanoliter-scale Gel bead-in-emulsions (GEMs), GEMs were reverse transcribed in a C1000 Touch Thermal Cycler (Bio-Rad) programmed at 53\u00b0C for 45 min, 85\u00b0C for 5 min, and hold at 4\u00b0C. After reverse transcription, single-cell droplets were broken and the single-strand cDNA was isolated and cleaned with Cleanup Mix containing DynaBeads (Thermo Fisher Scientific). cDNA was then amplified by PCR: 98\u00b0C for 3 min; 12 cycles of 98\u00b0C for 15 s, 67\u00b0C for 20 s, 72\u00b0C for 1 min; 72\u00b0C for 1 min; and hold at 4\u00b0C. Subsequently, the amplified cDNA was fragmented, end-repaired, A-tailed and index adaptor ligated, with SPRIselect cleanup in between steps. The final gene expression library was amplified by PCR: 98\u00b0C for 45 s; 14 cycles of 98\u00b0C for 20 s, 54\u00b0C for 30 s, 72\u00b0C for 20 s; 72\u00b0C for 1 min; and hold at 4\u00b0C. The sequencing-ready library was cleaned up with SPRIselect beads.\n\n#### Sequencing\n\nBefore sequencing, the fragment size of every library was analyzed using the Bioanalyzer high-sensitivity chip. All 10\u00d7 GEX libraries were sequenced HiSeq4000 or NovaSeq6000 instruments (Illumina) with the following sequencing parameters: 26 bp read 1\u20138 bp index 1 (i7) \u2013 98 or 75 bp read 2.\n\n### Sample and library preparation for 10\u00d7 single-nuclei multiome ATAC and gene expression\n\n#### Sample preparation\n\nControl and wounded wing discs were dissected and transferred to a tube containing ice-cold PBS. PBS was removed by centrifugation, tissues were flash frozen in liquid nitrogen and stored at \u201380\u00b0C. The following procedure was followed to extract the nuclei from the wing discs: resuspension in 500 \u00b5l nuclei lysis buffer comprising 10 mM Tris-HCl pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20, 0.1% Nonidet P40, 0.01% Digitonin, 1% BSA, 1 mM dithiothreitol, and 1 U/\u00b5l RNasin ribonuclease inhibitor (Promega) in nuclease-free water, incubation on ice for 5 min, transfer to a dounce tissue grinder tube (Merck), 25 strokes with pestle A, incubation on ice for 10 min, 25 strokes with pestle B. The lysis was stopped by added 1 ml of wash buffer composed of 10 mM Tris-HCl pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween 20, 1% BSA, 1 mM dithiothreitol, and 1 U/\u00b5l RNasin ribonuclease inhibitor in nuclease-free water. Nuclei were pelleted by centrifugation at 800 \u00d7 g for 5 min at 4\u00b0C and resuspended in a 1\u00d7 nuclei buffer (10X Genomics) supplemented with 1 mM dithiothreitol and 1 U/\u00b5l RNasin ribonuclease inhibitor. Nuclei suspensions were passed through a 40 \u00b5m Flowmi filter (VWR Bel-Art SP Scienceware). Nuclei concentration was assessed using the LUNA-FL Dual Fluorescence Cell Counter.\n\n#### Library preparation\n\nSingle-cell libraries were generated using the 10X Chromium Single-Cell Instrument and NextGEM Single Cell Multiome ATAC+Gene Expression kit (10X Genomics) according to the manufacturer\u2019s protocol. In brief, the single nuclei of wing discs were incubated for 60 min at 37\u00b0C with a transposase that fragments the DNA in open regions of the chromatin and adds adapter sequences to the ends of the DNA fragments. After generation of nanoliter-scale gel bead-in-emulsions (GEMs), GEMs were incubated in a C1000 Touch Thermal Cycler (Bio-Rad) under the following program: 37\u00b0C for 45 min, 25\u00b0C for 30 min, and hold at 4\u00b0C. Incubation of the GEMs produced 10\u00d7 barcoded DNA from the transposed DNA (for ATAC) and 10\u00d7 barcoded, full-length cDNA from poly-adenylated mRNA (for GEX). This was followed by a quenching step that stopped the reaction. After quenching, single-cell droplets were broken and the transposed DNA and full-length cDNA were isolated using Cleanup Mix containing Silane Dynabeads. To fill gaps and generate sufficient mass for library construction, the transposed DNA and cDNA were amplified via PCR: 72\u00b0C for 5 min; 98\u00b0C for 3 min; seven cycles of 98\u00b0C for 20 s, 63\u00b0C for 30 s, 72\u00b0C for 1 min; 72\u00b0C for 1 min; and hold at 4\u00b0C. The pre-amplified product was used as input for both ATAC library construction and cDNA amplification for gene expression library construction. Illumina P7 sequence and a sample index were added to the single-strand DNA during ATAC library construction via PCR: 98\u00b0C for 45 s; 7\u20139 cycles of 98\u00b0C for 20 s, 67\u00b0C for 30 s, 72\u00b0C for 20 s; 72\u00b0C for 1 min; and hold at 4\u00b0C. The sequencing-ready ATAC library was cleaned up with SPRIselect beads (Beckman Coulter). Barcoded, full-length pre-amplified cDNA was further amplified via PCR: 98\u00b0C for 3 min; 6\u20139 cycles of 98\u00b0C for 15 s, 63\u00b0C for 20 s, 72\u00b0C for 1 min; 72\u00b0C for 1 min; and hold at 4\u00b0C. Subsequently, the amplified cDNA was fragmented, end-repaired, A-tailed, and index adaptor ligated, with SPRIselect cleanup in between steps. The final gene expression library was amplified by PCR: 98\u00b0C for 45 s; 5\u201316 cycles of 98\u00b0C for 20 s, 54\u00b0C for 30 s, 72\u00b0C for 20 s, 72\u00b0C for 1 min; and hold at 4\u00b0C. The sequencing-ready GEX library was cleaned up with SPRIselect beads.\n\n#### Sequencing\n\nBefore sequencing, the fragment size of every library was analyzed using the Bioanalyzer high-sensitivity chip. All 10\u00d7 Multiome ATAC libraries were sequenced on NovaSeq6000 instruments (Illumina) with the following sequencing parameters: 50 bp read 1\u20138 bp index 1 (i7) \u2013 16 bp index 2 (i5) \u2013 49 bp read 2. All 10\u00d7 Multiome GEX libraries were sequenced on NovaSeq6000 instruments with the following sequencing parameters: 28 bp read 1\u201310 bp index 1 (i7) \u2013 10 bp index 2 (i5) \u2013 75 bp read 2.\n\n### scATAC and scRNA read mapping\n\nAll the analyses performed in this study used the Drosophila melanogaster r6.35 (dm6) reference sequence and annotations. All single-cell datasets were (re)processed using CellRangerARC/1.0.1 and CellRanger/5.0.1 with default parameters for multiome and scRNA, respectively.\n\n### scRNA analysis\n\nWe analyzed the entire dataset with an in-house-developed NextFlow pipeline, named VSN (Flerin et al., 2021). VSN performs a standard scRNA analysis with best-practices workflow (Luecken and Theis, 2019), including the doublet filtering using scrublet (Wolock et al., 2019) and the correction for batch effects between the runs using Harmony (Korsunsky et al., 2019; Figure 1\u2014figure supplement 2a). scRNA data were processed with default parameters: minimum of 200 detected genes per cell, maximum of 15% signal of mitochondrial origin, minimum of 3 cells expressing any targeted genes. We additionally introduced the quality-check step from Everetts et al., 2021 to filter for low-quality cell abundance in the integrative analysis combining our runs together with public datasets. This filtering step consists in removing cell clusters with a mean number of detected genes lower than 1 SD below the global average. The clustering, UMAP, and tSNE resulting from the integrative analysis were computed on 50 principal components (PCs, selected with the pcacv module; Varmuza and Filzmoser, 2009) and a Leiden resolutions of 0.5 and 1.4 for the wild-type and wound (egr, rasV12, scrib-/-) atlas integrations, respectively. For the multiome-only analysis, clustering and wild-type annotations were derived from the wild-type integrated analysis. UMAP and tSNE were computed on 50 PCs. Detection of the wound subpopulations \u03b1 and \u03b2 was done on the same PC space, at a Leiden resolution of 1.3. Marker genes were detected on log-normalized counts using the standard scanpy rank_genes_groups module with default or more stringent parameters (Wolf et al., 2018; method = t-test_overestim_var, detailed values in the \u2018Results\u2019 section). Analysis of Transposable Element signal was done on the multiome data using scTE (He et al., 2021a) with identical preprocessing steps.\n\n### scATAC analysis\n\nThe analysis of chromatin profiles obtained from our three multiome runs was done using cisTopic (Bravo Gonz\u00e1lez-Blas et al., 2019). One critical step of this analysis is to confidently identify the cis-regulatory regions active in our system. To do so, we generated pseudo-bulk ATAC tracks by aggregating the sequencing outputs from cells with identical scRNA annotation together. For each track, we then define peaks as 500 bp regions centered around MACS2-called summits (Zhang et al., 2008a). The consensus peak set (CPS) of 41,387 regions, additionally filtered for repeat loci, is constructed via the Iterative Overlap Peak Merging Procedure (Corces et al., 2018). In addition to the scRNA-based cell filtering (see \u2018scRNA analysis\u2019 section), we filter the cells for three scATAC-based metrics: minimum number of fragment per cell of log10(3.5), minimum fraction of reads in CPS of 60%, minimum TSS enrichment of 2. Using the filter cell and the CPS to generate an input count matrix, we run cisTopic LDA and select the model with best topic coherence (n_topic = 76, Figure 1\u2014figure supplement 2e). We use the Harmony-corrected topic dimensions to compute tSNE and UMAP embeddings (Figure 1\u2014figure supplement 2f), which recapitulate the main scRNA cell types, despite a noticeable mixing of some clusters (e.g. direct and indirect AMPs are mixed and will be merged as a single annotation in the following analyses). The imputed accessibility scores are computed from the 76-topic model per cell for each detected enhancer region. This probability matrix serves as a proxy for chromatin accessibility in the GRN inference analysis, while limiting the impact of dropout values (see \u2018Materials and methods\u2019). The DARs are computed for each cell type and conditions using a Wilcoxon rank-sum test (p-adj<5 * 10e\u20133, log2FC > 1.5, mean 1770 DARs per cell type).\n\n### (pseudo)bulk ATAC analysis\n\nThe wound population \u03b2 does not form a clear cluster in the scATAC embeddings (Figure 1\u2014figure supplement 2d), which might indicate a non-optimal detection of their accessibility profile in the cistopic model (potentially due to low cell number). In order to maximize the detection of the accessibility profiles of wound population \u03b1 and \u03b2, we took advantage of the ATAC pseudo-bulk tracks generated previously and directly computed the DARs between \u03b1 and \u03b2 using the bdgdiff module from MACS2. We find 3980 regions accessible in both populations, 338 \u03b1-specific and 173 \u03b2-specific DARs (log-likelihood ratio > 1.5, maximum gap = 150, minimum length = 300). The feature maps presented in Figure 3b and Figure 3\u2014figure supplement 3a were obtained by scoring a group of six TF motifs on each of these regions using cluster-buster (Frith et al., 2003) with a minimum motif score of 6. Detailed region coordinates along with motif hit information can be found in the Supplementary file 6.\n\nThe bulk ATAC data from wild-type and rasV12scrib-/- eye-antennal discs was reprocessed similarly to the original study (Davie et al., 2015) with updated reference genome (dm6). Reads were mapped with Bowtie2, regions were called using MACS2 and DARs were detected via DESeq2. We obtain a signature of 4547 regions significantly more accessible in rasV12,scrib-/- conditions compared to wild-type (p-adj<5*10e\u20133, log2FC > 1.5). This signature overlaps 3236 regions from the CPS.\n\n### Bulk RNA analysis\n\nXrp1 overexpression data was mapped using STAR with default parameters and no multimapping reads (outFilterMultimapNmax = 1) on dm6 r6.35 reference genome (sjdbOverhang = 99, genomeSAindexNbases = 12). Gene counts were obtained using htseq-count with default parameters, and differential analysis was performed using DESeq2 (logFC > 1.5, p-adj < 5.10e\u20133). GSEA was performed with the R package {fgsea} on log2 fold-change ranking from all detected genes (4991 genes, default filtering on mean normalized count). Cellular senescence gene sets were extracted from ReactomeDB (R-DME-2559583), and full set and individual subsets were tested for enrichment.\n\n### eGRN inference\n\nThe computational pipeline used to infer eGRN is principally based on previous works from Bravo Gonz\u00e1lez-Blas et al., 2020 and Janssens et al., 2022 and can be summarized in three steps schematized in Figure 2a. In the first step, we apply cistarget to each of the DARs computed in the scATAC analysis (wild-type and wound, see \u2018Materials and methods\u2019) as well as the pseudo-bulk contrast between wound populations \u03b1 and \u03b2. We retain TF hits in each region of a set of DARs if the TF motif is overall significantly enriched in the set (NES > 3, rank threshold = 0.05, AUC threshold = 0.005, motif similarity FDR = 0.001, orthologous identity threshold = 0.6) and the motif is actually detected as a hit in the region of interest. The scoring database used for this step corresponds to the cisTarget motifs collection v9 (28,799 motifs), specifically re-scored on the CPS from this study (instead of the standard 131,324 candidate regulatory regions for fly i-cisTarget). To avoid issues with redundant motifs within the database (e.g. 14 motifs are associated with human JUND), we grouped similar motifs into a merged consensus prior to scoring. The final set of regions targeted by a specific TF is called a TF\u2019s cistrome. We obtained two categories of cistromes for each TF: a direct cistrome, solely retaining results from motifs with direct TF annotation, and an extended cistrome, including enrichment results from motifs passing the similarity or orthology threshold.\n\nIn the second step, we use the log-normalized gene expression and imputed accessibility signal from our multiome runs as input (for preprocessing, see \u2018Materials and methods\u2019). Using both views, we can calculate region-to-gene relationship using a nonlinear regression method. We compute both importance (Gradient Boosting Regression with arboreto) and correlation (Spearman) scores for all region-gene pairs having a distance between the region and the TSS within the range of 100\u201350k base pairs. In the third step, we extract similar importance and correlation scores as in step 2, this time contrasting the gene expression values between the TFs and target genes. For this step, we directly use the output derived from pyscenic analysis with default parameters included in the VSN pipeline (Van de Sande et al., 2020).\n\nLast but not least, the critical step required to finalize the eGRN inference is to prioritize the edges characterized in previous steps that have the highest probability to be functional. First, we dichotomize all edges into activating or repressing functional categories based on a Spearman\u2019s \u03c1 threshold of 0.03 (activating if \u03c1 > 0.03, repressing if \u03c1 < 0.03, other edges are discarded). Similar to the method from Aibar et al., 2017, we then generate sets of refined region-to-gene edges via multiple pruning methods based on importance scores. The methods used in this analysis are BASC binarization (Hopfensitz et al., 2012), quantiles (top 0.75, 0.80, 0.85, 0.90, and 0.95 quantiles for all regions associated with a given gene) and top highest importance (top 5, 10, and 15 regions associated with a given gene). From these sets of regions, we include specific TF information by associating a TF-to-region edge to each region present in one or multiple TF\u2019s cistrome, from both direct and extended categories (see cistaret analysis in step 1).\n\nThe fourth and last step of the GRN inference consists of pruning the resulting list of TF-to-region-to-gene edges based on the TF-to-gene importance ranking obtained from step 3. To do so, we retain the leading edges from a GSEA (Subramanian et al., 2005), taking the TF-to-gene importance from step 3 as ranking values and the target gene from step 1\u20132 as the tested gene set. Lastly, we unified all the leading region-to-gene edges from the same cistromes and functional category into a common eGRN. This way, for each TF, we preserve the distinction between activating, repressing, direct and extended eGRNs.\n\n### eGRN analysis\n\nHaving access to eGRN information allows us to further explore our multiome dataset. We can score an eGRN activity at the single-cell level for both gene expression and chromatin accessibility using the AUCell module from the SCENIC pipeline. An eGRN will have a high AUC score in a cell if its set of target genes and regions are overall ranking high in terms of gene expression and chromatin accessibility, respectively. To limit the impact of population size, we compute AUC scores on 150 pseudo-bulk cells from each cell type, each generated from a random selection of 15 cells for the same cell type. We define a set of high-quality eGRN by computing Pearson\u2019s correlation between TF expression and eGRN activity across the pseudo-bulk cells and retain the regulons with an absolute \u03c1 higher than 0.2. We additionally remove extended eGRN from the selection if the direct eGRN from the same TF is already present. The final list of eGRN comprises 98 TFs and 147 eGRNs, and is available in Supplementary file 2, along with correlation results.\n\nIn addition to pseudo-bulk, we also derived AUC scores from the full multiome dataset at single-cell level. These scores can be queried via the SCope platform (https://scope.aertslab.org/#/WingAtlas/*/welcome) and are shown as an example in Figure 2b. Using these AUC scores, we used the method presented in Suo et al., 2018 to compute an RSS for each eGRN. This RSS indicates whether the eGRN target gene and region sets are specifically active in one cell type (Figure 2\u2014figure supplement 1a). We retrieve the top-scoring eGRN for each cell type to build the Figure 2c (gene-based RSS) and Figure 3a (region-based RSS, NES scores retrieved from the cistarget analysis).\n",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "949dfa9b-1f43-402a-8d65-b344cf7c62e9",
+      "submission_id": "8ffad25a-c386-478d-9012-13f9960f16e5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Utpal Banerjee, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81173.sa0](https://doi.org/10.7554/eLife.81173.sa0)\n\nThis study is an important progression in our understanding of wounding response and its relationship to malignancy. Although this topic has been previously addressed in genetic studies, the use of a systems biology approach here provides compelling support for the dual use of regulatory sequences to achieve context dependence for two linked but non-redundant tasks. Investigators in the fields of gene regulation, developmental biology as well as basic cancer research will find this manuscript to be both important and useful.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Utpal Banerjee, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81173.sa1](https://doi.org/10.7554/eLife.81173.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"Shared enhancer gene regulatory networks between wound and oncogenic programs\" for peer review at eLife. Your article is being evaluated by 2 peer reviewers, and the evaluation is being overseen by Utpal Banerjee as the Senior Editor. The reviewers have opted to remain anonymous\n\nPlease take a careful look at the comments from the reviewers. As you will see, Reviewer 2's comments are probably easier to respond to (except for the wing vs eye disc origin question), but reviewer 3 considers the work preliminary and more importantly, points to a \"complete lack of validation\". This last issue could take months to resolve if you were to consider new experiments using mutants or markers.\n\nFinally, I completely agree with the reviewers that there are serious omissions in the citation of prior work. The Wnt6/Wnt1 shared enhancers, and particularly, a mention of and comparison with Hariharan's work that is pointed out by both reviewers is a major concern. Please check the paper for any others that may or may not have been pointed out.\n\nReviewer #1:\n\nUnderstanding the commonalities between gene regulatory signatures during the wound response and cancer is highly relevant for the study of cancer and regenerative biology. As such, this work will be of interest to a broad audience. Although the authors do not delve into functional validation of the GRNs they identify, providing a comprehensive integrated dataset encompassing data from several labs will be valuable for the field. Furthermore, this is the first report of single nucleus multiomic analysis of the wound response in the fly system, which allows the authors to devise a very useful workflow for mapping GRNs. We would therefore support publication in eLife, provided a few technical points are addressed and some corrections are made to the manuscript.\n\n1. Lines 395-4, the authors state: \"Yet, unlike the wound response, we do not observe two distinct proliferative-like and senescent-like cell populations in tumors.\"\n\nHowever, the cells in the tumor model (eye) are of a different origin than the regenerative dataset (wing). Can they exclude that the difference is due to the different origin of the cells?\n\n2. The Hariharan lab recently published a dataset using the same regeneration model, at a similar time point (40h versus 44h after eiger induction as far as we can see). In this manuscript, Worley et al. identify two populations of wound-specific cells, termed Blastema 1/2. To add value to their own work, the authors should integrate this dataset with their own and directly comment whether their clusters \u237a and \u03b2 correspond to Blastema 2 and 1, respectively, as seems likely to be the case. As the current manuscript's \u03b2 cluster is only composed of 94 cells, merging the datasets will also strengthen the analysis of this cluster. We don't think the authors need to be concerned at the overlap between the two datasets, as the focus of the manuscripts is different. Discussing the other manuscript and merging the datasets will be useful to the community.\n\n3. In Figure 4d, both the wound \u237a and \u03b2 populations appear to have an elevated proliferative signature compared to control pouch cells, but the authors state on line 289: \"In contrast, cells from cluster \u03b2 do not show clear proliferative nor regeneration markers.\"\n\nCan they resolve this apparent discrepancy?\n\n4. The authors should explain in the results what the left of Figure 4b is meant to illustrate. In general, this section is quite dense and difficult to follow, and would benefit from some editing.\n\n5. Lines 303-314: the authors list several SASP markers. As this is an important part of their work, could they produce a plot showing the increase of these markers in cluster \u03b2 compared with the other populations? Also, it would be good to validate at least one of these markers by staining or HCR on injured versus control wing discs.\n\nReviewer #2:\n\nThe strengths of the manuscript include the generation of large-scale single-cell data sets (including single-cell transcriptomics and scRNAseq+sc-ATAC-seq), and the comparative analysis of the genes and eGRNs utilized during wound healing and tumorigenesis. The authors identify enhancers that are cell type specific through sc-ATAC-seq. Based on known transcription factor binding motifs, the authors find an enrichment for binding sites from AP-1 and STAT in enhancers utilized during both wound healing and tumorigenesis.\n\nHowever, there are major weaknesses, including that the manuscript covers a large number of bioinformatic comparisons without almost any experimental validation within the wound or tumor models. In the few incidences where the authors show gene expression patterns within the wounded tissues, the images are not very convincing to identify the unique cell populations, and experimental validation is completely lacking from the tumor section. At multiple points in the paper, showing experimental evidence of the unique cell populations or enhancers within the wounded and/or tumor models would significantly advance the manuscript. In addition, the manuscript needs to improve placing the findings in a larger context within the field.\n\nThe comparisons between wounds and tumors that are made in this manuscript are of broad interest but many of the findings are still preliminary.\n\n1. The analysis of the wounded imaginal wing discs does show a consistent location of wound \u03b1 and wound \u03b2 cells. Where are these cells located? Trbl-GFP (Figure 3d) expression appears to be elevated in a ring around the wound, while upd3 (Figure 1d) is in the center of the wound. In addition, GstD9-GFP appears to be expressed within a similar number of cells as MMP1, which is not consistent with the dot plot on the right side of these images. One of the claims of the paper is that they have characterized senescent markers \u2013 however, it is not clear where these cells are located within the wounded model and no localization within the tumor models is shown.\n\n2. The word \"senescent\", which is used throughout the manuscript to describe the wound-\u03b2 cells, is intriguing but ultimately potentially misleading and preliminary. Senescent implies that a cell will never enter the cell cycle again. The EDU experiment shows a reduction of cells in S-phase within the center of the wound. However, this is not quantified, and the positions of the wound-\u03b1 and wound-\u03b2 cells are not shown. In addition, the use of the word senescent cellular state to describe a growing tumor model is also confusing, especially when the authors conclude that the cells are homogenous. If the cells of the tumor are homogenous and the tumor is growing through cell proliferation, then cells with an activated senescent-cellular program must also be actively dividing.\n\n3. Along similar lines, the paper strongly emphasizes the relationship between the cellular states activated within the wound and the cellular states within a tumor model. The major hypothesis from the bioinformatics should be investigated back in the tumor model. Are the two identified pathways (JNK/AP-1 and STAT) activated uniformly within the tumor model? If this GRN activates a cellular senescent-like program, and the cells within the tumors are in fact homogenous, then what mechanisms are driving the growth of the tumor? Recent work using single-cell data has highlighted the heterogeneity within scrib imaginal-disc tumors (eg. Deng et al., 2019; Ji et al., 2019; Worley et al., 2022). What do you think explains this difference between \"scrib\" vs \"rasV12+scrib\" cells? Are \"rasV12+scrib\" more homogenous than scrib alone? This statement would be greatly strengthened by visualizing co-expression of the \"proliferative\" or \"senescent-like\" pathways within these tumors to provide evidence that the rasV12 scrib-/- tumors are in fact co-activating and that the cells are homogenous.\n\n4. The manuscript does not properly acknowledge previous work on damage-responsive enhancers (e.g. the wg/Wnt6 enhancer described in Harris et al. 2016; and the enhancers identified using Bulk-ATAC-seq by Vizcaya-Molina et al. 2018 and Harris et al. 2020). How do the enhancers uncovered in this paper relate to the enhancers uncovered in this past work? For a resource paper, it would be valuable to make stronger connections to how this work connects to prior knowledge.\n\n5. Several points of this paper are similar to a single-cell study of regenerating imaginal discs that was recently published (Worley et al., 2022), including the comparison between wounded and developing tissues, as well as the comparison of damaged and tumorous tissues. How do the wound-\u03b1 and wound-\u03b2 relate to the identified blastema-1 and blastema-2 cell populations?\n\n6. The statement that the senescent eGRN is activated and driven by a group of transcription factors needs additional experimental evidence. Driven applies that one or more of these transcription factors (Irbp18, Xrp1, etc.) would be required for the activation of these enhancers, and/or that the overexpression of one of these transcription factors would be sufficient. Experimental evidence is currently absent.\n",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "db2fcc17-71bf-4474-bccf-e61b0bee722f",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C1",
+      "claim": "The Drosophila wing imaginal disc is composed of two epithelial cell layers: the peripodial epithelium and the disc proper, along with muscle precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "This larval primordium is composed of two epithelial cell layers, the peripodial epithelium and the disc proper, along with muscle precursors (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the composition of the wing imaginal disc structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "b8327aca-25a1-423e-8e2b-5e7b657aa62f",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C2",
+      "claim": "Damaged wing discs can trigger wound-response mechanisms allowing for disc repair and the formation of normal wings.",
+      "claim_type": "EXPLICIT",
+      "source": "Damaged wing discs can trigger a set of wound-response mechanisms allowing for disc repair and the formation of normal wings (Smith-Bolton, 2016; Tripathi and Irvine, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "c0d67b55-9048-48c5-abf7-b75af56ecff8",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C3",
+      "claim": "JNK and JAK/STAT signaling pathways are key drivers for the regenerative process in wing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular pathways identified as key drivers for this regenerative process include the regulation of cell apoptosis (JNK, JAK/STAT; La Fortezza et al., 2016), cell proliferation (EGFR, Wnt, Wingless, Scalloped; Blanco et al., 2010; Herrera et al., 2013; Irvine and Harvey, 2015; Smith-Bolton et al., 2009; Yu et al., 2015), re-epithelialization (ERK, Grainy head; Mace et al., 2005), and developmental timing (insulin-like peptide 8; Katsuyama et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "8137524d-545c-468d-bb46-805cd5a51f08",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C4",
+      "claim": "The multiome dataset yielded 17,402 high-quality cells with a median of 1124 detected genes per cell and a median of 3060 unique ATAC fragments per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This yielded 17,402 high-quality cells, with a median of 1124 detected genes per cell, and a median of 3060 unique ATAC fragments per cell (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from the multiome experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "51f1f8ac-e26a-4d8b-bdbd-a58b856644f1",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C5",
+      "claim": "The integrated wing atlas contains 70,230 cells from 10X Genomics across 10 replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "The integrated atlas contains 70,230 cells from 10X Genomics, across 10 replicates (four from this work, four from Everetts et al., 2021, one from Bageritz et al., 2019, and one from Deng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the integrated dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "19657a77-fc84-4964-afce-e6e24dfe52cc",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C6",
+      "claim": "One cluster was enriched for cells from wounded disc samples with markers linked to stress response pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "One cluster was noticeably enriched for cells from the wounded disc samples, with markers linked to stress response pathways (e.g. kayak, insulin-like peptide 8, unpaired3, p-adj <10e\u20133, log2FC >1.7; Figure 1c, Figure 1\u2014figure supplement 2d) and localized at the wound site in the pouch domain (Figure 1d), suggesting that this cluster represents a wound-response cell state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of gene expression data and immunostaining localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "60de191d-5e3b-43b0-add7-24630e274b32",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C7",
+      "claim": "The wound cluster can be subdivided into two distinct cell populations: population \u03b1 of 1211 cells and population \u03b2 of 94 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This cluster can furthermore be subdivided at higher resolution into two distinct cell populations (population \u03b1 of 1211 cells and population \u03b2 of 94 cells, Figure 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by clustering analysis of the single-cell data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "2493d91a-47a0-48ba-ae00-ff8992f3e3ac",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C8",
+      "claim": "Marker genes of late developmental time points are globally downregulated in wounded disc samples.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the up and downregulated genes with respect to the developmental time, we found that marker genes of late time points (e.g. ecdysone-inducible gene E2) are globally downregulated in the wounded disc samples dissected at the same time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "a2fab986-5915-47f5-bcb4-26567250954d",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C9",
+      "claim": "There is a significant overlap of downregulated markers for both wound response and developmental timing (21%, p-adj <10e\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "We furthermore found a significant overlap of downregulated markers for both wound response and developmental timing (21%, p-adj <10e\u20133, Fisher's exact test, Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis using Fisher's exact test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "831ceadf-f3d5-416f-bd34-4fe180fb08c7",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C10",
+      "claim": "Wounding triggers a global reaction across the whole disc which delays development to give more time for wound repair before metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This resemblance of wounded disc cells with those from earlier stage wild-type larvae confirms that wounding triggers a global reaction across the whole disc which delays development to give more time for the wound to repair completely before metamorphosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of gene expression patterns between wounded and developmental time-course samples.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "e196ab87-8648-413f-8140-6ddb93c044e4",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C11",
+      "claim": "The developmental delay is likely driven by insulin-like peptide 8 (ilp8), a critical long-range regulator of ecdysone signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This delay is likely driven by insulin-like peptide 8 (ilp8), a critical long-range regulator of ecdysone signaling, highly expressed in the wound cluster (Figure 1c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data and previous knowledge about ilp8 function.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "d28b4cb9-da57-485c-ae14-630bb2529b0e",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C12",
+      "claim": "The eGRN inference approach resulted in 147 high-quality eGRNs spanning 98 TFs, with on average 54 target genes and 58 target regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure resulted in 147 high-quality eGRNs (85 activating, 62 repressing), spanning 98 TFs, with on average 54 target genes and 58 target regions (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the computational analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "5039a457-89b1-4556-9413-bfb78455786a",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C13",
+      "claim": "The blistered eGRN is specifically active in the pouch domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of bs, we found the eGRN to be specifically active in the pouch, both from the gene expression and the region accessibility perspectives (Figure 2b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by eGRN activity scoring from both RNA and ATAC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "77d319e9-01b3-46e0-8004-9f859a3ac1ab",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C14",
+      "claim": "The Sox15 eGRN is one of the strongest regulatory programs observed in the hinge.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the strongest regulatory programs was observed in the hinge with the Sox box protein 15 (Sox15) (Dichtel-Danjoy et al., 2009) eGRN (22 genes, 36 regions, Figure 2c and d) where the top predicted target genes included zn finger homeodomain 2, frizzled, dachsous, and homothorax.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by eGRN analysis and regulon specificity scoring.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "42325aeb-eaeb-4a41-9d08-154949327b47",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C15",
+      "claim": "Both wound clusters \u03b1 and \u03b2 are associated with 3980 enhancers, of which 24% have been previously described as damage-responsive regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "These two clusters are associated to 3980 enhancers (DARs, see 'Materials and methods,' Supplementary file 3), among which 24% have been previously described as damage-responsive regulatory elements (Harris et al., 2020; Vizcaya-Molina et al., 2018), including the BRV118 locus (Gracia-Latorre et al., 2022; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison with previously published damage-responsive elements.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "7c3cfc8b-eab3-48a8-aae0-7105c7692b8e",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C16",
+      "claim": "The Jra/Kay eGRNs show high and specific activity in the wound populations at both gene expression and chromatin accessibility levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of the JNK pathway is further confirmed by a high and specific activity of the Jra/Kay eGRNs in the wound populations, at both gene expression and chromatin accessibility levels (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by eGRN activity analysis from multiome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "61e1831c-d1e8-4f13-9747-36ca1111b694",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C17",
+      "claim": "The eGRN of Stat92E is specifically active in the wound response clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirm the strong involvement of JAK/STAT as the eGRN of Signal-transducer and activator of transcription protein at 92E (Stat92E) is specifically active in the wound response clusters (Figure 3a), in agreement with the enrichment for the Stat92E binding motif in the wound-specific accessible regions (NES = 3.6) and the co-expression of the unpaired ligands (upd1/2/3, Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by eGRN activity analysis, motif enrichment, and gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "8d072a5b-28ad-44ce-900a-9b9a7e04dfb7",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C18",
+      "claim": "AP1 is the largest inferred wound eGRN with 470 target genes and 689 target regions.",
+      "claim_type": "EXPLICIT",
+      "source": "AP1 is the largest inferred wound eGRN (470 target genes, 689 target regions) and its binding motifs (CRE : TRE variants, Fonseca et al., 2019) are strongly enriched in DARs from both wound populations \u03b1 an \u03b2 (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by eGRN inference results and motif enrichment analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "e0132cf0-45ed-4119-8af1-2fe274f1766e",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C19",
+      "claim": "Wound population \u03b1 shows upregulation of markers of tissue patterning and proliferation relative to population \u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "We further observe an upregulation of markers of tissue patterning and proliferation in cluster \u03b1 relative to cluster \u03b2, like wingless (wg), Wnt oncogene analog 6 (Wnt6) (Figure 1c, p-adj\u03b1/\u03b2 < 10e\u20133, log2FC\u03b1/\u03b2 > 1) and CyclinE (CycE) (Figure 3d, log2FC\u03b1/\u03b2 > 0.8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by differential gene expression analysis between the two wound populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "1ed846b7-de40-4f9b-a275-3b478e5ee125",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C20",
+      "claim": "There is a significant overlap between wound population \u03b1 marker genes and genes identified in a study showing JAK/STAT coordinates cell proliferation during wing disc regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the higher enhancer activity of the Stat92E eGRN in wound \u03b1 compared to \u03b2 (Figure 3a and b), we find a significant overlap between the \u03b1 marker genes and a study that identified JAK/STAT as coordinating cell proliferation during wing disc regeneration (GSEA, NES = 1.292) (Katsuyama et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene set enrichment analysis comparing with published data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "43e15ccc-6214-4071-ab1f-3feac24fb3f0",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C21",
+      "claim": "Ets21C is upregulated in wound population \u03b1 with combined enrichment of its gene expression and binding motif.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find evidence for an upregulation of the pro-regenerative marker Ets at 21C (Ets21C) (Worley et al., 2022), with a combined enrichment of its gene expression (p-adj < 10e\u20133, log2FC > 8) and an enrichment of the Ets21C binding motif in cluster \u03b1 (cistarget, NES = 3.35).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene expression analysis and motif enrichment analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "8dace145-2369-4d82-8ce6-d78d95b60826",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C22",
+      "claim": "Wound population \u03b2 shows upregulation of genes associated with innate immunity, glutathione metabolism, cell migration signaling, response to irradiation, and negative regulation of cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes found upregulated in \u03b2 compared to \u03b1 include genes associated with innate immunity (Dorsal-related immunity factor), glutathione metabolism (Glutamate-cysteine ligase catalytic subunit, Glutathione S transferase D9)(p-adj\u03b2/\u03b1<10e\u20133, log2FC\u03b2/\u03b1 > 2), cell migration signaling (e.g rho1, slow border and pvf1, p-adj <10e\u20133), response to irradiation (e.g. inverted repeat-binding protein, p-adj <10e\u20133) and negative regulation of cell cycle (e.g. growth arrest and DNA damage-inducible 45, tribbles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by differential gene expression analysis between wound populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "56896680-fca3-49d3-ac8f-e12352e72e25",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C23",
+      "claim": "Wound population \u03b2 cells are located at the center of the wounded pouch despite their lack of pouch-specification markers.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells expressing these markers are located at the center of the wounded pouch, despite their lack of pouch-specification markers (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by spatial localization data from immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "ce0dc039-1fb7-46c7-9a7c-f5d913e1bb3f",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C24",
+      "claim": "Wound population \u03b2 shows similarities with cellular senescence based on markers of stress-response, DNA-damage response, paracrine signaling, and cell cycle stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a recent study in wounded wing imaginal discs associate the emergence of senescent-like cells with the presence of markers of stress-response (jra, kay), DNA-damage response (gadd45), paracrine signaling (pvf1), and cell cycle stalling (trbl), as observed in our population \u03b2 (Cosolo et al., 2019; Jaiswal et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with published senescence markers.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "52fa0ac9-c284-48b3-8026-f5d74d787ed6",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C25",
+      "claim": "The TFs irbp18, xrp1, slbo, vri, and sox14 have strong specificity scores for the senescent population \u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "By examining eGRN activities, we find several TFs with a strong specificity score for the senescent population (\u03b2), namely the heterodimer partners inverted repeat binding protein 18 kDa (irbp18) and xrp1, slbo, vrille (vri), and sox box protein 14 (sox14) (top 6% RSS, Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by regulon specificity score analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "81151ae7-51e1-485b-b5f5-877548ecb48d",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C26",
+      "claim": "The bZip TFs irbp18 and vri are significantly upregulated in the senescent population compared to the proliferative population.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the two bZip TFs irbp18 and vri are significantly upregulated in the senescent population compared to the proliferative population (\u03b1) (p-adj <2 * 10e\u20133, log2FC\u03b2/\u03b1>2.4) and share similarities in their TF binding motifs with the mammalian, senescence-associated C/EBP proteins (Figure 3b; Blanco et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by differential gene expression analysis and motif similarity comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "7312fa0d-d946-479b-9bc8-6fae7111e682",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C27",
+      "claim": "The Irbp18 eGRN is composed of 149 predicted target regions and 116 target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Irbp18 eGRN (extended category, see method) is composed of 149 predicted target regions (80 wound-specific and 11 senescent-specific regions) and 116 target genes (52 markers of senescent population, p-adj <5 * 10e\u20133, log2FC > 1.5) including slbo, vri, ets at 98B (ets98B), socs36E, head involution defective (hid), growth arrest and DNA damage-inducible 45 (gadd45) and p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by eGRN inference results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "eefb1ac6-efd2-4f51-b0fa-77f9dd9d4661",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C28",
+      "claim": "There is significant enrichment for C/EBPB-like binding motifs in senescent-specific peaks (NES = 5.25).",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of these TFs in the senescent cluster (\u03b2) is further corroborated by the significant enrichment for C/EBPB-like binding motifs in senescent-specific peaks (NES = 5.25, Figure 3b and c) generated using MACS2 bdgdiff (Zhang et al., 2008a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by motif enrichment analysis on differential peaks.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "b23ba00f-db56-4bdd-8be2-1fc488511fde",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C29",
+      "claim": "There is significant enrichment for the Scalloped motif in senescent-specific accessible regions (NES = 4.89).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the absence of Sd mRNA upregulation, nuclear Sd protein may increase in the senescent population since we find a significant enrichment for the Sd motif in the senescent-specific accessible regions (NES = 4.89).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by motif enrichment analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "0d8589b8-3d2f-4333-9ea4-17bd7e1bb822",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C30",
+      "claim": "The top enriched motif in senescent-specific regions is a C/EBP-TEAD dimer motif (NES = 7.48).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the top enriched motif in these senescent-specific regions is a C/EBP-TEAD dimer motif (NES = 7.48, Figure 3c), notably found in the enhancer of CG13024, a strong marker of both senescent and rasV12 scrib-/- cells (Figure 3\u2014figure supplement 3, see next section).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by motif enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "3e654454-1953-48d6-aadc-61e07681c491",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C31",
+      "claim": "200 genes were significantly upregulated in response to Xrp1 overexpression (DEseq2, logFC > 1.5, p-adj < 5.10e\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "The 200 significantly upregulated genes (DEseq2, logFC > 1.5, p-adj < 5.10e\u20133) in response to Xrp1 overexpression were strongly enriched for markers of cellular senescence (Reactome Pathway Database, Gillespie et al., 2022) and \u03b1 and \u03b2 wound populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by differential gene expression analysis from bulk RNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "c7226c00-0147-4358-abec-f4562c70ebeb",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C32",
+      "claim": "Genes upregulated by Xrp1 overexpression are enriched for inferred target gene sets of C/EBP eGRNs.",
+      "claim_type": "EXPLICIT",
+      "source": "As an additional validation of our eGRN construction, we also find the inferred target gene sets of C/EBP eGRNs significantly enriched among the upregulated genes (Figure 3e, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene set enrichment analysis of Xrp1 overexpression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "4723d73b-006c-467a-ac27-db8cf28a0d8a",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C33",
+      "claim": "The rasV12scrib-/- signature is enriched for the binding motifs of Stat92E (NES = 4.19) and AP-1 (NES = 7.17).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with Davie et al., 2015 this signature is enriched for the binding motifs of Stat92E (NES = 4.19) and AP-1 (NES = 7.17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by motif enrichment analysis and comparison with previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "6aa77a57-09b7-4164-ba33-6263997923b5",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C34",
+      "claim": "There is significant enrichment for the rasV12scrib-/- signature regions in both proliferative (\u03b1) and senescent (\u03b2) wound populations compared to wild-type pouch cells (p-adj < 10e\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at pseudo-bulk ATAC aggregate wing disc data, we noted a significant enrichment for the rasV12scrib-/- signature regions for both proliferative (\u03b1) and senescent (\u03b2) wound populations in contrast to wild-type pouch cells (p-adj < 10e\u20133, one-tailed t-test, Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of chromatin accessibility data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "e344ced6-eae0-4bf3-9d4c-9a9ef66622de",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C35",
+      "claim": "The integrated wound and tumor analysis reveals co-clustering of senescent wound cells (\u03b2) with rasV12scrib-/- and scrib-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis reveals a co-clustering of the senescent wound cells (\u03b2) with rasV12scrib-/- and scrib-/- cells (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by integrated single-cell clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "4efcb23b-3e0a-4320-b3e5-9b444746877f",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C36",
+      "claim": "Both proliferative and senescent signatures are upregulated in oncogenic models, with the strongest increase for the senescent signature.",
+      "claim_type": "EXPLICIT",
+      "source": "We find both signatures to be upregulated, with the strongest increase in gene expression between wild-type and the two oncogenic models for the senescent signature (p-adj < 10e\u20133, one-tailed t-test, Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of gene signature activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "4f9c919c-6354-4a8d-b7f1-f95ce22b771c",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C37",
+      "claim": "Four tumor subpopulations were detected in rasV12scrib-/- tumors, delimited by expression gradients of wound \u03b2 and C/EBP target gene markers.",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore cellular heterogeneity in rasV12scrib-/- tumors, we performed a sub-clustering analysis and detected four tumor subpopulations, delimited by the expression gradient of several markers of wound \u03b2 and C/EBP targets genes such as Gadd45 and CG13024 (Figure 4\u2014figure supplement 2, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sub-clustering analysis of tumor cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "5dca2fca-fae2-4b9d-b08c-a4bfb4e7f3a6",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C38",
+      "claim": "Two distinct wound populations display proliferative (\u03b1) and senescent (\u03b2) properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this new eGRN viewpoint, we found two distinct populations respectively displaying proliferative (\u03b1) and senescent (\u03b2) properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by eGRN analysis and marker gene expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "8e1d306a-e703-4e13-a658-7aa30334c91f",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C39",
+      "claim": "Both wound populations share a common wound response program comprising JNK and JAK/STAT signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Both populations share a common wound response program, comprising JNK and JAK/STAT signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by eGRN activity analysis showing shared activation of these pathways.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "b86d4d9c-4795-49fe-8ad7-db9456bfa3d9",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C40",
+      "claim": "Senescent cells display additional activation of DNA damage, paracrine signaling, and stress mitigation pathways distinct from proliferative cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the senescent cells display an additional activation of DNA damage, paracrine signaling, and stress mitigation pathways (glutathione metabolism, FC\u03b1/\u03b2 > 1.8) that is distinct from the proliferative cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by differential gene expression analysis between the two wound populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "b42be595-68d3-4e03-b0af-3bcc1ca66732",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C41",
+      "claim": "TFs associated with pouch fate specification are downregulated in senescent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with a possible de-differentiation process, TFs associated with pouch fate specification are also downregulated in senescent cells (Distal-less, blistered, engrailed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by gene expression analysis and inference about de-differentiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "264cce7b-f072-46b9-94c7-5510546f8041",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C42",
+      "claim": "Senescence markers co-vary with C/EBP-like eGRN activity and oncogenic signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrently, the senescence markers co-vary with C/EBP-like eGRN activity and the oncogenic signatures (rasV12scrib-/- and scrib-/-, top 100 target genes, Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis of eGRN activity and gene signatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "e5abddba-43fb-4017-b0b4-c43f2732026f",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C43",
+      "claim": "A common response program is shared by all wound populations and rasV12scrib-/- cancer cells (JNK, JAK/STAT).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results highlight a common response program, shared by all wound populations and rasV12scrib-/- cancer cells (JNK, JAK/STAT), and an additional senescent-like program driven by C/EBP-like TFs that is shared between the senescent population and the tumorigenesis paradigms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative analysis of eGRN activities across conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "d44e1716-6a20-460d-8919-96b8ac409731",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C44",
+      "claim": "This study presents the first depiction of the senescence phenotype at the single cell multiomic level (scRNA+scATAC).",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this study presents the first depiction of the senescence phenotype at the single cell multiomic level (scRNA+scATAC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' assessment of the novelty of their approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "6e865298-3551-41d9-8b2f-d96544ea0d1a",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C45",
+      "claim": "Tumor programs are highly similar to the senescent-like cell population emerging following a transient wound.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we found tumor programs to be highly similar to the senescent-like cell population emerging following a transient wound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparative analysis of gene expression and chromatin accessibility patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "e5042686-e8be-4fed-8e14-fbbbd938d93a",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C46",
+      "claim": "A tumor paradigm can be seen as a wound that never heals, where failure to arrest cell proliferation prevents damaged cells from fully resorbing.",
+      "claim_type": "EXPLICIT",
+      "source": "From this perspective, we can see a tumor paradigm as a wound that never heals, where the failure to arrest cell proliferation would prevent the damaged cells to fully resorb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conceptual interpretation based on the observed similarities between wound and tumor responses.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "7268bbe2-0991-47ab-8d92-4d1f682c9407",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C47",
+      "claim": "Senescent cells lead collective migration of proliferative cells toward wound closure and are then discarded through mechanical competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies further suggest a guiding role, where senescent cells lead the collective migration of proliferative cells toward wound closure, where they are then discarded through mechanical competition (\u00c1lvarez-Fern\u00e1ndez et al., 2015; Kozyrska et al., 2022; Tsai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "c12abce8-3e46-457c-8340-e432238b18db",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C48",
+      "claim": "Failure to arrest SASP signaling through senescent cell clearance would promote overproliferation in persistent oncogenic induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this hypothesis, failure to arrest SASP signaling through senescent cell clearance would promote overproliferation in persistent oncogenic induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis based on the observed patterns in the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "bc1d736c-d13c-49f5-ad54-659c8101adcc",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C49",
+      "claim": "Polarity sensing mutants (e.g. scrib-/-) overproliferate when present as a homogeneous population but are cleared within a crowd of wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea of competition-mediated clearance is supported by several studies showing that polarity sensing mutants (e.g. scrib-/-) would overproliferate when present as a homogeneous population, but would be cleared within a crowd of wild-type cells (Ballesteros-Arias et al., 2014; Brumby and Richardson, 2003; Pinal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "b1af39d8-ec48-4f8c-a34e-23d22b49f6dc",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C50",
+      "claim": "DNA damage-responsive TF p53 and cell cycle stalling cooperate to trigger cellular senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously it was shown that the DNA damage-responsive TF p53 and cell cycle stalling cooperate to trigger cellular senescence (Kozyrska et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "77d4a382-fd14-4457-b790-fe4f8c88f8e7",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C51",
+      "claim": "Cell cycle stalling in the Drosophila wound model is mediated by AP-1 and involves tribbles.",
+      "claim_type": "EXPLICIT",
+      "source": "Such stalling has also been reported in the Drosophila wound model, where it is mediated by AP-1 and involves tribbles (Cosolo et al., 2019), two markers of our senescent population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study and correlation with markers in the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "434533d8-effc-4c56-a874-632eb5399568",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C52",
+      "claim": "JNK activity protects damaged, senescent cells from competition as long as they do not resume cycling.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors further highlight that JNK activity is protecting the damaged, senescent cells from competition as long as they do not resume cycling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "2eba34d6-3715-4d65-b093-f8b8b85a5a11",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C53",
+      "claim": "A positive feedback loop via moladietz sustains JNK activity in senescent cells after wounding.",
+      "claim_type": "EXPLICIT",
+      "source": "Two other studies have also demonstrated the role of a positive feedback loop via moladietz (marker of our proliferative population \u03b1) to sustain JNK activity in the senescent cells after wounding (Khan et al., 2017; Pinal et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "92338054-3417-40d2-9103-8f4098965bcd",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C54",
+      "claim": "Specific expression of retrotransposons TAHRE and Invader4 is found in wound populations (p-adj < 10e\u20133, log2FC > 1).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this hypothesis, we find specific expression of the retrotransposons TAHRE and Invader4 in the wound populations (p-adj < 10e\u20133, log2FC > 1, Figure 4\u2014figure supplement 1c), although further investigation would be necessary to fully characterize this TE-mediated response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by differential expression analysis of transposable elements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "de6c685d-3d34-4a1a-8dab-42b626b1f9b6",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C55",
+      "claim": "The Hippo pathway is not detected as a wound signature in the rn-egr model, although enrichment of its effector's motif, Scalloped, is found in the senescent wound population.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hippo pathway (pro-proliferative and pro-invasive in rasV12scrib-/-) is also not detected as a wound signature in our rn-egr model, although we find an enrichment of its effector's motif, Scalloped, in the senescent wound population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by motif enrichment analysis and absence of gene expression changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "14a6171e-624c-4b33-98dc-7002d6f7d2a0",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C56",
+      "claim": "The presence of Scalloped is consistent with reported cooperation of its human ortholog, TEAD, with AP-1 in invasive mesenchymal-like cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of sd is consistent with the reported cooperation of its human ortholog, TEAD, with AP-1 in invasive mesenchymal-like cells (Verfaillie et al., 2015; Zanconato et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies showing TEAD-AP1 cooperation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "61a44d15-df81-4c27-8076-900221cd8d6e",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C57",
+      "claim": "Senescent cells are capable of surviving apoptotic signals by cell-cycle stalling and guide migration and growth of the pro-regenerative population via strong secretory phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data supports a model in which these senescent cells are capable of surviving apoptotic signals by cell-cycle stalling, and then further guide the migration and growth of the pro-regenerative population (\u03b1) via its strong secretory phenotype, notably targets of the JNK pathway (i.e. presence of Wg and Upd family ligands; La Marca and Richardson, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a model proposed based on the observed data and previous knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "67ae6010-038b-4247-a501-c7666ec36d3f",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C58",
+      "claim": "The significant similarity between senescent cells and rasV12scrib-/- cells suggests they share the same regulatory wound programs.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant similarity between senescent cells and rasV12scrib-/- cells suggests that they share the same regulatory wound programs, highlighting the fact that mechanisms present in oncogenic induction may already be active in a genetically wild-type context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on the comparative analysis of gene expression and chromatin accessibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "95ca0e9e-8c57-47e2-9b92-a647cdca7d5e",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C59",
+      "claim": "A recent study observed different spatial patterns of markers at the wound site in the rasV12scrib-/- model arising from persistent JNK/STAT regulatory network activity.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study from Jaiswal et al., 2022 observed different spatial patterns of markers at the wound site in the rasV12scrib-/- model. These populations arise after a persistent activity of a JNK/STAT regulatory network that stratifies signaling activity and cell behavior around the wound site, analogous to morphogen gradient fields in development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "69a89cae-6ff5-434d-9c3b-430a72d36894",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C60",
+      "claim": "Multiple bZip TFs present in this study are conserved in mammalian inflammatory pathways and are capable of forming heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding TF cooperation events, multiple bZip TFs present in our study are conserved in the mammalian inflammatory pathways and are capable of forming heterodimers (Blanco et al., 2020; Deppmann et al., 2006; Deppmann et al., 2006; Huggins et al., 2015; Newton and Dixit, 2012; Shokri et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies on TF conservation and dimerization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "f1cf3092-b605-4637-865e-6860f8344d7c",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "claim_id": "C61",
+      "claim": "A recent study in YAP/TAZ-bound regions upregulated in breast cancer detected increased binding co-occurrence for orthologs of key regulatory TFs: AP-1, STAT3, C/EBP, and TEAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a recent study in YAP/TAZ-bound regions upregulated in breast cancer has detected an increased binding co-occurrence for the orthologs of our key regulatory TFs: AP-1, STAT3, C/EBP, and TEAD (Jra, kay, Stat92E, Sd, Irbp18, slbo) (He et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a recent study in mammalian cancer.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7cd8ba0e-5502-4ae9-a614-f01a49d4f71b",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors generated a multiome dataset of 17,402 high-quality cells and integrated it with published data to create a wing atlas of 70,230 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C5 provide clear quantitative metrics for the dataset quality and integration. The median gene and ATAC fragment counts (C4) indicate successful multiome profiling, and the integration of multiple replicates (C5) strengthens the robustness of the atlas.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "1de985e5-d541-48b7-9213-b9a4eb501d9f",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A wound-response cluster enriched for stress response markers was identified and subdivided into two populations: proliferative \u03b1 (1211 cells) and senescent \u03b2 (94 cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C7 are supported by statistical analysis (p-adj <10e\u22123, log2FC >1.7) and clustering analysis with clear cell counts. The identification is corroborated by both gene expression and spatial localization data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "e373d42b-5aa0-45d6-90df-4cc3b338a8ab",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Wounding triggers a global developmental delay across the disc, evidenced by downregulation of late developmental markers and significant overlap (21%) between wound response and developmental timing markers, likely driven by ilp8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 form a coherent result supported by comparative gene expression analysis and Fisher's exact test (p-adj <10e\u22123). The inference about ilp8 driving the delay (C11) is reasonable given its known role and high expression in wound clusters, though direct causation is not experimentally demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "c4b35ce2-d79b-42e6-b0f7-01feaf555cbc",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The eGRN inference approach identified 147 high-quality eGRNs spanning 98 TFs, with domain-specific activities validated for blistered (pouch) and Sox15 (hinge).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 provides clear quantitative results from the computational pipeline. Claims C13 and C14 validate the approach with specific examples showing concordance between gene expression and chromatin accessibility, strengthening confidence in the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "29b2201a-986b-4df8-abdb-a40aa12e4f2e",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Wound clusters \u03b1 and \u03b2 are associated with 3980 enhancers (24% previously described as damage-responsive) and show high activity of JNK (Jra/Kay) and JAK/STAT (Stat92E) eGRNs, with AP1 being the largest wound eGRN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are well-supported by comparison with published damage-responsive elements, eGRN activity analysis, motif enrichment (NES scores), and gene expression data. The convergence of multiple lines of evidence strengthens these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "fed3c0b6-c47e-4a76-8c34-3f0da2f0ca43",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Wound population \u03b1 shows upregulation of proliferation and tissue patterning markers (wg, Wnt6, CycE, Ets21C) with significant overlap with JAK/STAT-coordinated regeneration genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are supported by differential gene expression analysis with appropriate statistical thresholds, gene set enrichment analysis (NES = 1.292), and motif enrichment (NES = 3.35). The convergence of expression and regulatory evidence is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "7e4082f6-3ca7-4bc8-952d-71d1f1766183",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Wound population \u03b2 shows upregulation of genes associated with innate immunity, glutathione metabolism, cell migration, DNA damage response, and cell cycle arrest, with cells located at the wound center and displaying senescence-like characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by differential gene expression analysis (p-adj <10e\u22123), spatial localization data, and comparison with published senescence markers. The characterization is comprehensive though the senescence designation is acknowledged as based on gene expression programs rather than terminal arrest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "d956308d-48ec-4921-8319-9762dc01b86d",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The senescent population \u03b2 is characterized by C/EBP-like TFs (irbp18, vri, xrp1, slbo) with strong eGRN activity, enrichment for C/EBP and C/EBP-TEAD dimer motifs, and Scalloped motif enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 provide converging evidence from regulon specificity scores, differential expression (p-adj <2*10e\u22123, log2FC >2.4), eGRN inference, and motif enrichment analysis (NES values 5.25-7.48). The multi-layered regulatory characterization is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "d4b47654-c8c0-434a-b2d2-cad9b9b277ec",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Xrp1 overexpression upregulates 200 genes enriched for cellular senescence markers and C/EBP eGRN target genes, validating the eGRN construction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 are supported by bulk RNA-seq with appropriate statistical thresholds (logFC >1.5, p-adj <5.10e\u22123) and gene set enrichment analysis. This provides independent experimental validation of the computationally inferred eGRNs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "fe9b9c2a-c552-418b-be93-2ae64000b0f8",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The rasV12scrib-/- tumor signature shows enrichment for Stat92E and AP-1 motifs and is significantly enriched in both wound populations \u03b1 and \u03b2, with senescent wound cells co-clustering with tumor cells and strongest upregulation of the senescent signature in oncogenic models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 are supported by motif enrichment analysis, statistical testing (p-adj <10e\u22123), integrated clustering analysis, and signature activity scoring. The multi-omic comparison across wound and tumor models is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "ee93e5a2-ea0c-43e8-b6d0-bc41e72e37bf",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Four tumor subpopulations were detected in rasV12scrib-/- tumors delimited by expression gradients of wound \u03b2 and C/EBP target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C37 is supported by sub-clustering analysis, but the authors acknowledge higher noise levels and inability to clearly distinguish \u03b1 and \u03b2 signatures in distinct tumor clusters. The cellular heterogeneity is detected but not as clearly resolved as in the wound model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "6386ac71-ad55-4c9e-bf81-01255a3c93dc",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Two distinct wound populations display proliferative (\u03b1) and senescent (\u03b2) properties, sharing common JNK/JAK-STAT signaling but with senescent cells showing additional DNA damage, paracrine signaling, stress mitigation pathways, and downregulation of pouch fate TFs, with senescence markers co-varying with C/EBP eGRN activity and oncogenic signatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 synthesize the major findings with support from eGRN analysis, differential gene expression, and correlation analysis. The characterization of shared and distinct programs is well-supported by multiple lines of evidence, though some inferences about de-differentiation (C41) are interpretive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "de26510b-9611-44d1-9b83-cce33c74cecb",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This study presents the first depiction of the senescence phenotype at the single-cell multiomic level (scRNA+scATAC).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C44 is a novelty claim based on the authors' knowledge of the literature. While the multiome approach to senescence is indeed novel, the claim of being 'first' cannot be fully verified without comprehensive literature review and depends on how strictly 'senescence phenotype' is defined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "81a820da-8c27-4232-86a1-7e0e0c48c02d",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Tumor programs are highly similar to senescent-like wound cells, suggesting tumors can be viewed as wounds that never heal where mechanisms in oncogenic induction are already active in wild-type wound contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C46, and C58 are supported by comparative analysis of gene expression and chromatin accessibility patterns. However, C46 is partly conceptual/interpretive. The similarity is well-documented, but the 'wound that never heals' framing is a model rather than a proven mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "a521cf69-a4fc-4597-ac4b-8fc16a271dc2",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior studies suggest senescent cells lead collective migration toward wound closure and are cleared through mechanical competition, with failure to clear senescent cells promoting overproliferation; p53 and cell cycle stalling cooperate to trigger senescence, with JNK activity protecting senescent cells from competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 are primarily citation-based, summarizing prior work. These are appropriately supported by references to previous studies. Claims C48 is presented as a hypothesis based on observed patterns, which is appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "5890c1fc-d838-4a46-8895-03f69cba3fbd",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Retrotransposons TAHRE and Invader4 show specific expression in wound populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is supported by differential expression analysis (p-adj <10e\u22123, log2FC >1), though the authors acknowledge further investigation is needed to characterize the TE-mediated response. The finding is preliminary but statistically supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "f12dbb3c-4db3-4a84-b7ae-f160213365ba",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The Hippo pathway is not detected as a wound signature in gene expression, but Scalloped motif enrichment is found in senescent cells, consistent with reported TEAD-AP1 cooperation in mammalian invasive cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55 and C56 are supported by motif enrichment analysis and comparison with mammalian studies. The absence of gene expression changes but presence of motif enrichment suggests post-transcriptional regulation, which is a reasonable interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "88478b1f-9339-4aec-80f1-d52403caf7d0",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The data supports a model where senescent cells survive apoptotic signals through cell-cycle stalling and guide migration and growth of proliferative cells via secretory phenotype including Wg and Upd ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is a proposed model based on observed data (gene expression patterns, eGRN activities) and previous knowledge. While the model is reasonable and supported by the data, it represents an interpretation rather than direct experimental demonstration of the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "e7b1fd46-b638-49e2-a75a-ac79a5b93cb2",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "A recent study observed spatial patterns of markers in rasV12scrib-/- arising from persistent JNK/STAT activity that stratifies signaling around the wound site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is citation-based, appropriately referencing Jaiswal et al., 2022. This contextualizes the current findings within recent literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "8870cfd8-c5ad-4a76-9481-61daa60c97b4",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Multiple bZip TFs in this study are conserved in mammalian inflammatory pathways and capable of forming heterodimers, with a recent breast cancer study detecting increased co-occurrence of orthologs of the key regulatory TFs (AP-1, STAT3, C/EBP, TEAD).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C61 are citation-based, appropriately referencing multiple studies on TF conservation, dimerization, and mammalian cancer. This provides important evolutionary and translational context for the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    },
+    {
+      "id": "f355b292-7e38-4fb2-a64e-c40f6b9ebe0b",
+      "content_id": "167bde7d-4f92-4570-8264-b5f50ecafde7",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The Drosophila wing imaginal disc structure and wound repair mechanisms are established, with JNK and JAK/STAT pathways identified as key drivers of regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are background knowledge claims supported by citations to previous literature. These establish the biological context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:43:18.486586Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8137524d-545c-468d-bb46-805cd5a51f08",
+      "result_id": "7cd8ba0e-5502-4ae9-a614-f01a49d4f71b"
+    },
+    {
+      "claim_id": "51f1f8ac-e26a-4d8b-bdbd-a58b856644f1",
+      "result_id": "7cd8ba0e-5502-4ae9-a614-f01a49d4f71b"
+    },
+    {
+      "claim_id": "19657a77-fc84-4964-afce-e6e24dfe52cc",
+      "result_id": "1de985e5-d541-48b7-9213-b9a4eb501d9f"
+    },
+    {
+      "claim_id": "60de191d-5e3b-43b0-add7-24630e274b32",
+      "result_id": "1de985e5-d541-48b7-9213-b9a4eb501d9f"
+    },
+    {
+      "claim_id": "2493d91a-47a0-48ba-ae00-ff8992f3e3ac",
+      "result_id": "e373d42b-5aa0-45d6-90df-4cc3b338a8ab"
+    },
+    {
+      "claim_id": "a2fab986-5915-47f5-bcb4-26567250954d",
+      "result_id": "e373d42b-5aa0-45d6-90df-4cc3b338a8ab"
+    },
+    {
+      "claim_id": "831ceadf-f3d5-416f-bd34-4fe180fb08c7",
+      "result_id": "e373d42b-5aa0-45d6-90df-4cc3b338a8ab"
+    },
+    {
+      "claim_id": "e196ab87-8648-413f-8140-6ddb93c044e4",
+      "result_id": "e373d42b-5aa0-45d6-90df-4cc3b338a8ab"
+    },
+    {
+      "claim_id": "d28b4cb9-da57-485c-ae14-630bb2529b0e",
+      "result_id": "c4b35ce2-d79b-42e6-b0f7-01feaf555cbc"
+    },
+    {
+      "claim_id": "5039a457-89b1-4556-9413-bfb78455786a",
+      "result_id": "c4b35ce2-d79b-42e6-b0f7-01feaf555cbc"
+    },
+    {
+      "claim_id": "77d319e9-01b3-46e0-8004-9f859a3ac1ab",
+      "result_id": "c4b35ce2-d79b-42e6-b0f7-01feaf555cbc"
+    },
+    {
+      "claim_id": "42325aeb-eaeb-4a41-9d08-154949327b47",
+      "result_id": "29b2201a-986b-4df8-abdb-a40aa12e4f2e"
+    },
+    {
+      "claim_id": "7c3cfc8b-eab3-48a8-aae0-7105c7692b8e",
+      "result_id": "29b2201a-986b-4df8-abdb-a40aa12e4f2e"
+    },
+    {
+      "claim_id": "61e1831c-d1e8-4f13-9747-36ca1111b694",
+      "result_id": "29b2201a-986b-4df8-abdb-a40aa12e4f2e"
+    },
+    {
+      "claim_id": "8d072a5b-28ad-44ce-900a-9b9a7e04dfb7",
+      "result_id": "29b2201a-986b-4df8-abdb-a40aa12e4f2e"
+    },
+    {
+      "claim_id": "e0132cf0-45ed-4119-8af1-2fe274f1766e",
+      "result_id": "fed3c0b6-c47e-4a76-8c34-3f0da2f0ca43"
+    },
+    {
+      "claim_id": "1ed846b7-de40-4f9b-a275-3b478e5ee125",
+      "result_id": "fed3c0b6-c47e-4a76-8c34-3f0da2f0ca43"
+    },
+    {
+      "claim_id": "43e15ccc-6214-4071-ab1f-3feac24fb3f0",
+      "result_id": "fed3c0b6-c47e-4a76-8c34-3f0da2f0ca43"
+    },
+    {
+      "claim_id": "8dace145-2369-4d82-8ce6-d78d95b60826",
+      "result_id": "7e4082f6-3ca7-4bc8-952d-71d1f1766183"
+    },
+    {
+      "claim_id": "56896680-fca3-49d3-ac8f-e12352e72e25",
+      "result_id": "7e4082f6-3ca7-4bc8-952d-71d1f1766183"
+    },
+    {
+      "claim_id": "ce0dc039-1fb7-46c7-9a7c-f5d913e1bb3f",
+      "result_id": "7e4082f6-3ca7-4bc8-952d-71d1f1766183"
+    },
+    {
+      "claim_id": "52fa0ac9-c284-48b3-8026-f5d74d787ed6",
+      "result_id": "d956308d-48ec-4921-8319-9762dc01b86d"
+    },
+    {
+      "claim_id": "81151ae7-51e1-485b-b5f5-877548ecb48d",
+      "result_id": "d956308d-48ec-4921-8319-9762dc01b86d"
+    },
+    {
+      "claim_id": "7312fa0d-d946-479b-9bc8-6fae7111e682",
+      "result_id": "d956308d-48ec-4921-8319-9762dc01b86d"
+    },
+    {
+      "claim_id": "eefb1ac6-efd2-4f51-b0fa-77f9dd9d4661",
+      "result_id": "d956308d-48ec-4921-8319-9762dc01b86d"
+    },
+    {
+      "claim_id": "b23ba00f-db56-4bdd-8be2-1fc488511fde",
+      "result_id": "d956308d-48ec-4921-8319-9762dc01b86d"
+    },
+    {
+      "claim_id": "0d8589b8-3d2f-4333-9ea4-17bd7e1bb822",
+      "result_id": "d956308d-48ec-4921-8319-9762dc01b86d"
+    },
+    {
+      "claim_id": "3e654454-1953-48d6-aadc-61e07681c491",
+      "result_id": "d4b47654-c8c0-434a-b2d2-cad9b9b277ec"
+    },
+    {
+      "claim_id": "c7226c00-0147-4358-abec-f4562c70ebeb",
+      "result_id": "d4b47654-c8c0-434a-b2d2-cad9b9b277ec"
+    },
+    {
+      "claim_id": "4723d73b-006c-467a-ac27-db8cf28a0d8a",
+      "result_id": "fe9b9c2a-c552-418b-be93-2ae64000b0f8"
+    },
+    {
+      "claim_id": "6aa77a57-09b7-4164-ba33-6263997923b5",
+      "result_id": "fe9b9c2a-c552-418b-be93-2ae64000b0f8"
+    },
+    {
+      "claim_id": "e344ced6-eae0-4bf3-9d4c-9a9ef66622de",
+      "result_id": "fe9b9c2a-c552-418b-be93-2ae64000b0f8"
+    },
+    {
+      "claim_id": "4efcb23b-3e0a-4320-b3e5-9b444746877f",
+      "result_id": "fe9b9c2a-c552-418b-be93-2ae64000b0f8"
+    },
+    {
+      "claim_id": "4f9c919c-6354-4a8d-b7f1-f95ce22b771c",
+      "result_id": "ee93e5a2-ea0c-43e8-b6d0-bc41e72e37bf"
+    },
+    {
+      "claim_id": "5dca2fca-fae2-4b9d-b08c-a4bfb4e7f3a6",
+      "result_id": "6386ac71-ad55-4c9e-bf81-01255a3c93dc"
+    },
+    {
+      "claim_id": "8e1d306a-e703-4e13-a658-7aa30334c91f",
+      "result_id": "6386ac71-ad55-4c9e-bf81-01255a3c93dc"
+    },
+    {
+      "claim_id": "b86d4d9c-4795-49fe-8ad7-db9456bfa3d9",
+      "result_id": "6386ac71-ad55-4c9e-bf81-01255a3c93dc"
+    },
+    {
+      "claim_id": "b42be595-68d3-4e03-b0af-3bcc1ca66732",
+      "result_id": "6386ac71-ad55-4c9e-bf81-01255a3c93dc"
+    },
+    {
+      "claim_id": "264cce7b-f072-46b9-94c7-5510546f8041",
+      "result_id": "6386ac71-ad55-4c9e-bf81-01255a3c93dc"
+    },
+    {
+      "claim_id": "e5abddba-43fb-4017-b0b4-c43f2732026f",
+      "result_id": "6386ac71-ad55-4c9e-bf81-01255a3c93dc"
+    },
+    {
+      "claim_id": "d44e1716-6a20-460d-8919-96b8ac409731",
+      "result_id": "de26510b-9611-44d1-9b83-cce33c74cecb"
+    },
+    {
+      "claim_id": "6e865298-3551-41d9-8b2f-d96544ea0d1a",
+      "result_id": "81a820da-8c27-4232-86a1-7e0e0c48c02d"
+    },
+    {
+      "claim_id": "e5042686-e8be-4fed-8e14-fbbbd938d93a",
+      "result_id": "81a820da-8c27-4232-86a1-7e0e0c48c02d"
+    },
+    {
+      "claim_id": "67ae6010-038b-4247-a501-c7666ec36d3f",
+      "result_id": "81a820da-8c27-4232-86a1-7e0e0c48c02d"
+    },
+    {
+      "claim_id": "7268bbe2-0991-47ab-8d92-4d1f682c9407",
+      "result_id": "a521cf69-a4fc-4597-ac4b-8fc16a271dc2"
+    },
+    {
+      "claim_id": "c12abce8-3e46-457c-8340-e432238b18db",
+      "result_id": "a521cf69-a4fc-4597-ac4b-8fc16a271dc2"
+    },
+    {
+      "claim_id": "bc1d736c-d13c-49f5-ad54-659c8101adcc",
+      "result_id": "a521cf69-a4fc-4597-ac4b-8fc16a271dc2"
+    },
+    {
+      "claim_id": "b1af39d8-ec48-4f8c-a34e-23d22b49f6dc",
+      "result_id": "a521cf69-a4fc-4597-ac4b-8fc16a271dc2"
+    },
+    {
+      "claim_id": "77d4a382-fd14-4457-b790-fe4f8c88f8e7",
+      "result_id": "a521cf69-a4fc-4597-ac4b-8fc16a271dc2"
+    },
+    {
+      "claim_id": "434533d8-effc-4c56-a874-632eb5399568",
+      "result_id": "a521cf69-a4fc-4597-ac4b-8fc16a271dc2"
+    },
+    {
+      "claim_id": "2eba34d6-3715-4d65-b093-f8b8b85a5a11",
+      "result_id": "a521cf69-a4fc-4597-ac4b-8fc16a271dc2"
+    },
+    {
+      "claim_id": "92338054-3417-40d2-9103-8f4098965bcd",
+      "result_id": "5890c1fc-d838-4a46-8895-03f69cba3fbd"
+    },
+    {
+      "claim_id": "de6c685d-3d34-4a1a-8dab-42b626b1f9b6",
+      "result_id": "f12dbb3c-4db3-4a84-b7ae-f160213365ba"
+    },
+    {
+      "claim_id": "14a6171e-624c-4b33-98dc-7002d6f7d2a0",
+      "result_id": "f12dbb3c-4db3-4a84-b7ae-f160213365ba"
+    },
+    {
+      "claim_id": "61a44d15-df81-4c27-8076-900221cd8d6e",
+      "result_id": "88478b1f-9339-4aec-80f1-d52403caf7d0"
+    },
+    {
+      "claim_id": "95ca0e9e-8c57-47e2-9b92-a647cdca7d5e",
+      "result_id": "e7b1fd46-b638-49e2-a75a-ac79a5b93cb2"
+    },
+    {
+      "claim_id": "69a89cae-6ff5-434d-9c3b-430a72d36894",
+      "result_id": "8870cfd8-c5ad-4a76-9481-61daa60c97b4"
+    },
+    {
+      "claim_id": "f1cf3092-b605-4637-865e-6860f8344d7c",
+      "result_id": "8870cfd8-c5ad-4a76-9481-61daa60c97b4"
+    },
+    {
+      "claim_id": "db2fcc17-71bf-4474-bccf-e61b0bee722f",
+      "result_id": "f355b292-7e38-4fb2-a64e-c40f6b9ebe0b"
+    },
+    {
+      "claim_id": "b8327aca-25a1-423e-8e2b-5e7b657aa62f",
+      "result_id": "f355b292-7e38-4fb2-a64e-c40f6b9ebe0b"
+    },
+    {
+      "claim_id": "c0d67b55-9048-48c5-abf7-b75af56ecff8",
+      "result_id": "f355b292-7e38-4fb2-a64e-c40f6b9ebe0b"
+    }
+  ],
+  "comparisons": []
+}

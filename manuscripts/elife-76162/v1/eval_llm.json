@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The \u03bb-E. coli coevolution system involves \u03bb phage using LamB as its native receptor, evolving to use OmpF through mutations in gene J (requiring four mutations), while E. coli evolves resistance through malT mutations that reduce LamB expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the biological background of the system based on prior published work (Meyer et al., 2012; Maddamsetti et al., 2018; Boos and B\u00f6hm, 2000). These are well-established facts about the system that provide the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The fitness landscapes of \u03bb differ between ancestral and malT\u2212 hosts: the ancestral host landscape shows a diminishing-returns pattern while the malT\u2212 host landscape has an atypical sigmoidal shape that plateaus at higher fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are based on visual inspection of empirical fitness data (Figure 1a,b) and comparison to established patterns in the literature. The characterization is qualitative but supported by the data and subsequent quantitative analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "There are significant mutation-by-host and mutation-by-mutation-by-host interactions in \u03bb's fitness landscape, with 21 of 45 three-way interaction terms significant and accounting for 12.62% of total variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are based on rigorous statistical regression analysis with appropriate multiple testing correction (Benjamini-Hochberg procedure, C68). The analysis demonstrates host-dependent epistasis quantitatively, supporting the claim that coevolution deforms fitness landscapes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C37",
+      "C38",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "A combinatorial library of 671 \u03bb genotypes was constructed using MAGE with watermark mutations to improve detection sensitivity, and fitness was measured for 580 genotypes with ancestral host and 131 with malT\u2212 host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C37-C38 describe the successful implementation of MAGE technology with methodological innovations (watermark strategy) that improved detection limits from ~10^-3 to ~10^-6. The reduced coverage in malT\u2212 landscape is explained by fitness differences causing genotypes to fall below detection. Claims C62-C64 provide additional protocol details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Shifting landscape simulations increased the frequency of OmpF+ evolution above single host simulations in all nine treatments, with seven of nine showing statistically significant increases (ANOVA: F=6.14, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 are based on Wright-Fisher simulations with appropriate statistical testing (ANOVA with post-hoc comparisons). The result is robust to parameter variations (C42-C44, C72-C73) as shown in supplementary analyses. This provides computational evidence that landscape shifts promote innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "The first mutation (A) on the path to OmpF+ required ancestral E. coli to evolve, while the second mutation (B) required malT\u2212 E. coli, demonstrating sequential host-dependent selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are based on pairwise competition experiments (Figure 3b,c) with appropriate statistical testing (one-tailed t-tests with significant p-values). The experiments directly test fitness advantages in different host contexts and support the hypothesis of sequential adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "malT\u2212 E. coli was not significantly more fit than ancestral E. coli in the presence of ancestral \u03bb, but was more fit in the presence of evolved \u03bb genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are based on host competition experiments (Figure 3d) with statistical testing showing that malT\u2212 fitness advantage depends on \u03bb genotype. This demonstrates reciprocal effects where \u03bb evolution promotes host resistance evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C29"
+    ],
+    "result": "When coevolution was initiated with malT\u2212 host, 0 of 12 replicates evolved OmpF+ compared to 3 of 12 with ancestral host, and fewer J mutations evolved with malT\u2212 despite equal time, with probability ~0.03 of observing zero OmpF+ by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C29 report experimental replay results with appropriate statistical reasoning (binomial probability calculation). The result demonstrates that disrupting the normal coevolutionary sequence by starting with resistant host prevents innovation, supporting the landscape deformation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "When replay experiments were initiated with \u03bb strains one or two mutations away from OmpF+ function, 16 of 24 populations evolved OmpF+, showing that malT\u2212 can promote innovation depending on \u03bb's position in the fitness landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is based on experimental replays with partially evolved \u03bb strains. The high success rate (16/24) contrasts with the failure when starting with wildtype \u03bb (0/12, C20), demonstrating contingency on prior evolutionary steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "\u03bb initially evolves mutations enhancing infectivity, which applies pressure on E. coli to evolve resistance, after which \u03bb's fitness landscape is deformed to promote OmpF evolution (but only if \u03bb had already acquired some J mutations), with timing coordinated by coevolutionary reciprocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 synthesize results from phylogenetic reconstruction (C46, C75), competition experiments (C15-C16, C18-C19), and replay experiments (C20-C23) into a coherent model. The inference is well-supported by converging lines of evidence demonstrating the sequential, interdependent nature of coevolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C75"
+    ],
+    "result": "Population D7 was chosen for detailed phylogenetic analysis because \u03bb evolved relatively few mutations; 66 phages were isolated and sequenced, revealing that J evolved within a day while malT\u2212 mutations fixed between 5-8 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C75 describe the experimental approach and temporal dynamics. The timing data (C46-C47) challenges the previous model where host resistance was thought to evolve first, providing key evidence for the revised coevolutionary model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study provides direct experimental evidence that fluctuating fitness landscapes promote evolutionary innovations through complex genetic interactions, resulting in highly contingent yet repeatable evolution coordinated by coevolutionary feedback, demonstrating how high-throughput technologies can untangle and predict coevolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C54-C56 represent the main conclusions synthesizing all experimental and computational results. The evidence from fitness landscapes (C5-C6, C9-C10), simulations (C13-C14), competition experiments (C15-C16, C18-C19), and replays (C20-C23) collectively support these broad conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The genotype and timing of host-parasite encounters determine evolutionary outcomes: if the host outpaces the parasite, innovation fails, but when complementary genotypes meet at appropriate coevolutionary stages, innovation becomes highly likely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are inferences from the replay experiments (Figure 4) showing different outcomes depending on initial conditions. The experimental evidence directly demonstrates how starting genotypes and timing affect evolutionary trajectories and endpoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The updated coevolutionary model revises the previous understanding: rather than \u03bb evolving OmpF use as a direct response to malT\u2212 resistance, \u03bb first evolves enhanced infectivity, which then promotes host resistance evolution, after which landscape deformation facilitates OmpF evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 contrast the previous model (Meyer et al., 2012) with the new model based on this study's findings. The revision is supported by temporal data (C46-C47), competition experiments (C15-C16, C18-C19), and the complete set of experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C49",
+      "C52",
+      "C53"
+    ],
+    "result": "Theory suggests coevolution can promote innovations by deforming fitness landscapes, but this had not been directly tested before; the study provides evidence that natural coevolutionary processes can repeatedly drive viral host-range expansions, with implications for understanding pandemic risk and environmental change effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28 and C49 establish the theoretical background and knowledge gap. However, C52-C53 are speculative extrapolations to broader implications (pandemics, environmental change) that go beyond what the \u03bb-E. coli system can directly support. While the core finding is supported, the broader implications require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study used specific bacterial and phage strains with characterized mutations: cI26 \u03bb (strictly lytic), REL606 E. coli (ancestral), and EcC4/LR01 (malT\u2212 mutants), with OmpF+ requiring three specific mutations (A3034G, G3319A, T3321A) plus one additional mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 describe the biological materials and genetic requirements based on prior characterization (Meyer et al., 2012; Maddamsetti et al., 2018; Drake, 1991). These are well-documented facts about the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Fitness measurements used a 1:9 ratio of library to ancestral \u03bb in 4-hour competitions, yielding an average of 107,839 high-quality reads per sample, with no amplification bias detected and uniform variance across fitness values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 and C65-C67 describe the experimental protocol and quality control measures. The lack of amplification bias (Figure 1\u2014figure supplement 2) and uniform variance (Figure 1\u2014figure supplement 4) validate the fitness measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C72",
+      "C73"
+    ],
+    "result": "Simulations used 960 generations, population size ~6.3\u00d710^9, detection threshold of 5000 \u03bb particles, with missing fitness values imputed from nearest neighbors, running 300 trials per treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C72-C73 describe simulation parameters based on experimental estimates and detection limits. The authors acknowledge the generation number is somewhat arbitrary but conservative (likely an overestimate), which strengthens rather than weakens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C48",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Competition and replay experiments used appropriate protocols: phage competitions ran 24 hours, host competitions 4 hours (to prevent \u03bb evolution), replays ran 31 days with 12 replicates per treatment, with detection limit ~500 pfu/ml, and lacZ\u03b1 marker having slight but non-significant fitness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C76-C81 describe experimental protocols with appropriate controls and justifications. The short duration of host competitions (C78) prevents confounding evolution, and the marker effect (C48) is acknowledged but deemed negligible given large fitness differences observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Statistical analyses used Benjamini-Hochberg procedure to control false discovery rates and AIC for model selection, resulting in a reduced model with 77 of 111 terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe appropriate statistical methods for multiple testing correction and model selection. The use of both AIC and adjusted R-squared (mentioned in text) provides robust model validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Amplicon sequencing data have been deposited in NCBI Sequence Read Archive under BioProject PRJNA646809.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 states data availability, which is verifiable and supports reproducibility of the research.",
+    "result_type": "MINOR"
+  }
+]

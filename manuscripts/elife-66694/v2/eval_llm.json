@@ -1,0 +1,398 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Purified SARM1 TIR domain exhibits low activity at concentrations below 20 \u00b5M and shows concentration-dependent activation with parabolic kinetics. Analytical ultracentrifugation reveals the enzyme is predominantly monomeric (~90%) with a minor oligomeric fraction (~10%), and adding purified enzyme to lysates does not restore activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 are well-supported by multiple complementary experiments including activity assays (Figure 2A-C), analytical ultracentrifugation (Figure 2D), and lysate reconstitution experiments (Figure 2B). The parabolic concentration dependence and AUC data provide strong evidence for concentration-dependent oligomerization as the mechanism underlying activity loss during purification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Macroviscogens (PEG 8000, 3350, 1500, 400) dramatically increase SARM1 activity by 200-2000 fold, while microviscogens (sucrose, glycerol) have negligible effects. PEG 3350 shows concentration- and enzyme-dependent activation, with Hill coefficient decreasing from 3.8 to 1.3 in the presence of PEG, suggesting reduced cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C37-C50 are strongly supported by systematic dose-response experiments (Figure 2E, 2G, 2J) and Hill coefficient analysis (Figure 2\u2014figure supplement 1C-D). The differential effects of macroviscogens versus microviscogens, along with the quantitative fold-changes and Hill coefficient data, provide robust evidence for molecular crowding-induced activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Thiophilic metals (NiCl2, ZnCl2, CdCl2, CoCl2, CuCl2) inhibit SARM1 activity in the presence of PEG. ZnCl2 and berberine chloride show similar IC50 and Ki values in PEG-containing assays compared to lysate-based assays, validating the PEG system. Metal titration suggests all enzyme is active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 are well-supported by inhibitor characterization experiments (Figure 2K-N, Table 1, Figure 2\u2014figure supplement 2). The consistency of IC50 and Ki values across different assay conditions (lysate, pure protein with/without PEG) provides strong validation that PEG does not introduce artifacts. The metal titration data (C53) supporting 100% active enzyme is appropriately qualified as inference-based.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "PEG 3350 and sodium citrate induce SARM1 precipitation that correlates with enzymatic activity. The precipitation is reversible and concentration-dependent for both enzyme and precipitant. 1,6-hexanediol inhibits pure protein activity but not PEG/citrate-induced activity, suggesting a liquid-to-solid phase transition rather than liquid-liquid phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 are strongly supported by centrifugation experiments (Figure 3A-C), reversibility studies (Figure 3\u2014figure supplement 1B), and 1,6-hexanediol experiments (Figure 3D-E). The differential sensitivity to 1,6-hexanediol provides mechanistic insight distinguishing liquid-liquid from liquid-solid phase transitions. The lack of effect of inhibitors on precipitation (C70) is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Negative stain electron microscopy reveals that SARM1 TIR domain forms octameric ring structures (~8 nm diameter) even without additives. In the presence of sodium citrate, significantly larger ring-like structures form (mean area 172 nm\u00b2 vs 66 nm\u00b2 without additive, p<0.00001), suggesting higher-order oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are well-supported by negative stain EM data (Figure 3F-H) with appropriate statistical analysis. The particle size measurements are quantitative (n=100 for each condition) and the diameter of basal structures aligns with known octameric architecture from prior structural studies. The significant increase in particle area with citrate provides direct visual evidence for the proposed phase transition mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "SARM1 catalytic efficiency peaks at pH 6-8, primarily due to effects on kcat rather than Km. The pH profile is bell-shaped with pKa values of 4.9 \u00b1 0.2 and 8.8 \u00b1 0.2, consistent with a glutamate (likely E642) acting as a catalytic residue. pH effects appear independent of precipitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by systematic pH-dependent kinetic analysis (Figure 3I) performed in triplicate. The bell-shaped pH profile with quantified pKa values provides strong evidence for ionizable catalytic residues. The independence from precipitation (C77) is an important control showing pH affects catalysis directly. The inference about E642 (C79) is appropriately qualified and supported by prior literature and mutagenesis data (C112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PEG 3350 (25% w/v) increases SARM1 kcat by 2000-fold and kcat/Km by 7000-fold while decreasing Km 3.3-fold. Increasing PEG concentration causes Km to plateau at ~500 \u00b5M and kcat to increase linearly, with catalytic efficiency reaching ~1700 M\u207b\u00b9s\u207b\u00b9, nearly identical to lysate and on-bead measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are strongly supported by comprehensive steady-state kinetic analysis at varying PEG concentrations (Figure 4A-E, Table 2). The convergence of catalytic efficiency values between PEG-activated pure protein and lysate/on-bead measurements (C87) provides critical validation that PEG recapitulates the native active state. The dominance of kcat changes over Km changes (C83) supports the multimerization mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "At physiologically relevant SARM1 concentrations (500 nM) with PEG, the enzyme shows Km = 1600 \u00b5M and kcat = 0.24 s\u207b\u00b9. The Km is similar to that at 20 \u00b5M without PEG, but kcat is ~100-fold higher with PEG, indicating that PEG enhances turnover without substantially affecting substrate binding. kcat correlates directly with enzyme and PEG concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are well-supported by concentration-dependent kinetic studies (Figure 4F-J). The ability to measure activity at 500 nM (near lysate concentrations) represents a significant technical advance. The differential effects on kcat versus Km (C91) and the correlation of kcat with concentration (C92) provide strong mechanistic insights into how multimerization enhances catalysis primarily through increased turnover rather than substrate affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "LC-MS analysis shows SARM1 produces both ADPR and cADPR from NAD+, with consistent ADPR/cADPR ratios over time (10\u00b12 without additive, 16\u00b11 with PEG, 23\u00b13 with citrate). SARM1 cannot cleave cADPR in the absence of additive or with citrate, but slowly cleaves it with PEG (IC50 = 100\u00b110 \u00b5M, competitive inhibition), consistent with an ordered uni-bi mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101 are strongly supported by time-course LC-MS experiments (Figure 5A-D, Figure 5\u2014figure supplements 2-3) with appropriate statistical analysis. The consistent ADPR/cADPR ratios over time (C94) and inability to cleave cADPR under most conditions (C99) provide strong evidence for the ordered uni-bi mechanism. The differential product ratios with different additives (C96-C97) suggest conformational effects on the active site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "SARM1 shows broad substrate tolerance for adenosine substitutions (ENAD, NGD, NHD, NADP+, sNAD, 3apAD) but cannot cleave reduced forms (NADH, NHDH), FAD, or compounds with carboxylic acid substitutions at the nicotinamide position (NaMN, NaAD). Low-level cleavage of NMN was observed. ATP, ADP, GTP, and ara-F-NAD+ were not substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C110 are well-supported by systematic substrate specificity screening (Figure 5\u2014figure supplement 4) performed in duplicate with and without PEG. The comprehensive panel of 16 NAD+ analogs provides robust structure-activity relationships. The inability to cleave reduced forms (C103) and the differential tolerance for specific substitutions (C108-C109) provide valuable mechanistic insights into substrate recognition and catalysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Site-directed mutagenesis of residues in the TIR domain, BB loop, and SARM1-specific loop reduces catalytic efficiency 100-2000 fold. E642A shows the most dramatic effect. Mutations Y568A, G601P, H640A, and H685A reduce both activity and precipitation, suggesting roles in multimerization. Several mutations (G601P, D627K, K628D, C629S) prevent axonal degeneration post-axotomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are well-supported by mutagenesis studies (Figure 5E-G) performed in duplicate, with validation from prior literature (C114-C115). The correlation between reduced precipitation and reduced activity for specific mutants (C113) provides strong evidence linking multimerization to catalysis. The consistency with published functional studies in neurons (C115) validates the biological relevance of the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "GFP-tagged SARM1 SAMTIR-E642A forms puncta in HEK293T cells (34.4% of cells), while the E642A/G601P double mutant shows dramatically reduced puncta formation (96.3% baseline fluorescence). Since SAM domain octamerization is unaffected by G601P, puncta formation is driven primarily by TIR domain multimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 are strongly supported by flow cytometry imaging analysis (Figure 6A-C) with large cell numbers (20,927 and 9,895 cells analyzed). The dramatic reduction in puncta with the G601P mutation provides direct cellular evidence that TIR domain multimerization drives puncta formation. The inference that SAM domains are not affected by G601P (C119) is reasonable based on structural knowledge, though direct confirmation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Citrate activates C. elegans TIR-1 orthologs: ceTIR shows 22-fold activation and ceSAMTIR shows 1.4-fold activation. ceSAMTIR undergoes concentration-dependent phase transition with citrate, with protein shifting from supernatant to pellet at citrate concentrations \u2265500 mM, and enzymatic activity correlating with protein location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 are well-supported by activity assays and fractionation experiments with C. elegans constructs (Figure 6\u2014figure supplement 1B-C). The lower activation of ceSAMTIR compared to ceTIR (C120-C121) parallels the modest activation seen with ARM domain deletion in mammalian SARM1, providing cross-species validation. The phase transition behavior of ceSAMTIR (C122) demonstrates conservation of the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "TIR-1 forms puncta in C. elegans axons under basal conditions. Citrate treatment (8 mM, 2-3 hours) does not change puncta number but significantly increases mean puncta area (84.83 vs 58.42 nm\u00b2, p<0.0001, n=902 vs 739 puncta). The increase in puncta size is not secondary to gross axon morphology changes, indicating citrate-induced TIR-1 multimerization in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are strongly supported by quantitative confocal microscopy analysis (Figure 6D-H) with appropriate statistical analysis and large sample sizes. The selective increase in puncta area without change in number (C124-C125) provides elegant evidence for enhanced multimerization rather than de novo puncta formation. The control showing independence from gross morphology (C126) is important for ruling out artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Citrate treatment (8 mM) of C. elegans causes no significant axonal damage at 2-3 hours but significant damage at 24 hours compared to controls. In tir-1(qd4) null mutants, 98% of axons remain intact after 24-hour citrate exposure, demonstrating that citrate-induced axonal degeneration is TIR-1 dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 are strongly supported by time-course axon damage quantification (Figure 6I) and genetic rescue experiments with tir-1 mutants (Figure 6J-K). The temporal progression from puncta enlargement (2-3 hr) to axonal damage (24 hr) provides a logical mechanistic sequence. The near-complete protection in tir-1 mutants (C130) provides definitive genetic evidence for TIR-1 dependence, establishing causality rather than correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C139",
+      "C141"
+    ],
+    "result": "SARM1 activity is concentration- and crowding-dependent, becoming more active upon multimerization. Activity is enhanced by phase transitions in vitro, with multimerization increasing catalytic efficiency and turnover by >2000-fold. This is consistent with cellular and in vivo observations of SARM1 puncta formation and size increases in response to injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136, C139, and C141 represent well-supported summary conclusions integrating multiple experimental approaches (biochemical, cellular, and in vivo). The >2000-fold activity enhancement (C141) is directly measured (Figure 4), and the consistency across in vitro, cellular, and in vivo systems (C136) provides strong validation. These conclusions are appropriately supported by the collective evidence from the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C31"
+    ],
+    "result": "Citrate induces a phase transition enhancing SARM1 activity ~2000-fold. The G601P mutation disrupts this phase transition, reducing activity, precipitation in vitro, and puncta formation in cells. Citrate induces TIR-1-dependent axonal degeneration in C. elegans with formation of larger puncta, demonstrating that multimerization is essential for degeneration in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 and C31 represent the core findings of the manuscript and are strongly supported by converging evidence from biochemical assays (Figures 2-5), cell culture (Figure 6A-C), and C. elegans experiments (Figure 6D-K). The G601P mutation provides a critical molecular tool linking in vitro biochemistry to cellular and in vivo phenotypes. The consistency across all experimental systems provides robust support for the central thesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C140",
+      "C142",
+      "C143"
+    ],
+    "result": "While mutations disrupting the TIR-ARM interaction cause only ~2-fold activation, SARM1 multimerization increases activity >2000-fold. Pre-organization of TIR domains within the octameric structure likely increases effective concentration facilitating multimerization. The ARM domain prevents TIR domain multimerization and limits full enzyme activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140 and C143 are supported by cited literature and the current data showing dramatic activation beyond ARM domain release. However, C142 is explicitly labeled as speculative inference. While the model is reasonable and consistent with structural data, it lacks direct experimental validation in this study. The claims appropriately distinguish between established facts (C140) and mechanistic speculation (C142).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors propose a model where increasing SARM1 protein levels induces TIR domain multimerization that enhances activity via phase transition (mimicked by PEG and citrate). The enhanced activity is hypothesized to result from higher-order oligomer formation facilitating inter-TIR domain contacts for enhanced NAD+ hydrolysis and axonal degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 represent the proposed mechanistic model (Figure 7) integrating all experimental findings. While C151 is well-supported by the collective data, C152-C153 are explicitly presented as hypotheses and expectations. The model is consistent with all observations (EM, puncta formation, activity enhancement, in vivo degeneration) but some mechanistic details remain speculative. The authors appropriately qualify these as hypotheses requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establishing SARM1 as a neuronally expressed NAD+ glycohydrolase involved in axonal degeneration, its domain structure, and prior knowledge about regulation by the ARM domain and key catalytic residues. Loss of SARM1 is protective in disease models, making it a therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 represent established background knowledge supported by appropriate citations to prior literature. These claims provide essential context for the current work. C22 is additionally supported by new mutagenesis data in this manuscript (Figure 5F). All background claims are appropriately referenced and accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "SARM1 multimerization is analogous to other biological systems including purinosomes, inflammasomes, and apoptosomes. Similar phase transitions occur in multiple signaling pathways (cGAS, FUS, huntingtin). Other TIR domain proteins form fibrils, and punctate SARM1 expression has been observed in neurons. Physiological citrate concentrations (0.1-0.4 mM) are lower than those required for in vitro activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 and C154-C157 provide important biological context through comparisons to other systems, all supported by appropriate citations. The comparison to phase transitions in neurodegenerative disease proteins (C156) is particularly relevant. The acknowledgment that physiological citrate levels are lower than in vitro requirements (C157) is an important caveat appropriately noted by the authors, though they provide evidence that lower concentrations are effective in vivo (C158).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Lower citrate concentrations promote puncta formation and degeneration in vivo compared to in vitro requirements. In summary, SARM1 catalytic activity is enhanced by TIR domain multimerization and phase transition reminiscent of other neurodegenerative proteins. Inhibiting multimerization or phase transition could be a therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C158 is supported by the in vivo C. elegans data showing effects at 8 mM citrate (Figure 6), which is lower than the mM concentrations used in vitro, though still supraphysiological. C159 is a well-supported summary conclusion. C160 is appropriately qualified as speculative regarding therapeutic potential. The therapeutic speculation is reasonable given the strong evidence for multimerization's role in activity, though actual drug development would require extensive additional work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C49",
+      "C50",
+      "C51",
+      "C56",
+      "C108"
+    ],
+    "result": "Aminoglycosides induce the SOS response in E. coli carrying the qnrD-plasmid pDIJ09-518a. Tobramycin and gentamicin at sub-MIC levels (1% of MIC) induced 2.8-fold and 3.13-3.71-fold increases in qnrD and sulA expression, respectively, in plasmid-bearing strains, while no induction occurred in wild-type E. coli without the plasmid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44, C49-C51, C56, and C108 provide converging evidence from multiple independent assays (qRT-PCR for qnrD and sulA expression, flow cytometry with SOS reporter) demonstrating aminoglycoside-induced SOS response specifically in plasmid-bearing strains. The use of appropriate controls (wild-type without plasmid, SOS-deficient mutants) and multiple biological replicates with statistical significance strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "qnrD expression is regulated by the SOS response through a conserved LexA-box. A highly conserved SOS-box (15/16 bases identical to E. coli consensus) was identified upstream of qnrD, and qnrD expression was induced by mitomycin C and ciprofloxacin in a RecA- and LexA-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 demonstrate SOS regulation through sequence analysis (C40-C41), functional validation with known SOS inducers (C42-C43), and genetic complementation experiments (C45-C46). The use of SOS-deficient mutants (\u0394recA, lexAind, LexA-box*) as negative controls and complementation to restore function provides strong mechanistic evidence. Background claims C33-C39 establish the known SOS regulatory framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The plasmid backbone of pDIJ09-518a, independent of qnrD, is necessary and sufficient for aminoglycoside-induced SOS response. Chromosomal insertion experiments showed that qnrD alone (WT::qnrD) did not respond to aminoglycosides, while the entire plasmid (WT::pDIJ09-518a) or qnrD complemented with plasmid backbone (WT::qnrD + pDIJ09-518a\u0394qnrD) restored aminoglycoside-induced qnrD expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 use elegant genetic dissection with chromosomal insertions and complementation to demonstrate that plasmid backbone genes (not qnrD itself) mediate the aminoglycoside response. The experimental design with appropriate controls (qnrD alone vs. full plasmid vs. complementation) provides strong evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The qnrD-plasmid induces nitrosative stress through NO accumulation, not oxidative stress. NO production was significantly elevated (16.55-21.01 arbitrary units) in plasmid-bearing strains even without aminoglycosides, and was reduced by NO scavenger cPTIO. In contrast, no ROS formation or katG induction was detected with tobramycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 demonstrate NO accumulation using DAF-2 DA fluorescence assays with NO scavenger controls (C67), while C62-C65 rule out ROS involvement using DHR-123 fluorescence and katG expression. The convergence of positive NO detection and negative ROS detection, along with scavenger controls, provides strong evidence for nitrosative rather than oxidative stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Aminoglycoside-induced SOS response in plasmid-bearing E. coli involves double-strand breaks (DSBs) and 8-oxo-G accumulation. MutT overexpression abolished SOS induction, while RecB deletion (but not RecF deletion) prevented SOS induction and caused loss of viability, indicating DSB-mediated DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 use genetic approaches (MutT overexpression, recB/recF deletions) to demonstrate the DNA damage pathway. The differential effects of RecB vs. RecF deletion (C70-C71) specifically implicate DSBs, and the viability loss in \u0394recB (C73) supports the functional importance. However, direct measurement of 8-oxo-G incorporation is missing, making the mechanism partially inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Ineffective Hmp-mediated NO detoxification is required for aminoglycoside-induced SOS response. Hmp overexpression abolished SOS induction, while hmp deletion increased SOS response. NO scavenger treatment prevented SOS induction, demonstrating that both NO accumulation and aminoglycosides are necessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 provide comprehensive evidence through gain-of-function (Hmp overexpression, C74), loss-of-function (hmp deletion, C75), complementation (C78), and chemical intervention (NO scavenger, C79). The bidirectional genetic manipulation and chemical validation strongly support the role of Hmp-mediated detoxification in the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Two plasmid genes, ORF3 and ORF4, drive NO accumulation and inhibit NO detoxification. ORF3 (putative FAD-binding oxidoreductase) promotes NO synthesis, while ORF4 (putative CRP/FNR-type transcription factor) represses hmp expression. Deletion of ORF3 abolished SOS induction and decreased NO production, while ORF4 deletion increased hmp transcription and decreased NO levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C96 combine bioinformatic predictions (C82-C83) with functional validation through deletion and complementation experiments. The differential effects of ORF3 (complete SOS abolition, C84-C86) vs. ORF4 (partial effect, C87-C90) and the double deletion phenotype (C92-C94) provide strong evidence for distinct but complementary roles. The specificity for aminoglycoside-induced (not mitomycin C-induced) SOS response (C96) further validates the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Aminoglycoside-induced SOS response increases fluoroquinolone MICs. Pre-exposure to sub-MIC tobramycin increased MICs of levofloxacin, ofloxacin, and ciprofloxacin by 1.5-2.7-fold in qnrD-carrying E. coli, comparable to ciprofloxacin pre-exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 demonstrate the functional consequence of aminoglycoside-induced qnrD expression through standard MIC determinations. The comparison with ciprofloxacin pre-exposure as a positive control and the correlation with increased qnrD expression provide evidence for the clinical relevance of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Aminoglycoside pre-exposure promotes emergence of high-level fluoroquinolone resistance through QRDR mutations. Tobramycin pre-treatment increased mutant prevention concentrations 2-fold and mutation frequency 5.4-fold, with surviving mutants carrying multiple QRDR mutations and exhibiting resistance to multiple fluoroquinolones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 demonstrate the evolutionary consequence through MPC assays (C103-C104), sequencing of resistant mutants (C105), and mutation frequency measurements (C106). The convergence of increased mutation frequency, elevated MPC, and molecular characterization of QRDR mutations provides strong evidence for aminoglycoside-mediated selection of fluoroquinolone resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C52"
+    ],
+    "result": "The qnrD-plasmid pDIJ09-518a is stably maintained without selective pressure and does not affect bacterial viability at sub-MIC aminoglycoside concentrations. The plasmid was maintained over 30 days without antibiotics, and sub-MIC tobramycin had no impact on growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C52 provide evidence for plasmid stability and lack of fitness cost through growth curves (C47) and 30-day serial passage with PCR verification (C48). These controls are important for establishing that the observed phenotypes are not due to plasmid loss or growth defects. The experimental design with appropriate time points and verification methods is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C114"
+    ],
+    "result": "The aminoglycoside-induced SOS response is specific to E. coli and not observed in Providencia rettgeri carrying the same plasmid. Tobramycin did not induce sulA expression in P. rettgeri, while mitomycin C did, suggesting species-specific differences in NO detoxification capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C114 demonstrate species specificity through comparative experiments in P. rettgeri. The observation that mitomycin C (but not tobramycin) induces SOS in P. rettgeri rules out general plasmid dysfunction. The 63.38% Hmp identity (C55) provides a potential mechanistic explanation, though this remains speculative. The result is well-supported but represents a negative finding that limits the generalizability of the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors propose a model where NO accumulation from the plasmid is tolerated in the absence of aminoglycosides through GO-repair system activity, but aminoglycoside co-exposure overwhelms this system, leading to 8-oxo-G accumulation, DSBs, and SOS induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C113 represent a mechanistic model synthesizing the experimental findings. While the model is consistent with the data (NO accumulation, MutT overexpression effects, RecB requirement), direct evidence for 8-oxo-G accumulation and the specific interaction between aminoglycosides and NO-induced damage is lacking. The authors acknowledge this limitation, stating they 'did not evidence directly the 8-oxo-G incorporation.' The model is plausible but requires additional biochemical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The qnrD-plasmid is mobilizable and stable without antibiotic selective pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 states the plasmid is mobilizable but provides no data ('data not shown'), making this claim unverifiable. Claim C116 regarding stability is supported by C48. The mobilizability claim is important for assessing horizontal transfer potential but lacks supporting evidence in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C100",
+      "C101",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Background and context claims establishing the clinical significance of PMQR genes, the SOS response, and fluoroquinolone resistance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C9-C32, C100-C101, C117-C122) represent established knowledge from the literature, appropriately cited. They provide necessary context for interpreting the novel findings but do not constitute new results from this study. The citations appear appropriate and the background information is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Abstract summary claims stating that ORF3 and ORF4 drive NO accumulation through synthesis and detoxification inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are summary statements from the abstract that are supported by the detailed experimental results in claims C82-C96. These represent accurate summaries of the main findings regarding ORF3 and ORF4 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Abstract summary claim that SOS induction is due to NO accumulation in the presence of sub-MIC aminoglycosides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is an abstract summary supported by the detailed experimental results in claims C66-C81. This accurately summarizes the main mechanistic finding.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2245 @@
+{
+  "submission": {
+    "id": "0e55149e-0a88-438c-b136-62fdbc00ffc5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:37:42.008789Z",
+    "updated_at": "2025-12-03T14:37:42.008789Z"
+  },
+  "content": [
+    {
+      "id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "submission_id": "0e55149e-0a88-438c-b136-62fdbc00ffc5",
+      "content_type": "manuscript",
+      "content_text": "# Global analysis of cytosine and adenine DNA modifications across the tree of life\n\n## Authors\n\n- Sreejith Jayasree Varma<sup>1</sup> ([ORCID: 0000-0002-1669-2254](https://orcid.org/0000-0002-1669-2254))\n- Enrica Calvani<sup>2</sup>\n- Nana-Maria Gr\u00fcning<sup>1</sup>\n- Christoph B Messner<sup>2</sup>\n- Nicholas Grayson<sup>4</sup> ([ORCID: 0000-0002-9998-6783](https://orcid.org/0000-0002-9998-6783))\n- Floriana Capuano<sup>3</sup>\n- Michael M\u00fclleder<sup>5</sup>\n- Markus Ralser<sup>1</sup> ([ORCID: 0000-0001-9535-7413](https://orcid.org/0000-0001-9535-7413)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, Charit\u00e9 Universit\u00e4tsmedizin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n2. The Molecular Biology of Metabolism Laboratory, The Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))\n3. Department of Biochemistry and Cambridge Systems Biology Center, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))\n4. Wellcome Trust Sanger Institute, Wellcome Trust Genome Campus Hinxton United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))\n5. Core Facility-High Throughput Mass Spectrometry, Charit\u00e9 Universit\u00e4tsmedizin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n\n\u2020 Corresponding author\n\n## Abstract\n\nInterpreting the function and metabolism of enzymatic DNA modifications requires both position-specific and global quantities. Sequencing-based techniques that deliver the former have become broadly accessible, but analytical methods for the global quantification of DNA modifications have thus far been applied mostly to individual problems. We established a mass spectrometric method for the sensitive and accurate quantification of multiple enzymatic DNA modifications. Then, we isolated DNA from 124 archean, bacterial, fungal, plant, and mammalian species, and several tissues and created a resource of global DNA modification quantities. Our dataset provides insights into the general nature of enzymatic DNA modifications, reveals unique biological cases, and provides complementary quantitative information to normalize and assess the accuracy of sequencing-based detection of DNA modifications. We report that only three of the studied DNA modifications, methylcytosine (5mdC), methyladenine (N6mdA) and hydroxymethylcytosine (5hmdC), were detected above a picomolar detection limit across species, and dominated in higher eukaryotes (5mdC), in bacteria (N6mdA), or the vertebrate central nervous systems (5hmdC). All three modifications were detected simultaneously in only one of the tested species, Raphanus sativus. In contrast, these modifications were either absent or detected only at trace quantities, across all yeasts and insect genomes studied. Further, we reveal interesting biological cases. For instance, in Allium cepa, Helianthus annuus, or Andropogon gerardi, more than 35% of cytosines were methylated. Additionally, next to the mammlian CNS, 5hmdC was also detected in plants like Lepidium sativum and was found on 8% of cytosines in the Garra barreimiae brain samples. Thus, identifying unexpected levels of DNA modifications in several wild species, our resource underscores the need to address biological diversity for studying DNA modifications.\n\n## Introduction\n\nEnzyme-catalyzed DNA modifications are studied for their roles in chromatin structure, gene-expression regulation, prevention of viral DNA integration, epigenetic inheritance, cell\u2013environment interactions, developmental biology, immunity, memory, aging, and cancer (Miller and Grant, 2013; Breiling and Lyko, 2015; Guo et al., 2011; Jessop et al., 2018; de la Calle-Fabregat et al., 2020; Day and Sweatt, 2010; Masser et al., 2018; Han et al., 2019; Cusack et al., 2020; Day, 2017). The methylation of the fifth carbon (C5) of the cytosine ring to yield 5-methyl-2\u2032-deoxycytidine (5mdC) was the first nucleotide modification to be discovered (Hotchkiss, 1948) and has remained the most intensively studied (Umer and Herceg, 2013; Smith and Meissner, 2013). 5mdC can be enzymatically oxidized into 5-hydroxymethyl-2\u2032-deoxycytidine (5hmdC) and further into 5-formyl-2\u2032-deoxycytidine (fdC) and 5-carboxyl-2\u2032-deoxycytidine (cadC) (Hu et al., 2015; Ito et al., 2011; Tahiliani et al., 2009). Although these modifications have been described as transient intermediates of 5mdC demethylation, at least one (5hmdC) has been found to accumulate in the mammalian brain, specifically in the large Purkinje neurons, indicating a regulatory function (Kriaucionis and Heintz, 2009). N4-methyl-2\u2032-deoxycytidine (4mdC), found in bacteria, is yet another form of cytosine modification (Janulaitis et al., 1983; Ehrlich et al., 1987). Cytosine thus exists in multiple chemical states (dC, 5mdC, 5hmdC, fdC, cadC, 4mdC, as well as the rare 4,5-dimethyl-2\u2032-deoxycytidine [4,5dmdC]) (Umer and Herceg, 2013; Klimasauskas et al., 2002). Another important modification is the N6 methylation of adenine. N6-methyl-2\u2032-deoxyadenosine (N6mdA) was initially discovered in bacterial genomes (Dunn and Smith, 1955) and later also in archaea, plants, and nematodes (Couturier and Lind\u00e5s, 2018; Liang et al., 2018). Although N6mdA is not essential in microbial model organisms, this modification has been increasingly associated with functions that promote virulence or to counteract viral DNA integration (Heusipp et al., 2007; O\u2019Brown and Greer, 2016). Indeed, it seems likely that DNA modifications play different roles in different species, as indicated by the varying amounts of DNA modifications across model organisms. For instance, Arabidopsis thaliana has orders of magnitude higher levels 5mdC compared to the dominant insect model Drosophila melanogaster, while the dominant yeast model organism Saccharomyces cerevisiae lacks this modification altogether (M\u00fcnzel et al., 2011; Capuano et al., 2014).\n\nUntil recently, studying DNA modifications was technically challenging, information concerning their content and function was scarce for species other than model organisms, several crops, and humans. Moreover, it was rather difficult to translate the knowledge derived from those intensively studied species into a broader biological context. For instance, it is hard to judge from the current literature if the low amount of DNA modifications in laboratory yeast and D. melanogaster, or the high amount in A. thaliana (Capuano et al., 2014), represent the rule or the exception in their respective phylogenetic group without a broader multi-species dataset for comparison.\n\nIn addition to the position-specific information provided by sequencing technologies (Chen et al., 2020; Liu et al., 2019), global quantities of DNA modifications are required to obtain a complete picture about their function and metabolism. For instance, quantitative values are required to determine activity of the biochemical pathways that modify nucleic acids. Moreover, there are roles of DNA modifications that do not necessarily depend on their specific location in the genome, like in anti-viral immunity. Also, there might be relationships between different modifications that depend on their chemistry rather than their function. Last but not least, absolute concentrations can help to normalize the values as provided by sequencing technologies and to assess their false positive and false negative rates. We and others Capuano et al., 2014; Le et al., 2011; Chowdhury et al., 2017; Tang et al., 2015; Chilakala et al., 2019; Gosselt et al., 2019 have shown previously that targeted mass spectrometry is an ideal technology to determine absolute quantities of DNA modifications, specifically, if they are low abundant and in the noise range of sequencing technologies. Mass spectrometry further is suitable for studying poorly characterized species, as no prior knowledge about the genome is required for data analysis. Aside from that, targeted mass spectrometry is economical, with running costs per sample amounting to single-digit dollars. For these reasons, mass-spectrometric quantification is well suited for identifying interesting patterns in the amount and relative abundances of DNA modifications, specifically within understudied species.\n\n## Results and discussion\n\n### Global quantification of a panel of enzymatic DNA modification using liquid chromatography/multiple reaction monitoring\n\nIn order to quantify the global levels of multiple enzymatic DNA modifications in a single analysis, we expanded a previous method based on liquid chromatography-multiple reaction monitoring (LC-MRM) and designed for the quantification of 5mdC (Tsuji et al., 2014). This method is characterized by a sensitivity down to attomoles and a broad dynamic range, and discriminates between RNA and DNA modifications, clarifying the previously debated content of 5mdC in several yeast species (Capuano et al., 2014). In this method, isolated DNA is first enzymatically digested to obtain the corresponding nucleosides using a nuclease enzyme mixture (DNA Degradase Plus, Zymo Research). The resulting digest is directly analyzed by a targeted assay using LC-MRM using a triple quadrupole (QQQ) mass spectrometer. Distinguishing the nucleosides arising from a DNA monomer from a potentially co-purified RNA monomer occurs on the basis of the precursor mass difference of the sugar moiety. Such a strategy ensures the measured nucleosides are free from RNA contamination as many base modifications are also present in RNA (Capuano et al., 2014; Tsuji et al., 2014). For quantifying other DNA modifications, namely 5hmdC, N6mdA, cadC, and fdC, we obtained synthetic standards for these molecules and optimized the instrumental and chromatography parameters accordingly (Tables 1 and 2; Figure 1\u2014figure supplement 1). Moreover, we supplemented the method by a neutral loss scan as a strategy to confirm the MRM results, as well as to detect additional modifications such as 4mdC, that were not included among the standards. Combined with the high sensitivity offered by a triple quadrupole mass spectrometer (Agilent 6470), we were able to achieve detection limits in picomolar ranges (Figure 1A).\n\n**Table 1.**\n Concentrations of pure nucleoside standards and their sources.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Molecule: vendor/code</th>\n      <th>Pure stock concentration(\u00b5M)</th>\n      <th>Pool concentration(\u00b5M)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2dC: Sigma/D3897-100MG</td>\n      <td>5,000</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>5hmdC: Berry and Associates/PY7588</td>\n      <td>0.5</td>\n      <td>0.04</td>\n    </tr>\n    <tr>\n      <td>5mdC: Santa Cruz/ sc-278256</td>\n      <td>100</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>cadC: Berry and Associates/PY7593</td>\n      <td>0.5</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>dA: Sigma/D7400-250MG</td>\n      <td>5,000</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>dG: Sigma/854999</td>\n      <td>5,000</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>fdC: Berry and Associates/PY 7589</td>\n      <td>0.5</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>N6mdA: Alfa Aesar/ J64961</td>\n      <td>0.5</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>T: Sigma/89270\u20131G</td>\n      <td>5,000</td>\n      <td>100</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Retention times and transitions for nucleosides analyzed.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Molecule</th>\n      <th>Precursor ion</th>\n      <th>Qualifier Product ion</th>\n      <th>Quantifier Product ion</th>\n      <th>Retention time (min)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2dC</td>\n      <td>228.1</td>\n      <td>95</td>\n      <td>112.0</td>\n      <td>4.362</td>\n    </tr>\n    <tr>\n      <td>cadC</td>\n      <td>272.0</td>\n      <td>137.9</td>\n      <td>155.9</td>\n      <td>5.193</td>\n    </tr>\n    <tr>\n      <td>5mdC</td>\n      <td>242.0</td>\n      <td>108.6</td>\n      <td>126.0</td>\n      <td>5.130</td>\n    </tr>\n    <tr>\n      <td>dG</td>\n      <td>268.1</td>\n      <td>\u2013</td>\n      <td>151.9</td>\n      <td>7.546</td>\n    </tr>\n    <tr>\n      <td>fdC</td>\n      <td>256.0</td>\n      <td>97</td>\n      <td>139.9</td>\n      <td>7.868</td>\n    </tr>\n    <tr>\n      <td>dA</td>\n      <td>252.1</td>\n      <td>\u2013</td>\n      <td>136.0</td>\n      <td>8.128</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>243.1</td>\n      <td>54.1</td>\n      <td>126.9</td>\n      <td>8.349</td>\n    </tr>\n    <tr>\n      <td>5hmdC</td>\n      <td>258.0</td>\n      <td>141.9</td>\n      <td>81.1</td>\n      <td>10.585</td>\n    </tr>\n    <tr>\n      <td>N6mdA</td>\n      <td>266.3</td>\n      <td>117</td>\n      <td>150.0</td>\n      <td>11.391</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig1-v1.jpg)\n\n**Figure 1.:** (A) Multiplex analysis of various genomic DNA modifications using liquid chromatography-multiple reaction monitoring following enzymatic digestion of DNA. The regression curves and limit of detection (LOD) for modifications 5mdC, 5hmdC, and N6mdA are represented. Although our method also quantifies cadC and fdC, we did not detect significant concentrations of these in any of the measured samples; these modifications were hence omitted from the graphical illustrations. (B) A total of 286 tissue samples from 124 species were analyzed in the present study: 19 species from plants, 12 from animals, 6 from yeast, 2 from archaea, and 85 from bacteria. (C\u2013D) Distribution of 5mdC, 5hmdC, and N6mdA across (C) archaeal, bacterial, and eukaryotic domains, and (D) animal, fungi, monera, plant, and protozoan kingdoms. The values depict percentage of cytosine residues bearing either methyl (%5mdC) or hydroxymethyl (%5hmdC) modification and percentage of adenine residues bearing methyl modification (N6mdA). Percentage modifications were calculated as ratio of modified cytosine residue and guanosine for 5mdC and 5hmdC; and ratio of modified adenine residue and thymine for N6mdA. The limits of detection for 5mdC, 5hmdC, and N6mdA are 4.6 nM, 320 pM, and 19 pM, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** TIC (Total Ion Chromatogram) of an authentic sample of 5mdC is shown as a comparison.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The broad range in cytosine hydroxymethylation in case of Garra barreimiae and Monodelphis domestica as well as methylation in Homo sapiens is due to the multiple tissues present. They have been deliberately combined to show the narrow distribution in other modifications. Please refer for tissue specific distribution.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** In (A) bleached (microbiota removed via bleaching) vs. unbleached (intact microbiota) flies and in (B) bleached flies fed with a sterilized vs. non-sterilized diet.\n\nUpon setting up the method, we sampled cells or tissues for a large number of species across the three domains of life. Because our method does not include any amplification steps and detects modifications on the DNA directly, it requires clean DNA at microgram levels, at least for the detection of the lowly concentrated DNA modifications. Unfortunately for some rare specimens, we only had limited sample amounts, and in many cases, standard DNA preparation protocols did not yield DNA of sufficient quality or concentration for our assay. However, by combining different protocols and sources, we were able to obtain clean DNA at microgram levels for 286 distinct tissues. To isolate DNA, we employed mostly a spin-column kit (Genomic-tip 20/G, Qiagen) which is chemically mild to DNA, and avoided strategies that involve the use of oxidants and reactive chemicals. However, for plant species, due to their biochemical composition, we were forced to use phenol\u2013chloroform extraction to obtain sufficient quantities of DNA. In such cases, reagents like \u03b2-mercaptoethanol (2-sulfanylethan-1-ol) were included to keep DNA damage to a minimum during the extraction. The obtained DNAs were from 124 different species, including 85 bacterial species, 6 yeast species, 2 archeal species, 19 plant species, and 18 tissue and cell-culture samples from multiple animal species, including human and mouse. The collection included both the typical model organisms, and specifically for bacteria, vertebrates, and plants we included a significant number of species that have been barely characterized at the molecular level so far (Figure 1B). Furthermore, for a number of vertebrates, including human, the model organisms mouse (Mus musculus), African clawed frog (Xenopus laevis), but also for some less studied species, the opossum (Monodelphis domestica), the Alpine marmot (Marmota marmota), and the Oman garra (Garra barreimiae), we obtained DNA from multiple tissues and/or cell lines in order to quantify tissue differences in the absolute DNA modification content. For plants, we focused on seedlings that were germinated in the lab (Varma and Calvani, 2022). The seedlings not only allowed for efficient DNA extraction, which can be hampered by high concentrations of plant polymers in fully differentiated plant tissues, but also for direct comparison between the plants at a similar developmental stage. Multiple species were analyzed in replicates to identify the extent of variation in the analytical technique which revealed reasonably consistent values for modifications measured across different species (Figure 1\u2014figure supplement 2).\n\n### While multiple lower eukaryotes lack DNA modifications, N6mdA dominates in bacteria, and 5mdC is the dominating DNA modification across higher eukaryotes\n\nOur results reveal major differences in the nature and global concentration of DNA modifications when comparing the domains of life (Figure 1C, D). First, despite the broad coverage, high sensitivity, and precision of our method, we did not detect significant levels of fdC and cadC in any of the genomes measured (limits of detection were 238 pM and 251 pM, respectively). These oxidized forms of 5-methyl-2\u2032-deoxycytidine have been associated with the degradation of 5mdC (Ito et al., 2011), and according to our results they seem to remain undetectable across species as they are known to be labile and do not accumulate to significant, genome-wide-scale levels. In addition, neutral loss scans conducted in parallel, confirmed the picture that across species, only 5mdC, 4mdC, 5hmdC, and 6mdA reached notable concentrations on the genome-wide level. A notable exception was that we detected hardly any of these DNA modifications in the unicellular fungi studied (Supplementary file 1). Hence it is not merely 5mdC (Capuano et al., 2014; Binz et al., 2018; Nai et al., 2020), but also its oxidized form 5hmdC along with N6mdA that are very low if not absent in typical yeast species. It is interesting in this context that the insects Trichoplusia ni, Spodoptera frugiperda, and D. melanogaster (Supplementary file 1) all had DNA modifications, but also at much lower levels compared to both, higher organisms but also bacteria. Indeed, the fruit fly D. melanogaster has so far been considered an unusual case among the laboratory model organisms, as it contains only trace amounts, if any, of cytosine methylation (Capuano et al., 2014; Lyko et al., 2000; Zhang et al., 2015), but our data suggests this picture could be common to insects and other lower eukaryotes.\n\nThe presence of other DNA modifications in D. melanogaster like N6mdA has also been contested due to the presence of an appreciable gut microbiome, which could confound the results (O\u2019Brown et al., 2019). We assessed this situation, comparing the genomic DNA obtained from fruit flies that possessed a functioning gut microbiome vs. ones grown under germ-free conditions. N6mdA was also detected in germ-free D. melanogaster (~0.04%, Figure 1\u2014figure supplement 3). In a recent study comparing DNA adenine methylation levels in multiple eukaryotic species, the bacterial contamination affected the N6mdA measurements. However, it was possible to distinguish the N6mdA in D. melanogaster tissue from microbial contamination using quantitative deconvolution (Kong et al., 2022). While the adult D. melanogaster contained methylated adenine as a DNA building block, ovarian cells collected from two moth species (T. ni and S. frugiperda) principally contained methylated cytosine as the preferred base modification (0.2 and 0.1%, respectively).\n\nWhat conclusions can be drawn from the low concentrations of DNA modifications in yeasts and insects? First, these results support the notion that enzymatic DNA modifications are not universal, which could have peculiar evolutionary consequences. Studies in yeast have concluded that DNA modifications could have been specifically lost during yeast evolution (Bhattacharyya et al., 2020). However, our result that insects can have similarly low DNA modification levels raises another possibility that DNA modifications could have evolved in higher eukaryotes and bacteria, after yeasts and insects branching off. As a rule, most genomes contained a single modification type that did pass the limit of detection of the highly sensitive method. Some exceptions to this were, however, encountered. A subset of the eukaryotes and a subset of prokaryotic species contained low concentrations also of a second modification, which could be either 5mdC, N6mdA, or 5hmdC (Figure 2, Figure 2\u2014figure supplement 1). For instance, Diplotaxis tenuifolia had low amounts of N6mdA (0.1%, Supplementary file 1) next to high amounts of 5mdC. Notably, species that exhibited 5hmdC were also observed to contain its precursor 5mdC. Of particular interest was Raphanus sativus, which was the only species among those analyzed that possessed all the three modifications at detectable levels and in parallel. Among prokaryotes, we observed only cytosine and adenine methylation modifications, with 5hmdC entirely missing. Our study further featured two archeal genomes (Sulfolobus acidocaldarius and Halobacterium salinarum), which shared a similar level of the cytosine modification but differed in their levels of adenosine modification. While we detected N6mdA in H. salinarum, no adenosine modification was observed for S. acidocaldarius (Supplementary file 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig2-v1.jpg)\n\n**Figure 2.:** The outer ring represents the kingdoms present within these domains. The groupings per number of modifications are shown as fill patterns on the inner ring, where dots represent species in which only one among 5mdC, 5hmdC, and N6mdA were found; crosses represent species bearing two modifications simultaneously; and no fill represents species carrying all three modifications.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig2-figsupp1-v1.jpg)\n\n### Tissue divergence of 5mdC concentrations in vertebrate and plant genomes\n\nAmong the DNA modifications, 5mdC had the highest abundance and was specifically abundant in plants. Most vertebrate genomes studied had a 5mdC content of around 5% (mean 4.66, SD 2.17) of the cytosine residues. Some species, including the model organisms Danio rerio and X. laevis, had higher levels consistent with early observations (Colwell et al., 2018). In plants, however, 5mdC concentrations of 10% (mean 20.34, SD 9.81) and higher were typical (Figure 1D). Extremely high values for cytosine methylation were observed in Andropogon gerardii and Allium cepa, where more than 35% of cytosines were methylated (Figure 1D, Supplementary file 1). As plants are known to possess polyploid genomes, high cytosine methylation values could be attributed to silencing of multiplied genes and the much larger non-functional parts of their genome (Masterson, 1994). Given that very low levels or no 5mdC were detected in yeast and insects, cytosine 5 methylation levels hence differ by several orders of magnitude within the eukaryotic kingdom.\n\nIn multicellular organisms, DNA modifications are important for development, and tissue differences between DNA modification patterns are observed (De Bustos et al., 2009; He et al., 2020; Zhu et al., 2018). Our data suggests that a change in the modification pattern or sequence context does not necessarily have a strong impact on the total concentrations of the DNA modifications, however. We analyzed spleen, muscle, lung, liver, kidney, heart, and CNS samples from five animal species, of which two are model organisms (X. laevis, M. musculus), and three non-model organisms (G. barreimiae, M. domestica, M. marmota). From M. musculus we further examined tissues from multiple inbred laboratory lines: BALB/c, FVB/N, Hsd/Ola/MF1, B6SJL/CD451/CD452, BALB/cAnN, 129S8, and F1/CBAxB6. In parallel, we analyzed multiple human cell lines (Supplementary file 1). The obtained data was consistent, in the sense that the values for 5mdC levels were highly similar, as long as the tissues were derived from the same species (Figure 3A, left). For instance, most tissues in G. barreimiae, M. marmota, and M. musculus tissues had 5mdC levels of around 5\u20136% (Figure 3A). Between the different mouse lines, there were no significant differences in 5mdC levels (Supplementary file 1). We noted, however, some small but notable differences between specific tissues. Heart tissue presented a broad cytosine methylation level and brain tissue had a higher median value for percentage methylation compared to other tissues (5.3 vs. 4.9%; Figure 3B). We then tested whether different nutritional conditions would change the picture. Therefore, we grew a commonly used mammalian cell line (HeLa) under different growth conditions. The different growth conditions affected 5mdC levels, and the detected differences were in a similar magnitude as the small differences detected between tissues (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig3-v1.jpg)\n\n**Figure 3.:** (A) The concentration of 5-methyl deoxycytidine (left) and 5-hydroxymethyl deoxycytidine (right) in different vertebrate genomes.n = 4 for G. barreimiae, M. marmota, M. musculus, X. laevis and n=3 for M. domestica.(B) Distribution of 5-methyl deoxycytidine (left) and 5-hydroxymethyl deoxycytidine (right) in different mouse tissues (n=5). Variations in percentage modification across different (C) non-plant eukaryotes including representatives from vertebrates like mammals, amphibians, and fish, invertebrates like insects and mollusks, and unicellular fungi and protozoa (D) plants species comprising both gymnosperms and angiosperms.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** 5hmdC was below the detection limit for all samples.\n\nOverall, 5mdC concentrations in M. domestica (opossum) and X. laevis, respectively, were different to the aforementioned species. In opossum, we detected much lower levels (2%) of 5mdC in all tissues examined. Conversely, in X. laevis, all tissues had much higher concentrations (about 9.4%). Higher values in X. laevis could be attributed to the tetraploid genome of this species compared to its relative X. tropicalis, which is diploid (Head et al., 2014). However, also here, in both cases the tissue differences in the 5mdC concentrations were minimal, at least when compared to the differences that exist between species. Although we tested fewer cases in plants, our data suggest the situation could be similar there too. We tested different tissues (roots, leaf, stem, and seed cotyledon) from Phaseolus vulgaris and obtained consistently high (16.7%) 5mdC concentrations in all measured tissues (Supplementary file 1). Hence, the several tissues examined from animal species, cell lines, and P. vulgaris provided a largely consistent picture: in a given organism, several tissues exhibit similar levels of 5mdC, and, that within-tissue differences are typically smaller compared to the differences that can be detected between species.\n\n### Tissue specificity of 5-hydroxymethyl deoxycytidine in the vertebrate CNS\n\nTissue specificity was, however, detected for another modification, 5hmdC. Indeed, 5hmdC was previously discovered in mammalian brain tissue, where it is formed via oxidation of 5mdC by TET enzymes (Tahiliani et al., 2009; Globisch et al., 2010). Our dataset shows that 5hmdC is detected in a broad range of vertebrate tissues except for spleen, but reaches significantly higher concentrations specifically in samples from the CNS. Although the spleen tissues had similar 5mdC levels as other mouse tissues, 5hmdC was not detected in these tissues (Figure 3B). Interestingly, our data reveals that the highest 5hmdC levels were not detected in the mammalian brain, but in the fish G. barreimiae. were levels could reach up to 8% of cytosine residues Although lower compared to G. barreimiae, mammals M. musculus (3.3%), and amphibian X. laevis (2%) still had high levels of 5hmdC specifically in brain tissue relative to other tissues in those organisms (Figure 3A, right). An interesting exception was in opossum, the only vertebrate species analyzed, in which 5hmdC levels were not higher in the brain compared to peripheral tissue.\n\nApart from vertebrates, 5hmdC was also observed in A. thaliana and Oryza sativa (Mahmood and Dunwell, 2019). Our data shows that the presence of 5hmdC is by no means universal in plants, indeed, we did not detect it in the majority of plant samples. Nonetheless, our data adds several species (A. cepa, Laurus nobilis, Lepidium sativum, and R. sativus) in which we confirmed low concentrations of 5hmdC. Furthermore, we did not detect 5hmdC in any of the bacterial or fungal genomes analyzed. Our results support the fact that the modification of 5hmdC is more widespread in biological systems than previously assumed, but quantities above picomolar-levels being not detected in any bacteria, yeasts and many tissues from higher organisms implies 5hmdC is not universal or specific to any part of the phylogenetic tree.\n\n### Variations in DNA modification across different bacterial species\n\nIn prokaryotes, high amounts of DNA modifications all concerned N6mdA, with the highest levels detected in Mobiluncus curtisii (~1.4%) and Moorell thermoacetica (~1.1%). In total, the prokaryotic genomes hence contained higher amounts of DNA modifications compared to lower eukaryotes such as yeasts and insects, but lower amounts of DNA modifications compared to higher eukaryotes\u2014plants and vertebrates in particular. Typical bacterial species contain only one type of modification\u2014mostly N6mdA (Figure 4A). Our data reveals some exceptions. Certain genera such as Campylobacter contain trace quantities of 5mdC (<0.1%) next to the dominating N6mdA modification (Supplementary file 2). In general, the observed trend was that the occurrence of one type of modification limits the occurrence of the other. For instance, M. curtisii with ~1.4% of its adenine residues methylated shows only 0.3% 5mdC, while Sebaldella termitidis, with unusually high cytosine methylation (~2.4%), has only 0.1% of its adenines methylated. Interestingly, we observed that median values for 5mdC dominate over N6mdA in those bacteria that colonize or enter mutualistic relationships with higher eukaryote species that carry 5mdC as their main modification (Figure 4\u2014figure supplement 1, Supplementary file 2). This included the genus Neisseria, mucosal-surface-colonizing bacteria, which showed 1.4 and 2% (Neisseria gonorrhoeae, Neisseria lactamica, respectively) of cytosine residues were methylated while containing only <0.3% N6mdA, and Faecalicoccus pleomorphus and Bifidobacterium adolescentis, with >1.5% of 5mdC without any detectable levels of N6mdA modification. Indeed, others made a similar observation in single-cell fungi. While the environmental yeasts studied herein and previously lacked any modifications (Capuano et al., 2014), the most frequent commensal yeast pathogen Candida albicans contained as sole yeast species 5mdC (Mishra et al., 2011). This result is interesting, because it could mean that host\u2013pathogen interactions could select for similar DNA modifications in the pathogen as in the host. The study of future host\u2013pathogen pairs is necessary to substantiate this observation and suggests that the picture about the functions of DNA modifications in prokaryotes is incomplete; 5mdC has thus far not been associated with function in pathogen immunity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig4-v1.jpg)\n\n**Figure 4.:** (A) Percentage of cytidine methylated against the percentage of adenine methylated in bacterial species. (B) Variation of % 5-methyl deoxycytidine and % N6-methyl deoxyadenosine among taxonomic divisions: phylum, class, and genus. One-way ANOVA, p-values for phylum, class, and genus are 0.017, 7\u00d710\u20134, and 0.16, respectively. (C) Distribution of 5mdC and N6mdA among 85 bacterial species depicted together with their phylogenetic relationships. Percentage modifications are calculated as ratio of modified cytosine residue and guanosine for 5mdC and 5hmdC; and ratio of modified adenine residue and thymine for N6mdA.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig4-figsupp1-v1.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81002/elife-81002-fig4-figsupp2-v1.jpg)\n\nHaving analyzed 85 species, we were able to ask if bacterial species with a close evolutionary relationship or similar habitat or genome properties also have a more similar modification makeup. We did not detect any relationship between nature and level of modification with genome size or GC content (Figure 4\u2014figure supplement 2). Similarly, we detected no significant correlation between factors such as pathogenicity, temperature of growth, or tolerance to oxygen and the amount of modifications per unit genome size (not shown). We did, however, observe obvious patterns at the different taxonomic levels once we grouped the different bacterial strains according to phylum, class, and genus. Similarities are detected at the genus level (Figure 4B, C). Members of the same genus often displayed similar values for a given modification. For example, species of the Vibrio genus presented similar quantities of N6mdA. At the class level, we observed trends between the different classes and the amount of modification. \u03b1- and \u03b3-Proteobacteria had the highest N6mdA content among different classes present while bacteroidetes presented with more cytidine methylation than adenosine methylation. At the phylum level, the patterns were more prominent in Proteobacteria, containing more N6mdA than 5mdC, while a reverse trend of more 5mdC than N6mdA was observed for Bacteroidetes and Firmicutes. Finally, we also observed a third modification, 4mdC, to be frequent in prokaryotes. 4mdC was detected in tandem with 5mdC as a second modification in Shewanella putrefaciens, Stenotrophomonas maltophilia, Bifidobacterium dentium, M. curtisii, and Gallibacterium anatis (Figure 1\u2014figure supplement 2, not quantified).\n\nAlthough the exact mode of inheritance could not be inferred from the present study, it is worth pointing out that the vastly different amounts of DNA modifications also indicate differences in the way they are inherited. It is plausible that the activities and specificities of DNA methylases and demethylases differ between species with high or low amounts of global DNA modifications. Combined, these results suggest that differences in the modifications do not reflect basic structural genome features such as size or GC content, but rather show that more closely evolutionarily related species have higher similarities in DNA modification implying gene drift and gene function are key drivers in the evolution of DNA modifications.\n\n## Materials and methods\n\nFor a description about the sources of samples and their extraction, please refer to \u2018Supplementary Information for sample sources: Global analysis of cytosine and adenine DNA modifications across the tree of life\u2019 (Varma and Calvani, 2022).\n\n### DNA extraction\n\nDNA extracts were treated with RNase A (VWR, Cat.No. E866-5ML) at 37\u00b0C for 45 min, and DNA purification was performed using QIAGEN Genomic tip-20/G according to the manufacturer\u2019s instructions. Purified DNA was precipitated with isopropanol, washed with 70% ethanol, and resuspended in 10 mM Tris-HCl, pH 8.0. Quantification was done using a dsDNA BR Assay Kit (Qubit). The DNA sample was then digested into corresponding nucleosides using DNA Degradase Plus (Zymo Research, E2020). 1 \u00b5g of DNA was treated with 5 U of DNA degradase at 37\u00b0C for 2 hr in a final volume of 25 \u03bcl and the reaction was inactivated by incubating the samples for 20 min at 70\u00b0C as described by the manufacturer. Calibration standards were prepared in 1:4:4:2:2:2:2:4:4:4:4:4:4:4:10 serial dilutions from a standard stock that was prepared as per Table 1 and stored at \u201380\u00b0C.\n\n### Instrumentation\n\nThe samples were diluted 1:1 with MeOH 10% (v/v) containing 0.2% formic acid, and 10 \u00b5l corresponding to 200 ng of gDNA were injected onto a liquid chromatography system equipped with reverse phase Acquity UPLC HSS T3 column, 100 \u00c5, 1.8 \u00b5m, 2.1 mm \u00d7 150 mm (Waters), column temperature 25\u00b0C and flow rate of 0.2 ml/min. Mobile phase A: 0.1% formic acid +10 mM ammonium formate in water, mobile phase B: 0.1% formic acid +10 mM ammonium formate in methanol. Gradient for elution was started from 5% mobile phase B to 35% B over 11.5 min followed by sharply increasing to 80% over the next 1.5 min. The gradient was held at 80% B for 2 min, lowered to the starting gradient over 1 min, and equilibrated for 6.5 min. Total length was 22.5 min.\n\nThe eluent was directed to an electrospray ion source connected to a triple quadrupole mass spectrometer (Agilent 6470 QQQ) equipped with an Agilent Jet stream source, operating in positive mode. The ESI source settings were: gas temperature: 300\u00b0C; gas flow: 6.4 l/min; nebulizer: 50 psi; sheath gas heater: 350\u00b0C; sheath gas flow: 7 l/min; capillary: 2000 V. The transitions monitored for MRM experiments are listed in Table 2.\n\nFor neutral loss experiments, the samples were injected as per the same LC parameters used for the MRM experiment while the mass spectrometer was set to a scan type of neutral loss (M=116 Da) while scanning the quadrupoles from 230 to 250 Da. The scan time was 1000 with a step size of 0.05 amu and the values for Fragmentor, collision energy, and cell accelerator voltage were 73, 8, and 5, respectively. 4mdC was detected as the second peak in the neutral loss (\u0394 = 118) chromatogram corresponding to parent ion 242 Da.\n\n### Data processing and analysis\n\nPeak areas were extracted and integrated using MassHunter for QQQ to obtain the concentrations after applying the necessary limits of quantification. Subsequent processing for batch-to-batch variation and technical outlier removal were carried out using R or Python. A single reference mouse DNA sample was included in every measured batch to monitor batch-to-batch variation. Median-value-based normalization of the reference mouse samples was used to obtain the correction factor with which the corresponding batch was corrected. The results are depicted as percentage modification with respect to dG (for 5mdC and 5hmdC) and T (for N6mdA). The phylogenetic clustering was carried out using a newick file generated using NCBI Taxonomy (PhyloT) and the ggtree package (Yu, 2020). Features of bacteria were retrieved from the bacterial metadatabase BacDive (http://bacdive.dsmz.de, accessed April 14, 2020; Reimer et al., 2019).\n",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "9a3d0de5-47fa-4e31-8da8-f6e0fc3a035e",
+      "submission_id": "0e55149e-0a88-438c-b136-62fdbc00ffc5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jessica K Tyler, Weill Cornell Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81002.sa0](https://doi.org/10.7554/eLife.81002.sa0)\n\nDNA methylation is an important mechanism to control gene expression, yet methods for quantitation of global DNA methylation analyses are limited. This work provides a new sensitive method for the quantitation of global DNA methylation and they apply this to over 100 species of eukaryotes and prokaryotes, finding interesting differences across species. This is a useful tool and resource for those interested in DNA methylation and evolution.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jessica K Tyler, Weill Cornell Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81002.sa1](https://doi.org/10.7554/eLife.81002.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "465833a2-6eed-4db5-81ef-d1ccaa526143",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C1",
+      "claim": "A mass spectrometric method was established for the sensitive and accurate quantification of multiple enzymatic DNA modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "We established a mass spectrometric method for the sensitive and accurate quantification of multiple enzymatic DNA modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this as a methodological achievement of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "579a1c25-e71f-4819-bf78-53ba48b648b9",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C2",
+      "claim": "DNA was isolated from 124 archean, bacterial, fungal, plant, and mammalian species.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we isolated DNA from 124 archean, bacterial, fungal, plant, and mammalian species, and several tissues and created a resource of global DNA modification quantities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number and types of species analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "50c4373e-6b76-4f79-8b0c-ade11fef414f",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C3",
+      "claim": "Only three DNA modifications (5mdC, N6mdA, and 5hmdC) were detected above a picomolar detection limit across species.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that only three of the studied DNA modifications, methylcytosine (5mdC), methyladenine (N6mdA) and hydroxymethylcytosine (5hmdC), were detected above a picomolar detection limit across species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly reports this finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "aa760b2b-438c-4b6a-b6ad-2455ba70b07a",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C4",
+      "claim": "5mdC dominated in higher eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "only three of the studied DNA modifications, methylcytosine (5mdC), methyladenine (N6mdA) and hydroxymethylcytosine (5hmdC), were detected above a picomolar detection limit across species, and dominated in higher eukaryotes (5mdC)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that 5mdC dominated in higher eukaryotes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "6c57fd5a-c345-458f-a4c1-9f27f5d8034c",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C5",
+      "claim": "N6mdA dominated in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "only three of the studied DNA modifications, methylcytosine (5mdC), methyladenine (N6mdA) and hydroxymethylcytosine (5hmdC), were detected above a picomolar detection limit across species, and dominated in higher eukaryotes (5mdC), in bacteria (N6mdA)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that N6mdA dominated in bacteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "72c7f0cc-1f12-4b6d-9fc1-5fac51541db6",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C6",
+      "claim": "5hmdC dominated in the vertebrate central nervous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "only three of the studied DNA modifications, methylcytosine (5mdC), methyladenine (N6mdA) and hydroxymethylcytosine (5hmdC), were detected above a picomolar detection limit across species, and dominated in higher eukaryotes (5mdC), in bacteria (N6mdA), or the vertebrate central nervous systems (5hmdC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that 5hmdC dominated in vertebrate CNS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "b233bfcb-d029-4d7d-b65f-2c9b77761bf6",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C7",
+      "claim": "All three modifications (5mdC, N6mdA, and 5hmdC) were detected simultaneously in only one tested species, Raphanus sativus.",
+      "claim_type": "EXPLICIT",
+      "source": "All three modifications were detected simultaneously in only one of the tested species, Raphanus sativus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this unique finding for Raphanus sativus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "c0829d28-154d-49e1-9e2d-730c971662b1",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C8",
+      "claim": "DNA modifications were either absent or detected only at trace quantities across all yeasts and insect genomes studied.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, these modifications were either absent or detected only at trace quantities, across all yeasts and insect genomes studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly reports this finding for yeasts and insects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "3bc602d1-1561-4a18-ab85-09a9295b56a9",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C9",
+      "claim": "In Allium cepa, more than 35% of cytosines were methylated.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in Allium cepa, Helianthus annuus, or Andropogon gerardi, more than 35% of cytosines were methylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this high methylation level in Allium cepa.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "56c3626c-ed99-4bca-963a-6cdf1b749679",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C10",
+      "claim": "In Helianthus annuus, more than 35% of cytosines were methylated.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in Allium cepa, Helianthus annuus, or Andropogon gerardi, more than 35% of cytosines were methylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this high methylation level in Helianthus annuus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "5c777655-a427-494d-b625-2f590c07abaa",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C11",
+      "claim": "In Andropogon gerardi, more than 35% of cytosines were methylated.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in Allium cepa, Helianthus annuus, or Andropogon gerardi, more than 35% of cytosines were methylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this high methylation level in Andropogon gerardi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "271b8b04-20a8-4af2-8e05-3c951b9d2c5c",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C12",
+      "claim": "5hmdC was detected in plants like Lepidium sativum.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, next to the mammlian CNS, 5hmdC was also detected in plants like Lepidium sativum",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly reports detection of 5hmdC in Lepidium sativum.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "ab2205b3-edc4-4ded-992b-96338144d193",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C13",
+      "claim": "5hmdC was found on 8% of cytosines in the Garra barreimiae brain samples.",
+      "claim_type": "EXPLICIT",
+      "source": "and was found on 8% of cytosines in the Garra barreimiae brain samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this quantitative finding for Garra barreimiae.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "2c34b4a7-9436-4ccd-957c-231fb6cc33dc",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C14",
+      "claim": "5-methyl-2\u2032-deoxycytidine (5mdC) was the first nucleotide modification to be discovered.",
+      "claim_type": "EXPLICIT",
+      "source": "The methylation of the fifth carbon (C5) of the cytosine ring to yield 5-methyl-2\u2032-deoxycytidine (5mdC) was the first nucleotide modification to be discovered (Hotchkiss, 1948)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites Hotchkiss, 1948 as the source for this historical fact.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "7f694086-955f-4bfb-b370-246489ed830e",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C15",
+      "claim": "5mdC can be enzymatically oxidized into 5-hydroxymethyl-2\u2032-deoxycytidine (5hmdC).",
+      "claim_type": "EXPLICIT",
+      "source": "5mdC can be enzymatically oxidized into 5-hydroxymethyl-2\u2032-deoxycytidine (5hmdC) and further into 5-formyl-2\u2032-deoxycytidine (fdC) and 5-carboxyl-2\u2032-deoxycytidine (cadC) (Hu et al., 2015; Ito et al., 2011; Tahiliani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites multiple papers supporting this biochemical pathway.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "3d3658d7-807e-430d-a989-f28b16d571bc",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C16",
+      "claim": "5hmdC can be further oxidized into 5-formyl-2\u2032-deoxycytidine (fdC).",
+      "claim_type": "EXPLICIT",
+      "source": "5mdC can be enzymatically oxidized into 5-hydroxymethyl-2\u2032-deoxycytidine (5hmdC) and further into 5-formyl-2\u2032-deoxycytidine (fdC) and 5-carboxyl-2\u2032-deoxycytidine (cadC) (Hu et al., 2015; Ito et al., 2011; Tahiliani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites multiple papers supporting this biochemical pathway.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "38c2df5d-f76c-4c27-9909-08feabb08788",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C17",
+      "claim": "5hmdC can be further oxidized into 5-carboxyl-2\u2032-deoxycytidine (cadC).",
+      "claim_type": "EXPLICIT",
+      "source": "5mdC can be enzymatically oxidized into 5-hydroxymethyl-2\u2032-deoxycytidine (5hmdC) and further into 5-formyl-2\u2032-deoxycytidine (fdC) and 5-carboxyl-2\u2032-deoxycytidine (cadC) (Hu et al., 2015; Ito et al., 2011; Tahiliani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites multiple papers supporting this biochemical pathway.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "cdcdc66b-0f7c-476d-b823-959a6675ac65",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C18",
+      "claim": "5hmdC has been found to accumulate in the mammalian brain, specifically in the large Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these modifications have been described as transient intermediates of 5mdC demethylation, at least one (5hmdC) has been found to accumulate in the mammalian brain, specifically in the large Purkinje neurons, indicating a regulatory function (Kriaucionis and Heintz, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites Kriaucionis and Heintz, 2009 for this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "d3dce817-bdc8-45f0-9583-ef3e8927bd1b",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C19",
+      "claim": "N4-methyl-2\u2032-deoxycytidine (4mdC) is found in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "N4-methyl-2\u2032-deoxycytidine (4mdC), found in bacteria, is yet another form of cytosine modification (Janulaitis et al., 1983; Ehrlich et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites two papers supporting the presence of 4mdC in bacteria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "518cc639-fc40-4af7-883e-001b0bc8ac13",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C20",
+      "claim": "N6-methyl-2\u2032-deoxyadenosine (N6mdA) was initially discovered in bacterial genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "N6-methyl-2\u2032-deoxyadenosine (N6mdA) was initially discovered in bacterial genomes (Dunn and Smith, 1955)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites Dunn and Smith, 1955 for the initial discovery.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "79799fae-0a88-4d5a-9e0c-218ed2372ff3",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C21",
+      "claim": "N6mdA was later found in archaea, plants, and nematodes.",
+      "claim_type": "EXPLICIT",
+      "source": "N6-methyl-2\u2032-deoxyadenosine (N6mdA) was initially discovered in bacterial genomes (Dunn and Smith, 1955) and later also in archaea, plants, and nematodes (Couturier and Lind\u00e5s, 2018; Liang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites two papers supporting the later discovery in other organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "9f058dd0-8de6-448b-823f-d5e6ba387a83",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C22",
+      "claim": "Arabidopsis thaliana has orders of magnitude higher levels of 5mdC compared to Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Arabidopsis thaliana has orders of magnitude higher levels 5mdC compared to the dominant insect model Drosophila melanogaster, while the dominant yeast model organism Saccharomyces cerevisiae lacks this modification altogether (M\u00fcnzel et al., 2011; Capuano et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites two papers supporting this comparison.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "716432a5-08c5-4dfe-b498-890095e9ce9f",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C23",
+      "claim": "Saccharomyces cerevisiae lacks 5mdC modification.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Arabidopsis thaliana has orders of magnitude higher levels 5mdC compared to the dominant insect model Drosophila melanogaster, while the dominant yeast model organism Saccharomyces cerevisiae lacks this modification altogether (M\u00fcnzel et al., 2011; Capuano et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites two papers supporting this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "9bcd80a6-1d62-4ab0-9333-a138d76166aa",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C24",
+      "claim": "The LC-MRM method achieves detection limits in picomolar ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with the high sensitivity offered by a triple quadrupole mass spectrometer (Agilent 6470), we were able to achieve detection limits in picomolar ranges (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section states this and references Figure 1A showing the detection limits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "25a80fc2-a1a0-4790-a0e2-2690c41d2ad2",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C25",
+      "claim": "The limit of detection for 5mdC is 4.6 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The limits of detection for 5mdC, 5hmdC, and N6mdA are 4.6 nM, 320 pM, and 19 pM, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1 caption explicitly states this detection limit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "cb92fc0d-69d2-4d19-a4f6-63cbfff96ca0",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C26",
+      "claim": "The limit of detection for 5hmdC is 320 pM.",
+      "claim_type": "EXPLICIT",
+      "source": "The limits of detection for 5mdC, 5hmdC, and N6mdA are 4.6 nM, 320 pM, and 19 pM, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1 caption explicitly states this detection limit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "af57d891-f3f6-43df-9ee8-1e6ae9a48816",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C27",
+      "claim": "The limit of detection for N6mdA is 19 pM.",
+      "claim_type": "EXPLICIT",
+      "source": "The limits of detection for 5mdC, 5hmdC, and N6mdA are 4.6 nM, 320 pM, and 19 pM, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1 caption explicitly states this detection limit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "431561b1-2680-40e0-a6bc-c2d55fb2035c",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C28",
+      "claim": "fdC and cadC were not detected at significant levels in any of the genomes measured.",
+      "claim_type": "EXPLICIT",
+      "source": "First, despite the broad coverage, high sensitivity, and precision of our method, we did not detect significant levels of fdC and cadC in any of the genomes measured (limits of detection were 238 pM and 251 pM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "df3ddbb2-ec0e-4394-aa14-d45b97be4e48",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C29",
+      "claim": "The limit of detection for fdC is 238 pM.",
+      "claim_type": "EXPLICIT",
+      "source": "First, despite the broad coverage, high sensitivity, and precision of our method, we did not detect significant levels of fdC and cadC in any of the genomes measured (limits of detection were 238 pM and 251 pM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this detection limit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "d82f9053-7914-4ddd-95ae-8956f49bbebf",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C30",
+      "claim": "The limit of detection for cadC is 251 pM.",
+      "claim_type": "EXPLICIT",
+      "source": "First, despite the broad coverage, high sensitivity, and precision of our method, we did not detect significant levels of fdC and cadC in any of the genomes measured (limits of detection were 238 pM and 251 pM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this detection limit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "ed2b85e1-ce5e-4223-b66c-50b656a3f78e",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C31",
+      "claim": "Unicellular fungi studied had hardly any detectable DNA modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable exception was that we detected hardly any of these DNA modifications in the unicellular fungi studied (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "c7ccf1ce-0f2f-4214-97e2-70e2d49a499f",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C32",
+      "claim": "5mdC, 5hmdC, and N6mdA are very low if not absent in typical yeast species.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence it is not merely 5mdC (Capuano et al., 2014; Binz et al., 2018; Nai et al., 2020), but also its oxidized form 5hmdC along with N6mdA that are very low if not absent in typical yeast species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section states this finding with citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "5ab8a325-9dd0-4928-9a75-6f2d3d17ec71",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C33",
+      "claim": "Insects Trichoplusia ni, Spodoptera frugiperda, and Drosophila melanogaster all had DNA modifications at much lower levels compared to higher organisms and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting in this context that the insects Trichoplusia ni, Spodoptera frugiperda, and D. melanogaster (Supplementary file 1) all had DNA modifications, but also at much lower levels compared to both, higher organisms but also bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this comparative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "cb6f8775-673f-4641-8b52-2a3ca9e3b64d",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C34",
+      "claim": "N6mdA was detected in germ-free Drosophila melanogaster at approximately 0.04%.",
+      "claim_type": "EXPLICIT",
+      "source": "N6mdA was also detected in germ-free D. melanogaster (~0.04%, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "136ea580-6628-45fd-80ee-b8ed5df5719d",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C35",
+      "claim": "Adult Drosophila melanogaster contained methylated adenine as a DNA building block.",
+      "claim_type": "EXPLICIT",
+      "source": "While the adult D. melanogaster contained methylated adenine as a DNA building block, ovarian cells collected from two moth species (T. ni and S. frugiperda) principally contained methylated cytosine as the preferred base modification (0.2 and 0.1%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "205970cb-0fc9-467a-919b-f1129235ee63",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C36",
+      "claim": "Ovarian cells from Trichoplusia ni contained 0.2% methylated cytosine.",
+      "claim_type": "EXPLICIT",
+      "source": "While the adult D. melanogaster contained methylated adenine as a DNA building block, ovarian cells collected from two moth species (T. ni and S. frugiperda) principally contained methylated cytosine as the preferred base modification (0.2 and 0.1%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "42ee4308-3a43-408f-8dd0-6786d3bc1c5e",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C37",
+      "claim": "Ovarian cells from Spodoptera frugiperda contained 0.1% methylated cytosine.",
+      "claim_type": "EXPLICIT",
+      "source": "While the adult D. melanogaster contained methylated adenine as a DNA building block, ovarian cells collected from two moth species (T. ni and S. frugiperda) principally contained methylated cytosine as the preferred base modification (0.2 and 0.1%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "c3c9077d-fe50-4780-a1b4-e814950ea044",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C38",
+      "claim": "Most vertebrate genomes studied had a 5mdC content of around 5% of the cytosine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Most vertebrate genomes studied had a 5mdC content of around 5% (mean 4.66, SD 2.17) of the cytosine residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding with statistical measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "4eab6d2f-7f02-4653-bb97-0e810cff5836",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C39",
+      "claim": "In plants, 5mdC concentrations of 10% and higher were typical.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, however, 5mdC concentrations of 10% (mean 20.34, SD 9.81) and higher were typical (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section states this finding with statistical measures and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "2d3cb749-1f34-4e67-9c1e-670c83f6a83e",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C40",
+      "claim": "In Andropogon gerardii, more than 35% of cytosines were methylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Extremely high values for cytosine methylation were observed in Andropogon gerardii and Allium cepa, where more than 35% of cytosines were methylated (Figure 1D, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "a60d08c5-abcd-472e-8d01-8951202761dc",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C41",
+      "claim": "In Allium cepa, more than 35% of cytosines were methylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Extremely high values for cytosine methylation were observed in Andropogon gerardii and Allium cepa, where more than 35% of cytosines were methylated (Figure 1D, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "6c595292-a8b5-471b-9bbd-b10ef7b5f8fd",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C42",
+      "claim": "Most tissues in Garra barreimiae, Marmota marmota, and Mus musculus had 5mdC levels of around 5-6%.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, most tissues in G. barreimiae, M. marmota, and M. musculus tissues had 5mdC levels of around 5\u20136% (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "3fb0f8fe-ef99-489c-9b93-237f90f0c3ef",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C43",
+      "claim": "Between different mouse lines, there were no significant differences in 5mdC levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Between the different mouse lines, there were no significant differences in 5mdC levels (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "e92e5da5-9dd9-4f6b-ac9e-32d469588f1f",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C44",
+      "claim": "Brain tissue had a higher median value for percentage methylation compared to other tissues (5.3 vs. 4.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "Heart tissue presented a broad cytosine methylation level and brain tissue had a higher median value for percentage methylation compared to other tissues (5.3 vs. 4.9%; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this comparative finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "473f652b-0aab-4291-ad18-1a2c9f39aa92",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C45",
+      "claim": "5hmdC was not detected in spleen tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the spleen tissues had similar 5mdC levels as other mouse tissues, 5hmdC was not detected in these tissues (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "b046adf6-baa6-4aff-8c81-bcc1845cec59",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C46",
+      "claim": "The highest 5hmdC levels were detected in the fish Garra barreimiae, where levels could reach up to 8% of cytosine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our data reveals that the highest 5hmdC levels were not detected in the mammalian brain, but in the fish G. barreimiae. were levels could reach up to 8% of cytosine residues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "6a9eafa6-ea56-44f1-95c0-b6b8f0995a0b",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C47",
+      "claim": "Mus musculus brain tissue had 3.3% 5hmdC.",
+      "claim_type": "EXPLICIT",
+      "source": "Although lower compared to G. barreimiae, mammals M. musculus (3.3%), and amphibian X. laevis (2%) still had high levels of 5hmdC specifically in brain tissue relative to other tissues in those organisms (Figure 3A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this quantitative finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "414a632e-b241-4a29-a2f7-5f35afa8655b",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C48",
+      "claim": "Xenopus laevis brain tissue had 2% 5hmdC.",
+      "claim_type": "EXPLICIT",
+      "source": "Although lower compared to G. barreimiae, mammals M. musculus (3.3%), and amphibian X. laevis (2%) still had high levels of 5hmdC specifically in brain tissue relative to other tissues in those organisms (Figure 3A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this quantitative finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "c55883bb-5989-40da-985a-3c6c3facbd6f",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C49",
+      "claim": "In opossum, 5hmdC levels were not higher in the brain compared to peripheral tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "An interesting exception was in opossum, the only vertebrate species analyzed, in which 5hmdC levels were not higher in the brain compared to peripheral tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this exceptional finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "6b7af641-2929-4ac5-aa16-af7dea65cd3a",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C50",
+      "claim": "5hmdC was observed in Arabidopsis thaliana and Oryza sativa.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from vertebrates, 5hmdC was also observed in A. thaliana and Oryza sativa (Mahmood and Dunwell, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites a paper supporting this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "4861f4a3-e148-423b-aa50-0504f0392102",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C51",
+      "claim": "5hmdC was not detected in the majority of plant samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data shows that the presence of 5hmdC is by no means universal in plants, indeed, we did not detect it in the majority of plant samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "a61e2b75-7eb0-4e99-8afb-f68328a9a3d5",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C52",
+      "claim": "Low concentrations of 5hmdC were confirmed in Allium cepa, Laurus nobilis, Lepidium sativum, and Raphanus sativus.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our data adds several species (A. cepa, Laurus nobilis, Lepidium sativum, and R. sativus) in which we confirmed low concentrations of 5hmdC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "8a1618a5-e587-4ffa-9d80-24224e0a0ab9",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C53",
+      "claim": "5hmdC was not detected in any of the bacterial or fungal genomes analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we did not detect 5hmdC in any of the bacterial or fungal genomes analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "170144e8-02b7-4ca3-9d3d-afb9d6459bb1",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C54",
+      "claim": "The highest levels of N6mdA in prokaryotes were detected in Mobiluncus curtisii at approximately 1.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "In prokaryotes, high amounts of DNA modifications all concerned N6mdA, with the highest levels detected in Mobiluncus curtisii (~1.4%) and Moorell thermoacetica (~1.1%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "fa0b7807-612a-4d2d-8437-30e366cf9153",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C55",
+      "claim": "Moorella thermoacetica had approximately 1.1% N6mdA.",
+      "claim_type": "EXPLICIT",
+      "source": "In prokaryotes, high amounts of DNA modifications all concerned N6mdA, with the highest levels detected in Mobiluncus curtisii (~1.4%) and Moorell thermoacetica (~1.1%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "c65c3fe8-5c1f-4b46-b1c7-973ecb306631",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C56",
+      "claim": "Typical bacterial species contain only one type of modification\u2014mostly N6mdA.",
+      "claim_type": "EXPLICIT",
+      "source": "Typical bacterial species contain only one type of modification\u2014mostly N6mdA (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "c5fbccab-2ed4-4a9a-9453-5904cd2e13a3",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C57",
+      "claim": "Certain genera such as Campylobacter contain trace quantities of 5mdC (<0.1%) next to the dominating N6mdA modification.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain genera such as Campylobacter contain trace quantities of 5mdC (<0.1%) next to the dominating N6mdA modification (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "03a64b04-87e6-41ad-aad0-a8dcb4fae913",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C58",
+      "claim": "Mobiluncus curtisii has approximately 1.4% of its adenine residues methylated and shows only 0.3% 5mdC.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, M. curtisii with ~1.4% of its adenine residues methylated shows only 0.3% 5mdC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "348abf00-195f-44fc-a11e-feab4ab809f6",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C59",
+      "claim": "Sebaldella termitidis has approximately 2.4% cytosine methylation and only 0.1% of its adenines methylated.",
+      "claim_type": "EXPLICIT",
+      "source": "while Sebaldella termitidis, with unusually high cytosine methylation (~2.4%), has only 0.1% of its adenines methylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "7a8143d5-a524-4ea9-94e3-e2c3cbd809b5",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C60",
+      "claim": "Neisseria gonorrhoeae showed 1.4% of cytosine residues were methylated while containing only <0.3% N6mdA.",
+      "claim_type": "EXPLICIT",
+      "source": "This included the genus Neisseria, mucosal-surface-colonizing bacteria, which showed 1.4 and 2% (Neisseria gonorrhoeae, Neisseria lactamica, respectively) of cytosine residues were methylated while containing only <0.3% N6mdA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "b02aa7c1-9ad2-4f23-af3a-fe0eba038cb3",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C61",
+      "claim": "Neisseria lactamica showed 2% of cytosine residues were methylated while containing only <0.3% N6mdA.",
+      "claim_type": "EXPLICIT",
+      "source": "This included the genus Neisseria, mucosal-surface-colonizing bacteria, which showed 1.4 and 2% (Neisseria gonorrhoeae, Neisseria lactamica, respectively) of cytosine residues were methylated while containing only <0.3% N6mdA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "1cd8ca8a-c0fe-4066-bc93-319ebb081061",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C62",
+      "claim": "Faecalicoccus pleomorphus had >1.5% of 5mdC without any detectable levels of N6mdA modification.",
+      "claim_type": "EXPLICIT",
+      "source": "and Faecalicoccus pleomorphus and Bifidobacterium adolescentis, with >1.5% of 5mdC without any detectable levels of N6mdA modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "2fe4dc90-82c9-4dbe-a325-3a28f0b5c226",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C63",
+      "claim": "Bifidobacterium adolescentis had >1.5% of 5mdC without any detectable levels of N6mdA modification.",
+      "claim_type": "EXPLICIT",
+      "source": "and Faecalicoccus pleomorphus and Bifidobacterium adolescentis, with >1.5% of 5mdC without any detectable levels of N6mdA modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "77f0ae29-9381-4b48-b4bf-57aa2ac41f9e",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C64",
+      "claim": "Candida albicans contained 5mdC as the sole yeast species.",
+      "claim_type": "EXPLICIT",
+      "source": "While the environmental yeasts studied herein and previously lacked any modifications (Capuano et al., 2014), the most frequent commensal yeast pathogen Candida albicans contained as sole yeast species 5mdC (Mishra et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites a paper supporting this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "2c704bde-1425-418a-b315-4a3aeefd8b7a",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C65",
+      "claim": "4mdC was detected in tandem with 5mdC in Shewanella putrefaciens, Stenotrophomonas maltophilia, Bifidobacterium dentium, Mobiluncus curtisii, and Gallibacterium anatis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also observed a third modification, 4mdC, to be frequent in prokaryotes. 4mdC was detected in tandem with 5mdC as a second modification in Shewanella putrefaciens, Stenotrophomonas maltophilia, Bifidobacterium dentium, M. curtisii, and Gallibacterium anatis (Figure 1\u2014figure supplement 2, not quantified).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "c79122ff-101a-41f0-9045-f9437675957a",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C66",
+      "claim": "No significant correlation was detected between factors such as pathogenicity, temperature of growth, or tolerance to oxygen and the amount of modifications per unit genome size.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we detected no significant correlation between factors such as pathogenicity, temperature of growth, or tolerance to oxygen and the amount of modifications per unit genome size (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this negative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "e033c6a6-c1c1-4359-ba69-971a6a3d0f00",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C67",
+      "claim": "No relationship was detected between nature and level of modification with genome size or GC content.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect any relationship between nature and level of modification with genome size or GC content (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this negative finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "147a1790-9684-4eaa-9606-1918c013b2eb",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C68",
+      "claim": "Members of the same genus often displayed similar values for a given modification.",
+      "claim_type": "EXPLICIT",
+      "source": "We did, however, observe obvious patterns at the different taxonomic levels once we grouped the different bacterial strains according to phylum, class, and genus. Similarities are detected at the genus level (Figure 4B, C). Members of the same genus often displayed similar values for a given modification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "8c0d8e90-7036-43b9-a485-5bfdea60d211",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C69",
+      "claim": "\u03b1- and \u03b3-Proteobacteria had the highest N6mdA content among different classes present.",
+      "claim_type": "EXPLICIT",
+      "source": "At the class level, we observed trends between the different classes and the amount of modification. \u03b1- and \u03b3-Proteobacteria had the highest N6mdA content among different classes present while bacteroidetes presented with more cytidine methylation than adenosine methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "4a9da33b-298c-4a97-bd40-343b6cf4010c",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C70",
+      "claim": "Bacteroidetes presented with more cytidine methylation than adenosine methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "At the class level, we observed trends between the different classes and the amount of modification. \u03b1- and \u03b3-Proteobacteria had the highest N6mdA content among different classes present while bacteroidetes presented with more cytidine methylation than adenosine methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "64237a21-a2de-4d24-a917-7bbb7dbddf95",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C71",
+      "claim": "Proteobacteria contained more N6mdA than 5mdC.",
+      "claim_type": "EXPLICIT",
+      "source": "At the phylum level, the patterns were more prominent in Proteobacteria, containing more N6mdA than 5mdC, while a reverse trend of more 5mdC than N6mdA was observed for Bacteroidetes and Firmicutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "cd3a2c41-2693-4d47-ad2c-ee6b27bc5b67",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C72",
+      "claim": "Bacteroidetes and Firmicutes showed more 5mdC than N6mdA.",
+      "claim_type": "EXPLICIT",
+      "source": "At the phylum level, the patterns were more prominent in Proteobacteria, containing more N6mdA than 5mdC, while a reverse trend of more 5mdC than N6mdA was observed for Bacteroidetes and Firmicutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "b0ab5037-20d8-4ab0-a149-9c36f58435e8",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C73",
+      "claim": "DNA was treated with RNase A at 37\u00b0C for 45 min.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA extracts were treated with RNase A (VWR, Cat.No. E866-5ML) at 37\u00b0C for 45 min",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes this procedural step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "bbf1fb69-8ff4-4134-8160-9682134f7c1e",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C74",
+      "claim": "DNA purification was performed using QIAGEN Genomic tip-20/G.",
+      "claim_type": "EXPLICIT",
+      "source": "and DNA purification was performed using QIAGEN Genomic tip-20/G according to the manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes this procedural step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "dd8dd2e7-d09a-46d7-9513-268721324208",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C75",
+      "claim": "1 \u00b5g of DNA was treated with 5 U of DNA degradase at 37\u00b0C for 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "1 \u00b5g of DNA was treated with 5 U of DNA degradase at 37\u00b0C for 2 hr in a final volume of 25 \u03bcl",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes this procedural step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "ba3b7f34-147f-4492-bef4-8caf3aafcd02",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C76",
+      "claim": "The reaction was inactivated by incubating the samples for 20 min at 70\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "and the reaction was inactivated by incubating the samples for 20 min at 70\u00b0C as described by the manufacturer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes this procedural step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "360f189c-ae52-4081-8611-d510f5e3ea5c",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C77",
+      "claim": "10 \u00b5l corresponding to 200 ng of gDNA were injected onto the liquid chromatography system.",
+      "claim_type": "EXPLICIT",
+      "source": "The samples were diluted 1:1 with MeOH 10% (v/v) containing 0.2% formic acid, and 10 \u00b5l corresponding to 200 ng of gDNA were injected onto a liquid chromatography system",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes this procedural step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "5734383e-4fc9-41a0-829d-953933f932e3",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C78",
+      "claim": "The column temperature was 25\u00b0C and flow rate was 0.2 ml/min.",
+      "claim_type": "EXPLICIT",
+      "source": "equipped with reverse phase Acquity UPLC HSS T3 column, 100 \u00c5, 1.8 \u00b5m, 2.1 mm \u00d7 150 mm (Waters), column temperature 25\u00b0C and flow rate of 0.2 ml/min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes these instrumental parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "56da442d-73d1-4748-99f4-298e71503aa6",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C79",
+      "claim": "The LC-MRM method was expanded from a previous method designed for the quantification of 5mdC.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to quantify the global levels of multiple enzymatic DNA modifications in a single analysis, we expanded a previous method based on liquid chromatography-multiple reaction monitoring (LC-MRM) and designed for the quantification of 5mdC (Tsuji et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites a previous method that was expanded.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "0e7a0ce5-694b-4cd0-add6-72ed0b4deed4",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C80",
+      "claim": "The method discriminates between RNA and DNA modifications based on the precursor mass difference of the sugar moiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinguishing the nucleosides arising from a DNA monomer from a potentially co-purified RNA monomer occurs on the basis of the precursor mass difference of the sugar moiety.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes this methodological feature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "0ae208ba-a7f0-4482-8f9e-6d5d79c8bfda",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C81",
+      "claim": "A neutral loss scan was used as a strategy to confirm the MRM results and to detect additional modifications such as 4mdC.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we supplemented the method by a neutral loss scan as a strategy to confirm the MRM results, as well as to detect additional modifications such as 4mdC, that were not included among the standards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes this methodological addition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "58ad4cd4-b543-4428-a956-dbd33e002e1a",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C82",
+      "claim": "A total of 286 tissue samples from 124 species were analyzed in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 286 tissue samples from 124 species were analyzed in the present study: 19 species from plants, 12 from animals, 6 from yeast, 2 from archaea, and 85 from bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1 caption explicitly states the sample composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "f53e4fb1-4d9a-4363-be51-3888625451b4",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C83",
+      "claim": "The study analyzed 19 species from plants.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 286 tissue samples from 124 species were analyzed in the present study: 19 species from plants, 12 from animals, 6 from yeast, 2 from archaea, and 85 from bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1 caption explicitly states this number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "d51b2c67-e76b-497c-8a3a-f41fabb71c8e",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C84",
+      "claim": "The study analyzed 12 species from animals.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 286 tissue samples from 124 species were analyzed in the present study: 19 species from plants, 12 from animals, 6 from yeast, 2 from archaea, and 85 from bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1 caption explicitly states this number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "4b6625c3-a1de-4b53-b3fc-ee78cd3cc43c",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C85",
+      "claim": "The study analyzed 6 species from yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 286 tissue samples from 124 species were analyzed in the present study: 19 species from plants, 12 from animals, 6 from yeast, 2 from archaea, and 85 from bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1 caption explicitly states this number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "b8ff41f6-988e-455f-98c9-a3a588de6783",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C86",
+      "claim": "The study analyzed 2 species from archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 286 tissue samples from 124 species were analyzed in the present study: 19 species from plants, 12 from animals, 6 from yeast, 2 from archaea, and 85 from bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1 caption explicitly states this number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "6e4f532d-4451-49f0-8c8b-c70920112260",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C87",
+      "claim": "The study analyzed 85 species from bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 286 tissue samples from 124 species were analyzed in the present study: 19 species from plants, 12 from animals, 6 from yeast, 2 from archaea, and 85 from bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1 caption explicitly states this number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "9aee1f67-f4a1-423d-9bdf-b898bf437a50",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C88",
+      "claim": "Percentage modifications were calculated as ratio of modified cytosine residue and guanosine for 5mdC and 5hmdC.",
+      "claim_type": "EXPLICIT",
+      "source": "Percentage modifications were calculated as ratio of modified cytosine residue and guanosine for 5mdC and 5hmdC; and ratio of modified adenine residue and thymine for N6mdA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1 caption explicitly describes this calculation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "a98152ac-0a7c-43e3-ada1-03ded15d7c35",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C89",
+      "claim": "Percentage modifications were calculated as ratio of modified adenine residue and thymine for N6mdA.",
+      "claim_type": "EXPLICIT",
+      "source": "Percentage modifications were calculated as ratio of modified cytosine residue and guanosine for 5mdC and 5hmdC; and ratio of modified adenine residue and thymine for N6mdA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Figure 1 caption explicitly describes this calculation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "7281785d-c77b-46d7-9bf9-cf9b90c995f7",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C90",
+      "claim": "DNA modifications could have been specifically lost during yeast evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in yeast have concluded that DNA modifications could have been specifically lost during yeast evolution (Bhattacharyya et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites a study supporting this hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "c2fb1f46-71b0-477a-b608-57874853d343",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C91",
+      "claim": "DNA modifications could have evolved in higher eukaryotes and bacteria, after yeasts and insects branching off.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our result that insects can have similarly low DNA modification levels raises another possibility that DNA modifications could have evolved in higher eukaryotes and bacteria, after yeasts and insects branching off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section proposes this as an alternative hypothesis based on the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "f112048e-afc5-4af3-ba3a-4c53d580b08d",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C92",
+      "claim": "Diplotaxis tenuifolia had low amounts of N6mdA (0.1%) next to high amounts of 5mdC.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Diplotaxis tenuifolia had low amounts of N6mdA (0.1%, Supplementary file 1) next to high amounts of 5mdC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "d19044bc-bfed-4e12-ac84-04aff1fa8b00",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C93",
+      "claim": "Species that exhibited 5hmdC were also observed to contain its precursor 5mdC.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, species that exhibited 5hmdC were also observed to contain its precursor 5mdC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "33a888f7-a4e7-483a-9876-8e14e58c4a32",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C94",
+      "claim": "N6mdA was detected in Halobacterium salinarum.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study further featured two archeal genomes (Sulfolobus acidocaldarius and Halobacterium salinarum), which shared a similar level of the cytosine modification but differed in their levels of adenosine modification. While we detected N6mdA in H. salinarum, no adenosine modification was observed for S. acidocaldarius (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "b4103d8b-d30b-493b-a916-bf08010ba76d",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C95",
+      "claim": "No adenosine modification was observed for Sulfolobus acidocaldarius.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study further featured two archeal genomes (Sulfolobus acidocaldarius and Halobacterium salinarum), which shared a similar level of the cytosine modification but differed in their levels of adenosine modification. While we detected N6mdA in H. salinarum, no adenosine modification was observed for S. acidocaldarius (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "387dc0c3-4584-4012-a337-ef00cbc658ef",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C96",
+      "claim": "Danio rerio had higher levels of 5mdC consistent with early observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Some species, including the model organisms Danio rerio and X. laevis, had higher levels consistent with early observations (Colwell et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites a paper supporting this finding.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "b2f340c1-3876-4cd5-92ef-beb36e45a384",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C97",
+      "claim": "Xenopus laevis had higher levels of 5mdC consistent with early observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Some species, including the model organisms Danio rerio and X. laevis, had higher levels consistent with early observations (Colwell et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites a paper supporting this finding.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "12f8c7bd-88f2-4a0d-81e0-125103c22f79",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C98",
+      "claim": "High cytosine methylation values in plants could be attributed to silencing of multiplied genes and the much larger non-functional parts of their genome.",
+      "claim_type": "EXPLICIT",
+      "source": "As plants are known to possess polyploid genomes, high cytosine methylation values could be attributed to silencing of multiplied genes and the much larger non-functional parts of their genome (Masterson, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section proposes this explanation with a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "f323fd2a-52fc-4ae4-a1e6-f9628cd3b675",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C99",
+      "claim": "All tissues in Phaseolus vulgaris had consistently high (16.7%) 5mdC concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested different tissues (roots, leaf, stem, and seed cotyledon) from Phaseolus vulgaris and obtained consistently high (16.7%) 5mdC concentrations in all measured tissues (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "6b4c2c4e-8500-4213-81c6-1b66605e1713",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C100",
+      "claim": "5hmdC is detected in a broad range of vertebrate tissues except for spleen.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dataset shows that 5hmdC is detected in a broad range of vertebrate tissues except for spleen, but reaches significantly higher concentrations specifically in samples from the CNS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "b0894adb-6d10-4409-b439-bc99d63bc755",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C101",
+      "claim": "Species of the Vibrio genus presented similar quantities of N6mdA.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, species of the Vibrio genus presented similar quantities of N6mdA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "baf4d8dc-f559-46d1-b8dd-97033c29bf02",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C102",
+      "claim": "Bacteria that colonize or enter mutualistic relationships with higher eukaryote species that carry 5mdC as their main modification showed median values for 5mdC dominating over N6mdA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that median values for 5mdC dominate over N6mdA in those bacteria that colonize or enter mutualistic relationships with higher eukaryote species that carry 5mdC as their main modification (Figure 4\u2014figure supplement 1, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this observation and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "d7378910-5762-4a34-a529-0503de4f4fa3",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C103",
+      "claim": "Host-pathogen interactions could select for similar DNA modifications in the pathogen as in the host.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is interesting, because it could mean that host\u2013pathogen interactions could select for similar DNA modifications in the pathogen as in the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section proposes this interpretation based on the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "254b4beb-92d4-4f1a-8972-37c2837d2a1b",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C104",
+      "claim": "More closely evolutionarily related species have higher similarities in DNA modification implying gene drift and gene function are key drivers in the evolution of DNA modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined, these results suggest that differences in the modifications do not reflect basic structural genome features such as size or GC content, but rather show that more closely evolutionarily related species have higher similarities in DNA modification implying gene drift and gene function are key drivers in the evolution of DNA modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section proposes this interpretation based on the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "60f53c66-8b8f-41bf-8c0f-dc97c3bcd68a",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C105",
+      "claim": "The vastly different amounts of DNA modifications indicate differences in the way they are inherited.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the exact mode of inheritance could not be inferred from the present study, it is worth pointing out that the vastly different amounts of DNA modifications also indicate differences in the way they are inherited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section proposes this interpretation based on the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "22b3ca5e-d88d-4d63-b1a0-e706cf44cf67",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C106",
+      "claim": "The activities and specificities of DNA methylases and demethylases differ between species with high or low amounts of global DNA modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "It is plausible that the activities and specificities of DNA methylases and demethylases differ between species with high or low amounts of global DNA modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section proposes this as a plausible explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "56aa84a0-83c3-48f7-bbc7-cdb881b259fb",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C107",
+      "claim": "Different growth conditions affected 5mdC levels in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we grew a commonly used mammalian cell line (HeLa) under different growth conditions. The different growth conditions affected 5mdC levels, and the detected differences were in a similar magnitude as the small differences detected between tissues (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states this finding and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "0f3a1284-a767-4b14-9da2-93766dc564c6",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C108",
+      "claim": "Higher values of 5mdC in Xenopus laevis could be attributed to the tetraploid genome of this species compared to its relative X. tropicalis, which is diploid.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher values in X. laevis could be attributed to the tetraploid genome of this species compared to its relative X. tropicalis, which is diploid (Head et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section proposes this explanation with a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "6afaab13-6d9d-41e6-b735-23990f27bde3",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C109",
+      "claim": "In Monodelphis domestica, 5mdC concentrations were much lower (2%) in all tissues examined.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 5mdC concentrations in M. domestica (opossum) and X. laevis, respectively, were different to the aforementioned species. In opossum, we detected much lower levels (2%) of 5mdC in all tissues examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "f86b1885-1724-47bd-b7fc-529939c58766",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C110",
+      "claim": "In Xenopus laevis, all tissues had much higher concentrations (about 9.4%) of 5mdC.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in X. laevis, all tissues had much higher concentrations (about 9.4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "9370ad98-2d81-4f6c-98e4-85375e82718b",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "claim_id": "C111",
+      "claim": "Within-tissue differences in 5mdC are typically smaller compared to the differences that can be detected between species.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the several tissues examined from animal species, cell lines, and P. vulgaris provided a largely consistent picture: in a given organism, several tissues exhibit similar levels of 5mdC, and, that within-tissue differences are typically smaller compared to the differences that can be detected between species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states this conclusion based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0cb0877e-84d1-43a8-b06f-50bd10b77aa8",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a sensitive LC-MRM mass spectrometry method for quantifying multiple DNA modifications (5mdC, 5hmdC, N6mdA, fdC, cadC) with picomolar detection limits. The method discriminates DNA from RNA modifications and includes neutral loss scanning for additional modifications like 4mdC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C24-C27, C79-C81 collectively describe the methodological development with specific detection limits provided (5mdC: 4.6 nM, 5hmdC: 320 pM, N6mdA: 19 pM). The method builds on prior work (Tsuji et al., 2014) and includes validation through multiple technical approaches. The detection limits are well-characterized and the method's ability to distinguish DNA from RNA modifications is explicitly described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "d0ba196c-ec52-437d-9263-c94381f21ab7",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DNA was isolated and analyzed from 286 tissue samples representing 124 species across all domains of life: 85 bacterial species, 19 plant species, 12 animal species, 6 yeast species, and 2 archaeal species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C82-C87 provide consistent information about sample composition. The numbers are explicitly stated and match across claims. This represents a comprehensive sampling effort across the tree of life, though the distribution is heavily weighted toward bacteria.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "318fd421-39bb-4aac-82c9-1b09f1b7e40f",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Only three DNA modifications (5mdC, N6mdA, and 5hmdC) were detected above picomolar detection limits across species. The oxidized forms fdC and cadC were not detected at significant levels in any genome despite detection limits of 238 pM and 251 pM respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C28-C30 are consistent and provide both positive findings (three modifications detected) and negative findings (fdC and cadC not detected) with specific detection limits. The sensitivity of the method makes the negative findings meaningful, though the absence of evidence is not definitive proof of absence at levels below detection limits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "12425008-bcc4-4618-9f7a-b8c19aa9a12d",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DNA modifications show domain-specific patterns: 5mdC dominates in higher eukaryotes (vertebrates ~5%, plants ~20% mean), N6mdA dominates in bacteria (highest in Mobiluncus curtisii ~1.4% and Moorella thermoacetica ~1.1%), and 5hmdC is enriched in vertebrate CNS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C38-C39, C54-C56 provide consistent quantitative data showing clear taxonomic patterns. The statistical measures (means and standard deviations) are provided for key groups. The patterns are supported by multiple species within each group, though sample sizes vary considerably across taxa.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "37e0a5ca-6ec3-4c73-8f97-90ce46598ca3",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DNA modifications were absent or present only at trace levels in all yeast species and insects studied, including Drosophila melanogaster, Trichoplusia ni, and Spodoptera frugiperda.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C31-C33 consistently report very low or absent DNA modifications in yeasts and insects. This finding is notable given the sensitivity of the method (picomolar detection limits). The pattern holds across multiple species within these groups, suggesting a biological rather than technical explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "24dfbbc6-e6e3-4c52-87cd-7c8c3a5776b9",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Raphanus sativus was the only species among those tested that contained all three modifications (5mdC, N6mdA, and 5hmdC) simultaneously at detectable levels. Species with 5hmdC also contained its precursor 5mdC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C92-C93 describe unique patterns in specific species. The finding that R. sativus is unique among 124 species is striking. The observation that 5hmdC co-occurs with 5mdC is biochemically logical given that 5hmdC is derived from 5mdC, providing internal consistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "fb0267e9-c14f-4a2f-b8f9-f22137a339ef",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Extremely high cytosine methylation (>35%) was observed in three plant species: Allium cepa, Helianthus annuus, and Andropogon gerardii.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 and C40-C41 consistently report >35% cytosine methylation in these three plant species. These values are exceptionally high compared to other organisms studied. The consistency between abstract and results sections strengthens confidence, though replication data for these specific species is not mentioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "378b5355-239b-4614-8fc7-5e3c2abb02bb",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "5hmdC shows tissue-specific enrichment in vertebrate CNS, with the highest levels detected in Garra barreimiae brain (up to 8%), followed by Mus musculus brain (3.3%) and Xenopus laevis brain (2%). Opossum was an exception showing no CNS enrichment. 5hmdC was detected broadly in vertebrate tissues except spleen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C46-C49, C100 provide consistent quantitative data on 5hmdC distribution. The CNS enrichment is well-documented across multiple species with specific percentages. The spleen exception and opossum anomaly add nuance. The finding that G. barreimiae has higher 5hmdC than mammals is unexpected and notable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "f5e285ac-6f55-465f-83a4-31cfc9bf2596",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Within-species tissue variation in 5mdC is generally small compared to between-species differences. Most tissues within a species show similar 5mdC levels (e.g., 5-6% in most G. barreimiae, M. marmota, and M. musculus tissues), with brain showing slightly higher median values (5.3% vs 4.9%). Notable exceptions include M. domestica (2% across tissues) and X. laevis (9.4% across tissues).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45, C99, C109-C111 consistently show that tissue differences within species are smaller than species differences. Statistical comparisons are provided (e.g., brain vs other tissues). The exceptions (opossum, X. laevis) are clearly noted. Sample sizes appear adequate for the tissue comparisons (n=4-5 for most species).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "e0180551-4696-4a1c-8c51-ff59397d5e48",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "5hmdC was detected in several plant species (Allium cepa, Laurus nobilis, Lepidium sativum, Raphanus sativus, Arabidopsis thaliana, Oryza sativa) but was absent in the majority of plant samples and in all bacterial and fungal genomes analyzed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 describe the limited distribution of 5hmdC in plants and its complete absence in bacteria and fungi. The positive detections are explicitly listed, and the negative findings are stated clearly. This suggests 5hmdC is not universal even within plant species, contrary to what might be expected.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "83e19e3e-e2ab-4029-8109-54ab7233d6df",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Some bacterial species contain both 5mdC and N6mdA modifications, though typically one dominates. Examples include Campylobacter (trace 5mdC with dominant N6mdA), Mobiluncus curtisii (1.4% N6mdA, 0.3% 5mdC), Sebaldella termitidis (2.4% 5mdC, 0.1% N6mdA), Neisseria species (1.4-2% 5mdC, <0.3% N6mdA), and Faecalicoccus pleomorphus and Bifidobacterium adolescentis (>1.5% 5mdC, no detectable N6mdA). 4mdC was detected alongside 5mdC in five bacterial species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63, C65 provide specific quantitative examples of bacterial species with multiple modifications. The inverse relationship between 5mdC and N6mdA levels is consistently demonstrated. The 4mdC detection adds another layer of complexity. The data are internally consistent and show clear patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "9fc8c173-e992-4ca7-8c54-a7c4c86bcda1",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DNA modification patterns in bacteria show taxonomic structure at genus, class, and phylum levels but no correlation with genome size, GC content, pathogenicity, growth temperature, or oxygen tolerance. At the phylum level, Proteobacteria contain more N6mdA than 5mdC, while Bacteroidetes and Firmicutes show the reverse pattern. Members of the same genus often display similar modification values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C72, C101 describe both negative findings (no correlation with structural/ecological features) and positive findings (taxonomic patterns). The taxonomic patterns are supported by the large bacterial dataset (85 species). The negative correlations are explicitly stated, though the statistical tests are not fully detailed. The genus-level similarity (e.g., Vibrio) provides specific examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "5df97d85-96ad-4fe3-99b6-4100fedaf8af",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "N6mdA was detected in germ-free Drosophila melanogaster at ~0.04%, confirming it is not solely from gut microbiota. Adult D. melanogaster contained methylated adenine, while ovarian cells from moths (T. ni: 0.2%, S. frugiperda: 0.1%) contained primarily methylated cytosine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 address the important control of microbiome contamination. The germ-free D. melanogaster experiment directly tests whether N6mdA is endogenous or from bacteria. The detection in germ-free flies supports an endogenous origin. The moth ovarian cell data show tissue-specific differences in modification type within insects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "11cbbbab-a358-483d-bae8-2c31745d9195",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Bacteria that colonize or have mutualistic relationships with higher eukaryotes show median 5mdC levels dominating over N6mdA, similar to their hosts. Candida albicans was the only yeast species containing 5mdC. This pattern suggests host-pathogen interactions may select for similar DNA modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-C103, C64 propose an interesting hypothesis about host-pathogen convergence in DNA modifications. While the pattern is observed (C102, C64), the mechanistic interpretation (C103) is speculative. The sample size for host-associated bacteria is not specified, and alternative explanations (phylogenetic relationships, shared environments) are not ruled out. The C. albicans finding supports the pattern but is based on a citation rather than new data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "3bc718ec-cc2e-44ac-aaf6-4f9a21274efd",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Among two archaeal genomes studied, N6mdA was detected in Halobacterium salinarum but not in Sulfolobus acidocaldarius, though both had similar cytosine modification levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C95 describe findings from two archaeal species. The sample size is very small (n=2), limiting generalizability, but the findings are clearly stated. The difference in adenosine modification between the two archaea is notable given their similar cytosine modification levels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "512a34ec-5231-4cf1-8363-0ee5aa748fe0",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Different growth conditions affected 5mdC levels in HeLa cells, with differences similar in magnitude to tissue differences within organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C107 reports that growth conditions affect 5mdC levels in HeLa cells. However, the specific conditions tested, the magnitude of changes, and statistical significance are not detailed in the text. The comparison to tissue differences is qualitative. This experiment appears to be a control to assess environmental vs. genetic contributions to variation, but insufficient detail is provided to fully evaluate the result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "e6dbc619-0484-4d84-b489-682a9c345925",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The low DNA modification levels in both yeasts and insects raise two evolutionary hypotheses: either DNA modifications were specifically lost during yeast evolution, or they evolved in higher eukaryotes and bacteria after yeasts and insects branched off.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C91 present competing evolutionary hypotheses. C90 cites prior work suggesting loss in yeasts, while C91 proposes an alternative based on the new insect data. Both are speculative interpretations. The data (low modifications in both yeasts and insects) is consistent with either hypothesis, but distinguishing between them would require phylogenetic analysis and examination of additional taxa at key evolutionary positions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "81ff9b51-9765-4aa2-9236-8c6625d7dfe9",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Some model organisms (Danio rerio, Xenopus laevis) had higher 5mdC levels consistent with prior observations. High plant methylation may be attributed to polyploid genomes and silencing of multiplied genes. X. laevis's higher 5mdC (9.4%) compared to X. tropicalis may reflect its tetraploid vs. diploid genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C98, C108 provide interpretations of observed patterns with citations to support the explanations. The polyploidy hypothesis for high plant methylation (C98) and the X. laevis tetraploidy explanation (C108) are plausible and supported by citations. However, these are correlative observations rather than mechanistic demonstrations. The consistency with prior work (C96-C97) strengthens confidence in the measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "58905e61-8f39-4f4b-b1ce-f5e3c1dfc53a",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "DNA modification patterns suggest that evolutionary relatedness rather than genome structural features (size, GC content) drives modification similarities. The vastly different modification amounts indicate differences in inheritance mechanisms and likely reflect differences in methylase and demethylase activities and specificities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C104-C106 present interpretations about evolutionary drivers and mechanistic implications. C104 is supported by the negative correlations with genome features (C66-C67) and positive taxonomic patterns (C68-C72). However, C105-C106 are more speculative, proposing mechanistic differences without direct evidence. These are reasonable hypotheses but would require additional experiments (enzyme activity assays, inheritance studies) to validate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "a3513c37-a2e0-4907-b823-078e4e0c97c2",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The DNA extraction and analysis protocol involved RNase A treatment (37\u00b0C, 45 min), QIAGEN Genomic tip-20/G purification, DNA degradase digestion (5 U, 37\u00b0C, 2 hr, inactivated at 70\u00b0C for 20 min), and LC-MS analysis (200 ng injection, 25\u00b0C column temperature, 0.2 ml/min flow rate).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 describe methodological details that are clearly stated and internally consistent. These are standard molecular biology and analytical chemistry procedures. The specificity of parameters (temperatures, times, amounts) indicates careful optimization. However, some critical details are missing, such as how many technical replicates were performed per sample and quality control criteria for DNA purity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "14c06b23-e334-4f6b-9632-e5e3afbb9b1a",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Percentage modifications were calculated as the ratio of modified cytosine to guanosine for 5mdC and 5hmdC, and as the ratio of modified adenine to thymine for N6mdA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C89 describe the calculation method for percentage modifications. Using guanosine as the denominator for cytosine modifications and thymine for adenine modifications is unusual\u2014typically the unmodified base (dC or dA) would be used. This approach assumes equal amounts of C and G (and A and T), which is approximately true for many genomes but may introduce errors in genomes with skewed base composition. The rationale for this choice is not explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    },
+    {
+      "id": "2822692b-64a6-4795-bd2e-d94ea1084967",
+      "content_id": "5de45040-1a04-4087-9e80-f328b0807f11",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The introduction reviews prior knowledge about DNA modifications: 5mdC was the first discovered (Hotchkiss, 1948), can be oxidized to 5hmdC, fdC, and cadC, accumulates in mammalian Purkinje neurons, and varies widely across model organisms (high in A. thaliana, low in D. melanogaster, absent in S. cerevisiae). N6mdA was discovered in bacteria and later found in archaea, plants, and nematodes. 4mdC is found in bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C23 summarize established knowledge from the literature with appropriate citations. These are background claims that set context for the study. The citations appear appropriate for the claims made. This represents accurate reporting of prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:37:42.008789Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "465833a2-6eed-4db5-81ef-d1ccaa526143",
+      "result_id": "0cb0877e-84d1-43a8-b06f-50bd10b77aa8"
+    },
+    {
+      "claim_id": "9bcd80a6-1d62-4ab0-9333-a138d76166aa",
+      "result_id": "0cb0877e-84d1-43a8-b06f-50bd10b77aa8"
+    },
+    {
+      "claim_id": "25a80fc2-a1a0-4790-a0e2-2690c41d2ad2",
+      "result_id": "0cb0877e-84d1-43a8-b06f-50bd10b77aa8"
+    },
+    {
+      "claim_id": "cb92fc0d-69d2-4d19-a4f6-63cbfff96ca0",
+      "result_id": "0cb0877e-84d1-43a8-b06f-50bd10b77aa8"
+    },
+    {
+      "claim_id": "af57d891-f3f6-43df-9ee8-1e6ae9a48816",
+      "result_id": "0cb0877e-84d1-43a8-b06f-50bd10b77aa8"
+    },
+    {
+      "claim_id": "56da442d-73d1-4748-99f4-298e71503aa6",
+      "result_id": "0cb0877e-84d1-43a8-b06f-50bd10b77aa8"
+    },
+    {
+      "claim_id": "0e7a0ce5-694b-4cd0-add6-72ed0b4deed4",
+      "result_id": "0cb0877e-84d1-43a8-b06f-50bd10b77aa8"
+    },
+    {
+      "claim_id": "0ae208ba-a7f0-4482-8f9e-6d5d79c8bfda",
+      "result_id": "0cb0877e-84d1-43a8-b06f-50bd10b77aa8"
+    },
+    {
+      "claim_id": "579a1c25-e71f-4819-bf78-53ba48b648b9",
+      "result_id": "d0ba196c-ec52-437d-9263-c94381f21ab7"
+    },
+    {
+      "claim_id": "58ad4cd4-b543-4428-a956-dbd33e002e1a",
+      "result_id": "d0ba196c-ec52-437d-9263-c94381f21ab7"
+    },
+    {
+      "claim_id": "f53e4fb1-4d9a-4363-be51-3888625451b4",
+      "result_id": "d0ba196c-ec52-437d-9263-c94381f21ab7"
+    },
+    {
+      "claim_id": "d51b2c67-e76b-497c-8a3a-f41fabb71c8e",
+      "result_id": "d0ba196c-ec52-437d-9263-c94381f21ab7"
+    },
+    {
+      "claim_id": "4b6625c3-a1de-4b53-b3fc-ee78cd3cc43c",
+      "result_id": "d0ba196c-ec52-437d-9263-c94381f21ab7"
+    },
+    {
+      "claim_id": "b8ff41f6-988e-455f-98c9-a3a588de6783",
+      "result_id": "d0ba196c-ec52-437d-9263-c94381f21ab7"
+    },
+    {
+      "claim_id": "6e4f532d-4451-49f0-8c8b-c70920112260",
+      "result_id": "d0ba196c-ec52-437d-9263-c94381f21ab7"
+    },
+    {
+      "claim_id": "50c4373e-6b76-4f79-8b0c-ade11fef414f",
+      "result_id": "318fd421-39bb-4aac-82c9-1b09f1b7e40f"
+    },
+    {
+      "claim_id": "431561b1-2680-40e0-a6bc-c2d55fb2035c",
+      "result_id": "318fd421-39bb-4aac-82c9-1b09f1b7e40f"
+    },
+    {
+      "claim_id": "df3ddbb2-ec0e-4394-aa14-d45b97be4e48",
+      "result_id": "318fd421-39bb-4aac-82c9-1b09f1b7e40f"
+    },
+    {
+      "claim_id": "d82f9053-7914-4ddd-95ae-8956f49bbebf",
+      "result_id": "318fd421-39bb-4aac-82c9-1b09f1b7e40f"
+    },
+    {
+      "claim_id": "aa760b2b-438c-4b6a-b6ad-2455ba70b07a",
+      "result_id": "12425008-bcc4-4618-9f7a-b8c19aa9a12d"
+    },
+    {
+      "claim_id": "6c57fd5a-c345-458f-a4c1-9f27f5d8034c",
+      "result_id": "12425008-bcc4-4618-9f7a-b8c19aa9a12d"
+    },
+    {
+      "claim_id": "72c7f0cc-1f12-4b6d-9fc1-5fac51541db6",
+      "result_id": "12425008-bcc4-4618-9f7a-b8c19aa9a12d"
+    },
+    {
+      "claim_id": "c3c9077d-fe50-4780-a1b4-e814950ea044",
+      "result_id": "12425008-bcc4-4618-9f7a-b8c19aa9a12d"
+    },
+    {
+      "claim_id": "4eab6d2f-7f02-4653-bb97-0e810cff5836",
+      "result_id": "12425008-bcc4-4618-9f7a-b8c19aa9a12d"
+    },
+    {
+      "claim_id": "170144e8-02b7-4ca3-9d3d-afb9d6459bb1",
+      "result_id": "12425008-bcc4-4618-9f7a-b8c19aa9a12d"
+    },
+    {
+      "claim_id": "fa0b7807-612a-4d2d-8437-30e366cf9153",
+      "result_id": "12425008-bcc4-4618-9f7a-b8c19aa9a12d"
+    },
+    {
+      "claim_id": "c65c3fe8-5c1f-4b46-b1c7-973ecb306631",
+      "result_id": "12425008-bcc4-4618-9f7a-b8c19aa9a12d"
+    },
+    {
+      "claim_id": "c0829d28-154d-49e1-9e2d-730c971662b1",
+      "result_id": "37e0a5ca-6ec3-4c73-8f97-90ce46598ca3"
+    },
+    {
+      "claim_id": "ed2b85e1-ce5e-4223-b66c-50b656a3f78e",
+      "result_id": "37e0a5ca-6ec3-4c73-8f97-90ce46598ca3"
+    },
+    {
+      "claim_id": "c7ccf1ce-0f2f-4214-97e2-70e2d49a499f",
+      "result_id": "37e0a5ca-6ec3-4c73-8f97-90ce46598ca3"
+    },
+    {
+      "claim_id": "5ab8a325-9dd0-4928-9a75-6f2d3d17ec71",
+      "result_id": "37e0a5ca-6ec3-4c73-8f97-90ce46598ca3"
+    },
+    {
+      "claim_id": "b233bfcb-d029-4d7d-b65f-2c9b77761bf6",
+      "result_id": "24dfbbc6-e6e3-4c52-87cd-7c8c3a5776b9"
+    },
+    {
+      "claim_id": "f112048e-afc5-4af3-ba3a-4c53d580b08d",
+      "result_id": "24dfbbc6-e6e3-4c52-87cd-7c8c3a5776b9"
+    },
+    {
+      "claim_id": "d19044bc-bfed-4e12-ac84-04aff1fa8b00",
+      "result_id": "24dfbbc6-e6e3-4c52-87cd-7c8c3a5776b9"
+    },
+    {
+      "claim_id": "3bc602d1-1561-4a18-ab85-09a9295b56a9",
+      "result_id": "fb0267e9-c14f-4a2f-b8f9-f22137a339ef"
+    },
+    {
+      "claim_id": "56c3626c-ed99-4bca-963a-6cdf1b749679",
+      "result_id": "fb0267e9-c14f-4a2f-b8f9-f22137a339ef"
+    },
+    {
+      "claim_id": "5c777655-a427-494d-b625-2f590c07abaa",
+      "result_id": "fb0267e9-c14f-4a2f-b8f9-f22137a339ef"
+    },
+    {
+      "claim_id": "2d3cb749-1f34-4e67-9c1e-670c83f6a83e",
+      "result_id": "fb0267e9-c14f-4a2f-b8f9-f22137a339ef"
+    },
+    {
+      "claim_id": "a60d08c5-abcd-472e-8d01-8951202761dc",
+      "result_id": "fb0267e9-c14f-4a2f-b8f9-f22137a339ef"
+    },
+    {
+      "claim_id": "271b8b04-20a8-4af2-8e05-3c951b9d2c5c",
+      "result_id": "378b5355-239b-4614-8fc7-5e3c2abb02bb"
+    },
+    {
+      "claim_id": "ab2205b3-edc4-4ded-992b-96338144d193",
+      "result_id": "378b5355-239b-4614-8fc7-5e3c2abb02bb"
+    },
+    {
+      "claim_id": "b046adf6-baa6-4aff-8c81-bcc1845cec59",
+      "result_id": "378b5355-239b-4614-8fc7-5e3c2abb02bb"
+    },
+    {
+      "claim_id": "6a9eafa6-ea56-44f1-95c0-b6b8f0995a0b",
+      "result_id": "378b5355-239b-4614-8fc7-5e3c2abb02bb"
+    },
+    {
+      "claim_id": "414a632e-b241-4a29-a2f7-5f35afa8655b",
+      "result_id": "378b5355-239b-4614-8fc7-5e3c2abb02bb"
+    },
+    {
+      "claim_id": "c55883bb-5989-40da-985a-3c6c3facbd6f",
+      "result_id": "378b5355-239b-4614-8fc7-5e3c2abb02bb"
+    },
+    {
+      "claim_id": "6b4c2c4e-8500-4213-81c6-1b66605e1713",
+      "result_id": "378b5355-239b-4614-8fc7-5e3c2abb02bb"
+    },
+    {
+      "claim_id": "6c595292-a8b5-471b-9bbd-b10ef7b5f8fd",
+      "result_id": "f5e285ac-6f55-465f-83a4-31cfc9bf2596"
+    },
+    {
+      "claim_id": "3fb0f8fe-ef99-489c-9b93-237f90f0c3ef",
+      "result_id": "f5e285ac-6f55-465f-83a4-31cfc9bf2596"
+    },
+    {
+      "claim_id": "e92e5da5-9dd9-4f6b-ac9e-32d469588f1f",
+      "result_id": "f5e285ac-6f55-465f-83a4-31cfc9bf2596"
+    },
+    {
+      "claim_id": "473f652b-0aab-4291-ad18-1a2c9f39aa92",
+      "result_id": "f5e285ac-6f55-465f-83a4-31cfc9bf2596"
+    },
+    {
+      "claim_id": "f323fd2a-52fc-4ae4-a1e6-f9628cd3b675",
+      "result_id": "f5e285ac-6f55-465f-83a4-31cfc9bf2596"
+    },
+    {
+      "claim_id": "6afaab13-6d9d-41e6-b735-23990f27bde3",
+      "result_id": "f5e285ac-6f55-465f-83a4-31cfc9bf2596"
+    },
+    {
+      "claim_id": "f86b1885-1724-47bd-b7fc-529939c58766",
+      "result_id": "f5e285ac-6f55-465f-83a4-31cfc9bf2596"
+    },
+    {
+      "claim_id": "9370ad98-2d81-4f6c-98e4-85375e82718b",
+      "result_id": "f5e285ac-6f55-465f-83a4-31cfc9bf2596"
+    },
+    {
+      "claim_id": "6b7af641-2929-4ac5-aa16-af7dea65cd3a",
+      "result_id": "e0180551-4696-4a1c-8c51-ff59397d5e48"
+    },
+    {
+      "claim_id": "4861f4a3-e148-423b-aa50-0504f0392102",
+      "result_id": "e0180551-4696-4a1c-8c51-ff59397d5e48"
+    },
+    {
+      "claim_id": "a61e2b75-7eb0-4e99-8afb-f68328a9a3d5",
+      "result_id": "e0180551-4696-4a1c-8c51-ff59397d5e48"
+    },
+    {
+      "claim_id": "8a1618a5-e587-4ffa-9d80-24224e0a0ab9",
+      "result_id": "e0180551-4696-4a1c-8c51-ff59397d5e48"
+    },
+    {
+      "claim_id": "c5fbccab-2ed4-4a9a-9453-5904cd2e13a3",
+      "result_id": "83e19e3e-e2ab-4029-8109-54ab7233d6df"
+    },
+    {
+      "claim_id": "03a64b04-87e6-41ad-aad0-a8dcb4fae913",
+      "result_id": "83e19e3e-e2ab-4029-8109-54ab7233d6df"
+    },
+    {
+      "claim_id": "348abf00-195f-44fc-a11e-feab4ab809f6",
+      "result_id": "83e19e3e-e2ab-4029-8109-54ab7233d6df"
+    },
+    {
+      "claim_id": "7a8143d5-a524-4ea9-94e3-e2c3cbd809b5",
+      "result_id": "83e19e3e-e2ab-4029-8109-54ab7233d6df"
+    },
+    {
+      "claim_id": "b02aa7c1-9ad2-4f23-af3a-fe0eba038cb3",
+      "result_id": "83e19e3e-e2ab-4029-8109-54ab7233d6df"
+    },
+    {
+      "claim_id": "1cd8ca8a-c0fe-4066-bc93-319ebb081061",
+      "result_id": "83e19e3e-e2ab-4029-8109-54ab7233d6df"
+    },
+    {
+      "claim_id": "2fe4dc90-82c9-4dbe-a325-3a28f0b5c226",
+      "result_id": "83e19e3e-e2ab-4029-8109-54ab7233d6df"
+    },
+    {
+      "claim_id": "2c704bde-1425-418a-b315-4a3aeefd8b7a",
+      "result_id": "83e19e3e-e2ab-4029-8109-54ab7233d6df"
+    },
+    {
+      "claim_id": "c79122ff-101a-41f0-9045-f9437675957a",
+      "result_id": "9fc8c173-e992-4ca7-8c54-a7c4c86bcda1"
+    },
+    {
+      "claim_id": "e033c6a6-c1c1-4359-ba69-971a6a3d0f00",
+      "result_id": "9fc8c173-e992-4ca7-8c54-a7c4c86bcda1"
+    },
+    {
+      "claim_id": "147a1790-9684-4eaa-9606-1918c013b2eb",
+      "result_id": "9fc8c173-e992-4ca7-8c54-a7c4c86bcda1"
+    },
+    {
+      "claim_id": "8c0d8e90-7036-43b9-a485-5bfdea60d211",
+      "result_id": "9fc8c173-e992-4ca7-8c54-a7c4c86bcda1"
+    },
+    {
+      "claim_id": "4a9da33b-298c-4a97-bd40-343b6cf4010c",
+      "result_id": "9fc8c173-e992-4ca7-8c54-a7c4c86bcda1"
+    },
+    {
+      "claim_id": "64237a21-a2de-4d24-a917-7bbb7dbddf95",
+      "result_id": "9fc8c173-e992-4ca7-8c54-a7c4c86bcda1"
+    },
+    {
+      "claim_id": "cd3a2c41-2693-4d47-ad2c-ee6b27bc5b67",
+      "result_id": "9fc8c173-e992-4ca7-8c54-a7c4c86bcda1"
+    },
+    {
+      "claim_id": "b0894adb-6d10-4409-b439-bc99d63bc755",
+      "result_id": "9fc8c173-e992-4ca7-8c54-a7c4c86bcda1"
+    },
+    {
+      "claim_id": "cb6f8775-673f-4641-8b52-2a3ca9e3b64d",
+      "result_id": "5df97d85-96ad-4fe3-99b6-4100fedaf8af"
+    },
+    {
+      "claim_id": "136ea580-6628-45fd-80ee-b8ed5df5719d",
+      "result_id": "5df97d85-96ad-4fe3-99b6-4100fedaf8af"
+    },
+    {
+      "claim_id": "205970cb-0fc9-467a-919b-f1129235ee63",
+      "result_id": "5df97d85-96ad-4fe3-99b6-4100fedaf8af"
+    },
+    {
+      "claim_id": "42ee4308-3a43-408f-8dd0-6786d3bc1c5e",
+      "result_id": "5df97d85-96ad-4fe3-99b6-4100fedaf8af"
+    },
+    {
+      "claim_id": "baf4d8dc-f559-46d1-b8dd-97033c29bf02",
+      "result_id": "11cbbbab-a358-483d-bae8-2c31745d9195"
+    },
+    {
+      "claim_id": "d7378910-5762-4a34-a529-0503de4f4fa3",
+      "result_id": "11cbbbab-a358-483d-bae8-2c31745d9195"
+    },
+    {
+      "claim_id": "77f0ae29-9381-4b48-b4bf-57aa2ac41f9e",
+      "result_id": "11cbbbab-a358-483d-bae8-2c31745d9195"
+    },
+    {
+      "claim_id": "33a888f7-a4e7-483a-9876-8e14e58c4a32",
+      "result_id": "3bc718ec-cc2e-44ac-aaf6-4f9a21274efd"
+    },
+    {
+      "claim_id": "b4103d8b-d30b-493b-a916-bf08010ba76d",
+      "result_id": "3bc718ec-cc2e-44ac-aaf6-4f9a21274efd"
+    },
+    {
+      "claim_id": "56aa84a0-83c3-48f7-bbc7-cdb881b259fb",
+      "result_id": "512a34ec-5231-4cf1-8363-0ee5aa748fe0"
+    },
+    {
+      "claim_id": "7281785d-c77b-46d7-9bf9-cf9b90c995f7",
+      "result_id": "e6dbc619-0484-4d84-b489-682a9c345925"
+    },
+    {
+      "claim_id": "c2fb1f46-71b0-477a-b608-57874853d343",
+      "result_id": "e6dbc619-0484-4d84-b489-682a9c345925"
+    },
+    {
+      "claim_id": "387dc0c3-4584-4012-a337-ef00cbc658ef",
+      "result_id": "81ff9b51-9765-4aa2-9236-8c6625d7dfe9"
+    },
+    {
+      "claim_id": "b2f340c1-3876-4cd5-92ef-beb36e45a384",
+      "result_id": "81ff9b51-9765-4aa2-9236-8c6625d7dfe9"
+    },
+    {
+      "claim_id": "12f8c7bd-88f2-4a0d-81e0-125103c22f79",
+      "result_id": "81ff9b51-9765-4aa2-9236-8c6625d7dfe9"
+    },
+    {
+      "claim_id": "0f3a1284-a767-4b14-9da2-93766dc564c6",
+      "result_id": "81ff9b51-9765-4aa2-9236-8c6625d7dfe9"
+    },
+    {
+      "claim_id": "254b4beb-92d4-4f1a-8972-37c2837d2a1b",
+      "result_id": "58905e61-8f39-4f4b-b1ce-f5e3c1dfc53a"
+    },
+    {
+      "claim_id": "60f53c66-8b8f-41bf-8c0f-dc97c3bcd68a",
+      "result_id": "58905e61-8f39-4f4b-b1ce-f5e3c1dfc53a"
+    },
+    {
+      "claim_id": "22b3ca5e-d88d-4d63-b1a0-e706cf44cf67",
+      "result_id": "58905e61-8f39-4f4b-b1ce-f5e3c1dfc53a"
+    },
+    {
+      "claim_id": "b0ab5037-20d8-4ab0-a149-9c36f58435e8",
+      "result_id": "a3513c37-a2e0-4907-b823-078e4e0c97c2"
+    },
+    {
+      "claim_id": "bbf1fb69-8ff4-4134-8160-9682134f7c1e",
+      "result_id": "a3513c37-a2e0-4907-b823-078e4e0c97c2"
+    },
+    {
+      "claim_id": "dd8dd2e7-d09a-46d7-9513-268721324208",
+      "result_id": "a3513c37-a2e0-4907-b823-078e4e0c97c2"
+    },
+    {
+      "claim_id": "ba3b7f34-147f-4492-bef4-8caf3aafcd02",
+      "result_id": "a3513c37-a2e0-4907-b823-078e4e0c97c2"
+    },
+    {
+      "claim_id": "360f189c-ae52-4081-8611-d510f5e3ea5c",
+      "result_id": "a3513c37-a2e0-4907-b823-078e4e0c97c2"
+    },
+    {
+      "claim_id": "5734383e-4fc9-41a0-829d-953933f932e3",
+      "result_id": "a3513c37-a2e0-4907-b823-078e4e0c97c2"
+    },
+    {
+      "claim_id": "9aee1f67-f4a1-423d-9bdf-b898bf437a50",
+      "result_id": "14c06b23-e334-4f6b-9632-e5e3afbb9b1a"
+    },
+    {
+      "claim_id": "a98152ac-0a7c-43e3-ada1-03ded15d7c35",
+      "result_id": "14c06b23-e334-4f6b-9632-e5e3afbb9b1a"
+    },
+    {
+      "claim_id": "2c34b4a7-9436-4ccd-957c-231fb6cc33dc",
+      "result_id": "2822692b-64a6-4795-bd2e-d94ea1084967"
+    },
+    {
+      "claim_id": "7f694086-955f-4bfb-b370-246489ed830e",
+      "result_id": "2822692b-64a6-4795-bd2e-d94ea1084967"
+    },
+    {
+      "claim_id": "3d3658d7-807e-430d-a989-f28b16d571bc",
+      "result_id": "2822692b-64a6-4795-bd2e-d94ea1084967"
+    },
+    {
+      "claim_id": "38c2df5d-f76c-4c27-9909-08feabb08788",
+      "result_id": "2822692b-64a6-4795-bd2e-d94ea1084967"
+    },
+    {
+      "claim_id": "cdcdc66b-0f7c-476d-b823-959a6675ac65",
+      "result_id": "2822692b-64a6-4795-bd2e-d94ea1084967"
+    },
+    {
+      "claim_id": "d3dce817-bdc8-45f0-9583-ef3e8927bd1b",
+      "result_id": "2822692b-64a6-4795-bd2e-d94ea1084967"
+    },
+    {
+      "claim_id": "518cc639-fc40-4af7-883e-001b0bc8ac13",
+      "result_id": "2822692b-64a6-4795-bd2e-d94ea1084967"
+    },
+    {
+      "claim_id": "79799fae-0a88-4d5a-9e0c-218ed2372ff3",
+      "result_id": "2822692b-64a6-4795-bd2e-d94ea1084967"
+    },
+    {
+      "claim_id": "9f058dd0-8de6-448b-823f-d5e6ba387a83",
+      "result_id": "2822692b-64a6-4795-bd2e-d94ea1084967"
+    },
+    {
+      "claim_id": "716432a5-08c5-4dfe-b498-890095e9ce9f",
+      "result_id": "2822692b-64a6-4795-bd2e-d94ea1084967"
+    }
+  ],
+  "comparisons": []
+}

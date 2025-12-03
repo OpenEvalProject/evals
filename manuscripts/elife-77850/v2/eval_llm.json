@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study enrolled 20 AD patients and 35 age-matched controls. All AD patients underwent tau-PET (18F-flortaucipir) and A\u03b2-PET (11C-PIB) imaging, with patients showing mild to moderate impairment (mean MMSE 22.8\u00b14.5, CDR 0.72\u00b10.47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C63-C66 provide clear demographic and clinical characterization of the study cohort with specific quantitative measures. The sample size, imaging modalities, and clinical severity are explicitly stated with appropriate metrics (Table 1), providing adequate methodological transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "AD patients showed frequency-specific spectral changes compared to controls: increased delta-theta power (frontal predominance) and reduced alpha and beta power (posterior predominance), representing a characteristic leftward shift in power spectra.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 present consistent spectral findings with quantitative confidence intervals and regional patterns (Figure 1A-C). The frequency-specific changes are statistically significant and anatomically localized, though the manuscript does not report correction for multiple comparisons across 68 regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C60",
+      "C61",
+      "C62",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Using a linear neural mass model fitted to MEG data, AD patients showed significantly increased excitatory (\u03c4e) and inhibitory (\u03c4i) time-constants, increased excitatory gains (gee), and reduced inhibitory gains (gii) compared to controls, with distinct regional patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C60-C62 report statistically significant group differences in NMM parameters with appropriate confidence intervals and p-values (p<0.001). Claims C69-C73 adequately describe the model parameters and fitting procedure. However, the goodness-of-fit metrics for individual subjects are not reported, and model validation is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C58",
+      "C59"
+    ],
+    "result": "Excitatory time-constants (\u03c4e) were distinctly correlated with tau-PET uptake (t=4.11, p<0.0001) but not A\u03b2-PET, while inhibitory time-constants (\u03c4i) were distinctly correlated with A\u03b2-PET uptake (t=3.38, p=0.0008) but not tau-PET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 and C58-C59 demonstrate protein-specific associations using linear mixed-effects models with appropriate statistics (Figure 3). The dissociation pattern (\u03c4e-tau vs \u03c4i-A\u03b2) is compelling, though the models do not appear to control for disease severity or account for potential spatial autocorrelation in PET data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Neural gain parameters (gee and gii) did not show statistically significant associations with either tau or A\u03b2 PET uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 explicitly states the lack of association between gain parameters and proteinopathy, which is appropriately reported as a negative finding. However, the manuscript does not discuss whether this represents insufficient statistical power or a true biological dissociation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Delta-theta power was positively associated only with A\u03b2, while alpha and beta power showed dual modulation (negative association with tau, positive with A\u03b2). These relationships were robust to cortical atrophy as a covariate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 present frequency-specific protein associations using mixed models (Figure 4A-H). The inclusion of atrophy as a covariate (C19, Appendix 1-figure 4) strengthens the interpretation that spectral changes reflect functional rather than purely structural effects, though the specific atrophy measure used is not detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Mediation analyses revealed that A\u03b2 effects on delta-theta power were partially mediated through \u03c4i, and tau effects on alpha power were partially mediated through \u03c4e, while beta power modulation by both proteins occurred through direct effects only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 report mediation analyses linking proteinopathy to spectral changes via NMM parameters (Figure 4C, F, I). The statistical approach is appropriate, though the manuscript does not report effect sizes for mediated vs. direct pathways or discuss the substantial variance left unexplained by the models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background claims establish that A\u03b2 and tau accumulation define AD pathophysiology, that excitatory-inhibitory imbalance contributes to network dysfunction, and that oscillatory abnormalities in AD patients reflect this imbalance, though mechanistic links remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 appropriately cite established literature to frame the study rationale. These are standard background claims supported by multiple citations to preclinical and clinical studies, providing appropriate context for the investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Preclinical evidence indicates that tau preferentially affects excitatory neurons, with studies showing impaired glutamate transmission, reduced pyramidal neuron firing, and network hypoactivity in tau models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 cite relevant preclinical literature (Hyman et al., 1984; Hoover et al., 2010; Fu et al., 2017, 2019; Chang et al., 2021) to support the interpretation of tau-excitatory associations. The synthesis appears accurate, though the authors acknowledge these are associative rather than causal relationships in humans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Preclinical evidence indicates that extracellular A\u03b2 affects both excitatory and inhibitory synaptic function, with impaired inhibitory function contributing to neuronal hyperactivity and altered excitatory-inhibitory balance in AD models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 appropriately cite preclinical literature (Busche et al., 2008, 2012, 2015; Verret et al., 2012; Zott et al., 2019) supporting A\u03b2-related mechanisms. The synthesis is consistent with cited sources, providing context for interpreting the inhibitory time-constant findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C50"
+    ],
+    "result": "Preclinical models suggest that A\u03b2-associated hyperactivity dominates in preclinical AD stages while tau-associated firing suppression becomes predominant later, with complex synergy leading to circuit hypoactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C50 cite appropriate preclinical studies (Zott et al., 2019; Busche et al., 2019) and integrate them with current findings. However, the current study examines symptomatic AD patients, not preclinical stages, limiting direct validation of this temporal hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The authors speculate that abnormal neural gains may represent early effects of soluble neurotoxins while abnormal time-constants may represent progressive network changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 is explicitly speculative and attempts to explain why gains did not correlate with PET measures while time-constants did. This hypothesis is plausible given that PET measures deposited proteins, but lacks direct supporting evidence and would require longitudinal data or soluble protein measures to test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Oscillations regulate top-down processing and long-range interactions, with delta-theta acting as positive modulators and alpha-beta as inhibitory modulators of local activity, determined by excitatory-inhibitory synaptic current balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C74-C76 cite established neuroscience literature (Uhlhaas et al., 2009; Klimesch, 1999; Buzs\u00e1ki et al., 2012; Wang, 2010; Engel et al., 2001) to provide theoretical context for interpreting spectral findings. These are well-accepted principles in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C45"
+    ],
+    "result": "The authors posit that increased delta-theta power associated with A\u03b2 may predispose dysregulated local firing, while reduced alpha power may favor dysregulated network activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40 and C45 present mechanistic interpretations linking spectral changes to network dysfunction (Figure 5). While grounded in oscillatory theory (C38-C39, C44), these remain speculative inferences from correlational data without direct measures of neuronal firing or network excitability in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Parallels are drawn to epilepsy where slow waves associate with hyperexcitability and atrophy, though the relationship between A\u03b2 and atrophy in AD is weak due to temporal and spatial dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 appropriately cite epilepsy literature (Cascino et al., 1996; Cendes et al., 1996) as a comparative example. Claim C43 correctly notes the weak A\u03b2-atrophy relationship in AD, which is well-established in the field and supports the interpretation that spectral changes are not simply atrophy-driven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Alpha oscillations are considered inhibitory gain controllers of local circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 cites appropriate literature (Klimesch et al., 2007; Lorincz et al., 2009) supporting the functional role of alpha oscillations. This is a well-established concept in systems neuroscience used to interpret the alpha power findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Prior studies show that preclinical AD and APOE4 carriers exhibit increased alpha power while AD dementia patients show reduced alpha power, with A\u03b2-positive MCI patients showing intermediate patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 cite relevant prior studies (Cuesta et al., 2015; Nakamura et al., 2018; Pusil et al., 2019; Sami et al., 2018; Ranasinghe et al., 2020) documenting stage-dependent alpha changes. These citations appropriately contextualize the current findings within the disease trajectory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "A prior study using nonlinear NMM found similar inhibitory time-constant and A\u03b2 associations, though linear models may capture neuroimaging data with higher accuracy than nonlinear models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 appropriately cites Stefanovski et al., 2019 showing convergent findings with a different modeling approach. Claim C52 justifies the linear model choice, though the specific comparison studies are not cited, and the trade-offs between model complexity and interpretability could be better articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "PET signal represents deposited proteins and is mostly insensitive to soluble forms, though soluble oligomers may concentrate around deposits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 acknowledge a key limitation of PET imaging with appropriate citation (Busche et al., 2008). This is an important caveat for interpreting the protein-parameter associations and is honestly discussed by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Flortaucipir has known off-target binding in basal ganglia, choroid plexus, and meninges, but this is unlikely to have driven results because increases were seen in remote brain areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 acknowledge a known limitation of the tau tracer and provide reasonable justification that off-target binding did not confound results based on spatial distribution. This is an appropriate limitation discussion, though quantitative assessment of off-target contribution is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C24",
+      "C67"
+    ],
+    "result": "The authors claim this is the first study in AD patients showing quantitative links between altered excitatory-inhibitory neuronal parameters and tau/A\u03b2 accumulation, supporting distinct roles of these proteins on synaptic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C67 assert novelty and interpret the distinctive protein-parameter associations. While the specific combination of NMM, MEG, and dual PET tracers in AD patients appears novel, the claim of being \"first\" is difficult to verify without exhaustive literature review. The interpretation (C67) is appropriately cautious (\"may support\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The authors propose that frequency-specific oscillatory signatures could serve as biomarkers for tracking AD pathophysiology in therapeutic trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is a forward-looking proposal based on the study findings. While the frequency-specific associations are demonstrated, establishing these as validated biomarkers would require additional work including test-retest reliability, longitudinal validation, and demonstration of treatment sensitivity\u2014none of which are addressed in the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1663 @@
+{
+  "submission": {
+    "id": "5fac9cb8-8ea0-4730-ac2d-3824fe842027",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:59:36.693925Z",
+    "updated_at": "2025-12-03T03:59:36.693925Z"
+  },
+  "content": [
+    {
+      "id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "submission_id": "5fac9cb8-8ea0-4730-ac2d-3824fe842027",
+      "content_type": "manuscript",
+      "content_text": "# High infectiousness immediately before COVID-19 symptom onset highlights the importance of continued contact tracing\n\n## Authors\n\n- William S Hart<sup>1</sup> ([ORCID: 0000-0002-2504-6860](https://orcid.org/0000-0002-2504-6860)) \u2020\n- Philip K Maini<sup>1</sup> ([ORCID: 0000-0002-0146-9164](https://orcid.org/0000-0002-0146-9164))\n- Robin N Thompson<sup>2</sup> ([ORCID: 0000-0001-8545-5212](https://orcid.org/0000-0001-8545-5212))\n\n### Affiliations\n\n1. Mathematical Institute, University of Oxford Oxford United Kingdom\n2. Mathematics Institute, University of Warwick Coventry United Kingdom\n3. Zeeman Institute for Systems Biology and Infectious Disease Epidemiology Research, University of Warwick Coventry United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Understanding changes in infectiousness during SARS-COV-2 infections is critical to assess the effectiveness of public health measures such as contact tracing.Methods:Here, we develop a novel mechanistic approach to infer the infectiousness profile of SARS-COV-2-infected individuals using data from known infector\u2013infectee pairs. We compare estimates of key epidemiological quantities generated using our mechanistic method with analogous estimates generated using previous approaches.Results:The mechanistic method provides an improved fit to data from SARS-CoV-2 infector\u2013infectee pairs compared to commonly used approaches. Our best-fitting model indicates a high proportion of presymptomatic transmissions, with many transmissions occurring shortly before the infector develops symptoms.Conclusions:High infectiousness immediately prior to symptom onset highlights the importance of continued contact tracing until effective vaccines have been distributed widely, even if contacts from a short time window before symptom onset alone are traced.Funding:Engineering and Physical Sciences Research Council (EPSRC).\n\n## Introduction\n\nThe precise proportion of SARS-CoV-2 transmissions arising from non-symptomatic (either presymptomatic or asymptomatic) infectors, as well as from unreported infected hosts with only mild symptoms, remains uncertain (Buitrago-Garcia et al., 2020; Casey et al., 2020). Statistical models can be used to assess the relative contributions of presymptomatic and symptomatic transmission using data from infector\u2013infectee transmission pairs (Ferretti et al., 2020a; Ferretti et al., 2020b; Zhang, 2020; Liu et al., 2020; Tindale et al., 2020). The distributions of three important epidemiological time periods \u2013 the generation time (the difference between the infection times of the infector and infectee) (Ferretti et al., 2020a; Ferretti et al., 2020b; Deng et al., 2020; Ganyani et al., 2020), the time from onset of symptoms to transmission (TOST) (Ferretti et al., 2020b; He et al., 2020; Ashcroft et al., 2020), and the serial interval (the difference between the symptom onset times of the infector and infectee) (Ferretti et al., 2020b; Du et al., 2020) \u2013 can also be inferred (Figure 1A). The generation time and TOST distributions indicate the average infectiousness of a host at each time since infection and time since symptom onset, respectively (He et al., 2020; Fraser, 2007). These distributions are important for assessing the effectiveness of public health measures such as isolation (Ashcroft et al., 2021; Wells et al., 2021) and contact tracing (Ferretti et al., 2020a; Fraser et al., 2004; Davis et al., 2020). Estimates of the SARS-CoV-2 generation time have typically involved an assumption that a host\u2019s infectiousness is independent of their symptom status (Ferretti et al., 2020a; Deng et al., 2020; Ganyani et al., 2020; Knight and Mishra, 2020; Lehtinen et al., 2021; Figure 1B, left). However, such an assumption is unjustified (Lehtinen et al., 2021; Bacallado et al., 2020) and can lead to a poor fit to data (Ferretti et al., 2020b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig1-v2.jpg)\n\n**Figure 1.:** (A) Transmission pair data generally comprise symptom onset dates for known infector\u2013infectee pairs. These data may be supplemented with partial information about infection times, consisting of a range of possible exposure dates for infectors and/or infectees (Ferretti et al., 2020a). While the serial interval for each pair can be calculated directly from the data (with some uncertainty, given the unknown precise times of symptom appearance on the onset dates [Thompson et al., 2019]), other time intervals, including the generation time and TOST, are unobserved (these are shown in grey). (B) In standard approaches (left panel) for inferring infectiousness profiles from transmission pair data, the infectiousness of a host at a given time since infection is assumed to be independent of their incubation period. In our approach (right panel), we link a host\u2019s infectiousness with when\u00a0they\u00a0develop symptoms. We assume that individuals are not infectious during the latent (E) period and that infectiousness may either vary between the presymptomatic infectious (P) and symptomatic infectious (I) periods (solid line \u2013 this corresponds to our \u2018variable infectiousness model\u2019), for example due to changing behaviour in response to symptoms (Manfredi and D\u2019Onofrio, 2013), or be identical in these two time periods (dashed line \u2013 this corresponds to our \u2018constant infectiousness model\u2019).\n\nHere, we develop a mechanistic approach for inferring key epidemiological time periods using data from infector\u2013infectee pairs (Figure 1B, right). This approach was motivated by compartmental epidemic models with Gamma distributed stage durations (Lloyd, 2009; Wearing et al., 2005) and changes in infectiousness during infection (Hethcote et al., 1991; Christofferson et al., 2014; Hart et al., 2019; Hart et al., 2020; Gatto et al., 2020; Aleta et al., 2020). Our method provides an improved fit to data from SARS-CoV-2 transmission pairs compared to previous approaches, namely, (1) a model assuming that transmission and symptoms are independent (Ferretti et al., 2020a; Deng et al., 2020; Ganyani et al., 2020; Knight and Mishra, 2020) and (2) a previous statistical method in which this assumption is relaxed (Ferretti et al., 2020b). Under our best-fitting model, the proportion of presymptomatic transmissions is high, with many transmissions occurring in a short time window prior to symptom onset. We consider the implications of these results for contact tracing and isolation strategies.\n\n## Results\n\nWe considered four different models of infectiousness (see Materials and methods):\n\nWe fitted each model to data from 191 SARS-CoV-2 transmission pairs (Ferretti et al., 2020b; Figure 2\u2014source data 1) obtained by combining data from five studies (Ferretti et al., 2020a; He et al., 2020; Xia et al., 2020; Cheng et al., 2020; Zhang et al., 2020). To account for uncertainty in the precise times of symptom appearance within the day of onset for the infector and infectee (Thompson, 2020), we used data augmentation Markov chain Monte Carlo (MCMC). Point estimates and credible intervals for model parameters are given in Supplementary file 1. The Ferretti model and independent transmission and symptoms model were also fitted to the same data in Ferretti et al., 2020b (the parameter estimates obtained in Ferretti et al., 2020b lie within the credible intervals shown in Supplementary file 1), but estimates of epidemiological quantities obtained using those models were not compared directly in that study.\n\nFor each model, we calculated the generation time (Figure 2A), TOST (Figure 2B), and serial interval (Figure 2C) distributions using point estimates for the fitted parameters (Supplementary file 1). The empirical serial interval distribution is also plotted in Figure 2C, to give an approximate visual indication of the goodness of fit of the different models. However, since the data contained intervals of possible exposure times in addition to symptom onset dates, this only gives a partial picture of the goodness of fit. Therefore, we also calculated the Akaike information criterion (AIC) for each model. When calculating AIC values, we considered maximum likelihood parameter estimates with symptom onsets occurring in the middle of the onset dates, to avoid comparing models based on likelihoods calculated using augmented data. The best fit to the data was obtained using the variable infectiousness model (\u0394AIC\u00a0=\u00a00). The constant infectiousness model gave the next best fit (\u0394AIC\u00a0=\u00a01.3), followed by the Ferretti model (\u0394AIC\u00a0=\u00a05.1). Finally, the model with the standard assumption of independent transmission and symptoms fitted least well (\u0394AIC\u00a0=\u00a038.9).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig2-v2.jpg)\n\n**Figure 2.:** Distributions of epidemiological time intervals estimated by fitting different models to data from 191 SARS-CoV-2 transmission pairs (Figure 2\u2014source data 1). (A) Generation time, indicating the relative expected infectiousness of a host at each time since infection. (B) Time from onset of symptoms to transmission (TOST), indicating the relative expected infectiousness of a host at each time since symptom onset. (C) Serial interval, indicating the periods between infectors and infectees developing symptoms. In (C), the empirical serial interval distribution from the transmission pair data (Figure 2\u2014source data 1) is shown as grey bars. In addition, discretised versions of the serial interval distributions, calculated using the method in Cori et al., 2013, are shown in Figure 2\u2014figure supplement 1. In all panels, lines represent: variable infectiousness model (blue), constant infectiousness model (red), Ferretti model (orange dashed), and independent transmission and symptoms model (purple dashed). We assumed a specified incubation period distribution (Lauer et al., 2020) when fitting the different models to data (see Materials and methods); equivalent panels using an alternative incubation period distribution (Linton et al., 2020) are shown in Figure 2\u2014figure supplement 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Discretised versions of the serial interval distributions shown in Figure 2C, calculated using the method in Cori et al., 2013, plotted as stars alongside the empirical serial interval distribution from the transmission pair data (grey bars). (A) Variable infectiousness model. (B) Constant infectiousness model. (C) Ferretti model. (D) Independent transmission and symptoms model.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Equivalent panels to Figure 2 for an alternative incubation period distribution (Linton et al., 2020). \u0394AIC values for the different models are 0 (variable infectiousness model), 5.1 (constant infectiousness model), 10.2 (Ferretti model), and\u00a064.5 (independent transmission and symptoms model).\n\nThe predicted variability in the generation time between individuals was lower for the independent transmission and symptoms model compared to the other three models (Figure 2A). On the other hand, the TOST distribution was most concentrated around the time of symptom onset for the best-fitting variable infectiousness model, and least concentrated for the independent transmission and symptoms model (Figure 2B). In the best-fitting model, a decrease in infectiousness was inferred following symptom onset, likely due to behavioural factors that reduce the transmission risk following symptom appearance (Manfredi and D\u2019Onofrio, 2013).\n\nUsing the full posterior distributions of model parameters obtained when fitting the models to data, we calculated posterior estimates of the proportion of transmissions occurring before symptom onset (for hosts who developed symptoms) for each model (Figure 3A). The median (95% credible interval) proportion of presymptomatic transmissions was 0.65 (0.53\u20130.77), 0.56 (0.50\u20130.62), 0.55 (0.48\u20130.62), and 0.49 (0.43\u20130.56) under the variable infectiousness model, constant infectiousness model, Ferretti model, and independent transmission and symptoms model, respectively. The central estimate of 65% of transmissions occurring prior to symptom onset using the best-fitting model is higher than estimated in most previous studies in which the generation time and/or TOST were estimated (Ferretti et al., 2020a; Ferretti et al., 2020b; He et al., 2020; Ashcroft et al., 2020). In the wider literature, we note significant variation in estimates of the contribution of presymptomatic transmission (obtained under a range of different modelling assumptions), including estimates exceeding 65% (Casey et al., 2020; Tindale et al., 2020; Ganyani et al., 2020).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig3-v2.jpg)\n\n**Figure 3.:** (A) Violin plots indicating posterior distributions for the proportion of transmissions occurring prior to symptom onset for individuals who develop symptoms (i.e., neglecting transmissions from individuals who remain asymptomatic throughout infection) for the different models. (B) Posterior distributions for the total proportion of non-symptomatic transmissions, accounting for transmissions from asymptomatic infectious individuals (Figure 3\u2014figure supplement 1), for the different models. Equivalent panels assuming an alternative incubation period distribution (Linton et al., 2020) are shown in Figure 3\u2014figure supplement 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Assumed distribution for the proportion of asymptomatic cases, $p_{A}$. (B) Assumed distribution for the relative infectiousness of asymptomatic hosts, $x_{A}$. These distributions were chosen for consistency with the confidence intervals in (1) (Materials and methods).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Equivalent panels to Figure 3 for an alternative incubation period distribution (Linton et al., 2020).\n\nWe also combined the estimates in Figure 3A with the results of a previous study (Buitrago-Garcia et al., 2020) in which the extent of asymptomatic transmission (i.e., transmissions from individuals who never display symptoms) was characterised (Figure 3\u2014figure supplement 1), to obtain estimates for the total proportion of non-symptomatic (either presymptomatic or asymptomatic) transmissions for the different models (Figure 3B). The non-symptomatic proportion was highest for the variable infectiousness model and lowest for the independent transmission and symptoms model.\n\nFinally, we explored the implications of these results for isolation and contact tracing (Figure 4), under the simplifying assumptions of perfect isolation (i.e., isolation prevents transmission completely) and perfect contact tracing (i.e., all contacts are traced successfully during periods of contact tracing). Imperfect isolation and contact tracing are considered in Figure 4\u2014figure supplement 1. Considering a scenario in which a case (referred to here as the \u2018index case\u2019) is detected following symptom onset, we first calculated how many transmissions from the index case are expected to be prevented for different time delays between the index case developing symptoms and being isolated (Figure 4A), compared to a scenario in which the index case is never isolated. We then considered tracing the contacts of that index case, inferring the proportion of presymptomatic contacts identified for different contact elicitation windows (Figure 4B). As an example, a contact elicitation window of 2\u00a0days means that all contacts of the index case that occurred in the 2\u00a0days prior to the index case developing symptoms are traced (in addition to contacts that occurred after the index case developed symptoms). Finally, we considered isolation of infected contacts of the index case. We calculated the expected proportion of transmissions generated by those contacts prevented for different time periods between the index case transmitting the virus to the contact and the contact being isolated (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig4-v2.jpg)\n\n**Figure 4.:** (A) Effect of the timing of isolation of symptomatic index cases: the proportion of transmissions prevented through isolation, for different time periods between symptom onset and isolation. (B) Effect of the contact elicitation window: the proportion of presymptomatic infectious contacts found for different times up to which contacts are traced before the symptom onset time of the index host. (C) Effect of the timing of isolation of infected contacts: the proportion of onward transmissions generated by the contacts prevented by isolation of those contacts, for different time periods between exposure to the index host and isolation of the contacts. In all panels, lines represent predictions obtained using point estimate parameters for the variable infectiousness model (blue), constant infectiousness model (red), Ferretti model (orange dashed), and independent transmission and symptoms model (purple dashed). Here, isolation and contact tracing are assumed to be 100% effective; equivalent panels in which the effectiveness is less than 100% are shown in Figure 4\u2014figure supplement 1. Equivalent panels assuming an alternative incubation period distribution (Linton et al., 2020) are shown in Figure 4\u2014figure supplement 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013C) Equivalent panels to Figure 4A for different values of the isolation effectiveness, $\\epsilon_{1}$ (see Materials and methods). (A) $\\epsilon_{1}=0.8$. (B) $\\epsilon_{1}=0.6$. (C) $\\epsilon_{1}=0.4$. (D\u2013F) Equivalent panels to Figure 4B for different values of the contact identification effectiveness, $\\epsilon_{2}$ (see Materials and methods). (D) $\\epsilon_{2}=0.8$. (E) $\\epsilon_{2}=0.6$. (F) $\\epsilon_{2}=0.4$. (G\u2013I) Equivalent panels to Figure 4C for different values of the contact isolation effectiveness, $\\epsilon_{3}$ (see Materials and methods). (G) $\\epsilon_{3}=0.8$. (H) $\\epsilon_{3}=0.6$. (I) $\\epsilon_{3}=0.4$.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Equivalent panels to Figure 4 for an alternative incubation period distribution (Linton et al., 2020).\n\nUnder the best-fitting variable infectiousness model, 23% (17\u201331%) of all transmissions that would be generated by a symptomatic host are prevented if the host is isolated one day after symptom onset (Figure 4A, blue). This compares to a higher estimate of 38% (32\u201344%) with the standard independent transmission and symptoms assumption (Figure 4A, purple dashed) and intermediate estimates for the constant infectiousness (Figure 4A, red) and Ferretti (Figure 4A, orange dashed) models. The limited impact of isolation of symptomatic hosts alone under the variable infectiousness model, which is due to the high predicted proportion of presymptomatic transmissions (Figure 3A), highlights the need to also conduct contact tracing.\n\nThe variable infectiousness model indicates that 69% (57\u201381%) of presymptomatic infectious contacts are identified if a contact elicitation window of (up to) 2\u00a0days before the index host develops symptoms is used (as in the UK [UK Government, 2021] and USA [Centres for Disease Control and Prevention, 2021]), compared to only 49% (44\u201353%) for the independent transmission and symptoms model (Figure 4B). If the contact elicitation window is extended to 4\u00a0days, then 93% (88\u201397%) of presymptomatic infectious contacts are identified under the variable infectiousness model. However, while choosing a longer contact elicitation window ensures more infected contacts are identified, it also requires more contacts to be traced, many of whom are likely to be uninfected. This effect is enhanced by the fact that index cases are expected to be less infectious at longer time periods prior to symptom onset (Figure 2B).\n\nFor practical assessments of contact tracing and isolation effectiveness, it may be necessary to consider the combined effects of different delays at each stage of the contact tracing and isolation process. For example, if there is a delay of 2\u00a0days between an index case infecting a contact and the index case showing symptoms, and a further delay of 2 days between the index case showing symptoms and the contact being traced and isolated, then this corresponds to a total delay of 4 days between the contact being infected and isolated (assuming that the contact elicitation window is at least 2\u00a0days, so that the contact is traced). Under the variable infectiousness model, 71% of onward transmissions from the contact would then be expected to be prevented after this delay (Figure 4C). In contrast, for an infectious contact that occurred 4 days before the index host developed symptoms (so that the total delay between the contact being infected and isolated is 6\u00a0days, assuming that the contact elicitation window is at least 4\u00a0days so the contact is traced), only 41% of the contact\u2019s onward infections would be expected to be prevented (Figure 4C).\n\n## Discussion\n\nHere, we have considered a range of approaches for estimating epidemiological time periods using data from SARS-CoV-2 infector\u2013infectee transmission pairs. Our mechanistic framework provides an improved fit to data compared to a model predicated on the assumption that infectiousness is independent of symptoms. Despite neglecting potential relationships between viral shedding and symptoms, as well as behavioural changes in response to symptoms (Manfredi and D\u2019Onofrio, 2013), that assumption underlies most previous studies in which the SARS-COV-2 generation time distribution has been estimated (Ferretti et al., 2020a; Deng et al., 2020; Ganyani et al., 2020; Knight and Mishra, 2020).\n\nSome previous studies in which the generation time (Ferretti et al., 2020b; Davis et al., 2020) and/or TOST distributions (Ferretti et al., 2020b; He et al., 2020; Ashcroft et al., 2020) were estimated have considered an alternative assumption that infectiousness depends only on the time since symptom onset, independent of the time of infection. If the serial interval is always positive, which is not the case for COVID-19 (Du et al., 2020), this is equivalent to assuming that the serial interval and generation time distributions are identical (Lehtinen et al., 2021; Cori et al., 2013; Britton and Scalia Tomba, 2019). In one article (Ferretti et al., 2020b), a non-mechanistic model (the Ferretti model) was developed in which a host\u2019s infectiousness could depend on both the time since infection and the time since symptom onset. However, as we have demonstrated, our mechanistic approach provides an improved fit to data compared to that model. In addition, our method is useful for parameterising population-scale compartmental epidemic forecasting models, since the time periods derived using our approach correspond naturally to compartments (Hart et al., 2020).\n\nIt should be noted that an assumption underlying the \u2018E/P/I\u2019 structure of the best-fitting variable infectiousness model (Figure 1B, right, solid line) is that infectiousness may change when individuals develop symptoms. The relative infectiousness of presymptomatic and symptomatic infectious individuals is then estimated from the data. Here, we attributed the inferred reduction in transmission following symptom onset found in Figure 2B (blue line) to behavioural factors. However, in practice behavioural changes may not occur immediately after symptoms appear, particularly if initial symptoms are mild or non-specific. A delay between symptom onset and a change in infectiousness could in principle be incorporated into our mechanistic framework by adding an additional stage of infection. This would generate a continuous TOST profile. However, we did not take this approach here since such increased model complexity would require additional parameters to be estimated, likely requiring further data.\n\nOne caveat of this study is that our estimates were obtained using data collected early in the COVID-19 pandemic (January\u2013March 2020). Since local case numbers were then increasing in locations where some (although not all) of the data were collected (Ferretti et al., 2020b), shorter serial intervals may have been over-represented in the dataset (Britton and Scalia Tomba, 2019). On the other hand, studies from China have indicated a shortening of the generation time (Sun et al., 2021) and serial interval (Ali et al., 2020) over time due to non-pharmaceutical interventions, perhaps suggesting longer serial intervals at the beginning of the pandemic. Differences in isolation policies are also likely to affect predictions of the contribution of presymptomatic transmission (Casey et al., 2020; Sun et al., 2021). We did not explicitly account for isolation policies already in place when the transmission pair data were collected, potentially lowering the estimated effectiveness of isolating symptomatic hosts. More recently, the emergence of novel variants may also have affected the generation time, although their impact is not yet fully clear (Davies et al., 2021). Therefore, while our main aim was to compare estimates of key epidemiological quantities under different modelling assumptions, it would be of interest to update our analyses when more recent data from infector\u2013infectee pairs become available.\n\nIn summary, using a novel mechanistic approach in combination with data from SARS-CoV-2 infector\u2013infectee pairs to infer key epidemiological quantities indicates that a higher proportion of transmissions occur prior to symptoms than predicted by existing methods. A significant proportion of these transmissions arise immediately before symptom onset. This shows that, while the impact of isolation of symptomatic hosts alone may be limited, combining this with contact tracing and isolation of presymptomatic infected contacts is valuable even if the contact elicitation window is short. The use and refinement of contact tracing programmes in countries worldwide is therefore of clear public health importance.\n\n## Materials and methods\n\n### Notation and general details\n\nHere, we outline the notation used in this section when describing the different models that we considered. For a given transmission pair, we label the infector as 1 and the infectee as\u00a02, and define:\n\n$$\nt_{ik}=(time\u00a0of\u00a0infection\u00a0of\u00a0host\u00a0k),k=1,2,t_{sk}=(time\u00a0of\u00a0symptom\u00a0onset\u00a0of\u00a0host\u00a0k),k=1,2,\\tau_{inc,k}=(incubation\u00a0period\u00a0of\u00a0host\u00a0k),k=1,2,\\tau_{gen}=(generation\u00a0time),x_{tost}=(time\u00a0from\u00a0symptom\u00a0onset\u00a0of\u00a01\u00a0to\u00a0transmission\u00a0to\u00a02\u00a0(TOST)),x_{ser}=(serial\u00a0interval).\n$$\n\nIn the above, $t$ is used to denote calendar times, $\\tau$ for time intervals relative to the time of infection, and $x$ for time intervals relative to the time of symptom onset. We denote the probability density functions of the incubation period, generation time, TOST, and serial interval as $f_{inc}$, $f_{gen}$, $f_{tost}$, and $f_{ser}$, respectively, and use a capital $F$ for the corresponding cumulative distribution functions.\n\nIn addition, we denote the expected infectiousness of a host at time since infection $\\tau$ as $\\beta\\tau$, and the expected infectiousness at time since symptom onset $x$ as $bx$. These infectiousness profiles are related to the generation time and TOST distributions, respectively, by\n\n$$\n\\beta(\\tau)=\\beta_{0}f_{gen}(\\tau),\n$$\n\n\n\n$$\nbx=\\beta_{0}f_{tost}x.\n$$\n\nHere, $\\beta_{0}$ corresponds to the expected number of transmissions generated by each host who develops symptoms at some stage during infection, that\u00a0is, the (instantaneous) reproduction number of such hosts (at least if corrections to the reproduction number within a finite contact network [Keeling and Grenfell, 2000; Enright and Kao, 2018] can be neglected). However, the exact value of $\\beta_{0}$ has no effect on our analyses, since it simply adds a constant factor to the likelihood function given below. We also let $\\beta\\tau\u2223\\tau_{inc}$ and $bx\u2223\\tau_{inc}$ be the expected infectiousness at time $\\tau$ since infection and at time $x$ since symptom onset, respectively, conditional on an incubation period of $\\tau_{inc}$ (these are related by $\\beta\\tau\u2223\\tau_{inc}=b\\tau-\\tau_{inc}\\tau_{inc}$ and $bx\u2223\\tau_{inc}=\\betax+\\tau_{inc}\\tau_{inc}$).\n\nWe considered several different models for infectiousness (details of individual models are given below). In each model, the conditional infectiousness, $\\beta\\tau\u2223\\tau_{inc}$, or equivalently, $bx\u2223\\tau_{inc}$, is specified. The distributions of the generation time and TOST can be recovered from this conditional infectiousness by averaging over the incubation period distribution (which is assumed to be known):\n\n$$\n\\beta\\tau=\\beta_{0}f_{gen}\\tau=\\int_{0}^{\u221e}\\beta\\tau\u2223\\tau_{inc}f_{inc}(\\tau_{inc})d\\tau_{inc},\n$$\n\n\n\n$$\nbx=\\beta_{0}f_{tost}x=\\int_{0}^{\u221e}bx\u2223\\tau_{inc}f_{inc}(\\tau_{inc})d\\tau_{inc}.\n$$\n\nAlternative (equivalent) expressions for the generation time and TOST distributions are available for some of the models considered (these are detailed in the \u201cModels of infectiousness\u201d subsection below).\n\nTo obtain an expression for the serial interval distribution, we note that\n\n$$\nx_{ser}=x_{tost}+\\tau_{inc,2}.\n$$\n\nWe assume throughout that $x_{tost}$ and $\\tau_{inc,2}$ are independent, so that the serial interval distribution is given by the convolution\n\n$$\nf_{ser}x_{ser}=\\int_{0}^{\u221e}f_{tost}x_{ser}-\\tau_{inc}f_{inc}\\tau_{inc}d\\tau_{inc}.\n$$\n\nThe proportion of presymptomatic transmissions (out of all transmissions generated by individuals who develop symptoms) can be calculated as\n\n$$\nq_{P}=\\int_{-\u221e}^{0}f_{tost}x_{tost}dx_{tost},\n$$\n\nalthough simpler equivalent expressions for individual models are also detailed later.\n\n### Data\n\nFollowing Ferretti et al., 2020b, we considered SARS-COV-2 transmission pair data from five different studies (Ferretti et al., 2020a; He et al., 2020; Xia et al., 2020; Cheng et al., 2020; Zhang et al., 2020), totalling 191 infector\u2013infectee pairs (Figure 2\u2014source data 1). In all 191 transmission pairs, both the infector and the infectee developed symptoms, and the symptom onset date of each host was recorded. In four of the five studies (Ferretti et al., 2020a; He et al., 2020; Xia et al., 2020; Cheng et al., 2020), intervals of exposure were available for either the infector or infectee (or both), whereas in the other (Zhang et al., 2020), only symptom onset dates were recorded.\n\n### Incubation period\n\nIn our main analyses, the incubation period was assumed to follow a Gamma distribution with shape parameter 5.807 and scale parameter 0.948 (Lauer et al., 2020). This corresponds to a mean incubation period of 5.5 days and a standard deviation of 2.3 days. However, to demonstrate that our main conclusions are robust to the exact incubation period distribution used, we also repeated our analyses using an alternative, more dispersed, Gamma distributed incubation period with a mean of 5.3 days and a standard deviation of 3.2 days (Linton et al., 2020; Figure 2\u2014figure supplement 2, Figure 3\u2014figure supplement 2, Figure 4\u2014figure supplement 2).\n\n### Models of infectiousness\n\n#### Independent transmission and symptoms model\n\nIn this model, the infectiousness of each host at a given time since infection is assumed to be independent of their incubation period, so that\n\n$$\n\\beta\\tau\u2223\\tau_{inc}=\\beta\\tau=\\beta_{0}f_{gen}\\tau,\n$$\n\nwhere the generation time distribution, $f_{gen}$, is prescribed. We assumed (Ferretti et al., 2020a, Ganyani et al., 2020) that\n\n$$\n\\tau_{gen}\u223cGamma(a,b),\n$$\n\nwhere $a$ and $b$ are shape and scale parameters, respectively, so that the mean generation time is $m_{gen}=ab$ and the standard deviation of generation times is $s_{gen}=a^{1/2}b$.\n\nThe TOST distribution for this model is given by\n\n$$\nf_{tost}x_{tost}=\\int_{0}^{\u221e}f_{gen}x_{tost}+\\tau_{inc}f_{inc}(\\tau_{inc})d\\tau_{inc},\n$$\n\nwhile the proportion of presymptomatic transmissions is\n\n$$\nq_{P}=\\int_{0}^{\u221e}f_{gen}\\tau1-F_{inc}(\\tau)d\\tau.\n$$\n\nDerivations of these expressions are given in Appendix.\n\nThe vector of unknown (log) model parameters, $\\theta=(log\u2061m_{gen},log\u2061(s_{gen}))$, was estimated when we fitted the model to the transmission pair data.\n\n#### Ferretti model\n\nFerretti et al., 2020b proposed a model in which the conditional infectiousness was specified as the re-scaled skew-logistic distribution,\n\n$$\nb(x\u2223\\tau_{inc})={\\frac{C_{F}\\beta_{0}e^{\u2212(\\frac{xm_{inc}}{\\tau_{inc}}\u2212\\mu_{F})/\\sigma_{F}}}{(1+e^{\u2212(\\frac{xm_{inc}}{\\tau_{inc}}\u2212\\mu_{F})/\\sigma_{F}})^{\\alpha_{F}+1}},\u2212\\tau_{inc}\\leqx\u00a0<\u00a00,\\frac{C_{F}\\beta_{0}e^{\u2212(x\u2212\\mu_{F})/\\sigma_{F}}}{(1+e^{\u2212(x\u2212\\mu_{F})/\\sigma_{F}})^{\\alpha_{F}+1}},x\\geq0.\n$$\n\nHere, $m_{inc}$ is the mean incubation period, and $\\mu_{F}$, $\\sigma_{F}$, and $\\alpha_{F}$ are model parameters that do not have straightforward epidemiological interpretations. We set\n\n$$\nC_{F}=\\frac{\\alpha_{F}}{\\sigma_{F}1-1+e^{(m_{inc}+\\mu_{F})/\\sigma_{F}}^{-\\alpha_{F}}},\n$$\n\nin order to ensure the correct scaling for the infectiousness (see Appendix).\n\nThe proportion of presymptomatic transmissions is\n\n$$\nq_{P}=\\frac{1+e^{\\mu_{F}/\\sigma_{F}}^{-\\alpha_{F}}-1+e^{(m_{inc}+\\mu_{F})/\\sigma_{F}}^{-\\alpha_{F}}}{1-1+e^{(m_{inc}+\\mu_{F})/\\sigma_{F}}^{-\\alpha_{F}}}.\n$$\n\nA derivation of this expression is given in Appendix.\n\nThe vector of unknown model parameters, $\\theta=(\\mu_{F},log\u2061\\sigma_{F},log\u2061(\\alpha_{F}))$, was estimated when we fitted the model to the transmission pair data (note that $\\mu_{F}$ could take either positive or negative values, whereas $\\sigma_{F}$ and $\\alpha_{F}$ were constrained to be positive).\n\n#### Our mechanistic model\n\nIn our mechanistic approach, we divided each infection into three stages: latent (E), presymptomatic infectious (P), and symptomatic infectious (I). The stage durations were assumed to be independent, and infectiousness was assumed to be constant over the duration of each stage. We denote the stage durations by $y_{E/P/I}$, their density and cumulative distribution functions by $f_{E/P/I}$ and $F_{E/P/I}$, and the infectiousness of hosts in the P and I stages by $\\beta_{P/I}$, respectively. We also define\n\n$$\n\\alpha=\\beta_{P}/\\beta_{I}\n$$\n\nto be the ratio of transmission rates in the P and I stages. In this model, the expected number of transmissions generated by each infected host is\n\n$$\n\\beta_{0}=\\beta_{P}m_{P}+\\beta_{I}m_{I},\n$$\n\nwhere $m_{P/I}$ are the respective mean durations of the P and I stages.\n\nWe further assumed that the durations of each stage followed Gamma distributions, with\n\n$$\ny_{E}\u223cGamma(k_{E},\\frac{1}{k_{inc}\\gamma}),y_{P}\u223cGamma(k_{P},\\frac{1}{k_{inc}\\gamma}),y_{I}\u223cGamma(k_{I},\\frac{1}{k_{I}\\mu}),\n$$\n\nwhere\n\n$$\nk_{inc}=k_{E}+k_{P}.\n$$\n\nIn particular, the scale parameters of $y_{E}$ and $y_{P}$ were both assumed to be equal to $1/(k_{inc}\\gamma)$, in order to ensure a Gamma distributed incubation period,\n\n$$\n\\tau_{inc}=y_{E}+y_{P}\u223cGammak_{inc},\\frac{1}{k_{inc}\\gamma}.\n$$\n\nWe fixed $k_{inc}=5.807$ and $\\gamma=1/(5.807\\times0.948)$, in order to obtain the specified incubation period distribution (see 'Incubation period' subsection above). When we fitted the model to data, we assumed that $k_{I}=1$, so that the symptomatic infectious period follows an exponential distribution. The parameters $k_{E}$ (representing the shape parameter of the latent (E) period) and $\\mu$ (representing the reciprocal of the mean symptomatic infectious (I) period) were estimated in the fitting procedure. We considered two versions of the model: one in which we assumed $\\alpha=1$ (the constant infectiousness model), and one in which $\\alpha$ was also estimated (the variable infectiousness model).\n\nFor this model, the infectiousness of a host at time $x$ since symptom onset, conditional on an incubation period of $\\tau_{inc}$, can be calculated to be\n\n$$\nb(x|\\tau_{inc})={\\alphaC\\beta_{0}(1\u2212F_{Beta}(\u2212x/\\tau_{inc};k_{P},k_{E})),\u2212\\tau_{inc}\\leqx\u00a0<\u00a00,C\\beta_{0}(1\u2212F_{I}(x)),x\\geq0,\n$$\n\nwhere $F_{Beta}(s;a,b)$ is the cumulative distribution function of a Beta distributed random variable with shape\u00a0parameters $a$ and $b$, and\n\n$$\nC=\\frac{\\beta_{I}}{\\beta_{0}}=\\frac{k_{inc}\\gamma\\mu}{\\alphak_{P}\\mu+k_{inc}\\gamma}.\n$$\n\nThe TOST distribution is given by\n\n$$\nf_{tost}(x_{tost})={\\alphaC(1\u2212F_{P}(\u2212x_{tost})),x_{tost}\u00a0<\u00a00,C(1\u2212F_{I}(x_{tost})),x_{tost}\\geq0.\n$$\n\nThe generation time can be written as\n\n$$\n\\tau_{gen}=y_{E}+y^{*},\n$$\n\nwhere $y^{*}$ is the time between the start of the P stage and the transmission occurring, and therefore the generation time distribution is given by the convolution\n\n$$\nf_{gen}\\tau_{gen}=\\int_{0}^{\\tau_{gen}}f^{*}\\tau_{gen}-y_{E}f_{E}y_{E}dy_{E},\n$$\n\nwhere the density, $f^{*}$, of $y^{*}$ satisfies\n\n$$\nf^{*}y^{*}=C\\alpha1-F_{P}y^{*}+\\int_{0}^{y^{*}}1-F_{I}y^{*}-y_{P}f_{P}y_{P}dy_{P}.\n$$\n\nThe proportion of presymptomatic\u00a0transmissions is\n\n$$\nq_{P}=\\frac{\\beta_{P}m_{P}}{\\beta_{0}}=\\frac{\\alphak_{P}\\mu}{\\alphak_{P}\\mu+k_{inc}\\gamma}.\n$$\n\nDerivations of these formulae are given in Appendix.\n\nThe vector of unknown model parameters, $\\theta=(log\u2061(k_{E}),log\u2061\\mu)$, was estimated when we fitted the constant infectiousness model to the transmission pair data, while the corresponding vector of estimated model parameters for the variable infectiousness model was $\\theta=(log\u2061(k_{E}),log\u2061\\mu,log\u2061(\\alpha))$.\n\n### Likelihood and model fitting\n\nFor a single transmission pair (labelled $n$), suppose that the times of infection for the infector and infectee are known to lie in the intervals $[t_{i1,L},t_{i1,R}]$ and $[t_{i2,L},t_{i2,R}]$, respectively (where these intervals may be infinitely wide), and that their symptom onset times, $t_{s1}$ and $t_{s2}$, are known exactly. In this case (when only that transmission pair is observed), the likelihood of the parameters, $\\theta$, of the model of infectiousness under consideration is given by\n\n$$\nL^{(n)}(\\theta)=\\frac{1}{\\beta_{0}}\\intt_{i2,L}t_{i2,R}\\intt_{i1,L}t_{i1,R}b(t_{i2}\u2212t_{s1}\u2223t_{s1}\u2212t_{i1},\\theta)f_{inc}(t_{s1}\u2212t_{i1})f_{inc}(t_{s2}\u2212t_{i2})dt_{i1}dt_{i2},\n$$\n\nwhere the dependence of the conditional expected infectiousness, $b(x\u2223\\tau_{inc},\\theta)$, on the model parameters, $\\theta$, is indicated explicitly. A derivation of this expression is given in Appendix. Assuming that each transmission pair in our dataset is independent, the overall likelihood is therefore given by the product of the contributions, $L^{(n)}(\\theta)$, from each individual transmission pair, that\u00a0is,\n\n$$\nL(\\theta)=\\prodn=1NL^{(n)}(\\theta),\n$$\n\nwhere $N$ is the total number of transmission pairs.\n\nTo account for uncertainty in the exact symptom onset times within the day of onset (and so avoid imparting bias by fitting continuous-time models to discrete-time symptom onset data), we fitted the models to the data using data augmentation MCMC (Thompson, 2020, Ferguson et al., 2005, Cauchemez et al., 2004). In alternating steps of the chain, we updated either the vector of model parameters, $N$, or the exact symptom onset times of each infector and infectee. The chain was run for 2.5 million steps, of which the first 500,000 were discarded as burn-in. Posterior distributions of model\u00a0parameters were obtained by recording only every 100 iterations of the chain (assuming independent uniform prior distributions for each entry of $\\theta$). Point estimates of model parameters (Supplementary file 1) were obtained by calculating the posterior mean of $\\theta$. Full details of the MCMC procedure are given in Appendix.\n\nIn order to provide a straightforward comparison of the goodness of fit between models, we also determined the parameters, $\\theta^$, that maximised the likelihood, $L(\\theta)$, for each model under the assumption that each host developed symptoms exactly in the middle of the known onset date. The AIC for each model could then be calculated as\n\n$$\nAIC=2\\times(numberofestimatedparameters)\u22122log\u2061(L(\\theta^)),\n$$\n\nwhere three parameters were estimated for the variable infectiousness and Ferretti models, and two parameters\u00a0for the constant infectiousness and independent transmission and symptoms models. Since the maximum likelihood estimators, $\\theta^$, did not account for uncertainty in exact symptom onset times, they were not used elsewhere in our analyses (however, these all lay within the credible intervals obtained in the MCMC procedure, which are given in Supplementary file 1).\n\n### Distributions of the presymptomatic and total non-symptomatic proportion of transmissions\n\nExpressions for the proportion of transmissions, $q_{P}$, generated prior to symptom onset, are given for the individual models above. Once asymptomatic cases are accounted for, the overall non-symptomatic proportion of transmissions can be written as\n\n$$\n\\frac{p_{A}x_{A}+(1\u2212p_{A})q_{P}}{p_{A}x_{A}+(1\u2212p_{A})},\n$$\n\nwhere $p_{A}$ is the proportion of infected individuals who remain asymptomatic and $x_{A}$ is the ratio between the average number of secondary cases generated by an asymptomatic host and the number generated by a host who develops symptoms at some stage during infection. A derivation of this expression is given in Appendix.\n\nFor each model, we used the posterior parameter distributions that were obtained when we fitted the model to data to obtain a sample from the posterior distribution of $q_{P}$. In order to estimate the total proportion of non-symptomatic transmissions, we assumed the distributions\n\n$$\np_{A}\u223cBeta(85,186),[mean\u00a00.31,\u00a0standard\u00a0deviation\u00a00.03],x_{A}\u223cLognormal(\u22121.04,0.65^{2}),[mean\u00a00.44,\u00a0standard\u00a0deviation\u00a00.32],\n$$\n\nwhich are consistent with estimates in Buitrago-Garcia et al., 2020. These distributions are shown in Figure 3\u2014figure supplement 1. We then combined samples from the assumed distributions of $p_{A}$ and $x_{A}$ with the sample that we generated from the posterior distribution of $q_{P}$ to obtain a distribution for the total proportion of non-symptomatic transmissions.\n\n### Contact tracing and isolation\n\nFirst, we considered the proportion of transmissions that can be prevented if a symptomatic host is isolated $d_{1}$ days after symptom onset. Assuming that a proportion $\\epsilon_{1}$ of infectious contacts that would otherwise occur are prevented during the isolation period (and neglecting any transmissions that occur after the end of the isolation period), the overall proportion of transmissions prevented through isolation is\n\n$$\n\\epsilon_{1}(1\u2212F_{tost}(d_{1})).\n$$\n\nWe then predicted the proportion of the presymptomatic infectious contacts of a symptomatic index case that will be found, if contacts are traced up to $d_{2}$ days before the time of symptom onset of the index case. In this scenario, assuming that it is possible to trace a fraction $\\epsilon_{2}$ of the host\u2019s presymptomatic contacts (at times when tracing takes place), then the proportion of presymptomatic infectious contacts found is equal to\n\n$$\n\\frac{\\epsilon_{2}(q_{P}\u2212F_{tost}(\u2212d_{2}))}{q_{P}}.\n$$\n\nFinally, we considered the proportion of onward transmissions that can be prevented if an infected individual, who is identified through contact tracing, is isolated $d_{3}$ days after exposure. Assuming that a proportion $d_{3}$ of infectious contacts that would otherwise occur are prevented during the isolation period, the overall proportion of onward transmissions prevented through isolation is\n\n$$\n\\epsilon_{3}(1\u2212F_{gen}(d_{3})).\n$$\n\nIn the main text (Figure 4), we assumed that $\\epsilon_{1}=\\epsilon_{2}=\\epsilon_{3}=1$ (i.e., isolation of symptomatic hosts, contact identification, and isolation of infected contacts are all 100% effective). Values of $\\epsilon_{1}$, $\\epsilon_{2}$, and $\\epsilon_{3}$ below 1 are considered in Figure 4\u2014figure supplement 1.\n",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "e5f8d983-4e7b-4974-8979-72e3edacc3bf",
+      "submission_id": "5fac9cb8-8ea0-4730-ac2d-3824fe842027",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer Flegg, The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65534.sa1](https://doi.org/10.7554/eLife.65534.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThe manuscript uses a new approach to model the infectiousness profile of COVID-19 infected individuals. The key finding from this work is that contact tracing prevents a large proportion of onward transmissions, even if contacts within a short window (2 days) are traced. The evidence from this work emphasises the importance of contact tracing and isolation in containing the spread of COVID-19. This finding is of great interest to public health policy makers. The methodology is of general interest to modellers working on COVID-19.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"High infectiousness immediately before COVID-19 symptom onset highlights the importance of continued contact tracing\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Rowland Raymond Kao (Reviewer #2); Elizabeth Lee (Reviewer #3).\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another. What follows below is the Reviewing Editor's edited compilation of the essential and ancillary points provided by reviewers in their critiques and in their interaction post-review. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you attempt to amend or expand the text to clarify the narrative accordingly.\n\nEssential revisions:\n\n1. Is it possible to use more recent data? If so, the results should be updated. If not, the discussion should be expanded to highlight this caveat, otherwise the conclusion on the effectiveness of contact tracing could be overly optimistic.\n\n2. The model code and compiled data should be made available for public use.\n\n3. The fundamental problem is already well known, and the application to COVID-19, while useful, is better than poorer models, but only marginally better performing than the Ferretti model. The serial interval estimates are only slightly better (figure 2), there are 84% of contacts when considering tracing two days prior to symptoms, compared to what looks like about 80% for the alternative in figure 4 and by the looks of the violin plots from figure 3, quite a bit of overlap if one considers credible intervals. As such, while the analysis is a solid, useful addition to the literature, the authors should provide a better exposition on how it advances scientific insight (the fundamental issues regarding exponential distributions having been identified previously), methodologically (given the thorough analysis by Fraser et al. in 2004) or in terms of impact (given the limited improvement over the Ferretti model).\n\n4. The framing of the paper seems very focused on improving fits to the transmission pair data, however, and I think it would be more impactful to consider the implications of poor estimation of pre-symptomatic transmission and the generation time. I think this shift in focus could also help strengthen the narrative of the paper, which wavers between focusing on model fitting and the importance of implications for contact tracing. Can the authors comment?\n\n5. I was a bit lost in the application of the models to the contact tracing example. The definition of the contact elicitation window (lines 142-144), where identification of contacts would occur up to x days prior to contact symptom onset, makes sense theoretically in this model comparison setting, but it is hard to translate these findings to real-world application. Are there any implications that could be useful for informing contact elicitation strategy (e.g., for how many days after time of infection or symptom onset could contact tracing have a measurable benefit in preventing onward transmissions?)\n\n6. Lines 147-151: Given that the impact on onward transmission events is so dependent on the contact tracing assumptions, I would recommend stating the assumptions explicitly here, reporting the results in relative terms as compared to a single model, or both.\n\n7. How different are the variable infectiousness model results from parameter estimates from the original studies that reported the transmission pairs data?\n\n8. Can the authors comment on the plausibility of the infectiousness distribution in their new proposed models? While better model fitting certainly provides a measurable improvement to leveraging existing data, I'm not aware of studies that support the discontinuous assumptions about infectiousness made here.\n\n9. Assuming alpha means the same thing across the models, why is the 95% credible interval so large for the Feretti model? In general, the model parameters should be more clearly explained for this model. Can the authors comment?\n",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fd813a4a-1b43-4f85-afa2-70209a7e0fb8",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C1",
+      "claim": "Understanding changes in infectiousness during SARS-CoV-2 infections is critical to assess the effectiveness of public health measures such as contact tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding changes in infectiousness during SARS-COV-2 infections is critical to assess the effectiveness of public health measures such as contact tracing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as background context, drawing on established knowledge about the importance of understanding disease dynamics for public health interventions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "ba8c9f5b-2d99-4bf7-bae6-8ecef6146800",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C2",
+      "claim": "A novel mechanistic approach was developed to infer the infectiousness profile of SARS-CoV-2-infected individuals using data from known infector\u2013infectee pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we develop a novel mechanistic approach to infer the infectiousness profile of SARS-COV-2-infected individuals using data from known infector\u2013infectee pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "5bee81c0-00de-4edf-adb2-e3a300f35b97",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C3",
+      "claim": "The mechanistic method provides an improved fit to data from SARS-CoV-2 infector\u2013infectee pairs compared to commonly used approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanistic method provides an improved fit to data from SARS-CoV-2 infector\u2013infectee pairs compared to commonly used approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AIC comparisons presented in the Results section showing the variable infectiousness model had the best fit (\u0394AIC = 0).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "0c0d30e7-4d77-48fa-b252-6f7d1f2576db",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C4",
+      "claim": "The best-fitting model indicates a high proportion of presymptomatic transmissions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our best-fitting model indicates a high proportion of presymptomatic transmissions, with many transmissions occurring shortly before the infector develops symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the posterior distribution analysis showing 65% (0.53\u20130.77) presymptomatic transmission for the variable infectiousness model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "c99dd113-f70e-4f13-ac58-3e4098fe92d7",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C5",
+      "claim": "Many transmissions occur shortly before the infector develops symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our best-fitting model indicates a high proportion of presymptomatic transmissions, with many transmissions occurring shortly before the infector develops symptoms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 2B showing the TOST distribution concentrated around symptom onset for the variable infectiousness model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "67364aee-b0f2-4e99-945e-2edd3958017b",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C6",
+      "claim": "High infectiousness immediately prior to symptom onset highlights the importance of continued contact tracing until effective vaccines have been distributed widely.",
+      "claim_type": "EXPLICIT",
+      "source": "High infectiousness immediately prior to symptom onset highlights the importance of continued contact tracing until effective vaccines have been distributed widely, even if contacts from a short time window before symptom onset alone are traced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data analysis results showing high presymptomatic transmission and the contact tracing effectiveness calculations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "e1ed6a41-1401-426d-9197-d2c4ab052bad",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C7",
+      "claim": "The precise proportion of SARS-CoV-2 transmissions arising from non-symptomatic infectors remains uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "The precise proportion of SARS-CoV-2 transmissions arising from non-symptomatic (either presymptomatic or asymptomatic) infectors, as well as from unreported infected hosts with only mild symptoms, remains uncertain (Buitrago-Garcia et al., 2020; Casey et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature indicating ongoing uncertainty in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "c040558a-db8e-4252-86c8-092bf4a56df7",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C8",
+      "claim": "Statistical models can be used to assess the relative contributions of presymptomatic and symptomatic transmission using data from infector\u2013infectee transmission pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical models can be used to assess the relative contributions of presymptomatic and symptomatic transmission using data from infector\u2013infectee transmission pairs (Ferretti et al., 2020a; Ferretti et al., 2020b; Zhang, 2020; Liu et al., 2020; Tindale et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies that have used this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "dd24c4a7-b790-42ec-8636-2701b14be4fb",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C9",
+      "claim": "The generation time is the difference between the infection times of the infector and infectee.",
+      "claim_type": "EXPLICIT",
+      "source": "the generation time (the difference between the infection times of the infector and infectee) (Ferretti et al., 2020a; Ferretti et al., 2020b; Deng et al., 2020; Ganyani et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard epidemiological definition supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "8b624c65-ab8c-4db9-b29d-6f9e3ec7dc39",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C10",
+      "claim": "The serial interval is the difference between the symptom onset times of the infector and infectee.",
+      "claim_type": "EXPLICIT",
+      "source": "the serial interval (the difference between the symptom onset times of the infector and infectee) (Ferretti et al., 2020b; Du et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard epidemiological definition supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "bd4ee89a-79c4-4893-96ac-7b5a17038eb0",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C11",
+      "claim": "The generation time distribution indicates the average infectiousness of a host at each time since infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation time and TOST distributions indicate the average infectiousness of a host at each time since infection and time since symptom onset, respectively (He et al., 2020; Fraser, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work establishing this relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "079b10ab-eb7c-4876-8155-499dfe4502b6",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C12",
+      "claim": "The TOST distribution indicates the average infectiousness of a host at each time since symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation time and TOST distributions indicate the average infectiousness of a host at each time since infection and time since symptom onset, respectively (He et al., 2020; Fraser, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work establishing this relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "9c8c0c9e-629f-422d-99b5-caea3d5a2371",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C13",
+      "claim": "Generation time and TOST distributions are important for assessing the effectiveness of public health measures such as isolation and contact tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "These distributions are important for assessing the effectiveness of public health measures such as isolation (Ashcroft et al., 2021; Wells et al., 2021) and contact tracing (Ferretti et al., 2020a; Fraser et al., 2004; Davis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies demonstrating the use of these distributions for evaluating interventions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "6a580688-3228-4626-813a-79857108feba",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C14",
+      "claim": "Estimates of the SARS-CoV-2 generation time have typically involved an assumption that a host's infectiousness is independent of their symptom status.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates of the SARS-CoV-2 generation time have typically involved an assumption that a host's infectiousness is independent of their symptom status (Ferretti et al., 2020a; Deng et al., 2020; Ganyani et al., 2020; Knight and Mishra, 2020; Lehtinen et al., 2021; Figure 1B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to multiple previous studies and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "602bd084-a75b-41fd-9fdd-3115e59050a0",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C15",
+      "claim": "The assumption that infectiousness is independent of symptom status is unjustified.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such an assumption is unjustified (Lehtinen et al., 2021; Bacallado et al., 2020) and can lead to a poor fit to data (Ferretti et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies that have critiqued this assumption.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "66d9a2df-4ada-4d7f-a1aa-856524e76bcf",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C16",
+      "claim": "The assumption that infectiousness is independent of symptom status can lead to a poor fit to data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such an assumption is unjustified (Lehtinen et al., 2021; Bacallado et al., 2020) and can lead to a poor fit to data (Ferretti et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study demonstrating poor model fit.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "306f2da0-aa40-41c6-8944-781adeb18ff9",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C17",
+      "claim": "The mechanistic approach was motivated by compartmental epidemic models with Gamma distributed stage durations.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach was motivated by compartmental epidemic models with Gamma distributed stage durations (Lloyd, 2009; Wearing et al., 2005) and changes in infectiousness during infection (Hethcote et al., 1991; Christofferson et al., 2014; Hart et al., 2019; Hart et al., 2020; Gatto et al., 2020; Aleta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous modeling literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "4f2d9d1e-acca-4141-9a10-8415619eee66",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C18",
+      "claim": "The mechanistic approach was motivated by models with changes in infectiousness during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach was motivated by compartmental epidemic models with Gamma distributed stage durations (Lloyd, 2009; Wearing et al., 2005) and changes in infectiousness during infection (Hethcote et al., 1991; Christofferson et al., 2014; Hart et al., 2019; Hart et al., 2020; Gatto et al., 2020; Aleta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous modeling literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "4330aa9e-c80e-479d-9812-e1cf511b776b",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C19",
+      "claim": "Four different models of infectiousness were considered in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered four different models of infectiousness (see Materials and methods):",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study design, with details provided in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "1dd2c44b-a441-4464-bc7e-ee3f380ab0f7",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C20",
+      "claim": "Each model was fitted to data from 191 SARS-CoV-2 transmission pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "We fitted each model to data from 191 SARS-CoV-2 transmission pairs (Ferretti et al., 2020b; Figure 2\u2014source data 1) obtained by combining data from five studies (Ferretti et al., 2020a; He et al., 2020; Xia et al., 2020; Cheng et al., 2020; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the analysis, with citations to the source studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "488c65c2-d4be-458a-a9e0-db4179326db6",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C21",
+      "claim": "The transmission pair data were obtained by combining data from five studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We fitted each model to data from 191 SARS-CoV-2 transmission pairs (Ferretti et al., 2020b; Figure 2\u2014source data 1) obtained by combining data from five studies (Ferretti et al., 2020a; He et al., 2020; Xia et al., 2020; Cheng et al., 2020; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources with specific citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "21237c86-dcb8-4652-bb01-c88be5c99a00",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C22",
+      "claim": "Data augmentation Markov chain Monte Carlo was used to account for uncertainty in the precise times of symptom appearance within the day of onset.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for uncertainty in the precise times of symptom appearance within the day of onset for the infector and infectee (Thompson, 2020), we used data augmentation Markov chain Monte Carlo (MCMC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology used, with a citation supporting the approach.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "7ba50efe-1f5c-475c-acc1-04f6eca7d178",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C23",
+      "claim": "The variable infectiousness model provided the best fit to the data with \u0394AIC = 0.",
+      "claim_type": "EXPLICIT",
+      "source": "The best fit to the data was obtained using the variable infectiousness model (\u0394AIC = 0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the model comparison results based on AIC values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "2b6a8ae0-8ec4-4957-a73a-648d0ec94e5d",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C24",
+      "claim": "The constant infectiousness model gave the next best fit with \u0394AIC = 1.3.",
+      "claim_type": "EXPLICIT",
+      "source": "The constant infectiousness model gave the next best fit (\u0394AIC = 1.3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the model comparison results based on AIC values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "c1feafd1-7640-40ff-aceb-ce138b615608",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C25",
+      "claim": "The Ferretti model had \u0394AIC = 5.1.",
+      "claim_type": "EXPLICIT",
+      "source": "followed by the Ferretti model (\u0394AIC = 5.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the model comparison results based on AIC values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "9625eaf6-242a-4564-a979-2d897e63b79e",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C26",
+      "claim": "The independent transmission and symptoms model fitted least well with \u0394AIC = 38.9.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the model with the standard assumption of independent transmission and symptoms fitted least well (\u0394AIC = 38.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the model comparison results based on AIC values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "a89fcd34-d3c4-4170-bfea-8be8159d41f2",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C27",
+      "claim": "The predicted variability in the generation time between individuals was lower for the independent transmission and symptoms model compared to the other three models.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted variability in the generation time between individuals was lower for the independent transmission and symptoms model compared to the other three models (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and can be observed in Figure 2A showing the generation time distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "fcda87ee-6365-4d6f-aa5f-4cc0054c6480",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C28",
+      "claim": "The TOST distribution was most concentrated around the time of symptom onset for the best-fitting variable infectiousness model.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the TOST distribution was most concentrated around the time of symptom onset for the best-fitting variable infectiousness model, and least concentrated for the independent transmission and symptoms model (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and can be observed in Figure 2B showing the TOST distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "eff28680-e2dc-468d-a673-a2e7bac41a42",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C29",
+      "claim": "In the best-fitting model, a decrease in infectiousness was inferred following symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "In the best-fitting model, a decrease in infectiousness was inferred following symptom onset, likely due to behavioural factors that reduce the transmission risk following symptom appearance (Manfredi and D'Onofrio, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fitted model parameters and supported by a citation to literature on behavioral changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "9309b2e9-5f6b-46bc-a6e5-d62f095f2640",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C30",
+      "claim": "The decrease in infectiousness following symptom onset is likely due to behavioural factors that reduce the transmission risk following symptom appearance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the best-fitting model, a decrease in infectiousness was inferred following symptom onset, likely due to behavioural factors that reduce the transmission risk following symptom appearance (Manfredi and D'Onofrio, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the model results, supported by a citation to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "c6d4a0cf-5c80-4349-a41d-59a6ba3b2aab",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C31",
+      "claim": "The median proportion of presymptomatic transmissions was 0.65 (0.53\u20130.77) under the variable infectiousness model.",
+      "claim_type": "EXPLICIT",
+      "source": "The median (95% credible interval) proportion of presymptomatic transmissions was 0.65 (0.53\u20130.77), 0.56 (0.50\u20130.62), 0.55 (0.48\u20130.62), and 0.49 (0.43\u20130.56) under the variable infectiousness model, constant infectiousness model, Ferretti model, and independent transmission and symptoms model, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the posterior estimates from the model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "227f1ef6-c53e-42b5-9fd5-a2cc013687b0",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C32",
+      "claim": "The median proportion of presymptomatic transmissions was 0.56 (0.50\u20130.62) under the constant infectiousness model.",
+      "claim_type": "EXPLICIT",
+      "source": "The median (95% credible interval) proportion of presymptomatic transmissions was 0.65 (0.53\u20130.77), 0.56 (0.50\u20130.62), 0.55 (0.48\u20130.62), and 0.49 (0.43\u20130.56) under the variable infectiousness model, constant infectiousness model, Ferretti model, and independent transmission and symptoms model, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the posterior estimates from the model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "4f716267-dbf4-4a75-9ebb-e8f54fb3b245",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C33",
+      "claim": "The median proportion of presymptomatic transmissions was 0.55 (0.48\u20130.62) under the Ferretti model.",
+      "claim_type": "EXPLICIT",
+      "source": "The median (95% credible interval) proportion of presymptomatic transmissions was 0.65 (0.53\u20130.77), 0.56 (0.50\u20130.62), 0.55 (0.48\u20130.62), and 0.49 (0.43\u20130.56) under the variable infectiousness model, constant infectiousness model, Ferretti model, and independent transmission and symptoms model, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the posterior estimates from the model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "146810ad-87e1-4126-8c2a-befbf1e1d8d0",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C34",
+      "claim": "The median proportion of presymptomatic transmissions was 0.49 (0.43\u20130.56) under the independent transmission and symptoms model.",
+      "claim_type": "EXPLICIT",
+      "source": "The median (95% credible interval) proportion of presymptomatic transmissions was 0.65 (0.53\u20130.77), 0.56 (0.50\u20130.62), 0.55 (0.48\u20130.62), and 0.49 (0.43\u20130.56) under the variable infectiousness model, constant infectiousness model, Ferretti model, and independent transmission and symptoms model, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the posterior estimates from the model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "5c8280d4-4883-4e0f-98ff-a6c05cbdda7f",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C35",
+      "claim": "The central estimate of 65% of transmissions occurring prior to symptom onset using the best-fitting model is higher than estimated in most previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The central estimate of 65% of transmissions occurring prior to symptom onset using the best-fitting model is higher than estimated in most previous studies in which the generation time and/or TOST were estimated (Ferretti et al., 2020a; Ferretti et al., 2020b; He et al., 2020; Ashcroft et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current study's results to previous literature through citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "5c758ebc-5fe5-4dfc-a1b2-6e6b7bb793ce",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C36",
+      "claim": "There is significant variation in estimates of the contribution of presymptomatic transmission in the wider literature, including estimates exceeding 65%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wider literature, we note significant variation in estimates of the contribution of presymptomatic transmission (obtained under a range of different modelling assumptions), including estimates exceeding 65% (Casey et al., 2020; Tindale et al., 2020; Ganyani et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies with varying estimates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "dfebf05b-ab1d-4a1d-9492-f81bc80a64f6",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C37",
+      "claim": "Under the variable infectiousness model, 23% (17\u201331%) of all transmissions that would be generated by a symptomatic host are prevented if the host is isolated one day after symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the best-fitting variable infectiousness model, 23% (17\u201331%) of all transmissions that would be generated by a symptomatic host are prevented if the host is isolated one day after symptom onset (Figure 4A, blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the model and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "31df47d5-0019-4eed-a9be-e009e6fb4379",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C38",
+      "claim": "Under the independent transmission and symptoms model, 38% (32\u201344%) of transmissions are prevented if the host is isolated one day after symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "This compares to a higher estimate of 38% (32\u201344%) with the standard independent transmission and symptoms assumption (Figure 4A, purple dashed)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the model and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "2c0070f1-5e4c-4750-9964-0542cc8fe916",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C39",
+      "claim": "The limited impact of isolation of symptomatic hosts alone under the variable infectiousness model highlights the need to also conduct contact tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "The limited impact of isolation of symptomatic hosts alone under the variable infectiousness model, which is due to the high predicted proportion of presymptomatic transmissions (Figure 3A), highlights the need to also conduct contact tracing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the model results showing limited effectiveness of isolation alone.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "d63a1e08-d974-4e92-905b-fc3249cd2d7c",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C40",
+      "claim": "Under the variable infectiousness model, 69% (57\u201381%) of presymptomatic infectious contacts are identified if a contact elicitation window of 2 days before the index host develops symptoms is used.",
+      "claim_type": "EXPLICIT",
+      "source": "The variable infectiousness model indicates that 69% (57\u201381%) of presymptomatic infectious contacts are identified if a contact elicitation window of (up to) 2 days before the index host develops symptoms is used (as in the UK [UK Government, 2021] and USA [Centres for Disease Control and Prevention, 2021]), compared to only 49% (44\u201353%) for the independent transmission and symptoms model (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the model and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "172c8a43-5c3f-4ee4-b729-37dbd9371940",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C41",
+      "claim": "A contact elicitation window of 2 days is used in the UK and USA.",
+      "claim_type": "EXPLICIT",
+      "source": "The variable infectiousness model indicates that 69% (57\u201381%) of presymptomatic infectious contacts are identified if a contact elicitation window of (up to) 2 days before the index host develops symptoms is used (as in the UK [UK Government, 2021] and USA [Centres for Disease Control and Prevention, 2021])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to UK and USA government guidance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "8f1fcbde-8353-457f-b3ad-c831ac149f8b",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C42",
+      "claim": "Under the independent transmission and symptoms model, 49% (44\u201353%) of presymptomatic infectious contacts are identified with a 2-day contact elicitation window.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to only 49% (44\u201353%) for the independent transmission and symptoms model (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the model and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "e38e3bba-eaea-4fc8-b159-2578e6fbc5fc",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C43",
+      "claim": "If the contact elicitation window is extended to 4 days, then 93% (88\u201397%) of presymptomatic infectious contacts are identified under the variable infectiousness model.",
+      "claim_type": "EXPLICIT",
+      "source": "If the contact elicitation window is extended to 4 days, then 93% (88\u201397%) of presymptomatic infectious contacts are identified under the variable infectiousness model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "eadbcc08-2962-427b-b455-63dc23ba0e35",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C44",
+      "claim": "Choosing a longer contact elicitation window requires more contacts to be traced, many of whom are likely to be uninfected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while choosing a longer contact elicitation window ensures more infected contacts are identified, it also requires more contacts to be traced, many of whom are likely to be uninfected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the practical implications of extending the contact elicitation window.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "e86bbba5-dc29-4961-ad7c-c44272fa8bf4",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C45",
+      "claim": "Index cases are expected to be less infectious at longer time periods prior to symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is enhanced by the fact that index cases are expected to be less infectious at longer time periods prior to symptom onset (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the TOST distribution shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "f3c0ed6d-0c07-4e6c-abd7-073b03e29a9b",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C46",
+      "claim": "Under the variable infectiousness model, 71% of onward transmissions from a contact would be prevented if there is a total delay of 4 days between the contact being infected and isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the variable infectiousness model, 71% of onward transmissions from the contact would then be expected to be prevented after this delay (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the model for a specific scenario and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "451ee6fb-97fa-4576-a390-5d7ab9ad7b49",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C47",
+      "claim": "For a contact that occurred 4 days before the index host developed symptoms, only 41% of the contact's onward infections would be expected to be prevented with a 6-day total delay.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for an infectious contact that occurred 4 days before the index host developed symptoms (so that the total delay between the contact being infected and isolated is 6 days, assuming that the contact elicitation window is at least 4 days so the contact is traced), only 41% of the contact's onward infections would be expected to be prevented (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the model for a specific scenario and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "9ade300a-8b42-4b88-8e10-27be60ee52b7",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C48",
+      "claim": "The mechanistic framework provides an improved fit to data compared to a model predicated on the assumption that infectiousness is independent of symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have considered a range of approaches for estimating epidemiological time periods using data from SARS-CoV-2 infector\u2013infectee transmission pairs. Our mechanistic framework provides an improved fit to data compared to a model predicated on the assumption that infectiousness is independent of symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the AIC comparison showing the mechanistic models fit better than the independent transmission and symptoms model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "7169e3b5-9306-4a27-826e-3de33d97db96",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C49",
+      "claim": "The assumption that infectiousness is independent of symptoms underlies most previous studies in which the SARS-CoV-2 generation time distribution has been estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite neglecting potential relationships between viral shedding and symptoms, as well as behavioural changes in response to symptoms (Manfredi and D'Onofrio, 2013), that assumption underlies most previous studies in which the SARS-COV-2 generation time distribution has been estimated (Ferretti et al., 2020a; Deng et al., 2020; Ganyani et al., 2020; Knight and Mishra, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "18ab411f-2051-4f9c-80ed-876a6787654f",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C50",
+      "claim": "Some previous studies have considered an alternative assumption that infectiousness depends only on the time since symptom onset, independent of the time of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Some previous studies in which the generation time (Ferretti et al., 2020b; Davis et al., 2020) and/or TOST distributions (Ferretti et al., 2020b; He et al., 2020; Ashcroft et al., 2020) were estimated have considered an alternative assumption that infectiousness depends only on the time since symptom onset, independent of the time of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "2d583c0a-8b99-462d-9a6a-8dcf4e059e61",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C51",
+      "claim": "If the serial interval is always positive, assuming infectiousness depends only on time since symptom onset is equivalent to assuming that the serial interval and generation time distributions are identical.",
+      "claim_type": "EXPLICIT",
+      "source": "If the serial interval is always positive, which is not the case for COVID-19 (Du et al., 2020), this is equivalent to assuming that the serial interval and generation time distributions are identical (Lehtinen et al., 2021; Cori et al., 2013; Britton and Scalia Tomba, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical relationship supported by citations to relevant literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "534a5e1b-213c-4f65-8a65-38126206154c",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C52",
+      "claim": "The serial interval is not always positive for COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "If the serial interval is always positive, which is not the case for COVID-19 (Du et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study showing negative serial intervals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "d1384226-2f3c-4165-a003-396c0dbe37d8",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C53",
+      "claim": "The mechanistic approach provides an improved fit to data compared to the Ferretti model.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as we have demonstrated, our mechanistic approach provides an improved fit to data compared to that model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the AIC comparison showing the variable infectiousness model (\u0394AIC = 0) fits better than the Ferretti model (\u0394AIC = 5.1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "9016cc15-a48a-4883-be08-58939022f769",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C54",
+      "claim": "The mechanistic method is useful for parameterising population-scale compartmental epidemic forecasting models.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our method is useful for parameterising population-scale compartmental epidemic forecasting models, since the time periods derived using our approach correspond naturally to compartments (Hart et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method with a citation to relevant work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "88f7c062-89af-4099-a326-952402614769",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C55",
+      "claim": "An assumption underlying the E/P/I structure of the best-fitting variable infectiousness model is that infectiousness may change when individuals develop symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that an assumption underlying the 'E/P/I' structure of the best-fitting variable infectiousness model (Figure 1B, right, solid line) is that infectiousness may change when individuals develop symptoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the model structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "2598b158-da1d-481b-ae12-805b2eccee1c",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C56",
+      "claim": "In practice, behavioural changes may not occur immediately after symptoms appear, particularly if initial symptoms are mild or non-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in practice behavioural changes may not occur immediately after symptoms appear, particularly if initial symptoms are mild or non-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about real-world behavior based on general knowledge.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "fbf59971-2640-4de3-8f13-80728118af8f",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C57",
+      "claim": "A delay between symptom onset and a change in infectiousness could in principle be incorporated into the mechanistic framework by adding an additional stage of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "A delay between symptom onset and a change in infectiousness could in principle be incorporated into our mechanistic framework by adding an additional stage of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about possible model extensions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "8f36f688-bc38-422e-953f-5a270786b7c0",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C58",
+      "claim": "The estimates were obtained using data collected early in the COVID-19 pandemic (January\u2013March 2020).",
+      "claim_type": "EXPLICIT",
+      "source": "One caveat of this study is that our estimates were obtained using data collected early in the COVID-19 pandemic (January\u2013March 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the study regarding the temporal scope of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "48d6e56b-904c-450a-b24b-281e21eb3dd6",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C59",
+      "claim": "Shorter serial intervals may have been over-represented in the dataset because local case numbers were increasing in some locations where data were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "Since local case numbers were then increasing in locations where some (although not all) of the data were collected (Ferretti et al., 2020b), shorter serial intervals may have been over-represented in the dataset (Britton and Scalia Tomba, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a potential bias inferred from epidemic dynamics theory, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "3da893ef-fd98-4178-9b25-23f78d906352",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C60",
+      "claim": "Studies from China have indicated a shortening of the generation time over time due to non-pharmaceutical interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, studies from China have indicated a shortening of the generation time (Sun et al., 2021) and serial interval (Ali et al., 2020) over time due to non-pharmaceutical interventions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies from China.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "e51bb853-74ea-47ce-937c-ed8e534ce41b",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C61",
+      "claim": "Studies from China have indicated a shortening of the serial interval over time due to non-pharmaceutical interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, studies from China have indicated a shortening of the generation time (Sun et al., 2021) and serial interval (Ali et al., 2020) over time due to non-pharmaceutical interventions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies from China.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "94aa52a2-0293-4f4f-b92e-944f9b166942",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C62",
+      "claim": "Differences in isolation policies are likely to affect predictions of the contribution of presymptomatic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in isolation policies are also likely to affect predictions of the contribution of presymptomatic transmission (Casey et al., 2020; Sun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "ba887aac-8945-4846-803d-b0fc4457c841",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C63",
+      "claim": "The study did not explicitly account for isolation policies already in place when the transmission pair data were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not explicitly account for isolation policies already in place when the transmission pair data were collected, potentially lowering the estimated effectiveness of isolating symptomatic hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "1a087d42-2162-40c6-b91d-d010f35e16db",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C64",
+      "claim": "Not accounting for existing isolation policies potentially lowers the estimated effectiveness of isolating symptomatic hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not explicitly account for isolation policies already in place when the transmission pair data were collected, potentially lowering the estimated effectiveness of isolating symptomatic hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the potential impact of a methodological limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "ff1e486b-1368-4e01-8fa9-6ac322b66d59",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C65",
+      "claim": "The emergence of novel variants may have affected the generation time.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, the emergence of novel variants may also have affected the generation time, although their impact is not yet fully clear (Davies et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential effects of variants, with a citation noting uncertainty.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "8a117eb0-5a0f-4938-95fd-d4263a61f14a",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C66",
+      "claim": "The impact of novel variants on the generation time is not yet fully clear.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, the emergence of novel variants may also have affected the generation time, although their impact is not yet fully clear (Davies et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation indicating ongoing uncertainty.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "206b78ad-9f74-4702-98c8-d11c22f52d5e",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C67",
+      "claim": "Using a novel mechanistic approach in combination with data from SARS-CoV-2 infector\u2013infectee pairs indicates that a higher proportion of transmissions occur prior to symptoms than predicted by existing methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, using a novel mechanistic approach in combination with data from SARS-CoV-2 infector\u2013infectee pairs to infer key epidemiological quantities indicates that a higher proportion of transmissions occur prior to symptoms than predicted by existing methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding, supported by the data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "37ae0101-30a4-478f-abbd-615119baa143",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C68",
+      "claim": "A significant proportion of presymptomatic transmissions arise immediately before symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant proportion of these transmissions arise immediately before symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the TOST distribution results showing concentration around symptom onset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "877f0b43-a77d-430f-a39a-765c4b0235eb",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C69",
+      "claim": "Combining isolation of symptomatic hosts with contact tracing and isolation of presymptomatic infected contacts is valuable even if the contact elicitation window is short.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that, while the impact of isolation of symptomatic hosts alone may be limited, combining this with contact tracing and isolation of presymptomatic infected contacts is valuable even if the contact elicitation window is short.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the contact tracing effectiveness calculations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "fd1387a0-3337-4bb5-884a-a1f88315d57c",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C70",
+      "claim": "The use and refinement of contact tracing programmes in countries worldwide is of clear public health importance.",
+      "claim_type": "EXPLICIT",
+      "source": "The use and refinement of contact tracing programmes in countries worldwide is therefore of clear public health importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a policy recommendation inferred from the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "4af96817-c3aa-4797-8cd1-aa0ecb041a0f",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C71",
+      "claim": "In the main analyses, the incubation period was assumed to follow a Gamma distribution with shape parameter 5.807 and scale parameter 0.948.",
+      "claim_type": "EXPLICIT",
+      "source": "In our main analyses, the incubation period was assumed to follow a Gamma distribution with shape parameter 5.807 and scale parameter 0.948 (Lauer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological choice with a citation to the source of the parameter values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "20d34786-50bb-4b22-9b13-5d8f2d654790",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C72",
+      "claim": "The assumed incubation period corresponds to a mean of 5.5 days and a standard deviation of 2.3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to a mean incubation period of 5.5 days and a standard deviation of 2.3 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the Gamma distribution parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "ab8e4129-7e3b-4b6f-bf37-cbb2b2fee678",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C73",
+      "claim": "An alternative Gamma distributed incubation period with a mean of 5.3 days and a standard deviation of 3.2 days was also used to test robustness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to demonstrate that our main conclusions are robust to the exact incubation period distribution used, we also repeated our analyses using an alternative, more dispersed, Gamma distributed incubation period with a mean of 5.3 days and a standard deviation of 3.2 days (Linton et al., 2020; Figure 2\u2014figure supplement 2, Figure 3\u2014figure supplement 2, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a sensitivity analysis with a citation to the source of alternative parameter values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "a26c9cd9-304c-4512-8e69-f4159f742f04",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C74",
+      "claim": "In the independent transmission and symptoms model, the infectiousness of each host at a given time since infection is assumed to be independent of their incubation period.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, the infectiousness of each host at a given time since infection is assumed to be independent of their incubation period",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of one of the models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "05c79454-d10d-4ce3-bd40-520ee97b9083",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C76",
+      "claim": "In the mechanistic model, each infection was divided into three stages: latent (E), presymptomatic infectious (P), and symptomatic infectious (I).",
+      "claim_type": "EXPLICIT",
+      "source": "In our mechanistic approach, we divided each infection into three stages: latent (E), presymptomatic infectious (P), and symptomatic infectious (I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the mechanistic model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "ab6ba038-a2d0-4cc4-a0bc-f80b446f0745",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C77",
+      "claim": "In the mechanistic model, the stage durations were assumed to be independent.",
+      "claim_type": "EXPLICIT",
+      "source": "The stage durations were assumed to be independent, and infectiousness was assumed to be constant over the duration of each stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the mechanistic model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "9e2a0e7c-4f77-4631-9bfe-ab17afcbe26f",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C78",
+      "claim": "In the mechanistic model, infectiousness was assumed to be constant over the duration of each stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The stage durations were assumed to be independent, and infectiousness was assumed to be constant over the duration of each stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the mechanistic model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "3a6da3a3-03a1-4637-b6f0-ef4a948ed8bc",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C79",
+      "claim": "In the mechanistic model, the durations of each stage were assumed to follow Gamma distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "We further assumed that the durations of each stage followed Gamma distributions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a modeling assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "6b8b153d-a985-4974-b9ff-7a4f116a21f0",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C81",
+      "claim": "Data augmentation MCMC was used to account for uncertainty in exact symptom onset times within the day of onset.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for uncertainty in the exact symptom onset times within the day of onset (and so avoid imparting bias by fitting continuous-time models to discrete-time symptom onset data), we fitted the models to the data using data augmentation MCMC (Thompson, 2020, Ferguson et al., 2005, Cauchemez et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology with citations supporting the approach.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "0e638b7d-bee6-48a8-914c-5b78f1d231f6",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C82",
+      "claim": "The MCMC chain was run for 2.5 million steps, of which the first 500,000 were discarded as burn-in.",
+      "claim_type": "EXPLICIT",
+      "source": "The chain was run for 2.5 million steps, of which the first 500,000 were discarded as burn-in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational details of the MCMC procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "c35fd7c9-070e-4d22-b364-d8ccbfa6b91d",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C86",
+      "claim": "Three parameters were estimated for the variable infectiousness and Ferretti models.",
+      "claim_type": "EXPLICIT",
+      "source": "where three parameters were estimated for the variable infectiousness and Ferretti models, and two parameters for the constant infectiousness and independent transmission and symptoms models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of free parameters in each model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "6467c8f4-eeb8-43f4-9d98-c29337fe74d5",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C87",
+      "claim": "Two parameters were estimated for the constant infectiousness and independent transmission and symptoms models.",
+      "claim_type": "EXPLICIT",
+      "source": "where three parameters were estimated for the variable infectiousness and Ferretti models, and two parameters for the constant infectiousness and independent transmission and symptoms models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of free parameters in each model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "2fd973fd-99ba-4982-abb2-0145f928f516",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "claim_id": "C92",
+      "claim": "The study was funded by the Engineering and Physical Sciences Research Council (EPSRC).",
+      "claim_type": "EXPLICIT",
+      "source": "Funding:Engineering and Physical Sciences Research Council (EPSRC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1439b95d-43c2-4748-89a5-ca1fbbf75883",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel mechanistic approach for inferring SARS-CoV-2 infectiousness profiles from transmission pair data. The approach divides infection into three stages (latent E, presymptomatic infectious P, and symptomatic infectious I) with Gamma-distributed durations and constant infectiousness within each stage, motivated by compartmental epidemic models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C17-C18, C76-C79 collectively describe the methodological innovation. The mechanistic framework is clearly defined with explicit mathematical structure, appropriate citations to motivating literature, and transparent assumptions about stage durations and infectiousness profiles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "14db6975-2803-4fef-8a55-6a759818b9ef",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The mechanistic variable infectiousness model provides superior fit to SARS-CoV-2 transmission pair data compared to existing approaches, with \u0394AIC = 0 versus \u0394AIC = 1.3 (constant infectiousness), \u0394AIC = 5.1 (Ferretti model), and \u0394AIC = 38.9 (independent transmission and symptoms model).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C23-C26, C48, C53 are supported by AIC comparisons showing clear model superiority. The statistical comparison is appropriate, though the analysis assumes symptom onsets at midday for AIC calculation, which may introduce minor bias. The large \u0394AIC for the independent model (38.9) strongly supports the claim of improved fit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "b2650ca5-1fe6-4425-9b61-19cc28896b92",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The best-fitting variable infectiousness model indicates 65% (95% CI: 53-77%) of transmissions occur presymptomatically, with many transmissions concentrated immediately before symptom onset. This proportion is higher than estimates from the constant infectiousness model (56%), Ferretti model (55%), and independent transmission and symptoms model (49%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C31-C34, C67-C68 are supported by posterior distributions from MCMC fitting and TOST distributions shown in Figure 2B. The concentration of transmission around symptom onset is visually evident. However, the estimate depends on the assumed incubation period distribution and data from early 2020, which may limit generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "e039a26f-f972-473b-acbb-40e67c5ab4e4",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Four infectiousness models were fitted to 191 SARS-CoV-2 transmission pairs from five studies using data augmentation MCMC to account for uncertainty in exact symptom onset times. The main analysis assumed a Gamma-distributed incubation period with mean 5.5 days and SD 2.3 days, with sensitivity analysis using an alternative distribution (mean 5.3 days, SD 3.2 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22, C71-C73, C81-C82 describe the data and methodology transparently. The use of data augmentation MCMC is appropriate for handling discrete symptom onset data. The MCMC chain length (2.5M steps, 500K burn-in) appears adequate, though convergence diagnostics are not reported. Sensitivity analysis strengthens robustness claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "7a4e7bca-6f2b-480e-9ef1-64444647e767",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The variable infectiousness model predicts lower variability in generation time but higher concentration of TOST around symptom onset compared to the independent transmission and symptoms model. A decrease in infectiousness following symptom onset was inferred, likely due to behavioral changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by Figure 2A-B showing distributional differences. The behavioral interpretation (C30) is speculative but reasonably supported by citation. The inferred decrease in post-symptom infectiousness could also reflect isolation policies in the data collection period, which the authors acknowledge as a limitation (C63-C64).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "6d672557-81b2-4dbd-8eac-9aa29fedfdf4",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The 65% presymptomatic transmission estimate from the best-fitting model is higher than most previous generation time/TOST studies, though the wider literature shows significant variation including estimates exceeding 65%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 appropriately contextualize the findings within existing literature through citations. The acknowledgment of variation in the literature (C36) demonstrates appropriate scientific caution. However, differences in modeling assumptions across studies make direct comparisons challenging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "07c31d94-3901-48ce-a10f-121fb46a6e5e",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Under the variable infectiousness model, isolating symptomatic hosts one day after symptom onset prevents only 23% (17-31%) of transmissions, compared to 38% (32-44%) under the independent transmission and symptoms model. This limited impact highlights the need for contact tracing in addition to isolation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by calculations from the fitted models shown in Figure 4A. The inference about contact tracing necessity (C39) follows logically from the high presymptomatic transmission proportion. However, the analysis assumes perfect isolation effectiveness, which is unrealistic and acknowledged in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "f4adb85f-4bb1-4161-8b49-376818419b3d",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "With a 2-day contact elicitation window (as used in UK/USA), the variable infectiousness model predicts 69% (57-81%) of presymptomatic infectious contacts are identified, versus 49% (44-53%) for the independent model. Extending to 4 days identifies 93% (88-97%), though this requires tracing more uninfected contacts and contacts from periods of lower infectiousness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 are supported by model calculations in Figure 4B and the TOST distribution. The practical trade-off between window length and tracing burden (C44) is a reasonable inference. Citation to UK/USA policies (C41) provides real-world context. However, the analysis assumes perfect contact identification within the window.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "0423cffb-de81-4952-a3f4-01e7e012494c",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For contacts traced and isolated with a 4-day total delay from infection, 71% of onward transmissions are prevented under the variable infectiousness model. For contacts occurring 4 days before index symptom onset (6-day total delay), only 41% of onward transmissions are prevented.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by calculations shown in Figure 4C. The analysis appropriately considers combined delays across the contact tracing process. However, the assumption of perfect isolation effectiveness limits practical applicability, though sensitivity analyses with lower effectiveness are provided in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "0fbeed6d-86b0-46a3-b15f-6d1353f489d1",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "High infectiousness immediately prior to symptom onset highlights the importance of continued contact tracing until effective vaccines are widely distributed, even with short contact elicitation windows. The use and refinement of contact tracing programs worldwide is of clear public health importance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C69-C70 represent policy inferences drawn from the modeling results. These are logically supported by the findings of high presymptomatic transmission and contact tracing effectiveness calculations. However, these are normative recommendations that depend on additional considerations beyond the model (e.g., feasibility, cost-effectiveness, vaccine availability).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "e5403070-5f6f-4c5e-9784-b2c79fc7aad8",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Most previous SARS-CoV-2 generation time estimates assumed infectiousness is independent of symptom status, an assumption that is unjustified and can lead to poor data fit. Some studies assumed infectiousness depends only on time since symptom onset, which is equivalent to assuming identical serial interval and generation time distributions when serial intervals are always positive (not the case for COVID-19).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16, C49-C52 accurately characterize limitations of prior approaches through appropriate citations. The theoretical relationship between modeling assumptions and distributional equivalence (C51) is correctly stated with supporting citations. The observation about negative serial intervals in COVID-19 (C52) is well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "fc67814a-0e2f-413f-afd3-c2523f5b9dfc",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The mechanistic method is useful for parameterizing compartmental epidemic models since derived time periods correspond naturally to compartments. The E/P/I structure assumes infectiousness changes at symptom onset, though behavioral changes may not occur immediately, particularly with mild symptoms. A delay could be incorporated by adding an additional infection stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 discuss advantages and limitations of the model structure. The utility for compartmental models (C54) is a reasonable inference supported by citation. The acknowledgment that behavioral changes may not be instantaneous (C56) demonstrates appropriate scientific caution. The suggestion for model extension (C57) is speculative but reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "f382a90f-e551-4340-82ed-05dba3544ec6",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study has several limitations: data were collected early in the pandemic (January-March 2020) when case numbers were increasing in some locations, potentially over-representing shorter serial intervals. Isolation policies already in place were not explicitly accounted for, potentially lowering estimated isolation effectiveness. The impact of novel variants on generation time is unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C66 transparently acknowledge important limitations. The potential for bias from epidemic growth phase (C59) is appropriately cited. The acknowledgment of unaccounted isolation policies (C63-C64) is important for interpreting effectiveness estimates. The uncertainty about variant impacts (C65-C66) is appropriately cautious. These limitations are significant and may affect generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "83acbfea-e8c1-48f1-a3a6-c44e6793524c",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The proportion of SARS-CoV-2 transmissions from non-symptomatic infectors remains uncertain. Statistical models using infector-infectee pair data can assess presymptomatic versus symptomatic transmission contributions by inferring distributions of generation time, TOST, and serial interval, which are important for evaluating public health measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C13 provide appropriate background context supported by citations. The definitions of epidemiological time intervals (C9-C12) are standard and correctly stated. The importance for public health evaluation (C13) is well-established in cited literature. This background appropriately motivates the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    },
+    {
+      "id": "81d3701c-c418-40f2-b4d8-141b7a275491",
+      "content_id": "e0dfaeb5-d572-47eb-baec-41621c49f76f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The independent transmission and symptoms model assumes infectiousness at a given time since infection is independent of incubation period. Three parameters were estimated for the variable infectiousness and Ferretti models, while two parameters were estimated for the constant infectiousness and independent transmission and symptoms models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C86-C87 accurately describe model structures and parameter counts. These are straightforward methodological details that are clearly stated. The difference in parameter counts is appropriately accounted for in AIC comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:59:36.693925Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ba8c9f5b-2d99-4bf7-bae6-8ecef6146800",
+      "result_id": "1439b95d-43c2-4748-89a5-ca1fbbf75883"
+    },
+    {
+      "claim_id": "306f2da0-aa40-41c6-8944-781adeb18ff9",
+      "result_id": "1439b95d-43c2-4748-89a5-ca1fbbf75883"
+    },
+    {
+      "claim_id": "4f2d9d1e-acca-4141-9a10-8415619eee66",
+      "result_id": "1439b95d-43c2-4748-89a5-ca1fbbf75883"
+    },
+    {
+      "claim_id": "4330aa9e-c80e-479d-9812-e1cf511b776b",
+      "result_id": "1439b95d-43c2-4748-89a5-ca1fbbf75883"
+    },
+    {
+      "claim_id": "05c79454-d10d-4ce3-bd40-520ee97b9083",
+      "result_id": "1439b95d-43c2-4748-89a5-ca1fbbf75883"
+    },
+    {
+      "claim_id": "ab6ba038-a2d0-4cc4-a0bc-f80b446f0745",
+      "result_id": "1439b95d-43c2-4748-89a5-ca1fbbf75883"
+    },
+    {
+      "claim_id": "9e2a0e7c-4f77-4631-9bfe-ab17afcbe26f",
+      "result_id": "1439b95d-43c2-4748-89a5-ca1fbbf75883"
+    },
+    {
+      "claim_id": "3a6da3a3-03a1-4637-b6f0-ef4a948ed8bc",
+      "result_id": "1439b95d-43c2-4748-89a5-ca1fbbf75883"
+    },
+    {
+      "claim_id": "5bee81c0-00de-4edf-adb2-e3a300f35b97",
+      "result_id": "14db6975-2803-4fef-8a55-6a759818b9ef"
+    },
+    {
+      "claim_id": "7ba50efe-1f5c-475c-acc1-04f6eca7d178",
+      "result_id": "14db6975-2803-4fef-8a55-6a759818b9ef"
+    },
+    {
+      "claim_id": "2b6a8ae0-8ec4-4957-a73a-648d0ec94e5d",
+      "result_id": "14db6975-2803-4fef-8a55-6a759818b9ef"
+    },
+    {
+      "claim_id": "c1feafd1-7640-40ff-aceb-ce138b615608",
+      "result_id": "14db6975-2803-4fef-8a55-6a759818b9ef"
+    },
+    {
+      "claim_id": "9625eaf6-242a-4564-a979-2d897e63b79e",
+      "result_id": "14db6975-2803-4fef-8a55-6a759818b9ef"
+    },
+    {
+      "claim_id": "9ade300a-8b42-4b88-8e10-27be60ee52b7",
+      "result_id": "14db6975-2803-4fef-8a55-6a759818b9ef"
+    },
+    {
+      "claim_id": "d1384226-2f3c-4165-a003-396c0dbe37d8",
+      "result_id": "14db6975-2803-4fef-8a55-6a759818b9ef"
+    },
+    {
+      "claim_id": "0c0d30e7-4d77-48fa-b252-6f7d1f2576db",
+      "result_id": "b2650ca5-1fe6-4425-9b61-19cc28896b92"
+    },
+    {
+      "claim_id": "c99dd113-f70e-4f13-ac58-3e4098fe92d7",
+      "result_id": "b2650ca5-1fe6-4425-9b61-19cc28896b92"
+    },
+    {
+      "claim_id": "c6d4a0cf-5c80-4349-a41d-59a6ba3b2aab",
+      "result_id": "b2650ca5-1fe6-4425-9b61-19cc28896b92"
+    },
+    {
+      "claim_id": "227f1ef6-c53e-42b5-9fd5-a2cc013687b0",
+      "result_id": "b2650ca5-1fe6-4425-9b61-19cc28896b92"
+    },
+    {
+      "claim_id": "4f716267-dbf4-4a75-9ebb-e8f54fb3b245",
+      "result_id": "b2650ca5-1fe6-4425-9b61-19cc28896b92"
+    },
+    {
+      "claim_id": "146810ad-87e1-4126-8c2a-befbf1e1d8d0",
+      "result_id": "b2650ca5-1fe6-4425-9b61-19cc28896b92"
+    },
+    {
+      "claim_id": "206b78ad-9f74-4702-98c8-d11c22f52d5e",
+      "result_id": "b2650ca5-1fe6-4425-9b61-19cc28896b92"
+    },
+    {
+      "claim_id": "37ae0101-30a4-478f-abbd-615119baa143",
+      "result_id": "b2650ca5-1fe6-4425-9b61-19cc28896b92"
+    },
+    {
+      "claim_id": "1dd2c44b-a441-4464-bc7e-ee3f380ab0f7",
+      "result_id": "e039a26f-f972-473b-acbb-40e67c5ab4e4"
+    },
+    {
+      "claim_id": "488c65c2-d4be-458a-a9e0-db4179326db6",
+      "result_id": "e039a26f-f972-473b-acbb-40e67c5ab4e4"
+    },
+    {
+      "claim_id": "21237c86-dcb8-4652-bb01-c88be5c99a00",
+      "result_id": "e039a26f-f972-473b-acbb-40e67c5ab4e4"
+    },
+    {
+      "claim_id": "4af96817-c3aa-4797-8cd1-aa0ecb041a0f",
+      "result_id": "e039a26f-f972-473b-acbb-40e67c5ab4e4"
+    },
+    {
+      "claim_id": "20d34786-50bb-4b22-9b13-5d8f2d654790",
+      "result_id": "e039a26f-f972-473b-acbb-40e67c5ab4e4"
+    },
+    {
+      "claim_id": "ab8e4129-7e3b-4b6f-bf37-cbb2b2fee678",
+      "result_id": "e039a26f-f972-473b-acbb-40e67c5ab4e4"
+    },
+    {
+      "claim_id": "6b8b153d-a985-4974-b9ff-7a4f116a21f0",
+      "result_id": "e039a26f-f972-473b-acbb-40e67c5ab4e4"
+    },
+    {
+      "claim_id": "0e638b7d-bee6-48a8-914c-5b78f1d231f6",
+      "result_id": "e039a26f-f972-473b-acbb-40e67c5ab4e4"
+    },
+    {
+      "claim_id": "a89fcd34-d3c4-4170-bfea-8be8159d41f2",
+      "result_id": "7a4e7bca-6f2b-480e-9ef1-64444647e767"
+    },
+    {
+      "claim_id": "fcda87ee-6365-4d6f-aa5f-4cc0054c6480",
+      "result_id": "7a4e7bca-6f2b-480e-9ef1-64444647e767"
+    },
+    {
+      "claim_id": "eff28680-e2dc-468d-a673-a2e7bac41a42",
+      "result_id": "7a4e7bca-6f2b-480e-9ef1-64444647e767"
+    },
+    {
+      "claim_id": "9309b2e9-5f6b-46bc-a6e5-d62f095f2640",
+      "result_id": "7a4e7bca-6f2b-480e-9ef1-64444647e767"
+    },
+    {
+      "claim_id": "5c8280d4-4883-4e0f-98ff-a6c05cbdda7f",
+      "result_id": "6d672557-81b2-4dbd-8eac-9aa29fedfdf4"
+    },
+    {
+      "claim_id": "5c758ebc-5fe5-4dfc-a1b2-6e6b7bb793ce",
+      "result_id": "6d672557-81b2-4dbd-8eac-9aa29fedfdf4"
+    },
+    {
+      "claim_id": "dfebf05b-ab1d-4a1d-9492-f81bc80a64f6",
+      "result_id": "07c31d94-3901-48ce-a10f-121fb46a6e5e"
+    },
+    {
+      "claim_id": "31df47d5-0019-4eed-a9be-e009e6fb4379",
+      "result_id": "07c31d94-3901-48ce-a10f-121fb46a6e5e"
+    },
+    {
+      "claim_id": "2c0070f1-5e4c-4750-9964-0542cc8fe916",
+      "result_id": "07c31d94-3901-48ce-a10f-121fb46a6e5e"
+    },
+    {
+      "claim_id": "d63a1e08-d974-4e92-905b-fc3249cd2d7c",
+      "result_id": "f4adb85f-4bb1-4161-8b49-376818419b3d"
+    },
+    {
+      "claim_id": "172c8a43-5c3f-4ee4-b729-37dbd9371940",
+      "result_id": "f4adb85f-4bb1-4161-8b49-376818419b3d"
+    },
+    {
+      "claim_id": "8f1fcbde-8353-457f-b3ad-c831ac149f8b",
+      "result_id": "f4adb85f-4bb1-4161-8b49-376818419b3d"
+    },
+    {
+      "claim_id": "e38e3bba-eaea-4fc8-b159-2578e6fbc5fc",
+      "result_id": "f4adb85f-4bb1-4161-8b49-376818419b3d"
+    },
+    {
+      "claim_id": "eadbcc08-2962-427b-b455-63dc23ba0e35",
+      "result_id": "f4adb85f-4bb1-4161-8b49-376818419b3d"
+    },
+    {
+      "claim_id": "e86bbba5-dc29-4961-ad7c-c44272fa8bf4",
+      "result_id": "f4adb85f-4bb1-4161-8b49-376818419b3d"
+    },
+    {
+      "claim_id": "f3c0ed6d-0c07-4e6c-abd7-073b03e29a9b",
+      "result_id": "0423cffb-de81-4952-a3f4-01e7e012494c"
+    },
+    {
+      "claim_id": "451ee6fb-97fa-4576-a390-5d7ab9ad7b49",
+      "result_id": "0423cffb-de81-4952-a3f4-01e7e012494c"
+    },
+    {
+      "claim_id": "67364aee-b0f2-4e99-945e-2edd3958017b",
+      "result_id": "0fbeed6d-86b0-46a3-b15f-6d1353f489d1"
+    },
+    {
+      "claim_id": "877f0b43-a77d-430f-a39a-765c4b0235eb",
+      "result_id": "0fbeed6d-86b0-46a3-b15f-6d1353f489d1"
+    },
+    {
+      "claim_id": "fd1387a0-3337-4bb5-884a-a1f88315d57c",
+      "result_id": "0fbeed6d-86b0-46a3-b15f-6d1353f489d1"
+    },
+    {
+      "claim_id": "6a580688-3228-4626-813a-79857108feba",
+      "result_id": "e5403070-5f6f-4c5e-9784-b2c79fc7aad8"
+    },
+    {
+      "claim_id": "602bd084-a75b-41fd-9fdd-3115e59050a0",
+      "result_id": "e5403070-5f6f-4c5e-9784-b2c79fc7aad8"
+    },
+    {
+      "claim_id": "66d9a2df-4ada-4d7f-a1aa-856524e76bcf",
+      "result_id": "e5403070-5f6f-4c5e-9784-b2c79fc7aad8"
+    },
+    {
+      "claim_id": "7169e3b5-9306-4a27-826e-3de33d97db96",
+      "result_id": "e5403070-5f6f-4c5e-9784-b2c79fc7aad8"
+    },
+    {
+      "claim_id": "18ab411f-2051-4f9c-80ed-876a6787654f",
+      "result_id": "e5403070-5f6f-4c5e-9784-b2c79fc7aad8"
+    },
+    {
+      "claim_id": "2d583c0a-8b99-462d-9a6a-8dcf4e059e61",
+      "result_id": "e5403070-5f6f-4c5e-9784-b2c79fc7aad8"
+    },
+    {
+      "claim_id": "534a5e1b-213c-4f65-8a65-38126206154c",
+      "result_id": "e5403070-5f6f-4c5e-9784-b2c79fc7aad8"
+    },
+    {
+      "claim_id": "9016cc15-a48a-4883-be08-58939022f769",
+      "result_id": "fc67814a-0e2f-413f-afd3-c2523f5b9dfc"
+    },
+    {
+      "claim_id": "88f7c062-89af-4099-a326-952402614769",
+      "result_id": "fc67814a-0e2f-413f-afd3-c2523f5b9dfc"
+    },
+    {
+      "claim_id": "2598b158-da1d-481b-ae12-805b2eccee1c",
+      "result_id": "fc67814a-0e2f-413f-afd3-c2523f5b9dfc"
+    },
+    {
+      "claim_id": "fbf59971-2640-4de3-8f13-80728118af8f",
+      "result_id": "fc67814a-0e2f-413f-afd3-c2523f5b9dfc"
+    },
+    {
+      "claim_id": "8f36f688-bc38-422e-953f-5a270786b7c0",
+      "result_id": "f382a90f-e551-4340-82ed-05dba3544ec6"
+    },
+    {
+      "claim_id": "48d6e56b-904c-450a-b24b-281e21eb3dd6",
+      "result_id": "f382a90f-e551-4340-82ed-05dba3544ec6"
+    },
+    {
+      "claim_id": "3da893ef-fd98-4178-9b25-23f78d906352",
+      "result_id": "f382a90f-e551-4340-82ed-05dba3544ec6"
+    },
+    {
+      "claim_id": "e51bb853-74ea-47ce-937c-ed8e534ce41b",
+      "result_id": "f382a90f-e551-4340-82ed-05dba3544ec6"
+    },
+    {
+      "claim_id": "94aa52a2-0293-4f4f-b92e-944f9b166942",
+      "result_id": "f382a90f-e551-4340-82ed-05dba3544ec6"
+    },
+    {
+      "claim_id": "ba887aac-8945-4846-803d-b0fc4457c841",
+      "result_id": "f382a90f-e551-4340-82ed-05dba3544ec6"
+    },
+    {
+      "claim_id": "1a087d42-2162-40c6-b91d-d010f35e16db",
+      "result_id": "f382a90f-e551-4340-82ed-05dba3544ec6"
+    },
+    {
+      "claim_id": "ff1e486b-1368-4e01-8fa9-6ac322b66d59",
+      "result_id": "f382a90f-e551-4340-82ed-05dba3544ec6"
+    },
+    {
+      "claim_id": "8a117eb0-5a0f-4938-95fd-d4263a61f14a",
+      "result_id": "f382a90f-e551-4340-82ed-05dba3544ec6"
+    },
+    {
+      "claim_id": "e1ed6a41-1401-426d-9197-d2c4ab052bad",
+      "result_id": "83acbfea-e8c1-48f1-a3a6-c44e6793524c"
+    },
+    {
+      "claim_id": "c040558a-db8e-4252-86c8-092bf4a56df7",
+      "result_id": "83acbfea-e8c1-48f1-a3a6-c44e6793524c"
+    },
+    {
+      "claim_id": "dd24c4a7-b790-42ec-8636-2701b14be4fb",
+      "result_id": "83acbfea-e8c1-48f1-a3a6-c44e6793524c"
+    },
+    {
+      "claim_id": "8b624c65-ab8c-4db9-b29d-6f9e3ec7dc39",
+      "result_id": "83acbfea-e8c1-48f1-a3a6-c44e6793524c"
+    },
+    {
+      "claim_id": "bd4ee89a-79c4-4893-96ac-7b5a17038eb0",
+      "result_id": "83acbfea-e8c1-48f1-a3a6-c44e6793524c"
+    },
+    {
+      "claim_id": "079b10ab-eb7c-4876-8155-499dfe4502b6",
+      "result_id": "83acbfea-e8c1-48f1-a3a6-c44e6793524c"
+    },
+    {
+      "claim_id": "9c8c0c9e-629f-422d-99b5-caea3d5a2371",
+      "result_id": "83acbfea-e8c1-48f1-a3a6-c44e6793524c"
+    },
+    {
+      "claim_id": "a26c9cd9-304c-4512-8e69-f4159f742f04",
+      "result_id": "81d3701c-c418-40f2-b4d8-141b7a275491"
+    },
+    {
+      "claim_id": "c35fd7c9-070e-4d22-b364-d8ccbfa6b91d",
+      "result_id": "81d3701c-c418-40f2-b4d8-141b7a275491"
+    },
+    {
+      "claim_id": "6467c8f4-eeb8-43f4-9d98-c29337fe74d5",
+      "result_id": "81d3701c-c418-40f2-b4d8-141b7a275491"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript provides background context on SARS-CoV-2 vaccine development, noting that 294 vaccine candidates are being evaluated, variants of concern emerged before sufficient vaccine coverage, and these variants might compromise vaccine efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by appropriate citations to WHO 2021, Cobey et al. 2021, and multiple studies on variant effects. These are standard background claims establishing the context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript reviews prior knowledge about correlates of protection, stating that binding antibodies and neutralization are associated with protection, but their respective contributions remain unclear, and other mechanisms (ADCC, ADCD, ADCP, T cells) may be involved, with correlates potentially varying by vaccine platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 appropriately cite relevant literature to establish the current state of knowledge about immune correlates of protection. These are literature review claims that set up the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Non-human primate challenge studies offer unique opportunities to evaluate early markers of protective response and vaccine impact on viral dynamics in different tissue compartments from day 1 of virus exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are supported by appropriate citations establishing the value of NHP studies. These claims provide methodological justification for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study used 18 cynomolgus macaques aged 37-58 months, with 12 animals randomly assigned 24-26 weeks post-infection to receive either \u03b1CD40.RBD vaccine (200 \u00b5g) or placebo, followed by challenge with 10^6 pfu SARS-CoV-2 via intra-nasal and intra-tracheal routes 4 weeks after immunization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 describe the experimental design with specific details about animal numbers, ages, timing, doses, and routes. These are clearly stated in the methods and Figure 1A, providing adequate documentation of the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Primary infection viral dynamics showed a peak at day 3 in both compartments, declining to undetectable levels by day 15. Upon rechallenge, viral dynamics were blunted in convalescent animals compared to na\u00efve animals, with the lowest viral loads observed in vaccinated animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 are supported by data shown in Figure 1B and Figure 1\u2014figure supplement 1-2. The observations are clearly documented with appropriate viral load measurements over time in different groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The model includes a specific inoculum compartment to distinguish challenge virus from de novo-produced virus, and viral exchange between compartments plays a negligible role compared to viral clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 describe novel modeling features. C20 is a methodological choice that is clearly justified. C21 is supported by citations and additional modeling work in Appendix 1, providing adequate justification for the modeling assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Model parameter estimates for viral infectivity (0.95\u00d710^-6), loss rate of infected cells (1.04 day^-1), eclipse phase (3 day^-1), and viral production rates (higher in nasopharynx: 12.1\u00d710^3 vs trachea: 0.92\u00d710^3 virions/cell/day) are consistent with previously published SARS-CoV-2 and influenza models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 present model parameter estimates with confidence intervals and compare them to literature values. The estimates are derived from fitting the model to data, and consistency with prior work is demonstrated through appropriate citations. The distinction between inoculum and de novo virus clearance is a novel contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The \u03b1CD40.RBD vaccine reduced target cell infection by 99.6% in the trachea and increased clearance of infected cells by 80% (from 1.04 to 1.86 day^-1) in convalescent animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 present model-based estimates of vaccine effects on two key parameters. These are derived from fitting the mechanistic model to observed viral load data across treatment groups, with confidence intervals provided. The estimates quantify the dual mechanism of vaccine action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Model predictions show early decrease of target cells and inoculum (disappearing by day 2), with infected cells and viral particles peaking at day 2 then declining. In vaccinated animals, viral dynamics were blunted with infectious particles below detection threshold and target cells preserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 present model predictions for unobserved compartments shown in Figure 2C. These predictions are logical consequences of the fitted model parameters and provide mechanistic insights into vaccine effects on within-host dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "RBD-ACE2-binding inhibition captures most of the group effect on target cell infection, explaining 87% of variability (vs 66% for group), rendering group effect non-significant, with a positive relationship where 10^3 AU increase corresponds to 1.8% increase in viral infectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 present results from systematic biomarker screening shown in Figure 4A-B and Supplementary files. The statistical analysis demonstrates that RBD-ACE2-binding inhibition is a strong mechanistic correlate, with quantitative relationships and model comparisons properly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "IgG-binding anti-RBD antibodies were positively associated with increased loss of infected cells, and together with RBD-ACE2-binding inhibition, these two markers captured 71% of infection rate variation and 60% of infected cell loss rate variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 identify a second mechanistic correlate through systematic screening. The statistical analysis shows that two markers together explain substantial variability in the two key model parameters, supporting a dual mechanism of protection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Vaccinated animals showed effective reproduction number R<1 from day 1 of challenge. The threshold for within-host infection control was ~30,000 AU RBD-ACE2-binding inhibition, requiring >2 log10 decrease to impair control in vaccinated animals. Decreased neutralization could be compensated by increased binding IgG anti-RBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 present model-based predictions about reproduction numbers and thresholds shown in Figure 4D-E. These are logical consequences of the fitted model and provide quantitative predictions about vaccine protection thresholds and compensatory mechanisms. However, C44-C45 involve speculation about variants and waning immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In a second study with two-component spike nanoparticle vaccine (6 vaccinated vs 4 na\u00efve animals), the vaccine decreased infectivity by 99% and increased infected cell clearance by 79%. RBD-ACE2-binding inhibition was again identified as the best mechanistic CoP, explaining 71% of infectivity variability vs 65% for groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 apply the same modeling framework to an independent dataset (Brouwer et al. 2021), replicating the finding that RBD-ACE2-binding inhibition is a mechanistic correlate. The consistency across two protein-based vaccines strengthens the conclusion, though sample size is small (n=10 total).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "For mRNA-1273 vaccine, the model estimated 97% reduction in infection rate but no additional effect. Neutralization measured by Luciferase assay explained only 15% of viral infectivity variability (vs 19% for groups), suggesting weaker mechanistic correlation than for protein-based vaccines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 present results from a third vaccine platform (Corbett et al. 2020). While the model fitting is described, the poor explanatory power (15%) and lack of additional effects suggest either different mechanisms of action or limitations in the available data/markers. The conclusion that mCoP differs by platform is reasonable but requires more investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Both protein-based vaccines lead to blockade of new cell infection, with neutralizing antibodies likely representing a consistent mechanistic correlate of protection across protein-based platforms, though this could change across vaccine platforms due to different mechanisms of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 synthesize findings from the two protein-based vaccine studies. The conclusion is supported by consistent results across two independent studies, though the caveat about platform differences (C54) is appropriately cautious given the mRNA-1273 results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The binding inhibition assay may be more relevant as a CoP than cell-culture neutralization assays due to being simpler, easier to standardize, and better at capturing vaccine effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by the comparative analysis showing RBD-ACE2-binding inhibition outperformed other neutralization assays in explaining variability. This is a practical conclusion with implications for vaccine development, though direct head-to-head comparisons of assay performance could be more explicit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The model captured vaccine effects on reducing target cell infection rate and identified additional effects beyond neutralizing antibodies, specifically increasing infected cell loss rate, which was better reflected by IgG-binding antibodies and CD8+ T-cell responses for the CD40-targeting vaccine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 summarize the dual mechanism findings. The model successfully decomposed vaccine effects into two distinct mechanisms with different immunological correlates, representing a key contribution of the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Prior work has shown roles for ADCC in natural infection and ADCD in DNA and Ad26 vaccines. The current study extends this by modeling viral dynamics to show two protein-based vaccines exert additional effects on infected cell death related to IgG anti-RBD-binding antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 appropriately cite prior work and position the current findings as extending previous observations through mechanistic modeling. The integration of prior knowledge with new modeling results is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A 20-fold reduction in neutralization may not translate to 20-fold reduction in vaccine efficacy. When neutralizing antibodies are below protective threshold, cellular immunity appears critical. Model predictions show improved infected cell destruction could help control infection and is quantitatively feasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 discuss implications for variant resistance and compensatory mechanisms. C61-C62 are supported by appropriate citations. C63 is a model-based prediction that follows logically from the dual mechanism framework, though experimental validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Control of viral replication is key for reducing infectivity and disease severity. According to the model, 4-20-fold decreases in neutralization (as seen with variants) are insufficient to compromise viral control with CD40.RBD vaccine, consistent with conserved mRNA vaccine effectiveness against alpha/beta variants despite reduced neutralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 discuss implications for variant resistance. C64-C65 are well-supported by citations. C66 is a model-based prediction that is reasonable given the non-linear relationship and high baseline protection. C67 appropriately cites real-world data consistent with the model predictions, though this is correlative rather than direct validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The model found increased virion production capacity in nasopharynx vs trachea, potentially explained by differences in target cells between compartments or different local immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C70 present an interesting model finding about compartment differences. C68 is a model estimate, but C69-C70 acknowledge this needs confirmation and offer alternative explanations. The biological interpretation is speculative and would benefit from additional data or validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The modeling framework contributes to understanding immunological concepts through quantitative evaluation of viral control mechanisms, potentially helping develop vaccines for hard-to-target pathogens, predict efficacy in special populations, choose vaccine doses, and decide on boosting strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 discuss broader implications and future applications. C71 is a reasonable summary of the contribution. C72-C73 are speculative about future applications but appropriately framed as potential uses with relevant citations, representing reasonable extrapolations from the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study used cynomolgus macaques aged 37-66 months from AAALAC certified breeding centers, housed in IDMIT facilities under appropriate biosafety containment, with protocols approved by institutional ethical committee (CEtEA #44, statement A20-011) and authorized by the Research Ministry (APAFIS#24434-2020030216532863v1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 document animal subjects, housing conditions, and ethical approvals. These are standard methodological details that are clearly stated and properly documented with approval numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Key modeling assumptions include: proportion of infectious virus (\u00b5) fixed at 1/1000 based on prior work; gRNA proportional to free virus and sgRNA proportional to infected cells, justified by biology (sgRNA only in infected cells) and mathematics (overcoming identifiability issues between \u03b2 and P parameters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C80-C83 describe critical modeling assumptions with appropriate justifications. C78 is supported by citation and additional analysis. C80-C83 explain the observation model with both biological (C82) and mathematical (C83) rationale, appropriately citing Sawicki et al. 2007 and Miao et al. 2011.",
+    "result_type": "MINOR"
+  }
+]

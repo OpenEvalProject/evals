@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors constructed comprehensive databases capturing 278,461 JAMA articles (>91% coverage, 1883-2018) and 182,675 NEJM articles (>99.5% coverage, 1812-2020), totaling 461,136 unique articles. Missing articles (<9% JAMA, <0.5% NEJM) were attributed to digitization gaps, erroneous DOIs, or crowd-sourcing limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C70-C73 provide specific numbers with clear denominators and explain missing data. The high coverage rates (>91% and >99.5%) are well-documented, and the authors transparently acknowledge limitations. The random nature of missing NEJM articles and their minimal proportion support the claim of negligible impact on analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "OCR validation demonstrated character error rates of 0.26% (pre-1899), 0.014% (1900-1949), 0.065% (1950-1999), and 0.037% (post-2000), with 71% of errors in pre-1899 texts. Post-1900 error rates were comparable to human transcriber discrepancies, and post-2000 errors were limited to punctuation recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 and C74-C77 describe a rigorous validation methodology with independent dual transcription, gold standard verification, and bootstrapped standard deviations. The error rates are quantified with appropriate precision, and the comparison to human transcriber discrepancies provides meaningful context. The concentration of errors in older texts is expected given print quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors employed temporal referencing (TR) with skip-gram word embeddings to analyze semantic evolution across 10,497 pre-selected medical terms. Sensitivity analyses using classical time-binned approaches validated the TR methodology. Affinity propagation clustering was used for higher-order concept evolution without pre-specifying cluster numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C87 describe established computational linguistics methods with appropriate citations (Dubossarsky et al., 2019). The TR approach avoids post-hoc alignment issues, and sensitivity analyses support robustness. The use of affinity propagation is appropriate for unsupervised clustering. However, the pre-selection of 10,497 target words introduces potential bias, though this is acknowledged through sensitivity analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "The frequency of 'the' declined markedly in both JAMA and NEJM over the 20th century, a phenomenon well-known to computational linguists and supported by proper frequency normalization (occurrences per total words).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 demonstrate the importance of proper normalization by showing that raw counts increase while normalized frequencies decrease. The finding is supported by Figure 1 and citation to Liberman (2016), establishing this as a known linguistic phenomenon. This serves as methodological validation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Disease term frequencies (cancer, tuberculosis, AIDS, coronavirus) reflect changing disease burden and research attention in the United States. Tuberculosis and AIDS show rise-and-fall patterns despite continued global persistence, indicating relative invisibility in medical literature after initial peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C9 present plausible interpretations supported by Figure 2 and citations, but the causal relationship between disease burden and publication frequency is assumed rather than demonstrated. Alternative explanations (editorial policies, terminology changes, subspecialization) are not systematically excluded. The interpretation of 'relative invisibility' (C9) is inferential and would require additional analysis of global disease burden data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Terms related to bioethics ('ethical', 'autonomy', 'consent') increased over the 20th century, reflecting the emergence of bioethics as a field. However, 'ethical' has declined markedly since 1995, warranting further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by Figure 2 and citations to historical scholarship (Rothman, 1991; Truog, 2012). The rise of bioethics terminology is well-documented historically. The unexpected decline of 'ethical' post-1995 is appropriately flagged as requiring further investigation rather than over-interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The rise of clinical trial infrastructure is reflected in increased usage of 'controlled', 'randomized', and especially 'trial', with a corresponding decline in 'experiment', demonstrating the epistemic shift toward evidence-based medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are well-supported by Figure 2e-f and citation to Bothwell et al. (2016). The parallel rise of trial-related terminology and decline of 'experiment' provides converging evidence for the interpretation. This represents a well-documented historical shift in medical epistemology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Hospital-related terminology increased 1850-1950 but declined dramatically post-1950 despite hospitals' presumed continued centrality. The Hill-Burton Act (1946) established 6,800 new hospitals. The term 'clinic' shows similar rise-and-fall patterns peaking in the 1940s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C17 present an unexpected finding appropriately flagged as surprising. While C14 and C16 are supported by historical citations, the interpretation of the post-1950 decline (C15) remains speculative. Multiple hypotheses are offered (Hill-Burton normalization, outpatient shift) but not tested. The parallel decline of 'clinic' (C17) complicates the outpatient-shift hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Bigram analysis of 'personal equation' using the current computational approach conforms well to previous manual analysis of NEJM using the journal's search tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 provides methodological validation by comparing computational results to previous manual analysis (Brinkmann et al., 2019). The concordance between methods supports the reliability of the bigram approach for tracking term usage over time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "'Antibiotic resistance' rose with recognition of resistant bacteria (1950s) and horizontal gene transfer (1960s), declined in the early 1980s, then resurged from the late 1980s onward linked to emerging infections and pharmaceutical industry concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by Figure 3b-c and multiple citations (Podolsky, 2015; Neu, 1992; Overton et al., 2021). The bimodal pattern is clearly visible in the data, and the historical interpretation aligns with documented developments in infectious disease and antimicrobial resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Despite lung cancer's higher mortality, 'breast cancer' is mentioned at roughly twice the rate of 'lung cancer' in both journals, paralleling discrepancies in NIH funding relative to disease burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by Figure 3j-k and citation to Gross et al. (1999) on funding disparities. The consistent 2:1 ratio across both journals strengthens the finding. However, the interpretation regarding stigmatization and advocacy (implied but not explicitly claimed) would require additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "'Myocardial infarction' shows different temporal patterns in NEJM (steady rise to 2000 peak) versus JAMA (bimodal distribution with 1970s and early 2000s peaks), suggesting journal-specific editorial or content differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 accurately describe distinct patterns visible in Figure 3l-m. The bimodal JAMA pattern is unexpected and appropriately flagged as requiring further investigation. The authors appropriately avoid over-interpreting this finding while noting it warrants attention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Word embedding analysis reveals that 'patent' has two distinct semantic peaks: early peak (1840s) associated with patent medicines (nostrum, proprietary, quackery) and recent peak (2000s) associated with inventor's patents and congenital heart disease (patent foramen ovale, patent ductus arteriosus).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is well-supported by Tables 1-2, Figure 5, and citations (Gabriel, 2014; Young, 1987). The word embedding analysis clearly distinguishes two semantic contexts separated by time, demonstrating the method's utility for detecting polysemy and semantic shift.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Abortion terminology evolved from 'criminal' associations (1850s-1900s) to 'contraception' (1930s-1960s) to 'legalization' (1970s-1990s). Religious terminology appeared in NEJM in the 1970s and became prominent in the 2010s, but remained notably absent from JAMA's top associations, reflecting recent framing of abortion debates in religious terms and potential editorial differences between journals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are supported by Tables 1-2 and multiple historical citations (Mohr, 1979; Reagan, 1997; De Ville, 1992). The temporal progression of associations aligns with documented legal and social history. The late appearance of religious terminology (C30-C31) and JAMA-NEJM difference (C32) are notable findings appropriately contextualized with historical scholarship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "'Bias' rose precipitously in both journals in the latter 20th century (unexpectedly declining in NEJM post-2000). Associations shifted from moral/vernacular terms (1920s: prejudice, insincerity) through hints of unconscious bias (misjudgment, subconscious) to predominantly statistical/methodological terms by the 1970s (misclassification, selection, confounding), though moral associations persisted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by Figure 6 and Tables 1-2. The semantic evolution from moral to statistical meanings is clearly documented through changing word associations. The persistence of moral associations alongside statistical terms (C37) demonstrates the method's ability to detect nuanced semantic layering. The unexpected NEJM decline (C34) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "'Defective' shifted from eugenic associations (early 20th century: feebleminded, mentally, retarded, idiot) to genetic associations (modern: tlr1, cftr, nlrp3, dysregulated). While modern genetics differs from eugenics, the persistence of 'defective' maintains value-laden language that will inevitably contribute to stigmatization of genetic variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 are well-supported by Tables 1-2 and citations (Kevles, 1995; Paul, 1998). However, C40-C41 are interpretive, and C42's claim that stigmatization is 'inevitable' is speculative rather than demonstrated. The connection to debates about genetics and eugenics (C43) is appropriately contextualized with citations (Cowan, 2008; Comfort, 2012), but the normative implications require further ethical analysis beyond the scope of linguistic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Race terminology evolved from eugenic associations (early 20th century: Jew, Negro) to administrative/demographic usage (1940s onward: sex, ethnic, Hispanic, Asian) following shifts in clinical trial reporting. This routinization makes normative judgments about race as a biological category while obscuring ongoing contestation. The emergence of 'self-identified' in JAMA (1990s) reflects discomfort with racial categorization, though patients struggle with limited categorization options.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 are supported by Tables 1-2 and multiple citations documenting racism in medicine (Roberts, 2011; Wailoo, 2011; Braun, 2014; Vyas et al., 2020) and race as a contested category (Tishkoff and Kidd, 2004; Pollock, 2012; Jones, 2021). The shift from eugenic to administrative usage is clearly documented. The interpretations about normative judgments (C48) and obscured contestation (C49) are reasonable inferences supported by cited scholarship. C51 represents general clinical knowledge rather than data from this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Clustering analysis reveals that the 1900-1924 grouping of alcoholism, dementia, and neurosyphilis reflects historical understanding that dementia pathology was first observed in general paresis (CNS syphilis) and chronic alcoholism, as described by Samuel Wilks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by Figure 7 and citation to Berchtold and Cotman (1998). The clustering analysis successfully recapitulates historical medical understanding, demonstrating that the computational method can detect meaningful conceptual groupings that align with documented medical history.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "An interactive ngram visualization website was created to enable users to explore longitudinal trends in JAMA and NEJM, accessible at https://countway.harvard.edu/center-history-medicine/center-services/looking-glass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by Figure 4 showing the website interface and the provided URL. This represents an important contribution for enabling further research and public engagement with the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "JAMA (founded 1883) and NEJM (founded 1812) have played critical roles in medical knowledge development. Existing search interfaces and databases (PubMed, Web of Science) have limitations for temporal trend analysis and do not capture the full historical corpus. Recent progress in digital history and computational linguistics enables new approaches to analyzing medical publication 'big data'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 provide appropriate context and motivation. The founding dates are factual, the limitations of existing tools are reasonable assessments, and the progress in computational methods is supported by multiple citations (Boyack et al., 2005; B\u00f6rner, 2010; Jones et al., 2011; Weisz et al., 2017; Thompson et al., 2016; Westergaard et al., 2018). C69 defines the operational definition of 'article' for the study.",
+    "result_type": "MINOR"
+  }
+]

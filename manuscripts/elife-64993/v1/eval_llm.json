@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14",
+      "C19",
+      "C51"
+    ],
+    "result": "The DCM and SCM models make opposing predictions about response latencies during choice versus sampling trials. The DCM predicts that deliberation requires time, leading to longer choice latencies compared to sampling latencies. In contrast, the SCM predicts shorter choice latencies due to a race-like competition mechanism where only the fastest responses are expressed during choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe the theoretical predictions of the two competing models (C2, C3, C14, C19, C51). The predictions are clearly stated and form the basis for the empirical tests conducted in the study. These are well-established theoretical positions supported by citations to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C32",
+      "C33"
+    ],
+    "result": "Both the DCM and SCM predict a positive correlation between sampling latencies and preference during choice, though for different mechanistic reasons. This prediction was validated in both training conditions: in the W/O training set, both latency ratio (LR: R=0.62, p<0.001) and winning latency (WL: R=0.42, p<0.05) positively correlated with cocaine preference. Similar correlations were found in the W/training set (LR: R=0.67, p<0.0001; WL: R=0.64, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlational analyses (C26, C32) provide strong statistical support for the common prediction shared by both models (C20, C21). The data show consistent positive correlations between relative sampling latencies and preference across both experimental conditions, with appropriate statistical tests and significant p-values. The interpretation (C27, C33) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Using linear discriminant analysis (LDA), preference profiles (saccharin-preferring, cocaine-preferring, or indifferent) could be predicted from mean cocaine and saccharin sampling latencies with 53.1\u00b14.4% accuracy, which significantly exceeded chance level (33.3%) as confirmed by permutation testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LDA analysis (C37) demonstrates above-chance prediction accuracy, validated by appropriate permutation testing (C38). The 53.1% accuracy, while modest, significantly exceeds the 33.3% chance level for three-way classification. The authors appropriately addressed the class imbalance issue by balancing group sizes. This supports the SCM's prediction that sampling latencies causally determine preference (C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C54",
+      "C55"
+    ],
+    "result": "After limited training (W/O training set), rats showed lengthened choice latencies compared to sampling latencies. Among 29 saccharin-preferring rats, choice latencies were significantly longer than sampling latencies (p<0.0001, effect size: -0.99), consistent with the DCM prediction of deliberative decision-making. This finding contradicts all prior studies testing SCM predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data strongly support deliberative processing after limited training (C4, C30, C31). The statistical analysis shows a large effect size (-0.99) and highly significant p-value. The comparison with prior literature (C54) is appropriately noted. The interpretation that this reflects DCM-consistent deliberation (C31, C55) is reasonable given the lengthening of latencies, though alternative explanations are not fully ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C58",
+      "C61"
+    ],
+    "result": "After extended training (W/training set), rats showed a pattern partially consistent with the SCM. In cocaine-preferring rats (N=19), cocaine choice latencies were significantly shorter than sampling latencies (p<0.01, effect size: 0.75). In indifferent rats (N=23), cocaine choice latencies were also significantly shorter (p<0.0001, effect size: 0.96), but saccharin latencies showed no difference. In saccharin-preferring rats (N=109), there was no significant difference in saccharin latencies (p=0.077), though a trend toward longer choice latencies was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data provide partial support for the SCM after extended training (C5, C44, C58, C61). The shortening of cocaine choice latencies in CP and IND rats (C41, C43) is statistically robust with large effect sizes. However, the lack of shortening for saccharin trials (C40, C42) represents a deviation from full SCM predictions. The authors appropriately characterize this as partial validation (C44) and discuss potential floor effects and consistency with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Omissions were more frequent during sampling than choice trials, but exclusion of omission trials from the analysis yielded similar results, indicating that omissions did not bias the main findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors identified a potential confound (C45) and conducted appropriate sensitivity analyses (C46). The robustness of results after excluding omissions strengthens confidence in the main findings. This demonstrates good experimental practice in addressing potential sources of bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Confirmatory analysis of two independent devaluation experiments showed that when preference for the nondrug reward was habitual (insensitive to devaluation), sampling and choice latencies were similar. However, when rats learned to re-engage deliberative processes during devaluation training, choice latencies became significantly longer than sampling latencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The confirmatory analyses (C69, C71) provide independent validation that latency patterns can distinguish habitual from deliberative processing. The finding that similar sampling and choice latencies occur under habitual control (C69, C70) and that lengthening emerges with re-engagement of deliberation (C71, C72) strengthens the main conclusions. These data come from previously published devaluation studies, adding credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C73",
+      "C90",
+      "C102",
+      "C104"
+    ],
+    "result": "The study concludes that rats first engage a goal-directed deliberative strategy (DCM-like) after limited training, but adopt a SCM-like response selection mechanism after extended training when behavior becomes habitual. The DCM and SCM may not be general models of choice but could be dynamically engaged across training stages. The comparison of sampling and choice latencies can be used to infer the involvement of deliberative processes during choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overall conclusion (C49, C50, C102) is well-supported by the pattern of results across training conditions. The data show clear differences between limited and extended training that align with the proposed shift from deliberative to automatic processing. The methodological conclusion (C73, C104) that latency comparisons can infer decision-making mechanisms is supported by the convergence of findings across multiple analyses. However, the interpretation involves some inference beyond the direct data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In cocaine-preferring and indifferent rats, the shortening of cocaine choice latencies was mainly driven by long sampling latencies, with choice latencies being more homogeneous across rewards and groups. This pattern is consistent with the SCM's cross-censorship mechanism, where selection of saccharin censors longer cocaine response latencies. The effect was more pronounced in indifferent rats, consistent with stronger overlap between response distributions when rewards are closer in value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observations about latency patterns (C74, C75, C78) are data-driven and the interpretation in terms of SCM mechanisms (C76, C77, C79) is reasonable. The finding of stronger effects in indifferent rats (C78, C79) provides additional support for the SCM's cross-censorship prediction. However, some of the mechanistic explanations (C80, C81) involve inference beyond direct observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The lack of shortened choice latencies for the preferred saccharin option is consistent with prior studies testing SCM predictions, which rarely report shortening for the preferred option. This may be due to floor effects, as the high value of the preferred option results in already-short sampling latencies (minimum ~3s reaction time), limiting room for further decrease. For indifferent rats, the similarity between saccharin sampling and choice latencies is unexpected given SCM predictions but may also reflect floor effects (mean: 4.7\u00b10.49s; median: 3.97s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The authors appropriately acknowledge the negative result for saccharin trials (C61, C62, C83) and provide plausible explanations involving floor effects (C64, C65, C66, C67, C84). However, the floor effect explanation is somewhat speculative and not directly tested. The observation that prior studies also failed to show shortening for preferred options (C62, C63) provides some context, but doesn't fully resolve the inconsistency with SCM predictions. The uncertainty about whether floor effects fully explain the pattern limits confidence in this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The discrepancy between the current findings (lengthening of choice latencies after limited training) and prior studies (which generally support SCM) could result from differences in training duration or species. Most prior SCM studies used European starlings or pigeons after extensive instrumental training, whereas the current study used na\u00efve rats with very limited training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The speculation about reasons for discrepancies (C56, C57) is reasonable but not directly tested. The authors appropriately note differences in training duration and species between studies, but these remain potential explanations rather than demonstrated causes. Additional experiments would be needed to definitively establish whether training duration or species differences account for the divergent findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "A key unresolved question is whether differences in latency patterns reflect operation of different decision-making mechanisms (DCM vs SCM) or different operations of the same mechanism. The authors suggest that formal modeling approaches (DDM or LBA) could address this question in future studies, potentially revealing whether a single model with varying parameters or distinct models better explain behavior across training conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately identify important unresolved questions (C94, C95) and acknowledge current theoretical debates about dichotomous versus gradient views of goal-directed and habitual behavior (C96). The suggestions for future modeling approaches (C97, C98, C99, C100) are reasonable and well-grounded in the literature. This represents good scientific practice in acknowledging limitations and proposing specific follow-up work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Rats without prior training initially showed less efficient behavior (lower completed trials, longer choice latencies) compared to rats with prior training. However, after stabilization of preference, average performance became similar between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical comparisons (C24, C25) are appropriate and show clear initial differences that disappear with training. This validates the experimental manipulation and shows that the two groups reached comparable performance levels by the time of analysis, supporting the validity of comparing their latency patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The introduction establishes that most rats prefer nondrug alternatives over drugs like cocaine when given a choice, that this preference persists even after extended drug use, and that preference may rely on habitual rather than deliberative processes after training. However, investigating habitual control in drug choice is challenging due to lack of effective drug devaluation methods. Response latency analysis has been proposed as an alternative approach to infer decision-making mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C6-C11) are well-supported by appropriate citations to prior literature. They establish the scientific context and rationale for the current study. The methodological challenge (C10) and proposed solution (C11) provide clear justification for the latency-based approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The methods describe the experimental subjects (male Wistar rats), housing conditions, two experimental sets (W/O training: N=31 rats tested directly in choice; W/training: N=150 rats with 3-5 weeks prior FR training), and the discrete-trial choice procedure (12 trials per session: 4 sampling trials followed by 8 choice trials, with 10-min inter-trial intervals). Data analysis focused on the last 3 stable sessions, with response latencies measured as time to complete FR2 from trial onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological descriptions (C105-C119) are clear and detailed, providing sufficient information for replication. The experimental design appropriately addresses the research questions, with two distinct training conditions allowing comparison of decision-making mechanisms. The 10-min inter-trial intervals (C113) are justified to minimize acute cocaine effects. The data selection criteria (C115, C116) ensure stable preferences are analyzed. Sample sizes are adequate, particularly for the W/training set (N=150).",
+    "result_type": "MINOR"
+  }
+]

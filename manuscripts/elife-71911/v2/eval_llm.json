@@ -1,0 +1,484 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C38",
+      "C39",
+      "C44",
+      "C45",
+      "C47",
+      "C130"
+    ],
+    "result": "The authors developed a novel FEL-based approach to model proteasome ATPase dynamics by identifying conformational degrees of freedom from cryo-EM structures, parameterizing the free energy surface based on nucleotide-ATPase interactions, and experimentally determining nine model parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C32, C38-C39, C44-C45, C47, and C130 collectively describe a coherent methodological framework. The approach is well-documented with structural analysis (C29, C34-C38, C130), parameterization strategy (C30, C44-C45, C47), and experimental parameter determination (C31, C48-C49). The 30 discrete conformations and 122,880 total states (C38-C39) follow logically from the structural constraints and nucleotide combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The difference in bridge energies between ATP and ADP interfaces is -1.6 (\u00b10.4) kcal/mol, determined from single-molecule binding assays showing Ki ratios of ATP:ADP:ATP-\u03b3S = 1:7.9 (\u00b12.0):0.5 (\u00b10.15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 report a critical FEL parameter with experimental measurements and confidence intervals. The single-molecule binding assay methodology is described (C48-C49, Figure 3B), and the Ki ratio directly yields the energy difference. The 90% confidence intervals indicate appropriate statistical treatment, though the manuscript should clarify sample size and replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Translocation is the rate-limiting step for cyclinB-iRFP degradation, with a translocation rate of 10.5 (\u00b10.8) AA/s accounting for ~80% of the 55 s total turnover time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 provide converging evidence that translocation limits degradation. The Michaelis-Menten kinetics (C55), turnover time measurement (C56), single-molecule translocation rate (C57), consistency with prior work (C58), and calculation showing translocation accounts for 80% of total time (C59-C60) form a coherent argument. The exclusion of deubiquitylation as limiting (C61) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C62",
+      "C63",
+      "C64",
+      "C87",
+      "C88",
+      "C109"
+    ],
+    "result": "The FEL model predictions are quantitatively consistent with experimental observations across three orders of magnitude of nucleotide concentrations, including degradation kinetics, ATP titration curves, and state distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33, C62-C64, C87-C88, and C109 assert broad model validation. The manuscript presents extensive experimental comparisons (Figures 3-5) showing quantitative agreement for translocation rates, ATP/ADP/ATP-\u03b3S effects, and substrate escape kinetics. The insensitivity to ~30% parameter uncertainty (C88) demonstrates robustness. However, the model underestimates peak translocation rate by 20-25% when including Lid-ATPase interactions (C151), indicating incomplete understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The translocation rate exhibits a non-monotonic dependence on ATP concentration, peaking around physiological levels (~1 mM) with an EC50 of 45 \u03bcM in the ascending phase, and decreasing at high ATP due to loss of ATPase cooperativity from FEL flattening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 describe a key prediction validated experimentally (Figure 4B). The EC50 derivation (C66) is model-based but testable. Control experiments exclude alternative explanations for high-ATP inhibition (C68). The contrast with sequential-transition models (C70) is conceptually sound. However, the claim that a sequential model predicts monotonic increase 'regardless of parameters' (C70) may be overstated without explicit mathematical proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C113",
+      "C123"
+    ],
+    "result": "Cooperative ATPase movements emerge from the FEL design where each nucleotide-binding status has a unique free-energy minimum, with ADP presence breaking symmetry and creating well-separated energy minima matching observed ED1/ED2 states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C53, C113, and C123 articulate the core mechanistic insight. The FEL analysis (Figure 2C) shows how nucleotide status modulates conformational preferences without imposed coupling (C53). The connection to the Monod-Wyman-Changeux model (C113) provides theoretical grounding. The match with cryo-EM structures (C53) validates the approach. This represents a conceptual advance over sequential models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C126",
+      "C127"
+    ],
+    "result": "ATP hydrolysis dictates translocation directionality by triggering an energy-dissipating conformational transition (1.6 kcal/mol) that swaps an ADP-bound interface for an ATP-bound interface, driving a 2-AA translocation step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C91-C94, C126-C127 describe the proposed mechanism for directional translocation. The FEL simulations identify the most-likely reaction sequence (C91) and quantify energy dissipation (C93). The coupling between conformational change and translocation (C92, C126) is structurally plausible. However, C127 uses 'may dictate' indicating this remains a proposal rather than definitively proven. Direct experimental validation of the reaction sequence would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "FEL simulations reveal that ATPase conformations self-organize into a transition network with ED/EC states predominating, featuring a main pathway resembling sequential models but with side branches enabling larger translocation steps (4 AAs) that explain the observed 2.6-3.0 AA/ATP efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C98-C101 describe emergent properties of the FEL model. The self-organization into networks matching cryo-EM distributions (C89) validates the model. The identification of alternative pathways (C90, C98-C99) and variable step sizes (C100-C101) reconciles the model with experimental translocation efficiency. The comparison with prior work (C101, citing Peth et al., 2013b) strengthens the conclusion. Figure 6 provides visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Conformational changes drive Rpt4 into a disengaged APO state with weak nucleotide affinity, enabling rapid ADP release necessary for fast translocation kinetics, while phosphate release is non-limiting due to weak affinity (Ki = 70 mM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 address a critical kinetic requirement. The conformational coupling to nucleotide affinity (C95) is structurally plausible given the observed cis pocket rearrangements (C46-C47). The inference that this enables fast ADP release (C96) is logical. The phosphate affinity measurement (C97, Figure 2\u2014figure supplement 1) provides experimental support. This mechanism resolves a potential kinetic bottleneck.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ATP-\u03b3S introduces concentration-dependent pauses in translocation, with 36 \u03bcM ATP-\u03b3S inhibiting translocation by 50% at 500 \u03bcM ATP, and translocation rate linearly depending on ATP hydrolysis rate at varying ATP-\u03b3S concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe ATP-\u03b3S effects validated experimentally (Figure 4C). The pause behavior in simulations (C71) matches observations in ClpXP (Sen et al., 2013). The 50% inhibition at 36 \u03bcM ATP-\u03b3S despite only 2-fold Ki difference (C72) demonstrates the model captures complex kinetic effects. The linear relationship between translocation and hydrolysis rates (C73) is consistent with prior work (Peth et al., 2013b).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Folic acid stabilizes cyclinB-DHFR-iRFP with IC50 = 800 \u03bcM (much higher than 1 \u03bcM Kd), indicating unfolding occurs when DHFR is transiently unliganded; folic acid reduces high-ATP inhibition because unfolding is less affected by high ATP than translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 describe experiments with unfolding-limited substrates. The high IC50 relative to Kd (C76) and linear relationship between folic acid concentration and inverse degradation rate (C77, Figure 5\u2014figure supplement 3) support the transient unliganding mechanism. The differential effect on ATP titration curves (C79-C81, Figure 5A-B) provides insight into distinct ATPase activities. However, the model introduces an additional parameter (unfolding rate coefficient) that is adjusted to fit data, reducing predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Substrates with unfolding-resistant domains escape at rates determined by backward kinetics, with measured turnover times for methotrexate-stabilized DHFR substrates matching FEL predictions for first-passage times on a 20-30 AA track; ATP-\u03b3S and ADP facilitate escape as predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 describe backward translocation validated experimentally (Figure 5C, F). The first-passage time calculation (C84) provides a testable prediction matching measurements. The effects of ATP-\u03b3S and ADP on escape kinetics (C85-C86) demonstrate the model captures bidirectional dynamics. However, the 20-30 AA track length has uncertainty, and the competition assay (Figure 5D-E) involves indirect measurements that could be affected by substrate binding kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C143",
+      "C144",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Lid-ATPase interactions can stabilize specific conformations, and incorporating this as a free energy term in simulations recapitulates asymmetric cryo-EM state distributions and correlates with WB mutant phenotypes, though the model underestimates peak translocation rate by 20-25%, indicating incomplete understanding of symmetry-breaking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106, C143-C144, C146-C152 explore symmetry-breaking mechanisms. The Lid-ATPase interaction hypothesis (C104) is reasonable given structural data (C102-C103), and simulations show qualitative agreement with cryo-EM distributions (C105) and mutant phenotypes (C106). However, C104 explicitly states this is a hypothesis, and the 20-25% underestimation of peak rate (C151) indicates the mechanism is incomplete (C152). The correlation with mutant phenotypes (C106) is described as 'generally correlated' and may involve 'other compensatory mechanisms,' suggesting uncertainty. Additional experimental validation of the Lid-ATPase interaction strength and its functional role is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C43",
+      "C46"
+    ],
+    "result": "ATPase domain interfaces adopt binary open/closed states based on solvent-excluded surface area, with closed interfaces arranging PL1s into substrate-interacting staircases; disengaged ATPases flanked by open interfaces show low nucleotide density and rearranged cis motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C40, C43, C46 describe structural observations forming the basis for FEL construction. The binary SESA values (C34, Figure 1C) justify the discrete conformational space. The correlation between interface state and PL1 arrangement (C35-C37) is structurally evident. The low nucleotide density and cis motif rearrangements in disengaged ATPases (C46, p=0.014) provide statistical support. These observations are well-documented in cryo-EM structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Previous cryo-EM studies captured seven proteasome states (EA1-ED2) with substrate-engaged PL1s forming helical staircases; ED1/ED2 are hypothesized for translocation, and sequential-transition models were proposed, but only two of six predicted conformations were identified and transition sequences remain unvalidated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C23 summarize prior structural work and identify knowledge gaps. The cryo-EM states (C11-C13) and PL1 staircase architecture (C14-C18) are well-established (Dong et al., 2019; de la Pe\u00f1a et al., 2018). The proposed sequential models (C20-C21) and their limitations (C22-C23) accurately represent the state of the field and motivate the current study. These are appropriate citations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Walker motif mutations have varying effects on proteasome activity, with some being well-tolerated despite predicted inactivation, leading to hypotheses of nonequivalent ATPase roles, though the extent of functional heterogeneity and its relationship to sequence divergence remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27, C140-C142 accurately summarize prior mutational studies (Rubin et al., 1998; Eisele et al., 2018; Beckwith et al., 2013; Erales et al., 2012) and identify unresolved questions. The observation that Walker mutations are sometimes well-tolerated (C25) contradicts simple sequential models (C24), motivating alternative mechanisms. The acknowledgment of uncertainty (C141-C142) is appropriate given conflicting prior results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Nucleotide-ATPase interactions involve conserved WA, WB, sensor I, sensor II motifs from the cis ATPase and arginine fingers from the trans ATPase, with arginine fingers being major components interacting with \u03b3- and \u03b2-phosphate groups on ATP at closed interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe established structural features of AAA+ ATPases (Ogura and Wilkinson, 2001) and are illustrated in Figure 2A. These are well-characterized interactions that form the basis for the parameterization strategy. The claims accurately represent prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The unit step of translocation is defined by the axial separation between PL1s, corresponding to approximately two amino acids in the substrate polypeptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 defines a key parameter based on structural analysis (Figure 1B). The ~2 AA step size is consistent with the helical pitch of the PL1 staircase observed in cryo-EM structures. This is a reasonable structural inference that is used consistently throughout the modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The FEL is an intrinsic property of proteins and a key component of physical models for molecular motors; FELs can be derived from cryo-EM conformational occupancies through the Boltzmann equation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 cite established theoretical frameworks (Wang and Oster, 1998; Tu and Cao, 2018; Bustamante et al., 2001; Dashti et al., 2014; Fischer et al., 2010). These are accurate representations of prior work that provide context for the current approach. The claims appropriately position the study within existing methodological frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Previous sequential rotary models based on nucleotide status of consecutive ATPases require specific hydrolysis order, but structural analysis found no consistent allosteric effects; alternatively, cooperativity may emerge from FEL modulation by ligand binding, analogous to the Monod-Wyman-Changeux model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 contrast prior models with the current approach. The description of sequential models (C110-C111) is accurate (Puchades et al., 2020; Dong et al., 2019; de la Pe\u00f1a et al., 2018). The structural analysis finding no consistent allosteric effects (C112) is a negative result that motivates the alternative mechanism. The analogy to MWC allostery (C113, Changeux, 2012) provides theoretical grounding for the FEL-based cooperativity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Loss of cooperativity at high ATP reduces degradation rate; the flat FEL of all-ATP state facilitates conformational interchange, potentially allowing bypass of defective subunits, analogous to 'ring-resetting' in ClpXP; peptidase inhibition at high ATP likely involves a different mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 discuss functional implications of the FEL model. The high-ATP inhibition mechanism (C114, C116-C117) is supported by experimental data (Figure 4B) and model analysis. The comparison to bacterial pilus motors (C115, Sukmana and Yang, 2018) and ClpXP (C118, Stinson et al., 2013) places findings in broader context. The distinction from peptidase inhibition (C119, Smith et al., 2011) based on concentration differences is reasonable. However, C117 is speculative ('may be important').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Disengaged ATPases flanked by open interfaces are present in all proteasome states (except EA with one open interface, possibly due to Lid-ATPase interaction), ensuring unique energy-minimum conformations and high cooperativity while enabling fast nucleotide exchange; similar features are observed in other AAA+ ATPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 describe a structural feature and its functional implications. The presence of disengaged ATPases (C120-C121) is well-documented in cryo-EM structures. The speculation about EA states (C122) is reasonable given structural data (Chen et al., 2016). The functional roles (C123-C124) follow logically from the FEL model. The comparison to other AAA+ ATPases (C125, citing Majumder et al., 2019; Fei et al., 2020; Puchades, 2017) suggests broader relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "The simulated translocation process deviates from strict 'hand-over-hand' mechanism with variable step sizes (multiples of 2 AAs) depending on which ATP hydrolyzes first; similar step size variations have been observed in ClpXP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 describe a model prediction with experimental precedent. The variable step sizes (C128, Figure 6\u2014figure supplements 2-3) emerge from the FEL simulations without being imposed. The comparison to ClpXP (C129, Sen et al., 2013; Shi et al., 2016) provides support, though the authors note the connection is unclear. This represents a testable prediction that differs from strict sequential models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Conformational occupancy and nucleotide distribution from cryo-EM are not required for model construction but are consistent with predictions; explicit allosteric coupling was not included as it is not essential for current observations, but could be added to accommodate other mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 clarify the relationship between model and data. The distinction between data used for construction versus validation (C131) is important for assessing model independence. The exclusion of explicit allostery (C133) is justified by parsimony and the model's success. The acknowledgment that allostery could be added (C134, citing Fei et al., 2020) shows appropriate scientific caution. These are methodological clarifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Partial degradation is a natural process; modeling substrate escape as first-passage time yields predictions consistent with measurements, though other mechanisms like loss of grip may contribute; the current model simplifies substrate force as constant, but incorporating precise unfolding landscapes would be straightforward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 discuss model limitations and extensions. The biological relevance of partial degradation (C135, Nassif et al., 2014) motivates the analysis. The first-passage time approach (C136) is validated by experiments (Figure 5F). The acknowledgment of alternative mechanisms (C137) and model simplifications (C138) shows appropriate scientific caution. The suggestion for future extensions (C139, Saha and Warshel, 2021) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The FEL is an approximation; future studies may identify additional mechanisms like allosteric effects; the model does not recapitulate ~2-fold substrate-induced ATPase activation (predicts only 9%), which may involve resting-to-translocating state transitions with different nucleotide affinities; the model may not accurately describe substrates limited by steps other than translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C160 acknowledge model limitations and suggest future directions. The recognition that the FEL is an approximation (C153) and may require additional mechanisms (C154) is scientifically appropriate. The specific discrepancy with substrate-induced activation (C155, Peth et al., 2013a) is honestly reported. The speculation about resting-to-translocating transitions (C156-C158) is reasonable given structural data (Bard et al., 2019; Dong et al., 2019). The acknowledgment of limitations for unfolding-limited substrates (C159-C160) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C28"
+    ],
+    "result": "AAA+ ATPases perform diverse functions requiring coordinated conformational transitions, but the mechanism of energy capture for mechanical work is unknown; the 26S proteasome is an AAA+ ATPase with a heterohexameric ring that unfolds and translocates substrates, but full-atom simulation at biologically relevant timescales is impractical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C10, C28 provide background and motivation. The description of AAA+ ATPases (C1, C7-C10) accurately cites established literature (Erzberger and Berger, 2006; Puchades et al., 2020; Collins and Goldberg, 2017; Bard et al., 2018). The knowledge gap (C2) and computational limitations (C28, Gecht et al., 2020) appropriately motivate the study. These are accurate representations of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "Direct interpretation of Walker-A mutants remains challenging as these mutations often lead to proteasome assembly defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 acknowledges a limitation in interpreting mutational data, citing prior work (Beckwith et al., 2013). This is an appropriate caveat that explains why the study focuses on Walker-B mutants. The claim accurately represents a known complication in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C161"
+    ],
+    "result": "The FEL approach is expected to have many applications in guiding experimental design and data analysis, and to provide valuable insights into proteasomal ATPases and other AAA machines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C161 is a forward-looking statement about the potential impact of the approach. Given the demonstrated success in recapitulating diverse experimental observations and providing mechanistic insights, this expectation is reasonable. However, it remains a speculation about future applications rather than a current result.",
+    "result_type": "MINOR"
+  }
+]

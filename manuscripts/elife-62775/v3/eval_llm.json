@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C131"
+    ],
+    "result": "Direct comparison of starved versus S. aureus-infected C. elegans revealed a large infection-specific transcriptional signature distinct from starvation responses. RNA-seq identified 388 differentially expressed genes, with ~70% (283 genes) upregulated by starvation (enriched for metabolic processes) and ~30% (105 genes) upregulated by infection (enriched for innate immune response genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25-C29 are directly supported by RNA-seq data presented in Figure 1 and Supplementary files 1-2, with appropriate GO analysis. The experimental design (C2, Figure 1A) properly controls for starvation by comparing infected animals to starved animals rather than just fed controls. Statistical thresholds and biological replicates appear adequate. Claim C131 is a reasonable inference from these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "HLH-30/TFEB is crucial for both starvation and infection-specific transcriptional responses. In hlh-30 mutants, differential gene expression between starvation and infection was almost completely abrogated, with only 6 genes (including fmo-2/FMO5, clec-52, C33A12.19, C54F6.12, K08C7.4, and Y47H9C.1) still induced during infection. fmo-2/FMO5 was partially induced in hlh-30 mutants and this was rescued by transgenic complementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C36 are well-supported by RNA-seq data (Figure 2A-B, Supplementary file 3) and RT-qPCR validation (Figure 2C-D). The genetic complementation experiment (C34) strengthens the conclusion that hlh-30 is required. The identification of 6 HLH-30-independent genes is clearly documented. The inference of an alternative pathway (C36) is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "fmo-2/FMO5 induction during S. aureus infection requires NHR-49/PPAR-\u03b1. fmo-2 expression was induced several thousand-fold by S. aureus but not by P. aeruginosa. In nhr-49 null mutants, fmo-2 expression was barely induced and undetectable in the intestinal epithelium, while in hlh-30 mutants, fmo-2 expression was preserved but at lower levels. nhr-49 is absolutely required for fmo-2 expression in both infected and noninfected animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37-C51 are strongly supported by multiple complementary approaches: RT-qPCR (Figure 3L, Figure 3\u2014figure supplement 1A), fluorescence microscopy of transcriptional reporters (Figure 3A-K), and genetic rescue experiments (Figure 3L). The pathogen specificity is well-documented (C37-C38). The differential requirements for nhr-49 versus hlh-30 (C44-C46) are clearly demonstrated with appropriate imaging quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Among the six HLH-30-independent genes, only K08C7.4 induction by S. aureus was also dependent on NHR-49/PPAR-\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by RT-qPCR data shown in Figure 3\u2014figure supplement 2 and fluorescence microscopy of a K08C7.4 reporter (Figure 3\u2014figure supplement 3). The data clearly show that K08C7.4 requires nhr-49 for induction, distinguishing it from the other HLH-30-independent genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C62"
+    ],
+    "result": "NHR-49/PPAR-\u03b1 is required for host defense against S. aureus infection and influences lifespan. nhr-49 null mutants showed defective infection survival and shorter lifespan on E. coli. Transgenic rescue completely restored infection survival but only partially restored lifespan, suggesting distinct thresholds of NHR-49 function in infection versus aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57, C61-C62 are supported by survival assays (Figure 4A) and lifespan assays (Figure 4B) with appropriate genetic rescue controls. The differential rescue of infection survival versus lifespan (C55-C57) is an interesting observation that supports the inference of distinct functional thresholds (C57). Statistical analysis appears appropriate with Log-Rank tests and multiple independent trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "nhr-49 gain-of-function mutants show enhanced infection survival and constitutively elevated fmo-2 expression. Two distinct nhr-49(gof) alleles showed enhanced infection survival but had opposite effects on lifespan (gf1 prolonged, gf2 shortened). Both showed constitutively high fmo-2 expression that was further increased by infection, suggesting nhr-49 activation is sufficient for fmo-2 expression and infection synergistically upregulates it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C68 are well-supported by survival assays (Figure 4C-D), RT-qPCR (Figure 4E), and fluorescence microscopy (Figure 4F-J). The use of two independent gain-of-function alleles strengthens the conclusions. The differential effects on lifespan (C59-C60) are interesting and properly documented. The inference that nhr-49 activation is sufficient for fmo-2 expression (C67) is reasonable based on the constitutive expression in gof mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "NHR-49/PPAR-\u03b1 functions in multiple tissues for host defense and lifespan regulation. Tissue-specific rescue experiments showed that intestinal rescue fully restored fmo-2 expression and enhanced infection survival, while neuronal, muscular, and epidermal expression also rescued infection survival to varying degrees. Effects on lifespan were tissue-specific and distinct from effects on infection survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 are supported by tissue-specific rescue experiments with RT-qPCR (Figure 5A,D,G,J), survival assays (Figure 5B,E,H,K), and lifespan assays (Figure 5C,F,I,L). The experiments use appropriate tissue-specific promoters and show clear tissue-specific effects. The conclusion of distinct tissue-specific roles (C78) is well-supported by the differential rescue patterns for infection versus lifespan. However, the mechanism of non-cell-autonomous function (C7) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "NHR-49/PPAR-\u03b1 controls a specific fraction of the infection-specific transcriptional signature. RNA-seq of nhr-49 mutants revealed 313 infection-upregulated genes (vs 135 in wild type), with 92 genes (68%) being NHR-49-independent and 43 genes being NHR-49-dependent (enriched for redox enzymes, C-type lectins, and lipid metabolic enzymes). 221 genes were induced only in nhr-49 mutants, suggesting compensatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by RNA-seq data (Figure 6, Supplementary file 4) with appropriate GO analysis. The observation that nhr-49 mutants show MORE differentially expressed genes than wild type (C79) is surprising but well-documented. The categorization of genes as NHR-49-dependent vs independent (C80-C81) is clear. The inference of compensatory responses (C84-C85) is reasonable but speculative and would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "HLH-30/TFEB and NHR-49/PPAR-\u03b1 exhibit mutual regulation during infection. nhr-49 expression did not change during infection in wild type but was lower in infected hlh-30 mutants. Conversely, hlh-30 baseline expression was higher in nhr-49 mutants but its induction by infection was abrogated. In nhr-49(gof) mutants, both hlh-30 baseline and induced expression were higher.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 are supported by RT-qPCR data (Figure 7A-B) showing mutual regulation between hlh-30 and nhr-49. The experiments use appropriate genetic backgrounds and controls. The conclusion of mutual regulation (C93) is well-supported, though the mechanistic details remain unclear. The data suggest complex regulatory interactions that differ between basal and infected states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Genetic epistasis analysis suggests hlh-30 and nhr-49 function in parallel pathways for longevity but in the same pathway for infection survival. hlh-30 RNAi greatly impaired infection survival in wild type but not in nhr-49 mutants, while it shortened lifespan in both wild type and nhr-49 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by RNAi experiments (Figure 7\u2014figure supplement 1A-B). The epistasis analysis is appropriate and the conclusions are logical. However, RNAi may not achieve complete knockdown, which could affect interpretation. The differential genetic interactions for infection versus lifespan (C97-C98) are interesting and consistent with other data in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Double mutant analysis reveals complex genetic interactions between hlh-30 and nhr-49. hlh-30 deletion completely suppressed the enhanced infection survival of nhr-49(gof) alleles, consistent with hlh-30 functioning downstream of nhr-49 for infection survival. However, nhr-49(gof) partially suppressed the lifespan defect of hlh-30 mutants. For fmo-2 expression, hlh-30 and nhr-49 appear to function in parallel pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 are supported by survival assays (Figure 7C), lifespan assays (Figure 7D), and RT-qPCR (Figure 7E) of double mutants. The genetic epistasis analysis is well-designed and the conclusions are logical. The differential genetic relationships for infection survival (C100), lifespan (C102), and fmo-2 expression (C104) are clearly demonstrated and suggest context-dependent interactions between these transcription factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C151",
+      "C152"
+    ],
+    "result": "FMO-2/FMO5 is required for host defense against S. aureus infection but not for defense against P. aeruginosa or for normal lifespan. fmo-2 deletion severely compromised S. aureus infection survival without affecting P. aeruginosa survival or aging on E. coli. fmo-2 deletion did not affect induction of other host defense genes, suggesting it functions independently as a host defense effector.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C112-C116, C151-C152 are strongly supported by survival assays with S. aureus (Figure 8A), P. aeruginosa (Figure 8B), and lifespan assays (Figure 8C), along with RT-qPCR of other defense genes (Figure 8\u2014figure supplement 1). The pathogen specificity is clearly demonstrated. The conclusion that FMO-2 is a novel host defense effector (C152) is well-supported. This is the first demonstration of FMO function in animal innate immunity (C5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "FMO-2/FMO5 catalytic activity is specifically required for host defense. CRISPR-mediated mutations in either the FAD-binding or NADPH-binding motifs caused infection survival defects nearly as severe as null mutants, while simultaneous mutation of both motifs was indistinguishable from null. These mutations did not alter lifespan on E. coli, suggesting catalytic activity is specifically required for infection defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 are supported by survival assays (Figure 8D) and lifespan assays (Figure 8E) using CRISPR-generated catalytic site mutants. The experimental design is rigorous, targeting conserved residues based on sequence alignment (Figure 8\u2014figure supplement 2). The conclusion that catalytic activity is required for host defense (C119, C121) is well-supported. However, the mutations could potentially affect protein stability rather than just catalytic activity, which is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Genetic epistasis analysis shows fmo-2 and nhr-49 function in the same pathway for infection survival, with fmo-2 acting downstream of nhr-49. Double deletion of nhr-49 and fmo-2 resulted in similar infection survival defects as single mutants. Introduction of fmo-2 deletion almost completely suppressed the enhanced infection survival of nhr-49(gof) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 are supported by survival assays of double mutants (Figure 9A,C) and lifespan assays (Figure 9D). The epistasis analysis is well-designed and clearly demonstrates that fmo-2 is required for nhr-49-mediated host defense. The conclusion that fmo-2 acts downstream of nhr-49 (C126) is strongly supported by the suppression of nhr-49(gof) phenotypes by fmo-2 deletion (C124-C125).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Intestinal overexpression of fmo-2 is sufficient to enhance both infection survival and lifespan. Intestinal-restricted fmo-2 overexpression boosted infection survival and extended lifespan on E. coli, suggesting fmo-2 is both necessary and sufficient for host defense and may also protect against age-related E. coli pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 are supported by survival assays (Figure 8\u2014figure supplement 3A) and lifespan assays (Figure 8\u2014figure supplement 3B) using intestinal-specific overexpression. The data clearly show that fmo-2 overexpression is sufficient for enhanced survival. The conclusion that fmo-2 is necessary and sufficient (C130) is well-supported by combining loss-of-function and gain-of-function data. The speculation about age-related E. coli pathogenesis (C129) is reasonable but requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C132",
+      "C133"
+    ],
+    "result": "The study identifies HLH-30/TFEB as the main regulator of the infection-specific host response and reveals a novel role for NHR-49/PPAR-\u03b1 in host defense. HLH-30/TFEB integrates metabolic and infection stresses to produce stress-specific transcriptional responses. NHR-49/PPAR-\u03b1 was discovered to have a novel role in host defense against S. aureus infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C132-C133 are overarching conclusions well-supported by the cumulative data. The identification of HLH-30/TFEB as the main regulator (C8) is strongly supported by RNA-seq showing it controls most of the infection-specific signature. The inference that HLH-30 integrates stresses (C132) is reasonable based on its requirement for both starvation and infection responses. The novel role of NHR-49 in host defense (C133) is clearly demonstrated through multiple approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C9",
+      "C152"
+    ],
+    "result": "This work identifies FMO-2/FMO5 as the first FMO with innate immunity functions in animals, revealing FMOs as important innate immunity effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C9, C152 represent a major discovery that is well-supported by the functional data showing fmo-2 is required for infection survival (Figure 8A) and that its catalytic activity is necessary (Figure 8D). The claim that this is the first demonstration of FMO function in animal innate immunity (C5) is supported by the literature review in the Discussion, which notes that FMOs were previously known to function in plant immunity but not animal immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C74"
+    ],
+    "result": "NHR-49/PPAR-\u03b1 controls host defense cell non-autonomously and can function from multiple tissues (intestine, neurons, muscle, or epidermis) to promote host defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C74 are supported by tissue-specific rescue experiments (Figure 5). The ability of nhr-49 expression in multiple tissues to rescue host defense (C74) is clearly demonstrated. The claim of non-cell-autonomous function (C7) is inferred from the observation that nhr-49 expression in non-intestinal tissues can induce fmo-2 expression in the intestine, but the mechanism is not fully elucidated. Further experiments tracking cell-to-cell signaling would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C41",
+      "C43",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Background and literature context claims about C. elegans immunity, HLH-30/TFEB, NHR-49/PPAR-\u03b1, and FMOs from prior work and other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C24, C41, C43, C106-C111, C134-C169 are background claims supported by appropriate citations to prior literature. These provide context for the current work and appear to accurately represent the cited studies. Some claims (e.g., C154) are speculative hypotheses for future work rather than established facts, which is appropriate for the Discussion section.",
+    "result_type": "MINOR"
+  }
+]

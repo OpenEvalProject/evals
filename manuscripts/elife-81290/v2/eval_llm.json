@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Batch correction successfully removed laboratory-of-origin effects from RNA-seq data, enabling segregation of samples by disease status rather than technical batch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C23 demonstrate that PCA before batch correction showed clustering by lab of origin (consistent with prior observations), while after ComBat-seq correction, PC1 segregated samples by progeria/control status. This is supported by Figure 1\u2014figure supplement 1A-B and appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Comprehensive RNA-seq analysis of HGPS fibroblasts across age groups reveals age-dependent differential gene expression patterns, with teenage patients showing the fewest changes versus age-matched controls but the most changes versus older adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C35 describe the dataset composition and differential expression results presented in Table 1. The data show clear patterns of age-dependent gene expression changes, with statistical support from DESeq2 analysis (FDR<0.001). The observation that young controls vs. adult controls show minimal changes (C34-C35) supports that HGPS drives the observed differences (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "HGPS fibroblasts show widespread misregulation of DNA maintenance and epigenetic genes, with 970 differentially expressed genes predominantly upregulated in young and teenage patients compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by gene ontology analysis (Figure 1A-D, Metascape) and heatmap visualization (Figure 1B). The finding is consistent with extensive prior literature on epigenetic dysregulation in HGPS (C41), providing validation. However, the interpretation that upregulation represents overcompensation (C99) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "HGPS patients show misregulation of 585 tissue repair genes, with overexpression of extracellular matrix organization genes but downregulation of wound healing, coagulation, and BMP signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by gene ontology analysis shown in Figure 2A-C. The bidirectional changes (upregulation of ECM genes, downregulation of repair pathways) are clearly documented in the heatmaps and ontology enrichment results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Bone-related gene expression in HGPS shows a dual pattern: upregulation of osteoblast/chondrocyte differentiation pathways and downregulation of calcium homeostasis pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 are supported by gene ontology analysis (Figure 3A-E) showing 165 misregulated bone-related genes. The stratification into two distinct hubs (differentiation vs. calcium homeostasis) is clearly demonstrated in the data and consistent with known HGPS bone phenotypes (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Young HGPS samples show downregulation of fat cell differentiation pathways compared to age-matched controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by gene ontology analysis (Figure 4A-C) and is consistent with observed lipodystrophy phenotypes in HGPS patients (citation to Rev\u00eachon et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "HGPS patients show upregulation of blood vessel morphogenesis but decreased blood vessel maturation genes across age groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by gene ontology analysis (Figure 5A-D) showing consistent patterns in both young and teenage patient comparisons. The bidirectional effect (increased morphogenesis, decreased maturation) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Both young and teenage HGPS patients show marked upregulation of muscle development and cardiac muscle differentiation genes compared to adult controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by gene ontology analysis shown in Figure 6A-C, demonstrating consistent upregulation across HGPS age groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Age stratification of young HGPS patients reveals distinct transcriptional signatures: early infants (0-3 years) show HDAC upregulation, while children (4-7 years) show downregulation of early chondrogenesis genes including PTHLH, IGF1, BMPR1B, and COL10a1, alongside upregulation of BMP4 and WNT5a pathway genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C69 are supported by Table 2 and Figure 7A-C. The age-stratified analysis reveals temporally specific gene expression changes that correlate with developmental milestones. The identification of specific chondrogenesis regulators (C68) is supported by appropriate citations to developmental biology literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "HGPS fibroblasts show altered chromosome structure including decreased telomere interactions, loss of Rabl structure, but preserved TAD structure with increased boundary strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 are supported by Hi-C analysis (Figure 8B-C). The observations are consistent with previous reports of DNA damage effects (C72, C76) and progerin-expressing cells (C75). The suggestion that these features relate to DNA damage (C77) is reasonable inference supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Genome compartmentalization shows weakened A compartment strength in late passage HGPS cells, though compartment identity remains largely preserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by Hi-C compartment analysis (Figure 8D-E). The finding that compartments are more preserved than previously reported (C81) is supported by comparison to prior data (McCord et al., 2013) and attributed to improved sequencing depth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Upregulated genes in HGPS tend to remain in the A compartment, while a subset of downregulated genes shift toward the B compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by compartment analysis of differentially expressed genes (Figure 8F-H). The asymmetry between upregulated and downregulated genes suggests different mechanisms of gene regulation, though the inference that upregulation doesn't require compartment shifts (C83) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "HGPS cells show globally altered lamin-chromatin interactions with overall dampening of LAD signal and shift from bimodal to normal distribution of LAD intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by LAD analysis (Figure 8\u2014figure supplement 1A-D) with statistical significance (Kruskal-Wallis p<0.001). The shift from bimodal to normal distribution in HGPS cells (C87-C88) represents a clear structural change in nuclear organization, though the interpretation as 'misregulated interaction' (C89) is reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Key mesenchymal lineage genes show concordant changes in expression and chromosome structure: BMP4 (upregulated) shifts to A compartment, FZD4 (upregulated) shows LAD erosion, and PTHLH (downregulated) shows increased LAD association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by integrated analysis of RNA-seq, Hi-C, and LAD data (Figure 9 and supplements). These specific examples demonstrate that some gene expression changes correlate with structural changes, though this represents a minority of differentially expressed genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C117",
+      "C128",
+      "C129",
+      "C130",
+      "C159"
+    ],
+    "result": "The authors propose that HGPS causes a 'fail to arrest' phenotype in chondrocyte differentiation due to PTHLH downregulation and WNT5a upregulation, leading to premature depletion of chondro-osteoprogenitor pools and incomplete clavicular ossification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20-C21 and C117-C130 present a mechanistic hypothesis linking gene expression changes to developmental defects. While the gene expression data (C20, C117) and chromosome structure alterations (C21) are supported, the causal chain from gene misregulation to MSC depletion to clavicular defects (C128-C130, C159) is speculative. The hypothesis is plausible and supported by developmental biology literature (C68, C122-C127), but lacks direct experimental validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C139",
+      "C146"
+    ],
+    "result": "HGPS fibroblasts show deficient repair signatures, and the authors propose that chronic repair defects strain MSC pools, contributing to disease pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C131 (abnormal repair signatures) is supported by gene ontology data. Claims C132-C137 provide supporting evidence from literature. However, the proposal that repair defects strain MSC pools (C139, C146) is speculative reasoning without direct experimental support in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C154",
+      "C155"
+    ],
+    "result": "HGPS gene expression patterns are distinct from normal aging, representing an altered aging-like paradigm rather than accelerated normal aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 and C154-C155 are supported by the observation that HGPS expression profiles differ from both middle-aged and old adult controls. This is a key conceptual finding that distinguishes HGPS from simple accelerated aging, though the term 'altered aging-like paradigm' (C95) is somewhat vague.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "HDAC family genes show the largest upregulation in young HGPS patients across age comparisons, while older patients show downregulation of histone modification genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 and C100 are supported by gene ontology analysis of age-stratified cohorts. However, the interpretation that upregulation represents overcompensation (C99) is speculative and lacks direct experimental support, though it is supported by citations to prior work on DNA repair defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Integration of RNA-seq and Hi-C data reveals that most gene expression changes occur without dramatic chromosome structural changes, though some key mesenchymal genes show concordant expression and structural alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 integrate transcriptomic and structural data. The observation that most upregulated genes remain in A compartment (C104-C105) is well-supported. The identification of specific genes with concordant changes (C106) is supported by data. However, the causal inference that these changes 'result directly from progerin influence' (C107) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors propose a 'biology of priority' model where structural integrity (bone, vasculature) takes precedence over energy storage (fat) during development, and that MSC pool depletion in HGPS follows this hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C138 presents a speculative developmental priority model. Claims C147-C152 provide literature support for MSC biology and plasticity. However, the proposed hierarchy and its application to HGPS pathology is speculative reasoning without direct experimental validation in this study. The model is plausible but requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background information on HGPS molecular basis, clinical presentation, and prior observations of mesenchymal defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide established background knowledge about HGPS, all supported by appropriate citations to prior literature. These claims establish the scientific context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Literature review of prior work on HGPS mesenchymal defects, iPSC models, bone development, MSC biology, and cellular senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C145 summarize prior literature relevant to interpreting the current findings. All claims are supported by appropriate citations. These provide important context for the mechanistic hypotheses proposed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C158"
+    ],
+    "result": "AG11513 cells show a chromosomal translocation between chr3 and chr11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C158 is supported by Hi-C data (Figure 8A) showing clear off-diagonal interactions. This is a quality control observation noting a sample-specific abnormality.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,598 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C218"
+    ],
+    "result": "The hippocampal metabolome undergoes significant developmental changes across postnatal ages (PN1, PN7, PN17, PN24, PN80), with 454 metabolites identified across eight pathways. PCA revealed distinct age-specific clustering without sex differences. Metabolite diversity and concentration peaked at PN24 before declining in adulthood, with the majority of changes occurring between PN7-PN17 and PN17-PN24 (upregulation) and PN24-PN80 (downregulation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C30-C48, and C218 are well-supported by comprehensive metabolomic profiling data including PCA analysis (Figure 1b), quantification of total peak numbers and intensities (Figure 1c), and pairwise age comparisons (Figure 1d). The statistical analyses (p<0.05, q<0.1) and sample sizes (n=5-7 per group) are appropriate. The lack of sex differences is documented in Figure 1\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C219",
+      "C220"
+    ],
+    "result": "Amino acid and nucleotide metabolism pathways were elevated at early postnatal ages (PN1, PN7) relative to adulthood (PN80), while lipid and cofactor/vitamin pathways (except ketone bodies and glycerolipid/fatty acids) and four carbohydrate/energy pathways (advanced glycation end products, TCA cycle, pentose phosphate pathway, oxidative phosphorylation) were lower in early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53, C219-C220 are supported by hierarchical cluster analysis of 59 metabolomic pathways (Figure 2) with appropriate statistical testing (p<0.05, one-way ANOVA with Tukey's test). The pathway-level analysis provides a clear developmental trajectory consistent with the individual metabolite data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Random forest analysis identified 30 top-ranked metabolites that distinguish developmental ages with 100% predictive accuracy, including 12 amino acids (5 from urea cycle/arginine/proline metabolism, 3 from histidine metabolism), 6 lipids (4 acylcarnitines), and 6 nucleotides (equal proportions purine and pyrimidine). Most peaked at PN17 or PN24.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 are supported by RF analysis (Figure 3a) achieving 100% classification accuracy and hierarchical cluster analysis (Figure 3b). The statistical approach is appropriate for identifying discriminatory metabolites. However, the 100% accuracy with relatively small sample sizes (n=5-7) raises concerns about potential overfitting, though this is partially mitigated by the clear PCA separation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C75",
+      "C76"
+    ],
+    "result": "Sphinganine was the top-ranked metabolite changing across development, gradually increasing from PN1 to peak at PN24, correlating with myelination rates. Sphinganine forms the backbone of all sphingolipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C75-C76 are supported by RF analysis (Figure 3a), hierarchical cluster analysis (Figure 3b), and citations to established sphingolipid biochemistry (Carreira et al., 2019) and myelination studies (Meier et al., 2004; van Tilborg et al., 2018). The correlation with myelination is logical but remains correlative rather than mechanistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Three histidine metabolism metabolites (1-ribosyl-imidazoleacetate, imidazole propionate, imidazole lactate) were among top-ranked developmental changes. These can act as GABAA agonists or serve as glutamate precursors. Glutamate and related metabolites (aspartate, glutamine, GABA) peaked at PN24, suggesting higher glutamate synthesis in juveniles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by RF analysis data and citations to Glinton et al., 2019. The interpretation linking histidine metabolism to glutamate synthesis (C80) is speculative but reasonable given the biochemical pathways. The glutamate peak at PN24 (C81) is supported by metabolomic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Four acylcarnitines were among top-ranked metabolites, peaking at PN17-PN24. This suggests higher fatty acid \u03b2-oxidation in the juvenile brain, consistent with the developing brain's ability to use ketone bodies as complementary energy sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by metabolomic data and citations (Jones et al., 2010; Cremer, 1982; Dombrowski et al., 1989; Nehlig, 2004). The interpretation of higher \u03b2-oxidation (C83) is speculative but reasonable given the acylcarnitine data and established developmental metabolism literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Nucleotide levels decreased from PN1 to adulthood (except adenine), potentially reflecting reduced DNA/RNA synthesis and cell proliferation during postnatal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by metabolomic data showing nucleotide decreases. However, the interpretation is speculative as no direct measurements of cell proliferation or DNA/RNA synthesis were performed. The inference is reasonable but remains correlative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Carbohydrate and TCA cycle metabolites showed complex developmental patterns. Glycogen and nucleotide sugar metabolites were higher early (PN1-PN7), while most other carbohydrates and TCA metabolites peaked at PN17 or PN24, suggesting oxidative metabolism peaks during this period when hippocampus-dependent memories acquire adult-like abilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C97 are supported by hierarchical cluster analysis (Figure 4) with appropriate statistics. The interpretation linking metabolic peaks to memory development (C97) is reasonable given the temporal correlation but remains inferential without direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C221",
+      "C222"
+    ],
+    "result": "Learning differentially regulates the hippocampal metabolome across ages. Training at PN17 downregulated 54 metabolites (mainly amino acids, cofactors/vitamins), PN24 showed no significant changes, and PN80 upregulated 9 metabolites (mainly lipids) while downregulating 2 carbohydrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C98-C101, C221-C222 are supported by volcano plot analyses (Figure 5a-c) with appropriate statistics (p<0.05, q<0.1, Welch's t-test). The age-specific patterns are clear and well-documented. Sample sizes (n=7 per group) are adequate for metabolomic comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C223"
+    ],
+    "result": "The infant hippocampus (PN17) showed the largest learning-induced changes with downregulation of 54 metabolites, including many involved in glutathione-mediated antioxidant defense (GSSG, cysteine, S-lactoylglutathione, SAM, 5-oxoproline, ascorbate, alpha-tocopherol). GSH levels were unchanged at 1 hr post-training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C102-C106, C223 are supported by metabolomic data (Figure 5a,d). The identification of glutathione pathway metabolites is clear. The lack of GSH change at 1 hr (C106) is important for interpreting the mechanism and is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The decrease in cysteine following infantile learning may serve protein synthesis rather than GSH biosynthesis, as protein synthesis is required for long-term memory. The antioxidant defense changes at PN17 were not observed at PN24 or PN80, indicating age-specific differential activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by metabolomic data and citation (Costa-Mattioli et al., 2009). The interpretation about cysteine use (C107) is speculative but reasonable given unchanged GSH at 1 hr. The age-specificity (C109-C110) is well-documented by volcano plots (Figure 5b-c).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The recruitment of antioxidant pathways only in infancy may result from higher oxidative stress due to increased metabolic activity underlying memory formation. Neuronal activity raises ATP demands requiring increased oxidative phosphorylation, which produces ROS. The infant brain may have higher energy requirements for developmental maturation and insufficient antioxidant capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C114 are speculative interpretations supported by citations (Harris et al., 2012; Fernandez-Fernandez et al., 2012; Bola\u00f1os, 2016; Hongpaisan et al., 2004; Brennan et al., 2009; Frisard and Ravussin, 2006; Quijano et al., 2016; Cobley et al., 2018; Travaglia et al., 2016a; Bessi\u00e8res et al., 2020). However, no direct measurements of oxidative stress, ROS production, or ATP demands were performed. The interpretations are reasonable but remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The hypothesis of higher metabolic activity causing oxidative stress in infants is contrasted by evidence that mitochondrial respiration rate is inversely correlated with ROS production. Adult memory formation recruits astrocytes relying on glycolysis, and astrocytes have lower mitochondrial respiration leading to higher ROS production than neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by citations (Lopez-Fabuel et al., 2016; Suzuki et al., 2011; Newman et al., 2011). These claims appropriately acknowledge contradictory evidence and alternative interpretations, demonstrating scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Infantile training (PN17) caused significant decreases in 11 proteinogenic amino acids and neurotransmitters (glutamate, GABA, related metabolites), along with glycolytic and TCA cycle intermediates. These may be consumed by learning-induced translation, used as energy sources, or reflect higher TCA cycle metabolic rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 are supported by metabolomic data (Figure 5). The interpretations about amino acid consumption (C120-C121) and TCA cycle rate (C123) are speculative but reasonable. The citation to Salinas et al., 1990 supports the translation hypothesis. However, no direct measurements of translation or metabolic flux were performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Adult learning (PN80) upregulated histidine-derived metabolites (suggesting glutamate synthesis/utilization), acylcarnitines (suggesting increased fatty acid \u03b2-oxidation), and decreased glycolytic metabolites (3-phosphoglycerate, phosphoenolpyruvate), indicating differential recruitment of glycolysis in adult learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C132 are supported by metabolomic data (Figure 5e) and citations (Jones et al., 2010; Suzuki et al., 2011; Newman et al., 2011; Descalzi et al., 2019). The interpretations are speculative but reasonable given the metabolite changes and established literature on glycolysis in memory formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "GSH is the most abundant brain antioxidant, protecting against oxidative stress, modulating cell proliferation/differentiation, regulating signal transduction and gene expression, and modulating ion channels including NMDA receptors. All brain cells can biosynthesize and regenerate GSH from GSSG via a two-step pathway involving GCL (rate-limiting, composed of GCLC and GCLM subunits) and GSy. GSH is oxidized to GSSG by GPx and regenerated by GR using NADPH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C145 describe established biochemical knowledge supported by multiple citations (Dringen, 2000; Dringen and Hirrlinger, 2003; K\u00f6hr et al., 1994; Jan\u00e1ky et al., 1999; Steullet et al., 2006; Fernandez-Fernandez et al., 2012; Bola\u00f1os, 2016). These are background claims providing context for the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "GSH levels were significantly higher at PN24 compared to PN17 and PN80, while GSSG levels were higher at PN17 and PN24 versus PN80. The GSH/GSSG ratio was higher at PN24 versus PN80 but not significantly different between PN17 and PN80, though PN17 showed broader GSSG distribution. Precursor amino acids (cysteine, glycine) were lower at PN17 than PN24/PN80, suggesting lower GSH synthesis capacity or higher consumption at PN17.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C154 are supported by UPLC-MS/MS quantification (Figure 6b) with appropriate statistics (one-way ANOVA with Tukey's test, n=7 per group). The interpretation about GSH synthesis capacity (C154) is reasonable given the precursor data but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Western blot analysis revealed GR levels were lower at PN17 than adulthood, while GPx isozyme 1 was 45-100% higher at PN17. GCLC levels were similar across ages, but GCLM was 135% higher at PN24 versus PN17. GSy was higher in adulthood. These results suggest higher glutathione oxidation and lower de novo GSH synthesis capacity in the infant brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C161 are supported by Western blot analysis (Figure 6c) with appropriate statistics (one-way ANOVA with Tukey's test, n=4-6 per group). The interpretations about oxidation rate (C157) and synthesis capacity (C161) are reasonable inferences from the enzyme expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "GR and GPx activity were higher at PN17 and PN24 versus PN80, suggesting higher glutathione oxidation/reduction cycling during development. GCL activity dramatically increased from PN17 to PN24 then decreased in adulthood. GSy activity was higher at PN24 and PN80 versus PN17. These results suggest the infant hippocampus has lower glutathione-mediated antioxidant defense capacity, consistent with literature showing the developing brain is more vulnerable to oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C168 are supported by enzyme activity assays (Figure 6d) with appropriate statistics (one-way ANOVA with Tukey's test, n=6 per group). The interpretation about antioxidant capacity (C167) is well-supported by the combined enzyme expression and activity data. The agreement with prior literature (C168, citations provided) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "IA learning at PN17 (but not PN24 or PN80) significantly decreased GSSG without affecting GSH, increasing the GSH/GSSG ratio at 1 hr. Enzyme expression levels (GR, GPx, GCLC, GCLM, GSy) did not change at 1 or 24 hr post-training. Only GR activity significantly increased at 15 min and remained elevated at 1 and 24 hr before returning to baseline by 7 days. This suggests learning increases GSH regeneration from GSSG without changing GSH oxidation or biosynthesis. The mechanism may involve posttranslational modifications or allosteric interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C175 are supported by UPLC-MS/MS quantification (Figure 7a), Western blots (Figure 7b), and enzyme activity assays (Figure 7c) with appropriate statistics (two-way ANOVA, one-way ANOVA with Dunnett's test, n=5-7 per group). The selective GR activity increase is well-documented. The mechanistic speculation (C175) is reasonable but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The increase in GR activity was specific to associative learning (not observed in shock-only controls) and age-specific (not observed at PN24 or PN80), indicating glutathione metabolism is differentially regulated in the infant hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C180 are supported by GR activity assays with appropriate controls (Figure 7d-f) and statistics (one-way ANOVA with Tukey's or Dunnett's test, n=6 per group). The shock-only control (C176-C177) is critical for establishing learning-specificity. The age-specificity (C178-C180) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Neurons have limited intrinsic glutathione-dependent antioxidant capacity and rely on astrocytic support. Astrocytes express higher levels of antioxidant molecules and enzymes including Nrf2. NMDAR-dependent Nrf2 activation stimulates astrocytic release of GSH precursors for neuronal use. Astrocytes rely more on glycolysis and have higher mitochondrial ROS production. Astrocytic ROS regulate glucose utilization, boost antioxidant support to neurons, and are required for memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C186 describe established knowledge supported by multiple citations (Papadia et al., 2008; Bell and Hardingham, 2011; Baxter et al., 2015; Herrero-Mendez et al., 2009; Fernandez-Fernandez et al., 2012; Bola\u00f1os, 2016; B\u00e9langer et al., 2011; Jimenez-Blasco et al., 2015; Dringen et al., 1999; Lopez-Fabuel et al., 2016; Vicente-Gutierrez et al., 2019). These provide important context for interpreting the cell-type-specific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C5",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C224"
+    ],
+    "result": "Infant learning induces a significant increase in GR activity specifically in neurons but not astrocytes or other cells. Basal GR activity appears higher in neurons than astrocytes. This is consistent with literature showing GR expression is higher in neurons and that neurons compensate for low GCL/GSH by efficient GSH regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C187-C190, C224 are supported by GR activity assays in FACS-sorted cells (Figure 7g) with appropriate statistics (two-way ANOVA with Bonferroni's test, n=5\u00d73 rats per group). The cell-type specificity is clearly demonstrated. The agreement with prior literature (C189-C190, citations provided) strengthens the findings. The FACS approach is appropriate though technically challenging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "The GR inhibitor 2-AAPA at 100 \u03bcM prevented the learning-dependent GR activity increase, while 200 \u03bcM decreased GR activity by >75%. Both doses completely blocked memory formation in PN17 rats. Rats could re-learn when retrained, demonstrating 2-AAPA did not disrupt hippocampal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C195 are supported by GR activity assays (Figure 8a) and behavioral data (Figure 8b) with appropriate statistics (one-way ANOVA with Tukey's test, two-way RM ANOVA with Bonferroni's test, n=5-8 per group). The relearning control (C194-C195) is critical for ruling out non-specific effects. The dose-response is well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C7",
+      "C196",
+      "C197",
+      "C198",
+      "C225",
+      "C226"
+    ],
+    "result": "Bilateral 2-AAPA (100 \u03bcM) injections in dHC did not prevent memory formation at PN24 or PN80. The learning-induced increase in GR activity is necessary for IA memory formation selectively in infant rats but not juveniles or adults, confirming its age-specific role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C196-C198, C225-C226 are supported by behavioral data (Figure 8c-d) with appropriate statistics (two-way RM ANOVA with Bonferroni's test, n=6-7 per group). The age-specificity of the GR requirement is clearly demonstrated and represents a major finding. The conclusion is well-supported by converging evidence from metabolomics, biochemistry, and behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "Infant learning significantly increases GSH and decreases GSSG at 15 min post-training. GSH returns to baseline by 1 hr while GSSG remains decreased at 1 and 24 hr. These changes were prevented by 2-AAPA, demonstrating they are mediated by increased GR activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C204 are supported by fluorometric assays (Figure 8e-g) with appropriate statistics (two-way ANOVA with Bonferroni's test, n=6 per group). The time course is well-characterized. The prevention by 2-AAPA (C203-C204) provides strong evidence for GR-mediated mechanism. The rapid return of GSH to baseline while GSSG remains low is interesting but unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "Transient GSH deficit during neurodevelopment affects brain maturation and causes cognitive impairments. Memory impairments from reduced GSH can be partly compensated by ascorbic acid. However, GR inhibition during infantile learning caused memory impairment despite ascorbic acid presence, which was also downregulated after PN17 training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C205-C209 are supported by citations (Cabungcal et al., 2007; Kulak et al., 2013; Dalton et al., 2000) and metabolomic data (Figure 5a,d). The interpretation that ascorbic acid was insufficient (C208) is reasonable given the memory impairment and ascorbic acid downregulation (C209). This provides important context for the GR findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "The hippocampal memory system is more vulnerable to redox dysregulation during infancy than later ages, potentially reflecting lower antioxidant defense capacity in the context of high baseline metabolic activity, or immaturity of astrocytic-neuronal GSH precursor shuttling. Inhibiting GR in juveniles/adults has no effect on memory, possibly due to higher GCL/GSy activities or differential antioxidant mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C210-C215 are supported by the combined behavioral, biochemical, and metabolomic data. The interpretations (C212-C213) are speculative but reasonable given the evidence. The acknowledgment of alternative explanations (C215) and supporting citations (Fernandez-Fernandez et al., 2012; Baxter et al., 2015; B\u00e9langer et al., 2011; Bandeira et al., 2009) demonstrate appropriate scientific reasoning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C216",
+      "C217"
+    ],
+    "result": "Moderate decrease of neuronal GSH in adult mouse hippocampal CA1 by GCLC knockdown leads to dendrite disruption and cognitive impairment, revealing that adult hippocampal neurons require a large glutathione pool for cognitive functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C216-C217 are supported by citation to Fernandez-Fernandez et al., 2018. These claims provide important context from prior literature supporting the importance of GSH in adult hippocampal function, contrasting with the age-specific GR requirement found in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C8",
+      "C227",
+      "C235"
+    ],
+    "result": "The hippocampal glutathione-mediated antioxidant pathway, specifically GR, plays a differential role in long-term memory formation in the infant hippocampus. Distinct metabolic pathways including glutathione metabolism are differentially regulated and engaged by learning at different ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C227, C235 represent the main conclusions supported by converging evidence from metabolomics (downregulation of glutathione pathway metabolites at PN17), biochemistry (age-specific GR activity increase), and behavior (age-specific memory impairment with GR inhibition). The integration of multiple approaches provides strong support for the differential role conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233"
+    ],
+    "result": "PV cells, oligodendrocytes, and their progenitors are particularly sensitive to GSH regulation. Developmental GSH deficit would disrupt PV cells and myelination, interfering with brain maturation and potentially causing learning disabilities and neurodevelopmental psychiatric disorders. The GSH-deficit mediating memory impairment in infancy could involve disruption of critical periods in the hippocampal memory system, consistent with the idea that neurodevelopmental disorders result from defective critical periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C228-C233 are speculative interpretations supported by citations (Do et al., 2009; Kulak et al., 2013; Steullet et al., 2016; Hardingham and Do, 2016; Takesian and Hensch, 2013; Do et al., 2015; Alberini and Travaglia, 2017). While the speculation is reasonable and well-grounded in literature, no direct evidence for PV cell disruption, myelination defects, or critical period alterations was provided in this study. These remain hypotheses for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background claims establishing that the hippocampus undergoes protracted postnatal development with molecular, cellular, and structural changes guided by early-life experiences, leading to adult-like memory abilities. Infantile memories are rapidly forgotten (infantile amnesia) but stored in latent form and can be reinstated. Infantile learning engages unique molecular mechanisms and consumes large amounts of energy. The developing brain consumes higher energy than adults, and energy substrate utilization changes across development and with learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C29 are background claims supported by extensive citations to prior literature. These provide essential context for the current study but are not novel findings. They establish the rationale for investigating developmental metabolic changes and age-specific memory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C54",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Background claims about sphingolipids, myelin, and myelination providing context for interpreting the sphinganine findings. Sphingolipids regulate cell survival, proliferation, differentiation, migration, apoptosis, angiogenesis, and myelination. Myelin increases axonal conduction, provides metabolic support, and stabilizes projections. Myelin formation requires high lipid synthesis. In rat hippocampus, myelinated fibers appear during the second postnatal week and reach adult levels by PN25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C66-C74 are background claims supported by citations (Bandeira et al., 2009; Lavenex and Banta Lavenex, 2013; Albani et al., 2014; Soriano et al., 2005; Schmitt et al., 2015; Nave, 2010; Meier et al., 2004; van Tilborg et al., 2018). These provide important context for interpreting the developmental changes in sphinganine and other lipids.",
+    "result_type": "MINOR"
+  }
+]

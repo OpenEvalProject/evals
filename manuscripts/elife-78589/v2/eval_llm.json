@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C88",
+      "C89"
+    ],
+    "result": "A yeast display platform was developed to assess binding of tens of thousands of user-defined peptides to MHC-II molecules. The platform uses libraries of 15-amino acid peptides with step size of 1, achieving 99% library coverage with 11,040 unique peptides for SARS-CoV-2/SARS-CoV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C23, C88-C89 collectively demonstrate successful library construction with high coverage (99%) and appropriate design. The experimental data from sequencing and flow cytometry (Figure 1) validates the platform's functionality and throughput capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Two selection strategies (doped and undoped) were implemented to identify MHC-binding peptides from the SARS-CoV-2 library on HLA-DR401. The undoped library converged rapidly (29.3% to 74.1% over 3 rounds), while the doped library (500-fold excess null) required 4 rounds. Of 11,040 peptides, 2,467 enriched in both strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 and C90-C94 describe well-controlled selection experiments with appropriate controls (null library) and convergence monitoring via flow cytometry. The dual-strategy approach provides internal validation, with 2,467 peptides enriching in both methods, demonstrating reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C70",
+      "C75",
+      "C76"
+    ],
+    "result": "An overlapping peptide analysis strategy was developed where each 9-mer core appears in seven overlapping 15-mers. High-confidence binders were defined as 9-mers enriched in \u22655 of 7 overlapping peptides. This identified 1,791 high-confidence binders from 2,467 enriched peptides for HLA-DR401.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C70, C75-C76 describe a rigorous analytical approach that accounts for potential artifacts (linker incorporation, register shifts). The 5/7 threshold is justified and the overlapping design provides built-in redundancy for validation. The reduction from 2,467 to 1,791 peptides demonstrates appropriate stringency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Enriched peptides showed binding motifs consistent with known HLA-DR401, -DR402, and -DR404 preferences. The motifs reflect structural polymorphisms between alleles, including Gly86Val affecting P1 preference and multiple polymorphisms in HLA-DR402 affecting P4, P5, and P7 positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 demonstrate agreement between experimental results and established structural knowledge. The sequence logos (Figure 2c, Figure 2-supplement 3) match previously reported motifs, and the observed preferences correlate logically with known polymorphisms between alleles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C77"
+    ],
+    "result": "Comparison of proteome-derived and randomized libraries revealed that amino acid composition biases affect apparent binding motifs. Preferred P4 residues for HLA-DR402 (Trp, His, Met) are underrepresented in SARS-CoV-2 proteome (1.1-2.2%) compared to randomized libraries (2.9-3.8%), potentially masking binding preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C77 identify an important methodological consideration supported by quantitative amino acid frequency analysis. This explains the weaker P4 consensus in proteome-derived vs. randomized libraries and highlights a systematic bias that affects interpretation of binding motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C96",
+      "C97"
+    ],
+    "result": "Register inference analysis revealed that 1,610 of 2,467 enriched peptides (65%) bound using native 9-mer cores without linker residues, representing 563 unique cores. Peptides were approximately equally distributed across registers except the N-terminal register, which had one-third fewer peptides likely due to a single disfavored flanking Ala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C96-C97 demonstrate successful computational register inference with results consistent with theoretical expectations. The N-terminal register depletion is logically explained by flanking residue effects, showing the analysis accounts for construct-specific biases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C58",
+      "C59",
+      "C7"
+    ],
+    "result": "Fluorescence polarization validation of 23 peptides revealed that yeast display identified true binders missed by NetMHCIIpan4.0. All 8 'Yeast-Enriched Binders' showed measurable binding (IC50: 14 nM to 18 \u03bcM), while all 'Agreed Binders' bound (IC50 < 2.2 \u03bcM) and 'Agreed Non-Binders' showed no binding (IC50 > 50 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C58-C59, C7 provide strong orthogonal validation using an independent biophysical assay. The perfect agreement for consensus predictions (agreed binders/non-binders) validates both methods, while the 8/8 confirmation of yeast-enriched binders demonstrates the platform identifies genuine false negatives in computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C60",
+      "C61",
+      "C71",
+      "C72"
+    ],
+    "result": "NetMHCIIpan4.0 predictions showed high sensitivity to flanking sequences and peptide register. Removing flanking sequences recovered 4 of 8 false-negative predictions. Five offset peptides (sharing cores with centered peptides) all showed binding (IC50 < 13 \u03bcM) but with lower affinity than centered counterparts, though NetMHCIIpan4.0 correctly ranked their relative affinities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C60-C61, C71-C72 identify a specific algorithmic limitation with experimental validation. The flanking sequence sensitivity is demonstrated quantitatively (Table 3), and while NetMHCIIpan4.0 correctly ranks affinities, it misses binders entirely, representing a systematic bias in the prediction algorithm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Six of eight yeast-enriched binders contained cysteine residues, which are systematically absent from mass spectrometry datasets but present in yeast display data. The highest affinity binder (14 nM) contained cysteine and was missed by NetMHCIIpan4.0. Control experiments with cysteine-containing non-binders showed no binding, ruling out non-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 identify a systematic bias in training data (mass spectrometry) that propagates to prediction algorithms. The negative controls (C53) appropriately rule out non-specific binding, and the highest affinity binder containing cysteine (C54) demonstrates the practical importance of this bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C73"
+    ],
+    "result": "Three peptides predicted by NetMHCIIpan4.0 to bind HLA-DR401 were tested; one bound (IC50 475 nM) while two showed minimal binding (IC50 > 35 \u03bcM), representing computational false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C73 demonstrate that computational predictions also generate false positives (2/3 tested), not just false negatives. This bidirectional error pattern supports the complementary use of experimental and computational approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Comparative analysis of SARS-CoV-2 and SARS-CoV spike proteins revealed how specific mutations affect MHC binding. The SARS-CoV-2 core IYQAGSTPC binds all three alleles, but SARS-CoV mutations (including P1 and P4 to Proline) abolish binding. Conversely, the SARS-CoV core IKNQCVNFN binds all alleles, but SARS-CoV-2 mutations (P1 Val, P4 Lys) prevent HLA-DR401 binding while enabling HLA-DR402 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 demonstrate how the platform reveals structure-function relationships between viral mutations and allele-specific binding. The examples are well-supported by data (Figure 3c-e) and logically consistent with known binding preferences for each allele.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The platform was applied to dengue virus serotypes 1-4, generating libraries of 12,672 peptides with 96-98% coverage on HLA-DR401 and HLA-DR402. This application addresses antibody-dependent enhancement in dengue, where T cell-directed therapeutics may be valuable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C55-C56, C63-C65 demonstrate platform versatility by successful application to a second pathogen system. The high library coverage (96-98%) and biological rationale (antibody-dependent enhancement) support the platform's utility for diverse applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Yeast display and NetMHCIIpan4.0 identified non-overlapping sets of missed peptides, with perfect agreement for consensus predictions (all agreed binders and non-binders matched fluorescence polarization results), suggesting complementary utility and high confidence for consensus predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 synthesize the validation results to demonstrate that experimental and computational approaches have complementary strengths. The perfect agreement for consensus predictions provides a practical framework for high-confidence peptide identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The yeast display approach benefits from advances in next-generation sequencing and pooled oligonucleotide synthesis, overcoming limitations of previous methods (synthetic peptides, randomized DNA, or viral genome digestion) that are impractical for comprehensive proteome-scale libraries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 appropriately position the work relative to prior art, with citations supporting the limitations of previous approaches. The technological advances enabling this work are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The approach enables comparative analysis of MHC binding between related viruses, identifying regions where mutations disrupt or preserve binding, and can be rapidly adapted for evolving pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are demonstrated through the SARS-CoV/SARS-CoV-2 and dengue serotype comparisons (Figures 3, 5). The rapid adaptability is a logical inference from the oligonucleotide synthesis-based library construction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Coupling yeast display with computational predictions can identify false positive predictions to correctly prioritize peptides of interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by the demonstration of computational false positives (C62, C73) and the complementary error patterns of the two approaches. This represents a practical application of the platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The platform has potential applications for high-throughput immunogenicity testing in clinical samples, T cell ligand identification for orphan TCRs, and future expansion to bacterial or human proteomes for autoimmune disease investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 describe speculative future applications supported by citations to related work but not demonstrated in this study. While plausible, these applications require additional validation and represent future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C32",
+      "C33",
+      "C57",
+      "C68",
+      "C69",
+      "C87"
+    ],
+    "result": "Background claims establishing the importance of MHC-peptide binding, limitations of existing methods, and clinical relevance of T cell responses in cancer, infectious disease, and autoimmunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C20, C32-C33, C57, C68-C69, C87 represent established knowledge supported by appropriate citations. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The HLA-DR401 peptide motif shows preference for glycine at P8, potentially an artifact of non-native registers with linker residues at P8 and P9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 identifies a potential artifact in the sequence logo analysis with appropriate caveats. This demonstrates awareness of construct-specific biases and is consistent with the linker sequence composition.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1742 @@
+{
+  "submission": {
+    "id": "daae7613-d27a-4e9b-9122-dd8f1f2b5e3f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:53:25.920874Z",
+    "updated_at": "2025-12-03T05:53:25.920874Z"
+  },
+  "content": [
+    {
+      "id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "submission_id": "daae7613-d27a-4e9b-9122-dd8f1f2b5e3f",
+      "content_type": "manuscript",
+      "content_text": "# Non-canonical role for Lpar1-EGFP subplate neurons in early postnatal mouse somatosensory cortex\n\n## Authors\n\n- Filippo Ghezzi<sup>1</sup> ([ORCID: 0000-0003-4538-2578](https://orcid.org/0000-0003-4538-2578))\n- Andre Marques-Smith<sup>1</sup> ([ORCID: 0000-0001-6879-2858](https://orcid.org/0000-0001-6879-2858))\n- Paul G Anastasiades<sup>1</sup>\n- Daniel Lyngholm<sup>1</sup> ([ORCID: 0000-0002-3708-0249](https://orcid.org/0000-0002-3708-0249))\n- Cristiana Vagnoni<sup>1</sup>\n- Alexandra Rowett<sup>1</sup>\n- Gokul Parameswaran<sup>1</sup>\n- Anna Hoerder-Suabedissen<sup>1</sup> ([ORCID: 0000-0003-1953-7871](https://orcid.org/0000-0003-1953-7871))\n- Yasushi Nakagawa<sup>2</sup> ([ORCID: 0000-0003-4876-5718](https://orcid.org/0000-0003-4876-5718))\n- Zoltan Molnar<sup>1</sup> ([ORCID: 0000-0002-6852-6004](https://orcid.org/0000-0002-6852-6004))\n- Simon JB Butt<sup>1</sup> ([ORCID: 0000-0002-2399-0102](https://orcid.org/0000-0002-2399-0102)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Anatomy and Genetics, Sherrington Building, University of Oxford Oxford United Kingdom\n2. Department of Neuroscience, University of Minnesota Minneapolis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSubplate neurons (SPNs) are thought to play a role in nascent sensory processing in neocortex. To better understand how heterogeneity within this population relates to emergent function, we investigated the synaptic connectivity of Lpar1-EGFP SPNs through the first postnatal week in whisker somatosensory cortex (S1BF). These SPNs comprise of two morphological subtypes: fusiform SPNs with local axons and pyramidal SPNs with axons that extend through the marginal zone. The former receive translaminar synaptic input up until the emergence of the whisker barrels, a timepoint coincident with significant cell death. In contrast, pyramidal SPNs receive local input from the subplate at early ages but then \u2013 during the later time window \u2013 acquire input from overlying cortex. Combined electrical and optogenetic activation of thalamic afferents identified that Lpar1-EGFP SPNs receive sparse thalamic innervation. These data reveal components of the postnatal network that interpret sparse thalamic input to direct the emergent columnar structure of S1BF.\n\n## Introduction\n\nThe emergence of function in the developing mammalian cerebral cortex is dependent on a diverse range of genetic and physiological processes that sculpt emergent network architecture. Fundamental research in animal models has revealed that transient neuronal circuits, observed in a restricted time window during early postnatal development, are a common feature of many cortical areas (Kanold and Luhmann, 2010; Marques-Smith et al., 2016). One of the first such transient circuits to be identified was that between subplate neurons (SPNs) and thalamo-recipient spiny stellate cells in layer (L)4, a circuit demonstrated to play a role in the maturation of thalamocortical synapses (Kanold and Luhmann, 2010; Kanold et al., 2003; Tolner et al., 2012). The subplate is a transient layer in the developing neocortex located between the emergent cortical plate and the underlying white matter (Kostovic and Rakic, 1990; Hoerder-Suabedissen et al., 2015). It contains a diverse population of neuronal subtypes that differ in term of molecular markers (Hoerder-Suabedissen and Moln\u00e1r, 2013), morphology (Marx and Feldmeyer, 2013), neurotransmitter identity (Boon et al., 2019), and connectivity (Viswanathan et al., 2012). Electrophysiological studies performed in primary sensory areas suggest that SPNs are relatively mature when compared to cortical neurons in the more superficial cortical plate early in development (Marx and Feldmeyer, 2013; Luhmann et al., 2000). As such they are regarded as key mediators of early spontaneous and sensory-evoked activity (Tolner et al., 2012) and direct circuit maturation (Kanold and Luhmann, 2010). While a large proportion of SPNs undergo programmed cell death during the first postnatal week in the mouse cortex (Hoerder-Suabedissen and Moln\u00e1r, 2013), the surviving SPNs form a thin, compact structure below L6, termed L6b in mature neocortex (Marx et al., 2017; Zolnik et al., 2020).\n\nThe canonical role of SPNs is to support the establishment of thalamocortical synapses onto L4 neurons (Kanold and Luhmann, 2010; Kanold et al., 2003). In support of this model, previous studies have reported that SPNs receive thalamocortical input prior to innervation of L4 neurons (Kanold et al., 2003; Friauf and Shatz, 1991; Zhao et al., 2009; Moln\u00e1r et al., 2003; Higashi et al., 2002). In turn, SPNs are proposed to form feed-forward connections onto thalamo-recipient L4 neurons in a transient circuit that is eliminated upon establishment of the mature thalamocortical connectivity in L4 (Viswanathan et al., 2012; Hanganu et al., 2002). It was proposed that, by relaying thalamic inputs to L4 through SPNs, this connectivity pattern supports developmental plasticity mechanisms (Kanold and Shatz, 2006) prior to the appearance of the definitive cortical architecture in primary sensory areas, e.g. ocular dominance in primary visual cortex (V1) (Kanold et al., 2003), barrel field formation in primary somatosensory cortex (S1BF) (Tolner et al., 2012), and tonotopic organisation in the primary auditory cortex (A1) (Wess et al., 2017). In parallel, SPNs also promote the maturation of cortical GABAergic neurons (Kanold and Shatz, 2006), pioneer cortico-thalamic projections (McConnell et al., 1989), secrete proteins that control extracellular matrix composition, attract and guide thalamocortical fibres, regulate plasticity and myelination (Kondo et al., 2015), and control the radial migration of cortical neurons at embryonic ages (Ohtaka-Maruyama et al., 2018).\n\nHowever, a number of unresolved questions remain regarding SPN function in neonatal cortex: first, it remains unclear how physiological, morphological, and molecular heterogeneity of SPNs contributes to these various roles. While previous studies performed in A1 have identified two distinct physiological populations of SPN\u00a0\u2013 those that receive feedback glutamatergic input from L4 and a second cohort that only receives local input (Viswanathan et al., 2012)\u00a0\u2013 this has not been explicitly linked to SPN identity per se. To this end, we have focused on a specific, genetically\u00a0defined SPN population \u2013 labeled by the Lpar1-EGFP transgene (Hoerder-Suabedissen and Moln\u00e1r, 2013) to understand to what extent this population represents a homogeneous subtype of SPN and better resolve the role of these cells in neonatal somatosensory cortex. Moreover, recent evidence suggests that while thalamic input is a determinant of columnar organization in late embryonic somatosensory cortex (Ant\u00f3n-Bola\u00f1os et al., 2019), such activity pre-dates the transition to the mature cytoarchitecture and columnar signalling unit (Dupont et al., 2006). We sought to understand the role that Lpar1-EGFP SPN circuits have in interpreting such information through the first week of postnatal life up until the end of the layer 4 critical period for plasticity (CPP) at around postnatal day (P)8\u00a0in the barrel field of mouse primary somatosensory cortex (S1BF). We demonstrated that Lpar1-EGFP SPNs represent two distinct subtypes: (1) transient (<P5) fusiform SPNs that receive columnar input from the more superficial cortical plate but whose axons and therefore output are restricted to the SP syncytium, and\u00a0(2) pyramidal SPNs that are found throughout the time period recorded (\u2264P8), which only receive local input from the SP network prior to P5 but whose axons traverse the full extent of the cortical plate to ramify extensively through the marginal zone. Finally, we identify that thalamic input onto Lpar1-EGFP SPNs in S1BF is sparse throughout early postnatal life. We propose that fusiform Lpar1-EGFP SPNs are ideally placed to interpret and amplify sparse thalamic input alongside emergent signalling from the cortical plate, thereby providing a template \u2013 through their innervation of other SPNs including the Lpar1-EGFP pyramidal subtype \u2013 for the columnar circuit assembly up until the emergence of whisker barrels in L4 at ~P4\u2013P5. Our data suggest that Lpar1-EGFP SPNs do not adhere to the canonical role reported for SPNs in primary sensory cortex, and support the idea that SPNs have a variety of ways of assisting cortical circuit construction.\n\n## Results\n\n### Intrinsic electrophysiological and morphological diversity of Lpar1-EGFP SPNs\n\nLpar1-EGFP SPNs form a layer of two to\u00a0three cells deep adjacent to the white matter tract in neonatal S1BF (Figure 1a). As a first pass to understanding the contribution of these neurons to neonatal circuits of S1BF, we recorded the intrinsic electrophysiological profiles of 103 SPNs from postnatal day (P)\u00a01\u20138. We established that SPNs had an intrinsic electrophysiological profile consistent with regular firing pyramidal cells (Figure 1b,c) by injecting both depolarising and hyperpolarising current steps (500 ms) of increasing amplitude into cells recorded at resting membrane potential in current clamp configuration. Analysis of passive (Figure 1d\u2013f) and active (Figure 1g\u2013i) properties revealed a progressive maturation of intrinsic properties across the ages tested broadly in line with previous reports (Hanganu et al., 2002). Specifically, we observed a statistically significant decrease in input resistance (RIN) (Figure 1e) and membrane time constant (Figure 1f), as well as increase in rheobase (Figure 1g), spike amplitude (Figure 1h), and maximum firing frequency (Figure 1i) over development. With a number of properties \u2013 membrane time constant (tau; Figure 1f), rheobase (pA; Figure 1g) and maximum firing frequency (Hz; Figure 1i), there was increased variability (\u00b1\u00a0SD) with age (typically P5 onward) that suggests that not all SPNs mature at the same rate as development progressed.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60810/elife-60810-fig1-v3.jpg)\n\n**Figure 1.:** (a) Streptavidin (568 nm) labelling of record Lpar1-EGFP SPNs in mouse S1BF at P2. (b) Superimposed electrophysiology traces recorded from one of the cells shown in (a) in response to hyperpolarising and depolarising threshold current injection. (c) Maximum firing frequency for the same cell; scale bar is the same for (b) and (c). (d\u2013i) Summary data for 103 cells grouped according to age: P1\u20132 (n\u00a0=\u00a022); P3\u20134 (n\u00a0=\u00a027); P5\u20136 (n\u00a0=\u00a024); P7\u20138 (n\u00a0=\u00a030). The range of passive membrane properties recorded included (d) resting membrane potential (RMP)\u00a0(mV); (e) Input resistance (RIN)\u00a0(G\u03a9); (f) membrane time constant (tau)\u00a0(ms). Active properties included (g) current injection required for threshold spike (rheobase)\u00a0(mV); (h) spike amplitude (mV); (i) maximum firing frequency (Hz). We observed a statistically significant difference between age groups for RIN (ANOVA, F\u00a0=\u00a021.17, p<0.001), decay time constant (Kruskal\u2013Wallis test, KW\u00a0=\u00a037.75, p<0.001), rheobase (Kruskal\u2013Wallis test, KW\u00a0=\u00a015.74, p<0.01), spike amplitude (ANOVA, F\u00a0=\u00a022.05, p<0.001), and maximum firing frequency (Kruskal\u2013Wallis test, KW\u00a0=\u00a043.15,\u00a0p<0.001), whereas no statistical significant difference was observed for resting membrane potential (ANOVA, F\u00a0=\u00a01.74, p>0.05). Significant multiple comparisons of note are indicted in the relevant panels: *0.01<p<0.05; **p<0.01.\n\nInclusion of Biocytin in the intracellular solution allowed us to reveal the morphologies of recorded SPNs (Figure 2a); both those assessed for intrinsic electrophysiological profile and subsequent optical stimulation experiments. In total, we recovered 58 morphologies of 103 recorded SPNs that showed complete or near complete preservation of both axonal and dendritic arbor. It was evident from our reconstruction of 19 of these cells that Lpar1-EGFP SPNs fell into two categories based on dendritic arbor and, specifically, the presence or absence of an apical dendrite (Figure 2a,b): (1) pyramidal-like SPNs with a prominent apical dendrite projecting into L6a\u00a0and (2) fusiform SPNs that lacked an apical dendrite but instead exhibited bitufted dendrites that extended horizontally in the subplate and white matter tract. With the former, it was evident that the apical dendrite did not always extend perpendicular to the subplate as further revealed by analysis of the directionality of dendritic arbor (Figure 2c). Overlaying the axonal arbor of reconstructed morphologies revealed a further difference between these two populations: the axon of pyramidal SPNs (Figure 2d) ascended through the overlying cortex, with majority of cells projecting to the marginal zone/L1 (n = 9/12 cells, with the remaining three axons severed in L2). All of these cells had axonal collaterals \u2013 sometimes extensive \u2013 projecting within the subplate (SP/L6b) or adjacent L6a (Figure 2d). In contrast, the axon of fusiform cells was largely restricted to the SP with a few collaterals extending into L6a (Figure 2e) and no axon projecting to more superficial layers (n = 7/7 cells). Both cell types had extensive, but relatively simple, axonal arbors that often extended beyond the field of the low power photomicrograph either through L1 (pyramidal) or SP (fusiform). It was evident that these long-range projections extended beyond S1BF to adjacent cortical areas such as secondary somatosensory cortex (S2). Morphologies were recovered across all recorded ages; however, the proportion of fusiform cells decreased from P5 onward (Figure 2f). Previous analysis of the neurotransmitter phenotype of Lpar1-EGFP SPNs was conducted at P7 (Hoerder-Suabedissen and Moln\u00e1r, 2013), a time point when fusiform SPNs are no longer present in our sample (Figure 2f). To explore the possibility that these cells represent a transient GABAergic SP population (Qu et al., 2016), we performed immunohistochemistry for GABA at P3 (Figure 2g). This confirmed that EGFP+ cells in the SP were all GABA-negative (0/79 Lpar1-EGFP SPNs co-expressed GABA), while the vast majority (84%; 16/19) of EGFP+ profiles in L5 were GABA+, consistent with our previous characterisation of the SP (Hoerder-Suabedissen and Moln\u00e1r, 2013) and L5b interneuron populations (Marques-Smith et al., 2016). These data identify Lpar1-EGFP SPNs as glutamatergic projection neurons that fall into two subtypes based on their morphology: (1)\u00a0fusiform cells that innervate the SP and (2)\u00a0pyramidal cells whose axons extend through the entire depth of the developing cortex to ramify extensively through the margin zone/L1 (Figure 2h). We found no evidence of selectively targeted axonal innervation of L4 by either subtype at the ages recorded. However, we cannot discount innervation of L4 glutamatergic spiny stellate neurons via their apical dendrites extending to L1, which transiently exist prior to the end of the first postnatal week (Callaway and Borrell, 2011). Finally, these data suggest that the fusiform population of Lpar1-EGFP SPN is a transient population of EGFP+ SPN not present in mature cortex.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60810/elife-60810-fig2-v3.jpg)\n\n**Figure 2.:** (a) Streptavidin labeled morphologies of 2 EGFP+ SPNs recorded at P3; arrowhead, pyramidal subtypes with apical dendrite projecting at ~45\u00b0 into L6a; arrow, fusiform morphology with horizontal, bitufted dendrites largely restricted to the SP (scale bar = 25 \u03bcm). (b) Reconstructed (ImageJ) dendritic arbors of the cells shown in\u00a0(a) were used to calculate directionality with 90\u00b0 indicative of vertically orientated dendrites and ~0\u00b0 primarily horizontal dendrites (scale bar = 25 \u03bcm). (c) A difference was observed in the dendritic orientation of fusiform and pyramidal SPNs (Mann\u2013Whitney U\u00a0=\u00a05, fusiform n\u00a0=\u00a07, median = 4.38; pyramidal n\u00a0=\u00a012, median = 54.89, **p<0.001 two-tailed). Overlay of axonal arbors of (d) pyramidal (recovered between P1\u00a0and\u00a0P8) and (e) fusiform (recovered P1and\u00a0P5) cells aligned on soma location (horizontal position indicated by the blue circle); approximate barrel location indicated by grey-shaded areas for P5+ cells; scale bar\u00a0= 180 \u03bcm. (f) Proportion of fusiform (grey) and pyramidal (black) Lpar1-EGFP SPNs over the first postnatal week. (g) Immunohistochemistry for EGFP (left) and GABA (middle); EGFP+/GABA+ cells indicated by the white arrows; right panel, overlay of EGFP (green) and GABA (red). (h) Schematic of the two morphological subtypes of Lpar1-EGFP SPN: pyramidal (Pyr) and fusiform SPNs encountered prior to P5; a putative synaptic connection between the two subtypes is indicated by the question mark. MZ, marginal zone; CP, cortical plate; SP, suplate.\n\n### Laser scanning photostimulation reveals dynamic synaptic integration of Lpar1-EGFP SPNs into local glutamatergic network\n\nWe next used UV (355 nm) laser photolysis of caged glutamate to map afferent synaptic input onto SPNs in acute in vitro cortical slices (Figure 3a). We mapped input using laser scanning photostimulation (LSPS) across the extent of a pseudo-random (50 \u03bcm spaced) grid covering the depth of neocortex immediately above any given recorded cell. From the earliest time points recorded (P1\u20132) SPNs received distinct columnar glutamatergic input, either from SP and adjacent cortex (L6a) alone, or from both SP/L6a and more superficial cortex; patterns of innervation that we termed \u2018local\u2019 and \u2018translaminar\u2019 respectively (Figure 3b). The average laminar profile of local (n\u00a0=\u00a015) and translaminar (n\u00a0=\u00a08) SPNs at P1\u20132 revealed that the latter received input from the cortical plate (CP) absent in local SPNs (Figure 3c). This translaminar input became more prominent over the next two postnatal days (P3\u20134; Figure 3d) with the source primarily focused in the lower CP, presumptive L4. In contrast, at P5\u20136, we recorded relatively few translaminar neurons with the majority (84%) dominated by local SP/L6a input. The three\u00a0cells defined as translaminar received afferent input from mostly infragranular pyramidal cells (Figure 3e). This trend continued in the cells recorded at P7\u20138 although the latter were diverse in input source such that the average laminar profile and map of translaminar cells resembled a diffuse columnar band of glutamatergic input (Figure 3f) across L4 and L5b.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60810/elife-60810-fig3-v3.jpg)\n\n**Figure 3.:** (a) LSPS of caged glutamate resulted in three responses observed in whole cell patch-clamp recordings of SPNs: top traces, large amplitude direct responses with onset locked to laser pulse onset (dashed vertical blue line); middle traces, synaptic response of consistent excitatory postsynaptic currents\u00a0(EPSCs) within the monosynaptic event window (red box); bottom traces, no consistent response with occasional spontaneous EPSCs. Scale bar for direct traces: 50 pA; for synaptic and spontaneous: 25 pA. (b) Local (left) and translaminar (right) glutamatergic input maps for SPNs recorded at P1-2. Pixel size: 50 \u00b5m. (c) Average input profile for local (blue) and translaminar (orange) SPNs; translaminar SPNs showed increased input from the cortical plate (CP) and reduced local (L6a/SP) innervation. (d) Left panel, average input map for translaminar SPNs recorded at\u00a0P3\u20134 (n=6); right panel, average input profile for local (blue) and translaminar (orange) SPNs. (e) Corresponding input profile for P5\u20136. (f) Average input map and profile for SPNs recorded between P7\u00a0and\u00a0P8. Horizontal profile for local and translaminar SPNs aligned on cell soma at (g) P1-P4 and (h) P5\u20138. Horizontal axis indicates the lateral distance from the soma. (i) Schematic showing glutamatergic circuit onto Lpar1-EGFP SPNs.\n\nWhile there were clear differences in laminar input profile, the average horizontal profile for both local and translaminar SPNs did not vary through development (Figure 3g,h). Recovered morphologies of SPNs mapped from P1\u00a0to\u00a0P4 (n\u00a0=\u00a015) revealed that all the SPNs, which received translaminar input, were of the fusiform subtype (n\u00a0=\u00a06). Two further fusiform and seven pyramidal SPNs received local input. Of the 12 SPN morphologies recovered from P5\u00a0to\u00a0P8, 9 cells received local glutamatergic input. These were all of the pyramidal subtype with the exception of the only fusiform morphology recovered from ourLSPS experiments during this later window. The remaining three pyramidal SPNs received translaminar input from L5. Taken together these data suggest that transient fusiform SPNs are the primary recipients of early translaminar input from the cortical plate (Figure 3i), up until P4 when they become less apparent in our sample. In parallel, pyramidal SPNs are dominated by local glutamatergic input from SP/L6a at early ages (Figure 3i), but acquire varied translaminar input from more superficial layers from P5 onward.\n\n### Increased cell death in subplate and adjacent cortical layers at the P4\u20135 transition\n\nSPNs are regarded as a transient neuronal population, but direct evidence in support of SPN programmed cell death is limited in murine models. One possible explanation is that rapid clearance of apoptotic neurons in the developing rodent brain might preclude histological identification of dying cells. Our morphological and LSPS data point to a possible 24 hr period from P4 to P5 during a change in the make\u00a0up of Lpar1-EGFP SPNs. To test whether\u00a0this is due to cell death, we performed immunohistochemistry at P3\u20134 and P5\u20136 to assess (1) the density of EGFP+ cells, (2) expression of the apoptotic marker cleaved Caspase-3 (Casp-3+), (3) pyknotic nuclei as evidenced by DAPI staining, and\u00a0(4) TUNEL staining to detect DNA breaks, in Lpar1-EGFP SPNs across these two time\u00a0windows (Figure 4). Caspase-3 staining was sparse at both time points but associated with pyknotic nuclei (Figure 4a,b). At P3\u20134, Casp-3+ cells were largely restricted to the white matter (Figure 4a), whereas at P5\u20136, they were more widely distributed including in the SP. That said, we found only a couple of double-positive EGFP+/Casp-3+ SPNs (n = 2/420 cells; five animals)\u00a0(Figure 4b). EGFP+ cells with pyknotic nuclei were however more evident, but the percentage\u00a0of EGFP+ cells with pyknotic nuclei did not differ between the two time points (Figure 4c), despite there being a significant decrease in the density of EGFP+ SPNs (Figure 4d). To further examine the latter observation, we performed a TUNEL stain as an alternative means of visualizing apoptotic cells. This revealed a similar pattern of programmed cell death to our Casp-3 experiments, in that TUNEL+ cells were primarily located in the white matter at P3\u20134 (Figure 4e). However, at P5\u20136, we observed a significant increase in TUNEL+ profiles (Figure 4f) that included Lpar1-EGFP SPNs (Figure 4f,g). Moreover, it was evident that this increase was not restricted to the subplate (Figure 4f), so we further quantified the density of TUNEL+ profiles across the white matter, subplate, and adjacent infragranular layers at both time points, analysis that\u00a0identified a surge in cell death at this later time point across the cortical layers sampled (Figure 4h). Overall, this suggests that while a small proportion of Lpar1-EGFP SPNs undergo cell death at the transition between P4 and P5, this is not specific to subplate and likely represents a wider reconfiguration of the circuit at the transition to columnar signalling in S1BF at this time (Dupont et al., 2006).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60810/elife-60810-fig4-v3.jpg)\n\n**Figure 4.:** (a) Immunohistochemistry for cleaved Caspase-3 (Casp-3) and EGFP in subplate (SP) at P4; scale bar: 25 \u03bcm. Left, Casp-3+ cells in the white matter. The area bounded by the white dashed line is shown at higher magnification in the centre and right panels with Casp-3+ cells with pyknotic nuclei identified with white arrows in the centre panel; scale bar: 9 \u03bcm. (b) Similar data obtained at P6 but with white arrowhead pointing to EGFP+, Casp-3+ Lpar1-EGFP SPN with pyknotic nucleus. (c) Summary data for percentage Lpar1-EGFP SPNs exhibiting pyknotic nuclei at postnatal day (P)3\u20134 (n\u00a0=\u00a05 animals) and P5\u20136 (n\u00a0=\u00a05). (d) Plot showing the density of EGFP+ cells in SP at P3\u20134 (n\u00a0=\u00a05) and P5\u20136 (n\u00a0=\u00a05); asterisks, p=0.0327 (two-tailed t-test; t\u00a0=\u00a02.579, df\u00a0=\u00a08). (e,f) TUNEL staining at (e) P4 and (f) P6 with TUNEL+ cells indicated with white arrows. The area identified by the white dashed box is shown expanded in (f) in the right panels; the white arrowhead identifying a TUNEL+ Lpar1-EGFP SPN; scale bar:\u00a08\u00a0\u00b5m. (g) Plot of percentage TUNEL+ Lpar1-EGFP SPNs at P3-4 and P5-6; asterisks, p=0.0274 (two-tailed t-test; t\u00a0=\u00a02.693, df\u00a0=\u00a08). (h) Density of TUNEL+ cells in the white matter (WM), subplate (SP), and adjacent L5/L6a across both timepoints; single asterisk, p=0.028; double asterisk, p=0.011.\n\n### Lpar1-EGFP SPNs receive distinct sources of GABAergic input including translaminar input from somatostatin\u00a0(SST+) interneurons\n\nTo understand whether\u00a0the observed changes around the P4\u20135 transition also involve early GABAergic circuits, we repeated our LSPS experimental strategy with the cell voltage clamped at the reversal potential for glutamate (EGlut)\u00a0(Figure 5a,b). SPNs were pooled into two groups based on age: SPNs recorded prior to the P5 transition (P1\u20134; Figure 5c\u2013e) and P5 onward (P5\u20138; Figure 5f\u2013h). Similar to our previous assessment of glutamatergic input, it was evident that SPNs received either local (Figure 5c,f) or translaminar input (Figure 5d,g) across both time windows. Prior to P5, SPNs with local (Figure 5c) and translaminar (Figure 5d) input were evident in similar numbers with the latter receiving prominent columnar input from L5 (Figure 5b,d,e). Local GABAergic input was distributed through SP and adjacent L6a (Figure 5c). The average translaminar input (Figure 5e) revealed largely complementary distributions in GABAergic input for these two populations. From P5 onward, we observed primarily local GABAergic synaptic input onto SPNs (n\u00a0=\u00a011/16)(Figure 5f), with the source of translaminar GABAergic input highly variable in location resulting in a diffuse average input profile (Figure 5g) with a more-or-less even distribution across the depth of cortex (Figure 5h). Unlike glutamatergic input, the horizontal or columnar input was evenly spread for GABAergic input with the exception of translaminar input from P1\u00a0to\u00a0P4 (Figure 5i,j). Indeed, translaminar GABAergic input onto SPNs prior to the emergence of whisker barrels at ~P5 was highly focused within the immediate column (Figure 5i). Recordings in the early time window yielded seven\u00a0morphologies, of which four were fusiform cells that received translaminar input; the remaining three recovered neurons were the pyramidal subtype, of which two received local input (Figure 5k). At the later age (P5\u20138), we only recovered pyramidal SPN morphologies for both local and translaminar GABAergic input (n\u00a0=\u00a04).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60810/elife-60810-fig5-v3.jpg)\n\n**Figure 5.:** (a) Top, synaptic and no input response observed in whole-cell patch-clamp recordings of SPN voltage clamped at the approximate reversal potential for glutamate (EGlut). Bottom, recovered fusiform morphology of the SPN with translaminar GABAergic input map shown in (b). (c\u2013e) GABAergic input onto SPNs recorded from P1\u20134. Average input maps for (c) local and (d) translaminar SPNs with profile shown in (e). (f\u2013h) Corresponding data for SPNs recorded between P5\u00a0and\u00a0P8. (i,\u00a0j) Columnar analysis of GABAergic input on SPNs at (i) P1\u20134 and (j) P5\u20138. (k) Schematic of GABAergic input onto fusiform and pyramidal (Pyr) SPNs present from P1\u00a0to\u00a0P4.\n\nSomatostatin (SST+) interneurons form a key component of early postnatal translaminar circuits (Marques-Smith et al., 2016; Anastasiades et al., 2016) and have been shown to drive synapse\u00a0formation and circuit maturation (Oh et al., 2016; Tuncdemir et al., 2016). To test whether\u00a0these interneurons (INs) influence SPNs and the circuit transition observed around P5, we first conditionally expressed Channelrhodopsin2 (ChR2) in SST+ interneurons by crossing mice homozygous for the Ai32 (ChR2) reporter allele onto our Lpar1-EGFP background that was also homozygous for the SST-Cre driver line to generate Lpar1-EGFP;SSTCre;Ai32 offspring. We then used wide-field blue light (470 nm) illumination to evoke SST+ IN inhibitory postsynaptic currents (IPSCs) in EGFP+ SPNs voltage clamped at EGlut at P3\u20134 (n\u00a0=\u00a07) and P5\u20136 (n\u00a0=\u00a05). We observed an increase in IPSC amplitude across all light\u00a0powers tested greater or equal to minimal stimulation in the P5\u20136 when compared to the P3\u20134 time window (Figure 6a). To test whether\u00a0the increase in amplitude was a result of either increased quantal size or number of innervations, we repeated these experiments in artificial cerebrospinal fluid (ACSF) in which extracellular Ca2+ was replaced with strontium (Sr2+). Incubation with ACSF containing Sr2+ (Sr-ACSF) leads to asynchronous vesicular release at the presynaptic terminal providing a reasonable estimate of quantal size (Oliet et al., 1996; Gil et al., 1999). In our hands, incubation of neonatal SPNs in Sr-ACSF resulted in asynchronous release observed at minimal stimulation (Figure 6b) and a significant difference in ChR2-dependent IPSC amplitude between control and Sr-ACSF conditions (Figure 6c). However, we observed no difference in the amplitude of IPSCs recorded in Sr-ACSF between P3\u20134 and P5\u20136 time windows (Figure 6d) despite the significant difference in amplitude under control conditions (Figure 6b,c). This suggests the observed increase in amplitude at this time point results from an increase in innervation by SST+ INs rather than an increase in quantal size.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/60810/elife-60810-fig6-v3.jpg)\n\n**Figure 6.:** (a) Widefield 473 nm blue light stimulation evoked IPSCs in SPNs at both P3\u20134 (n\u00a0=\u00a07) and P5\u20136 (n\u00a0=\u00a06) following conditional expression of Channelrhodopsin2 (ChR2) in SST+ interneurons. LED indicated by the blue line. (b) Incubation in Sr2+-containing ACSF resulted in asynchronous neurotransmitter release. (c) Cumulative probability plot of ChR2-evoked IPSC amplitude for control (black line; n\u00a0=\u00a013) versus Sr2+-containing high-divalent cation (HDC) ACSF (grey; n\u00a0=\u00a07) across P3\u20136; asterisk: two-sample Kolmogorov-Smirnov test: p\u22640.01. (d) Comparison of early (P3\u20134; n=3) versus late (P5\u20136; n=4) IPSC amplitude in the presence of Sr2+-containing HDC ACSF. (e) Local and translaminar SST+ interneuron input maps onto SPNs revealed through LSPS uncaging of ATP in conjunction with conditional expression of P2x2 receptor in SST+ interneurons. (f) Local (blue) and translaminar (orange) average layer profiles for SST+ input onto SPNs.\n\nHaving established that SPNs received SST+ interneuron input through the first postnatal week, we next employed conditional expression of the P2x2 receptor \u2013 an optogenetic actuator that we have previously used in conjunction with uncaging of ATP (Anastasiades et al., 2016)\u00a0\u2013 that allows us to map the somatic location of presynaptic SST+ interneurons. We performed LSPS uncaging of ATP over the 50 \u00b5m spaced pseudorandom grid to assess whether the L5 translaminar input observed from P1\u00a0to\u00a0P4 originated from SST+ INs. Our analysis revealed two distinct input profiles for SPNs at this time (Figure 6e,f): local SP/L6a versus translaminar infragranular SST+ interneuron input. Similar to our previous findings with both glutamatergic and global GABAergic input, local input SPNs were pyramidal cells (3/3 recovered morphologies), whereas SPNs that received translaminar synaptic input were predominantly fusiform (2/3). The presence of GABAergic input onto SPNs from infragranular SST+ interneurons precedes our previously reported reciprocal connection between these SST+ cells and L4 spiny stellate neurons during the L4 CPP (P4\u20139) (Marques-Smith et al., 2016) and then onto L2/3 pyramidal cells during the emergence of L4 to L2/3 feed-forward connections (Anastasiades et al., 2016; Bureau et al., 2004). Taken together, this evidence suggests that infragranular SST+ interneurons sequentially innervate thalamo-recipient layers through early postnatal life in S1BF.\n\n### Sparse thalamocortical input onto early postnatal Lpar1-EGFP SPNs in S1BF\n\nSPNs are thought to play an important role in early thalamic integration in primary sensory cortices. To assess the role that Lpar1-EGFP SPNs play in the early sensory circuit we first used electrical stimulation of the ventrobasal complex (VB) of the thalamus while recording from EGFP+ SPNs in acute in vitro thalamocortical slice preparation (Figure 7a). Electrical stimulation evoked excitatory postsynaptic currents (EPSCs) in the majority (76%) of SPNs recorded across the time window studied, although there was a drop in incidence between the P1\u20134 and P5\u20138 (chi-square test X2 (1, N = 56) = 5.364, p = 0.021) time windows (Figure 7b); an absence of thalamic input onto any given SPN was only recorded if TC-EPSCs were observed in other SPNs or layer four neurons in the same thalamocortical slice. We observed no antidromic potentials in recorded EGFP+ SPNs. Analysis of the amplitude of the minimal electrical stimulation EPSC (Figure 7c) identified a significant change in variance between these times but no difference in amplitude (p=0.08; two-tailed t-test, t\u00a0=\u00a01.92, df\u00a0=\u00a011.19). To further identify putative thalamocortical EPSCs (TC-EPSCs), we recorded the latency of the evoked EPSC, jitter (standard deviation in latency, ms), and amplitude for the minimal stimulation EPSC for 53 SPNs. All EPSCs with a latency >\u00a010\u00a0ms and/or jitter >\u00a01.0\u00a0ms (Figure 7d) were then excluded from our analysis leaving 32 SPNs that could be further divided into two populations based on 10\u201390% rise time and amplitude (Figure 7e): type 1 (n=9), large amplitude (55.3 pA \u00b1 SD 14.3), low jitter (0.20 ms \u00b1 SD 0.07), versus type 2 (n=23), small amplitude (14.9 mV \u00b1 SD 5.8), high jitter (0.41 ms \u00b1 SD 0.17) EPSCs (Figure 7f). Whether both populations represent TC-EPSCs (Gil et al., 1999; Luz et al., 2017) was unclear from our electrical stimulation of VB in part because both EPSC types conform to a previous criteria used to distinguish TC-EPSCs from antidromic cortico-thalamic EPSCs, namely that TC-EPSCs exhibit standard deviation in jitter <\u00a01.0\u00a0ms (Rose and Metherate, 2005). However, thalamic connectivity could be as low as 17% if type 1 EPSCs recorded in SPNs represent true orthodromic TC-EPSCs, considerably lower than connectivity reported in previous studies of SP in early postnatal ages.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/60810/elife-60810-fig7-v3.jpg)\n\n**Figure 7.:** (a) Schematic showing the experimental set-up for recording electrical stimulation-evoked TC-EPSCs in thalamocortical slices. (b) Percentage EGFP+ SPNs exhibiting constant latency synaptic response to minimal electrical stimulation over development. (c) Box plot showing the average amplitude for EPSCs. (d) Plot of jitter (standard deviation of onset EPSC) versus average latency for all the responses shown in (b,\u00a0c). Putative TC-ESPCs had latency \u2264\u00a010 ms and jitter \u2264\u00a01 ms. (e) Plot of average EPSC amplitude (pA) versus 10\u201390% rise time for all putative TC-EPSCs. Dashed circle, cluster of type 1 TC-EPSCs (top, right trace) versus type 2 (bottom trace); K-means cluster analysis (median silhouette values): K\u00a0=\u00a02; Sil = 0.89 \u00b1\u00a00.00; K\u00a0=\u00a03; Sil = 0.74 \u00b1 0.04; K\u00a0=\u00a04; Sil = 0.75 \u00b1 0.05; K\u00a0=\u00a05; Sil = 0.71 \u00b1 0.04. (f) Box plot of average jitter for type 1 and type 2 EPSCs. (g) Schematic showing the experimental set-up for combined electrical and optogenetic stimulation of thalamic afferents. (h) (top panel) Blue light reliably evoked inward currents in thalamic relay neurons following Olig3 Cre conditional expression of ChR2, sufficient to trigger action potentials in loose cell attached recordings (bottom panel). (i) Electrical (top trace) and optogenetic (bottom trace) stimulation evoked TC-EPSC in a single Lpar1-EGFP SPN at P2. Bottom panel, plot of electrical stimulation evoked TC-EPSCs recorded during the combined electrical and optogenetic stimulation experiments. Blue data points indicate the two cells that also exhibited optogenetic EPSCs; dashed blue line, TC-EPSCs with a type one profile.\n\nGiven the disparity with previous reports, we decided to employ optogenetics in parallel with electrical simulation of VB to unequivocally identify EPSCs arising from thalamic input (Figure 7g). We conditionally expressed ChR2 in thalamic nuclei using the Olig3 Cre driver line that causes recombination throughout the thalamus early in development (Vue et al., 2007; Vue et al., 2009). To validate our optogenetic strategy at early postnatal ages, we first recorded from thalamic relay neurons in Lpar1-EGFP;Olig3 Cre;Ai32 mice and established that we could evoke (1) reliable inward currents in whole-cell patch-clamp mode in response to blue, 470 nm light (Figure 7h, top panel), and (2) time-locked action potentials in cell-attached mode (Figure 7h, bottom panel) from the earliest time points recorded (P1)\u00a0(n=5 VB cells). We then recorded Lpar1-EGFP SPNs and tested for TC-EPSCs using both electrical and light stimulation protocols. Across the whole time window tested (P1\u20138), we obtained recordings under both stimulation protocols in 19 EGFP+ cells. Of these, nine cells across all ages tested (P1\u20138) had short latency, low jitter (<1\u00a0ms) EPSCs in response to electrical stimulation (types 1 and 2)\u00a0(Figure 7i). However,\u00a0only two cells (11% of Lpar1-EGFP SPNs), with properties consistent with type 1 EPSCs, exhibited responses to both 470 nm light and electrical stimulation; no EGFP+ cells showed synaptic responses to light alone. To establish whether\u00a0sparse thalamocortical connectivity is a property of the Lpar1-EGFP subtypes alone, we then recorded from non-EGFP+ SPNs. Using our combined electrical and optogenetic stimulation strategy, we identified thalamic input onto only 3 of 15 (27%) non-EGFP+ SPNs in the P1\u20134 time window. We therefore believe that the majority of EPSCs observed after electrical stimulation, termed type two here, arise from antidromic activation of cortico-thalamic projection neurons. Taken together these data suggest that Lpar1-EGFP SPNs in S1BF receive both thalamic and cortico-thalamic input in the first postnatal week, but that the former is relatively sparse, contacting only a small subset of the total population.\n\n## Discussion\n\nWe have recorded from a genetically identified population of SPN\u00a0through the first postnatal week to establish the contribution of this cell type to early circuits of somatosensory whisker barrel cortex (S1BF). Our data reveal that the Lpar1-EGFP SPN population comprises two distinct subtypes with different somatodendritic morphologies and afferent input throughout the first four postnatal days (P1\u20134): first, pyramidal SPNs that receive primarily local input at this stage from the subplate (SP) network, but whose axons traverse across all the layers of cortex to project horizontally via layer 1 (Figure 8a). Second, fusiform SPNs that receive translaminar input from more superficial cortical layers, but whose axons are largely confined to the immediate layer and therefore output to the SP network (Figure 8b). Fusiform SPNs receive glutamatergic input from the cortical plate, including putative layer 4, as well as GABAergic input from infragranular SST+ interneurons; two signalling centres that form reciprocal connections through the L4 critical period of plasticity in S1BF (Marques-Smith et al., 2016). During the later period (P5\u20138), the onset of which coincides with an increase in cell death across cortical layers, fusiform cells are encountered in significantly reduced numbers \u2013 indeed are absent in the P7\u20138 window. The remaining pyramidal SPNs are evenly split between those that are still dominated by local inputs and those that acquire an array of diverse inputs from across cortical layers, located both in the immediate and adjacent cortical columns. This diversification of synaptic input fits with the rapid transition to columnar signalling previously reported at P5 (Dupont et al., 2006) and suggests that this time point represents the switch from transient SP to layer 6b (L6b) (Zolnik et al., 2020) in S1BF.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/60810/elife-60810-fig8-v3.jpg)\n\n**Figure 8.:** (a) Pyramidal Lpar1-EGFP SPNs received broad glutamatergic (grey neurons) and GABAergic (black) input from the subplate zone. (b) Transient fusiform Lpar1-EGFP SPNs in contrast receive translaminar input from glutamatergic neurons (grey) in the cortical plate and SST+ interneurons (black) in infragranular layers. (c) We propose that sparse thalamic input (Th) onto Lpar1-EGFP SPNs interacts with both fusiform and pyramidal SPN circuits to sculpt the emergent columnar cytoarchitecture (blue dashed box). .\n\nOur study identifies that Lpar1-EGFP SPNs in S1BF have an additional novel function that does not conform to the canonical model for SPNs established across sensory cortices, wherein SPNs act as relay cells for thalamic input to L4 (Kanold and Luhmann, 2010; Tolner et al., 2012; Allendoerfer and Shatz, 1994). We have tested thalamic engagement with Lpar1-EGFP SPNs using combined electrical and optogenetic stimulation of thalamic afferent fibres and found that the incidence of connectivity onto postnatal Lpar1-EGFP SPNs to be as low as 11% in thalamocortical slices that otherwise showed good preservation of connectivity. This is at odds with a number of previous studies reliant exclusively on electrical stimulation (Hanganu et al., 2002; Friauf et al., 1990), which obtained levels of connectivity approaching our initial electrical stimulation paradigm. Recordings from non-Lpar1-EGFP SPNs suggest that this is not a property of this genetically defined population alone. As such, it is definitely worth revisiting perinatal thalamic engagement with the cortex using optogenetic approaches given that conditional expression of ChR2 in thalamic nuclei allows unequivocal discrimination of thalamocortical versus corticothalamic input without possible antidromic activation. Differences in the level of thalamic engagement aside, our data are consistent with the model that thalamic input is amplified via the subplate network (Luhmann et al., 2009) and onward communicated via pyramidal SPNs to more superficial layers of cortex via layer 1. Indeed, our study builds on a number of studies that advanced our understanding of the role of subplate from a simple staging post for initial thalamic innervation to a critical mediator of plasticity and amplifier of thalamic input, a role that is fulfilled by two distinct morphological subtypes. However, how this amplified signal is relayed to the overlying cortex is unclear beyond that it is likely mediated by the pyramidal subtype with axons ramifying in the marginal zone. None of our recovered morphologies suggest dense innervation of L4 per se by this particular genetically\u00a0defined subpopulation of SPN (Friauf et al., 1990). Indeed, this and our extensive mapping of S1BF using LSPS through early postnatal life (Anastasiades et al., 2016; Anastasiades and Butt, 2012) provide little evidence that there is a privileged route of connectivity between SP and L4 for a protracted period during early postnatal life in this primary sensory area, in contrast to other sensory modalities.\n\nWe targeted a genetically\u00a0defined population of SPN using the Lpar1-EGFP transgenic mouse line (GENSAT). Lpar1 (Edg2) is one of a number of markers previously shown to delineate SPN diversity (Hoerder-Suabedissen and Moln\u00e1r, 2013), with the cohort labeled by this line one of the earliest born subtypes with peak neurogenesis at embryonic day (E)11.5. EGFP expression is evident in this population at embryonic ages (Hoerder-Suabedissen and Moln\u00e1r, 2013), increasing to label both SP and non-SP neurons by the end of the first postnatal week (Marques-Smith et al., 2016). This reported increase in strength of EGFP expression in SPNs through early postnatal life would seem to preclude the possibility that the fusiform SPN subtype down-regulate EGFP at P5. The most parsimonious explanation \u2013 that reconciles our observation of fusiform Lpar1-EGFP cells as a \u2018classical\u2019 transient SPN population with the fact that there is no significant decrease in the number of EGFP+ SPNs over this time window (Hoerder-Suabedissen and Moln\u00e1r, 2013) \u2013 is that this subtype represent only a small fraction of the EGFP+ SPN number. Our observed increase in the prevalence of the pyramidal subtype of EGFP+ SPNs over development has been documented by others (Marx et al., 2017). Finally, the Lpar1-EGFP transgenic\u00a0line\u00a0is an excellent tool for targeting and recording these two morphological variants of SPN. However, our knowledge of the efferent targets of these cells is, in absence of a conditional genetic strategy, limited to a purely morphological assessment. Alternative genetic approaches such as CRE-DOG (Tang et al., 2015) although useful to researchers targeting EGFP+ neuronal populations in the adult cortex (Naka et al., 2019) do not provide a viable means of targeting the Lpar1-EGFP cells within the first postnatal week. What is evident from our analysis is that the two subtypes present in the earlier time window target completely different layers within the developing cortical plate, highly suggestive of different roles within the early circuitry of S1BF.\n\nLSPS has been used previously in conjunction with glutamate uncaging to probe the early SP circuits of primary auditory cortex (A1) (Viswanathan et al., 2012; Zhao et al., 2009). Similar to these reports, we find SPNs that receive local and translaminar input. However, the temporal dynamics of the connections that we observe in S1BF, notably the early afferent input from L4, are quite different to those reported for A1 wherein L4 input emerges in the second postnatal week (Viswanathan et al., 2012). This disparity in timing could underpin differences in the role of SP in circuit maturation between sensory areas and suggests that the cytoarchitecture of sensory areas differs from the outset.\n\nIn recent years, optical approaches have extended our knowledge of the early circuit of somatosensory cortex. It is evident that prenatal spontaneous thalamic activity plays an instrumental role in determining the columnar organization of S1BF (Ant\u00f3n-Bola\u00f1os et al., 2019). Shortly before birth thalamic afferent fibres are restricted to the subplate and thalamic stimulation elicits activity that spreads laterally through this and immediate adjacent infragranular layers (Higashi et al., 2002). It is possible that at these early ages thalamic innervation of SPNs is widespread in S1BF and that the role of such spontaneous activity is to competitively select the sparse SPNs that will maintain thalamic innervation into the first few postnatal days, a time point by which sensory activity has already transitioned to the overlying cortical layers in S1BF (Ant\u00f3n-Bola\u00f1os et al., 2019). Our data suggest that Lpar1-EGFP pyramidal SPNs are likely conduits for such activity, recruiting pyramidal cells and GABAergic interneurons in more superficial cortex (Friauf and Shatz, 1991; Che et al., 2018) via their L1 axon collaterals. In turn, neurons in the superficial cortical layers provide feedback columnar glutamatergic and GABAergic synaptic input onto transient fusiform SPNs thus completing the circuit (Figure 8c). This indirect mechanism could provide the necessary framework for the interpretation of early thalamic signals resulting in columnar organisation. Indeed, such a mechanism coupled with the sparse nature of thalamic engagement with the subplate represents a plausible substrate to ensure the emergence of spatially distinct columnar circuits in S1BF. Moreover, relay of thalamic input via L1 moves away from a L4-centric view of early thalamic engagement, more in line with distributed thalamocortical input across all six\u00a0layers of neocortex (Feldmeyer et al., 2013). Our findings provide insight into the earliest neuronal networks of somatosensory cortex, highlighting transient glutamatergic and GABAergic circuits that are essential for the emergence of normal perception.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus, male)</td>\n      <td>Tg(Lpar1-EGFP)GX193Gsat</td>\n      <td>GENSAT Project at Rockefeller University</td>\n      <td>MGI:4847204; transgene insertion GX193</td>\n      <td>Y Chromo- some linked</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, mixed sex)</td>\n      <td>Ssttm2.1(cre)Zjh/J</td>\n      <td>The Jackson Laboratory</td>\n      <td>Stock No: 013044; RRID:IMSR_JAX:013044</td>\n      <td>Maintained in Butt lab on C57BL/6 background</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, mixed sex)</td>\n      <td>Olig3tm1(cre)Ynka</td>\n      <td>Prof. Yasushi Nakagawa University Minnesota</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, mixed sex)</td>\n      <td>Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze /J</td>\n      <td>The Jackson Laboratory</td>\n      <td>Stock No: 012569; RRID:IMSR_JAX:012569</td>\n      <td>Maintained in Butt lab on C57BL/6 background</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, mixed sex)</td>\n      <td>R26::P2x2r-EGFP (floxed-stop-rat P2x2 receptor)</td>\n      <td>Prof. Gero Miesenb\u00f6ck (Oxford)</td>\n      <td></td>\n      <td>Maintained in Butt lab on C57BL/6 background</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Chicken anti-GFP (polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab13970 RRID:AB_300798</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-GABA (polyclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# A2052, RRID:AB_477652</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Guinea-pig anti-GABA (polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab17413 RRID:AB_443865</td>\n      <td>(1:1500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-Caspase three antibody, active (cleaved) form (polyclonal)</td>\n      <td>Merck Millipore</td>\n      <td>AB3623 RRID:AB_91556</td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-Chicken, Alexa Fluor 488 (polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab150169 RRID:AB_2636803</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-Rabbit, Alexa Fluor 546 (polyclonal)</td>\n      <td>Thermo-Fisher</td>\n      <td>A11035 RRID:AB_143051</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>In Situ Cell Death Detection Kit, TMR red</td>\n      <td>Roche, Sigma-Aldrich</td>\n      <td>SKU: 12156792910; Lot #: 45197500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NaCl; KCl; NaHCO3; NaH2PO4; MgCl2; CaCl2; K-gluconate; Li-GTP; Mg-ATP; HEPES; Gluconic acid; EGTA; SrCl2</td>\n      <td>Sigma-Aldrich</td>\n      <td>S7653 P4504 S6014 S3139 M2670 22,350\u20136 G4500 G5884 A9187 H3375 G1951 E4378 204463</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MNI-caged glutamate</td>\n      <td>Tocris Bioscience UK</td>\n      <td>Cat. No.: 1490. Lot no.: 48A/206152; 50A/255070; 50A/220558; 50A225070; 51A/240237; 51A/243753; 52A/249897; 52A/251627</td>\n      <td>100 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMNPE-caged ATP</td>\n      <td>Life Technologies UK</td>\n      <td>A1049</td>\n      <td>100 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biocytin</td>\n      <td>Sigma- Aldrich</td>\n      <td>B4261; Lot no. SLCB0219; SLBS5344</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Streptavidin, Alexa Fluor 568 conjugate</td>\n      <td>Thermo-Fisher</td>\n      <td>S11226 RRID:AB_2315774</td>\n      <td>(1:500)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism Software</td>\n      <td>GraphPad Software</td>\n      <td>RRID:CR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ/Fiji</td>\n      <td>Fiji</td>\n      <td>RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pClamp 10</td>\n      <td>Molecular Devices</td>\n      <td>RRID:SCR_011323</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Thermo-Fisher</td>\n      <td>D1306 RRID:AB_2629482</td>\n      <td>(1:1000)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal husbandry and use\n\nAnimal care and experimental procedures were approved by the University of Oxford local ethical review committee and conducted in accordance with UK Home Office personal and project (70/6767; 30/3052; P861F9BB75) licenses under the Animals (Scientific Procedures) 1986 Act. The following mouse lines were used: Lpar1-EGFP (Tg(Lpar1-EGFP)GX193Gsat), SST-ires-Cre (Ssttm2.1(cre)Zjh/J), Olig3 Cre (Olig3tm1(cre)Ynka), Ai32 (Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J),\u00a0and R26::P2x2R-EGFP (floxed-stop-rat P2x2 receptor). All experiments were performed blind to the mouse genotype with the exception of Lpar1-EGFP transgene, which is Y chromosome\u00a0linked (Hoerder-Suabedissen and Moln\u00e1r, 2013). The date of birth was designated postnatal day (P)0.\n\n### Acute in vitro slice preparation\n\nAcute brain slices were prepared as previously described (Marques-Smith et al., 2016). Male mice (P1\u20138) were anesthetised with 4% isoflurane in 100% O2 and decapitated; the cerebral cortex was quickly dissected in ice-cold, oxygenated (95% O2/5% CO2) ACSF of the following composition (in mM): 125 NaCl, 2.5 KCl, 25 NaHCO3, 1.25 NaH2PO4, 1 MgCl2, 2 CaCl2, 20 glucose (300\u2013310 mOsm; all chemicals were purchased from Sigma unless otherwise stated). Coronal and thalamocortical slices (350\u2013400 \u00b5m) including the primary somatosensory barrel cortex (S1BF) were cut in ice-cold ACSF through a vibratome (Vibratome 3000 Plus; The Vibratome Company) and allowed to recover in ACSF at room temperature (RT) for at least 1 hr prior to electrophysiological recordings. Coronal slices were obtained by cutting the brain at an angle perpendicular to S1BF; thalamocortical slices were obtained according to established procedures with the angle varied according to developmental age (Marques-Smith et al., 2016; Agmon and Connors, 1991).\n\n### Whole-cell patch-clamp electrophysiology\n\nSlices containing S1BF were selected for electrophysiology experiments if they showed good preservation of the radial structure, as assessed by the presence of layer (L)5 pyramidal neuron apical dendrites extending to supragranular layers. Lpar1-EGFP SPNs were readily distinguished from Lpar1-EGFP GABAergic interneurons based on their localisation in a thin layer of cells located between the cortical L6 and the underlying white matter, identified as the SP. SP could be detected as a thin, compact cell layer that could be distinguished from Layer 6a and white matter. Cells were selected ~50 \u00b5m below the slice surface and targeted for patch-clamp recordings guided through infrared-differential interference contrast (IR-DIC) microscopy using a 40\u00d7 water-immersion objective. Whole-cell patch-clamp electrophysiological recordings were performed at RT using a Multiclamp 700B amplifier and Digidata 1440A digitizer (Molecular Devices). Patch pipettes were obtained from borosilicate glass microelectrodes (6\u20139 M\u03a9; Harvard Apparatus, UK), pulled through a PC-10 puller (Narishige, Japan). Electrodes were filled with either a K-based (128 mM K-gluconate, 4 mM NaCl, 0.3 mM Li-GTP, 5 mM Mg-ATP, 0.1 mM CaCl2, 10 mM HEPES; pH 7.2 with KOH; 280\u2013290 mOsm) or Cs-based intracellular solution (100 mM gluconic acid, 0.2 mM EGTA, 5 mM MgCl2,\u00a040 mM HEPES, 2 mM Mg-ATP, 0.3 mM Li-GTP; pH 7.2 with CsOH; 280\u2013290 mOsm). Biocytin (0.3%) was included in the intracellular solution to allow the morphological reconstruction of recorded neurons. To study EPSCs, SPNs were held at a holding potential (Vh) of \u221260 mV; IPSCs were recorded by voltage-clamping the cell near the equilibrium potential for glutamate (EGlut). For mapping of IPSC input, EGlut was found empirically by uncaging glutamate in the proximity of the recorded cell and tuning the Vh until little or no net laser-induced direct postsynaptic current was observed. For optogenetic experiment, Vh was set to 0 mV (corrected for calculated liquid junction potential of ~13 mV for the Cs-based intracellular solution). All recordings were sampled at 20 kHz and low-pass filtered online at 0.5 kHz. Cell input and series resistance (Rin and Rs) were monitored throughout the duration of the recording without applying compensation; recordings were discarded when Rs exceeded 20% of its initial value.\n\nCells patched with the K-based intracellular solution were initially held in current-clamp configuration to record their intrinsic electrophysiological profile prior to LSPS experiments. Intrinsic electrophysiological properties were assessed using both depolarising and hyperpolarising current steps (500 ms) of increasing amplitude applied from resting membrane potential; step size was adjusted based on the input resistance of the cell.\n\n### Laser-scanning photostimulation: methods and analysis\n\nLaser-scanning photostimulation (LSPS) was performed according to the method previously described (Anastasiades and Butt, 2012; Anastasiades et al., 2018). This optical technique allows to stimulate neurons in a small portion of cortical tissue (~50 \u00b5m) while recording the postsynaptic current in the target neurons. Thus, the location of any presynaptic neurons showing functional connectivity to the recorded one can be inferred by the location of the optical stimulation. Prior to LSPS, slices were incubated for a minimum of 6 mins. with high-divalent cation (HDC) ACSF of similar composition to the normal ACSF but with increased concentration (4 mM) of MgCl2 and CaCl2 and supplemented with 100 \u00b5M MNI-caged glutamate (Tocris Bioscience, UK) for glutamate uncaging experiments. We perform LSPS experiments in HDC ACSF solution to reduce polysynaptic transmission and the occurrence of spontaneous synaptic currents. Mapping of cell-type-selective inputs were performed with an optogenetic strategy previously described (Anastasiades et al., 2016). In brief, the P2x2 receptor was conditionally expressed into SST+ interneurons and selectively stimulated by laser uncaging of DMNPE-caged ATP (100 \u00b5M, Life Technologies, UK). LSPS was performed using an ultraviolet (UV) laser (DSPL-355/30) and a galvanometer targeting system (UGA-42, Rapp Optoelectronic GmbH, Germany) focused through a 10\u00d7 Olympus objective. The stimulation grid was organised into 17 \u00d7\u00a09 target spots (~50 \u00b5m spatial resolution). Long-duration (100 ms), low-power (<2 mW at sample plane) laser pulses were fired in a pseudo-random order at 1\u20132 Hz frequency. In order to cover the whole extent of the cortical column, two\u00a0to\u00a0three LSPS grids were sequentially employed and properly aligned and averaged offline during data analysis. For each individual LSPS grid, a minimum of three\u00a0runs were obtained and averaged.\n\nElectrophysiological current traces were analysed with Minianalysis 6.0 (Synaptosoft Inc) to extrapolate amplitude and onset time of all IPSCs or EPSCs recorded. Direct responses to glutamate were identified by their short latency and slow onset kinetics (time to peak ~100 ms) and excluded from subsequent analysis. Only EPSCs characterised by fast onset kinetics were considered for further analysis if they occurred within the putative detection window for monosynaptic events, determined according to previously published criteria (Anastasiades and Butt, 2012). For each laser spot of the grid, all events whose onset fell within this detection window were summed and then averaged with values from different runs of the same experiment. Final heatmaps were built through a customised Matlab (Mathworks, USA) script. In order to allow the reconstruction of the layer profile on the input map, a photomicrograph of the grids relative to the slice preparation was acquired, and layer boundaries were manually determined. Normalised heatmaps were generated by dividing the\u00a0value in each spot by the sum of all pixels. Linear profiles (layer and columnar) were obtained by summing all values for each line in individual heatmaps. Average maps were obtained by aligning each individual map to the SP/Layer 6a boundary and averaging corresponding pixels.\n\n### In vitro optogenetics stimulation\n\nOptogenetic experiments were performed by conditionally expressing Channelrhodopsin 2 (ChR2; via the Ai32 reporter allele) in SST+ interneurons (using SST-ires-Cre) or thalamic relay neurons (using Olig3 Cre). Wide-field light stimulation was delivered through a 40\u00d7 objective to focus blue (470 nm LED, CoolLED, UK) light onto the recorded cell. For each recorded SPN, two light stimulation duration pulses (1 and 10 ms) were employed at multiple LED power intensities to ensure that the minimal stimulation and full range of activation was captured irrespective of developmental age. For each LED pulse duration and intensity, five pulses were administered at a 20 s interval and the evoked postsynaptic current (PSC) recorded.\n\nData analysis was performed through a customised Matlab script. Light-evoked PSCs were analysed if their onset was detected within 25 ms from the onset of the light stimulus; the relatively long latency was used to account for developmental effects that may affect ChR2 expression. For events within the mono-synaptic detection window, multiple PSC features were extracted such as amplitude, latency, 10\u201390% rise time, and decay time constant (\u03c4). In particular, the latency of the PSC was calculated from the onset of LED stimulation; the decay \u03c4 was found by fitting a mono-exponential curve to the decay phase of the PSC; percentage of PSC occurrence was calculated throughout the five sweeps at each LED intensity.\n\nIn a subset of experiments, recordings of light-evoked IPSCs from SST+ interneurons were performed in a modified HDC ACSF containing 4 mM SrCl2 to replace CaCl2. Due to the slow onset of its effects, slices were bathed in Sr2+-containing HDC for a minimum of 20 min before light stimulation and data collection (Gil et al., 1999).\n\n### Electrical stimulation of thalamic afferents\n\nThalamocortical (TC) afferent input to SPNs was tested using a bipolar microelectrode (Harvard Apparatus, UK) placed either in the ventrobasal nucleus (VB) of the thalamus or the internal capsule (IC) and connected to a current isolator (DS3, Digitimer Ltd, UK). The strength of the electrical stimulation was varied to find the minimal stimulation value (Raastad et al., 1992; Isaac et al., 1997), corresponding to EPSC evoked on ~50% of trials. The interstimulus interval was set at either 30 or 60 s depending on developmental age. TC-EPSCs were considered if calculated standard deviation (jitter) of the EPSC latency was <1\u00a0ms at minimal stimulation.\n\n### Morphological reconstruction of recorded cells\n\nFollowing electrophysiological assessment, slices containing biocytin-filled cells were fixed in 4% paraformaldehyde (PFA; diluted in phosphate-buffered saline, PBS) overnight at 4\u00b0C. Slices were then rinsed in PBS and incubated in 0.05% PBST containing Streptavidin-Alexa568 (1:500; Molecular Probes, USA) for 48\u201372 hr at 4\u00b0C. Slices were then washed 3\u00d7 10\u00a0min in PBS and mounted on histology slides with Fluoromount (Sigma) mounting medium.\n\nSlices were imaged through an Olympus FV1200 confocal microscope equipped with 10\u00d7 or 20\u00d7 dry objective. Z-stack images were acquired in order to maximise imaging of all neuronal processes containing biocytin to allow the offline morphological reconstruction. Image analysis was performed with Fiji-ImageJ software (NIH): confocal images of filled cells were selected for morphological reconstruction, performed using the Simple Neurite Tracer plugin. Dendrite directionality was calculated using the Directionality plugin implemented in Fiji-ImageJ onto reconstructed dendritic morphologies.\n\n### Immunohistochemistry and TUNEL stain\n\nMice were terminally anesthetised with pentobarbital (90 mg/kg) and transcardially perfused with 4% PFA in PBS. Dissected brains were incubated in PFA for 2 hr at 4\u00b0C and then cryoprotected in 20% sucrose for 24 hr at 4\u00b0C. Brains were then embedded into O.C.T. (VWR), frozen on dry ice, and stored at \u221280\u00b0C. Each brain was sectioned into 14\u201316 \u03bcm thick slices and mounted on histology slides; slides were stored at \u221220\u00b0C. Slides selected for immunohistochemistry were air-dried overnight at RT and washed 3\u00d7 10\u00a0min at RT in PBS. Slides were then permeabilised for 30 min in 0.5% PBST (0.5% Triton X-100 in PBS) and incubated in blocking solution (PBST 0.1%, Normal Goat Serum 5%) for 1 hr at RT. Primary antibodies used were chicken anti-GFP (ab13970, Abcam, dilution 1:250), rabbit anti-GABA (A2052, Sigma, 1:1000), guinea-pig anti-GABA (ab17413, Abcam, 1:1500), and rabbit anti-Caspase-3 (AB3623, Merck Millipore, 1:200). Slides were incubated in primary antibody solution overnight at 4\u00b0C. Slides were then washed 3\u00d7\u00a010 min at RT in PBS and subsequently incubated in secondary antibody (Goat anti-Chicken IgG Alexa Fluor 488 conjugate, Goat anti-Rabbit IgG Alexa Fluor 568 conjugate; diluted in blocking solution 1:1000) for 2 hr at RT. Finally, the slides were washed in PBS, counterstained with DAPI (diluted 1:1000 in PBS) for 3 min at RT, and mounted with Fluoromont (Sigma). For the TUNEL stain, slides were processed for GFP immunohistochemistry as above, and\u00a0then the TUNEL stain was applied as per the supplier (Roche, SKU: 12156792910) instructions. Slides were then counterstained with DAPI and mounted as above. All slides were imaged through an Olympus FV1200 confocal microscope.\n\n### Statistical analysis\n\nAll results are expressed as mean \u00b1 standard error of the mean; n indicates the number of cells recorded. Statistical analysis was performed with Prism (GraphPad, USA). Normality and equal variance tests were run to direct the appropriate statistical test choice for comparison of parametric versus non-parametric datasets. Multiple groups were compared with a two-way ANOVA test; post hoc multiple comparisons were performed with the Holm\u2013Sidak method. Two parametric groups were compared with Student\u2019s t-test whereas two non-parametric groups were compared with the Mann\u2013Whitney rank sum test. Finally, cumulative frequency distributions were compared with the two-sample Kolmogorov\u2013Smirnov test. Statistical significance was evaluated at p\u22640.05; for the Kolmogorov\u2013Smirnov test,\u00a0p\u22640.01 was considered statistically significant.\n",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "833603e9-8125-4f1a-a785-143dba9543fc",
+      "submission_id": "daae7613-d27a-4e9b-9122-dd8f1f2b5e3f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sonia Garel, Ecole Normale Superieure France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60810.sa1](https://doi.org/10.7554/eLife.60810.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour revised manuscript elegantly reveals the existence of morphologically and functionally entangled subplate circuits, with important insights for our understanding of how cortical circuits form and convey sensory information. The additional experiments and analyses provided in the revised manuscript significantly reinforce the strength of the conclusions and of the interpretation.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Non-canonical role for Lpar1-EGFP subplate neurons in early postnatal somatosensory cortex\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Huguenard as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Guille L\u00f3pez-Bendito (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nBoth reviewers highlighted the interest and novelty of your study- understanding how functional subplate circuits wire up is important to grasp the interplay between cortical development and incoming sensory information.\n\nAs you will see below, both reviewers have highlighted the need to: (1) increase the number of experimental points to reinforce the link between morphology and functional data; (2) to provide more detailed analyses of some data to clarify electrophysiological properties and determine whether Lpar1-egfp subplate cells fall into two groups or rather a continuum; (3) clarify the timeline by providing sufficient n and clarity in the presentation.\n\nReviewer #1:\n\nThis is a convincing and important study on the morphological and functional properties of a subpopulation of subplate neurons (SPNs) defined by the expression of Lpar1-EGFP. The authors use a variety of technologies to demonstrate that Lpar1-EGFP SPNs consist of two groups with distinct morphology and synaptic inputs.\n\n(1) Figure 2f: Can the disappearance of fusiform cells be explained by apoptosis? Maybe some electrophysiological data would support this (e.g. less negative resting membrane potential, low input resistance, etc).\n\n2) Figure 2h: The authors have no evidence for direct synaptic connection between fusiform and pyramidal SPN, as can be obtained by paired-recordings. I would put a ? there.\n\n3) It is known that SPNs are also coupled via gap junctions. How did the authors differentiate direct/synaptic responses (e.g. Figure 3) from electrical synapses?\n\n4) In discussion it would be nice to briefly discuss that SP became increasingly more important, from initial \"waiting station\" (classical papers by Carla Shatz) to plasticity gate and amplifier. The present study nicely shows that fusiform Lpar1-EGFP SPNs may act as amplifiers of thalamic inputs.\n\n5) Figure 7: Nice figure, but how about anti-/orthodromic responses of both SPN populations following electrical thalamic stimulation?\n\nReviewer #2:\n\nThe authors provide an important contribution to the current knowledge of subplate neuron diversity and their function in the establishment of cortical circuitry at early stages of development. This is a well-conceived and executed study.\n\nThe authors use a combination of distinct approaches including: genetic and morphological techniques, electrical stimulation, laser scanning photostimulation and optogenetics, which strengthens the conclusions of the study. The results are novel as they provide specific circuit and developmental data on a transient layer of the cortex, the subplate, whose function is largely unknown.\n\n1. When the authors say that Lpar1-EGFP neurons represent two morphological subtypes (line 28-29, and discussion line 309) it may be implied that all fusiform and pyramidal SPNs belong to this genetic subtype. This is not the case or at least it is not supported by the data. I suggest rephrasing to: \"The Lpar1-EGFP group is comprised by two morphological subtypes\" or similar.\n\n2. In general, the association between the electrophysiological results and the morphological neuronal subtypes is based on a very low experimental number. In my opinion, the attempt to match the morphological subtypes is somehow forced and dampens the impact of the electrophysiological results. Furthermore, the n is low to fully support some of the conclusions raised and some quantifications and statistical analyses are missing, as specified below.\n\n3. Lines 118-122. Can the authors provide statistical analysis to the data to fully support their conclusion on the existence of a progressive maturation in the electrophysiological properties of SPNs neurons with age?\n\n4. Lines 130-131. These cells probably are part of a continuum, as it is evidenced in figure 2C. To unbiasedly classify cells into these two types, I would suggest a K-means cluster, and to compare statistically the difference in directionality between the two subtypes.\n\n5. Line 132-136. Are all pyramidal SPNs extending their axons to L1 and all fusiform cells keeping theirs in the SP? The exact numbers should be provided.\n\n6. Line 140. Is the size of the soma smaller in fusiform cells? If so, this might generate a bias when patching and filling the cells, thus giving the wrong impression that their numbers are decreased. Increasing the n at later ages would probably help. Can the apical process of pyramidal SPNs be detected from the Lpar1-EGFP sections directly? If this is the case, counting a higher number of cells in several sections from different brains might provide a better estimate of the population and thus of the reduction in number of fusiform cells. This is an important point in this paper and a key element of the circuit maturation proposed in this work.\n\n7. Line 144-Figure 2G. Can the authors provide a quantification? (At least n and percentage)\n\n8. Line 178-180. Can the authors specify at which ages these cells morphologies were recovered or whether they appear at all ages studied? In line 180 it says 5/5 pyramidal SPNs and in line 181 it says 6/9 pyramidal. This whole paragraph is confusing and the conclusion is important. Again, the numbers are too small to make a strong association between morphology and input.\n\n9. Line 199-207. To strengthen the conclusion that there is a switch in the distribution of inputs then should be comparable for both the P1-4 and the P5-8 groups.\n\n10. Line 191-214. In this paragraph the association between morphology and local/translaminar input is not made. Explicitly say why.\n\n11. Line 212-213 \"local GABAergic input were primarily pyramidal subtypes\". Please provide N.\n\n12. Line 214. Do you mean n=4 out of 4?\n\n13. Line 247. Why is this data not shown?\n\n14. Line 250. \"\u2026precedes our previously reported reciprocal connection between these SST+ cells and L4 spiny stellate neurons\" At what age is this? Can you include it in the text (in addition to giving the reference)?\n\n15. Line 262-263. Is this \"drop in incidence\" statistically significant?\n\n16. Line 298. Again, providing morphological data with N=1 does not add up but rather distracts from the conclusions.\n\n17. Line 300. How many non-EGFP SPNs have been recorded? Again, can the authors provide a statistical test to show that connectivity in the Lpar1 population is significantly lower than in the general SPN population?\n\nFigures\n\n18. Figure 1A. The magnification is too low to see the recorded cell(s), please provide a better image or add an inset of the cell(s).\n\n19. Figure 2H. The diagram might be misleading since it gives the impression that fusiform cells target specifically Lpar1-pyramidal SPNs and the authors just demonstrate that the axons are restricted to the subplate. Thus, their target may or may not include, and may or may not be restricted to Lpar1-pyramidal SPNs.\n\n20. Figure 3D. Why is the resolution in the left panel different from that in 3B or 3F?\n\n21. Figure 5: Why is P5-8 data missing in this condition? Can the authors include it and make a figure with a layout consistent with figure 4?\n\n22. Figure 5A-C. N is not specified.\n\n23. Fig5F Please note that this panel is not referenced in the text.\n\n24. Fig7. Legend on the figure would be helpful.\n",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "15ae4731-1732-4248-b937-18ee6d58a4e1",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C1",
+      "claim": "Lpar1-EGFP subplate neurons comprise two morphological subtypes: fusiform SPNs with local axons and pyramidal SPNs with axons that extend through the marginal zone.",
+      "claim_type": "EXPLICIT",
+      "source": "These SPNs comprise of two morphological subtypes: fusiform SPNs with local axons and pyramidal SPNs with axons that extend through the marginal zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding, which is supported by morphological reconstructions shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "060d029a-cdce-4653-8092-5d5493cedf44",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C2",
+      "claim": "Fusiform Lpar1-EGFP SPNs receive translaminar synaptic input up until the emergence of whisker barrels.",
+      "claim_type": "EXPLICIT",
+      "source": "The former receive translaminar synaptic input up until the emergence of the whisker barrels, a timepoint coincident with significant cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by LSPS mapping data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "2bdd3c0e-2cbf-47f8-9cc5-48e061b7dde3",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C3",
+      "claim": "The emergence of whisker barrels coincides with significant cell death in the subplate.",
+      "claim_type": "EXPLICIT",
+      "source": "The former receive translaminar synaptic input up until the emergence of the whisker barrels, a timepoint coincident with significant cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by immunohistochemistry and TUNEL staining data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "75db67f5-b52a-4738-acb3-275eed1cde7d",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C4",
+      "claim": "Pyramidal Lpar1-EGFP SPNs receive local input from the subplate at early ages.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pyramidal SPNs receive local input from the subplate at early ages but then \u2013 during the later time window \u2013 acquire input from overlying cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by LSPS data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "4a469ebd-2048-40b5-b5f6-d345f6c381ee",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C5",
+      "claim": "Pyramidal Lpar1-EGFP SPNs acquire input from overlying cortex during the later time window (P5-8).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pyramidal SPNs receive local input from the subplate at early ages but then \u2013 during the later time window \u2013 acquire input from overlying cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by LSPS data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "73649792-d7df-4230-bb4d-9994373832cf",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C6",
+      "claim": "Lpar1-EGFP SPNs receive sparse thalamic innervation throughout early postnatal life.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined electrical and optogenetic activation of thalamic afferents identified that Lpar1-EGFP SPNs receive sparse thalamic innervation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by combined electrical and optogenetic stimulation experiments in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "2af79ffe-14b8-431e-bc25-a70a2703fca9",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C7",
+      "claim": "Only 11% of Lpar1-EGFP SPNs exhibit responses to both electrical and optogenetic stimulation of thalamic afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only two cells (11% of Lpar1-EGFP SPNs), with properties consistent with type 1 EPSCs, exhibited responses to both 470 nm light and electrical stimulation; no EGFP+ cells showed synaptic responses to light alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the Results section and supported by data in Figure 7i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "76bb2de9-5b24-4cad-ade0-4335fb674e4f",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C8",
+      "claim": "Subplate neurons are thought to play a role in nascent sensory processing in neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Subplate neurons (SPNs) are thought to play a role in nascent sensory processing in neocortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as background information, drawing on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "8253824d-05a2-4a12-8784-c39fb45bee19",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C9",
+      "claim": "The canonical role of SPNs is to support the establishment of thalamocortical synapses onto L4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The canonical role of SPNs is to support the establishment of thalamocortical synapses onto L4 neurons (Kanold and Luhmann, 2010; Kanold et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "e9708adf-bcef-4b9b-bc06-39bdca7d9a09",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C10",
+      "claim": "Previous studies have reported that SPNs receive thalamocortical input prior to innervation of L4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, previous studies have reported that SPNs receive thalamocortical input prior to innervation of L4 neurons (Kanold et al., 2003; Friauf and Shatz, 1991; Zhao et al., 2009; Moln\u00e1r et al., 2003; Higashi et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "1554c581-20ff-4c43-886b-daf1999f3fdb",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C11",
+      "claim": "SPNs are proposed to form feed-forward connections onto thalamo-recipient L4 neurons in a transient circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, SPNs are proposed to form feed-forward connections onto thalamo-recipient L4 neurons in a transient circuit that is eliminated upon establishment of the mature thalamocortical connectivity in L4 (Viswanathan et al., 2012; Hanganu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "4a661785-132c-4f68-b41e-4a6e3be2af6a",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C12",
+      "claim": "A large proportion of SPNs undergo programmed cell death during the first postnatal week in the mouse cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "While a large proportion of SPNs undergo programmed cell death during the first postnatal week in the mouse cortex (Hoerder-Suabedissen and Moln\u00e1r, 2013), the surviving SPNs form a thin, compact structure below L6, termed L6b in mature neocortex (Marx et al., 2017; Zolnik et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "2326e758-9e8c-48e0-a6eb-bf6718a35120",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C13",
+      "claim": "Surviving SPNs form a thin, compact structure below L6, termed L6b in mature neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "While a large proportion of SPNs undergo programmed cell death during the first postnatal week in the mouse cortex (Hoerder-Suabedissen and Moln\u00e1r, 2013), the surviving SPNs form a thin, compact structure below L6, termed L6b in mature neocortex (Marx et al., 2017; Zolnik et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "fd799482-5f50-4cf7-82ea-ae3730a27063",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C14",
+      "claim": "Lpar1-EGFP SPNs form a layer of two to three cells deep adjacent to the white matter tract in neonatal S1BF.",
+      "claim_type": "EXPLICIT",
+      "source": "Lpar1-EGFP SPNs form a layer of two to three cells deep adjacent to the white matter tract in neonatal S1BF (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by the image in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "f9b78c44-ce3b-442a-adca-b082b981cbcc",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C15",
+      "claim": "Lpar1-EGFP SPNs have an intrinsic electrophysiological profile consistent with regular firing pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We established that SPNs had an intrinsic electrophysiological profile consistent with regular firing pyramidal cells (Figure 1b,c) by injecting both depolarising and hyperpolarising current steps (500 ms) of increasing amplitude into cells recorded at resting membrane potential in current clamp configuration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by electrophysiological traces in Figure 1b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "afb18b0c-ce72-4c49-82cc-3d48b006d8ed",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C16",
+      "claim": "There is a progressive maturation of intrinsic properties of Lpar1-EGFP SPNs across P1-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of passive (Figure 1d\u2013f) and active (Figure 1g\u2013i) properties revealed a progressive maturation of intrinsic properties across the ages tested broadly in line with previous reports (Hanganu et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1d-i, with citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "9dc1c7ca-a54d-4b07-9e2b-b17e13a9c307",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C17",
+      "claim": "Input resistance (RIN) of Lpar1-EGFP SPNs decreases significantly over development from P1-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observed a statistically significant decrease in input resistance (RIN) (Figure 1e) and membrane time constant (Figure 1f), as well as increase in rheobase (Figure 1g), spike amplitude (Figure 1h), and maximum firing frequency (Figure 1i) over development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "3e39fba4-6e4d-42c4-89f7-87193b56597d",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C18",
+      "claim": "Membrane time constant of Lpar1-EGFP SPNs decreases significantly over development from P1-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observed a statistically significant decrease in input resistance (RIN) (Figure 1e) and membrane time constant (Figure 1f), as well as increase in rheobase (Figure 1g), spike amplitude (Figure 1h), and maximum firing frequency (Figure 1i) over development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "80c02aff-82a8-4ac7-a514-8e13b150e3eb",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C19",
+      "claim": "Rheobase of Lpar1-EGFP SPNs increases significantly over development from P1-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observed a statistically significant decrease in input resistance (RIN) (Figure 1e) and membrane time constant (Figure 1f), as well as increase in rheobase (Figure 1g), spike amplitude (Figure 1h), and maximum firing frequency (Figure 1i) over development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "17c859c1-c1a1-4518-afce-7200afad2c43",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C20",
+      "claim": "Spike amplitude of Lpar1-EGFP SPNs increases significantly over development from P1-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observed a statistically significant decrease in input resistance (RIN) (Figure 1e) and membrane time constant (Figure 1f), as well as increase in rheobase (Figure 1g), spike amplitude (Figure 1h), and maximum firing frequency (Figure 1i) over development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "6d23985e-8d90-4996-9b2d-08110c257376",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C21",
+      "claim": "Maximum firing frequency of Lpar1-EGFP SPNs increases significantly over development from P1-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observed a statistically significant decrease in input resistance (RIN) (Figure 1e) and membrane time constant (Figure 1f), as well as increase in rheobase (Figure 1g), spike amplitude (Figure 1h), and maximum firing frequency (Figure 1i) over development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "4be05e97-e41e-4155-8708-ab46cf2508a4",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C22",
+      "claim": "Pyramidal-like Lpar1-EGFP SPNs have a prominent apical dendrite projecting into L6a.",
+      "claim_type": "EXPLICIT",
+      "source": "It was evident from our reconstruction of 19 of these cells that Lpar1-EGFP SPNs fell into two categories based on dendritic arbor and, specifically, the presence or absence of an apical dendrite (Figure 2a,b): (1) pyramidal-like SPNs with a prominent apical dendrite projecting into L6a and (2) fusiform SPNs that lacked an apical dendrite but instead exhibited bitufted dendrites that extended horizontally in the subplate and white matter tract.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by morphological reconstructions in Figure 2a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "b3737ae9-ea34-4e8d-94b0-80c5a532079b",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C23",
+      "claim": "Fusiform Lpar1-EGFP SPNs lack an apical dendrite and exhibit bitufted dendrites that extend horizontally in the subplate and white matter tract.",
+      "claim_type": "EXPLICIT",
+      "source": "It was evident from our reconstruction of 19 of these cells that Lpar1-EGFP SPNs fell into two categories based on dendritic arbor and, specifically, the presence or absence of an apical dendrite (Figure 2a,b): (1) pyramidal-like SPNs with a prominent apical dendrite projecting into L6a and (2) fusiform SPNs that lacked an apical dendrite but instead exhibited bitufted dendrites that extended horizontally in the subplate and white matter tract.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by morphological reconstructions in Figure 2a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "4183f2ca-6e18-48e7-8937-8cf23589247a",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C24",
+      "claim": "The axon of pyramidal Lpar1-EGFP SPNs ascends through the overlying cortex, with the majority projecting to the marginal zone/L1.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlaying the axonal arbor of reconstructed morphologies revealed a further difference between these two populations: the axon of pyramidal SPNs (Figure 2d) ascended through the overlying cortex, with majority of cells projecting to the marginal zone/L1 (n = 9/12 cells, with the remaining three axons severed in L2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by axonal reconstructions in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "232af990-634b-417b-b1c9-56682dd326cb",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C25",
+      "claim": "The axon of fusiform Lpar1-EGFP SPNs is largely restricted to the SP with a few collaterals extending into L6a.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the axon of fusiform cells was largely restricted to the SP with a few collaterals extending into L6a (Figure 2e) and no axon projecting to more superficial layers (n = 7/7 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by axonal reconstructions in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "70bdab68-8b38-4739-ac95-12ed0b7a93a3",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C26",
+      "claim": "The proportion of fusiform Lpar1-EGFP SPNs decreases from P5 onward.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphologies were recovered across all recorded ages; however, the proportion of fusiform cells decreased from P5 onward (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "8714f441-bb39-47af-a712-4250b10e9f3a",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C27",
+      "claim": "All EGFP+ cells in the SP at P3 are GABA-negative.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirmed that EGFP+ cells in the SP were all GABA-negative (0/79 Lpar1-EGFP SPNs co-expressed GABA), while the vast majority (84%; 16/19) of EGFP+ profiles in L5 were GABA+, consistent with our previous characterisation of the SP (Hoerder-Suabedissen and Moln\u00e1r, 2013) and L5b interneuron populations (Marques-Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by immunohistochemistry data in Figure 2g.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "238d1775-5012-41ac-ab2f-7fe419c59844",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C28",
+      "claim": "84% of EGFP+ profiles in L5 at P3 are GABA+.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirmed that EGFP+ cells in the SP were all GABA-negative (0/79 Lpar1-EGFP SPNs co-expressed GABA), while the vast majority (84%; 16/19) of EGFP+ profiles in L5 were GABA+, consistent with our previous characterisation of the SP (Hoerder-Suabedissen and Moln\u00e1r, 2013) and L5b interneuron populations (Marques-Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by immunohistochemistry data in Figure 2g.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "9ead7022-bbc8-4ef9-b94b-a8043d840b4d",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C29",
+      "claim": "Lpar1-EGFP SPNs are glutamatergic projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data identify Lpar1-EGFP SPNs as glutamatergic projection neurons that fall into two subtypes based on their morphology: (1) fusiform cells that innervate the SP and (2) pyramidal cells whose axons extend through the entire depth of the developing cortex to ramify extensively through the margin zone/L1 (Figure 2h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by GABA immunohistochemistry showing no co-expression with EGFP in SP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "b678108b-c8d4-4ed9-b3df-3c607a194a8d",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C30",
+      "claim": "From the earliest time points recorded (P1-2), Lpar1-EGFP SPNs receive distinct columnar glutamatergic input.",
+      "claim_type": "EXPLICIT",
+      "source": "From the earliest time points recorded (P1\u20132) SPNs received distinct columnar glutamatergic input, either from SP and adjacent cortex (L6a) alone, or from both SP/L6a and more superficial cortex; patterns of innervation that we termed 'local' and 'translaminar' respectively (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by LSPS mapping data in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "712ea837-5412-4b59-ae47-1161a0a80444",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C31",
+      "claim": "At P1-2, Lpar1-EGFP SPNs exhibit two patterns of glutamatergic innervation: 'local' from SP/L6a alone, or 'translaminar' from both SP/L6a and more superficial cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "From the earliest time points recorded (P1\u20132) SPNs received distinct columnar glutamatergic input, either from SP and adjacent cortex (L6a) alone, or from both SP/L6a and more superficial cortex; patterns of innervation that we termed 'local' and 'translaminar' respectively (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by LSPS mapping data in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "5431979b-4741-4312-b12c-30cf5d12cbc4",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C32",
+      "claim": "Translaminar Lpar1-EGFP SPNs at P1-2 receive input from the cortical plate that is absent in local SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The average laminar profile of local (n = 15) and translaminar (n = 8) SPNs at P1\u20132 revealed that the latter received input from the cortical plate (CP) absent in local SPNs (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by LSPS data in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "525dba89-721d-43f2-8ecf-81c32873e25e",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C33",
+      "claim": "At P3-4, translaminar input onto Lpar1-EGFP SPNs becomes more prominent with the source primarily focused in the lower CP, presumptive L4.",
+      "claim_type": "EXPLICIT",
+      "source": "This translaminar input became more prominent over the next two postnatal days (P3\u20134; Figure 3d) with the source primarily focused in the lower CP, presumptive L4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by LSPS data in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "9fb61de9-4059-40c1-aed7-a1a1e997d3f0",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C34",
+      "claim": "At P5-6, the majority (84%) of Lpar1-EGFP SPNs are dominated by local SP/L6a input.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at P5\u20136, we recorded relatively few translaminar neurons with the majority (84%) dominated by local SP/L6a input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by LSPS data in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "604028eb-9d60-4678-a3c8-0eac9580d17c",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C35",
+      "claim": "All Lpar1-EGFP SPNs that received translaminar input from P1 to P4 were of the fusiform subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Recovered morphologies of SPNs mapped from P1 to P4 (n = 15) revealed that all the SPNs, which received translaminar input, were of the fusiform subtype (n = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by combined LSPS and morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "e9feada3-6a1b-4799-a3da-e2304659cb9f",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C36",
+      "claim": "Of the 12 SPN morphologies recovered from P5 to P8, 9 cells received local glutamatergic input and were all of the pyramidal subtype with one exception.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 12 SPN morphologies recovered from P5 to P8, 9 cells received local glutamatergic input. These were all of the pyramidal subtype with the exception of the only fusiform morphology recovered from ourLSPS experiments during this later window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by combined LSPS and morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "f3094489-b340-4603-96e8-dba11875d46d",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C37",
+      "claim": "Transient fusiform Lpar1-EGFP SPNs are the primary recipients of early translaminar input from the cortical plate up until P4.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these data suggest that transient fusiform SPNs are the primary recipients of early translaminar input from the cortical plate (Figure 3i), up until P4 when they become less apparent in our sample.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by combined LSPS and morphological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "46280c55-57cd-429c-a8ac-929e24576ed0",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C38",
+      "claim": "Pyramidal Lpar1-EGFP SPNs are dominated by local glutamatergic input from SP/L6a at early ages.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, pyramidal SPNs are dominated by local glutamatergic input from SP/L6a at early ages (Figure 3i), but acquire varied translaminar input from more superficial layers from P5 onward.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by LSPS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "1ebce920-77db-46a3-9560-a607442975cb",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C40",
+      "claim": "At P5-6, there is a significant increase in TUNEL+ profiles compared to P3-4.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a similar pattern of programmed cell death to our Casp-3 experiments, in that TUNEL+ cells were primarily located in the white matter at P3\u20134 (Figure 4e). However, at P5\u20136, we observed a significant increase in TUNEL+ profiles (Figure 4f) that included Lpar1-EGFP SPNs (Figure 4f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by TUNEL staining data in Figure 4f,g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "f67a9c96-b28f-4e32-b4a7-000c3ed53cf7",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C41",
+      "claim": "The increase in cell death at P5-6 is not restricted to the subplate but occurs across the white matter, subplate, and adjacent infragranular layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it was evident that this increase was not restricted to the subplate (Figure 4f), so we further quantified the density of TUNEL+ profiles across the white matter, subplate, and adjacent infragranular layers at both time points, analysis that identified a surge in cell death at this later time point across the cortical layers sampled (Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by quantification in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "a130069e-bd59-4cf7-8665-449d4c8078a1",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C42",
+      "claim": "A small proportion of Lpar1-EGFP SPNs undergo cell death at the transition between P4 and P5.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this suggests that while a small proportion of Lpar1-EGFP SPNs undergo cell death at the transition between P4 and P5, this is not specific to subplate and likely represents a wider reconfiguration of the circuit at the transition to columnar signalling in S1BF at this time (Dupont et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by TUNEL and Caspase-3 data in Figure 4, with citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "46b2eabb-8d0f-42cd-9818-501cef696e0f",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C43",
+      "claim": "Lpar1-EGFP SPNs receive either local or translaminar GABAergic input across both P1-4 and P5-8 time windows.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our previous assessment of glutamatergic input, it was evident that SPNs received either local (Figure 5c,f) or translaminar input (Figure 5d,g) across both time windows.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by LSPS mapping data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "364ca68f-ef4a-4595-a412-f36dee8505f0",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C44",
+      "claim": "Prior to P5, Lpar1-EGFP SPNs with translaminar GABAergic input receive prominent columnar input from L5.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to P5, SPNs with local (Figure 5c) and translaminar (Figure 5d) input were evident in similar numbers with the latter receiving prominent columnar input from L5 (Figure 5b,d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by LSPS mapping data in Figure 5b,d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "064d915e-db4f-4913-897f-02a09208e90d",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C45",
+      "claim": "From P5 onward, the majority (11/16) of Lpar1-EGFP SPNs receive primarily local GABAergic synaptic input.",
+      "claim_type": "EXPLICIT",
+      "source": "From P5 onward, we observed primarily local GABAergic synaptic input onto SPNs (n = 11/16)(Figure 5f), with the source of translaminar GABAergic input highly variable in location resulting in a diffuse average input profile (Figure 5g) with a more-or-less even distribution across the depth of cortex (Figure 5h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by LSPS mapping data in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "5e180c47-c694-4d5c-b289-2efe5bf86e8e",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C46",
+      "claim": "Translaminar GABAergic input onto Lpar1-EGFP SPNs prior to P5 is highly focused within the immediate column.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, translaminar GABAergic input onto SPNs prior to the emergence of whisker barrels at ~P5 was highly focused within the immediate column (Figure 5i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by columnar analysis in Figure 5i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "406f5635-d771-49f6-b3e8-a6e9187eb6ce",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C47",
+      "claim": "Four out of seven recovered morphologies from P1-4 GABAergic mapping experiments were fusiform cells that received translaminar input.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings in the early time window yielded seven morphologies, of which four were fusiform cells that received translaminar input; the remaining three recovered neurons were the pyramidal subtype, of which two received local input (Figure 5k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by combined LSPS and morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "8470a4a4-be2b-40dd-bdd2-55be077b40cd",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C48",
+      "claim": "SST+ interneurons form a key component of early postnatal translaminar circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatostatin (SST+) interneurons form a key component of early postnatal translaminar circuits (Marques-Smith et al., 2016; Anastasiades et al., 2016) and have been shown to drive synapse formation and circuit maturation (Oh et al., 2016; Tuncdemir et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "1e941dd6-8b26-4168-93cd-70f58e6c6967",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C49",
+      "claim": "There is an increase in SST+ interneuron IPSC amplitude onto Lpar1-EGFP SPNs at P5-6 compared to P3-4.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an increase in IPSC amplitude across all light powers tested greater or equal to minimal stimulation in the P5\u20136 when compared to the P3\u20134 time window (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by optogenetic stimulation data in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "c1fb4ea1-79c5-4d93-83d6-b5b9ae210c1e",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C50",
+      "claim": "The increase in SST+ interneuron IPSC amplitude at P5-6 results from an increase in innervation rather than an increase in quantal size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed no difference in the amplitude of IPSCs recorded in Sr-ACSF between P3\u20134 and P5\u20136 time windows (Figure 6d) despite the significant difference in amplitude under control conditions (Figure 6b,c). This suggests the observed increase in amplitude at this time point results from an increase in innervation by SST+ INs rather than an increase in quantal size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Sr-ACSF experiments in Figure 6b-d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "9615fe62-c244-447a-a6c4-1f100b81cd4b",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C51",
+      "claim": "Lpar1-EGFP SPNs receive two distinct input profiles from SST+ interneurons at P1-4: local SP/L6a versus translaminar infragranular input.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed two distinct input profiles for SPNs at this time (Figure 6e,f): local SP/L6a versus translaminar infragranular SST+ interneuron input.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by LSPS uncaging of ATP data in Figure 6e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "e82ad074-810f-4321-910c-728bc854d06c",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C52",
+      "claim": "Local input SPNs from SST+ interneurons were pyramidal cells (3/3 recovered morphologies).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our previous findings with both glutamatergic and global GABAergic input, local input SPNs were pyramidal cells (3/3 recovered morphologies), whereas SPNs that received translaminar synaptic input were predominantly fusiform (2/3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by combined LSPS and morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "0d6497a6-2dda-44e3-adc6-07a8787d2787",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C53",
+      "claim": "SPNs that received translaminar synaptic input from SST+ interneurons were predominantly fusiform (2/3).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our previous findings with both glutamatergic and global GABAergic input, local input SPNs were pyramidal cells (3/3 recovered morphologies), whereas SPNs that received translaminar synaptic input were predominantly fusiform (2/3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by combined LSPS and morphological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "2466dc1e-cb5f-4c0b-85ad-dfdc34de6a24",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C54",
+      "claim": "GABAergic input onto Lpar1-EGFP SPNs from infragranular SST+ interneurons precedes the reciprocal connection between SST+ cells and L4 spiny stellate neurons during the L4 CPP (P4-9).",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of GABAergic input onto SPNs from infragranular SST+ interneurons precedes our previously reported reciprocal connection between these SST+ cells and L4 spiny stellate neurons during the L4 CPP (P4\u20139) (Marques-Smith et al., 2016) and then onto L2/3 pyramidal cells during the emergence of L4 to L2/3 feed-forward connections (Anastasiades et al., 2016; Bureau et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "520de2c4-0a38-498e-870d-ad6e1890ffd6",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C55",
+      "claim": "Infragranular SST+ interneurons sequentially innervate thalamo-recipient layers through early postnatal life in S1BF.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this evidence suggests that infragranular SST+ interneurons sequentially innervate thalamo-recipient layers through early postnatal life in S1BF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from the temporal sequence of SST+ interneuron connectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "78d5dab1-f6cf-4522-b150-f917f03dabef",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C56",
+      "claim": "Electrical stimulation evoked EPSCs in 76% of Lpar1-EGFP SPNs recorded across P1-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical stimulation evoked excitatory postsynaptic currents (EPSCs) in the majority (76%) of SPNs recorded across the time window studied, although there was a drop in incidence between the P1\u20134 and P5\u20138 (chi-square test X2 (1, N = 56) = 5.364, p = 0.021) time windows (Figure 7b);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by electrical stimulation data in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "110662c8-b0eb-47dd-af0d-baf1c5c106c8",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C57",
+      "claim": "There is a drop in incidence of electrically evoked EPSCs in Lpar1-EGFP SPNs between P1-4 and P5-8 time windows.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical stimulation evoked excitatory postsynaptic currents (EPSCs) in the majority (76%) of SPNs recorded across the time window studied, although there was a drop in incidence between the P1\u20134 and P5\u20138 (chi-square test X2 (1, N = 56) = 5.364, p = 0.021) time windows (Figure 7b);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by statistical analysis of data in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "a1f6682f-2e77-4fd9-a24f-17929e5dd774",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C58",
+      "claim": "Electrically evoked EPSCs in Lpar1-EGFP SPNs can be divided into two populations based on 10-90% rise time and amplitude: type 1 (large amplitude, low jitter) and type 2 (small amplitude, high jitter).",
+      "claim_type": "EXPLICIT",
+      "source": "All EPSCs with a latency > 10 ms and/or jitter > 1.0 ms (Figure 7d) were then excluded from our analysis leaving 32 SPNs that could be further divided into two populations based on 10\u201390% rise time and amplitude (Figure 7e): type 1 (n=9), large amplitude (55.3 pA \u00b1 SD 14.3), low jitter (0.20 ms \u00b1 SD 0.07), versus type 2 (n=23), small amplitude (14.9 mV \u00b1 SD 5.8), high jitter (0.41 ms \u00b1 SD 0.17) EPSCs (Figure 7f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by analysis of electrical stimulation data in Figure 7e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "cd1dc634-93bf-498c-be2c-8226faa57278",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C59",
+      "claim": "Thalamic connectivity to Lpar1-EGFP SPNs could be as low as 17% if type 1 EPSCs represent true orthodromic TC-EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, thalamic connectivity could be as low as 17% if type 1 EPSCs recorded in SPNs represent true orthodromic TC-EPSCs, considerably lower than connectivity reported in previous studies of SP in early postnatal ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from the proportion of type 1 EPSCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "f87c1544-80d8-495b-a54b-ca3e8c288c5e",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C60",
+      "claim": "Blue light reliably evokes inward currents in thalamic relay neurons following Olig3 Cre conditional expression of ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate our optogenetic strategy at early postnatal ages, we first recorded from thalamic relay neurons in Lpar1-EGFP;Olig3 Cre;Ai32 mice and established that we could evoke (1) reliable inward currents in whole-cell patch-clamp mode in response to blue, 470 nm light (Figure 7h, top panel), and (2) time-locked action potentials in cell-attached mode (Figure 7h, bottom panel) from the earliest time points recorded (P1) (n=5 VB cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by optogenetic validation data in Figure 7h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "927ba102-54fe-41be-b465-432907478b1c",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C61",
+      "claim": "Only 2 out of 19 Lpar1-EGFP SPNs (11%) exhibited responses to both electrical and optogenetic stimulation of thalamic afferents.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the whole time window tested (P1\u20138), we obtained recordings under both stimulation protocols in 19 EGFP+ cells. Of these, nine cells across all ages tested (P1\u20138) had short latency, low jitter (<1 ms) EPSCs in response to electrical stimulation (types 1 and 2) (Figure 7i). However, only two cells (11% of Lpar1-EGFP SPNs), with properties consistent with type 1 EPSCs, exhibited responses to both 470 nm light and electrical stimulation; no EGFP+ cells showed synaptic responses to light alone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by combined electrical and optogenetic stimulation data in Figure 7i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "39d2ddaa-7a47-4b78-b082-49b0e6c235d8",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C62",
+      "claim": "Only 3 of 15 (27%) non-EGFP+ SPNs receive thalamic input as identified by combined electrical and optogenetic stimulation in the P1-4 time window.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish whether sparse thalamocortical connectivity is a property of the Lpar1-EGFP subtypes alone, we then recorded from non-EGFP+ SPNs. Using our combined electrical and optogenetic stimulation strategy, we identified thalamic input onto only 3 of 15 (27%) non-EGFP+ SPNs in the P1\u20134 time window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by combined electrical and optogenetic stimulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "7e0068e6-79a4-4412-85ca-20adad9d5eb9",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C63",
+      "claim": "The majority of EPSCs observed after electrical stimulation (type 2) arise from antidromic activation of cortico-thalamic projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore believe that the majority of EPSCs observed after electrical stimulation, termed type two here, arise from antidromic activation of cortico-thalamic projection neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from the lack of optogenetic responses in cells with type 2 EPSCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "1d8bfa4c-ed2c-4a0f-9766-cf2068eb004e",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C64",
+      "claim": "Lpar1-EGFP SPNs in S1BF receive both thalamic and cortico-thalamic input in the first postnatal week, but thalamic input is relatively sparse.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these data suggest that Lpar1-EGFP SPNs in S1BF receive both thalamic and cortico-thalamic input in the first postnatal week, but that the former is relatively sparse, contacting only a small subset of the total population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by combined electrical and optogenetic stimulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "79341e47-d255-495d-b28d-dc132038da9a",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C65",
+      "claim": "Lpar1-EGFP SPNs do not adhere to the canonical role reported for SPNs in primary sensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study identifies that Lpar1-EGFP SPNs in S1BF have an additional novel function that does not conform to the canonical model for SPNs established across sensory cortices, wherein SPNs act as relay cells for thalamic input to L4 (Kanold and Luhmann, 2010; Tolner et al., 2012; Allendoerfer and Shatz, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by the sparse thalamic connectivity data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "72045a93-e846-4a1a-abf1-2aa874c5f258",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C66",
+      "claim": "Fusiform Lpar1-EGFP SPNs are ideally placed to interpret and amplify sparse thalamic input alongside emergent signalling from the cortical plate.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that fusiform Lpar1-EGFP SPNs are ideally placed to interpret and amplify sparse thalamic input alongside emergent signalling from the cortical plate, thereby providing a template \u2013 through their innervation of other SPNs including the Lpar1-EGFP pyramidal subtype \u2013 for the columnar circuit assembly up until the emergence of whisker barrels in L4 at ~P4\u2013P5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as a proposed model based on the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "faab7f36-30a4-464c-bf4c-95cf276062e7",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C67",
+      "claim": "Prenatal spontaneous thalamic activity plays an instrumental role in determining the columnar organization of S1BF.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident that prenatal spontaneous thalamic activity plays an instrumental role in determining the columnar organization of S1BF (Ant\u00f3n-Bola\u00f1os et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "77c2349e-6e3e-4888-ba67-00165b774d7e",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C68",
+      "claim": "Shortly before birth, thalamic afferent fibres are restricted to the subplate and thalamic stimulation elicits activity that spreads laterally through this and immediate adjacent infragranular layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly before birth thalamic afferent fibres are restricted to the subplate and thalamic stimulation elicits activity that spreads laterally through this and immediate adjacent infragranular layers (Higashi et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "bf6b41fe-f520-4fcc-8781-3123b136f562",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C69",
+      "claim": "Lpar1 (Edg2) is one of a number of markers that delineate SPN diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Lpar1 (Edg2) is one of a number of markers previously shown to delineate SPN diversity (Hoerder-Suabedissen and Moln\u00e1r, 2013), with the cohort labeled by this line one of the earliest born subtypes with peak neurogenesis at embryonic day (E)11.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "0aed875e-9c96-4137-aba4-7f8938399921",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C70",
+      "claim": "The cohort labeled by the Lpar1-EGFP line is one of the earliest born SPN subtypes with peak neurogenesis at embryonic day (E)11.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Lpar1 (Edg2) is one of a number of markers previously shown to delineate SPN diversity (Hoerder-Suabedissen and Moln\u00e1r, 2013), with the cohort labeled by this line one of the earliest born subtypes with peak neurogenesis at embryonic day (E)11.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "1ca4daa7-1639-4b8d-9eb0-09a3cbb8bac1",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C71",
+      "claim": "EGFP expression in Lpar1-EGFP SPNs is evident at embryonic ages.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP expression is evident in this population at embryonic ages (Hoerder-Suabedissen and Moln\u00e1r, 2013), increasing to label both SP and non-SP neurons by the end of the first postnatal week (Marques-Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "de71054a-c15e-4fed-bb65-5566b91b2570",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C72",
+      "claim": "The temporal dynamics of connections in S1BF are quite different from those reported for A1, notably the early afferent input from L4.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the temporal dynamics of the connections that we observe in S1BF, notably the early afferent input from L4, are quite different to those reported for A1 wherein L4 input emerges in the second postnatal week (Viswanathan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by comparison with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "c857b856-9e25-4122-a54b-ba64dc053436",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C73",
+      "claim": "The disparity in timing of L4 input between S1BF and A1 could underpin differences in the role of SP in circuit maturation between sensory areas.",
+      "claim_type": "EXPLICIT",
+      "source": "This disparity in timing could underpin differences in the role of SP in circuit maturation between sensory areas and suggests that the cytoarchitecture of sensory areas differs from the outset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from the observed differences.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "fd35dc4d-e4ef-4561-ae2e-9d11c0a47dce",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C74",
+      "claim": "Pyramidal Lpar1-EGFP SPNs are likely conduits for thalamic activity, recruiting pyramidal cells and GABAergic interneurons in more superficial cortex via their L1 axon collaterals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that Lpar1-EGFP pyramidal SPNs are likely conduits for such activity, recruiting pyramidal cells and GABAergic interneurons in more superficial cortex (Friauf and Shatz, 1991; Che et al., 2018) via their L1 axon collaterals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from the morphological and connectivity data, with citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "2ebd0ed6-fb71-4490-8e44-503e1c636227",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C75",
+      "claim": "Neurons in the superficial cortical layers provide feedback columnar glutamatergic and GABAergic synaptic input onto transient fusiform SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, neurons in the superficial cortical layers provide feedback columnar glutamatergic and GABAergic synaptic input onto transient fusiform SPNs thus completing the circuit (Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and supported by LSPS mapping data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "4ce318a4-4bcb-46af-828c-941c846e4e78",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C76",
+      "claim": "The sparse nature of thalamic engagement with the subplate coupled with an indirect relay mechanism represents a plausible substrate to ensure the emergence of spatially distinct columnar circuits in S1BF.",
+      "claim_type": "EXPLICIT",
+      "source": "This indirect mechanism could provide the necessary framework for the interpretation of early thalamic signals resulting in columnar organisation. Indeed, such a mechanism coupled with the sparse nature of thalamic engagement with the subplate represents a plausible substrate to ensure the emergence of spatially distinct columnar circuits in S1BF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a speculative model based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "804ff299-ca81-416c-bf5d-90e522f2e083",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C77",
+      "claim": "The relay of thalamic input via L1 moves away from a L4-centric view of early thalamic engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, relay of thalamic input via L1 moves away from a L4-centric view of early thalamic engagement, more in line with distributed thalamocortical input across all six layers of neocortex (Feldmeyer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from the data, with citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "28aa13fd-5537-4712-ac5a-0eaa8dbd1cfd",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C78",
+      "claim": "The subplate is a transient layer in the developing neocortex located between the emergent cortical plate and the underlying white matter.",
+      "claim_type": "EXPLICIT",
+      "source": "The subplate is a transient layer in the developing neocortex located between the emergent cortical plate and the underlying white matter (Kostovic and Rakic, 1990; Hoerder-Suabedissen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "36e202f8-a981-4630-825e-638c6754fc8a",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C79",
+      "claim": "The subplate contains a diverse population of neuronal subtypes that differ in terms of molecular markers, morphology, neurotransmitter identity, and connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "It contains a diverse population of neuronal subtypes that differ in term of molecular markers (Hoerder-Suabedissen and Moln\u00e1r, 2013), morphology (Marx and Feldmeyer, 2013), neurotransmitter identity (Boon et al., 2019), and connectivity (Viswanathan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "9a9ebbfb-4178-430f-9f62-957963dd7b05",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C80",
+      "claim": "SPNs are relatively mature when compared to cortical neurons in the more superficial cortical plate early in development.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological studies performed in primary sensory areas suggest that SPNs are relatively mature when compared to cortical neurons in the more superficial cortical plate early in development (Marx and Feldmeyer, 2013; Luhmann et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "c8449d54-64fc-4174-9f79-266e7a29f505",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C81",
+      "claim": "SPNs are regarded as key mediators of early spontaneous and sensory-evoked activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As such they are regarded as key mediators of early spontaneous and sensory-evoked activity (Tolner et al., 2012) and direct circuit maturation (Kanold and Luhmann, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "16669775-e208-481d-8a7b-0b9033009331",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C82",
+      "claim": "SPNs promote the maturation of cortical GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, SPNs also promote the maturation of cortical GABAergic neurons (Kanold and Shatz, 2006), pioneer cortico-thalamic projections (McConnell et al., 1989), secrete proteins that control extracellular matrix composition, attract and guide thalamocortical fibres, regulate plasticity and myelination (Kondo et al., 2015), and control the radial migration of cortical neurons at embryonic ages (Ohtaka-Maruyama et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "f9972159-5cd5-4347-80f8-212b11f94a3f",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C83",
+      "claim": "SPNs pioneer cortico-thalamic projections.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, SPNs also promote the maturation of cortical GABAergic neurons (Kanold and Shatz, 2006), pioneer cortico-thalamic projections (McConnell et al., 1989), secrete proteins that control extracellular matrix composition, attract and guide thalamocortical fibres, regulate plasticity and myelination (Kondo et al., 2015), and control the radial migration of cortical neurons at embryonic ages (Ohtaka-Maruyama et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "eadfb752-799c-4031-96e1-64ed6eea09e7",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C84",
+      "claim": "SPNs secrete proteins that control extracellular matrix composition, attract and guide thalamocortical fibres, regulate plasticity and myelination.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, SPNs also promote the maturation of cortical GABAergic neurons (Kanold and Shatz, 2006), pioneer cortico-thalamic projections (McConnell et al., 1989), secrete proteins that control extracellular matrix composition, attract and guide thalamocortical fibres, regulate plasticity and myelination (Kondo et al., 2015), and control the radial migration of cortical neurons at embryonic ages (Ohtaka-Maruyama et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "c26c62d9-c9e2-4d39-8965-314c878f7ad5",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C85",
+      "claim": "SPNs control the radial migration of cortical neurons at embryonic ages.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, SPNs also promote the maturation of cortical GABAergic neurons (Kanold and Shatz, 2006), pioneer cortico-thalamic projections (McConnell et al., 1989), secrete proteins that control extracellular matrix composition, attract and guide thalamocortical fibres, regulate plasticity and myelination (Kondo et al., 2015), and control the radial migration of cortical neurons at embryonic ages (Ohtaka-Maruyama et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "3d7cbcc0-c6ee-45b1-987c-018c9e83100f",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C86",
+      "claim": "Previous studies performed in A1 have identified two distinct physiological populations of SPN: those that receive feedback glutamatergic input from L4 and a second cohort that only receives local input.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous studies performed in A1 have identified two distinct physiological populations of SPN \u2013 those that receive feedback glutamatergic input from L4 and a second cohort that only receives local input (Viswanathan et al., 2012) \u2013 this has not been explicitly linked to SPN identity per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "01294f08-9554-48f5-b157-fa4902308146",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C87",
+      "claim": "Thalamic input is a determinant of columnar organization in late embryonic somatosensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recent evidence suggests that while thalamic input is a determinant of columnar organization in late embryonic somatosensory cortex (Ant\u00f3n-Bola\u00f1os et al., 2019), such activity pre-dates the transition to the mature cytoarchitecture and columnar signalling unit (Dupont et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "eaf8c410-2c41-4507-bd2a-01fa60d61313",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C88",
+      "claim": "Thalamic activity pre-dates the transition to the mature cytoarchitecture and columnar signalling unit in somatosensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recent evidence suggests that while thalamic input is a determinant of columnar organization in late embryonic somatosensory cortex (Ant\u00f3n-Bola\u00f1os et al., 2019), such activity pre-dates the transition to the mature cytoarchitecture and columnar signalling unit (Dupont et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "a52f63af-2aad-4d40-bd97-8cbd3ce564ea",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "claim_id": "C90",
+      "claim": "The P4-5 time point represents the switch from transient SP to layer 6b (L6b) in S1BF.",
+      "claim_type": "EXPLICIT",
+      "source": "This diversification of synaptic input fits with the rapid transition to columnar signalling previously reported at P5 (Dupont et al., 2006) and suggests that this time point represents the switch from transient SP to layer 6b (L6b) (Zolnik et al., 2020) in S1BF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from the data, with citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "390ffb6d-81ad-4eac-8a7d-293f85683c79",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Lpar1-EGFP SPNs comprise two morphological subtypes: pyramidal SPNs with apical dendrites projecting to L6a and axons extending to the marginal zone/L1, and fusiform SPNs with bitufted dendrites and axons restricted to the subplate. Both subtypes are glutamatergic projection neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C22-C25, and C29 are directly supported by morphological reconstructions (Figure 2) and GABA immunohistochemistry (Figure 2g) showing 0/79 EGFP+ SPNs co-expressed GABA. The morphological distinctions are clearly documented with quantitative dendritic directionality analysis and axonal tracing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "2b07ebaa-6764-440a-9612-7ae013765756",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Lpar1-EGFP SPNs exhibit regular firing pyramidal cell electrophysiology with progressive maturation of intrinsic properties from P1-8, including significant decreases in input resistance and membrane time constant, and increases in rheobase, spike amplitude, and maximum firing frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 are supported by whole-cell patch-clamp recordings from 103 SPNs across P1-8 with statistical analysis showing significant developmental changes (Figure 1). The data are consistent with previous reports and provide comprehensive characterization of intrinsic properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "4470c70a-06c6-43ff-beed-5b5957b6c56e",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Fusiform Lpar1-EGFP SPNs represent a transient population that decreases from P5 onward and are the primary recipients of early translaminar glutamatergic input from the cortical plate up until P4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C35-C37 are supported by combined morphological recovery and LSPS mapping data showing all SPNs receiving translaminar input from P1-P4 were fusiform (6/6), while pyramidal SPNs dominated local input patterns. The temporal decline in fusiform cells is documented in Figure 2f.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "47d10ffe-17b0-4f17-98ea-ba4a9aa6dbf6",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Lpar1-EGFP SPNs exhibit developmentally dynamic glutamatergic connectivity patterns: at P1-4, SPNs receive either local (SP/L6a) or translaminar (including cortical plate/L4) input, while at P5-8, the majority (84%) receive local input with pyramidal SPNs acquiring diverse translaminar input from superficial layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C30-C34, and C38 are supported by systematic LSPS mapping across development (Figure 3) with clear laminar profiles showing the transition in connectivity patterns. The data include sufficient sample sizes (n=15 local, n=8 translaminar at P1-2) and are correlated with morphological subtypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "15f7b312-5a3d-4973-9a58-b809423c23b9",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The emergence of whisker barrels at P4-5 coincides with a significant increase in cell death across the white matter, subplate, and adjacent infragranular layers, though only a small proportion of Lpar1-EGFP SPNs undergo apoptosis at this transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C40-C42 are supported by TUNEL staining and Caspase-3 immunohistochemistry (Figure 4) showing significant increases in cell death markers at P5-6 compared to P3-4. The data include quantification across multiple cortical layers and demonstrate the broader nature of cell death beyond the subplate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "fc0c3936-4e9e-4215-b5e5-2e8b0c20cdbe",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Lpar1-EGFP SPNs receive developmentally regulated GABAergic input: prior to P5, SPNs receive either local or translaminar GABAergic input with the latter showing prominent columnar input from L5, while from P5 onward, the majority (11/16) receive primarily local GABAergic input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by LSPS mapping of GABAergic input (Figure 5) with clear laminar and columnar profiles. The data show fusiform cells predominantly received translaminar input (4/7 morphologies) while pyramidal cells received local input, consistent with the glutamatergic connectivity patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "3a2d72d1-0bc7-4797-888c-21c9e15bcc99",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SST+ interneurons provide developmentally regulated input to Lpar1-EGFP SPNs, with increased innervation (not quantal size) at P5-6 compared to P3-4. At P1-4, SPNs receive either local SP/L6a or translaminar infragranular SST+ input, with fusiform cells predominantly receiving translaminar input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C55 are supported by optogenetic stimulation experiments (Figure 6a-d) showing increased IPSC amplitude at P5-6 without changes in Sr2+-ACSF conditions, and LSPS mapping with P2x2 receptor expression (Figure 6e-f) identifying distinct input patterns. The temporal sequence of SST+ interneuron connectivity is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lpar1-EGFP SPNs receive sparse thalamic innervation throughout early postnatal life, with only 11% of EGFP+ SPNs exhibiting responses to both electrical and optogenetic stimulation of thalamic afferents. The majority of electrically evoked EPSCs likely arise from antidromic activation of cortico-thalamic projection neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C56-C64 are supported by rigorous combined electrical and optogenetic stimulation experiments (Figure 7) using Olig3-Cre conditional ChR2 expression in thalamus. The validation of the optogenetic approach is thorough (Figure 7h), and the sparse connectivity (2/19 cells, 11%) is confirmed in both EGFP+ and non-EGFP+ SPNs (3/15, 27%). The interpretation of type 2 EPSCs as antidromic is reasonable given the lack of optogenetic responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "3b675378-09f3-4f01-8cf8-1fb7277cb039",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Lpar1-EGFP SPNs do not adhere to the canonical relay model for SPNs. Instead, fusiform SPNs are proposed to interpret and amplify sparse thalamic input alongside cortical plate signaling, while pyramidal SPNs serve as conduits recruiting superficial cortex via L1 axon collaterals, representing an indirect relay mechanism for columnar circuit assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C66 and C74-C77 represent interpretive models based on the data but include substantial speculation. While the sparse thalamic connectivity (C6-C7) and morphological/connectivity patterns (C1-C5) support a non-canonical role, the proposed mechanisms of signal amplification and relay via L1 lack direct functional evidence. The model is plausible but requires additional experiments to demonstrate the proposed circuit dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "7cb62053-d0a1-4980-bfcc-6037a955706d",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "At P3, all EGFP+ cells in the subplate are GABA-negative (0/79), while 84% (16/19) of EGFP+ profiles in L5 are GABA+.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are directly supported by GABA immunohistochemistry data (Figure 2g) with clear quantification. This confirms the glutamatergic identity of Lpar1-EGFP SPNs and distinguishes them from L5 interneurons labeled by the same transgene.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "8bd50a25-1d25-4aa8-9c47-6a53c1ef88a4",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Pyramidal Lpar1-EGFP SPNs receive local input from the subplate at early ages (P1-4) but acquire input from overlying cortex during the later time window (P5-8).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 are supported by LSPS mapping data (Figure 3) showing the developmental transition in connectivity patterns for pyramidal SPNs. The data are consistent with the broader findings on glutamatergic connectivity dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "b8865ad9-7883-4167-a400-4e6bb1e08b92",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The P4-5 time point represents the switch from transient subplate to layer 6b (L6b) in S1BF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is supported by the convergence of multiple findings: the decline in fusiform SPNs (C26), increased cell death (C40-C42), and diversification of synaptic input patterns (C34, C45) at P5. The interpretation is consistent with cited literature on columnar signaling transitions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "6fa40b72-6cb7-414a-817c-1067f3c39de5",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about subplate neuron biology, including their canonical role in thalamocortical synapse establishment, diversity, maturation functions, and developmental dynamics, are established from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 and C78-C88 represent background knowledge appropriately cited from previous literature. These claims provide context for the current study and are not primary findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    },
+    {
+      "id": "bf403f88-ac8d-40bf-bf0a-bff215b742ad",
+      "content_id": "7fbbd39a-a586-4116-a3ba-aa0e53f94f25",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion claims about prenatal thalamic activity, Lpar1 marker characteristics, and comparisons with auditory cortex are drawn from prior literature and current observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C73 appropriately cite prior literature (C67-C71) and make reasonable comparisons between S1BF and A1 based on the current data (C72-C73). The interpretation that temporal differences may underpin functional differences between sensory areas is speculative but reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:53:25.920874Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "15ae4731-1732-4248-b937-18ee6d58a4e1",
+      "result_id": "390ffb6d-81ad-4eac-8a7d-293f85683c79"
+    },
+    {
+      "claim_id": "4be05e97-e41e-4155-8708-ab46cf2508a4",
+      "result_id": "390ffb6d-81ad-4eac-8a7d-293f85683c79"
+    },
+    {
+      "claim_id": "b3737ae9-ea34-4e8d-94b0-80c5a532079b",
+      "result_id": "390ffb6d-81ad-4eac-8a7d-293f85683c79"
+    },
+    {
+      "claim_id": "4183f2ca-6e18-48e7-8937-8cf23589247a",
+      "result_id": "390ffb6d-81ad-4eac-8a7d-293f85683c79"
+    },
+    {
+      "claim_id": "232af990-634b-417b-b1c9-56682dd326cb",
+      "result_id": "390ffb6d-81ad-4eac-8a7d-293f85683c79"
+    },
+    {
+      "claim_id": "9ead7022-bbc8-4ef9-b94b-a8043d840b4d",
+      "result_id": "390ffb6d-81ad-4eac-8a7d-293f85683c79"
+    },
+    {
+      "claim_id": "fd799482-5f50-4cf7-82ea-ae3730a27063",
+      "result_id": "2b07ebaa-6764-440a-9612-7ae013765756"
+    },
+    {
+      "claim_id": "f9b78c44-ce3b-442a-adca-b082b981cbcc",
+      "result_id": "2b07ebaa-6764-440a-9612-7ae013765756"
+    },
+    {
+      "claim_id": "afb18b0c-ce72-4c49-82cc-3d48b006d8ed",
+      "result_id": "2b07ebaa-6764-440a-9612-7ae013765756"
+    },
+    {
+      "claim_id": "9dc1c7ca-a54d-4b07-9e2b-b17e13a9c307",
+      "result_id": "2b07ebaa-6764-440a-9612-7ae013765756"
+    },
+    {
+      "claim_id": "3e39fba4-6e4d-42c4-89f7-87193b56597d",
+      "result_id": "2b07ebaa-6764-440a-9612-7ae013765756"
+    },
+    {
+      "claim_id": "80c02aff-82a8-4ac7-a514-8e13b150e3eb",
+      "result_id": "2b07ebaa-6764-440a-9612-7ae013765756"
+    },
+    {
+      "claim_id": "17c859c1-c1a1-4518-afce-7200afad2c43",
+      "result_id": "2b07ebaa-6764-440a-9612-7ae013765756"
+    },
+    {
+      "claim_id": "6d23985e-8d90-4996-9b2d-08110c257376",
+      "result_id": "2b07ebaa-6764-440a-9612-7ae013765756"
+    },
+    {
+      "claim_id": "70bdab68-8b38-4739-ac95-12ed0b7a93a3",
+      "result_id": "4470c70a-06c6-43ff-beed-5b5957b6c56e"
+    },
+    {
+      "claim_id": "604028eb-9d60-4678-a3c8-0eac9580d17c",
+      "result_id": "4470c70a-06c6-43ff-beed-5b5957b6c56e"
+    },
+    {
+      "claim_id": "e9feada3-6a1b-4799-a3da-e2304659cb9f",
+      "result_id": "4470c70a-06c6-43ff-beed-5b5957b6c56e"
+    },
+    {
+      "claim_id": "f3094489-b340-4603-96e8-dba11875d46d",
+      "result_id": "4470c70a-06c6-43ff-beed-5b5957b6c56e"
+    },
+    {
+      "claim_id": "060d029a-cdce-4653-8092-5d5493cedf44",
+      "result_id": "47d10ffe-17b0-4f17-98ea-ba4a9aa6dbf6"
+    },
+    {
+      "claim_id": "b678108b-c8d4-4ed9-b3df-3c607a194a8d",
+      "result_id": "47d10ffe-17b0-4f17-98ea-ba4a9aa6dbf6"
+    },
+    {
+      "claim_id": "712ea837-5412-4b59-ae47-1161a0a80444",
+      "result_id": "47d10ffe-17b0-4f17-98ea-ba4a9aa6dbf6"
+    },
+    {
+      "claim_id": "5431979b-4741-4312-b12c-30cf5d12cbc4",
+      "result_id": "47d10ffe-17b0-4f17-98ea-ba4a9aa6dbf6"
+    },
+    {
+      "claim_id": "525dba89-721d-43f2-8ecf-81c32873e25e",
+      "result_id": "47d10ffe-17b0-4f17-98ea-ba4a9aa6dbf6"
+    },
+    {
+      "claim_id": "9fb61de9-4059-40c1-aed7-a1a1e997d3f0",
+      "result_id": "47d10ffe-17b0-4f17-98ea-ba4a9aa6dbf6"
+    },
+    {
+      "claim_id": "46280c55-57cd-429c-a8ac-929e24576ed0",
+      "result_id": "47d10ffe-17b0-4f17-98ea-ba4a9aa6dbf6"
+    },
+    {
+      "claim_id": "2bdd3c0e-2cbf-47f8-9cc5-48e061b7dde3",
+      "result_id": "15f7b312-5a3d-4973-9a58-b809423c23b9"
+    },
+    {
+      "claim_id": "1ebce920-77db-46a3-9560-a607442975cb",
+      "result_id": "15f7b312-5a3d-4973-9a58-b809423c23b9"
+    },
+    {
+      "claim_id": "f67a9c96-b28f-4e32-b4a7-000c3ed53cf7",
+      "result_id": "15f7b312-5a3d-4973-9a58-b809423c23b9"
+    },
+    {
+      "claim_id": "a130069e-bd59-4cf7-8665-449d4c8078a1",
+      "result_id": "15f7b312-5a3d-4973-9a58-b809423c23b9"
+    },
+    {
+      "claim_id": "46b2eabb-8d0f-42cd-9818-501cef696e0f",
+      "result_id": "fc0c3936-4e9e-4215-b5e5-2e8b0c20cdbe"
+    },
+    {
+      "claim_id": "364ca68f-ef4a-4595-a412-f36dee8505f0",
+      "result_id": "fc0c3936-4e9e-4215-b5e5-2e8b0c20cdbe"
+    },
+    {
+      "claim_id": "064d915e-db4f-4913-897f-02a09208e90d",
+      "result_id": "fc0c3936-4e9e-4215-b5e5-2e8b0c20cdbe"
+    },
+    {
+      "claim_id": "5e180c47-c694-4d5c-b289-2efe5bf86e8e",
+      "result_id": "fc0c3936-4e9e-4215-b5e5-2e8b0c20cdbe"
+    },
+    {
+      "claim_id": "406f5635-d771-49f6-b3e8-a6e9187eb6ce",
+      "result_id": "fc0c3936-4e9e-4215-b5e5-2e8b0c20cdbe"
+    },
+    {
+      "claim_id": "8470a4a4-be2b-40dd-bdd2-55be077b40cd",
+      "result_id": "3a2d72d1-0bc7-4797-888c-21c9e15bcc99"
+    },
+    {
+      "claim_id": "1e941dd6-8b26-4168-93cd-70f58e6c6967",
+      "result_id": "3a2d72d1-0bc7-4797-888c-21c9e15bcc99"
+    },
+    {
+      "claim_id": "c1fb4ea1-79c5-4d93-83d6-b5b9ae210c1e",
+      "result_id": "3a2d72d1-0bc7-4797-888c-21c9e15bcc99"
+    },
+    {
+      "claim_id": "9615fe62-c244-447a-a6c4-1f100b81cd4b",
+      "result_id": "3a2d72d1-0bc7-4797-888c-21c9e15bcc99"
+    },
+    {
+      "claim_id": "e82ad074-810f-4321-910c-728bc854d06c",
+      "result_id": "3a2d72d1-0bc7-4797-888c-21c9e15bcc99"
+    },
+    {
+      "claim_id": "0d6497a6-2dda-44e3-adc6-07a8787d2787",
+      "result_id": "3a2d72d1-0bc7-4797-888c-21c9e15bcc99"
+    },
+    {
+      "claim_id": "2466dc1e-cb5f-4c0b-85ad-dfdc34de6a24",
+      "result_id": "3a2d72d1-0bc7-4797-888c-21c9e15bcc99"
+    },
+    {
+      "claim_id": "520de2c4-0a38-498e-870d-ad6e1890ffd6",
+      "result_id": "3a2d72d1-0bc7-4797-888c-21c9e15bcc99"
+    },
+    {
+      "claim_id": "73649792-d7df-4230-bb4d-9994373832cf",
+      "result_id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94"
+    },
+    {
+      "claim_id": "2af79ffe-14b8-431e-bc25-a70a2703fca9",
+      "result_id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94"
+    },
+    {
+      "claim_id": "78d5dab1-f6cf-4522-b150-f917f03dabef",
+      "result_id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94"
+    },
+    {
+      "claim_id": "110662c8-b0eb-47dd-af0d-baf1c5c106c8",
+      "result_id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94"
+    },
+    {
+      "claim_id": "a1f6682f-2e77-4fd9-a24f-17929e5dd774",
+      "result_id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94"
+    },
+    {
+      "claim_id": "cd1dc634-93bf-498c-be2c-8226faa57278",
+      "result_id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94"
+    },
+    {
+      "claim_id": "f87c1544-80d8-495b-a54b-ca3e8c288c5e",
+      "result_id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94"
+    },
+    {
+      "claim_id": "927ba102-54fe-41be-b465-432907478b1c",
+      "result_id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94"
+    },
+    {
+      "claim_id": "39d2ddaa-7a47-4b78-b082-49b0e6c235d8",
+      "result_id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94"
+    },
+    {
+      "claim_id": "7e0068e6-79a4-4412-85ca-20adad9d5eb9",
+      "result_id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94"
+    },
+    {
+      "claim_id": "1d8bfa4c-ed2c-4a0f-9766-cf2068eb004e",
+      "result_id": "4b73793e-5fd4-40fb-a0a8-4dd43728cb94"
+    },
+    {
+      "claim_id": "79341e47-d255-495d-b28d-dc132038da9a",
+      "result_id": "3b675378-09f3-4f01-8cf8-1fb7277cb039"
+    },
+    {
+      "claim_id": "72045a93-e846-4a1a-abf1-2aa874c5f258",
+      "result_id": "3b675378-09f3-4f01-8cf8-1fb7277cb039"
+    },
+    {
+      "claim_id": "fd35dc4d-e4ef-4561-ae2e-9d11c0a47dce",
+      "result_id": "3b675378-09f3-4f01-8cf8-1fb7277cb039"
+    },
+    {
+      "claim_id": "2ebd0ed6-fb71-4490-8e44-503e1c636227",
+      "result_id": "3b675378-09f3-4f01-8cf8-1fb7277cb039"
+    },
+    {
+      "claim_id": "4ce318a4-4bcb-46af-828c-941c846e4e78",
+      "result_id": "3b675378-09f3-4f01-8cf8-1fb7277cb039"
+    },
+    {
+      "claim_id": "804ff299-ca81-416c-bf5d-90e522f2e083",
+      "result_id": "3b675378-09f3-4f01-8cf8-1fb7277cb039"
+    },
+    {
+      "claim_id": "8714f441-bb39-47af-a712-4250b10e9f3a",
+      "result_id": "7cb62053-d0a1-4980-bfcc-6037a955706d"
+    },
+    {
+      "claim_id": "238d1775-5012-41ac-ab2f-7fe419c59844",
+      "result_id": "7cb62053-d0a1-4980-bfcc-6037a955706d"
+    },
+    {
+      "claim_id": "75db67f5-b52a-4738-acb3-275eed1cde7d",
+      "result_id": "8bd50a25-1d25-4aa8-9c47-6a53c1ef88a4"
+    },
+    {
+      "claim_id": "4a469ebd-2048-40b5-b5f6-d345f6c381ee",
+      "result_id": "8bd50a25-1d25-4aa8-9c47-6a53c1ef88a4"
+    },
+    {
+      "claim_id": "a52f63af-2aad-4d40-bd97-8cbd3ce564ea",
+      "result_id": "b8865ad9-7883-4167-a400-4e6bb1e08b92"
+    },
+    {
+      "claim_id": "76bb2de9-5b24-4cad-ade0-4335fb674e4f",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "8253824d-05a2-4a12-8784-c39fb45bee19",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "e9708adf-bcef-4b9b-bc06-39bdca7d9a09",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "1554c581-20ff-4c43-886b-daf1999f3fdb",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "4a661785-132c-4f68-b41e-4a6e3be2af6a",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "2326e758-9e8c-48e0-a6eb-bf6718a35120",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "28aa13fd-5537-4712-ac5a-0eaa8dbd1cfd",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "36e202f8-a981-4630-825e-638c6754fc8a",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "9a9ebbfb-4178-430f-9f62-957963dd7b05",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "c8449d54-64fc-4174-9f79-266e7a29f505",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "16669775-e208-481d-8a7b-0b9033009331",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "f9972159-5cd5-4347-80f8-212b11f94a3f",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "eadfb752-799c-4031-96e1-64ed6eea09e7",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "c26c62d9-c9e2-4d39-8965-314c878f7ad5",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "3d7cbcc0-c6ee-45b1-987c-018c9e83100f",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "01294f08-9554-48f5-b157-fa4902308146",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "eaf8c410-2c41-4507-bd2a-01fa60d61313",
+      "result_id": "6fa40b72-6cb7-414a-817c-1067f3c39de5"
+    },
+    {
+      "claim_id": "faab7f36-30a4-464c-bf4c-95cf276062e7",
+      "result_id": "bf403f88-ac8d-40bf-bf0a-bff215b742ad"
+    },
+    {
+      "claim_id": "77c2349e-6e3e-4888-ba67-00165b774d7e",
+      "result_id": "bf403f88-ac8d-40bf-bf0a-bff215b742ad"
+    },
+    {
+      "claim_id": "bf6b41fe-f520-4fcc-8781-3123b136f562",
+      "result_id": "bf403f88-ac8d-40bf-bf0a-bff215b742ad"
+    },
+    {
+      "claim_id": "0aed875e-9c96-4137-aba4-7f8938399921",
+      "result_id": "bf403f88-ac8d-40bf-bf0a-bff215b742ad"
+    },
+    {
+      "claim_id": "1ca4daa7-1639-4b8d-9eb0-09a3cbb8bac1",
+      "result_id": "bf403f88-ac8d-40bf-bf0a-bff215b742ad"
+    },
+    {
+      "claim_id": "de71054a-c15e-4fed-bb65-5566b91b2570",
+      "result_id": "bf403f88-ac8d-40bf-bf0a-bff215b742ad"
+    },
+    {
+      "claim_id": "c857b856-9e25-4122-a54b-ba64dc053436",
+      "result_id": "bf403f88-ac8d-40bf-bf0a-bff215b742ad"
+    }
+  ],
+  "comparisons": []
+}

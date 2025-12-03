@@ -1,0 +1,165 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C10",
+      "C60",
+      "C61"
+    ],
+    "result": "Cell neighborhood volumes in both snowflake yeast and Volvox carteri follow a modified gamma (k-gamma) distribution consistent with maximum entropy predictions. The k-gamma distribution outperformed alternative distributions (normal, log-normal, beta-prime) in predicting Voronoi volume distributions, with only 7% error in estimating skewness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C10 provide direct experimental evidence from two distinct organisms showing agreement with k-gamma predictions (r_RMS=0.02-0.04, k=2.40-2.88). Claims C60-C61 demonstrate rigorous statistical validation showing the k-gamma distribution significantly outperforms alternative models. The convergence of experimental data, visual P-P plots (Figure 1), and quantitative goodness-of-fit metrics provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C34",
+      "C56",
+      "C57"
+    ],
+    "result": "Snowflake yeast exhibit a specific growth morphology with incomplete cytokinesis, where new buds appear at polar angle 42\u00b0\u00b123\u00b0 with randomly distributed azimuthal angles. Detailed 3D structural analysis was performed on 20 clusters using serial block face SEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 describe the growth morphology with specific angular measurements supported by Figure 1\u2014figure supplement 1. Claims C34, C56-C57 provide methodological details including sample size (N=20 clusters, >2000 cells), growth conditions, and imaging approach. The combination of structural characterization and quantitative measurements provides adequate experimental foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C36",
+      "C37",
+      "C43"
+    ],
+    "result": "Volvox carteri somatic cells (~1000 cells) are arranged on a spherical surface with low hexatic order (\u03a86=0.03\u00b10.01) and predominantly six-fold coordination, though topological defects are present due to spherical geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 describe the basic Volvox structure supported by Figure 1B and established knowledge. Claims C36-C37 provide quantitative measurements of hexatic order from six organisms. Claim C43 describes the coordination pattern consistent with spherical topology constraints. The structural characterization is well-documented though represents descriptive rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C30",
+      "C31",
+      "C44"
+    ],
+    "result": "Spatial correlations in Volvox Voronoi solid angles extend to network distances Q=10, causing deviations from maximum entropy predictions. These deviations encode information about developmental regulation or environmental interactions, as maximum entropy requires independent volume determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 provides quantitative evidence of long-range correlations shown in Figure 3A. Claims C30-C31 establish the theoretical basis for when maximum entropy applies and when deviations occur. Claim C44 interprets the biological significance. The correlation analysis is rigorous, though the interpretation of biological mechanisms (C44) remains somewhat speculative without direct experimental validation of specific regulatory processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C58",
+      "C59"
+    ],
+    "result": "Simulations of diverse growth morphologies (9,100 snowflake-like clusters and 10 Volvox-like groups) demonstrate that gamma-distributed cell neighborhood sizes are a general feature arising from conserved packing statistics across different multicellular architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 states the general conclusion supported by extensive simulations detailed in C58-C59 (>850,000 total cell measurements across multiple morphologies shown in Figure 2). The simulations systematically varied growth rules while maintaining agreement with k-gamma predictions (r_RMS\u22640.01). However, the generalization is limited to the specific morphologies tested and assumes the simulation parameters accurately capture biological reality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C45",
+      "C47"
+    ],
+    "result": "Entropic cellular packing produces predictable multicellular traits despite noise, enabling parent-offspring fidelity without developmental regulation. Group size in snowflake yeast is more heritable than underlying cellular aspect ratio, potentially facilitating evolutionary transitions to multicellularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 cite prior work establishing the relationship between cell aspect ratio and group size heritability. Claim C41 states the key finding about entropic packing enabling fidelity. Claim C45 generalizes about noise producing reproducible traits. However, C47 is explicitly speculative about evolutionary implications. The mechanistic link between packing statistics and heritability is demonstrated, but the evolutionary significance remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Flocculating yeast groups exhibit much larger coefficient of variation in size compared to snowflake yeast groups, demonstrating that randomly assembled groups can be more reproducible than aggregated groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by data from Pentz et al., 2020 shown in Figure 5D, providing a direct comparison between two assembly mechanisms. The comparison effectively illustrates the consequence of different assembly processes on trait variability. However, the sample size and statistical testing details are not provided in the claim, and the result relies on external data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Theoretical analysis using squirmer and shear-stress models demonstrates that Volvox motility is largely insensitive to cell area heterogeneity, as swimming speed depends only on the lowest-order mode of the velocity/force field expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 establish the biological context of Volvox flagellar beating and flow smoothness from prior work. Claim C27 presents the theoretical result that motility is insensitive to area inhomogeneities. Claim C51 states the biological interpretation. The mathematical derivation appears sound (equations 4-10), showing higher modes contribute zero to swimming speed. However, this is purely theoretical without experimental validation of the prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Maximum entropy statistics hold in granular materials despite strict force and torque balance conditions, providing precedent for biological applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 cites established work (Aste and Di Matteo, 2008; Snoeijer et al., 2004; Bi et al., 2015a) on granular materials. This represents accurate citation of prior work establishing the physical precedent for applying maximum entropy principles to constrained systems. The claim appropriately contextualizes the biological findings within established physics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C42",
+      "C48"
+    ],
+    "result": "Background context on multicellularity evolution, noise in self-assembly, and the importance of cellular packing geometry, establishing the motivation for studying entropic packing in multicellular organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C42, and C48 provide background information supported by appropriate citations to establish context. These represent accurate summaries of prior work rather than novel findings. The citations appear appropriate for the claims made, though detailed verification of each cited work is beyond the scope of this evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C49"
+    ],
+    "result": "Entropic packing is not necessarily adaptive but may emerge from random cellular processes. Noise in developmental geometry may be inevitable across diverse microscopic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 explicitly notes entropic packing is \"not necessarily adaptive\" and \"can readily emerge,\" which is appropriately cautious. Claim C49 suggests noise \"may be an inevitable consequence\" based on observations in two organisms. However, these are interpretive claims about evolutionary significance and mechanistic inevitability that extend beyond the direct experimental evidence. The universality claim requires broader taxonomic sampling and mechanistic validation.",
+    "result_type": "MAJOR"
+  }
+]

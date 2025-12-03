@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "TCR cluster-related clonotypes significantly increased after anti-PD-1 therapy in two published melanoma cohorts (p=0.019 and p=0.038), though no differences were observed between clinical response groups. This increase might reflect treatment-dependent expansion of convergent antigen-specific TILs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 provide statistically significant evidence (p<0.05) from two independent cohorts showing increased cluster-related clonotypes post-therapy. C4 appropriately reports a negative finding regarding response groups. C3's speculative interpretation is reasonable given the data, though causality is not established. The statistical analysis appears appropriate for paired comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Cluster-related clonotypes were enriched for TAA-specific TCR\u03b2 variants compared to bulk repertoire, with VDJdb database matching identifying Melan-A and NY-ESO-1 specific variants in 20-50% of patients across cohorts. This demonstrates that cluster analysis can capture clonotypes involved in anti-tumor immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 provide convergent evidence from database matching and enrichment analysis. The VDJdb validation (C7-C10) provides external validation of the cluster approach. C11 appropriately acknowledges current database limitations. The inference in C6 is well-supported by the enrichment data in C5. However, the sensitivity depends on HLA context and database completeness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "CD39+PD-1+ (DP) TIL subsets showed increased clonality and cluster enrichment compared to non-DP subsets for both CD4+ and CD8+ T cells, with CD8+ TILs displaying greater overall clonality. TIL composition was skewed toward CD4+ cells, though DP phenotype was more prevalent in CD8+ TILs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 are supported by TCR repertoire analysis data from 8 patients with appropriate statistical testing (paired t-tests). The findings are internally consistent and supported by referenced figures. Sample size (N=8) is modest but adequate for paired comparisons. The biological interpretation aligns with prior literature on these markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In HLA-A*02+ patient mp26, Melan-A-specific clonotypes were prominently enriched in CD8+ DP subset (~1.5% of repertoire), with most belonging to TCR clusters (~1% cluster-related). This demonstrates that CD39+PD1+ fraction is enriched for large, convergent T cell clones involved in tumor-specific immune response detectable via cluster analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 provide quantitative evidence from a single well-characterized patient with known HLA type. The VDJdb matching provides validation of specificity. C21's conclusion is well-supported by the convergent evidence from this patient and patient pt41. However, generalizability is limited by small patient numbers with known HLA types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "CD137 upregulation assay showed higher CD137high proportion in DP cells, but no difference between TAA-loaded and control conditions by flow cytometry. However, TCR repertoire analysis revealed that only TAA-stimulated CD8+ DP cells (not non-DP or control DP) were enriched with Melan-A-specific clonotypes (~13% of CD137high fraction), demonstrating that CD137 marker analysis alone is insufficiently informative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 present a critical finding showing discordance between surface marker and TCR repertoire analysis. The negative result in C23 combined with positive TCR enrichment in C24-C26 strongly supports the conclusion in C28-C29 that repertoire analysis provides essential information beyond surface markers. This is a well-controlled experiment with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "IL-2low/IL-21/anti-PD-1 combination yielded the greatest number of cluster-related clonotypes and highest proportion of Melan-A-specific clusters compared to other culture conditions. This combination produced the most reproducibly expanded clonotypes (60% matched to initial CD8+ DP TILs) and highest count of CD8+ DP-matched clonotypes, demonstrating positive influence of PD-1 inhibition on CD8+CD39+PD-1+ T cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 provide convergent evidence from multiple metrics (cluster counts, Melan-A-specific proportions, differential expansion analysis) all pointing to superiority of IL-2low/IL-21/anti-PD-1. The edgeR analysis (C38) provides appropriate statistical framework. C41's inference is well-supported. C42 is speculative but reasonable. The negative result for IFN\u03b3 (C37) is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "IL-2 alone yielded highest Treg proportion, IL-2low created preferential conditions for selective Treg expansion, while IL-21 addition drastically reduced Treg proportion among CD4+ TILs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by flow cytometry data with appropriate Treg markers (CD4+CD25highCD127lowFoxP3high). C47 is consistent with cited prior literature (Bonnet et al., 2016). The findings are biologically plausible and internally consistent across the culture conditions tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "IL-21 increased memory phenotype CD127high cells in CD4+ TILs regardless of nivolumab presence, but CD8+ TILs showed significant CD127high enrichment only with simultaneous IL-21 and nivolumab, revealing synergistic action on CD8+ memory T cell expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 present clear differential effects between CD4+ and CD8+ subsets supported by flow cytometry data. The synergy conclusion in C52 is well-justified by the requirement for both agents in CD8+ cells. This represents a novel mechanistic insight into the culture conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "IL-2high conditions yielded highest T cell counts, though IL-2low showed comparable numbers. IL-21 presence stifled IL-2-dependent proliferation but was favorable for CD8+ TIL expansion, while IL-2 alone favored CD4+ cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by cell counting and CD8+/CD4+ ratio data. C55 is consistent with cited prior literature for CD4+ cells. The findings demonstrate important trade-offs between total cell yield and subset composition, which is relevant for optimizing culture conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64"
+    ],
+    "result": "Rational TCR clustering identifies tumor-specific T cell clones and estimates their enrichment among TILs. Clusters increased after anti-PD-1 therapy and were enriched in PD1+CD39+ subpopulations. The cumulative frequency of Melan-A-specific clusters was only slightly lower than total Melan-A-specific TCRs, indicating the approach identifies most high-frequency tumor-specific clonotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C63-C64 provide a comprehensive summary of the main findings. The sensitivity assessment in C63-C64 is important for evaluating the method's performance. The conclusion is well-supported by convergent evidence from multiple experiments and datasets. However, the generalizability beyond Melan-A and HLA-A*02 context requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Melan-A-specific T cells have unusually high frequency in melanoma patients and healthy HLA-A*02 individuals, sometimes representing predominant TIL populations. Using Melan-A as a model may overestimate sensitivity, though other clusters of comparable size exist for other specificities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are established knowledge supported by appropriate citations. C69-C70 provide important caveats about the model system used. This self-critical assessment strengthens the paper by acknowledging potential limitations while noting that multiple specificities show similar clustering behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "TCR clusters are essential features of convergent immune responses involving homologous clonotypes. While cluster analysis may miss tumor-reactive TCRs when single clones dominate or convergent generation probability is low, the approach demonstrates overall power and applicability when specific antigens are unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 provide balanced discussion of method limitations (C72) and strengths (C73). C71 establishes the biological basis. The acknowledgment of limitations is appropriate and well-reasoned. The conclusion about applicability when antigens are unknown (C73) is a key strength supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "TILs cultured in IL-21+ conditions showed highest number of cluster-related TCRs, indicative of more prominent antigen-driven selection. IL-21 likely exerts influence both at antigen-presentation stage (via MHC-restricted presentation during ex vivo culture) and expansion stage (selective promotion of non-Treg populations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by the culture condition data. C76-C78 provide mechanistic speculation that is reasonable given known IL-21 biology and the experimental design. C77 is supported by citation. While mechanistic claims are speculative, they are appropriately qualified and biologically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Greater increase in cluster-related and tumor-specific TCRs was found for cells cultured in IL-21+/anti-PD-1 conditions compared to IL-21+ alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 summarizes a key finding from the culture optimization experiments, supported by the data presented in multiple figures. This demonstrates additive or synergistic effects of combining IL-21 with PD-1 blockade.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C93"
+    ],
+    "result": "This TCR repertoire-based approach should accelerate clinical ACT development by facilitating optimal TIL subset selection and culture condition optimization at R&D stage, and enabling estimation of tumor-reactive TIL abundance in individual samples within clinical pipelines. Methods for grouping convergent TCRs will become essential for rationally designed T cell therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C84, C93 are speculative statements about future impact and applications. While the approach shows promise based on the presented data, actual acceleration of clinical development and widespread adoption remain to be demonstrated. These are reasonable projections but lack direct supporting evidence from clinical outcomes or prospective validation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Homology cluster analysis of TCR repertoires efficiently identifies tumor-reactive TCRs, enables detection in TIL pools, optimizes culture conditions (IL-2low/IL-21/anti-PD-1 showing increased efficiency), and investigates surface marker-based enrichment (confirmed for CD4+/CD8+ PD-1+/CD39+ subsets and informing on 4-1BB-sorted cells). This provides rationale for focusing on CD39+PD1+ TILs in adoptive therapy and represents a powerful tool for clinical ACT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92, C116-C122 provide comprehensive summary of the study's main contributions. These conclusions are well-supported by the convergent evidence from multiple experimental approaches (published dataset analysis, sorted TIL analysis, culture optimization, functional validation). The integration of findings across different experimental systems strengthens the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C61",
+      "C79",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Background knowledge claims establishing the context for the study, including tumor immune evasion mechanisms, ACT as a therapeutic approach, current methods for TIL enrichment and their limitations, properties of IL-2/IL-21/anti-PD-1/IFN\u03b3, prior findings on CD39+/PD-1+ TIL enrichment, Treg biology, and ALICE algorithm characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C30-C34, C43-C45, C49, C61, C79, C85-C115 represent established knowledge supported by appropriate citations to prior literature. These provide necessary context and rationale for the study. The characterization of current methods' limitations (C87-C88, C105) appropriately motivates the need for the proposed approach.",
+    "result_type": "MINOR"
+  }
+]

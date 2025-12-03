@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C46",
+      "C47"
+    ],
+    "result": "Airinemes are long, thin cellular protrusions (tens to hundreds of micrometers) produced by xanthoblasts in zebrafish that search for target melanophore cells via macrophage-mediated transport. The search process has a maximum length, contains Delta-C ligand at the tip for Notch signaling, and shows no evidence of responding to directional cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe established biological properties of airinemes based on prior experimental work (C1-C8, C46-C47), all supported by multiple citations to published studies. The characterization is consistent with the cited literature and provides the biological context for the current study's modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C17",
+      "C16"
+    ],
+    "result": "Analysis of airineme motion rejects both simple random walk and Levy-type models. The MSD shows non-linear behavior with best-fit exponent \u03b1=1.55, and CCDF analysis yields exponents >3 (3.81 for 10 min, 4.40 for 20 min intervals) with continued downward curvature inconsistent with Levy models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rejection of alternative models (C14, C16) is well-supported by quantitative statistical analysis with confidence intervals (C17). The MSD and CCDF analyses provide complementary evidence, and the data clearly distinguish airineme motion from these simpler models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C48",
+      "C20",
+      "C60"
+    ],
+    "result": "Airineme shape is most consistent with a finite-length persistent random walk (PRW) model with maximum length 250 \u03bcm. The MSD fits PRW predictions up to ~15 min, the final length distribution matches observations, and time-series versus final-state curvature differs by only 0.7%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PRW model is supported by multiple lines of evidence: MSD fit (C48), length distribution agreement (C20), and validation that final state approximates dynamics (C60). The model is appropriately validated against experimental data and provides a mechanistic framework consistent with observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "Model assumptions include constant airineme extension velocity (4.5 \u03bcm/min), independent operation of airinemes with generation rate ~0.15 per cell per hour, and unrestricted 2D motion of airineme tips on the tissue surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These modeling assumptions (C10, C21, C22, C24) are justified by citations to prior experimental measurements and observations. The independence assumption is reasonable given the long mean time between initiations (~400 min) compared to extension time (~56 min).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C31",
+      "C32"
+    ],
+    "result": "Simulations reveal an optimal angular diffusion coefficient that maximizes target contact probability by balancing ballistic (straight) and diffusive (curved) search strategies. The optimal strategy depends on target parameters: diffusion-like search is favored for small/close targets, while ballistic search is favored for large/distant targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The existence of an optimum (C27, C28) is demonstrated through systematic simulations across parameter space, and the heuristic explanation for target-dependent optimization (C31, C32) is mechanistically sound. The results are consistent with prior theoretical work on PRW and worm-like chain models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C87",
+      "C88"
+    ],
+    "result": "The experimentally measured angular diffusion coefficient (D\u03b8 = 0.1838 min\u207b\u00b9) matches the simulated optimal value for biologically relevant parameters. This was determined using maximum likelihood estimation with model convolution for uncertainty quantification and validation by five independent analysts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The agreement between experimental measurement and theoretical optimum (C35) is striking and represents a key finding. The methodology is rigorous, including uncertainty quantification (C87) and inter-analyst validation showing <7% error (C88). However, the sample size (N=70 airinemes) is modest, and the agreement could be fortuitous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C67",
+      "C68"
+    ],
+    "result": "Analysis of contact angle distributions reveals that observed airineme parameters produce wider contact angle distributions compared to ballistic or diffusion-like extremes. This reflects a trade-off where maximizing contact probability requires maximal variance while maximizing directional information requires minimal variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contact angle analysis (C39, C41) is supported by simulations, and the trade-off mechanism (C67, C68) is explained through clear geometric reasoning. The heuristic explanations are mechanistically sound and consistent with the simulation results shown in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C70"
+    ],
+    "result": "For zebrafish airinemes, the observed angular diffusion represents a Pareto optimum that balances search success and directional information without sacrificing one for the other. This Pareto optimum emerges at intermediate cell-to-cell distances where the parametric curve forms a concave-down loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Pareto optimality analysis (C45, C70) is well-supported by the parametric curve analysis across parameter space (Figure 5\u2014figure supplement 2). The conclusion that airinemes don't sacrifice search for directional information is justified, though it's noted this could also simply reflect optimization for search alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The variability in experimental and simulated airineme length distributions is of similar magnitude, suggesting that randomness in observed airineme length arises from randomness in target cell placement rather than intrinsic variability in the search process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison of experimental and simulation variability (C58) supports the inference about the source of length variability (C59). This is a reasonable interpretation given the model's ability to reproduce the observed distribution, though other sources of variability cannot be completely ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The isotropy test showing uniform final angle distribution for long airinemes (>15 min growth time) is robust and insensitive to the cutoff length choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The robustness analysis (C61) strengthens confidence in the isotropy result, which is a key prediction of the PRW model. Testing multiple cutoff criteria (N=26 to N=49 airinemes) and consistently finding uniformity (p=0.37) supports the PRW model interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Contact is operationally defined in simulations as the airineme tip reaching within distance rtarg of the target cell center, though the actual biological mechanism of contact detection remains unknown and could involve the entire macrophage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The operational definition (C63, C64) is clearly stated and appropriate for modeling purposes. The acknowledgment of uncertainty about the biological mechanism (C65) is important and honest, representing a limitation that could affect quantitative predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C92"
+    ],
+    "result": "Directional information is quantified using modified Fisher information that accounts for the probabilistic number of airinemes received by target cells, ensuring that cells receiving few airinemes score low in directional information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of Fisher information is appropriate for quantifying directional sensing (C90), and the modification to account for contact probability (C92) is a reasonable methodological choice that prevents misleading conclusions about rarely-contacted cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C76"
+    ],
+    "result": "The finite PRW process is mathematically equivalent to the worm-like chain model, for which exact formulas exist for tip location. There is an opportunity to derive analytic expressions for contact probabilities that would obviate stochastic simulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical equivalence (C52) is correctly stated with appropriate citations. The suggestion for future analytical work (C76) is reasonable speculation about extending existing theoretical results, though it represents future work rather than a current result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C73",
+      "C75"
+    ],
+    "result": "Different cellular protrusions may have shapes optimized for different functions. Mathematical characterization of long-range cellular projections will become increasingly valuable, and alternative optimization objectives like efficient molecular transport might favor different morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C49, C50, C51, C73, C75) represent speculation about broader implications and future directions. While the comparisons to other protrusion types are supported by citations, the hypotheses about function-specific optimization remain untested and speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C74",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The results provide contact probability per airineme as a function of cell density, setting bounds on communication ability with implications for macrophage motility in wound healing/infection and for future pattern formation models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C53, C74, C77, C78, C79) represent reasonable inferences about the implications of the results. The connection to macrophage motility is justified given that macrophages drive airineme tip motion, and the relevance to pattern formation models is appropriate given the biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "PRW models have been used to describe cell migration, including macrophages in zebrafish, which demonstrate directional persistence mixed with randomness and adaptive migration patterns depending on circumstance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C54-C57) accurately summarize prior work on PRW models for cell migration with appropriate citations. The connection to the current work is relevant since airineme motion is driven by macrophage migration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Experimental methods include time-lapse confocal imaging of transgenic zebrafish at 5 min intervals, ex vivo explant preparation, appropriate animal care protocols, and open availability of data and analysis code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C80, C81, C93-C96) are clearly documented with appropriate detail and citations. The open availability of data and code (C93) enhances reproducibility. The methods appear standard and appropriate for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The search process is finite-length and would not always eventually find the target in two dimensions, unlike an infinite-length search.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C66) correctly states a fundamental mathematical property distinguishing finite from infinite random walks in 2D. The finite-length constraint is biologically realistic and critical for the model's predictions.",
+    "result_type": "MINOR"
+  }
+]

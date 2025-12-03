@@ -1,0 +1,2060 @@
+{
+  "submission": {
+    "id": "8b41ba96-9326-4432-bf38-959d7ef6fe05",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:58:43.091415Z",
+    "updated_at": "2025-12-03T18:58:43.091415Z"
+  },
+  "content": [
+    {
+      "id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "submission_id": "8b41ba96-9326-4432-bf38-959d7ef6fe05",
+      "content_type": "manuscript",
+      "content_text": "# CriSNPr, a single interface for the curated and de novo design of gRNAs for CRISPR diagnostics using diverse Cas systems\n\n## Authors\n\n- Asgar H Ansari<sup>1</sup> ([ORCID: 0000-0002-1172-9521](https://orcid.org/0000-0002-1172-9521))\n- Manoj Kumar<sup>1</sup> ([ORCID: 0000-0003-0772-1399](https://orcid.org/0000-0003-0772-1399))\n- Sajal Sarkar<sup>1</sup>\n- Souvik Maiti<sup>1</sup>\n- Debojyoti Chakraborty<sup>1</sup> ([ORCID: 0000-0003-1460-7594](https://orcid.org/0000-0003-1460-7594)) \u2020\n\n### Affiliations\n\n1. CSIR-Institute of Genomics & Integrative Biology New Delhi India ([ROR:021wm7p51](https://ror.org/021wm7p51))\n2. Academy of Scientific & Innovative Research (AcSIR) Ghaziabad India ([ROR:053rcsq61](https://ror.org/053rcsq61))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCRISPR-based diagnostics (CRISPRDx) have improved clinical decision-making, especially during the COVID-19 pandemic, by detecting nucleic acids and identifying variants. This has been accelerated by the discovery of new and engineered CRISPR effectors, which have expanded the portfolio of diagnostic applications to include a broad range of pathogenic and non-pathogenic conditions. However, each diagnostic CRISPR pipeline necessitates customized detection schemes based on the fundamental principles of the Cas protein used, its guide RNA (gRNA) design parameters, and the assay readout. This is especially relevant for variant detection, a low-cost alternative to sequencing-based approaches for which no in silico pipeline for the ready-to-use design of CRISPRDx currently exists. In this manuscript, we fill this lacuna using a unified web server, CriSNPr (CRISPR-based SNP recognition), which provides the user with the opportunity to de novo design gRNAs based on six CRISPRDx proteins of choice (Fn/enFnCas9, LwCas13a, LbCas12a, AaCas12b, and Cas14a) and query for ready-to-use oligonucleotide sequences for validation on relevant samples. Furthermore, we provide a database of curated pre-designed gRNAs as well as target/off-target for all human and SARS-CoV-2 variants reported thus far. CriSNPr has been validated on multiple Cas proteins, demonstrating its broad and immediate applicability across multiple detection platforms. CriSNPr can be found at http://crisnpr.igib.res.in/.\n\n## Introduction\n\nCRISPR proteins\u2019 highly specific recognition of DNA and RNA has made them useful not only as primary gene editors but also for rapid molecular diagnosis of pathogenic nucleic acid mutations. Traditional probe-based diagnostic tests rely on a polynucleotide hybridizing to the target DNA/RNA and providing a readout via an amplification reaction to provide a readout (Wetmur, 1991; Carpenter et al., 1993; Zhao et al., 2015; Thaxton et al., 2006). These quantitative RT-PCR (qRT-PCR) tests and their derivatives have proven to be the gold standard for detecting trace amounts of pathogenic nucleic acids in samples, and they have been used globally to detect SARS-CoV-2 during the ongoing COVID-19 pandemic. Although qRT-PCR is highly sensitive to detect only a few copies of the target pathogenic sequence, its ability to differentiate very closely related sequences has not yet been successfully demonstrated for accurate clinical diagnosis.\n\nThe association of Cas proteins with a target nucleic acid is followed by a secondary readout, either directly through the bound ternary complex or catalytic cleavage of the substrate followed by collateral cleavage of reporter molecules (Jinek et al., 2012; Jinek et al., 2013; Sternberg et al., 2014; Cong et al., 2013; Ran et al., 2013; Mali et al., 2013). DNA/RNA interrogation begins with a guide RNA (gRNA) binding to a target sequence and is then followed by the catalytic activity of Cas effectors. It has been demonstrated that for some Cas proteins, this two-step process generates a very high specificity of target recognition, which can be extended to the diagnosis of single nucleotide variants (SNVs; Chen et al., 2020b; Teng et al., 2018; Karvelis et al., 2020; Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Acharya et al., 2019; Kumar et al., 2021). In comparison to the gold standard SNV detection technologies based on Sanger/Deep sequencing, which necessitate dedicated infrastructure, manpower, and analysis pipelines, as well as longer turnaround times, CRISPR-based variant calling is an appealing alternative for rapid, low-cost diagnosis of disease-causing mutations. Currently (until January 2022), the ClinVar database contains information on approximately 117,437 (GRCh38) pathogenic human variants associated with diseases, the vast majority of which can be detected using CRISPR-based tests (Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Kumar et al., 2021; Landrum et al., 2020; Landrum et al., 2018; Kellner et al., 2019). Similarly, the rapidly evolving SARS-CoV-2 variants emphasize the importance of detecting mutations in pathogenic sequences in order to develop public health strategies, effective vaccines, and a better understanding of disease pathophysiology.\n\nCRISPR-based diagnostics (CRISPRDx) is a relatively new addition to the arsenal of diagnostic methodologies for detecting SNVs. The majority of these pipelines rely on the ability of the Cas protein to differentiate nucleic acids based on mismatches in the gRNA at predetermined positions. This nucleotide position-specific mismatch sensitivity, first reported with LwCas13a, has now been linked to several other Cas effectors and used for SNV detection, including Fn/enFnCas9, LbCas12a, AaCas12b, and Cas14a (Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Acharya et al., 2019; Kumar et al., 2021; Acharya et al., 2021). Several CRISPR/Cas systems have also demonstrated protospacer adjacent motif (PAM) mismatch sensitivity, but because PAM is not always present at the target DNA/RNA sequences, their applicability for diagnostic assays is limited (Teng et al., 2019; Kim et al., 2020).\n\nAlthough the overall strategy for mismatch identification remains largely consistent across Cas proteins, each Cas protein possesses distinctive properties with regard to mismatch-sensitive positions in the gRNA. These were discovered through extensive nucleic acid: protein structural and biochemical research. As a result, while the same SNV can be targeted by multiple Cas proteins, each diagnostic strategy necessitates a unique crRNA design (Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Acharya et al., 2019; Kumar et al., 2021; Acharya et al., 2021). Because each Cas system differs in terms of gRNA sequence, readout mode, PAM requirement, and mismatch sensitivity positions, it can be time-consuming for a user to first identify which Cas effector to use and then design appropriate gRNA and primers for performing diagnostic assays. Consequently, it is necessary to develop a unified method that equips any user with the minimal knowledge and information necessary for designing detection assays for any SNV of interest.\n\nIn response, we present a web server called CRISPR-based SNP recognition (CriSNPr) for designing CRISPRDx pipelines across the CRISPR platforms reported so far for variant detection. CriSNPr is a pipeline for CRISPR-based detection of pathogenic and non-pathogenic mutations in all reported human nucleotide variants (SNP Database [dbSNP]) and SARS-CoV-2 variants of interest/concern (VOI/VOC). Furthermore, it allows for the design and implementation of de novo variants of choice. The server searches for the SNV of interest and returns information about all Cas systems that can be used to detect that SNV, as well as the required crRNA and primer design parameters based on gRNA design principles available in the literature for each Cas protein (Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Acharya et al., 2019; Kumar et al., 2021; Acharya et al., 2021). Importantly, CriSNPr, unlike other available sgRNA design tools, also provides information about off-targets for SNVs targeting modified crRNA sequences and scores them based on the number of off-targets they produce.\n\nCriSNPr has integrated mismatch-sensitive position data for Fn/enFnCas9, LwCas13a, LbCas12a, AaCas12b, and Cas14a and has been experimentally validated on SNVs for a subset of Cas proteins (Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Acharya et al., 2019; Kumar et al., 2021; Acharya et al., 2021). To expand its immediate application to existing human and SARS-CoV-2 variants, the current version of CriSNPr contains SNV information from the human dbSNP and SARS-CoV-2 CNCB-NGDC databases. Even without prior sequence information about an SNV, a user can avail designed sequences by using the rsID (Reference SNP cluster ID) for humans or mutant amino acid position for SARS-CoV-2 (Sherry et al., 2001; Xue et al., 2021). For new SNV-containing sequences not in CriSNPr\u2019s database, users can fetch crRNA and primer sequences by providing a sequence length of 20\u201330 nucleotides with an SNV position and variant nucleobase identity. Finally, we were able to experimentally detect the SARS-CoV-2 E484K variant as well as clinically relevant human SNPs rs2073874 and rs138739292 using FnCas9, Cas14a, and AaCas12b, exhibiting the efficacy of the crRNA designed by CriSNPr.\n\n## Results\n\n### Conventional gRNA design tools are not tailored for CRISPR diagnostic pipelines\n\nWhile there are numerous in silico pipelines for gRNA design for individual Cas proteins, these are primarily intended for gene editing applications (Haeussler et al., 2016; Chuai et al., 2018; Montague et al., 2014; Labun et al., 2019; Heigwer et al., 2014; Moreno-Mateos et al., 2015; Doench et al., 2016; Wang et al., 2019; Concordet and Haeussler, 2018; Kim et al., 2018). For a given Cas9, the workflow for gRNA design integrates specificity and sensitivity scores generated from multiple factors, such as identification of available PAM sites relevant to the target, presence of preferred nucleotides in proximity to PAM, their context within the full-length gRNA sequence, GC (guanine-cytosine) content, and the overall correlation between the gRNA sequence and experimentally validated editing rates (Haeussler et al., 2016; Chuai et al., 2018; Montague et al., 2014; Heigwer et al., 2014; Doench et al., 2016). In addition to gRNA sequence features, local genetic and epigenetic characteristics, the presence or absence of structural motifs, nucleosome positioning, and other factors are taken into account for optimal gRNA design (Chuai et al., 2018; Montague et al., 2014; Labun et al., 2019; Wang et al., 2019). Specificity scores are assigned to gRNAs either through alignment to the genome or through hypothesis-driven approaches that incorporate gRNA structural information in addition to sequence data. Machine learning has recently contributed to optimal computational design parameters that empirical sequence and structure-driven gRNA prediction algorithms are unable to incorporate (Chuai et al., 2018; Wang et al., 2019; Kim et al., 2018).\n\nImportantly, these algorithms are designed to make predictions about the best gene-targeting sgRNAs based on the biological parameters of DNA recognition by the individual Cas systems. In the case of CRISPR diagnostics, the paradigm has been empirically shifted; the target sgRNA binding region is relatively fixed, and diagnostic sgRNAs, corresponding amplicons, or reporters must be tailored around the target region. For each Cas used in the diagnosis of a particular SNV, the available PAMs and the guidelines for mismatch sensitivity positions are unique. Also distinct is the off-targeting propensity of gRNAs designed based on the Cas effector of choice, as shown in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77976/elife-77976-fig1-v2.jpg)\n\n**Figure 1.:** These positions are included in CRISPR-based SNP recognition (CriSNPr) for LwCas13a, LbCas12a, Cas14a, AaCas12b, FnCas9, and enFnCas9, respectively. A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature. *LwCas13a does not require PFS when targeting the mammalian genome. *Cas14a cleaves ssDNA without PAM, but dsDNA requires TTTA PAM. *AaCas12b has shown mismatch sensitivity for some other nucleotide positions as well, but they are not included here because the discrimination between wild-type (WT) and mutant is insufficient.\n\nMismatch sensitivity associated with RNA targeting LwCas13a, for example, is achieved by combining an SNV with a synthetic mutation at the third and fourth or third and fifth PAM proximal nucleotide positions within a crRNA sequence (Myhrvold et al., 2018). According to recent findings, 5\u2019 protospacer flanking sites are not required for LwCas13a when targeting mammalian sequences, but \u2018H\u2019 (A/C/T) at 5\u2019 sites may improve target binding or cleavage (Myhrvold et al., 2018; Abudayyeh et al., 2017). LbCas12a, unlike LwCas13a, requires a TTTN PAM sequence and exhibits sensitivity at multiple single nucleotide positions from the first base to the seventh base proximal to the PAM (Chen et al., 2020b; Li et al., 2018; T\u00f3th et al., 2020). As previously reported, the mismatch is sensitive when placed anywhere between the first and seventh base positions when using ssDNA or dsDNA as cleavage targets. This difference in signals between wild-type (WT) and mutated sequences can be enhanced by using shorter crRNAs of 16\u201318 nucleotides in length (Li et al., 2018). Cas14a, like LbCas12a, can cleave ssDNA as well as dsDNA targets but only when targeting dsDNA. Cas14a necessitates a T-rich 5\u2019 TTTA PAM, whereas ssDNA does not have this requirement. Even though Cas14a has sensitivity for only 11 and 12 or 12 crRNA positions, this PAM flexibility is a proposed advantage when used for SNV detection (Karvelis et al., 2020; Harrington et al., 2018). Although AaCas12b requires 5\u2019 TTN PAM to cleave the ssDNA/dsDNA sequences, it exhibits dual mismatch sensitivity at several positions, expanding the possible target SNV combinations (Teng et al., 2018; Teng et al., 2019). AaCas12b\u2019s dual mismatch sensitivity has been demonstrated at a wide range of crRNA positions; however, only combinations demonstrating efficient WT and mutated sequence discrimination were chosen. These include positions 1 and 4, positions 1 and 5, positions 4 and 11, positions 5 and 16, and positions 5 and 19 (Teng et al., 2019). Similarly, previous research suggested that Fn/enFnCas9 systems with dual mismatch sensitivity require mismatches at specific positions, such as 2 and 6 or 16 and 19, preventing target dsDNA binding for variant detection (Azhar et al., 2021; Acharya et al., 2019; Kumar et al., 2021). In addition to dual mismatch sensitivity, it has been reported that enFnCas9 also exhibits single mismatch sensitivity at the PAM distal 17th, 18th, and 19th positions (Acharya et al., 2021). The ability to faithfully discriminate between sequences contingent on single nucleotide mutations across the crRNA sequence provides an opportunity to repurpose and utilize all of these Cas effectors.\n\nIt is important to note that we have added LwCas13a to our web server because it has been reported for SNV detection. LwCas13a belongs to a class of RNA-targeting Cas effectors that are not constrained by PAM. As a result, their targetability across the genome cannot be directly compared to other PAM-dependent DNA-targeting Cas effectors. However, designing diagnostic assays with LwCas13a requires an additional step of converting DNA to RNA via in vitro transcription (Myhrvold et al., 2018).\n\n### CriSNPr generates readouts by querying variants in publicly available human and SARS-CoV-2 datasets\n\nWe chose NCBI\u2019s dbSNP as a reliable source of clinically relevant SNPs from one of the largest human variation databases (Sherry et al., 2001). This includes single nucleotide changes, insertions, deletions, and microsatellites, as well as population-level frequency, publication, genomic annotation of common variations, and pathological mutations. To begin, we isolated pathological SNPs from the most recent dbSNP Build 155 (Figure 2, Materials and methods) by omitting relatively uncommon, non-clinical, and non-SNP variants. For SARS-CoV2, we filtered SNVs by removing UTR and non-SNP mutations from the most recent CNCB-NGDC SARS-CoV-2 variations database (Xue et al., 2021). For target SNVs/SNPs, crRNAs were designed by retaining variant bases at designated positions and then introducing synthetic mismatches at positions pertinent to experimentally validated data obtained from the various CRISPR systems, as shown in Figure 2. Following that, the genome coordinates of these crRNA sequences were used to obtain flanking sequences and, finally, to design primer sequences for PCR amplicons that can be used in either binding or cleavage-based reporter output assays, depending on the CRISPR proteins of choice (Untergasser et al., 2012). To reduce non-specific amplification by primer sequences, they were screened for off-targets on a representative bacterial genome database (NCBI), virus genome database (NCBI), and human genome/transcriptome (GENCODE GRCh38) with up to two mismatches (Frankish et al., 2019; Tatusova et al., 2014; Brister et al., 2015). Due to the size of dbSNP, retrieving all of this information about crRNAs and flanking primer sequences in real time can be time-consuming. To reduce this lag, the extracted information about clinically relevant SNPs, crRNAs, gene IDs, and primer sequences is formatted as an SQLite database to support the web server, as shown in Figure 2.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77976/elife-77976-fig2-v2.jpg)\n\n**Figure 2.:** The filtered SNPs were then checked for targetability by individual Cas systems based on mismatch sensitivity with or without protospacer adjacent motif (PAM). The genome coordinates of target SNPs aided in the acquisition of gene IDs as well as SNP flanking sequences for oligo synthesis, resulting in the creation of an SQLite database. The off-targets were evaluated against representative bacteria, viruses, the human genome, and the transcriptome.\n\n### CriSNPr provides a search-and-select pipeline for designing a CRISPRDx assay\n\nCriSNPr\u2019s interface has three subdomains: human, with ready-made target clinically relevant SNPs from the human dbSNP; SARS-CoV-2, with ready-made target SNVs within the SARS-CoV-2 genome; and Seq-CriSNPr, for a sequence-based search of any reported target SNV in the human or SARS-CoV-2 genomes. The CriSNPr web server attempts to validate the entered input by mapping and visualizing SNVs/SNPs for related information such as organism of origin, genome coordinates, gene ID, disease association, reported allele, and population-specific frequency distribution. The ability to target a queried SNP/SNV by all included Cas systems is checked simultaneously, and only those with positive results are shown with the required information.\n\nThe interface for human variants in the CriSNPr web server takes SNP rsID as input and looks for available matching sequences in the CriSNPr database of target SNPs, returning SNP-related allelic information, crRNAs, and primer oligos for SNP detection by the Cas systems integrated into the CriSNPr, as shown in Figure 3 and Materials and methods. The SARS-CoV-2 interface takes variant amino acid positions (e.g. S N501Y, S E484K, etc.) as input, and after finding a match in the CriSNPr database of target SNVs, it returns SNV identity information along with variation frequencies, crRNAs, and primer oligos for SNV detection in variant SARS-CoV-2 lineages by the Cas systems integrated into the CriSNPr (Figure 3; Materials and methods).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77976/elife-77976-fig3-v2.jpg)\n\n**Figure 3.:** CriSNPr user interface displays human, SARS-CoV-2, and Seq-CriSNPr subdomains, each of which accepts rsID, mutant amino acid position, and single nucleotide variant (SNV) containing 20\u201330 nt sequences as inputs. With a valid input, the server will look for matching crRNA sequences in the database created with the Python Flask framework. The results include the sequences of the amplification and SNV-detection primers, the allelic distribution of the SNVs, the crRNAs, and the off-targets.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77976/elife-77976-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Sequences related to the human or SARS-CoV-2 genomes, as well as single nucleotide variant (SNV) nucleotide position and identity in the query sequence, in order to produce designing sequence results. For user inputs, representative examples are shown.\n\nSince the position of mismatches differs between different Cas proteins used for designing the diagnostic pipeline, CriSNPr also returns information highlighting the position of mutant (red color) and synthetic nucleotide (needed depending on the Cas systems used, green color) within a crRNA sequence, as well as the genome coordinates of the target, the DNA strand corresponding to the crRNA of interest, and the off-targets of modified crRNA sequences. CriSNPr employs the previously reported offline versatile algorithm Cas-OFFinder to identify potential off-targets against the modified crRNAs (Bae et al., 2014). Using this information, CriSNPr provides off-target information against a crRNA, including chromosome location and coordinates of the off-targets, DNA strand information, and a number of off-target sequences with up to four mismatches, etc., as shown in Figure 3. All of the primer sequences provided by CriSNPr have been pre-filtered for off-targets with up to two nucleotide mismatches against representative bacterial genome databases (NCBI), virus genome databases (NCBI), and human genome/transcriptome databases (GENCODE GRCh38). This is especially important when the sample contains both human and pathogenic nucleic acids (such as in the SARS-CoV-2 infection). In addition, for Cas proteins without trans-cleavage activity (such as FnCas9/enFnCas9), in vitro cleavage-based discrimination is facilitated by designing primers for longer amplicons (Figure 3). This is especially important when considering SNV detection with clinical relevance or diagnosis, as non-specific amplicons can be generated from different species of RNA contamination. These can be resolved on an agarose gel following a CRISPR-mediated cleavage (Azhar et al., 2021; Kumar et al., 2021).\n\nGiven that the first two interfaces provide information that has been curated within the CriSNPr database, it is possible to generate the outputs in less than a minute. To target any previously unreported or novel SNP or SNV present in humans or SARS-CoV-2, Seq-CriSNPr considers a 20\u201330-nucleotide sequence containing the SNP/SNV along with the position and nucleobase identity of the SNP/SNV as input and performs a real-time design of crRNA and primer oligos for each CRISPR/Cas detection assay, as shown in Figure 3\u2014figure supplement 1 and Materials and methods. When compared to the extraction of already existing information about clinically relevant SNPs/SNVs from the CriSNPr database, this process can take a few seconds extra (30\u201340 s). Using the same Python flask framework as CriSNPr, Seq-CriSNPr gives all the sequence information similar to CriSNPr but with more user-customizable options to choose a position as well as the identity of the SNV nucleotide within a 20\u201330 nt query sequence (Figure 3\u2014figure supplement 1). Seq-CriSNPr currently accepts query sequences only from the human and SARS-CoV-2 genomes. To expand this to other genome sequences based on the user\u2019s need, we have offered the possibility of submitting a request via an online form.\n\n### Different Cas systems\u2019 ability to target the dbSNP and SARS-CoV-2 genomes\n\nAs described previously, CRISPR systems demonstrating mismatch sensitivity offered diverse SNP-targeting positions. To determine the total target SNPs/SNVs within the dbSNP by any of the individual Cas effectors, we evaluated possible constraints for these systems, as a systematic comparison between different platforms for SNV targeting has not yet been reported. Among the Cas proteins included, LwCas13a (targeting RNA) and Cas14a (ssDNA) can naturally target almost all the variations in the dbSNP because neither is limited by PAM requirements (Figure 4a). However, LwCas13a needs an extra step to change a DNA substrate into RNA before the CRISPR reaction and readout.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77976/elife-77976-fig4-v2.jpg)\n\n**Figure 4.:** (a) Shows percent SNP targets for different Cas-systems across the dbSNP, as well as the base distribution of targeted SNPs by individual Cas-system. (b) The percentage of targeted SNPs that have clinical significance or disease relevance in humans, with a percentage base distribution at each SNP position targeted by each Cas-system. (c) The percentage of targeted SNPs in SARS-CoV-2 genomes reported in the GISAID Database, along with the percentage base distribution at each SNP position targeted by each Cas-system. In all bar plots, red depicts the percentage of non-targeting SNVs, while violet indicates the percentage of SNVs that can be targeted.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77976/elife-77976-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Human SNP Databases (dbSNPs) with targetable variations. (b) SARS-CoV-2 CNCB-NGDC variations.\n\nAmong the Cas systems with PAM requirements, the enhanced version of FnCas9 (enFnCas9) had the highest number of target SNVs (85.15%, 15,988,454 SNPs). This is followed by AaCas12b, FnCas9, and LbCas12a with target SNPs of 62.32% (11,702,008), 43.86% (8,234,812), and 29.95% (5,623,279), respectively. Cas14a could target 500,786 variations (2.66%) of the total 18,775,119 variations when the substrate is double-stranded target DNA due to the TTTA PAM constraint. These findings imply that, while the number of sensitive mismatch positions increases the chances of targeting an SNP from dbSNP, PAM relaxation provides more coverage for detecting SNVs. LbCas12a, on the other hand, despite seven single mismatch sensitive positions, targets only 5,623,279 SNPs due to a stringent TTTN PAM. In comparison, AaCas12b detects more SNPs (62.32%) due to relaxed TTN PAM and various combinations of dual mismatch sites. But since Cas14a with dsDNA targets is only sensitive for two positions and uses a very stringent TTTA PAM, the overall detection ratio is the lowest of any PAM-dependent SNP detection Cas system, as shown in Figure 4a.\n\nFollowing that, we examined the potential disease-causing/associated SNPs detected by various Cas systems. A total of 493,105 disease-related SNPs were extracted from the SNPs that were found in dbSNP after they were filtered. Among PAM-dependent Cas systems, enFnCas9 and Cas14a (dsDNA) exhibit the highest (90.74%) and lowest (1.50%) SNP detection rates, respectively, as depicted in Figure 4b. Interestingly, aside from Fn/enFnCas9, all of the other PAM-dependent Cas systems showed a lower number of disease-related SNPs that can be targeted. This could be due to the presence of NRG/NGR PAMs near the majority of these disease-related SNPs, as shown in Figure 4b. This could be further explained by examining the distribution of different mutation classes among SNVs of interest. Total and clinically relevant target mutations in the dbSNP are enriched for the G.C > A.T mutation class in all Cas systems, as shown in Figure 4a and b and Supplementary file 1.\n\nIn clinically significant mutations, the G.C > A.T class predominates the other mutation classes, as shown in Figure 4b. There is a clear difference in the abundance of mutational classes among the various Cas systems for clinically relevant SNVs. Thus, Cas systems with G-rich PAMs, such as Fn/enFnCas9 (42.59 and 40.87%), can target G.C > A.T mutation classes, whereas Cas systems with T-rich PAMs, such as AaCas12b, LbCas12a, and Cas14a (dsDNA) cannot (37.17, 34.8, and 32.69%). Similarly, AaCas12b, LbCas12a, and Cas14a (dsDNA) are enriched for A.T > G.C classes when compared to Fn/enFnCas9, as shown in Figure 4b. Since Cas14a (ssDNA) can target nearly all SNVs available both at dbSNP and ClinVar, the mutation classes displayed for Cas14a (ssDNA) can be used as a reference for the other Cas systems in each instance.\n\nGiven the ongoing COVID-19 pandemic and the emergence of rapidly mutating SARS-CoV-2 variants, CriSNPr also includes targets for SARS-CoV-2 SNV detection. The CNCB-NGDC SARS-CoV-2 variation database (based on GISAID genome sequences) was used as a reference to create the CriSNPr database. Since the SARS-CoV-2 genome is AT-rich (62.05%) compared to the human genome, this is reflected by decreased targetability for G-rich Fn/enFnCas9 and slightly higher targetability (30 and 70%, respectively) for LbCas12a and AaCas12b, Figure 4c and Supplementary file 2.\n\n### CriSNPr readout can be experimentally validated in a short period of time\n\nWe then validated the CriSNPr outputs using real diagnostic assays on two substrates that differed by one mismatch (a mutation corresponding to the E484K signature found in multiple SARS-CoV-2 VOCs). To accomplish this, we purified three of the DNA-targeting effectors, FnCas9, Cas14a, and LbCas12a and performed diagnostic assays in accordance with previously published protocols (Kumar et al., 2021; Harrington et al., 2018; Teng et al., 2019). The crRNA sequences obtained from CriSNPr were used to distinguish between WT and mutant sequences via differences in fluorescence intensity generated by trans-cleavage activities of Cas14a and LbCas12a and on a paper strip (based on affinity-based discrimination) via FnCas9.\n\nRemarkably, CriSNPr-designed gRNAs were successful in distinguishing between WT and mutant substrates based on the fluorescence intensity of reporter cleavage for both Cas14a and LbCas12a, as shown in Figure 5 and Figure 5\u2014figure supplement 1. Similar discrimination between WT and E484K mutant sequences was demonstrated by FnCas9 when used with CriSNPr-derived crRNA sequences for lateral flow assays visualized and quantified using the smartphone app TOPSE (True Outcome Predicted via Strip Evaluation; Figure 5, Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77976/elife-77976-fig5-v2.jpg)\n\n**Figure 5.:** crRNA sequences designed by CriSNPr for SARS-CoV-2 E484K variant detection by Cas14a, AaCas12b, and FnCas9 can successfully discriminate between wild-type and mutant sequences. A possible implementation schedule for the assays is depicted to the right. SEM, student paired T-test p values **** 0.0001 (dots represent values from independent measurements, n=10).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77976/elife-77976-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77976/elife-77976-fig5-figsupp2-v2.jpg)\n\nFor targeting SNPs in the human genome, we considered two common SNPs in the Indian population, rs2073874 (ADAMTSL2, C>T) and rs138739292 (AKAP9, G>A), which are linked to Geleophysic dysplasia 1 and Romano-Ward syndrome, respectively. Through CriSNPr, crRNA and primers were designed for the detection of rs2073874 and rs138739292 by FnCas9, Cas14a, and AaCas12b. When selecting the target crRNA, different mismatch positions for individual Cas systems were considered. FnCas9 could distinguish WT and mutant DNA sequences for both SNPs (Figure 6a). As shown in Figure 6b, there was a ~20-fold difference in band signal intensity between WT and rs2073874 when a 2 and 6 mismatched crRNA was used. This was ~3.5-fold when mismatches at 16 and 19 positions were considered. Similarly, there was a ~sixfold difference between WT and the rs138739292 mutation (Figure 6b). These results supported the previously reported efficacy of 2 and 6 mismatch containing crRNAs for FnCas9-based SNV detection (Azhar et al., 2021; Kumar et al., 2021). Cas14a, in contrast to FnCas9, functions by collateral cleavage of the fluorescent reporter upon encountering activator ssDNA sequences. It was also able to significantly discriminate between WT and mutant sequences with a mismatched 12th position crRNA for both rs2073874 and rs138739292, with fold differences of ~6.8 and ~4, respectively (Figure 6c). Surprisingly, although AaCas12b has been reported to have the most possible combinations of mismatch-sensitive nucleotide positions, the fold differences of ~1.3- and ~2.3-folds for WT and rs2073874 with previously prioritized mismatch combinations of 1 and 5 and 5 and 11, respectively. Among the Cas proteins that were studied, this difference was the lowest (Figure 6d).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/77976/elife-77976-fig6-v2.jpg)\n\n**Figure 6.:** (a) FnCas9-based detection of WT (wild-type) and mutant sequences containing rs2073874 and rs138739292 using CriSNPr-designed 2 and 6 and 16 and 19 and 2 and 6 position modified crRNAs, respectively. (b) Quantified TOPSE (True Outcome Predicted via Strip Evaluation) intensity values for rs2073874 and rs138739292 detection by FnCas9, SEM, student paired T-test p values ** 0.01 (dots represent independent measurements, n=3). (c) Detection of WT as well as rs2073874 and rs138739292 containing ssDNA sequences using CriSNPr designed gRNAs for Cas14a (dots represent independent measurements, n=10). (d) CriSNPr generated 1 and 5 and 5 and 11 modified crRNAs for use with AaCas12b to distinguish between WT and rs2073874 ssDNA sequences. **** 0.0001 SEM, student paired T-test p values (dots represent independent measurements, n=10).\n\nAltogether, the in vitro validation experiments with modified crRNA designs generated by CriSNPr demonstrated that the pipeline can design gRNAs targeting SNVs of interest in a reasonable amount of time, as shown in Figures 5 and 6. Even though it is possible that some SNVs will require more optimization than others based on the difficulty of amplification and the propensity of individual Cas proteins to discriminate based on design parameters, the elimination of manual design of gRNAs with synthetic mismatches and their off-target information will allow the user to concentrate more on refining assay components. This is especially important during a pandemic or community outbreak of pathogenic variants of the disease.\n\n## Discussion\n\nIn this manuscript, we present a single web server that provides the user with pre-designed gRNAs and flanking sequences, allowing them to easily construct a CRISPRDx pipeline. In recent years, the field of CRISPR diagnostics has exploded, with multiple Cas systems demonstrating tremendous promise in reading and detecting nucleotide modifications in a substrate (Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Acharya et al., 2019; Kumar et al., 2021; Acharya et al., 2021). As this opens up applications in a variety of biotechnology and clinical diagnostic regimens, particularly for early, on-site detection, the need for streamlined design parameters for assay design is critical. CriSNPr is one of the first web servers aimed at reducing the time and effort required to design CRISPR/Cas-based SNV detection assays. When combined with different readout modalities tailored for multiple CRISPR effectors, it can enable the design of CRISPR diagnostics for the rapid detection of monogenic and infectious diseases in different Cas systems.\n\nWhile this manuscript was being written, a few web servers that design gRNAs specifically for targeting SNVs across the genome, particularly in an allele-specific manner, were reported in the literature (Rabinowitz et al., 2020; Chen et al., 2020a; Zhao et al., 2020; Keough et al., 2019). These present an important advancement toward gRNA design for precision medicine in general. However, the CriSNPr platform is tailored for generating gRNAs specifically for diagnostics, taking into account the design parameters for each diagnostic CRISPR protein. Thus, it caters to applications that are not covered by general gRNA design databases and toolsets (Supplementary file 3).\n\nIn the current version of CriSNPr, six of the widely used CRISPR diagnostic platforms have been added because there is enough research to back up their design guidelines. CRISPR diagnostics is a rapidly evolving field; recently, several other Cas proteins have been reported for identifying pathogenic DNA or RNA and their variants (Fasching et al., 2022; Nan et al., 2022). As more literature supporting these diagnostic pipelines became available, we would incorporate it into the server. The inclusion of multiple CRISPR pipelines on an integrated server serves two purposes. To begin, an SNV of interest may be detected only by certain Cas proteins and not by others, as shown in Supplementary file 1. Second, when multiple diagnostic options are available, users can choose their preferred CRISPR platform based on the availability of reagents and methodologies. The latter is especially useful because the sensitivity and scope of readout modes can differ depending on the diagnostic query: pathogenic polynucleotide or single nucleobase variant (monoallelic or biallelic; Arizti-Sanz et al., 2020; Joung et al., 2020). While lateral flow readouts have been demonstrated for detecting full-length sequences and variants, fluorescence-based readouts are better suited for detecting disease mutation carriers (monoallelic SNVs; Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Kumar et al., 2021; Kellner et al., 2019; Gootenberg et al., 2018). CriSNPr recommendations for the given SNV of interest can help with such decisions. Importantly, a wide range of design options allows users to test and standardize the best pipeline for their chosen SNV. This is especially true because the various CRISPR systems with PAM requirements prefer AT/GC-rich PAM sequences. As the number of such sequences differs between human and other pathogenic genomes, so does the ability of CRISPR proteins to distinguish between SNVs based on the target species.\n\nThere are a variety of ways in which CriSNPr could be improved immediately. For instance, the current framework of CriSNPr cannot perform sequence batch processing. This limitation is due to the technical parameters of the server\u2019s hosting system, which will be updated in the near future to accommodate batch processing. Furthermore, CriSNPr currently does not include variants that are not single nucleotide changes. Although SNVs are the most sensitive and critical diagnostic challenge, later versions of CriSNPr will include gRNA design parameters for polynucleotide changes in the target.\n\nIn our study, the importance of certain mismatch-sensitive nucleotide positions for the detection of SNV has been emphasized, making their selection crucial when determining a mismatch combination. When scoring sgRNAs, modified crRNAs that have been shown to be experimentally efficient with their respective Cas effectors are given priority. This suggests that in several cases, the design strategy used to assign mismatches in gRNAs will be greatly improved by further experimental validation of gRNA mismatches by multiple Cas species. This is especially true for several of the Cas effectors considered in this server, such as FnCas9, Cas14, and Cas13, where systematic dissection of every combination of nucleobase mismatch on gRNA sensitivity has not yet been reported (Myhrvold et al., 2018; Azhar et al., 2021; Harrington et al., 2018; Kumar et al., 2021; Kellner et al., 2019; Acharya et al., 2021). As more such data becomes available, we will be able to improve our scoring of gRNAs returned as output, allowing users to spend less time validating more efficient pipelines.\n\nCriSNPr currently hosts genomic targets for humans and SARS-CoV-2 lineages. This is a limitation given that a large number of pathogenic variants exist in the microbial community, and a number of these have significant clinical manifestations, such as drug or antibiotic resistance. Although the web server has a de novo design feature, we hope to expand the scope of the tool to include as many sequences that can be retrieved from public repositories as possible. Perhaps the most critical evaluation of CriSNPr will be possible once more such web servers are made available for comparison. Until that happens, CriSNPr, in its current form, should help implement CRISPR diagnostics in a wide range of clinical and academic settings and reduce the time and effort needed for design and validation for every nucleotide variant.\n\n## Materials and methods\n\n### Oligos\n\nA list of all oligomers (Merck) used in the study can be found in Supplementary file 4, along with a figure-wise mention of their use.\n\n### Generation of the CriSNPr database\n\n#### For the human SNPs/SNVs with pathological relevance\n\nTo build the CriSNPr database for variant detection through various Cas systems for population-specific SNPs and pathological mutations in humans, the latest dbSNP build 155 (GCF 000001405.39) was downloaded from the NCBI FTP site (Sherry et al., 2001). Since the focus was on SNPs/SNVs, all other variation types like insertion, deletion, duplication, and translocation were filtered out, leaving only variants with a common SNV tag and valid ClinVar ID for further analysis (Landrum et al., 2020; Landrum et al., 2018). vcflib (v1.0.0) was used to convert vcf into a tabular format for smooth analysis while retaining trivial information such as chromosome coordinates, reference and alternate alleles, reference SNP (rsID), gene, disease, and population level frequency, and so on Garrison et al., 2021. Besides that, multi-allelic SNPs were split into multiple entries for easier processing and labeled as \u2018not available\u2019 if missing or \u2018not provided\u2019 if the information was unavailable. All previous data filtrations and curations were carried out using the Pandas Python library (v1.3.5; McKinney, 2010). Finally, to design the gRNAs for detection, filtered SNVs/SNPs positions were mapped to the human reference genome (Gencode GRCh38.p13) to cross-check that the reference base lies within the PAM proximity, followed by the incorporation of a synthetic mismatch at positions based on the use of different Cas systems (Figure 1; Harrow et al., 2012; Frankish et al., 2019; Frankish et al., 2021). Furthermore, genome coordinates for the target SNV were used to obtain flanking sequences for the design of target amplification primers. Since FnCas9 does not have any collateral activity, primers were made so that in vitro cleaved products after an enzyme treatment can be optimally resolved, keeping the lengths of the cleaved products in a ratio of 1:3 to 2:3.\n\nAll of this was accomplished by utilizing the BioPython SeqIO library (v1.76) for genome parsing, followed by PAM allocation by using the regex library (v2021.11.10) (Cock et al., 2009). Nucleotide base incorporation was done by creating a custom function. The entire CriSNPr database was created using Python\u2019s SQLite3 library (v3.31.1; Van Rossum and Drake, 2009; SQLite, 2020). Real-time SNP frequency data is plotted as a bar graph with the matplotlib library (v3.1.3; Hunter, 2007). A custom Python function using the Primer3 library (v0.6.1) is developed to generate amplicon primers (Untergasser et al., 2012).\n\n#### For the SARS-CoV-2 variants\n\nCNCB-NGDC (China National Center for Bioinformation-The National Genomics Data Center) nucleotide level variant annotation data was downloaded, which provided the most recent variant information based on an analysis of the GISAID genome sequences dataset (Xue et al., 2021; Shu and McCauley, 2017). After downloading the variant annotation data table, gene and transcript mutations were analyzed, and variations in intergenic and untranslated regions were removed. Non-SNV mutations were then filtered out of the data. Information like chromosome, position, reference allele, alternate allele, amino acid change, and variation frequency was included for further analysis. In real time, the number of virus sequences with an SNP is plotted as a bar plot using the matplotlib library (Hunter, 2007). The standard CoV-2 variation nomenclature requires a gene name followed by an underscore, a reference amino acid, its position on the protein, and an alternative amino acid. So, a column was added for the variation identity that could be used as a query by the user. The target gRNAs and primers for SARS-CoV-2 variants were designed in the same manner as previously described for the human dbSNPs dataset.\n\n### Generation of seq-CriSNPr\n\nSeq-CriSNPr is a real-time sequence variant detection tool that employs crRNA and primer design. The user must enter the sequence, variant position, and identity. Initially, the identity of the variant base was distinguished in relation to the reference base at the user-supplied position. If the variant base identity is the same as the reference base, the back-end server returns an error message. Additionally, Flask-WTForms checks an input sequence for the invalid base (\u2018non-ACGT\u2019 characters) and length (20\u201330 nucleotides; v2.2.1). The sequence is then mapped to the user-selected organism reference genome using the BWA aligner with no mismatch to obtain the variant position on the genome (Li and Durbin, 2009; Li and Durbin, 2010). If the sequence is not found in the genome as defined by the user, it is returned with a warning. Furthermore, the variant\u2019s genome position is queried against the existing CriSNPr database; if not found, PAM sequences are searched nearby as defined in Figure 1. Upon PAM localization, the variant base is inserted into the sequence, followed by a random mismatch at the appropriate position, as shown in Figure 1. BEDTools (v2.29.2) is used to extract the gene annotation of the crRNA location (Quinlan and Hall, 2010). Following that, primers were designed using the Primer3 Python library (v0.6.1), as previously described (Untergasser et al., 2012).\n\n### Off-target prediction and scoring of modified gRNAs\n\nCriSNPr simultaneously creates an off-target link for each crRNA design. After clicking the link, based on the organism and Cas-system, a request is sent to the back end, and a file is generated in Cas-OFFinder (v2.4) format (Bae et al., 2014). Following that, a customized function is written to generate a file format compatible with the Cas-OFFinder and predict off-targets with up to four mismatches by the Cas-OFFinder stand-alone version in CPU mode. These off-targets are sorted ascendingly based on the number of mismatches to the crRNA sequence. The number of off-targets is then used to score the crRNA with the fewest or no off-targets.\n\n### Development of the CriSNPr web server\n\nThe web server was designed and built using Flask (v1.1.1), Jquery (v3.5.1), and Bootstrap (v5.0.2; Grinberg, 2014). All codes were written in Python (v3.7.6) and were maintained using the Conda environment (v4.11.0; Van Rossum and Drake, 2009; Anaconda, 2016). CriSNPr\u2019s standalone (or offline) version was developed using Python and Conda. The full source code for the pipeline is available at https://github.com/asgarhussain/CriSNPr, (Ansari, 2023).\n\n### Percentage targetability of SNVs in humans and SARS-CoV-2 by individual Cas systems\n\nThe CriSNPr database contains crRNA for a variety of genes that can be used to detect SNPs. Data on the targetability of different Cas systems were computed with the help of the CriSNPr database in the Pandas library and visualized in R (v4.0.5) with the help of the ggpubr (v0.4.0) package (R Development Core Team, 2017). Different mutation classes of various Cas systems were also analyzed in Pandas (v1.3.5) and plotted with the ggpubr R package, as shown in Figure 4 (Supplementary files 1 and 2; McKinney, 2010; R Development Core Team, 2017). The intersections of target variations from various Cas systems were calculated using Upset modules from the Intervene offline version (v0.6.5; Khan and Mathelier, 2017; Lex et al., 2014).\n\n### Protein purification\n\nA plasmid containing FnCas9 or dFnCas9 (dead or catalytically inactive; Acharya et al., 2019) was transformed and expressed in Escherichia coli Rosetta 2 (DE3) (Novagen). Transformed Rosetta 2 (DE3) cells were cultured at 37\u00b0C in an LB medium containing 50 mg/ml kanamycin until the OD600 reached 0.6. After inducing protein expression with 0.5 mM isopropyl b-D-thiogalactopyranoside (IPTG), the culture was grown overnight at 18\u00b0C. Centrifuged E. coli cells were lysed by sonication in a buffer (20 mM HEPES, pH 7.5, 500 mM NaCl, 5% glycerol, and 100 mg/ml lysozyme) supplemented with 1\u00d7 PIC (Roche). The supernatant obtained after centrifugation was then passed through Ni-NTA beads (Roche) and eluted with a buffer (20 mM HEPES, pH 7.5, 300 mM imidazole, and 500 mM NaCl). The eluted fractions were concentrated, and the protein was further purified with size-exclusion chromatography on a HiLoad Superdex 200 16/60 column (GE Healthcare). Finally, the protein was quantified using the Pierce BCA protein assay kit (Thermo Fisher Scientific) and stored in a buffer solution (20 mM HEPES pH 7.5, 150 mM KCl, 10% glycerol, and 1 mM DTT) at \u201380\u00b0C until use in a reaction (Figure 5\u2014figure supplement 2).\n\nProteins AaCas12b and Cas14a were purified using previously published protocols, with any necessary modifications (Teng et al., 2019; Harrington et al., 2018). AaCas12b (Addgene no. 113433) and Cas14a (Addgene no. 112500) plasmids were transformed and expressed in E. coli BL21 (DE3; Novagen). Transformed BL21 (DE3) cells were cultured at 37\u00b0C in terrific broth medium with appropriate antibiotics and induced with 0.5 mM IPTG when the OD600 reached 0.6. Overnight cultures at 18\u00b0C were harvested, and cells were lysed with sonication in a buffer (50 mM Tris-HCl, pH 7.5, 5 mM Imidazole, and 500 mM NaCl) supplemented with 1\u00d7 PIC (Roche). Following centrifugation, the supernatant was passed through Ni-NTA beads (Roche) and washed with a wash buffer (50 mM Tris-HCl, pH 7.5, 20 mM imidazole, and 500 mM NaCl). The proteins were then eluted with a buffer (50 mM Tris-HCl, pH 7.5, 300 mM imidazole, and 500 mM NaCl), and MBP and his tags were removed by overnight TEV (tobacco etch virus) protease incubation at 4\u00b0C. Size-exclusion chromatography on a HiLoad Superdex 200 16/60 column (GE Healthcare) was used to purify the filtered proteins, which were then analyzed using SDS-PAGE. Following quantification, the purified AaCas12b and Cas14a were then stored in a buffer (20 mM Tris-HCl, pH 7.5, 250 mM NaCl, 5% glycerol, and 1 mM DTT) at \u201380\u00b0C until use (Figure 5\u2014figure supplement 2).\n\n### SARS-CoV-2 and human SNP/SNV detection through CriSNPr designed gRNAs for AaCas12b, Cas14a, and FnCas9\n\n#### FnCas9 - RAY\n\nCriSNPr was employed to generate modified gRNA and primers based on the SNV-containing regions of the SARS-CoV-2 and human genomes, respectively. Reverse-transcribed and 5\u2019-end biotin-labeled amplicons with or without mutation were used as target sequences. The chimeric gRNA was made by equimolar mixing crRNA and synthetic 3\u2019-FAM-labeled tracrRNA in a buffer (100 mM NaCl, 50 mM Tris-HCl pH 8, and 1 mM MgCl2) and heating at 95\u00b0C for 2\u20135 min, followed by slow cooling for 15\u201320 min at room temperature. Following that, equimolar gRNA:dFnCas9 RNP complexes were prepared in a buffer (20 mM HEPES, pH 7.5, 150 mM KCl, 1 mM DTT, 10% glycerol, and 10 mM MgCl2) and incubated for 10 min at room temperature. When active FnCas9 was used, MgCl2 was removed from the buffer, rendering it catalytically inactive. Finally, the target 5\u2019 end biotin-labeled amplicons were treated with the RNP complexes for 10 min at 37\u00b0C, and the readout was obtained by adding 80 \u03bcl of dipstick buffer and a Milenia Hybrid 1 lateral flow assay strip should be detected for 2\u20135 min at room temperature before visual or smartphone app-based (TOPSE) quantification (Azhar et al., 2021; Kumar et al., 2021).\n\n#### AaCas12b - CDetection\n\nAaCas12b-based FQ detection was carried out using active RNP, which was prepared by equimolar mixing and incubating AaCas12b and gRNA in a buffer (40 mM Tris-HCl, pH 7.5, 60 mM NaCl, and 6 mM MgCl2) for 10 min at room temperature. Next, ssDNA target (60 nt WT/mutant) sequences mixed with background human genomic DNA and custom synthesized homopolymer (poly T) 5 nt ssDNA FQ reporter molecules (GenScript) were added to the reaction in a Corning 96-well flat-bottom black clear bottom microplate. Reactions were left at 37\u00b0C for the given times (up to 180 min) in a fluorescence plate reader (Tecan). With fluorescence intensity measured every 10 min (\u03bbex: 490 nm; \u03bbem: 520 nm, transmission gain: optimal), the resulting data after background subtraction using intensity values recorded in the absence of ssDNA target sequences were plotted using an R script (Teng et al., 2019).\n\n#### Cas14a - DETECTR\n\nActive Cas14a RNP complexes used for FQ detection were made by equimolar mixing Cas14a and sgRNA in a buffer (40 mM Tris-HCl, pH 7.5, 60 mM NaCl, and 6 mM MgCl2) and incubating for 10 min at room temperature. Furthermore, fluorescence readouts were created by combining ssDNA (60 nt WT/mutant) target sequences with background human genomic DNA and 200 nM 12 nt poly T ssDNA FQ reporter molecules (GenScript) in a Corning 96-well flat-bottom black clear bottom microplate. Reactions were performed at 37\u00b0C for the points in time described (up to 180 min) in a fluorescence plate reader instrument (Tecan). The intensity of fluorescence was measured every 10 min (\u03bbex: 490 nm; \u03bbem: 520 nm; transmission gain: optimal). Finally, the data obtained after background subtraction (intensity in the absence of ssDNA target sequences) was plotted using an R script (Harrington et al., 2018).\n",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "2c94ec66-f547-4481-a38d-2c792e08f86c",
+      "submission_id": "8b41ba96-9326-4432-bf38-959d7ef6fe05",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tony Yuen, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77976.sa0](https://doi.org/10.7554/eLife.77976.sa0)\n\nThe web-based software developed in this study will be of interest to researchers who develop CRISPR-based diagnostic methods. The use of CRISPR-Cas to rapidly identify specific mutations in both cancer and infection is an evolving field with good potential to play a role in future research and diagnostics. This software will facilitate the implementation of such technologies and is therefore useful.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Tony Yuen, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77976.sa1](https://doi.org/10.7554/eLife.77976.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"CriSNPr: a single interface for the curated and de-novo design of gRNAs for CRISPR diagnostics using diverse Cas systems\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Mone Zaidi as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Shruthi Sridhar Vembar (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWhile the authors have provided a small set of data that validated the design of the software, more validation experiments will be needed to demonstrate how well the guide RNAs work, or which designs are predicted to work better than others. These additional data should further support the usability of the software.\n\n1) Figure 4 gives one example with the detection of a short WT and mutated oligo from SARS-CoV-2 as the template. Similar experiments may be done with several SNVs in real cells, to also include the complexity of genomic DNA. For comparison, it would be elegant to include a gRNA also recognizing the WT sequence in some of the experiments, including in Figure 4.\n\n2) The authors only test their system for a single mutation (E484K) with three CRISPR effector proteins (FnCas9 and LbCas12a). More extensive validation (multiple designs per mutation, many mutations examined) is crucial for sequence design methods like CriSNPr.\n\n3) How well do the pre-designed gRNAs work for detecting human SNPs? The authors should compare their method with existing assays to detect human SNPs.\n\nReviewer #1 (Recommendations for the authors):\n\nI congratulate the authors on a great piece of work. Here are some suggestions which could improve the manuscript:\n\n1. The Yes/No options in the flowchart of Figure 3a were confusing. For example, for the Input SNP ID box, the first check is if it is valid or not. The flowchart uses 'Not Valid' instead of 'Valid', and hence there is a double negative which becomes a positive, and so on. My suggestion is to change 'Not Valid' to 'Valid or not': if the answer to this is 'Valid', the Python Flask is invoked; if it is 'Not valid', the program outputs an error message and exits. The same is true for the 'Not found' option. I am sorry if this point doesn't make sense, but if I could have included a figure here, it would have been easier to explain.\n\n2. To improve the flow of the paper, figures 4 and 5 could be switched. Basically, the paper could end with the experimental detection of the SARS-CoV-2 variant, S gene containing E484K mutation, using CriSNPr-designed CRISPR RNAs and PCR primers.\n\n3. Since page and line numbers were not included in the submitted manuscript, it is difficult for me to point out the sentences which could be reworded for clarity. There were also a few typos and phrase/word repetitions that should be addressed.\n\nOne last suggestion is to develop a stand-alone version of CriSNPr which researchers can download and work with locally.\n\nFor the online version, please include a form in the 'Contact us' section where researchers could write to the authors requesting their organism of choice to be included in CriSNPr.\n\nReviewer #2 (Recommendations for the authors):\n\nHere follows some suggestions:\n\nIt makes the review process easier if the manuscript has line numbers. I suggest adding this in the future to any manuscripts.\n\nI realize that this could be difficult, but is there anyway the user can be helped to prioritize which gRNAs to use? Is there any scoring system that could be used or developed? It would be useful to at least discuss this a bit in the manuscript.\n\nAs briefly stated above, the manuscript would benefit from more validation experiments, in a systematic way showing to what level the suggested guide RNAs work. Figure 4 gives one example with the detection of a short WT and mutated oligo from SARS-CoV-2 as the template. I would suggest doing similar experiments also with several SNVs in real cells, to also include the complexity of genomic DNA. For comparison, it would be elegant to include a gRNA also recognizing the WT sequence in some of the experiments, including in Figure 4.\n\nThe manuscript would benefit from more detailed information about the basis for the guide RNA design for the different Cas proteins, including highlighting references better in the methods part as well as elsewhere in the manuscript (e.g. on p. 5 \"\u2026 and the required crRNA and primer design parameters based on gRNA design principles available in the literature for each Cas protein\" would benefit from adding references).\n\nI lack references on other places too:\n\nOn p. 20 \"performed the diagnostic assays according to previously published protocols\".\n\nOn p. 23 \"In clinically relevant variations, G.C>A.T class is dominating the other mutation classes\".\n\nOn several places in the manuscript, its stated that specific updates will be made to the software (e.g. page 26). On the one hand I appreciate the dedication, but it also begs the question if they really think the software is ready to be published already.\n\nFigure 3 and Sup. figure 2, are of fairly low quality. I realize that this is because the figure has been copied from the webpage, but consider if you can make some changes so that the quality is higher.\n\nConsider rearranging the first page of the web page. To me it doesn't make sense that the \"Seq-CriSNPr\" part is shifted to the right compared to the \"human\" part. It also looks a bit strange that the distance on the y-axis between the \"Seq-CriSNPr\" and \"Human\", is much longer than the distance between \"CriSNPr\" and \"Human\". I think the web page will look more professional if this is fixed.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The first three figures are essentially schematics. There isn't enough data in this paper to support the claims made by the authors. The authors should provide additional data showing how they tested their system (both computationally and experimentally).\n\n2. The authors only test their system for a single mutation (E484K) with three CRISPR effector proteins (FnCas9 and LbCas12a). More extensive validation (multiple designs per mutation, many mutations examined) is crucial for sequence design methods like CriSNPr.\n\n3. How well do the pre-designed gRNAs work for detecting human SNPs? The authors should compare their method with existing assays to detect human SNPs.\n",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "613af32d-20e0-4f06-b561-fe4091beb66e",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C1",
+      "claim": "CRISPR-based diagnostics (CRISPRDx) have improved clinical decision-making, especially during the COVID-19 pandemic, by detecting nucleic acids and identifying variants.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-based diagnostics (CRISPRDx) have improved clinical decision-making, especially during the COVID-19 pandemic, by detecting nucleic acids and identifying variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the impact of CRISPRDx on clinical decision-making during COVID-19, presented as established fact in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "ac02a56f-2c37-4249-9bc1-c1a9ee21087f",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C2",
+      "claim": "Each diagnostic CRISPR pipeline necessitates customized detection schemes based on the fundamental principles of the Cas protein used, its guide RNA (gRNA) design parameters, and the assay readout.",
+      "claim_type": "EXPLICIT",
+      "source": "However, each diagnostic CRISPR pipeline necessitates customized detection schemes based on the fundamental principles of the Cas protein used, its guide RNA (gRNA) design parameters, and the assay readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the subsequent detailed description of different Cas systems and their unique design requirements throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "fbac1248-4f5d-4c23-b12b-e5b03fb0d271",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C3",
+      "claim": "No in silico pipeline for the ready-to-use design of CRISPRDx for variant detection currently exists.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially relevant for variant detection, a low-cost alternative to sequencing-based approaches for which no in silico pipeline for the ready-to-use design of CRISPRDx currently exists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim establishes the gap that CriSNPr fills, presented as a factual statement about the state of available tools.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "6d615b9c-8502-4f5d-b934-95dc09a54fe9",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C4",
+      "claim": "CriSNPr provides the user with the opportunity to de novo design gRNAs based on six CRISPRDx proteins of choice (Fn/enFnCas9, LwCas13a, LbCas12a, AaCas12b, and Cas14a).",
+      "claim_type": "EXPLICIT",
+      "source": "In this manuscript, we fill this lacuna using a unified web server, CriSNPr (CRISPR-based SNP recognition), which provides the user with the opportunity to de novo design gRNAs based on six CRISPRDx proteins of choice (Fn/enFnCas9, LwCas13a, LbCas12a, AaCas12b, and Cas14a) and query for ready-to-use oligonucleotide sequences for validation on relevant samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the functionality of the CriSNPr tool developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "4ae2a919-f8ec-4b96-ad17-c1f49fc107a8",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C5",
+      "claim": "CriSNPr provides a database of curated pre-designed gRNAs as well as target/off-target for all human and SARS-CoV-2 variants reported thus far.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we provide a database of curated pre-designed gRNAs as well as target/off-target for all human and SARS-CoV-2 variants reported thus far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the database component of CriSNPr, which is demonstrated throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "3dbd38dc-12c1-4699-9b2c-04200083beb0",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C6",
+      "claim": "CriSNPr has been validated on multiple Cas proteins, demonstrating its broad and immediate applicability across multiple detection platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "CriSNPr has been validated on multiple Cas proteins, demonstrating its broad and immediate applicability across multiple detection platforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental validation data presented in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "9f0960fc-8e2c-4a30-8b3b-2041721db1c0",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C7",
+      "claim": "Traditional probe-based diagnostic tests rely on a polynucleotide hybridizing to the target DNA/RNA and providing a readout via an amplification reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional probe-based diagnostic tests rely on a polynucleotide hybridizing to the target DNA/RNA and providing a readout via an amplification reaction to provide a readout (Wetmur, 1991; Carpenter et al., 1993; Zhao et al., 2015; Thaxton et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "f6833c6f-4018-452e-89da-638f6ce4b051",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C8",
+      "claim": "qRT-PCR tests have been used globally to detect SARS-CoV-2 during the ongoing COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "These quantitative RT-PCR (qRT-PCR) tests and their derivatives have proven to be the gold standard for detecting trace amounts of pathogenic nucleic acids in samples, and they have been used globally to detect SARS-CoV-2 during the ongoing COVID-19 pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established fact about the use of qRT-PCR during the pandemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "d1efb14b-3023-4f8b-b869-c3de1b94d1f9",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C9",
+      "claim": "qRT-PCR is highly sensitive to detect only a few copies of the target pathogenic sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Although qRT-PCR is highly sensitive to detect only a few copies of the target pathogenic sequence, its ability to differentiate very closely related sequences has not yet been successfully demonstrated for accurate clinical diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a known characteristic of qRT-PCR technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "4e6aad1f-f9c2-4a1b-96f4-9728cb16e1fd",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C10",
+      "claim": "qRT-PCR's ability to differentiate very closely related sequences has not yet been successfully demonstrated for accurate clinical diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although qRT-PCR is highly sensitive to detect only a few copies of the target pathogenic sequence, its ability to differentiate very closely related sequences has not yet been successfully demonstrated for accurate clinical diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies a limitation of qRT-PCR technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "94d1cc73-af4a-4428-8f52-ef7ea6b4604b",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C11",
+      "claim": "The association of Cas proteins with a target nucleic acid is followed by a secondary readout, either directly through the bound ternary complex or catalytic cleavage of the substrate followed by collateral cleavage of reporter molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of Cas proteins with a target nucleic acid is followed by a secondary readout, either directly through the bound ternary complex or catalytic cleavage of the substrate followed by collateral cleavage of reporter molecules (Jinek et al., 2012; Jinek et al., 2013; Sternberg et al., 2014; Cong et al., 2013; Ran et al., 2013; Mali et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations describing Cas protein mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "1611554e-c94e-48e2-9e4d-afc2ee79ec3a",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C12",
+      "claim": "For some Cas proteins, the two-step process of gRNA binding and catalytic activity generates a very high specificity of target recognition, which can be extended to the diagnosis of single nucleotide variants (SNVs).",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that for some Cas proteins, this two-step process generates a very high specificity of target recognition, which can be extended to the diagnosis of single nucleotide variants (SNVs; Chen et al., 2020b; Teng et al., 2018; Karvelis et al., 2020; Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Acharya et al., 2019; Kumar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies demonstrating SNV detection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "6af20bd5-945f-4a2d-adae-e25083c02b7a",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C13",
+      "claim": "CRISPR-based variant calling is an appealing alternative to Sanger/Deep sequencing for rapid, low-cost diagnosis of disease-causing mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to the gold standard SNV detection technologies based on Sanger/Deep sequencing, which necessitate dedicated infrastructure, manpower, and analysis pipelines, as well as longer turnaround times, CRISPR-based variant calling is an appealing alternative for rapid, low-cost diagnosis of disease-causing mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares CRISPR-based methods to sequencing-based methods, drawing on general knowledge of these technologies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "f632da48-c202-46ce-9a8a-1c9df5e472ab",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C14",
+      "claim": "The ClinVar database contains information on approximately 117,437 (GRCh38) pathogenic human variants associated with diseases (as of January 2022).",
+      "claim_type": "EXPLICIT",
+      "source": "Currently (until January 2022), the ClinVar database contains information on approximately 117,437 (GRCh38) pathogenic human variants associated with diseases, the vast majority of which can be detected using CRISPR-based tests (Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Kumar et al., 2021; Landrum et al., 2020; Landrum et al., 2018; Kellner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim cites the ClinVar database and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "5fcc5a0e-5d10-4495-bd46-a345fd7d852a",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C15",
+      "claim": "The vast majority of pathogenic human variants in ClinVar can be detected using CRISPR-based tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently (until January 2022), the ClinVar database contains information on approximately 117,437 (GRCh38) pathogenic human variants associated with diseases, the vast majority of which can be detected using CRISPR-based tests (Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Kumar et al., 2021; Landrum et al., 2020; Landrum et al., 2018; Kellner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies demonstrating CRISPR-based detection capabilities.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "a44fd43e-6861-44da-aac9-3d6c7dae75af",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C16",
+      "claim": "The majority of CRISPR-based diagnostic pipelines rely on the ability of the Cas protein to differentiate nucleic acids based on mismatches in the gRNA at predetermined positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these pipelines rely on the ability of the Cas protein to differentiate nucleic acids based on mismatches in the gRNA at predetermined positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the general mechanism of CRISPR diagnostics, supported by the subsequent discussion and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "da33d95b-46f7-4439-b431-ea2b26724dfe",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C17",
+      "claim": "Nucleotide position-specific mismatch sensitivity was first reported with LwCas13a.",
+      "claim_type": "EXPLICIT",
+      "source": "This nucleotide position-specific mismatch sensitivity, first reported with LwCas13a, has now been linked to several other Cas effectors and used for SNV detection, including Fn/enFnCas9, LbCas12a, AaCas12b, and Cas14a (Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Acharya et al., 2019; Kumar et al., 2021; Acharya et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the literature on LwCas13a and other Cas effectors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "5447d7c6-3457-46a8-8b2a-630c67c4d0d3",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C18",
+      "claim": "Nucleotide position-specific mismatch sensitivity has been linked to several Cas effectors including Fn/enFnCas9, LbCas12a, AaCas12b, and Cas14a for SNV detection.",
+      "claim_type": "EXPLICIT",
+      "source": "This nucleotide position-specific mismatch sensitivity, first reported with LwCas13a, has now been linked to several other Cas effectors and used for SNV detection, including Fn/enFnCas9, LbCas12a, AaCas12b, and Cas14a (Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Acharya et al., 2019; Kumar et al., 2021; Acharya et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies on different Cas systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "aa32c28d-cc20-4211-bf32-8cbf5e6f0dc4",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C19",
+      "claim": "Several CRISPR/Cas systems have demonstrated protospacer adjacent motif (PAM) mismatch sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Several CRISPR/Cas systems have also demonstrated protospacer adjacent motif (PAM) mismatch sensitivity, but because PAM is not always present at the target DNA/RNA sequences, their applicability for diagnostic assays is limited (Teng et al., 2019; Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on PAM mismatch sensitivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "57464e27-4a5e-4364-bb66-fe7999a7220e",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C20",
+      "claim": "The applicability of PAM mismatch sensitivity for diagnostic assays is limited because PAM is not always present at the target DNA/RNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Several CRISPR/Cas systems have also demonstrated protospacer adjacent motif (PAM) mismatch sensitivity, but because PAM is not always present at the target DNA/RNA sequences, their applicability for diagnostic assays is limited (Teng et al., 2019; Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the structural requirements of PAM-dependent systems.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "21ae3771-de1d-4dc1-8eb3-3f871e0a7fac",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C21",
+      "claim": "Each Cas protein possesses distinctive properties with regard to mismatch-sensitive positions in the gRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the overall strategy for mismatch identification remains largely consistent across Cas proteins, each Cas protein possesses distinctive properties with regard to mismatch-sensitive positions in the gRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the detailed description of different Cas systems and their properties in Figure 1 and throughout the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "bd96589b-fd4b-4666-bdcf-d2b996a70549",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C22",
+      "claim": "While the same SNV can be targeted by multiple Cas proteins, each diagnostic strategy necessitates a unique crRNA design.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, while the same SNV can be targeted by multiple Cas proteins, each diagnostic strategy necessitates a unique crRNA design (Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Acharya et al., 2019; Kumar et al., 2021; Acharya et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on different Cas systems and their design requirements.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "8e1bf842-bbcc-4881-bbdc-f81e85cdf08e",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C23",
+      "claim": "LwCas13a requires a spacer length of 22-28 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "c1271995-1f30-4278-82bc-87f070aef4c5",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C24",
+      "claim": "LwCas13a targets RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "a948534b-a825-4c40-8427-80dd7f3cfa5f",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C25",
+      "claim": "LwCas13a exhibits mismatch sensitivity at positions 3&4 and 3&5.",
+      "claim_type": "EXPLICIT",
+      "source": "These positions are included in CRISPR-based SNP recognition (CriSNPr) for LwCas13a, LbCas12a, Cas14a, AaCas12b, FnCas9, and enFnCas9, respectively. A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "6d39146e-3dd2-414c-a014-cbfd7c966085",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C26",
+      "claim": "LbCas12a requires TTTN PAM.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "700de748-fc56-4a1d-971c-e7e2478bf4d2",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C27",
+      "claim": "LbCas12a requires a spacer length of 16-18 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "41847079-733c-4e9f-b804-d0bbe9268e2b",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C28",
+      "claim": "LbCas12a targets ssDNA/dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "bdd0699a-43b5-4212-9678-a53a0a06a359",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C29",
+      "claim": "LbCas12a exhibits mismatch sensitivity at positions 1-7.",
+      "claim_type": "EXPLICIT",
+      "source": "These positions are included in CRISPR-based SNP recognition (CriSNPr) for LwCas13a, LbCas12a, Cas14a, AaCas12b, FnCas9, and enFnCas9, respectively. A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "c0afd3ec-5056-4317-8290-8a83e265079f",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C30",
+      "claim": "Cas14a does not require PAM when targeting ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "*Cas14a cleaves ssDNA without PAM, but dsDNA requires TTTA PAM.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table note in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "41828894-37b9-4b01-ad59-4cf561332fcd",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C31",
+      "claim": "Cas14a requires TTTA PAM when targeting dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "*Cas14a cleaves ssDNA without PAM, but dsDNA requires TTTA PAM.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table note in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "f1290236-5981-4496-8aa3-991801828efe",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C32",
+      "claim": "Cas14a requires a spacer length of 20 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "d7ad8a3b-0570-474c-9a8c-f4addf7760d7",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C33",
+      "claim": "Cas14a targets ssDNA/dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "92d28d07-c34a-47c0-b359-4aea2ccf9abf",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C34",
+      "claim": "Cas14a exhibits mismatch sensitivity at positions 11&12 and 12.",
+      "claim_type": "EXPLICIT",
+      "source": "These positions are included in CRISPR-based SNP recognition (CriSNPr) for LwCas13a, LbCas12a, Cas14a, AaCas12b, FnCas9, and enFnCas9, respectively. A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "0f123bea-21a2-4b60-92b2-f6c245c3c85e",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C35",
+      "claim": "AaCas12b requires TTN PAM.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "46f07c99-fb57-44d0-a31b-10f68d06337a",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C36",
+      "claim": "AaCas12b requires a spacer length of 20 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "0c3e7bdd-eea0-4ac1-a352-121a280a80b0",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C37",
+      "claim": "AaCas12b targets ssDNA/dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "9c2adec3-fb9f-4f12-9f78-d5050e5eda9f",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C38",
+      "claim": "AaCas12b exhibits mismatch sensitivity at positions 1&4, 1&5, 4&11, 4&16, 5&8, 5&11, and 16&19.",
+      "claim_type": "EXPLICIT",
+      "source": "These positions are included in CRISPR-based SNP recognition (CriSNPr) for LwCas13a, LbCas12a, Cas14a, AaCas12b, FnCas9, and enFnCas9, respectively. A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "304326c4-14a3-4ebc-8cd0-bf7a7f418f27",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C39",
+      "claim": "FnCas9 requires NGG PAM.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "989863a3-7977-47e3-b434-489e2cf354d0",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C40",
+      "claim": "FnCas9 requires a spacer length of 20 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "c1781ed3-85a7-480c-9c0e-81aa0d7b984a",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C41",
+      "claim": "FnCas9 targets dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "e7977c7c-76f1-4afb-bedb-f975a1be336c",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C42",
+      "claim": "FnCas9 exhibits mismatch sensitivity at positions 2&6 and 16&19.",
+      "claim_type": "EXPLICIT",
+      "source": "These positions are included in CRISPR-based SNP recognition (CriSNPr) for LwCas13a, LbCas12a, Cas14a, AaCas12b, FnCas9, and enFnCas9, respectively. A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "543fb485-230c-46db-a38e-d2a74f75bfee",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C43",
+      "claim": "enFnCas9 requires NGG/NRG or NGR PAM.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "f5011505-32b6-4c6b-8972-0e9504ba9f10",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C44",
+      "claim": "enFnCas9 requires a spacer length of 20 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "07a4c536-1dd4-43b3-9f8f-40e4beee3221",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C45",
+      "claim": "enFnCas9 targets dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "81e14059-6986-4083-9b55-544d63f17853",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C46",
+      "claim": "enFnCas9 exhibits mismatch sensitivity at positions 2&6, 16&19, 17, 18, and 19.",
+      "claim_type": "EXPLICIT",
+      "source": "These positions are included in CRISPR-based SNP recognition (CriSNPr) for LwCas13a, LbCas12a, Cas14a, AaCas12b, FnCas9, and enFnCas9, respectively. A table summarizing the protospacer adjacent motif (PAM)/protospacer flanking site (PFS) for each Cas protein is shown, along with mismatched sensitive positions reported in the literature.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This information is presented in the table in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "6d0f5b1b-e76b-400a-9bb8-735fb443205d",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C47",
+      "claim": "Mismatch sensitivity associated with LwCas13a is achieved by combining an SNV with a synthetic mutation at the third and fourth or third and fifth PAM proximal nucleotide positions within a crRNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Mismatch sensitivity associated with RNA targeting LwCas13a, for example, is achieved by combining an SNV with a synthetic mutation at the third and fourth or third and fifth PAM proximal nucleotide positions within a crRNA sequence (Myhrvold et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Myhrvold et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "21ac30b0-b7e7-4f90-bc03-2103dd40908b",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C48",
+      "claim": "5' protospacer flanking sites are not required for LwCas13a when targeting mammalian sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "According to recent findings, 5' protospacer flanking sites are not required for LwCas13a when targeting mammalian sequences, but 'H' (A/C/T) at 5' sites may improve target binding or cleavage (Myhrvold et al., 2018; Abudayyeh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Myhrvold et al., 2018 and Abudayyeh et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "2edb3e4f-4f77-46ca-b017-f5ea5dd7ab7b",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C49",
+      "claim": "'H' (A/C/T) at 5' sites may improve target binding or cleavage for LwCas13a.",
+      "claim_type": "EXPLICIT",
+      "source": "According to recent findings, 5' protospacer flanking sites are not required for LwCas13a when targeting mammalian sequences, but 'H' (A/C/T) at 5' sites may improve target binding or cleavage (Myhrvold et al., 2018; Abudayyeh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Myhrvold et al., 2018 and Abudayyeh et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "919c7631-c297-4e2f-b74e-429c3fed4ee9",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C50",
+      "claim": "LbCas12a exhibits sensitivity at multiple single nucleotide positions from the first base to the seventh base proximal to the PAM.",
+      "claim_type": "EXPLICIT",
+      "source": "LbCas12a, unlike LwCas13a, requires a TTTN PAM sequence and exhibits sensitivity at multiple single nucleotide positions from the first base to the seventh base proximal to the PAM (Chen et al., 2020b; Li et al., 2018; T\u00f3th et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chen et al., 2020b, Li et al., 2018, and T\u00f3th et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "c1b5d3d5-8fa3-4dd4-a2b9-ed3083ed7c1e",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C51",
+      "claim": "The mismatch is sensitive when placed anywhere between the first and seventh base positions for LbCas12a when using ssDNA or dsDNA as cleavage targets.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, the mismatch is sensitive when placed anywhere between the first and seventh base positions when using ssDNA or dsDNA as cleavage targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to previously reported findings about LbCas12a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "322feff1-328e-431b-a6cb-075b39cad2f5",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C52",
+      "claim": "The difference in signals between wild-type and mutated sequences for LbCas12a can be enhanced by using shorter crRNAs of 16\u201318 nucleotides in length.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in signals between wild-type (WT) and mutated sequences can be enhanced by using shorter crRNAs of 16\u201318 nucleotides in length (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Li et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "c247038b-227e-4ebf-97d9-750e31795a4b",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C53",
+      "claim": "Cas14a can cleave ssDNA as well as dsDNA targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas14a, like LbCas12a, can cleave ssDNA as well as dsDNA targets but only when targeting dsDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the cleavage capabilities of Cas14a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "fe598130-ac5e-4bf0-a5bb-9274da991882",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C54",
+      "claim": "Cas14a necessitates a T-rich 5' TTTA PAM when targeting dsDNA, whereas ssDNA does not have this requirement.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas14a necessitates a T-rich 5' TTTA PAM, whereas ssDNA does not have this requirement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the PAM requirements of Cas14a for different substrates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "d9c9b7cf-9a8f-4300-9262-85193cb764f7",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C55",
+      "claim": "Cas14a has sensitivity for only 11 and 12 or 12 crRNA positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though Cas14a has sensitivity for only 11 and 12 or 12 crRNA positions, this PAM flexibility is a proposed advantage when used for SNV detection (Karvelis et al., 2020; Harrington et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Karvelis et al., 2020 and Harrington et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "fa57c384-39e7-47dd-856e-33f578018216",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C56",
+      "claim": "PAM flexibility is a proposed advantage for Cas14a when used for SNV detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though Cas14a has sensitivity for only 11 and 12 or 12 crRNA positions, this PAM flexibility is a proposed advantage when used for SNV detection (Karvelis et al., 2020; Harrington et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Karvelis et al., 2020 and Harrington et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "36f6c09b-946e-4c14-ad1c-717669a3b8dd",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C57",
+      "claim": "AaCas12b requires 5' TTN PAM to cleave the ssDNA/dsDNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Although AaCas12b requires 5' TTN PAM to cleave the ssDNA/dsDNA sequences, it exhibits dual mismatch sensitivity at several positions, expanding the possible target SNV combinations (Teng et al., 2018; Teng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Teng et al., 2018 and Teng et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "dd228be0-3442-4221-88b5-76e7380ff7ef",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C58",
+      "claim": "AaCas12b exhibits dual mismatch sensitivity at several positions, expanding the possible target SNV combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although AaCas12b requires 5' TTN PAM to cleave the ssDNA/dsDNA sequences, it exhibits dual mismatch sensitivity at several positions, expanding the possible target SNV combinations (Teng et al., 2018; Teng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Teng et al., 2018 and Teng et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "9f6db8fd-907d-4601-9ad0-e667e2736b12",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C59",
+      "claim": "AaCas12b's dual mismatch sensitivity has been demonstrated at positions 1 and 4, positions 1 and 5, positions 4 and 11, positions 5 and 16, and positions 5 and 19.",
+      "claim_type": "EXPLICIT",
+      "source": "AaCas12b's dual mismatch sensitivity has been demonstrated at a wide range of crRNA positions; however, only combinations demonstrating efficient WT and mutated sequence discrimination were chosen. These include positions 1 and 4, positions 1 and 5, positions 4 and 11, positions 5 and 16, and positions 5 and 19 (Teng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Teng et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "f76abe13-1a9c-43a6-bf79-086f491c4220",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C60",
+      "claim": "Fn/enFnCas9 systems with dual mismatch sensitivity require mismatches at specific positions, such as 2 and 6 or 16 and 19, preventing target dsDNA binding for variant detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, previous research suggested that Fn/enFnCas9 systems with dual mismatch sensitivity require mismatches at specific positions, such as 2 and 6 or 16 and 19, preventing target dsDNA binding for variant detection (Azhar et al., 2021; Acharya et al., 2019; Kumar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Azhar et al., 2021, Acharya et al., 2019, and Kumar et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "83d7d7d8-f7df-4eb6-8bd6-c0604f3c7629",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C61",
+      "claim": "enFnCas9 exhibits single mismatch sensitivity at the PAM distal 17th, 18th, and 19th positions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to dual mismatch sensitivity, it has been reported that enFnCas9 also exhibits single mismatch sensitivity at the PAM distal 17th, 18th, and 19th positions (Acharya et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Acharya et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "41f81aa0-1fb1-42c1-a7d3-8ecbef34ed72",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C62",
+      "claim": "LwCas13a belongs to a class of RNA-targeting Cas effectors that are not constrained by PAM.",
+      "claim_type": "EXPLICIT",
+      "source": "LwCas13a belongs to a class of RNA-targeting Cas effectors that are not constrained by PAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a known property of LwCas13a.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "baa9fa2b-a45e-4ba6-ae74-4fe5c116e776",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C63",
+      "claim": "Designing diagnostic assays with LwCas13a requires an additional step of converting DNA to RNA via in vitro transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "However, designing diagnostic assays with LwCas13a requires an additional step of converting DNA to RNA via in vitro transcription (Myhrvold et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Myhrvold et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "053c7144-b713-4d20-97de-c9e5ebf791a4",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C64",
+      "claim": "CriSNPr isolated pathological SNPs from the most recent dbSNP Build 155 by omitting relatively uncommon, non-clinical, and non-SNP variants.",
+      "claim_type": "EXPLICIT",
+      "source": "To begin, we isolated pathological SNPs from the most recent dbSNP Build 155 (Figure 2, Materials and methods) by omitting relatively uncommon, non-clinical, and non-SNP variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the data processing methodology used to create the CriSNPr database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "44580778-213b-4a6b-9f0f-3edb345c27e6",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C65",
+      "claim": "For SARS-CoV2, CriSNPr filtered SNVs by removing UTR and non-SNP mutations from the most recent CNCB-NGDC SARS-CoV-2 variations database.",
+      "claim_type": "EXPLICIT",
+      "source": "For SARS-CoV2, we filtered SNVs by removing UTR and non-SNP mutations from the most recent CNCB-NGDC SARS-CoV-2 variations database (Xue et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the data processing methodology for SARS-CoV-2 variants.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "4917f193-7e34-4ac2-af7a-657f82e45200",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C66",
+      "claim": "Primer sequences were screened for off-targets on a representative bacterial genome database (NCBI), virus genome database (NCBI), and human genome/transcriptome (GENCODE GRCh38) with up to two mismatches.",
+      "claim_type": "EXPLICIT",
+      "source": "To reduce non-specific amplification by primer sequences, they were screened for off-targets on a representative bacterial genome database (NCBI), virus genome database (NCBI), and human genome/transcriptome (GENCODE GRCh38) with up to two mismatches (Frankish et al., 2019; Tatusova et al., 2014; Brister et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the off-target screening methodology used in CriSNPr.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "0ffafc79-3c44-4587-9382-59c19a7fd9df",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C67",
+      "claim": "LwCas13a (targeting RNA) and Cas14a (ssDNA) can naturally target almost all the variations in the dbSNP because neither is limited by PAM requirements.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the Cas proteins included, LwCas13a (targeting RNA) and Cas14a (ssDNA) can naturally target almost all the variations in the dbSNP because neither is limited by PAM requirements (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4a showing targetability percentages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "39617fe3-8338-4334-b029-0d23ff7c777e",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C68",
+      "claim": "LwCas13a needs an extra step to change a DNA substrate into RNA before the CRISPR reaction and readout.",
+      "claim_type": "EXPLICIT",
+      "source": "However, LwCas13a needs an extra step to change a DNA substrate into RNA before the CRISPR reaction and readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a procedural requirement for using LwCas13a.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "e577bd6d-6ce8-4a0c-92c7-69f2fb22b217",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C69",
+      "claim": "Among Cas systems with PAM requirements, the enhanced version of FnCas9 (enFnCas9) had the highest number of target SNVs (85.15%, 15,988,454 SNPs).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the Cas systems with PAM requirements, the enhanced version of FnCas9 (enFnCas9) had the highest number of target SNVs (85.15%, 15,988,454 SNPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the dbSNP database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "afa764ea-1375-438b-9229-138a3bd79e86",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C70",
+      "claim": "AaCas12b targets 62.32% (11,702,008) of SNPs in dbSNP.",
+      "claim_type": "EXPLICIT",
+      "source": "This is followed by AaCas12b, FnCas9, and LbCas12a with target SNPs of 62.32% (11,702,008), 43.86% (8,234,812), and 29.95% (5,623,279), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the dbSNP database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "44eeb68d-81ab-48e6-9000-9ca0e80c3d58",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C71",
+      "claim": "FnCas9 targets 43.86% (8,234,812) of SNPs in dbSNP.",
+      "claim_type": "EXPLICIT",
+      "source": "This is followed by AaCas12b, FnCas9, and LbCas12a with target SNPs of 62.32% (11,702,008), 43.86% (8,234,812), and 29.95% (5,623,279), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the dbSNP database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "94a5eaba-3a8b-47dd-8edb-efd3487f0393",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C72",
+      "claim": "LbCas12a targets 29.95% (5,623,279) of SNPs in dbSNP.",
+      "claim_type": "EXPLICIT",
+      "source": "This is followed by AaCas12b, FnCas9, and LbCas12a with target SNPs of 62.32% (11,702,008), 43.86% (8,234,812), and 29.95% (5,623,279), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the dbSNP database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "64708f0a-78c3-488c-8b5c-7be9b563b56a",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C73",
+      "claim": "Cas14a could target 500,786 variations (2.66%) of the total 18,775,119 variations when the substrate is double-stranded target DNA due to the TTTA PAM constraint.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas14a could target 500,786 variations (2.66%) of the total 18,775,119 variations when the substrate is double-stranded target DNA due to the TTTA PAM constraint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the dbSNP database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "8e38a681-f6b2-4d86-a1fe-876c7712cd57",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C74",
+      "claim": "While the number of sensitive mismatch positions increases the chances of targeting an SNP from dbSNP, PAM relaxation provides more coverage for detecting SNVs.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings imply that, while the number of sensitive mismatch positions increases the chances of targeting an SNP from dbSNP, PAM relaxation provides more coverage for detecting SNVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the comparative analysis of different Cas systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "e1383108-712b-4c78-8bef-0f7aa05de703",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C75",
+      "claim": "A total of 493,105 disease-related SNPs were extracted from the SNPs that were found in dbSNP after they were filtered.",
+      "claim_type": "EXPLICIT",
+      "source": "Following that, we examined the potential disease-causing/associated SNPs detected by various Cas systems. A total of 493,105 disease-related SNPs were extracted from the SNPs that were found in dbSNP after they were filtered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the data processing results for disease-related SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "cb68f290-a868-445b-b8f8-784016ce7e3b",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C76",
+      "claim": "Among PAM-dependent Cas systems, enFnCas9 exhibits the highest (90.74%) disease-related SNP detection rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Among PAM-dependent Cas systems, enFnCas9 and Cas14a (dsDNA) exhibit the highest (90.74%) and lowest (1.50%) SNP detection rates, respectively, as depicted in Figure 4b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "8732c3ad-5031-4c6b-8cb1-34518772cc54",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C77",
+      "claim": "Among PAM-dependent Cas systems, Cas14a (dsDNA) exhibits the lowest (1.50%) disease-related SNP detection rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Among PAM-dependent Cas systems, enFnCas9 and Cas14a (dsDNA) exhibit the highest (90.74%) and lowest (1.50%) SNP detection rates, respectively, as depicted in Figure 4b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "3130e7bb-34ae-410a-a7f3-ee012f072640",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C78",
+      "claim": "Total and clinically relevant target mutations in the dbSNP are enriched for the G.C > A.T mutation class in all Cas systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Total and clinically relevant target mutations in the dbSNP are enriched for the G.C > A.T mutation class in all Cas systems, as shown in Figure 4a and b and Supplementary file 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "7e7afdac-4b07-4fdf-9246-e251066cc122",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C79",
+      "claim": "In clinically significant mutations, the G.C > A.T class predominates the other mutation classes.",
+      "claim_type": "EXPLICIT",
+      "source": "In clinically significant mutations, the G.C > A.T class predominates the other mutation classes, as shown in Figure 4b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "c07ba7e3-e8f1-4d76-94ec-5fc313276ae9",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C80",
+      "claim": "Cas systems with G-rich PAMs, such as Fn/enFnCas9 (42.59 and 40.87%), can target G.C > A.T mutation classes more than Cas systems with T-rich PAMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Cas systems with G-rich PAMs, such as Fn/enFnCas9 (42.59 and 40.87%), can target G.C > A.T mutation classes, whereas Cas systems with T-rich PAMs, such as AaCas12b, LbCas12a, and Cas14a (dsDNA) cannot (37.17, 34.8, and 32.69%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis comparing different Cas systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "221d756d-581c-46e8-939a-551d3c2666a3",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C81",
+      "claim": "Cas systems with T-rich PAMs, such as AaCas12b, LbCas12a, and Cas14a (dsDNA), target G.C > A.T mutation classes at lower rates (37.17, 34.8, and 32.69%).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Cas systems with G-rich PAMs, such as Fn/enFnCas9 (42.59 and 40.87%), can target G.C > A.T mutation classes, whereas Cas systems with T-rich PAMs, such as AaCas12b, LbCas12a, and Cas14a (dsDNA) cannot (37.17, 34.8, and 32.69%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis comparing different Cas systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "69fd71ac-2370-4f53-80bb-d78514e28bf0",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C82",
+      "claim": "AaCas12b, LbCas12a, and Cas14a (dsDNA) are enriched for A.T > G.C classes when compared to Fn/enFnCas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, AaCas12b, LbCas12a, and Cas14a (dsDNA) are enriched for A.T > G.C classes when compared to Fn/enFnCas9, as shown in Figure 4b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "30d3ac91-7bed-41e7-8b71-fd0a8f0f9b01",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C83",
+      "claim": "The SARS-CoV-2 genome is AT-rich (62.05%) compared to the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the SARS-CoV-2 genome is AT-rich (62.05%) compared to the human genome, this is reflected by decreased targetability for G-rich Fn/enFnCas9 and slightly higher targetability (30 and 70%, respectively) for LbCas12a and AaCas12b, Figure 4c and Supplementary file 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis of the SARS-CoV-2 genome composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "40e5ff5f-aacc-4643-81c4-64eaf7bed55a",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C84",
+      "claim": "The AT-rich nature of the SARS-CoV-2 genome is reflected by decreased targetability for G-rich Fn/enFnCas9 and slightly higher targetability (30 and 70%, respectively) for LbCas12a and AaCas12b.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the SARS-CoV-2 genome is AT-rich (62.05%) compared to the human genome, this is reflected by decreased targetability for G-rich Fn/enFnCas9 and slightly higher targetability (30 and 70%, respectively) for LbCas12a and AaCas12b, Figure 4c and Supplementary file 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "3ad32274-a48c-4afc-8d23-19fd071297bd",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C85",
+      "claim": "CriSNPr-designed gRNAs were successful in distinguishing between WT and mutant substrates based on the fluorescence intensity of reporter cleavage for both Cas14a and LbCas12a.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, CriSNPr-designed gRNAs were successful in distinguishing between WT and mutant substrates based on the fluorescence intensity of reporter cleavage for both Cas14a and LbCas12a, as shown in Figure 5 and Figure 5\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "630fe508-dd01-4534-b678-808e7deb6fa3",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C86",
+      "claim": "FnCas9 with CriSNPr-derived crRNA sequences demonstrated discrimination between WT and E484K mutant sequences in lateral flow assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar discrimination between WT and E484K mutant sequences was demonstrated by FnCas9 when used with CriSNPr-derived crRNA sequences for lateral flow assays visualized and quantified using the smartphone app TOPSE (True Outcome Predicted via Strip Evaluation; Figure 5, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "4212e7d1-51f7-42a2-986a-6b3fa9980b40",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C87",
+      "claim": "FnCas9 could distinguish WT and mutant DNA sequences for both rs2073874 and rs138739292.",
+      "claim_type": "EXPLICIT",
+      "source": "FnCas9 could distinguish WT and mutant DNA sequences for both SNPs (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "f73af4bb-380a-4427-ae0c-2463ed604b71",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C88",
+      "claim": "There was a ~20-fold difference in band signal intensity between WT and rs2073874 when a 2 and 6 mismatched crRNA was used with FnCas9.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6b, there was a ~20-fold difference in band signal intensity between WT and rs2073874 when a 2 and 6 mismatched crRNA was used.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "91734fa7-999a-44c6-bafb-a3198567a0f5",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C89",
+      "claim": "There was a ~3.5-fold difference in band signal intensity between WT and rs2073874 when mismatches at 16 and 19 positions were considered with FnCas9.",
+      "claim_type": "EXPLICIT",
+      "source": "This was ~3.5-fold when mismatches at 16 and 19 positions were considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "864583c8-e0cd-48c3-a315-ab84e0891f36",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C90",
+      "claim": "There was a ~sixfold difference between WT and the rs138739292 mutation with FnCas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there was a ~sixfold difference between WT and the rs138739292 mutation (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "76cce2e9-e833-41fb-adc3-cf88ecaca111",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C91",
+      "claim": "These results supported the previously reported efficacy of 2 and 6 mismatch containing crRNAs for FnCas9-based SNV detection.",
+      "claim_type": "EXPLICIT",
+      "source": "These results supported the previously reported efficacy of 2 and 6 mismatch containing crRNAs for FnCas9-based SNV detection (Azhar et al., 2021; Kumar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the experimental results to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "8d18b0ed-8b5f-4710-be9c-d2e5dc267f80",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C92",
+      "claim": "Cas14a was able to significantly discriminate between WT and mutant sequences with a mismatched 12th position crRNA for both rs2073874 and rs138739292, with fold differences of ~6.8 and ~4, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also able to significantly discriminate between WT and mutant sequences with a mismatched 12th position crRNA for both rs2073874 and rs138739292, with fold differences of ~6.8 and ~4, respectively (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "3a114633-f4cd-4dc4-9ca5-5092cc71b57f",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C93",
+      "claim": "AaCas12b showed fold differences of ~1.3- and ~2.3-folds for WT and rs2073874 with previously prioritized mismatch combinations of 1 and 5 and 5 and 11, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, although AaCas12b has been reported to have the most possible combinations of mismatch-sensitive nucleotide positions, the fold differences of ~1.3- and ~2.3-folds for WT and rs2073874 with previously prioritized mismatch combinations of 1 and 5 and 5 and 11, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "cc3b30c7-b289-490d-86ec-9c5ea7f565ba",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C94",
+      "claim": "The in vitro validation experiments with modified crRNA designs generated by CriSNPr demonstrated that the pipeline can design gRNAs targeting SNVs of interest in a reasonable amount of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, the in vitro validation experiments with modified crRNA designs generated by CriSNPr demonstrated that the pipeline can design gRNAs targeting SNVs of interest in a reasonable amount of time, as shown in Figures 5 and 6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim summarizes the validation results from Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "2871b862-aacc-4357-886d-9a755656863e",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C95",
+      "claim": "CriSNPr is one of the first web servers aimed at reducing the time and effort required to design CRISPR/Cas-based SNV detection assays.",
+      "claim_type": "EXPLICIT",
+      "source": "CriSNPr is one of the first web servers aimed at reducing the time and effort required to design CRISPR/Cas-based SNV detection assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim positions CriSNPr in the context of available tools.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "bbcbb929-dd6c-4966-8ba9-14622b45b483",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C96",
+      "claim": "A few web servers that design gRNAs specifically for targeting SNVs across the genome, particularly in an allele-specific manner, were reported in the literature while this manuscript was being written.",
+      "claim_type": "EXPLICIT",
+      "source": "While this manuscript was being written, a few web servers that design gRNAs specifically for targeting SNVs across the genome, particularly in an allele-specific manner, were reported in the literature (Rabinowitz et al., 2020; Chen et al., 2020a; Zhao et al., 2020; Keough et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges other tools reported in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "9a84d90e-304a-451f-a8a1-e3a6b33b34e1",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C97",
+      "claim": "The CriSNPr platform is tailored for generating gRNAs specifically for diagnostics, taking into account the design parameters for each diagnostic CRISPR protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the CriSNPr platform is tailored for generating gRNAs specifically for diagnostics, taking into account the design parameters for each diagnostic CRISPR protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim distinguishes CriSNPr from other gRNA design tools.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "5518271d-12a3-4960-b55e-d34e8328ad78",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C98",
+      "claim": "In the current version of CriSNPr, six of the widely used CRISPR diagnostic platforms have been added because there is enough research to back up their design guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current version of CriSNPr, six of the widely used CRISPR diagnostic platforms have been added because there is enough research to back up their design guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the current scope of CriSNPr.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "6a0463d9-3c81-4ae6-9d3f-4c1e1a4dfde4",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C99",
+      "claim": "Several other Cas proteins have been recently reported for identifying pathogenic DNA or RNA and their variants.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR diagnostics is a rapidly evolving field; recently, several other Cas proteins have been reported for identifying pathogenic DNA or RNA and their variants (Fasching et al., 2022; Nan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "4593c263-4750-4cc3-9f51-9e59412ff5f9",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C100",
+      "claim": "An SNV of interest may be detected only by certain Cas proteins and not by others.",
+      "claim_type": "EXPLICIT",
+      "source": "To begin, an SNV of interest may be detected only by certain Cas proteins and not by others, as shown in Supplementary file 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "025327d9-6770-4a54-9fcb-e5627c2e0455",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C101",
+      "claim": "The sensitivity and scope of readout modes can differ depending on the diagnostic query: pathogenic polynucleotide or single nucleobase variant (monoallelic or biallelic).",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is especially useful because the sensitivity and scope of readout modes can differ depending on the diagnostic query: pathogenic polynucleotide or single nucleobase variant (monoallelic or biallelic; Arizti-Sanz et al., 2020; Joung et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Arizti-Sanz et al., 2020 and Joung et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "6d002d06-f4cf-4103-b513-36b500079e2c",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C102",
+      "claim": "Lateral flow readouts have been demonstrated for detecting full-length sequences and variants.",
+      "claim_type": "EXPLICIT",
+      "source": "While lateral flow readouts have been demonstrated for detecting full-length sequences and variants, fluorescence-based readouts are better suited for detecting disease mutation carriers (monoallelic SNVs; Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Kumar et al., 2021; Kellner et al., 2019; Gootenberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "c322686b-e8e1-480b-b67e-93734061e56f",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C103",
+      "claim": "Fluorescence-based readouts are better suited for detecting disease mutation carriers (monoallelic SNVs).",
+      "claim_type": "EXPLICIT",
+      "source": "While lateral flow readouts have been demonstrated for detecting full-length sequences and variants, fluorescence-based readouts are better suited for detecting disease mutation carriers (monoallelic SNVs; Li et al., 2018; Myhrvold et al., 2018; Teng et al., 2019; Azhar et al., 2021; Harrington et al., 2018; Kumar et al., 2021; Kellner et al., 2019; Gootenberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "9cb7fe58-4055-40aa-b3bb-ddd11753ea6a",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C104",
+      "claim": "The current framework of CriSNPr cannot perform sequence batch processing.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the current framework of CriSNPr cannot perform sequence batch processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a current limitation of CriSNPr.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "e66555da-4bb4-4408-a04a-c741753e4c91",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C105",
+      "claim": "The limitation of batch processing is due to the technical parameters of the server's hosting system.",
+      "claim_type": "EXPLICIT",
+      "source": "This limitation is due to the technical parameters of the server's hosting system, which will be updated in the near future to accommodate batch processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim explains the reason for the batch processing limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "1fb86ac9-c20c-4114-8b66-0b6dcc487f5f",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C106",
+      "claim": "CriSNPr currently does not include variants that are not single nucleotide changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CriSNPr currently does not include variants that are not single nucleotide changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a current limitation of CriSNPr.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "26f49cb3-06d4-4385-934d-a0e68af84016",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C107",
+      "claim": "Later versions of CriSNPr will include gRNA design parameters for polynucleotide changes in the target.",
+      "claim_type": "EXPLICIT",
+      "source": "Although SNVs are the most sensitive and critical diagnostic challenge, later versions of CriSNPr will include gRNA design parameters for polynucleotide changes in the target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes planned future development of CriSNPr.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "dde2c164-cac2-4552-9acc-c6d10d4ddefb",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C108",
+      "claim": "Systematic dissection of every combination of nucleobase mismatch on gRNA sensitivity has not yet been reported for FnCas9, Cas14, and Cas13.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially true for several of the Cas effectors considered in this server, such as FnCas9, Cas14, and Cas13, where systematic dissection of every combination of nucleobase mismatch on gRNA sensitivity has not yet been reported (Myhrvold et al., 2018; Azhar et al., 2021; Harrington et al., 2018; Kumar et al., 2021; Kellner et al., 2019; Acharya et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies a gap in the current literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "ef970e51-e16b-453f-8dc3-9c616f752949",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C109",
+      "claim": "CriSNPr currently hosts genomic targets for humans and SARS-CoV-2 lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "CriSNPr currently hosts genomic targets for humans and SARS-CoV-2 lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the current scope of CriSNPr.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "391938fc-efde-48a4-a6b9-36900c930ef4",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "claim_id": "C110",
+      "claim": "A large number of pathogenic variants exist in the microbial community, and a number of these have significant clinical manifestations, such as drug or antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a limitation given that a large number of pathogenic variants exist in the microbial community, and a number of these have significant clinical manifestations, such as drug or antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on general knowledge of microbial pathogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5c651857-e722-42f6-bd98-4a66a5901c98",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CriSNPr is a unified web server that provides de novo design of gRNAs for six CRISPR diagnostic proteins (Fn/enFnCas9, LwCas13a, LbCas12a, AaCas12b, Cas14a) and includes a curated database of pre-designed gRNAs for all human and SARS-CoV-2 variants, filling a gap in available tools for CRISPR-based variant detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6, C95, C97-C98 collectively establish that CriSNPr addresses an unmet need (C3) by providing a comprehensive tool (C4-C5) that has been validated experimentally (C6). The tool's functionality is demonstrated through database construction (C64-C66), interface design (Figures 2-3), and experimental validation (Figures 5-6, C85-C94). The distinction from other tools (C96-C97) is clearly articulated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Each of the six Cas proteins integrated into CriSNPr (LwCas13a, LbCas12a, Cas14a, AaCas12b, FnCas9, enFnCas9) possesses distinct PAM requirements, spacer lengths, target nucleic acid types, and mismatch-sensitive positions that determine their diagnostic capabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C63 comprehensively describe the design parameters for each Cas system, supported by Figure 1 and extensive citations to prior literature. These parameters are consistently applied throughout the CriSNPr database construction and are validated experimentally in Figures 5-6. The information is presented as established knowledge from cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "52ea663a-4dcc-4cf8-b0cc-663db97ced27",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CriSNPr's database was constructed by filtering pathological SNPs from dbSNP Build 155 and SARS-CoV-2 variants from CNCB-NGDC, followed by off-target screening of primer sequences against bacterial, viral, and human genome databases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 describe the database construction methodology, which is clearly documented in Figure 2 and the Materials and methods section. The filtering criteria and off-target screening approach are explicitly stated and represent standard bioinformatics practices for this type of resource.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "71fe7ed0-d42f-4460-af6a-cbae64c07aed",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Different Cas systems exhibit varying targetability across the dbSNP database, with LwCas13a and Cas14a (ssDNA) targeting nearly all variants due to lack of PAM constraints, while PAM-dependent systems show targetability ranging from 2.66% (Cas14a/dsDNA) to 85.15% (enFnCas9), with PAM relaxation providing greater coverage than increased mismatch-sensitive positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C74 present a systematic analysis of targetability across different Cas systems, supported by data in Figure 4a and Supplementary file 1. The percentages are specific and the inference about PAM relaxation vs. mismatch positions (C74) is logically derived from the comparative data. The analysis methodology is described in Materials and methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "e711d3cc-de01-4520-805a-7fd5b9a8dc67",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Among 493,105 disease-related SNPs from dbSNP, enFnCas9 exhibits the highest detection rate (90.74%) while Cas14a (dsDNA) shows the lowest (1.50%), with G.C > A.T mutations predominating in clinically significant variants and showing differential targeting by Cas systems based on PAM composition (G-rich vs. T-rich).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C82 present analysis of disease-relevant SNPs supported by Figure 4b and data analysis. The mutation class distribution and its relationship to PAM composition (C80-C82) represents a logical inference from the data. The specific percentages and fold-differences are clearly presented in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "56d8e2cd-eeb0-421e-9006-6737c9b09446",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The SARS-CoV-2 genome's AT-rich composition (62.05%) results in decreased targetability for G-rich Fn/enFnCas9 and higher targetability for LbCas12a (30%) and AaCas12b (70%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 present genome composition analysis and its impact on targetability, supported by Figure 4c and Supplementary file 2. The inference connecting AT-richness to differential Cas system performance is logical and consistent with the PAM requirements described earlier.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "28fc6405-260d-46d4-9025-d1db4537a3de",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CriSNPr-designed gRNAs successfully distinguished between wild-type and mutant sequences for SARS-CoV-2 E484K variant and human SNPs rs2073874 and rs138739292 using FnCas9, Cas14a, and AaCas12b, with fold-differences ranging from ~1.3 to ~20-fold depending on the Cas system and mismatch positions used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C94 describe experimental validation results presented in Figures 5 and 6 with statistical analysis (p-values, fold-changes). The experiments test CriSNPr-designed gRNAs across multiple Cas systems and SNVs. While AaCas12b showed lower discrimination (C93), this is acknowledged and does not invalidate the overall validation. The results support prior literature (C91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "902daa6f-af56-4f31-9581-4e7446ce1acb",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CRISPR-based diagnostics offer advantages over traditional qRT-PCR and sequencing methods for SNV detection due to high specificity from the two-step process of gRNA binding and catalytic activity, though each Cas protein requires unique crRNA design based on its distinctive mismatch-sensitive positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C22 establish the background and rationale for CRISPR diagnostics, supported by extensive citations to prior literature. These claims describe established knowledge about diagnostic methods, CRISPR mechanisms, and the need for customized design approaches. The claims are consistent with cited sources and provide context for the CriSNPr tool.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "1154ab08-a414-4f86-810b-37e5268c3ea1",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CriSNPr is distinguished from other recently reported gRNA design tools by its specific focus on diagnostics with design parameters tailored to each diagnostic CRISPR protein, and different Cas proteins and readout modes are suited for different diagnostic applications (pathogenic polynucleotide vs. monoallelic/biallelic SNVs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96, C99-C103 position CriSNPr within the broader landscape of available tools and discuss application considerations. The distinction from other tools (C96-C97) is supported by citations and the tool's demonstrated features. The discussion of readout modes (C101-C103) is supported by citations to relevant literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    },
+    {
+      "id": "4256c71d-e660-4c63-af4c-00b797615b31",
+      "content_id": "6794ae31-c30f-4869-8eec-ec19bd087e6f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CriSNPr has current limitations including inability to perform batch processing (due to server hosting constraints), restriction to single nucleotide changes, coverage limited to human and SARS-CoV-2 genomes, and incomplete systematic characterization of mismatch combinations for some Cas effectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C110 acknowledge limitations of the current CriSNPr version. These are transparently stated by the authors with explanations (C105) and plans for future development (C107). The limitation regarding incomplete mismatch characterization (C108) is supported by citations indicating gaps in the literature. These represent honest assessments of the tool's current scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:58:43.091415Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "613af32d-20e0-4f06-b561-fe4091beb66e",
+      "result_id": "5c651857-e722-42f6-bd98-4a66a5901c98"
+    },
+    {
+      "claim_id": "ac02a56f-2c37-4249-9bc1-c1a9ee21087f",
+      "result_id": "5c651857-e722-42f6-bd98-4a66a5901c98"
+    },
+    {
+      "claim_id": "fbac1248-4f5d-4c23-b12b-e5b03fb0d271",
+      "result_id": "5c651857-e722-42f6-bd98-4a66a5901c98"
+    },
+    {
+      "claim_id": "6d615b9c-8502-4f5d-b934-95dc09a54fe9",
+      "result_id": "5c651857-e722-42f6-bd98-4a66a5901c98"
+    },
+    {
+      "claim_id": "4ae2a919-f8ec-4b96-ad17-c1f49fc107a8",
+      "result_id": "5c651857-e722-42f6-bd98-4a66a5901c98"
+    },
+    {
+      "claim_id": "3dbd38dc-12c1-4699-9b2c-04200083beb0",
+      "result_id": "5c651857-e722-42f6-bd98-4a66a5901c98"
+    },
+    {
+      "claim_id": "2871b862-aacc-4357-886d-9a755656863e",
+      "result_id": "5c651857-e722-42f6-bd98-4a66a5901c98"
+    },
+    {
+      "claim_id": "9a84d90e-304a-451f-a8a1-e3a6b33b34e1",
+      "result_id": "5c651857-e722-42f6-bd98-4a66a5901c98"
+    },
+    {
+      "claim_id": "5518271d-12a3-4960-b55e-d34e8328ad78",
+      "result_id": "5c651857-e722-42f6-bd98-4a66a5901c98"
+    },
+    {
+      "claim_id": "8e1bf842-bbcc-4881-bbdc-f81e85cdf08e",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "c1271995-1f30-4278-82bc-87f070aef4c5",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "a948534b-a825-4c40-8427-80dd7f3cfa5f",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "6d39146e-3dd2-414c-a014-cbfd7c966085",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "700de748-fc56-4a1d-971c-e7e2478bf4d2",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "41847079-733c-4e9f-b804-d0bbe9268e2b",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "bdd0699a-43b5-4212-9678-a53a0a06a359",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "c0afd3ec-5056-4317-8290-8a83e265079f",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "41828894-37b9-4b01-ad59-4cf561332fcd",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "f1290236-5981-4496-8aa3-991801828efe",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "d7ad8a3b-0570-474c-9a8c-f4addf7760d7",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "92d28d07-c34a-47c0-b359-4aea2ccf9abf",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "0f123bea-21a2-4b60-92b2-f6c245c3c85e",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "46f07c99-fb57-44d0-a31b-10f68d06337a",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "0c3e7bdd-eea0-4ac1-a352-121a280a80b0",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "9c2adec3-fb9f-4f12-9f78-d5050e5eda9f",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "304326c4-14a3-4ebc-8cd0-bf7a7f418f27",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "989863a3-7977-47e3-b434-489e2cf354d0",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "c1781ed3-85a7-480c-9c0e-81aa0d7b984a",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "e7977c7c-76f1-4afb-bedb-f975a1be336c",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "543fb485-230c-46db-a38e-d2a74f75bfee",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "f5011505-32b6-4c6b-8972-0e9504ba9f10",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "07a4c536-1dd4-43b3-9f8f-40e4beee3221",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "81e14059-6986-4083-9b55-544d63f17853",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "6d0f5b1b-e76b-400a-9bb8-735fb443205d",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "21ac30b0-b7e7-4f90-bc03-2103dd40908b",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "2edb3e4f-4f77-46ca-b017-f5ea5dd7ab7b",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "919c7631-c297-4e2f-b74e-429c3fed4ee9",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "c1b5d3d5-8fa3-4dd4-a2b9-ed3083ed7c1e",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "322feff1-328e-431b-a6cb-075b39cad2f5",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "c247038b-227e-4ebf-97d9-750e31795a4b",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "fe598130-ac5e-4bf0-a5bb-9274da991882",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "d9c9b7cf-9a8f-4300-9262-85193cb764f7",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "fa57c384-39e7-47dd-856e-33f578018216",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "36f6c09b-946e-4c14-ad1c-717669a3b8dd",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "dd228be0-3442-4221-88b5-76e7380ff7ef",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "9f6db8fd-907d-4601-9ad0-e667e2736b12",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "f76abe13-1a9c-43a6-bf79-086f491c4220",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "83d7d7d8-f7df-4eb6-8bd6-c0604f3c7629",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "41f81aa0-1fb1-42c1-a7d3-8ecbef34ed72",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "baa9fa2b-a45e-4ba6-ae74-4fe5c116e776",
+      "result_id": "eaa72909-0130-4d6a-afd9-94eec8bc2aba"
+    },
+    {
+      "claim_id": "053c7144-b713-4d20-97de-c9e5ebf791a4",
+      "result_id": "52ea663a-4dcc-4cf8-b0cc-663db97ced27"
+    },
+    {
+      "claim_id": "44580778-213b-4a6b-9f0f-3edb345c27e6",
+      "result_id": "52ea663a-4dcc-4cf8-b0cc-663db97ced27"
+    },
+    {
+      "claim_id": "4917f193-7e34-4ac2-af7a-657f82e45200",
+      "result_id": "52ea663a-4dcc-4cf8-b0cc-663db97ced27"
+    },
+    {
+      "claim_id": "0ffafc79-3c44-4587-9382-59c19a7fd9df",
+      "result_id": "71fe7ed0-d42f-4460-af6a-cbae64c07aed"
+    },
+    {
+      "claim_id": "39617fe3-8338-4334-b029-0d23ff7c777e",
+      "result_id": "71fe7ed0-d42f-4460-af6a-cbae64c07aed"
+    },
+    {
+      "claim_id": "e577bd6d-6ce8-4a0c-92c7-69f2fb22b217",
+      "result_id": "71fe7ed0-d42f-4460-af6a-cbae64c07aed"
+    },
+    {
+      "claim_id": "afa764ea-1375-438b-9229-138a3bd79e86",
+      "result_id": "71fe7ed0-d42f-4460-af6a-cbae64c07aed"
+    },
+    {
+      "claim_id": "44eeb68d-81ab-48e6-9000-9ca0e80c3d58",
+      "result_id": "71fe7ed0-d42f-4460-af6a-cbae64c07aed"
+    },
+    {
+      "claim_id": "94a5eaba-3a8b-47dd-8edb-efd3487f0393",
+      "result_id": "71fe7ed0-d42f-4460-af6a-cbae64c07aed"
+    },
+    {
+      "claim_id": "64708f0a-78c3-488c-8b5c-7be9b563b56a",
+      "result_id": "71fe7ed0-d42f-4460-af6a-cbae64c07aed"
+    },
+    {
+      "claim_id": "8e38a681-f6b2-4d86-a1fe-876c7712cd57",
+      "result_id": "71fe7ed0-d42f-4460-af6a-cbae64c07aed"
+    },
+    {
+      "claim_id": "e1383108-712b-4c78-8bef-0f7aa05de703",
+      "result_id": "e711d3cc-de01-4520-805a-7fd5b9a8dc67"
+    },
+    {
+      "claim_id": "cb68f290-a868-445b-b8f8-784016ce7e3b",
+      "result_id": "e711d3cc-de01-4520-805a-7fd5b9a8dc67"
+    },
+    {
+      "claim_id": "8732c3ad-5031-4c6b-8cb1-34518772cc54",
+      "result_id": "e711d3cc-de01-4520-805a-7fd5b9a8dc67"
+    },
+    {
+      "claim_id": "3130e7bb-34ae-410a-a7f3-ee012f072640",
+      "result_id": "e711d3cc-de01-4520-805a-7fd5b9a8dc67"
+    },
+    {
+      "claim_id": "7e7afdac-4b07-4fdf-9246-e251066cc122",
+      "result_id": "e711d3cc-de01-4520-805a-7fd5b9a8dc67"
+    },
+    {
+      "claim_id": "c07ba7e3-e8f1-4d76-94ec-5fc313276ae9",
+      "result_id": "e711d3cc-de01-4520-805a-7fd5b9a8dc67"
+    },
+    {
+      "claim_id": "221d756d-581c-46e8-939a-551d3c2666a3",
+      "result_id": "e711d3cc-de01-4520-805a-7fd5b9a8dc67"
+    },
+    {
+      "claim_id": "69fd71ac-2370-4f53-80bb-d78514e28bf0",
+      "result_id": "e711d3cc-de01-4520-805a-7fd5b9a8dc67"
+    },
+    {
+      "claim_id": "30d3ac91-7bed-41e7-8b71-fd0a8f0f9b01",
+      "result_id": "56d8e2cd-eeb0-421e-9006-6737c9b09446"
+    },
+    {
+      "claim_id": "40e5ff5f-aacc-4643-81c4-64eaf7bed55a",
+      "result_id": "56d8e2cd-eeb0-421e-9006-6737c9b09446"
+    },
+    {
+      "claim_id": "3ad32274-a48c-4afc-8d23-19fd071297bd",
+      "result_id": "28fc6405-260d-46d4-9025-d1db4537a3de"
+    },
+    {
+      "claim_id": "630fe508-dd01-4534-b678-808e7deb6fa3",
+      "result_id": "28fc6405-260d-46d4-9025-d1db4537a3de"
+    },
+    {
+      "claim_id": "4212e7d1-51f7-42a2-986a-6b3fa9980b40",
+      "result_id": "28fc6405-260d-46d4-9025-d1db4537a3de"
+    },
+    {
+      "claim_id": "f73af4bb-380a-4427-ae0c-2463ed604b71",
+      "result_id": "28fc6405-260d-46d4-9025-d1db4537a3de"
+    },
+    {
+      "claim_id": "91734fa7-999a-44c6-bafb-a3198567a0f5",
+      "result_id": "28fc6405-260d-46d4-9025-d1db4537a3de"
+    },
+    {
+      "claim_id": "864583c8-e0cd-48c3-a315-ab84e0891f36",
+      "result_id": "28fc6405-260d-46d4-9025-d1db4537a3de"
+    },
+    {
+      "claim_id": "76cce2e9-e833-41fb-adc3-cf88ecaca111",
+      "result_id": "28fc6405-260d-46d4-9025-d1db4537a3de"
+    },
+    {
+      "claim_id": "8d18b0ed-8b5f-4710-be9c-d2e5dc267f80",
+      "result_id": "28fc6405-260d-46d4-9025-d1db4537a3de"
+    },
+    {
+      "claim_id": "3a114633-f4cd-4dc4-9ca5-5092cc71b57f",
+      "result_id": "28fc6405-260d-46d4-9025-d1db4537a3de"
+    },
+    {
+      "claim_id": "cc3b30c7-b289-490d-86ec-9c5ea7f565ba",
+      "result_id": "28fc6405-260d-46d4-9025-d1db4537a3de"
+    },
+    {
+      "claim_id": "9f0960fc-8e2c-4a30-8b3b-2041721db1c0",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "f6833c6f-4018-452e-89da-638f6ce4b051",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "d1efb14b-3023-4f8b-b869-c3de1b94d1f9",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "4e6aad1f-f9c2-4a1b-96f4-9728cb16e1fd",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "94d1cc73-af4a-4428-8f52-ef7ea6b4604b",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "1611554e-c94e-48e2-9e4d-afc2ee79ec3a",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "6af20bd5-945f-4a2d-adae-e25083c02b7a",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "f632da48-c202-46ce-9a8a-1c9df5e472ab",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "5fcc5a0e-5d10-4495-bd46-a345fd7d852a",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "a44fd43e-6861-44da-aac9-3d6c7dae75af",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "da33d95b-46f7-4439-b431-ea2b26724dfe",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "5447d7c6-3457-46a8-8b2a-630c67c4d0d3",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "aa32c28d-cc20-4211-bf32-8cbf5e6f0dc4",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "57464e27-4a5e-4364-bb66-fe7999a7220e",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "21ae3771-de1d-4dc1-8eb3-3f871e0a7fac",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "bd96589b-fd4b-4666-bdcf-d2b996a70549",
+      "result_id": "902daa6f-af56-4f31-9581-4e7446ce1acb"
+    },
+    {
+      "claim_id": "bbcbb929-dd6c-4966-8ba9-14622b45b483",
+      "result_id": "1154ab08-a414-4f86-810b-37e5268c3ea1"
+    },
+    {
+      "claim_id": "6a0463d9-3c81-4ae6-9d3f-4c1e1a4dfde4",
+      "result_id": "1154ab08-a414-4f86-810b-37e5268c3ea1"
+    },
+    {
+      "claim_id": "4593c263-4750-4cc3-9f51-9e59412ff5f9",
+      "result_id": "1154ab08-a414-4f86-810b-37e5268c3ea1"
+    },
+    {
+      "claim_id": "025327d9-6770-4a54-9fcb-e5627c2e0455",
+      "result_id": "1154ab08-a414-4f86-810b-37e5268c3ea1"
+    },
+    {
+      "claim_id": "6d002d06-f4cf-4103-b513-36b500079e2c",
+      "result_id": "1154ab08-a414-4f86-810b-37e5268c3ea1"
+    },
+    {
+      "claim_id": "c322686b-e8e1-480b-b67e-93734061e56f",
+      "result_id": "1154ab08-a414-4f86-810b-37e5268c3ea1"
+    },
+    {
+      "claim_id": "9cb7fe58-4055-40aa-b3bb-ddd11753ea6a",
+      "result_id": "4256c71d-e660-4c63-af4c-00b797615b31"
+    },
+    {
+      "claim_id": "e66555da-4bb4-4408-a04a-c741753e4c91",
+      "result_id": "4256c71d-e660-4c63-af4c-00b797615b31"
+    },
+    {
+      "claim_id": "1fb86ac9-c20c-4114-8b66-0b6dcc487f5f",
+      "result_id": "4256c71d-e660-4c63-af4c-00b797615b31"
+    },
+    {
+      "claim_id": "26f49cb3-06d4-4385-934d-a0e68af84016",
+      "result_id": "4256c71d-e660-4c63-af4c-00b797615b31"
+    },
+    {
+      "claim_id": "dde2c164-cac2-4552-9acc-c6d10d4ddefb",
+      "result_id": "4256c71d-e660-4c63-af4c-00b797615b31"
+    },
+    {
+      "claim_id": "ef970e51-e16b-453f-8dc3-9c616f752949",
+      "result_id": "4256c71d-e660-4c63-af4c-00b797615b31"
+    },
+    {
+      "claim_id": "391938fc-efde-48a4-a6b9-36900c930ef4",
+      "result_id": "4256c71d-e660-4c63-af4c-00b797615b31"
+    }
+  ],
+  "comparisons": []
+}

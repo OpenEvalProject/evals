@@ -1,0 +1,473 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript identifies key limitations in existing calcium imaging analysis pipelines: computational complexity as a bottleneck, hard-coded parameters or insufficient guidance for parameter selection, large memory demands limiting hardware choices, and lack of ground-truth data for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C23-C24 establish the motivation for developing Minian by identifying well-recognized challenges in the field. These are based on general knowledge and the authors' assessment of existing tools, which is appropriate for contextualizing the contribution. The claims are internally consistent and align with known limitations in computational neuroscience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Minian is an open-source calcium imaging analysis pipeline designed to be accessible to users with limited computational experience, featuring interactive visualizations at every step, detailed documentation, low memory demands enabling laptop use, and validation across different brain regions and cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 and C27-C31 describe the core features and contributions of Minian. These claims are supported by the detailed methods descriptions, multiple figures demonstrating interactive visualizations (Figures 2-14), benchmarking data showing constant memory usage (C8, Figure 18), and validation results (C9, Figures 15-17, 20). The integration of Jupyter Notebooks and comprehensive documentation is demonstrated throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript reviews prior calcium imaging analysis methods including UCLA Miniscope, PCA-ICA, ROI-based approaches, CNMF, CNMF-E, CaImAn, and MIN1PIPE, describing their capabilities and limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C22 provide a literature review of existing methods with appropriate citations. These claims accurately represent the cited works and establish the algorithmic foundation upon which Minian builds. The descriptions of algorithm capabilities and limitations are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Minian's pipeline comprises five major stages (preprocessing, motion correction, seed initialization, spatial update, temporal update) and is based on CNMF while incorporating methods from other pipelines including Cai et al. 2016 and MIN1PIPE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C44 describe the overall architecture and workflow of Minian. These are well-supported by Figure 1 showing the pipeline stages (C32), detailed methods descriptions for each stage, and appropriate citations to the algorithms being adapted (C25-C26, C35-C36). The iterative nature and typical convergence (C42-C43) are based on the authors' experience.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Minian's computational implementation features low memory demands (as low as 2 GB per process), linear scaling of total memory with parallel processes, and support for multiple video formats (.avi, .tif) with flexible downsampling options.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 describe technical specifications that are supported by the benchmarking results in Figure 18 showing constant memory usage (C45-C46) and the methods descriptions of file format support and downsampling strategies. These are implementation details that can be verified from the code and are consistent with the out-of-core computation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Minian's preprocessing includes vignetting correction by subtracting minimum fluorescence values (preserving linear scale) and denoising with median filters, with guidance that window size should match average cell radius.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 describe preprocessing methods with supporting visualizations in Figures 3-5. The vignetting correction method (C50-C51) is straightforward and the linear scale preservation is mathematically sound. The median filter guidance (C52-C56) is based on established image processing principles (C53) and practical experience, with Figure 5 demonstrating the effects of different window sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Minian uses morphological opening (erosion followed by dilation) for background removal, a method adapted from MIN1PIPE that acts as a size filter to remove cell bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe the morphological opening process with appropriate citation to MIN1PIPE (C57). The description of erosion and dilation operations (C58-C60) is accurate based on standard image processing theory, and the combined effect (C61) is correctly explained. Figures 6-7 demonstrate the effectiveness of this approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Minian performs motion correction using template-matching based on cross-correlation in a divide-and-conquer manner, which is sufficient to correct motion artifacts impacting final outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 describe the motion correction approach with appropriate citation (C62). The sufficiency claim (C63) is based on the authors' practical experience and is reasonable given that only translational shifts are corrected. The divide-and-conquer implementation (C64) is a computational strategy that is well-described in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Minian uses seed-based initialization adapted from MIN1PIPE, generating an over-complete set of seeds by iteratively finding local maxima in maximum projections of frame subsets, avoiding missing cells that fire only briefly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 describe the seed generation process with appropriate citation (C65). The iterative approach (C67-C69) is well-justified for capturing transiently active cells. The parameter guidance (C70-C73) is practical and based on the authors' experience. The rationale for the over-complete set and subsequent refinement is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Minian refines seeds using peak-to-noise ratio, separating signal from noise by passing traces through low-pass and high-pass filters, with a recommended threshold of 1 reflecting the intuition that signal fluctuations should exceed noise fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 describe the peak-to-noise ratio refinement with supporting visualizations in Figures 8-9. The frequency-based separation of signal and noise (C75-C77) is based on known properties of calcium dynamics. The interactive visualization (Figure 8) helps users select appropriate cutoff frequencies, and Figure 9 demonstrates the effects of different frequencies (C78-C79). The threshold recommendation (C80-C81) is practical and intuitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Minian applies Kolmogorov-Smirnov tests to refine seeds by checking for non-normal distributions, expecting that true cells show non-Gaussian distributions due to distinct firing and non-firing states, using a default significance threshold of 0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe an additional seed refinement step with clear rationale (C83). The expectation of non-normal distributions for true cells is reasonable given the bimodal nature of firing/non-firing states. The default threshold (C84) is standard for statistical testing, though the authors acknowledge it may need adjustment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Minian merges multiple seeds for single cells based on distance and temporal correlation criteria, with recommended thresholds of average cell radius for distance and 0.8 for correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe the seed merging process with practical parameter recommendations. The two criteria (distance and correlation) are sensible for identifying seeds from the same cell. The parameter recommendations (C87-C88) are based on the authors' experience and provide reasonable starting points for users.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Minian initializes spatial footprints using cosine similarity between seed temporal traces and surrounding pixels, then generates temporal activities by weighting pixel contributions, with recommended cosine similarity threshold \u22650.5 and window size equal to maximum expected cell diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 describe the initialization of spatial and temporal matrices. The cosine similarity approach (C89) is mathematically sound for measuring temporal correlation. The reciprocal estimation of spatial and temporal components (C89-C90) is a standard approach. The parameter recommendations (C92-C93) are practical and based on experience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C99"
+    ],
+    "result": "Minian's CNMF implementation estimates spatial noise as the power of high-frequency signals, models the video as a product of spatial/temporal matrices plus background and noise, and performs spatial updates pixel-independently in parallel while updating all cells simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 and C99 describe the CNMF framework accurately based on the cited literature. The noise estimation (C94-C95) is standard. The model formulation (C96) is correctly stated. The parallel implementation strategy (C99) is a computational optimization that maintains the demixing capability of CNMF.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "During spatial update, a sparseness penalty of 0.1 is appropriate for the example shown, with lower values introducing artifacts and higher values discarding cells; the dilation window parameter should start at expected cell diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 provide parameter guidance for spatial update with supporting visualization in Figures 10-11. Figure 11 clearly demonstrates the effects of different sparseness penalties (C103-C105), showing artifacts at low values and cell loss at high values. The dilation window guidance (C106-C107) is practical and prevents computational inefficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Minian's temporal update subtracts background, projects data onto spatial footprints, estimates and removes overlapping cell contributions, models calcium dynamics as an autoregressive process, and updates cells in parallel using Jaccard index to identify non-overlapping cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C117 describe the temporal update process accurately based on the CNMF framework. The AR model description (C110-C113) is correct with appropriate caveats about the relationship to actual firing rates (C111-C112). The smoothing recommendation (C114) is practical. The parallel processing strategy using Jaccard index (C115-C116) is computationally efficient. The additional terms (C117) properly account for baseline activity and initial conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Minian introduces post-hoc scaling to counteract amplitude reduction from \u21131-norm, recommends AR model order of 1 for near-instantaneous rise times, and demonstrates that sparseness penalty of 0.008 is appropriate for the example, with lower values introducing false positives and higher values producing false negatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 describe modifications and parameter guidance for temporal update. The post-hoc scaling (C119) addresses a known issue with \u21131-norm regularization. The AR model order guidance (C120) is practical. Figure 13 clearly demonstrates the effects of different sparseness penalties (C121-C123), showing false positives at low values and false negatives at high values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Minian implements cell merging based on spatial overlap and temporal correlation to correct CNMF's occasional misclassification of single cells as multiple cells, performed only between CNMF iterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 describe a post-processing step to address a known CNMF limitation (C124). The merging criteria (C126) are sensible, and the merging method (C127) is straightforward. The restriction to between-iteration merging (C128) is appropriate given that this is a heuristic correction rather than part of the formal CNMF model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Minian provides interactive visualization for manual curation allowing users to inspect, merge, or drop cells, with results saved non-destructively as labels that can be corrected if needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 describe the manual curation interface with supporting visualization in Figure 14. The interactive features are well-demonstrated, and the non-destructive approach (C131) is good practice for data analysis pipelines, allowing users to iterate on curation decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Minian implements simple cross-session registration based on centroid distances after aligning fields of view, using a 5-pixel threshold and requiring mutual closest-neighbor matching, with a conservative strategy that discards conflicts but provides easy-to-interpret results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C139 describe the cross-registration approach. The simplicity is intentional (C132) and acknowledged as potentially conservative (C138). The alignment step (C133) addresses field-of-view shifts. The threshold recommendation (C134) is based on experience. The mutual closest-neighbor requirement (C135) and conflict resolution (C137) are conservative but reduce ambiguity. The rationale (C139) is reasonable for a user-friendly tool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Minian has been tested on OSX, Linux, and Windows, works on personal laptops for ~30 min experiments, requires at least 16 GB memory for 20 min recordings, and is built on Jupyter with dependencies including NumPy, SciPy, xarray, HoloViews, Bokeh, OpenCV, and Dask.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145 describe hardware compatibility and software dependencies. The cross-platform testing (C140) and laptop capability (C141) support the accessibility goals. The memory estimate (C142) is reasonable given the benchmarking data. The storage recommendations (C143-C144) are practical for out-of-core computation. The dependencies (C145) are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "On simulated datasets, both Minian and CaImAn achieve near-perfect F1 scores (>0.95) and spatial footprint correlations (>0.95) across all conditions, with decreased temporal dynamics correlation only at the lowest signal level (0.2), likely due to noise contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 report validation results on simulated data with supporting evidence in Figure 15. The near-perfect performance metrics (C146-C147) demonstrate that Minian performs comparably to CaImAn. The decreased performance at low signal (C148) is expected and the interpretation (C149) is reasonable. The conclusion (C150) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Minian's deconvolved output is highly similar to ground-truth spikes when signal level is high (correlation approaching 1 for signal >1), with detected spikes closely matching ground truth; the main difference is in amplitude which is influenced by local background and noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C156 report deconvolution validation with supporting evidence in Figure 16. The correlation analysis (C151-C152) shows good performance at high signal levels. The interpretation of low-signal performance (C153) is reasonable. The example traces (C154, Figure 16B) demonstrate close matching. The amplitude difference (C155) is acknowledged as a limitation. The conclusion (C156) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "On experimental datasets, Minian and CaImAn show mean F1 score of 0.73, spatial footprint correlation of 0.84, and temporal activity correlation of 0.86, with most ROIs corresponding to the same cells and nearly identical outputs, though differences exist near field-of-view edges due to low signal quality and preprocessing differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C165 report experimental validation with supporting evidence in Figure 17. The quantitative metrics (C157-C159) show good agreement between pipelines. The qualitative assessment (C160-C161) is supported by Figure 17. The spatial distribution observation (C162) and edge effects (C163-C164) are reasonable explanations for differences. The conclusion (C165) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Benchmarking shows both pipelines have similar linear scaling of run time with recording length, but Minian maintains constant memory usage while CaImAn's memory scales linearly, likely due to Minian's flexible chunking in both spatial and temporal dimensions versus CaImAn's spatial-only chunking; this allows processing longer recordings with limited RAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C174 report benchmarking results with supporting evidence in Figures 18-19. The run time comparison (C166-C167) shows similar performance. The memory usage difference (C168-C169) is clearly demonstrated in Figure 18. The explanation (C170-C171) is technically sound and explains the observed difference. The tradeoff analysis (C172, Figure 19) is informative. The conclusions (C173-C174) are well-supported and represent a key advantage of Minian.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Validation with hippocampal CA1 place cells shows average correlation of ~0.6 for spatial firing rates across sessions separated by 2 days (consistent with literature), and higher correlations when spatial footprint shifts are close to zero, demonstrating that Minian produces results agreeing with known CA1 properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C178 report biological validation with supporting evidence in Figure 20. The place cell stability (C175) is well-established in the literature. The observed correlation (C176) matches published values and is appropriately cited. The shift analysis (C177, Figure 20B) validates the cross-registration approach. The conclusion (C178) is well-supported and demonstrates that Minian produces biologically meaningful results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C179",
+      "C180"
+    ],
+    "result": "The authors acknowledge that ground-truth data for single-photon in vivo calcium imaging are lacking, making objective algorithm evaluation difficult, and therefore provide only indirect validation by recapitulating well-established biological findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C180 acknowledge a fundamental limitation in the field with appropriate citation (C179). This honest acknowledgment of the validation approach (C180) is appropriate and explains why the biological validation with place cells was necessary. This limitation affects the entire field, not just Minian.",
+    "result_type": "MINOR"
+  }
+]

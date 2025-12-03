@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C115"
+    ],
+    "result": "Human-specialist and generalist Ae. aegypti populations diverged rapidly approximately 5000 years ago at the end of the African Humid Period. Cross-coalescent analysis using MSMC2 and MSMC-IM showed that populations had similar effective population sizes ~10,000 years ago, expanded gradually, then diverged abruptly 3000-5000 years ago, coinciding with the drying of the Sahara.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C90-C94 provide converging evidence from multiple coalescent analyses (MSMC2, MSMC-IM) showing rapid divergence ~5000 years ago. The timing corresponds with independent climate data (C94, Figure 2D), and results are robust across different population pairs (Figure 2\u2014figure supplement 1). The calibration approach using the Atlantic Slave Trade provides temporal grounding for these estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The study calibrated coalescent scaling factors by leveraging the known timing of Ae. aegypti migration out of Africa during the Atlantic Slave Trade (150-500 years ago). MSMC analysis revealed a single strong pulse of migration between West African and Brazilian populations that matched the historical record of slave trafficking, with optimal correspondence at a mutation rate of 4.85 \u00d7 10\u207b\u2079 per generation (assuming 15 generations/year).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C87, C124-C128 describe a novel calibration approach that shows good correspondence between genomic and historical data (Figure 2A-B). The Bhattacharyya coefficient analysis demonstrates overlap across reasonable parameter ranges, and the inferred migration timing matches both the duration and drop-off of the Atlantic Slave Trade. This provides empirical validation of the calibration method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C59",
+      "C107",
+      "C106",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Ancestry tract length analysis indicates that the influx of human-specialist alleles into Kumasi and Ouagadougou occurred within the last 20-40 years, coinciding with rapid urbanization. Long tracts of human-specialist ancestry were detected in both cities, with non-uniform distribution across the genome and significant spatial correlation between cities (permutation p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C59, C106-C110 present consistent evidence from AncestryHMM analysis showing recent admixture. The tract length estimates are validated by simulations (C109, Figure 3\u2014figure supplement 1), and the timing corresponds with documented urban population growth (Figure 3E-F). The spatial correlation (C110) suggests parallel selection, though this interpretation remains speculative (C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "f3 statistics confirmed that Kumasi and Ouagadougou populations can be modeled as admixtures of human-specialist and generalist populations. Significantly negative f3 values were obtained for most population combinations, though using Ngoye (NGO) as the specialist source yielded ambiguous results, likely reflecting NGO's own admixed history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 describe appropriate use of f3 statistics to test admixture models. The significantly negative values (C98, Figure 3A-B) support the admixture hypothesis, while the ambiguous NGO results (C99-C100) are reasonably explained by NGO's complex history. The acknowledgment that denser sampling is needed (C102) appropriately recognizes limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C168",
+      "C169",
+      "C170",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The study developed a genome-wide phasing panel for Ae. aegypti using 389 individuals and a two-step approach combining HAPCUT2 pre-phasing with SHAPEIT4.2 statistical phasing. The high nucleotide diversity (~2%) enabled effective pre-phasing, with >95% of calls having maximal quality scores and prephase blocks averaging 728 bp. The final panel comprised 52,534,217 biallelic SNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70, C168-C178 describe a methodologically sound phasing approach. The high quality scores (C68) and reasonable block lengths (C69) given the species' linkage disequilibrium properties support the effectiveness of the approach. The two-step procedure is appropriate for the data structure, though long-range phasing accuracy remains difficult to validate (C134, C136).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C183",
+      "C184"
+    ],
+    "result": "The mutation rate in Ae. aegypti is estimated to be on the order of 3 \u00d7 10\u207b\u2079 per generation based on other insects, and most populations likely undergo ~15 generations per year. The similar ratio of recombination to mutation rate in Ae. aegypti compared to humans (~1) supports the application of MSMC analyses to this species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73, C183-C184 acknowledge substantial uncertainty in both mutation rate and generation time estimates. While the inference from other insects (C71) is reasonable, the authors explicitly state this would yield 'extremely rough' estimates (C73). The comparison to humans (C183-C184) provides some justification for method applicability, but the fundamental parameter uncertainty remains a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The temporal resolution of cross-coalescent inferences is relatively low, with bootstrap replicates suggesting wide bounds for event timing. Long-range statistical phasing is difficult to validate, though results appear robust across different proxy populations. Alternative calibration scenarios (peak migration at 1500 or 1850) would shift divergence estimates to ~10,000 or ~3000 years ago, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C143 provide an appropriately critical assessment of methodological limitations. The acknowledgment of low temporal resolution (C133), phasing uncertainties (C134-C137), and sensitivity to calibration assumptions (C138-C142) demonstrates scientific rigor. The conclusion that main estimates provide the best match to existing literature (C143) is reasonable but acknowledges uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Positive selection during adaptive introgression could make admixture appear more recent than it actually is. To address this, regions previously identified as under selection were masked before ancestry tract analysis. The exact geographic origin of human-specialist ancestry in Kumasi and Ouagadougou remains uncertain, though it is likely derived from nearby specialist populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C160 appropriately address potential confounding by selection. The masking approach (C155) is methodologically sound, though the possibility of undetected selection outside masked regions (C156) is acknowledged. The uncertainty about geographic origins (C157-C160) is honestly stated, with reasonable inferences based on previous ADMIXTURE analyses (C158).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C112",
+      "C115",
+      "C152",
+      "C153"
+    ],
+    "result": "The timing and ecological context of two shifts towards human biting in Ae. aegypti differ: climate was likely the original driver ~5000 years ago, while urbanization has become increasingly important in recent decades. This demonstrates that the ecology of Ae. aegypti has been in flux across human history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C112, C115, C152-C153 synthesize the major findings into a coherent narrative. The conclusion is well-supported by the convergence of coalescent analysis (showing ancient climate-driven divergence) and ancestry tract analysis (showing recent urbanization-driven admixture). This represents the primary scientific contribution of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "This study represents one of the first applications of cross-coalescent analysis to a non-model system. The phasing panel and historical calibration approach developed here may be applicable to other taxa with similar population genomic properties and well-documented historical events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C151 appropriately contextualize the methodological contributions. The novelty of applying cross-coalescent analysis to a non-model system (C144) and using historical records for calibration (C149-C151) represents genuine methodological advancement. The generalization to other systems (C148-C149) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The influx of human-specialist ancestry into African cities likely has important public health implications, as human-specialist mosquitoes are more likely to bite humans and serve as competent vectors of dengue, Zika, and yellow fever. Ouagadougou has experienced recent dengue outbreaks, and populations there remain genetically intermediate between generalists and specialists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C167 appropriately discuss public health implications based on the findings. The connection between human-specialist ancestry and disease risk (C162) is supported by citations, and the Ouagadougou dengue outbreaks (C163) provide real-world context. The recommendations for monitoring and control (C167) are reasonable, though speculative elements (C165-C166) are appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225"
+    ],
+    "result": "Simulations using the phasing panel confirmed statistical power to detect admixture tracts across the genome. AncestryHMM reliably detected simulated tracts of various sizes (500 kb to 10 Mb), though small regions showing specialist ancestry across all simulations likely represent bona fide tracts in otherwise unadmixed reference individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C220-C225 describe appropriate validation simulations. The detection of tracts across different sizes (C221-C222, Figure 3\u2014figure supplement 1) demonstrates method reliability. The interpretation that consistently detected regions represent real ancestry in reference individuals (C225) is reasonable given that these regions differ between individuals (C224).",
+    "result_type": "MINOR"
+  }
+]

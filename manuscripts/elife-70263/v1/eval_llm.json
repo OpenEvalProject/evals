@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C55",
+      "C56"
+    ],
+    "result": "Prior work has established that cortical areas in rodents and primates are organized in a hierarchy of intrinsic integration timescales, with frontal areas integrating over longer windows than sensory areas. These timescales arise from intrinsic cellular and circuit properties but are modulated by task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, C55, and C56 are well-supported by extensive citations to prior literature. These claims establish the foundational knowledge upon which the current study builds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C17"
+    ],
+    "result": "The relevance of cortical timescale hierarchies for cognitive behavior and the mechanisms underlying widespread cortical recruitment during evidence accumulation remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12, and C17 accurately describe gaps in current knowledge that motivate the study. These are statements about the state of the field rather than experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C10",
+      "C20",
+      "C62",
+      "C65",
+      "C72",
+      "C86"
+    ],
+    "result": "The intrinsic timescale hierarchy of distributed cortical areas is an important component of evidence-accumulation mechanisms, with different cortical areas contributing to sensory-evidence accrual on different timescales arranged in a temporal hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C10, C20, C62, C65, C72, and C86 represent the main conclusion of the study. This conclusion is well-supported by converging evidence from both optogenetic inactivation experiments (showing differential timescale effects) and widefield calcium imaging (showing gradient of intrinsic timescales). The hypothesis (C4) is tested and supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C87",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study employed optogenetic inactivation of seven cortical areas during six different trial epochs in mice performing an evidence accumulation task in virtual reality, using validated methods with appropriate controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C25, C87, C90-C98 describe the experimental methods. The methods are well-documented, include appropriate controls (C30, C96, C97), and build on validated prior work. The experimental design is comprehensive, testing 54 area-epoch combinations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Mice performed the accumulating towers task with performance modulated by evidence strength, and on average weighted evidence equally throughout the maze.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C22 describe baseline behavioral performance. These findings are supported by data in Figure 1B-C and are consistent with prior work by the same authors. The flat evidence-weighting curve validates the task design for subsequent inactivation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Inactivation of all tested cortical areas significantly affected behavioral performance to varying degrees, with different effects observed even in closely proximate regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26-C28 are supported by data in Figure 1E and supplements, with appropriate statistical testing (bootstrapping, p<0.05). The observation of different effects in proximate regions (C27) argues against non-specific spread effects, though the authors acknowledge ~2mm inactivation spread as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Inactivation resulted in minor changes in running speed (~8% increase) and effects were specific to ChR2-expressing mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C30 address important controls. The minor speed changes (C29) are documented in Figure 1\u2014figure supplement 3. The specificity to ChR2 expression (C30) is established by reference to prior control experiments, ruling out non-specific light effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Changes in evidence weighting before, during, and after laser onset reflect distinct computational processes: memory of past evidence, processing/short-term memory, and post-accumulation processes like decision commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C34 represent interpretive reasoning about what different temporal patterns of inactivation effects mean. While the reasoning is plausible, these interpretations are not directly validated. Alternative explanations (e.g., lingering inactivation effects mentioned by authors) cannot be fully ruled out without additional experiments combining inactivation with neural recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Mixed-effects logistic regression models with 10-fold cross-validation accurately predicted ~70% of behavioral choices, with appropriate statistical controls including bootstrapping and false discovery rate correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C102-C105 describe the analytical approach. The ~70% prediction accuracy (C35, Figure 2B) demonstrates good model performance. The use of mixed-effects models to account for mouse and epoch variability is appropriate, and statistical methods are rigorous with multiple comparison corrections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Inactivation of posterior cortical areas (V1, mV2, PPC, RSC) primarily affected processing and memory of sensory evidence on short to intermediate timescales (\u22641.5 s), with area-specific temporal profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 are supported by statistical analysis of mixed-effects models (Figure 2A, p<0.001). Each posterior area shows distinct temporal profiles: PPC affects very recent evidence (\u22640.5s), mV2 affects intermediate timescales (0.5-1.0s), while V1 and RSC show non-monotonic effects. The conclusion that effects are primarily on accumulation itself (C42) is supported by the observation that changes occur only for evidence concomitant to or preceding laser onset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Inactivation of frontal areas (M1, mM2, aM2) led to profound deficits in the use of long-past evidence (1.0-1.5 s), with some areas also affecting post-laser evidence, suggesting roles in both evidence accumulation and post-accumulation processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by statistical analysis (Figure 2A, p<0.001). All three frontal areas show deficits for long-past evidence, distinguishing them from posterior areas. The interpretation that frontal areas may have additional roles beyond accumulation (C46) is reasonable given the post-laser effects, though the speculation about premature decisions (C47) remains unvalidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C63"
+    ],
+    "result": "Frontal and posterior cortical areas differed significantly in the magnitude and time course of evidence-weighting deficits, with frontal inactivation causing larger decreases in the use of long-past evidence and post-inactivation evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C63 are supported by rigorous statistical analysis including two-way repeated measures ANOVA (Figure 2C, significant interaction p=0.025) and z-tests (p=0.006 for long-past evidence, p<0.001 for post-laser evidence). This represents a key finding distinguishing frontal from posterior contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C83"
+    ],
+    "result": "Simultaneous inactivation of posterior or frontal areas deviated from predictions based on averaging individual area effects, suggesting that signals from different cortical areas are combined with different weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C83 are supported by statistical analysis (Figure 3\u2014figure supplement 1, p<0.05, z-test). The deviation from even-combination predictions suggests non-linear integration of cortical signals, though the mechanism and location of this integration remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Different regions of the dorsal cortex contribute to distinct aspects of evidence-accumulation-based decisions, with all tested areas having a role in evidence accumulation but on distinct timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 represent a summary of the inactivation findings. This conclusion is well-supported by the comprehensive dataset showing that all areas affect accumulation (C6, C26, C28) but with distinct temporal profiles (C36-C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Adding coupling and auto-regressive predictors to a linear encoding model of widefield calcium imaging data resulted in a large and significant increase in cross-validated accuracy (~0.95 vs ~0.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C107-C109 are supported by rigorous statistical analysis (Figure 4B-C, two-way ANOVA, p=6.2\u00d710\u207b\u00b9\u00b3). The large improvement in model accuracy validates the importance of including auto-regressive terms to capture intrinsic timescales independent of task structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C64"
+    ],
+    "result": "During the evidence-accumulation task, cortical regions display increasing intrinsic timescales from visual to frontal areas, with decay time constants differing significantly across areas, consistent with prior reports and mirroring the inactivation results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 and C64 are supported by analysis of auto-regressive coefficients from the encoding model (Figure 4D-G). The significant difference in time constants across areas (one-way ANOVA, p=0.006) and the systematic gradient from visual to frontal areas provide converging evidence with the inactivation experiments. The consistency with prior literature (C61) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The inactivation findings did not exactly match the area ordering from imaging data, and not all effects were monotonic, potentially due to technical limitations including large inactivation spreads and indirect effects on interconnected regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 represent honest acknowledgment of limitations. The authors appropriately note discrepancies between inactivation and imaging results and discuss technical constraints. The ~2mm inactivation spread (C68) and potential for indirect effects (C69) are important caveats that temper interpretation of area-specific functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Diverse timescales exist at the level of individual neurons within each cortical region, and inactivating areas with multimodal distributions of intrinsic timescales could result in non-monotonic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70 and C71 offer an alternative interpretation for non-monotonic inactivation effects. While C70 is supported by citations to prior literature showing neuronal diversity, C71 is speculation about how this diversity might explain the observed effects. This hypothesis requires validation through single-neuron recordings during inactivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Areas may be progressively recruited with increasing integration timescale demands, and widespread cortical recruitment may rely on intrinsic temporal integration properties rather than specific accumulation mechanisms, potentially explaining task-dependent differences in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 represent speculative interpretations and hypotheses for future testing. While consistent with the data, these ideas about progressive recruitment (C73), reliance on intrinsic properties (C74), and task-dependent engagement (C75-C76) require direct experimental validation through tasks that systematically vary timescale demands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Whether evidence from different time windows is accumulated in parallel or through feedforward computation remains an open question, with both architectures having support from different lines of evidence in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 appropriately frame an important unresolved question and discuss how different architectures would be consistent with different prior findings. The authors correctly note that their data do not distinguish between these possibilities, and the discussion of oculomotor integrator organization (C80-C81) provides relevant comparative context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The location and mechanism for combining evidence information from different timescales remains unclear, with candidate regions including medial prefrontal cortex, striatum, cerebellum, and midbrain structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 correctly identifies an open question. Claim C83 is supported by the simultaneous inactivation data (Figure 3). However, claims C84-C85 are speculative suggestions for candidate regions based on prior literature, without direct evidence from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C99",
+      "C100",
+      "C106"
+    ],
+    "result": "The study analyzed 929 optogenetic inactivation sessions from 28 mice (108,940 control trials, 29,825 inactivation trials) and 25 widefield imaging sessions from 6 mice, with power analysis indicating n=250 trials needed for aggregate effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C99-C100, and C106 provide important information about data provenance and sample sizes. The large sample sizes provide adequate statistical power, and the power analysis (C106) validates the experimental design. The transparency about data reuse from prior work (C88-C89) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C8",
+      "C45",
+      "C46",
+      "C50"
+    ],
+    "result": "Inactivation of a subset of frontal areas led to moderate effects on behavioral processes beyond evidence accumulation, including changes in evidence use after laser offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C45, C46, and C50 describe post-laser effects in frontal areas. While the statistical evidence for post-laser changes is solid (C45, C50: p<0.001), the interpretation that these reflect processes beyond accumulation (C8, C46) versus lingering inactivation effects is uncertain. The authors acknowledge this ambiguity, noting that recovery measurements were not done during the task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C9",
+      "C19"
+    ],
+    "result": "Large-scale cortical Ca2+ activity during task performance displayed different temporal integration windows, with a gradient of intrinsic timescales that are longer in frontal areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C19 are supported by the widefield imaging analysis (Figure 4). The gradient of intrinsic timescales is demonstrated through auto-regressive coefficients and exponential decay fits, with significant differences across areas (p=0.006). This provides independent validation of the timescale hierarchy during task performance.",
+    "result_type": "MAJOR"
+  }
+]

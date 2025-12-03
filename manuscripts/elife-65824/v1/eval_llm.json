@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "EGFR kinase domain mutations are common oncogenic drivers in NSCLC. The most prevalent mutations are exon 19 deletions (45%), L858R in exon 21 (40-45%), and exon 20 insertions (4-10%). These mutations increase kinase activity (5-29 fold) and confer growth-factor-independent activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 establish well-documented background knowledge about EGFR mutations in NSCLC, supported by multiple citations to published literature. The prevalence statistics, mutation types, and fold-changes in catalytic activity are consistently reported across studies and provide essential context for the computational work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The EGFR kinase domain structure consists of N- and C-lobes with key regulatory elements including the \u03b1C-helix, activation loop (A-loop), and conserved residues K745, E762, and D855. The A-loop adopts four main conformations (active, Src-like inactive, substrate competitive, detached), while the \u03b1C-helix transitions between \u03b1C-in (active) and \u03b1C-out (inactive) states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C33 describe established structural features of EGFR kinase domain based on crystallographic data and prior computational studies. These are well-characterized aspects of kinase structure and regulation, supported by extensive literature citations and structural biology knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The \u03b1C-helix exhibits intrinsic disorder (partial unfolding) that is functionally important for EGFR signal propagation through asymmetric dimer formation. Phosphorylation of Y869 stabilizes the \u03b1C-helix and promotes EGFR multimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by citations to prior MD simulations and H/D exchange experiments (Shan et al., 2012; Zanetti-Domingues et al., 2018). This establishes the functional importance of \u03b1C-helix disorder as a key regulatory mechanism in EGFR activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C115"
+    ],
+    "result": "The study performed 36 \u00b5s of unbiased MD simulations using the a99SB-disp force field, which has been validated for simulating both folded and partially unfolded protein domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C115 describe the computational methodology. The total simulation time is clearly stated in Table 1, and the force field choice is justified by citation to validation studies (Robustelli et al., 2018). The methodology is appropriate for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In unbiased MD simulations of apo, unphosphorylated WT-EGFR monomer starting from the active conformation, the \u03b1C-helix rapidly transitions to \u03b1C-out (~100 ns) but the A-loop remains extended, suggesting an energy barrier prevents formation of the Src-like inactive conformation. This indicates that dimerization, ATP binding, and phosphorylation are critical for stabilizing the active state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 present simulation results consistent with known EGFR activation mechanisms. The observations are supported by simulation data (Figure 1\u2014figure supplement 2) and align with prior computational studies (Shan et al., 2012). The inference about ATP/phosphorylation requirements (C44) is appropriately qualified as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In asymmetric WT-EGFR dimer simulations, the \u03b1C-helix is predominantly maintained in the \u03b1C-in conformation on the receiver monomer, while the activator monomer's \u03b1C-helix samples \u03b1C-out conformations. In symmetric dimers with both monomers in Src-like inactive conformation, both \u03b1C-helices remain in \u03b1C-out throughout simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by simulation data shown in Figure 1\u2014figure supplement 4. The differential behavior of receiver vs. activator monomers is consistent with the asymmetric activation mechanism of EGFR and provides computational validation of the dimerization-dependent activation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Metadynamics simulations of apo WT-EGFR reveal three main free energy minima corresponding to inactive-like conformations. The deepest minimum features a semi-closed A-loop and \u03b1C-out conformation. Secondary minima include a Src-like inactive state with the characteristic two-turn helix and partial \u03b1C-helix disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe the free energy landscape from PTmetaD simulations (Figure 2). The results are consistent with prior metadynamics studies (Sutto and Gervasio, 2013) and support the notion that active conformations are energetically unfavorable in the absence of ligand/phosphorylation. The partial disorder of the \u03b1C-helix (C52) aligns with prior predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "L858R mutation stabilizes active-like conformations by creating favorable electrostatic interactions. R858 interacts with a cluster of negatively charged residues (E758, E762, D837, D855), stabilizing both the extended A-loop and the \u03b1C-helix structure. This suppresses the intrinsically disordered state and promotes EGFR dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 present a coherent mechanism for L858R activation supported by metadynamics simulations (Figure 3) and unbiased MD data (Figure 3\u2014figure supplement 1). The electrostatic stabilization mechanism is structurally plausible and consistent with experimental observations of increased L858R activity and dimerization propensity (citations provided in C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "For D770-N771insNPG, the inserted proline induces a turn creating a D770-R779 salt bridge observed in crystal structures. However, MD simulations show the K745-E762 salt bridge breaks immediately in apo simulations, suggesting the \u03b1C-in conformation in crystal structures is ligand-induced rather than mutation-induced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 combine structural analysis with simulation data (Figures 4\u2014figure supplements 1-2). The discrepancy between crystal structure and apo simulation behavior is clearly documented and leads to a reasonable inference (C67) that challenges prior hypotheses about this mutation's mechanism. The conclusion is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PTmetaD simulations of D770-N771insNPG show the A-loop predominantly adopts extended, active-like conformations even when the \u03b1C-helix is in the \u03b1C-out position. The mutation amplifies N/C-lobe separation in both monomeric and dimeric forms, potentially affecting substrate/inhibitor binding kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by metadynamics data (Figure 4) and unbiased simulations. The decoupling of A-loop and \u03b1C-helix conformations is a novel observation. The amplified lobe separation (C71-C72) is documented in simulations, though its functional significance remains speculative. The structural observations are sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A763-Y764insFQEA is uniquely sensitive to erlotinib among Ex20Ins mutations. The insertion extends the \u03b1C-helix N-terminally, with the inserted glutamate assuming E762's role. MD simulations show this mutant uniquely transitions back to \u03b1C-in conformation, suggesting the N-terminal \u03b1C-helix extension restricts conformational flexibility and favors \u03b1C-in states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 combine experimental observations from literature (C73-C75) with simulation results (C77-C78, Figure 1\u2014figure supplement 2). The unique reversibility to \u03b1C-in conformation is clearly documented in simulations and provides a structural rationale for the distinct TKI sensitivity. The inference about conformational restriction (C78) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The free energy landscape of A763-Y764insFQEA shows the deepest minimum corresponds to semi-closed A-loop with stabilized \u03b1C-in conformation. The fully active state appears as a low-energy secondary minimum. The mutation provides structural stability to the \u03b1C-helix and maintains \u03b1C-in conformation in both monomers of asymmetric dimers. Elongated states may facilitate Hsp90 chaperone recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by metadynamics simulations (Figure 5) and dimer simulations (Figure 1\u2014figure supplement 4). The stabilization of \u03b1C-helix and accessibility of active states provides a mechanism for the mutation's activity. The Hsp90 recruitment hypothesis (C81) is appropriately speculative and supported by experimental citation (Jorge et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "\u0394ELREA shows high catalytic activity comparable to L858R. Despite prior hypotheses that the deletion prevents \u03b1C-out conformations, simulations confirm \u03b1C-out is stable with intact Src-like inactive features. However, the deletion suppresses \u03b1C-helix disorder seen in WT. The free energy landscape shows multiple minima including Src-like inactive and active-like states with novel A-loop helical conformations. The mutation does not significantly alter the asymmetric dimer interface but suppression of \u03b1C-helix disorder should promote dimer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C100 present a comprehensive analysis of \u0394ELREA combining literature data with extensive simulations (Figure 6). The key finding that \u03b1C-out conformations are accessible (C93-C94) challenges prior hypotheses (C87) and is well-supported by simulation data. The novel A-loop helical conformation (C97) is documented. The speculation about dimer promotion (C100) is reasonable given the disorder suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The amplified lobe separation in D770-N771insNPG could explain low TKI sensitivity by affecting drug residence time. BDTX-189, structurally similar to neratinib, shows efficacy and likely binds \u03b1C-out conformations consistent with the mutation's free energy landscape. The mutation may decouple N/C-lobe motions and \u03b1C-helix/A-loop coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C104 present reasonable hypotheses connecting simulation observations to TKI sensitivity, but lack direct validation. The lobe separation mechanism (C101) is speculative. The BDTX-189 binding mode inference (C103) is based on structural similarity without binding simulations. The decoupling hypothesis (C104) is plausible but not directly demonstrated. These require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "A763-Y764insFQEA shows greater sensitivity to gefitinib, erlotinib, and osimertinib than other Ex20Ins. Simulations show the most stable apo conformation has \u03b1C-in with semi-closed A-loop, and the fully active state appears as a low-energy minimum. The mutation is predicted to promote asymmetric dimer formation through favorable interactions at the dimer interface (F760 in hydrophobic cleft, D761-K953 interaction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 combine experimental TKI sensitivity data (C105, cited) with simulation results (C106-C107, Figure 5) and structural analysis of the dimer interface (C109-C110, Figure 5\u2014figure supplement 1). The dimer promotion prediction (C108) is an inference from structural observations but is reasonable and testable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The conformational ensembles from PTmetaD simulations showing extended conformations and open active sites can guide inhibitor design. Structural analysis suggests lapatinib (\u03b1C-out inhibitor) would clash with L858R but not A763-Y764insFQEA, while gefitinib fits better in L858R's tighter pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C113 propose applications of the simulation data for drug design. While the structural observations about pocket differences are supported by simulation ensembles (Figure 7\u2014figure supplement 5), the predictions about inhibitor selectivity (C112-C113) are inferences without binding calculations or experimental validation. These are reasonable hypotheses requiring further work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The absence of intrinsically disordered \u03b1C-helix conformations in \u0394ELREA's free energy landscape could explain decreased sensitivity to lapatinib, as slow lapatinib binding kinetics are associated with transitions to partially unfolded \u03b1C-helix states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 connects the suppression of \u03b1C-helix disorder in \u0394ELREA simulations to lapatinib resistance through a mechanism proposed in prior work (Shan et al., 2012). While the simulation observation is supported, the causal link to lapatinib sensitivity is speculative and appropriately qualified as such. Experimental validation would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Most Ex20Ins mutations render EGFR resistant to TKIs, with A763-Y764insFQEA being a notable exception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 establish the clinical motivation for studying these specific mutations. This is well-documented in the cited literature (Yasuda et al., 2012; Ward et al., 2021) and provides essential context for why the computational study focuses on comparing D770-N771insNPG and A763-Y764insFQEA.",
+    "result_type": "MINOR"
+  }
+]

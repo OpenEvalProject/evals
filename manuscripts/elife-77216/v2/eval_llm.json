@@ -1,0 +1,156 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13"
+    ],
+    "result": "The authors developed a minimal computational model of sensorimotor control comprising 74 firing rate neurons organized in six populations representing spinal cord, sensory cortex, and motor cortex, coupled by plastic long connections. The model satisfies biological plausibility constraints including neural implementation, transmission delays, local synaptic learning, and continuous online learning. Using differential Hebbian plasticity, the model learns to perform reaching movements of a planar arm with 6 muscles in multiple directions from scratch in less than 10 minutes of simulated time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C13 collectively describe the model architecture and its learning capabilities, which are explicitly stated in the abstract and detailed in the Results section. The model's composition (C1, C13), learning success (C2, C19), biological plausibility (C3), and learning speed (C4) are all directly supported by the manuscript text and figures (particularly Figures 1-2). The 99/100 success rate (C19) provides strong quantitative support for the learning capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "All three model configurations (spinal learning, cortical learning, and static network) successfully learned to reach targets, with the system achieving successful reaching in 99 out of 100 trials across all configurations (20 trials per configuration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 are explicitly stated in the Results section with clear quantitative data. The high success rate (99%) across different model configurations demonstrates robustness. However, the manuscript notes one failure case (14 cm average error in one spinal learning trial), which is appropriately reported and does not undermine the overall finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The model exhibits directional tuning in motor cortex units as an emergent property of feedback control. Motor cortex units show preferred directions that cluster around a main axis, consistent with experimental observations in macaques. The model found that 11.8\u00b10.4 to 12\u00b10 units (out of 12) were significantly tuned to reach direction (p<0.001), with preferred directions showing significant bimodality and a main axis at 59\u00b17 to 54\u00b10.5 degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38-C41 describe directional tuning phenomena that are well-supported by quantitative analysis in the Results section and Figure 5-6. The statistical tests (bootstrap, p<0.001) provide rigorous support. The comparison with experimental data (Scott et al., 2001; Georgopoulos et al.) strengthens the biological relevance. The prediction of preferred directions from muscle contraction patterns (R\u00b2\u22480.74-0.88) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C42"
+    ],
+    "result": "The model exhibits rotational dynamics in motor cortex activity as an emergent property of properly configured feedback control, without requiring intrinsic oscillations or recurrent connections in motor cortex. The first jPCA plane captured 0.42\u00b10.04 to 0.46\u00b10.03 of the variance in motor cortex activity during reaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C28, and C42 are supported by the jPCA analysis presented in Figure 7 and the Results section. The finding that rotational dynamics emerge without intrinsic oscillators is explicitly stated and agrees with prior work (Kalidindi et al., 2021; DeWolf et al., 2016). However, the authors appropriately note this is a qualitative replication due to model simplifications (low-dimensional, non-spiking, slow-reaching). The variance captured (42-46%) is substantial but lower than some experimental studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The model's spinal cord creates convergent force fields that add approximately linearly as an emergent property of feedback control. Stimulation of individual spinal interneuron pairs produces direction fields with unique fixed points, and simultaneous stimulation of two locations produces fields that are approximately the sum of individual fields (mean angle difference 13.5 degrees). However, the model did not exhibit supralinear summation observed in some experimental studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C30, C34-C37 are supported by the spinal stimulation experiments described in the Results and Figure 9. The linear addition is demonstrated quantitatively (13.5 degree mean angle difference vs. 37.6 degrees for random pairs, p<0.0001). The authors appropriately acknowledge the absence of supralinear summation (C34) and suggest this requires mechanisms beyond their model. The connection to experimental observations in frogs, rats, and monkeys (C35-C36) is properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C22"
+    ],
+    "result": "The model produces ataxic movements resembling those in cerebellar patients, including undershooting targets, following longer hand paths, and showing movement decomposition. The trajectories exhibit characteristics of slow reaches in cerebellar ataxia, with initial fast approach followed by gradual error correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C22 are supported by the trajectory analysis in Figures 3-4 and comparison with cerebellar patient data (Bastian et al., 1996; Day et al., 1998). The model appropriately lacks a cerebellum, making this comparison relevant. However, the evaluation is somewhat qualitative, and the authors acknowledge they lack a 'healthy' model for quantitative comparison. The gain parameter was manually adjusted to achieve stable but slow movements, which could influence the ataxic characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "The model uses dual units in motor cortex (M) and sensory error population (S_PA) to represent positive and negative values using only excitatory projections. This dual representation, combined with mutual inhibition, creates dynamics where sensorimotor events cause both excitatory and inhibitory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is explicitly described in the Results section and supported by citations to experimental observations (Shafi et al., 2007; Steinmetz et al., 2019; Najafi et al., 2020). The mechanism is clearly explained and serves a functional purpose in the model architecture. The biological plausibility is enhanced by agreement with experimental data showing mixed excitatory/inhibitory responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Multiple extracortical brain regions (basal ganglia, thalamus, cerebellum, pons, brainstem nuclei, spinal cord) have important and unique functions in mammalian motor control. These structures are highly interconnected by fast-conducting axons and show dynamic activity changes related to ongoing motor acts. Clinical and lesion studies confirm the necessity of each region for normal smooth motor control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 represent established knowledge in motor control neuroscience, properly supported by citations (Eccles, 1981; Loeb and Tsianos, 2015; Shadmehr and Wise, 2005; Arber and Costa, 2018). These claims provide important context for the modeling work but are not novel findings of this study. The authors appropriately cite authoritative sources for these well-established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C45",
+      "C46"
+    ],
+    "result": "Relatively little is known about the neural basis of motor development in infants. At birth, the cerebellum is incomplete and presumably not functional, requiring structured input from spinal cord and cortex to establish correct synaptic connections during postnatal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C45, and C46 represent established knowledge about cerebellar development, with C12 properly cited (Hadders-Algra, 2018). These claims provide context for why the model lacks a cerebellum and relates to infant motor development. However, these are background statements rather than novel findings. The claims about cerebellar incompleteness at birth (C45-C46) are stated as general knowledge without specific citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "In steady state, the activity of type II muscle afferents is monotonically related to muscle length, which can be used to prescribe hand location in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is supported by citation to Mileusnic et al., 2006 and represents an established physiological relationship used in the model design. This is a minor methodological detail that justifies the model's use of II afferents for position sensing. The claim is appropriately cited and biologically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Learning simple behaviors involves long-term plasticity at both spinal cord and higher motor regions. Descending corticospinal signals generally do not activate motoneurons directly but provide input to networks of excitatory and inhibitory interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C44 represent well-established knowledge in motor control, properly supported by multiple authoritative citations. These claims provide important biological context for the model architecture, particularly the inclusion of spinal interneuron networks and plasticity at multiple levels. However, these are background facts rather than novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,418 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C74",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Polysome profiling combined with mass spectrometry identified over 800 proteins across polysome gradient fractions, including 70 ribosomal proteins, 25 translation factors, 240 RNA-binding proteins, and 18 proteins not previously designated as RNA- or ribosome-binding. 353 proteins were consistently identified across all conditions in fractions F1-F4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C74, C80-C83 are well-supported by the mass spectrometry data presented in Figures 1D-F and Figure 2A. The manuscript provides specific protein counts with good reproducibility (r\u00b2 > 0.9 for unstressed samples, C75), and the identification of proteins across functional categories is documented in supplementary files. The experimental approach using formaldehyde crosslinking and label-free MS is appropriate and validated (C250).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C109",
+      "C110",
+      "C111",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Hierarchical clustering revealed 14 distinct clusters of proteins with variable polysome enrichment patterns. Proteins in clusters 1-3 maintained polysome enrichment during stress, while proteins in clusters 11-14 shifted from heavy polysomes to monosomes during stress. RBPs showed diverse patterns across all clusters, unlike ribosomal proteins which clustered together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C60-C63, C109-C111, C121-C124 are supported by the clustering analysis shown in Figure 3C and described in the text. The hierarchical clustering approach is appropriate for identifying patterns in the data, and the results show clear differences between protein classes. The correlation between H2O2 and 3-AT responses (C60) is well-documented. However, the biological interpretation of some clusters would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Deletion of AAT2 conferred growth sensitivity to oxidative stress. Translation was similar in untreated aat2\u0394 and wild-type cells, but ribosome run-off caused by H2O2 was more acute in aat2\u0394 at lower concentrations of peroxide, suggesting Aat2 has a critical role in translational regulation during stress rather than in maintaining steady-state translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C143-C146 are supported by the growth assays (Figure 4A) and polysome profiling data (Figure 4B). The observation that aat2\u0394 cells show normal translation under unstressed conditions but enhanced sensitivity to oxidative stress is consistent across multiple experiments. The inference that Aat2 functions specifically in stress response (C146) is reasonable given the data, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C148",
+      "C151",
+      "C154"
+    ],
+    "result": "Loss of Aat2 caused aberrantly high activation of the ISR via enhanced eIF2\u03b1 phosphorylation and GCN4 activation. Heightened eIF2\u03b1 phosphorylation was observed in response to lower concentrations of H2O2 in aat2\u0394 cells, and aat2\u0394 cells had higher LacZ levels (indicating GCN4 activation) following H2O2 stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C148, C151, C154 are well-supported by western blot data (Figure 5A) and \u03b2-galactosidase assays (Figure 5B). The phospho-specific antibody data clearly shows enhanced eIF2\u03b1 phosphorylation in aat2\u0394 cells at lower H2O2 concentrations. The GCN4-lacZ reporter data confirms increased GCN4 activation. Control reporters (C152-C153) appropriately rule out defects in scanning or reinitiation, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C182"
+    ],
+    "result": "Non-catalytic AAT2 mutants (K255E and R387E) retained polysome association and did not show heightened stress sensitivity. Both mutants conferred aspartic acid auxotrophy but were expressed well and retained ribosome-binding activity. The stress-dependent induction of eIF2\u03b1 phosphorylation in these mutants was normal, indicating that the ribosome-binding and enzymatic functions of Aat2 are separable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C171-C178, C182 are strongly supported by multiple lines of evidence: growth assays (Figure 7\u2014figure supplement 2A), western blots (Figure 7\u2014figure supplement 2B-C), polysome profiling (Figure 7A-C), and eIF2\u03b1 phosphorylation assays (Figure 7D). The rational design of catalytic mutants based on crystal structure (C170) is appropriate. The data convincingly demonstrate that catalytically inactive Aat2 can still modulate the ISR, supporting the moonlighting function hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C64",
+      "C67",
+      "C183",
+      "C238",
+      "C248"
+    ],
+    "result": "Aat2 has a ribosome-associated translational regulatory 'moonlighting' function that modulates the ISR independent of its aspartate aminotransferase activity. This represents the first example of a metabolic enzyme that binds to ribosomes and modulates the ISR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C64, C67, C183, C238, C248 represent the main conclusion of the paper and are well-supported by the collective evidence from genetic screening, biochemical characterization, and mutational analysis. The separation of enzymatic and regulatory functions (C182, C238) is convincingly demonstrated. The novelty claim (C248) appears justified based on the literature cited. However, the precise mechanism by which Aat2 modulates Gcn2 remains unclear (C235), which is appropriately acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Aat2 binds to 60S ribosomes. Approximately 8-10% of Aat2 was ribosome-associated according to polysomal proteomics and western blotting. Following RNase I treatment, Aat2 was predominantly 80S-associated, indicating it is principally a ribosome-associated factor rather than an mRNA-binding protein. EDTA treatment indicated that Aat2 predominantly binds to 60S subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C155-C163 are supported by multiple complementary approaches: polysomal proteomics (Figure 2A), western blotting of TAP-tagged Aat2 (Figure 6A), RNase I treatment (Figure 6B), and EDTA treatment (Figure 6C). The RNase I experiment (C160-C162) is particularly important as it distinguishes ribosome binding from mRNA binding and rules out association with other large complexes. The convergence of MS and western blot estimates (C158) strengthens confidence in the quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C232",
+      "C233",
+      "C234",
+      "C235"
+    ],
+    "result": "Aat2 moderates Gcn2 activation in response to H2O2. Both Aat2 and Gcn2 bind to 60S ribosomal subunits, suggesting a potential model where Aat2 binding to polysomal 60S subunits can antagonize Gcn2 activation. However, the directness of Aat2's role in modulating Gcn2 cannot currently be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is supported by the observation that loss of Aat2 leads to enhanced Gcn2 activation (C6, C148). The model proposed in C234 is reasonable given that both proteins bind 60S subunits (C233), but this remains speculative. The authors appropriately acknowledge (C235) that the mechanism is unclear and could be indirect. Additional experiments such as direct binding studies, genetic interactions, or structural analysis would be needed to establish the mechanism definitively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C239",
+      "C240"
+    ],
+    "result": "Catalytic mutants K255E and R387E showed normal GCN4-lacZ activity under unstressed conditions but failed to induce GCN4-lacZ expression during oxidative stress, pointing to a potential further role of Aat2 downstream of eIF2 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C179-C181, C239-C240 identify an unexpected phenotype where catalytic mutants show normal eIF2\u03b1 phosphorylation (C177) but impaired GCN4 induction (C180). This suggests a more complex role for Aat2 than initially apparent. However, this observation is not fully explained and represents a limitation of the current study. The speculation about a role downstream of eIF2 phosphorylation (C181, C240) is reasonable but requires additional investigation. The authors appropriately acknowledge this requires further study (C242).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Treatment with 0.45 mM H2O2 or 10 mM 3-AT for 15 min caused growth interruption and loss of polysomes, with growth recovering over time. Minimal change in total protein abundance indicated that the method sampled cells during their adaptive phase before changes in protein content occurred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71, C84-C86 are supported by growth curves (Figure 1A), polysome profiles (Figure 1B-C), and LFQ intensity comparisons (Figure 1\u2014figure supplement 2C). The timing of 15 min is appropriate for capturing the acute stress response before major changes in protein synthesis affect total protein levels. The recovery of growth (C71) confirms cells can adapt to these stresses. This validates the experimental design for studying the adaptive phase of stress response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "There was excellent correlation between replicates for unstressed samples (r\u00b2 > 0.9) but more divergence for stressed samples, especially in heavy polysome fractions where fewer proteins were detected. Principal component analysis showed good clustering of replicates with gradual changes in composition across fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by the correlation analysis (Figure 1\u2014figure supplement 2A) and PCA (Figure 1\u2014figure supplement 2B). The higher variability in stressed samples, particularly in F4-F5, is expected given the dramatic reduction in polysomes during stress. The good clustering of replicates in PCA indicates the experimental approach is reproducible despite this variability. This quality control analysis appropriately validates the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "There was no evidence that nascent protein chains or co-translational complex formation contributed significantly to the signal for polysome-associated proteins. Cumulative peptide intensity profiles showed no N-terminal bias in ribosomal fractions compared to total samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by the peptide intensity analysis (Figure 1\u2014figure supplement 3). The lack of N-terminal bias in most proteins indicates that nascent chains are not a major contributor to the signal. This is an important control that validates the interpretation that detected proteins are truly ribosome-associated rather than being synthesized. The rare exceptions noted (C88) are appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Ribosomal proteins and ribosome-associated chaperones were highly associated with ribosomes as expected. Other proteins showed broad variations in ribosome association (from <2.5% to 100%). Translation elongation factors showed <20% ribosome association, while most initiation factors (except eIF4A) were >30% ribosome-associated in unstressed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by the ribosome association analysis shown in Figure 2A and Figure 2\u2014figure supplement 1A. The estimates for translation factors are reasonable given their known transient interactions with ribosomes. The high variability among RBPs and other proteins (C93) reflects functional diversity. The quantification method (comparing fraction sums to totals) is appropriate, though the estimates should be considered approximate given potential losses during fractionation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C101",
+      "C102"
+    ],
+    "result": "In response to both stresses, most translation factors either reduced or maintained their overall ribosome association, as expected given the rapid attenuation in global translation initiation. However, no change in eIF4A or Ded1 association was observed, indicating that loss of eIF4A is not a universal response to stress. Slightly enhanced association of eEF2 and eIF5A with ribosomes was observed during stress, though not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95, C97-C98, C101-C102 are supported by the data in Figure 2B and Figure 2\u2014figure supplement 1B. The observation that eIF4A and Ded1 do not dissociate during H2O2/3-AT stress (C97) contrasts with glucose starvation/heat shock (C96, C28) and is appropriately interpreted as indicating stress-specific mechanisms (C98). The lack of statistical significance for eEF2 and eIF5A changes (C101) is appropriately noted. The overall interpretation (C102) is consistent with current understanding of stress responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "55 ribosomal proteins were quantified across polysome fractions. In unstressed cells, RPs were typically distributed evenly across fractions, but greater variation was observed during stress. Almost all RPs clustered together (clusters 11-12) and behaved similarly, consistent with concerted regulation, though some variation in the degree of monosome enrichment during stress was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108, C112-C114 are supported by the analysis shown in Figures 3A-B and the clustering in Figure 3C. The observation that most RPs behave similarly (C113) is expected and validates the approach. The variations noted for specific RPs like Rps2/uS5 (C108, C114) are interesting but the authors appropriately chose not to pursue this further given the lack of strong evidence for functional significance (C118). The quantification of 55 RPs is reasonable given the challenges of MS analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Only three ribosomal proteins separated into clusters other than 11 and 12. Rpl8b/uL8 and Rps10/eS10 appear to be more depleted from heavy polysomes during stress, suggesting they might be selectively lost from the mRNA-engaged pool. Conversely, Rpl7b/uL30 retained polysome enrichment during both stresses similar to mRNA-binding factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C117 identify interesting outliers among RPs, but the functional significance is unclear. The suggestion that Rpl8b and Rps10 might be selectively lost during stress (C116) is speculative and marked as such in the text. The behavior of Rpl7b (C117) is intriguing given the known paralog-specific functions (C221), but the authors appropriately note that further studies are needed (C223). These observations could be artifacts of the clustering approach or represent genuine biological phenomena requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Various proteins associated with resolving stalled/collided ribosomes showed distinct patterns of polysome enrichment. Scp160, aminoacyl-tRNA synthetases, Mbf1, and Cdc48 maintained or enhanced polysome association during stress. Gcn1 was evenly associated across fractions under all conditions, while the RAC complex members followed the RP pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C136 are supported by the clustering analysis (Figure 3C) and are consistent with the known functions of these proteins cited in the text (C126, C128, C130-C133). The distinct patterns (C136) make biological sense given the different roles of these factors in translation and quality control. The observation about Gcn1 (C134) is particularly interesting given its role in Gcn2 activation (C133), though the functional significance of its even distribution is not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Gene ontology analysis revealed that many highly polysome-enriched proteins were metabolic enzymes, including glycolytic and amino acid biosynthetic enzymes. These proteins are polysome-associated under unstressed conditions and retain or increase their association during stress. While their mRNA association is known, their additional roles remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 are supported by the GO analysis (Figure 3\u2014figure supplement 1) and clustering data (Figure 3C). The identification of metabolic enzymes as polysome-associated is consistent with previous RBP studies (C49, C119). The acknowledgment that their functional roles remain unclear (C140) is appropriate and motivates the investigation of Aat2. This sets up the rationale for the detailed characterization of Aat2 as a representative example.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "Aat2 was placed in cluster 3, indicating it is associated evenly throughout polysome fractions in both unstressed and stressed cells, similar to eIF4A and translation elongation factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 are supported by the clustering analysis shown in Figure 3C. This observation is important for understanding Aat2's behavior and distinguishes it from proteins that shift dramatically between fractions during stress. The comparison to eIF4A and elongation factors provides context for interpreting Aat2's pattern. This observation motivated the selection of Aat2 for detailed functional characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Polysomal proteomics is a powerful and unbiased approach that captures many aspects of translation and its regulation during stress. While co-sedimentation of other large cytoplasmic assemblies cannot be definitively ruled out, the enrichment of translation-related proteins and detection of proteins in unstressed conditions (when P bodies and stress granules are absent) gives confidence in the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C191 represent the authors' evaluation of their methodological approach. The assessment is balanced, acknowledging both strengths (C184-C185, C189) and limitations (C186-C187). The argument that proteins detected in unstressed conditions are unlikely to be from P bodies or stress granules (C188) is reasonable. The observation that proteins with common functions cluster together (C190) validates the biological relevance of the approach. This is an appropriate critical evaluation of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "When global translation initiation was reduced during stress, most initiation factors reduced in ribosome association except for eIF5B and RNA helicases (eIF4A, eIF4B, Ded1). The cap-binding factors eIF4E and eIF4G were most depleted, though their global RNA binding was unchanged. These data are consistent with models where H2O2/3-AT act via eIF2\u03b1 phosphorylation to reduce 43S PIC-mRNA association, while heat shock/glucose starvation impede scanning via selective loss of RNA helicases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C193, C196-C201 integrate the current findings with previous studies (C96, C194-C195, C197-C199) to propose a model distinguishing different stress response mechanisms. The model (C200-C201) is reasonable given the data, though it remains somewhat speculative. The distinction between stresses that affect PIC-mRNA association versus scanning is supported by the differential behavior of initiation factors and RNA helicases. This represents a useful synthesis of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "Both H2O2 and 3-AT stresses impair translation elongation. Stalled or collided ribosomes facilitate Gcn2 activation. Enhanced eEF2 phosphorylation during oxidative stress may reduce its activity and lead to higher ribosome interaction. eIF5A binds to the ribosomal exit site to promote peptide bond formation on stalled ribosomes and has been observed in Gcn1-bound disome structures, making its increased ribosome association mechanistically sensible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C210 synthesize the current findings with established knowledge (C202-C203, C205-C206, C208-C209) to provide mechanistic context. The speculation about eEF2 (C207) is reasonable given the observed increased association and known phosphorylation during stress. The interpretation regarding eIF5A (C210) is well-supported by recent structural studies (C208-C209). This discussion appropriately integrates the findings with current understanding of elongation regulation during stress.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C249",
+      "C250"
+    ],
+    "result": "Formaldehyde crosslinking was used to fix translating ribosomes and their associated factors on mRNA. This gave similar results to cycloheximide fixation for known polysome-associated proteins assessed by immunoblotting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C249-C250 describe and validate the fixation method used. The comparison between formaldehyde and cycloheximide (Figure 1\u2014figure supplement 1B-C) is an important control that validates the approach. Formaldehyde crosslinking is appropriate for stabilizing protein-RNA interactions for MS analysis. The similar results with cycloheximide (the standard method) support the validity of the formaldehyde approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C251",
+      "C252",
+      "C253"
+    ],
+    "result": "901 protein groups were identified in two or more replicates for at least one sample. Of these, 840 were uniquely identified proteins encoded by single genes, while 61 are 'grouped' proteins not distinguishable by MS (most of which are RP paralog pairs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C251-C253 describe the MS dataset characteristics. The identification of 901 protein groups with the requirement of detection in at least two replicates is a reasonable threshold. The distinction between uniquely identified proteins and grouped proteins (C252) is important for accurate interpretation. The note that most grouped proteins are RP paralog pairs (C253) is expected given the high sequence similarity of paralogs. This represents appropriate data processing and reporting.",
+    "result_type": "MINOR"
+  }
+]

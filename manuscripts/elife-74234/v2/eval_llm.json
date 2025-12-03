@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C88"
+    ],
+    "result": "The authors developed ZAF, a basic automated zebrafish feeding system that is cost-efficient, easy to build from commercially available parts, and uses a simple design with three main modules (electronics, tubing/pumps, and food preparation). The system mixes dry food with water and distributes it uniformly to all tanks using a Raspberry Pi-controlled servo motor and pump system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C31, and C76-C88 collectively describe the design, construction, and accessibility of ZAF. The system architecture is well-documented with parts lists (C23, C76), construction details (C79-C84), and design schematics (C26-C27). The assertion of ease of construction (C31) is reasonable given the detailed documentation provided, though this remains somewhat subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C97",
+      "C99"
+    ],
+    "result": "ZAF does not adversely affect zebrafish health when compared to manual feeding. Over 8 weeks, fish fed with ZAF showed no statistical difference in mean weight (C33), had comparable or lower mortality (0/92 vs 1/33), equivalent fecundity (C35), and maintained stable water quality over 3 months (C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide converging evidence from multiple health metrics (weight, mortality, reproduction, water quality) supported by experimental data in Figures 1c-d and Figure 1\u2014figure supplement 4. The experimental design is adequately described (C89-C93, C97, C99) with appropriate controls. However, statistical details (p-values, sample sizes, error bars) are not fully specified in the claims, and the mortality comparison has unequal sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C85",
+      "C86",
+      "C87",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "ZAF+ was developed to overcome ZAF's limitation of uniform food distribution by adding individually controlled valves upstream of each tank, allowing precise, tank-specific food delivery based on fish density. The system uses Arduino microcontrollers in addition to the Raspberry Pi to control the valves and can be scaled by daisy-chaining multiple controllers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 and C85-C87 describe the design rationale and implementation of ZAF+. The limitation of ZAF (C38) motivates the development of ZAF+ (C39), and the technical implementation is well-documented with electronic schematics (C85-C87) and operational parameters (C94-C96). The modular, scalable design is supported by the daisy-chain architecture (C44, C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "ZAF+ does not adversely affect zebrafish health and successfully delivers variable amounts of food to tanks with different fish densities. Over 8 weeks, fish fed with ZAF+ showed no difference in mean weight compared to manual feeding (C47), no significant differences in reproduction (C48), maintained water quality (C49), and had no excess mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide experimental validation of ZAF+ performance supported by Figure 2c and Figure 1\u2014figure supplement 4. The experimental design (C98, C100-C102) appropriately tests the key feature of ZAF+ by using tanks with different fish densities (12 vs 4 fish) and controlling for potential confounders like tube length (C102). The breeding evaluation (C103-C105) adds additional evidence of normal fish health.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C53",
+      "C54",
+      "C57"
+    ],
+    "result": "Both ZAF systems are modular, scalable, and adaptable to different laboratory environments and commercially available aquatic facilities. The designs are fully open access with all hardware and software publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32, C53-C54, and C57 describe the flexibility and accessibility of the systems. The modular design is evidenced by the component-based architecture (C26, C42), scalability is supported by the ability to add tanks and daisy-chain controllers (C32, C44), and open access is demonstrated by the availability of all materials on GitHub (C53, C88). However, the claim of easy adaptation to \"all\" commercial facilities (C54) is somewhat overstated without empirical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Both ZAF systems can operate continuously (7 days/week, year-round) with minimal maintenance, requiring only periodic food reloading and tube replacement every 10-12 weeks. The authors tested both systems for 19 months total without major malfunctions or adverse health effects to fish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C58-C61 describe the operational reliability of the systems. The long-term testing data (19 months, C60) provides strong evidence for reliability claims. The maintenance requirements are reasonable and documented (C46, C59), though the optimal tube replacement interval shows slight inconsistency (10 weeks in C59 vs 12 weeks in C46). The absence of major malfunctions and adverse health effects (C60-C61) supports the viability claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C21"
+    ],
+    "result": "The authors developed a semi-automated zebrafish facility by enclosing a standalone rack system in an indoor tent equipped with environmental controls (heating, air purification, cameras, leak detection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 describe the facility setup supported by Figure 1\u2014figure supplement 1. This provides context for testing the feeding systems but represents infrastructure rather than a novel contribution. The setup is adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "ZAF+ is more robust than ZAF due to conceptual and technical improvements, though ZAF is easier to build but lacks per-tank food distribution control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide a comparative assessment of the two systems. The trade-off between simplicity (ZAF) and functionality (ZAF+) is well-established through the design descriptions. The assertion of greater robustness for ZAF+ (C55) is supported by the additional features and more sophisticated control system, though quantitative reliability metrics are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The systems use inexpensive, accessible hardware (Raspberry Pi, Arduino) and are compatible with both dry food (Gemma) and live food (Artemia nauplii), though dry food is easier for automated feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 describe hardware choices and food compatibility. The use of common, inexpensive components (C65) supports accessibility claims. The dry food choice is justified by citations (C66) and practical considerations (C67). Testing with Artemia (C68) demonstrates versatility, though this is noted as working \"well\" without quantitative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The research was conducted under IACUC approval using standard zebrafish husbandry conditions (28\u00b0C, 10hr dark/14hr light cycle) with fish aged 4-18 months from three different strains (EKW, casper, h2afva:h2afva-mCherry).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 describe the ethical approval and experimental conditions. These are standard methodological details appropriately documented with citations (C72-C73). The information is sufficient for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors establish the context and motivation for developing automated feeding systems by reviewing the advantages of zebrafish as model organisms, the challenges of manual feeding, and the limitations of existing commercial and published solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C17, C21, and C62-C64 provide background and motivation supported by appropriate citations. These claims establish the need for the work but represent literature review rather than novel findings. The assessment of existing solutions (C14-C17) appears reasonable though somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C20",
+      "C51",
+      "C52",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors speculate that ZAF systems could be adapted to other aquatic model organisms, behavioral studies, and experimental designs requiring pellet or liquid delivery, potentially helping disseminate aquatic animal models in research institutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C20, C51-C52, C69-C70 make speculative statements about potential applications and impact. While the modular design suggests adaptability, these claims lack empirical validation. The assertion that systems are adaptable to \"any similar aquatic model organism\" (C20) and \"any laboratory environment\" (C5) are overly broad without testing. These represent reasonable hypotheses for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

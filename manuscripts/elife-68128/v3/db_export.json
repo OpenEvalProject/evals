@@ -1,0 +1,1667 @@
+{
+  "submission": {
+    "id": "df6c7b65-cdf6-446b-a3be-39e664c3d4c2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:51:49.424286Z",
+    "updated_at": "2025-12-03T03:51:49.424286Z"
+  },
+  "content": [
+    {
+      "id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "submission_id": "df6c7b65-cdf6-446b-a3be-39e664c3d4c2",
+      "content_type": "manuscript",
+      "content_text": "# Therapeutic inhibition of keratinocyte TRPV3 sensory channel by local anesthetic dyclonine\n\n## Authors\n\n- Qiang Liu<sup>1</sup>\n- Jin Wang<sup>2</sup>\n- Xin Wei<sup>1</sup>\n- Juan Hu<sup>1</sup>\n- Conghui Ping<sup>1</sup>\n- Yue Gao<sup>1</sup>\n- Chang Xie<sup>1</sup>\n- Peiyu Wang<sup>1</sup>\n- Peng Cao<sup>3</sup>\n- Zhengyu Cao<sup>4</sup>\n- Ye Yu<sup>2</sup>\n- Dongdong Li<sup>5</sup> ([ORCID: 0000-0002-6731-4771](https://orcid.org/0000-0002-6731-4771))\n- Jing Yao<sup>1</sup> ([ORCID: 0000-0003-1844-3988](https://orcid.org/0000-0003-1844-3988)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Virology, Hubei Key Laboratory of Cell Homeostasis, College of Life Sciences, Frontier Science Center for Immunology and Metabolism, Wuhan University Wuhan China\n2. School of Basic Medicine and Clinical Pharmacy, China Pharmaceutical University Nanjing China\n3. Hospital of Integrated Traditional Chinese and Western Medicine, Nanjing University of Chinese Medicine Nanjing China\n4. State Key Laboratory of Natural Medicines and Jiangsu Provincial Key Laboratory for TCM Evaluation and Translational Development, School of Traditional Chinese Pharmacy, China Pharmaceutical University Nanjing China\n5. Sorbonne Universit\u00e9, Institute of Biology Paris Seine, Neuroscience Paris Seine, CNRS UMR8246, Inserm U1130 Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe multimodal sensory channel transient receptor potential vanilloid-3 (TRPV3) is expressed in epidermal keratinocytes and implicated in chronic pruritus, allergy, and inflammation-related skin disorders. Gain-of-function mutations of TRPV3 cause hair growth disorders in mice and Olmsted syndrome in humans. Nevertheless, whether and how TRPV3 could be therapeutically targeted remains to be elucidated. We here report that mouse and human TRPV3 channel is targeted by the clinical medication dyclonine that exerts a potent inhibitory effect. Accordingly, dyclonine rescued cell death caused by gain-of-function TRPV3 mutations and suppressed pruritus symptoms in vivo in mouse model. At the single-channel level, dyclonine inhibited TRPV3 open probability but not the unitary conductance. By molecular simulations and mutagenesis, we further uncovered key residues in TRPV3 pore region that could toggle the inhibitory efficiency of dyclonine. The functional and mechanistic insights obtained on dyclonine-TRPV3 interaction will help to conceive therapeutics for skin inflammation.\n\n## Introduction\n\nTransient receptor potential (TRP) channels belong to a family of calcium-permeable and nonselective cation channels, essential for body sensory processing and local inflammatory development (Clapham, 2003). As a polymodal cellular sensor, transient receptor potential vanilloid-3 (TRPV3) channel is abundantly expressed in skin keratinocytes (Chung et al., 2004b; Peier et al., 2002; Xu et al., 2002) and in cells surrounding the hair follicles (Cheng et al., 2010). TRPV3 integrates a wide spectrum of physical and chemical stimuli (Luo and Hu, 2014). TRPV3 is sensitive to innocuous temperatures above 30\u201333\u00b0C and exhibits an increased response at noxious temperature (Chung et al., 2005; Xu et al., 2002). Natural plant products such as camphor (Moqrich et al., 2005), carvacrol, eugenol, thymol (Xu et al., 2006), and the pharmacological compound 2-aminoethoxydiphenyl borate (2-APB) (Chung et al., 2004a; Colton and Zhu, 2007) also activate TRPV3. In addition, TRPV3 is directly activated by acidic pH from cytoplasmic side (Gao et al., 2016).\n\nMounting evidence implicates TRPV3 channel in cutaneous sensation including thermal sensation (Chung et al., 2004b), nociception (Huang et al., 2008), and itch (Yamamoto-Kasai et al., 2012). They also participate in the maintenance of skin barrier, hair growth (Cheng et al., 2010), and wound healing (Aijima et al., 2014; Yamada et al., 2010). The dysfunction of TRPV3 channels has come to the fore as a key regulator of physiological and pathological responses of skin (Ho and Lee, 2015). In rodents, the Gly573Ser substitution in TRPV3 renders the channel spontaneously active and caused a hairless phenotype in DS-Nh mice and WBN/Kob-Ht rats (Asakawa et al., 2006). DS-Nh mice also develop severe scratching behavior and pruritic dermatitis. TRPV3 dysfunction caused by genetic gain-of-function mutations or pharmaceutical activation has been linked to human skin diseases, including genodermatosis known as Olmsted syndrome (Agarwala et al., 2015; Lin et al., 2012) and erythromelalgia (Duchatelet et al., 2014). Furthermore, TRPV3-deficient mice give rise to phenotypes of curly whiskers and wavy hair coat (Cheng et al., 2010). Conversely, hyperactive TRPV3 channels expressed in human outer root sheath keratinocytes inhibit hair growth (Borb\u00edr\u00f3 et al., 2011). While being implicated in a variety of skin disorders, whether and how TRPV3 could be therapeutically targeted remains to be elucidated. It is thus desirable to identify and understand the clinical medications that potentially target TRPV3 channels.\n\nDyclonine is a clinical anesthetic characterized by rapid onset of effect, lack of systemic toxicity, and low index of sensitization (Florestano and Bahler, 1956). Its topical application (0.5% or 1% dyclonine hydrochloride contained in the topical solution, i.e., ~30.7 mM at a dose of 1%, according to the United States Pharmacopeia) rapidly relieves itching and pain in patients by ameliorating inflamed, excoriated, and broken lesions on mucous membranes and skin (Morginson et al., 1956). Accordingly, dyclonine is used to anesthetize mucous membranes prior to endoscopy (Formaker et al., 1998). The clinical scenario targeted by dyclonine treatment echoes the pathological aspects of TRPV3-related skin disorders, suggesting that the therapeutic effects of dyclonine might involve its interaction with TRPV3 sensory channel.\n\nWe report here that mouse and human TRPV3 (hTRPV3) channel activity was potently suppressed by dyclonine. It dose-dependently inhibited TRPV3 currents in a voltage-independent manner and rescued cell death caused by TRPV3 gain-of-function mutation. In vivo, dyclonine indeed suppressed the itching/scratching behaviors induced by TRPV3 channel agonist carvacrol as evidenced by the TRPV3 knock out (KO) mice. At single-channel level, dyclonine reduced TRPV3 channel open probability without altering the unitary conductance. We also identified molecular residues that were capable of either eliminating or enhancing the inhibitory effect of dyclonine. These data demonstrate the effective inhibition of TRPV3 channel by dyclonine, supplementing a molecular mechanism for its clinical effects and raising its potential to ameliorate TRPV3-associated disorders.\n\n## Results\n\n### Inhibition of TRPV3 currents by dyclonine\n\nWe first examined the effect of dyclonine on TRPV3 activity induced by the TRPV channel agonist 2-APB (100 \u00b5M). Whole-cell currents were recorded at a holding potential of \u201360 mV in HEK 293T cells expressing mouse TRPV3. Because TRPV3 channels exhibit sensitizing properties upon repeated stimulation (Chung et al., 2004a), we examined the effect of dyclonine after the response had stabilized following repetitive application of 2-APB (Figure 1A). The presence of 5 and 10 \u00b5M dyclonine significantly inhibited TRPV3 currents response to 30% \u00b1 2% and 15% \u00b1 3% of control level, respectively. After washing out of dyclonine, 2-APB evoked a similar response to the control level, indicating that the blocking effect of dyclonine is reversible (Figure 1A,B). We repeated the experiments with different doses of dyclonine. The dose-response curve indicates that dyclonine inhibited TRPV3 currents in a concentration-dependent manner with an IC50 of 3.2 \u00b1 0.24 \u03bcM (n = 6, Figure 1C). We further examined the inhibitory effect of dyclonine on TRPV3 activated by varying concentrations of 2-APB (Figure 1D). The dose-response curves to 2-APB were fitted with a Hill equation. The inhibitory effect of dyclonine on TRPV3 activation was consistently observed under all tested 2-APB concentrations (Figure 1E). The corresponding EC50 values and Hill coefficients were not changed by the presence of dyclonine (Figure 1E, EC50 = 22.93 \u00b1 0.02 \u03bcM, nH = 1.6 \u00b1 0.1 without dyclonine vs. EC50 = 22.03 \u00b1 0.86 \u03bcM, nH = 1.7 \u00b1 0.1 with 3 \u03bcM dyclonine), as confirmed by the normalized dose-response curves (Figure 1F). Therefore, dyclonine dose-dependently inhibits the response amplitudes of TRPV3 channel.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68128/elife-68128-fig1-v3.jpg)\n\n**Figure 1.:** (A) Inhibition of 2-aminoethoxydiphenylborate (2-APB)-evoked currents by Dyc in a representative HEK 293T cell expressing mouse TRPV3. After sensitization by repeated application of 100 \u03bcM 2-APB, the cell was exposed to 5 or 10 \u03bcM Dyc with 100 \u03bcM 2-APB or 10 \u03bcM Dyc only as indicated by the bars. Membrane currents were recorded in whole-cell configuration, and the holding potential was \u201360 mV. (B) Summary of relative currents elicited by 100 \u03bcM 2-APB in the presence of 0, 5, or 10 \u03bcM Dyc. Numbers of cells are indicated in parentheses. (C) The dose-response curve for Dyc inhibition of TRPV3 currents was fitted by Hill equation (IC50 = 3.2 \u00b1 0.24 \u03bcM and nH = 2.2 \u00b1 0.32, n = 6). (D) Representative whole-cell current traces showing the responses to varying concentrations of 2-APB without or with 3 \u03bcM Dyc after full sensitization of TRPV3. (E) Concentration-response curves of 2-APB without or with Dyc. Data are shown as relative values to the current evoked by 300 \u03bcM 2-APB. Solid lines are fits to Hill equation, yielding EC50 = 22.93 \u00b1 0.02 \u03bcM and nH = 1.6 \u00b1 0.1 without Dyc (n = 6); and EC50 = 22.03 \u00b1 0.86 \u03bcM and nH = 1.7 \u00b1 0.1 with 3 \u03bcM Dyc (n = 6). (F) Dose-response curves normalized to its own maximum of each condition. (G, H) Representative whole-cell recordings for the sensitization of TRPV3 currents elicited by repeated applications of 100 \u03bcM 2-APB in the absence (G) and presence (H) of 5 \u03bcM Dyc. (I) Time courses toward the peak currents elicited by repeated application of 100 \u03bcM 2-APB with or without Dyc (n = 9). Currents were normalized to each initial values. (J) The 2-APB-evoked inward currents were reversibly inhibited by Dyc in primary mouse epidermal keratinocytes. Representative inward currents were firstly activated by repeated application of 300 \u03bcM 2-APB at the holding potential of \u201360 mV, and then inhibited by 5 or 30 \u03bcM Dyc or 10 \u03bcM ruthenium red (RR) as indicated. (K) Summary of relative currents elicited by 300 \u03bcM 2-APB with or without Dyc. (L) Dose dependence of Dyc effects on TRPV3 currents in cultured keratinocytes. The solid line corresponds to a fit by Hill equation with IC50 = 5.2 \u00b1 0.71 \u03bcM and nH = 2.4 \u00b1 0.75 (n = 6). The dotted line indicates zero current level.\n\nTRPV3 channel in physiological conditions has a low level of response to external stimuli, which is augmented during the sensitization process (i.e., repetitive stimulations, Figure 1A). In contrast, excessive upregulation of TRPV3 activity impairs hair growth and increases the incidence of dermatitis and pruritus in both humans and rodents. To determine whether dyclonine affects the process of TRPV3 sensitization, TRPV3-expressing cells were repeatedly exposed to 100 \u03bcM 2-APB without or with 5 \u03bcM dyclonine (Figure 1G,H). TRPV3 currents evoked by 2-APB alone took approximately eight repetitions to reach full sensitization level (Figure 1I). The presence of dyclonine significantly slowed down this process, requiring ~16 repetitions to reach the current level of full sensitization (Figure 1H,I). As expected, dyclonine also reduced the initial TRPV3 current (31.12 \u00b1 2.86 pA/pF vs. 86.43 \u00b1 5.9 pA/pF without dyclonine; p<0.001; n = 9 per condition).\n\nAs TRPV3 is highly expressed in keratinocytes, we further determined the inhibitory effect of dyclonine in primary mouse epidermal keratinocytes. After stabilizing the channel current by repeated application of 2-APB, we tested the inhibitory effect of 5 and 30 \u03bcM dyclonine (Figure 1J). On average, TRPV3 currents were reduced to 52% \u00b1 7% and 13% \u00b1 0.01% of control level by 5 and 30 \u03bcM dyclonine, respectively (Figure 1K), reaching the similar level of inhibition by the wide-spectrum TRP channel blocker ruthenium red (RR, Figure 1J). From the dose-response curve (Figure 1L), the IC50 of dyclonine was assessed to be 5.2 \u00b1 0.71 \u03bcM, with a Hill coefficient of nH = 2.4 \u00b1 0.75 (n = 7). Thus, dyclonine effectively suppresses the activity of endogenous TRPV3 channels in mouse keratinocytes.\n\n### Dyclonine is a potent inhibitor of TRPV3 channel\n\nNext, we compared the inhibitory effect on TRPV3 of dyclonine to its impact on other TRP channels. TRPV1, TRPV2, TRPM8, and TRPA1 channels were expressed in HEK 293T cells and respectively activated by capsaicin, 2-APB, menthol, and allyl isothiocyanate (AITC). We observed that 10 \u03bcM dyclonine exhibited little inhibition on TRPV1, TRPV2, TRPM8, and TRPA1, but potently inhibited TRPV3 channel (Figure 2A). The corresponding reduction in current amplitude was 2% \u00b1 1% for TRPV1, 6% \u00b1 1% for TRPV2, 9% \u00b1 2% for TRPM8, 5% \u00b1 1% for TRPA1, compared with 87% \u00b1 1% inhibition of TRPV3 current (Figure 2B). By applying a series of dyclonine concentrations, we derived dose-response curves (Figure 2C). The corresponding IC50 values of dyclonine for inhibiting TRPV1, TRPV2, TRPM8, and TRPA1 channels (336.3 \u00b1 12.0 \u03bcM, 36.5 \u00b1 3.7 \u03bcM, 72.4 \u00b1 10.9 \u03bcM, and 152.35 \u00b1 16.3 \u03bcM, respectively) were one or two orders of magnitude higher than that for TRPV3 inhibition (3.2 \u00b1 0.24 \u03bcM), indicating that dyclonine represents an effective inhibitor of TRPV3 channel.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68128/elife-68128-fig2-v3.jpg)\n\n**Figure 2.:** (A) Representative inward current traces from whole-cell voltage-clamp recordings show the inhibitory effects of 10 \u03bcM Dyc on TRPV1 (A1), TRPV2 (A2), TRPV3 (A3), TRPM8 (A4), or TRPA1 (A5) channels (Cap: capsaicin; Men: menthol). Bars represent duration of drug application. (B) Summary of relative currents before and after Dyc (10 \u03bcM) treatment. Numbers of cells are indicated in parentheses. (C) Dose-response curves of Dyc for inhibition of indicated ion channel currents. Solid lines represent fits by Hill equation, with IC50 = 337.4 \u00b1 19.4 \u03bcM and nH = 2.0 \u00b1 0.31 for TPRV1 (n = 7), IC50 = 31.1 \u00b1 2.7 \u03bcM and nH = 2.9 \u00b1 0.50 for TPRV2 (n = 8), IC50 = 81.8 \u00b1 12.7 \u03bcM and nH = 1.2 \u00b1 0.20 for TRPM8 (n = 6), and IC50 = 154.7 \u00b1 15.6 \u03bcM and nH = 1.3 \u00b1 0.15 for TRPA1 (n = 6). For comparison, the dose-response curve of TRPV3 channel from Figure 1C is displayed in red with IC50 = 3.2 \u00b1 0.24 \u03bcM and nH = 2.2 \u00b1 0.32 (n = 6). (D) Suppression of 2-aminoethoxydiphenylborate (2-APB)-evoked currents by Dyc in a human TRPV3 (hTRPV3)-expressing HEK 293T cell. Representative inward current trace shows the reversible block effect of Dyc (30 and 50 \u03bcM) at the holding potential of \u201360 mV. (E) Summary of inhibition of hTRPV3 by Dyc. Membrane currents were normalized to the responses elicited by the saturated concentration of 2-APB (100 \u03bcM) alone. (F) Dose-response curve for Dyc on blocking of hTRPV3. Solid line represents a fit to a Hill equation, yielding IC50 = 16.2 \u00b1 0.72 \u03bcM and nH = 1.91 \u00b1 0.14 (n = 11). (G) Inhibition of frog TRPV3 (fTRPV3) currents by Dyc. Representative whole-cell currents at \u201360 mV in a fTRPV3-expressing HEK 293T cell. After sensitization by repeated application of 3 mM 2-APB, the cell was exposed sequentially to 15 and 30 \u03bcM Dyc with 3 mM 2-APB. (H) Summary of inhibition of relative currents elicited by 3 mM 2-APB, 3 mM 2-APB with Dyc 15 or 30 \u03bcM. (I) Concentration-response curve of Dyc on the inhibition of fTRPV3 currents. Solid line represents a fit by a Hill equation, with IC50 = 12.31 \u00b1 1.6 \u03bcM and nH = 1.6 \u00b1 0.34 (n = 7). The dotted line indicates zero current level.\n\nThe above results were obtained for mouse TRPV3. We further asked whether the inhibitory effect of dyclonine on TRPV3 is consistent across different species. Similarly, we performed whole-cell recordings in HEK 293T cells expressing hTRPV3 and frog TRPV3 (fTRPV3), respectively. They were activated to a stable level by repetitive 2-APB stimulation. Addition of dyclonine, indeed, efficiently suppressed the activation of both types of TRPV3 channel (Figure 2D\u2013I). Dose-response curves for dyclonine inhibition yielded an IC50 value of 16.2 \u00b1 0.72 \u03bcM for hTRPV3 and 12.3 \u00b1 1.6 \u03bcM for fTRPV3, respectively. Therefore, the inhibition of TRPV3 by dyclonine is conserved across species.\n\n### Inhibition of TRPV3 by dyclonine is voltage-independent\n\nTo obtain a complete description of the inhibitory effect of dyclonine, we next investigated its voltage dependence using a stepwise protocol (Figure 3A). We measured membrane currents in TRPV3-expressing HEK 293T cells using a Cs+-based pipette solution that blocks most outward K+ channel current but permits measurement of outward conductance mediated by the nonselective TRPV3 channel. A low-concentration 2-APB (40 \u03bcM) activated small voltage-dependent currents with steady-state outward rectification, characteristic of TRPV3 currents in heterologous expression systems (Figure 3A). Addition of dyclonine in the extracellular solution significantly diminished TRPV3-mediated outward and inward currents (Figure 3A). By contrast, 10 \u03bcM RR, a broad TRP channel blocker, only inhibited TRPV3-mediated inward currents but enhanced outward currents (Figure 3A), which is consistent with early report (Cheng et al., 2010). Dyclonine inhibition of both inward and outward currents was further confirmed by the I-V curves derived from pooled data (Figure 3B). We found no significant difference inhibition at hyperpolarized voltages versus depolarized voltages, showing that the inhibition occurred independently of the membrane potential (Figure 3C). Together, relative to the wide-spectrum blocker RR, dyclonine more effectively inhibits TRPV3 channel in a voltage-independent manner.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68128/elife-68128-fig3-v3.jpg)\n\n**Figure 3.:** (A) Representative whole-cell currents evoked by voltage steps (inset) together with 40 \u03bcM 2-aminoethoxydiphenylborate (2-APB) in the absence and presence of 10, 30 \u03bcM dyclonine or 10 \u03bcM ruthenium red (RR) in HEK 293T cells expressing mouse TRPV3. Currents were elicited with 200 ms test pulses ranging from \u2013160 mV to +180 mV in 20 mV increments within the same cells, and the holding potential was \u201360 mV. Calcium-free standard bath solution and a CsCl-filled recording electrode were used. The dotted line indicates zero current level. (B) Current-voltage relations for data in (A). Current amplitudes were normalized to the maximum responses at +180 mV in the presence of 40 \u03bcM 2-APB. Each point represents mean values (\u00b1 SEM) from eight independent cells. (Inset) The inhibition effects of dyclonine and RR on TRPV3 currents at negative holding potentials are magnified and displayed on the right. Note that dyclonine had an inhibitory effect on TRPV3 currents at both positive and negative potentials, but RR only inhibited TRPV3 channel currents at negative potentials while enhanced TRPV3 currents at positive potentials (blue trace). (C) Percentage block of TRPV3 currents by dyclonine (10 and 30 \u03bcM) as a function of membrane potential. Error bars represent SEM.\n\n### Inhibition of heat-activated TRPV3 currents by dyclonine\n\nTRPV3 is a thermal-sensitive ion channel and has an activation threshold around 30\u201333\u00b0C (Xu et al., 2002). We therefore explored whether the heat-evoked TRPV3 currents can be also inhibited by dyclonine. We employed an ultrafast infrared laser system to control the local temperature near single cells; each temperature jump had a rise time of 1.5 ms and lasted for 100 ms. TRPV3 sensitization of the channel was induced by repeating a same temperature jump from room temperature to ~51\u00b0C (Figure 4A). TRPV3, expressed in HEK 293T cells, steadily responded to temperature jumps ranging from 30 to 51\u00b0C (Figure 4B). After pre-sensitization by repeated temperature jumps from room temperature to 52\u00b0C, application of dyclonine appreciably inhibited TRPV3 thermal currents (Figure 4B,C). The inhibitory effect of dyclonine was fully reversible as after its washing out the TRPV3 response recovered to the same level as control condition (Figure 4C). To determine the concentration dependence of dyclonine inhibition, TRPV3 currents were evoked by a same temperature jump from room temperature to ~52\u00b0C in the presence of 1, 3, 5, 10, 30, and 50 \u03bcM dyclonine (Figure 4D). The IC50 of dyclonine on TRPV3 inhibition was assessed to be 14.02 \u00b1 2.5 \u03bcM with a Hill coefficient of nH = 1.9 \u00b1 0.54, according to the dose-response curve fitting (Figure 4E). These results thus indicate that dyclonine dose-dependently suppresses heat-evoked TRPV3 currents.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68128/elife-68128-fig4-v3.jpg)\n\n**Figure 4.:** (A) Sensitization of TRPV3 by heat. Heat-evoked TRPV3 currents in response to repeated temperature jumps. Temperature pulse generated by infrared laser diode irradiation was stepped from room temperature to 51\u00b0C in 1.5 ms and then clamped for 100 ms. (B) Effects of dyclonine on heat-activated TRPV3 currents. Heat-evoked current traces were recorded in whole-cell configuration, which were stabilized by sensitization of repeated fast temperature jumps as shown in (A). Temperature jumps shown on the top had a duration of 100 ms and a rise time of 1.5 ms. Bath solution with 0 or 30 \u03bcM dyclonine was applied by brief perfusion to the patch just before temperature stimulation on the same cells. (C) The average plot compares the temperature responses in the absence and presence of 30 \u03bcM dyclonine (left, n = 6). Currents were normalized by their maximum responses under control condition, respectively. Note that data from control and washout are superimposed. Percentage block of heat-evoked TRPV3 currents by 30 \u03bcM dyclonine as a function of temperature is shown on the right. (D) Representative inward currents evoked by a series of identical temperature jumps inhibited by dyclonine in a concentration-dependent manner. The temperature pulse (52\u00b0C) is shown in gray. Holding potential was \u201360 mV. (E) Dose dependence of dyclonine effects on heat-activated TRPV3 currents. The solid line represents a fit to Hill equation with IC50 = 14.1 \u00b1 2.5 \u03bcM and nH = 1.9 \u00b1 0.54 (n = 10). All whole-cell recordings were got from TRPV3-expressing HEK 293T cells held at \u201360 mV.\n\n### Dyclonine inhibited hyperactive TRPV3 mutants and rescued cell death\n\nIt has previously been reported that gain-of-function mutations, G573S and G573C, of TRPV3 are constitutively active and their expression causes cell death (Xiao et al., 2008). We first examined the effect of dyclonine on the electrophysiological activity of mutants. We transfected the inducible cDNA constructs encoding respectively the GFP-tagged wild-type (WT) TRPV3, G573S, or G573 mutant into T-Rex 293 cells and then applied 20 ng/ml doxycycline to induce the gene expression. As illustrated in Figure 5A, B, whole-cell recordings from G573S or G573C expressed in T-Rex 293 cells show that the spontaneous currents noticeably appeared when changing the holding potential from 0 mV to \u201360 mV, and application of 2-APB further increased the channel currents. In each patch, 20 \u03bcM RR was applied extracellularly to obtain remaining leak currents. By subtracting leak currents, we found that spontaneous activities from G573S and G573C were reduced by 74% \u00b1 3% (n = 6) and 71% \u00b1 2% (n = 6) by 10 \u03bcM dyclonine, respectively (Figure 5C). Also, the presence of dyclonine significantly inhibited 300 \u03bcM 2-APB-evoked responses to 10% \u00b1 2% (G573S, n = 6) and 11% \u00b1 1% (G573C, n = 6) of control level (Figure 5D), respectively. As both mutant TRPV3 channels are effectively inhibited by dyclonine, we next explored whether it can rescue the cell death caused by these gain-of-function mutants. Cells expressing G573S or G573S were exposed to different pharmacological drugs (dyclonine, 2-APB, 2-APB and dyclonine, or RR). Cell death was recognized by the narrow and contracted footprints in bright-field images, and the protein expression meanwhile monitored by GFP fluorescence. As shown in Figure 5E, massive cell death was seen in cells that expressed G573C and G573S TRPV3 mutants but not those expressing the wild-type TRPV3. Addition of dyclonine largely prevented the cell death while not causing change in the expression of TRPV3 channels (Figure 5E), indicating that dyclonine decreased the cytotoxicity caused by the gain-of-function mutants. We further performed flow cytometry analysis and observed that the cell death ratio was maintained at low level (4.96% \u00b1 0.87%, n = 7) in cells expressing WT TRPV3 (Figure 5F). By contrast, the expression of G573S or G573C mutant significantly increased the cell death ratio to 45.36% \u00b1 5.79% (n = 7) and 52.74% \u00b1 4.94% (n = 7), which were effectively reduced by dyclonine (50 \u03bcM) to 12.45% \u00b1 2.54% (n = 7) and 14.98% \u00b1 4.40% (n = 7), respectively. The cell-protective effect of dyclonine was mirrored by the general TRP channel blocker RR (Figure 5E\u2013G). As expected, activation of TRPV3 channels with the agonist 2-APB caused significant cell death even in cells expressing WT channel and exacerbated the cell death in those expressing the mutant channel G573S or G573C (Figure 5G). Application of dyclonine also reversed the cell death caused by 2-APB activation (9.12% \u00b1 1.42% vs. 43.73% \u00b1 3.46% for WT condition, 17.68% \u00b1 5.66% vs. 53.60% \u00b1 5.88% for G573S, and 13.85% \u00b1 2.49% vs. 47.91% \u00b1 5.54% for G573C after and before addition of dyclonine). Collectively, these results indicate that dyclonine rescues cell death by inhibiting the excessive activity of TRPV3 channel.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68128/elife-68128-fig5-v3.jpg)\n\n**Figure 5.:** (A, B) Effects of Dyc on whole-cell currents recorded from TRPV3 (G573S) and TRPV3 (G573C) expressed in T-Rex 293 cells, showing that Dyc (3 and 10 \u03bcM) reversibly inhibited the response to 300 \u03bcM 2-aminoethoxydiphenylborate (2-APB) and the spontaneous activities at \u201360 mV. 20 \u03bcM ruthenium red (RR) was applied for subtracting leak currents. Bars represent duration of drug application. (C) Averaged inhibition of spontaneous activities of G573 mutants by Dyc and RR. (D) Summary of relative whole-cell currents of TRPV3 (wild-type [WT]), G573S, and G573S with or without Dyc treatment. Error bars represent SEM. (E) Bright-field and fluorescence images showing the cell survival. The GFP-tagged TRPV3 (WT) and two mutants (G573C and G573S) in pcDNA4/TO vector were respectively transfected into T-Rex 293 cells, and then treated with doxycycline (20 ng/ml) for 16 hr post-transfection to induce gene expression in the presence of drugs as indicated. Images of cells were taken at 12 hr after induction. Scale bar, 50 \u03bcm. (F) Flow cytometry analysis of the percentage of dead cells. Cells transfected with the desired plasmids are as indicated. After the gene expression induced by doxycycline, the cells were treated with Dyc (50 \u03bcM), 2-APB (30 \u03bcM), RR (10 \u03bcM), or the combination of 2-APB and Dyc, and then stained with propidium iodide, followed by flow cytometry to analyze cell survival. (G) Summary plots of cell death rates under different treatments. Data were averaged from seven independent experiments. *** p<0.0001.\n\n### Dyclonine targets TRPV3 in vivo and ameliorates scratching behavior\n\nTRPV3 is highly expressed in skin keratinocytes, whose hyperactivity causes pruritic dermatitis and scratching behavior. We next examined in vivo the therapeutic effect of dyclonine on TRPV3 hyperactivity-caused scratching behavior in mouse model. Itching-scratching behavior was induced by pharmacological activation of TRPV3 channel by a natural compound carvacrol derived from oregano (Cui et al., 2018). The number of scratching bouts was quantified every 5 min (Figure 6A), and also summed over a 30 min observation period (Figure 6B). Intradermal injection of carvacrol (0.1%, 50 \u03bcl) in WT TRPV3 mice caused significant increases in the accumulated scratching bouts (137.2 \u00b1 33.9) compared to the control group receiving normal saline (0.9% NaCl, 3.8 \u00b1 1, n = 6, p<0.001; Figure 6B). By contrast, intradermal injection of carvacrol (0.1%, 50 \u03bcl) did not elicit a remarkable change in the number of scratching bouts in TRPV3-/- mice (Figure 6A,B), supporting that carvacrol caused itching-scratching behavior via TRPV3 activation (Cui et al., 2018). To investigate whether dyclonine could alleviate carvacrol-evoked acute itch, we made an intradermal injection of dyclonine into the mouse neck 30 min before the injection of carvacrol into the same site. As illustrated in Figure 6C,D, administration of 50 \u03bcl dyclonine at 1, 10, and 50 \u03bcM concentrations appreciably reduced the scratching bouts to 130.0 \u00b1 20.3, 82.0 \u00b1 15.0, and 18.0 \u00b1 8.0 from 137.8 \u00b1 18.3 (n = 6), respectively. We also carried out whole-cell recordings in TRPV3-expressing HEK 293T cells to further confirm the inhibitory effect of dyclonine on TRPV3 currents activated by carvacrol. Similar to that observed with the inhibition of 2-APB-evoked TRPV3 currents (Figure 1A\u2013C), dyclonine also inhibited carvacrol-activated TRPV3 currents in a concentration-dependent manner with IC50 = 3.5 \u00b1 0.34 \u03bcM following sensitization by repeated application of 300 \u03bcM 2-APB (n = 8, Figure 6E,F), implying that the itching caused by carvacrol is mainly due to the activation of TRPV3. Hence, dyclonine ameliorates TRPV3 hyperactivity-caused scratching in a concentration-dependent manner. In contrast, dyclonine (10 \u03bcM) showed little effect on electrophysiological responses in mouse dorsal root ganglia (DRG) and trigeminal ganglia (TG) neurons (Figure 6\u2014figure supplement 1). This observation is in line with the absence of TRPV3 in mouse DRGs (Peier et al., 2002) and suggests that the invio effect of dyclonine arises from the targeting of keratinocyte TRPV3 channels.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68128/elife-68128-fig6-v3.jpg)\n\n**Figure 6.:** (A) Summary of the time courses of neck-scratching behaviors in wild-type transientreceptor potential vanilloid-3 (TRPV3) and TRPV3 knock out (C57BL/6) mice after intradermal injection of 50 \u03bcl carvacrol (0.1%) or normal saline (0.9% NaCl) containing 0.1% ethanol into the mouse neck. Time for scratching bouts was plotted for each 5 min interval over the 30 min observation period. (B) Quantification of the cumulative scratching bouts over 30 min under different treatments, showing that intradermal injection of carvacrol elicited a remarkable increase in the number of scratching bouts in TRPV3+/+ but not TRPV3-/- mice (n = 6; N.S.: no significance; *p<0.05; **p<0.01; ***p<0.001, by one-way ANOVA). (C) Time courses of neck-scratching behaviors in response to intradermal injection of 50 \u03bcl carvacrol (0.1%), with pretreatment of normal saline (0.9% NaCl), or different concentrations (1, 10, and 50 \u03bcM) of Dyc in the same site. (D) Summary plots of the number of scratching bouts over 30 min under different treatments as indicated, showing that Dyc dose-dependently alleviated carvacrol-evoked acute itch (n = 6; N.S.: no significance; *p<0.05; **p<0.01; ***p<0.001, by one-way ANOVA). (E) Inhibition of carvacrol-evoked currents by Dyc in a representative HEK 293T cell expressing TRPV3. After sensitization by repeated application of 300 \u03bcM 2-aminoethoxydiphenylborate (2-APB), the cell was exposed to 3, 30, or 50 \u03bcM Dyc with 500 \u03bcM carvacrol as indicated by the bars. Membrane currents were recorded in a whole-cell configuration, and the holding potential was \u201360 mV. (F) The dose-response curve for Dyc inhibition of carvacrol-evoked TRPV3 currents was fitted by Hill equation (IC50 = 3.5 \u00b1 0.34 \u03bcM and nH = 2.1 \u00b1 0.41, n = 8).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68128/elife-68128-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A, B) Current-clamp responses of DRG and TG neurons to 500 ms current pulse injection, respectively. Protocol of injected current is shown on the top. (C) Statistics plot showing no significant changes for resting membrane potential (RMP) from DRG or TG neurons in the presence of dyclonine (10 \u03bcM) compared with control. RMPs were \u201344 \u00b1 1.3 mV (n = 5) to \u201345 \u00b1 0.9 mV (n = 5) treated with dyclonine in DRG neurons, and \u201344.8 \u00b1 1.3 mV (n = 5) to \u201347.2 \u00b1 1.9 mV (n = 5) treated with dyclonine in TG neurons. (D) Comparison of averaged frequency of action potential (AP) firing (numbers of action potential firing) evoked by current injection of 125 pA lasting for 500 ms in DRG and TG neurons. (E) Paw withdrawal or licking latencies to noxious thermal stimuli at 55\u00b0C evaluating the effect of dyclonine on thermal pain sensing. The paw withdrawal latencies (PWL) were 16.57 \u00b1 0.46 s (n = 12), 18.08 \u00b1 0.03 s (n = 12), and 18.82 \u00b1 0.42 s (n = 12) for hind paws with intraplantar injection with saline, 10and 50 \u03bcM dyclonine in TRPV3+/+ mice, respectively. The PWL were 18.93 \u00b1 0.61 s (n = 12), 18.23 \u00b1 0.52 s (n = 12), and 18.61 \u00b1 0.46 s (n = 12) for hind paws with intraplantar injection with saline, 10and 50 \u03bcM dyclonine in TRPV3-/- mice. N.S.: no significance; *p<0.05; **p<0.01; ***p<0.001.\n\nWe also used WT and TRPV3 KO mice to examine the effect of dyclonine on thermal nociceptive responses to the noxious temperature 55\u00b0C. In WT mice, dyclonine exhibited a tendency to reduce the nociceptive response (Figure 6\u2014figure supplement 1). TRPV3 KO reduced mice nociceptive response to heating compared to WT mice (55\u00b0C; comparison between gray bars in Figure 6\u2014figure supplement 1E). However, in TRPV3 KO mice, dyclonine showed no further effect, showing that dyclonine mainly targets TRPV3 in vivo. These observations also suggest that TRPV3 partially contributes to pain sensation in thermal nociception, in consistency with the temperature-dependent responses of TRPV3 channel (Figure 4).\n\n### Effects of dyclonine on single TRPV3 channel activity\n\nWe then examined the functional and molecular mechanisms underlying the inhibition of TRPV3 by dyclonine. To distinguish whether such inhibition arises from the changes in channel gating or conductance, we measured single-channel activity. Single-channel recordings were performed in an inside-out patch that was derived from HEK 293T cells expressing the mouse TRPV3 (Figure 7). Currents were evoked by 10 \u03bcM 2-APB in the absence and presence of dyclonine (30 \u03bcM) after sensitization induced by 300 \u03bcM 2-APB at a holding potential of either +60 mV or \u201360 mV (Figure 7A). To quantify the changes, we constructed all-point histograms and measured the open probabilities and the unitary current amplitudes by Gaussian fitting. We observed that the single-channel open probability was largely decreased by dyclonine from 0.8 \u00b1 0.02 to 0.08 \u00b1 0.01 at \u201360 mV and from 0.82 \u00b1 0.02 to 0.12 \u00b1 0.01 at +60 mV (n = 6), respectively (Figure 7B). Statistical analysis, however, revealed that dyclonine had no effect on single TRPV3 channel conductance (163.6 \u00b1 6.4 pS vs. 179.2 \u00b1 5.5 pS for before and after dyclonine treatment; Figure 7C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68128/elife-68128-fig7-v3.jpg)\n\n**Figure 7.:** (A) Single-channel currents of TRPV3 were recorded from inside-out membrane patches of HEK 293T cells at two membrane potentials (\u00b1 60 mV) in symmetrical 150 mM NaCl and were low-pass filtered at 2 kHz. Currents were evoked by 10 \u03bcM 2-aminoethoxydiphenylborate (2-APB) in the absence and presence of dyclonine (30 \u03bcM) after sensitization induced by repetitive 300 \u00b5M 2-APB. All-point amplitude histograms of single-channel currents were shown below the current traces. The histograms were fit to sums of two Gaussian functions to determine the average amplitudes of currents and the open probabilities. Dotted lines indicate the opened channel state (O) and the closed channel state (C), respectively. (B) Summary of effects of dyclonine on TRPV3 single-channel open probability. Dyclonine (30 \u03bcM) decreased TRPV3 open probability from 0.8 \u00b1 0.02 to 0.08 \u00b1 0.01 at \u201360 mV (n = 6), and from 0.82 \u00b1 0.02 to 0.12 \u00b1 0.01 at +60 mV (n = 6), respectively. (C) I-V relationships of TRPV3 single-channel current evoked by 10 \u03bcM 2-APB without (black triangles) and with 30 \u03bcM dyclonine (red circles). Unitary conductance measured by fitting a linear function were 163.6 \u00b1 6.4 pS and 179.2 \u00b1 5.5 pS for before and after treatment by dyclonine, respectively.\n\n### The mechanism underlying the inhibition of TRPV3 by dyclonine\n\nIn order to understand the molecular mechanism underlying the blockade of TRPV3 by dyclonine, we utilized in silico docking to predict their interactions. The inhibitory effect of drugs on ion channels is usually achieved in three ways, competitively binding with agonists, negative allosteric regulation, or directly blocking the channel pore. Dyclonine inhibited TRPV3 currents evoked by both 2-APB (Figure 1) and heat (Figure 4), implying that dyclonine is not a competitive antagonist. In addition, the voltage independence of dyclonine inhibition and the fact that dyclonine is a positive charged alkaloid suggest that dyclonine is not simply an open channel blocker. Previous studies have demonstrated that local anesthetics inhibit voltage-gated sodium channels through a common drug-binding region within the channel pore (Tikhonov and Zhorov, 2017). We therefore suspected that the inhibition effect of dyclonine is also due to its allosteric interaction with specific residues within the aqueous pore of TRPV3. The grid file of in silico docking was then constructed to examine residues in the upper pore region and the central cavity of TRPV3 (Figure 8\u2014figure supplement 1A); the best receptor\u2013ligand complex was evaluated using the extra precision (XP) scoring. Ligand clusters derived from XP docking suggested three potential TRPV3/dyclonine binding modes (BMs): BMA, BMB, and BMC (Figure 8A,B). Moreover, residues within 10 \u00c5 of dyclonine poses were extensively refined using induce-fit-docking (IFD) based on mTRPV3 cryo-EM structure (Singh et al., 2018; Figure 8A, Figure 8\u2014figure supplement 1B). BMB and BMC modes predicted that dyclonine occupies the ion permeation pathway behaving as an open channel blocker. This, however, contradicts the fact that dyclonine is a positive charged alkaloid (Figure 8B) and its inhibition effect is voltage-independent (Figure 3). Hence, BMB and BMC binding modes appear unlikely. Nevertheless, mutants in key residues in these two binding sites diversely affected the inhibition of dyclonine (I637A, IC50 = 6.1 \u00b1 0.43 \u03bcM; F666A, IC50 = 414.5 \u00b1 15.7 \u03bcM; I674A, IC50 = 15.1 \u00b1 2.1 \u03bcM, Figure 8\u2014figure supplement 1E\u2013H), suggesting that the pore region is crucial for dyclonine inhibition.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/68128/elife-68128-fig8-v3.jpg)\n\n**Figure 8.:** (A) Overall view of the mTRPV3-dyclonine complex. Three putative binding modes (BMs) for dyclonine in the pore cavity of mTRPV3 channel (PDB ID code: 6DVZ) are denoted as BMA, BMB, and BMC (please find the details in the text), with the expanded view of BMA shown on the right. Four subunits of the tetramer are distinguished by different colors, and dyclonine in a schematic structure is shown in red. (B) (Left) Potential docking poses of dyclonine and TRPV3 channel. (Right) Cluster analysis showing all BMs distributed into three clusters, BMA, BMB, and BMC. (C) Representative whole-cell recordings show reversible blocking of 2-aminoethoxydiphenylborate (2-APB) (1 mM)-evoked responses by dyclonine (3, 10, or 30 \u03bcM) in HEK 293T cells expressing mutant TRPV3 channels as indicated, respectively. The combination of 3, 10, or 30 \u03bcM dyclonine and 2-APB was applied following the control currents evoked by a saturated concentration of 2-APB (1 mM, initial gray bar). Holding potential was \u201360 mV. Bars represent duration of stimuli. (D) Concentration-response curves of dyclonine on inhibition of the TRPV3 mutants. Solid lines represent fits by a Hill equation, with the half-maximal inhibitory concentration (IC50) shown in (E). For comparison, the dose-response curve of wile-type channel is displayed in gray. Four point mutations (L630W, N643A, I644W, and L655A) reduced the inhibitory efficiency of dyclonine, while the other two point mutations (L642A and I659A) enhanced the inhibitory effects of dyclonine on TRPV3 currents. (F) Average current responses of mutant channels compared with wild-type TRPV3 channels. Each substitution of putative residues except L639A retained their normal responses to 2-APB. Numbers of cells are indicated in parentheses. (G) Modulation of thiol-oxidizing and disulfide-reducing agents on the inhibitory effects of dyclonine. Whole-cell recordings from the wild-type TRPV3 and the mutants expressed in HEK 293 T cells, showing the effects of (2-(trimethylammonium) ethyl methanethiosulfonate, bromide) (MTSET) and dithiothreitol (DTT) on the responses to 2-APB with or without dyclonine after sensitization induced by 300 \u03bcM 2-APB. MTSET (1 mM) and DTT (10 mM) were locally applied for ~3 min to probe the accessibility, respectively. The responsiveness to 2-APB or 2-APB plus dyclonine was subsequently examined before and after treatments. Holding potential was \u201360 mV. (H) Summary of inhibition of relative currents elicited by 300 \u03bcM 2-APB, 300 \u03bcM 2-APB with dyclonine 10 or 1 \u03bcM. (I) Summary of inhibitory effects of dyclonine before and after treatments with MTSET and DTT. The dotted line indicates zero current level in all cases. Error bar represents SEM. N.S.: no significance; *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68128/elife-68128-fig8-figsupp1-v3.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Receptor grid for docking generated with 35 \u00c5 \u00d7 35 \u00c5 \u00d7 35 \u00c5 dimensions. (B) Detailed binding modes (BMs) of dyclonine in BMB and BMC. The putative interaction residues are labeled, and dyclonine is displayed in sticks for emphasis. (C) Representative whole-cell recordings show reversible blocking of 2-aminoethoxydiphenylborate (2-APB) (1 mM)-evoked responses by dyclonine (10 or 30 \u03bcM) in HEK 293Tcells expressing mutant TRPV3 channels as indicated, respectively. Holding potential was \u201360 mV. Bars represent duration of stimuli. (D) Concentration-response curves of dyclonine on inhibition of the TRPV3 mutants. Solid lines represent fits by a Hill equation, with the half-maximal inhibitory concentration (IC50) shown in (E). For comparison, the dose-response curve of wild-type is displayed in gray. (F) Average current responses of mutant channels compared with wild-type TRPV3 channels. Only cells that expressed I637A, F666A, or I674A showed similar response as wild-type channel, while others with the substation by alanine were not functional. Numbers of cells are indicated in parentheses. (G) Structures assigned to apo/resting (left) and open states (right). (H) Cavity fostered by the pore helix and S5\u2013S6 domains of TRPV3 channels at the resting (left) and open (right) states.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68128/elife-68128-fig8-figsupp2-v3.jpg)\n\n**Figure 8\u2014figure supplement 2.:** Alignment of the pore sequence of mTRPV3 with other TRP channels, with the identical or similar residues shaded in colors. Meanwhile, differences in amino acids compositions present for different channels. The key residues of transient receptor potential vanilloid-3 (TPRV3) are indicated at the top, which affects the inhibitory effect of dyclonine.\n\nBMA mode shows that dyclonine makes contacts with the cavity formed by the pore loop and S6-helix of TRPV3 (Figure 8A,B). Structures assigned to apo and open states revealed remarkable allosteric changes and cavity size reduction in these regions (Figure 8\u2014figure supplement 1G, H), supporting the rationality of the BMA mode.\n\nTo further delineate dyclonine-interacting residues, we systematically mutated the residues in the cavity of TRPV3 channel predicted by BMA binding mode. Among the mutants, mutations L630W, N643A, I644W, and L655A greatly reduced the inhibitory effect of dyclonine, whereas the mutants L642A and I659A showed higher sensitivity to dyclonine than WT channel (Figure 8C,D). The dose-response curves were fitted with a Hill equation, and the corresponding IC50 values for each TRPV3 mutant were as follows: IC50 = 286.7 \u00b1 10.4 \u03bcM for L655A; IC50 = 30.8 \u00b1 2.2 \u03bcM for L630W; IC50 = 37.7 \u00b1 5.1 \u03bcM for N643A; IC50 = 26.1 \u00b1 2.8 \u03bcM for I644W; IC50 = 0.25 \u00b1 0.02 \u03bcM for L642A; and IC50 = 0.56 \u00b1 0.06 \u03bcM for I659A compared to IC50 = 3.2 \u00b1 0.24 \u03bcM for WT TRPV3 (Figure 8D,E). Notably, all mutant channels except L639A were functional and produced robust responses to 2-APB (Figure 8F). Covalent modification of L630C, F633C, and L642C, with side chains toward the proposed binding site, using MTSET (2-(trimethylammonium) ethyl methanethiosulfonate, bromide), an MTS reagent with bulk positive side chain, significantly decreased 2-APB-idnuced current in the mutated mTRPV3 channels (Figure 8G,H). The reduction reagent dithiothreitol (DTT) rescued this inhibitory effect, indicating that the interruption of the allostery of the pore cavity has impaired the channel activation of mTRPV3 (Figure 8G,H). In contrast, MTSET treatment had no effect on the activation of WT TRPV3 (Figure 8H). Along the same line, MTSET modification caused reduced dyclonine blockade in L630C, F633C, and L642C but not WT TRPV3, and DTT restored the blockage of dyclonine in these mutants (Figure 8I), implying that dyclonine-mediated inhibition is mediated by the region predicted by BMA binding mode. Together, our results suggest that dyclonine interacts with the pore cavity of TRPV3 likely behaving as a negative allosteric modulator.\n\n## Discussion\n\nAs a multimodal sensory channel, TRPV3 is abundantly expressed in keratinocytes and implicated in inflammatory skin disorders, itch, hair morphogenesis, and pain sensation (Broad et al., 2016). Human Olmsted syndrome has been linked to the gain-of-function mutations of TRPV3 (Agarwala et al., 2015; Lai-Cheong et al., 2012; Lin et al., 2012). Synthetic and natural compounds, like isopentenyl pyrophosphate (Bang et al., 2011), 17(R)-resolvin D1 (Bang et al., 2012), forsythoside B (Zhang et al., 2019), diphenyltetrahydrofuran osthole (Higashikawa et al., 2015), and RR (Xu et al., 2002), have been proposed to inhibit TRPV3 channels. Due to either or both the lack of targeting specificity and the clinical application, their remedial potential remains to be determined. Hence, identifying and understanding clinical pharmaceutics that target TRPV3 channels will help to conceive therapeutic interventions.\n\nDyclonine is a topical antipruritic agent and has been used for clinical treatment of itching and pain for decades (Gargiulo et al., 1992; Greifenstein et al., 1956). While the therapeutic effect of dyclonine has been attributed to the inhibition of cell depolarization, the underlying mechanisms have not been fully understood. In the present study, we provide several tiers of evidence that dyclonine potently inhibits TRPV3 channel. Such inhibition was observed for TRPV3 responses to both chemical and thermal activation, suggesting that dyclonine is a condition-across inhibitor. Accordingly, dyclonine efficiently blocked the excessive activation of TRPV3 mutants and prevented cell death. Single-channel recordings revealed that dyclonine effectively suppresses the channel open probability without changing single-channel conductance. These data not only supplement a molecular mechanism for the therapeutic effect of dyclonine, but also suggest its application to curb TRPV3-related disorders. Using mouse model, we indeed observed that dyclonine ameliorates the TRPV3 hyperactivity-caused itch/scratching behaviors, indicating its therapeutic inhibition effect being maintained in vivo. As TRPV3 responds to moderate temperatures (30\u201340\u00b0C), dyclonine may thus be used to alleviate skin inflammations persisted in physiological temperatures. Also, as a clinical drug dyclonine has been widely used and thus has shown its safety to human body (Gargiulo et al., 1992; Sahdeo et al., 2014). In addition, as a potent inhibitor, dyclonine can also been a research tool to dissect the physiological and pathological characteristics of TRPV3 channel. While dyclonine effectively inhibits TRPV3 channels, our current results do not exclude its targeting of other molecular pathways. For instance, voltage-gated sodium channels have been shown to be inhibited by local anesthetics including dyclonine (Sahdeo et al., 2014; Tikhonov and Zhorov, 2017).\n\nThe current data also provide clues on the molecular mechanism underlying the inhibition of TRPV3 by dyclonine. The residues within the pore loop and S6-helix of TRPV3, as suggested by BMA binding mode, create a functional \u2018hotspot\u2019 contributing to the inhibition of dyclonine. Chemical modification experiment further confirmed the importance of this \u2018hotspot\u2019 to channel gating and dyclonine inhibition. Interestingly, the size of pocket BMA is distinct in the apo/resting and open states. Likely, binding of dyclonine into this pocket could prevent the structural rearrangements of pore loop during TRPV3 gating, implying that dyclonine behaves as a negative allosteric modulator. Although similar pockets can also be observed on other TRP channels, the amino acids that make up the pocket and the precise shape of the pocket are diverse (Figure 8\u2014figure supplement 2). This may be the reason why TRPV3 is targeted by dyclonine (Liao et al., 2013; Shimada et al., 2020; Singh et al., 2018). F666 is located below the upper filter and behaves with a bulky hydrophobic side chain, which may play a role in maintaining the shape of BMA at the open state. This may be the reason why F666A is capable of decreasing the inhibition of dyclonine. Our current study revealed critical residues located within the pore cavity of TRPV3 that regulate dyclonine inhibition, yet the possibility exists that dyclonine inhibition is mediated by indirect mechanisms involving interactions with other residues. Nevertheless, the molecular sites uncovered by the present study would be instrumental in pinpointing the dyclonine-TRPV3 interaction at the molecular level, thereby developing specific therapeutics for chronic pruritus, dermatitis, and skin inflammations.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Species (Mus musculus)</td>\n      <td>Trpv3-/- mice</td>\n      <td>Wang et al., 2021</td>\n      <td>PMID:32535744</td>\n      <td>C57BL/6J background</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK 293T</td>\n      <td>ATCC</td>\n      <td>Cat.#:CRL-3216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>T-Rex 293</td>\n      <td>Thermo Fisher</td>\n      <td>Cat.#:R71007</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>2-APB</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat.#:D9754</td>\n      <td>TRPV1-3 agonist</td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Carvacrol</td>\n      <td>MedChemExpress</td>\n      <td>Cat.#:499752</td>\n      <td>TRPV3 agonist</td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Menthol</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat.#:M278</td>\n      <td>TRPM8 agonist</td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Capsaicin</td>\n      <td>MedChemExpress</td>\n      <td>Cat.#: HY10448</td>\n      <td>TRPV1 agonist</td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>AITC</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat.#:377430</td>\n      <td>TRPA1 agonist</td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Ruthenium red</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat.#:R2751</td>\n      <td>TRP channel inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Poly-L-lysinehydrochloride</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat.#:2658</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>MTEST</td>\n      <td>MedChemExpress</td>\n      <td>Cat.#:690632554</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>DTT</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat.#:3483123</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Dyclonine</td>\n      <td>MedChemExpress</td>\n      <td>Cat.#:536436</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Patchmaster</td>\n      <td>HEKA Electronics</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>OriginPro</td>\n      <td>Originlab.com</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Clampfit 10</td>\n      <td>Molecular Devices</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SigmaPlot 10</td>\n      <td>SPSS Science</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### cDNA constructs and transfection in HEK 293T cells\n\nThe WT mouse TRPV3 (mTRPV3), human TRPV3 (hTRPV3), rat TRPV1, rat TRPV2, rat TRPM8, and mouse TRPA1 cDNAs were generously provided by Dr. Feng Qin (State University of New York at Buffalo, Buffalo, USA). The GFP-mTRPV3 WT and the mutants (mTRPV3-G573S and mTRPV3-G573C) in pcDNA4/TO vector were gifts from Dr. Michael X Zhu (The University of Texas Health Science Center at Houston, Houston, USA). The WT fTRPV3 was kindly provided by Dr. Makoto Tominaga (Department of Physiological Sciences, SOKENDAI, Okazaki, Japan). All mutations were made using the overlap-extension polymerase chain reaction method as previously described (Tian et al., 2019). The resulting mutations were then verified by DNA sequencing. HEK 293T and T-Rex 293 cells were grown in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM, Thermo Fisher Scientific, MA) containing 4.5 mg/ml glucose, 10% heat-inactivated fetal bovine serum (FBS), 50 units/ml penicillin, and 50 mg/ml streptomycin, and were incubated at 37\u00b0C in a humidified incubator gassed with 5% CO2. For T-Rex 293, blasticidin S (10 \u03bcg/ml) was also included. Cells grown into ~80% confluence were transfected with the desired DNA constructs using either the standard calcium phosphate precipitation method or lipofectamine 2000 (Invitrogen, Carlsbad, CA) following the protocol provided by the manufacturer. Transfected HEK 293T cells were reseeded on 12 mm round glass coverslips coated by poly-L-lysine. Experiments took place ~12\u201324 hr after transfection.\n\n### Cell lines\n\nHEK 293T and T-Rex 293 cell lines used in this study were respectively from the American Type Culture Collection and Thermo Fisher, authenticated by STR locus and tested negative for mycoplasma contamination.\n\n### Mouse epidermal keratinocyte culture\n\nThe animal protocol used in this study was approved by the Institutional Animal Care and Use Committee of Wuhan University. Primary mouse keratinocytes were prepared according to the method previously described (Luo et al., 2012; Pirrone et al., 2005). Briefly, newborn WT C57B/6 mice (postnatal days 1\u20133) were deeply anaesthetized and decapitated and then soaked in 10% povidone-iodine, 70% ethanol, and phosphate-buffered saline (PBS) for 5 min, respectively. The skin on the back was removed and rinsed with pre-cold sterile PBS in a 100 mm Petri dish and transferred into a 2 ml tube filled with pre-cold digestion buffer containing 4 mg/ml dispase II and incubated overnight at 4\u00b0C. After treatment with dispase II for 12\u201318 hr, the epidermis was gently peeled off from dermis and collected. Keratinocytes were dispersed by gentle scraping and flushing with KC growth medium (Invitrogen). The resulting suspension of single cells was collected by centrifuge, and cells were seeded onto coverslips pre-coated with poly-L-lysine and maintained in complete keratinocyte serum-free growth medium (Invitrogen). Cell culture medium was refreshed every two days. Patch-clamp recordings were carried out 48 hr after plating.\n\n### Electrophysiological recording\n\nConventional whole-cell and excised patch-clamp recording methods were used. For the recombinant expressing system, green fluorescent EGFP was used as a surface marker for gene expression. Recording pipettes were pulled from borosilicate glass capillaries (World Precision Instruments) and fire-polished to a resistance between 2 and 4 M\u03a9 when filled with internal solution containing (in mM) 140 CsCl, 2.0 MgCl2, 5 EGTA, and 10 HEPES, pH 7.4 (adjusted with CsOH). Bath solution contained (in mM): 140 NaCl, 5 KCl, 3 EGTA, and 10 HEPES, pH 7.4 adjusted with NaOH. For recordings in keratinocytes, the bath saline consisted of (in mM) 140 NaCl, 5 KCl, 2 MgCl2, 2 CaCl2, 10 glucoses, and 10 HEPES, pH 7.4 adjusted with NaOH, and the pipette solution contained (in mM) 140 CsCl, 5 EGTA, and 10 HEPES, pH 7.3 adjusted with CsOH. For single-channel recordings, the pipette solution and bath solution were symmetrical and contained (in mM) 140 NaCl, 5 KCl, 3 EGTA, and 10 HEPES, pH 7.4. Isolated cells were voltage clamped and held at \u201360 mV using an EPC10 amplifier with the Patchmaster software (HEKAElectronics, Lambrecht, Germany). For a subset of recordings, currents were amplified using an Axopatch 200B amplifier (Molecular Devices, Sunnyvale, CA) and recorded through a BNC-2090/MIO acquisition system (National Instruments, Austin, TX) using QStudio developed by Dr. Feng Qin at State University of New York at Buffalo. Whole-cell recordings were typically sampled at 5 kHz and filtered at 1 kHz, and single-channel recordings were sampled at 25 kHz and filtered at 10 kHz. The compensation of pipette series resistance and capacitance was compensated using the built-in circuitry of the amplifier (>80%) to reduce voltage errors. Exchange of external solution was performed using a gravity-driven local perfusion system. As determined by the conductance tests, the solution around a patch under study was fully controlled by the application of a flow rate of 100 \u03bcl/min or greater. Dyclonine hydrochloride, MTSET and carvacrol were purchased from MCE (MedChemExpress). Unless otherwise noted, all chemicals were purchased from Sigma (Millipore Sigma, St. Louis, MO). Water-insoluble reagents were dissolved in pure ethanol or DMSO to make a stock solution and diluted into the recording solution at the desired final concentrations before the experiment. The final concentrations of ethanol or DMSO did not exceed 0.3%, which had no effect to currents. In the scratching behavior experiments, carvacrol was first dissolved in 10% ethanol and then diluted in normal saline before administration. All experiments except those for heat activation were performed at room temperature (22\u201324\u2103).\n\n### Ultrafast temperature jump achievement\n\nRapid temperature jumps were generated by the laser irradiation approach as described previously (Yao et al., 2009). In brief, a single-emitter infrared laser diode (1470 nm) was used as a heat source. A multimode fiber with a core diameter of 100 \u03bcm was used to transmit the launched laser beam. The other end of the fiber exposing the fiber core was placed close to cells as the perfusion pipette is typically positioned. The laser diode was driven by a pulsed quasi-CW current powder supply (Stone Laser, Beijing, China). Pulsing of the controller was controlled from computer through the data acquisition card using QStudio software developed by Dr. Feng Qin at State University of New York at Buffalo. A blue laser line (460 nm) was coupled into the fiber to aid alignment. The beam spot on the coverslip was identified by illumination of GFP-expressing cells using the blue laser during experiment.\n\nConstant temperature steps were generated by irradiating the tip of an open pipette and using the current of the electrode as the readout for feedback control. The laser was first powered on for a brief duration to reach the target temperature and then modulated to maintain a constant pipette current. The sequence of the modulation pulses was stored and subsequently played back to apply temperature jumps to the cell of interest. Temperature was calibrated offline from the pipette current using the dependence of electrolyte conductivity.\n\n### Cell death analysis by flow cytometry\n\nT-Rex 293 cells were grown in DMEM containing 4.5 mg/ml glucose, 10% (vol/vol) FBS, 50 units/ml penicillin, 50 \u03bcg/ml streptomycin, and blasticidin S (10 \u03bcg/ml), and were incubated at 37\u00b0C in a humidified incubator gassed with 5% CO2. Transfections were performed in wells of a 24-well plate using lipofectamine 2000 (Invitrogen). The GFP-TRPV3 (WT and G573 mutants) cDNAs in pcDNA4/TO vector were individually transfected into T-Rex 293 cells and treated with 20 ng/ml doxycycline 16 hr post-transfection to induce the gene expression following the method as previously described (Xiao et al., 2008). Expression of GFP fluorescence detected by an epifluorescence microscope was used as an indicator of gene expression. After treatments with the compounds for 12 hr, cells were collected, washed twice with PBS, resuspended, and then dyed with propidium iodide (PI, Thermo Fisher Scientific) in the dark according to the manufacturer\u2019s instructions. The membrane integrity of the cells was assessed using a BD FACSCelesta flow cytometer equipped with BD Accuri C6 software (BD Biosciences, USA).\n\n### Evaluation of scratching behavior in Mice\n\nBehavioral studies were performed with 6- to 8-week-old WT or Trpv3-/- adult C57B/6 mice. To assess itch-scratching behaviors, the hair of the rostral part of the mouse\u2019s right neck was shaved using an electric hair clipper 24 hr before the start of experiments. Trpv3-/- mice have been described previously (Wang et al., 2021). Scratching behaviors were recorded on video. The number of itch-scratching bouts was counted through video playback analysis. One scratching bout was defined as an episode in which a mouse lifted its right hind limb to the injection site and scratched continuously for any time length until this limb was returned to the floor or mouth (Wilson et al., 2013). All behavioral experiments were conducted in a double-blind manner. To examine acute scratching/itch induced by carvacrol or pruritogen histamine, mice were first placed in an observation box (length, width, and height: 9 \u00d7 9 \u00d7 13 cm3) for acclimatization for about 30 min. Then, carvacrol (0.1%) in a volume of 50 \u03bcl was injected intradermally into the right side of the mouse\u2019s neck. To access the effect of dyclonine on itch scratching, normal saline (0.9% NaCl) or dyclonine (1, 10, and 50 \u03bcM) was injected intradermally 30 min before intradermal injection of carvacrol (Cui et al., 2018; Sun and Dong, 2016). Behaviors were recorded on video for 30 min following the injection of carvacrol.\n\n### Hargreaves test for behavioral experiments\n\nAll tests were conducted during the light phase of the light/dark cycle by a trained observer blind to the genotype. Mice were habituated to the testing room for 60 min prior to the behavioral tests unless otherwise stated. Hargreaves test was performed as described previously (Wang et al., 2018). All behavioral experiments were conducted in a double-blind manner. For measurement of thermal hyperalgesia, animals were placed individually, 30 min after injection, on a hot plate (Bioseb, Chaville, France) with the temperature adjusted to 55\u00b0C. The withdrawal latency of each hind paw was determined until nocifensive reaction appeared (licking foot). Right hind paws of mice were injected intraplantarly with 10 \u03bcl normal saline (0.9% NaCl). Left hind paws of mice were injected intraplantarly with 10 \u03bcl normal saline (supplemented with 10 or 50 \u03bcM dyclonine).\n\n### Molecular docking\n\nThe molecular docking approach was used to model the interaction between dyclonine and TRPV3 channel protein (PDB ID code: 6DVZ) according to previous description (Huang et al., 2014; Li et al., 2018). The 3D structure of dyclonine was generated by LigPrep (Gadakar et al., 2007). Glide (Friesner et al., 2004) and IFD (Sherman et al., 2006) were employed to dock dyclonine into the potential binding. For Glide docking, the grid for the protein was defined as an enclosing cubic box within 34 \u00c5 to include the upper pore region and the central cavity of TRPV3, and the XP docking mode was selected. During in silico docking, at most 100,000 poses passed through for the initial phase of docking, of which the top 300 poses were processed with post-docking minimization. The threshold for rejecting minimized pose was set to 0.5 kcal/mol. A maximum of 200 poses were finally written out. The docking scores and dyclonine-residue interaction distance were summarized, sorted, and then plotted by Maestro. IFD was performed to refine the interaction between dyclonine and TRPV3 (Sherman et al., 2006), L655, I674 and G638 residues were chosen from the center of the docking box, respectively. During this docking process, the protein and the dyclonine were both flexible. All structural figures were made by PyMol (http://www.pymol.org).\n\n### Statistics\n\nData were analyzed offline with Clampfit (Molecular Devices), IGOR (Wavemetrics, Lake Oswego, OR), SigmaPlot (SPSS Science, Chicago, IL), and OriginPro (OriginLab Corporation, MA). For concentration dependence analysis, the modified Hill equation was used: Y = A1 + (A2 \u2013 A1)/(1 + (IC50/[toxin])nH), in which IC50 is the half maximal effective concentration, and nH is the Hill coefficient. Unless stated otherwise, the data are expressed as mean \u00b1 standard error (SEM), from a population of cells (n), with statistical significance assessed by Student\u2019s t-test for two-group comparison or one-way analysis of variance (ANOVA) tests for multiple group comparisons. Significant difference is indicated by a p value less than 0.05 (*p<0.05, **p<0.01).\n",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "fbe820e0-9fe9-4788-bdc8-a4d92d984edb",
+      "submission_id": "df6c7b65-cdf6-446b-a3be-39e664c3d4c2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kenton J Swartz, National Institute of Neurological Disorders and Stroke, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68128.sa1](https://doi.org/10.7554/eLife.68128.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nTRPV3 is a non-selective cation channel that is important for skin physiology and hair growth, yet there are currently no specific drugs to either activate or inhibit this channel. Qiang Liu and collaborators discover that TRPV3 channels from mouse, human and frog are inhibited by the topical analgesic dyclonine regardless of whether the channel is activated by agonists, heat or voltage, with much higher potency than TRPV1, TRPV2 and TRPM8 channels. Dyclonine starkly reduces cell death that results from TRPV3 channel activation by either gain of function mutations known to cause skin pathologies as well as by direct activation of wild-type channels by agonist, and that application of dyclonine reduces scratching behavior in mice pre-treated with the TRPV3 channel agonist carvacrol. Using computational approaches together with mutagenesis, the authors provide evidence that dyclonine binds within the pore to inhibit the channel. This is a carefully done study with high-quality data that identifies a novel, reversible and relatively selective inhibitor for an important TRP channel for which few pharmacological tools exist.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Therapeutic inhibition of keratinocyte TRPV3 sensory channels by local anesthetic dyclonine\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Alexander Theodore Chesler (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe editors and reviewers enjoyed reading your manuscript and were enthusiastic about the potential of your findings. As you will see, all three reviewers have substantial concerns with your key conclusions regarding the mechanism of dyclonine inhibition of TRPV3, selectivity of the drug for TRPV3 and with the physiological roles of TRPV3. The reviewers have suggested additional experiments that could potentially address their concerns, however, doing so would require considerably more than the two months we typically allot for inviting revisions. However, given the potential significance of your study, we would be willing to consider a new manuscript that includes additional experiments that address all of the reviewer's concerns.\n\nReviewer #2:\n\nThe function of the TRPV3 non-selective cation channel is important for skin physiology and hair growth, and gain of function mutations in this channel cause human pathologies that are mirrored in animal models. There are currently no specific drugs to either activate or inhibit this channel. In this study by Qiang Liu and collaborators they identify that when activated by 2-APB, the TRPV3 channels from mouse, human and frog are inhibited by the topical analgesic dyclonine with much higher potency than TRPV1, TRPV2 and TRPM8 channels when these are activated by capsaicin, 2-APB and menthol, respectively. They also find that dyclonine inhibits mouse TRPV3 channels when activated by both voltage and heat. The authors also show that dyclonine starkly reduces cell death that results from TRPV3 channel activation by either gain of function mutations known to cause skin pathologies as well as by direct activation of wild-type channels by 2-APB, and that application of dyclonine reduces scratching behavior in mice pre-treated with the TRPV3 channel agonist carvacrol or by histamine. By performing single-channel recordings they show that dyclonine reduces the open probability of TRPV3 channels activated by 2-APB. Finally the authors identify a series of residues located in the pore cavity of the channel that when individually substituted by alanine either strongly reduce or increase the potency of channel inhibition by dyclonine, suggesting that the drug might bind in the pore to inhibit channel activity or to block cations from permeating through the open channel pore. This is a carefully done study with high-quality data that identifies a novel, reversible and relatively selective inhibitor for an important TRP channel for which few pharmacological tools exist. However, I think that some key considerations are missing regarding the mechanism of action of dyclonine on TRPV3 channels, as well as its specificity for this channel. I have the following specific concerns:\n\n1. The authors should highlight the zero-current levels in all figure panels where current traces are displayed; this is critical to assess the amount of leak that is present in the recordings.\n\n2. The authors have not addressed whether the inhibition of TRPV3 channels by dyclonine is state dependent. I think this is important for assessing the specificity of the drug on other channels as well as the quantitative effects on inhibition of the various examined TRPV3 channel mutants. The authors use a variety of 2-APB concentrations to activate TRPV3 channels across experiments, none of which are saturating, whereas near-maximal agonist concentrations are used for TRPV1 and TRPV2. In the case of the examined TRPV3 mutations, those that increase the apparent affinity for dyclonine exhibit currents that are much noisier and activate more slowly than wild-type, suggesting a negative effect of the mutation on gating, whereas mutations that reduce the apparent affinity have larger current densities, faster kinetics of activation and less noise once channel activation reaches steady-state, suggesting a positive effect on gating. If dyclonine inhibition were inversely proportional to open probability, the differences in apparent affinity observed between TRP channel subtypes or between TRPV3 mutants could thus potentially arise from differences in the open probability between channels at the conditions in which inhibition was measured for each. I think that the authors should provide data showing inhibition by dyclonine at super-saturating concentrations of 2-APB and show that it is comparable to inhibition at lower agonist concentrations.\n\n3. I think that the inhibitory effect of dyclonine on TRPV1, TRPV2 and TRPM8 channels is not low enough as to say that it is a specific effect for TRPV3 channels \u2013 the EC50 for inhibition of human TRPV3 channels is only 2-fold lower than that for TRPV2 channels. The authors also only examined a small number of TRP channels. I consider that examining the effects of dyclonine on the TRPA1 channel is particularly important, as this channel is known to also contribute to the pathophysiology of itch. I think it would be better if the authors used more conservative language regarding specificity, stating simply that the apparent affinity under their experimental conditions is larger for TRPV3 than for those other TRP channels that were tested.\n\n4. Regarding the clinical implications of the study, it would make it much stronger if the authors showed directly using electrophysiological recordings that dyclonine can inhibit the gain of function mutations that are known to cause disease (G573S and G573C).\n\n5. The in vivo results are highly non-specific, and it is impossible to determine whether the effect of dyclonine that is observed is indeed mediated by TRPV3 channels. As described in the Introduction section, dyclonine was initially looked at by the authors because of its proved effect as topical anesthetic \u2013 it is thus not surprising that it reduces scratching behavior in mice. I think these results should be removed from the manuscript, or additional experiments using TRPV3-deficient animals should be included to show that the effect on behavior requires the presence of TRPV3.\n\n6. I found it hard to rationalize the effects of the distinct TRPV3 mutations on inhibition based on the illustrations for the three proposed binding sites that are shown in Figure 8. The authors should distinguish between alternative hypothesis regarding the proximity of docked dyclonine to the various channel residues in each of the proposed binding sites, clearly highlighting those that are far from the bound drug or close to it in each case. They should also provide more information and a better rationale for their choice of structural model \u2013 why was that structure chosen? How were the distinct binding sites ranked? Importantly, the inner cavity of the pore is highly conserved in TRPV1, TRPV2 and TRPV3 channels, suggesting that pore blockers should affect these three channels similarly. Are the identified residues in the pore conserved in TRPV1 and TRPV2, and if they are, how do the authors explain the differences in inhibition observed between these three channels? The authors should provide a discussion that considers whether the effect of dyclonine is on cation conduction (pore block) or on gating (antagonism).\n\nReviewer #3:\n\nTrpv3 is a non-selective cation channel that can be gated by temperature and environmental irritants. Inherited mutations in humans are linked to rare diseases that affect skin and gene perturbations in mice have shown the importance of this ion channel in maintaining the skin barrier and hair production. There is growing evidence that Trpv3 has a sensory role in temperature detection, pain and itch. For example, several natural products have been shown to activate the channel and produce the sensation of warming or the desire to scratch. To date, there are few antagonists, and these are not particularly selective for this receptor over other Trp channels. Thus, the discovery of selective Trpv3 antagonists would have clear clinical and experimental utilities.\n\nThe current study investigates how one specific compound, dyclonine, impacts Trpv3 gating. Dyclonine is a general anesthetic, mostly used orally for mouth pain and sore throats. Notably, the mechanism of action of this drug is unknown. Here, the authors have used electrical recordings, modeling and mutagenesis to provide evidence that dyclonine functions as a Trpv3 antagonist. In general, the data are straight forward and pretty convincing. Less clear is how potent and selective dyclonine really is and whether Trpv3 is the relevant target in vivo. Indeed, the in vivo experiments clearly indicate that this drug must have other targets. Specifically, the mechanism of histamine-evoked scratching is well understood and does not involved Trpv3. How then does dyclonine block this type of itch? To better understand what's going on, recordings from DRG neurons should be done in the presence and absence of dyclonine. Quantitation of neuronal excitability, biophysical properties and sensory responses to a range of agonists would be particularly informative. Second, behavioral tests need to be expanded to other modalities beyond itch (for which Trpv3 has a minor role). Warming and heat pain should be tested at the minimum.\n\nReviewer #4:\n\nI limit my comments to the binding site analysis described in this article. There are several issues with this aspect of this manuscript.\n\n1. The authors carried out docking to a cryo-EM structure of TRPV3 at 4.3\u00c5 resolution using Induced Fit Docking with the protein conformation fixed and the ligand flexible. At such a resolution the side chains in the pocket may well be very poorly defined and docking is unlikely to be reliable. It is not clear that the protein structure is suitable for docking, especially since the protein side chain orientations were fixed.\n\n2. The center of the docking box was defined using L655, I674 and G638. The authors do not mention the box size that they use, but default box size in Induced Fit Docking, I believe, is 10x10x10 \u00c5, which leaves very few alternatives for a ligand of this size. Therefore the residues reported to be found at the center of the binding pocket are, in essence, predefined (page 15).\n\n3. The method used to select the three docking poses from the docking results is unclear. Were there only three results above a specific energy threshold? Did the authors do clustering of the results? More details are required.\n\n4. The figures do not provide sufficient clarity to understand how the ligand is docking in the three poses mentioned. The overview (Figure 8A) is too general, while the close-up views (Figure 8 B) need labelling of the transmembrane helices and subunits.\n\n5. While the mutagenesis provides interesting data about the residues that might be involved with the dyclonine effect, it could reflect indirect effects.\n\nTaken together the presented computational and mutagenesis data should not be used as evidence that the binding site has been identified.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Therapeutic inhibition of keratinocyte TRPV3 sensory channel by local anesthetic dyclonine\" for further consideration by eLife. Your revised article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Kenton Swartz as the Senior and Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nThe reviewers believe the authors have done an excellent job of addressing most of the concerns raised in the last review of their manuscript, and by performing multiple complicated additional experiments they have provided solid support for most of their conclusions. The reviewers still have a few concerns that need to be addressed by careful revision of the manuscript.\n\n1. We think the authors should tone down their statements throughout the manuscript about dyclonine functioning as a selective inhibitor of mouse and human TRPV3 channels, for the following reasons: First, as mentioned in the last review, the apparent affinity for dyclonine in TRPV2 (31 uM) is not that much lower than that of the human orthologue of TRPV3 when activated by 2-APB (16 uM) or of mouse TRPV3 activated by heat (14 uM), indicating that dyclonine might not be selective in humans. Second, the number of TRP channels tested is small, and no other channels were tested that could also contribute to the behavioral responses to carvacrol downstream of TRPV3 activation and that could also be affected by dyclonine. Third, TRPV3 is reportedly expressed in human DRG neurons (see Xu et al. Nature 2002 and Smith et al. Nature 2002) but not in mice DRGs (Peier et al. Science 2002), calling into question the relevance of the DRG data in Figure S1A-D to ascertain the specificity of dyclonine action on TRPV3. We think this should be discussed. Fourth, the differences in paw withdrawal latency between WT and TRPV3 KO mice with and without dyclonine (Figure S1E) are too small to be convincing, and there is significant overlap between the data points at all conditions. The authors should tone down their conclusions from these data and state that at best a minimal trend can be observed that suggests an effect of TRPV3 in the latency responses. Fifth, it would have been ideal to show that dyclonine has no effect on the 20% remaining response to carvacrol in TRPV3 KO mice in the scratching experiments in Figure 6. Otherwise with the data provided it can be concluded that TRPV3 is required for the majority of the response to carvacrol, but the data does not prove that TRPV3 is the sole target for the drug. It would also be ideal to for the authors to show that dyclonine also inhibits TRPV3 channel activation by carvacrol. Finally, we don't understand how dyclonine can be a general anesthetic (in people) if it is functioning solely through Trpv3. This point should be discussed and the authors should acknowledge that the drug may have other targets.\n\n2. The sensitization experiments in Figure 1G-I are not of adequate quality to conclude that dyclonine slows sensitization of the channel; the peak current magnitudes in the last stimulation with 2-APB in Figures 1G and 1H are noticeably larger than the second-to last peak current magnitudes. This suggests that sensitization has not yet reached equilibrium in either case, and yet because experiments without dyclonine were shorter than experiments with dyclonine, it is difficult to determine whether the two are indeed different. We think the authors should show the same data normalized to the initial stimulation with 2-APB instead of normalizing to the last response. This would provide a much clearer way of comparing the two time-courses given that equilibrium has not been reached. We realize that this point does not alter the main conclusions in the paper, but data should be analyzed and discussed in the most accurate way possible regardless.\n\n3. In relation to the absence of voltage-dependence of inhibition by dyclonine, it is hard to reconcile the data in Figure 3C with the current-voltage relations shown in the upper panel \u2013 at negative membrane potentials a concentration of 30 \u03bcm dyclonine certainly seems to inhibit as much current as ruthenium red (RR), which we assume provides the baseline for maximal inhibition and would thus represent 100% inhibition instead of 50% as indicated in the lower panel. The authors need to include data for the baseline in the absence of agonists to accurately assess the level of inhibition. In addition, the voltage dependence of RR should be predictably larger than that of dyclonine because it is a hexavalent cation. We think it is necessary for the authors to clarify these discrepancies in the data in order to strongly conclude that there is no voltage dependence to dyclonine action.\n\n4. In relation to the data in Figure 5E, the fluorescence intensity in GFP expression is not an accurate way to estimate protein expression in general, and even if GFP were covalently attached to the channel, it would still be difficult to estimate channel expression from the intensity of GFP because TRP channels tend to accumulate in intracellular compartments when over expressed in heterologous systems. The authors should remove all statements regarding protein expression levels.\n\n5. There is indeed a clear decrease in affinity for dyclonine in TRPV1 and TRPV2 channels compared to mouse TRPV3 channels activated by 2-APB. We think providing additional discussion about the sequence and structural differences between the three channels near the proposed binding site for dyclonine would be interesting for readers and might provide additional interesting insight into the potential underlying mechanism of inhibition.\n\n6. We think the authors have done a nice job of providing more information for the docking analysis and we think this provides valuable information for where dyclonine may bind. Having said that, we also have serious concerns regarding the new metadynamics calculations, and to avoid delaying publication further, would recommend removing them, as the docking data is sufficient basis for the mutagenesis that tests the site.\n\nFirst, the methods for the metadynamics include several references to previously-published simulations on TRPV3 and P2X3. It's not clear which parts are taken from which paper. For example, was the well-tempered variant of metadynamics used here? Second, and most importantly, the choice and definitions of the collective variables are unclear. Specifically, why do these definitions represent the possible binding modes of the drug and how can we be sure that they are not biased to what was observed in the docking? Where is E631 (not shown in any figures, nor described) and why was its distance to the N in the ring of dyclonine used for CV1? Similarly, what are the \"colored carbon atoms of dyclonine\" used to define the dihedral angle in CV2? (Perhaps the authors mean the oxygen and nitrogen atoms, but I count only three atoms of this type, while a dihedral angle requires four atoms. It doesn't help that the (presumably red) oxygen atoms are hard to differentiate from the orange of the carbon atoms in Figure 8A and B). Third, the figure of the results (Figure 8B) indicates two configurations with energy minima at a distance of 9 \u00c5 (BMA1 and BMA2). However, it seems to us that those minima at +3 and -3 radians are actually related, given the continuity of angle space. Also, the axis labels are almost impossible to read on the energy landscape plot. Fourth, we are confused by the description of site BM(A): page 17, line 15, says it is formed between the pore loop and S5, whereas Figure 8A/B shows it between the pore helix and S6. Is this a typo?\n",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c5792ed5-7d8c-4776-9178-75673d9eeb08",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C1",
+      "claim": "TRPV3 is expressed in epidermal keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The multimodal sensory channel transient receptor potential vanilloid-3 (TRPV3) is expressed in epidermal keratinocytes and implicated in chronic pruritus, allergy, and inflammation-related skin disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by citations in the introduction (Chung et al., 2004b; Peier et al., 2002; Xu et al., 2002).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "5ccc2078-b9cd-44d3-bceb-399de68863b0",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C2",
+      "claim": "TRPV3 is implicated in chronic pruritus, allergy, and inflammation-related skin disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "The multimodal sensory channel transient receptor potential vanilloid-3 (TRPV3) is expressed in epidermal keratinocytes and implicated in chronic pruritus, allergy, and inflammation-related skin disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by references throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "18b99f16-105e-45d2-91a4-cf267a1888d1",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C3",
+      "claim": "Gain-of-function mutations of TRPV3 cause hair growth disorders in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Gain-of-function mutations of TRPV3 cause hair growth disorders in mice and Olmsted syndrome in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction (Asakawa et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "5ceb2afc-4eea-4a8a-9d1a-156ebe979d21",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C4",
+      "claim": "Gain-of-function mutations of TRPV3 cause Olmsted syndrome in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Gain-of-function mutations of TRPV3 cause hair growth disorders in mice and Olmsted syndrome in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations (Agarwala et al., 2015; Lin et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "6186feb2-960b-46f1-a98b-8d5351f735c1",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C5",
+      "claim": "Dyclonine inhibits mouse TRPV3 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We here report that mouse and human TRPV3 channel is targeted by the clinical medication dyclonine that exerts a potent inhibitory effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through whole-cell recordings showing dose-dependent inhibition (Figure 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "a295a5ec-fce6-4c49-ba63-aaae998c915d",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C6",
+      "claim": "Dyclonine inhibits human TRPV3 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We here report that mouse and human TRPV3 channel is targeted by the clinical medication dyclonine that exerts a potent inhibitory effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through whole-cell recordings (Figure 2D-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "73f0a343-93e1-4e42-b733-de172c60b99c",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C7",
+      "claim": "Dyclonine rescued cell death caused by gain-of-function TRPV3 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, dyclonine rescued cell death caused by gain-of-function TRPV3 mutations and suppressed pruritus symptoms in vivo in mouse model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through flow cytometry analysis and microscopy (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "418defa0-695d-4c20-b9bb-1a52bfd17244",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C8",
+      "claim": "Dyclonine suppressed pruritus symptoms in vivo in mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, dyclonine rescued cell death caused by gain-of-function TRPV3 mutations and suppressed pruritus symptoms in vivo in mouse model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through scratching behavior experiments (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "c0328c36-dfb7-4ca3-a1a7-a77a66a62078",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C9",
+      "claim": "Dyclonine inhibited TRPV3 open probability at the single-channel level.",
+      "claim_type": "EXPLICIT",
+      "source": "At the single-channel level, dyclonine inhibited TRPV3 open probability but not the unitary conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through single-channel recordings (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "ba84342a-f19a-4db1-b867-ee582db89b1b",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C10",
+      "claim": "Dyclonine does not affect TRPV3 unitary conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "At the single-channel level, dyclonine inhibited TRPV3 open probability but not the unitary conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through single-channel recordings showing no change in conductance (Figure 7C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "e7c3dcc2-9382-47b1-abb3-5d0854795b57",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C11",
+      "claim": "Key residues in TRPV3 pore region toggle the inhibitory efficiency of dyclonine.",
+      "claim_type": "EXPLICIT",
+      "source": "By molecular simulations and mutagenesis, we further uncovered key residues in TRPV3 pore region that could toggle the inhibitory efficiency of dyclonine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mutagenesis experiments (Figure 8).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "e7f09681-ff50-40aa-ab3d-6bd35c466f8b",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C12",
+      "claim": "TRPV3 channels belong to a family of calcium-permeable and nonselective cation channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient receptor potential (TRP) channels belong to a family of calcium-permeable and nonselective cation channels, essential for body sensory processing and local inflammatory development (Clapham, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "85392256-4fd5-4512-99ff-1ef424cf8861",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C13",
+      "claim": "TRPV3 is abundantly expressed in skin keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "As a polymodal cellular sensor, transient receptor potential vanilloid-3 (TRPV3) channel is abundantly expressed in skin keratinocytes (Chung et al., 2004b; Peier et al., 2002; Xu et al., 2002) and in cells surrounding the hair follicles (Cheng et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "b4312736-11ba-447a-9cb7-81903cf8aff9",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C14",
+      "claim": "TRPV3 is expressed in cells surrounding the hair follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "As a polymodal cellular sensor, transient receptor potential vanilloid-3 (TRPV3) channel is abundantly expressed in skin keratinocytes (Chung et al., 2004b; Peier et al., 2002; Xu et al., 2002) and in cells surrounding the hair follicles (Cheng et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "d1eeac45-9c72-446b-97df-e2e92c3741df",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C15",
+      "claim": "TRPV3 is sensitive to innocuous temperatures above 30\u201333\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPV3 is sensitive to innocuous temperatures above 30\u201333\u00b0C and exhibits an increased response at noxious temperature (Chung et al., 2005; Xu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "8aeb0509-5f01-49de-86fe-63b53415a33c",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C16",
+      "claim": "Camphor activates TRPV3.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural plant products such as camphor (Moqrich et al., 2005), carvacrol, eugenol, thymol (Xu et al., 2006), and the pharmacological compound 2-aminoethoxydiphenyl borate (2-APB) (Chung et al., 2004a; Colton and Zhu, 2007) also activate TRPV3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "02379853-d5ae-4077-b420-e87fb14fea98",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C17",
+      "claim": "2-APB activates TRPV3.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural plant products such as camphor (Moqrich et al., 2005), carvacrol, eugenol, thymol (Xu et al., 2006), and the pharmacological compound 2-aminoethoxydiphenyl borate (2-APB) (Chung et al., 2004a; Colton and Zhu, 2007) also activate TRPV3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support and used throughout the experiments.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "8be9ae3b-afc9-4c4c-9c35-f902b7ddf691",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C18",
+      "claim": "TRPV3 is directly activated by acidic pH from cytoplasmic side.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, TRPV3 is directly activated by acidic pH from cytoplasmic side (Gao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "978ddde0-ee20-4023-8322-8f800606a1f2",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C19",
+      "claim": "The Gly573Ser substitution in TRPV3 renders the channel spontaneously active.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, the Gly573Ser substitution in TRPV3 renders the channel spontaneously active and caused a hairless phenotype in DS-Nh mice and WBN/Kob-Ht rats (Asakawa et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "bb8b4b96-d446-4858-907b-dab8a91be107",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C20",
+      "claim": "The Gly573Ser substitution in TRPV3 caused a hairless phenotype in DS-Nh mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, the Gly573Ser substitution in TRPV3 renders the channel spontaneously active and caused a hairless phenotype in DS-Nh mice and WBN/Kob-Ht rats (Asakawa et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "5e51ccdf-ff4e-4223-bf7f-914b65f78f23",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C21",
+      "claim": "DS-Nh mice develop severe scratching behavior and pruritic dermatitis.",
+      "claim_type": "EXPLICIT",
+      "source": "DS-Nh mice also develop severe scratching behavior and pruritic dermatitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "c479c580-6c4e-441d-8b81-79e34bf8e80c",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C22",
+      "claim": "TRPV3-deficient mice give rise to phenotypes of curly whiskers and wavy hair coat.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, TRPV3-deficient mice give rise to phenotypes of curly whiskers and wavy hair coat (Cheng et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "c500ea36-cfb2-4ea4-a43c-1117ce47126b",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C23",
+      "claim": "Dyclonine is a clinical anesthetic characterized by rapid onset of effect, lack of systemic toxicity, and low index of sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "Dyclonine is a clinical anesthetic characterized by rapid onset of effect, lack of systemic toxicity, and low index of sensitization (Florestano and Bahler, 1956).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "2e4d8ba9-4b78-4b95-b1a4-740a2f8e1712",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C24",
+      "claim": "Topical application of dyclonine rapidly relieves itching and pain in patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Its topical application (0.5% or 1% dyclonine hydrochloride contained in the topical solution, i.e., ~30.7 mM at a dose of 1%, according to the United States Pharmacopeia) rapidly relieves itching and pain in patients by ameliorating inflamed, excoriated, and broken lesions on mucous membranes and skin (Morginson et al., 1956).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "d63c2897-30bd-4916-bf37-afd66811210e",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C25",
+      "claim": "Dyclonine is used to anesthetize mucous membranes prior to endoscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, dyclonine is used to anesthetize mucous membranes prior to endoscopy (Formaker et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "be9cfced-3c6e-48f3-a625-a694aafea898",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C26",
+      "claim": "5 \u03bcM dyclonine inhibited TRPV3 currents to 30% \u00b1 2% of control level.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of 5 and 10 \u00b5M dyclonine significantly inhibited TRPV3 currents response to 30% \u00b1 2% and 15% \u00b1 3% of control level, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through whole-cell recordings (Figure 1A,B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "4aeb9b8a-222b-4480-ab7c-5b55d6e92490",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C27",
+      "claim": "10 \u03bcM dyclonine inhibited TRPV3 currents to 15% \u00b1 3% of control level.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of 5 and 10 \u00b5M dyclonine significantly inhibited TRPV3 currents response to 30% \u00b1 2% and 15% \u00b1 3% of control level, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through whole-cell recordings (Figure 1A,B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "ebbc731d-64b0-48ea-b4fe-836894185ab1",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C28",
+      "claim": "The blocking effect of dyclonine on TRPV3 is reversible.",
+      "claim_type": "EXPLICIT",
+      "source": "After washing out of dyclonine, 2-APB evoked a similar response to the control level, indicating that the blocking effect of dyclonine is reversible (Figure 1A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through whole-cell recordings showing recovery after washout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "48fe7d9e-f461-4fad-9033-8e66dd7acb88",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C29",
+      "claim": "Dyclonine inhibited TRPV3 currents in a concentration-dependent manner with an IC50 of 3.2 \u00b1 0.24 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The dose-response curve indicates that dyclonine inhibited TRPV3 currents in a concentration-dependent manner with an IC50 of 3.2 \u00b1 0.24 \u03bcM (n = 6, Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through dose-response experiments (Figure 1C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "10d089dd-e7b0-48c0-8263-352f9b6f3e0f",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C30",
+      "claim": "TRPV3 channels exhibit sensitizing properties upon repeated stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because TRPV3 channels exhibit sensitizing properties upon repeated stimulation (Chung et al., 2004a), we examined the effect of dyclonine after the response had stabilized following repetitive application of 2-APB (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support and demonstrated in experiments.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "f0da51db-60f2-4943-bbcd-6bbd3b9f1873",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C31",
+      "claim": "The presence of dyclonine significantly slowed down the TRPV3 sensitization process.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of dyclonine significantly slowed down this process, requiring ~16 repetitions to reach the current level of full sensitization (Figure 1H,I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through repeated stimulation experiments (Figure 1G-I).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "59c78b3d-1260-489b-957c-3cdde2ea389e",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C32",
+      "claim": "Dyclonine effectively suppresses the activity of endogenous TRPV3 channels in mouse keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, dyclonine effectively suppresses the activity of endogenous TRPV3 channels in mouse keratinocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experiments in primary mouse keratinocytes (Figure 1J-L).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "fde99bf5-9801-4454-9b59-9081292d7739",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C33",
+      "claim": "The IC50 of dyclonine for inhibiting TRPV3 in keratinocytes was 5.2 \u00b1 0.71 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "From the dose-response curve (Figure 1L), the IC50 of dyclonine was assessed to be 5.2 \u00b1 0.71 \u03bcM, with a Hill coefficient of nH = 2.4 \u00b1 0.75 (n = 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through dose-response experiments in keratinocytes (Figure 1L).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "d5a6c73a-9223-45f1-bb3d-c7e079c9c40e",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C34",
+      "claim": "10 \u03bcM dyclonine exhibited little inhibition on TRPV1, TRPV2, TRPM8, and TRPA1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 10 \u03bcM dyclonine exhibited little inhibition on TRPV1, TRPV2, TRPM8, and TRPA1, but potently inhibited TRPV3 channel (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through comparative experiments (Figure 2A,B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "bb1919b4-3446-42fa-b7cb-ee725c5486fa",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C35",
+      "claim": "10 \u03bcM dyclonine caused 87% \u00b1 1% inhibition of TRPV3 current.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding reduction in current amplitude was 2% \u00b1 1% for TRPV1, 6% \u00b1 1% for TRPV2, 9% \u00b1 2% for TRPM8, 5% \u00b1 1% for TRPA1, compared with 87% \u00b1 1% inhibition of TRPV3 current (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through comparative experiments (Figure 2B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "9d6274be-5f93-457b-922f-98a404991e99",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C36",
+      "claim": "Dyclonine represents an effective inhibitor of TRPV3 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding IC50 values of dyclonine for inhibiting TRPV1, TRPV2, TRPM8, and TRPA1 channels (336.3 \u00b1 12.0 \u03bcM, 36.5 \u00b1 3.7 \u03bcM, 72.4 \u00b1 10.9 \u03bcM, and 152.35 \u00b1 16.3 \u03bcM, respectively) were one or two orders of magnitude higher than that for TRPV3 inhibition (3.2 \u00b1 0.24 \u03bcM), indicating that dyclonine represents an effective inhibitor of TRPV3 channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through comparative IC50 values (Figure 2C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "011e8a7a-4de3-4e90-a599-b891f7a000a1",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C37",
+      "claim": "The inhibition of TRPV3 by dyclonine is conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the inhibition of TRPV3 by dyclonine is conserved across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experiments with mouse, human, and frog TRPV3 (Figure 2D-I).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "c70aed36-0f7e-44f0-8aa8-ba764c61bff8",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C38",
+      "claim": "The IC50 of dyclonine for human TRPV3 was 16.2 \u00b1 0.72 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Dose-response curves for dyclonine inhibition yielded an IC50 value of 16.2 \u00b1 0.72 \u03bcM for hTRPV3 and 12.3 \u00b1 1.6 \u03bcM for fTRPV3, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through dose-response experiments (Figure 2F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "b6e62bae-6c91-4d81-8cf5-986ffe41c0c4",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C39",
+      "claim": "The IC50 of dyclonine for frog TRPV3 was 12.3 \u00b1 1.6 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Dose-response curves for dyclonine inhibition yielded an IC50 value of 16.2 \u00b1 0.72 \u03bcM for hTRPV3 and 12.3 \u00b1 1.6 \u03bcM for fTRPV3, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through dose-response experiments (Figure 2I).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "6a72584c-c656-4427-a171-af2bc2621d29",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C40",
+      "claim": "Dyclonine inhibits TRPV3 in a voltage-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant difference inhibition at hyperpolarized voltages versus depolarized voltages, showing that the inhibition occurred independently of the membrane potential (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through voltage-step experiments (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "c5ddc2b7-8ab9-4515-8f03-1a88806b0296",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C41",
+      "claim": "Ruthenium red only inhibited TRPV3 channel currents at negative potentials while enhanced TRPV3 currents at positive potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that dyclonine had an inhibitory effect on TRPV3 currents at both positive and negative potentials, but RR only inhibited TRPV3 channel currents at negative potentials while enhanced TRPV3 currents at positive potentials (blue trace).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through voltage-step experiments (Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "b670b400-7e8d-47bc-b256-e1350226b9fe",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C42",
+      "claim": "TRPV3 is a thermal-sensitive ion channel with an activation threshold around 30\u201333\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPV3 is a thermal-sensitive ion channel and has an activation threshold around 30\u201333\u00b0C (Xu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "91ae863e-da3b-4ba2-a425-3728b85b0868",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C43",
+      "claim": "Dyclonine dose-dependently suppresses heat-evoked TRPV3 currents.",
+      "claim_type": "EXPLICIT",
+      "source": "These results thus indicate that dyclonine dose-dependently suppresses heat-evoked TRPV3 currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through temperature-jump experiments (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "b573b795-4fc9-4671-b070-70d310b754f8",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C44",
+      "claim": "The IC50 of dyclonine on heat-activated TRPV3 inhibition was 14.02 \u00b1 2.5 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The IC50 of dyclonine on TRPV3 inhibition was assessed to be 14.02 \u00b1 2.5 \u03bcM with a Hill coefficient of nH = 1.9 \u00b1 0.54, according to the dose-response curve fitting (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through dose-response experiments with heat activation (Figure 4E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "893c0726-6a49-4f70-9ade-5c756ae450e4",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C45",
+      "claim": "Gain-of-function mutations G573S and G573C of TRPV3 are constitutively active.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been reported that gain-of-function mutations, G573S and G573C, of TRPV3 are constitutively active and their expression causes cell death (Xiao et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "5b980561-8ede-46ac-8a2f-04c215e22ada",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C46",
+      "claim": "Expression of G573S and G573C TRPV3 mutants causes cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been reported that gain-of-function mutations, G573S and G573C, of TRPV3 are constitutively active and their expression causes cell death (Xiao et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support and demonstrated in experiments (Figure 5).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "1affa07b-2500-49bd-aa51-279fe921b8c7",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C47",
+      "claim": "10 \u03bcM dyclonine reduced spontaneous activities from G573S by 74% \u00b1 3%.",
+      "claim_type": "EXPLICIT",
+      "source": "By subtracting leak currents, we found that spontaneous activities from G573S and G573C were reduced by 74% \u00b1 3% (n = 6) and 71% \u00b1 2% (n = 6) by 10 \u03bcM dyclonine, respectively (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through whole-cell recordings (Figure 5A-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "ff8cbb6b-0b2e-4686-a45b-d125536e2eed",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C48",
+      "claim": "10 \u03bcM dyclonine reduced spontaneous activities from G573C by 71% \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "By subtracting leak currents, we found that spontaneous activities from G573S and G573C were reduced by 74% \u00b1 3% (n = 6) and 71% \u00b1 2% (n = 6) by 10 \u03bcM dyclonine, respectively (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through whole-cell recordings (Figure 5A-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "504407f6-fa31-4e17-98cb-64b022a56b6c",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C49",
+      "claim": "Dyclonine largely prevented cell death caused by G573C and G573S TRPV3 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of dyclonine largely prevented the cell death while not causing change in the expression of TRPV3 channels (Figure 5E), indicating that dyclonine decreased the cytotoxicity caused by the gain-of-function mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through microscopy and flow cytometry (Figure 5E-G).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "5b24255b-e811-4c1b-bdc1-c5e1cbfa7823",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C50",
+      "claim": "Dyclonine rescues cell death by inhibiting the excessive activity of TRPV3 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that dyclonine rescues cell death by inhibiting the excessive activity of TRPV3 channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through cell death assays (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "a1bef5b2-aa3c-48d4-86f3-858d3fa9c242",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C51",
+      "claim": "Intradermal injection of carvacrol in WT TRPV3 mice caused significant increases in scratching bouts.",
+      "claim_type": "EXPLICIT",
+      "source": "Intradermal injection of carvacrol (0.1%, 50 \u03bcl) in WT TRPV3 mice caused significant increases in the accumulated scratching bouts (137.2 \u00b1 33.9) compared to the control group receiving normal saline (0.9% NaCl, 3.8 \u00b1 1, n = 6, p<0.001; Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through behavioral experiments (Figure 6A,B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "a22c1179-178e-424f-b68b-9f8b1adc5f5f",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C52",
+      "claim": "Intradermal injection of carvacrol did not elicit a remarkable change in scratching bouts in TRPV3-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, intradermal injection of carvacrol (0.1%, 50 \u03bcl) did not elicit a remarkable change in the number of scratching bouts in TRPV3-/- mice (Figure 6A,B), supporting that carvacrol caused itching-scratching behavior via TRPV3 activation (Cui et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through behavioral experiments in knockout mice (Figure 6A,B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "ae2a12e8-5054-445a-87c9-36bef967f00c",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C53",
+      "claim": "Dyclonine ameliorates TRPV3 hyperactivity-caused scratching in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, dyclonine ameliorates TRPV3 hyperactivity-caused scratching in a concentration-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through behavioral experiments with different dyclonine concentrations (Figure 6C,D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "000ff26f-5c5d-4e79-9b2b-fa1ecf18610a",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C54",
+      "claim": "Dyclonine inhibited carvacrol-activated TRPV3 currents in a concentration-dependent manner with IC50 = 3.5 \u00b1 0.34 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to that observed with the inhibition of 2-APB-evoked TRPV3 currents (Figure 1A\u2013C), dyclonine also inhibited carvacrol-activated TRPV3 currents in a concentration-dependent manner with IC50 = 3.5 \u00b1 0.34 \u03bcM following sensitization by repeated application of 300 \u03bcM 2-APB (n = 8, Figure 6E,F), implying that the itching caused by carvacrol is mainly due to the activation of TRPV3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through whole-cell recordings (Figure 6E,F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "20ad16fb-278e-4455-9d35-5dbe8583b17b",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C55",
+      "claim": "Dyclonine showed little effect on electrophysiological responses in mouse DRG and TG neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, dyclonine (10 \u03bcM) showed little effect on electrophysiological responses in mouse dorsal root ganglia (DRG) and trigeminal ganglia (TG) neurons (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through current-clamp recordings (Figure 6\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "3becae26-8a47-4ab1-9e84-c20cd557974a",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C56",
+      "claim": "The in vivo effect of dyclonine arises from the targeting of keratinocyte TRPV3 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is in line with the absence of TRPV3 in mouse DRGs (Peier et al., 2002) and suggests that the invio effect of dyclonine arises from the targeting of keratinocyte TRPV3 channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of effect on DRG/TG neurons and the known expression pattern of TRPV3.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "3a5b51f5-5cc7-4b2e-9e3a-e122cb13b0e6",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C57",
+      "claim": "Dyclonine decreased the single-channel open probability from 0.8 \u00b1 0.02 to 0.08 \u00b1 0.01 at \u201360 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the single-channel open probability was largely decreased by dyclonine from 0.8 \u00b1 0.02 to 0.08 \u00b1 0.01 at \u201360 mV and from 0.82 \u00b1 0.02 to 0.12 \u00b1 0.01 at +60 mV (n = 6), respectively (Figure 7B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through single-channel recordings (Figure 7A,B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "9c910a29-95f3-42df-b9c5-a6a4b2ef32fa",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C58",
+      "claim": "Dyclonine decreased the single-channel open probability from 0.82 \u00b1 0.02 to 0.12 \u00b1 0.01 at +60 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the single-channel open probability was largely decreased by dyclonine from 0.8 \u00b1 0.02 to 0.08 \u00b1 0.01 at \u201360 mV and from 0.82 \u00b1 0.02 to 0.12 \u00b1 0.01 at +60 mV (n = 6), respectively (Figure 7B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through single-channel recordings (Figure 7A,B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "e4328c6a-dc41-477d-875c-b579313142c4",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C59",
+      "claim": "Dyclonine had no effect on single TRPV3 channel conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analysis, however, revealed that dyclonine had no effect on single TRPV3 channel conductance (163.6 \u00b1 6.4 pS vs. 179.2 \u00b1 5.5 pS for before and after dyclonine treatment; Figure 7C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through single-channel I-V analysis (Figure 7C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "70a940e9-16f6-410b-95b0-d32e8c500501",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C60",
+      "claim": "Dyclonine is not a competitive antagonist of TRPV3.",
+      "claim_type": "EXPLICIT",
+      "source": "Dyclonine inhibited TRPV3 currents evoked by both 2-APB (Figure 1) and heat (Figure 4), implying that dyclonine is not a competitive antagonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that dyclonine inhibits TRPV3 activated by different stimuli.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "29599580-d1ca-49ff-80f5-d1d9fc02c6c1",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C61",
+      "claim": "Dyclonine is not simply an open channel blocker.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the voltage independence of dyclonine inhibition and the fact that dyclonine is a positive charged alkaloid suggest that dyclonine is not simply an open channel blocker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the voltage-independence data and chemical properties of dyclonine.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "e32a6471-6ba7-4b36-8b3c-d91c5b71e830",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C62",
+      "claim": "Mutations L630W, N643A, I644W, and L655A greatly reduced the inhibitory effect of dyclonine.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the mutants, mutations L630W, N643A, I644W, and L655A greatly reduced the inhibitory effect of dyclonine, whereas the mutants L642A and I659A showed higher sensitivity to dyclonine than WT channel (Figure 8C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mutagenesis experiments (Figure 8C-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "10c6292e-01d9-4cef-8913-611c9c7efc9c",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C63",
+      "claim": "Mutants L642A and I659A showed higher sensitivity to dyclonine than WT channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the mutants, mutations L630W, N643A, I644W, and L655A greatly reduced the inhibitory effect of dyclonine, whereas the mutants L642A and I659A showed higher sensitivity to dyclonine than WT channel (Figure 8C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through mutagenesis experiments (Figure 8C-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "0a628eb8-521f-4542-aec9-4c2ba2281a01",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C64",
+      "claim": "The IC50 of dyclonine for L655A mutant was 286.7 \u00b1 10.4 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The dose-response curves were fitted with a Hill equation, and the corresponding IC50 values for each TRPV3 mutant were as follows: IC50 = 286.7 \u00b1 10.4 \u03bcM for L655A; IC50 = 30.8 \u00b1 2.2 \u03bcM for L630W; IC50 = 37.7 \u00b1 5.1 \u03bcM for N643A; IC50 = 26.1 \u00b1 2.8 \u03bcM for I644W; IC50 = 0.25 \u00b1 0.02 \u03bcM for L642A; and IC50 = 0.56 \u00b1 0.06 \u03bcM for I659A compared to IC50 = 3.2 \u00b1 0.24 \u03bcM for WT TRPV3 (Figure 8D,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through dose-response experiments (Figure 8D,E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "a44e2929-aeee-4e76-98ba-bf45b2c871e0",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C65",
+      "claim": "The IC50 of dyclonine for L642A mutant was 0.25 \u00b1 0.02 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The dose-response curves were fitted with a Hill equation, and the corresponding IC50 values for each TRPV3 mutant were as follows: IC50 = 286.7 \u00b1 10.4 \u03bcM for L655A; IC50 = 30.8 \u00b1 2.2 \u03bcM for L630W; IC50 = 37.7 \u00b1 5.1 \u03bcM for N643A; IC50 = 26.1 \u00b1 2.8 \u03bcM for I644W; IC50 = 0.25 \u00b1 0.02 \u03bcM for L642A; and IC50 = 0.56 \u00b1 0.06 \u03bcM for I659A compared to IC50 = 3.2 \u00b1 0.24 \u03bcM for WT TRPV3 (Figure 8D,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through dose-response experiments (Figure 8D,E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "d9f10cfd-294e-4920-90f3-f5d6479f68d7",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C66",
+      "claim": "The IC50 of dyclonine for I659A mutant was 0.56 \u00b1 0.06 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The dose-response curves were fitted with a Hill equation, and the corresponding IC50 values for each TRPV3 mutant were as follows: IC50 = 286.7 \u00b1 10.4 \u03bcM for L655A; IC50 = 30.8 \u00b1 2.2 \u03bcM for L630W; IC50 = 37.7 \u00b1 5.1 \u03bcM for N643A; IC50 = 26.1 \u00b1 2.8 \u03bcM for I644W; IC50 = 0.25 \u00b1 0.02 \u03bcM for L642A; and IC50 = 0.56 \u00b1 0.06 \u03bcM for I659A compared to IC50 = 3.2 \u00b1 0.24 \u03bcM for WT TRPV3 (Figure 8D,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through dose-response experiments (Figure 8D,E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "246e2d80-6702-4ca9-8401-b327a08e5a96",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C67",
+      "claim": "MTSET modification caused reduced dyclonine blockade in L630C, F633C, and L642C but not WT TRPV3.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the same line, MTSET modification caused reduced dyclonine blockade in L630C, F633C, and L642C but not WT TRPV3, and DTT restored the blockage of dyclonine in these mutants (Figure 8I), implying that dyclonine-mediated inhibition is mediated by the region predicted by BMA binding mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through chemical modification experiments (Figure 8G-I).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "94bd4b1e-5be4-4f83-8fd9-fec97f041a06",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C68",
+      "claim": "Dyclonine interacts with the pore cavity of TRPV3 likely behaving as a negative allosteric modulator.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggest that dyclonine interacts with the pore cavity of TRPV3 likely behaving as a negative allosteric modulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from mutagenesis and docking studies (Figure 8).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "335783f0-7412-4ffa-bc8f-bf2c849fe03d",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C69",
+      "claim": "Dyclonine has been used for clinical treatment of itching and pain for decades.",
+      "claim_type": "EXPLICIT",
+      "source": "Dyclonine is a topical antipruritic agent and has been used for clinical treatment of itching and pain for decades (Gargiulo et al., 1992; Greifenstein et al., 1956).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "a98b19d5-c51e-4588-b221-e9ecc4d7f36b",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C70",
+      "claim": "Dyclonine is a condition-across inhibitor of TRPV3.",
+      "claim_type": "EXPLICIT",
+      "source": "Such inhibition was observed for TRPV3 responses to both chemical and thermal activation, suggesting that dyclonine is a condition-across inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that dyclonine inhibits TRPV3 activated by different stimuli.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "3f581668-4370-45f0-add0-2dc3bd64ed61",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C71",
+      "claim": "Dyclonine may be used to alleviate skin inflammations persisted in physiological temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "As TRPV3 responds to moderate temperatures (30\u201340\u00b0C), dyclonine may thus be used to alleviate skin inflammations persisted in physiological temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the temperature sensitivity of TRPV3 and dyclonine's inhibitory effect.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "baa88873-a3ab-497e-94a5-16290ccec2a4",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C72",
+      "claim": "Dyclonine has shown its safety to human body.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, as a clinical drug dyclonine has been widely used and thus has shown its safety to human body (Gargiulo et al., 1992; Sahdeo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "5d8797cc-2e49-4f67-a1a0-583b000f8441",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C73",
+      "claim": "Dyclonine can be a research tool to dissect the physiological and pathological characteristics of TRPV3 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, as a potent inhibitor, dyclonine can also been a research tool to dissect the physiological and pathological characteristics of TRPV3 channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is suggested based on the potent and specific inhibition of TRPV3 by dyclonine.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "d3aebda0-ec10-494d-aa0d-e5b5e4a4ef3e",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C74",
+      "claim": "Voltage-gated sodium channels have been shown to be inhibited by local anesthetics including dyclonine.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, voltage-gated sodium channels have been shown to be inhibited by local anesthetics including dyclonine (Sahdeo et al., 2014; Tikhonov and Zhorov, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "ab825010-638b-478e-b601-891a3e44b5d3",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C75",
+      "claim": "Binding of dyclonine into the BMA pocket could prevent the structural rearrangements of pore loop during TRPV3 gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Likely, binding of dyclonine into this pocket could prevent the structural rearrangements of pore loop during TRPV3 gating, implying that dyclonine behaves as a negative allosteric modulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis and mutagenesis data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "7a6abd3d-bc9e-4bc0-ad35-56b80fe95825",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C76",
+      "claim": "The amino acids that make up the pocket and the precise shape of the pocket are diverse among TRP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Although similar pockets can also be observed on other TRP channels, the amino acids that make up the pocket and the precise shape of the pocket are diverse (Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through sequence alignment (Figure 8\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "416975eb-b0cd-4a1b-8050-90ecac72c806",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "claim_id": "C77",
+      "claim": "The diversity in pocket composition may explain why TRPV3 is specifically targeted by dyclonine.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be the reason why TRPV3 is targeted by dyclonine (Liao et al., 2013; Shimada et al., 2020; Singh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural differences between TRP channels.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0a3b6fdd-3eaf-464a-96a2-097824e44e79",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TRPV3 is expressed in epidermal keratinocytes and cells surrounding hair follicles. These claims establish the tissue-specific expression pattern of TRPV3 based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C13, and C14 are well-supported by multiple citations (Chung et al., 2004b; Peier et al., 2002; Xu et al., 2002; Cheng et al., 2010) and represent established knowledge in the field. The expression pattern is consistent with the functional studies performed in keratinocytes later in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "a0d60335-e1a9-4656-9c28-9540a957d711",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TRPV3 is implicated in various skin disorders including chronic pruritus, allergy, inflammation, and hair growth abnormalities. Gain-of-function mutations cause Olmsted syndrome in humans and hair growth disorders in mice, while TRPV3-deficient mice show curly whiskers and wavy hair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by extensive citations to prior work (Asakawa et al., 2006; Agarwala et al., 2015; Lin et al., 2012; Cheng et al., 2010) and represent established knowledge about TRPV3 pathophysiology. The claims provide important context for the therapeutic rationale of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "95e28590-edd0-468d-96e2-63024066a460",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Dyclonine inhibits mouse TRPV3 channel in a dose-dependent and reversible manner with an IC50 of 3.2 \u00b1 0.24 \u03bcM. At 5 \u03bcM and 10 \u03bcM, dyclonine reduced TRPV3 currents to 30% \u00b1 2% and 15% \u00b1 3% of control levels, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C26-C29 are well-supported by whole-cell patch-clamp recordings (Figure 1A-C) with appropriate sample sizes (n=6) and statistical analysis. The dose-response relationship is clearly demonstrated, and reversibility upon washout is shown. The IC50 determination follows standard pharmacological methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "7874bf47-ccbf-4b35-baaa-c1105bf781f2",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dyclonine inhibits TRPV3 across species (human, mouse, frog) with IC50 values of 16.2 \u00b1 0.72 \u03bcM for human TRPV3 and 12.3 \u00b1 1.6 \u03bcM for frog TRPV3, demonstrating conservation of the inhibitory mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C37-C39 are supported by whole-cell recordings from HEK 293T cells expressing TRPV3 orthologs from different species (Figure 2D-I). The IC50 values are within the same order of magnitude, supporting conservation. Sample sizes are adequate (n=7-11).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "7967fa6d-90c2-4f28-bcd6-74143808e1f5",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TRPV3 exhibits sensitization upon repeated stimulation, and dyclonine significantly slows this sensitization process, requiring approximately 16 repetitions to reach full sensitization compared to 8 repetitions without dyclonine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 are supported by repeated stimulation experiments (Figure 1G-I) with adequate sample size (n=9). The sensitization property is well-established in the literature (Chung et al., 2004a), and the effect of dyclonine on this process is clearly demonstrated with quantitative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "69a16550-7dd8-4c05-943f-478685c14b2e",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dyclonine effectively suppresses endogenous TRPV3 channels in primary mouse keratinocytes with an IC50 of 5.2 \u00b1 0.71 \u03bcM, demonstrating efficacy in native tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by experiments in primary mouse keratinocytes (Figure 1J-L) with adequate sample size (n=7). The IC50 in keratinocytes is similar to that in heterologous expression systems, supporting the physiological relevance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "35894008-7d50-4adb-9648-465d51d3371e",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Dyclonine is a selective inhibitor of TRPV3, showing minimal inhibition of TRPV1, TRPV2, TRPM8, and TRPA1 at 10 \u03bcM (2-9% inhibition) compared to 87% \u00b1 1% inhibition of TRPV3. IC50 values for other TRP channels are 1-2 orders of magnitude higher than for TRPV3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are well-supported by comparative experiments (Figure 2A-C) with appropriate controls and sample sizes. The selectivity is clearly demonstrated through IC50 comparisons, establishing dyclonine as a relatively specific TRPV3 inhibitor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "c7a5a3cd-64a7-4acf-a979-7bc16ebc759a",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dyclonine inhibits TRPV3 in a voltage-independent manner, showing similar inhibition at both hyperpolarized and depolarized voltages, unlike ruthenium red which shows voltage-dependent effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by voltage-step experiments (Figure 3) with clear demonstration of voltage independence. The comparison with ruthenium red provides important mechanistic insight. However, the manuscript does not provide statistical analysis of voltage dependence across the full voltage range.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "dbaa6810-28d5-40f7-960f-bf4db7da7b67",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dyclonine dose-dependently suppresses heat-evoked TRPV3 currents with an IC50 of 14.02 \u00b1 2.5 \u03bcM, demonstrating inhibition of thermally-activated channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by temperature-jump experiments using an ultrafast infrared laser system (Figure 4) with adequate sample size (n=10). The IC50 for heat activation is higher than for chemical activation, which may reflect different activation mechanisms or experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "384991fd-f9fc-4278-917f-776f2151d496",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dyclonine inhibits constitutively active gain-of-function TRPV3 mutants (G573S and G573C) by 71-74% and rescues cell death caused by these mutants, reducing cell death from ~45-53% to ~12-15%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 are well-supported by electrophysiology (Figure 5A-D), microscopy, and flow cytometry (Figure 5E-G) with adequate sample sizes (n=6-7). The rescue of cell death is statistically significant (p<0.001) and provides strong evidence for therapeutic potential. The use of multiple complementary methods strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "3b99035b-61db-42cc-82a2-517f3822e1d9",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Dyclonine ameliorates TRPV3-mediated scratching behavior in vivo in a concentration-dependent manner. Carvacrol-induced scratching is TRPV3-dependent (absent in TRPV3-/- mice) and is reduced by dyclonine pretreatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by behavioral experiments in WT and TRPV3-/- mice (Figure 6A-F) with adequate sample sizes (n=6-8) and statistical analysis (p<0.001). The use of knockout mice as controls is appropriate and strengthens the conclusion that effects are TRPV3-specific. The IC50 for carvacrol-activated currents (3.5 \u00b1 0.34 \u03bcM) is consistent with 2-APB activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "f6449593-e6ff-44ce-96ae-e8b251879fd8",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Dyclonine shows little effect on electrophysiological responses in mouse DRG and TG neurons, suggesting that in vivo effects arise from targeting keratinocyte TRPV3 channels rather than neuronal targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by current-clamp recordings in DRG and TG neurons (Figure 6\u2014figure supplement 1) with adequate sample sizes (n=5). The lack of effect is consistent with the absence of TRPV3 in mouse DRGs (Peier et al., 2002). However, the conclusion that in vivo effects arise solely from keratinocyte TRPV3 is an inference that could benefit from additional supporting experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "00af8362-e9da-4ceb-a7b0-ba75f3ee3453",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "At the single-channel level, dyclonine reduces TRPV3 open probability from ~0.8 to ~0.08-0.12 at both positive and negative voltages without affecting unitary conductance (~164-179 pS).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C57-C59 are supported by single-channel recordings (Figure 7) with adequate sample size (n=6). The finding that dyclonine affects gating but not conductance provides important mechanistic insight. The all-point histograms and Gaussian fitting are appropriate analytical methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "a1212983-e01f-4bf0-a03e-fb7f6f81d0cb",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Key residues in the TRPV3 pore region (L630, N643, I644, L655, L642, I659) modulate dyclonine inhibitory efficiency. Mutations L630W, N643A, I644W, and L655A reduce inhibition (IC50 26-287 \u03bcM), while L642A and I659A enhance inhibition (IC50 0.25-0.56 \u03bcM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C62-C66 are supported by systematic mutagenesis experiments (Figure 8C-E) with dose-response curves for each mutant. The range of IC50 values (0.25 to 287 \u03bcM) demonstrates that these residues are critical for dyclonine binding/action. However, the manuscript does not report sample sizes for all mutants, which is a minor limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "a6dfd158-e82f-4555-8736-bb00d9f0c43b",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Chemical modification experiments with MTSET and DTT support that dyclonine interacts with the pore cavity of TRPV3, likely behaving as a negative allosteric modulator by preventing structural rearrangements during gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68, C75 are supported by cysteine modification experiments (Figure 8G-I) showing that MTSET reduces dyclonine blockade in L630C, F633C, and L642C mutants, which is reversed by DTT. This provides strong evidence for the predicted binding site. The inference about allosteric modulation is reasonable given the voltage independence and effects on multiple activation modes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "5f74a9ce-1890-4469-a64a-13d752e06a77",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Dyclonine is not a competitive antagonist or simple open channel blocker, but rather a condition-across inhibitor that blocks TRPV3 activated by different stimuli (2-APB, heat, carvacrol).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61, C70 are supported by the observation that dyclonine inhibits TRPV3 activated by multiple stimuli (Figures 1, 4, 6E-F) and shows voltage-independent inhibition (Figure 3). The reasoning is sound, though the classification as 'condition-across inhibitor' is somewhat descriptive rather than mechanistically precise.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "30bc30b0-d5ab-44ab-83a0-da642b09ec24",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The amino acids composing the dyclonine binding pocket and its shape are diverse among TRP channels, which may explain the selectivity of dyclonine for TRPV3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 are supported by sequence alignment (Figure 8\u2014figure supplement 2) showing diversity in the pore region across TRP channels. This provides a structural rationale for selectivity, though the inference could be strengthened by testing dyclonine on additional TRP channel mutants or by structural studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "03b973bb-f46e-4bfb-b2e2-8a0ab070720e",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Dyclonine is a clinical anesthetic with established safety that has been used for decades to treat itching and pain, characterized by rapid onset, lack of systemic toxicity, and low sensitization index.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25, C69, C72 are supported by citations to clinical literature (Florestano and Bahler, 1956; Morginson et al., 1956; Formaker et al., 1998; Gargiulo et al., 1992; Greifenstein et al., 1956; Sahdeo et al., 2014). These represent established clinical knowledge and provide important context for the therapeutic potential of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "b5a22b58-2ee8-454c-a83b-d2ba399658fa",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Dyclonine may be used to alleviate skin inflammations at physiological temperatures and can serve as a research tool to study TRPV3 physiology and pathology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71 and C73 are speculative statements about potential future applications. While they are reasonable inferences based on the data presented (temperature sensitivity of TRPV3, potent inhibition by dyclonine), they represent hypotheses rather than demonstrated results. Clinical efficacy for skin inflammation would require additional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "fdcd88df-719d-45a9-ab61-777fba0505b0",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Voltage-gated sodium channels are inhibited by local anesthetics including dyclonine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is supported by citations (Sahdeo et al., 2014; Tikhonov and Zhorov, 2017) and represents established knowledge. This is mentioned to acknowledge that dyclonine may have additional targets beyond TRPV3, which is an important caveat for interpreting in vivo effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "5b278361-4abc-4e60-b493-9db7735dfd6b",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "TRPV3 belongs to the TRP channel family and is a polymodal sensor activated by innocuous temperatures (30-33\u00b0C), natural compounds (camphor, carvacrol, eugenol, thymol), 2-APB, and acidic pH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C15-C18 are supported by extensive citations to prior literature (Clapham, 2003; Chung et al., 2005; Xu et al., 2002; Moqrich et al., 2005; Xu et al., 2006; Chung et al., 2004a; Colton and Zhu, 2007; Gao et al., 2016) and represent well-established knowledge about TRPV3 properties. These provide essential background for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    },
+    {
+      "id": "248693a6-d370-47d9-9bb1-fbe2ac491fe3",
+      "content_id": "86c68e36-e6a7-4bda-9454-25905b5d9d14",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Dyclonine rescued cell death caused by gain-of-function TRPV3 mutations and suppressed pruritus symptoms in vivo in mouse model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 are high-level summary statements that are well-supported by the detailed experimental evidence in claims C45-C54. These represent the major therapeutic findings of the study demonstrating both cellular and in vivo efficacy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:51:49.424286Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c5792ed5-7d8c-4776-9178-75673d9eeb08",
+      "result_id": "0a3b6fdd-3eaf-464a-96a2-097824e44e79"
+    },
+    {
+      "claim_id": "85392256-4fd5-4512-99ff-1ef424cf8861",
+      "result_id": "0a3b6fdd-3eaf-464a-96a2-097824e44e79"
+    },
+    {
+      "claim_id": "b4312736-11ba-447a-9cb7-81903cf8aff9",
+      "result_id": "0a3b6fdd-3eaf-464a-96a2-097824e44e79"
+    },
+    {
+      "claim_id": "5ccc2078-b9cd-44d3-bceb-399de68863b0",
+      "result_id": "a0d60335-e1a9-4656-9c28-9540a957d711"
+    },
+    {
+      "claim_id": "18b99f16-105e-45d2-91a4-cf267a1888d1",
+      "result_id": "a0d60335-e1a9-4656-9c28-9540a957d711"
+    },
+    {
+      "claim_id": "5ceb2afc-4eea-4a8a-9d1a-156ebe979d21",
+      "result_id": "a0d60335-e1a9-4656-9c28-9540a957d711"
+    },
+    {
+      "claim_id": "978ddde0-ee20-4023-8322-8f800606a1f2",
+      "result_id": "a0d60335-e1a9-4656-9c28-9540a957d711"
+    },
+    {
+      "claim_id": "bb8b4b96-d446-4858-907b-dab8a91be107",
+      "result_id": "a0d60335-e1a9-4656-9c28-9540a957d711"
+    },
+    {
+      "claim_id": "5e51ccdf-ff4e-4223-bf7f-914b65f78f23",
+      "result_id": "a0d60335-e1a9-4656-9c28-9540a957d711"
+    },
+    {
+      "claim_id": "c479c580-6c4e-441d-8b81-79e34bf8e80c",
+      "result_id": "a0d60335-e1a9-4656-9c28-9540a957d711"
+    },
+    {
+      "claim_id": "6186feb2-960b-46f1-a98b-8d5351f735c1",
+      "result_id": "95e28590-edd0-468d-96e2-63024066a460"
+    },
+    {
+      "claim_id": "be9cfced-3c6e-48f3-a625-a694aafea898",
+      "result_id": "95e28590-edd0-468d-96e2-63024066a460"
+    },
+    {
+      "claim_id": "4aeb9b8a-222b-4480-ab7c-5b55d6e92490",
+      "result_id": "95e28590-edd0-468d-96e2-63024066a460"
+    },
+    {
+      "claim_id": "ebbc731d-64b0-48ea-b4fe-836894185ab1",
+      "result_id": "95e28590-edd0-468d-96e2-63024066a460"
+    },
+    {
+      "claim_id": "48fe7d9e-f461-4fad-9033-8e66dd7acb88",
+      "result_id": "95e28590-edd0-468d-96e2-63024066a460"
+    },
+    {
+      "claim_id": "a295a5ec-fce6-4c49-ba63-aaae998c915d",
+      "result_id": "7874bf47-ccbf-4b35-baaa-c1105bf781f2"
+    },
+    {
+      "claim_id": "011e8a7a-4de3-4e90-a599-b891f7a000a1",
+      "result_id": "7874bf47-ccbf-4b35-baaa-c1105bf781f2"
+    },
+    {
+      "claim_id": "c70aed36-0f7e-44f0-8aa8-ba764c61bff8",
+      "result_id": "7874bf47-ccbf-4b35-baaa-c1105bf781f2"
+    },
+    {
+      "claim_id": "b6e62bae-6c91-4d81-8cf5-986ffe41c0c4",
+      "result_id": "7874bf47-ccbf-4b35-baaa-c1105bf781f2"
+    },
+    {
+      "claim_id": "10d089dd-e7b0-48c0-8263-352f9b6f3e0f",
+      "result_id": "7967fa6d-90c2-4f28-bcd6-74143808e1f5"
+    },
+    {
+      "claim_id": "f0da51db-60f2-4943-bbcd-6bbd3b9f1873",
+      "result_id": "7967fa6d-90c2-4f28-bcd6-74143808e1f5"
+    },
+    {
+      "claim_id": "59c78b3d-1260-489b-957c-3cdde2ea389e",
+      "result_id": "69a16550-7dd8-4c05-943f-478685c14b2e"
+    },
+    {
+      "claim_id": "fde99bf5-9801-4454-9b59-9081292d7739",
+      "result_id": "69a16550-7dd8-4c05-943f-478685c14b2e"
+    },
+    {
+      "claim_id": "d5a6c73a-9223-45f1-bb3d-c7e079c9c40e",
+      "result_id": "35894008-7d50-4adb-9648-465d51d3371e"
+    },
+    {
+      "claim_id": "bb1919b4-3446-42fa-b7cb-ee725c5486fa",
+      "result_id": "35894008-7d50-4adb-9648-465d51d3371e"
+    },
+    {
+      "claim_id": "9d6274be-5f93-457b-922f-98a404991e99",
+      "result_id": "35894008-7d50-4adb-9648-465d51d3371e"
+    },
+    {
+      "claim_id": "6a72584c-c656-4427-a171-af2bc2621d29",
+      "result_id": "c7a5a3cd-64a7-4acf-a979-7bc16ebc759a"
+    },
+    {
+      "claim_id": "c5ddc2b7-8ab9-4515-8f03-1a88806b0296",
+      "result_id": "c7a5a3cd-64a7-4acf-a979-7bc16ebc759a"
+    },
+    {
+      "claim_id": "b670b400-7e8d-47bc-b256-e1350226b9fe",
+      "result_id": "dbaa6810-28d5-40f7-960f-bf4db7da7b67"
+    },
+    {
+      "claim_id": "91ae863e-da3b-4ba2-a425-3728b85b0868",
+      "result_id": "dbaa6810-28d5-40f7-960f-bf4db7da7b67"
+    },
+    {
+      "claim_id": "b573b795-4fc9-4671-b070-70d310b754f8",
+      "result_id": "dbaa6810-28d5-40f7-960f-bf4db7da7b67"
+    },
+    {
+      "claim_id": "893c0726-6a49-4f70-9ade-5c756ae450e4",
+      "result_id": "384991fd-f9fc-4278-917f-776f2151d496"
+    },
+    {
+      "claim_id": "5b980561-8ede-46ac-8a2f-04c215e22ada",
+      "result_id": "384991fd-f9fc-4278-917f-776f2151d496"
+    },
+    {
+      "claim_id": "1affa07b-2500-49bd-aa51-279fe921b8c7",
+      "result_id": "384991fd-f9fc-4278-917f-776f2151d496"
+    },
+    {
+      "claim_id": "ff8cbb6b-0b2e-4686-a45b-d125536e2eed",
+      "result_id": "384991fd-f9fc-4278-917f-776f2151d496"
+    },
+    {
+      "claim_id": "504407f6-fa31-4e17-98cb-64b022a56b6c",
+      "result_id": "384991fd-f9fc-4278-917f-776f2151d496"
+    },
+    {
+      "claim_id": "5b24255b-e811-4c1b-bdc1-c5e1cbfa7823",
+      "result_id": "384991fd-f9fc-4278-917f-776f2151d496"
+    },
+    {
+      "claim_id": "a1bef5b2-aa3c-48d4-86f3-858d3fa9c242",
+      "result_id": "3b99035b-61db-42cc-82a2-517f3822e1d9"
+    },
+    {
+      "claim_id": "a22c1179-178e-424f-b68b-9f8b1adc5f5f",
+      "result_id": "3b99035b-61db-42cc-82a2-517f3822e1d9"
+    },
+    {
+      "claim_id": "ae2a12e8-5054-445a-87c9-36bef967f00c",
+      "result_id": "3b99035b-61db-42cc-82a2-517f3822e1d9"
+    },
+    {
+      "claim_id": "000ff26f-5c5d-4e79-9b2b-fa1ecf18610a",
+      "result_id": "3b99035b-61db-42cc-82a2-517f3822e1d9"
+    },
+    {
+      "claim_id": "20ad16fb-278e-4455-9d35-5dbe8583b17b",
+      "result_id": "f6449593-e6ff-44ce-96ae-e8b251879fd8"
+    },
+    {
+      "claim_id": "3becae26-8a47-4ab1-9e84-c20cd557974a",
+      "result_id": "f6449593-e6ff-44ce-96ae-e8b251879fd8"
+    },
+    {
+      "claim_id": "c0328c36-dfb7-4ca3-a1a7-a77a66a62078",
+      "result_id": "00af8362-e9da-4ceb-a7b0-ba75f3ee3453"
+    },
+    {
+      "claim_id": "ba84342a-f19a-4db1-b867-ee582db89b1b",
+      "result_id": "00af8362-e9da-4ceb-a7b0-ba75f3ee3453"
+    },
+    {
+      "claim_id": "3a5b51f5-5cc7-4b2e-9e3a-e122cb13b0e6",
+      "result_id": "00af8362-e9da-4ceb-a7b0-ba75f3ee3453"
+    },
+    {
+      "claim_id": "9c910a29-95f3-42df-b9c5-a6a4b2ef32fa",
+      "result_id": "00af8362-e9da-4ceb-a7b0-ba75f3ee3453"
+    },
+    {
+      "claim_id": "e4328c6a-dc41-477d-875c-b579313142c4",
+      "result_id": "00af8362-e9da-4ceb-a7b0-ba75f3ee3453"
+    },
+    {
+      "claim_id": "e7c3dcc2-9382-47b1-abb3-5d0854795b57",
+      "result_id": "a1212983-e01f-4bf0-a03e-fb7f6f81d0cb"
+    },
+    {
+      "claim_id": "e32a6471-6ba7-4b36-8b3c-d91c5b71e830",
+      "result_id": "a1212983-e01f-4bf0-a03e-fb7f6f81d0cb"
+    },
+    {
+      "claim_id": "10c6292e-01d9-4cef-8913-611c9c7efc9c",
+      "result_id": "a1212983-e01f-4bf0-a03e-fb7f6f81d0cb"
+    },
+    {
+      "claim_id": "0a628eb8-521f-4542-aec9-4c2ba2281a01",
+      "result_id": "a1212983-e01f-4bf0-a03e-fb7f6f81d0cb"
+    },
+    {
+      "claim_id": "a44e2929-aeee-4e76-98ba-bf45b2c871e0",
+      "result_id": "a1212983-e01f-4bf0-a03e-fb7f6f81d0cb"
+    },
+    {
+      "claim_id": "d9f10cfd-294e-4920-90f3-f5d6479f68d7",
+      "result_id": "a1212983-e01f-4bf0-a03e-fb7f6f81d0cb"
+    },
+    {
+      "claim_id": "246e2d80-6702-4ca9-8401-b327a08e5a96",
+      "result_id": "a6dfd158-e82f-4555-8736-bb00d9f0c43b"
+    },
+    {
+      "claim_id": "94bd4b1e-5be4-4f83-8fd9-fec97f041a06",
+      "result_id": "a6dfd158-e82f-4555-8736-bb00d9f0c43b"
+    },
+    {
+      "claim_id": "ab825010-638b-478e-b601-891a3e44b5d3",
+      "result_id": "a6dfd158-e82f-4555-8736-bb00d9f0c43b"
+    },
+    {
+      "claim_id": "70a940e9-16f6-410b-95b0-d32e8c500501",
+      "result_id": "5f74a9ce-1890-4469-a64a-13d752e06a77"
+    },
+    {
+      "claim_id": "29599580-d1ca-49ff-80f5-d1d9fc02c6c1",
+      "result_id": "5f74a9ce-1890-4469-a64a-13d752e06a77"
+    },
+    {
+      "claim_id": "a98b19d5-c51e-4588-b221-e9ecc4d7f36b",
+      "result_id": "5f74a9ce-1890-4469-a64a-13d752e06a77"
+    },
+    {
+      "claim_id": "7a6abd3d-bc9e-4bc0-ad35-56b80fe95825",
+      "result_id": "30bc30b0-d5ab-44ab-83a0-da642b09ec24"
+    },
+    {
+      "claim_id": "416975eb-b0cd-4a1b-8050-90ecac72c806",
+      "result_id": "30bc30b0-d5ab-44ab-83a0-da642b09ec24"
+    },
+    {
+      "claim_id": "c500ea36-cfb2-4ea4-a43c-1117ce47126b",
+      "result_id": "03b973bb-f46e-4bfb-b2e2-8a0ab070720e"
+    },
+    {
+      "claim_id": "2e4d8ba9-4b78-4b95-b1a4-740a2f8e1712",
+      "result_id": "03b973bb-f46e-4bfb-b2e2-8a0ab070720e"
+    },
+    {
+      "claim_id": "d63c2897-30bd-4916-bf37-afd66811210e",
+      "result_id": "03b973bb-f46e-4bfb-b2e2-8a0ab070720e"
+    },
+    {
+      "claim_id": "335783f0-7412-4ffa-bc8f-bf2c849fe03d",
+      "result_id": "03b973bb-f46e-4bfb-b2e2-8a0ab070720e"
+    },
+    {
+      "claim_id": "baa88873-a3ab-497e-94a5-16290ccec2a4",
+      "result_id": "03b973bb-f46e-4bfb-b2e2-8a0ab070720e"
+    },
+    {
+      "claim_id": "3f581668-4370-45f0-add0-2dc3bd64ed61",
+      "result_id": "b5a22b58-2ee8-454c-a83b-d2ba399658fa"
+    },
+    {
+      "claim_id": "5d8797cc-2e49-4f67-a1a0-583b000f8441",
+      "result_id": "b5a22b58-2ee8-454c-a83b-d2ba399658fa"
+    },
+    {
+      "claim_id": "d3aebda0-ec10-494d-aa0d-e5b5e4a4ef3e",
+      "result_id": "fdcd88df-719d-45a9-ab61-777fba0505b0"
+    },
+    {
+      "claim_id": "e7f09681-ff50-40aa-ab3d-6bd35c466f8b",
+      "result_id": "5b278361-4abc-4e60-b493-9db7735dfd6b"
+    },
+    {
+      "claim_id": "d1eeac45-9c72-446b-97df-e2e92c3741df",
+      "result_id": "5b278361-4abc-4e60-b493-9db7735dfd6b"
+    },
+    {
+      "claim_id": "8aeb0509-5f01-49de-86fe-63b53415a33c",
+      "result_id": "5b278361-4abc-4e60-b493-9db7735dfd6b"
+    },
+    {
+      "claim_id": "02379853-d5ae-4077-b420-e87fb14fea98",
+      "result_id": "5b278361-4abc-4e60-b493-9db7735dfd6b"
+    },
+    {
+      "claim_id": "8be9ae3b-afc9-4c4c-9c35-f902b7ddf691",
+      "result_id": "5b278361-4abc-4e60-b493-9db7735dfd6b"
+    },
+    {
+      "claim_id": "73f0a343-93e1-4e42-b733-de172c60b99c",
+      "result_id": "248693a6-d370-47d9-9bb1-fbe2ac491fe3"
+    },
+    {
+      "claim_id": "418defa0-695d-4c20-b9bb-1a52bfd17244",
+      "result_id": "248693a6-d370-47d9-9bb1-fbe2ac491fe3"
+    }
+  ],
+  "comparisons": []
+}

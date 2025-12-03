@@ -1,0 +1,1794 @@
+{
+  "submission": {
+    "id": "0c55d0da-2ede-4d3e-aa4b-9d721ed12680",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:32:11.927306Z",
+    "updated_at": "2025-12-03T17:32:11.927306Z"
+  },
+  "content": [
+    {
+      "id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "submission_id": "0c55d0da-2ede-4d3e-aa4b-9d721ed12680",
+      "content_type": "manuscript",
+      "content_text": "# The importance of intermediate filaments in the shape maintenance of myoblast model tissues\n\n## Authors\n\n- Ir\u00e8ne Nagle<sup>1</sup>\n- Florence Delort<sup>2</sup>\n- Sylvie H\u00e9non<sup>1</sup>\n- Claire Wilhelm<sup>1</sup>\n- Sabrina Batonnet-Pichon<sup>2</sup>\n- Myriam Reffay<sup>1</sup> ([ORCID: 0000-0002-3695-2789](https://orcid.org/0000-0002-3695-2789)) \u2020\n\n### Affiliations\n\n1. Laboratoire Mati\u00e8re et Syst\u00e8mes Complexes, UMR 7057, Universit\u00e9 Paris Cit\u00e9 and CNRS Paris France ([ROR:05f82e368](https://ror.org/05f82e368))\n2. Laboratoire Biologie Fonctionnelle et Adaptative, UMR 8251, Universit\u00e9 Paris Cit\u00e9 and CNRS Paris France ([ROR:05f82e368](https://ror.org/05f82e368))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLiquid and elastic behaviours of tissues drive their morphology and response to the environment. They appear as the first insight into tissue mechanics. We explore the role of individual cell properties on spheroids of mouse muscle precursor cells and investigate the role of intermediate filaments on surface tension and Young\u2019s modulus. By flattening multicellular myoblast aggregates under magnetic constraint, we measure their rigidity and surface tension and show that they act as highly sensitive macroscopic reporters closely related to microscopic local tension and effective adhesion. Shedding light on the major contributions of acto-myosin contractility, actin organization, and intercellular adhesions, we reveal the role of a major component of intermediate filaments in the muscle, desmin and its organization, on the macroscopic mechanics of these tissue models. Implicated in the mechanical and shape integrity of cells, intermediate filaments are found to be crucial to the mechanics of unorganized muscle tissue models even at an early stage of differentiation both in terms of elasticity and surface tension.\n\n## Introduction\n\nTissue-forming cells interact with each other and with their environment (Barone and Heisenberg, 2012; Humphrey et al., 2014; Indana and Chaudhuri, 2021) giving rise to interesting viscoelastic fluid behaviours (Lecuit and Lenne, 2007) that are determinant both in epithelia (Mongera et al., 2018) and 3D tissue-forming systems (Ma\u00eetre et al., 2012). Physical properties such as surface tension (Ehrig et al., 2019; Harmand et al., 2021) and viscosity (Stirbat et al., 2013) can be introduced to predict tissue organization and shape (Etournay et al., 2015). Global mechanical characteristics of tissues emerge from individual cell components and their interplay (Jakab et al., 2008; Dolega et al., 2021; Grosser et al., 2021), but whether they could be good reporters of individual cell behaviour and global organization is still unknown. Multicellular aggregates (Kalantarian et al., 2009; Stirbat et al., 2013) prove to be powerful tools to apprehend fundamental biological processes as morphogenesis (Costa et al., 2016), development (Birey et al., 2017), and tumorigenesis (Montel et al., 2011; Gunti et al., 2021). They are able to mimic various biological phenomena (Nikolaev et al., 2020), and as model systems, are easier to use and monitor than in vivo tissues (Bassi et al., 2021). Combining simplicity, reproducibility, and biological significance, they are a system of choice both for biophysics and computation (Gonzalez-Rodriguez et al., 2012; Martin and Risler, 2021; Ackermann et al., 2021). Myoblasts are widely studied cells to understand myogenesis because of their interest in myopathy modelling (Smoak et al., 2019) and drug testing (Zhuang et al., 2020). Muscle cell mutations implicated in numerous diseases have been extensively studied starting from symptoms to molecular origins identification (Batonnet-Pichon et al., 2017; Jungbluth et al., 2018). Among these mutations, the ones concerning intermediate filaments are very important (Dutour-Provenzano and Etienne-Manneville, 2021). Intermediate filament network is essential in muscle development, provides mechanical integrity to the cell (Chang and Goldman, 2004), and plays a major role in the dynamic response to mechanical stimulation (Charrier et al., 2016). Desmin, as a major component of intermediate filaments specifically expressed in smooth, skeletal, and cardiac muscles, presents some mutations associated to muscle defects and myopathies. However, the early effects of these mutations in tissues are unclear due to a lack of in vitro biomimetic muscle systems (Hofemeier et al., 2021). To address these limitations, we focus on mouse myoblast cells (C2C12) to test the sensitivity of 3D unorganized early-stage muscle tissue models to individual cell modifications. C2C12 are adhesive and highly contractile cells (unsurprisingly regarding their function). Their high assumed surface tension makes them challenging to characterize. We designed an integrated sensitive magnetic tensiometer (Mazuel et al., 2015) to form stimulable myoblast-derived tissues and measure their surface tension and elasticity. In this study, we explore the interplay between macroscopic properties of model muscle tissues and the molecular or cellular processes. We investigate how surface tension and Young\u2019s modulus represent appealing tools to determine from the tissue scale the microscopic properties. While actin and cadherins are implicated in the surface tension of multicellular aggregates or embryos (Foty and Steinberg, 2005), the role of intermediate filaments in tissue shape maintenance has never been identified. Mutations in intermediate filaments severely hinder individual cell nanomechanical properties (Herrmann et al., 2007), and their network supports the shape of individual cells (Goldman et al., 1996) and withstands applied constraints. Looking at the interplay between their organization and tissue shape maintenance or the tissue elasticity is thus primordial, especially in the context of muscle. We look at cells expressing mutated desmin and exhibiting organization defects of the desmin cellular network to shed light on the crucial role of intermediate filaments on muscle tissue model global mechanics at an early stage of differentiation.\n\n## Results\n\n### Magnetic tensiometer for multicellular aggregates\n\nC2C12 cells are labelled with superparamagnetic nanoparticles without altering their biological capacities (Van de Walle et al., 2020a; Van de Walle et al., 2020b) nor inducing hypoxia or apoptosis (Figure 1\u2014figure supplements 1 and 2). It is then possible to organize and stimulate them at will using external magnets. Magnets first drive cells in agarose moulds to create spheroids of controlled size (Mazuel et al., 2015) and content as inhibitors or reagents can be added at this stage (Figure 1a). Cohesive spheroids are obtained within 12 hr (Figure 1b) and their side profile is imaged (Figure 1c). Multicellular spheroids are fulfilled with cohesive cells that organize to form a tissue model with rounded cells at the core of the aggregate having cortical actin and more elongated cells at the periphery having contractile actin network. Their profile is recorded while a magnet is approached (Figure 1\u2014figure supplements 3 and 4). Assuming that a multicellular cohesive aggregate can be modelled as a continuous elastic medium (as supported by confocal imaging, Figure 1b), surface tension and magnetic forces in volume compete to determine the equilibrium shape (Kalantarian et al., 2009) while Young\u2019s modulus is at stake for the contact area (Mazuel et al., 2015; Figure 1c, Figure 1\u2014figure supplement 3). The height, the width of the aggregate and the ending points of the contact zone are pointed in the Tensio\u2009$X$ application (Figure 1\u2014figure supplement 3), a dedicated MATLAB interface we developed to fit the obtained profile. The elasticity and the capillary parameter $c=\\frac{M_{v}\u2062g\u2062r\u2062a\u2062d\u2062(B)}{\\gamma}$ ($M_{v}$, $\\gamma$, and $B$ denote the magnetic moment per unit of volume, the spheroid surface tension, and the magnetic field, respectively) (Kalantarian et al., 2009) are extracted. By knowing the magnetic volume moment, the tissue surface tension is easily deduced from $c$. The error measurement on the deformations is around 2\u20135 \u00b5m, leading to a precision in the range of 5\u201320% for surface tension and 5\u201310% for the elasticity of C2C12 multicellular spheroids. In this regard, it should be noted that the surface tension of C2C12 spheroids is two orders of magnitude greater than that of classically studied cells such as F9 cells, for example. The error increases with surface tension because the spheroids are less deformed, which makes C2C12 cells challenging to characterize. This error is smaller than the inherent distribution measured over different aggregates (Figure 2a and b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of the magnetic moulding process. A network of calibrated size steel beads deposited over cylindrical magnets is embedded in heated 2% liquid agarose (1). After agarose gelling, beads are removed creating a semi-spherical mould (2). Magnetically labelled cells are seeded in these non-adhesive-treated moulds. Magnets placed below each mould drive the cells inside the moulds (3). Due to high local cell density, cell\u2013cell contacts develop to form cohesive multicellular aggregates within 12 hr (4). (b) Left panel: confocal image of a multicellular aggregate at 150 \u00b5m from the top of the aggregate. Actin (red) and nuclei (blue) are labelled. Scale bar: 50 \u00b5m. Right panels: 75-\u00b5m-long zooms for cells at the interface (up) or in the centre of the multicellular aggregate (down). The organization of actin depends on the location of the cell within the aggregate. While it is mainly cortical for cells in the centre, actin is contractile at the periphery of the aggregate to maintain its shape. Scale bar: 25 \u00b5m. (c) Schematic of the magnetic force tensiometer set-up. A temperature-regulated tank (37\u00b0C) is sealed with a non-adhesive glass slide to ensure non-wetting conditions for the multicellular spheroid formed by magnetic moulding (\u2018Methods\u2019 and a). A cylindrical neodymium permanent magnet (6 mm diameter and height, 530 mT, $grad(B)=170T.m^{\u22121}$) is positioned underneath and approached with respect to a lifting stage. The tank is filled with a transparent culture medium, and the aggregate side profile is monitored with a camera. (d) Representative pictures of C2C12 spheroid profiles. Top and bottom pictures show, respectively, a C2C12 spheroid before the magnet approach (t0) and under magnetic flattening when the equilibrium shape is reached ($t_{\u221e}$). The dynamics is shown in Figure 1\u2014figure supplement 4. The spheroid surface tension is measured by fitting the aggregate shape with Laplace profile (red line) while the elastic modulus is extracted from the radius of the contact zone $L$ (green arrow) using Hertz theory as described in Mazuel et al., 2015; Figure 1\u2014figure supplement 3. In this picture, $\\gamma=21mN/m$ and $E=100\u2062Pa$. Scale bar: 200 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** To assess metabolic activity, the metabolic test Alamar Blue was used. Fluorescence was measured at $\\lambda_{e\u2062x\u2062c}=570$ nm and $\\lambda_{e\u2062m}=585$ nm. Values are interpreted relative to control values (unlabelled cells in complete medium, CTL) obtained under similar conditions. No influence of nanoparticle incorporation was observed on the metabolic activity and on the cell viability at D0 or D1 and for concentrations up to 16 mM.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) DAPI is shown in blue and HIF\u03b1 in green. HIF\u03b1 is almost absent from the images. (b) DAPI is shown in blue and cleaved caspase-3 in green. Only 2% of cells show a positive signal to cleaved caspase-3. Scale bars: 200 \u00b5m.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The experimental volume V is calculated from the radius R of the spheroid at t0. The experimental width w (in green) and height h (in blue) are measured from the spheroid equilibrium profile. All these measurements are used in the minimization program of the Tensio\u2009$X$ application.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** At $t=0$ s, the magnet is approached and the height of the spheroid is monitored over time. After 10 min of flattening, the equilibrium shape is reached and the height of the spheroid remains stable for each condition. Each curve corresponds to at least $N=2$ spheroids. Mean values are represented with respective standard deviations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig2-v2.jpg)\n\n**Figure 2.:** (a, b) Variation of surface tension (a) and Young\u2019s modulus (b) of C2C12 spheroids for 2.5 mM EGTA (calcium chelator), 0.15 \u00b5M and 0.25 \u00b5M latrunculin A (actin disruptor). Floating bars represent min to max variations, and the midline indicates the median. (c) Representative confocal images of acto-myosin organization for cells at the periphery of an untreated multicellular aggregate. Nuclei (blue), F-actin (red) and phospho-myosin (green) are labelled. Actin and myosin networks mostly colocalize and form a contractile radial organization. Scale bar: 20 \u00b5m. (d) Representative confocal image of acto-myosin organization for cells at the periphery of a multicellular aggregate treated with 160 \u00b5M (\u00b1)-blebbistatin. Nuclei (blue), F-actin (red), and phospho-myosin (green) are labelled. Myosin network is almost disrupted compared to actin network. Scale bar: 20 \u00b5m. (e) Representative pictures of C2C12 spheroids under magnetic flattening at equilibrium for (\u00b1)-blebbistatin concentration ranging from 0 to 160 \u00b5M are given for comparison. Scale bar: 200 \u00b5m. Variations of both surface tension (f) and Young\u2019s modulus (g) with (\u00b1)-blebbistatin concentrations are reported. Inhibition curves are fitted for the surface tension (red curve) and the Young\u2019s modulus (green curve) with a dose\u2013response providing an $I\u2062C_{50}$ value for the (\u00b1)-blebbistatin of 10 \u00b1 3 \u00b5M and 7 \u00b1 5 \u00b5M, respectively, corresponding to an $I\u2062C_{50}$ for the (-) active enantiomer of blebbistatin around 6 \u00b1 2 \u00b5M and 4 \u00b13 \u00b5M, respectively, as the ratio of the active/negative form is around 50\u201360%.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** DAPI is shown in blue, pan-cadherins are in green, and F-actin in red. Scale bars: 200 \u00b5m and 40 \u00b5m for zoomed images.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Young\u2019s modulus and surface tension are proportional across all the conditions tested for C2C12 spheroids. Values are represented in logarithmic scale.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** DAPI is shown in blue, pan-cadherins are in green, and F-actin in red. Scale bars: 200 \u00b5m and 40 \u00b5m for zoomed images.\n\n### Relation between macroscopic properties and molecular or cellular characteristics: A multi-contribution pattern\n\nNumerous molecular origins of spheroid surface tension are identified. While differential adhesion hypothesis was first evidenced by Steinberg, 1963 and related to the level of cadherins (Foty and Steinberg, 2005), the role of actin cortex was pointed out in individual cells (Chugh et al., 2017), spheroids (Stirbat et al., 2013), or embryogenesis (Heer and Martin, 2017), evidencing a differential interfacial tension hypothesis combining the influence of adhesion and cell surface tension (Manning et al., 2010). By comparing the energy of cells in the core of the aggregate to the one at the interface, the surface tension is given by\n\n$$\n\\gamma=T_{CM}\u2212\\frac{1}{2}(2T_{CC}\u2212J_{CC})\n$$\n\nwhere $T_{C\u2062M}$, $T_{C\u2062C}$, and $J_{C\u2062C}$ denote the cortical tension at the cell\u2013medium (CM) or at the cell\u2013cell (CC) interface and the intercellular surface adhesion energy ($J_{CC}>0$), respectively (Stirbat et al., 2013). We explore this multi-parameter influence by looking at CC contacts inhibition and changes in actin structure or acto-myosin contractility (Figure 2). Intercellular adhesion is mediated by multiple CC adhesion proteins, among which cadherins play a key role. EGTA, as a calcium chelator, reduces the efficiency of this homophilic adhesion and modulates CC adhesion strength. In multicellular aggregates, EGTA has an impact on the acto-myosin network (Figure 3f, Figure 2\u2014figure supplement 1). By reducing CC contacts, it impairs the formation of the contractile network of acto-myosin at the periphery of the aggregate. At the single-cell level, F-actin becomes mainly cortical whatever the cell location inside the aggregate is. It may be related to a lack of strong enough CC adhesions to maintain actin network and a co-regulation of actin and cadherin tension. EGTA addition leads to a more than fivefold decrease in both Young\u2019s modulus and surface tension (Figure 2a and b). The relationship between adhesion bond energy and tissue surface tension (Foty and Steinberg, 2005) is thus tested. An apparent proportionality between surface tension and Young\u2019s modulus is obtained (Figure 2\u2014figure supplement 2), reminiscent of the one observed between surface tension and elasticity of the whole aggregate (itself related to cortical tension) through co-regulation mechanisms (Yu et al., 2018).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig3-v2.jpg)\n\n**Figure 3.:** (a) Immunofluorescence images of cryosections of multicellular aggregates obtained by magnetic moulding with different conditions. Control cells are compared to aggregates produced with 160 \u00b5M (+)-blebbistatin (inactive enantiomer), 160 \u00b5M (\u00b1)-blebbistatin (mixture of active and inactive enantiomers), 2.5 mM EGTA or 0.25 \u00b5M latrunculin A. DAPI is shown in blue, pan-cadherin in green, and F-actin in red. Scale bar: 50 \u00b5m. (b) Profile surface roughness parameter $R_{q}$ (root-mean-squared) in each condition for at least $N=3$ spheroids. (c) Schematic of two neighbouring cells with a local contact angle $\\alpha$ and the respective tension at the cell\u2013medium interface $T_{C\u2062M}$ and effective tension at the cell\u2013cell contact $2\u2062T_{C\u2062C}-J_{C\u2062C}$. (d) Examples of immunofluorescence images of spheroids from which the local angles were measured. Nuclei are shown in blue and pan-cadherin in green. Scale bar: 10 \u00b5m. (e) Contact angle between cell surfaces measured in each condition for at least $N=3$ spheroids either on cryosections or 3D aggregates (Figure 3\u2014figure supplement 1). (f) Examples of immunofluorescence images of the upper cells on spheroids obtained with different conditions. Nuclei are shown in blue, actin in red, and phospho-myosin in green. Colocalization of phospho-myosin and actin is in yellow. Scale bar: 25 \u00b5m. (g, h) Deduced values of the cell tension at the cell\u2013medium interface (g) and of the effective adhesive tension at the cell\u2013cell contact (h) in each condition.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Local angles were measured on the surface of the spheroids for $N=3$ spheroids for each type of measurement. Measured angles on cryosections have a median of 145\u00b0, and measured angles in 3D images have a median of 150\u00b0. This 5\u00b0 difference is below the measurement error on the local angles.\n\nLatrunculin A disrupts the actin filaments by binding to actin monomers, thus precluding its polymerization (Cou\u00e9 et al., 1987) its addition gives some non-connected patches of actin filaments with a lack of long-range organization (Figure 3f, Figure 2\u2014figure supplement 1). Young\u2019s modulus, as well as surface tension, is dramatically decreased by its presence (Figure 2a and b). Besides, its action on macroscopic properties is dose-dependent as seen by the comparison between 0.15 \u00b5M (twofold decrease) and 0.25 \u00b5M (five- to sevenfold decrease) concentrations. Our results are consistent with the dependence previously noticed between surface tension and viscosity for latrunculin-treated cells (Jakab et al., 2008) and extend this dependence to stiffness.\n\nTo further test the sensitivity of the magnetic tensiometer, we selected reagents with a wider accessible range still allowing cohesive spheroid formation (Figure 2\u2014figure supplement 3). (-)-Blebbistatin inhibits contractility by blocking myosins. (\u00b1)-Blebbistatin is a cell-permeable mixed compound containing around 50\u201360% of the active negative enantiomer that acts as a selective, potent, and reversible inhibitor of non-muscle myosin II without affecting actin filaments assembly. In the multicellular aggregates environment, it impairs the activity of myosins reducing contractility (Figure 2c and d). Its inhibition potency is quantified in vitro by  $I\u2062C_{50}$ values ranging from 2 to 7 \u00b5M depending on myosin type (Zhang et al., 2017). In our experiments, (\u00b1)-blebbistatin is used in a wide range of concentrations (0\u2013160 \u00b5M) and leads to an increase in the aggregate deformation with increasing concentration (Figure 2e) while the inactive (+)-blebbistatin does not affect mechanical properties. Surface tension and Young\u2019s modulus dramatically decrease with (-)-blebbistatin concentration (Figure 2f and g) with a decay of up to tenfold. The extracted $I\u2062C_{50}$ is around 6 \u00b1 2 \u00b5M for surface tension and 4 \u00b13 \u00b5M for elasticity, reproducing the one obtained at the molecular level (as the ratio of the active negative enantiomer is around 50\u201360%).\n\n### Correlation with geometrical analysis: Tensions at the interfaces\n\nBy analogy with fluids, surface tension in multicellular aggregates arises from the energy difference between cells at the interface with the medium and cells surrounded by others. The shape of cells at the surface of multicellular aggregates can thus be used to relate tissue surface tension to cell tensions. Looking at cell surface morphology on multicellular aggregate cryosections (Figure 3a) upon the use of the different drugs, we are able to test the relation between surface cell shape and arrangement, on the one hand, and macroscopic surface tension, on the other. Latrunculin A and EGTA-treated aggregates show rounded cells at the interface while control cells flatten on the surface without extending over multiple cells. (\u00b1)-Blebbistatin-treated aggregates have an intermediate behaviour. To quantify these observations, we extracted both roughness of the profile and mean contact angle $\\alpha$ between cells at the interface (Figure 3). They show similar variations. For control aggregates and (+)-blebbistatin aggregates, cells at the surface spread out, having a flat angle at the CC contacts and a small roughness length. Drug drastic effects can be noticed on EGTA and latrunculin A-treated aggregates: roughness increases (by 3 for the latrunculin A treated cells and by 2 for EGTA treated cells) while contact angles deviate from flat angle to get close to 100\u00b0. Overall, the surface tension variations are correlated with a change in morphology of the cells at the interface. As already noticed (Manning et al., 2010), high tissue surface tension usually appears as the hallmark of flattened cells and low roughness. However, the case of (\u00b1)-blebbistatin inhibitor shows that multiple parameters have to be considered as the low surface tension obtained with the myosin inhibitor does not lead to rounded cells at the interface. Tissue surface tension arises from a balance between cortical tension at the CM and adhesion and cortical tension at the CC interface (Equation 1; Manning et al., 2010; Stirbat et al., 2013). Tissue surface tension quantifies this interplay and not only the tension at the CM interface while being predominant. None of the considered aggregates shows elongated surface cells extending over multiple inner cells, meaning that the effective CC interfacial energy $2\u2062T_{C\u2062C}-J_{C\u2062C}$ is smaller than the double cortical tension at the CM interface. In this configuration, differential interfacial tension hypothesis and more sophisticated models provide similar results (Manning et al., 2010), and the local mechanical equilibrium at the three phases cell/cell/medium contact line gives the relation (Stirbat et al., 2013)\n\n$$\n2T_{CM}cos\u2061(\\frac{\\alpha}{2})=2T_{CC}\u2212J_{CC}\n$$\n\nBoth effective CC tension $2\u2062T_{C\u2062C}-J_{C\u2062C}$ and cortical tension at the CM interface $T_{C\u2062M}$ can then be deduced from surface tension and contact angle measurements:\n\n$$\nT_{CM}=\\frac{\\gamma}{1\u2212cos\u2061\\frac{\\alpha}{2}};2T_{CC}\u2212J_{CC}=2\\gamma\\frac{cos\u2061\\frac{\\alpha}{2}}{1\u2212cos\u2061\\frac{\\alpha}{2}}\n$$\n\nFirst, we checked whether the tension at the CM interface is predominant in the value of surface tension. As noticed on the cryosections, EGTA and latrunculin A impact predominantly the tension at the CM interface with a reduction by a factor of around Figure 3g. By reducing CC adhesion, EGTA impairs the formation of contractile actin network at the frontier of the aggregate, and actin is mostly cortical (Figure 3f). By depolymerizing actin, latrunculin A reduces global cortical tension as well as the CC adhesion by weakening cadherin anchorage through actin. Feedback between adhesion molecules and the cytoskeleton is indeed abundant and explains the lower variations of effective CC tension upon latrunculin A and EGTA addition due to a possible compensation of the tension decrease by a decrease in adhesion ($J_{C\u2062C}$). Besides, blebbistatin has a significant effect on both effective adhesion and tension at the CM as it impacts neither intercellular adhesions nor the cytoskeleton structure but the ability of the cell cortex to contract. By decreasing tension at the cortex, this inhibitor reduces both $T_{C\u2062M}$ and $T_{C\u2062C}$, thus affecting tension and effective CC adhesion in a more drastic way than latrunculin or EGTA. Hence, the magnetic tensiometer appears as a highly sensitive tool to look at tissue model mechanics and its relation with modifications at the cellular level.\n\n### Role of intermediate filaments in macroscopic mechanical properties of muscular tissue models\n\nDesmin is an intermediate filament specific to muscle cells where it plays an essential role in maintaining mechanical integrity and elasticity (Even et al., 2017) at the single-cell level. It stands as a marker for muscular cell differentiation, but its role in tissue surface tension maintenance and elasticity has not been explored. Desmin mutations are involved in human diseases such as certain skeletal and cardiac myopathies (Goldfarb et al., 2004), characterized histologically by intracellular protein aggregates containing desmin. We focus on C2C12 myoblasts expressing desmin with the missense mutation D399Y (Segard et al., 2013). We use three cell lines: A21V cells, which are stably transfected with an empty vector and are control cells; desWT-Cl29 cells, which stably express exogenous wild-type (WT) desmin with a ratio of around 1:1 compared to endogenous desmin; and desD399Y-Cl26 cells, which stably express exogenous mutated desmin with a ratio of around 1:1 compared to endogenous desmin (Delort et al., 2019). Desmin overexpression and modification do not affect desmin organization of adherent cells in the absence of induced protein aggregation (Figure 4\u2014figure supplement 1). Surface tension and Young\u2019s modulus are not or hardly impacted by the overexpression of desmin (wild-type or mutated) (Figure 4f). Comparing A21V cells to desWT-Cl29, one can notice a slight decrease in elasticity (Figure 4f) but it is not measured for desD399Y-Cl26 cells. Besides, as the local contact angle and roughness are similar in all three cell types (Figure 5a and b), the deduced CM and effective CC tensions also have values which are not significantly different (Figure 5e and f). The three actin networks and the phospho-myosin networks (Figure 5\u2014figure supplement 1) are also similar.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig4-v2.jpg)\n\n**Figure 4.:** (a) Representation of desmin with the missense mutation D399Y located in Rod Domain. The expressed exogenous mutated desmin is Myc-tagged at the N-terminus (adapted from Figure 1 from Segard et al., 2013). (b) Experimental procedure. Desmin expression was induced 24 hr after cell plating with doxycycline for 48 hr. Magnetically labelled cells (see \u2018Methods\u2019) experienced an HS for 0, 30, or 120 min before spheroids were moulded. Spheroid surface tension and Young\u2019s modulus were measured 3 days after expression induction. (c) Immunofluorescence images of desWT-Cl29 (cells stably expressing exogenous desmin WT) and desD399Y-Cl26 cells (cells stably expressing exogenous mutated desmin) in 2D after 0, 30, or 120 min HS. DAPI is shown in blue and the Myc-tag in green. Scale bar: 20 \u00b5m. (d) Percentage of cells with desmin protein aggregates for each condition. Desmin protein aggregation increases for desD399Y-Cl26 cells with the duration of the HS while it remains stable around 2% for desWT-Cl29 cells. Mean values represented with respective standard deviations and at least three independent experiments for each condition. (e) Immunofluorescence images of multicellular aggregate cryosections of desWT-Cl29 or desD399Y-Cl26 cells with or without HS. DAPI is visible in blue and the Myc-tag in green. The results are reminiscent of the ones in 2D. DesD399Y-Cl26 spheroids exhibit sparse aggregation without HS, enhanced by 2 hr HS. Scale bar: 200 \u00b5m. See Figure 4\u2014figure supplement 2. (f) Surface tension and Young\u2019s modulus of A21V cells (control cells stably transfected with empty vector) spheroids compared with desWT-Cl29 and desD399Y-Cl26 cells to test for the influence of desmin overexpression. (g) Surface tension and Young\u2019s modulus of A21V cells, desWT-Cl29, and desD399Y-Cl26 spheroids with an HS of 0 (no HS), 30 or 120 min. (f, g) At least three independent experiments for each condition and $N=8$ spheroids. Floating bars represent min to max variations, and the midline indicates the median.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Hoechst signal (nuclei) is shown in blue, and desmin is shown in green. Scale bar: 20 \u00b5m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** DAPI is shown in blue, and Myc is shown in green. Scale bars: 200 \u00b5m and 40 \u00b5m for zoomed images.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig4-figsupp3-v2.jpg)\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig5-v2.jpg)\n\n**Figure 5.:** (a) Profile surface roughness parameter Rq (root-mean-squared) in each condition for at least $N=3$ spheroids. (b) Local contact angle between cells at the surface measured in each condition for at least $N=3$ spheroids. (c) Representative confocal images of actin network for the A21V cells at the surface of the multicellular aggregate with or without HS. Nuclei are labelled in blue and F-actin in red. Scale bar: 25 \u00b5m. (d) Representative confocal images of phospho-myosin and desmin aggregates distribution for cells at the surface of multicellular aggregates. A21V cells are compared to cells overexpressing desmin (desWT-Cl29 and desD399Y-Cl26) after 2 hr heat shock. Nuclei are labelled in blue, phospho-myosin in green, and desmin aggregates in red. Scale bar: 25 \u00b5m. (e, f) Deduced values of the cell tension at the cell\u2013medium interface (f) or of the effective tension at the cell\u2013cell contact (g) in each condition.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a\u2013c) Immunofluorescence images of C2C12 WT (a) or A21V, desWT-Cl29, and desD399Y-Cl26 (c) spheroid cryosections in the different experimental conditions. Nuclei are shown in blue, and phospho-myosin is shown in green. Scale bar: 25 \u00b5m. (b\u2013d) Quantification of phospho-myosin distribution between the centre and border of the spheroids. Ratio between the phospho-myosin fluorescence normalized by the number of nuclei at the centre and border of the spheroid for C2C12 WT (b) or A21V, desWT-Cl29, and desD399Y-Cl26 (d). For all experimental conditions, the ratio is around 1 evidencing a uniform distribution of phospho-myosin across the spheroid. (e, f) Immunofluorescence images of desCl26-D399Y after 2 hr heat shock (HS) in 2D (e) or in 3D (spheroid cryosection) (f). Nuclei, phospho-myosin, and exogenous desmin (Myc) are labelled in blue, green, and magenta, respectively. No increase in phospho-myosin fluorescence intensity is observed in 2D or 3D at the location of the desmin aggregates. Scale bars: 50 \u00b5m.\n\nIn this cellular model, desmin aggregation is induced by heat shock in 2D culture (Figure 4a\u2013d, Figure 4\u2014figure supplement 1) but also in multicellular spheroids (Figure 4e, Figure 4\u2014figure supplement 2). In vivo, heat shock is not a common stress, but in skeletal muscle, it models the increase in heat experienced during exercise and fever in case of infection. In desmin mutated cells (desD399Y-Cl26), heat shock duration monitors the percentage of cells presenting desmin aggregates with up to 30% of cells for 2 hr stress compared to a 2% ratio in the case of wild-type desmin expression (desWT-Cl29) (Figure 4c and d). As desmin aggregation is induced by heat shock in this model, the effect of protein aggregation and of the physical inducer has to be carefully deciphered. Measurements on A21V control cells allow the effect of a heat shock on surface tension and Young\u2019s modulus to be verified. Heat shock decreases both Young\u2019s modulus and surface tension of A21V control aggregates (Figure 4g, Figure 4\u2014figure supplement 3). Conversely, heat shock does not impact roughness and local contact angles between cells at the periphery of the A21V multicellular aggregates (Figure 5a and b). The decrease in surface tension therefore translates at the cell tension level and both CM and CC tensions decrease (Figure 5e and f). This result is corroborated by the observation of actin network at the periphery of the multicellular aggregates: heat shock does not drastically modify actin distribution but slightly decreases the number of stress fibres (Figure 5c). The effect of heat shock on the properties of aggregates of cells overexpressing WT desmin (desWT-Cl29) is similar to that observed for A21V control cells (Figure 4g, Figure 4\u2014figure supplement 3), but different for aggregates of cells overexpressing mutated desmin (desD399Y-Cl26) (Figure 4g, Figure 4\u2014figure supplement 3). Focusing on desmin organization, we compare cells expressing mutated desmin (desD399Y-Cl26) with cells expressing wild-type desmin (desWT-Cl29). An increase in surface tension and elasticity dependent on the heat shock duration is observed in cells overexpressing mutated desmin (Figure 4f and g): the surface tension of spheroids of desD399Y-Cl26 cells is 1.9-fold higher than the one of desWT-Cl29 cells and their elasticity is 2-fold higher for 30 min heat shock. The effect is even greater for a 2 hr heat shock with a two times higher surface tension of multicellular aggregates and a three times higher Young\u2019s modulus for cells expressing mutated desmin compared to cells expressing the wild-type desmin. The effects on mechanical properties are therefore correlated with the percentage of cells containing desmin aggregates. Local cell disorganization modifies surface tension probably through individual cell tension modifications.\n\nLooking at the local geometry at the surface of multicellular aggregates, cells overexpressing desmin also show a predominance of tension at the CM interface (Figure 5). When desmin overexpression is induced, cortical tension at the CM interface slightly increases (by a factor of 2) comparing desWT-Cl29 and desD399Y-Cl26 spheroids with a 2 hr HS while effective adhesion is less impacted. Overexpression of wild-type and mutated desmin does not change phospho-myosin distribution on the overall aggregate (Figure 5\u2014figure supplement 1) and desmin aggregates are not colocalized with contractile points (Figure 5, Figure 5\u2014figure supplement 1). However, mutated desmin aggregation strengthens long-range phospho-myosin filaments at the periphery of the spheroid (Figure 5d) which increases acto-myosin network contractility.\n\n## Discussion\n\nMagnetic tensiometry gives a high sensitivity and precision even on a cellular system that does not easily deform as muscle cells. It thus pushes back the limits of macroscopic mechanics sensitivity to molecular modifications. In this study, the values obtained for cellular tensions either at the CM interface or at the intercellular one confirm this specificity as tensions are 2\u20133 orders of magnitude higher than the ones measured in 3D F9 aggregates (Stirbat et al., 2013) or in embryos (Ma\u00eetre et al., 2012; Ma\u00eetre et al., 2015). This result is not surprising as spheroids of C2C12 cells are organized in a highly contractile structure with a high density of stress fibres at the periphery. This tensile network makes them challenging to characterize, thus requiering sensitive tools. Magnetic tensiometer sensitivity even for these high-surface tension model tissues is in the range of the one obtained with compression plates tensiometer experiments for lower surface tension cell aggregates (Mgharbel et al., 2009) and proves to be more accurate for more deformable spheroids (Mazuel et al., 2015). The accessible range of measurable surface tension with the magnetic tensiometer is therefore larger.\n\nIn addition, the magnetic tensiometer measurements make it possible to provide dose\u2013response curves, thus representing an accurate tool to quantitatively determine inhibitors\u2019 action on mechanical properties. Its robustness is related to the spheroid formation technique that allows providing well-controlled aggregates of unprecedented size with radius and content perfectly monitored in less than 24 hr (Mazuel et al., 2015). It offers a unique opportunity to explore mechanical properties even in a dose-dependent manner and quantitatively extract the effects of mutations.\n\nMeasuring surface tension and elasticity proves to be a powerful tool to explore tissue mechanical properties. Both are key elements of tissue shape maintenance (Dahmann et al., 2011; Kim et al., 2021). Looking at 3D unorganized model tissues, we recapitulate the major cellular factors that influence tissue shape and response to perturbations. Unsurprisingly, intercellular adhesions and actin cortex structure or contractility are fundamental as was already demonstrated in vivo (K\u00e4fer et al., 2007; Iijima et al., 2020). Their decrease reduces both surface tension and elasticity (Figure 6). In this study, the major contribution of cell contractility in tissue shape maintenance is pointed out regarding the resulting decay obtained for surface tension and stiffness at high concentrations of (+/-)-blebbistatin. Inhibition at the microscopic level correlates with surface tension and elasticity evolution, confirming them as relevant indicators of molecular state and cellular contractility checked by looking at acto-myosin network. The crucial role of acto-myosin contractility is also corroborated by microscopic observations. Long-range actin network at the periphery of the multicellular aggregates is fundamental to macroscopic shape maintenance while the slightest modification of this network drastically changes this property.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76409/elife-76409-fig6-v2.jpg)\n\n**Figure 6.:** Evolution of $\\gamma$, E, $T_{C\u2062M}$, and 2 $T_{C\u2062C}-J_{C\u2062C}$ depending on intercellular adhesions, actin network, acto-myosin contractility, and intermediate filaments.\n\nAltogether, our results suggest that measuring mechanical properties at tissue scale provides insights into the molecular level (Gradeci et al., 2021) and that, conversely, molecular modifications can induce mechanical changes at tissue scale. Complemented by local measurements of the contact angle of cells at the surface of our multicellular aggregates, our approach is able to determine the relative influence of cytoskeleton structure, adhesion molecules, and cortical tension on the surface tension and may distinguish tension from adhesion modifications.\n\nDesmin is the most representative intermediate filament for muscle cells. It has a pivotal role in myofibril architecture in mature muscle but also exerts important function on the adaptation of muscle cells to passive stretch and contractility (Diermeier et al., 2017). Desmin organization defects severely impact muscle formation and maintenance, causing myopathies or cardiomyopathies (Batonnet-Pichon et al., 2017). In desminopathies, desmin aggregates are characteristic of the pathology; however, these aggregates remain heterogeneously distributed within the cardiac or skeletal muscle tissues. Furthermore, the adult onset of the disease and the wide spectrum of phenotypes point to a sensitivity to the environmental factors. Heat shock taken as an exogenous stress in our cell model manages to mimic heterogenous desmin aggregation in model tissues. However, at the same time, it is documented that the heat stress chosen as a transducer of desmin aggregation in desD399Y cells can affect the biomechanical properties of skeletal muscle cells or myofibres (Locke and Celotti, 2014). In our experiments, we reproduce these results as heat shock decreases both surface tension and Young\u2019s modulus for cells without desmin aggregation by impacting actin contractility. This mechanism observed in vivo may be seen as a protective effect to avoid muscle damage. Desmin aggregation seems to impair this mechanism and is potentially the signature of a lack of cell adaptation.\n\nFurthermore, in single cells, desmin aggregation has been associated with sarcomere misalignment but also impacts biomechanical properties (Clemen et al., 2013). We measure its action on surface tension and elasticity: desmin aggregation leads to an increase in both elasticity and surface tension. Desmin acts on muscle functioning and integrity (Charrier et al., 2018; van Bodegraven and Etienne-Manneville, 2021), and its disorganization may hinder individual cell contractility (Franck et al., 2019) and homeostasis (Agnetti et al., 2022). Our results highlight its major role at the tissue level where it impacts cell tension mainly at the CM interface by increasing cell contractility. In zebrafish, it was shown that invalidation of the snaib factor induced extrusion of cardiomyocytes with increased contractility and an alteration in the desmb gene (orthologue of the des gene in humans) (Gentile et al., 2021). Overexpression of desmin recapitulates this process and highlights its role in maintaining the myocardial wall. In our model, desmin does not increase but is mutated, and this mutation induces desmin aggregation. However, the same increase in contractility which may lead over time to myofibril fragility could have an impact on sarcomere alignment and force transmission in cardiac or skeletal muscle in myopathies. Intermediate filament organization therefore appears essential in muscle tissue shape maintenance and mechanical properties even at an early stage of differentiation. At the individual scale, mutated desmin cells show modified reorientation dynamics (Leccia et al., 2013) and are slightly (but not significantly) stiffer (Even et al., 2017), a behaviour reminiscent of the elasticity increase noticed on mutated desmin filaments D399Y (Kreplak and B\u00e4r, 2009). However, 2D studies fail to reproduce the severity of the effects on tissue mechanics. Conversely, stiffening is translated at the multicellular scale on the Young\u2019s modulus (Figure 4g) but the effect is enhanced. While a 1.4-fold increase was noticed in single-cell elasticity, macroscopic Young\u2019s modulus of multicellular aggregates significantly increased by 3-fold when comparing mutated to wild-type desmin. Moreover, while desmin overexpression does not affect surface tension (Figure 4f), desmin protein aggregation raises its value (Figure 4g). By giving more rigid network nodes, protein aggregates actually strengthen cell cortex (Even et al., 2017) and may reinforce effective cortex tension, thus increasing tissue surface tension. Compared to wild-type desmin, they enhance macroscopic long-range contractile network efficiency.\n\nWe demonstrate that desmin aggregation impacts both elasticity and surface tension of myoblast spheroids, pointing out the importance of desmin organization on macroscopic tissue mechanics even at an early stage of differentiation. Surface tension and elasticity are thus sensitive reporters of the individual cellular state but also of the multicellular organization. Two reasons may be involved. First, spheroids are made of about 150,000 cells; measuring macroscopic properties allows the properties of individual cells to be averaged over a large population. Secondly, collective effects appear as the change in cell organization modulates both CM and CC tensions, both of which are involved in surface tension (Stirbat et al., 2013). Desmin maintains the shape of multicellular aggregate, its role on individual cell is translated, and its action is enhanced at the tissue level.\n\n### Conclusion\n\nMacroscopic properties of multicellular spheroids such as surface tension and elasticity appear as highly sensitive markers for cell cortex and CC adhesion modifications. Measuring them by an approach based on magnetic cell labelling and multicellular aggregate tensiometry allows exploring dose\u2013response evolution correlated with microscopic inhibition potency. The precision provided by the magnetic tensiometer opens a new field of investigation to test the impact of potential drugs or genetic modifications on the mechanics of early-stage tissue models that can be extended to little deformable cell types. We first identified the usual suspects of cellular mechanics (actin network, acto-myosin contractility, and CC adhesion) as being fundamental in tissue surface tension and elasticity, but our approach was also used on a cellular model of desmin-related myopathies. It demonstrated the crucial role of intermediate filaments in tissue shape maintenance and Young\u2019s modulus. Desmin disorganization induces macroscopic changes in early-stage tissue models, detected only at the individual cellular scale. Like actin or cadherins, desmin acts as an important integrator of tissue shape maintenance. The fully integrated system of magnetic moulding and magnetic tensiometry can be envisioned as a powerful tool for the study of fundamental biological processes and the detection of mechanical effects, leading to a better understanding of skeletal muscle dystrophies.\n\n## Methods\n\n### C2C12 cell culture\n\nC2C12 WT (CRL-1772; RRID:CVCL_0188) were obtained from ATCC and cultured in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM, Gibco), supplemented with 1% Penicillin-Streptomycin (P/S, Gibco) and 10% fetal bovine serum (FBS, Gibco). Their identity has been authenticated by COI assay. C2C12 A21V (stably transfected with empty vector), desWT-Cl29 (stably expressing exogenous human WT desmin), and desD399Y-Cl26 (stably expressing exogenous human D399Y desmin) were cultured in 1% P/S, 20% FBS, 1 mg/mL geneticin (10131027, Gibco) and 2 \u00b5g/mL puromycin (P7255, Sigma-Aldrich) as described in Segard et al., 2013. All cell lines were tested negative for mycoplasma contamination.\n\n### Magnetic labelling\n\nIron oxide superparamagnetic nanoparticles (8 nm diameter) (provided by PHENIX Laboratory, UMR 8234, Paris) were obtained by alkaline coprecipitation followed by oxidation into maghemite according to Massart, 1981 procedure. Finally, the aqueous solution was stabilized electrostatically by the adsorption of citrate anions on the nanoparticles surface. Cells were magnetically labelled with an incubation of 2 hr with a solution of iron oxide nanoparticles at $[F\u2062e]=4$ mM and supplemented with 5 mM citrate in RPMI medium (Gibco). The viability and proliferation of cells after magnetic labelling were assessed by Alamar Blue showing no impact of the magnetic labelling right after the labelling or after 1 day (Figure 1\u2014figure supplement 1).\n\n### Magnetic moulding\n\nLabelled C2C12 cells were incubated for at least 2 hr in complete medium. Agarose moulds were previously prepared by heating a solution of 2% agarose (A0576, Sigma-Aldrich) in phosphate-buffered saline (PBS) up to boiling. The resulting solution was then poured into a 60 mm culture Petri dish containing 1.6 mm steel beads (BI 00151, CIMAP) held in place by magnets below the Petri dish. Once the agarose solidified, the beads were removed carefully and the agarose wells were coated with a non-adhesive coating solution (07010, Stemcell Technologies) for 30 min at room temperature (RT). Cells were then detached with 0.05% Trypsin-EDTA and seeded in the wells using magnet attraction (about 1.5 x 105 cells per well). Spheroids were then incubated overnight at 37\u00b0C, 5% CO2 in complete medium in normal conditions. At this point, the culture medium may be modified to add inhibitors (Figure 1). Spheroids were then extracted from the wells by gently pipetting the surrounding liquid. Spheroids of 530 \u00b1 60 \u00b5m radius (N = 167) were obtained. By measuring the magnetic moment of the aggregate with vibrating-sample magnetometer (VSM) measurements (PPMS \u2013 Quantum Design), the magnetic moment per unit volume of the aggregate $M_{v}$ can be determined and the value of surface tension deduced. $M_{v}$ measurements ranged from 150 to 500 A.m\u20131 and were determined for each experiment. The force per unit of volume exerted on the spheroids ranged from $2.5\\times10^{4}$ to $8.5\\times10^{4}N.m^{\u22123}$.\n\n### Magnetic force tensiometer\n\nThe magnetic force tensiometer is composed of a temperature-regulated tank at 37\u00b0C sealed at the bottom and the sides by glass slides, a 6 \u00d7 6 mm cylindrical neodymium permanent magnet (S-06-06N, Supermagnete, $B=530mT$, $grad(B)=170T/m$, averaged value between 250 \u00b5m and 1.75 mm from the surface of the magnet), a lifting stage to approach the magnet and a camera (QICAM FAST1394, QImaging) equipped with a \u00d71.5 zoom lens (MVL6X12Z, Thorlabs). The temperature-regulated tank is filled with a transparent culture medium (DMEM, high glucose, HEPES, no phenol red, Gibco). The bottom slide is treated with a non-adhesive solution (07010, Stemcell Technologies) to guarantee non-wetting conditions for the multicellular spheroids. Horizontality of the bottom slide has to be carefully checked. The aggregate side profile is registered with the camera. The magnet is approached at 150 \u00b5m from the bottom of the aggregate. The macroscopic mechanical properties of the spheroid are obtained by the spheroid profile at equilibrium (10 min under magnetic flattening to ensure that equilibrium is reached). Surface tension is measured by fitting the spheroid profile at equilibrium with Laplace profile while Young\u2019s modulus is determined with respect to the radius of the contact zone $L$ and using Hertz theory as described in Mazuel et al., 2015. The Young\u2019s modulus $E$ equals $E=\\frac{(1-\\sigma^{2})\u2062\\pi\u2062M_{v}\u2062g\u2062r\u2062a\u2062d\u2062(B)\u2062R^{4}}{L^{3}}$, where $\\sigma$ stands for the Poisson ratio ($\\sigma=1/2$), $M_{V}$ represents the magnetic moment per unit volume, B the magnetic field and $R$ and $L$ are the initial radius and radius of the contact zone, respectively. Briefly for the surface tension measurements, theoretical profiles were obtained by integrating numerically the Laplace law for capillarity and minimizing the quadratic error on the height $h$, width $w$, and volume $V$ of the spheroid (Figure 1\u2014figure supplement 3) to extract the capillary constant $c=\\frac{M_{v}\u2062g\u2062r\u2062a\u2062d\u2062(B)}{\\gamma}$ (Kalantarian et al., 2009). Depending on the conditions, flattening occurs either with a two times regime or exhibits a single time decay. Spheroids have two ways of deformations to reach their capillary-driven equilibrium shape: first, a rapid elastic deformation, then a more viscous fluid behaviour. This competition is driven by the size of the aggregate, meaning that above a critical radius $R_{C}$ (Mazuel et al., 2015), elastic deformation is complete and may be followed by viscous-like behaviour to reach capillary-driven limit. Here, all the measurements were done with a spheroid radius in the range of this critical radius so that Young\u2019s modulus can be extracted. This modulus is extracted at the end of the elastic deformation while the surface tension is deduced from equilibrium shape. Tensio\u2009$X$ is a dedicated MATLAB-generated application freely available to extract both surface tension and Young\u2019s modulus from initial and flattened profiles. Images of the initial and final state are first downloaded. The user has to define the initial radius, height, and width by pointing left/right and top/bottom frontiers of the spheroid on the two images. The radius of the contact zone is also extracted. The scale factor, magnetic force per unit volume, and an estimated surface tension value are entered. The obtained fit is then superimposed on the flattened spheroid image to check for its relevance and the deduced Young\u2019s modulus and surface tension are registered in a separate data file.\n\n### Measurements of mechanical properties of C2C12 spheroids\n\n#### In drug conditions\n\nFor inhibitor conditions, the drug was added to the medium when the cells were seeded in the wells. C2C12 spheroids were then incubated overnight at 37\u00b0C, 5% CO2 in DMEM 10% FBS, 1% P/S supplemented with the chosen concentration of EGTA (03777, Sigma-Aldrich), latrunculin A (L5163, Sigma-Aldrich), (+)-blebbistatin (203392, Sigma-Aldrich) or (\u00b1)-blebbistatin (203390, Sigma-Aldrich). For (\u00b1)-blebbistatin, inhibition curves were fitted with the function $Y\u2062(X)=B\u2062o\u2062t\u2062t\u2062o\u2062m+\\frac{(T\u2062o\u2062p-B\u2062o\u2062t\u2062t\u2062o\u2062m)}{1+\\frac{I\u2062C_{50}}{X}^{H\u2062i\u2062l\u2062l\u2062S\u2062l\u2062o\u2062p\u2062e}}$ and with no constraints applied to the four variable parameters.\n\n#### C2C12 expressing mutated desmin\n\nAt day 0, cells were plated at $3000\u2062cells/cm^{2}$ ($2.25\\times10^{5}$ cells seeded in a T-75 flask). After 24 hr of incubation at 37\u00b0C, 5% CO2, expression of exogen desmin was induced by supplementing the culture medium with 10 \u00b5g/mL doxycycline (D9891, Sigma-Aldrich) for 2 days. The medium was replaced with fresh medium every 24 hr. Iron oxide nanoparticles were incorporated into the cells on day 3. After 2 hr of recovery, a heat shock (HS) with a water bath at 42\u00b0C for 0, 30, or 120 min was applied to the cells. 2 hr later, cells were detached and used to form spheroids by magnetic moulding or seeded in 24-well plates for desmin aggregation evaluation. After an overnight incubation at 37\u00b0C, 5% CO2, spheroids were magnetically flattened to measure their mechanical macroscopic properties, then fixed for 1 hr at room temperature in 4% paraformaldehyde (PFA, J61899, Alfa Aesar). The corresponding cells grown in 2D in the 24-well plates were fixed for 15\u201320 min at RT in 4% PFA to assess the percentage of cells with Myc aggregation for each condition.\n\n#### Cryosections and immunofluorescence\n\nSpheroids were fixed in 4% PFA for 1 hr at RT and stored in PBS at 4\u00b0C. For cryosections, spheroids were embedded in OCT (Optimal Cutting Compound, 361603E, VWR) for 1 hr at RT, they were then frozen in iso-pentane (24872.260, VWR), cooled down in liquid nitrogen, and then stored at -20\u00b0C. 6\u201310 \u00b5m cryosections were obtained (Leica CM1520). For immunofluorescence labelling, cryosections or fixed cells were permeabilized 15\u201320 min in 0.1% Triton X-100 at RT while whole aggregates were permeabilized 1 day in 1% Triton X-100 at 4\u00b0C. Non-specific interactions were prevented by an incubation with 5% BSA (#05479, Sigma-Aldrich) for 1 hr at RT (increased to 2 days at 4\u00b0C for whole aggregates). Pan-cadherin (rabbit anti-pan cadherin [dilution 1:100 in PBS 0.5% BSA, C3678, Sigma] for 2 hr at RT), phospho-myosin (rabbit phospho-myosin light chain 2 [Thr18/Ser19] antibody [dilution 1:50 in PBS 0.5% BSA, #3674, Cell Signaling] for 2 hr at RT), and desmin (dilution 1:100, in PBS 0.5% BSA, [D8281 or SAB4200707, Sigma] for 2 hr at RT) were labelled. The two first primary antibodies were coupled with an Alexa Fluor 488 goat anti-rabbit secondary antibody (dilution 1:500 in PBS 0.5% BSA, #4412, Cell Signaling Technology) for 2 hr at RT while the last one was coupled to an Alexa Fluor 555 anti-mouse secondary antibody. Myc was labelled using mouse c-Myc (9E10) Alexa Fluor 647 (dilution 1:100 in PBS 0.5% BSA, sc-40AF647, Santa Cruz Biotechnologies) for 2 hr at RT. F-actin was labelled using SiR-actin or SPY555-actin (dilution 1:1000 in PBS, Spirochrome) for 1 hr 30 min at RT, while nuclei were labelled with DAPI (dilution 1:1000 in PBS, D9564, Sigma-Aldrich) or Hoechst 33342 (dilution 1:1000 in PBS, H3570, Invitrogen) for 15\u201320 min at RT. All the samples were mounted with Fluoromount (F4680, Sigma-Aldrich) and stored at 4\u00b0C after gelation of the mounting medium at RT. Labelling of the whole aggregates was done in the same conditions, but the incubation times were extended to 2 days at 4\u00b0C. Cryosections were imaged either on a Nikon microscope A1r25HD with a \u00d7100 oil objective or on an Axio observer Zeiss microscope equipped with a CSU-X1 Spinning disk with a \u00d763 oil objective. Whole aggregates were imaged on a Zeiss 780 confocal microscope equipped with a \u00d720 water immersion objective.\n\n#### Roughness measurements\n\nThe contour profile of the spheroids was extracted manually with Fiji (ImageJ) from immunofluorescence images of spheroid cryosections (pan-cadherin, F-actin, or phospho-myosin). The extracted experimental profile was then fitted by a circular arc and the roughness parameter $R_{q}$ was measured by computing for each experimental point the distance $z$ to the circular arc and then calculating $R_{q}=\\frac{1}{N}\u2062\\sqrt{\\sum_{i}z_{i}^{2}}$ with $N$ being the number of points of the experimental contour. The smaller $R_{q}$ is, the less rough the surface of the spheroid is, and the closer it is to a circular arc.\n\n#### Local contact angle measurements\n\nLocal contact angles were measured with respect to pan-cadherin immunofluorescence images of spheroid cryosections or spheroids imaged in 3D. Contact angles between cells at the spheroid surface were measured using Fiji (ImageJ). Pan-cadherin labelling was used to confirm the adhesion between two neighbouring cells for each measurement. Measurements were performed on at least three spheroids for each condition, and angles were measured all over the surface of the spheroid. No significant differences were noticed regarding the imaging source (cryosections or spheroids) as evidenced in Figure 3\u2014figure supplement 1.\n\n### Statistical analysis\n\nAll statistical tests were performed with a two-sided Mann\u2013Whitney U test (Wilcoxon test) using MATLAB. p-Values are used to indicate the statistical significance of the results (*, **, and *** correspond to p<0.05, p<0.01, and p<0.001, respectively).\n",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "a9d97d4c-3799-47d7-aedc-3337de97242e",
+      "submission_id": "0c55d0da-2ede-4d3e-aa4b-9d721ed12680",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76409.sa0](https://doi.org/10.7554/eLife.76409.sa0)\n\nThis important work studied the determinants of key physical properties of multicellular assemblies using magnetic flattening of spheroids. The key and convincing result is that intermediate filaments could also be implicated in the setting of the elastic properties of these assemblies, shedding light on this central cellular component and how their modifications could be important to the understanding of some pathologies.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76409.sa1](https://doi.org/10.7554/eLife.76409.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Multiparameters dependance of tissue shape maintenance in myoblasts multicellular aggregates: the role of intermediate filaments\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Morgan Delarue (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The determination of \u03b3 and the Young's modulus relies on analysis of the aggregate shape. What are the assumptions on the structure of the aggregate and are these fulfilled? It looks like aggregate mechanics are dominated by the first few rows of cells at the surface. What assumptions are made about the aggregate interior? In many images like Figures3a, 4e, S2b, S6 or S7, it looks like the cells do not uniformly fill the aggregate interior and that there are clear gaps between cells. Is this an artefact of the fixation and cryosectioning? Or do the cells in the interior not form a cohesive material? If the cells do not form a cohesive interior, this may explain why the surface tension and the apparent elasticity of the aggregates are so tightly coupled (Figure S5). It would be useful to image some aggregates with live confocal microscopy or light sheet microscopy.\n\n2) The link between single cell properties and aggregate mechanics could be strengthened. The mechanical measurements are done on the aggregates and the single cell mechanical changes are mostly inferred from \u03b3 using the angle of contact. So there no independent determinations of Tcc or Tcm. The changes in cytoskeletal organisation remain very qualitative and could be exploited by systematically quantifying the image data to show changes in F-actin, cadherin, and phosphomyosin. For example, the authors claim that desmin aggregation increases surface tension and cortical tension. They could determine if desmin aggregation leads to an increase in phosphomyosin in those locations. The methods indicate that phosphomyosin staining has been done but this appears nowhere in the figures \u2013 yet this is likely an important piece of data. On page 5, the authors suggest that the low change in effective adhesion in response to latA and EGTA addition may be due to an increase in adhesion. This could be verified and quantified from the immunostainings.\n\n3) The main conclusions are largely confirmatory except for the role of desmin. The effects of decreased myosin contractility, depolymerisation of F-actin, and decreasing intercellular adhesion are largely expected. We find the data about Desmin's role confusing. In particular, the authors do not compare the mechanical properties of aggregates pre vs post HS. Yet, these comparisons seem to go against their main conclusion that desmin aggregation increases surface tension. In Figure 4f, we can see that prior to heat shock, \u03b3 is about 75mN/m in the two desmin lines and E is about 500-600Pa. After heat shock, the surface tension of the WT desmin decreases to 40-50 mN/m but the D399Y (that shows increases aggregation) does not change compared to no HS. Similarly, after HS, E for the WT desmin decreases to 300 Pa while for the D399Y it remains unchanged at 500 Pa. So my conclusions based on this data is not that Desmin aggregation increases surface tension, rather that the mechanics of aggregates of cells expressing D399Y do not change with HS. This can also be seen on Figure S9. We would be curious to know what HS does to A21V aggregates. This may allow the authors to determine if some of the reported effects are due to overexpression of desmin.\n\n4) The authors have collected a significant amount of immunostaining data to link aggregate mechanics to single cell changes. In the current presentation of the data, it is difficult to really assess their conclusions because, even with a very high zoom on the figures, individual cells are difficult to distinguish. For example, we could not judge whether we agreed or not with the changes in angle of contact reported in Figure 3. Similarly on S6 and S7, even with the zoomed images, it is very difficult to really distinguish individual cells, assess their morphological changes, and determine if there are any changes in cadherin, F-actin, etc. Furthermore, it would be useful to show the separate channels for those zooms so that the readers can see the changes in adhesion and F-actin. S8 is better in that respect.\n\n5) To determine the effect of intercellular adhesion, the authors treat the aggregates with EGTA. This is not a very clean treatment because EGTA chelates extracellular calcium and can also deplete intracellular calcium if cells are left in calcium free medium for too long. A decrease in intracellular calcium concentration can affect myosin contractility. Therefore the effects of the EGTA treatment may be a combination of decrease in adhesion and myosin contraction.\n\n6) Determination of the angle between cells, alpha:\n\nWe were surprised to not find any real image example of how alpha was determined. This point is however crucial, as the determination of this parameter is essential to disentangle cortical tension from effective adhesion. More specifically:\n\n\u2013 The schematic of Figure 3c is not enough in our view to see how these measurements are done, with which precision, etc. Could the authors show some sample pictures? Can the authors better explain the image analysis procedure with FIJI: is this automatic, by hand? What is the precision of the measurement, and how does it compare to the variability observed in Figure 3d?\n\n\u2013 Crysectioning can deform the object, which can lead to errors in alpha determination. Can the authors comment? Why not staining the spheroid directly and performing 3D imaging, since the estimation is only at the surface?\n\n\u2013 Even though there must be a great number of cells analyzed (how many?), N = 2 spheroids may be too limited to reach the conclusions. Can the authors perform statistical tests for the data presented in Figure 3e and 3f?\n\n7) Effect of heat shock and conclusions on desmin:\n\nIt is hard for us, at the moment, to draw conclusions on the desmin experiments. In particular, we find it odd that there were no discussion on the sole effect of heat shock (HS). Besides, we were surprised to not find results on how the A21V control cells react to the heat shock. More specifically:\n\n\u2013 Can the authors plot on the same graph the data together? It would make it easier to compare them. Could they perform statistical analysis on the different pairs, when plotted together?\n\n\u2013 It seems that the most striking result is that both surface tension and elasticity of desWT cells decrease under HS, while the values for desD399Y seem to not change. Can the authors comment on this? It seems that HS alone does a lot to the cells. How does the A21V control compare here, in particular?\n\n\u2013 We believe that the authors would have the means to perform the same kind of analysis they did for Figure 3. It would be very interesting to measure, in every condition (A21V, desWT and desD399Y) how cortical tension and effective adhesion are affected by HS and by the desmin anti-sense mutation.\n",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "433097ff-84b8-4ad0-8f1f-f0f456c6da6a",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C1",
+      "claim": "C2C12 cells are labelled with superparamagnetic nanoparticles without altering their biological capacities.",
+      "claim_type": "EXPLICIT",
+      "source": "C2C12 cells are labelled with superparamagnetic nanoparticles without altering their biological capacities (Van de Walle et al., 2020a; Van de Walle et al., 2020b) nor inducing hypoxia or apoptosis (Figure 1\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Van de Walle et al., 2020a and 2020b, and by data shown in Figure 1\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "effce237-0114-4ad0-8662-90fd370e2446",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C2",
+      "claim": "Magnetic labelling of C2C12 cells does not induce hypoxia or apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "C2C12 cells are labelled with superparamagnetic nanoparticles without altering their biological capacities (Van de Walle et al., 2020a; Van de Walle et al., 2020b) nor inducing hypoxia or apoptosis (Figure 1\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplements 1 and 2 demonstrating absence of HIF\u03b1 and cleaved caspase-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "1d099a2b-1bda-4820-9138-2a338c04d466",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C3",
+      "claim": "Cohesive C2C12 spheroids are obtained within 12 hr using magnetic moulding.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesive spheroids are obtained within 12 hr (Figure 1b) and their side profile is imaged (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in the text and supported by Figure 1b showing spheroid formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "e5709ce1-23f0-4afe-8f3b-bceb05e1121f",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C4",
+      "claim": "Multicellular spheroids are fulfilled with cohesive cells that organize to form a tissue model with rounded cells at the core having cortical actin and more elongated cells at the periphery having contractile actin network.",
+      "claim_type": "EXPLICIT",
+      "source": "Multicellular spheroids are fulfilled with cohesive cells that organize to form a tissue model with rounded cells at the core of the aggregate having cortical actin and more elongated cells at the periphery having contractile actin network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by confocal imaging data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "89c9fd2d-f63e-4f8a-900e-7cd6b8caa757",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C5",
+      "claim": "A multicellular cohesive aggregate can be modelled as a continuous elastic medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that a multicellular cohesive aggregate can be modelled as a continuous elastic medium (as supported by confocal imaging, Figure 1b), surface tension and magnetic forces in volume compete to determine the equilibrium shape (Kalantarian et al., 2009)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Assumption supported by confocal imaging in Figure 1b and cited work by Kalantarian et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "e082379b-ef09-4e16-bb33-acc3592264fa",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C6",
+      "claim": "Surface tension and magnetic forces in volume compete to determine the equilibrium shape of multicellular aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "surface tension and magnetic forces in volume compete to determine the equilibrium shape (Kalantarian et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kalantarian et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "2f1d00f6-35c2-477b-9977-c76c7bb93cd1",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C8",
+      "claim": "The error measurement on the deformations is around 2\u20135 \u00b5m for C2C12 multicellular spheroids.",
+      "claim_type": "EXPLICIT",
+      "source": "The error measurement on the deformations is around 2\u20135 \u00b5m, leading to a precision in the range of 5\u201320% for surface tension and 5\u201310% for the elasticity of C2C12 multicellular spheroids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement precision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "373621c0-7a0b-4f57-be45-e0fdf1fd4fd2",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C9",
+      "claim": "The precision is in the range of 5\u201320% for surface tension measurements of C2C12 multicellular spheroids.",
+      "claim_type": "EXPLICIT",
+      "source": "The error measurement on the deformations is around 2\u20135 \u00b5m, leading to a precision in the range of 5\u201320% for surface tension and 5\u201310% for the elasticity of C2C12 multicellular spheroids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement precision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "1d200ee7-93e8-4e85-9bad-82b257d1686e",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C10",
+      "claim": "The precision is in the range of 5\u201310% for elasticity measurements of C2C12 multicellular spheroids.",
+      "claim_type": "EXPLICIT",
+      "source": "The error measurement on the deformations is around 2\u20135 \u00b5m, leading to a precision in the range of 5\u201320% for surface tension and 5\u201310% for the elasticity of C2C12 multicellular spheroids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated measurement precision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "f7a7349a-21c2-4576-b89c-68655f8eb7fe",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C11",
+      "claim": "The surface tension of C2C12 spheroids is two orders of magnitude greater than that of classically studied cells such as F9 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, it should be noted that the surface tension of C2C12 spheroids is two orders of magnitude greater than that of classically studied cells such as F9 cells, for example.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct comparison stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "0204901d-a5b4-4bf1-8e5e-5d6f1f8a4669",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C12",
+      "claim": "The error increases with surface tension because the spheroids are less deformed.",
+      "claim_type": "EXPLICIT",
+      "source": "The error increases with surface tension because the spheroids are less deformed, which makes C2C12 cells challenging to characterize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical explanation provided in the text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "e56e2593-15dd-4115-b0ce-c38367f37845",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C13",
+      "claim": "EGTA addition leads to a more than fivefold decrease in both Young's modulus and surface tension.",
+      "claim_type": "EXPLICIT",
+      "source": "EGTA addition leads to a more than fivefold decrease in both Young's modulus and surface tension (Figure 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "6dda3577-d7d1-4cc1-8d59-ae8b61f303bd",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C14",
+      "claim": "An apparent proportionality between surface tension and Young's modulus is obtained across all conditions tested for C2C12 spheroids.",
+      "claim_type": "EXPLICIT",
+      "source": "An apparent proportionality between surface tension and Young's modulus is obtained (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "bc76ba28-5b4e-4be9-8efa-96aae73d67ad",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C15",
+      "claim": "Latrunculin A disrupts the actin filaments by binding to actin monomers, thus precluding its polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Latrunculin A disrupts the actin filaments by binding to actin monomers, thus precluding its polymerization (Cou\u00e9 et al., 1987)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cou\u00e9 et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "0e502a98-8ceb-48bd-8727-01d0ee51ff73",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C16",
+      "claim": "Latrunculin A addition gives some non-connected patches of actin filaments with a lack of long-range organization.",
+      "claim_type": "EXPLICIT",
+      "source": "its addition gives some non-connected patches of actin filaments with a lack of long-range organization (Figure 3f, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3f and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "0fba5dfb-fedf-449e-aa9a-8ad99fed87d9",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C17",
+      "claim": "Young's modulus and surface tension are dramatically decreased by latrunculin A presence.",
+      "claim_type": "EXPLICIT",
+      "source": "Young's modulus, as well as surface tension, is dramatically decreased by its presence (Figure 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "95ef9c30-18dd-4d55-8a77-ea51afcc6fff",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C18",
+      "claim": "Latrunculin A action on macroscopic properties is dose-dependent with twofold decrease at 0.15 \u00b5M and five- to sevenfold decrease at 0.25 \u00b5M concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, its action on macroscopic properties is dose-dependent as seen by the comparison between 0.15 \u00b5M (twofold decrease) and 0.25 \u00b5M (five- to sevenfold decrease) concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of data at different concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "283b12fb-494a-448a-8cc3-0d049c77a117",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C19",
+      "claim": "(\u00b1)-Blebbistatin is a cell-permeable mixed compound containing around 50\u201360% of the active negative enantiomer.",
+      "claim_type": "EXPLICIT",
+      "source": "(\u00b1)-Blebbistatin is a cell-permeable mixed compound containing around 50\u201360% of the active negative enantiomer that acts as a selective, potent, and reversible inhibitor of non-muscle myosin II without affecting actin filaments assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about the compound composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "2b193ac3-8475-4c07-9772-93020074b2a3",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C20",
+      "claim": "(-)-Blebbistatin acts as a selective, potent, and reversible inhibitor of non-muscle myosin II without affecting actin filaments assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "(\u00b1)-Blebbistatin is a cell-permeable mixed compound containing around 50\u201360% of the active negative enantiomer that acts as a selective, potent, and reversible inhibitor of non-muscle myosin II without affecting actin filaments assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about blebbistatin mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "88600076-2d93-4b50-9c48-f33f9eaa44d1",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C21",
+      "claim": "(-)-Blebbistatin impairs the activity of myosins reducing contractility in multicellular aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "In the multicellular aggregates environment, it impairs the activity of myosins reducing contractility (Figure 2c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "b480ef71-eb9c-449e-a3d4-2b1f4730dad4",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C23",
+      "claim": "Surface tension and Young's modulus dramatically decrease with (-)-blebbistatin concentration with a decay of up to tenfold.",
+      "claim_type": "EXPLICIT",
+      "source": "Surface tension and Young's modulus dramatically decrease with (-)-blebbistatin concentration (Figure 2f and g) with a decay of up to tenfold.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2f and g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "f96ae1ba-73b5-4176-99c7-211a2d47f31a",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C26",
+      "claim": "High tissue surface tension usually appears as the hallmark of flattened cells and low roughness.",
+      "claim_type": "EXPLICIT",
+      "source": "As already noticed (Manning et al., 2010), high tissue surface tension usually appears as the hallmark of flattened cells and low roughness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Manning et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "f54077a1-6ea8-45a7-ba9c-add76884f2cd",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C27",
+      "claim": "Tissue surface tension arises from a balance between cortical tension at the CM and adhesion and cortical tension at the CC interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue surface tension arises from a balance between cortical tension at the CM and adhesion and cortical tension at the CC interface (Equation 1; Manning et al., 2010; Stirbat et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Manning et al., 2010 and Stirbat et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "ab498321-8092-43cd-a2eb-49edf9f72acb",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C28",
+      "claim": "EGTA and latrunculin A impact predominantly the tension at the CM interface with a reduction by a factor of around 5.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we checked whether the tension at the CM interface is predominant in the value of surface tension. As noticed on the cryosections, EGTA and latrunculin A impact predominantly the tension at the CM interface with a reduction by a factor of around Figure 3g.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "769c9303-ff7a-4470-8dc2-d0fdb702462f",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C29",
+      "claim": "By reducing CC adhesion, EGTA impairs the formation of contractile actin network at the frontier of the aggregate, and actin is mostly cortical.",
+      "claim_type": "EXPLICIT",
+      "source": "By reducing CC adhesion, EGTA impairs the formation of contractile actin network at the frontier of the aggregate, and actin is mostly cortical (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "f020708d-7f2b-4c03-b604-0d03da77fe65",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C30",
+      "claim": "Blebbistatin has a significant effect on both effective adhesion and tension at the CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, blebbistatin has a significant effect on both effective adhesion and tension at the CM as it impacts neither intercellular adhesions nor the cytoskeleton structure but the ability of the cell cortex to contract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the mechanism of action and observed effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "8faf369c-f26e-4e5e-a3e9-2f25d2852fa4",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C31",
+      "claim": "Desmin is an intermediate filament specific to muscle cells where it plays an essential role in maintaining mechanical integrity and elasticity at the single-cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "Desmin is an intermediate filament specific to muscle cells where it plays an essential role in maintaining mechanical integrity and elasticity (Even et al., 2017) at the single-cell level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Even et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "9730c3a7-f7f7-4400-812a-f021e4d74264",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C32",
+      "claim": "Desmin stands as a marker for muscular cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "It stands as a marker for muscular cell differentiation, but its role in tissue surface tension maintenance and elasticity has not been explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about desmin as a differentiation marker.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "f382e497-6e20-4c29-89c5-cedcb6947b7e",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C33",
+      "claim": "Desmin mutations are involved in human diseases such as certain skeletal and cardiac myopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Desmin mutations are involved in human diseases such as certain skeletal and cardiac myopathies (Goldfarb et al., 2004), characterized histologically by intracellular protein aggregates containing desmin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goldfarb et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "6c8f0c7f-2db9-4271-95d5-1ddcc8694fc5",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C34",
+      "claim": "Skeletal and cardiac myopathies with desmin mutations are characterized histologically by intracellular protein aggregates containing desmin.",
+      "claim_type": "EXPLICIT",
+      "source": "Desmin mutations are involved in human diseases such as certain skeletal and cardiac myopathies (Goldfarb et al., 2004), characterized histologically by intracellular protein aggregates containing desmin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goldfarb et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "0bb308c5-ac1a-4e2e-9766-cc16308d25e0",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C35",
+      "claim": "Desmin overexpression and modification do not affect desmin organization of adherent cells in the absence of induced protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Desmin overexpression and modification do not affect desmin organization of adherent cells in the absence of induced protein aggregation (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "c3f82724-a6d3-4c19-978d-7a2a3a8b347a",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C36",
+      "claim": "Surface tension and Young's modulus are not or hardly impacted by the overexpression of desmin (wild-type or mutated).",
+      "claim_type": "EXPLICIT",
+      "source": "Surface tension and Young's modulus are not or hardly impacted by the overexpression of desmin (wild-type or mutated) (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "9b24391c-d5a2-46a3-9775-981b2748c710",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C37",
+      "claim": "Heat shock decreases both Young's modulus and surface tension of A21V control aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Heat shock decreases both Young's modulus and surface tension of A21V control aggregates (Figure 4g, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4g and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "5fe1e580-1ef2-426d-841c-295a499ff5ec",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C38",
+      "claim": "Heat shock does not drastically modify actin distribution but slightly decreases the number of stress fibres.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is corroborated by the observation of actin network at the periphery of the multicellular aggregates: heat shock does not drastically modify actin distribution but slightly decreases the number of stress fibres (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "fdd5a1a5-e707-4629-9f41-0110ec01500d",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C39",
+      "claim": "Desmin aggregation leads to an increase in both elasticity and surface tension.",
+      "claim_type": "EXPLICIT",
+      "source": "We measure its action on surface tension and elasticity: desmin aggregation leads to an increase in both elasticity and surface tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "88737309-8cdc-4e01-87cc-cf90a7464e0a",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C40",
+      "claim": "The surface tension of spheroids of desD399Y-Cl26 cells is 1.9-fold higher than the one of desWT-Cl29 cells for 30 min heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in surface tension and elasticity dependent on the heat shock duration is observed in cells overexpressing mutated desmin (Figure 4f and g): the surface tension of spheroids of desD399Y-Cl26 cells is 1.9-fold higher than the one of desWT-Cl29 cells and their elasticity is 2-fold higher for 30 min heat shock.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4f and g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "c7516f2d-ebf0-4d16-8bb1-2054c9798867",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C41",
+      "claim": "The elasticity of spheroids of desD399Y-Cl26 cells is 2-fold higher than the one of desWT-Cl29 cells for 30 min heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "An increase in surface tension and elasticity dependent on the heat shock duration is observed in cells overexpressing mutated desmin (Figure 4f and g): the surface tension of spheroids of desD399Y-Cl26 cells is 1.9-fold higher than the one of desWT-Cl29 cells and their elasticity is 2-fold higher for 30 min heat shock.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4f and g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "a00d099d-446e-434b-ad4d-0bd2dcc51f16",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C42",
+      "claim": "The effect is even greater for a 2 hr heat shock with a two times higher surface tension of multicellular aggregates and a three times higher Young's modulus for cells expressing mutated desmin compared to cells expressing the wild-type desmin.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect is even greater for a 2 hr heat shock with a two times higher surface tension of multicellular aggregates and a three times higher Young's modulus for cells expressing mutated desmin compared to cells expressing the wild-type desmin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "1e2a9ce0-4399-447e-acb8-64a5713274d0",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C43",
+      "claim": "The effects on mechanical properties are correlated with the percentage of cells containing desmin aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects on mechanical properties are therefore correlated with the percentage of cells containing desmin aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation between heat shock duration, percentage of cells with aggregates, and mechanical property changes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "e8e759f7-8b57-487a-ad62-f3b74b6642c7",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C44",
+      "claim": "When desmin overexpression is induced, cortical tension at the CM interface slightly increases (by a factor of 2) comparing desWT-Cl29 and desD399Y-Cl26 spheroids with a 2 hr HS while effective adhesion is less impacted.",
+      "claim_type": "EXPLICIT",
+      "source": "When desmin overexpression is induced, cortical tension at the CM interface slightly increases (by a factor of 2) comparing desWT-Cl29 and desD399Y-Cl26 spheroids with a 2 hr HS while effective adhesion is less impacted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 5e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "079515a1-80c6-4f53-bd32-3ee55acd973b",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C45",
+      "claim": "Mutated desmin aggregation strengthens long-range phospho-myosin filaments at the periphery of the spheroid which increases acto-myosin network contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mutated desmin aggregation strengthens long-range phospho-myosin filaments at the periphery of the spheroid (Figure 5d) which increases acto-myosin network contractility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "68aef18a-d16f-4e20-b6df-568318c45887",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C46",
+      "claim": "Tensions in C2C12 spheroids are 2\u20133 orders of magnitude higher than the ones measured in 3D F9 aggregates or in embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, the values obtained for cellular tensions either at the CM interface or at the intercellular one confirm this specificity as tensions are 2\u20133 orders of magnitude higher than the ones measured in 3D F9 aggregates (Stirbat et al., 2013) or in embryos (Ma\u00eetre et al., 2012; Ma\u00eetre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "92323fd7-4fe3-4a5d-b78e-27573ac021f3",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C47",
+      "claim": "Magnetic tensiometer sensitivity for C2C12 spheroids is in the range of the one obtained with compression plates tensiometer experiments for lower surface tension cell aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetic tensiometer sensitivity even for these high-surface tension model tissues is in the range of the one obtained with compression plates tensiometer experiments for lower surface tension cell aggregates (Mgharbel et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mgharbel et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "315bd2a8-0536-4b81-b295-e391875e31d0",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C48",
+      "claim": "Magnetic tensiometer proves to be more accurate for more deformable spheroids than compression plates.",
+      "claim_type": "EXPLICIT",
+      "source": "and proves to be more accurate for more deformable spheroids (Mazuel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mazuel et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "d479dffe-9f0a-4d4f-b555-4ea9ec189568",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C49",
+      "claim": "Intercellular adhesions and actin cortex structure or contractility are fundamental to tissue shape and response to perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, intercellular adhesions and actin cortex structure or contractility are fundamental as was already demonstrated in vivo (K\u00e4fer et al., 2007; Iijima et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to K\u00e4fer et al., 2007 and Iijima et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "c59b069d-87d5-4029-b5d1-ee4cd99e3e5e",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C50",
+      "claim": "Long-range actin network at the periphery of the multicellular aggregates is fundamental to macroscopic shape maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "The crucial role of acto-myosin contractility is also corroborated by microscopic observations. Long-range actin network at the periphery of the multicellular aggregates is fundamental to macroscopic shape maintenance while the slightest modification of this network drastically changes this property.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from microscopic observations and correlation with mechanical measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "edd45d26-f443-4f25-afc2-95e106c56ed8",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C51",
+      "claim": "Desmin has a pivotal role in myofibril architecture in mature muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "It has a pivotal role in myofibril architecture in mature muscle but also exerts important function on the adaptation of muscle cells to passive stretch and contractility (Diermeier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Diermeier et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "e26ab4e1-234e-4897-bee7-0107002bbf86",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C52",
+      "claim": "Desmin exerts important function on the adaptation of muscle cells to passive stretch and contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "It has a pivotal role in myofibril architecture in mature muscle but also exerts important function on the adaptation of muscle cells to passive stretch and contractility (Diermeier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Diermeier et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "9cf18eb2-9cf4-42ad-95e4-413d466415d0",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C53",
+      "claim": "Desmin organization defects severely impact muscle formation and maintenance, causing myopathies or cardiomyopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Desmin organization defects severely impact muscle formation and maintenance, causing myopathies or cardiomyopathies (Batonnet-Pichon et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Batonnet-Pichon et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "db8b4a10-8b27-4a13-94ab-36f58ac986f8",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C54",
+      "claim": "In desminopathies, desmin aggregates are characteristic of the pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "In desminopathies, desmin aggregates are characteristic of the pathology; however, these aggregates remain heterogeneously distributed within the cardiac or skeletal muscle tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about desminopathies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "bb6a08bd-bd9a-46b2-9770-58d7b9dbf59c",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C55",
+      "claim": "Desmin aggregates remain heterogeneously distributed within the cardiac or skeletal muscle tissues in desminopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "In desminopathies, desmin aggregates are characteristic of the pathology; however, these aggregates remain heterogeneously distributed within the cardiac or skeletal muscle tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about desminopathies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "c4bd5b39-f60e-43f9-acf8-5b04afaa3028",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C56",
+      "claim": "Heat stress can affect the biomechanical properties of skeletal muscle cells or myofibres.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at the same time, it is documented that the heat stress chosen as a transducer of desmin aggregation in desD399Y cells can affect the biomechanical properties of skeletal muscle cells or myofibres (Locke and Celotti, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Locke and Celotti, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "33b1cb3a-2c7e-4011-9787-637ade76557b",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C57",
+      "claim": "Desmin aggregation has been associated with sarcomere misalignment in single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in single cells, desmin aggregation has been associated with sarcomere misalignment but also impacts biomechanical properties (Clemen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Clemen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "74e8d58c-c3ed-4ce8-8b64-6c11b7ef6182",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C58",
+      "claim": "Desmin aggregation impacts biomechanical properties in single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in single cells, desmin aggregation has been associated with sarcomere misalignment but also impacts biomechanical properties (Clemen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Clemen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "54f835e4-cb15-4929-9d65-7733363b5fcb",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C59",
+      "claim": "Desmin acts on muscle functioning and integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Desmin acts on muscle functioning and integrity (Charrier et al., 2018; van Bodegraven and Etienne-Manneville, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Charrier et al., 2018 and van Bodegraven and Etienne-Manneville, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "48022de0-c9de-489e-bc43-57b56b0bc883",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C60",
+      "claim": "Desmin disorganization may hinder individual cell contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "and its disorganization may hinder individual cell contractility (Franck et al., 2019) and homeostasis (Agnetti et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Franck et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "73587a6d-e244-4585-8a17-581624979c0d",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C61",
+      "claim": "Desmin disorganization may hinder individual cell homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "and its disorganization may hinder individual cell contractility (Franck et al., 2019) and homeostasis (Agnetti et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Agnetti et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "41ea5cb8-df98-4c5b-bae4-99eec89339de",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C62",
+      "claim": "Desmin impacts cell tension mainly at the CM interface by increasing cell contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results highlight its major role at the tissue level where it impacts cell tension mainly at the CM interface by increasing cell contractility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the data shown in Figure 5e and f.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "96f098c5-c8b5-49a3-a9f8-4730726d5953",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C63",
+      "claim": "In zebrafish, invalidation of the snaib factor induced extrusion of cardiomyocytes with increased contractility and an alteration in the desmb gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, it was shown that invalidation of the snaib factor induced extrusion of cardiomyocytes with increased contractility and an alteration in the desmb gene (orthologue of the des gene in humans) (Gentile et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gentile et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "05720a26-5ed1-446a-8546-56d490bcd384",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C64",
+      "claim": "Mutated desmin cells show modified reorientation dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "At the individual scale, mutated desmin cells show modified reorientation dynamics (Leccia et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leccia et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "9678703f-4647-4d61-8280-7f508e22c321",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C65",
+      "claim": "Mutated desmin cells are slightly (but not significantly) stiffer at the individual scale.",
+      "claim_type": "EXPLICIT",
+      "source": "and are slightly (but not significantly) stiffer (Even et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Even et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "7d71b37c-4fb7-4021-b505-1e67b30fd66a",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C66",
+      "claim": "Mutated desmin filaments D399Y show increased stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "a behaviour reminiscent of the elasticity increase noticed on mutated desmin filaments D399Y (Kreplak and B\u00e4r, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kreplak and B\u00e4r, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "2096d5fb-a4f1-46da-b0fe-5fd4f4c71c6e",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C67",
+      "claim": "A 1.4-fold increase was noticed in single-cell elasticity for mutated desmin cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While a 1.4-fold increase was noticed in single-cell elasticity, macroscopic Young's modulus of multicellular aggregates significantly increased by 3-fold when comparing mutated to wild-type desmin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previous single-cell studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "e35fe980-00ae-4de6-8055-1797ec514063",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C68",
+      "claim": "Macroscopic Young's modulus of multicellular aggregates significantly increased by 3-fold when comparing mutated to wild-type desmin.",
+      "claim_type": "EXPLICIT",
+      "source": "While a 1.4-fold increase was noticed in single-cell elasticity, macroscopic Young's modulus of multicellular aggregates significantly increased by 3-fold when comparing mutated to wild-type desmin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "36aa7c4a-08dc-4223-928d-00f1d578e91d",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C69",
+      "claim": "By giving more rigid network nodes, protein aggregates strengthen cell cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "By giving more rigid network nodes, protein aggregates actually strengthen cell cortex (Even et al., 2017) and may reinforce effective cortex tension, thus increasing tissue surface tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Even et al., 2017 and inference from mechanical measurements.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "c47083eb-6928-4ce1-8561-e4c627889780",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C70",
+      "claim": "Protein aggregates may reinforce effective cortex tension, thus increasing tissue surface tension.",
+      "claim_type": "EXPLICIT",
+      "source": "By giving more rigid network nodes, protein aggregates actually strengthen cell cortex (Even et al., 2017) and may reinforce effective cortex tension, thus increasing tissue surface tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observed increase in surface tension with desmin aggregation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "dae00c74-046d-44ba-837e-b602e115efe9",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C71",
+      "claim": "Compared to wild-type desmin, desmin aggregates enhance macroscopic long-range contractile network efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to wild-type desmin, they enhance macroscopic long-range contractile network efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observed increase in contractility and mechanical properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "fda6834f-8437-4868-93fb-45e0b764988a",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C72",
+      "claim": "Desmin aggregation impacts both elasticity and surface tension of myoblast spheroids.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that desmin aggregation impacts both elasticity and surface tension of myoblast spheroids, pointing out the importance of desmin organization on macroscopic tissue mechanics even at an early stage of differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "885db2b6-8d93-4da4-9e16-d234a5350910",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C73",
+      "claim": "Surface tension and elasticity are sensitive reporters of the individual cellular state and multicellular organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Surface tension and elasticity are thus sensitive reporters of the individual cellular state but also of the multicellular organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between molecular/cellular changes and macroscopic mechanical properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "0c697181-19ec-47fc-a2e4-ec5aac0473b1",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C74",
+      "claim": "Spheroids are made of about 150,000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, spheroids are made of about 150,000 cells; measuring macroscopic properties allows the properties of individual cells to be averaged over a large population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "ae4f5b21-13d7-4e1b-9c66-84fde3f2a3bf",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C75",
+      "claim": "Desmin maintains the shape of multicellular aggregate.",
+      "claim_type": "EXPLICIT",
+      "source": "Desmin maintains the shape of multicellular aggregate, its role on individual cell is translated, and its action is enhanced at the tissue level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observed effects of desmin aggregation on tissue mechanics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "722b7c58-941c-43a7-87fb-9a10cc4ca905",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C76",
+      "claim": "Intermediate filaments are crucial to the mechanics of unorganized muscle tissue models even at an early stage of differentiation both in terms of elasticity and surface tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Implicated in the mechanical and shape integrity of cells, intermediate filaments are found to be crucial to the mechanics of unorganized muscle tissue models even at an early stage of differentiation both in terms of elasticity and surface tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the data showing effects of desmin aggregation on mechanical properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "5d5aba3e-e375-4087-91db-5fcde10c4cd3",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C77",
+      "claim": "Actin and cadherins are implicated in the surface tension of multicellular aggregates or embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "While actin and cadherins are implicated in the surface tension of multicellular aggregates or embryos (Foty and Steinberg, 2005), the role of intermediate filaments in tissue shape maintenance has never been identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Foty and Steinberg, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "2bcc434e-3077-455c-b4ad-effd2fe2d5de",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C78",
+      "claim": "The role of intermediate filaments in tissue shape maintenance has never been identified before this study.",
+      "claim_type": "EXPLICIT",
+      "source": "While actin and cadherins are implicated in the surface tension of multicellular aggregates or embryos (Foty and Steinberg, 2005), the role of intermediate filaments in tissue shape maintenance has never been identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the novelty of the findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "a576d348-6dbf-4a8e-a95b-377ce2698ca7",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C79",
+      "claim": "Mutations in intermediate filaments severely hinder individual cell nanomechanical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in intermediate filaments severely hinder individual cell nanomechanical properties (Herrmann et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Herrmann et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "e7b06277-9f7f-4ad2-a64b-84afa42be20f",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C80",
+      "claim": "Intermediate filament network supports the shape of individual cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and their network supports the shape of individual cells (Goldman et al., 1996) and withstands applied constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goldman et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "3d1b7bc7-0f5a-409e-a3f1-f547cb87135b",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C81",
+      "claim": "Intermediate filament network withstands applied constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "and their network supports the shape of individual cells (Goldman et al., 1996) and withstands applied constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about intermediate filaments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "23a22bff-1dbc-4caa-928a-abafcc8a2822",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C82",
+      "claim": "C2C12 WT cells were obtained from ATCC.",
+      "claim_type": "EXPLICIT",
+      "source": "C2C12 WT (CRL-1772; RRID:CVCL_0188) were obtained from ATCC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "d112a361-7996-4d7b-88c6-31c99e2fb449",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C83",
+      "claim": "C2C12 cells were cultured in DMEM supplemented with 1% Penicillin-Streptomycin and 10% fetal bovine serum.",
+      "claim_type": "EXPLICIT",
+      "source": "and cultured in Dulbecco's modified Eagle's medium (DMEM, Gibco), supplemented with 1% Penicillin-Streptomycin (P/S, Gibco) and 10% fetal bovine serum (FBS, Gibco).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "598d0c7c-9a7b-4404-b60a-ab97838ebb49",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C84",
+      "claim": "All cell lines were tested negative for mycoplasma contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "All cell lines were tested negative for mycoplasma contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "19c1a8ca-6f83-435e-8899-7d46b0c2d013",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C85",
+      "claim": "Iron oxide superparamagnetic nanoparticles are 8 nm diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Iron oxide superparamagnetic nanoparticles (8 nm diameter) (provided by PHENIX Laboratory, UMR 8234, Paris) were obtained by alkaline coprecipitation followed by oxidation into maghemite according to Massart, 1981 procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "6412ee77-63f3-4b6a-8a7d-de551efd015e",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "claim_id": "C87",
+      "claim": "Spheroids of 530 \u00b1 60 \u00b5m radius were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "Spheroids of 530 \u00b1 60 \u00b5m radius (N = 167) were obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "70ba74f5-74ff-4302-95b9-9392da376adf",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Magnetic nanoparticle labeling of C2C12 cells does not alter biological capacities or induce hypoxia or apoptosis. This is supported by prior work and supplementary data showing absence of HIF-\u03b1 and cleaved caspase-3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are supported by citations to prior work (Van de Walle et al., 2020a, 2020b) and by data in Figure 1\u2014figure supplements 1 and 2 showing metabolic activity, lack of HIF-\u03b1, and minimal cleaved caspase-3. The evidence converges to support the safety of the labeling method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "d0169244-43a0-4c4e-ab3d-0518fec006c5",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cohesive C2C12 spheroids form within 12 hours via magnetic moulding, with cells organizing into a tissue model having cortical actin at the core and contractile actin at the periphery. These aggregates can be modeled as continuous elastic media where surface tension and magnetic forces determine equilibrium shape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 are supported by confocal imaging (Figure 1b) showing spheroid formation and cellular organization, and by citation to Kalantarian et al., 2009 for the theoretical framework. The imaging data directly demonstrates the claimed cellular organization and the modeling assumption is justified by prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "0ddf3307-5f00-4204-a48d-d84461eab0d4",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The magnetic tensiometer achieves measurement precision of 5-20% for surface tension and 5-10% for elasticity in C2C12 spheroids, despite these cells having surface tension two orders of magnitude higher than classically studied cells like F9 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 provide directly stated measurement precision values and explain the technical challenge posed by high surface tension. The error analysis is transparent and the comparison to F9 cells contextualizes the achievement. The logical explanation for increased error with higher surface tension is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "e579d650-83c5-4116-8a24-65212d711a5d",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "EGTA treatment leads to more than fivefold decrease in both Young's modulus and surface tension, predominantly impacting tension at the cell-medium interface by impairing contractile actin network formation at the aggregate periphery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C28, and C29 are supported by data in Figures 2a, 2b, 3f, and 3g showing quantitative decreases in mechanical properties and microscopic changes in actin organization. The mechanistic interpretation linking calcium chelation to reduced adhesion and altered actin organization is well-supported by the imaging data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "f86437f2-f453-4b49-b733-6a6fa5751f39",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Latrunculin A disrupts actin filaments in a dose-dependent manner, resulting in non-connected patches lacking long-range organization and dramatic decreases in both Young's modulus and surface tension (twofold at 0.15 \u00b5M, five- to sevenfold at 0.25 \u00b5M).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are supported by citation to Cou\u00e9 et al., 1987 for the mechanism, imaging data in Figures 2a, 2b, 3f showing dose-dependent effects, and quantitative measurements. The dose-response relationship is clearly demonstrated and the microscopic changes correlate with macroscopic mechanical property changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "d86f66dc-8f68-419a-ab4f-fa1274db31d7",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "(-)-Blebbistatin, the active enantiomer comprising 50-60% of the racemic mixture, selectively inhibits non-muscle myosin II, reducing contractility and causing up to tenfold decreases in surface tension and Young's modulus in multicellular aggregates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 and C23 are supported by established knowledge about blebbistatin's composition and mechanism, and by data in Figures 2c-g showing dramatic dose-dependent decreases in mechanical properties. The extracted IC50 values (6\u00b12 \u00b5M and 4\u00b13 \u00b5M for surface tension and elasticity) are consistent with known molecular IC50 values, validating the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "76b328c6-d16c-4159-b44a-16b86c57719c",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "An apparent proportionality exists between surface tension and Young's modulus across all conditions tested for C2C12 spheroids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is supported by data in Figure 2\u2014figure supplement 2 showing the correlation across multiple experimental conditions. This proportionality suggests co-regulation mechanisms between surface tension and elasticity, though the mechanistic basis could be explored further.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "490aa1b1-9e54-46d0-99f7-fb5197cadae8",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "High tissue surface tension correlates with flattened cells and low roughness, arising from a balance between cortical tension at cell-medium and cell-cell interfaces. Blebbistatin affects both effective adhesion and tension at the cell-medium interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C27, and C30 are supported by citations to Manning et al., 2010 and Stirbat et al., 2013 for the theoretical framework, and by inference from the observed effects of blebbistatin on both interfaces. The mechanistic interpretation is consistent with the drug's known action on myosin without affecting adhesion molecules or cytoskeleton structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "a4695b64-8485-4af0-9a6e-c7af44018c6e",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Desmin is a muscle-specific intermediate filament essential for maintaining mechanical integrity and elasticity at the single-cell level, serving as a differentiation marker. Desmin mutations cause skeletal and cardiac myopathies characterized by intracellular protein aggregates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are supported by citations to Even et al., 2017 and Goldfarb et al., 2004, representing established knowledge about desmin's role and disease associations. This provides necessary background for the experimental work on desmin mutations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "aa99a521-57e3-444b-8956-61bbdf7fc66e",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Desmin overexpression (wild-type or mutated) does not affect desmin organization in adherent cells absent induced aggregation, and does not significantly impact surface tension or Young's modulus of spheroids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C36 are supported by data in Figure 4\u2014figure supplement 1 and Figure 4f showing no significant changes in desmin organization or mechanical properties with overexpression alone. This establishes an important baseline for interpreting the effects of desmin aggregation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "f8a50257-207f-4b95-90ae-07451811e34d",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Heat shock decreases both Young's modulus and surface tension of control A21V aggregates, slightly decreasing stress fiber number without drastically modifying actin distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37 and C38 are supported by data in Figures 4g, 5c, and Figure 4\u2014figure supplement 3 showing quantitative decreases in mechanical properties and microscopic changes in actin. This control experiment is critical for separating heat shock effects from desmin aggregation effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "b4b6efc5-a2d4-4f9c-b5a9-05ba796843b4",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Desmin aggregation leads to heat shock duration-dependent increases in both elasticity and surface tension. After 30 min heat shock, desD399Y-Cl26 spheroids show 1.9-fold higher surface tension and 2-fold higher elasticity than desWT-Cl29; after 2 hr, increases are 2-fold and 3-fold respectively, correlating with percentage of cells containing aggregates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 are supported by data in Figure 4g showing dose-dependent increases in mechanical properties that correlate with the percentage of cells with desmin aggregates (Figure 4c-d). The correlation between aggregation extent and mechanical property changes is clearly demonstrated, though the heat shock confound is acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "03438931-59e6-48b8-a6b3-0d74bc41e3af",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mutated desmin aggregation slightly increases cortical tension at the cell-medium interface (by a factor of 2) while strengthening long-range phospho-myosin filaments at the spheroid periphery, increasing acto-myosin network contractility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C45 are supported by data in Figures 5d-f showing increased tension at the CM interface and enhanced phospho-myosin organization. The microscopic observations of strengthened myosin filaments provide a mechanistic explanation for the macroscopic increases in surface tension and elasticity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "6c3fde8f-f346-4176-a58c-8ecec14d11fc",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Tensions in C2C12 spheroids are 2-3 orders of magnitude higher than in 3D F9 aggregates or embryos, yet the magnetic tensiometer achieves sensitivity comparable to compression plate tensiometry for lower surface tension aggregates and proves more accurate for deformable spheroids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by comparisons with cited studies (Stirbat et al., 2013; Ma\u00eetre et al., 2012, 2015; Mgharbel et al., 2009; Mazuel et al., 2015). The validation of the method's sensitivity across a wide range of surface tensions is important for establishing its utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "8a1dd775-d48a-4381-b72b-50e6ef0c9367",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Intercellular adhesions and actin cortex structure/contractility are fundamental to tissue shape and response to perturbations. Long-range actin network at the aggregate periphery is fundamental to macroscopic shape maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C50 are supported by citations to prior in vivo work (K\u00e4fer et al., 2007; Iijima et al., 2020) and by inference from the microscopic observations correlating actin network organization with mechanical properties. The convergence of multiple lines of evidence supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "6e0644b1-28e0-447c-94e5-65f48c62ccb1",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Desmin plays pivotal roles in myofibril architecture, adaptation to passive stretch and contractility, and muscle functioning and integrity. Its disorganization severely impacts muscle formation and maintenance, causing myopathies/cardiomyopathies, and may hinder individual cell contractility and homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 and C59-C61 are supported by multiple citations (Diermeier et al., 2017; Batonnet-Pichon et al., 2017; Charrier et al., 2018; van Bodegraven and Etienne-Manneville, 2021; Franck et al., 2019; Agnetti et al., 2022) representing established knowledge about desmin's roles. This provides comprehensive context for the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "f77f55e8-ccee-4421-9e1f-7fd53d72fb65",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In desminopathies, desmin aggregates are characteristic but heterogeneously distributed within cardiac or skeletal muscle tissues. Heat stress can affect biomechanical properties of skeletal muscle cells or myofibers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by established knowledge about desminopathies and citation to Locke and Celotti, 2014 regarding heat stress effects. This acknowledges an important confound in the experimental design where heat shock is used to induce aggregation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "f495a040-d98a-4581-a2ad-5aeded2cbdc3",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Desmin aggregation has been associated with sarcomere misalignment and impacts biomechanical properties in single cells. At the tissue level, desmin impacts cell tension mainly at the cell-medium interface by increasing cell contractility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57, C58, and C62 are supported by citation to Clemen et al., 2013 for single-cell effects and by inference from data in Figures 5e-f showing increased CM interface tension. The translation from single-cell to tissue-level effects is demonstrated, though the mechanism could be further elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "2ccc20e6-af62-4fae-98df-36136a1e582c",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "In zebrafish, snaib factor invalidation induced cardiomyocyte extrusion with increased contractility and desmb gene alteration. Mutated desmin cells show modified reorientation dynamics and are slightly (but not significantly) stiffer at the individual scale, reminiscent of increased stiffness in mutated desmin filaments D399Y.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 are supported by citations to relevant studies (Gentile et al., 2021; Leccia et al., 2013; Even et al., 2017; Kreplak and B\u00e4r, 2009). These provide comparative context from other model systems and scales of analysis, supporting the biological relevance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "14a2d81f-11cb-4421-be4d-a1f588f11d1a",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "While single-cell elasticity shows a 1.4-fold increase with mutated desmin, macroscopic Young's modulus of multicellular aggregates significantly increases by 3-fold when comparing mutated to wild-type desmin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C68 are supported by comparison with previous single-cell studies and data in Figure 4g. This demonstrates an important amplification effect at the tissue level, suggesting collective or emergent properties beyond single-cell mechanics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "60ae0285-4075-47a9-a27b-bb32b633864a",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Protein aggregates strengthen cell cortex by providing more rigid network nodes, may reinforce effective cortex tension thus increasing tissue surface tension, and enhance macroscopic long-range contractile network efficiency compared to wild-type desmin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 are supported by citation to Even et al., 2017 and by inference from the observed increases in surface tension and contractility with desmin aggregation. The mechanistic interpretation linking rigid aggregates to enhanced cortex tension and contractile network efficiency is reasonable given the data, though direct demonstration of the mechanism would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "0166cc11-5ecf-47a2-8f6d-473722957816",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Desmin aggregation impacts both elasticity and surface tension of myoblast spheroids, demonstrating that surface tension and elasticity are sensitive reporters of individual cellular state and multicellular organization. Desmin maintains multicellular aggregate shape with enhanced action at the tissue level. Intermediate filaments are crucial to mechanics of unorganized muscle tissue models even at early differentiation stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72, C73, C75, and C76 are supported by data in Figure 4g and by the overall pattern of results showing correlation between molecular/cellular changes and macroscopic mechanical properties. The conclusion about intermediate filaments' importance is well-supported by the comprehensive experimental evidence, though the heat shock confound should be noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "5de3285d-805d-4103-b3d0-f290d2b3c102",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Spheroids are made of about 150,000 cells, allowing macroscopic property measurements to average individual cell properties over a large population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is directly stated and provides important context for interpreting the macroscopic measurements as population averages. This justifies the approach of using tissue-level measurements to infer cellular properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "b03690e9-26b2-4620-b842-34e574089bc0",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "While actin and cadherins are known to be implicated in surface tension of multicellular aggregates or embryos, the role of intermediate filaments in tissue shape maintenance had not been identified before this study. Mutations in intermediate filaments severely hinder individual cell nanomechanical properties, and their network supports cell shape and withstands applied constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 are supported by citation to Foty and Steinberg, 2005 for actin/cadherin roles, Herrmann et al., 2007 and Goldman et al., 1996 for intermediate filament roles at the single-cell level, and by the novelty statement. This contextualizes the significance of the findings regarding intermediate filaments at the tissue level.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    },
+    {
+      "id": "2b7fb843-84fd-4bfa-9b1e-954e1a57d95d",
+      "content_id": "e6d15a00-88ce-4421-8af4-54ad8ed028cf",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "C2C12 WT cells were obtained from ATCC, cultured in DMEM with supplements, tested negative for mycoplasma, labeled with 8 nm iron oxide nanoparticles, and formed into spheroids of 530\u00b160 \u00b5m radius.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 and C87 are directly stated in the methods section and provide essential methodological details. Cell line authentication, mycoplasma testing, and detailed nanoparticle specifications support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:32:11.927306Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "433097ff-84b8-4ad0-8f1f-f0f456c6da6a",
+      "result_id": "70ba74f5-74ff-4302-95b9-9392da376adf"
+    },
+    {
+      "claim_id": "effce237-0114-4ad0-8662-90fd370e2446",
+      "result_id": "70ba74f5-74ff-4302-95b9-9392da376adf"
+    },
+    {
+      "claim_id": "1d099a2b-1bda-4820-9138-2a338c04d466",
+      "result_id": "d0169244-43a0-4c4e-ab3d-0518fec006c5"
+    },
+    {
+      "claim_id": "e5709ce1-23f0-4afe-8f3b-bceb05e1121f",
+      "result_id": "d0169244-43a0-4c4e-ab3d-0518fec006c5"
+    },
+    {
+      "claim_id": "89c9fd2d-f63e-4f8a-900e-7cd6b8caa757",
+      "result_id": "d0169244-43a0-4c4e-ab3d-0518fec006c5"
+    },
+    {
+      "claim_id": "e082379b-ef09-4e16-bb33-acc3592264fa",
+      "result_id": "d0169244-43a0-4c4e-ab3d-0518fec006c5"
+    },
+    {
+      "claim_id": "2f1d00f6-35c2-477b-9977-c76c7bb93cd1",
+      "result_id": "0ddf3307-5f00-4204-a48d-d84461eab0d4"
+    },
+    {
+      "claim_id": "373621c0-7a0b-4f57-be45-e0fdf1fd4fd2",
+      "result_id": "0ddf3307-5f00-4204-a48d-d84461eab0d4"
+    },
+    {
+      "claim_id": "1d200ee7-93e8-4e85-9bad-82b257d1686e",
+      "result_id": "0ddf3307-5f00-4204-a48d-d84461eab0d4"
+    },
+    {
+      "claim_id": "f7a7349a-21c2-4576-b89c-68655f8eb7fe",
+      "result_id": "0ddf3307-5f00-4204-a48d-d84461eab0d4"
+    },
+    {
+      "claim_id": "0204901d-a5b4-4bf1-8e5e-5d6f1f8a4669",
+      "result_id": "0ddf3307-5f00-4204-a48d-d84461eab0d4"
+    },
+    {
+      "claim_id": "e56e2593-15dd-4115-b0ce-c38367f37845",
+      "result_id": "e579d650-83c5-4116-8a24-65212d711a5d"
+    },
+    {
+      "claim_id": "ab498321-8092-43cd-a2eb-49edf9f72acb",
+      "result_id": "e579d650-83c5-4116-8a24-65212d711a5d"
+    },
+    {
+      "claim_id": "769c9303-ff7a-4470-8dc2-d0fdb702462f",
+      "result_id": "e579d650-83c5-4116-8a24-65212d711a5d"
+    },
+    {
+      "claim_id": "bc76ba28-5b4e-4be9-8efa-96aae73d67ad",
+      "result_id": "f86437f2-f453-4b49-b733-6a6fa5751f39"
+    },
+    {
+      "claim_id": "0e502a98-8ceb-48bd-8727-01d0ee51ff73",
+      "result_id": "f86437f2-f453-4b49-b733-6a6fa5751f39"
+    },
+    {
+      "claim_id": "0fba5dfb-fedf-449e-aa9a-8ad99fed87d9",
+      "result_id": "f86437f2-f453-4b49-b733-6a6fa5751f39"
+    },
+    {
+      "claim_id": "95ef9c30-18dd-4d55-8a77-ea51afcc6fff",
+      "result_id": "f86437f2-f453-4b49-b733-6a6fa5751f39"
+    },
+    {
+      "claim_id": "283b12fb-494a-448a-8cc3-0d049c77a117",
+      "result_id": "d86f66dc-8f68-419a-ab4f-fa1274db31d7"
+    },
+    {
+      "claim_id": "2b193ac3-8475-4c07-9772-93020074b2a3",
+      "result_id": "d86f66dc-8f68-419a-ab4f-fa1274db31d7"
+    },
+    {
+      "claim_id": "88600076-2d93-4b50-9c48-f33f9eaa44d1",
+      "result_id": "d86f66dc-8f68-419a-ab4f-fa1274db31d7"
+    },
+    {
+      "claim_id": "b480ef71-eb9c-449e-a3d4-2b1f4730dad4",
+      "result_id": "d86f66dc-8f68-419a-ab4f-fa1274db31d7"
+    },
+    {
+      "claim_id": "6dda3577-d7d1-4cc1-8d59-ae8b61f303bd",
+      "result_id": "76b328c6-d16c-4159-b44a-16b86c57719c"
+    },
+    {
+      "claim_id": "f96ae1ba-73b5-4176-99c7-211a2d47f31a",
+      "result_id": "490aa1b1-9e54-46d0-99f7-fb5197cadae8"
+    },
+    {
+      "claim_id": "f54077a1-6ea8-45a7-ba9c-add76884f2cd",
+      "result_id": "490aa1b1-9e54-46d0-99f7-fb5197cadae8"
+    },
+    {
+      "claim_id": "f020708d-7f2b-4c03-b604-0d03da77fe65",
+      "result_id": "490aa1b1-9e54-46d0-99f7-fb5197cadae8"
+    },
+    {
+      "claim_id": "8faf369c-f26e-4e5e-a3e9-2f25d2852fa4",
+      "result_id": "a4695b64-8485-4af0-9a6e-c7af44018c6e"
+    },
+    {
+      "claim_id": "9730c3a7-f7f7-4400-812a-f021e4d74264",
+      "result_id": "a4695b64-8485-4af0-9a6e-c7af44018c6e"
+    },
+    {
+      "claim_id": "f382e497-6e20-4c29-89c5-cedcb6947b7e",
+      "result_id": "a4695b64-8485-4af0-9a6e-c7af44018c6e"
+    },
+    {
+      "claim_id": "6c8f0c7f-2db9-4271-95d5-1ddcc8694fc5",
+      "result_id": "a4695b64-8485-4af0-9a6e-c7af44018c6e"
+    },
+    {
+      "claim_id": "0bb308c5-ac1a-4e2e-9766-cc16308d25e0",
+      "result_id": "aa99a521-57e3-444b-8956-61bbdf7fc66e"
+    },
+    {
+      "claim_id": "c3f82724-a6d3-4c19-978d-7a2a3a8b347a",
+      "result_id": "aa99a521-57e3-444b-8956-61bbdf7fc66e"
+    },
+    {
+      "claim_id": "9b24391c-d5a2-46a3-9775-981b2748c710",
+      "result_id": "f8a50257-207f-4b95-90ae-07451811e34d"
+    },
+    {
+      "claim_id": "5fe1e580-1ef2-426d-841c-295a499ff5ec",
+      "result_id": "f8a50257-207f-4b95-90ae-07451811e34d"
+    },
+    {
+      "claim_id": "fdd5a1a5-e707-4629-9f41-0110ec01500d",
+      "result_id": "b4b6efc5-a2d4-4f9c-b5a9-05ba796843b4"
+    },
+    {
+      "claim_id": "88737309-8cdc-4e01-87cc-cf90a7464e0a",
+      "result_id": "b4b6efc5-a2d4-4f9c-b5a9-05ba796843b4"
+    },
+    {
+      "claim_id": "c7516f2d-ebf0-4d16-8bb1-2054c9798867",
+      "result_id": "b4b6efc5-a2d4-4f9c-b5a9-05ba796843b4"
+    },
+    {
+      "claim_id": "a00d099d-446e-434b-ad4d-0bd2dcc51f16",
+      "result_id": "b4b6efc5-a2d4-4f9c-b5a9-05ba796843b4"
+    },
+    {
+      "claim_id": "1e2a9ce0-4399-447e-acb8-64a5713274d0",
+      "result_id": "b4b6efc5-a2d4-4f9c-b5a9-05ba796843b4"
+    },
+    {
+      "claim_id": "e8e759f7-8b57-487a-ad62-f3b74b6642c7",
+      "result_id": "03438931-59e6-48b8-a6b3-0d74bc41e3af"
+    },
+    {
+      "claim_id": "079515a1-80c6-4f53-bd32-3ee55acd973b",
+      "result_id": "03438931-59e6-48b8-a6b3-0d74bc41e3af"
+    },
+    {
+      "claim_id": "68aef18a-d16f-4e20-b6df-568318c45887",
+      "result_id": "6c3fde8f-f346-4176-a58c-8ecec14d11fc"
+    },
+    {
+      "claim_id": "92323fd7-4fe3-4a5d-b78e-27573ac021f3",
+      "result_id": "6c3fde8f-f346-4176-a58c-8ecec14d11fc"
+    },
+    {
+      "claim_id": "315bd2a8-0536-4b81-b295-e391875e31d0",
+      "result_id": "6c3fde8f-f346-4176-a58c-8ecec14d11fc"
+    },
+    {
+      "claim_id": "d479dffe-9f0a-4d4f-b555-4ea9ec189568",
+      "result_id": "8a1dd775-d48a-4381-b72b-50e6ef0c9367"
+    },
+    {
+      "claim_id": "c59b069d-87d5-4029-b5d1-ee4cd99e3e5e",
+      "result_id": "8a1dd775-d48a-4381-b72b-50e6ef0c9367"
+    },
+    {
+      "claim_id": "edd45d26-f443-4f25-afc2-95e106c56ed8",
+      "result_id": "6e0644b1-28e0-447c-94e5-65f48c62ccb1"
+    },
+    {
+      "claim_id": "e26ab4e1-234e-4897-bee7-0107002bbf86",
+      "result_id": "6e0644b1-28e0-447c-94e5-65f48c62ccb1"
+    },
+    {
+      "claim_id": "9cf18eb2-9cf4-42ad-95e4-413d466415d0",
+      "result_id": "6e0644b1-28e0-447c-94e5-65f48c62ccb1"
+    },
+    {
+      "claim_id": "54f835e4-cb15-4929-9d65-7733363b5fcb",
+      "result_id": "6e0644b1-28e0-447c-94e5-65f48c62ccb1"
+    },
+    {
+      "claim_id": "48022de0-c9de-489e-bc43-57b56b0bc883",
+      "result_id": "6e0644b1-28e0-447c-94e5-65f48c62ccb1"
+    },
+    {
+      "claim_id": "73587a6d-e244-4585-8a17-581624979c0d",
+      "result_id": "6e0644b1-28e0-447c-94e5-65f48c62ccb1"
+    },
+    {
+      "claim_id": "db8b4a10-8b27-4a13-94ab-36f58ac986f8",
+      "result_id": "f77f55e8-ccee-4421-9e1f-7fd53d72fb65"
+    },
+    {
+      "claim_id": "bb6a08bd-bd9a-46b2-9770-58d7b9dbf59c",
+      "result_id": "f77f55e8-ccee-4421-9e1f-7fd53d72fb65"
+    },
+    {
+      "claim_id": "c4bd5b39-f60e-43f9-acf8-5b04afaa3028",
+      "result_id": "f77f55e8-ccee-4421-9e1f-7fd53d72fb65"
+    },
+    {
+      "claim_id": "33b1cb3a-2c7e-4011-9787-637ade76557b",
+      "result_id": "f495a040-d98a-4581-a2ad-5aeded2cbdc3"
+    },
+    {
+      "claim_id": "74e8d58c-c3ed-4ce8-8b64-6c11b7ef6182",
+      "result_id": "f495a040-d98a-4581-a2ad-5aeded2cbdc3"
+    },
+    {
+      "claim_id": "41ea5cb8-df98-4c5b-bae4-99eec89339de",
+      "result_id": "f495a040-d98a-4581-a2ad-5aeded2cbdc3"
+    },
+    {
+      "claim_id": "96f098c5-c8b5-49a3-a9f8-4730726d5953",
+      "result_id": "2ccc20e6-af62-4fae-98df-36136a1e582c"
+    },
+    {
+      "claim_id": "05720a26-5ed1-446a-8546-56d490bcd384",
+      "result_id": "2ccc20e6-af62-4fae-98df-36136a1e582c"
+    },
+    {
+      "claim_id": "9678703f-4647-4d61-8280-7f508e22c321",
+      "result_id": "2ccc20e6-af62-4fae-98df-36136a1e582c"
+    },
+    {
+      "claim_id": "7d71b37c-4fb7-4021-b505-1e67b30fd66a",
+      "result_id": "2ccc20e6-af62-4fae-98df-36136a1e582c"
+    },
+    {
+      "claim_id": "2096d5fb-a4f1-46da-b0fe-5fd4f4c71c6e",
+      "result_id": "14a2d81f-11cb-4421-be4d-a1f588f11d1a"
+    },
+    {
+      "claim_id": "e35fe980-00ae-4de6-8055-1797ec514063",
+      "result_id": "14a2d81f-11cb-4421-be4d-a1f588f11d1a"
+    },
+    {
+      "claim_id": "36aa7c4a-08dc-4223-928d-00f1d578e91d",
+      "result_id": "60ae0285-4075-47a9-a27b-bb32b633864a"
+    },
+    {
+      "claim_id": "c47083eb-6928-4ce1-8561-e4c627889780",
+      "result_id": "60ae0285-4075-47a9-a27b-bb32b633864a"
+    },
+    {
+      "claim_id": "dae00c74-046d-44ba-837e-b602e115efe9",
+      "result_id": "60ae0285-4075-47a9-a27b-bb32b633864a"
+    },
+    {
+      "claim_id": "fda6834f-8437-4868-93fb-45e0b764988a",
+      "result_id": "0166cc11-5ecf-47a2-8f6d-473722957816"
+    },
+    {
+      "claim_id": "885db2b6-8d93-4da4-9e16-d234a5350910",
+      "result_id": "0166cc11-5ecf-47a2-8f6d-473722957816"
+    },
+    {
+      "claim_id": "ae4f5b21-13d7-4e1b-9c66-84fde3f2a3bf",
+      "result_id": "0166cc11-5ecf-47a2-8f6d-473722957816"
+    },
+    {
+      "claim_id": "722b7c58-941c-43a7-87fb-9a10cc4ca905",
+      "result_id": "0166cc11-5ecf-47a2-8f6d-473722957816"
+    },
+    {
+      "claim_id": "0c697181-19ec-47fc-a2e4-ec5aac0473b1",
+      "result_id": "5de3285d-805d-4103-b3d0-f290d2b3c102"
+    },
+    {
+      "claim_id": "5d5aba3e-e375-4087-91db-5fcde10c4cd3",
+      "result_id": "b03690e9-26b2-4620-b842-34e574089bc0"
+    },
+    {
+      "claim_id": "2bcc434e-3077-455c-b4ad-effd2fe2d5de",
+      "result_id": "b03690e9-26b2-4620-b842-34e574089bc0"
+    },
+    {
+      "claim_id": "a576d348-6dbf-4a8e-a95b-377ce2698ca7",
+      "result_id": "b03690e9-26b2-4620-b842-34e574089bc0"
+    },
+    {
+      "claim_id": "e7b06277-9f7f-4ad2-a64b-84afa42be20f",
+      "result_id": "b03690e9-26b2-4620-b842-34e574089bc0"
+    },
+    {
+      "claim_id": "3d1b7bc7-0f5a-409e-a3f1-f547cb87135b",
+      "result_id": "b03690e9-26b2-4620-b842-34e574089bc0"
+    },
+    {
+      "claim_id": "23a22bff-1dbc-4caa-928a-abafcc8a2822",
+      "result_id": "2b7fb843-84fd-4bfa-9b1e-954e1a57d95d"
+    },
+    {
+      "claim_id": "d112a361-7996-4d7b-88c6-31c99e2fb449",
+      "result_id": "2b7fb843-84fd-4bfa-9b1e-954e1a57d95d"
+    },
+    {
+      "claim_id": "598d0c7c-9a7b-4404-b60a-ab97838ebb49",
+      "result_id": "2b7fb843-84fd-4bfa-9b1e-954e1a57d95d"
+    },
+    {
+      "claim_id": "19c1a8ca-6f83-435e-8899-7d46b0c2d013",
+      "result_id": "2b7fb843-84fd-4bfa-9b1e-954e1a57d95d"
+    },
+    {
+      "claim_id": "6412ee77-63f3-4b6a-8a7d-de551efd015e",
+      "result_id": "2b7fb843-84fd-4bfa-9b1e-954e1a57d95d"
+    }
+  ],
+  "comparisons": []
+}

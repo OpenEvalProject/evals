@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The CovILD study is a longitudinal, multicenter observational study of 145 COVID-19 patients recruited between March and June 2020 in Austria, with follow-up visits at 60, 100, and 180 days post-diagnosis. The cohort included patients across all severity levels (24.8% mild outpatient, 25.5% moderate hospitalized, 27.6% severe with oxygen, 22.1% critical ICU) with a mean age of 57.3 years and 77.2% having preexisting comorbidities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C22, C32-C38 provide comprehensive and internally consistent demographic and methodological details about the study design, recruitment, and cohort characteristics. The data are clearly presented with specific numbers and percentages that align across claims, and the study received appropriate ethical approval and registration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "At 6-month follow-up, 49% of participants reported persistent symptoms, with impaired physical performance (34.7%), sleep disorders (27.1%), and exertional dyspnea (22.8%) being the most common. Symptom frequency declined significantly over time, but the pace of resolution was markedly slower after the first 3 months compared to the early recovery phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30, C40-C42 are supported by data presented in Tables 3 and Figures 1-2, showing longitudinal symptom tracking with statistical analysis (mixed-effect logistic regression). The findings are internally consistent and demonstrate both the prevalence and kinetics of symptom resolution with appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C25",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Structural lung CT abnormalities at 6 months ranged from 18% in mild outpatients to 76% in ICU survivors, while impaired lung function ranged from 14% to 50% across severity groups. Recovery of CT and lung function abnormalities decelerated after 3 months, with the hospitalized oxygen therapy group showing the fastest recovery kinetics. A substantial fraction of mild CT abnormalities were not accompanied by symptoms or lung function deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C25, C43-C49 are supported by data in Tables 3 and Figure 3, with appropriate statistical analysis using mixed-effect logistic regression. The findings show clear severity-dependent patterns and are supported by supplementary figures demonstrating overlap between outcomes. The observation about dissociation between mild CT findings and functional impairment is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Univariate risk modeling identified no significant correlates for long-term symptom persistence, but found that severe/critical COVID-19 characteristics (multimorbidity, malignancy, male sex, prolonged hospitalization, ICU stay, immunosuppression) and persistently elevated inflammatory markers (IL-6, CRP, D-dimer) were significantly associated with persistent CT and lung function abnormalities. Low anti-S1/S2 IgG titers and ambulatory COVID-19 correlated with improved pulmonary recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by univariate logistic regression analysis presented in Figures 4-5 and Appendix 1-table 2, with appropriate statistical testing (Wald Z test with multiple testing correction). The negative finding for symptom persistence (C50) is appropriately reported, and the identified risk factors for pulmonary outcomes are clearly presented with odds ratios and confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "PAM clustering identified three clusters of clinical features: Cluster 1 (male sex, hypertension, cardiovascular/metabolic comorbidity), Cluster 2 (acute COVID-19 severity and inflammatory markers), and Cluster 3 (acute and persistent symptoms). Long-term symptom persistence associated with Cluster 3, while pulmonary outcomes grouped with Cluster 2. Mild CT abnormalities were nearest to preexisting comorbidities, while moderate-to-severe abnormalities and lung function deficits linked to protracted systemic inflammation markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by clustering analysis presented in Figure 6 and supplements, using appropriate unsupervised methods (PAM with SMD distance). The cluster selection was validated by multiple criteria (variance ratio, stability in cross-validation), and the assignment of outcomes to clusters used kNN label propagation. The findings are internally consistent and well-visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "SOM-hierarchical clustering identified three participant risk groups (low-risk, intermediate-risk, high-risk) that differed significantly in radiological lung abnormalities at 180 days, with prolonged hospitalization, anti-infective therapy, obesity, pain, and low anti-S1/S2 titers as the most influential features. Cluster assignment remained an independent correlate of persistent CT and lung function abnormalities after adjusting for acute COVID-19 severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 are supported by participant clustering analysis in Figures 7-8 and supplements, using validated methods (SOM followed by hierarchical clustering). The optimal algorithm and cluster number were determined by multiple criteria. The independence of cluster assignment from acute severity (C71) was demonstrated by severity-adjusted logistic regression. However, the study acknowledges potential confounding from differential dropout of mild/moderate cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Machine learning classifiers (C5.0, RF, SVM-R, NNet, glmNet) and their ensembles demonstrated good accuracy (AUC >0.78, sensitivity >0.84) for predicting any lung CT abnormalities in the training set, with moderate performance in cross-validation (AUC 0.69-0.81, sensitivity 0.69-0.78). Performance was markedly lower for moderate-to-severe CT abnormalities and lung function impairment, with nearly half of cases unidentified in cross-validation. Important predictive features included malignancy, multimorbidity, inflammatory markers (IL-6, CRP), and anti-S1/S2 antibody levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by comprehensive ML analysis in Figures 9-10 and supplements, with appropriate cross-validation (20-fold, 5 repeats) and performance metrics (AUC, sensitivity, specificity). The limitations in predicting moderate-to-severe abnormalities and lung function impairment are acknowledged and explained. Variable importance measures from three different classifiers provide converging evidence for key predictive features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C92",
+      "C93",
+      "C94",
+      "C100",
+      "C101"
+    ],
+    "result": "The risk of perturbed pulmonary recovery can be robustly estimated at early follow-up using clustering and ML classifiers employing only non-CT and non-lung function parameters. These classifiers were implemented in an open-source risk assessment application and may assist in screening medical records to identify patients requiring systematic monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C6, C92-C94, C100-C101 describe the development and implementation of risk assessment tools, the term 'robustly' in C6 and C94 is not fully supported by the moderate cross-validation performance (AUC 0.69-0.81) and limited sensitivity for some outcomes. The study acknowledges that external validation in a larger, independent cohort is needed (C106). The clinical utility claim (C100) is speculative without prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C79",
+      "C80",
+      "C89",
+      "C107",
+      "C108"
+    ],
+    "result": "The severity of acute COVID-19 and protracted systemic inflammation is strongly linked to persistent structural and functional lung abnormality at 6 months. The study identified a distinct long-term pulmonary risk phenotype characterized by protracted systemic inflammation (IL-6, CRP, anemia), microvascular inflammation (D-dimer), strong humoral response (anti-S1/S2 IgG), demographic factors, and comorbidities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C79-C80, C89, C107-C108 represent the main conclusions of the study and are well-supported by converging evidence from univariate modeling, clustering, and ML analyses. The findings are consistent with cited literature and demonstrate clear associations between inflammatory markers and pulmonary outcomes. However, the causal language ('linked to') should be interpreted as associative given the observational study design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C82"
+    ],
+    "result": "Corticosteroids were not standard of care during the study recruitment period (early 2020) and were not administered during acute COVID-19, though some participants with nonresolving pneumonia received systemic steroids from week 4 onward. Treatment approaches in early 2020 cohorts differ significantly from current standards that include early systemic steroids and antiviral/immunomodulatory medications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C82 accurately describe the treatment context during the study period and acknowledge important differences from current standards. This is a critical limitation for generalizability, as corticosteroid use is now known to improve outcomes in severe COVID-19. The authors appropriately cite this as a limitation and note that the impact of improved treatments on recovery kinetics needs investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In roughly half of participants with abnormal lung CT findings, especially those with low-grade abnormalities, no overt lung function impairment was observed. However, even subclinical lung alterations may have potential for clinically relevant progression requiring systematic monitoring. Symptom persistence was weakly associated with incomplete pulmonary recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C85 are supported by data in Figure 3 supplements showing overlap between outcomes. However, C84's assertion about progression potential is speculative and based on citations to other conditions (interstitial lung disease), not direct evidence from this study. The claim is appropriately hedged with 'may bear the potential' but represents an inference rather than a demonstrated finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C109"
+    ],
+    "result": "Consecutive monitoring of systemic inflammatory parameters and anti-S1/S2 antibody levels may improve identification of individuals at risk of chronic pulmonary damage irrespective of acute COVID-19 severity. Clustering and ML classifiers may help identify individuals at risk and relocate medical resources to prevent long-term disability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90 and C109 represent clinical recommendations based on the study findings, but these are speculative and not directly tested. The study demonstrates associations between inflammatory markers and outcomes, but does not prospectively validate whether monitoring these parameters improves risk identification or whether the classifiers actually help in resource allocation. These claims require prospective validation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The limited sensitivity of ML classifiers for moderate-to-severe CT abnormalities is attributed to their low frequency resulting in suboptimal training. A substantial fraction of participants (20.7%) had preexisting respiratory conditions that may have confounded prediction of post-COVID-19 lung function deficits. The heterogeneity of post-acute COVID-19 symptoms may explain the failure to estimate persistent symptom risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 provide reasonable explanations for the limitations in ML performance, supported by the data (low event rates, prevalence of preexisting conditions) and cited literature on symptom heterogeneity. These represent appropriate acknowledgment of study limitations and confounding factors, though the explanations are somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study has limitations including small sample size, cross-sectional character, temporal overlap between 60- and 100-day visits, missingness and differential dropout (particularly of mild/moderate cases), and lack of external validation. ML prediction quality may benefit from larger datasets and additional variables such as cellular inflammation readouts and broader symptom data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C102-C106 appropriately acknowledge important study limitations that affect interpretation and generalizability. The temporal overlap issue (C103) could impact longitudinal data accuracy, and differential dropout (C104) may bias clustering and ML results since hospitalization was a key feature. The need for external validation (C106) is critical given the moderate cross-validation performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C81",
+      "C86",
+      "C87",
+      "C91"
+    ],
+    "result": "The manuscript provides background context on COVID-19 epidemiology, severity distribution, definitions of long COVID and PASC, comparisons to SARS and ARDS recovery, and prior use of clustering/ML in COVID-19 research, all supported by appropriate citations to published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12, C81, C86-C87, C91 represent background information and literature review appropriately supported by citations. These claims establish context for the study but do not represent novel findings. The cited statistics and definitions appear accurate based on the referenced sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The applicability of previously proposed risk factors (characteristics of severe acute COVID-19) in predicting complications of pulmonary recovery from mild or moderate COVID-19 is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by the study's findings that traditional severity-based risk factors have limited predictive value for mild/moderate cases, motivating the development of alternative risk assessment approaches. This represents an important gap in the literature that the study addresses.",
+    "result_type": "MAJOR"
+  }
+]

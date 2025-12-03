@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Two pediatric patients were identified with different de novo heterozygous mutations at the highly conserved G689 residue of GRIN2B (G689C and G689S). Both patients exhibit severe developmental delay and intellectual disability, with the G689S patient additionally presenting with seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C11-C14 provide clinical and genetic characterization of the patients. The mutations are confirmed by whole-exome sequencing, the residue conservation is demonstrated by sequence alignment (Figure 1a), and clinical phenotypes are documented in Table 1. The novelty of G689C and prior reporting of G689S are appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Structural modeling predicts that G689C and G689S mutations destabilize the ligand-binding domain by introducing larger side chains that point toward glutamate, requiring ~1 \u00c5 shift of the ligand and blocking water-accessible entry sites. \u0394\u0394G analysis indicates both mutations are among the most destabilizing substitutions possible at this position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C15-C20 describe computational predictions using established methods (Schr\u00f6dinger Maestro, MCSM). The structural analysis is appropriate and predictions are consistent with experimental findings. However, the simulations use energy minimization on a single monomer rather than molecular dynamics of the full tetramer, which limits confidence in quantitative predictions. The qualitative conclusions about steric interference are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Functional characterization in Xenopus oocytes reveals that G689C and G689S cause severe loss-of-function with ~1000-fold and ~2000-fold reductions in glutamate EC50, respectively. G689C additionally shows reduced maximal current (~40% of wildtype) and lower glycine affinity, while Mg2+ sensitivity remains unchanged in both variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C21-C22, C25-C28 present dose-response data from two-electrode voltage clamp experiments with appropriate controls. Sample sizes are adequate (n=23-43 cells), and the use of high glutamate concentrations (up to 10 mM) is justified by control experiments showing minimal non-specific responses in uninjected oocytes (Figure 2\u2014supplement 1c,d). The EC50 values are reproducible across expression systems (oocytes and HEK293T cells, C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Surface expression analysis using \u03b2-lactamase assays in HEK293T cells shows that G689C expresses at ~45% of wildtype levels without altered channel open probability, explaining its reduced current amplitude. In contrast, G689S expresses at wildtype levels despite having a more severe functional deficit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 present expression data from multiple independent experiments using an established \u03b2-lactamase surface expression assay. The finding that G689S expresses normally despite lower glutamate affinity challenges the conventional correlation between affinity and trafficking (discussed in C92-C93), making this an important observation. Open probability measurements (Figure 3\u2014supplement 1) appropriately control for alternative explanations of reduced current.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Both variants increase surface expression of co-expressed GluN2Bwt subunits and form tri-heteromeric channels (2 GluN1:1 GluN2Bwt:1 GluN2B-mutant) that exhibit glutamate affinities approaching those of homomeric mutant channels, demonstrating a strong dominant-negative effect. This effect is uncommon among GRIN mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 describe co-expression experiments with appropriate controls (Kv4.2, C33). The bimodal fitting of dose-response curves (C35) is justified and multiple fitting approaches are tested (Figure 4\u2014supplement 1, Table 3). The dominant-negative interpretation is supported by mRNA titration experiments showing that even low mutant:wildtype ratios (1:16) substantially reduce glutamate affinity. The claim of uniqueness (C37-C38) is appropriately contextualized with literature citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Spermine potentiates GluN2Bwt receptors by ~70% at 200 \u03bcM (pH 7.3) but is much less effective on G689C and G689S variants, with G689S showing inhibition at higher concentrations. At pH 6.3, spermine potentiation is enhanced for all channel types. Arcaine competition experiments demonstrate that the spermine binding site remains intact in the variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 present spermine potentiation data at two pH values with appropriate controls. The arcaine competition experiments (C44-C45, Figure 5\u2014supplement 1) effectively rule out altered binding site structure as the mechanism for reduced potentiation. Sample sizes are adequate (n=9-20 cells) and the pH-dependence provides mechanistic insight linking to subsequent proton-sensing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The G689C and G689S variants exhibit significantly reduced pH sensitivity compared to wildtype receptors, with rightward-shifted pH dose-response curves. There is a positive correlation between pH sensitivity and spermine potentiation across all channel types. These findings indicate that G689 is part of the GluN2B proton-sensing domain, though glycine is unlikely to directly bind protons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 present pH dose-response data (Figure 6) and correlation analysis (Figure 5\u2014supplement 2d). The conclusion that G689 participates in proton sensing (C49) is well-supported by the functional data, though the mechanism remains unclear. The caveat about glycine's weak titratability (C50) is appropriate and the authors correctly cite precedent for non-titratable residues in proton sensing. This represents a novel mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "D-serine increases currents of wildtype and variant receptors at low glycine concentrations (1 \u03bcM) but not at saturating glycine (100 \u03bcM), indicating it acts by saturating the GluN1a subunit rather than as a true potentiator. At physiological glutamate/glycine concentrations, D-serine produces negligible effects on G689C (<15% of maximal current) and no effect on G689S, leading to the recommendation against L-serine treatment for these variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 present D-serine experiments with appropriate glycine concentration controls. The conclusion that D-serine is not a bona fide potentiator (C54) is well-supported by the glycine-dependence data. The therapeutic recommendation (C58) is appropriately cautious, though it includes speculative elements about potential side effects. The physiological relevance experiments (C55-C56, Figure 7c,d) effectively demonstrate limited therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In cultured hippocampal neurons, overexpression of G689C or G689S variants causes a ~50% reduction in miniNMDAR/AMPAR frequency ratio without affecting miniAMPAR frequency or basic neuronal properties. The variants also accelerate miniNMDAR deactivation kinetics, suggesting increased contribution from faster-deactivating GluN2A subunits. G689S specifically reduces miniNMDAR amplitude while increasing miniAMPAR amplitude, consistent with synaptic scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C70 present neuronal electrophysiology data with appropriate controls and adequate sample sizes (n=5-6 neurons per condition). The interpretation that reduced miniNMDAR frequency without synapse loss (C67) is supported by unchanged miniAMPAR frequency. The synaptic scaling interpretation (C68) and GluN2A contribution inference (C69) are reasonable but somewhat speculative. The consistency with oocyte data (C70) strengthens the overall conclusions. However, the overexpression approach may not fully recapitulate the heterozygous patient condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study contextualizes these findings within the broader GRIN mutation landscape, noting that most LBD mutations cause loss-of-function, same-residue variants are rare (<15%), and the majority of GRIN mutations occur in GRIN2A (46%) and GRIN2B (38%). Current treatment options are limited, with no FDA-approved drugs for loss-of-function mutations, emphasizing the importance of functional characterization before treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 provide appropriate literature context with multiple citations. The statistics about mutation distribution (C73) and characterization rates (C74) are properly referenced. The discussion of treatment challenges (C76-C80) is balanced and appropriately cautious. These contextual claims support the manuscript's rationale but are primarily review of prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Computational analysis of 5,282 possible substitutions in the GluN2B LBD reveals that most (~80%) are destabilizing (\u0394\u0394G < -0.5), with loss-of-function mutations correlating with more negative \u0394\u0394G values. Mutations resulting in glycine or serine substitutions are predicted to be most damaging regardless of the replaced residue, consistent with glycine's role as an essential hinge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C91 present a comprehensive \u0394\u0394G analysis using MCSM. While the overall trends are interesting, the predictive value is limited by the small number of characterized mutations (18 LBD mutations, C89) available for validation. The correlation between \u0394\u0394G and function (C89) is based on only 2 of 3 GoF mutations, which is insufficient for robust conclusions. The prediction about glycine/serine substitutions (C90) is reasonable but would benefit from experimental validation beyond the two cases studied here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study challenges the conventional assumption that reduced glutamate affinity correlates with reduced surface expression, as G689S shows robust expression despite extreme loss-of-function. The authors propose that severe clinical phenotypes arise from a combination of severe loss-of-function, altered trafficking (for G689C), and dominant-negative effects that render tri-heteromeric channels non-responsive during normal synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 synthesize experimental findings into a mechanistic model. The challenge to the affinity-trafficking correlation (C93) is well-supported by the G689S data. The proposed mechanism (C96) integrates multiple lines of evidence. However, the claim that mixed channels are 'non-responsive to normal neurotransmission' (C94) is somewhat overstated, as the experiments use saturating agonist concentrations rather than measuring responses to physiological neurotransmitter release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The discussion evaluates potential therapeutic approaches, noting that spermine can cross the blood-brain barrier and has been effective for other GluN2B loss-of-function variants, but is unsuitable for G689C/S due to their altered proton sensing. Similarly, L-serine is not recommended due to its non-specific action on the obligatory GluN1 subunit and potential side effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 provide appropriate therapeutic context with relevant citations. The recommendations against spermine (C99) and L-serine (C102) are supported by the experimental data, though they include speculative elements about side effects. The discussion appropriately distinguishes between what is demonstrated experimentally and what is inferred about therapeutic potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The introduction provides standard background on NMDAR structure, function, and developmental expression patterns, establishing that NMDARs are heterotetrametric receptors assembled from seven GRIN genes with critical roles in brain development and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 present well-established background information with appropriate citations. These are accurate statements of prior knowledge that provide necessary context but do not represent novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The study describes two unique variants with extreme effects on channel function and employs protein stability measures to explain why LBD mutations in GluN2B primarily cause loss-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 accurately summarize the manuscript's contributions. The variants are indeed unique in their combination of extreme loss-of-function and dominant-negative effects. The protein stability analysis (C104) provides a framework for understanding LBD mutation effects, though its predictive power is limited by the small validation dataset.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1895 @@
+{
+  "submission": {
+    "id": "e32cde6e-1035-4a4e-8b23-c3e8bd0330e8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:15:49.683802Z",
+    "updated_at": "2025-12-03T16:15:49.683802Z"
+  },
+  "content": [
+    {
+      "id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "submission_id": "e32cde6e-1035-4a4e-8b23-c3e8bd0330e8",
+      "content_type": "manuscript",
+      "content_text": "# Single-cell RNA sequencing analysis of shrimp immune cells identifies macrophage-like phagocytes\n\n## Authors\n\n- Peng Yang<sup>1</sup> ([ORCID: 0000-0002-8298-8926](https://orcid.org/0000-0002-8298-8926))\n- Yaohui Chen<sup>2</sup> ([ORCID: 0000-0002-4044-4373](https://orcid.org/0000-0002-4044-4373))\n- Zhiqi Huang<sup>2</sup>\n- Huidan Xia<sup>2</sup>\n- Ling Cheng<sup>3</sup>\n- Hao Wu<sup>3</sup>\n- Yueling Zhang<sup>1</sup>\n- Fan Wang<sup>1</sup> ([ORCID: 0000-0002-6059-6956](https://orcid.org/0000-0002-6059-6956)) \u2020\n\n### Affiliations\n\n1. Institute of Marine Sciences, Guangdong Provincial Key Laboratory of Marine Biotechnology, Shantou University Shantou China ([ROR:01a099706](https://ror.org/01a099706))\n2. Department of Biology, College of Science, Shantou University Shantou China ([ROR:01a099706](https://ror.org/01a099706))\n3. Guangzhou Genedenovo Biotechnology Company Limited Guangzhou China\n4. Shantou University-Universiti Malaysia Terengganu Joint Shellfish Research Laboratory, Shantou University Shantou China ([ROR:01a099706](https://ror.org/01a099706))\n5. Southern Marine Science and Engineering Guangdong Laboratory Guangzhou China ([ROR:00y7mag53](https://ror.org/00y7mag53))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDespite the importance of innate immunity in invertebrates, the diversity and function of innate immune cells in invertebrates are largely unknown. Using single-cell RNA-seq, we identified prohemocytes, monocytic hemocytes, and granulocytes as the three major cell-types in the white shrimp hemolymph. Our results identified a novel macrophage-like subset called monocytic hemocytes 2 (MH2) defined by the expression of certain marker genes, including Nlrp3 and Casp1. This subtype of shrimp hemocytes is phagocytic and expresses markers that indicate some conservation with mammalian macrophages. Combined, our work resolves the heterogenicity of hemocytes in a very economically important aquatic species and identifies a novel innate immune cell subset that is likely a critical player in the immune responses of shrimp to threatening infectious diseases affecting this industry.\n\n## Introduction\n\nCompared with vertebrates, invertebrates do not have B- and T-cell-based adaptive immunity, which makes them primarily reliant on innate immunity as defense against various pathogens (Little et al., 2005). Although invertebrates have developed diverse forms of innate immunity in order to adapt to various environmental challenges, the innate immune cells themselves contribute significantly because they have \u2018trained immunity\u2019 (Lanz-Mendoza and Contreras-Gardu\u00f1o, 2022). However, the evolution of innate immune systems has diverged into many branches in the metazoan tree of life, making invertebrate immune cell-typing extremely complex. In contrast, the cells of the vertebrate immune system are conserved from chordates (Rosental et al., 2018). Recent advances in single-cell sequencing technology have shed light on this issue. For example, recent research in mosquito cellular immunity revealed that mosquito hemocytes are of four major types (prohemocytes, granulocytes, oenocytoids, and megacytes) (Kwon et al., 2021; Raddi et al., 2020). Hemocytes from another invertebrate model \u2014 Drosophila melanogaster \u2014 can be divided into eight subgroups, including crystal cells, lamellocytes, unspecified plasmatocytes, proliferative plasmatocytes, PSC-like hemocytes, antimicrobial plasmatocytes, phagocytic plasmatocytes, and secretory plasmatocytes (Cattenoz et al., 2021; Cho et al., 2020; Li et al., 2022; Tattikota et al., 2020). These classifications cover the major innate immune cell functions, including proliferation, reactive oxygen species (ROS) generation, phagocytosis, and effector secretion, suggesting some shared similarities in innate immunity between invertebrates and vertebrates.\n\nTo explore these analogies, we used the marine invertebrate Penaeus vannamei to characterize immune cell subsets using single-cell RNA sequencing (scRNA-seq). This species was selected because it is a popular mariculture species due to being fast growing and delectable (Zhang et al., 2019). Additionally, this invertebrate has an open circulatory system filled with hemolymph, which consists of plasma and hemocytes (Lin and S\u00f6derh\u00e4ll, 2011). The shrimp hemolymph bears high similarity to that of the vertebrate peripheral blood in terms of functions such as transportation of nutrients and metabolic waste, maintenance of acid\u2013base equilibrium, defense against various invading pathogens, and hemostatic effect (McNamara and Faria, 2012; Tassanakajon et al., 2018). Moreover, the circulating plasma contains more than 400 proteins, many of which are vertebrate homologs (Luo et al., 2022; Tao et al., 2019). The circulating hemocytes comprise proliferating cells, phagocytic cells, and effector secreting cells (Lin and S\u00f6derh\u00e4ll, 2011), which are functionally similar to vertebrate peripheral myeloid cells. Among these cells, the phagocytes have been identified in all metazoans (Musser et al., 2021), although they appear to be different in invertebrates and vertebrates. Some recently performed functional assays suggest that the bacterial engulfment in phagocytes may be conserved from invertebrates to vertebrates (Kokhanyuk et al., 2021). In this study, we attempted to analyze shrimp hemocytes via single-cell sequencing and redefined their classification according to their functional marker gene distribution. We also attempted to understand evolutionary phagocyte development along the metazoan tree of life.\n\n## Results\n\n### Major cell-types among the circulating hemocytes in shrimp\n\nPreviously, we identified a lipopolysaccharide (LPS)-induced shrimp plasma protein CREG and noticed that recombinant CREG (rCREG) was more effective than recombinant EGFP (rEGFP) in activating the shrimp hemocytes (Huang, Yang, & Wang, 2021). Based on this observation, we performed scRNA-seq for rCREG-treated shrimp hemocytes to further explore their function. To maximize the collection of circulating hemocytes from shrimp, we applied iodixanol gradient centrifugation to concentrate the hemocytes for the Gel Bead-In-Emulsion (GEM) preparation (Tattikota et al., 2020; Figure 1A). A total of 34,693 cells including control (12544), rEGFP- (12640), and rCREG-treated (9509) cells were retained for further analyses, and these cells exhibited a median of 5656, 6837, and 7916 transcripts and 1089.5, 1245, and 1364 genes per cell, respectively (Figure 1\u2014figure supplement 1). The rCREG-treated samples had the highest unique molecular identifiers (UMIs) and detected genes compared with that of the other two groups. This observation is consistent with our previous conclusion that CREG is a hemocyte activation factor (Huang et al., 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic workflow of sample preparation. The hemocytes were collected from non-treated, rEGFP-treated, and rCREG-treated shrimps (n=15 for each treatment) and subjected to iodixanol gradient centrifugation and single-cell RNA sequencing (ScRNA-seq) using 10 X Genomics. (B) A t-SNE plot showing five major cell types identified in scRNA-seq dataset (n=34,693 in total; Control, 12544; rEGFP treated, 12640; rCREG treated, 9509 cells). The count of each cell type is indicated in parentheses. (C) A heatmap showing five representative marker genes for each major cluster. The gene name and its NCBI GeneID is listed (left) and its expression level in each cell is shown with different colors (right). (D) Two-dimensional projections, and proportions of the cell types for each treatment. Proportions of prohemocytes (red), monocytic hemocytes (brown), and granulocytes (blue) are indicated (left). Proportions of all five major cell types in each treatment are indicated (right).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig1-figsupp2-v2.jpg)\n\nTo further define the major cell types of circulating shrimp hemocytes, we combined all 34,693 cells from different treatments and applied canonical correlation analysis (Stuart et al., 2019) to perform batch correction. We then aggregated the cell clusters and identified five major groups of isolated hemocytes, including prohemocytes (PHs) (6838, 19.7%), granulocytes (GHs) (13871, 40%), monocytic hemocytes (MHs) (11112, 32%), transitional cells (TCs) (2090, 6%), and germ-like cells (GCs) (782, 2.3%), which were annotated according to their potential functions implied by the marker genes (Figure 1B). Granulocytes are characterized by their ProPO system (Sun et al., 2020). Here, we found that prophenoloxidase activating factors 1 and 2 (PPAF1 and PPAF2) were highly expressed in this population. In addition to ProPO system genes, secreted proteins, including crustin-like protein (CRUL), penaeidin 3 a.1 (PEN-3), and crustacean hematopoietic factor-like protein (CHF), were also highly expressed in this population (Figure 1C, Figure 1\u2014figure supplement 2A). The MHs were named thus because they shared some critical genes with mammalian monocytes. For example, NOD-like receptor protein 3 (Nlrp3) is a key component of the inflammasome and is highly expressed in monocytes and macrophages for processing of IL-1\u00df (He et al., 2016). Lysosome (Lyz1), another canonical antibacterial enzyme, is a well-known macrophage-secreting hydrolase (Short et al., 1996). Vago5 encodes an IFN-like antiviral cytokine and plays a role in the anti-white spot syndrome virus (WSSV) resistance (C. Li, Yang, Hong, Zhao, & Wang, 2021) (Figure 1C, Figure 1\u2014figure supplement 2B). Generally, these cells secrete antibacterial and antiviral effectors. In PHs, histone1 (h1f0) is the key component of heterochromatin assembly, and its high expression is associated with reduced gene expression and cell stemness properties (Pan and Fan, 2016). In a previous study, hemocyte transglutaminase (TGM1) was identified as an immature hemocyte marker (Koiwai et al., 2021). The gene Igfbp7 has been shown to promote hemocyte proliferation in the small abalone Haliotis diversicolor (Wang et al., 2015; Figure 1C, Figure 1\u2014figure supplement 2C). TCs were difficult to characterize due to the lack of exclusively expressed genes. Hence, we identify the top five significantly upregulated genes and analyzed the distribution of the top three (Figure 1C, Figure 1\u2014figure supplement 2D); we found that this group of cells had no significant marker genes, thus the name. We found some reproduction-related genes in the GC group. For example, lhx9 encodes a key transcription factor in gonadal development (Balasubramanian et al., 2014), and spir localization is critical for mouse oocyte asymmetric division (Jo et al., 2019; Figure 1C, Figure 1\u2014figure supplement 2E). Hence, we annotated this group of cells as GCs.\n\nTo further determine whether CREG is a differentiation factor for shrimp hemocytes, we examined the ratio of the five annotated major cell types in different treatments. Recombinant protein injection slightly increased the proportion of GHs and PHs and decreased the ratio of MHs (Figure 1D). However, there were no significant differences between the rEGFP and rCREG treatments, which suggests that CREG is probably an activation factor rather than a differentiation factor for shrimp hemocytes.\n\n### Subtyping of shrimp immune cell clusters and construction of their differentiation trajectory\n\nWhile classifying the immune cells in shrimp hemolymph, the TC group that lacks gene markers and GC group that is not a typical immune cell are not further explored in this study (Supplementary file 1, Supplementary file 2). To further trace the immune cell lineages in shrimp hemolymph, we subtyped the remaining three major classes of cells\u2014PHs, MHs, and GHs; each major class type was divided into two subtypes and labelled PH1 (1577, 4.5%) and PH2 (5261, 15.2%), MH1 (10463, 30.2%) and MH2 (649, 1.9%), and GH1 (10353, 29.8%) and GH2 (3518, 10.1%), respectively (Figure 2A). We identified some unique marker genes located at the edge of the t-SNE map for the subpopulations PH1, GH2, and MH2 (Figure 2A, Figure 2\u2014figure supplement 1, Supplementary file 3, Supplementary file 4 and Supplementary file 5), but could not identify exclusive marker genes for the subpopulations PH2, GH1, and MH1, which constituted the main body of the t-SNE map. The marker genes for PH2, GH1, and MH1 were also highly expressed in PH1, GH2, and MH2, respectively (Figure 2B, Supplementary file 6, Supplementary file 7 and Supplementary file 8). Thus, these six subtypes of hemocytes might have lineage differentiation relationships. To explore this, we performed cell cycle analyses of the six subtypes of hemocytes. PH1 was characterized by high expression of all marker genes for the G1, G2, and M stages (Figure 2C). This observation was consistent with a previous report that approximately 2\u20135% of circulating hemocytes were proliferating hemocytes and could be labelled with BrdU (Sun et al., 2013). Thus, we set PH1 as the initiating cell and applied a Monocle to construct differentiation trajectories for PHs, GHs, and MHs. Two major branches\u2014MH lineage and GH lineage\u2014were identified to have differentiated from one common PH (Figure 2D\u2013E). This is similar to the development of human myeloid cells, in which granulocyte\u2013monocyte progenitor (GMP) differentiates into monocyte and granulocyte (Bassler et al., 2019). To further compare innate immune cell differentiation between shrimp and humans, we screened shrimp homologs of human myeloid differentiation-related transcription factors (TFs) because TFs are the key regulators of cell fate determination (Friedman, 2002). In total, 3790 differentially expressed genes among different branches were identified and are shown as a specific heatmap on which three shrimp homologs of human TFs were labeled (Figure 2F, Supplementary file 9). Fli1 is specifically expressed in the granulocyte lineage, which is consistent with previous observations that Fli1 deletion decreases granulocytic cell number in mice (Starck et al., 2010). MAF and c-Rel were highly expressed in the MH lineage (Figure 2G). c-Rel is a key TF in the NF-\u03baB pathway and plays important roles in monocyte differentiation (Li et al., 2020). MAF is a bZip TF that could induce monocytic differentiation (Kelly et al., 2000). In general, our data suggest that some myeloid regulators may be conserved between shrimp and humans.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig2-v2.jpg)\n\n**Figure 2.:** (A) Subclusters of hemocytes\u2013prohemocytes (PH), monocytic hemocytes (MH), granulocytes (GH) are projected onto two-dimensional t-SNE plots. The numbers in the plots represent the subcluster number. (B) Dot plot showing corresponding expression of cluster marker genes. The color indicates mean expression and dot size represents the percentage of cells within the cluster expressing the marker. Last nine digits of each marker gene are the NCBI GeneID. (C) Expression of cell-cycle regulating genes in the six subtypes. Dot color indicates average expression levels and dot size displays the average percentage of cells with cell cycle controlling genes (Cdk1(ncbi_113818305), CycD(ncbi_113814652), and CycE(ncbi_113822658) for G1; stg(ncbi_113800052), CycA(ncbi_113821735), and CycB(ncbi_113803283) for G2; polo(ncbi_113805901), aurB(ncbi_113827838), and birc5(ncbi_113828653) for M) in each subcluster. (D) A differentiation trajectory of PH, GH, and MH subpopulation using Monocle2 (n=31821). (E) Differentiation trajectory reconstruction with 6 subclusters. PH lineage, GH lineage, and MH lineage were labelled with red, blue, and brown circles respectively. (F) A heatmap showing differentially expressed gene dynamics during hemocyte differentiation process. (G) Spline plots showing the expression dynamics of Fli1, c-Rel, and MAF. Imaginary line, monocytic hemocyte lineage; Full line, granulocyte lineage.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig2-figsupp1-v2.jpg)\n\n### Identification of a macrophage-like phagocytic cell population in shrimp hemolymph\n\nNext, we analyzed the similarities that MH2 might be sharing with terminally differentiated monocyte-like macrophages or dendritic cells. Recently, the Human Cell Atlas mapped the expression of most genes across major human cell types (Karlsson et al., 2021). We compared MH2 marker genes with that in the human database and found human homologs for nine MH2 marker genes including chitotriosidase (CHIT1), lysozyme (Lyz1), lipase (LIPF), legumain (LGMN), Nlrp3, alpha-N-acetylgalactosaminidase (NAGA), zinc finger E-box-binding homeobox 1(zfh1), caspase1 (Casp1), and NPC intracellular cholesterol transporter 2 (NPC2). These genes were specifically expressed in human macrophages, including in some tissue-specific macrophages such as Kupffer cells and Hofbauer cells (Figure 3A, Figure 3\u2014figure supplement 1, Figure 1\u2014figure supplement 2B; Karlsson et al., 2021). This suggests that MH2 might be the invertebrate homolog of human macrophages, and various tissue-specific macrophages could have evolved from a common primitive cell type.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig3-v2.jpg)\n\n**Figure 3.:** (A) Comparison between MH2 and human macrophage marker genes. (B) A representative contour plot of shrimp hemocytes against FITC-VP. Threshold intensity (FITC-A) was set to <103 representing control hemocytes (R2), and >2 \u00d7 103 representing phagocytic hemocytes (R1). R1 and R2 were sorted based on the forward scatter (FSC) and fluorescence intensity (FITC) two-dimensional space. (C) Confocal microscopy of sorted hemocytes (R1) with ingested FITC-labelled Vibrio Parahemolyticus. Green, ingested Vibrio Parahemolyticus; Blue, nuclei. Scale bar: 10 \u03bcM. (D) Efficiency of the phagocytosis inhibitor on the Vibrio Parahemolyticus uptake of shrimp hemocytes. The results are presented as mean \u00b1 SD of 6\u20138 replicates. Asterisks denote statistical significance (**p=0.007) between the control and different treatments. (E) Differential gene expression analysis (CHIT1 (**p=0.004), Lyz1 (*p=0.049), and NAGA (*p=0.032)) between R1 and R2 sorted using FACS and analyzed using qPCR. (F) Differential protein expression analysis (NAGA, LYZ1, and NLRP3) between R1 and R2 sorted using FACS. The immunoblot signals were quantified with ImageJ. The relative immunoblot signal intensities of NAGA (*p=0.011), LYZ1 (*p=0.022), and NLRP3 (**p=0.009) compared with that of \u00df-actin were recorded with bar chart. Both qPCR and immunoblot data were analyzed using the student t test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig3-figsupp1-v2.jpg)\n\nTo further prove this hypothesis, we labeled phagocytes via injection of fluorescein isothiocyanate-conjugated Vibrio parahaemolyticus (FITC-VP). The hemocytes which engulfed FITC-VP were isolated using a cell sorter and labelled as phagocytic hemocytes (R1) (fluorescence intensity >2 \u00d7 103). The hemocytes with low fluorescence (<103) were labelled control hemocytes (R2) (Figure 3B). To characterize these phagocytes, we observed them using confocal microscopy. These cells had round nuclei with a highly vacuolated cytoplasm similar to that in vertebrate macrophages (Figure 3C). To further compare these cells with vertebrate macrophage, we performed a phagocytosis inhibition assay using an actin polymerization inhibitor\u2014cytochalasin D (Kokhanyuk et al., 2021)\u2014that effectively suppressed the shrimp hemocyte phagocytosis rate (Figure 3D). To characterize the R1 cells, we quantified CHIT1, Lyz1, and NAGA expression in R1 and R2 using qPCR. The results indicated that these three genes were expressed at higher levels in R1 than in R2 (Figure 3E). In addition, we examined LYZ1, NAGA, and NLRP3 using immunoblotting and found that these three proteins were expressed at significantly higher levels in R1 than in R2 (Figure 3F). Thus, our results indicated that phagocytic cells in shrimp hemolymph specifically expressed MH2 marker genes. Our data suggest that MH2 may be an invertebrate homolog of human macrophages.\n\n### Comparison between hyalinocytes, semi-granulocytes, and granulocytes and their classifications in this study\n\nNext, we compared our classification with the traditional classification. Previously, shrimp hemocytes have been divided into three major types: hyalinocytes, semi-granulocytes, and granulocytes based on morphological criteria and functional properties (S\u00f6derh\u00e4ll, 2016). Recently, these three major types were separated using cell sorting or Percoll density gradient centrifugation and their marker genes were identified and validated using qPCR (Sun et al., 2020; Yang et al., 2015). Here, we analyzed the distribution of previous published marker genes: for hyalinocytes\u2014lysosome membrane protein2 (LIMP2, ncbi_113826216), tubulin beta chain (TUBB4B, ncbi_113826677), dipeptidyl peptidase 1 (CTSC, ncbi_113824311), transglutaminase 1 (TGM1, ncbi_113823934) (Figure 4A, Figure 1\u2014figure supplement 2C); for semi-granulocytes\u2014beta-arrestin-1 (ARRB1, ncbi_113804686), ADP-ribosylation factor 6 (ARF6, ncbi_113820333), lysozyme (Lyz1, ncbi_113802295), Penaeid-3a (PEN-3, ncbi_113808997) (Figure 4B, Figure 1\u2014figure supplement 2A and B); and for granulocytes\u2014clone ZAP 18 putative antimicrobial peptide (CRU, ncbi_113801825), phenoloxidase-activating factor 3 (PPAF3, ncbi_113800184), phenoloxidase 3-like (PPO3, ncbi_113827090), peroxinectin (Pxt, ncbi_113820150) (Figure 4C, Figure 2\u2014figure supplement 1C). Hyalinocyte marker genes were highly expressed in PH1, PH2, MH1, and MH2 groups (Figure 4A and D). Semi-granulocyte marker genes were highly expressed in GH2 and MH2 groups (Figure 4B and D). These data are consistent with previous observations that hyalinocytes contain both proliferating progenitors and phagocytic cells (S\u00f6derh\u00e4ll, 2016). It also explained the observation of phagocytic activities in semi-granulocytes in some studies (Sun et al., 2020). The granulocyte marker genes were consistent with our observations and were highly expressed in GH2 (Figure 4C\u2013D), which indicates that granulocytes are indeed the largest cell-type with internal condensed granules (S\u00f6derh\u00e4ll, 2016).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80127/elife-80127-fig4-v2.jpg)\n\n**Figure 4.:** (A) Dot plot showing corresponding expression of previously reported hyalinocyte marker genes in eight subclusters. (B) Dot plot showing corresponding expression of previously reported semi-granulocyte marker genes in eight subclusters. (C) Dot plot showing corresponding expression of previously reported granulocyte marker genes in eight subclusters. The color indicates mean expression, and dot size represents the percentage of cells within the cluster expressing the marker. (D) A proposed model for comparison between two classifications. The hyalinocyte, semi-granulocyte, and granulocyte were labelled on the t-SNE map with red, brown, and blue circles, respectively.\n\n## Discussion\n\nInnate immune cells play an important role in the adaptation of animals to complex and volatile environments. Their ability for fast response protects animals from various pathogenic invasions. However, invertebrates have experienced a long evolution in a diversified environment, which has led to the fact that invertebrate immunity is extremely complex and immune cell typing in various invertebrates seems quite different (Supplementary file 10). Fortunately, proteins seem to have evolved at a much slower rate (Jayaraman et al., 2022), and cell-specific functional proteins are therefore the key to define cell subsets. Thus, in this study, we compared shrimp immune cell marker genes with their human homologs to identify evolutionary traces of innate immune cells between invertebrates and vertebrates (Supplementary file 11). Our data revealed macrophage-like phagocytes in shrimp hemolymph. This group of cells exhibited phagocytic activity. Additionally, Nlrp3 and Casp1, two well-known mammalian macrophage inflammasome components were identified in these cells, suggesting that inflammasome-mediated anti-pathogenic processes might exist in invertebrate innate immunity and play a role in microbial restriction (Wang et al., 2021). NAGA, another enzyme found in macrophages, could inhibit macrophage activation via deglycosylation of macrophage activators (Saburi et al., 2017). The existence of NAGA in shrimp phagocytes implies that this subset of cells might share similar negative regulatory mechanisms recently partially uncovered in vertebrate macrophages (Luo et al., 2022). In addition, VEGF3, a well-known angiogenic factor, was also identified in this subtype (Eswarappa and Fox, 2015). Shrimp have an open circulation system with partial blood vessels; whether this factor plays a role in wound healing needs to be answered by future studies (S\u00f6derh\u00e4ll, 2016).\n\nPhagocytic ability is one of the fundamental functions in an organism. Unicellular organisms employ phagocytosis for this purpose. Cells in multicellular organisms have functional specializations that increase their adaptability. Thus, the phagocytic ability of metazoans is limited to certain cells. The ratio of phagocytic cells in the different species varies. For example, in the primitive oyster Crassostrea gigas, approximately 40\u201360% of hemocytes engulf pathogens (Sun et al., 2021). In fish, most immune cells, including monocytes, granulocytes, B cells, and red blood cells, possess phagocytic activity against invading pathogens (Heimroth et al., 2021; Li et al., 2006; Xu et al., 2021). In humans, most myeloid cells, including monocytes, macrophages, dendritic cells, and neutrophils, engulf pathogens (Bassler et al., 2019). Shrimps contain fewer phagocytes than do other species (Alenton et al., 2019; Huang et al., 2021; Li et al., 2021). Our data suggest that at least a part of the phagocytes in the shrimp hemolymph originated from a macrophage-like subset. Moreover, vertebrate macrophages include large populations of cells that reside in different tissues with diversified roles. Whether invertebrate macrophages have similar tissue-specific functions is yet unknown and future studied are needed to elucidate the evolution of these helper cells in maintaining homeostasis.\n\nOver the past decades, crustacean hemocytes have been classified into hyalinocytes, semi-granulocytes, and granulocytes based on their morphology and function (S\u00f6derh\u00e4ll, 2016). However, morphology-based classification has caused several problems. For example, crustacean hyalinocytes are generally regarded as small phagocytes with few granules (Lin and S\u00f6derh\u00e4ll, 2011), but some researchers believe that these cells may be immature or prematurely released prohemocytes of the semi-granulocyte or granulocyte lineage (van de Braak et al., 2002). In this study, our data clearly indicated that the small cells though similar in morphology include both prohemocytes and phagocytic hemocytes, and these two subtypes of cells have different marker genes and varied functional roles in the shrimp hemolymph. In addition, semi-granulocytes were considered a major component of circulating hemocytes that were involved in both melanization and phagocytosis. This conclusion cannot be accurate because less than 20% of circulating hemocytes are phagocytic cells, whereas approximately 65% of total hemocytes are considered to be semi-granulocytes (Alenton et al., 2019; Lin and S\u00f6derh\u00e4ll, 2011). Our results indicated that the cells sorted as semi-granulocytes contain both monocytic hemocytes and cells of granulocyte lineage.\n\nIn this study, we selected Penaeus vannamei as a crustacean model and proposed a novel crustacean hemocyte classification system. A new functional monocytic hemocyte lineage for circulating shrimp hemocytes was identified. The terminally differentiated cells of this lineage share several functional genes with mammalian macrophages, which suggests that this monocytic hemocyte lineage might be an invertebrate evolutionary homolog of the vertebrate monocyte lineage. Although crustaceans contain diverse species with different morphologies and evolutionary histories, our data, to some extent, provide a different interpretation for the current crustacean immune cell subtyping. This classification is far from complete but might provide insights about crustacean cellular immunity in the future. Moreover, this study is at an early stage of investigating cellular immunity in shrimp. For example, we could not systematically validate our conclusion at this moment due to the lack of specific monoclonal antibodies to label the three proposed major immune cell subtypes. Some fundamental questions remain unresolved, such as: can shrimp macrophage-like phagocytes infiltrate various tissues and where do the circulating shrimp prohemocytes originate? In future studies, we plan to find answers to such questions to improve our understanding of this important mariculture species and find solutions to serious shrimp diseases that have caused tremendous economic losses worldwide.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u00df-ACTIN(Rabbit monoclonal)</td>\n      <td>Beyotime</td>\n      <td>Cat#AF5003</td>\n      <td>WB (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-NAGA (Rabbit polyclonal)</td>\n      <td>SinoBiological</td>\n      <td>Cat#13686-T24</td>\n      <td>WB (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-LYZ1 (Rabbit polyclonal)</td>\n      <td>Bioss Antibodies</td>\n      <td>Cat#bs-0816R</td>\n      <td>WB (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-NLRP3 (Rabbit polyclonal)</td>\n      <td>GenScript</td>\n      <td></td>\n      <td>polypeptide (aa29-42\uff09WB (1:200)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Vibrio parahaemolyticus)</td>\n      <td>FITC-VP</td>\n      <td>Shantou University</td>\n      <td></td>\n      <td>2\u00d7106 particles/g</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>OptiPrep</td>\n      <td>Axis-shield</td>\n      <td>Cat# AS1114542</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Trypan blue</td>\n      <td>Solarbio</td>\n      <td>Cat# C0040</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>FITC</td>\n      <td>Bioss</td>\n      <td>Cat# D-9801</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hoechst 33342 stain</td>\n      <td>Beyotime</td>\n      <td>Cat# C1028</td>\n      <td>100\u00d7</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>rEGFP</td>\n      <td>Huang et al., 2021 (https://doi.org/10.3389/fimmu.2021.707770)</td>\n      <td></td>\n      <td>recombinant plasmid, prokaryotic expression, purification</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>rCREG</td>\n      <td>Huang et al., 2021 (https://doi.org/10.3389/fimmu.2021.707770)</td>\n      <td></td>\n      <td>recombinant plasmid, prokaryotic expression, purification</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Penaeus vannamei)</td>\n      <td>Haemolymph</td>\n      <td>Shantou local farms</td>\n      <td></td>\n      <td>Freshly isolated from Penaeus vannamei</td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNAprep Pure Micro Kit</td>\n      <td>TIANGEN</td>\n      <td>Cat#DP420</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>First Strand cDNA Synthesis Kit</td>\n      <td>Beyotime</td>\n      <td>Cat#D7168M</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>3\u2019Reagent Kits v3.1</td>\n      <td>10 X Genomics</td>\n      <td>1000268</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CHIT1_F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>GTCGAAATTCCGGCCAAAGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CHIT1_R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>GGCCCGTTCTTGTTTGACTT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Lyz1_F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CAAGAACTGGGAGTGCATCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Lyz1_R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>TCTGGAAGATGCCGTAGTCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>NAGA _F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CTACGAGGACTACGGCAACT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>NAGA _R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CGAACTCTGGGTAGCCTTCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>EF-1\u03b1_F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>GTATTGGAACAGTGCCCGTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>EF-1\u03b1_R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>ACCAGGGACAGCCTCAGTAAG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental organisms\n\nShrimp was purchased from Shantou local farms. Upon delivery, the shrimp were cultured in water tanks filled with aerated seawater at 20 \u00b0C and acclimatized for 2\u20133 days before the experiments. All animal-related experiments were conducted in accordance with Shantou University guidelines.\n\n### Collection of shrimp hemocytes with different treatments\n\nRecombinant EGFP and CREG were purified, as previously described (Huang et al., 2021). Sixty shrimp were divided equally into three groups. One group was left untreated and labelled as control. The other two groups were injected with rEGFP or rCREG (1 \u03bcg/g), respectively. The hemolymph was collected 8 hr post-injection from each group and mixed well. Hemolymph (1.5 mL) was loaded onto an OptiPrep (Axis-shield, NO) separation solution (1.09 g/mL) and centrifuged at 2000 rpm for 10 min at 4 \u00b0C. Circulating hemocytes were concentrated between the hemolymph and the separation solution and carefully collected with a pipettor. The collected hemocytes were stained with 0.4% trypan blue to estimate cell viability. Next, cells with >85% viability were subjected to further scRNA-seq experiments.\n\n### Library preparation and ScRNA sequencing\n\nThe hemocyte suspensions were loaded onto a 10 X Genomics GemCode Single-cell instrument to generate single-cell GEMs. Libraries were generated using Chromium Next GEM Single Cell 3\u2019Reagent Kits v3.1 (10X Genomics, USA). Upon dissolution of the GEM, primers containing (i) an Illumina R1 sequence (read 1 sequencing primer), (ii) a 16 nt 10 X Barcode, (iii) a 10 nt UMI, and (iv) a poly-dT primer sequence were released and mixed with the cell lysate and Master Mix. Barcoded full-length cDNAs were then reverse-transcribed from poly adenylated mRNA and amplified using PCR to generate sufficient mass for library construction. R1 (read 1 primer sequence) was added during the GEM incubation. P5, P7, a sample index, and R2 (read 2 primer sequence) were added during library construction via end repair, A-Tailing, adaptor ligation, and PCR. Reads 1 and 2 were standard Illumina sequencing primers used for paired-end sequencing. All raw sequencing data were stored in the genome sequence archive of the Beijing Institute of Genomics, Chinese Academy of Sciences, gsa.big.ac.cn (accession nos. PRJCA006297).\n\n### Bioinformatics analysis of single-cell RNA sequencing data\n\nRaw BCL files were converted into FASTQ files using 10 X Genomics Cell Ranger software (version 5.0). The reads were then mapped to the shrimp genome (taxid:6689), and the reads that uniquely intersected at least 50% of an exon were considered for UMI counting. Valid barcodes were identified using the EmptyDrops method (Lun et al., 2019). The hemocytes by gene matrices for control, rEGFP treatment and rCREG treatment were individually imported to Seurat version 3.1.1 for the following analyses (Butler et al., 2018).\n\nCells with UMIs (\u226517,000), mitochondrial genes (\u226510%), \u2264230 detected genes, or \u22652200 detected genes were excluded. The qualified cells were normalized via \u2018LogNormalize\u2019 method, which normalizes the gene expression for each cell by the total expression. The formula is as follows:\n\n$$\nAgeneexpressionlevel=log(1+UMI_{A}/UMI_{Total}\\times10000)\n$$\n\nThe batch effect was corrected using a canonical correlation analysis (Stuart et al., 2019). The integrated expression matrix was then scaled and subjected to principal component analysis (PCA) for dimensional reduction. Subsequently, the significant principal components (PCs) were identified as those with a strong enrichment of low-p-value genes (Chung and Storey, 2015).\n\nSeurat was used for cell clusters based on principal component analysis (PCA) scores with a subset of the data (1% by default), constructing a \u2018null distribution\u2019 of gene scores. A graph-based approach that calculates the distance based on previously identified PCs was implemented for cell clustering (Chung and Storey, 2015). Finally, a resolution of 0.2 was chosen as the clustering parameter, which identified 8 clusters. The t-SNE was then performed to visualize the data in a two-dimensional space.\n\nDifferentially expressed gene (up-regulation) analysis: The median expression patterns across all cells in each cluster were calculated to identify genes that were enriched in a specific cluster. The expression value of each gene in the given clusters was compared against the rest of the cells using the Wilcoxon rank-sum test (Camp et al., 2017). The significantly upregulated genes were identified using several criteria. First, genes had to be at least 1.28-fold overexpressed in the target cluster. Second, genes had to be expressed in more than 25% of the cells belonging to the target cluster. Third, the p-value had to be less than 0.05.\n\nCell trajectory analysis: Single-cell trajectories were analyzed using a matrix of cells and gene expression by Monocle (Version2.10.1) (Trapnell et al., 2014). Monocle reduced the space to one with two dimensions and ordered the cells (sigma = 0.001, lambda = NULL, param.gamma=10, tol = 0.001) (Qiu et al., 2017). Once the cells were ordered, we visualized the trajectory in reduced dimensional space. The trajectory had a tree-like structure, including tips and branches. Monocle was used to identify genes that were differentially expressed between the groups of cells. The key genes were identified as having a false discovery rate (FDR)<1e-5. Additionally, genes with similar trends in expression such as shared common biological functions and regulators were grouped. Finally, the Monocle developed BEAM to analyze branch-dependent gene expression by formulating the problem as a contrast between the two negative binomial GLMs.\n\n### Phagocytic cell labeling and sorting\n\nShrimp phagocytic cells were labeled as previously described (Huang et al., 2021). In brief, FITC labeled Vibrio parahaemolyticus (VP) (2\u00d7106 particles/g) were injected into the shrimp. The hemocytes were collected from 30 to 40 shrimp 2 hr post-injection. Each sorting was performed on a FACSMelody cell sorter (BD Biosciences, USA). The fluorescence boundary was set based on the detection of shrimp hemocyte self-fluorescence without VP injection.\n\n### Morphological analysis of sorted hemocyte and phagocytosis inhibition assay\n\nPhagocytic hemocytes (R1) were collected, stained with Hoechst 33342 (Beyotime, Shanghai, China), and observed using an LSM800 confocal microscope (Zeiss, Germany). The phagocytosis inhibition assay was performed according to a previously described method with some modifications (Kokhanyuk et al., 2021). In brief, each shrimp was injected with either FITC-VP (2\u00d7106 particles/g) or FITC-VP (2\u00d7106 particles/g)+cytochalasin D (5 \u03bcM/g). The hemocytes were collected 2 hr post-injection and immediately analyzed with a BD Accuri C6 Plus Flow Cytometer (Becton Dickinson, USA). The phagocytic hemocytes were quantified based on fluorescence intensity, and the fluorescence boundary was set based on the detection of self-fluorescence of untreated hemocytes.\n\n### Collection of sorted hemocyte RNA and proteins for RT-qPCR and immunoblot analyses\n\nFor each experiment, 50\u2013100 k events from phagocytic hemocytes (R1) and control hemocytes (R2) were collected. Total RNA from the collected samples was purified using the RNAprep Pure Micro Kit (TIANGEN, Beijing, China) and reverse-transcribed into cDNA using a First Strand cDNA Synthesis Kit (Beyotime, Shanghai, China). qPCR was performed as previously described (Luo et al., 2022; Supplementary file 10), and the gene expression level was recorded as relative expression to EF-1\u03b1. This experiment was repeated five times. Total proteins from sorted hemocytes were precipitated by adding 1/100 volume of 2% sodium deoxycholate (Macklin, Shanghai, China) and 1/10 volume of 100% trichloroacetic acid (Macklin), followed by vortexing and centrifugation at 15,000\u00d7g for 15 min at 4 \u00b0C. The pellet was collected for performing SDS-PAGE and immunoblotting, as described before (Luo et al., 2022). This experiment was repeated thrice. The following antibodies were used: \u03b2-actin (AF5003; Beyotime, Shanghai, China), anti-NAGA (13686-T24; SinoBiological, Beijing, China), and anti-LYZ1 (bs-0816R; Bioss Antibodies, MA, USA). The polypeptide antibody against shrimp NLRP3 (aa29-42) was prepared by GenScript (Nanjing, China).\n\n### Statistical Analyses\n\nThe data in this study are presented as the results of at least three independent experiments. Statistical analyses were performed using the GraphPad Prism 8.0. Two-tailed unpaired Student\u2019s t-tests were used to calculate the significance at *p<0.05, **p<0.01, and ***p<0.001.\n",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "da440f5f-9dd7-40ae-a98e-67d75f7e6a98",
+      "submission_id": "e32cde6e-1035-4a4e-8b23-c3e8bd0330e8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Irene Salinas, https://ror.org/05fs6jp91 University of New Mexico United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80127.sa0](https://doi.org/10.7554/eLife.80127.sa0)\n\nThis study provides a single cell transcriptomic atlas of shrimp hemocytes and identifies a subset of myeloid cells with markers that resemble mammalian macrophages. These novel phagocytic macrophage subset may be the target of future studies in diseased shrimp.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Irene Salinas, https://ror.org/05fs6jp91 University of New Mexico United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80127.sa1](https://doi.org/10.7554/eLife.80127.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Myeloid cell evolution uncovered by shrimp immune cell analysis at single-cell resolution\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Irene Salinas as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Carla Rothlin as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Beatriz Novoa (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The title needs to be revised according to the reviewers' comments.\n\n2) Please revise the hypothesis and goal of the study in the introduction so that the experimental work actually matches the hypothesis and goals. This is very important because all three reviewers agree that the evolutionary hypothesis presented is vague and not the main point of the work.\n\n3) It is critical to address all the experimental concerns regarding the phagocytosis assays and data presented in Figure 3 (see reviewer #1 comments).\n\n4) Please include light microscopy or electron microscopy images of sorted phagocytes.\n\n5) Please include in a supplementary table the % nucleotide and % amino acid identity scores between vertebrate and shrimp gene markers used in the single cell RNA-Seq dataset.\n\n6) As brought up by all reviewers, data interpretation and discussion need to be completely reorganized. The discussion should be much more thorough and include very careful interpretation of the findings.\n\nReviewer #1 (Recommendations for the authors):\n\nThe present study provides a single cell transcriptional atlas of the white shrimp, P. vannamei, immune cells in the hemolymph, known as hemocytes. White shrimp ScRNA-Seq studies uncovered two macrophage-like populations, one of them with markers similar to mammalian macrophages. The study also shows that this new population is phagocytic and expresses proteins such as NLRP3, LYS, and NAGA. These findings redefine the current classification of shrimp immune cells which has been done using morphological approaches and via targeted qPCR studies but never using single cell transcriptomics.\n\nCurrently, the manuscript is heavily focused on the single cell dataset which should be the start to formulate hypotheses, not the main focus of the paper. The authors do a good job at identifying the MH2 subset and suggesting that they are phagocytic but further experiments are needed to substantiate this observation and increase the significance of these results.\n\nAbstract:\n\n1. The following sentence does not make any sense \"How myeloid cells evolved from invertebrate to vertebrate is still a mystery.\" I suggest rephrasing to: Despite the importance of innate immunity in invertebrates, the diversity and function of myeloid cells in invertebrates are largely unknown.\n\n2. The abstract needs to be rewritten to just say: Using single-cell RNA-Seq we uncover XXX in the white shrimp hemolymph. Our results identified a novel macrophage-like subset defined by the expression of the XXX gene MH2. MH2+ hemocytes are phagocytic and express markers that indicate some conservation with mammalian macrophages.\n\n3. Combined, our work resolves the heterogeneity of hemocytes in the very economically important aquatic species and identifies a novel myeloid subset that is likely a critical player in the immune responses of shrimp to threatening infectious diseases affecting this industry.\n\nIntroduction:\n\nThe introduction should start by stating the importance of innate immunity in invertebrates since there is no B and T cell-based adaptive immunity. Innate immune cells in invertebrates are also very important because they have trained immunity.\n\nAfter the introductory paragraph, the authors can describe what is known based on single-cell RNA-Seq from invertebrate hemocytes, basically what is already written in the current version of the manuscript from lines 66-79.\n\nLine 80-81: I do not think the question is properly formulated. Of course, there is a common ancestor between vertebrates and invertebrates, and therefore there may be a conservation of many myeloid-like characteristics in invertebrate and vertebrate myeloid subsets. However, invertebrates may have also evolved their own subsets of myeloid cells over evolutionary time. Some may have co-opted some of the same molecules that vertebrate myeloid cells also use but many new functions may have been acquired from other genes/gene families that may have been expanded. I really beg authors to ask themselves again if this is the real question they want to answer.\n\nLine 82: Intrigued by this question, we here use the marine invertebrate XXX to characterize immune cell subsets using scRNA-Seq. The reason to select this species is because of XXX.\n\nLine 91: remove various.\n\nLines 94-99 read very strangely. If this is the end of the introduction, the authors need to frame the conceptual question and the goal of the study. For instance, if single-cell RNA-Seq has not been done before in P. vannamei please state so.\n\nLine 204: dendritic, not dendric.\n\nResults:\n\n\u2013 According to Figure 1C, MH cells express not only lyz1, nlrp3 but also VEGF5. The authors do not comment on this very interesting finding. VEGF expression may confer MH cells the ability to penetrate tissues and induce angiogenesis. I do not see any VEGF5 expression data in Figure 2 so I do not know if it was differentially expressed in MH1 and MH2 populations. Can the authors please clarify? If VEGF5 is, in fact, a marker for MH2 it needs to be shown and discussed in the discussion given that VEGF is also a marker for Hofbauer cells (see my comments below). Lastly, the VEGF pathway plays a very important role in the immune response of shrimp to infection with the very important virus WSSV (doi: 10.3389/fimmu.2017.01457). Because of this, this finding is important and deserves careful examination and discussion.\n\n\u2013 There are three unknown genes that chiefly differentiate the MH1 and MH2 clusters. These three genes are highly expressed in MH1 but not MH2 according to Figure 2B. Did the authors try to blast these three unknown genes and identify motifs/superfamilies that may suggest function? I highly suggest trying to do that and add that to the manuscript if any interesting findings emerge.\n\n\u2013 In figure 3A: gene markers for MH1 not only point towards classical human macrophages but also Hofbauer cells, which is a unique villous macrophage population in the placenta with fetal origin. This finding is however not further commented on by the authors in the text and is something that needs to be highlighted in the manuscript. These placental macrophages also have phagocytic capabilities and therefore this finding deserves careful examination.\n\n\u2013 Figure 3B: please show an FSC/SSC plot to show the gating strategy based on morphology prior to the FITC gating strategy.\n\n\u2013 Interpretation of phagocytosis assays: do authors suggest that only MH2 cells are phagocytic or does the GFP+ phagocytic population include cells from other single-cell clusters?\n\n\u2013 Phagocytosis assays: please show IF images of the in vivo assay following isolation of hemocytes and imaging of cells with ingested Vibrio GFP in the cytoplasm to confirm true phagocytosis as well as to visualize the morphology of the MH2 population.\n\n\u2013 The morphology of the sorted phagocytic population used for qPCR and western blot studies is very important since it may show heterogeneity. It is also very important for the last figure where the authors attempt to compare the past hemocyte classification with their findings. Finally, it is important because of the Hofbauer cell villous morphology. Hofbauer cells have small nuclei and large, highly vacuolated cytoplasm so let's see if this matches with MH2 morphology.\n\n\u2013 Phagocytosis control: please conduct ex vivo phagocytosis assays with hemocytes exposed to vibrio GFP in the presence or absence of phagocytosis inhibitors such as inhibitors of actin polymerization.\n\nKey experiments need to be performed pertaining to increased experimental evidence to characterize the MH2 subset.\n\nFor instance, really important questions are whether this subset is found in tissues (resident macrophages), when they first appear during shrimp ontogeny, whether dietary immunostimulation or infection alters the numbers of MH2, and their transcriptional profile or even whether they display trained immunity. I do not think the authors need to answer all these questions in this one study but at least one more functional experiment needs to be done to elevate the paper's significance.\n\nDiscussion:\n\n\u2013 The discussion is very short, lacks structure, and is poorly written. There are grammar errors in the first paragraph. For example: for animals, not animal. Please check the grammar.\n\n\u2013 Discussions must always acknowledge the limitations of the study. For instance, here, the authors did not evaluate whether MH2 populations expand during the course of an infection/experimental challenge, which would have made the paper a lot better.\n\n\u2013 Another limitation of the paper is whether or not MH2 cells are able to reside within tissues or they are only a circulating population. Please discuss.\n\n\u2013 The discussion does not cover in depth any of the findings of the manuscript. For instance, there is a sentence on the NLPR3 expression, but there is no deep discussion of what it means. NLPR3 expression appears to define MH cells even at the steady state but it increases upon phagocytosis according to figure 3. Please discuss these findings. The same goes for NAGA expression, it needs to be further interpreted in the discussion.\n\n\u2013 Line 271-273: the citations for teleost RBC being phagocytic need to be more comprehensive, many old papers had shown that not just the 2021 citation provided by the authors.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have treated the shrimps with recombinant CREG, however, with the exception of showing that it did not induce cell differentiation, it is not mentioned in the article, nor in the abstract. Even the name of the protein has not been included.\n\nI do not understand the relevance of fish red blood cells in the discussion.\n\nThe authors mention that they: \"explained some debates in this field\". This should be clarified and better explained. Maybe they forgot to include this information.\n\nAlso, the questions included in the discussion are not answered or discussed: \"For example, why hyalinocytes have both proliferating activity and phagocytic activity (Soderhall, 2016). Why semi-granulocytes have phagocytic activity(M. Sun et al., 2020).\"\n\nIn summary, the article is correct, but the declared general aim compared with the results is overrated.\n\nReviewer #3 (Recommendations for the authors):\n\nI have a number of comments that require clarification before I would be willing to endorse the publication of this manuscript.\n\n1. The written manuscript, particularly the introduction, does not align with the expectations set by the manuscript title. As it is written, this paper seems as though it is an investigation into the role of CREG in hemocyte development/differentiation. It seems as though the expectations that CREG would influence hemocyte development did not pan out, and the myeloid evolution angle became the focus. The manuscript introduction and discussion should be refocused to better guide the reader through other invertebrate studies, some of which are single-cell analyses, that contribute to our current understanding of myeloid cell evolution.\n\n2. The methods are generally vague and at times, seem conflicting. For example, DropSeq is mentioned in the Figure 1 caption whereas 10x is mentioned elsewhere. More detail could be included for nearly all method sections.\n\n3. Based on the information provided, primarily in the supplemental tables, it is unclear how similar the vertebrate homologs are to the shrimp genes. These vertebrate factors are used to assign a function to the shrimp transcripts, however, without a % nucleotide or amino acid identity, it is not possible to evaluate how appropriate those putative functions are. This is a cruz of the manuscript, as the conclusions that these factors can be used to define hemocyte subtypes as evolutionarily related to vertebrate myeloid cells appear to be hinged on the fact that they are functionally the same. The % nucleotide and % amino acid identity scores should be included in the supplementary tables.\n\n4. I do not think it is sufficient to suggest that expression patterns of marker genes are strong evidence of developmental relationships between hemocyte subtypes. The authors even use the word 'probably' on line 177 when explaining this analysis. To demonstrate the differentiation relationships being proposed, the authors should sort the hemocyte subtypes using the markers identified and then experimentally show that those subtypes proposed as being 'progenitor cells' can in fact differentiate into effector subtypes.\n\n5. The discussion is incredibly brief and speculative. Statements such as \"Crustacean seems possess less phagocytic cells compared with other species, which may be due to its unique endosymbiosis with microbes in its hemolymph, which has been partially unveiled by recent studies\" are unsupported and seem tangential to the stated theme of the manuscript. In other instances, the use of terms such as 'a lot' (line 171) seems sloppy and does little to inform the reader. Substantial effort should be directed at focusing the manuscript towards the intended theme.\n\n6. Given the breadth of invertebrate species out there, it seems inappropriate to suggest that shrimp hemocytes are the only invertebrate key to unlocking myeloid cell evolution. The authors should, at the least, create a summary table of other single-cell analyses and hematopoietic hemocyte studies undertaken in invertebrates, highlighting whether there is consistency with the findings of this study in other vertebrate phyla. This type of analysis would lend itself to supporting a primarily sequence-based conclusion of myeloid cell evolution from an invertebrate origin.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Single cell RNA sequencing analysis of shrimp immune cells identifies macrophage-like phagocytes\" for further consideration by eLife. Your revised article has been evaluated by Carla Rothlin (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below.\n\nSpecifically, reviewers have still identified issues with the English grammar which needs further improvement, the comparison with other invertebrate single-cell data sets beyond arthropods, and the tone down of some of the conclusions.\n\nReviewer #5 (Recommendations for the authors):\n\n1) In the manuscript entitled: \"Single cell RNA sequencing analysis of shrimp immune cells identifies macrophage-like phagocytes\" by Peng Yang et al. The authors describe the characterization on a single cell level of hemocytes and immunocytes of the Shrimp Penaeus vannamei. Moreover, they find on the molecular level similarities to vertebrate myeloid lineage, specifically macrophage-like cells. They show that those cells are functionally phagocytic cells and have macrophage markers on the RNA and protein levels. Moreover, they compare their findings with the previous characterization of shrimp hemocytes.\n\n2) This is important work since the authors use a commercially important species. The single-cell analysis is laying the base for future cellular understanding. The authors validate their sequencing data for the macrophage-like population using phagocytic function and RT-PCR and protein validation. The manuscript is well written and explained.\n\nThere are some overstatements that should be addressed. While the authors are very couscous in making homology overstatement regarding the macrophage-like cells, they are using the myeloid cell lineage as a given to exist and be homolog between vertebrates and invertebrates. Due to that please revise the second sentence in the abstract (line 19) to \"innate immune cells\" or something like that instead of myeloid. The same is also true for the third line of the discussion (lines 247-248). Since myeloid is a specifically defined subpopulation in vertebrates' hematopoietic system, it is not parallel to phagocytes or innate immune cells. The authors by the end of the manuscript can discuss their findings and that the myeloid lineage might evolve in arthropods already.\n\nAn additional issue related to that is to do with the first paragraph of the introduction, while the authors are trying to make a general statement of myeloid lineage in invertebrates, they give only examples from other arthropods. I think to make it a general discussion they should discuss additional works, such as the work of Rosental et al., Nature 2018, where myeloid lineage was shown in tunicates (Botryllus) on the molecular and functional levels. This way the authors can make a more general statement about the earlier emergence of the myeloid lineage.\n",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "35d3db36-7507-4a13-a9b8-222bfc7cfa3e",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C1",
+      "claim": "Using single-cell RNA-seq, prohemocytes, monocytic hemocytes, and granulocytes were identified as the three major cell-types in the white shrimp hemolymph.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single-cell RNA-seq, we identified prohemocytes, monocytic hemocytes, and granulocytes as the three major cell-types in the white shrimp hemolymph.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly supported by experimental data from single-cell RNA sequencing analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "d9601b98-6be4-4474-8a3b-99d07dd68015",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C2",
+      "claim": "A novel macrophage-like subset called monocytic hemocytes 2 (MH2) was identified, defined by the expression of certain marker genes, including Nlrp3 and Casp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results identified a novel macrophage-like subset called monocytic hemocytes 2 (MH2) defined by the expression of certain marker genes, including Nlrp3 and Casp1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The identification is based on scRNA-seq data showing specific marker gene expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "b3f6683e-5dbf-4b80-8754-956969b744e7",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C3",
+      "claim": "MH2 hemocytes are phagocytic.",
+      "claim_type": "EXPLICIT",
+      "source": "This subtype of shrimp hemocytes is phagocytic and expresses markers that indicate some conservation with mammalian macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental phagocytosis assays using FITC-labeled bacteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "6c81c7fb-d997-43f5-8899-f8352a1b134b",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C4",
+      "claim": "MH2 hemocytes express markers that indicate some conservation with mammalian macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "This subtype of shrimp hemocytes is phagocytic and expresses markers that indicate some conservation with mammalian macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparative analysis of marker genes between shrimp MH2 cells and human macrophages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "0ad75e36-c912-4b9d-898d-f9e2b3baf700",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C5",
+      "claim": "Invertebrates do not have B- and T-cell-based adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with vertebrates, invertebrates do not have B- and T-cell-based adaptive immunity, which makes them primarily reliant on innate immunity as defense against various pathogens (Little et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Little et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "a5cc2d5e-2913-4460-a6bb-2a7477fd6ef0",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C6",
+      "claim": "Invertebrates are primarily reliant on innate immunity as defense against various pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with vertebrates, invertebrates do not have B- and T-cell-based adaptive immunity, which makes them primarily reliant on innate immunity as defense against various pathogens (Little et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows logically from the lack of adaptive immunity and is supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "e7bd3ea3-42aa-4a50-9e7a-8d49feac7c05",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C7",
+      "claim": "Innate immune cells in invertebrates have 'trained immunity'.",
+      "claim_type": "EXPLICIT",
+      "source": "Although invertebrates have developed diverse forms of innate immunity in order to adapt to various environmental challenges, the innate immune cells themselves contribute significantly because they have 'trained immunity' (Lanz-Mendoza and Contreras-Gardu\u00f1o, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lanz-Mendoza and Contreras-Gardu\u00f1o, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "bf4bc670-27a9-4b30-b9e7-e903333b2364",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C8",
+      "claim": "The evolution of innate immune systems has diverged into many branches in the metazoan tree of life.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the evolution of innate immune systems has diverged into many branches in the metazoan tree of life, making invertebrate immune cell-typing extremely complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established evolutionary biology knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "ee95a653-46e1-4144-befc-7f3fe92212d5",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C9",
+      "claim": "The cells of the vertebrate immune system are conserved from chordates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the cells of the vertebrate immune system are conserved from chordates (Rosental et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rosental et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "84ab3b8b-cb2e-47ab-ac67-a76fca0c0a32",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C10",
+      "claim": "Mosquito hemocytes are of four major types: prohemocytes, granulocytes, oenocytoids, and megacytes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, recent research in mosquito cellular immunity revealed that mosquito hemocytes are of four major types (prohemocytes, granulocytes, oenocytoids, and megacytes) (Kwon et al., 2021; Raddi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kwon et al., 2021 and Raddi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "d5e86b89-cdb0-4939-9349-6795e67aab22",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C11",
+      "claim": "Drosophila melanogaster hemocytes can be divided into eight subgroups, including crystal cells, lamellocytes, unspecified plasmatocytes, proliferative plasmatocytes, PSC-like hemocytes, antimicrobial plasmatocytes, phagocytic plasmatocytes, and secretory plasmatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hemocytes from another invertebrate model \u2014 Drosophila melanogaster \u2014 can be divided into eight subgroups, including crystal cells, lamellocytes, unspecified plasmatocytes, proliferative plasmatocytes, PSC-like hemocytes, antimicrobial plasmatocytes, phagocytic plasmatocytes, and secretory plasmatocytes (Cattenoz et al., 2021; Cho et al., 2020; Li et al., 2022; Tattikota et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Cattenoz et al., 2021; Cho et al., 2020; Li et al., 2022; Tattikota et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "3ede87f2-2b8a-4717-ac4b-dbdd3d8c510f",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C12",
+      "claim": "Penaeus vannamei is a popular mariculture species due to being fast growing and delectable.",
+      "claim_type": "EXPLICIT",
+      "source": "This species was selected because it is a popular mariculture species due to being fast growing and delectable (Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "4f51b971-c424-4a1b-b09e-4345bf22146b",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C13",
+      "claim": "Penaeus vannamei has an open circulatory system filled with hemolymph, which consists of plasma and hemocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, this invertebrate has an open circulatory system filled with hemolymph, which consists of plasma and hemocytes (Lin and S\u00f6derh\u00e4ll, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lin and S\u00f6derh\u00e4ll, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "45c56051-6bde-48cf-979c-800ed646784a",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C14",
+      "claim": "Shrimp hemolymph bears high similarity to vertebrate peripheral blood in terms of functions such as transportation of nutrients and metabolic waste, maintenance of acid\u2013base equilibrium, defense against various invading pathogens, and hemostatic effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The shrimp hemolymph bears high similarity to that of the vertebrate peripheral blood in terms of functions such as transportation of nutrients and metabolic waste, maintenance of acid\u2013base equilibrium, defense against various invading pathogens, and hemostatic effect (McNamara and Faria, 2012; Tassanakajon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McNamara and Faria, 2012 and Tassanakajon et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "19fba035-aa45-4c31-a8dc-ab91ca35299d",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C15",
+      "claim": "The circulating plasma of shrimp contains more than 400 proteins, many of which are vertebrate homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the circulating plasma contains more than 400 proteins, many of which are vertebrate homologs (Luo et al., 2022; Tao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Luo et al., 2022 and Tao et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "e5738187-fa2c-4f20-a884-80963d2b9d90",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C16",
+      "claim": "The circulating hemocytes of shrimp comprise proliferating cells, phagocytic cells, and effector secreting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The circulating hemocytes comprise proliferating cells, phagocytic cells, and effector secreting cells (Lin and S\u00f6derh\u00e4ll, 2011), which are functionally similar to vertebrate peripheral myeloid cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lin and S\u00f6derh\u00e4ll, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "ca1e54d7-253c-43bf-bd02-4d293081156f",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C17",
+      "claim": "Shrimp circulating hemocytes are functionally similar to vertebrate peripheral myeloid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The circulating hemocytes comprise proliferating cells, phagocytic cells, and effector secreting cells (Lin and S\u00f6derh\u00e4ll, 2011), which are functionally similar to vertebrate peripheral myeloid cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the functional similarities described.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "3a7fcfeb-763a-4fcc-9d62-ad576cbd62c3",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C18",
+      "claim": "Phagocytes have been identified in all metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these cells, the phagocytes have been identified in all metazoans (Musser et al., 2021), although they appear to be different in invertebrates and vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Musser et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "1245d3d0-05fb-4ab9-a1f4-7139308e89d1",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C19",
+      "claim": "Bacterial engulfment in phagocytes may be conserved from invertebrates to vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Some recently performed functional assays suggest that the bacterial engulfment in phagocytes may be conserved from invertebrates to vertebrates (Kokhanyuk et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kokhanyuk et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "a5fcd81d-156e-471a-96fb-42fbdd4452b9",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C20",
+      "claim": "Recombinant CREG (rCREG) was more effective than recombinant EGFP (rEGFP) in activating shrimp hemocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we identified a lipopolysaccharide (LPS)-induced shrimp plasma protein CREG and noticed that recombinant CREG (rCREG) was more effective than recombinant EGFP (rEGFP) in activating the shrimp hemocytes (Huang, Yang, & Wang, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work by Huang, Yang, & Wang, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "11c29edf-3b2a-4732-9b18-5898730f7eb3",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C21",
+      "claim": "A total of 34,693 cells including control (12544), rEGFP- (12640), and rCREG-treated (9509) cells were retained for analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 34,693 cells including control (12544), rEGFP- (12640), and rCREG-treated (9509) cells were retained for further analyses, and these cells exhibited a median of 5656, 6837, and 7916 transcripts and 1089.5, 1245, and 1364 genes per cell, respectively (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is direct experimental data from the scRNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "2d4a4a65-b3be-4504-b676-d0694c94e300",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C22",
+      "claim": "Control cells exhibited a median of 5656 transcripts and 1089.5 genes per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 34,693 cells including control (12544), rEGFP- (12640), and rCREG-treated (9509) cells were retained for further analyses, and these cells exhibited a median of 5656, 6837, and 7916 transcripts and 1089.5, 1245, and 1364 genes per cell, respectively (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is direct experimental data from the scRNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "801a04c5-df48-4b39-aadb-f5ef5b7643d4",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C23",
+      "claim": "rEGFP-treated cells exhibited a median of 6837 transcripts and 1245 genes per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 34,693 cells including control (12544), rEGFP- (12640), and rCREG-treated (9509) cells were retained for further analyses, and these cells exhibited a median of 5656, 6837, and 7916 transcripts and 1089.5, 1245, and 1364 genes per cell, respectively (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is direct experimental data from the scRNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "ebf5e559-2de3-4f9e-9fb2-e97854283dd4",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C24",
+      "claim": "rCREG-treated cells exhibited a median of 7916 transcripts and 1364 genes per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 34,693 cells including control (12544), rEGFP- (12640), and rCREG-treated (9509) cells were retained for further analyses, and these cells exhibited a median of 5656, 6837, and 7916 transcripts and 1089.5, 1245, and 1364 genes per cell, respectively (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is direct experimental data from the scRNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "1f947a5e-db0d-4959-96f4-f8f873afb35c",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C25",
+      "claim": "The rCREG-treated samples had the highest unique molecular identifiers (UMIs) and detected genes compared with the other two groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The rCREG-treated samples had the highest unique molecular identifiers (UMIs) and detected genes compared with that of the other two groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "f80e66df-caf0-4dda-af2e-24009e14c1fe",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C26",
+      "claim": "CREG is a hemocyte activation factor.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with our previous conclusion that CREG is a hemocyte activation factor (Huang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work and current experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "9548fe5b-ca4e-477b-9c15-d690287db197",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C27",
+      "claim": "Five major groups of isolated hemocytes were identified: prohemocytes (PHs) (6838, 19.7%), granulocytes (GHs) (13871, 40%), monocytic hemocytes (MHs) (11112, 32%), transitional cells (TCs) (2090, 6%), and germ-like cells (GCs) (782, 2.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "We then aggregated the cell clusters and identified five major groups of isolated hemocytes, including prohemocytes (PHs) (6838, 19.7%), granulocytes (GHs) (13871, 40%), monocytic hemocytes (MHs) (11112, 32%), transitional cells (TCs) (2090, 6%), and germ-like cells (GCs) (782, 2.3%), which were annotated according to their potential functions implied by the marker genes (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is direct experimental data from scRNA-seq clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "2d02cc3c-9856-4aa8-9187-0af21041ece3",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C28",
+      "claim": "Granulocytes are characterized by their ProPO system.",
+      "claim_type": "EXPLICIT",
+      "source": "Granulocytes are characterized by their ProPO system (Sun et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sun et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "96b86461-f9c6-4930-97aa-e9d5da84c767",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C29",
+      "claim": "Prophenoloxidase activating factors 1 and 2 (PPAF1 and PPAF2) were highly expressed in the granulocyte population.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that prophenoloxidase activating factors 1 and 2 (PPAF1 and PPAF2) were highly expressed in this population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene expression data from scRNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "2c04f0fe-296f-40cf-bdd4-fd2a6b6f73de",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C30",
+      "claim": "Secreted proteins, including crustin-like protein (CRUL), penaeidin 3 a.1 (PEN-3), and crustacean hematopoietic factor-like protein (CHF), were highly expressed in the granulocyte population.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to ProPO system genes, secreted proteins, including crustin-like protein (CRUL), penaeidin 3 a.1 (PEN-3), and crustacean hematopoietic factor-like protein (CHF), were also highly expressed in this population (Figure 1C, Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression data from scRNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "eedf0afa-a13a-4cc4-ab8e-dbe4d10dc2c1",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C31",
+      "claim": "Monocytic hemocytes share some critical genes with mammalian monocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The MHs were named thus because they shared some critical genes with mammalian monocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative gene expression analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "9c883e20-5895-4e4b-a9fd-621f512edfb5",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C32",
+      "claim": "NOD-like receptor protein 3 (Nlrp3) is a key component of the inflammasome and is highly expressed in monocytes and macrophages for processing of IL-1\u00df.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, NOD-like receptor protein 3 (Nlrp3) is a key component of the inflammasome and is highly expressed in monocytes and macrophages for processing of IL-1\u00df (He et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to He et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "f59c7926-e5b4-48bf-baa0-c39fe3813313",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C33",
+      "claim": "Lysosome (Lyz1) is a well-known macrophage-secreting hydrolase.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysosome (Lyz1), another canonical antibacterial enzyme, is a well-known macrophage-secreting hydrolase (Short et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Short et al., 1996.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "ddac44f6-d2e8-4bd6-bf17-857b487f5c46",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C34",
+      "claim": "Vago5 encodes an IFN-like antiviral cytokine and plays a role in the anti-white spot syndrome virus (WSSV) resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Vago5 encodes an IFN-like antiviral cytokine and plays a role in the anti-white spot syndrome virus (WSSV) resistance (C. Li, Yang, Hong, Zhao, & Wang, 2021) (Figure 1C, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to C. Li, Yang, Hong, Zhao, & Wang, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "69f990d3-99ea-4980-9927-22aab409d450",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C35",
+      "claim": "Histone1 (h1f0) is the key component of heterochromatin assembly, and its high expression is associated with reduced gene expression and cell stemness properties.",
+      "claim_type": "EXPLICIT",
+      "source": "In PHs, histone1 (h1f0) is the key component of heterochromatin assembly, and its high expression is associated with reduced gene expression and cell stemness properties (Pan and Fan, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pan and Fan, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "5cca0f18-ed2b-41a4-bfff-65ea753d318b",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C36",
+      "claim": "Hemocyte transglutaminase (TGM1) was identified as an immature hemocyte marker.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, hemocyte transglutaminase (TGM1) was identified as an immature hemocyte marker (Koiwai et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Koiwai et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "adf9ae0b-688d-4d39-9ee2-7b752799cba5",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C37",
+      "claim": "The gene Igfbp7 has been shown to promote hemocyte proliferation in the small abalone Haliotis diversicolor.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene Igfbp7 has been shown to promote hemocyte proliferation in the small abalone Haliotis diversicolor (Wang et al., 2015; Figure 1C, Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Wang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "49eb7919-fb08-47aa-987c-49bf19492b6c",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C38",
+      "claim": "Recombinant protein injection slightly increased the proportion of GHs and PHs and decreased the ratio of MHs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombinant protein injection slightly increased the proportion of GHs and PHs and decreased the ratio of MHs (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis of cell type proportions from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "6b2b117c-8b92-4f74-9245-e9e409310914",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C39",
+      "claim": "There were no significant differences between the rEGFP and rCREG treatments in cell type proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were no significant differences between the rEGFP and rCREG treatments, which suggests that CREG is probably an activation factor rather than a differentiation factor for shrimp hemocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "4ea54122-1195-4e16-b664-6c739ea1b36e",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C40",
+      "claim": "CREG is probably an activation factor rather than a differentiation factor for shrimp hemocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were no significant differences between the rEGFP and rCREG treatments, which suggests that CREG is probably an activation factor rather than a differentiation factor for shrimp hemocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of significant differences in cell type proportions between treatments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "71cbe8d3-98ab-4ee5-8839-116125c007a2",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C41",
+      "claim": "Each major class type of hemocytes (PHs, MHs, and GHs) was divided into two subtypes and labelled PH1 (1577, 4.5%) and PH2 (5261, 15.2%), MH1 (10463, 30.2%) and MH2 (649, 1.9%), and GH1 (10353, 29.8%) and GH2 (3518, 10.1%), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "To further trace the immune cell lineages in shrimp hemolymph, we subtyped the remaining three major classes of cells\u2014PHs, MHs, and GHs; each major class type was divided into two subtypes and labelled PH1 (1577, 4.5%) and PH2 (5261, 15.2%), MH1 (10463, 30.2%) and MH2 (649, 1.9%), and GH1 (10353, 29.8%) and GH2 (3518, 10.1%), respectively (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on further clustering analysis of scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "365f414b-e012-4552-b0da-0c3d9c6e8693",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C42",
+      "claim": "Unique marker genes were identified for the subpopulations PH1, GH2, and MH2.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified some unique marker genes located at the edge of the t-SNE map for the subpopulations PH1, GH2, and MH2 (Figure 2A, Figure 2\u2014figure supplement 1, Supplementary file 3, Supplementary file 4 and Supplementary file 5), but could not identify exclusive marker genes for the subpopulations PH2, GH1, and MH1, which constituted the main body of the t-SNE map.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "692904da-6365-4013-ab91-97c5fb49ca4a",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C43",
+      "claim": "Exclusive marker genes could not be identified for the subpopulations PH2, GH1, and MH1.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified some unique marker genes located at the edge of the t-SNE map for the subpopulations PH1, GH2, and MH2 (Figure 2A, Figure 2\u2014figure supplement 1, Supplementary file 3, Supplementary file 4 and Supplementary file 5), but could not identify exclusive marker genes for the subpopulations PH2, GH1, and MH1, which constituted the main body of the t-SNE map.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "7fc0155b-5c42-4829-b256-7419fdb81053",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C44",
+      "claim": "The marker genes for PH2, GH1, and MH1 were also highly expressed in PH1, GH2, and MH2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The marker genes for PH2, GH1, and MH1 were also highly expressed in PH1, GH2, and MH2, respectively (Figure 2B, Supplementary file 6, Supplementary file 7 and Supplementary file 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "bd32dfec-36e1-44e9-9e52-c3b8ca1043a4",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C45",
+      "claim": "PH1 was characterized by high expression of all marker genes for the G1, G2, and M stages of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore this, we performed cell cycle analyses of the six subtypes of hemocytes. PH1 was characterized by high expression of all marker genes for the G1, G2, and M stages (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on cell cycle gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "f95668e4-a323-44b1-af5a-560af8d45b79",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C46",
+      "claim": "Approximately 2\u20135% of circulating hemocytes are proliferating hemocytes and can be labelled with BrdU.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was consistent with a previous report that approximately 2\u20135% of circulating hemocytes were proliferating hemocytes and could be labelled with BrdU (Sun et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sun et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "032db429-e4ef-4324-9711-ef0b0869bbbb",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C47",
+      "claim": "Two major branches\u2014MH lineage and GH lineage\u2014were identified to have differentiated from one common PH.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we set PH1 as the initiating cell and applied a Monocle to construct differentiation trajectories for PHs, GHs, and MHs. Two major branches\u2014MH lineage and GH lineage\u2014were identified to have differentiated from one common PH (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on trajectory analysis using Monocle on scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "0d0b1aac-b958-447a-9b2a-5e6267449583",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C48",
+      "claim": "Shrimp hemocyte differentiation is similar to the development of human myeloid cells, in which granulocyte\u2013monocyte progenitor (GMP) differentiates into monocyte and granulocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "This is similar to the development of human myeloid cells, in which granulocyte\u2013monocyte progenitor (GMP) differentiates into monocyte and granulocyte (Bassler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative inference supported by citation to Bassler et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "8e757238-5db5-44a1-a290-f2bb257b4afb",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C49",
+      "claim": "Three shrimp homologs of human transcription factors (Fli1, MAF, and c-Rel) were identified among differentially expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 3790 differentially expressed genes among different branches were identified and are shown as a specific heatmap on which three shrimp homologs of human TFs were labeled (Figure 2F, Supplementary file 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential gene expression analysis and homology comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "ae411d03-10ec-44a9-94ca-7e816f365152",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C50",
+      "claim": "Fli1 is specifically expressed in the granulocyte lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Fli1 is specifically expressed in the granulocyte lineage, which is consistent with previous observations that Fli1 deletion decreases granulocytic cell number in mice (Starck et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene expression data and supported by citation to Starck et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "92f13591-c516-455a-bb3e-458d067a3657",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C51",
+      "claim": "Fli1 deletion decreases granulocytic cell number in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Fli1 is specifically expressed in the granulocyte lineage, which is consistent with previous observations that Fli1 deletion decreases granulocytic cell number in mice (Starck et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Starck et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "3307b699-86b3-4a35-80bf-2c16d4b05429",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C52",
+      "claim": "MAF and c-Rel were highly expressed in the MH lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "MAF and c-Rel were highly expressed in the MH lineage (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression data from scRNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "6c3ccd8b-935c-4488-bf73-7dd6049cdbd4",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C53",
+      "claim": "c-Rel is a key TF in the NF-\u03baB pathway and plays important roles in monocyte differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "c-Rel is a key TF in the NF-\u03baB pathway and plays important roles in monocyte differentiation (Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "887b2f8c-8d11-4fd1-9223-f2ae64ef538b",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C54",
+      "claim": "MAF is a bZip TF that could induce monocytic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "MAF is a bZip TF that could induce monocytic differentiation (Kelly et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kelly et al., 2000.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "6b7f972b-e34c-4c69-86d5-6a871453dac5",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C55",
+      "claim": "Some myeloid regulators may be conserved between shrimp and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, our data suggest that some myeloid regulators may be conserved between shrimp and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparative analysis of transcription factors.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "f5074f33-a80e-4063-ad9f-6674ad65f582",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C56",
+      "claim": "Nine MH2 marker genes have human homologs including chitotriosidase (CHIT1), lysozyme (Lyz1), lipase (LIPF), legumain (LGMN), Nlrp3, alpha-N-acetylgalactosaminidase (NAGA), zinc finger E-box-binding homeobox 1(zfh1), caspase1 (Casp1), and NPC intracellular cholesterol transporter 2 (NPC2).",
+      "claim_type": "EXPLICIT",
+      "source": "We compared MH2 marker genes with that in the human database and found human homologs for nine MH2 marker genes including chitotriosidase (CHIT1), lysozyme (Lyz1), lipase (LIPF), legumain (LGMN), Nlrp3, alpha-N-acetylgalactosaminidase (NAGA), zinc finger E-box-binding homeobox 1(zfh1), caspase1 (Casp1), and NPC intracellular cholesterol transporter 2 (NPC2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative genomic analysis using the Human Cell Atlas database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "31802fba-e702-4ebf-b650-670d7d3a4d8c",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C57",
+      "claim": "MH2 marker gene homologs are specifically expressed in human macrophages, including in some tissue-specific macrophages such as Kupffer cells and Hofbauer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes were specifically expressed in human macrophages, including in some tissue-specific macrophages such as Kupffer cells and Hofbauer cells (Figure 3A, Figure 3\u2014figure supplement 1, Figure 1\u2014figure supplement 2B; Karlsson et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison with Human Cell Atlas data, supported by citation to Karlsson et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "de402090-e3ab-403d-aace-54e9b63fd7ba",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C58",
+      "claim": "MH2 might be the invertebrate homolog of human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that MH2 might be the invertebrate homolog of human macrophages, and various tissue-specific macrophages could have evolved from a common primitive cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparative gene expression analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "1b64b3d6-088c-4105-a9c3-fd4f23cfe93b",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C59",
+      "claim": "Various tissue-specific macrophages could have evolved from a common primitive cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that MH2 might be the invertebrate homolog of human macrophages, and various tissue-specific macrophages could have evolved from a common primitive cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the comparative analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "c439e9e0-a86e-4f5d-99fc-6b226b3042aa",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C60",
+      "claim": "Phagocytic hemocytes (R1) had round nuclei with a highly vacuolated cytoplasm similar to that in vertebrate macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize these phagocytes, we observed them using confocal microscopy. These cells had round nuclei with a highly vacuolated cytoplasm similar to that in vertebrate macrophages (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on morphological observation using confocal microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "d4246aa2-746d-4203-8713-9dd01c7a6be3",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C61",
+      "claim": "Cytochalasin D effectively suppressed the shrimp hemocyte phagocytosis rate.",
+      "claim_type": "EXPLICIT",
+      "source": "To further compare these cells with vertebrate macrophage, we performed a phagocytosis inhibition assay using an actin polymerization inhibitor\u2014cytochalasin D (Kokhanyuk et al., 2021)\u2014that effectively suppressed the shrimp hemocyte phagocytosis rate (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental phagocytosis inhibition assay data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "25cb5db0-004f-41c3-b9c3-5ce9acce1199",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C62",
+      "claim": "CHIT1, Lyz1, and NAGA were expressed at higher levels in R1 (phagocytic hemocytes) than in R2 (control hemocytes).",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize the R1 cells, we quantified CHIT1, Lyz1, and NAGA expression in R1 and R2 using qPCR. The results indicated that these three genes were expressed at higher levels in R1 than in R2 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on qPCR experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "ee531395-6990-4e6c-80a6-64a229d585c7",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C63",
+      "claim": "LYZ1, NAGA, and NLRP3 proteins were expressed at significantly higher levels in R1 (phagocytic hemocytes) than in R2 (control hemocytes).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we examined LYZ1, NAGA, and NLRP3 using immunoblotting and found that these three proteins were expressed at significantly higher levels in R1 than in R2 (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunoblotting experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "2dccbf87-0278-4c40-b2b3-4c05a9480d64",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C64",
+      "claim": "Phagocytic cells in shrimp hemolymph specifically expressed MH2 marker genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results indicated that phagocytic cells in shrimp hemolymph specifically expressed MH2 marker genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on qPCR and immunoblotting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "70b9678a-9f0f-4714-88b4-9d9f140d769c",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C65",
+      "claim": "MH2 may be an invertebrate homolog of human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that MH2 may be an invertebrate homolog of human macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on multiple lines of evidence including gene expression, morphology, and functional assays.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "1d891fe5-70e4-4158-be5b-be6ca9038586",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C66",
+      "claim": "Shrimp hemocytes have been divided into three major types: hyalinocytes, semi-granulocytes, and granulocytes based on morphological criteria and functional properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, shrimp hemocytes have been divided into three major types: hyalinocytes, semi-granulocytes, and granulocytes based on morphological criteria and functional properties (S\u00f6derh\u00e4ll, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to S\u00f6derh\u00e4ll, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "c7b62b01-190f-4f62-8249-f03e078b8717",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C67",
+      "claim": "Hyalinocyte marker genes were highly expressed in PH1, PH2, MH1, and MH2 groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyalinocyte marker genes were highly expressed in PH1, PH2, MH1, and MH2 groups (Figure 4A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "e43bf8c0-975d-4b1f-879c-bbaf75318559",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C68",
+      "claim": "Semi-granulocyte marker genes were highly expressed in GH2 and MH2 groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Semi-granulocyte marker genes were highly expressed in GH2 and MH2 groups (Figure 4B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "69ad89e2-f31a-4631-8f51-191f5a00bdc1",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C69",
+      "claim": "Hyalinocytes contain both proliferating progenitors and phagocytic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with previous observations that hyalinocytes contain both proliferating progenitors and phagocytic cells (S\u00f6derh\u00e4ll, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on current data and supported by citation to S\u00f6derh\u00e4ll, 2016.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "1b3ff4a2-50c1-49ed-a567-869f4212d24c",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C70",
+      "claim": "Semi-granulocytes have phagocytic activities in some studies.",
+      "claim_type": "EXPLICIT",
+      "source": "It also explained the observation of phagocytic activities in semi-granulocytes in some studies (Sun et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on current data and supported by citation to Sun et al., 2020.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "4e304d01-d975-4039-8ae0-db3b15cc9a54",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C71",
+      "claim": "The granulocyte marker genes were highly expressed in GH2.",
+      "claim_type": "EXPLICIT",
+      "source": "The granulocyte marker genes were consistent with our observations and were highly expressed in GH2 (Figure 4C\u2013D), which indicates that granulocytes are indeed the largest cell-type with internal condensed granules (S\u00f6derh\u00e4ll, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression analysis from scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "d59a73d9-b39b-4a00-9282-72dc8a40deb0",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C72",
+      "claim": "Granulocytes are the largest cell-type with internal condensed granules.",
+      "claim_type": "EXPLICIT",
+      "source": "The granulocyte marker genes were consistent with our observations and were highly expressed in GH2 (Figure 4C\u2013D), which indicates that granulocytes are indeed the largest cell-type with internal condensed granules (S\u00f6derh\u00e4ll, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on gene expression data and supported by citation to S\u00f6derh\u00e4ll, 2016.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "79b314f9-5178-4102-8640-4a1435d3e7d5",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C73",
+      "claim": "Nlrp3 and Casp1 are two well-known mammalian macrophage inflammasome components.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Nlrp3 and Casp1, two well-known mammalian macrophage inflammasome components were identified in these cells, suggesting that inflammasome-mediated anti-pathogenic processes might exist in invertebrate innate immunity and play a role in microbial restriction (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mammalian macrophages.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "cafa9417-b3f5-4709-83d8-cffb80f58e9d",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C74",
+      "claim": "Inflammasome-mediated anti-pathogenic processes might exist in invertebrate innate immunity and play a role in microbial restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Nlrp3 and Casp1, two well-known mammalian macrophage inflammasome components were identified in these cells, suggesting that inflammasome-mediated anti-pathogenic processes might exist in invertebrate innate immunity and play a role in microbial restriction (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the presence of inflammasome components in shrimp cells, supported by citation to Wang et al., 2021.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "d2a724ac-0911-4a96-9779-0432b9e571d8",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C75",
+      "claim": "NAGA could inhibit macrophage activation via deglycosylation of macrophage activators.",
+      "claim_type": "EXPLICIT",
+      "source": "NAGA, another enzyme found in macrophages, could inhibit macrophage activation via deglycosylation of macrophage activators (Saburi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Saburi et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "0ede39c7-6823-4fd8-a7f0-b0ac1ad5e05e",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C76",
+      "claim": "The existence of NAGA in shrimp phagocytes implies that this subset of cells might share similar negative regulatory mechanisms recently partially uncovered in vertebrate macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of NAGA in shrimp phagocytes implies that this subset of cells might share similar negative regulatory mechanisms recently partially uncovered in vertebrate macrophages (Luo et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the presence of NAGA, supported by citation to Luo et al., 2022.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "ba2ca8c7-523f-4c8d-8cc6-0ce8ae6cee0e",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C77",
+      "claim": "VEGF3 is a well-known angiogenic factor.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, VEGF3, a well-known angiogenic factor, was also identified in this subtype (Eswarappa and Fox, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Eswarappa and Fox, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "7923011b-4be6-4b06-be28-13e311a18ba6",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C78",
+      "claim": "In the primitive oyster Crassostrea gigas, approximately 40\u201360% of hemocytes engulf pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the primitive oyster Crassostrea gigas, approximately 40\u201360% of hemocytes engulf pathogens (Sun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sun et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "ac220cb7-42fe-47c4-8080-2691f54c3d26",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C79",
+      "claim": "In fish, most immune cells, including monocytes, granulocytes, B cells, and red blood cells, possess phagocytic activity against invading pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "In fish, most immune cells, including monocytes, granulocytes, B cells, and red blood cells, possess phagocytic activity against invading pathogens (Heimroth et al., 2021; Li et al., 2006; Xu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Heimroth et al., 2021; Li et al., 2006; Xu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "0fd2dad0-3d9e-43c3-af59-92c89da2ded8",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C80",
+      "claim": "In humans, most myeloid cells, including monocytes, macrophages, dendritic cells, and neutrophils, engulf pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, most myeloid cells, including monocytes, macrophages, dendritic cells, and neutrophils, engulf pathogens (Bassler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bassler et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "bc00010c-3642-46c5-b706-12b2f1f17e80",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C81",
+      "claim": "Shrimps contain fewer phagocytes than other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Shrimps contain fewer phagocytes than do other species (Alenton et al., 2019; Huang et al., 2021; Li et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Alenton et al., 2019; Huang et al., 2021; Li et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "a68044b3-259a-41d5-9c96-f74d0df267db",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C82",
+      "claim": "At least a part of the phagocytes in the shrimp hemolymph originated from a macrophage-like subset.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that at least a part of the phagocytes in the shrimp hemolymph originated from a macrophage-like subset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing MH2 cells are phagocytic.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "f9ae5350-b0b8-47e4-8a5c-eae3e1f61cfe",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C83",
+      "claim": "Vertebrate macrophages include large populations of cells that reside in different tissues with diversified roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, vertebrate macrophages include large populations of cells that reside in different tissues with diversified roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vertebrate macrophages.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "8a852f89-39ff-421a-8164-365770145c97",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C84",
+      "claim": "Crustacean hyalinocytes are generally regarded as small phagocytes with few granules.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, crustacean hyalinocytes are generally regarded as small phagocytes with few granules (Lin and S\u00f6derh\u00e4ll, 2011), but some researchers believe that these cells may be immature or prematurely released prohemocytes of the semi-granulocyte or granulocyte lineage (van de Braak et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Lin and S\u00f6derh\u00e4ll, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "22ce45dd-50f7-4798-ae82-5ca9eeb19505",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C85",
+      "claim": "Some researchers believe that hyalinocytes may be immature or prematurely released prohemocytes of the semi-granulocyte or granulocyte lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, crustacean hyalinocytes are generally regarded as small phagocytes with few granules (Lin and S\u00f6derh\u00e4ll, 2011), but some researchers believe that these cells may be immature or prematurely released prohemocytes of the semi-granulocyte or granulocyte lineage (van de Braak et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative interpretation supported by citation to van de Braak et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "7bc20c4f-2519-4116-80b6-adf7cc4bbf89",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C86",
+      "claim": "The small cells in shrimp hemolymph include both prohemocytes and phagocytic hemocytes, and these two subtypes of cells have different marker genes and varied functional roles.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, our data clearly indicated that the small cells though similar in morphology include both prohemocytes and phagocytic hemocytes, and these two subtypes of cells have different marker genes and varied functional roles in the shrimp hemolymph.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on scRNA-seq data showing distinct marker genes for different cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "b61559cb-f263-42f5-89ce-2db8e4a176ff",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C87",
+      "claim": "Semi-granulocytes were considered a major component of circulating hemocytes that were involved in both melanization and phagocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, semi-granulocytes were considered a major component of circulating hemocytes that were involved in both melanization and phagocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the traditional classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "098815fd-982c-48d1-a9a7-7eea8b3c31f2",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C88",
+      "claim": "Less than 20% of circulating hemocytes are phagocytic cells, whereas approximately 65% of total hemocytes are considered to be semi-granulocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion cannot be accurate because less than 20% of circulating hemocytes are phagocytic cells, whereas approximately 65% of total hemocytes are considered to be semi-granulocytes (Alenton et al., 2019; Lin and S\u00f6derh\u00e4ll, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Alenton et al., 2019 and Lin and S\u00f6derh\u00e4ll, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "001890e1-c097-4b8d-b7f3-d3b59a35fe91",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C89",
+      "claim": "The cells sorted as semi-granulocytes contain both monocytic hemocytes and cells of granulocyte lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that the cells sorted as semi-granulocytes contain both monocytic hemocytes and cells of granulocyte lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the gene expression analysis showing overlap of marker genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "bca64e1e-c94b-4f79-be6e-fab9915eb2c7",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C90",
+      "claim": "A new functional monocytic hemocyte lineage for circulating shrimp hemocytes was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "A new functional monocytic hemocyte lineage for circulating shrimp hemocytes was identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding based on scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "1659893d-5317-4680-9b85-e063d5f4a667",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C91",
+      "claim": "The terminally differentiated cells of the monocytic hemocyte lineage share several functional genes with mammalian macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The terminally differentiated cells of this lineage share several functional genes with mammalian macrophages, which suggests that this monocytic hemocyte lineage might be an invertebrate evolutionary homolog of the vertebrate monocyte lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "f2920914-a16f-4a84-a276-bd0c71d3a0b3",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C92",
+      "claim": "The monocytic hemocyte lineage might be an invertebrate evolutionary homolog of the vertebrate monocyte lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "The terminally differentiated cells of this lineage share several functional genes with mammalian macrophages, which suggests that this monocytic hemocyte lineage might be an invertebrate evolutionary homolog of the vertebrate monocyte lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the comparative analysis of functional genes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "3ceab603-89e8-4c53-a425-b44daeaff8ad",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C93",
+      "claim": "Iodixanol gradient centrifugation was applied to concentrate the hemocytes for the Gel Bead-In-Emulsion (GEM) preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "To maximize the collection of circulating hemocytes from shrimp, we applied iodixanol gradient centrifugation to concentrate the hemocytes for the Gel Bead-In-Emulsion (GEM) preparation (Tattikota et al., 2020; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "4515cf41-3e5a-41d5-9ca4-50928e221523",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C94",
+      "claim": "Canonical correlation analysis was applied to perform batch correction on the combined cells from different treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "To further define the major cell types of circulating shrimp hemocytes, we combined all 34,693 cells from different treatments and applied canonical correlation analysis (Stuart et al., 2019) to perform batch correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the bioinformatics method used, supported by citation to Stuart et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "a0ce2056-40aa-472b-8862-bc4b3447e2d2",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C95",
+      "claim": "lhx9 encodes a key transcription factor in gonadal development.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lhx9 encodes a key transcription factor in gonadal development (Balasubramanian et al., 2014), and spir localization is critical for mouse oocyte asymmetric division (Jo et al., 2019; Figure 1C, Figure 1\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Balasubramanian et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "764560e6-6fdd-4ca0-a886-2e5332348ed7",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C96",
+      "claim": "spir localization is critical for mouse oocyte asymmetric division.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lhx9 encodes a key transcription factor in gonadal development (Balasubramanian et al., 2014), and spir localization is critical for mouse oocyte asymmetric division (Jo et al., 2019; Figure 1C, Figure 1\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Jo et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "0ea13f48-5932-4f1e-accb-9e7219f0623f",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "claim_id": "C97",
+      "claim": "Cytochalasin D is an actin polymerization inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "To further compare these cells with vertebrate macrophage, we performed a phagocytosis inhibition assay using an actin polymerization inhibitor\u2014cytochalasin D (Kokhanyuk et al., 2021)\u2014that effectively suppressed the shrimp hemocyte phagocytosis rate (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cytochalasin D, supported by citation to Kokhanyuk et al., 2021.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1e7a9661-de1f-46b6-8116-1df498a80d69",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing was performed on shrimp hemocytes from three treatment groups (control, rEGFP, rCREG), yielding 34,693 cells with varying transcript and gene counts per cell. The rCREG-treated samples showed the highest UMIs and detected genes, consistent with CREG being a hemocyte activation factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 provide clear quantitative data from scRNA-seq experiments showing cell counts, median transcripts, and genes per cell across treatments. Claims C93-C94 describe appropriate methodological approaches (iodixanol gradient centrifugation, canonical correlation analysis for batch correction). The data quality metrics are reasonable for scRNA-seq, and the observation about rCREG treatment is internally consistent with prior work (C26).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "1e71070d-1843-4b26-927c-5a2829101f36",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Five major hemocyte populations were identified in shrimp hemolymph: prohemocytes (19.7%), granulocytes (40%), monocytic hemocytes (32%), transitional cells (6%), and germ-like cells (2.3%). Each population was characterized by specific marker genes, with granulocytes expressing ProPO system genes and monocytic hemocytes expressing genes shared with mammalian monocytes including Nlrp3 and Lyz1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C27 present the main cell type classification based on scRNA-seq clustering. Claims C28-C34 provide specific marker gene evidence for each population, supported by both current data and appropriate citations to prior literature. The functional annotation of cell types based on marker genes follows standard scRNA-seq analysis practices. The identification of five populations is well-supported by the data presented in Figure 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "7b201dbc-d234-42bd-839a-9fe5ae77be3c",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The three major immune cell types (PHs, MHs, GHs) were further subdivided into six subtypes. PH1 showed high expression of cell cycle genes and represented proliferating cells (~4.5% of total), consistent with prior reports of 2-5% proliferating hemocytes. Trajectory analysis revealed two differentiation branches (MH and GH lineages) originating from a common prohemocyte.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 describe subclustering results with specific cell counts and marker gene patterns. Claim C45 provides cell cycle analysis supporting PH1 as proliferating cells, validated by citation C46. Claim C47 presents trajectory analysis using Monocle, a standard computational approach. The convergence of multiple lines of evidence (marker genes, cell cycle analysis, trajectory inference, consistency with prior literature) strongly supports these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "8204bcdb-9fcb-471a-88a7-0798cd20bee5",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A novel macrophage-like subset MH2 was identified, expressing marker genes including Nlrp3 and Casp1. Nine MH2 marker genes have human homologs that are specifically expressed in human macrophages, including tissue-specific macrophages, suggesting MH2 might be an invertebrate homolog of human macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C2 identifies MH2 as a novel subset based on scRNA-seq data. Claims C56-C57 provide comparative genomic evidence using the Human Cell Atlas database, showing that nine MH2 marker genes have human homologs specifically expressed in macrophages. While claim C58 is inferential, it is reasonably supported by the comparative gene expression data. The identification of a novel cell type with conserved marker genes is a significant finding, though the evolutionary homology claim (C58) remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "c0093f43-018e-4d32-9f23-f3bef58a03bb",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MH2 hemocytes are phagocytic cells with morphology similar to vertebrate macrophages (round nuclei, vacuolated cytoplasm). Phagocytic hemocytes specifically expressed MH2 marker genes (CHIT1, Lyz1, NAGA, NLRP3) at both mRNA and protein levels, and their phagocytosis was inhibited by cytochalasin D.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 provide multiple independent lines of experimental evidence: morphological observation (C60), functional inhibition assay (C61), qPCR validation (C62), and immunoblotting (C63). The convergence of morphological, functional, and molecular evidence strongly supports that MH2 cells are phagocytic and express the identified marker genes. The cytochalasin D inhibition experiment (C61) provides mechanistic validation of actin-dependent phagocytosis, consistent with vertebrate macrophages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "d1486d2a-29ef-4ad0-a571-b97ca882351c",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Three shrimp homologs of human transcription factors (Fli1, MAF, c-Rel) were identified among differentially expressed genes during hemocyte differentiation. Fli1 was specifically expressed in the granulocyte lineage, while MAF and c-Rel were highly expressed in the MH lineage, suggesting conservation of myeloid regulators between shrimp and humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C50, C52 present gene expression data from trajectory analysis. Claims C51, C53, C54 provide supporting citations for the known functions of these transcription factors in vertebrate myeloid differentiation. The parallel expression patterns of homologous transcription factors in corresponding cell lineages (Fli1 in granulocytes, MAF/c-Rel in monocytic cells) provide reasonable evidence for functional conservation, though claim C55 remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "2cad494e-4e07-436d-919b-4811c0a2231d",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Shrimp hemocyte differentiation is similar to human myeloid cell development, where granulocyte-monocyte progenitor differentiates into monocyte and granulocyte.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 draws a comparative inference between shrimp hemocyte differentiation (C47) and human myeloid development, supported by citation to Bassler et al., 2019. The trajectory analysis showing bifurcation from a common progenitor into two lineages provides structural similarity to vertebrate GMP differentiation. While this is a comparative inference, it is reasonably supported by the trajectory data and the expression of conserved transcription factors (C49-C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "a3912535-dbbe-4d73-ae24-2df62e861a7d",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The new classification reconciles discrepancies in traditional morphology-based classification. Hyalinocyte markers were expressed in PH1, PH2, MH1, and MH2, explaining why hyalinocytes contain both proliferating progenitors and phagocytic cells. Semi-granulocyte markers were expressed in both GH2 and MH2, indicating that cells sorted as semi-granulocytes contain both monocytic hemocytes and granulocyte lineage cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68, C71 present gene expression data comparing traditional marker genes with the new classification. Claims C69-C70, C86, C89 provide interpretations that resolve previous inconsistencies in the literature. The molecular data (marker gene expression patterns) provides a more objective basis for classification than morphology alone and explains functional heterogeneity within morphologically defined groups. This represents a significant advance in understanding shrimp hemocyte classification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "28172253-b5d5-40da-a980-2a461d53be00",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Recombinant protein injection slightly altered cell type proportions (increased GHs and PHs, decreased MHs), but there were no significant differences between rEGFP and rCREG treatments, suggesting CREG is an activation factor rather than a differentiation factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 present quantitative data on cell type proportions across treatments. Claim C40 provides a reasonable interpretation based on the lack of differential effects between rEGFP and rCREG on cell type proportions, despite rCREG showing higher activation (C25-C26). The inference that CREG is an activation rather than differentiation factor is logically sound given the data, though the statistical analysis details are not fully described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "056a36d5-367a-4234-acc1-f74e4c7a7727",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A new functional monocytic hemocyte lineage was identified in shrimp. The terminally differentiated cells share several functional genes with mammalian macrophages, suggesting this lineage might be an invertebrate evolutionary homolog of the vertebrate monocyte lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 summarize the main findings regarding the monocytic hemocyte lineage, supported by the collective evidence from trajectory analysis (C47), marker gene identification (C2, C56-C57), and functional validation (C3, C60-C64). Claim C92 is a speculative evolutionary inference, but it is reasonably supported by the comparative genomic and functional data. The identification of a novel cell lineage with conserved features represents a major contribution, though the evolutionary homology claim requires cautious interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "df5c5908-4e04-4cb6-9f30-0c94f2c907df",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Nlrp3 and Casp1, mammalian macrophage inflammasome components, were identified in MH2 cells, suggesting inflammasome-mediated anti-pathogenic processes might exist in invertebrate innate immunity. NAGA, which inhibits macrophage activation in vertebrates, was also found in shrimp phagocytes, implying similar negative regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73, C75 state established knowledge about mammalian proteins (supported by citations). Claims C74, C76 are speculative inferences based on the presence of homologous genes in shrimp. While the identification of these genes in MH2 is data-supported (C2, C56, C62-C63), the functional claims about inflammasome activity and regulatory mechanisms are not experimentally validated in this study. These remain hypotheses requiring functional validation through future experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "52cba712-4923-41eb-b4c1-4bb0030959b8",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context on invertebrate immunity, shrimp biology, and prior work on hemocyte classification in other invertebrates (mosquito, Drosophila) is provided to motivate the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C19 provide background information supported by appropriate citations to established literature. These claims set the scientific context for the study and are not primary findings. The citations appear appropriate and the general knowledge claims are consistent with the field. This background material is well-supported but represents prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "9a1ab043-f992-4096-9c4b-9928a224d384",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CREG was previously identified as a hemocyte activation factor that is more effective than EGFP in activating shrimp hemocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C26 reference prior work by the authors (Huang et al., 2021) establishing CREG as an activation factor. This provides context for the experimental design (using rCREG treatment) and is supported by citation to published work. The current study's observation of higher UMIs and genes in rCREG-treated cells (C25) is consistent with this prior finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "5dcf5c1b-5c4e-4079-b72a-6da6497e5730",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Phagocyte proportions vary across species (40-60% in oysters, most immune cells in fish, most myeloid cells in humans), with shrimp containing fewer phagocytes. The data suggest at least part of shrimp phagocytes originated from a macrophage-like subset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 provide comparative context supported by appropriate citations. Claim C82 is an inference based on the identification of phagocytic MH2 cells (C3, C64). While the inference is reasonable, the phrase \"at least a part\" is appropriately cautious since the study does not quantify what proportion of total phagocytes are MH2 cells versus other potential phagocytic populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "9eacbb2a-750e-44a2-925a-546f8433bdfd",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Various tissue-specific macrophages could have evolved from a common primitive cell type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C59 is a broad evolutionary speculation based on the observation that MH2 marker gene homologs are expressed in various human tissue-specific macrophages (C57). While the comparative data is interesting, this evolutionary claim goes beyond what the data can support. The study identifies conserved marker genes but does not provide phylogenetic analysis or functional evidence to support claims about evolutionary origins of tissue-specific macrophages. This remains highly speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    },
+    {
+      "id": "c74b5f0d-8774-4a11-8539-6416b5eb928c",
+      "content_id": "bc7296be-8f32-4f59-9e5c-807b9dc6c024",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Various marker genes and their functions in other organisms are cited to support cell type annotations (h1f0 for stemness, TGM1 as immature marker, Igfbp7 for proliferation, lhx9 for gonadal development, spir for oocyte division, cytochalasin D as actin inhibitor).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37, C95-C97 provide supporting information from the literature to justify marker gene selection and experimental approaches. Each claim is supported by appropriate citations. These represent established knowledge used to interpret the current findings rather than new discoveries. The citations appear appropriate and the knowledge claims are consistent with the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:15:49.683802Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "11c29edf-3b2a-4732-9b18-5898730f7eb3",
+      "result_id": "1e7a9661-de1f-46b6-8116-1df498a80d69"
+    },
+    {
+      "claim_id": "2d4a4a65-b3be-4504-b676-d0694c94e300",
+      "result_id": "1e7a9661-de1f-46b6-8116-1df498a80d69"
+    },
+    {
+      "claim_id": "801a04c5-df48-4b39-aadb-f5ef5b7643d4",
+      "result_id": "1e7a9661-de1f-46b6-8116-1df498a80d69"
+    },
+    {
+      "claim_id": "ebf5e559-2de3-4f9e-9fb2-e97854283dd4",
+      "result_id": "1e7a9661-de1f-46b6-8116-1df498a80d69"
+    },
+    {
+      "claim_id": "1f947a5e-db0d-4959-96f4-f8f873afb35c",
+      "result_id": "1e7a9661-de1f-46b6-8116-1df498a80d69"
+    },
+    {
+      "claim_id": "3ceab603-89e8-4c53-a425-b44daeaff8ad",
+      "result_id": "1e7a9661-de1f-46b6-8116-1df498a80d69"
+    },
+    {
+      "claim_id": "4515cf41-3e5a-41d5-9ca4-50928e221523",
+      "result_id": "1e7a9661-de1f-46b6-8116-1df498a80d69"
+    },
+    {
+      "claim_id": "35d3db36-7507-4a13-a9b8-222bfc7cfa3e",
+      "result_id": "1e71070d-1843-4b26-927c-5a2829101f36"
+    },
+    {
+      "claim_id": "9548fe5b-ca4e-477b-9c15-d690287db197",
+      "result_id": "1e71070d-1843-4b26-927c-5a2829101f36"
+    },
+    {
+      "claim_id": "2d02cc3c-9856-4aa8-9187-0af21041ece3",
+      "result_id": "1e71070d-1843-4b26-927c-5a2829101f36"
+    },
+    {
+      "claim_id": "96b86461-f9c6-4930-97aa-e9d5da84c767",
+      "result_id": "1e71070d-1843-4b26-927c-5a2829101f36"
+    },
+    {
+      "claim_id": "2c04f0fe-296f-40cf-bdd4-fd2a6b6f73de",
+      "result_id": "1e71070d-1843-4b26-927c-5a2829101f36"
+    },
+    {
+      "claim_id": "eedf0afa-a13a-4cc4-ab8e-dbe4d10dc2c1",
+      "result_id": "1e71070d-1843-4b26-927c-5a2829101f36"
+    },
+    {
+      "claim_id": "9c883e20-5895-4e4b-a9fd-621f512edfb5",
+      "result_id": "1e71070d-1843-4b26-927c-5a2829101f36"
+    },
+    {
+      "claim_id": "f59c7926-e5b4-48bf-baa0-c39fe3813313",
+      "result_id": "1e71070d-1843-4b26-927c-5a2829101f36"
+    },
+    {
+      "claim_id": "ddac44f6-d2e8-4bd6-bf17-857b487f5c46",
+      "result_id": "1e71070d-1843-4b26-927c-5a2829101f36"
+    },
+    {
+      "claim_id": "71cbe8d3-98ab-4ee5-8839-116125c007a2",
+      "result_id": "7b201dbc-d234-42bd-839a-9fe5ae77be3c"
+    },
+    {
+      "claim_id": "365f414b-e012-4552-b0da-0c3d9c6e8693",
+      "result_id": "7b201dbc-d234-42bd-839a-9fe5ae77be3c"
+    },
+    {
+      "claim_id": "692904da-6365-4013-ab91-97c5fb49ca4a",
+      "result_id": "7b201dbc-d234-42bd-839a-9fe5ae77be3c"
+    },
+    {
+      "claim_id": "7fc0155b-5c42-4829-b256-7419fdb81053",
+      "result_id": "7b201dbc-d234-42bd-839a-9fe5ae77be3c"
+    },
+    {
+      "claim_id": "bd32dfec-36e1-44e9-9e52-c3b8ca1043a4",
+      "result_id": "7b201dbc-d234-42bd-839a-9fe5ae77be3c"
+    },
+    {
+      "claim_id": "f95668e4-a323-44b1-af5a-560af8d45b79",
+      "result_id": "7b201dbc-d234-42bd-839a-9fe5ae77be3c"
+    },
+    {
+      "claim_id": "032db429-e4ef-4324-9711-ef0b0869bbbb",
+      "result_id": "7b201dbc-d234-42bd-839a-9fe5ae77be3c"
+    },
+    {
+      "claim_id": "d9601b98-6be4-4474-8a3b-99d07dd68015",
+      "result_id": "8204bcdb-9fcb-471a-88a7-0798cd20bee5"
+    },
+    {
+      "claim_id": "f5074f33-a80e-4063-ad9f-6674ad65f582",
+      "result_id": "8204bcdb-9fcb-471a-88a7-0798cd20bee5"
+    },
+    {
+      "claim_id": "31802fba-e702-4ebf-b650-670d7d3a4d8c",
+      "result_id": "8204bcdb-9fcb-471a-88a7-0798cd20bee5"
+    },
+    {
+      "claim_id": "de402090-e3ab-403d-aace-54e9b63fd7ba",
+      "result_id": "8204bcdb-9fcb-471a-88a7-0798cd20bee5"
+    },
+    {
+      "claim_id": "b3f6683e-5dbf-4b80-8754-956969b744e7",
+      "result_id": "c0093f43-018e-4d32-9f23-f3bef58a03bb"
+    },
+    {
+      "claim_id": "c439e9e0-a86e-4f5d-99fc-6b226b3042aa",
+      "result_id": "c0093f43-018e-4d32-9f23-f3bef58a03bb"
+    },
+    {
+      "claim_id": "d4246aa2-746d-4203-8713-9dd01c7a6be3",
+      "result_id": "c0093f43-018e-4d32-9f23-f3bef58a03bb"
+    },
+    {
+      "claim_id": "25cb5db0-004f-41c3-b9c3-5ce9acce1199",
+      "result_id": "c0093f43-018e-4d32-9f23-f3bef58a03bb"
+    },
+    {
+      "claim_id": "ee531395-6990-4e6c-80a6-64a229d585c7",
+      "result_id": "c0093f43-018e-4d32-9f23-f3bef58a03bb"
+    },
+    {
+      "claim_id": "2dccbf87-0278-4c40-b2b3-4c05a9480d64",
+      "result_id": "c0093f43-018e-4d32-9f23-f3bef58a03bb"
+    },
+    {
+      "claim_id": "70b9678a-9f0f-4714-88b4-9d9f140d769c",
+      "result_id": "c0093f43-018e-4d32-9f23-f3bef58a03bb"
+    },
+    {
+      "claim_id": "8e757238-5db5-44a1-a290-f2bb257b4afb",
+      "result_id": "d1486d2a-29ef-4ad0-a571-b97ca882351c"
+    },
+    {
+      "claim_id": "ae411d03-10ec-44a9-94ca-7e816f365152",
+      "result_id": "d1486d2a-29ef-4ad0-a571-b97ca882351c"
+    },
+    {
+      "claim_id": "92f13591-c516-455a-bb3e-458d067a3657",
+      "result_id": "d1486d2a-29ef-4ad0-a571-b97ca882351c"
+    },
+    {
+      "claim_id": "3307b699-86b3-4a35-80bf-2c16d4b05429",
+      "result_id": "d1486d2a-29ef-4ad0-a571-b97ca882351c"
+    },
+    {
+      "claim_id": "6c3ccd8b-935c-4488-bf73-7dd6049cdbd4",
+      "result_id": "d1486d2a-29ef-4ad0-a571-b97ca882351c"
+    },
+    {
+      "claim_id": "887b2f8c-8d11-4fd1-9223-f2ae64ef538b",
+      "result_id": "d1486d2a-29ef-4ad0-a571-b97ca882351c"
+    },
+    {
+      "claim_id": "6b7f972b-e34c-4c69-86d5-6a871453dac5",
+      "result_id": "d1486d2a-29ef-4ad0-a571-b97ca882351c"
+    },
+    {
+      "claim_id": "0d0b1aac-b958-447a-9b2a-5e6267449583",
+      "result_id": "2cad494e-4e07-436d-919b-4811c0a2231d"
+    },
+    {
+      "claim_id": "1d891fe5-70e4-4158-be5b-be6ca9038586",
+      "result_id": "a3912535-dbbe-4d73-ae24-2df62e861a7d"
+    },
+    {
+      "claim_id": "c7b62b01-190f-4f62-8249-f03e078b8717",
+      "result_id": "a3912535-dbbe-4d73-ae24-2df62e861a7d"
+    },
+    {
+      "claim_id": "e43bf8c0-975d-4b1f-879c-bbaf75318559",
+      "result_id": "a3912535-dbbe-4d73-ae24-2df62e861a7d"
+    },
+    {
+      "claim_id": "69ad89e2-f31a-4631-8f51-191f5a00bdc1",
+      "result_id": "a3912535-dbbe-4d73-ae24-2df62e861a7d"
+    },
+    {
+      "claim_id": "1b3ff4a2-50c1-49ed-a567-869f4212d24c",
+      "result_id": "a3912535-dbbe-4d73-ae24-2df62e861a7d"
+    },
+    {
+      "claim_id": "4e304d01-d975-4039-8ae0-db3b15cc9a54",
+      "result_id": "a3912535-dbbe-4d73-ae24-2df62e861a7d"
+    },
+    {
+      "claim_id": "d59a73d9-b39b-4a00-9282-72dc8a40deb0",
+      "result_id": "a3912535-dbbe-4d73-ae24-2df62e861a7d"
+    },
+    {
+      "claim_id": "7bc20c4f-2519-4116-80b6-adf7cc4bbf89",
+      "result_id": "a3912535-dbbe-4d73-ae24-2df62e861a7d"
+    },
+    {
+      "claim_id": "001890e1-c097-4b8d-b7f3-d3b59a35fe91",
+      "result_id": "a3912535-dbbe-4d73-ae24-2df62e861a7d"
+    },
+    {
+      "claim_id": "49eb7919-fb08-47aa-987c-49bf19492b6c",
+      "result_id": "28172253-b5d5-40da-a980-2a461d53be00"
+    },
+    {
+      "claim_id": "6b2b117c-8b92-4f74-9245-e9e409310914",
+      "result_id": "28172253-b5d5-40da-a980-2a461d53be00"
+    },
+    {
+      "claim_id": "4ea54122-1195-4e16-b664-6c739ea1b36e",
+      "result_id": "28172253-b5d5-40da-a980-2a461d53be00"
+    },
+    {
+      "claim_id": "bca64e1e-c94b-4f79-be6e-fab9915eb2c7",
+      "result_id": "056a36d5-367a-4234-acc1-f74e4c7a7727"
+    },
+    {
+      "claim_id": "1659893d-5317-4680-9b85-e063d5f4a667",
+      "result_id": "056a36d5-367a-4234-acc1-f74e4c7a7727"
+    },
+    {
+      "claim_id": "f2920914-a16f-4a84-a276-bd0c71d3a0b3",
+      "result_id": "056a36d5-367a-4234-acc1-f74e4c7a7727"
+    },
+    {
+      "claim_id": "79b314f9-5178-4102-8640-4a1435d3e7d5",
+      "result_id": "df5c5908-4e04-4cb6-9f30-0c94f2c907df"
+    },
+    {
+      "claim_id": "cafa9417-b3f5-4709-83d8-cffb80f58e9d",
+      "result_id": "df5c5908-4e04-4cb6-9f30-0c94f2c907df"
+    },
+    {
+      "claim_id": "d2a724ac-0911-4a96-9779-0432b9e571d8",
+      "result_id": "df5c5908-4e04-4cb6-9f30-0c94f2c907df"
+    },
+    {
+      "claim_id": "0ede39c7-6823-4fd8-a7f0-b0ac1ad5e05e",
+      "result_id": "df5c5908-4e04-4cb6-9f30-0c94f2c907df"
+    },
+    {
+      "claim_id": "0ad75e36-c912-4b9d-898d-f9e2b3baf700",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "a5cc2d5e-2913-4460-a6bb-2a7477fd6ef0",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "e7bd3ea3-42aa-4a50-9e7a-8d49feac7c05",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "bf4bc670-27a9-4b30-b9e7-e903333b2364",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "ee95a653-46e1-4144-befc-7f3fe92212d5",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "84ab3b8b-cb2e-47ab-ac67-a76fca0c0a32",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "d5e86b89-cdb0-4939-9349-6795e67aab22",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "3ede87f2-2b8a-4717-ac4b-dbdd3d8c510f",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "4f51b971-c424-4a1b-b09e-4345bf22146b",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "45c56051-6bde-48cf-979c-800ed646784a",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "19fba035-aa45-4c31-a8dc-ab91ca35299d",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "e5738187-fa2c-4f20-a884-80963d2b9d90",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "ca1e54d7-253c-43bf-bd02-4d293081156f",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "3a7fcfeb-763a-4fcc-9d62-ad576cbd62c3",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "1245d3d0-05fb-4ab9-a1f4-7139308e89d1",
+      "result_id": "52cba712-4923-41eb-b4c1-4bb0030959b8"
+    },
+    {
+      "claim_id": "a5fcd81d-156e-471a-96fb-42fbdd4452b9",
+      "result_id": "9a1ab043-f992-4096-9c4b-9928a224d384"
+    },
+    {
+      "claim_id": "f80e66df-caf0-4dda-af2e-24009e14c1fe",
+      "result_id": "9a1ab043-f992-4096-9c4b-9928a224d384"
+    },
+    {
+      "claim_id": "7923011b-4be6-4b06-be28-13e311a18ba6",
+      "result_id": "5dcf5c1b-5c4e-4079-b72a-6da6497e5730"
+    },
+    {
+      "claim_id": "ac220cb7-42fe-47c4-8080-2691f54c3d26",
+      "result_id": "5dcf5c1b-5c4e-4079-b72a-6da6497e5730"
+    },
+    {
+      "claim_id": "0fd2dad0-3d9e-43c3-af59-92c89da2ded8",
+      "result_id": "5dcf5c1b-5c4e-4079-b72a-6da6497e5730"
+    },
+    {
+      "claim_id": "bc00010c-3642-46c5-b706-12b2f1f17e80",
+      "result_id": "5dcf5c1b-5c4e-4079-b72a-6da6497e5730"
+    },
+    {
+      "claim_id": "a68044b3-259a-41d5-9c96-f74d0df267db",
+      "result_id": "5dcf5c1b-5c4e-4079-b72a-6da6497e5730"
+    },
+    {
+      "claim_id": "1b64b3d6-088c-4105-a9c3-fd4f23cfe93b",
+      "result_id": "9eacbb2a-750e-44a2-925a-546f8433bdfd"
+    },
+    {
+      "claim_id": "69f990d3-99ea-4980-9927-22aab409d450",
+      "result_id": "c74b5f0d-8774-4a11-8539-6416b5eb928c"
+    },
+    {
+      "claim_id": "5cca0f18-ed2b-41a4-bfff-65ea753d318b",
+      "result_id": "c74b5f0d-8774-4a11-8539-6416b5eb928c"
+    },
+    {
+      "claim_id": "adf9ae0b-688d-4d39-9ee2-7b752799cba5",
+      "result_id": "c74b5f0d-8774-4a11-8539-6416b5eb928c"
+    },
+    {
+      "claim_id": "a0ce2056-40aa-472b-8862-bc4b3447e2d2",
+      "result_id": "c74b5f0d-8774-4a11-8539-6416b5eb928c"
+    },
+    {
+      "claim_id": "764560e6-6fdd-4ca0-a886-2e5332348ed7",
+      "result_id": "c74b5f0d-8774-4a11-8539-6416b5eb928c"
+    },
+    {
+      "claim_id": "0ea13f48-5932-4f1e-accb-9e7219f0623f",
+      "result_id": "c74b5f0d-8774-4a11-8539-6416b5eb928c"
+    }
+  ],
+  "comparisons": []
+}

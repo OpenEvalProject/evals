@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "BioID2 proximity labeling is functional in adult zebrafish cardiomyocytes and can distinguish whole-cell from membrane-specific proteomes. The authors generated transgenic zebrafish expressing BirA2-GFP or BirA2-GFP-CAAX under the cmlc2 promoter, demonstrating that biotin delivery by intraperitoneal injection enables effective biotinylation. Quantitative mass spectrometry identified 1113 proteins, with 343 showing membrane enrichment and appropriate gene ontology profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 collectively demonstrate successful implementation of BioID2 in zebrafish. The localization data (C2, C4), functional biotinylation assays (C3), quantitative proteomics (C5, C6), and gene ontology validation (C7) provide converging evidence. The use of established BioID2 technology (C1) and appropriate controls strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C31"
+    ],
+    "result": "BioID2 captures dynamic proteome changes in cardiomyocytes during heart regeneration following cardiomyocyte ablation. At 14 days post-injury, 208 proteins showed \u22651.5-fold changes, with most increasing. Increased proteins are enriched for wound healing and cardiac development processes, while decreased proteins relate to energy metabolism. The approach identified known regeneration factors like ErbB2 and Rictora.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 and C31 demonstrate that BioID2 successfully captures regeneration-associated proteome changes. The quantitative mass spectrometry data (C11), directional changes (C12), gene ontology analyses (C13, C14), and identification of known factors (C15, C16) provide strong support. The temporal characterization (C9, C10) establishes the regeneration context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Membrane-specific BioID2 profiling reveals distinct proteome dynamics during regeneration, with 173 proteins showing \u22651.5-fold changes (mostly decreases). Proteins with opposing changes between whole-cell and membrane compartments were identified, including Epb41l5, Talin 2, and Seta, which were validated by immunofluorescence showing dynamic relocalization patterns during regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23, C27-C29 demonstrate compartment-specific proteome profiling. The quantitative data (C17, C18), gene ontology analyses (C19, C20), comparative analysis (C21, C22), and immunofluorescence validation (C23, C27, C28, C29) provide strong converging evidence for dynamic protein relocalization during regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C44",
+      "C45",
+      "C70"
+    ],
+    "result": "BioID2 profiling of ErbB2 identifies Rho A as a context-dependent interactor during heart regeneration. Among 667 proteins captured, 108 changed during regeneration, including 9 known ErbB2 interactors. Rho A-b showed the strongest increase in association with ErbB2, confirmed by co-immunoprecipitation showing ErbB2-Rho A interaction only in regenerating hearts. Pathway analysis revealed enrichment for Rho GTPase cytoskeletal regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40, C44-C45, and C70 establish ErbB2-Rho A interaction during regeneration. The quantitative BioID2 data (C33-C37, C39), pathway analysis (C40), orthogonal validation by co-IP (C44), and context-dependency (C45) provide strong support. The observation that expression levels don't predict association (C38) adds mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Known Rho A interactors show elevated levels during regeneration in the whole-cell BioID2 dataset, including ErbB2 (59.2-fold increase) and ROCK2a. These proteins are involved in cytoskeletal regulation, and ROCK has been reported to regulate cardiogenic transcription factors Gata4 and SRF in cell culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 demonstrate coordinated upregulation of the Rho A signaling network. The quantitative data (C46, C47), western blot validation (C48), and literature support for ROCK function (C49-C51) provide strong evidence. However, the mechanistic links to Gata4/SRF are from cell culture studies, limiting direct applicability to zebrafish regeneration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C71"
+    ],
+    "result": "Rho A, Rac1, and Cdc42 are each required for zebrafish heart regeneration. Pharmacological inhibition of Rho A with Rhosin reduced cardiomyocyte proliferation by ~68% after ventricular resection. Dominant-negative approaches for all three GTPases resulted in persistent muscle deficiency at 30 days post-resection, demonstrating essential roles in regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 and C71 provide strong functional evidence through both pharmacological (C52) and genetic (C53, C54) approaches. The quantitative proliferation data (C52), histological assessment (C53, C54), and convergent results across three related GTPases (C55) strongly support essential roles in regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C72"
+    ],
+    "result": "Rho A signaling is required for cardiomyocyte proliferation induced by three different mitogens: Nrg1, Vegfaa, and vitamin D. Rhosin treatment reduced proliferation by 65-71% across all three mitogenic stimuli. Rho A protein levels increased with Nrg1 (~85%) and Vegfaa overexpression but not with vitamin D treatment or during ablation-induced regeneration, indicating context-dependent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 and C72 demonstrate broad requirement for Rho A across multiple mitogenic pathways. The western blot data (C56, C57, C59, C60), quantitative proliferation assays (C58, C61, C62), and consistent effects across different stimuli (C63, C72) provide strong support. The differential protein level changes suggest Rho A acts through both expression-dependent and -independent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Analysis of published single-cell RNA-seq and H3.3 ChIP-seq data, along with new RNA-seq from Nrg1-overexpressing hearts, identifies rhoaa and rhoab as top candidates for Rho A function in cardiomyocytes. Both genes show detectable expression in cardiomyocytes, ~2-fold increased H3.3 enrichment during regeneration, and rhoaa shows weak elevation (1.6-fold) with Nrg1 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 integrate multiple genomic datasets to identify candidate Rho A genes. The single-cell RNA-seq (C64, C65), H3.3 occupancy (C66), and new RNA-seq data (C67, C68) converge on rhoaa and rhoab. However, the authors appropriately note (C69) that conditional gene disruption is needed for definitive identification, acknowledging the limitation of correlative expression data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C30",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Literature context establishes that identified proteins have known roles in relevant biological processes. Epb41l5 regulates Notch signaling involved in heart regeneration; Talin 2 couples focal adhesions to cytoskeleton; Seta may silence histone acetyltransferase-dependent transcription; and Rho A activation by ErbB2 has been implicated in cancer cell behavior and cardiomyocyte binucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C30, and C41-C43 provide literature context for identified proteins. All claims are supported by appropriate citations. These contextual claims help interpret the BioID2 findings but represent prior knowledge rather than new experimental results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study demonstrates proximity labeling as a useful resource for interrogating cell proteomes during tissue regeneration in zebrafish. Background context establishes that zebrafish regenerate cardiac muscle through cardiomyocyte division, that Nrg1/Vegfaa/vitamin D are instructive mitogens, and that ErbB2 signaling involves multiple downstream pathways. The authors propose broad future applicability of BioID2 approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82 provide study conclusions and background context. The conclusion about BioID2 utility (C73) is well-supported by the experimental results. Background claims (C74-C81) are appropriately cited. The forward-looking claim (C82) is speculative but reasonable given the demonstrated success, though it represents expectation rather than demonstrated fact.",
+    "result_type": "MINOR"
+  }
+]

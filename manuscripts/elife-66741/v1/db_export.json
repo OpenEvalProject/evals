@@ -1,0 +1,1852 @@
+{
+  "submission": {
+    "id": "b67c16e4-851a-460c-977b-3af75093085d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:24:32.767785Z",
+    "updated_at": "2025-12-03T05:24:32.767785Z"
+  },
+  "content": [
+    {
+      "id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "submission_id": "b67c16e4-851a-460c-977b-3af75093085d",
+      "content_type": "manuscript",
+      "content_text": "# A hypothesis on the capacity of plant odorant-binding proteins to bind volatile isoprenoids based on in silico evidences\n\n## Authors\n\n- Deborah Giordano<sup>1</sup> ([ORCID: 0000-0002-5838-1913](https://orcid.org/0000-0002-5838-1913))\n- Angelo Facchiano<sup>1</sup> ([ORCID: 0000-0002-7077-4912](https://orcid.org/0000-0002-7077-4912))\n- Sabato D'Auria<sup>1</sup> \u2020\n- Francesco Loreto<sup>3</sup> ([ORCID: 0000-0002-9171-2681](https://orcid.org/0000-0002-9171-2681)) \u2020\n\n### Affiliations\n\n1. Institute of Food Science, CNR Avellino Italy\n2. Department of Biology, Agriculture and Food Sciences, CNR Rome Italy\n3. Department of Biology, University of Naples Federico II Naples Italy\n4. Institute for Sustainable Plant Protection, CNR Florence Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nVolatile organic compounds (VOCs) from \u2018emitting\u2019 plants inform the \u2018receiving\u2019 (listening) plants of impending stresses or simply of their presence. However, the receptors that allow receivers to detect the volatile cue are elusive. Most likely, plants (as animals) have odorant-binding proteins (OBPs), and in fact, a few OBPs are known to bind \u2018stress-induced\u2019 plant VOCs. We investigated whether these and other putative OBPs may bind volatile constitutive and stress-induced isoprenoids, the most emitted plant VOCs, with well-established roles in plant communication and defense. Molecular docking simulation experiments suggest that structural features of a few plant proteins screened in databases could allow VOC binding. In particular, our results show that monoterpenes may bind the same plant proteins that were described to bind other stress-induced VOCs, while the constitutive hemiterpene isoprene is unlikely to bind any investigated putative OBP and may not have an info-chemical role. We conclude that, as for animal, there may be plant OBPs that bind multiple VOCs. Plant OBPs may play an important role in allowing plants to eavesdrop messages by neighboring plants, triggering defensive responses and communication with other organisms.\n\n## Introduction\n\nPlants synthesize a variety of volatile organic compounds (VOCs) that are important for reproduction and defense and in general to communicate with other organisms (Ninkovic et al., 2021). Insects and generalist herbivores, or carnivore insects that are also attracted by the volatile \u2018cry for help\u2019 released by plants upon herbivore attacks, are all able to sense plant volatiles (Dicke and Loreto, 2010).\n\nWhether volatiles are also important in plant\u2013plant communication is a more fascinating, yet controversial, issue (Vickers et al., 2009). Growing reports show that VOCs influence plant\u2013plant relationships (Baldwin et al., 2002; Erb, 2019; Ninkovic et al., 2019). VOCs elicited in \u2018emitting\u2019 plants by abiotic or biotic stresses prime defensive responses in non-elicited \u2018receiving\u2019 plants (Zuo et al., 2019; Frank et al., 2021). However, no study has so far looked for the primary events in such elusive plant\u2013plant interaction, i.e., the receptors by which plants may sense VOCs emitted from neighboring plants are largely unknown.\n\nRecently, it has been proposed that the passage of VOCs across the plasma membrane relies on their active transport. In particular, the presence of an ABC carrier protein involved in active transport into plant cells has been hypothesized (Adebesin et al., 2017). Plant VOC receptors may belong to a similar category of transporters. An alternative explanation is that plants use odorant-binding proteins\u00a0(OBPs) as protein carriers, alike animals. Indeed, there have been at least three cases in which the presence of OBPs was postulated in plants. These are\u00a0as\u00a0follows: (1) the COI1 assembly with a jasmonate zinc finger inflorescence meristem (ZIM)-domain (JAZ) protein family (COI1\u2013JAZ), a high-affinity receptor protein for methyl-jasmonate (MeJa), and\u00a0the volatile moiety of jasmonic acid (JA) (Sheard et al., 2010). After JAZ degradation, transcription factors are released, which activate downstream genes and the defensive metabolites in plants challenged by abiotic and biotic stresses (Cheong and Choi, 2003). (2) The salicylic acid\u00a0(SA)-binding protein 2 (SABP2), an esterase of the a/b-fold hydrolase superfamily, that binds SA with high affinity and then converts the biologically inactive methyl ester of SA (MeSA) to active SA-inducing systemic acquired resistance in plants challenged by stresses (Park et al., 2007). (3) The TOPLESS-like protein (TPL) that specifically binds \u03b2-caryophyllene, a stress-induced sesquiterpene and a volatile signal for herbivores and carnivores in multitrophic interactions. TPL and TPL-related proteins are transcriptional co-repressors (also toward JA-mediated signaling). Interestingly, only the capacity to bind \u03b2-caryophyllene was tested with emitting and receiving (eavesdropping) plants (Nagashima et al., 2019).\n\nThese three cases need confirmation, and all other plant VOCs (at least 1700 known so far; Dicke and Loreto, 2010) wait for identification of receptors (if present). We report here an in\u00a0silico study based on current knowledge of plant protein structure, especially aiming at identifying best candidates as plant OBPs for plant VOCs whose receptors are still unknown. We focused on the volatile isoprenoids (isoprene and monoterpenes) produced by the methyl erythritol phosphate (MEP) chloroplast pathway and representing the largest component of plant VOC emissions in the atmosphere (Loreto and Schnitzler, 2010).\n\n## Results and discussion\n\nWe looked at plant OBPs following a two-level structural approach (identification of candidate plant OBPs, and validation by in\u00a0silico molecular simulation experiments of OBP capacity), as detailed in the Materials\u00a0and\u00a0methods section. For the first level, we added to the three known plant OBPs those potential OBPs resulting from plant protein sequence databases (approach a) and from comparison for sequence similarities with known animal OBPs (approach b, see Materials\u00a0and\u00a0methods for details).\n\nApproach (a) yielded five complete or partial protein sequences, three from Anthurium amnicola (named OBP56d, OBP A10_1, and OBP A10_2), one from Nymphaea thermarum (named putative OBP), and one from Pyrus x bretschneideri (named OBP-70 like) (Supplementary file 1). However, when these sequences were further screened for similarities with annotated plant proteins in the sequence databases, statistically relevant similarity and coverage was only found between the putative OBP from N. thermarum and the Flowering locus T (FT) and T1 proteins, and the heading date 3A and 3B. Comparison with animal OBPs, yielded similarities between (1) OBPs from insects and plant OBP56d and OBP-70 like, (2) chemosensor proteins and plant OBP A10_1, and (3) phosphatidylethanolamine-binding proteins and the putative OBP from N. thermarum (Supplementary file 2).\n\nApproach (b) was based on comparison between 432 OBP protein sequences from different animal sources with plant protein sequences. Only five animal protein families share sequence similarity with plant proteins, as summarized in Table 1. Sequences were considered similar when showing BLAST E-values close to 0, and sequence identity ranges (20\u201345%) with a confident query coverage (highest values varying from 60% to 96%).\n\n**Table 1.**\n Similarities of animal and plant protein families with odorant receptor/transporter/channel functions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Animal protein family</th>\n      <th>Similar plant proteins</th>\n      <th>Identity percentage range</th>\n      <th>Sequence coverage range</th>\n      <th>BLAST E-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Bovine cyclic nucleotide gated olfactory channel of Bos Taurus</td>\n      <td>Potassium voltage-gated channel</td>\n      <td>25\u201330%</td>\n      <td>60\u201375%</td>\n      <td>\u22643e-27</td>\n    </tr>\n    <tr>\n      <td>Chloride channel Anoctamin-2 of Mus musculus</td>\n      <td>anoctamin-like protein</td>\n      <td>22\u201327%</td>\n      <td>50\u201370%</td>\n      <td>\u22643e-20</td>\n    </tr>\n    <tr>\n      <td>Human/mouse receptor expression enhancing molecules</td>\n      <td>HVA22 e HVA22-like plants proteins</td>\n      <td>27\u201344%</td>\n      <td>40\u201396%</td>\n      <td>\u22647e-21</td>\n    </tr>\n    <tr>\n      <td>BPI fold containing family B member three from Mus musculus and Rattus norvegicus</td>\n      <td>putative BPI, lipid-binding protein, hypothetical protein, and unnamed protein</td>\n      <td>20\u201330%</td>\n      <td>25\u201360%</td>\n      <td>\u22646e-07</td>\n    </tr>\n    <tr>\n      <td>putative OBP 5a from Drosophila melanogaster</td>\n      <td>FT, D3-like, protein \u2018Mother of FT and TFL1-like (Terminal flower 1-like)\u2019 (MFT), ZCN9 (MFT-like), Heading Date 3A-like</td>\n      <td>28\u201341%</td>\n      <td>51\u201386%</td>\n      <td>\u22645e-18</td>\n    </tr>\n  </tbody>\n</table>\n\nInterestingly, all plant protein sequences reported in Table 1 are related to inflorescence signaling. HVA22 is induced by abscisic acid (ABA)/stress and has a role in the gibberellic acid (GA)-induced cellular death and in the regulation of seed germination (Shen et al., 2001). FT is a florigen that induces and promotes the transition from vegetative growth to flowering (Koornneef et al., 1998). The protein MFT is involved in regulation of seeds germination by ABA/GA signaling (Vaistij et al., 2018). Heading date 3A-like, as FT, is a probable florigen, which promotes the transition from vegetative growth to flowering downstream of HD1 and EHD1 under short day conditions (Taoka et al., 2011). It is also remarkable that plant proteins previously reported in the literature (COI1\u2013JAZ, SABP2, and TPL, see Introduction) were not retrieved by our search based on plant\u2013animal protein similarities. This suggests that plant proteins may be able to work as OBPs even if different from animal OBPs, both at primary and tertiary structure levels.\n\nThe putative OBPs retrieved by approaches (a) and (b) were added to the three plant OBPs already described in the literature (see Introduction), and all proteins were checked for availability of experimental 3D structure data in the second step of our study. This search was successful for nine putative plant OBPs that\u00a0were then selected for molecular docking simulations of the interactions between potential plant OBPs and selected VOCs, to finally identify candidate plant OBPs.\n\nTable 2 reports the binding energy values obtained by docking simulations for each complex between potential plant OBPs and ligands (plant VOCs), together with the binding energy values obtained as a reference for experimental complexes after a redocking procedure, when available (see Materials\u00a0and\u00a0methods).\n\n**Table 2.**\n Binding energy values (Kcal mol\u22121), obtained by docking simulations, between putative plant OBPs and isoprenoid VOCs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>OBPs</th>\n      <th>\u03b1-Pinene</th>\n      <th>Limonene</th>\n      <th>\u03b2-Myrcene</th>\n      <th>\u03b2-Caryophyllene</th>\n      <th>Isoprene</th>\n      <th>Linalool</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TPL-like</td>\n      <td>\u22125.06</td>\n      <td>\u22124.76</td>\n      <td>\u22123.95</td>\n      <td>\u22126.16</td>\n      <td>\u22123.39</td>\n      <td>\u22123.94</td>\n    </tr>\n    <tr>\n      <td>ABA receptor</td>\n      <td>\u22124.69</td>\n      <td>\u22124.73</td>\n      <td>\u22123.84</td>\n      <td>\u22126.32</td>\n      <td>\u22123.35</td>\n      <td>\u22124.12</td>\n    </tr>\n    <tr>\n      <td>GA receptor</td>\n      <td>\u22125.50</td>\n      <td>\u22125.44</td>\n      <td>\u22124.92</td>\n      <td>\u22126.94</td>\n      <td>\u22123.78</td>\n      <td>\u22124.69</td>\n    </tr>\n    <tr>\n      <td>Heading Date 3A</td>\n      <td>\u22125.46</td>\n      <td>\u22124.99</td>\n      <td>\u22124.29</td>\n      <td>\u22126.83</td>\n      <td>\u22123.44</td>\n      <td>\u22124.79</td>\n    </tr>\n    <tr>\n      <td>FT</td>\n      <td>\u22125.23</td>\n      <td>\u22125.07</td>\n      <td>\u22124.26</td>\n      <td>\u22126.65</td>\n      <td>\u22123.15</td>\n      <td>\u22124.98</td>\n    </tr>\n    <tr>\n      <td>TFL1</td>\n      <td>\u22125.30</td>\n      <td>\u22125.53</td>\n      <td>\u22124.38</td>\n      <td>\u22127.15</td>\n      <td>\u22123.70</td>\n      <td>\u22124.98</td>\n    </tr>\n    <tr>\n      <td>Partial JA receptor</td>\n      <td>\u22125.23</td>\n      <td>\u22124.79</td>\n      <td>\u22124.16</td>\n      <td>\u22126.05</td>\n      <td>\u22122.78</td>\n      <td>\u22124.21</td>\n    </tr>\n    <tr>\n      <td>Complete JA receptor</td>\n      <td>\u22125.92</td>\n      <td>\u22125.11</td>\n      <td>\u22124.41</td>\n      <td>\u22126.61</td>\n      <td>\u22122.82</td>\n      <td>\u22124.49</td>\n    </tr>\n    <tr>\n      <td>SABP2</td>\n      <td>\u22126.03</td>\n      <td>\u22126.12</td>\n      <td>\u22125.14</td>\n      <td>\u22126.73</td>\n      <td>\u22123.25</td>\n      <td>\u22124.70</td>\n    </tr>\n    <tr>\n      <td>Reference protein*</td>\n      <td>\u22125.42</td>\n      <td>\u22126.29</td>\n      <td>\u22124.15</td>\n      <td>Not available</td>\n      <td>Not available</td>\n      <td>Not available</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Reference protein is the protein for which it has been found an experimental complex with the ligand. For \u03b1-pinene, limonene, and \u03b2-myrcene, the reference proteins are cytochrome P450 2B6 complexed with \u03b1-pinene (PDB code: 4I91), lipid binding protein complexed with limonene 1,2 epoxide (PDB code: 2A2G, and linalool dehydratase/isomerase complexed with \u03b2-myrcene [PDB code: 5HSS]), respectively._\n\nThe predicted binding constant (Ki) values are reported in Supplementary file 3 and should be interpreted only as indicative values. Reported Ki values are very high compared to those found for animal OBPs, but are consistent with other plant Ki studies, confirming that plants may sense VOCs only when exposed to higher concentrations than animals (Nagashima et al., 2019).\n\nOur results indicate that the three monoterpenes tested (\u03b1-pinene, \u03b2-myrcene, and limonene) may bind some of the putative OBPs with energy values similar or lower than the values observed for the reference complexes. For example, \u03b1-pinene binds the reference protein cytochrome P450 2B6 with an energy value of \u22125.42\u00a0kcal/mol and a predicted Ki of 103 \u03bcM. In our docking simulations, \u03b1-pinene seems to dock better on SABP2 and on the complete JA receptor, with binding energy value of \u22126.03\u00a0kcal/mol and \u22125.92\u00a0kcal/mol, and predicted Ki of 37 \u03bcM and 38.55 \u03bcM, respectively. In both cases, this is a better interaction than with the reference complex. In the case of GA receptor and heading date 3A, \u03b1-pinene binding energy values were similar to those of the reference complex. Similar to \u03b1-pinene, \u03b2-myrcene binds SABP2, GA receptor, and the JA receptor better than the reference complex. Among the other candidate OBPs, protein heading date 3A, FT, and tfl1 showed binding energy values similar to the reference complex for \u03b2-myrcene.\n\nThe reference complex found for limonene is a modified form of the plant volatile (limonene 1,2 epoxide), which may not interact with the protein-binding site exactly as the VOC does. Therefore, its binding energy value represents a reference point less reliable than the values obtained by the other two experimental protein\u2013ligand complexes. However, as in the previous cases, SABP2 showed energy values lower than the other candidate OBPs, and similar to the reference complex.\n\nResults obtained for \u03b2-caryophyllene, isoprene, and linalool cannot be compared to a reference complex, as experimental complexes of these ligands with proteins are not available. In these cases, protein-binding capacity can only be derived by comparing binding values of the different VOCs, and with an even lower confidence. Remarkably, \u03b2-caryophyllene showed the lowest, and isoprene the highest, energy binding values.\n\nOur analysis overall confirms that OBPs might be present in plants, and also bind VOCs produced by plants through the MEP pathway. MEP synthesizes isoprenoids that are emitted constitutively (e.g. isoprene) or that are both constitutive and stress\u00a0induced (e.g. monoterpenes) (Dicke and Loreto, 2010). While monoterpenes are efficiently bound by OBPs, isoprene, the simplest and most abundantly emitted volatile isoprenoid, does not seem to bind strongly enough any OBP. Ecological observations report a role for monoterpenes in plant communication with other organisms (Bouwmeester et al., 2019), which is arguably not observed for isoprene (e.g. Brilli et al., 2009), However, isoprene influences many plant traits (Monson et al., 2021) and profoundly modifies properties of cellular and sub-cellular membranes (Velikova et al., 2015; Pollastri et al., 2019), which may in turn activate signals reshaping plant genomes and phenomes (Harvey and Sharkey, 2016; Miloradovic van Doorn et al., 2020). As isoprene is the main VOC emitted constitutively and not induced by stresses, it may be tempting to generalize from our observations that, unlike induced VOCs, constitutive VOCs are not bound by OBPs.\n\nInterestingly, monoterpenes seem to bind more efficiently with OBPs that are also reported to bind other plant volatiles. In particular, SABP2, the protein that strongly binds the stress-induced volatile MeSA, also seems to be a candidate for three tested monoterpenes. Protein heading date 3A and tfl1, GA receptor, and FT may also bind, perhaps more specifically, the three monoterpenes. Our results suggest that, as reported for the OBPs from animals and insects (Ramoni et al., 2007), the candidate plant OBPs have a broad ligand binding specificity and, consequently, they are likely to bind several different VOCs. This should be tested experimentally by monitoring in vivo the docking patterns of constitutive and induced VOCs.\n\nWe noticed that in many cases binding of the ligands occurs at the same protein structure site, as shown for SABP2 in the experimentally reported complex with SA (Figure 1A), and in the simulated complexes with \u03b1-pinene, limonene, and \u03b2-myrcene (Figure 1B\u2013D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66741/elife-66741-fig1-v1.jpg)\n\n**Figure 1.:** (A) Experimental structure of SABP2 protein structure with salicylic acid in the binding site (PDB structure 1Y7I).\u00a0The architecture of SABP2 is schematized by the backbone structure (green), with ribbons and arrows to evidence helices and beta strands, respectively. The salicylic acid molecule (colored in red) is in space-fill representation. (B) Left: Molecular docking simulation of SABP2 protein structure with \u03b1-pinene (red molecule) in the binding site. SABP2 is shown with the same spatial orientation as in panel (A)\u00a0to emphasize that \u03b1-pinene occupies the same binding site of salicylic acid. Right: Focus on the binding site of SABP2. \u03b1-Pinene (red molecule) interacts directly with amino acid residues labeled with carbon atoms in green. Amino acid residues with carbon atom in grey are also part of the binding site, although not directly in contact with \u03b1-pinene. Standard colors are used for the other amino acid atoms (red\u00a0=\u00a0oxygen, blue\u00a0=\u00a0nitrogen, yellow\u00a0=\u00a0sulphur, white\u00a0=\u00a0hydrogen). (C) Left: SABP2 protein with limonene (red molecule) in the binding site. SABP2 is shown with the same spatial orientation of (A), to better show that limonene occupies the same binding site of the salicylic acid. Right: Focus of the binding site of SABP2. Details as in panel (B). (D)\u00a0Left: SABP2 protein with \u03b2-myrcene (red molecule) in the binding site. SABP2 is shown with the same spatial orientation of (A), to better show that \u03b2-myrcene occupies the same binding site of the salicylic acid. Right: Focus of the binding site of SABP2. Details as in (B).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66741/elife-66741-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** For each candidate OBP, the 2D image shows \u03b2-caryophyllene in the center, surrounded by the residues with which it interacts. The type of interaction is defined according to the color legend in figure. Images are obtained with DiscoveryStudio software.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66741/elife-66741-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The search was performed at two levels of investigation. The first level was the identification of candidate plant OBPs, based on features and similarities of protein sequences from public data bases (boxes labeled a and b) and on literature evidences. This level identified proteins or protein families, for which amino acid sequences are available. The second level was the validation by in silico molecular simulations, to verify the potential capability of the candidate proteins to bind selected VOCs. This level can be applied only to the candidate proteins, selected from the first level, for which the three-dimensional structure is made available by experimental studies.\n\nThe SABP2 binding site (represented in the right panels of Figure 1B\u2013D) is characterized by the presence of aromatic side chains (two phenylalanines, one tyrosine, and one tryptophan), also observed in other candidate plant OBPs (GA receptor: two phenylalanines and four tyrosines; JA receptor: one phenylalanine, one tyrosine, and one tryptophan residue; FT receptor: two phenylalanines and one tryptophan). Other candidate plant OBPs have some aromatic side chains in the binding site, although in lower number (e.g., the ABA receptor has one phenylalanine and one tyrosine, while TLF1 has two phenylalanines). This is also reminiscent of the binding site of OBPs from animal organisms (Bianchet et al., 1996). Bovine OBPs include five phenylalanines and one tyrosine; Drosophila OBPs have four phenylalanines and one tryptophan; and porcine OBPs have two phenylalanines. This conserved feature across biomes may reveal that a hydrophobic environment where odorant molecules can be accommodated is needed. Analysis of the \u03b2-caryophyllene complexes (see Figure 1\u2014figure supplement 1) also suggests that larger ligands may interact with additional aromatic or hydrophobic side chains in the binding pockets.\n\nOverall, our study confirms that plant OBPs may exist and that they may be structurally and functionally similar to OBPs described in animals. As in the case of animal OBPs, also plant OBPs seem to be able to bind different VOCs in the same binding site, using the same amino acid sequences. While our in\u00a0silico results make the case that plants also have OBPs, with both common and different features compared to animal OBPs, functional validation should follow. For example, chemical synthesis of fluorescent VOCs could be used to confirm VOC binding by putative OBPs and to characterize protein\u2013ligand binding mechanisms and sites. Mutants or genetically modified plants that miss or have abundant OBP candidates could also be used. Retrieval and description of plant OBPs may be an important step to unveil how plants eavesdrop messages sent by other plants and how the information is then used to activate molecular and metabolic changes leading to defensive responses and patterns.\n\n## Materials and methods\n\nThe search for potential OBP proteins in plants was performed following the two-level investigation procedure schematized in Figure 1\u2014figure supplement 2. The first level was about searching for plant proteins with potential OBP function. The second level included searching for experimental 3D structures of the candidate plant OBPs and validating by molecular simulations potential ability of putative OBPs to bind isoprenoid VOCs.\n\nIn detail, for the first level, two steps were followed. Step (a) was a screening for proteins of interest performed on the UniProt (http://www.uniprot.org) and NCBI (http://www.ncbi.nih.nlm.gov) protein databases. Initial screening was performed by using the protein name and entry annotations, with the query \u2018odorant-binding protein\u2019. Five plant proteins were found, annotated as \u2018predicted proteins\u2019, which means that they were obtained by nucleotide sequence translation, without evidence at protein or transcript levels, and the name was assigned to the proteins by similarity to other proteins. The protein sequence selected were further investigated by BLAST searches for similar sequences, by using the BLAST interfaces at the database web sites. Standard BLAST search parameters were used. Step (b) was based on BLAST searches (using the same standard parameters of step a) for plant proteins and protein families similar to the 432 OBPs from animal sources available in the protein databases (the list of the 432 OBPs is reported as Supplementary file 4).\n\nThe second level of investigation was a molecular simulations of the interaction of the potential plant OBPs (i.e. those selected in steps 1a and 1b, and the three proteins for which OBP function has been reported [see Introduction]) with selected isoprenoid VOCs. First, we verified the availability of 3D structures of the candidate OBPs in plants. In particular, the Protein Data Bank (PDB) (http://www.rcsb.org), collecting the 3D structure of proteins, was interrogated for appropriate protein structures of the candidate plant OBPs identified by the first level search. The screening allowed us to select the following plant proteins with potential primary or secondary function as OBP, and with available 3D structures: ABA Receptor from Arabidopsis thaliana (PDB code: 4dsb); GA receptor GID1 from Oryza sativa (3ebl); Flowering locus t (FT) from A. thaliana (1wkp); Terminal flower 1 (tfl1) from A. thaliana (1wko); Protein Heading date DATE 3A from O. sativa (3axy); TPL-like protein from A. thaliana (5nqs); COI (partial JA receptor) from A. thaliana (3ogl); COI and JAZ (JA receptor complete) from A. thaliana (3ogl); and salicylic acid binding protein 2 (SA enzyme) from Nicotiana tabacum (1y7i).\n\nMolecular structures of VOCs were extracted from the PubChem database. The VOCs selected as ligands in our study were the isoprenoids \u03b1-pinene (PubChem code: 6654), limonene (22311), \u03b2-myrcene (31253), \u03b2-caryophyllene (5281515), isoprene (6557), and\u00a0linalool (6549).\n\nMolecular simulation experiments of protein\u2013ligand interactions were carried out with Autodock 4.2 and AutoDock Tools 1.5.6 (Morris et al., 2009), which allowed us to prepare the screening, perform the docking simulation, and analyze the results. Molecular visualization of results was obtained with PyMOL Molecular Graphics System, Version 1.3 Schr\u00f6dinger, LLC.\n\nThe binding energy values obtained for the simulated protein\u2013ligand complexes were compared to the values for complexes used as reference. We found in the PDB database complexes of animal proteins with \u03b1-pinene, limonene 1,2 epoxide, and \u03b2-myrcene. \u03b1-Pinene and \u03b2-myrcene are two of the selected VOCs for our simulation, fully correspondent to the natural molecules synthesized and emitted by plants. Limonene 1,2 epoxide is a modified form of the natural VOC. Although not identical to the corresponding plant VOC (limonene), it may be useful as additional reference value. For available plant receptors (ABA receptor, GA receptor, JA receptor, and SA binding protein 2), the reference structures are complexes with ABA, GA, JA-isoleucine, and SA, respectively. These complexes may offer additional reference values of binding energy.\n\nTo validate the docking simulation experimental protocol, we applied a redocking procedure to the reference complexes, following the procedure in use in our laboratory (Scafuri et al., 2016, Scafuri et al., 2020). We depleted the ligand from the complex ligand\u2013protein, and then the ligand-depleted complex (the protein alone) was used to simulate the ligand docking. The redocking experiments were carried out for the protein\u2013ligand reference structures selected above. This approach allowed us to check that the simulation procedure located correctly the ligand in the expected binding site and to calculate the reference value of the binding energy expected in the true protein\u2013ligand complex. The redocking procedure also provided a computational estimation of the binding energy in a true case of protein\u2013ligand interaction. This estimation is used as reference in comparison to the energy binding values computed for the putative protein\u2013ligand interactions. For each ligand a proper reference complex is needed, being the energy of interaction dependent on the ligand chemical features. In the absence of a reference complex relative to an experimental protein\u2013ligand interaction (e.g. the cases of \u03b2-caryophyllene, isoprene, and linalool, see Table 1), the computed binding energy values may be compared each other too, but only for a qualitative ranking, without a reference threshold given by an effective binding.\n",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "1d377da9-df23-4d5a-b0d0-1c3a88d31d20",
+      "submission_id": "b67c16e4-851a-460c-977b-3af75093085d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Krishna Persaud, The University of Manchester United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66741.sa1](https://doi.org/10.7554/eLife.66741.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe article framed as a hypothesis is much clearer than the previous version. The concept of plant OBPs and the potential role in chemical signalling in plants may stimulate further research in this area. The molecular modelling gives intriguing hints that will need to be verified experimentally.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"On the capacity of putative plant odorant-binding proteins to bind volatile plant isoprenoids\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The reviewers have opted to remain anonymous.\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that your work will not be considered further for publication by eLife. We do think that the topic is exciting and timely. We agree that the proposed ideas are plausible and that the in silico analysis is a helpful step towards investigating these ideas. However, we have come to the conclusion that the in silico analysis is not, by itself, sufficient for a short report in eLife, because it leaves too many open questions to either cleanly reject, or substantially develop the authors' hypotheses. The hypotheses themselves are well chosen but not highly novel, and so such a \"hypothesis curation\" function would be especially important to make the paper of great value for the community.\n\nSummary:\n\nThe chemical sensing mechanisms of plants, which are largely unknown, are a topic of broad interest. The authors hypothesise that plant chemical receptors may be transporter proteins or odorant binding proteins analogous to those found in animals. The authors have identified a list of plant proteins with possible odorant binding activity and they predict binding constants for relevant odorants. The calculated binding constants are generally very weak in comparison to known animal odorant binding proteins (i.e., would require much higher concentrations of odor for detection). The in silico investigation, while inspiring, leaves many open questions, for example whether or not there is evidence for functional analogy between plant and animal odorant binding proteins.\n\nReviewer #1:\n\nThe chemical sensing mechanisms of plants are largely unknown. The authors hypothesise that plant chemical receptors may be transporter proteins or odorant binding proteins. The authors carried out an \"in silico\" analysis to investigate whether there are analogous proteins in plants to odorant binding proteins found in animals and insects. A search through protein databases found 5 possible sequences or partial sequences and these were used for further screening using BLAST software for screening comparison. The search for OBPs in plants based on literature evidence and sequence similarities to known OBPs from animal organisms or database annotations, produced a list of plant proteins, or protein families, with potential OBP activity. Molecular docking simulation experiments, to identify candidate plant OBPs were carried out identifying the ligand binding sites and calculated binding energies together with binding constants. This data mining activity has produced some interesting data but also raises several questions. The majority of binding constants tabulated were in the hundreds of micromolar to millimolar concentrations which raises the question of what concentrations of volatile chemicals are plants able to detect. Most odorant binding proteins found in insects and animals have binding constants in the low micromolar range for the target analytes. So if these putative plant odorant binding proteins do have a role in chemical sensing further practical experiments are needed and these need to be discussed. The data are not enough to indicate that these putative proteins identified have relevant functions in chemical sensing in plants.\n\nThe manuscript is quite interesting but lacks detail and adequate discussion of the results.\n\n1. Binding pocket characterisation, shape, size \u2013 dimensions of pockets and mouth, which amino acids are likely to interact with the ligand, would give some idea as to how the ligands selected fit into the pockets found.\n\n2. Predicted binding constants indicate in general sensitivity in the high micromolar to mm ranges of ligands. This has implications for how a plant is able to respond to low concentrations of volatiles that are emitted from other plants \u2013 some discussion is needed.\n\n3. \u03b2-caryophyllene may have better affinity of binding than other compounds \u2013 it may be interesting to examine more carefully the fit of this molecule in the binding pockets and which amino acids are involved.\n\n3. The data presented do not give evidence for the presence of plant OBPs as claimed, as the proteins involved may be involved in other plant signalling functions. In presenting the data it would not be wise to make over ambitious claims as experimental data to validate the potential OBPs is missing.\n\n4. The Discussion should have a section on what experiments are needed to test and validate the data presented.\n\n5. There are a few typographical and grammatical errors that should be corrected. eg \u03b2-caryophillene should be \u03b2-caryophyllene, salicylic acid sometimes is spelt incorrectly etc.\n\nReviewer #2:\n\nThe Authors started from the consideration that volatiles emitted by plants may serve as communication media to other plants. Hence, the 'receiver' plant needs a way to bind these molecules and initiate the transduction cascade, that is a dedicated protein that is able to bind volatiles because it has a binding groove able to accommodate the ligand. The Authors searched the available databases for putative proteins that can serve this goal, by similarity to already known proteins from plants and animals. Then, by molecular docking known plant volatiles, the Authors demonstrate that the identified proteins have the predicted structural features that allow ligand binding.\n\nThe main strength of the paper resides in the idea and in the wide search for similarities among proteins pertaining to different kingdoms. The main weakness of this work resides in the fact that it is entirely in silico, without providing any actual data from real proteins. However, it is well known that in silico simulations may be only suggestive of the actual behavior of a protein.\n\nThe Authors reached their goal of identifying various proteins with putative binding abilities, however the lack of any experimental data should be made clear since the beginning of the manuscript, in the title and abstract. With this caveat, the information provided in this paper may be a useful starting point for experimentally testing of the hypotheses.\n\nIn addition to the above mentioned comments, I underline that in some instances the terminology used by the Authors should be more accurate and revised according to the following suggestions:\n\n\u2013 Title: made clear that this paper contains only in silico simulations.\n\n\u2013 Line 28: 'talk' refers to a specific form of communication involving voice. Substitute with 'communicate' or a synonym.\n\n\u2013 Line 1: 'perceive' means being conscious of the presence of a sensory stimulus. Unse instead 'sense', 'detect' or a synonym.\n\n\u2013 Line 33: add 'plant' between 'whether' and 'OBP'.\n\n\u2013 Line 57: use 'detect' instead of 'perceive'.\n\n\u2013 Line 87: what is 'capacity'?\n\n\u2013 Table 1: I am not aware of any 'Bovine Cycline Nucleotide Gating Olfactory channel'. Maybe the authors refer to: 'Bovine Cyclic Nucleotide Gated Olfactory channel'?\n\n\u2013 Table: what is the 'similarity ' reported here? Please add the level (percentage?) of similarity or identity of the proteins.\n\n\u2013 Supplementary table S3: in the 'predicted Ki' column, the numbers are separated by a comma. Should it be full stops instead?\n\nAn additional more general comment refers to the lack of information on Odorant binding proteins. In particular, since they refer similarity to animal OBP, the authors should made clear that animal OBP are very different and pertain to different classes with dissimilar sequence and 3D structure. A couple of sentences and reference to a review on this topic may help in setting the stage.\n\nReviewer #3:\n\nIt is known that stress-induced plant volatiles can be perceived by neighboring plants, but the underlying mechanism is largely unknown. The authors of this manuscript attempted to identify receptors that interact with isoprenoids, the most abundant plant stress-induced volatile organic compounds (VOCs). They established a framework that allowed them to screen for plant odorant-binding proteins (OBPs) through all available databases. Comparing plant protein sequences with a large group of animal OBP sequences and expanding the investigation to previously known OBPs turned out to be fruitful. Molecular simulation is a powerful screening technique to study the interaction of the potential plant OBPs with selected isoprenoids. The finding that plant OBPs may bind different VOCs in the same binding site is interesting.\n\nThe in silico selection of the plant OBP candidates and ligand docking experiments provide a useful tool to understand signals that underpin plant-plant interactions as well as how plants respond to those cues. However, the conclusions made by the authors may be too premature:\n\nIsoprenoids are both constitutive and stress-induced. The authors did not address, through such a docking study, how plants distinguish VOCs associated with impending stresses, particularly when the OBPs could generally interact with multiple VOCs. One may also wonder how many other types of VOCs exist that are stress-responsive, and what their receptors are.\n\nThe BLAST of 432 OBPs did not find the JA receptor, suggesting that the JA receptor sequence is not closely related to that of the OBPs that insects use to recognize plant volatiles in order to locate suitable host plants. Therefore, identification of OBPs based on sequence similarity may miss those plant proteins that possess OBP structure and function but differ in primary sequences with existing OBPs.\n\nDocking studies can serve as a lead for potential OBP-VOC interaction, but in silico data alone is insufficient to conclude the role of the putative OBPs. Functional evidence is necessary to demonstrate their interaction with VOCs because such interaction indeed affects plant response.\n\nTable 2 revealed the binding energy values between the putative plant OBPs and isoprenoid VOCs. Since OBPs were not selected based on specificity for isoprenoid VOCs, will it be worthwhile testing other VOC classes?\n\nFunctional validation following the lead from the in silico study should be included, e.g. via mutant or overexpression studies.\n",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8746b7a4-9931-42ee-ac68-a4e44200c101",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C1",
+      "claim": "Volatile organic compounds (VOCs) from 'emitting' plants inform the 'receiving' (listening) plants of impending stresses or simply of their presence.",
+      "claim_type": "EXPLICIT",
+      "source": "Volatile organic compounds (VOCs) from 'emitting' plants inform the 'receiving' (listening) plants of impending stresses or simply of their presence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about plant communication through VOCs, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "bf1adbf8-25ef-4ace-a4be-3edd9fae1ec6",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C2",
+      "claim": "The receptors that allow receiver plants to detect volatile cues are elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the receptors that allow receivers to detect the volatile cue are elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of knowledge in the field, indicating a gap in understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "aadd7a3f-a6d3-48ce-bff6-d5db91525774",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C3",
+      "claim": "Plants most likely have odorant-binding proteins (OBPs), similar to animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Most likely, plants (as animals) have odorant-binding proteins (OBPs), and in fact, a few OBPs are known to bind 'stress-induced' plant VOCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from animal biology and some existing evidence of plant OBPs.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "f75e7285-040a-441f-919b-7bcf0016e9a7",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C4",
+      "claim": "A few OBPs are known to bind 'stress-induced' plant VOCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Most likely, plants (as animals) have odorant-binding proteins (OBPs), and in fact, a few OBPs are known to bind 'stress-induced' plant VOCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to existing knowledge in the literature about plant OBPs.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "11a830f1-888f-4912-b43b-3dab184a6d1b",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C5",
+      "claim": "Molecular docking simulation experiments suggest that structural features of a few plant proteins could allow VOC binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular docking simulation experiments suggest that structural features of a few plant proteins screened in databases could allow VOC binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational docking experiments performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "b31fc028-07de-4d5a-864b-8e52d6970cdb",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C6",
+      "claim": "Monoterpenes may bind the same plant proteins that were described to bind other stress-induced VOCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our results show that monoterpenes may bind the same plant proteins that were described to bind other stress-induced VOCs, while the constitutive hemiterpene isoprene is unlikely to bind any investigated putative OBP and may not have an info-chemical role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the docking simulation results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "c8588fb4-fb3d-4606-92c1-971a4a71dea7",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C7",
+      "claim": "The constitutive hemiterpene isoprene is unlikely to bind any investigated putative OBP.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our results show that monoterpenes may bind the same plant proteins that were described to bind other stress-induced VOCs, while the constitutive hemiterpene isoprene is unlikely to bind any investigated putative OBP and may not have an info-chemical role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the docking simulation results showing high binding energy values for isoprene.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "ea1db65e-74bd-4349-b4b5-4d958b30e91d",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C8",
+      "claim": "Isoprene may not have an info-chemical role.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our results show that monoterpenes may bind the same plant proteins that were described to bind other stress-induced VOCs, while the constitutive hemiterpene isoprene is unlikely to bind any investigated putative OBP and may not have an info-chemical role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the docking results and ecological observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "dd133b51-d271-4074-a85f-3c50f89e82c5",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C9",
+      "claim": "There may be plant OBPs that bind multiple VOCs, as for animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, as for animal, there may be plant OBPs that bind multiple VOCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the docking results and comparison with animal OBPs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "91cd48b2-3ef3-40cc-bf8e-c9a5e0bfb741",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C10",
+      "claim": "Plant OBPs may play an important role in allowing plants to eavesdrop messages by neighboring plants, triggering defensive responses and communication with other organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Plant OBPs may play an important role in allowing plants to eavesdrop messages by neighboring plants, triggering defensive responses and communication with other organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the study's findings and known plant communication mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "c1926c89-5bb0-4167-8887-75ef1abbc200",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C11",
+      "claim": "Plants synthesize a variety of volatile organic compounds (VOCs) that are important for reproduction and defense and in general to communicate with other organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants synthesize a variety of volatile organic compounds (VOCs) that are important for reproduction and defense and in general to communicate with other organisms (Ninkovic et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "d0eb119e-f0d5-4db6-9a87-378b9ae0e028",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C12",
+      "claim": "Insects and generalist herbivores, or carnivore insects that are also attracted by the volatile 'cry for help' released by plants upon herbivore attacks, are all able to sense plant volatiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Insects and generalist herbivores, or carnivore insects that are also attracted by the volatile 'cry for help' released by plants upon herbivore attacks, are all able to sense plant volatiles (Dicke and Loreto, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "139b45ea-fd06-4b59-94fd-6e47bb2c4143",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C13",
+      "claim": "Whether volatiles are important in plant\u2013plant communication is a fascinating, yet controversial, issue.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether volatiles are also important in plant\u2013plant communication is a more fascinating, yet controversial, issue (Vickers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation indicating ongoing debate in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "48db29e4-e929-4737-8b84-c29496e8a5e2",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C14",
+      "claim": "Growing reports show that VOCs influence plant\u2013plant relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "Growing reports show that VOCs influence plant\u2013plant relationships (Baldwin et al., 2002; Erb, 2019; Ninkovic et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "cb5e7c46-2c3a-442d-8d78-223aec625922",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C15",
+      "claim": "VOCs elicited in 'emitting' plants by abiotic or biotic stresses prime defensive responses in non-elicited 'receiving' plants.",
+      "claim_type": "EXPLICIT",
+      "source": "VOCs elicited in 'emitting' plants by abiotic or biotic stresses prime defensive responses in non-elicited 'receiving' plants (Zuo et al., 2019; Frank et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "5f7905f0-8600-45bd-b9dc-0c28abdfbbd3",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C16",
+      "claim": "No study has so far looked for the primary events in plant\u2013plant interaction, i.e., the receptors by which plants may sense VOCs emitted from neighboring plants are largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no study has so far looked for the primary events in such elusive plant\u2013plant interaction, i.e., the receptors by which plants may sense VOCs emitted from neighboring plants are largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "7575adcb-56f7-4fee-89d5-c60f5bce8567",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C17",
+      "claim": "It has been proposed that the passage of VOCs across the plasma membrane relies on their active transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been proposed that the passage of VOCs across the plasma membrane relies on their active transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on existing proposals in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "7791358f-25e5-453a-9d12-2224dcd72669",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C18",
+      "claim": "The presence of an ABC carrier protein involved in active transport into plant cells has been hypothesized.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the presence of an ABC carrier protein involved in active transport into plant cells has been hypothesized (Adebesin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "e5364525-a99e-494a-8b0f-ab77ca02c051",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C19",
+      "claim": "Plant VOC receptors may belong to a similar category of transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Plant VOC receptors may belong to a similar category of transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the ABC carrier hypothesis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "a2e6ca0e-ef35-441f-8649-46eb9b0b1886",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C20",
+      "claim": "An alternative explanation is that plants use odorant-binding proteins (OBPs) as protein carriers, alike animals.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative explanation is that plants use odorant-binding proteins (OBPs) as protein carriers, alike animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on comparison with animal systems.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "e258b682-c4c6-4a80-bd58-2329863290d9",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C21",
+      "claim": "There have been at least three cases in which the presence of OBPs was postulated in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there have been at least three cases in which the presence of OBPs was postulated in plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on existing literature describing three plant proteins with OBP-like functions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "525a8072-63bc-4d38-8bd2-3cfb91cd6a97",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C22",
+      "claim": "COI1\u2013JAZ is a high-affinity receptor protein for methyl-jasmonate (MeJa), the volatile moiety of jasmonic acid (JA).",
+      "claim_type": "EXPLICIT",
+      "source": "(1) the COI1 assembly with a jasmonate zinc finger inflorescence meristem (ZIM)-domain (JAZ) protein family (COI1\u2013JAZ), a high-affinity receptor protein for methyl-jasmonate (MeJa), and the volatile moiety of jasmonic acid (JA) (Sheard et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "8f9e9001-43ad-4818-86a8-cd551960b6bb",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C23",
+      "claim": "After JAZ degradation, transcription factors are released, which activate downstream genes and the defensive metabolites in plants challenged by abiotic and biotic stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "After JAZ degradation, transcription factors are released, which activate downstream genes and the defensive metabolites in plants challenged by abiotic and biotic stresses (Cheong and Choi, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "c937d2f8-0189-4f96-9a05-312f3c0a6e04",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C24",
+      "claim": "SABP2 is an esterase of the a/b-fold hydrolase superfamily that binds SA with high affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) The salicylic acid (SA)-binding protein 2 (SABP2), an esterase of the a/b-fold hydrolase superfamily, that binds SA with high affinity and then converts the biologically inactive methyl ester of SA (MeSA) to active SA-inducing systemic acquired resistance in plants challenged by stresses (Park et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "287f7de3-1c35-4a7f-ba48-dd5bcb1a02aa",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C25",
+      "claim": "SABP2 converts the biologically inactive methyl ester of SA (MeSA) to active SA-inducing systemic acquired resistance in plants challenged by stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) The salicylic acid (SA)-binding protein 2 (SABP2), an esterase of the a/b-fold hydrolase superfamily, that binds SA with high affinity and then converts the biologically inactive methyl ester of SA (MeSA) to active SA-inducing systemic acquired resistance in plants challenged by stresses (Park et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "77944156-f9ef-4261-86f2-10f521fb1e34",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C26",
+      "claim": "TPL specifically binds \u03b2-caryophyllene, a stress-induced sesquiterpene and a volatile signal for herbivores and carnivores in multitrophic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) The TOPLESS-like protein (TPL) that specifically binds \u03b2-caryophyllene, a stress-induced sesquiterpene and a volatile signal for herbivores and carnivores in multitrophic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on existing literature about TPL function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "863b7072-9a5e-44d1-8b9f-2b2a396f1132",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C27",
+      "claim": "TPL and TPL-related proteins are transcriptional co-repressors (also toward JA-mediated signaling).",
+      "claim_type": "EXPLICIT",
+      "source": "TPL and TPL-related proteins are transcriptional co-repressors (also toward JA-mediated signaling).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on existing knowledge about TPL function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "8e1bcc3c-0e70-4600-8af7-0bafc23d0306",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C28",
+      "claim": "Only the capacity to bind \u03b2-caryophyllene was tested with emitting and receiving (eavesdropping) plants for TPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only the capacity to bind \u03b2-caryophyllene was tested with emitting and receiving (eavesdropping) plants (Nagashima et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "7d1fecb3-e209-4389-b18c-bb3ec89ca1a7",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C29",
+      "claim": "These three cases of plant OBPs need confirmation.",
+      "claim_type": "EXPLICIT",
+      "source": "These three cases need confirmation, and all other plant VOCs (at least 1700 known so far; Dicke and Loreto, 2010) wait for identification of receptors (if present).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the authors' assessment of the current state of evidence.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "16ad0a7c-4ab4-4f9d-8d8a-493b3968068d",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C30",
+      "claim": "At least 1700 plant VOCs are known so far.",
+      "claim_type": "EXPLICIT",
+      "source": "These three cases need confirmation, and all other plant VOCs (at least 1700 known so far; Dicke and Loreto, 2010) wait for identification of receptors (if present).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "d555c16e-099b-4445-9113-1f9cb320cf9d",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C31",
+      "claim": "The study focused on volatile isoprenoids (isoprene and monoterpenes) produced by the methyl erythritol phosphate (MEP) chloroplast pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the volatile isoprenoids (isoprene and monoterpenes) produced by the methyl erythritol phosphate (MEP) chloroplast pathway and representing the largest component of plant VOC emissions in the atmosphere (Loreto and Schnitzler, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "a16dae3b-567e-43ef-af84-7727fd3c4294",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C32",
+      "claim": "Volatile isoprenoids represent the largest component of plant VOC emissions in the atmosphere.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the volatile isoprenoids (isoprene and monoterpenes) produced by the methyl erythritol phosphate (MEP) chloroplast pathway and representing the largest component of plant VOC emissions in the atmosphere (Loreto and Schnitzler, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "03e0a80e-4a8f-47cb-9eef-ba0e7169f4d1",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C33",
+      "claim": "Approach (a) yielded five complete or partial protein sequences from plant databases.",
+      "claim_type": "EXPLICIT",
+      "source": "Approach (a) yielded five complete or partial protein sequences, three from Anthurium amnicola (named OBP56d, OBP A10_1, and OBP A10_2), one from Nymphaea thermarum (named putative OBP), and one from Pyrus x bretschneideri (named OBP-70 like) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of the database search performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "128e6a29-6930-41a9-a4e9-15ae653f7a53",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C34",
+      "claim": "Statistically relevant similarity and coverage was only found between the putative OBP from N. thermarum and the Flowering locus T (FT) and T1 proteins, and the heading date 3A and 3B.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when these sequences were further screened for similarities with annotated plant proteins in the sequence databases, statistically relevant similarity and coverage was only found between the putative OBP from N. thermarum and the Flowering locus T (FT) and T1 proteins, and the heading date 3A and 3B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of sequence similarity analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "964252c6-7b5e-435d-b8fb-0ccf58d27a17",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C35",
+      "claim": "Comparison with animal OBPs yielded similarities between insect OBPs and plant OBP56d and OBP-70 like.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with animal OBPs, yielded similarities between (1) OBPs from insects and plant OBP56d and OBP-70 like, (2) chemosensor proteins and plant OBP A10_1, and (3) phosphatidylethanolamine-binding proteins and the putative OBP from N. thermarum (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of comparative analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "1f3b94b9-63eb-449b-9920-eb5b1b7c03e7",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C36",
+      "claim": "Comparison with animal OBPs yielded similarities between chemosensor proteins and plant OBP A10_1.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with animal OBPs, yielded similarities between (1) OBPs from insects and plant OBP56d and OBP-70 like, (2) chemosensor proteins and plant OBP A10_1, and (3) phosphatidylethanolamine-binding proteins and the putative OBP from N. thermarum (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of comparative analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "6b49b223-5fc2-42d7-a61a-11a4c3c00a08",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C37",
+      "claim": "Comparison with animal OBPs yielded similarities between phosphatidylethanolamine-binding proteins and the putative OBP from N. thermarum.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with animal OBPs, yielded similarities between (1) OBPs from insects and plant OBP56d and OBP-70 like, (2) chemosensor proteins and plant OBP A10_1, and (3) phosphatidylethanolamine-binding proteins and the putative OBP from N. thermarum (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of comparative analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "052c6976-607f-43b6-8c3f-8b9baa7c3543",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C38",
+      "claim": "Only five animal protein families share sequence similarity with plant proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Only five animal protein families share sequence similarity with plant proteins, as summarized in Table 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the BLAST comparison results presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "f49e079b-d59d-4f23-8651-7241fbbf6e45",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C39",
+      "claim": "Sequences were considered similar when showing BLAST E-values close to 0, and sequence identity ranges (20\u201345%) with a confident query coverage (highest values varying from 60% to 96%).",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences were considered similar when showing BLAST E-values close to 0, and sequence identity ranges (20\u201345%) with a confident query coverage (highest values varying from 60% to 96%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the criteria used in the study for determining sequence similarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "434134e4-290c-4668-940c-33c12d37198c",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C40",
+      "claim": "All plant protein sequences reported in Table 1 are related to inflorescence signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all plant protein sequences reported in Table 1 are related to inflorescence signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on the functional annotations of the proteins identified.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "2900be47-94b2-4302-aed8-950dacf25063",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C41",
+      "claim": "HVA22 is induced by abscisic acid (ABA)/stress and has a role in the gibberellic acid (GA)-induced cellular death and in the regulation of seed germination.",
+      "claim_type": "EXPLICIT",
+      "source": "HVA22 is induced by abscisic acid (ABA)/stress and has a role in the gibberellic acid (GA)-induced cellular death and in the regulation of seed germination (Shen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "0ca89a67-7f80-4324-8e64-1fde23b7ae6d",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C42",
+      "claim": "FT is a florigen that induces and promotes the transition from vegetative growth to flowering.",
+      "claim_type": "EXPLICIT",
+      "source": "FT is a florigen that induces and promotes the transition from vegetative growth to flowering (Koornneef et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "402e16ca-6419-46fb-859c-6c9c062e4f81",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C43",
+      "claim": "The protein MFT is involved in regulation of seeds germination by ABA/GA signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein MFT is involved in regulation of seeds germination by ABA/GA signaling (Vaistij et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "adfbc759-7b1a-48cb-8067-455e5c0e246b",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C44",
+      "claim": "Heading date 3A-like is a probable florigen, which promotes the transition from vegetative growth to flowering downstream of HD1 and EHD1 under short day conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Heading date 3A-like, as FT, is a probable florigen, which promotes the transition from vegetative growth to flowering downstream of HD1 and EHD1 under short day conditions (Taoka et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "b755533c-3b49-43b2-975e-4a9eacab19c8",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C45",
+      "claim": "Plant proteins previously reported in the literature (COI1\u2013JAZ, SABP2, and TPL) were not retrieved by the search based on plant\u2013animal protein similarities.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also remarkable that plant proteins previously reported in the literature (COI1\u2013JAZ, SABP2, and TPL, see Introduction) were not retrieved by our search based on plant\u2013animal protein similarities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a negative result from the database search performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "4be15c34-f8b1-448d-a1c4-1a308c419692",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C46",
+      "claim": "Plant proteins may be able to work as OBPs even if different from animal OBPs, both at primary and tertiary structure levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that plant proteins may be able to work as OBPs even if different from animal OBPs, both at primary and tertiary structure levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that known plant OBPs were not retrieved by similarity searches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "8b2ccbc7-6b58-4709-8bb9-19bd267732c2",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C47",
+      "claim": "Nine putative plant OBPs were selected for molecular docking simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "This search was successful for nine putative plant OBPs that were then selected for molecular docking simulations of the interactions between potential plant OBPs and selected VOCs, to finally identify candidate plant OBPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "9c22a444-0b48-442d-a38b-908c87362607",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C48",
+      "claim": "\u03b1-pinene binds SABP2 with a binding energy value of \u22126.03 kcal/mol and a predicted Ki of 37 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "In our docking simulations, \u03b1-pinene seems to dock better on SABP2 and on the complete JA receptor, with binding energy value of \u22126.03 kcal/mol and \u22125.92 kcal/mol, and predicted Ki of 37 \u03bcM and 38.55 \u03bcM, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the docking simulation results presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "0c65c5c4-678e-4509-8539-c554727f4f14",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C49",
+      "claim": "\u03b1-pinene binds the complete JA receptor with a binding energy value of \u22125.92 kcal/mol and a predicted Ki of 38.55 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "In our docking simulations, \u03b1-pinene seems to dock better on SABP2 and on the complete JA receptor, with binding energy value of \u22126.03 kcal/mol and \u22125.92 kcal/mol, and predicted Ki of 37 \u03bcM and 38.55 \u03bcM, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the docking simulation results presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "9c22b3c4-ad1d-4311-84f2-943fddbf0153",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C50",
+      "claim": "\u03b1-pinene binds the reference protein cytochrome P450 2B6 with an energy value of \u22125.42 kcal/mol and a predicted Ki of 103 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, \u03b1-pinene binds the reference protein cytochrome P450 2B6 with an energy value of \u22125.42 kcal/mol and a predicted Ki of 103 \u03bcM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the redocking simulation results for the reference complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "f155e0af-851d-4481-b681-cc6fecd9df0d",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C51",
+      "claim": "\u03b1-pinene binding to SABP2 and the complete JA receptor is better than the interaction with the reference complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, this is a better interaction than with the reference complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of binding energy values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "81dec4dc-f19a-4509-a7d4-2b0eb4475bca",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C52",
+      "claim": "\u03b2-myrcene binds SABP2, GA receptor, and the JA receptor better than the reference complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to \u03b1-pinene, \u03b2-myrcene binds SABP2, GA receptor, and the JA receptor better than the reference complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of binding energy values from the docking simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "831ff917-a244-4bf0-a2b3-79fc769b30ec",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C53",
+      "claim": "Protein heading date 3A, FT, and tfl1 showed binding energy values similar to the reference complex for \u03b2-myrcene.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the other candidate OBPs, protein heading date 3A, FT, and tfl1 showed binding energy values similar to the reference complex for \u03b2-myrcene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of binding energy values from the docking simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "73af4dc0-91f9-4692-a709-39535161de65",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C54",
+      "claim": "SABP2 showed energy values lower than the other candidate OBPs for limonene, and similar to the reference complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as in the previous cases, SABP2 showed energy values lower than the other candidate OBPs, and similar to the reference complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of binding energy values from the docking simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "33785200-f981-45e1-87d6-5435b0c79081",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C55",
+      "claim": "\u03b2-caryophyllene showed the lowest binding energy values among the tested VOCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, \u03b2-caryophyllene showed the lowest, and isoprene the highest, energy binding values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the docking simulation results presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "8338d632-e021-4bd1-acf7-b880f75be9ee",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C56",
+      "claim": "Isoprene showed the highest binding energy values among the tested VOCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, \u03b2-caryophyllene showed the lowest, and isoprene the highest, energy binding values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the docking simulation results presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "dae70245-bc49-4530-a1f1-3ddf7f5d9967",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C57",
+      "claim": "The analysis confirms that OBPs might be present in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis overall confirms that OBPs might be present in plants, and also bind VOCs produced by plants through the MEP pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the docking simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "9c97b769-c963-47a2-a09c-4ad4eb201fca",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C58",
+      "claim": "Plant OBPs might bind VOCs produced by plants through the MEP pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis overall confirms that OBPs might be present in plants, and also bind VOCs produced by plants through the MEP pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the docking simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "6105d75c-727e-4591-97ad-96a53d8a74e5",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C59",
+      "claim": "MEP synthesizes isoprenoids that are emitted constitutively (e.g. isoprene) or that are both constitutive and stress induced (e.g. monoterpenes).",
+      "claim_type": "EXPLICIT",
+      "source": "MEP synthesizes isoprenoids that are emitted constitutively (e.g. isoprene) or that are both constitutive and stress induced (e.g. monoterpenes) (Dicke and Loreto, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "cd37a022-d45f-407f-a22d-732829fd89b9",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C60",
+      "claim": "Monoterpenes are efficiently bound by OBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "While monoterpenes are efficiently bound by OBPs, isoprene, the simplest and most abundantly emitted volatile isoprenoid, does not seem to bind strongly enough any OBP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the docking simulation results showing low binding energy values for monoterpenes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "769c65c4-5451-4b49-859a-ac971ced2f8e",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C61",
+      "claim": "Isoprene does not seem to bind strongly enough any OBP.",
+      "claim_type": "EXPLICIT",
+      "source": "While monoterpenes are efficiently bound by OBPs, isoprene, the simplest and most abundantly emitted volatile isoprenoid, does not seem to bind strongly enough any OBP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the docking simulation results showing high binding energy values for isoprene.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "c2f4cb5f-4092-485f-8807-4a2bc46dab35",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C62",
+      "claim": "Ecological observations report a role for monoterpenes in plant communication with other organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecological observations report a role for monoterpenes in plant communication with other organisms (Bouwmeester et al., 2019), which is arguably not observed for isoprene (e.g. Brilli et al., 2009),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "6384c0b9-a89b-4a9e-83b1-760a08423b7e",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C63",
+      "claim": "A role in plant communication with other organisms is arguably not observed for isoprene.",
+      "claim_type": "EXPLICIT",
+      "source": "Ecological observations report a role for monoterpenes in plant communication with other organisms (Bouwmeester et al., 2019), which is arguably not observed for isoprene (e.g. Brilli et al., 2009),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "b87d0c6a-bf84-438e-808b-f6f21c7c633a",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C64",
+      "claim": "Isoprene influences many plant traits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, isoprene influences many plant traits (Monson et al., 2021) and profoundly modifies properties of cellular and sub-cellular membranes (Velikova et al., 2015; Pollastri et al., 2019), which may in turn activate signals reshaping plant genomes and phenomes (Harvey and Sharkey, 2016; Miloradovic van Doorn et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "176d506e-dee6-4734-9b3b-f1143997ea36",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C65",
+      "claim": "Isoprene profoundly modifies properties of cellular and sub-cellular membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, isoprene influences many plant traits (Monson et al., 2021) and profoundly modifies properties of cellular and sub-cellular membranes (Velikova et al., 2015; Pollastri et al., 2019), which may in turn activate signals reshaping plant genomes and phenomes (Harvey and Sharkey, 2016; Miloradovic van Doorn et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "dfb72fe1-597d-4037-b18c-5eff79efbb5b",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C66",
+      "claim": "Isoprene modifications of membranes may activate signals reshaping plant genomes and phenomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, isoprene influences many plant traits (Monson et al., 2021) and profoundly modifies properties of cellular and sub-cellular membranes (Velikova et al., 2015; Pollastri et al., 2019), which may in turn activate signals reshaping plant genomes and phenomes (Harvey and Sharkey, 2016; Miloradovic van Doorn et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature and involves speculative reasoning.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "768e6294-258f-4977-a88e-6d3610b92b61",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C67",
+      "claim": "Isoprene is the main VOC emitted constitutively and not induced by stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "As isoprene is the main VOC emitted constitutively and not induced by stresses, it may be tempting to generalize from our observations that, unlike induced VOCs, constitutive VOCs are not bound by OBPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about isoprene emission patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "47ed6419-142b-45ec-b25f-85148c8adb95",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C68",
+      "claim": "Unlike induced VOCs, constitutive VOCs may not be bound by OBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "As isoprene is the main VOC emitted constitutively and not induced by stresses, it may be tempting to generalize from our observations that, unlike induced VOCs, constitutive VOCs are not bound by OBPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the docking results for isoprene.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "ad0966f4-9bf8-4331-8d41-7d79907e1610",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C69",
+      "claim": "Monoterpenes seem to bind more efficiently with OBPs that are also reported to bind other plant volatiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, monoterpenes seem to bind more efficiently with OBPs that are also reported to bind other plant volatiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the docking simulation results and comparison with known OBP functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "bd3c5d8d-bbd2-4129-948d-4a00be43d727",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C70",
+      "claim": "SABP2, the protein that strongly binds the stress-induced volatile MeSA, also seems to be a candidate for three tested monoterpenes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, SABP2, the protein that strongly binds the stress-induced volatile MeSA, also seems to be a candidate for three tested monoterpenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the docking simulation results showing low binding energy values for monoterpenes with SABP2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "2371629c-d176-4516-afed-92f873d72475",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C71",
+      "claim": "Protein heading date 3A and tfl1, GA receptor, and FT may bind, perhaps more specifically, the three monoterpenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein heading date 3A and tfl1, GA receptor, and FT may also bind, perhaps more specifically, the three monoterpenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the docking simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "4fe56786-6c72-4033-99de-a580988adb2e",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C72",
+      "claim": "The candidate plant OBPs have a broad ligand binding specificity and are likely to bind several different VOCs, as reported for OBPs from animals and insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that, as reported for the OBPs from animals and insects (Ramoni et al., 2007), the candidate plant OBPs have a broad ligand binding specificity and, consequently, they are likely to bind several different VOCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the docking results and comparison with animal OBPs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "594e2a0b-a2a5-4e87-a0d5-57275d711b05",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C73",
+      "claim": "In many cases binding of the ligands occurs at the same protein structure site.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that in many cases binding of the ligands occurs at the same protein structure site, as shown for SABP2 in the experimentally reported complex with SA (Figure 1A), and in the simulated complexes with \u03b1-pinene, limonene, and \u03b2-myrcene (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on visual analysis of the docking simulation results shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "a4c000b3-9c88-4fd7-9942-4913099540e9",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C74",
+      "claim": "The SABP2 binding site is characterized by the presence of aromatic side chains (two phenylalanines, one tyrosine, and one tryptophan).",
+      "claim_type": "EXPLICIT",
+      "source": "The SABP2 binding site (represented in the right panels of Figure 1B\u2013D) is characterized by the presence of aromatic side chains (two phenylalanines, one tyrosine, and one tryptophan), also observed in other candidate plant OBPs (GA receptor: two phenylalanines and four tyrosines; JA receptor: one phenylalanine, one tyrosine, and one tryptophan residue; FT receptor: two phenylalanines and one tryptophan).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis of the binding sites shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "bbd0de39-b2a8-4ebc-98f0-c8fc61d1e501",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C75",
+      "claim": "The GA receptor binding site contains two phenylalanines and four tyrosines.",
+      "claim_type": "EXPLICIT",
+      "source": "The SABP2 binding site (represented in the right panels of Figure 1B\u2013D) is characterized by the presence of aromatic side chains (two phenylalanines, one tyrosine, and one tryptophan), also observed in other candidate plant OBPs (GA receptor: two phenylalanines and four tyrosines; JA receptor: one phenylalanine, one tyrosine, and one tryptophan residue; FT receptor: two phenylalanines and one tryptophan).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "72ec26c2-5c13-41ae-8f7e-cca147b875a7",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C76",
+      "claim": "The JA receptor binding site contains one phenylalanine, one tyrosine, and one tryptophan residue.",
+      "claim_type": "EXPLICIT",
+      "source": "The SABP2 binding site (represented in the right panels of Figure 1B\u2013D) is characterized by the presence of aromatic side chains (two phenylalanines, one tyrosine, and one tryptophan), also observed in other candidate plant OBPs (GA receptor: two phenylalanines and four tyrosines; JA receptor: one phenylalanine, one tyrosine, and one tryptophan residue; FT receptor: two phenylalanines and one tryptophan).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "98092ef9-3923-4ad6-b8b5-759d761fce21",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C77",
+      "claim": "The FT receptor binding site contains two phenylalanines and one tryptophan.",
+      "claim_type": "EXPLICIT",
+      "source": "The SABP2 binding site (represented in the right panels of Figure 1B\u2013D) is characterized by the presence of aromatic side chains (two phenylalanines, one tyrosine, and one tryptophan), also observed in other candidate plant OBPs (GA receptor: two phenylalanines and four tyrosines; JA receptor: one phenylalanine, one tyrosine, and one tryptophan residue; FT receptor: two phenylalanines and one tryptophan).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "d6c7c55b-bc4b-4d7c-8996-db3b9ec35a93",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C78",
+      "claim": "The ABA receptor has one phenylalanine and one tyrosine in the binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Other candidate plant OBPs have some aromatic side chains in the binding site, although in lower number (e.g., the ABA receptor has one phenylalanine and one tyrosine, while TLF1 has two phenylalanines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "f7c5716f-c332-479d-a55f-135338b4b2b6",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C79",
+      "claim": "TLF1 has two phenylalanines in the binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Other candidate plant OBPs have some aromatic side chains in the binding site, although in lower number (e.g., the ABA receptor has one phenylalanine and one tyrosine, while TLF1 has two phenylalanines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "8849f4b3-c59f-41e5-a0e4-2c265ab1601c",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C80",
+      "claim": "The presence of aromatic side chains in binding sites is reminiscent of the binding site of OBPs from animal organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also reminiscent of the binding site of OBPs from animal organisms (Bianchet et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with animal OBPs and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "98180b17-d704-4b9d-9582-a916db6b8896",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C81",
+      "claim": "Bovine OBPs include five phenylalanines and one tyrosine.",
+      "claim_type": "EXPLICIT",
+      "source": "Bovine OBPs include five phenylalanines and one tyrosine; Drosophila OBPs have four phenylalanines and one tryptophan; and porcine OBPs have two phenylalanines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on known structural information about animal OBPs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "69f35ecb-0f65-4ef4-b44b-fd01efe390f4",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C82",
+      "claim": "Drosophila OBPs have four phenylalanines and one tryptophan.",
+      "claim_type": "EXPLICIT",
+      "source": "Bovine OBPs include five phenylalanines and one tyrosine; Drosophila OBPs have four phenylalanines and one tryptophan; and porcine OBPs have two phenylalanines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on known structural information about animal OBPs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "0cd0978d-5760-4257-9d9a-43e84a769cbc",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C83",
+      "claim": "Porcine OBPs have two phenylalanines.",
+      "claim_type": "EXPLICIT",
+      "source": "Bovine OBPs include five phenylalanines and one tyrosine; Drosophila OBPs have four phenylalanines and one tryptophan; and porcine OBPs have two phenylalanines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on known structural information about animal OBPs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "e7149561-cb32-4106-afe6-55477d49041d",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C84",
+      "claim": "A hydrophobic environment where odorant molecules can be accommodated is needed for OBP function.",
+      "claim_type": "EXPLICIT",
+      "source": "This conserved feature across biomes may reveal that a hydrophobic environment where odorant molecules can be accommodated is needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the conserved presence of aromatic residues in OBP binding sites.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "6034a549-a060-48e7-b547-489c04a86eb2",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C85",
+      "claim": "Larger ligands may interact with additional aromatic or hydrophobic side chains in the binding pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the \u03b2-caryophyllene complexes (see Figure 1\u2014figure supplement 1) also suggests that larger ligands may interact with additional aromatic or hydrophobic side chains in the binding pockets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the docking results shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "98dcc2a3-17ac-497e-85d6-7b939350dc7a",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C86",
+      "claim": "Plant OBPs may be structurally and functionally similar to OBPs described in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our study confirms that plant OBPs may exist and that they may be structurally and functionally similar to OBPs described in animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the overall findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "a5a2a880-7532-42aa-9b4a-e763c0ca77b8",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C87",
+      "claim": "Plant OBPs seem to be able to bind different VOCs in the same binding site, using the same amino acid sequences, as in the case of animal OBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the case of animal OBPs, also plant OBPs seem to be able to bind different VOCs in the same binding site, using the same amino acid sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the docking simulation results and comparison with animal OBPs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "86e7ccb6-7075-4ae5-8c5f-9850074a52b9",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C88",
+      "claim": "Plant OBPs have both common and different features compared to animal OBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "While our in silico results make the case that plants also have OBPs, with both common and different features compared to animal OBPs, functional validation should follow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the comparative analysis performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "c714b4c5-d873-4865-b3f0-e808446895ec",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C89",
+      "claim": "Chemical synthesis of fluorescent VOCs could be used to confirm VOC binding by putative OBPs and to characterize protein\u2013ligand binding mechanisms and sites.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, chemical synthesis of fluorescent VOCs could be used to confirm VOC binding by putative OBPs and to characterize protein\u2013ligand binding mechanisms and sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future experimental validation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "f90fe377-d8e2-4253-bda9-fb47c95ea949",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C90",
+      "claim": "Mutants or genetically modified plants that miss or have abundant OBP candidates could be used for functional validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants or genetically modified plants that miss or have abundant OBP candidates could also be used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future experimental validation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "92d96b78-f4f0-49ef-95c2-1905c99850d4",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C91",
+      "claim": "Retrieval and description of plant OBPs may be an important step to unveil how plants eavesdrop messages sent by other plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrieval and description of plant OBPs may be an important step to unveil how plants eavesdrop messages sent by other plants and how the information is then used to activate molecular and metabolic changes leading to defensive responses and patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "36e91167-9504-4252-97ec-4e368185a576",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C92",
+      "claim": "Predicted Ki values are very high compared to those found for animal OBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported Ki values are very high compared to those found for animal OBPs, but are consistent with other plant Ki studies, confirming that plants may sense VOCs only when exposed to higher concentrations than animals (Nagashima et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the calculated Ki values with known animal OBP values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "42d60a2e-c82f-4257-a24e-6c1e674a978a",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C93",
+      "claim": "Predicted Ki values are consistent with other plant Ki studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported Ki values are very high compared to those found for animal OBPs, but are consistent with other plant Ki studies, confirming that plants may sense VOCs only when exposed to higher concentrations than animals (Nagashima et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "943c0cc5-6a8e-4c24-b353-426435510197",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C94",
+      "claim": "Plants may sense VOCs only when exposed to higher concentrations than animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported Ki values are very high compared to those found for animal OBPs, but are consistent with other plant Ki studies, confirming that plants may sense VOCs only when exposed to higher concentrations than animals (Nagashima et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to existing literature and inference from the Ki values.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "da8c9fd3-72f5-4ae1-ad1d-140fc5c0b64c",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C95",
+      "claim": "The three monoterpenes tested (\u03b1-pinene, \u03b2-myrcene, and limonene) may bind some of the putative OBPs with energy values similar or lower than the values observed for the reference complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the three monoterpenes tested (\u03b1-pinene, \u03b2-myrcene, and limonene) may bind some of the putative OBPs with energy values similar or lower than the values observed for the reference complexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the docking simulation results presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "8ab046c0-64e8-4baf-b67b-10311012207c",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C96",
+      "claim": "\u03b1-pinene occupies the same binding site of salicylic acid in SABP2.",
+      "claim_type": "IMPLICIT",
+      "source": "SABP2 is shown with the same spatial orientation as in panel (A) to emphasize that \u03b1-pinene occupies the same binding site of salicylic acid.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown visually in Figure 1B and stated in the figure caption.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "d5a993e6-ff14-4999-9532-feb53850d9b1",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C97",
+      "claim": "Limonene occupies the same binding site of salicylic acid in SABP2.",
+      "claim_type": "IMPLICIT",
+      "source": "SABP2 is shown with the same spatial orientation of (A), to better show that limonene occupies the same binding site of the salicylic acid.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown visually in Figure 1C and stated in the figure caption.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "1c7e0e50-5b80-41ca-8038-9a2113e29383",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "claim_id": "C98",
+      "claim": "\u03b2-myrcene occupies the same binding site of salicylic acid in SABP2.",
+      "claim_type": "IMPLICIT",
+      "source": "SABP2 is shown with the same spatial orientation of (A), to better show that \u03b2-myrcene occupies the same binding site of the salicylic acid.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown visually in Figure 1D and stated in the figure caption.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1e7422f5-595e-456b-82d3-24d4e3a92680",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Database searches identified candidate plant OBPs through two approaches: (a) direct search for proteins annotated as 'odorant-binding' yielded 5 sequences, but only one showed statistically relevant similarity to known plant proteins (FT, T1, heading date 3A/3B); (b) comparison with 432 animal OBPs identified 5 animal protein families with sequence similarity to plant proteins (20-45% identity, 60-96% coverage). Notably, previously reported plant OBPs (COI1-JAZ, SABP2, TPL) were not retrieved by similarity searches, suggesting plant OBPs may differ structurally from animal OBPs. Nine putative plant OBPs with available 3D structures were selected for docking simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C47 describe a systematic bioinformatics approach with clear methodology and criteria (E-values, identity ranges, coverage thresholds in C39). The negative result (C45) that known plant OBPs were not retrieved is appropriately interpreted (C46) as evidence for structural divergence rather than methodological failure. The identification of inflorescence-related proteins (C40-C44) is well-documented with citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "ea2f3cda-2a76-4794-ba0b-81bf439a0556",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Molecular docking simulations show that monoterpenes (\u03b1-pinene, \u03b2-myrcene, limonene) bind several putative plant OBPs with binding energies comparable to or better than reference protein-ligand complexes. \u03b1-pinene binds SABP2 (-6.03 kcal/mol, Ki=37 \u03bcM) and complete JA receptor (-5.92 kcal/mol, Ki=38.55 \u03bcM) more strongly than the reference cytochrome P450 2B6 complex (-5.42 kcal/mol, Ki=103 \u03bcM). Similar patterns were observed for \u03b2-myrcene and limonene, with SABP2 consistently showing the strongest binding among candidate OBPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the docking simulations provide quantitative binding energy values (C48-C54, C95), several concerns limit confidence: (1) the limonene reference uses a modified form (limonene 1,2 epoxide), acknowledged as less reliable; (2) no statistical analysis or error estimates are provided for the docking scores; (3) the comparison relies heavily on a single reference complex per ligand; (4) the very high Ki values (C92-C94) compared to animal OBPs raise questions about biological relevance, though this is acknowledged and cited as consistent with other plant studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "557e8a6b-1285-4b7b-8a10-a6e45209d2ba",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "\u03b2-caryophyllene showed the lowest binding energy values among all tested VOCs, while isoprene showed the highest (weakest binding). Monoterpenes are efficiently bound by putative plant OBPs, whereas isoprene does not bind strongly to any investigated OBP, suggesting isoprene may not have an info-chemical role in plant-plant communication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 present clear comparative data from Table 2. The interpretation that isoprene lacks strong OBP binding (C60-C61, C7) is supported by consistently high (unfavorable) binding energies across all tested proteins. The inference about isoprene's lack of info-chemical role (C8) is appropriately qualified as speculative and is supported by ecological observations cited in C62-C63.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "a8e2b8fd-ea51-4a19-94fd-f247acaf743a",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Isoprene, the main constitutively emitted VOC not induced by stress, shows poor binding to all tested OBPs, suggesting that constitutive VOCs may generally not be bound by OBPs, unlike stress-induced VOCs. However, isoprene has documented roles in modifying membrane properties and influencing plant traits through mechanisms that may not require OBP binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The generalization from isoprene to all constitutive VOCs (C68) is explicitly acknowledged as speculative ('may be tempting to generalize'). While the docking data for isoprene is clear (C56, C61), extrapolating to all constitutive VOCs based on a single compound is premature. The alternative mechanisms for isoprene function (C64-C66) are well-cited but do not directly validate the OBP-binding results. The ecological context (C62-C63) supports the interpretation but does not constitute direct evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "f2cc7efc-f5af-4975-90d0-7c8d9d788860",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Monoterpenes bind the same plant proteins (particularly SABP2) that bind other stress-induced VOCs, suggesting plant OBPs have broad ligand specificity and can bind multiple different VOCs, similar to animal OBPs. SABP2, which binds MeSA, also shows strong binding to all three tested monoterpenes, while heading date 3A, tfl1, GA receptor, and FT may bind monoterpenes more specifically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C69-C72 are well-supported by the docking data showing SABP2 binds multiple ligands (C70, Table 2) and by comparison with animal OBPs (C72, citing Ramoni et al., 2007). The observation that the same binding site accommodates different ligands (C73) provides structural support. The qualification 'perhaps more specifically' in C71 appropriately acknowledges uncertainty. The conclusion about broad specificity (C9, C72) follows logically from the multi-ligand binding patterns observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "b3cc2d59-460a-447c-b978-72891b6b7aa4",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Multiple VOC ligands (\u03b1-pinene, limonene, \u03b2-myrcene) bind at the same site in SABP2 as the experimentally determined salicylic acid binding site. The binding sites of candidate plant OBPs are characterized by aromatic side chains (phenylalanines, tyrosines, tryptophans), with SABP2 containing 2 Phe, 1 Tyr, 1 Trp; GA receptor: 2 Phe, 4 Tyr; JA receptor: 1 Phe, 1 Tyr, 1 Trp; FT receptor: 2 Phe, 1 Trp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C79, C96-C98 are directly supported by visual evidence in Figure 1 and structural analysis of binding sites. The observation that different ligands occupy the same binding site (C73, C96-C98) is clearly demonstrated through spatial orientation comparisons in Figure 1A-D. The enumeration of aromatic residues (C74-C79) provides specific structural details that can be verified from the protein structures. This represents solid computational structural analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "90f0078f-2619-4310-a59b-a1f079b129ab",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The presence of aromatic side chains in plant OBP binding sites is reminiscent of animal OBPs (bovine: 5 Phe, 1 Tyr; Drosophila: 4 Phe, 1 Trp; porcine: 2 Phe), suggesting a conserved hydrophobic environment for odorant accommodation is needed across biomes. Analysis of \u03b2-caryophyllene complexes suggests larger ligands may interact with additional aromatic or hydrophobic residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85 make a valid comparative structural analysis between plant and animal OBPs, supported by citation (Bianchet et al., 1996) and known structural information (C81-C83). The inference about functional conservation (C84) is reasonable given the structural conservation of aromatic residues across kingdoms. The observation about larger ligands (C85) is supported by analysis of Figure 1\u2014figure supplement 1. This represents sound structure-function reasoning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "1b0c7ec1-e2fe-443c-9c70-810be2e2145b",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Plant OBPs may exist and be structurally and functionally similar to animal OBPs, capable of binding different VOCs (including MEP pathway products) in the same binding site using the same amino acid sequences, though with both common and different features compared to animal OBPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C88, C57-C58 represent the main conclusions but are appropriately qualified with 'may' throughout. The evidence is entirely computational (docking simulations) without experimental validation. The authors acknowledge this limitation and call for functional validation (C89-C90). While the computational evidence is systematic and the structural comparisons are sound, the lack of experimental binding data, functional assays, or validation in plant systems means these remain hypotheses rather than confirmed results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "80c96501-c5b0-4109-9394-9e67c10153b2",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The predicted Ki values from docking simulations are very high compared to animal OBPs but are consistent with other plant Ki studies, suggesting plants may sense VOCs only at higher concentrations than animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 appropriately acknowledge a significant limitation of the results (high Ki values) but contextualize it with citation to Nagashima et al., 2019 showing consistency with other plant studies (C93). This transparent reporting of a potential weakness, along with a plausible biological interpretation (C94), strengthens rather than weakens the overall assessment. The acknowledgment that Ki values should be interpreted as 'indicative' is appropriate for docking-derived values.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "ba937e4c-d3de-490a-ac10-935ae94a586c",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "VOCs mediate plant-plant communication and prime defensive responses in receiving plants, but the receptors by which plants sense VOCs from neighboring plants are largely unknown. Plants likely have odorant-binding proteins (OBPs) similar to animals, and a few OBPs are known to bind stress-induced plant VOCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C11-C16 establish the background and motivation for the study, all supported by appropriate citations to existing literature (Ninkovic et al., 2021; Dicke and Loreto, 2010; Vickers et al., 2009; Baldwin et al., 2002; Erb, 2019; Ninkovic et al., 2019; Zuo et al., 2019; Frank et al., 2021). The characterization of the knowledge gap (C2, C16) appropriately frames the research question. These are accurate representations of the field's state of knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "b337aad5-cdf9-421b-a094-23dd5c1a4ca0",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Three cases of putative plant OBPs have been previously reported: (1) COI1-JAZ receptor for methyl-jasmonate; (2) SABP2 that binds and converts MeSA to SA; (3) TPL that binds \u03b2-caryophyllene. However, these three cases need confirmation, and only \u03b2-caryophyllene binding by TPL has been tested with emitting and receiving plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C29 accurately summarize prior work on plant OBPs with appropriate citations (Sheard et al., 2010; Cheong and Choi, 2003; Park et al., 2007; Nagashima et al., 2019). The critical assessment that these cases 'need confirmation' (C29) is a reasonable scientific position given the limited experimental validation, particularly for TPL (C28). This provides important context for why additional computational screening is warranted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    },
+    {
+      "id": "15e02377-2dca-46fc-99ca-e128f6efb04d",
+      "content_id": "4f8d66bb-d0a8-45a9-8620-e3d144ff6e44",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Plant OBPs may play an important role in allowing plants to eavesdrop on neighboring plants' messages, triggering defensive responses. Retrieval and description of plant OBPs may be an important step to unveil plant-plant communication mechanisms. Future validation could use fluorescent VOCs or mutant/transgenic plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C91 are appropriately speculative statements about potential significance, clearly marked with 'may.' Claims C89-C90 provide reasonable suggestions for experimental validation. These represent appropriate discussion of implications and future directions rather than overstatement of the computational results. The speculative nature is transparent and the suggested validation approaches are scientifically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:24:32.767785Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "03e0a80e-4a8f-47cb-9eef-ba0e7169f4d1",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "128e6a29-6930-41a9-a4e9-15ae653f7a53",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "964252c6-7b5e-435d-b8fb-0ccf58d27a17",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "1f3b94b9-63eb-449b-9920-eb5b1b7c03e7",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "6b49b223-5fc2-42d7-a61a-11a4c3c00a08",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "052c6976-607f-43b6-8c3f-8b9baa7c3543",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "f49e079b-d59d-4f23-8651-7241fbbf6e45",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "434134e4-290c-4668-940c-33c12d37198c",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "2900be47-94b2-4302-aed8-950dacf25063",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "0ca89a67-7f80-4324-8e64-1fde23b7ae6d",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "402e16ca-6419-46fb-859c-6c9c062e4f81",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "adfbc759-7b1a-48cb-8067-455e5c0e246b",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "b755533c-3b49-43b2-975e-4a9eacab19c8",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "4be15c34-f8b1-448d-a1c4-1a308c419692",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "8b2ccbc7-6b58-4709-8bb9-19bd267732c2",
+      "result_id": "1e7422f5-595e-456b-82d3-24d4e3a92680"
+    },
+    {
+      "claim_id": "9c22a444-0b48-442d-a38b-908c87362607",
+      "result_id": "ea2f3cda-2a76-4794-ba0b-81bf439a0556"
+    },
+    {
+      "claim_id": "0c65c5c4-678e-4509-8539-c554727f4f14",
+      "result_id": "ea2f3cda-2a76-4794-ba0b-81bf439a0556"
+    },
+    {
+      "claim_id": "9c22b3c4-ad1d-4311-84f2-943fddbf0153",
+      "result_id": "ea2f3cda-2a76-4794-ba0b-81bf439a0556"
+    },
+    {
+      "claim_id": "f155e0af-851d-4481-b681-cc6fecd9df0d",
+      "result_id": "ea2f3cda-2a76-4794-ba0b-81bf439a0556"
+    },
+    {
+      "claim_id": "81dec4dc-f19a-4509-a7d4-2b0eb4475bca",
+      "result_id": "ea2f3cda-2a76-4794-ba0b-81bf439a0556"
+    },
+    {
+      "claim_id": "831ff917-a244-4bf0-a2b3-79fc769b30ec",
+      "result_id": "ea2f3cda-2a76-4794-ba0b-81bf439a0556"
+    },
+    {
+      "claim_id": "73af4dc0-91f9-4692-a709-39535161de65",
+      "result_id": "ea2f3cda-2a76-4794-ba0b-81bf439a0556"
+    },
+    {
+      "claim_id": "da8c9fd3-72f5-4ae1-ad1d-140fc5c0b64c",
+      "result_id": "ea2f3cda-2a76-4794-ba0b-81bf439a0556"
+    },
+    {
+      "claim_id": "33785200-f981-45e1-87d6-5435b0c79081",
+      "result_id": "557e8a6b-1285-4b7b-8a10-a6e45209d2ba"
+    },
+    {
+      "claim_id": "8338d632-e021-4bd1-acf7-b880f75be9ee",
+      "result_id": "557e8a6b-1285-4b7b-8a10-a6e45209d2ba"
+    },
+    {
+      "claim_id": "cd37a022-d45f-407f-a22d-732829fd89b9",
+      "result_id": "557e8a6b-1285-4b7b-8a10-a6e45209d2ba"
+    },
+    {
+      "claim_id": "769c65c4-5451-4b49-859a-ac971ced2f8e",
+      "result_id": "557e8a6b-1285-4b7b-8a10-a6e45209d2ba"
+    },
+    {
+      "claim_id": "c8588fb4-fb3d-4606-92c1-971a4a71dea7",
+      "result_id": "557e8a6b-1285-4b7b-8a10-a6e45209d2ba"
+    },
+    {
+      "claim_id": "ea1db65e-74bd-4349-b4b5-4d958b30e91d",
+      "result_id": "557e8a6b-1285-4b7b-8a10-a6e45209d2ba"
+    },
+    {
+      "claim_id": "768e6294-258f-4977-a88e-6d3610b92b61",
+      "result_id": "a8e2b8fd-ea51-4a19-94fd-f247acaf743a"
+    },
+    {
+      "claim_id": "47ed6419-142b-45ec-b25f-85148c8adb95",
+      "result_id": "a8e2b8fd-ea51-4a19-94fd-f247acaf743a"
+    },
+    {
+      "claim_id": "6105d75c-727e-4591-97ad-96a53d8a74e5",
+      "result_id": "a8e2b8fd-ea51-4a19-94fd-f247acaf743a"
+    },
+    {
+      "claim_id": "c2f4cb5f-4092-485f-8807-4a2bc46dab35",
+      "result_id": "a8e2b8fd-ea51-4a19-94fd-f247acaf743a"
+    },
+    {
+      "claim_id": "6384c0b9-a89b-4a9e-83b1-760a08423b7e",
+      "result_id": "a8e2b8fd-ea51-4a19-94fd-f247acaf743a"
+    },
+    {
+      "claim_id": "b87d0c6a-bf84-438e-808b-f6f21c7c633a",
+      "result_id": "a8e2b8fd-ea51-4a19-94fd-f247acaf743a"
+    },
+    {
+      "claim_id": "176d506e-dee6-4734-9b3b-f1143997ea36",
+      "result_id": "a8e2b8fd-ea51-4a19-94fd-f247acaf743a"
+    },
+    {
+      "claim_id": "dfb72fe1-597d-4037-b18c-5eff79efbb5b",
+      "result_id": "a8e2b8fd-ea51-4a19-94fd-f247acaf743a"
+    },
+    {
+      "claim_id": "b31fc028-07de-4d5a-864b-8e52d6970cdb",
+      "result_id": "f2cc7efc-f5af-4975-90d0-7c8d9d788860"
+    },
+    {
+      "claim_id": "ad0966f4-9bf8-4331-8d41-7d79907e1610",
+      "result_id": "f2cc7efc-f5af-4975-90d0-7c8d9d788860"
+    },
+    {
+      "claim_id": "bd3c5d8d-bbd2-4129-948d-4a00be43d727",
+      "result_id": "f2cc7efc-f5af-4975-90d0-7c8d9d788860"
+    },
+    {
+      "claim_id": "2371629c-d176-4516-afed-92f873d72475",
+      "result_id": "f2cc7efc-f5af-4975-90d0-7c8d9d788860"
+    },
+    {
+      "claim_id": "dd133b51-d271-4074-a85f-3c50f89e82c5",
+      "result_id": "f2cc7efc-f5af-4975-90d0-7c8d9d788860"
+    },
+    {
+      "claim_id": "4fe56786-6c72-4033-99de-a580988adb2e",
+      "result_id": "f2cc7efc-f5af-4975-90d0-7c8d9d788860"
+    },
+    {
+      "claim_id": "594e2a0b-a2a5-4e87-a0d5-57275d711b05",
+      "result_id": "b3cc2d59-460a-447c-b978-72891b6b7aa4"
+    },
+    {
+      "claim_id": "a4c000b3-9c88-4fd7-9942-4913099540e9",
+      "result_id": "b3cc2d59-460a-447c-b978-72891b6b7aa4"
+    },
+    {
+      "claim_id": "bbd0de39-b2a8-4ebc-98f0-c8fc61d1e501",
+      "result_id": "b3cc2d59-460a-447c-b978-72891b6b7aa4"
+    },
+    {
+      "claim_id": "72ec26c2-5c13-41ae-8f7e-cca147b875a7",
+      "result_id": "b3cc2d59-460a-447c-b978-72891b6b7aa4"
+    },
+    {
+      "claim_id": "98092ef9-3923-4ad6-b8b5-759d761fce21",
+      "result_id": "b3cc2d59-460a-447c-b978-72891b6b7aa4"
+    },
+    {
+      "claim_id": "d6c7c55b-bc4b-4d7c-8996-db3b9ec35a93",
+      "result_id": "b3cc2d59-460a-447c-b978-72891b6b7aa4"
+    },
+    {
+      "claim_id": "f7c5716f-c332-479d-a55f-135338b4b2b6",
+      "result_id": "b3cc2d59-460a-447c-b978-72891b6b7aa4"
+    },
+    {
+      "claim_id": "8ab046c0-64e8-4baf-b67b-10311012207c",
+      "result_id": "b3cc2d59-460a-447c-b978-72891b6b7aa4"
+    },
+    {
+      "claim_id": "d5a993e6-ff14-4999-9532-feb53850d9b1",
+      "result_id": "b3cc2d59-460a-447c-b978-72891b6b7aa4"
+    },
+    {
+      "claim_id": "1c7e0e50-5b80-41ca-8038-9a2113e29383",
+      "result_id": "b3cc2d59-460a-447c-b978-72891b6b7aa4"
+    },
+    {
+      "claim_id": "8849f4b3-c59f-41e5-a0e4-2c265ab1601c",
+      "result_id": "90f0078f-2619-4310-a59b-a1f079b129ab"
+    },
+    {
+      "claim_id": "98180b17-d704-4b9d-9582-a916db6b8896",
+      "result_id": "90f0078f-2619-4310-a59b-a1f079b129ab"
+    },
+    {
+      "claim_id": "69f35ecb-0f65-4ef4-b44b-fd01efe390f4",
+      "result_id": "90f0078f-2619-4310-a59b-a1f079b129ab"
+    },
+    {
+      "claim_id": "0cd0978d-5760-4257-9d9a-43e84a769cbc",
+      "result_id": "90f0078f-2619-4310-a59b-a1f079b129ab"
+    },
+    {
+      "claim_id": "e7149561-cb32-4106-afe6-55477d49041d",
+      "result_id": "90f0078f-2619-4310-a59b-a1f079b129ab"
+    },
+    {
+      "claim_id": "6034a549-a060-48e7-b547-489c04a86eb2",
+      "result_id": "90f0078f-2619-4310-a59b-a1f079b129ab"
+    },
+    {
+      "claim_id": "98dcc2a3-17ac-497e-85d6-7b939350dc7a",
+      "result_id": "1b0c7ec1-e2fe-443c-9c70-810be2e2145b"
+    },
+    {
+      "claim_id": "a5a2a880-7532-42aa-9b4a-e763c0ca77b8",
+      "result_id": "1b0c7ec1-e2fe-443c-9c70-810be2e2145b"
+    },
+    {
+      "claim_id": "86e7ccb6-7075-4ae5-8c5f-9850074a52b9",
+      "result_id": "1b0c7ec1-e2fe-443c-9c70-810be2e2145b"
+    },
+    {
+      "claim_id": "dae70245-bc49-4530-a1f1-3ddf7f5d9967",
+      "result_id": "1b0c7ec1-e2fe-443c-9c70-810be2e2145b"
+    },
+    {
+      "claim_id": "9c97b769-c963-47a2-a09c-4ad4eb201fca",
+      "result_id": "1b0c7ec1-e2fe-443c-9c70-810be2e2145b"
+    },
+    {
+      "claim_id": "36e91167-9504-4252-97ec-4e368185a576",
+      "result_id": "80c96501-c5b0-4109-9394-9e67c10153b2"
+    },
+    {
+      "claim_id": "42d60a2e-c82f-4257-a24e-6c1e674a978a",
+      "result_id": "80c96501-c5b0-4109-9394-9e67c10153b2"
+    },
+    {
+      "claim_id": "943c0cc5-6a8e-4c24-b353-426435510197",
+      "result_id": "80c96501-c5b0-4109-9394-9e67c10153b2"
+    },
+    {
+      "claim_id": "8746b7a4-9931-42ee-ac68-a4e44200c101",
+      "result_id": "ba937e4c-d3de-490a-ac10-935ae94a586c"
+    },
+    {
+      "claim_id": "bf1adbf8-25ef-4ace-a4be-3edd9fae1ec6",
+      "result_id": "ba937e4c-d3de-490a-ac10-935ae94a586c"
+    },
+    {
+      "claim_id": "aadd7a3f-a6d3-48ce-bff6-d5db91525774",
+      "result_id": "ba937e4c-d3de-490a-ac10-935ae94a586c"
+    },
+    {
+      "claim_id": "f75e7285-040a-441f-919b-7bcf0016e9a7",
+      "result_id": "ba937e4c-d3de-490a-ac10-935ae94a586c"
+    },
+    {
+      "claim_id": "c1926c89-5bb0-4167-8887-75ef1abbc200",
+      "result_id": "ba937e4c-d3de-490a-ac10-935ae94a586c"
+    },
+    {
+      "claim_id": "d0eb119e-f0d5-4db6-9a87-378b9ae0e028",
+      "result_id": "ba937e4c-d3de-490a-ac10-935ae94a586c"
+    },
+    {
+      "claim_id": "139b45ea-fd06-4b59-94fd-6e47bb2c4143",
+      "result_id": "ba937e4c-d3de-490a-ac10-935ae94a586c"
+    },
+    {
+      "claim_id": "48db29e4-e929-4737-8b84-c29496e8a5e2",
+      "result_id": "ba937e4c-d3de-490a-ac10-935ae94a586c"
+    },
+    {
+      "claim_id": "cb5e7c46-2c3a-442d-8d78-223aec625922",
+      "result_id": "ba937e4c-d3de-490a-ac10-935ae94a586c"
+    },
+    {
+      "claim_id": "5f7905f0-8600-45bd-b9dc-0c28abdfbbd3",
+      "result_id": "ba937e4c-d3de-490a-ac10-935ae94a586c"
+    },
+    {
+      "claim_id": "e258b682-c4c6-4a80-bd58-2329863290d9",
+      "result_id": "b337aad5-cdf9-421b-a094-23dd5c1a4ca0"
+    },
+    {
+      "claim_id": "525a8072-63bc-4d38-8bd2-3cfb91cd6a97",
+      "result_id": "b337aad5-cdf9-421b-a094-23dd5c1a4ca0"
+    },
+    {
+      "claim_id": "8f9e9001-43ad-4818-86a8-cd551960b6bb",
+      "result_id": "b337aad5-cdf9-421b-a094-23dd5c1a4ca0"
+    },
+    {
+      "claim_id": "c937d2f8-0189-4f96-9a05-312f3c0a6e04",
+      "result_id": "b337aad5-cdf9-421b-a094-23dd5c1a4ca0"
+    },
+    {
+      "claim_id": "287f7de3-1c35-4a7f-ba48-dd5bcb1a02aa",
+      "result_id": "b337aad5-cdf9-421b-a094-23dd5c1a4ca0"
+    },
+    {
+      "claim_id": "77944156-f9ef-4261-86f2-10f521fb1e34",
+      "result_id": "b337aad5-cdf9-421b-a094-23dd5c1a4ca0"
+    },
+    {
+      "claim_id": "863b7072-9a5e-44d1-8b9f-2b2a396f1132",
+      "result_id": "b337aad5-cdf9-421b-a094-23dd5c1a4ca0"
+    },
+    {
+      "claim_id": "8e1bcc3c-0e70-4600-8af7-0bafc23d0306",
+      "result_id": "b337aad5-cdf9-421b-a094-23dd5c1a4ca0"
+    },
+    {
+      "claim_id": "7d1fecb3-e209-4389-b18c-bb3ec89ca1a7",
+      "result_id": "b337aad5-cdf9-421b-a094-23dd5c1a4ca0"
+    },
+    {
+      "claim_id": "91cd48b2-3ef3-40cc-bf8e-c9a5e0bfb741",
+      "result_id": "15e02377-2dca-46fc-99ca-e128f6efb04d"
+    },
+    {
+      "claim_id": "92d96b78-f4f0-49ef-95c2-1905c99850d4",
+      "result_id": "15e02377-2dca-46fc-99ca-e128f6efb04d"
+    },
+    {
+      "claim_id": "c714b4c5-d873-4865-b3f0-e808446895ec",
+      "result_id": "15e02377-2dca-46fc-99ca-e128f6efb04d"
+    },
+    {
+      "claim_id": "f90fe377-d8e2-4253-bda9-fb47c95ea949",
+      "result_id": "15e02377-2dca-46fc-99ca-e128f6efb04d"
+    }
+  ],
+  "comparisons": []
+}

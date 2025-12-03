@@ -1,0 +1,398 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Mice achieved high performance in a two-alternative unforced choice visual discrimination task, with 86\u00b19% correct choices on high-contrast trials and 54\u00b116% correct NoGo responses. Error rates increased with decreasing stimulus contrast, with two types of errors: Miss trials (16\u00b113%) and Incorrect choices (7\u00b14%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide consistent behavioral performance metrics from the task. The data show clear contrast-dependent performance with specific error types quantified. Sample sizes (34 sessions, 6 mice) and statistical measures (mean\u00b1sd) are reported, supporting the behavioral characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C11"
+    ],
+    "result": "Widefield calcium imaging revealed a temporal sequence of cortical activation following visual stimuli: VISp at 47\u00b14 ms, secondary visual areas at 55\u00b18 ms, and frontal cortex (MOs) at 98\u00b15 ms. Later activity (150-200 ms) depended on whether movement occurred, with widespread bilateral activity on Go trials but not NoGo trials, preceding movement onset at 229\u00b128 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C10-C11 describe the spatiotemporal dynamics of cortical activity measured by widefield imaging. The timing measurements are specific and consistent with the experimental design. The distinction between early sensory-driven and later movement-related activity is well-documented with multiple figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C17"
+    ],
+    "result": "Cortical activity strongly differentiated between Go and NoGo trials but not between Left and Right choices to the same stimulus. Widefield imaging revealed no regions that could predict upcoming Left vs. Right action selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C17 consistently show that action execution (Go/NoGo) but not action selection (Left/Right) is encoded in widefield signals. This is a key finding supported by multiple analyses and figures (2d, 2e, 2h), though the spatial resolution of widefield imaging may limit detection of sparse action selection signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Decoding analysis of widefield imaging revealed that Vision signals appeared in contralateral visual and frontal cortices starting at 50 ms (VISp) and 100 ms (MOs), while Action Execution (Go vs. NoGo) could be decoded from 100 ms before movement onset, expanding to most regions by 25 ms before movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 describe systematic decoding results with specific timing and spatial patterns. The nested ANOVA statistical approach (p<0.01) provides appropriate testing across sessions. The temporal progression from sensory to motor signals is consistent with the task structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C28"
+    ],
+    "result": "Neuropixels recordings showed that neurons with significant stimulus encoding were localized to contralateral VISp (25.2%, 255/1010 neurons), contralateral MOs (5.6%, 59/1062), and rarely in ipsilateral MOs (1.4%, 15/1062). Stimulus-encoding neurons showed strong contralateral bias: 100% in VISp and 80% in MOs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C28 provide consistent single-neuron data confirming the widefield imaging results. The percentages and neuron counts are specific, and the contralateral bias is quantified. The data come from a substantial dataset (39 sessions, 10 mice, 5898 cortical neurons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Neurons significantly predicting action execution were observed broadly across cortex: VISp (2.8%), MOs (12.0%), MOp (15.3%), and SSp (20.1%), with strongest representation in primary motor and somatosensory areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 show widespread action execution correlates in electrophysiology, consistent with widefield imaging. The percentages are specific and show a gradient with strongest signals in motor/somatosensory cortex. This contrasts with the more localized sensory signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C31"
+    ],
+    "result": "Neurons predicting action selection (Left vs. Right) were rare prior to movement onset in all recorded regions (MOs: 2.3%, MOp: 1.8%, SSp: 3.0%), but increased substantially after movement, reaching a peak 200-300 ms after movement onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C31 consistently show sparse pre-movement action selection signals that increase post-movement. This is a key finding distinguishing action execution from action selection. The temporal dynamics (Figures 2o, 2p) support the interpretation that action selection signals emerge after movement initiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Stimulus decoding from Neuropixels data began at ~60 ms in contralateral VISp, ~110 ms in contralateral MOs, and ~180 ms in ipsilateral MOs. Action execution decoding was first observed 50-125 ms prior to movement onset across regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 provide timing measurements from single-neuron decoding that are consistent with widefield imaging results. The progression of stimulus signals and pre-movement action execution signals is well-documented with appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C58"
+    ],
+    "result": "Optogenetic inactivation of VIS and MOs biased choices away from contralateral stimuli (VIS: -35%, p<0.0002; MOs: -22%, p<0.0002). The strength of behavioral bias from inactivation scaled linearly with the region's encoding of sensory stimuli across cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C58 show consistent causal effects of inactivation that match neural encoding patterns. The correlation between inactivation effects and stimulus decoding (Figure 3b, c) provides strong evidence for a causal role of sensory signals. Statistical testing with permutation tests is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Inactivation of MOp and SSp, despite strong action execution correlates, had no effect on Go vs. NoGo choice proportions at any laser power tested (1.5, 2.9, 4.25 mW). There was no relationship between a region's action execution encoding and the effect of inactivation on Go/NoGo behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 demonstrate a critical dissociation between neural correlates and causal necessity. The lack of effect is tested at multiple laser powers, addressing potential concerns about insufficient inactivation. This is a key negative result that challenges the interpretation of widespread action execution signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "MOp inactivation reduced wheel peak velocity by 21.2% (p<0.01) for both Left and Right choices non-specifically, but did not affect choice proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 shows a subtle motor effect of MOp inactivation that is statistically significant but does not affect choice. This supports the interpretation that MOp contributes to movement execution details but not action selection or initiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Pulsed optogenetic inactivation revealed critical time windows: VIS impaired performance from -110 to +130 ms relative to stimulus onset, MOs from +52 to +174 ms, preceding choice at 273\u00b121 ms. MOp inactivation produced no significant impairment at any time. The critical times for VIS and MOs matched their peak stimulus decoding times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide temporal specificity for causal contributions. The correspondence between inactivation timing and decoding timing (Figure 3i) strengthens the interpretation. The lack of MOp effect is consistent across multiple analyses. The 25 ms pulse duration and suppression lasting >100 ms are documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A neurometric model with subtractive VISp weights and additive MOs weights captured mouse behavior and predicted inactivation effects without using inactivation data for fitting. The model predicted that VISp inactivation should increase Incorrect choices while MOs inactivation should not, which matched empirical observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C49-C52 describe a successful computational model that provides parameter-free predictions of inactivation effects. The model structure (subtractive vs. additive weights) is justified by the contralateral bias differences between VISp and MOs. The match between predictions and data (Figure 4d) supports the model's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61"
+    ],
+    "result": "Visual stimuli elicited localized activity in VIS and MOs, while activity across dorsal cortex predicted action execution. However, only a few neurons showed action selection correlates. Inactivation of VIS and MOs biased choices, while MOp inactivation had minimal effect. The main contribution of dorsal cortex is that VIS and MOs transfer sensory information to downstream circuits for action selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57, C60-C61 synthesize the main findings into a coherent interpretation. The dissociation between neural correlates and causal necessity is well-supported by converging evidence from imaging, electrophysiology, and inactivation. The conclusion about sensory relay function is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study demonstrates that neural correlates of sensory stimuli and motor actions do not necessarily indicate causal relevance. Sensory signals in visual and frontal cortex play a causal role, while widespread movement-related signals reflect processes without local causal contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 state the central conceptual conclusion of the paper. This is well-supported by the systematic comparison of neural correlates (imaging/electrophysiology) with causal manipulations (optogenetics). The conclusion is appropriately cautious about alternative interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Widefield imaging revealed no difference in MOs activity between Left and Right choices to identical stimuli. Electrophysiology showed that neurons predicting Left vs. Right choices before movement were much rarer than sensory neurons, though action selection could be decoded from more neurons after movement started. MOs inactivation maximally impaired behavior ~50 ms after VISp inactivation ceased to have effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide converging evidence about MOs function from multiple methods. The temporal offset between VISp and MOs inactivation effects (C80) argues against off-target effects. The rarity of pre-movement action selection signals is consistent across widefield and single-neuron data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The rarity of pre-movement coding for wheel turn direction in dorsal cortex suggests actions are selected by subcortical circuits. Previous recordings identified strong action selection correlates in basal ganglia, superior colliculus, and zona incerta. Even in MOs, action selection neurons were sparse before movement and only became widespread after movement started.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 provide a reasonable interpretation based on the current data and previous literature (Steinmetz et al., 2019). The inference about subcortical action selection is supported by the absence of strong cortical signals and presence of subcortical signals. Claim C83 is appropriately speculative about recurrent circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The strongest cortical correlate was with action execution (Go vs. NoGo), which may reflect corollary discharge or task-irrelevant movements. MOp activity strongly differentiated Go and NoGo trials, but inactivation had no effect on Go choice fraction, only slightly reducing wheel velocity. These action correlates are dispensable for the Go/NoGo decision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 present a key finding about the dissociation between strong neural correlates and causal necessity. The interpretation (C88) is appropriately speculative. The data from imaging and inactivation consistently support the conclusion that action execution correlates are not locally causal for the decision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The results cannot rule out that unilateral MOp/SSp inactivation engages compensatory mechanisms or that a distributed cortical representation of action exists that was not sufficiently disrupted by localized inactivations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 appropriately acknowledge limitations of the study. These are valid alternative interpretations that cannot be excluded by the current data. The authors correctly note that multi-region simultaneous inactivation would be needed to test these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The limited action selection correlates observed contrast with previous studies showing widespread choice coding. However, many previous studies used Go/NoGo tasks, and the current data are consistent with Go/NoGo correlates being widespread. Even outside task contexts, motion correlates are found throughout the brain, but blocking activity in regions without sensory encoding had minimal effect on action execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C105-C110 provide appropriate contextualization with previous literature. The distinction between Go/NoGo and two-alternative choice tasks is important for interpreting differences. The citations support the comparisons made.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Other studies using two-alternative choice tasks showed more action selection correlates, but these tasks used evidence integration or delay periods. In the current task, left/right selectivity grows for hundreds of ms after stimulus onset, but mice are already executing their action by this time. MOs may have different functions in different tasks: sensory relay in the current task versus short-term memory maintenance in delay tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 provide a thoughtful comparison with previous literature and propose a task-dependent interpretation of MOs function. The temporal dynamics argument (C113-C114) is well-reasoned. The speculation about different functions (C117) is appropriately cautious and supported by citations (C118).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The small number of MOs neurons with action selection correlates might belong to specific cellular subclasses. Layer 5 pyramidal neurons include IT neurons (projecting bilaterally) and PT neurons (projecting unilaterally). PT neurons have distinct behavioral correlates in multiple tasks. The rare action selection neurons in MOs might be PT cells, or might be found in both IT and PT cells but with lateral bias only in PT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C125 present interesting speculation about cellular mechanisms, but this is not tested in the current study. The discussion of IT vs. PT neurons is well-grounded in literature (C120-C123), but the application to the current data (C124-C125) is purely speculative. Cell-type-specific recordings would be needed to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The dorsal cortex's role is to relay sensory evidence to downstream circuits that determine behavior. Activity throughout cortex reflects impending action but is not locally causal. Causal necessity depends on sensory stimulus encoding. Modeling suggests a stochastic downstream circuit could linearly weight VIS and MOs activity to produce choices. The downstream circuit location is unconstrained but may include subcortical structures and rare frontal cortex neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 synthesize the main conclusions. The sensory relay interpretation (C126, C128) is well-supported by the data. The neurometric model (C129) successfully predicts inactivation effects. The speculation about downstream circuits (C130) is appropriately cautious, and the need for future experiments (C131) is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "When VIS or MOs were inactivated, contralateral choices were replaced primarily by ipsilateral choices for bilateral stimuli and by NoGos for unilateral contralateral stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 describes the pattern of behavioral changes following inactivation, showing that animals responded as if the contralateral stimulus was absent. This is consistent with a sensory deficit interpretation and is supported by Figure 3\u2014figure supplement 1e, f.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The data do not constrain whether sensory information flows directly from VIS to subcortical targets or indirectly via MOs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 appropriately acknowledges a limitation of the study. The current experiments cannot distinguish between direct and indirect pathways. Circuit tracing or pathway-specific manipulations would be needed to address this question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Several possible functions of MOp/SSp activity are proposed: contributing to fine motor details not detected by current methods (supported by velocity effects), contributing to task-irrelevant movements, or reflecting corollary discharge. The function of corollary discharge is unclear, but it might improve neural coding capacity during actions by boosting spike counts and lowering time constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C100 present multiple speculative interpretations of MOp/SSp function. While these are reasonable hypotheses, they are not directly tested. The velocity effect (C96) provides some support for the fine motor control hypothesis (C95), but the other possibilities (C97-C100) remain speculative. More detailed behavioral measurements or different tasks would be needed to distinguish these alternatives.",
+    "result_type": "MINOR"
+  }
+]

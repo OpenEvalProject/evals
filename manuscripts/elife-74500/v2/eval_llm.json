@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study used two male rhesus monkeys trained through three stages over hundreds of sessions to play an adapted Pac-Man game with specific reward structures and game mechanics. The dataset comprises 3,217 games, 15,772 rounds, and 899,381 joystick movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C38-C46, and C65-C70 provide comprehensive methodological details about subjects, training procedures, task parameters, and dataset size. These are straightforward descriptive claims that are well-documented and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Monkeys demonstrated basic understanding of game elements: they preferentially chose directions with larger local rewards, avoided normal ghosts while chasing scared ghosts, and showed differential responses to ghost personalities (Blinky vs. Clyde).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C15 describe basic behavioral patterns supported by quantitative data and figures. The monkeys' ability to distinguish between ghost types and modes demonstrates task comprehension. Statistical measures (means \u00b1 SE) and visual evidence support these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C62",
+      "C91"
+    ],
+    "result": "A dynamic compositional strategy model consisting of six basis strategies (local, global, energizer, evade Blinky, evade Clyde, approach) explains monkey behavior with >90% accuracy (0.907\u00b10.008 for Monkey O, 0.900\u00b10.009 for Monkey P), significantly outperforming a static strategy model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20, C62, and C91 present the core model performance with precise accuracy metrics and statistical comparisons. The model's superiority over static alternatives is quantitatively demonstrated. However, the basis strategies are hand-crafted (C101), which introduces potential bias in model design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Strategy usage varied systematically with game context: local strategy dominated early game (>90% pellets remaining), both local and global strategies were prominent in late game (<10% pellets), and approach strategy activated when scared ghosts were within 10 tiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe context-dependent strategy dynamics supported by model fitting results. The patterns are logical given game structure and are consistent with figures showing strategy weights across game phases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C106"
+    ],
+    "result": "Monkeys adopted a take-the-best (TTB) heuristic where a single strategy dominated decision-making at any given time, with the primary strategy weight (0.907\u00b10.117) significantly exceeding secondary (0.273\u00b10.233) and tertiary (0.087\u00b10.137) strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C106 present quantitative evidence for single-strategy dominance. The weight distributions strongly support TTB heuristic interpretation. However, the claim that this represents TTB specifically (rather than just strategy dominance) involves interpretive inference beyond the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C93",
+      "C102",
+      "C103"
+    ],
+    "result": "Eye tracking data validated model-derived strategies: monkeys' fixation patterns reflected features relevant to their current strategy, with significantly more ghost fixations under energizer strategy than local strategy (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C93, C102-C103 provide independent behavioral validation of model predictions through eye tracking. The correlation between model-inferred strategies and attention patterns strengthens model validity. Statistical significance is properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C72",
+      "C73",
+      "C94",
+      "C95",
+      "C105"
+    ],
+    "result": "Pupil diameter exhibited significant transient increases around strategy transitions (p<0.01) but not during vague periods, consistent with increased cognitive processing during strategy switching at the middle hierarchical level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C72-C73, C94-C95, and C105 link pupil dilation to strategy transitions with statistical support. The interpretation relies on prior literature (C72) about pupil dilation reflecting cognitive load. The absence of dilation during vague periods strengthens the specificity of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "During global strategy adoption, monkeys demonstrated goal-directed path planning by choosing shortest paths and making fewest turns to reach distant pellet patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by trajectory analysis showing near-optimal path selection. The confusion matrices in figures demonstrate high percentages along diagonals, indicating actual behavior matched optimal behavior for both path length and turns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Monkeys formed compound 'planned attack' strategies by combining energizer/local with approach strategies when Pac-Man, ghosts, and energizers were proximate, evidenced by distinct strategy weight dynamics, closer spatial arrangements (p<0.001), increased fixations (p<0.001), and smaller pupil sizes (p<0.01) compared to accidental consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C74-C80 demonstrate compound strategy formation through multiple converging lines of evidence: model weights, spatial analysis, eye tracking, and pupil dilation. Statistical significance is properly reported. The interpretation that this reflects advanced planning (C74, C79) is reasonable but involves inference beyond direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Monkeys strategically committed 'suicide' by approaching normal ghosts when local pellets were scarce and distant pellets were far away, as evidenced by greater Pac-Man-ghost distances (p<0.001), more fixations on ghosts and pellets (p<0.001), smaller pupil sizes (p<0.01), and significant reduction in distance to closest pellets after reset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C81-C85 provide multiple lines of evidence for intentional suicide behavior. The spatial analysis, eye movements, and pupil data converge to support proactive decision-making. However, the interpretation that this represents strategic planning (C84) involves inference, and alternative explanations (e.g., giving up) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C64",
+      "C90",
+      "C100"
+    ],
+    "result": "The study demonstrates that animals are capable of managing compositional strategies and employing hierarchical decision-making to solve complex tasks, addressing a gap in quantitative studies of strategy-like behaviors in animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C56 and C64, C90, C100 present the main conclusion. While the behavioral and modeling evidence is strong, claim C53 that this ability 'has not been demonstrated in animals' is contradicted by C54 citing prior work showing 'complex strategy-like behaviors.' The novelty claim requires more careful qualification about what specifically is novel (quantitative modeling vs. strategy use per se).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C71",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The Pac-Man task is essentially a foraging task with computationally difficult optimal solutions but achievable through intuitive strategies. Hierarchical models are more efficient than flat models, especially with limited working memory, as demonstrated by superior performance compared to LARL and perceptron models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 and C71, C96-C99 provide theoretical justification for the hierarchical approach with supporting citations. The comparison with flat models (LARL, perceptron) empirically demonstrates hierarchical model advantages. However, the specific flat models tested may not represent the strongest possible alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C101",
+      "C102",
+      "C107",
+      "C119"
+    ],
+    "result": "The compositional strategy model provides insights into monkey gameplay by revealing how monkeys actively change game states into desirable configurations solvable with planned strategies, consistent with theories that strategy use simplifies decision-making by ignoring irrelevant aspects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88, C101-C102, C107, and C119 synthesize the model's contributions. The acknowledgment that basis strategies are hand-crafted (C101) is important for transparency. The interpretation aligns with cited theoretical frameworks (C107), though the causal claim that monkeys 'learned to actively change' game states (C87) involves inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C104",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The Pac-Man paradigm differs from previous animal studies by defining strategies as heuristics that reduce complex computations rather than simple mutually exclusive rules, allowing study of more natural cognitive abilities in an extensive state space without explicit cues for strategy selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C104, C108-C118 distinguish this work from prior studies through conceptual and methodological contrasts. The characterization of previous work (C108-C110) is supported by citations. The advantages claimed for the Pac-Man paradigm (C114-C118) are logical but somewhat subjective assessments of 'naturalness' and complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C92",
+      "C120"
+    ],
+    "result": "The study establishes a foundation for future investigation of neural mechanisms underlying sophisticated cognitive behavior by demonstrating that complex animal behavior can be quantified and modeled with hierarchical compositional strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C92, and C120 discuss broader implications and future directions. The argument for sophisticated paradigms (C89) is conceptually sound. The validation approach (C92) is demonstrated. However, C120's claim about 'paving the way' for future neural studies is speculative about impact rather than a current result.",
+    "result_type": "MINOR"
+  }
+]

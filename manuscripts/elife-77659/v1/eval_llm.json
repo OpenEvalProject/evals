@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Forager movement in the nest is characterized by a crop-dependent biased random walk with a threshold at crop load 0.45, where foragers step inward when above the threshold and outward when below it. This movement is Markovian, with probabilities independent of previous step direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 describe experimental methods and findings from trajectory analysis. The data shows clear crop-dependent movement biases (Figure 2A), independence from previous steps (Figure 2B), and appropriate statistical analysis with reported sample sizes. The Markovian inference (C36) follows logically from the independence observation (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "As colonies satiate, forager unloading rates decrease, leading to longer and deeper cyclic paths in the nest with more trophallactic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 connect unloading dynamics to path characteristics. C37 is supported by prior work (Greenwald et al., 2018), C38 is a logical inference from C37, and C39-C40 are supported by empirical observations in Figure 2C showing path differences at different colony states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A 2D agent-based model implementing crop-dependent movement, trophallaxis rules, and nest-ant sampling reproduces the empirical linear relationship between foraging frequency and colony hunger observed in experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 describe the 2D model and its results. The model parameters are clearly specified (C41-C42), 200 simulation runs were performed (C43), and the model qualitatively reproduces both trajectory dynamics (Figure 3) and linear foraging frequency regulation (Figure 4A-B). The authors appropriately note quantitative differences are expected due to model simplifications (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "A simplified 1D agent-based model also reproduces the linear scaling between foraging frequency and colony hunger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe the 1D model and its validation. The model structure is clearly defined (C50) and Figure 4C demonstrates that it reproduces the linear relationship observed empirically, providing convergent evidence with the 2D model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C4"
+    ],
+    "result": "A cross-scale negative feedback emerges between colony food storage and foraging frequency, requiring foragers to sense only their current crop load while the colony shapes trajectories through unloading rate control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, and C4 describe the emergent feedback mechanism. The negative feedback (C48) is a logical consequence of the coupled movement-unloading dynamics demonstrated in the models. The key insight that foragers need only sense current crop load (C49, C4) is supported by the model results showing linear regulation emerges without additional cognitive requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Both models and experiments show that foragers' recipients represent colony-average states, unloading rates are proportional to colony hunger, paths deepen with satiation, and exit crop loads are highly variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 compare model predictions to empirical observations across multiple metrics (Figure 5). The models capture empirical trends for recipient states (C53), unloading rates (C54), path depths (C55), and exit crop load variability (C56). The authors appropriately acknowledge that exact quantitative matches are not expected (C57) due to model simplifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C65"
+    ],
+    "result": "The new model reduces cognitive demands compared to the previous model by eliminating the need to track unloading rate, while explaining both linear foraging frequency and path deepening with greater explanatory power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C59, and C65 compare the current model to prior work (Greenwald et al., 2018). The argument that sensing unloading rate requires memory of past crop loads is sound (C58), and the model demonstrably explains multiple phenomena (linear frequency and deepening paths) from the same rules (C59), supporting the claim of greater explanatory power (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The model predicts that linear foraging frequency regulation is robust to threshold variations but requires representative sampling of colony state by foragers, which may be affected by nest architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 present analytical insights and predictions. C61 is supported by the mathematical analysis showing linearity depends on threshold existence, not specific values. C62 follows from the trophallaxis rule sensitivity to recipient states. C63 is a logical prediction about non-representative sampling, and C64 is a reasonable speculation supported by citations to relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The mechanism represents a simple form of stigmergy where forager position in physical space stores cumulative information about past crop loads, reducing cognitive burden without requiring internal computation or memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 interpret the mechanism as stigmergy. The classification is well-justified: movement alters the physical environment (C67), spatial position integrates past steps (C68), this information is externally stored (C69), and cognitive burden is reduced (C70). The interpretation is supported by appropriate citations and logical reasoning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C6"
+    ],
+    "result": "Exit decisions emerge from the collective system (forager, colony, environment) rather than individual forager cognition, with spatial position storing historical information externally, demonstrating how physical embedding reduces cognitive demands without compromising computational contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 and C6 present the main conceptual conclusion. The shift from internal to external decision-making (C74) follows from the model results. The claims about reduced cognitive requirements (C75), external information storage (C76), and maintained computational role (C77, C6) are well-supported by the modeling and analysis demonstrating emergent regulation with minimal individual cognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior work established that foraging frequency declines linearly with colony satiation, forager unloading rates are proportional to colony hunger, and this matching implies cross-scale feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15, C16, C21-C23 summarize findings from Greenwald et al., 2018. These are appropriately cited prior results that provide the empirical foundation for the current study. The claims accurately represent the cited work and establish the phenomenon requiring mechanistic explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C27"
+    ],
+    "result": "Previous analysis suggested forager exit decisions depend on both current crop load and unloading rate, with foragers exiting at variable crop loads rather than after complete unloading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24, C25, and C27 describe prior findings from Greenwald et al., 2018. These accurately represent the previous model's assumptions and observations, including the contradiction of earlier assumptions (C24) and the identification of dual factors affecting exit probability (C27).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C3"
+    ],
+    "result": "New analysis reveals foragers exhibit a clear transition between movement modes based on crop load threshold, tending toward nest depth when full and toward exit when empty, rather than making explicit exit decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C3 present the key new empirical finding. The transition between movement modes is supported by the trajectory analysis (Figure 2A) and represents a reinterpretation of the data that differs from the previous model's assumptions. This is the central observation motivating the new model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Brain tissue is energetically expensive, creating advantages for communication systems that reduce cognitive burden through stigmergy and spatial properties of the environment, as demonstrated in nest construction, trail formation, and quorum sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 establish theoretical context through appropriate citations. The energetic cost of brain tissue (C7-C8), stigmergy concept (C9-C10), and spatial computation offloading (C11-C12) are well-established principles in the literature, properly cited, and provide relevant background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Foraging in ant colonies is performed by specialized workers who collect food, return to distribute it via trophallaxis (mouth-to-mouth feeding), and repeat this cycle, with food circulating through complex trophallactic networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C14, C17-C20 provide background on ant foraging biology. These are well-established facts about ant behavior, appropriately cited to classic and recent literature, and accurately describe the biological system under study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Local social triggers for forager exits have been identified in several ant species, though most studies focus on foraging initiation rather than activity decay during colony satiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 summarizes relevant literature on foraging triggers. The claim is supported by multiple citations and accurately characterizes the gap in previous research that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Deepening of forager visits with colony satiation has also been observed in honeybees, suggesting this may be a widespread phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 notes a parallel observation in honeybees, appropriately cited to Seeley, 1989. This comparative observation suggests the mechanism may have broader applicability across social insects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Similar mechanisms where spatial position reduces cognitive demands have been proposed or demonstrated in ant quorum sensing, cockroach and fish shelter selection, and ant collective decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 place the findings in broader context by citing parallel examples from other systems. The citations are appropriate and the comparisons are relevant, showing that spatial offloading of computation is a recurring principle in collective behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Agent-based modeling and mathematical analysis demonstrate that crop-dependent movement robustly yields emergent regulation of foraging frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 summarizes the main methodological approach and finding. This is well-supported by the 2D model (C41-C47), 1D model (C50-C51), and mathematical analysis presented in the manuscript, all showing convergent evidence for emergent regulation.",
+    "result_type": "MAJOR"
+  }
+]

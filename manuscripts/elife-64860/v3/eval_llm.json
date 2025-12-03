@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The study analyzed 76 ecologically diverse wild yeast isolates (40 S. cerevisiae and 36 S. paradoxus) and discovered wide diversity in replicative lifespan (RLS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide explicit documentation of the study design and sample composition. The manuscript clearly states the number and species composition of isolates analyzed, with appropriate citations to prior work establishing these strain collections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Most wild isolates grew faster than the laboratory wild-type BY4743 strain under both YPD and YPG conditions, with average doubling times of 65 min in YPD and 125 min in YPG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 report measured growth characteristics with specific quantitative values and reference to Figure 1A. The data demonstrate that laboratory-optimized culture conditions are suitable for these wild isolates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "A ~10-fold variation in median and maximum RLS was observed across isolates under YPD conditions, with S. paradoxus strains showing significantly higher average median RLS (29.7) than S. cerevisiae strains (22.7, p = 2.7 \u00d7 10\u207b\u2079).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 report the primary lifespan measurements with appropriate statistical analysis (Pearson correlation, p-values) and identify the extreme phenotypes. The ~10-fold variation and species differences are well-documented with statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Carbon source (glycerol vs. glucose) differentially affected RLS across strains, with short-lived strains on YPD tending to achieve the longest lifespans on YPG (Pearson correlation = -0.51, p < 0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 document the strain-specific responses to carbon source with appropriate statistical testing (Wilcoxon rank sum test) and correlation analysis. The negative correlation between YPD and YPG lifespan is statistically significant and biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "RNA-seq analysis obtained \u22655 million 150 bp paired-end reads per strain, yielding 5376 genes and 166 metabolites commonly identified across all isolates after filtering and quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 document the omics data generation and processing with specific quantitative metrics. The sequencing depth and data filtering are clearly stated, providing transparency for the downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "PGLS analysis identified 73 transcripts significantly correlated with median RLS (padj \u2264 0.01), including genes involved in chromatin modification, transcription, and cell cycle regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 report the results of phylogenetically-controlled correlation analysis with appropriate multiple testing correction. The top hits are identified with specific adjusted p-values, and the analysis accounts for phylogenetic relationships among strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Of 5376 genes measured, 39 overlapped with GenAge database entries, with 23 showing the same direction of correlation with RLS, though this overlap did not reach statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 report the comparison with existing lifespan databases. The lack of significant overlap is honestly reported and suggests that natural variation may involve different genetic architecture than single-gene knockouts in lab strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Among 166 metabolites examined, 31 showed significant association with median RLS (padj \u2264 0.05), including positive correlations with tryptophan and lactate, and negative correlations with lysine and quinolinic acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 report metabolomic associations with lifespan using appropriate statistical thresholds. The identification of specific metabolites provides complementary evidence to the transcriptomic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C85"
+    ],
+    "result": "Long-lived strains show decreased tryptophan degradation through the kynurenine pathway, evidenced by increased tryptophan levels and significantly downregulated BNA2 expression (padj = 0.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C85 integrate transcriptomic and metabolomic data to infer a mechanism. The decreased BNA2 expression is statistically significant and consistent with increased tryptophan abundance, providing converging evidence for decreased tryptophan catabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C59",
+      "C60",
+      "C84"
+    ],
+    "result": "Long-lived strains are characterized by decreased glycolytic activity and increased mitochondrial activity (TCA cycle and respiration), with a significant positive correlation between oxygen consumption rate and median RLS (R = 0.28, padj = 0.016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C59, C60, and C84 integrate transcriptomic data (gene expression patterns) with direct measurements of oxygen consumption. The correlation between OCR and RLS is statistically significant and consistent with the gene expression patterns, though the correlation coefficient is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Increased expression of BNA2 caused a significant decrease in median RLS in two out of three long-lived strains tested and significantly decreased maximum RLS in all long-lived strains tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 report experimental validation of the BNA2-lifespan relationship. The results are consistent with the correlational data, though the effect on median RLS was not universal across all three strains tested, suggesting some strain-specific variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "GLN1 overexpression significantly decreased both median and maximum RLS of long-lived strains tested (Wilcoxon rank sum tests, p < 0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 reports experimental validation of the glutamate-glutamine flux hypothesis with appropriate statistical testing. The consistent effect across long-lived strains supports the proposed role of glutamate metabolism in longevity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C88"
+    ],
+    "result": "Wild yeast isolates can utilize \u03b1-KG as an alternative carbon source, but elimination of mtDNA abolished this ability and caused significant RLS reduction in all three long-lived strains tested (p < 0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, and C88 provide experimental evidence linking \u03b1-KG utilization, mitochondrial function, and lifespan. The rho0 experiments demonstrate that mitochondrial respiration is required for both \u03b1-KG utilization and extended lifespan in these strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "PCA of transcriptome and metabolome data revealed that the first three principal components explain ~49% of variance in gene expression and ~41% of variance in metabolite levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 report standard dimensionality reduction analysis results. The variance explained is clearly stated and provides context for understanding the structure of the omics data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Decreased amino acid biosynthesis in long-lived strains may spare glutamate for conversion to \u03b1-KG to fuel the TCA cycle, potentially through increased NAD+-dependent GDH2 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 present hypotheses based on observed patterns but explicitly acknowledge the need for additional experimental evidence. The proposed mechanism is plausible given the data but remains speculative without direct measurements of compartment-specific metabolite fluxes or GDH2 activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The genetic architecture of trait variation in natural populations may differ from that assumed from studies of lab strains, supported by lack of overlap between genes correlating with lifespan in wild isolates versus single-mutant studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is an inference supported by the comparative analysis showing minimal overlap between wild isolate and lab strain lifespan-associated genes. This is an important conceptual finding about the nature of natural variation versus laboratory-induced variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Background information on yeast species relationships, lifespan variation across species, and limitations of laboratory-adapted strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C50-C53 provide contextual information from cited literature. These are appropriately referenced background claims that establish the rationale for studying natural isolates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C16",
+      "C35",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Literature-based context on metabolic pathways, dietary interventions, and lifespan regulation across model organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C35, C56-C58, C61-C83 provide extensive literature context for interpreting the findings. These are appropriately cited claims from prior work that establish the broader significance of the metabolic pathways identified in this study.",
+    "result_type": "MINOR"
+  }
+]

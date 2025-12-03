@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C63",
+      "C64",
+      "C65",
+      "C75",
+      "C76",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Epidemap is a novel agent-based simulation platform that can simulate the daily movement and interactions of 66 million individuals at building-level resolution across France. The platform uses OpenStreetMap data (80 GB, 4.1\u00d710^8 nodes, 4.8\u00d710^7 buildings) and runs efficiently with less than 64 GB RAM, completing a 300-day epidemic simulation in 2 hours on a standard 12-core computer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15, C75, C76 provide concrete performance metrics that are internally consistent and technically feasible. Claims C16-C18, C81-C85 describe the simulation methodology with clear mechanistic details shown in Figure 1. Claims C63-C65 document the data sources appropriately. The computational performance claims are reasonable given modern HPC techniques and the described optimizations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C47"
+    ],
+    "result": "Epidemap simulations reveal a bimodal epidemic pattern at the national level with two distinct peaks in daily case numbers. The first peak corresponds to spread in the outbreak origin region (Ile-de-France), while the second peak represents the sum of epidemic peaks in other regions, a pattern that emerges from the detailed geographical structure and is absent in well-mixed models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C29, C47 describe the two-peak pattern consistently, supported by Figure 2 showing regional dynamics. Claim C32 provides the critical control comparison showing a single peak in well-mixed settings (Figure 2\u2014figure supplement 1), which validates that the bimodal pattern is indeed due to spatial structure. Claims C30-C31 provide mechanistic interpretation that is logically consistent with the simulation design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C48",
+      "C49"
+    ],
+    "result": "The timing of epidemic arrival in districts depends on both distance from the outbreak origin (Paris) and local population density, with denser areas infected earlier. This density effect is only detectable at the fine-grained district level and disappears at the coarser departmental level, demonstrating the importance of high-resolution spatial modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 describe the distance and density effects supported by Figure 3a showing clear spatial patterns across 35,234 districts. Claim C35 provides the critical scale-dependent observation that these trends are not significant at departmental level, which is a key validation of the high-resolution approach. Claims C4, C48-C49 consistently summarize these findings. The statistical significance claims would benefit from explicit p-values, but the visual evidence in Figure 3a is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C39",
+      "C40",
+      "C50",
+      "C51"
+    ],
+    "result": "The final epidemic size in districts shows density-dependent patterns: in high-density districts, the proportion of infected individuals converges to mean-field predictions (~93% for R0=3), while low-density districts show greater variability and deviate from classical assumptions. At the national level, the mean-field prediction does not apply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C39-C40 describe density-dependent final size patterns supported by Figure 3b. Claims C50-C51 provide the scale-dependent comparison with mean-field theory (Kermack and McKendrick, 1927), which is theoretically grounded. The observed national final size of 61.1% (C24) versus the mean-field prediction of 93% provides quantitative support for C50. The convergence to mean-field in high-density areas (C39, C51) is logically consistent with epidemiological theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C52",
+      "C53"
+    ],
+    "result": "The importance of super-spreading events varies dynamically over the course of the epidemic. Early in the epidemic, individual reproduction numbers are tightly centered around R0, but as the epidemic unfolds, super-spreading events become increasingly important (increasing dispersion), reaching a peak at the end of the first wave, then decreasing as stochastic processes dominate again at the epidemic's end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C44, C52-C53 describe a coherent temporal pattern of super-spreading dynamics supported by Figure 4 showing distributions at different time points and the negative binomial dispersion parameter (k) over time. Claim C45 provides an important methodological recommendation that follows logically from the findings. The pattern is mechanistically plausible: early epidemic has homogeneous spread, mid-epidemic has spatial heterogeneity-driven super-spreading, late epidemic has stochastic extinction dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C88"
+    ],
+    "result": "Epidemap simulations produce epidemiologically realistic dynamics with R0 \u2248 3 (consistent with French COVID-19 estimates), epidemic duration of 308 days [286-345], and final attack rate of 61.1% [60.1-61.9%]. The temporal reproduction number estimates match those calculated from case incidence data using established methods, and the deviation from mean-field predictions demonstrates the impact of geographical structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 provide R0 estimates with appropriate citations for comparison (Salje et al., 2020; Sofonea et al., 2021). Claim C24 provides epidemic duration with confidence intervals from 100 stochastic simulations. Claim C88 validates the Rt calculations against established methods (Wallinga and Lipsitch, 2007), shown in Figure 2. Claim C27 about geographical structure impact is supported by the comparison with mean-field predictions. The consistency across multiple validation approaches strengthens confidence in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The pandemic propagation velocity increases over time, which can be explained by the increased frequency of long-distance dispersion events when incidence is high, biasing the mean contamination distance toward higher values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 states the observation of increasing propagation velocity, while C38 provides a mechanistic explanation. The explanation is logically sound: as prevalence increases, the probability of infected individuals making long-distance movements increases proportionally, even though the underlying mobility kernel remains constant. This is a reasonable inference from the simulation design, though direct evidence (e.g., tracking mean transmission distance over time) would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C85",
+      "C87"
+    ],
+    "result": "The infection model is parameterized using COVID-19 data from France with key assumptions including: SIR dynamics with perfect immunity, 15 initial infections in Paris, two building visits per day per individual (based on Schneider et al., 2013), log-normal distance distribution validated against INSEE data, and time-varying contagiousness. Clinical dynamics (95% of transmission before hospitalization, <1% hospitalization rate) have minimal effect on transmission dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C66, C68-C71, C85, C87 describe model parameterization with appropriate citations and data sources. Claim C68 is validated by Table 1 showing close agreement between model and INSEE data. The assumption that clinical dynamics don't affect transmission (C70, C71, C87) is well-justified for COVID-19 given the timing of peak infectiousness relative to symptom onset and hospitalization. The model assumptions are clearly stated and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C60"
+    ],
+    "result": "For SARS-CoV-2, clinical dynamics have little effect on transmission dynamics due to the infection's life-history, and Epidemap can simulate hospitalizations by routing individuals to the nearest hospital, enabling anticipation of ICU saturation at detailed geographical levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by the infection model details (Materials and methods) and the timing data showing 95% of transmission occurs before hospitalization (C70, C87). Claim C60 describes a demonstrated capability of the platform, as evidenced by Video 1 showing ICU density dynamics. The separation of transmission and clinical dynamics is a standard and appropriate modeling choice for COVID-19.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Compared to OpenABM, Epidemap offers substantial computational advantages: the same study (100 simulations of 66 million agents for one year) would require ~40 days with OpenABM versus ~8 days with Epidemap, and OpenABM would require >10 TB RAM for transmission chain storage versus <64 GB for Epidemap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 provides OpenABM's performance metrics from Hinch et al., 2021. Claims C78 and C80 are calculations based on these published metrics that are arithmetically correct (C78: 1.5s/day/1M agents \u00d7 365 days \u00d7 66M agents \u00d7 100 sims \u2248 40 days; C80: 3 kB/agent/week \u00d7 66M agents \u00d7 52 weeks \u2248 10 TB). The comparisons are fair and demonstrate genuine computational advantages, though they assume perfect scaling and don't account for differences in model features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The simulation findings align with empirical observations: the link between district-level epidemic size and population density appears in SARS-CoV-2 data (Smith et al., 2021), and field studies show that superspreading event importance varies over epidemic course (Lau et al., 2017), though in-depth ABS analysis of these trends has been lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 appropriately contextualize the simulation findings within existing literature. C54 validates the density-epidemic size relationship against real data. C55 provides established knowledge about superspreading events (Lloyd-Smith et al., 2005). C56 acknowledges that temporal variation in superspreading has been observed empirically but not thoroughly explored in agent-based models, positioning the current work appropriately. The citations support the claims adequately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The distance kernel mobility model centered on residency is relevant for France but may be too simplistic for countries like the United States where air traffic represents a greater proportion of travel, as shown by earlier influenza dynamics work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 acknowledge a key limitation of the mobility model with appropriate citation to Cr\u00e9pey and Barth\u00e9lemy, 2007. This is a reasonable limitation to note, as the model explicitly uses a continuous distance kernel without discrete long-distance jumps that would represent air travel. The acknowledgment demonstrates appropriate scientific caution about generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "Epidemap has potential public health applications including deriving district-level risk factors for epidemic control, optimizing vaccine coverage, and comparing effects of different non-pharmaceutical interventions (e.g., mask-wearing vs. stay-at-home requirements) in the context of SARS-CoV-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59, C61-C62 describe potential applications but are marked as SPECULATION in the evidence type. While these applications are plausible given the platform's capabilities, they represent future work rather than demonstrated results. No actual risk factor derivations, vaccine optimization analyses, or NPI comparisons are presented in the manuscript. These are reasonable proposals but remain unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Existing epidemiological modeling approaches face limitations: agent-based simulations are computationally demanding and typically have limited spatial resolution, while mathematical models provide powerful tools for understanding epidemics but often simplify geographical structure. The COVID-19 pandemic highlighted the importance of such models for intervention strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 provide appropriate background context with citations to established literature (Kermack and McKendrick, 1927; Keeling and Rohani, 2008; Adam, 2020; Trapman et al., 2016; Britton and Scalia Tomba, 2019; Eubank et al., 2004; Smieszek et al., 2011; Rockett et al., 2020). Claim C1 summarizes the motivation for the work. These claims establish the scientific context appropriately, though C1 is somewhat general and could benefit from more specific quantification of the limitations.",
+    "result_type": "MINOR"
+  }
+]

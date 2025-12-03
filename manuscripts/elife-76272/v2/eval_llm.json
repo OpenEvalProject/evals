@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C110",
+      "C115",
+      "C119",
+      "C120",
+      "C121",
+      "C127"
+    ],
+    "result": "GDF15 plasma levels are associated with multiple disease phenotypes including all-cause mortality, cardiometabolic diseases, respiratory diseases, psychiatric disorders, and inflammatory biomarkers in the FINRISK cohort (n=6610). Age explained 28% of GDF15 variance, with 80 disease endpoints significantly associated after FDR correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46-C52 provide consistent statistical evidence from logistic regression analyses with appropriate multiple testing correction (FDR < 0.05). The associations are adjusted for relevant covariates (age, gender, smoking, BMI) and show strong effect sizes with highly significant p-values. Sample sizes are adequate and methods are clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "GDF15 plasma levels predict incident disease and are elevated in prevalent cases compared to incident cases and controls for diabetes, atherosclerosis, and COPD. GDF15 is an independent predictor of all-cause mortality, type 2 diabetes, and cardiovascular disease in survival analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 demonstrate consistent patterns with appropriate statistical tests (Wilcoxon rank sum tests with highly significant p-values). Claims C65-C68 show Cox regression results with proper adjustment for confounders. The progression from controls to incident to prevalent cases supports GDF15 as a prognostic biomarker, though claim C118 about 'potential use' is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "GDF15 plasma levels are significantly associated with 45 biomarkers after multiple testing correction, most strongly with inflammatory markers (MR-proADM, CRP, HGF) and metabolic syndrome components (triglycerides, fasting insulin, WHR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 report associations with appropriate FDR correction and highly significant p-values. The associations with inflammatory markers are consistent with GDF15's known biology. Effect sizes (beta values) and statistical significance are clearly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C160"
+    ],
+    "result": "GWAS meta-analysis across three assay platforms (n=14,099) identified substantial heterogeneity due to the missense variant rs1058587 (p.H202D), likely caused by epitope-binding artifacts affecting different GDF15 assays differentially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C79-C80 demonstrate extreme heterogeneity (I\u00b2=99.8%) localized to an LD block containing rs1058587. Claims C81-C82, C131 cite prior evidence of epitope effects. The inference in C5, C130, C132 that assay differences cause heterogeneity is well-supported by the data pattern and prior knowledge, though direct experimental validation of epitope binding would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "After conditioning on rs1058587 to mitigate epitope effects, fine-mapping identified four independent putative causal signals at the GDF15 locus with 86% causality probability, explaining 7% regional heritability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C85-C87 report fine-mapping results using appropriate methodology (FINEMAP). The conditioning approach (C83-C84) is reasonable given the identified heterogeneity. Statistical evidence is strong with 146 significant associations and clear lead variants. The causality probability of 0.86 indicates good confidence in the signal structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C113",
+      "C136"
+    ],
+    "result": "Forward Mendelian randomization using conditioned genetic variants found evidence of a causal relationship between genetically determined GDF15 levels and HDL cholesterol (IVW estimate = -0.0085, pFDR = 0.0024), replicating prior findings, but not with BMI, diabetes, glucose, or eBMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C89, C94 report MR results with appropriate methods (IVW, MR-Egger, weighted median, MR-PRESSO) and proper multiple testing correction. The HDL association is statistically significant and replicates prior work (C94, C136). Claim C90 correctly notes small effect sizes. No horizontal pleiotropy detected (C92) supports validity. The negative findings for BMI and diabetes (C8, C111) are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C111",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C161",
+      "C167"
+    ],
+    "result": "Genetic analyses (MR and PTV) do not support a causal role for normal human GDF15 plasma levels in obesity, BMI, diabetes, or glucose, contradicting some prior studies that may have been affected by assay bias from rs1058587.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C111, C139, C161, C167 consistently report null findings across multiple analytical approaches. The critique of Karhunen et al. (C141-C142) is valid given the identified assay bias. Claims C139-C140 cite supporting evidence from independent large studies. The conclusion is appropriately cautious about normal plasma levels while acknowledging uncertainty about elevated levels (C164).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C114",
+      "C137",
+      "C138",
+      "C162"
+    ],
+    "result": "A nominal association between genetically determined GDF15 and waist-hip ratio (WHR) was identified (IVW estimate = 0.017, pFDR = 0.0013), but this did not survive multiple-testing correction in MR-PRESSO sensitivity analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89, C137 report a statistically significant association in IVW analysis, but C91 notes it fails MR-PRESSO correction. Claims C90, C138 acknowledge the very small effect size (beta = 0.017). The inconsistency between methods (C91) and small effect size create uncertainty about whether this represents a true causal relationship. Claims C138, C162 appropriately suggest further investigation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C112",
+      "C154",
+      "C155",
+      "C163"
+    ],
+    "result": "Reverse Mendelian randomization found a significant causal association of higher BMI on increased GDF15 plasma levels (IVW estimate = 0.097, pFDR = 0.0040), supported by MR-PRESSO but not MR-Egger, and replicating a prior finding from the SCALLOP consortium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C95 report statistically significant reverse MR results with appropriate methods. Claim C97 notes MR-PRESSO confirmation but MR-Egger non-significance, creating some uncertainty. However, C98 reports no horizontal pleiotropy detected, and C154-C155 provide independent replication. The biological interpretation (C112, C163) that GDF15 is a consequence of BMI is reasonable, though the mixed sensitivity results warrant some caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Analysis of 109 heterozygous GDF15 protein-truncating variant carriers in UK Biobank (n=302,388) found no significant differences in BMI, WHR, glucose, eBMD, or HDL cholesterol compared to non-carriers, suggesting mono-allelic loss-of-function does not strongly affect these traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 report null findings with appropriate statistical tests (Mann-Whitney U test) and adequate sample sizes for controls (n=40,000). The p-values are all non-significant. Claim C107 appropriately interprets these as lack of strong effect. Claims C108-C109 acknowledge the limitation that only heterozygous carriers were available, which is an important caveat. The consistency with MR results (C102) strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C112",
+      "C163"
+    ],
+    "result": "The combined evidence from human population cohorts does not support moderately elevated GDF15 concentrations as a causal factor in cardiometabolic disease, but supports GDF15's role as a biomarker of metabolic stress, likely elevated as a consequence of higher BMI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 synthesize findings from multiple analyses (MR, PTV, phenotypic associations). The conclusion is well-supported by the null forward MR results (C7-C8), positive reverse MR (C9), null PTV findings (C102-C106), and strong phenotypic associations (C3). The interpretation as a biomarker rather than causal factor is consistent with all presented evidence, though the authors appropriately note uncertainty about effects at higher concentrations (C164).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Cox regression survival analysis over 10 years showed GDF15 is an independent predictor of all-cause mortality (HR=1.7, p=9.2\u00d710\u207b\u00b9\u00b2), type 2 diabetes (HR=1.40, p=0.02), and cardiovascular disease (HR=1.4, p=1.5\u00d710\u207b\u2076), with individuals in the upper quartile having >2-fold increased risk of developing diabetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 report Cox regression results with appropriate adjustment for confounders (blood pressure medication, smoking, cholesterol, BMI, prevalent CVD, systolic BP). The hazard ratios are substantial and highly significant for mortality and CVD. The diabetes association is weaker (p=0.02) but still significant. Sample sizes for events are adequate (C64). The upper quartile analysis (C68) provides additional evidence of dose-response relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C151"
+    ],
+    "result": "No association between GDF15 plasma levels and anorexia or gastroesophageal reflux disease was identified in FINRISK, though statistical power may have been limited for anorexia due to low case numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122, C151 report null findings with non-significant p-values (p=0.63 for GERD). Claim C123 appropriately acknowledges potential power limitations for anorexia. These negative results are important given prior hypotheses about GDF15 and appetite/nausea, and the authors appropriately report them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C126"
+    ],
+    "result": "A strong association between GDF15 levels and smoking was detected, but smoking was adjusted as a binary variable, which may not have fully captured its contribution to disease associations, particularly for respiratory disease, lung cancer, and psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 reports a strong association with smoking. Claim C126 is speculative about potential improvements but represents a reasonable methodological limitation. The authors appropriately acknowledge this could affect interpretation of some disease associations. This represents good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C157",
+      "C158",
+      "C166"
+    ],
+    "result": "The study recommends adopting more consistent GDF15 measurement methods, particularly epitope-independent approaches like mass spectrometry, and further functional validation of assay performance and heterozygous PTV effects to improve future genetic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134, C157-C158, C166 provide reasonable recommendations based on the identified assay heterogeneity problem. These are appropriate suggestions for future research rather than claims about current findings. The recommendations follow logically from the demonstrated epitope artifact issue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C153",
+      "C156",
+      "C164",
+      "C165"
+    ],
+    "result": "The authors speculate that GDF15 may behave differently in humans versus animal models, that effects might differ at elevated versus normal concentrations, and that rs1058587 might affect GDF15 function through mechanisms beyond plasma levels, though these remain hypotheses requiring further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144, C153, C156, C164-C165 are explicitly speculative (marked as SPECULATION in evidence_type). These represent reasonable hypotheses to explain discrepancies between human genetic data and animal studies, but lack direct supporting evidence in the current manuscript. The authors appropriately frame these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  }
+]

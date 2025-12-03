@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C85"
+    ],
+    "result": "RUNX2-I is the predominant isoform expressed during human NK cell development. The proximal promoter (P2) regulating RUNX2-I shows greater accessibility and activity in HSCs and NK cells compared to the distal promoter (P1) of RUNX2-II, as demonstrated by ATAC-seq and ChIP-seq analysis. This was confirmed by qPCR showing RUNX2-I is the primary isoform expressed throughout NK development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C32-C35, and C85 are well-supported by converging evidence from ATAC-seq, ChIP-seq (Figure 1C), and qPCR (Figure 1D) analyses. The epigenetic landscape data clearly shows differential promoter accessibility, and qPCR directly confirms RUNX2-I as the predominant isoform. The experimental approaches are appropriate and the data are consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C88",
+      "C89"
+    ],
+    "result": "RUNX1, RUNX2, and RUNX3 show distinct expression patterns during NK cell development. RUNX1 is highest in early stages, RUNX3 in late stages, and RUNX2 peaks at stage 1-2 progenitors then declines. Notably, RUNX2 protein expression peaks at stage 1-2 progenitors while transcript expression is highest in HSCs and declines during differentiation, demonstrating post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 and C88-C89 are supported by flow cytometry data (Figure 1A) for protein expression and qPCR data (Figure 1D) for transcript levels. The discordance between mRNA and protein levels is acknowledged by the authors and is a well-documented phenomenon in biology (C90). The data are clear and appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "RUNX2 drives NK cell development with distinct effects depending on expression level. RUNX2 knockdown significantly reduces stage 3 progenitors and NK cells without affecting early HSC-to-stage 2 differentiation. Conversely, RUNX2-I overexpression accelerates NK development, with stage 4 NK cells appearing by day 7 (versus 14 days in controls) and enhanced generation of CD16+ stage 5 NK cells from day 14 onwards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 and C91-C93 are strongly supported by flow cytometry data from in vitro differentiation cultures (Figure 1E). The bidirectional effects of knockdown versus overexpression provide robust evidence for RUNX2's role. Cell counts at multiple timepoints demonstrate clear, statistically significant differences with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C95"
+    ],
+    "result": "The altered NK cell development caused by RUNX2 manipulation is not due to changes in apoptosis or proliferation. RUNX2 knockdown does not affect apoptosis and actually increases proliferation compared to controls, ruling out these mechanisms as explanations for reduced NK cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, and C95 are supported by flow cytometry data (Figure 2\u2014figure supplement 1A-C) showing AnnexinV/PI staining for apoptosis and Ki67/CellTrace for proliferation. The data appropriately rule out these alternative mechanisms, though the increased proliferation in knockdown cultures is somewhat counterintuitive given the reduced cell numbers and warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C86"
+    ],
+    "result": "RUNX2 promotes NK cell differentiation by directly regulating IL-2R\u03b2 expression, supporting NK lineage commitment. ChIP-seq demonstrates IL2RB is a direct RUNX2 target gene. RUNX2-I overexpression significantly increases IL-2R\u03b2+ NK-committed progenitors at day 7, and overexpression in ALL-SIL cells increases IL-2R\u03b2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 and C86 are well-supported by ChIP-seq data showing direct RUNX2 binding to IL2RB (Figure 2B), flow cytometry showing increased IL-2R\u03b2+ progenitors with overexpression (Figure 2A), and validation in cell lines (Figure 2C). The mechanistic link is strengthened by prior literature on IL-15 signaling in NK development. However, the lack of effect in knockdown experiments (C47) suggests residual RUNX2 may be sufficient, or compensatory mechanisms exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C100"
+    ],
+    "result": "RUNX2 functions as a transcriptional regulator in NK cells, with ChIP-seq identifying 12,121 peaks predominantly in promoter regions. Motif analysis validates RUNX binding and reveals co-enrichment of ETS1 and TBX21 motifs, suggesting RUNX2 forms transcriptional complexes with these factors. Most differentially expressed genes from RNA-seq are direct RUNX2 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 and C100 are strongly supported by ChIP-seq analysis (Figure 3A-C) with appropriate validation through RUNX motif enrichment. The overlap between ChIP-seq and RNA-seq (74% and 71% for knockdown and overexpression, respectively) demonstrates that RUNX2 directly regulates most differentially expressed genes. The co-occurrence of ETS1 and TBX21 motifs is consistent with known transcription factor cooperation, though direct protein-protein interaction is inferred rather than demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C87"
+    ],
+    "result": "RUNX2 promotes acquisition of a tissue-resident NK cell phenotype. RNA-seq shows differential expression of tissue residency and homing genes. GSEA demonstrates enrichment of liver and bone marrow tissue-resident gene signatures in RUNX2-overexpressing NK cells. Flow cytometry confirms RUNX2 overexpression increases tissue-resident markers (CD69, CD49a, CXCR4) and the EOMEShighT-BETlow phenotype while decreasing circulatory markers (CD49e, CX3CR1, CCR7, CD62L).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63, C65-C66, and C87 are comprehensively supported by RNA-seq (Figure 3D), GSEA (Figure 3E), and flow cytometry (Figure 4A-B). The convergence of transcriptomic and protein-level data is compelling. Public dataset analysis showing 25-fold and 13-fold higher RUNX2 in liver and bone marrow trNK cells (C58-C59) provides independent validation. The bidirectional effects of knockdown versus overexpression strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C119"
+    ],
+    "result": "RUNX2 regulates NK cell receptor expression. RUNX2 knockdown reduces NKp44 expression, while overexpression increases NKG2C+ NK cell frequency, NKp46 and NKG2A/CD94 expression, and inhibitory receptor CD94/NKG2A, but decreases KIR+ NK cell frequency. Most genes encoding these receptors are direct RUNX2 targets by ChIP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 and C119 are supported by flow cytometry data (Figure 4C) and ChIP-seq/ATAC-seq analysis (Figure 4\u2014figure supplement 1). The direct targeting of receptor genes by RUNX2 provides a mechanistic basis. However, the functional significance of these receptor changes and their relationship to tissue residency could be more clearly established. The differential effects on various receptors suggest complex regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "RUNX2 negatively regulates cytotoxic effector molecules and cytokines but does not affect overall cytotoxicity. RUNX2 knockdown increases granzyme B, perforin, IFN-\u03b3, and TNF-\u03b1 expression/production, while overexpression decreases these molecules. Despite reduced degranulation in knockdown cells, chromium release assays show no change in killing capacity. ChIP-seq demonstrates direct RUNX2 regulation of these genes, independent of T-BET and EOMES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 and C114-C118 are well-supported by chromium release assays (Figure 5A), degranulation assays (Figure 5B), flow cytometry (Figure 5C-D), ELISA (Figure 5E), and ChIP-seq (Figure 5\u2014figure supplement 1). The T-BET/EOMES-independent regulation is notable and supported by the observation that these transcription factors are unaffected by RUNX2 manipulation. However, the disconnect between reduced degranulation and maintained cytotoxicity in knockdown cells (C72-C73) requires further mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "RUNX2 is required for human NK cell development and tissue residency in vivo. In humanized NSG-huIL-15 mice, RUNX2 knockdown drastically reduces NK cell numbers in all examined organs. The frequency of tissue-resident NK cells is significantly reduced in bone marrow and intestinal lamina propria, while circulating NK cell frequency increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by flow cytometry data from humanized mice (Figure 6B-C). The in vivo validation strengthens the in vitro findings. However, the organ-specific effects (C120-C121) where liver and lung show no changes, and spleen shows opposite effects, raise questions about the model's suitability or tissue-specific regulation. The authors acknowledge these limitations (C122-C123), but this reduces confidence in the generalizability of the in vivo findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "RUNX2's effects on NK cell tissue residency show organ-specific differences in humanized mice. Liver and lung trNK/circNK frequencies are unaffected by RUNX2 knockdown, and splenic circNK frequency decreases (opposite to bone marrow/LPL). The humanized mouse model shows ~20% liver trNK cells versus ~50% in human liver, suggesting potential human-mouse incompatibility issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C125 identify important limitations of the humanized mouse model. The organ-specific differences (C120-C121) are clearly documented but not fully explained. The authors appropriately speculate about tissue-specific regulation or model limitations (C122-C123), but cannot definitively distinguish between these possibilities. The discrepancy in liver trNK frequency (C124-C125) between the model and human tissue raises valid concerns about model validity for some organs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Background on tissue-resident NK cells: trNK cells are characterized by specific markers (CD69, CD49a, CXCR6, EOMEShighT-BETlow) and lack circulatory markers. They are shaped by tissue microenvironments and display tolerogenic phenotypes with reduced effector molecule production. Liver and decidual trNK cells show distinct KIR expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C104-C113 provide established background knowledge supported by appropriate citations to published literature. These claims contextualize the authors' findings but do not represent novel results from this study. The information is accurate and well-documented in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "RUNX2 may play a role in NK cell tumor infiltration. Tumor-infiltrating NK cells share characteristics with trNK cells, including reduced cytotoxicity and effector molecule production. CXCR4 enables NK cell homing to solid tumors. The increased CXCR4 and trNK phenotype in RUNX2-overexpressing cells supports a hypothetical role for RUNX2 in tumor infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C131 are largely speculative (C131 explicitly states this is hypothetical). While the background information (C126-C130) is supported by citations, the connection to RUNX2's role in tumor infiltration is inferred rather than directly tested. The increased CXCR4 expression with RUNX2 overexpression provides suggestive evidence, but no tumor infiltration experiments were performed. This represents a reasonable hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "The findings have potential therapeutic applications for NK cell-based cancer therapies. In vitro NK cell differentiation models could potentially generate NK cells with enhanced tumor-infiltrating capabilities for adoptive cell therapy in solid cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C133 are explicitly speculative about potential applications. While the underlying science about RUNX2's role in tissue residency is well-supported, the therapeutic potential is not directly tested. No experiments demonstrate that RUNX2-manipulated NK cells have enhanced anti-tumor activity or improved tumor infiltration in vivo. This represents a reasonable translational hypothesis but not a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

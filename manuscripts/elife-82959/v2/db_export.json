@@ -1,0 +1,1185 @@
+{
+  "submission": {
+    "id": "142a6a9c-0be2-42f4-b118-86a3c88be49a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:48:03.466503Z",
+    "updated_at": "2025-12-03T20:48:03.466503Z"
+  },
+  "content": [
+    {
+      "id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "submission_id": "142a6a9c-0be2-42f4-b118-86a3c88be49a",
+      "content_type": "manuscript",
+      "content_text": "# Proteomic characteristics reveal the signatures and the risks of T1 colorectal cancer metastasis to lymph nodes\n\n## Authors\n\n- Aojia Zhuang<sup>1</sup>\n- Aobo Zhuang<sup>1</sup> ([ORCID: 0000-0002-3958-7975](https://orcid.org/0000-0002-3958-7975))\n- Yijiao Chen<sup>1</sup>\n- Zhaoyu Qin<sup>1</sup>\n- Dexiang Zhu<sup>1</sup>\n- Li Ren<sup>1</sup>\n- Ye Wei<sup>1</sup>\n- Pengyang Zhou<sup>1</sup>\n- Xuetong Yue<sup>1</sup>\n- Fuchu He<sup>1</sup> \u2020\n- Jianmin Xu<sup>1</sup> \u2020\n- Chen Ding<sup>1</sup> ([ORCID: 0000-0001-8673-3464](https://orcid.org/0000-0001-8673-3464)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Genetic Engineering and Collaborative Innovation Center for Genetics and Development, Human Phenome Institute, School of Life Sciences, Institutes of Biomedical Sciences, Department of Colorectal Surgery, Colorectal Cancer Center, Zhongshan Hospital, Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))\n2. Xiamen University Research Center of Retroperitoneal Tumor Committee of Oncology Society of Chinese Medical Association, College of Medicine, Xiamen University Xiamen China ([ROR:00mcjh785](https://ror.org/00mcjh785))\n3. Cancer Center, Zhongshan Hospital, Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))\n4. State Key Laboratory of Proteomics, Beijing Proteome Research Center, National Center for Protein Sciences Beijing China ([ROR:05pp5b412](https://ror.org/05pp5b412))\n5. Research Unit of Proteomics Driven Cancer Precision Medicine, Chinese Academy of Medical Sciences Beijing China ([ROR:042pgcv68](https://ror.org/042pgcv68))\n6. State Key Laboratory of Cell Differentiation and Regulation, Henan International Joint Laboratory of Pulmonary Fibrosis, Henan Center for Outstanding Overseas Scientists of Pulmonary Fibrosis, College of Life Science, Institute of Biomedical Science, Henan Normal University Xinxiang China ([ROR:00s13br28](https://ror.org/00s13br28))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe presence of lymph node metastasis (LNM) affects treatment strategy decisions in T1NxM0 colorectal cancer (CRC), but the currently used clinicopathological-based risk stratification cannot predict LNM accurately. In this study, we detected proteins in formalin-fixed paraffin-embedded (FFPE) tumor samples from 143 LNM-negative and 78 LNM-positive patients with T1 CRC and revealed changes in molecular and biological pathways by label-free liquid chromatography tandem mass spectrometry (LC-MS/MS) and established classifiers for predicting LNM in T1 CRC. An effective 55-proteins prediction model was built by machine learning and validated in a training cohort (N=132) and two validation cohorts (VC1, N=42; VC2, N=47), achieved an impressive AUC of 1.00 in the training cohort, 0.96 in VC1 and 0.93 in VC2, respectively. We further built a simplified classifier with nine proteins, and achieved an AUC of 0.824. The simplified classifier was performed excellently in two external validation cohorts. The expression patterns of 13 proteins were confirmed by immunohistochemistry, and the IHC score of five proteins was used to build an IHC predict model with an AUC of 0.825. RHOT2 silence significantly enhanced migration and invasion of colon cancer cells. Our study explored the mechanism of metastasis in T1 CRC and can be used to facilitate the individualized prediction of LNM in patients with T1 CRC, which may provide a guidance for clinical practice in T1 CRC.\n\n## Introduction\n\nCRC is the third most common cancer worldwide and the third leading cause of cancer-related deaths in Western countries (Malvezzi et al., 2014; Hori et al., 2015; Jemal et al., 2017). With the introduction of population-based screening programs, a growing number of early invasive CRCs (T1 CRCs) are being diagnosed (Zauber et al., 2012). It is estimated that the endoscopic removal of adenomatous polyps can reduce CRC-related mortality by more than 50%. Evidence suggests that ESD (endoscopic submucosal dissection) alone is an effective option for T1 CRC patients, who are at low risk for developing LNM, while more extensive radical surgery after ESD is needed for only high-risk patients (Ikematsu et al., 2013; Yoda et al., 2013). According to the current clinical treatment guidelines, which rely on a histopathological examination, approximately 70 to 80% of patients are classified as high risk (poor tumor differentiation, lymphatic/vascular invasion, and depth of submucosal invasion >1000 mm). However, the LN status of only 8 to 16% of patients can be accurately predicted by these guidelines; thus, a large number of LNM-negative patients routinely undergo unnecessary additional surgeries, with an associated postoperative mortality rate of 3\u20136% (Tanaka et al., 1995; Kobayashi et al., 2011). The contradiction between the high rate of additional surgical resection and the fact that only a few people have LNM is due to the lack of accurate diagnostic methods. Therefore, there is an urgent need to develop a new method that can effectively determine LNM in T1 CRC.\n\nRecent studies have focused on accurately predicting lymph node metastasis in T1CRCs to provide references for further postoperative treatment of ESD patients. Unfortunately, current research still has limitations. Previously, Ozawa et al., and Kandimalla et al., used the microRNA (miRNA) and messenger RNA (mRNA) expression dataset of T1 and T2 CRC patients from The Cancer Genome Atlas (TCGA) as the training cohort to build predictive models, achieved an area under the ROC curve (AUC) values of 0.74 and 0.84, respectively (Ozawa et al., 2018; Kandimalla et al., 2019). After that, Wada et al., validated these miRNA and mRNA signatures in the blood samples (Wada et al., 2021). These studies unraveled a new paradigm for a more adequate risk assessment and identification of patients who are true candidates for endoscopic treatment or radical surgery. However, these retrospective studies have several limitations, less than 10% of T1 colorectal cancer samples had lymph node metastasis, and almost no specimens removed by ESD were included. Most recently, Kudo et al., developed an algorithm to predict LNM in 4073 patients with T1 CRC by clinicopathological characteristics and achieved an AUC of 0.83 (Kudo et al., 2021). The accurate prediction of LNM in T1 CRC is a crucial but difficult challenge for scientists worldwide.\n\nProteins, as executors of biological functions, are receiving much research attention. Several recent proteomic studies of CRC defined new protein signatures, molecular subtypes, and metastasis markers (Vasaikar et al., 2019; Zhang et al., 2014; Mikula et al., 2011; Saleem et al., 2019; Anwaier et al., 2022; Du et al., 2022; Gao et al., 2022) and revealed differences in tumorigenesis between right- and left-sided CRC (Yaeger et al., 2018). However, these studies focused on advanced-stage CRC rather than early-stage CRC, and proteomic studies of T1NxM0 CRC are still lacking. There was a recent proteomic study using 21 T1 and T2 CRC patients (Steffen et al., 2021), however, the sample size of the study is limited.\n\nHere, we assembled three cohorts of patients with or without LNM (a training cohort, an ESD validation cohort, and a prospective validation cohort). A quantitative proteomics approach was used to analyze a total of 221 patients. We developed a high-performance prediction model that can help to reduce the number of unnecessary additional surgeries and will benefit the majority of patients.\n\n## Results\n\n### Cohort characteristics and research design\n\nTo identify LNM mechanisms and protein signatures for T1NxM0 CRC, we performed mass spectrometry (MS)-based proteomics to analyze FFPE tumor samples from 143 LNM-negative and 78 LNM-positive patients with T1 CRC, totaling 221 individuals. The patients consisted of a training cohort and two different validation cohorts (Figure 1A). The clinicopathologic characteristics of the patients are listed in Figure 1B and Figure 1\u2014source data 1. As previously reported in T1NxM0 CRC, LNM is significantly associated with the submucosal invasion depth (p=0.014, chi-square test), lymphatic or vascular invasion (p<0.001, chi-square test), and poor differentiation (p=0.004, chi-square test) (Figure 1\u2014source data 1). In our cohort, the rate of LNM was related to tumor location, specifically. The left-sided tumors (LNM rate: 41.1%) showed a higher metastatic tendency than right-sided (LNM rate: 22.0%) (p=0.036, chi-square test) (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82959/elife-82959-fig1-v2.jpg)\n\n**Figure 1.:** (A) In total, 221 samples were divided into three cohorts: a training cohort (N=132), validation cohort 1 (N=42), and validation cohort 2 (N=47); 47 samples were used for immunohistochemistry (IHC) staining. (B) The study included 143 LNM-negative and 78 LNM-positive patients with T1 CRC and 51 and 170 patients treated with endoscopic submucosal dissection (ESD) or surgical resection, respectively. Clinical parameters are shown in the heatmap. Also, see Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82959/elife-82959-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Related to Figure 1. (A\u2013I) The following clinical parameters were examined: invasion depth (A), lymphovascular invasion (B), differentiation (C), histologic type (D), tumor location (E), sex (F), CEA (G), tumor size (H), and age (I), tumor purity (J), and MSI (K) (*p<0.05; **p<0.01, ***p<0.001, chi-square test).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82959/elife-82959-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Related to Figure 1. (A) Total number of proteins quantified in 221 samples lymph node metastasis (LNM)-positive samples from the training cohort (light orange), validation cohort 1 (orange), and validation cohort 2 (dark orange); LNM-negative samples from the training cohort (light blue), validation cohort 1 (blue), and validation cohort 2 (dark blue). (E) Cumulative number of proteins identified. (B) Cumulative number of proteins identified. (C & E) Box plots of the proteins identified in LNM-negative and LNM-positive samples from different cohorts (C) sample collection time (E). LNM-negative samples from the training cohort (light blue), validation cohort 1 (blue), validation cohort 2 (dark blue); LNM-positive samples from the training cohort (light orange), validation cohort 1 (orange), and validation cohort 2 (dark orange). (D & F) Distribution of log10-transformed iBAQ abundance of identified proteins in 221 proteome samples from different cohorts (D) sample collection time (F) that passed quality control. (G) Principal component analysis across different cohorts. The study samples were intermixed, suggesting a limited batch effect, and the quality control samples (QCs) clustered together, indicating good technical reproducibility. (H) Proteomic datasets filtered at different levels for various statistical analyses.\n\nOf the 172 patients for whom MSI status was available, 12 (7%) were MSI-H, which is consistent with previous reported on metastatic CRC by Federico et al., (6.6%) (Innocenti et al., 2019). (Figure 1B and Figure 1\u2014source data 1). For MSI-H patients, there were 16.7% (2 of 12) had LNM, and 39.6% (63 of 159) for MSS patients, the MSS group showed a higher tendency of LNM (Figure 1\u2014figure supplement 1K). Our results are in agreement with the previous studies (Kang et al., 2015).\n\nThe mutations of RAS, BRAF, and PIK3CA genes were also detected using PCR. The results showed that 70 of 132 (53%) individuals had no mutations in all three genes (Figure 1B and Figure 1\u2014source data 1). Nineteen of 62 (30.6%) patients with gene mutations and 26 of 70 (37.1%) patients without mutations had LNM, indicating there was no statistical difference between the two groups (p=0.432). The mutation ratio was similar to previous studies (Rui et al., 2015). There were 48 (36.4%) individuals had mutations in the KRAS-exon2; four (3%) had KRAS-exon3 mutations; two (1.5%) had KRAS-exon4 mutations; two (1.5%) had NRAS mutations; four (3%) had mutations in BRAF V600E; three (2.3%) had PIK3CA mutations. There was one patient has mutations in both NRAS, PIK3CA, and KRAS-exon2.\n\nFor the proteomic analysis, proteins were obtained from FFPE tumor samples after cleavage with trypsin and analyzed by high-resolution LC-MS/MS on a Q Exactive HF-X mass spectrometer using a label-free technique. Overall, we produced a high-quality dataset (Figure 1\u2014figure supplement 2), more than 13,000 protein groups (with a 1% false discovery rate [FDR] at the peptide and protein levels) were identified, and the identification number of each sample was over 4000 proteins (Figure 1\u2014source data 2). For the bioinformatic analysis, we further filtered the data, as shown in Figure 1\u2014figure supplement 2H (Figure 1\u2014source data 3). In sum, we have made a comprehensive proteomic study of T1 CRC and provide a reliable data source for future research.\n\n### Proteomic characteristics of the LNM-negative and LNM-positive groups\n\nTo identify protein signatures and pathways associated with LNM in T1NxM0 CRC, we investigated the differential proteomic patterns between T1 CRC patients with or without LNM. First, we surveyed the published CRC LNM markers revealed in the literature. Among the 44 reported gene or RNA markers, only CTSD, GSTM3, and MX1 (Oh-e et al., 2001; Meding et al., 2012; Croner et al., 2014) were differentially expressed between LNM-negative and LNM-positive patients in our proteomic data (p<0.05, Wilcoxon rank-sum tests) (Figure 2A). It indicates that the existing research, including animal/cell models, gene/RNA-related studies, etc., may not reflect the status of lymph node metastasis in T1 CRC. We also compared our data with those of the previous all stage CRC proteomic studies (CPTAC cohort and mCRC cohort) (Zhang et al., 2014; Li et al., 2020b), 4634 proteins were found in all three cohorts, whereas 2577 proteins were detected specifically in our T1 CRC cohort (Figure 2\u2014figure supplement 1A). These results suggest that compared with advanced CRC, T1 CRC might have its own unique protein patterns. These markers might improve the understanding of LNM in early-stage CRC.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82959/elife-82959-fig2-v2.jpg)\n\n**Figure 2.:** (A) Forty-four reported protein markers associated with LNM in CRC. (B) A volcano plot showing proteins overexpressed in LNM-negative or LNM-positive patients (light blue and orange indicate proteins found in >30% of samples and a fold change of more than two, whereas blue and red indicate proteins with p<0.05; other proteins are shown in gray). Dark and light purple represent druggable and potentially druggable proteins based on the Drug Gene Interaction Database (http://www.dgidb.org/). (C) A scatterplot showing druggable (dark purple, N=19) and potentially druggable (light purple, N=34) proteins based on the Drug Gene Interaction Database (http://www.dgidb.org/) overexpressed in LNM-positive patients. (D) Gene set enrichment analysis plot of the Hallmark Epithelial Mesenchymal Transition (EMT) gene set, identified as significantly enriched (FDR of <0.05) using unbiased geneset enrichment analysis. (E) Details of proteins involved in the EMT. (F, G, H) Comparison of SERPINE2 (F), LRP1 (G), and PLOD2 (H) expression between LNM-negative group and LNM-positive group in CPTAC cohort, mCRC cohort, T1/2 patients of mCRC cohort and our cohort (Wilcoxon rank-sum test). (I) Details of proteins involved in the cytoskeletal remodeling. (J) Single sample Gene Set Enrichment Analysis (ssGSEA) of LNM-negative group patients compared with LNM-positive group patients. (K) Dysregulation of metabolic bioprocesses in T1 CRC. Alterations of representative proteins depicted as-log10 p-value and log2 FC (LNM+/LNM\u2212, Wilcoxon rank-sum test). (L & M) Comparison of Complement and coagulation cascade scores between the LNM-negative group and LNM-positive (LNM+/LNM\u2212, limma approach) (L) and the details of proteins involved in the cytoskeletal remodeling and coagulation cascades (M).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82959/elife-82959-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) VENN plot of proteins identified among different cohorts. (B & C) Comparison of epithelial-mesenchymal transition (EMT) proteins (CAP2, GPC1, PCOLCE, PDLM4, and PLOD3) expression between lymph node metastasis (LNM)-negative group and LNM-positive group in CPTAC cohort (LNM-, N=60; LNM+, N=35) (B) and mCRC cohort (LNM-, N=73; LNM+, N=73) The p-value was calculated by the Wilcoxon rank-sum test (C). (D) Cytoskeletal remodeling pathway (single sample Gene Set Enrichment Analysis: ssGSEA) of LNM-negative group patients compared with LNM-positive group patients in mCRC cohort The p-value was calculated by the limma approach. (E) Comparison of MLH1 expression between LNM-negative and positive groups. The p-value was calculated by the Wilcoxon rank-sum test. (F) Number of proteins identified with different criterion in our cohort, Bing Zhang et al., cohort and Jun Qin et al., cohort. (G) Represented pathways Enrichment of DEPs from four thresholds (20%, 40%, 60%, and 80%). (H) Correlation between cytoskeletal remodeling and coagulation cascades related proteins.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/82959/elife-82959-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Bar graphs illustrating the relative proportion of lymph node metastasis (LNM) in well to moderately-differentiated adenocarcinoma, poorly-differentiated adenocarcinoma, and mucinous adenocarcinoma. p-values were calculated from the chi-square test. (B) Upregulated proteins (proteins found in >30% of samples, a fold change more than two and p<0.05 (Kruskal-Wallis test)) in T1 colorectal cancer (CRC) with varying degrees of differentiation and different histologic types. Also, see Figure 1\u2014figure supplement 2H. (C) Pathway enrichment (Reactome, KEGG, and GO) analysis showing upregulated pathways in T1 CRC with varying degrees of differentiation and different histologic types. (D) Correlation of protein expression fold changes in LNM-positive/LNM-negative patients with histologic type (mucinous adenocarcinoma vs. the mean). (E, F, G) Glycoprotein- and glycosylation-related protein (E), Integrins (F), and extracellular vesicle markers (G) were overexpressed in mucinous colorectal adenocarcinoma. (H) Proteins in two pathways (membrane trafficking and/or vesicle transport and extracellular matrix (ECM) organization) that were overexpressed in mucinous colorectal adenocarcinoma. (I) Stromal score and signatures from xCell (*p<0.05; **p<0.01, ***p<0.001, Kruskal-Wallis test). (J) Immunohistochemistry (IHC) staining of D2-40. Scale bar, 100mm. Boxplots show the quantification of the IHC results (Student\u2019s t-test). (K) Model of LNM progression in mucinous colorectal adenocarcinoma.\n\nThus, we comprehensively compared protein signatures and biological differences between the LNM-negative and LNM-positive patients with T1 CRC. We found that 82 and 84 proteins were significantly differentially expressed in LNM-negative and LNM-positive patients, respectively (identified in at least 30% of samples with a log2-fold change [log2FC]>1 or <-1 and p<0.05, Wilcoxon rank-sum test) (Figure 2B and Figure 2\u2014source data 1). To search for druggable targets in LNM-positive T1 CRC, we investigated 84 proteins that were overrepresented in LNM-positive patients and identified 19 US Food and Drug Administration (FDA)-approved drug targets: F13A1, GBA, GNG2, GUCY1B3, STK3, STK4, VWF, etc. (Figure 2C and Figure 2\u2014source data 2). Furthermore, 34 of these proteins, including ATAD2, BAIAP2, CEACAM6, FARS2, MX2, OSBPL5, SERPINB5, SERPINB8, SHC1, UBE2Z, YAP1, and ZG16, etc. were identified as potential drug targets (Figure 2C; Freshour et al., 2021). These potential druggable markers might provide insights into new precision medicine for T1NxM0 CRC and further benefit targeted treatment.\n\nTo further explore the biological processes associated with LNM in T1 CRC, we conducted gene set enrichment analysis (GSEA) to identify enriched pathways. The results revealed that only the epithelial-mesenchymal transition (EMT) pathway was significantly enriched (adjusted p-value <0.05) in the LNM-positive group, while no significantly enriched pathways in the LNM-negative group (Figure 2D, Figure 2\u2014source data 3). We also examined the expression of EMT-related proteins and found that all of them were up-regulated in the LNM-positive group compared to the LNM-negative group (log2FC >0; p<0.05, Wilcoxon rank-sum tests), with six proteins showing a significant upregulation (log2FC >1), including CAP2, PLOD1, SERPINE2, etc. (Figure 2E).\n\nTo verify whether these EMT-associated proteins are unique to T1 CRC, we then employed two published in all stages (T1-T4) CRC datasets, and compared the EMT marker expression between the LNM-positive and LNM-negative groups. We found that the EMT markers that were significantly up-regulated (log2FC >1) in the T1 CRC cohort showed no differences in either the CPTAC or mCRC cohorts (Figure 2F\u2013I and Figure 2\u2014figure supplement 1B and C). However, when we focused on the early-stage (T1/T2) CRC individuals from the mCRC cohort and compared the EMT marker expression between the LNM-positive and LNM-negative groups, the EMT markers like SERPINE2 and LRP1 were significantly upregulated in both our cohort and the early-stage CRC group from the mCRC cohort (log2FC >1 and p<0.05, Wilcoxon rank-sum test) (Figure 2F and G). Additionally, PLOD2 was also found to be up-regulated in the LNM-positive group in T1/2 patients in the mCRC cohort. (Figure 2H). In summary, EMT might play an essential role during the process of LNM of tumor cells in early-CRC.\n\nAs expected, cytoskeletal remodeling proteins are differently expressed between the two groups. Cytoskeletal organization plays an important role in EMT. Cytoskeletal remodeling proteins, including ABI1, SPTA1, SPTB, ANK1, MRPL46, and ITGA2B were down-regulated in patients with LNM compared with those without LNM (log2FC <-1 and p<0.05, Wilcoxon rank-sum test). Previous research has found that loss of ABI1 contributes to tumor progression through regulation of the EMT-WNT pathway. Cytoskeletal remodeling-related pathway (GO: 0003774) was also found to be up-regulated in LNM-negative patients of the mCRC cohort (Figure 2\u2014figure supplement 1D). The rearrangement of cytoskeletal proteins might also be responsible for LNM in patients with T1 CRC though EMT (Figure 2I).\n\nWe employed single sample Gene Set Enrichment Analysis (ssGSEA) in 166 significantly different expressed proteins (log2FC >1 or <-1 and p<0.05, Wilcoxon rank-sum test) (identified in at least 30%, log2FC >1 or <\u22121 and p<0.05, Wilcoxon rank-sum test) (Figure 2J). Amino acid metabolism pathways, such as \u2018valine, leucine, and isoleucine degradation\u2019 (hsa00280) and \u2018glycine, serine, and threonine metabolism\u2019 (hsa00260), were found to be enriched in the LNM-negative group (adjusted p\u22640.05, limma approach), and related proteins (TMLHE, SLC44A2, SHMT1, and EEF1E1) were up-regulated in the LNM-negative group (Log2FC <1, p<0.05) (Figure 2K). On the other hand, the LNM-positive group mainly expressed lipid metabolism pathways, such as \u2018arachidonic acid metabolism\u2019 (hsa00590) and \u2018steroid biosynthesis\u2019 (hsa00100), which are known to promote cancer cell proliferation and migration and are involved in the regulation of EMT. In addition, tumor metastasis-related signaling pathways, such as the MAPK and p53 pathways, as well as cellular process categories (NK cell-mediated cytotoxicity and apoptosis), were enriched in LNM-positive patients. Meanwhile, the mTOR signaling pathway was enriched in the LNM-negative group. The MSI-related protein, MLH1, was significantly up-regulated in LNM-positive group (Figure 2\u2014figure supplement 1E). We also performed comparative pathway enrichment analysis of the differential expressed proteins (LNM + vs. LNM\u2212: p-value <0.05, Wilcoxon rank-sum tests) under different observation percentiles (more than 10%, 30%, and 50%). The results show that the main change pathways are similar at different observation percentiles (Figure 2\u2014figure supplement 1F and G). Overall, these findings suggest that different metabolic pathways and signaling pathways might contribute to LNM in T1 CRC.\n\nInterestingly, the LNM-positive group was significantly enriched in coagulation cascades (Figure 2L), which occurred during EMT, and previous studies have indicated that the inhibition of coagulation greatly limits cancer metastasis (Gil-Bernab\u00e9 et al., 2013). Twelve of the 84 proteins that were elevated in LNM-positive patients (log2FC >1 and p<0.05, Wilcoxon rank-sum test) were related to coagulation cascades (Figure 2M), and many of these 12 proteins are known or suspected to be linked to CRC or other cancer metastasis. For instance, CEACAM6 and SERPINE2 are risk genes for colorectal liver metastases (Beauchemin and Arabzadeh, 2013; Bergeron et al., 2010). VWF, SHC1, and CAP2 have been reported to be elevated in LNM-positive patients with gastric cancer (Franchini et al., 2013; Liebermeister et al., 2014; Li et al., 2020a). Moreover, F13A1 and GPC1 are biomarkers for melanoma metastasis (Azimi et al., 2014). Meanwhile, we found the negative correlations between the cytoskeletal remodeling-related proteins and coagulation cascades, for example, the expression of SPTA1 was negatively correlated with seven coagulation cascades-related proteins including CEACAM6, MAGED2, ISLR, GPC1, SHC1, SERPINB8 and GNG2, MRPL46 showed a negative correlation with five coagulation cascades related proteins. ANK1 and SPTB were also found to be negatively correlated with coagulation cascades. Recent studies have shown that cytoskeletal remodeling can affect complement and coagulation pathway activation. SPTA1 and SPTB are components of the erythrocyte cytoskeleton, and defects in these proteins can lead to hemolytic anemia, which can activate the coagulation cascade. MRPL46 is a mitochondrial ribosomal protein that may play a role in mitochondrial function, which can affect coagulation and inflammation (Figure 2\u2014figure supplement 1H).\n\nIn conclusion, unique protein markers specific to T1 CRC were found in this study, that may improve the understanding of LNM in early-stage CRC. EMT pathway was significantly enriched in the LNM-positive group of T1/2 CRC, and EMT-related proteins were found to be specifically up-regulated in the early-stage CRC LNM-positive group compared to the LNM-negative group. We also found differences in metabolic pathways and signaling pathways between the LNM-positive and negative groups, suggesting that different metabolic pathways and signaling pathways may contribute to LNM in T1 CRC.\n\n### Characterization of mucinous colorectal adenocarcinoma\n\nIn agreement with previous reports (Ikematsu et al., 2013), in our T1 CRC cohort the ratio of LNM was significantly higher in patients with poorly poor differentiated patients (48.6%) compared with well-moderately differentiated patients, in T1 CRC (28.8%) (p=0.004, chi-square test), Mucinous adenocarcinoma patients (55%) also shown a greater tendency to LNM than adenocarcinoma (30.1%) (p=0.004, chi-square test) (Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 2A), and mucinous adenocarcinoma was considered to be a significant risk factor of LNM in T1 CRC (Xu et al., 2020). More than 50% of patients with mucinous colorectal adenocarcinoma had LNM in our study. Thus, we divided our cohort into three subgroups: those with well to moderately differentiated adenocarcinoma (DS1, N=149; LNM ratio: 43 of 149), poorly differentiated adenocarcinoma (DS2, N=32; LNM ratio: 13 of 32) and mucinous adenocarcinoma (DS3, N=40; LNM ratio: 22 of 40) (p=0.007, chi-square test) (Figure 2\u2014figure supplement 2A and Figure 2\u2014source data 1). To identify the molecular characteristics of different groups, we determined the significantly changed proteins in each group (identified in at least 30% and p<0.05, Kruskal-Walli\u2019s test across groups with a log2-fold change [log2FC]>1, mean of DS1/DS2/DS3 vs mean of other two groups) (Figure 2\u2014figure supplement 2B and Figure 1\u2014figure supplement 2H). As a result, 140 proteins were overexpressed in DS1(log2FC >1, mean of DS1 vs mean of DS2 and DS3; p<0.05, Kruskal-Walli\u2019s test). Further pathway enrichment analysis revealed that the oxidative phosphorylation and TCA cycle pathways were higher in DS1 than in DS2 and DS3 (p<0.05) (Figure 2\u2014figure supplement 2C). In DS2, 178 proteins were highly expressed (log2FC >1, mean of DS2 vs mean of DS1 and DS3; p<0.05, Kruskal-Walli\u2019s test) and enriched in the GTPase activity and Wnt signaling pathways. In DS3, 326 proteins were overexpressed (log2FC >1, mean of DS3 vs mean of DS1 and DS2; p<0.05, Kruskal-Walli\u2019s test), functioning in more aggressive pathways such as ECM organization, cell migration, and vesicle-mediated transport. We also found that DS2 shared some features with the other two groups. For example, a SUMOylation-related pathway was identified in both DS1 and DS2, and both DS2 and DS3 were characterized by elevated levels of the NFkB signaling pathway. In conclusion, oxidative phosphorylation and TCA cycle pathways were enriched in the well to moderately differentiated adenocarcinoma subgroup, while GTPase activity and Wnt signaling pathways were enriched in poorly differentiated adenocarcinoma. The mucinous adenocarcinoma subgroup was characterized by aggressive pathways such as ECM organization, cell migration, and vesicle-mediated transport.\n\nWe then studied the relationship between the overrepresented proteins according to histological type and LNM-related proteins. Interestingly, we found a significant negative correlation in the mucinous adenocarcinoma group (Pearson correlation coefficient = \u22120.53, p<0.05) but not in the other two groups, indicating that mucinous adenocarcinoma has a unique LNM mechanism (Figure 2\u2014figure supplement 2D). Mucinous adenocarcinoma of the colorectal is a lethal cancer with unknown molecular etiology and a high propensity to lymph node metastasis. Previous proteomic studies on mucinous adenocarcinoma have found the proteins associated with treatment response in rectal mucinous adenocarcinoma and mechanisms of metastases in mucinous salivary adenocarcinoma (Sun et al., 2022; Panaccione et al., 2017). Mucinous adenocarcinoma is a distinct subtype of adenocarcinoma and is characterized by abundant mucinous components. In our data, glycoproteins and related enzymes were overexpressed in the mucinous adenocarcinoma group compared with the nonmucinous adenocarcinoma group (Figure 2\u2014figure supplement 2E), indicating that glycoproteins are an important component of mucinous adenocarcinoma.\n\nTo explore the mechanism of LNM in mucinous adenocarcinoma in T1 CRC, we focused on the functions and characterizations of the 326 proteins that were highly expressed in the mucinous adenocarcinoma group. We found that six integrins (ITGA1, ITGAV, ITGA11, ITGA9, ITGB3, and ITGB5) and 11 reported extracellular vesicle (EV) markers (ADIRF, CSPG4, DPP4, ENTPD1, LRG1, PECAM1, PLVAP, RAB25, TMEM2, TTR, and YBX1) were overexpressed in the mucinous adenocarcinoma group (Figure 2\u2014figure supplement 2F, G). Furthermore, proteins involved in the membrane trafficking and/or vesicle transport pathways, such as ARFGAP1, ARRDC1, and TOR1A. and proteins involved in ECM organization, including DDR1, LAMA5, and TTR, were upregulated in mucinous colorectal adenocarcinoma (Figure 2\u2014figure supplement 2H). Next, the composition of the tumor microenvironment in our cohort was studied using xCell (Aran et al., 2017; Figure 2\u2014figure supplement 2I and Figure 2\u2014source data 4). The stromal score was significantly higher in mucinous colorectal adenocarcinoma than in non-mucinous adenocarcinoma (p<0.05, Kruskal-Wallis test), and the signatures of endothelial cells, smooth muscle cells, and osteoblasts were enriched in mucinous colorectal adenocarcinoma; however, pericytes were decreased. The increase in endothelial cells, especially lymphatic endothelial cells, and the decrease in pericytes indicated that in mucinous colorectal adenocarcinoma, intratumoral lymphatic vessels rather than blood vessels might increase. Blood vessels are composed of endothelial cells and pericytes (dela Paz and D\u2019Amore, 2009), and lymphatic vessels are composed of a monolayer of endothelial cells (Baluk et al., 2007). This suggests that in mucinous colorectal adenocarcinoma, the density of intratumoral lymphatic vessels, rather than blood vessels, is increased, and an increase in intratumoral lymphatic vessel density might correlate with LNM (Lin et al., 2010). We employed immunohistochemistry (IHC) to validate observation using commercially available D2-40 (PDPN), a lymphatic endothelial marker, antibodies. Previous studies have shown that PDPN expression correlated with LNM in numerous cancers, especially in early oral squamous cell carcinomas (Huber et al., 2011). Immunostaining showed the D2-40 expression in mucinous adenocarcinoma was significantly higher than that in non-mucinous adenocarcinoma, in agreement with the proteomics data (Figure 2\u2014figure supplement 2J and Figure 2\u2014source data 5). In summary, we hypothesize that mucinous adenocarcinoma impacts the tumor microenvironment through EVs, resulting in an increase in intratumoral lymphatic vessel density, thereby promoting LNM (Figure 2\u2014figure supplement 2K).\n\n### Discriminative classifier to identify T1 CRC with LNM\n\nTo discover protein markers that can be used to predict LNM in patients with T1 CRC, we established a classifier that could effectively distinguish LNM to guide clinical decisions for T1 CRC. Among 70 LNM-negative and 62 LNM-positive patients in the training cohort, we identified 407 candidate proteins (identified in at least 30% of samples and p<0.1, Wilcoxon rank-sum test in the training cohort) (Figure 1\u2014figure supplement 2H). To determine feature importance (significance of the prediction feature), we employed least absolute shrinkage and selection operator (LASSO) logistic regression and used the LNM status (negative or positive) to determine the discrimination power of each signature (Figure 3\u2014figure supplement 1A and B). We constructed a classifier using the intensities of 55 proteins that facilitated accurate discrimination between LNM-negative and LNM-positive patients with T1 CRC in the training cohort (Figure 3A, Figure 1\u2014source data 3 and Figure 3\u2014source data 1). The classifier achieved an AUC of 1.00 (95% CI, 1.000) through 10-fold cross-validation in the training cohort, which indicated higher predictive power for LNM than the NCCN guidelines (AUC = 0.561) (p<0.001) (Figure 3B). The Youden\u2019s index-derived cutoff was used as the threshold, and the 55-protein classifier yielded 100% sensitivity and specificity, whereas the NCCN guidelines yielded 93.5% sensitivity and 18.6% specificity. In summary, the 55-protein classifier could be used to more accurately predict the individual probability of LNM in the training cohort (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82959/elife-82959-fig3-v2.jpg)\n\n**Figure 3.:** (A) The predictive relevance of all 55 protein markers to distinguish LNM-positive from LNM-negative T1 CRC patients is represented by a bar chart, and their least absolute shrinkage and selection operator (LASSO) coefficients are indicated. Also, see Figure 1\u2014figure supplement 2H, Figure 3\u2014figure supplement 1A, B. (B, C, D) Top: Receiver operating characteristic (ROC) curve with the area under the curve (AUC) for the protein classifier of the training cohort (B), validation cohort 1 (C), and validation cohort 2 (D). Bottom: Scatterplot representing the score of each patient with (red dot) or without (blue dot) LNM, the optimal threshold (Youden\u2019s index) of each curve (orange line) and the safety cutoff line (red line). (E) Classification error matrix using NCCN guidelines and safety cutoff from our 55-protein model. (F, G, H) ROC curve of the optimized 9-biomarker classifier using binary logistic regression (F), calibration curve of the optimized model (G), and cost-benefit decision curves (H) in 221 patients. (I & J) Classification confusion matrix of the simplified classifier in mCRC cohort (I) and CPTAC cohort (J). The number of samples identified is noted in each box.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82959/elife-82959-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Related to Figure 3. (A) Tuning parameter (l) selection in the LASSO model via minimum criteria. (B) LASSO coefficient profiles of the 105 texture features. A coefficient profile plot was produced against the log (l) sequence. A vertical line was drawn at the value selected using LASSO, where optimal l resulted in 55 nonzero coefficients. (C) Receiver operating characteristic (ROC) curve with the area under curve (AUC) for the protein classifier using p-value 0.05 (upper) or identification frequency 50% (lower) as a cutoff in the training cohort, validation cohort 1 and validation cohort 2. (D & E) The PCA analysis shows the T1/2 samples of T1 colorectal cancer (CRC) (our), mCRC, and CPTAC cohort, (D) before batch correction, (E) after batch correction.\n\nTo validate the predictive power of this classifier, a consecutive dataset from the ESD cohort (VC1, N=42) was adopted. All the samples in the ESD cohort (35 LNM-negative and seven LNM-positive individuals) were resected by endoscopy in the clinic. The 55-protein classifier achieved an AUC of 0.96 (95% CI, 0.917\u20131.000) in distinguishing LNM-positive from LNM-negative patients with 100% sensitivity/94.3% specificity in VC1 (Figure 3C). However, the AUC of the NCCN guidelines was 0.49 (85.7% sensitivity/11.4% specificity) (p<0.001) (Figure 3C). This result demonstrates that the proteomic classifier performs better than the NCCN guidelines.\n\nTo further assess the value of the proteomic classifier in the clinic, we utilized a prospective validation cohort (VC2) consisting of 47 patients (LNM-negative, N=38; LNM-positive, N=38); nine of whom received endoscopic resection, and the others received surgical resection. The classifier based on the intensities of the 55 proteins achieved 88.9% sensitivity and 84.2% specificity in distinguishing LNM-negative and LNM-positive T1 CRC patients, with an AUC of 0.93 (Figure 3D). For the NCCN guidelines, the AUC was 0.55 (p<0.001), which was relatively lower than that of the proteomic indicator.\n\nTo ensure the safety of those who have positive LNM, 0.420 was regarded as a cutoff value when stratifying the patients into \u2018high-risk\u2019 and \u2018low-risk\u2019 groups by predicting risk score for LNM range from 0 to 1, and at this threshold, all patients in the low-risk group were LNM-negative (Figure 3B\u2013D and Figure 3\u2014source data 2). When we used current clinical treatment guidelines (NCCN guidelines), it resulted in stratifying 88% patients (195 of the 221) into a high-risk category and the remaining 12% (26 of 195) into a low-risk group, only 37% (73 of 195) of patients are actually high risk, 63% (122 of 195) of patients underwent unnecessary additional surgery, and there are five (9.2%, 5 of 26) LNM-positive cases mistakenly assigned to the low-risk group (Figure 3E and Figure 1\u2014source data 1). In contrast, of the 107 patients who are classified as high risk by our model, 78 had LNM (72%), indicating that only 27.1% (29 of 107) of all patients with T1 CRC were overtreated, and all the patients stratified into the low-risk group are LNM-negative (Figure 3E and Figure 3\u2014source data 2).\n\nThe cutoff of p-value less than 0.05 or identification frequency more than 50% was also used to screen for variables, and 355 or 323 protein markers were identified. The lasso regression was carried out, and with AUC values of 1.000, 0.824, and 0.918 for the training cohort, VC1, and VC2 under the cutoff of p-value less than 0.05; AUC values of 0.999, 0.812, and 0.886 under the cutoff of identification frequency more than 50%, respectively (Figure 3\u2014figure supplement 1C). The results suggested that proteomic/protein expression profile could be used to distinguish the risk of LNM in T1 CRC.\n\nIn conclusion, compared to current strategies, our 55-protein classifier can more accurately distinguish LNM-negative and LNM-positive T1 CRC patients to better guide clinical decision-making and determine whether a patient needs additional surgery after ESD.\n\n### Simplified classifier to Identify T1 CRC with LNM\n\nTo further reduce the complexity of the indicator, 19 proteins with log2-fold change [log2FC]>1 and p<0.05 (Wilcoxon rank-sum test) in 221 samples were selected from 55 protein markers (SHMT1, PAAF1, VRK2, SEL1L, ITPR2, CPSF3, ABI1, RHOT2, SWAP70, and TTC19 were expressed higher in 143 LNM-negative patients, whereas OSBPL5, FARS2, ZG16, ATAD2, CEACAM6, SERPINB5, COMMD10, BAIAP2, and ISLR were expressed higher in 78 LNM-positive patients), followed by multiple logistic regression analysis that resulted in a final model comprising nine proteins (ATAD2, CEACAM6, COMMD10, FARS2, ITPR2, RHOT2, SERPINB5, SWAP70, VRK2) (Figure 3\u2014source data 3). The 9-protein classifier also demonstrated excellent performance in identifying LNM when we assessed its calibration, discrimination, and clinical usefulness (Figure 3F\u2013H). After using bootstraps with 1000 resamples for validation, the AUC of the simplified model was 0.824 (95% CI, 0.767\u20130.881) (Figure 3F), and the calibration curve demonstrated good agreement between the predicted status and the true status, with an error of 0.021 (Figure 3G). The decision curve showed that when the threshold probability was >5%, the use of the 9-protein classifier to predict LNM added more benefit than either the treat-all-patients scheme or the treat-none scheme (Figure 3H).\n\n### External validation of the simplified classifier\n\nTo evaluate the generalizability and reliability of our model, the data from Bing Zhang\u2019s (mCRC cohort) and Chen Li\u2019s (CPTAC cohort) studies were used as external validation cohort, and our 9-protein simplified classifier was validated in these two data sets, respectively (Zhang et al., 2014; Oh-e et al., 2001).\n\nFirst, we screened the data according to our inclusion criteria. Since the two external validation datasets focused on the all-stage CRC, the number of patients in the T1 stage was small, six patients for the mCRC cohort and three for the CPTAC cohort, we added T2NxM0 patients to the model validation.\n\nWe employed ComBat, an Empirical Bayes method, to reduce the batch effects between our dataset and the two datasets mCRC cohort and CPTAC cohort (Figure 3\u2014figure supplement 1E and F). After batch correction, nine proteins from our simplified classifier were selected, and the prediction score was calculated for each sample from both the mCRC cohort and the CPTAC cohort, respectively (Figure 3\u2014source data 4 in revision). Consistent with our previous analyses, 0.420 was regarded as a cutoff value when stratifying the patients into \u2018high-risk\u2019 and \u2018low-risk\u2019 groups by predicting risk score for LNM range from 0 to 1, and at this threshold, all patients in the low-risk group were LNM-negative.\n\nIn mCRC cohort (T1/2 CRC patients, N=16; LNM\u2212, N=13; LNM+, N=3), nine LNM-negative patients were classified into the low-risk group, and all the patients stratified into the low-risk group are LNM-negative, corresponding to a sensitivity of 100% and a specificity of 70% (Figure 3I).\n\nIn the CPTAC cohort (T1/2 CRC patients, N=16; LNM-, N=15; LNM+, N=1), 11 out of 15 LNM-negative patients were correctly identified, corresponding to a specificity of 73%. Although, the results were limited by the number of LNM-positive patients, LNM-positive patients were successfully assigned to the high-risk group with a sensitivity of 100% (Figure 3J).\n\nThese results indicated that our model was able to effectively identify patients with LNM during external validation, both in the mCRC cohort and CPTAC cohort, ensuring that no patients with metastasis were missed. At the same time, compared with the NCCN guidelines, our model classifies more patients without metastasis into the low-risk group, reducing the incidence of overtreatment, and would provide a valuable insight for clinical decisions to T1 CRC patients treatment.\n\n### Five IHC biomarkers to predict LNM\n\nTo further validate the expression patterns of the biomarkers from the proteomic results, 13 proteins from the 19 differently expressed proteins were stained for in LNM-negative and LNM-positive FFPE specimens via IHC. IHC staining was first used in 22 FFPE T1 CRC cases for proteins higher expression in LNM-negative patients, and 21 FFPE T1 CRC cases for proteins higher expression in LNM-positive patients (Figure 4\u2014source data 1). For the IHC analysis, protein abundance varied according to the adopted scoring system (on a scale of 0\u201312); thus, we generated a staining scale for all cases (Figure 4A and Figure 4\u2014figure supplement 1A). In agreement with the proteomics data, staining of ABI1 (p=0.007), ITPR2 (p=0.054), and RHOT2 (p=0.011) showed an overall increase in LNM-negative patients (Figure 4A and B, Student\u2019s t-test), whereas ATAD2 (p=0.034) and ISLR (p=0.044) showed an overall increase in LNM-positive patients (Figure 4A and Figure 4\u2014figure supplement 1B, Student\u2019s t-test) according to the proteomics data. However, the protein levels of BAIAP2, CEACAM6, PAAF1, SHMT1, SWAP70, TTC19, VRK2, and ZG16 were not significantly different between LNM-negative and LNM-positive patients (Figure 4\u2014figure supplement 1A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82959/elife-82959-fig4-v2.jpg)\n\n**Figure 4.:** (A) T1 colorectal cancer (CRC) samples from a set of 47 cases were used to verify the abundance of ABI1, ITPR2, RHOT2, ATAD2, and ISLR. The scores that represent the sum of the intensities and percentage of protein staining in the lymph node metastasis (LNM)-positive or LNM-negative patients are shown as a heat map. (Histological images were obtained using a \u00d7 40 objective, scale bars, 100um). The receiver operating characteristic (ROC) curve of each protein was built by their immunohistochemistry (IHC) score. (B) ROC curve of the five proteins classifier using IHC score by binary logistic regression. (C) The overall survival of patients with colon cancer was analyzed on the basis of The Cancer Genome Atlas (TCGA) database. (D) Correlations between RHOT2 activities and protein abundances in the T1 CRC cohort. (E) Gene set enrichment analysis (GSEA) pathways using the single-gene method of RHOT2. (F) The RHOT2 protein expression in human colon cancer cells (SW480, HT29, HCT-116, RKO, DLD1, and LoVo) was measured by western blotting. (G) The protein expression of RHOT2 in HT29. (H & I) The migration ability of HT29 cells was detected by transwell assay (images were obtained using a \u00d7 20 objective, scale bars, 100um) (Student\u2019s t-test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/82959/elife-82959-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Related to Figure 4. (A) T1 colorectal cancer (CRC) samples from 22 patients were used to verify the abundance of PAAF1, SHMT1, SWAP70, TTC19, and VRK2 (left), and 21 samples were used to verify the abundance of BAIAP2, CEACAM6, and ZG16 (right) (Histological images were obtained using a \u00d7 40 objective, scale bars, 100um). The scores that represent the product of the intensities and percentage of protein staining in the lymph node metastasis (LNM)-negative or LNM-positive samples are shown as a heat map. (B) Proportions of immunohistochemistry (IHC) samples with high (IHC score: 9\u201312), medium (IHC score: 5\u20138), or low (IHC score: 1\u20134) staining. ND: not detected.\n\nTo further validate the immunohistochemical results, more patients were added. We examined the expression of ABI1, ITPR2, RHOT2, ATAD2, and ISLR in a total of 47 T1 CRC cases (27 LNM-negative patients and 20 in LNM-positive patients). We then evaluated the predictive power of individual proteins to distinguish patients with and without LNM by the AUC. All five differentially expressed proteins, namely, ABI1 (AUC = 0.613), ITPR2 (AUC = 0.651), RHOT2 (AUC = 0.618), ATAD2 (AUC = 0.712), and ISLR (AUC = 0.65), showed good discrimination according to their IHC scores (Figure 4A). Using binary logistic regression to analyze the results of these proteins, we obtained a 5-protein classifier using the IHC score. The 5-protein IHC classifier achieved an AUC of 0.825 in 47 patients (Figure 4B).\n\n### RHOT2 promotes the migration and invasion of colon cancer cells\n\nIt has previously been reported that low levels of ABI1 and high levels of ADAT2 or ISLR, result in an increase in extracellular matrix (ECM) degradation, migration, and cell invasion in colon cancer. However, whether RHOT2 could affect the LNM in colon cancer remains unclear. RHOT2 was significantly down-regulated (Log2FC = \u22121.35; p=0.003, Wilcoxon rank-sum test) in LNM-positive patients compared with LNM-negative patients in our T1 CRC cohort. Furthermore, as shown in Figure 4C, the analysis on the basis of the TCGA database suggested that the low level of RHOT2 is related to the low overall survival of patients with colon cancer (Figure 4C, p<0.05) (Zhang et al., 2014).\n\nTo further ascertain the function of RHOT2 in T1 CRC, the correlations between the expression of RHOT2 and other proteins were calculated in our cohort (Figure 4D). We found 1508 proteins were correlated significantly (p<0.05, Spearman) with RHOT2, and 1354 proteins showed a positive correlation (coefficient >0) with RHOT2, 154 proteins were negatively correlated with RHOT2 (coefficient <0) (Figure 4D). However, when we performed GSEA in RHOT2-associated proteins to identify biological signatures impacted by RHOT2, most of the obtained pathways (p<0.01) showed NES less than 0, which means these pathways were mainly enriched in the RHOT2-negative-correlated group, only \u2018mitochondrion\u2019 (GOCC) had a positive correlation. As we know RHOT2 is an important protein involved in the regulation of mitochondrial dynamics and mitophagy (Fransson et al., 2006). This result indicates that the involvement of RHOT2 in regulation of mitochondrial function might contribute to the pathogenesis of metastasis in cancer, especially in early-stage CRC (Figure 4E). As expected, the RHOT2-negative-correlated group was significantly enriched in EMT (HALLMARK) and complement and coagulation cascade pathways. Proteins up-regulated in LNM-positive group (LNM +vs. LNM-: Log2FC >0; p<0.05, Wilcoxon rank-sum test) were negatively correlated with RHOT2 (p<0.05, coefficient <0, Spearman), including CAP2, COL6A3, COL6A2, TNC, DPYSL3, PCOLCE, and BGN in pathway EMT; and GUCY1B3, VWF, and F13A1 in pathway complement and coagulation cascades (Figure 2E and L; Figure 4D). ECM, focal adhesion, and Dilated cardiomyopathy (DCM) pathways were also enriched in the negative-correlated group (Figure 4E). Degradation of RHOT2 has already been reported to be associated with DCM (Cao et al., 2019). Overall, RHOT2 might play an important role in T1 CRC LNM.\n\nThen, we detected the RHOT2 expression in human colon cancer cells (SW480, HT29, HCT-116, RKO, DLD1, and LoVo) by western blot and RHOT2 was confirmed to be expressed in all colon cancer cell lines (Figure 4F and Figure 4\u2014source data 2). Cells were confirmed by STR profiling and the negative results for mycoplasma contamination were ensured by PCR. To investigate the role of RHOT2 in the migration of colon cancer, RHOT2 interference fragments (si-RHOT2#1 and #2) were used in this study. The data in Figure 4G and Figure 4\u2014source data 2 showed that the protein expression of RHOT2 was significantly decreased by si-RNAs, especially si-RHOT2#2. Then, we investigated the effect of RHOT2 in the migration of colon cancer cells. The results of the transwell assay showed that the migration ability of colon cancer cells was significantly increased by si-RHOT2 (Figure 4H, I, Student\u2019s t-test,p<0.05). Low expression level of RHOT2 markedly enhanced the migration ability of colon cancer cells (p<0.05).\n\n## Discussion\n\nHere, we present a comprehensive proteomics study to focus on LNM in patients with T1 CRCs. Using a mass spectrometry-based proteomic technique, we analyzed 221 T1 CRC patients and identified different molecular characteristics between patients with and without LNM. We also uncovered protein characteristics of mucinous colorectal adenocarcinoma.\n\nBased on the T1 CRC proteomics dataset, we developed a high-performing protein signature-based model for predicting LNM, which can aid in making informed decisions regarding additional surgical resection following endoscopic resection of T1 CRC. The protein signatures successfully stratified patients according to their risk of LNM. In the training cohort, 105 candidate protein features were reduced to 55 potential predictors by examining the predictor-outcome association with the LASSO method. Based on these 55 biomarkers, 10-fold cross-validation was applied to the training cohort and generated a ROC curve. The classifier achieved an AUC of 1.00 in the training cohort, which was confirmed in two independent validation cohorts. The 55 protein markers achieved an AUC of 0.96 (95% CI, 0.917\u20131.000) in the ESD validation cohort and 0.933 (95% CI, 0.858\u20131.000) in the prospectively collected validation cohort. Besides, a simplified model consisting of only 9 proteins, which could effectively identify patients with LNM in T1/2 CRC, was developed and validated on external data.\n\nIn recent years, there have been many studies on LNM in T1 CRC, among which the following studies are representative: in 2021, Shin-Ei Kudo and colleagues developed a machine-learning artificial neural network using data on patients' age and sex, tumor characteristics, and histologic grade to identify patients with T1 CRCs who had LNM, the ANN model outperformed guidelines in identifying high-risk patients who require radical surgery. In 2022, Yinghui Zhao and colleagues conducted genome-wide methylation profiling of T1 CRC specimens and developed a nine-CpG signature that can distinguish LNM-positive versus LNM-negative specimens and pre-treatment biopsies. The signature has the potential to improve the selection of high-risk patients. Also in 2022, Yuma Wada and colleagues developed a blood-based liquid biopsy assay to detect LNM in high-risk submucosal T1 CRCs. Their transcriptomic panel of four miRNAs and five mRNAs showed robust identification of patients with LNM.\n\nCompared to the above-mentioned studies, in addition to higher predictive accuracy, this study has the following advantages: since the ultimate goal of the project was to precisely identify the LNM in T1 CRC, and to reduce additional surgery after endoscopic resection for LNM-negative patients, we set up a cohort only containing EDS samples to validate our predictive model, and a single-blinded prospective cohort was also used to validate the accuracy of the model. Furthermore, we demonstrated the potential for clinical translation of our study. Based on the proteomic results, we further constructed an effective classifier using five proteins based on their IHC score to optimize our model for clinical use.\n\nIn this study, to ensure the accuracy of the LN status of the enrolled patients, the dissected number of LN in all patients including both surgical resection and ESD was more than 12. However, the longer-term follow-up data, including DFS, PFS, etc., are not available due to limitations in sample collection time and the prognosis of such patients needs to be tracked over long periods of time, and may impact the strength of our conclusions. To address this limitation, we used propensity-score matching to reduce confounding biases in our training cohort. Patients were prospectively enrolled in our validation cohort (VC2), which was designed as a single-blinded prospective study to enhance the rigor and reliability of our findings. Furthermore, the presence of isolated tumor cells (ITCs) or micrometastases (MMs) within regional LN is not considered, due to conventional histopathologic examination cannot detect them. According to previous studies, there were about 5% pT1N0 gastric cancer patients have ITCs in LN, and 10% in pT1Nx CRC (Zhao et al., 2023; Yonemura et al., 2007; Ishida et al., 1997; Yasuda et al., 2007; Doekhie et al., 2006). The effect of MMs on prognosis in pT1N0 CRC is still unclear. The present of ITCs/MMs in LN may explain why there are nearly 13% (29 of 221) of LNM-negative patients were classified into high-risk groups by the prediction model in our study. We will continuously follow the prognosis of the patients, and the ITCs/MMs in LN also need to be further validated in the future studies.\n\nBesides, we found dysregulation of RHOT2 expression can impact LNM in T1 CRC. Although the function of RHOT2 in cancer is still unclear, the expression of its paralog RHOT1 affects metastasis in a variety of tumors, including pancreatic cancer, gastric cancer, small cell lung cancer, etc. (Li et al., 2015; Peng et al., 2022; Zhang et al., 2021). In addition, previous studies have found that Myc regulation of mitochondrial trafficking through RHOT1 and RHOT2 enables tumor cell motility and metastasis (Agarwal et al., 2019). In our research, we demonstrate that low expression of RHOT2 was associated with LNM and poor prognosis, and knocking down RHOT1 can significantly increase the migration of CRC cells. The mechanism by which RHOT2 affects CRC LNM is not fully understood, but might involve several pathways. One potential pathway involves the regulation of EMT, a process by which cancer cells acquire invasive properties and become more motile. More analytical studies and experiments are needed in our future research to understand the specific role and mechanism of RHOT2 in the process of tumor metastasis.\n\nIn conclusion, we used proteomic analysis to identify molecular characteristics and develop the high accuracy protein signature-based models for predicting LNM in patients with T1 CRC.\n\n## Materials and methods\n\n### Patient\n\nIn this study, a training cohort and two independent validation cohorts of consecutive patients who visited the General Surgery Department, Zhongshan Hospital, Fudan University (Shanghai, China) were enrolled. The study was approved by the Institution Review Board of Fudan University Zhongshan Hospital, approval number: B2019-166.\n\nIn the training cohort (a retrospective cohort), we initially collected data on 604 patients who underwent surgical resection with LN dissection between June 2008 and October 2019. We then excluded 233 patients in whom fewer than 12 LNs were examined from the LNM-negative group. After matching the two groups for sex and age by propensity-score, we enrolled 132 patients.\n\nFor the ESD validation cohort (VC1), we studied 42 consecutive ESD samples before additional surgical resection from June 2008 to October 2019, and the LNM status was then examined by LN dissection.\n\nThe prospective validation cohort (VC2) comprised 47 consecutively prospectively enrolled individuals from November 2019 to April 2020 and was a single-blinded cohort.\n\nThe model was developed and validated in the retrospective cohort and then prospectively tested in the prospective cohort. In all cohorts, the inclusion criteria (as follows) were the same: aged between 18 and 80 years; undergone curative surgical resection; and pathological confirmation of colorectal adenocarcinoma, mucinous adenocarcinoma, or signet-ring cell carcinoma with pT1 disease according to the AJCC/UICC TNM staging system, 8th edition. The exclusion criteria (as follows) were also the same in all cohorts: patients who had undergone only endoscopic treatment; those who were diagnosed with familial adenomatous polyposis, Lynch syndrome, or history of inflammatory bowel disease; those who had undergone transanal endoscopic microsurgery; those who developed synchronous invasive carcinomas; and those with missing data. Patients who had received preoperative chemotherapy or radiotherapy were excluded.\n\n### Sample preparation\n\nThe FFPE samples derived from 221 T1 CRC patients were collected, and the tumor regions were determined by pathological examination. For clinical sample preparation, sections (10 \u03bcm thick) from FFPE blocks were macro-dissected, deparaffinized with xylene, and washed with ethanol. The ethanol was removed completely and the sections were left to air-dry. For this purpose, a hematoxylin-stained section of the same tumor was used as a reference. Areas containing 80% or more tumors were examined by pathologists.\n\nLysis buffer [0.1 M Tris-HCl (pH 8.0), 0.1 M DTT (Sigma, 43815), 1 mM PMSF (Amresco, M145)] was added to the extracted tissues before adding SDS to the solution. The solution with the samples was sonicated for 1 min (3 s on and 3 s off, amplitude 25%) on ice. The supernatants were collected, and the protein concentration was determined using the Bradford assay. 4% sodium dodecyl sulfate (SDS) was added and kept for 2.5 hr at 99 \u00b0C with shaking at 1800 rpm. The solution was collected by centrifugation at 12,000 \u00d7 g for 5 min. A fourfold volume of acetone was added to the supernatant and kept at \u201320 \u00b0C overnight. Subsequently, the acetone-precipitated proteins were washed three times with cooled acetone. Filter-aided sample preparation (FASP) procedure was used for protein digestion (Wi\u015bniewski et al., 2009). The proteins were resuspended in 200 \u03bcL 8 M urea (pH 8.0) and loaded in 30 kD Microcon filter tubes (Sartorius) and centrifuged at 12,000 g for 20 min. The precipitate in the filter was washed three times by adding 200 \u03bcL 50 mM NH4HCO3. The precipitate was resuspended in 50 \u03bcL 50 mM NH4HCO3. Protein samples underwent trypsin digestion (enzyme-to-substrate ratio of 1:50 at 37\u00b0C for 18\u201320 hr) in the filter, and then were collected by centrifugation at 12,000 g for 15 min. Additional washing, twice with 200 \u03bcL of MS water, was essential to obtain greater yields. Finally, the centrifugate was pumped out using the AQ model Vacuum concentrator (Eppendorf, Germany).\n\n### Mass spectrometry analysis\n\nPeptide samples were analyzed on a Q Exactive HF-X Hybrid Quadrupole-Orbitrap Mass Spectrometer (Thermo Fisher Scientific, Rockford, IL, USA) coupled with a high-performance liquid chromatography system (EASY nLC 1200, Thermo Fisher). Peptides, re-dissolved in Solvent A (0.1% formic acid in water), were loaded onto a 2 cm self-packed trap column (100 \u03bcm inner diameter, 3 \u03bcm ReproSil-Pur C18-AQ beads, Dr. Maisch GmbH) using Solvent A, and separated on a 150-\u03bcm-inner-diameter column with a length of 15 cm (1.9 \u03bcm ReproSil-Pur C18-AQ beads, Dr. Maisch GmbH) over a 75 min gradient (Solvent A: 0.1% formic acid in water; Solvent B: 0.1% formic acid in 80% ACN) at a constant flow rate of 600 nL/min (0\u201375 min, 0 min, 4% B; 0\u201310 min, 4\u201315% B; 10\u201360 min, 15\u201330% B; 60\u201369 min, 30\u201350% B; 69\u201370 min, 50\u2013100% B; 70\u201375 min, 100% B). The eluted peptides were ionized under 2 kV and introduced into the mass spectrometer. MS was operated under a data-dependent acquisition mode. For the MS1 Spectra full scan, ions with m/z ranging from 300 to 1400 were acquired by Orbitrap mass analyzer at a high resolution of 120,000. The automatic gain control (AGC) target value was set as 3E+06. The maximal ion injection time was 80ms. MS2 Spectra acquisition was performed in top-speed mode. Precursor ions were selected and fragmented with higher energy collision dissociation with a normalized collision energy of 27%. Fragment ions were analyzed using an ion trap mass analyzer with an AGC target value of 5E+04, with a maximal ion injection time of 20 ms. Peptides that triggered MS/MS scans were dynamically excluded from further MS/MS scans for 12 s. A single-run measurement was kept for 75 min. All data were acquired using Xcalibur software (Thermo Scientific).\n\n### Peptide and protein identification\n\nMS raw files were processed using the Firmiana proteomics workstation (Feng et al., 2017). Briefly, raw files were searched against the NCBI human Refseq protein database (released on 04-07-2013; 32,015 entries) using the Mascot search engine (version 2.3, Matrix Science Inc). The mass tolerances were: 20 ppm for precursor and 50 mmu for product ions collected by Q Exactive HF-X. Up to two missed cleavages were allowed. The database searching considered cysteine carbamidomethylation as a fixed modification, and N-acetylation, and oxidation of methionine as variable modifications. Precursor ion score charges were limited to +2, +3, and +4. For the quality control of protein identification, the target-decoy-based strategy was applied to confirm the FDR of both peptide and protein, which was lower than 1%. Percolator was used to obtain the quality value (q-value), validating the FDR (measured by the decoy hits) of every peptide-spectrum match (PSM), which was lower than 1%. Subsequently, all the peptides shorter than seven amino acids were removed. The cutoff ion score for peptide identification was 20. All the PSMs in all fractions were combined to comply with a stringent protein quality control strategy. We employed the parsimony principle and dynamically increased the q-values of both target and decoy peptide sequences until the corresponding protein FDR was less than 1%. Finally, to reduce the false positive rate, the proteins with at least one unique peptide and more than 10\u22125 in FOT were selected for further investigation. Keratins were also excluded to ensure the credibility of the data.\n\n### Label-free-based MS quantification of proteins\n\nThe one-stop proteomic cloud platform \u2018Firmiana\u2019 was further employed for protein quantification. Identification results and the raw data from the mzXML file were loaded. Then for each identified peptide, the extracted-ion chromatogram (XIC) was extracted by searching against the MS1 based on its identification information, and the abundance was estimated by calculating the area under the extracted XIC curve. For protein abundance calculation, the nonredundant peptide list was used to assemble proteins following the parsimony principle. The protein abundance was estimated using a traditional label-free, intensity-based absolute quantification (iBAQ) algorithm (Schwanh\u00e4usser et al., 2011), which divided the protein abundance (derived from identified peptides\u2019 intensities) by the number of theoretically observable peptides. We built a dynamic regression function based on the commonly identified peptides in tumor samples. According to correlation value R2, Firmiana chose linear or quadratic functions for regression to calculate the retention time (RT) of corresponding hidden peptides, and to check the existence of the XIC based on the m/z and calculated RT. Subsequently, the fraction of total (FOT), a relative quantification value was defined as a protein\u2019s iBAQ divided by the total iBAQ of all identified proteins in one experiment, and was calculated as the normalized abundance of a particular protein among experiments. Finally, the FOT was further multiplied by 105 for ease of presentation, and FOTs less than 10\u20135 were replaced with 10\u20135 to adjust extremely small values (Ge et al., 2018).\n\n### Immunohistochemistry (IHC) staining\n\nFFPE tumor blocks were obtained from the Institute of Pathology at the Affiliated Zhongshan Hospital of Fudan University. Tumor blocks were cut into 4 \u03bcm sections. Nonspecific background staining was blocked via a serum-free protein blocker (BOSTER, USA) for 10 min at room temperature. Next, Sections were incubated with anti-SHMT1 (SignalwayAntibody, 31314), anti-PAAF1 (Proteintech, 17650\u20131-AP), anti-VRK2 (SignalwayAntibody, 43825), anti-ABI1 (SignalwayAntibody, 36723), anti-RHOT2 (Proteintech, 11237\u20131-AP), anti-SWAP70 (SignalwayAntibody, 42812), anti-TTC19 (Proteintech, 20875\u20131-AP), anti-ZG16 (Proteintech, 67389\u20131-Ig), anti-ATAD2 (Cell Signaling Technology, 78568 S), anti-BAIAP2 (Proteintech, 11087\u20132-AP), anti-ISLR2 (Novus Biologicals, AF4526-SP), anti-ITPR2 (SignalwayAntibody, 37666) overnight at 4 \u00b0C after blocking for 1 hr at room temperature, according to the manufacturers\u2019 instructions. Then, TMA sections were incubated with secondary biotinylated goat anti-Rabbit/Mouse antibody. For signal detection, samples were incubated with DAB (BOSTER, USA) for 10 min. All specimens were counterstained with hematoxylin and Scott\u2019s blue. Washing steps were conducted with tris-buffered saline with 0.1% Tween (pH 7.4). The IHC staining results were evaluated independently by two pathologists who were blinded to the clinicopathologic data. According to the proportion of positive cells, samples were scored as follows: 0+, none; 1+, <25%; 2+, 25\u201350%; 3+, 51\u201375%; and 4+, 75\u2013100%. The staining intensity was evaluated as follows: 0, none; 1, weak; 2, medium; and 3, strong. The final score (range 0\u201312) was calculated by multiplying the two sub-scores, and divided into four groups: high (IHC score: 9\u201312), medium (IHC score: 5\u20138), low (IHC score: 1\u20134), and ND (IHC score: 0, not detected).\n\n### MSI status evaluating\n\nThe Microsatellite instability (MSI) status of 171 patients was evaluated using IHC. Four mismatch repair (MMR) proteins (MLH1, MSH2, MSH6, and PMS2) were stained in tumor and normal samples, and the results were evaluated independently by two pathologists. The patients who showed positive staining of the nuclei of all four MMR proteins were considered as proficient MMR (pMMR)/ microsatellite stable (MSS), and the mismatch repair-deficient (dMMR) /microsatellite instability-high (MSI-H) cases show the loss of one of the two MLH1/PMS2 or MSH2/MSH6 heterodimers (Samowitz, 2015).\n\n### Gene mutations\n\nDNA of CRC FFPE tissues were extracted from serial sections (3 \u00d7 10 \u00b5m sections per extraction) using the QIAamp DNA FFPE Tissue Kit (Qiagen). according to the manufacturer\u2019s instructions. DNAs were quantitated by the PicoGreen Assay (Invitrogen, Carlsbad, CA). Analysis of mutations in the KRAS, NRAS, BRAF, and PI3KCA genes was carried out using four kits of the KRAS/BRAF, NRAS, BRAF, and PI3KCA Mutation Analysis Kit for Real-Time PCR (ABI 7500, applied biosystems Thermofisher). The tests examined the most common mutations in codons 12, 13, 59, 61, 117, and 146 in KRAS and NRAS genes, in codon 600 of the BRAF gene and in codons 542, 545, 1047 in PI3KCA gene.\n\n### Statistical analysis\n\nStatistical details of experiments and analyses can be found in the figure legends and main text above. All statistical tests and calculations were performed using SPSS (SPSS Inc, Chicago, IL, USA), or R 3.5.1 (R Foundation for Statistical Computing, Vienna, Austria; http://www.r-project.org/). Protein intensities were log2-transformed for further analysis, apart from the coefficient analysis. Statistical significance tests, Chi-square test, and Wilcoxon rank-sum test, as denoted in each analysis. The statistical significance was considered when p-value <0.05. Kaplan\u2013Meier plots (Log-rank test) were used to describe overall survival. The proteome analysis results were uniformly defined as \u2018up-regulated\u2019 or \u2018down-regulated\u2019 based on the measurements from a statistical test (two-sided Student\u2019s t-test/Wilcoxon rank-signed test/ Kruskal-Walli\u2019s test) and the log2 transformed fold change (\u22651 for upregulation and \u2264 \u20131 for downregulation).\n\n### LNM prediction model\n\nThe least absolute shrinkage and selection operator (LASSO) method, which is suitable for the regression of high-dimensional data was used to select the most useful predictive proteins from the training cohort. Lasso binary logistic regression was done using the \u2018glmnet\u2019 package. A LNM score was calculated for each patient via a linear combination of selected features that were weighted by their respective coefficients. To obtain an unbiased estimate of the prediction power of signatures, we performed a 10-fold cross-validation on the training cohort using Logistic Regression. The predictive power was also validated in two validation cohorts. Receiver operating characteristic (ROC) curves were constructed using the pROC R package in the R software, and the area under the ROC curve (AUC) was used to evaluate the diagnostic performance of the selected proteins.\n\nNine proteins with insignificant Estimate Std. Error z value (Pr (>|z|)<0.05) were further selected to build a simplified classifier using Logistic Regression. Calibration curves were plotted to assess the calibration of the classifier used rms and ResourceSelection R packages in the R software, accompanied by bootstrapping validation (1000 bootstrap resamples). Decision curve analysis was conducted to determine the clinical usefulness of the simplified model by quantifying the net benefits at different threshold probabilities in the validation dataset. The decision curve was constructed using the rmda R package in the R software.\n\nThe prediction power of IHC scores in single IHC samples was built by SPSS, and the five proteins predict model was built by R using Logistic Regression.\n\n### Cell culture, transfection, and cell lines\n\nWe used human colon cancer cell lines SW480, HT29, HCT-116, RKO, DLD1, and LoVo (from General Surgery, Zhongshan Hospital) in this study. The cell lines were confirmed by STR profiling. The mycoplasma contamination of six cell lines was detected by the PCR-based test using GTB\u2019s Mycoplasma Detection Kit. None of the cells were contaminated with mycoplasma. All cell lines were cultured in DMEM (Corning Costar) with 10% FBS (Gibco), 100 units of penicillin, and 100 mg/mL streptomycin (Gibco) at 37 \u00b0C in 5% CO2. Cells were transfected with siRNAs (si-RHOT2#1: sense (5'\u20133'), GCUCAACGCUUUCCAGAAATT; antisense (5'\u20133'), UUUCUGGAAAGCGUUGAGCTT; si-RHOT2#2: sense(5'\u20133'), GCGUCUACAAGCACCAUUATT; antisense (5'\u20133'), UAAUGGUGCUUGUAGACGCTT) using Lipofectamine 2000 according to the manufacturer\u2019s protocol. Knockdown efficiency was verified by western blotting.\n\n### Cell migration analysis\n\nFor the transwell migration assay, 4 \u00d7 104 serum-starved cells were trypsinized and plated onto an FN-coated upper chamber membrane (8 \u03bcm pore filter, Corning Costar, Cat. No. 3422) of a transwell chamber with the corresponding inhibitors. The lower transwell chamber was filled with 2.5% serum containing DMEM. After incubation for 48 hr, the filters were removed, and the cells on the membrane were fixed with methanol. The migrated cells on the underside of the membrane were stained with 0.5% crystal violet. The dye was washed with water, and the cells were examined by microscopy.\n\n### Ethics approval\n\nThe present study was carried out comply with the ethical standards of Helsinki Declaration II. The study was approved by the Institution Review Board of Fudan University Zhongshan Hospital, approval number: B2019-166. At the consent visit, patients were provided with a study overview. All patients signed the informed consent form and consent to publish. The informed consent document included consent for research samples and consent to protect confidential patient information by the personnel approved under the Institution Review Board of Fudan University Zhongshan Hospital. Any person not involved with the research study did not have access to patient identifying data. De-identified data was allowed to be shared with collaborators and findings from the study be published. Finally, the consent included patient\u2019s right to withdraw from the study at any time. The patient was provided with a copy of the signed informed consent.\n",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "4d8d1818-539a-4848-8757-f9f071acc8da",
+      "submission_id": "142a6a9c-0be2-42f4-b118-86a3c88be49a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Aparna Parikh, https://ror.org/002pd6e78 Massachusetts General Hospital United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82959.sa0](https://doi.org/10.7554/eLife.82959.sa0)\n\nThis paper seeks to answer an important clinical question by coming up with novel predictive biomarkers to predict high-risk T1 colorectal cancers that are at risk for nodal involvement with a machine-learning approach. The findings underscore that T1 CRC may have unique features and pathways that contributed to LNM.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Aparna Parikh, https://ror.org/002pd6e78 Massachusetts General Hospital United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82959.sa1](https://doi.org/10.7554/eLife.82959.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Proteomics Characteristics Reveal the Risk of T1 Colorectal Cancer Metastasis to Lymph Nodes\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Wafik El-Deiry as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nHere are the overall comments and the essential revisions to consider. Please refer to Recommendations to Authors.\n\nReviewer #1 (Recommendations for the authors):\n\nAs a nonmass spec expert I can't comment on methods of development of the classifier but the clinical relevance and biomarker testing with training and validation subsets, one of which was prospective as well as the performance characteristics, makes the finding intriguing with clinical relevance with the ability to use IHC as well.\n\nIt was notable, that AUCs were compared using standard clinical features which demonstrated the classifier performed better.\n\nThis was a well-done paper asking clinical useful questions.\n\nReviewer #2 (Recommendations for the authors):\n\n1. The authors are suggested to describe more on the relationship between proteomic characterizations of LNM-negative vs LNM-positive groups, mucinous colorectal adenocarcinoma with the biomarker exploration.\n\n2. What is the rationale to define a training cohort and two different validation cohorts?\n\n3. The authors are suggested to utilize additional CRC cohorts reported previously (Nature. 2014; 513:382; Cell. 2019; 177:1035; Cancer Cell. 2020; 38:734) for validating their 9 identified biomarkers.\n\n4. The method described in this manuscript is confusing. For example, the proteins were extracted from tissues by Tris-lysis buffer, and the protein concentration was quantified by using Bradford assay. However, the authors further extracted the proteins from tissues by using an SDS-lysis buffer again.\n\n5. The description of proteome data in this manuscript is confusing. An average of fewer than 6000 proteins were identified in each tissue sample, but totally more than 13000 proteins were identified from all samples. The total number is >2-fold higher than the average number of protein identification in each sample.\n\nReviewer #3 (Recommendations for the authors):\n\nOverall the study shows a lot of potential \u2013 but many areas need improvement. It might be better published as a resource absent significant additional work.\n\nIn addition to standard genetics, correlation with a common oncogenic driver and tumor suppressor gene alterations would be helpful if available even for a subset of patients. The classifiers are also not tested on other, publicly available datasets, which might include genetics and later-stage patients, and patients with known outcomes to test whether these classifiers predict survival / DFS / PFS, etc.\n\nThe writing generally states that something meets a statistical threshold without stating the direction of change (for example, that there is a significant difference in the rate of metastasis between right and left colon would be better explained that right-sided CRCs metastasized less frequently than left-sided).\n\nThe section that generally describes the data is so general as to be unhelpful. For example in the section from ~317-346, no fold-changes are mentioned, so it is hard to know what something being upregulated or down-regulated means. The findings in coagulation and cytoskeleton are interesting in principle if more detail were present. The sentence \"in conclusion, different differentiation statuses and histologic types in T1 CRC indicate specific pathways\" is devoid of content.\n\nThe Discussion section is predominantly a summary of key results and would be better used contextualizing the work.\n\nThere is no meaningful difference between the two validation cohorts and they could be merged. The second validation cohort is described almost as if it were a clinical trial, but the data were not used in patient care. Figure 1 Figure Supplement 1 the legend is buried in the bottom corner and should be easier to find.\n\nIn figure 2C, the proteomaps are very pretty but devoid of information. These might be useful in contexts where there are large differences, but given the very small overall differences here, they are not helpful.\n",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1aace079-5940-4106-8880-12e0b03c0fcd",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C1",
+      "claim": "CRC is the third most common cancer worldwide and the third leading cause of cancer-related deaths in Western countries.",
+      "claim_type": "EXPLICIT",
+      "source": "CRC is the third most common cancer worldwide and the third leading cause of cancer-related deaths in Western countries (Malvezzi et al., 2014; Hori et al., 2015; Jemal et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three published studies (Malvezzi et al., 2014; Hori et al., 2015; Jemal et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "e48c76e6-c28d-4865-91b7-2c35d002380f",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C2",
+      "claim": "Endoscopic removal of adenomatous polyps can reduce CRC-related mortality by more than 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that the endoscopic removal of adenomatous polyps can reduce CRC-related mortality by more than 50%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as an estimate in the manuscript text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "f75702ed-0e2b-4b42-ab56-2838f88b2027",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C3",
+      "claim": "ESD alone is an effective option for T1 CRC patients who are at low risk for developing LNM.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence suggests that ESD (endoscopic submucosal dissection) alone is an effective option for T1 CRC patients, who are at low risk for developing LNM, while more extensive radical surgery after ESD is needed for only high-risk patients (Ikematsu et al., 2013; Yoda et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to two studies (Ikematsu et al., 2013; Yoda et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "e7876a3b-4875-439c-b519-e72d1f51a720",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C4",
+      "claim": "Approximately 70 to 80% of T1 CRC patients are classified as high risk according to current clinical treatment guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the current clinical treatment guidelines, which rely on a histopathological examination, approximately 70 to 80% of patients are classified as high risk (poor tumor differentiation, lymphatic/vascular invasion, and depth of submucosal invasion >1000 mm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the manuscript text describing current clinical guidelines.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "cb0a72e4-aee8-4ebf-826a-71555e9b5a7d",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C5",
+      "claim": "Only 8 to 16% of T1 CRC patients' LN status can be accurately predicted by current histopathological guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the LN status of only 8 to 16% of patients can be accurately predicted by these guidelines; thus, a large number of LNM-negative patients routinely undergo unnecessary additional surgeries, with an associated postoperative mortality rate of 3\u20136% (Tanaka et al., 1995; Kobayashi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to two studies (Tanaka et al., 1995; Kobayashi et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "63fc0c57-3fca-4b83-840b-2ee030722f62",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C6",
+      "claim": "Additional surgery after ESD for T1 CRC has an associated postoperative mortality rate of 3\u20136%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the LN status of only 8 to 16% of patients can be accurately predicted by these guidelines; thus, a large number of LNM-negative patients routinely undergo unnecessary additional surgeries, with an associated postoperative mortality rate of 3\u20136% (Tanaka et al., 1995; Kobayashi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to two studies (Tanaka et al., 1995; Kobayashi et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "2546c4c4-8336-4df7-93e8-3eb45517b6cd",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C7",
+      "claim": "Ozawa et al. developed a predictive model for T1 and T2 CRC using miRNA expression data that achieved an AUC of 0.74.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, Ozawa et al., and Kandimalla et al., used the microRNA (miRNA) and messenger RNA (mRNA) expression dataset of T1 and T2 CRC patients from The Cancer Genome Atlas (TCGA) as the training cohort to build predictive models, achieved an area under the ROC curve (AUC) values of 0.74 and 0.84, respectively (Ozawa et al., 2018; Kandimalla et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ozawa et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "7b787d2d-ef38-4da1-9e5b-65b14752b782",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C8",
+      "claim": "Kandimalla et al. developed a predictive model for T1 and T2 CRC using mRNA expression data that achieved an AUC of 0.84.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, Ozawa et al., and Kandimalla et al., used the microRNA (miRNA) and messenger RNA (mRNA) expression dataset of T1 and T2 CRC patients from The Cancer Genome Atlas (TCGA) as the training cohort to build predictive models, achieved an area under the ROC curve (AUC) values of 0.74 and 0.84, respectively (Ozawa et al., 2018; Kandimalla et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kandimalla et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "4a6963c5-b226-473f-9c1f-9eb7df691670",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C9",
+      "claim": "Kudo et al. developed an algorithm to predict LNM in 4073 patients with T1 CRC by clinicopathological characteristics and achieved an AUC of 0.83.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, Kudo et al., developed an algorithm to predict LNM in 4073 patients with T1 CRC by clinicopathological characteristics and achieved an AUC of 0.83 (Kudo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kudo et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "3ff7c8da-a328-4bc9-b1c8-3f038626ec1d",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C10",
+      "claim": "The study analyzed FFPE tumor samples from 143 LNM-negative and 78 LNM-positive patients with T1 CRC, totaling 221 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify LNM mechanisms and protein signatures for T1NxM0 CRC, we performed mass spectrometry (MS)-based proteomics to analyze FFPE tumor samples from 143 LNM-negative and 78 LNM-positive patients with T1 CRC, totaling 221 individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the manuscript text describing the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "ec510066-d010-4eb2-97e7-e675046f55e1",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C11",
+      "claim": "LNM in T1 CRC is significantly associated with submucosal invasion depth (p=0.014).",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported in T1NxM0 CRC, LNM is significantly associated with the submucosal invasion depth (p=0.014, chi-square test), lymphatic or vascular invasion (p<0.001, chi-square test), and poor differentiation (p=0.004, chi-square test) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (chi-square test) with p=0.014.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "e4d9abd6-5543-4bce-843f-243470cc5780",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C12",
+      "claim": "LNM in T1 CRC is significantly associated with lymphatic or vascular invasion (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported in T1NxM0 CRC, LNM is significantly associated with the submucosal invasion depth (p=0.014, chi-square test), lymphatic or vascular invasion (p<0.001, chi-square test), and poor differentiation (p=0.004, chi-square test) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (chi-square test) with p<0.001.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "105ac3ad-bc01-476e-8b10-51b0d30a021e",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C13",
+      "claim": "LNM in T1 CRC is significantly associated with poor differentiation (p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported in T1NxM0 CRC, LNM is significantly associated with the submucosal invasion depth (p=0.014, chi-square test), lymphatic or vascular invasion (p<0.001, chi-square test), and poor differentiation (p=0.004, chi-square test) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (chi-square test) with p=0.004.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "e3685da2-a3d0-4b3f-a959-5501cfa8c928",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C14",
+      "claim": "Left-sided T1 CRC tumors showed a higher metastatic tendency (41.1% LNM rate) than right-sided tumors (22.0% LNM rate) (p=0.036).",
+      "claim_type": "EXPLICIT",
+      "source": "In our cohort, the rate of LNM was related to tumor location, specifically. The left-sided tumors (LNM rate: 41.1%) showed a higher metastatic tendency than right-sided (LNM rate: 22.0%) (p=0.036, chi-square test) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (chi-square test) with p=0.036.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "589b9c98-410c-4813-8969-1d363c92ca8c",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C15",
+      "claim": "7% of T1 CRC patients in the study cohort were MSI-H.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 172 patients for whom MSI status was available, 12 (7%) were MSI-H, which is consistent with previous reported on metastatic CRC by Federico et al., (6.6%) (Innocenti et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the manuscript text and supported by comparison to a cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "f83f0146-50ab-4b30-89db-375068086845",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C16",
+      "claim": "16.7% of MSI-H T1 CRC patients had LNM, compared to 39.6% of MSS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "For MSI-H patients, there were 16.7% (2 of 12) had LNM, and 39.6% (63 of 159) for MSS patients, the MSS group showed a higher tendency of LNM (Figure 1\u2014figure supplement 1K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "9dcd94d4-bfcb-4eda-b68d-a07cf355090c",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C17",
+      "claim": "More than 13,000 protein groups were identified in the study with a 1% false discovery rate at the peptide and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we produced a high-quality dataset (Figure 1\u2014figure supplement 2), more than 13,000 protein groups (with a 1% false discovery rate [FDR] at the peptide and protein levels) were identified, and the identification number of each sample was over 4000 proteins (Figure 1\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the manuscript text describing the proteomic data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "103d63fd-20c7-4404-8534-42d29e67b5cb",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C18",
+      "claim": "Among 44 reported CRC LNM markers, only CTSD, GSTM3, and MX1 were differentially expressed between LNM-negative and LNM-positive patients in the proteomic data (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 44 reported gene or RNA markers, only CTSD, GSTM3, and MX1 (Oh-e et al., 2001; Meding et al., 2012; Croner et al., 2014) were differentially expressed between LNM-negative and LNM-positive patients in our proteomic data (p<0.05, Wilcoxon rank-sum tests) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (Wilcoxon rank-sum tests) and references to Figure 2A, with citations to three studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "9dc2be2a-fdc8-403e-8e9e-eb4d7c237635",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C19",
+      "claim": "2577 proteins were detected specifically in the T1 CRC cohort compared to previous all-stage CRC proteomic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We also compared our data with those of the previous all stage CRC proteomic studies (CPTAC cohort and mCRC cohort) (Zhang et al., 2014; Li et al., 2020b), 4634 proteins were found in all three cohorts, whereas 2577 proteins were detected specifically in our T1 CRC cohort (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison with published datasets and reference to Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "07559cc2-c219-494f-912d-33c69fc2c020",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C20",
+      "claim": "82 proteins were significantly differentially expressed in LNM-negative T1 CRC patients (identified in at least 30% of samples with log2FC>1 or <-1 and p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 82 and 84 proteins were significantly differentially expressed in LNM-negative and LNM-positive patients, respectively (identified in at least 30% of samples with a log2-fold change [log2FC]>1 or <-1 and p<0.05, Wilcoxon rank-sum test) (Figure 2B and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (Wilcoxon rank-sum test) and reference to Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "6c2b889f-2441-42ec-b3a5-5963fee1355e",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C21",
+      "claim": "84 proteins were significantly differentially expressed in LNM-positive T1 CRC patients (identified in at least 30% of samples with log2FC>1 or <-1 and p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 82 and 84 proteins were significantly differentially expressed in LNM-negative and LNM-positive patients, respectively (identified in at least 30% of samples with a log2-fold change [log2FC]>1 or <-1 and p<0.05, Wilcoxon rank-sum test) (Figure 2B and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (Wilcoxon rank-sum test) and reference to Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "050ac63e-dfa6-45da-9340-be517b113154",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C22",
+      "claim": "19 FDA-approved drug targets were identified among proteins overrepresented in LNM-positive T1 CRC patients, including F13A1, GBA, GNG2, GUCY1B3, STK3, STK4, and VWF.",
+      "claim_type": "EXPLICIT",
+      "source": "To search for druggable targets in LNM-positive T1 CRC, we investigated 84 proteins that were overrepresented in LNM-positive patients and identified 19 US Food and Drug Administration (FDA)-approved drug targets: F13A1, GBA, GNG2, GUCY1B3, STK3, STK4, VWF, etc. (Figure 2C and Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of druggable proteins and reference to Figure 2C.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "909662d7-83ed-45a7-ad22-93b2be0c6a11",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C23",
+      "claim": "34 proteins were identified as potential drug targets in LNM-positive T1 CRC patients, including ATAD2, BAIAP2, CEACAM6, FARS2, MX2, OSBPL5, SERPINB5, SERPINB8, SHC1, UBE2Z, YAP1, and ZG16.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 34 of these proteins, including ATAD2, BAIAP2, CEACAM6, FARS2, MX2, OSBPL5, SERPINB5, SERPINB8, SHC1, UBE2Z, YAP1, and ZG16, etc. were identified as potential drug targets (Figure 2C; Freshour et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis using the Drug Gene Interaction Database and citation to Freshour et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "197e9282-a4d3-4b9c-a5c0-42db6a99d24d",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C24",
+      "claim": "The epithelial-mesenchymal transition (EMT) pathway was significantly enriched (adjusted p-value <0.05) in the LNM-positive group.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that only the epithelial-mesenchymal transition (EMT) pathway was significantly enriched (adjusted p-value <0.05) in the LNM-positive group, while no significantly enriched pathways in the LNM-negative group (Figure 2D, Figure 2\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene set enrichment analysis (GSEA) with adjusted p-value <0.05 and reference to Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "0381d392-4489-4da5-a69e-1132397264e0",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C25",
+      "claim": "Six EMT-related proteins showed significant upregulation (log2FC >1) in LNM-positive T1 CRC patients, including CAP2, PLOD1, and SERPINE2.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined the expression of EMT-related proteins and found that all of them were up-regulated in the LNM-positive group compared to the LNM-negative group (log2FC >0; p<0.05, Wilcoxon rank-sum tests), with six proteins showing a significant upregulation (log2FC >1), including CAP2, PLOD1, SERPINE2, etc. (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (Wilcoxon rank-sum tests) and reference to Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "2ff227a6-468d-4fc4-bb27-7fe8d6837c25",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C26",
+      "claim": "EMT markers SERPINE2 and LRP1 were significantly upregulated in both the T1 CRC cohort and early-stage CRC group from the mCRC cohort (log2FC >1 and p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we focused on the early-stage (T1/T2) CRC individuals from the mCRC cohort and compared the EMT marker expression between the LNM-positive and LNM-negative groups, the EMT markers like SERPINE2 and LRP1 were significantly upregulated in both our cohort and the early-stage CRC group from the mCRC cohort (log2FC >1 and p<0.05, Wilcoxon rank-sum test) (Figure 2F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (Wilcoxon rank-sum test) and reference to Figures 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "c60a6a99-1cdf-4f8f-8973-78bb82ae62a4",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C27",
+      "claim": "Cytoskeletal remodeling proteins including ABI1, SPTA1, SPTB, ANK1, MRPL46, and ITGA2B were down-regulated in LNM-positive T1 CRC patients (log2FC <-1 and p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoskeletal remodeling proteins, including ABI1, SPTA1, SPTB, ANK1, MRPL46, and ITGA2B were down-regulated in patients with LNM compared with those without LNM (log2FC <-1 and p<0.05, Wilcoxon rank-sum test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (Wilcoxon rank-sum test).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "8ec8317d-5adb-4d53-80c2-83ad9d0ceeaf",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C28",
+      "claim": "Amino acid metabolism pathways including 'valine, leucine, and isoleucine degradation' and 'glycine, serine, and threonine metabolism' were enriched in the LNM-negative group (adjusted p\u22640.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acid metabolism pathways, such as 'valine, leucine, and isoleucine degradation' (hsa00280) and 'glycine, serine, and threonine metabolism' (hsa00260), were found to be enriched in the LNM-negative group (adjusted p\u22640.05, limma approach), and related proteins (TMLHE, SLC44A2, SHMT1, and EEF1E1) were up-regulated in the LNM-negative group (Log2FC <1, p<0.05) (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ssGSEA analysis with adjusted p\u22640.05 and reference to Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "cc8c5075-adb0-483a-bfd7-f2d380430c31",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C29",
+      "claim": "Lipid metabolism pathways including 'arachidonic acid metabolism' and 'steroid biosynthesis' were enriched in the LNM-positive group.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the LNM-positive group mainly expressed lipid metabolism pathways, such as 'arachidonic acid metabolism' (hsa00590) and 'steroid biosynthesis' (hsa00100), which are known to promote cancer cell proliferation and migration and are involved in the regulation of EMT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "d954053f-f601-46cd-a6a3-35cfc9ac8cf4",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C30",
+      "claim": "The LNM-positive group was significantly enriched in coagulation cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the LNM-positive group was significantly enriched in coagulation cascades (Figure 2L), which occurred during EMT, and previous studies have indicated that the inhibition of coagulation greatly limits cancer metastasis (Gil-Bernab\u00e9 et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pathway enrichment analysis, reference to Figure 2L, and citation to Gil-Bernab\u00e9 et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "855e3dc1-45aa-4186-8c77-fb1eff2f3ee2",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C31",
+      "claim": "Twelve proteins related to coagulation cascades were elevated in LNM-positive T1 CRC patients (log2FC >1 and p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Twelve of the 84 proteins that were elevated in LNM-positive patients (log2FC >1 and p<0.05, Wilcoxon rank-sum test) were related to coagulation cascades (Figure 2M), and many of these 12 proteins are known or suspected to be linked to CRC or other cancer metastasis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (Wilcoxon rank-sum test) and reference to Figure 2M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "98398fbd-aa8c-43ef-bc81-90710ca39b96",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C32",
+      "claim": "The ratio of LNM was significantly higher in poorly differentiated T1 CRC patients (48.6%) compared with well-moderately differentiated patients (28.8%) (p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous reports (Ikematsu et al., 2013), in our T1 CRC cohort the ratio of LNM was significantly higher in patients with poorly poor differentiated patients (48.6%) compared with well-moderately differentiated patients, in T1 CRC (28.8%) (p=0.004, chi-square test), Mucinous adenocarcinoma patients (55%) also shown a greater tendency to LNM than adenocarcinoma (30.1%) (p=0.004, chi-square test) (Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 2A), and mucinous adenocarcinoma was considered to be a significant risk factor of LNM in T1 CRC (Xu et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (chi-square test) with p=0.004 and citation to Ikematsu et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "923dc421-7291-4f05-9820-c5cba99c1c94",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C33",
+      "claim": "Mucinous adenocarcinoma patients showed a greater tendency to LNM (55%) than adenocarcinoma patients (30.1%) (p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous reports (Ikematsu et al., 2013), in our T1 CRC cohort the ratio of LNM was significantly higher in patients with poorly poor differentiated patients (48.6%) compared with well-moderately differentiated patients, in T1 CRC (28.8%) (p=0.004, chi-square test), Mucinous adenocarcinoma patients (55%) also shown a greater tendency to LNM than adenocarcinoma (30.1%) (p=0.004, chi-square test) (Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 2A), and mucinous adenocarcinoma was considered to be a significant risk factor of LNM in T1 CRC (Xu et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (chi-square test) with p=0.004 and citation to Xu et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "4d7b7a3e-8e15-46d7-bb2d-822fdf57b3d8",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C34",
+      "claim": "140 proteins were overexpressed in well to moderately-differentiated adenocarcinoma (log2FC >1, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, 140 proteins were overexpressed in DS1(log2FC >1, mean of DS1 vs mean of DS2 and DS3; p<0.05, Kruskal-Walli's test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (Kruskal-Walli's test) with p<0.05.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "51fb71c8-28a1-4b79-9c3c-ef100a21ff5e",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C35",
+      "claim": "Oxidative phosphorylation and TCA cycle pathways were higher in well to moderately-differentiated adenocarcinoma than in poorly differentiated and mucinous adenocarcinoma (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Further pathway enrichment analysis revealed that the oxidative phosphorylation and TCA cycle pathways were higher in DS1 than in DS2 and DS3 (p<0.05) (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pathway enrichment analysis with p<0.05 and reference to Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "57cd1602-8308-4914-b2da-792ba5d60f70",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C36",
+      "claim": "178 proteins were highly expressed in poorly differentiated adenocarcinoma (log2FC >1, p<0.05) and enriched in GTPase activity and Wnt signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In DS2, 178 proteins were highly expressed (log2FC >1, mean of DS2 vs mean of DS1 and DS3; p<0.05, Kruskal-Walli's test) and enriched in the GTPase activity and Wnt signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (Kruskal-Walli's test) with p<0.05 and pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "dbcc87b9-151d-42b7-82e7-23a7668466af",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C37",
+      "claim": "326 proteins were overexpressed in mucinous adenocarcinoma (log2FC >1, p<0.05), functioning in ECM organization, cell migration, and vesicle-mediated transport.",
+      "claim_type": "EXPLICIT",
+      "source": "In DS3, 326 proteins were overexpressed (log2FC >1, mean of DS3 vs mean of DS1 and DS2; p<0.05, Kruskal-Walli's test), functioning in more aggressive pathways such as ECM organization, cell migration, and vesicle-mediated transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (Kruskal-Walli's test) with p<0.05 and pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "c424254b-1b98-4721-b289-673f6032eb78",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C38",
+      "claim": "Six integrins (ITGA1, ITGAV, ITGA11, ITGA9, ITGB3, and ITGB5) were overexpressed in mucinous adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that six integrins (ITGA1, ITGAV, ITGA11, ITGA9, ITGB3, and ITGB5) and 11 reported extracellular vesicle (EV) markers (ADIRF, CSPG4, DPP4, ENTPD1, LRG1, PECAM1, PLVAP, RAB25, TMEM2, TTR, and YBX1) were overexpressed in the mucinous adenocarcinoma group (Figure 2\u2014figure supplement 2F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and reference to Figure 2\u2014figure supplement 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "13871311-c56b-49ac-b157-67ec45942ed4",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C39",
+      "claim": "11 extracellular vesicle markers (ADIRF, CSPG4, DPP4, ENTPD1, LRG1, PECAM1, PLVAP, RAB25, TMEM2, TTR, and YBX1) were overexpressed in mucinous adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that six integrins (ITGA1, ITGAV, ITGA11, ITGA9, ITGB3, and ITGB5) and 11 reported extracellular vesicle (EV) markers (ADIRF, CSPG4, DPP4, ENTPD1, LRG1, PECAM1, PLVAP, RAB25, TMEM2, TTR, and YBX1) were overexpressed in the mucinous adenocarcinoma group (Figure 2\u2014figure supplement 2F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and reference to Figure 2\u2014figure supplement 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "f402a44f-f784-41cb-ae7a-49d95c9f7cae",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C40",
+      "claim": "The stromal score was significantly higher in mucinous colorectal adenocarcinoma than in non-mucinous adenocarcinoma (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The stromal score was significantly higher in mucinous colorectal adenocarcinoma than in non-mucinous adenocarcinoma (p<0.05, Kruskal-Wallis test), and the signatures of endothelial cells, smooth muscle cells, and osteoblasts were enriched in mucinous colorectal adenocarcinoma; however, pericytes were decreased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (Kruskal-Wallis test) with p<0.05.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "56a9656e-5109-437b-96ee-ab5b3d29557b",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C41",
+      "claim": "D2-40 expression in mucinous adenocarcinoma was significantly higher than in non-mucinous adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining showed the D2-40 expression in mucinous adenocarcinoma was significantly higher than that in non-mucinous adenocarcinoma, in agreement with the proteomics data (Figure 2\u2014figure supplement 2J and Figure 2\u2014source data 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry data and reference to Figure 2\u2014figure supplement 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "fcf00bdf-2d31-4a68-8b93-5e4cc8ab3150",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C42",
+      "claim": "A 55-protein classifier achieved an AUC of 1.00 (95% CI, 1.000) in the training cohort through 10-fold cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "The classifier achieved an AUC of 1.00 (95% CI, 1.000) through 10-fold cross-validation in the training cohort, which indicated higher predictive power for LNM than the NCCN guidelines (AUC = 0.561) (p<0.001) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis with 10-fold cross-validation and reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "669e186e-7791-42ad-a917-139f1ea4c847",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C43",
+      "claim": "The 55-protein classifier yielded 100% sensitivity and specificity in the training cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The Youden's index-derived cutoff was used as the threshold, and the 55-protein classifier yielded 100% sensitivity and specificity, whereas the NCCN guidelines yielded 93.5% sensitivity and 18.6% specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis using Youden's index.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "5c4fb13e-dab2-42b0-9d93-2354912d073f",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C44",
+      "claim": "The 55-protein classifier achieved an AUC of 0.96 (95% CI, 0.917\u20131.000) in validation cohort 1 (ESD cohort).",
+      "claim_type": "EXPLICIT",
+      "source": "The 55-protein classifier achieved an AUC of 0.96 (95% CI, 0.917\u20131.000) in distinguishing LNM-positive from LNM-negative patients with 100% sensitivity/94.3% specificity in VC1 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis and reference to Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "0d482201-c4af-4ef8-b439-da05deecba44",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C45",
+      "claim": "The 55-protein classifier achieved an AUC of 0.93 in validation cohort 2 (prospective cohort) with 88.9% sensitivity and 84.2% specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The classifier based on the intensities of the 55 proteins achieved 88.9% sensitivity and 84.2% specificity in distinguishing LNM-negative and LNM-positive T1 CRC patients, with an AUC of 0.93 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis and reference to Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "81713d82-2cde-4b96-9d47-2587ddd040a8",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C46",
+      "claim": "Using NCCN guidelines, 88% of patients (195 of 221) were stratified into high-risk category, but only 37% (73 of 195) were actually high risk.",
+      "claim_type": "EXPLICIT",
+      "source": "When we used current clinical treatment guidelines (NCCN guidelines), it resulted in stratifying 88% patients (195 of the 221) into a high-risk category and the remaining 12% (26 of 195) into a low-risk group, only 37% (73 of 195) of patients are actually high risk, 63% (122 of 195) of patients underwent unnecessary additional surgery, and there are five (9.2%, 5 of 26) LNM-positive cases mistakenly assigned to the low-risk group (Figure 3E and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and reference to Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "83af20e7-b6d1-4a51-89fe-bc637ea9bf58",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C47",
+      "claim": "Using the 55-protein classifier, 72% (78 of 107) of high-risk patients had LNM, indicating only 27.1% (29 of 107) were overtreated.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, of the 107 patients who are classified as high risk by our model, 78 had LNM (72%), indicating that only 27.1% (29 of 107) of all patients with T1 CRC were overtreated, and all the patients stratified into the low-risk group are LNM-negative (Figure 3E and Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis and reference to Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "6ff4afdf-810a-423e-a3eb-d33dae5829bc",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C48",
+      "claim": "A simplified 9-protein classifier achieved an AUC of 0.824 (95% CI, 0.767\u20130.881) after bootstrapping with 1000 resamples.",
+      "claim_type": "EXPLICIT",
+      "source": "After using bootstraps with 1000 resamples for validation, the AUC of the simplified model was 0.824 (95% CI, 0.767\u20130.881) (Figure 3F), and the calibration curve demonstrated good agreement between the predicted status and the true status, with an error of 0.021 (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis with bootstrapping and reference to Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "e1ddc48b-d591-4c10-9083-9ead8d665ace",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C49",
+      "claim": "The 9-protein simplified classifier showed 100% sensitivity and 70% specificity in the mCRC cohort (T1/2 CRC patients).",
+      "claim_type": "EXPLICIT",
+      "source": "In mCRC cohort (T1/2 CRC patients, N=16; LNM\u2212, N=13; LNM+, N=3), nine LNM-negative patients were classified into the low-risk group, and all the patients stratified into the low-risk group are LNM-negative, corresponding to a sensitivity of 100% and a specificity of 70% (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by external validation data and reference to Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "eb2e45bd-ebaa-410d-bfa1-9b23f68fa935",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C50",
+      "claim": "The 9-protein simplified classifier showed 100% sensitivity and 73% specificity in the CPTAC cohort (T1/2 CRC patients).",
+      "claim_type": "EXPLICIT",
+      "source": "In the CPTAC cohort (T1/2 CRC patients, N=16; LNM-, N=15; LNM+, N=1), 11 out of 15 LNM-negative patients were correctly identified, corresponding to a specificity of 73%. Although, the results were limited by the number of LNM-positive patients, LNM-positive patients were successfully assigned to the high-risk group with a sensitivity of 100% (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by external validation data and reference to Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "27e1cb14-5590-4bc1-a4aa-22da8fa32e46",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C51",
+      "claim": "IHC staining of ABI1 showed an overall increase in LNM-negative patients (p=0.007).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the proteomics data, staining of ABI1 (p=0.007), ITPR2 (p=0.054), and RHOT2 (p=0.011) showed an overall increase in LNM-negative patients (Figure 4A and B, Student's t-test), whereas ATAD2 (p=0.034) and ISLR (p=0.044) showed an overall increase in LNM-positive patients (Figure 4A and Figure 4\u2014figure supplement 1B, Student's t-test) according to the proteomics data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by IHC data with statistical analysis (Student's t-test) and reference to Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "93640c0c-660d-4e68-b936-c5744b7501c0",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C52",
+      "claim": "IHC staining of RHOT2 showed an overall increase in LNM-negative patients (p=0.011).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the proteomics data, staining of ABI1 (p=0.007), ITPR2 (p=0.054), and RHOT2 (p=0.011) showed an overall increase in LNM-negative patients (Figure 4A and B, Student's t-test), whereas ATAD2 (p=0.034) and ISLR (p=0.044) showed an overall increase in LNM-positive patients (Figure 4A and Figure 4\u2014figure supplement 1B, Student's t-test) according to the proteomics data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by IHC data with statistical analysis (Student's t-test) and reference to Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "48c3a69a-0c24-4d48-a3f7-32937059ccd3",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C53",
+      "claim": "IHC staining of ATAD2 showed an overall increase in LNM-positive patients (p=0.034).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the proteomics data, staining of ABI1 (p=0.007), ITPR2 (p=0.054), and RHOT2 (p=0.011) showed an overall increase in LNM-negative patients (Figure 4A and B, Student's t-test), whereas ATAD2 (p=0.034) and ISLR (p=0.044) showed an overall increase in LNM-positive patients (Figure 4A and Figure 4\u2014figure supplement 1B, Student's t-test) according to the proteomics data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by IHC data with statistical analysis (Student's t-test) and reference to Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "b587a4e4-5bf0-44e0-a9e9-d5d5c7c14696",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C54",
+      "claim": "IHC staining of ISLR showed an overall increase in LNM-positive patients (p=0.044).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the proteomics data, staining of ABI1 (p=0.007), ITPR2 (p=0.054), and RHOT2 (p=0.011) showed an overall increase in LNM-negative patients (Figure 4A and B, Student's t-test), whereas ATAD2 (p=0.034) and ISLR (p=0.044) showed an overall increase in LNM-positive patients (Figure 4A and Figure 4\u2014figure supplement 1B, Student's t-test) according to the proteomics data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by IHC data with statistical analysis (Student's t-test) and reference to Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "3b097719-4521-4a56-ac1c-e09dfba125e0",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C55",
+      "claim": "A 5-protein IHC classifier achieved an AUC of 0.825 in 47 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Using binary logistic regression to analyze the results of these proteins, we obtained a 5-protein classifier using the IHC score. The 5-protein IHC classifier achieved an AUC of 0.825 in 47 patients (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis using binary logistic regression and reference to Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "aa19269b-fadb-496b-867c-01588d2daa65",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C56",
+      "claim": "RHOT2 was significantly down-regulated (Log2FC = \u22121.35; p=0.003) in LNM-positive patients compared with LNM-negative patients.",
+      "claim_type": "EXPLICIT",
+      "source": "RHOT2 was significantly down-regulated (Log2FC = \u22121.35; p=0.003, Wilcoxon rank-sum test) in LNM-positive patients compared with LNM-negative patients in our T1 CRC cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (Wilcoxon rank-sum test) with p=0.003.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "b9421ba5-9c66-4cce-bea3-a723298379c6",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C57",
+      "claim": "Low level of RHOT2 is related to low overall survival of patients with colon cancer (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as shown in Figure 4C, the analysis on the basis of the TCGA database suggested that the low level of RHOT2 is related to the low overall survival of patients with colon cancer (Figure 4C, p<0.05) (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by survival analysis using TCGA data with p<0.05 and citation to Zhang et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "6615c3e0-6e9b-43af-9cc4-50c8db00f293",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C58",
+      "claim": "1508 proteins were correlated significantly (p<0.05) with RHOT2, with 1354 showing positive correlation and 154 showing negative correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 1508 proteins were correlated significantly (p<0.05, Spearman) with RHOT2, and 1354 proteins showed a positive correlation (coefficient >0) with RHOT2, 154 proteins were negatively correlated with RHOT2 (coefficient <0) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis (Spearman) with p<0.05 and reference to Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "ce185797-f64a-4131-9fec-409448783d1b",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "claim_id": "C59",
+      "claim": "RHOT2 silence significantly enhanced migration and invasion of colon cancer cells (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the transwell assay showed that the migration ability of colon cancer cells was significantly increased by si-RHOT2 (Figure 4H, I, Student's t-test,p<0.05). Low expression level of RHOT2 markedly enhanced the migration ability of colon cancer cells (p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by transwell assay data with statistical analysis (Student's t-test) and reference to Figures 4H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "16db7a58-746b-4ad4-bb44-dad1160ac0f7",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study cohort of 221 T1 CRC patients (143 LNM-negative, 78 LNM-positive) showed that LNM is significantly associated with established clinicopathological risk factors including submucosal invasion depth (p=0.014), lymphatic/vascular invasion (p<0.001), poor differentiation (p=0.004), and left-sided tumor location (p=0.036). MSI-H patients showed lower LNM rates (16.7%) compared to MSS patients (39.6%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 provide consistent evidence from chi-square tests with appropriate p-values for clinicopathological associations with LNM. The cohort composition is clearly defined, sample sizes are adequate for statistical testing, and the findings align with established knowledge about T1 CRC risk factors. The MSI status data (C15-C16) includes appropriate comparison to published literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "dfcfb63b-c257-4ccb-8ece-6df3867ca39a",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "High-quality proteomic analysis identified >13,000 protein groups with 1% FDR. Comparison with published CRC LNM markers revealed that only 3 of 44 reported markers (CTSD, GSTM3, MX1) were differentially expressed in this T1 CRC cohort. Additionally, 2577 proteins were detected specifically in T1 CRC compared to all-stage CRC studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 demonstrate rigorous proteomic methodology with appropriate quality control (1% FDR) and adequate protein identification (>4000 per sample). The comparison with published markers (C18) and other cohorts (C19) is methodologically sound, though the low overlap with published markers raises questions about whether this reflects true biological differences or technical/analytical variations between studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "bf7b758b-4382-43ac-8a15-e13ebfd88f3a",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Differential proteomic analysis identified 82 proteins overexpressed in LNM-negative and 84 proteins in LNM-positive T1 CRC patients (log2FC>1 or <-1, p<0.05). Among LNM-positive proteins, 19 FDA-approved drug targets and 34 potential drug targets were identified, including ATAD2, CEACAM6, and YAP1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 use appropriate statistical methods (Wilcoxon rank-sum test) with clearly defined thresholds. The identification of druggable targets is supported by reference to the Drug Gene Interaction Database. However, the clinical relevance of these targets for T1 CRC specifically requires further validation, as druggability in other contexts does not guarantee therapeutic utility in this disease stage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "0482ab38-dfe2-4239-bf6a-f30c207e2f78",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "EMT pathway was significantly enriched in LNM-positive T1 CRC (adjusted p<0.05), with six EMT-related proteins showing significant upregulation (log2FC>1) including CAP2, PLOD1, and SERPINE2. Importantly, EMT markers SERPINE2 and LRP1 were specifically upregulated in early-stage (T1/T2) CRC but not in all-stage CRC cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 provide strong evidence through GSEA analysis with appropriate multiple testing correction and validation in external cohorts. The stage-specific nature of EMT enrichment (C26) is particularly compelling, as it demonstrates that these findings are specific to early-stage disease rather than general CRC biology. Statistical methods are appropriate and consistently applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "08dce630-48fd-438d-9dd5-157390429f10",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cytoskeletal remodeling proteins including ABI1, SPTA1, SPTB, ANK1, MRPL46, and ITGA2B were significantly down-regulated in LNM-positive patients (log2FC<-1, p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 is supported by appropriate statistical testing (Wilcoxon rank-sum test) with clear effect size and significance thresholds. The biological interpretation linking cytoskeletal remodeling to EMT is reasonable, though the manuscript could benefit from more mechanistic validation of these connections.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "c2ee6497-d041-4f03-9994-9ada4a3164f6",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Metabolic pathway analysis revealed that amino acid metabolism pathways (valine/leucine/isoleucine degradation, glycine/serine/threonine metabolism) were enriched in LNM-negative patients (adjusted p\u22640.05), while lipid metabolism pathways (arachidonic acid metabolism, steroid biosynthesis) and coagulation cascades were enriched in LNM-positive patients. Twelve coagulation cascade proteins were elevated in LNM-positive patients (log2FC>1, p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 demonstrate comprehensive pathway analysis using ssGSEA with appropriate statistical methods (limma approach, adjusted p-values). The metabolic differences are biologically plausible and the coagulation cascade enrichment is supported by citation to relevant literature. However, the functional significance of these metabolic differences for LNM requires further experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "1e28d0bf-22e8-412a-bb71-48af11d18ec0",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Histological subtype analysis showed that poorly differentiated (48.6% LNM) and mucinous adenocarcinoma (55% LNM) had significantly higher LNM rates than well-moderately differentiated adenocarcinoma (28.8% LNM) (p=0.004). Each subtype showed distinct proteomic profiles: 140 proteins in well-moderately differentiated (enriched in oxidative phosphorylation/TCA cycle), 178 in poorly differentiated (GTPase/Wnt signaling), and 326 in mucinous adenocarcinoma (ECM organization/cell migration/vesicle transport).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 provide comprehensive characterization of histological subtypes with appropriate statistical testing (chi-square, Kruskal-Wallis). The proteomic profiles are distinct and biologically coherent. However, the sample sizes for some subgroups (particularly poorly differentiated, N=32) are relatively small, which may limit the generalizability of the specific protein signatures identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "8b6085ec-453e-471e-bdd9-d073eb7e5b3b",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mucinous adenocarcinoma showed overexpression of six integrins (ITGA1, ITGAV, ITGA11, ITGA9, ITGB3, ITGB5) and 11 extracellular vesicle markers. The stromal score was significantly higher in mucinous adenocarcinoma (p<0.05), with enrichment of endothelial cells and depletion of pericytes. IHC validation confirmed significantly higher D2-40 (lymphatic endothelial marker) expression in mucinous adenocarcinoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 provide convergent evidence from proteomics, tumor microenvironment analysis (xCell), and IHC validation. The hypothesis that mucinous adenocarcinoma promotes LNM through increased intratumoral lymphatic vessel density is well-supported. The IHC validation (C41) strengthens the proteomic findings, though the number of samples used for IHC validation is not clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "a1e8ca21-9e92-4896-a213-4612d4ab56d8",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A 55-protein classifier achieved perfect discrimination in the training cohort (AUC=1.00, 100% sensitivity/specificity) through 10-fold cross-validation, and maintained high performance in validation cohorts (VC1: AUC=0.96, 100% sensitivity/94.3% specificity; VC2: AUC=0.93, 88.9% sensitivity/84.2% specificity). The classifier reduced overtreatment from 63% (NCCN guidelines) to 27.1% while maintaining 100% sensitivity in the low-risk group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C47 show impressive performance metrics, but several concerns arise: (1) Perfect AUC of 1.00 in training with 10-fold CV is suspicious and may indicate overfitting despite cross-validation; (2) The dramatic performance difference between training (AUC=1.00) and validation cohorts (0.93-0.96) suggests model instability; (3) Sample sizes in validation cohorts are relatively small (VC1: N=42, VC2: N=47); (4) The claim of 100% sensitivity in low-risk groups across all cohorts needs careful interpretation given small numbers of LNM+ cases in some cohorts; (5) No information on how the 0.420 cutoff was determined or whether it was pre-specified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "351943b6-36b4-421c-83cb-636e65c46351",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A simplified 9-protein classifier achieved AUC=0.824 (95% CI: 0.767-0.881) with 1000 bootstrap resamples and showed 100% sensitivity with 70% specificity in the mCRC cohort (N=16, T1/2 patients) and 100% sensitivity with 73% specificity in the CPTAC cohort (N=16, T1/2 patients).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C50 show reasonable performance for the simplified model, but external validation is severely limited by small sample sizes (N=16 each) and very few LNM+ cases (mCRC: 3 LNM+; CPTAC: 1 LNM+). With only 1-3 positive cases, sensitivity estimates of 100% are not meaningful and confidence intervals would be extremely wide. The batch correction approach (ComBat) is appropriate, but combining T1 and T2 cases for validation may not reflect the intended T1-specific application. These external validations are insufficient to establish generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "7dd5673b-b7be-4709-92ee-1fa4eed297d5",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IHC validation of proteomic findings in 47 patients confirmed that ABI1 (p=0.007) and RHOT2 (p=0.011) showed increased expression in LNM-negative patients, while ATAD2 (p=0.034) and ISLR (p=0.044) showed increased expression in LNM-positive patients. A 5-protein IHC classifier achieved AUC=0.825.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 provide appropriate orthogonal validation of proteomic findings using IHC with adequate statistical testing (Student's t-test). The concordance between proteomics and IHC strengthens confidence in the protein markers. The 5-protein IHC classifier performance (AUC=0.825) is reasonable and more realistic than the 55-protein model. However, the IHC cohort size (N=47) is relatively small for developing a clinical classifier, and independent validation of the IHC model is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    },
+    {
+      "id": "09456a31-f95e-4b8d-8c31-5880d5c82716",
+      "content_id": "ee5cdbb7-7da2-4d02-a35f-f7e51467765f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "RHOT2 was significantly down-regulated in LNM-positive patients (Log2FC=-1.35, p=0.003) and low RHOT2 expression correlated with poor overall survival in colon cancer (TCGA data, p<0.05). RHOT2 showed significant correlations with 1508 proteins (1354 positive, 154 negative, p<0.05). Functional validation showed that RHOT2 silencing significantly enhanced migration and invasion of colon cancer cells (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 provide multi-level evidence for RHOT2's role in LNM: proteomic data (C56), survival analysis (C57), correlation network (C58), and functional validation (C59). The functional experiments using siRNA knockdown and transwell assays provide mechanistic support for the proteomic observations. However, the manuscript lacks details on experimental replicates for the cell-based assays, and the specific mechanism by which RHOT2 affects migration remains unclear. The correlation with survival (C57) strengthens clinical relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:48:03.466503Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3ff7c8da-a328-4bc9-b1c8-3f038626ec1d",
+      "result_id": "16db7a58-746b-4ad4-bb44-dad1160ac0f7"
+    },
+    {
+      "claim_id": "ec510066-d010-4eb2-97e7-e675046f55e1",
+      "result_id": "16db7a58-746b-4ad4-bb44-dad1160ac0f7"
+    },
+    {
+      "claim_id": "e4d9abd6-5543-4bce-843f-243470cc5780",
+      "result_id": "16db7a58-746b-4ad4-bb44-dad1160ac0f7"
+    },
+    {
+      "claim_id": "105ac3ad-bc01-476e-8b10-51b0d30a021e",
+      "result_id": "16db7a58-746b-4ad4-bb44-dad1160ac0f7"
+    },
+    {
+      "claim_id": "e3685da2-a3d0-4b3f-a959-5501cfa8c928",
+      "result_id": "16db7a58-746b-4ad4-bb44-dad1160ac0f7"
+    },
+    {
+      "claim_id": "589b9c98-410c-4813-8969-1d363c92ca8c",
+      "result_id": "16db7a58-746b-4ad4-bb44-dad1160ac0f7"
+    },
+    {
+      "claim_id": "f83f0146-50ab-4b30-89db-375068086845",
+      "result_id": "16db7a58-746b-4ad4-bb44-dad1160ac0f7"
+    },
+    {
+      "claim_id": "9dcd94d4-bfcb-4eda-b68d-a07cf355090c",
+      "result_id": "dfcfb63b-c257-4ccb-8ece-6df3867ca39a"
+    },
+    {
+      "claim_id": "103d63fd-20c7-4404-8534-42d29e67b5cb",
+      "result_id": "dfcfb63b-c257-4ccb-8ece-6df3867ca39a"
+    },
+    {
+      "claim_id": "9dc2be2a-fdc8-403e-8e9e-eb4d7c237635",
+      "result_id": "dfcfb63b-c257-4ccb-8ece-6df3867ca39a"
+    },
+    {
+      "claim_id": "07559cc2-c219-494f-912d-33c69fc2c020",
+      "result_id": "bf7b758b-4382-43ac-8a15-e13ebfd88f3a"
+    },
+    {
+      "claim_id": "6c2b889f-2441-42ec-b3a5-5963fee1355e",
+      "result_id": "bf7b758b-4382-43ac-8a15-e13ebfd88f3a"
+    },
+    {
+      "claim_id": "050ac63e-dfa6-45da-9340-be517b113154",
+      "result_id": "bf7b758b-4382-43ac-8a15-e13ebfd88f3a"
+    },
+    {
+      "claim_id": "909662d7-83ed-45a7-ad22-93b2be0c6a11",
+      "result_id": "bf7b758b-4382-43ac-8a15-e13ebfd88f3a"
+    },
+    {
+      "claim_id": "197e9282-a4d3-4b9c-a5c0-42db6a99d24d",
+      "result_id": "0482ab38-dfe2-4239-bf6a-f30c207e2f78"
+    },
+    {
+      "claim_id": "0381d392-4489-4da5-a69e-1132397264e0",
+      "result_id": "0482ab38-dfe2-4239-bf6a-f30c207e2f78"
+    },
+    {
+      "claim_id": "2ff227a6-468d-4fc4-bb27-7fe8d6837c25",
+      "result_id": "0482ab38-dfe2-4239-bf6a-f30c207e2f78"
+    },
+    {
+      "claim_id": "c60a6a99-1cdf-4f8f-8973-78bb82ae62a4",
+      "result_id": "08dce630-48fd-438d-9dd5-157390429f10"
+    },
+    {
+      "claim_id": "8ec8317d-5adb-4d53-80c2-83ad9d0ceeaf",
+      "result_id": "c2ee6497-d041-4f03-9994-9ada4a3164f6"
+    },
+    {
+      "claim_id": "cc8c5075-adb0-483a-bfd7-f2d380430c31",
+      "result_id": "c2ee6497-d041-4f03-9994-9ada4a3164f6"
+    },
+    {
+      "claim_id": "d954053f-f601-46cd-a6a3-35cfc9ac8cf4",
+      "result_id": "c2ee6497-d041-4f03-9994-9ada4a3164f6"
+    },
+    {
+      "claim_id": "855e3dc1-45aa-4186-8c77-fb1eff2f3ee2",
+      "result_id": "c2ee6497-d041-4f03-9994-9ada4a3164f6"
+    },
+    {
+      "claim_id": "98398fbd-aa8c-43ef-bc81-90710ca39b96",
+      "result_id": "1e28d0bf-22e8-412a-bb71-48af11d18ec0"
+    },
+    {
+      "claim_id": "923dc421-7291-4f05-9820-c5cba99c1c94",
+      "result_id": "1e28d0bf-22e8-412a-bb71-48af11d18ec0"
+    },
+    {
+      "claim_id": "4d7b7a3e-8e15-46d7-bb2d-822fdf57b3d8",
+      "result_id": "1e28d0bf-22e8-412a-bb71-48af11d18ec0"
+    },
+    {
+      "claim_id": "51fb71c8-28a1-4b79-9c3c-ef100a21ff5e",
+      "result_id": "1e28d0bf-22e8-412a-bb71-48af11d18ec0"
+    },
+    {
+      "claim_id": "57cd1602-8308-4914-b2da-792ba5d60f70",
+      "result_id": "1e28d0bf-22e8-412a-bb71-48af11d18ec0"
+    },
+    {
+      "claim_id": "dbcc87b9-151d-42b7-82e7-23a7668466af",
+      "result_id": "1e28d0bf-22e8-412a-bb71-48af11d18ec0"
+    },
+    {
+      "claim_id": "c424254b-1b98-4721-b289-673f6032eb78",
+      "result_id": "8b6085ec-453e-471e-bdd9-d073eb7e5b3b"
+    },
+    {
+      "claim_id": "13871311-c56b-49ac-b157-67ec45942ed4",
+      "result_id": "8b6085ec-453e-471e-bdd9-d073eb7e5b3b"
+    },
+    {
+      "claim_id": "f402a44f-f784-41cb-ae7a-49d95c9f7cae",
+      "result_id": "8b6085ec-453e-471e-bdd9-d073eb7e5b3b"
+    },
+    {
+      "claim_id": "56a9656e-5109-437b-96ee-ab5b3d29557b",
+      "result_id": "8b6085ec-453e-471e-bdd9-d073eb7e5b3b"
+    },
+    {
+      "claim_id": "fcf00bdf-2d31-4a68-8b93-5e4cc8ab3150",
+      "result_id": "a1e8ca21-9e92-4896-a213-4612d4ab56d8"
+    },
+    {
+      "claim_id": "669e186e-7791-42ad-a917-139f1ea4c847",
+      "result_id": "a1e8ca21-9e92-4896-a213-4612d4ab56d8"
+    },
+    {
+      "claim_id": "5c4fb13e-dab2-42b0-9d93-2354912d073f",
+      "result_id": "a1e8ca21-9e92-4896-a213-4612d4ab56d8"
+    },
+    {
+      "claim_id": "0d482201-c4af-4ef8-b439-da05deecba44",
+      "result_id": "a1e8ca21-9e92-4896-a213-4612d4ab56d8"
+    },
+    {
+      "claim_id": "81713d82-2cde-4b96-9d47-2587ddd040a8",
+      "result_id": "a1e8ca21-9e92-4896-a213-4612d4ab56d8"
+    },
+    {
+      "claim_id": "83af20e7-b6d1-4a51-89fe-bc637ea9bf58",
+      "result_id": "a1e8ca21-9e92-4896-a213-4612d4ab56d8"
+    },
+    {
+      "claim_id": "6ff4afdf-810a-423e-a3eb-d33dae5829bc",
+      "result_id": "351943b6-36b4-421c-83cb-636e65c46351"
+    },
+    {
+      "claim_id": "e1ddc48b-d591-4c10-9083-9ead8d665ace",
+      "result_id": "351943b6-36b4-421c-83cb-636e65c46351"
+    },
+    {
+      "claim_id": "eb2e45bd-ebaa-410d-bfa1-9b23f68fa935",
+      "result_id": "351943b6-36b4-421c-83cb-636e65c46351"
+    },
+    {
+      "claim_id": "27e1cb14-5590-4bc1-a4aa-22da8fa32e46",
+      "result_id": "7dd5673b-b7be-4709-92ee-1fa4eed297d5"
+    },
+    {
+      "claim_id": "93640c0c-660d-4e68-b936-c5744b7501c0",
+      "result_id": "7dd5673b-b7be-4709-92ee-1fa4eed297d5"
+    },
+    {
+      "claim_id": "48c3a69a-0c24-4d48-a3f7-32937059ccd3",
+      "result_id": "7dd5673b-b7be-4709-92ee-1fa4eed297d5"
+    },
+    {
+      "claim_id": "b587a4e4-5bf0-44e0-a9e9-d5d5c7c14696",
+      "result_id": "7dd5673b-b7be-4709-92ee-1fa4eed297d5"
+    },
+    {
+      "claim_id": "3b097719-4521-4a56-ac1c-e09dfba125e0",
+      "result_id": "7dd5673b-b7be-4709-92ee-1fa4eed297d5"
+    },
+    {
+      "claim_id": "aa19269b-fadb-496b-867c-01588d2daa65",
+      "result_id": "09456a31-f95e-4b8d-8c31-5880d5c82716"
+    },
+    {
+      "claim_id": "b9421ba5-9c66-4cce-bea3-a723298379c6",
+      "result_id": "09456a31-f95e-4b8d-8c31-5880d5c82716"
+    },
+    {
+      "claim_id": "6615c3e0-6e9b-43af-9cc4-50c8db00f293",
+      "result_id": "09456a31-f95e-4b8d-8c31-5880d5c82716"
+    },
+    {
+      "claim_id": "ce185797-f64a-4131-9fec-409448783d1b",
+      "result_id": "09456a31-f95e-4b8d-8c31-5880d5c82716"
+    }
+  ],
+  "comparisons": []
+}

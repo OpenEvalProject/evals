@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C55",
+      "C56"
+    ],
+    "result": "The study generated single-cell transcriptomes from approximately 65,000-67,000 cells from 8 dpf larval zebrafish brains, representing close-to-full coverage of the ~100,000 total brain cells. Cells were obtained from whole brain and specific brain regions, then aggregated into 68 clusters using 1,402 high-variance genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, C9, C10, C55, and C56 collectively establish the scope and coverage of the dataset. The numbers are internally consistent (65,253 cells obtained, 45,746 after filtering, ~67,000 reported in abstract), and the claim of near-complete coverage is reasonable given ~65,000 cells analyzed from ~100,000 total brain cells. The clustering methodology is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Hierarchical clustering based on effector gene profiles (78.4% of variable genes, n=1,099) distinguished major brain cell types, segregating 68 clusters into neuronal (48 clusters, 37,880 cells) and non-neuronal (20 clusters, 7,866 cells) groups. Sister clusters at hierarchical termini displayed similar terminal features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C17, C18, and C19 describe the hierarchical classification approach and its results. The methodology is well-documented with specific gene counts and cell numbers. The finding that effector genes dominate the variable gene set (78.4%) supports their use for classification. Bootstrap resampling with pvclust validates the hierarchical structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C22",
+      "C42"
+    ],
+    "result": "Most clusters demonstrated robustness with Jaccard index >0.6, including whole-brain clusters (most of 68), neuromodulator clusters (20/22), and tectal glutamatergic clusters (10/11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C22, and C42 consistently report cluster stability using Jaccard index analysis with a 0.6 cutoff threshold. The method is properly cited (Tang et al., 2020) and applied consistently across different datasets. The identification of specific unstable clusters adds credibility to the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Brain region-specific marker genes (foxg1a for forebrain, en2a for optic tectum, hoxb3a for hindbrain) were identified and showed conserved expression patterns in mouse brain. The ratio of glutamatergic to GABAergic neurons was highest in forebrain and lowest in hindbrain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, and C14 describe regional marker identification and validation. The region-specific expression is shown in Figure 1D, and conservation in mouse is supported by three citations. The neurotransmitter distribution pattern is validated by transgenic fish imaging (Figure 1\u2014figure supplement 2E).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C61",
+      "C62"
+    ],
+    "result": "The 68 cell clusters from 8 dpf larval zebrafish exhibited high overlap with juvenile zebrafish (23-25 dpf) brain clusters and were reproducible across biological replicates, indicating that transcriptome-defined subclasses represent stable neuronal subclasses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C61, and C62 establish developmental stability of identified clusters. NNLS analysis comparing with published juvenile data (Raj et al., 2018) is appropriate. Reproducibility across replicates and developmental stages, combined with morphological validation, supports the conclusion of stable subclasses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C23"
+    ],
+    "result": "Using Tg(ETvmat2:GFP) transgenic fish, 5,368 vmat2-expressing cells were obtained and aggregated into 22 neuromodulator clusters. The majority of 5-HT (8/14) and DA clusters (5/7) co-expressed GABAergic markers gad1b/gad2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, and C23 describe neuromodulator neuron characterization. The transgenic approach is properly cited (Wen et al., 2008), cell numbers are specific, and the co-expression pattern is validated by dual transgenic imaging (Figure 2\u2014figure supplement 1E). The finding is consistent with previous studies (Filippi et al., 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C35"
+    ],
+    "result": "Glutamatergic/GABAergic sister clusters with similar effector gene profiles mostly expressed distinct TF profiles (convergent pattern: 7/8 pairs by intersection analysis). Examples include tectal and hindbrain glutamatergic clusters (1/31) and forebrain and sub-OT GABAergic clusters (36/16) sharing effector genes but expressing different TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C29, C30, C31, and C35 establish the convergent pattern in neurotransmitter neurons. The analysis uses two complementary approaches (hierarchical and population-level) with intersection to increase confidence. Specific examples with gene names are provided. Subsampling validation (80% genes, 20 iterations) confirms robustness. The tree distance metric (0.71) quantitatively supports the distinction between TF and effector-based classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Neuromodulator-type sister clusters predominantly expressed the same TF profiles (matched pattern: 5/6 pairs by intersection analysis). The tree distance between TF-based and effector-based hierarchies for neuromodulator neurons (0.38) was lower than for glutamatergic/GABAergic neurons (0.71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32, C33, C34, C35, and C36 establish the matched pattern in neuromodulator neurons. The analysis methodology parallels that for neurotransmitter neurons, allowing valid comparison. The tree distance metric provides quantitative support for the qualitative observation. The statistical comparison (Fisher's exact test, p=0.02564) in C35 supports the differential pattern between neurotransmitter and neuromodulator types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Glutamatergic/GABAergic clusters with similar TF profiles could display different terminal features (divergent pattern: 10 pairs by intersection analysis). Examples include sub-tectal glutamatergic and hindbrain GABAergic neurons (24/17) and forebrain glutamatergic and tectal GABAergic neurons (30/11) sharing TF profiles but expressing different effector genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37, C38, C39, and C40 establish the divergent pattern. The methodology is consistent with convergent pattern analysis. The identification of 10 overlapping pairs between hierarchical (13 pairs) and population-level (15 pairs) analyses increases confidence. Specific examples with gene names are provided, including cases where paired clusters express different neurotransmitters, which is particularly striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "GO analysis of differentially expressed genes between divergent pattern clusters revealed enrichment for RNA-binding proteins (RBPs). Divergent pattern-specific RBPs (n=52 from 10 pairs) were more numerous per pair than matched (n=7 from 1 pair) or convergent (n=10 from 7 pairs) pattern-specific RBPs, and targeted significantly higher proportions of effector genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C46-C52 establish the role of RBPs in divergent pattern clusters. GO analysis appropriately identifies RBP enrichment. The quantitative comparison of RBP numbers per pair across patterns is valid. The oRNAment database analysis linking RBPs to effector gene targets provides mechanistic support. However, the causality between RBP expression and effector gene divergence remains correlative rather than experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Rbfox1 was differentially expressed in multiple neuronal cluster pairs, and single RBPs were frequently present in multiple pair clusters (42.5%, 51/120), indicating combinatorial use of RBPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 describe RBP usage patterns. The identification of Rbfox1 in multiple pairs is data-supported. The frequency calculation (42.5%) is specific and indicates combinatorial logic. This is consistent with known biology of post-transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Analysis of 3,883 sorted tectal glutamatergic neurons yielded 11 clusters. Morphological reconstruction of 574 tectal neurons from 263 zebrafish identified seven morphological subclasses. All six examined TFs marked multiple morphological subclasses in a combinatorial manner, and each morphological subclass was marked by multiple TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C43, C44, and C45 describe the tectal neuron morphology analysis. The experimental approach using BAC recombination and intersectional genetics is well-designed. Sample sizes are substantial (574 neurons from 263 fish). The finding of combinatorial TF-morphology relationships is clearly demonstrated in Figure 4E. However, the correlation between transcriptomic clusters and morphological subclasses is only partial (6/11 clusters, Figure 4\u2014figure supplement 1H), suggesting additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "TF-based and effector gene-based hierarchical trees were distinct (tree distance=0.71, only one matching node: Clusters 9/61). Of 11 effector gene-based sister clusters, only one pair matched in TF-based classification (matched pattern), while 10 were separated (convergent pattern). Population-level analysis identified 19 similar pairs: 5 matched and 14 convergent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 provide methodological details supporting the convergent pattern finding. The TreeDist package provides quantitative tree comparison. The discrepancy between hierarchical (11 pairs) and population-level (19 pairs) analyses is acknowledged and addressed by intersection. The tree distance metric validates the qualitative observation of different organizational principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C63",
+      "C64"
+    ],
+    "result": "Phenotypic convergence (similar terminal features from different TF programs) is highly conserved from invertebrates to vertebrates, as similar patterns have been reported in C. elegans and Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C63, and C64 place findings in evolutionary context. The citations to C. elegans (Serrano-Saiz et al., 2013; Gendrel et al., 2016; Hobert and Kratsios, 2019) and Drosophila (Konstantinides et al., 2018) work are appropriate. However, this is primarily a comparative/interpretive claim rather than a direct experimental result from this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Combinatorial transcription factors and post-transcriptional regulators work in concert to determine neuronal types in the larval zebrafish brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 represents the main integrative conclusion. It is supported by the convergent pattern (different TFs \u2192 similar effectors), matched pattern (same TFs \u2192 similar effectors), and divergent pattern (same TFs + different RBPs \u2192 different effectors) findings. However, the 'work in concert' phrasing implies functional interaction that is inferred from correlation rather than experimentally demonstrated through perturbation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Sister pair clusters represent the finest molecularly defined neuronal subclasses based on effector gene profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is a definitional/interpretive statement about the hierarchical analysis approach. It is logically supported by the methodology: sister clusters at hierarchical termini are by definition the most similar pairs in the effector gene-based classification. This provides justification for focusing analysis on these pairs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Neurons with similar transcriptomic phenotypes could arise from two different brain regions through different TF programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 is explicitly labeled as speculative in the evidence ('raises the possibility'). While the observation that similar pair clusters can come from different brain regions is data-supported, the evolutionary interpretation about independent origins versus divergence from common ancestors is not directly testable with the current data. This represents a hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C65"
+    ],
+    "result": "The study builds on established knowledge about neuronal classification by transcriptomes, the definitions of regulatory versus effector genes, and previous zebrafish scRNA-seq studies demonstrating temporal dynamics of brain development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C74 represent background knowledge and literature context. All claims are properly cited with appropriate references. These establish the conceptual framework for the study but are not novel findings. The citations appear accurate based on the stated content.",
+    "result_type": "MINOR"
+  }
+]

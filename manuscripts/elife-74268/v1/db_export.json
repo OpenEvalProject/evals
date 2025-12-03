@@ -1,0 +1,1510 @@
+{
+  "submission": {
+    "id": "7c1201bd-66fa-42f7-ac3d-0cc1908e260f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:06:10.823342Z",
+    "updated_at": "2025-12-03T10:06:10.823342Z"
+  },
+  "content": [
+    {
+      "id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "submission_id": "7c1201bd-66fa-42f7-ac3d-0cc1908e260f",
+      "content_type": "manuscript",
+      "content_text": "# Comment on \u2018SARS-CoV-2 suppresses anticoagulant and fibrinolytic gene expression in the lung\u2019\n\n## Authors\n\n- Ethan S FitzGerald<sup>1</sup> ([ORCID: 0000-0002-0700-8561](https://orcid.org/0000-0002-0700-8561))\n- Amanda M Jamieson<sup>1</sup> ([ORCID: 0000-0002-5781-9231](https://orcid.org/0000-0002-5781-9231)) \u2020\n\n### Affiliations\n\n1. Division of Biology and Medicine, Department of Molecular Microbiology and Immunology, Brown University Providence United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMast et al. analyzed transcriptome data derived from RNA-sequencing (RNA-seq) of COVID-19 patient bronchoalveolar lavage fluid (BALF) samples, as compared to BALF RNA-seq samples from a study investigating microbiome and inflammatory interactions in obese and asthmatic adults (Mast et al., 2021). Based on their analysis of these data, Mast et al. concluded that mRNA expression of key regulators of the extrinsic coagulation cascade and fibrinolysis were significantly reduced in COVID-19 patients. Notably, they reported that the expression of the extrinsic coagulation cascade master regulator Tissue Factor (F3) remained unchanged, while there was an 8-fold upregulation of its cognate inhibitor Tissue Factor Pathway Inhibitor (TFPI). From this they conclude that \u201cpulmonary fibrin deposition does not stem from enhanced local [tissue factor] production and that counterintuitively, COVID-19 may dampen [tissue factor]-dependent mechanisms in the lungs\u201d. They also reported decreased Activated Protein C (aPC) mediated anticoagulant activity and major increases in fibrinogen expression and other key regulators of clot formation. Many of these results are contradictory to findings in most of the field, particularly the findings regarding extrinsic coagulation cascade mediated coagulopathies. Here, we present a complete re-analysis of the data sets analyzed by Mast et al. This re-analysis demonstrates that the two data sets utilized were not comparable between one another, and that the COVID-19 sample set was not suitable for the transcriptomic analysis Mast et al. performed. We also identified other significant flaws in the design of their retrospective analysis, such as poor-quality control and filtering standards. Given the issues with the datasets and analysis, their conclusions are not supported.\n\n## Introduction\n\nSince the emergence of SARS-CoV-2 in December of 2019, there have been over 230 million reported cases and more than 4.7 million deaths (Dong et al., 2020). The scientific community has worked to rapidly advance our molecular and clinical understanding of COVID-19 (the disease caused by SARS-CoV-2) pathogenesis to develop lifesaving interventions. While the integration of diverse fields into the effort to understand this emergent disease can augment approaches, the rush of many disparate research teams to contribute to the infectious disease field at this time also holds significant risks. Given the importance and clinical relevance of COVID-19 research findings, including the retrospective examination of publicly available datasets, it is essential that the published data adheres to rigorous standards of quality control and certainty. In Mast et al, the authors used datasets from two published studies that performed bulk RNA-sequencing of bronchoalveolar lavage cells to specifically look at changes in the coagulation cascade (Mast et al., 2021). Samples from Zhou et al. contained the COVID-19 patient data and samples from Michalovich at el. served as the control group. In Zhou et al., to identify the etiological agent of COVID-19, total RNA content derived from the BALF of 9 human patients from the initial outbreak in China\u2019s Wuhan Province was sequenced (Zhou et al., 2020). Michalovich et al. analyzed transcriptomic RNA sequencing libraries to understand how obesity, asthma, and smoking status amplified the dysbiosis of microbiome and immune interactions (Michalovich et al., 2019).\n\nIn Mast et al. the authors concluded that the extrinsic coagulation cascade regulation in the lung was not majorly impacted by SARS-CoV-2. They proposed that the bradykinin storm mediated pathogenesis originally proposed in Garvin et al., 2020 drove coagulopathies along with suppressed fibrinolysis. However, our reanalysis of the data-sets and the experimental design utilized by Mast et al. revealed the following serious issues that bring into question these conclusions; (1) the control group from Michalovich et al. contains mostly samples that are not from healthy lungs and many samples are from people with multiple comorbidities, (2) the two groups that are compared use fundamentally dissimilar library preparation methods that cannot be validly compared, and (3) Zhou et al. has insufficient read depth for it to be used for differential expression analysis. These issues are not readily observable in the published text of Mast et al., due to the use of Log-2 fold change and fold change in the text and figures, as well as the inclusion of only counts per million normalized counts in the supplemental files. This method of data reporting obscures the extremely low counts for many genes of interest. Many other publications in the field, including bioinformatics analyses, in-vitro studies, clinical research, and post-clinical autopsies directly contradict the findings of Mast et al (Subrahmanian et al., 2021; Rosell et al., 2021; FitzGerald et al., 2021). The initial publication of inaccurate findings could have been avoided by applying quality control standards to the libraries included in the analysis. These issues and clear contradictory evidence in the field, seriously compromise the accuracy of the differential expression analysis in Mast et al., and the validity of the conclusions reached by the authors.\n\n## Results\n\n### The designation of Michalovich et al. as a \u201cHealthy Control\u201d for differential expression analysis\n\nThe first issue we identified was related to the designation of the BALF bulk RNA-sequencing samples from Michalovich et al (GEO data set - PRJNA434133) as \u201cHealthy Controls\u201d by Mast et al. Analysis of the meta-data associated with the described \u201cHealthy Control\u201d subjects published in Michalovich et al. demonstrates that their samples were overall not healthy and also not representative of the average American population in terms of obesity (CDC, 2021b) (42.4%), smoking rates (CDC, 2020) (14.0%), and asthma (CDC, 2021a) (8%). Metadata reported from Michalovich et al. (also reported in the supplement of Garvin et al.) indicates that only 3 samples out of 40 had were reported as non-asthma, non-smoking, and non-obese (7.5%). The \u201chealthy controls\u201d were reported as 52.5% obese, 27.5% active smokers, and 55% asthmatic, with many individuals having multiple of these co-morbidities. (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74268/elife-74268-fig1-v1.jpg)\n\n**Figure 1.:** (Supplementary file 1 \u2013 \u201cPatient Meta-data\u201d).\n\nThe issues with using the samples from Michalovich et al. as the healthy control samples is made clear in the findings of the original manuscript. The study found significant changes in systemic and pulmonary inflammation when comparing individuals with obesity, asthma, or smoking history to their healthy subjects. Specifically, they found elevated levels of circulating inflammatory mediators (IL-6, IL-2, TNF-\u03b1, etc.) and proteins regulating coagulation (C-reactive protein, Fibrinogen, Serum Amyloid Alpha). Additionally, they reported significant changes in BALF concentrations of C reactive protein, Serum Amyloid Alpha, IL-5, and other proteins that would impact coagulation and inflammation. Gene ontology analysis of transcriptional differences in the BALF that were published in Michalovich et al. identified significant enrichments in tissue remodeling and inflammation ontologies amongst obese and asthmatic groups relative to the three healthy controls. These significant inflammatory, pro-coagulant, and transcriptional changes within the samples that Mast et al. designated as \u201chealthy controls\u201d have many overlapping similarities with the phenotypic changes that are associated with SARS-CoV-2. Such changes would significantly disrupt the ability to accurately characterize SARS-CoV-2 differential expression as these comorbidities are not controlled for in Mast et al. The presence of such disparate sample types within the \u201chealthy control\u201d group does not yield an averaged and more representative control group as was implied in Mast et al., instead the pro-coagulant transcriptional changes associated with the co-morbidities observed in much of the control group would likely mask relevant COVID-19 induced transcriptional changes. Additionally, averaging of highly disparate samples within the control group during differential expression analysis would not yield a more representative data set, but rather would generate a noisy control group with averages significantly weighted towards more abundant sample types.\n\n### Dissimilar library preparation methods of Michalovich et al. (transcriptomic) and Zhou et al. (total RNA) are not comparable\n\nBased on the description of the RNA sequencing library preparation methods described in Zhou et al. and Michalovich et al., very different approaches were used to prepare sequencing libraries. The type of library preparation can significantly modify the RNA content of sequencing libraries via polyA enrichment, rRNA depletion, and other major differences in molecular processes underlying library preparation. Dissimilar libraries, particularly those with non-similar polyA enrichment and ribosomal RNA (rRNA) depletion, cannot reliably be used for differential expression analysis with transcripts per million (TPM) based normalization, which Mast et al. utilized in their analysis (Zhao et al., 2020).\n\nMichalovich et al. uses libraries that are enriched for mRNA via polyA enrichment, while Zhou et al. does not. Michalovich et al. also uses a TruSeq Stranded RNA library Prep kit with RiboZeroTMGold ribodepletion probes. This library preparation approach yields libraries that are selectively depleted of ribosomal reads (which are the predominant RNA species in cells), while enriching for mature mRNA transcripts (Lodish et al., 1999). By contrast, Zhou et al. used HighPure Viral RNA preparation kits to purify RNA for sequencing and did not describe any enrichments or depletion during library preparation. Given that the purpose of the sequencing analysis performed by Zhou et al. was to identify the viral etiological agent of COVID-19, polyA enrichment was likely not performed to avoid depleting viral transcripts that are not poly-adenylated. This library preparation approach yields libraries that contain total RNA content from host cells, including viral RNAs, rRNAs, and all forms of eukaryotic transcripts such as pre-mRNA, ncRNAs, mRNAs, and other rare RNAs.\n\nTo confirm the functional differences in library preparation methods, we analyzed the proportion of reads aligning to rRNA transcripts using the same CLC genomics alignment settings and reference transcriptomes described in Mast et al. This confirmed that the total rRNA content was at a significantly greater proportion in SARS-CoV-2+ patient samples relative to control samples. (Figure 2, Supplementary file 1) The amount of rRNA reads in the SARS-CoV-2+ patient samples would also significantly decrease the mRNA transcriptome coverage of the SARS-CoV-2+ libraries. These discrepancies in RNA composition between libraries generated by Michalovich et al. and Zhou et al. would unacceptably distort TPM based count normalization and library size normalization during differential expression analysis, both of which rely on the assumption that the libraries contain the same kinds of RNAs (Evans et al., 2018).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74268/elife-74268-fig2-v1.jpg)\n\n**Figure 2.:** Control group and SARS-CoV-2+ fastq files were accessed from public repositories and aligned with CLC genomics workbench as described in Garvin et al. Count data for known RefSeq rRNA features were sorted from CLC generated count tables and summed per sample. rRNA count sums were then divided by the total counts per sample to generate percentages.\n\n### Insufficient read depth of samples from Zhou et al.\n\nRNA-seq approaches for differential expression analysis require that enough sequencing reads be collected to accurately quantify the total expression of transcripts across the genome. In order to have statistical meaningful numbers of reads mapping to each gene for differential expression analysis minimum read depth requirements must be met. If a particular transcript is lowly expressed relative to other transcripts, then a low number of reads may be stochastically detected during sequencing. Such a dynamic could artificially inflate or deflate the relative expression of a particular transcript, especially when normalization approaches are applied to compare libraries sequenced at different depths or with radically different RNA compositions. It is generally accepted in the field that experiments investigating eukaryotic global gene expression typically require at least 30 million poly-A and ribo-depleted reads per sample (Williams et al., 2014). In human cells, such as those investigated by Mast et al. approximately 80% of transcripts expressed at >10 fragments per kilobase per million mapped reads (FPKM) are accurately quantifiable with about 36 million 100 bp paired end reads (Sims et al., 2014).\n\nIn Mast et al., there are major discrepancies in the relative depths of the sequencing libraries used for the \u201chealthy control\u201d samples and the SARS-CoV-2+ patient samples (Figure 3). Of the nine SARS-CoV-2+ samples from Zhou et al., four contain less than 10 million reads total, an additional four contain between 30 million to 40 million reads, and one sample contains 60 million reads. As described in Figure 2, many of the samples from Zhou et al. contain high proportions of ribosomal RNA reads, which would further compromise coverage of the mRNA transcriptome in the COVID-19+ sample set. These significant issues are most clearly substantiated by the observation that many essential genes of interest reported in Table 1 of Mast et al. have very few or even no mapped reads in COVID-19 patient samples. (Supplementary file 2 and Source data 2) This makes fold change values and differential comparisons, particularly after normalization, unreliable and not representative of the actual biological RNA content or transcriptional activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74268/elife-74268-fig3-v1.jpg)\n\n**Figure 3.:** This graphic was generated by analyzing trimmed fastq files using the package FastQC, and then processing the FastQC output into the package MultiQC. MultiQC was used to generate the histogram.\n\nTo illustrate a specific instance, Mast et al. report that thrombomodulin (THBD) expression in the BALF was decreased by 2200% during SARS-CoV-2 infection. They reported the expression level to be approximately 9.6 counts per million reads in COVID-19 infection and 224 counts per million reads in the control sample set. However, at the level of raw counts, control samples averaged 8,377.68 counts while COVID-19 positive samples averaged 59.88 counts. The normalization process for the counts per million based normalization was further biased by the inclusion of between 16%\u201380% of the total rRNA in only COVID-19 samples. These rRNA reads would be included in the total number of mapped reads used to calculate the CPM normalization factor in a manner that was not consistent with the normalization of control samples. (CPM Normalization factor = [Total number of reads x 10^6]/[Total number of mapped reads]) Additionally, such a bias would significantly decrease the likelihood of detecting mRNA transcripts in the COVID + genes, including thrombomodulin transcripts. These confounding factors could bring into question the accuracy of the reported magnitude of the differential expression, the reported directionality of the differential expression, and the subsequent pathway analysis performed.\n\n## Discussion\n\nThe significant issues we have identified regarding the heterogeneity of control samples, dissimilar library preparation methods, and insufficient sequencing depth collectively bring into doubt the validity of many of the conclusions drawn in Mast et al. The normalized manner in which the gene expression data were reported in the supplement and manuscript of Mast et al. made it difficult for reviewers and readers to identify these issues when analyzing the manuscript. Mast et al. additionally did not provide supplemental data regarding the raw reads that were processed during alignment, the raw counts that were normalized and processed during differential expression analysis, or any NGS quality control standards that should have been conducted by the authors before analyzing the data set. From our analysis of their raw data, we conclude that the sample set and experimental design implemented in Mast et al. are fundamentally flawed. The concerns are significantly magnified knowing that others researching COVID-19 are citing these poorly substantiated results in publications (Francischetti et al., 2021) or integrating these findings into their experimental design and future plans.\n\nUpon processing the raw data as described in our results section, serious issues with relative sequencing depth quickly became apparent. Review of the count data which we have summarized in Table 2 and the differential expression results for genes of interest reported in Table 1 of Mast et al. demonstrate the flawed nature of this analysis. Overall, 23 out of 35 genes of interest reported in Mast et al. average less than 10 mapped reads per gene but were still included in the analysis. (Supplementary file 2 and Source data 2) 8 of those genes had zero mapped reads reported. (Supplementary file 2 and Source data 2) The fold change magnitudes reported for these genes are almost certainly not reflective of the actual biological context.\n\nBy far the most notable result reported in Mast et al. is the reported observation that tissue factor, the key initiator of the extrinsic coagulation cascade, is not significantly impacted by SARS-CoV-2 infection. They reported no significant difference in expression levels and concluded that tissue factor biology was not a significant factor in the thrombotic complications of SARS-CoV-2 in the lung. They postulated that COVID-19 may dampen tissue factor dependent mechanisms in the lung. This analysis was confounded by the above-described issues including relative depth, rRNA differences between control and COVID sample sets, and normalization This statement is important as the field has also begun converging on tissue factor as a key player in the pathogenesis and coagulopathy complications of SARS-CoV-2 infection. For instance, patients with COVID-19 have been shown to have elevated levels of tissue factor laden microvesicles circulating in their blood, along with other markers of the extrinsic coagulation cascade (Rosell et al., 2021). Further, autopsy studies of COVID-19 patients have also found that tissue factor protein expression is approximately doubled in the lungs of patients that succumbed to COVID-19 (Subrahmanian et al., 2021). Tissue factor upregulation in the BALF of COVID-19 patients has also been observed at the RNA level using both single cell and bulk RNA-sequencing, and the observed increase correlated with severity (FitzGerald et al., 2021). These major discrepancies with the field and the ultimate inaccuracies of several conclusions advanced by Mast et al. demonstrate that the design of retrospective analyses implemented in Mast et al. are fundamentally flawed and should not be integrated into future research findings.\n\nAt the time the manuscript was submitted, several higher quality data sets were available and the authors of Mast et al. should have redone their analysis on sample sets that were collected with the intent of resolving transcriptomic signatures to accurately characterize the host response to SARS-CoV-2 (Xiong et al., 2020; Liao et al., 2020; Xu et al., 2020). Additionally, sufficient metadata, raw NGS data outputs, and quality control reports should have been provided to reviewers at the time of submission. The research community relies on a dependable body of shared knowledge with well designed and controlled studies so that future research can proceed in the correct direction.\n",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9b685e2e-44d7-4642-bed4-cae8ed391d47",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C1",
+      "claim": "Mast et al. analyzed transcriptome data derived from RNA-sequencing (RNA-seq) of COVID-19 patient bronchoalveolar lavage fluid (BALF) samples, as compared to BALF RNA-seq samples from a study investigating microbiome and inflammatory interactions in obese and asthmatic adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Mast et al. analyzed transcriptome data derived from RNA-sequencing (RNA-seq) of COVID-19 patient bronchoalveolar lavage fluid (BALF) samples, as compared to BALF RNA-seq samples from a study investigating microbiome and inflammatory interactions in obese and asthmatic adults (Mast et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mast et al., 2021, which is the work being critiqued.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "b89ce78a-f732-4412-a0d4-4705ba91c17e",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C2",
+      "claim": "Mast et al. concluded that mRNA expression of key regulators of the extrinsic coagulation cascade and fibrinolysis were significantly reduced in COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their analysis of these data, Mast et al. concluded that mRNA expression of key regulators of the extrinsic coagulation cascade and fibrinolysis were significantly reduced in COVID-19 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes conclusions from Mast et al., which is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "c22ceab5-86ee-401e-aa81-77754723bdb5",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C3",
+      "claim": "Mast et al. reported that the expression of Tissue Factor (F3) remained unchanged in COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, they reported that the expression of the extrinsic coagulation cascade master regulator Tissue Factor (F3) remained unchanged, while there was an 8-fold upregulation of its cognate inhibitor Tissue Factor Pathway Inhibitor (TFPI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a finding reported by Mast et al., which is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "d763f815-5df4-423e-b28b-100a443be952",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C4",
+      "claim": "Mast et al. reported an 8-fold upregulation of Tissue Factor Pathway Inhibitor (TFPI) in COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, they reported that the expression of the extrinsic coagulation cascade master regulator Tissue Factor (F3) remained unchanged, while there was an 8-fold upregulation of its cognate inhibitor Tissue Factor Pathway Inhibitor (TFPI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a specific quantitative finding from Mast et al., which is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "cb2dd2e5-5339-4eff-905c-bb18d7707d7e",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C5",
+      "claim": "Mast et al. concluded that pulmonary fibrin deposition does not stem from enhanced local tissue factor production and that COVID-19 may dampen tissue factor-dependent mechanisms in the lungs.",
+      "claim_type": "EXPLICIT",
+      "source": "From this they conclude that \"pulmonary fibrin deposition does not stem from enhanced local [tissue factor] production and that counterintuitively, COVID-19 may dampen [tissue factor]-dependent mechanisms in the lungs\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a direct quote of conclusions from Mast et al., which is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "c6958fb9-92a6-42cf-af2b-98477ab4ee02",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C6",
+      "claim": "Mast et al. reported decreased Activated Protein C (aPC) mediated anticoagulant activity in COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "They also reported decreased Activated Protein C (aPC) mediated anticoagulant activity and major increases in fibrinogen expression and other key regulators of clot formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a finding reported by Mast et al., which is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "58b04957-8bd6-4180-9932-fcd2f9283243",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C7",
+      "claim": "Mast et al. reported major increases in fibrinogen expression and other key regulators of clot formation in COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "They also reported decreased Activated Protein C (aPC) mediated anticoagulant activity and major increases in fibrinogen expression and other key regulators of clot formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes findings reported by Mast et al., which is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "dfc711c0-77fd-4de7-a6a8-11137044e669",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C8",
+      "claim": "Many results from Mast et al. are contradictory to findings in most of the field, particularly regarding extrinsic coagulation cascade mediated coagulopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these results are contradictory to findings in most of the field, particularly the findings regarding extrinsic coagulation cascade mediated coagulopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an assertion by the authors based on their knowledge of the field, which they support with citations later in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "5e4ec333-915c-4175-9990-541d8b2d57de",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C9",
+      "claim": "The two data sets utilized by Mast et al. were not comparable between one another.",
+      "claim_type": "EXPLICIT",
+      "source": "This re-analysis demonstrates that the two data sets utilized were not comparable between one another, and that the COVID-19 sample set was not suitable for the transcriptomic analysis Mast et al. performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' re-analysis of the data, which is described in detail in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "ff3b92d7-9786-4624-857e-0033f91c3496",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C10",
+      "claim": "The COVID-19 sample set was not suitable for the transcriptomic analysis Mast et al. performed.",
+      "claim_type": "EXPLICIT",
+      "source": "This re-analysis demonstrates that the two data sets utilized were not comparable between one another, and that the COVID-19 sample set was not suitable for the transcriptomic analysis Mast et al. performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' re-analysis of the data, which is described in detail in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "f05719f1-1805-4f7b-8034-179f27a7b0e8",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C11",
+      "claim": "Mast et al. had poor-quality control and filtering standards in their retrospective analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified other significant flaws in the design of their retrospective analysis, such as poor-quality control and filtering standards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' re-analysis of the data and methods used by Mast et al.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "95fc9122-cb51-4ca2-96ac-2660f822d3c5",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C12",
+      "claim": "There have been over 230 million reported cases of SARS-CoV-2 since its emergence in December 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the emergence of SARS-CoV-2 in December of 2019, there have been over 230 million reported cases and more than 4.7 million deaths (Dong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dong et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "c4a9df46-1209-4d7f-9603-c842b93bcfe1",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C13",
+      "claim": "There have been more than 4.7 million deaths from SARS-CoV-2 since its emergence in December 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the emergence of SARS-CoV-2 in December of 2019, there have been over 230 million reported cases and more than 4.7 million deaths (Dong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dong et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "cfe8c488-d4a5-4b05-b2ba-d1ac461156a9",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C14",
+      "claim": "Zhou et al. sequenced total RNA content derived from the BALF of 9 human patients from the initial outbreak in China's Wuhan Province to identify the etiological agent of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "In Zhou et al., to identify the etiological agent of COVID-19, total RNA content derived from the BALF of 9 human patients from the initial outbreak in China's Wuhan Province was sequenced (Zhou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zhou et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "4233f578-2090-4d2d-ae58-49d8682f6528",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C15",
+      "claim": "Michalovich et al. analyzed transcriptomic RNA sequencing libraries to understand how obesity, asthma, and smoking status amplified the dysbiosis of microbiome and immune interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Michalovich et al. analyzed transcriptomic RNA sequencing libraries to understand how obesity, asthma, and smoking status amplified the dysbiosis of microbiome and immune interactions (Michalovich et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Michalovich et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "1d0ddd96-c51e-4409-86ce-a69cefcf8936",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C16",
+      "claim": "Mast et al. proposed that bradykinin storm mediated pathogenesis originally proposed in Garvin et al., 2020 drove coagulopathies along with suppressed fibrinolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "They proposed that the bradykinin storm mediated pathogenesis originally proposed in Garvin et al., 2020 drove coagulopathies along with suppressed fibrinolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a proposal from Mast et al. that references Garvin et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "b92c34bf-b225-4b6e-86a8-ea6d81c71bf7",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C17",
+      "claim": "The control group from Michalovich et al. contains mostly samples that are not from healthy lungs and many samples are from people with multiple comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "the control group from Michalovich et al. contains mostly samples that are not from healthy lungs and many samples are from people with multiple comorbidities",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of metadata from Michalovich et al., which is presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "2bfe190a-27f7-49ea-bf31-495bc54c362e",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C18",
+      "claim": "The two groups compared by Mast et al. use fundamentally dissimilar library preparation methods that cannot be validly compared.",
+      "claim_type": "EXPLICIT",
+      "source": "the two groups that are compared use fundamentally dissimilar library preparation methods that cannot be validly compared",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of the library preparation methods described in the original studies.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "047a0e73-6c34-498e-b2b3-c2f84002d3a1",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C19",
+      "claim": "Zhou et al. has insufficient read depth for it to be used for differential expression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Zhou et al. has insufficient read depth for it to be used for differential expression analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of sequencing depth data, which is presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "b71e7fca-f44f-4682-a85a-839eaa557269",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C20",
+      "claim": "Many publications in the field, including bioinformatics analyses, in-vitro studies, clinical research, and post-clinical autopsies directly contradict the findings of Mast et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Many other publications in the field, including bioinformatics analyses, in-vitro studies, clinical research, and post-clinical autopsies directly contradict the findings of Mast et al (Subrahmanian et al., 2021; Rosell et al., 2021; FitzGerald et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Subrahmanian et al., 2021; Rosell et al., 2021; FitzGerald et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "28ec5097-0ba2-40d1-96b2-319eca28c9b6",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C21",
+      "claim": "Only 3 samples out of 40 in the Michalovich et al. dataset were reported as non-asthma, non-smoking, and non-obese (7.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Metadata reported from Michalovich et al. (also reported in the supplement of Garvin et al.) indicates that only 3 samples out of 40 had were reported as non-asthma, non-smoking, and non-obese (7.5%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of metadata from Michalovich et al. and is visualized in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "002eb33f-8826-45dd-87c8-58bd18c8fb00",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C22",
+      "claim": "The 'healthy controls' from Michalovich et al. were reported as 52.5% obese, 27.5% active smokers, and 55% asthmatic, with many individuals having multiple of these co-morbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "The \"healthy controls\" were reported as 52.5% obese, 27.5% active smokers, and 55% asthmatic, with many individuals having multiple of these co-morbidities. (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of metadata from Michalovich et al. and is visualized in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "d476ab74-f796-492f-9c7b-2dfa1d1610e7",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C23",
+      "claim": "The average American population has an obesity rate of 42.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the meta-data associated with the described \"Healthy Control\" subjects published in Michalovich et al. demonstrates that their samples were overall not healthy and also not representative of the average American population in terms of obesity (CDC, 2021b) (42.4%), smoking rates (CDC, 2020) (14.0%), and asthma (CDC, 2021a) (8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to CDC, 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "bd7f37a6-3ba2-480c-a336-bb3dede90831",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C24",
+      "claim": "The average American population has a smoking rate of 14.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the meta-data associated with the described \"Healthy Control\" subjects published in Michalovich et al. demonstrates that their samples were overall not healthy and also not representative of the average American population in terms of obesity (CDC, 2021b) (42.4%), smoking rates (CDC, 2020) (14.0%), and asthma (CDC, 2021a) (8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to CDC, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "8c663e26-6983-4f34-8b0e-9f1abb337882",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C25",
+      "claim": "The average American population has an asthma rate of 8%.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the meta-data associated with the described \"Healthy Control\" subjects published in Michalovich et al. demonstrates that their samples were overall not healthy and also not representative of the average American population in terms of obesity (CDC, 2021b) (42.4%), smoking rates (CDC, 2020) (14.0%), and asthma (CDC, 2021a) (8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to CDC, 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "915bfa84-02a0-4128-a758-fb2913ce8ec4",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C26",
+      "claim": "Michalovich et al. found significant changes in systemic and pulmonary inflammation when comparing individuals with obesity, asthma, or smoking history to their healthy subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The study found significant changes in systemic and pulmonary inflammation when comparing individuals with obesity, asthma, or smoking history to their healthy subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes findings from Michalovich et al., which is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "69da30b4-d678-4e95-90d1-1d994180f35e",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C27",
+      "claim": "Michalovich et al. found elevated levels of circulating inflammatory mediators (IL-6, IL-2, TNF-\u03b1, etc.) in individuals with obesity, asthma, or smoking history.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, they found elevated levels of circulating inflammatory mediators (IL-6, IL-2, TNF-\u03b1, etc.) and proteins regulating coagulation (C-reactive protein, Fibrinogen, Serum Amyloid Alpha).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes findings from Michalovich et al., which is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "c4e87217-9f3d-4567-a068-cdcdc1c90dc7",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C28",
+      "claim": "Michalovich et al. found elevated levels of proteins regulating coagulation (C-reactive protein, Fibrinogen, Serum Amyloid Alpha) in individuals with obesity, asthma, or smoking history.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, they found elevated levels of circulating inflammatory mediators (IL-6, IL-2, TNF-\u03b1, etc.) and proteins regulating coagulation (C-reactive protein, Fibrinogen, Serum Amyloid Alpha).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes findings from Michalovich et al., which is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "821826e7-45d0-4ee6-bddf-972ea819c009",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C29",
+      "claim": "Michalovich et al. reported significant changes in BALF concentrations of C reactive protein, Serum Amyloid Alpha, IL-5, and other proteins that would impact coagulation and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, they reported significant changes in BALF concentrations of C reactive protein, Serum Amyloid Alpha, IL-5, and other proteins that would impact coagulation and inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes findings from Michalovich et al., which is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "69306ccf-0cc7-4040-aad6-6d2b06066bcf",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C30",
+      "claim": "Gene ontology analysis of transcriptional differences in the BALF published in Michalovich et al. identified significant enrichments in tissue remodeling and inflammation ontologies amongst obese and asthmatic groups relative to the three healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology analysis of transcriptional differences in the BALF that were published in Michalovich et al. identified significant enrichments in tissue remodeling and inflammation ontologies amongst obese and asthmatic groups relative to the three healthy controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes findings from Michalovich et al., which is cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "ba903ddf-bfef-45b6-b73c-f580fc112857",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C31",
+      "claim": "The type of library preparation can significantly modify the RNA content of sequencing libraries via polyA enrichment, rRNA depletion, and other major differences in molecular processes underlying library preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "The type of library preparation can significantly modify the RNA content of sequencing libraries via polyA enrichment, rRNA depletion, and other major differences in molecular processes underlying library preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge in the field of RNA sequencing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "dad7c885-998e-489e-9d26-7ba2969e6f92",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C32",
+      "claim": "Dissimilar libraries, particularly those with non-similar polyA enrichment and ribosomal RNA (rRNA) depletion, cannot reliably be used for differential expression analysis with transcripts per million (TPM) based normalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Dissimilar libraries, particularly those with non-similar polyA enrichment and ribosomal RNA (rRNA) depletion, cannot reliably be used for differential expression analysis with transcripts per million (TPM) based normalization, which Mast et al. utilized in their analysis (Zhao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zhao et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "3742a22a-ede1-4d9b-b005-434f50a91ade",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C33",
+      "claim": "Michalovich et al. uses libraries that are enriched for mRNA via polyA enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "Michalovich et al. uses libraries that are enriched for mRNA via polyA enrichment, while Zhou et al. does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of the methods described in Michalovich et al.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "3780915b-de9a-4f6d-9194-b6910ed4e5de",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C34",
+      "claim": "Zhou et al. does not use polyA enrichment in their library preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Michalovich et al. uses libraries that are enriched for mRNA via polyA enrichment, while Zhou et al. does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of the methods described in Zhou et al.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "0954214f-3968-4e45-be03-0326590a51d5",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C35",
+      "claim": "Michalovich et al. uses a TruSeq Stranded RNA library Prep kit with RiboZeroTMGold ribodepletion probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Michalovich et al. also uses a TruSeq Stranded RNA library Prep kit with RiboZeroTMGold ribodepletion probes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of the methods described in Michalovich et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "e0a0d54b-a9ba-4505-bf09-0e3430af77bb",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C36",
+      "claim": "The library preparation approach used by Michalovich et al. yields libraries that are selectively depleted of ribosomal reads while enriching for mature mRNA transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "This library preparation approach yields libraries that are selectively depleted of ribosomal reads (which are the predominant RNA species in cells), while enriching for mature mRNA transcripts (Lodish et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lodish et al., 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "e36f9a1a-6c1c-4ab3-bbab-6e663b06bd94",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C37",
+      "claim": "Ribosomal reads are the predominant RNA species in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This library preparation approach yields libraries that are selectively depleted of ribosomal reads (which are the predominant RNA species in cells), while enriching for mature mRNA transcripts (Lodish et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lodish et al., 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "a1df6294-63f4-4256-910d-9eb32411716f",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C38",
+      "claim": "Zhou et al. used HighPure Viral RNA preparation kits to purify RNA for sequencing and did not describe any enrichments or depletion during library preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Zhou et al. used HighPure Viral RNA preparation kits to purify RNA for sequencing and did not describe any enrichments or depletion during library preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of the methods described in Zhou et al.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "18c14a14-6659-40d1-b95f-90763acb6775",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C39",
+      "claim": "PolyA enrichment was likely not performed in Zhou et al. to avoid depleting viral transcripts that are not poly-adenylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the purpose of the sequencing analysis performed by Zhou et al. was to identify the viral etiological agent of COVID-19, polyA enrichment was likely not performed to avoid depleting viral transcripts that are not poly-adenylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the purpose of the Zhou et al. study and knowledge of viral RNA characteristics.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "338885de-33e9-4a6f-b0c3-3caa4e5aa871",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C40",
+      "claim": "The library preparation approach used by Zhou et al. yields libraries that contain total RNA content from host cells, including viral RNAs, rRNAs, and all forms of eukaryotic transcripts such as pre-mRNA, ncRNAs, mRNAs, and other rare RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This library preparation approach yields libraries that contain total RNA content from host cells, including viral RNAs, rRNAs, and all forms of eukaryotic transcripts such as pre-mRNA, ncRNAs, mRNAs, and other rare RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the library preparation methods described in Zhou et al.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "949246b3-3b5d-41f0-981f-63466fc9f780",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C41",
+      "claim": "The total rRNA content was at a significantly greater proportion in SARS-CoV-2+ patient samples relative to control samples.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirmed that the total rRNA content was at a significantly greater proportion in SARS-CoV-2+ patient samples relative to control samples. (Figure 2, Supplementary file 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the authors' analysis of rRNA content, which is presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "1f0b2461-928c-4c70-9f27-bc483c448894",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C42",
+      "claim": "The amount of rRNA reads in the SARS-CoV-2+ patient samples would significantly decrease the mRNA transcriptome coverage of the SARS-CoV-2+ libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of rRNA reads in the SARS-CoV-2+ patient samples would also significantly decrease the mRNA transcriptome coverage of the SARS-CoV-2+ libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the observed high rRNA content in SARS-CoV-2+ samples.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "2e3b7914-de75-437c-b065-cf98ff46c1c4",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C43",
+      "claim": "Discrepancies in RNA composition between libraries generated by Michalovich et al. and Zhou et al. would unacceptably distort TPM based count normalization and library size normalization during differential expression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "These discrepancies in RNA composition between libraries generated by Michalovich et al. and Zhou et al. would unacceptably distort TPM based count normalization and library size normalization during differential expression analysis, both of which rely on the assumption that the libraries contain the same kinds of RNAs (Evans et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Evans et al., 2018 and is based on inference from the observed differences in library preparation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "11d6f768-18a5-492f-b102-f728998d3daa",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C44",
+      "claim": "TPM based count normalization and library size normalization rely on the assumption that the libraries contain the same kinds of RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "These discrepancies in RNA composition between libraries generated by Michalovich et al. and Zhou et al. would unacceptably distort TPM based count normalization and library size normalization during differential expression analysis, both of which rely on the assumption that the libraries contain the same kinds of RNAs (Evans et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Evans et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "c7b07d7e-2321-441c-8ac9-2da7c49ddcaf",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C45",
+      "claim": "RNA-seq approaches for differential expression analysis require that enough sequencing reads be collected to accurately quantify the total expression of transcripts across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq approaches for differential expression analysis require that enough sequencing reads be collected to accurately quantify the total expression of transcripts across the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge in the field of RNA sequencing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "d198e263-d30c-42b8-9735-e2069452aef6",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C46",
+      "claim": "Experiments investigating eukaryotic global gene expression typically require at least 30 million poly-A and ribo-depleted reads per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "It is generally accepted in the field that experiments investigating eukaryotic global gene expression typically require at least 30 million poly-A and ribo-depleted reads per sample (Williams et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Williams et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "a2f15a31-44de-4ca1-9861-e5b6fe592f4b",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C47",
+      "claim": "In human cells, approximately 80% of transcripts expressed at >10 fragments per kilobase per million mapped reads (FPKM) are accurately quantifiable with about 36 million 100 bp paired end reads.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, such as those investigated by Mast et al. approximately 80% of transcripts expressed at >10 fragments per kilobase per million mapped reads (FPKM) are accurately quantifiable with about 36 million 100 bp paired end reads (Sims et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sims et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "7db6de85-4db2-4705-8305-0dd485963133",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C48",
+      "claim": "There are major discrepancies in the relative depths of the sequencing libraries used for the 'healthy control' samples and the SARS-CoV-2+ patient samples in Mast et al.",
+      "claim_type": "EXPLICIT",
+      "source": "In Mast et al., there are major discrepancies in the relative depths of the sequencing libraries used for the \"healthy control\" samples and the SARS-CoV-2+ patient samples (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the authors' analysis of sequencing depth, which is presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "3610d0ea-2d31-4c7d-a4e2-235704101e5b",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C49",
+      "claim": "Of the nine SARS-CoV-2+ samples from Zhou et al., four contain less than 10 million reads total.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the nine SARS-CoV-2+ samples from Zhou et al., four contain less than 10 million reads total, an additional four contain between 30 million to 40 million reads, and one sample contains 60 million reads.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the authors' analysis of sequencing depth, which is presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "85e9b7ed-f7a9-495f-9590-40dc867f0cba",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C50",
+      "claim": "Of the nine SARS-CoV-2+ samples from Zhou et al., four contain between 30 million to 40 million reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the nine SARS-CoV-2+ samples from Zhou et al., four contain less than 10 million reads total, an additional four contain between 30 million to 40 million reads, and one sample contains 60 million reads.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the authors' analysis of sequencing depth, which is presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "4ddcc25a-cefe-4db7-9af9-30a264b0184a",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C51",
+      "claim": "Of the nine SARS-CoV-2+ samples from Zhou et al., one sample contains 60 million reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the nine SARS-CoV-2+ samples from Zhou et al., four contain less than 10 million reads total, an additional four contain between 30 million to 40 million reads, and one sample contains 60 million reads.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the authors' analysis of sequencing depth, which is presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "73923c42-8b37-400b-bbc3-493930b72555",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C52",
+      "claim": "Many of the samples from Zhou et al. contain high proportions of ribosomal RNA reads, which would further compromise coverage of the mRNA transcriptome in the COVID-19+ sample set.",
+      "claim_type": "EXPLICIT",
+      "source": "As described in Figure 2, many of the samples from Zhou et al. contain high proportions of ribosomal RNA reads, which would further compromise coverage of the mRNA transcriptome in the COVID-19+ sample set.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the authors' analysis of rRNA content presented in Figure 2 and inference about its impact on mRNA coverage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "f255f5c6-4c62-49b5-a475-e0558afc44f0",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C53",
+      "claim": "Many essential genes of interest reported in Table 1 of Mast et al. have very few or even no mapped reads in COVID-19 patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "These significant issues are most clearly substantiated by the observation that many essential genes of interest reported in Table 1 of Mast et al. have very few or even no mapped reads in COVID-19 patient samples. (Supplementary file 2 and Source data 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of count data, which is provided in Supplementary file 2 and Source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "a35a50ee-ad1f-4e32-9a8a-c307a9848652",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C54",
+      "claim": "Mast et al. reported that thrombomodulin (THBD) expression in the BALF was decreased by 2200% during SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate a specific instance, Mast et al. report that thrombomodulin (THBD) expression in the BALF was decreased by 2200% during SARS-CoV-2 infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a finding reported by Mast et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "1bbc8b86-661b-4911-ad50-518890c357fb",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C55",
+      "claim": "Mast et al. reported thrombomodulin expression level to be approximately 9.6 counts per million reads in COVID-19 infection and 224 counts per million reads in the control sample set.",
+      "claim_type": "EXPLICIT",
+      "source": "They reported the expression level to be approximately 9.6 counts per million reads in COVID-19 infection and 224 counts per million reads in the control sample set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a finding reported by Mast et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "6a7718f3-1bd6-4b90-9353-ae9468b6151c",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C56",
+      "claim": "At the level of raw counts, control samples averaged 8,377.68 counts for thrombomodulin while COVID-19 positive samples averaged 59.88 counts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at the level of raw counts, control samples averaged 8,377.68 counts while COVID-19 positive samples averaged 59.88 counts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of raw count data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "6a1ad3f3-9f41-44e6-aa44-2b6b3278f99f",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C57",
+      "claim": "COVID-19 samples contained between 16%\u201380% of the total rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The normalization process for the counts per million based normalization was further biased by the inclusion of between 16%\u201380% of the total rRNA in only COVID-19 samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the authors' analysis of rRNA content, which is presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "10cc7906-1c9c-40c6-bd62-789d0456f480",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C58",
+      "claim": "23 out of 35 genes of interest reported in Mast et al. average less than 10 mapped reads per gene but were still included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 23 out of 35 genes of interest reported in Mast et al. average less than 10 mapped reads per gene but were still included in the analysis. (Supplementary file 2 and Source data 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of count data, which is provided in Supplementary file 2 and Source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "457b8ce1-bff3-447f-8c93-51bfcb8c0dcb",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C59",
+      "claim": "8 genes of interest reported in Mast et al. had zero mapped reads.",
+      "claim_type": "EXPLICIT",
+      "source": "8 of those genes had zero mapped reads reported. (Supplementary file 2 and Source data 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of count data, which is provided in Supplementary file 2 and Source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "33e4a879-47d8-4087-8bcd-9a03d93cf85e",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C60",
+      "claim": "Mast et al. reported no significant difference in tissue factor expression levels between COVID-19 patients and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "By far the most notable result reported in Mast et al. is the reported observation that tissue factor, the key initiator of the extrinsic coagulation cascade, is not significantly impacted by SARS-CoV-2 infection. They reported no significant difference in expression levels and concluded that tissue factor biology was not a significant factor in the thrombotic complications of SARS-CoV-2 in the lung.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a finding reported by Mast et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "7e2a2eca-1d83-4ac3-bd7c-18a600971be3",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C61",
+      "claim": "Mast et al. concluded that tissue factor biology was not a significant factor in the thrombotic complications of SARS-CoV-2 in the lung.",
+      "claim_type": "EXPLICIT",
+      "source": "By far the most notable result reported in Mast et al. is the reported observation that tissue factor, the key initiator of the extrinsic coagulation cascade, is not significantly impacted by SARS-CoV-2 infection. They reported no significant difference in expression levels and concluded that tissue factor biology was not a significant factor in the thrombotic complications of SARS-CoV-2 in the lung.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a conclusion from Mast et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "2fee837b-c788-4c65-bada-a8310f7b463e",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C62",
+      "claim": "Patients with COVID-19 have been shown to have elevated levels of tissue factor laden microvesicles circulating in their blood, along with other markers of the extrinsic coagulation cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, patients with COVID-19 have been shown to have elevated levels of tissue factor laden microvesicles circulating in their blood, along with other markers of the extrinsic coagulation cascade (Rosell et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Rosell et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "4abb8e28-c47b-4ad5-bff6-5eb47cd6f5ca",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C63",
+      "claim": "Autopsy studies of COVID-19 patients have found that tissue factor protein expression is approximately doubled in the lungs of patients that succumbed to COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, autopsy studies of COVID-19 patients have also found that tissue factor protein expression is approximately doubled in the lungs of patients that succumbed to COVID-19 (Subrahmanian et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Subrahmanian et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "9ab4c538-58ed-41fa-84b4-7b02eefd4e56",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C64",
+      "claim": "Tissue factor upregulation in the BALF of COVID-19 patients has been observed at the RNA level using both single cell and bulk RNA-sequencing, and the observed increase correlated with severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue factor upregulation in the BALF of COVID-19 patients has also been observed at the RNA level using both single cell and bulk RNA-sequencing, and the observed increase correlated with severity (FitzGerald et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to FitzGerald et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "a1ff5862-405c-460a-873d-4fd9425b6854",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C65",
+      "claim": "At the time the manuscript was submitted, several higher quality data sets were available.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time the manuscript was submitted, several higher quality data sets were available and the authors of Mast et al. should have redone their analysis on sample sets that were collected with the intent of resolving transcriptomic signatures to accurately characterize the host response to SARS-CoV-2 (Xiong et al., 2020; Liao et al., 2020; Xu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Xiong et al., 2020; Liao et al., 2020; Xu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "5ffbf271-243c-442a-967e-54d77939d6a0",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C66",
+      "claim": "The control samples from Michalovich et al. were not representative of the average American population in terms of obesity, smoking rates, and asthma.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the meta-data associated with the described \"Healthy Control\" subjects published in Michalovich et al. demonstrates that their samples were overall not healthy and also not representative of the average American population in terms of obesity (CDC, 2021b) (42.4%), smoking rates (CDC, 2020) (14.0%), and asthma (CDC, 2021a) (8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of metadata from Michalovich et al. with CDC statistics.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "2b939d0e-1b34-402e-a6c4-e09ebfdd78c2",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C67",
+      "claim": "The pro-coagulant transcriptional changes associated with the co-morbidities observed in much of the control group would likely mask relevant COVID-19 induced transcriptional changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Such changes would significantly disrupt the ability to accurately characterize SARS-CoV-2 differential expression as these comorbidities are not controlled for in Mast et al. The presence of such disparate sample types within the \"healthy control\" group does not yield an averaged and more representative control group as was implied in Mast et al., instead the pro-coagulant transcriptional changes associated with the co-morbidities observed in much of the control group would likely mask relevant COVID-19 induced transcriptional changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the observed comorbidities in the control group and knowledge of their effects.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "a545d3ba-7436-486d-be04-81dace99cc01",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C68",
+      "claim": "Averaging of highly disparate samples within the control group during differential expression analysis would not yield a more representative data set, but rather would generate a noisy control group with averages significantly weighted towards more abundant sample types.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, averaging of highly disparate samples within the control group during differential expression analysis would not yield a more representative data set, but rather would generate a noisy control group with averages significantly weighted towards more abundant sample types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on statistical principles and the composition of the control group.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "2d40454f-eed1-4cb8-89ec-82a8790c6022",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C69",
+      "claim": "The normalized manner in which the gene expression data were reported in the supplement and manuscript of Mast et al. made it difficult for reviewers and readers to identify issues when analyzing the manuscript.",
+      "claim_type": "EXPLICIT",
+      "source": "The normalized manner in which the gene expression data were reported in the supplement and manuscript of Mast et al. made it difficult for reviewers and readers to identify these issues when analyzing the manuscript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the authors' experience re-analyzing the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "1124e420-ca15-4658-86e7-15cda815bb36",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C70",
+      "claim": "Mast et al. did not provide supplemental data regarding the raw reads that were processed during alignment, the raw counts that were normalized and processed during differential expression analysis, or any NGS quality control standards.",
+      "claim_type": "EXPLICIT",
+      "source": "Mast et al. additionally did not provide supplemental data regarding the raw reads that were processed during alignment, the raw counts that were normalized and processed during differential expression analysis, or any NGS quality control standards that should have been conducted by the authors before analyzing the data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' observation of what was not included in Mast et al.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "9dcbfe45-3f57-4f85-a93d-b0f71a3d9004",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C71",
+      "claim": "The sample set and experimental design implemented in Mast et al. are fundamentally flawed.",
+      "claim_type": "EXPLICIT",
+      "source": "From our analysis of their raw data, we conclude that the sample set and experimental design implemented in Mast et al. are fundamentally flawed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the authors' re-analysis of the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "97a6041b-8b7c-454b-9c20-23acf2cd0a28",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C72",
+      "claim": "Others researching COVID-19 are citing the poorly substantiated results from Mast et al. in publications.",
+      "claim_type": "EXPLICIT",
+      "source": "The concerns are significantly magnified knowing that others researching COVID-19 are citing these poorly substantiated results in publications (Francischetti et al., 2021) or integrating these findings into their experimental design and future plans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Francischetti et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "7529be46-a1c8-4632-a98a-f7f8e2a241cd",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C73",
+      "claim": "The fold change magnitudes reported for genes with very few or no mapped reads in Mast et al. are almost certainly not reflective of the actual biological context.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes fold change values and differential comparisons, particularly after normalization, unreliable and not representative of the actual biological RNA content or transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the observed low read counts and knowledge of RNA-seq analysis.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "4751e36a-ee9a-441b-84b7-dc38a9eb3c5f",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C74",
+      "claim": "The field has begun converging on tissue factor as a key player in the pathogenesis and coagulopathy complications of SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This statement is important as the field has also begun converging on tissue factor as a key player in the pathogenesis and coagulopathy complications of SARS-CoV-2 infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge of the field and is supported by subsequent citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "2cd05e6e-f74c-45b8-a2f7-f3bba1041294",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "claim_id": "C75",
+      "claim": "Tissue factor is the key initiator of the extrinsic coagulation cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "By far the most notable result reported in Mast et al. is the reported observation that tissue factor, the key initiator of the extrinsic coagulation cascade, is not significantly impacted by SARS-CoV-2 infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge in the field of coagulation biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The 'healthy control' samples from Michalovich et al. used by Mast et al. were predominantly unhealthy, with 52.5% obese, 27.5% active smokers, and 55% asthmatic individuals (only 3/40 truly healthy), and these comorbidities cause pro-coagulant and inflammatory changes that would confound COVID-19 differential expression analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 provide quantitative metadata analysis showing the control group composition, supported by Figure 1. Claims C26-C30 document that Michalovich et al. themselves found significant inflammatory and coagulation changes in these comorbid groups. Claims C23-C25 provide population baseline statistics from CDC showing the control group is not representative. The inference that these changes would confound COVID-19 analysis (C67-C68) is well-supported by the documented pro-coagulant effects of these comorbidities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "baee6902-a877-4854-9095-05dd6696fb64",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The library preparation methods used by Michalovich et al. (polyA-enriched, rRNA-depleted) and Zhou et al. (total RNA, no enrichment/depletion) are fundamentally incompatible for differential expression analysis, with COVID samples containing 16-80% rRNA versus ~1-2% in controls, invalidating TPM-based normalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 document the different library preparation methods from the original publications. Claim C41 provides empirical evidence from re-analysis showing dramatically different rRNA proportions (Figure 2), with C57 quantifying COVID samples at 16-80% rRNA. Claims C32, C43-C44 cite established RNA-seq principles (Zhao et al., 2020; Evans et al., 2018) that TPM normalization requires comparable library compositions. The logical chain from methods \u2192 measured differences \u2192 normalization invalidity is complete and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "47578745-f835-4969-a102-3862e2018bdb",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The COVID-19 samples from Zhou et al. had grossly insufficient sequencing depth for differential expression analysis, with 4/9 samples having <10M reads (well below the 30M standard), resulting in 23/35 genes of interest averaging <10 reads and 8 genes having zero reads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 establish field standards (30M reads minimum, citing Williams et al., 2014; Sims et al., 2014). Claims C48-C51 provide quantitative analysis of actual read depths from Figure 3, showing 4/9 COVID samples with <10M reads. Claims C53, C58-C59 document the consequences: extremely low or zero read counts for genes of interest. Claim C56 provides a specific example (thrombomodulin: 59.88 vs 8,377.68 raw counts). The combination of high rRNA content (C52) further compromising mRNA coverage strengthens this result. The evidence clearly demonstrates inadequate sequencing depth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "320dceb2-bb0b-418f-a72e-d5acd6482fbc",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mast et al.'s conclusion that tissue factor is not significantly impacted by SARS-CoV-2 infection contradicts multiple independent studies showing elevated tissue factor in COVID-19 patients, including clinical measurements of circulating microvesicles, autopsy protein expression data, and other RNA-seq analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C5, C60-C61 document Mast et al.'s conclusion that tissue factor is unchanged in COVID-19. Claims C62-C64 cite three independent studies (Rosell et al., 2021; Subrahmanian et al., 2021; FitzGerald et al., 2021) showing tissue factor IS elevated in COVID-19 through different methodologies (circulating microvesicles, autopsy protein expression, RNA-seq). Claim C74 notes field convergence on tissue factor's importance. This direct contradiction between Mast et al. and multiple independent lines of evidence strongly supports the authors' critique that Mast et al.'s analysis is flawed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "60c4d08c-8678-4300-b4ff-2d13537bd3cd",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors conclude that the sample set and experimental design in Mast et al. are fundamentally flawed due to incomparable datasets, unsuitable COVID-19 samples, and poor quality control standards.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion (C9-C11, C71) is well-supported by the three major technical flaws documented in the manuscript: inappropriate control group composition (Result 1), incompatible library preparation methods (Result 2), and insufficient sequencing depth (Result 3). Each of these issues independently undermines the validity of Mast et al.'s differential expression analysis, and their combination makes the conclusions unsupportable. The authors provide both theoretical reasoning and empirical re-analysis to support this assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "4ebcfa24-1bcb-4ea1-a3f4-c49b5fdbe501",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The thrombomodulin (THBD) differential expression reported by Mast et al. (2200% decrease) is based on biased normalization, with raw counts showing 59.88 reads in COVID samples versus 8,377.68 in controls, confounded by 16-80% rRNA content in COVID samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 document Mast et al.'s reported finding. Claim C56 provides the actual raw count data showing the dramatic difference in absolute counts. Claim C57 documents the rRNA contamination that would bias CPM normalization. This specific example effectively illustrates how the combination of low read counts and differential rRNA content produces unreliable normalized values. The evidence directly supports the claim that this particular result is artifactual.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "386c726b-923c-48a8-8a64-3c9ed965772c",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Many results from Mast et al. contradict findings in the broader COVID-19 field, particularly regarding extrinsic coagulation cascade mediated coagulopathies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 makes the general assertion, while C20 provides specific citations to contradictory studies (Subrahmanian et al., 2021; Rosell et al., 2021; FitzGerald et al., 2021) spanning multiple methodologies. This is further substantiated by the specific tissue factor contradiction documented in Result 4. The convergence of multiple independent studies contradicting Mast et al. supports this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "f9092213-8c3f-4eb9-ac4f-748a04057a23",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mast et al. reported data in a normalized format without providing raw reads, raw counts, or quality control metrics, making it difficult for reviewers to identify the underlying problems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 document the lack of transparency in Mast et al.'s data reporting. The authors' own experience requiring re-analysis from raw public data to uncover these issues supports C69. The absence of raw data and QC metrics (C70) is a factual observation about what was not included in Mast et al. This lack of transparency is a legitimate methodological criticism that contributed to the flawed analysis passing review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "d26c9a03-c6d6-4525-b00c-476600b90dfe",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Higher quality COVID-19 BALF RNA-seq datasets were available at the time of Mast et al.'s submission, and the flawed results are being cited by other COVID-19 researchers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 cites three alternative datasets (Xiong et al., 2020; Liao et al., 2020; Xu et al., 2020) that were available and more appropriate. Claim C72 provides evidence that Mast et al. is being cited (Francischetti et al., 2021), demonstrating real-world impact of the flawed analysis. Both claims are supported by citations and represent valid concerns about scientific practice and literature propagation of errors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "de3a066e-76bb-454f-9979-52fed45d7868",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background description of Mast et al.'s study design and reported findings, including their use of Zhou et al. (COVID samples) and Michalovich et al. (control samples) datasets, and their conclusions about coagulation cascade regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately describe the study being critiqued (Mast et al.) and the source datasets (Zhou et al., Michalovich et al.). They are supported by direct citations to the original publications and represent factual descriptions of published work rather than new findings. These provide necessary context for the critique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "1b97fcc7-8569-49a2-b9ef-bc9d9c2558ea",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "As of the manuscript's writing, there had been over 230 million reported SARS-CoV-2 cases and more than 4.7 million deaths since December 2019.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These epidemiological statistics are cited to Dong et al., 2020, which tracks COVID-19 cases. While these numbers are time-dependent and have since increased, they represent accurate context for the manuscript's timeframe and establish the public health importance of accurate COVID-19 research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    },
+    {
+      "id": "f27d29c7-f5d8-4f21-8840-b6f6e3a9caf1",
+      "content_id": "184ba94e-1bae-4031-a692-679f869f445e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "General principles of RNA-seq methodology and coagulation biology, including that library preparation affects RNA content, rRNA is the predominant cellular RNA species, normalization requires comparable libraries, adequate read depth is required for quantification, and tissue factor initiates the extrinsic coagulation cascade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge in RNA-seq methodology and coagulation biology. They are supported by appropriate citations (Lodish et al., 1999 for rRNA abundance; Evans et al., 2018 for normalization principles) or represent textbook knowledge (tissue factor's role). These foundational principles are necessary for evaluating the technical flaws in Mast et al.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:06:10.823342Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b92c34bf-b225-4b6e-86a8-ea6d81c71bf7",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "28ec5097-0ba2-40d1-96b2-319eca28c9b6",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "002eb33f-8826-45dd-87c8-58bd18c8fb00",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "d476ab74-f796-492f-9c7b-2dfa1d1610e7",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "bd7f37a6-3ba2-480c-a336-bb3dede90831",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "8c663e26-6983-4f34-8b0e-9f1abb337882",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "915bfa84-02a0-4128-a758-fb2913ce8ec4",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "69da30b4-d678-4e95-90d1-1d994180f35e",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "c4e87217-9f3d-4567-a068-cdcdc1c90dc7",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "821826e7-45d0-4ee6-bddf-972ea819c009",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "69306ccf-0cc7-4040-aad6-6d2b06066bcf",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "5ffbf271-243c-442a-967e-54d77939d6a0",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "2b939d0e-1b34-402e-a6c4-e09ebfdd78c2",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "a545d3ba-7436-486d-be04-81dace99cc01",
+      "result_id": "0e621f6d-a3d2-4782-88b0-6bb67f73621c"
+    },
+    {
+      "claim_id": "2bfe190a-27f7-49ea-bf31-495bc54c362e",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "ba903ddf-bfef-45b6-b73c-f580fc112857",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "dad7c885-998e-489e-9d26-7ba2969e6f92",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "3742a22a-ede1-4d9b-b005-434f50a91ade",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "3780915b-de9a-4f6d-9194-b6910ed4e5de",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "0954214f-3968-4e45-be03-0326590a51d5",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "e0a0d54b-a9ba-4505-bf09-0e3430af77bb",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "e36f9a1a-6c1c-4ab3-bbab-6e663b06bd94",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "a1df6294-63f4-4256-910d-9eb32411716f",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "18c14a14-6659-40d1-b95f-90763acb6775",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "338885de-33e9-4a6f-b0c3-3caa4e5aa871",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "949246b3-3b5d-41f0-981f-63466fc9f780",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "1f0b2461-928c-4c70-9f27-bc483c448894",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "2e3b7914-de75-437c-b065-cf98ff46c1c4",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "11d6f768-18a5-492f-b102-f728998d3daa",
+      "result_id": "baee6902-a877-4854-9095-05dd6696fb64"
+    },
+    {
+      "claim_id": "047a0e73-6c34-498e-b2b3-c2f84002d3a1",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "c7b07d7e-2321-441c-8ac9-2da7c49ddcaf",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "d198e263-d30c-42b8-9735-e2069452aef6",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "a2f15a31-44de-4ca1-9861-e5b6fe592f4b",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "7db6de85-4db2-4705-8305-0dd485963133",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "3610d0ea-2d31-4c7d-a4e2-235704101e5b",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "85e9b7ed-f7a9-495f-9590-40dc867f0cba",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "4ddcc25a-cefe-4db7-9af9-30a264b0184a",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "73923c42-8b37-400b-bbc3-493930b72555",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "f255f5c6-4c62-49b5-a475-e0558afc44f0",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "6a7718f3-1bd6-4b90-9353-ae9468b6151c",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "10cc7906-1c9c-40c6-bd62-789d0456f480",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "457b8ce1-bff3-447f-8c93-51bfcb8c0dcb",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "7529be46-a1c8-4632-a98a-f7f8e2a241cd",
+      "result_id": "47578745-f835-4969-a102-3862e2018bdb"
+    },
+    {
+      "claim_id": "c22ceab5-86ee-401e-aa81-77754723bdb5",
+      "result_id": "320dceb2-bb0b-418f-a72e-d5acd6482fbc"
+    },
+    {
+      "claim_id": "cb2dd2e5-5339-4eff-905c-bb18d7707d7e",
+      "result_id": "320dceb2-bb0b-418f-a72e-d5acd6482fbc"
+    },
+    {
+      "claim_id": "33e4a879-47d8-4087-8bcd-9a03d93cf85e",
+      "result_id": "320dceb2-bb0b-418f-a72e-d5acd6482fbc"
+    },
+    {
+      "claim_id": "7e2a2eca-1d83-4ac3-bd7c-18a600971be3",
+      "result_id": "320dceb2-bb0b-418f-a72e-d5acd6482fbc"
+    },
+    {
+      "claim_id": "2fee837b-c788-4c65-bada-a8310f7b463e",
+      "result_id": "320dceb2-bb0b-418f-a72e-d5acd6482fbc"
+    },
+    {
+      "claim_id": "4abb8e28-c47b-4ad5-bff6-5eb47cd6f5ca",
+      "result_id": "320dceb2-bb0b-418f-a72e-d5acd6482fbc"
+    },
+    {
+      "claim_id": "9ab4c538-58ed-41fa-84b4-7b02eefd4e56",
+      "result_id": "320dceb2-bb0b-418f-a72e-d5acd6482fbc"
+    },
+    {
+      "claim_id": "4751e36a-ee9a-441b-84b7-dc38a9eb3c5f",
+      "result_id": "320dceb2-bb0b-418f-a72e-d5acd6482fbc"
+    },
+    {
+      "claim_id": "2cd05e6e-f74c-45b8-a2f7-f3bba1041294",
+      "result_id": "320dceb2-bb0b-418f-a72e-d5acd6482fbc"
+    },
+    {
+      "claim_id": "5e4ec333-915c-4175-9990-541d8b2d57de",
+      "result_id": "60c4d08c-8678-4300-b4ff-2d13537bd3cd"
+    },
+    {
+      "claim_id": "ff3b92d7-9786-4624-857e-0033f91c3496",
+      "result_id": "60c4d08c-8678-4300-b4ff-2d13537bd3cd"
+    },
+    {
+      "claim_id": "f05719f1-1805-4f7b-8034-179f27a7b0e8",
+      "result_id": "60c4d08c-8678-4300-b4ff-2d13537bd3cd"
+    },
+    {
+      "claim_id": "9dcbfe45-3f57-4f85-a93d-b0f71a3d9004",
+      "result_id": "60c4d08c-8678-4300-b4ff-2d13537bd3cd"
+    },
+    {
+      "claim_id": "a35a50ee-ad1f-4e32-9a8a-c307a9848652",
+      "result_id": "4ebcfa24-1bcb-4ea1-a3f4-c49b5fdbe501"
+    },
+    {
+      "claim_id": "1bbc8b86-661b-4911-ad50-518890c357fb",
+      "result_id": "4ebcfa24-1bcb-4ea1-a3f4-c49b5fdbe501"
+    },
+    {
+      "claim_id": "6a7718f3-1bd6-4b90-9353-ae9468b6151c",
+      "result_id": "4ebcfa24-1bcb-4ea1-a3f4-c49b5fdbe501"
+    },
+    {
+      "claim_id": "6a1ad3f3-9f41-44e6-aa44-2b6b3278f99f",
+      "result_id": "4ebcfa24-1bcb-4ea1-a3f4-c49b5fdbe501"
+    },
+    {
+      "claim_id": "dfc711c0-77fd-4de7-a6a8-11137044e669",
+      "result_id": "386c726b-923c-48a8-8a64-3c9ed965772c"
+    },
+    {
+      "claim_id": "b71e7fca-f44f-4682-a85a-839eaa557269",
+      "result_id": "386c726b-923c-48a8-8a64-3c9ed965772c"
+    },
+    {
+      "claim_id": "2d40454f-eed1-4cb8-89ec-82a8790c6022",
+      "result_id": "f9092213-8c3f-4eb9-ac4f-748a04057a23"
+    },
+    {
+      "claim_id": "1124e420-ca15-4658-86e7-15cda815bb36",
+      "result_id": "f9092213-8c3f-4eb9-ac4f-748a04057a23"
+    },
+    {
+      "claim_id": "a1ff5862-405c-460a-873d-4fd9425b6854",
+      "result_id": "d26c9a03-c6d6-4525-b00c-476600b90dfe"
+    },
+    {
+      "claim_id": "97a6041b-8b7c-454b-9c20-23acf2cd0a28",
+      "result_id": "d26c9a03-c6d6-4525-b00c-476600b90dfe"
+    },
+    {
+      "claim_id": "9b685e2e-44d7-4642-bed4-cae8ed391d47",
+      "result_id": "de3a066e-76bb-454f-9979-52fed45d7868"
+    },
+    {
+      "claim_id": "b89ce78a-f732-4412-a0d4-4705ba91c17e",
+      "result_id": "de3a066e-76bb-454f-9979-52fed45d7868"
+    },
+    {
+      "claim_id": "d763f815-5df4-423e-b28b-100a443be952",
+      "result_id": "de3a066e-76bb-454f-9979-52fed45d7868"
+    },
+    {
+      "claim_id": "c6958fb9-92a6-42cf-af2b-98477ab4ee02",
+      "result_id": "de3a066e-76bb-454f-9979-52fed45d7868"
+    },
+    {
+      "claim_id": "58b04957-8bd6-4180-9932-fcd2f9283243",
+      "result_id": "de3a066e-76bb-454f-9979-52fed45d7868"
+    },
+    {
+      "claim_id": "cfe8c488-d4a5-4b05-b2ba-d1ac461156a9",
+      "result_id": "de3a066e-76bb-454f-9979-52fed45d7868"
+    },
+    {
+      "claim_id": "4233f578-2090-4d2d-ae58-49d8682f6528",
+      "result_id": "de3a066e-76bb-454f-9979-52fed45d7868"
+    },
+    {
+      "claim_id": "1d0ddd96-c51e-4409-86ce-a69cefcf8936",
+      "result_id": "de3a066e-76bb-454f-9979-52fed45d7868"
+    },
+    {
+      "claim_id": "95fc9122-cb51-4ca2-96ac-2660f822d3c5",
+      "result_id": "1b97fcc7-8569-49a2-b9ef-bc9d9c2558ea"
+    },
+    {
+      "claim_id": "c4a9df46-1209-4d7f-9603-c842b93bcfe1",
+      "result_id": "1b97fcc7-8569-49a2-b9ef-bc9d9c2558ea"
+    },
+    {
+      "claim_id": "ba903ddf-bfef-45b6-b73c-f580fc112857",
+      "result_id": "f27d29c7-f5d8-4f21-8840-b6f6e3a9caf1"
+    },
+    {
+      "claim_id": "e36f9a1a-6c1c-4ab3-bbab-6e663b06bd94",
+      "result_id": "f27d29c7-f5d8-4f21-8840-b6f6e3a9caf1"
+    },
+    {
+      "claim_id": "11d6f768-18a5-492f-b102-f728998d3daa",
+      "result_id": "f27d29c7-f5d8-4f21-8840-b6f6e3a9caf1"
+    },
+    {
+      "claim_id": "c7b07d7e-2321-441c-8ac9-2da7c49ddcaf",
+      "result_id": "f27d29c7-f5d8-4f21-8840-b6f6e3a9caf1"
+    },
+    {
+      "claim_id": "2cd05e6e-f74c-45b8-a2f7-f3bba1041294",
+      "result_id": "f27d29c7-f5d8-4f21-8840-b6f6e3a9caf1"
+    }
+  ],
+  "comparisons": []
+}

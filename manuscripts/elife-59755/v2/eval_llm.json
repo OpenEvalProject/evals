@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors conducted a systematic review identifying 2690 peer-reviewed references and 13 additional sources, ultimately including 168 records representing 1094 surveys across five Southeast Asian countries. The data comprised 580 ADM1-level, 210 ADM2-level, 53 ADM3-level, and 251 point-level surveys, with approximately 70% conducted in Thailand and 15% in Lao PDR. Myanmar data (only 2 records) was excluded from final analysis to avoid large estimation errors. Most surveys (95%) were community-based, with 40% using Kato-Katz diagnostic technique and 42% not specifying diagnostic methods. Mean prevalence calculated directly from survey data was 16.74%, and approximately 70% of eligible literature received quality scores \u22657.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 provide a comprehensive description of the systematic review process and data collection results. The quantitative summaries are internally consistent and supported by the described methodology. The quality assessment (C39) provides transparency about data quality. The decision to exclude Myanmar data (C34) is appropriately justified by data scarcity (C33). The temporal and spatial distribution of surveys is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Seven variables were selected through Bayesian variable selection for the final model. Community-based surveys showed 2.61-fold higher infection risk compared to school-based surveys (95% BCI: 2.10-3.42). FECT diagnostic method showed lower prevalence (OR 0.76, 95% BCI: 0.61-0.93) compared to Kato-Katz, while other methods showed no significant difference. Human influence index and elevation were negatively correlated with infection risk, with each unit increase in HII associated with 0.01 decrease in logit prevalence (95% BCI: 0.003-0.02) and each meter increase in elevation associated with 0.003 decrease (95% BCI: 0.001-0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 present model selection results and parameter estimates with appropriate uncertainty quantification through Bayesian credible intervals. The findings are biologically plausible: higher infection in community vs. school populations is consistent with age-related exposure patterns, diagnostic method differences reflect known sensitivity variations, and environmental associations (elevation, human influence) align with parasite ecology. Statistical significance is properly assessed through credible intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Model validation using 5-fold cross-validation showed the model correctly estimated 79.61% of locations within 95% BCI. The final joint model (ME=0.24%, MAE=9.06%, MSE=2.38%) outperformed the point-only model (ME=-7.14%, MAE=16.67%, MSE=5.09%), demonstrating better prediction accuracy when combining point-referenced and area-aggregated data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide rigorous model validation using appropriate metrics (coverage probability, ME, MAE, MSE) and cross-validation methodology. The comparison between joint and point-only models (C55) demonstrates the value of the methodological approach. The 79.61% coverage is reasonable for spatial prediction models, and the lower error metrics in the final model support the superiority claim. The validation approach is appropriate for the modeling framework used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Monte Carlo testing revealed preferential sampling may exist in one-third (6/18) of survey years. The authors acknowledged potential impacts including improper variogram estimation, biased parameters, and unreliable exposure estimates, but chose not to account for preferential sampling in the final model to avoid complexity, justified by reasonable prediction accuracy in validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56, C110-C113 transparently acknowledge a significant limitation. While the authors tested for preferential sampling (C56, C111) and cite potential impacts (C112), the decision not to address it (C113) is concerning. The justification based on 'reasonable prediction accuracy' is weak\u2014validation metrics assess prediction but not bias from preferential sampling. The 79.61% coverage and validation metrics (C52-C53) may mask systematic bias. This represents a methodological compromise that could affect reliability of spatial predictions, particularly in under-sampled areas. The transparency is commendable, but the limitation undermines confidence in results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In 2018, high infection risk (>25% prevalence) was estimated in southern, central, and north-central Lao PDR, east-central Cambodia, and northeastern/northern Thailand. Low risk (<5%) was estimated in southern Thailand, northern Lao PDR, and western Cambodia. Central and southern Vietnam showed low to moderate risk, with no evidence of O. viverrini in other parts of Vietnam. High estimation uncertainty was present in central Lao PDR, northern and eastern Thailand, and central Cambodia and Vietnam.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 provide spatial summaries of 2018 model estimates with appropriate characterization of uncertainty (C60). The geographic patterns are consistent with known disease ecology and survey data distribution. The acknowledgment of high uncertainty in specific regions (C60) demonstrates appropriate interpretation of model limitations. These estimates are supported by the validated geostatistical model (C52-C55) and represent the primary output of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Temporal analysis revealed diverse trends across countries: northern Thailand showed increasing trends in 1978-1988 and 1993-2003, followed by considerable decrease after 2008 in most areas. Lao PDR showed stability before 1990, slight decrease 1990-1997, significant increase after 1997, decrease from 2006, and stabilization after 2011. Cambodia showed gradual decrease, while Vietnam remained stable throughout. East-central and western Cambodia showed recent increasing trends. Overall population-adjusted prevalence showed downward trend after 1995.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 describe temporal trends from the spatial-temporal model. The country-specific patterns are plausible and consistent with known control program histories (e.g., Thailand's decline following 1987 control program, C80). The diverse trends across countries reflect different intervention histories and epidemiological contexts. The temporal modeling approach using AR1 process and B-spline interpolation is appropriate. However, uncertainty in temporal trends is not quantified in these claims, which would strengthen interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In 2018, the overall population-adjusted estimated prevalence was 6.57% (95% BCI: 5.35-7.99%), corresponding to 12.39 million infected individuals (95% BCI: 10.10-15.06) across four endemic countries. Country-specific prevalence: Lao PDR 35.21% (2.45 million infected), Thailand 9.71% (6.71 million), Cambodia 6.15% (1.00 million), and Vietnam 2.15% (2.07 million). Thailand had the largest absolute number of infections despite lower prevalence than Lao PDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C70-C78 present the primary epidemiological estimates with appropriate uncertainty quantification. The estimates are derived from the validated geostatistical model weighted by population density (C116), which is methodologically sound. The country-specific estimates are internally consistent and reflect both prevalence and population size. The finding that Thailand has the most infections despite lower prevalence than Lao PDR (C75-C76) correctly reflects population differences. These represent the key public health findings of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The overall decrease in O. viverrini infection in Southeast Asia from 1995 onwards was largely attributed to Thailand's decline, probably due to the national control program launched in 1987. The study's high-resolution risk estimates for Thailand in 2018 showed similar patterns to previous climatic suitability maps. However, the study estimated higher prevalence (12.44% in 2009, 9.34% in 2014) compared to national surveys (8.7% in 2009, 5.2% in 2014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 provide interpretation of temporal trends with appropriate causal inference limitations ('probably,' 'may be attributed'). The comparison with national surveys (C82-C83) is valuable but the discrepancy requires explanation\u2014the authors attribute this to methodological differences (accounting for spatial heterogeneity and population density) which is plausible. The consistency with previous climatic suitability maps (C81) provides external validation. The attribution to control programs (C80) is supported by citations and temporal alignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Prevalence in Lao PDR remained high (>20%) throughout study periods, with 2.45 million (95% BCI: 1.98-2.83) infected in 2018, equivalent to WHO's 2004 estimate. The risk mapping for Champasack province showed similar patterns to previous work by Forrer et al.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 provide country-specific findings for Lao PDR with appropriate comparisons to previous estimates. The consistency with WHO 2004 estimates (C85) and Forrer et al.'s Champasack mapping (C86) provides external validation. The high sustained prevalence (C84) is concerning from a public health perspective and is supported by the temporal analysis (C68). These findings are well-supported by the model and consistent with cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "For Cambodia, the study estimated 8.34% prevalence (95% BCI: 5.25-14.95%) in 2011, higher than a national survey's 5.7% (2006-2011). The authors suggest the national survey may have underestimated prevalence due to 77% of participants being schoolchildren. Previous work noted large intra-district variation making endemic area identification difficult, and O. viverrini infection was underreported in Cambodia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C91 present Cambodia estimates with appropriate caveats. The comparison with national surveys (C87-C88) and explanation of potential underestimation (C89) is reasonable given the model finding of higher community vs. school prevalence (C41). However, the wide credible interval (5.25-14.95%) indicates substantial uncertainty. The acknowledgment of underreporting (C91) and recommendation for more point-referenced data suggests the authors recognize limitations. The large intra-district variation (C90) combined with limited survey data (C31) raises questions about estimate reliability for Cambodia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Vietnam showed low overall prevalence (2.15%, 95% BCI: 0.73-4.40%) in 2018, but this corresponded to 2.07 million infected individuals due to large population, comparable to Lao PDR's infected population. Moderate to high risk areas were identified in central Vietnam, particularly Phu Yen province (a known 'hotspot'). No evidence of O. viverrini was found in northern Vietnam, where Clonorchis sinensis is endemic instead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 provide Vietnam-specific findings with appropriate interpretation. The insight that low prevalence yields high absolute numbers due to population size (C92-C93) is important for public health planning. The identification of Phu Yen as high-risk (C94) is validated by previous work (C95). The distinction between O. viverrini absence in northern Vietnam and C. sinensis presence (C96-C97) is important for differential diagnosis and control planning. The wide credible interval for prevalence (0.73-4.40%) reflects uncertainty but the spatial patterns are supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Infection risk was higher in community than schoolchildren, consistent with multiple studies. Negative associations were found with elevation (disease more likely in low altitude areas) and human influence index (disease more likely in areas with low human activity, often remote and economically underdeveloped). The habit of eating raw/insufficiently cooked fish was more common in rural than economically developed areas, partially explaining these findings, and is a key determinant of opisthorchiasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 present risk factor analyses with appropriate biological interpretation. The community vs. school finding (C98) is supported by multiple citations and the model estimate (C41). The elevation association (C99) is consistent with parasite ecology (intermediate hosts in lowland water bodies). The HII association (C100) and interpretation linking to rural fish consumption practices (C101-C103) is plausible and supported by citations. These findings integrate epidemiological patterns with behavioral and environmental factors appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The study's estimate of 12.39 million infected individuals is higher than a previous study's 8.6 million, emphasizing the public health importance of this neglected disease and suggesting more effective control interventions are needed, particularly in high-risk areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 provides important context by comparing to previous estimates. The higher estimate could reflect methodological improvements (joint modeling, high-resolution mapping, population weighting) or genuine differences in assumptions. The authors appropriately use this to emphasize public health importance rather than claiming the previous estimate was wrong. This comparison strengthens the case for the disease's significance and need for enhanced control efforts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Thailand's national control program (launched 1987) used integrated approaches including stool examination, treatment, health education promoting cooked fish consumption, and improved sanitation. For difficult areas, the 'Lawa model' using EcoHealth approach showed good effectiveness. Common integrated interventions are applicable for multiple NTDs (opisthorchiasis, soil-transmitted helminths, schistosomiasis) and could be cost-effective in co-endemic areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 describe control strategies with appropriate citations. These are primarily literature-based claims about interventions rather than findings from the current study. The descriptions of Thailand's program (C105) and Lawa model (C106-C107) are supported by citations. The suggestion about integrated NTD control (C108-C109) is reasonable and supported by citations, representing appropriate translation of findings to public health recommendations. These claims provide important context for interpreting the temporal trends observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Sensitivity analysis showed using midpoint values of prevalence intervals had little effect on results. Most surveys reported raw prevalence without clarifying if weighting was applied. The study calculated country- and provincial-level prevalence by averaging pixel-level estimates weighted by population density. The analysis assumed similar age and gender proportions across surveys, though survey type (community vs. school) was included as a covariate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 describe methodological decisions and sensitivity analyses. The sensitivity analysis (C114) appropriately addresses uncertainty from interval-reported data. The population density weighting (C116) is methodologically sound for aggregating spatially heterogeneous estimates. The assumptions about age/gender proportions (C117) and lack of survey weighting information (C115) are acknowledged limitations, partially addressed by including survey type as covariate. These represent reasonable pragmatic decisions given data constraints, with appropriate transparency about assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The analysis incorporated surveys using different diagnostic methods, which may vary in sensitivity and specificity both within and between methods. The study assumed similar sensitivity/specificity for the same method and included diagnostic method as a covariate, finding FECT had significantly lower odds than Kato-Katz. Most methods used fecal microscopy that cannot distinguish O. viverrini from minute intestinal flukes (Heterophyidae), potentially overestimating O. viverrini risk in co-endemic areas. More powerful diagnostics like PCR are needed, though similar treatment strategies for O. viverrini and minute intestinal flukes make the risk mapping valuable for co-endemic areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C127 address a critical limitation regarding diagnostic accuracy. The authors appropriately acknowledge diagnostic variability (C119-C120) and include diagnostic method as covariate (C121), with FECT showing lower detection (C122) consistent with literature. However, the inability to distinguish O. viverrini from Heterophyidae (C123) is a fundamental limitation that could lead to overestimation in specific provinces (C124). The magnitude of potential overestimation is not quantified. While the authors argue the maps remain valuable due to similar treatment strategies (C126-C127), this doesn't address the scientific question of true O. viverrini prevalence. The call for better diagnostics (C125) is appropriate but doesn't resolve the current uncertainty. This limitation significantly affects interpretation of results, particularly for areas known to be co-endemic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "More comprehensive epidemiological studies are urgently needed for endemic areas with scant survey data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is a reasonable recommendation based on identified data gaps (particularly Myanmar with only 2 records, C33; Cambodia with high uncertainty, C60; and areas with no point-referenced data). This represents appropriate translation of study limitations into future research needs. The recommendation is well-justified by the spatial distribution of survey data and uncertainty estimates presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C25"
+    ],
+    "result": "Opisthorchiasis is characterized as an overlooked danger to Southeast Asia, with high-resolution disease risk maps being critical but previously unavailable for the region. High-resolution, model-based risk estimates were unavailable for the whole endemic region prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C25 establish the study's motivation and gap in existing knowledge. These are supported by the literature review showing limited previous mapping efforts (C22-C24 describe only partial coverage). The characterization as 'overlooked' (C1) is supported by the disease burden estimates (C8-C10) and the finding of 12.39 million infected (C3). The study successfully addresses the identified gap by producing high-resolution maps for four countries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction provides background on opisthorchiasis classification as an NTD, species of public health significance (O. felineus and O. viverrini), disease burden (188,346 DALYs in 2010, >99% in Southeast Asia), endemic countries (Cambodia, Lao PDR, Myanmar, Thailand, Vietnam with 67.3 million at risk), association with cholangiocarcinoma, life cycle involving Bithynia snails and cyprinoid fish, transmission through raw fish consumption, risk factors (behavioral, environmental, socioeconomic), control strategies, and limitations of previous mapping efforts. Bayesian geostatistical modeling is described as a rigorous approach for high-resolution disease risk mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C28 provide comprehensive background information, all supported by appropriate citations. These establish the scientific context, disease importance, transmission dynamics, and methodological framework. The claims about previous mapping efforts (C20-C24) appropriately identify gaps that justify the current study. The description of Bayesian geostatistical methods (C26-C28) provides methodological context. These are primarily literature-based contextual claims that are well-supported by citations and establish the rationale for the study.",
+    "result_type": "MINOR"
+  }
+]

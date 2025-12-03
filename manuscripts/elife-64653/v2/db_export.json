@@ -1,0 +1,1840 @@
+{
+  "submission": {
+    "id": "240eb4b0-845c-4513-b022-9313fe2144d9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:36:06.056973Z",
+    "updated_at": "2025-12-03T06:36:06.056973Z"
+  },
+  "content": [
+    {
+      "id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "submission_id": "240eb4b0-845c-4513-b022-9313fe2144d9",
+      "content_type": "manuscript",
+      "content_text": "# Unsupervised machine learning reveals key immune cell subsets in COVID-19, rhinovirus infection, and cancer therapy\n\n## Authors\n\n- Sierra M Barone<sup>1</sup> ([ORCID: 0000-0001-5944-750X](https://orcid.org/0000-0001-5944-750X))\n- Alberta GA Paul<sup>3</sup> ([ORCID: 0000-0002-9318-3760](https://orcid.org/0000-0002-9318-3760))\n- Lyndsey M Muehling<sup>3</sup> ([ORCID: 0000-0003-3203-3264](https://orcid.org/0000-0003-3203-3264))\n- Joanne A Lannigan<sup>4</sup> ([ORCID: 0000-0002-3981-8681](https://orcid.org/0000-0002-3981-8681))\n- William W Kwok<sup>5</sup> ([ORCID: 0000-0003-4843-4599](https://orcid.org/0000-0003-4843-4599))\n- Ronald B Turner<sup>6</sup>\n- Judith A Woodfolk<sup>3</sup> ([ORCID: 0000-0002-8915-4334](https://orcid.org/0000-0002-8915-4334)) \u2020\n- Jonathan M Irish<sup>1</sup> ([ORCID: 0000-0001-9428-8866](https://orcid.org/0000-0001-9428-8866)) \u2020\n\n### Affiliations\n\n1. Department of Cell and Developmental Biology, Vanderbilt University Nashville United States\n2. Vanderbilt-Ingram Cancer Center, Vanderbilt University Medical Center Nashville United States\n3. Allergy Division, Department of Medicine, University of Virginia School of Medicine Charlottesville United States\n4. Department of Microbiology, Immunology, and Cancer Biology, University of Virginia School of Medicine Charlottesville United States\n5. Benaroya Research Institute at Virginia Mason Seattle United States\n6. Department of Pediatrics, University of Virginia School of Medicine Charlottesville United States\n7. Department of Pathology, Microbiology and Immunology, Vanderbilt University Medical Center Nashville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nFor an emerging disease like COVID-19, systems immunology tools may quickly identify and quantitatively characterize cells associated with disease progression or clinical response. With repeated sampling, immune monitoring creates a real-time portrait of the cells reacting to a novel virus before disease-specific knowledge and tools are established. However, single cell analysis tools can struggle to reveal rare cells that are under 0.1% of the population. Here, the machine learning workflow Tracking Responders EXpanding (T-REX) was created to identify changes in both rare and common cells across human immune monitoring settings. T-REX identified cells with highly similar phenotypes that localized to hotspots of significant change during rhinovirus and SARS-CoV-2 infections. Specialized MHCII tetramer reagents that mark rhinovirus-specific CD4+ cells were left out during analysis and then used to test whether T-REX identified biologically significant cells. T-REX identified rhinovirus-specific CD4+ T cells based on phenotypically homogeneous cells expanding by \u226595% following infection. T-REX successfully identified hotspots of virus-specific T cells by comparing infection (day 7) to either pre-infection (day 0) or post-infection (day 28) samples. Plotting the direction and degree of change for each individual donor provided a useful summary view and revealed patterns of immune system behavior across immune monitoring settings. For example, the magnitude and direction of change in some COVID-19 patients was comparable to blast crisis acute myeloid leukemia patients undergoing a complete response to chemotherapy. Other COVID-19 patients instead displayed an immune trajectory like that seen in rhinovirus infection or checkpoint inhibitor therapy for melanoma. The T-REX algorithm thus rapidly identifies and characterizes mechanistically significant cells and places emerging diseases into a systems immunology context for comparison to well-studied immune changes.\n\n## Introduction\n\nSingle-cell systems immune monitoring approaches offer new ways to compare how an individual patient\u2019s cells respond to treatment or change during infection (Chattopadhyay et al., 2014; Davis et al., 2017; Greenplate et al., 2016a; Schultze, 2015). However, the computational analysis tools used widely in this type of systems immunology study were primarily designed to track major cell populations representing >1% of a sample. Viral immune and cancer immunotherapy responses can include mechanistically important and extremely rare T cells that proliferate rapidly over the course of days but as an aggregate exist as <0.1% of blood CD3+ T cells at their peak. These cells can be tracked genetically through clonal expansion, but may be lost in computational analyses focused on describing the global landscape of phenotypes. The specific expansion or contraction of phenotypically distinct cells may be a hallmark feature of key immune effectors and could reveal these cells without the need for prior knowledge of their identity or specialized tracking reagents like MHC tetramers.\n\nThe datasets tested here were all suspension flow cytometry, a data type where it is typical to have multiple snapshot samples of cells over time; however, an ongoing challenge in the field is to match or register cells to their phenotypic cognates between samples (Irish, 2014; Pyne et al., 2014; Weber and Robinson, 2016). Analysis algorithms typically rely on aggregate statistics for clustered groups of cells, but the process of grouping the cells works best with larger, established populations (Diggins et al., 2015; Irish et al., 2006; Saeys et al., 2016) and can depend on pre-filtering of cells by human experts (Greenplate et al., 2016a; Greenplate et al., 2019). Cytometry tools like SPADE (Bendall et al., 2011; Qiu et al., 2011), FlowSOM (Van Gassen et al., 2015), Phenograph (Levine et al., 2015), Citrus (Bruggner et al., 2014), and RAPID (Leelatian et al., 2020) generally work best to characterize cell subsets representing >1% of the sample and are less capable of capturing extremely rare cells or subsets distinguished by only a fraction of measured features. Tools like t-SNE (Davis et al., 2013; Krijthe et al., 2015), opt-SNE (Belkina et al., 2019), and Uniform Manifold Approximation (UMAP) (Becht et al., 2018; McInnes et al., 2018) embed cells or learn a manifold and represent these transformations as algorithmically generated axes. For a biologist, these tools provide a way to organize cells according to phenotypic relationships that span multiple measured features, such as the proteins quantified on each of millions of cells in the datasets here. In addition to assisting with data visualization, these tools frequently reveal unexpected cells and facilitate their identification through manual or automated clustering (Davis et al., 2013; Becher et al., 2014; Diggins et al., 2015; Diggins et al., 2017; Gandelman et al., 2019; Leelatian et al., 2020). Sconify (Burns et al., 2018) is one such tool that applies k-nearest neighbors (KNN) to calculate aggregate statistics for the immediate phenotypic neighborhood around a given cell on a t-SNE plot representing data from multiple cytometry samples. This approach to creating a population around every cell was a key inspiration for the Tracking Responders EXpanding (T-REX) tool presented here, which applies KNN to every cell to pinpoint rare cells in phenotypic regions of significant change. In addition to combining UMAP, KNN, and Marker Enrichment Modeling (MEM) in a rapid, unsupervised analysis workflow for paired samples from one individual, T-REX contrasts with prior approaches in its specific focus on the regions of great difference between samples. This T-REX design is based on the observation that, in the absence of a perturbation such as disease or infection, adults tend to have a stable signature of blood cell abundances over weeks to months (Greenplate et al., 2019; Lakshmikanth et al., 2020; Mathew et al., 2020), and the hypothesis that short-term, dramatic changes in rare immune cell subsets will identify cells associated with exposure to an immunogenic agent, such as a virus.\n\nData types used to challenge the T-REX algorithm here included a new spectral flow cytometry study (Dataset 1) and three existing mass cytometry datasets (Dataset 2, Dataset 3, and Dataset 4). Mass cytometry is an established technique for human immune monitoring where commercial reagents presently allow 44 antibodies to be measured simultaneously per cell (Greenplate et al., 2016a; Mistry et al., 2019; Spitzer and Nolan, 2016). Spectral flow cytometry is gaining attention in human immune monitoring as it generates data that compares well to mass cytometry (Ferrer-Font et al., 2020; Mistry et al., 2019). Spectral flow cytometers collect cells at around 10-fold the number of cells per second as mass cytometers. While the availability of spectrally distinct antibody-fluorochrome conjugates imposes some practical limits on spectral flow cytometry at present, established panels like the one in Dataset 1 measure ~30 features per cell with excellent resolution, and that capacity is expected to roughly double in the next few years as recent work has demonstrated 40 features (Park et al., 2020). Spectral flow cytometry is thus well-matched to studies of very low-frequency cells, as was the case in Dataset 1, where a goal was to computationally pinpoint hundreds of virus-specific T cells in datasets of over 5 million collected cells.\n\nDatasets 1 and 2 were from individuals infected with two different respiratory viruses, rhinovirus (RV) or SARS-Cov-2, respectively. Respiratory viruses are ubiquitous, and while some, like rhinovirus, are generally benign, they nonetheless pose risks to patients with underlying chronic health conditions. The common colds associated with rhinovirus are characterized by shifts in very rare virus-specific cells in the blood (Muehling et al., 2020; Muehling et al., 2018). In contrast, novel respiratory viruses, such as SARS-CoV-2, the coronavirus causing COVID-19, continue to emerge that enact high morbidity and mortality, even among healthy subjects. Understanding the immune response to such viruses is vital to treatment and vaccine design, and there has been rapid progress applying human immune monitoring to COVID-19 patients (Mathew et al., 2020; Rodriguez et al., 2020). An ongoing challenge in the field is to quantitatively compare novel diseases, like COVID-19, to other disease states and immune responses. T cells are pivotal to such responses. Severe COVID-19 has been linked to a pathogenic \u2018cytokine storm\u2019 in which cellular immune responses likely play a crucial role (Ragab et al., 2020). Nonetheless, in the case of both rhinovirus and COVID-19, it is clear that host factors are a key determinant of the degree of the T cell response (Mathew et al., 2020; Muehling et al., 2020). Datasets 3 and 4 were from cancer patients that included melanoma (MB) patients being treated with \u03b1-PD-1 checkpoint inhibitor therapies or acute myeloid leukemia (AML) patients undergoing induction chemotherapy. By tracking the CD4+ T cells that expand rapidly during infections and respond to immunotherapy, it may be possible to pinpoint or therapeutically guide cells into helpful vs. harmful roles or niches. Overall, a goal of this study was to develop an automated, quantitative toolkit for immune monitoring that would span a wide range of possible immune changes, identify and phenotype statistically significant cell subsets, and provide an overall vector of change indicating both the direction and magnitude of shifts, either in the immune system as a whole or in a key cell subpopulation.\n\n## Results\n\nWe report here T-REX, a novel unsupervised machine learning algorithm for characterizing cells in phenotypic regions of significant change in a pair of samples (Figure 1). The primary use case for developing the T-REX algorithm was a new dataset from individuals infected with rhinovirus, where changes in the peripheral immune system are expected in very rare memory cells responding directly to the virus (Dataset 1). Infection with rhinovirus is known to induce expansion of circulating virus-specific CD4+ T cells in the blood, and a key feature of the new rhinovirus dataset here is that rare and mechanistically important virus-specific CD4+ T cells were marked with MHC II tetramers in the context of multiple other T cell markers. The T-REX algorithm was blinded to tetramers during analysis so that they could subsequently be used to test algorithm performance. In addition, T-REX was tested with paired samples from patients with moderate or severe COVID-19 (Dataset 2), melanoma patients being treated with \u03b1-PD-1 checkpoint inhibitor therapies (Dataset 3), and acute myeloid leukemia patients undergoing induction chemotherapy (Dataset 4). These datasets were used to determine whether the T-REX algorithm functions effectively across a spectrum of human immune monitoring challenges and to see how the algorithm performs when changes are restricted to rare cell subsets, as in Dataset 1 and Dataset 3, or when many cells may be expanding or contracting, as in Dataset 2 and Dataset 4.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig1-v2.jpg)\n\n**Figure 1.:** Graphic of the T-REX workflow. Data from paired samples of blood from a subject are collected over the course of infection and analyzed by high-dimensional, high-cellularity cytometry approaches (e.g., Aurora or CyTOF instrument, as with datasets here). Cells from the sample pair are then equally subsampled for Uniform Manifold Approximation (UMAP) analysis. A k-nearest neighbors (KNN) search is then performed within the UMAP manifold for every cell. For every cell, the percent change between the sample pairs is calculated for the cells within its KNN region. Regions of marked expansion or contraction during infection are then analyzed to identify cell types and key features using Marker Enrichment Modeling. For some datasets, additional information not used in the analysis could be assessed to determine whether identified cells were virus-specific. Finally, the average direction and magnitude of change for cells in the sample was calculated as an overall summary of how the analyzed cells changed between samples.\n\n### T-REX identifies cells in phenotypically distinct regions of significant change\n\nFor the rhinovirus challenge study in Dataset 1, sample pairs available for T-REX included cells taken immediately prior to intranasal inoculation with virus (i.e., pre-infection, day 0), as well as those during (day 7) or following inoculation (day 28). Cells were subsampled equally from each timepoint and then concatenated for a single UMAP specific to each analysis pair. UMAP axes were labeled to indicate they were specific to a comparison for a given individual (Figure 2). Thus, each UMAP comparison was a new run of the algorithm. Although it is also possible to map all sample times or all individuals into a single UMAP for analysis, a key goal here was to imagine a minimal T-REX use case with only a pair of samples from one individual. The features selected for UMAP analysis were intentionally limited to surface proteins in order to test whether suitable features for live cell fluorescence-activated cell sorting (FACS) could be identified. Following UMAP, each cell was used as the seed for a KNN search of the local neighborhood within the UMAP axes (i.e., the KNN search was within the learned manifold, as with the analysis in Sconify [Burns et al., 2018] or RAPID [Leelatian et al., 2020]). The k-value for KNN was set to 60 as a starting point based on prior studies and later optimized. For each cell, the KNN region could include cells from either time chosen for analysis, and the percentage of each was calculated to determine the representation of each sampled time in a cellular neighborhood. When cells in regions of expansion (\u226595% of cells in the KNN region from one sampling time) were clustered together in one phenotypic region of the UMAP, they were considered a \u2018hotspot\u2019 of significant change. Cells in change hotspots were aggregated and the phenotype automatically characterized using MEM (Diggins et al., 2017). MEM labels here indicated features that were enriched relative to a statistical null control on a scale from 0 (no expression or enrichment) to +10 (greatest enrichment). Ultimately, T-REX and MEM were used to reveal hotspots of \u226595% change and assign a label that could be used by experts to infer cell identity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig2-v2.jpg)\n\n**Figure 2.:** A subject (RV001) was experimentally infected with rhinovirus (RV-A16) and CD4+ T cell signatures monitored by spectral flow cytometry in conjunction with tetramer staining during the course of infection. (A) Fold change in the number of tetramer+ cells (log2) after rhinovirus challenge on day 0. (B) Data showing the percentage of tetramer+ cells in each cell\u2019s k-nearest neighbors (KNN) region (where k = 60) plotted against the percentage change in its KNN region on day 7 vs. day 0. A statistical threshold of 80% or higher for the percentage change in KNN region corresponded to marked enrichment of tetramer+ cells at day 7. (C) Uniform Manifold Approximation (UMAP) plots with T-REX analysis of CD4+ T cells for day 7 vs. day 0 based on statistical thresholds of 90\u201395% change (left column) and \u226595% change (right column) in cell phenotypes. Pink and red colors denote regions of phenotypic change identified by T-REX. Numbers of tetramer+ cells within the cell\u2019s KNN region captured in these areas of phenotypic change are denoted. Cells containing >5% tetramer+ virus-specific cells in the corresponding KNN region are labeled pink. Red cells denote a KNN region that was not enriched for tetramer+ cells, and purple cells denote a tetramer enriched region not captured by T-REX. Values in black indicate the actual number of tetramer+ cells in each circled hotspot of phenotypic change. Marker Enrichment Modeling (MEM) labels on the right indicate cell phenotypes of each hotspot.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Uniform Manifold Approximation (UMAP) plot with T-REX analysis of all cells with day 7 vs. day 0 for \u226595% change in cell phenotypes. Numbers of tetramer+ cells and cells in hotspots denoted. Cells in regions of change and containing >5% tetramer+ virus-specific cells in the corresponding k-nearest neighbors (KNN) region are pink. Red cells denote a KNN region that was not enriched for tetramer+ cells, but were regions of great change. Marker Enrichment Modeling (MEM) labels on the right indicate cell phenotypes the hotspot found and the hotspot from Figure 2.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Subjects RV002 through RV008 were experimentally infected with rhinovirus and CD4+ T cell signatures monitored by spectral flow cytometry in conjunction with tetramer staining during the course of infection. (A) Fold change in the number of tetramer+ cells (log2) after rhinovirus challenge on day 0. (B) Box and whisker plots show k-nearest neighbors (KNN) regions in terms of expansion during infection represented by percent change as well as percent of tetramer-+ cells for day 0 and day 7. (C) Uniform Manifold Approximation (UMAP) plots for percent change and tetramer percent cutoff denoted in upper-left corner in the left UMAP plot. Cell count in each region is in black as well as in the upper right of each UMAP plot for tetramer+ regions changing (red), tetramer\u2013 regions changing (pink), and tetramer+ regions with change below the expansion cutoff (purple). Marker Enrichment Modeling (MEM) labels are given for highly expanded and tetramer-enriched regions.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** MEM-gated cells are derived from the combination of all depicted gates (CD45R0+ CD38+ ICOS + CCR5+ PD-1+ CD95+ CD27+ CXCR3+). (Inset) Comparison of RV tetramer+ cell enrichment in ungated and MEM-gated cell populations.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Precursor frequencies of total RV tetramer+ CD4+ T cells from all subjects on study day 7 (n = 8 subjects). Median \u00b1 interquartile range. (B) Artificial sorting was performed using unenriched day 7 samples. Consensus Marker Enrichment Modeling (MEM) markers were individually added to the sorting strategy according to MEM feature enrichment, and corresponding total tetramer+ cell frequencies assessed. All cells were pre-gated for total CD4+ T cells (Live, Dump [CD14, CD19, CD8a]\u2013, CD3+, CD4+). Two controls were utilized: rhinovirus tetramer staining was performed in subjects who remained uninfected following challenge as an infection control (n = 2), and an unrelated influenza hemagglutinin tetramer was utilized in a rhinovirus-infected subject to confirm antigen specificity (n = 1) (right). Tetramer enrichment with the addition of each marker was compared to the total CD4+ T cell population using Friedman\u2019s test with Dunn\u2019s multiple comparisons correction. **p\u22640.01; ***p\u22640.001.\n\nIn the human rhinovirus challenge study yielding Dataset 1, MHC class II tetramers were used to identify rhinovirus-specific CD4+ T cells with the goal of tracking phenotypic changes over the course of infection. Increases in tetramer+ cells on day 7 (Figure 2A) corresponded to the acute infection phase (Muehling et al., 2020). This tetramer tracking system for virus-specific T cells provided an opportunity to test whether the cells identified by T-REX were biologically significant by leaving the tetramer stain features out of the computational analysis (i.e., not using tetramers to make the UMAP or in other parts of T-REX) and then testing to see whether hotspots of cellular change identified by T-REX were statistically enriched for tetramer+, virus-specific cells. A hotspot region was considered to be enriched for tetramer+ cells if >5% of the cells in the region were tetramer+. In the example subject shown, the pairwise comparisons used in T-REX analysis included CD4+ T cells from day 0, immediately prior to rhinovirus infection, and day 7, a well-studied timepoint at which rare, virus-specific CD4+ T cells are observed at higher frequencies (Muehling et al., 2020). This trajectory of virus-specific cell expansion was confirmed by a peak in the log2 fold change in the frequency of tetramer+ CD4+ T cells (Figure 2A). Applying T-REX to the rhinovirus data revealed that KNN regions with expansion from day 0 to day 7 were greatly enriched for tetramer+ cells, as compared to regions with less expansion (Figure 2B). UMAP axes were labeled as UMAP_RV001_7_0 to denote this UMAP analyzed day 0 and day 7 for individual RV001 (Figure 2C). Regions of contraction were observed but were not enriched for tetramer+ cells, except in the case of one individual, RV007, studied here (Figure 3). Notably, two of the eight study subjects challenged with rhinovirus were not infected (RV002 and RV003); all other individuals were infected (Supplementary file 1). As the focus of this study was virus-specific T cells, CD4+ T cells were the main populations analyzed in all subjects (Supplementary file 2). However, T-REX finds the largest tetramer+ cell population with the same phenotype even when using all 4.9 million live cells instead of only the 1.3 million CD4+ T cells (Figure 2\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig3-v2.jpg)\n\n**Figure 3.:** Tracking Responders EXpanding (T-REX) plots of regions of significant change (blue and red) are shown on Uniform Manifold Approximation (UMAP) axes for CD4+ T cells from eight rhinovirus challenge study individuals. Solid pink circles indicate tetramer+ hotspots that also contained cells that were in regions of marked expansion \u226585%.\n\nA key question for the T-REX algorithm is where to set a statistical cutoff for what is considered to be a biologically significant amount of expansion. Two change cutoffs were tested with subject RV001, \u226590% and \u226595% (Figure 2C). Using a cutoff of \u226595% identified 2/2 (100%) tetramer+ hotspots of change for RV001 and did not identify any additional regions that were not tetramer hotspots, whereas the \u226590% cutoff identified both tetramer+ hotspots and an additional tetramer\u2013 hotspot (Figure 2C, top). Thus, \u226595% represented a stringent cutoff that still captured biologically significant cells. An analysis of tetramer enrichment as a function of percentile of expansion from day 0 to day 7 (Figure 2B) showed that tetramer+ cells were not commonly observed to be in local neighborhoods around cells with change below 80% in their KNN region. In contrast, above 90% change, the median CD4+ T cell had 10% or more tetramer+ neighbors around it in the KNN region (Figure 2B). Thus, only regions of 80% or more expansion from day 0 to day 7 were enriched for tetramer+ CD4+ T cells in study individual RV001.\n\n### A k-value of 60 effectively identified immune hotspots in T-REX\n\nA critical question for KNN analysis is the value of k, the number of neighbors to assess. While it is useful to have a lower k-value as the analysis will complete more quickly, increasing the k-value might better represent the phenotypic neighborhood or be more statistically robust. To assess how k-value impacted detection of cells in regions of change and the degree to which these cells were virus-specific in rhinovirus challenge Dataset 1, the k-value was systematically changed. In example case RV001, an optimal k was determined to be an inflection point in a graph of the average tetramer enrichment (y-axis, Figure 4) vs. increasing values of k (x-axis, Figure 4). To calculate this curve, a KNN search was repeated while increasing k in steps from 0 to 300 for every cell in each sampling. This analysis was performed for all tetramer+ cells from day 7 (dark purple, Figure 4), all tetramer+ cells from day 0 (light purple, Figure 4), and, as a negative control, random tetramer\u2013 cells from day 7 (black, Figure 4). Within each of these neighborhoods, tetramer enrichment was calculated. This approach identified the inflection point of the percent tetramer+ curve as k = 70 for RV001 (Figure 4). In further analysis of the remaining infected rhinovirus subjects, optimal k-values ranged from 30 to 80. A k-value of 60 was chosen and used in all other analyses of rhinovirus subjects (Figure 3), as well as Datasets 2, 3, and 4 described below.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig4-v2.jpg)\n\n**Figure 4.:** (A) Tetramer+ cells from day 7 (dark purple) or from day 0 (light purple) and random tetramer- cells from day 7 (black) are shown overlaid on a common Uniform Manifold Approximation (UMAP) plot. The number of cells for each group is shown in the upper left of each plot. (B) Average tetramer enrichment is shown for increasing k-values in repeated KNN analysis of the cells. The inflection point of the resulting curve is circled in red at k = 70, which was the optimized k-value for KNN implemented as in Tracking Responders EXpanding (T-REX) for subject RV001. The T-REX plots on the UMAP axes are shown for various k-values.\n\n### Regions of significant change contained rhinovirus-specific CD4+ T cells in Dataset 1\n\nThe association between regions of change and enrichment for virus-specific cells observed in the example subject shown (Figure 2B) was observed in five infected rhinovirus subjects; tetramer+ CD4+ T cells were not enriched in KNN regions around cells that had not expanded from day 0 to day 7 (one infected, two uninfected; Figure 2\u2014figure supplement 2). This observation suggested that cutoffs at the 5th and 95th percentile would accurately capture cells representing phenotypic regions with significant change over time. In addition, 15th and 85th percentiles were chosen as cutoffs to capture a more moderate degree of change and track cells that might still be of interest but not from regions experiencing significant change. The remaining cells in phenotypic regions between the 15th and 85th percentiles were not considered to have not changed significantly in the context of these studies. Going forward, it was of interest to determine how often regions of significant change (i.e., the 95th and 5th percentile cutoffs) would contain tetramer+ CD4+ T cells in different individuals participating in the rhinovirus challenge study. Cells in regions of significant expansion (\u226595%) were also from regions that were enriched for virus-specific cells in nearly all rhinovirus-infected individuals (4/6 at 95% cutoff, 5/6 at 85% cutoff) (Figure 2, Figure 2\u2014figure supplement 2, Figure 3). Thus, by focusing specifically on cells in regions representing the most change over time, T-REX analysis revealed subpopulations containing virus-specific cells. This highlights the ability of T-REX to pinpoint such cells without the use of antigen-specific reagents. Following T-REX, MEM analysis was performed using all available features, including intracellular features not used to define the UMAP space (TCF1, TBET, and Ki-67). The phenotype of the regions of significant change enriched for virus-specific cells was quantitatively described with MEM scores (hotspot 1: \u25b2CD45R0+10 CD38+8 ICOS+6 CCR5+5 TCF1+5 CD27+4 PD-1+4 CXCR3+3 CD95+3 TBET+2 CD25+2; hotspot 2: \u25b2CD45R0+10 CD38+8 ICOS+6 CD27+5 TCF1+5 CCR5+4 CXCR3+3 CD95+3 CCR7+3 PD-1+2 CD25+2 CXCR5+2). The change hotspots thus contained activated memory cells (CD45RO + CD38+) that were notable for their early memory/stem-like T cell signature (TCF1+ CD27+), as well as their expression of CCR5 and CXCR3, both of which are chemokine receptors found on rhinovirus-specific CD4+ T cells that respond during infection (Muehling et al., 2020; Muehling et al., 2018).\n\nTo determine the sensitivity of this method, all tetramer+ regions were next reviewed, including those that did not meet the criteria for hotspots of significant change (Figure 2C, bottom). In analysis of RV001, 66.6% (2/3) of tetramer+ regions were captured, meaning there was one region with lower change that contained tetramer+ cells. However, there were only 87 cells in these missed regions compared to 896 cells and 826 cells in the regions with \u226595% expansion, confirming that T-REX captured the majority of virus-specific cells in the dataset.\n\nIn the case of an emerging infectious disease, it may not be possible to have a pre-infection sample and it would be useful to know whether T-REX analysis of change between a peak of infection and a later time might also reveal virus-specific T cells. To test this idea, pairwise comparisons were performed with cells from day 7 following rhinovirus inoculation and at day 28 after inoculation (Figure 5). Strikingly, cells in phenotypic regions of significant change again were enriched for virus-specific, tetramer+ CD4+ T cells. The MEM values for these cells further identified them as CD45R0+ memory cells enriched for CD38, ICOS, CD27, TCF1, CXCR5, PD-1, and CD95 expression, a phenotype matching that of the cells identified in the day 0 to day 7 analysis for this individual (RV001, Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig5-v2.jpg)\n\n**Figure 5.:** (A) Fold change in the number of tetramer+ cells (log2) after rhinovirus challenge on day 0. (B) Box and whisker plot show k-nearest neighbors (KNN) regions in terms of expansion during infection represented by percent change as well as percent of tetramer+ cells for post-infection (day 28) and during infection (day 7). (C) Uniform Manifold Approximation (UMAP) plots for 95% change and 5% tetramer cutoffs. Cell count is in black as well as in the upper right of each UMAP plot. Marker Enrichment Modeling (MEM) labels are given for highly expanded and tetramer-enriched regions.\n\n### Traditional biaxial gating of cells identified by T-REX and MEM enriches for RV-specific T cells\n\nOnce identified by machine learning approaches, it can be useful to define a gating scheme that might be used to test whether computationally defined cell subsets can be found using traditional gates. In addition, FACS sorting for live T cells could use surface antigens and biaxial gates to physically separate such cells, as is typical for interrogation in vitro. To test this idea computationally, the features enriched in MEM labels for cells identified by T-REX (MEM label average and standard deviation: \u25b2CD45R09\u00b12.5 CD387\u00b12.0 ICOS6\u00b11.4 CCR54\u00b11.7 PD-14\u00b10.9 CD954\u00b10.7 CD273\u00b11.6 CXCR32\u00b10.5) were used to define a new gating strategy that used a single positive cutoff gate for each feature of CD4+ T cells (Live, Dump-, CD3+, CD4+) in the order CD45R0, CD38, ICOS, CCR5, PD-1, CD95, CD27, and CXCR3 (Figure 2\u2014figure supplement 3). At each gating step, the percentage of RV-specific cells was determined.\n\nIt is known that precursor frequencies of rhinovirus-specific CD4+ T cells are very low, even during active infection (0.0004\u20120.04% of CD4+ T cells, Figure 2\u2014figure supplement 4). The \u2018virtual sort\u2019 successfully enriched for rhinovirus tetramer+ cells in all infected subjects (0.89\u20129.25% of CD4+ T cells; Figure 2\u2014figure supplement 4). This is notable, considering that the consensus MEM label was generated from regions of \u226595% change, some of which did not include tetramers. Furthermore, this strategy was able to enrich for tetramer+ cells in the one infected subject for which T-REX was unable to identify tetramer hotspots (RV007), and one in which the tetramer+ hotspot only met a \u226585% threshold of expansion (RV005), suggesting that T-REX-derived sorting strategies can be broadly applied across cohorts, including subjects whose response may not reach the threshold of identification by T-REX. A minimal panel of 10 markers (Live, Dump\u2013, CD3+, CD4+, CD45R0+, CD38+, ICOS+, CCR5+, PD-1+, CD95+) was sufficient to achieve maximal tetramer enrichment. Interestingly, gating for CD45R0 alone \u2012 the first MEM-enriched feature \u2012 did not significantly enrich for virus-specific T cells. Furthermore, the T-REX-derived sorting strategy failed to enrich for rhinovirus-specific T cells in uninfected subject, nor did it enrich for CD4+ T cells stained with a control influenza tetramer, confirming the specificity of this method (Figure 2\u2014figure supplement 4). Thus, a computational \u2018virtual sort\u2019 for the cells suggests that FACS gates could be drawn using the results of T-REX and MEM analysis. This result further confirms that the populations identified computationally also exist as populations that can be defined in traditional ways.\n\n### T-REX tracking of direction and degree of change contextualizes diverse immune responses\n\nThe next goal was to test T-REX with additional data types and contextualize the results from rhinovirus infection (Dataset 1) with changes that might be observed in other immune responses, such as another respiratory infection (Dataset 2), cancer immunotherapy (Datasets 3), or cancer chemotherapy (Dataset 4). To accomplish this, metrics for degree of change as well as direction of change in each sample were devised (Figure 6A). Degree of change was calculated as the sum of the percent of cells in the 5th and 95th hotspots of change. Therefore, degree of change is the percentage of the sample that has changed significantly (\u226595%) between the two samples (i.e., the percentage of the sample that was dark red or dark blue in the T-REX plot). A degree of change of 100% would mean that the KNN region around every cell was populated only by cells from the same sample, which is interpreted as meaning the pair of samples had changed completely (half the sample contracting and half expanding). Direction of change is the ratio of \u226595% expansion to contraction in the sample and was calculated as the difference between the number of cells in the 95th and 5th hotspots of change divided by the sum of the number of cells in the 95th and 5th hotspots of change. A negative direction of change value indicates that there was significant contraction that was more common than significant expansion. The values for directionality range from 0.00 (evenly contracting and expanding) to \u00b11.00 (all contracting or expanding). This way of looking at the data provided a method for comparing changes across different systems immune monitoring settings (Figure 6). Rhinovirus subjects had small changes in samples over time with a median of 0.019% and an interquartile range (IQR) of 0.0006%. Rhinovirus also had large directionality across all subjects either up or down, with a median of 0.029 and an IQR of 2.00. Thus, rhinovirus infections resulted in an extremely low magnitude of change, as very rare cell subsets were responding, and the direction of this change was typically fairly high or low for a given individual (i.e., the changes were not balanced and tended to represent marked expansion or contraction in the rare subsets that changed; Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig6-v2.jpg)\n\n**Figure 6.:** (A) Degree of change and direction of change from Tracking Responders EXpanding (T-REX) analysis in a timepoint comparison shown for acute myeloid leukemia (AML, day 5/8 vs. day 0), COVID (COV, day 1/3/4/5/6/7 vs. day 0), melanoma (MB, day 21/35 vs. day 0), and rhinovirus (RV, day 7 vs. day 0) samples. (B) Example T-REX plots are shown for each disease type analyzed. Degree of change shown in red and blue with red showing regions of expansion over time compared to the blue representing regions of contraction over time. Marker Enrichment Modeling (MEM) label given for change hotspots in the left example in each sample type.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** RMSD heatmap comparing Marker Enrichment Modeling (MEM) values for hotspots found by T-REX analysis on CD4+ T cells in COVID-19 samples.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** MEM-gated cells are derived from the combination of all depicted gates (CD147+ CD99+ CD29+ CD45+ CD3+ CD38+ CD49d + CD52+ CD27+ CD28+ CD81+). (Inset) Comparison of CD4+ T cell enrichment in ungated and MEM-gated cell populations.\n\n### Regions of change included cells expressing CD147 and CD38 in COVID-19 Dataset 2\n\nNext, T-REX was applied to Dataset 2, a mass cytometry study of longitudinal collection of blood from patients with COVID-19 (Rodriguez et al., 2020). This study originally contained data for 39 total patients, of which 12 patients had accessible mass cytometry data with at least two blood samples over time. For each patient, the day 0 timepoint and the closest sampled timepoint to day 7 were used for pairwise comparison using T-REX. The COVID-19 samples varied from <1% to 68% in terms of degree of change, with a median of 6.86% and an IQR of 30.4%. The directionality of change was near zero, with a median of \u20130.00880 and IQR of 0.773. Thus, the blood of COVID-19 patients could display marked changes or little change. Notably, the changes <5% were generally positive (median directionality of 0.55, N = 6), whereas the COVID-19 patient cell populations experiencing change >5% typically decreased between day 0 to day 7 (median directionality of \u20130.33, N = 6).\n\nIn T-REX analysis looking at change on the UMAP axes, patients with significant change were apparent due to large islands of cells being painted dark red or dark blue, indicating \u226595% change between paired days (Figure 6). These cell populations were clustered and separated into populations representing day 0 or the later time near day 7, and MEM labels calculated in order to assess the identity and phenotypic changes. For example, patient COV26 saw little change (magnitude of 2.02%) and this was almost entirely expansion (directionality of 0.99). The largest population experiencing significant change from COV26 decreased over time and had a MEM phenotype of CD147+10 CD99+8 CD29+6 CD38+4 CD55+3 CD14+2 CD39+2 CD64+1 CD56+1 CD8a+1, indicating that it was a CD14+ myeloid cell subset with high expression of CD147/Basigin. The phenotypes for all automatically identified clusters of cells that expanded or contracted greatly, and the degree and direction of change for each COVID-19 patient from Dataset 2 are listed in Supplementary file 3. These reference phenotypes should be comparable to those in other studies of COVID-19, and a meta-analysis of phenotypes could use quantitative analysis of MEM labels to compare these highly expanding and contracting cells.\n\nT-REX was also applied to only CD4+ T cells from patients with sufficient T cell counts (10 out of the 12 patients as described above). Of the 10 COVID-19 patients available for analysis, 5 individuals had at least one hotspot of great change, as revealed by T-REX, in CD4+ T cell-specific analysis (Figure 6\u2014figure supplement 1, Supplementary file 3). Analysis of the COVID-19 CD4+ T cell hotspot phenotypes using root mean square deviation (RMSD) analysis (Diggins et al., 2018; Diggins et al., 2017) identified three phenotypic groups. One of these groups was a set of closely related T cell subsets from one individual, patient COV32, and the aggregate MEM label for this population was (MEM label average and standard deviation: \u25b2CD57+8\u00b10.8 CD99+9\u00b11.4 CD29+7\u00b10.5 CD147+6\u00b10.5 CD43+5\u00b10.6 CD45+4\u00b10.3 CD3+4\u00b10.5 CD81+4\u00b10.4 CD52+4\u00b10.3 CD49d+3\u00b10.5 CD45RA+3\u00b12.3 CD5+3\u00b11 CD56+2\u00b11.5, Figure 2\u2014figure supplement 4). Another phenotype of CD4+ T cells was consistently observed in those COVID-19 patients where T-REX revealed a hotspot. Of the five patients where T-REX identified a CD4+ T cell hotspot, four of the patients had a hotspot matching the aggregate phenotype (MEM label average and standard deviation: \u25b2CD147+9\u00b10.8 CD99+9\u00b11.3 CD29+8\u00b11.3 CD45+4\u00b12 CD3+4\u00b10.7 CD38+4\u00b11.8 CD49d+3\u00b11.6 CD52+3\u00b11 CD27+3\u00b12.1 CD28+3\u00b10.8 CD81+2\u00b11.3 CD62L+2\u00b11.2 CD56+2\u00b10.7 CD5+2\u00b10.6, Figure 6\u2014figure supplement 1). When comparing day 0 to day 6 (\u00b13 days), this population of CD4+ T cells was observed to change significantly in patients COV24, COV29, COV32, and COV39 (four of the five with a CD4+ T cell hotspot). The features of this subset could now be used to physically separate this population using FACS, highlighting a practical application. As a test of this idea, manual biaxial gating, as in standard FACS for physical separation of cell subset, was performed using the cell surface markers identified by MEM as most enriched, as in the prior analysis of cells from the rhinovirus study (Figure 6\u2014figure supplement 2). While CD4+ T cells only represented 5.5\u201314.0% of total cells, following MEM-based gating they were enriched to 49.6\u201383.3% of cells. Following expert gating, the MEM label of the resulting population was \u25b2CD147+9\u00b10.6 CD99+8\u00b11 CD29+7\u00b10.6 CD38+7\u00b10.8 CD27+5\u00b10.8 CD45+4\u00b11.2 CD3+4\u00b10.6 CD49d+3\u00b10.5 CD81+3\u00b10.7 CD52+3\u00b10.7 CD28+3\u00b10.7 CD62L+2\u00b10.8 CD56+2\u00b10.5 CD5+2\u00b10.6, which closely matched the computationally identified cells.\n\n### T-REX reveals immune cell changes during cancer therapies in Dataset 3 and Dataset 4\n\nT-REX was next tested on two previously published cancer immune monitoring studies representing a wide range of immune system changes, from modest to extensive. Dataset 3 consisted of mass cytometry analysis of peripheral blood mononuclear cells (PBMCs) from melanoma patients treated with anti-PD-1. This well-studied dataset primarily includes melanoma patients whose blood had modest, subtle shifts in PBMC phenotypes over time. However, one patient in the set, patient MB-009, developed myelodysplastic syndrome (MDS) and experienced a great shift in blood immunophenotype in parallel with the emergence of a small population of blasts in PBMCs (Greenplate et al., 2016b). Overall, when analyzed by T-REX, the melanoma samples in Dataset 3 for comparisons of day 21/35 vs. day 0 had a small degree of change (median of 0.58% and an IQR 2.34%) with a varying directionality (median of \u20130.42 and an IQR of 1.46), confirming the subtle shifts in phenotypes as previously indicated. The great shift in peripheral immunophenotypes observed in MB-009 was confirmed with T-REX analysis when comparing the 6-week and 12-week times. Notably, at 6 weeks, the peripheral blast count was still below 5% (Greenplate et al., 2016b), so T-REX detected a substantial change in subsets that were not driven solely by the emergence from the marrow of the MDS blasts.\n\nDataset 4 was chosen to represent large changes and included peripheral blood from AML patients treated with induction chemotherapy (Ferrell et al., 2016). The compared timepoints for the AML data in Dataset 4 were day 5/8 vs. day 0. As expected, the majority of AML patients had a large degree of change in samples (median of 81.0% and an IQR of 75.2%) with little to no directionality to the change (median of \u20130.00250 and an IQR of 0.0173), meaning that there were massive changes in terms of both expansion and contraction over the course of treatment. MEM labels showed that the cells contracting in responder patients were the AML blasts, whereas the emerging cells were the non-malignant immune cells (Figure 6). AML samples with a degree of change >80% (AML001, AML002, AML004) came from patients with high blast count in the blood and complete response to treatment, indicating the complete transformation of the immune environment after treatment. AML007, a patient with no blasts in the blood, had a degree of change of 5.97% over treatment. For AML003, a patient that did not respond to treatment, little change was seen from days 0 to 5 (degree of change = 3.19%) by means of T-REX analysis.\n\n### T-REX outperforms other algorithms based on accuracy and speed\n\nThe T-REX workflow combines multiple algorithms, and each step represents a choice of tool and settings. T-REX was next tested against (1) T-REX with different choices of dimensionality reduction or no dimensionality reduction, (2) T-REX with a different clustering method from KNN, and (3) other algorithms. The results were evaluated based on speed (overall runtime, including any dimensionality reduction), whether regions of significant change were detected, and whether regions of change were also tetramer+ hotspots (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig7-v2.jpg)\n\n**Figure 7.:** (A) Data analysis methods were compared using on RV001 day 0 and day 7 data. Methods identifying at least one cluster with >85% change from day 0 to day 7 are shown. Cells are plotted on UMAP or t-SNE axes (red for expanding cells from day 7, blue for contracting from day 0). Time per method is shown in the purple bar above each UMAP/t-SNE plot. For methods not using UMAP, clusters and hotspots have been redrawn on the UMAP axes to compare to the original T-REX method. Numbers of tetramer+ cells within the cell\u2019s k-nearest neighbors (KNN) region captured in these areas of phenotypic change are denoted. (B) Marker Enrichment Modeling (MEM) labels are shown per method for clusters with significant change. A root mean square deviation (RMSD) score is included in the lower right of each MEM label box for comparison to the original T-REX method MEM labels. (C) All clusters on the UMAP axes are shown for methods that did not identify regions of significant change. Runtimes for these are included above each plot in purple.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64653/elife-64653-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Each run is a subsample of 10% of the total cells from RV001. UMAP plots with T-REX analysis of CD4+ T cells for day 7 vs. day 0 based on statistical thresholds of 90\u201395% change (top row) and \u226595% change (bottom row) in cell phenotypes. Pink and red colors denote regions of phenotypic change identified by T-REX. Cells containing >5% tetramer+ virus-specific cells in the corresponding k-nearest neighbors (KNN) region are labeled pink. Red cells denote a KNN region that was not enriched for tetramer+ cells, and purple cells denote a tetramer enriched region not captured by T-REX.\n\nThroughout this work, we have presented a version of T-REX that utilizes UMAP for dimensionality reduction and KNN for clustering. This standard version of T-REX ran in 0.35 hr on the 1.3 million cell dataset from RV001 (Figure 7, left column) and identified a cluster that was 22% tetramer+. An altered version of T-REX, in which t-SNE replaced UMAP as the method of dimensionality reduction, resulted in a much longer runtime of 23 hr and comparable capture of areas of change, containing 22% tetramer+ cells (Figure 7). Finally, we tested T-REX without dimensionality reduction, running KNN directly on the 14 original surface protein features previously utilized when performing either UMAP or t-SNE dimensionality reduction. This KNN on the original feature space was both slower (1.7 hr) and less accurate, in that it identified too many putative regions of change, most of which were not tetramer+ hotspots (Figure 7).\n\nWe also compared T-REX with other commonly used dimensionality reduction and clustering algorithms (Weber and Robinson, 2016), including SPADE, Phenograph, FlowSOM, and Citrus. These algorithms were designed to run on the original measured features and not on t-SNE or UMAP axes, although we have previously used FlowSOM on t-SNE as part of the RAPID algorithm (Leelatian et al., 2020). When SPADE was tested using the 14 original features, no regions of change \u226595% were identified (Figure 7). Of the 160 cell clusters requested and produced in SPADE, only two clusters had a percent change between 85% and 90% and contained 7% and 10% tetramer+ cells. The other clusters changed little (average of 53% \u00b1 10.5%). Next, the KNN-based Phenograph algorithm was tested using the 14 original features and a k-value of 60 (as in T-REX, Figure 4). This test of Phenograph identified 13 clusters, none of which displayed significant change (average of 49% \u00b1 6.4%) and none of which contained >5% tetramer+ cells. Phenograph was also tested using the UMAP coordinates and a k-value of 60 (as with standard T-REX in Figure 2). This approach identified 113 clusters, one of which was between 85% and 95% change, 8% tetramer+, and contained cells that were phenotypically similar to those identified by T-REX using MEM (Figure 7). The remaining clusters identified by Phenograph did not significantly change (average of 50% \u00b1 6.6% change in the KNN region). Next, FlowSOM was tested both on UMAP axes and original features using an optimized cluster number, as determined by RAPID (Leelatian et al., 2020). RAPID cluster optimization (testing 0\u201390 clusters) ran in 0.93 hr and identified an optimal value of 66 clusters. FlowSOM did not identify regions of change using either UMAP or original features (average of 50% \u00b1 5%) and did not identify clusters with >5% tetramer+ cells. Finally, we used 10 subsamples of each day to test Citrus on RV001 as Citrus requires two groups and several samples per group. This test of Citrus required 3 hr and found 156 total clusters, with >30 being significantly associated with either day 0 or day 7 abundance. Of these significant clusters, only one had >5% tetramer+ cells. This cluster also closely matched the T-REX tetramer+ cell phenotype (MEM label: \u25b2 CD45RO+10 CD38+8 ICOS+7 CD25+7 Ki67+7 CD27+6 CCR5+6 PD1+6 Tcf-1+6 CCR6+5 CD95+5 CCR7+5 CXCR3+4 CXCR5+4 CD127+3 Tbet+2). Importantly, phenotypes were comparable for all methods that identified at least one hotspot of >85% change, as quantified by RMSD analysis of MEM labels (Greenplate et al., 2019) (ranged from 97.1 to 98.7, with 100 being the highest degree of similarity).\n\nFinally, as an additional test of T-REX stability, sample RV001 was subsampled into 10 groups, each containing 10% of the cells. T-REX was then run using both the same original (common) UMAP (Figure 7\u2014figure supplement 1) and subsample-specific (unique) UMAPs. In all cases of subsampling, T-REX consistently identified tetramer+ hotspots based on \u226590 % or \u2265 95 % change across the 10 subsamples. To summarize, T-REX using either UMAP or t-SNE performed the best at identifying regions of change that were greatly enriched for rare tetramer+ cells, and T-REX with UMAP was faster than T-REX with t-SNE (Figure 7). Thus, T-REX with UMAP and MEM provides an automated approach to quickly reveal and quantitatively characterize cells in regions of great expansion or contraction.\n\n## Materials and methods\n\n### Experimental rhinovirus infection model\n\nHealthy adult volunteers (ages 18\u201340) were enrolled in an experimental rhinovirus infection study. All subjects were judged to be seronegative to the challenge virus strain (RV-A16; serum neutralizing antibody titer \u22641:2). Subjects were inoculated with 100 TCID50 of RV-A16 (FDA IND 15162) on study day 0 and were judged to be infected if they seroconverted to the challenge virus by study day 28 (\u22654-fold increase in titer) and/or shed virus in nasal wash specimens during the first five days of infection, according to standard protocols (Muehling et al., 2018). Peripheral blood specimens were obtained sequentially over the course of infection to capture pre-infection immune fluctuations (days \u201314 and 0), the adaptive phase of infection (day 7), and convalescence (day 28). PBMCs were isolated using density gradient centrifugation and viably cryopreserved for later analysis.\n\n### Rhinovirus tetramer staining and flow cytometry\n\nRhinovirus tetramer staining was performed as previously described (Muehling et al., 2020; Muehling et al., 2016; Muehling et al., 2018). Briefly, PBMCs were thawed, and all timepoints analyzed together in single experiments. Cells were stained with up to three unique rhinovirus MHCII tetramers, selected to match each individual\u2019s HLA type (Muehling et al., 2016), and counterstained for viability and surface markers (Supplementary file 4). An aliquot of tetramer-labeled cells was enriched using anti-PE magnetic beads for antigen-specific CD4+ T cell frequency calculation, as previously described (Muehling et al., 2020; Muehling et al., 2016; Muehling et al., 2018). Cells were fixed and permeabilized (True Nuclear Fixation and Permeabilization buffers; BioLegend, San Diego, CA, USA), and then stained for intracellular markers. Samples were analyzed using a 3-laser Aurora Northern Lights spectral flow cytometer (Cytek Biosciences, Fremont, CA, USA).\n\n### Generation of Dataset 1\n\nDataset 1 was a newly generated dataset of PBMCs obtained by longitudinal sampling of healthy volunteers who were challenged intranasally with RV-A16. The study was approved by the University of Virginia Human Investigations Committee, performed in accordance with the Declaration of Helsinki, and registered with ClinicalTrials.gov (NCT02796001). Informed consent was obtained from all study participants. Data were collected and processed at the University of Virginia. Sample collection times were defined by established kinetics of memory effector T helper cell responses (Muehling et al., 2020; Muehling et al., 2018). Cells were stained with antibodies that target markers of na\u00efve, memory and helper T cells (CCR6, ICOS, CXCR3, CD27, CCR5, TBET, CD45RA, CD45R0, CD95, CXCR5, TCF1, CCR7), and activation and proliferation (CD25, CD38, CD127, Ki-67, PD-1). The marker panel also included up to three MHCII/peptide tetramers to identify virus-specific CD4+ T cells (Muehling et al., 2016). Data were collected using a 3-laser Aurora spectral flow cytometry instrument. Additional methodological details can be found on this article\u2019s online supplement.\n\n### Data pre-processing\n\nBefore testing and evaluating the modular analysis workflow for rare cells, data preprocessing and QC of the data was done on all samples for all timepoints, which included spectral unmixing with autofluorescence subtraction, spill-over correction, and applying scales transformation. An arcsinh transformation was applied to the dataset with each channel having a tailored cofactor based on the instrument used to acquire the data as well as to stabilize variance near zero. Manual gating for clean-up of the data was done by an expert to exclude debris, doublets, and dead cells. As helper T cells were of interest for this RV study, the data analyzed was manually gated for CD3+ CD4+ T cells.\n\n### T-REX algorithm\n\nA modular data analysis workflow including UMAP, KNN, and MEM was developed in R, and scripts for analysis of data in this article are available online (https://github.com/cytolab/T-REX; Barone and Irish, 2021a; copy archived at swh:1:rev:5e7ae8d512b36bef58b9e0df2b36a6775e82f734). The dimensionality tool used included UMAP. The default parameter settings for UMAP as found in the uwot package in R were used. Since UMAP analyses were specific to a given individual and pair of samples, UMAP axes were labeled to indicate the individual and comparison being made, as in \u2018UMAP_RV001_07,\u2019 which indicated a comparison of day 0 and day 7 for individual RV001. The KNN search from the fast nearest neighbors (FNN) package was used to find the nearest neighbors for a given cell. For this project, a KNN search was done for every cell using the low-dimensional projection of the data as an input for the neighborhood search. The value for k, or the number of nearest neighbors, was determined by an optimization of tetramer enrichment within a neighborhood. Percent change per cell is then calculated based on the abundance of cells from the two samples in the KNN region. For regions expanding or contracting significantly (\u22645% and \u226595% change), DBSCAN is used to cluster the cells and then MEM is used to quantitatively describe the phenotype.\n\n### MEM analysis of enriched features\n\nMarker Enrichment Modeling from the MEM package (https://github.com/cytolab/mem; Barone et al., 2021b; copy archived at swh:1:rev:fc72a290c706c1268678b6300007eb59183af2f9) was used to characterize feature enrichment in KNN region around each cell. MEM normally requires a comparison of a population against a reference control, such as a common reference sample (Diggins et al., 2017), all other cells (Diggins et al., 2018; Leelatian et al., 2020), or induced pluripotent stem cells. Here, a statistical reference point intended as a statistical null hypothesis was used as the MEM reference. For this statistical null MEM reference, the magnitude was zero and the IQR was the median IQR of all features chosen for the MEM analysis. Values were mapped from 0 enrichment to a maximum of +10 relative enrichment. The contribution of IQR was zeroed out for populations with a magnitude of 0.\n\n### A putative FACS gating strategy based on T-REX results\n\nIn order to assess the applicability of the T-REX algorithm in the development of follow-up FACS experiments, a sorting strategy was devised based on the results of T-REX and then tested computationally using Datasets 1 and 2 (Figure 2\u2014figure supplement 3, Figure 6\u2014figure supplement 2). To accomplish this, aggregate MEM scores of T-REX hotspots of \u226595% expansion were generated for each dataset. Cells were sequentially gated in the order of decreasing MEM feature enrichment, ending with a maximum set of 12 markers, reflecting common capabilities for cell sorting. In Dataset 1, the enrichment of tetramer+ cells was assessed in the populations resulting from putative sort gates, as compared with the total CD4+ T cell population. In Dataset 2, the enrichment of CD4+ T cells was assessed within the total cell population after similar gating using putative sort gates designed algorithmically based on the results of T-REX and MEM.\n\n### Data availability and transparent analysis scripts\n\nDatasets analyzed in this article are available online, including at FlowRepository (Spidlen et al., 2012). COVID-19 Dataset 2 (Rodriguez et al., 2020) (https://ki.app.box.com/s/sby0jesyu23a65cbgv51vpbzqjdmipr1), melanoma Dataset 3 (Greenplate et al., 2016b) (https://flowrepository.org/id/FR-FCM-ZYDG), and AML Dataset 4 (Ferrell et al., 2016) (https://flowrepository.org/id/FR-FCM-ZZMC) were described and shared online in the associated manuscripts. Rhinovirus Dataset 1 is a newly generated dataset created at the University of Virginia available on FlowRepository (https://flowrepository.org/id/FR-FCM-Z2VX). Transparent analysis scripts for all four datasets and all presented results are publicly available on the CytoLab GitHub page for T-REX (https://github.com/cytolab/T-REX) and include open-source code and commented Rmarkdown analysis walkthroughs.\n\n## Discussion\n\nA signature feature of the immune system is the ability of rare cells to respond to a stimulus by activating and proliferating, leading to rapid expansion of highly specialized cells that may share both a distinct phenotype and a clonal origin. Here, we report the design of a new algorithm that can identify and reliably phenotype biologically relevant cell types, including very rare cells, which respond in human disease. The T-REX algorithm was designed to capture phenotypic regions where significant change was occurring between a pair of samples from one individual. The fact that T-REX was able to identify the phenotype of cells whose regions were greatly enriched for virus-specific T cells in rhinovirus Dataset 1 highlighted its ability to pinpoint rare cells responding to infection and closely matches what would be expected based on a current understanding of rhinovirus immunology (Muehling et al., 2020; Muehling et al., 2018). Specifically, after rhinovirus challenge, expanded regions displayed molecular signatures consistent with activated memory (CD45RO + CD38+) and tissue trafficking (e.g., CCR5 enrichment in the MEM labels) that aligned with our previous findings for rhinovirus-specific CD4+ T cells using manual gating methods and a limited marker panel (Muehling et al., 2020; Wisniewski et al., 2018). The algorithm also reliably identified memory phenotypes of cells responding to rhinovirus infection, thereby revealing its potential to track the evolution of memory responses in vivo, in addition to defining candidate signatures that might be probed in functional assays. Although comparative phenotyping across time was beyond the scope of this study, it will be of high interest in the future to determine whether the vector of change in specific subsets correlates with additional aspects of disease or complicating host factors, such as allergy and asthma.\n\nThe T-REX algorithm also revealed potential new research directions, as there were cells that one might predict would be virus-specific, based on the T-REX enrichment analysis, but which were not enriched for the specific tetramers available here (e.g., Figure 3, RV007). Genetic analysis for the clonal origin of cells in such regions might help to determine whether these cells correspond to a clonal response for which a tetramer was not available, or else another type of CD4+ T cell response that may or may not be related to rhinovirus infection, such as a \u2018bystander\u2019 response. Additionally, it will be important to test whether this type of finding holds true for other well-studied viruses for which tetramers are available, such as influenza (Turner et al., 2020), and whether these findings extend to MHC class I tetramers and CD8 T cells. It was also striking that in the comparisons of day 7 to either day 0 (Figures 2 and 3) or day 28 (Figure 5), only the expanding cells (red) were in regions that were also tetramer hotspots. However, despite the focus on expansion in the T-REX acronym, contracting cells will likely also be of biological significance in different disease settings (as with AML) or potentially at different timepoints during the course of an infection, for example, as a result of egress from the circulation in the acute phase, or else transitions in memory and tissue-homing subsets that occur later. This aspect would also be expected to translate to different disease settings such as AML.\n\nExtending the use of T-REX algorithm beyond rhinovirus further highlighted its ability to identify responding cells in a consistent manner across different subjects and different disease settings. Indeed, it is notable that regardless of the disease context the patient served as an effective baseline for comparison and allowed T-REX to find phenotypically similar cells in individuals with different starting immune profiles. A central question in systems immune monitoring is to place newly emerging diseases into the context of other well-studied diseases and immune responses. In working to compare COVID-19 and rhinovirus, it became clear that a summary of change indicating both the direction and magnitude of shifts was needed (Figure 6). This framework represents a way to summarize both broad populations of immune cells, like all CD45+ leukocytes, and key cell subpopulations, like CD4+ T cells. The striking changes observed in patients with moderate and severe COVID-19 were far beyond the subtle changes observed in individuals with rhinovirus and more closely matched the immune reprogramming observed in melanoma patients receiving checkpoint inhibitor therapy (Figure 6). A primary finding of T-REX analysis of Dataset 2 from the blood of COVID-19 patients was that some patients experienced very large changes in the blood, and that these changes were typically associated with more decreases than increases (Figure 6). This finding closely matches reported findings from others who observed a systematic reprogramming in many immune cell populations in severe COVID-19 patients (Mathew et al., 2020). Also observed were T cell subsets with enrichment of CD38, PD-1, and CD95, as has also been reported. While disease severity is not available for individual patients from Dataset 2, it is known that all these cases were at least moderate or severe (Rodriguez et al., 2020). It will be of interest to test the hypothesis that the more severe cases will be one of the two groups, either the patients with very little change and just expansion of cells, or those with more marked change and a general decrease of cells (Figure 6).\n\nNotably, CD147/Basigin was highly expressed on many cells that changed during infection and was observed to change greatly on some populations over time. CD147 has been proposed in pre-prints as both a binding partner for SARS-CoV-2 spike protein and a potential mechanism of cellular entry, although evidence is needed to support this controversial hypothesis (Shilts and Wright, 2020). In the study of Dataset 2, the authors noted that immune responses were dominated by cells expressing CD38 and CD147 (Rodriguez et al., 2020). In the T-REX analysis of the same Dataset 2, for the cells that were changing greatly, CD147 was sometimes present on cells from day 0 that decreased greatly and was lower or absent on cells that emerged only at later times (Figure 6). An example of this was seen in cells from patient COV40, for which the authors noted CD147 expression on effector subsets at 1 week and onwards. The cells pinpointed by T-REX as emerging at day 6 included B cells that expressed CD147 (e.g., CX3CR1+8 CD9+8 CD29+8 CD147+5 IgD+3 CD99+3 CD33+1 CD11c+1 HLA-DR+1 CD24+1, Supplementary file 3), but the level of enrichment was lower than on myeloid cells from day 0 that decreased over time (e.g., CD147+8 CD29+6 CD55+5 CD38+5 CD99+4 CD64+3 CD62L+2 CD45+1 CD33+1 CD14+1, Supplementary file 3). This pattern of decreased enrichment of CD147 on cells emerging after day 0 was seen on other patients (Supplementary file 3) and is consistent with multiple explanations. Overall, there was a strong downward trend in many of the markers and cell subsets in COVID-19 patients, suggesting either selection against cells expressing a high level of proteins, downregulation of expression of key surface markers like CD147, expansion of immature or abnormal cells, or extreme trafficking of cells into tissues. These potential outcomes cannot be distinguished from each other with the analysis here. The utility of the T-REX algorithm is primarily in generating these hypotheses automatically and in pinpointing cells with extreme behavior within the context of the patient as their own baseline. Given the large amounts of change (Figure 6) and the generally lower numbers of T cell subsets observed in COVID-19 than in healthy individuals (Supplementary file 3), it may be the case that therapeutic stabilization of the immune system will be needed before virus-specific T cells will be identifiable with the T-REX method. It will be especially interesting to explore more mild cases of COVID-19 with this approach and determine whether the hotspots of change are truly virus-specific, analogous to the scenario with rhinovirus.\n\nFor the melanoma and AML cases presented here, the cohort sizes were not large enough to allow robust statistical comparison of patient response to degree or direction of change, although this information is available in the original studies (Ferrell et al., 2016). Of the AML patients, those with a high magnitude of change (Figure 6) were also those that had a high blast count and were complete responders to induction therapy, suggesting that the change represents the overall \u2018reset\u2019 of the immune system following chemotherapy. It will be of high interest to ask whether the identification of virus-specific T cells extends to populations of cells on checkpoint inhibitor therapy. The dynamics of regulatory cells may also be of interest, especially for autoimmunity, and it is possible, but not known, whether these cells will follow the same pattern as the CD4+ T cells in rhinovirus infection.\n\nA major strength of the algorithm is that once cell regions of change are identified, the key features highlighted by T-REX and MEM can be used in lower parameter flow cytometry or imaging panels to provide further information, confirm findings, and physically isolate cells by FACS (Figure 2\u2014figure supplement 3). Thus, low parameter cytometry approaches may rely more on manual analysis methods and cell signatures that are determined a priori, and T-REX may provide a useful tool for narrowing in on such features using exploratory high-dimensional data. The computational approach here emphasizes unsupervised UMAP and KNN clustering and uses statistical cutoffs to guide the analysis. Further optimization of the algorithm could include a stability testing analysis where the stochastic components of the algorithm are repeated to determine whether clusters or phenotypes are stable (Leelatian et al., 2020; Melchiotti et al., 2017). Overall, the unsupervised approach aims to diminish investigator bias and reveal novel or unexpected cell types. While unsupervised analysis tools have impacted high-dimensional cytometry for at least a decade (Davis et al., 2013; Becher et al., 2014; Bendall et al., 2011; Diggins et al., 2015; Saeys et al., 2016), T-REX is designed to capture both very rare and very common cell types and place them into a common context of immune change. The extremely rare T cells identified here were overlooked by other tools, likely due to these tools typically seeking clusters of cells representing at least 1% and generally more than 5% of the sample. This observation was expected and is consistent with past tests of algorithms on detection of rare subsets, which found that over half the algorithms tested returned poor F1 accuracy scores for detecting known populations that were 0.8% or 0.03% of the cells in a sample (Weber and Robinson, 2016). Notably, FlowSOM was a better performing algorithm in those examples. Here, FlowSOM did not effectively detect the rare 0.02% of virus specific cells in analyses of original features or dimensionality reduction results (Figure 7). An aspect of data structure in this study is the phenotypic similarity within the CD4+ T cell population, which means that the 0.02% of target cells is connected to a larger population and thus less apparent in the raw data. Thus, it is the threshold of change in T-REX removing the vast majority of cells (i.e., the cells that did not expand or contract \u226595%) that makes the virus-specific cells appear as separate clusters and greatly simplifies the task of distinguishing cluster groups.\n\nT-REX was designed for use on a pair of data files, such as the pairs of timepoints tested here, but it can also be used for other paired comparisons. In the rhinovirus examples here, T-REX revealed virus-specific cells based on change over time only. However, the dataset timepoints in the rhinovirus study were selected carefully using prior knowledge to best reveal antigen-specific T cells (i.e., it was known that 7 days would be a good timepoint). In other disease settings, one may not know ideal timepoints and so it is not necessarily the case that T-REX will always reveal antigen-specific cells. It may also be the case that the level of change is so great that it obscures mechanistically significant rare cell subsets. This is an interpretation of the COVID-19 infection examples presented here, wherein a high degree of overall change was apparent in the immune system and many cells are changing that are not antigen-specific T cell subsets. This could potentially be due to timepoint selection or the natural history of the disease. However, we would hypothesize that COVID-19 vaccine responses might be more specific and localized to key cell subsets and, if this is the case, that T-REX would pinpoint key cell populations responding to the vaccine. For studies involving multiple timepoint tests, when it is possible to run a large common UMAP on a pool of the samples (i.e., there are not batch effects), T-REX can be used to do systematic paired comparisons of every individual against the pool. Data from different panels should not be used as the paired samples must have all channels in common. T-REX is also very sensitive to batch effects, and issues like these need to be addressed before analysis, or samples need to be analyzed in a batch-specific manner. We expect that one advantage of using MEM labels to summarize the phenotype of T-REX populations is that MEM labels have been shown to allow quantitative comparison across batches, instruments, and data types (Diggins et al., 2017). T-REX performance may depend on the number of cells and the algorithm was designed for studies with hundreds of thousands to millions of cells. Analyses with fewer than 1000 cells are unlikely to be productive, and analyses with fewer cells may require testing and adjusting k more than analyses with >100,000 cells. In testing subsamples, tetramer+ hotspots were still detected with 100,000 cells per sample (Figure 7\u2014figure supplement 1). While equal subsampling is part of the algorithm of T-REX, subsampling tested here did not significantly impact the results. So while sampling and rarity of cells may impact the ability of T-REX to find subsets, the method was stable with far fewer cells (10%) than were originally planned as needed in the original study (Figure 7\u2014figure supplement 1). The parameters that are chosen by the user are the k-value, the markers used to create the UMAP, the markers used for MEM, and the DBSCAN settings. Additional optimization of the k-value and cutoffs based on a formal statistical test is something that should be explored in further study of T-REX and related algorithms.\n\nIt is a central goal of systems immunology to map people with vastly contrasting immune system changes onto a common plot of change (as in Figure 6). The approach here goes beyond prior single measures of systematic change, such as Earth Mover\u2019s Distance (Greenplate et al., 2019; Orlova et al., 2016), by including both direction and magnitude of change in one view of an individual\u2019s immune response. This improvement proved useful for comparing settings with great change in many cell types (COVID-19 infection, AML chemotherapy responders) to settings with rare cells that specifically expanded or contracted (rhinovirus infection, melanoma checkpoint inhibitor therapy). This sensitivity of T-REX for extremely rare cells allowed the algorithm to reveal virus-specific CD4+ T cells without prior knowledge of their phenotype. T-REX should now be tested further to determine whether cells identified in SARS-CoV-2 also share a clonal origin. In addition, it is likely that T-REX will be useful beyond immunology settings in paired comparisons of quantitative single cell data, such as discovery screening or paired analysis of tumor cells.\n",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "442d846e-4690-49a8-af13-9bc06cd93082",
+      "submission_id": "240eb4b0-845c-4513-b022-9313fe2144d9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gr\u00e9goire Altan-Bonnet, Memorial Sloan-Kettering Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64653.sa1](https://doi.org/10.7554/eLife.64653.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThe T-REX method characterizes rare populations by cytometry. The potential applications in the context of analyzing antigen-specific T cells (as identified as tetramer-positive cells) are important with an interesting use of 2 timepoints-cohort of samples from rhinovirus-infected patients.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Unsupervised machine learning reveals key immune cell subsets in COVID-19, rhinovirus infection, and cancer therapy\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Stephen De Rosa (Reviewer #2); Ahmed Mahfouz (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nReviewer #1 (Recommendations for the authors):\n\nThe machine learning workflow Tracking Responders EXpanding (T-REX) was created to identify changes in both very rare and common cells in diverse human immune monitoring settings. T-REX analysis of paired blood samples provides an approach to rapidly identify and characterize mechanistically significant cells and to place emerging diseases into a systems immunology context. Data types used to challenge the T-REX algorithm here included a new spectral flow cytometry study (Dataset 1) and three existing mass cytometry datasets (Dataset 2, Dataset 3, and Dataset 4). However, some of the more critical questions are as follows:\n\n1. T-REX algorithm was a modular data analysis workflow including UMAP, KNN, and MEM. This is not a new algorithm but a combination.\n\n2. Why choose this workflow, UMAP, KNN, and MEM are traditional classical algorithm, and not compare it with another algorithm? Refer to \"A comparison framework and guideline of clustering methods for mass cytometry data\".\n\n3. What is the basis for setting the parameters, and what data can be used?\n\n4. The references are not normative, for example, reference 2.\n\n5. The figures are not clearly marked.\n\nReviewer #2 (Recommendations for the authors):\n\nFor the rhinovirus study, much of the data are shown through visualization on UMAP plots and the change in tet+ cells is graphed. Perhaps it would also be informative to graph the data as percent of CD4+ cells across all the participants for both day 0 and day 7 to summarize the results in a single graph and to note the actual frequency of these cells.\n\nPerhaps the T-REX method could be tested with data sets from functional assays (such as flow cytometric intracellular cytokine staining) that are more commonly used to detect and characterize antigen-specific T cells. For such data, could the method perhaps compare the stimulation condition to the unstimulated condition rather than samples from different time points?\n\nReviewer #3 (Recommendations for the authors):\n\n- Please include additional details on how the enrichment of tertramer positive cells in \"hotspot\" regions is determined.\n\n- A formal mathematical definition of the two measures: Degree of change and Direction of change will be greatly helpful.\n\n- A table summarizing the details of each dataset (number of cells, markers, individuals, cells per individual\u2026) will be greatly helpful for the readers.\n\n- The two shades of purple in Figure 3A are indistinguishable.\n",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "44d3e396-8e76-4b35-be7e-862b746975d6",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C1",
+      "claim": "T-REX identified rhinovirus-specific CD4+ T cells based on phenotypically homogeneous cells expanding by \u226595% following infection.",
+      "claim_type": "EXPLICIT",
+      "source": "T-REX identified rhinovirus-specific CD4+ T cells based on phenotypically homogeneous cells expanding by \u226595% following infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing T-REX identified cells with \u226595% expansion that were enriched for tetramer+ virus-specific cells in rhinovirus infection studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "01e91eaa-a819-41b6-8a7d-5367eecff49a",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C2",
+      "claim": "T-REX successfully identified hotspots of virus-specific T cells by comparing infection (day 7) to either pre-infection (day 0) or post-infection (day 28) samples.",
+      "claim_type": "EXPLICIT",
+      "source": "T-REX successfully identified hotspots of virus-specific T cells by comparing infection (day 7) to either pre-infection (day 0) or post-infection (day 28) samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data from multiple timepoint comparisons showing T-REX identified tetramer+ hotspots in both day 0 vs day 7 and day 7 vs day 28 comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "a36d67a9-8be5-491f-9aa4-b75e030db27e",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C3",
+      "claim": "The magnitude and direction of change in some COVID-19 patients was comparable to blast crisis acute myeloid leukemia patients undergoing a complete response to chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the magnitude and direction of change in some COVID-19 patients was comparable to blast crisis acute myeloid leukemia patients undergoing a complete response to chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents comparative analysis of degree and direction of change across disease types, showing some COVID-19 patients had similar patterns to AML responders.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "77d61261-dcdd-4f1e-b706-042aa4c9f772",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C4",
+      "claim": "Other COVID-19 patients displayed an immune trajectory like that seen in rhinovirus infection or checkpoint inhibitor therapy for melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Other COVID-19 patients instead displayed an immune trajectory like that seen in rhinovirus infection or checkpoint inhibitor therapy for melanoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents comparative analysis showing some COVID-19 patients had low magnitude of change similar to rhinovirus or melanoma checkpoint inhibitor therapy patients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "c4accfd1-2d9b-4efa-9642-409d02e5de57",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C5",
+      "claim": "Single cell analysis tools can struggle to reveal rare cells that are under 0.1% of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, single cell analysis tools can struggle to reveal rare cells that are under 0.1% of the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of existing tools and is supported by citations to prior work in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "1b9c8c7d-3497-4d30-8097-cd2758d68d69",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C6",
+      "claim": "Viral immune and cancer immunotherapy responses can include mechanistically important and extremely rare T cells that proliferate rapidly over the course of days but as an aggregate exist as <0.1% of blood CD3+ T cells at their peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral immune and cancer immunotherapy responses can include mechanistically important and extremely rare T cells that proliferate rapidly over the course of days but as an aggregate exist as <0.1% of blood CD3+ T cells at their peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the rhinovirus data presented in the manuscript showing tetramer+ cells at very low frequencies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "5199a58e-a931-4d37-a8b2-784a73379e2d",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C7",
+      "claim": "Cytometry tools like SPADE, FlowSOM, Phenograph, Citrus, and RAPID generally work best to characterize cell subsets representing >1% of the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytometry tools like SPADE (Bendall et al., 2011; Qiu et al., 2011), FlowSOM (Van Gassen et al., 2015), Phenograph (Levine et al., 2015), Citrus (Bruggner et al., 2014), and RAPID (Leelatian et al., 2020) generally work best to characterize cell subsets representing >1% of the sample and are less capable of capturing extremely rare cells or subsets distinguished by only a fraction of measured features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on known characteristics of these algorithms and supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "75baf321-ed47-4160-aafb-ca716feaeaf7",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C8",
+      "claim": "Adults tend to have a stable signature of blood cell abundances over weeks to months in the absence of a perturbation such as disease or infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This T-REX design is based on the observation that, in the absence of a perturbation such as disease or infection, adults tend to have a stable signature of blood cell abundances over weeks to months (Greenplate et al., 2019; Lakshmikanth et al., 2020; Mathew et al., 2020), and the hypothesis that short-term, dramatic changes in rare immune cell subsets will identify cells associated with exposure to an immunogenic agent, such as a virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "b5d620d1-9822-4480-9e50-dfc610edbc68",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C9",
+      "claim": "Spectral flow cytometry generates data that compares well to mass cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectral flow cytometry is gaining attention in human immune monitoring as it generates data that compares well to mass cytometry (Ferrer-Font et al., 2020; Mistry et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to comparative studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "d1668274-5711-4076-a9c1-633f5069c897",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C10",
+      "claim": "Spectral flow cytometers collect cells at around 10-fold the number of cells per second as mass cytometers.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectral flow cytometers collect cells at around 10-fold the number of cells per second as mass cytometers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known technical characteristic of the instruments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "d13098a5-5d8c-4b3c-9900-a229eed0448e",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C11",
+      "claim": "Mass cytometry commercial reagents presently allow 44 antibodies to be measured simultaneously per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass cytometry is an established technique for human immune monitoring where commercial reagents presently allow 44 antibodies to be measured simultaneously per cell (Greenplate et al., 2016a; Mistry et al., 2019; Spitzer and Nolan, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current technical capability and supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "0c0d9075-d02d-489a-ae02-18715b85bb6a",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C12",
+      "claim": "Established spectral flow cytometry panels measure ~30 features per cell with excellent resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "While the availability of spectrally distinct antibody-fluorochrome conjugates imposes some practical limits on spectral flow cytometry at present, established panels like the one in Dataset 1 measure ~30 features per cell with excellent resolution, and that capacity is expected to roughly double in the next few years as recent work has demonstrated 40 features (Park et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the panel used in Dataset 1 and supported by citation to recent work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "dd109def-fde6-400a-b202-02a15688d620",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C13",
+      "claim": "Severe COVID-19 has been linked to a pathogenic 'cytokine storm' in which cellular immune responses likely play a crucial role.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe COVID-19 has been linked to a pathogenic 'cytokine storm' in which cellular immune responses likely play a crucial role (Ragab et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work on COVID-19 pathogenesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "97b27ce8-8dfd-4e3c-8890-f7a376834a71",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C14",
+      "claim": "Host factors are a key determinant of the degree of the T cell response in both rhinovirus and COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, in the case of both rhinovirus and COVID-19, it is clear that host factors are a key determinant of the degree of the T cell response (Mathew et al., 2020; Muehling et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to studies on both viruses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "1c6452b6-f890-405b-a60d-95e852916a46",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C15",
+      "claim": "Infection with rhinovirus is known to induce expansion of circulating virus-specific CD4+ T cells in the blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection with rhinovirus is known to induce expansion of circulating virus-specific CD4+ T cells in the blood, and a key feature of the new rhinovirus dataset here is that rare and mechanistically important virus-specific CD4+ T cells were marked with MHC II tetramers in the context of multiple other T cell markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about rhinovirus infection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "0f431e71-a7fc-4091-8ba5-0172ee6f9277",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C16",
+      "claim": "A k-value of 60 was chosen for KNN analysis in T-REX based on optimization studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The k-value for KNN was set to 60 as a starting point based on prior studies and later optimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes optimization of k-value and selection of 60 based on analysis of tetramer enrichment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "36082d6f-c6a0-4c0b-97e6-6f2bb80fd370",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C17",
+      "claim": "T-REX identified cells in regions of \u226595% change that were enriched for virus-specific cells in nearly all rhinovirus-infected individuals (4/6 at 95% cutoff, 5/6 at 85% cutoff).",
+      "claim_type": "EXPLICIT",
+      "source": "Cells in regions of significant expansion (\u226595%) were also from regions that were enriched for virus-specific cells in nearly all rhinovirus-infected individuals (4/6 at 95% cutoff, 5/6 at 85% cutoff) (Figure 2, Figure 2\u2014figure supplement 2, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "11622bcb-7a54-40ba-ab76-38ca977aa74f",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C18",
+      "claim": "The phenotype of rhinovirus-specific T cell regions identified by T-REX included activated memory cells (CD45RO+ CD38+) with early memory/stem-like T cell signature (TCF1+ CD27+) and expression of CCR5 and CXCR3.",
+      "claim_type": "EXPLICIT",
+      "source": "The change hotspots thus contained activated memory cells (CD45RO + CD38+) that were notable for their early memory/stem-like T cell signature (TCF1+ CD27+), as well as their expression of CCR5 and CXCR3, both of which are chemokine receptors found on rhinovirus-specific CD4+ T cells that respond during infection (Muehling et al., 2020; Muehling et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This phenotype is derived from MEM analysis of T-REX identified cells and is consistent with prior studies cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "26ec2687-7037-4f78-a89e-3eb4fb46b356",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C19",
+      "claim": "In analysis of RV001, T-REX captured 66.6% (2/3) of tetramer+ regions using a \u226595% change cutoff.",
+      "claim_type": "EXPLICIT",
+      "source": "In analysis of RV001, 66.6% (2/3) of tetramer+ regions were captured, meaning there was one region with lower change that contained tetramer+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "e0d77adc-8f15-4c50-a1a0-b251ed53bd90",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C20",
+      "claim": "T-REX captured the majority of virus-specific cells in the RV001 dataset, with 1722 cells in regions with \u226595% expansion compared to 87 cells in missed regions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there were only 87 cells in these missed regions compared to 896 cells and 826 cells in the regions with \u226595% expansion, confirming that T-REX captured the majority of virus-specific cells in the dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a quantitative result of the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "9efc50c0-ac6c-4416-a1a3-f8e513ded468",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C21",
+      "claim": "A virtual FACS sorting strategy based on T-REX and MEM results successfully enriched for rhinovirus tetramer+ cells in all infected subjects (0.89\u20129.25% of CD4+ T cells).",
+      "claim_type": "EXPLICIT",
+      "source": "The 'virtual sort' successfully enriched for rhinovirus tetramer+ cells in all infected subjects (0.89\u20129.25% of CD4+ T cells; Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by data in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "e5992b9c-f31a-41c5-bac7-2cc1a9beb29f",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C22",
+      "claim": "Precursor frequencies of rhinovirus-specific CD4+ T cells are very low, even during active infection (0.0004\u20120.04% of CD4+ T cells).",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that precursor frequencies of rhinovirus-specific CD4+ T cells are very low, even during active infection (0.0004\u20120.04% of CD4+ T cells, Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as known information and supported by data in the referenced figure.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "63c3938c-ced0-4673-b0ae-a7f4d98c703e",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C23",
+      "claim": "A minimal panel of 10 markers (Live, Dump\u2013, CD3+, CD4+, CD45R0+, CD38+, ICOS+, CCR5+, PD-1+, CD95+) was sufficient to achieve maximal tetramer enrichment in the virtual sort.",
+      "claim_type": "EXPLICIT",
+      "source": "A minimal panel of 10 markers (Live, Dump\u2013, CD3+, CD4+, CD45R0+, CD38+, ICOS+, CCR5+, PD-1+, CD95+) was sufficient to achieve maximal tetramer enrichment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of the virtual sorting analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "a028c1c3-2e9d-4d5d-a8f2-c957a10bbcc5",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C24",
+      "claim": "The T-REX-derived sorting strategy failed to enrich for rhinovirus-specific T cells in uninfected subjects and did not enrich for CD4+ T cells stained with a control influenza tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the T-REX-derived sorting strategy failed to enrich for rhinovirus-specific T cells in uninfected subject, nor did it enrich for CD4+ T cells stained with a control influenza tetramer, confirming the specificity of this method (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by control data in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "fb558d1e-fb5b-4ba1-8ce9-b5a56290e9a4",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C25",
+      "claim": "Rhinovirus subjects had small changes in samples over time with a median degree of change of 0.019% and an interquartile range of 0.0006%.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhinovirus subjects had small changes in samples over time with a median of 0.019% and an interquartile range (IQR) of 0.0006%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a quantitative result of T-REX analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "fa1eef31-206a-4e3b-adb3-a3fecf61f9f0",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C26",
+      "claim": "Rhinovirus subjects had large directionality across all subjects with a median of 0.029 and an IQR of 2.00.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhinovirus also had large directionality across all subjects either up or down, with a median of 0.029 and an IQR of 2.00.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a quantitative result of T-REX analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "54a45674-eee6-4c53-a4a3-6260afad90de",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C27",
+      "claim": "COVID-19 samples varied from <1% to 68% in terms of degree of change, with a median of 6.86% and an IQR of 30.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "The COVID-19 samples varied from <1% to 68% in terms of degree of change, with a median of 6.86% and an IQR of 30.4%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a quantitative result of T-REX analysis of Dataset 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "571f1823-7d1f-4486-ba46-2d38779285b2",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C28",
+      "claim": "The directionality of change in COVID-19 samples was near zero, with a median of \u20130.00880 and IQR of 0.773.",
+      "claim_type": "EXPLICIT",
+      "source": "The directionality of change was near zero, with a median of \u20130.00880 and IQR of 0.773.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a quantitative result of T-REX analysis of Dataset 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "ceded21f-a210-4a60-80a7-a18fa3b08b71",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C29",
+      "claim": "COVID-19 patients with changes <5% generally had positive directionality (median of 0.55), whereas those with change >5% typically had negative directionality (median of \u20130.33).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the changes <5% were generally positive (median directionality of 0.55, N = 6), whereas the COVID-19 patient cell populations experiencing change >5% typically decreased between day 0 to day 7 (median directionality of \u20130.33, N = 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a quantitative result of T-REX analysis of Dataset 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "e6bd8dab-80b0-4468-b25c-1c4ed2af5e52",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C30",
+      "claim": "In COVID-19 patient COV26, the largest population experiencing significant change had a phenotype indicating it was a CD14+ myeloid cell subset with high expression of CD147/Basigin.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, patient COV26 saw little change (magnitude of 2.02%) and this was almost entirely expansion (directionality of 0.99). The largest population experiencing significant change from COV26 decreased over time and had a MEM phenotype of CD147+10 CD99+8 CD29+6 CD38+4 CD55+3 CD14+2 CD39+2 CD64+1 CD56+1 CD8a+1, indicating that it was a CD14+ myeloid cell subset with high expression of CD147/Basigin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of T-REX and MEM analysis of a specific patient.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "8a251c22-520b-4918-b56b-6a4886a73e97",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C31",
+      "claim": "Of 10 COVID-19 patients analyzed for CD4+ T cells, 5 individuals had at least one hotspot of great change revealed by T-REX.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 10 COVID-19 patients available for analysis, 5 individuals had at least one hotspot of great change, as revealed by T-REX, in CD4+ T cell-specific analysis (Figure 6\u2014figure supplement 1, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a result of T-REX analysis and supported by referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "047c423c-3509-47f2-8b02-a69265e8f615",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C32",
+      "claim": "Four of five COVID-19 patients with CD4+ T cell hotspots had cells matching a consistent phenotype enriched for CD147, CD99, CD29, CD45, CD3, CD38, CD49d, CD52, CD27, CD28, and CD81.",
+      "claim_type": "EXPLICIT",
+      "source": "Another phenotype of CD4+ T cells was consistently observed in those COVID-19 patients where T-REX revealed a hotspot. Of the five patients where T-REX identified a CD4+ T cell hotspot, four of the patients had a hotspot matching the aggregate phenotype (MEM label average and standard deviation: \u25b2CD147+9\u00b10.8 CD99+9\u00b11.3 CD29+8\u00b11.3 CD45+4\u00b12 CD3+4\u00b10.7 CD38+4\u00b11.8 CD49d+3\u00b11.6 CD52+3\u00b11 CD27+3\u00b12.1 CD28+3\u00b10.8 CD81+2\u00b11.3 CD62L+2\u00b11.2 CD56+2\u00b10.7 CD5+2\u00b10.6, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a result of MEM analysis of T-REX identified cells across multiple patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "fbe0b261-427e-4cdd-9171-d2dcad98a974",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C33",
+      "claim": "Manual biaxial gating using MEM-identified markers enriched CD4+ T cells from 5.5\u201314.0% to 49.6\u201383.3% of total cells in COVID-19 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "While CD4+ T cells only represented 5.5\u201314.0% of total cells, following MEM-based gating they were enriched to 49.6\u201383.3% of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of the virtual gating analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "2503caa6-2a1d-499e-b9b9-aa4989c20d91",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C34",
+      "claim": "Melanoma samples in Dataset 3 for comparisons of day 21/35 vs. day 0 had a small degree of change (median of 0.58% and an IQR 2.34%) with varying directionality (median of \u20130.42 and an IQR of 1.46).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, when analyzed by T-REX, the melanoma samples in Dataset 3 for comparisons of day 21/35 vs. day 0 had a small degree of change (median of 0.58% and an IQR 2.34%) with a varying directionality (median of \u20130.42 and an IQR of 1.46), confirming the subtle shifts in phenotypes as previously indicated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a quantitative result of T-REX analysis of Dataset 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "e03cb421-f5a7-4a4a-9037-0f4969950345",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C35",
+      "claim": "The majority of AML patients had a large degree of change in samples (median of 81.0% and an IQR of 75.2%) with little to no directionality (median of \u20130.00250 and an IQR of 0.0173).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the majority of AML patients had a large degree of change in samples (median of 81.0% and an IQR of 75.2%) with little to no directionality to the change (median of \u20130.00250 and an IQR of 0.0173), meaning that there were massive changes in terms of both expansion and contraction over the course of treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a quantitative result of T-REX analysis of Dataset 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "9da55153-33d1-41fd-b425-41d09a39f283",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C36",
+      "claim": "AML samples with a degree of change >80% came from patients with high blast count in the blood and complete response to treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "AML samples with a degree of change >80% (AML001, AML002, AML004) came from patients with high blast count in the blood and complete response to treatment, indicating the complete transformation of the immune environment after treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result correlating T-REX metrics with clinical outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "fff37c70-d0f1-4cbf-8f32-e6b4e7895a43",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C37",
+      "claim": "T-REX using UMAP ran in 0.35 hr on the 1.3 million cell dataset from RV001 and identified a cluster that was 22% tetramer+.",
+      "claim_type": "EXPLICIT",
+      "source": "This standard version of T-REX ran in 0.35 hr on the 1.3 million cell dataset from RV001 (Figure 7, left column) and identified a cluster that was 22% tetramer+.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a performance benchmark and supported by data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "8da8291a-1447-49ec-927d-9813d8e426aa",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C38",
+      "claim": "T-REX with t-SNE instead of UMAP resulted in a much longer runtime of 23 hr and comparable capture of areas of change, containing 22% tetramer+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "An altered version of T-REX, in which t-SNE replaced UMAP as the method of dimensionality reduction, resulted in a much longer runtime of 23 hr and comparable capture of areas of change, containing 22% tetramer+ cells (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a performance comparison and supported by data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "a9cd1808-e6b7-4784-80cf-a4f8af5340c9",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C39",
+      "claim": "T-REX without dimensionality reduction (KNN on original features) was both slower (1.7 hr) and less accurate, identifying too many putative regions of change that were not tetramer+ hotspots.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested T-REX without dimensionality reduction, running KNN directly on the 14 original surface protein features previously utilized when performing either UMAP or t-SNE dimensionality reduction. This KNN on the original feature space was both slower (1.7 hr) and less accurate, in that it identified too many putative regions of change, most of which were not tetramer+ hotspots (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a performance comparison and supported by data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "309099cc-c45d-4156-ab69-96dbf834bce9",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C40",
+      "claim": "SPADE identified no regions of change \u226595% when tested on RV001 data.",
+      "claim_type": "EXPLICIT",
+      "source": "When SPADE was tested using the 14 original features, no regions of change \u226595% were identified (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a result of algorithm comparison and supported by data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "53c1dd0f-253c-4196-89ed-e1157b11edfc",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C41",
+      "claim": "Phenograph using original features identified 13 clusters, none of which displayed significant change (average of 49% \u00b1 6.4%) and none of which contained >5% tetramer+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the KNN-based Phenograph algorithm was tested using the 14 original features and a k-value of 60 (as in T-REX, Figure 4). This test of Phenograph identified 13 clusters, none of which displayed significant change (average of 49% \u00b1 6.4%) and none of which contained >5% tetramer+ cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a result of algorithm comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "a942a228-54c2-4c2d-988a-5c744146a8cf",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C42",
+      "claim": "FlowSOM did not identify regions of change using either UMAP or original features (average of 50% \u00b1 5%) and did not identify clusters with >5% tetramer+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "FlowSOM did not identify regions of change using either UMAP or original features (average of 50% \u00b1 5%) and did not identify clusters with >5% tetramer+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of algorithm comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "44c4d751-4e54-4e3d-95e3-95f27af0bf86",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C43",
+      "claim": "Citrus required 3 hr and found 156 total clusters, with >30 being significantly associated with either day 0 or day 7 abundance, but only one cluster had >5% tetramer+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we used 10 subsamples of each day to test Citrus on RV001 as Citrus requires two groups and several samples per group. This test of Citrus required 3 hr and found 156 total clusters, with >30 being significantly associated with either day 0 or day 7 abundance. Of these significant clusters, only one had >5% tetramer+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of algorithm comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "a912baa9-1fb1-4166-af84-173d80003b6e",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C44",
+      "claim": "Phenotypes were comparable for all methods that identified at least one hotspot of >85% change, as quantified by RMSD analysis of MEM labels (ranged from 97.1 to 98.7).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, phenotypes were comparable for all methods that identified at least one hotspot of >85% change, as quantified by RMSD analysis of MEM labels (Greenplate et al., 2019) (ranged from 97.1 to 98.7, with 100 being the highest degree of similarity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of quantitative phenotype comparison across methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "0f3771f1-4b63-499d-834b-0710eb799b84",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C45",
+      "claim": "T-REX consistently identified tetramer+ hotspots across 10 subsamples, each containing 10% of the cells from RV001.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as an additional test of T-REX stability, sample RV001 was subsampled into 10 groups, each containing 10% of the cells. T-REX was then run using both the same original (common) UMAP (Figure 7\u2014figure supplement 1) and subsample-specific (unique) UMAPs. In all cases of subsampling, T-REX consistently identified tetramer+ hotspots based on \u226590 % or \u2265 95 % change across the 10 subsamples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a result of stability testing and supported by data in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "e4c0b276-7f12-4ef5-b9e5-c285e0a768ee",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C46",
+      "claim": "Healthy adult volunteers were enrolled in an experimental rhinovirus infection study and judged to be seronegative to the challenge virus strain (RV-A16; serum neutralizing antibody titer \u22641:2).",
+      "claim_type": "EXPLICIT",
+      "source": "Healthy adult volunteers (ages 18\u201340) were enrolled in an experimental rhinovirus infection study. All subjects were judged to be seronegative to the challenge virus strain (RV-A16; serum neutralizing antibody titer \u22641:2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "3a509e78-81d3-4041-9c01-e9fabf2bda42",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C47",
+      "claim": "Subjects were inoculated with 100 TCID50 of RV-A16 on study day 0.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were inoculated with 100 TCID50 of RV-A16 (FDA IND 15162) on study day 0 and were judged to be infected if they seroconverted to the challenge virus by study day 28 (\u22654-fold increase in titer) and/or shed virus in nasal wash specimens during the first five days of infection, according to standard protocols (Muehling et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "baf57b7f-72e6-4e1c-a100-b9b5ee84339c",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C48",
+      "claim": "Two of the eight study subjects challenged with rhinovirus were not infected (RV002 and RV003).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, two of the eight study subjects challenged with rhinovirus were not infected (RV002 and RV003); all other individuals were infected (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of the rhinovirus challenge study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "ac84887f-6d82-42b5-9c0d-eaaebe720d5b",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C49",
+      "claim": "Dataset 2 consisted of mass cytometry data from 12 COVID-19 patients with at least two blood samples over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, T-REX was applied to Dataset 2, a mass cytometry study of longitudinal collection of blood from patients with COVID-19 (Rodriguez et al., 2020). This study originally contained data for 39 total patients, of which 12 patients had accessible mass cytometry data with at least two blood samples over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a description of Dataset 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "df9fafe5-9396-4571-b5ba-f248fe434119",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C50",
+      "claim": "The rhinovirus challenge study was approved by the University of Virginia Human Investigations Committee and registered with ClinicalTrials.gov (NCT02796001).",
+      "claim_type": "EXPLICIT",
+      "source": "Dataset 1 was a newly generated dataset of PBMCs obtained by longitudinal sampling of healthy volunteers who were challenged intranasally with RV-A16. The study was approved by the University of Virginia Human Investigations Committee, performed in accordance with the Declaration of Helsinki, and registered with ClinicalTrials.gov (NCT02796001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as regulatory and ethical information about the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "aeb73791-c997-4645-800d-9c96a4718382",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C51",
+      "claim": "After rhinovirus challenge, expanded regions displayed molecular signatures consistent with activated memory (CD45RO+ CD38+) and tissue trafficking (e.g., CCR5 enrichment).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, after rhinovirus challenge, expanded regions displayed molecular signatures consistent with activated memory (CD45RO + CD38+) and tissue trafficking (e.g., CCR5 enrichment in the MEM labels) that aligned with our previous findings for rhinovirus-specific CD4+ T cells using manual gating methods and a limited marker panel (Muehling et al., 2020; Wisniewski et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of T-REX and MEM analysis and is consistent with prior cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "a98a2eff-a3f4-4328-8e30-ae800989b980",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C52",
+      "claim": "CD147 was highly expressed on many cells that changed during COVID-19 infection and was observed to change greatly on some populations over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, CD147/Basigin was highly expressed on many cells that changed during infection and was observed to change greatly on some populations over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as an observation from T-REX analysis of COVID-19 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "07908f65-7fcc-4eb4-a45a-911a21cf1d72",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C53",
+      "claim": "CD147 has been proposed as both a binding partner for SARS-CoV-2 spike protein and a potential mechanism of cellular entry, although evidence is needed to support this controversial hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "CD147 has been proposed in pre-prints as both a binding partner for SARS-CoV-2 spike protein and a potential mechanism of cellular entry, although evidence is needed to support this controversial hypothesis (Shilts and Wright, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis from the literature with a citation, noting it is controversial.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "19af9881-2995-42b5-8a17-0d291add10e5",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C54",
+      "claim": "In the study of Dataset 2, the authors noted that immune responses were dominated by cells expressing CD38 and CD147.",
+      "claim_type": "EXPLICIT",
+      "source": "In the study of Dataset 2, the authors noted that immune responses were dominated by cells expressing CD38 and CD147 (Rodriguez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the original study of Dataset 2 with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "fb3f32f4-e9e1-4c05-872e-b2107554c8eb",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C55",
+      "claim": "T-REX is designed for use on a pair of data files, such as pairs of timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "T-REX was designed for use on a pair of data files, such as the pairs of timepoints tested here, but it can also be used for other paired comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a description of T-REX design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "15cf286f-7c0b-4521-875f-022b0e1f1fc5",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C56",
+      "claim": "T-REX is very sensitive to batch effects, and issues need to be addressed before analysis, or samples need to be analyzed in a batch-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "T-REX is also very sensitive to batch effects, and issues like these need to be addressed before analysis, or samples need to be analyzed in a batch-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation and consideration for using T-REX.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "c832614e-0487-4262-af3e-59235d58e342",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C57",
+      "claim": "MEM labels allow quantitative comparison across batches, instruments, and data types.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that one advantage of using MEM labels to summarize the phenotype of T-REX populations is that MEM labels have been shown to allow quantitative comparison across batches, instruments, and data types (Diggins et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an expected advantage based on prior work cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "dd16c048-946a-4153-a4ab-03177ea6b205",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C58",
+      "claim": "T-REX performance may depend on the number of cells and the algorithm was designed for studies with hundreds of thousands to millions of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "T-REX performance may depend on the number of cells and the algorithm was designed for studies with hundreds of thousands to millions of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design consideration for T-REX.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "98f7960b-05c1-48c3-8822-2a77ceed795f",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C59",
+      "claim": "Analyses with fewer than 1000 cells are unlikely to be productive with T-REX.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses with fewer than 1000 cells are unlikely to be productive, and analyses with fewer cells may require testing and adjusting k more than analyses with >100,000 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical limitation of T-REX.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "200eca73-12ef-420f-ae27-3ddf7d7f1fc1",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C60",
+      "claim": "Tetramer+ hotspots were still detected with 100,000 cells per sample in subsampling tests.",
+      "claim_type": "EXPLICIT",
+      "source": "In testing subsamples, tetramer+ hotspots were still detected with 100,000 cells per sample (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a result of subsampling analysis and supported by the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "4f38f0ab-4d6f-43bf-b5bc-b69b4f15e4de",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C61",
+      "claim": "The parameters chosen by the user in T-REX are the k-value, the markers used to create the UMAP, the markers used for MEM, and the DBSCAN settings.",
+      "claim_type": "EXPLICIT",
+      "source": "The parameters that are chosen by the user are the k-value, the markers used to create the UMAP, the markers used for MEM, and the DBSCAN settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a description of user-adjustable parameters in T-REX.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "354587e6-10cf-40ec-be1b-0781dc0ebc85",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C62",
+      "claim": "T-REX combines UMAP, KNN, and Marker Enrichment Modeling (MEM) in a rapid, unsupervised analysis workflow for paired samples from one individual.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to combining UMAP, KNN, and Marker Enrichment Modeling (MEM) in a rapid, unsupervised analysis workflow for paired samples from one individual, T-REX contrasts with prior approaches in its specific focus on the regions of great difference between samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a description of the T-REX algorithm design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "43821c62-7813-4b24-b574-a48334d9face",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C63",
+      "claim": "T-REX contrasts with prior approaches in its specific focus on the regions of great difference between samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to combining UMAP, KNN, and Marker Enrichment Modeling (MEM) in a rapid, unsupervised analysis workflow for paired samples from one individual, T-REX contrasts with prior approaches in its specific focus on the regions of great difference between samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a distinguishing feature of T-REX compared to other methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "d8d84310-bb7c-4d4f-88d5-4b05e7450b6b",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C64",
+      "claim": "The T-REX algorithm was blinded to tetramers during analysis so that they could subsequently be used to test algorithm performance.",
+      "claim_type": "EXPLICIT",
+      "source": "The T-REX algorithm was blinded to tetramers during analysis so that they could subsequently be used to test algorithm performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a methodological approach to validate T-REX.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "9af4d98c-962f-4b21-bf13-ef4d50de932b",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C65",
+      "claim": "Degree of change was calculated as the sum of the percent of cells in the 5th and 95th hotspots of change.",
+      "claim_type": "EXPLICIT",
+      "source": "Degree of change was calculated as the sum of the percent of cells in the 5th and 95th hotspots of change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a definition of the degree of change metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "29e35082-d32b-4e1b-a911-ce86b9049fce",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C66",
+      "claim": "Direction of change is the ratio of \u226595% expansion to contraction in the sample and was calculated as the difference between the number of cells in the 95th and 5th hotspots of change divided by the sum of the number of cells in the 95th and 5th hotspots of change.",
+      "claim_type": "EXPLICIT",
+      "source": "Direction of change is the ratio of \u226595% expansion to contraction in the sample and was calculated as the difference between the number of cells in the 95th and 5th hotspots of change divided by the sum of the number of cells in the 95th and 5th hotspots of change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a definition of the direction of change metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "1a85efe4-96e3-48a3-9ba5-ecbd454f920b",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C67",
+      "claim": "A negative direction of change value indicates that there was significant contraction that was more common than significant expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "A negative direction of change value indicates that there was significant contraction that was more common than significant expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as an interpretation of the direction of change metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "eb8fccaf-fb8f-41e7-98fb-343db43215e2",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C68",
+      "claim": "The values for directionality range from 0.00 (evenly contracting and expanding) to \u00b11.00 (all contracting or expanding).",
+      "claim_type": "EXPLICIT",
+      "source": "The values for directionality range from 0.00 (evenly contracting and expanding) to \u00b11.00 (all contracting or expanding).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a description of the directionality metric range.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "2610f91c-cb5c-42a7-be9a-05c04cac5dab",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C69",
+      "claim": "Transparent analysis scripts for all four datasets and all presented results are publicly available on the CytoLab GitHub page for T-REX.",
+      "claim_type": "EXPLICIT",
+      "source": "Transparent analysis scripts for all four datasets and all presented results are publicly available on the CytoLab GitHub page for T-REX (https://github.com/cytolab/T-REX) and include open-source code and commented Rmarkdown analysis walkthroughs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as information about data and code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "15c8680e-2f54-4ecd-8b4b-c50bc6cda2c8",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C70",
+      "claim": "Rhinovirus Dataset 1 is available on FlowRepository (https://flowrepository.org/id/FR-FCM-Z2VX).",
+      "claim_type": "EXPLICIT",
+      "source": "Rhinovirus Dataset 1 is a newly generated dataset created at the University of Virginia available on FlowRepository (https://flowrepository.org/id/FR-FCM-Z2VX).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as information about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "2f552085-4101-4e42-897f-c083b5b5c74a",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C71",
+      "claim": "The optimal k-value for RV001 was determined to be 70 based on the inflection point of tetramer enrichment curves.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach identified the inflection point of the percent tetramer+ curve as k = 70 for RV001 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a result of k-value optimization analysis and supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "baf94868-3512-4e01-930f-bcecd35de81e",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C72",
+      "claim": "In further analysis of the remaining infected rhinovirus subjects, optimal k-values ranged from 30 to 80.",
+      "claim_type": "EXPLICIT",
+      "source": "In further analysis of the remaining infected rhinovirus subjects, optimal k-values ranged from 30 to 80.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result of k-value optimization across subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "7b6da341-f97a-4e57-ad00-a4984829644c",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C73",
+      "claim": "A k-value of 60 was chosen and used in all other analyses of rhinovirus subjects as well as Datasets 2, 3, and 4.",
+      "claim_type": "EXPLICIT",
+      "source": "A k-value of 60 was chosen and used in all other analyses of rhinovirus subjects (Figure 3), as well as Datasets 2, 3, and 4 described below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a methodological choice for consistency across analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "5e45e80f-cc13-4aba-bbde-e868dfabf256",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C74",
+      "claim": "Using a cutoff of \u226595% identified 2/2 (100%) tetramer+ hotspots of change for RV001 and did not identify any additional regions that were not tetramer hotspots.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a cutoff of \u226595% identified 2/2 (100%) tetramer+ hotspots of change for RV001 and did not identify any additional regions that were not tetramer hotspots, whereas the \u226590% cutoff identified both tetramer+ hotspots and an additional tetramer\u2013 hotspot (Figure 2C, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a result of cutoff optimization and supported by Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "2f78edb1-d72e-4375-9cda-1d1f3d239fca",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C75",
+      "claim": "Above 90% change, the median CD4+ T cell had 10% or more tetramer+ neighbors around it in the KNN region for RV001.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, above 90% change, the median CD4+ T cell had 10% or more tetramer+ neighbors around it in the KNN region (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a result of analysis and supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "8774dce6-f4c8-4902-a82c-a46bb52d8e01",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C76",
+      "claim": "Only regions of 80% or more expansion from day 0 to day 7 were enriched for tetramer+ CD4+ T cells in study individual RV001.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, only regions of 80% or more expansion from day 0 to day 7 were enriched for tetramer+ CD4+ T cells in study individual RV001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a conclusion from the analysis of tetramer enrichment vs. percent change.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "79bc7b79-dafd-4752-b0b7-e91c836f2e3c",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C77",
+      "claim": "Tetramer+ cells were not commonly observed to be in local neighborhoods around cells with change below 80% in their KNN region for RV001.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of tetramer enrichment as a function of percentile of expansion from day 0 to day 7 (Figure 2B) showed that tetramer+ cells were not commonly observed to be in local neighborhoods around cells with change below 80% in their KNN region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a result of analysis and supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "cd61d162-9000-4a99-8757-6896d5d40d89",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C78",
+      "claim": "The T-REX-derived sorting strategy was able to enrich for tetramer+ cells in one infected subject for which T-REX was unable to identify tetramer hotspots (RV007).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this strategy was able to enrich for tetramer+ cells in the one infected subject for which T-REX was unable to identify tetramer hotspots (RV007), and one in which the tetramer+ hotspot only met a \u226585% threshold of expansion (RV005), suggesting that T-REX-derived sorting strategies can be broadly applied across cohorts, including subjects whose response may not reach the threshold of identification by T-REX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result showing the utility of consensus MEM-based gating strategies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "54af352c-250d-48ad-ab48-39b634148339",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C79",
+      "claim": "Gating for CD45R0 alone did not significantly enrich for virus-specific T cells in the virtual sort analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, gating for CD45R0 alone \u2012 the first MEM-enriched feature \u2012 did not significantly enrich for virus-specific T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as an observation from the virtual sort analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "a5457290-88cb-42fb-ab56-378f66d5d45d",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C80",
+      "claim": "Patient MB-009 developed myelodysplastic syndrome (MDS) and experienced a great shift in blood immunophenotype in parallel with the emergence of a small population of blasts in PBMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one patient in the set, patient MB-009, developed myelodysplastic syndrome (MDS) and experienced a great shift in blood immunophenotype in parallel with the emergence of a small population of blasts in PBMCs (Greenplate et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a clinical observation from the melanoma dataset with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "3e0539be-b707-450c-996f-3c1fc95a625d",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C81",
+      "claim": "At 6 weeks, the peripheral blast count in MB-009 was still below 5%, so T-REX detected a substantial change in subsets that were not driven solely by the emergence from the marrow of the MDS blasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, at 6 weeks, the peripheral blast count was still below 5% (Greenplate et al., 2016b), so T-REX detected a substantial change in subsets that were not driven solely by the emergence from the marrow of the MDS blasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of T-REX results in the context of clinical data with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "e5502ad4-9bb4-48c6-8449-31f7ffdfdd17",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C82",
+      "claim": "For AML003, a patient that did not respond to treatment, little change was seen from days 0 to 5 (degree of change = 3.19%) by T-REX analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For AML003, a patient that did not respond to treatment, little change was seen from days 0 to 5 (degree of change = 3.19%) by means of T-REX analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result correlating T-REX metrics with clinical outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "6f4ceb70-1214-411b-a8af-656c720315d1",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C83",
+      "claim": "MEM labels showed that the cells contracting in responder AML patients were the AML blasts, whereas the emerging cells were the non-malignant immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MEM labels showed that the cells contracting in responder patients were the AML blasts, whereas the emerging cells were the non-malignant immune cells (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated as a result of MEM analysis and supported by Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "ed35349a-a6a4-43bf-831d-da4ee3d66265",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C84",
+      "claim": "AML007, a patient with no blasts in the blood, had a degree of change of 5.97% over treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "AML007, a patient with no blasts in the blood, had a degree of change of 5.97% over treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a result correlating T-REX metrics with clinical characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "ef3c95d0-2684-42b3-bb76-cd81a51dc925",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C85",
+      "claim": "Over half the algorithms tested in prior work returned poor F1 accuracy scores for detecting known populations that were 0.8% or 0.03% of the cells in a sample.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was expected and is consistent with past tests of algorithms on detection of rare subsets, which found that over half the algorithms tested returned poor F1 accuracy scores for detecting known populations that were 0.8% or 0.03% of the cells in a sample (Weber and Robinson, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known finding from prior work with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "08f671e7-e70b-4acb-a404-3639105e91c0",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C86",
+      "claim": "FlowSOM was a better performing algorithm for rare subset detection in prior comparative studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, FlowSOM was a better performing algorithm in those examples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known finding from prior comparative studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "ee78bb86-ab7e-4d93-9792-dc895909663f",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C87",
+      "claim": "The 0.02% of virus-specific target cells in the rhinovirus study is connected to a larger population due to phenotypic similarity within the CD4+ T cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "An aspect of data structure in this study is the phenotypic similarity within the CD4+ T cell population, which means that the 0.02% of target cells is connected to a larger population and thus less apparent in the raw data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of why rare cells are difficult to detect in this dataset.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "e85f5daf-2ecb-40be-a750-2066e46ba4fb",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "claim_id": "C88",
+      "claim": "The threshold of change in T-REX removing the vast majority of cells that did not expand or contract \u226595% makes the virus-specific cells appear as separate clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is the threshold of change in T-REX removing the vast majority of cells (i.e., the cells that did not expand or contract \u226595%) that makes the virus-specific cells appear as separate clusters and greatly simplifies the task of distinguishing cluster groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for why T-REX is effective at identifying rare cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "T-REX successfully identified rhinovirus-specific CD4+ T cells by detecting regions of \u226595% expansion that were enriched for tetramer+ virus-specific cells in the majority of infected subjects (4/6 at 95% cutoff, 5/6 at 85% cutoff). The algorithm was blinded to tetramer data during analysis, and identified cells displayed phenotypes consistent with activated memory T cells (CD45RO+ CD38+) with early memory/stem-like signatures (TCF1+ CD27+) and expression of CCR5 and CXCR3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C17-C20, C64, and C74-C77 provide converging evidence that T-REX identified biologically relevant virus-specific cells. The algorithm was properly blinded to tetramer data (C64), identified regions with \u226595% change that were enriched for tetramer+ cells in most subjects (C17), captured the majority of virus-specific cells (C20), and the phenotype matched known rhinovirus-specific T cell characteristics (C18). The quantitative thresholds were empirically validated (C74-C77).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "6c22381c-8b04-4ccd-a4de-ddae1bfed27f",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A virtual FACS sorting strategy based on T-REX and MEM results successfully enriched for rhinovirus tetramer+ cells from very low precursor frequencies (0.0004-0.04% of CD4+ T cells) to 0.89-9.25% in all infected subjects. A minimal panel of 10 markers was sufficient for maximal enrichment, and the strategy showed specificity by failing to enrich in uninfected subjects or with control tetramers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 and C78-C79 demonstrate that T-REX results translate to practical FACS applications. The virtual sort achieved substantial enrichment (C21) from extremely rare starting frequencies (C22), required only 10 markers (C23), showed appropriate specificity controls (C24), and worked even for subjects where T-REX itself failed to identify hotspots (C78). This validates the biological relevance and practical utility of T-REX findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "1da80f4a-c190-407b-98bb-f078b9b44587",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The optimal k-value for KNN analysis in T-REX was determined through systematic optimization based on tetramer enrichment curves, with k=70 optimal for RV001, k-values ranging from 30-80 across subjects, and k=60 chosen as a standard value for all analyses across datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C71-C73 describe a systematic approach to k-value optimization. The inflection point method for determining optimal k is clearly described (C71), variation across subjects was assessed (C72), and a compromise value was selected for consistency (C73). This represents sound parameter optimization, though the choice of k=60 as a universal value may not be optimal for all datasets.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "9055cdcd-bd3c-4df6-aacc-7b09ee3d1383",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "T-REX analysis quantified immune changes using two metrics: degree of change (sum of cells in 5th and 95th percentile hotspots) and direction of change (ratio of expansion to contraction, ranging from -1 to +1). Rhinovirus infections showed small degree of change (median 0.019%) with large directionality (median 0.029), while COVID-19 samples showed variable degree of change (<1% to 68%, median 6.86%) with near-zero directionality (median -0.00880).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 and C65-C68 present clearly defined metrics with quantitative results. The definitions of degree and direction of change are mathematically sound (C65-C68), and the reported values for rhinovirus (C25-C26) and COVID-19 (C27-C29) are directly stated with appropriate statistical measures (medians and IQRs). These metrics provide a useful framework for comparing immune responses across disease contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "e455a3da-c975-47da-a8b5-b244f5a94335",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "COVID-19 patients displayed heterogeneous immune trajectories, with some showing magnitude and direction of change comparable to AML patients undergoing complete response to chemotherapy, while others displayed patterns similar to rhinovirus infection or melanoma checkpoint inhibitor therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C4 are supported by the comparative analysis presented in Figure 6 showing degree and direction of change across disease types. The heterogeneity in COVID-19 responses is evident from the data (C27-C29), and the comparison to other disease contexts provides useful biological context. However, the specific patient-level correlations would benefit from more detailed statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "38f82cfe-c91d-47bd-adfc-a0e8687288c2",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "T-REX analysis of COVID-19 patients revealed that 5 of 10 patients had CD4+ T cell hotspots, with 4 of these 5 sharing a consistent phenotype enriched for CD147, CD99, CD29, and other markers. CD147 was highly expressed on many cells that changed during infection. Manual gating using MEM-identified markers enriched CD4+ T cells from 5.5-14.0% to 49.6-83.3%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33, C52, and C54 describe consistent findings across COVID-19 patients. The identification of a shared CD4+ T cell phenotype in 4/5 patients with hotspots (C32) is well-supported, and the enrichment achieved through manual gating (C33) validates the computational findings. The observation about CD147 expression (C52) is interesting but requires more mechanistic investigation. The citation to the original study (C54) provides appropriate context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "1dd72cf1-911f-4b95-a24f-2aef0dc29790",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "T-REX analysis of melanoma and AML datasets showed that melanoma patients had small degree of change (median 0.58%) with varying directionality, while AML patients showed large degree of change (median 81.0%) with little directionality. AML patients with >80% change had high blast counts and complete response to treatment, with MEM labels showing contracting cells were AML blasts and emerging cells were non-malignant immune cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 and C80-C84 demonstrate T-REX performance across different disease contexts. The quantitative metrics for melanoma (C34) and AML (C35) are clearly stated, and the correlation with clinical outcomes (C36, C82) provides biological validation. The MEM analysis identifying blast contraction and immune cell emergence (C83) is particularly compelling. The MB-009 case (C80-C81) shows T-REX can detect changes not solely driven by blast emergence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "098c9adc-f867-456e-b474-7451a83066a7",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "T-REX using UMAP outperformed alternative approaches in speed and accuracy. T-REX with UMAP ran in 0.35 hr and identified 22% tetramer+ clusters, while t-SNE took 23 hr with comparable accuracy. KNN on original features was slower (1.7 hr) and less accurate. SPADE, Phenograph, FlowSOM, and Citrus either failed to identify regions of \u226595% change or identified fewer tetramer+ hotspots. Methods that identified >85% change clusters had comparable phenotypes (RMSD 97.1-98.7).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 provide comprehensive benchmarking of T-REX against established methods. The performance comparisons are quantitative (runtime, tetramer enrichment) and use appropriate metrics. The finding that most existing algorithms failed to identify rare virus-specific cells (C40-C43) is consistent with prior literature (C85-C86). The phenotype similarity across successful methods (C44) validates that different approaches converge on the same biological populations when they work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "d9c47eff-576b-4d81-bbf8-22644d2e8eba",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "T-REX demonstrated stability across subsampling, consistently identifying tetramer+ hotspots across 10 subsamples each containing 10% of cells from RV001, with detection maintained even at 100,000 cells per sample.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C60 demonstrate algorithmic robustness through systematic subsampling analysis. The consistency across 10 independent subsamples (C45) and maintenance of performance with reduced cell numbers (C60) are important validations. This addresses concerns about algorithm stability and minimum cell number requirements, though the manuscript notes that <1000 cells may be problematic (C59).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "2f461c05-ab34-4d41-9ecb-50fa052dd6f2",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The rhinovirus challenge study enrolled healthy adult volunteers (ages 18-40) who were seronegative to RV-A16 (titer \u22641:2), inoculated them with 100 TCID50 of RV-A16 on day 0, and determined that 6 of 8 subjects became infected. The study was approved by the University of Virginia Human Investigations Committee and registered as NCT02796001.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 and C50 describe the experimental design and regulatory compliance for Dataset 1. These are straightforward methodological details that are clearly stated and include appropriate ethical oversight information. The infection rate (6/8 subjects) is important context for interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "b52b568a-4fd2-4e8a-992a-130adc2a0395",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Dataset 2 consisted of mass cytometry data from 12 COVID-19 patients with at least two blood samples over time, derived from a larger study of 39 patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 describes the composition of Dataset 2 with appropriate citation. This is a straightforward description of the dataset used for analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "d2c6d520-d5a2-4a42-bfae-0a6daa1f30b4",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "After rhinovirus challenge, expanded regions identified by T-REX displayed molecular signatures consistent with activated memory (CD45RO+ CD38+) and tissue trafficking (CCR5 enrichment) that aligned with previous findings using manual gating methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 demonstrates consistency between T-REX results and prior knowledge. The phenotypes identified match expectations from previous studies (cited), which validates the biological relevance of T-REX findings. This represents an important confirmation that the algorithm identifies known cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "07ead91d-016d-4b1a-b7f8-3e212a91a19f",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CD147 has been proposed as a binding partner for SARS-CoV-2 spike protein and potential mechanism of cellular entry, though this hypothesis is controversial and requires additional evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 appropriately presents a controversial hypothesis from the literature with appropriate caveats. The authors correctly note this is speculative and requires evidence. This claim is about prior work rather than the current study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "9dcca970-c109-4fa7-afd1-5eae63d1d135",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "T-REX is designed for paired sample comparisons and requires hundreds of thousands to millions of cells for optimal performance. The algorithm is sensitive to batch effects, which must be addressed before analysis. User-adjustable parameters include k-value, markers for UMAP, markers for MEM, and DBSCAN settings. MEM labels enable quantitative comparison across batches and instruments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 and C61 describe design considerations and limitations of T-REX. These are appropriately stated caveats about algorithm performance and requirements. The batch effect sensitivity (C56) is an important limitation, and the cell number requirements (C58-C59) are supported by the subsampling analysis. The advantage of MEM labels for cross-batch comparison (C57) is based on prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "e438871e-5f82-415d-9eda-5f20339cb10c",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "T-REX combines UMAP, KNN, and MEM in a rapid, unsupervised workflow for paired samples from one individual, with a specific focus on regions of great difference between samples that contrasts with prior approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62 and C63 describe the core algorithmic design of T-REX. The combination of methods is clearly described, and the focus on regions of great difference is a distinguishing feature validated by the comparative analysis with other algorithms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "6a0be06c-d54e-452c-8ca3-5fdea9fb3f57",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Analysis scripts and data are publicly available, with code on GitHub and Dataset 1 on FlowRepository (FR-FCM-Z2VX).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69 and C70 describe data and code availability, which is essential for reproducibility. The provision of transparent analysis scripts and public data repositories is a strength of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "3d1c5020-5051-4c5d-9fda-dc4c4c637fce",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Single cell analysis tools struggle to reveal rare cells under 0.1% of the population, yet viral immune and cancer immunotherapy responses can include mechanistically important T cells that exist as <0.1% of blood CD3+ T cells. Existing cytometry tools like SPADE, FlowSOM, Phenograph, Citrus, and RAPID work best for cell subsets >1% of the sample.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 describe known limitations of existing tools based on prior literature and are supported by appropriate citations. These claims establish the motivation for developing T-REX and are validated by the comparative analysis in the manuscript (C40-C43).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "77365bd3-af8e-444e-868c-8a4a15a2af09",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Adults have stable blood cell abundances over weeks to months in the absence of perturbations such as disease or infection, forming the basis for T-REX's design hypothesis that short-term dramatic changes identify cells associated with immunogenic agents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 describes the biological rationale for T-REX design and is supported by multiple citations to prior studies. This represents a sound biological foundation for the algorithm's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "0e48ccca-080f-4a43-a5ea-55b0263bffd5",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Spectral flow cytometry generates data comparable to mass cytometry but collects cells at ~10-fold higher rate. Mass cytometry allows 44 antibodies per cell, while established spectral flow panels measure ~30 features with excellent resolution, with capacity expected to double in coming years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 describe technical characteristics of the cytometry platforms used in the study. These are supported by appropriate citations and represent accurate descriptions of current technology capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "325e56b7-c7d8-4b80-b7db-d5ac6d7d0e85",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Severe COVID-19 is linked to cytokine storm with crucial cellular immune responses, host factors determine T cell response degree in both rhinovirus and COVID-19, and rhinovirus infection induces expansion of circulating virus-specific CD4+ T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 describe established knowledge about viral infections and immune responses, supported by appropriate citations. These provide biological context for the study but are not novel findings of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    },
+    {
+      "id": "f1e3f6e7-b67f-49a5-a8f5-7fe4271ac743",
+      "content_id": "b33b59d0-f3d7-4a1a-843e-9dc8f20f6f2e",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Prior algorithm benchmarking showed over half of tested algorithms had poor F1 scores for detecting populations at 0.8% or 0.03% frequency, with FlowSOM performing better. The phenotypic similarity within CD4+ T cells makes the 0.02% virus-specific cells less apparent, but T-REX's threshold removing cells without \u226595% change makes virus-specific cells appear as separate clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C88 provide context from prior work (C85-C86) and explain why T-REX succeeds where other methods fail (C87-C88). The explanation that thresholding removes the majority of cells and reveals rare populations is logical and supported by the comparative analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:36:06.056973Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "44d3e396-8e76-4b35-be7e-862b746975d6",
+      "result_id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69"
+    },
+    {
+      "claim_id": "01e91eaa-a819-41b6-8a7d-5367eecff49a",
+      "result_id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69"
+    },
+    {
+      "claim_id": "36082d6f-c6a0-4c0b-97e6-6f2bb80fd370",
+      "result_id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69"
+    },
+    {
+      "claim_id": "11622bcb-7a54-40ba-ab76-38ca977aa74f",
+      "result_id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69"
+    },
+    {
+      "claim_id": "26ec2687-7037-4f78-a89e-3eb4fb46b356",
+      "result_id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69"
+    },
+    {
+      "claim_id": "e0d77adc-8f15-4c50-a1a0-b251ed53bd90",
+      "result_id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69"
+    },
+    {
+      "claim_id": "d8d84310-bb7c-4d4f-88d5-4b05e7450b6b",
+      "result_id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69"
+    },
+    {
+      "claim_id": "5e45e80f-cc13-4aba-bbde-e868dfabf256",
+      "result_id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69"
+    },
+    {
+      "claim_id": "2f78edb1-d72e-4375-9cda-1d1f3d239fca",
+      "result_id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69"
+    },
+    {
+      "claim_id": "8774dce6-f4c8-4902-a82c-a46bb52d8e01",
+      "result_id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69"
+    },
+    {
+      "claim_id": "79bc7b79-dafd-4752-b0b7-e91c836f2e3c",
+      "result_id": "6fb324d2-5beb-4dbe-a612-e48abfaa0b69"
+    },
+    {
+      "claim_id": "9efc50c0-ac6c-4416-a1a3-f8e513ded468",
+      "result_id": "6c22381c-8b04-4ccd-a4de-ddae1bfed27f"
+    },
+    {
+      "claim_id": "e5992b9c-f31a-41c5-bac7-2cc1a9beb29f",
+      "result_id": "6c22381c-8b04-4ccd-a4de-ddae1bfed27f"
+    },
+    {
+      "claim_id": "63c3938c-ced0-4673-b0ae-a7f4d98c703e",
+      "result_id": "6c22381c-8b04-4ccd-a4de-ddae1bfed27f"
+    },
+    {
+      "claim_id": "a028c1c3-2e9d-4d5d-a8f2-c957a10bbcc5",
+      "result_id": "6c22381c-8b04-4ccd-a4de-ddae1bfed27f"
+    },
+    {
+      "claim_id": "cd61d162-9000-4a99-8757-6896d5d40d89",
+      "result_id": "6c22381c-8b04-4ccd-a4de-ddae1bfed27f"
+    },
+    {
+      "claim_id": "54af352c-250d-48ad-ab48-39b634148339",
+      "result_id": "6c22381c-8b04-4ccd-a4de-ddae1bfed27f"
+    },
+    {
+      "claim_id": "0f431e71-a7fc-4091-8ba5-0172ee6f9277",
+      "result_id": "1da80f4a-c190-407b-98bb-f078b9b44587"
+    },
+    {
+      "claim_id": "2f552085-4101-4e42-897f-c083b5b5c74a",
+      "result_id": "1da80f4a-c190-407b-98bb-f078b9b44587"
+    },
+    {
+      "claim_id": "baf94868-3512-4e01-930f-bcecd35de81e",
+      "result_id": "1da80f4a-c190-407b-98bb-f078b9b44587"
+    },
+    {
+      "claim_id": "7b6da341-f97a-4e57-ad00-a4984829644c",
+      "result_id": "1da80f4a-c190-407b-98bb-f078b9b44587"
+    },
+    {
+      "claim_id": "fb558d1e-fb5b-4ba1-8ce9-b5a56290e9a4",
+      "result_id": "9055cdcd-bd3c-4df6-aacc-7b09ee3d1383"
+    },
+    {
+      "claim_id": "fa1eef31-206a-4e3b-adb3-a3fecf61f9f0",
+      "result_id": "9055cdcd-bd3c-4df6-aacc-7b09ee3d1383"
+    },
+    {
+      "claim_id": "54a45674-eee6-4c53-a4a3-6260afad90de",
+      "result_id": "9055cdcd-bd3c-4df6-aacc-7b09ee3d1383"
+    },
+    {
+      "claim_id": "571f1823-7d1f-4486-ba46-2d38779285b2",
+      "result_id": "9055cdcd-bd3c-4df6-aacc-7b09ee3d1383"
+    },
+    {
+      "claim_id": "ceded21f-a210-4a60-80a7-a18fa3b08b71",
+      "result_id": "9055cdcd-bd3c-4df6-aacc-7b09ee3d1383"
+    },
+    {
+      "claim_id": "9af4d98c-962f-4b21-bf13-ef4d50de932b",
+      "result_id": "9055cdcd-bd3c-4df6-aacc-7b09ee3d1383"
+    },
+    {
+      "claim_id": "29e35082-d32b-4e1b-a911-ce86b9049fce",
+      "result_id": "9055cdcd-bd3c-4df6-aacc-7b09ee3d1383"
+    },
+    {
+      "claim_id": "1a85efe4-96e3-48a3-9ba5-ecbd454f920b",
+      "result_id": "9055cdcd-bd3c-4df6-aacc-7b09ee3d1383"
+    },
+    {
+      "claim_id": "eb8fccaf-fb8f-41e7-98fb-343db43215e2",
+      "result_id": "9055cdcd-bd3c-4df6-aacc-7b09ee3d1383"
+    },
+    {
+      "claim_id": "a36d67a9-8be5-491f-9aa4-b75e030db27e",
+      "result_id": "e455a3da-c975-47da-a8b5-b244f5a94335"
+    },
+    {
+      "claim_id": "77d61261-dcdd-4f1e-b706-042aa4c9f772",
+      "result_id": "e455a3da-c975-47da-a8b5-b244f5a94335"
+    },
+    {
+      "claim_id": "e6bd8dab-80b0-4468-b25c-1c4ed2af5e52",
+      "result_id": "38f82cfe-c91d-47bd-adfc-a0e8687288c2"
+    },
+    {
+      "claim_id": "8a251c22-520b-4918-b56b-6a4886a73e97",
+      "result_id": "38f82cfe-c91d-47bd-adfc-a0e8687288c2"
+    },
+    {
+      "claim_id": "047c423c-3509-47f2-8b02-a69265e8f615",
+      "result_id": "38f82cfe-c91d-47bd-adfc-a0e8687288c2"
+    },
+    {
+      "claim_id": "fbe0b261-427e-4cdd-9171-d2dcad98a974",
+      "result_id": "38f82cfe-c91d-47bd-adfc-a0e8687288c2"
+    },
+    {
+      "claim_id": "a98a2eff-a3f4-4328-8e30-ae800989b980",
+      "result_id": "38f82cfe-c91d-47bd-adfc-a0e8687288c2"
+    },
+    {
+      "claim_id": "19af9881-2995-42b5-8a17-0d291add10e5",
+      "result_id": "38f82cfe-c91d-47bd-adfc-a0e8687288c2"
+    },
+    {
+      "claim_id": "2503caa6-2a1d-499e-b9b9-aa4989c20d91",
+      "result_id": "1dd72cf1-911f-4b95-a24f-2aef0dc29790"
+    },
+    {
+      "claim_id": "e03cb421-f5a7-4a4a-9037-0f4969950345",
+      "result_id": "1dd72cf1-911f-4b95-a24f-2aef0dc29790"
+    },
+    {
+      "claim_id": "9da55153-33d1-41fd-b425-41d09a39f283",
+      "result_id": "1dd72cf1-911f-4b95-a24f-2aef0dc29790"
+    },
+    {
+      "claim_id": "a5457290-88cb-42fb-ab56-378f66d5d45d",
+      "result_id": "1dd72cf1-911f-4b95-a24f-2aef0dc29790"
+    },
+    {
+      "claim_id": "3e0539be-b707-450c-996f-3c1fc95a625d",
+      "result_id": "1dd72cf1-911f-4b95-a24f-2aef0dc29790"
+    },
+    {
+      "claim_id": "e5502ad4-9bb4-48c6-8449-31f7ffdfdd17",
+      "result_id": "1dd72cf1-911f-4b95-a24f-2aef0dc29790"
+    },
+    {
+      "claim_id": "6f4ceb70-1214-411b-a8af-656c720315d1",
+      "result_id": "1dd72cf1-911f-4b95-a24f-2aef0dc29790"
+    },
+    {
+      "claim_id": "ed35349a-a6a4-43bf-831d-da4ee3d66265",
+      "result_id": "1dd72cf1-911f-4b95-a24f-2aef0dc29790"
+    },
+    {
+      "claim_id": "fff37c70-d0f1-4cbf-8f32-e6b4e7895a43",
+      "result_id": "098c9adc-f867-456e-b474-7451a83066a7"
+    },
+    {
+      "claim_id": "8da8291a-1447-49ec-927d-9813d8e426aa",
+      "result_id": "098c9adc-f867-456e-b474-7451a83066a7"
+    },
+    {
+      "claim_id": "a9cd1808-e6b7-4784-80cf-a4f8af5340c9",
+      "result_id": "098c9adc-f867-456e-b474-7451a83066a7"
+    },
+    {
+      "claim_id": "309099cc-c45d-4156-ab69-96dbf834bce9",
+      "result_id": "098c9adc-f867-456e-b474-7451a83066a7"
+    },
+    {
+      "claim_id": "53c1dd0f-253c-4196-89ed-e1157b11edfc",
+      "result_id": "098c9adc-f867-456e-b474-7451a83066a7"
+    },
+    {
+      "claim_id": "a942a228-54c2-4c2d-988a-5c744146a8cf",
+      "result_id": "098c9adc-f867-456e-b474-7451a83066a7"
+    },
+    {
+      "claim_id": "44c4d751-4e54-4e3d-95e3-95f27af0bf86",
+      "result_id": "098c9adc-f867-456e-b474-7451a83066a7"
+    },
+    {
+      "claim_id": "a912baa9-1fb1-4166-af84-173d80003b6e",
+      "result_id": "098c9adc-f867-456e-b474-7451a83066a7"
+    },
+    {
+      "claim_id": "0f3771f1-4b63-499d-834b-0710eb799b84",
+      "result_id": "d9c47eff-576b-4d81-bbf8-22644d2e8eba"
+    },
+    {
+      "claim_id": "200eca73-12ef-420f-ae27-3ddf7d7f1fc1",
+      "result_id": "d9c47eff-576b-4d81-bbf8-22644d2e8eba"
+    },
+    {
+      "claim_id": "e4c0b276-7f12-4ef5-b9e5-c285e0a768ee",
+      "result_id": "2f461c05-ab34-4d41-9ecb-50fa052dd6f2"
+    },
+    {
+      "claim_id": "3a509e78-81d3-4041-9c01-e9fabf2bda42",
+      "result_id": "2f461c05-ab34-4d41-9ecb-50fa052dd6f2"
+    },
+    {
+      "claim_id": "baf57b7f-72e6-4e1c-a100-b9b5ee84339c",
+      "result_id": "2f461c05-ab34-4d41-9ecb-50fa052dd6f2"
+    },
+    {
+      "claim_id": "df9fafe5-9396-4571-b5ba-f248fe434119",
+      "result_id": "2f461c05-ab34-4d41-9ecb-50fa052dd6f2"
+    },
+    {
+      "claim_id": "ac84887f-6d82-42b5-9c0d-eaaebe720d5b",
+      "result_id": "b52b568a-4fd2-4e8a-992a-130adc2a0395"
+    },
+    {
+      "claim_id": "aeb73791-c997-4645-800d-9c96a4718382",
+      "result_id": "d2c6d520-d5a2-4a42-bfae-0a6daa1f30b4"
+    },
+    {
+      "claim_id": "07908f65-7fcc-4eb4-a45a-911a21cf1d72",
+      "result_id": "07ead91d-016d-4b1a-b7f8-3e212a91a19f"
+    },
+    {
+      "claim_id": "fb3f32f4-e9e1-4c05-872e-b2107554c8eb",
+      "result_id": "9dcca970-c109-4fa7-afd1-5eae63d1d135"
+    },
+    {
+      "claim_id": "15cf286f-7c0b-4521-875f-022b0e1f1fc5",
+      "result_id": "9dcca970-c109-4fa7-afd1-5eae63d1d135"
+    },
+    {
+      "claim_id": "c832614e-0487-4262-af3e-59235d58e342",
+      "result_id": "9dcca970-c109-4fa7-afd1-5eae63d1d135"
+    },
+    {
+      "claim_id": "dd16c048-946a-4153-a4ab-03177ea6b205",
+      "result_id": "9dcca970-c109-4fa7-afd1-5eae63d1d135"
+    },
+    {
+      "claim_id": "98f7960b-05c1-48c3-8822-2a77ceed795f",
+      "result_id": "9dcca970-c109-4fa7-afd1-5eae63d1d135"
+    },
+    {
+      "claim_id": "4f38f0ab-4d6f-43bf-b5bc-b69b4f15e4de",
+      "result_id": "9dcca970-c109-4fa7-afd1-5eae63d1d135"
+    },
+    {
+      "claim_id": "354587e6-10cf-40ec-be1b-0781dc0ebc85",
+      "result_id": "e438871e-5f82-415d-9eda-5f20339cb10c"
+    },
+    {
+      "claim_id": "43821c62-7813-4b24-b574-a48334d9face",
+      "result_id": "e438871e-5f82-415d-9eda-5f20339cb10c"
+    },
+    {
+      "claim_id": "2610f91c-cb5c-42a7-be9a-05c04cac5dab",
+      "result_id": "6a0be06c-d54e-452c-8ca3-5fdea9fb3f57"
+    },
+    {
+      "claim_id": "15c8680e-2f54-4ecd-8b4b-c50bc6cda2c8",
+      "result_id": "6a0be06c-d54e-452c-8ca3-5fdea9fb3f57"
+    },
+    {
+      "claim_id": "c4accfd1-2d9b-4efa-9642-409d02e5de57",
+      "result_id": "3d1c5020-5051-4c5d-9fda-dc4c4c637fce"
+    },
+    {
+      "claim_id": "1b9c8c7d-3497-4d30-8097-cd2758d68d69",
+      "result_id": "3d1c5020-5051-4c5d-9fda-dc4c4c637fce"
+    },
+    {
+      "claim_id": "5199a58e-a931-4d37-a8b2-784a73379e2d",
+      "result_id": "3d1c5020-5051-4c5d-9fda-dc4c4c637fce"
+    },
+    {
+      "claim_id": "75baf321-ed47-4160-aafb-ca716feaeaf7",
+      "result_id": "77365bd3-af8e-444e-868c-8a4a15a2af09"
+    },
+    {
+      "claim_id": "b5d620d1-9822-4480-9e50-dfc610edbc68",
+      "result_id": "0e48ccca-080f-4a43-a5ea-55b0263bffd5"
+    },
+    {
+      "claim_id": "d1668274-5711-4076-a9c1-633f5069c897",
+      "result_id": "0e48ccca-080f-4a43-a5ea-55b0263bffd5"
+    },
+    {
+      "claim_id": "d13098a5-5d8c-4b3c-9900-a229eed0448e",
+      "result_id": "0e48ccca-080f-4a43-a5ea-55b0263bffd5"
+    },
+    {
+      "claim_id": "0c0d9075-d02d-489a-ae02-18715b85bb6a",
+      "result_id": "0e48ccca-080f-4a43-a5ea-55b0263bffd5"
+    },
+    {
+      "claim_id": "dd109def-fde6-400a-b202-02a15688d620",
+      "result_id": "325e56b7-c7d8-4b80-b7db-d5ac6d7d0e85"
+    },
+    {
+      "claim_id": "97b27ce8-8dfd-4e3c-8890-f7a376834a71",
+      "result_id": "325e56b7-c7d8-4b80-b7db-d5ac6d7d0e85"
+    },
+    {
+      "claim_id": "1c6452b6-f890-405b-a60d-95e852916a46",
+      "result_id": "325e56b7-c7d8-4b80-b7db-d5ac6d7d0e85"
+    },
+    {
+      "claim_id": "ef3c95d0-2684-42b3-bb76-cd81a51dc925",
+      "result_id": "f1e3f6e7-b67f-49a5-a8f5-7fe4271ac743"
+    },
+    {
+      "claim_id": "08f671e7-e70b-4acb-a404-3639105e91c0",
+      "result_id": "f1e3f6e7-b67f-49a5-a8f5-7fe4271ac743"
+    },
+    {
+      "claim_id": "ee78bb86-ab7e-4d93-9792-dc895909663f",
+      "result_id": "f1e3f6e7-b67f-49a5-a8f5-7fe4271ac743"
+    },
+    {
+      "claim_id": "e85f5daf-2ecb-40be-a750-2066e46ba4fb",
+      "result_id": "f1e3f6e7-b67f-49a5-a8f5-7fe4271ac743"
+    }
+  ],
+  "comparisons": []
+}

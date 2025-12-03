@@ -1,0 +1,1371 @@
+{
+  "submission": {
+    "id": "c9075ca5-bcc0-48b5-882e-c86c08963884",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:29:07.456370Z",
+    "updated_at": "2025-12-03T09:29:07.456370Z"
+  },
+  "content": [
+    {
+      "id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "submission_id": "c9075ca5-bcc0-48b5-882e-c86c08963884",
+      "content_type": "manuscript",
+      "content_text": "# Tightly coupled inhibitory and excitatory functional networks in the developing primary visual cortex\n\n## Authors\n\n- Haleigh N Mulholland<sup>1</sup> ([ORCID: 0000-0002-8958-8706](https://orcid.org/0000-0002-8958-8706))\n- Bettina Hein<sup>2</sup> ([ORCID: 0000-0002-5317-1976](https://orcid.org/0000-0002-5317-1976))\n- Matthias Kaschube<sup>3</sup> ([ORCID: 0000-0002-5145-7487](https://orcid.org/0000-0002-5145-7487))\n- Gordon B Smith<sup>1</sup> ([ORCID: 0000-0002-1107-3884](https://orcid.org/0000-0002-1107-3884)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience, University of Minnesota Minneapolis United States\n2. Center for Theoretical Neuroscience, Zuckerman Institute, Columbia University New York United States\n3. Frankfurt Institute for Advanced Studies & Department of Informatics and Mathematics, Goethe University Frankfurt am Main Germany\n4. Optical Imaging and Brain Sciences Medical Discovery Team, University of Minnesota Minneapolis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIntracortical inhibition plays a critical role in shaping activity patterns in the mature cortex. However, little is known about the structure of inhibition in early development prior to the onset of sensory experience, a time when spontaneous activity exhibits long-range correlations predictive of mature functional networks. Here, using calcium imaging of GABAergic neurons in the ferret visual cortex, we show that spontaneous activity in inhibitory neurons is already highly organized into distributed modular networks before visual experience. Inhibitory neurons exhibit spatially modular activity with long-range correlations and precise local organization that is in quantitative agreement with excitatory networks. Furthermore, excitatory and inhibitory networks are strongly co-aligned at both millimeter and cellular scales. These results demonstrate a remarkable degree of organization in inhibitory networks early in the developing cortex, providing support for computational models of self-organizing networks and suggesting a mechanism for the emergence of distributed functional networks during development.\n\n## Introduction\n\nInhibition is crucial for shaping neural activity and response properties in the mature cortex. GABAergic interneurons have been implicated in a range of computations, including response gain, stimulus discrimination, and network stabilization (for reviews, see Isaacson and Scanziani, 2011; Den\u00e8ve and Machens, 2016; Ferguson and Cardin, 2020). In the columnar visual cortex, inhibitory neurons actively shape response selectivity (Wilson et al., 2018) and are organized into functionally-specific networks with excitatory neurons (Wilson et al., 2017). However, relatively little is known about inhibition in the developing cortex prior to the onset of sensory experience. GABAergic inhibition is initially absent in early development before progressively strengthening as the cortex matures (reviewed in Ben-Ari, 2002; Huang et al., 2007), raising the possibility that inhibition plays only a minor role in shaping early patterns of cortical activity.\n\nRecent work in the ferret visual cortex demonstrated that prior to the onset of visual experience, excitatory activity is already highly structured, showing modular and distributed activity with long-range correlations (Smith et al., 2018), reminiscent of the columnar stimulus-evoked activity found in the mature cortex (Hubel and Wiesel, 1968; Blasdel and Salama, 1986; Weliky et al., 1996; Issa et al., 2000; Kara and Boyd, 2009; Smith et al., 2015). These correlated networks are not abolished when silencing feedforward activity and predict future visually-evoked responses (Smith et al., 2018), suggesting a key role for early spontaneous activity in the development of mature cortical networks. However, the structure of inhibitory activity at this early stage of development remains unknown, and several distinct possibilities exist for the state of inhibition in the developing cortex (Figure 1): (1) Inhibition could be weak or absent; (2) inhibition may be present but spatially broad and unstructured, operating over a much larger spatial scale than excitation; (3) inhibition might be organized and modular, but poorly aligned with excitation; or (4) the highly organized and co-aligned patterns of excitation and inhibition found in mature animals (Wilson et al., 2017) might already be present early in the developing visual cortex. Resolving this question is critical to both constrain models of early network development\u2014many of which rely on structured intracortical inhibition\u2014and to understand the degree to which inhibition contributes to distributed patterns of cortical activity in early development.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig1-v1.jpg)\n\n**Figure 1.:** Schematic showing potential arrangements of inhibitory and excitatory activity patterns in developing cortex. Top row: Excitation is known to be highly modular and spatially structured. Middle row: Inhibition could be absent (a), broadly unstructured (b), or modular (c, d); if modular, the spatial arrangement of those modules could be shifted with respect to excitatory activity (c), or already well aligned as found in the mature cortex (d). Scale bar: 1 mm.\n\nHere, we address this by using widefield and two-photon calcium imaging of spontaneous activity to examine the structure of inhibitory networks in the developing ferret primary visual cortex. We first demonstrate in vivo that at early developmental ages where the visual cortex shows modular activity, GABAergic signaling already exerts a strong inhibitory effect. Next, by employing the inhibitory neuron-specific enhancer mDlx (Dimidschstein et al., 2016) paired with the genetically encoded calcium indicator GCaMP6s, we find that inhibitory neurons exhibit modular patterns of activity that extend over several millimeters in the developing visual cortex. These patterns reveal long-range correlated networks with precise local organization, highly similar in structure to those of excitatory networks. Furthermore, we find that inhibitory and excitatory networks show a remarkable degree of spatial consistency and co-alignment on both global and cellular scales. These findings clearly demonstrate the long-range and fine-scale organization of intracortical inhibition in the developing cortex, and support the ability of large-scale cortical networks to self-organize through precisely correlated local excitatory and inhibitory activity.\n\n## Results\n\n### Spontaneous activity in inhibitory populations is modular and forms large-scale correlated networks prior to eye-opening\n\nOver the course of development, GABAergic signaling switches from exerting depolarizing effects to hyperpolarizing due to the maturation of intracellular chloride concentrations (Ben-Ari, 2002). In the ferret, functional GABAergic synapses have been shown to be present as early as postnatal day 20 (P20) (Dalva, 2010), but because these experiments utilized whole-cell recordings in cortical slices, it remains unclear whether these synapses exert an inhibitory effect at this age. To address this, we expressed GCaMP6s in excitatory neurons at P21\u201323 via AAV1.hSyn.GCaMP6s (Chen et al., 2013 Wilson et al., 2017) and performed widefield epifluorescent imaging of spontaneous activity in the primary visual cortex (Smith et al., 2018) prior to and following direct application of the GABA(A) antagonist bicuculline methiodide (BMI) to the cortex (Figure 2a\u2013b). BMI resulted in a pronounced increase in the frequency (Figure 2c; p<0.001; baseline=0.030 [0.016\u20130.050] Hz; BMI=0.200 [0.129\u20130.271] Hz, n=4 animals; median, interquartile range [IQR], Wilcoxon rank-sum test) and amplitude of spontaneous events (Figure 2d; p<0.001; baseline=0.374 [0.190\u20130.535] \u2206F/F, n [across four animals]=274 events; BMI=0.974 [0.470\u20131.220] \u2206F/F, n=732 events; median, IQR, Wilcoxon rank-sum test), demonstrating that in vivo GABA exerts a strong net inhibitory action at this point of development.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig2-v1.jpg)\n\n**Figure 2.:** (a) Experimental schematic; Ferret kits were injected with syn.GCaMP6s at approximately P10, and spontaneous activity was imaged at P21\u201323 (n=4 animals) both before and after bath application of the GABA antagonist bicuculine (BMI). (Right) Field-of-view for widefield epifluorescent calcium imaging. (b) Average trace across region of interest (ROI) for baseline spontaneous activity (top) and activity after BMI application (bottom) shows clear disinhibition of cortical activity. (c) Event frequency after BMI application is significantly higher than baseline (p<0.001; baseline=0.030 [0.016\u20130.050 ] Hz; BMI=0.200 [0.129\u20130.271 ] Hz; median, interquartile range [IQR], Wilcoxon rank-sum test). (d). Average event amplitude of BMI events are significantly higher than baseline (p<0.001; baseline=0.374 [0.190\u20130.535] \u2206F/F, n (across four animals)=274 events; BMI=0.974 [0.470\u20131.220] \u2206F/F, n=732 events; median, IQR, Wilcoxon rank-sum test).\n\nTo examine the structure of inhibitory networks in early development, we performed a series of experiments in which GABAergic neurons were specifically labeled via virally mediated expression of GCaMP6s under control of the mDlx enhancer, which was previously shown to drive expression specifically in GABAergic cells (Dimidschstein et al., 2016; Wilson et al., 2017). Widefield imaging of spontaneous activity in the primary visual cortex was performed at postnatal days 23\u201329 (P23\u201329, n=7 animals), approximately 7 days before eye-opening (typically between P31 and P34), at a time when modular activity and millimeter-scale networks have been previously shown in excitatory cells (Smith et al., 2018; Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig3-v1.jpg)\n\n**Figure 3.:** (a) Experimental schematic; ferret kits were injected with inhibitory specific mDlx.GCaMP6s at around P10, and spontaneous activity was imaged prior to eye-opening. (b) Example mean trace of inhibitory spontaneous activity across field of view for one representative animal. Numbers correspond to events in (c). (c) Example single-frame bandpass filtered events. (d) Spontaneous correlation patterns for three different seed points. (e) Correlation values at maxima as a function of distance from the seed point, as compared to surrogate shuffled correlations for the experiment shown in (b\u2013d, f). (f) Fractures in correlation patterns reveal regions of rapid transition in global correlation structure.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Viral expression is robust and homogenous across our imaging area. (a) Thirty-six randomly selected spontaneous inhibition events, bandpass filtered. (b) Field-of-view (FOV) of cranial window for widefield calcium imaging. (c) Average \u0394F/F across all events. (d) Percent of events where pixels within ROI were active (>3 s.d. over mean pixel activity) across all events (n=111). (e) All pixels within ROI participated in at least 10% of events. ROI, region of interest.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Example correlation patterns showing rapid change in correlation structure between nearby seed points (blood vessels masked). (b). Similarity of correlations falls off rapidly as the seed point is moved along the black line in (a), reflected in a sharp peak in fracture strength (per \u03bcm). (c). Spatial distribution of fracture strength for all pixels in ROI, showing seed points used in (a, b). Fracture image is reproduced from Figure 3f. ROI, region of interest.\n\nUnder light anesthesia, inhibitory neuron populations showed frequent spontaneous activity that exhibited a highly modular structure, with spontaneous events containing multiple distinct domains of activity distributed across the imaging field-of-view (FOV) and spanning several millimeters (Figure 3b\u2013c, Figure 3\u2014figure supplement 1). To determine if these modular patterns of activity reflect large-scale correlated inhibitory networks, we calculated the pixelwise Pearson\u2019s correlation coefficient across all detected spontaneous events. We found that inhibitory neurons indeed exhibit a spatially extended correlation structure, with both strong positively and negatively correlated domains extending several millimeters from the reference seed point (Figure 3d). Peak values of positively correlated domains were statistically significant up to 2 mm away from the seed point (Figure 3e; p<0.01 vs. surrogate data, 6 of 7 individual animals, bootstrap test), demonstrating the large-scale nature of inhibitory networks in the developing visual cortex.\n\nIn the mature cortex, orientation preference maps exhibit smooth variation, punctuated by abrupt discontinuities at orientation pinwheels and fractures (Bonhoeffer and Grinvald, 1991; Ohki et al., 2005), an organization shared by inhibitory neurons in the mature ferret (Wilson et al., 2017). Notably, prior work identified similar discontinuities in the patterns of distributed correlated activity (termed correlation fractures) in excitatory neurons early in development prior to the emergence of orientation maps (Smith et al., 2018). To determine if developing inhibitory networks exhibit similar fine-scale organization, we calculated the rate of change in correlation patterns for all pixels within our FOV (Figure 3\u2014figure supplement 2). This analysis revealed the presence of spatially discrete fractures over which inhibitory correlation patterns exhibit abrupt changes in structure, demonstrating a precise local organization in the coupling to large-scale inhibitory networks in the developing primary visual cortex (Figure 3f).\n\n### Quantitative agreement between inhibitory and excitatory network structure in developing visual cortex\n\nThe presence of modular activity patterns, together with long-range correlations exhibiting precise local structure, suggests that inhibitory neurons may already be tightly integrated into functional networks with excitatory cells in the developing cortex. To begin to address this, we undertook a quantitative comparison of excitatory and inhibitory networks assessed through spontaneous activity. We performed widefield imaging in animals expressing either hSyn.GCaMP6s, which is excitatory-specific in ferret (Wilson et al., 2017), or the inhibitory-specific mDlx.GCaMP6s. Imaging inhibitory and excitatory activity in separate animals allowed us to compare the statistical properties of spontaneous activity using the same highly sensitive calcium indicator. We first quantified the size of modular active domains in spontaneous events by fitting a two-dimensional Gaussian ellipse to each active region within an event and calculating the full-width at tenth of maximum (FWTM). Domain size was similar between inhibitory and excitatory events (Figure 4a; minor axis: I: 412.06 \u03bcm [386.73\u2013439.94], n=7 animals; E: 392.68 \u03bcm [371.46\u2013397.49], n=7 animals; median [IQR]; p = 0.142, Wilcoxon rank-sum test), and scales together regardless of threshold (full-width half max: I: 226.08 \u03bcm [212.19\u2013241.38], E: 215.45 [203.81\u2013218.09], data not shown). Together this supports the idea that the modular domains of local inhibitory activity operate on the same scale as excitatory activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig4-v1.jpg)\n\n**Figure 4.:** (a, b) Similar domain size for excitatory and inhibitory events. (a) Example event showing FWTM of Gaussian fit of active inhibitory domain (top) and fits of FWTM for 200 randomly selected domains from individual inhibitory (I, purple) and excitatory (E, green) animals, rotated to align major axis (bottom). (b) Median domain size for each I and E animal. Circles: individual animals, lines: group median and IQR. (c) Correlation strength at 1.8\u20132.2 mm from seed point. Filled circles individually significant versus surrogate (p<0.01). (d, e) Correlation wavelength is similar between I and E networks. (d) (top) Correlation pattern averaged over all seed points in single animal with inhibitory GCaMP. (bottom) Correlation as function of distance. (e). Wavelength of the correlation pattern for I and E. Circles: individual animals, lines: group median and IQR. (f\u2013g) Similar eccentricity of local correlation structure. (f) Examples for two seed points from the same inhibitory animal, numbers indicate measured eccentricity. (g) Median eccentricity for all seed points. Circles: individual animals, lines: group median and IQR. (h) Fracture strength is similar for I and E networks. (i, j) Spontaneous activity is moderately low-dimensional in both E and I networks. (i) Cumulative explained variance for principal components of spontaneous events (lines indicate individual animals). (j). Median dimensionality, calculated from event-matched (n=30 events, n=100 simulations) random subsampling of events. Circles: individual animals, lines: group median and IQR. IQR, interquartile range.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a, d) Example inhibitory (a) and excitatory (d) correlation patterns generated using large events that extend over at least 50% of the ROI area (left, n=106 events) compared to patterns computed from all frames with active pixels (>3 s.d, 0% area threshold) (right, n=461 events). (b, e) Correlation similarity map comparing network made of Large events and network including All events (Large vs. All), for inhibitory (b) and excitatory (e) examples. (c). Strength of correlation maxima found 2 mm away from seed point for both inhibitory (I, purple) and excitatory (E, green) networks is not sensitive to area threshold. (f). Median value of Large versus All correlation similarity maps for all animals. Both inhibitory and excitatory networks show highly similar Large versus All correlation similarities, though excitatory similarities are greater than inhibitory (I: 0.87 [0.80\u20130.90], n=7. E: 0.98 [0.97\u20130.98],n=7, p=0.0088, Wilcoxon rank-sum test). ROI, region of interest.\n\nNext, we quantitatively examined the correlation patterns for excitatory and inhibitory networks revealed by spontaneous activity. We find that correlations were similarly long-range, with equivalent strength 2 mm away from the seed point (Figure 4c; I: r=0.29 (0.25\u20130.31), E: r=0.24 [0.27\u20130.31]; p=0.848, Wilcoxon rank-sum test). Likewise, the wavelength estimated from the full angle-averaged correlation function was similar between inhibitory and excitatory networks (Figure 4d,e; I: 0.84 mm [0.70\u20130.96], E: 0.81 mm [0.77\u20130.901]; p=0.848, Wilcoxon rank-sum test), and approximately similar to the wavelength of orientation columns in the mature cortex (Bonhoeffer and Grinvald, 1993; White et al., 2001b; Kaschube et al., 2010). Additionally, correlations in inhibitory networks exhibited a strong local anisotropy, with local correlations around the seed point showing a high degree of eccentricity that was consistent with excitatory correlations (Figure 4f,g; I: 0.70 [0.66\u20130.73], E: 0.69 [0.67\u20130.71]; p=0.949, Wilcoxon rank-sum test). Finally, we found that the strength of correlation fractures was highly similar between excitatory and inhibitory networks, reflecting a similar degree of precision in fine-scale network organization (Figure 4h; I: 1.86*10\u20133 (per \u03bcm) [1.49*10\u20133 \u20132.13*10\u20133], E: 1.62*10\u20133 (per \u03bcm)[1.35*10\u20133\u20132.22*10\u20133]; p=0.655, Wilcoxon rank-sum test). Taken together, these results demonstrate a strong degree of quantitative similarity in the spatial structure of inhibitory and excitatory networks in the developing visual cortex.\n\nPrior work has shown that in locally heterogeneous network models that recapitulate the structure of developing excitatory networks, long-range correlations exhibiting both local anisotropy and pronounced fractures strongly coincide with spontaneous activity patterns that reside in a low-dimensional subspace (Smith et al., 2018). Given the similarities in both local and long-range correlation structure, as well as fracture strength between excitatory and inhibitory networks, we computed the dimensionality of inhibitory spontaneous events and compared them to the dimensionality of event-number-matched events in excitatory neurons. Here, dimensionality is a quantification of the effective number of principal components describing the data (Abbott et al., 2011), which can be used to estimate the amount of variation in the observed events. We found that across animals, inhibitory and excitatory events tended to reside in similarly low-dimensional subspaces (Figure 4i,j; I: 10.55 [9.60\u201311.78], E: 9.44 [8.44\u201310.01]; median [IQR]; p=0.142, Wilcoxon rank-sum test), further supporting the contribution of inhibition to local heterogeneous networks in the developing visual cortex.\n\n### Precise spatial alignment of inhibitory and excitatory networks across millimeters\n\nThese results strongly suggest that excitatory and inhibitory neurons are tightly coupled into the same functional networks early in development. To address this directly, we performed widefield imaging of spontaneous activity of both excitatory and inhibitory neurons within the same animals (P25\u201326, n=3 animals; Figure 5\u2014figure supplement 1a). Animals were injected with AAVs expressing GCaMP6s in inhibitory cells under control of the mDlx enhancer (Dimidschstein et al., 2016) and jRCaMP1a (Dana et al., 2016) in excitatory cells with hSyn (Wilson et al., 2017). Spontaneous activity was imaged using appropriate excitation and emission filters in interleaved blocks of 20 min. We observed similar patterns of modular spontaneous events in inhibitory and excitatory neurons, and individual events with corresponding patterns of activity could frequently be found in both excitatory and inhibitory data sets (Figure 5a, Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig5-v1.jpg)\n\n**Figure 5.:** (a) Example spontaneous inhibitory (mDlx.GCaMP6s, top) and excitatory (syn.jRCaMP1a, bottom) events recorded from same animal (I color axis: \u20132 to \u20132 z-score, E color axis: \u20131 to 1 z-score). Example events were chosen based on pattern similarity. (b) Highly similar correlation patterns in inhibitory and excitatory networks for corresponding seed points. (c) Quantification of I versus E correlation similarity for all seed points. Circles indicate seed points illustrated in (b). (d). Similarity for all seed points in (c) falls within 95% confidence intervals (CIs) of bootstrapped I versus I similarity. (e) Within animal comparison of correlation strength for E and I (median and IQR within animal). Filled circles individually significant versus surrogate (p<0.01). (f) Similarity of I versus E correlations is significantly greater than shuffle (median and IQR within animal). Brackets indicate IQR of bootstrapped I versus I similarity. (g) Long-range correlations show significant network similarity. I versus E correlation similarity remains significant versus surrogate (red, 95% CI of surrogate, averaged across animals) for increasingly distant regions (excluding correlations within 0.4\u20131.4 mm from the seed point).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Experimental schematic; I and E spontaneous activity imaged in interleaved 20 min blocks. (b) Sorted correlation matrix of inhibitory and excitatory events. Matrix shows not only clear clusters of repeating patterns within inhibitory and excitatory events, but also correlated patterns between inhibitory and excitatory events. Magenta and green circles indicate correlation value between example inhibitory and excitatory events in (c). (c) Example inhibitory and excitatory events with correlated spatial patterns.\n\nTo compare the structure of excitatory and inhibitory networks, we computed pixelwise correlations separately for all excitatory and inhibitory events for each animal. When selecting the same seed point, the spatial patterns of correlated activity were highly similar across networks (Figure 5b), and exhibited equivalent strength extending across several millimeters (Figure 5e). To quantify this similarity, we computed second-order correlations between excitatory and inhibitory correlation matrices (see Materials and methods), which revealed high levels of correlation similarity across nearly all seed-points within the imaging window (Figure 5c), indicating highly similar large-scale networks. To determine if the level of similarity between networks was statistically significant, we compared it to both the distribution obtained from subsampling inhibitory events (I vs. I, thereby establishing an upper bound given measurement noise and finite event numbers), as well as to surrogate data. We find that excitatory and inhibitory correlation similarity is significantly greater than surrogate (p<0.01 for 3 of 3 individual animals, bootstrap test) and near the level of within inhibitory similarity (Figure 5d and f; colors correspond to data from three individual animals). Notably, excitatory and inhibitory networks exhibit strong similarity even in their long-range correlations, as similarity remained significantly greater than surrogate even when considering only correlations over 1.4 mm from the seed point (Figure 5g; p<0.01, I vs. E networks vs surrogate, bootstrap test). Taken together, these results demonstrate the presence of overlapping and co-aligned excitatory and inhibitory networks in the developing primary visual cortex.\n\n### Excitatory and inhibitory networks are tightly integrated at cellular scale\n\nTo assess whether the large-scale alignment of excitatory and inhibitory networks observed above extends to the cellular level, we performed simultaneous two-photon imaging of excitatory and inhibitory neurons (P23\u201326). We co-injected AAVs expressing hSyn.GCaMP6s (excitatory) and mDlx.GCaMP6s.P2A.NLS-tdTomato (inhibitory), allowing us to distinguish inhibitory neurons in vivo through tdTomato expression (Figure 6a, Figure 6\u2014figure supplement 1). We observed highly modular spontaneous activity in both excitatory and inhibitory cells, with local populations showing tightly coordinated patterns of activity across cell types (Figure 6b, Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig6-v1.jpg)\n\n**Figure 6.:** (a) (Left): Example FOV showing GCaMP signal from excitatory and inhibitory neurons. (Middle/Right): Expanded images showing nuclear tdTomato signal specifically in inhibitory neurons (middle) and merged with GCaMP signal (right). (b) Traces of spontaneous activity for excitatory (E, green) and inhibitory (I, purple) neurons as indicated in (a). (c). Event amplitude for local (<75 \u00b5m) excitatory and inhibitory responses. For clarity when plotting, 5% of responses are shown for 2186 cells and 1231 events from 21 FOV in five animals, and responses are clipped at 12 z-units. (d). Example pairwise correlations between an inhibitory neuron (green) and all cells (left), excitatory cells (middle), and inhibitory cells (right). (e). Pairwise correlations as function of distance for an example FOV shown in (a\u2013d) for E-E, I-I, and E-I pairs. (f) same as (e) averaged over 21 FOV from five animals. Scale bars: (a, d): 100 \u00b5m; (b): 30 s, 3 \u2206F/F. FOV, field-of-view.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (From left to right) Confocal images of GCaMP6s (green), tdTomato (red), merged GCaMP6s and tdTomato, and glutamate decarboxylase 67 (GAD67, cyan). Arrows indicate individual cell bodies, showing co-labeling of GCaMP6s, nuclear tdTomato, and GAD67.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a, b) Example FOV and activity traces for excitatory and inhibitory neurons are shown in (a) (replotted from Figure 4). (c). Cellular activity patterns for eight spontaneous events are indicated in (b). Scale bars: (a, c): 100 \u00b5m; (b): 30 s, 3 \u2206F/F. FOV, field-of-view.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (a) Top row: Pairwise correlations between an example inhibitory neuron and all cells (left), excitatory cells (middle), and inhibitory cells (right), replotted from Figure 4d. Middle and bottom row: additional example seed points (middle: excitatory neuron, bottom: inhibitory neuron) from same FOV. (b) same as (a), but for different animal. Scale bar: 100 \u03bcm. FOV, field-of-view.\n\nTo quantify the relative balance of excitatory and inhibitory activity within local populations, we computed the average response of all cells of a given cell type within a 75-\u00b5m region around each neuron for all spontaneous events. We found the amplitude of events within these local populations was highly correlated between excitatory and inhibitory cells (r=0.86, 2186 cells and 1231 events from 21 FOV in five animals; Figure 6c), suggesting locally balanced activity. Both inhibitory and excitatory neurons exhibited spatially organized pairwise correlations across spontaneous events, with distributed patches of positively correlated cells located hundreds of microns away. Notably, the spatial structure of pairwise correlations for a given neuron (whether inhibitory or excitatory) with either inhibitory or excitatory cells was well aligned (p<0.001 vs. shuffle), irrespective of cell type (Figure 6d, Figure 6\u2014figure supplement 3). Finally, examining correlation strength as a function of distance and cell type demonstrates that correlated excitatory and inhibitory networks exhibit a similar spatial scale at the cellular level (Figure 6e and f). Taken together, these results show that excitatory and inhibitory neurons are precisely organized in the developing visual cortex into the same spatially structured and locally correlated functional networks.\n\n## Discussion\n\nBy applying the inhibitory interneuron-specific expression of fluorescent calcium sensors to the developing visual cortex, we were able to directly assess the structure of inhibitory cortical networks and their integration with excitatory networks. We show that prior to eye-opening and the onset of reliable stimulus-evoked responses (Chapman et al., 1996), intracortical inhibition is both present and highly organized, with inhibitory networks already displaying patterns of modular and correlated spontaneous activity that span several millimeters. Inhibitory networks exhibit quantitatively similar structures to excitatory networks, which together show precise alignment at both local and global scales in the patterns of correlated spontaneous activity. Taken together, these findings demonstrate that the presence of tightly coupled excitatory and inhibitory functional networks in the developing visual cortex.\n\nIn the mature ferret, both inhibitory and excitatory neurons are organized into a columnar map of orientation preference, with orientation-specific subnetworks of functionally coupled excitatory and inhibitory neurons present not only within iso-orientation domains but also near orientation pinwheels (Wilson et al., 2017). This organization stands in contrast to the non-specific local pooling of nearby excitatory activity by inhibitory neurons found in the \u2018salt-and-pepper\u2019 rodent cortex (Kerlin et al., 2010; Bock et al., 2011; Hofer et al., 2011; Packer and Yuste, 2011; Runyan and Sur, 2013; Scholl et al., 2015), raising the possibility that the functionally specific organization of inhibitory cells in the mature ferret emerges from an initially non-specific state over the course of development. However, our finding of sharp correlation fractures in inhibitory networks (Figure 3f, Figure 3\u2014figure supplement 2) is inconsistent with non-specific local pooling and argues strongly against this possibility. Rather, our results indicate that in the developing visual cortex, inhibitory neurons are already tightly integrated into functionally specific networks. Furthermore, given that the patterns of correlated activity undergo extensive refinement in the week prior to eye-opening (Smith et al., 2018), these results also suggest that excitatory and inhibitory networks likely refine in parallel over development to produce the tightly coupled organization found in the mature cortex (Wilson et al., 2017).\n\nOne potential caveat to these results is that genetically encoded calcium sensors can exhibit non-linearities in their response to neural activity that may vary by cell type, baseline firing rate, and sensor, possibly obscuring subtle differences in the structure of excitatory or inhibitory networks. Although such differences could potentially impact the measured size or magnitude of domains or underestimate the spatial extent of some of the activity patterns, differences in sensor function cannot account for the presence of modular inhibitory activity or the spacing of excitatory and inhibitory domains. Our data clearly show modular patterns of inhibitory activity that extend throughout the full imaging area (Figure 3\u2014figure supplement 1c-d), which show clearly detectable troughs between active regions (Figure 3c, Figure 3\u2014figure supplement 1a), results which also argue against a saturation of the calcium signal. In addition, excitatory events imaged with jRCaMP1a (Figure 5) have spatially similar features to those imaged with GCaMP6s (Figure 5, Smith et al., 2018), indicating that variations in sensitivity or non-linearities across sensors are unlikely to obscure differences in the precise alignment of excitatory and inhibitory correlation patterns.\n\nThe mDlx enhancer used in this study has been shown to drive expression across several subtypes of inhibitory cells (Dimidschstein et al., 2016), which have been ascribed distinct roles within cortical circuits (see (Hattori et al., 2017; Wood et al., 2017) for reviews). However, in the mature ferret, parvalbumin (PV), somatostatin (SOM) and non-PV, non-SOM GABAergic neurons were all found to be equivalently integrated into specific and spatially organized functional networks (Wilson et al., 2017). Although the low expression of PV in the weeks prior to eye-opening (Gao et al., 2000) makes it difficult to separate inhibitory neurons by subtype at these ages, our results suggest that a similarly organized and integrated structure to that in the mature ferret may already exist in the developing cortex. Future work, potentially leveraging inhibitory subtype-specific viral approaches (Mehta et al., 2019; Vormstein-Schneider et al., 2020), will be required to directly test the functional roles of specific GABAergic subtypes in developing cortical networks.\n\nLarge-scale distributed functional networks are a hallmark of mature cortical organization and are exemplified by the columnar arrangement of orientation preference in the visual cortex of primates and carnivores (Blasdel and Salama, 1986; Bonhoeffer and Grinvald, 1991; Ohki et al., 2005). Here, co-tuned columns preferentially interconnected by specific long-range horizontal projections (Gilbert and Wiesel, 1989; Malach et al., 1993; Bosking et al., 1997) which emerge over the course of development (Ruthazer and Stryker, 1996; Borrell and Callaway, 2002). The presence of modular activity and long range-correlations in the developing cortex prior to the emergence of these horizontal connections, coupled with the finding that correlations persist in the absence of feedforward input (Smith et al., 2018), has been taken to indicate that local intracortical circuits are sufficient to generate these patterns of activity. Models of developing cortical networks can rely on local connectivity to self-organize, thereby producing modular patterns of activity (von der Malsburg, 1973; Swindale, 1997; Miller, 1994; Barrow et al., 1996). If these local connections are sufficiently heterogeneous, the resulting patterns of activity reside in a low-dimensional subspace and produce long-range correlations without requiring long-range horizontal connections (Smith et al., 2018). A strong prediction of such models is the presence of tightly integrated and co-aligned excitatory and inhibitory networks (Ermentrout and Cowan, 1979; Wilson and Cowan, 1973), in agreement with our experimental observations in the developing cortex. Thus, our results suggest that short-range intracortical interactions between tightly coupled excitatory and inhibitory circuits give rise to large-scale distributed networks during early development, which may serve as a seed for future functional organization in the cortex.\n\n## Materials and methods\n\n### Animals\n\nAll experimental procedures were approved by the University of Minnesota Institutional Animal Care and Use Committee and were performed in accordance with guidelines from the US National Institutes of Health. We obtained 20 male and female ferret kits from Marshall Farms and housed them with jills on a 16 h light/8 h dark cycle. No statistical methods were used to predetermine sample sizes, but our sample sizes are similar to those reported in previous publications.\n\n### Viral injection\n\nViral injections were performed as previously described (Smith and Fitzpatrick, 2016) and were consistent with prior work (Smith et al., 2018). Injections targeted the primary visual cortex, defined as thalamo-recepient visual cortex. In the ferret, primary visual cortex includes both areas 17 and 18, which both receive direct thalamic innervation and exhibit columnar mapping of orientation (White et al., 1999; White et al., 2001a). Briefly, we expressed GCaMP6s (Chen et al., 2013) in inhibitory interneurons by microinjecting AAV1.mDLx.GCaMP6s.P2A.NLS.tdTomato (University of Minnesota Viral Vector and Cloning Core), based on the mDlx inhibitory specific enhancer (Dimidschstein et al., 2016), into layer 2/3 of the primary visual cortex at P10\u201315 approximately 10\u201315 days before imaging experiments. To image excitatory and inhibitory activity, animals used for widefield experiments were injected with a 1:1 ratio of AAV1.mDlx.GCaMP6s.P2A.NLS.tdTomato and AAV1.Syn.NES.jRCaMP1a.WPRE.SV40, and animals used for two-photon experiments were injected with a 1:1 ratio of AAV1.mDLx.GCaMP6s.P2A.NLS.tdTomato and AAV1.Syn.GCaMP6s.WPRE.SV40.\n\nAnesthesia was induced with isoflurane (3.5\u20134%) and maintained with isoflurane (1\u20131.5%). Buprenorphine (0.01 mg/kg) and either atropine (0.2 mg/kg) or glycopyrrolate (0.01 mg/kg) were administered, as well as 1:1 lidocaine/bupivacaine at the site of incision. Animal temperature was maintained at approximately 37\u00b0C with a water pump heat therapy pad (Adroit Medical HTP-1500, Parkland Scientific). Animals were also mechanically ventilated and both heart rate and end-tidal CO2 were monitored throughout the surgery. Using aseptic surgical technique, skin and muscle overlying visual cortex were retracted, and a small burr hole was made with a handheld drill (Fordom Electric Co.). Approximately 1 \u00b5l of virus contained in a pulled-glass pipette was pressure injected into the cortex at two depths (~200 \u00b5m and 400 \u00b5m below the surface) over 20 min using a Nanoject-II (World Precision Instruments). The craniotomy was filled with 2% agarose and sealed with a thin sterile plastic film to prevent dural adhesion.\n\n### Cranial window surgery\n\nOn the day of experimental imaging, ferrets were anesthetized with 3\u20134% isoflurane. Atropine was administered as in virus injection procedure. Animals were placed on a feedback-controlled heating pad to maintain an internal temperature of 37\u201338\u00b0C. Animals were intubated and ventilated, and isoflurane was delivered between 1% and 2% throughout the surgical procedure to maintain a surgical plane of anesthesia. An intraparietal catheter was placed to deliver fluids. EKG, end-tidal CO2, and internal temperature were continuously monitored during the procedure and subsequent imaging session. The scalp was retracted and a custom titanium headplate adhered to the skull using C&B Metabond (Parkell). A 6\u20137 mm craniotomy was performed at the viral injection site and the dura retracted to reveal the cortex. One 4 mm cover glass (round, #1.5 thickness, Electron Microscopy Sciences) was adhered to the bottom of a custom titanium insert and placed onto the brain to gently compress the underlying cortex and dampen biological motion during imaging. The cranial window was hermetically sealed using a stainless-steel retaining ring (5/16-in. internal retaining ring, McMaster-Carr). Upon completion of the surgical procedure, isoflurane was gradually reduced (0.6\u20130.9%) and then vecuronium bromide (0.4 mg/kg/hr) mixed in an LRS 5% Dextrose solution was delivered IP to reduce motion and prevent spontaneous respiration.\n\n### Widefield epifluorescence and two-photon imaging\n\nWidefield epifluorescence imaging was performed with an sCMOS camera (Zyla 5.5, Andor; Prime BSI express, Teledyne) controlled by \u03bcManager (Edelstein et al., 2010). Images were acquired at 15 Hz with 4\u00d74 binning to yield 640\u00d7540 pixels (Zyla) or 2\u00d72 binning and additional offline 2\u00d72 binning to yield 512\u00d7512 pixels (Prime BSI). Two-photon imaging was performed with a commercial microscope (Neurolabware) driven by an Insight X3 laser (Spectra Physics). Imaging was performed at 920 nm (GCaMP) and 1040 nm (tdTomato), and fluorescence was collected on separate PMTs using a 562-nm dichroic mirror and 510/84 nm (GCaMP) and 607/70 nm (tdTomato) emission filters (Semrock). Images were collected at 796\u00d7512 pixels at 30 Hz.\n\nSpontaneous activity was captured in 10-min imaging sessions, with the animal sitting in a darkened room facing an LCD monitor displaying a black screen. All imaging of spontaneous activity was done in young animals (P23\u201329) prior to eye-opening (~P31 to P35).\n\n### Immunostaining and imaging\n\nTo confirm that tdTomato expression from AAV1.mDLx.GCaMP6s.P2A.NLS.tdTomato was specific to inhibitory neurons as expected from previous work (Wilson et al., 2017), we performed immunostaining in a subset of animals. Following imaging, animals were euthanized and transcardially perfused with 0.9% heparinized saline and 4% paraformaldehyde. The brains were extracted, post-fixed overnight in 4% paraformaldehyde, and stored in 0.1 M phosphate buffer solution. Using a vibratome, brains were tangentially sectioned along the surface of the imaging window (50 \u03bcm steps). Slices were stained for GAD67 using Mouse anti- GAD67 (1:1000, Sigma-Aldrich, MAB5406) and Alexa 405 donkey anti-mouse (1:500, Abcam, AB175659) as described (Wilson et al., 2017). Imaging was performed on a confocal microscope (Nikon C2).\n\n### Bicuculline application\n\nTo test whether GABAergic signaling exerted net inhibitory effects at the ages examined in this study, we bath applied the GABA(A) antagonist BMI directly to the cortex at P21\u201323 in animals expressing AAV1.Syn.GCaMP6s.WPRE.SV40. To apply BMI, the cannula covering the cranial window was removed and the exposed cortex was gently flushed with ACSF. After collecting 10 min of baseline spontaneous activity, 10 \u03bcM BMI in ACSF was bath applied to the cortex, and spontaneous activity was imaged for an additional 10 min.\n\n### Data analysis\n\n#### Signal extraction for widefield epifluorescence imaging\n\nImage series were motion corrected using rigid alignment and a region of interest (ROI) was manually drawn around the cortical region of GCaMP expression. Additionally, a ROI mask was manually drawn around blood vessels to remove vessel artifacts. The baseline fluorescence (F0) for each pixel was obtained by applying a rank-order filter to the raw fluorescence trace with a rank 70 samples (for excitatory data) or 190 samples (for inhibitory data) and a time window of 30 s (451 samples). The rank and time window were chosen such that the baseline faithfully followed the slow trend of the fluorescence activity. The baseline-corrected spontaneous activity was calculated as (F\u2013F0)/F0=\u0394 F/F0.\n\n#### Event detection\n\nDetection of spontaneously active events was performed essentially as described (Smith et al., 2018). Briefly, we first determined active pixels on each frame using a pixelwise threshold set to 3 s.d. above each pixel\u2019s mean value across time. Active pixels not part of a contiguous active region of at least 0.01 mm2 were considered \u2018inactive\u2019 for the purpose of event detection. Active frames were taken as frames with a spatially extended pattern of activity (>50% of pixels were active). Our results were not sensitive to area threshold, as removing the area threshold requirement and including all frames with activity greater than 3 s.d resulted in correlation patterns with highly similar spatial structure for both inhibitory and excitatory networks. Furthermore, the strength of correlations 2 mm from the seed point for inhibitory and excitatory networks were equivalent for networks calculated from large events and all events (Figure 4\u2014figure supplement 1). Consecutive active frames were combined into a single event starting with the first high-activity frame and then either ending with the last high-activity frame or, if present, an activity frame defining a local minimum in the fluorescence activity. To assess the spatial pattern of an event, we extracted the maximally active frame for each event, defined as the frame with the highest activity averaged across the ROI. While correlation patterns have been shown to be stable with as low as 10 events (Smith et al., 2018), datasets with fewer than 30 detected events were excluded from this study.\n\nDue to differences in signal-to-noise ratio in experiments using jRCaMP1a, we used a pixelwise threshold of 2 s.d to determine active pixels, and frames were >30% of the pixels were active were considered active frames.\n\n#### Spontaneous correlation patterns\n\nSpontaneous correlation patters were calculated as previously described (Smith et al., 2018). Briefly, we applied a Gaussian spatial band-pass filter (sigmalow=26 \u00b5m and sigmahigh=195 \u00b5m) to the maximally active frame in each event and downsampled it to 160\u00d7135 (128\u00d7128, Prime BSI) pixels. The resulting patterns, named spontaneous patterns A in the following, were used to compute the spontaneous correlation patterns as the pairwise Pearson\u2019s correlation between all locations x within the ROI and the seed point s:\n\n$$\nC(s,x)=\\frac{1}{N\u22121}\\sumi=1N\\frac{(A_{i}(s)\u2212\u27e8A_{i}(s)\u27e9)(A_{i}(x)\u2212\u27e8A_{i}(x)\u27e9)}{\\sigma_{s}\\sigma_{x}}\n$$\n\nHere the brackets \u27e8 \u27e9 denote the average over all events and \u03c3x denotes the standard deviation of A over all N events i at location x.\n\n#### Spontaneous fractures\n\nSpontaneous fractures were computed as previously described (Smith et al., 2018). Fracture strength was defined as the rate by which the correlation pattern changes when moving the seed point location over adjacent pixels. We defined fracture magnitude as the difference in fracture strength averaged over the fracture lines, and its average in regions >130 \u00b5m apart from the nearest fracture line. Fracture lines were identified by first applying a spatial median filter with a window size of 78 \u00b5m to remove outliers. We then applied histogram normalization contrast enhancement using contrast-limited adaptive histogram equalization (CLAHE, clip limit=20, size of neighborhood 260\u00d7260 \u00b5m2 using \u2018createCLAHE\u2019 in Python OpenCV), and a spatial high-pass filter (Gaussian filter, s.d. sigmahigh=390 \u00b5m). The resulting values were binarized (threshold=0), and the resulting two-dimensional binary array eroded and then dilated (twice) to remove single noncontiguous pixels (Python, Multidimenisonal image processing library [scipy.ndimage]). We skeletonized this binary array to obtain the fracture lines (Python, Scikit-Image).\n\n#### Event domain size\n\nTo estimate the size of active domains in spontaneous events, we first identified domains by taking the local maxima of each event after bandpass filtering. The local neighborhood of each domain (600 \u03bcm radius from maxima) was then fit with a two-dimensional Gaussian using nonlinear least squares:\n\n$$\na=\\frac{cos^{2}\\theta}{2\\sigma_{x}^{2}}+\\frac{sin^{2}\\theta}{2\\sigma_{y}^{2}}\n$$\n\n\n\n$$\nb=\\frac{-sin2\\theta}{4\\sigma_{x}^{2}}+\\frac{sin2\\theta}{4\\sigma_{y}^{2}}\n$$\n\n\n\n$$\nc=\\frac{sin^{2}\\theta}{2\\sigma_{x}^{2}}+\\frac{cos^{2}\\theta}{2\\sigma_{y}^{2}}\n$$\n\n\n\n$$\nG=y_{0}+He^{(\u2212(a(x\u2212x_{1})^{2}+2b(x\u2212x_{1})(y\u2212y_{1})+c(y\u2212y_{1})^{2}))}\n$$\n\nwhere H is the amplitude of the Gaussian, x1 (y1) is the x (y) center, \u03c3x (\u03c3y) is the standard deviation of the x (y) component, $\\theta$ is the angular rotation of the Gaussian, and y0 is the offset. Domain size was calculated as the FWTM of the minor axis of fitted Gaussian:\n\n$$\nFWTM_{minor}=\\sigma_{minor}2\\sqrt{2ln(10)}\n$$\n\n#### Strength of long-distance correlations\n\nTo determine the strength of correlations, we first identified local maxima (minimum separation between maxima: 800 \u00b5m) in the correlation pattern for each seed point. To assess the statistical significance of long-range correlations ~2 mm from the seed point, we compared the median correlation strength for maxima located 1.8\u20132.2 mm away against a distribution obtained from 100 surrogate correlation patterns. Surrogate correlation patterns control for correlations that arise from finite sampling by eliminating most of the spatial relationship between patterns (Smith et al., 2018). Surrogate correlation patterns were generated from spontaneous events that were randomly rotated (rotation angle drawn from a uniform distribution between 0\u00b0 and 360\u00b0 with a step size of 10\u00b0), translated (shifts drawn from a uniform distribution between \u00b1450 \u00b5m in increments of 26 \u00b5m, independently for x and y directions) and reflected (with probability 0.5, independently at the x and y axes at the center of the ROI).\n\n#### Correlation pattern wavelength\n\nTo find the wavelength of the correlation patterns, we first centered and averaged the local neighborhood (1500 \u03bcm radius) across all seed points. We then averaged over the angle to obtain the average correlation as a function of distance from the seed point and used spline interpolation to fit the data. The wavelength of the resulting spline interpolation was estimated as the distance to the first local maxima after 0.\n\n#### Eccentricity of local correlation structure\n\nTo describe the shape of the local correlation pattern around a seed point, we fit an ellipse (least-square fit) with orientation \u03a6, major axis \u03c21 and minor axis \u03c22 to the contour line at correlation = 0.7 around the seed point. The eccentricity \u03b5 of the ellipse is defined as:\n\n$$\n\\epsilon=\\frac{\\sqrt{\u03c2_{1}^{2}-\u03c2_{2}^{2}}}{\u03c2_{1}}\n$$\n\nWhere \u03b5=0 is a circle, and increasing values indicating greater elongation along the ellipse.\n\n#### Dimensionality of spontaneous activity\n\nWe estimated the dimensionality deff of the subspace spanned by spontaneous activity patterns by Abbott et al., 2011:\n\n$$\nd_{eff}=\\frac{\\sum_{i=1}^{N}\\lambda_{i}^{2}}{\\sum_{i=1}^{N}\\lambda_{i}^{2}}\n$$\n\nwhere \u03bbi are the eigenvalues of the covariance matrix for the N pixels within the ROI. As the value of the dimensionality is sensitive to differences in detected event number, to estimate the distribution of the dimensionality for each animal we calculated the dimensionality of randomly sub-sampled events (n=30 events, matched across animals, 100 simulations) and took the median of the distribution.\n\n#### Comparison of inhibitory and excitatory correlation similarity\n\nTo compare the similarity between inhibitory and excitatory correlation patterns within the same animal, we computed the second-order correlation between patterns. For each seed point, we calculated the second order Pearson\u2019s correlation between corresponding correlation patterns, while excluding pixels within a 400-\u03bcm exclusion radius around the seed point to prevent local correlations from inflating the similarity between the two networks. To get an estimate the upper bound of similarity within inhibitory networks, given a finite sampling size, we randomly split the detected inhibitory events into two groups and separately computed correlations and the second-order correlations between the halves (n simulations=100.) To determine if the observed networks are more similar than chance, we calculated the similarity between the excitatory network and a surrogate inhibitory network (surrogate events calculated as above, with 100 simulations and surrogate similarity calculated as median and IQR across simulations). To determine if spontaneous correlations far from the seed point also maintain high degrees of similarity, we systematically increased the size of the exclusion radii, calculating similarity only using data far from the seed points. Exclusion radius size ranged from 400 to 1400 \u03bcm, in 200 \u03bcm steps.\n\n#### Two-photon event detection and cellular correlations\n\nTwo-photon images were corrected for rigid in plane motion via a 2D cross-correlation. Cellular ROIs were drawn using custom software (Cell Magic Wand; Wilson et al., 2017) in ImageJ and imported into Matlab via MIJ (Sage and Prodanov, 2012, http://bigwww.epfl.ch/sage/soft/mij/). Cellular ROIs were then manually categorized as either being inhibitory or excitatory based on tdTomato expression. Fluorescence was averaged over all pixels in the ROI and traces were neuropil subtracted, where Fneuropil was taken as the average fluorescence within 30 \u00b5m excluding all cellular ROIs and \u03b1=0.6:\n\n$$\nF_{cell}=F_{raw}\u2212\\alphaF_{neuropil}\n$$\n\nActivity was taken as \u2206F/F0, where F0 was the baseline fluorescence obtained by applying a 60-s median filter, followed by a first-order Butterworth high-pass filter with a cutoff time of 60 s. To compute spontaneous correlations, we first identified frames containing spontaneous events, which were defined as frames in which >10% of imaged neurons exhibited activity >2 s.d. above their mean. Cellular activity on all event frames was then z-scored using the mean and s.d. of each frame, and pairwise Pearson\u2019s correlations were computed across all neurons over all active frames.\n\nThe similarity of cellular correlation patterns for inhibitory and excitatory cells was computed by first creating a spatially matched set of excitatory and inhibitory neurons. For each inhibitory cell in the FOV, a spatially matched excitatory cell was identified by finding the closest excitatory cell (within 50 \u00b5m). Then, for every cell in the FOV (excitatory and inhibitory) pairwise correlations were calculated with either inhibitory cells or the spatially matched excitatory cells. The similarity of these correlation patterns was taken as the second-order Pearson\u2019s correlation as above, while excluding cells <200 \u00b5m from the seed neuron. Statistical significance was computed by comparing measured similarity values against a shuffled distribution obtained by shuffling the pairwise correlations before computing similarity (100 shuffles).\n\nTo compare the amplitude of events within a local area, activity traces for each cell were smoothed with a three-sample median filter and z-scored across all frames. We then computed the average amplitude of all inhibitory (or excitatory) cells within a 75-\u00b5m radius for the maximally active frame of each event.\n\n#### Quantification and statistical analysis\n\nNonparametric tests were used for statistical testing throughout the study. Bootstrapping was used to determine null distributions when indicated. Center and spread values are reported as median and IQR, unless otherwise noted. Statistical analyses were performed in MATLAB and Python, and significance was defined as p<0.05.\n",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "c71f4be4-ffa5-43c3-b1ba-e5b140feacb7",
+      "submission_id": "c9075ca5-bcc0-48b5-882e-c86c08963884",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marla B Feller, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72456.sa1](https://doi.org/10.7554/eLife.72456.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Tightly-coupled inhibitory and excitatory functional networks in the early visual cortex\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tirin Moore as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Geoffrey J Goodhill (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll reviewers were in agreement that this study represents significant advancement in our understanding of inhibitory cortical networks during this crucial time in development. There were several suggestions by the reviewers that you are encouraged to implement to clarify the results and address particular confounding factors (particularly of those raised by Reviewer #2). These do not require new experiments but should be addressed in the revised text.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 My biggest concern is the potential of confounds introduced by using calcium imaging to measure responses of cell types with different firing rates. It would improve the work to more properly discuss these issues, and possibly try to estimate how much of an impact they could have. Is it possible that the extent of the excitatory events are underestimated because their lower firing rates put them below the threshold of measurable GCaMP activity? How different are the non-linearities between the 2 sensors? Finally, how much do the chosen event detection parameters (such as the requirement that more than 50% of pixels have to be active for an event to be counted) influence the results?\n\n\u2013 It would also be good to give a sense of how homogenous virus expression was throughout each imaging region, and to rule out that the scale of events is limited by the expression pattern.\n\n\u2013 Along the same lines: How many different patterns of spontaneous activity are usually detected? Figure 3 shows 3 evens that all look highly similar (with subtle differences in the most active regions, but not the spatial layout); supplementary figure 1 shows 2 patterns that appear to be the opposite of each other. The correlation matrix in supplementary figure 2 also seems to suggest that there are no more than 4 patterns that occur. The low dimensionality of the subspace supports this conclusion as well, but it would be good to quantify the number of observable patterns more directly (and to compare them against the pattern of expression).\n\nReviewer #3 (Recommendations for the authors):\n\nThe paper is quite polished and in my opinion there is little to change.\n\nThe methods were generally quite clear and used fundamental methods, but the description of the calculation of spontaneous fractures was opaque to me. It would help to unpack this a bit more and to describe which software tools were used (is CLAHE in ImageJ? Matlab?). Are \"eroded\" and \"diluted\" precise actions in a software tool?\n",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c69c0c90-f3e5-4fe4-a9fd-94c4191b754a",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C1",
+      "claim": "Intracortical inhibition plays a critical role in shaping activity patterns in the mature cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracortical inhibition plays a critical role in shaping activity patterns in the mature cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the role of inhibition in mature cortex, drawing from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "f378e239-cbd6-4891-ba86-b456a06c268c",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C2",
+      "claim": "Little is known about the structure of inhibition in early development prior to the onset of sensory experience.",
+      "claim_type": "EXPLICIT",
+      "source": "However, little is known about the structure of inhibition in early development prior to the onset of sensory experience, a time when spontaneous activity exhibits long-range correlations predictive of mature functional networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "dbfcd73b-acdd-4b21-8bff-efdddd32bace",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C3",
+      "claim": "Spontaneous activity exhibits long-range correlations predictive of mature functional networks during early development prior to sensory experience.",
+      "claim_type": "EXPLICIT",
+      "source": "However, little is known about the structure of inhibition in early development prior to the onset of sensory experience, a time when spontaneous activity exhibits long-range correlations predictive of mature functional networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior findings about spontaneous activity patterns in early development.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "c7d98b39-a6e2-490b-81b1-1a8e6e0d9619",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C4",
+      "claim": "Spontaneous activity in inhibitory neurons is highly organized into distributed modular networks before visual experience in ferret visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using calcium imaging of GABAergic neurons in the ferret visual cortex, we show that spontaneous activity in inhibitory neurons is already highly organized into distributed modular networks before visual experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "ecabfabe-fa9d-487d-ac0a-eaaa41020c61",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C5",
+      "claim": "Inhibitory neurons exhibit spatially modular activity with long-range correlations in developing ferret visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory neurons exhibit spatially modular activity with long-range correlations and precise local organization that is in quantitative agreement with excitatory networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by correlation analysis of calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "5af2c4f1-2867-4262-a4fc-e515ec257726",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C6",
+      "claim": "Inhibitory networks exhibit precise local organization that is in quantitative agreement with excitatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory neurons exhibit spatially modular activity with long-range correlations and precise local organization that is in quantitative agreement with excitatory networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by quantitative comparison of inhibitory and excitatory network properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "a8077068-e32a-425a-a826-9ef7ef028ec8",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C7",
+      "claim": "Excitatory and inhibitory networks are strongly co-aligned at both millimeter and cellular scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, excitatory and inhibitory networks are strongly co-aligned at both millimeter and cellular scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by widefield and two-photon imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "310f1abe-d18e-448e-9bf7-674a6745aabf",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C8",
+      "claim": "GABAergic interneurons have been implicated in response gain, stimulus discrimination, and network stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAergic interneurons have been implicated in a range of computations, including response gain, stimulus discrimination, and network stabilization (for reviews, see Isaacson and Scanziani, 2011; Den\u00e8ve and Machens, 2016; Ferguson and Cardin, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "02ce9765-0016-44fb-90ac-7d61d2b57f53",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C9",
+      "claim": "In the columnar visual cortex, inhibitory neurons actively shape response selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the columnar visual cortex, inhibitory neurons actively shape response selectivity (Wilson et al., 2018) and are organized into functionally-specific networks with excitatory neurons (Wilson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wilson et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "f771c6c8-0984-4177-b5c7-ef1fa2b31575",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C10",
+      "claim": "Inhibitory neurons are organized into functionally-specific networks with excitatory neurons in the columnar visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the columnar visual cortex, inhibitory neurons actively shape response selectivity (Wilson et al., 2018) and are organized into functionally-specific networks with excitatory neurons (Wilson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wilson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "344af909-9d72-497c-8610-6e65fe6d915f",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C11",
+      "claim": "GABAergic inhibition is initially absent in early development before progressively strengthening as the cortex matures.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAergic inhibition is initially absent in early development before progressively strengthening as the cortex matures (reviewed in Ben-Ari, 2002; Huang et al., 2007), raising the possibility that inhibition plays only a minor role in shaping early patterns of cortical activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "2638623e-be05-4423-8046-5b7a8b50ebe8",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C12",
+      "claim": "Prior to the onset of visual experience in ferret visual cortex, excitatory activity is already highly structured, showing modular and distributed activity with long-range correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in the ferret visual cortex demonstrated that prior to the onset of visual experience, excitatory activity is already highly structured, showing modular and distributed activity with long-range correlations (Smith et al., 2018), reminiscent of the columnar stimulus-evoked activity found in the mature cortex (Hubel and Wiesel, 1968; Blasdel and Salama, 1986; Weliky et al., 1996; Issa et al., 2000; Kara and Boyd, 2009; Smith et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Smith et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "e27c9401-269e-4b70-9bc8-f1cc451fdf5d",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C13",
+      "claim": "Early excitatory activity patterns are reminiscent of the columnar stimulus-evoked activity found in the mature cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in the ferret visual cortex demonstrated that prior to the onset of visual experience, excitatory activity is already highly structured, showing modular and distributed activity with long-range correlations (Smith et al., 2018), reminiscent of the columnar stimulus-evoked activity found in the mature cortex (Hubel and Wiesel, 1968; Blasdel and Salama, 1986; Weliky et al., 1996; Issa et al., 2000; Kara and Boyd, 2009; Smith et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to studies of mature cortex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "206614fe-c705-4ed8-890c-71991b6e84d1",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C14",
+      "claim": "Correlated networks in developing ferret visual cortex are not abolished when silencing feedforward activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These correlated networks are not abolished when silencing feedforward activity and predict future visually-evoked responses (Smith et al., 2018), suggesting a key role for early spontaneous activity in the development of mature cortical networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Smith et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "94ce33be-36a2-43d5-a272-d93e36c9dd4f",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C15",
+      "claim": "Correlated networks in developing ferret visual cortex predict future visually-evoked responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These correlated networks are not abolished when silencing feedforward activity and predict future visually-evoked responses (Smith et al., 2018), suggesting a key role for early spontaneous activity in the development of mature cortical networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Smith et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "8d57dad5-9e8f-49a3-9b30-17f0755991cf",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C16",
+      "claim": "GABAergic signaling switches from exerting depolarizing effects to hyperpolarizing due to the maturation of intracellular chloride concentrations over the course of development.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of development, GABAergic signaling switches from exerting depolarizing effects to hyperpolarizing due to the maturation of intracellular chloride concentrations (Ben-Ari, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ben-Ari, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "ee6d0d9e-a856-46d1-a96a-2eb7b0b8746a",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C17",
+      "claim": "Functional GABAergic synapses have been shown to be present as early as postnatal day 20 (P20) in ferret.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ferret, functional GABAergic synapses have been shown to be present as early as postnatal day 20 (P20) (Dalva, 2010), but because these experiments utilized whole-cell recordings in cortical slices, it remains unclear whether these synapses exert an inhibitory effect at this age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Dalva, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "51adcfd3-78d9-4fcf-8a76-2753a132b13e",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C18",
+      "claim": "BMI resulted in a pronounced increase in the frequency of spontaneous events in excitatory neurons at P21-23.",
+      "claim_type": "EXPLICIT",
+      "source": "BMI resulted in a pronounced increase in the frequency (Figure 2c; p<0.001; baseline=0.030 [0.016\u20130.050] Hz; BMI=0.200 [0.129\u20130.271] Hz, n=4 animals; median, interquartile range [IQR], Wilcoxon rank-sum test) and amplitude of spontaneous events",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from BMI application experiments shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "e7ea7a55-055e-4ac7-8a12-859d797c8394",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C19",
+      "claim": "BMI resulted in a pronounced increase in the amplitude of spontaneous events in excitatory neurons at P21-23.",
+      "claim_type": "EXPLICIT",
+      "source": "BMI resulted in a pronounced increase in the frequency (Figure 2c; p<0.001; baseline=0.030 [0.016\u20130.050] Hz; BMI=0.200 [0.129\u20130.271] Hz, n=4 animals; median, interquartile range [IQR], Wilcoxon rank-sum test) and amplitude of spontaneous events (Figure 2d; p<0.001; baseline=0.374 [0.190\u20130.535] \u2206F/F, n [across four animals]=274 events; BMI=0.974 [0.470\u20131.220] \u2206F/F, n=732 events; median, IQR, Wilcoxon rank-sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from BMI application experiments shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "ab12aea8-4aac-4fc6-bc43-ec5ebb0a48e4",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C20",
+      "claim": "In vivo GABA exerts a strong net inhibitory action at P21-23 in ferret visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "BMI resulted in a pronounced increase in the frequency (Figure 2c; p<0.001; baseline=0.030 [0.016\u20130.050] Hz; BMI=0.200 [0.129\u20130.271] Hz, n=4 animals; median, interquartile range [IQR], Wilcoxon rank-sum test) and amplitude of spontaneous events (Figure 2d; p<0.001; baseline=0.374 [0.190\u20130.535] \u2206F/F, n [across four animals]=274 events; BMI=0.974 [0.470\u20131.220] \u2206F/F, n=732 events; median, IQR, Wilcoxon rank-sum test), demonstrating that in vivo GABA exerts a strong net inhibitory action at this point of development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the BMI disinhibition experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "e3b9a421-ffbb-4c83-a7e5-43367636b48c",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C21",
+      "claim": "The mDlx enhancer drives expression specifically in GABAergic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the structure of inhibitory networks in early development, we performed a series of experiments in which GABAergic neurons were specifically labeled via virally mediated expression of GCaMP6s under control of the mDlx enhancer, which was previously shown to drive expression specifically in GABAergic cells (Dimidschstein et al., 2016; Wilson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Dimidschstein et al., 2016 and Wilson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "3a9763d0-1791-4d30-a7e8-36906a6a7cd2",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C22",
+      "claim": "Inhibitory neuron populations showed frequent spontaneous activity that exhibited a highly modular structure at P23-29.",
+      "claim_type": "EXPLICIT",
+      "source": "Under light anesthesia, inhibitory neuron populations showed frequent spontaneous activity that exhibited a highly modular structure, with spontaneous events containing multiple distinct domains of activity distributed across the imaging field-of-view (FOV) and spanning several millimeters (Figure 3b\u2013c, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by widefield imaging data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "731b5264-04f4-44d6-b13e-5e9258f19f4c",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C23",
+      "claim": "Inhibitory neurons exhibit a spatially extended correlation structure with both strong positively and negatively correlated domains extending several millimeters from the reference seed point.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inhibitory neurons indeed exhibit a spatially extended correlation structure, with both strong positively and negatively correlated domains extending several millimeters from the reference seed point (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "7bddeb6d-f834-4aaa-84cc-441661461ed5",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C24",
+      "claim": "Peak values of positively correlated domains in inhibitory networks were statistically significant up to 2 mm away from the seed point.",
+      "claim_type": "EXPLICIT",
+      "source": "Peak values of positively correlated domains were statistically significant up to 2 mm away from the seed point (Figure 3e; p<0.01 vs. surrogate data, 6 of 7 individual animals, bootstrap test), demonstrating the large-scale nature of inhibitory networks in the developing visual cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of correlation data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "3f0f2407-4111-442a-a4f8-e497b6a47037",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C25",
+      "claim": "Orientation preference maps in mature cortex exhibit smooth variation, punctuated by abrupt discontinuities at orientation pinwheels and fractures.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mature cortex, orientation preference maps exhibit smooth variation, punctuated by abrupt discontinuities at orientation pinwheels and fractures (Bonhoeffer and Grinvald, 1991; Ohki et al., 2005), an organization shared by inhibitory neurons in the mature ferret (Wilson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to studies of mature cortex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "24901137-1f38-4c81-be03-8d55894a11bc",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C26",
+      "claim": "Inhibitory neurons in mature ferret share the organization of orientation preference maps with smooth variation and abrupt discontinuities.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mature cortex, orientation preference maps exhibit smooth variation, punctuated by abrupt discontinuities at orientation pinwheels and fractures (Bonhoeffer and Grinvald, 1991; Ohki et al., 2005), an organization shared by inhibitory neurons in the mature ferret (Wilson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wilson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "30493e96-69c8-4a98-9c4c-c56a0de91b3e",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C27",
+      "claim": "Prior work identified similar discontinuities (correlation fractures) in the patterns of distributed correlated activity in excitatory neurons early in development prior to the emergence of orientation maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, prior work identified similar discontinuities in the patterns of distributed correlated activity (termed correlation fractures) in excitatory neurons early in development prior to the emergence of orientation maps (Smith et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Smith et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "c272f0c1-c710-4e4e-bc0b-7b0466a1aa3f",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C28",
+      "claim": "Developing inhibitory networks exhibit spatially discrete fractures over which inhibitory correlation patterns exhibit abrupt changes in structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed the presence of spatially discrete fractures over which inhibitory correlation patterns exhibit abrupt changes in structure, demonstrating a precise local organization in the coupling to large-scale inhibitory networks in the developing primary visual cortex (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fracture analysis shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "b511b59b-704b-4655-9fe5-920f79304976",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C29",
+      "claim": "Domain size was similar between inhibitory and excitatory events.",
+      "claim_type": "EXPLICIT",
+      "source": "Domain size was similar between inhibitory and excitatory events (Figure 4a; minor axis: I: 412.06 \u03bcm [386.73\u2013439.94], n=7 animals; E: 392.68 \u03bcm [371.46\u2013397.49], n=7 animals; median [IQR]; p = 0.142, Wilcoxon rank-sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative comparison of domain sizes shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "3537c14a-bc29-4da4-aa46-31b048e16795",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C30",
+      "claim": "Correlations were similarly long-range between excitatory and inhibitory networks, with equivalent strength 2 mm away from the seed point.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that correlations were similarly long-range, with equivalent strength 2 mm away from the seed point (Figure 4c; I: r=0.29 (0.25\u20130.31), E: r=0.24 [0.27\u20130.31]; p=0.848, Wilcoxon rank-sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "9435bdaf-b6d1-4a0c-b120-1b2acb8aa2fb",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C31",
+      "claim": "The wavelength estimated from the full angle-averaged correlation function was similar between inhibitory and excitatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the wavelength estimated from the full angle-averaged correlation function was similar between inhibitory and excitatory networks (Figure 4d,e; I: 0.84 mm [0.70\u20130.96], E: 0.81 mm [0.77\u20130.901]; p=0.848, Wilcoxon rank-sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by wavelength analysis shown in Figure 4d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "68d69ca3-dd22-44b4-8c5f-8c6f071d41d9",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C32",
+      "claim": "The wavelength of inhibitory and excitatory networks is approximately similar to the wavelength of orientation columns in the mature cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the wavelength estimated from the full angle-averaged correlation function was similar between inhibitory and excitatory networks (Figure 4d,e; I: 0.84 mm [0.70\u20130.96], E: 0.81 mm [0.77\u20130.901]; p=0.848, Wilcoxon rank-sum test), and approximately similar to the wavelength of orientation columns in the mature cortex (Bonhoeffer and Grinvald, 1993; White et al., 2001b; Kaschube et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citations to studies of mature cortex.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "a6b1b902-76f4-41df-818b-4a72e7967b6c",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C33",
+      "claim": "Correlations in inhibitory networks exhibited a strong local anisotropy, with local correlations around the seed point showing a high degree of eccentricity that was consistent with excitatory correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, correlations in inhibitory networks exhibited a strong local anisotropy, with local correlations around the seed point showing a high degree of eccentricity that was consistent with excitatory correlations (Figure 4f,g; I: 0.70 [0.66\u20130.73], E: 0.69 [0.67\u20130.71]; p=0.949, Wilcoxon rank-sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by eccentricity analysis shown in Figure 4f,g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "282ffa51-0ebf-4da7-918b-4d99a6e9df82",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C34",
+      "claim": "The strength of correlation fractures was highly similar between excitatory and inhibitory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that the strength of correlation fractures was highly similar between excitatory and inhibitory networks, reflecting a similar degree of precision in fine-scale network organization (Figure 4h; I: 1.86*10\u20133 (per \u03bcm) [1.49*10\u20133 \u20132.13*10\u20133], E: 1.62*10\u20133 (per \u03bcm)[1.35*10\u20133\u20132.22*10\u20133]; p=0.655, Wilcoxon rank-sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fracture strength analysis shown in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "d3806894-2951-4c4f-9c5a-0c8ff38e2a57",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C35",
+      "claim": "In locally heterogeneous network models that recapitulate the structure of developing excitatory networks, long-range correlations exhibiting both local anisotropy and pronounced fractures strongly coincide with spontaneous activity patterns that reside in a low-dimensional subspace.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has shown that in locally heterogeneous network models that recapitulate the structure of developing excitatory networks, long-range correlations exhibiting both local anisotropy and pronounced fractures strongly coincide with spontaneous activity patterns that reside in a low-dimensional subspace (Smith et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Smith et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "e3d09143-8f9f-47fa-b5d2-f9ed1c0d354e",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C36",
+      "claim": "Across animals, inhibitory and excitatory events tended to reside in similarly low-dimensional subspaces.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that across animals, inhibitory and excitatory events tended to reside in similarly low-dimensional subspaces (Figure 4i,j; I: 10.55 [9.60\u201311.78], E: 9.44 [8.44\u201310.01]; median [IQR]; p=0.142, Wilcoxon rank-sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dimensionality analysis shown in Figure 4i,j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "423a7db1-60c3-40ee-b6ce-8c86637ff7f4",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C37",
+      "claim": "When selecting the same seed point, the spatial patterns of correlated activity were highly similar across excitatory and inhibitory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "When selecting the same seed point, the spatial patterns of correlated activity were highly similar across networks (Figure 5b), and exhibited equivalent strength extending across several millimeters (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation pattern comparison shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "bd356ef4-f515-46d4-ac85-727d5eee9950",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C38",
+      "claim": "Excitatory and inhibitory correlation similarity is significantly greater than surrogate.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that excitatory and inhibitory correlation similarity is significantly greater than surrogate (p<0.01 for 3 of 3 individual animals, bootstrap test) and near the level of within inhibitory similarity (Figure 5d and f; colors correspond to data from three individual animals).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical comparison shown in Figure 5d and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "43015832-b73d-476b-9daa-d2557cfb9174",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C39",
+      "claim": "Excitatory and inhibitory networks exhibit strong similarity even in their long-range correlations, as similarity remained significantly greater than surrogate even when considering only correlations over 1.4 mm from the seed point.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, excitatory and inhibitory networks exhibit strong similarity even in their long-range correlations, as similarity remained significantly greater than surrogate even when considering only correlations over 1.4 mm from the seed point (Figure 5g; p<0.01, I vs. E networks vs surrogate, bootstrap test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by long-range correlation analysis shown in Figure 5g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "0bddaf9f-2db6-4f9c-a5d9-10dafafaca04",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C40",
+      "claim": "Local populations of excitatory and inhibitory cells show tightly coordinated patterns of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed highly modular spontaneous activity in both excitatory and inhibitory cells, with local populations showing tightly coordinated patterns of activity across cell types (Figure 6b, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by two-photon imaging data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "27131fc7-efe0-4fad-8140-3ac997e8d90c",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C41",
+      "claim": "The amplitude of events within local populations (75-\u00b5m region) was highly correlated between excitatory and inhibitory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the amplitude of events within these local populations was highly correlated between excitatory and inhibitory cells (r=0.86, 2186 cells and 1231 events from 21 FOV in five animals; Figure 6c), suggesting locally balanced activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by local population analysis shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "17f81c5d-02eb-4fe3-a9ca-95ec0e16fcd0",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C42",
+      "claim": "Both inhibitory and excitatory neurons exhibited spatially organized pairwise correlations across spontaneous events, with distributed patches of positively correlated cells located hundreds of microns away.",
+      "claim_type": "EXPLICIT",
+      "source": "Both inhibitory and excitatory neurons exhibited spatially organized pairwise correlations across spontaneous events, with distributed patches of positively correlated cells located hundreds of microns away.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pairwise correlation analysis at cellular resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "da7ee135-e6a3-4629-a5c0-6c2f4890ad5b",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C43",
+      "claim": "The spatial structure of pairwise correlations for a given neuron (whether inhibitory or excitatory) with either inhibitory or excitatory cells was well aligned.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the spatial structure of pairwise correlations for a given neuron (whether inhibitory or excitatory) with either inhibitory or excitatory cells was well aligned (p<0.001 vs. shuffle), irrespective of cell type (Figure 6d, Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pairwise correlation analysis shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "8ee18628-f88b-40af-8569-0542bd5ed840",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C44",
+      "claim": "Correlated excitatory and inhibitory networks exhibit a similar spatial scale at the cellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, examining correlation strength as a function of distance and cell type demonstrates that correlated excitatory and inhibitory networks exhibit a similar spatial scale at the cellular level (Figure 6e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by distance-dependent correlation analysis shown in Figure 6e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "e86b1a13-87b8-45ec-86a1-9009900c9de3",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C45",
+      "claim": "Prior to eye-opening and the onset of reliable stimulus-evoked responses, intracortical inhibition is both present and highly organized.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that prior to eye-opening and the onset of reliable stimulus-evoked responses (Chapman et al., 1996), intracortical inhibition is both present and highly organized, with inhibitory networks already displaying patterns of modular and correlated spontaneous activity that span several millimeters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the experimental findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "8b3ad1cb-73d2-4e52-ab64-33518f82718d",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C46",
+      "claim": "Inhibitory networks exhibit quantitatively similar structures to excitatory networks, which together show precise alignment at both local and global scales in the patterns of correlated spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory networks exhibit quantitatively similar structures to excitatory networks, which together show precise alignment at both local and global scales in the patterns of correlated spontaneous activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the quantitative comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "d6c0f6bb-9df2-4419-bad1-afdcd63cfc04",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C47",
+      "claim": "In the mature ferret, both inhibitory and excitatory neurons are organized into a columnar map of orientation preference.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mature ferret, both inhibitory and excitatory neurons are organized into a columnar map of orientation preference, with orientation-specific subnetworks of functionally coupled excitatory and inhibitory neurons present not only within iso-orientation domains but also near orientation pinwheels (Wilson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wilson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "6a617361-4294-4755-bc89-da391f74a264",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C48",
+      "claim": "In rodent cortex, inhibitory neurons show non-specific local pooling of nearby excitatory activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This organization stands in contrast to the non-specific local pooling of nearby excitatory activity by inhibitory neurons found in the 'salt-and-pepper' rodent cortex (Kerlin et al., 2010; Bock et al., 2011; Hofer et al., 2011; Packer and Yuste, 2011; Runyan and Sur, 2013; Scholl et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to studies of rodent cortex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "407fe877-685f-4532-ae4e-cff1fa5d330f",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C49",
+      "claim": "The finding of sharp correlation fractures in inhibitory networks is inconsistent with non-specific local pooling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our finding of sharp correlation fractures in inhibitory networks (Figure 3f, Figure 3\u2014figure supplement 2) is inconsistent with non-specific local pooling and argues strongly against this possibility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the fracture data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "55e6efc8-9ed9-442a-902c-bdc7c0c9252e",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C50",
+      "claim": "In the developing visual cortex, inhibitory neurons are already tightly integrated into functionally specific networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, our results indicate that in the developing visual cortex, inhibitory neurons are already tightly integrated into functionally specific networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "d423fbcf-50e5-442f-ac0b-9f30c61b6700",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C51",
+      "claim": "The patterns of correlated activity undergo extensive refinement in the week prior to eye-opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, given that the patterns of correlated activity undergo extensive refinement in the week prior to eye-opening (Smith et al., 2018), these results also suggest that excitatory and inhibitory networks likely refine in parallel over development to produce the tightly coupled organization found in the mature cortex (Wilson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Smith et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "6be65ffe-1ae5-4244-a5eb-d3ce1e25a061",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C52",
+      "claim": "Excitatory and inhibitory networks likely refine in parallel over development to produce the tightly coupled organization found in the mature cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, given that the patterns of correlated activity undergo extensive refinement in the week prior to eye-opening (Smith et al., 2018), these results also suggest that excitatory and inhibitory networks likely refine in parallel over development to produce the tightly coupled organization found in the mature cortex (Wilson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings and prior work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "7380f912-6c74-4424-96be-c225281679dc",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C53",
+      "claim": "The mDlx enhancer drives expression across several subtypes of inhibitory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The mDlx enhancer used in this study has been shown to drive expression across several subtypes of inhibitory cells (Dimidschstein et al., 2016), which have been ascribed distinct roles within cortical circuits (see (Hattori et al., 2017; Wood et al., 2017) for reviews).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "36ef8fb5-5b4f-4cf6-8b6a-90324c268735",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C54",
+      "claim": "In the mature ferret, parvalbumin (PV), somatostatin (SOM) and non-PV, non-SOM GABAergic neurons were all found to be equivalently integrated into specific and spatially organized functional networks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the mature ferret, parvalbumin (PV), somatostatin (SOM) and non-PV, non-SOM GABAergic neurons were all found to be equivalently integrated into specific and spatially organized functional networks (Wilson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wilson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "beaf118b-3bee-419c-9c51-408fb2ccacf9",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C55",
+      "claim": "Large-scale distributed functional networks are a hallmark of mature cortical organization and are exemplified by the columnar arrangement of orientation preference in the visual cortex of primates and carnivores.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale distributed functional networks are a hallmark of mature cortical organization and are exemplified by the columnar arrangement of orientation preference in the visual cortex of primates and carnivores (Blasdel and Salama, 1986; Bonhoeffer and Grinvald, 1991; Ohki et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to studies of mature cortex.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "f70ffd41-1f22-4fea-8acb-d11471a9cb82",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C56",
+      "claim": "Co-tuned columns are preferentially interconnected by specific long-range horizontal projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, co-tuned columns preferentially interconnected by specific long-range horizontal projections (Gilbert and Wiesel, 1989; Malach et al., 1993; Bosking et al., 1997) which emerge over the course of development (Ruthazer and Stryker, 1996; Borrell and Callaway, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to studies of cortical connectivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "ed351ec7-82f1-4cce-98f7-e322be5dbef3",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C57",
+      "claim": "Long-range horizontal projections emerge over the course of development.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, co-tuned columns preferentially interconnected by specific long-range horizontal projections (Gilbert and Wiesel, 1989; Malach et al., 1993; Bosking et al., 1997) which emerge over the course of development (Ruthazer and Stryker, 1996; Borrell and Callaway, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to developmental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "f1d14eda-e546-473e-8ff8-923b857a8002",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C58",
+      "claim": "The presence of modular activity and long range-correlations in the developing cortex prior to the emergence of horizontal connections, coupled with the finding that correlations persist in the absence of feedforward input, indicates that local intracortical circuits are sufficient to generate these patterns of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of modular activity and long range-correlations in the developing cortex prior to the emergence of these horizontal connections, coupled with the finding that correlations persist in the absence of feedforward input (Smith et al., 2018), has been taken to indicate that local intracortical circuits are sufficient to generate these patterns of activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on prior findings and the current results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "a2d49ffa-7daa-4104-b316-53c6516c8e7d",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C59",
+      "claim": "Models of developing cortical networks can rely on local connectivity to self-organize, thereby producing modular patterns of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Models of developing cortical networks can rely on local connectivity to self-organize, thereby producing modular patterns of activity (von der Malsburg, 1973; Swindale, 1997; Miller, 1994; Barrow et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to computational models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "626470e9-1e35-4139-b16a-95eae0451baf",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C60",
+      "claim": "If local connections are sufficiently heterogeneous, the resulting patterns of activity reside in a low-dimensional subspace and produce long-range correlations without requiring long-range horizontal connections.",
+      "claim_type": "EXPLICIT",
+      "source": "If these local connections are sufficiently heterogeneous, the resulting patterns of activity reside in a low-dimensional subspace and produce long-range correlations without requiring long-range horizontal connections (Smith et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Smith et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "7f81497f-8d8e-4e58-be7d-8b0a70260ba8",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C61",
+      "claim": "A strong prediction of locally heterogeneous network models is the presence of tightly integrated and co-aligned excitatory and inhibitory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong prediction of such models is the presence of tightly integrated and co-aligned excitatory and inhibitory networks (Ermentrout and Cowan, 1979; Wilson and Cowan, 1973), in agreement with our experimental observations in the developing cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to theoretical models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "d2bcb908-679f-4996-a99a-e0819adb5214",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C62",
+      "claim": "Short-range intracortical interactions between tightly coupled excitatory and inhibitory circuits give rise to large-scale distributed networks during early development.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest that short-range intracortical interactions between tightly coupled excitatory and inhibitory circuits give rise to large-scale distributed networks during early development, which may serve as a seed for future functional organization in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the findings and theoretical considerations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "53f8b9ad-9119-4755-bf58-99fcb2eb6364",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C63",
+      "claim": "Large-scale distributed networks during early development may serve as a seed for future functional organization in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest that short-range intracortical interactions between tightly coupled excitatory and inhibitory circuits give rise to large-scale distributed networks during early development, which may serve as a seed for future functional organization in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion about the developmental role of early networks.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "6533351c-024e-43e4-9b90-9f093c07d729",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C64",
+      "claim": "Viral injections targeted the primary visual cortex, defined as thalamo-recipient visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Injections targeted the primary visual cortex, defined as thalamo-recepient visual cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "deaad0ee-e182-4aff-b458-4955967697f6",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C65",
+      "claim": "In the ferret, primary visual cortex includes both areas 17 and 18, which both receive direct thalamic innervation and exhibit columnar mapping of orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ferret, primary visual cortex includes both areas 17 and 18, which both receive direct thalamic innervation and exhibit columnar mapping of orientation (White et al., 1999; White et al., 2001a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "00f91c92-2054-4c4d-a80a-3505e7387882",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C66",
+      "claim": "Eye-opening in ferret typically occurs between P31 and P34.",
+      "claim_type": "EXPLICIT",
+      "source": "Widefield imaging of spontaneous activity in the primary visual cortex was performed at postnatal days 23\u201329 (P23\u201329, n=7 animals), approximately 7 days before eye-opening (typically between P31 and P34)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about ferret development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "3008c080-145b-4406-96a7-6f8e3656fc90",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "claim_id": "C69",
+      "claim": "Both inhibitory and excitatory networks show highly similar Large versus All correlation similarities, though excitatory similarities are greater than inhibitory.",
+      "claim_type": "EXPLICIT",
+      "source": "Both inhibitory and excitatory networks show highly similar Large versus All correlation similarities, though excitatory similarities are greater than inhibitory (I: 0.87 [0.80\u20130.90], n=7. E: 0.98 [0.97\u20130.98],n=7, p=0.0088, Wilcoxon rank-sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 4\u2014figure supplement 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "45760591-416a-4e97-9dce-7de713086c52",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GABA exerts a strong net inhibitory effect in vivo at P21-23 in ferret visual cortex. Application of the GABA(A) antagonist BMI significantly increased both the frequency and amplitude of spontaneous events in excitatory neurons, demonstrating functional inhibition at this developmental stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 provide converging evidence from pharmacological manipulation (BMI application) with appropriate statistical testing (p<0.001, Wilcoxon rank-sum test, n=4 animals). The increase in both frequency and amplitude of spontaneous events upon GABA receptor blockade directly demonstrates net inhibitory action in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "ebf5d09a-10ef-46ee-968c-e3dc568e75fd",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Inhibitory neurons exhibit highly organized spontaneous activity with modular structure, long-range correlations extending several millimeters, and precise local organization including correlation fractures in developing ferret visual cortex (P23-29). This demonstrates that inhibitory networks are already spatially structured before eye-opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C22-C24, and C28 collectively demonstrate organized inhibitory network structure through widefield calcium imaging with mDlx-specific labeling. Statistical significance of long-range correlations (p<0.01 vs. surrogate, 6 of 7 animals) and presence of correlation fractures provide strong evidence for structured inhibitory networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "b4d7844e-9d7c-442c-85c1-8d9015073087",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Inhibitory and excitatory networks exhibit quantitatively similar structural properties including domain size, correlation strength at long distances, wavelength, local anisotropy, fracture strength, and dimensionality. All comparisons showed no significant differences between inhibitory and excitatory networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C29-C34, and C36 provide systematic quantitative comparisons between inhibitory and excitatory networks (n=7 animals each) with appropriate statistical testing (Wilcoxon rank-sum tests, all p>0.05). The consistency across multiple independent measures strongly supports quantitative similarity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "00fdf94a-d0c3-4ed9-916a-9d8b55432d8f",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Excitatory and inhibitory networks are strongly co-aligned at millimeter scales. When comparing correlation patterns from the same seed points in dual-labeled animals, inhibitory and excitatory networks showed significantly greater similarity than surrogate controls, including at long distances (>1.4 mm from seed).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C37-C39 demonstrate network co-alignment through dual imaging experiments (n=3 animals) with second-order correlation analysis. Statistical significance versus surrogate (p<0.01 for all animals) and maintenance of similarity at long distances provide strong evidence for spatial alignment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "62bab875-30d1-42dc-900e-ba93f54ca97f",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Excitatory and inhibitory networks are tightly integrated at cellular scales. Two-photon imaging revealed coordinated local activity, highly correlated event amplitudes (r=0.86), and well-aligned pairwise correlation patterns between excitatory and inhibitory neurons at the single-cell level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 provide cellular-resolution evidence from two-photon imaging (2186 cells, 1231 events, 21 FOV, 5 animals). High correlation of local event amplitudes and significant alignment of pairwise correlation patterns (p<0.001 vs. shuffle) demonstrate tight cellular-scale integration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "ab6d67ae-1d15-4fce-96ed-2548dc6fbfac",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Prior to eye-opening, intracortical inhibition is both present and highly organized, with inhibitory neurons already tightly integrated into functionally specific networks. This organization exists before the onset of reliable stimulus-evoked responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C46, and C50 represent summary conclusions directly supported by the experimental findings in previous result groups. The convergence of evidence from pharmacology (C18-C20), network structure (C22-C24), quantitative similarity (C29-C34), and spatial alignment (C37-C44) provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "526e6246-2402-43ba-b66e-a4c6ec5e80aa",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The presence of sharp correlation fractures in inhibitory networks is inconsistent with non-specific local pooling of excitatory activity, arguing against an initially unorganized state of inhibition during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 presents a logical inference from the fracture data (C28, C34). The presence of spatially discrete fractures with abrupt changes in correlation structure is indeed incompatible with broad, non-specific pooling, making this a valid inference from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "549667d2-75ed-40ee-ba31-2fbef41a9143",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors suggest that excitatory and inhibitory networks likely refine in parallel during development, with short-range intracortical interactions between coupled circuits giving rise to large-scale networks that may seed future functional organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52, C62, and C63 are explicitly speculative (using 'likely,' 'suggest,' 'may serve') and represent interpretations rather than direct findings. While consistent with the data, these developmental trajectory claims require longitudinal studies and mechanistic experiments not performed in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "9687da16-145b-47db-bbc6-ff9101f57cdc",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The mDlx enhancer drives expression specifically in GABAergic cells and across several subtypes of inhibitory cells, as established by prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C53 are supported by appropriate citations (Dimidschstein et al., 2016; Wilson et al., 2017) and confirmed by immunostaining for GAD67 in this study (Figure 6\u2014figure supplement 1). The specificity of the genetic tool is well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "99b892c4-65c6-4dda-abc4-8ab9abf18908",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Both inhibitory and excitatory networks show highly similar correlation patterns when comparing large events (>50% area threshold) versus all events, though excitatory similarities are statistically greater than inhibitory (p=0.0088).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 provides a methodological validation showing that correlation patterns are robust to event selection criteria. The statistical difference between inhibitory and excitatory similarities is small in magnitude (I: 0.87, E: 0.98) and may reflect technical differences in signal-to-noise rather than biological differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "c2c96c0e-cc06-4701-a6db-1c98f0462b03",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Intracortical inhibition plays a critical role in mature cortex, but little is known about inhibition structure in early development, when spontaneous activity exhibits long-range correlations predictive of mature networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish the background and motivation for the study. C1 represents established knowledge, C2 identifies the knowledge gap, and C3 cites prior findings (Smith et al., 2018) about early spontaneous activity. These appropriately frame the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on inhibitory neuron function in mature cortex, developmental changes in GABAergic signaling, prior findings on excitatory network organization in developing ferret, and theoretical predictions from network models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C17, C25-C27, C35, C47-C48, C51, C54-C61 represent background information and prior work, all appropriately supported by citations to relevant literature. These claims establish the scientific context and theoretical framework for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    },
+    {
+      "id": "cf4bb503-93f1-4d02-ba3c-54c557d840a2",
+      "content_id": "835553f9-ff57-43bc-949e-aecdab011e78",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details specify that viral injections targeted primary visual cortex (areas 17 and 18 in ferret), and imaging was performed at P23-29, approximately 7 days before eye-opening (P31-34).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 describe experimental methodology and are supported by appropriate anatomical citations (White et al., 1999; White et al., 2001a) and established developmental timelines for ferret. These details are important for interpreting the developmental stage studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:29:07.456370Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "51adcfd3-78d9-4fcf-8a76-2753a132b13e",
+      "result_id": "45760591-416a-4e97-9dce-7de713086c52"
+    },
+    {
+      "claim_id": "e7ea7a55-055e-4ac7-8a12-859d797c8394",
+      "result_id": "45760591-416a-4e97-9dce-7de713086c52"
+    },
+    {
+      "claim_id": "ab12aea8-4aac-4fc6-bc43-ec5ebb0a48e4",
+      "result_id": "45760591-416a-4e97-9dce-7de713086c52"
+    },
+    {
+      "claim_id": "c7d98b39-a6e2-490b-81b1-1a8e6e0d9619",
+      "result_id": "ebf5d09a-10ef-46ee-968c-e3dc568e75fd"
+    },
+    {
+      "claim_id": "ecabfabe-fa9d-487d-ac0a-eaaa41020c61",
+      "result_id": "ebf5d09a-10ef-46ee-968c-e3dc568e75fd"
+    },
+    {
+      "claim_id": "3a9763d0-1791-4d30-a7e8-36906a6a7cd2",
+      "result_id": "ebf5d09a-10ef-46ee-968c-e3dc568e75fd"
+    },
+    {
+      "claim_id": "731b5264-04f4-44d6-b13e-5e9258f19f4c",
+      "result_id": "ebf5d09a-10ef-46ee-968c-e3dc568e75fd"
+    },
+    {
+      "claim_id": "7bddeb6d-f834-4aaa-84cc-441661461ed5",
+      "result_id": "ebf5d09a-10ef-46ee-968c-e3dc568e75fd"
+    },
+    {
+      "claim_id": "c272f0c1-c710-4e4e-bc0b-7b0466a1aa3f",
+      "result_id": "ebf5d09a-10ef-46ee-968c-e3dc568e75fd"
+    },
+    {
+      "claim_id": "5af2c4f1-2867-4262-a4fc-e515ec257726",
+      "result_id": "b4d7844e-9d7c-442c-85c1-8d9015073087"
+    },
+    {
+      "claim_id": "b511b59b-704b-4655-9fe5-920f79304976",
+      "result_id": "b4d7844e-9d7c-442c-85c1-8d9015073087"
+    },
+    {
+      "claim_id": "3537c14a-bc29-4da4-aa46-31b048e16795",
+      "result_id": "b4d7844e-9d7c-442c-85c1-8d9015073087"
+    },
+    {
+      "claim_id": "9435bdaf-b6d1-4a0c-b120-1b2acb8aa2fb",
+      "result_id": "b4d7844e-9d7c-442c-85c1-8d9015073087"
+    },
+    {
+      "claim_id": "68d69ca3-dd22-44b4-8c5f-8c6f071d41d9",
+      "result_id": "b4d7844e-9d7c-442c-85c1-8d9015073087"
+    },
+    {
+      "claim_id": "a6b1b902-76f4-41df-818b-4a72e7967b6c",
+      "result_id": "b4d7844e-9d7c-442c-85c1-8d9015073087"
+    },
+    {
+      "claim_id": "282ffa51-0ebf-4da7-918b-4d99a6e9df82",
+      "result_id": "b4d7844e-9d7c-442c-85c1-8d9015073087"
+    },
+    {
+      "claim_id": "e3d09143-8f9f-47fa-b5d2-f9ed1c0d354e",
+      "result_id": "b4d7844e-9d7c-442c-85c1-8d9015073087"
+    },
+    {
+      "claim_id": "a8077068-e32a-425a-a826-9ef7ef028ec8",
+      "result_id": "00fdf94a-d0c3-4ed9-916a-9d8b55432d8f"
+    },
+    {
+      "claim_id": "423a7db1-60c3-40ee-b6ce-8c86637ff7f4",
+      "result_id": "00fdf94a-d0c3-4ed9-916a-9d8b55432d8f"
+    },
+    {
+      "claim_id": "bd356ef4-f515-46d4-ac85-727d5eee9950",
+      "result_id": "00fdf94a-d0c3-4ed9-916a-9d8b55432d8f"
+    },
+    {
+      "claim_id": "43015832-b73d-476b-9daa-d2557cfb9174",
+      "result_id": "00fdf94a-d0c3-4ed9-916a-9d8b55432d8f"
+    },
+    {
+      "claim_id": "0bddaf9f-2db6-4f9c-a5d9-10dafafaca04",
+      "result_id": "62bab875-30d1-42dc-900e-ba93f54ca97f"
+    },
+    {
+      "claim_id": "27131fc7-efe0-4fad-8140-3ac997e8d90c",
+      "result_id": "62bab875-30d1-42dc-900e-ba93f54ca97f"
+    },
+    {
+      "claim_id": "17f81c5d-02eb-4fe3-a9ca-95ec0e16fcd0",
+      "result_id": "62bab875-30d1-42dc-900e-ba93f54ca97f"
+    },
+    {
+      "claim_id": "da7ee135-e6a3-4629-a5c0-6c2f4890ad5b",
+      "result_id": "62bab875-30d1-42dc-900e-ba93f54ca97f"
+    },
+    {
+      "claim_id": "8ee18628-f88b-40af-8569-0542bd5ed840",
+      "result_id": "62bab875-30d1-42dc-900e-ba93f54ca97f"
+    },
+    {
+      "claim_id": "e86b1a13-87b8-45ec-86a1-9009900c9de3",
+      "result_id": "ab6d67ae-1d15-4fce-96ed-2548dc6fbfac"
+    },
+    {
+      "claim_id": "8b3ad1cb-73d2-4e52-ab64-33518f82718d",
+      "result_id": "ab6d67ae-1d15-4fce-96ed-2548dc6fbfac"
+    },
+    {
+      "claim_id": "55e6efc8-9ed9-442a-902c-bdc7c0c9252e",
+      "result_id": "ab6d67ae-1d15-4fce-96ed-2548dc6fbfac"
+    },
+    {
+      "claim_id": "407fe877-685f-4532-ae4e-cff1fa5d330f",
+      "result_id": "526e6246-2402-43ba-b66e-a4c6ec5e80aa"
+    },
+    {
+      "claim_id": "6be65ffe-1ae5-4244-a5eb-d3ce1e25a061",
+      "result_id": "549667d2-75ed-40ee-ba31-2fbef41a9143"
+    },
+    {
+      "claim_id": "d2bcb908-679f-4996-a99a-e0819adb5214",
+      "result_id": "549667d2-75ed-40ee-ba31-2fbef41a9143"
+    },
+    {
+      "claim_id": "53f8b9ad-9119-4755-bf58-99fcb2eb6364",
+      "result_id": "549667d2-75ed-40ee-ba31-2fbef41a9143"
+    },
+    {
+      "claim_id": "e3b9a421-ffbb-4c83-a7e5-43367636b48c",
+      "result_id": "9687da16-145b-47db-bbc6-ff9101f57cdc"
+    },
+    {
+      "claim_id": "7380f912-6c74-4424-96be-c225281679dc",
+      "result_id": "9687da16-145b-47db-bbc6-ff9101f57cdc"
+    },
+    {
+      "claim_id": "3008c080-145b-4406-96a7-6f8e3656fc90",
+      "result_id": "99b892c4-65c6-4dda-abc4-8ab9abf18908"
+    },
+    {
+      "claim_id": "c69c0c90-f3e5-4fe4-a9fd-94c4191b754a",
+      "result_id": "c2c96c0e-cc06-4701-a6db-1c98f0462b03"
+    },
+    {
+      "claim_id": "f378e239-cbd6-4891-ba86-b456a06c268c",
+      "result_id": "c2c96c0e-cc06-4701-a6db-1c98f0462b03"
+    },
+    {
+      "claim_id": "dbfcd73b-acdd-4b21-8bff-efdddd32bace",
+      "result_id": "c2c96c0e-cc06-4701-a6db-1c98f0462b03"
+    },
+    {
+      "claim_id": "310f1abe-d18e-448e-9bf7-674a6745aabf",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "02ce9765-0016-44fb-90ac-7d61d2b57f53",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "f771c6c8-0984-4177-b5c7-ef1fa2b31575",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "344af909-9d72-497c-8610-6e65fe6d915f",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "2638623e-be05-4423-8046-5b7a8b50ebe8",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "e27c9401-269e-4b70-9bc8-f1cc451fdf5d",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "206614fe-c705-4ed8-890c-71991b6e84d1",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "94ce33be-36a2-43d5-a272-d93e36c9dd4f",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "8d57dad5-9e8f-49a3-9b30-17f0755991cf",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "ee6d0d9e-a856-46d1-a96a-2eb7b0b8746a",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "3f0f2407-4111-442a-a4f8-e497b6a47037",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "24901137-1f38-4c81-be03-8d55894a11bc",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "30493e96-69c8-4a98-9c4c-c56a0de91b3e",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "d3806894-2951-4c4f-9c5a-0c8ff38e2a57",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "d6c0f6bb-9df2-4419-bad1-afdcd63cfc04",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "6a617361-4294-4755-bc89-da391f74a264",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "d423fbcf-50e5-442f-ac0b-9f30c61b6700",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "36ef8fb5-5b4f-4cf6-8b6a-90324c268735",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "beaf118b-3bee-419c-9c51-408fb2ccacf9",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "f70ffd41-1f22-4fea-8acb-d11471a9cb82",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "ed351ec7-82f1-4cce-98f7-e322be5dbef3",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "f1d14eda-e546-473e-8ff8-923b857a8002",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "a2d49ffa-7daa-4104-b316-53c6516c8e7d",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "626470e9-1e35-4139-b16a-95eae0451baf",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "7f81497f-8d8e-4e58-be7d-8b0a70260ba8",
+      "result_id": "c59dd8c0-db4f-45ce-8d0b-3fcf86809683"
+    },
+    {
+      "claim_id": "6533351c-024e-43e4-9b90-9f093c07d729",
+      "result_id": "cf4bb503-93f1-4d02-ba3c-54c557d840a2"
+    },
+    {
+      "claim_id": "deaad0ee-e182-4aff-b458-4955967697f6",
+      "result_id": "cf4bb503-93f1-4d02-ba3c-54c557d840a2"
+    },
+    {
+      "claim_id": "00f91c92-2054-4c4d-a80a-3505e7387882",
+      "result_id": "cf4bb503-93f1-4d02-ba3c-54c557d840a2"
+    }
+  ],
+  "comparisons": []
+}

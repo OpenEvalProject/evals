@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "FER regulates FLS2-GFP nanoscale organization and accumulation at the plasma membrane. In fer mutants, FLS2-GFP exhibits increased mobility, more dispersed and mobile fluorescence patterns, lower spatial clustering index (SCI), and decreased plasma membrane accumulation compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide converging evidence from multiple imaging modalities (VA-TIRFM, single-particle tracking, confocal microscopy) and quantitative metrics (diffusion coefficient, SCI, fluorescence intensity) demonstrating that FER loss-of-function disrupts FLS2 organization and accumulation. The data are internally consistent across two fer alleles (fer-2 and fer-4) and multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "FER regulates BAK1-mCherry nanoscale organization in an opposite manner to FLS2. In fer-4 mutants, BAK1-mCherry shows decreased mobility, more structured and static fluorescence patterns, and increased SCI compared to wild-type, while plasma membrane accumulation remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19 demonstrate that FER loss affects BAK1 organization oppositely to FLS2, supported by VA-TIRFM imaging, kymograph analysis, and SCI measurements. The observation that BAK1 is normally more mobile than FLS2 (C11-C12) provides important context. However, C15 relies on visual inspection rather than quantitative tracking due to technical limitations acknowledged by the authors, which slightly weakens but does not invalidate the conclusion given the supporting quantitative SCI data (C17).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "LRX3/4/5 are positive regulators of PTI signaling, required for flg22-induced FLS2-BAK1 complex formation and both flg22- and elf18-induced ROS production. The lrx3/4/5 triple mutant shows defects in these immune responses similar to fer mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are well-supported by co-immunoprecipitation data (C31) and ROS production assays (C32-C33). The inference that LRX3/4/5 are required for EFR-BAK1 complex formation (C34) is reasonable based on the elf18-ROS data, though direct co-IP evidence for EFR-BAK1 would strengthen this claim. The overall conclusion (C35) is justified by the convergent functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "LRX3/4/5 regulate BAK1-mCherry nanoscale organization similarly to FER. In lrx3/4/5 mutants, BAK1-mCherry is more organized and static compared to wild-type, while plasma membrane localization is unaffected, and these organizational changes correlate with PTI signaling defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by VA-TIRFM and confocal imaging data showing similar BAK1 organizational changes in lrx3/4/5 as in fer-4. The correlation between PTI defects and membrane organization changes (C38) is an inference that is reasonable given the parallel observations in both mutants, though causality is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "LRX3/4/5 do not prevent RALF association with FER to modulate PTI through the previously proposed mechanism of sequestering RALF peptides. FER accumulation, plasma membrane localization, and dynamic foci formation are all independent of LRX3/4/5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 challenge a previous model (C39) with new data showing FER localization is unaffected in lrx3/4/5 (C40-C41). The conclusion (C42) is a reasonable inference from these observations, though it represents a negative result that doesn't definitively rule out all possible mechanisms of RALF sequestration. The data are sufficient to question the prior model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "LRX3/4/5 contribute to RALF23 responsiveness and have analogous functions to FER in regulating PTI. The lrx3/4/5 mutant shows reduced RALF23-induced inhibition of elf18-triggered ROS production and decreased RALF23-induced seedling growth inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by functional assays showing lrx3/4/5 has reduced RALF23 responses. The conclusion that LRXs and FER have analogous functions (C47) is justified by the similar phenotypes in PTI and RALF23 responses, though the molecular mechanisms may differ as suggested by other results in the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "FER constitutively associates with LRX4\u0394E-FLAG independently of RALF23 treatment, suggesting that direct cell wall monitoring by a FER-LRX complex is not regulated by RALF23. FER-LLG1 and LRX3/4/5 may form distinct RALF23 receptor complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by co-IP data showing constitutive FER-LRX4\u0394E interaction unaffected by RALF23 (C48-C49). The inferences about RALF23-independent cell wall monitoring (C50) and distinct receptor complexes (C51) are reasonable interpretations consistent with structural/biochemical data cited. The use of a truncated LRX4 construct is appropriate for detecting protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The function of LRX3/4/5 in PTI is distinct from their role during growth. Overexpression of LRX4\u0394E, which phenocopies lrx3/4/5 growth defects, does not affect PTI responses (FLS2-BAK1 interaction, ROS production, root growth inhibition) or RALF23 responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 demonstrate functional dichotomy through multiple PTI assays showing no effect of LRX4\u0394E overexpression on immune responses (C58-C62), contrasting with its dominant-negative effect on growth. This supports the conclusion of distinct mechanisms (C63). The experimental design appropriately uses a previously characterized dominant-negative construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The malA domain of FER is important for cell morphogenesis but dispensable for PTI. FER\u0394malA-YFP fails to complement fer-4 cell shape and root hair defects but fully complements FLS2-BAK1 complex formation and PAMP-induced ROS production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 demonstrate clear functional separation using a domain deletion mutant. The failure to complement morphogenesis defects (C69-C70) contrasts sharply with full complementation of PTI responses (C72-C73), supporting the conclusion of malA-independent PTI function (C74). The complementation approach is appropriate for assessing domain-specific functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The malB domain is sufficient for RALF responsiveness, and FER's function in PTI is primarily mediated by RALF perception rather than direct cell wall sensing. FER\u0394malA-YFP restores RALF23-induced growth inhibition, consistent with malB's physical interaction with RALF23.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by complementation data showing FER\u0394malA-YFP rescues RALF23 responses (C75) and citation of malB-RALF23 interaction (C77). The inference that PTI function is primarily RALF-mediated (C78) is reasonable given the complementation pattern, though the authors appropriately note they cannot formally exclude pectin-binding contributions by malB.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "There is molecular and functional dichotomy of FER and LRXs in regulating growth and immunity, with different domain requirements and mechanisms operating in these two contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 synthesizes findings from the FER\u0394malA and LRX4\u0394E experiments, showing that domains/anchoring required for growth functions are dispensable for immunity. This conclusion is well-supported by the convergent evidence from multiple complementation and overexpression experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "FER's positive role in immune signaling is kinase activity-independent, while RALF23's inhibitory activity requires FER kinase activity. The kinase-dead mutant FERK565R-GFP complements PTI defects but not RALF23-mediated inhibition of immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 demonstrate a clear functional separation using a kinase-dead mutant. The complementation of PTI responses (C80-C81) contrasts with the requirement for kinase activity in RALF23 inhibition (C82-C84), supporting the dual conclusions (C85-C86). This reveals distinct mechanistic requirements for FER's positive versus negative regulatory roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "RALF23 perception leads to rapid modification of FLS2 and BAK1 membrane organization within minutes. RALF23 treatment increases FLS2-GFP mobility and alters nanodomain organization while stabilizing BAK1-mCherry organization, potentially inhibiting their association. These rapid effects demonstrate that organizational defects in mutants are not secondary to growth defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by VA-TIRFM imaging showing rapid (2-30 min) changes in both FLS2 and BAK1 organization upon RALF23 treatment. The inference that these changes potentially inhibit FLS2-BAK1 association (C91) is reasonable but speculative, as direct evidence of the causal link is not provided. The conclusion about ruling out secondary growth effects (C92) is well-justified by the short treatment time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study demonstrates that FER and LRXs regulate plasma membrane nanoscale organization of immune receptor kinases (FLS2 and BAK1), contribute to RALF23 responsiveness, and that RALF23 perception by these receptors actively modulates membrane organization to regulate cell surface signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 represent the main conclusions synthesizing all experimental findings. These summary claims are well-supported by the comprehensive data from imaging, biochemical, and functional assays presented throughout the study. The proposed model (C99) that RALF perception modulates membrane organization to regulate signaling is a reasonable integration of the findings, though some mechanistic details remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Various membrane environments are differentially regulated by the cell wall and FER. Different cell wall perturbations (cellulose synthesis inhibition, pectin modification) have opposite effects on the mobility of different membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 cite previous literature to establish context for the differential effects observed. These are appropriately used as background to support the interpretation that cell wall and FER differentially regulate membrane environments (C24). The claims accurately represent cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "LRXs are dimeric, cell wall-localized, high-affinity RALF-binding proteins with extensin domains for cell wall anchoring and LRR domains for RALF binding. LRX3/4/5 are the most expressed in vegetative tissues, and the lrx3/4/5 mutant shows phenotypes reminiscent of fer-4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 accurately cite previous literature to establish background on LRX proteins and justify the focus on LRX3/4/5. These contextual claims are well-supported by the cited references and provide appropriate rationale for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The FER ectodomain contains two malectin-like domains (malA and malB) that share homology with malectin but lack its canonical carbohydrate-binding site. These domains were proposed to bind pectin, and FER-mediated cell wall sensing regulates cell morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 accurately cite previous literature to establish the structural and functional context for the FER domain deletion experiments. These background claims appropriately set up the rationale for testing malA function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Background on plant immune receptors and RALF signaling: FLS2 and EFR recognize bacterial PAMPs and form ligand-induced complexes with BAK1 to initiate PTI. FER and LLG1 are required for FLS2-BAK1 complex formation, and RALF23 perception by LLG1-FER inhibits this complex formation. Multiple CrRLK1L family members and LRXs are involved in RALF perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C110 accurately cite previous literature, including the authors' own prior work, to establish the scientific context and rationale for the current study. These background claims are appropriately used to frame the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Background on membrane organization and cell wall: FLS2 localizes in discrete structures proposed to specify immune signaling. The cell wall imposes physical constraints on plasma membrane constituents, and cell wall perturbations affect protein mobility and FLS2 nanoscale organization. Both CrRLK1Ls and LRXs are proposed cell wall integrity sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 accurately cite previous literature to establish the conceptual framework linking cell wall integrity sensing to membrane organization. These contextual claims appropriately motivate the study's focus on FER and LRXs as regulators of membrane organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background on LRX function in growth: Both CrRLK1Ls and LRXs are proposed cell wall integrity sensors regulating growth, reproduction, and immunity. Plants overexpressing LRX4\u0394E phenocopy lrx3/4/5 and fer-4 growth defects, proposed to result from competition with endogenous LRXs and loss of cell wall anchoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 accurately cite previous literature to establish the known functions of LRXs in growth and the dominant-negative effect of LRX4\u0394E overexpression. This background appropriately sets up the comparison with PTI functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Speculation on broader implications: RALF receptor function in other processes might rely on regulating RK nanoscale dynamics. Additional RALF peptides may regulate FLS2 and BAK1 dynamics. Plants may have co-evolved mechanisms to regulate RK interactions in space and time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C119 are explicitly speculative statements about future directions and broader implications. While these are reasonable hypotheses based on the findings, they represent untested ideas rather than demonstrated results. C118 cites previous work on RK networks to support the speculation.",
+    "result_type": "MINOR"
+  }
+]

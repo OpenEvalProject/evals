@@ -1,0 +1,482 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors successfully incorporated non-canonical amino acids (ncAAs) into SifA and SsaP using genetic code expansion (GCE). Position 52 in SifA and position 65 in SsaP were selected based on conservation analysis and structural considerations. Full-length proteins were expressed in a ncAA-dependent manner and successfully labeled with fluorophores via click chemistry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C58-C69 provide converging evidence for successful ncAA incorporation and labeling. The selection of labeling positions is supported by conservation analysis (C58, Figure 2\u2014figure supplement 2) and structural verification (C59). Expression data (C62-C63, Figure 2) and fluorescence imaging (C64-C69, Figure 2A-D) demonstrate successful labeling. The methodology is well-documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The pEVOL plasmid encoding the orthogonal tRNA/aaRS system does not significantly affect Salmonella growth or intracellular survival. Growth curves showed no significant difference, and survival was 74% compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C79 are supported by growth curve data (Figure 3\u2014figure supplement 1A) and survival assays (Figure 3\u2014figure supplement 1B). However, the interpretation that 74% survival represents 'no significant effect' (C78) lacks statistical testing. Without p-values or confidence intervals, the claim of non-significance is unsupported. The 26% reduction could be biologically meaningful.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "SifA-E52AzF was secreted into HeLa cells and rescued SIF formation, demonstrating that the engineered protein is fully functional. SIFs formed by the complemented strain resembled those in wild-type infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are well-supported by microscopy data (Figure 3A, Figure 3\u2014figure supplement 2). The observation that SIFs are formed and resemble wild-type structures provides strong functional evidence. The complementation experiment is appropriately controlled with wild-type and sifA null comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "SifA was successfully visualized within host cells after secretion using GCE-based labeling. Fluorescent puncta were observed only in the presence of AzF, demonstrating specificity. Control experiments with wild-type Salmonella showed no off-target labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are strongly supported by microscopy data (Figures 3B-D, 4) and appropriate negative controls (Figure 3C, Figure 3\u2014figure supplement 3). The absence of signal without AzF (C87) and in wild-type bacteria (C89) validates specificity. This represents the first visualization of SifA within SIFs using this approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "SifA colocalizes with the lysosomal marker LAMP1, establishing its presence within Salmonella-induced filaments (SIFs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by colocalization microscopy (Figure 3D) and quantitative analysis (Figure 3\u2014figure supplement 5). The colocalization with LAMP1, a known SIF marker, provides strong evidence for SifA localization within SIFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "SifA and SseJ exhibit the same distribution pattern and are colocalized within infected cells. Modified Mander's colocalization analysis provided strong evidence for positive colocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by spinning-disk SIM imaging (Figure 4A) and quantitative colocalization analysis (Figure 4Aiii). The modified Mander's analysis with spatial translation controls provides rigorous statistical support for colocalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "SifA is in close proximity to kinesin, and modified Mander's colocalization analysis provided evidence for positive colocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by spinning-disk SIM imaging (Figure 4B) and colocalization analysis (Figure 4Biii). The analysis method is consistent with that used for SifA-SseJ colocalization, providing comparable evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The motor protein kinesin exerts an indirect force on SseJ via a SseJ-SifA-SKIP-kinesin protein complex. This is likely a weak interaction that can be disrupted by fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by the colocalization data (C98-C102) combined with previous observations about SseJ's sensitivity to osmolality-induced pearling (cited as Gao et al., 2018). The inference about weak interactions is supported by citation to previous work on fixation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Unlike SseJ, SifA does not form continuous filamentous structures within SIFs but rather forms punctate structures. This observation holds even under low osmolality fixation conditions and in live cells, indicating that the stoichiometry of SifA to SseJ cannot be 1:1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by microscopy data under different fixation conditions (Figure 4\u2014figure supplement 2) and live cell imaging (Supplementary file 1). The comparison with SseJ's continuous filamentous structures provides strong evidence for different distribution patterns and stoichiometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "SifA was labeled with the fluorescent ncAA Hco and visualized directly in host cells using two-photon microscopy without requiring click chemistry reactions. This approach successfully rescued SIF formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by microscopy data (Figure 4\u2014figure supplement 3). The direct visualization without click chemistry represents an alternative labeling strategy. SIF formation confirms functionality of the Hco-labeled protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C8"
+    ],
+    "result": "GCE-labeled SseJ showed reduced background compared to HA-tagged SseJ while maintaining colocalization, demonstrating the superiority of GCE-based imaging over small molecule epitope tags.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 and C8 are supported by side-by-side comparison microscopy (Figure 4C). The visual evidence clearly shows reduced background with GCE labeling while maintaining colocalization, supporting the superiority claim. However, quantitative metrics of background reduction would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The ssaP mutant is defective in SPI-2 secretion, unable to survive in HeLa cells, and fails to secrete SseB translocons, demonstrating that SsaP is required for Salmonella virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by microscopy data (Figure 5\u2014figure supplement 1), survival assays (Figure 5\u2014figure supplement 2), and western blot analysis (Figure 2\u2014figure supplement 1). The convergence of secretion defects, survival defects, and loss of SIF formation provides strong evidence for SsaP's role in virulence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "C-terminal PAmCherry fusions to SsaP supported SseB secretion but were cleaved, preventing imaging. N-terminal fusions did not support secretion. Three internal HA-tag fusions were functional and restored secretion, with evidence of SsaP secretion in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 are supported by western blot data (Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 3). The systematic testing of different fusion positions provides comprehensive evidence for the challenges of labeling SsaP with conventional methods, motivating the GCE approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "TCO*Lys-incorporated SsaP was functional, as demonstrated by its ability to rescue SPI-2 secretion (SseJ) and SIF formation in the ssaP null strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 are supported by complementation experiments showing SseJ secretion and SIF formation (Figure 5\u2014figure supplement 1B-C). This functional validation is critical for interpreting subsequent localization studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "SsaP was successfully labeled and visualized using GCE with high specificity. At early infection times (8 hr), SsaP was mostly associated with bacteria and localized to cell poles. At later times (16 hr), SsaP was secreted into host cells. Not every pole with SsaP had an injectisome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C139 are supported by microscopy data at different time points (Figure 5A, Figure 5\u2014figure supplement 4) and appropriate negative controls (Figure 5B). The temporal analysis and polar localization are well-documented. This represents the first visualization of SsaP secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Off-target incorporation of ncAAs at endogenous TAG codons is minimized by several factors: optimal codon context (AAT-TAG-ACT) is rare, TAG codons are present in only 9.6% of genes, few SPI genes use TAG codons, and TAG codons tend to be in low-abundance proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by citations to previous research on codon context (C70, C73, C74) and genomic analysis (C71). The logical argument for minimal off-target labeling is well-constructed, though direct experimental validation in Salmonella would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The authors propose a model where SseJ and SifA are present on the outer surface of tubules, colocalized with kinesin. SseJ is indirectly force-dependent while SifA is not. Tubulation is driven by kinesin motor force acting through a SseJ-SifA-SKIP-kinesin complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C145 and C152-C154 represent a mechanistic model supported by the colocalization data (C98-C102), differential sensitivity to osmolality (C110-C112), and previous work on pearling effects. The model integrates multiple lines of evidence, though direct force measurements would provide stronger support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C9"
+    ],
+    "result": "GCE provides an alternative labeling method for proteins that cannot be labeled by conventional approaches, and is efficient enough to visualize low-abundance proteins like SsaP. The approach is widely applicable to other secreted effectors and small proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C147 and C9 are supported by the successful labeling of both SifA (which could not be labeled conventionally, C33) and low-abundance SsaP. The demonstration of functionality, specificity, and superior imaging quality provides strong evidence for the general applicability of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background on T3SS function and Salmonella pathogenesis, including the role of SPI-1 and SPI-2 T3SS, SIF formation, and SifA's role in virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C10-C23 represent established knowledge about T3SS and Salmonella pathogenesis, supported by appropriate citations to previous literature. These provide necessary context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Previous methods for labeling effectors have significant limitations including disrupted stoichiometry, off-target staining, interference with secretion, and inability to label certain proteins like SifA while preserving function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 are supported by citations to previous research documenting limitations of various labeling approaches. These claims establish the need for alternative labeling methods and justify the GCE approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background on substrate specificity switches in T3SS, focusing on SsaP as the proposed switch protein in SPI-2. SsaP is small, low-abundance, and difficult to label with conventional methods. Its mechanism of function remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 provide context for studying SsaP, supported by citations to previous work and the authors' own data (C39, C42). The characterization of SsaP as difficult to label motivates the GCE approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background on genetic code expansion (GCE) methodology, including ncAA incorporation, click chemistry reactions, advantages of organic fluorophores, and previous applications. No prior study used GCE for visualizing secreted bacterial effectors in host cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C57 describe established GCE methodology supported by appropriate citations. Claim C57 identifies the novelty of applying GCE to bacterial effector visualization, which is the key innovation of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background on SseJ-HA fusion competency for secretion, SseJ's appearance in super-resolution images, and the essential but opposing activities of SifA and SseJ in SIF formation despite lack of demonstrated direct interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by citations to previous work by the authors and others. These provide context for interpreting the colocalization results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "SifA has been reported to interact with kinesin-1 via the adapter protein SKIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by citation to previous research (Boucrot et al., 2005). This provides the basis for investigating SifA-kinesin colocalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Background on fixation effects on SIF structure, including osmolality-dependent changes in SseJ distribution and microtubule disruption by high osmolality fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 are supported by citations to previous work (Gao et al., 2018). This provides context for interpreting the different SifA and SseJ distribution patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The specificity and efficiency of SPAAC labeling is influenced by fluorophore cellular properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 represents established knowledge about click chemistry labeling, providing context for the alternative Hco labeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The SPI-2 T3SS apparatus is mostly confined to cell poles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by citations to previous research. This provides context for interpreting SsaP localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "There was evidence of SsaP secretion into HeLa cell cytosol during infection with HA-tagged constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is supported by microscopy data (Figure 5\u2014figure supplement 3), though the signal was weak. This provides preliminary evidence for SsaP secretion that is confirmed by the GCE approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Background on acid-sensing and SPI-2 regulation via the EnvZ-OmpR-SsrA/B pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 and C149-C151 are supported by citations to previous research. These provide context for the model of SPI-2 activation and effector expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C148"
+    ],
+    "result": "The authors anticipate that straightforward extensions of GCE technology will provide opportunities for imaging other effector proteins during bacterial infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C148 is a reasonable speculation based on the successful demonstration of the approach for SifA and SsaP. However, it represents future work rather than a current result.",
+    "result_type": "MINOR"
+  }
+]

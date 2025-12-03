@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "mGluR2-TMD exhibits higher dimerization propensity (~83% dimers) compared to mGluR3-TMD (~46% dimers) as measured by single-molecule photobleaching experiments and confirmed by acceptor photobleaching FRET and coarse-grained molecular dynamics simulations showing ~40% vs ~25% dimeric fractions respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (single-molecule photobleaching C23-C27, acceptor photobleaching FRET C28, and computational simulations C29) converge on the same conclusion that mGluR2-TMD has higher dimerization propensity than mGluR3-TMD. The quantitative measurements are consistent across methods and appropriate controls (\u03b22AR) are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Markov state model analysis of coarse-grained MD simulations identifies TM1, TM4, and TM5 as the most contributing helices in mGluR2 dimerization, while TM3 and TM7 are most contributing in mGluR3 dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MSM analysis provides computational evidence for distinct dimerization interfaces between mGluR2 and mGluR3. The claims are appropriately qualified as being inferred from simulations (C30, C31 evidence_type includes INFERENCE), and convergence analysis (Figure 1\u2014figure supplement 5) supports the validity of the computational approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The C121A mutation in mGluR2 has minimal effect on dimerization, while the equivalent C127A mutation in mGluR3 produces a twofold reduction. TMD chimera experiments demonstrate that swapping TMDs between mGluR2 and mGluR3 swaps their dimerization propensities, indicating the TMD contributes to differences in dimerization between full-length receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects of cysteine mutations (C32-C33) combined with TMD chimera experiments (C34-C35) provide strong evidence that TMD interactions contribute to dimerization differences. The experiments include appropriate expression controls (Figure 1G) and the conclusion (C36) is appropriately qualified as an inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Sequence analysis reveals that TM4 shows the lowest conservation (33%) and sequence identity (0% for outward-facing residues) between group II mGluRs, while other TMs show >70% conservation and TM6 shows 96% conservation across all eight mGluRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence analysis data (C37-C39) is straightforward and supported by Figure 2\u2014figure supplement 1A and Figure 2B. The quantitative conservation metrics are clearly presented and provide a rational basis for focusing on TM4 as a potential determinant of differential dimerization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Swapping three alanine residues (A677, A681, A685) in TM4 of mGluR2 with corresponding mGluR3 residues (S686, F690, G694) reduces mGluR2-TMD dimerization from 78.4% to 48.4% and increases mGluR3-TMD dimerization from 46.3% to 70.0%, demonstrating that these TM4 residues determine relative dimerization propensity at the TMD level and in full-length receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3xTM4 swap experiments (C42-C43) provide compelling evidence with appropriate statistical analysis (Figure 2C shows p-values). The effect is replicated in full-length receptors (C45, Figure 2E), and expression controls show no differences (Figure 2D, 2F). The conclusion (C44) is appropriately supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The 3xTM4 mutation produces a 4-fold leftward shift in glutamate EC50 for mGluR2 and a 20-fold rightward shift for mGluR3. Individual TM4 mutations show differential effects between subtypes, with mGluR2 single mutants showing no change while mGluR3 single mutants show significant rightward shifts, indicating TM4 residues influence inter-subunit rearrangement for both receptor subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional calcium imaging data (C47-C49) is supported by concentration-response curves with appropriate statistical analysis (Figure 3). The differential effects of single mutations between subtypes strengthen the conclusion. The patch clamp data (Figure 3\u2014figure supplement 1E-G) provides orthogonal validation using endogenous G proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "3xTM4 mutants produce inter-LBD FRET responses indistinguishable from wild-type with identical glutamate concentration-response curves, while maintaining the characteristic basal FRET response pattern (mGluR3 but not mGluR2 shows basal response to LY341495).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inter-LBD FRET data (C51-C52, Figure 4\u2014figure supplement 1A-D) demonstrates that 3xTM4 mutations do not affect LBD dynamics, supporting the interpretation that functional effects are mediated at the TMD level. This is an important control that strengthens the overall conclusions about TMD-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A new inter-TMD FRET sensor based on HaloTag insertion in intracellular loop 2 shows glutamate-induced FRET increases for both mGluR2 and mGluR3 that are fully blocked by competitive antagonist LY341495 but only partially blocked by NAM MNI 137 (32-43% block) and weakly activated by PAM LY48 (33.5% of glutamate response).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development and characterization of the inter-TMD FRET sensor (C53-C56) is well-supported with appropriate controls (donor-only and acceptor-only conditions show no response, Figure 4\u2014figure supplement 2D-E). The partial sensitivity to allosteric modulators is clearly documented and appropriately interpreted as reflecting conformational changes that are partially independent of allosteric modulator binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In inter-TMD FRET experiments, mGluR2-3xTM4 shows a leftward shift while mGluR3-3xTM4 shows a rightward shift compared to wild-type. mGluR3-3xTM4 exhibits reduced basal FRET response to LY341495 and reduced basal activity in patch clamp assays, while mGluR2-3xTM4 shows increased basal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inter-TMD FRET data (C57-C58, Figure 4G-K) combined with patch clamp measurements of basal activity (C59-C60, Figure 4L-M, Figure 4\u2014figure supplement 4) provide convergent evidence that TM4 residues tune both agonist-induced conformational changes and basal receptor activity. The use of orthogonal assays strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "TM6 is 100% identical between mGluR2 and mGluR3. Mutations at conserved TM6 residues (I779A and I779W in mGluR2, I788A in mGluR3, and P778 in mGluR2) all reduce TMD dimerization, indicating TM6 interfaces contribute to dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence conservation data (C61) and mutagenesis results (C62-C64, Figure 5B, Figure 5\u2014figure supplement 1A) demonstrate that conserved TM6 residues contribute to dimerization. Expression controls show no differences (Figure 5C), supporting the interpretation that effects are on dimerization rather than expression or stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "TM6 mutations (I779A, I779W, P778A-I779A in mGluR2; I788A in mGluR3) produce rightward shifts in glutamate concentration-response curves (11-19 fold). mGluR2-I779A shows a 12-fold rightward shift and 29.9% reduction in maximal PAM efficacy for LY48, indicating TM6 interactions play a role in both orthosteric and allosteric activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional calcium imaging data (C65-C67, Figure 5D-G) demonstrates that TM6 mutations impair both orthosteric and allosteric activation. The conclusion (C68) is appropriately supported by the data. The effects on PAM responses are particularly important for understanding allosteric activation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Ligand-coupled SiMPull experiments show that PAM treatment increases dimerization of mGluR2-TMD-3xTM4 while NAM treatment increases dimerization of mGluR2-TMD-I779A. Simultaneously mutating both TM4 and TM6 interfaces prevents ligand-induced dimerization shifts. Similar effects are observed in full-length receptors with C121A/C127A backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ligand-coupled SiMPull experiments (C69-C74, Figure 6) provide strong evidence for a TM4-to-TM6 interface transition during activation. The double mutant control (C71) is critical and shows that disrupting both interfaces prevents ligand-induced changes. The replication in full-length receptors strengthens the conclusions. Expression controls are included (Figure 6B, 6E, 6H).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C85"
+    ],
+    "result": "Two-color SiMPull experiments demonstrate that mGluR2-TMD preferentially pulls down mGluR2-TMD over mGluR3-TMD, while mGluR3-TMD shows higher pulldown of mGluR2-TMD compared to mGluR3-TMD, indicating mGluR2/3 TMD heterodimers show intermediate dimerization propensity compared to homodimers (mGluR2/2 > mGluR2/3 > mGluR3/3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-color SiMPull experiments (C76-C79, Figure 7B-F) provide direct evidence for TMD heterodimerization with intermediate propensity. Expression ratios are controlled (Figure 7C, 7F), and background controls are included (Figure 7\u2014figure supplement 1B). The conclusion (C85) is appropriately supported by the data and illustrated in Figure 7L.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Full-length mGluR2 preferentially assembles with mGluR3 at comparable surface expression ratios. However, mutating the intersubunit disulfide (C121A/C127A) dramatically swaps dimerization preference, with mGluR2-C121A preferring mGluR2-C121A over mGluR3-C127A. Introducing 3xTM4 into mGluR3-C127A enhances pulldown by mGluR2-C121A, indicating TM4 is a determinant of mGluR2/3 heterodimer assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The full-length heterodimer experiments (C80-C84, Figure 7G-I) demonstrate that while LBD interactions dominate heterodimer formation in wild-type receptors, TMD interactions become important when the disulfide is disrupted. The 3xTM4 rescue experiment (C83) provides direct evidence for TM4's role in heterodimer assembly. Expression controls are included (Figure 7I, 7K).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C40",
+      "C41",
+      "C75"
+    ],
+    "result": "Background and context claims establishing the structure and function of mGluRs, the debate around GPCR dimerization, prior structural and functional studies of mGluRs and related receptors, and the motivation for studying TMD interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C5-C22, C25, C40-C41, C75) provide essential background and context, drawing from established literature and prior work. They are appropriately supported by citations to previous studies and represent accurate summaries of the field. These claims establish the scientific foundation and rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Summary claims stating that a variable TM4 region contributes to subtype-specific dimerization and tunes activation, a conserved TM6 interface stabilizes the active state, and inter-TMD assembly drives mGluR function with distinct properties between subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These high-level summary claims (C2-C4) are well-supported by the totality of experimental evidence presented in the manuscript, including single-molecule experiments, functional assays, FRET measurements, and computational simulations. They represent appropriate syntheses of the major findings.",
+    "result_type": "MAJOR"
+  }
+]

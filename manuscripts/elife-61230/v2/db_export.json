@@ -1,0 +1,1736 @@
+{
+  "submission": {
+    "id": "56045d5d-18b5-43d2-b1a4-2c15b8f5d94d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:10:50.346694Z",
+    "updated_at": "2025-12-03T03:10:50.346694Z"
+  },
+  "content": [
+    {
+      "id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "submission_id": "56045d5d-18b5-43d2-b1a4-2c15b8f5d94d",
+      "content_type": "manuscript",
+      "content_text": "# A nuclear-based quality control pathway for non-imported mitochondrial proteins\n\n## Authors\n\n- Viplendra PS Shakya<sup>1</sup> ([ORCID: 0000-0001-6429-8692](https://orcid.org/0000-0001-6429-8692))\n- William A Barbeau<sup>1</sup> ([ORCID: 0000-0002-6056-7231](https://orcid.org/0000-0002-6056-7231))\n- Tianyao Xiao<sup>1</sup> ([ORCID: 0000-0003-2571-167X](https://orcid.org/0000-0003-2571-167X))\n- Christina S Knutson<sup>1</sup>\n- Max H Schuler<sup>1</sup>\n- Adam L Hughes<sup>1</sup> ([ORCID: 0000-0002-7095-3793](https://orcid.org/0000-0002-7095-3793)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, University of Utah School of Medicine Salt Lake City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMitochondrial import deficiency causes cellular toxicity due to the accumulation of non-imported mitochondrial precursor proteins, termed mitoprotein-induced stress. Despite the burden mis-localized mitochondrial precursors place on cells, our understanding of the systems that dispose of these proteins is incomplete. Here, we cataloged the location and steady-state abundance of mitochondrial precursor proteins during mitochondrial impairment in Saccharomyces cerevisiae. We found that a number of non-imported mitochondrial proteins localize to the nucleus, where they are subjected to proteasome-dependent degradation through a process we term nuclear-associated mitoprotein degradation (mitoNUC). Recognition and destruction of mitochondrial precursors by the mitoNUC pathway requires the presence of an N-terminal mitochondrial targeting sequence and is mediated by combined action of the E3 ubiquitin ligases San1, Ubr1, and Doa10. Impaired breakdown of precursors leads to alternative sequestration in nuclear-associated foci. These results identify the nucleus as an important destination for the disposal of non-imported mitochondrial precursors.\n\n## Introduction\n\nMitochondrial dysfunction is a hallmark of aging and associated with many age-related and metabolic diseases (Wallace, 2005). Mitochondrial impairment disrupts metabolic pathways housed within the mitochondrion and also prevents the import of thousands of mitochondrial resident proteins that rely on an efficient mitochondrial membrane potential for translocation into the organelle (Martin et al., 1991; Pagliarini et al., 2008; Wiedemann and Pfanner, 2017). Recent studies have shown that non-imported mitochondrial precursor proteins are toxic for cells and identified several cellular pathways that combat this stress (Boos et al., 2019; Boos et al., 2020; Hansen et al., 2018; Itakura et al., 2016; M\u00e5rtensson et al., 2019; Wang and Chen, 2015; Weidberg and Amon, 2018; Wrobel et al., 2015). These systems, which are collectively referred to as the mitoprotein-induced stress response (Boos et al., 2020), protect cells during times of mitochondrial import deficiency through a variety of mechanisms, including downregulation of cellular translation (Wang and Chen, 2015); upregulation of proteasome and chaperone capacity through a process termed UPRam (unfolded protein response activated by mistargeting of proteins) (Boos et al., 2019; Wrobel et al., 2015); destruction of non-imported mitochondrial precursors at the mitochondrial surface through mitochondrial-associated degradation (MAD) (Metzger et al., 2020), mitochondrial translocation-associated degradation (mitoTAD) (M\u00e5rtensson et al., 2019), mitochondrial-compromised import response (mitoCPR) (Weidberg and Amon, 2018), and mitochondrial-associated ribosome quality control (mitoRQC) (Izawa et al., 2017; Su et al., 2019; Zurita Rend\u00f3n et al., 2018); ubiquilin-dependent triaging of mitochondrial membrane proteins for degradation (Itakura et al., 2016); and endoplasmic sequestration followed by either destruction via the conserved protein Ema19 (Laborenz et al., 2021) or re-delivery of non-imported mitochondrial precursors via an endoplasmic reticulum\u00a0(ER) surface retrieval pathway (ER-SURF) (Hansen et al., 2018).\n\nDespite the recent advances in this field, only a fraction of the non-imported mitochondrial proteome has been analyzed under conditions of mitochondrial impairment. Thus, our understanding of the fate of non-imported mitochondrial precursors and the systems that regulate their disposal is likely incomplete. Here, using microscopy and immunoblot-based screens in Saccharomyces cerevisiae, we find that non-imported mitochondrial proteins accumulate in many regions of the cell upon mitochondrial depolarization and identify the nucleus as a previously unrecognized quality control destination for non-imported mitochondrial precursors. We show that many mitochondrial proteins localize to the nucleus upon import failure, where they are subjected to proteasome-dependent destruction via redundant action of the E3 ubiquitin ligases San1, Ubr1, and Doa10. When degradation capacity is exceeded, mitochondrial precursors are sequestered into nuclear-associated protein foci.\n\nInterestingly, we determined that the N-terminal mitochondrial targeting sequence (MTS) (Omura, 1998) is necessary for non-imported precursor protein induced-toxicity, degradation, and sequestration into nuclear-associated foci, but dispensable for nuclear localization. The presence of an MTS is also required for degradation and toxicity of non-imported proteins that localize to cellular regions other than the nucleus, implicating the MTS as a major driver of non-imported precursor toxicity. Finally, we show that nuclear accumulation of non-imported precursors arises during cellular aging. Overall, this work demonstrates that non-imported mitochondrial proteins exhibit numerous fates within cells and outlines a nuclear-based quality control pathway for non-imported mitoproteins we refer to as mitoNUC (nuclear-associated mitoprotein degradation).\n\n## Results\n\n### The non-imported version of the mitochondrial protein Ilv2 localizes to the nucleus\n\nWe previously showed that the mitochondrial network undergoes extensive fragmentation and depolarization during replicative aging in budding yeast, which is defined as the number of times an individual yeast cell undergoes division (Hughes and Gottschling, 2012). In our prior work, we utilized an endogenously tagged version of the mitochondrial outer membrane (OM) protein Tom70-mCherry to visualize the mitochondrial network. In contrast to Tom70, which does not rely on mitochondrial membrane potential for its mitochondrial localization (S\u00f6llner et al., 1990), functional, endogenously GFP-tagged Ilv2 (Figure 1\u2014figure supplement 1A), a mitochondrial matrix enzyme in isoleucine and valine biosynthesis (Falco et al., 1985), exhibited dual localization in replicatively aged yeast cells. In addition to a pattern consistent with mitochondrial tubules, Ilv2-GFP also localized to the nucleus in over 80% of aged cells, as indicated by diffuse GFP fluorescence within a region surrounded by the nuclear pore protein Nup49-mCherry (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative images of old and young yeast expressing the indicated Ilv2-GFP and nuclear marker Nup49-mCherry. Percentage of cells with Ilv2 in the nucleus (n\u00a0=\u00a030 cells) and age of representative cell (determined by bud scar counting) are indicated in bottom panels. Bud scars stained with calcofluor. (B) Yeast expressing Ilv2-GFP and Tom70-mCherry \u00b1 FCCP. (C) Indirect immunofluorescence for endogenous Ilv2 of yeast expressing Tom70-mCherry. (D) Western blots of yeast expressing Ilv2-GFP \u00b1 FCCP. (E) Western blots of endogenous Ilv2 in yeast treated \u00b1 FCCP. Pgk1 = loading control in all instances. (F) Western blot showing enrichment of the precursor form of Ilv2-HA in the nuclear fraction. Nup49-GFP and H2B = nuclear markers, Tom70 and Tim44 = mitochondrial markers. (G) RITE-tagged cells treated with \u03b2-estradiol at time of FCCP addition to initiate Cre/lox switching of Ilv2 epitope tag from GFP (old) to RFP (new). (B,\u00a0C,\u00a0and G) Nucleus stained with DAPI. P = precursor, M = mature. All scale bars\u00a0=\u00a02 \u03bcm. Arrows denote nucleus.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Fivefold serial dilutions of WT, Ilv2 KO, and endogenous C-terminally GFP, HA, or FLAG-tagged Ilv2 expressing yeast strains on SD complete or isoleucine and valine dropout agar plates. (B) Indirect immunofluorescence of yeast expressing Ilv2-FLAG and Tom70-mCherry. Nucleus in (B, C) stained with NucBlue and DAPI, respectively. Arrows indicate nucleus. (C) Tom70-mCherry wild type (WT) and tetp-TOM40 (TOM40 KD) yeast expressing Ilv2-GFP in the presence of doxycycline. (D) Western blot for Tom40 in wild-type (WT) and tetp-TOM40 (KD) strains in the presence of doxycycline. (E) Western blot of yeast expressing Ilv2-HA \u00b1 FCCP. P = precursor and M = mature. Scale bars\u00a0=\u00a02 \u03bcm.\n\nMitochondrial depolarization is a hallmark feature of aged yeast (Hughes and Gottschling, 2012). Because depolarization is prominent, and the import of Ilv2 requires a mitochondrial inner membrane (IM) potential, we wondered whether the fraction of Ilv2-GFP localized to the nucleus represented a non-imported precursor pool of this protein. Consistent with that idea, treatment of cells with the mitochondrial IM depolarizing agent trifluoromethoxy carbonyl cyanide phenylhydrazone (FCCP) (Parker, 1965) also caused Ilv2-GFP accumulation in the nucleus, which was marked with 4\u2032,6-Diamidine-2\u2032-phenylindole dihydrochloride (DAPI) (Figure 1B). Nuclear localization did not result from GFP-tagging, as indirect immunofluorescence showed a similar nuclear localization for native Ilv2 (Figure 1C) as well as functional C-terminally FLAG-tagged Ilv2 (Figure 1\u2014figure supplement 1A) in FCCP-treated cells (Figure 1\u2014figure supplement 1B). Furthermore, Ilv2-GFP localized to the nucleus in cells conditionally depleted of the essential OM protein import channel Tom40 (Mnaimneh et al., 2004; Vestweber et al., 1989; Figure 1\u2014figure supplement 1C,D), indicating that nuclear localization was not caused by off-target effects of FCCP, but was specific to defects in mitochondrial protein import.\n\nWe hypothesized that the nuclear pool of Ilv2 likely represented a fraction of the protein that could not be imported into mitochondria. Consistent with that idea, western blot analysis revealed that higher-molecular-weight forms of Ilv2, Ilv2-GFP, and Ilv2-HA accumulated in cells treated with FCCP (Figure 1D,E,\u00a0Figure 1\u2014figure supplement 1E). Mitochondrial proteins such as Ilv2 are synthesized with an N-terminal MTS extension that is proteolytically removed from the mature peptide only after they transit the mitochondrial IM (Mossmann et al., 2012; Pfanner et al., 2019). Thus, the higher-molecular-weight form of Ilv2 in FCCP-treated cells likely represents the immature, precursor form of the protein. In support of the idea that the non-imported pool of Ilv2 localizes to the nucleus, the precursor form of Ilv2-HA was specifically enriched in nuclear fractions isolated from FCCP-treated cells, while other mitochondrial proteins, including Tom70, Tim44, as well as the mature form of Ilv2-HA, were excluded (Figure 1F). Additionally, we utilized the Recombination-Induced Tag Exchange (RITE) system (Verzijlbergen et al., 2010), which consists of an estradiol-induced Cre recombinase in combination with gene-targeted loxP sites to facilitate on-demand epitope-tag switching upon exposure of cells to estradiol, to examine the fate of both old and newly synthesized Ilv2 in the same cell. We found that only newly synthesized Ilv2 (Ilv2 New, RFP tagged) localized to the nucleus upon FCCP treatment, while Ilv2 already present in mitochondria (Ilv2 Old, GFP tagged) did not (Figure 1G). Collectively, these results indicate that when the translocation of Ilv2 into mitochondria is blocked by genetic or pharmacologic impairment of mitochondrial import, the non-imported precursor form of Ilv2 alternatively localizes to the nucleus.\n\n### The nucleus in one of several fates for non-imported mitochondrial proteins\n\nWe next sought to determine the extent to which non-imported proteins localize to the nucleus in cells lacking efficient mitochondrial import. To address this question in a systematic manner, we imaged a collection of yeast strains expressing 523 distinct mitochondrial proteins with carboxy-terminal GFP fusions from their endogenous loci in the absence or presence of FCCP. These strains were derived from the yeast GFP collection (Huh et al., 2003) and co-expressed Tom70-mCherry, a mitochondrial OM marker that localizes to mitochondria independently of the membrane potential (Hughes et al., 2016; S\u00f6llner et al., 1990). We found that 6.4% of the mitochondrial proteins analyzed behaved like Ilv2, exhibiting nuclear localization in FCCP-treated cells (class 1, Figure 2A and Supplementary file 1). Additionally, we identified four other major outcomes for mitochondrial proteins after membrane depolarization (Figure 2A and Supplementary file 1). These included continued localization to the mitochondrion (class 2, e.g., Tom20, 8.2% of all proteins), accumulation in the cytoplasm (class 3, e.g., Acp1, 36.1% of all proteins), localization to the ER (class 4, e.g., Mir1, 2.7% of all proteins), and reduced overall abundance to the point of being nearly undetectable (class 5, e.g., Cox15, 42.2% of all proteins). A subset of proteins (4.4%) localized to regions of the cell distinct from these five major classes upon FCCP treatment and associated with unidentified cellular membranes and foci (Supplementary file 1). In the majority of cases across protein classes, a portion of each protein localized to the mitochondrial network in addition to its new location, likely stemming from either residual mature form still present in the mitochondrion or continued delivery of a fraction of the precursor pool to the mitochondrial network (see Figure 2A images).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig2-v2.jpg)\n\n**Figure 2.:** (A) Yeast expressing the indicated mCherry or GFP-tagged mitochondrial proteins \u00b1 FCCP. (B\u2013D) Western blots of yeast expressing the indicated GFP-tagged mitochondrial proteins \u00b1 FCCP or \u00b1 FCCP \u00b1 MG-132. (E) Summary of non-imported mitochondrial protein fates. All scale bars\u00a0=\u00a02 \u03bcm. Arrows denote nucleus (A, class 1) or ER (A, class 4). P = precursor and M = mature.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Yeast expressing ER marker Sec61-mCherry and Mir1-GFP \u00b1 FCCP. (B) Indirect immunofluorescence of Ilv2, Tom20, and OM45 in yeast expressing Tom70-mCherry or Sec61-mCherry. (C) Indirect immunofluorescence of yeast expressing the indicated FLAG-tagged proteins and Tom70-mCherry. (D) Tom70-mCherry wild-type (WT) and tetp-TOM40 (TOM40 KD) yeast expressing the indicated GFP-tagged mitochondrial proteins in the presence of doxycycline. All bars\u00a0=\u00a02 \u03bcm. Nucleus in (B, C) stained with NucBlue. Arrows indicate nucleus (B\u2013D, class 1) or ER (A\u2013D, class 4).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Western blots of yeast expressing the indicated GFP-tagged proteins \u00b1 FCCP. (B) Western blots against indicated native protein in yeast \u00b1 FCCP. (C\u2013E) Western blots of yeast expressing the indicated HA-tagged mitochondrial proteins \u00b1 FCCP (C) or \u00b1 FCCP \u00b1 MG-132 (D, E). P = precursor form, M = mature form. Pgk1 = loading control.\n\nWe validated representatives from our screen in several ways. Frist, we confirmed the ER localization of class 4 proteins via co-localization with the ER marker Sec61-mCherry (Figure 2A, Figure 2\u2014figure supplement 1A). We also demonstrated via indirect immunofluorescence that untagged, native protein representatives from class 1 (nuclear localization), class 2 (continued localization to the mitochondrion) and class 4 (ER localization) exhibited identical localizations as their GFP-tagged counterparts (Figure 2\u2014figure supplement 1B). Furthermore, we showed that FLAG-tagged versions of representatives from all classes of proteins also behaved identically to their GFP counterparts (Figure 2\u2014figure supplement 1C) and determined that conditional depletion of the essential OM protein import channel Tom40 led to similar protein fates as treatment of cells with FCCP (Mnaimneh et al., 2004; Vestweber et al., 1989; Figure 2\u2014figure supplement 1D). While we have not been able to validate our entire screen list using native antibodies, our results suggest that the observed changes in mitochondrial protein localization for representatives from each class are not caused by the presence of a GFP tag or off-target effects of FCCP.\n\nWe concurrently analyzed steady-state protein abundance via western blotting of the same set of GFP-tagged mitochondrial proteins in the absence and presence of FCCP, as this approach provided useful information about the state of Ilv2 in the nucleus. In general, steady-state levels of proteins localized to the mitochondrion, cytoplasm, and ER were unchanged or partially reduced with FCCP (Figure 2B, Supplementary file 1).\n\nProteins that localized to the nucleus or became undetectable often either moderately or strongly decreased in abundance upon FCCP treatment, respectively (Figure 2B, Supplementary file 1). We confirmed the changes in steady-state abundance for representatives from each class using antibodies against native forms of the proteins, as well as in strains expressing C-terminally HA-tagged versions of the proteins. We observed similar steady-state abundance changes as compared to our results for each GFP-tagged protein we retested (Figure 2\u2014figure supplement 2A\u2013C). Interestingly, further analysis indicated that the decline in class 5 protein abundance was either completely or partially blunted by proteasome inhibition via MG-132 depending on the individual protein substrate (Figure 2C,D, Figure 2\u2014figure supplement 2D,E), implicating the proteasome in their destruction. Also, as with Ilv2, precursor forms of Acp1 and Lat1 (class 3 and 5) were visible in the presence of FCCP (Figure 2B,C).\n\nOverall, our screen revealed several patterns amongst the proteins that comprised each screen class, and many of our observations aligned well with those from previous studies (Figure 2E). Nuclear-localized class 1 proteins were predominantly mitochondrial matrix enzymes, including numerous members of the TCA cycle. Most class 2 proteins that continued to localize to depolarized mitochondria were mitochondrial OM proteins that do not require a membrane potential for mitochondrial targeting (Wiedemann and Pfanner, 2017). Class 3 (cytoplasm) proteins were largely soluble proteins, several of which (e.g., Idh1, Idh2, Mss116, and Cis1) were previously found to be enriched in cytosolic extracts isolated from mitochondrial import-deficient yeast (Wang and Chen, 2015; Weidberg and Amon, 2018). ER-localized class 4 proteins were generally integral IM and OM proteins, some of which were previously reported to localize to the ER in cells with compromised mitochondrial import (Hansen et al., 2018). Finally, class 5, the largest of the classes, consisted of both soluble and membrane-bound mitochondrial proteins. These results indicate that numerous fates exist for non-imported mitochondrial proteins and that the nucleus represents a previously unrecognized destination for mitochondrial precursors during import failure.\n\n### Nuclear protein quality control clears non-imported mitochondrial proteins\n\nWe next sought to understand the basis for the nuclear localization of non-imported mitochondrial proteins in the absence of functional mitochondrial import. The eukaryotic nucleus harbors a large proportion of cellular proteasomes and is a quality control destination for misfolded proteins (Enam et al., 2018). Because the overall abundance of nuclear-localized mitochondrial proteins declined during FCCP treatment, we tested whether non-imported mitochondrial precursor proteins were directed to the nucleus for proteasomal degradation. In support of that idea, the decline in steady-state levels of Ilv2-GFP and Ilv2-HA upon FCCP treatment was blunted in the presence of proteasome inhibitor MG-132 (Figure 3A, Figure 3\u2014figure supplement 1A). Ilv2 decline was also prevented in strains lacking a combination of three E3 ubiquitin ligases that operate in nuclear-associated protein quality control, San1 (Gardner et al., 2005; Samant et al., 2018), Ubr1 (Prasad et al., 2010), and Doa10 (Deng and Hochstrasser, 2006; Swanson et al., 2001) (E3 KO) (Figure 3B, Figure 3\u2014figure supplement 1B,C). This result was true for GFP-tagged, HA-tagged, and untagged endogenous Ilv2. No combination of single or double knockouts completely prevented loss of Ilv2 upon mitochondrial depolarization, suggesting these ligases act redundantly to promote non-imported mitochondrial protein clearance (Figure 3\u2014figure supplement 1D). Importantly, the addition of proteasome inhibitor or deletion of the aforementioned E3 ligases each led to a marked elevation in the higher-molecular-weight precursor form of Ilv2 in the presence of FCCP, suggesting the immature, Ilv2 precursor was the form of the protein specifically marked for proteasome clearance (Figure 3A,B, Figure 3\u2014figure supplement 1A\u2013C). In line with this observation, cycloheximide-chase analysis demonstrated that the half-life of the Ilv2, Ilv2-HA, and Ilv2-GFP precursor forms were altered in the E3 KO strain, while the mature forms were unaffected (Figure 3C, Figure 3\u2014figure supplement 1E,F). Furthermore, ubiquitin immunoprecipitation assays indicated that Ilv2 was ubiquitylated in the presence of FCCP in a San1-, Ubr1-, and Doa10-dependent manner (Figure 3D). Proteasome-dependent degradation of a non-nuclear class 5 substrate (Lat1) was unaffected in the E3 KO strain, indicating that additional E3 ligases promote clearance of non-nuclear localized mitochondrial precursors (Figure 3\u2014figure supplement 1G). Moreover, we found that our observations extend beyond Ilv2, as GFP-tagged versions of two other nuclear candidates identified in our screen, Dld1 and Dld2, (Figure 3\u2014figure supplement 2A\u2013C) were also eliminated in a proteasome and San1/Ubr1/Doa10-dependent manner (Figure 3\u2014figure supplement 2A\u2013F). Thus, a subset of non-imported mitochondrial proteins are subjected to nuclear-associated protein quality control when their import into mitochondria is impaired.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig3-v2.jpg)\n\n**Figure 3.:** (A) Western blot of yeast expressing Ilv2-GFP \u00b1 FCCP \u00b1 MG-132. (B) Western blot of yeast expressing Ilv2-GFP \u00b1 FCCP in wild-type (WT) and E3 KO strains. (C) Western blots showing cycloheximide (CHX) chase of Ilv2-GFP in WT and E3 KO strains in the presence of FCCP. (D) Western blot showing ubiquitylation of immunoprecipitated Ilv2-GFP \u00b1 FCCP in WT and E3 KO strains. Pgk1 = loading control. E3 KO = san1\u0394 ubr1\u0394 doa10\u0394. P = precursor and M = mature.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Western blot of yeast expressing Ilv2-HA \u00b1 FCCP \u00b1 MG-132. (B,\u00a0C) Western blots of yeast expressing the Ilv2-HA (B) or endogenous Ilv2 (C) \u00b1 FCCP in WT and E3 KO strains. (D) Western blots of yeast expressing Ilv2-GFP \u00b1 FCCP in WT and the indicated mutant yeast strains. (E,\u00a0F) Western blots showing the CHX chase of Ilv2-HA (E) or endogenous Ilv2 (F) in WT and E3 KO strains in the presence of FCCP. (G) Western blots of yeast expressing the Lat1-GFP \u00b1 FCCP in WT and E3 KO strains. P = precursor form, M = mature form. Pgk1 = loading control.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Yeast expressing the indicated GFP and mCherry tagged mitochondrial proteins \u00b1 FCCP. (B) Quantification of (A). N > 99 cells per replicate, error bars = SEM of three replicates. (C) Tom70-mCherry wild-type (WT) and tetp-TOM40 (TOM40 KD) yeast expressing the indicated GFP-tagged mitochondrial proteins in the presence of doxycycline. (A, C) Nucleus stained with DAPI, Arrows = nucleus. Bar = 2\u00a0\u03bcm. (D) Western blots of yeast strains expressing indicated GFP-tagged mitochondrial proteins \u00b1\u00a0FCCP \u00b1\u00a0MG-132. (E) Western blots of yeast expressing the indicated GFP-tagged mitochondrial proteins \u00b1\u00a0FCCP in WT and E3 KO strains. (F) Western blot of yeast expressing indicated GFP-tagged mitochondrial proteins \u00b1\u00a0FCCP in WT and the indicated mutant yeast strains. Pgk1 = loading control. E3 KO = san1\u0394 ubr1\u0394 doa10\u0394. P = precursor and M = mature.\n\n### Non-imported mitochondrial precursors are toxic and localize to nuclear-associated foci when clearance is impaired\n\nAs the toxicity of non-imported precursor proteins is well documented (Wang and Chen, 2015), we wondered whether failure to destroy nuclear-localized non-imported precursors would compromise cellular health. To test this idea, we compared the growth of wild type and the aforementioned E3 KO strains in the absence and presence of FCCP. We observed no growth defect in single, double, or triple E3 ligase knockout strains (Figure 4A, Figure 4\u2014figure supplement 1A), suggesting redundant systems may act to mitigate the toxicity of nuclear-localized non-imported proteins. In line with that hypothesis, we noticed that in addition to diffuse nuclear localization, a portion of Ilv2-GFP accumulated in nuclear-associated foci that resembled previously described juxtanuclear (Kaganovich et al., 2008) or intranuclear (Miller et al., 2015) protein aggregate compartments (Figure 4B). These foci were adjacent to the DAPI-stained nucleus, excluded the mitochondrial marker Tom70-mCherry, and were present in a high percentage of FCCP-treated cells (Figure 4C). Prior studies showed that misfolded proteins can be sequestered into nuclear-associated aggregates when their proteasomal clearance is impaired (Kaganovich et al., 2008; Miller et al., 2015). Interestingly, we observed that the intensity of Ilv2-GFP foci increased in the E3 KO strain (Figure 4D). Moreover, Dld1 and Dld2, which are degraded more robustly than Ilv2, also localized to nuclear-associated foci, but only in strains lacking the E3 ligase degradation machinery (Figure 4\u2014figure supplement 1B\u2013E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig4-v2.jpg)\n\n**Figure 4.:** (A) Fivefold serial dilutions of WT and E3 KO strains on YPAD \u00b1\u00a0FCCP agar plates. (B) WT and E3 KO yeast expressing Ilv2-GFP and Tom70-mCherry \u00b1\u00a0FCCP. Nucleus stained with DAPI. Arrows = nuclear associated foci. Bar\u00a0=\u00a02 \u03bcm. (C) Quantification of (B). N\u00a0>\u00a099 cells per replicate, error bars = SEM of three replicates. (D) Quantification of average pixel intensity of Ilv2-GFP nuclear foci from (B). N\u00a0=\u00a020 cells, error bars = SD, p-value=0.0005. (E) Fivefold serial dilutions of WT and E3 KO strains expressing endogenous Ilv2-GFP (endo) \u00b1\u00a0mild overexpression of full-length Ilv2-GFP (FL) from pRS413-Ilv2-GFP on SD-His \u00b1\u00a0FCCP agar plates. (F) Yeast strain expressing WT Ilv2-GFP or Ilv2-NES-GFP and Tom70-mCherry \u00b1\u00a0FCCP. Nucleus stained with DAPI. Arrows = nucleus. Bar\u00a0=\u00a02 \u03bcm. (G) Quantification of (F). (H) Western blot of yeast expressing Ilv2-GFP or Ilv2-NES-GFP \u00b1 FCCP. (I) Fivefold serial dilutions of endogenously\u00a0tagged WT Ilv2-GFP and Ilv2-NES-GFP strains on YPAD \u00b1 FCCP agar plates. P = precursor and M = mature.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Fivefold serial dilutions of WT and the indicated mutant strains on YPAD \u00b1 FCCP agar plates. (B, C) WT and E3 KO (san1\u0394 ubr1\u0394 doa10\u0394) yeast expressing Dld1-GFP or Dld2-GFP and Tom70-mCherry \u00b1 FCCP. Nucleus stained with DAPI, arrows = nuclear associated foci, and bar\u00a0=\u00a02 \u03bcm. (D, E) Quantification of (B) and (C), respectively. N\u00a0>\u00a099 cells per replicate, error bars = SEM of three replicates.\n\nWe were unable to identify a mutation that blocked localization to these nuclear puncta, which prevented us from testing whether they act redundantly with proteasome degradation to protect cells from mitoprotein-induced toxicity. However, we did find that a twofold increase in expression of Ilv2-GFP from a single-copy plasmid resulted in constitutive localization of Ilv2-GFP to the nucleus and nuclear associated protein foci (see Figure 5B\u2013D), and resulted in severe growth defects in both wild-type and E3 KO strains (Figure 4E). Moreover, we generated a version of Ilv2-GFP expressed from its endogenous chromosomal location containing a nuclear export signal (NES) inserted between the Ilv2 coding sequence and GFP. NES addition resulted in exclusion of Ilv2-GFP from the nucleus and lack of Ilv2-GFP turnover in the presence of FCCP (Figure 4F\u2013H). Interestingly, expression of nuclear-excluded Ilv2 in cells led to severe growth defects (Figure 4I). Collectively, these results suggest that non-imported Ilv2 is toxic to cells and that nuclear-based proteasome destruction and aggregate sequestration may act in coordination to mitigate this toxicity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of full-length GFP-tagged Ilv2 (FL), mitochondrial targeting sequence deleted (\u0394MTS) GFP-tagged Ilv2, and MTSIlv2 GFP only (MTS). (B) Tom70-mCherry yeast expressing endogenous Ilv2-GFP \u00b1 the indicated Ilv2 variant \u00b1 FCCP. Nucleus stained with DAPI. Arrows = nuclear-associated foci. Bars\u00a0=\u00a02 \u03bcm. (C, D) Quantification of cells with diffuse Ilv2 nuclear localization (C) or Ilv2 nuclear foci (D) from (B). For (C,\u00a0D), N\u00a0>\u00a099 cells per replicate, error bars = SEM of three replicates. (E) Western blot of strains expressing indicated Ilv2-GFP variants \u00b1 FCCP. Pgk1 = loading control. (F) Fivefold serial dilutions of WT and E3 KO strains expressing endogenous Ilv2-GFP (endo) \u00b1 mild overexpression of the indicated Ilv2-GFP variants on SD-His \u00b1 FCCP agar plates. (G) Western blot of strains expressing indicated Cox15-GFP or Lat1-GFP variants, respectively, \u00b1 FCCP. Pgk1 = loading control. (H) Fivefold serial dilutions of WT strains expressing endogenous Cox15-GFP or Lat1-GFP (endo) \u00b1 mild overexpression of the indicated variants on SD-His \u00b1 FCCP agar plates. P = precursor and M = mature.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Fivefold serial dilutions of strains expressing endogenous Ilv2-GFP (endo) \u00b1 mild overexpression of the indicated Ilv2-GFP variants or untagged Ilv2 variants on SD-His \u00b1 FCCP agar plates. (B) Tom70-mCherry yeast expressing endogenous Dld2-GFP \u00b1 the indicated Dld2 plasmid-expressed variants \u00b1\u00a0FCCP. Nucleus stained with DAPI. Arrows = nuclear associated foci. Bars\u00a0=\u00a02 \u03bcm. (C, D) Quantification of cells with diffuse Dld2-GFP nuclear localization (C) or Dld2-GFP nuclear foci (D) from (B). For (C\u00a0and\u00a0D), N\u00a0>\u00a099 cells per replicate, error bars = SEM of three replicates. (E) Western blot of strains expressing indicated Dld2-GFP variants \u00b1\u00a0FCCP. Pgk1 = loading control. (F) Fivefold serial dilutions of WT and E3 KO strains expressing endogenous Dld2-GFP (endo) \u00b1\u00a0mild overexpression of the indicated Dld2-GFP variants on SD-His \u00b1\u00a0FCCP agar plates.\n\n### The MTS is required for non-imported precursor toxicity and quality control\n\nWe sought to elucidate the features of non-imported mitochondrial proteins that drive nuclear-associated aggregation, degradation, and toxicity. Mitochondrial matrix proteins such as Ilv2 are synthesized as precursors with an N-terminal MTS (Pfanner et al., 2019). The MTS is removed by mitochondrial-localized proteases after import (Mossmann et al., 2012), and failure to remove and clear MTSs leads to toxicity (Mossmann et al., 2014; Poveda-Huertes et al., 2020; Roise et al., 1986). To test whether the presence of an MTS on an unimported mitochondrial precursor protein is problematic, we analyzed strains containing single-copy plasmids expressing full-length Ilv2-GFP (FL), MTS-deleted Ilv2-GFP (\u0394MTS), and MTSIlv2-GFP only (MTS) from the constitutive GPD promoter (Figure 5A). Like endogenous Ilv2-GFP (Endo), plasmid-derived FL-Ilv2-GFP localized to the nucleus and nuclear-associated foci, and its abundance declined with FCCP (Figure 5B\u2013E). By contrast, Ilv2 lacking an MTS (\u0394MTS-Ilv2-GFP) constitutively localized to the nucleus even in the absence of FCCP, but never formed nuclear-associated foci or decreased in abundance with FCCP (Figure 5B\u2013E). MTSIlv2-GFP localized to mitochondria and exhibited no nuclear localization, puncta formation, or changes in total abundance with FCCP (Figure 5B\u2013E). Thus, information in the mature, C-terminal portion of Ilv2 is necessary and sufficient for nuclear localization, but the presence of an MTS is required for non-imported Ilv2 degradation and sequestration into nuclear-associated foci.\n\nBecause Ilv2 lacking an MTS was not subjected to quality control, we wondered whether \u0394MTS-Ilv2-GFP was still toxic to cells. In contrast to overexpressed FL Ilv2-GFP, which impaired growth of both wild type and E3 KO cells in the presence or absence of FCCP (Figure 4E), overexpressed Ilv2 lacking its MTS did not slow cell growth, and neither did overexpressed MTSIlv2-GFP alone (Figure 5F). The same was true for non-tagged versions of Ilv2 (Figure 5\u2014figure supplement 1A). Thus, the presence of an MTS on unimported Ilv2 rendered the protein toxic and promoted its subsequent quality control. Importantly, the association between the presence of an MTS, degradation, and toxicity was conserved for other nuclear class proteins. Like Ilv2, Dld2 lacking its MTS constitutively localized to the nucleus, but was not subjected to degradation or sequestered into nuclear foci, and was no longer toxic to cells (Figure 5\u2014figure supplement 1B\u2013F). Moreover, degradation and toxicity of Cox15 and Lat1, which are degraded by a non-nuclear proteasome pathway, also required an N-terminal MTS (Figure 5G,H). Thus, the presence of an MTS on an unimported mitochondrial protein drives toxicity and targets the protein for quality control.\n\n### MTS-mediated toxicity is not entirely linked to mitochondrial import clogging\n\nRecent studies have shown that the failure to degrade some non-imported mitochondrial proteins leads to toxicity because the undegraded precursors clog mitochondrial import pores (M\u00e5rtensson et al., 2019; Weidberg and Amon, 2018). Since we found that the MTS of Ilv2 was required for its toxicity, we wondered whether Ilv2 overexpression and/or expression of Ilv2-NES impaired mitochondrial protein import. To test this, we first assayed the impact of full-length Ilv2 overexpression on mitochondrial protein import using a well-established in vitro import assay that analyzes uptake and subsequent processing of in vitro translated DHFR fused to the MTS of Neurospora crassa ATP synthase subunit 9 (Su9-DHFR) (Pfanner et al., 1987). We found that overexpression of GFP-tagged full-length Ilv2 (FL), but not MTS-deleted Ilv2-GFP (\u0394MTS) or MTSIlv2 only (MTS)-GFP, decreased import of Su9-DHFR into isolated mitochondria, as indicated by reduced formation of the mature form of Su9-DHFR during incubation (Figure 6A). Consistent with these effects, we also found that mitochondria isolated from strains overexpressing FL-Ilv2-GFP contained lower steady-state levels of mitochondrial IM protein Tim54, but not the OM proteins Tom70 and Tom20 (Figure 6B). The reduction in the import of Su9-DHFR and steady-state abundance of mitochondrial proteins in strains overexpressing Ilv2-GFP was not as strong as those observed in mitochondria isolated from cells treated with FCCP (Figure 6C,D), suggesting the impact of Ilv2 overexpression on mitochondrial import is not as severe as loss of mitochondrial membrane potential. Consistent with this observation, Ilv2 overexpression led to the cytoplasmic accumulation of the mitochondrial precursor Idh1-GFP in over 30% of cells, as compared to nearly 100% cytoplasmic accumulation observed in cells treated with FCCP (Figure 6E,F, and as reported in screen results reported in Figure 2). Together, these results indicate that overexpressed full-length Ilv2-GFP partially blocks mitochondrial import, but not to the same extent as the mitochondrial depolarizing agent FCCP.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/61230/elife-61230-fig6-v2.jpg)\n\n**Figure 6.:** (A) 35S-labeled Su9-DHFR was imported into mitochondria isolated from yeast overexpressing the indicated Ilv2-GFP variants. (B) Western blot showing protein levels in mitochondria isolated from yeast overexpressing the indicated Ilv2-GFP variants. (C) 35S-labeled Su9-DHFR was imported into mitochondria isolated from yeast expressing endogenous Ilv2-GFP \u00b1 FCCP. (D) Western blot showing protein levels in mitochondria isolated from yeast expressing endogenous Ilv2-GFP \u00b1 FCCP. (E) Yeast expressing Idh1-GFP and Tom70-mCherry in WT or Ilv2 (untagged) overexpressing strains \u00b1 FCCP. Bars\u00a0=\u00a02 \u03bcm. (F) Quantification of (E). (G) 35S-labeled Su9-DHFR was imported into mitochondria isolated from yeast expressing endogenous Ilv2-GFP or Ilv2-NES-GFP \u00b1 FCCP. (H) Western blot showing protein levels in mitochondria isolated from yeast expressing endogenous Ilv2-GFP or Ilv2-NES-GFP. For (A),\u00a0(C), and (G),\u00a0a\u00a0mixture of antimycin A, oligomycin, and valinomycin (AVO) was used to dissipate the membrane potential. Non-imported proteins were proteolytically removed with proteinase K and the import was analyzed by SDS\u2013PAGE and autoradiography. P = precursor and M = mature.\n\nWe also tested the impact of Ilv2-NES-GFP on mitochondrial import. Ilv2-NES-GFP is a version of Ilv2 that is expressed from its native promoter and is constitutively excluded from the nucleus and highly toxic to cells (Figure 4F and I). Remarkably, we found that Ilv2-NES-GFP, despite its high toxicity, had little to no impact on the in vitro import of Su9-DHFR and had\u00a0only mild effects on the steady-state levels of Tim54 and Aco1 in isolated mitochondria (Figure 6G,H). Given the fact that this version of Ilv2 is highly toxic to cells both in the presence and in\u00a0the\u00a0absence of FCCP, it seems that the toxicity of non-imported Ilv2 cannot be completely attributed to its ability to act as a mitochondrial import clogger, and likely stems from additional deleterious effects of the protein on unidentified cellular processes.\n\n## Discussion\n\nPrior studies demonstrated that the accumulation of unimported mitochondrial precursors causes proteotoxicity termed mitoprotein-induced stress (Wang and Chen, 2015; Wrobel et al., 2015). To combat this stress, cells mount a coordinated response that involves upregulation of proteasome capacity (Boos et al., 2019; Wrobel et al., 2015), downregulation of translation (Wang and Chen, 2015), and clearance of precursors that accumulate at the mitochondrial surface (M\u00e5rtensson et al., 2019; Metzger et al., 2020; Weidberg and Amon, 2018) and ER membrane (Hansen et al., 2018; Laborenz et al., 2021). Here, we surveyed the mitochondrial proteome under conditions of mitochondrial import impairment to get a clearer picture of the full spectrum of fates for non-imported mitochondrial proteins. We found that mitochondrial precursors accumulate in many regions of the cell and identified the nucleus as an important quality control destination for sequestering and destroying non-imported mitochondrial proteins. Moreover, we demonstrated that the N-terminal MTS is a major driver of non-imported protein toxicity. Our findings also indicate that non-imported mitochondrial proteins represent a large class of potential substrates for nuclear protein quality control. This discovery raises the intriguing possibility that non-imported mitochondrial proteins may synergize with other aggregate-prone proteins to overwhelm protein quality control systems during aging and disease (Park et al., 2013). Future studies to determine what drives non-imported mitochondrial proteins to various cellular destinations, and addressing whether mitoproteins perform signaling or metabolic functions at these sites (much like the mito-nuclear signaling protein ATFS1) (Nargund et al., 2012) will help illuminate how cells adapt to the significant burden of mitochondrial dysfunction.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background Saccharomyces cerevisiae</td>\n      <td>Yeast GFP collection co-expressing Tom70-mCherry</td>\n      <td>PMID:27097106</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>BY4741</td>\n      <td>ATCC</td>\n      <td>Cat\u00a0# 201388</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>BY4743</td>\n      <td>ATCC</td>\n      <td>Cat\u00a0# 201390</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>Other strains used in this study</td>\n      <td>This paper</td>\n      <td>Supplementary file 2</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (mouse monoclonal)</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# 11814460001 RRID: AB_390913</td>\n      <td>WB (1:2500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA (mouse monoclonal)</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# 11583816001 RRID: AB_514506</td>\n      <td>WB (1:1000), IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PGK1 (mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat\u00a0# 22C5D8 RRID: AB_2756444</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-FLAG M2 (mouse monoclonal)</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# F1804 RRID: AB_262044</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-H2B (rabbit polyclonal)</td>\n      <td>Active Motif</td>\n      <td>Cat\u00a0# 39947 RRID: AB_2793403</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Idh1 (goat polyclonal)</td>\n      <td>ORIGENE</td>\n      <td>Cat\u00a0# Ap31099PU-N</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ilv2 (rabbit polyclonal)</td>\n      <td>Dr. Agnieszka Chacinska</td>\n      <td>N/A</td>\n      <td>WB (1:1000), IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Tom70 (rabbit polyclonal)</td>\n      <td>Dr. Nikolaus Pfanner</td>\n      <td>N/A</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Tom20 (rabbit polyclonal)</td>\n      <td>Dr. Nikolaus Pfanner</td>\n      <td>N/A</td>\n      <td>WB (1:1000), IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Tim54 (rabbit polyclonal)</td>\n      <td>Dr. Nikolaus Pfanner</td>\n      <td>N/A</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Tim50 (rabbit polyclonal)</td>\n      <td>Dr. Nikolaus Pfanner</td>\n      <td>N/A</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Tim18 (rabbit polyclonal)</td>\n      <td>Dr. Nikolaus Pfanner</td>\n      <td>N/A</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-OM45 (rabbit polyclonal)</td>\n      <td>Dr. Carla Koehler</td>\n      <td>N/A</td>\n      <td>WB (1:1000), IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Tom40 (rabbit polyclonal)</td>\n      <td>Dr. Toshiya Endo</td>\n      <td>N/A</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKT128 (plasmid)</td>\n      <td>Addgene</td>\n      <td>Plasmid # 8729</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKT127-mCherry (plasmid)</td>\n      <td>Daniel Gottschling</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFA6a-5FLAG-KanMX6 (plasmid)</td>\n      <td>Addgene</td>\n      <td>Plasmid # 15983</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFA6A-mCherry-HphMX (plasmid)</td>\n      <td>Addgene</td>\n      <td>Plasmid # 105156</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pVL015 (plasmid)</td>\n      <td>Addgene</td>\n      <td>Plasmid # 64766</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFA6A-3HA-KanMX (plasmid)</td>\n      <td>Addgene</td>\n      <td>Plasmid # 39295</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Template plasmid for 35S-radiolabeled Su9-DHFR</td>\n      <td>Walter Neupert PMID:2884042</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Other plasmids generated in this study</td>\n      <td>This paper</td>\n      <td>Supplementary file 4</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Sequenced-based reagent</td>\n      <td>Oligos used in this study</td>\n      <td>This paper</td>\n      <td>Supplementary file 3</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>\u03b2-Estradiol</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# E8875; CAS # 50-28-2</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Carbonyl cyanide 4-(trifluoromethoxy)phenylhydrazone (FCCP)</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# C2920; CAS # 370-86-5</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>cOmplete Protease Inhibitor Cocktail</td>\n      <td>Millipore Sigma</td>\n      <td>Cat# 11697498001</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dimethyl sulfoxide</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# D2650; CAS # 67-68-5</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cycloheximide</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# C1988; CAS # 66-81-9</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Doxycycline hyclate</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# C9891; CAS # 24390-14-5</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Polyvinylpyrrolidone</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# PVP40; CAS # 9003-39-8</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pepstatin</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# 10253286001; CAS # 26305-03-3</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phenylmethylsulfonyl fluoride</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# P7626; CAS # 329-98-6</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Calcofluor Fluorescent Brightener 28</td>\n      <td>Millipore Sigma</td>\n      <td>Cat\u00a0# F3543; CAS # 4404-43-7</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Diamidino-2-phenylindole dihydrochloride (DAPI)</td>\n      <td>Thermo Fisher</td>\n      <td>Cat\u00a0# D1306</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glass Antifade Mountant with NucBlue Stain (P36981)</td>\n      <td>Thermo Fisher</td>\n      <td>Cat\u00a0# P36981</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(S)-MG-132</td>\n      <td>Cayman Chemical</td>\n      <td>Cat\u00a0# 10012628; CAS\u00a0#\u00a0133407-82-6</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N-ethylmaleimide (NEM)</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>Cat\u00a0# S3876; CAS# 128-53-0</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IGEPAL NP-40-substitute</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>Cat\u00a0# CA-630; CAS # 9002-93-1</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Zymolyase 100T</td>\n      <td>US Biological Life Sciences</td>\n      <td>Cat\u00a0# Z1004; CAS# 37340-57-1</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Triton X-100</td>\n      <td>Bio-Rad</td>\n      <td>Cat\u00a0# 1610407; CAS# 9002-93-1</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Formaldehyde 16% in aqueous solution, EM Grade</td>\n      <td>VWR</td>\n      <td>Cat\u00a0# 100503\u2013914; CAS# 50-00-0</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DTT (dithiothreitol) (&gt;99% pure) protease free</td>\n      <td>GOLDBIO</td>\n      <td>Cat\u00a0# DTT10; CAS# 27565-41\u22129/3483- 12\u20133</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Antimycin A</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>Cat\u00a0# A8674; CAS# 1397-94-0</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phusion polymerase</td>\n      <td>New England Biolabs</td>\n      <td>Cat\u00a0# M0530L</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Valinomycin</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>Cat\u00a0# V0627; CAS# 2001-95-8</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Oligomycin</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>Cat\u00a0# 75351; CAS# 579-13-5</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Gibson Assembly Cloning Kit</td>\n      <td>New England Biolabs</td>\n      <td>Cat\u00a0# E5510S</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TNT SP6 Quick Coupled Transcription/Translation System</td>\n      <td>Promega</td>\n      <td>Cat\u00a0# L2080</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>FIJI</td>\n      <td>PMID:22743772</td>\n      <td>Version 1</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Prism</td>\n      <td>Graphpad Software</td>\n      <td>Version 8</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>SnapGene</td>\n      <td>GSL Biotech</td>\n      <td>Version 4.2</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Image Lab</td>\n      <td>Bio-Rad</td>\n      <td>Version 6</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Zen Blue</td>\n      <td>Carl Zeiss</td>\n      <td>Version 2.6</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Zen Black</td>\n      <td>Carl Zeiss</td>\n      <td>Version 2.3</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Mitoprot</td>\n      <td>PMID:8944766</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Illustrator CC</td>\n      <td>Adobe</td>\n      <td>Version 22.1</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, Algorithm</td>\n      <td>Photoshop CC</td>\n      <td>Adobe</td>\n      <td>Version 19.1</td>\n      <td>N/A</td>\n    </tr>\n  </tbody>\n</table>\n\n### Reagents\n\nChemicals were obtained from the following sources: $\u03b2$-estradiol (E8875), carbonyl cyanide 4-(trifluoromethoxy) phenylhydrazone (C2920), cOmplete Protease Inhibitor Cocktail (11697498001), dimethyl sulfoxide (D2650), cycloheximide (C1988),\u00a0doxycycline hyclate (C9891), polyvinylpyrrolidone (PVP40), pepstatin (10253286001), phenylmethylsulfonyl fluoride (P7626), calcofluor Fluorescent Brightener 28 (F3543) from Millipore Sigma, 4\u2032,6-diamidino-2-phenylindole dihydrochloride (DAPI) (D130), ProLong Glass Antifade Mountant with NucBlue Stain (P36981) from ThermoFisher, (S)-MG-132 (10012628) from Cayman Chemical, N-ethylmaleimide (NEM) (S3876), IGEPAL NP-40 (CA-630) from Sigma\u2013Aldrich, Zymolyase 100T (Z1004) from US Biological Life Sciences, Triton X-100 (1610407) from Bio-Rad, paraformaldehyde (100503\u2013914) from VWR, and dithiothreitol (DTT10) from GOLDBIO. Antibodies and other reagents are described in the appropriate section below.\n\n### Yeast strains\n\nAll yeast strains are derivatives of S. cerevisiae S288c (BY) (Brachmann et al., 1998) and are listed in Supplementary file 2. Strains expressing fluorescently tagged proteins from their native loci were created by one-step PCR-mediated C-terminal endogenous epitope tagging using standard techniques and the oligo pairs listed in Supplementary file 3 (Brachmann et al., 1998; Sheff and Thorn, 2004). Plasmid templates for GFP and mCherry tagging were from the pKT series of vectors (Sheff and Thorn, 2004), plasmid template for RITE tagging was previously described pVL015 (Verzijlbergen et al., 2010), and plasmid templates for FLAG, HA, and mCherry tagging were pFA6A-5FLAG-KanMX (Addgene 15983) (Noguchi et al., 2008), pFA6A-3HA-His3MX (Addgene 41600) (Longtine et al., 1998), pFA6A-3HA-KanMX (Addgene 39295) (B\u00e4hler et al., 1998), and pFA6A-mCherry-HphMX (Addgene 105156) (Wang et al., 2014). Deletion strains were created by one-step PCR-mediated gene replacement using the oligos pairs listed in Supplementary file 3 and plasmid templates of pRS series vectors (Brachmann et al., 1998). Correct integrations were confirmed with a combination of colony PCR across the chromosomal insertion site and correctly localized expression of the fluorophore by microscopy. The strain collection used for screening in Figure 2 expressed Tom70-mCherry/any protein-GFP and was created previously (Hughes et al., 2016). The genotype of all strains in the collection is MATa/MAT\u03b1 his3\u03941/his3\u03941 leu20/leu2\u03940 ura3\u03940/ura3\u03940 met15\u03940/+ lys2\u03940/+ anygene-GFP-His3MX/+ TOM70-mCherry-KanMX/+.\n\n### Yeast cell culture and media\n\nFor all microscopy and western blot experiments, yeast were grown exponentially for 15 hr up to a maximum density of 1 \u00d7 107 cells/mL prior to starting any treatments. Cells were cultured as indicated in the main text and figure legends in YPAD medium (1% yeast extract, 2% peptone, 0.005% adenine, 2% glucose) or synthetic defined medium lacking histidine (SD-His) (0.67% yeast nitrogen base without amino acids, 2% glucose, supplemented nutrients 0.074 g/L each adenine, alanine, arginine, asparagine, aspartic acid, cysteine, glutamic acid, glutamine, glycine, myo-inositol, isoleucine, lysine, methionine, phenylalanine, proline, serine, threonine, tryptophan, tyrosine, uracil, valine, 0.369 g/L leucine, 0.007 g/L para-aminobenzoic acid). FCCP and MG-132 were used at a final concentration of 10 \u03bcM and 50 nM, respectively. All FCCP and/or MG-132 treatments were conducted for 6\u00a0hr. For knockdown of TOM40 expressed under control of the tetracycline promoter, cultures were grown in log-phase for 16 hr in the presence of doxycycline (20 \u03bcg/mL) prior to any experimental treatments. The wild-type control strain was cultured under the same conditions. For RITE tag-switching experiments, \u03b2-estradiol was added to cultures at a final concentration of 1 \u00b5M to induce tag switching. FCCP was added to cultures at a final concentration of 10 \u00b5M at the same time of \u03b2-estradiol. Cultures were imaged after 6 hr of treatment.\n\n### Plasmids and cloning\n\nCentromeric yeast plasmids expressing GPD-promoter-driven full-length, MTS-deleted, or MTS-only versions of untagged Ilv2 and full-length, MTS-deleted, or MTS-only variants of Ilv2, Lat1, Cox15, and Dld2 fused to C-terminal GFP epitopes were assembled using Gibson Assembly Master Mix (E2611L, NEB) following the manufacturer\u2019s instructions. Plasmid names and construction details (including PCR templates, oligo pairs, and digested plasmid templates) used in Gibson Assembly are listed in Supplementary file 4. PCR amplifications from yeast genomic DNA and plasmid DNA were conducted with Phusion Polymerase (M0530L, NEB) using oligonucleotides listed in Supplementary file 3. Plasmids were verified by sequencing.\n\n### MTS prediction\n\nMTSs\u00a0for Ilv2, Cox15, Lat1, and Dld2 were predicted using Mitoprot (Claros and Vincens, 1996). Correct MTS prediction was confirmed by analyzing localization of C-terminal GFP-tagged versions of MTS-only or MTS-deleted proteins via microscopy.\n\n### Microscopy\n\nTwo hundred to 300 nm optical Z-sections of live yeast cells were acquired with an AxioImager M2 (Carl Zeiss) equipped with an Axiocam 506 monochromatic camera (Carl Zeiss) and 100\u00d7 oil-immersion objective (Carl Zeiss, Plan Apochromat, NA 1.4) or with an AxioObserver 7 (Carl Zeiss) equipped with a PCO Edge 4.2LT Monochrome, Air Cooled, USB 3 CCD camera with a Solid-State Colibri 7 LED illuminator and 100\u00d7 oil-immersion objective (Carl Zeiss, Plan Apochromat, NA 1.4). All images were acquired with ZEN (Carl Zeiss) and processed with Fiji (NIH). All images shown in figures represent a single optical section.\n\n### DAPI staining\n\nYeast cells were stained with DAPI by incubating cultures for 10 min in respective growth media with DAPI (1 \u03bcg/mL).\n\n### Quantification of nuclear-associated foci intensity\n\nMean GFP pixel intensity of nucleus and nuclear-associated foci was calculated via line scan analysis of pixel intensity from maximum-intensity projections on 20 cells using FIJI (NIH) (Schindelin et al., 2012). Nucleus stained by DAPI was used as a reference to draw lines of\u00a0~2.5 \u03bcm for analysis.\n\n### Determination of replicative age\n\nYeast strains exponentially growing for 15 hr up to a maximum density of 1 \u00d7 107 cells/mL were stained with for 5 min in YPAD with 5 \u03bcg/mL of Fluorescent Brightener 28 (F3543, Millipore Sigma), which stains bud scars. The replicative age of each yeast cell was determined by counting of the number of bud scars after staining. Cells with less than five bud scars were categorized as young and cells with five or more bud scars were categorized as old.\n\n### Indirect immunofluorescence staining\n\nFor indirect immunofluorescence\u00a0staining, cells were harvested by centrifugation and fixed in 10 mL fixation medium (4%\u00a0paraformaldehyde in YPAD) for 1 hr. Fixed yeast cells were washed with Wash Buffer (0.1\u00a0M Tris, pH\u00a0=\u00a08, 1.2\u00a0M sorbitol) twice and incubated with DTT (10 mM DTT in 0.1M Tris, pH\u00a0=\u00a09.4) for 10 min. Spheroplasts were generated by incubating cells in solution containing 0.1\u00a0M KPi, pH\u00a0=\u00a06.5, 1.2\u00a0M\u00a0sorbitol, and 0.25 mg/mL Zymolyase at 30\u00b0C for 30 min. Spheroplasts were gently diluted in 1:40 using Wash Buffer and attached to glass slides pre-coated with 0.1% poly-l-Lysine (2 mg/mL). Samples were permeabilized in cold 0.1% Triton-X100 in PBS for 10 min at 4\u00b0C, briefly dried and blocked (30 min at room temperature) in Wash Buffer containing 1% bovine serum albumin\u00a0(BSA). After blocking, samples were incubated with 1:200 diluted primary antibodies against FLAG (F1804, Millipore Sigma), Ilv2, Tom20, or OM45 for 90 min followed by washing 10 times. Samples were then incubated with 1:300 diluted secondary antibody (A32723, Invitrogen) followed by washing 10 times. Antibody dilutions were made using Wash Buffer containing 1% BSA. Samples were washed with Wash Buffer containing 1% BSA and 0.1% Tween-20. Slides were washed twice with Wash Buffer before sealing and mounted with hardset medium containing NucBlue stain (P36981, Invitrogen) overnight. Widefield images were acquired as described above in microscopy section.\n\n### Protein preparation and western blotting\n\nWestern blotting of yeast extracts was carried out as described previously (Hughes et al., 2016). Briefly, 1 \u00d7 107 log phase yeast cells were harvested and resuspended in 50 \u03bcL of H2O. Fifty\u00a0microliters of NaOH (1 M) was added to cell suspension and incubated for 5 min at room temperature. Cells were centrifuged at 20,000\u00a0\u00d7\u00a0g for 10 min at 4\u00b0C, and cell pellets were resuspended in sodium dodecyl sulfate\u00a0(SDS) lysis buffer (30 mM Tris\u2013HCl pH 6.8, 3% SDS, 5% glycerol, 0.004% bromophenol blue, 2.5% \u03b2-mercaptoethanol). Cells extracts were resolved on Bolt 4\u201312% Bis\u2013Tris Plus Gels (NW04125BOX, Thermo Fisher) with NuPAGE MES SDS Running Buffer (NP0002-02, Thermo Fisher) and transferred to nitrocellulose membranes. Membranes were blocked and probed in blocking buffer (1\u00d7\u00a0PBS, 0.05% Tween 20, 5% non-fat dry milk) using the primary antibodies for GFP (1814460001, Sigma Millipore), HA (11583816001, Sigma Millipore), Ilv2 (gift from Dr. Agnieszka Chacinska, International Institute of Molecular and Cell Biology), Tom70, Tom20, Tim54, Tim50, Tim18 (gifts from Dr. Nikolaus Pfanner, University of Freiburg), OM45 (gift from Dr. Carla Koehlar, UCLA), Idh1 (Ap31099PU-N, ORIGENE) or Pgk1 (22C5D8, Abcam), and HRP-conjugated secondary antibodies (715-035-150, Jackson Immunoresearch). Blots were developed with SuperSignal West Pico Chemiluminescent substrate (34580, Thermo Fisher) and exposed to films. Blots were developed using film processor (SRX101, Konica Minolta) or a Chemidoc MP system (Bio-Rad).\n\n### Nuclear enrichment\n\nCells were grown in log-phase overnight as described above followed by treatment with MG-132 and \u00b1 FCCP for 4 hr. 4 \u00d7 108 total cells were harvested. Cells were washed with ddH2O, and the wet weight of the pellet was recorded. Cells were incubated in DTT Buffer (100 mM Tris\u2013HCl pH 9.5, 10 mM DTT) and 50 nM MG-132 with gentle shaking at 30\u00b0C for 20 min. Cells were then spheroplasted via incubation in zymolyase buffer (1.2 M sorbitol, 20 mM K2HPO4, pH 7.4), 50 nM MG-132, and 1 mg of Zymolyase 100T (Z1004, US Biological Life Sciences) per 1 g cell pellet for 1 hr at 30\u00b0C with gentle shaking. Spheroplasts were washed once with\u00a0zymolyase buffer, and then all subsequent steps were carried out on ice. Spheroplasts were dounce-homogenized with 35 strokes in 5 mL of polyvinylpyrrolidone-40 solution (8% PVP-40, 20 mM K-phosphate, 7.5 \u00b5M MgCl2, pH 6.5), 0.025% Triton X-100, 5 mM DTT, 50 \u00b5L\u00a0Solution P (20 mg/mL phenylmethylsulfonyl fluoride\u00a0(PMSF), 0.4 mg/mL Pepstatin A in ethanol), and 50 \u00b5L 100\u00d7 cOmplete protease inhibitor cocktail 697498001, Millipore Sigma). Next, 15 mL of PVP-40 solution, 15 \u00b5L Solution P, and 15 \u00b5L PIC were added, and spheroplasts were dounce-homogenized with an additional five strokes. PVP-40 ensures nuclei stay intact during lysis (Niepel M et al., 2017). The cell lysate was centrifuged for 3000 \u00d7 g for 5 min. The resulting supernatant was discarded, and pellets were washed once and resuspended in 1 mL of IP Buffer (50 mM Tris pH7.5, 150 mM NaCl, 1 mM ethylenediaminetetraacetic acid (EDTA), 10% glycerol, 1% IGEPAL [NP-40 substitute], 100 \u00b5M PMSF). Intact nuclei, which are more resistant to NP-40 than other cellular membranes, were immobilized non-specifically to magnetic agarose beads (BMAB 20, Chromotek) via incubation at 4\u00b0C for 2\u20133 hr. After binding, nuclei were washed 4 \u00d7 15 min in IP buffer at 4\u00b0C. Nuclear-enriched extracts were eluted by incubating beads in 2\u00d7 Laemmli buffer (63 mM Tris pH 6.8, 2% [w/v] SDS, 10% [v/v] glycerol, 1 mg/mL\u00a0bromophenol blue, 1% [v/v] b-mercaptoethanol) at 90\u00b0C for 10 min. Eluates were subjected to sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis\u00a0(SDS\u2013PAGE)\u00a0and western blotting with primary anti-HA antibody (11583816001, Sigma Millipore), anti-Tom70 and Tim44 antisera (gifts from Dr. Nikolaus Pfanner, University of Freiburg), anti-GFP antibody (1814460001, Millipore Sigma), and anti-H2b antibody (39947, Active Motif). Effectiveness of nuclear enrichment was indicated by increase in relative abundance of nuclear markers H2B and Nup49-GFP and decrease in Tom70 and Tim44 in nuclear extracts compared to whole-cell lysate. Nuclei were monitored during isolation by visualizing Nup49-GFP via fluorescence microscopy.\n\n### Cycloheximide-chase analysis\n\nExponentially growing cells were treated \u00b1\u00a0FCCP for 4 hr, after which, cycloheximide (100 \u00b5g/mL) was added to the cultures. The time zero sample was collected immediately after adding cycloheximide. For all other timepoints, samples were collected by harvesting an equal volume of media to that which was harvested at time zero. Samples were then subjected to SDS\u2013PAGE and western blotting with primary antibodies for HA (11583816001, Sigma Millipore) or GFP (1814460001, Sigma Millipore) and Pgk1 (22C5D8, Abcam). Blots were developed as described above.\n\n### Microscopy and western blot screens\n\nIndividual strains listed in Supplementary file 1 from the Tom70-mCherry/mitochondrial protein GFP collection were cultured in batches overnight in YPAD as described above and then incubated \u00b1 FCCP for 6\u00a0hr. After treatment, cultures were split for simultaneous microscopy and western blot analysis. Images and western blots were analyzed and scored by three independent researchers. A subset of strains from each class was reconstructed and reanalyzed with both FCCP and genetic ablation of mitochondrial import. Class assignments were based on combined results of microscopy and western blot analysis and were as follows: class 1 (nucleus), small to large decrease in protein levels and localized to the nucleus in the presence of FCCP; class 2 (mitochondria), minimal change in protein level and robustly localized to mitochondria in the presence of FCCP; class 3 (cytoplasm), no change or an increase in protein level and localized predominantly to the cytoplasm with FCCP treatment; class 4 (ER), mild or no change in protein abundance and localized to ER upon FCCP; and\u00a0class 5 (reduced abundance), large reduction in protein abundance and no longer easily detectable via microscopy with FCCP treatment.\n\n### Immunoprecipitation\n\nCells were grown as described above and treated \u00b1 FCCP and MG-132 for 6 hr. 1 \u00d7 108 total cells were harvested, resuspended in 1 mL of lysis buffer (50 mM Tris pH7.5, 150 mM NaCl, 1 mM EDTA, 10%\u00a0glycerol, 1% IGEPAL [NP-40 substitute], 100 \u00b5M PMSF, and 10 mM NEM), and lysed with glass beads using an Omni Bead Ruptor 12 Homogenizer (eight cycles of 20 s each). Cells lysates were cleared by centrifugation at 20,000\u00a0\u00d7\u00a0g, and supernatant was moved to a new tube. Cell pellets were resuspended in 50 \u00b5L of SUME buffer (1% SDS, 8 M\u00a0urea, 10 mM MOPS, pH 6.8, 10 mM EDTA, and 10 mM NEM) and heated at 55\u00b0C for 5 min. Fifty\u00a0microliters of cell pellet resuspension was combined with supernatant from lysate clearance centrifugation, and total volume was adjusted to 1 mL by adding lysis buffer. Lysates were incubated with 25 \u03bcL of anti-GFP bead slurry (GTMA, GFP-Trap_MA, chromotek) at 4\u00b0C for 3\u20134 hr and then washed 4\u00d7 for 10 min each in lysis buffer (without NEM). Immunoprecipitated proteins were eluted by incubating beads in 2\u00d7 Laemmli buffer (63 mM Tris pH 6.8, 2%\u00a0[w/v] SDS, 10%\u00a0[v/v] glycerol, 1 mg/mL bromophenol blue, 1%\u00a0[v/v] \u03b2-mercaptoethanol) at 90\u00b0C for 10 min. Eluates were subjected to SDS\u2013PAGE and western blotting with primary anti-ubiquitin antibody (PA1-187, ThermoFisher) and anti-GFP antibody (1814460001, Sigma Millipore). Blots were developed as described above.\n\n### Growth assays\n\nFivefold serial dilutions of exponentially growing yeast cells were diluted in YPAD or SD-His, and 3 \u03bcL of each dilution was spotted onto YPAD or SD-His media plates with or without FCCP (5 \u03bcM). Approximate number of cells plated at each dilution spot was 5000, 1000, 20, 40, and 8. Plates were incubated at 30\u00b0C for 24\u201348 hr before obtaining images.\n\n### Mitochondria isolation\n\nYeast cells were grown as described above until midlogarithmic growth phase (OD600 \u2248 1), isolated by centrifugation, washed with dH2O, and the pellet weight was determined. Subsequently, cells were resuspended in 2 mL/g pellet DTT buffer (0.1 M Tris, 10 mM dithiothreitol [DTT]) and incubated for 20 min at 30\u00b0C under constant shaking. After reisolation by centrifugation, DTT-treated cells were washed once with Zymolyase buffer (1.2 M sorbitol, 20 mM K2HPO4, pH 7.4 with HCl), and cell walls were digested for 30 min at 30\u00b0C under constant shaking in 7 mL/g pellet Zymolyase buffer containing 1 mg/g pellet Zymolyase 100T. After Zymolyase digestion, cells were reisolated by centrifugation, washed with Zymolyase buffer, and lysed by mechanical disruption in 6.5 mL/g pellet homogenization buffer (0.6 M sorbitol, 10 mM Tris pH 7.4, 1 mM EDTA pH 8.0 with KOH, 0.2% bovine serum albumin, 1 mM phenylmethylsulfonylfluoride) at 4\u00b0C. Cell debris were removed from the homogenate twice by centrifugation at 5000 \u00d7 g for 5 min at 4\u00b0C, and mitochondria were pelleted at 14,000 \u00d7 g for 15 min at 4\u00b0C. The mitochondrial pellet was resuspended in SEM buffer (250 mM sucrose, 1 mM EDTA pH 8.0 with KOH, 10 mM 3-(N-morpholino)-propansulfonic acid pH 7.2), reisolated by differential centrifugation as described above, and\u00a0resuspended in SEM buffer, and mitochondria were shock frozen in liquid nitrogen and stored at \u221280\u00b0C.\n\n### In vitro import of radiolabeled proteins\n\n35S-radiolabeled Su9-DHFR (Pfanner et al., 1987) was synthesized in rabbit reticulocyte lysate (TNT SP6 Quick Coupled Transcription/Translation System, Promega) according to the manufacturer\u2019s description. For in vitro protein import reactions, mitochondria were diluted in import buffer (3% BSA, 250 mM sucrose, 80 mM KCl, 5 mM MgCl2, 5 mM methionine, 10 mM KH2PO4, 10 mM MOPS, pH 7.2 with KOH) supplemented with 5 mM creatine phosphate, 0.1 mg/mL creatine kinase, 2 mM ATP, and 2 mM NADH. Eight\u00a0micromolar antimycin A, 1 \u03bcM valinomycin, and 20 \u03bcM oligomycin (AVO) were used to dissipate the membrane potential in negative controls. Samples were prewarmed to 25\u00b0C, and\u00a0the import was started with 3% (v/v) radiolabeled precursor and stopped by transfer on ice and addition of AVO after the indicated times. Subsequently, non-imported preproteins were removed by treating samples with 50 \u03bcg/mL proteinase K for 10 min on ice. Protein degradation was stopped by addition of 1 mM PMSF, mitochondria were reisolated by centrifugation at 20,000 \u00d7 g for 10 min at 4\u00b0C, and pellets were washed with SEM buffer containing 1 mM PMSF. Subsequently, mitochondria were resuspended in Laemmli buffer (125 mM Tris/HCl pH 6.8, 4% SDS, 20% glycerol, 0.5 mg/mL bromophenol blue) containing 1% \u03b2-mercaptoethanol and 1 mM PMSF, and proteins were denatured for 5 min at 95\u00b0C and subjected to SDS\u2013PAGE. The gel was stained with Coomassie solution (40% methanol, 7% acetic acid, 1% Coomassie brilliant blue R 250), de-stained (20% methanol, 10% acetic acid) to confirm equal protein loading, and dried. Import of radiolabel proteins was analyzed by autoradiography.\n\n### Quantification and statistical analysis\n\nExperiments were repeated at least three times, and all attempts at replication were successful. For all quantifications, number of cells scored is included in the figure legends. Differences in means were compared using two-tailed t-tests at the 5% significance level. No randomization or blinding was used in experiments. All analysis was done with GraphPad Prism version 8.01.\n",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "99076a3c-9295-4131-b154-948841da9c74",
+      "submission_id": "56045d5d-18b5-43d2-b1a4-2c15b8f5d94d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maya Schuldiner, Weizmann Institute Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61230.sa1](https://doi.org/10.7554/eLife.61230.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nNormal activity of Mitochondria requires the import of hundreds of proteins from the cytosol. When import is perturbed and mitochondrial precursor proteins accumulate outside mitochondria, cells suffer from severe proteotoxic stress and respond by activating adaptive programs. However, the precise molecular events of this precursor-induced toxicity are still unknown. In this manuscript, Shakya and colleagues reveal the fate of many mitochondrial precursor proteins when their import into mitochondria is blocked by dissipating the inner membrane potential. Using high-throughput microscopy screening, they show that different mitochondrial proteins are now localized to different cellular compartments (including cytosol, endoplasmic reticulum and nucleus) or are basically depleted from the cell when they cannot be imported into mitochondria. They demonstrate that nuclear-localized proteins are subject to proteasomal degradation and that the mitochondrial targeting signal is crucial for its nuclear quality control.\n\nOverall, this is an exciting study which fills an important gap in our knowledge about the quality control of mitochondrial proteins. It will at the same time serve as a valuable resource for many researchers working in the field. The manuscript is very well suited for a widely-read journal like eLife.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The nucleus is a quality control center for non-imported mitochondrial proteins\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by David Ron as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Johannes M. Herrmann (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nMitochondrial biogenesis requires the import of hundreds of proteins from the cytosol. When import is perturbed and mitochondrial precursor proteins accumulate outside mitochondria, cells suffer from proteotoxic stress and respond by activating adaptive programs. However, the precise molecular events of this precursor-induced toxicity are still unknown. In this manuscript, Shakya and colleagues reveal the fate of many mitochondrial precursor proteins when their import into mitochondria is blocked by dissipating the inner membrane potential. Using high-throughput microscopy screening, they show that different mitochondrial proteins are now mislocalized to different cellular compartments (including cytosol, endoplasmic reticulum and nucleus) or are basically depleted from the cell when they cannot be imported into mitochondria. They demonstrate that nuclear-localized proteins are subject to proteasomal degradation and that the mitochondrial targeting signal is crucial for its nuclear quality control.\n\nOverall, this is an exciting study which fills an important gap in our knowledge about the quality control of mitochondrial proteins. It will at the same time serve as a valuable resource for many researchers working in the field. The manuscript is very well suited for a widely-read journal like eLife.\n\nEssential revisions:\n\n1) A major weakness of the manuscript is the exclusive reliance on tagged proteins. As a requirement for resubmission we ask that at least in selected key experiments you will demonstrate your findings also for an untagged protein for which antibodies exist (many antibodies against mitochondrial proteins in yeast exist). This is especially important since the GFP tag is large and well-folded and known to slow down translocation \u2013 for example, the GFP-tag slows down the import of Ilv2 as can be seen by more precursor accumulating (even in the absence of CCCP) relative to the smaller tag HA. Similar difference between GFP-tagged and HA-tagged forms are observed also for Acp1.\n\n2) The authors use an overexpression of Ilv2-/Cox15-/Lat1-GFP variants to demonstrate the relevance of their MTS for the toxicity, nuclear distribution and QC of these proteins. However, the overexpression of the MTS-containing constructs obviously constitutes a severe stress to the cells already without CCCP treatment (Figure 4G and I). It's likely that these constructs act as \"cloggers\" of the mitochondrial translocases, similar to what was shown in the Weidberg and Amon, 2018 and Boos et al., 2019 papers. Therefore, what the authors observe in these strains might at least partly be due to secondary effects. This is crucial for the interpretation of these observations. Therefore, the authors should carefully check whether in these strains, the import of other mitochondrial proteins is impaired (precursor accumulation in Western blot, activation of classical stress responses). The key experiments should also be repeated with expression at endogenous levels and ideally without fusion of a large, stably folded GFP (a short tag such as HA or Myc should be ok).\n",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6ddda55c-de55-49ee-a3c6-066412dd598e",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C1",
+      "claim": "Mitochondrial import deficiency causes cellular toxicity due to the accumulation of non-imported mitochondrial precursor proteins, termed mitoprotein-induced stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial import deficiency causes cellular toxicity due to the accumulation of non-imported mitochondrial precursor proteins, termed mitoprotein-induced stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that is supported by citations to prior work in the field (Wang and Chen, 2015; Wrobel et al., 2015) as shown in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "6335e9d2-d768-4e4b-8533-45402965a8ce",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C2",
+      "claim": "Ilv2 is a mitochondrial matrix enzyme in isoleucine and valine biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ilv2 (Figure 1\u2014figure supplement 1A), a mitochondrial matrix enzyme in isoleucine and valine biosynthesis (Falco et al., 1985)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Falco et al., 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "9799fbdc-1cb0-4b50-888a-24ce35163d27",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C3",
+      "claim": "Ilv2-GFP localized to the nucleus in over 80% of aged yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Ilv2-GFP also localized to the nucleus in over 80% of aged cells, as indicated by diffuse GFP fluorescence within a region surrounded by the nuclear pore protein Nup49-mCherry (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 1A and quantification of cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "5e5c8d0a-f796-4158-bdbd-bbf66c0c173d",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C4",
+      "claim": "The mitochondrial network undergoes extensive fragmentation and depolarization during replicative aging in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the mitochondrial network undergoes extensive fragmentation and depolarization during replicative aging in budding yeast, which is defined as the number of times an individual yeast cell undergoes division (Hughes and Gottschling, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work by the authors (Hughes and Gottschling, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "81129eb1-2b76-4b15-93f5-7bbad3e9bc58",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C5",
+      "claim": "Tom70 does not rely on mitochondrial membrane potential for its mitochondrial localization.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Tom70, which does not rely on mitochondrial membrane potential for its mitochondrial localization (S\u00f6llner et al., 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to S\u00f6llner et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "b7272825-04ed-4a41-8df3-0f2192845563",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C6",
+      "claim": "Treatment of cells with FCCP caused Ilv2-GFP accumulation in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with that idea, treatment of cells with the mitochondrial IM depolarizing agent trifluoromethoxy carbonyl cyanide phenylhydrazone (FCCP) (Parker, 1965) also caused Ilv2-GFP accumulation in the nucleus, which was marked with 4\u2032,6-Diamidine-2\u2032-phenylindole dihydrochloride (DAPI) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "3ae73f63-c13d-4ca5-ad70-eee7c8a46e46",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C7",
+      "claim": "Nuclear localization of Ilv2 did not result from GFP-tagging.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear localization did not result from GFP-tagging, as indirect immunofluorescence showed a similar nuclear localization for native Ilv2 (Figure 1C) as well as functional C-terminally FLAG-tagged Ilv2 (Figure 1\u2014figure supplement 1A) in FCCP-treated cells (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 1C and Figure 1\u2014figure supplement 1B, and functional data in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "b9e2fd05-9c71-4ec4-91f2-b6bc29cd3e73",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C8",
+      "claim": "Ilv2-GFP localized to the nucleus in cells conditionally depleted of Tom40.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Ilv2-GFP localized to the nucleus in cells conditionally depleted of the essential OM protein import channel Tom40 (Mnaimneh et al., 2004; Vestweber et al., 1989; Figure 1\u2014figure supplement 1C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 1\u2014figure supplement 1C,D and citations to prior work on Tom40.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "c02bd9c0-4e5d-496d-9385-1fd189c617b7",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C9",
+      "claim": "Nuclear localization of Ilv2 was not caused by off-target effects of FCCP, but was specific to defects in mitochondrial protein import.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that nuclear localization was not caused by off-target effects of FCCP, but was specific to defects in mitochondrial protein import.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that Tom40 depletion (a genetic method) produces the same phenotype as FCCP treatment (a pharmacological method).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "ccb5d73c-9cbb-4eab-8595-559d9d461540",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C10",
+      "claim": "Higher-molecular-weight forms of Ilv2, Ilv2-GFP, and Ilv2-HA accumulated in cells treated with FCCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with that idea, western blot analysis revealed that higher-molecular-weight forms of Ilv2, Ilv2-GFP, and Ilv2-HA accumulated in cells treated with FCCP (Figure 1D,E, Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 1D, 1E, and Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "293c40d6-ae86-4c9b-acdb-42a1d946459b",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C11",
+      "claim": "Mitochondrial proteins are synthesized with an N-terminal MTS extension that is proteolytically removed from the mature peptide only after they transit the mitochondrial IM.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial proteins such as Ilv2 are synthesized with an N-terminal MTS extension that is proteolytically removed from the mature peptide only after they transit the mitochondrial IM (Mossmann et al., 2012; Pfanner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Mossmann et al., 2012; Pfanner et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "74822cbd-0153-43fe-b883-41c0256f1442",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C12",
+      "claim": "The higher-molecular-weight form of Ilv2 in FCCP-treated cells likely represents the immature, precursor form of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the higher-molecular-weight form of Ilv2 in FCCP-treated cells likely represents the immature, precursor form of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the knowledge that MTSs are removed after import and the observation of higher molecular weight forms in FCCP-treated cells.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "26328ec2-22dd-438c-9360-08e47bdfdf82",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C13",
+      "claim": "The precursor form of Ilv2-HA was specifically enriched in nuclear fractions isolated from FCCP-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the idea that the non-imported pool of Ilv2 localizes to the nucleus, the precursor form of Ilv2-HA was specifically enriched in nuclear fractions isolated from FCCP-treated cells, while other mitochondrial proteins, including Tom70, Tim44, as well as the mature form of Ilv2-HA, were excluded (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nuclear fractionation data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "c6fc340e-3c28-4d95-8b67-0805f9037869",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C14",
+      "claim": "Only newly synthesized Ilv2 localized to the nucleus upon FCCP treatment, while Ilv2 already present in mitochondria did not.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that only newly synthesized Ilv2 (Ilv2 New, RFP tagged) localized to the nucleus upon FCCP treatment, while Ilv2 already present in mitochondria (Ilv2 Old, GFP tagged) did not (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RITE tag-switching data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "2776997b-0f5c-4337-80b4-9bef9be62bc3",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C15",
+      "claim": "When the translocation of Ilv2 into mitochondria is blocked by genetic or pharmacologic impairment of mitochondrial import, the non-imported precursor form of Ilv2 alternatively localizes to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that when the translocation of Ilv2 into mitochondria is blocked by genetic or pharmacologic impairment of mitochondrial import, the non-imported precursor form of Ilv2 alternatively localizes to the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a summary conclusion based on multiple experimental observations presented in the preceding text and figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "ee5d31c6-5bc0-4412-8002-0cdb9b332f2a",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C16",
+      "claim": "6.4% of the mitochondrial proteins analyzed exhibited nuclear localization in FCCP-treated cells (class 1).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 6.4% of the mitochondrial proteins analyzed behaved like Ilv2, exhibiting nuclear localization in FCCP-treated cells (class 1, Figure 2A and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the screen data shown in Figure 2A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "6067bc1d-e29a-45d2-9ce0-88ba47c405bc",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C17",
+      "claim": "8.2% of mitochondrial proteins continued localization to the mitochondrion after membrane depolarization (class 2).",
+      "claim_type": "EXPLICIT",
+      "source": "These included continued localization to the mitochondrion (class 2, e.g., Tom20, 8.2% of all proteins)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data shown in Figure 2A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "d082b100-88e5-4b71-88bb-9dab7208ce09",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C18",
+      "claim": "36.1% of mitochondrial proteins accumulated in the cytoplasm after membrane depolarization (class 3).",
+      "claim_type": "EXPLICIT",
+      "source": "accumulation in the cytoplasm (class 3, e.g., Acp1, 36.1% of all proteins)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data shown in Figure 2A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "ac676e53-194f-4330-a6ca-6fa961f816be",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C19",
+      "claim": "2.7% of mitochondrial proteins localized to the ER after membrane depolarization (class 4).",
+      "claim_type": "EXPLICIT",
+      "source": "localization to the ER (class 4, e.g., Mir1, 2.7% of all proteins)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data shown in Figure 2A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "0792ff97-3983-4b8f-a755-1b1939b4f409",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C20",
+      "claim": "42.2% of mitochondrial proteins exhibited reduced overall abundance to the point of being nearly undetectable after membrane depolarization (class 5).",
+      "claim_type": "EXPLICIT",
+      "source": "and reduced overall abundance to the point of being nearly undetectable (class 5, e.g., Cox15, 42.2% of all proteins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data shown in Figure 2A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "c56a62d6-f2d9-459f-86bd-0e7e92fc388e",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C21",
+      "claim": "Most class 2 proteins that continued to localize to depolarized mitochondria were mitochondrial OM proteins that do not require a membrane potential for mitochondrial targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Most class 2 proteins that continued to localize to depolarized mitochondria were mitochondrial OM proteins that do not require a membrane potential for mitochondrial targeting (Wiedemann and Pfanner, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data and a citation to prior work (Wiedemann and Pfanner, 2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "1d23d7e6-a058-4d90-8ac6-0e1616e347e5",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C22",
+      "claim": "Class 3 (cytoplasm) proteins were largely soluble proteins, several of which were previously found to be enriched in cytosolic extracts isolated from mitochondrial import-deficient yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Class 3 (cytoplasm) proteins were largely soluble proteins, several of which (e.g., Idh1, Idh2, Mss116, and Cis1) were previously found to be enriched in cytosolic extracts isolated from mitochondrial import-deficient yeast (Wang and Chen, 2015; Weidberg and Amon, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data and citations to prior work (Wang and Chen, 2015; Weidberg and Amon, 2018).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "f35a5aa5-1e30-4f06-97ab-2d1f7c620b02",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C23",
+      "claim": "ER-localized class 4 proteins were generally integral IM and OM proteins, some of which were previously reported to localize to the ER in cells with compromised mitochondrial import.",
+      "claim_type": "EXPLICIT",
+      "source": "ER-localized class 4 proteins were generally integral IM and OM proteins, some of which were previously reported to localize to the ER in cells with compromised mitochondrial import (Hansen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data and a citation to prior work (Hansen et al., 2018).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "3f288b3f-8340-4da5-becd-b56002360ec9",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C24",
+      "claim": "The decline in class 5 protein abundance was either completely or partially blunted by proteasome inhibition via MG-132 depending on the individual protein substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, further analysis indicated that the decline in class 5 protein abundance was either completely or partially blunted by proteasome inhibition via MG-132 depending on the individual protein substrate (Figure 2C,D, Figure 2\u2014figure supplement 2D,E), implicating the proteasome in their destruction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2C, 2D, and Figure 2\u2014figure supplement 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "c2e42419-4995-40ce-a3e9-e5386d3c01bb",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C25",
+      "claim": "Nuclear-localized class 1 proteins were predominantly mitochondrial matrix enzymes, including numerous members of the TCA cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear-localized class 1 proteins were predominantly mitochondrial matrix enzymes, including numerous members of the TCA cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data shown in Figure 2 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "9c51165f-4194-4f5b-920c-9ca6e368c065",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C26",
+      "claim": "The decline in steady-state levels of Ilv2-GFP and Ilv2-HA upon FCCP treatment was blunted in the presence of proteasome inhibitor MG-132.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of that idea, the decline in steady-state levels of Ilv2-GFP and Ilv2-HA upon FCCP treatment was blunted in the presence of proteasome inhibitor MG-132 (Figure 3A, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3A and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "68af634c-3f83-46f8-972d-e15c0d61cf43",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C27",
+      "claim": "Ilv2 decline was prevented in strains lacking a combination of three E3 ubiquitin ligases San1, Ubr1, and Doa10 (E3 KO).",
+      "claim_type": "EXPLICIT",
+      "source": "Ilv2 decline was also prevented in strains lacking a combination of three E3 ubiquitin ligases that operate in nuclear-associated protein quality control, San1 (Gardner et al., 2005; Samant et al., 2018), Ubr1 (Prasad et al., 2010), and Doa10 (Deng and Hochstrasser, 2006; Swanson et al., 2001) (E3 KO) (Figure 3B, Figure 3\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3B and Figure 3\u2014figure supplement 1B,C, and citations to prior work on these E3 ligases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "dac7d994-f2b7-463e-97e1-12d9bb3c89ba",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C28",
+      "claim": "No combination of single or double knockouts of San1, Ubr1, or Doa10 completely prevented loss of Ilv2 upon mitochondrial depolarization, suggesting these ligases act redundantly.",
+      "claim_type": "EXPLICIT",
+      "source": "No combination of single or double knockouts completely prevented loss of Ilv2 upon mitochondrial depolarization, suggesting these ligases act redundantly to promote non-imported mitochondrial protein clearance (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "fdae76e9-6b27-43e0-abf7-a1f3b7315e7d",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C29",
+      "claim": "The addition of proteasome inhibitor or deletion of San1, Ubr1, and Doa10 each led to a marked elevation in the higher-molecular-weight precursor form of Ilv2 in the presence of FCCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the addition of proteasome inhibitor or deletion of the aforementioned E3 ligases each led to a marked elevation in the higher-molecular-weight precursor form of Ilv2 in the presence of FCCP, suggesting the immature, Ilv2 precursor was the form of the protein specifically marked for proteasome clearance (Figure 3A,B, Figure 3\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3A, 3B, and Figure 3\u2014figure supplement 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "23b54ab1-1219-4498-9328-6b18ff78c26f",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C30",
+      "claim": "The half-life of the Ilv2, Ilv2-HA, and Ilv2-GFP precursor forms were altered in the E3 KO strain, while the mature forms were unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this observation, cycloheximide-chase analysis demonstrated that the half-life of the Ilv2, Ilv2-HA, and Ilv2-GFP precursor forms were altered in the E3 KO strain, while the mature forms were unaffected (Figure 3C, Figure 3\u2014figure supplement 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cycloheximide-chase data shown in Figure 3C and Figure 3\u2014figure supplement 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "165091fa-b0e8-42e5-9ed4-f3fb1bf18633",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C31",
+      "claim": "Ilv2 was ubiquitylated in the presence of FCCP in a San1-, Ubr1-, and Doa10-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ubiquitin immunoprecipitation assays indicated that Ilv2 was ubiquitylated in the presence of FCCP in a San1-, Ubr1-, and Doa10-dependent manner (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ubiquitin immunoprecipitation data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "01ddbbda-1656-4b99-997d-fba79a236676",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C32",
+      "claim": "Proteasome-dependent degradation of a non-nuclear class 5 substrate (Lat1) was unaffected in the E3 KO strain, indicating that additional E3 ligases promote clearance of non-nuclear localized mitochondrial precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteasome-dependent degradation of a non-nuclear class 5 substrate (Lat1) was unaffected in the E3 KO strain, indicating that additional E3 ligases promote clearance of non-nuclear localized mitochondrial precursors (Figure 3\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "950e614f-c1d7-41d4-bcf1-b0ab2ef6ded4",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C33",
+      "claim": "GFP-tagged versions of Dld1 and Dld2 were eliminated in a proteasome and San1/Ubr1/Doa10-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that our observations extend beyond Ilv2, as GFP-tagged versions of two other nuclear candidates identified in our screen, Dld1 and Dld2, (Figure 3\u2014figure supplement 2A\u2013C) were also eliminated in a proteasome and San1/Ubr1/Doa10-dependent manner (Figure 3\u2014figure supplement 2A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3\u2014figure supplement 2A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "959a6dc5-05a9-4115-a608-00c8f4094843",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C34",
+      "claim": "A subset of non-imported mitochondrial proteins are subjected to nuclear-associated protein quality control when their import into mitochondria is impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a subset of non-imported mitochondrial proteins are subjected to nuclear-associated protein quality control when their import into mitochondria is impaired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented in the preceding section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "bc00a019-2e29-4acd-bf2e-d7f39468f319",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C35",
+      "claim": "Ilv2-GFP accumulated in nuclear-associated foci that resembled previously described juxtanuclear or intranuclear protein aggregate compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with that hypothesis, we noticed that in addition to diffuse nuclear localization, a portion of Ilv2-GFP accumulated in nuclear-associated foci that resembled previously described juxtanuclear (Kaganovich et al., 2008) or intranuclear (Miller et al., 2015) protein aggregate compartments (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 4B and citations to prior work (Kaganovich et al., 2008; Miller et al., 2015).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "bdd08334-ea8a-48fe-a228-37897a8c31a0",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C36",
+      "claim": "Ilv2-GFP foci were adjacent to the DAPI-stained nucleus, excluded the mitochondrial marker Tom70-mCherry, and were present in a high percentage of FCCP-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These foci were adjacent to the DAPI-stained nucleus, excluded the mitochondrial marker Tom70-mCherry, and were present in a high percentage of FCCP-treated cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 4B and quantification in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "942355ad-c845-431f-ac81-eff44dcf9e7a",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C37",
+      "claim": "The intensity of Ilv2-GFP foci increased in the E3 KO strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the intensity of Ilv2-GFP foci increased in the E3 KO strain (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "4911cb5d-dfeb-4223-8c3a-296bfb04c419",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C38",
+      "claim": "Dld1 and Dld2 localized to nuclear-associated foci, but only in strains lacking the E3 ligase degradation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Dld1 and Dld2, which are degraded more robustly than Ilv2, also localized to nuclear-associated foci, but only in strains lacking the E3 ligase degradation machinery (Figure 4\u2014figure supplement 1B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 4\u2014figure supplement 1B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "e94ef672-a5e8-4c47-96ad-abd78f73dd61",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C39",
+      "claim": "A twofold increase in expression of Ilv2-GFP from a single-copy plasmid resulted in constitutive localization of Ilv2-GFP to the nucleus and nuclear associated protein foci.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did find that a twofold increase in expression of Ilv2-GFP from a single-copy plasmid resulted in constitutive localization of Ilv2-GFP to the nucleus and nuclear associated protein foci (see Figure 5B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "387fbdee-a35b-41ca-b2e7-274dea99a31c",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C40",
+      "claim": "Overexpression of Ilv2-GFP resulted in severe growth defects in both wild-type and E3 KO strains.",
+      "claim_type": "EXPLICIT",
+      "source": "and resulted in severe growth defects in both wild-type and E3 KO strains (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by growth assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "0f95be1d-fa03-446c-93f5-05fc11f0292a",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C41",
+      "claim": "NES addition to Ilv2-GFP resulted in exclusion of Ilv2-GFP from the nucleus and lack of Ilv2-GFP turnover in the presence of FCCP.",
+      "claim_type": "EXPLICIT",
+      "source": "NES addition resulted in exclusion of Ilv2-GFP from the nucleus and lack of Ilv2-GFP turnover in the presence of FCCP (Figure 4F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy and western blot data shown in Figure 4F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "31b0cc26-b0b0-40e0-9992-e03a60b1efce",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C42",
+      "claim": "Expression of nuclear-excluded Ilv2 in cells led to severe growth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, expression of nuclear-excluded Ilv2 in cells led to severe growth defects (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by growth assay data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "34fa7b68-cb06-419b-adf2-094485322d6a",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C43",
+      "claim": "Non-imported Ilv2 is toxic to cells and nuclear-based proteasome destruction and aggregate sequestration may act in coordination to mitigate this toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that non-imported Ilv2 is toxic to cells and that nuclear-based proteasome destruction and aggregate sequestration may act in coordination to mitigate this toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented in the preceding section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "5b979f6c-0639-4712-be2c-e734083a7a17",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C44",
+      "claim": "Plasmid-derived FL-Ilv2-GFP localized to the nucleus and nuclear-associated foci, and its abundance declined with FCCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Like endogenous Ilv2-GFP (Endo), plasmid-derived FL-Ilv2-GFP localized to the nucleus and nuclear-associated foci, and its abundance declined with FCCP (Figure 5B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy and western blot data shown in Figure 5B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "5010a959-a919-415b-9b7c-4570940cfdec",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C45",
+      "claim": "Ilv2 lacking an MTS (\u0394MTS-Ilv2-GFP) constitutively localized to the nucleus even in the absence of FCCP, but never formed nuclear-associated foci or decreased in abundance with FCCP.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Ilv2 lacking an MTS (\u0394MTS-Ilv2-GFP) constitutively localized to the nucleus even in the absence of FCCP, but never formed nuclear-associated foci or decreased in abundance with FCCP (Figure 5B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy and western blot data shown in Figure 5B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "8c397e80-9ff5-43e6-8727-88d32a597094",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C46",
+      "claim": "MTSIlv2-GFP localized to mitochondria and exhibited no nuclear localization, puncta formation, or changes in total abundance with FCCP.",
+      "claim_type": "EXPLICIT",
+      "source": "MTSIlv2-GFP localized to mitochondria and exhibited no nuclear localization, puncta formation, or changes in total abundance with FCCP (Figure 5B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy and western blot data shown in Figure 5B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "0c8f60ea-64e7-4888-8089-89edd6134454",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C47",
+      "claim": "Information in the mature, C-terminal portion of Ilv2 is necessary and sufficient for nuclear localization, but the presence of an MTS is required for non-imported Ilv2 degradation and sequestration into nuclear-associated foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, information in the mature, C-terminal portion of Ilv2 is necessary and sufficient for nuclear localization, but the presence of an MTS is required for non-imported Ilv2 degradation and sequestration into nuclear-associated foci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented in the preceding section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "92b45237-f359-4bf6-a4e2-e8f0a6aa6829",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C48",
+      "claim": "Overexpressed Ilv2 lacking its MTS did not slow cell growth, and neither did overexpressed MTSIlv2-GFP alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to overexpressed FL Ilv2-GFP, which impaired growth of both wild type and E3 KO cells in the presence or absence of FCCP (Figure 4E), overexpressed Ilv2 lacking its MTS did not slow cell growth, and neither did overexpressed MTSIlv2-GFP alone (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by growth assay data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "53d70a62-cd9a-49ad-8a09-c8ac9fc6edd6",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C49",
+      "claim": "The presence of an MTS on unimported Ilv2 rendered the protein toxic and promoted its subsequent quality control.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the presence of an MTS on unimported Ilv2 rendered the protein toxic and promoted its subsequent quality control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented in the preceding section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "c768d654-6003-4640-b374-27c0210016f4",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C50",
+      "claim": "Dld2 lacking its MTS constitutively localized to the nucleus, but was not subjected to degradation or sequestered into nuclear foci, and was no longer toxic to cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Like Ilv2, Dld2 lacking its MTS constitutively localized to the nucleus, but was not subjected to degradation or sequestered into nuclear foci, and was no longer toxic to cells (Figure 5\u2014figure supplement 1B\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5\u2014figure supplement 1B-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "25c8d925-0538-4312-9c19-88dd8176073e",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C51",
+      "claim": "Degradation and toxicity of Cox15 and Lat1, which are degraded by a non-nuclear proteasome pathway, also required an N-terminal MTS.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, degradation and toxicity of Cox15 and Lat1, which are degraded by a non-nuclear proteasome pathway, also required an N-terminal MTS (Figure 5G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot and growth assay data shown in Figure 5G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "6d251e37-6353-47b1-8e05-dedc0261686d",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C52",
+      "claim": "The presence of an MTS on an unimported mitochondrial protein drives toxicity and targets the protein for quality control.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the presence of an MTS on an unimported mitochondrial protein drives toxicity and targets the protein for quality control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented in the preceding section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "d578a60e-9a70-4bc9-9a4c-032e4104c988",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C53",
+      "claim": "Overexpression of GFP-tagged full-length Ilv2 (FL), but not MTS-deleted Ilv2-GFP (\u0394MTS) or MTSIlv2 only (MTS)-GFP, decreased import of Su9-DHFR into isolated mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that overexpression of GFP-tagged full-length Ilv2 (FL), but not MTS-deleted Ilv2-GFP (\u0394MTS) or MTSIlv2 only (MTS)-GFP, decreased import of Su9-DHFR into isolated mitochondria, as indicated by reduced formation of the mature form of Su9-DHFR during incubation (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vitro import assay data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "2f083032-e53e-4a49-b71f-5908f89fd3f3",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C54",
+      "claim": "Mitochondria isolated from strains overexpressing FL-Ilv2-GFP contained lower steady-state levels of mitochondrial IM protein Tim54, but not the OM proteins Tom70 and Tom20.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these effects, we also found that mitochondria isolated from strains overexpressing FL-Ilv2-GFP contained lower steady-state levels of mitochondrial IM protein Tim54, but not the OM proteins Tom70 and Tom20 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "54fdb36a-1c85-4258-b8d3-0063fc3d1991",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C55",
+      "claim": "The reduction in the import of Su9-DHFR and steady-state abundance of mitochondrial proteins in strains overexpressing Ilv2-GFP was not as strong as those observed in mitochondria isolated from cells treated with FCCP.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in the import of Su9-DHFR and steady-state abundance of mitochondrial proteins in strains overexpressing Ilv2-GFP was not as strong as those observed in mitochondria isolated from cells treated with FCCP (Figure 6C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vitro import assay and western blot data shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "2670c91b-d013-43c3-9fbf-63a9123f601a",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C56",
+      "claim": "Ilv2 overexpression led to the cytoplasmic accumulation of the mitochondrial precursor Idh1-GFP in over 30% of cells, as compared to nearly 100% cytoplasmic accumulation observed in cells treated with FCCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, Ilv2 overexpression led to the cytoplasmic accumulation of the mitochondrial precursor Idh1-GFP in over 30% of cells, as compared to nearly 100% cytoplasmic accumulation observed in cells treated with FCCP (Figure 6E,F, and as reported in screen results reported in Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 6E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "07646d95-728b-46f3-88be-fede31b68d5d",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C57",
+      "claim": "Overexpressed full-length Ilv2-GFP partially blocks mitochondrial import, but not to the same extent as the mitochondrial depolarizing agent FCCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that overexpressed full-length Ilv2-GFP partially blocks mitochondrial import, but not to the same extent as the mitochondrial depolarizing agent FCCP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented in the preceding section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "cbead880-4914-4831-8f5e-d4656494c099",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C58",
+      "claim": "Ilv2-NES-GFP had little to no impact on the in vitro import of Su9-DHFR and had only mild effects on the steady-state levels of Tim54 and Aco1 in isolated mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found that Ilv2-NES-GFP, despite its high toxicity, had little to no impact on the in vitro import of Su9-DHFR and had only mild effects on the steady-state levels of Tim54 and Aco1 in isolated mitochondria (Figure 6G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vitro import assay and western blot data shown in Figure 6G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "df314611-7bce-4b04-943d-3fd3650a5c87",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C59",
+      "claim": "The toxicity of non-imported Ilv2 cannot be completely attributed to its ability to act as a mitochondrial import clogger, and likely stems from additional deleterious effects of the protein on unidentified cellular processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the fact that this version of Ilv2 is highly toxic to cells both in the presence and in the absence of FCCP, it seems that the toxicity of non-imported Ilv2 cannot be completely attributed to its ability to act as a mitochondrial import clogger, and likely stems from additional deleterious effects of the protein on unidentified cellular processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observation that Ilv2-NES-GFP is toxic but does not significantly block import.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "d00c9992-f4a7-4030-9c80-3cd98b59f111",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C60",
+      "claim": "The nucleus is an important quality control destination for sequestering and destroying non-imported mitochondrial proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we surveyed the mitochondrial proteome under conditions of mitochondrial import impairment to get a clearer picture of the full spectrum of fates for non-imported mitochondrial proteins. We found that mitochondrial precursors accumulate in many regions of the cell and identified the nucleus as an important quality control destination for sequestering and destroying non-imported mitochondrial proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "e9a8b442-c65e-400a-83af-149c656ad363",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C61",
+      "claim": "The N-terminal MTS is a major driver of non-imported protein toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we demonstrated that the N-terminal MTS is a major driver of non-imported protein toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "80504fb9-5af9-4524-8786-fe9b1d75fd0d",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C62",
+      "claim": "Non-imported mitochondrial proteins represent a large class of potential substrates for nuclear protein quality control.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also indicate that non-imported mitochondrial proteins represent a large class of potential substrates for nuclear protein quality control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the screen data showing multiple mitochondrial proteins localize to the nucleus upon import failure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "6b0dbe30-8a49-4732-944d-21f8a375877e",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C63",
+      "claim": "Non-imported mitochondrial proteins may synergize with other aggregate-prone proteins to overwhelm protein quality control systems during aging and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This discovery raises the intriguing possibility that non-imported mitochondrial proteins may synergize with other aggregate-prone proteins to overwhelm protein quality control systems during aging and disease (Park et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential implications of the findings, supported by a citation to prior work (Park et al., 2013).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "74f67f57-7049-47a9-b025-8b4244d32001",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C64",
+      "claim": "Recognition and destruction of mitochondrial precursors by the mitoNUC pathway requires the presence of an N-terminal mitochondrial targeting sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Recognition and destruction of mitochondrial precursors by the mitoNUC pathway requires the presence of an N-terminal mitochondrial targeting sequence and is mediated by combined action of the E3 ubiquitin ligases San1, Ubr1, and Doa10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement from the abstract supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "9a1e336b-ea2d-4ba4-8099-86f2d711c855",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C65",
+      "claim": "Destruction of mitochondrial precursors by the mitoNUC pathway is mediated by combined action of the E3 ubiquitin ligases San1, Ubr1, and Doa10.",
+      "claim_type": "EXPLICIT",
+      "source": "Recognition and destruction of mitochondrial precursors by the mitoNUC pathway requires the presence of an N-terminal mitochondrial targeting sequence and is mediated by combined action of the E3 ubiquitin ligases San1, Ubr1, and Doa10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement from the abstract supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "4889ba96-f602-445e-88fa-f644c45d9c74",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C66",
+      "claim": "Impaired breakdown of precursors leads to alternative sequestration in nuclear-associated foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Impaired breakdown of precursors leads to alternative sequestration in nuclear-associated foci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement from the abstract supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "6f451d88-42e9-45ad-a7ce-b8ffeb553819",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C67",
+      "claim": "The nucleus is an important destination for the disposal of non-imported mitochondrial precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results identify the nucleus as an important destination for the disposal of non-imported mitochondrial precursors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement from the abstract supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "8148f2a7-7bb7-432d-9c9b-6490cc292662",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C68",
+      "claim": "A number of non-imported mitochondrial proteins localize to the nucleus during mitochondrial impairment in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we cataloged the location and steady-state abundance of mitochondrial precursor proteins during mitochondrial impairment in Saccharomyces cerevisiae. We found that a number of non-imported mitochondrial proteins localize to the nucleus, where they are subjected to proteasome-dependent degradation through a process we term nuclear-associated mitoprotein degradation (mitoNUC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement from the abstract supported by the screen data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "12790a29-0a4e-4820-a978-57256b2e6718",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C69",
+      "claim": "Non-imported mitochondrial proteins that localize to the nucleus are subjected to proteasome-dependent degradation through a process termed nuclear-associated mitoprotein degradation (mitoNUC).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a number of non-imported mitochondrial proteins localize to the nucleus, where they are subjected to proteasome-dependent degradation through a process we term nuclear-associated mitoprotein degradation (mitoNUC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement from the abstract supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "52542646-d600-44be-872f-18cd2b0b5796",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C70",
+      "claim": "Mitochondrial dysfunction is a hallmark of aging and associated with many age-related and metabolic diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial dysfunction is a hallmark of aging and associated with many age-related and metabolic diseases (Wallace, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Wallace, 2005).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "28b000cb-a684-47cc-b252-bb138fdd1972",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C71",
+      "claim": "Mitochondrial impairment prevents the import of thousands of mitochondrial resident proteins that rely on an efficient mitochondrial membrane potential for translocation into the organelle.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial impairment disrupts metabolic pathways housed within the mitochondrion and also prevents the import of thousands of mitochondrial resident proteins that rely on an efficient mitochondrial membrane potential for translocation into the organelle (Martin et al., 1991; Pagliarini et al., 2008; Wiedemann and Pfanner, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Martin et al., 1991; Pagliarini et al., 2008; Wiedemann and Pfanner, 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "521ba80c-2b0e-4372-8581-159bf3230d1b",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C72",
+      "claim": "Non-imported mitochondrial precursor proteins are toxic for cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that non-imported mitochondrial precursor proteins are toxic for cells and identified several cellular pathways that combat this stress (Boos et al., 2019; Boos et al., 2020; Hansen et al., 2018; Itakura et al., 2016; M\u00e5rtensson et al., 2019; Wang and Chen, 2015; Weidberg and Amon, 2018; Wrobel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "2335e05c-58f2-47bf-ac1b-672b4ad3d970",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C73",
+      "claim": "Cells protect against mitoprotein-induced stress through downregulation of cellular translation.",
+      "claim_type": "EXPLICIT",
+      "source": "These systems, which are collectively referred to as the mitoprotein-induced stress response (Boos et al., 2020), protect cells during times of mitochondrial import deficiency through a variety of mechanisms, including downregulation of cellular translation (Wang and Chen, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Wang and Chen, 2015; Boos et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "3e03d2b9-a9a0-4eed-8a3c-b1e6b6e3a141",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C74",
+      "claim": "Cells protect against mitoprotein-induced stress through upregulation of proteasome and chaperone capacity through a process termed UPRam.",
+      "claim_type": "EXPLICIT",
+      "source": "upregulation of proteasome and chaperone capacity through a process termed UPRam (unfolded protein response activated by mistargeting of proteins) (Boos et al., 2019; Wrobel et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Boos et al., 2019; Wrobel et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "4064913c-5010-45e2-bb51-8b5827f34cf7",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C75",
+      "claim": "Non-imported mitochondrial precursors are destroyed at the mitochondrial surface through mitochondrial-associated degradation (MAD).",
+      "claim_type": "EXPLICIT",
+      "source": "destruction of non-imported mitochondrial precursors at the mitochondrial surface through mitochondrial-associated degradation (MAD) (Metzger et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Metzger et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "e7f49ca7-5d2b-4743-8893-edd466ec9ba8",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C76",
+      "claim": "Non-imported mitochondrial precursors are destroyed through mitochondrial translocation-associated degradation (mitoTAD).",
+      "claim_type": "EXPLICIT",
+      "source": "mitochondrial translocation-associated degradation (mitoTAD) (M\u00e5rtensson et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (M\u00e5rtensson et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "8ebf8ebd-e9ca-40dd-b602-377f35c9b8b4",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C77",
+      "claim": "Non-imported mitochondrial precursors are destroyed through mitochondrial-compromised import response (mitoCPR).",
+      "claim_type": "EXPLICIT",
+      "source": "mitochondrial-compromised import response (mitoCPR) (Weidberg and Amon, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Weidberg and Amon, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "8390490a-4419-48e4-adbf-eb65507c1a38",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C78",
+      "claim": "Non-imported mitochondrial precursors are destroyed through mitochondrial-associated ribosome quality control (mitoRQC).",
+      "claim_type": "EXPLICIT",
+      "source": "and mitochondrial-associated ribosome quality control (mitoRQC) (Izawa et al., 2017; Su et al., 2019; Zurita Rend\u00f3n et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Izawa et al., 2017; Su et al., 2019; Zurita Rend\u00f3n et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "3ff2ffb2-7103-478d-9dd6-6fc31fdc295d",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C79",
+      "claim": "Ubiquilin-dependent triaging of mitochondrial membrane proteins for degradation is a mechanism to combat mitoprotein-induced stress.",
+      "claim_type": "EXPLICIT",
+      "source": "ubiquilin-dependent triaging of mitochondrial membrane proteins for degradation (Itakura et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Itakura et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "e5cb89ad-d095-40a1-8b61-ca0ddbab2e06",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C80",
+      "claim": "Endoplasmic sequestration followed by destruction via the conserved protein Ema19 is a mechanism to combat mitoprotein-induced stress.",
+      "claim_type": "EXPLICIT",
+      "source": "and endoplasmic sequestration followed by either destruction via the conserved protein Ema19 (Laborenz et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Laborenz et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "922df89a-d0f0-4c1b-93f4-4f912b970be3",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C81",
+      "claim": "Re-delivery of non-imported mitochondrial precursors via an endoplasmic reticulum (ER) surface retrieval pathway (ER-SURF) is a mechanism to combat mitoprotein-induced stress.",
+      "claim_type": "EXPLICIT",
+      "source": "or re-delivery of non-imported mitochondrial precursors via an endoplasmic reticulum (ER) surface retrieval pathway (ER-SURF) (Hansen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Hansen et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "ca95c944-62b3-460b-818f-6f1d28a4223f",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C82",
+      "claim": "The N-terminal mitochondrial targeting sequence (MTS) is necessary for non-imported precursor protein induced-toxicity, degradation, and sequestration into nuclear-associated foci, but dispensable for nuclear localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we determined that the N-terminal mitochondrial targeting sequence (MTS) (Omura, 1998) is necessary for non-imported precursor protein induced-toxicity, degradation, and sequestration into nuclear-associated foci, but dispensable for nuclear localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "a49cd424-1d0b-40ab-9193-a0905e9b5319",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C83",
+      "claim": "The presence of an MTS is required for degradation and toxicity of non-imported proteins that localize to cellular regions other than the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of an MTS is also required for degradation and toxicity of non-imported proteins that localize to cellular regions other than the nucleus, implicating the MTS as a major driver of non-imported precursor toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "4148c7f3-6281-4d38-841d-9cd47e73e0a7",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C84",
+      "claim": "Nuclear accumulation of non-imported precursors arises during cellular aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that nuclear accumulation of non-imported precursors arises during cellular aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "daca8a6e-ad4d-4287-915c-02c741578d58",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C85",
+      "claim": "The failure to remove and clear MTSs leads to toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "The MTS is removed by mitochondrial-localized proteases after import (Mossmann et al., 2012), and failure to remove and clear MTSs leads to toxicity (Mossmann et al., 2014; Poveda-Huertes et al., 2020; Roise et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Mossmann et al., 2014; Poveda-Huertes et al., 2020; Roise et al., 1986).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "02fab67d-276a-4609-bc77-f17d42dd0308",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C86",
+      "claim": "The failure to degrade some non-imported mitochondrial proteins leads to toxicity because the undegraded precursors clog mitochondrial import pores.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that the failure to degrade some non-imported mitochondrial proteins leads to toxicity because the undegraded precursors clog mitochondrial import pores (M\u00e5rtensson et al., 2019; Weidberg and Amon, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (M\u00e5rtensson et al., 2019; Weidberg and Amon, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "f56376f7-4dbd-4507-9ea4-6815eccb03c7",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C87",
+      "claim": "Misfolded proteins can be sequestered into nuclear-associated aggregates when their proteasomal clearance is impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies showed that misfolded proteins can be sequestered into nuclear-associated aggregates when their proteasomal clearance is impaired (Kaganovich et al., 2008; Miller et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Kaganovich et al., 2008; Miller et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "9b6f97f6-bb8d-4af1-ad80-ae47b3586c70",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "claim_id": "C88",
+      "claim": "The eukaryotic nucleus harbors a large proportion of cellular proteasomes and is a quality control destination for misfolded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The eukaryotic nucleus harbors a large proportion of cellular proteasomes and is a quality control destination for misfolded proteins (Enam et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work (Enam et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Non-imported Ilv2 localizes to the nucleus during mitochondrial import failure. Ilv2-GFP accumulates in the nucleus in aged cells (>80%), upon FCCP treatment, and upon Tom40 depletion. The nuclear pool represents newly synthesized, precursor (higher molecular weight) forms that are enriched in nuclear fractions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C15 and C84 provide converging evidence from multiple experimental approaches (aging, FCCP treatment, genetic depletion, fractionation, RITE tagging) demonstrating nuclear localization of non-imported Ilv2. The data include microscopy, western blots, and biochemical fractionation with appropriate controls (Tom70, mature vs. precursor forms).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "280c43a1-ed5e-455e-82d5-9f88a19dce74",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A systematic screen of 523 mitochondrial proteins reveals five distinct fates upon mitochondrial depolarization: nuclear localization (6.4%, class 1, predominantly matrix enzymes), continued mitochondrial localization (8.2%, class 2, mainly OM proteins), cytoplasmic accumulation (36.1%, class 3, soluble proteins), ER localization (2.7%, class 4, integral membrane proteins), and reduced abundance (42.2%, class 5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 and C25 describe a comprehensive microscopy-based screen with clear classification criteria and validation. The percentages and protein characteristics align with prior literature (C21-C23) and are supported by representative images and supplementary data. The screen methodology is described and validated with multiple approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "df56cdf8-197a-4516-a206-252498d54698",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nuclear-localized non-imported mitochondrial proteins are degraded by the proteasome via redundant action of E3 ubiquitin ligases San1, Ubr1, and Doa10 (mitoNUC pathway). Proteasome inhibition or triple E3 knockout prevents degradation, stabilizes precursor forms, extends half-life, and increases ubiquitylation of Ilv2, Dld1, and Dld2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C34, C64-C65, and C69 provide multiple lines of evidence including proteasome inhibition, genetic knockouts (single, double, triple), cycloheximide chase, and ubiquitin IP experiments. The redundancy is demonstrated by showing that only triple knockout prevents degradation (C28). Extension to multiple substrates (C33) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "fbfa0aee-40b1-4664-9acc-14f53a601046",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When proteasomal degradation is impaired, non-imported mitochondrial proteins accumulate in nuclear-associated foci. Ilv2-GFP forms foci adjacent to the nucleus that increase in intensity in E3 KO strains. Dld1 and Dld2 only form foci when E3 ligases are deleted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 and C66 demonstrate an alternative quality control mechanism through microscopy and quantification. The foci resemble previously described aggregates (C35 with citations), are properly localized (C36), and show expected behavior in degradation-deficient strains (C37-C38). The data support sequestration as a backup mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "3f5cce9b-433f-40ae-a19d-0398902f6258",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Non-imported Ilv2 is toxic to cells. Overexpression causes nuclear localization, foci formation, and severe growth defects. Nuclear exclusion via NES addition prevents degradation but causes even more severe toxicity, suggesting nuclear quality control mechanisms are protective.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 demonstrate toxicity through growth assays and link it to quality control mechanisms. The NES experiment (C41-C42) is particularly informative, showing that preventing nuclear access increases toxicity despite preventing degradation. This supports the protective role of nuclear quality control, though the conclusion is somewhat speculative (C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "4a243da8-3092-45df-bb18-86b7fb105366",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The MTS is required for toxicity, degradation, and sequestration into nuclear foci, but not for nuclear localization. MTS-deleted Ilv2 constitutively localizes to the nucleus but is not degraded, does not form foci, and is not toxic. The mature C-terminal portion is sufficient for nuclear localization. This pattern extends to other proteins (Dld2, Cox15, Lat1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C52, C61, C64, C82-C83 provide systematic dissection of MTS function using deletion constructs. The data clearly separate nuclear localization (MTS-independent) from quality control recognition (MTS-dependent). Extension to multiple proteins (C50-C51) and both nuclear and non-nuclear pathways (C51, C83) strengthens the conclusion that the MTS is a general toxicity/quality control signal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "77db510e-6af1-435c-8a57-d5ed8bfa413e",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Overexpression of full-length Ilv2-GFP partially impairs mitochondrial import, as shown by reduced Su9-DHFR import in vitro, decreased Tim54 levels, and cytoplasmic accumulation of Idh1-GFP in ~30% of cells. The effect is less severe than FCCP treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 use in vitro import assays and in vivo microscopy to demonstrate import clogging. The comparison to FCCP (C55-C56) appropriately contextualizes the magnitude of the effect. The data support partial import blockage, though the mechanism is not fully elucidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "acef7374-6b97-4303-b458-4aa6e77bc2fc",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ilv2-NES-GFP, despite being highly toxic, has minimal impact on mitochondrial import (Su9-DHFR import and Tim54 levels largely unaffected). This suggests toxicity cannot be entirely attributed to import clogging and likely involves additional mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 provide an important control showing that toxicity and import clogging can be separated. The data are clear, though the conclusion about 'additional mechanisms' (C59) is speculative. This result challenges a simple model where all toxicity derives from import blockage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "a31fb284-f251-412c-bd93-cda5ebf4ce51",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Non-nuclear class 5 substrate Lat1 degradation is unaffected in E3 KO strains, indicating additional E3 ligases mediate clearance of non-nuclear mitochondrial precursors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 demonstrates pathway specificity through a negative control. The data show that San1/Ubr1/Doa10 are specific to nuclear quality control, supporting the existence of parallel pathways for non-nuclear substrates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "fded049d-42c5-4e9c-a0e7-3b6761502473",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The nucleus is an important quality control destination for non-imported mitochondrial proteins, representing a large class of substrates for nuclear protein quality control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C62, C67-C68 are summary conclusions well-supported by the screen data (C16) and mechanistic studies (C26-C34). The identification of 6.4% of mitochondrial proteins (33 proteins) as nuclear-localized upon import failure provides quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "63a70fef-f108-4fec-865e-14e35af175b6",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about mitochondrial dysfunction, import requirements, mitoprotein-induced stress, and existing quality control pathways (UPRam, MAD, mitoTAD, mitoCPR, mitoRQC, ER-SURF, etc.).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C70-C81, C85-C88 are literature-based background claims supported by appropriate citations. These establish the context for the current work and are not primary findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "00e9e5e3-80c1-4b8f-814f-1392dcd0d5a4",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about specific proteins and processes: Ilv2 function, mitochondrial aging, Tom70 properties, and MTS processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C4-C5, C11 are well-established facts supported by appropriate citations. These provide necessary background but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    },
+    {
+      "id": "45e605d8-f033-4787-8221-76056ea6d1ac",
+      "content_id": "af096096-35cb-418e-b006-69671ccbe8d5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Speculative claim that non-imported mitochondrial proteins may synergize with other aggregate-prone proteins to overwhelm quality control during aging and disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 is explicitly speculative ('raises the intriguing possibility') and represents a hypothesis for future work rather than a demonstrated result. While plausible given the data, it lacks direct experimental support in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:10:50.346694Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9799fbdc-1cb0-4b50-888a-24ce35163d27",
+      "result_id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e"
+    },
+    {
+      "claim_id": "b7272825-04ed-4a41-8df3-0f2192845563",
+      "result_id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e"
+    },
+    {
+      "claim_id": "3ae73f63-c13d-4ca5-ad70-eee7c8a46e46",
+      "result_id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e"
+    },
+    {
+      "claim_id": "b9e2fd05-9c71-4ec4-91f2-b6bc29cd3e73",
+      "result_id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e"
+    },
+    {
+      "claim_id": "c02bd9c0-4e5d-496d-9385-1fd189c617b7",
+      "result_id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e"
+    },
+    {
+      "claim_id": "ccb5d73c-9cbb-4eab-8595-559d9d461540",
+      "result_id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e"
+    },
+    {
+      "claim_id": "74822cbd-0153-43fe-b883-41c0256f1442",
+      "result_id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e"
+    },
+    {
+      "claim_id": "26328ec2-22dd-438c-9360-08e47bdfdf82",
+      "result_id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e"
+    },
+    {
+      "claim_id": "c6fc340e-3c28-4d95-8b67-0805f9037869",
+      "result_id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e"
+    },
+    {
+      "claim_id": "2776997b-0f5c-4337-80b4-9bef9be62bc3",
+      "result_id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e"
+    },
+    {
+      "claim_id": "4148c7f3-6281-4d38-841d-9cd47e73e0a7",
+      "result_id": "2cd0f7a3-ba91-4479-a6a0-be6f8400315e"
+    },
+    {
+      "claim_id": "ee5d31c6-5bc0-4412-8002-0cdb9b332f2a",
+      "result_id": "280c43a1-ed5e-455e-82d5-9f88a19dce74"
+    },
+    {
+      "claim_id": "6067bc1d-e29a-45d2-9ce0-88ba47c405bc",
+      "result_id": "280c43a1-ed5e-455e-82d5-9f88a19dce74"
+    },
+    {
+      "claim_id": "d082b100-88e5-4b71-88bb-9dab7208ce09",
+      "result_id": "280c43a1-ed5e-455e-82d5-9f88a19dce74"
+    },
+    {
+      "claim_id": "ac676e53-194f-4330-a6ca-6fa961f816be",
+      "result_id": "280c43a1-ed5e-455e-82d5-9f88a19dce74"
+    },
+    {
+      "claim_id": "0792ff97-3983-4b8f-a755-1b1939b4f409",
+      "result_id": "280c43a1-ed5e-455e-82d5-9f88a19dce74"
+    },
+    {
+      "claim_id": "c56a62d6-f2d9-459f-86bd-0e7e92fc388e",
+      "result_id": "280c43a1-ed5e-455e-82d5-9f88a19dce74"
+    },
+    {
+      "claim_id": "1d23d7e6-a058-4d90-8ac6-0e1616e347e5",
+      "result_id": "280c43a1-ed5e-455e-82d5-9f88a19dce74"
+    },
+    {
+      "claim_id": "f35a5aa5-1e30-4f06-97ab-2d1f7c620b02",
+      "result_id": "280c43a1-ed5e-455e-82d5-9f88a19dce74"
+    },
+    {
+      "claim_id": "c2e42419-4995-40ce-a3e9-e5386d3c01bb",
+      "result_id": "280c43a1-ed5e-455e-82d5-9f88a19dce74"
+    },
+    {
+      "claim_id": "3f288b3f-8340-4da5-becd-b56002360ec9",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "9c51165f-4194-4f5b-920c-9ca6e368c065",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "68af634c-3f83-46f8-972d-e15c0d61cf43",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "dac7d994-f2b7-463e-97e1-12d9bb3c89ba",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "fdae76e9-6b27-43e0-abf7-a1f3b7315e7d",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "23b54ab1-1219-4498-9328-6b18ff78c26f",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "165091fa-b0e8-42e5-9ed4-f3fb1bf18633",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "01ddbbda-1656-4b99-997d-fba79a236676",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "950e614f-c1d7-41d4-bcf1-b0ab2ef6ded4",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "959a6dc5-05a9-4115-a608-00c8f4094843",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "74f67f57-7049-47a9-b025-8b4244d32001",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "9a1e336b-ea2d-4ba4-8099-86f2d711c855",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "12790a29-0a4e-4820-a978-57256b2e6718",
+      "result_id": "df56cdf8-197a-4516-a206-252498d54698"
+    },
+    {
+      "claim_id": "bc00a019-2e29-4acd-bf2e-d7f39468f319",
+      "result_id": "fbfa0aee-40b1-4664-9acc-14f53a601046"
+    },
+    {
+      "claim_id": "bdd08334-ea8a-48fe-a228-37897a8c31a0",
+      "result_id": "fbfa0aee-40b1-4664-9acc-14f53a601046"
+    },
+    {
+      "claim_id": "942355ad-c845-431f-ac81-eff44dcf9e7a",
+      "result_id": "fbfa0aee-40b1-4664-9acc-14f53a601046"
+    },
+    {
+      "claim_id": "4911cb5d-dfeb-4223-8c3a-296bfb04c419",
+      "result_id": "fbfa0aee-40b1-4664-9acc-14f53a601046"
+    },
+    {
+      "claim_id": "4889ba96-f602-445e-88fa-f644c45d9c74",
+      "result_id": "fbfa0aee-40b1-4664-9acc-14f53a601046"
+    },
+    {
+      "claim_id": "e94ef672-a5e8-4c47-96ad-abd78f73dd61",
+      "result_id": "3f5cce9b-433f-40ae-a19d-0398902f6258"
+    },
+    {
+      "claim_id": "387fbdee-a35b-41ca-b2e7-274dea99a31c",
+      "result_id": "3f5cce9b-433f-40ae-a19d-0398902f6258"
+    },
+    {
+      "claim_id": "0f95be1d-fa03-446c-93f5-05fc11f0292a",
+      "result_id": "3f5cce9b-433f-40ae-a19d-0398902f6258"
+    },
+    {
+      "claim_id": "31b0cc26-b0b0-40e0-9992-e03a60b1efce",
+      "result_id": "3f5cce9b-433f-40ae-a19d-0398902f6258"
+    },
+    {
+      "claim_id": "34fa7b68-cb06-419b-adf2-094485322d6a",
+      "result_id": "3f5cce9b-433f-40ae-a19d-0398902f6258"
+    },
+    {
+      "claim_id": "5b979f6c-0639-4712-be2c-e734083a7a17",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "5010a959-a919-415b-9b7c-4570940cfdec",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "8c397e80-9ff5-43e6-8727-88d32a597094",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "0c8f60ea-64e7-4888-8089-89edd6134454",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "92b45237-f359-4bf6-a4e2-e8f0a6aa6829",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "53d70a62-cd9a-49ad-8a09-c8ac9fc6edd6",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "c768d654-6003-4640-b374-27c0210016f4",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "25c8d925-0538-4312-9c19-88dd8176073e",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "6d251e37-6353-47b1-8e05-dedc0261686d",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "e9a8b442-c65e-400a-83af-149c656ad363",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "74f67f57-7049-47a9-b025-8b4244d32001",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "ca95c944-62b3-460b-818f-6f1d28a4223f",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "a49cd424-1d0b-40ab-9193-a0905e9b5319",
+      "result_id": "4a243da8-3092-45df-bb18-86b7fb105366"
+    },
+    {
+      "claim_id": "d578a60e-9a70-4bc9-9a4c-032e4104c988",
+      "result_id": "77db510e-6af1-435c-8a57-d5ed8bfa413e"
+    },
+    {
+      "claim_id": "2f083032-e53e-4a49-b71f-5908f89fd3f3",
+      "result_id": "77db510e-6af1-435c-8a57-d5ed8bfa413e"
+    },
+    {
+      "claim_id": "54fdb36a-1c85-4258-b8d3-0063fc3d1991",
+      "result_id": "77db510e-6af1-435c-8a57-d5ed8bfa413e"
+    },
+    {
+      "claim_id": "2670c91b-d013-43c3-9fbf-63a9123f601a",
+      "result_id": "77db510e-6af1-435c-8a57-d5ed8bfa413e"
+    },
+    {
+      "claim_id": "07646d95-728b-46f3-88be-fede31b68d5d",
+      "result_id": "77db510e-6af1-435c-8a57-d5ed8bfa413e"
+    },
+    {
+      "claim_id": "cbead880-4914-4831-8f5e-d4656494c099",
+      "result_id": "acef7374-6b97-4303-b458-4aa6e77bc2fc"
+    },
+    {
+      "claim_id": "df314611-7bce-4b04-943d-3fd3650a5c87",
+      "result_id": "acef7374-6b97-4303-b458-4aa6e77bc2fc"
+    },
+    {
+      "claim_id": "01ddbbda-1656-4b99-997d-fba79a236676",
+      "result_id": "a31fb284-f251-412c-bd93-cda5ebf4ce51"
+    },
+    {
+      "claim_id": "d00c9992-f4a7-4030-9c80-3cd98b59f111",
+      "result_id": "fded049d-42c5-4e9c-a0e7-3b6761502473"
+    },
+    {
+      "claim_id": "80504fb9-5af9-4524-8786-fe9b1d75fd0d",
+      "result_id": "fded049d-42c5-4e9c-a0e7-3b6761502473"
+    },
+    {
+      "claim_id": "6f451d88-42e9-45ad-a7ce-b8ffeb553819",
+      "result_id": "fded049d-42c5-4e9c-a0e7-3b6761502473"
+    },
+    {
+      "claim_id": "8148f2a7-7bb7-432d-9c9b-6490cc292662",
+      "result_id": "fded049d-42c5-4e9c-a0e7-3b6761502473"
+    },
+    {
+      "claim_id": "6ddda55c-de55-49ee-a3c6-066412dd598e",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "52542646-d600-44be-872f-18cd2b0b5796",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "28b000cb-a684-47cc-b252-bb138fdd1972",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "521ba80c-2b0e-4372-8581-159bf3230d1b",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "2335e05c-58f2-47bf-ac1b-672b4ad3d970",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "3e03d2b9-a9a0-4eed-8a3c-b1e6b6e3a141",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "4064913c-5010-45e2-bb51-8b5827f34cf7",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "e7f49ca7-5d2b-4743-8893-edd466ec9ba8",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "8ebf8ebd-e9ca-40dd-b602-377f35c9b8b4",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "8390490a-4419-48e4-adbf-eb65507c1a38",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "3ff2ffb2-7103-478d-9dd6-6fc31fdc295d",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "e5cb89ad-d095-40a1-8b61-ca0ddbab2e06",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "922df89a-d0f0-4c1b-93f4-4f912b970be3",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "daca8a6e-ad4d-4287-915c-02c741578d58",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "02fab67d-276a-4609-bc77-f17d42dd0308",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "f56376f7-4dbd-4507-9ea4-6815eccb03c7",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "9b6f97f6-bb8d-4af1-ad80-ae47b3586c70",
+      "result_id": "63a70fef-f108-4fec-865e-14e35af175b6"
+    },
+    {
+      "claim_id": "6335e9d2-d768-4e4b-8533-45402965a8ce",
+      "result_id": "00e9e5e3-80c1-4b8f-814f-1392dcd0d5a4"
+    },
+    {
+      "claim_id": "5e5c8d0a-f796-4158-bdbd-bbf66c0c173d",
+      "result_id": "00e9e5e3-80c1-4b8f-814f-1392dcd0d5a4"
+    },
+    {
+      "claim_id": "81129eb1-2b76-4b15-93f5-7bbad3e9bc58",
+      "result_id": "00e9e5e3-80c1-4b8f-814f-1392dcd0d5a4"
+    },
+    {
+      "claim_id": "293c40d6-ae86-4c9b-acdb-42a1d946459b",
+      "result_id": "00e9e5e3-80c1-4b8f-814f-1392dcd0d5a4"
+    },
+    {
+      "claim_id": "6b0dbe30-8a49-4732-944d-21f8a375877e",
+      "result_id": "45e605d8-f033-4787-8221-76056ea6d1ac"
+    }
+  ],
+  "comparisons": []
+}

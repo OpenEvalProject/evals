@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors developed a novel behavioral apparatus for studying food-caching behavior in black-capped chickadees. The apparatus consists of a 61\u00d761 cm arena with 64 cache sites arranged in an 8\u00d78 grid, covered by silicone flaps to prevent visual access to site contents. The system enables automated tracking of caches, retrievals, and site checks using video analysis. Two behavioral tasks were implemented: a Caching task (17 birds, 10 with sufficient data) and a Retrieval task (7 birds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The apparatus design and behavioral tasks are well-documented with clear methodological details (C3, C17-C28, C130-C131). The automated tracking capability is demonstrated through video analysis methods. Sample sizes are reported transparently, including exclusion criteria. The experimental design appropriately balances naturalistic behavior with controlled laboratory conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Chickadees exhibit idiosyncratic and stable spatial biases in cache site selection. Birds used 41-64 sites but showed non-uniform distributions with entropy significantly lower than chance (p<0.001). Principal component analysis revealed two clusters (center-preferring vs. edge-preferring birds), but within-bird correlations were significantly higher than across-bird correlations even within clusters (p<0.001). Spatial biases remained stable over time with no detectable drift (p=0.49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial bias findings are well-supported by multiple converging analyses (C29-C39). Entropy analysis, PCA, and correlation analyses all point to individual-specific, stable biases. Statistical tests are appropriate and p-values are reported. The temporal stability analysis using regression provides additional validation. The conclusion that biases are idiosyncratic is justified by the within-bird vs. across-bird correlation comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Chickadees show a strong proximity effect, preferentially caching and checking sites near their previous interaction. Model #1 (including proximity parameters) significantly outperformed the baseline model in both tasks. In the Caching task, \u03b3prv=0.94\u00b10.21 (10-fold increase in probability) with spatial extent \u03c3prv=15.5\u00b10.9 cm. In the Retrieval task, \u03b3prv was significantly higher (1.83\u00b10.42, p<0.05) but \u03c3prv was similar (12.9\u00b11.7 cm, p=0.54). Independent analysis confirmed birds cached closer to previous sites than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proximity effect is robustly demonstrated through model comparison (C40, C46, C52), parameter estimation (C41-C42, C47-C48), and independent verification (C45). The statistical framework using AIC for model comparison is appropriate. The finding that proximity effects are stronger during retrieval than caching (C49-C51) is supported by direct statistical comparison. The spatial extent (~1/4 of arena) is biologically interpretable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Site contents significantly influence chickadee behavior in a context-dependent manner. During caching, birds avoid occupied sites (\u03b3occ=-0.32\u00b10.17, ~2-fold decrease) and prefer checked-empty sites (\u03b3emp=0.13\u00b10.05, 1.3-fold increase). During retrieval, these effects reverse: birds are attracted to occupied sites (\u03b3occ=0.26\u00b10.09) and avoid checked-empty sites (\u03b3emp=-0.14\u00b10.07). Models including these parameters (Models #2 and #3) significantly outperformed simpler models in both tasks. Birds found caches in fewer checks than expected by chance (8.5\u00b15.6 vs. 20.8\u00b14.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The context-dependent use of site content memory is convincingly demonstrated through systematic model comparisons (C52, C54, C62) and parameter estimation (C56-C57, C63). The reversal of parameter signs between tasks (C63) provides strong evidence for flexible memory use. Independent verification analyses (C61, C66) support the model-based conclusions. The biological interpretation as cache spreading during caching and cache retrieval during the retrieval task is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The effects of site contents on behavior are spatially specific to individual sites. Models #4 and #5, which introduced spatial extent parameters (\u03c3occ and \u03c3emp), did not improve fit over Model #3. Best-fit values were 0.01-0.02 cm, much smaller than the 7.1 cm distance between neighboring sites. This site specificity is consistent with prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial specificity of memory is well-established through model comparison showing no improvement with spatial extent parameters (C67) and the extremely small best-fit values (C68). The conclusion of site-specific effects (C69) is justified. The comparison to prior literature (C70) appropriately contextualizes the finding. This result demonstrates high spatial precision of chickadee memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Chickadees use memory rather than visual search to guide caching and retrieval decisions. Analysis of first checks (sites opened immediately after obtaining food) showed that \u03b3occ remained significantly negative and \u03b3emp significantly positive during caching, and \u03b3occ remained positive during retrieval. Birds cached into the first site opened 79% of the time. An olfactory control experiment confirmed that birds spent more time at cache locations even when caches were removed, ruling out olfactory cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The memory-based mechanism is convincingly demonstrated by ruling out alternative explanations. The first-check analysis (C72-C76) eliminates visual search as an explanation. The high percentage of first-site caching (C72) strengthens this conclusion. The olfactory control experiment (C77-C78) appropriately addresses a potential confound. The convergence of evidence from multiple approaches (C73-C76, C78) strongly supports the conclusion that chickadees use memory of site contents (C79-C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Chickadee memories of site contents persist for the duration of hour-long sessions without significant decay. Birds recached 44% of retrieved seeds and showed stronger preference for recent recaches (Model #7 with separate parameters for caches and recaches fit better than Model #6). However, models incorporating exponential memory decay (Models #8 and #9) did not improve fit, with best-fit decay constants >44 min. Birds preferentially cached into empty sites even after 30 min without checking (p<0.001). The median time between rechecks of the same site was 2.4 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The persistence of memory is well-supported by multiple lines of evidence. The recaching analysis (C81-C84) demonstrates memory for recent events, while the failure of decay models to improve fit (C85-C87) and the long best-fit time constants (C86) indicate minimal decay at the session timescale. The independent analysis showing preference for empty sites after 30 min (C91) provides strong supporting evidence. The interpretation that rechecks are not necessary for memory maintenance (C90) is justified. The contextualization with prior literature (C92-C93) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Chickadee memory capacity does not show decay at the levels tested in these experiments. Models #10 and #11, which incorporated capacity-dependent decay parameters (\u03bdocc and \u03bdemp), did not improve fit over Model #3. Best-fit values were >15 sites, comparable to the maximum number of caches present (15.0\u00b11.0). This suggests memory did not decay at the capacities tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The high-capacity memory finding is supported by appropriate model comparisons (C95) and parameter estimation (C96). The comparison of best-fit capacity values to the actual maximum number of caches in the arena (C96) provides important context. The conclusion of no detectable capacity-related decay (C97) is justified by the model comparison results. However, the study cannot determine the upper limit of memory capacity, only that it exceeds the tested range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Chickadees retrieve caches in an order independent of storage order, with no primacy effect and only a transient-cache-driven recency effect. Analysis of retrieval order showed no difference from random for the first cached seed (p=0.96). The most recent seed was retrieved more often than chance (p<0.001), but this was driven by 'transient caches' (14% of retrievals) where birds retrieved without leaving the site. After excluding transient caches, neither primacy nor recency effects were detected (p=0.44 and p=0.24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The order-independent retrieval finding is well-supported by systematic analysis of retrieval sequences (C98-C102). The identification and exclusion of transient caches (C101-C102) appropriately addresses a confound. The statistical tests are appropriate and p-values are reported. This result supports the interpretation that chickadees have independent memories of individual caches rather than a sequential memory of the caching episode, consistent with prior literature cited in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C103",
+      "C104",
+      "C105",
+      "C108",
+      "C112",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C125",
+      "C127",
+      "C129"
+    ],
+    "result": "Chickadees integrate multiple navigational strategies including non-mnemonic spatial biases and proximity effects with flexible, context-dependent use of spatially precise memories. The same memory of site contents is used differently depending on behavioral context: during caching, birds avoid occupied sites and prefer empty sites (cache spreading), while during retrieval they are attracted to occupied sites. This flexible use of memory for different behavioral goals suggests general-purpose, episodic-like memory in chickadees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the convergence of multiple specific findings (C4-C6, C104-C105, C108, C112, C119-C122, C125). The demonstration of context-dependent memory use (C6, C119, C125) is particularly strong evidence for flexible, general-purpose memory. The interpretation connecting these findings to episodic memory (C129) is appropriately cautious and supported by the data. This represents the major conceptual contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The study addresses a gap in understanding how mnemonic and non-mnemonic spatial strategies are coordinated within a single behavior. Prior work has studied episodic memory through spatial navigation and characterized food-caching behavior in either minimal-navigation or naturalistic settings, but the coordination of multiple strategies was unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The motivation and background are appropriately established through citations to prior literature (C7-C8, C10, C12-C15). The identification of the knowledge gap (C16) is justified based on the review of prior experimental approaches. The general statements about navigation and memory (C1, C9, C11) are well-established. This provides appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C123",
+      "C126",
+      "C128"
+    ],
+    "result": "The findings are consistent with and extend prior literature on food-caching birds. Previous work has documented spatial biases in the wild, proximity effects, spatial precision of memory, memory persistence, high capacity, and flexible memory use. The current study's findings align with these prior observations while demonstrating their integration within a single experimental paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately contextualizes findings within prior literature through extensive citations (C106, C110-C111, C113-C118, C123, C126, C128). The interpretations of functional significance (C107, C109) are reasonable. The comparison to human episodic memory (C128) is appropriately supported by citations. This demonstrates good scholarship and appropriate interpretation of results in context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The study provides novel evidence that memory plays a role in cache spreading behavior, which was not previously known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim of novelty (C124) is justified based on the demonstration that birds use memory of occupied and checked-empty sites to guide cache placement, resulting in cache spreading. While cache spreading itself was known from prior work, the memory-based mechanism is a new contribution.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "CriSNPr is a unified web server that provides de novo design of gRNAs for six CRISPR diagnostic proteins (Fn/enFnCas9, LwCas13a, LbCas12a, AaCas12b, Cas14a) and includes a curated database of pre-designed gRNAs for all human and SARS-CoV-2 variants, filling a gap in available tools for CRISPR-based variant detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C95, C97-C98 collectively establish that CriSNPr addresses an unmet need (C3) by providing a comprehensive tool (C4-C5) that has been validated experimentally (C6). The tool's functionality is demonstrated through database construction (C64-C66), interface design (Figures 2-3), and experimental validation (Figures 5-6, C85-C94). The distinction from other tools (C96-C97) is clearly articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Each of the six Cas proteins integrated into CriSNPr (LwCas13a, LbCas12a, Cas14a, AaCas12b, FnCas9, enFnCas9) possesses distinct PAM requirements, spacer lengths, target nucleic acid types, and mismatch-sensitive positions that determine their diagnostic capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C63 comprehensively describe the design parameters for each Cas system, supported by Figure 1 and extensive citations to prior literature. These parameters are consistently applied throughout the CriSNPr database construction and are validated experimentally in Figures 5-6. The information is presented as established knowledge from cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "CriSNPr's database was constructed by filtering pathological SNPs from dbSNP Build 155 and SARS-CoV-2 variants from CNCB-NGDC, followed by off-target screening of primer sequences against bacterial, viral, and human genome databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 describe the database construction methodology, which is clearly documented in Figure 2 and the Materials and methods section. The filtering criteria and off-target screening approach are explicitly stated and represent standard bioinformatics practices for this type of resource.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Different Cas systems exhibit varying targetability across the dbSNP database, with LwCas13a and Cas14a (ssDNA) targeting nearly all variants due to lack of PAM constraints, while PAM-dependent systems show targetability ranging from 2.66% (Cas14a/dsDNA) to 85.15% (enFnCas9), with PAM relaxation providing greater coverage than increased mismatch-sensitive positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 present a systematic analysis of targetability across different Cas systems, supported by data in Figure 4a and Supplementary file 1. The percentages are specific and the inference about PAM relaxation vs. mismatch positions (C74) is logically derived from the comparative data. The analysis methodology is described in Materials and methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Among 493,105 disease-related SNPs from dbSNP, enFnCas9 exhibits the highest detection rate (90.74%) while Cas14a (dsDNA) shows the lowest (1.50%), with G.C > A.T mutations predominating in clinically significant variants and showing differential targeting by Cas systems based on PAM composition (G-rich vs. T-rich).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 present analysis of disease-relevant SNPs supported by Figure 4b and data analysis. The mutation class distribution and its relationship to PAM composition (C80-C82) represents a logical inference from the data. The specific percentages and fold-differences are clearly presented in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The SARS-CoV-2 genome's AT-rich composition (62.05%) results in decreased targetability for G-rich Fn/enFnCas9 and higher targetability for LbCas12a (30%) and AaCas12b (70%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 present genome composition analysis and its impact on targetability, supported by Figure 4c and Supplementary file 2. The inference connecting AT-richness to differential Cas system performance is logical and consistent with the PAM requirements described earlier.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CriSNPr-designed gRNAs successfully distinguished between wild-type and mutant sequences for SARS-CoV-2 E484K variant and human SNPs rs2073874 and rs138739292 using FnCas9, Cas14a, and AaCas12b, with fold-differences ranging from ~1.3 to ~20-fold depending on the Cas system and mismatch positions used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C94 describe experimental validation results presented in Figures 5 and 6 with statistical analysis (p-values, fold-changes). The experiments test CriSNPr-designed gRNAs across multiple Cas systems and SNVs. While AaCas12b showed lower discrimination (C93), this is acknowledged and does not invalidate the overall validation. The results support prior literature (C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "CRISPR-based diagnostics offer advantages over traditional qRT-PCR and sequencing methods for SNV detection due to high specificity from the two-step process of gRNA binding and catalytic activity, though each Cas protein requires unique crRNA design based on its distinctive mismatch-sensitive positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C22 establish the background and rationale for CRISPR diagnostics, supported by extensive citations to prior literature. These claims describe established knowledge about diagnostic methods, CRISPR mechanisms, and the need for customized design approaches. The claims are consistent with cited sources and provide context for the CriSNPr tool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "CriSNPr is distinguished from other recently reported gRNA design tools by its specific focus on diagnostics with design parameters tailored to each diagnostic CRISPR protein, and different Cas proteins and readout modes are suited for different diagnostic applications (pathogenic polynucleotide vs. monoallelic/biallelic SNVs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C99-C103 position CriSNPr within the broader landscape of available tools and discuss application considerations. The distinction from other tools (C96-C97) is supported by citations and the tool's demonstrated features. The discussion of readout modes (C101-C103) is supported by citations to relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "CriSNPr has current limitations including inability to perform batch processing (due to server hosting constraints), restriction to single nucleotide changes, coverage limited to human and SARS-CoV-2 genomes, and incomplete systematic characterization of mismatch combinations for some Cas effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 acknowledge limitations of the current CriSNPr version. These are transparently stated by the authors with explanations (C105) and plans for future development (C107). The limitation regarding incomplete mismatch characterization (C108) is supported by citations indicating gaps in the literature. These represent honest assessments of the tool's current scope.",
+    "result_type": "MINOR"
+  }
+]

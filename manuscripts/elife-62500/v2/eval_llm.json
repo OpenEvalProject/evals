@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The slope of the LFP theta frequency vs. running speed relationship decreases significantly during darkness (p=2\u00d710\u207b\u2076\u00b9), while theta amplitude does not change significantly. This change is independent of running acceleration and directly reflects changes in visual inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C65-C68 provide converging evidence through statistical analysis (t-tests), control for acceleration confounds (C5, C66), and demonstrate that the effect is specific to visual input changes rather than motor changes. The large effect size and multiple controls strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Changes in the LFP theta frequency vs. running speed relationship show both fast (<10s) and slow (tens of seconds) temporal components, with the slope showing saturating exponential changes over time during light and dark epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 demonstrate temporal dynamics through correlation analysis (R=0.79, p=0.0001) and show distinct fast and slow components of change. The statistical evidence is strong with appropriate temporal binning (10s blocks) and sufficient sample size (78 sessions, 14 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Theta rhythmic firing frequency decreases during darkness, with the frequency increasing with running speed in light but not dark conditions. The number of theta rhythmic neurons shows opposite speed-dependent patterns between light (decreasing with speed) and dark (saturating at ceiling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C53-C55, C76-C79 provide comprehensive evidence using MLE modeling of autocorrelograms with appropriate statistical tests (linear mixed effects models). The analysis includes 339 neurons with sufficient spike counts (\u2265100 interspike intervals), and results show consistent patterns across different significance thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C81",
+      "C82"
+    ],
+    "result": "Phase locking of theta rhythmic neurons increases during darkness (median MRL: 0.29\u21920.37, p=1\u00d710\u207b\u00b3\u00b2), while each neuron's preferred phase of firing remains unchanged between conditions. Changes show fast temporal dynamics without slow components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C81-C82 demonstrate increased synchrony with strong statistical evidence (Wilcoxon signed-rank test, p=1\u00d710\u207b\u00b3\u00b2) and stability of preferred phases (high circular-linear correlation in Figure 3C). The temporal analysis (C81) appropriately characterizes the dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C58",
+      "C59"
+    ],
+    "result": "Visual inputs modulate mean firing rates of MEC neurons, with 16.5% showing positive and 3.8% showing negative modulation. These changes are driven by retinal stimulation rather than spatial information content, as demonstrated by optogenetic control experiments with spatially non-informative light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C58-C59 provide strong evidence through quantitative analysis (842 neurons, 15 mice) and critical optogenetic control experiments (Figure 4E-F) that distinguish retinal stimulation effects from spatial information processing. The ~4:1 ratio of positive to negative modulation is consistent across manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C32",
+      "C83",
+      "C84"
+    ],
+    "result": "The running speed-dependent gain in firing rates of MEC speed cells remains unaltered during darkness when analyzed after normalization within conditions to correct for changes in mean firing rate. Speed scores are highly correlated between light and dark (R=0.86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C32, C83-C84 demonstrate that apparent changes in speed tuning slopes are artifacts of mean firing rate changes. The analysis appropriately uses within-condition normalization and LN-model to control for conjunctive coding (164 neurons). This is a critical methodological contribution distinguishing gain changes from baseline shifts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C85"
+    ],
+    "result": "Grid cell spatial periodicity is low but not eliminated in initial darkness, increases strongly with light exposure, and remains partially elevated in subsequent darkness. Grid fields appear wider in darkness due to reduced spatiotemporal accuracy without changes in spacing (42 cm), phase, or orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23, C85 provide comprehensive characterization using multiple metrics (grid scores, spatial information, spatiotemporal correlation) with appropriate statistics (Friedman test, Wilcoxon tests). The spike-triggered firing rate map analysis (C22-C23) elegantly demonstrates maintained grid structure with reduced precision. Sample sizes are adequate (28 cells from 6 mice for main analysis, 15 cells for spike-triggered analysis).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C86",
+      "C87"
+    ],
+    "result": "Head direction cells maintain their preferred direction angles in darkness (R=0.836, p=1.3\u00d710\u207b\u00b9\u2078), suggesting animals remain oriented, but tuning accuracy decreases as measured by mean resultant length (Cohen's d=0.238, p=0.0337).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C86-C87 demonstrate maintained orientation with reduced precision using appropriate circular statistics (67 cells). The high correlation of preferred angles between conditions (Figure 7B) strongly supports the inference that animals remain oriented (C86), though the small effect size for MRL decrease suggests modest impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C88"
+    ],
+    "result": "Border cell spatial accuracy decreases during darkness, with border scores significantly reduced (Cohen's d=-0.4975, p=0.0325), suggesting less accurate representation of environmental boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C88 show decreased border cell accuracy with appropriate statistics (27 cells) and moderate effect size. The inference about boundary representation accuracy (C88) is reasonable given the border score metric, though the relatively small sample size and single metric warrant some caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C33"
+    ],
+    "result": "Grid cell spatial stability (spatiotemporal correlation) is strongly correlated with the slope of LFP theta frequency vs. running speed relationship (R=0.966, p=1.83\u00d710\u207b\u00b2\u00b9) but not with the y-intercept. This correlation holds within light (R=0.825) and dark (R=0.490) conditions separately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C33 demonstrate remarkably strong correlation between grid stability and theta frequency slope using appropriate temporal binning (10s) and sufficient data points (36 total, 18 per condition). The dissociation between slope and y-intercept effects (C29) strengthens the specificity of the finding. However, correlation does not establish causation, and the analysis is limited to 7 cells from 3 mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C63",
+      "C98",
+      "C99"
+    ],
+    "result": "Grid cell firing appears to be a function of velocity signals integrated over past time, as evidenced by slow saturating exponential changes in spatial accuracy (tens of seconds). Error accumulation alone cannot explain the slow increase in accuracy after reinstating visual inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30, C63, C98-C99 present a logical argument based on temporal dynamics, but the evidence is primarily inferential. While the asymmetry between light-to-dark and dark-to-light transitions (C98) argues against simple error accumulation, alternative explanations (e.g., adaptation, learning) are not fully excluded. The integration hypothesis requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C60",
+      "C61"
+    ],
+    "result": "Sensory inputs other than visual inputs (vestibular, proprioceptive, motor efference, geometrical cues) can support grid cell firing in darkness, though with reduced accuracy. Animals require initial visual orientation but can maintain orientation using non-visual cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C60-C61 are supported by observations that grid cells maintain orientation, phase, and spacing in darkness after initial light exposure (C17-C18). However, the specific contributions of different sensory modalities (C61) remain speculative as they were not independently manipulated. The conclusion is reasonable but would benefit from additional experiments isolating specific sensory inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C80"
+    ],
+    "result": "Changes in theta rhythmic firing as a function of running speed are similar across different functional cell types (grid cells, head direction cells, border cells) and between putative principal neurons and interneurons, though interneurons show time-dependent decreases in theta frequency not seen in principal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C80 demonstrate ubiquitous changes across cell types using appropriate cell classification methods (spike width, firing rate) and analysis across functional categories. The cell-type specific temporal dynamics (C80) add nuance, though the functional significance is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Running speed and acceleration decrease slightly during darkness (speed: 7.7% decrease, p=0.0117; acceleration: 8.0% decrease, p=0.0070), but these small changes do not account for the observed neural dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 document behavioral changes with appropriate statistics (Wilcoxon signed-rank test, n=15 mice). The small magnitude of changes and subsequent control analyses (C65-C66) demonstrate these behavioral differences do not confound the main neural findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C75",
+      "C97",
+      "C100"
+    ],
+    "result": "The manuscript appropriately contextualizes findings within established literature on grid cells, path integration, theta oscillations, and their relationships to spatial navigation and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C52, C75, C97, C100 provide appropriate citations to relevant prior work. The citations appear accurate and support the stated claims about established knowledge in the field. This contextualizes the current findings appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose that grid cell firing may be more strongly associated with mean attractor state of rhythmic firing (LFP theta) than individual neuron rhythmicity, and suggest alternative explanations involving medial septum, head direction signals, or longer integration time scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C92, C94-C96 present speculative interpretations and alternative hypotheses. While these are reasonable given the data, they lack direct experimental support. The proposals are appropriately framed as possibilities requiring future investigation (C101), but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C64"
+    ],
+    "result": "The authors speculate that visual cues provide additional self-location information through systematic changes in distance/direction and optic flow, and that velocity integration would produce a malleable spatial representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62, C64 are speculative interpretations without direct experimental support. While plausible, these remain hypotheses that would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Reductions in grid cell, head direction cell, and border cell accuracy occur concurrently during darkness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 accurately summarizes concurrent findings from multiple cell types (Figure 7). This observation is well-supported by the individual analyses of each cell type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study used appropriate methods including 17 male mice (3-6 months), approved procedures, tetrode recordings from MEC, carefully controlled darkness conditions, and identified 28 grid cells, 67 head direction cells, and 27 border cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C110 describe methodological details that are clearly stated and appropriate. The careful attention to ensuring complete darkness (C105-C106) is particularly important for the experimental design. Sample sizes appear adequate for the analyses performed.",
+    "result_type": "MINOR"
+  }
+]

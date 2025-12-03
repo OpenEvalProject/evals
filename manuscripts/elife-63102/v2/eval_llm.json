@@ -1,0 +1,423 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "MitoPunch is a pressure-driven device that uses a solenoid-activated plunger to deform a PDMS reservoir, generating up to 28 kPa of pressure that propels isolated mitochondria through 3 \u03bcm pores in a PET filter to cut recipient cell membranes and deliver mitochondria into the cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe the MitoPunch device design and mechanism, supported by device schematics (Figure 1A), numerical simulation showing 28 kPa pressure generation (Figure 1B, C31), and detailed construction methods. The mechanism is clearly demonstrated through both computational modeling and experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "MitoCeption uses centrifugal force (1500 \u00d7 g) to draw mitochondria to recipient cells, exerting approximately 1.6 Pa of pressure on cell membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 describe the MitoCeption method with pressure calculations shown in Figure 1D and detailed in Materials and methods. The pressure calculation is mathematically derived from centrifugation parameters and mitochondrial properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "MitoPunch yielded the lowest fraction of dsRed-positive cells and lowest mean/median dsRed spot counts compared to coincubation or MitoCeption in both 143BTK\u2212 \u03c10 and BJ \u03c10 cells at 2 hours post-delivery, indicating that delivery method and cell type affect mitochondria-recipient cell interaction efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by imaging flow cytometry data (Figure 2A) and spot count analysis (Figure 2B, Figure 2\u2014figure supplement 1). The data show consistent patterns across two cell types with technical triplicates, though the interpretation focuses on initial association rather than successful internalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Confocal microscopy revealed that MitoPunch delivers mitochondria to basal membranes at regions associated with PET membrane pores, while coincubation and MitoCeption uniformly coat recipient cells with mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by confocal microscopy images (Figure 2C) showing distinct localization patterns. The spatial distribution differences are clearly visible in the Z-stack images, though the claim about cytoplasmic localization in MitoPunch (C41) requires additional validation beyond 15-minute fixation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "MitoPunch and MitoCeption disrupt plasma membranes in a cell type and delivery method-dependent manner, with MitoPunch causing approximately fivefold higher PI uptake in BJ \u03c10 cells compared to other conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by propidium iodide uptake flow cytometry data (Figure 2D) showing membrane disruption patterns. The data demonstrate clear differences between methods and cell types with technical triplicates, validating that membrane disruption occurs and varies by method and cell type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "\u03c10 cells cannot survive without uridine supplementation due to ETC impairment, enabling selection of SIMR cells using nucleotide-free medium with dialyzed FBS, with BJ \u03c10 cells requiring additional galactose selection due to longer survival under initial selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 describe the selection strategy supported by established biology (C48, cited to Gr\u00e9goire et al., 1984) and experimental workflow (Figure 3A-B). The galactose selection for BJ \u03c10 cells (C51, cited to Robinson et al., 1992) addresses observed differences in selection stringency, though C50 relies on unpublished data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Coincubation did not generate SIMR clones in either cell type, while MitoPunch and MitoCeption each generated dozens of clones in 143BTK\u2212 \u03c10 cells; only MitoPunch generated SIMR clones in replication-limited BJ \u03c10 cells, though at lower numbers than in 143BTK\u2212 \u03c10 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are supported by crystal violet staining and clone counting (Figure 3C) with technical triplicates. The key finding that only MitoPunch generates clones in replication-limited cells is clearly demonstrated, representing a major technical advance over existing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "No cell growth was observed from plated mitochondrial isolate aliquots after selection, indicating minimal donor cell contamination through the isolation protocol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by crystal violet staining of three independent mitochondrial preparations (Figure 3\u2014figure supplement 1). This control experiment addresses a critical concern about false-positive SIMR clones from surviving donor cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Voltage titration experiments showed maximum SIMR generation at 1 V for both cell types, with 143BTK\u2212 \u03c10 showing sharp decline at higher voltages while BJ \u03c10 showed shallow decline; surprisingly, 0 V (sealing pressure only) generated some SIMR clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by voltage titration data (Figure 3D) with technical triplicates. The dose-response relationship demonstrates that SIMR generation depends on delivery pressure, with the unexpected 0 V result suggesting even sealing pressure can enable some mitochondrial transfer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MitoCeption showed maximum SIMR generation at 1000-1500 \u00d7 g in 143BTK\u2212 \u03c10 cells but did not generate BJ \u03c10 SIMR clones above background at any acceleration tested, with background likely from rare un-lysed donor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by force titration data (Figure 3E) with technical triplicates. The dose-dependent response in 143BTK\u2212 \u03c10 cells and failure in BJ \u03c10 cells clearly demonstrates MitoCeption's limitation with replication-limited cells. The background interpretation (C65) is reasonable given occasional observation of persistent dsRed colonies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "MitoPunch deliveries into B16 \u03c10 mouse melanoma cells yielded maximal SIMR generation at a different voltage than human cell lines, suggesting optimal delivery pressure is cell type-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by data in Figure 3\u2014figure supplement 2. This extends the findings to a different species and cell type, supporting the generalizability of the method while highlighting the need for cell-type-specific optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "MitoPunch is uniquely able to generate SIMR clones in replication-limited fibroblasts, and SIMR generation efficiency depends on delivery pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are inferences well-supported by the voltage and force titration experiments (Figures 3D-E) and comparison of methods across cell types (Figure 3C). The unique capability of MitoPunch for replication-limited cells is the study's most significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Three independent mitochondrial preparations generated consistent protein concentrations and yielded dozens of SIMR clones in technical replicate MitoPunch deliveries (with exception of two lower-efficiency replicates from Prep 3), demonstrating reproducibility of both isolation and delivery techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by reproducibility data (Figure 3\u2014figure supplements 3-4) showing biological and technical replicates. The consistency across preparations demonstrates method robustness, though the variability in Prep 3 suggests some sensitivity to preparation quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "MitoPunch and MitoCeption show similar dose-dependent relationships between mitochondrial mass and SIMR clone generation across 0.16-16 \u03bcg protein, with similar efficiency per microgram delivered, though protocol differences make direct efficiency comparisons less meaningful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by dose-response data (Figure 3\u2014figure supplement 5) with technical triplicates. The similar dose-dependence suggests comparable fundamental efficiency in transformed cells, while acknowledging that different protocols (volumes, procedures) complicate direct comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Serial MitoPunch deliveries using one mitochondrial aliquot showed maximal SIMR generation from first and second deliveries, with sharp reduction and inconsistent generation thereafter, demonstrating that multiple transfers can be performed when material is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by serial transfer data (Figure 3\u2014figure supplement 6). This practical finding addresses material limitations, though the declining efficiency suggests mitochondrial damage or dilution with repeated use.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Most SIMR clones maintained stable respiration through two freeze-thaw cycles, though one MitoCeption clone lost respiratory capacity and one MitoPunch clone was not viable after freezing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by oxygen consumption rate measurements (Figure 4A) with 4-5 technical replicates. The stability of respiratory parameters across freeze-thaw cycles demonstrates that most SIMR clones are functionally stable, though some clone loss is expected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The majority of 143BTK\u2212 \u03c10 SIMR clones generated by MitoPunch or MitoCeption retained mtDNA with filamentous mitochondrial network morphologies, while one MitoCeption clone that lost respiration showed fragmented networks without detectable mtDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by confocal microscopy with anti-TOM20 and anti-dsDNA antibodies (Figure 4B, Figure 4\u2014figure supplement 2). The correlation between mtDNA retention, network morphology, and respiratory function validates successful mitochondrial transplantation in most clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "MitoPunch generates up to hundreds of SIMR clones in both transformed and Hayflick-limited cells by exerting pressure sufficient to perforate membranes in regions small enough to be repaired within minutes, sustaining viability and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 summarize the study's findings with support from clone generation data across figures and citation to Boye et al., 2017 for membrane repair kinetics. The mechanism inference is reasonable given the pressure calculations, membrane disruption data, and successful clone generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "SIMR clones were generated using mitochondria isolated by commercial kit or standard buffers, including Dounce homogenization, with the commercial kit being advantageous for ease of use, reproducibility, and reduced steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 describe method flexibility based on authors' experience. While C90 relies on unpublished data, the successful generation of dozens of clones using different isolation methods (C92) demonstrates robustness. The comparative assessment (C91) is reasonable but subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Coincubation did not generate SIMR clones in this study, contrasting with few reports showing limited success using 100-fold higher mitochondrial levels or antibiotic selection; MitoPunch and MitoCeption's enhanced efficiency is particularly enabling when donor material is limited or lacks selection markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 contextualize the findings relative to prior work (Clark and Shay, 1982; Patel et al., 2017). The comparison highlights practical advantages of the new methods, though the failure to observe coincubation-based SIMR generation (C94) may reflect experimental conditions rather than absolute impossibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Despite distinct mechanisms making direct efficiency comparisons challenging, both MitoPunch and MitoCeption generate SIMR clones from \u03c10 transformed cells in a dose-dependent fashion and can be readily adopted by laboratories studying mtDNA-nDNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 provide balanced assessment of the two methods. The dose-dependence is demonstrated (Figure 3\u2014figure supplement 5), and the practical utility claim (C101) is reasonable given the detailed protocols provided, though 'readily adopted' may overstate ease for some laboratories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "In the cell types tested, only MitoPunch generates SIMR clones from \u03c10 primary, non-immortal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is strongly supported by data showing MitoPunch success and MitoCeption failure in BJ \u03c10 cells (Figure 3C-E). This is appropriately qualified to tested cell types, representing the study's most significant technical advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Replication-limited SIMR clones show altered transcriptomes and metabolomes that can be reset by reprogramming to iPSCs and differentiation; therefore, SIMR generation in replication-limited, reprogrammable cells is crucial for mtDNA-nDNA interaction studies, and MitoPunch is uniquely capable of generating sufficient clones for statistically valid studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by citation to Patananan et al., 2020 for the reprogramming results. The logical inference that replication-limited cells are crucial (C104) and that MitoPunch's unique capability is important (C105) follows from the demonstrated differences between transformed and primary cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "MitoPunch has been used to replace mutant mtDNA in mouse cells without depletion using chloramphenicol-resistant mitochondria, but this approach is limited to antibiotic-resistant donors; future work should develop techniques to avoid full mtDNA depletion before SIMR generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 discuss alternative applications and future directions. C106 is supported by citation to Dawson et al., 2020. The limitation noted in C107 is valid, and the future direction (C108) is reasonable speculation about improving the methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "MitoPunch and MitoCeption both yield SIMR cells that permanently retain exogenous mtDNA, with typical deliveries producing dozens of immortalized clones with restored oxidative phosphorylation, but only MitoPunch produces replication-limited SIMR clones; the MitoPunch device is versatile, inexpensive, and easy to use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 summarize the study's main findings, supported by data throughout the manuscript. The permanent retention (C109), clone numbers (C111), unique capability for replication-limited cells (C112), and practical advantages (C113) are all demonstrated, though 'easy to use' may be subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "mtDNA-nDNA coordination is essential for cellular function, with the two genomes encoding >1100 mitochondrial proteins (only 13 ETC proteins from mtDNA); mutations can cause disease, and methods to pair specific mtDNA-nDNA genotypes are key for understanding mitonuclear interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide background context supported by multiple citations to established literature. These claims establish the biological importance and rationale for the study but do not represent new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Current mtDNA editing and transfer methods have significant limitations: endonucleases are inefficient, cytidine deaminases have low efficiency and limited scope, existing transfer methods show only short-term effects or require large doses/selection schemes, direct delivery methods are laborious or low-throughput, and clinical methods are technically challenging; therefore, higher-throughput techniques for generating SIMR clones in replication-limited cells are essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C28 comprehensively review limitations of existing approaches, supported by citations to relevant literature. These claims establish the need for the current study but represent synthesis of prior work rather than new findings. The conclusion (C28) logically follows from the identified gaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Other mitochondrial preparation techniques will also yield SIMR clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is speculation about untested methods. While reasonable based on success with multiple tested methods, this remains a hypothesis requiring experimental validation.",
+    "result_type": "MINOR"
+  }
+]

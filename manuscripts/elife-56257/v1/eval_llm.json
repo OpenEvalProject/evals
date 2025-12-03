@@ -1,0 +1,584 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background context on ASD prevalence, heterogeneity, and the use of fMRI for biomarker identification, noting that prior work has largely focused on case-control comparisons rather than addressing heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are all supported by appropriate citations to prior literature and accurately represent the state of the field. These are standard background claims that establish the motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript reviews the history of subtyping approaches in ASD, noting that behavioral subtypes have been proposed but proven difficult to distinguish clinically, leading to their abandonment in favor of the autism spectrum concept, while renewed interest in brain-based subtypes has emerged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 accurately summarize the historical trajectory of subtyping in ASD research with appropriate citations. This provides important context for why the current study focuses on brain-based rather than behavioral subtypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript reviews prior imaging-based subtyping studies in ASD, including work on subcortical volumes, structural MRI, and functional connectivity, with mixed findings regarding associations with diagnosis and symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 accurately represent prior work with appropriate citations. The review establishes that imaging subtypes have been identified but with inconsistent associations with clinical features, motivating the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript identifies three key gaps in the literature: lack of systematic evaluation of discrete vs. continuous subtype assignments, lack of replication of imaging subtypes, and the importance of replication highlighted by failures in depression research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C16, and C17 accurately identify important gaps in the literature with appropriate citations. These gaps directly motivate the three main aims of the current study (stability evaluation, association testing, and replication).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript notes that ASD symptoms and neurobiological phenotypes overlap with other disorders and extend into the general population, motivating the use of mixed ASD/NTC samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by appropriate citations and provide important justification for the study's methodological choice to identify subtypes in a mixed sample rather than only among ASD individuals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript justifies the use of network-based FC analysis by citing prior work linking different networks to different ASD symptoms, and notes that the MIST_20 parcellation performs well in ASD classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 provide appropriate justification for the methodological choices with supporting citations. The hypothesis that different networks might relate to different symptoms is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C23"
+    ],
+    "result": "The study identified 87 FC subtypes across 18 seed networks in the discovery dataset, with 3-6 subtypes per network (median 5), and 97% of individuals assigned to at least one subtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 report clear descriptive statistics about the subtyping results. The numbers are internally consistent and the high assignment rate (97%) demonstrates that the method successfully characterized most individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Continuous FC subtype assignments showed no significant linear relationship with head motion or age for any seed network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 reports an important quality control result showing that the subtypes are not driven by confounds. The statistical test (Pearson correlation) is appropriate for testing linear relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "FC subtype maps showed good spatial stability across perturbations of the discovery dataset, with average correlation r=0.65 (SD=0.034) between matched subtypes in random subsamples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by the stability analysis using 1000 random subsamples. The correlation of 0.65 indicates moderate to good stability of the spatial patterns, though the method of matching subtypes between subsamples could introduce some bias toward higher correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Discrete assignments of individuals to FC subtypes showed poor stability across perturbations, with average Dice coefficient of 0.22 (SD=0.025).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by the stability analysis. The low Dice coefficient (0.22) clearly demonstrates that discrete assignments are not stable, which is a key finding that argues against using discrete subtype assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C35"
+    ],
+    "result": "The stability of continuous FC subtype assignments ranged from poor to excellent depending on the amount of available data and whether subtypes were computed on the same or different data, with ICC increasing as a function of both the number of scan sessions and total time frames.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C35 are supported by the longitudinal analyses in two independent samples. The controlled analysis (Figure 3) effectively demonstrates that both session number and total scan duration contribute to stability, with scan duration having a larger effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C40"
+    ],
+    "result": "Eleven FC subtypes showed significant associations with ASD diagnosis after FDR correction, with 5 negatively associated (negASD, stronger in NTC) and 6 positively associated (posASD, stronger in ASD), with effect sizes ranging from d=0.27 to d=0.52.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C40 report the main association findings with appropriate statistical correction (FDR). The effect sizes are modest but clearly reported with confidence intervals. The bidirectional associations (both neg and pos) are an interesting finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C42",
+      "C43"
+    ],
+    "result": "negASD FC subtypes showed a convergent spatial pattern characterized by above-average FC in sensorimotor, visual, and auditory regions and below-average FC in ventromedial prefrontal and subcortical areas, while posASD subtypes showed more heterogeneous patterns with generally below-average FC throughout the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C42-C43 describe the spatial patterns of the identified subtypes. The descriptions are supported by the visualizations in Figure 4, though the characterization of posASD as 'more heterogeneous' is somewhat qualitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "A subset of the identified FC subtypes naturally captured inter-individual variation related to clinical ASD diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is a summary conclusion supported by claims C36-C40. The use of 'naturally captured' appropriately reflects that subtypes were identified in a diagnosis-naive manner before testing associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In a subsample with complete cerebellar coverage, three negASD FC subtypes were identified with similar spatial topography to the main analysis, no cerebellar subtypes were associated with ASD, and the exclusion of cerebellum did not change the central findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 report a supplementary analysis addressing the limitation of incomplete cerebellar coverage. The finding that results are similar with and without cerebellum supports the validity of the main analysis, though the smaller sample size (N=344 vs 388) may have reduced power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "No significant associations were found between FC subtype assignments and ADOS scores, either in the full sample controlling for diagnosis or in an ASD-only subsample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 report null findings for ADOS associations. While negative results, these are important for characterizing what the subtypes do and do not capture. The lack of association with symptom severity contrasts with some prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "One FC subtype from the ventromedial prefrontal seed showed significant association with SRS scores (r=0.24, p_adj=0.04) and was also the posASD subtype with the strongest association with diagnosis (d=0.38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 reports a significant association with SRS that did not replicate after correction (p_adj=0.06 in replication). Given the multiple comparisons across 87 subtypes and the marginal replication, this finding should be interpreted cautiously. The claim is technically accurate but the reliability is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "negASD subtypes showed convergent spatial patterns characterized by overconnectivity with unimodal sensory networks and underconnectivity with basal ganglia and fronto-parietal networks, while posASD subtypes showed pervasive underconnectivity, with similarities more pronounced among negASD than posASD subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 describe the network-level decomposition of the spatial patterns (Figure 4c) and the correlations between subtypes. The quantitative analysis of spatial and assignment correlations supports the conclusion of greater convergence among negASD subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "After correcting for whole-brain FC, seven FC subtypes from primary sensory networks remained significantly associated with ASD diagnosis, with negASD and posASD patterns showing inverse topographies: negASD with above-average sensory FC and below-average medial-prefrontal/subcortical FC, and posASD showing the opposite pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 report an important control analysis showing that associations persist after accounting for global FC differences. The emergence of more coherent posASD patterns after this correction suggests that global FC differences were obscuring more specific patterns. This is a sophisticated analysis that strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C69",
+      "C71"
+    ],
+    "result": "All 11 FC subtype associations with ASD diagnosis showed effects in the same direction in the independent replication sample, with effect sizes averaging 63% of discovery estimates and 9/11 falling within 90% confidence intervals, demonstrating moderate replicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 report the replication results. The consistent direction of effects and high correlation (r=0.91) between discovery and replication effect sizes is impressive. The reduction in magnitude (63%) is expected due to regression to the mean and winner's curse, and the authors appropriately acknowledge this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Data-driven FC subtypes are moderately reliable on currently available datasets and show weak to moderate associations with ASD diagnosis that generalize to independent replication data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are high-level summary conclusions supported by the stability analyses (C27-C35) and association/replication results (C36-C71). The characterization as 'moderate' reliability and 'weak to moderate' associations is appropriate given the quantitative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The findings are consistent with previous studies reporting stable imaging subtypes in ASD and with the failure to replicate discrete subtypes in depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 appropriately contextualize the findings within the broader literature. The comparison to the depression replication failure (Dinga et al., 2019) is particularly relevant given the similar methodological issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The robustness of discrete subtype assignments has been more comprehensively investigated for symptom-based subtypes in ASD, which were also not well-supported by replication and led to merging sub-diagnoses under the autism spectrum disorder label.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 provide important historical context from the clinical literature that parallels the current findings about discrete vs. continuous assignments. This strengthens the interpretation that continuous measures may be more appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The results support conceptualizing subtypes as latent dimensions expressed to varying degrees in each individual, with continuous measures being moderately to very robust depending on data availability, unlike discrete assignments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 present a key conceptual conclusion supported by the stability analyses. The contrast between discrete (Dice=0.22) and continuous (ICC up to 0.80) stability is stark and clearly supports this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The ICC of continuous assignments computed on separate data was low but consistent with prior reports of single-session FC reliability, while ICC from multiple sessions was high and consistent with established links between scan length and FC reliability, with both session number and total time points contributing to stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 contextualize the stability findings within the broader FC reliability literature. The controlled analysis (Figure 3) effectively demonstrates the relative contributions of session number vs. total duration, which is a novel contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The generalizability of associations between continuous assignments and ASD diagnosis may increase with longer or repeated scan sessions in the replication sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 is a reasonable speculation based on the stability findings, but it remains untested. The replication sample had similar scan parameters to the discovery sample, so this is a hypothesis for future work rather than a demonstrated finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C88"
+    ],
+    "result": "The effect sizes of associations between FC subtypes and ASD diagnosis (d=0.3-0.5) are comparable to those reported by other imaging-based subtype analyses in ASD, suggesting weak-to-moderate associations are robust across subtyping methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 appropriately contextualize the effect sizes within the literature. The comparison to other studies (Kernbach et al., 2018; Hong et al., 2018) supports the conclusion that modest effect sizes are typical for imaging subtypes in ASD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Previous studies found associations between FC subtypes and symptom severity using multivariate approaches after stratification, whereas this study tested simple linear relationships, suggesting that combining multiple FC subtype assignments in multivariate models might yield stronger predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 provide a reasonable explanation for the discrepancy with prior work. The distinction between univariate and multivariate approaches is important, though claim C92 remains speculative about what multivariate analysis might show.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Very few imaging-based subtype analyses have been replicated successfully, making this replication a novel benchmark for reliability in ASD imaging subtypes, with the expected reduction in effect sizes reflecting the inherent bias of significance testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 appropriately emphasize the importance of the replication and contextualize the effect size reduction. The citation to Vul and Pashler (2012) on the winner's curse is appropriate and the interpretation is statistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The hypothesis that FC subtypes from different seed networks would link to distinct behavioral symptom profiles was not supported; instead, the converging topography suggests all FC subtypes capture different views of a single underlying profile characterized by unimodal vs. transmodal FC distinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 report that the initial hypothesis was not supported and present an alternative interpretation. The convergent spatial patterns (Figure 4) clearly support this conclusion, though it contradicts the initial hypothesis. This is an important negative result that refines understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "After correcting for global FC, posASD subtypes showed topography opposite to negASD subtypes, and a supplemental PCA confirmed that the largest variance components captured whole-brain FC shifts with spatial patterns strikingly similar to the case-control Holiga map (r=-0.6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by the global FC correction analysis and the supplemental PCA (Appendix 3-figure 1). The high correlation with the Holiga map is notable and suggests the subtypes are capturing similar variance to case-control approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The pattern of connectivity differences is consistent with a view of the connectome organized along gradients from sensory to associative, interpretable as gradient compression in ASD, which emerged from the data rather than being assumed by the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 provide an interpretation of the findings in terms of gradient theory, with appropriate citation to Hong et al. (2019a). The emphasis that this was a data-driven conclusion rather than an assumption is important for establishing the validity of the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "If granular symptom-specific FC subtypes exist, they are dominated by larger gradient variations that would need to be accounted for, and FC subtypes not significant after correction may carry complementary information that would emerge in multivariate analysis or with larger samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C109 are speculative about what might be found with different analyses or larger samples. Claim C109 notes that replication seemed to extend to non-significant subtypes (Figure 8), which provides some support, but these remain hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The analysis only included male individuals due to the higher frequency of ASD diagnosis among males, though recent data curation efforts have started to deliberately include more female individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 acknowledge an important limitation with appropriate citations. The restriction to males is a common issue in ASD research but does limit generalizability. The mention of recent efforts to include more females is appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Cortico-cerebellar FC has been shown to be altered in ASD and linked to symptom severity, but the supplemental analysis with cerebellar coverage found FC subtypes with similar topography to the main findings, suggesting results would not have changed substantially with cerebellum inclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 address the cerebellar limitation. The supplemental analysis provides reasonable evidence that the exclusion did not substantially affect the findings, though the smaller sample size and lack of cerebellar subtype associations leaves some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The age distributions differed between discovery and replication samples despite identical sampling criteria, and while age is an important covariate in a developmental disorder, good replication was still observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 acknowledge a limitation but note that replication was still successful. The age difference (17.0 vs 12.1 years mean) is substantial and could affect results, but the successful replication despite this difference actually strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The findings are limited by the amount of data available per individual, particularly for stability of FC subtype assignments, and future research with longer time series would allow investigation of dynamic FC subtypes in ASD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 acknowledge a limitation and suggest future directions. The stability analyses clearly demonstrated the impact of data amount on reliability, so this is an important limitation. The suggestion for dynamic FC is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "There is a limitation in estimating subtype reliability because individuals may contribute to subtype maps, inflating their assignment, though this does not apply when subtype maps are generated from an independent sample as in the replication analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 acknowledge a methodological limitation. This is a valid concern for the within-sample stability analyses but, as noted, does not affect the replication analysis. The authors could have used leave-one-out approaches to address this in the discovery sample.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The results focused only on ASD and NTC individuals, but given evidence of overlap in symptoms and neurobiological phenotypes across neurodevelopmental disorders, future research should investigate cross-diagnostic FC subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 acknowledge the limited diagnostic scope and suggest an important future direction with appropriate citations. The suggestion for cross-diagnostic work is well-motivated by the literature on transdiagnostic phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The study re-uses the same ABIDE datasets as most other studies, which is a problem called dataset decay, and this repeated re-analysis may explain the convergence in results with other recent ABIDE studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 acknowledge an important limitation about dataset reuse with appropriate citation to Thompson et al. (2020). The speculation about convergence due to dataset reuse is reasonable but difficult to test. This is an honest acknowledgment of a field-wide issue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The study demonstrates that basic cluster analysis produces FC subtypes associated with ASD diagnosis and SRS, with greater stability for continuous than discrete assignments and higher stability with longer time series, showing striking replicability and convergent topography suggesting gradient compression, though the modest effect sizes indicate FC subtypes will not replace clinical categories but can summarize heterogeneous data while retaining clinically meaningful variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 provide a comprehensive summary of the main conclusions. These are well-supported by the results and appropriately qualified (e.g., 'moderate' associations, 'will not replace clinical categories'). The conclusions are appropriately cautious given the effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The methods section describes the diagnostic procedures, preprocessing pipeline (NIAK 1.13 in Singularity container), quality control criteria, FC estimation, clustering approach (hierarchical agglomerative with specific criteria), and statistical testing (FDR correction) used in the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C149 describe the methodological details. The methods are generally well-described with appropriate citations. The use of containerization (Singularity) for reproducibility is commendable. The clustering criteria (dissimilarity <1, N\u226520) are clearly stated though somewhat arbitrary. The statistical approach with FDR correction is appropriate.",
+    "result_type": "MINOR"
+  }
+]

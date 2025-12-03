@@ -1,0 +1,1489 @@
+{
+  "submission": {
+    "id": "f7c2ae1b-a419-4915-8f9b-88db80f06da9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:12:39.597553Z",
+    "updated_at": "2025-12-03T11:12:39.597553Z"
+  },
+  "content": [
+    {
+      "id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "submission_id": "f7c2ae1b-a419-4915-8f9b-88db80f06da9",
+      "content_type": "manuscript",
+      "content_text": "# Epigenetic reprogramming by TET enzymes impacts co-transcriptional R-loops\n\n## Authors\n\n- Jo\u00e3o C Sabino<sup>1</sup> ([ORCID: 0000-0001-7991-4291](https://orcid.org/0000-0001-7991-4291))\n- Madalena R de Almeida<sup>1</sup> ([ORCID: 0000-0001-9539-3289](https://orcid.org/0000-0001-9539-3289))\n- Patr\u00edcia L Abreu<sup>1</sup> ([ORCID: 0000-0002-6387-8537](https://orcid.org/0000-0002-6387-8537))\n- Ana M Ferreira<sup>1</sup>\n- Paulo Caldas<sup>2</sup>\n- Marco M Domingues<sup>1</sup>\n- Nuno C Santos<sup>1</sup>\n- Claus M Azzalin<sup>1</sup> ([ORCID: 0000-0002-9396-1980](https://orcid.org/0000-0002-9396-1980))\n- Ana Rita Grosso<sup>2</sup> ([ORCID: 0000-0001-6974-4209](https://orcid.org/0000-0001-6974-4209))\n- S\u00e9rgio Fernandes de Almeida<sup>1</sup> ([ORCID: 0000-0002-7774-1355](https://orcid.org/0000-0002-7774-1355)) \u2020\n\n### Affiliations\n\n1. Instituto de Medicina Molecular Jo\u00e3o Lobo Antunes, Faculdade de Medicina, Universidade de Lisboa Lisbon Portugal ([ROR:01c27hj86](https://ror.org/01c27hj86))\n2. Associate laboratory i4HB \u2013 Institute for Health and Bioeconomy, NOVA School of Science and Technology, Universidade Nova de Lisboa Caparica Portugal ([ROR:02xankh89](https://ror.org/02xankh89))\n3. UCIBIO-REQUIMTE, Applied Molecular Biosciences Unit, Department of Life Sciences, NOVA School of Science and Technology, Universidade Nova de Lisboa Lisbon Portugal ([ROR:02xankh89](https://ror.org/02xankh89))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDNA oxidation by ten-eleven translocation (TET) family enzymes is essential for epigenetic reprogramming. The conversion of 5-methylcytosine (5mC) into 5-hydroxymethylcytosine (5hmC) initiates developmental and cell-type-specific transcriptional programs through mechanisms that include changes in the chromatin structure. Here, we show that the presence of 5hmC in the transcribed gene promotes the annealing of the nascent RNA to the template DNA strand, leading to the formation of an R-loop. Depletion of TET enzymes reduced global R-loops in the absence of gene expression changes, whereas CRISPR-mediated tethering of TET to an active gene promoted the formation of R-loops. The genome-wide distribution of 5hmC and R-loops shows a positive correlation in mouse and human stem cells and overlap in half of all active genes. Moreover, R-loop resolution leads to differential expression of a subset of genes that are involved in crucial events during stem cell proliferation. Altogether, our data reveal that epigenetic reprogramming via TET activity promotes co-transcriptional R-loop formation, disclosing new mechanisms of gene expression regulation.\n\n## Introduction\n\nDuring transcription, the nascent RNA molecule can hybridize with the template DNA and form a DNA:RNA hybrid and a displaced DNA strand. These triple-stranded structures, called R-loops, are physiologically relevant intermediates of several processes, such as immunoglobulin class-switch recombination and gene expression (Garc\u00eda-Muse and Aguilera, 2019). However, nonscheduled or persistent R-loops constitute an important source of DNA damage, namely, DNA double-strand breaks (DSBs) (Garc\u00eda-Muse and Aguilera, 2019). To preserve genome integrity, cells possess diverse mechanisms to prevent the formation of R-loops or resolve them. R-loop formation is restricted by RNA-binding proteins and topoisomerase 1, whereas R-loops are removed by ribonucleases and helicases (reviewed in Garc\u00eda-Muse and Aguilera, 2019). The ribonuclease H enzymes RNase H1 and RNase H2 degrade R-loops by digesting the RNA strand of the DNA:RNA hybrid. DNA and RNA helicases unwind the hybrid and restore the double-stranded DNA (dsDNA) structure. Several helicases unwind R-loops at different stages of the transcription cycle and in distinct physiological contexts (Garc\u00eda-Muse and Aguilera, 2019). For instance, we previously reported that the DEAD-box helicase 23 (DDX23) resolves R-loops formed during transcription elongation to regulate gene expression programs and prevent transcription-dependent DNA damage (Sridhara et al., 2017). Intrinsic features of the transcribed DNA also influence its propensity to form R-loops. The presence of introns, for instance, prevents unscheduled R-loop formation at active genes (Bonnet et al., 2017). An asymmetrical distribution of guanines (G) and cytosines (C) nucleotides in the DNA duplex also influences R-loop propensity, with an excess of Cs in the template DNA strand (positive G:C skew) favoring R-loop formation (Ginno et al., 2013). Moreover, chromatin and DNA features such as histone modifications, DNA-supercoiling, and G-quadruplex structures also affect R-loop establishment (Garc\u00eda-Muse and Aguilera, 2019). R-loops can also drive chromatin modifications. Promoter-proximal R-loops enhance the recruitment of the Tip60\u2013p400 histone acetyltransferase complex and inhibit the binding of polycomb-repressive complex 2 and histone H3 lysine-27 methylation (Chen et al., 2015). R-loops formed over G-rich terminator elements promote histone H3 lysine-9 dimethylation, a repressive mark that reinforces RNA polymerase II pausing during transcription termination (Skourti-Stathaki and Proudfoot, 2014; Ch\u00e9din, 2016; Skourti-Stathaki et al., 2014).\n\nBesides affecting histone modifications, R-loops also act as barriers against DNA methylation spreading into active genes (Ginno et al., 2013; Ginno et al., 2012). DNA methylation, namely, 5-methylcytosine (5mC), results from the covalent addition of a methyl group to the carbon 5 of a C attached to a G through a phosphodiester bond (CpG) (Karpf, 2013). The activity of DNA methyltransferase (DNMT) enzymes makes 5mC widespread across the mammalian genome where it plays major roles in imprinting, retrotransposon silencing, and gene expression (Greenberg and Bourc\u2019his, 2019). More than 70% of all human gene promoters contain stretches of CpG dinucleotides, termed CpG islands (CGIs), whose transcriptional activity is repressed by CpG methylation (Greenberg and Bourc\u2019his, 2019; Weber et al., 2007). R-loops positioned near promoters of active genes maintain CGIs in an unmethylated state (Ginno et al., 2012), likely by reducing the affinity of DNMT1 binding to DNA (Grunseich et al., 2018), or recruiting ten-eleven translocation (TET) methylcytosine dioxygenases (Arab et al., 2019).\n\nThe TET enzyme family members share the ability to oxidize 5mC to 5-hydroxymethylcytosine (5hmC) (Pastor et al., 2013; Tahiliani et al., 2009). 5hmC is a relatively rare DNA modification found across the genome much less frequently than 5mC (Mendonca et al., 2014). Genome-wide, 5hmC is more abundant at regulatory regions near transcription start sites (TSSs), promoters, and exons, consistent with its role in gene expression regulation (Wu et al., 2011). The levels of 5hmC are enriched at active promoter regions, as observed upon activation of neuronal function-related genes in neural progenitors and neurons (Pastor et al., 2013; Hahn et al., 2013). 5hmC has the potential to modify the DNA helix structure by favoring DNA-end breathing motion, a dynamic feature of the protein\u2013DNA complexes thought to control DNA accessibility (Mendonca et al., 2014). Moreover, 5hmC weakens the interaction between DNA and nucleosomal H2A-H2B dimers, facilitating RNA polymerase II elongation, and diminishes the thermodynamic stability of the DNA duplex (Mendonca et al., 2014). While 5mC increases the melting temperature, 5hmC reduces the amount of energy needed to separate the two strands of the DNA duplex (Leavitt et al., 2015; Wanunu et al., 2011). Molecular dynamics simulations revealed that the highest amplitude of GC DNA base-pair fluctuations is observed in the presence of 5hmC, whereas 5mC yielded GC base pairs (bp) with the lower amplitude values (Wanunu et al., 2011). The presence of 5hmC destabilizes GC pairing by alleviating steric constraints through an increase in molecular polarity (Wanunu et al., 2011).\n\nBecause features that destabilize the DNA duplex, such as supercoiling or G-quadruplexes, are known to facilitate nascent RNA annealing with the template DNA strand, we reasoned that 5hmC may favor R-loop formation. Here, we show that 5hmC promotes R-loop formation during in vitro transcription of DNA templates. In vivo, depletion of TET enzymes reduces R-loop levels, whereas targeting the enzyme to an active gene drives R-loop formation. Analysis of genome-wide distribution profiles shows a positive correlation between 5hmC and R-loops in mouse embryonic stem (mES) and in human embryonic kidney 293 (HEK293) cells, with a clear overlap of 5hmC and R-loops in approximately half of all active genes. We also show that 5hmC-rich regions are characterized by increased levels of phosphorylated histone H2AX (\u03b3H2AX), a marker of DNA damage. Finally, by determining the pathways more significantly affected by R-loops formed at 5hmC loci, we disclose novel links between R-loops and gene expression programs of stem cells.\n\n## Results\n\n### Transcription through 5hmC-rich DNA favors R-loop formation\n\nTo assess the impact of cytosine methylation on R-loop formation, we performed in vitro T7 transcription of DNA fragments containing either native or modified cytosine deoxyribonucleotides (dCTPs). We synthesized three distinct DNA transcription templates, each composed of a T7 promoter followed by a 400 bp sequence containing a genomic region prone to form R-loops in vivo (Sridhara et al., 2017; Skourti-Stathaki et al., 2014). Two of these sequences (ACTB P1 and ACTB P2) are from the transcription termination region of the human \u03b2-actin coding gene (ACTB); the third sequence is from the human APOE gene. The DNA templates for the in vitro transcription reactions were generated by PCR-amplification in the presence of dNTPs containing either native C, 5mC, or 5hmC (Figure 1A). Successful incorporation of dCTP variants was confirmed by immunoblotting using specific antibodies against each variant (Figure 1B). The formation of R-loops during the in vitro transcription reactions was inspected by blotting immobilized RNAs with the S9.6 antibody (S9.6 Ab), which binds DNA:RNA hybrids (Figure 1C). To increase the specificity of hybrid detection, all samples were treated with RNase A in high-salt conditions in order to digest all RNA molecules except those engaged in R-loops. The specific detection of DNA:RNA hybrids was confirmed by blotting transcription reaction products previously digested with RNase H (Figure 1C). In agreement with our hypothesis that 5hmC favors R-loops, increased amounts of DNA:RNA hybrids were detected in samples derived from in vitro transcription of 5hmC-rich ACTB P1, ACTB P2, and APOE DNA templates (Figure 1D). To exclude the possibility that our results were biased by an inherent preference of the S9.6 Ab for hybrids containing 5hmC, we performed electrophoretic mobility shift assays (EMSAs) using the S9.6 Ab and DNA:RNA hybrid substrates of the same sequence but containing C, 5mC, or 5hmC. The S9.6 Ab was able to delay the run of the three substrates with similar kinetics, indicating that the Ab equally recognizes DNA:RNA hybrids formed with any of the three C variants (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig1-v2.jpg)\n\n**Figure 1.:** (A) Native or modified deoxyribonucleotides (dCTPs) were incorporated upon PCR amplification into DNA fragments with sequences from the transcription termination region of ACTB (ACTB P1 and ACTB P2) or APOE. (B) Incorporation of dCTP variants confirmed by immunoblotting using specific antibodies against 5-methylcytosine (5mC), 5hmC, and double-stranded DNA (dsDNA). (C) R-loops formed upon in vitro transcription reactions were detected by immunoblotting using the S9.6 antibody. RNase H-treated in vitro transcription reaction products (RH+) serve as negative controls. All data are representative of seven independent experiments with similar results. (D) S9.6 immunoblots were quantified and the R-loop levels normalized against the levels detected in the reaction products of DNA templates containing native C. Data represent the mean and standard deviation (SD) from seven independent experiments. *p<0.05, **p<0.01, and ***p<0.001, two-tailed Student\u2019s t-test. (E) In vitro transcription reaction products of ACTB P2 templates were visualized using atomic force microscopy (AFM). R-loop structures obtained from 5hmC-containing ACTB P2 transcription in the absence (RH-) or presence (RH+) of RNase H are shown. R-loops present in the transcription reaction products of C, 5mC, or 5hmC-containing ACTB P2 templates were counted in a minimum of 80 filaments observed in three individual AFM experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) DNA:RNA hybrids formed through annealing of C, 5-hydroxymethylcytosine (5hmC), or 5-methylcytosine (5mC)-containing ssDNA with the complementary ssRNA. Data are representative of three independent experiments. (B) Electrophoretic mobility shift assay (EMSA) of DNA:RNA hybrids incubated with increasing amounts of the S9.6 Ab in a native polyacrylamide gel. Data are representative of three independent experiments. (C) Quantification of free DNA:RNA hybrids. The graph shows means and SD from three independent experiments.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) RNA concentration obtained from in vitro transcription of DNA templates containing C, 5-hydroxymethylcytosine (5hmC), or 5-methylcytosine (5mC). Data shown are the mean from three independent experiments. (B) Mean and SD of the RNA levels obtained in each reaction normalized to reactions using DNA templates with native cytosines. Data are from three independent experiments.\n\nWe then performed atomic force microscopy (AFM) to directly visualize R-loop structures obtained in the in vitro transcription reactions (Figure 1E). R-loops were identified as previously described (Carrasco-Salas et al., 2019; Klinov et al., 1998). Each individual DNA molecule establishing an R-loop structure in the AFM images was assigned manually. The frequency of these structures formed in the presence of C, 5hmC, or 5mC DNA templates was measured and normalized against the frequency formed in RNase H-treated samples (Figure 1E). In agreement with the hypothesis that transcription of 5hmC-rich DNA templates results in increased R-loop formation, AFM data revealed that R-loop structures are more frequently formed in the presence of 5hmC.\n\nTo investigate if the DNA modification impacts in vitro transcription levels, we measured RNA synthesis from DNA templates containing unmodified C, 5hmC, or 5mC (Figure 1\u2014figure supplement 2). These data show that the T7 polymerase is highly sensitive to DNA modifications since replacing C by either 5hmC or 5mC significantly decreased the transcript levels in vitro. On one side, detecting more R-loops on a lower-transcription levels setting (i.e., 5hmC-rich templates) further strengthens our hypothesis that 5hmC increases R-loop formation. However, we cannot draw any conclusions regarding the impact of 5mC on R-loop formation as a putative effect on R-loop levels could be masked by the significantly altered transcription. To clarify this aspect and further test our model, we continued our study with experiments performed in vivo.\n\n### TET enzymatic activity impacts endogenous R-loop levels\n\nTo test whether the 5hmC DNA modification induces R-loop formation in vivo, we quantified R-loop levels in mES cells after depletion of Tet1, Tet2, and Tet3. Despite the significant reduction in Tet enzymes (Figure 2\u2014figure supplement 1A), the levels of 5hmC were not significantly affected by Tet1 or Tet2 depletion (Figure 2A, Figure 2\u2014figure supplement 1B). In contrast, depletion of Tet3 resulted in a significant loss of 5hmC, an effect that was exacerbated by the simultaneous depletion of the three enzymes (Figure 2A, Figure 2\u2014figure supplement 1B). No significant changes were observed in 5mC levels (Figure 2A, Figure 2\u2014figure supplement 1B). This finding suggests that there is a partial redundancy in the activity of the three Tet enzymes in mES cells. The loss of Tet1 or Tet2 \u2013 but not of Tet3 \u2013 is compensated by the remaining Tets. In agreement with the hypothesis that 5hmC promotes R-loop formation, dot-blot hybridization of total cellular nucleic acids using the S9.6 Ab revealed reduced endogenous R-loop levels in mES cells after depletion of Tet3 and after co-depletion of the three Tet enzymes (Figure 2B, Figure 2\u2014figure supplement 1B). We also measured R-loop levels upon RNAi depletion of the Tet enzymes in NIH-3T3 mouse fibroblasts (Figure 2\u2014figure supplement 2A). As observed in mES cells, a significant reduction of 5hmC, but not 5mC, was obtained upon depletion of Tet3 and of the three Tets in mouse fibroblasts (Figure 2\u2014figure supplement 2B, C). The triple knockdown of the Tet enzymes significantly reduced the global levels of R-loops in mouse fibroblasts, whereas Tet3 depletion in these cells had a minor impact in R-loops (Figure 2\u2014figure supplement 2B and D). This effect was further confirmed by measuring R-loops formed at selected active genes by DNA:RNA immunoprecipitation (DRIP) in mES cells (Figure 2C) and mouse fibroblasts (Figure 2\u2014figure supplement 2E). The DRIP assays confirmed that R-loops are less abundant upon depletion of Tet enzymes. Importantly, simultaneous depletion of the three enzymes did not affect the expression levels of the analyzed genes in mES cells and mouse fibroblasts (Figure 2D, Figure 2\u2014figure supplement 2F). These data suggest that the activity of Tet enzymes promotes the formation of R-loops in the absence of changes in transcription levels.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig2-v2.jpg)\n\n**Figure 2.:** Quantification of 5-hydroxymethylcytosine (5hmC) and 5-methylcytosine (5mC) (A) and R-loops (B) dot blots of Tet1, Tet2, Tet3 single KD, and of Tet1/2/3 triple KD mouse embryonic stem (mES) cells. Dot blots are shown in Figure 2\u2014figure supplement 1B. Data were normalized against dsDNA levels. *p<0.05, **p<0.01, ***p<0.001, two-tailed Student\u2019s t-test. ND, not detected. (C) R-loop levels assessed by DNA:RNA immunoprecipitation (DRIP) in Tet1/2/3 triple KD mES cells. Data were normalized against RNase H-treated samples. *p<0.05, **p<0.01, two-tailed Student\u2019s t-test. (D) Transcription levels of the genes presented in (C) assessed by RT-qPCR. 5hmC/5mC (E) and R-loop (F) levels determined by (h)MeDIP or DRIP at four regions of the APOE gene upon tethering of dCas9-TET1 or dCas9-dTET1 to the last exon of APOE in U-2 OS cells. R-loop data were normalized against RNase H-treated samples. *p<0.05, **p<0.01, two-tailed Student\u2019s t-test. (G) APOE transcription levels upon targeting dCas9-TET1 or dCas9-dTET1 to the last exon of the gene in U-2 OS cells. Data shown are the mean and SD from at least three independent experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Tet1, Tet2, and Tet3 mRNA expression levels in mES cells 48 hr after RNAi depletion of Tet1, Tet2, or Tet3. *p<0.05, **p<0.01, ***p<0.001, two-tailed Student\u2019s t-test. Graph shows the mean and SD from three independent experiments. (B) Dot blot of R-loops, 5hmC, and 5mC in Tet1, Tet2, and Tet3 single KD and in Tet1/2/3 triple KD mES cell extracts. dsDNA was detected after stripping and reprobing of the same membranes. Data are representative of a minimum of three independent experiments.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Tet1, Tet2, and Tet3 mRNA expression levels in mouse fibroblasts 48 hr after RNAi depletion of Tet1, Tet2, or Tet3. **p<0.01, two-tailed Student\u2019s t-test. (B) Dot blot of R-loops, 5-hydroxymethylcytosine (5hmC), and 5-methylcytosine (5mC) in Tet1, Tet2, and Tet3 single KD and in Tet1/2/3 triple KD mouse fibroblast extracts. dsDNA was detected after stripping and reprobing of the same membranes. Data are from three independent experiments. Quantification of the 5hmC, 5mC (C), and R-loops (D) dot blots shown in (B). *p<0.05, two-tailed Student\u2019s t-test. ND, not detected. (E) DNA:RNA immunoprecipitations (DRIPs) performed in Tet1/2/3 triple KD mouse fibroblasts to assess the R-loop levels formed in the indicated genes. R-loop levels were normalized to the corresponding RNase H-treated sample. *p<0.05, **p<0.01, ***p<0.001, two-tailed Student\u2019s t-test. (F) Transcription levels of the genes presented in (E) in control and Tet1/2/3 triple KD mouse fibroblasts. All graphs show the mean and SD from a minimum of three independent experiments.\n\nNext, we employed a modified CRISPR-based system to target TET enzymatic activity to specific loci (Liu et al., 2016). We used a pool of three specific guide RNAs (gRNAs) to direct a catalytically inactive Cas9 nuclease fused to the catalytic domain of TET1 (dCas9-TET1) to the last exon of the APOE gene in human osteosarcoma (U-2 OS) cells. As a control, dCas9 was fused to an inactive mutant version of the TET1 catalytic domain (dCas9-dTET1). Local enrichment of 5hmC following dCas9-TET1 targeting at the APOE locus was confirmed by DNA immunoprecipitation using antibodies specific for 5mC or 5hmC-modified nucleotides (Figure 2E). The highest levels of 5hmC were detected at the gene segment adjacent to the gRNAs-target region. R-loop levels detected by DRIP peaked significantly at the gRNAs-target and in the downstream region, upon tethering of dCas9-TET1 but not of dCas9-dTET1 (Figure 2F). These differences were not caused by changes in APOE gene expression levels (Figure 2G). The increased levels of R-loops detected far from the dCas9-TET1 target site are consistent with the view that R-loops have the capacity to extend from their inception locus. Accordingly, R-loops can be up to several hundred base pairs long and may extend over the entire gene body of shorter and/or highly transcribed genes (Sanz et al., 2016; Chen et al., 2017). Collectively, these data suggest that editing 5hmC density by changing the expression levels or the genomic distribution of TET enzymes influences R-loop formation in cells.\n\n### 5hmC and R-loops overlap genome-wide at transcriptionally active genes\n\nTo further inspect the link between 5hmC and R-loops, we performed computational analyses of 5hmC antibody-based DNA immunoprecipitation (hMeDIP-seq) and DNA:RNA immunoprecipitation (DRIP-seq) datasets from mES and HEK293 cells (Chen et al., 2015; Matarese et al., 2011; Jin et al., 2014; Nadel et al., 2015). To assess individual genome-wide distribution profiles, R-loops density was probed over fixed windows of \u00b110 kbp around the 5hmC peaks (Figure 3A, Figure 3\u2014figure supplement 1A). The resulting metagene plots and heatmaps revealed a marked overlap between 5hmC-rich loci and R-loops. This overlap is also evident in the individual distribution profiles of 5hmC and R-loops along two long regions of chromosome 17 (Figure 3\u2014figure supplement 2). Despite the distinct distribution patterns of 5hmC (well-defined peaks) and R-loops (reads spanning genomic regions with highly heterogeneous lengths, ranging between a few dozen to over 1 kb Chen et al., 2015), we could obtain a statistically significant Pearson correlation coefficient between both (p<0.05) (Figure 3B, Figure 3\u2014figure supplement 1B). Furthermore, approximately half of all R-loops detected genome-wide occurred at 5hmC-containing loci (Figure 3C, Figure 3\u2014figure supplement 1C). Notably, we observed an overlap between 5hmC and R-loops in 6839 (51%) out of the 13,288 actively expressed genes (Figure 3D), a feature illustrated in the individual profiles of mouse and human genes (Figure 3E, Figure 3\u2014figure supplement 1D). Metagene profiles revealed very similar patterns of intragenic distribution, with both 5hmC and R-loops increasing towards the transcription termination site (TTS), where they reached maximum levels (Figure 3F). At the TSS, however, the 5hmC DNA modification was mostly absent, whereas R-loops were abundant. The detection of R-loop peaks at TSS regions is in agreement with previous studies (Ginno et al., 2013; Ginno et al., 2012) and implies that 5hmC is not necessary for co-transcriptional DNA:RNA hybridization and R-loop formation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig3-v2.jpg)\n\n**Figure 3.:** (A) Metagene and heatmap profiles of 5hmC and R-loops probed over fixed windows of \u00b110 kbp around the 5hmC peaks in expressed genes. (B) Pearson correlation coefficient between 5hmC and R-loops distribution within active genes (p<0.05). (C) Number of loci displaying 5hmC, R-loops, and overlapping 5hmC and R-loops. *Permutation analysis, p<0.05. (D) Percentage of active genes displaying overlapping 5hmC and R-loops. (E) Individual profiles of 5hmC and R-loop distribution along the Acadl, Cr1l, and Srr genes. Density signals are represented as reads per kilobase (RPKMs). (F) Metagene profiles of 5hmC and R-loops distribution in active genes. The gene body region was scaled to 60 equally sized bins, and \u00b110 kbp gene-flanking regions were averaged in 200 bp windows. TSS: transcription start site; TTS: transcription termination site. Density signals are represented as RPKMs, and error bars (gray) represent standard error of the mean. (G) Metagene profiles of genes showing transcription readthrough in wild-type and TET1 KO human ES cells. All gene regions were scaled to 2000 bp (gene body) and divided in equal bins of 100 bp. 1000 bp regions averaged in 100 bp bins were added upstream the TSS and downstream the TTS region. *p<0.05, Mann\u2013Whitney rank test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Metagene and heatmap profiles of 5hmC and R-loops probed over fixed windows \u00b1 10 kbp around the 5hmC peaks in expressed genes. (B) Pearson correlation coefficient between 5hmC and R-loops distribution within active genes (p<0.05). (C) Number of loci displaying 5hmC, R-loops, and overlapping 5hmC and R-loops. *Permutation analysis, p<0.05. (D) Individual profiles of 5hmC and R-loop distribution along the EME2, HEXIM1, and RPL36 genes. Density signals are represented as reads per kilobase (RPKMs).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Individual profiles of 5hmC and R-loops along two long chromosomal regions. Density signals are represented as reads per kilobase (RPKMs) and were uploaded in UCSC Genome Browser (http://genome-euro.ucsc.edu/).\n\nThe observed overlap between 5hmC and R-loop peaks at the TTS raises the hypothesis that Tet activity may be involved in transcription termination by directing the formation of R-loops. Defects in transcription termination result in the accumulation of readthrough transcripts extending beyond the TTS (Nojima and Proudfoot, 2022). In agreement with a role in transcription termination, TET1-KO human ES cells displayed significantly higher levels of readthrough transcripts genome wide when compared to wt human ES cells (Figure 3G).\n\nWe then sought to simultaneously detect 5hmC and R-loops at the same loci in individual mES cells. We performed proximity ligation assays (PLAs) using S9.6 and anti-5hmC antibodies (Figure 4A). Control reactions without primary antibodies and with each antibody alone did not produce a significant signal. Staining of mES cells with S9.6 and anti-5hmC antibodies gave rise to a robust PLA signal scattered throughout the nucleus, which was mostly lost after digestion of cells with RNase H (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig4-v2.jpg)\n\n**Figure 4.:** (A) 5hmC and R-loops proximity ligation assay (PLA) foci in mES cells. DAPI was added to the mounting medium to stain DNA. Scale bars: 10 \u03bcm. Data are representative of at least three independent experiments with similar results. (B) Boxplot showing 5hmC/R-loops PLA foci per nucleus. Horizontal solid lines represent the median values, and whiskers correspond to the 10 and 90 percentiles. A minimum of 300 cells from at least three independent experiments was scored for each experimental condition. ****p<0.0001, Mann\u2013Whitney rank test.\n\n### 5hmC-rich loci are prone to DNA damage\n\nDisruption of R-loop homeostasis is a well-described source of genomic instability (Garc\u00eda-Muse and Aguilera, 2019). For instance, co-transcriptional R-loops increase conflicts between transcription and replication machineries by creating an additional barrier to fork progression (Hamperl et al., 2017; Helmrich et al., 2013). Such conflicts may cause DNA damage, including DSBs, which can be revealed using antibodies against \u03b3H2AX. Indeed, R-loops overlap with \u03b3H2AX-decorated chromatin at different locations such as TTS (Hatchi et al., 2015). We then sought to investigate if 5hmC creates conditions for DNA damage by promoting R-loop formation. We analyzed the genomic distribution of \u03b3H2AX by interrogating chromatin immunoprecipitation followed by sequencing (ChIP-seq) data from HEK293 cells (Bunch et al., 2015). The individual distribution profiles of \u03b3H2AX were analyzed over fixed windows of \u00b110 kbp around the 5hmC peaks detected in the same cells (Figure 5A). The resulting metagene plots revealed marked enrichment of \u03b3H2AX at 5hmC-rich loci. The genic distribution of 5hmC and R-loops along three different genes further showed co-localization of the two marks with \u03b3H2AX (Figure 5B). Analysis of \u03b3H2AX and 5hmC distribution within active genes revealed a low yet statistically significant Pearson correlation coefficient (p<0.05) (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig5-v2.jpg)\n\n**Figure 5.:** (A) Metagene profiles of 5hmC and \u0263H2AX probed over fixed windows of \u00b110 kbp around the 5hmC peaks in expressed genes of HEK293 cells. (B) Individual profiles of 5hmC, R-loops and \u0263H2AX distribution along the EME2, HEXIM1, and RPL36 genes. Density signals are represented as reads per kilobase (RPKMs). (C) Pearson correlation coefficient between 5hmC and \u0263H2AX at active genes (p<0.05).\n\n### R-loops formed at 5hmC-rich regions impact gene expression in mES cells\n\nTo gather insights into the functional impact of R-loops at 5hmC-rich DNA regions, we analyzed whole-transcriptome (RNA-seq) of mES cells overexpressing RNase H, a condition resulting in genome-wide loss of R-loops (Chen et al., 2015). Amongst the genes that were differentially expressed, we found that 64 and 48% of all downregulated and upregulated genes, respectively, displayed R-loops overlapping with 5hmC (Figure 6A). Pathway analysis revealed that these differentially expressed genes (Supplementary file 1) are involved in the mechanistic target of rapamycin (mTOR) (downregulated) and MYC (upregulated) signaling pathways (Figure 6B and C). mTOR and MYC are known to play opposite roles in establishing diapause, the temporary suspension of embryonic development driven by adverse environmental conditions (Fenelon et al., 2014), a stage that ES cells mimic when cultured in vitro. mTOR, a major nutrient sensor, acts as a rheostat during ES cell differentiation and reductions in mTOR activity trigger diapause (Bulut-Karslioglu et al., 2016). While overexpression of RNase H in mES cells did not reveal any significant changes in the cell cycle progression (Figure 6\u2014figure supplement 1A and B), we observed a significantly decreased expression of genes related to pluripotency (Pou5f1) and germ layer commitment (Sox17, Sox6, Dll1) pathways (Figure 6D). These data support the view that R-loops formed upon TET epigenetic reprogramming regulate gene expression in stem cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig6-v2.jpg)\n\n**Figure 6.:** (A) Volcano plot displaying the differentially expressed genes in mouse embryonic stem (mES) cells upon RNase H overexpression. Of all downregulated and upregulated genes, 64 and 48% displayed R-loops overlapping with 5hmC, respectively. (B, C) Pathway analysis of the genes that have R-loops overlapping with 5hmC and are differentially expressed upon RNase H overexpression. Shown are the significantly downregulated (B) and upregulated (C) hallmark gene sets from MSigDB. False discovery rate (FDR), p<0.001. (D) Transcription levels of pluripotency and germ layer commitment genes in mES cells overexpressing RNase H. *p<0.05, two-tailed Student\u2019s t-test. Means and SDs are from five independent experiments.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69476/elife-69476-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Flow cytometry analysis of propidium iodide-treated mES cells with ectopic expression of either GFP (control) or GFP-tagged RNase H for 24 or 48 hr. Data are representative of five independent experiments. (B) Percentage of control and RNase H-overexpressing mES cells at each cell cycle stage. Means and SDs are from five independent experiments.\n\n## Discussion\n\nIn this study, we probed the hypothesis that 5hmC facilitates the co-transcriptional formation of noncanonical DNA secondary structures, known as R-loops. Data from in vitro transcription reactions and AFM provide direct evidence showing that transcription through 5hmC-rich DNA favors R-loop formation. By depleting TET enzymes in mES cells and fibroblasts, we demonstrate that TET activity increases cellular R-loop levels. Notably, the diminished levels of R-loops observed in TET-depleted cells did not result from impaired transcription, suggesting that 5hmC directly promotes R-loop formation. In agreement, tethering TET enzymes to a specific genomic locus using a CRISPR/Cas9-based system increases the levels of R-loops at the target locus.\n\nAs 5hmC is mostly absent from the TSS, other chromatin and DNA features (e.g., histone modifications, DNA-supercoiling or G-quadruplex structures; Garc\u00eda-Muse and Aguilera, 2019) known to induce R-loop formation are likely to operate in these regions. In contrast, the robust overlap between R-loops and 5hmC at the TTS of active genes suggests a putative causal link. Mechanistically, 5hmC may impact R-loop formation by either destabilizing the DNA duplex or altering RNA polymerase II elongation rate. Indeed, 5hmC modifies the DNA helix structure by favoring DNA-end breathing motion, diminishes the thermodynamic stability of the DNA duplex, and destabilizes GC pairing (Mendonca et al., 2014; Wanunu et al., 2011). It also weakens the interaction between DNA and nucleosomal histones (Mendonca et al., 2014), which is thought to accelerate RNA polymerase II elongation but can also facilitate nascent RNA annealing with the template DNA strand favoring R-loop formation. Future studies will clarify which one of these mechanisms, if not all, contribute to the observed impact of 5hmC on R-loops.\n\nActing as a promoter of R-loops, well-established drivers of DNA damage (Garc\u00eda-Muse and Aguilera, 2019), 5hmC may indirectly harm genome integrity. Indeed, we found that 5hmC-rich loci are hotspots for DNA damage genome-wide. While such unscheduled R-loops formed at 5hmC-rich loci may threaten genomic integrity, regulated formation of R-loops at specific 5hmC-decorated loci may exert important regulatory roles. Indeed, R-loops play diverse physiological functions (Garc\u00eda-Muse and Aguilera, 2019), such as the regulation of gene expression. Our findings that genome-wide 5hmC and R-loops overlap robustly at the TTS of active genes and that TET-deficiency drives transcription readthrough support a model whereby TET enzymes act upstream of R-loop formation during transcription termination (Skourti-Stathaki et al., 2011).\n\nTETs may play dual roles as both oncogenic and tumour suppressor genes, with the former arising as the consequence of altered expression levels or function, as observed in several cancers, such as triple-negative breast cancer (Bray et al., 2021; Good et al., 2018). In addition to altering the expression levels of tumour suppressors or oncogenes (Bray et al., 2021), our findings suggest that TET-driven changes in the DNA methylation landscape may as well drive transcription-dependent genome damaging events that could facilitate cancer development and progression. In agreement with this view, a TET1 isoform that lacks regulatory domains, including its DNA-binding domain, but retains its catalytic activity, is enriched in cancer cells (Good et al., 2017), suggesting that mistargeted TET activity may drive oncogenic events, such as genomic instability. Conversely, TET activity deposits 5hmC at DNA damage sites induced by aphidicolin or microirradiation in HeLa cells and prevents chromosome segregation defects in response to replication stress (Kafer et al., 2016). While the role that TETs play during carcinogenesis is not yet clear, the impact of 5hmC on stem cell differentiation and development has been extensively studied (Ficz et al., 2011). By driving the developmental DNA methylome reprogramming, TETs carry out numerous functions related to early developmental processes. Here, we disclose a putative new role for R-loops as mediators of 5hmC-driven gene expression programs in stem cells. Our gene ontology analysis revealed that R-loops formed at 5hmC-rich regions impact the expression of genes involved in establishing diapause. This stage of temporary suspension of embryonic development is triggered by adverse environmental conditions (Fenelon et al., 2014). Accordingly, changes in the activity of mTOR, a major nutrient sensor, control ES cell commitment to trigger diapause (Bulut-Karslioglu et al., 2016). The mTOR signaling pathway was significantly downregulated upon global R-loop suppression by RNase H. Conversely, MYC targets, which prevent ES cells from entering the state of dormancy that characterizes diapause (Scognamiglio et al., 2016), were amongst the genes more significantly upregulated upon RNase H overexpression in mES cells. These cells also displayed reduced expression levels of genes related to pluripotency (Pou5f1) and germ layer commitment (Sox17, Sox6, Dll1) pathways. Whether the controlled 5hmC-driven formation of R-loops at specific genes drives stem cells fate and how do TET enzymes capture the environmental cues to target R-loop formation at selected genes are important questions that emerge from our findings. Our study sets the ground for further research aimed at investigating the role of R-loops in ES cells.\n\n## Materials and methods\n\n### Cell lines and culture conditions\n\nE14TG2a (E14) mES cells were provided by Domingos Henrique (Instituto de Medicina Molecular Jo\u00e3o Lobo Antunes) and were a gift from Austin Smith (University of Exeter, UK) (Smith and Hooper, 1987). 129S4/SvJae (J1) mES cells were kindly provided by Joana Marques (Medical School, University of Porto). Cells were grown as monolayers on 0.1% gelatine (410875000, Acros Organics)-coated dishes using Glasgow modified Eagle\u2019s medium (GMEM) (21710-025, Gibco), supplemented with 1% (v/v) 200 mM L-glutamine (25030-024, Thermo Scientific), 1% (v/v) 100 mM sodium pyruvate (11360-039, Gibco), 1% (v/v) 100\u00d7 nonessential amino acids solution (11140-035, Gibco), 0.1% (v/v) 0.1 M 2-mercaptoethanol (M7522, Sigma-Aldrich), 1% (v/v) penicillin-streptomycin solution (15070-063, Gibco), and 10% (v/v) heat-inactivated, ES-qualified FBS (SH30070, Cytiva). Medium was filtered through a 0,22 \u03bcm filter. Home-produced leukemia inhibitory factor (LIF) was added to the medium upon plating, at 6 \u00d7 10\u20132 ng/\u03bcL. U-2 OS osteosarcoma, HEK293T embryonic kidney cells, and NIH-3T3 mouse fibroblasts were purchased from ATCC. Cells were grown as monolayers in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) (21969-035, Gibco), supplemented with 1% (v/v) 200 mM L-glutamine (25030-024, Thermo Scientific), 1% (v/v) penicillin-streptomycin solution (15070-063, Gibco), and 10% (v/v) FBS (10270106, Gibco). All cells were maintained at 37\u00b0C in a humidified atmosphere with 5% CO2. Cell lines were authenticated using the STR profiling service provided by ATCC and routinely tested negative for mycoplasma contamination using the Mycoplasma Detection Kit (InvivoGen, San Diego, CA).\n\n### Tet knockdown\n\nFor each Tet, a mixture of four siRNAs provided as a single reagent was transfected using Lipofectamine RNAiMAX Transfection Reagent (13778150, Invitrogen) for 48 hr. All siRNAs were purchased as siGENOME SMARTPool from Dharmacon: mouse Tet1 (M-062861-01), mouse Tet2 (M-058965-01), and mouse Tet3 (M-054156-01). A siRNA targeting the firefly luciferase was used as control. For the Tet1/2/3 triple KD, the three siRNA reagents were combined in the same RNA interference experiment. Tet3 knockdown was performed in J1 mES cells stably expressing a doxycycline-inducible short hairpin RNA targeting Tet3 (Supplementary file 2A). Cells were treated for 48 hr with 2 \u03bcg/mL doxycycline (D9891, Sigma-Aldrich).\n\n### RNA isolation and quantitative RT-PCR\n\nTotal RNA was isolated using TRIzol reagent (15596018, Invitrogen). cDNA was prepared through reverse transcriptase activity (MB125, NZYTech). RT-qPCR was performed in the ViiA 7 Real-Time PCR system (Applied Biosystems) using PowerUp SYBR Green Master Mix (A25918, Applied Biosystems). Relative RNA expression was estimated as follows: 2(Ct reference - Ct sample), where Ct reference and Ct sample are mean threshold cycles of RT-qPCR done in duplicate for U6 snRNA or Gapdh mRNA and for the gene of interest, respectively. Primer sequences are presented in Supplementary file 2B.\n\n### Dot blot of genomic R-loops, 5mC, and 5hmC\n\nCells were lysed in lysis buffer (100 mM NaCl, 10 mM Tris pH 8.0, 25 mM EDTA pH 8.0, 0,5% SDS, 50 \u03bcg/mL Proteinase K) overnight at 37\u00b0C. Nucleic acids were extracted using standard phenol-chloroform extraction protocol and resuspended in DNase/RNase-free water. Nucleic acids were then fragmented using a restriction enzyme cocktail (20 U each of EcoRI, BamHI, HindIII, BsrgI, and XhoI). Half of the sample was digested with 40 U RNase H (MB085, NZYTech) for 48 hr at 37\u00b0C to be used as a negative control in R-loops blotting. Digested nucleic acids were cleaned with standard phenol-chloroform extraction and resuspended in DNase/RNase-free water. Nucleic acids samples were quantified in a NanoDrop 2000 spectrophotometer (Thermo Scientific), and equal amounts of DNA were deposited into a positively charged nylon membrane (RPN203B, GE Healthcare). Membranes were UV-crosslinked using UV Stratalinker 2400 (Stratagene), blocked in 5% (m/v) milk in PBSt (PBS 1\u00d7 containing 0.05% [v/v] Tween 20) for 1 hr at room temperature, and immunoblotted with specific antibodies. For the loading control, membranes were stripped in 0.5% SDS for 1 hr at 60\u00b0C, followed by blocking and re-probing. Details of the antibodies used are included in Supplementary file 2C.\n\n### Proximity ligation assay (PLA)\n\nE14 mES cells were grown on coverslips and fixed/permeabilized with methanol for 10 min on ice, followed by 1 min acetone on ice. Cells were then incubated with primary antibodies for 1 hr at 37\u00b0C, followed by a pre-mixed solution of PLA probe anti-mouse minus (DUO92004, Sigma-Aldrich) and PLA probe anti-rabbit plus (DUO92002, Sigma-Aldrich) for 1 hr at 37\u00b0C. Localized rolling circle amplification was performed using Detection Reagents Red (DUO92008, Sigma-Aldrich), according to the manufacturer\u2019s instructions. Slides were mounted in 1:1000 DAPI in Vectashield. For the RNase H control, fixed cells were treated with 3 U/\u03bcL RNase H (MB085, NZYTech) for 1 hr at 37\u00b0C prior to incubation with the antibodies. Images were acquired using the Point Scanning Confocal Microscope Zeiss LSM 880, 63\u00d7/1.4 oil immersion, with stacking acquisition and generation of maximum intensity projection images. PLA foci per nucleus were quantified using ImageJ. Details of the antibodies used are mentioned in Supplementary file 2C.\n\n### g-Blocks PCR\n\nDesigned g-blocks were ordered from IDT (Supplementary file 2D), and PCR-amplified using Phusion High-Fidelity DNA Polymerase (M0530S, NEB), according to the manufacturer\u2019s instructions. M13 primers were used to amplify all fragments (Supplementary file 2B) in the presence of dNTP mixes containing native (MB08701, NZYTech), methylated (D1030, Zymo Research), or hydroxymethylated (D1040, Zymo Research) cytosines. Efficient incorporation of modified dCTPs was confirmed through immunoblotting with specific antibodies. Details of the antibodies used are mentioned in Supplementary file 2C.\n\n### In vitro transcription\n\nPCR products were subject to in vitro transcription using the HiScribe T7 High Yield RNA Synthesis Kit (E2040S, NEB), which relies on the T7 RNA polymerase to initiate transcription from a T7 promoter sequence (present in our fragments). Reactions were performed for 2 hr at 37\u00b0C, using 1 \u03bcg of DNA as template, according to the manufacturer\u2019s instructions. The resulting RNA was column-purified with NucleoSpin RNA isolation kit (740955.250, Macherey-Nagel) and quantified in a NanoDrop 2000 spectrophotometer (Thermo Scientific).\n\n### Dot blot of R-loops formed in in vitro\n\nHalf of each in vitro transcription product was treated with 10 U RNase H (MB085, NZYTech) at 37\u00b0C overnight to serve as negative control. Then, all samples were treated with 0.05 U RNase A (10109142001, Roche) at 350 mM salt concentration for 15 min at 37\u00b0C and ran on agarose gel. Nucleic acids were transferred overnight to a nylon membrane through capillary transfer. The membrane was then UV-crosslinked twice, blocked in 5% milk in PBSt for 1 hr at room temperature, and incubated with the primary antibody at 4\u00b0C overnight. Signal quantification was performed using ImageJ. Details of the antibodies used are included in Supplementary file 2C.\n\n### Atomic force microscopy\n\nRNase A-treated in vitro transcription products, treated or not with RNase H, were purified through phenol-chloroform extraction method and resuspended in DNase/RNase-free water. DNA solution was diluted 1:10 in Sigma ultrapure water (with final 10 mM MgCl2) and briefly mixed to ensure even dispersal in solution. A 10 \u03bcL droplet was deposited at the center of a freshly cleaved mica disc, ensuring that the pipette tip did not contact the mica substrate. The solution was let to adsorb on mica surface for 1\u20132 min to ensure adequate coverage. The mica surface was carefully rinsed with Sigma ultrapure water, so that excess of poorly bound DNA to mica is removed from the mica substrate. Afterward, the mica substrate was dried under a gentle stream of argon gas for approximately 2 min, making sure that any excess water is removed. DNA imaging was performed using a JPK Nanowizard IV atomic force microscope, mounted on a Zeiss Axiovert 200 inverted optical microscope. Measurements were carried out in tapping mode using commercially available ACT cantilevers (AppNano). After selecting a region of interest, the DNA was scanned in air, with scan rates between 0.5 and 0.9 Hz. The setpoint selected was close to 0.3 V. Several images from different areas of the same sample were performed and at least three independent samples for each condition were imaged. All images were of 512 \u2009\u00d7\u2009 512 pixels and analyzed with JPK data processing software.\n\n### CRISPR-assisted 5mC/5hmC genome editing\n\nLentivirus containing dCas9-TET1 (#84475, Addgene) or dCas9-dTET1 (#84479, Addgene) coding plasmids, as well as one out of three gRNAs (gRNA_1, 2, and 3) coding plasmids designed for the APOE last exon, were produced in HEK293T cells co-transfected with the \u03948.9 and VSV-g plasmids using Lipofectamine 3000 Transfection Reagent (L3000015, Invitrogen). After 48 hr, cell culture supernatant was collected and filtered through a 0.45 \u03bcm filter. Lentivirus were collected through ultracentrifugation (25,000 rpm, 3 hr, 4\u00b0C) using an SW-41Ti rotor in a Beckman XL-90 ultracentrifuge. Virus were resuspended in PBS 1\u00d7 and stored at \u201380\u00b0C. For infection, a pool of lentivirus containing dCas9-TET1 or dCas9-dTET1, as well as gRNA_1, 2, or 3 coding plasmids, was used to infect seeded U-2 OS cells. After 24 hr, antibiotic selection was performed with 1.5 \u03bcg/mL puromycin, and infection proceeded for more 48 hr. 3 days post-infection, cells were harvested and genomic DNA was extracted for subsequent protocols.\n\n### DNA:RNA immunoprecipitation (DRIP)\n\nCells were collected and lysed in 100 mM NaCl, 10 mM Tris pH 8.0, 25 mM EDTA, 0.5% SDS, 50 \u03bcg/mL Proteinase K overnight at 37\u00b0C. Nucleic acids were extracted using standard phenol-chloroform extraction protocol and resuspended in DNase/RNase-free water. Nucleic acids were then fragmented using a restriction enzyme cocktail (20 U each of EcoRI, BamHI, HindIII, BsrgI, and XhoI), and 10% of the digested sample was kept aside to use later as input. Half of the remaining volume was digested with 40 U RNase H (MB085, NZYTech) to serve as negative control, for 72 hr at 37\u00b0C. Digested nucleic acids were cleaned with standard phenol-chloroform extraction and resuspended in DNase/RNase-free water. DNA:RNA hybrids were immunoprecipitated from total nucleic acids using 5 \u00b5g of S9.6 antibody (MABE1095, Merck Millipore) in binding buffer (10 mM Na2HPO4 pH 7.0, 140 mM NaCl, 0.05% Triton X-100), overnight at 4\u00b0C. 50 \u00b5L protein G magnetic beads (10004D, Invitrogen) were used to pull down the immune complexes at 4\u00b0C for 2\u20133 hr. Isolated complexes were washed five times (for 1 min on ice) with binding buffer and once with Tris-EDTA (TE) buffer (10 mM Tris pH 8.1, 1 mM EDTA). Elution was performed in two steps, for 15 min at 55\u00b0C each, using elution buffer (50 mM Tris pH 8.0, 10 mM EDTA, 0.5% SDS, 60 \u00b5g/mL Proteinase K). The relative occupancy of DNA:RNA hybrids was estimated by RT-qPCR as follows: 2(Ct Input\u2212Ct IP), where Ct Input and Ct IP are mean threshold cycles of RT-qPCR done in duplicate for input samples and specific immunoprecipitations, respectively. Data were normalized against the corresponding RNase H-treated samples and plotted as absolute numbers or as fold change over control. Primer sequences are shown in Supplementary file 2B.\n\n### 5-(Hydroxy)methylated DNA immunoprecipitation ((h)MeDIP)\n\nCells were collected and lysed in 100 mM NaCl, 10 mM Tris pH 8.0, 25 mM EDTA, 0.5% SDS, 50 \u03bcg/mL Proteinase K overnight at 37\u00b0C. Samples were sonicated with four pulses of 15 s at 10 mA intensity using a Soniprep150 sonicator (keeping tubes for at least 1 min on ice between pulses). Fragmented nucleic acids were cleaned with standard phenol-chloroform extraction protocol and resuspended in DNase/RNase-free water. 10% of sample was kept aside to use later as input. The remaining volume was denatured by boiling the samples at 100\u00b0C for 10 min, followed by immediate chilling on ice and quick spin. Samples were divided in half, and 5 \u00b5g of anti-5mC antibody (61255, Active Motif) or 5 \u00b5g of anti-5hmC antibody (39791, Active Motif) were used to immunoprecipitate 5mC and 5hmC, respectively, in binding buffer (10 mM Na2HPO4 pH 7.0, 140 mM NaCl, 0.05% Triton X-100), overnight at 4\u00b0C. 50 \u00b5L protein G magnetic beads (10004D, Invitrogen) were used to pull down the immune complexes at 4\u00b0C for 2\u20133 hr. Isolated complexes were washed five times (for 1 min on ice) with binding buffer and once with TE buffer (10 mM Tris pH 8.1, 1 mM EDTA). Elution was performed in two steps, for 15 min at 55\u00b0C each, using elution buffer (50 mM Tris pH 8.0, 10 mM EDTA, 0.5% SDS, 60 \u00b5g/mL Proteinase K). The relative occupancy of 5mC and 5hmC was estimated by RT-qPCR as follows: 2(Ct Input\u2212Ct IP), where Ct Input and Ct IP are mean threshold cycles of RT-qPCR done in duplicate for input samples and specific immunoprecipitations, respectively. Primer sequences are presented in Supplementary file 2B.\n\n### Cell cycle analysis\n\npEGFP-N1 (GFP coding plasmid used as control) was purchased from Addgene, and pEGFP-RNaseH1 (GFP-tagged RNase H1 coding plasmid) was kindly provided by Robert J. Crouch (NIH, USA). Seeded mES cells were transfected with GFP (control) or GFP-tagged RNase H coding plasmids using Lipofectamine 3000 Transfection Reagent (L3000015, Invitrogen). 24 or 48 hr later, cells were trypsinized and pelleted by centrifugation at 500 \u00d7 g for 5 min. Cells were fixed in cold 1% PFA for 20 min at 4\u00b0C, followed by permeabilization in 70% ethanol for 1 hr at 4\u00b0C. Cells were then treated with 25 \u2009\u03bcg/mL RNase A (10109142001, Roche) in PBS 1\u00d7 at 37\u00b0C for 20 min, followed by staining with 20 \u2009\u03bcg/mL propidium iodide (P4864, Sigma-Aldrich) in PBS 1\u00d7 for 10 \u2009min at 4\u00b0C. Flow cytometry was performed on a BD Accuri C6 (BD Biosciences), and data were analyzed using FlowJo software.\n\n### Electrophoretic mobility shift assay (EMSA)\n\nDNA:RNA hybrids formed with either C-, 5hmC-, or 5mC-containing DNA were obtained by incubating ssDNA with the complementary ssRNA in annealing buffer (100 mM KAc, 30 mM HEPES pH 7.5). Native and C-modified oligonucleotides were ordered from IDT (Supplementary file 2E). Hybrid formation was confirmed in a native polyacrylamide gel. Increasing amounts of S9.6 antibody (MABE1095, Merck Millipore) were added to the DNA:RNA hybrids, and the complexes were ran in a native polyacrylamide gel to assess the S9.6 capacity to bind hybrids containing each of the three C variants. The amount of free probe was quantified using ImageJ.\n\n### Multi-omics data\n\nHigh-throughput sequencing (HTS) data for mES cells and HEK293 cells were gathered from GEO archive: transcriptome of mES cells (GSE67583); R-loops in mES cells (GSE67581); 5hmC in mES cells (GSE31343); \u0263H2AX in mES cells (GSE69140); active transcription in HEK293 (GRO-seq, GSE51633); R-loops in HEK293 (DRIP-seq, GSE68948); 5hmC modification in HEK293 (hMeDIP-seq, GSE44036); \u0263H2AX (ChIP-seq, GSE75170). Transcriptome profiles of mES cells overexpressing RNase H were obtained from GSE67583. The quality of HTS data was assessed with FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/).\n\n### 5hmC, R-loop, and \u0263H2AX genome-wide characterization\n\nThe HTS datasets produced by immunoprecipitation (DRIP-seq, ChIP-seq, and hMeDIP-seq) were analyzed through the same workflow. First, the reads were aligned to the reference mouse and human genome (mm10 and GRCh38/hg38 assemblies, respectively) with Bowtie (Langmead et al., 2009), and filtering for uniquely aligned reads. Enriched regions were identified relative to the input samples using MACS (Zhang et al., 2008), with a false discovery rate of 0.05. Finally, enriched regions were assigned to annotated genes, including a 4-kilobase region upstream the TSS and downstream the TTS. Gene annotations were obtained from mouse and human GENCODE annotations (M11 and v23 versions, respectively) and merged into a single transcript model per gene using BEDTools (Quinlan and Hall, 2010). For individual and metaprofiles, uniquely mapped reads were extended in the 3\u2032 direction to reach 150 nt with the Pyicos (Althammer et al., 2011). Individual profiles were produced using a 20 bp window. For the metaprofiles centered around 5hmC peaks, 5hmc-enriched regions were aligned by the peak summit (maximum of the peak) and the read density for the flanking 10 kbp were averaged in a 200 bp window. For the metagene profiles, the gene body region was scaled to 60 equally sized bins and \u00b110 kbp gene-flanking regions were averaged in 200 bp windows. All profiles were plotted as normalized reads per kilobase per million mapped reads (RPKMs). A set of in-house scripts for data processing and graphical visualization were written in bash and in the R environmental language (https://www.r-project.org/; R Core Team, 2018). SAMtools (Li et al., 2009) and BEDTools were used for alignment manipulation, filtering steps, file format conversion, and comparison of genomic features. Statistical significance of the overlap between 5hmC and R-loops was assessed with enriched regions and permutation analysis. Briefly, random 5hmC and R-loops-enriched regions were generated 1000 times from annotated genes using the shuffle BEDTools function (maintaining the number and length of the originally datasets). The p-value was determined as the frequency of overlapping regions between the random datasets as extreme as the observed.\n\n### Transcriptome analysis\n\nExpression levels (transcripts per million [TPMs]) from RNA-seq and GRO-seq datasets were obtained using Kallisto (Bray et al., 2016), where reads were pseudo-aligned to mouse and human GENCODE transcriptomes (M11 and v23, respectively). Transcriptionally active genes for 5hmC and R-loops annotation were defined as those with expression levels higher than the 25th percentile. Differential expression in mES cells overexpressing RNase H was assessed using edgeR (v3.20.9) and limma (v3.34.9) R packages (Robinson et al., 2010; Ritchie et al., 2015). Briefly, sample comparison was performed using voom transformed values, linear modeling, and moderated t-test as implemented in limma R package, selecting significantly differentially expressed genes with B-statistics higher than zero. Significantly enriched pathways of up- and downregulated genes (with overlapping R-loops/5hmC regions) were selected using Fisher\u2019s exact test and all expressed genes as background gene list. Evaluated pathways were obtained from the hallmark gene sets of Molecular Signatures Database (MSigDB) (Liberzon et al., 2015) and filtered using false discovery rate-corrected p-values<0.05.\n\nFor the analysis of transcription readthrough, transcriptome profiles from human embryonic stem cells (WT and TET1 KO) were obtained from a GEO (GSE169209). RNA-seq data were mapped to the reference human genome (GRCh38) with the STAR v2.7.8a using default parameters (Dobin et al., 2013). Transcription readthrough levels were evaluated by counting the number of reads mapping downstream the TTS using ARTDeco (Roth et al., 2020) and human genome annotation from GENCODE project (GENCODE release 37). Genes with an enrichment in transcriptional readthrough in TET1 KO samples relative to the control were identified. Metagene profiles were built using the computeMatrix tool from the deepTools v3.5.1 (Ram\u00edrez et al., 2016) and default packages from Python language. Genes were scaled to equally sized bins of 100 bp so that all annotated TSSs and TTSs were aligned. Regions of 1 kb were added upstream of TSS and downstream of TTS and also averaged in 100 bp bins. All read counts were normalized by the number of mapped reads (RPKM).\n",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "93f1a5a7-947b-47b8-846f-fef248ff94b1",
+      "submission_id": "f7c2ae1b-a419-4915-8f9b-88db80f06da9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andr\u00e9s Aguilera, https://ror.org/03yxnpp24 CABIMER, Universidad de Sevilla Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69476.sa0](https://doi.org/10.7554/eLife.69476.sa0)\n\nThe study shows a correlation between 5hmC and R loops in mES cells and human HEK293 cells depleted of the TET enzymes Tet1, Tet2 and Tet3 that convert 5mC into 5hmC. The data presented are clearly of significant interest in providing new insight into the potential role of 5hmc DNA in specific transcriptional processes. This implies that 5hmC containing DNA has specific epigenetic features beyond a simple intermediate in interconversion between repressive 5mC and active C DNA.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Andr\u00e9s Aguilera, https://ror.org/03yxnpp24 CABIMER, Universidad de Sevilla Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69476.sa1](https://doi.org/10.7554/eLife.69476.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Epigenetic reprogramming by TET enzymes impacts co-transcriptional R-loops\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Figure 1: These in vitro transcription experiments indicate that 5hmC modified DNA has a somewhat greater tendency (at most two-fold) to form R-loops. My serious worry here is that the S9.6 antibody must be biochemically tested to rule out that it has an inherent binding preference for 5hmcDNA:RNA hybrids over either DNA:RNA or 5mcDNA:RNA. Such a preference might explain the apparent selectivity for 5hmC modification in favoring R-loop formation? S9.6 antibody is well known to recognize RNA:RNA as well as RNA:DNA hybrids. Consequently 5hmcDNA:RNA should also be tested. It is hard to evaluate how quantitative is the independent atomic force microscopy method to evaluate R-loop levels. Clearly detecting these blob, spur and loop structures may be somewhat subjective.\n\n2) Figure 2: These data showing either depletion of Tet1 or Tet3 (by RNAi) or the targeted dCAS9 tethering of Tet1 to the R-loop enriched APOE gene, all point to some effect of 5hmcDNA levels on R-loop formation. However again the effects observed are modest (less than 2 fold). Why Tet2 isn't also tested and indeed why a triple knock depletion of Tet1/2/3 isn't attempted as the small effects of single Tet mRNA depletions may be due to redundancy between these three mC oxidases.\n\n3) It would be important to see the screen shot of of the whole APOE gene following CRISPR targeting of Tet1 to be sure that the effect is specific for its last exon and that Tet1 tethering is having a localized effect just on this region of the APOE gene.\n\n4) Figure 1 and 2: In order to strengthen the results, it is important to provide statistical significance in the experiment shown. The authors should also demonstrate that 5hmC modification has no impact in the transcription levels in the in vitro model and in APOE gene upon dCAS-TET1 targeting. Considering the effect of 5hmC on the double helix stability, all the observations could be connected to a facilitation of RNA Pol II elongation in the investigated regions. Moreover, a more correct approach of normalization of dot blot signals is recommended. Normalization should be performed on dsDNA signal obtained from the same exact membrane of the signal of interest stripped and probed again.\n\n5) Figure 3: These genomic data are quite compelling. However, the correspondence of 5hmcDNA peaks with TTS R-loops but nor TSS R-loops is surprising and needs further discussion, if not further experimental analysis. For example, does Tet deficiency lead to transcription termination/readthrough defects genome wide?\n\n6) A genome-wide analysis of DNA-RNA hybrids in cells depleted of shTet1 or shTet3 depleted cells is required, so that experimental data could be jointly analyzed with the database to confirm the model and the role of TET in the process defined. Alternatively, a significant number of genes could be validated by DRIP-qPCR to show that TET depletion significantly increases hybrids.\n\n7) A snapshot showing the distribution pattern of one or two long chromosomal regions should be provided to see how coincident are the patterns of R loops and 5hmeC.\n\n8) The metagenomic analysis is made on genes with 5hmC and R loops. However, results should also be shown considering peaks to see a more precise association between better defined regions.\n\n9) It would be important to show that transcription at individual genes identified as R loop accumulating after TET depletion is indeed unaffected. Since TET-depletion causes downregulation and upregulation of genes, it is not possible to make conclusions with just global EU incorporation, in which among other issues, it is unclear the impact on the nucleolus contribute to the signal measured.\n\n10) Figure 4: the quality of the PLA figures needs to be improved. Higher magnification and better resolution in the Z axis are crucial. The signal is not nuclear. Treating cells with a combination of RNAseIII+RNAseT1 might improve specificity of S9.6 antibody. RNaseH control for S9.6 antibody signal should also be provided.\n\n11) Figure 6: The analysis proposed is mainly focused on the contribution of R-loops modulation in mES transcription program, rather than the effect of 5hmC modulation. Since the authors have shown in previous experiments that are able to modulate 5hmC deposition, an interesting result might be obtained by investigating the effect of TET enzymes depletion on mES transcription.\n",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8a5aa38f-a7eb-4e71-afd7-876d283b994f",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C1",
+      "claim": "TET enzymes convert 5-methylcytosine (5mC) into 5-hydroxymethylcytosine (5hmC).",
+      "claim_type": "EXPLICIT",
+      "source": "The conversion of 5-methylcytosine (5mC) into 5-hydroxymethylcytosine (5hmC) initiates developmental and cell-type-specific transcriptional programs through mechanisms that include changes in the chromatin structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known function of TET enzymes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "c7fb49bf-6937-41b8-b29a-18ae723764eb",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C2",
+      "claim": "The presence of 5hmC in transcribed genes promotes the annealing of nascent RNA to the template DNA strand, leading to R-loop formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the presence of 5hmC in the transcribed gene promotes the annealing of the nascent RNA to the template DNA strand, leading to the formation of an R-loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "ab940595-4fee-4f7b-b4f4-67127b7f9437",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C3",
+      "claim": "Depletion of TET enzymes reduced global R-loops in the absence of gene expression changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of TET enzymes reduced global R-loops in the absence of gene expression changes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the abstract and supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "68b9fae9-b42f-43f7-86fc-20445303e9b9",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C4",
+      "claim": "CRISPR-mediated tethering of TET to an active gene promoted the formation of R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas CRISPR-mediated tethering of TET to an active gene promoted the formation of R-loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "973670cb-7852-4712-83f7-5ad08d23f0f9",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C5",
+      "claim": "The genome-wide distribution of 5hmC and R-loops shows a positive correlation in mouse and human stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome-wide distribution of 5hmC and R-loops shows a positive correlation in mouse and human stem cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by computational analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "d3febef6-179a-4f5a-9304-96758f3bbb25",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C6",
+      "claim": "5hmC and R-loops overlap in half of all active genes.",
+      "claim_type": "EXPLICIT",
+      "source": "overlap in half of all active genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and quantified in Figure 3D showing 51% overlap.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "05979ea8-3ef4-4f18-ac65-fc02ec8082bb",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C7",
+      "claim": "R-loop resolution leads to differential expression of a subset of genes involved in crucial events during stem cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, R-loop resolution leads to differential expression of a subset of genes that are involved in crucial events during stem cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by RNA-seq analysis in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "e1f9be0b-a6d1-4aa7-a8d3-e4cf4c6c0098",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C8",
+      "claim": "R-loops are physiologically relevant intermediates of several processes, such as immunoglobulin class-switch recombination and gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These triple-stranded structures, called R-loops, are physiologically relevant intermediates of several processes, such as immunoglobulin class-switch recombination and gene expression (Garc\u00eda-Muse and Aguilera, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "78cc646a-cfa9-4ee7-a4ae-b977a9e0c2b3",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C9",
+      "claim": "Nonscheduled or persistent R-loops constitute an important source of DNA damage, namely DNA double-strand breaks (DSBs).",
+      "claim_type": "EXPLICIT",
+      "source": "However, nonscheduled or persistent R-loops constitute an important source of DNA damage, namely, DNA double-strand breaks (DSBs) (Garc\u00eda-Muse and Aguilera, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "842c124e-01b8-47b7-860f-b90451745199",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C10",
+      "claim": "RNase H1 and RNase H2 degrade R-loops by digesting the RNA strand of the DNA:RNA hybrid.",
+      "claim_type": "EXPLICIT",
+      "source": "The ribonuclease H enzymes RNase H1 and RNase H2 degrade R-loops by digesting the RNA strand of the DNA:RNA hybrid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "44cd6a73-115e-4834-a083-3a422448756b",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C11",
+      "claim": "DNA and RNA helicases unwind the hybrid and restore the double-stranded DNA (dsDNA) structure.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA and RNA helicases unwind the hybrid and restore the double-stranded DNA (dsDNA) structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "0d19056a-5d7a-43b4-8cc3-6b3b03414d66",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C12",
+      "claim": "DDX23 resolves R-loops formed during transcription elongation to regulate gene expression programs and prevent transcription-dependent DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we previously reported that the DEAD-box helicase 23 (DDX23) resolves R-loops formed during transcription elongation to regulate gene expression programs and prevent transcription-dependent DNA damage (Sridhara et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "9c1e0bf5-274c-45c0-9d69-14ccae547664",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C13",
+      "claim": "The presence of introns prevents unscheduled R-loop formation at active genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of introns, for instance, prevents unscheduled R-loop formation at active genes (Bonnet et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "f4fc0ddd-2724-4e57-8e9e-f5cff9c4ff4b",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C14",
+      "claim": "An asymmetrical distribution of guanines (G) and cytosines (C) nucleotides in the DNA duplex influences R-loop propensity, with an excess of Cs in the template DNA strand (positive G:C skew) favoring R-loop formation.",
+      "claim_type": "EXPLICIT",
+      "source": "An asymmetrical distribution of guanines (G) and cytosines (C) nucleotides in the DNA duplex also influences R-loop propensity, with an excess of Cs in the template DNA strand (positive G:C skew) favoring R-loop formation (Ginno et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "da3da0d4-8d60-40dd-bf6e-5c4c1e92aaa6",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C15",
+      "claim": "Promoter-proximal R-loops enhance the recruitment of the Tip60\u2013p400 histone acetyltransferase complex and inhibit the binding of polycomb-repressive complex 2 and histone H3 lysine-27 methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Promoter-proximal R-loops enhance the recruitment of the Tip60\u2013p400 histone acetyltransferase complex and inhibit the binding of polycomb-repressive complex 2 and histone H3 lysine-27 methylation (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "0ae6c94f-e3b2-4332-a6dc-a3a6231d05c0",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C16",
+      "claim": "R-loops formed over G-rich terminator elements promote histone H3 lysine-9 dimethylation, a repressive mark that reinforces RNA polymerase II pausing during transcription termination.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loops formed over G-rich terminator elements promote histone H3 lysine-9 dimethylation, a repressive mark that reinforces RNA polymerase II pausing during transcription termination (Skourti-Stathaki and Proudfoot, 2014; Ch\u00e9din, 2016; Skourti-Stathaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "6843f9bb-0ed1-48ae-b657-8e75c49bcca2",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C17",
+      "claim": "R-loops act as barriers against DNA methylation spreading into active genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides affecting histone modifications, R-loops also act as barriers against DNA methylation spreading into active genes (Ginno et al., 2013; Ginno et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "f633b7e0-9144-432a-bc4f-f6dad405fd55",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C18",
+      "claim": "More than 70% of all human gene promoters contain stretches of CpG dinucleotides, termed CpG islands (CGIs), whose transcriptional activity is repressed by CpG methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 70% of all human gene promoters contain stretches of CpG dinucleotides, termed CpG islands (CGIs), whose transcriptional activity is repressed by CpG methylation (Greenberg and Bourc'his, 2019; Weber et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "016d313a-c52b-47fe-8ab0-788c2b648b02",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C19",
+      "claim": "R-loops positioned near promoters of active genes maintain CGIs in an unmethylated state.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loops positioned near promoters of active genes maintain CGIs in an unmethylated state (Ginno et al., 2012), likely by reducing the affinity of DNMT1 binding to DNA (Grunseich et al., 2018), or recruiting ten-eleven translocation (TET) methylcytosine dioxygenases (Arab et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "80e6ff1d-96c8-45b6-a48f-090d999334e7",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C20",
+      "claim": "TET enzyme family members share the ability to oxidize 5mC to 5-hydroxymethylcytosine (5hmC).",
+      "claim_type": "EXPLICIT",
+      "source": "The TET enzyme family members share the ability to oxidize 5mC to 5-hydroxymethylcytosine (5hmC) (Pastor et al., 2013; Tahiliani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "06302b42-69db-44a7-a476-27b2edc9dc1e",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C21",
+      "claim": "5hmC is a relatively rare DNA modification found across the genome much less frequently than 5mC.",
+      "claim_type": "EXPLICIT",
+      "source": "5hmC is a relatively rare DNA modification found across the genome much less frequently than 5mC (Mendonca et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "dadf3084-4b67-4ef2-b199-0cef18d7b7ba",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C22",
+      "claim": "Genome-wide, 5hmC is more abundant at regulatory regions near transcription start sites (TSSs), promoters, and exons, consistent with its role in gene expression regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide, 5hmC is more abundant at regulatory regions near transcription start sites (TSSs), promoters, and exons, consistent with its role in gene expression regulation (Wu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "d29aa73f-eade-4880-b210-6c1aac460eb0",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C23",
+      "claim": "The levels of 5hmC are enriched at active promoter regions, as observed upon activation of neuronal function-related genes in neural progenitors and neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The levels of 5hmC are enriched at active promoter regions, as observed upon activation of neuronal function-related genes in neural progenitors and neurons (Pastor et al., 2013; Hahn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "0c745eb6-8078-4dbe-af2b-8b8f321d95e0",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C24",
+      "claim": "5hmC has the potential to modify the DNA helix structure by favoring DNA-end breathing motion, a dynamic feature of the protein\u2013DNA complexes thought to control DNA accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "5hmC has the potential to modify the DNA helix structure by favoring DNA-end breathing motion, a dynamic feature of the protein\u2013DNA complexes thought to control DNA accessibility (Mendonca et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "a978eaf5-89e9-4942-aaa4-6b35db235d22",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C25",
+      "claim": "5hmC weakens the interaction between DNA and nucleosomal H2A-H2B dimers, facilitating RNA polymerase II elongation, and diminishes the thermodynamic stability of the DNA duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, 5hmC weakens the interaction between DNA and nucleosomal H2A-H2B dimers, facilitating RNA polymerase II elongation, and diminishes the thermodynamic stability of the DNA duplex (Mendonca et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "5adcc87f-eaea-4ea4-b336-93f140c07bd8",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C26",
+      "claim": "While 5mC increases the melting temperature, 5hmC reduces the amount of energy needed to separate the two strands of the DNA duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "While 5mC increases the melting temperature, 5hmC reduces the amount of energy needed to separate the two strands of the DNA duplex (Leavitt et al., 2015; Wanunu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "9b565b54-4504-4d8d-84a1-c3e799354e08",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C27",
+      "claim": "Molecular dynamics simulations revealed that the highest amplitude of GC DNA base-pair fluctuations is observed in the presence of 5hmC, whereas 5mC yielded GC base pairs (bp) with the lower amplitude values.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations revealed that the highest amplitude of GC DNA base-pair fluctuations is observed in the presence of 5hmC, whereas 5mC yielded GC base pairs (bp) with the lower amplitude values (Wanunu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "79f92877-b554-4a87-9d16-21d91d9107c9",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C28",
+      "claim": "The presence of 5hmC destabilizes GC pairing by alleviating steric constraints through an increase in molecular polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of 5hmC destabilizes GC pairing by alleviating steric constraints through an increase in molecular polarity (Wanunu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "14359f2c-533c-4f68-9ae0-62642af0e9fa",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C29",
+      "claim": "Increased amounts of DNA:RNA hybrids were detected in samples derived from in vitro transcription of 5hmC-rich ACTB P1, ACTB P2, and APOE DNA templates.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our hypothesis that 5hmC favors R-loops, increased amounts of DNA:RNA hybrids were detected in samples derived from in vitro transcription of 5hmC-rich ACTB P1, ACTB P2, and APOE DNA templates (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from in vitro transcription experiments shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "2c5119be-215d-47f1-b42d-c779578f1d08",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C30",
+      "claim": "The S9.6 antibody equally recognizes DNA:RNA hybrids formed with C, 5mC, or 5hmC variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The S9.6 Ab was able to delay the run of the three substrates with similar kinetics, indicating that the Ab equally recognizes DNA:RNA hybrids formed with any of the three C variants (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by EMSA experiments shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "66553fdf-fdf3-4827-b083-5fa8b6433ecc",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C31",
+      "claim": "R-loop structures are more frequently formed in the presence of 5hmC as shown by atomic force microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the hypothesis that transcription of 5hmC-rich DNA templates results in increased R-loop formation, AFM data revealed that R-loop structures are more frequently formed in the presence of 5hmC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by AFM imaging shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "4eef4a20-bf6e-40b8-b5ff-3c1c82660530",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C32",
+      "claim": "Replacing C by either 5hmC or 5mC significantly decreased the transcript levels in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the T7 polymerase is highly sensitive to DNA modifications since replacing C by either 5hmC or 5mC significantly decreased the transcript levels in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by RNA quantification from in vitro transcription experiments in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "d9cfe06d-e175-4e90-9f2e-eeb353cfbecd",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C33",
+      "claim": "Depletion of Tet3 resulted in a significant loss of 5hmC in mES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, depletion of Tet3 resulted in a significant loss of 5hmC, an effect that was exacerbated by the simultaneous depletion of the three enzymes (Figure 2A, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dot blot analysis in Figure 2A and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "1e2fb3f3-7ad3-4d89-8fc4-f72d87c2365a",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C34",
+      "claim": "No significant changes were observed in 5mC levels upon Tet depletion in mES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant changes were observed in 5mC levels (Figure 2A, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dot blot analysis in Figure 2A and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "0e705e35-d1b4-435d-ad9c-fdea42396556",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C35",
+      "claim": "There is partial redundancy in the activity of the three Tet enzymes in mES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that there is a partial redundancy in the activity of the three Tet enzymes in mES cells. The loss of Tet1 or Tet2 \u2013 but not of Tet3 \u2013 is compensated by the remaining Tets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that only Tet3 depletion reduces 5hmC levels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "afd4d4b8-c56d-4684-9e05-ee9d98643d4d",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C36",
+      "claim": "Dot-blot hybridization of total cellular nucleic acids using the S9.6 Ab revealed reduced endogenous R-loop levels in mES cells after depletion of Tet3 and after co-depletion of the three Tet enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the hypothesis that 5hmC promotes R-loop formation, dot-blot hybridization of total cellular nucleic acids using the S9.6 Ab revealed reduced endogenous R-loop levels in mES cells after depletion of Tet3 and after co-depletion of the three Tet enzymes (Figure 2B, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dot blot analysis in Figure 2B and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "b749b499-af43-4f4f-9c86-22c8e3117348",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C37",
+      "claim": "A significant reduction of 5hmC, but not 5mC, was obtained upon depletion of Tet3 and of the three Tets in mouse fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in mES cells, a significant reduction of 5hmC, but not 5mC, was obtained upon depletion of Tet3 and of the three Tets in mouse fibroblasts (Figure 2\u2014figure supplement 2B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dot blot analysis in Figure 2\u2014figure supplement 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "eeb89e36-fd66-4a9a-87a7-b91a4f45cdee",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C38",
+      "claim": "The triple knockdown of the Tet enzymes significantly reduced the global levels of R-loops in mouse fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "The triple knockdown of the Tet enzymes significantly reduced the global levels of R-loops in mouse fibroblasts, whereas Tet3 depletion in these cells had a minor impact in R-loops (Figure 2\u2014figure supplement 2B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by dot blot analysis in Figure 2\u2014figure supplement 2B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "84599b5e-cde8-4706-878a-fbefd0c6bbb5",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C39",
+      "claim": "DRIP assays confirmed that R-loops are less abundant upon depletion of Tet enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The DRIP assays confirmed that R-loops are less abundant upon depletion of Tet enzymes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by DRIP experiments in Figure 2C and Figure 2\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "3cb10ba7-e3ae-473c-be2b-f1863af46bf1",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C40",
+      "claim": "Simultaneous depletion of the three Tet enzymes did not affect the expression levels of the analyzed genes in mES cells and mouse fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, simultaneous depletion of the three enzymes did not affect the expression levels of the analyzed genes in mES cells and mouse fibroblasts (Figure 2D, Figure 2\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by RT-qPCR analysis in Figure 2D and Figure 2\u2014figure supplement 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "7f85a7eb-3985-4759-93ae-317efe57a80b",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C41",
+      "claim": "The activity of Tet enzymes promotes the formation of R-loops in the absence of changes in transcription levels.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the activity of Tet enzymes promotes the formation of R-loops in the absence of changes in transcription levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Tet depletion reduces R-loops without affecting gene expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "1c674c48-4bed-46ee-8f9c-18cdb74f5778",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C42",
+      "claim": "Local enrichment of 5hmC following dCas9-TET1 targeting at the APOE locus was confirmed by DNA immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Local enrichment of 5hmC following dCas9-TET1 targeting at the APOE locus was confirmed by DNA immunoprecipitation using antibodies specific for 5mC or 5hmC-modified nucleotides (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by (h)MeDIP experiments in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "fbac1a5d-92d0-446d-8d7d-06efe85e08cb",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C43",
+      "claim": "R-loop levels peaked significantly at the gRNAs-target and in the downstream region, upon tethering of dCas9-TET1 but not of dCas9-dTET1.",
+      "claim_type": "EXPLICIT",
+      "source": "R-loop levels detected by DRIP peaked significantly at the gRNAs-target and in the downstream region, upon tethering of dCas9-TET1 but not of dCas9-dTET1 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by DRIP experiments in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "b7b98aac-8718-4041-9b4a-0cf7f5ed9396",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C44",
+      "claim": "The increased levels of R-loops detected far from the dCas9-TET1 target site are consistent with the view that R-loops have the capacity to extend from their inception locus.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased levels of R-loops detected far from the dCas9-TET1 target site are consistent with the view that R-loops have the capacity to extend from their inception locus. Accordingly, R-loops can be up to several hundred base pairs long and may extend over the entire gene body of shorter and/or highly transcribed genes (Sanz et al., 2016; Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "99e4306e-113b-437a-88e2-d39a2bac29f7",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C45",
+      "claim": "Editing 5hmC density by changing the expression levels or the genomic distribution of TET enzymes influences R-loop formation in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that editing 5hmC density by changing the expression levels or the genomic distribution of TET enzymes influences R-loop formation in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "29524ec2-9246-4bbf-b08b-bd267fc294ca",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C46",
+      "claim": "Computational analyses of 5hmC and R-loops datasets from mES and HEK293 cells revealed a marked overlap between 5hmC-rich loci and R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting metagene plots and heatmaps revealed a marked overlap between 5hmC-rich loci and R-loops.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by computational analysis in Figure 3A and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "b095b858-a013-4e71-8902-b9f42c62436f",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C47",
+      "claim": "A statistically significant Pearson correlation coefficient between 5hmC and R-loops was obtained (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the distinct distribution patterns of 5hmC (well-defined peaks) and R-loops (reads spanning genomic regions with highly heterogeneous lengths, ranging between a few dozen to over 1 kb Chen et al., 2015), we could obtain a statistically significant Pearson correlation coefficient between both (p<0.05) (Figure 3B, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by correlation analysis in Figure 3B and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "22c1370e-d0e1-4fb8-96c2-b09d46c8f553",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C48",
+      "claim": "Approximately half of all R-loops detected genome-wide occurred at 5hmC-containing loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, approximately half of all R-loops detected genome-wide occurred at 5hmC-containing loci (Figure 3C, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by overlap analysis in Figure 3C and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "ad4def72-935c-4528-b806-250bb1a07013",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C49",
+      "claim": "An overlap between 5hmC and R-loops was observed in 6839 (51%) out of the 13,288 actively expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed an overlap between 5hmC and R-loops in 6839 (51%) out of the 13,288 actively expressed genes (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by gene-level overlap analysis in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "d35ca30d-8ba3-419a-893c-3498f89c5a8d",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C50",
+      "claim": "Both 5hmC and R-loops increase towards the transcription termination site (TTS), where they reach maximum levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagene profiles revealed very similar patterns of intragenic distribution, with both 5hmC and R-loops increasing towards the transcription termination site (TTS), where they reached maximum levels (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by metagene analysis in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "9ebe81d6-dddc-4014-aa43-aa1af6e0e003",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C51",
+      "claim": "At the TSS, 5hmC was mostly absent, whereas R-loops were abundant.",
+      "claim_type": "EXPLICIT",
+      "source": "At the TSS, however, the 5hmC DNA modification was mostly absent, whereas R-loops were abundant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by metagene analysis in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "06c95a05-575c-4d49-b082-bb03076830c6",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C52",
+      "claim": "The detection of R-loop peaks at TSS regions implies that 5hmC is not necessary for co-transcriptional DNA:RNA hybridization and R-loop formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection of R-loop peaks at TSS regions is in agreement with previous studies (Ginno et al., 2013; Ginno et al., 2012) and implies that 5hmC is not necessary for co-transcriptional DNA:RNA hybridization and R-loop formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that R-loops are present at TSS where 5hmC is absent.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "ad282b48-0462-420c-966c-b1fec8da882d",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C53",
+      "claim": "TET1-KO human ES cells displayed significantly higher levels of readthrough transcripts genome wide when compared to wt human ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with a role in transcription termination, TET1-KO human ES cells displayed significantly higher levels of readthrough transcripts genome wide when compared to wt human ES cells (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by transcriptome analysis in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "d93c2234-4d8a-4ec7-ac12-a925fe62b8b6",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C54",
+      "claim": "Staining of mES cells with S9.6 and anti-5hmC antibodies gave rise to a robust PLA signal scattered throughout the nucleus, which was mostly lost after digestion of cells with RNase H.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining of mES cells with S9.6 and anti-5hmC antibodies gave rise to a robust PLA signal scattered throughout the nucleus, which was mostly lost after digestion of cells with RNase H (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by proximity ligation assay in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "43b32086-6a43-43f5-80b2-734a271c7a80",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C55",
+      "claim": "Metagene plots revealed marked enrichment of \u03b3H2AX at 5hmC-rich loci.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting metagene plots revealed marked enrichment of \u03b3H2AX at 5hmC-rich loci.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by computational analysis in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "38bae3d5-5f3f-4688-980b-23f231f06625",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C56",
+      "claim": "Analysis of \u03b3H2AX and 5hmC distribution within active genes revealed a low yet statistically significant Pearson correlation coefficient (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of \u03b3H2AX and 5hmC distribution within active genes revealed a low yet statistically significant Pearson correlation coefficient (p<0.05) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by correlation analysis in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "218c4243-ccbb-4221-bf71-50cc711b47ee",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C57",
+      "claim": "64% of all downregulated genes and 48% of all upregulated genes upon RNase H overexpression displayed R-loops overlapping with 5hmC.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst the genes that were differentially expressed, we found that 64 and 48% of all downregulated and upregulated genes, respectively, displayed R-loops overlapping with 5hmC (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by transcriptome analysis in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "27e9094b-8f08-4cda-87d1-0de00bdea626",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C58",
+      "claim": "Pathway analysis revealed that differentially expressed genes with R-loops overlapping 5hmC are involved in the mTOR (downregulated) and MYC (upregulated) signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway analysis revealed that these differentially expressed genes (Supplementary file 1) are involved in the mechanistic target of rapamycin (mTOR) (downregulated) and MYC (upregulated) signaling pathways (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by pathway analysis in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "11eed6f1-aa81-439b-99c4-556c4e7547b2",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C59",
+      "claim": "mTOR and MYC are known to play opposite roles in establishing diapause, the temporary suspension of embryonic development driven by adverse environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "mTOR and MYC are known to play opposite roles in establishing diapause, the temporary suspension of embryonic development driven by adverse environmental conditions (Fenelon et al., 2014), a stage that ES cells mimic when cultured in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "dc151433-f46d-46d4-9728-189a71341294",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C60",
+      "claim": "mTOR, a major nutrient sensor, acts as a rheostat during ES cell differentiation and reductions in mTOR activity trigger diapause.",
+      "claim_type": "EXPLICIT",
+      "source": "mTOR, a major nutrient sensor, acts as a rheostat during ES cell differentiation and reductions in mTOR activity trigger diapause (Bulut-Karslioglu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "096c8ba8-5484-4169-85f5-2e5e8fed88ec",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C61",
+      "claim": "Overexpression of RNase H in mES cells did not reveal any significant changes in the cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "While overexpression of RNase H in mES cells did not reveal any significant changes in the cell cycle progression (Figure 6\u2014figure supplement 1A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by flow cytometry analysis in Figure 6\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "ce848927-0a25-4a4b-b82a-1a42b9241572",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C62",
+      "claim": "mES cells overexpressing RNase H displayed significantly decreased expression of genes related to pluripotency (Pou5f1) and germ layer commitment (Sox17, Sox6, Dll1) pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "we observed a significantly decreased expression of genes related to pluripotency (Pou5f1) and germ layer commitment (Sox17, Sox6, Dll1) pathways (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by RT-qPCR analysis in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "ac6c4958-7148-4950-9c22-98b044ea0486",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C63",
+      "claim": "R-loops formed upon TET epigenetic reprogramming regulate gene expression in stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support the view that R-loops formed upon TET epigenetic reprogramming regulate gene expression in stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "c0d2880c-6069-434b-b920-db1ce25fbe57",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C64",
+      "claim": "5hmC may impact R-loop formation by either destabilizing the DNA duplex or altering RNA polymerase II elongation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, 5hmC may impact R-loop formation by either destabilizing the DNA duplex or altering RNA polymerase II elongation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic speculation based on known properties of 5hmC.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "8b981c8e-db23-4eab-a690-5ebfa0aa328f",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C65",
+      "claim": "5hmC modifies the DNA helix structure by favoring DNA-end breathing motion, diminishes the thermodynamic stability of the DNA duplex, and destabilizes GC pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, 5hmC modifies the DNA helix structure by favoring DNA-end breathing motion, diminishes the thermodynamic stability of the DNA duplex, and destabilizes GC pairing (Mendonca et al., 2014; Wanunu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "177bbbdc-ee0e-4866-a077-823243fed0c7",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C66",
+      "claim": "5hmC weakens the interaction between DNA and nucleosomal histones, which is thought to accelerate RNA polymerase II elongation but can also facilitate nascent RNA annealing with the template DNA strand favoring R-loop formation.",
+      "claim_type": "EXPLICIT",
+      "source": "It also weakens the interaction between DNA and nucleosomal histones (Mendonca et al., 2014), which is thought to accelerate RNA polymerase II elongation but can also facilitate nascent RNA annealing with the template DNA strand favoring R-loop formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work and includes speculation about mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "808c9aa0-403a-4468-9032-b1f158da0275",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C67",
+      "claim": "5hmC-rich loci are hotspots for DNA damage genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that 5hmC-rich loci are hotspots for DNA damage genome-wide.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by analysis of \u03b3H2AX distribution in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "f498587f-f0c8-4af5-a6f9-64a6005b8a6a",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C68",
+      "claim": "Genome-wide 5hmC and R-loops overlap robustly at the TTS of active genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings that genome-wide 5hmC and R-loops overlap robustly at the TTS of active genes and that TET-deficiency drives transcription readthrough support a model whereby TET enzymes act upstream of R-loop formation during transcription termination (Skourti-Stathaki et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding with citation to prior work on transcription termination.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "4b718ebf-b42d-4d7d-9161-200ae7b4c759",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C69",
+      "claim": "TET enzymes may play dual roles as both oncogenic and tumour suppressor genes.",
+      "claim_type": "EXPLICIT",
+      "source": "TETs may play dual roles as both oncogenic and tumour suppressor genes, with the former arising as the consequence of altered expression levels or function, as observed in several cancers, such as triple-negative breast cancer (Bray et al., 2021; Good et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "bc00787b-9951-487c-8491-25ce00fbe017",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C70",
+      "claim": "TET-driven changes in the DNA methylation landscape may drive transcription-dependent genome damaging events that could facilitate cancer development and progression.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to altering the expression levels of tumour suppressors or oncogenes (Bray et al., 2021), our findings suggest that TET-driven changes in the DNA methylation landscape may as well drive transcription-dependent genome damaging events that could facilitate cancer development and progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "9d14b1fc-954d-492c-9a37-da39d0eab38d",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C71",
+      "claim": "A TET1 isoform that lacks regulatory domains, including its DNA-binding domain, but retains its catalytic activity, is enriched in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this view, a TET1 isoform that lacks regulatory domains, including its DNA-binding domain, but retains its catalytic activity, is enriched in cancer cells (Good et al., 2017), suggesting that mistargeted TET activity may drive oncogenic events, such as genomic instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "d7bcdc28-5306-46dd-b5e1-484ece3f53a9",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C72",
+      "claim": "TET activity deposits 5hmC at DNA damage sites induced by aphidicolin or microirradiation in HeLa cells and prevents chromosome segregation defects in response to replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, TET activity deposits 5hmC at DNA damage sites induced by aphidicolin or microirradiation in HeLa cells and prevents chromosome segregation defects in response to replication stress (Kafer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "28bee051-7db6-4d1c-996a-138cfef2aea2",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C73",
+      "claim": "By driving the developmental DNA methylome reprogramming, TETs carry out numerous functions related to early developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "By driving the developmental DNA methylome reprogramming, TETs carry out numerous functions related to early developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "32be414b-3d07-45c7-b476-3e704b967f28",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C74",
+      "claim": "R-loops formed at 5hmC-rich regions impact the expression of genes involved in establishing diapause.",
+      "claim_type": "EXPLICIT",
+      "source": "Our gene ontology analysis revealed that R-loops formed at 5hmC-rich regions impact the expression of genes involved in establishing diapause.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the pathway analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "ecfd39cb-545d-46bc-91ca-34cb16577aa4",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C75",
+      "claim": "Changes in the activity of mTOR, a major nutrient sensor, control ES cell commitment to trigger diapause.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, changes in the activity of mTOR, a major nutrient sensor, control ES cell commitment to trigger diapause (Bulut-Karslioglu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "63c02856-f8ac-412d-95cf-4feb6641b9b2",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C76",
+      "claim": "The mTOR signaling pathway was significantly downregulated upon global R-loop suppression by RNase H.",
+      "claim_type": "EXPLICIT",
+      "source": "The mTOR signaling pathway was significantly downregulated upon global R-loop suppression by RNase H.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by pathway analysis in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "f1f714bf-02cc-4e1d-b9c4-0f1906a7e0c5",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "claim_id": "C77",
+      "claim": "MYC targets, which prevent ES cells from entering the state of dormancy that characterizes diapause, were amongst the genes more significantly upregulated upon RNase H overexpression in mES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, MYC targets, which prevent ES cells from entering the state of dormancy that characterizes diapause (Scognamiglio et al., 2016), were amongst the genes more significantly upregulated upon RNase H overexpression in mES cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by pathway analysis in Figure 6C with citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e6d6b81b-1f30-4dc9-b334-f41ee7b3fe30",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In vitro transcription through 5hmC-rich DNA templates increases R-loop formation. DNA templates containing 5hmC showed increased DNA:RNA hybrids by dot blot (C29) and more frequent R-loop structures by AFM (C31) compared to unmodified or 5mC-containing templates. The S9.6 antibody recognizes all cytosine variants equally (C30), and both 5hmC and 5mC reduce transcript levels in vitro (C32).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 provide converging evidence from multiple orthogonal methods (dot blot, AFM) that 5hmC promotes R-loop formation in vitro. C30 validates the detection method is unbiased. C32 shows reduced transcription with modified cytosines, which strengthens the conclusion since more R-loops are detected despite lower transcription with 5hmC templates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "aca200de-27dc-4254-bff8-fecdceb49b87",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Depletion of TET enzymes reduces global R-loop levels without affecting gene expression in mES cells and mouse fibroblasts. Tet3 depletion or triple Tet1/2/3 knockdown significantly reduced 5hmC (C33, C37) and R-loops (C36, C38, C39) without changing 5mC levels (C34, C37) or gene expression (C40). This suggests partial redundancy among Tet enzymes (C35) and that TET activity promotes R-loop formation independently of transcription (C41).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 provide consistent evidence across multiple cell types and assays (dot blot, DRIP, RT-qPCR) that TET depletion reduces R-loops without affecting transcription. The control for gene expression (C40) is critical and strengthens the causal link between TET activity and R-loop formation. The redundancy observation (C35) is well-supported by differential effects of single vs. triple knockdowns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "1341e3a8-5fec-422f-921e-b70066a4bb7f",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CRISPR-mediated tethering of catalytically active TET1 to a specific genomic locus increases local R-loop formation. Targeting dCas9-TET1 to the APOE gene increased local 5hmC (C42) and R-loop levels (C43) compared to catalytically inactive dCas9-dTET1. R-loops extended beyond the target site (C44), supporting that editing 5hmC density influences R-loop formation (C45).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 demonstrate gain-of-function evidence complementing the loss-of-function experiments. The use of catalytically inactive TET1 as a control is appropriate. C44 provides mechanistic insight consistent with known R-loop biology. Together, these claims establish a causal relationship between TET activity and R-loop formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "42f84154-c785-45fd-87c8-5f7c7b27a010",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Genome-wide analysis reveals significant overlap between 5hmC and R-loops in active genes. Computational analysis showed marked overlap (C46), statistically significant correlation (C47, p<0.05), with approximately half of R-loops at 5hmC loci (C48) and 51% of active genes showing overlap (C49). Both marks peak at transcription termination sites (C50), while R-loops but not 5hmC are abundant at TSS (C51), indicating 5hmC is not necessary for all R-loop formation (C52).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 provide comprehensive genome-wide evidence from multiple cell types (mES, HEK293) supporting the 5hmC-R-loop relationship. The statistical significance (C47) and quantification (C48-C49) are clearly stated. C51-C52 appropriately acknowledge that 5hmC is not universally required for R-loops, showing nuanced interpretation. The distinct distribution patterns are acknowledged but correlation is still significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "8096e25a-274d-4e67-9950-b354c2570614",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TET1 deficiency leads to transcription readthrough, and 5hmC/R-loops overlap at transcription termination sites, suggesting TET enzymes regulate transcription termination through R-loop formation. TET1-KO cells show increased readthrough transcripts (C53), and 5hmC/R-loops overlap robustly at TTS (C68).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C68 together support a role for TET enzymes in transcription termination via R-loops. The readthrough phenotype in TET1-KO cells (C53) provides functional evidence, while the genomic overlap at TTS (C68) provides mechanistic context. This is consistent with known roles of R-loops in transcription termination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "fb005221-6eb0-49ae-9547-e37ef67adaa3",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Proximity ligation assay demonstrates spatial co-localization of 5hmC and R-loops in individual mES cells. PLA signal was detected with both S9.6 and anti-5hmC antibodies and was lost upon RNase H treatment (C54).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 provides single-cell evidence complementing the genome-wide analyses. The RNase H control validates specificity. This orthogonal approach strengthens the conclusion that 5hmC and R-loops co-occur at the same genomic loci.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "c8195d92-d6b5-4a18-adce-4c693a992efd",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "5hmC-rich loci are associated with DNA damage markers genome-wide. Metagene analysis showed enrichment of \u03b3H2AX at 5hmC-rich loci (C55) with statistically significant correlation (C56, p<0.05), indicating 5hmC-rich loci are hotspots for DNA damage (C67).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 provide computational evidence from ChIP-seq data showing correlation between 5hmC and DNA damage markers. The correlation is low (C56) but statistically significant. C67 is a reasonable interpretation given that R-loops are known sources of DNA damage and 5hmC promotes R-loops. However, the causal relationship is not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "c17432c1-2907-4fa8-b679-35c604646bbf",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "R-loops at 5hmC-rich regions regulate gene expression programs related to stem cell proliferation and diapause. RNase H overexpression differentially affected genes with 5hmC/R-loop overlap (C57), enriched in mTOR (downregulated, C58, C76) and MYC (upregulated, C58, C77) pathways that control diapause (C59, C60, C74, C75). Expression of pluripotency and germ layer genes decreased (C62) without cell cycle changes (C61), supporting that R-loops formed by TET activity regulate stem cell gene expression (C63).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 and C74-C77 provide transcriptomic evidence linking R-loops at 5hmC sites to specific gene expression programs. The pathway analysis (C58, C76, C77) is well-supported and biologically coherent with known roles of mTOR and MYC in stem cell biology (C59, C60, C75). The lack of cell cycle effects (C61) with changes in pluripotency markers (C62) suggests specific regulatory roles rather than general toxicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "efbe2e4c-88d9-4ab3-9237-569b635dd1bf",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Proposed mechanisms by which 5hmC promotes R-loop formation include DNA duplex destabilization and altered RNA polymerase II elongation. 5hmC may destabilize DNA or alter polymerase kinetics (C64), supported by known effects on DNA structure and stability (C65) and histone interactions (C66).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C66 are largely speculative (C64 explicitly states 'may impact') and cite prior work rather than providing new experimental evidence. While the proposed mechanisms are plausible based on known 5hmC properties (C65, C66), the study does not directly test these mechanisms. Future experiments would be needed to distinguish between these possibilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "ad201efe-5a7c-4b36-b618-1ba09c179288",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Discussion of TET enzymes' dual roles in cancer and DNA damage response. TETs may act as oncogenes or tumor suppressors (C69), and TET-driven 5hmC changes may promote genome instability (C70). A TET1 isoform lacking regulatory domains is enriched in cancer (C71), while TET activity can also prevent chromosome segregation defects (C72).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C72 are primarily citations of prior work and speculation about implications. C70 is speculative ('may as well drive') and not directly tested. These claims provide context and suggest future directions but do not constitute new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    },
+    {
+      "id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441",
+      "content_id": "f4d243dc-69de-4c00-94fc-6ae7a1c1430c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background knowledge and literature context about TET enzymes, R-loops, DNA methylation, and their biological roles. These claims establish the scientific foundation for the study, citing established knowledge about TET enzyme function (C1, C20), R-loop biology (C8-C17), DNA methylation (C18-C19), 5hmC properties (C21-C28), and developmental roles (C73).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C28, and C73 are appropriately cited background information from prior literature. These provide necessary context but are not novel findings of this study. They are accurately represented based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:12:39.597553Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "14359f2c-533c-4f68-9ae0-62642af0e9fa",
+      "result_id": "e6d6b81b-1f30-4dc9-b334-f41ee7b3fe30"
+    },
+    {
+      "claim_id": "2c5119be-215d-47f1-b42d-c779578f1d08",
+      "result_id": "e6d6b81b-1f30-4dc9-b334-f41ee7b3fe30"
+    },
+    {
+      "claim_id": "66553fdf-fdf3-4827-b083-5fa8b6433ecc",
+      "result_id": "e6d6b81b-1f30-4dc9-b334-f41ee7b3fe30"
+    },
+    {
+      "claim_id": "4eef4a20-bf6e-40b8-b5ff-3c1c82660530",
+      "result_id": "e6d6b81b-1f30-4dc9-b334-f41ee7b3fe30"
+    },
+    {
+      "claim_id": "d9cfe06d-e175-4e90-9f2e-eeb353cfbecd",
+      "result_id": "aca200de-27dc-4254-bff8-fecdceb49b87"
+    },
+    {
+      "claim_id": "1e2fb3f3-7ad3-4d89-8fc4-f72d87c2365a",
+      "result_id": "aca200de-27dc-4254-bff8-fecdceb49b87"
+    },
+    {
+      "claim_id": "0e705e35-d1b4-435d-ad9c-fdea42396556",
+      "result_id": "aca200de-27dc-4254-bff8-fecdceb49b87"
+    },
+    {
+      "claim_id": "afd4d4b8-c56d-4684-9e05-ee9d98643d4d",
+      "result_id": "aca200de-27dc-4254-bff8-fecdceb49b87"
+    },
+    {
+      "claim_id": "b749b499-af43-4f4f-9c86-22c8e3117348",
+      "result_id": "aca200de-27dc-4254-bff8-fecdceb49b87"
+    },
+    {
+      "claim_id": "eeb89e36-fd66-4a9a-87a7-b91a4f45cdee",
+      "result_id": "aca200de-27dc-4254-bff8-fecdceb49b87"
+    },
+    {
+      "claim_id": "84599b5e-cde8-4706-878a-fbefd0c6bbb5",
+      "result_id": "aca200de-27dc-4254-bff8-fecdceb49b87"
+    },
+    {
+      "claim_id": "3cb10ba7-e3ae-473c-be2b-f1863af46bf1",
+      "result_id": "aca200de-27dc-4254-bff8-fecdceb49b87"
+    },
+    {
+      "claim_id": "7f85a7eb-3985-4759-93ae-317efe57a80b",
+      "result_id": "aca200de-27dc-4254-bff8-fecdceb49b87"
+    },
+    {
+      "claim_id": "1c674c48-4bed-46ee-8f9c-18cdb74f5778",
+      "result_id": "1341e3a8-5fec-422f-921e-b70066a4bb7f"
+    },
+    {
+      "claim_id": "fbac1a5d-92d0-446d-8d7d-06efe85e08cb",
+      "result_id": "1341e3a8-5fec-422f-921e-b70066a4bb7f"
+    },
+    {
+      "claim_id": "b7b98aac-8718-4041-9b4a-0cf7f5ed9396",
+      "result_id": "1341e3a8-5fec-422f-921e-b70066a4bb7f"
+    },
+    {
+      "claim_id": "99e4306e-113b-437a-88e2-d39a2bac29f7",
+      "result_id": "1341e3a8-5fec-422f-921e-b70066a4bb7f"
+    },
+    {
+      "claim_id": "29524ec2-9246-4bbf-b08b-bd267fc294ca",
+      "result_id": "42f84154-c785-45fd-87c8-5f7c7b27a010"
+    },
+    {
+      "claim_id": "b095b858-a013-4e71-8902-b9f42c62436f",
+      "result_id": "42f84154-c785-45fd-87c8-5f7c7b27a010"
+    },
+    {
+      "claim_id": "22c1370e-d0e1-4fb8-96c2-b09d46c8f553",
+      "result_id": "42f84154-c785-45fd-87c8-5f7c7b27a010"
+    },
+    {
+      "claim_id": "ad4def72-935c-4528-b806-250bb1a07013",
+      "result_id": "42f84154-c785-45fd-87c8-5f7c7b27a010"
+    },
+    {
+      "claim_id": "d35ca30d-8ba3-419a-893c-3498f89c5a8d",
+      "result_id": "42f84154-c785-45fd-87c8-5f7c7b27a010"
+    },
+    {
+      "claim_id": "9ebe81d6-dddc-4014-aa43-aa1af6e0e003",
+      "result_id": "42f84154-c785-45fd-87c8-5f7c7b27a010"
+    },
+    {
+      "claim_id": "06c95a05-575c-4d49-b082-bb03076830c6",
+      "result_id": "42f84154-c785-45fd-87c8-5f7c7b27a010"
+    },
+    {
+      "claim_id": "ad282b48-0462-420c-966c-b1fec8da882d",
+      "result_id": "8096e25a-274d-4e67-9950-b354c2570614"
+    },
+    {
+      "claim_id": "f498587f-f0c8-4af5-a6f9-64a6005b8a6a",
+      "result_id": "8096e25a-274d-4e67-9950-b354c2570614"
+    },
+    {
+      "claim_id": "d93c2234-4d8a-4ec7-ac12-a925fe62b8b6",
+      "result_id": "fb005221-6eb0-49ae-9547-e37ef67adaa3"
+    },
+    {
+      "claim_id": "43b32086-6a43-43f5-80b2-734a271c7a80",
+      "result_id": "c8195d92-d6b5-4a18-adce-4c693a992efd"
+    },
+    {
+      "claim_id": "38bae3d5-5f3f-4688-980b-23f231f06625",
+      "result_id": "c8195d92-d6b5-4a18-adce-4c693a992efd"
+    },
+    {
+      "claim_id": "808c9aa0-403a-4468-9032-b1f158da0275",
+      "result_id": "c8195d92-d6b5-4a18-adce-4c693a992efd"
+    },
+    {
+      "claim_id": "218c4243-ccbb-4221-bf71-50cc711b47ee",
+      "result_id": "c17432c1-2907-4fa8-b679-35c604646bbf"
+    },
+    {
+      "claim_id": "27e9094b-8f08-4cda-87d1-0de00bdea626",
+      "result_id": "c17432c1-2907-4fa8-b679-35c604646bbf"
+    },
+    {
+      "claim_id": "11eed6f1-aa81-439b-99c4-556c4e7547b2",
+      "result_id": "c17432c1-2907-4fa8-b679-35c604646bbf"
+    },
+    {
+      "claim_id": "dc151433-f46d-46d4-9728-189a71341294",
+      "result_id": "c17432c1-2907-4fa8-b679-35c604646bbf"
+    },
+    {
+      "claim_id": "096c8ba8-5484-4169-85f5-2e5e8fed88ec",
+      "result_id": "c17432c1-2907-4fa8-b679-35c604646bbf"
+    },
+    {
+      "claim_id": "ce848927-0a25-4a4b-b82a-1a42b9241572",
+      "result_id": "c17432c1-2907-4fa8-b679-35c604646bbf"
+    },
+    {
+      "claim_id": "ac6c4958-7148-4950-9c22-98b044ea0486",
+      "result_id": "c17432c1-2907-4fa8-b679-35c604646bbf"
+    },
+    {
+      "claim_id": "32be414b-3d07-45c7-b476-3e704b967f28",
+      "result_id": "c17432c1-2907-4fa8-b679-35c604646bbf"
+    },
+    {
+      "claim_id": "ecfd39cb-545d-46bc-91ca-34cb16577aa4",
+      "result_id": "c17432c1-2907-4fa8-b679-35c604646bbf"
+    },
+    {
+      "claim_id": "63c02856-f8ac-412d-95cf-4feb6641b9b2",
+      "result_id": "c17432c1-2907-4fa8-b679-35c604646bbf"
+    },
+    {
+      "claim_id": "f1f714bf-02cc-4e1d-b9c4-0f1906a7e0c5",
+      "result_id": "c17432c1-2907-4fa8-b679-35c604646bbf"
+    },
+    {
+      "claim_id": "c0d2880c-6069-434b-b920-db1ce25fbe57",
+      "result_id": "efbe2e4c-88d9-4ab3-9237-569b635dd1bf"
+    },
+    {
+      "claim_id": "8b981c8e-db23-4eab-a690-5ebfa0aa328f",
+      "result_id": "efbe2e4c-88d9-4ab3-9237-569b635dd1bf"
+    },
+    {
+      "claim_id": "177bbbdc-ee0e-4866-a077-823243fed0c7",
+      "result_id": "efbe2e4c-88d9-4ab3-9237-569b635dd1bf"
+    },
+    {
+      "claim_id": "4b718ebf-b42d-4d7d-9161-200ae7b4c759",
+      "result_id": "ad201efe-5a7c-4b36-b618-1ba09c179288"
+    },
+    {
+      "claim_id": "bc00787b-9951-487c-8491-25ce00fbe017",
+      "result_id": "ad201efe-5a7c-4b36-b618-1ba09c179288"
+    },
+    {
+      "claim_id": "9d14b1fc-954d-492c-9a37-da39d0eab38d",
+      "result_id": "ad201efe-5a7c-4b36-b618-1ba09c179288"
+    },
+    {
+      "claim_id": "d7bcdc28-5306-46dd-b5e1-484ece3f53a9",
+      "result_id": "ad201efe-5a7c-4b36-b618-1ba09c179288"
+    },
+    {
+      "claim_id": "8a5aa38f-a7eb-4e71-afd7-876d283b994f",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "e1f9be0b-a6d1-4aa7-a8d3-e4cf4c6c0098",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "78cc646a-cfa9-4ee7-a4ae-b977a9e0c2b3",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "842c124e-01b8-47b7-860f-b90451745199",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "44cd6a73-115e-4834-a083-3a422448756b",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "0d19056a-5d7a-43b4-8cc3-6b3b03414d66",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "9c1e0bf5-274c-45c0-9d69-14ccae547664",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "f4fc0ddd-2724-4e57-8e9e-f5cff9c4ff4b",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "da3da0d4-8d60-40dd-bf6e-5c4c1e92aaa6",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "0ae6c94f-e3b2-4332-a6dc-a3a6231d05c0",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "6843f9bb-0ed1-48ae-b657-8e75c49bcca2",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "f633b7e0-9144-432a-bc4f-f6dad405fd55",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "016d313a-c52b-47fe-8ab0-788c2b648b02",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "80e6ff1d-96c8-45b6-a48f-090d999334e7",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "06302b42-69db-44a7-a476-27b2edc9dc1e",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "dadf3084-4b67-4ef2-b199-0cef18d7b7ba",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "d29aa73f-eade-4880-b210-6c1aac460eb0",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "0c745eb6-8078-4dbe-af2b-8b8f321d95e0",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "a978eaf5-89e9-4942-aaa4-6b35db235d22",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "5adcc87f-eaea-4ea4-b336-93f140c07bd8",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "9b565b54-4504-4d8d-84a1-c3e799354e08",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "79f92877-b554-4a87-9d16-21d91d9107c9",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    },
+    {
+      "claim_id": "28bee051-7db6-4d1c-996a-138cfef2aea2",
+      "result_id": "f1036dac-e4ca-4538-a8ad-9a0b9fbde441"
+    }
+  ],
+  "comparisons": []
+}

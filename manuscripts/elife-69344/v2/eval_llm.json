@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mitochondrial DNA accumulates mutations 10-30 times faster than nuclear genes in mammals due to higher mutation rates, uniparental inheritance, lack of recombination, and high ploidy, which limits purifying selection effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C63-C65 establish the paradox of rapid mtDNA mutation accumulation despite constraints on selection. These are well-supported by multiple citations to prior work and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C57",
+      "C70"
+    ],
+    "result": "The prevalence of mitochondrial mutations in human populations is approximately 1 in 200 (carriers), with mitochondrial diseases occurring in approximately 1 in 5000 births, while 99.5% of individuals carry <2% mutant mtDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C57, C70 provide consistent epidemiological data from human populations supported by citations to Elliott et al., 2008 and Schaefer et al., 2008. These values are used as benchmarks throughout the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C66"
+    ],
+    "result": "Despite rapid mutation accumulation, mitochondrial genes show strong signals of purifying selection, adaptive change, codon bias, and low transmission rates of severe mutations between generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C66 establish evidence for effective selection on mtDNA despite theoretical constraints. All claims are supported by citations to multiple independent studies, establishing the paradox that motivates the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C25",
+      "C97"
+    ],
+    "result": "Selection at the organelle level through selective pooling of high-quality mitochondria into the Balbiani body is the most potent mechanism for maintaining mitochondrial quality, more effective than germline bottlenecks or follicular atresia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C25, C97 represent the central conclusion of the manuscript. This is supported by both computational modeling (C10, C25) and evolutionary modeling (C97) that incorporate de novo mutations and segregation dynamics neglected in prior work. The conclusion is well-supported by the modeling results presented in Figures 2-5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C67"
+    ],
+    "result": "The germline bottleneck hypothesis, which proposes that tight bottlenecks generate variance in mutation loads to facilitate selection, is pervasive in the literature but estimates of bottleneck size span two orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C67 accurately characterize prior work on the bottleneck hypothesis with appropriate citations. The uncertainty in bottleneck size estimates is well-documented across multiple studies in mice and humans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C36",
+      "C37",
+      "C38",
+      "C44",
+      "C69",
+      "C71"
+    ],
+    "result": "Tighter bottlenecks increase segregational variance but require more rounds of mitochondrial replication to restore ploidy, resulting in greater de novo mutation input. Bottlenecks are only advantageous for rare individuals with high inherited mutation loads, not for the majority of the population with low mutation loads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C36-C38, C44, C69, C71 present the key finding that bottlenecks have opposing effects on variance and mutation input. This is well-supported by computational modeling results shown in Figure 2B-D and supplementary figures, with the trade-off clearly demonstrated across different mutation rates and initial loads.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C33"
+    ],
+    "result": "In humans and other mammals, germ cell numbers decline dramatically during development, from 7-8 million oocytes at mid-gestation to 1-2 million at birth, with continued loss throughout life leading to menopause.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18, C33 describe well-established developmental biology supported by multiple citations. The numerical values are consistent across studies and provide the biological foundation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C45",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Follicular atresia, involving loss of ~80% of oocytes during late gestation, has been historically attributed to cell death during maturation, but more recent work implicates nurse cell apoptosis. Cell-level selection produces little measurable reduction in mutation load and is unlikely to explain follicular atresia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C45, C76-C78 present both historical context and new modeling results. The computational modeling (Figure 3C) demonstrates that cell-level selection is ineffective at reducing mutation load except under unrealistic conditions, supporting the conclusion that it cannot explain follicular atresia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The Balbiani body forms through cytoplasmic connections between germline cyst cells, with approximately half the mitochondria from each nurse cell transferred to the primary oocyte, followed by nurse cell apoptosis. This process is conserved across many metazoan taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C79-C81 describe the biological basis of Balbiani body formation with extensive citations to experimental work in multiple species. The ~50% transfer rate and nurse cell death are well-documented phenomena.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Selective mitochondrial transfer into the Balbiani body achieves two complementary benefits: it purges mutations through preferential exclusion of mutant mitochondria and pools high-quality mitochondria, reducing the rounds of replication needed to reach extreme ploidy and thereby decreasing de novo mutation input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C52, C82-C85 present the mechanistic explanation for how Balbiani body formation maintains mitochondrial quality. This is well-supported by computational modeling results (Figure 4B-C and supplements) showing reduced mutation loads across a wide range of parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Nurse cells retain a higher fraction of mutant mitochondria but undergo apoptosis, removing mutants from the germ cell pool and explaining the need for extreme germ cell loss during late gestation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 provides a mechanistic explanation for follicular atresia based on the modeling results. This is supported by the computational model showing selective retention of mutants in nurse cells that then die, offering a parsimonious explanation for the previously puzzling phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C88"
+    ],
+    "result": "An evolutionary model evaluating long-term mutation-selection balance shows that strong selective pooling of mitochondria into the Balbiani body predicts observed prevalence of mitochondrial mutations and diseases in human populations under a wide range of mutation rates and bottleneck sizes, while selection at individual or cell levels alone cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59, C88 present the evolutionary modeling results that validate the Balbiani body mechanism against clinical data. Figure 5 clearly shows high likelihood for selective transfer models across parameter space, while bottleneck and cell selection models fail except at unrealistically low mutation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35"
+    ],
+    "result": "The computational model incorporates key features of germline development: zygotes contain ~500,000 mtDNA copies that segregate randomly during early embryonic divisions without replication, followed by PGC specification at 32 cells with ~128 mtDNA copies, resumption of replication during PGC proliferation, quiescence in primary oocytes, and restoration to ~500,000 copies during oocyte maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32, C34-C35 describe the computational model structure based on well-established developmental biology. All parameter values are supported by citations and the model assumptions (random segregation, replication-associated mutations) are justified by recent experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C114"
+    ],
+    "result": "Individual fitness is modeled using a concave fitness function where mitochondrial mutations have detrimental effects primarily at high loads >60%, reflecting the clinical observation that mitochondrial diseases manifest mainly at high mutation loads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C114 describe the fitness function used in the model, which is well-justified by citations to clinical studies of mitochondrial diseases (Rossignol et al., 2003; Kopinski et al., 2019; Wallace and Chalkia, 2013) showing threshold effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The reduction in mitochondrial copy number from zygote to PGCs should be understood as reestablishing typical cellular ploidy after early divisions without replication, which maintains homogeneity in mutation load among organ systems at differentiation. This contrasts with organisms with modular growth that lack early germline sequestration and extreme oocyte ploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 present a reinterpretation of the 'bottleneck' as a return to normal ploidy rather than an adaptive mechanism. This interpretation is supported by the modeling results and citations to comparative biology showing differences between animals with determinate vs. indeterminate growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Active spindle-associated mitochondrial migration to the generative oocyte occurs during polar body formation in meiosis I, and the authors predict that selection for mitochondrial quality occurs during this process with polar bodies retaining mutant mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is supported by citation to experimental observations (Dalton and Carroll, 2013), but C87 is explicitly stated as a prediction not tested in the model. The prediction is reasonable given the model's logic but lacks direct empirical or modeling support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Higher mutation rates (10^-7 per bp) strengthen conclusions about organelle-level selection, while lower rates are more consistent with weaker selection on individuals or cells, but such low rates are inconsistent with the 10-30-fold faster evolution of mtDNA compared to nuclear genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 present sensitivity analyses showing robustness of conclusions to mutation rate variation. The argument that very low mutation rates are inconsistent with observed evolutionary rates is well-supported by citations to Lynch et al., 2006 and Allio et al., 2017.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "While replication errors dominate mutation input, oxidative mutations may accumulate during extended oocyte quiescence (decades in humans), potentially contributing to menopause timing. Primary oocytes contain ~6000 mitochondria, and expansion to ~500,000 copies amplifies any mutations acquired during arrest. Metabolic quiescence helps repress mutation accumulation during this extended period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 discuss oxidative mutations and oocyte quiescence with appropriate citations. The speculation about menopause (C92) is clearly marked as such and is reasonable given the logic. The numerical values (C93) and amplification argument (C94-C95) are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Earlier modeling work neglected the introduction of de novo mitochondrial mutations produced by copying errors during replication, focusing instead on segregation of existing mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 accurately characterizes limitations of prior work with appropriate citations. This represents a key innovation of the current study and is well-documented in the literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The mitochondria-centric model explains multiple features of germline biology including extreme oocyte ploidy, sperm mitochondrial destruction leading to two sexes, and challenges the view that complex multicellularity requires passage through a single-celled stage. In animals, oocyte cytoplasm requires selective pooling of mtDNA from multiple progenitor cells rather than derivation from a single cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 present broader implications of the work for understanding germline evolution and multicellularity. These are well-supported by the modeling results and appropriate citations to theoretical work (Buss, 1987; Maynard Smith and Szathm\u00e1ry, 1995). The challenge to single-cell bottleneck theory is justified by the demonstration that mitochondrial quality control requires multi-cell cooperation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C107",
+      "C108",
+      "C110",
+      "C119"
+    ],
+    "result": "The computational model is implemented in MATLAB and incorporates specific assumptions about mtDNA segregation (binomial distribution with 50% probability to each daughter cell), lack of replication during early development, and mutation rates. The compact structure of mtDNA means point mutation rates approximate deleterious mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C107-C108, C110, C119 describe methodological details of the computational model. These are clearly stated and the assumptions are reasonable. The argument about mtDNA compactness (C119) is well-justified by the lack of intergenic sequences.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "X-ray radiation treatment (6 Gy) increases lipid droplet (LD) content in multiple cancer cell lines (H4, H460, MCF7, PC3, T24), with H460 showing the highest relative increase. This is accompanied by cell-type-specific changes in perilipin (PLIN) gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are supported by confocal microscopy imaging (Figure 1A,B) and qPCR data (Figure 1C) showing consistent LD increases across all tested cell lines after radiation treatment. The quantification methods are described, and the differential PLIN expression patterns are documented with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Radiation treatment induces ROS production in most tested cancer cell lines (H4, H460, MCF7, PC3 but not T24), with corresponding changes in antioxidant enzyme expression. Cells with higher LD content also exhibit higher ROS levels, suggesting a correlation between LD accumulation and oxidative stress management.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 are supported by CM-H2DCFDA probe measurements (Figure 1\u2014figure supplement 1A), qPCR analysis of antioxidant enzymes (Figure 1\u2014figure supplement 1B), and co-staining experiments (Figure 1\u2014figure supplement 2). However, the causal relationship between LDs and ROS buffering (C18) is inferred rather than directly demonstrated through mechanistic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C72"
+    ],
+    "result": "Radiation treatment enriches cancer cell populations with cells expressing cancer stem cell (CSC) markers (CD44, CD133, CD166, ALDH1) in most cell lines except PC3, suggesting radiation may select for cells with stem-like properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19-C24 and C72 are supported by qPCR data (Figure 1\u2014figure supplement 3) showing upregulation of some CSC markers. However, the authors acknowledge they did not screen all putative stemness markers, and the functional significance of these marker changes is not demonstrated. The connection to actual stem-like properties requires additional validation beyond mRNA expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C66",
+      "C76",
+      "C95"
+    ],
+    "result": "Cancer cells with high LD content (LDHigh) exhibit significantly higher clonogenic potential and radioresistance compared to cells with low LD content (LDLow) across all tested cell lines, independent of tissue origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C66, C76, and C95 are strongly supported by clonogenic assay data (Figure 2) showing consistent survival advantages for LDHigh populations across multiple radiation doses (2, 4, 6 Gy) and all five cell lines. The pre-sorting approach demonstrates this is an intrinsic cellular feature rather than a consequence of radiation treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C67"
+    ],
+    "result": "FTH1 protein expression is upregulated in all radioresistant cell lines after 6 Gy radiation, and FTH1 mRNA levels are higher in LDHigh compared to LDLow subpopulations, demonstrating a direct correlation between FTH1 and LD content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, and C67 are supported by Western blot analysis (Figure 3A,B) and qPCR data (Figure 3C) showing consistent FTH1 upregulation in radioresistant cells and correlation with LD content. The quantification methods are appropriate and statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C97"
+    ],
+    "result": "FTH1 silencing reduces LD content and increases radiosensitivity in H460 and MCF7 cells, with corresponding changes in iron homeostasis markers (TfR1 downregulation, FPN upregulation), demonstrating that LD content depends on FTH1 expression and iron metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 and C97 are supported by multiple complementary experiments: confocal microscopy showing reduced LDs (Figure 3E,F), qPCR showing altered iron metabolism genes (Figure 3\u2014figure supplement 1A,B), and clonogenic assays showing increased radiosensitivity (Figure 3G). The experimental design with appropriate controls strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C98"
+    ],
+    "result": "FTH1 overexpression in FTH1-silenced cells restores both LD content and radioresistance, demonstrating the reversibility of the FTH1-LD-radioresistance relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, and C98 are supported by rescue experiments showing FTH1 overexpression restores LD content (Figure 4C-D) and radioresistance (Figure 4E). This complementary gain-of-function approach strengthens the causal relationship established by the loss-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C82",
+      "C83",
+      "C99"
+    ],
+    "result": "Iron chelation with deferoxamine (DFO) induces LD accumulation and restores radioresistance in FTH1-silenced cells, demonstrating that iron homeostasis directly regulates LD content and radioresistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C82, C83, and C99 are supported by confocal microscopy (Figure 4F-G) and clonogenic assays (Figure 4H) showing DFO treatment rescues both LD content and radioresistance in FTH1-silenced cells. This pharmacological rescue experiment provides strong evidence for the iron-LD-radioresistance axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C84",
+      "C85",
+      "C96",
+      "C100"
+    ],
+    "result": "Iron homeostasis, mediated by FTH1, plays a central role in LD accumulation and is strongly correlated with radioresistance, with LDs serving as important mediators linking iron metabolism to radiation survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C84, C85, C96, and C100 represent integrative conclusions supported by the collective experimental evidence from FTH1 silencing, overexpression, and DFO treatment experiments. The bidirectional manipulation of the system (loss and gain of function, plus pharmacological intervention) provides strong support for this mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The FTH1-LD connection observed in this study is consistent with previous findings in IRP1/IRP2-ablated mice, where iron metabolism impairment caused severe LD accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by appropriate citations to Galy et al., 2008 and Galy, 2010. These prior studies provide independent validation of the FTH1-LD relationship in a different experimental system, strengthening the generalizability of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "TCGA database analysis shows that high PLIN5 expression in breast cancer patients correlates with better survival probability, consistent with the observation that radioresistant breast cancer cells show PLIN5 downregulation. Similar trends are observed for PLIN3 in low-grade glioma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C91 are supported by TCGA database analysis (Figure 5\u2014figure supplement 1) and the study's qPCR data. However, the authors acknowledge these clinical data come from untreated patients, limiting direct comparison to the radioresistant cell line data. The correlation is suggestive but requires validation in irradiated clinical samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C39",
+      "C45",
+      "C59",
+      "C60"
+    ],
+    "result": "Background knowledge claims about the Fenton reaction, ferritin structure and function, and deferoxamine as an FDA-approved iron chelator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, C39, C45, C59, and C60 represent established scientific knowledge that is well-documented in the literature. These provide appropriate context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C69",
+      "C70",
+      "C71",
+      "C74",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Introduction and background claims establishing the context of radiotherapy, cancer stem cells, lipid metabolism in cancer, iron metabolism, and prior work on FTH1 and LDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C80 (excluding those grouped elsewhere) represent background knowledge and literature review supported by appropriate citations. These establish the scientific context and rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C68",
+      "C81"
+    ],
+    "result": "Summary claims stating that radioresistant cancer cells are characterized by higher LD expression, that this provides evidence of a new role for LDs in radioresistance linked to iron metabolism, and that cells with reduced iron storage ability show reduced radioresistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C68, and C81 represent summary statements of the main findings, which are supported by the collective experimental evidence presented in the study. These integrate the key observations into overarching conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Speculative and future directions claims about LDs contributing to oxidative stress management, the need for deeper exploration of LD-iron homeostasis cross-talk, potential for novel radiotherapy strategies, and the need for robust predictive biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75, C92, C93, and C94 represent speculative statements and recommendations for future research. While reasonable based on the data, these are not directly tested hypotheses and represent interpretations and future directions rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

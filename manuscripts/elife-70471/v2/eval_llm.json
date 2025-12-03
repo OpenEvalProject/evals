@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C4",
+      "C5",
+      "C74"
+    ],
+    "result": "The authors developed IBS440, a dual-activatable fluorescent molecular rotor that responds to both increased cytoplasmic viscosity (emitting red fluorescence at 580-640 nm) and nitroreductase (converting to IBS224 with green fluorescence at 500-550 nm). The molecule consists of a pyridium derivative and dimethylaniline group that undergo intramolecular rotation, with viscosity restricting rotation to enhance fluorescence, while the nitro group is reduced by nitroreductase to trigger elimination and form IBS224.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 and C74 describe the chemical structure and dual-activation mechanism of IBS440, which are supported by the synthesis data, spectroscopic characterization (NMR, HRMS), and experimental validation in Figures 1A-D showing viscosity-dependent and nitroreductase-dependent fluorescence responses. The design rationale is clearly stated and experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "IBS440 exhibits viscosity-dependent fluorescence with an 18-fold enhancement from ethanol to glycerol, showing a linear relationship between log fluorescence intensity and log viscosity (R\u00b2=0.994), enabling quantitative viscosity determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by experimental data in Figure 1A-B showing the viscosity-dependent fluorescence response. The linear correlation coefficient of 0.994 indicates strong quantitative relationship, and the 18-fold enhancement is directly stated. The data support the conclusion that IBS440 can quantitatively measure viscosity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "IBS440 demonstrates sensitive detection of nitroreductase with linear response in the range 0-9.0 \u03bcg/mL and a detection limit of 20.9 ng/mL, achieved through reduction of the nitro group to amine followed by elimination to form IBS224.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by experimental data in Figures 1C-D showing linear fluorescence response to nitroreductase concentration. The LOD calculation using the standard equation (LOD=3\u03c3/k) with provided values (k=11166.424, \u03c3=77.883) is mathematically correct and yields the stated 20.9 ng/mL detection limit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "IBS440 is insensitive to solvent polarity (showing strong fluorescence only in high-viscosity glycerol) and highly selective for nitroreductase over other biologically relevant ions and species, making it suitable for detecting viscosity and nitroreductase in complex microenvironments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by experimental data in Figures 1E-F demonstrating selectivity. The polarity test shows fluorescence only in glycerol among various solvents, and the selectivity test shows specific response to nitroreductase+NADPH versus numerous interfering species. The conclusion about suitability for complex environments is a reasonable inference from these data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "IBS440 demonstrates pH stability (minimal fluorescence change at pH 4.0-9.0) and good photostability (only 0.6% decrease after 10 min and 2% after 1 hr of laser exposure), making it suitable for biological applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by experimental data in Figures 1G-H and Figure 1\u2014figure supplement 3. The pH stability data show minimal changes in physiological pH range, and photostability data demonstrate minimal photobleaching. These properties are important for biological applications and are adequately demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "IBS440 shows low cytotoxicity with cell viabilities >70% at concentrations up to 50 \u03bcM for 12-24 hr incubation in three cell lines (MHCC97H, A549, FaDu).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by CCK8 assay data shown in Figure 2\u2014figure supplement 1. The viability data across multiple concentrations and time points in three different cell lines demonstrate acceptable cytotoxicity profile for the experimental concentrations used (5 \u03bcM).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "IBS440 localizes primarily to mitochondria in live cells, with high colocalization coefficients (Pearson's correlation: 0.9363 for MHCC97H, 0.9386 for FaDu, 0.9257 for A549) when co-stained with Mito-Tracker Green.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by colocalization data in Figure 2A showing excellent overlap between IBS440 red fluorescence and Mito-Tracker Green. The Pearson's correlation coefficients >0.92 across three cell lines indicate strong mitochondrial localization. This is consistent with the cationic nature of the probe.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "IBS440 illuminates tumor cells in fresh tissue slices, with red fluorescence occurring around cell nuclei in mouse tumor tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by 3D confocal imaging data in Figure 2B showing IBS440 fluorescence around nuclei (stained with Hoechst) in fresh tumor tissue slices. This demonstrates the probe's ability to penetrate and stain intact tissue, which is important for the proposed application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "IBS440 serves as a hypoxia monitor in live cells, showing faint fluorescence under normoxic conditions (20% O\u2082) and increased fluorescence under hypoxic conditions (2% O\u2082), correlating with HIF-1\u03b1 expression and nitroreductase upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by Western blot data (Figure 2\u2014figure supplement 4) showing HIF-1\u03b1 expression under hypoxia and fluorescence imaging (Figure 2\u2014figure supplement 5) showing increased IBS440 signal under 2% O\u2082. The correlation between hypoxia, HIF-1\u03b1 expression, nitroreductase upregulation, and fluorescence signal is logically consistent and experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "IBS440 shows stronger fluorescence in cancerous cells (MHCC97H, A549, FaDu) compared to noncancerous cells (RAW264.7, A7r5) and in tumor tissue compared to normal mouse tissues, indicating increased viscosity in tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by imaging data in Figure 2\u2014figure supplement 6 (cells) and Figure 2\u2014figure supplement 7 (tissues). The differential fluorescence between cancer and normal cells/tissues is visually apparent. However, the inference that this reflects increased viscosity assumes no differences in probe uptake, which is addressed by the Mito-Tracker control experiments (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Lipophilic small molecules like IBS440 enter cells primarily by passive diffusion, and uptake is similar between cancerous and noncancerous cells, as demonstrated by Mito-Tracker Green experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by Mito-Tracker Green control experiments (Figure 2\u2014figure supplement 2-3) showing similar uptake in cancer and normal cells/tissues. This control is important for validating that differential IBS440 fluorescence reflects viscosity/nitroreductase differences rather than differential uptake. The passive diffusion mechanism is well-established for lipophilic molecules (citation provided).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "IBS440 responds to viscosity and nitroreductase in tumor-bearing mice both in vivo and ex vivo, with significant signals in tumor regions versus background in muscle, and stronger signals in tumor tissues compared to major organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by in vivo imaging (Figure 3A) and ex vivo organ imaging (Figure 3B) showing tumor-specific fluorescence in both detection channels. H&E staining (Figure 3C) validates tumor identity. This demonstrates the probe functions in intact animals and resected tissues, supporting potential clinical translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Using K-means clustering on training datasets, fluorescence thresholds were calculated for four cancer types: hepatocellular (160.3, 164.3), lung (164.4, 165.8), oral (164.7, 165.3), and renal (163.5, 167.1), enabling classification of specimens into definitely positive, suspiciously positive, and negative groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by training dataset analysis shown in Figures 4-5 and supplements. The K-means clustering approach is appropriate for establishing thresholds from the bivariate fluorescence data (viscosity and nitroreductase channels). The thresholds are clearly defined and used consistently for classification. However, the small sample sizes (5-9 patients per cancer type) limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "IBS440 achieved 100% specificity in screening tumor-free samples from positive ones in test datasets of liver (35 samples) and lung (16 samples) surgical margins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by test dataset validation shown in Figures 6-7 where all H&E-negative samples were correctly classified as fluorescence-negative. However, this represents specificity only\u2014no false positives. The manuscript does not report sensitivity (some fluorescence-positive samples were H&E-negative, suggesting false positives or sampling differences). The 100% specificity claim is accurate but incomplete without sensitivity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The fluorescence threshold varies slightly among cancer types and is highly instrument-specific, requiring calibration for different imaging systems and calling for further clinical trials on other commercial instruments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 acknowledge important limitations stated in the Discussion. The threshold variation among cancer types is evident from C66-C69, and instrument-specificity is a well-known issue in fluorescence imaging. The authors appropriately identify this as a limitation requiring future work, though it does not invalidate the proof-of-concept.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "IBS440 is a demonstrative probe requiring performance improvements (higher sensitivity, longer wavelength) for clinical applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is an appropriate acknowledgment of limitations stated in the Discussion. The authors recognize that while IBS440 demonstrates the dual-activation concept, optimization is needed for clinical translation. This is a reasonable assessment given the proof-of-concept nature of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Frozen section analysis is the standard for intraoperative margin assessment but has limitations including inadequate sampling, complex protocols, and time-consuming analysis that preclude comprehensive examination of all biopsies, potentially increasing risk of overlooking tumor involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C12 describe established clinical practice and its limitations, supported by multiple citations. These claims provide context for the clinical need addressed by the study. The characterization of frozen section limitations is well-documented in the surgical pathology literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Fluorescence-guided imaging has emerged as a promising tool in cancer surgery with advantages including simple implementation, excellent selectivity, and favorable biocompatibility, with probes developed to assess surgical margins by targeting tumor markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 describe the state of the field, supported by multiple citations. These claims establish the rationale for developing fluorescence-based approaches for margin assessment and position the current work within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C71",
+      "C72"
+    ],
+    "result": "Abnormal intracellular microenvironment, including hypoxia-induced nitroreductase overexpression and increased cytoplasmic viscosity, are established characteristics of cancer cells that can serve as biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20, C71-C72 describe established cancer biology supported by multiple citations spanning decades (including Claus 1942 for viscosity). These claims provide the biological rationale for the dual-marker approach. The characterization of these features as cancer hallmarks is well-supported in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Existing fluorescent probes visualize either hypoxia or viscosity individually and may be susceptible to microenvironmental fluctuations, leading to the hypothesis that integrated evaluation of both features might enhance accuracy of surgical specimen assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe prior work and state the study hypothesis. The limitation of single-marker probes (C22) is speculative but reasonable, and the hypothesis (C23) is logical and testable. This provides clear rationale for the dual-activation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "The dual-activatable fluorescent molecular rotor successfully imaged increases in cytoplasmic viscosity and hypoxia in cancer cells, demonstrating potential feasibility for pre-screening multiple resected tumor margins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C75-C76 summarize the main findings and propose the clinical application. These are supported by the collective experimental data from cells, tissues, and human specimens. However, the 'potential feasibility' language appropriately indicates this is proof-of-concept requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Current surgical pathology practice relies on visual inspection and palpation for prioritizing specimens, and comprehensive frozen section analysis of all specimens is impractical due to resource constraints, potentially causing inadequate sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 describe current clinical practice and its limitations, providing context for the proposed pre-screening strategy. These are reasonable characterizations of surgical pathology workflow supported by citation and clinical experience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Recombinant E. coli nitroreductase was successfully expressed and purified with molecular weight of 27 kD, and blue-shifts were observed in UV-vis absorption spectra of IBS440 and IBS224.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 describe methodological details supported by Figure 1\u2014figure supplement 1 (SDS-PAGE) and Figure 1\u2014figure supplement 2 (UV-vis spectra). These are straightforward experimental observations validating reagent preparation and spectroscopic properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "HIF-1\u03b1 is overexpressed in common human cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is established knowledge supported by citation. This provides context for using HIF-1\u03b1 as a hypoxia marker in the validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Hypoxia-induced nitroreductase and cytoplasmic viscosity are biochemical and biophysical markers of cancer cells, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 state the biological basis for the dual-marker approach. These are supported by the cited literature and experimental validation throughout the manuscript showing differential expression/levels in cancer versus normal cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The fluorescent molecular rotor achieved 100% specificity in discriminating lung and liver cancers from normal tissue, allowing pre-screening of tumor-free surgical margins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C8 states 100% specificity, which is supported by the test dataset results (C70). However, C9's claim about 'allowing pre-screening' is an inference about clinical utility that requires prospective validation. The specificity result is from a limited retrospective study (35 liver, 16 lung samples from 2 patients total), and the clinical workflow has not been validated. The result is promising but requires further validation before the clinical application can be confirmed.",
+    "result_type": "MAJOR"
+  }
+]

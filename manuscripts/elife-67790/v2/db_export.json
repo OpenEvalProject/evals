@@ -1,0 +1,1407 @@
+{
+  "submission": {
+    "id": "90d58605-4589-46df-a323-913cea9531cf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:21:12.981337Z",
+    "updated_at": "2025-12-03T15:21:12.981337Z"
+  },
+  "content": [
+    {
+      "id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "submission_id": "90d58605-4589-46df-a323-913cea9531cf",
+      "content_type": "manuscript",
+      "content_text": "# Most cancers carry a substantial deleterious load due to Hill-Robertson interference\n\n## Authors\n\n- Susanne Tilk<sup>1</sup> ([ORCID: 0000-0002-9156-9360](https://orcid.org/0000-0002-9156-9360)) \u2020\n- Svyatoslav Tkachenko<sup>2</sup>\n- Christina Curtis<sup>3</sup> ([ORCID: 0000-0003-0166-3802](https://orcid.org/0000-0003-0166-3802))\n- Dmitri A Petrov<sup>1</sup> ([ORCID: 0000-0002-3664-9130](https://orcid.org/0000-0002-3664-9130))\n- Christopher D McFarland<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Biology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n2. Department of Genetics and Genome Sciences, Case Western Reserve University Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))\n3. Department of Medicine, Division of Oncology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n4. Department of Genetics, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n5. Stanford Cancer Institute, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCancer genomes exhibit surprisingly weak signatures of negative selection (Martincorena et al., 2017; Weghorn, 2017). This may be because selective pressures are relaxed or because genome-wide linkage prevents deleterious mutations from being removed (Hill-Robertson interference; Hill and Robertson, 1966). By stratifying tumors by their genome-wide mutational burden, we observe negative selection (dN/dS ~ 0.56) in low mutational burden tumors, while remaining cancers exhibit dN/dS ratios ~1. This suggests that most tumors do not remove deleterious passengers. To buffer against deleterious passengers, tumors upregulate heat shock pathways as their mutational burden increases. Finally, evolutionary modeling finds that Hill-Robertson interference alone can reproduce patterns of attenuated selection and estimates the total fitness cost of passengers to be 46% per cell on average. Collectively, our findings suggest that the lack of observed negative selection in most tumors is not due to relaxed selective pressures, but rather the inability of selection to remove deleterious mutations in the presence of genome-wide linkage.\n\n## Introduction\n\nTumor progression is an evolutionary process acting on somatic cells within the body. These cells acquire mutations over time that can alter cellular fitness by either increasing or decreasing the rates of cell division and/or cell death. Mutations which increase cellular fitness (drivers) are observed in cancer genomes more frequently because natural selection enriches their prevalence within the tumor population (Martincorena et al., 2017; Weghorn and Sunyaev, 2017). This increased prevalence of mutations across patients within specific genes is used to identify driver genes. Conversely, mutations that decrease cellular fitness (deleterious passengers) are expected to be observed less frequently. This enrichment or depletion is often measured by comparing the expected rate of nonsynonymous mutations (dN) accruing within a region of the genome to the expected rate of synonymous mutations (dS), which are presumed to be neutral. This ratio, dN/dS, is expected to be below 1 when the majority of nonsynonymous mutations are deleterious and removed by natural selection, be ~1 when all nonsynonymous mutations are neutral, and can be >1 when a substantial proportion of nonsynonymous mutations are advantageous.\n\nTwo recent analyses of dN/dS patterns in cancer genomes found that for most nondriver genes dN/dS is ~1 and that only 0.1\u20130.4% of genes exhibit detectable negative selection (dN/dS < 1) (Martincorena et al., 2017; Weghorn and Sunyaev, 2017).This differs substantially from patterns in human germline evolution where most genes show signatures of negative selection (dN/dS ~ 0.4) (Martincorena et al., 2017). Two explanations for this difference have been posited. First, the vast majority of nonsynonymous mutations may not be deleterious in somatic cellular evolution despite their deleterious effects on the organism. While most genes may be critical for proper organismal development and multicellular functioning, they may not be essential for clonal tumor growth. In this hypothesis, negative selection (dN/dS < 1) should be observed only within essential genes and absent elsewhere (dN/dS ~ 1). While appealing in principle, most germline selection against nonsynonymous variants appears to be driven by protein misfolding toxicity (Drummond and Wilke, 2008; Lobkovsky et al., 2010), in addition to gene essentiality. These damaging folding effects ought to persist in somatic evolution.\n\nA second hypothesis is that even though many nonsynonymous mutations are deleterious in somatic cells, natural selection fails to remove them. One possible reason for this inefficiency is the unique challenge of evolving without recombination. Unlike sexually recombining germline evolution, tumors must evolve under genome-wide linkage that creates interference between mutations, known as Hill-Robertson interference, which reduces the efficiency of natural selection (Hill and Robertson, 1966). Without recombination to link and unlink combinations of mutations, natural selection must act on entire genomes \u2013 not individual mutations \u2013 and select for clones with combinations of mutations of better aggregate fitness. Thus, advantageous drivers may not fix in the population, if they arise on an unfit background, and conversely, deleterious passengers can fix, if they arise on fit backgrounds.\n\nThe inability of asexuals to eliminate deleterious passengers is driven by two Hill-Robertson interference processes: hitchhiking and Muller\u2019s ratchet (Figure 1A). Hitchhiking occurs when a strong driver arises within a clone already harboring several passengers. Because these passengers cannot be unlinked from the driver under selection, they are carried with the driver to a greater frequency in the population. Muller\u2019s ratchet is a process where deleterious mutations continually accrue within different clones in the population until natural selection is overwhelmed. Whenever the fittest clone in an asexual population is lost through genetic drift, the maximum fitness of the population declines to the next most fit clone (Figure 1B). The rate of hitchhiking and Muller\u2019s ratchet both increase with the genome-wide mutation rate (Johnson, 1999; Neher and Shraiman, 2012). Therefore, the second hypothesis predicts that selection against deleterious passengers should be more efficient (dN/dS < 1) in tumors with lower mutational burdens.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig1-v2.jpg)\n\n**Figure 1.:** (A) Genetic hitchhiking. Each number identifies a different segment of a clone genome within a tumor. De novo beneficial driver mutations that arise in a clone can drive other mutations (passengers) in the clone to high frequencies (black dotted column). If the passenger is deleterious, both beneficial drivers and deleterious passengers can accumulate. (B) Muller\u2019s ratchet. As the mutation rate within a tumor increases, deleterious passengers accumulate on more clones. If the fittest clone within the tumor is lost through genetic drift (black dotted row), the overall fitness of the population will decline.\n\nHere, we leverage the 10,000-fold variation in tumor mutational burden across 33 cancer types to quantify the extent that selection attenuates, and thus becomes more inefficient, as the mutational burden increases. Using dN/dS, we find that selection against deleterious passengers and in favor of advantageous drivers is most efficient in low mutational burden cancers. Furthermore, low mutational burden cancers exhibit efficient selection across cancer subtypes, as well as within subclonal mutations, homozygous mutations, somatic copy number alterations (CNAs), and essential genes. Additionally, high mutational burden tumors appear to mitigate this deleterious load by upregulating protein folding and degradation machinery. Finally, using evolutionary modeling, we find that Hill-Robertson interference alone can in principle explain these observed patterns of selection. Modeling predicts that most cancers carry a substantial deleterious burden (~46%) that necessitates the acquisition of multiple strong drivers (~5) in malignancies that together provide a benefit of ~119%. Collectively, these results explain why signatures of selection are largely absent in cancers with elevated mutational burdens and indicate that the vast majority of tumors harbor a large mutational load.\n\n## Results\n\n### Null models of mutagenesis in cancer\n\nMutational processes in cancer are heterogeneous, which can bias dN/dS estimates of selective pressures. dN/dS overcomes this issue by dividing observed mutation counts by what is expected under neutral evolution using null models. These null models must account for mutational biases that are often specific to cancer types and genomic regions.\n\nTo ensure our dN/dS calculations are robust and reproducible, we applied two different methods to account for mutational biases. The first approach uses a previously established parametric mutational model (dNdScv) that explicitly estimates the background mutational bias of each gene in its calculation of dN/dS (Martincorena et al., 2017). The second approach uses a permutation-based, non-parametric (parameter-free) estimation of dN/dS. In this approach, every observed mutation is permuted while preserving the gene, patient samples, specific base change (e.g. A>T) and its tri-nucleotide context. Note that permutations do not preserve the codon position of a mutation and thus can change its protein coding effect (nonsynonymous vs. synonymous). The permutations are then tallied for both nonsynonymous dN(permuted) and synonymous dS(permuted) substitutions (Figure 2\u2014figure supplement 1) and used as expected proportional values for the observed number of nonsynonymous dN(observed) (or simply dN) and synonymous dS(observed) (dS) mutations in the absence of selection. The unbiased effects of selection on a gene, dN/dS, is then:\n\n$$\n\\frac{dN}{dS}=\\frac{d_{N}^{(observed)}/d_{N}^{(permuted)}}{d_{S}^{(observed)}/d_{S}^{(permuted)}}\n$$\n\nFor all cancer types and patient samples, p-values and confidence intervals are determined by bootstrapping patient samples. Note that this permutation procedure will account for gene and tumor-level mutational biases (e.g. neighboring bases [Alexandrov and Stratton, 2014], transcription-coupled repair, S phase timing [Haradhvala et al., 2016], mutator phenotypes) and their covariation. We confirmed that this approach accurately measures selection even in the presence of simulated mutational biases (Materials and methods, Figure 2\u2014figure supplement 2A). In addition, this approach also reliably measures the absence of selection (dN/dS = 1) in weakly expressed genes (Figure 2\u2014figure supplement 2C).\n\nWe find that both the parametric and non-parametric approaches identify similar patterns of selection (Figure 2A). Since parametric mutational models can become very complex in cancer (exceeding 5000 parameters in some cases; Martincorena et al., 2017; Zapata et al., 2018), we elected to use the non-parametric approach, which makes fewer assumptions about underlying mutational processes, in subsequent calculations of dN/dS.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-v2.jpg)\n\n**Figure 2.:** (A) dN/dS of passenger (red) and driver (green) gene sets within 10,288 tumors in TCGA stratified by total number of substitutions present in the tumor (dN(observed)+dS(observed)). dN/dS is calculated with error bars using a permutation-based null model (left) and dNdScv (right). A dN/dS of 1 (solid black line) is expected under neutrality. Solid gray line denotes pan-cancer genome-wide dN/dS. (B) Fraction of pathogenic missense mutations, annotated by PolyPhen2, in the same driver and passenger gene sets also stratified by total number of substitutions. Black line denotes the pathogenic fraction of missense mutations across the entire human genome. (C) Breakpoint frequency of copy number alterations (CNAs) that reside within exonic (dE) to intergenic (dI) regions within putative driver and passenger gene sets (identified by GISTIC 2.0, Materials and methods) in tumors stratified by the total number of CNAs present in each tumor and separated by CNA length. Solid black line of 1 denotes values expected under neutrality. (D) dN/dS of clonal (variant allele frequency [VAF] > 0.2; darker colors) and subclonal (VAF < 0.2; lighter colors) passenger and driver gene sets in tumors stratified by the total number of substitutions. A dN/dS of 1 (solid black line) is expected under neutrality. (A\u2013D) Histogram counts of tumors within mutational burden bins are shown in the top panels. (E) Driver and passenger dN/dS values of the highest and lowest defined mutational burden bin in broad anatomical sub-categories. (F) Same as (E), except for all specific cancer subtypes with \u2265500 samples. (G) Z-scores of median gene expression within all genes, HSP90, Chaperonin, and Proteasome gene sets averaged across patients (relative to an average tumor) stratified by the total number of substitutions. All shaded error bars are 95% confidence intervals determined by bootstrap sampling.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Permuted synonymous and nonsynonymous counts are used to account for mutational biases in dN/dS calculations. Observed mutations and their tri-nucleotide context is shown in a solid gray bar. Permuted mutations with the same tri-nucleotide context are shown in dashed gray lines. Note that permutations do not preserve the codon position of a mutation and can alter protein coding effect (nonsynonymous vs. synonymous).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Simulations (N=100) of negative selection under extreme mutational bias scenarios where all mutations are generated from a single mutational signature (e.g. APOBEC or smoking, COSMIC signatures 1\u20139, gray titles). Bias-corrected dN/dS values calculated from these simulations are compared to simulated levels of negative selection. Colors denote bias-corrected dN/dS before negative selection was simulated, which is expected to be neutral (~1). Negative selection is simulated as the probability of randomly removing nonsynonymous mutations, (e.g. a simulated \u2018true\u2019 dN/dS of 0.1 defines simulations where each nonsynonymous mutation had a 90% probability of removal). Shapes correspond to different numbers of sites simulated. Black line identifies perfect correspondence between bias-correct dN/dS and simulated (true) dN/dS. (B) 95% confidence intervals of dN/dS in passenger mutations randomly sampled in blue (N=1000) from high mutational burden tumors (>10 substitutions) in the same proportion of sites as binned in Figure 2A. Red line denotes observed dN/dS of passengers in TCGA as depicted in Figure 2A. (C) dN/dS of weakly expressed genes (defined as having <1 TPM across all samples in Genotype-Tissue Expression [GTEx]) in tumors stratified by the total number of substitutions within TCGA. Solid black shows dN/dS values of 1, expected under neutrality. Error bars are shaded 95% confidence intervals determined by bootstrap sampling.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** dN/dS of passenger and driver gene sets (Bailey et al., 2018) within tumors in TCGA stratified by the total number of substitutions present in the tumor (dN+dS). dN/dS is calculated with error bars using a permutation-based null model (left) and dNdScv (right). Tumor suppressors (purple), oncogenes (blue), and pan-cancer driver (green) gene sets are shown. Solid black shows dN/dS values of 1, expected under neutrality. Error bars are 95% confidence intervals determined by bootstrap sampling.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Fraction of mutations that overlap all germline polymorphisms in the 1000 Genomes Project within tumors stratified by the total number of substitutions. (B\u2013D) Fraction of mutations that overlap only common (MAF > 0.05, 0.01, or 0.005) polymorphisms in the 1000 Genomes Project within tumors stratified by the total number of substitutions in TCGA. Colors denote mutations that are synonymous (blue) or nonsynonymous (red). Strong negative germline selection is expected only within common polymorphisms. No mutations within low mutational burden cancers (\u226410 substitutions) overlap common polymorphic sites (when MAF > 0.1). Note that there are no synonymous mutations at MAF > 0.05 within low mutational burden cancers that could lower dN/dS rates through germline contamination.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** dN/dS values of passenger and different driver gene sets within tumors in TCGA stratified by the total number of substitutions present in the tumor (dN+dS). dN/dS is calculated with error bars using a permutation-based null model (left) and dNdScv (right). Pan-cancer driver (lime) and cancer-specific (blue) driver gene sets identified by Bailey et al., 2018, are shown. Pan-cancer driver genes identified in this study also exhibited stronger signatures of positive selection than driver genes identified by COSMIC (Futreal et al., 2004) (light green) and Intogen (Gonzalez-Perez et al., 2013) (forest green). Hence, pan-cancer drivers from Bailey et al., 2018, were used throughout this study. Cancer-specific gene sets are defined as the top 100 recurrently mutated genes within the particular cancer type, and used separately for each of the 33 cancer types in TCGA. Solid black shows dN/dS values of 1, expected under neutrality. Error bars are 95% confidence intervals determined by bootstrap sampling.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (A) Correlation between tumor purity (calculated by GDC using the ABSOLUTE [Johnson, 1999] algorithm, Materials and methods) and the total number of substitutions in all TCGA samples (R2 = \u22120.01). Blue line denotes a linear regression fit and gray colors denote the 95% confidence intervals for the fit of this linear model. (B) Boxplot of tumor purity in TCGA samples stratified into low mutation rate bins (1\u20133 and 3\u201310 substitutions) and high mutation rate bins (10\u201310,000 substitutions). (C) dN/dS in driver (green) and passenger (red) gene sets of tumors in TCGA stratified by the total number of substitutions after removing tumors below various purity thresholds using a permutation-based null model. Values at the top denote the threshold of tumors removed from the analysis (e.g. 0.3 shows dN/dS of tumors with a purity \u22650.3). (D) Number of mutations in each bin within (C) after removing tumors at increasing purity thresholds. Error bars are 95% confidence intervals determined by bootstrap sampling.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** (A) dN/dS in driver (green), passenger (red), and all gene sets (gray) of tumors in TCGA stratified by the total number of substitutions using nine bins of equal width (log-scale TMB), as depicted in Figure 2. Left panel uses our non-parametric null model of mutagenesis to calculate dN/dS, while the right panel uses dNdScv (from Martincorena et al., 2017) as a null model of mutagenesis. Error bars are 95% confidence intervals determined by bootstrap sampling. (B) dN/dS of driver (green), passenger (red), and all gene sets (gray) of tumors in TCGA stratified by the total number of substitutions using 20 bins of equal sample sizes, as was done in Figure 5 of Martincorena et al., 2017. The binning scheme and linear axes compress results at low TMB. To replicate Martincorena et al., 2017, three tumor types were also excluded in this analysis: UVM, CHOL, and DLBC. dNdScv was used as a null model of mutagenesis. dN/dS for driver and passenger genes sets was not calculated in Figure 5 of Martincorena et al., 2017. Error bars are 95% confidence intervals derived from dNdScv.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** The stop and start location of each observed CNA was randomly permuted, while preserving its length. dE/dI was calculated for CNAs (with and without non-focal amplifications) using both metrics: breakpoint frequency and fractional overlap. dE/dI values of random permutations are ~1, as expected for CNAs not experiencing selection.\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp9-v2.jpg)\n\n**Figure 2\u2014figure supplement 9.:** Calculations of fractional overlap (Zack et al., 2013) of exomic regions (dE) to intergenic (dI) regions within passenger and GISTIC (Mermel et al., 2011) driver gene sets in tumors stratified by the total number of CNAs present. dE/dI is shown separately for CNAs >100 kb in length (right) and smaller than 100 kb in length (left). Solid black line of 1 denotes values expected under neutrality. Error bars are 95% confidence intervals determined by bootstrap sampling.\n\n![Figure 2\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp10-v2.jpg)\n\n**Figure 2\u2014figure supplement 10.:** dN/dS calculations within clonal and subclonal passenger and driver gene sets within tumors in TCGA stratified by the total number of substitutions using a permutation-based null model of mutagenesis. Title of each graph corresponds to increasing VAF threshold value used to define \u2018subclonal\u2019 (e.g. mutations with a VAF > 0.2 are clonal; mutations with a VAF < 0.2 are subclonal). Darker colors denote clonal passengers and drivers, while lighter colors denote subclonal passengers and drivers. \u2018All Passengers\u2019 and \u2018All Drivers\u2019 contain the entire set of all clonal and subclonal passengers or drivers as a reference. Solid line of 1 is shown of dN/dS values expected under neutrality. Error bars are 95% confidence intervals determined by bootstrap sampling.\n\n![Figure 2\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp11-v2.jpg)\n\n**Figure 2\u2014figure supplement 11.:** dN/dS of passengers within different functional gene sets in the highest (black) and lowest (gray) mutational burden bin across all tumors using a permutation-based null model of mutagenesis. Dotted line denotes genome-wide dN/dS of passengers for all mutation rates. Error bars are 95% confidence intervals determined by bootstrap sampling. Patterns of negative selection are not specific to any functional category shown here. Functional gene sets were chosen based on previous literature that supports these categories as being relevant to protein misfolding (i.e. translation, transcription, highly expressed genes, genes with high degrees of protein-protein interaction) (Drummond and Wilke, 2009) or has been previously reported to be under constraint (e.g. genes related to chromosome segregation and essential or housekeeping genes) (Zhang and Li, 2004; Potapova and Gorbsky, 2017).\n\n![Figure 2\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp12-v2.jpg)\n\n**Figure 2\u2014figure supplement 12.:** (A) dN/dS in passenger and driver gene sets within tumors stratified by the total number of substitutions in broad tumor sub-categories. Error bars are 95% confidence intervals determined by bootstrap sampling. (B) Log-scale heatmap of dN/dS values in passenger and driver gene sets of tumors stratified by the total number of substitutions within all 33 cancer subtypes in TCGA. dN/dS of the lowest and highest mutational burden bin and the total number of tumors for each cancer subtype are shown.\n\n![Figure 2\u2014figure supplement 13.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp13-v2.jpg)\n\n**Figure 2\u2014figure supplement 13.:** dE/dI in driver (green) and passenger (red) gene sets in tumors stratified by the total number of CNAs for the six most commonly sequenced cancer subtypes (presented in Figure 2) calculated using (A) normalized fractional overlap and (B) breakpoint frequency. dE/dI in driven and passenger gene sets in tumors stratified into broad cancer groups calculated using (C) normalized fractional overlap and (D) normalized breakpoint frequency. dE/dI > 1 suggests positive selection, while dE/dI < 1 suggests negative selection.\n\n![Figure 2\u2014figure supplement 14.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp14-v2.jpg)\n\n**Figure 2\u2014figure supplement 14.:** (A) Z-scores of median gene expression of (i) all genes, (ii) HSP90, (iii) Chaperonins, and (iv) the Proteasome averaged across tumors stratified by the total number of copy number alterations (CNAs). Expression of HSP90, Chaperonins, and Proteasome gene sets increases with the mutational burden of tumors (weighted R2 of 0.81, 0.87, and 0.86, respectively). Error bars are 95% confidence intervals determined by bootstrap sampling. (B) Correlation coefficients (r) of the expression of each gene in the genome (gray) in tumors stratified by the total number of substitutions. Shown in arrows are the correlation coefficients for HSP90 (blue), Chaperonins (orange), and the Proteasome (purple). Dashed lines in intervals of 0.25 are for viewing purposes only. (C) Median correlation coefficients of 10 million randomly sampled gene sets of the same size as HSP90, Chaperonins, and the Proteasome (n=28) in gray. Red line denotes the median correlation coefficients of genes in HSP90, Chaperonins, and the Proteasome (0.66). (D\u2013E) Log-scale heatmap of changes in the Z-scores of median gene expression values of gene sets in for tumors stratified by the total number of substitutions (D) or CNAs (E) for cancer subtypes in TCGA. Changes in the mean gene expression of all genes, HSP90, Chaperonins, and Proteasome gene sets in the lowest and highest mutational burden bin for each cancer subtype are shown. Colors denote whether changes in gene expression from low mutational burden bins to high mutational burden bins are positive (green) or negative (red). Expression of HSP90, Chaperonins, and Proteasome gene sets increases with the mutational burden of tumors across cancer types stratified by the number of somatic nucleotide variants (SNVs) (p<0.05, p<1.3 \u00d7 10\u20134, p<5.2 \u00d7 10\u20134, respectively; Wilcoxon signed-rank test) and CNAs (p>0.05, p<9.3 \u00d7 10\u20133, p<1.9 \u00d7 10\u20132 respectively; Wilcoxon signed-rank test).\n\n![Figure 2\u2014figure supplement 15.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp15-v2.jpg)\n\n**Figure 2\u2014figure supplement 15.:** dN/dS values in passenger and driver gene sets within tumors in TCGA stratified by the total number of substitutions when using low-quality mutations (bottom panels, \u2018Mutect2 SNP Calls\u2019) and high-quality mutations (top panels, \u2018MC3 SNP Calls\u2019). \u2018MC3 SNP Calls\u2019 are a consensus set of mutations from seven different mutation callers and \u2018Mutect2 SNP calls\u2019 are mutations calls from one mutation caller. dN/dS is calculated with error bars using a permutation-based null model (left) and dNdScv (right). A dN/dS of 1 (solid black line) is expected under neutrality. Error bars are 95% confidence intervals determined by bootstrap sampling.\n\n![Figure 2\u2014figure supplement 16.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig2-figsupp16-v2.jpg)\n\n**Figure 2\u2014figure supplement 16.:** (A\u2013D) all report the total number of samples used in their respective figure pane within Figure 2. (A) Counts of mutations in passenger (red) and driver (green) gene sets within tumors stratified by the total number of substitutions in ICGC and TCGA. (B) Counts of the fraction of pathogenic missense mutations, annotated by PolyPhen2, in the same driver and passenger gene sets also stratified by total number of substitutions. (C) Counts of copy number alterations (CNAs) that reside within putative driver and passenger gene sets (identified by GISTIC 2.0, Materials and methods) in tumors stratified by the total number of CNAs and separated by CNA length. (D) Counts of clonal (VAF > 0.2; darker colors) and subclonal (VAF < 0.2; lighter colors) passenger and driver gene sets in tumors stratified by the total number of substitutions.\n\n### Attenuation of selection in drivers and passengers for elevated mutational burden tumors\n\nWe estimated dN/dS patterns in both driver and passenger gene sets across 10,288 tumors from TCGA aggregated over 33 cancer types (Ellrott et al., 2018) (Materials and methods). Since TCGA is composed of whole-exome data, which limits our ability to assess mutations in non-coding regions, we elected to use the total number of protein-coding mutations as our proxy for the mutational burden of tumors. To quantify the extent that selection attenuates as the mutational burden increases, we stratified tumors into bins based on their total number of substitutions on a log-scale. For each bin of tumors, we pooled all of the variants together and estimated dN/dS jointly. Consistent with the inefficient selection model, whereby selection fails to eliminate deleterious mutations in high mutational burden tumors, we observe pervasive selection against passengers exclusively in tumors with low mutational burdens (dN/dS ~ 0.56 in tumors with \u22643 substitutions, while dN/dS ~ 0.93 in tumors with >10 substitutions, Figure 2A). We observed little negative selection in passenger genes when aggregating tumors across all mutational burdens (dN/dS ~ 0.93), which is broadly similar to previous estimates (Martincorena et al., 2017; Weghorn and Sunyaev, 2017; Zapata et al., 2018; Ostrow et al., 2014).\n\nWe confirmed that negative selection on passengers is specific to low mutational burden tumors and not biased by small sample sizes (Figure 2\u2014figure supplement 2B). We randomly sampled passengers from high mutational burden tumors (>10 substitutions) 1000 times using the same bin sizes in Figure 2A and calculated dN/dS. Within the smallest bin size (N=168 somatic nucleotide variant [SNVs]), negative selection on passengers sampled from high mutational burden tumors was absent (average dN/dS ~ 0.96) compared to observed dN/dS in low mutational burden tumors (dN/dS ~ 0.56; p<2.2\u201316). In fact, only 1.7% of randomly sampled sets of sites had similar signals of negative selection (dN/dS < 0.56).\n\nAlso consistent with the inefficient selection model, drivers exhibit a similar but opposing trend of attenuated selection at elevated mutational burdens (dN/dS ~ 2.7 when in tumors with \u22643 substitutions and dN/dS gradually declines to ~1.16 in tumors with >100 substitutions). This pattern is not specific to drivers that are oncogenes or tumor suppressors (Figure 2\u2014figure supplement 3). While the attenuation of selection against passengers in higher mutational burden tumors is a novel discovery, this pattern among drivers has been reported previously (Martincorena et al., 2017). Furthermore, we confirmed that these patterns are robust to the choices that we made in our analysis pipeline. These include the: (i) effects of germline SNP contamination (Figure 2\u2014figure supplement 4), (ii) choice of driver gene set (Bailey et al., 2018, IntOGen Gonzalez-Perez et al., 2013, and COSMIC Tate et al., 2019; Forbes et al., 2008, Figure 2\u2014figure supplement 5), (iii) differences in tumor purity and thresholding (Figure 2\u2014figure supplement 6), and (iv) null model of mutagenesis (dNdScv, Figure 2A and Figure 2\u2014figure supplement 7; Martincorena et al., 2017) (Materials and methods).\n\nIf negative selection is more pronounced in low mutational burden tumors, then the nonsynonymous mutations observed should also be less functionally consequential. By annotating the functional effect of all missense mutations using PolyPhen2 (Adzhubei et al., 2010; Figure 2B), we indeed find that observed nonsynonymous passengers are less damaging in low mutational burden cancers. Similarly, driver mutations become less functionally consequential as mutational burden increases, as expected for mutations experiencing inefficient positive selection (Figure 2B). Together these two trends provide additional and orthogonal evidence that selective forces on nonsynonymous mutations are more efficient in low mutational burden cancers.\n\nSince all mutational types experience Hill-Robertson interference, attenuated selection should also persist in CNAs. We used two previously published statistics to quantify selection in CNAs: breakpoint frequency (Korbel et al., 2007) and fractional overlap (Zack et al., 2013). For both measures, we compare the number of CNAs that either terminate (breakpoint frequency) within or partially overlap (fractional overlap) Exonic regions of the genome relative to non-coding (Intergenic and Intronic) regions (dE/dI, see Materials and methods). Like dN/dS, dE/dI is expected to be <1 in genomic regions experiencing negative selection, >1 in regions experiencing positive selection (e.g. driver genes), and ~1 when selection is absent or inefficient (Figure 2\u2014figure supplement 8). Using dE/dI, we observe attenuating selection in both driver and passenger CNAs as the total number of CNAs increases for both breakpoint frequency (Figure 2C) and fractional overlap (Figure 2\u2014figure supplement 9). While CNAs of all lengths experience attenuated selection, CNAs longer than the average gene length (>100 KB) experience greater selective pressures in drivers. Collectively, these results strongly support the inefficient selection model and argue that the observed patterns must be due to a universal force in tumor evolution. We find that selection consistently attenuates in both drivers and passengers across all cancers as mutational burden increases.\n\n### Strong selection in low mutational burden tumors cannot be explained by mutational timing, gene function, or tumor type\n\nWe next tested alternative hypotheses to the inefficient selection model. We considered the possibility that selection is strong only during normal tissue development, but absent after cells have transformed to malignancy. This would disproportionately affect low mutational burden tumors, as a greater proportion of their mutations arise prior to tumor transformation. If true, then attenuated selection should be absent in subclonal mutations, which must arise during tumor growth. However, selection clearly attenuates with increasing mutational burden for the subset of likely subclonal mutations with variant allele frequency (VAF) below 20% (Figure 2D and Figure 2\u2014figure supplement 10). Although selection attenuates in drivers and passengers in both subclonal and clonal mutations, selection is weaker in both drivers and passengers with lower VAFs. Weaker efficiency of selection among less frequent variants is expected under a range of population genetic models (Messer, 2009) and especially so in rapidly expanding, spatially constrained cancers (Sottoriva et al., 2015). In addition, heterozygous mutations, to the extent they are only partially dominant (L\u00f3pez et al., 2020), are also expected to exhibit lower VAFs and experience weaker selection.\n\nNext, we considered and rejected the possibility that attenuated selection is limited to particular types of genes. We first annotated our observed mutations by different functional categories and Gene Ontology (GO) terms (Harris et al., 2004) and find that negative selection is not specific to any particular gene functional category expected to be under constraint, and specifically not limited to essential or housekeeping genes \u2013 a key prediction of the \u2018weak selection\u2019 model (Martincorena et al., 2017; Figure 2\u2014figure supplement 11, p<0.05, Wilcoxon signed-rank test).\n\nFinally, we found that these patterns of attenuated selection persist across cancer subtypes for both SNVs and CNAs. We calculated dN/dS in tumors grouped by nine broad anatomical sub-categories (e.g. neuronal) and 33 subtype classifications (Grossman et al., 2016; Figure 2E\u2013F). We find that patterns of attenuated selection in SNVs persists in the broad and specific (drivers p=3.8 \u00d7 10\u20135, passengers p=1.7 \u00d7 10\u20132, Wilcoxon signed-rank test; Figure 2\u2014figure supplement 12) classification schemes. Furthermore, dE/dI measurements of CNAs exhibit similar patterns of selection in broad (Figure 2\u2014figure supplement 13) and specific subtypes (Figure 2F; drivers p<0.05 and passengers p<0.05).\n\nCollectively, these results suggest that tumors with elevated mutational burdens carry a substantial deleterious load. Since nonsynonymous mutations are thought to be primarily deleterious by inducing protein misfolding (Drummond and Wilke, 2008; Lobkovsky et al., 2010), we tested whether an increase in the number of passenger mutations in tumors would lead to elevated protein folding stress, and, in turn, drive the upregulation of heat shock and protein degradation (McGrail et al., 2020) pathways in cancer (Santagata et al., 2011). Indeed, gene expression of HSP90, Chaperonins, and the Proteasome does increase across the whole range of SNV (weighted R2 of 0.84, 0.78, and 0.78, respectively) and CNA burdens (weighted R2 of 0.83, 0.88, and 0.85, respectively) (Figure 2G and Figure 2\u2014figure supplement 14A). This trend persists across cancer types for SNVs and CNAs (Figure 2\u2014figure supplement 14D-E). Importantly, expression of these gene sets increases across the whole range of mutational burdens, even after the dN/dS of passengers approaches 1. This result presents additional evidence that passengers continue to impart a substantial cost to cancer cells, even in high mutational burden tumors.\n\n### Evolutionary modeling estimates the fitness effects of drivers and passengers, and rate of Hill-Robertson interference processes\n\nWe next tested whether Hill-Robertson interference \u2013 a process where selection becomes inefficient due to interference between linked mutations with competing fitness effects \u2013 alone can generate these patterns of attenuated selection. Specifically, we modeled tumor progression as a simple evolutionary process with advantageous drivers and deleterious passengers. We then used approximate Bayesian computation (ABC) to compare these simulations to observed data and infer the mean fitness effects of drivers and passengers.\n\nOur previously developed evolutionary simulations model a well-mixed population of tumor cells that can randomly acquire advantageous drivers and deleterious passengers during cell division (McFarland et al., 2013). The product of the individual fitness effects of these mutations determines the relative birth and death rate of each cell, which in turn dictates the population size N of the tumor. If the population size of a tumor progresses to malignancy (N>1,000,000) within a human lifetime (\u2264100 years), the accrued mutations and patient age are recorded. The mutation rate of each simulated tumor is randomly sampled from a broad range (10\u201312\u201310\u20137 mutations \u00b7 nucleotide\u20131 \u00b7 generation\u20131, Materials and methods). Although this model ignores a great deal of known tumor biology, we believe it constitutes the simplest evolutionary model that could possibly recapitulate observed selection for drivers and against passengers. Our question is not whether this model is correct in all details but rather whether even such a simple model can generate quantitatively similar patterns as observed in the data with sensible values of mutation rates and selection coefficients.\n\nFigure 3A illustrates the ABC procedure. To compare our model to observed data, we simulated an exponential distribution of fitness effects (DFEs) with mean fitness values that spanned a broad range (10\u20132\u2013100 for driver and 10\u20134\u201310\u20132 for passengers, Materials and methods). We summarized observed and simulated data using statistics that capture three relationships: (i) the dependence of driver and passenger dN/dS rates on mutational burden, (ii) the rate of cancer age incidence (SEERs database National Cancer Institute, 2007), and (iii) the distribution of mutational burdens (summary statistics of (ii) and (iii) were based on theoretical parametric models Frank, 2007, Materials and methods, Figure 3\u2014figure supplements 1\u20132). We then inferred the posterior probability distribution of mean driver fitness benefit and mean passenger fitness cost using a rejection algorithm that we validated using leave-one-out cross validation (CV) (Materials and methods, Figure 3\u2014figure supplement 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic overview of the ABC procedure used. A model of tumor evolution with genome-wide linkage contains two parameters \u2013 sdrivers (mean fitness benefit of drivers) and spassengers (mean fitness cost of passengers) \u2013 sampled over broad prior distributions of values. Simulations begin with an initiating driver event that establishes the initial population size of the tumor. The birth rate of each individual cell within the tumor is determined by the total accumulated fitness effects of drivers and passengers. If the final population size of the tumor exceeds 1 million cells within a human lifetime (100 years), patient age and accrued mutations are recorded. Summary statistics of four relationships are used to compare simulations to observed data: (i) dN/dS rates of drivers and (ii) passengers across mutational burden, (iii) rates of cancer incidence vs. age, and (iv) the distribution of mutational burdens. Simulations that excessively deviate from observed data are rejected (Materials and methods). (B\u2013C) Inferred posterior probability distributions of sdrivers and spassengers. The maximum likelihood estimate (MLE) of sdrivers is 53.0% (green, 95% CI [16.0, 111.4]), and the MLE of spassengers is 1.03% (green, 95% CI [0.40, 3.98%]). (D\u2013F) Comparison of the summary statistics of the best-fitting simulations (MLE parameters, dashed lines) to observed data (solid lines). (D) dN/dS rates of passengers (red) and drivers (light green) for simulated and observed data vs. mutational burden. A model where 6% of synonymous mutations within drivers experience positive selection (dark green) was also considered. (E) Cancer incidence rates for patients above 20 years of age. (F) Distribution of the mutational burdens of tumors.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Ten-thousand simulated tumors were generated for various combinations of mean driver fitness benefits (sdrivers) and mean passenger fitness costs (spassengers, Materials and methods). For some parameter combinations, the combined fitness cost of passengers overwhelmed the fitness benefit of drivers and prevented cancer progression within 100 years (dark gray). dN/dS values of simulated mutations were calculated for drivers (left) and passengers (right) at various mutational burden (total number of nonsynonymous and synonymous mutations). Top row is a mutational burden of 1\u201310; middle row is 11\u2013100, and bottom row is 100\u20131000. Some parameter combinations did not produce any tumors with low mutational burdens (light gray). Across all parameters, positive selection on drivers and negative selection against passengers attenuates with mutational burden. Passengers exhibit minimal negative selection in general, despite a collective burden that often prevented tumor progression, because of strong Hill-Roberston interference in asexual populations.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Clinical summary statistics of simulated tumors at various combinations of mean driver fitness benefits (sdrivers) and mean passenger fitness costs (sp, Materials and methods). (A) Initial population size N0 of simulated tumors. Initial population size approximates the equilibrium population size of a tumor following an initiating driver. Large population sizes are necessary for tumor progression when passenger deleteriousness is large compared to driver advantageousness \u2013 otherwise natural selection cannot drive carcinogenesis. Eventually, tumor progression is not possible for any reasonable initial population size (gray area). (B) Maximum likelihood estimate (MLE) of gamma distribution shape parameters describing the cancer age incidence rates of simulated tumors. A gamma distribution of age incidence is expected from the Armitage-Doll multistage model of tumorigenesis and describes human age incidence rates well (Materials and methods) (Frank, 2007). Larger values correspond to a steeper increase in rate with age; human patient rates are ~5 pan-cancer. Scale parameter of the parametric fit is not informative because of a Gauge freedom in the model. (C) MLE of shape and (D) scale parameters of negative binomial distributions describing the mutational burdens of simulated tumors. Smaller values of shape parameter correspond to broader distributions of mutational burden; human tumors exhibit a value of ~2 pan-cancer. Smaller values of scale parameter correspond to a larger mean mutational burden; human tumors exhibit a value of ~1/50 (i.e. 50 passengers per rate-limiting driver).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Leave-one-out cross validation (CV) on the simulated data was used to select an optimal rejection tolerance and optimal rejection method. Observed data can be compared to simulated data using model rejection alone (left), or by comparing observed data to a (middle) local linear regression or (right) feed-forward neural network single-layer model trained on the simulated data. In general, unsupervised training of a neural network on simulated data will often improve prediction accuracy by denoising stochasticity in the simulations (via kernel prediction.) A neural network with a rejection tolerance of 0.5 minimized prediction error of both driver and passenger fitness effects (illustrated by dotted lines) and was used to infer selection coefficients. This CV optimization procedure for ABC is advised (Csill\u00e9ry et al., 2012). (B) Posterior probability of models of tumor evolution incorporating synonymous drivers. The prior distribution of synonymous driver fractions (uniform from 0% to 20%) is nearly identical to this posterior distribution. This suggests that nearly all models incorporating synonymous drivers can explain observed dN/dS patterns with the right combination of fitness parameters. (C) Posterior distribution of fitness effect of driver fitness benefits (sdrivers) and passenger fitness costs (spassengers) after synonymous drivers are incorporated. MLE (circles) and 95% confidence intervals (lines) are reported. Similar to (B), incorporation of synonymous drivers undermines the ability of ABC to accurately infer fitness coefficients.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) The quantity of synonymous mutations within driver genes was compared to the quantity of synonymous mutations within passenger genes and both were normalized by their expected frequencies using dNdScv. Black line denotes the genome-wide ratio of synonymous drivers to synonymous passengers (~2%, i.e. driver genes are ~2% of the human coding genome). At low mutational burdens, a non-significant increase in the quantity of synonymous drivers is observed, suggestive of positive selection for these mutations. (B) The change in codon usage imparted by all synonymous mutations was calculated for oncogenes, tumor suppressors, and passenger genes. Bias in codon usage suggests a functional effect of synonymous mutations. Increase in codon usage is expected to increase translational efficiency and increase protein abundance. Oncogenes are expected to exhibit positive selection for increased codon usage and exhibit a non-significant increase as mutational burden declines \u2013 consistent with positive selection for synonymous mutations within oncogenic drivers that is attenuated by Hill-Robertson interference. Similarly, tumor suppressors are expected to exhibit a decrease in codon usage at low mutational burdens, which is indeed significant (p=0.03) presumably because there are more annotated tumor suppressor genes.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Mutation rates of all simulated tumors were randomly sampled from a uniform distribution (in log-space) from 10\u201312 to 10\u20137 nucleotide\u20131 \u00b7 generation\u20131. (B) In simulations that best agreed with observed data (maximum likelihood estimate [MLE] of sdrivers = 53%, spassengers = 1.03%), only tumors with intermediate mutation rates progressed to cancer within 100 years. Tumors with lower mutation rates do not progress to cancer within the 100-year time constraint of simulations, while tumors with exceptionally high mutation rates collapse via mutational meltdown.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/67790/elife-67790-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Using analytical theory developed in Neher and Shraiman, 2012; McFarland et al., 2014; Bachtrog and Gordo, 2004, we can estimate the relative rates of genetic hitchhiking and Muller\u2019s ratchet in our pan-cancer model of tumor evolution. As the relative strength of driver alterations increase (sdrivers) relative to the selective cost of passengers (spassengers), more passengers hitchhike with each driver sweep (left). This increases the relative contribution of observed passengers that accumulate via hitchhiking (right). Using the maximum likelihood estimates (MLE) of selection for drivers and against passengers, we estimate that an average of 1.2 deleterious passengers hitchhike with each driver, which account for 2.0% of accumulated passengers (the majority, and remainder, accumulate via Muller\u2019s ratchet).\n\nUsing this approach, the maximum likelihood estimate (MLE) of mean driver fitness benefit is 53% (Figure 3B), while the MLE of passenger mean fitness cost is 1.03% (Figure 3C). Simulations with these MLE values agree well with all observed data (Figure 3D\u2013F, Pearson\u2019s r=0.988 for combined driver/passenger dN/dS).\n\nWhile Hill-Robertson interference alone explains dN/dS rates in the passengers well, the simulations most consistent with observed data still exhibited consistently higher dN/dS rates in drivers (Figure 3D). We tested whether positive selection on synonymous mutations within driver genes could explain this discrepancy. Indeed, we find that a model incorporating synonymous drivers agrees modestly better with observed statistics (3.5-fold relative likelihood, ABC posterior probability). The best-fitting model predicts that ~6% of synonymous mutations within driver genes experience positive selection, which is consistent with previous estimates for human oncogenes (Supek et al., 2014) (Materials and methods, Figure 3D and Figure 3\u2014figure supplement 4). Furthermore, we observe additional evidence of selection and codon bias in synonymous drivers exclusive to low mutational burdens (TCGA samples, Materials and methods, Figure 3\u2014figure supplement 4).\n\nWe note that although deleterious passengers are necessary to explain attenuation of negative selection with mutational burden in passengers, alternative explanations could also contribute to attenuation of positive selection in drivers. Specifically, high mutational burden tumors are more likely to contain mutations in pan-cancer driver gene sets which might not directly contribute to tumorigenesis in specific tumors, and thus might not be under direct positive selection in all tumors. Similarly, additional driver mutations might not directly contribute to tumor fitness beyond a certain number of driver mutations (e.g. 5-hit model). Nonetheless, it\u2019s important to note that Hill-Robertson interference is capable of reproducing all the features of the data (steep attenuation of negative selection in passengers and gradual attenuation of positive selection in drivers).\n\nOverall, our results indicate that rapid adaptation through natural selection \u2013 acting on entire genomes, rather than individual mutations \u2013 is pervasive in all tumors, including those with elevated mutational burdens. Given the quantity of drivers and passengers observed in a typical cancer (TCGA), our model implies that cancer cells are in total ~90% fitter than normal tissues (119% total benefit of drivers, 46% total cost of passengers). A median of five drivers each of which has a mean benefit of ~19% accumulate per tumor in these simulations \u2013 also consistent with estimates from age incidence curves (National Cancer Institute, 2007), known hallmarks of cancer (Hanahan and Weinberg, 2000), and estimates of the selective benefit of individual drivers (Dai et al., 2007). Lastly, the mutation rates of tumors that could progress to cancer in our model also recapitulate observed mutation rates in human cancer (Camps et al., 2007) (median 3.7\u00d710\u20139, 95% interval 1.1\u00d710\u201310\u20138.2\u00d710\u20138, Figure 3\u2014figure supplement 5).\n\nMost notably, under our modeling assumptions, all passengers together confer a fitness cost of ~46% per tumor. While this collective burden appears large, the individual fitness effects of accumulated passengers in these simulations (mean 0.8%) are similar to observed fitness costs in cancer cell lines (1\u20133%) (Williams et al., 2008) and the human germline (0.5%) (Cassa et al., 2017). Note that in our model, these passengers accumulated primarily via Muller\u2019s ratchet, while only ~5% accumulated via hitchhiking inferred using population genetics theory (McFarland et al., 2013) and MLE fitness effects, Materials and methods, Figure 3\u2014figure supplement 6. These results suggest that Hill-Robertson interference is a plausible model for the empirical patterns of attenuated selection with mutational burden observed in the data.\n\n## Discussion\n\nHere, we argue that signals of selection are largely absent in cancer because of the inefficiency of selection and not because of weakened selective pressures. In low mutational burden tumors (\u22643 total substitutions per tumor), increased selection for drivers and against passengers is observed and ubiquitous: in SNVs and CNAs; in heterozygous, homozygous, clonal, and subclonal mutations; and in mutations predicted to be functionally consequential. These trends are not specific to essential or housekeeping genes. Importantly, these patterns persist across broad and specific tumor subtypes. Collectively, these results suggest that inefficient selection is generic to tumor evolution and that deleterious load is a nearly universal hallmark of cancer.\n\nImportantly, these patterns of selection are missed when dN/dS rates are not stratified by mutational burden. Since <0.1% of mutations in TCGA reside within low mutational burden tumors (~1% of all tumors, N=83), dN/dS in passengers at low mutational burdens (~0.56) does not appreciably alter pan-cancer dN/dS of passengers (0.97 in our study, 0.82\u20130.98 in Martincorena et al., 2017; Weghorn and Sunyaev, 2017; Zapata et al., 2018; Ostrow et al., 2014). In fact, the power to detect negative selection on passengers at low mutational burdens is only possible by aggregating all mutations within these tumors and estimating dN/dS jointly. Thus, we believe that low mutational burden tumors are uniquely valuable for identifying genes and pathways under positive and negative selection. While only ~1% of tumors exhibit substantial negative selection, selection in drivers, selection on CNAs, and expression patterns of chaperones and proteasome components all show a continuous response to deleterious passenger load across a broad range of mutational burdens. Collectively, this suggests that passengers continue to be deleterious even in high mutational burden tumors.\n\nUsing a simple evolutionary model, we show that Hill-Robertson interference alone can explain this ubiquitous trend of attenuated selection in both drivers and passengers. dN/dS rates attenuate in drivers because the background fitness of a clone becomes more important than the fitness effects of an additional driver at elevated mutation rates. Furthermore, these simulations indicate that, despite dN/dS patterns approaching 1 in tumors with elevated mutational burdens, passengers are not effectively neutral (Ns > 1). Instead, passengers confer an individually weak, but collectively substantial fitness cost of ~46% that measurably impacts tumor progression. Because this simple evolutionary model does not explicitly incorporate many known aspects of tumor biology (e.g. haploinsufficiency, see Supplementary file 1), these fitness estimates are highly provisional. Nonetheless, we note that selection\u2019s efficiency in cancer is further reduced when spatial constraints are considered (Sottoriva et al., 2015).\n\nThe functional explanation for why passengers in cancer are deleterious is unknown. In germline evolution, mutations are believed to be primarily deleterious because of protein misfolding (Drummond and Wilke, 2008; Lobkovsky et al., 2010). Deleterious passengers in somatic cells should confer similar effects. Indeed, we find that elevated mutational burden tumors may buffer the cost of deleterious mutations by upregulating multiple heat shock pathways. However, deleterious passengers may carry other costs to cancers or be buffered by additional mechanisms. Understanding and identifying how tumors manage this deleterious burden should identify new cancer vulnerabilities that enable new therapies and better target existing ones (Gorgoulis et al., 2018; Dai et al., 2007; Glaire and Church, 2017).\n\n## Materials and methods\n\n### Defining mutational burden in SNVs and binning tumors\n\nSince TCGA is composed of whole-exome data, which limits our ability to accurately assess mutations in non-coding regions, we elected to use the total number of protein-coding mutations (i.e. missense, nonsense, and synonymous mutations) as our proxy for the mutational burden of tumors. This allows us to focus on the highest quality set of mutations that we have, which can impact the power to detect selection (Figure 2\u2014figure supplement 15). We note that this high-quality set mutations does not have evidence of germline contamination by common SNPs (MAF > 5%) from 1000 Genomes Project (1000 Genomes Project Consortium et al., 2015) (v2015 Aug) using ANNOVAR (Wang et al., 2010) to annotate mutations in TCGA (Figure 2\u2014figure supplement 4). For all analyses calculating dN/dS in tumors stratified by their mutational burden, all variants within each bin of tumors were pooled together and dN/dS was calculated jointly on each bin of tumors. Counts of the number of mutations use to estimate dN/dS in each mutational burden can be found in Figure 2\u2014figure supplement 16.\n\n### A non-parametric null model of mutagenesis to calculate dN/dS\n\nWe assume that for any particular tumor, mutation rates are constant across a gene for a particular tri-nucleotide context and base change (e.g. C>G). Our procedure is inspired by constrained marginal models (or \u2018edge switching\u2019 in network analysis), whereby the marginal distributions of observations aggregated over known confounding variables are preserved under permutation to create a null distribution. In our application of this strategy, the marginal distributions of mutations (across tri-nucleotide context, base change, gene, and tumor) remain preserved \u2013 as they would be in a constrained marginal model; however, we exhaustively consider every acceptable permutation of the data. Because our approach is highly constrained, these permutations are exhaustively computable (median 36 alternatives per mutation). Thus, resampling is unnecessary.\n\nOur null model presumes that all mutations of type i, defined by a tri-nucleotide context and base change, arise with probability Migt within each gene g and tumor t. For each gene, we tally the total quantity of nonsynonymous mutations Nig and synonymous mutations Sig. Suppose selection enriches or depletes nonsynonymous mutations within a gene and tumor by a rate \u03c9gt. The expected number of nonsynonymous and synonymous mutations within a particular tumor and gene are $Ed_{N}=\\omega_{}\\sum_{i}M_{igt}N_{ig}$ and $Ed_{S}=\\sum_{i}M_{igt}S_{ig}$ in the absence of selective pressures on synonymous mutations. As with the main text, dN and dN(observed) are used interchangeably. Although Migt is unknown, dN/dS statistics attempt to infer selection nonetheless by noting that:\n\n$$\n\\frac{E[d_{N}]}{E[d_{S}]}=\\frac{\\omega_{gt}\\sumiM_{igt}N_{ig}}{\\sumiM_{igt}S_{ig}}=\\omega_{gt}\\frac{<M_{igt},N_{igt}>}{<M_{igt},S_{igt}>}=\\omega_{gt}\\frac{\u03c1_{MN}||M_{gt}||||N_{gt}||}{\u03c1_{MS}||M_{gt}||||S_{gt}||}=\\omega_{gt}\\frac{\u03c1_{MN}||N_{gt}||}{\u03c1_{MS}||S_{gt}||}\n$$\n\nNote that $\u03c1_{AB}=A,B>(\u2016A\u2016\u2016B\u2016)$, where $\u2016A\u2016=\\sqrt{<A,A>}$ is the Pearson product-moment correlation coefficient. When \u03c1MN \u2248 \u03c1MS,\n\n$$\n\\frac{Ed_{N}/N_{i}}{Ed_{S}/S_{i}}\u2248\\omega_{}\n$$\n\nThat is, dN/dS is approximately equal to the selective pressures on nonsynonymous mutations when the accessible nonsynonymous and synonymous loci are properly accounted and when the correlation between mutational processes and nonsynonymous loci are roughly equivalent to the correlation between mutational processes and synonymous loci. Traditionally, this assumption was used to calculate dN/dS. To improve resolution of dN/dS, researchers have attempted to account for these correlations using sophisticated parametric models of Migt. An alternative statistical approach, however, is to treat these correlations as nuisance parameters.\n\nConstrained marginal models permute observed data in all possible manners that preserve the underlying covariance structure of the data (e.g. \u03c1MN, \u03c1MS). In our particular case of this method, we note that by definition, $d_{N}^{permuted}=\\sumi(d_{N}^{observed}_{i}N_{i}+d_{S}^{observed}_{i}N_{i})$ . Thus:\n\n$$\n\\frac{E[d_{N}^{permuted}]}{E[d_{S}^{permuted}]}=\\frac{\\sumi(\\omega_{}M_{igt}N_{igt}^{2}+M_{igt}N_{igt}S_{igt})}{\\sumi(\\omega_{}M_{igt}N_{igt}S_{igt}+M_{igt}S_{igt}^{2})}=\\frac{\\omega_{}\u03c1_{MN}\u2016M_{}\u2016\u2016N_{}\u2016^{2}+\u03c1_{MN}\u2016M_{}\u2016\u2016N_{}\u2016\u2016S_{}\u2016}{\\omega_{}\u03c1_{MS}\u2016M_{}\u2016\u2016S_{}\u2016\u2016N_{}\u2016+\u03c1_{MS}\u2016M_{}\u2016\u2016S_{}\u2016^{2}}=\\frac{\u03c1_{MN}\u2016N_{}\u2016}{\u03c1_{MS}\u2016S_{}\u2016}\n$$\n\nHence, by dividing the observed mutations by all permutations, we eliminate the covariance of mutational processes with available loci and, thus, measure \u03c9gt directly for any particular gene-tumor combination without mutational bias.\n\nUnfortunately, because of the log-sum inequality, mutational bias can arise once cohorts of genes and cohorts of tumor samples are binned. This problem is common to all dN/dS measures and is a consequence of the correlation of mutational biases with selection (i.e. $M_{igt},\\omega_{}>$) \u2013 not the correlation of mutational biases with one another, as these covariances are already accounted for in a constrained marginal model. For example, if tri-nucleotide biases covary linearly with gene-level biases, and are independent of tumor-level biases, then a parametric estimate of Migt may deconstruct Migt into $M_{igt}=fi,g,t,\u03c1_{ig}$ , where $\u03c1_{ig}$ is the covariation of tri-nucleotide mutational biases with gene-level biases. Nonetheless, $M_{igt},\\omega_{}>\u221d<\u03c1_{ig},\\omega_{}>$ will still be ignored. Indeed, this covariation of mutational processes with selective forces is the focus of our current study: selection and genome-wide mutation rate are correlated (i.e. $\\sum_{t}M_{igt}\\omega_{}\\neq0$) because of Hill-Robertson interference. Hence, the level at which observed dN values dS are binned necessarily ignores covariation between mutational processes and selection (in addition to any variation of \u03c9gt within the bin). Another example of this binning challenge arises when positive and negative selection act on different regions of the same gene, which gene-level dN/dS binning can misinterpret as neutral evolution.\n\n### Validation of non-parametric null model\n\nTo confirm that our null model can accurately estimate dN/dS even in the presence of extreme tri-nucleotide mutational biases, we simulated artificial data where different COSMIC signatures (Tate et al., 2019Forbes et al., 2008; Forbes et al., 2008) (SBS Signatures 1\u20139, v3) contribute to all of the mutations. Permuted dN and dS tallies for each mutational context were simulated by randomly sampling 1000 genes with the same mutational context. The fraction of permuted dN and dS tallies for each mutational context was used as weighted probabilities to derive observed dN and dS tallies. To simulate negative selection, dN counts were randomly removed from each context at a rate 1 \u2212 \u03c9gt (e.g. a simulated \u2018true\u2019 dN/dS of 0.8 in a cohort of samples indicates a 20% chance of nonsynonymous mutations being removed in the samples). These simulated (true) rates were then compared to observed and permuted dN and dS tallies according to the dN/dS metric that we used throughout this study:\n\n$$\n\\frac{dN}{dS}=\\frac{d_{N}^{(observed)}/d_{N}^{(permuted)}}{d_{S}^{(observed)}/d_{S}^{(permuted)}}\n$$\n\nWe confirmed that this approach accurately measures selection in the presence of simulated mutational biases (Figure 2\u2014figure supplement 2).\n\nLastly, we note that binning nonsynonymous and synonymous mutations at the genome-wide level (e.g. drivers and passengers) provided the most robust estimates of dN/dS when bootstrapping observed tumor samples. Statistical power is insufficient when binning at the individual gene level. Bootstrapping also demonstrated that log-transformation of dN/dS values increases statistical power, and thus was generally applied to dN/dS analyses in this study.\n\n### A parametric null model of mutagenesis\n\nFor comparison, we also calculated dN/dS using dNdScv (Campbell and Martincorena, 2017) \u2013 a previously published parametric null model of mutagenesis in cancer (Martincorena et al., 2017). To compare both methods, dNdScv ran globally and separately on samples stratified by the total number of substitutions using the following parameters: max_coding_muts_per_sample = Inf max_muts_per_gene_per_sample = Inf.\n\nGlobal dN/dS values of all nonsynonymous mutations (wall, reported by dNdScv) were used. This model reproduced our non-parametric dN/dS trends (Figure 2A) and was used to infer patterns of selection in synonymous mutations (Figure 3\u2014figure supplement 4). We note that stratifying tumors in TCGA into 20 bins of equal sample size (as was done in Martincorena et al., 2017), rather than evenly spaced bins, averages out a significant proportion of the negative selection observed in passengers, since low mutation burden tumors reside within the tail-end of the distribution (Figure 2\u2014figure supplement 7).\n\n### Identification of driver genes in cancer\n\nFor all analysis using SNVs, unless explicitly stated, a comprehensive list of 299 pan-cancer driver genes derived from 26 computational tools was used to catalog driver genes (Bailey et al., 2018). Other pan-cancer driver gene sets tested were derived from COSMIC\u2019s Driver Gene Census (Tate et al., 2019; Forbes et al., 2008) (downloaded on October 2016) and IntOGen\u2019s Cancer Drivers Database (Gonzalez-Perez et al., 2013) (v2014.12) which contained 602 and 459 number of driver genes, respectively.\n\nMany driver genes are associated with only particular tumor subtypes. To compare patterns of selection across cancer subtypes without increasing or decreasing the size of the list for each subtype, we chose to use a single set of driver genes for most analyses. This may understate the degree of positive selection in driver genes as mutations in these genes may be passengers in some tumor subtypes. In Figure 2\u2014figure supplement 5, we investigate patterns of selection using the top 100 driver genes identified for each tumor type and observe decreased signatures of positive selection overall in driver genes. Nevertheless, the patterns of attenuated selection in drivers and passengers remain. While tissue-type specific driver genes certainly exist, our results suggest that our statistical power to detect drivers still remains too limited to justify subdividing analyses by tumor type in many cases.\n\nFor all CNA analysis, GISTIC 2.0 Mermel et al., 2011 was used to identify a set of genomic regions enriched for copy number gains and copy number losses using recommended settings with a confidence threshold of 0.9. CNAs used to identify these peaks were downloaded from the NIH Genomic Data Commons (GDC) (Grossman et al., 2016) in the TCGA cohort. For each amplification peak, the closest gene was annotated as a putative oncogene, and similarly the closest gene to each deletion peak was annotated as a putative tumor suppressor. The top 100 amplification peaks (oncogenes) and deletion peaks (tumor suppressors) were classified as drivers for each of the 32 tumor types. Thirty-four percent of identified driver genes appear in more than one tumor type, while 2.6% of identified driver genes appear in more than five tumor types.\n\nFor both SNV and CNA analysis, passengers were defined as mutations that did not reside within driver genes. The vast majority of mutations are passengers, and their relative totals for both SNVs and CNAs are depicted in Figure 2\u2014figure supplement 16.\n\n### Annotation of clonal and subclonal mutations\n\nVAFs were calculated per site as the number of mutant read counts divided by the total number of read counts. VAFs were adjusted for purity using calls made by ABSOLUTE (Grossman et al., 2016; Carter et al., 2012), collected from GDC. A VAF threshold of 0.2 was used to define \u2018subclonal\u2019 (<0.2) vs. \u2018clonal\u2019 (>0.2) SNVs. Different VAF thresholds were considered (Figure 2\u2014figure supplement 10) and the choice of \u2018clonal\u2019 thresholding did not impact the conclusions of this study.\n\n### PolyPhen2 analysis\n\nPolyPhen2 annotations in the MC3 SNP calls were used (Adzhubei et al., 2010). Only missense mutations that were categorized as either \u2018benign\u2019, \u2018probably damaging\u2019, or \u2018possibly damaging\u2019 were used. The fraction of pathogenic missense mutations was calculated as the number of pathogenic mutations categorized as either \u2018probably damaging\u2019 or \u2018possibly damaging\u2019 divided by the total number of categorized mutations.\n\n### Classification of genes by functional category\n\nTo test for patterns of selection in functionally related genes, we annotated all mutations by different functional categories and GO terms (Harris et al., 2004). Oncogenes and tumor suppressors were annotated from a curated set of 99 high confidence cancer genes (Kumar et al., 2015). Essential genes were collected from a genome-wide CRISPR screen that identified genes required for proliferation and survival in a human cancer cell line (Wang et al., 2015). Housekeeping genes were defined as genes with an exon that is expressed in all tissues at any non-zero level, and exhibits a uniform expression level across tissues (Eisenberg and Levanon, 2015). Interacting proteins were downloaded from the mentha database in April 2019 (Calderone and Cesareni, 2012).\n\nTo identify highly expressed genes, median transcripts per million (TPM) in 54 tissue types (v7 release) were downloaded from the Genotype-Tissue Expression (GTEx) project (GTEx Consortium, 2020; Carithers and Moore, 2015). Tissues that contained high expression in most genes, specifically testes, were removed. Only genes that had TPM counts above zero in any of the 53 remaining tissues were used. TPM counts were averaged across all tissues. Highly expressed genes were defined as the top 1000 genes expressed across all tissues.\n\nTo test for signals of negative selection in other functional groups, we annotated mutations by candidate GO terms according to biological processes: Transcription Regulation (GO Term ID: 0140110), Translation Regulation (GO Term ID: 0045182), and Chromosome Segregation (GO Term ID: 0007059).\n\n### Somatic CNAs\n\nAll CNAs were downloaded from the COSMIC database on June 2015 (Tate et al., 2019; Forbes et al., 2008). Mitochondrial CNAs were discarded from analysis, as copy number changes are difficult to infer. Gene annotations and the locations of telomeres and centromeres were downloaded from the UCSC Genome Browser (hg19). Telomeric and centromeric regions were masked from all measurements of dE/dI. Because the selection patterns of non-focal CNAs \u2013 alterations with at least one terminus in a telomere or centromeric region \u2013 were not noticeably different from long (>100 kb) focal CNAs, these two alteration classes were aggregated for analysis. Notably, we observed positive selection for both amplifications and deletions within oncogenes, and for both deletions and amplifications within tumor suppressors. For this reason, we did not distinguish between gains and losses, nor oncogenes and tumor suppressors in published analyses: any CNA that overlapped an oncogene or tumor suppressor in any region (for any fraction of the CNA) was classified as a driver. Mutational burden was defined simply as the total number of CNAs within a sample. Pan-cancer CNAs from cBioPortal (August 2018) were also analyzed, however consistent purity and ploidy estimates could not be obtained by using either ABSOLUTE (Carter et al., 2012) or TITAN (Ha et al., 2015), so this data was not used for published analyses of CNAs.\n\n### Measurements of selection on CNAs\n\ndE/dI was calculated using a \u2018breakpoint frequency\u2019 metric and a \u2018fractional overlap\u2019 metric. For both metrics, the dE/dI of a particular gene set i (e.g. driver or passenger genes) is defined by a genomic track Ti,g, which is one for every annotated region g of the track and zero elsewhere. Only non-centromeric and non-telomeric regions are considered in the mappable human genome G. Each CNA Cg,m is defined by its position on the genome g and the mutational burden m of the tumor harboring the mutation. For \u2018breakpoint frequency\u2019 Cm,i is one at the position of both termini of the CNA and zero elsewhere. For \u2018fractional overlap\u2019 Cm,i is 1/L, where L is the length of the CNA, for every region of the genome spanned by the CNA and zero elsewhere. For a particular range of mutational burdens M, dE/dI was defined as:\n\n$$\n\\frac{dE}{dI}_{i,M}=\\frac{\\sum_{m}^{M}\\sum_{g}^{G}T_{i,g}C_{m,g}}{\\sum_{g}^{G}T_{i,g}}\n$$\n\nWe note that calculation is accelerated by >\u00d7100 by commuting Ti,g with the outer summation (\u03a3mM). Lastly, we randomly permuted the start and stop positions of each CNA, while preserving its length, to derive a set of neutral CNAs not experiencing selection. This permutation analysis finds that dE/dI for both breakpoint frequency and fractional overlap is ~1 in the absence of selection (Figure 2\u2014figure supplement 8).\n\n### Tumor purity analysis in TCGA samples\n\nTumor purity estimates from the ABSOLUTE algorithm (Carter et al., 2012) were downloaded from the GDC on May 2020. To evaluate the effects of tumor purity on patterns of selection, tumors below increasing thresholds of tumor purity were removed from the analysis, and dN/dS was calculated on tumors stratified by mutational burden bins (as described above.)\n\n### Expression analysis\n\nGene expression data was downloaded from the COSMIC database on September 2019. Genes used to identify different protein folding pathways were downloaded from Kampinga et al., 2009, genes involved in protein degradation pathways were identified from Tanaka, 2009. The median gene expression of all genes in each protein folding pathway was used. Patients were binned by the total number of substitutions (using MC3 SNP calls from TCGA) and CNAs, and the average gene expression of each bin was calculated.\n\n### Cancer subtype analysis\n\nAll tumor subtypes in were grouped into nine sub-categories, based on broad, predominantly anatomical features. Anatomical features (i.e. organ and systems of organs), rather than histological features or inferred cell-of-origin, were used as groupings because we believe that the fitness effects of mutations should be predominantly defined by the environment of the tumor. Nevertheless, we observed attenuated selection in both drivers and passengers in many broad histologically defined classifications (e.g. adenocarcinomas and sarcomas). For all cancer grouping analysis (broad and subtype), tumors were stratified into bins by the total number of substitutions (dN+dS) on a log-scale. Since tumor subtypes vary in their range of mutational burdens, (e.g. KIRC cancer subtypes only have tumors with <100 substitutions), dN/dS values in the lowest and highest mutational burden bin for each cancer subtype are shown.\n\nSpecific cancer subtype categories were taken directly from the NCI GDC (Grossman et al., 2016). Because CNAs were downloaded from COSMIC, CNA datasets were not classified with this same ontology. Supplementary file 2 details how CNA classifications were mapped on GDC categories (and sometimes more broadly defined groups). All subtypes with >200 samples were used in our CNA subtype analyses (Figure 2\u2014figure supplement 13).\n\n### An evolutionary model with Hill-Robertson interference\n\nSomatic cells in our populations are modeled as individual cells that can stochastically divide and die in a first-order (memoryless) Gillespie algorithm. This model was developed and described previously (McFarland et al., 2014). During division, cells can acquire advantageous drivers with rate \u00b5Tdrivers and deleterious passengers with rate \u00b5Tpassengers \u2013 these values specify the mean of Poisson-distributed pseudo-random number (PRN) generators that prescribe the number of drivers and passengers conferred during division (e.g. the number of drivers per division nd = Poisson[nd = k; \u03bb = \u00b5Tdrivers] = \u03bbk e\u2212k/k!). The DFEs conferred by each driver and each passenger are exponentially distributed PRNs with probability densities P(si = x; sdrivers)=Exp[\u2212x/sdrivers]/sdrivers and P(si = x; spassengers) = \u2212Exp[\u2212x/spassengers]/spassengers, respectively. Simulations with other exponential-family DFEs do not qualitatively differ from these exponential distributions (McFarland et al., 2013). The aggregate absolute cellular fitness is $f=\\prodiall\u00a0mutations(1+s_{i})$ in our multiplicative epistasis model and $\u0394f=s_{i}/1+\u03bdf$ with \u03bd=1 in our diminishing-returns epistasis model, where \u0394f is the change in cellular fitness with each mutation (Arjan et al., 1999). The rate of cell birth is inversely proportional to cellular fitness, while the rate of cell death $D(N;N^{0})=Log[1+\\frac{N}{(e\u22121)N^{0}}]$ increases with the population size of the tumor N. With these birth and death processes, mean population size abides by a Gompertzian growth law in the absence of additional mutations, which is scaled by the mean cellular fitness E[N(<f > )]=log[1 +<f >/ N 0] (derived from master equation McFarland et al., 2013). While, programmatically, mutations exclusively affect the birth rate and the constraints on growth exclusively affect the death rate, we previously demonstrated that birth and death rates are generally nearly balanced such that dynamics are not affected by this design choice.\n\nBecause somatic cells do not recombine during cell division, dominance coefficients were not explicitly modeled. Thus in diploid cancers, our selection coefficients estimate the mean heterozygous effect of drivers and passenger (i.e. hs). Similarly, loss of heterozygosity (LOH) events (gene losses, gene conversions, mitotic recombination, etc.) are not explicitly modeled either; however, these events can be viewed as additional mutations that may be either adaptive drivers or deleterious passengers in the model. As sequencing data improves, we believe that it will be informative to explicitly model dominance coefficients, tumor ploidy, and LOH events.\n\nSimulations progressed until tumor extinction (N=0 cells), malignant transformation (N=106 cells), or until ~100 years had passed (18,500 generations). Only fixed mutations (present in the most recent common ancestor) within clinically detectable growths were analyzed in our ABC pipeline. The behavior of this model has been described previously (McFarland et al., 2013; McFarland et al., 2014) and the most relevant assumptions of this model and their effects on the conclusions of this study are described in Supplementary file 1.\n\nCells in our populations are fully described by their accrued mutations, and birth and death times. Birth and death events were modeled using an implementation of the next reaction (Gibson and Bruck, 2000), a Gillespie algorithm that orders events using a heap queue. Generation time in our model was defined as the inverse of the mean birth rate of the population: 1/<B(d, p)>. While all mutation events occurred during cell division, if mutations were to occur per unit of time (rather than per generation), rapidly growing tumors would acquire drivers at a slightly slower rate as generation times decline over time. This effect, however, is negligible compared to the variation in waiting times conferred by the variation in mutation rates (division times merely double, while mutation rates vary by 100,000-fold).\n\nThis simple evolutionary model is defined by five parameters \u00b5Tdrivers, \u00b5Tpassengers, sdrivers, spassengers, and N0. The target size of drivers is defined as the approximate number of nonsynonymous mutations in the Bailey driver screen Tdrivers = (# of driver genes)\u00b7(mean driver length)\u00b7(fraction of SNVs that are nonsynonymous)=300 genes \u00b7 1298 loci/gene \u00b7 0.737 nonsynonymous loci/ loci = 286,886 nonsynonymous loci. The target size of passengers was simply the remaining loci in the protein coding genome, Tpassengers = 20,451,136 nonsynonymous loci. The mutation rate was constant throughout each tumor simulation and randomly sampled from a uniform distribution in log-space that ranged from 10\u201312 to 10\u20137 mutations\u00b7loci\u20131\u00b7generation\u20131. While tumors were initiated from this broad range, malignancies (N>106 cells) were almost always restricted to mutation rates between 10\u201310 and 10\u20138 (Figure 3\u2014figure supplement 5), as tumors with mutation rates drawn below this range almost never progressed to cancer within 100 years and tumors with mutation rates drawn above this range went extinct through natural selection.\n\nThe likelihood that tumors progress to cancer in the presence of deleterious passengers depends heavily on the initial population size N0 of the tumor. This dependence was studied previously (McFarland et al., 2014), where it was demonstrated that reasonable evolutionary simulations (those that progress to cancer >10% of the time, but <90% of the time) are restricted to a four-dimensional manifold N* within the five-dimensional phase space of parameters. For this reason, N0=N*(sdrivers, spassengers, \u00b5Tdrivers, \u00b5Tpassengers) was determined by the other four parameters. To first order, this manifold is Tpassengersspaassengers/ (Tdrivers sdrivers) (Weghorn and Sunyaev, 2017), however a more precise estimate (Equation S8 of McFarland et al., 2014) incorporating more precise estimates of Muller\u2019s ratchet and the effects of hitchhiking on both driver and passenger accumulation rates, which does not exist in closed form was used. Additionally, at very low values of sdrivers, progression to cancer is limited by time, not by the accumulation of deleterious passengers. Hence, we assigned N0 such that:\n\n$$\nN^{0}=Max_{N^{0}[P_{cancer}(N^{0}/N^{\u2217})=0.5,t_{cancer}\u00af(N^{0}/N^{\u2217})=18,500generations]}\n$$\n\nHere, Pcancer and tcancer \u2013 the likelihood and waiting time to cancer \u2013 are defined byEquation S8 and S12 respectively in McFarland et al., 2014. N0 was determined from these equations using Brent\u2019s method. Figure 3\u2014figure supplement 2 depicts the values of N0, which ranged from 1 to 100 for all simulations.\n\nIn tumors that progress to malignancy (N=106), only fixed nonsynonymous mutations (present in all simulated cells) were recorded. We also recorded (i) the fitness effect of these mutations, (ii) the mean population fitness, (iii) the number of generations until malignancy, and (iv) the mutation rate. These two values were used to generate the number of synonymous drivers and passengers, where P(ds = k)=Poisson[k; \u03bb = \u00b5Tdrivers/passengers/r tMRCA] defines the number of synonymous drivers/passengers conferred, tMRCA represents the number of division until the most recent common ancestor arose in the simulation, r=2.795 represents the ratio of nonsynonymous to synonymous loci within the genome, weighted by the genome-wide tri-nucleotide somatic mutation rate, and the Poisson PRN generator was defined above. In simulations where synonymous drivers could arise, a fraction of the recorded nonsynonymous mutations (ranging from 0% to 20%) were simply re-labeled as synonymous drivers (as opposed to nonsynonymous drivers). This was done, again, by Poisson sampling in proportion to the desired fraction for each cancer simulation.\n\n20\u00d720 combinations of sdrivers and spassengers parameters were simulated (Figure 3\u2014figure supplements 1\u20132). Simulations were repeated until 10,000 cancers at each parameter combination were obtained or until 10 million tumor populations were simulated. While we attempted to initiate tumors at a population size where the probability of progression to cancer was 50%, some parameter combinations still did not yield 10,000 cancers after 10 million attempts (i.e. Pcancer < 0.1%). These combinations were predominately at low values of sdrivers, which were far from the MLE estimate of sdrivers and represent unrealistic evolutionary scenarios: drivers cannot be weakly beneficial, relegated to only 300 genes, and still overcome deleterious passengers within 100 years. These simulations are annotated as \u2018progression impossible\u2019. Simulation parameter sweeps were performed for both the multiplicative and diminishing returns epistasis models. Twenty fractions of synonymous drivers were also generated (ranging from 0% to 20%). These fractions were generated by simply re-labeling the driver mutations which conferred fitness (generated during the simulation) as synonymous, instead of nonsynonymous.\n\n### Summary statistics of simulated and observed tumors\n\nFor both simulated and observed data, we summarized dN/dS rates vs. mutational burden for drivers and for passengers by decade-sized bins: (0, 10], (10, 100], (100, 1,000]. Mutational burden for simulations was defined as the total number of substitutions (dN+dS) \u2013 exactly as it was defined for observed data. For simulated data, dN/dS = dN/(dS \u00b7 r). Like observed data, dN/dS rates attenuated toward 1 for both drivers and passengers for all values of sdrivers and spassengers.\n\nMutational burdens (MB) for simulated and observed data were summarized with the parameters of a negative binomial distribution, where $P(MB=k;n,p)=(k+n\u22121n\u22121)p^{n}(1\u2212p)^{k}$ . This distribution has been used previously to summarize the MB of human tumors (Turajlic et al., 2012) and exactly defines the expected number of mutations at transformation in a multi-stage model of tumorigenesis (Frank, 2007) when n drivers are needed for transformation and the probability that any mutation be a driver is 1 \u2013 p (Michor et al., 2005). Both n and p were used to summarize MB. These quantities were determined by maximum likelihood optimization of the probability mass function above over the support of mutational burdens of [1, 1,000] substitutions. The Han-Powell quasi-Newton least-squares method was used for optimization.\n\nAge-dependent cancer incidence rates (CI) were summarized with the parameters of a gamma distribution, where $PCI\\leqt;k,\\theta=\\frac{1}{\u0393k}\\gammak,\\frac{t}{\\theta}$ . Here, $\\gammas,x=\\int_{0}^{x}t^{s-1}e^{-t}dt$ is the lower incomplete gamma function and \u0393(k) = \u03b3(k, \u221e) is the regular gamma function. Similar to our summarization of mutational burdens, this distribution is a generalization of the exact waiting time to transformation expected from a multi-stage model of tumorigenesis when tumors arise at a uniform rate over time, require k drivers for transformation, and wait an average time of \u03b8 between drivers (Michor et al., 2005). This cumulative distribution function was fit to observed incidence rates for all patients above 20 years of age using the least squares numerical optimization defined above (all cancer sites combined, both sexes, all races, 2012\u20132016; Howlader, 2013). Patients under 20 years of age were excluded because cancers in these patients generally arise from germline predispositions to cancer, which are (i) not directly modeled by our simulations, (ii) not detected as somatic mutations, and (iii) result in age incidence curves that do not agree with a gamma distribution (Frank, 2007). Because all cancer simulations are initiated at t=0 (instead of uniformly in time, as is presumed in the multi-stage model), the simulated data was fit using the probability density function of this distribution (instantaneous derivative) using maximum likelihood and the optimization algorithm described above. The cumulative distribution, then, represents the expected age incidence cancer incidence rate when simulations begin at uniformly distributed moments in time and, thus, was used to generate Figure 3D. Only the shape parameter k was used in ABC (and \u03b8 was ignored), as this parameter only specifies the dimensionality of time (simulation time was measured in cellular generations, not years) and all values of \u03b8 in our simulations are equivalent under a gauge transformation. Additionally, we do not expect the exact times of incidence to be particularly informative as the time of transformation is generally somewhat earlier than the time of detection.\n\n### Use of ABC for model selection and parameter inference\n\nLike many Bayesian analyses, the main steps of an ABC analysis scheme are: (i) formulating a model, (ii) fitting the model to data (parameter estimation), and (iii) improving the model by checking its fit (posterior-predictive checks), and (iv) comparing this model to other models (Csill\u00e9ry et al., 2012; Gelman, 2004).\n\nThe nine summary statistics described above were used to compare simulations to observed data. Agreement was summarized with a log-Euclidean distance, as all summary statistics resided on the domain [0, \u221e) and log-transformation of the summary statistics minimized heteroscedasticity of the simulated data relative to a square-root or no transformation. Variance of the summary statistics was not normalized. ABC was performed using the \u2018abc\u2019 R package (Csill\u00e9ry et al., 2012).\n\nThe rejection method (feedforward neural net) and tolerance (0.5) were chosen based on their capacity to minimize prediction error of the simulated data using leave-one-out CV (Figure 3\u2014figure supplement 3). Ten-thousand instances of the neural network, which was restricted to a single layer, were initiated and the median prediction of these networks were used. These parameters were used for both model comparison and parameter inference. For parameter inferencing, the sdrivers and spassengers prior values were log-transformed.\n\nFor the synonymous driver model, the base model (without synonymous drivers) was simply the lowest quantity of synonymous drivers (0%) in the parameter sweep of synonymous driver quantities (Figure 3\u2014figure supplement 3B). The posterior probability mass of this value 0.017 was used as the one-sided p-value for the null hypothesis that these two models are equally predictive. Although the synonymous driver model agreed with the observed data slightly better, sdrivers and spassengers parameters could not be inferred from the data because the potential for synonymous drivers destroys the utility of a dN/dS statistics, which is predicated on the notion that synonymous mutations are neutral. Virtually any value of dN/dS is attainable when the right combinations of selective pressures on nonsynonymous and synonymous are paired (Figure 3\u2014figure supplement 3C).\n\n### Code availability\n\nAll code for empirical analysis and generation of summary statistics are publicly available under the open-source MIT License at https://github.com/petrov-lab/cancer-HRI. (Tilk, 2022a copy archived at swh:1:rev:5d67f4a946e2d80efdc71c2ef689266678d8ff75). Code for simulations of tumor growth with advantageous drivers and deleterious passengers is also available at https://github.com/mirnylab/pdSim, (Tilk, 2022b copy archived at swh:1:rev:f08bd75aabf7213e253baf26d219c374a745c8d4).\n",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "2a75aa8f-10bf-482c-abba-d6345f562c25",
+      "submission_id": "90d58605-4589-46df-a323-913cea9531cf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Martin Taylor, https://ror.org/01nrxwf90 University of Edinburgh United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67790.sa0](https://doi.org/10.7554/eLife.67790.sa0)\n\nThis is an important paper that shows most cancers unavoidably accumulate damaging mutations. Whilst the majority of claims are convincingly supported by the data, evidence that damaging changes are buffered by heat shock pathways is currently incomplete. The insights into selection efficiency are important for the understanding of cancer growth and response to therapy. A broader implication is that high mutation load tumors may use common strategies to tolerate accumulated deleterious mutations, providing a therapeutic target.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Martin Taylor, https://ror.org/01nrxwf90 University of Edinburgh United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67790.sa1](https://doi.org/10.7554/eLife.67790.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Most cancers carry a substantial deleterious load due to Hill-Robertson interference\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Martin Taylor as the Reviewing Editor and Reviewer #3, and the evaluation has been overseen by Molly Przeworski as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Elena Kuzmin (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n(1) The authors state that they are excluding tumors with either nonsynonymous(n)=0 or synonymous(s)=0 mutations. Since nonsynonymous and synonymous variants occur in a ratio of about 3:1, this exclusion of tumors would seem to lead to an inflation of the signal of selection in the first (lowest mutation) bins. Additional demonstration is required to show if this distorts the estimate of selection for low mutation burden tumours. For example, by adding pseudo-counts of mutations or by aggregation over tumours in the same mutation load \"bin\" as was performed for some analyses.\n\n(2) The decline of dN/dS on driver genes is the subject of the supplementary text and we note the efforts taken to disentangle Hill-Robertson interference effects from other possible explanations for dN/dS decay in drivers with increasing tumor mutation burden (TMB). Driver genes can be quite tissue-specific (and thus mus-identified for a tumor) and number of drivers per tumour estimated to span approximately 1 to 10 (Martincorena et al., 2017). Consequently, the fitting of a single set of model parameters and showing they do not match well the observed data (Supplementary note figure) is insufficient to exclude the misidentification of driver genes, or presence of nonsynonymous-neutral mutations in annotated driver genes, as an explanation for the decline in dN/dS with increased TMB. We think it important that a range of justifiable parameters are applied in this modelling, to test if the observed data is robustly outside reasonable parametrisation of the model.\n\n(3) In many figures that show dN/dS as a function of n+s (starting with Figure 2A and extending to Figures S2, 3, 9, 10, 12, 22 and 25), there are no error bars indicated, as opposed to the statement in the figure caption. The error bars/shading should be shown. In Figure 2A, is the observed depletion in the second bin still significant?\n\nReviewer #1 (Recommendations for the authors):\n\n1. Figure panels should be called out sequentially. For example, Figure 2G is called out before Figure 2D. This happens throughout the text, including main and supplementary figures, and should be corrected.\n\n2. Figure 2G shows that mean gene expression of genes encoding chaperones and the proteasome increases with increasing mutational burden. What about protein abundance? Is this in agreement with gene expression?\n\n3. Figure 2 mentions error bars in the figure legend, but no panel displays error bars. This is also true for Figure S13 and other figures. Authors should display the error bars to which they are referring to make their analysis more convincing.\n\n4. Pg. 9 line 295 describes results of the analysis across genes belonging to different GO terms. However, Figure S13 only shows 3 categories: chromosome segregation, transcription and translation. How were these categories chosen? What about other categories? Such cherry picking doesn't convincingly support the conclusions that no specific GO functions are enriched. Also, translational regulation shows higher dN/dS in low mutation tumors suggesting that there is positive selection for passengers in this category. Authors should discuss in their manuscript why this is the case.\n\n5. Figure S15 shows the attenuation in selection of CNAs across cancer subtypes and broad cancer groups. However, HNSC and kidney cancer appear to be the exceptions. Authors should provide an explanation for these observations in the main text.\n\n6. Generally, copy number variations are considered to be > 50 bp. Is there a rationale as to why authors chose 100 kb to be their cut-off in Figure 2C? If the size of CNA is an important parameter, then authors should explain why that is.\n\n7. Non-allelic recombination and non-homologous recombination mechanisms involving replication accidents that lead to chromosome breakage occur with some frequency in somatic cells. How does the frequency of these events impact the selection efficiency in cancer as it relates to drivers and passengers? Can this also be incorporated in their evolutionary model?\n\n8. Authors mentioned that haploinsufficiency was not used in the model. What about loss of heterozygosity which is extensive in cancer genomes? Can this parameter be included in the evolutionary model and how would it impact the results?\n\nReviewer #2 (Recommendations for the authors):\n\n1. The authors have taken great care to study single-nucleotide variants and large CNAs. It would be great if they could confirm their findings by also showing the effect on small insertions and deletions.\n\n2. Figure S5 is showing a bias in the determination of dN/dS from simulation results and the correlation between mutation rate and n+s. I am not sure I understand why dN/dS under a neutral simulation would be biased. Also, the low median correlation between n+s and the mutation rate (<0.4) is quite surprising. I would have expected these to be almost perfectly correlated. Likewise, I do not understand the formula after l. 631. It states that this is the joint density of the two Poisson random variables that denote nonsynonymous and synonymous mutation count, yet there is an additional unexplained factor in the denominator, which corresponds to the probability of s>0. If the simulation that underlies Figure S5 was also used in the ABC-based parameter inference, this would raise a serious cause for concern.\n\n3. The simulation starts when the first mutation with positive selective effect initiates population growth, which can be very late in a patient's life. How does the assumption that up to 100 years can pass after this affect the parameter estimates?\n\n4. To which extent does the inferred distribution of selection effects depend on the allowable parameter range? For example, s_passengers extends beyond the initially allowable range after the fit (Figure 3C).\n\n5. It is not entirely clear to me how the partitioning of the likelihood between Muller's ratchet and hitchhiking vs other effects can be made and how robust these inferences are with respect to variation of the modeling assumptions (e.g. about initial population size or mode of selection). Is the necessity of inclusion of selected synonymous variants on driver genes a robust result or not, taking into account the discussion on p. 26f.?\n\n6. In Figure S4, the authors report the correlation of n+s with other measures of tumor mutation load. Given the relative sizes of the different regions that are displayed, i.e. whole genome:intergenic:intronic:exonic:protein-coding, of roughly 100:60:40:2:1, the displayed numbers do not make sense, as their ratios are 100:100:100:1:0.001.\n\n7. I am not sure I understood well how CNAs were analyzed. Based on the description in l. 669ff., it appears that putative cancer driver genes were identified from the CNA data based on recurrence. Were the same data then analyzed for CNAs falling into said putative cancer driver gene regions to infer selection? This would appear a bit circular.\n\n8. I do not understand the formula shown after li. 738. It appears it is showing the fraction of genes that intersect a CNA boundary, summed over all tumors in a given n+s bin. Each CNA can be counted twice if both of its boundaries fall into a gene. Why is the mean value of this 1?\n\n9. In all figures that show dN/dS as a function of n+s (starting with Figure 2A and extending to Figures S2, 3, 9, 10, 12, 22 and 25), there are no error bars indicated, as opposed to the statement in the figure caption. In Figure 2A, is the observed depletion in the second bin still significant?\n\n10. In l. 290, I understand that the authors argue that differential dominance effects between heterozygous early- and late-arising mutations could be affecting the efficacy of selection on subclonal variants compared to clonal variants. I do not see this claim well motivated or corroborated.\n\n11. In Figure 2D, the caption states that mutations have been separated into two groups by their clonality, yet the figure shows three curves. What do they correspond to? Are the results still significant given the partitioning of the mutation data into smaller subsets?\n\n12. Figure 3 does not have a panel G.\n\nReviewer #3 (Recommendations for the authors):\n\nI enjoyed reading the manuscript, it was well written, generally clear figures and very through provoking.\n\nOnly a small number of specific points to address:\n\nLine 60.- The description of dN and dS here along with the interpretation of dN/dS=1 as neutral implies that you are just counting non-synonymous and synonymous mutations and dividing one by the other. This of course is not the case. Perhaps dN and dS could be described as rates or dN/dS as the dN:dS odds ratio which is how it's calculated for your permutation metric.\n\nLine 112 \u2013 40% of what, benefit of ~130% of what. This becomes apparent later into the manuscript but not clear how to interpret when reading at this point for the first time.\n\nLine 188 \u2013 Mutational burden <= 3 (what units).\n\nLine 189 \u2013 \"We observed little negative selection in passengers\" be clear what passengers (previous identified passenger genes).\n\nLine 252 \u2013 Panel G, y-axis, what units? Why are \"all\" genes uniformly at approximately -0.2? Assuming this is fold-change or log-fold-change I'd expect 1 or zero respectively.\n\nLine 275 \u2013 Figure 2G, shaded error bars are not visible.\n",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2464ea75-7992-4f4b-aaa9-a380bedc06d9",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C1",
+      "claim": "Cancer genomes exhibit surprisingly weak signatures of negative selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer genomes exhibit surprisingly weak signatures of negative selection (Martincorena et al., 2017; Weghorn, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior published work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "676928d6-ea24-4a6d-871e-35109ab16d82",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C2",
+      "claim": "Low mutational burden tumors exhibit negative selection with dN/dS approximately 0.56.",
+      "claim_type": "EXPLICIT",
+      "source": "By stratifying tumors by their genome-wide mutational burden, we observe negative selection (dN/dS ~ 0.56) in low mutational burden tumors, while remaining cancers exhibit dN/dS ratios ~1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis of TCGA tumors stratified by mutational burden",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "2de8bf9f-738b-4a07-9fa0-6c7163d27d5a",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C3",
+      "claim": "Most tumors do not remove deleterious passengers.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that most tumors do not remove deleterious passengers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from dN/dS ratios approaching 1 in high mutational burden tumors",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "1d2d64f7-5d5b-4810-b4cf-5063df8833c5",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C4",
+      "claim": "Tumors upregulate heat shock pathways as their mutational burden increases.",
+      "claim_type": "EXPLICIT",
+      "source": "To buffer against deleterious passengers, tumors upregulate heat shock pathways as their mutational burden increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression analysis across mutational burden bins",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "aeafee70-97dd-4bcf-9906-fa97534a9e6c",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C5",
+      "claim": "Hill-Robertson interference alone can reproduce patterns of attenuated selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, evolutionary modeling finds that Hill-Robertson interference alone can reproduce patterns of attenuated selection and estimates the total fitness cost of passengers to be 46% per cell on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by evolutionary simulations and ABC modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "d3496d0e-8c14-4e67-8dcc-8d900c2da8ff",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C6",
+      "claim": "The total fitness cost of passengers is 46% per cell on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, evolutionary modeling finds that Hill-Robertson interference alone can reproduce patterns of attenuated selection and estimates the total fitness cost of passengers to be 46% per cell on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Estimated from evolutionary modeling using ABC",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "99a9b3ba-4072-42af-97c9-4126a2706fae",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C7",
+      "claim": "The lack of observed negative selection in most tumors is due to the inability of selection to remove deleterious mutations in the presence of genome-wide linkage.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our findings suggest that the lack of observed negative selection in most tumors is not due to relaxed selective pressures, but rather the inability of selection to remove deleterious mutations in the presence of genome-wide linkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple lines of evidence including dN/dS analysis and evolutionary modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "e09c9617-18ad-477b-8e43-40216021ab11",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C8",
+      "claim": "For most nondriver genes dN/dS is approximately 1 and only 0.1\u20130.4% of genes exhibit detectable negative selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Two recent analyses of dN/dS patterns in cancer genomes found that for most nondriver genes dN/dS is ~1 and that only 0.1\u20130.4% of genes exhibit detectable negative selection (dN/dS < 1) (Martincorena et al., 2017; Weghorn and Sunyaev, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior published analyses",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "19251cfc-5f73-4df5-9005-abc2f7bbcf68",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C9",
+      "claim": "Most genes show signatures of negative selection in human germline evolution with dN/dS approximately 0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "This differs substantially from patterns in human germline evolution where most genes show signatures of negative selection (dN/dS ~ 0.4) (Martincorena et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior published work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "8cd7562b-1944-40b2-94f0-e1eb5301e586",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C10",
+      "claim": "Most germline selection against nonsynonymous variants appears to be driven by protein misfolding toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "While appealing in principle, most germline selection against nonsynonymous variants appears to be driven by protein misfolding toxicity (Drummond and Wilke, 2008; Lobkovsky et al., 2010), in addition to gene essentiality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior published work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "3eeefd23-2da0-433e-90ba-8a9ceff5ae60",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C11",
+      "claim": "Tumors must evolve under genome-wide linkage that creates interference between mutations, known as Hill-Robertson interference.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike sexually recombining germline evolution, tumors must evolve under genome-wide linkage that creates interference between mutations, known as Hill-Robertson interference, which reduces the efficiency of natural selection (Hill and Robertson, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to foundational work and established knowledge of tumor evolution",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "7a0b1d81-8b32-4b38-ab14-7938770324f3",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C12",
+      "claim": "Hill-Robertson interference reduces the efficiency of natural selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike sexually recombining germline evolution, tumors must evolve under genome-wide linkage that creates interference between mutations, known as Hill-Robertson interference, which reduces the efficiency of natural selection (Hill and Robertson, 1966).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to foundational work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "2be3ee03-3cf9-496c-b43a-b9bc5fe1d491",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C13",
+      "claim": "The rate of hitchhiking and Muller's ratchet both increase with the genome-wide mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of hitchhiking and Muller's ratchet both increase with the genome-wide mutation rate (Johnson, 1999; Neher and Shraiman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior published work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "608332da-88d2-4062-ac95-7d0cdabf1185",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C14",
+      "claim": "Selection against deleterious passengers should be more efficient (dN/dS < 1) in tumors with lower mutational burdens.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the second hypothesis predicts that selection against deleterious passengers should be more efficient (dN/dS < 1) in tumors with lower mutational burdens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction based on theoretical understanding of Hill-Robertson interference",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "acf3cff7-3927-47ea-8799-48947ce53aca",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C15",
+      "claim": "The parametric and non-parametric approaches identify similar patterns of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that both the parametric and non-parametric approaches identify similar patterns of selection (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of two methods shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "8be7a372-2f06-4088-9583-664287eea609",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C16",
+      "claim": "Pervasive selection against passengers is observed exclusively in tumors with low mutational burdens (dN/dS ~ 0.56 in tumors with \u22643 substitutions, while dN/dS ~ 0.93 in tumors with >10 substitutions).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the inefficient selection model, whereby selection fails to eliminate deleterious mutations in high mutational burden tumors, we observe pervasive selection against passengers exclusively in tumors with low mutational burdens (dN/dS ~ 0.56 in tumors with \u22643 substitutions, while dN/dS ~ 0.93 in tumors with >10 substitutions, Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dN/dS analysis of TCGA data stratified by mutational burden, shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "f7555a14-7b7d-4ba3-b54e-4fb16d340fd0",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C17",
+      "claim": "Little negative selection is observed in passenger genes when aggregating tumors across all mutational burdens (dN/dS ~ 0.93).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed little negative selection in passenger genes when aggregating tumors across all mutational burdens (dN/dS ~ 0.93), which is broadly similar to previous estimates (Martincorena et al., 2017; Weghorn and Sunyaev, 2017; Zapata et al., 2018; Ostrow et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis and comparison to prior published estimates",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "3907ba1e-8c75-438a-9cac-f7f26d153784",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C18",
+      "claim": "Drivers exhibit a trend of attenuated selection at elevated mutational burdens (dN/dS ~ 2.7 when in tumors with \u22643 substitutions and dN/dS gradually declines to ~1.16 in tumors with >100 substitutions).",
+      "claim_type": "EXPLICIT",
+      "source": "Also consistent with the inefficient selection model, drivers exhibit a similar but opposing trend of attenuated selection at elevated mutational burdens (dN/dS ~ 2.7 when in tumors with \u22643 substitutions and dN/dS gradually declines to ~1.16 in tumors with >100 substitutions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by dN/dS analysis of driver genes across mutational burden bins",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "fd37e58c-369a-47eb-9f46-73c5560d4394",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C20",
+      "claim": "Driver mutations become less functionally consequential as mutational burden increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, driver mutations become less functionally consequential as mutational burden increases, as expected for mutations experiencing inefficient positive selection (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PolyPhen2 annotation analysis shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "1ea5cfe8-9971-4156-9391-e6488e2d9cf3",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C21",
+      "claim": "Attenuating selection is observed in both driver and passenger CNAs as the total number of CNAs increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Using dE/dI, we observe attenuating selection in both driver and passenger CNAs as the total number of CNAs increases for both breakpoint frequency (Figure 2C) and fractional overlap (Figure 2\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dE/dI analysis of CNAs shown in Figure 2C and supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "05b04bc8-9915-4d48-8d7d-8f6d5948d78b",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C22",
+      "claim": "Selection clearly attenuates with increasing mutational burden for the subset of likely subclonal mutations with variant allele frequency (VAF) below 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "If true, then attenuated selection should be absent in subclonal mutations, which must arise during tumor growth. However, selection clearly attenuates with increasing mutational burden for the subset of likely subclonal mutations with variant allele frequency (VAF) below 20% (Figure 2D and Figure 2\u2014figure supplement 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dN/dS analysis of subclonal mutations shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "1fee31c0-6cf8-467c-b216-1575bfd2eb5b",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C23",
+      "claim": "Selection is weaker in both drivers and passengers with lower VAFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although selection attenuates in drivers and passengers in both subclonal and clonal mutations, selection is weaker in both drivers and passengers with lower VAFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of clonal and subclonal mutation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "f76ab9ae-7f3e-450f-b7dc-7d7cd40709a1",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C24",
+      "claim": "Negative selection is not specific to any particular gene functional category expected to be under constraint.",
+      "claim_type": "EXPLICIT",
+      "source": "We first annotated our observed mutations by different functional categories and Gene Ontology (GO) terms (Harris et al., 2004) and find that negative selection is not specific to any particular gene functional category expected to be under constraint, and specifically not limited to essential or housekeeping genes \u2013 a key prediction of the 'weak selection' model (Martincorena et al., 2017; Figure 2\u2014figure supplement 11, p<0.05, Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional annotation analysis shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "2ffd8654-ff96-426a-a055-03b686e999c4",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C25",
+      "claim": "Patterns of attenuated selection persist across cancer subtypes for both SNVs and CNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that these patterns of attenuated selection persist across cancer subtypes for both SNVs and CNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by subtype-specific analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "2b9ccc22-dbaf-42ad-a3b2-56ad2144b57a",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C26",
+      "claim": "Gene expression of HSP90, Chaperonins, and the Proteasome increases across the whole range of SNV burdens (weighted R2 of 0.84, 0.78, and 0.78, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, gene expression of HSP90, Chaperonins, and the Proteasome does increase across the whole range of SNV (weighted R2 of 0.84, 0.78, and 0.78, respectively) and CNA burdens (weighted R2 of 0.83, 0.88, and 0.85, respectively) (Figure 2G and Figure 2\u2014figure supplement 14A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression analysis shown in Figure 2G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "63995c2e-eaf6-4f94-adfe-ef060ceff518",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C27",
+      "claim": "Gene expression of HSP90, Chaperonins, and the Proteasome increases across the whole range of CNA burdens (weighted R2 of 0.83, 0.88, and 0.85, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, gene expression of HSP90, Chaperonins, and the Proteasome does increase across the whole range of SNV (weighted R2 of 0.84, 0.78, and 0.78, respectively) and CNA burdens (weighted R2 of 0.83, 0.88, and 0.85, respectively) (Figure 2G and Figure 2\u2014figure supplement 14A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression analysis shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "de3f479f-eed3-4fd7-9e68-7c2c9d8d648d",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C28",
+      "claim": "Expression of heat shock gene sets increases across the whole range of mutational burdens, even after the dN/dS of passengers approaches 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, expression of these gene sets increases across the whole range of mutational burdens, even after the dN/dS of passengers approaches 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression analysis across mutational burden bins",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "345ec40f-d033-4cd3-8435-a5d794d6c4a3",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C29",
+      "claim": "Passengers continue to impart a substantial cost to cancer cells, even in high mutational burden tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "This result presents additional evidence that passengers continue to impart a substantial cost to cancer cells, even in high mutational burden tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from gene expression patterns of stress response pathways",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "37e1d681-78d5-47aa-be69-c8f738488336",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C30",
+      "claim": "The maximum likelihood estimate (MLE) of mean driver fitness benefit is 53%.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, the maximum likelihood estimate (MLE) of mean driver fitness benefit is 53% (Figure 3B), while the MLE of passenger mean fitness cost is 1.03% (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Estimated from ABC modeling shown in Figure 3B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "819c8bc2-7bda-42ab-bbd7-2bff9dfab437",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C31",
+      "claim": "The maximum likelihood estimate (MLE) of passenger mean fitness cost is 1.03%.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, the maximum likelihood estimate (MLE) of mean driver fitness benefit is 53% (Figure 3B), while the MLE of passenger mean fitness cost is 1.03% (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Estimated from ABC modeling shown in Figure 3C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "18e6cee8-ae11-4fc1-9b19-755b129a9bf4",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C32",
+      "claim": "Simulations with MLE values agree well with all observed data (Pearson's r=0.988 for combined driver/passenger dN/dS).",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations with these MLE values agree well with all observed data (Figure 3D\u2013F, Pearson's r=0.988 for combined driver/passenger dN/dS).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of simulated and observed data shown in Figure 3D-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "788c7550-d796-49c7-9d4d-1df54dfb80ab",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C33",
+      "claim": "A model incorporating synonymous drivers predicts that approximately 6% of synonymous mutations within driver genes experience positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The best-fitting model predicts that ~6% of synonymous mutations within driver genes experience positive selection, which is consistent with previous estimates for human oncogenes (Supek et al., 2014) (Materials and methods, Figure 3D and Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Estimated from modeling and consistent with prior published estimates",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "5f23c0d3-afbb-4baa-850b-9eedd9889565",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C34",
+      "claim": "Cancer cells are in total approximately 90% fitter than normal tissues (119% total benefit of drivers, 46% total cost of passengers).",
+      "claim_type": "EXPLICIT",
+      "source": "Given the quantity of drivers and passengers observed in a typical cancer (TCGA), our model implies that cancer cells are in total ~90% fitter than normal tissues (119% total benefit of drivers, 46% total cost of passengers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from modeling results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "1021b781-e4ff-4a30-bcc8-6c3865e3fa3a",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C35",
+      "claim": "A median of five drivers each of which has a mean benefit of approximately 19% accumulate per tumor in these simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "A median of five drivers each of which has a mean benefit of ~19% accumulate per tumor in these simulations \u2013 also consistent with estimates from age incidence curves (National Cancer Institute, 2007), known hallmarks of cancer (Hanahan and Weinberg, 2000), and estimates of the selective benefit of individual drivers (Dai et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation results and consistent with prior published estimates",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "5dd92741-a1e7-4192-a99f-ccb77a0accf8",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C36",
+      "claim": "All passengers together confer a fitness cost of approximately 46% per tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, under our modeling assumptions, all passengers together confer a fitness cost of ~46% per tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from modeling results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "a12df258-2ccb-425c-b88f-01c2b5a63131",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C37",
+      "claim": "The individual fitness effects of accumulated passengers in these simulations (mean 0.8%) are similar to observed fitness costs in cancer cell lines (1\u20133%).",
+      "claim_type": "EXPLICIT",
+      "source": "While this collective burden appears large, the individual fitness effects of accumulated passengers in these simulations (mean 0.8%) are similar to observed fitness costs in cancer cell lines (1\u20133%) (Williams et al., 2008) and the human germline (0.5%) (Cassa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of simulation results to prior published experimental data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "b2b91748-c097-4c55-8e57-73b42b92a55d",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C38",
+      "claim": "Passengers accumulated primarily via Muller's ratchet, while only approximately 5% accumulated via hitchhiking.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that in our model, these passengers accumulated primarily via Muller's ratchet, while only ~5% accumulated via hitchhiking inferred using population genetics theory (McFarland et al., 2013) and MLE fitness effects, Materials and methods, Figure 3\u2014figure supplement 6.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from modeling results using population genetics theory",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "107a5433-05e5-4519-9be2-8792c5fbb1a5",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C39",
+      "claim": "Signals of selection are largely absent in cancer because of the inefficiency of selection and not because of weakened selective pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we argue that signals of selection are largely absent in cancer because of the inefficiency of selection and not because of weakened selective pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion drawn from multiple lines of evidence",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "d2e710ab-8d2a-43e8-b45c-cb2ff7c8a64c",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C40",
+      "claim": "In low mutational burden tumors (\u22643 total substitutions per tumor), increased selection for drivers and against passengers is observed and ubiquitous.",
+      "claim_type": "EXPLICIT",
+      "source": "In low mutational burden tumors (\u22643 total substitutions per tumor), increased selection for drivers and against passengers is observed and ubiquitous: in SNVs and CNAs; in heterozygous, homozygous, clonal, and subclonal mutations; and in mutations predicted to be functionally consequential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of multiple analyses across different mutation types",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "e19905da-1a67-44e7-8d7b-4c488b5551b0",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C41",
+      "claim": "Inefficient selection is generic to tumor evolution and deleterious load is a nearly universal hallmark of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that inefficient selection is generic to tumor evolution and that deleterious load is a nearly universal hallmark of cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from patterns observed across cancer subtypes",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "9339f418-3ea6-443e-b10a-852bb0711d16",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C42",
+      "claim": "Less than 0.1% of mutations in TCGA reside within low mutational burden tumors (approximately 1% of all tumors, N=83).",
+      "claim_type": "EXPLICIT",
+      "source": "Since <0.1% of mutations in TCGA reside within low mutational burden tumors (~1% of all tumors, N=83), dN/dS in passengers at low mutational burdens (~0.56) does not appreciably alter pan-cancer dN/dS of passengers (0.97 in our study, 0.82\u20130.98 in Martincorena et al., 2017; Weghorn and Sunyaev, 2017; Zapata et al., 2018; Ostrow et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from TCGA data distribution",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "b6ff8008-1d19-4db2-974d-3b67613bf8cf",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C43",
+      "claim": "Low mutational burden tumors are uniquely valuable for identifying genes and pathways under positive and negative selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we believe that low mutational burden tumors are uniquely valuable for identifying genes and pathways under positive and negative selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from statistical power considerations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "8928e9d5-288d-44fa-b94e-e53bca5b3c26",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C44",
+      "claim": "Passengers continue to be deleterious even in high mutational burden tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "While only ~1% of tumors exhibit substantial negative selection, selection in drivers, selection on CNAs, and expression patterns of chaperones and proteasome components all show a continuous response to deleterious passenger load across a broad range of mutational burdens. Collectively, this suggests that passengers continue to be deleterious even in high mutational burden tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from multiple lines of evidence including expression patterns",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "5d4e2d2b-ccad-4815-bbce-bc4d50344f81",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C45",
+      "claim": "Despite dN/dS patterns approaching 1 in tumors with elevated mutational burdens, passengers are not effectively neutral (Ns > 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these simulations indicate that, despite dN/dS patterns approaching 1 in tumors with elevated mutational burdens, passengers are not effectively neutral (Ns > 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from evolutionary modeling results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "8501486c-b851-4952-9bc8-e3933f9640cd",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C46",
+      "claim": "Passengers confer an individually weak, but collectively substantial fitness cost of approximately 46% that measurably impacts tumor progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, passengers confer an individually weak, but collectively substantial fitness cost of ~46% that measurably impacts tumor progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from modeling results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "08261751-84cc-41b3-884b-3df6343ddc40",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C47",
+      "claim": "Selection's efficiency in cancer is further reduced when spatial constraints are considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, we note that selection's efficiency in cancer is further reduced when spatial constraints are considered (Sottoriva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior published work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "a35ebb58-b090-4863-9352-250d499b8c61",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C48",
+      "claim": "In germline evolution, mutations are believed to be primarily deleterious because of protein misfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "In germline evolution, mutations are believed to be primarily deleterious because of protein misfolding (Drummond and Wilke, 2008; Lobkovsky et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior published work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "65ec8389-d4d1-46da-adcc-285b0f306d66",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C49",
+      "claim": "Elevated mutational burden tumors may buffer the cost of deleterious mutations by upregulating multiple heat shock pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that elevated mutational burden tumors may buffer the cost of deleterious mutations by upregulating multiple heat shock pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "4805066f-2c04-414a-8c24-dddff08615d0",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C50",
+      "claim": "The permutation-based null model accurately measures selection even in the presence of simulated mutational biases.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that this approach accurately measures selection even in the presence of simulated mutational biases (Materials and methods, Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation validation shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "cd010521-6ed0-44a3-a513-bc83a46c17a7",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C51",
+      "claim": "The permutation-based approach reliably measures the absence of selection (dN/dS = 1) in weakly expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this approach also reliably measures the absence of selection (dN/dS = 1) in weakly expressed genes (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of weakly expressed genes shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "131fc9f5-2a7f-4049-9650-3ef4da784fd1",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C52",
+      "claim": "Negative selection is specific to low mutational burden tumors and not biased by small sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that negative selection on passengers is specific to low mutational burden tumors and not biased by small sample sizes (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by random sampling analysis shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "e6e8a9c9-0f36-40c1-9785-78f13050f5ec",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C53",
+      "claim": "Only 1.7% of randomly sampled sets of sites had similar signals of negative selection (dN/dS < 0.56).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, only 1.7% of randomly sampled sets of sites had similar signals of negative selection (dN/dS < 0.56).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by random sampling analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "d3deadea-b90f-4db2-8a39-74c7e97e0a23",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C54",
+      "claim": "The pattern of attenuated selection among drivers has been reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "While the attenuation of selection against passengers in higher mutational burden tumors is a novel discovery, this pattern among drivers has been reported previously (Martincorena et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior published work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "89959bd9-f9e3-418b-bd0c-aee81e29c951",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C55",
+      "claim": "CNAs of all lengths experience attenuated selection.",
+      "claim_type": "EXPLICIT",
+      "source": "While CNAs of all lengths experience attenuated selection, CNAs longer than the average gene length (>100 KB) experience greater selective pressures in drivers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CNA analysis stratified by length",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "f139ed85-cfbc-48e9-b6c7-d40cd1815af5",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C56",
+      "claim": "CNAs longer than the average gene length (>100 KB) experience greater selective pressures in drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "While CNAs of all lengths experience attenuated selection, CNAs longer than the average gene length (>100 KB) experience greater selective pressures in drivers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CNA analysis stratified by length",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "05f1b4d2-3bd2-4437-b8ff-284390a09601",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C57",
+      "claim": "Weaker efficiency of selection among less frequent variants is expected under a range of population genetic models.",
+      "claim_type": "EXPLICIT",
+      "source": "Weaker efficiency of selection among less frequent variants is expected under a range of population genetic models (Messer, 2009) and especially so in rapidly expanding, spatially constrained cancers (Sottoriva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior published theoretical work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "d8f389ff-d6a8-4874-9827-77df3ce959cb",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C58",
+      "claim": "Patterns of attenuated selection in SNVs persist in broad and specific cancer subtype classification schemes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that patterns of attenuated selection in SNVs persists in the broad and specific (drivers p=3.8 \u00d7 10\u20135, passengers p=1.7 \u00d7 10\u20132, Wilcoxon signed-rank test; Figure 2\u2014figure supplement 12) classification schemes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis across cancer subtypes shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "87b19a23-f108-4ec0-a0e5-f578e4b0a73b",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C59",
+      "claim": "Expression of HSP90, Chaperonins, and Proteasome gene sets increases with the mutational burden of tumors across cancer types for SNVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of HSP90, Chaperonins, and Proteasome gene sets increases with the mutational burden of tumors across cancer types stratified by the number of somatic nucleotide variants (SNVs) (p<0.05, p<1.3 \u00d7 10\u20134, p<5.2 \u00d7 10\u20134, respectively; Wilcoxon signed-rank test) and CNAs (p>0.05, p<9.3 \u00d7 10\u20133, p<1.9 \u00d7 10\u20132 respectively; Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of gene expression across cancer subtypes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "fb30d472-4f05-4401-9b4d-68af7fbc8dbd",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C60",
+      "claim": "Expression of Chaperonins and Proteasome gene sets increases with the mutational burden of tumors across cancer types for CNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of HSP90, Chaperonins, and Proteasome gene sets increases with the mutational burden of tumors across cancer types stratified by the number of somatic nucleotide variants (SNVs) (p<0.05, p<1.3 \u00d7 10\u20134, p<5.2 \u00d7 10\u20134, respectively; Wilcoxon signed-rank test) and CNAs (p>0.05, p<9.3 \u00d7 10\u20133, p<1.9 \u00d7 10\u20132 respectively; Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of gene expression across cancer subtypes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "313e500d-14f0-48b2-80ee-30a18fdbe00b",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C61",
+      "claim": "The mutation rates of tumors that could progress to cancer in the model recapitulate observed mutation rates in human cancer (median 3.7\u00d710\u20139, 95% interval 1.1\u00d710\u201310\u20138.2\u00d710\u20138).",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the mutation rates of tumors that could progress to cancer in our model also recapitulate observed mutation rates in human cancer (Camps et al., 2007) (median 3.7\u00d710\u20139, 95% interval 1.1\u00d710\u201310\u20138.2\u00d710\u20138, Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of simulation results to prior published data shown in supplementary figure",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "6549a25b-d105-480d-9872-dbfca8e23b42",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C62",
+      "claim": "An average of 1.2 deleterious passengers hitchhike with each driver, which account for 2.0% of accumulated passengers.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the maximum likelihood estimates (MLE) of selection for drivers and against passengers, we estimate that an average of 1.2 deleterious passengers hitchhike with each driver, which account for 2.0% of accumulated passengers (the majority, and remainder, accumulate via Muller's ratchet).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from modeling results using population genetics theory",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "bfaf7dd2-7b11-45fd-98ad-1ee6a776921d",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C63",
+      "claim": "High mutational burden tumors are more likely to contain mutations in pan-cancer driver gene sets which might not directly contribute to tumorigenesis in specific tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, high mutational burden tumors are more likely to contain mutations in pan-cancer driver gene sets which might not directly contribute to tumorigenesis in specific tumors, and thus might not be under direct positive selection in all tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about alternative explanations for driver attenuation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "63271966-a8f5-45c2-bfc1-1c3d097cc891",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C64",
+      "claim": "Additional driver mutations might not directly contribute to tumor fitness beyond a certain number of driver mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, additional driver mutations might not directly contribute to tumor fitness beyond a certain number of driver mutations (e.g. 5-hit model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about alternative explanations for driver attenuation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "e0a6e40b-e7f7-49f6-82ab-10618f7eac5e",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C65",
+      "claim": "Hill-Robertson interference is capable of reproducing all the features of the data (steep attenuation of negative selection in passengers and gradual attenuation of positive selection in drivers).",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, it's important to note that Hill-Robertson interference is capable of reproducing all the features of the data (steep attenuation of negative selection in passengers and gradual attenuation of positive selection in drivers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "d84deb32-dad7-4605-b10e-ff03b0daeaad",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "claim_id": "C66",
+      "claim": "Rapid adaptation through natural selection \u2013 acting on entire genomes, rather than individual mutations \u2013 is pervasive in all tumors, including those with elevated mutational burdens.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results indicate that rapid adaptation through natural selection \u2013 acting on entire genomes, rather than individual mutations \u2013 is pervasive in all tumors, including those with elevated mutational burdens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from modeling results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ef224c2a-2834-4e60-95f6-c0e84950025f",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors validate a novel permutation-based non-parametric null model for calculating dN/dS ratios in cancer genomes. The method accurately measures selection even with extreme mutational biases, reliably detects absence of selection in weakly expressed genes, and confirms that negative selection in low mutational burden tumors is not an artifact of small sample sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 provide comprehensive validation of the permutation-based method through simulations (C50), negative controls (C51), and statistical robustness testing (C52-C53). The validation includes testing against extreme mutational signatures, weakly expressed genes, and random sampling controls, all showing the method performs as expected.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "d7cc3926-a42a-4fb7-9b5c-74101b761bbe",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Low mutational burden tumors (\u22643 substitutions) exhibit strong negative selection against passenger mutations (dN/dS ~ 0.56), while high mutational burden tumors show dN/dS approaching 1 (~ 0.93). This pattern is ubiquitous across SNVs, CNAs, clonal and subclonal mutations, and different cancer subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C16, C17, and C40 collectively demonstrate the core empirical finding with consistent dN/dS measurements across multiple analytical approaches and mutation types. The data is validated using both parametric (dNdScv) and non-parametric methods (C15), with appropriate statistical controls (C52-C53).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "575cb5f9-8e89-45b6-9096-8cbb95254763",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Driver mutations exhibit attenuated positive selection at elevated mutational burdens, with dN/dS declining from ~2.7 in low burden tumors to ~1.16 in high burden tumors. Driver mutations also become less functionally consequential as mutational burden increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C20, and C54 are supported by dN/dS analysis across mutational burden bins and PolyPhen2 functional annotation data (Figure 2B). The pattern has been previously reported (C54), providing independent validation. The functional consequence analysis provides orthogonal evidence supporting the selection attenuation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "29acb914-4fb5-42b2-9988-0c8d4f4213df",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Copy number alterations (CNAs) show attenuated selection patterns similar to SNVs, with both driver and passenger CNAs experiencing reduced selective pressures as total CNA burden increases. CNAs longer than 100 KB experience greater selective pressures in drivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C55, and C56 are supported by dE/dI analysis using both breakpoint frequency and fractional overlap metrics (Figure 2C, supplementary figures). The analysis includes appropriate controls (Figure 2\u2014figure supplement 8) and stratification by CNA length, demonstrating the generality of selection attenuation beyond SNVs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "18a0f3e4-bcd5-45c0-892e-2d3875e8c7e4",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Selection attenuation persists in subclonal mutations (VAF < 0.2), though selection is weaker in both drivers and passengers with lower VAFs. This pattern is consistent with population genetic models predicting weaker selection efficiency for less frequent variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C23, and C57 are supported by VAF-stratified dN/dS analysis (Figure 2D, supplementary figure 10) across multiple VAF thresholds. The observation that subclonal mutations show attenuated selection refutes the alternative hypothesis that selection patterns are artifacts of pre-transformation mutations. The weaker selection at lower VAFs is theoretically expected (C57).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "86c311f2-1f71-447c-89b1-6b162c7c515f",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Negative selection in low mutational burden tumors is not specific to any particular functional gene category (including essential genes, housekeeping genes, or highly expressed genes) and persists across broad and specific cancer subtype classifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, and C58 are supported by functional annotation analysis (Figure 2\u2014figure supplement 11) and cancer subtype-specific analysis (Figure 2E-F, supplementary figure 12) with statistical significance (p<0.05 for passengers, p=3.8\u00d710\u207b\u2075 for drivers). This refutes the 'weak selection' model prediction that negative selection should be limited to essential genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "14347b70-d748-46b9-8945-90a45accac96",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Tumors upregulate heat shock pathways (HSP90, Chaperonins, Proteasome) as mutational burden increases, with high correlation coefficients (R\u00b2 0.78-0.88 for SNVs, 0.83-0.88 for CNAs). This upregulation continues even after passenger dN/dS approaches 1, suggesting passengers remain deleterious even in high mutational burden tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C26-C29, C44, C49, C59-C60 are supported by gene expression analysis (Figure 2G, supplementary figure 14) showing strong correlations across mutational burden bins and cancer subtypes. The continued upregulation beyond the point where dN/dS approaches 1 provides orthogonal evidence that passengers remain costly. Statistical significance is demonstrated across cancer types (p<0.05 to p<1.3\u00d710\u207b\u2074).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "3e4a3277-190e-40dc-94b1-c0c6871bd6cc",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Approximate Bayesian computation (ABC) modeling estimates the mean driver fitness benefit at 53% and mean passenger fitness cost at 1.03%. Simulations with these parameters agree well with observed data (Pearson's r=0.988). A model incorporating ~6% synonymous drivers in driver genes provides slightly better fit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by ABC analysis with appropriate validation (leave-one-out cross-validation, Figure 3\u2014figure supplement 3). The model fit is quantitatively strong (r=0.988) across multiple summary statistics (dN/dS patterns, age incidence, mutational burden distribution). The synonymous driver estimate (C33) is consistent with prior literature, providing external validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "46c9a469-52fb-4201-a43a-e2b11723d599",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Hill-Robertson interference alone can reproduce all observed patterns of attenuated selection, including steep attenuation of negative selection in passengers and gradual attenuation of positive selection in drivers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C65 are supported by evolutionary simulations showing that a simple model with only drivers, passengers, and genome-wide linkage can quantitatively reproduce observed dN/dS patterns (Figure 3D-F). The model requires no additional mechanisms beyond Hill-Robertson interference to explain the data, though alternative explanations for driver attenuation are acknowledged (C63-C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "0b90ae2c-0756-430e-80a3-77aa2f57ae5c",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Modeling estimates that passengers collectively impose a ~46% fitness cost per tumor, while drivers provide ~119% total benefit, resulting in cancer cells being ~90% fitter than normal tissues overall.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C34, C36, and C46 are internally consistent calculations derived from the ABC modeling results (C30-C31). The individual passenger fitness effects (mean 0.8%) are comparable to observed costs in cancer cell lines (1-3%) and germline (0.5%) (C37), providing external validation. However, the authors acknowledge these estimates are provisional given model simplifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "696e1eac-6062-4d70-86c1-1bc7e6b35d29",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model predicts a median of five drivers per tumor (each with ~19% mean benefit) and mutation rates (median 3.7\u00d710\u207b\u2079) that are consistent with age incidence curves, hallmarks of cancer, and observed mutation rates in human cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C61 are supported by comparison of simulation outputs to multiple independent data sources: age incidence curves, known cancer hallmarks, and published mutation rate estimates. The consistency across these orthogonal validation metrics strengthens confidence in the model's biological realism, though the model remains simplified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "a782831e-4133-41bf-86c5-ce8410ff1d2d",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In the model, passengers accumulate primarily via Muller's ratchet (~95-98%) rather than hitchhiking (~2-5%), with an average of 1.2 deleterious passengers hitchhiking with each driver.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C62 are supported by calculations using population genetics theory applied to the MLE fitness parameters (Figure 3\u2014figure supplement 6). The estimates are derived from established theoretical frameworks, though they depend on the accuracy of the underlying model assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "3711e0d0-74aa-4fca-b666-e55125eb9a80",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The lack of observed negative selection in most tumors is due to inefficient selection caused by Hill-Robertson interference, not relaxed selective pressures. Passengers are not effectively neutral (Ns > 1) despite dN/dS approaching 1, and deleterious load is a nearly universal hallmark of cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C7, C39, C41, C45, and C66 represent the main conclusions synthesized from multiple lines of evidence: dN/dS patterns (C2, C16-C18), gene expression data (C26-C29), functional annotations (C20, C24), and evolutionary modeling (C5, C30-C32, C65). The convergence of empirical observations and modeling results strongly supports these interpretations, though alternative mechanisms cannot be completely excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "7bf343a1-8fa4-4f2a-ad4b-2740b9629605",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Less than 0.1% of mutations in TCGA reside in low mutational burden tumors (~1% of tumors, N=83), making these tumors uniquely valuable for identifying genes under selection despite their rarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C43 are supported by straightforward calculations from TCGA data distribution. The statistical argument is sound: aggregating mutations from low-burden tumors provides sufficient power to detect selection that would be masked in pan-cancer analyses. This explains why prior studies missed these patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "83ecce4b-60bc-461c-859c-6305f844f81e",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work has established that cancer genomes show weak negative selection (dN/dS ~1) unlike germline evolution (dN/dS ~0.4), that Hill-Robertson interference reduces selection efficiency, and that protein misfolding drives germline selection. These observations motivate the hypothesis that selection should be more efficient in low mutational burden tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C14, C47-C48 accurately summarize prior published work with appropriate citations. The logical connection between established principles (Hill-Robertson interference, mutation rate effects) and the testable prediction (C14) is sound. These claims provide the theoretical foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "f945eb64-846c-4e56-89b2-929757c672dc",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Parametric (dNdScv) and non-parametric (permutation-based) approaches for calculating dN/dS identify similar patterns of selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is directly supported by Figure 2A showing concordance between the two methods. This validation is important for establishing that the results are not artifacts of the specific null model chosen, though the authors prefer the non-parametric approach for its fewer assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "d92d389a-623c-4b92-adf4-ef46e3af49d7",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Alternative explanations for driver attenuation include that high mutational burden tumors may contain mutations in pan-cancer driver genes that don't contribute to tumorigenesis in specific contexts, or that additional drivers beyond a certain number may not contribute to fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63 and C64 are explicitly labeled as speculation by the authors. While these are plausible alternative explanations for driver attenuation patterns, they are not directly tested. The authors note that Hill-Robertson interference alone can explain the data (C65), but acknowledge these alternatives cannot be excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    },
+    {
+      "id": "dc579a11-18f9-4885-b357-da2786cb0533",
+      "content_id": "4aeb5791-6522-46eb-970d-c0b7a5f687ac",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The individual fitness effects of accumulated passengers in simulations (mean 0.8%) are similar to observed fitness costs in cancer cell lines (1-3%) and human germline (0.5%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 provides external validation by comparing simulation outputs to independent experimental measurements from cancer cell lines and germline studies. The agreement across these different systems supports the biological plausibility of the model's fitness estimates, though direct experimental validation in tumors would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:21:12.981337Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4805066f-2c04-414a-8c24-dddff08615d0",
+      "result_id": "ef224c2a-2834-4e60-95f6-c0e84950025f"
+    },
+    {
+      "claim_id": "cd010521-6ed0-44a3-a513-bc83a46c17a7",
+      "result_id": "ef224c2a-2834-4e60-95f6-c0e84950025f"
+    },
+    {
+      "claim_id": "131fc9f5-2a7f-4049-9650-3ef4da784fd1",
+      "result_id": "ef224c2a-2834-4e60-95f6-c0e84950025f"
+    },
+    {
+      "claim_id": "e6e8a9c9-0f36-40c1-9785-78f13050f5ec",
+      "result_id": "ef224c2a-2834-4e60-95f6-c0e84950025f"
+    },
+    {
+      "claim_id": "676928d6-ea24-4a6d-871e-35109ab16d82",
+      "result_id": "d7cc3926-a42a-4fb7-9b5c-74101b761bbe"
+    },
+    {
+      "claim_id": "8be7a372-2f06-4088-9583-664287eea609",
+      "result_id": "d7cc3926-a42a-4fb7-9b5c-74101b761bbe"
+    },
+    {
+      "claim_id": "f7555a14-7b7d-4ba3-b54e-4fb16d340fd0",
+      "result_id": "d7cc3926-a42a-4fb7-9b5c-74101b761bbe"
+    },
+    {
+      "claim_id": "d2e710ab-8d2a-43e8-b45c-cb2ff7c8a64c",
+      "result_id": "d7cc3926-a42a-4fb7-9b5c-74101b761bbe"
+    },
+    {
+      "claim_id": "3907ba1e-8c75-438a-9cac-f7f26d153784",
+      "result_id": "575cb5f9-8e89-45b6-9096-8cbb95254763"
+    },
+    {
+      "claim_id": "fd37e58c-369a-47eb-9f46-73c5560d4394",
+      "result_id": "575cb5f9-8e89-45b6-9096-8cbb95254763"
+    },
+    {
+      "claim_id": "d3deadea-b90f-4db2-8a39-74c7e97e0a23",
+      "result_id": "575cb5f9-8e89-45b6-9096-8cbb95254763"
+    },
+    {
+      "claim_id": "1ea5cfe8-9971-4156-9391-e6488e2d9cf3",
+      "result_id": "29acb914-4fb5-42b2-9988-0c8d4f4213df"
+    },
+    {
+      "claim_id": "89959bd9-f9e3-418b-bd0c-aee81e29c951",
+      "result_id": "29acb914-4fb5-42b2-9988-0c8d4f4213df"
+    },
+    {
+      "claim_id": "f139ed85-cfbc-48e9-b6c7-d40cd1815af5",
+      "result_id": "29acb914-4fb5-42b2-9988-0c8d4f4213df"
+    },
+    {
+      "claim_id": "05b04bc8-9915-4d48-8d7d-8f6d5948d78b",
+      "result_id": "18a0f3e4-bcd5-45c0-892e-2d3875e8c7e4"
+    },
+    {
+      "claim_id": "1fee31c0-6cf8-467c-b216-1575bfd2eb5b",
+      "result_id": "18a0f3e4-bcd5-45c0-892e-2d3875e8c7e4"
+    },
+    {
+      "claim_id": "05f1b4d2-3bd2-4437-b8ff-284390a09601",
+      "result_id": "18a0f3e4-bcd5-45c0-892e-2d3875e8c7e4"
+    },
+    {
+      "claim_id": "f76ab9ae-7f3e-450f-b7dc-7d7cd40709a1",
+      "result_id": "86c311f2-1f71-447c-89b1-6b162c7c515f"
+    },
+    {
+      "claim_id": "2ffd8654-ff96-426a-a055-03b686e999c4",
+      "result_id": "86c311f2-1f71-447c-89b1-6b162c7c515f"
+    },
+    {
+      "claim_id": "d8f389ff-d6a8-4874-9827-77df3ce959cb",
+      "result_id": "86c311f2-1f71-447c-89b1-6b162c7c515f"
+    },
+    {
+      "claim_id": "1d2d64f7-5d5b-4810-b4cf-5063df8833c5",
+      "result_id": "14347b70-d748-46b9-8945-90a45accac96"
+    },
+    {
+      "claim_id": "2b9ccc22-dbaf-42ad-a3b2-56ad2144b57a",
+      "result_id": "14347b70-d748-46b9-8945-90a45accac96"
+    },
+    {
+      "claim_id": "63995c2e-eaf6-4f94-adfe-ef060ceff518",
+      "result_id": "14347b70-d748-46b9-8945-90a45accac96"
+    },
+    {
+      "claim_id": "de3f479f-eed3-4fd7-9e68-7c2c9d8d648d",
+      "result_id": "14347b70-d748-46b9-8945-90a45accac96"
+    },
+    {
+      "claim_id": "345ec40f-d033-4cd3-8435-a5d794d6c4a3",
+      "result_id": "14347b70-d748-46b9-8945-90a45accac96"
+    },
+    {
+      "claim_id": "8928e9d5-288d-44fa-b94e-e53bca5b3c26",
+      "result_id": "14347b70-d748-46b9-8945-90a45accac96"
+    },
+    {
+      "claim_id": "65ec8389-d4d1-46da-adcc-285b0f306d66",
+      "result_id": "14347b70-d748-46b9-8945-90a45accac96"
+    },
+    {
+      "claim_id": "87b19a23-f108-4ec0-a0e5-f578e4b0a73b",
+      "result_id": "14347b70-d748-46b9-8945-90a45accac96"
+    },
+    {
+      "claim_id": "fb30d472-4f05-4401-9b4d-68af7fbc8dbd",
+      "result_id": "14347b70-d748-46b9-8945-90a45accac96"
+    },
+    {
+      "claim_id": "37e1d681-78d5-47aa-be69-c8f738488336",
+      "result_id": "3e4a3277-190e-40dc-94b1-c0c6871bd6cc"
+    },
+    {
+      "claim_id": "819c8bc2-7bda-42ab-bbd7-2bff9dfab437",
+      "result_id": "3e4a3277-190e-40dc-94b1-c0c6871bd6cc"
+    },
+    {
+      "claim_id": "18e6cee8-ae11-4fc1-9b19-755b129a9bf4",
+      "result_id": "3e4a3277-190e-40dc-94b1-c0c6871bd6cc"
+    },
+    {
+      "claim_id": "788c7550-d796-49c7-9d4d-1df54dfb80ab",
+      "result_id": "3e4a3277-190e-40dc-94b1-c0c6871bd6cc"
+    },
+    {
+      "claim_id": "aeafee70-97dd-4bcf-9906-fa97534a9e6c",
+      "result_id": "46c9a469-52fb-4201-a43a-e2b11723d599"
+    },
+    {
+      "claim_id": "e0a6e40b-e7f7-49f6-82ab-10618f7eac5e",
+      "result_id": "46c9a469-52fb-4201-a43a-e2b11723d599"
+    },
+    {
+      "claim_id": "d3496d0e-8c14-4e67-8dcc-8d900c2da8ff",
+      "result_id": "0b90ae2c-0756-430e-80a3-77aa2f57ae5c"
+    },
+    {
+      "claim_id": "5f23c0d3-afbb-4baa-850b-9eedd9889565",
+      "result_id": "0b90ae2c-0756-430e-80a3-77aa2f57ae5c"
+    },
+    {
+      "claim_id": "5dd92741-a1e7-4192-a99f-ccb77a0accf8",
+      "result_id": "0b90ae2c-0756-430e-80a3-77aa2f57ae5c"
+    },
+    {
+      "claim_id": "8501486c-b851-4952-9bc8-e3933f9640cd",
+      "result_id": "0b90ae2c-0756-430e-80a3-77aa2f57ae5c"
+    },
+    {
+      "claim_id": "1021b781-e4ff-4a30-bcc8-6c3865e3fa3a",
+      "result_id": "696e1eac-6062-4d70-86c1-1bc7e6b35d29"
+    },
+    {
+      "claim_id": "313e500d-14f0-48b2-80ee-30a18fdbe00b",
+      "result_id": "696e1eac-6062-4d70-86c1-1bc7e6b35d29"
+    },
+    {
+      "claim_id": "b2b91748-c097-4c55-8e57-73b42b92a55d",
+      "result_id": "a782831e-4133-41bf-86c5-ce8410ff1d2d"
+    },
+    {
+      "claim_id": "6549a25b-d105-480d-9872-dbfca8e23b42",
+      "result_id": "a782831e-4133-41bf-86c5-ce8410ff1d2d"
+    },
+    {
+      "claim_id": "2de8bf9f-738b-4a07-9fa0-6c7163d27d5a",
+      "result_id": "3711e0d0-74aa-4fca-b666-e55125eb9a80"
+    },
+    {
+      "claim_id": "99a9b3ba-4072-42af-97c9-4126a2706fae",
+      "result_id": "3711e0d0-74aa-4fca-b666-e55125eb9a80"
+    },
+    {
+      "claim_id": "107a5433-05e5-4519-9be2-8792c5fbb1a5",
+      "result_id": "3711e0d0-74aa-4fca-b666-e55125eb9a80"
+    },
+    {
+      "claim_id": "e19905da-1a67-44e7-8d7b-4c488b5551b0",
+      "result_id": "3711e0d0-74aa-4fca-b666-e55125eb9a80"
+    },
+    {
+      "claim_id": "5d4e2d2b-ccad-4815-bbce-bc4d50344f81",
+      "result_id": "3711e0d0-74aa-4fca-b666-e55125eb9a80"
+    },
+    {
+      "claim_id": "d84deb32-dad7-4605-b10e-ff03b0daeaad",
+      "result_id": "3711e0d0-74aa-4fca-b666-e55125eb9a80"
+    },
+    {
+      "claim_id": "9339f418-3ea6-443e-b10a-852bb0711d16",
+      "result_id": "7bf343a1-8fa4-4f2a-ad4b-2740b9629605"
+    },
+    {
+      "claim_id": "b6ff8008-1d19-4db2-974d-3b67613bf8cf",
+      "result_id": "7bf343a1-8fa4-4f2a-ad4b-2740b9629605"
+    },
+    {
+      "claim_id": "2464ea75-7992-4f4b-aaa9-a380bedc06d9",
+      "result_id": "83ecce4b-60bc-461c-859c-6305f844f81e"
+    },
+    {
+      "claim_id": "e09c9617-18ad-477b-8e43-40216021ab11",
+      "result_id": "83ecce4b-60bc-461c-859c-6305f844f81e"
+    },
+    {
+      "claim_id": "19251cfc-5f73-4df5-9005-abc2f7bbcf68",
+      "result_id": "83ecce4b-60bc-461c-859c-6305f844f81e"
+    },
+    {
+      "claim_id": "8cd7562b-1944-40b2-94f0-e1eb5301e586",
+      "result_id": "83ecce4b-60bc-461c-859c-6305f844f81e"
+    },
+    {
+      "claim_id": "3eeefd23-2da0-433e-90ba-8a9ceff5ae60",
+      "result_id": "83ecce4b-60bc-461c-859c-6305f844f81e"
+    },
+    {
+      "claim_id": "7a0b1d81-8b32-4b38-ab14-7938770324f3",
+      "result_id": "83ecce4b-60bc-461c-859c-6305f844f81e"
+    },
+    {
+      "claim_id": "2be3ee03-3cf9-496c-b43a-b9bc5fe1d491",
+      "result_id": "83ecce4b-60bc-461c-859c-6305f844f81e"
+    },
+    {
+      "claim_id": "608332da-88d2-4062-ac95-7d0cdabf1185",
+      "result_id": "83ecce4b-60bc-461c-859c-6305f844f81e"
+    },
+    {
+      "claim_id": "08261751-84cc-41b3-884b-3df6343ddc40",
+      "result_id": "83ecce4b-60bc-461c-859c-6305f844f81e"
+    },
+    {
+      "claim_id": "a35ebb58-b090-4863-9352-250d499b8c61",
+      "result_id": "83ecce4b-60bc-461c-859c-6305f844f81e"
+    },
+    {
+      "claim_id": "acf3cff7-3927-47ea-8799-48947ce53aca",
+      "result_id": "f945eb64-846c-4e56-89b2-929757c672dc"
+    },
+    {
+      "claim_id": "bfaf7dd2-7b11-45fd-98ad-1ee6a776921d",
+      "result_id": "d92d389a-623c-4b92-adf4-ef46e3af49d7"
+    },
+    {
+      "claim_id": "63271966-a8f5-45c2-bfc1-1c3d097cc891",
+      "result_id": "d92d389a-623c-4b92-adf4-ef46e3af49d7"
+    },
+    {
+      "claim_id": "a12df258-2ccb-425c-b88f-01c2b5a63131",
+      "result_id": "dc579a11-18f9-4885-b357-da2786cb0533"
+    }
+  ],
+  "comparisons": []
+}

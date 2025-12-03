@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Genotoxic agents promote BCL6 expression in resistant cancer cells, and BCL6 upregulation correlates with drug resistance and poor clinical outcomes. Multiple cell lines showed resistance to etoposide (\u226430 \u03bcM) and doxorubicin (\u22640.6 \u03bcM), with BCL6 expression dramatically increased in resistant cells. BCL6 protein levels correlated with IC50 values (R\u00b2=0.61, p<0.0001) and high BCL6 expression associated with poor progression-free survival in chemotherapy-treated patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between BCL6 upregulation and drug resistance is well-documented across multiple cell lines (C40-C41, C43-C44, C48-C50) with appropriate statistical analysis (R\u00b2=0.61, p<0.0001). Clinical correlation data (C47) provides translational relevance. The use of clinically relevant drug concentrations (C42) strengthens the findings. RNA-seq and protein data converge to support the central claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C45",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "BCL6 transactivation is associated with weakened therapeutic efficacy both in vitro and in vivo. Time-dependent BCL6 induction occurs with long-term etoposide exposure, and BCL6 upregulation is observed in both primary resistance and acquired resistance models. In xenograft models, etoposide treatment at 10 mg/kg/day increased BCL6 protein levels while showing limited tumor growth inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal dynamics of BCL6 induction (C51) and in vivo validation (C52-C53) strengthen the mechanistic understanding. The observation in acquired resistance models (C45) extends beyond primary resistance. However, the xenograft data would benefit from more detailed dose-response analysis and longer-term follow-up to fully establish the relationship between BCL6 levels and therapeutic failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Genetic manipulation of BCL6 modulates sensitivity to genotoxic agents. BCL6 knockdown dramatically attenuated clonogenic growth in resistant cells treated with etoposide, while BCL6 overexpression increased etoposide IC50 by up to 17-fold in sensitive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bidirectional genetic experiments (loss-of-function C54-C55 and gain-of-function C56) provide strong causal evidence for BCL6's role in drug resistance. The 17-fold increase in IC50 is substantial and biologically significant. Multiple independent approaches (siRNA, inducible shRNA, overexpression) strengthen confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Etoposide treatment induces transcriptional reprogramming of pro-inflammatory cytokines, with interferon-\u03b1 and interferon-\u03b3 responses substantially enriched in resistant cells. Gene ontology analysis showed inflammatory/immune response genes enriched in resistant Capan-2 and H661 cells but not sensitive PC9 cells. GSEA demonstrated significant upregulation of IFN-\u03b1 and IFN-\u03b3 response genes, with corresponding increases in IFN-\u03b1 and IFN-\u03b3 mRNA and protein levels specifically in resistant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcriptomic data (C57-C59) is well-supported by orthogonal validation using qPCR (C60-C61) and ELISA (C62-C63). The cell-type specificity (resistant vs. sensitive) strengthens the mechanistic link. However, the manuscript would benefit from addressing whether IFN production is cell-autonomous or involves paracrine signaling, and whether tumor microenvironment factors contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Interferon signaling functionally contributes to chemoresistance. Etoposide enhanced IRF1 expression and potentiated IFN-induced IRF1 upregulation. Exogenous IFN-\u03b1 and IFN-\u03b3 protected sensitive cells from etoposide-induced death, while genetic or antibody-mediated interference with IFN signaling (IFNAR1 knockdown or anti-IFN-\u03b3 antibodies) enhanced sensitivity to etoposide in resistant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional validation through gain-of-function (C67-C68) and loss-of-function (C69-C70) experiments provides strong evidence for IFN signaling's causal role. The bidirectional experiments are well-designed. However, the manuscript lacks mechanistic detail on how IFNs mediate protection beyond BCL6 upregulation, and whether other IFN-stimulated genes contribute to resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The interferon/STAT1 axis directly regulates BCL6 expression. Etoposide promoted STAT1 abundance and activation specifically in resistant cells, and STAT1 knockdown synergized with etoposide. IFN-\u03b1 and IFN-\u03b3 increased BCL6 mRNA and protein expression, effects potentiated by etoposide. STAT1 manipulation (knockdown or overexpression) correspondingly altered BCL6 levels. Luciferase reporter assays and ChIP-qPCR demonstrated STAT1 recruitment to BCL6 promoter regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic chain from IFN\u2192STAT1\u2192BCL6 is well-established through multiple complementary approaches: correlation (C71, C75-C76), genetic manipulation (C81-C83), reporter assays (C84), and ChIP-qPCR (C85). The ChIP data provides direct evidence of STAT1 binding to BCL6 regulatory regions. However, the manuscript should address whether other transcription factors cooperate with STAT1 and whether epigenetic modifications play a role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "BCL6 represses the tumor suppressor PTEN, enabling resistant cell survival through mTOR pathway activation. Etoposide treatment decreased PTEN expression in resistant cells, with inverse correlation between BCL6 and PTEN. TCGA analysis showed mutual exclusivity between BCL6 amplification and PTEN deletion. BCL6 manipulation (overexpression or knockdown) inversely affected PTEN levels, and ChIP-qPCR showed increased BCL6 occupancy at the PTEN promoter. Etoposide activated mTOR signaling (p-mTOR, p-S6K, p-S6), and PTEN manipulation altered etoposide sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BCL6\u2192PTEN\u2192mTOR axis is well-supported by multiple lines of evidence: expression correlation (C88-C90), genetic manipulation (C91-C92, C95-C96), ChIP data (C93), and pathway activation (C94). The TCGA mutual exclusivity data (C89) provides population-level support. However, the manuscript should address whether BCL6 directly binds PTEN promoter or acts through intermediates, and whether other BCL6 targets contribute to resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Pharmacological BCL6 inhibition enhances etoposide efficacy in vitro. BCL6 inhibitors (BI3802, Compound 7) sensitized multiple resistant cell lines to etoposide and doxorubicin, with combination index values <1 indicating synergy. Combined treatment enhanced colony formation inhibition, increased DNA damage markers (p-H2AX, comet tail moment), PARP cleavage, and apoptosis compared to single agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro combination studies are comprehensive, using multiple inhibitors (C97-C98), appropriate synergy metrics (CI values C99), and multiple functional readouts (C100-C104). The mechanistic markers (DNA damage, apoptosis) support the proposed mechanism. However, the manuscript should address potential off-target effects of the inhibitors and whether the synergy is schedule-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "BCL6 inhibition sensitizes tumors to etoposide in vivo. In HCT116 xenografts, BCL6 was upregulated within 2 days of etoposide treatment and sustained throughout. FX1 (BCL6 inhibitor) addition from day 2 significantly enhanced etoposide efficacy, decreasing tumor volume and weight without systemic toxicity. Combined treatment suppressed mTOR signaling and increased DNA damage markers (p-H2AX) while decreasing proliferation (Ki-67). Similar results were obtained in PANC28 xenografts with BCL6 knockdown and in patient-derived KRAS-mutant lung cancer xenografts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo validation across three different models (HCT116, PANC28, LACPDX) with both genetic and pharmacological approaches provides strong translational evidence. The temporal BCL6 induction data (C105) supports the rationale for delayed BCL6 inhibitor addition. Tolerability data (C107) is important for clinical translation. However, the manuscript lacks pharmacokinetic data for FX1, and longer-term studies would strengthen conclusions about durability of response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C128"
+    ],
+    "result": "BCL6 functions as a central mediator of chemoresistance through a coordinated pathway: interferon/STAT1 serves as upstream regulator, PTEN is a functional downstream target, BCL6 activation sustains a pro-survival phenotype, and BCL6 blockade enhances genotoxic agent efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes the major findings into a coherent mechanistic model supported by the individual results above. The pathway is well-established through the component studies. However, the manuscript should address whether this pathway operates in all tumor types, whether additional parallel pathways contribute, and whether feedback mechanisms exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background context on genotoxic chemotherapy and resistance mechanisms. Genome instability is a hallmark of tumors, genotoxic chemotherapy introduces DNA damage and activates apoptotic pathways, but intrinsic or adaptive resistance limits clinical efficacy through mechanisms including increased DNA repair, pro-survival pathway activation, and caspase defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by appropriate citations (C13-C21). They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background on BCL6 biology and therapeutic targeting. BCL6 is a transcriptional repressor with oncogenic roles in lymphomas and solid tumors, functions in germinal center B cell stress tolerance by repressing DNA damage response genes, undergoes ATM-mediated degradation under high stress, and can be therapeutically targeted with small molecule inhibitors. BCL6 has been implicated in various stress responses and drug resistance contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations (C22-C39) and establish the rationale for investigating BCL6 in chemoresistance. The authors' prior work (C39) provides direct motivation. These are contextual rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The drug concentrations used to define resistance (30 \u03bcM etoposide, 0.6 \u03bcM doxorubicin) represent the highest achievable plasma concentrations in patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological claim is supported by appropriate pharmacokinetic citations (Kaul et al., 1995; Palle et al., 2006) and is important for establishing clinical relevance of the resistance definitions used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Prior evidence suggests PTEN as a BCL6 target. PTEN was enriched in BCL6 promoter binding peaks in germinal center B cells and BCL6 directly binds PTEN promoter in acute lymphoblastic leukemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims from prior literature (Ci et al., 2009; Geng et al., 2015) provide rationale for investigating BCL6-PTEN regulation in the current context. They are appropriately cited background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Background on BCL6 in germinal centers, DNA damage-induced inflammatory responses, IRF1 biology, and interferon/STAT1 signaling in chemoresistance. BCL6 protects germinal center B cells during somatic hypermutation, DNA damage triggers inflammatory cytokine secretion, IRF1 is an IFN-inducible transcription factor, and IFNs mediate chemoresistance through STAT1-driven gene signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background concepts supported by appropriate citations that provide mechanistic context for the findings. They are not novel contributions of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Characterization of BCL6 inhibitors used in the study. BI3802 is a BCL6 degrader with poor bioavailability, Compound 7 targets the BCL6 BTB/POZ domain, and FX1 disrupts BCL6-corepressor interactions with good in vivo activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These tool compound characterizations are appropriately cited and justify the choice of different inhibitors for in vitro vs. in vivo studies. This is methodological background rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Prior work on BCL6 transcriptional regulation. STAT5 negatively regulates BCL6 in lymphomas, FoxO3a promotes BCL6 in BCR-ABL inhibitor-treated leukemia, and STAT1 can transactivate BCL6 in chronic myeloid leukemia and T follicular helper cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These prior findings are appropriately cited and provide context for the STAT1\u2192BCL6 regulatory mechanism discovered in solid tumors. The authors appropriately acknowledge that STAT1-mediated BCL6 regulation has been observed in other contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Background on tumor microenvironment responses to DNA damage and chemotherapy. DNA damage induces production of growth factors and proteases, pro-inflammatory cytokines promote chemoresistance, chemotherapeutic efficacy relates to type I interferon responses, and IFN-related signatures predict chemotherapy response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established concepts in the chemoresistance field, appropriately cited, that provide context for the interferon-mediated resistance mechanism discovered in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Background on BCL6 transcriptional mechanisms and regulation. BCL6 silences target genes in B cells and lymphoma, recruits corepressors through its BTB domain, can be therapeutically targeted at the BTB domain, maintains germinal center B cells, undergoes auto-regulatory control, and shows genomic alterations in various cancers. mTOR activation confers drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established aspects of BCL6 biology and cancer relevance, appropriately cited, that provide necessary background for interpreting the findings. The authors' prior work on BRD3-BCL6 interaction (C143) is appropriately referenced.",
+    "result_type": "MINOR"
+  }
+]

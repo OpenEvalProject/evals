@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C68",
+      "C69",
+      "C92"
+    ],
+    "result": "TOC159 contains a SUMO-interacting motif (SIM) in its G-domain that specifically interacts with SUMO3 but not SUMO1 or SUMO2. This was identified through computational prediction using GPS-SUMO algorithm and validated experimentally through yeast two-hybrid assays and co-immunoprecipitation in planta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39, C40, C41, C42, C68, C69, and C92 collectively demonstrate the presence and specificity of the SIM-SUMO3 interaction. The computational prediction (C39, C68) is validated by experimental data from yeast two-hybrid assays (C40, C41, C69) and co-immunoprecipitation (C42), providing converging lines of evidence. The specificity for SUMO3 over SUMO1/2 is consistently demonstrated across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C73"
+    ],
+    "result": "TOC159 contains a conserved SUMOylation site at lysine 1370 (K1370) in the M-domain. A K1370R substitution disables SUMOylation, and only a small fraction of TOC159 is SUMOylated under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C43, C44, C45, C46, and C73 provide strong evidence for the SUMOylation site. The site was identified computationally (C43, C73), shown to be conserved across species (C44), and validated experimentally through in planta SUMOylation assays (C5, C6, C45, C46). The K1370R mutation effectively abolishes SUMOylation (C6), confirming this as the primary SUMOylation site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The non-SUMOylatable TOC159GM-K/R mutant complements the albino ppi2 phenotype under normal growth conditions, showing normal chlorophyll levels, protein accumulation, TOC complex assembly, and chloroplast localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 and C74-C76 demonstrate that SUMOylation is not essential for TOC159 function under standard conditions. Multiple lines of evidence including phenotypic complementation (C49, C50, C74), protein level measurements (C51, C52), and localization studies (C53) all support this conclusion. The inference that TOC complex assembly is normal (C75, C76) is reasonably supported by the presence of wild-type levels of TOC75 and TOC33.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57",
+      "C58",
+      "C84"
+    ],
+    "result": "Under low GA conditions induced by PAC treatment, the non-SUMOylatable TOC159GM-K/R mutant is destabilized compared to wild-type TOC159GM, accumulating to significantly lower levels (<50%). This destabilization also affects TOC complex partners TOC75 and TOC33.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C56, C57, C58, and C84 provide consistent evidence from western blot analyses showing differential protein stability under low GA stress. The quantification shows statistically significant differences (C84: <50% levels), and the effect extends to TOC complex partners (C58), suggesting a physiologically relevant destabilization. The experimental design appropriately uses PAC to induce low GA conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C62",
+      "C63"
+    ],
+    "result": "Treatment with the proteasome inhibitor MG132 rescues both wild-type TOC159GM and the K/R mutant to the same protein levels, indicating that the differential stability is due to UPS-mediated degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C62, and C63 demonstrate that proteasome inhibition eliminates the difference in protein levels between wild-type and mutant TOC159. This is strong evidence that the destabilization of the K/R mutant is specifically due to increased proteasomal degradation. The rescue experiment is a critical control that mechanistically links SUMOylation to protection from UPS-dependent degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C9",
+      "C90",
+      "C94",
+      "C99"
+    ],
+    "result": "SUMOylation at K1370 partially stabilizes TOC159 against UPS-dependent degradation under low GA stress conditions, contributing to fine-tuning of preprotein import and regulation of TOC159 levels during early plant development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C9, C90, C94, and C99 represent the main conclusions of the study. These are well-supported by the experimental evidence showing differential stability (C7, C56-C58, C84), rescue by proteasome inhibition (C8, C62, C63), and effects on cargo protein accumulation (C65, C88). The use of 'partially stabilizes' appropriately reflects that SUMOylation provides protection but does not completely prevent degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "RGL2 protein levels are similar between TOC159GM:ppi2 and TOC159GM-K/R:ppi2 lines under low GA conditions, indicating that the K1370R mutation does not affect DELLA accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by western blot data showing no difference in RGL2 levels between the two lines. This is an important control demonstrating that the differential stability of TOC159 variants is not due to differences in the upstream GA signaling pathway or DELLA protein levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C88",
+      "C89"
+    ],
+    "result": "Photosynthesis-associated proteins (PSBO1, PSBA, RBCL, RBCS, PETC, PSAD, ATPC, LHCB2) trended lower in TOC159GM-K/R:ppi2 plants under low GA but not to a statistically significant extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65 and C88 explicitly state that the differences are not statistically significant, which undermines the strength of this result. Claim C89 offers speculation about why significant differences were not observed (already low TOC159 levels), but this remains untested. While the trend is consistent with the hypothesis, the lack of statistical significance means this result cannot be considered definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C93"
+    ],
+    "result": "The physiological consequences of the SIM-SUMO3 interaction in the G-domain remain unknown but may regulate interactions with SUMOylated complex partners such as TOC33, TOC75, or DELLA (RGL2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71 and C93 are explicitly speculative, and C72 only provides computational predictions of SUMOylation sites in other proteins. No experimental evidence is provided to test these hypotheses. While the speculation is reasonable given the established SIM-SUMO3 interaction, this remains an untested hypothesis requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The SUMO pathway might act on the CHLORAD pathway at specific developmental stages, based on connections between Cdc48 and SUMO pathways in chromatin dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is explicitly acknowledged as speculation without supporting evidence from the current study. While the authors cite a connection between Cdc48 and SUMO in chromatin dynamics (Franz et al., 2016), they explicitly state 'we currently do not offer evidence for such a mechanism.' This is purely speculative and requires future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background information on chloroplast biogenesis, protein import machinery, and TOC159 structure and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10-C18 provide established background knowledge about chloroplast biology and TOC159. These are well-supported by citations to prior literature and represent accepted knowledge in the field. This contextual information is necessary for understanding the significance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background information on the CHLORAD pathway and GA-dependent regulation of TOC159 during chloroplast biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 describe prior work on TOC159 regulation through the CHLORAD pathway and GA signaling. These are supported by appropriate citations and provide essential context for the current study. The speculation in C26 about CHLORAD independence is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background information on SUMO biology, SUMOylation mechanisms, and prior evidence for TOC159 SUMOylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C38 provide background on SUMO biology and cite prior work identifying TOC159 as a potential SUMO substrate. These are well-supported by citations and establish the rationale for the current study. The information about TOC159 domain structure (C37, C38) is relevant for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The A-domain of TOC159 is dispensable while the M-domain is essential for protein import, and TOC159GM can complement the ppi2 phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 cite prior work (Lee et al., 2003; Agne et al., 2009) establishing that the A-domain can be omitted while maintaining function. This justifies the use of TOC159GM constructs in the current study and is well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C60",
+      "C83"
+    ],
+    "result": "PAC treatment inhibits GA biosynthesis, creating low GA conditions that promote DELLA-dependent TOC159 degradation via the UPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, C60, and C83 describe the experimental system used to induce low GA conditions. These are supported by appropriate citations (Piskurewicz et al., 2008; Shanmugabalaji et al., 2018) and represent established methodology for studying GA-dependent processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "TOC75 and TOC33 levels are the same in both transgenic lines in the absence of PAC treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by western blot data and serves as an important control showing that differences only emerge under stress conditions. This validates the experimental design and demonstrates that the K1370R mutation specifically affects stress-induced degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Gene expression of photosynthesis-associated genes does not change significantly at moderate PAC concentrations (1-5 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 cites prior work (De Giorgi et al., 2015) to justify the use of 2 \u03bcM PAC for examining protein accumulation without confounding transcriptional effects. This is appropriate use of prior literature to support the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Prior work demonstrated that TOC159 physically interacts with the SUMO E2 enzyme and is SUMOylated by SUMO3 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C67 cite prior work (Elrouby and Coupland, 2010) that provided initial evidence for TOC159 SUMOylation. This establishes the foundation for the current study's more detailed investigation of SUMOylation sites and functional consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The GA receptor GID1 interacts with SUMO1 through a SIM that prevents its interaction with DELLA in Arabidopsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 cites prior work (Conti et al., 2014) as an example of how SIM-SUMO interactions can regulate protein-protein interactions in GA signaling. This provides precedent for the authors' speculation about TOC159 SIM function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background information on SUMOylation in plant stress responses and development, and the crosstalk between SUMOylation and ubiquitination pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 provide background on SUMO biology in plants and the complex relationship between SUMOylation and ubiquitination. These are well-supported by multiple citations and establish the conceptual framework for understanding how SUMOylation might protect TOC159 from UPS-dependent degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "TOC75 and TOC33 accumulate to lower levels in the K/R mutant line under low GA, presumably to maintain complex stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by experimental data showing reduced TOC75 and TOC33 levels. However, the explanation about maintaining stoichiometry is speculative. The data clearly show the reduction, but the mechanism remains uncertain. The claim is appropriately qualified with 'presumably.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Typically, only a small fraction of SUMO target proteins undergo SUMOylation under specific cellular conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 cites established knowledge (Johnson, 2004) about SUMO biology. This contextualizes the observation that only a small fraction of TOC159 is SUMOylated (C45) and explains why this is consistent with functional significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Photosynthesis-associated proteins are considered preferred TOC159 cargo because they fail to accumulate in ppi2 mutants lacking TOC159.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 represents an inference based on established knowledge about the ppi2 phenotype. This is reasonable given that ppi2 mutants are albino and lack photosynthetic capacity, which is attributed to failure to import photosynthesis-associated proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C91",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Model describing TOC159 regulation through ubiquitination, DELLA interaction, and the role of GA signaling in controlling chloroplast biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C95, C96, and C97 describe a model integrating current findings with prior work. C91 and C97 cite prior literature, while C95 and C96 represent established knowledge about GA signaling. This model provides a framework for understanding how SUMOylation fits into the broader regulatory network.",
+    "result_type": "MINOR"
+  }
+]

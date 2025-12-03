@@ -1,0 +1,417 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "FABP5 is the most highly expressed FABP isoform in multiple myeloma cell lines at both gene and protein levels, with consistent expression across hematopoietic/lymphoid lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 provide converging evidence from multiple independent datasets (cell line gene expression, immunofluorescence, CCLE database, proteomic analysis) demonstrating FABP5 as the predominant FABP in MM cells. The consistency across methodologies and datasets strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "FABP5 shows negative CERES scores in all MM cell lines and across all cancer types in the Cancer Dependency Map, indicating cellular dependency on FABP5 for survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are supported by CRISPR screening data from the DepMap database. The negative CERES score of -0.30 in all 20 MM cell lines (C7) and negative scores across all cancer types (C8) provide strong evidence for FABP5 dependency. This is a well-established computational approach for identifying genetic dependencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "CRISPR-Cas9 knockout of FABP5 in MM.1R cells achieved 94% editing efficiency with 84% reduction in FABP5 expression, resulting in slight reduction in cell numbers and compensatory upregulation of FABP6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are supported by multiple complementary assays (sequencing, qRT-PCR, cell viability). The observation of FABP6 upregulation (C13) in FABP5 KO cells suggests compensatory mechanisms that may explain the modest effect on cell viability (C14), which is consistent with the authors' interpretation of FABP family redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "BMS309403 and SBFI-26 have defined Ki values for different FABP isoforms, with BMS309403 showing highest affinity for FABP4 (<2 nM) and SBFI-26 for FABP7 (400 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by manufacturer data and citation to Hsu et al., 2017. However, these are not original data from this study but rather characterization from prior work. The values are appropriately cited and provide necessary context for inhibitor selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "FABP inhibitors BMS309403 and SBFI-26 demonstrate dose-dependent reduction in myeloma cell numbers across 7 MM cell lines, with combination treatment showing enhanced efficacy (83% reduction at 72hr) and minimal effects on non-cancerous cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are well-supported by dose-response data across multiple cell lines (Figure 1C-F). The consistency across 7 different MM lines and the selectivity for cancer vs. non-cancer cells (C19) strengthen the therapeutic potential. Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "FABP inhibitor treatment does not alter FABP5 protein levels or localization, nor does it consistently change FABP gene expression, and exogenous recombinant FABP proteins do not affect MM cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by multiple orthogonal approaches (immunofluorescence, western blot, qRT-PCR, recombinant protein treatment). These negative results are important controls demonstrating that the inhibitors work through functional inhibition rather than protein degradation, and that extracellular FABP is not the mechanism of action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "RNA-Seq analysis reveals that FABP inhibitor treatment induces distinct gene expression profiles with 93 significantly differentially expressed genes (90 downregulated, 3 upregulated) and decreased 5-hydroxymethylcytosine levels, suggesting reduced active chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by RNA-Seq data with appropriate statistical thresholds (FDR <0.2) and orthogonal validation via 5-hydroxymethylcytosine analysis (C26). The connection to prior work on FABP and DNA methylation (C27) provides context. The predominantly downregulated gene expression pattern is consistent with the observed chromatin changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Pathway analysis of RNA-Seq data reveals 15 commonly dysregulated IPA canonical pathways across all FABP inhibitor treatments, with prominent downregulation of UPR/ER stress pathways including XBP1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by comprehensive pathway analysis using both IPA and STRING databases. The convergence of findings across different inhibitor treatments and validation of XBP1 downregulation by RT-PCR (C32) strengthens the conclusion. The biological coherence of UPR/ER stress pathway involvement in MM is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "MYC emerges as a central node in STRING network analysis and is among the top 10 most downregulated genes in RNA-Seq from combination FABP inhibitor treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by both network analysis and differential expression data. The identification of MYC as a key target is significant given its established role in MM biology. However, the mechanistic connection between FABP inhibition and MYC downregulation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Proteomic analysis shows tight grouping by treatment with 15 commonly upregulated and 15 commonly downregulated proteins, including CCL3 upregulation and Ki67/PTMA downregulation confirmed in both proteomics and RNA-Seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by mass spectrometry proteomics with appropriate replication (n=3 biological, 3 technical). The concordance between RNA-Seq and proteomics for key markers (CCL3, Ki67, PTMA) provides strong validation. The significance cutoffs (p\u22640.05, fold change \u00b11.2) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "IPA analysis of proteomic data identifies EIF2 Signaling as having the highest negative Z-score across all treatments, with increased cell death/apoptosis pathways and MYC as the most significant predicted inhibited upstream regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by systematic IPA pathway analysis of proteomic data. The convergence with RNA-Seq findings regarding MYC (C41) and the biological coherence of EIF2 signaling with UPR/ER stress pathways strengthen these conclusions. Z-scores provide quantitative assessment of pathway activation states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "MYC expression and protein levels are decreased by FABP inhibitor treatment, with 138/171 BMS309403-affected genes and 68/91 combination-affected genes showing expression patterns consistent with MYC inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by multiple orthogonal approaches (qRT-PCR, western blot, RNA-Seq analysis of MYC targets). The consistency across different cell lines and time points, plus the large number of MYC-regulated genes showing appropriate expression changes, strongly supports MYC as a key mediator of FABP inhibitor effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Pharmacological MYC inhibition dramatically reduces MM cell numbers, and FABP inhibition has reduced effect when MYC is already inhibited, suggesting MYC as a major mediator of FABP inhibitor effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C48 are supported by dose-response data with combined MYC and FABP inhibition. However, the interpretation is complicated by the strong effect of MYC inhibition alone (C47), which may create a floor effect that obscures additional FABP inhibitor contributions. The authors acknowledge this limitation. Alternative interpretations (e.g., parallel pathways, incomplete MYC inhibition) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "FABP inhibitors decrease mitochondrial oxygen consumption rates, ATP production, maximal respiration, and spare respiratory capacity, with effects exceeding those of the FAO inhibitor etomoxir, suggesting mechanisms beyond FAO inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by Seahorse metabolic assays with appropriate controls and replication (n=5 experiments). The comparison with etomoxir (C51-C52) is a critical control demonstrating that FABP inhibitor effects extend beyond simple FAO blockade. Statistical significance is demonstrated for key parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "BMS309403 treatment decreases TMRE staining in MM cells, suggesting mitochondrial membrane potential damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by TMRE flow cytometry data (n=3). The decreased TMRE staining is consistent with mitochondrial damage, though the inference about causality is appropriate given the supporting metabolic data. This result complements the Seahorse findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "FABP inhibitor combination treatment significantly increases total ROS and superoxide levels across multiple MM cell lines (MM.1S, U266, OPM2) at various time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by CellROX and MitoSOX flow cytometry data across three independent cell lines with multiple time points. The consistency across cell lines and the use of both general ROS and specific superoxide measurements strengthen the conclusion. Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "FABP inhibitor combination treatment induces G0/G1 cell cycle arrest (increased G0/G1, decreased G2/M at 48-72hr) and increases apoptosis at all time points in MM.1S cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by flow cytometry cell cycle and apoptosis assays with appropriate time course analysis. The coordinated changes in cell cycle distribution and apoptosis are consistent with the observed decreases in cell numbers and provide mechanistic insight. Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Different MM cell lines show varying sensitivity to FABP inhibitors, with 100 \u00b5M BMS309403 showing greater effects than combination treatment in MM.1S, while RPMI-8226 shows similar responses to 100 \u00b5M single inhibitors and 50 \u00b5M combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by dose-response data across multiple endpoints (apoptosis, cell cycle, Ki67). The cell line-specific differences are important for understanding therapeutic applicability. However, the inference about relative efficacy should be interpreted cautiously as it may reflect differences in FABP expression profiles or other cell line-specific factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Combination of FABP inhibitors with dexamethasone shows additive effects on cell numbers and apoptosis in three MM cell lines (MM.1S, OPM2, RPMI-8226).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by combination treatment data across three cell lines. The additive effects suggest potential for combining FABP inhibition with standard MM therapy. However, the term 'additive' should be distinguished from 'synergistic' - formal synergy analysis (e.g., Bliss independence, Loewe additivity) is not presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In the first SCID-beige xenograft model, FABP inhibitors reduced tumor burden (detected by day 21) and extended survival without affecting mouse weight, though BMD was slightly lower with BMS309403 and fat mass decreased with combination treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by in vivo data including BLI, survival analysis, and DEXA measurements. The tumor burden reduction and survival benefit are statistically significant (C68-C69). The BMD finding (C65) is noted with appropriate caution about baseline differences. This represents positive in vivo validation of the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "In the syngeneic 5TGM1-TK/KaLwRij model, BMS309403 treatment (5 mg/kg) increased survival without significant body weight changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by survival analysis and weight monitoring in a syngeneic model. The use of an immunocompetent model complements the xenograft data and suggests effects are not solely dependent on immune deficiency. Statistical significance is demonstrated for survival (p=0.0023).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "In the second cohort of SCID-Beige mice, FABP inhibitor treatments had only slight, non-significant effects on tumor burden and no effect on survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by BLI and survival data from the second cohort. These negative results are important and honestly reported. The inconsistency with the first cohort (C68-C69) highlights reproducibility issues that the authors acknowledge require further investigation. Possible explanations (dosing, delivery, timing) are discussed but not resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "High FABP5 expression in MM patient tumor cells correlates with worse clinical outcomes across multiple independent datasets, including shorter overall survival, progression-free survival, association with high-risk subtypes, and increased expression in relapsed patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 are supported by comprehensive analysis of multiple independent patient datasets (CoMMpass, Zhan, Mulligan, Carrasco, Chng) with appropriate statistical methods (Kaplan-Meier, Cox proportional hazards). The consistency across datasets and the quantified hazard ratios (HR: 1.64 for PFS, HR: 2.19 for OS) provide strong clinical validation. The large sample sizes and multiple endpoints strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "FABP5 expression is a BMI-independent biomarker for MM aggressiveness, as BMI was not associated with FABP5 in statistical models and no obesity-related genes correlated with FABP5 in the CoMMpass dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by appropriate statistical modeling (general linear model, Cox regression with BMI adjustment, correlation analysis). This analysis addresses an important potential confounder given FABP5's known role in obesity. The lack of association with obesity-related genes (C85) provides additional support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "FABP6 also affects hazard ratios for PFS and OS in MM patients, though with smaller effect sizes than FABP5, suggesting it may also be a biomarker for worse outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by Cox proportional hazards modeling of the CoMMpass dataset. The hazard ratios (HR: 1.48 for PFS, HR: 1.837 for OS) are statistically significant and biologically meaningful, though indeed smaller than FABP5. This finding is consistent with the proteomic data showing FABP6 expression in MM cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "FABP inhibition decreases UPR/ER stress pathway genes including EIF5B and XBP1, which is proposed as a mechanism of MM cell damage given MM cells' constitutive UPR activation and the known role of IRE1/XBP1 in MM survival, potentially mediated through MYC regulation of IRE1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C96 integrate experimental findings (C87-C88) with established knowledge from citations (C89-C91, C94, C96) and mechanistic inferences (C93, C95). The experimental data supporting UPR/ER stress pathway downregulation is strong. The mechanistic connections are well-reasoned and supported by literature, though the specific pathway from FABP\u2192MYC\u2192IRE1\u2192XBP1 remains inferential and would benefit from direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "MYC activation signature is present in 67% of MM patients and influences MGUS to MM progression; targeting MYC induces MM cell death but is challenging due to its importance in healthy cells, making FABP inhibition a novel approach to reducing MYC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 combine established knowledge from citations (C97-C101) with the authors' inference about their work (C102). The cited facts about MYC in MM are well-established. The inference that FABP inhibition represents a novel approach to MYC targeting (C102) is reasonable given the demonstrated MYC downregulation, though the therapeutic advantage over direct MYC inhibition remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "This work builds on established knowledge that MM cells exhibit aberrant metabolism, metabolic enzymes are important in MM tumorigenesis and drug resistance, FABP inhibitors alter multiple metabolic phenotypes, and obesity is an MM risk factor with FABP5 regulating diet-induced obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 are all supported by appropriate citations to prior literature. These claims provide important context for the current work and justify the rationale for studying FABPs in MM. They represent accurate summaries of established knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  }
+]

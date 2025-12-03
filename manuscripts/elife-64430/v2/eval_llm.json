@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors successfully engineered an isogenic pair of human iPSC lines carrying the DKC1 A386T mutation and a corresponding wild-type control. Both lines maintained pluripotency markers and normal karyotypes, and the mutant line exhibited reduced telomerase activity and progressive telomere shortening with passage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 describe the generation and validation of the isogenic iPSC model system. The experimental data in supplementary figures confirm successful CRISPR editing, maintenance of pluripotency, normal karyotypes, reduced telomerase activity, and telomere shortening in the mutant line. This provides a well-validated experimental foundation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "DC mutant iAT2 cells derived from iPSCs at late passage (35 passages post-mutation) develop progressive growth defects in alveolosphere formation that become apparent by D50 and dramatic by D70, while cells from early passage (5 passages post-mutation) show minimal defects. The defects are characterized by reduced alveolosphere size and formation efficiency, decreased SFTPC+ cell yield, but maintained AT2 lineage specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C50 collectively demonstrate passage-dependent phenotypes in DC iAT2 cells. Figure 1 data show clear differences between early and late passage cells, supporting the conclusion that defects result from progressive telomere shortening rather than immediate effects of the DKC1 mutation. The maintained expression of AT2-specific genes (C47) confirms proper lineage specification despite functional defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C64"
+    ],
+    "result": "DC mutant iAT2 cells at D70 exhibit hallmarks of cellular senescence including decreased expression of proliferation markers (MKI67, MCM2), increased expression of cell cycle inhibitor p21, increased DNA damage marked by 53BP1 foci, but no increase in apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 and C64 are well-supported by converging evidence from RNA-seq (Figure 2A) and immunofluorescence microscopy (Figures 2B-C). The combination of reduced proliferation markers, increased p21, and DNA damage foci without increased apoptosis is consistent with a senescent phenotype. The inference in C64 that short/uncapped telomeres lead to senescence is reasonable given the temporal correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "DC iAT2 cells accumulate short and uncapped telomeres by D70. While qPCR shows no significant change in average telomere length, the more sensitive TeSLA method reveals a preponderance of short telomeres, and immunofluorescence shows increased telomere dysfunction-induced foci (TIFs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 describe telomere status using multiple complementary methods. The discrepancy between qPCR (C57) and TeSLA (C59) is explained by the superior sensitivity of TeSLA for detecting short telomeres (C60), which is supported by citation. The increased TIFs (C61) provide functional evidence of telomere uncapping. The multi-method approach strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNA-seq analysis reveals minimal gene expression changes at D28 and D50, but extensive changes at D70 in DC mutant iAT2 cells. GSEA and IPA identify upregulation of DNA damage response, UPR, mitochondrial functions, and inflammatory cytokine pathways, along with downregulation of hypoxia and hedgehog signaling. Many upregulated pathways are associated with pulmonary fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C74 describe comprehensive transcriptomic analysis. Figure 3B volcano plots clearly show the temporal progression of gene expression changes. The pathway analyses (GSEA and IPA) are standard bioinformatic approaches, and the identification of PF-associated pathways is supported by citations to prior literature (C75-C79). The inference that D70 changes are driven by uncapped telomeres (C67) is reasonable given the temporal correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "DC mutant iAT2 cells at D70 show evidence of altered Wnt signaling, with upregulation of non-canonical Wnt ligands (WNT5A, WNT11) and downregulation of canonical Wnt pathway components including FZD receptors, TCF7 target genes, and shelterin genes TINF2 and POT1. TERT and TERC expression is also reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C98 describe comprehensive changes in Wnt signaling based on RNA-seq and ddPCR data (Figures 3C-I, Figure 3\u2014figure supplement 1). The upregulation of non-canonical ligands and downregulation of canonical pathway components is well-documented. The connection to prior work on miR34a (C90-C91) and shelterins (C92-C94) is appropriately cited. The inference about elevated non-canonical vs. diminished canonical signaling (C98) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C114",
+      "C116"
+    ],
+    "result": "GSK3 inhibition with CHIR99021 or CHIR98014 rescues the alveolosphere growth defect in DC mutant iAT2 cells in a dose-dependent manner. Continuous treatment with CHIR99021 prevents the growth defect from emerging, and treatment rescues both alveolosphere formation and telomerase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102, C114, and C116 describe the rescue of growth defects by GSK3 inhibitors. Figure 4B-C shows dose-dependent rescue, and supplementary figures demonstrate prevention of defects with continuous treatment and rescue with a second GSK3 inhibitor. The use of two different inhibitors (C101) strengthens the conclusion that the effect is GSK3-specific. The rescue of both growth and telomerase activity provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C108",
+      "C115"
+    ],
+    "result": "CHIR99021 treatment reduces senescence markers in DC mutant iAT2 cells, including decreased 53BP1 foci, p21+ cells, and TIF+ cells. Telomerase activity is restored to wild-type levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105, C108, and C115 describe the effects of CHIR99021 on senescence markers and telomerase activity. Figure 4D-G provides clear immunofluorescence and TRAP assay data supporting these claims. The reduction in TIFs (C105) indicates rescue of telomere capping, which is a key functional outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "CHIR99021 treatment produces a modest increase in average telomere length but no apparent decrease in the frequency of shortest telomeres by TeSLA. The rescue of telomere defects likely occurs through upregulation of telomerase activity that extends telomeres shorter than TeSLA detection limits, though lengthening-independent mechanisms are also possible. Withdrawal of CHIR99021 for only 14 days is sufficient to elicit the growth defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C111 describe telomere length changes with CHIR treatment. While C106 and C108 are supported by data (Figure 4\u2014figure supplement 3 and Figure 4G), the mechanistic interpretation in C109 is speculative. The authors acknowledge that telomeres may be extended below TeSLA detection limits or that lengthening-independent mechanisms may contribute (C110), but these possibilities cannot be distinguished with the presented data. The rapid re-emergence of defects upon CHIR withdrawal (C111) is consistent with modest telomere lengthening but doesn't definitively prove the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C117",
+      "C152",
+      "C153"
+    ],
+    "result": "The DC iAT2 cell model recapitulates key features of pulmonary fibrosis including senescent AT2 cells with shortened telomeres, upregulation of PF-associated pathways, and suppression of canonical Wnt signaling. This system provides a new preclinical model for studying PF pathogenesis and testing therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113, C117, C152-C153 summarize the overall findings and utility of the model. The model successfully recapitulates multiple hallmarks of PF AT2 cells based on the experimental data presented throughout the manuscript. The claim that it offers a new system to probe PF biology (C117, C153) is reasonable given the human origin, isogenic controls, and ability to model telomere dysfunction. However, the model's predictive validity for therapeutic testing remains to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establish that DC is characterized by telomere maintenance defects leading to short telomeres and age-related diseases including PF; that PF derives from AT2 cell failure; that genetic and epidemiological evidence links telomere dysfunction to PF; and that AT2 cells depend on Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C11-C23 provide background context supported by extensive citations to prior literature. These are well-established facts in the field that provide rationale for the study. The claims accurately represent the current understanding of DC, PF pathogenesis, and the role of telomeres and AT2 cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Prior work from the authors' lab and others established a Wnt-telomere feedback loop in intestinal stem cells, showed that Wnt pathway agonists can rescue DC intestinal defects, and demonstrated the importance of Wnt signaling in lung development and regeneration. The role of Wnt signaling in PF is complex and context-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 describe prior work that provides rationale for investigating Wnt signaling in DC AT2 cells. These claims are supported by appropriate citations to the authors' previous work (C24-C27) and other literature (C29-C32). The acknowledgment of complexity in Wnt signaling's role in PF (C31-C32) appropriately frames the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C60",
+      "C62",
+      "C63",
+      "C82",
+      "C84",
+      "C87",
+      "C93"
+    ],
+    "result": "Technical and methodological claims establish that SFTPC is a specific AT2 marker, TeSLA is more sensitive for detecting short telomeres, TIFs indicate uncapped telomeres, WNT5A/WNT11 are non-canonical ligands, FZD genes encode Wnt co-receptors, lithium chloride inhibits GSK3, and shelterins maintain telomere function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C60, C62-C63, C82, C84, C87, and C93 are established facts about markers, methods, and molecular mechanisms that are appropriately cited or represent standard knowledge in the field. These provide necessary context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C118",
+      "C119",
+      "C123",
+      "C124",
+      "C132",
+      "C133",
+      "C136",
+      "C140",
+      "C141",
+      "C145",
+      "C146"
+    ],
+    "result": "Literature-based claims establish associations between various pathways (UPR, thyroid hormone metabolism, p53, mitochondria, caveolin) and PF; effects of Wnt signaling in other lung diseases; the importance of telomerase in alveolar regeneration; Wnt regulation of TERT/TERC; p21's role in PF; mechanisms of telomere-driven senescence; and telomere-mitochondria feedback loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79, C118-C119, C123-C124, C132-C133, C136, C140-C141, C145-C146 are supported by appropriate citations to prior literature. These claims provide context for interpreting the study's findings and connecting them to broader understanding of PF pathogenesis and cellular senescence mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C125",
+      "C126",
+      "C130",
+      "C131",
+      "C134",
+      "C135",
+      "C139",
+      "C142"
+    ],
+    "result": "Interpretive claims connect the study's findings to broader mechanisms: \u03b2-catenin-dependent Wnt signaling supports AT2 cell telomere capping and proliferation; the Wnt-telomere feedback loop operates in AT2 cells; TERT/TERC are reduced in senescent iAT2 cells; GSK3 inhibition restores telomerase activity; multiple lines of evidence support GSK3/Wnt-mediated rescue; senescence manifests after telomere shortening; and the findings are consistent with telomere-mitochondria and UPR-senescence connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122, C125-C126, C130-C131, C134-C135, C139, C142 represent reasonable inferences from the experimental data, appropriately supported by citations to prior work. C130 provides particularly strong reasoning for attributing the rescue effects to GSK3/Wnt by citing drug selectivity, use of two inhibitors, and transcriptional changes. These interpretations are well-grounded in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C110",
+      "C128",
+      "C129",
+      "C137",
+      "C138",
+      "C143",
+      "C144",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Speculative claims propose that: downregulation of TINF2/POT1 may contribute to telomere uncapping; telomerase may contribute to capping via lengthening-independent mechanisms; GSK3 inhibition may have telomere-independent effects; CHIR99021 effects could differ from canonical Wnt signaling; telomeres might integrate multiple stress responses; the UPR might drive telomere dysfunction; DC AT2 cells may have trouble suppressing DNA damage during AT2-to-AT1 differentiation and may be locked in a transition state contributing to fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95, C110, C128-C129, C137-C138, C143-C144, C147-C151 are explicitly speculative hypotheses proposed by the authors. While these are reasonable possibilities based on the data and prior literature, they lack direct experimental support in this study. C149-C151 regarding AT2-to-AT1 transition are particularly speculative and would require additional experiments to test. These represent interesting directions for future work but should not be considered established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C28",
+      "C127"
+    ],
+    "result": "Mechanistic claims about CHIR99021 establish that it mimics canonical Wnt signaling output by inhibiting GSK3, and that it induces proliferation in various cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C28, and C127 describe the known mechanism of action of CHIR99021, supported by citations to prior literature. This established knowledge is important for interpreting the drug's effects in the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "DC mutant iAT2 alveolospheres at D70 showed no increase in apoptosis compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by immunofluorescence data for cleaved caspase-3 (CC3) shown in Figure 2\u2014figure supplement 1A-C. This finding helps distinguish senescence from apoptosis as the primary cellular response to telomere dysfunction in this model.",
+    "result_type": "MINOR"
+  }
+]

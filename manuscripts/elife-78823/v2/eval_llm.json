@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors developed a shear flow deformation cytometry method using a simple, commercially available microfluidic channel (5.8 cm long, 200 \u00b5m wide) where cells suspended in high-viscosity fluid (0.5-10 Pa\u00b7s) are pumped at 50-300 kPa pressure. The large channel diameter relative to cell size ensures approximately constant shear stress across cells and prevents clogging, while high viscosity enables imaging without motion blur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C13-C14, C18-C20, C92-C98 describe the experimental setup and its design advantages. These are well-supported by the Methods section, Figure 1, and are internally consistent. The design features (channel dimensions, pressure range, viscosity) are clearly specified and their advantages (preventing clogging, constant shear stress, no motion blur) are logically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The method exploits two physical principles: (1) shear stress depends only on pressure gradient and channel geometry, not fluid viscosity, and (2) cells undergo tank-treading rotation due to the flow profile, with rotation frequency increasing toward channel walls. Cells reach steady-state deformation after several rotations before measurement, and at ~10 Hz frequencies, elastic properties dominate over viscous properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C23-C27, C99-C101 describe the physical principles underlying the method. These are supported by fluid mechanics theory (Equation 4), experimental observations (Figure 2j-k, Video 1), and citations to prior work (C21-C22, C100). The steady-state assumption is justified by the long channel length relative to rotation period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C30",
+      "C109",
+      "C51"
+    ],
+    "result": "Viscoelastic cell properties are extracted using Roscoe's theoretical framework, which models cells as Kelvin-Voigt bodies (elastic spring in parallel with viscous dashpot) and predicts that cell deformation depends on elastic modulus while alignment depends on loss modulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28, C30, C109, C51 describe the theoretical basis (Roscoe model). This is well-documented with proper citations and mathematical formulations (Equations 10-22). The model assumptions are clearly stated, though limitations are acknowledged (C110-C113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "Cell shape analysis using neural networks reveals that cell strain increases non-linearly with shear stress, with decreasing slope at higher stress due to energy dissipation from tank-treading. Tank-treading frequency is zero at channel center and increases toward walls, with energy dissipation proportional to cell viscosity, rotation frequency, and strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41-C43, C45-C46 describe cell deformation behavior and its physical interpretation. These are supported by experimental data (Figure 2a-c, j-k) and theoretical explanation based on the Roscoe model. The non-linear stress-strain relationship and its attribution to tank-treading dissipation are consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C55",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Suspended cells exhibit power-law, soft glassy rheological behavior consistent with previous reports: cell stiffness is log-normally distributed, fluidity is normally distributed, and stiffness and fluidity scale inversely. These findings agree with predictions from soft glassy rheology theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C35, C55, C114-C118 describe the rheological behavior of cells. These are well-supported by experimental data (Figure 3a-c) and extensive citations to prior work showing similar findings with different methods. The agreement across multiple techniques strengthens the validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C120"
+    ],
+    "result": "Cell stiffness increases by 33% with increasing pressure (100-300 kPa) while fluidity remains constant. This increase is attributed to stress-stiffening rather than shear rate effects, as demonstrated by experiments varying alginate concentration at constant pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C59-C60, C120 describe stress-stiffening behavior. The experimental design (varying pressure vs. varying viscosity at constant pressure) effectively isolates stress-stiffening from shear rate effects. Data in Figure 3d-g support the conclusions, though the statistical significance of C59 is explicitly noted as marginal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C121",
+      "C122",
+      "C66"
+    ],
+    "result": "Method accuracy was validated using AFM-calibrated polyacrylamide beads, which showed constant, pressure-independent shear modulus over a 10-fold pressure range (20-200 kPa) and agreement with AFM measurements, demonstrating that Roscoe theory gives quantitatively accurate estimates regardless of pressure and fluid viscosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32, C121-C122, C66 describe validation with polyacrylamide beads. Figure 4 shows good agreement between shear flow cytometry and AFM measurements. The pressure-independence for linear elastic beads (C121) validates the method, while the slight fluidity increase at high strain (C66) is appropriately attributed to poroelastic effects with citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C61",
+      "C119"
+    ],
+    "result": "Measurement results are not or only marginally influenced by suspension fluid viscosity or time after cell suspension (stable up to 60 min), demonstrating robustness of the method and validity of Roscoe theory assumptions for living cells in shear-thinning fluids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C61, C119 describe method robustness. These are supported by experimental data (Figure 3f-i) showing minimal effects of alginate concentration and time. This validates key assumptions of the method and demonstrates practical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The method can estimate rheological properties of the suspension fluid from the flow velocity profile, measuring complex rheology simultaneously with cells under identical conditions. Alginate rheology measured this way agrees closely with cone-plate rheometer measurements (31% deviation over 5 orders of magnitude in shear rate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 describe the ability to characterize suspension fluid rheology. This is supported by Figure 2d-g showing velocity profiles and viscosity measurements. The agreement with cone-plate rheometry (C127) validates the approach, though 31% deviation is notable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The method measures each cell at a single tank-treading frequency depending on channel position, sampling frequency-dependent properties across a population. Tank-treading frequency can be directly measured in some cells or estimated from shear rate using an empirical equation, though this equation may not hold universally for all cell types or fluids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 describe frequency measurement approach. The direct measurement method (C131) is demonstrated in Figure 2h-i, and the empirical estimation (C132, Equation 20) is shown in Figure 2j-k. The authors appropriately acknowledge limitations (C133) regarding generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C135",
+      "C137",
+      "C138"
+    ],
+    "result": "NIH-3T3 cells soften with latrunculin B (EC50=35.2 nM, 1.47-fold max response), agreeing with published RT-DC data. HL-60 cells show similar EC50 (26.4 nM) but much higher maximum response (5.0-fold vs. 1.5-fold in other methods), attributed to lower strain rates (~10 s\u207b\u00b9) where elastic properties dominate, unlike high strain rate methods (>100 s\u207b\u00b9) where viscous behavior dominates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73, C135, C137-C138 describe dose-response measurements. The data (Figure 6) support the EC50 values and maximum responses. The explanation for higher sensitivity (lower strain rates) is logical and supported by citations (C137-C138), though direct experimental validation of the strain rate hypothesis is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C38",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Cell rheological behavior is mediated by interplay between actin and intermediate filaments. Vimentin-knockout cells soften 2.16-fold with cytochalasin D vs. 1.22-fold for wild-type, demonstrating that vimentin stabilizes the cytoskeleton. Desmin-expressing cells show similar protection (1.37-fold), confirming that intermediate filament networks protect cells from excessive deformation when actin is depolymerized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C38, C74-C82, C139-C143 describe the role of intermediate filaments. The experimental design (comparing wild-type, vimentin-knockout, and desmin-expressing cells) is appropriate, and data (Figure 7) clearly show differential responses to cytochalasin D. Statistical significance is demonstrated (p<0.05, p<0.01). The findings are consistent with prior literature (C140-C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C37",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Cell rheological behavior is cell-cycle-dependent. NIH-3T3 cells stiffen during G1 phase with maximum stiffness at late G1/early S-phase, then soften before G2/M phase. Cell radius increases during G1-to-S transition. Changes in stiffness and radius occur at different cell cycle stages, explaining the weak overall size-dependence of stiffness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C37, C83-C89, C145-C147 describe cell cycle dependence. The use of Fucci fluorescent reporter (C144) enables cell cycle staging, and data (Figure 8) show clear trends. The interpretation that stiffness and size changes occur at different stages (C89) is supported by Figure 8f. However, the mechanism underlying stiffness changes is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Measuring viscoelastic parameters from steady-state deformations has major advantages over existing microfluidic techniques: no viscoelastic models or pre-conceived response functions are needed to fit transient responses, and values are not influenced by experimental time scale. Viscoelastic properties can be determined from a single image once flow velocity profile is known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 describe methodological advantages. The steady-state approach is well-justified by the long channel and multiple rotations before measurement (C26-C27, C101). The critique of other methods (C103) is supported by citations. The single-image capability (C105) is a logical consequence of steady-state conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C150"
+    ],
+    "result": "User-friendly software is provided (available on GitHub), though current implementation stores ~4 GB of uncompressed images per experiment and analyzes at ~50 frames/s. The method can be easily and inexpensively implemented on standard microscopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108, C150 describe practical implementation. Software availability (C106) is verifiable. Storage requirements (C107) and processing speed (C108) are clearly stated limitations. The claim about easy implementation (C150) is reasonable given the simple channel design and standard microscopy equipment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The method has acknowledged limitations: cells deform non-linearly with stress-stiffening, measurements represent effective secant modulus not small-strain tangential modulus, cells are not homogeneous materials, and cells occasionally deform into sigmoidal rather than ellipsoidal shapes at high stress or with cytoskeleton-softening drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 acknowledge method limitations. These are appropriately discussed with supporting citations (C110, C112) and experimental observations (C113). The authors transparently address assumptions of the Roscoe model that may not fully apply to living cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C149",
+      "C151"
+    ],
+    "result": "Shear flow deformation cytometry provides accurate quantitative measurements of elastic and dissipative cell properties at high throughput, addressing limitations of low-throughput methods (AFM, micropipette aspiration: <10-100 cells/hr). Unlike other high-throughput microfluidic methods, cells are measured under near steady-state conditions at low-to-moderate strain rates where elastic responses dominate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91, C149, C151 summarize the method's advantages. The throughput advantage over traditional methods (C90) is well-established by citations. The steady-state, low strain rate advantages (C151) are demonstrated throughout the manuscript. The claim of accuracy (C149) is supported by validation experiments (Figure 4-5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11"
+    ],
+    "result": "Cell functions are accompanied by phenotypic changes in viscoelastic properties, and measuring them can elucidate cellular functions in health and disease. For example, neutrophil activation increases cell stiffness, leading to sequestration in lung capillaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C11 provide biological motivation. These are general statements supported by citations to prior work. They establish the importance of measuring cell mechanical properties but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C148"
+    ],
+    "result": "Cell size dependence of stiffness is also detectable in HL-60 and THP1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C148 extends the size-dependence observation to other cell types. This is supported by Figure 3\u2014figure supplement 1, though the data are not extensively discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C144"
+    ],
+    "result": "Shear stress deformability cytometry can be combined with fluorescent imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C144 describes a technical capability demonstrated with Fucci cell cycle experiments (Figure 8). This is a straightforward extension showing the method's versatility.",
+    "result_type": "MINOR"
+  }
+]

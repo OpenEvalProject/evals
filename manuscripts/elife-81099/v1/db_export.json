@@ -1,0 +1,1737 @@
+{
+  "submission": {
+    "id": "4e96295e-422a-462c-beac-15e0c2e0f29f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:10:30.049175Z",
+    "updated_at": "2025-12-03T20:10:30.049175Z"
+  },
+  "content": [
+    {
+      "id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "submission_id": "4e96295e-422a-462c-beac-15e0c2e0f29f",
+      "content_type": "manuscript",
+      "content_text": "# Weakening of the cognition and height association from 1957 to 2018: Findings from four British birth cohort studies\n\n## Authors\n\n- David Bann<sup>1</sup> ([ORCID: 0000-0002-6454-626X](https://orcid.org/0000-0002-6454-626X)) \u2020\n- Liam Wright<sup>1</sup>\n- Neil M Davies<sup>2</sup> ([ORCID: 0000-0002-2460-0508](https://orcid.org/0000-0002-2460-0508))\n- Vanessa Moulton<sup>1</sup> ([ORCID: 0000-0002-7400-2522](https://orcid.org/0000-0002-7400-2522))\n\n### Affiliations\n\n1. Centre for Longitudinal Studies, Social Research Institute, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))\n2. MRC IEU, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))\n3. K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology Trondheim Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Taller individuals have been repeatedly found to have higher scores on cognitive assessments. Recent studies have suggested that this association can be explained by genetic factors, yet this does not preclude the influence of environmental or social factors that may change over time. We thus tested whether the association changed across time using data from four British birth cohorts (born in 1946, 1958, 1970, and 2001).Methods:In each cohort height was measured and cognition via verbal reasoning, vocabulary/comprehension, and mathematical tests; at ages 10/11 and 14/17 years (N=41,418). We examined associations between height and cognition at each age, separately in each cohort, and for each cognitive test administered. Linear and quantile regression models were used.Results:Taller participants had higher mean cognitive assessment scores in childhood and adolescence, yet the associations were weaker in later (1970 and 2001) cohorts. For example, the mean difference in height comparing the highest with lowest verbal cognition scores at 10/11 years was 0.57 SD (95% CI = 0.44\u20130.70) in the 1946 cohort, yet 0.30 SD (0.23\u20130.37) in the 2001 cohort. Expressed alternatively, there was a reduction in correlation from 0.17 (0.15\u20130.20) to 0.08 (0.06\u20130.10). This pattern of change in the association was observed across all ages and cognition measures used, was robust to adjustment for social class and parental height, and modeling of plausible missing-not-at-random scenarios. Quantile regression analyses suggested that these differences were driven by differences in the lower centiles of height, where environmental influence may be greatest.Conclusions:Associations between height and cognitive assessment scores in childhood-adolescence substantially weakened from 1957\u20132018. These results support the notion that environmental and social change can markedly weaken associations between cognition and other traits.Funding:DB is supported by the Economic and Social Research Council (grant number ES/M001660/1); DB and LW by the Medical Research Council (MR/V002147/1). The Medical Research Council (MRC) and the University of Bristol support the MRC Integrative Epidemiology Unit [MC_UU_00011/1]. NMD is supported by an Norwegian Research Council Grant number 295989. VM is supported by the CLOSER Innovation Fund WP19 which is funded by the Economic and Social Research Council (award reference: ES/K000357/1) and Economic and Social Research Council (ES/M001660/1). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.\n\n## Introduction\n\nCognitive ability is a potentially important determinant of health, with associations between higher cognition and favorable subsequent health outcomes repeatedly documented in childhood, adolescence, and across adulthood (Deary and Batty, 2007). This body of evidence\u2014termed by some as \u2018cognitive epidemiology\u2019\u2014includes associations of lower cognition and anthropometric measures such as shorter height (Marioni et al., 2014; Keller et al., 2013). Shorter height is in turn associated with a range of disease outcomes and, like cognitive development, is influenced by early life factors (Monteiro and Victora, 2005; Walker et al., 2007; Perkins et al., 2016; Batty et al., 2009; Sudfeld et al., 2015).\n\nRecent studies have suggested that links between higher cognition and taller height can be large or to a sizable extent explained by shared genetic influences (Marioni et al., 2014; Keller et al., 2013; Silventoinen et al., 2012; Vuoksimaa et al., 2018), with others suggesting a role of assortative mating (Keller et al., 2013; Beauchamp et al., 2011). Keller et al., 2013 for example estimated that approximately half of the correlation was accounted for by assortative mating, and half by shared genetic factors. However, this evidence is largely derived from the analysis of single cohorts. Historical data can yield insight into the importance of the environment, even for highly heritable traits. Indeed, while height is highly heritable (Jelenkovic et al., 2016), substantial increases in average height occurred in the 20th century (Meredith, 1976; Cole, 2000), likely due to improved nutrition and a declining impact of early life infectious disease (Walker et al., 2007; Perkins et al., 2016) which in particular affected early life leg growth (Cole, 2000). Cognitive test scores are also highly heritable (Plomin and Deary, 2015) yet have also increased in the 20th century (the \u2018Flynn\u2019 effect) (Bratsberg and Rogeberg, 2018) suggesting that both factors are responsive to environmental change. Shared developmental processes may affect both outcomes (Sudfeld et al., 2015; Mansukoski et al., 2020), such as growth influencing height and brain size (Vuoksimaa et al., 2018). Improvements in nutrition and other shared developmental determinants may have weakened associations between cognition and height (Gale, 2005), as suggested by a weakening of links between low birth weight and cognition from 1958\u20132001 (Goisis et al., 2017a). A declining association between cognition and height has been suggested in the analysis of a subsample of eastern Danish male conscripts (1939\u20131967) (Teasdale et al., 1989), yet data from more heterogeneous and contemporary samples is required to strengthen conclusions and aid generalizability.\n\nWe conducted a cross-cohort study to investigate if the associations of cognition with child-adolescent height have systematically changed over time (1957\u20132018). We used four British birth cohort studies, each containing prospectively ascertained assessments of cognition and height. We hypothesized that improvements in the shared determinants of both cognition and height would lead to the weakening of associations across time; see Figure 1 for a causal diagram. We also hypothesized that cognition-height associations would be strongest amongst those in the lowest height centiles, where environmental influences on impaired height development may be particularly pronounced.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig1-v1.jpg)\n\n## Methods\n\n### Study samples\n\nFour birth cohort studies conducted in Britain with participants followed-up in childhood and adolescence were used. These were born in 1946 (MRC National Survey of Health and Development, 1946 c), 1958 (National Child Development Study, 1958 c), 1970 (British Cohort Study, 1970 c), and 2000/02 (Millennium Cohort Study, 2001 c); further details are provided in the cohort profiles (Wadsworth et al., 2006; Power and Elliott, 2006; Elliott and Shepherd, 2006; Connelly and Platt, 2014). To aid comparability, analyses were restricted to singleton births born in England, Scotland, and Wales. Sample sizes for analyses, in each cohort and age, are shown in Table 1. Each study and sample sweep used in this manuscript has received ethical approval and obtained parental/participant consent according to guidance that was in place at the time of data collection from 1957\u20132018. These historic datasets are made available for anonymized observational research which can be published on a range of topics by bona fide researchers; further details are provided elsewhere (Shepherd and Gilbert, 2019a; Centre for Longitudinal Studies, 2014; Shepherd and Gilbert, 2019b) ethical review boards are as follows: 1946 c (Queen Square Research Ethics Committee: 14/LO/1073; and the Scotland A Research Ethics Committee: 14/SS/1009), 1958 c (London \u2013 Central: 12/LO/2010), 1970 c (London-Central Research Ethics Committee: 14/LO/0371), 2001 c (London \u2013 Central MREC: 13/LO/1786).\n\n**Table 1.**\n Participant characteristics: Data from four British cohort studies.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Cohort study, birth year</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>1946 c</td>\n      <td>1958 c</td>\n      <td>1970 c</td>\n      <td>2001 c</td>\n    </tr>\n    <tr>\n      <td>Cohort characteristics and outcomes</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sample size</td>\n      <td>5,348</td>\n      <td>17,490</td>\n      <td>17,617</td>\n      <td>17,057</td>\n    </tr>\n    <tr>\n      <td>Males (%)</td>\n      <td>52.6%</td>\n      <td>51.7%</td>\n      <td>51.9%</td>\n      <td>51.4%</td>\n    </tr>\n    <tr>\n      <td>Height at 11 years, mean (SD) z-score</td>\n      <td>\u20130.41 (1.03)</td>\n      <td>\u20130.25 (1.03)</td>\n      <td>\u20130.18 (1.01)</td>\n      <td>0.29 (1.00)</td>\n    </tr>\n    <tr>\n      <td>Height at 16 years, mean (SD) z-score</td>\n      <td>\u20130.54 (1.03)</td>\n      <td>\u20130.35 (1.02)</td>\n      <td>\u20130.14 (1.16)</td>\n      <td>0.27 (0.98)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Confounding variables</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Social class</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>I Professional</td>\n      <td>3.0%</td>\n      <td>5.4%</td>\n      <td>6.1%</td>\n      <td>5.0%</td>\n    </tr>\n    <tr>\n      <td>II Managerial and technical</td>\n      <td>14%</td>\n      <td>18.2%</td>\n      <td>23.6%</td>\n      <td>43.1%</td>\n    </tr>\n    <tr>\n      <td>III Skilled Manual</td>\n      <td>46.7%</td>\n      <td>43.4%</td>\n      <td>44.5%</td>\n      <td>21.7%</td>\n    </tr>\n    <tr>\n      <td>III Skilled Non-Manual</td>\n      <td>9.1%</td>\n      <td>9.3%</td>\n      <td>9.2%</td>\n      <td>13.2%</td>\n    </tr>\n    <tr>\n      <td>IV Partly Skilled</td>\n      <td>19.0%</td>\n      <td>17.6%</td>\n      <td>12.5%</td>\n      <td>14.0%</td>\n    </tr>\n    <tr>\n      <td>V Unskilled</td>\n      <td>8.2%</td>\n      <td>6.1%</td>\n      <td>4.1%</td>\n      <td>2.9%</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Maternal education, % post compulsory</td>\n      <td>20.86%</td>\n      <td>25.1%</td>\n      <td>34.5%</td>\n      <td>52.8%</td>\n    </tr>\n    <tr>\n      <td>Maternal height, mean (SD) cm</td>\n      <td>160.81 (6.38)</td>\n      <td>161.99 (6.45)</td>\n      <td>161.28 (6.63)</td>\n      <td>164.14 (6.93)</td>\n    </tr>\n    <tr>\n      <td>Paternal height, mean (SD) cm</td>\n      <td>172.68 (8.07)</td>\n      <td>174.47 (7.42)</td>\n      <td>175.21 (7.51)</td>\n      <td>178.28 (7.23)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Note: Data are imputed (32 imputations); see methods for details and exact age of measurement in each cohort._\n\n### Measures\n\n#### Height\n\nAs described elsewhere (Johnson et al., 2015), height was obtained at the following ages in each study: ages 11 and 16 in the 1946 c and 1958 c; ages 10 and 16 in 1970 c; ages 7, 11, 14, and 17 in 2001 c. Height was directly measured in all instances, except age 16 years in 1970 c in which either self-report or objectively measured height was obtained (see sensitivity analyses below). To facilitate cross-cohort comparisons in our main analysis height variables were converted to age and sex-adjusted z-scores using growth reference charts (the UK90 reference panel; the childsds package in R Vogel, 2018). As a robustness check, we also converted height to cohort-specific z-scores at each age (i.e. without reference to an external panel such as the UK90 as used in the main analysis), percentile ranks, and ridit scores (see below).\n\n#### Cognitive function\n\nGiven differences in the cognitive tests administered to each cohort (Moulton et al., 2020), we screened and identified measures that captured the same broad cognitive domains in childhood and adolescence. Assuming the relative ranking was similar, this would enable valid cross-cohort comparisons of associations with outcomes. Differences in the cognitive tests completed could potentially bias cross-cohort comparisons of cognition-height associations. Thus, we used multiple tests assessing different cognitive domains, measured at two different ages in order to examine whether our main findings were robust to the cognitive domain tested or the age chosen. A summary is provided below\u2014information on the tests used, procedures, and scoring is provided in Supplementary file 1; further information on the origins and technical details of these tests is available from elsewhere (Moulton et al., 2020).\n\nAge 10/11 years: verbal reasoning test scores. These capture general verbal ability, verbal knowledge, and reasoning. In the 1946 c and 1958 c, this was measured using the verbal items from the General Ability Test (GAT) (Pigeon, 1964). In the younger cohorts tests from the British Ability Scales (BAS), the Word Similarities test\u2014the precursor to the Verbal Similarities (BAS II)\u2014were administered in the 1970 c and 2001 c, respectively (Elliot et al., 1978; Elliott et al., 1996).\n\nAge 14/16 years: reading/vocabulary test scores. The Watts-Vernon Reading Test (WVRT) was administered in the 1946 c and the Reading Comprehension Test in the 1958 c was devised by the National Foundation for Education Research (NFER) to parallel the aforementioned WVRT; both tests measure reading and word comprehension (Shepherd, 2012). The Applied Psychology Unit (APU) Vocabulary Test was administered in both the 1970 c and 2001 c and measures word knowledge and meaning (Closs, 1976a).\n\nFurthermore, mathematic tests were administered in each cohort and used as an alternative indicator of cognitive performance. These were measured at 15/17 years in each cohort, at 7 years in 2001 c and 10/11 years in the 1946 c, 1958 c, and 1970 c. Age 10/11 years and age 7 years in 2001 c: in the earlier cohorts the mathematics tests were specifically designed for each of the cohorts and measured contemporary number skills and mathematical calculations (1946 c Pigeon, 1964, 1958 c Shepherd, 2012, 1970 c Parsons, 2014, 2001 c Chaplin Gray et al., 2010). For the 2001 c an adaptation of the NFER Progress in Maths Test was administered. The Age 15/17 years: mathematical tests devised by the NFER were administered in the 1946 c (Pigeon, 1964) and 1958 c (Shepherd, 2012) and the APU Arithmetic Test in the 1970 c (Closs and Hutchings, 1976b); all tested numerical skills and problem-solving, along with geometry and trigonometry in the earlier cohorts. Number Analogies, a short version of the Quantitative Reasoning Battery (GL Assessments) was administered in the 2001 c.\n\nSince test performance differs by age (Moulton et al., 2020), we constructed age-adjusted cognition measures by exporting the residuals from a linear regression model with test score as the outcome and age as the exposure variable (linear term). At age 16 years in 1970 c, vocabulary tests were administered either in the home or in school\u2014since test scores differed by mode, we also adjusted for a binary indicator of mode of administration in these models. Finally, to aid the interpretation of effect sizes\u2014and comparisons across age and cohort\u2014in main analyses, we standardized all cognition measures to ridit scores (Mackenbach and Kunst, 1997) individuals in each category were assigned a value based on the proportion of the population with lower cognitive scores. This results in values between 0 and 1 with higher scores equating to better cognitive performance. In regression models coefficients thus show the mean difference in height comparing those with the lowest and highest cognition scores (termed the slope index of inequality in the health inequality literature Mackenbach and Kunst, 1997). As a robustness check, we also repeated analyses converting cognition scores to (test and cohort-specific) z-scores and percentile ranks.\n\n### Potential confounders\n\nWe hypothesized two sets of confounding variables\u2014family socioeconomic characteristics, and parental height. Childhood socioeconomic position (SEP) was indicated by the father\u2019s occupational social class, measured at 10/11 years (highest parental occupational was used for the 2001 c). To aid cross-cohort comparability, the Registrar General\u2019s Social Class was used to classify social class\u2014from I (professional), II (managerial and technical), IIIN (skilled nonmanual), IIIM (skilled manual), IV (partly-skilled), and V (unskilled) occupations. Maternal education was also used (ascertained at age six in 1946 c NSHD, at birth in the 1958 c NCDS and 1970c BCS, and at nine months \u2013 14 years in 2001 c MCS) with a binary indicator of whether the mother had left education at the mandatory leaving age (14 years old from 1918, 15 from 1944, and 16 from 1972).\n\nParental height was reported in early life\u2014 six years (1946 c), 11 years (1958 c), 0 & 10 years (1970 c), nine months \u2013 seven years (2001 c)\u2014with those with particularly low height removed (height <1.4 m; n=14, 18, 12, 10, respectively in each cohort). Parental cognition was not measured in each cohort, precluding its investigation.\n\n### Statistical analysis\n\nFirst, we conducted descriptive analyses and estimated bivariate correlations between cognition, social class, and height. Second, we regressed height on individual cognition variables (measured at the same age) adjusting for sex using linear regression since findings were similar in either sex. We did not anticipate childhood cognition and height to be directly causally related, but rather associated due to the influence of common environmental and genetic causes (see Figure 1). To test our hypotheses, we sequentially adjusted for parental SEP (class and education) and parental height (mothers and fathers).\n\nWe next used quantile regression models (Koenker and Bassett, 1978) to investigate whether mean differences observed in linear regression models arose due to differences in the lower quantiles (reflecting impaired height growth, which may be more pronounced in older cohorts). We estimated the cognition-height association at each decile, again adjusting for sex and sequentially for parental SEP and parental height.\n\nTo address missing data, multiple imputations by chained equations was completed (separately in each cohort/sex), with 32 imputations performed (burn-in = 10 iterations). To improve the plausibility of the missing at random assumption, additional auxiliary variables were included in imputation models (e.g. childhood BMI and parental education). OLS results were pooled using Rubin\u2019s rules (Rubin, 1976), while quantile regressions were pooled using the MI-then-bootstrap procedure (Bartlett and Hughes, 2020) with confidence intervals derived using the percentile method (200 bootstraps per imputation). The main findings did not differ when complete case analyses were conducted (results available upon request). Since the 1946 c and 2001 c are stratified study designs, analyses using these cohorts were conducted using study-specific design weights.\n\n### Additional and sensitivity analyses\n\nAs differences in missing data may bias cross-cohort patterns of association (Bann et al., 2021), in addition to using multiple imputations we carried out sensitivity analyses using pattern mixture modeling Leurent et al., 2018; our main OLS models were re-run altering imputed height values by a range of constant values (\u20131 to + 1 SD). This enabled investigation of the robustness of the main results to non-random missingness in the height data.\n\nWe also carried out a series of other robustness checks. First, we repeated all models using different procedures for harmonizing height (raw, z-score, ridit, and rank score) and cognition variables (z-score and rank score). Second, we repeated analyses for males and females separately. Third, as the ethnic mix of the 2001 c greatly exceeds that of older cohorts, we investigated if ethnic composition differences may have contributed to the main inferences drawn by conducting additional analyses restricted to the majority (European ancestry) population. Fourth, as the height at age 16 was collected by self-report for some participants in the 1970 c, we repeated main analyses using only the subset of those with measured height.\n\nThe associations of cognition and height could be biased by differences in the measurement of cognition in each cohort. Consequently, we carried out further sensitivity analyses to examine the role of measurement in explaining our results. First, we constrained each set of comparisons to have the same number of cognition response items; those from the cohort with the smallest observed range of scores (e.g. 22 items for verbal scores at 10/11 years; 1970 c had 22 test items, all other cohorts had 40\u201341 items and were thus rounded down; non-integer values were rounded up or down to the nearest integer; see Supplementary file 1). Second, we took random subsets of individual items to produce tests of the same size. This was only possible for the 1970 c and 2001 c, for which item-level data were available.\n\n## Results\n\n### Descriptive statistics\n\nChildhood and adolescent height were greater in each successive cohort (Table 1, Supplementary file 1). While differences in the cognitive tests administered preclude a comparison of absolute levels of cognition by cohort, the different tests used provided variation within each cohort and at each age (Figure 2). Cognitive test scores were strongly moderately positively correlated with each other, with the size of the correlation weakening across time (Figure 2\u2014figure supplement 1). Higher social class was associated with taller height and higher cognition scores; these correlations also appeared to weaken over time, as did positive correlations between maternal and paternal height (Figure 2\u2014figure supplement 1). The correlation between parental height and parental education was weakest in the 2001 c, but generally similar in the other cohorts (Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig2-v1.jpg)\n\n**Figure 2.:** Observed data.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** 95% CI intervals were calculated using bootstrapping (200 bootstrap samples). Pairwise complete cases. Note, for correlations between cognition scores and height at the same stated age in the 2001 c, contemporaneous height was used (e.g. as maths was available for 7y only in 2001 c, height at 7y was used in analyses for this correlation).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** 95% CI intervals were calculated using bootstrapping (200 bootstrap samples).\n\n### Main analyses\n\nHigher cognition scores were associated with taller height\u2014this association was found across all cohorts at both 11 and 16 years (Figure 3). These associations were stable or slightly larger between the 1946 c and 1958 c cohorts, and weakened thereafter, being substantially weakest in the youngest (2001 c) cohort. For example, after adjustment for sex, the mean difference in height associated with verbal reasoning score at 10/11 years was 0.57 SD (95% CI=0.45, 0.7) in the 1946 c, 0.59 SD (95% CI=0.53, 0.65) in the 1958 c, 0.47 SD (95% CI=0.40, 0.54) in the 1970 c, and 0.29 SD (95% CI=0.21, 0.36) in the 2001 c. Note that cognition scores were rescaled to ridit scores (0\u20131) to aid comparability: these effect estimates, therefore, show the difference in height comparing the highest with the lowest cognition score. Expressed alternatively, there was a reduction in the correlation coefficient between verbal reasoning scores and height at 10/11 years from 0.17 in 1958 c (0.15\u20130.20) to 0.08 in 2001 c (0.06\u20130.10). Testing via the inclusion of cohort*cognition interaction terms also supported this finding (Figure 3\u2014figure supplement 1). In particular, estimates from the 1946 c were least precise owing to its smaller sample size, and confidence intervals overlapped with the larger 1958 c. The pattern of weakening association across time was found at both 11 and 16 years and across all measures of cognition (verbal reasoning, maths, and reading/vocabulary).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig3-v1.jpg)\n\n**Figure 3.:** Cognition scores are the independent variables and height (age-adjusted z-scores) are the dependent variables; estimates are from separate linear regression models (95% CIs): each estimate shows the mean difference in height (z-score) comparing the highest with lowest cognition test score. Models were sequentially adjusted for sex (left panel); sex, mother\u2019s education, and father\u2019s social class (middle panel), and additionally for maternal and paternal height (right panel).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Derived from pooled OLS models (32 imputed datasets), with the interaction between cohort and cognition and cohort and other covariates. Covariates included in each model were: sex (left panel); sex, mother\u2019s education and father\u2019s social class (middle panel); and sex, mother\u2019s education, father\u2019s social class, and paternal and maternal height (right panel). Height harmonized across cohorts using growth charts from a 1990 UK growth study. Cognition scores harmonized using ridit scoring (range 0\u20131). Text refers to the difference in the association between the cohort in the rows and the cohort in the columns (a negative number indicates the association between cognition and height was smaller in the row cohort than the column cohort).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Derived from pooled OLS models (32 imputed datasets) comparing results when adjusting for sex and when further adjusting for: mother\u2019s education and father\u2019s social class (red points) mother\u2019s education, father\u2019s social class and paternal and maternal height (blue points). Height harmonized across cohorts using growth charts from a 1990 UK growth study. Cognition scores harmonized using ridit scoring (range 0\u20131).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Derived from OLS models using complete case data and adjusting for: sex (left panel); sex, mother\u2019s education and father\u2019s social class (middle panel), and sex, mother\u2019s education, father\u2019s social class, and paternal and maternal height (right panel). Height harmonized across cohorts using growth charts from a 1990 UK growth study. Cognition scores harmonized using ridit scoring (range 0\u20131) and inputted using observed range (red points) or constrained for each test to have the same range of integers in each cohort (blue triangles).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Derived from OLS models using complete case data and adjusting for: sex (left panel); sex, mother\u2019s education and father\u2019s social class (middle panel), and sex, mother\u2019s education, father\u2019s social class, and paternal and maternal height (right panel). Height harmonized across cohorts using growth charts from a 1990 UK growth study. Cognition scores harmonized using ridit scoring (range 0\u20131) and inputted using all items (blue triangles) or repeated samples of items such that each test used the same number of items in each cohort (red points); the latter was conducted using a random sample of 500 items (upper and lower error bars represent estimates from 2.5th and 97.5th draws; midpoint [triangle] is the estimate at the 50th percentile).\n\nAssociations between cognition and height were partly attenuated after adjustment for parental SEP and partly attenuated further by parental height (Figure 3) middle and right panels, respectively. However, the associations did not attenuate completely to zero after this adjustment, and the weakening of the cognition-height association observed across each cohort was similar before and after the adjustment. Attenuation (in absolute terms) when adjusting for parental SEP and parental height was broadly similar in the 1946 c, 1958 c, and 1970 c, but was smallest in the 2001 c (Figure 3\u2014figure supplement 2).\n\n### Additional analyses: Quantile regression results\n\nIn quantile regression models adjusting for sex, there was evidence that associations between height and cognition were stronger at lower centiles of height, particularly in older cohorts (Figure 4). That is, the average (mean) differences reported previously using linear regression models may have been driven by differences in the lower part of the height distribution, as hypothesized. This was especially pronounced in the 1958 c: for verbal scores at age 11, cognitive ability was associated with 0.73 SD (95% CI=0.63, 0.83) greater height at the 10th percentile and 0.47 SD (95% CI=0.37, 0.58) greater height at the 90th percentile. Differences across centiles were less marked in the 2001 c; corresponding figures in 2001c were 0.34 SD (95% CI=0.22, 0.45) and 0.27 SD (95% CI=0.14, 0.41), respectively. Qualitatively similar results were obtained when adjusted sequentially for childhood SEP and parental height.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig4-v1.jpg)\n\n**Figure 4.:** Cognition scores are the independent variables and height (age-adjusted z-scores) are the dependent variables; estimates are from separate quantile regression models (95% CIs): each estimate shows the difference in height (z-score) comparing the highest with lowest cognition test score, repeated for each decile of height (x-axis), cohort (panel columns) and measure of cognition (panel rows). Quantile regression results are interpreted similarly to those from linear regression. For example, the 50th centile shows the estimated difference in height at the median (linear regression would show the mean difference). Results were drawn from pooled quantile regression models (32 imputed datasets) with adjustment for sex. Shaded areas are 95% CIs (200 bootstraps per imputed dataset; centile method) for the specific cohort and cognition measure examined. Dashed lines show estimates for other cohorts to aid cross-cohort comparisons.\n\n### Sensitivity analyses\n\nAmong participants whose height was measured on at least one occasion, there were small differences in height according to whether an individual was lost to follow-up or not (<0.3 SD). However, repeating main analyses altering imputed values by a constant factor to attempt to account for non-random missingness (i.e. pattern mixture modeling) generally yielded qualitatively similar results, even where the factor was large (i.e.>0.8 SD; Figure 5): smallest associations were estimated in the 2001 c, and largest associations were estimated in the 1946 c or 1958 c.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig5-v1.jpg)\n\n**Figure 5.:** Difference in the association between height and maths @ age 11 across the cohort. Derived from pooled OLS models (32 imputed datasets) including adjustment for sex. OLS models repeated with imputed height values adjusted by a constant factor given in columns and rows. The color of each square indicates the difference in the association between height and cognition between two cohorts with the coefficient for the cohort on the horizontal subtracted from that on the horizontal (with given adjustment factors used). Height harmonized across cohorts using growth charts from a 1990 UK growth study. Cognition scores harmonized using ridit scoring (range 0\u20131).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Difference in the association between height and maths @ age 16 across the cohort. Derived from pooled OLS models (32 imputed datasets) including adjustment for sex. OLS models repeated with imputed height values adjusted by a constant factor given in columns and rows. The color of each square indicates the difference in the association between height and cognition between two cohorts with the coefficient for the cohort on the horizontal subtracted from that on the horizontal (with given adjustment factors used). For instance, in the bottom left panel, the coordinate 1,\u20131 refers to the difference in coefficients where + 1 SD was added to imputed height values in 1946 c and \u20131 SD was added to imputed height values in 2001 c. Height harmonized across cohorts using growth charts from a 1990 UK growth study. Cognition scores harmonized using ridit scoring (range 0\u20131).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Difference in the association between height and verbal similarity @ age 11 across the cohort. Derived from pooled OLS models (32 imputed datasets) including adjustment for sex. OLS models repeated with imputed height values adjusted by a constant factor given in columns and rows. The color of each square indicates the difference in the association between height and cognition between two cohorts with the coefficient for the cohort on the horizontal subtracted from that on the horizontal (with given adjustment factors used). For instance, in the bottom left panel, the coordinate 1,\u20131 refers to the difference in cofficients where + 1 SD was added to imputed height values in 1946 c and \u20131 SD was added to imputed height values in 2001 c. Height harmonized across cohorts using growth charts from a 1990 UK growth study. Cognition scores harmonized using ridit scoring (range 0\u20131).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81099/elife-81099-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Difference in the association between height and vocabulary/comprehension @ age 16 across the cohort. Derived from pooled OLS models (32 imputed datasets) including adjustment for sex. OLS models repeated with imputed height values adjusted by a constant factor given in columns and rows. The color of each square indicates the difference in the association between height and cognition between two cohorts with the coefficient for the cohort on the horizontal subtracted from that on the horizontal (with given adjustment factors used). For instance, in the bottom left panel, the coordinate 1,\u20131 refers to the difference in cofficients where + 1 SD was added to imputed height values in 1946 c and \u20131 SD was added to imputed height values in 2001 c. Height harmonized across cohorts using growth charts from the 1990 UK growth study. Cognition scores harmonized using ridit scoring (range 0\u20131).\n\nRepeating analyses using different procedures to score cognition (z-score, ridit scores, and percentile ranks) and height (raw, percentile rank, z-scores, ridit scores) variables in order to compare estimates across cohorts also yielded qualitatively similar results to the main OLS analysis, as did limiting analyses with the 2001 c to white participants only, or the 1970 c to those with measured rather than self-reported height at 16 years (results available upon request). Finally, results were similar when constraining similar tests to have the same range (Figure 3\u2014figure supplement 3) or sampling an equal number of items from similar tests (Figure 3\u2014figure supplement 4).\n\n## Discussion\n\n### Summary of findings\n\nThe association between higher cognition and height weakened substantially from 1957\u20132018. Associations were at least half as strong in the youngest (2001 c) compared with the oldest (1946 c and 1958 c) cohorts. Quantile regression analyses suggested that height-cognition associations (and potentially their weakening across time) were driven by differences in lower quantiles of height. Associations were only partly attenuated when controlling for parental SEP or parental height.\n\nOur findings build on earlier work, such as a study of Danish male conscripts (Teasdale et al., 1989), which also reported a weakening of the cognition-height association from 1939\u20131967. We extend these findings by use of more recent data in more generalizable samples, utilizing multiple cognitive tests, undertaking both linear and quantile regression analyses, and accounting for both parental social class and height.\n\n### Explanation of findings\n\nJust as multiple processes could explain why cognition itself has increased across time (the Flynn effect) (Pietschnig and Voracek, 2015), multiple processes could explain why associations between cognition and height have weakened across time. First, changes could have been driven by changes across time in the shared determinants of height and cognition. In particular, improvements in nutrition and reductions in the incidence (and/or impact of) infectious disease may have weakened this association, particularly given the stronger magnitude of the association at lower height centiles. This finding is consistent with declines in the socioeconomic patterning of height observed across this time period, as found in this study and reported elsewhere (Bann et al., 2018).\n\nWe adjusted for multiple indicators of parental SEP available in each cohort (social class and education), and this may only partly capture the socioeconomically-graded environmental factors responsible for this association; further, we cannot fully rule out the potential for residual confounding by SEP itself (i.e. that height and cognition are correlated because of common effects of the familial environment). In particular, an apparent weakening of the correlation between parental social class and offspring cognition across time (Paterson, 2021) could have led to more residual confounding and thus stronger associations between height and cognition in older cohorts. In support of this, we found some evidence that attenuation upon adjustment for SEP was more pronounced in older cohorts. However, differences in the measurement of SEP across time may have operated in the other direction. While the SEP measures were constructed to be comparable in each cohort, the social class schema adopted in our study originated in the study of 20th century job roles (Bland, 1979); analogously, parental education may have been a more distinguishing trait in earlier cohorts (before the broader expansion of education). Thus, measurement error of SEP and resulting residual confounding may have instead been greater in the younger cohorts. The robustness of the cross-cohort weakening in association after adjustment for parental height (an indicator of genetic liability to taller height) is similarly consistent with the hypothesis that environmental factors which influence early life height and cognition growth may be at least partly responsible for the weakening in association observed rather than genetic factors related to height.\n\nChanges in mating patterns across time could also theoretically contribute to our finding of weakening in the association between cognition and height. A weakening of cross-trait assortative mating by cognition and height across cohorts could drive a weakening in the associations between these factors that we observed. However, we are not aware of empirical evidence for this and are unable to directly test this owing to a lack of data for parental cognition. While we were unable to investigate changes in cognition-height assortative mating, parental height correlations were broadly similar in the 1946 c, 1958 c, and 1970 c and slightly weaker in the youngest cohort; correlations between paternal height and maternal education were also weaker in the youngest cohort. We also lack data to test whether other changes to mating patterns\u2014such as reductions in genetic markers of inbreeding across time (Nalls et al., 2009) may explain our findings. In the social science literature, evidence for changes in assortative mating by socioeconomic factors paints a complex picture: studies have suggested either stability (Henz and Mills, 2018), increases in assortative mating, or mixed findings (Schwartz, 2013). Further research utilizing genetic and parental data is warranted to investigate these possibilities.\n\nThe multi-purpose and multidisciplinary cohorts used cognition tests which differed slightly in each cohort. It is, therefore, possible that differences in testing could have either: (1) generated the pattern of results we observed, such that if identical tests were used the association between cognition and height would otherwise have been similar in each cohort; in contrast to previous findings which reported using identical tests Teasdale et al., 1989; or (2) biased our results, such that if identical tests were used the decline in the association between cognition and height would have been less marked than we reported. While we cannot directly falsify this alternative hypothesis given our reliance on historical data sources, a number of lines of reasoning suggest that the first scenario is unlikely. First, our results were similar when using four different cognitive tests (spanning mathematical and verbal reasoning); any bias which generated the results we observed should be similarly present across all 4 tests. Other things being equal, one would expect that more discriminatory tests (i.e. those with a greater number of items) would have higher accuracy and thus better measure cognition. Our results were similar when the youngest cohort had similar numbers of unique scores in cognitive tests compared with the oldest cohort (Verbal @ 11 years: n=41 in 1946 c, n=40 in 2001 c) and fewer unique scores (Maths @ 7/11: n=51 in 1946 c, n=21 in 2001 c). Our results were also similar in sensitivity analyses in which the number of response items was set to be the same in each cohort. Higher random measurement error in the independent variable (cognition) would lead to weakened observed associations with the outcome (height) (Hutcheon et al., 2010), yet we do not a-priori anticipate that this such error was higher in younger cohorts across all tests in such a manner that would have led to the correlation we observed.\n\nEnsuring comparability of exposure is a major challenge across such large timespans. Reassuringly, our results are consistent with those from a previous study that reported the same tests being used (from 1939 to 1967) (Teasdale et al., 1989). However, even seemingly identical tests require modification across time (e.g. for verbal reasoning/vocabulary there is typically a need to adapt question items due to societal and cultural changes over time in vocabulary and numerical use); further, changes to education such as increases in testing may have led to increasing preparedness and familiarity with testing than in the past even where identical tests are used.\n\nInterestingly, we observed a marked reduction in the correlation between cognitive tests across time (e.g. between verbal and maths scores). This trend has been reported in previous studies (Sundet et al., 2004; Kane, 2000) and warrants future investigation; it is consistent with evidence that IQ gains across time seemingly differ by cognitive domain (Pietschnig and Voracek, 2015) potentially capturing differences across time in cognitive skill use and development in the population. Previous studies using three (1958\u20132001 c) of the included cohorts have also reported changing associations between cognition (verbal test scores at 10/11 years) and other traits: a declining negative association with birth weight (Goisis et al., 2017a) and a change in direction of association with maternal age (from negative to positive) Goisis et al., 2017b; each finding has plausible explanations based on changes across time in relevant societal phenomena (improved medical conditions Goisis et al., 2017a and changes in parental characteristics Goisis et al., 2017b respectfully), yet also cannot conclusively falsify the notion that differences in tests used influences the results obtained. In this paper, we used multiple tests and sensitivity analyses to attempt to address this.\n\n### Strengths and limitations\n\nStrengths of this study include the use of multiple nationally representative longitudinal cohorts from the UK\u2014each with data on multiple cognitive test scores and measured height. We used four cohorts\u2014the latest measure of the youngest cohort was 17 years\u2014since height gains may occur up to 19\u201320 years (Rodriguez-Martinez et al., 2020), further work may be warranted in the future to test if the patterns of association remain in later adulthood. Our analytical strategy is also a strength, enabling us to test the robustness of our findings across multiple ages and multiple domains of cognitive test performance and statistical methods.\n\nLimitations include the potential for bias due to missing data, which is more pronounced in the youngest cohort. However, multiple imputation models were used, with multiple auxiliary variables included to increase the credibility of the \u2018missing at random\u2019 assumption such models entail; and findings from pattern mixture modeling suggested that our main findings were robust to differential missingness of outcome data.\n\n### Conclusions\n\nAssociations between higher cognition and taller height in childhood-adolescence weakened markedly from 1957\u20132018. These findings support the notion that changes to environmental and societal factors across time may substantially weaken associations between cognition and other traits.\n",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "fccd6b31-2c04-42e6-992c-37bc405e02eb",
+      "submission_id": "4e96295e-422a-462c-beac-15e0c2e0f29f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eduardo L Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81099.sa0](https://doi.org/10.7554/eLife.81099.sa0)\n\nThis paper provides valuable evidence for a weakening of the association between cognitive ability and height from 1957 to 2018 in the UK. The authors find the strength of the association declined over this time frame. These associations were further attenuated after accounting for proxy measures of social class. This paper is a solid contribution to debates about how genetic, environmental, and social factors have affected the joint distribution of height and cognitive ability over the last 60 years.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Eduardo L Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81099.sa1](https://doi.org/10.7554/eLife.81099.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Weakening of the cognition and height association from 1957 to 2018: findings from four British birth cohort studies\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and I oversaw the evaluation in my dual role of Reviewing Editor and Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Richard Border (Reviewer #1).\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another and with the Editors. The decision was reached by consensus. What follows below is a lightly edited compilation of the essential and ancillary points provided by reviewers in their critiques and in their interaction post-review.\n\nEssential revisions:\n\nThe critiques by the three reviewers contain challenges or reflections related to your study's findings that the tests of cognition have behaved differently across generations and how this affects the validity of your findings. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you amend or expand the text to clarify the narrative accordingly.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors conducted a thorough analysis of the correlation between height and measures of cognitive abilities (what are essentially IQ test components) across four cohorts of children and adolescents in the UK measured between 1957 and 2018. The authors find the strength of the association between height and cognitive measures declined over this time frame--for example, among 10- and 11-year-olds born in 1958, height explained roughly 3% of the variation in verbal reasoning scores; this dropped to approximately 0.6% among those born in 2001. These associations were further attenuated after accounting for proxy measures of social class.\n\nThe authors' analyses were performed carefully and their observations regarding declining height / cognitive measure associations are likely to be robust if we interpret their results with an important caveat: these results reflect measurements aimed at assessing cognition rather than cognition itself. The importance of this distinction is evidenced by the changing correlation structure of the cognitive measures over time. For example, age 11 verbal / math scores were correlated at >= 0.75 at the first two time points but dropped to 0.33 at the most recent time point. Similar patterns are present for the other cognitive measures and time points. The authors' conclude that such changes are unlikely to impact their primary findings, but I'm less certain. For example, one interpretation of this finding is that older cognitive measures were simply worse at indexing distinct cognitive domains and instead reflected a combination of cognitive ability together with non-specific factors relating to opportunity, health, class, etc. Further, height was historically a stronger proxy for class and economic status than it is today (e.g., by capturing adequate nutritional intake, risk for childhood disease, etc.). Together, then, previously high height / cognitive measure correlations might reflect the fact that both phenotypes previously indexed socio-economic factors to a greater extent than they might today (which is still non-negligible).\n\nAdditionally, their findings add an interesting data point to a collection of recent results suggesting that the relationship between cognitive and anthropometric measures is complex and difficult to interpret. For example, studies using genetic markers to examine shared genetic bases have virtually all relied on methods assuming mating is random, which is not the case empirically. Howe et al. (doi.org/10.1038/s41588-022-01062-7) recently reported that the ostensible genetic correlation of -.32 between years of education and BMI attenuates to -.05 when using direct-effect estimates, which should theoretically be immune to the effects of non-random mating and other confounding variables. Likewise, Keller et al. (doi.org/10.1371/journal.pgen.1003451) and Border et al. (doi.org/10.1101/2022.03.21.485215) used very different approaches to arrive at the same conclusion that ~50% of the nominal genetic correlation between IQ and height could be attributed to bivariate assortative mating rather than shared causal biological factors. Given that assortative mating on both IQ measures and height involves many other traits (not just two as assumed in such bivariate models), the true extent to which height / IQ correlations reflect causal factors is plausibly even lower than these estimates suggest. For these reasons, I do not entirely agree with the authors' review of previous findings in the introduction, where they write \"recent studies have suggested that links between higher cognition and taller height can be largely explained by genetic factors\", though it is certainly true that this claim has been made.\n\nThis manuscript is well-written and reflects carefully conducted research. Below are my suggestions/concerns, in no particular order.\n\nThroughout I would suggest that the authors replace the term \"cognition\", with something along the lines of \"cognitive measures\" or \"measures of cognitive ability\". This might seem pedantic, but the next point highlights why I believe it is important not to conflate tools attempting to measure constructs with the constructs themselves.\n\nFigure S4 shows a striking pattern where the inter-correlations among cognitive measures appears to sharply decline over time. E.g., age 11 verbal / math scores were correlated at >= 0.75 in the first two cohorts. This drops to 0.33 in the 2001 cohort. I would ask the authors to discuss these findings, which are currently mentioned briefly in the discussion, in greater detail. Further, I'm not sure I agree with the authors' implication that the main findings are necessarily robust to differences in tests employed over time.\n\nFor example, one interpretation of this finding is that older cognitive measures were simply worse at measuring distinct cognitive domains and instead reflected a combination of the targeted phenotype together with non-specific factors relating to opportunity, health, class, etc. To what extent to historically higher estimates simply reflect poorer measurement? Put another way, to what extent might the decrease in cognitive measure/height correlation over time reflect that IQ tests, while surely still proxies for non-cognitive measures to some extent, are better than they used to be?\n\nPlease discuss in greater detail. Further, in Figure S67, it appears that the attenuation in height/cog association after accounting for SEP is larger in the earlier cohorts than the later cohorts. If the authors have adequate power to examine this, I think it would further add to the above discussion; OTOH, if the authors think their data isn't well suited to testing this hypothesis (whether due to the fact that SEP is an imperfect measure of socio-economic status/class, or on statistical grounds), it might warrant discussion as a future direction.\n\nAs highlighted in my public comments I think it's inaccurate to state that recent studies have suggested that height/cog measure correlations can be \"largely explained by genetic factors\". Of the four papers cited:\n\n(2) \u2013 certainly does make this suggestion but relies on LDSC genetic correlation, which has been found to yield extreme overestimates of rg when random mating assumptions are violated.\n\n(3) \u2013 used an ETFD and found roughly half of phenotypic correlation attributable to bivariate assortative mating (AM). While AM is \"genetic\" in the fact that it reflects correlated genetic liabilities, it need not reflect any shared causal biological factors across traits, which is how I think readers usually interpret such language.\n\n(9) \u2013 genetic correlation estimates between height and IQ were non-significant for girls, bottom of CIs were.03 and.00 for the two boys' cohorts.\n\n(10) \u2013 These results are complex: the authors reports report that the best fitting trivariate model of height, general cognitive ability (GCA), and cortical surface area (CSA) permitted the genetic correlation between GCA and height to be constrained to zero but don't test whether the CSA / height rg can also be constrained to zero. They also report that the height / GCA association is fully mediated via CSA, but that the CSA pathway only accounts for 39% of the phenotypic correlation between height / GCA.\n\nTogether with the additional results mentioned in the public-facing review, these findings paint a complicated picture that isn't currently reflected in the introduction and discussion.\n\nI would suggest less causal-sounding language regarding the unclear links between height and cognitive measures. E.g., in \"Cognitive ability is a potentially important determinant of health\" replace \"determinant\" with \"correlate\".\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors use birth cohorts with extensive cognitive assessments and height measurements along with data on parental height and socioeconomic status. The authors estimate that the correlation between height and cognitive ability has approximately halved in the last 60 years.\n\nQuantile regression results suggest that this is due to a stronger association between low cognitive ability and short stature in older cohorts, potentially due to environmental factors that cause both and that have been removed by improvements in the environment in the last 60 years.\n\nWhile this is a plausible hypothesis, the evidence presented in the manuscript is unable to rule out alternative hypotheses, such as changes in assortative mating.\n\nThe results in the manuscript will be of interest to researchers investigating how genetics and environment lead to correlations between cognitive and physical/health traits, and to researchers interested in the relationship between social and health inequalities.\n\nWhile my sense of the evidence presented is that there is fairly solid statistical evidence for a trend where the correlation between cognitive ability and height declines over time, there is no formal quantification of this trend nor measurement of the uncertainty in the trend.\n\nSimilarly, the quantile regression plots in Figure 2 appear to show a trend across the height deciles for the two oldest cohorts, but no quantification of how strong this is nor what uncertainty exists is calculated. Furthermore, if the apparent trend in the quantile regression plots is true, wouldn't this imply a non-linear association between height and cognitive ability for the older cohorts? Can this be seen in the scatterplots or in a non-linear regression?\n\nI think the authors could have done more with their data to investigate the contribution of assortative mating to the observed trend. Looking at Figure S4, it looks like the correlation between mother's education and father's height in the 2001 cohort is substantially lower than for previous cohorts. While cognitive ability may not be available for parents, one could look at, for example, father's education and mother's height across the cohorts and see if there is a downward trend in correlation.\n",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d5cd3c67-f430-4ddc-8ebf-1212262e9d3a",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C1",
+      "claim": "Taller individuals have been repeatedly found to have higher scores on cognitive assessments.",
+      "claim_type": "EXPLICIT",
+      "source": "Taller individuals have been repeatedly found to have higher scores on cognitive assessments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about existing literature, supported by citations in the surrounding context.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "c1cbbdfa-170f-47a3-a3f7-b52dbb727acf",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C2",
+      "claim": "Recent studies have suggested that the association between cognition and height can be explained by genetic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have suggested that links between higher cognition and taller height can be large or to a sizable extent explained by shared genetic influences (Marioni et al., 2014; Keller et al., 2013; Silventoinen et al., 2012; Vuoksimaa et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "6f833a32-54f4-4468-8291-33b311e355cb",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C3",
+      "claim": "Height is highly heritable.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while height is highly heritable (Jelenkovic et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jelenkovic et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "2901456a-cf24-4d7d-8eb4-49df44c90a7e",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C4",
+      "claim": "Substantial increases in average height occurred in the 20th century.",
+      "claim_type": "EXPLICIT",
+      "source": "substantial increases in average height occurred in the 20th century (Meredith, 1976; Cole, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Meredith, 1976 and Cole, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "c9298ea5-9c25-43f5-b36a-cdc02eeeb364",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C5",
+      "claim": "Increases in average height in the 20th century were likely due to improved nutrition and a declining impact of early life infectious disease.",
+      "claim_type": "EXPLICIT",
+      "source": "likely due to improved nutrition and a declining impact of early life infectious disease (Walker et al., 2007; Perkins et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Walker et al., 2007 and Perkins et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "984d0726-5af8-441b-8171-6066e218186b",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C6",
+      "claim": "Improved nutrition and declining infectious disease particularly affected early life leg growth.",
+      "claim_type": "EXPLICIT",
+      "source": "which in particular affected early life leg growth (Cole, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cole, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "1dc60987-0627-4e29-a716-890895b1e8df",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C7",
+      "claim": "Cognitive test scores are highly heritable.",
+      "claim_type": "EXPLICIT",
+      "source": "Cognitive test scores are also highly heritable (Plomin and Deary, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Plomin and Deary, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "76bb7a66-d260-4a6f-993b-4b037ef57791",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C8",
+      "claim": "Cognitive test scores have increased in the 20th century (the 'Flynn' effect).",
+      "claim_type": "EXPLICIT",
+      "source": "yet have also increased in the 20th century (the 'Flynn' effect) (Bratsberg and Rogeberg, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bratsberg and Rogeberg, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "cfb948be-129c-447a-83e4-3aa3103b7830",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C9",
+      "claim": "Both height and cognitive test scores are responsive to environmental change.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that both factors are responsive to environmental change",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the evidence that both height and cognitive test scores have increased despite being highly heritable.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "eb4ba90f-a22c-4662-97d2-39226551ac4c",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C10",
+      "claim": "Keller et al., 2013 estimated that approximately half of the correlation between cognition and height was accounted for by assortative mating, and half by shared genetic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Keller et al., 2013 for example estimated that approximately half of the correlation was accounted for by assortative mating, and half by shared genetic factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly cites findings from Keller et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "85c70bd0-4948-4542-821b-3e4ac238329b",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C11",
+      "claim": "A declining association between cognition and height has been suggested in the analysis of a subsample of eastern Danish male conscripts (1939\u20131967).",
+      "claim_type": "EXPLICIT",
+      "source": "A declining association between cognition and height has been suggested in the analysis of a subsample of eastern Danish male conscripts (1939\u20131967) (Teasdale et al., 1989)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Teasdale et al., 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "a64ce2e1-011e-40b4-87ed-b8afba1c4ca6",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C12",
+      "claim": "Four British birth cohort studies were used in this study, born in 1946, 1958, 1970, and 2000/02.",
+      "claim_type": "EXPLICIT",
+      "source": "Four birth cohort studies conducted in Britain with participants followed-up in childhood and adolescence were used. These were born in 1946 (MRC National Survey of Health and Development, 1946 c), 1958 (National Child Development Study, 1958 c), 1970 (British Cohort Study, 1970 c), and 2000/02 (Millennium Cohort Study, 2001 c)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "9149edf3-e7e7-49f7-8116-6350832ac3e4",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C13",
+      "claim": "Analyses were restricted to singleton births born in England, Scotland, and Wales.",
+      "claim_type": "EXPLICIT",
+      "source": "To aid comparability, analyses were restricted to singleton births born in England, Scotland, and Wales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "52d03582-5711-4b81-bad1-d0bc19686dee",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C14",
+      "claim": "Height was obtained at ages 11 and 16 in the 1946c and 1958c cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "height was obtained at the following ages in each study: ages 11 and 16 in the 1946 c and 1958 c",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "7503c9ae-7722-4682-8761-ac91f33a15f7",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C15",
+      "claim": "Height was obtained at ages 10 and 16 in the 1970c cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "ages 10 and 16 in 1970 c",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "51514f56-8829-4808-9e73-6eb6607702d4",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C16",
+      "claim": "Height was obtained at ages 7, 11, 14, and 17 in the 2001c cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "ages 7, 11, 14, and 17 in 2001 c",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "14ba2d1c-38c8-49a4-87f1-5daf7c41f95d",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C17",
+      "claim": "Height was directly measured in all instances, except age 16 years in 1970c in which either self-report or objectively measured height was obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "Height was directly measured in all instances, except age 16 years in 1970 c in which either self-report or objectively measured height was obtained",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "b0114697-7f13-470b-8d5f-2c8fba203836",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C18",
+      "claim": "Height variables were converted to age and sex-adjusted z-scores using the UK90 reference panel.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate cross-cohort comparisons in our main analysis height variables were converted to age and sex-adjusted z-scores using growth reference charts (the UK90 reference panel; the childsds package in R Vogel, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "80922bcc-4585-432e-af7f-217078865ce8",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C19",
+      "claim": "Taller participants had higher mean cognitive assessment scores in childhood and adolescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Taller participants had higher mean cognitive assessment scores in childhood and adolescence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "bd799ca7-747d-4177-8c61-5750e229f2a6",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C20",
+      "claim": "The associations between height and cognition were weaker in later (1970 and 2001) cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "yet the associations were weaker in later (1970 and 2001) cohorts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "c386b3fa-93e6-45d3-8cfb-30ba36b1b534",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C21",
+      "claim": "The mean difference in height comparing the highest with lowest verbal cognition scores at 10/11 years was 0.57 SD (95% CI = 0.44\u20130.70) in the 1946 cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the mean difference in height comparing the highest with lowest verbal cognition scores at 10/11 years was 0.57 SD (95% CI = 0.44\u20130.70) in the 1946 cohort",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly reported result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "2c4b32d9-b56c-4c0d-8c51-ef0c105d3c4f",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C22",
+      "claim": "The mean difference in height comparing the highest with lowest verbal cognition scores at 10/11 years was 0.30 SD (0.23\u20130.37) in the 2001 cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "yet 0.30 SD (0.23\u20130.37) in the 2001 cohort",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly reported result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "d0e919f8-27cf-4311-ba46-88d2b7e63d98",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C23",
+      "claim": "There was a reduction in correlation between verbal reasoning scores and height at 10/11 years from 0.17 (0.15\u20130.20) in 1958c to 0.08 (0.06\u20130.10) in 2001c.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressed alternatively, there was a reduction in correlation from 0.17 (0.15\u20130.20) to 0.08 (0.06\u20130.10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly reported result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "fa484e03-dbb3-4907-9f55-3fb0ce22f129",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C24",
+      "claim": "The pattern of weakening association across time was observed across all ages and cognition measures used.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of change in the association was observed across all ages and cognition measures used",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "674b43cb-15bc-4617-bc3f-610c07d5e8b8",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C25",
+      "claim": "The pattern of weakening association was robust to adjustment for social class and parental height.",
+      "claim_type": "EXPLICIT",
+      "source": "was robust to adjustment for social class and parental height",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "32db122c-63d3-46d3-bdf4-a2c9295ff218",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C26",
+      "claim": "The pattern of weakening association was robust to modeling of plausible missing-not-at-random scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "and modeling of plausible missing-not-at-random scenarios",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "37181e9d-1524-4eeb-aa63-1faa8a627ef8",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C27",
+      "claim": "Quantile regression analyses suggested that differences in the cognition-height association were driven by differences in the lower centiles of height.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantile regression analyses suggested that these differences were driven by differences in the lower centiles of height, where environmental influence may be greatest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's quantile regression results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "1fe16fc6-0ff5-4cff-9914-7f33931d8728",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C28",
+      "claim": "Childhood and adolescent height were greater in each successive cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Childhood and adolescent height were greater in each successive cohort (Table 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "4030eb00-7f4e-4f4a-ae4e-e9be420b957a",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C29",
+      "claim": "Higher social class was associated with taller height and higher cognition scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher social class was associated with taller height and higher cognition scores",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's descriptive statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "16b4490f-c350-4bb9-b0d9-0bc6ddab2993",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C30",
+      "claim": "The correlations between social class and height/cognition appeared to weaken over time.",
+      "claim_type": "EXPLICIT",
+      "source": "these correlations also appeared to weaken over time",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's descriptive statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "aecdbee9-1a18-426c-9df8-feab4bfb92bc",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C31",
+      "claim": "After adjustment for sex, the mean difference in height associated with verbal reasoning score at 10/11 years was 0.57 SD (95% CI=0.45, 0.7) in the 1946c.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, after adjustment for sex, the mean difference in height associated with verbal reasoning score at 10/11 years was 0.57 SD (95% CI=0.45, 0.7) in the 1946 c",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly reported result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "07abdde4-638e-40de-bd6e-8abc2b3d1c4d",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C32",
+      "claim": "After adjustment for sex, the mean difference in height associated with verbal reasoning score at 10/11 years was 0.59 SD (95% CI=0.53, 0.65) in the 1958c.",
+      "claim_type": "EXPLICIT",
+      "source": "0.59 SD (95% CI=0.53, 0.65) in the 1958 c",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly reported result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "2dcbba93-7fa2-4ff3-9465-83d5a7cba6ab",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C33",
+      "claim": "After adjustment for sex, the mean difference in height associated with verbal reasoning score at 10/11 years was 0.47 SD (95% CI=0.40, 0.54) in the 1970c.",
+      "claim_type": "EXPLICIT",
+      "source": "0.47 SD (95% CI=0.40, 0.54) in the 1970 c",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly reported result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "2bac7f09-dd4b-4b39-8540-1e8a1f91e2e3",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C34",
+      "claim": "After adjustment for sex, the mean difference in height associated with verbal reasoning score at 10/11 years was 0.29 SD (95% CI=0.21, 0.36) in the 2001c.",
+      "claim_type": "EXPLICIT",
+      "source": "and 0.29 SD (95% CI=0.21, 0.36) in the 2001 c",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly reported result from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "37fd449e-8adf-4201-a5eb-1a7a0dbfd669",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C35",
+      "claim": "Associations between cognition and height were partly attenuated after adjustment for parental SEP.",
+      "claim_type": "EXPLICIT",
+      "source": "Associations between cognition and height were partly attenuated after adjustment for parental SEP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "d8f76f90-e528-4248-9ed3-b8c03525a051",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C36",
+      "claim": "Associations between cognition and height were partly attenuated further by parental height.",
+      "claim_type": "EXPLICIT",
+      "source": "and partly attenuated further by parental height",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "6507c8a0-4fac-4597-8ea3-9f80999acf68",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C37",
+      "claim": "The associations between cognition and height did not attenuate completely to zero after adjustment for parental SEP and height.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the associations did not attenuate completely to zero after this adjustment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "3aab545a-af3c-4f4b-a548-316c86cacc41",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C38",
+      "claim": "The weakening of the cognition-height association observed across each cohort was similar before and after adjustment for parental SEP and height.",
+      "claim_type": "EXPLICIT",
+      "source": "and the weakening of the cognition-height association observed across each cohort was similar before and after the adjustment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "b81552f1-6a49-4e84-84e7-eb18b4897dd1",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C39",
+      "claim": "In quantile regression models adjusting for sex, there was evidence that associations between height and cognition were stronger at lower centiles of height, particularly in older cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "In quantile regression models adjusting for sex, there was evidence that associations between height and cognition were stronger at lower centiles of height, particularly in older cohorts (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the study's quantile regression results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "0ade7ba4-3309-4a70-8a75-376a90b5e59b",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C40",
+      "claim": "For verbal scores at age 11 in the 1958c, cognitive ability was associated with 0.73 SD (95% CI=0.63, 0.83) greater height at the 10th percentile.",
+      "claim_type": "EXPLICIT",
+      "source": "This was especially pronounced in the 1958 c: for verbal scores at age 11, cognitive ability was associated with 0.73 SD (95% CI=0.63, 0.83) greater height at the 10th percentile",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly reported result from the study's quantile regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "33a8c9f1-1f2c-4448-be87-fba2f03a7b81",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C41",
+      "claim": "For verbal scores at age 11 in the 1958c, cognitive ability was associated with 0.47 SD (95% CI=0.37, 0.58) greater height at the 90th percentile.",
+      "claim_type": "EXPLICIT",
+      "source": "and 0.47 SD (95% CI=0.37, 0.58) greater height at the 90th percentile",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly reported result from the study's quantile regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "3ad08efb-d966-45f4-b6cc-97c1b9d4b7ee",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C42",
+      "claim": "For verbal scores at age 11 in the 2001c, cognitive ability was associated with 0.34 SD (95% CI=0.22, 0.45) greater height at the 10th percentile.",
+      "claim_type": "EXPLICIT",
+      "source": "corresponding figures in 2001c were 0.34 SD (95% CI=0.22, 0.45)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly reported result from the study's quantile regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "51e9fbfa-56e8-4034-9f23-8ebd415b8718",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C43",
+      "claim": "For verbal scores at age 11 in the 2001c, cognitive ability was associated with 0.27 SD (95% CI=0.14, 0.41) greater height at the 90th percentile.",
+      "claim_type": "EXPLICIT",
+      "source": "and 0.27 SD (95% CI=0.14, 0.41), respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly reported result from the study's quantile regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "ab4e94d4-ef59-442e-b29d-b0b161b48adb",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C44",
+      "claim": "Among participants whose height was measured on at least one occasion, there were small differences in height according to whether an individual was lost to follow-up or not (<0.3 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "Among participants whose height was measured on at least one occasion, there were small differences in height according to whether an individual was lost to follow-up or not (<0.3 SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's sensitivity analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "57a2b687-657d-49b3-8469-eaa6e43d2240",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C45",
+      "claim": "Pattern mixture modeling suggested that the main findings were robust to differential missingness of outcome data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, repeating main analyses altering imputed values by a constant factor to attempt to account for non-random missingness (i.e. pattern mixture modeling) generally yielded qualitatively similar results, even where the factor was large (i.e.>0.8 SD; Figure 5): smallest associations were estimated in the 2001 c, and largest associations were estimated in the 1946 c or 1958 c.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the study's sensitivity analyses shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "e180ef8d-5bc5-4dd2-a219-5e39d5ab3e7d",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C46",
+      "claim": "Repeating analyses using different procedures to score cognition and height variables yielded qualitatively similar results to the main OLS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeating analyses using different procedures to score cognition (z-score, ridit scores, and percentile ranks) and height (raw, percentile rank, z-scores, ridit scores) variables in order to compare estimates across cohorts also yielded qualitatively similar results to the main OLS analysis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's sensitivity analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "081eef26-6ed6-4ff0-bce1-577ee24768fc",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C47",
+      "claim": "Limiting analyses with the 2001c to white participants only yielded qualitatively similar results.",
+      "claim_type": "EXPLICIT",
+      "source": "as did limiting analyses with the 2001 c to white participants only",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's sensitivity analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "f4dc99f9-b8e3-43ab-976b-0caaa798d92d",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C48",
+      "claim": "Limiting analyses in the 1970c to those with measured rather than self-reported height at 16 years yielded qualitatively similar results.",
+      "claim_type": "EXPLICIT",
+      "source": "or the 1970 c to those with measured rather than self-reported height at 16 years (results available upon request)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's sensitivity analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "fd6de706-bd04-4aca-924d-f18635752591",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C49",
+      "claim": "Results were similar when constraining similar tests to have the same range.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, results were similar when constraining similar tests to have the same range (Figure 3\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the study's sensitivity analyses shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "63982750-cf8c-42aa-91cb-c337a2587b86",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C50",
+      "claim": "Results were similar when sampling an equal number of items from similar tests.",
+      "claim_type": "EXPLICIT",
+      "source": "or sampling an equal number of items from similar tests (Figure 3\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the study's sensitivity analyses shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "5eeba7da-59f1-4904-8c8a-7ba2bac71143",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C51",
+      "claim": "The association between higher cognition and height weakened substantially from 1957\u20132018.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between higher cognition and height weakened substantially from 1957\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the study's main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "157d0800-4640-47b6-93a0-bad679d0a2a2",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C52",
+      "claim": "Associations between cognition and height were at least half as strong in the youngest (2001c) compared with the oldest (1946c and 1958c) cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Associations were at least half as strong in the youngest (2001 c) compared with the oldest (1946 c and 1958 c) cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the study's main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "eedb05c6-2f08-4af1-8b73-ba267ea7f89c",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C53",
+      "claim": "Height-cognition associations (and potentially their weakening across time) were driven by differences in lower quantiles of height.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantile regression analyses suggested that height-cognition associations (and potentially their weakening across time) were driven by differences in lower quantiles of height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the study's quantile regression findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "b461d079-3fb0-4a60-9bd0-a1f171575d2b",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C54",
+      "claim": "Associations between cognition and height were only partly attenuated when controlling for parental SEP or parental height.",
+      "claim_type": "EXPLICIT",
+      "source": "Associations were only partly attenuated when controlling for parental SEP or parental height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the study's main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "c3cdadf7-307c-4607-8166-aae2bd21ba14",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C55",
+      "claim": "Changes in the cognition-height association could have been driven by changes across time in the shared determinants of height and cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "First, changes could have been driven by changes across time in the shared determinants of height and cognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation offered by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "48d6f811-4b1e-48bc-a2aa-3ba7b2f935a1",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C56",
+      "claim": "Improvements in nutrition and reductions in the incidence (and/or impact of) infectious disease may have weakened the cognition-height association.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, improvements in nutrition and reductions in the incidence (and/or impact of) infectious disease may have weakened this association, particularly given the stronger magnitude of the association at lower height centiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation offered by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "42494186-12ea-47f0-b55c-ed7152d56478",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C57",
+      "claim": "Changes in mating patterns across time could theoretically contribute to the finding of weakening in the association between cognition and height.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in mating patterns across time could also theoretically contribute to our finding of weakening in the association between cognition and height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation offered by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "acf1471e-e2e9-417e-9bf0-72d93787771b",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C58",
+      "claim": "A weakening of cross-trait assortative mating by cognition and height across cohorts could drive a weakening in the associations between these factors.",
+      "claim_type": "EXPLICIT",
+      "source": "A weakening of cross-trait assortative mating by cognition and height across cohorts could drive a weakening in the associations between these factors that we observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation offered by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "e0ed0563-d80b-429b-bffd-61572bc49622",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C59",
+      "claim": "Parental height correlations were broadly similar in the 1946c, 1958c, and 1970c and slightly weaker in the youngest cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "parental height correlations were broadly similar in the 1946 c, 1958 c, and 1970 c and slightly weaker in the youngest cohort",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's descriptive statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "9ecccf7e-9fbc-4eed-8870-9a1871ab5fb1",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C60",
+      "claim": "Correlations between paternal height and maternal education were weaker in the youngest cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "correlations between paternal height and maternal education were also weaker in the youngest cohort",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's descriptive statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "432e23ea-b349-4341-abb7-0a917f0aca53",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C61",
+      "claim": "A marked reduction in the correlation between cognitive tests across time was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a marked reduction in the correlation between cognitive tests across time (e.g. between verbal and maths scores).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's descriptive statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "17721dee-550d-4c81-ab65-9a6c6e4f1623",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C62",
+      "claim": "The trend of reduced correlation between cognitive tests across time has been reported in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend has been reported in previous studies (Sundet et al., 2004; Kane, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sundet et al., 2004 and Kane, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "f0d29b60-27fc-4784-83ca-a2bb319f5b6c",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C63",
+      "claim": "Previous studies using three (1958\u20132001c) of the included cohorts have reported a declining negative association between cognition (verbal test scores at 10/11 years) and birth weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies using three (1958\u20132001 c) of the included cohorts have also reported changing associations between cognition (verbal test scores at 10/11 years) and other traits: a declining negative association with birth weight (Goisis et al., 2017a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goisis et al., 2017a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "0091fc41-d5a9-4c5f-ba41-7239b5cd309f",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C64",
+      "claim": "Previous studies using three (1958\u20132001c) of the included cohorts have reported a change in direction of association between cognition and maternal age (from negative to positive).",
+      "claim_type": "EXPLICIT",
+      "source": "and a change in direction of association with maternal age (from negative to positive) Goisis et al., 2017b",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goisis et al., 2017b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "72aaa160-8594-4439-a929-9d2eb5236df6",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C65",
+      "claim": "The study used multiple nationally representative longitudinal cohorts from the UK\u2014each with data on multiple cognitive test scores and measured height.",
+      "claim_type": "EXPLICIT",
+      "source": "Strengths of this study include the use of multiple nationally representative longitudinal cohorts from the UK\u2014each with data on multiple cognitive test scores and measured height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "52d7935c-b59a-4dc5-b64c-5924769ac894",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C66",
+      "claim": "Height gains may occur up to 19\u201320 years.",
+      "claim_type": "EXPLICIT",
+      "source": "since height gains may occur up to 19\u201320 years (Rodriguez-Martinez et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rodriguez-Martinez et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "a4b1a404-1ee4-4476-80d0-6f0153914946",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C67",
+      "claim": "Multiple imputation models were used, with multiple auxiliary variables included to increase the credibility of the 'missing at random' assumption.",
+      "claim_type": "EXPLICIT",
+      "source": "However, multiple imputation models were used, with multiple auxiliary variables included to increase the credibility of the 'missing at random' assumption such models entail",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "b4f35947-8e19-4f89-a059-1085f33b3b66",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C68",
+      "claim": "Associations between height and cognitive assessment scores in childhood-adolescence substantially weakened from 1957\u20132018.",
+      "claim_type": "EXPLICIT",
+      "source": "Associations between height and cognitive assessment scores in childhood-adolescence substantially weakened from 1957\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the study's main conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "9e772c3b-847b-4644-96cd-b7b472b00653",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C69",
+      "claim": "These results support the notion that environmental and social change can markedly weaken associations between cognition and other traits.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the notion that environmental and social change can markedly weaken associations between cognition and other traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "7e80d6a7-e756-4927-8630-6c54e08f3111",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C70",
+      "claim": "Lower cognition is associated with shorter height.",
+      "claim_type": "EXPLICIT",
+      "source": "This body of evidence\u2014termed by some as 'cognitive epidemiology'\u2014includes associations of lower cognition and anthropometric measures such as shorter height (Marioni et al., 2014; Keller et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Marioni et al., 2014 and Keller et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "5c2b6c7b-97f6-459e-8608-b015751be847",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C71",
+      "claim": "Shorter height is associated with a range of disease outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Shorter height is in turn associated with a range of disease outcomes and, like cognitive development, is influenced by early life factors (Monteiro and Victora, 2005; Walker et al., 2007; Perkins et al., 2016; Batty et al., 2009; Sudfeld et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "43bbe5fc-39cb-4aa6-b8e0-305edb1880a3",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C72",
+      "claim": "Height is influenced by early life factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Shorter height is in turn associated with a range of disease outcomes and, like cognitive development, is influenced by early life factors (Monteiro and Victora, 2005; Walker et al., 2007; Perkins et al., 2016; Batty et al., 2009; Sudfeld et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "6b714842-4539-4c76-aebd-10c513f096a4",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C73",
+      "claim": "Cognitive development is influenced by early life factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Shorter height is in turn associated with a range of disease outcomes and, like cognitive development, is influenced by early life factors (Monteiro and Victora, 2005; Walker et al., 2007; Perkins et al., 2016; Batty et al., 2009; Sudfeld et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "5b96399d-4c3b-4890-858d-c22e25cf0cc4",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C74",
+      "claim": "Others have suggested a role of assortative mating in explaining links between higher cognition and taller height.",
+      "claim_type": "EXPLICIT",
+      "source": "with others suggesting a role of assortative mating (Keller et al., 2013; Beauchamp et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Keller et al., 2013 and Beauchamp et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "f0dd7720-2a80-4b26-ab9d-b240557284a2",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C75",
+      "claim": "Shared developmental processes may affect both height and cognition outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Shared developmental processes may affect both outcomes (Sudfeld et al., 2015; Mansukoski et al., 2020), such as growth influencing height and brain size (Vuoksimaa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sudfeld et al., 2015, Mansukoski et al., 2020, and Vuoksimaa et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "404cb841-c431-44b5-aec0-699d7c062a62",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C76",
+      "claim": "Growth influences height and brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "such as growth influencing height and brain size (Vuoksimaa et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vuoksimaa et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "45a1c552-a54e-425b-859c-cea1d3b460dd",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C77",
+      "claim": "Improvements in nutrition and other shared developmental determinants may have weakened associations between cognition and height.",
+      "claim_type": "EXPLICIT",
+      "source": "Improvements in nutrition and other shared developmental determinants may have weakened associations between cognition and height (Gale, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gale, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "6d088d8f-3e8d-4894-b649-0e8dc48c236b",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C78",
+      "claim": "There has been a weakening of links between low birth weight and cognition from 1958\u20132001.",
+      "claim_type": "EXPLICIT",
+      "source": "as suggested by a weakening of links between low birth weight and cognition from 1958\u20132001 (Goisis et al., 2017a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goisis et al., 2017a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "9388845a-58c0-40f3-8fea-9458a758f4d3",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C79",
+      "claim": "Cognitive ability is a potentially important determinant of health.",
+      "claim_type": "EXPLICIT",
+      "source": "Cognitive ability is a potentially important determinant of health, with associations between higher cognition and favorable subsequent health outcomes repeatedly documented in childhood, adolescence, and across adulthood (Deary and Batty, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Deary and Batty, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "109bd3a7-9915-4311-baac-39ee8c6b992b",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C80",
+      "claim": "Associations between higher cognition and favorable subsequent health outcomes have been repeatedly documented in childhood, adolescence, and across adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "with associations between higher cognition and favorable subsequent health outcomes repeatedly documented in childhood, adolescence, and across adulthood (Deary and Batty, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Deary and Batty, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "b37a452b-d2a2-4e18-af6a-578fff9b025d",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C81",
+      "claim": "The sample size for the 1946c cohort was 5,348.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample size\t5,348",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "cd61506c-26c7-4125-a3c0-804e97710eee",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C85",
+      "claim": "In the 1946c cohort, 52.6% of participants were male.",
+      "claim_type": "EXPLICIT",
+      "source": "Males (%)\t52.6%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "c06125fd-0467-4518-a5db-1b61386dae16",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C89",
+      "claim": "Mean height at 11 years in the 1946c cohort was \u20130.41 (SD 1.03) z-score.",
+      "claim_type": "EXPLICIT",
+      "source": "Height at 11 years, mean (SD) z-score\t\u20130.41 (1.03)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "0471fa8c-ea63-4b82-9abb-ce0662a9fa8a",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C93",
+      "claim": "Mean height at 16 years in the 1946c cohort was \u20130.54 (SD 1.03) z-score.",
+      "claim_type": "EXPLICIT",
+      "source": "Height at 16 years, mean (SD) z-score\t\u20130.54 (1.03)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "f8a6a20b-4e12-42cf-972d-b09129a57a68",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C97",
+      "claim": "In the 1946c cohort, 20.86% of mothers had post-compulsory education.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal education, % post compulsory\t20.86%",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "803461b2-e866-45a9-b279-9b9573fd2bc1",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C101",
+      "claim": "Mean maternal height in the 1946c cohort was 160.81 cm (SD 6.38).",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal height, mean (SD) cm\t160.81 (6.38)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "06bdddae-87c3-4e0d-8c70-19c0329d08fb",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C105",
+      "claim": "Mean paternal height in the 1946c cohort was 172.68 cm (SD 8.07).",
+      "claim_type": "EXPLICIT",
+      "source": "Paternal height, mean (SD) cm\t172.68 (8.07)",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "6293df58-40d4-497d-8c93-90485ff802b4",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C109",
+      "claim": "Figure 1 shows a causal diagram hypothesizing that improvements in the shared determinants of both cognition and height would lead to the weakening of associations across time.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that improvements in the shared determinants of both cognition and height would lead to the weakening of associations across time; see Figure 1 for a causal diagram.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reference to Figure 1 which illustrates the hypothesized causal relationships.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "79af1a00-ecac-4e07-b46a-af3e3475de36",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C110",
+      "claim": "The authors hypothesized that cognition-height associations would be strongest amongst those in the lowest height centiles, where environmental influences on impaired height development may be particularly pronounced.",
+      "claim_type": "EXPLICIT",
+      "source": "We also hypothesized that cognition-height associations would be strongest amongst those in the lowest height centiles, where environmental influences on impaired height development may be particularly pronounced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated hypothesis in the introduction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "04cbc22a-83c5-49bc-9342-60feccf55409",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C111",
+      "claim": "Attenuation (in absolute terms) when adjusting for parental SEP and parental height was broadly similar in the 1946c, 1958c, and 1970c, but was smallest in the 2001c.",
+      "claim_type": "EXPLICIT",
+      "source": "Attenuation (in absolute terms) when adjusting for parental SEP and parental height was broadly similar in the 1946 c, 1958 c, and 1970 c, but was smallest in the 2001 c (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "84db50e7-f84e-4c98-9a0f-81ff40174fc7",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "claim_id": "C112",
+      "claim": "Differences across centiles in the cognition-height association were less marked in the 2001c compared to the 1958c.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences across centiles were less marked in the 2001 c",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study's quantile regression results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9cae7cf3-e435-4824-aee9-076fa8215380",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The association between cognition and height weakened substantially across cohorts from 1946 to 2001. For example, the mean difference in height comparing highest to lowest verbal cognition scores at age 10/11 decreased from 0.57 SD in 1946c to 0.30 SD in 2001c, with correlations declining from 0.17 to 0.08. This pattern was consistent across all ages and cognitive measures tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24, C31-C34, C51-C52, and C68 provide converging evidence from multiple cognitive tests (verbal, math, reading) at multiple ages (10/11 and 14/16 years) showing consistent weakening of the cognition-height association across cohorts. The effect sizes are precisely quantified with confidence intervals, and the pattern is described as robust across different measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "fc30a9eb-3acc-4c2e-85e7-07cc05905d71",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The weakening of the cognition-height association remained after adjusting for parental socioeconomic position (SEP) and parental height. While these adjustments partially attenuated the associations, they did not reduce them to zero, and the cross-cohort pattern of weakening was similar before and after adjustment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26, C35-C38, C54, and C111 demonstrate that the main finding is robust to confounding by parental factors. The partial attenuation suggests these factors play a role, but the persistence of the temporal trend after adjustment strengthens the inference that environmental changes contributed to the weakening association.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "6a06be70-5a7d-4b40-8410-c38c3bdfd739",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Quantile regression analyses revealed that cognition-height associations were stronger at lower centiles of height, particularly in older cohorts. In the 1958c, the association at the 10th percentile (0.73 SD) was substantially larger than at the 90th percentile (0.47 SD), while this difference was less pronounced in the 2001c (0.34 SD vs 0.27 SD).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C39-C43, C53, and C112 provide quantile regression results showing differential associations across the height distribution. The specific effect estimates with confidence intervals support the hypothesis that environmental influences on impaired height growth (reflected in lower centiles) may drive the associations and their temporal changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "855175f4-6616-4ebf-94e8-1aefb2ea3d56",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multiple sensitivity analyses demonstrated robustness of the main findings. Pattern mixture modeling for missing data, alternative scoring procedures for cognition and height, restriction to white participants in 2001c, use of measured height only in 1970c, and constraining test ranges all yielded qualitatively similar results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 describe comprehensive sensitivity analyses addressing potential biases from missing data, measurement differences, and sample composition. The consistency of results across these analyses strengthens confidence in the main findings, though the authors acknowledge these cannot completely rule out all measurement-related explanations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "f6629135-ba41-45fd-bbe4-8e3fdc7a0da1",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Descriptive analyses showed secular trends in height (increasing across cohorts), weakening correlations between social class and both height and cognition, stable parental height correlations across most cohorts, and marked reductions in correlations between different cognitive tests over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30, C59-C61 provide descriptive context for the main analyses. These patterns are directly observable in the data (Table 1, Figure 2 supplements) and help contextualize the main findings, though some (like C61) represent secondary observations that warrant further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study utilized four British birth cohorts (1946c, 1958c, 1970c, 2001c) with singleton births from England, Scotland, and Wales. Height was measured at ages 11 and 16 (with some variation by cohort) and standardized using UK90 reference charts. Sample sizes ranged from 5,348 (1946c) to 17,617 (1970c).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C18, C65, C81, C85, C89, C93, C97, C101, C105 describe the study design and data sources. These are clearly documented methodological details supported by the text and Table 1, providing the foundation for the analyses conducted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "bc79bfc2-0f3a-4393-b230-175f9d7caaed",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that environmental and social changes, particularly improvements in nutrition and reductions in infectious disease, may explain the weakening cognition-height association. Alternative explanations involving changes in assortative mating patterns are also discussed, though direct evidence for this mechanism is lacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C58 and C69 represent speculative interpretations of the findings. While the proposed mechanisms are plausible and consistent with the quantile regression results (stronger effects at lower height centiles), the study design does not directly test these mechanisms. The lack of parental cognition data and limited evidence on changing mating patterns means these remain hypotheses requiring further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The introduction establishes that cognition-height associations have been documented previously, that both traits are highly heritable yet responsive to environmental change, and that genetic factors and assortative mating have been proposed as explanations. Prior work suggested a declining association in Danish conscripts (1939-1967).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 and C70-C80 summarize prior literature through citations. These background claims appropriately contextualize the current study and are supported by the cited references. The characterization of prior work appears accurate based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "5772beca-e20a-4034-8501-0eb474dfeb56",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Previous studies have reported declining correlations between cognitive tests over time and changing associations between cognition and other traits (birth weight, maternal age) in some of the same cohorts used in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 cite prior work showing similar patterns of changing associations over time. These citations provide important context suggesting the current findings are part of a broader pattern of temporal changes in cognitive associations, though they do not directly validate the current study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    },
+    {
+      "id": "07ee678c-4ceb-4868-872b-f41663828e56",
+      "content_id": "c09faf78-4f4f-4a90-8bab-c4dc28cf5118",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study acknowledges limitations including that height gains may continue to age 19-20 (beyond the latest measurement at age 17) and potential missing data bias, though multiple imputation with auxiliary variables was used. The authors hypothesized that shared environmental determinants would weaken cognition-height associations over time, with strongest associations at lowest height centiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 and C109-C110 describe study limitations and a priori hypotheses. These are appropriately acknowledged and the hypotheses (particularly C110) are directly tested and supported by the quantile regression results. The limitation regarding age of measurement (C66) is valid but unlikely to substantially affect the main conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:10:30.049175Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "80922bcc-4585-432e-af7f-217078865ce8",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "bd799ca7-747d-4177-8c61-5750e229f2a6",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "c386b3fa-93e6-45d3-8cfb-30ba36b1b534",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "2c4b32d9-b56c-4c0d-8c51-ef0c105d3c4f",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "d0e919f8-27cf-4311-ba46-88d2b7e63d98",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "fa484e03-dbb3-4907-9f55-3fb0ce22f129",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "aecdbee9-1a18-426c-9df8-feab4bfb92bc",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "07abdde4-638e-40de-bd6e-8abc2b3d1c4d",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "2dcbba93-7fa2-4ff3-9465-83d5a7cba6ab",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "2bac7f09-dd4b-4b39-8540-1e8a1f91e2e3",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "5eeba7da-59f1-4904-8c8a-7ba2bac71143",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "157d0800-4640-47b6-93a0-bad679d0a2a2",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "b4f35947-8e19-4f89-a059-1085f33b3b66",
+      "result_id": "9cae7cf3-e435-4824-aee9-076fa8215380"
+    },
+    {
+      "claim_id": "674b43cb-15bc-4617-bc3f-610c07d5e8b8",
+      "result_id": "fc30a9eb-3acc-4c2e-85e7-07cc05905d71"
+    },
+    {
+      "claim_id": "32db122c-63d3-46d3-bdf4-a2c9295ff218",
+      "result_id": "fc30a9eb-3acc-4c2e-85e7-07cc05905d71"
+    },
+    {
+      "claim_id": "37fd449e-8adf-4201-a5eb-1a7a0dbfd669",
+      "result_id": "fc30a9eb-3acc-4c2e-85e7-07cc05905d71"
+    },
+    {
+      "claim_id": "d8f76f90-e528-4248-9ed3-b8c03525a051",
+      "result_id": "fc30a9eb-3acc-4c2e-85e7-07cc05905d71"
+    },
+    {
+      "claim_id": "6507c8a0-4fac-4597-8ea3-9f80999acf68",
+      "result_id": "fc30a9eb-3acc-4c2e-85e7-07cc05905d71"
+    },
+    {
+      "claim_id": "3aab545a-af3c-4f4b-a548-316c86cacc41",
+      "result_id": "fc30a9eb-3acc-4c2e-85e7-07cc05905d71"
+    },
+    {
+      "claim_id": "b461d079-3fb0-4a60-9bd0-a1f171575d2b",
+      "result_id": "fc30a9eb-3acc-4c2e-85e7-07cc05905d71"
+    },
+    {
+      "claim_id": "04cbc22a-83c5-49bc-9342-60feccf55409",
+      "result_id": "fc30a9eb-3acc-4c2e-85e7-07cc05905d71"
+    },
+    {
+      "claim_id": "37181e9d-1524-4eeb-aa63-1faa8a627ef8",
+      "result_id": "6a06be70-5a7d-4b40-8410-c38c3bdfd739"
+    },
+    {
+      "claim_id": "b81552f1-6a49-4e84-84e7-eb18b4897dd1",
+      "result_id": "6a06be70-5a7d-4b40-8410-c38c3bdfd739"
+    },
+    {
+      "claim_id": "0ade7ba4-3309-4a70-8a75-376a90b5e59b",
+      "result_id": "6a06be70-5a7d-4b40-8410-c38c3bdfd739"
+    },
+    {
+      "claim_id": "33a8c9f1-1f2c-4448-be87-fba2f03a7b81",
+      "result_id": "6a06be70-5a7d-4b40-8410-c38c3bdfd739"
+    },
+    {
+      "claim_id": "3ad08efb-d966-45f4-b6cc-97c1b9d4b7ee",
+      "result_id": "6a06be70-5a7d-4b40-8410-c38c3bdfd739"
+    },
+    {
+      "claim_id": "51e9fbfa-56e8-4034-9f23-8ebd415b8718",
+      "result_id": "6a06be70-5a7d-4b40-8410-c38c3bdfd739"
+    },
+    {
+      "claim_id": "eedb05c6-2f08-4af1-8b73-ba267ea7f89c",
+      "result_id": "6a06be70-5a7d-4b40-8410-c38c3bdfd739"
+    },
+    {
+      "claim_id": "84db50e7-f84e-4c98-9a0f-81ff40174fc7",
+      "result_id": "6a06be70-5a7d-4b40-8410-c38c3bdfd739"
+    },
+    {
+      "claim_id": "ab4e94d4-ef59-442e-b29d-b0b161b48adb",
+      "result_id": "855175f4-6616-4ebf-94e8-1aefb2ea3d56"
+    },
+    {
+      "claim_id": "57a2b687-657d-49b3-8469-eaa6e43d2240",
+      "result_id": "855175f4-6616-4ebf-94e8-1aefb2ea3d56"
+    },
+    {
+      "claim_id": "e180ef8d-5bc5-4dd2-a219-5e39d5ab3e7d",
+      "result_id": "855175f4-6616-4ebf-94e8-1aefb2ea3d56"
+    },
+    {
+      "claim_id": "081eef26-6ed6-4ff0-bce1-577ee24768fc",
+      "result_id": "855175f4-6616-4ebf-94e8-1aefb2ea3d56"
+    },
+    {
+      "claim_id": "f4dc99f9-b8e3-43ab-976b-0caaa798d92d",
+      "result_id": "855175f4-6616-4ebf-94e8-1aefb2ea3d56"
+    },
+    {
+      "claim_id": "fd6de706-bd04-4aca-924d-f18635752591",
+      "result_id": "855175f4-6616-4ebf-94e8-1aefb2ea3d56"
+    },
+    {
+      "claim_id": "63982750-cf8c-42aa-91cb-c337a2587b86",
+      "result_id": "855175f4-6616-4ebf-94e8-1aefb2ea3d56"
+    },
+    {
+      "claim_id": "1fe16fc6-0ff5-4cff-9914-7f33931d8728",
+      "result_id": "f6629135-ba41-45fd-bbe4-8e3fdc7a0da1"
+    },
+    {
+      "claim_id": "4030eb00-7f4e-4f4a-ae4e-e9be420b957a",
+      "result_id": "f6629135-ba41-45fd-bbe4-8e3fdc7a0da1"
+    },
+    {
+      "claim_id": "16b4490f-c350-4bb9-b0d9-0bc6ddab2993",
+      "result_id": "f6629135-ba41-45fd-bbe4-8e3fdc7a0da1"
+    },
+    {
+      "claim_id": "e0ed0563-d80b-429b-bffd-61572bc49622",
+      "result_id": "f6629135-ba41-45fd-bbe4-8e3fdc7a0da1"
+    },
+    {
+      "claim_id": "9ecccf7e-9fbc-4eed-8870-9a1871ab5fb1",
+      "result_id": "f6629135-ba41-45fd-bbe4-8e3fdc7a0da1"
+    },
+    {
+      "claim_id": "432e23ea-b349-4341-abb7-0a917f0aca53",
+      "result_id": "f6629135-ba41-45fd-bbe4-8e3fdc7a0da1"
+    },
+    {
+      "claim_id": "a64ce2e1-011e-40b4-87ed-b8afba1c4ca6",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "9149edf3-e7e7-49f7-8116-6350832ac3e4",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "52d03582-5711-4b81-bad1-d0bc19686dee",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "7503c9ae-7722-4682-8761-ac91f33a15f7",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "51514f56-8829-4808-9e73-6eb6607702d4",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "14ba2d1c-38c8-49a4-87f1-5daf7c41f95d",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "b0114697-7f13-470b-8d5f-2c8fba203836",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "72aaa160-8594-4439-a929-9d2eb5236df6",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "b37a452b-d2a2-4e18-af6a-578fff9b025d",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "cd61506c-26c7-4125-a3c0-804e97710eee",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "c06125fd-0467-4518-a5db-1b61386dae16",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "0471fa8c-ea63-4b82-9abb-ce0662a9fa8a",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "f8a6a20b-4e12-42cf-972d-b09129a57a68",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "803461b2-e866-45a9-b279-9b9573fd2bc1",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "06bdddae-87c3-4e0d-8c70-19c0329d08fb",
+      "result_id": "630aa47c-ffd3-425f-b468-89d52bdfc7c0"
+    },
+    {
+      "claim_id": "c3cdadf7-307c-4607-8166-aae2bd21ba14",
+      "result_id": "bc79bfc2-0f3a-4393-b230-175f9d7caaed"
+    },
+    {
+      "claim_id": "48d6f811-4b1e-48bc-a2aa-3ba7b2f935a1",
+      "result_id": "bc79bfc2-0f3a-4393-b230-175f9d7caaed"
+    },
+    {
+      "claim_id": "42494186-12ea-47f0-b55c-ed7152d56478",
+      "result_id": "bc79bfc2-0f3a-4393-b230-175f9d7caaed"
+    },
+    {
+      "claim_id": "acf1471e-e2e9-417e-9bf0-72d93787771b",
+      "result_id": "bc79bfc2-0f3a-4393-b230-175f9d7caaed"
+    },
+    {
+      "claim_id": "9e772c3b-847b-4644-96cd-b7b472b00653",
+      "result_id": "bc79bfc2-0f3a-4393-b230-175f9d7caaed"
+    },
+    {
+      "claim_id": "d5cd3c67-f430-4ddc-8ebf-1212262e9d3a",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "c1cbbdfa-170f-47a3-a3f7-b52dbb727acf",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "6f833a32-54f4-4468-8291-33b311e355cb",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "2901456a-cf24-4d7d-8eb4-49df44c90a7e",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "c9298ea5-9c25-43f5-b36a-cdc02eeeb364",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "984d0726-5af8-441b-8171-6066e218186b",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "1dc60987-0627-4e29-a716-890895b1e8df",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "76bb7a66-d260-4a6f-993b-4b037ef57791",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "cfb948be-129c-447a-83e4-3aa3103b7830",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "eb4ba90f-a22c-4662-97d2-39226551ac4c",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "85c70bd0-4948-4542-821b-3e4ac238329b",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "7e80d6a7-e756-4927-8630-6c54e08f3111",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "5c2b6c7b-97f6-459e-8608-b015751be847",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "43bbe5fc-39cb-4aa6-b8e0-305edb1880a3",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "6b714842-4539-4c76-aebd-10c513f096a4",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "5b96399d-4c3b-4890-858d-c22e25cf0cc4",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "f0dd7720-2a80-4b26-ab9d-b240557284a2",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "404cb841-c431-44b5-aec0-699d7c062a62",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "45a1c552-a54e-425b-859c-cea1d3b460dd",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "6d088d8f-3e8d-4894-b649-0e8dc48c236b",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "9388845a-58c0-40f3-8fea-9458a758f4d3",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "109bd3a7-9915-4311-baac-39ee8c6b992b",
+      "result_id": "ff9abe09-1913-4a18-ad0f-afb00e0f8b6b"
+    },
+    {
+      "claim_id": "17721dee-550d-4c81-ab65-9a6c6e4f1623",
+      "result_id": "5772beca-e20a-4034-8501-0eb474dfeb56"
+    },
+    {
+      "claim_id": "f0d29b60-27fc-4784-83ca-a2bb319f5b6c",
+      "result_id": "5772beca-e20a-4034-8501-0eb474dfeb56"
+    },
+    {
+      "claim_id": "0091fc41-d5a9-4c5f-ba41-7239b5cd309f",
+      "result_id": "5772beca-e20a-4034-8501-0eb474dfeb56"
+    },
+    {
+      "claim_id": "52d7935c-b59a-4dc5-b64c-5924769ac894",
+      "result_id": "07ee678c-4ceb-4868-872b-f41663828e56"
+    },
+    {
+      "claim_id": "a4b1a404-1ee4-4476-80d0-6f0153914946",
+      "result_id": "07ee678c-4ceb-4868-872b-f41663828e56"
+    },
+    {
+      "claim_id": "6293df58-40d4-497d-8c93-90485ff802b4",
+      "result_id": "07ee678c-4ceb-4868-872b-f41663828e56"
+    },
+    {
+      "claim_id": "79af1a00-ecac-4e07-b46a-af3e3475de36",
+      "result_id": "07ee678c-4ceb-4868-872b-f41663828e56"
+    }
+  ],
+  "comparisons": []
+}

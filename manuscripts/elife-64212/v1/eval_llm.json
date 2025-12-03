@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "MGA is frequently mutated or deleted in lung adenocarcinoma patients (6-10% across datasets), with mutations predominantly truncating and approximately 25% homozygous. Low MGA expression correlates with decreased patient survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence from multiple independent datasets (TCGA, GENIE, survival analysis) showing consistent patterns of MGA alterations in lung adenocarcinoma. The data on mutation frequency, type, and clinical correlation are well-documented and statistically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C83",
+      "C87"
+    ],
+    "result": "MGA inactivation via CRISPR in Kras and KP mouse models significantly accelerates tumor growth, increases proliferation (Ki67+ cells), tumor burden, tumor grade, and vasculature. Ectopic MGA expression in MGA-deficient cells impairs proliferation, confirming tumor suppressor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C15, C83, C87 collectively demonstrate MGA's tumor suppressor role through multiple complementary approaches: survival analysis, proliferation markers, tumor burden quantification, histological grading, and rescue experiments. The use of two independent mouse models (Kras and KP) strengthens the conclusions. Statistical significance is reported for key findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C88"
+    ],
+    "result": "MGA loss leads to upregulation of ncPRC1.6 target genes (meiotic genes like Stag3, Sox30, Tdrd1), MYC target genes, metabolic pathways, pro-invasive genes (Podxl2, Gpc2, Snai2), and EMT/TGF-beta signaling pathways, while downregulating anti-tumor immune response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24, C88 are supported by RNA-seq data from multiple models (Kras tumors, KP cells) with appropriate statistical analysis (GSEA, differential expression). The consistency of findings across models and correlation with published datasets (MYC, E2F4, TWIST1 targets) strengthens the conclusions. However, the heterogeneity noted in tumor samples (C16) suggests some variability in the response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C84"
+    ],
+    "result": "MGA interacts with ncPRC1.6 complex members (RING2, L3MBTL2, E2F6, PCGF6), MLL-WRAD complex components, and HDACs. MGA loss destabilizes ncPRC1.6 subunits (decreased E2F6, PCGF6, L3MBTL2 protein levels despite unchanged mRNA) while MAX levels remain stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29, C84 are supported by mass spectrometry (protein prophet score >0.9), western blots, and RNA-seq data showing post-translational regulation. The findings are consistent across mouse and human cell lines, strengthening the conclusion that MGA stabilizes ncPRC1.6 components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The DUF4801 region (aa 1043-1084) within MGA is critical for L3MBTL2 interaction and tumor suppressor function. Multiple truncating mutations occur in this region in lung adenocarcinomas. MGA\u2206DUF fails to restore L3MBTL2 levels or suppress proliferation, unlike wild-type MGA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 provide strong evidence through multiple approaches: mass spectrometry, co-IP, TCGA mutation analysis, and functional rescue experiments in both mouse and human cells. The convergence of mutation hotspot data with functional studies strongly supports the importance of the DUF region. However, C37 notes that MGA\u2206DUF retains some antiproliferative activity, suggesting ncPRC1.6-independent functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "MGA, MAX, E2F6, and L3MBTL2 co-occupy thousands of promoters in tumor cells. MGA loss dramatically reduces L3MBTL2 and E2F6 genomic binding while MAX/MYC occupancy is modestly affected. MGA binds to most genes whose expression changes upon MGA loss, with increased RNA polymerase II at upregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48 are supported by comprehensive ChIP-seq and CUT&RUN data in both mouse and human cells. The genomic occupancy data directly correlate with gene expression changes, providing mechanistic insight. The consistency between mouse KP cells and human A549 cells strengthens the conclusions. Statistical analysis of RNA pol II binding supports the transcriptional mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "MYC amplification is rare in MGA-mutant lung adenocarcinomas, and MYC RNA levels are not significantly altered. However, MYC is essential for growth in both MGA wild-type and MGA-deleted cells, as shown by MYC deletion and pharmacological inhibition experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by TCGA data analysis and functional experiments (CRISPR deletion, small molecule inhibitors). The data clarify that while MYC is not amplified or overexpressed in MGA-mutant tumors, it remains functionally important. The use of two different MYC inhibitors (10058-F4, MS2-008) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Meiotic genes (Stag3, Tdrkh, Zcwpw1, Gpc2) are among the top genes upregulated upon MGA, PCGF6, or L3MBTL2 loss. However, single or double deletion of L3mbtl2 and Pcgf6 does not recapitulate the full extent of gene expression changes seen with MGA deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by RNA-seq data comparing different CRISPR deletions. The finding that ncPRC1.6 subunit deletions only partially phenocopy MGA deletion suggests MGA has additional functions beyond ncPRC1.6, consistent with its interactions with other complexes (MLL-WRAD, HDACs). This is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In human lung adenocarcinoma patients, MGA alterations correlate with high STAG3 expression, enrichment for MYC/MAX/E2F6/E2F4 target genes, and downregulation of anti-tumor immune responses. STAG3 and PODXL2 are consistently upregulated across mouse and human MGA-altered samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by TCGA data analysis with appropriate statistical tests and overlap analysis across multiple datasets. The consistency of findings between mouse models and human patient data strengthens the translational relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In established human lung adenocarcinoma cell lines, MGA deletion does not confer growth advantage but increases invasive properties (migration, spheroid formation) and upregulates PODXL2 and STAG3. Knockdown of STAG3 or PODXL2 reduces growth, especially in MGA-deleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by multiple functional assays (wound healing, spheroid formation, qPCR, siRNA knockdown) in human cell lines. The context-dependent effects (no growth advantage in established lines vs. accelerated tumorigenesis in vivo) are appropriately noted and suggest MGA functions differently at tumor initiation vs. progression stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Loss of L3MBTL2 or PCGF6 alone does not phenocopy MGA deletion effects on cell migration in human A549 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by migration assay data and is consistent with C55, suggesting MGA has functions beyond ncPRC1.6 in regulating invasion. The data support the conclusion that MGA's tumor suppressor activity involves multiple mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C85"
+    ],
+    "result": "MGA loss in normal human colon organoids accelerates 3D growth (but not 2D growth), decreases L3MBTL2 levels, and upregulates four of five key genes identified in lung cancer models (STAG3, PODXL2, NHLRC1, ZCWPW1), EMT genes, E2F/cell cycle genes, and colon stemness genes (LGR5), while downregulating interferon signaling and senescence genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73, C85 are supported by organoid growth assays, western blots, and RNA-seq data. The consistency of key gene targets (STAG3, PODXL2) across lung and colon models suggests a conserved tumor suppressor mechanism. The context-specific differences (stemness genes in colon, senescence downregulation) are appropriately documented. The 3D vs. 2D growth difference is an important observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Prior work establishes that MGA is a dual-specificity transcription factor with T-box and bHLHZ domains, essential for early development, interacts with ncPRC1.6 in ES cells, represses meiotic genes, and is frequently mutated across cancers with evidence for tumor suppressor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 accurately summarize prior published work with appropriate citations. These claims provide essential context for the current study and are properly attributed to previous studies. The citations appear appropriate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "MGA deletion in human lung adenocarcinoma lines augmented invasive capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is a summary statement supported by the detailed data in C61-C62 (wound healing, spheroid assays). This is appropriately supported by experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The proposed tumor suppressive mechanism involves MGA-MAX associated with ncPRC1.6 mediating widespread transcriptional attenuation of MYC and E2F target genes in adenocarcinomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 represents the overarching mechanistic model supported by the collective evidence from genomic occupancy (C38-C48), protein interactions (C25-C29), gene expression (C16-C24), and functional studies (C6-C15, C60-C73). While this is an inferred model, it is well-supported by the comprehensive data presented. However, the data also indicate MGA has ncPRC1.6-independent functions (C37, C55, C65), which adds complexity to the model.",
+    "result_type": "MAJOR"
+  }
+]

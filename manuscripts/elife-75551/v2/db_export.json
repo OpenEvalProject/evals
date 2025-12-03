@@ -1,0 +1,1900 @@
+{
+  "submission": {
+    "id": "46f671b6-bbc2-4bc0-b0ad-c768dc196484",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:27:40.828808Z",
+    "updated_at": "2025-12-03T13:27:40.828808Z"
+  },
+  "content": [
+    {
+      "id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "submission_id": "46f671b6-bbc2-4bc0-b0ad-c768dc196484",
+      "content_type": "manuscript",
+      "content_text": "# Quantifying concordant genetic effects of de novo mutations on multiple disorders\n\n## Authors\n\n- Hanmin Guo<sup>1</sup> ([ORCID: 0000-0001-9022-5307](https://orcid.org/0000-0001-9022-5307))\n- Lin Hou<sup>1</sup>\n- Yu Shi<sup>4</sup>\n- Sheng Chih Jin<sup>5</sup>\n- Xue Zeng<sup>6</sup>\n- Boyang Li<sup>8</sup>\n- Richard P Lifton<sup>6</sup>\n- Martina Brueckner<sup>6</sup>\n- Hongyu Zhao<sup>6</sup> \u2020\n- Qiongshi Lu<sup>11</sup> ([ORCID: 0000-0002-4514-0969](https://orcid.org/0000-0002-4514-0969)) \u2020\n\n### Affiliations\n\n1. Center for Statistical Science, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))\n2. Department of Industrial Engineering, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))\n3. MOE Key Laboratory of Bioinformatics, School of Life Sciences, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))\n4. Yale School of Management, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n5. Department of Genetics, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n6. Department of Genetics, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n7. Laboratory of Human Genetics and Genomics, Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))\n8. Department of Biostatistics, Yale School of Public Health New Haven United States\n9. Department of Pediatrics, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n10. Program of Computational Biology and Bioinformatics, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n11. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))\n\n\u2020 Corresponding author\n\n## Abstract\n\nExome sequencing on tens of thousands of parent-proband trios has identified numerous deleterious de novo mutations (DNMs) and implicated risk genes for many disorders. Recent studies have suggested shared genes and pathways are enriched for DNMs across multiple disorders. However, existing analytic strategies only focus on genes that reach statistical significance for multiple disorders and require large trio samples in each study. As a result, these methods are not able to characterize the full landscape of genetic sharing due to polygenicity and incomplete penetrance. In this work, we introduce EncoreDNM, a novel statistical framework to quantify shared genetic effects between two disorders characterized by concordant enrichment of DNMs in the exome. EncoreDNM makes use of exome-wide, summary-level DNM data, including genes that do not reach statistical significance in single-disorder analysis, to evaluate the overall and annotation-partitioned genetic sharing between two disorders. Applying EncoreDNM to DNM data of nine disorders, we identified abundant pairwise enrichment correlations, especially in genes intolerant to pathogenic mutations and genes highly expressed in fetal tissues. These results suggest that EncoreDNM improves current analytic approaches and may have broad applications in DNM studies.\n\n## Introduction\n\nDe novo mutations (DNMs) can be highly deleterious and provide important insights into the genetic cause for disease (Veltman and Brunner, 2012). As the cost of sequencing continues to drop, whole-exome sequencing (WES) studies conducted on tens of thousands of family trios have pinpointed numerous risk genes for a variety of disorders (Lelieveld et al., 2016; Kaplanis et al., 2020; Satterstrom et al., 2020). In addition, accumulating evidence suggests that risk genes enriched for pathogenic DNMs may be shared by multiple disorders (Hoischen et al., 2014; Fromer et al., 2014; Homsy et al., 2015; Li et al., 2016; Nguyen et al., 2020). These shared genes could reveal biological pathways that play prominent roles in disease etiology and shed light on clinically heterogeneous yet genetically related diseases (Homsy et al., 2015; Li et al., 2016; Nguyen et al., 2020).\n\nMost efforts to identify shared risk genes directly compare genes that are significantly associated with each disorder (Nguyen et al., 2017; Willsey et al., 2018). There have been some successes with this approach in identifying shared genes and pathways (e.g. chromatin modifiers) underlying developmental disorder (DD), autism spectrum disorder (ASD), and congenital heart disease (CHD), thanks to the large trio samples in these studies (Kaplanis et al., 2020; Satterstrom et al., 2020; Jin et al., 2017), whereas findings in smaller studies remain suggestive (Allen et al., 2013; Jin et al., 2020b). Even in the largest studies to date, statistical power remains moderate for risk genes with weaker effects (Kaplanis et al., 2020; Howrigan et al., 2020). It is estimated that more than 1000 haploinsufficient genes contributing to developmental disorder risk have not yet achieved statistical significance in large WES studies (Kaplanis et al., 2020). Therefore, analytic approaches that only account for top significant genes cannot capture the full landscape of genetic sharing in multiple disorders. Recently, a Bayesian framework named mTADA was proposed to jointly analyze DNM data of two diseases and improve risk gene mapping (Nguyen et al., 2020). Although mTADA produces estimates for the proportion of shared risk genes, the statistical property of these parameter estimates has not been studied. There is a pressing need for powerful, robust, and interpretable methods that quantify concordant DNM association patterns for multiple disorders using exome-wide DNM counts.\n\nRecent advances in estimating genetic correlations using summary data from genome-wide association studies (GWAS) may provide a blueprint for approaching this problem in DNM research (Zhang et al., 2021a). Modeling \u2018omnigenic\u2019 associations as independent random effects, linear mixed-effects models leverage genome-wide association profiles to quantify the correlation between additive genetic components of multiple complex traits (Lee et al., 2012; Bulik-Sullivan et al., 2015; Lu et al., 2017; Ning et al., 2020). These methods have identified ubiquitous genetic correlations across many human traits and revealed significant and robust genetic correlations that could not be inferred from significant GWAS associations alone (Shi et al., 2017; Brainstorm, 2018; Guo et al., 2021; Zhang et al., 2021b).\n\nHere, we introduce EncoreDNM (Enrichment correlation estimator for De Novo Mutations), a novel statistical framework that leverages exome-wide DNM counts, including genes that do not reach exome-wide statistical significance in single-disorder analysis, to estimate concordant DNM associations between disorders. EncoreDNM uses a generalized linear mixed-effects model to quantify the occurrence of DNMs while accounting for de novo mutability of each gene and technical inconsistencies between studies. We demonstrate the performance of EncoreDNM through extensive simulations and analyses of DNM data of nine disorders.\n\n## Results\n\n### Method overview\n\nDNM counts in the exome deviate from the null (i.e. expected counts based on de novo mutability) when mutations play a role in disease etiology. Disease risk genes will show enrichment for deleterious DNMs in probands and non-risk genes may be slightly depleted for DNM counts. Our goal is to estimate the correlation of such deviation between two disorders, which we refer to as the DNM enrichment correlation. More specifically, we use a pair of mixed-effects Poisson regression models (Munkin and Trivedi, 1999) to quantify the occurrence of DNMs in two studies.\n\n$$\nY_{i1}Y_{i2}\u223cPoisson\\lambda_{i1}\\lambda_{i2},\n$$\n\n\n\n$$\nlog\u2061\\lambda_{i1}\\lambda_{i2}=\\beta_{1}\\beta_{2}+log\u20612N_{1}m_{i}2N_{2}m_{i}+\u03d5_{i1}\u03d5_{i2},\n$$\n\n\n\n$$\n\u03d5_{i1}\u03d5_{i2}\u223cMVN00,\\sigma_{1}^{2}\u03c1\\sigma_{1}\\sigma_{2}\u03c1\\sigma_{1}\\sigma_{2}\\sigma_{2}^{2}.\n$$\n\nHere, $Y_{i1},Y_{i2}$ are the DNM counts for the i-th gene and $N_{1},N_{2}$ are the number of parent-proband trios in two studies, respectively. The log Poisson rates of DNM occurrence are decomposed into three components: the elevation component, the background component, and the deviation component. The elevation component $\\beta_{k}$ ($k=1,2$) is a fixed effect term adjusting for systematic, exome-wide bias in DNM counts. One example of such bias is the batch effect caused by different sequencing and variant calling pipelines in two studies. The elevation parameter $\\beta_{k}$ tends to be positive when DNMs are over-called with higher sensitivity and negative when DNMs are under-called with higher specificity (Wei et al., 2015). The background component $log\u2061(2N_{k}m_{i})$ is a gene-specific fixed effect that reflects the expected mutation counts determined by the genomic sequence context under the null (Samocha et al., 2014). $m_{i}$ is the de novo mutability for the i-th gene, and $2N_{1}m_{i}$ and $2N_{2}m_{i}$ are the expected DNM counts in the i-th gene under the null in two studies. The deviation component $\u03d5_{ik}$ is a gene-specific random effect that quantifies the deviation of DNM profile from what is expected under the null (i.e. no risk genes for the disorder). $\u03d5_{i1}$ and $\u03d5_{i2}$ follow a multivariate normal distribution with dispersion parameters $\\sigma_{1}$ and $\\sigma_{2}$ and a correlation $\u03c1$. A larger value of the dispersion parameter $\\sigma_{k}$ indicates a more substantial deviation from the null. That is, DNM counts show strong enrichment in some genes and depletion in other genes compared to the expectation based on de novo mutability. A smaller value of $\\sigma_{k}$ suggests that the DNM count data is well in line with what is expected based on the null model. DNM enrichment correlation is denoted by $\u03c1$ and is our main parameter of interest. It quantifies the concordance of DNM burden in two disorders.\n\nParameters in this model can be estimated using a Monte Carlo maximum likelihood estimation (MLE) procedure. Standard errors of the estimates are obtained through inversion of the observed Fisher information matrix. In practice, we use annotated DNM data as input and fit mixed-effects Poisson models for each variant class separately: loss of function (LoF), deleterious missense (Dmis, defined as MetaSVM-deleterious), tolerable missense (Tmis, defined as MetaSVM-tolerable), and synonymous (Figure 1). More details about model setup and parameter estimation are discussed in Materials and methods.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig1-v2.jpg)\n\n**Figure 1.:** The inputs of EncoreDNM are de novo mutability of each gene and exome-wide, annotated DNM counts from two studies. We fit a mixed-effects Poisson model to estimate the DNM enrichment correlation between two disorders for each variant class.\n\n### Simulation results\n\nWe conducted simulations to assess the parameter estimation performance of EncoreDNM in various settings. We focused on two variant classes, that is, Tmis and LoF variants, since they have the highest and lowest median mutabilities in the exome. We used EncoreDNM to estimate the elevation parameter $\\beta$, dispersion parameter $\\sigma$, and enrichment correlation $\u03c1$ (Materials and methods). Under various parameter settings, EncoreDNM always provided unbiased estimation of the parameters (Figure 2 and Figure 2\u2014figure supplements 1\u20132). Furthermore, the 95% Wald confidence intervals achieved coverage rates close to 95% under all simulation settings, demonstrating the effectiveness of EncoreDNM to provide accurate statistical inference.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig2-v2.jpg)\n\n**Figure 2.:** (a) Boxplot of $\\beta$ estimates in single-trait analysis with $\\sigma$ fixed at 0.75. (b) Boxplot of $\\sigma$ estimates in single-trait analysis with $\\beta$ fixed at \u20130.25. (c) Boxplot of $\u03c1$ estimates in cross-trait analysis with $\\beta$ and $\\sigma$ fixed at \u20130.25 and 0.75. True parameter values are marked by dashed lines. The number above each box represents the coverage rate of 95% Wald confidence intervals. Each simulation setting was repeated 100 times.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Estimation results of elevation parameter $\\beta$ under a mixed-effects Poisson regression model.Boxplots of estimated value for $\\beta$ in single trait analysis with $\\sigma_{true}$ value fixed at (a) 0.5 and (b) 1. True parameter values are marked by dashed lines. The number above each box represents the coverage rate of 95% Wald confidence intervals. Each simulation setting was repeated 100 times.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Estimation results of dispersion parameter $\\sigma$ under a mixed-effects Poisson regression model.Boxplots of estimated value for $\\sigma$ in single trait analysis with $\\beta_{true}$ value fixed at (a) \u20130.5 and (b) 0. True parameter values are marked by dashed lines. The number above each box represents the coverage rate of 95% Wald confidence intervals. Each simulation setting was repeated 100 times.\n\nNext, we compared the performance of EncoreDNM with mTADA (Nguyen et al., 2020), a Bayesian framework that estimates the proportion of shared risk genes for two disorders. First, we simulated DNM data under the mixed-effects Poisson model. We evaluated two methods across a range of combinations of elevation parameter, dispersion parameter, and sample size for two disorders. The false positive rates for our method were well-calibrated in all parameter settings, but mTADA produced false positive findings when the observed DNM counts were relatively small (e.g. due to reduced elevation or dispersion parameters or a lower sample size; Figure 3a). We also assessed the statistical power of two approaches under a baseline setting where false positives for both methods were controlled. As enrichment correlation increased, EncoreDNM achieved universally greater statistical power compared to mTADA (Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig3-v2.jpg)\n\n**Figure 3.:** (a) False positive rates under a mixed-effects Poisson regression model. (b) Statistical power of two methods under a mixed-effects Poisson regression model as the enrichment correlation increases. Parameters ($\\beta,\\sigma,N$) were fixed at (\u20130.25, 0.75, 5000) for both disorders. (c) False positive rates under a multinomial model. (d) Statistical power under a multinomial model with varying proportion of shared causal genes. Parameters ($u,p,N$) were fixed at (0.95, 0.25, 5000) for both disorders. Each simulation setting was repeated 100 times.\n\nTo ensure a fair comparison, we also considered a mis-specified model setting where we randomly distributed the total DNM counts for each disorder into all genes with an enrichment in causal genes (Materials and methods). EncoreDNM showed well-controlled false positive rate across all simulation settings, whereas severe inflation of false positives arose for mTADA when the total mutation count, the proportion of probands that can be explained by DNMs, or the sample size were small (Figure 3c). Furthermore, we compared the statistical power of two methods under this model in a baseline setting where false positive rate was controlled. EncoreDNM showed higher statistical power compared to mTADA as the fraction of shared causal genes increased (Figure 3d).\n\n### Pervasive enrichment correlation of damaging DNMs among developmental disorders\n\nWe applied EncoreDNM to DNM data of nine disorders (Supplementary file 1-STable 1; Materials and methods): developmental disorder (n=31,058; number of trios; Kaplanis et al., 2020), autism spectrum disorder (n=6430; Satterstrom et al., 2020), schizophrenia (SCZ; n=2772; Howrigan et al., 2020), congenital heart disease (n=2645; Jin et al., 2017), intellectual disability (ID; n=820; Lelieveld et al., 2016), Tourette disorder (TD; n=484) Willsey et al., 2017, epileptic encephalopathies (EP; n=264; Allen et al., 2013), cerebral palsy (CP; n=250; Jin et al., 2020b), and congenital hydrocephalus (CH; n=232; Jin et al., 2020a). In addition, we also included 1789 trios comprising healthy parents and unaffected siblings of autism probands as controls (Krumm et al., 2015).\n\nWe first performed single-trait analysis under the mixed-effects Poisson model for each disorder. The estimated elevation parameters (i.e. $\\beta$) were negative for almost all disorders and variant classes (Figure 4a), with LoF variants showing particularly lower parameter estimates. This may be explained by more stringent quality control in LoF variant calling (Jin et al., 2017) and potential survival bias (Lek et al., 2016). It is also consistent with a depletion of LoF DNMs in healthy control trios (Homsy et al., 2015). The dispersion parameter estimates (i.e. $\\sigma$) were higher for LoF variants than other variant classes (Figure 4b), which is consistent with our expectation that LoF variants have stronger effects on disease risk and should show a larger deviation from the null mutation rate in disease probands. We also compared the goodness of fit of our proposed mixed-effects Poisson model to a simpler fixed-effects model without the deviation component (Materials and methods). The expected distribution of recurrent DNM counts showed substantial and statistically significant improvement under the mixed-effects Poisson model (Figure 4c\u2013f, Figure 4\u2014figure supplement 1, and Supplementary file 1-STable 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig4-v2.jpg)\n\n**Figure 4.:** (a, b) Estimation results of $\\beta$ and $\\sigma$ for nine disorders and four variant classes. Error bars represent 1.96*standard errors. Sample sizes of DNM datasets for each disorder are provided in Supplementary file 1-STable 1. (c\u2013f) Distribution of DNM events per gene in four variant classes for developmental disorder. Red and green bars represent the expected frequency of genes under the fixed-effects and mixed-effects Poisson regression models, respectively. Blue bars represent the observed frequency of genes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Results with $\u2212log_{10}\u2061P>100$ are truncated to 100 for visualization purpose.\n\nNext, we estimated pairwise DNM enrichment correlations for 9 disorders. In total, we identified 25 pairs of disorders with significant correlations at a false discovery rate (FDR) cutoff of 0.05 (Figure 5 and Figure 5\u2014figure supplement 1), including 12 significant correlations for LoF variants, 7 for Dmis variants, 5 for Tmis variants, and only 1 significant correlation for synonymous variants. Notably, all significant correlations are positive (Supplementary file 1-STable 3). No significant correlation was identified between any disorder and healthy controls (Figure 5\u2014figure supplement 2). This is consistent with our expectation, since DNMs in the control groups will distribute proportionally according to the de novo mutability without showing enrichment in certain genes. The number of identified significant correlations for each disorder was proportional to the sample size in each study (Spearman correlation = 0.70) with controls being a notable outlier (Figure 5\u2014figure supplement 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig5-v2.jpg)\n\n**Figure 5.:** (a) Shows sample size (for example, number of trios) for each disease. X-axis denotes sample size on the log scale. (b) Heatmap of enrichment correlations for LoF (upper triangle) and synonymous (lower triangle) DNMs among nine disorders. Larger squares represent more significant p-values, and deeper color represents stronger correlations. Significant correlations (FDR <0.05) are shown as full-sized squares marked by asterisks.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Significant correlations (FDR <0.05) are marked by asterisks. Results with $\u2212log_{10}\u2061P>13$ are truncated to 13 for visualization purpose.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig5-figsupp2-v2.jpg)\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** X-axis denotes number of trios in each study and is visualized in the log-scale. The data point for controls is a notable outlier and is excluded in the calculation of spearman correlation.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Red arrows highlight the DNMs in CP, ID, ASD, and CHD. Other DNMs are from DD probands.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** The red arrow highlights the two identical DNMs in ASD and CH. Other DNMs are from DD probands.\n\n![Figure 5\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig5-figsupp6-v2.jpg)\n\n**Figure 5\u2014figure supplement 6.:** Significant genetic sharings (FDR <0.05) are marked by asterisks.\n\n![Figure 5\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig5-figsupp7-v2.jpg)\n\n**Figure 5\u2014figure supplement 7.:** Significant genetic sharings (FDR <0.05) are marked by asterisks.\n\n![Figure 5\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig5-figsupp8-v2.jpg)\n\n**Figure 5\u2014figure supplement 8.:** The upper triangle represents enrichment correlations estimated by EncoreDNM. The lower triangle represents genetic correlations estimated from GWAS summary statistics by cross-trait LDSC. We used GWAS on cognitive performance as a proxy for ID. Larger square represents more significant p-value, and deeper color represents stronger correlation. Significant correlations (FDR <0.05) are shown as full-sized squares marked by asterisks.\n\n![Figure 5\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig5-figsupp9-v2.jpg)\n\nWe identified highly concordant and significant LoF DNM enrichment among developmental disorder, autism, intellectual disability, and congenital heart disease, which is consistent with previous reports (Li et al., 2016; Nguyen et al., 2020; Nguyen et al., 2017; Hormozdiari et al., 2015). Schizophrenia shows highly significant LoF correlations with developmental disorder (p=2.0e-3) and intellectual disability (3.7e-5). The positive enrichment correlation between autism and cerebral palsy in LoF variants ($\u03c1$=0.81, p=3.3e-3) is consistent with their co-occurrence (Christensen et al., 2014). The high enrichment correlation between intellectual disability and cerebral palsy in LoF variants ($\u03c1$=0.68, p=1.0e-4) is consistent with the associations between intellectual disability and motor or non-motor abnormalities caused by cerebral palsy (Reid et al., 2018). A previous study also suggested significant genetic sharing of intellectual disability and cerebral palsy by overlapping genes harboring rare damaging variants (Jin et al., 2020b). Here, we obtained consistent results after accounting for de novo mutabilities and potential confounding bias.\n\nSome significant correlations identified in our analysis are consistent with phenotypic associations in epidemiological studies, but have not been reported using genetic data to the extent of our knowledge. For example, the LoF enrichment correlation between congenital heart disease and cerebral palsy ($\u03c1$=0.88, p=1.7e-3) is consistent with findings that reduced supply of oxygenated blood in fetal brain due to cardiac malformations may be a risk factor for cerebral palsy (Garne et al., 2008). The enrichment correlation between intellectual disability and congenital hydrocephalus in LoF variants ($\u03c1$=0.63, p=2.4e-3) is consistent with lower intellectual performance in a proportion of children with congenital hydrocephalus (Lumenta and Skotarczak, 1995).\n\nGenes showing pathogenic DNMs in multiple disorders may shed light on the mechanisms underlying enrichment correlations (Supplementary file 1-STable 4). We identified five genes (CTNNB1, NBEA, POGZ, SPRED2, and KMT2C) with LoF DNMs in five different disorders and 21 genes had LoF DNMs in four disorders (Supplementary file 1-STable 5). These 26 genes with LoF variants in at least four disorders were significantly enriched for 63 gene ontology (GO) terms with FDR <0.05 (Supplementary file 1-STable 6). Chromatin organization (p=7.8e-11), nucleoplasm (p=2.8e-10), chromosome organization (p=6.8e-10), histone methyltransferase complex (p=1.4e-9), and positive regulation of gene expression (p=2.2e-9) were the most significantly enriched GO terms. One notable example consistently included in these gene sets is CTNNB1 (Figure 5\u2014figure supplement 4). It encodes $\\beta$-catenin, is one of the only two genes reaching genome-wide significance in a recent WES study for cerebral palsy (Jin et al., 2020b), and also harbors multiple LoF variants in developmental disorder, intellectual disability, autism, and congenital heart disease. It is a fundamental component of the canonical Wnt signaling pathway which is known to confer genetic risk for autism (O\u2019Roak et al., 2012). Genes with recurrent damaging DNMs in multiple disorders also revealed shared biological function across these disorders (Rees et al., 2021). We identified 30 recurrent cross-disorder LoF mutations that were not recurrent in developmental disorder alone (Supplementary file 1). FBXO11, encoding the F-box only protein 31, shows two recurrent p.Ser831fs LoF variants in autism and congenital hydrocephalus (Figure 5\u2014figure supplement 5; p=1.9e-3; Materials and methods). The F-box protein constitutes a substrate-recognition component of the SCF (SKP1-cullin-F-box) complex, an E3-ubiquitin ligase complex responsible for ubiquitination and proteasomal degradation (Cardozo and Pagano, 2004). DNMs in FBXO11 have been previously implicated in severe intellectual disability individuals with autistic behavior problem (Jansen et al., 2019) and neurodevelopmental disorder (Gregor et al., 2018).\n\nFor comparison, we also applied mTADA to the same nine disorders and control trios. In total, mTADA identified 117 disorder pairs with significant genetic sharings at an FDR cutoff of 0.05 (Supplementary file 1-STable 8 and Figure 5\u2014figure supplement 6). Notably, we identified significant synonymous DNM correlations for all 36 disorder pairs and between all disorders and healthy controls (Figure 5\u2014figure supplement 7). These results are consistent with the simulation results and suggest a substantially inflated false positive rate in mTADA.\n\n### Partitioning DNM enrichment correlation by gene set\n\nTo gain biological insights into the shared genetic architecture of nine disorders, we repeated EncoreDNM correlation analysis in several gene sets. First, we defined genes with high/low probability of intolerance to LoF variants using pLI scores (Karczewski et al., 2020), and identified genes with high/low brain expression (HBE/LBE) (Werling et al., 2020; Materials and methods; Supplementary file 1-STable 9). We identified 11 and 12 disorder pairs showing significant enrichment correlations for LoF DNMs in high-pLI genes and HBE genes, respectively (Figure 6a\u2013b). We observed fewer significant correlations for Dmis and Tmis variants in these gene sets (Figure 6\u2014figure supplements 1\u20132). All identified significant correlations were positive (Supplementary file 1-STables 10 -11). No significant correlations were identified for synonymous variants (Figure 6\u2014figure supplements 1\u20132) or between disorders and controls (Figure 6\u2014figure supplements 3\u20134).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig6-v2.jpg)\n\n**Figure 6.:** (a) Enrichment correlations in high-pLI genes (upper triangle) and low-pLI genes (lower triangle) for LoF variants. Here, pLI is the probability of being loss-of-function intolerant (see Materials and methods). (b) Enrichment correlations in HBE genes (upper triangle) and LBE genes (lower triangle) for LoF variants. (c) Enrichment correlations in HHE genes (upper triangle) and LHE genes (lower triangle) for LoF variants. (d) Enrichment correlations in CHD-related pathways for LoF and synonymous variants. Larger squares represent more significant p-values, and deeper color represents stronger correlations. Significant correlations (FDR <0.05) are shown as full-sized squares marked by asterisks.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Larger square represents more significant p-value, and deeper color represents stronger correlation. Significant correlations (FDR <0.05) are shown as full-sized squares marked by asterisks.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Larger square represents more significant p-value, and deeper color represents stronger correlation. Significant correlations (FDR <0.05) are shown as full-sized squares marked by asterisks.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Larger square represents more significant p-value, and deeper color represents stronger correlation. Significant correlations (FDR <0.05) are shown as full-sized squares marked by asterisks.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Larger square represents more significant p-value, and deeper color represents stronger correlation. Significant correlations (FDR <0.05) are shown as full-sized squares marked by asterisks.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig6-figsupp5-v2.jpg)\n\n**Figure 6\u2014figure supplement 5.:** Larger square represents more significant p-value, and deeper color represents stronger correlation. Significant correlations (FDR <0.05) are shown as full-sized squares marked by asterisks.\n\n![Figure 6\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig6-figsupp6-v2.jpg)\n\n**Figure 6\u2014figure supplement 6.:** Larger square represents more significant p-value, and deeper color represents stronger correlation. Significant correlations (FDR <0.05) are shown as full-sized squares marked by asterisks.\n\n![Figure 6\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig6-figsupp7-v2.jpg)\n\n**Figure 6\u2014figure supplement 7.:** Larger square represents more significant p-value, and deeper color represents stronger correlation. Significant correlations (FDR <0.05) are shown as full-sized squares marked by asterisks.\n\n![Figure 6\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/75551/elife-75551-fig6-figsupp8-v2.jpg)\n\n**Figure 6\u2014figure supplement 8.:** Larger square represents more significant p-value, and deeper color represents stronger correlation. Significant correlations (FDR <0.05) are shown as full-sized squares marked by asterisks.\n\nWe observed a clear enrichment of significant correlations in disease-relevant gene sets. Overall, high-pLI genes showed substantially stronger correlations across disorders than genes with low pLI (one-sided Kolmogorov-Smirnov test; p=2.3e-6). Similarly, enrichment correlations were stronger in HBE genes than in LBE genes (p=8.8e-7). Among the 11 disorder pairs showing significant enrichment correlations in high-pLI genes, two pairs, that is, autism-schizophrenia ($\u03c1$=0.68, p=2.4e-3) and developmental disorder-congenital hydrocephalus ($\u03c1$=0.43, p=1.5e-3), were not identified in the exome-wide analysis. We also identified four novel disorder pairs with significant correlations in HBE genes, including developmental disorder-cerebral palsy ($\u03c1$=0.80, p=9.5e-5), developmental disorder-congenital hydrocephalus ($\u03c1$=0.67, p=1.4e-3), autism-congenital hydrocephalus ($\u03c1$=0.82, p=4.7e-4), and schizophrenia-epileptic encephalopathies ($\u03c1$=0.66, p=2.0e-3). These novel enrichment correlations are consistent with known comorbidities between these disorders (Kielinen et al., 2004; Kilincaslan and Mukaddes, 2009) and findings based on significant risk genes (Li et al., 2016; Jin et al., 2020a; Kume et al., 1998; Cao and Wu, 2015).\n\nFurthermore, we estimated DNM enrichment correlations in genes with high/low expression in mouse developing heart (HHE/LHE) (Homsy et al., 2015; Materials and methods; Supplementary file 1-STable 9). We identified 9 significant enrichment correlations for LoF variants in HHE genes (Figure 6c). Strength of enrichment correlations did not show a significant difference between HHE and LHE genes (p=0.846), possibly due to a lack of cardiac disorders in our analysis. Finally, we estimated enrichment correlations between congenital heart disease and other disorders in known pathways for congenital heart disease (Zaidi and Brueckner, 2017; Materials and methods; Supplementary file 1-STable 9). We identified five significant correlations for LoF variants (Figure 6d), including a novel correlation between congenital heart disease and Tourette disorder ($\u03c1$=0.93, p=3.3e-9). Of note, arrhythmia caused by congenital heart disease is a known risk factor for Tourette disorder (Gulisano et al., 2011). In these analyses, all significant enrichment correlations were positive (Supplementary file 1) and other variant classes showed generally weaker correlations than LoF variants (Figure 6\u2014figure supplements 5\u20136). We did not observe significant correlations in these gene sets between disorders and controls (Figure 6\u2014figure supplements 7\u20138).\n\n## Discussion\n\nIn this paper, we introduced EncoreDNM, a novel statistical framework to quantify correlated DNM enrichment between two disorders. Through extensive simulations and analyses of DNM data for nine disorders, we demonstrated that our proposed mixed-effects Poisson regression model provides unbiased parameter estimates, shows well-controlled false positive rate, and is robust to exome-wide technical biases. Leveraging exome-wide DNM counts and genomic context-based mutability data, EncoreDNM achieves superior fit for real DNM datasets compared to simpler models and provides statistically powerful and computationally efficient estimation of DNM enrichment correlation. Further, EncoreDNM can quantify concordant genetic effects for user-defined variant classes within pre-specified gene sets, thus is suitable for exploring diverse types of hypotheses and can provide crucial biological insights into the shared genetic etiology in multiple disorders. In comparison, the Bayesian approach implemented in mTADA can produce false positives findings, especially when the DNM count is low, possibility due to the overestimated proportion of risk genes. We still observed inflation in false positive rates under a more stringent significance cutoff or using posterior probability threshold strategy (Supplementary file 1-STables 14-17).\n\nMulti-trait analyses of GWAS data have revealed shared genetic architecture among many neuropsychiatric traits (Brainstorm, 2018; Lee et al., 2013; Gratten et al., 2014; Abdellaoui and Verweij, 2021). These findings have led to the identification of pleiotropic variants, genes, and hub genomic regions underlying many traits and have revealed multiple psychopathological factors jointly affecting human neurological phenotypes (Lee, 2019; Wang et al., 2015). Although emerging evidence suggests that causal DNMs underlying several disorders with well-powered studies (e.g. congenital heart disease and neurodevelopmental disorders; Homsy et al., 2015) may be shared, our understanding of the extent and the mechanism underlying such sharing remains incomplete. Applied to DNM data for nine disorders, EncoreDNM identified pervasive enrichment correlations of DNMs. We observed particularly strong correlations in pathogenic variant classes (e.g. LoF and Dmis variants) and disease-relevant genes (e.g. genes with high pLI and genes highly expressed in relevant tissues). Genes underlying these correlations were significantly enriched in pathways involved in chromatin organization and modification and gene expression regulation. The DNM correlations were substantially attenuated in genes with lower expression and genes with frequent occurrences of LoF variants in the population. A similar attenuation was observed in less pathogenic variant classes (e.g., synonymous variants). Further, no significant correlations were identified between any disorder and healthy controls. We also compared DNM enrichment correlations of five disorders with genetic correlations estimated from GWAS summary statistics (Supplementary file 1-STable 18). We had consistent findings from GWAS and DNM data (Spearman correlation = 0.70; Figure 5\u2014figure supplement 8 and Supplementary file 1-STable 19). These results lay the groundwork for future investigations of pleiotropic mechanisms of DNMs.\n\nOur study has some limitations. First, EncoreDNM assumes probands from different input studies to be independent. In rare cases when two studies have overlapping proband samples, enrichment correlation estimates may be inflated and must be interpreted with caution. Second, genetic correlation methods based on GWAS summary data provided key motivations for the mixed-effects Poisson regression model in our study. Built upon genetic correlations, a plethora of methods have been developed in the GWAS literature to jointly model more than two GWAS (Turley et al., 2018), identify and quantify common factors underlying multiple traits (Grotzinger et al., 2019; Grotzinger et al., 2020), estimate causal effects among different traits (Pickrell et al., 2016), and identify pleiotropic genomic regions through hypothesis-free scans (Guo et al., 2021). Future directions of EncoreDNM include using enrichment correlation to improve gene discovery, learning the directional effects and the causal structure underlying multiple disorders, and dynamically searching for gene sets and annotation classes with shared genetic effects without pre-specifying the hypothesis.\n\nTaken together, we provide a new analytic approach to an important problem in DNM studies. We believe EncoreDNM improves the statistical rigor in multi-disorder DNM modeling and opens up many interesting future directions in both method development and follow-up analyses in WES studies. As trio sample size in WES studies continues to grow, EncoreDNM will have broad applications and can greatly benefit DNM research.\n\n## Materials and methods\n\n### Statistical model\n\nFor a single study, we assume that DNM counts in a given variant class (for example, synonymous variants) follow a mixed-effects Poisson model:\n\n$$\nY_{i}\u223cPoisson\\lambda_{i},\n$$\n\n\n\n$$\nlog\u2061\\lambda_{i}=\\beta+log\u20612Nm_{i}+\u03d5_{i},\n$$\n\n\n\n$$\n\u03d5_{i}\u223cN0,\\sigma^{2},  for i=1,\u2026,G,\n$$\n\nwhere $Y_{i}$ is the DNM count in the i-th gene, $N$ is the number of trios, $m_{i}$ is the de novo mutability for the i-th gene (for example, mutation rate per chromosome per generation) which is known a priori (Samocha et al., 2014), and $G$ is the total number of genes in the study. The elevation parameter $\\beta$ quantifies the global elevation of mutation rate compared to mutability estimates based on genomic sequence alone. Gene-specific deviation from expected DNM rate is quantified by random effect $\u03d5_{i}$ with a dispersion parameter $\\sigma$. Here, the $\u03d5_{i}$ are assumed to be independent across different genes, in which case the observed DNM counts of different genes are independent. There is no constraint on the value of $\\beta$, and the dispersion parameter $\\sigma$ can be any positive value.\n\nNext, we describe how we expand this model to quantify the shared genetics of two disorders. We adopt a flexible Poisson-lognormal mixture framework that can accommodate both overdispersion and correlation (Munkin and Trivedi, 1999). We assume DNM counts in a given variant class for two diseases follow:\n\n$$\nY_{i1}Y_{i2}\u223cPoisson\\lambda_{i1}\\lambda_{i2},\n$$\n\n\n\n$$\nlog\u2061\\lambda_{i1}\\lambda_{i2}=\\beta_{1}\\beta_{2}+log\u20612N_{1}m_{i}2N_{2}m_{i}+\u03d5_{i1}\u03d5_{i2},\n$$\n\n\n\n$$\n\u03d5_{i1}\u03d5_{i2}\u223cMVN00,\\sigma_{1}^{2}\u03c1\\sigma_{1}\\sigma_{2}\u03c1\\sigma_{1}\\sigma_{2}\\sigma_{2}^{2},\n$$\n\nwhere $Y_{i1},Y_{i2}$ are the DNM counts for the i-th gene and $N_{1},N_{2}$ are the trio sizes in two studies, respectively. Similar to the single-trait model, $m_{i}$ is the mutability for the i-th gene. $\\beta_{1},\\beta_{2}$ are the elevation parameters, and $\u03d5_{i1},\u03d5_{i2}$ are the gene-specific random effects with dispersion parameters $\\sigma_{1},\\sigma_{2}$ , for two disorders respectively. $\u03c1$ is the enrichment correlation which quantifies the concordance of the gene-specific DNM burden between two disorders. Here, $\\beta_{1},\\beta_{2},\\sigma_{1},\\sigma_{2},\u03c1$ are unknown parameters. The gene specific effects for two disorders are assumed to be independent for different genes. We also assume that there is no shared sample for two disorders, in which case $Y_{i1}$ is independent with $Y_{i2}$ given $\\lambda_{i1}\\lambda_{i2}$ .\n\n### Parameter estimation\n\nWe implement an MLE procedure to estimate unknown parameters. For single-trait analysis, the log-likelihood function can be expressed as follows:\n\n$$\nl\\beta,\\sigmaY=\\sumi=1Glog\u2061\\intexp\u2061(-\\lambda_{i})\\lambda_{i}^{Y_{i}}*f\u03d5_{i}d\u03d5_{i}+C,\n$$\n\nwhere $Y=Y_{1},\u2026,Y_{G}^{T}$ , $\\lambda_{i}=2Nm_{i}exp\u2061(\\beta+\u03d5_{i})$ , $C=-\\sumi=1Glog\u2061Y_{i}!$ , and $f\u03d5_{i}=\\frac{1}{\\sqrt{2\\pi}\\sigma}exp\u2061-\\frac{\u03d5_{i}^{2}}{2\\sigma^{2}}$ . Note that there is no closed form for the integral in the log-likelihood function. Therefore, we use Monte Carlo integration to evaluate the log-likelihood function. Let $\u03d5_{ij}=\\sigma\u03be_{ij}$ , where the $\u03be_{ij}$ are independently and identically distributed random variables following a standard normal distribution. We have\n\n$$\nl\\beta,\\sigmaY\u2248l`\\beta,\\sigmaY=\\sumi=1Glog\u2061\\sumj=1Mexp\u2061-\\lambda_{ij}\\lambda_{ij}^{Y_{i}}+C,\n$$\n\nwhere $\\lambda_{ij}=2Nm_{i}exp\u2061(\\beta+\\sigma\u03be_{ij})$ , and $M$ is the Monte Carlo sample size which is set to be 1,000. Then, we could obtain the MLE of $\\beta,\\sigma$ through maximization of $l^{\u2032}(\\beta,\\sigma|Y)$. We obtain the standard error of the MLE through inversion of the observed Fisher information matrix. However, when the DNM count is small, the Fisher information may be non-invertible and the parameter vector is not numerically identifiable. In this case, we employ group-wise jackknife using 100 randomly partitioned gene groups to obtain standard errors for parameter estimates. This approach produces consistent standard errors compared to the Fisher information approach (Figure 5\u2014figure supplement 9).\n\nThe estimation procedure can be generalized to multi-trait analysis. Log-likelihood function can be expressed as follows:\n\n$$\nl\\beta_{1},\\beta_{2},\\sigma_{1},\\sigma_{2},\u03c1Y_{1},Y_{2}=\\sumi=1Glog\u2061\\intexp\u2061(-\\lambda_{i1}-\\lambda_{i2})\\lambda_{i1}^{Y_{i1}}\\lambda_{i2}^{Y_{i2}}*f\u03d5_{i1},\u03d5_{i2}d\u03d5_{i1}d\u03d5_{i2}+C,\n$$\n\nwhere $Y_{1}=Y_{11},\u2026,Y_{G1}^{T}$ , $Y_{2}=Y_{12},\u2026,Y_{G2}^{T}$ , $\\lambda_{i1}=2N_{1}m_{i}exp\u2061(\\beta_{1}+\u03d5_{i1})$ , $\\lambda_{i2}=2N_{2}m_{i}exp\u2061(\\beta_{2}+\u03d5_{i2})$ , $C=-\\sumi=1Glog\u2061Y_{i1}!+log\u2061Y_{i2}!$ , and $f\u03d5_{i1},\u03d5_{i2}=\\frac{1}{2\\pi\\sigma_{1}\\sigma_{2}\\sqrt{1-\u03c1^{2}}}exp\u2061-\\frac{1}{2\\sqrt{1-\u03c1^{2}}}\\frac{\u03d5_{i1}^{2}}{\\sigma_{1}^{2}}+\\frac{\u03d5_{i2}^{2}}{\\sigma_{2}^{2}}-\\frac{2\u03c1\u03d5_{i1}\u03d5_{i2}}{\\sigma_{1}\\sigma_{2}}$ . We use Monte Carlo integration to evaluate the log-likelihood function. Let $\u03d5_{i1j}=\\sigma_{1}\u03be_{i1j}$ and $\u03d5_{i2j}=\\sigma_{2}\u03c1\u03be_{i1j}+\\sqrt{1-\u03c1^{2}}\u03be_{i2j}$ , where the $\u03be_{i1j}$ and $\u03be_{i2j}$ are independently and identically distributed random variables following a standard normal distribution. We have\n\n$$\nl\\beta_{1},\\beta_{2},\\sigma_{1},\\sigma_{2},\u03c1Y_{1},Y_{2}\u2248l`\\beta_{1},\\beta_{2},\\sigma_{1},\\sigma_{2},\u03c1Y_{1},Y_{2}=\\sumi=1Glog\u2061\\sumj=1Mexp\u2061-\\lambda_{i1j}-\\lambda_{i2j}\\lambda_{i1j}^{Y_{i1}}\\lambda_{i2j}^{Y_{i2}}+C,\n$$\n\nwhere $\\lambda_{i1j}=2N_{1}m_{i}exp\u2061(\\beta_{1}+\\sigma_{1}\u03be_{i1j})$ and $\\lambda_{i2j}=2N_{2}m_{i}exp\u2061\\beta_{2}+\\sigma_{2}\u03c1\u03be_{i1j}+\\sqrt{1-\u03c1^{2}}\u03be_{i2j}$ . Then, we obtain the MLE of $\\beta_{1},\\beta_{2},\\sigma_{1},\\sigma_{2},\u03c1$ through maximization of $l`\\beta_{1},\\beta_{2},\\sigma_{1},\\sigma_{2},\u03c1Y_{1},Y_{2}$ . Standard error of MLE can be obtained either through inversion of the observed Fisher information matrix or group-wise jackknife if non-invertibility issue occurs.\n\n### Computation time\n\nAnalysis of a typical pair of disorders with 18,000 genes takes about 10 min on a 2.5 GHz cluster with 1 core.\n\n### DNM data and variant annotation\n\nWe obtained DNM data from published studies (Supplementary file 1-STable 1). DNM data for epileptic encephalopathies from the original release (Allen et al., 2013) were not in an editable format and were instead collected from denovo-db (Turner et al., 2017). We used ANNOVAR (Wang et al., 2010) to annotate all DNMs. Synonymous variants were determined based on the \u2018synonymous SNV\u2019 annotation in ANNOVAR; Variants with \u2018startloss\u2019, \u2018stopgain\u2019, \u2018stoploss\u2019, \u2018splicing\u2019, \u2018frameshift insertion\u2019, \u2018frameshift deletion\u2019, or \u2018frameshift substitution\u2019 annotations were classified as LoF; Dmis variants were defined as nonsynonymous SNVs predicted to be deleterious by MetaSVM Dong et al., 2015; nonsynonymous SNVs predicted to be tolerable by MetaSVM were classified as Tmis. Other DNMs which did not fall into these categories were removed from the analysis. For each variant class, we estimated the mutability of each gene using a sequence-based mutation model (Samocha et al., 2014) while adjusting for the sequencing coverage factor based on control trios as previously described (Jin et al., 2017; Supplementary file 1-STable 20). We included 18,454 autosomal protein-coding genes in our analysis. TTN was removed due to its substantially larger size.\n\n### Description and implementation of mTADA\n\nThe method mTADA employs a Bayesian framework and estimates the proportion of shared risk genes. Specifically, mTADA assigns all genes into four groups: genes that are not relevant for either disorder, risk genes for the first disorder alone, risk genes for the second disorder alone, and risk genes shared by both disorders. The proportion of these groups are parametrized as $\\pi_{0},\\pi_{1},\\pi_{2},\\pi_{3}$ , respectively. In particular, parameter $\\pi_{3}$ quantifies the extent of genetic sharing between two disorders, with a larger value indicating stronger genetic overlap (Nguyen et al., 2020). The 95% credible interval constructed through MCMC is used to measure the uncertainty in $\\pi_{3}$ estimates.\n\nThe software mTADA requires the following parameters as inputs: proportion of risk genes ($\\pi_{1}^{S},\\pi_{2}^{S}$), mean relative risks ($\\gamma-_{1}^{S},\\gamma-_{2}^{S}$), and dispersion parameters ($\\beta-_{1}^{S},\\beta-_{2}^{S}$) for both disorders. We used extTADA (Nguyen et al., 2017 )to estimate these parameters as suggested by the mTADA paper (Nguyen et al., 2020). mTADA reported the estimated proportion of shared risk genes $\\pi_{3}$ (posterior mode of $\\pi_{3}$) and its corresponding 95% credible interval $[LB, UB]$. We considered $\\pi_{1}^{S}*\\pi_{2}^{S}$ as the expected proportion of shared risk genes, and there is significant genetic sharing between two disorders when $LB>\\pi_{1}^{S}\u2217\\pi_{2}^{S}$ . We quantify statistical evidence for genetic sharing by comparing the posterior distribution of $\\pi_{3}$ with $\\pi_{1}^{S}*\\pi_{2}^{S}$ ,\n\n$$\np=2\u2217\\frac{\\sumi=1N_{MCMC}I(\\pi_{3}^{i}<\\pi_{1}^{S}\u2217\\pi_{2}^{S})}{N_{MCMC}},\n$$\n\nwhere $\\pi_{3}^{i}$ is the i-th MCMC iteration sample, $N_{MCMC}$ is the number of iterations, and $I()$ is the indicator function. This is also equivalent to performing two-sided inference using posterior probability P $(\\pi_{3}>\\pi_{1}^{S}\u2217\\pi_{2}^{S})$ . Number of MCMC chain was set as 2 and number of iterations was set as 10,000.\n\n### Simulation settings\n\nWe assessed the performance of EncoreDNM under the mixed-effects Poisson model. We performed simulations for two variant classes: Tmis and LoF variants, which have the largest and the smallest median mutability values across all genes. First, we performed single-trait simulations to assess estimation precision of elevation parameter $\\beta$ and dispersion parameter $\\sigma$. We set the true values of $\\beta$ to be \u22120.5,\u20130.25, and 0, and the true values of $\\sigma$ to be 0.5, 0.75, and 1. These values were chosen based on the estimated parameters in real DNM data analyses and ensured simulation settings to be realistic. Next, we performed simulations for cross-trait analysis to assess estimation precision of enrichment correlation $\u03c1$, whose true values were set to be 0, 0.2, 0.4, 0.6, and 0.8. Sample size for each disorder was set to be 5000. Coverage rate was calculated as the percentage of simulations that the 95% Wald confidence interval covered the true parameter value. Each parameter setting was repeated 100 times.\n\nWe also carried out simulations to compare the performance of EncoreDNM and mTADA. False positive rate and statistical power for EncoreDNM were calculated as the proportion of simulation repeats that p-value for enrichment correlation $\u03c1$ was smaller than 0.05. and the proportion of simulation repeats that p-value for estimated proportion of shared risk genes $\\pi_{3}$ was smaller than 0.05 was used for mTADA. We aggregated all variant classes together, so mutability for each gene was determined as the sum of mutabilities across four variant classes (i.e. LoF, Dmis, Tmis, and synonymous).\n\nFirst, we simulated DNM data under the mixed-effects Poisson model. To see whether two methods would produce false positive findings, we performed simulations under the null hypothesis that the enrichment correlation $\u03c1$ is zero. We compared two methods under a range of parameter combinations of ($\\beta,\\sigma,N$) for both disorders: (\u20130.25, 0.75, 5000) for the baseline setting, (\u20131, 0.75, 5000) for a setting with small $\\beta$, (\u20130.25, 0.5, 5000) for a setting with small $\\sigma$, and (\u20130.25, 0.75, 1000) for a setting with small sample size. We also assessed the statistical power of two methods under the alternative hypothesis. True value of enrichment correlation $\u03c1$ was set to be 0.05, 0.1, 0.15, and 0.2. In the power analysis, parameters ($\\beta,\\sigma,N$) were fixed at (\u20130.25, 0.75, 5000) as in the baseline setting when both methods had well-controlled false positive rate.\n\nTo ensure a fair comparison, we also compared EncoreDNM and mTADA under a multinomial model, which is different from the data generation processes for the two approaches. For each disorder ($k=1,2$), we randomly selected causal genes of proportion $\\pi_{k}^{S}$ . A proportion (i.e. $\\pi_{3}$) of causal genes overlap between two disorders. We assumed that the total DNM count to follow a Poisson distribution: $C_{k}~Poisson(u_{k}*2N_{k}\\sumi=1Gm_{i})$, where $u_{k}$ represents an elevation factor to represent systematic bias in the data. Let $Y_{k}$ denote the vector of DNMs counts in the exome, $m$ denote the vector of mutability values for all genes, and $m_{causal, k}$ denote the vector of mutability with values set to be 0 for non-causal genes of disorder $k$. We assumed that a proportion $p_{k}$ of the probands could be attributed to DNMs burden in causal genes, and $1-p_{k}$ of the probands obtained DNMs by chance:\n\n$$\nY_{k}=Y_{causal,k}+Y_{background,k},\n$$\n\n\n\n$$\nY_{causal,k} ~ Multinomialp_{k}C_{k}, m_{causal, k},\n$$\n\n\n\n$$\nY_{background,k} ~ Multinomial1-p_{k}C_{k},m.\n$$\n\nTo check whether false positive findings could arise, we performed simulations under the null hypothesis that $\\pi_{3}=\\pi_{1}^{S}*\\pi_{2}^{S}$ across a range of parameter combinations of ($u,p,N$) for both disorders: (0.95, 0.25, 5000) for the baseline setting, (0.75, 0.25, 5000) for a setting with small $u$ (i.e., reduced total mutation count), (0.95, 0.15, 5000) for a setting with small $p$ (fewer probands explained by DNMs), and (0.95, 0.25, 1000) for a setting with smaller sample size. $\\pi_{1}^{S}$ and $\\pi_{2}^{S}$ were set as 0.1. We also assessed the statistical power of two methods under the alternative hypothesis that $\\pi_{3}>\\pi_{1}^{S}\u2217\\pi_{2}^{S}$ . In power analysis, ($u,p,N$) were fixed at (0.95, 0.25, 5000) as in the baseline setting when false positive rate for both methods were well-calibrated.\n\n### Comparison to the fixed-effects Poisson model\n\nFor single-trait analysis, the fixed-effects Poisson model assumes that\n\n$$\nY_{i}\u223cPoisson(\\lambda_{i}),\n$$\n\n\n\n$$\nlog\u2061(\\lambda_{i})=\\beta+log\u2061(2Nm_{i}),\u00a0\u00a0for\u00a0i=1,\u2026,G.\n$$\n\nNote that the fixed-effects Poisson model is a special case of our proposed mixed-effects Poisson model when $\\sigma=0$. We compared the two models using likelihood ratio test. Under the null hypothesis that $\\sigma=0$, $2l_{alt}-l_{null}\u223c\\frac{1}{2}\u03c7_{1}^{2}$ asymptotically, where $l_{alt}$ and $l_{null}$ represent the log likelihood of the fitted mixed-effects and fixed-effects Poisson models respectively.\n\n### Recurrent genes and DNMs\n\nWe used FUMA (Watanabe et al., 2017) to perform GO enrichment analysis for genes harboring LoF DNMs in multiple disorders. Due to potential sample overlap between the studies of developmental disorder (Kaplanis et al., 2020) and intellectual disability (Lelieveld et al., 2016), we excluded intellectual disability from the analysis of recurrent DNMs. We calculated the probability of observing two identical DNMs in two disorders using a Monte Carlo simulation method. For each disorder, we simulated exome-wide DNMs profile from a multinomial distribution, where the size was fixed at the observed DNM count and the per-base mutation probability was determined by the tri-nucleotide base context. We repeated the simulation procedure 100,000 times to evaluate the significance of recurrent DNMs. Lollipop plots for recurrent mutations were generated using MutationMapper on the cBio Cancer Genomics Portal (Cerami et al., 2012).\n\n### Implementation of cross-trait LD score regression\n\nWe used cross-trait LDSC (Bulik-Sullivan et al., 2015) to estimate genetic correlations between disorders. LD scores were computed using European samples from the 1000 Genomes Project Phase 3 data (Auton et al., 2015). Only HapMap 3 SNPs were used as observations in the explanatory variable with the --merge-alleles flag. Intercepts were not constrained in the analyses.\n\n### Estimating enrichment correlation in gene sets\n\nGenes with a high/low probability of intolerance to LoF variants (high-pLI/low-pLI) were defined as the 4,614 genes in the upper/lower quartiles of pLI scores (Karczewski et al., 2020). Genes with high/low brain expression (HBE/LBE) were defined as the 4,614 genes in the upper/lower quartiles of expression in the human fetal brain (Werling et al., 2020). Genes with high/low heart expression (HHE/LHE) were defined as the 4,614 genes in the upper/lower quartiles of expression in the developing heart of embryonic mouse (Zaidi et al., 2013). Five biological pathways have been reported to be involved in congenital heart disease: chromatin remodeling, Notch signaling, cilia function, sarcomere structure and function, and RAS signaling (Zaidi and Brueckner, 2017). We extracted 1730 unique genes that belong to these five pathways from the gene ontology database (Ashburner et al., 2000) and referred to the union set as CHD-related genes. We repeated EncoreDNM enrichment correlation analysis in these gene sets. One-sided Kolmogorov-Smirnov test was used to assess the statistical difference between enrichment correlation signal strength in different gene sets.\n\n### URLs\n\nGWAS summary statistics data of autism spectrum disorder, schizophrenia, and Tourette disorder were downloaded on the PGC website, https://www.med.unc.edu/pgc/download-results/; Summary statistics of cognitive performance were downloaded on the SSGAC website, https://thessgac.com/; Summary statistics of epilepsy were downloaded on the epiGAD website, https://www.epigad.org/; pLI scores were downloaded from gnomAD v3.1 repository https://gnomad.broadinstitute.org/downloads; mTADA, https://github.com/hoangtn/mTADA, Nguyen et al., 2021; denovo-db, https://denovo-db.gs.washington.edu/denovo-db/; MutationMapper on cBioPortal, https://www.cbioportal.org/mutation_mapper; LDSC, https://github.com/bulik/ldsc; Schorsch, 2020.\n\n### Code availability\n\nEncoreDNM software is available at https://github.com/ghm17/EncoreDNM; Guo, 2022.\n",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "faccf154-641f-467e-a3ca-a62e33f41f9b",
+      "submission_id": "46f671b6-bbc2-4bc0-b0ad-c768dc196484",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alexander Young, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75551.sa0](https://doi.org/10.7554/eLife.75551.sa0)\n\nLu et al. provide a powerful statistical method that measures excess sharing of de novo mutations between pairs of disorders. This method extends the concept of 'genetic correlation' to disorders caused by de-novo mutations, measuring the correlation in excess de-novo mutations in genome-wide genes for different classes of mutations. The authors apply the method to nine disorders including a developmental disorder, autism spectrum disorder, congenital heart disease, schizophrenia, and intellectual disability, finding a statistically significant overlap between 12 pairs of disorders in de novo mutations that cause a loss of gene function. This method will be of interest to researchers working on disorders caused by de-novo mutations.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Alexander Young, https://ror.org/046rm7j60 University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75551.sa1](https://doi.org/10.7554/eLife.75551.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Quantifying concordant genetic effects of de novo mutations on multiple disorders\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Molly Przeworski as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The manuscript needs to explain better the different approaches taken by encoreDNM and mTADA, and the corresponding strengths and weaknesses. The authors focus on power in frequentist hypothesis testing for non-zero genetic overlap between disorders, but mTADA takes a Bayesian approach. Clarification is needed here on whether the statistical basis of the comparison is fair.\n\n2) Greater clarification of the model fitting procedure is needed: how the de-novo mutability parameter is used and the computational complexity of optimizing the likelihood function.\n\n3) The heatmaps that present the results of the empirical analysis show only statistical significance levels. Since the authors' method's primary parameter is the correlation parameter, it would be helpful to display estimates of this parameter in the main text and to focus discussion on that parameter more and on statistical significance less.\n\nReviewer #1 (Recommendations for the authors):\n\nHere, I have the following comments.\n\n1. Authors proposed a mixed-effect Poisson model with overdispersion. I have a few questions regarding this model. First, it is not clear whether the de novo mutability m_i is a parameter or a given estimation in the model. Authors mentioned on line 110 that the background component is a gene-specific fixed effect but in the Methods they do not treat it as a parameter in the section of parameter estimation. Second, to treat overdispersion in Poisson model, negative binomial distribution is usually applied. Here, authors added an overdispersion variable \\phi_i in the model. It will be helpful to discuss on this point. Third, a MCMC algorithm was used to solve the EncoreDNM model. How is the computational efficiency? On line 431, authors used the inversion of Fisher information matrix to obtain the covariance for parameters. Is there any non-invertibility problem here?\n\n2. In the data analysis, authors used Figure 4c-f to suggest better fit of mixed-effect model. It is better to use a table to summarize the goodness of fit test instead of using bar plots in Supplementary Figure 3. On line 197, before reading the whole paragraph, it is not clear at the beginning whether single-trait analysis refers to mixed-effect or fixed-effect. Next, authors discovered that no significant correlation as identified between any disorders and control groups. Discussions about this should be helpful.\n\n3. In Figure 5, panel b and c can be simplified with upper triangle for LoF and lower triangle for synoymous. Moreover, the heatmaps here only reflect the significance of correlations but no information regarding the correlation magnitude itself. It would be helpful to include this in the same figure. This point could be applied to other heatmaps in the supplement. In addition, Figure 5b shows more significant correlations for diseases with larger sample sizes. This is consistent with common sense. So including correlation magnitudes in this figure would be more informative.\n\nReviewer #2 (Recommendations for the authors):\n\n1. I felt the introduction and discussion lacked a more in-depth comparison between EncoreDNM and other similar methods (specifically mTADA). In particular, what are the differences in parameters between these two methods and why do you see such an increase in false positives (Figure 3) for mTADA over EncoreDNM?\n\n2. L66: The technical wording of this statement could be improved. The paper cited was commenting on remaining haplo-insufficient genes yet to be discovered. I also do not believe \"undetected\" to be the correct word here as this refers to a statistical test for enrichment rather than a clinical association. There are several genes (e.g. in Kaplanis et al. Supp Table 2) that are known to cause developmental disorders clinically but do not pass p. value thresholds suggesting a statistical enrichment in studies like DDD.\n\n3. In Figure 1, is there a vertical line missing? On the left, there are squares representing genes, but there is also one rectangle.\n\n4. L103-117: Could the derivation of the dispersion parameter \u03a6 be explained in better lay-terms somewhere? I understand that it is attempting to quantify the random nature of DNM counts one expects when sequencing a subset of individuals with a given disorder, but the maths in the methods section is a bit impenetrable for somebody who is not well-versed in calculus. This is especially crucial considering the major role it plays in interpreting the various results presented, and in comparison, to mTADA. It will be difficult for some readers of a journal with a broad range of topics such as eLife to understand how this parameter, particularly \u03c3, was estimated.\n\n5. L108: Further to point 4, what are reasonable values of the parameters used to fit your model? Additionally, the authors state that \u03b2 \"tends to be larger\u2026 and smaller\u2026\" under various conditions, but based on Figure 3, it appears that it shifts between positive and negative?\n\n6. L151: The word \"could estimate\" is loaded and represents an opinion and should be removed in favour of \"estimates\".\n\n7. L184-187: The excessive use of acronyms for various disorders makes for difficult reading. While I am familiar with acronyms for developmental disorders, autism spectrum, and schizophrenia because these are my field, I constantly had to refer back to the definitions is it possible to just use the actual disorder names throughout the manuscript where possible?\n\n8. Figure 3: I think it is relevant to put the various simulated parameters that constitute \u03a6 (e.g. \u03c3, \u03c1) into context with actual data as presented in Figure 4. i.e. do the simulated parameters used here represent reasonable assumptions of these values and are they within the expectations of mTADA? Could the range of parameters have an outsized effect on the differences between mTADA and EncoreDNM? Or does it have to do with p. value thresholding (see below). Furthermore, I would appreciate it if x-axis labels included the actual parameter setting rather than the less descriptive \"small\" and plots A and C had labels which described which parameters were fixed in those respective analyses.\n\n9. L246: \"i.e.\" should be removed. There are five genes and you listed all five.\n\n10. L267-272: Are the authors certain the thresholding on the mTADA results is reasonable? Whilst the FDR cutoff the authors have applied may suggest \"significance\", the p. values for the mTADA synonymous variant analysis seem very similar across all disorder combinations. Furthermore, the general pattern of p. values for LoFs seems similar to that shown for EncoreDNM. I suspect that the correlation between p. values of EncoreDNM and mTADA will be high and one could generate similar results by adjusting significance thresholds independently for each tool.\n\nAdditionally, as mTADA is based on a Bayesian approach, shouldn't the authors threshold based on posterior probabilities rather than p. values? I am unsure if comparing the \u03c0 values from the different mTADA results is a valid approach as described in the methods? How do the authors conclusions change when using thresholds based on those the authors of mTADA suggest (e.g. PP > 0.8)?\n\n11. Figure 6: Could a visual cue/text be added to differentiate between the analyses in the upper and lower triangles?\n\n12. What is the overall rank of genes identified between different disorders when comparing between mTADA and EncoreDNM? Could the authors plot relative p/PP values for genes identified to be significantly enriched between disorders?\n\n13. L228-229: Do not use the terms \"hints at correlation\" or \"correlate strongly\". It either does or does not meet your p. value threshold and/or correlate.\n\n14. L257-260: Are the recurrent LoF mutations found in developmental disorders any different than those already identified by Kaplanis et al.? If so, how do your results increase understanding of the mechanisms underlying developmental disorders? I would perhaps shift the focus of this section to identifying recurrent mutations across disorders (and perhaps cite/refer to Rees et al. in Nature Communications; PMID: 34504065).\n\n15. L274-280: I do not feel the LD score analysis constitutes a new analysis and should be moved to the discussion. A similar result was recently published in by Abdellaoui and Verweij in Nature Human Behaviour (PMID: 33986517) that covers many of these traits.\n\n16. Throughout: Could the term \"Type I Error\" be avoided? I would prefer false-discovery/false-positive be used as it is a much clearer term and immediately recognisable by the majority of readers.\n\n17. L365-366: I do not think identifying gene-disease associations is a goal of EncoreDNM so I do not consider it a limitation of the study.\n\n18. L584: I think the hyperlink is broken? I was able to find the repository for EncoreDNM in ghm17's github account, so this was not a major issue.\n",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d81c1add-ebd6-489e-a77a-52141fb43098",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C1",
+      "claim": "Exome sequencing on tens of thousands of parent-proband trios has identified numerous deleterious de novo mutations (DNMs) and implicated risk genes for many disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Exome sequencing on tens of thousands of parent-proband trios has identified numerous deleterious de novo mutations (DNMs) and implicated risk genes for many disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature on DNM studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "c626e9bd-a6c0-4930-87d5-e78c4d81f7b7",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C2",
+      "claim": "Recent studies have suggested shared genes and pathways are enriched for DNMs across multiple disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have suggested shared genes and pathways are enriched for DNMs across multiple disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to recent literature on shared genetic architecture.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "d06e5f0f-dad2-4e03-842c-54c7166c8a67",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C3",
+      "claim": "Existing analytic strategies only focus on genes that reach statistical significance for multiple disorders and require large trio samples in each study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, existing analytic strategies only focus on genes that reach statistical significance for multiple disorders and require large trio samples in each study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on characterization of current methodological approaches in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "34f0e1fd-622f-4dee-afac-18049786c1d3",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C4",
+      "claim": "Existing methods are not able to characterize the full landscape of genetic sharing due to polygenicity and incomplete penetrance.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, these methods are not able to characterize the full landscape of genetic sharing due to polygenicity and incomplete penetrance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about limitations of current methods based on biological complexity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "6cbcc182-3e48-48aa-81cb-a510e6b72dc1",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C5",
+      "claim": "EncoreDNM is a novel statistical framework to quantify shared genetic effects between two disorders characterized by concordant enrichment of DNMs in the exome.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we introduce EncoreDNM, a novel statistical framework to quantify shared genetic effects between two disorders characterized by concordant enrichment of DNMs in the exome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the method introduced in this manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "bc535dab-0f39-42ea-8e85-2418ae9783a3",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C6",
+      "claim": "EncoreDNM makes use of exome-wide, summary-level DNM data, including genes that do not reach statistical significance in single-disorder analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "EncoreDNM makes use of exome-wide, summary-level DNM data, including genes that do not reach statistical significance in single-disorder analysis, to evaluate the overall and annotation-partitioned genetic sharing between two disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the method's input data and approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "4e498942-107e-40e8-bcf7-cfb209b62492",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C7",
+      "claim": "Applying EncoreDNM to DNM data of nine disorders identified abundant pairwise enrichment correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying EncoreDNM to DNM data of nine disorders, we identified abundant pairwise enrichment correlations, especially in genes intolerant to pathogenic mutations and genes highly expressed in fetal tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from applying the method to real data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "40b2ad33-94d7-45ae-9339-594afb8a9586",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C8",
+      "claim": "Enrichment correlations are especially strong in genes intolerant to pathogenic mutations and genes highly expressed in fetal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying EncoreDNM to DNM data of nine disorders, we identified abundant pairwise enrichment correlations, especially in genes intolerant to pathogenic mutations and genes highly expressed in fetal tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific findings from the analysis of nine disorders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "1e53e79d-3472-4fba-8138-868b9f29c3fe",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C9",
+      "claim": "De novo mutations (DNMs) can be highly deleterious and provide important insights into the genetic cause for disease.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo mutations (DNMs) can be highly deleterious and provide important insights into the genetic cause for disease (Veltman and Brunner, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "da037daf-fbe9-4096-8c71-7721135dd4d6",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C10",
+      "claim": "Whole-exome sequencing (WES) studies conducted on tens of thousands of family trios have pinpointed numerous risk genes for a variety of disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "As the cost of sequencing continues to drop, whole-exome sequencing (WES) studies conducted on tens of thousands of family trios have pinpointed numerous risk genes for a variety of disorders (Lelieveld et al., 2016; Kaplanis et al., 2020; Satterstrom et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to large-scale WES studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "7ae24077-e8a9-4290-a17c-27e87ece1388",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C11",
+      "claim": "Risk genes enriched for pathogenic DNMs may be shared by multiple disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, accumulating evidence suggests that risk genes enriched for pathogenic DNMs may be shared by multiple disorders (Hoischen et al., 2014; Fromer et al., 2014; Homsy et al., 2015; Li et al., 2016; Nguyen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies showing shared genetic architecture.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "b55ec158-e9e0-4b4b-a373-24bde08199cd",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C12",
+      "claim": "Shared genes could reveal biological pathways that play prominent roles in disease etiology.",
+      "claim_type": "EXPLICIT",
+      "source": "These shared genes could reveal biological pathways that play prominent roles in disease etiology and shed light on clinically heterogeneous yet genetically related diseases (Homsy et al., 2015; Li et al., 2016; Nguyen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the biological significance of shared genes, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "11b97bab-87b6-48d8-ac67-ab0bc1cd8957",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C13",
+      "claim": "Most efforts to identify shared risk genes directly compare genes that are significantly associated with each disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Most efforts to identify shared risk genes directly compare genes that are significantly associated with each disorder (Nguyen et al., 2017; Willsey et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of current methodological approaches, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "c5c7dc67-3052-4932-8604-099adecbb511",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C14",
+      "claim": "There have been some successes in identifying shared genes and pathways (e.g. chromatin modifiers) underlying developmental disorder (DD), autism spectrum disorder (ASD), and congenital heart disease (CHD).",
+      "claim_type": "EXPLICIT",
+      "source": "There have been some successes with this approach in identifying shared genes and pathways (e.g. chromatin modifiers) underlying developmental disorder (DD), autism spectrum disorder (ASD), and congenital heart disease (CHD), thanks to the large trio samples in these studies (Kaplanis et al., 2020; Satterstrom et al., 2020; Jin et al., 2017), whereas findings in smaller studies remain suggestive (Allen et al., 2013; Jin et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to specific studies showing shared pathways.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "3f6745c2-4569-4403-bddc-255ea9d8c380",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C15",
+      "claim": "Statistical power remains moderate for risk genes with weaker effects even in the largest studies to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the largest studies to date, statistical power remains moderate for risk genes with weaker effects (Kaplanis et al., 2020; Howrigan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to large-scale studies discussing power limitations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "4760ef70-60aa-4160-8264-7816e5c7d776",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C16",
+      "claim": "More than 1000 haploinsufficient genes contributing to developmental disorder risk have not yet achieved statistical significance in large WES studies.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that more than 1000 haploinsufficient genes contributing to developmental disorder risk have not yet achieved statistical significance in large WES studies (Kaplanis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific estimate from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "5102dd5e-097b-43c6-9add-d5e6a1f94fb5",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C17",
+      "claim": "Analytic approaches that only account for top significant genes cannot capture the full landscape of genetic sharing in multiple disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, analytic approaches that only account for top significant genes cannot capture the full landscape of genetic sharing in multiple disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference based on the limitations of current methods and incomplete power.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "2556474c-5364-45d3-9bff-8d46f34f3758",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C18",
+      "claim": "mTADA is a Bayesian framework that was proposed to jointly analyze DNM data of two diseases and improve risk gene mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a Bayesian framework named mTADA was proposed to jointly analyze DNM data of two diseases and improve risk gene mapping (Nguyen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of an existing method, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "a266efac-3415-4d82-a522-e9f4295b5e09",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C19",
+      "claim": "The statistical property of mTADA's parameter estimates has not been studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mTADA produces estimates for the proportion of shared risk genes, the statistical property of these parameter estimates has not been studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about a gap in the characterization of an existing method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "c76a40df-002c-461c-84fe-dc2b18a96cec",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C20",
+      "claim": "There is a pressing need for powerful, robust, and interpretable methods that quantify concordant DNM association patterns for multiple disorders using exome-wide DNM counts.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a pressing need for powerful, robust, and interpretable methods that quantify concordant DNM association patterns for multiple disorders using exome-wide DNM counts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of the motivation for developing the new method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "68df4bf6-9e9a-44f5-b726-0eb8e108e28d",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C21",
+      "claim": "Linear mixed-effects models leverage genome-wide association profiles to quantify the correlation between additive genetic components of multiple complex traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling 'omnigenic' associations as independent random effects, linear mixed-effects models leverage genome-wide association profiles to quantify the correlation between additive genetic components of multiple complex traits (Lee et al., 2012; Bulik-Sullivan et al., 2015; Lu et al., 2017; Ning et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of existing GWAS methods, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "e1c86a9a-8fe5-4802-a3d7-5336b5b3be52",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C22",
+      "claim": "GWAS genetic correlation methods have identified ubiquitous genetic correlations across many human traits.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods have identified ubiquitous genetic correlations across many human traits and revealed significant and robust genetic correlations that could not be inferred from significant GWAS associations alone (Shi et al., 2017; Brainstorm, 2018; Guo et al., 2021; Zhang et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies demonstrating widespread genetic correlations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "373ed69a-5d41-4646-b5b3-d04ce8748a69",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C23",
+      "claim": "EncoreDNM uses a generalized linear mixed-effects model to quantify the occurrence of DNMs while accounting for de novo mutability of each gene and technical inconsistencies between studies.",
+      "claim_type": "EXPLICIT",
+      "source": "EncoreDNM uses a generalized linear mixed-effects model to quantify the occurrence of DNMs while accounting for de novo mutability of each gene and technical inconsistencies between studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the statistical model used in the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "86d98b1c-8091-41be-a139-43144ca87bd7",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C24",
+      "claim": "DNM counts in the exome deviate from the null when mutations play a role in disease etiology.",
+      "claim_type": "EXPLICIT",
+      "source": "DNM counts in the exome deviate from the null (i.e. expected counts based on de novo mutability) when mutations play a role in disease etiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conceptual statement about the biological basis of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "c37251f3-6479-4c56-8c7f-6ae43c4e0671",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C25",
+      "claim": "Disease risk genes will show enrichment for deleterious DNMs in probands.",
+      "claim_type": "EXPLICIT",
+      "source": "Disease risk genes will show enrichment for deleterious DNMs in probands and non-risk genes may be slightly depleted for DNM counts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Expected pattern based on biological understanding of disease genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "6375a1c9-d306-4ed2-b3f6-caefdc6cd7fa",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C26",
+      "claim": "Non-risk genes may be slightly depleted for DNM counts.",
+      "claim_type": "EXPLICIT",
+      "source": "Disease risk genes will show enrichment for deleterious DNMs in probands and non-risk genes may be slightly depleted for DNM counts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Expected pattern based on biological understanding and potential selection effects.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "8d25d624-a5bd-47fc-92e5-7b77c1b728a7",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C28",
+      "claim": "Batch effect caused by different sequencing and variant calling pipelines is an example of systematic bias in DNM counts.",
+      "claim_type": "EXPLICIT",
+      "source": "One example of such bias is the batch effect caused by different sequencing and variant calling pipelines in two studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific example of technical bias in sequencing studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "923926f5-76c2-4ba8-89fb-75e395eb561d",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C30",
+      "claim": "EncoreDNM provided unbiased estimation of parameters under various parameter settings in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Under various parameter settings, EncoreDNM always provided unbiased estimation of the parameters (Figure 2 and Figure 2\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results demonstrating unbiased parameter estimation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "35ed82e5-17f7-4aa5-a5cd-accc3368925f",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C31",
+      "claim": "The 95% Wald confidence intervals achieved coverage rates close to 95% under all simulation settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the 95% Wald confidence intervals achieved coverage rates close to 95% under all simulation settings, demonstrating the effectiveness of EncoreDNM to provide accurate statistical inference.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results showing proper calibration of confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "59f2ef29-2998-42b2-8d81-4ca103c412ae",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C32",
+      "claim": "EncoreDNM showed well-controlled false positive rate across all simulation settings.",
+      "claim_type": "EXPLICIT",
+      "source": "EncoreDNM showed well-controlled false positive rate across all simulation settings, whereas severe inflation of false positives arose for mTADA when the total mutation count, the proportion of probands that can be explained by DNMs, or the sample size were small (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results comparing false positive rates between methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "5f373427-c900-4d04-9e73-3a70b5523699",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C33",
+      "claim": "mTADA produced false positive findings when the observed DNM counts were relatively small.",
+      "claim_type": "EXPLICIT",
+      "source": "The false positive rates for our method were well-calibrated in all parameter settings, but mTADA produced false positive findings when the observed DNM counts were relatively small (e.g. due to reduced elevation or dispersion parameters or a lower sample size; Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results showing inflated false positives for mTADA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "6844f0f8-73e1-4f4c-afb4-0613984d9929",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C34",
+      "claim": "EncoreDNM achieved universally greater statistical power compared to mTADA as enrichment correlation increased.",
+      "claim_type": "EXPLICIT",
+      "source": "As enrichment correlation increased, EncoreDNM achieved universally greater statistical power compared to mTADA (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results comparing statistical power between methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "43da2c2d-d3fc-498b-850e-104fca0ec5f1",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C37",
+      "claim": "Negative elevation parameters for LoF variants may be explained by more stringent quality control in LoF variant calling.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be explained by more stringent quality control in LoF variant calling (Jin et al., 2017) and potential survival bias (Lek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of results supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "30e48a8a-8420-4d7b-9bfa-ab5f2849741a",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C38",
+      "claim": "Negative elevation parameters for LoF variants may be explained by potential survival bias.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be explained by more stringent quality control in LoF variant calling (Jin et al., 2017) and potential survival bias (Lek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of results supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "0ecd1df3-2d30-4176-9c15-7ba24e27ff31",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C39",
+      "claim": "There is a depletion of LoF DNMs in healthy control trios.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also consistent with a depletion of LoF DNMs in healthy control trios (Homsy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a study of control trios.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "24c60d3c-c04a-464e-ac8d-cc142b6fca25",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C42",
+      "claim": "The mixed-effects Poisson model showed substantial and statistically significant improvement in goodness of fit compared to a simpler fixed-effects model.",
+      "claim_type": "EXPLICIT",
+      "source": "The expected distribution of recurrent DNM counts showed substantial and statistically significant improvement under the mixed-effects Poisson model (Figure 4c\u2013f, Figure 4\u2014figure supplement 1, and Supplementary file 1-STable 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of model fit using real data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "3e714130-7ff2-4937-850d-297ceb430a1e",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C43",
+      "claim": "25 pairs of disorders showed significant enrichment correlations at a false discovery rate (FDR) cutoff of 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 25 pairs of disorders with significant correlations at a false discovery rate (FDR) cutoff of 0.05 (Figure 5 and Figure 5\u2014figure supplement 1), including 12 significant correlations for LoF variants, 7 for Dmis variants, 5 for Tmis variants, and only 1 significant correlation for synonymous variants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from pairwise correlation analysis of nine disorders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "31ffc00a-07da-43ce-9369-37ede39ef5c0",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C44",
+      "claim": "All significant enrichment correlations identified are positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all significant correlations are positive (Supplementary file 1-STable 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the direction of significant correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "472ede13-ea1a-45b5-9cc3-6a58f3c34e82",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C45",
+      "claim": "No significant correlation was identified between any disorder and healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant correlation was identified between any disorder and healthy controls (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from analysis comparing disorders to controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "bc149b72-6508-4691-8b6e-66cfe22e0b99",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C46",
+      "claim": "The number of identified significant correlations for each disorder was proportional to the sample size in each study (Spearman correlation = 0.70).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of identified significant correlations for each disorder was proportional to the sample size in each study (Spearman correlation = 0.70) with controls being a notable outlier (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis showing relationship between sample size and number of significant findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "4e793d75-855a-48fe-be78-9f027c7c1704",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C47",
+      "claim": "Highly concordant and significant LoF DNM enrichment was identified among developmental disorder, autism, intellectual disability, and congenital heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified highly concordant and significant LoF DNM enrichment among developmental disorder, autism, intellectual disability, and congenital heart disease, which is consistent with previous reports (Li et al., 2016; Nguyen et al., 2020; Nguyen et al., 2017; Hormozdiari et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from the analysis, supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "76e39bb5-3632-454a-ba6b-c22d5f55ccce",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C48",
+      "claim": "Schizophrenia shows highly significant LoF correlations with developmental disorder (p=2.0e-3) and intellectual disability (3.7e-5).",
+      "claim_type": "EXPLICIT",
+      "source": "Schizophrenia shows highly significant LoF correlations with developmental disorder (p=2.0e-3) and intellectual disability (3.7e-5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific statistical results from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "8ab3ffe1-7d23-43ca-baea-8a7f9fb640e2",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C51",
+      "claim": "A previous study suggested significant genetic sharing of intellectual disability and cerebral palsy by overlapping genes harboring rare damaging variants.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study also suggested significant genetic sharing of intellectual disability and cerebral palsy by overlapping genes harboring rare damaging variants (Jin et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "96560c5d-6098-4c04-a53e-e199701d0138",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C54",
+      "claim": "Five genes (CTNNB1, NBEA, POGZ, SPRED2, and KMT2C) had LoF DNMs in five different disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified five genes (CTNNB1, NBEA, POGZ, SPRED2, and KMT2C) with LoF DNMs in five different disorders and 21 genes had LoF DNMs in four disorders (Supplementary file 1-STable 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from analysis of genes with DNMs across multiple disorders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "1fa14898-c9ef-4adb-9f0e-7d51131ebc2f",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C55",
+      "claim": "21 genes had LoF DNMs in four disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified five genes (CTNNB1, NBEA, POGZ, SPRED2, and KMT2C) with LoF DNMs in five different disorders and 21 genes had LoF DNMs in four disorders (Supplementary file 1-STable 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from analysis of genes with DNMs across multiple disorders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "ebccdeea-3d49-4c68-959f-7a4e82a2c574",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C56",
+      "claim": "26 genes with LoF variants in at least four disorders were significantly enriched for 63 gene ontology (GO) terms with FDR <0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "These 26 genes with LoF variants in at least four disorders were significantly enriched for 63 gene ontology (GO) terms with FDR <0.05 (Supplementary file 1-STable 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from gene ontology enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "c74de4c8-0a5d-4faa-a00d-aa20fb8156f3",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C57",
+      "claim": "Chromatin organization (p=7.8e-11) was one of the most significantly enriched GO terms.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin organization (p=7.8e-11), nucleoplasm (p=2.8e-10), chromosome organization (p=6.8e-10), histone methyltransferase complex (p=1.4e-9), and positive regulation of gene expression (p=2.2e-9) were the most significantly enriched GO terms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from gene ontology enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "78b0ae1c-e1fe-4855-9820-0cb637446f23",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C61",
+      "claim": "CTNNB1 is a fundamental component of the canonical Wnt signaling pathway which is known to confer genetic risk for autism.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a fundamental component of the canonical Wnt signaling pathway which is known to confer genetic risk for autism (O'Roak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Biological knowledge about pathway function and disease association, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "75952801-ed70-4dc9-9c8e-277c1c32bfcf",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C62",
+      "claim": "30 recurrent cross-disorder LoF mutations were identified that were not recurrent in developmental disorder alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 30 recurrent cross-disorder LoF mutations that were not recurrent in developmental disorder alone (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from analysis of recurrent mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "6d753ca4-93a1-4f3a-af46-36a313271144",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C63",
+      "claim": "FBXO11 shows two recurrent p.Ser831fs LoF variants in autism and congenital hydrocephalus (p=1.9e-3).",
+      "claim_type": "EXPLICIT",
+      "source": "FBXO11, encoding the F-box only protein 31, shows two recurrent p.Ser831fs LoF variants in autism and congenital hydrocephalus (Figure 5\u2014figure supplement 5; p=1.9e-3; Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Specific finding about recurrent mutations with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "2f64ae84-d7eb-4929-baab-6241b2cede5d",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C64",
+      "claim": "FBXO11 encodes the F-box only protein 31.",
+      "claim_type": "EXPLICIT",
+      "source": "FBXO11, encoding the F-box only protein 31, shows two recurrent p.Ser831fs LoF variants in autism and congenital hydrocephalus (Figure 5\u2014figure supplement 5; p=1.9e-3; Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Biological fact about gene function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "e472c16b-0cf5-4748-bc00-0a16f827578c",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C65",
+      "claim": "The F-box protein constitutes a substrate-recognition component of the SCF (SKP1-cullin-F-box) complex, an E3-ubiquitin ligase complex responsible for ubiquitination and proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The F-box protein constitutes a substrate-recognition component of the SCF (SKP1-cullin-F-box) complex, an E3-ubiquitin ligase complex responsible for ubiquitination and proteasomal degradation (Cardozo and Pagano, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Biological knowledge about protein function, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "6b0decea-007d-4c67-852f-6e4a34bb34f6",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C66",
+      "claim": "DNMs in FBXO11 have been previously implicated in severe intellectual disability individuals with autistic behavior problem.",
+      "claim_type": "EXPLICIT",
+      "source": "DNMs in FBXO11 have been previously implicated in severe intellectual disability individuals with autistic behavior problem (Jansen et al., 2019) and neurodevelopmental disorder (Gregor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "e17a75e2-5100-4f29-a0a1-b310a2ba3ab5",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C67",
+      "claim": "DNMs in FBXO11 have been previously implicated in neurodevelopmental disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "DNMs in FBXO11 have been previously implicated in severe intellectual disability individuals with autistic behavior problem (Jansen et al., 2019) and neurodevelopmental disorder (Gregor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "946e50d6-dc85-4cce-a45b-66131a2cb9b8",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C68",
+      "claim": "mTADA identified 117 disorder pairs with significant genetic sharings at an FDR cutoff of 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, mTADA identified 117 disorder pairs with significant genetic sharings at an FDR cutoff of 0.05 (Supplementary file 1-STable 8 and Figure 5\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from applying mTADA to the same data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "5485b7c4-2754-43fd-9d93-045d4f51531a",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C69",
+      "claim": "mTADA identified significant synonymous DNM correlations for all 36 disorder pairs and between all disorders and healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we identified significant synonymous DNM correlations for all 36 disorder pairs and between all disorders and healthy controls (Figure 5\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from mTADA analysis showing unexpected findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "d8088242-958c-4697-8fb2-a4f78c0422ee",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C70",
+      "claim": "The mTADA results are consistent with the simulation results and suggest a substantially inflated false positive rate in mTADA.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the simulation results and suggest a substantially inflated false positive rate in mTADA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of mTADA results in light of simulation findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "7b94cc4a-9404-49b5-9d1b-750581756c5f",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C71",
+      "claim": "11 disorder pairs showed significant enrichment correlations for LoF DNMs in high-pLI genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 11 and 12 disorder pairs showing significant enrichment correlations for LoF DNMs in high-pLI genes and HBE genes, respectively (Figure 6a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from gene set-specific analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "f906b957-73d5-4bd3-9d44-8b459a0108f2",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C72",
+      "claim": "12 disorder pairs showed significant enrichment correlations for LoF DNMs in HBE genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 11 and 12 disorder pairs showing significant enrichment correlations for LoF DNMs in high-pLI genes and HBE genes, respectively (Figure 6a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from gene set-specific analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "444edfdc-7011-4365-b004-d042748a0a6f",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C73",
+      "claim": "High-pLI genes showed substantially stronger correlations across disorders than genes with low pLI (one-sided Kolmogorov-Smirnov test; p=2.3e-6).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, high-pLI genes showed substantially stronger correlations across disorders than genes with low pLI (one-sided Kolmogorov-Smirnov test; p=2.3e-6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of correlation strength between gene sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "1a21bfd4-252b-4240-96cc-df79d3ca0f95",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C74",
+      "claim": "Enrichment correlations were stronger in HBE genes than in LBE genes (p=8.8e-7).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, enrichment correlations were stronger in HBE genes than in LBE genes (p=8.8e-7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of correlation strength between gene sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "f730216f-167d-485d-9fb3-58615be7ce44",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C78",
+      "claim": "Novel enrichment correlations in HBE genes are consistent with known comorbidities between these disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "These novel enrichment correlations are consistent with known comorbidities between these disorders (Kielinen et al., 2004; Kilincaslan and Mukaddes, 2009) and findings based on significant risk genes (Li et al., 2016; Jin et al., 2020a; Kume et al., 1998; Cao and Wu, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of results supported by citations to epidemiological and genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "90ba09b1-cfa5-4a46-bcf7-557c87461009",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C79",
+      "claim": "9 significant enrichment correlations for LoF variants in HHE genes were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 9 significant enrichment correlations for LoF variants in HHE genes (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from gene set-specific analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "3b744cdb-9d97-4ba5-b79d-9cf5b2bede0e",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C80",
+      "claim": "Strength of enrichment correlations did not show a significant difference between HHE and LHE genes (p=0.846).",
+      "claim_type": "EXPLICIT",
+      "source": "Strength of enrichment correlations did not show a significant difference between HHE and LHE genes (p=0.846), possibly due to a lack of cardiac disorders in our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of correlation strength between gene sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "60a22a31-450a-4f30-aa10-568a2a9d24d7",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C83",
+      "claim": "Arrhythmia caused by congenital heart disease is a known risk factor for Tourette disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, arrhythmia caused by congenital heart disease is a known risk factor for Tourette disorder (Gulisano et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Clinical knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "771ba0b3-433c-4f8e-904a-f519aadb9e17",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C84",
+      "claim": "The mixed-effects Poisson regression model provides unbiased parameter estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Through extensive simulations and analyses of DNM data for nine disorders, we demonstrated that our proposed mixed-effects Poisson regression model provides unbiased parameter estimates, shows well-controlled false positive rate, and is robust to exome-wide technical biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of simulation and real data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "1c98a2dd-3aec-4762-a828-ebf9ed2f561d",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C85",
+      "claim": "The mixed-effects Poisson regression model shows well-controlled false positive rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Through extensive simulations and analyses of DNM data for nine disorders, we demonstrated that our proposed mixed-effects Poisson regression model provides unbiased parameter estimates, shows well-controlled false positive rate, and is robust to exome-wide technical biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of simulation and real data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "b103e406-1ea3-43ed-8578-46903d054c8b",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C86",
+      "claim": "The mixed-effects Poisson regression model is robust to exome-wide technical biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Through extensive simulations and analyses of DNM data for nine disorders, we demonstrated that our proposed mixed-effects Poisson regression model provides unbiased parameter estimates, shows well-controlled false positive rate, and is robust to exome-wide technical biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of simulation and real data analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "bf975189-1a21-4cd4-90df-86628a0f80b7",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C87",
+      "claim": "EncoreDNM achieves superior fit for real DNM datasets compared to simpler models.",
+      "claim_type": "EXPLICIT",
+      "source": "Leveraging exome-wide DNM counts and genomic context-based mutability data, EncoreDNM achieves superior fit for real DNM datasets compared to simpler models and provides statistically powerful and computationally efficient estimation of DNM enrichment correlation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from model comparison using real data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "84449de2-6d53-42a8-801c-c3a347429b03",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C88",
+      "claim": "EncoreDNM provides statistically powerful and computationally efficient estimation of DNM enrichment correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Leveraging exome-wide DNM counts and genomic context-based mutability data, EncoreDNM achieves superior fit for real DNM datasets compared to simpler models and provides statistically powerful and computationally efficient estimation of DNM enrichment correlation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of method performance characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "9df10558-7faa-4a9f-8fc1-0679d5e6b402",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C89",
+      "claim": "EncoreDNM can quantify concordant genetic effects for user-defined variant classes within pre-specified gene sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, EncoreDNM can quantify concordant genetic effects for user-defined variant classes within pre-specified gene sets, thus is suitable for exploring diverse types of hypotheses and can provide crucial biological insights into the shared genetic etiology in multiple disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of method capabilities demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "bad909e5-8867-46fc-b39d-e8de489b344c",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C90",
+      "claim": "The Bayesian approach implemented in mTADA can produce false positives findings, especially when the DNM count is low.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the Bayesian approach implemented in mTADA can produce false positives findings, especially when the DNM count is low, possibility due to the overestimated proportion of risk genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from simulation and real data comparison with mTADA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "9238197d-ff25-4c1e-b357-01e3bcb9dad6",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C91",
+      "claim": "Multi-trait analyses of GWAS data have revealed shared genetic architecture among many neuropsychiatric traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-trait analyses of GWAS data have revealed shared genetic architecture among many neuropsychiatric traits (Brainstorm, 2018; Lee et al., 2013; Gratten et al., 2014; Abdellaoui and Verweij, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to GWAS studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "2e1f093d-d632-4490-9cbe-14b05c3cc038",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C92",
+      "claim": "GWAS findings have led to the identification of pleiotropic variants, genes, and hub genomic regions underlying many traits.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings have led to the identification of pleiotropic variants, genes, and hub genomic regions underlying many traits and have revealed multiple psychopathological factors jointly affecting human neurological phenotypes (Lee, 2019; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to GWAS studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "fca635cd-7be8-4444-9566-9a906e405050",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C93",
+      "claim": "Emerging evidence suggests that causal DNMs underlying several disorders with well-powered studies may be shared.",
+      "claim_type": "EXPLICIT",
+      "source": "Although emerging evidence suggests that causal DNMs underlying several disorders with well-powered studies (e.g. congenital heart disease and neurodevelopmental disorders; Homsy et al., 2015) may be shared, our understanding of the extent and the mechanism underlying such sharing remains incomplete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a study showing shared DNMs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "61de0e58-cbfb-4283-82a5-776fdcf30b10",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C94",
+      "claim": "Our understanding of the extent and the mechanism underlying genetic sharing of DNMs remains incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "Although emerging evidence suggests that causal DNMs underlying several disorders with well-powered studies (e.g. congenital heart disease and neurodevelopmental disorders; Homsy et al., 2015) may be shared, our understanding of the extent and the mechanism underlying such sharing remains incomplete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "e9138d64-26d0-479d-87ce-216cb124b277",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C95",
+      "claim": "EncoreDNM identified pervasive enrichment correlations of DNMs when applied to DNM data for nine disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied to DNM data for nine disorders, EncoreDNM identified pervasive enrichment correlations of DNMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of results from applying the method to real data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "4b079455-3bf9-409c-a2e7-b0712e8f418f",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C96",
+      "claim": "Particularly strong correlations were observed in pathogenic variant classes (e.g. LoF and Dmis variants) and disease-relevant genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed particularly strong correlations in pathogenic variant classes (e.g. LoF and Dmis variants) and disease-relevant genes (e.g. genes with high pLI and genes highly expressed in relevant tissues).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of patterns observed in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "a97bc0cb-c0e5-46de-8ccb-687679534287",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C97",
+      "claim": "Genes underlying DNM correlations were significantly enriched in pathways involved in chromatin organization and modification and gene expression regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes underlying these correlations were significantly enriched in pathways involved in chromatin organization and modification and gene expression regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from gene ontology enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "52e76c72-5b2c-44e6-a21c-cafcbe112243",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C98",
+      "claim": "DNM correlations were substantially attenuated in genes with lower expression and genes with frequent occurrences of LoF variants in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNM correlations were substantially attenuated in genes with lower expression and genes with frequent occurrences of LoF variants in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of patterns observed in gene set-specific analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "b5213faa-cdc3-430b-9274-4d2c00b0232a",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C99",
+      "claim": "A similar attenuation of DNM correlations was observed in less pathogenic variant classes (e.g., synonymous variants).",
+      "claim_type": "EXPLICIT",
+      "source": "A similar attenuation was observed in less pathogenic variant classes (e.g., synonymous variants).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of patterns observed across variant classes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "69546556-9fbd-4fba-b977-03fa0aaa4c49",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C100",
+      "claim": "DNM enrichment correlations of five disorders were consistent with genetic correlations estimated from GWAS summary statistics (Spearman correlation = 0.70).",
+      "claim_type": "EXPLICIT",
+      "source": "We also compared DNM enrichment correlations of five disorders with genetic correlations estimated from GWAS summary statistics (Supplementary file 1-STable 18). We had consistent findings from GWAS and DNM data (Spearman correlation = 0.70; Figure 5\u2014figure supplement 8 and Supplementary file 1-STable 19).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from comparison of DNM and GWAS-based genetic correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "52daeb45-9a76-4af4-b864-d2986df09bb9",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C101",
+      "claim": "EncoreDNM assumes probands from different input studies to be independent.",
+      "claim_type": "EXPLICIT",
+      "source": "First, EncoreDNM assumes probands from different input studies to be independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of a model assumption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "bdc6eb6b-271f-42c0-8bea-ff3ceb45e6ea",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C102",
+      "claim": "When two studies have overlapping proband samples, enrichment correlation estimates may be inflated.",
+      "claim_type": "EXPLICIT",
+      "source": "In rare cases when two studies have overlapping proband samples, enrichment correlation estimates may be inflated and must be interpreted with caution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about the effect of violating the independence assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "597e18dd-4e2b-4295-b5a8-c4bcd5d3bb5c",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C103",
+      "claim": "Analysis of a typical pair of disorders with 18,000 genes takes about 10 min on a 2.5 GHz cluster with 1 core.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of a typical pair of disorders with 18,000 genes takes about 10 min on a 2.5 GHz cluster with 1 core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computational performance measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "bdb9661a-fb62-422d-9ec5-6b51e28b2c83",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C104",
+      "claim": "Synonymous variants were determined based on the 'synonymous SNV' annotation in ANNOVAR.",
+      "claim_type": "EXPLICIT",
+      "source": "Synonymous variants were determined based on the 'synonymous SNV' annotation in ANNOVAR; Variants with 'startloss', 'stopgain', 'stoploss', 'splicing', 'frameshift insertion', 'frameshift deletion', or 'frameshift substitution' annotations were classified as LoF; Dmis variants were defined as nonsynonymous SNVs predicted to be deleterious by MetaSVM Dong et al., 2015; nonsynonymous SNVs predicted to be tolerable by MetaSVM were classified as Tmis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of variant classification procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "d5573a4f-0ba2-4537-8bdc-48af2f59d7e6",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C105",
+      "claim": "18,454 autosomal protein-coding genes were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We included 18,454 autosomal protein-coding genes in our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the gene set used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "4dd5b3d3-8989-44a5-8d17-339337231e8d",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C106",
+      "claim": "TTN was removed from the analysis due to its substantially larger size.",
+      "claim_type": "EXPLICIT",
+      "source": "TTN was removed due to its substantially larger size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing decision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "fbb63294-53dd-4281-9d8e-a5619dcec2b3",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C107",
+      "claim": "Genes with high/low probability of intolerance to LoF variants were defined using pLI scores.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we defined genes with high/low probability of intolerance to LoF variants using pLI scores (Karczewski et al., 2020), and identified genes with high/low brain expression (HBE/LBE) (Werling et al., 2020; Materials and methods; Supplementary file 1-STable 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of gene set definition using published scores.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "e6a37269-564f-4899-a2d2-55d5a77e9e0f",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C108",
+      "claim": "Genes with a high/low probability of intolerance to LoF variants (high-pLI/low-pLI) were defined as the 4,614 genes in the upper/lower quartiles of pLI scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with a high/low probability of intolerance to LoF variants (high-pLI/low-pLI) were defined as the 4,614 genes in the upper/lower quartiles of pLI scores (Karczewski et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific definition of gene sets used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "ed0cbfe2-766b-44b2-9500-004ff28ac668",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C109",
+      "claim": "Genes with high/low brain expression (HBE/LBE) were defined as the 4,614 genes in the upper/lower quartiles of expression in the human fetal brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with high/low brain expression (HBE/LBE) were defined as the 4,614 genes in the upper/lower quartiles of expression in the human fetal brain (Werling et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific definition of gene sets used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "6bd8ee47-b82d-4fab-9b4e-3f5a9efa8fca",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C110",
+      "claim": "Genes with high/low heart expression (HHE/LHE) were defined as the 4,614 genes in the upper/lower quartiles of expression in the developing heart of embryonic mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with high/low heart expression (HHE/LHE) were defined as the 4,614 genes in the upper/lower quartiles of expression in the developing heart of embryonic mouse (Zaidi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific definition of gene sets used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "31af9939-73db-4c77-ad53-6cb1ee9fd0b7",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C111",
+      "claim": "Five biological pathways have been reported to be involved in congenital heart disease: chromatin remodeling, Notch signaling, cilia function, sarcomere structure and function, and RAS signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Five biological pathways have been reported to be involved in congenital heart disease: chromatin remodeling, Notch signaling, cilia function, sarcomere structure and function, and RAS signaling (Zaidi and Brueckner, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Biological knowledge about CHD pathways, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "f5e94c49-fa55-4e1e-89c9-2ef20b400fdb",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "claim_id": "C112",
+      "claim": "1730 unique genes belong to the five CHD-related pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We extracted 1730 unique genes that belong to these five pathways from the gene ontology database (Ashburner et al., 2000) and referred to the union set as CHD-related genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of gene set extraction from database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "823c18df-4616-4270-be2d-3d3a2a9aabe4",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established that exome sequencing of parent-proband trios has identified numerous deleterious de novo mutations (DNMs) and implicated risk genes for many disorders, with emerging evidence suggesting that risk genes enriched for pathogenic DNMs may be shared across multiple disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9, C10, and C11 are well-supported by multiple citations to established literature on DNM studies. Claims C2 and C12 provide context for shared genetic architecture across disorders, also supported by citations. These claims accurately represent the state of prior knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "f84292ac-3032-4927-a813-0367bb10194e",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Current methods for identifying shared risk genes have limitations: they focus only on genes reaching statistical significance in multiple disorders, require large sample sizes, and cannot capture the full landscape of genetic sharing due to polygenicity and incomplete penetrance, with over 1000 haploinsufficient genes estimated to contribute to developmental disorder risk without yet achieving statistical significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C13, and C14 accurately characterize current methodological approaches with appropriate citations. Claims C15 and C16 are supported by citations to large-scale studies. Claims C4 and C17 represent logical inferences about the limitations of current methods that follow from the evidence presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "71a10a54-561d-48fc-8628-502bf80ab999",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "EncoreDNM is a novel statistical framework that uses a generalized linear mixed-effects model to quantify shared genetic effects between two disorders by leveraging exome-wide, summary-level DNM data, including genes that do not reach statistical significance, while accounting for de novo mutability and technical inconsistencies between studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, and C23 clearly describe the method introduced in the manuscript. Claims C24-C26 and C28 provide the biological and technical rationale for the model design. The method description is clear and the conceptual framework is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "62e9e417-9ec2-4e08-9ae8-0c798fc54bf2",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Simulation studies demonstrate that EncoreDNM provides unbiased parameter estimates under various settings, achieves 95% confidence interval coverage rates close to the nominal level, shows well-controlled false positive rates, and is robust to exome-wide technical biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C31 are directly supported by simulation results shown in Figure 2 and supplementary figures. Claims C84-C86 summarize these findings. The simulation study appears comprehensive with multiple parameter settings tested, and the results demonstrate proper statistical calibration of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "4c0e636e-26af-467f-a0ab-461b257de5ac",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Comparative simulations show that EncoreDNM maintains well-controlled false positive rates across all settings and achieves greater statistical power than mTADA as enrichment correlation increases, while mTADA produces inflated false positives when DNM counts are small, including identifying significant synonymous DNM correlations for all disorder pairs and between all disorders and controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by simulation results in Figure 3. Claims C68-C70 show that when mTADA was applied to real data, it produced biologically implausible results (significant correlations for synonymous variants and with controls), consistent with the simulation findings. Claim C90 provides interpretation. The comparison is thorough and the evidence for mTADA's inflated false positive rate is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "f45693a6-2a5a-446b-a2a4-e1f339b0218f",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Analysis of real DNM data shows that the mixed-effects Poisson model achieves superior fit compared to simpler fixed-effects models, with negative elevation parameters for LoF variants explained by stringent quality control and potential survival bias, consistent with depletion of LoF DNMs in healthy control trios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is supported by statistical comparison shown in Figure 4 and referenced supplementary tables. Claims C37-C39 provide biologically plausible interpretations supported by citations. Claim C87 summarizes the model comparison results. The likelihood ratio tests provide strong statistical evidence for model improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "07dcd85e-d6bc-4031-b0bf-20491ecb6f7a",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Application of EncoreDNM to nine disorders identified 25 significant pairwise enrichment correlations at FDR < 0.05, all positive, with particularly strong correlations in pathogenic variant classes (LoF and Dmis) and disease-relevant genes, no significant correlations with healthy controls, and the number of significant correlations proportional to sample size (Spearman correlation = 0.70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 present specific quantitative results from the analysis shown in Figure 5. Claims C7, C8, C95, and C96 summarize the overall patterns. The results are internally consistent: positive correlations among disorders but not with controls, stronger effects for pathogenic variants, and sample size dependence all support the validity of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "d590f8a4-50d2-4664-a680-2b3473cbed4f",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Highly concordant and significant LoF DNM enrichment was identified among developmental disorder, autism, intellectual disability, and congenital heart disease, consistent with previous reports, and schizophrenia shows highly significant LoF correlations with developmental disorder (p=2.0e-3) and intellectual disability (p=3.7e-5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by the analysis results and citations to previous studies showing consistency. Claim C48 provides specific statistical results. The consistency with prior literature strengthens confidence in these findings, and the p-values indicate strong statistical evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "b73da2bd-5ee9-4124-94b8-95858ab518ba",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Five genes (CTNNB1, NBEA, POGZ, SPRED2, KMT2C) had LoF DNMs in five different disorders and 21 genes in four disorders; these 26 genes were significantly enriched for 63 GO terms (FDR < 0.05), with chromatin organization (p=7.8e-11) among the most significant, indicating that genes underlying DNM correlations are enriched in pathways involved in chromatin organization, modification, and gene expression regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 present specific results from gene-level and pathway enrichment analyses. Claim C97 summarizes the biological interpretation. The GO enrichment analysis provides mechanistic insights into shared genetic architecture. The statistical significance is strong and the biological interpretation is plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "6a9191c9-37f1-46dd-8868-a30fec395fd3",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CTNNB1, a fundamental component of the canonical Wnt signaling pathway known to confer genetic risk for autism, harbors LoF variants across multiple disorders; additionally, 30 recurrent cross-disorder LoF mutations were identified, including FBXO11 showing two recurrent p.Ser831fs LoF variants in autism and congenital hydrocephalus (p=1.9e-3), a gene previously implicated in intellectual disability and neurodevelopmental disorder.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 provide specific examples of genes with cross-disorder DNMs. The biological context (Wnt signaling, F-box protein function) is supported by citations. Claim C63 provides a specific statistical result for recurrent mutations. These examples illustrate the broader patterns identified in the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "091422d4-8d11-4a9b-966f-2faf5cf34a6a",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Gene set-specific analyses identified 11 and 12 disorder pairs with significant enrichment correlations for LoF DNMs in high-pLI and high brain expression (HBE) genes respectively; high-pLI genes showed substantially stronger correlations than low-pLI genes (p=2.3e-6), and HBE genes showed stronger correlations than low brain expression genes (p=8.8e-7), demonstrating that DNM correlations are substantially attenuated in genes with lower expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 present results from gene set-specific analyses shown in Figure 6. Claim C98 summarizes the pattern. The Kolmogorov-Smirnov tests provide statistical evidence for differential correlation strength between gene sets. The results are biologically plausible and strengthen the interpretation that shared genetic effects are concentrated in disease-relevant genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "cfca4237-96cf-496f-9fec-d7fa947934a2",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Novel enrichment correlations in HBE genes are consistent with known comorbidities; 9 significant correlations were identified for LoF variants in high heart expression (HHE) genes, though correlation strength did not differ significantly between HHE and low heart expression genes (p=0.846), possibly due to lack of cardiac disorders in the analysis; arrhythmia caused by congenital heart disease is a known risk factor for Tourette disorder.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78, C79, and C83 are supported by citations to epidemiological and clinical literature. Claim C80 presents a negative result with a plausible explanation. The consistency with known comorbidities provides external validation for the genetic correlation findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "66acfc4f-2458-4f15-8336-2289574bdb51",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A similar attenuation of DNM correlations was observed in less pathogenic variant classes (synonymous variants), and DNM enrichment correlations of five disorders were consistent with genetic correlations estimated from GWAS summary statistics (Spearman correlation = 0.70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 describes the pattern across variant classes, consistent with the expectation that pathogenic variants drive disease associations. Claim C100 provides external validation by comparing DNM-based correlations with GWAS-based genetic correlations, showing good agreement (Spearman correlation = 0.70). This cross-validation strengthens confidence in the DNM correlation estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "6c48409b-86fb-4a6f-8611-45db8a51d746",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "EncoreDNM provides statistically powerful and computationally efficient estimation of DNM enrichment correlation and can quantify concordant genetic effects for user-defined variant classes within pre-specified gene sets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is supported by the simulation results showing superior power compared to mTADA and the computational performance measurement (C103). Claim C89 is demonstrated by the gene set-specific analyses performed in the manuscript. The method's capabilities are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "0e77806a-1f2a-4ea8-84c9-a1382c3fe4a9",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The motivation for EncoreDNM draws from GWAS genetic correlation methods that have identified ubiquitous genetic correlations across traits, while mTADA, an existing Bayesian framework for joint DNM analysis, has not had its statistical properties fully characterized, and understanding of the extent and mechanism of DNM sharing across disorders remains incomplete.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 and C91-C92 accurately describe prior work on genetic correlation methods and their successes, supported by appropriate citations. Claims C19, C20, C93, and C94 identify gaps in current knowledge that motivate the development of EncoreDNM. This provides appropriate context for the new method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "cfd36975-b4af-46e1-8026-02a6b2d5eb9c",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "EncoreDNM assumes probands from different input studies are independent, and when two studies have overlapping samples, enrichment correlation estimates may be inflated and must be interpreted with caution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C101 states a model assumption. Claim C102 provides a logical inference about the consequences of violating this assumption. This is an appropriate limitation to acknowledge, though the manuscript does not provide empirical evaluation of the magnitude of inflation under sample overlap.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "c7dd1bd9-d486-4f85-a86c-f302f240e8d1",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Methodological details include computational efficiency (10 minutes per disorder pair with 18,000 genes), variant classification procedures using ANNOVAR and MetaSVM, inclusion of 18,454 autosomal protein-coding genes (excluding TTN), and definitions of gene sets based on pLI scores, brain expression, heart expression, and CHD-related pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C112 provide methodological details that are clearly described in the Materials and Methods section. These details are necessary for reproducibility and are appropriately documented. The gene set definitions are based on published resources with appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    },
+    {
+      "id": "4b0e0a22-41d8-47cb-a859-f587eb4a60ac",
+      "content_id": "10ec96c7-1e3e-4e50-aadb-4d2e58edb9a0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A previous study suggested significant genetic sharing of intellectual disability and cerebral palsy by overlapping genes harboring rare damaging variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by citation to a previous study. This provides context for interpreting the EncoreDNM results showing correlation between these disorders.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:27:40.828808Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d81c1add-ebd6-489e-a77a-52141fb43098",
+      "result_id": "823c18df-4616-4270-be2d-3d3a2a9aabe4"
+    },
+    {
+      "claim_id": "c626e9bd-a6c0-4930-87d5-e78c4d81f7b7",
+      "result_id": "823c18df-4616-4270-be2d-3d3a2a9aabe4"
+    },
+    {
+      "claim_id": "1e53e79d-3472-4fba-8138-868b9f29c3fe",
+      "result_id": "823c18df-4616-4270-be2d-3d3a2a9aabe4"
+    },
+    {
+      "claim_id": "da037daf-fbe9-4096-8c71-7721135dd4d6",
+      "result_id": "823c18df-4616-4270-be2d-3d3a2a9aabe4"
+    },
+    {
+      "claim_id": "7ae24077-e8a9-4290-a17c-27e87ece1388",
+      "result_id": "823c18df-4616-4270-be2d-3d3a2a9aabe4"
+    },
+    {
+      "claim_id": "b55ec158-e9e0-4b4b-a373-24bde08199cd",
+      "result_id": "823c18df-4616-4270-be2d-3d3a2a9aabe4"
+    },
+    {
+      "claim_id": "d06e5f0f-dad2-4e03-842c-54c7166c8a67",
+      "result_id": "f84292ac-3032-4927-a813-0367bb10194e"
+    },
+    {
+      "claim_id": "34f0e1fd-622f-4dee-afac-18049786c1d3",
+      "result_id": "f84292ac-3032-4927-a813-0367bb10194e"
+    },
+    {
+      "claim_id": "11b97bab-87b6-48d8-ac67-ab0bc1cd8957",
+      "result_id": "f84292ac-3032-4927-a813-0367bb10194e"
+    },
+    {
+      "claim_id": "c5c7dc67-3052-4932-8604-099adecbb511",
+      "result_id": "f84292ac-3032-4927-a813-0367bb10194e"
+    },
+    {
+      "claim_id": "3f6745c2-4569-4403-bddc-255ea9d8c380",
+      "result_id": "f84292ac-3032-4927-a813-0367bb10194e"
+    },
+    {
+      "claim_id": "4760ef70-60aa-4160-8264-7816e5c7d776",
+      "result_id": "f84292ac-3032-4927-a813-0367bb10194e"
+    },
+    {
+      "claim_id": "5102dd5e-097b-43c6-9add-d5e6a1f94fb5",
+      "result_id": "f84292ac-3032-4927-a813-0367bb10194e"
+    },
+    {
+      "claim_id": "6cbcc182-3e48-48aa-81cb-a510e6b72dc1",
+      "result_id": "71a10a54-561d-48fc-8628-502bf80ab999"
+    },
+    {
+      "claim_id": "bc535dab-0f39-42ea-8e85-2418ae9783a3",
+      "result_id": "71a10a54-561d-48fc-8628-502bf80ab999"
+    },
+    {
+      "claim_id": "373ed69a-5d41-4646-b5b3-d04ce8748a69",
+      "result_id": "71a10a54-561d-48fc-8628-502bf80ab999"
+    },
+    {
+      "claim_id": "86d98b1c-8091-41be-a139-43144ca87bd7",
+      "result_id": "71a10a54-561d-48fc-8628-502bf80ab999"
+    },
+    {
+      "claim_id": "c37251f3-6479-4c56-8c7f-6ae43c4e0671",
+      "result_id": "71a10a54-561d-48fc-8628-502bf80ab999"
+    },
+    {
+      "claim_id": "6375a1c9-d306-4ed2-b3f6-caefdc6cd7fa",
+      "result_id": "71a10a54-561d-48fc-8628-502bf80ab999"
+    },
+    {
+      "claim_id": "8d25d624-a5bd-47fc-92e5-7b77c1b728a7",
+      "result_id": "71a10a54-561d-48fc-8628-502bf80ab999"
+    },
+    {
+      "claim_id": "923926f5-76c2-4ba8-89fb-75e395eb561d",
+      "result_id": "62e9e417-9ec2-4e08-9ae8-0c798fc54bf2"
+    },
+    {
+      "claim_id": "35ed82e5-17f7-4aa5-a5cd-accc3368925f",
+      "result_id": "62e9e417-9ec2-4e08-9ae8-0c798fc54bf2"
+    },
+    {
+      "claim_id": "771ba0b3-433c-4f8e-904a-f519aadb9e17",
+      "result_id": "62e9e417-9ec2-4e08-9ae8-0c798fc54bf2"
+    },
+    {
+      "claim_id": "1c98a2dd-3aec-4762-a828-ebf9ed2f561d",
+      "result_id": "62e9e417-9ec2-4e08-9ae8-0c798fc54bf2"
+    },
+    {
+      "claim_id": "b103e406-1ea3-43ed-8578-46903d054c8b",
+      "result_id": "62e9e417-9ec2-4e08-9ae8-0c798fc54bf2"
+    },
+    {
+      "claim_id": "59f2ef29-2998-42b2-8d81-4ca103c412ae",
+      "result_id": "4c0e636e-26af-467f-a0ab-461b257de5ac"
+    },
+    {
+      "claim_id": "5f373427-c900-4d04-9e73-3a70b5523699",
+      "result_id": "4c0e636e-26af-467f-a0ab-461b257de5ac"
+    },
+    {
+      "claim_id": "6844f0f8-73e1-4f4c-afb4-0613984d9929",
+      "result_id": "4c0e636e-26af-467f-a0ab-461b257de5ac"
+    },
+    {
+      "claim_id": "946e50d6-dc85-4cce-a45b-66131a2cb9b8",
+      "result_id": "4c0e636e-26af-467f-a0ab-461b257de5ac"
+    },
+    {
+      "claim_id": "5485b7c4-2754-43fd-9d93-045d4f51531a",
+      "result_id": "4c0e636e-26af-467f-a0ab-461b257de5ac"
+    },
+    {
+      "claim_id": "d8088242-958c-4697-8fb2-a4f78c0422ee",
+      "result_id": "4c0e636e-26af-467f-a0ab-461b257de5ac"
+    },
+    {
+      "claim_id": "bad909e5-8867-46fc-b39d-e8de489b344c",
+      "result_id": "4c0e636e-26af-467f-a0ab-461b257de5ac"
+    },
+    {
+      "claim_id": "43da2c2d-d3fc-498b-850e-104fca0ec5f1",
+      "result_id": "f45693a6-2a5a-446b-a2a4-e1f339b0218f"
+    },
+    {
+      "claim_id": "30e48a8a-8420-4d7b-9bfa-ab5f2849741a",
+      "result_id": "f45693a6-2a5a-446b-a2a4-e1f339b0218f"
+    },
+    {
+      "claim_id": "0ecd1df3-2d30-4176-9c15-7ba24e27ff31",
+      "result_id": "f45693a6-2a5a-446b-a2a4-e1f339b0218f"
+    },
+    {
+      "claim_id": "24c60d3c-c04a-464e-ac8d-cc142b6fca25",
+      "result_id": "f45693a6-2a5a-446b-a2a4-e1f339b0218f"
+    },
+    {
+      "claim_id": "bf975189-1a21-4cd4-90df-86628a0f80b7",
+      "result_id": "f45693a6-2a5a-446b-a2a4-e1f339b0218f"
+    },
+    {
+      "claim_id": "4e498942-107e-40e8-bcf7-cfb209b62492",
+      "result_id": "07dcd85e-d6bc-4031-b0bf-20491ecb6f7a"
+    },
+    {
+      "claim_id": "40b2ad33-94d7-45ae-9339-594afb8a9586",
+      "result_id": "07dcd85e-d6bc-4031-b0bf-20491ecb6f7a"
+    },
+    {
+      "claim_id": "3e714130-7ff2-4937-850d-297ceb430a1e",
+      "result_id": "07dcd85e-d6bc-4031-b0bf-20491ecb6f7a"
+    },
+    {
+      "claim_id": "31ffc00a-07da-43ce-9369-37ede39ef5c0",
+      "result_id": "07dcd85e-d6bc-4031-b0bf-20491ecb6f7a"
+    },
+    {
+      "claim_id": "472ede13-ea1a-45b5-9cc3-6a58f3c34e82",
+      "result_id": "07dcd85e-d6bc-4031-b0bf-20491ecb6f7a"
+    },
+    {
+      "claim_id": "bc149b72-6508-4691-8b6e-66cfe22e0b99",
+      "result_id": "07dcd85e-d6bc-4031-b0bf-20491ecb6f7a"
+    },
+    {
+      "claim_id": "e9138d64-26d0-479d-87ce-216cb124b277",
+      "result_id": "07dcd85e-d6bc-4031-b0bf-20491ecb6f7a"
+    },
+    {
+      "claim_id": "4b079455-3bf9-409c-a2e7-b0712e8f418f",
+      "result_id": "07dcd85e-d6bc-4031-b0bf-20491ecb6f7a"
+    },
+    {
+      "claim_id": "4e793d75-855a-48fe-be78-9f027c7c1704",
+      "result_id": "d590f8a4-50d2-4664-a680-2b3473cbed4f"
+    },
+    {
+      "claim_id": "76e39bb5-3632-454a-ba6b-c22d5f55ccce",
+      "result_id": "d590f8a4-50d2-4664-a680-2b3473cbed4f"
+    },
+    {
+      "claim_id": "96560c5d-6098-4c04-a53e-e199701d0138",
+      "result_id": "b73da2bd-5ee9-4124-94b8-95858ab518ba"
+    },
+    {
+      "claim_id": "1fa14898-c9ef-4adb-9f0e-7d51131ebc2f",
+      "result_id": "b73da2bd-5ee9-4124-94b8-95858ab518ba"
+    },
+    {
+      "claim_id": "ebccdeea-3d49-4c68-959f-7a4e82a2c574",
+      "result_id": "b73da2bd-5ee9-4124-94b8-95858ab518ba"
+    },
+    {
+      "claim_id": "c74de4c8-0a5d-4faa-a00d-aa20fb8156f3",
+      "result_id": "b73da2bd-5ee9-4124-94b8-95858ab518ba"
+    },
+    {
+      "claim_id": "a97bc0cb-c0e5-46de-8ccb-687679534287",
+      "result_id": "b73da2bd-5ee9-4124-94b8-95858ab518ba"
+    },
+    {
+      "claim_id": "78b0ae1c-e1fe-4855-9820-0cb637446f23",
+      "result_id": "6a9191c9-37f1-46dd-8868-a30fec395fd3"
+    },
+    {
+      "claim_id": "75952801-ed70-4dc9-9c8e-277c1c32bfcf",
+      "result_id": "6a9191c9-37f1-46dd-8868-a30fec395fd3"
+    },
+    {
+      "claim_id": "6d753ca4-93a1-4f3a-af46-36a313271144",
+      "result_id": "6a9191c9-37f1-46dd-8868-a30fec395fd3"
+    },
+    {
+      "claim_id": "2f64ae84-d7eb-4929-baab-6241b2cede5d",
+      "result_id": "6a9191c9-37f1-46dd-8868-a30fec395fd3"
+    },
+    {
+      "claim_id": "e472c16b-0cf5-4748-bc00-0a16f827578c",
+      "result_id": "6a9191c9-37f1-46dd-8868-a30fec395fd3"
+    },
+    {
+      "claim_id": "6b0decea-007d-4c67-852f-6e4a34bb34f6",
+      "result_id": "6a9191c9-37f1-46dd-8868-a30fec395fd3"
+    },
+    {
+      "claim_id": "e17a75e2-5100-4f29-a0a1-b310a2ba3ab5",
+      "result_id": "6a9191c9-37f1-46dd-8868-a30fec395fd3"
+    },
+    {
+      "claim_id": "7b94cc4a-9404-49b5-9d1b-750581756c5f",
+      "result_id": "091422d4-8d11-4a9b-966f-2faf5cf34a6a"
+    },
+    {
+      "claim_id": "f906b957-73d5-4bd3-9d44-8b459a0108f2",
+      "result_id": "091422d4-8d11-4a9b-966f-2faf5cf34a6a"
+    },
+    {
+      "claim_id": "444edfdc-7011-4365-b004-d042748a0a6f",
+      "result_id": "091422d4-8d11-4a9b-966f-2faf5cf34a6a"
+    },
+    {
+      "claim_id": "1a21bfd4-252b-4240-96cc-df79d3ca0f95",
+      "result_id": "091422d4-8d11-4a9b-966f-2faf5cf34a6a"
+    },
+    {
+      "claim_id": "52e76c72-5b2c-44e6-a21c-cafcbe112243",
+      "result_id": "091422d4-8d11-4a9b-966f-2faf5cf34a6a"
+    },
+    {
+      "claim_id": "f730216f-167d-485d-9fb3-58615be7ce44",
+      "result_id": "cfca4237-96cf-496f-9fec-d7fa947934a2"
+    },
+    {
+      "claim_id": "90ba09b1-cfa5-4a46-bcf7-557c87461009",
+      "result_id": "cfca4237-96cf-496f-9fec-d7fa947934a2"
+    },
+    {
+      "claim_id": "3b744cdb-9d97-4ba5-b79d-9cf5b2bede0e",
+      "result_id": "cfca4237-96cf-496f-9fec-d7fa947934a2"
+    },
+    {
+      "claim_id": "60a22a31-450a-4f30-aa10-568a2a9d24d7",
+      "result_id": "cfca4237-96cf-496f-9fec-d7fa947934a2"
+    },
+    {
+      "claim_id": "b5213faa-cdc3-430b-9274-4d2c00b0232a",
+      "result_id": "66acfc4f-2458-4f15-8336-2289574bdb51"
+    },
+    {
+      "claim_id": "69546556-9fbd-4fba-b977-03fa0aaa4c49",
+      "result_id": "66acfc4f-2458-4f15-8336-2289574bdb51"
+    },
+    {
+      "claim_id": "84449de2-6d53-42a8-801c-c3a347429b03",
+      "result_id": "6c48409b-86fb-4a6f-8611-45db8a51d746"
+    },
+    {
+      "claim_id": "9df10558-7faa-4a9f-8fc1-0679d5e6b402",
+      "result_id": "6c48409b-86fb-4a6f-8611-45db8a51d746"
+    },
+    {
+      "claim_id": "2556474c-5364-45d3-9bff-8d46f34f3758",
+      "result_id": "0e77806a-1f2a-4ea8-84c9-a1382c3fe4a9"
+    },
+    {
+      "claim_id": "a266efac-3415-4d82-a522-e9f4295b5e09",
+      "result_id": "0e77806a-1f2a-4ea8-84c9-a1382c3fe4a9"
+    },
+    {
+      "claim_id": "c76a40df-002c-461c-84fe-dc2b18a96cec",
+      "result_id": "0e77806a-1f2a-4ea8-84c9-a1382c3fe4a9"
+    },
+    {
+      "claim_id": "68df4bf6-9e9a-44f5-b726-0eb8e108e28d",
+      "result_id": "0e77806a-1f2a-4ea8-84c9-a1382c3fe4a9"
+    },
+    {
+      "claim_id": "e1c86a9a-8fe5-4802-a3d7-5336b5b3be52",
+      "result_id": "0e77806a-1f2a-4ea8-84c9-a1382c3fe4a9"
+    },
+    {
+      "claim_id": "9238197d-ff25-4c1e-b357-01e3bcb9dad6",
+      "result_id": "0e77806a-1f2a-4ea8-84c9-a1382c3fe4a9"
+    },
+    {
+      "claim_id": "2e1f093d-d632-4490-9cbe-14b05c3cc038",
+      "result_id": "0e77806a-1f2a-4ea8-84c9-a1382c3fe4a9"
+    },
+    {
+      "claim_id": "fca635cd-7be8-4444-9566-9a906e405050",
+      "result_id": "0e77806a-1f2a-4ea8-84c9-a1382c3fe4a9"
+    },
+    {
+      "claim_id": "61de0e58-cbfb-4283-82a5-776fdcf30b10",
+      "result_id": "0e77806a-1f2a-4ea8-84c9-a1382c3fe4a9"
+    },
+    {
+      "claim_id": "52daeb45-9a76-4af4-b864-d2986df09bb9",
+      "result_id": "cfd36975-b4af-46e1-8026-02a6b2d5eb9c"
+    },
+    {
+      "claim_id": "bdc6eb6b-271f-42c0-8bea-ff3ceb45e6ea",
+      "result_id": "cfd36975-b4af-46e1-8026-02a6b2d5eb9c"
+    },
+    {
+      "claim_id": "597e18dd-4e2b-4295-b5a8-c4bcd5d3bb5c",
+      "result_id": "c7dd1bd9-d486-4f85-a86c-f302f240e8d1"
+    },
+    {
+      "claim_id": "bdb9661a-fb62-422d-9ec5-6b51e28b2c83",
+      "result_id": "c7dd1bd9-d486-4f85-a86c-f302f240e8d1"
+    },
+    {
+      "claim_id": "d5573a4f-0ba2-4537-8bdc-48af2f59d7e6",
+      "result_id": "c7dd1bd9-d486-4f85-a86c-f302f240e8d1"
+    },
+    {
+      "claim_id": "4dd5b3d3-8989-44a5-8d17-339337231e8d",
+      "result_id": "c7dd1bd9-d486-4f85-a86c-f302f240e8d1"
+    },
+    {
+      "claim_id": "fbb63294-53dd-4281-9d8e-a5619dcec2b3",
+      "result_id": "c7dd1bd9-d486-4f85-a86c-f302f240e8d1"
+    },
+    {
+      "claim_id": "e6a37269-564f-4899-a2d2-55d5a77e9e0f",
+      "result_id": "c7dd1bd9-d486-4f85-a86c-f302f240e8d1"
+    },
+    {
+      "claim_id": "ed0cbfe2-766b-44b2-9500-004ff28ac668",
+      "result_id": "c7dd1bd9-d486-4f85-a86c-f302f240e8d1"
+    },
+    {
+      "claim_id": "6bd8ee47-b82d-4fab-9b4e-3f5a9efa8fca",
+      "result_id": "c7dd1bd9-d486-4f85-a86c-f302f240e8d1"
+    },
+    {
+      "claim_id": "31af9939-73db-4c77-ad53-6cb1ee9fd0b7",
+      "result_id": "c7dd1bd9-d486-4f85-a86c-f302f240e8d1"
+    },
+    {
+      "claim_id": "f5e94c49-fa55-4e1e-89c9-2ef20b400fdb",
+      "result_id": "c7dd1bd9-d486-4f85-a86c-f302f240e8d1"
+    },
+    {
+      "claim_id": "8ab3ffe1-7d23-43ca-baea-8a7f9fb640e2",
+      "result_id": "4b0e0a22-41d8-47cb-a859-f587eb4a60ac"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study establishes the importance and ubiquity of momentary mood self-reports across everyday, clinical, and research contexts, while identifying a critical gap in understanding the temporal structure of how experiences are integrated into mood reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C14 collectively establish the motivation for the study through citations to prior literature and identification of a knowledge gap. The claims about the importance of mood reports in various contexts (C12-C14) are well-supported by appropriate citations, and the identification of the unexamined temporal structure (C3, C19) provides clear justification for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The standard recency model of mood, which posits that recent reward prediction errors have the strongest influence on momentary mood reports, is widely applied in computational models but has not been rigorously tested against alternative temporal representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 accurately characterize the existing literature on mood modeling, supported by multiple citations (Rutledge et al., 2014; Eldar et al., 2016; Katsimerou et al., 2014; Vinckier et al., 2018). The identification that this standard account is 'largely unexamined' (C19) is a reasonable assessment that motivates the comparative model testing approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "A primacy model of mood, where early experiences in an interaction have greater influence than recent ones, represents a plausible alternative to the standard recency model, and computational approaches can formalize and test such temporal integration mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 establish the theoretical basis for the primacy model through citations to empirical evidence (Ambady and Rosenthal, 1992; Houser and Furler, 2007) and computational psychiatry methodology (Huys et al., 2016). The primacy model is presented as a testable alternative hypothesis rather than an established fact, which is appropriate for the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Mood ratings in the experimental task are validated as meaningful measures of well-being, showing significant correlations with depression symptom scores and distinguishing between healthy and depressed participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 provide validation evidence with specific statistical results (correlation coefficients, p-values, effect sizes) from both the current study and citations to prior work. The correlations with MFQ (CC = -0.62, p = 2.62e-8) and CESD (CC = -0.69, p = 7.12e-13) scores, along with group differences (t = -3.36, p = 0.0012, Cohen's d = 0.97), provide strong empirical support for the validity of the mood measure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C43",
+      "C44",
+      "C54"
+    ],
+    "result": "The Primacy model, which weights early events more heavily than recent events, significantly outperforms the standard Recency model in predicting mood reports across three different reward environments (random, structured, and structured-adaptive), demonstrating that the temporal representation of experience in mood is dominated by early rather than recent events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C31-C33 present the core finding with statistical support from streaming prediction error comparisons across all three task environments (Table 1, Figure 3). The model comparison uses appropriate validation methods (leave-out sample, streaming prediction), and model recovery analysis (C56) confirms the validity of the comparison approach. The Primacy model also has fewer parameters than the Recency model (C30), making the superior performance more compelling. The conclusions (C43-C44, C54) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C34",
+      "C35"
+    ],
+    "result": "The superior performance of the Primacy model over the Recency model generalizes across age groups, with consistent results in both adult (mean age 37.76 years) and adolescent (mean age 15.49 years) samples, despite known differences in reward processing between these developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C34-C35 demonstrate generalizability across age with statistical support. The lack of age differences in mood change strength (F(152,1) = 2.35, p = 0.12) controls for potential confounds, and the Primacy model outperforms Recency models in both age groups (Table 1, Figure 3). This addresses an important potential moderator given prior literature on developmental differences in reward processing (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The Primacy model's superior performance generalizes across diagnostic groups, showing consistent advantages over Recency models in both healthy participants and those with major depressive disorder, as well as in adults at high risk for depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C36-C38 demonstrate generalizability across clinical status with appropriate statistical controls. The lack of group differences in mood change strength when controlling for baseline (F(70,1) = 0.77, p = 0.38) addresses potential confounds, and the Primacy model consistently outperforms Recency models in depressed adolescents and high-risk adults (p < 0.001). This is important given known reward processing aberrations in depression (C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C55",
+      "C62"
+    ],
+    "result": "The Primacy model has fewer parameters than the Recency model and outperforms not only the standard Recency model but also multiple alternative variants and other temporal weighting schemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C55, and C62 address potential concerns about model complexity and alternative specifications. The Primacy model's superior performance despite having fewer parameters (C30) strengthens the case for its validity. Testing against multiple Recency variants (with dynamic win probability, without Certain term, with outcome as expectation) and alternative temporal weighting schemes (Figure 3-figure supplement 2) demonstrates robustness of the finding (all p < 0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C40",
+      "C41",
+      "C63",
+      "C64"
+    ],
+    "result": "Neural activity in the anterior cingulate cortex (ACC) and ventromedial prefrontal cortex (vmPFC) during the pre-mood rating period correlates significantly with Primacy model parameters but not with Recency model parameters, with the Primacy model showing significantly stronger brain-behavior correlations in these mood regulation regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C40-C41 present neuroimaging evidence with appropriate statistical thresholding (p = 0.0017 after multiple comparison and Bonferroni correction, cluster size 132 voxels for correlation, 529 voxels for contrast, t = 5.00). The ACC and vmPFC regions are well-established in mood regulation and decision-making literature (C63-C64), providing biological plausibility. The direct statistical contrast between models (C41) is methodologically sound and strengthens the inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C61"
+    ],
+    "result": "Mood ratings correlate with striatal activity during the structured-adaptive task, consistent with prior findings, and previous work by Vinckier et al. (2018) reported similar vmPFC correlations with mood changes, supporting the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C61 provide convergent evidence from striatal activity and prior literature. The striatal finding (Figure 4-figure supplement 1) replicates established results, and the citation to Vinckier et al. (2018) regarding mvPFC activity provides independent support for the neural correlates of the Primacy model. This convergence across studies strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Within the Primacy model, the expectation term coefficients are significantly larger than the RPE term coefficients, supporting the dominance of primacy weighting, which reflects that early experiences have greater weight simply by virtue of coming first and that each additional event has diminishing impact as more information is accumulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide mechanistic interpretation of the Primacy model with statistical support (paired t-test: t = 2.6, p = 0.009, CI = [0.008, 0.059]). The interpretation that early events matter more because they have less prior context (C50-C51) is a reasonable inference from the mathematical structure of the model, though the authors appropriately note this is 'intuitive' rather than definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Model recovery analysis demonstrates that the model comparison criteria can correctly identify the true data-generating model from simulated data, validating the model selection approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 addresses a critical methodological concern about model identifiability. The model recovery analysis showing that both training error and streaming prediction criteria correctly recover the true model from simulated data (Supplementary file 1) provides important validation of the model comparison approach and protects against model selection biases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Most participants (90%) were unaware of the block structure manipulation in win probability, indicating that the structured task design did not create obvious demand characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by questionnaire data (65/72 participants unaware, average fairness rating 0.36 \u00b1 0.69 SD on 0-3 scale). This addresses a potential confound where explicit awareness of task structure could influence mood reports independently of the computational mechanisms being tested. The high rate of unawareness supports the validity of the experimental manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior literature establishes that adolescents and adults differ in reward processing, depression is associated with reward processing aberrations, mood reporting activates fronto-limbic circuits, and concordance between model parameters and neural activity validates computational mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 accurately summarize relevant prior literature with appropriate citations. These claims establish the theoretical and empirical context for testing model generalizability across age and diagnostic groups, and for the neuroimaging validation approach. The characterizations of prior work appear accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The experimental timescales (15-40 minutes) are relevant to real-world contexts including ecological momentary assessment (typically hours), clinical interactions (typically ~1 hour), and treatment progress assessment, though early-life experiences over longer timescales are difficult to model experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 appropriately contextualize the temporal scope of the findings with citations to relevant literature (EMA: Kahneman et al., 2004; Larson et al., 1980; Taquet et al., 2020; early adversity: Douglas et al., 2010; Lewis-Morrarty et al., 2015; Raby et al., 2015). The authors appropriately acknowledge the limitation that longer timescales are 'inherently difficult to model experimentally' while arguing for the relevance of their timescale to important real-world applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Prior computational models of mood have focused on event value while neglecting temporal structure, and the current results demonstrate that the temporal dimension\u2014specifically the timing of events\u2014plays an important role in mood reporting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 accurately characterize a gap in prior modeling work (supported by citations to Eldar et al., 2016; Katsimerou et al., 2014; Russell et al., 1989; Rutledge et al., 2014; Vinckier et al., 2018; Watson and Tellegen, 1985) and present the study's contribution to addressing this gap. The conclusion that temporal structure matters is well-supported by the model comparison results across multiple datasets and conditions.",
+    "result_type": "MAJOR"
+  }
+]

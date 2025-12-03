@@ -1,0 +1,1602 @@
+{
+  "submission": {
+    "id": "b1cd0d86-9655-4981-88c7-91ab0cd307f6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:23:10.700754Z",
+    "updated_at": "2025-12-03T17:23:10.700754Z"
+  },
+  "content": [
+    {
+      "id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "submission_id": "b1cd0d86-9655-4981-88c7-91ab0cd307f6",
+      "content_type": "manuscript",
+      "content_text": "# A general approach for stabilizing nanobodies for intracellular expression\n\n## Authors\n\n- John G Dingus<sup>1</sup> ([ORCID: 0000-0001-7928-8067](https://orcid.org/0000-0001-7928-8067))\n- Jonathan CY Tang<sup>1</sup> ([ORCID: 0000-0002-2376-6901](https://orcid.org/0000-0002-2376-6901))\n- Ryoji Amamoto<sup>1</sup>\n- Grace K Wallick<sup>1</sup>\n- Constance L Cepko<sup>1</sup> ([ORCID: 0000-0002-9945-6387](https://orcid.org/0000-0002-9945-6387)) \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, Blavatnik Institute, Harvard Medical School Boston United States ([ROR:006w34k90](https://ror.org/006w34k90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nConventional antibodies and their derived fragments are difficult to deploy against intracellular targets in live cells, due to their bulk and structural complexity. Nanobodies provide an alternative modality, with well-documented examples of intracellular expression. Despite their promise as intracellular reagents, there has not been a systematic study of nanobody intracellular expression. Here, we examined intracellular expression of 75 nanobodies from the Protein Data Bank. Surprisingly, a majority of these nanobodies were unstable in cells, illustrated by aggregation and clearance. Using comparative analysis and framework mutagenesis, we developed a general approach that stabilized a great majority of nanobodies that were originally unstable intracellularly, without significantly compromising target binding. This approach led to the identification of distinct sequence features that impacted the intracellular stability of tested nanobodies. Mutationally stabilized nanobody expression was found to extend to in vivo contexts, in the murine retina and in E. coli. These data provide for improvements in nanobody engineering for intracellular applications, potentiating a growing field of intracellular interrogation and intervention.\n\n## Introduction\n\nNanobodies, amino terminal fragments derived from a special class of antibody lacking light chains (Hamers-Casterman et al., 1993), are the smallest antibody derivatives that retain full antigen-binding function. Composed of a single variable domain of the heavy chain (VHH), nanobodies boast several features that make them attractive tools for a range of applications. As monomers, they are versatile building blocks for protein engineering. Due to their compact binding interfaces, they have become invaluable as protein crystallization chaperones to resolve high-resolution crystal structures (Muyldermans, 2013; Steyaert and Kobilka, 2011; Staus et al., 2014). Their modular serum half-life and superior tissue penetration are attractive characteristics for the development of therapeutic biologics (Van Audenhove and Gettemans, 2016; Jov\u010devska and Muyldermans, 2020). Perhaps one feature that has been taken somewhat for granted is superior stability that facilitates intracellular expression. Full-length antibodies, as well as bulkier antibody fragments, are not normally amenable to intracellular expression, partially owing to the reducing environment of the cytoplasm that prevents the formation of structurally crucial disulfide bonds. The ability to express nanobodies intracellularly opens the door for functional investigations of subcellular protein complexes and signaling pathways. Furthermore, intracellular nanobodies can be directed against novel therapeutic targets previously inaccessible to biologics.\n\nSeveral groups have detailed intracellular nanobody expression to facilitate live imaging of subcellular factors (Traenkle et al., 2015; Maier et al., 2015; Buchfellner et al., 2016). However, few have commented on intracellular expression of nanobodies as a class as it pertains to stability. Those that have broadly detailed nanobody stability have done so in an extracellular context, in buffered solutions that do not resemble the cytoplasmic environment (Kunz et al., 2017; Kunz et al., 2018). We have been developing tools for nanobody-mediated, fluorescence-based sorting of live, target expressing cells (Tang et al., 2016), and genetic manipulation of cells expressing specific targets (Tang et al., 2013; Tang et al., 2015). As we expanded our initial studies, we found that many nanobodies were not natively stable in the intracellular environment. We thus set out to investigate intracellular expression of nanobodies more systematically. To this end, 75 unique nanobody sequences from crystal structures uploaded to the Protein Data Bank (PDB) were cloned into mammalian expression vectors, fused C-terminally to a fluorescent protein (FP). Transfection and live-cell fluorescence imaging of these nanobody-FP fusions in both 293T and HeLa cells revealed that many nanobodies degrade and/or aggregate within the cytoplasm and nucleus, while others appear stable and soluble (Figure 1A). Following these observations, we set out to define intracellular instability based on sequence features, as well as to derive a standardized method for stabilization of previously intracellularly unstable nanobodies through framework mutagenesis. By leveraging positional sequence conservation apparent across intracellularly stable nanobodies, we have derived a method by which the vast majority of intracellularly unstable nanobodies can be stabilized for intracellular expression. This mutational stabilization, first observed in cell lines, was further tested for expression in vivo, in E. coli, and in the murine retina, whereupon it was found to be effective. These findings will contribute to the broader adoption of nanobodies as powerful reagents for both research and therapeutic applications.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig1-v1.jpg)\n\n**Figure 1.:** (A) Representative images of intracellularly stable and unstable nanobody-TagBFP fusions in transiently transfected 293T cells. Red signal is from co-transfected CAG-dsRed plasmid. (B) Significantly enriched positional residues between stable and unstable nanobodies (Fisher\u2019s exact test). Events denote the total number of instances of each positional residue across all nanobodies (75 total). Gray cells denote positional insignificance. (C) Positional amino acid conservation across framework sequences of stable and unstable nanobodies. Scale bar in Panel A is 20 \u00b5m.\n\n## Results\n\n### Classification of intracellularly stable and unstable nanobodies\n\nTo investigate nanobody intracellular expression broadly, we first compiled a repertoire of nanobody sequences to profile. The PDB was manually combed for nanobody crystal structures and sequences, resulting in a list of 75 unique sequences, representing nanobodies derived from 3 camelid species and targeting 44 unique protein targets (sequences and targets detailed in Supplementary file 1). These sequences were cloned into a mammalian expression vector in frame with TagBFP, linked by a 2 amino acid linker. All 75 sequences were expressed via transient transfection in both 293T and HeLa cells in separate wells of a 96-well plate. Intracellular expression patterns were captured by live fluorescence imaging. 33 out of 75 sequences exhibited strong, diffuse fluorescent signal, expected of well-expressed and intracellularly stable and soluble protein. Interestingly, 42 out of 75 sequences exhibited intracellular phenotypes suggestive of intracellular instability, including low or absent fluorescent signal coincident with varying degrees of aggregation (Figure 1A). These results were confirmed over several replicate experiments.\n\nAfter binning the nanobodies into \u2018stable\u2019 and \u2018unstable\u2019 groups, their sequences were analyzed for distinguishing features. Nanobodies are composed of three variable loops (CDR1\u20133), responsible for the majority of target-specific interaction, and four framework regions (FR1\u20134), forming the conserved framework structure of the nanobody. First, the average length of variable loop CDR3 was calculated for each group, as CDR3 loop length is highly variable (between 5 and 26 amino acids for nanobodies in the examined repertoire) and CDR3 represents the area of both the greatest sequence-level and structural diversity across nanobodies. While there was little difference in average CDR3 loop length between the groups (16.4 amino acids for the stable group and 16.9 amino acids for the unstable group), one difference related to CDR3 stood out: 17/75 nanobodies contained a CDR3 cysteine that normally forms a disulfide bond tethering CDR3 to either CDR1 (first variable loop) or FR2 (second framework region); all 17 were in the unstable group (Figure 2). Because disulfides do not form when nanobodies are expressed in the cytoplasm, this feature may represent a structural liability for intracellular expression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig2-v1.jpg)\n\n**Figure 2.:** Note: All nanobodies contain a conserved set of cysteines that normally forms a disulfide bond through the hydrophobic core of the nanobody (23Cys and 104Cys). Highlighted in yellow, \u2018extra disulfide bond\u2019 refers to nanobodies with an additional pair of cysteines, one of which is always located in CDR3, that normally forms a disulfide bond that impacts CDR3 conformation.\n\nWe next derived consensus sequences (the sequence constructed from the most common amino acid at each position across nanobody sequences) of the framework regions for both stable and unstable nanobodies. Sequence-level deviation between each stability-binned nanobody and the consensus sequence for stable nanobodies is illustrated in Figure 2. Stable and unstable consensus sequences for the framework region were identical except at one position, amino acid 52 (IMGT numbering), where the most common amino acid across stable nanobodies was Phe and across unstable nanobodies was Gly. Interestingly, position 52 is one of four hallmark framework positions cited as differentiating VHs (heavy chain variable regions of conventional antibodies) and VHHs (Muyldermans, 2013) (heavy chain variable regions of heavy-chain-only antibodies, analogous to nanobody). These four positions normally contribute to a hydrophobic interaction interface between VH and VL (light chain variable region) in conventional antibodies, and are substituted for amino acids that increase the hydrophilic character of the surface in VHHs. 52Gly has been shown to enhance nanobody solubility, but at the expense of protein yields in E. coli, which may point to decreased stability (Davies and Riechmann, 1994; Davies and Riechmann, 1995).\n\nNext, we examined total positional enrichment for each amino acid across each position for both stable and unstable nanobody frameworks. Applying a Fisher\u2019s exact test, 12 framework positions with residues that were significantly enriched in either group were identified, with 4 of those positions having a specifically enriched residue in both groups (Figure 1B). Of note, 52Gly was strongly enriched in the unstable group (19/23 occurrences in unstable nanobodies), as well as 55Cys, a cysteine that normally forms a disulfide bond with a CDR3 cysteine in a subset of nanobodies, as noted above (9/9 occurrences in unstable nanobodies). Additionally, 54Ser emerged as a strongly enriched unstable residue likely to drive instability (13/14 occurrences in unstable nanobodies). Position 54 points its functional group into the hydrophobic core of the nanobody, and is usually occupied by a small hydrophobic amino acid (93% of stable nanobodies examined contain 54Ala). A hydrophilic substitution at position 54 is likely to contribute to destabilization of the hydrophobic core.\n\nEach unstable nanobody had at least one of seven residues that were identified as significantly enriched in the unstable group. However, the most common positional residue enriched in the unstable group, 45Ala, is the most common residue at that position for both groups, and is therefore unlikely to be a strong driver of instability (40/42 unstable nanobodies and 24/33 stable nanobodies contain 45Ala). 10/42 unstable nanobodies had 45Ala as their only enriched residue. Since this preliminary sequence analysis was unlikely to comprehensively explain the differences between stability groups, we decided to apply a broad mutagenesis strategy to unstable nanobodies to try to achieve stability.\n\n### Stabilizing mutagenesis based on positional conservation\n\nWe set out to define a general mutagenesis approach to stabilize most, if not all, nanobodies for intracellular expression, taking advantage of sequence features observable across expression-profiled nanobodies. At the outset, our strategy was based upon the assumption that sets of important stabilizing residues are likely to be highly conserved across intracellularly stable nanobodies. While the framework consensus sequences for stable and unstable nanobodies are nearly identical, positional conservation varies between the two groups (Figure 1C). Our approach for conservation-based mutagenesis is schematized in Figure 3A. A threshold of \u226580% positional conservation was applied to generate a partial consensus sequence of the most highly conserved positional residues across stable nanobodies. This partial consensus framework was applied as a filter to identify non-conforming positional residues in each unstable nanobody for mutagenesis. At each position that a given unstable nanobody disagreed with the filter, that residue was changed to agree with the filter. An exception was made to maintain any cysteine that normally participates in a disulfide bond, as these cysteines likely impact positioning of CDR3. Applying these changes to all 42 intracellularly unstable nanobodies yielded mutants with a range of between 2 and 12 changes per nanobody, with an average mutational load of 5.7 changes per nanobody. Mutation numbers for each nanobody are reported in Figure 4, Figure 5 and Figure 6.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig3-v1.jpg)\n\n**Figure 3.:** (A) Nanobody-TagBFP fusions were classified as \u2018stable\u2019 or \u2018unstable\u2019 based on intracellular expression via transient transfection in 293T cells. Amino acid sequences were binned according to stability group, and variable domain sequences (CDRs) were excluded from downstream consideration. Positional sequence conservation was calculated across stable nanobody sequences, and positional amino acids of high conservation (>80%) were compiled to form a partial consensus filter. Each individual unstable nanobody framework was then compared to this filter, and any positional amino acid disagreement was resolved to adhere to the filter. Mutated nanobodies were then cloned, transfected into 293T and HeLa cells, and judged for stability via fluorescence microscopy. (B) All positional amino acids captured in the partial consensus framework (blue cells). White cells denote framework positions excluded from the partial consensus framework.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Flow chart detailing our recommended courses of action for mutationally stabilizing poorly expressed nanobodies.Our partial consensus filter is depicted in Figure 3, for reference. (B) Comparison between the framework consensus sequence of stable nanobodies profiled in this study, and the framework consensus sequences of all nanobodies from each species of origin profiled. The majority of nanobodies profiled originate from llama, and our stable framework consensus sequence is identical to the framework consensus sequence derived from all llama sequences profiled. We did not formally investigate the implication on expression of specific framework differences observed between alpaca, dromedary, and llama sequences.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig4-v1.jpg)\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig5-v1.jpg)\n\n**Figure 5.:** The number of mutations made to each nanobody is reported in the left-most column.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig6-v1.jpg)\n\nWe cloned the derived mutant nanobodies and expressed them as FP fusions in 293T and HeLa cells as we had expressed their wild-type parents, previously. Sequence variability before and after mutagenesis for unstable nanobodies, as well as stability status following mutagenesis, is illustrated in Figure 4. Fluorescent imaging revealed that 26/42 nanobodies had been effectively stabilized via targeted mutagenesis, as illustrated by strong fluorescent signal and a total absence of punctate aggregates (Figure 7A, C). Another 6/42 nanobodies exhibited improvement compared to their wild-type parent with respect to aggregation levels and soluble protein fraction. 10/42 nanobodies exhibited no improvement from mutagenesis.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig7-v1.jpg)\n\n**Figure 7.:** (A) Examples of nanobody-TagBFP expression in 293T cells following transient transfection before (WT) and after (mut1) stage 1, conservation-based mutagenesis. Red signal is from co-transfected CAG-dsRed plasmid. (B) Examples of nanobody-TagBFP expression in 293T cells following transient transfection for nanobodies with Gly52. Wild-type, first-pass conservation-based mutants (mut1), and mutants with up to two additional mutations, Gly52Phe and X90Gln, are depicted. (C) Numbers of stable versus unstable nanobodies (75 total) following first-pass conservation-based mutagenesis (stage 1 mut) and final mutagenesis (+G52F+X90Q). (D) Example mutant variants tested for specific mutationally stabilized nanobodies in order to identify necessary stability mutations. (E) Examples of nanobody-TagBFP expression in 293T cells following transient transfection for nanobodies effectively stabilized by one to two mutations. Scale bar is 20 \u00b5m.\n\nAligning the 42 mutant sequences, grouping sequences that were effectively, partially, or not stabilized via mutagenesis, a striking correlation emerged: 13/16 nanobodies that were not effectively stabilized via mutagenesis had 52Gly (Figure 5). Because position 52 is a relatively variable framework position, it was not included in the conservation filter for first-pass mutagenesis. Additionally, non-consensus residues at positions 90 and 101 were enriched in non-stabilized nanobodies. For nanobodies not effectively stabilized by stage 1 mutagenesis, up to two additional changes were made wherever possible, Gly52Phe and X90Gln, to try to achieve stability. Because deviation at position 101 was almost perfectly correlated with the presence of Gly52, a likely driver of instability, this position was not changed (Figure 4). As a result of this additional round of mutagenesis, 11/13 additional nanobodies were effectively stabilized. In total, 37/42 previously intracellularly unstable nanobodies were rendered stable and soluble (Figure 7C).\n\n### Identification of strong drivers of intracellular stability\n\nEncouraged by the success of the stabilizing mutagenesis approach, we set out to identify specific drivers of stability from among the partial consensus framework. To do this, we sought to eliminate \u2018passenger\u2019 mutations for individual stabilized nanobodies and to identify the minimal, necessary mutational subsets required for intracellular stabilization. Five mutationally stabilized nanobodies with high mutational load and the high-confidence stability driver Ser54Ala were chosen for further examination (3K74, 3V0A, 3G9A, 4MQS, and 1KXV). 1KXT, a mutationally stabilized nanobody receiving the unique mutation Ser53Val, was also examined as both positions 53 and 54 point inward to the hydrophobic core of the nanobody. Subsets of the original mutations imposed to achieve stability were chosen, and new mutant variants were generated for intracellular stability testing. Mutation subsets were chosen based on crystal structure data and our own stabilization statistics. Several variants are depicted in Figure 7D, E. After testing several mutation variants for each nanobody, Ser54Ala was found to be sufficient to stabilize 3K74 on its own (originally stabilized with eight mutations). Ser53Val similarly stabilized 1KXT by itself. 3V0A and 4MQS required only Ser54Ala and one additional mutation each to achieve stability (originally stabilized with 11 and 7 mutations, respectively). The minimal necessary sets of mutations needed to stabilize 3G9A and 1KXV were not identified, suggesting that several of their original mutations, in addition to Ser54Ala, were necessary for stabilization.\n\n68Tyr and 80Arg were identified in nanobodies 3V0A and 4MQS, respectively, as important for their stabilization. These residues were subsequently investigated for their role in the stabilization of three additional nanobodies not originally containing the strong instability driver 54Ser: 4WEN, 4LHJ, and 1KXQ. 4LHJ was originally stabilized from only two mutations (Gln80Arg and Ser88Tyr). However, removal of Ser88Tyr did not destabilize 4LHJ, illustrating the stabilizing influence of 80Arg alone (data not shown). Surprisingly, 4WEN was effectively stabilized by 68Tyr alone, when it had originally received five mutations (Figure 7D, E). 1KXQ, which originally received both Ser68Tyr and Gln80Arg mutations in addition to five others, was effectively stabilized by 68Tyr alone, again illustrating the importance of 68Tyr for stability and suggesting only circumstantial importance of 80Arg (data not shown).\n\n### Mutationally stabilized nanobodies retain target-binding function in cells\n\nIt is crucial for stabilizing mutagenesis not only to facilitate intracellular expression, but also to maintain the nanobody\u2019s ability to bind its target. Conventional antibodies engage their targets in a largely stereotyped fashion, relying heavily on variable loops for target interaction, with minimal direct framework contribution. In contrast, nanobodies exhibit a greater paratope diversity, and contribution of framework residues to binding is more common (Mitchell and Colwell, 2018). We compiled crystal structure data, curated by EMBL-EBI and made available through PDBe PISA, describing the interaction interfaces between nanobodies and their targets (Supplementary file 2). Examination of these interfaces revealed that the great majority of interacting residues across nanobody framework regions are located in the most highly variable framework positions, positions omitted from our partial consensus mutagenesis approach (Figure 8\u2014figure supplement 1A). While the possibility that mutation of non-interacting residues will generate conformational changes that impact target binding cannot be ruled out, this finding suggests that mutating nanobodies to adhere to our partial consensus framework likely minimizes impact on target binding, compared to strategies that rely on grafting variable loops onto established nanobody frameworks (Saerens et al., 2005). In order to both confirm target binding for our mutationally stabilized nanobodies, and to investigate the importance of maintaining framework residue identity in highly variable positions, we decided to compare our partial consensus framework stabilization approach to a full-consensus approach, in which all framework positions (excluding cysteines) are mutated to adhere to our stable consensus sequence.\n\nWe chose six mutationally stabilized nanobodies whose targets are easily expressed intracellularly (three targets, two nanobodies per target) to test for intracellular target binding (Figure 8). For each nanobody, wild-type, partial consensus (PC), and full-consensus (FC) variants were tested. Each nanobody was C-terminally linked with an FP, and each target was engineered to contain an N-terminal nuclear localization sequence (NLS). Wild-type and mutant nanobodies were co-transfected with either an off-target NLS construct, or NLS target into 293T and HeLa cells. H2B-mCherry was used as a nuclear marker to assess nuclear localization of nanobody signals. Target binding was evaluated based on observed nuclear localization of nanobody-FP signals in the presence of NLS target (Figure 8A), as well as pixel intensity measurements of captured fluorescence images (Figure 8\u2014figure supplement 1B, C).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig8-v1.jpg)\n\n**Figure 8.:** (A) Representative images of nanobody-TagBFP expression in HeLa cells in the presence and absence of nuclearly localized target. Wild-type (WT) nanobodies, partial consensus (PC) mutants, and full-consensus (FC) mutants are depicted. Red nuclear signal is from co-transfected CAG-H2B-mCherry plasmid. Transfected DNA and nuclear protein amounts were standardized by addition of off-target nuclear localization sequence (NLS) plasmid to transfection mix for the \u2018no target\u2019 condition. Scale bar is 25 \u00b5m. (B) Crystal structures of two nanobodies that lose target binding when mutated to adhere to a full-consensus framework are shown. Non-consensus framework residues directly contributing to target interface are depicted. (C) Target-interfacing surface area values in square angstroms (rounded to whole numbers) across distinct regions for nanobodies tested for target binding are shown. Values are taken from buried surface area interface values made available through PDBE-PISA.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Total number of target-interfacing positions across 75 nanobodies. Positions of interaction were determined based on buried surface area for crystal structure interfaces made available through PDBE-PISA. Black bars labeled \u2018A, B, and C\u2019 denote positions across CDRs 1, 2, and 3, respectively. Colored bars describe sequence-level conservation across target-interfacing framework positions. (B) Nanobody-TagBFP signal intensities normalized to co-transfected H2B-mCherry signal intensities from captured fluorescence images (n = 3 replicate experiments for each condition, error bars denote standard deviation). (C) Nanobody-TagBFP signal fraction colocalized with H2B-mCherry signal in co-transfected cells from captured fluorescence images (n = 3 replicate experiments for each condition, error bars denote standard deviation). Red-dashed line represents average nuclear colocalization between nanobody-TagBFP signals and H2B-mCherry signals in the absence of nuclear target. Cells without both nanobody-TagBFP and H2B-mCherry signal were excluded from analysis.\n\nAll six mutants stabilized through partial consensus mutagenesis were able to bind target (Figure 8A and Figure 8\u2014figure supplement 1C). We were particularly interested to observe target binding for 3G9A, which has a large CDR3 loop that is normally anchored by an extra disulfide bond to FR2, assumed to be lost when translated in the cytoplasm. 4/6 wild-type nanobodies exhibited increased signal when coexpressed with target (Figure 8\u2014figure supplement 1B), highlighting the ability of even poorly expressed nanobodies to bind an overexpressed target, albeit at lower levels when compared to their stabilized counterparts. Two of these nanobodies, 3K74 and 4I13, exhibited robust target binding in both their wild-type and mutationally stabilized forms. This suggested that the presence of their target, E. coli dihydrofolate reductase (DHFR), had a largely stabilizing effect. Our laboratory has previously described nanobody conditional stability in an engineered context (Tang et al., 2016), and it is expected for a subset of nanobodies to exhibit this target-dependent stability naturally.\n\nFull-consensus mutagenesis, while stabilizing (Figure 8A and Figure 8\u2014figure supplement 1B), resulted in significant reduction of nuclear nanobody signal fraction in the presence of NLS target for 5/6 tested nanobodies, suggestive of a reduction in target binding. Two of these nanobodies, 3K1K and 3K74, normally engage their targets along a concave framework interface (Figure 8B). Specifically, residues across FR2 form direct contacts with target, representing a common mode of nanobody-target binding (Figure 8B, C).\n\nWe next turned our attention to a nanobody with an atypical mode of target binding. Nanobody 5IVN (also known as nanobody BC2) targets a short N-terminal stretch of \u03b2-catenin, representing a rare epitope: a short, linear peptide amenable for use as an affinity tag. Corroborating previous findings, we found 5IVN to be unstable when expressed in cells (Traenkle et al., 2015). Unfortunately, while our mutagenesis approach stabilized 5IVN for cellular expression, it did not facilitate intracellular binding of its epitope as assessed by lack of co-localization with its target following cellular co-transfection of 5IVO-TagBFP and NLS-mCherry-epitope (data not shown). Binding was not achieved after limiting stabilizing mutagenesis to the single, necessary mutation to achieve intracellular stability, Ser54Ala. We suspect this lack of binding relates to loss of a crucial extra disulfide bond that normally orients its highly conformationally precise paratope, but that does not form intracellularly. This disulfide bond has previously been shown to be required for target binding (Braun et al., 2016).\n\nTaken together, these target-binding experiments suggest that nanobodies stabilized by the partial consensus-based mutagenesis approach developed here are likely to retain target-binding function in cells, although certain conformational paratopes may not be amenable for intracellular recapitulation.\n\n### Nanobody intracellular stability in vivo\n\nAs many research and therapeutic applications of nanobody technology will require expression in vivo, we wanted to test whether improved nanobody intracellular stability established in cell lines would apply to in vivo settings. Electroporation of the retina in newborn mice is a means to deliver nanobody expression vectors to multiple cell types (Tang et al., 2013). Plasmids encoding wild-type or partial consensus mutant 3V0A-TagBFP were injected into the subretinal space of postnatal day 2 (P2) mice, along with a dsRed control plasmid, and electroporation was carried out. Tissue was harvested at P12, and was fixed, sectioned, and imaged. Representative images are displayed in Figure 9. Red fluorescent signal from the dsRed control plasmid delineated areas of successful electroporation. Little to no soluble TagBFP signal was observed in cells electroporated with wild-type 3V0A-TagBFP. However, strong TagBFP signal was observed in cells electroporated with partial consensus mutant 3V0A-TagBFP, mirroring observations in cultured cells. These cells included highly specialized sensory neurons (rod photoreceptors), interneurons (bipolar cells), and glia (Mueller glia), suggesting that mutationally stabilized nanobodies are stable in multiple, distinct cell types.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig9-v1.jpg)\n\n**Figure 9.:** Retinas were electroporated on postnatal day 2 and harvested on postnatal day 12. Multiple cell types show expression following electroporation: photoreceptors (arrow), bipolar interneurons (triangle), and Mueller glia (asterisk) are noted on merged images. Scale bar is 20 \u00b5m.\n\nWe additionally wanted to validate that a nanobody mutationally stabilized by our partial consensus approach was capable of binding an endogenous target in vivo. Although nanobodies that target intracellular, endogenous factors are currently limited, studies engaging, perturbing, and reporting on endogenous factors in live organisms will ultimately help differentiate nanobody technology from conventional antibody reagents. Fortunately, we had in our collection a nanobody, NBE9 (Li et al., 2012), that recognizes an endogenous protein, glial fibrillary acidic protein (GFAP), present in retinal Mueller glial cells. It was unstable initially and was stabilized through mutagenesis. Plasmids encoding wild-type and stabilized variants were electroporated into the rd1 mouse model of retinal degeneration at P2 as TagBFP fusions, along with a CAG-dsRed co-electroporation control. In the rd1 model, rod photoreceptors progressively degenerate starting around postnatal day 8 (Chang et al., 2007), and GFAP expression is upregulated in Mueller glia (Goel and Dhingra, 2012). GFAP staining with conventional antibodies has shown that GFAP increases in filaments within radial processes, as well as in Mueller glial endfeet, located within the ganglion cell layer (GCL) (Goel and Dhingra, 2012). GFAP is additionally expressed by astrocytes in the GCL (Goel and Dhingra, 2012), but astrocytes in the retina are not electroporated using our protocol (Matsuda and Cepko, 2004). Representative images from these experiments are shown in Figure 10.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig10-v1.jpg)\n\n**Figure 10.:** (A\u2013D) Representative Images of rd1 murine retina co-electroporated with CAG-dsRed and CAG-nanobody-TagBFP plasmids. NBE9 is a nanobody that targets glial fibrillary acidic protein (GFAP), a protein whose expression in Mueller glia is upregulated in the rd1 retinal degeneration model. Retinas were electroporated on postnatal day 2 and harvested on postnatal day 20. Triangles denote features of accumulated protein, and arrows denote radial processes. Blue indicators denote features observed in both the dsRed and nanobody-TagBFP channels, pink indicators denote features observed only in the nanobody-TagBFP and GFAP channels, and orange indicators denote features observable across all three channels. Scale bars for main panels are 20 \u00b5m and for higher magnification panels are 4 \u00b5m.\n\nAs a control for the distribution of a well-expressed, stable nanobody without a target, we used 3V0A PC. The signal of this nanobody was predicted to match the diffuse signal of the dsRed encoded by the co-electroporation control. We did indeed observe this, as mutationally stabilized 3V0A-TagBFP signal matched that of dsRed in all electroporated cell types, which included Mueller glia (Figure 10A). To determine if NBE9-TagBFP signal colocalized with GFAP, sections were stained with an anti-GFAP conventional antibody. In keeping with its instability, WT NBE9 signal was almost completely absent within electroporated retinas. The only signal observed was in spherical accumulations in the GCL, where it colocalized with accumulated GFAP protein (Figure 10B). A NBE9 variant with the single, strongly stabilizing mutation S54A, both rescued expression of the nanobody and resulted in a striking expansion of the signal seen in the spherical accumulations of GFAP within the GCL (Figure 10C). The NBE9 PC mutant exhibited less of these colocalizing accumulations than the S54A mutant (Figure 10D). It did, however, track with some radial, GFAP-positive processes somewhat distinctly from the more diffuse dsRed signal. Taken together, both wild-type and mutationally stabilized NBE9 appeared to colocalize with GFAP in Mueller glial endfeet, with variants differing in expression level and, perhaps, propensity to form aggregates with GFAP.\n\nTo further explore potential applications of partial consensus stabilizing mutagenesis, we tested mutant nanobody expression in bacteria. Several groups have illustrated powerful applications taking advantage of nanobodies expressed in bacteria (Harmsen et al., 2006; Vandenbroucke et al., 2010; Chowdhury et al., 2019). Bacteria offer a therapeutic modality, as they can be delivered as factories for nanobody production. Moreover, stable expression of nanobodies in bacteria would facilitate intra-bacterial studies, and may contribute to improved production yields for nanobody reagents produced in bacteria. Five mutationally stabilized nanobodies and their parents were tested for expression in BL21 E. coli. Nanobodies were fused C-terminally to mCherry and expression was assessed by fluorescence microscopy. All five wild-type nanobodies exhibited hallmarks of instability in bacteria (Figure 11). 4/5 wild-type nanobodies exhibited protein aggregation as illustrated by focal inclusion bodies, in addition to diminished cytoplasmic fluorescence. 3V0A did not appear to aggregate, but exhibited low fluorescent signal. All five mutationally stabilized nanobody variants exhibited a marked increase in fluorescence level. 1ZV5, 4WEN, and 1RJC mutants showed no signs of protein aggregation, in contrast to their wild-type parents. Mutant 3G9A exhibited the most intense fluorescent signal, but also exhibited fluorescent inclusion bodies, possibly due to higher nanobody concentration.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/68253/elife-68253-fig11-v1.jpg)\n\n**Figure 11.:** Images were taken following 4 hr of protein induction with 250 \u00b5M Isopropyl \u03b2-D-1 thiogalactopyranoside(IPTG). Scale bar is 10 \u00b5m.\n\n## Discussion\n\nHere, we describe a general method for modifying nanobody sequences to facilitate stable intracellular expression. A partial consensus framework was distilled from the most highly conserved positional residues across a large group of intracellularly stable nanobodies. This framework was applied broadly across unstable nanobodies to rescue intracellular stability in a great majority of cases. As new nanobodies are generated against intracellular targets, this stabilization approach should prove effective in achieving stable expression while maintaining target binding.\n\nConsensus-based stabilization has been applied to antibody fragments in the past; Pluckthun and colleagues were the first to investigate stability and solubility differences between the consensus sequences of distinct families of human immunoglobulin variable domains in non-reducing in vitro conditions, as well as differences in expression in non-reducing bacterial periplasm (Knappik et al., 2000; Ewert et al., 2003). They identified positional sequence differences between well- and poorly expressed consensus frameworks that impacted charged interactions and hydrophobic packing of upper and lower core hydrophobic residues. Although this work focused on domain stability in a context facilitating disulfide bond formation, it highlighted an important observation: while sequence changes between variable domains did not always yield significant differences in in vitro stability and solubility measurements, soluble yield and aggregation of expressed fragments in bacteria could vary dramatically, suggesting folding dynamics independent of domain stability.\n\nSteipe and Wirtz applied consensus framework mutagenesis to VL and VH domains to enhance intracellular stability for conventional FV fragments (Ohage et al., 1999; Wirtz and Steipe, 1999). This approach was successful as conventional antibodies are amenable for loop grafting onto full donor frameworks due to their near exclusive reliance on CDRs for binding. Our partial consensus approach takes into account variable binding modes observed across nanobody crystal structures. Nanobodies often rely on direct framework engagement for target binding. We show that positional sequence variability across nanobody frameworks correlates with target interface formation, and that maintaining framework positions of high sequence variability is important for preserving target binding in some, perhaps many, cases.\n\nWhile investigating intracellular target binding, we noted that some nanobodies were able to effectively bind their targets despite their observed instability when target is absent. Such nanobodies may be useful reagents without the need of stability engineering in certain cases. However, in cases of high nanobody expression and low target availability, an unstable, aggregation-prone fraction of unbound nanobody may prove problematic for studies concerning subcellular protein localization, or for reasons of cellular toxicity. Indeed, one potential therapeutic application for intracellular nanobodies is to block protein aggregation that leads to various neurodegenerative diseases (Messer and Joshi, 2013). Several groups have investigated nanobodies as potential reagents for blocking aggregation of a range of cytotoxic, aggregation-prone factors including prion protein, amyloid beta, and alpha synuclein (Abskharon et al., 2014; Kasturirangan et al., 2010; Chatterjee et al., 2018). In these contexts, nanobody stability and solubility may prove critical to ensuring that no undue cellular stress is imparted by the treatment agent.\n\nAdditionally, the ability to tweak nanobody framework properties allows for the generation of a range of reagents that behave differently in an intracellular context, with each reagent potentially useful for different applications. We delivered three versions of NBE9, a nanobody that binds GFAP, in vivo in the murine retina, with the primary goal of evaluating the ability to bind target. We observed three versions, all capable of binding to GFAP, but each exhibiting a different expression signature, possibly due to a combination of factors including intracellular stability, aggregation propensity, and cellular context. Wild-type NBE9 showed sparse labeling of accumulated GFAP in Mueller glial endfeet, with little protein in cell bodies or processes. The single mutant, S54A, resulted in higher expression and seemed to encourage the formation of spherical GFAP aggregates in Mueller glial endfeet, where it primarily localized. NBE9 PC also exhibited higher expression, but was more distributed throughout the cell, including within radial, GFAP+ processes. Interestingly, while NBE9 PC exhibited GFAP-binding capability, it did not seem to encourage GFAP aggregation to the same extent as the S54A single mutant. It is possible that a difference in binding affinity to GFAP underlies this observation, and/or that a difference in aggregation propensity of the two variants influences GFAP dynamics. Depending on the intended application, sparse labeling, impact on target localization, or broader nanobody distribution may all be desirable properties.\n\nThe potential for intracellular deployment of nanobody-based reagents is still far from being realized. Taking full advantage of the modularity and versatility inherent of these pared-down structures will require methods such as those proposed here to condition nanobodies for the intracellular environment.\n\n## Materials and methods\n\n### Compilation of nanobody sequence and structure data\n\nNanobody sequences were pulled directly from the PDB database (sequences for this study compiled in 2016). To generate an interface atlas profiling positions of interaction between each nanobody and its target (linked data provided), interface data were referenced from the Proteins, Interfaces, Structures, and Assemblies tool (PDBePISA), provided by the European Bioinformatics Institute (EMBL-EBI). Values for positional interactions were taken from Buried Surface Area values (\u00c52) for each residue.\n\n### Generation and cloning of nanobody sequences\n\nNanobody sequences were synthesized as double stranded DNA fragments (gBlocks) by IDT, and cloned directly into a CAG expression plasmid (Addgene plasmid 11150) (Matsuda and Cepko, 2004) in frame and linked with TagBFP via Gibson assembly (New England Biolabs, E2611). For bacterial expression constructs, nanobody sequences were PCR amplified with primers containing terminal regions of homology for cloning into a pRset plasmid (Addgene plasmid 3991) (Invitrogen, V35120) in frame and linked to mCherry. DH5\u03b1 E. coli were transformed with assembled DNA and cultured in 4 ml cultures overnight in LB medium with 100 \u00b5g/ml carbenicillin. Plasmid DNA was purified using Qiagen miniprep kits.\n\nMutant nanobody sequences were designed by comparing intracellularly unstable nanobodies to a partial consensus framework sequence of stable nanobodies, and changing amino acids in each unstable nanobody to match the partial consensus sequence at each position. Nanobody framework regions were defined by The International Immunogenetics Information System (IMGT), a global reference for immunogenetics. The consensus sequence for stable nanobodies was generated by calculating the most frequent amino acid at each framework position across 33 intracellularly stable nanobodies. The partial consensus sequence represents the subset of consensus positions at which 80% or greater of the 33 stable nanobodies had the same amino acid (Figure 10B).\n\n### Cell culture and transfection\n\nAll constructs used in mammalian cell transfection experiments were cloned into the pCAG plasmid. Plasmid DNAs encoding nanobody-TagBFP sequences were transfected into both 293T cells and HeLa cells. Experiments were first conducted in 293T cells, tested across three replicates, and later tested in HeLa cells. One day prior to plasmid transfection, cells were plated in black, clear bottomed 96-well plates (CLS3603, Sigma-Aldrich) at roughly 10,000 cells/well and incubated at 37\u00b0C, and 5% CO2. For transfection of cells in each well, 5 \u00b5l of serum-free media was added to 200 ng of plasmid DNA (100 ng CAG-nanobody-TagBFP plasmid and 100 ng CAG-dsRed plasmid [Addgene plasmid 11151], Matsuda and Cepko, 2004 or CAG-H2B-mCherry plasmid). For target-binding experiments, an additional 100 ng of NLS target expressing plasmid or 100 ng of an off-target, control NLS expressing construct was added. 1 \u00b5l (or 1.5 \u00b5l for target-binding experiments) of 1 mg/ml PEI (Polysciences, 24765-2) dissolved in water was added to DNA in media and vortexed for 10 s. Resulting transfection mix was left to sit at room temperature for 10 min before being added to cells.\n\n### Live fluorescent imaging and stability scoring\n\nFor initial stability scoring, 75 nanobodies were transfected into HEK293T cells (as described above) as TagBFP fusions driven by a CAG promoter. Roughly 24 hr after transfection, TagBFP signal was evaluated using a Leica DMI3000B microscope and a \u00d720 objective lens. CAG-dsRed signal served as both a transfection control and orienting signal to assess cellular morphology. The 75 nanobodies were binned broadly into \u2018stable\u2019 and \u2018unstable\u2019 groupings based on the observed character of the TagBFP signal for each nanobody. Nanobodies with TagBFP signal that filled cells, mirroring dsRed signal, and that exhibited, at most, only minor and infrequent fluorescent puncta, were binned into the \u2018stable\u2019 group. Nanobodies with sparse to absent TagBFP signal, and/or that exhibited major and frequent fluorescent puncta, were binned into the \u2018unstable\u2019 group (Figure 1A). Groupings were validated across three separate rounds of transfection and evaluation in HEK293T cells, and further validated in HeLa cells. Grouping criteria were assigned to capture major differences in intracellular expression between groups, rather than subtle differences in expression pattern or character within groups.\n\nFor target-binding experiments in HeLa cells, images were taken using the same Leica DMI3000B microscope and \u00d720 objective lens roughly 48 hr after transfection. Excitation time was kept consistent between samples.\n\nImaging of parent and mutant nanobodies to evaluate mutational stabilization was carried out via automated confocal imaging. Using a PE Opera high-throughput confocal imaging system (https://www.flyrnai.org/supplement/BRO_OperaHighContentScreeningSystem.pdf) provided by the Drosophila RNAi Screening Center (https://fgr.hms.harvard.edu/), live, transfected HEK293T cells were imaged in 96-well plates using a water-immersion \u00d740 objective. Ten fields for image acquisition, standardized across each well, were assigned prior to imaging. Through an automated protocol, six Z stacks were taken in each field in both red and blue channels, spanning 12 \u00b5m. Following image acquisition, max-projection images were generated, and nanobody-TagBFP signal was evaluated.\n\n### Retinal electroporation\n\nWild-type and mutant CAG-nanobody-TagBFP plasmids were each electroporated along with control CAG-dsRed plasmid (1.5 \u00b5g/ml total DNA) into the retina of P2 mouse pups. For electroporations to look at endogenous GFAP engagement, the rd1 mouse model of retinal degeneration was used (Chang et al., 2007). For each condition, three pups received wild-type nanobody plasmid, and three pups received mutant nanobody plasmid. Electroporation was executed according to the methodology described in Matsuda and Cepko, 2004.\n\n### Retinal histology and imaging\n\nElectroporated retinas were harvested at P12 (P20 for rd1 mice). Retinas were fixed in 4% formaldehyde for 30 min, transferred to phosphate-buffered saline (PBS) for 10 min, and transferred to 15% sucrose in PBS for 30 min, all at room temperature. Retinas were then embedded in OCT, flash frozen, and stored at \u221280\u00b0C. 12 \u00b5m sections were made using a cryostat, placed on glass slides, and mounted with Fluoromount-G mounting media (Thermo Fisher, 00-4958-02). Retinas from rd1 mice were stained for GFAP using chicken anti GFAP primary antibody (1:3000, Aves Labs, cat.#: GFAP) and secondary antibody conjugated to AlexaFluor 488 (Jackson ImmunoResearch). Images were taken using a Nikon Ti2 inverted microscope (spinning disk confocal) with a \u00d740 oil immersion objective lens.\n\n### Bacterial expression and imaging\n\nNanobody sequences were cloned into the bacterial expression vector pRsetB in frame and fused to mCherry. Plasmid was transformed into BL21(DE3) E. coli (New England Biolabs, C2527), and individual colonies were picked into 5 ml LB and cultured overnight at 37\u00b0C and shaken at 250 RPM. In the morning, 1 ml of each culture was added to 4 ml of M9 minimal media, and IPTG was added to a final concentration of 250 \u00b5M to induce protein expression. Induction cultures were incubated for 4 hr at 37\u00b0C and 250 RPM. 40 \u00b5l of induced culture was pipetted onto 3% M9-agar on a glass slide and covered with a glass coverslip. Bacteria were imaged with a Nikon Eclipse e1000 microscope using a \u00d760 oil immersion objective lens. All images were taken with consistent excitation time. Experiments were performed in triplicate.\n\n### Image processing\n\nImages were processed using ImageJ. Images from Figures 1 and 7 received the following processing and no other adjustments: (1) images were converted to 8-bit, (2) Z stacks for each channel (red and blue) were merged to create maximum Z projections, and (3) maximum Z projections for each channel were merged with one another, with red images inserted into the red channel, and blue images inserted into the green channel for greater contrast. Retinal images in Figure 9A received the same processing, but received cropping and additional contrast adjustment (all images received consistent adjustment to contrast). Retinal images in Figure 10 received the same processing, but with blue images inserted into the gray channel, and green images inserted into the green channel. Images from Figures 8 and 9B (without Z stacks) were similarly converted to 8-bit, were color-channel merged, and received equally administered contrast adjustment. Images from Figure 8 were cropped.\n\n### Image quantification\n\nPixel intensity quantification presented in Figure 8\u2014figure supplement 1B, C were carried out in ImageJ, and measured across three uncropped images for each condition, taken from separate biological replicate experiments. Binary masks for H2B-mCherry and nanobody-TagBFP images were generated by converting images to 8-bit, enhancing contrast, and adjusting threshold using the standardized \u2018triangle\u2019 setting. Background was eliminated from otherwise unprocessed images via subtraction with generated binary masks. Normalized intensity measurements (Figure 8\u2014figure supplement 1B) were generated by measuring total pixel values of each background-subtracted image, and calculating the ratio of nanobody (blue) to H2B-mCherry (red) signal for paired images.\n\nFor nuclear colocalization measurements (Figure 8\u2014figure supplement 1C), cells lacking both markers needed to be excluded from analysis. This was achieved using binary masks and the morphological reconstruction function provided through the MorphoLibJ plugin (https://imagej.net/plugins/morpholibj), using H2B-mcherry signals as a marker and nanobody-TagBFP signals as a mask. Plugin results were validated manually to ensure cells were properly included/excluded. Measurement of total nanobody-TagBFP pixel values for background-subtracted images, and of pixel values colocalizing with paired H2B-mcherry binary masks gave the nuclear fraction of total nanobody-TagBFP pixel values for each image (+/\u2212target).\n",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "a555e71e-acd5-4203-a55a-688da75c29f6",
+      "submission_id": "b1cd0d86-9655-4981-88c7-91ab0cd307f6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Liqun Luo, https://ror.org/00f54p054 Howard Hughes Medical Institute, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68253.sa0](https://doi.org/10.7554/eLife.68253.sa0)\n\nThis important study developed an innovative and powerful approach for improving the stability of nanobodies when expressed in an intracellular environment. The authors provide convincing evidence that by mutating key amino acids, they could enhance the stability of a majority of nanobodies in an intracellular environment without affecting their binding specificity. This study will be of general interest to a growing number of researchers using nanobodies as tools for their biological investigations.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Liqun Luo, https://ror.org/00f54p054 Howard Hughes Medical Institute, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68253.sa1](https://doi.org/10.7554/eLife.68253.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A general approach for stabilizing nanobodies for intracellular expression\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Olga Boudker as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Aashish Manglik (Reviewer #1); James S Trimmer (Reviewer #2).\n\nAll reviewers appreciate the value of this study, and we invite you to submit a revision that will address reviewers' critiques. The reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The consensus after discussions among the reviewers is that the revised manuscript should include quantification of the expression levels, stability, and solubility of the nanobodies when expressed as intrabodies.\n\n2) Demonstrating target binding inside the cells is retained in nanobody mutants that are enhanced in the above characteristics will be necessary. One specific suggestion is to use your nuclear localization assay for the 6 nanobodies to quantify the fraction of nanobody fluorescence that is nuclear localized in cells with or without nuclear-localized target expression, which will yield some insights as to the relative binding affinity of the various mutant isoforms.\n\n3) Please also address the specific critiques of reviewers below as much as possible.\n\nWe look forward to a revised manuscript.\n\nReviewer #1 (Recommendations for the authors):\n\nSeveral considerations may help clarify and put this work into broader context:\n\nIt is a bit unclear how the authors chose their set of nanobodies \u2013 currently there are more than 75 unique nanobodies in the PDB. Some of the nanobodies in the dataset are very closely related \u2013 was there any filtering done to remove nanobodies that are very similar in sequence?\n\nIt is also a bit unclear what species these nanobodies were derived from. Prior work has demonstrated that llama derived nanobodies are generally more stable than those derived from alpaca or camels. Is the consensus framework closest to the germline sequences of any specific animal? Does this reflect the bias of animals typically used for nanobody generation?\n\nReviewer #2 (Recommendations for the authors):\n\nThe impact statement should be revised to explicitly state that this study was limited to a small subset of existing nanobodies and may not broadly hold for all: \"A majority of the set of nanobodies tested here are unstable when expressed intracellularly\u2026\u2026\"\n\nThe authors should somehow address, perhaps bioinformatically, whether the 75 nAbs they interrogated are representative of nanobodies in general. Perhaps these particular nanobodies were developed/screened/selected for their exceptional properties when expressed extracellularly, in that they represent those that are capable of forming high-quality crystals. At worst this could be a negative selection for those that function as intrabodies, or at least may be biased relative to nanobodies in general as to their utility as intrabodies.\n\nHow do the authors distinguish between nanobodies that are degraded versus those that are just not expressed? They say several replicates were performed, but were independent clones and/or plasmid preps tested?\n\nShould cite extensive analogous work of Honniger and Pluckthun (and others) on consensus sequence-based stabilization of ScFVs.\n\nAs a final figure a simple flow chart or dichotomous key that researchers could use to triage their nanobodies would be extremely useful to researchers. This would distiill their recommendations into a simple form. For example,\n\n1: is there a X residue at position Y, if yes mutagenize to Z. If no go to 2.\n\n2: is there a XX residue at position YY, if so mutagenize to ZZ. If not go to 3. Etc. for all key elements.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The authors need to find a more quantitative and informative assay for measuring solubility and this needs to be measured while controlling for expression level.\n\n2. Affinity needs to be measured in a quantitative and accurate manner using SPR or a similar method.\n\n3. Affinity needs to be measured for all stabilized nanobodies and compared to the measurement before stabilization.\n\n4. At least one of the stabilize nanobodies needs to be tested against its endogenous target to determine if the nanobody binds sufficiently to immunoprecipitate or colocalize with target.\n",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4a394631-8a1d-4188-b5ac-acf01864dbc6",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C1",
+      "claim": "Nanobodies are amino terminal fragments derived from a special class of antibody lacking light chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies, amino terminal fragments derived from a special class of antibody lacking light chains (Hamers-Casterman et al., 1993), are the smallest antibody derivatives that retain full antigen-binding function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hamers-Casterman et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "11416c5a-300f-4471-9d83-1b71a79830a4",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C2",
+      "claim": "Nanobodies are the smallest antibody derivatives that retain full antigen-binding function.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies, amino terminal fragments derived from a special class of antibody lacking light chains (Hamers-Casterman et al., 1993), are the smallest antibody derivatives that retain full antigen-binding function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hamers-Casterman et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "d69f902d-0988-4538-9713-82e431d36530",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C3",
+      "claim": "Nanobodies are composed of a single variable domain of the heavy chain (VHH).",
+      "claim_type": "EXPLICIT",
+      "source": "Composed of a single variable domain of the heavy chain (VHH), nanobodies boast several features that make them attractive tools for a range of applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established structural knowledge about nanobodies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "39e24c98-ba8f-4d0c-ac98-f83715da4b6e",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C4",
+      "claim": "Nanobodies have become invaluable as protein crystallization chaperones to resolve high-resolution crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their compact binding interfaces, they have become invaluable as protein crystallization chaperones to resolve high-resolution crystal structures (Muyldermans, 2013; Steyaert and Kobilka, 2011; Staus et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Muyldermans, 2013; Steyaert and Kobilka, 2011; Staus et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "6fec7417-4c35-4209-9f3f-77f3922e4180",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C5",
+      "claim": "Nanobodies have modular serum half-life and superior tissue penetration that are attractive characteristics for the development of therapeutic biologics.",
+      "claim_type": "EXPLICIT",
+      "source": "Their modular serum half-life and superior tissue penetration are attractive characteristics for the development of therapeutic biologics (Van Audenhove and Gettemans, 2016; Jov\u010devska and Muyldermans, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Van Audenhove and Gettemans, 2016; Jov\u010devska and Muyldermans, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "988075f3-0869-4f87-8145-b4f6d1a9ef1c",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C6",
+      "claim": "Full-length antibodies and bulkier antibody fragments are not normally amenable to intracellular expression, partially owing to the reducing environment of the cytoplasm that prevents the formation of structurally crucial disulfide bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length antibodies, as well as bulkier antibody fragments, are not normally amenable to intracellular expression, partially owing to the reducing environment of the cytoplasm that prevents the formation of structurally crucial disulfide bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about antibody structure and cytoplasmic environment",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "d371eb76-1ae2-4272-b1aa-95d3ac9f8812",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C7",
+      "claim": "Several groups have detailed intracellular nanobody expression to facilitate live imaging of subcellular factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Several groups have detailed intracellular nanobody expression to facilitate live imaging of subcellular factors (Traenkle et al., 2015; Maier et al., 2015; Buchfellner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Traenkle et al., 2015; Maier et al., 2015; Buchfellner et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "a8336bdb-b819-424e-9b8c-73a342c1de81",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C8",
+      "claim": "75 unique nanobody sequences from crystal structures uploaded to the Protein Data Bank (PDB) were cloned into mammalian expression vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, 75 unique nanobody sequences from crystal structures uploaded to the Protein Data Bank (PDB) were cloned into mammalian expression vectors, fused C-terminally to a fluorescent protein (FP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental methodology performed in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "d54499c0-04ae-4fa0-9d3b-05032ab4667f",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C9",
+      "claim": "Many nanobodies degrade and/or aggregate within the cytoplasm and nucleus, while others appear stable and soluble.",
+      "claim_type": "EXPLICIT",
+      "source": "Transfection and live-cell fluorescence imaging of these nanobody-FP fusions in both 293T and HeLa cells revealed that many nanobodies degrade and/or aggregate within the cytoplasm and nucleus, while others appear stable and soluble (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observations and Figure 1A showing representative images",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "05543733-c8b5-485e-8d17-95f9784d7077",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C10",
+      "claim": "33 out of 75 nanobody sequences exhibited strong, diffuse fluorescent signal, expected of well-expressed and intracellularly stable and soluble protein.",
+      "claim_type": "EXPLICIT",
+      "source": "33 out of 75 sequences exhibited strong, diffuse fluorescent signal, expected of well-expressed and intracellularly stable and soluble protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "5e88e8f2-27cb-4fdf-9af3-d75d81d66a79",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C11",
+      "claim": "42 out of 75 nanobody sequences exhibited intracellular phenotypes suggestive of intracellular instability, including low or absent fluorescent signal coincident with varying degrees of aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 42 out of 75 sequences exhibited intracellular phenotypes suggestive of intracellular instability, including low or absent fluorescent signal coincident with varying degrees of aggregation (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from experimental observations shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "2dc05866-9786-432e-a49a-c2d7338da73a",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C12",
+      "claim": "Nanobodies are composed of three variable loops (CDR1\u20133) and four framework regions (FR1\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies are composed of three variable loops (CDR1\u20133), responsible for the majority of target-specific interaction, and four framework regions (FR1\u20134), forming the conserved framework structure of the nanobody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established structural knowledge about nanobodies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "64e67671-8d01-4416-9e40-03176642e49e",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C13",
+      "claim": "The average CDR3 loop length was 16.4 amino acids for the stable group and 16.9 amino acids for the unstable group.",
+      "claim_type": "EXPLICIT",
+      "source": "While there was little difference in average CDR3 loop length between the groups (16.4 amino acids for the stable group and 16.9 amino acids for the unstable group), one difference related to CDR3 stood out",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from sequence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "2898432a-3636-44c3-90b9-9ddafa0cbd0f",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C14",
+      "claim": "17 out of 75 nanobodies contained a CDR3 cysteine that normally forms a disulfide bond tethering CDR3 to either CDR1 or FR2, and all 17 were in the unstable group.",
+      "claim_type": "EXPLICIT",
+      "source": "17/75 nanobodies contained a CDR3 cysteine that normally forms a disulfide bond tethering CDR3 to either CDR1 (first variable loop) or FR2 (second framework region); all 17 were in the unstable group (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from sequence analysis shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "e5c8196b-3c36-49a9-b1d6-d8d1a4c81d31",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C15",
+      "claim": "Disulfides do not form when nanobodies are expressed in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Because disulfides do not form when nanobodies are expressed in the cytoplasm, this feature may represent a structural liability for intracellular expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about the reducing environment of the cytoplasm",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "09c30cbc-d52f-466d-8e39-fa55d0f50289",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C16",
+      "claim": "Stable and unstable consensus sequences for the framework region were identical except at position 52, where the most common amino acid across stable nanobodies was Phe and across unstable nanobodies was Gly.",
+      "claim_type": "EXPLICIT",
+      "source": "Stable and unstable consensus sequences for the framework region were identical except at one position, amino acid 52 (IMGT numbering), where the most common amino acid across stable nanobodies was Phe and across unstable nanobodies was Gly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from sequence analysis comparing stable and unstable nanobodies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "0e0e148d-a28c-4c6f-b7a1-41b7b9a557ac",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C17",
+      "claim": "Position 52 is one of four hallmark framework positions cited as differentiating VHs and VHHs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, position 52 is one of four hallmark framework positions cited as differentiating VHs (heavy chain variable regions of conventional antibodies) and VHHs (Muyldermans, 2013) (heavy chain variable regions of heavy-chain-only antibodies, analogous to nanobody).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Muyldermans, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "560a7bc6-60c9-47b6-b9bc-51881012b858",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C18",
+      "claim": "52Gly has been shown to enhance nanobody solubility, but at the expense of protein yields in E. coli, which may point to decreased stability.",
+      "claim_type": "EXPLICIT",
+      "source": "52Gly has been shown to enhance nanobody solubility, but at the expense of protein yields in E. coli, which may point to decreased stability (Davies and Riechmann, 1994; Davies and Riechmann, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Davies and Riechmann, 1994; Davies and Riechmann, 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "9d0d2b88-0d14-4d8f-a49f-90b44965388a",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C19",
+      "claim": "12 framework positions with residues that were significantly enriched in either stable or unstable groups were identified using Fisher's exact test.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying a Fisher's exact test, 12 framework positions with residues that were significantly enriched in either group were identified, with 4 of those positions having a specifically enriched residue in both groups (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis result shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "927899e2-7d08-423b-8f8c-f80f9869fc39",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C20",
+      "claim": "52Gly was strongly enriched in the unstable group (19/23 occurrences in unstable nanobodies).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, 52Gly was strongly enriched in the unstable group (19/23 occurrences in unstable nanobodies)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "3789b6c3-0c4c-471d-b694-048367d91c61",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C21",
+      "claim": "55Cys was strongly enriched in the unstable group (9/9 occurrences in unstable nanobodies).",
+      "claim_type": "EXPLICIT",
+      "source": "as well as 55Cys, a cysteine that normally forms a disulfide bond with a CDR3 cysteine in a subset of nanobodies, as noted above (9/9 occurrences in unstable nanobodies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "e4893bc9-06dd-4cc9-b4ea-9440c34c2ff3",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C22",
+      "claim": "54Ser emerged as a strongly enriched unstable residue likely to drive instability (13/14 occurrences in unstable nanobodies).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, 54Ser emerged as a strongly enriched unstable residue likely to drive instability (13/14 occurrences in unstable nanobodies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from statistical analysis with inference about functional impact",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "3c97d2ca-aa84-4a74-8004-3c25a41ee469",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C23",
+      "claim": "Position 54 points its functional group into the hydrophobic core of the nanobody, and is usually occupied by a small hydrophobic amino acid (93% of stable nanobodies examined contain 54Ala).",
+      "claim_type": "EXPLICIT",
+      "source": "Position 54 points its functional group into the hydrophobic core of the nanobody, and is usually occupied by a small hydrophobic amino acid (93% of stable nanobodies examined contain 54Ala).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Combines structural knowledge with quantitative data from this study",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "f05131f3-9bf6-4d1d-9603-ed58704dd31d",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C24",
+      "claim": "A hydrophilic substitution at position 54 is likely to contribute to destabilization of the hydrophobic core.",
+      "claim_type": "EXPLICIT",
+      "source": "A hydrophilic substitution at position 54 is likely to contribute to destabilization of the hydrophobic core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on structural knowledge and observed data",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "15b2e6f0-234c-4c1c-8f62-aef61244ff10",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C25",
+      "claim": "Each unstable nanobody had at least one of seven residues that were identified as significantly enriched in the unstable group.",
+      "claim_type": "EXPLICIT",
+      "source": "Each unstable nanobody had at least one of seven residues that were identified as significantly enriched in the unstable group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from statistical analysis of sequence data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "4a344f92-a78b-42cf-919e-75b36b85a846",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C26",
+      "claim": "A threshold of \u226580% positional conservation was applied to generate a partial consensus sequence of the most highly conserved positional residues across stable nanobodies.",
+      "claim_type": "EXPLICIT",
+      "source": "A threshold of \u226580% positional conservation was applied to generate a partial consensus sequence of the most highly conserved positional residues across stable nanobodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodology used in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "d7a5f2e8-74f2-43be-b148-182621126f70",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C27",
+      "claim": "Applying conservation-based mutagenesis to all 42 intracellularly unstable nanobodies yielded mutants with a range of between 2 and 12 changes per nanobody, with an average mutational load of 5.7 changes per nanobody.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying these changes to all 42 intracellularly unstable nanobodies yielded mutants with a range of between 2 and 12 changes per nanobody, with an average mutational load of 5.7 changes per nanobody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from mutagenesis approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "3ca4f162-3365-4eb2-aa81-ecd24319c075",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C28",
+      "claim": "26 out of 42 nanobodies had been effectively stabilized via targeted mutagenesis, as illustrated by strong fluorescent signal and a total absence of punctate aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent imaging revealed that 26/42 nanobodies had been effectively stabilized via targeted mutagenesis, as illustrated by strong fluorescent signal and a total absence of punctate aggregates (Figure 7A, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from experimental observations shown in Figure 7A, C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "b8a4c1fd-d135-429d-83f8-eae58dc2a713",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C29",
+      "claim": "6 out of 42 nanobodies exhibited improvement compared to their wild-type parent with respect to aggregation levels and soluble protein fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Another 6/42 nanobodies exhibited improvement compared to their wild-type parent with respect to aggregation levels and soluble protein fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "90293ad7-f705-4159-9bc3-cf61ce74ce60",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C30",
+      "claim": "10 out of 42 nanobodies exhibited no improvement from mutagenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "10/42 nanobodies exhibited no improvement from mutagenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "b4d93204-179e-4a10-ba22-5eb3664e7fd1",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C31",
+      "claim": "13 out of 16 nanobodies that were not effectively stabilized via mutagenesis had 52Gly.",
+      "claim_type": "EXPLICIT",
+      "source": "Aligning the 42 mutant sequences, grouping sequences that were effectively, partially, or not stabilized via mutagenesis, a striking correlation emerged: 13/16 nanobodies that were not effectively stabilized via mutagenesis had 52Gly (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from sequence analysis shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "c557c210-cd2a-48a1-b31f-ff95793829b9",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C32",
+      "claim": "11 out of 13 additional nanobodies were effectively stabilized after adding up to two additional changes (Gly52Phe and X90Gln).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this additional round of mutagenesis, 11/13 additional nanobodies were effectively stabilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from second round of mutagenesis experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "c5e9d798-d762-411e-af68-cd7f5cd486de",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C33",
+      "claim": "In total, 37 out of 42 previously intracellularly unstable nanobodies were rendered stable and soluble.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 37/42 previously intracellularly unstable nanobodies were rendered stable and soluble (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative summary result shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "af33d562-9cac-4b7d-a68a-c080ee6b7685",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C34",
+      "claim": "Ser54Ala was found to be sufficient to stabilize nanobody 3K74 on its own (originally stabilized with eight mutations).",
+      "claim_type": "EXPLICIT",
+      "source": "After testing several mutation variants for each nanobody, Ser54Ala was found to be sufficient to stabilize 3K74 on its own (originally stabilized with eight mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from systematic mutation testing experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "fd3dc1a0-2968-4583-8a51-1bd91b44175d",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C35",
+      "claim": "Ser53Val stabilized nanobody 1KXT by itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Ser53Val similarly stabilized 1KXT by itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from mutation testing experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "61e79941-6ead-48aa-a1a9-9b741ea6a953",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C36",
+      "claim": "Nanobodies 3V0A and 4MQS required only Ser54Ala and one additional mutation each to achieve stability (originally stabilized with 11 and 7 mutations, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "3V0A and 4MQS required only Ser54Ala and one additional mutation each to achieve stability (originally stabilized with 11 and 7 mutations, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from systematic mutation testing experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "74411821-ad10-4456-87b2-38f3af4136ed",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C37",
+      "claim": "4WEN was effectively stabilized by 68Tyr alone, when it had originally received five mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, 4WEN was effectively stabilized by 68Tyr alone, when it had originally received five mutations (Figure 7D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from mutation testing experiments shown in Figure 7D, E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "c9f79078-974d-4b33-8863-358af87d892c",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C38",
+      "claim": "1KXQ was effectively stabilized by 68Tyr alone, when it had originally received both Ser68Tyr and Gln80Arg mutations in addition to five others.",
+      "claim_type": "EXPLICIT",
+      "source": "1KXQ, which originally received both Ser68Tyr and Gln80Arg mutations in addition to five others, was effectively stabilized by 68Tyr alone, again illustrating the importance of 68Tyr for stability and suggesting only circumstantial importance of 80Arg (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from mutation testing experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "c1ef2ece-afef-42d7-b36e-b84471f093f9",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C39",
+      "claim": "The great majority of interacting residues across nanobody framework regions are located in the most highly variable framework positions, positions omitted from the partial consensus mutagenesis approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of these interfaces revealed that the great majority of interacting residues across nanobody framework regions are located in the most highly variable framework positions, positions omitted from our partial consensus mutagenesis approach (Figure 8\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from analysis of crystal structure data shown in Figure 8\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "10efbae2-44a4-4350-9c4b-2c97b7e55b6c",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C40",
+      "claim": "All six mutants stabilized through partial consensus mutagenesis were able to bind target.",
+      "claim_type": "EXPLICIT",
+      "source": "All six mutants stabilized through partial consensus mutagenesis were able to bind target (Figure 8A and Figure 8\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from target binding experiments shown in Figure 8A and Figure 8\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "f2d71ed1-123b-4a52-aaf1-a71c0144a852",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C41",
+      "claim": "4 out of 6 wild-type nanobodies exhibited increased signal when coexpressed with target.",
+      "claim_type": "EXPLICIT",
+      "source": "4/6 wild-type nanobodies exhibited increased signal when coexpressed with target (Figure 8\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from target binding experiments shown in Figure 8\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "d46db641-98ac-4c04-a4bc-f2dde7e6dd23",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C42",
+      "claim": "Full-consensus mutagenesis resulted in significant reduction of nuclear nanobody signal fraction in the presence of NLS target for 5 out of 6 tested nanobodies, suggestive of a reduction in target binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-consensus mutagenesis, while stabilizing (Figure 8A and Figure 8\u2014figure supplement 1B), resulted in significant reduction of nuclear nanobody signal fraction in the presence of NLS target for 5/6 tested nanobodies, suggestive of a reduction in target binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from target binding experiments shown in Figure 8A and Figure 8\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "d5ede839-6fa8-48d8-b5f3-f93b688a7768",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C43",
+      "claim": "Mutationally stabilized 3V0A-TagBFP showed strong TagBFP signal in cells electroporated in the murine retina, while wild-type 3V0A-TagBFP showed little to no soluble TagBFP signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Little to no soluble TagBFP signal was observed in cells electroporated with wild-type 3V0A-TagBFP. However, strong TagBFP signal was observed in cells electroporated with partial consensus mutant 3V0A-TagBFP, mirroring observations in cultured cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from in vivo retinal electroporation experiments shown in Figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "dbd977cd-4dec-4315-96c2-e7d8513aff27",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C44",
+      "claim": "Mutationally stabilized nanobodies are stable in multiple, distinct cell types including rod photoreceptors, bipolar cells, and Mueller glia.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells included highly specialized sensory neurons (rod photoreceptors), interneurons (bipolar cells), and glia (Mueller glia), suggesting that mutationally stabilized nanobodies are stable in multiple, distinct cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental observations in retinal electroporation experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "39fe4ef4-16eb-4143-885b-9a6daf347c66",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C45",
+      "claim": "NBE9 is a nanobody that recognizes an endogenous protein, glial fibrillary acidic protein (GFAP), present in retinal Mueller glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Fortunately, we had in our collection a nanobody, NBE9 (Li et al., 2012), that recognizes an endogenous protein, glial fibrillary acidic protein (GFAP), present in retinal Mueller glial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "1f101066-e4c7-4eb2-9c9b-c1d93620c89f",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C46",
+      "claim": "In the rd1 mouse model, rod photoreceptors progressively degenerate starting around postnatal day 8.",
+      "claim_type": "EXPLICIT",
+      "source": "In the rd1 model, rod photoreceptors progressively degenerate starting around postnatal day 8 (Chang et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chang et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "cf353759-738e-4233-994b-72d2fcab2042",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C47",
+      "claim": "GFAP expression is upregulated in Mueller glia in the rd1 mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "In the rd1 model, rod photoreceptors progressively degenerate starting around postnatal day 8 (Chang et al., 2007), and GFAP expression is upregulated in Mueller glia (Goel and Dhingra, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goel and Dhingra, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "01fbbd91-9e30-4f51-9253-fb24082e1427",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C48",
+      "claim": "Wild-type NBE9 signal was almost completely absent within electroporated retinas, with the only signal observed in spherical accumulations in the GCL where it colocalized with accumulated GFAP protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with its instability, WT NBE9 signal was almost completely absent within electroporated retinas. The only signal observed was in spherical accumulations in the GCL, where it colocalized with accumulated GFAP protein (Figure 10B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from in vivo retinal electroporation experiments shown in Figure 10B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "cfae0e51-12a8-4f7d-be6a-61a9ea38ae08",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C49",
+      "claim": "A NBE9 variant with the single mutation S54A both rescued expression of the nanobody and resulted in a striking expansion of the signal seen in the spherical accumulations of GFAP within the GCL.",
+      "claim_type": "EXPLICIT",
+      "source": "A NBE9 variant with the single, strongly stabilizing mutation S54A, both rescued expression of the nanobody and resulted in a striking expansion of the signal seen in the spherical accumulations of GFAP within the GCL (Figure 10C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from in vivo retinal electroporation experiments shown in Figure 10C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "91b5d944-a4f8-4504-9715-98ea25490511",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C50",
+      "claim": "Both wild-type and mutationally stabilized NBE9 appeared to colocalize with GFAP in Mueller glial endfeet.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, both wild-type and mutationally stabilized NBE9 appeared to colocalize with GFAP in Mueller glial endfeet, with variants differing in expression level and, perhaps, propensity to form aggregates with GFAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental observations in retinal electroporation experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "3af5c137-3c13-495c-983b-0d174a0357b8",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C51",
+      "claim": "All five wild-type nanobodies tested in bacteria exhibited hallmarks of instability.",
+      "claim_type": "EXPLICIT",
+      "source": "All five wild-type nanobodies exhibited hallmarks of instability in bacteria (Figure 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from bacterial expression experiments shown in Figure 11",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "9fdf49f0-29da-4eab-8a41-b588841e754b",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C52",
+      "claim": "4 out of 5 wild-type nanobodies exhibited protein aggregation as illustrated by focal inclusion bodies, in addition to diminished cytoplasmic fluorescence in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "4/5 wild-type nanobodies exhibited protein aggregation as illustrated by focal inclusion bodies, in addition to diminished cytoplasmic fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from bacterial expression experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "2962748f-112c-488f-a3b4-bc8384050b42",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C53",
+      "claim": "All five mutationally stabilized nanobody variants exhibited a marked increase in fluorescence level in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "All five mutationally stabilized nanobody variants exhibited a marked increase in fluorescence level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from bacterial expression experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "4aaf6490-0bb2-4ace-80d0-262b01972ca2",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C54",
+      "claim": "1ZV5, 4WEN, and 1RJC mutants showed no signs of protein aggregation in bacteria, in contrast to their wild-type parents.",
+      "claim_type": "EXPLICIT",
+      "source": "1ZV5, 4WEN, and 1RJC mutants showed no signs of protein aggregation, in contrast to their wild-type parents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from bacterial expression experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "19880de9-2a36-4efc-88e6-64cb8b80beec",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C55",
+      "claim": "Nanobodies often rely on direct framework engagement for target binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies often rely on direct framework engagement for target binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about nanobody binding modes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "dedf8042-b8fe-46fc-86bc-743fc9d6ba59",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C56",
+      "claim": "Positional sequence variability across nanobody frameworks correlates with target interface formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that positional sequence variability across nanobody frameworks correlates with target interface formation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from analysis of crystal structure data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "2442af34-0d40-4631-9d47-cbe7fc189237",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C57",
+      "claim": "Maintaining framework positions of high sequence variability is important for preserving target binding in some, perhaps many, cases.",
+      "claim_type": "EXPLICIT",
+      "source": "and that maintaining framework positions of high sequence variability is important for preserving target binding in some, perhaps many, cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from target binding experiments and structural analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "5c775a96-a972-4d1d-9b91-1776773de48a",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C58",
+      "claim": "Nanobody 3G9A has a large CDR3 loop that is normally anchored by an extra disulfide bond to FR2.",
+      "claim_type": "EXPLICIT",
+      "source": "We were particularly interested to observe target binding for 3G9A, which has a large CDR3 loop that is normally anchored by an extra disulfide bond to FR2, assumed to be lost when translated in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural knowledge and inference about cytoplasmic conditions",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "8cdd2832-5fde-4295-80db-0a143b47355b",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C59",
+      "claim": "Nanobodies 3K1K and 3K74 normally engage their targets along a concave framework interface, with residues across FR2 forming direct contacts with target.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of these nanobodies, 3K1K and 3K74, normally engage their targets along a concave framework interface (Figure 8B). Specifically, residues across FR2 form direct contacts with target, representing a common mode of nanobody-target binding (Figure 8B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on crystal structure data shown in Figure 8B, C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "917bbe6e-1693-4642-816d-5cdf031f638b",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C60",
+      "claim": "Nanobody 5IVN (also known as nanobody BC2) targets a short N-terminal stretch of \u03b2-catenin, representing a rare epitope: a short, linear peptide amenable for use as an affinity tag.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobody 5IVN (also known as nanobody BC2) targets a short N-terminal stretch of \u03b2-catenin, representing a rare epitope: a short, linear peptide amenable for use as an affinity tag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about 5IVN",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "e8e5ec5d-9c2d-45f4-8334-15a7d96a4a5d",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C61",
+      "claim": "5IVN was found to be unstable when expressed in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Corroborating previous findings, we found 5IVN to be unstable when expressed in cells (Traenkle et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation supported by citation to Traenkle et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "298b9c80-9185-42ab-851b-ecceb547fcea",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C62",
+      "claim": "While mutagenesis stabilized 5IVN for cellular expression, it did not facilitate intracellular binding of its epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, while our mutagenesis approach stabilized 5IVN for cellular expression, it did not facilitate intracellular binding of its epitope as assessed by lack of co-localization with its target following cellular co-transfection of 5IVO-TagBFP and NLS-mCherry-epitope (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from target binding experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "be0d59fc-036f-49dd-b68b-196c3f4fb4b8",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C63",
+      "claim": "The lack of binding for 5IVN relates to loss of a crucial extra disulfide bond that normally orients its highly conformationally precise paratope, but that does not form intracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect this lack of binding relates to loss of a crucial extra disulfide bond that normally orients its highly conformationally precise paratope, but that does not form intracellularly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on structural knowledge and experimental observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "eb7565cc-79e2-4c6b-b74b-19d67bf6d5ef",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C64",
+      "claim": "The disulfide bond in 5IVN has previously been shown to be required for target binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This disulfide bond has previously been shown to be required for target binding (Braun et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Braun et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "4ef20dc7-005b-42ab-9694-e03865e29e33",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C65",
+      "claim": "Nanobodies stabilized by the partial consensus-based mutagenesis approach are likely to retain target-binding function in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these target-binding experiments suggest that nanobodies stabilized by the partial consensus-based mutagenesis approach developed here are likely to retain target-binding function in cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from target binding experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "8099983f-92c8-47a2-bba2-7de1c04369e9",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C66",
+      "claim": "Certain conformational paratopes may not be amenable for intracellular recapitulation.",
+      "claim_type": "EXPLICIT",
+      "source": "although certain conformational paratopes may not be amenable for intracellular recapitulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental observations with 5IVN",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "559245ec-b6bf-4100-a8a9-1ea91b58e78e",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C67",
+      "claim": "Conventional antibodies engage their targets in a largely stereotyped fashion, relying heavily on variable loops for target interaction, with minimal direct framework contribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional antibodies engage their targets in a largely stereotyped fashion, relying heavily on variable loops for target interaction, with minimal direct framework contribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about conventional antibody binding",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "49b39988-2e5a-4964-a894-d8cdc3a2beae",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C68",
+      "claim": "Nanobodies exhibit a greater paratope diversity than conventional antibodies, and contribution of framework residues to binding is more common.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, nanobodies exhibit a greater paratope diversity, and contribution of framework residues to binding is more common (Mitchell and Colwell, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mitchell and Colwell, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "98d38116-9c8e-480c-9d35-b50a81d440db",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C69",
+      "claim": "Mutating nanobodies to adhere to the partial consensus framework likely minimizes impact on target binding, compared to strategies that rely on grafting variable loops onto established nanobody frameworks.",
+      "claim_type": "EXPLICIT",
+      "source": "While the possibility that mutation of non-interacting residues will generate conformational changes that impact target binding cannot be ruled out, this finding suggests that mutating nanobodies to adhere to our partial consensus framework likely minimizes impact on target binding, compared to strategies that rely on grafting variable loops onto established nanobody frameworks (Saerens et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from structural analysis with citation to Saerens et al., 2005",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "95887078-b079-47eb-b778-947d994b15a0",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C70",
+      "claim": "Pluckthun and colleagues were the first to investigate stability and solubility differences between the consensus sequences of distinct families of human immunoglobulin variable domains in non-reducing in vitro conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consensus-based stabilization has been applied to antibody fragments in the past; Pluckthun and colleagues were the first to investigate stability and solubility differences between the consensus sequences of distinct families of human immunoglobulin variable domains in non-reducing in vitro conditions, as well as differences in expression in non-reducing bacterial periplasm (Knappik et al., 2000; Ewert et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Knappik et al., 2000; Ewert et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "a53a7a93-0fab-4af6-9a3f-5fccf2d94d09",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C71",
+      "claim": "Steipe and Wirtz applied consensus framework mutagenesis to VL and VH domains to enhance intracellular stability for conventional FV fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Steipe and Wirtz applied consensus framework mutagenesis to VL and VH domains to enhance intracellular stability for conventional FV fragments (Ohage et al., 1999; Wirtz and Steipe, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ohage et al., 1999; Wirtz and Steipe, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "fd719253-6679-4584-9cf9-d09c767285d9",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C72",
+      "claim": "Conventional antibodies are amenable for loop grafting onto full donor frameworks due to their near exclusive reliance on CDRs for binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach was successful as conventional antibodies are amenable for loop grafting onto full donor frameworks due to their near exclusive reliance on CDRs for binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about conventional antibody binding",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "713fd9fa-407d-43d7-8c35-b98aebf2f5ec",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C73",
+      "claim": "Some nanobodies were able to effectively bind their targets despite their observed instability when target is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "While investigating intracellular target binding, we noted that some nanobodies were able to effectively bind their targets despite their observed instability when target is absent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from target binding experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "a6225d02-84fe-4dda-a0fc-cb1169f7a1a6",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C74",
+      "claim": "The presence of E. coli dihydrofolate reductase (DHFR) had a largely stabilizing effect on nanobodies 3K74 and 4I13.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of these nanobodies, 3K74 and 4I13, exhibited robust target binding in both their wild-type and mutationally stabilized forms. This suggested that the presence of their target, E. coli dihydrofolate reductase (DHFR), had a largely stabilizing effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "109d5eca-5134-4a0e-abce-42941d60a3b8",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C75",
+      "claim": "The laboratory has previously described nanobody conditional stability in an engineered context.",
+      "claim_type": "EXPLICIT",
+      "source": "Our laboratory has previously described nanobody conditional stability in an engineered context (Tang et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "93fd853b-18fd-4389-9ec8-0d04f7d49f8a",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "claim_id": "C76",
+      "claim": "It is expected for a subset of nanobodies to exhibit target-dependent stability naturally.",
+      "claim_type": "EXPLICIT",
+      "source": "and it is expected for a subset of nanobodies to exhibit this target-dependent stability naturally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on previous observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5ad813fd-b209-4d51-9354-486899421dee",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A systematic screen of 75 nanobodies from the PDB revealed that 42 out of 75 (56%) exhibited intracellular instability characterized by aggregation and/or degradation, while 33 out of 75 (44%) were stable and soluble when expressed as fluorescent protein fusions in mammalian cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 provide clear experimental evidence from live-cell imaging in both 293T and HeLa cells. The quantitative results are well-documented with representative images (Figure 1A), and the classification into stable vs. unstable groups is based on observable phenotypes (diffuse signal vs. aggregation/low signal). The methodology is straightforward and the results are replicated across cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "49210aeb-fd30-4d48-8113-547ca6f496ae",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "All 17 nanobodies containing a CDR3 cysteine that normally forms a disulfide bond were classified as intracellularly unstable, suggesting that the inability to form disulfide bonds in the reducing cytoplasmic environment represents a structural liability for intracellular expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 establish a perfect correlation between the presence of CDR3 cysteines (which form disulfide bonds extracellularly) and instability. The 17/17 association is striking and the mechanistic explanation based on the reducing cytoplasmic environment (C15) is well-established knowledge. Figure 2 supports this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "b08d6e9b-be08-4f6b-a1bd-c5ca1c766b43",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Statistical analysis identified 12 framework positions with residues significantly enriched in either stable or unstable groups, with key instability drivers including 52Gly (19/23 in unstable), 55Cys (9/9 in unstable), and 54Ser (13/14 in unstable), where position 54 points into the hydrophobic core and hydrophilic substitutions likely destabilize the structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C25 present a comprehensive statistical analysis using Fisher's exact test with clear quantitative results shown in Figure 1B. The structural interpretation for position 54 (C23-C24) is supported by established nanobody structural knowledge. The finding that each unstable nanobody had at least one of seven enriched residues (C25) provides additional validation. The statistical approach is appropriate and the results are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "48b30647-436e-4a58-b59f-ffb3a03adbb4",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A partial consensus mutagenesis approach based on \u226580% positional conservation across stable nanobodies successfully stabilized 26 out of 42 (62%) previously unstable nanobodies, with 6 additional showing partial improvement, while 10 showed no improvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 describe a rational mutagenesis strategy with clear success metrics. The approach is well-defined (\u226580% conservation threshold), and the quantitative outcomes are documented with fluorescence imaging (Figure 7A, C). The average mutational load of 5.7 changes per nanobody is reasonable. The 62% success rate demonstrates the effectiveness of the approach while acknowledging limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "0fd18c1c-eefa-47d8-93dc-0bf363dbc5f1",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A second round of mutagenesis targeting 52Gly (and X90Gln) in nanobodies not stabilized by the first approach rescued 11 out of 13 additional nanobodies, bringing the total success rate to 37 out of 42 (88%) previously unstable nanobodies rendered stable and soluble.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 demonstrate iterative optimization of the mutagenesis strategy. The strong correlation between 52Gly and failure to stabilize (13/16) is compelling and led to a rational second intervention. The final 88% success rate (37/42) is impressive and well-documented in Figure 7C. The sequential approach is logical and the results are quantitatively clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "1cc4f76d-f8e2-46d6-9c26-9024bbdb0aae",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Systematic testing of mutation subsets identified minimal necessary mutations for stabilization, with single mutations sufficient for some nanobodies: Ser54Ala alone stabilized 3K74, Ser53Val stabilized 1KXT, and 68Tyr alone stabilized 4WEN and 1KXQ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 provide important mechanistic insights by identifying key driver mutations. The systematic approach of testing mutation subsets is rigorous, and the identification of single sufficient mutations (particularly for positions 54, 53, and 68) validates the importance of these residues. Results are shown in Figure 7D, E. This demonstrates that not all mutations in the consensus approach are necessary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "eac54ba3-3630-4674-bdca-792e18315031",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Six mutationally stabilized nanobodies tested for target binding all retained binding function with partial consensus mutagenesis, while full-consensus mutagenesis reduced binding in 5 out of 6 cases, demonstrating that the partial consensus approach preserves variable framework positions important for target interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 address a critical concern about whether stabilization compromises function. The experimental design using NLS-tagged targets and nuclear localization as a readout is appropriate. The finding that partial consensus preserves binding (6/6) while full consensus often impairs it (5/6) validates the strategy. Quantitative data in Figure 8 and Figure 8\u2014figure supplement 1 support the conclusions. The structural analysis (C39) provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "00bddbd6-3fd4-49ff-995e-ac7a5c06e669",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mutationally stabilized nanobody 3V0A-TagBFP showed strong expression in multiple retinal cell types (rod photoreceptors, bipolar cells, Mueller glia) following in vivo electroporation in mouse retina, while wild-type showed little to no signal, demonstrating that stabilization extends to in vivo contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 provide important validation that the stabilization approach works in vivo, not just in cell culture. The retinal electroporation experiments are well-controlled with dsRed as a transfection marker. The observation across multiple specialized cell types (C44) strengthens the generalizability. Figure 9 provides clear visual evidence of the difference between wild-type and mutant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "627af511-1f04-45c9-aa3f-258b6f757a0f",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The GFAP-binding nanobody NBE9 with a single S54A mutation showed rescued expression and enhanced colocalization with endogenous GFAP in Mueller glia of the rd1 retinal degeneration model, demonstrating that mutationally stabilized nanobodies can bind endogenous targets in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 provide a compelling demonstration of endogenous target binding in vivo. The rd1 model is appropriate as GFAP is upregulated (C46-C47, supported by citations). The comparison between wild-type (minimal signal, C48) and S54A mutant (rescued expression and enhanced GFAP colocalization, C49) is clear in Figure 10. The interpretation (C50) appropriately notes differences in expression level and aggregation propensity between variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "79e32c5c-56a8-46a5-9710-f62dc05788bb",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "All five wild-type nanobodies tested in E. coli showed instability (4/5 with inclusion bodies), while all five mutationally stabilized variants showed marked increases in fluorescence, with three showing complete elimination of aggregation, demonstrating that stabilization extends to bacterial expression systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 extend the validation to bacterial systems, which is important for both production and therapeutic applications. The experimental design using mCherry fusions and fluorescence microscopy is appropriate. The quantitative results (5/5 wild-type unstable, 5/5 mutants improved, 3/5 with complete elimination of aggregation) are clear and supported by Figure 11. This demonstrates broad applicability of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "22bfc95d-0d09-4002-a26b-5fed87b57cb5",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Analysis of crystal structure data revealed that positional sequence variability across nanobody frameworks correlates with target interface formation, with the majority of interacting framework residues located in highly variable positions that were excluded from the partial consensus mutagenesis approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C57, and C39 provide important structural rationale for why the partial consensus approach preserves binding. The analysis of PDB crystal structures and interface data from PDBe PISA is appropriate. Figure 8\u2014figure supplement 1A shows the correlation between variability and interaction. This explains why avoiding highly variable positions in the consensus filter helps maintain binding function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "9dfd924d-29d7-4ec4-a22d-196dc7e3abdb",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Nanobody 5IVN was stabilized for cellular expression but failed to bind its \u03b2-catenin epitope intracellularly, likely due to loss of a crucial disulfide bond required for its conformationally precise paratope, suggesting that certain conformational paratopes may not be amenable for intracellular recapitulation despite stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 document an important limitation of the approach. The experimental observation that 5IVN was stabilized but lost binding (C62) is clearly stated. The mechanistic explanation (C63) is appropriately presented as speculation ('we suspect') but is supported by prior work showing the disulfide is required for binding (C64, Braun et al., 2016). The broader conclusion (C65-C66) appropriately qualifies the success of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "5c1dff41-63f0-4d66-b92e-92f1e23b0a2c",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Some unstable nanobodies (including 3K74 and 4I13 targeting DHFR) were able to bind their targets despite instability in the absence of target, and 4 out of 6 wild-type unstable nanobodies showed increased signal when coexpressed with target, suggesting target-dependent stabilization for a subset of nanobodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73, C74, and C41 describe an interesting phenomenon of target-dependent stability. The experimental observations are clear from the target binding experiments (Figure 8\u2014figure supplement 1B). The inference that target presence has a stabilizing effect (C74) is reasonable given the robust binding observed for wild-type 3K74 and 4I13. This is contextualized with prior work from the same lab (C75).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "cba05273-b7d4-4830-8521-caa10994b976",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing that nanobodies are single-domain antibody fragments with advantages for various applications including intracellular expression, though conventional antibodies are not amenable to intracellular expression due to the reducing cytoplasmic environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide well-established background information about nanobodies, supported by appropriate citations. These are not novel findings from this study but rather context-setting claims that are accurately presented. All claims are supported by either established knowledge or appropriate citations to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "b0b96454-54f5-4062-87a9-9ca7f4708cf0",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background structural and functional information about nanobodies, including their composition (CDRs and framework regions), binding modes (often involving framework engagement), and differences from conventional antibodies in paratope diversity and framework contribution to binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C55, C60, C67, and C68 present established structural and functional knowledge about nanobodies and conventional antibodies. These are accurately stated and supported by appropriate citations (e.g., Mitchell and Colwell, 2018 for C68). This background information provides important context for understanding the mutagenesis strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "281a2ec0-e617-4552-956b-f06259ee36fc",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work on consensus-based stabilization of antibody fragments is reviewed, including work by Pluckthun and colleagues on immunoglobulin variable domains and by Steipe and Wirtz on intracellular FV fragments, with the current partial consensus approach likely minimizing impact on target binding compared to full framework grafting strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 accurately cite and describe prior work on consensus-based stabilization (supported by citations to Knappik et al., 2000; Ewert et al., 2003; Ohage et al., 1999; Wirtz and Steipe, 1999). Claim C69 makes a reasonable inference about the advantages of the partial consensus approach compared to loop grafting, supported by the structural analysis and target binding data. This contextualizes the novelty of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "78e3df25-304b-4f05-9d6f-ba77143bfd0d",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Structural details about specific nanobodies tested for target binding: 3K1K and 3K74 engage targets along a concave framework interface with FR2 residues forming direct contacts, while 3G9A has a large CDR3 loop normally anchored by a disulfide bond to FR2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 provide specific structural information about nanobodies used in the target binding experiments. C59 is supported by crystal structure data shown in Figure 8B, C. C58 combines structural knowledge with inference about cytoplasmic conditions. These details provide important context for interpreting the target binding results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    },
+    {
+      "id": "3998989f-e554-4f76-b59b-1934620a0682",
+      "content_id": "bc1b06f9-4a78-4d8f-9351-d4c1d776ae0f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors' laboratory has previously described nanobody conditional stability in an engineered context, and it is expected that a subset of nanobodies naturally exhibit target-dependent stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 reference prior work from the same laboratory (Tang et al., 2016) and make a reasonable inference based on that work. This contextualizes the observation of target-dependent stability for some nanobodies in the current study. The inference in C76 is appropriately qualified as an expectation rather than a proven fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:23:10.700754Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a8336bdb-b819-424e-9b8c-73a342c1de81",
+      "result_id": "5ad813fd-b209-4d51-9354-486899421dee"
+    },
+    {
+      "claim_id": "d54499c0-04ae-4fa0-9d3b-05032ab4667f",
+      "result_id": "5ad813fd-b209-4d51-9354-486899421dee"
+    },
+    {
+      "claim_id": "05543733-c8b5-485e-8d17-95f9784d7077",
+      "result_id": "5ad813fd-b209-4d51-9354-486899421dee"
+    },
+    {
+      "claim_id": "5e88e8f2-27cb-4fdf-9af3-d75d81d66a79",
+      "result_id": "5ad813fd-b209-4d51-9354-486899421dee"
+    },
+    {
+      "claim_id": "64e67671-8d01-4416-9e40-03176642e49e",
+      "result_id": "49210aeb-fd30-4d48-8113-547ca6f496ae"
+    },
+    {
+      "claim_id": "2898432a-3636-44c3-90b9-9ddafa0cbd0f",
+      "result_id": "49210aeb-fd30-4d48-8113-547ca6f496ae"
+    },
+    {
+      "claim_id": "e5c8196b-3c36-49a9-b1d6-d8d1a4c81d31",
+      "result_id": "49210aeb-fd30-4d48-8113-547ca6f496ae"
+    },
+    {
+      "claim_id": "09c30cbc-d52f-466d-8e39-fa55d0f50289",
+      "result_id": "b08d6e9b-be08-4f6b-a1bd-c5ca1c766b43"
+    },
+    {
+      "claim_id": "0e0e148d-a28c-4c6f-b7a1-41b7b9a557ac",
+      "result_id": "b08d6e9b-be08-4f6b-a1bd-c5ca1c766b43"
+    },
+    {
+      "claim_id": "560a7bc6-60c9-47b6-b9bc-51881012b858",
+      "result_id": "b08d6e9b-be08-4f6b-a1bd-c5ca1c766b43"
+    },
+    {
+      "claim_id": "9d0d2b88-0d14-4d8f-a49f-90b44965388a",
+      "result_id": "b08d6e9b-be08-4f6b-a1bd-c5ca1c766b43"
+    },
+    {
+      "claim_id": "927899e2-7d08-423b-8f8c-f80f9869fc39",
+      "result_id": "b08d6e9b-be08-4f6b-a1bd-c5ca1c766b43"
+    },
+    {
+      "claim_id": "3789b6c3-0c4c-471d-b694-048367d91c61",
+      "result_id": "b08d6e9b-be08-4f6b-a1bd-c5ca1c766b43"
+    },
+    {
+      "claim_id": "e4893bc9-06dd-4cc9-b4ea-9440c34c2ff3",
+      "result_id": "b08d6e9b-be08-4f6b-a1bd-c5ca1c766b43"
+    },
+    {
+      "claim_id": "3c97d2ca-aa84-4a74-8004-3c25a41ee469",
+      "result_id": "b08d6e9b-be08-4f6b-a1bd-c5ca1c766b43"
+    },
+    {
+      "claim_id": "f05131f3-9bf6-4d1d-9603-ed58704dd31d",
+      "result_id": "b08d6e9b-be08-4f6b-a1bd-c5ca1c766b43"
+    },
+    {
+      "claim_id": "15b2e6f0-234c-4c1c-8f62-aef61244ff10",
+      "result_id": "b08d6e9b-be08-4f6b-a1bd-c5ca1c766b43"
+    },
+    {
+      "claim_id": "4a344f92-a78b-42cf-919e-75b36b85a846",
+      "result_id": "48b30647-436e-4a58-b59f-ffb3a03adbb4"
+    },
+    {
+      "claim_id": "d7a5f2e8-74f2-43be-b148-182621126f70",
+      "result_id": "48b30647-436e-4a58-b59f-ffb3a03adbb4"
+    },
+    {
+      "claim_id": "3ca4f162-3365-4eb2-aa81-ecd24319c075",
+      "result_id": "48b30647-436e-4a58-b59f-ffb3a03adbb4"
+    },
+    {
+      "claim_id": "b8a4c1fd-d135-429d-83f8-eae58dc2a713",
+      "result_id": "48b30647-436e-4a58-b59f-ffb3a03adbb4"
+    },
+    {
+      "claim_id": "90293ad7-f705-4159-9bc3-cf61ce74ce60",
+      "result_id": "48b30647-436e-4a58-b59f-ffb3a03adbb4"
+    },
+    {
+      "claim_id": "b4d93204-179e-4a10-ba22-5eb3664e7fd1",
+      "result_id": "0fd18c1c-eefa-47d8-93dc-0bf363dbc5f1"
+    },
+    {
+      "claim_id": "c557c210-cd2a-48a1-b31f-ff95793829b9",
+      "result_id": "0fd18c1c-eefa-47d8-93dc-0bf363dbc5f1"
+    },
+    {
+      "claim_id": "c5e9d798-d762-411e-af68-cd7f5cd486de",
+      "result_id": "0fd18c1c-eefa-47d8-93dc-0bf363dbc5f1"
+    },
+    {
+      "claim_id": "af33d562-9cac-4b7d-a68a-c080ee6b7685",
+      "result_id": "1cc4f76d-f8e2-46d6-9c26-9024bbdb0aae"
+    },
+    {
+      "claim_id": "fd3dc1a0-2968-4583-8a51-1bd91b44175d",
+      "result_id": "1cc4f76d-f8e2-46d6-9c26-9024bbdb0aae"
+    },
+    {
+      "claim_id": "61e79941-6ead-48aa-a1a9-9b741ea6a953",
+      "result_id": "1cc4f76d-f8e2-46d6-9c26-9024bbdb0aae"
+    },
+    {
+      "claim_id": "74411821-ad10-4456-87b2-38f3af4136ed",
+      "result_id": "1cc4f76d-f8e2-46d6-9c26-9024bbdb0aae"
+    },
+    {
+      "claim_id": "c9f79078-974d-4b33-8863-358af87d892c",
+      "result_id": "1cc4f76d-f8e2-46d6-9c26-9024bbdb0aae"
+    },
+    {
+      "claim_id": "c1ef2ece-afef-42d7-b36e-b84471f093f9",
+      "result_id": "eac54ba3-3630-4674-bdca-792e18315031"
+    },
+    {
+      "claim_id": "10efbae2-44a4-4350-9c4b-2c97b7e55b6c",
+      "result_id": "eac54ba3-3630-4674-bdca-792e18315031"
+    },
+    {
+      "claim_id": "f2d71ed1-123b-4a52-aaf1-a71c0144a852",
+      "result_id": "eac54ba3-3630-4674-bdca-792e18315031"
+    },
+    {
+      "claim_id": "d46db641-98ac-4c04-a4bc-f2dde7e6dd23",
+      "result_id": "eac54ba3-3630-4674-bdca-792e18315031"
+    },
+    {
+      "claim_id": "d5ede839-6fa8-48d8-b5f3-f93b688a7768",
+      "result_id": "00bddbd6-3fd4-49ff-995e-ac7a5c06e669"
+    },
+    {
+      "claim_id": "dbd977cd-4dec-4315-96c2-e7d8513aff27",
+      "result_id": "00bddbd6-3fd4-49ff-995e-ac7a5c06e669"
+    },
+    {
+      "claim_id": "39fe4ef4-16eb-4143-885b-9a6daf347c66",
+      "result_id": "627af511-1f04-45c9-aa3f-258b6f757a0f"
+    },
+    {
+      "claim_id": "1f101066-e4c7-4eb2-9c9b-c1d93620c89f",
+      "result_id": "627af511-1f04-45c9-aa3f-258b6f757a0f"
+    },
+    {
+      "claim_id": "cf353759-738e-4233-994b-72d2fcab2042",
+      "result_id": "627af511-1f04-45c9-aa3f-258b6f757a0f"
+    },
+    {
+      "claim_id": "01fbbd91-9e30-4f51-9253-fb24082e1427",
+      "result_id": "627af511-1f04-45c9-aa3f-258b6f757a0f"
+    },
+    {
+      "claim_id": "cfae0e51-12a8-4f7d-be6a-61a9ea38ae08",
+      "result_id": "627af511-1f04-45c9-aa3f-258b6f757a0f"
+    },
+    {
+      "claim_id": "91b5d944-a4f8-4504-9715-98ea25490511",
+      "result_id": "627af511-1f04-45c9-aa3f-258b6f757a0f"
+    },
+    {
+      "claim_id": "3af5c137-3c13-495c-983b-0d174a0357b8",
+      "result_id": "79e32c5c-56a8-46a5-9710-f62dc05788bb"
+    },
+    {
+      "claim_id": "9fdf49f0-29da-4eab-8a41-b588841e754b",
+      "result_id": "79e32c5c-56a8-46a5-9710-f62dc05788bb"
+    },
+    {
+      "claim_id": "2962748f-112c-488f-a3b4-bc8384050b42",
+      "result_id": "79e32c5c-56a8-46a5-9710-f62dc05788bb"
+    },
+    {
+      "claim_id": "4aaf6490-0bb2-4ace-80d0-262b01972ca2",
+      "result_id": "79e32c5c-56a8-46a5-9710-f62dc05788bb"
+    },
+    {
+      "claim_id": "dedf8042-b8fe-46fc-86bc-743fc9d6ba59",
+      "result_id": "22bfc95d-0d09-4002-a26b-5fed87b57cb5"
+    },
+    {
+      "claim_id": "2442af34-0d40-4631-9d47-cbe7fc189237",
+      "result_id": "22bfc95d-0d09-4002-a26b-5fed87b57cb5"
+    },
+    {
+      "claim_id": "c1ef2ece-afef-42d7-b36e-b84471f093f9",
+      "result_id": "22bfc95d-0d09-4002-a26b-5fed87b57cb5"
+    },
+    {
+      "claim_id": "e8e5ec5d-9c2d-45f4-8334-15a7d96a4a5d",
+      "result_id": "9dfd924d-29d7-4ec4-a22d-196dc7e3abdb"
+    },
+    {
+      "claim_id": "298b9c80-9185-42ab-851b-ecceb547fcea",
+      "result_id": "9dfd924d-29d7-4ec4-a22d-196dc7e3abdb"
+    },
+    {
+      "claim_id": "be0d59fc-036f-49dd-b68b-196c3f4fb4b8",
+      "result_id": "9dfd924d-29d7-4ec4-a22d-196dc7e3abdb"
+    },
+    {
+      "claim_id": "eb7565cc-79e2-4c6b-b74b-19d67bf6d5ef",
+      "result_id": "9dfd924d-29d7-4ec4-a22d-196dc7e3abdb"
+    },
+    {
+      "claim_id": "4ef20dc7-005b-42ab-9694-e03865e29e33",
+      "result_id": "9dfd924d-29d7-4ec4-a22d-196dc7e3abdb"
+    },
+    {
+      "claim_id": "8099983f-92c8-47a2-bba2-7de1c04369e9",
+      "result_id": "9dfd924d-29d7-4ec4-a22d-196dc7e3abdb"
+    },
+    {
+      "claim_id": "713fd9fa-407d-43d7-8c35-b98aebf2f5ec",
+      "result_id": "5c1dff41-63f0-4d66-b92e-92f1e23b0a2c"
+    },
+    {
+      "claim_id": "a6225d02-84fe-4dda-a0fc-cb1169f7a1a6",
+      "result_id": "5c1dff41-63f0-4d66-b92e-92f1e23b0a2c"
+    },
+    {
+      "claim_id": "f2d71ed1-123b-4a52-aaf1-a71c0144a852",
+      "result_id": "5c1dff41-63f0-4d66-b92e-92f1e23b0a2c"
+    },
+    {
+      "claim_id": "4a394631-8a1d-4188-b5ac-acf01864dbc6",
+      "result_id": "cba05273-b7d4-4830-8521-caa10994b976"
+    },
+    {
+      "claim_id": "11416c5a-300f-4471-9d83-1b71a79830a4",
+      "result_id": "cba05273-b7d4-4830-8521-caa10994b976"
+    },
+    {
+      "claim_id": "d69f902d-0988-4538-9713-82e431d36530",
+      "result_id": "cba05273-b7d4-4830-8521-caa10994b976"
+    },
+    {
+      "claim_id": "39e24c98-ba8f-4d0c-ac98-f83715da4b6e",
+      "result_id": "cba05273-b7d4-4830-8521-caa10994b976"
+    },
+    {
+      "claim_id": "6fec7417-4c35-4209-9f3f-77f3922e4180",
+      "result_id": "cba05273-b7d4-4830-8521-caa10994b976"
+    },
+    {
+      "claim_id": "988075f3-0869-4f87-8145-b4f6d1a9ef1c",
+      "result_id": "cba05273-b7d4-4830-8521-caa10994b976"
+    },
+    {
+      "claim_id": "d371eb76-1ae2-4272-b1aa-95d3ac9f8812",
+      "result_id": "cba05273-b7d4-4830-8521-caa10994b976"
+    },
+    {
+      "claim_id": "2dc05866-9786-432e-a49a-c2d7338da73a",
+      "result_id": "b0b96454-54f5-4062-87a9-9ca7f4708cf0"
+    },
+    {
+      "claim_id": "19880de9-2a36-4efc-88e6-64cb8b80beec",
+      "result_id": "b0b96454-54f5-4062-87a9-9ca7f4708cf0"
+    },
+    {
+      "claim_id": "917bbe6e-1693-4642-816d-5cdf031f638b",
+      "result_id": "b0b96454-54f5-4062-87a9-9ca7f4708cf0"
+    },
+    {
+      "claim_id": "559245ec-b6bf-4100-a8a9-1ea91b58e78e",
+      "result_id": "b0b96454-54f5-4062-87a9-9ca7f4708cf0"
+    },
+    {
+      "claim_id": "49b39988-2e5a-4964-a894-d8cdc3a2beae",
+      "result_id": "b0b96454-54f5-4062-87a9-9ca7f4708cf0"
+    },
+    {
+      "claim_id": "95887078-b079-47eb-b778-947d994b15a0",
+      "result_id": "281a2ec0-e617-4552-956b-f06259ee36fc"
+    },
+    {
+      "claim_id": "a53a7a93-0fab-4af6-9a3f-5fccf2d94d09",
+      "result_id": "281a2ec0-e617-4552-956b-f06259ee36fc"
+    },
+    {
+      "claim_id": "fd719253-6679-4584-9cf9-d09c767285d9",
+      "result_id": "281a2ec0-e617-4552-956b-f06259ee36fc"
+    },
+    {
+      "claim_id": "98d38116-9c8e-480c-9d35-b50a81d440db",
+      "result_id": "281a2ec0-e617-4552-956b-f06259ee36fc"
+    },
+    {
+      "claim_id": "8cdd2832-5fde-4295-80db-0a143b47355b",
+      "result_id": "78e3df25-304b-4f05-9d6f-ba77143bfd0d"
+    },
+    {
+      "claim_id": "5c775a96-a972-4d1d-9b91-1776773de48a",
+      "result_id": "78e3df25-304b-4f05-9d6f-ba77143bfd0d"
+    },
+    {
+      "claim_id": "109d5eca-5134-4a0e-abce-42941d60a3b8",
+      "result_id": "3998989f-e554-4f76-b59b-1934620a0682"
+    },
+    {
+      "claim_id": "93fd853b-18fd-4389-9ec8-0d04f7d49f8a",
+      "result_id": "3998989f-e554-4f76-b59b-1934620a0682"
+    }
+  ],
+  "comparisons": []
+}

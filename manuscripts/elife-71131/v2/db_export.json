@@ -1,0 +1,1901 @@
+{
+  "submission": {
+    "id": "d58de1bc-6e90-422e-87aa-575be9b03358",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:55:16.174261Z",
+    "updated_at": "2025-12-03T08:55:16.174261Z"
+  },
+  "content": [
+    {
+      "id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "submission_id": "d58de1bc-6e90-422e-87aa-575be9b03358",
+      "content_type": "manuscript",
+      "content_text": "# Efficacy of FFP3 respirators for prevention of SARS-CoV-2 infection in healthcare workers\n\n## Authors\n\n- Mark Ferris<sup>1</sup> ([ORCID: 0000-0001-5040-4263](https://orcid.org/0000-0001-5040-4263)) \u2020\n- Rebecca Ferris<sup>1</sup>\n- Chris Workman<sup>1</sup>\n- Eoin O'Connor<sup>3</sup> ([ORCID: 0000-0002-6846-6881](https://orcid.org/0000-0002-6846-6881))\n- David A Enoch<sup>1</sup>\n- Emma Goldesgeyme<sup>1</sup>\n- Natalie Quinnell<sup>1</sup>\n- Parth Patel<sup>1</sup>\n- Jo Wright<sup>1</sup>\n- Geraldine Martell<sup>1</sup>\n- Christine Moody<sup>1</sup>\n- Ashley Shaw<sup>1</sup>\n- Christopher JR Illingworth<sup>5</sup> ([ORCID: 0000-0002-0030-2784](https://orcid.org/0000-0002-0030-2784))\n- Nicholas J Matheson<sup>1</sup> ([ORCID: 0000-0002-3318-1851](https://orcid.org/0000-0002-3318-1851))\n- Michael P Weekes<sup>1</sup> ([ORCID: 0000-0003-3196-5545](https://orcid.org/0000-0003-3196-5545)) \u2020\n\n### Affiliations\n\n1. Cambridge University Hospitals NHS Foundation Trust Cambridge United Kingdom\n2. University of Cambridge Occupational Health and Safety Service Cambridge United Kingdom\n3. School of Clinical Medicine Cambridge United Kingdom\n4. Clinical Microbiology & Public Health Laboratory, Public Health England Cambridge United Kingdom\n5. MRC Biostatistics Unit Cambridge United Kingdom\n6. Department of Applied Mathematics and Theoretical Physics Cambridge United Kingdom\n7. MRC-University of Glasgow Centre for Virus Research Scotland United Kingdom\n8. Department of Medicine, University of Cambridge Cambridge United Kingdom\n9. Cambridge Institute of Therapeutic Immunology and Infectious Disease (CITIID), Jeffrey Cheah Biomedical Centre Cambridge United Kingdom\n10. NHS Blood and Transplant Cambridge United Kingdom\n11. Cambridge Institute for Medical Research Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Respiratory protective equipment recommended in the UK for healthcare workers (HCWs) caring for patients with COVID-19 comprises a fluid-resistant surgical mask (FRSM), except in the context of aerosol generating procedures (AGPs). We previously demonstrated frequent pauci- and asymptomatic severe acute respiratory syndrome coronavirus 2 infection HCWs during the first wave of the COVID-19 pandemic in the UK, using a comprehensive PCR-based HCW screening programme (Rivett et al., 2020; Jones et al., 2020).Methods:Here, we use observational data and mathematical modelling to analyse infection rates amongst HCWs working on \u2018red\u2019 (coronavirus disease 2019, COVID-19) and \u2018green\u2019 (non-COVID-19) wards during the second wave of the pandemic, before and after the substitution of filtering face piece 3 (FFP3) respirators for FRSMs.Results:Whilst using FRSMs, HCWs working on red wards faced an approximately 31-fold (and at least fivefold) increased risk of direct, ward-based infection. Conversely, after changing to FFP3 respirators, this risk was significantly reduced (52\u2013100% protection).Conclusions:FFP3 respirators may therefore provide more effective protection than FRSMs for HCWs caring for patients with COVID-19, whether or not AGPs are undertaken.Funding:Wellcome Trust, Medical Research Council, Addenbrooke\u2019s Charitable Trust, NIHR Cambridge Biomedical Research Centre, NHS Blood and Transfusion, UKRI.\n\n## Introduction\n\nConsistent with World Health Organization (WHO) advice (World Health Organization, 2021), UK Infection Protection Control guidance recommends that healthcare workers (HCWs) caring for patients with coronavirus disease 2019 (COVID-19) should use fluid-resistant surgical masks (FRSMs) type IIR as respiratory protective equipment (RPE), unless aerosol generating procedures (AGPs) are being undertaken or are likely, when a filtering face piece 3 (FFP3) respirator should be used (UK Government, 2021a). Following a recent update, an FFP3 respirator is now also recommended if \u2018an unacceptable risk of transmission remains following rigorous application of the hierarchy of control\u2019 (UK Government, 2021b). Conversely, guidance from the Centers for Disease Control and Prevention (CDC) recommends that HCWs caring for patients with COVID-19 should use an N95 or higher level respirator (Centers for Disease Control and Prevention, 2019). WHO guidance suggests that a respirator, such as FFP3, may be used for HCWs in the absence of AGPs if availability or cost is not an issue (World Health Organization, 2021).\n\nA recent systematic review undertaken for PHE concluded that: \u2018patients with SARS-CoV-2 infection who are breathing, talking, or coughing generate both respiratory droplets and aerosols, but FRSM (and where required, eye protection) are considered to provide adequate staff protection\u2019 (Public Health England, 2020). Nevertheless, FFP3 respirators are more effective in preventing aerosol transmission than FRSMs, and observational data suggest that they may improve protection for HCWs (Oksanen et al., 2020). It has therefore been suggested that respirators should be considered as a means of affording the best available protection (Ha, 2020), and some organisations have decided to provide FFP3 (or equivalent) respirators to HCWs caring for COVID-19 patients, despite a lack of mandate from local or national guidelines (Buising et al., 2020).\n\nData from the HCW testing programme at Cambridge University Hospitals NHS Foundation Trust (CUHNFT) during the first wave of the UK severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) pandemic indicated a higher incidence of infection amongst HCWs caring for patients with COVID-19, compared with those who did not (Rivett et al., 2020). Subsequent studies have confirmed this observation (Eyre et al., 2020; Cooper et al., 2020). This disparity persisted at CUHNFT in December 2020, despite control measures consistent with PHE guidance and audits indicating good compliance. The CUHNFT infection control committee therefore implemented a change of RPE for staff on \u2018red\u2019 (COVID-19) wards from FRSMs to FFP3 respirators. In this study, we analyse the incidence of SARS-CoV-2 infection in HCWs before and after this transition.\n\n## Materials and methods\n\n### Study design and participants\n\nCUHNFT is a tertiary hospital in the UK with approximately 1000 beds. During the pandemic, wards were categorised as \u2018red\u2019, \u2018amber\u2019, or \u2018green\u2019. Patients with confirmed COVID-19 were cared for on red wards, and patients who had negative SARS-CoV-2 tests and no clinical features of COVID-19 on green wards. Patients awaiting test results, who had clinical features of COVID-19 but a negative test result, or who may have been exposed to SARS-CoV-2 were cared for on amber wards.\n\nThe CUHNFT electronic rostering system recorded to which ward(s) individual nurses and healthcare assistants (HCAs) were allocated. Although this does not encompass 100% of ward staff, the data can be used to indicate relative ward size. An average of 42.5 (range 19\u201372) nurses/HCAs worked on green wards, and 49.6 (range 37\u201369) worked on red wards. The mean number of beds per green ward was 24.1 (range 5\u201333) and red 28.1 (range 26\u201333). The mean number of nurses and HCAs per bed was 0.41 (range 0.24\u20130.58) on green wards and 0.31 (range 0.24\u20130.42) on red wards.\n\nA change to RPE for staff on red wards from FRSMs to FFP3 respirators was announced on 22/12/20. FFP3 respirators were assigned to staff following fit testing. HCWs on green wards continued to wear FRSMs. HCWs on all wards also wore eye protection. The following types of FFP3 respirator were used during the study period: 3 M 9330+, 3 M 1863, Easimask FSM18, and Mexin MX2016v. HCWs who did not pass fit testing with the masks available used either a JSP half mask respirator or a powered air purifying respirator (Tornado or Easiair).\n\nA comprehensive PCR-based HCW screening programme is established at CUHNFT, with symptomatic testing offered as required and asymptomatic testing offered to all HCWs weekly (Rivett et al., 2020; Jones et al., 2020). From 22/12/20, twice-weekly swabbing was offered on red wards and on wards where the most vulnerable patients were cared for (e.g. transplant and oncology patients). Cases were identified from a database of all positive results, which additionally encompasses positive results from community testing. This recorded the date of swab, onset of symptoms (if present) and in which clinical area the HCW worked.\n\nThe start of the study period was taken to be 02/11/20, coinciding with an increase in community incidence of SARS-CoV-2 infection and formal implementation of weekly asymptomatic screening for all staff members. By default new infections on or prior to 27/12/20 were attributed to exposure before the change in RPE. Infections detected later than this date were attributed to exposure after the change in RPE. This timing was chosen to reflect the median incubation period of SARS-CoV-2 (5.1 days), with 27/12/20 falling 5 days (inclusive) after the change in RPE (Lauer et al., 2020; McAloon et al., 2020). Since staff testing was not conducted at weekends, eight complete weeks were assessed in total prior to the change in RPE (Table 1).\n\n**Table 1.**\n Weekly numbers of cases amongst HCWs on red and green wards, and cases per HCW day weeks following the change in RPE are highlighted in grey.Community incidence (total cases per week) is shown for the East of England, UK, with raw data shown in Figure 1\u2014source data 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Week</th>\n      <th>Week start</th>\n      <th>Red cases</th>\n      <th>Red HCW days</th>\n      <th>Red cases per 103 HCW days</th>\n      <th>Green cases</th>\n      <th>Green HCW days</th>\n      <th>Green cases per 103 HCW days</th>\n      <th>Excluded cases</th>\n      <th>Total</th>\n      <th>Community</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>02/11/2020</td>\n      <td>0</td>\n      <td>98</td>\n      <td>0</td>\n      <td>5</td>\n      <td>3255</td>\n      <td>1.54</td>\n      <td>16</td>\n      <td>21</td>\n      <td>7876</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>09/11/2020</td>\n      <td>2</td>\n      <td>98</td>\n      <td>20.41</td>\n      <td>7</td>\n      <td>3241</td>\n      <td>2.16</td>\n      <td>33</td>\n      <td>42</td>\n      <td>9499</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>16/11/2020</td>\n      <td>1</td>\n      <td>198</td>\n      <td>5.05</td>\n      <td>3</td>\n      <td>3141</td>\n      <td>0.96</td>\n      <td>26</td>\n      <td>30</td>\n      <td>7998</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>23/11/2020</td>\n      <td>1</td>\n      <td>238</td>\n      <td>4.20</td>\n      <td>5</td>\n      <td>3101</td>\n      <td>1.61</td>\n      <td>24</td>\n      <td>31</td>\n      <td>7203</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>30/11/2020</td>\n      <td>3</td>\n      <td>238</td>\n      <td>12.61</td>\n      <td>6</td>\n      <td>3101</td>\n      <td>1.93</td>\n      <td>20</td>\n      <td>29</td>\n      <td>9441</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>07/12/2020</td>\n      <td>5</td>\n      <td>238</td>\n      <td>21.01</td>\n      <td>10</td>\n      <td>3101</td>\n      <td>3.22</td>\n      <td>33</td>\n      <td>48</td>\n      <td>16,535</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>14/12/2020</td>\n      <td>1</td>\n      <td>238</td>\n      <td>4.20</td>\n      <td>7</td>\n      <td>3101</td>\n      <td>2.26</td>\n      <td>41</td>\n      <td>49</td>\n      <td>31,219</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>21/12/2020</td>\n      <td>3</td>\n      <td>238</td>\n      <td>12.61</td>\n      <td>10</td>\n      <td>3101</td>\n      <td>3.22</td>\n      <td>56</td>\n      <td>69</td>\n      <td>37,259</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>28/12/2020</td>\n      <td>2</td>\n      <td>357</td>\n      <td>5.60</td>\n      <td>20</td>\n      <td>2982</td>\n      <td>6.71</td>\n      <td>58</td>\n      <td>80</td>\n      <td>50,110</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>04/01/2021</td>\n      <td>4</td>\n      <td>505</td>\n      <td>7.92</td>\n      <td>34</td>\n      <td>2834</td>\n      <td>12.00</td>\n      <td>70</td>\n      <td>108</td>\n      <td>41,663</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>11/01/2021</td>\n      <td>5</td>\n      <td>848</td>\n      <td>5.90</td>\n      <td>33</td>\n      <td>2491</td>\n      <td>13.25</td>\n      <td>63</td>\n      <td>102</td>\n      <td>31,341</td>\n    </tr>\n  </tbody>\n</table>\n\n_HCW, healthcare worker; RPE, respiratory protective equipment._\n\nA programme of SARS-CoV-2 vaccination using the BNT162b2 COVID-19 vaccine commenced at CUHNFT on 08/12/20 (Jones et al., 2021). In line with UK national guidance, the programme initially prioritised local residents over the age of 80. However, some HCWs who had been identified as at high risk from SARS-CoV-2 infection were also vaccinated, and were additionally prevented from working on red wards. From 08/01/21, the programme switched to vaccinating HCWs, with initial priority being given to staff on red wards. To avoid the potential for confounding, the final week of the study period commenced on 11/01/21, since minimal effect is expected in the first 7 days after the first dose of vaccine (Polack et al., 2020).\n\nBecause of the rising number of admissions to CUHNFT with COVID-19, the number of red wards was increased from one at the beginning of November 2020 to seven by the week starting 11/01/21. Six wards therefore changed from green to red during the period of data collection. Of 609 positive results over the entire study period, 169 (27.8%) were included in this study. Exclusions encompassed HCWs who were not ward based or worked between different wards with different red/amber/green status (269/609, 44.2 % of positive results), HCW working on amber wards (9/609, 1.5%), non-clinical staff (141/609, 23.1%), and staff working in critical care areas (21/609, 3.5%), where different RPE was used throughout (Table 1).\n\nIf a staff member tested positive within 5 days of their ward changing colour, their case was classified according to the red/green status of their ward 5 days before their positive test (to allow for the incubation period, as above). The effects of changing the interval from 5 days to between 3 and 7 days explored.\n\n### General statistical analysis\n\nThe number of \u2018HCW days\u2019 for each week of the study was calculated for each category of ward. Rostering information was used to identify the number of nurses and HCAs regularly assigned to each ward on each of the 7 days of the week. Data describing the number of other staff on each ward was not available, but was assumed to be proportional to the number of rostered HCWs, calculations being performed in terms of nurse and HCA numbers.\n\nWhere wX,d denotes the number of HCWs on wards of type X on day d, the weekly numbers of ward days for week i, denoted WX,i, were calculated as the sums of these values across that week.\n\n$$\nW_{X,i}=\\sum_{d\\ini}^{}w_{X,d}\n$$\n\nDetails of community incidence were calculated from publicly available data describing the East of England region of the UK (Wellcome Sanger Institute, 2021; https://coronavirus.data.gov.uk/details/cases, data downloaded on 12/06/21), and were calculated as the sum of the number of cases reported in each week of the study. Raw data are shown in Figure 1\u2014source data 1. Correlations between cases per ward day and community incidence were calculated using the Wolfram Mathematica software package, version 12.3.1.0.\n\n### Mathematical modelling\n\nIn order to quantify the effect of the change in RPE upon cases in red wards, a mathematical model was developed, considering the numbers of cases observed amongst HCWs as arising from a combination of ward-specific infection risks, which relate directly to working on a red or green ward, and non-ward-specific risks, which include infections arising from the community. We first wrote expressions for the infection risk facing workers in different types of wards on week i. For HCWs on green wards we write\n\n$$\n\\lambda_{i}^{G}=kC_{i-1}+gW_{G,i}\n$$\n\nWhere critical care wards were included in the model we write, similarly:\n\n$$\n\\lambda_{i}^{C}=kC_{i-1}+cW_{C,i}\n$$\n\nCases on red wards were split according to whether they arose prior to the introduction of FFP3 masks (R1) or after that point (R2), giving:\n\n$$\n\\lambda_{i}^{R_{1}}=kC_{i-1}+r_{1}W_{R_{1},i}\n$$\n\n\n\n$$\n\\lambda_{i}^{R_{2}}=kC_{i-1}+r_{1}W_{R_{2},i}\n$$\n\nHere, the term k is a constant, whilst the value Ci\u22121 describes the number of observed cases in the local community in the previous week. Our use of community data from the previous week reflects a generation time for SARS-CoV-2 of approximately 7 days (Volz et al., 2021); we assumed that HCWs diagnosed with COVID-19 infection during this study would have been infected by individuals who were diagnosed in the previous week. The model parameters g, c, r1, and r2 describe ward-specific infection risks. FFP3 masks were used from the 23rd December onwards.\n\nModel parameters were optimised using a likelihood framework, identifying the maximum value of the term; here, the number of cases on each type of ward each week, denoted Xi, was represented as emissions from a Poisson distribution with parameter equal to the total risk of infection.\n\n$$\nL=\\sum_{i}^{}\\sum_{X}^{}log\\frac{\\lambda_{i}^{X_{i}}^{}}{X_{i}!}\n$$\n\nwhere the sum inside the brackets was calculated over all ward types X.\n\nConfidence intervals for each parameter were obtained using this likelihood function. Constrained likelihood optimisations were performed in which the likelihood was optimised subject to a fixed value of the parameter in question. Confidence intervals were defined as the region of parameter space in which the likelihood L was within 2 units of the maximum. Similarly, constrained optimisation was used to identify confidence intervals for parameter ratios such as r2/r1.\n\n## Results\n\nThe total number of cases of SARS-CoV-2 infection amongst HCWs at CUHNFT increased throughout the study period, in keeping with the rising incidence of SARS-CoV-2 in the community (Figure 1 and Figure 1\u2014source data 1). Similar proportions of cases were ascertained by symptomatic testing and asymptomatic screening on both green and red wards, suggesting similar testing-seeking behaviour between staff groups (Figure 1\u2014figure supplement 1). 12.1 % of cases on green wards were amongst allied health professionals, such as physiotherapists and occupational therapists. As expected, there was a significant correlation between community cases and days worked by HCWs on red wards (p < 0.002, Pearson correlation test), reflecting increased hospital admissions (Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71131/elife-71131-fig1-v2.jpg)\n\n**Figure 1.:** Comparison between total number of cases amongst HCWs and community incidence of SARS-CoV-2. Community incidence is shown for the East of England, UK, derived from https://coronavirus.data.gov.uk/details/cases, with raw data shown in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71131/elife-71131-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71131/elife-71131-fig1-figsupp2-v2.jpg)\n\nPrior to the change in RPE, cases per HCW day were higher on red compared with green wards in seven out of 8 weeks analysed (p = 0.016, Wilcoxon signed-rank test, Figure 2 and Table 1). Following the change in RPE, the incidence of infection on red and green wards was similar, and not statistically different (p = 0.5, Wilcoxon signed-rank test, Figure 2 and Table 1). Strikingly, there was a strong positive correlation between the incidence of SARS-CoV-2 in the community and the number of cases per HCW day on green (R2 = 0.80) but not red (R2 = 0.03) wards (Figure 2\u2014figure supplement 1). Taken together, these results suggest that most cases amongst HCWs on green wards were caused by community-acquired infection, whereas cases amongst HCWs on red wards were driven by direct, ward-based infection from patients with COVID-19.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71131/elife-71131-fig2-v2.jpg)\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71131/elife-71131-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cases per ward day amongst healthcare workers (HCWs) on green wards (A) were strongly correlated with the number of community cases identified the previous week (p value <2.1 \u00d7 10\u20133, Pearson correlation test), suggesting that infection in the community explains cases amongst HCWs on these wards. Conversely, cases per ward day amongst HCWs on red wards (B) did not correlate with the community incidence (p value >0.62, Pearson correlation test). R2 values shown in the figures are coefficients of determination arising from linear regression calculations performed using the Mathematica software package (version 12.3.1.0).\n\nTo further quantify the risk of infection for HCWs working on red and green wards, we generated a simple mathematical model. According to this model, the total risk of infection is divided into a risk from community-based exposure, and a risk from direct, ward-based exposure to patients (ward-specific risk). The risk from direct exposure on red wards was allowed to vary upon the introduction of FFP3 respirators, and was fitted to a maximum likelihood model. Inferred parameters and their confidence intervals are shown in Table 2. Our model produced a qualitatively close fit to the observed numbers of cases (Figure 3A, B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71131/elife-71131-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Comparison of modelled and actual cases. The model (black dashed line) aimed to reproduce the risks of infection amongst HCWs per ward day (A) on green wards (green solid line) and (B) on red wards (red solid line). (C) Risks inferred from the model. HCWs were vulnerable to coronavirus disease 2019 (COVID-19) infection from exposure to individuals in the community, with this risk increasing with community incidence (grey line). HCWs working on green wards faced a consistent, low risk of infection from direct, ward-based exposure (green line). HCWs working on red wards initially faced a much higher risk of infection from direct, ward-based exposure, falling to a value close to that on green wards upon the introduction of filtering face piece 3 (FFP3) respirators. In this figure, risks are expressed per ward day; a risk of 0.01 indicates that a particular source of risk would be expected to cause one HCW to develop an infection every 100 days that the ward was in operation. (D, E) Proportion of community-acquired cases. Proportion of infections on (D) green and (E) red wards inferred to have arisen via exposure to individuals in the community (green line, green wards; red line, red wards; confidence intervals shaded).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71131/elife-71131-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Cases were by default attributed to the type of ward on which each positive-testing healthcare worker (HCW) worked 5 days prior to reporting symptoms (if symptomatic) or testing positive (if asymptomatic). This analysis examines how maximum likelihood inferences (dots) and confidence intervals (lines) change upon varying the 5 day cutoff to between 3 and 7 days. A ratio of 0.4 corresponds to a 60 % reduction in HCW risk upon the introduction of filtering face piece 3 (FFP3) respirators.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71131/elife-71131-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The model (black dashed line) aimed to reproduce the risks of infection amongst healthcare workers (HCWs) per ward day on green wards (green line), red wards (red solid line), and on critical care wards (blue line). Red dots show the maximum likelihood ratio between ward-specific risks to HCWs on red wards before and after the introduction of filtering face piece 3 (FFP3) respirators, with vertical lines indicating 95 % confidence intervals for this statistic. Our model fitted a rate of community-based infection, plus ward-type-specific rates of infection for red, green, and critical care wards.\n\n**Table 2.**\n Statistics and parameter ratios inferred from the model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Statistic</th>\n      <th>Model parameter</th>\n      <th>Maximum likelihood estimate</th>\n      <th>Confidence interval</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Force of community-based infection per community case</td>\n      <td>k</td>\n      <td>1.95 \u00d7 10\u22127</td>\n      <td>[1.49 \u00d7 10\u22127, 2.39 \u00d7 10\u22127]</td>\n    </tr>\n    <tr>\n      <td>Force of direct infection per HCW day (green ward)</td>\n      <td>g</td>\n      <td>2.53 \u00d7 10\u22124</td>\n      <td>[0, 1.10 \u00d7 10\u22123]</td>\n    </tr>\n    <tr>\n      <td>Force of direct infection per HCW day (red ward, pre-FFP3)</td>\n      <td>r1</td>\n      <td>7.97 \u00d7 10\u22123</td>\n      <td>[3.65 \u00d7 10\u22123, 1.40 \u00d7 10\u22122]</td>\n    </tr>\n    <tr>\n      <td>Force of direct infection per ward day (red ward, post-FFP3)</td>\n      <td>r2</td>\n      <td>6.84 \u00d7 10\u221210</td>\n      <td>[0, 3.38 \u00d7 10\u22123]</td>\n    </tr>\n    <tr>\n      <td>Relative direct risk on red wards post- versus pre-FFP3</td>\n      <td>r2/r1</td>\n      <td>0.00</td>\n      <td>[0, 0.478]</td>\n    </tr>\n    <tr>\n      <td>Relative direct risk on red ward versus green ward pre-FFP3</td>\n      <td>r1/g</td>\n      <td>31.47</td>\n      <td>[5.92, \u221e)</td>\n    </tr>\n    <tr>\n      <td>Relative direct risk on red ward versus green ward post-FFP3</td>\n      <td>r2/g</td>\n      <td>0.00</td>\n      <td>[0, \u221e)</td>\n    </tr>\n  </tbody>\n</table>\n\n_FFP3, filtering face piece 3; HCW, healthcare worker._\n\nThe inferred risk of direct infection from working on a green ward was low throughout the study period, and consistently lower than the risk of community-based exposure, which increased in proportion to rising levels of community incidence (Figure 3C). By contrast, the risk of direct infection from working on a red ward before the change in RPE was considerably higher than the risk of community-based exposure, and approximately 31-fold greater than the corresponding risk from working on a green ward (confidence interval [5.93, \u221e]). Thus, whilst a high proportion of cases on green wards were likely caused by infection in the community, cases on red wards at the beginning of the study period were attributed mainly to direct, ward-based exposure (Figure 3D, E). Critically, our model further suggests that the introduction of FFP3 respirators led to a reduction of between 52% and 100% (maximum likelihood 100%) in the risk of direct, ward-based COVID-19 infection (Table 2, r2/r1).\n\nWhere ward designations changed (e.g. from green to red), cases were by default attributed to the type of ward on which each positive-testing HCW worked 5 days prior to reporting symptoms (if symptomatic) or testing positive (if asymptomatic). Altering this cutoff did not alter the maximum likelihood inference for the effect of FFP3 respirators (r2/r1, 100%), although the lower bound of the effect size varied between 30% and 72% for cutoffs between 3 and 7 days (Figure 3\u2014figure supplement 1). Data collected from critical care wards, where enhanced PPE was used throughout the period of the study, showed a consistently low rate of HCW infection. Again, incorporating these data into the model did not materially affect the outcome, with the introduction of FFP3 respirators associated with a reduction of between 26% and 100% (most likely 94%) in the risk of direct, ward-based COVID-19 infection at the default cutoff (Figure 3\u2014figure supplement 2).\n\n## Discussion\n\nHCWs may be exposed to SARS-CoV-2 from contacts in the community, from contacts with other HCWs, and from contacts with patients. In this study, we developed a mathematical model to evaluate the relative magnitudes of these risks, based on data collected during the second wave of the SARS-CoV-2 pandemic in the UK (November 2020\u2013January 2021).\n\nWhilst using FRSMs, the majority of infections amongst HCWs working on red wards could be attributed to direct exposure to patients with COVID-19. In contrast, as community incidence rose, the majority of infections amongst HCWs working on green wards were attributed by our model to community-based effects. After the change in RPE, cases attributed to ward-based exposure fell significantly, with FFP3 respirators providing an inferred 52\u2013100% (most likely 100%) reduction in the risk of ward-based infection from patients with COVID-19.\n\nIn keeping with previous observations (Rivett et al., 2020; Eyre et al., 2020; Cooper et al., 2020), our findings therefore suggest that the use of FRSMs as RPE was insufficient to protect HCWs against infection from patients with COVID-19. Conversely, excess infections amongst HCWs caring for patients with COVID-19 may be prevented by the use of FFP3 respirators, in combination with other PPE and infection control measures.\n\nDuring the study period, the incidence of SARS-CoV-2 in England increased (Office of National Statistics, 2021), with spread of the more transmissible B.1.1.7 (alpha) variant (Davies et al., 2021). By the ninth week of the study, 79 % of cases in Cambridgeshire were caused by this variant (Wellcome Sanger Institute, 2021). Our observations on the use of FFP3 respirators (weeks 9\u201311) were therefore made at a time when the B.1.1.7 variant predominated, suggesting that they are robust to any associated increase in SARS-CoV-2 transmissibility in a hospital setting attributable to this variant. Whilst likely also to be applicable to the B.1.617.2 (delta) variant, this was not formally evaluated in our study.\n\nPotential confounders of our observations, should they have differed systematically between HCWs on red and green wards and/or have changed over the course of the study, include:\n\nThis observational study includes a small number of cases in a single Trust, and there may be alternative explanations for the different patterns of infection observed before and after the change in RPE. Our maximum likelihood inference that FFP3 masks (in combination with other PPE and infection control measures) provide 100 % protection against ward-based infection should therefore be treated with caution; the large confidence intervals calculated for parameters in our model reflect the limited amount of data available. Nonetheless, our results highlight an urgent need for further studies evaluating the appropriate level of RPE for HCWs caring for patients with COVID-19, as well as other respiratory viruses. In accordance with the precautionary principle, we propose a revision of RPE recommendations until more definitive information is available.\n",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "79bef788-2ee0-4901-aac2-5ccbe4abcd5b",
+      "submission_id": "d58de1bc-6e90-422e-87aa-575be9b03358",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jos W Van der Meer, Radboud University Medical Centre Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71131.sa0](https://doi.org/10.7554/eLife.71131.sa0)\n\nRespiratory protective equipment that is recommended in the UK for health-care workers caring for COVID-19 patients comprises a fluid resistant surgical mask (FRSM), and in case of procedures that generate aerosols FFP3 respirators are to be used. In this study, health-care workers using FRSMs, while working on COVID-19 wards faced an approximately 31-fold increased risk of ward-based SARS CoV-2 infection. After changing to FFP3 respirators, this risk was significantly reduced. Thus, FFP3 respirators seem to provide more protection than FRSMs for health-care workers caring for patients with COVID-19.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jos W Van der Meer, Radboud University Medical Centre Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71131.sa1](https://doi.org/10.7554/eLife.71131.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"FFP3 respirators protect healthcare workers against infection with SARS-CoV-2\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jos van der Meer as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Sarah Logan (Reviewer #1); Stephanie Evans (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The authors need to mention more about the differences between red and green wards: In terms of:\n\nNumber of patients on the wards (bays and side rooms)\n\nMean number of pts per nurse\n\nDemographic of the HCW surveyed on each ward- equal numbers of Nurses/ AHP's/ doctors\n\nVaccine uptake as per below.\n\nStaff rest areas.\n\n2. The authors also need to describe more about the testing seeking behaviour of the two staff groups; access to testing, more frequently accessed by a group of HCW who were aware of the range of symptoms of covid. This could leave to an ascertainment bias in the red ward prior to the change in mask wearing.\n\n3. Vaccine roll out:\n\nMost staff working on COVID wards in December 2020 were the first to access the vaccine, and the roll out in most trusts in the UK was not so coordinated. Thus, we imagine this data will be difficult to get, but without it, more needs to be made of that impact.\n\n4. Given the sophisticated mathematical modelling and statistical analysis, please address the danger of trying to overanalyse the intervention with relatively small numbers.\n\n5. With this in mind it would be nice to see data from critical care ward staff, if they were using FFP3 throughout even though the numbers are small.\n\n6. We would recommend to pay some attention in the discussion to the comments from Andrew Goddard from the RCP bulletin.\n\n7. Although the manuscript states that a similar number of HCWs worked on each ward, it would be helpful to see the results displayed as a proportion of staff on red/green wards that became infected, or to model as individual exposure hours rather than ward status but I understand this might be difficult with the small sample size.\n\n8. It would be helpful for the number of red wards (or total exposure time) and C_i+1 to be plotted to give a visual representation of the correlation.\n\n9. As ward colour in the model is determined exclusively by the presence of infected patients and there is a possibility that one infected HCW on a green ward could lead to an outbreak within the HCW population. While this would not affect the result that changing the type of RPE used reduced the infections per ward day of HCWs on red wards, ignoring the potential for HCWs to seed outbreaks between ward staff could result in a higher proportion of cases being attributed to the community than actually occurred, and I would consider adding a third component of 'positive result in ward staff' to the model.\n\n10. A sensitivity analysis shifting the 5-day cut off for before/after change in RPE and ward classification would also be a nice addition.\n\n11. As staff working across wards are excluded, it is not clear if the full numbers of staff present on the red/green wards are included in estimations of both the number of cases and number of infectious sources (do the staff, and the non-ward based staff, interact similarly with patients and staff from both red and green wards?).\n\n12. It would be interesting to see the results from the critical care wards that are currently excluded. If these wards used FFP3 respirators throughout, (noting the small numbers) it would be very helpful to see the data for this period in these wards as a (albeit limited) control group.Reviewer #1:\n\nUnderstanding how best to protect healthcare workers from infection at work with SARS- CoV2 is absolutely vital. Much of the interventions to date have been done in an era where the evidence was emerging at the same time as interventions instigated. With that in mind the approach by Cambridge University trust to go above PHE guidance and use FFP3 masks on COVID wards and then for the authors to try to evaluate this impact is absolutely the right approach. There is a clear drop off in infections in healthcare workers on COVID wards in December 2020 after this change was made. There may be several reasons for this not just the prevention of inhalation of aerosols.\n\nThe action of donning and doffing an FFP3 mask produces a change in behaviour in the HCW. The need to change one's mask after leaving a clinical area, the discomfort of an FFP3 necessitating shorter wear times than alternative Fluid resistant surgical masks, the prompt to the HCW when changing the mask of hand hygeine may all have contributed to the drop in rate.\n\nThe drop-in rate correlates also with vaccine role out. Whilst the authors describe this as not having a major impact in the absence of data on the numbers and date of vaccination of staff on the red and green wards it is impossible to draw this conclusion.\n\nTo be fair, the authors themselves tried not to sensationalise their data but I suspect that many infection control teams will have noted the study and (reasonably) will have pressure put on them to act if they have not done so already. Understanding the risks in double-vaccinated staff, ongoing supply chain issues and the fact that at least 20% of FFP3 mask wearers fail a fit test may mean that applying a simple policy to change all to FFP3 will not be without practical challenges.Reviewer #2:\n\nIn this paper Ferris et al., attempt to use observational data and mathematical modelling to compare the effect of filtering face piece 3 (FFP3) respirators over fluid resistant surgical masks (FRSM) for reducing infection rates in healthcare workers (HCWs) caring for patients with COVID-19 (working on 'red' wards).\n\nThe study uses the median incubation period of 5 days to classify new cases as occurring before/after the change in respiratory protective equipment (RPE), and to categorise wards as red and green. This goes some way towards addressing potential confounding that could be introduced by misclassifying either RPE or wards, although this cannot be completely ruled out. Similarly the study is over a sufficient time period that it is reasonable to assume that the effect of vaccines in the HCW population is negligible. Overall the modelling approach, while simple (with only two components of risk: community and ward), is sensible. The Discussion section of this work is fair and balanced, and the concluding statement that this study is not sufficient to provide conclusive evidence but highlights a need for further study into the appropriate RPE for HCWs caring for patients with COVID-19 is faultless.\n\nAs explained by the authors the main limitations of the study hinge upon the small numbers. While the model itself is broadly sensible, the fitting of this to the very limited data on HCW infection is problematic. Slightly different assumptions (e.g. changing the criteria for classifying wards from the median) may provide an alternative (but equally good) fit, but give different conclusions.\n\nA further limitation of the model used here is the association between Ci-1 and determination of ward 'colour': Ci-1 will determine how many green and red wards there are. Likewise, community prevalence will determine the number of COVID +ve admissions which in turn may impact onward transmission within the hospital, therefore Ci-1 is associated too with ward risk.\n",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "21009368-2a50-4358-9001-61aa0ce6e661",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C1",
+      "claim": "UK Infection Protection Control guidance recommends that healthcare workers caring for patients with COVID-19 should use fluid-resistant surgical masks type IIR as respiratory protective equipment, unless aerosol generating procedures are being undertaken or are likely, when a filtering face piece 3 respirator should be used.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with World Health Organization (WHO) advice (World Health Organization, 2021), UK Infection Protection Control guidance recommends that healthcare workers (HCWs) caring for patients with coronavirus disease 2019 (COVID-19) should use fluid-resistant surgical masks (FRSMs) type IIR as respiratory protective equipment (RPE), unless aerosol generating procedures (AGPs) are being undertaken or are likely, when a filtering face piece 3 (FFP3) respirator should be used (UK Government, 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to WHO and UK Government guidance documents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "92c3af7e-8cdd-4c2b-9116-fc72b4a17162",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C2",
+      "claim": "Following a recent update, an FFP3 respirator is now also recommended if 'an unacceptable risk of transmission remains following rigorous application of the hierarchy of control'.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a recent update, an FFP3 respirator is now also recommended if 'an unacceptable risk of transmission remains following rigorous application of the hierarchy of control' (UK Government, 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to UK Government guidance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "4e1eccea-77b8-453f-bc5f-90a4c830d19b",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C3",
+      "claim": "CDC guidance recommends that HCWs caring for patients with COVID-19 should use an N95 or higher level respirator.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, guidance from the Centers for Disease Control and Prevention (CDC) recommends that HCWs caring for patients with COVID-19 should use an N95 or higher level respirator (Centers for Disease Control and Prevention, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to CDC guidance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "ecde6a10-160f-4157-99b2-cbe055908ed3",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C4",
+      "claim": "WHO guidance suggests that a respirator, such as FFP3, may be used for HCWs in the absence of AGPs if availability or cost is not an issue.",
+      "claim_type": "EXPLICIT",
+      "source": "WHO guidance suggests that a respirator, such as FFP3, may be used for HCWs in the absence of AGPs if availability or cost is not an issue (World Health Organization, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO guidance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "cd728a92-b67a-4054-bc68-1c5384232a5a",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C5",
+      "claim": "A recent systematic review undertaken for PHE concluded that patients with SARS-CoV-2 infection who are breathing, talking, or coughing generate both respiratory droplets and aerosols, but FRSM (and where required, eye protection) are considered to provide adequate staff protection.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent systematic review undertaken for PHE concluded that: 'patients with SARS-CoV-2 infection who are breathing, talking, or coughing generate both respiratory droplets and aerosols, but FRSM (and where required, eye protection) are considered to provide adequate staff protection' (Public Health England, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a PHE systematic review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "94810778-3092-4270-92ff-f1f0d6cf1d1f",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C6",
+      "claim": "FFP3 respirators are more effective in preventing aerosol transmission than FRSMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, FFP3 respirators are more effective in preventing aerosol transmission than FRSMs, and observational data suggest that they may improve protection for HCWs (Oksanen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to observational data and is based on established knowledge about respirator effectiveness.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "ca20c53e-3205-4509-8529-7afd76a60765",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C7",
+      "claim": "Observational data suggest that FFP3 respirators may improve protection for HCWs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, FFP3 respirators are more effective in preventing aerosol transmission than FRSMs, and observational data suggest that they may improve protection for HCWs (Oksanen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to observational data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "72e6d35d-f461-4508-8498-505d4f54306f",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C8",
+      "claim": "Data from the HCW testing programme at CUHNFT during the first wave of the UK SARS-CoV-2 pandemic indicated a higher incidence of infection amongst HCWs caring for patients with COVID-19, compared with those who did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from the HCW testing programme at Cambridge University Hospitals NHS Foundation Trust (CUHNFT) during the first wave of the UK severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) pandemic indicated a higher incidence of infection amongst HCWs caring for patients with COVID-19, compared with those who did not (Rivett et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "33bbaa96-9754-4117-933f-c7277447eed9",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C9",
+      "claim": "Subsequent studies have confirmed the observation that HCWs caring for patients with COVID-19 have higher incidence of infection compared with those who did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent studies have confirmed this observation (Eyre et al., 2020; Cooper et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to subsequent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "cd076499-99a1-4067-a776-588738b7a2bf",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C10",
+      "claim": "The disparity in infection rates between HCWs caring for COVID-19 patients and those who did not persisted at CUHNFT in December 2020, despite control measures consistent with PHE guidance and audits indicating good compliance.",
+      "claim_type": "EXPLICIT",
+      "source": "This disparity persisted at CUHNFT in December 2020, despite control measures consistent with PHE guidance and audits indicating good compliance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observational data from the study site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "aab72c2e-ff8e-42cd-bec1-1a668a3d43b6",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C11",
+      "claim": "The CUHNFT infection control committee implemented a change of RPE for staff on 'red' (COVID-19) wards from FRSMs to FFP3 respirators.",
+      "claim_type": "EXPLICIT",
+      "source": "The CUHNFT infection control committee therefore implemented a change of RPE for staff on 'red' (COVID-19) wards from FRSMs to FFP3 respirators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes an intervention that occurred at the study site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "af0b5fc2-7ef1-47cb-a2ed-6fc4d89d79af",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C12",
+      "claim": "CUHNFT is a tertiary hospital in the UK with approximately 1000 beds.",
+      "claim_type": "EXPLICIT",
+      "source": "CUHNFT is a tertiary hospital in the UK with approximately 1000 beds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides factual information about the study site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "9f8ff4ce-4e44-441b-9022-fa39d10e24fe",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C13",
+      "claim": "During the pandemic, wards at CUHNFT were categorised as 'red', 'amber', or 'green'.",
+      "claim_type": "EXPLICIT",
+      "source": "During the pandemic, wards were categorised as 'red', 'amber', or 'green'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the ward categorization system used at the study site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "848d4e18-9335-4512-baeb-7edbdad78984",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C14",
+      "claim": "Patients with confirmed COVID-19 were cared for on red wards.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with confirmed COVID-19 were cared for on red wards, and patients who had negative SARS-CoV-2 tests and no clinical features of COVID-19 on green wards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the ward allocation protocol at the study site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "166060cd-af04-404c-b9cb-55f0aff944f6",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C15",
+      "claim": "Patients who had negative SARS-CoV-2 tests and no clinical features of COVID-19 were cared for on green wards.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with confirmed COVID-19 were cared for on red wards, and patients who had negative SARS-CoV-2 tests and no clinical features of COVID-19 on green wards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the ward allocation protocol at the study site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "ecb659ba-f5f4-460e-a1e2-979ef1e9567d",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C16",
+      "claim": "Patients awaiting test results, who had clinical features of COVID-19 but a negative test result, or who may have been exposed to SARS-CoV-2 were cared for on amber wards.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients awaiting test results, who had clinical features of COVID-19 but a negative test result, or who may have been exposed to SARS-CoV-2 were cared for on amber wards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the ward allocation protocol at the study site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "2fb15782-a760-4eed-bae5-5acce178044a",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C17",
+      "claim": "An average of 42.5 (range 19\u201372) nurses/HCAs worked on green wards.",
+      "claim_type": "EXPLICIT",
+      "source": "An average of 42.5 (range 19\u201372) nurses/HCAs worked on green wards, and 49.6 (range 37\u201369) worked on red wards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides quantitative data about staffing levels from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "e84c4bdc-02cf-4a44-b325-5c474bbbd465",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C18",
+      "claim": "An average of 49.6 (range 37\u201369) nurses/HCAs worked on red wards.",
+      "claim_type": "EXPLICIT",
+      "source": "An average of 42.5 (range 19\u201372) nurses/HCAs worked on green wards, and 49.6 (range 37\u201369) worked on red wards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides quantitative data about staffing levels from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "efdc9dca-5b3d-4609-9dd1-b733f0de3b0f",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C19",
+      "claim": "The mean number of beds per green ward was 24.1 (range 5\u201333).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean number of beds per green ward was 24.1 (range 5\u201333) and red 28.1 (range 26\u201333).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides quantitative data about ward capacity from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "2b061243-7d48-4309-8817-bdace0a7cfce",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C20",
+      "claim": "The mean number of beds per red ward was 28.1 (range 26\u201333).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean number of beds per green ward was 24.1 (range 5\u201333) and red 28.1 (range 26\u201333).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides quantitative data about ward capacity from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "83bf2c5c-0004-443b-b62f-1126667a54fc",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C21",
+      "claim": "The mean number of nurses and HCAs per bed was 0.41 (range 0.24\u20130.58) on green wards.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean number of nurses and HCAs per bed was 0.41 (range 0.24\u20130.58) on green wards and 0.31 (range 0.24\u20130.42) on red wards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides quantitative data about staffing ratios from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "b8e3b4fe-bb77-45a6-bc33-66dfd1e1d5a3",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C22",
+      "claim": "The mean number of nurses and HCAs per bed was 0.31 (range 0.24\u20130.42) on red wards.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean number of nurses and HCAs per bed was 0.41 (range 0.24\u20130.58) on green wards and 0.31 (range 0.24\u20130.42) on red wards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides quantitative data about staffing ratios from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "ff75ba7a-ca33-4729-b273-e16befa44ca9",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C23",
+      "claim": "A change to RPE for staff on red wards from FRSMs to FFP3 respirators was announced on 22/12/20.",
+      "claim_type": "EXPLICIT",
+      "source": "A change to RPE for staff on red wards from FRSMs to FFP3 respirators was announced on 22/12/20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides the date of the intervention.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "09653a72-354e-4623-b532-a00c9d1eb2b6",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C24",
+      "claim": "FFP3 respirators were assigned to staff following fit testing.",
+      "claim_type": "EXPLICIT",
+      "source": "FFP3 respirators were assigned to staff following fit testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the implementation protocol for the intervention.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "c8d3b191-ebe7-43d0-8547-cee58d46b6e6",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C25",
+      "claim": "HCWs on green wards continued to wear FRSMs after the change in RPE on red wards.",
+      "claim_type": "EXPLICIT",
+      "source": "HCWs on green wards continued to wear FRSMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the control condition in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "f00b24ec-206b-44c1-98d4-4a2620b9e9c1",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C26",
+      "claim": "HCWs on all wards wore eye protection.",
+      "claim_type": "EXPLICIT",
+      "source": "HCWs on all wards also wore eye protection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes PPE used across all wards.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "7c159cec-c704-4085-8076-f9a7e945e917",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C27",
+      "claim": "The following types of FFP3 respirator were used during the study period: 3 M 9330+, 3 M 1863, Easimask FSM18, and Mexin MX2016v.",
+      "claim_type": "EXPLICIT",
+      "source": "The following types of FFP3 respirator were used during the study period: 3 M 9330+, 3 M 1863, Easimask FSM18, and Mexin MX2016v.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides details about the specific equipment used in the intervention.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "d8970b38-1165-48f0-95dc-cecadd321d73",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C28",
+      "claim": "HCWs who did not pass fit testing with the masks available used either a JSP half mask respirator or a powered air purifying respirator (Tornado or Easiair).",
+      "claim_type": "EXPLICIT",
+      "source": "HCWs who did not pass fit testing with the masks available used either a JSP half mask respirator or a powered air purifying respirator (Tornado or Easiair).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes alternative equipment used for HCWs who could not be fitted with standard FFP3 respirators.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "13e294a0-6289-4a72-ad50-fc88950985e5",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C29",
+      "claim": "A comprehensive PCR-based HCW screening programme is established at CUHNFT, with symptomatic testing offered as required and asymptomatic testing offered to all HCWs weekly.",
+      "claim_type": "EXPLICIT",
+      "source": "A comprehensive PCR-based HCW screening programme is established at CUHNFT, with symptomatic testing offered as required and asymptomatic testing offered to all HCWs weekly (Rivett et al., 2020; Jones et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the testing programme at the study site and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "6d75faac-2edc-4e98-86cc-c0b11c1b884b",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C30",
+      "claim": "From 22/12/20, twice-weekly swabbing was offered on red wards and on wards where the most vulnerable patients were cared for (e.g. transplant and oncology patients).",
+      "claim_type": "EXPLICIT",
+      "source": "From 22/12/20, twice-weekly swabbing was offered on red wards and on wards where the most vulnerable patients were cared for (e.g. transplant and oncology patients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a change in testing frequency that occurred during the study period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "74eaf453-38e3-4334-a5d1-25a8baa59cce",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C31",
+      "claim": "The start of the study period was taken to be 02/11/20, coinciding with an increase in community incidence of SARS-CoV-2 infection and formal implementation of weekly asymptomatic screening for all staff members.",
+      "claim_type": "EXPLICIT",
+      "source": "The start of the study period was taken to be 02/11/20, coinciding with an increase in community incidence of SARS-CoV-2 infection and formal implementation of weekly asymptomatic screening for all staff members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim defines the study start date and provides rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "4acddf0b-09d4-45d0-9a62-7a035108e3f6",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C32",
+      "claim": "By default new infections on or prior to 27/12/20 were attributed to exposure before the change in RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "By default new infections on or prior to 27/12/20 were attributed to exposure before the change in RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the analytical approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "45bf31e2-7961-4d37-ac05-5a0ee0f2e589",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C33",
+      "claim": "Infections detected later than 27/12/20 were attributed to exposure after the change in RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Infections detected later than this date were attributed to exposure after the change in RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the analytical approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "27e87176-bd4b-477d-9056-4664c1934357",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C34",
+      "claim": "The timing of 27/12/20 was chosen to reflect the median incubation period of SARS-CoV-2 (5.1 days), with 27/12/20 falling 5 days (inclusive) after the change in RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "This timing was chosen to reflect the median incubation period of SARS-CoV-2 (5.1 days), with 27/12/20 falling 5 days (inclusive) after the change in RPE (Lauer et al., 2020; McAloon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides rationale for the analytical approach and is supported by citations about SARS-CoV-2 incubation period.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "0b93b0f8-369d-4320-8346-36b6d84858d6",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C35",
+      "claim": "Eight complete weeks were assessed in total prior to the change in RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Since staff testing was not conducted at weekends, eight complete weeks were assessed in total prior to the change in RPE (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "50080ce6-786d-4822-bc80-3ed99c595103",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C36",
+      "claim": "A programme of SARS-CoV-2 vaccination using the BNT162b2 COVID-19 vaccine commenced at CUHNFT on 08/12/20.",
+      "claim_type": "EXPLICIT",
+      "source": "A programme of SARS-CoV-2 vaccination using the BNT162b2 COVID-19 vaccine commenced at CUHNFT on 08/12/20 (Jones et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a potential confounding factor and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "fb6d4f86-62aa-49f8-aa6d-50da84133c95",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C37",
+      "claim": "The vaccination programme initially prioritised local residents over the age of 80.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with UK national guidance, the programme initially prioritised local residents over the age of 80.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the vaccination rollout strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "48e899bb-b72e-4409-b02d-38562e599cd4",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C38",
+      "claim": "Some HCWs who had been identified as at high risk from SARS-CoV-2 infection were vaccinated and were additionally prevented from working on red wards.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some HCWs who had been identified as at high risk from SARS-CoV-2 infection were also vaccinated, and were additionally prevented from working on red wards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a potential confounding factor in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "1c1c251d-c516-4628-8bd9-8962ae2c8399",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C39",
+      "claim": "From 08/01/21, the vaccination programme switched to vaccinating HCWs, with initial priority being given to staff on red wards.",
+      "claim_type": "EXPLICIT",
+      "source": "From 08/01/21, the programme switched to vaccinating HCWs, with initial priority being given to staff on red wards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a change in vaccination strategy that could affect study results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "1d227d9d-aaa1-4ffb-8d90-00ca3c0dfdba",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C40",
+      "claim": "The final week of the study period commenced on 11/01/21, since minimal effect is expected in the first 7 days after the first dose of vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid the potential for confounding, the final week of the study period commenced on 11/01/21, since minimal effect is expected in the first 7 days after the first dose of vaccine (Polack et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides rationale for the study end date and is supported by a citation about vaccine efficacy timing.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "3b9a1c1d-5118-49e7-9303-b2daa93c1746",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C41",
+      "claim": "The number of red wards was increased from one at the beginning of November 2020 to seven by the week starting 11/01/21.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the rising number of admissions to CUHNFT with COVID-19, the number of red wards was increased from one at the beginning of November 2020 to seven by the week starting 11/01/21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a change in hospital operations during the study period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "fb9b3848-ecb4-49b5-884d-3e90852231cc",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C42",
+      "claim": "Six wards changed from green to red during the period of data collection.",
+      "claim_type": "EXPLICIT",
+      "source": "Six wards therefore changed from green to red during the period of data collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes changes in ward designation during the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "733706b8-6c4c-45df-ae6e-a1f573c01f64",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C43",
+      "claim": "Of 609 positive results over the entire study period, 169 (27.8%) were included in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 609 positive results over the entire study period, 169 (27.8%) were included in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides quantitative data about case inclusion in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "2f3071c3-6013-49a2-b70b-830a9b3b9f54",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C44",
+      "claim": "Exclusions encompassed HCWs who were not ward based or worked between different wards with different red/amber/green status (269/609, 44.2% of positive results).",
+      "claim_type": "EXPLICIT",
+      "source": "Exclusions encompassed HCWs who were not ward based or worked between different wards with different red/amber/green status (269/609, 44.2 % of positive results), HCW working on amber wards (9/609, 1.5%), non-clinical staff (141/609, 23.1%), and staff working in critical care areas (21/609, 3.5%), where different RPE was used throughout (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes exclusion criteria and provides quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "2076cba2-2038-4bb1-978d-45f55bf4a248",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C45",
+      "claim": "HCWs working on amber wards were excluded (9/609, 1.5% of positive results).",
+      "claim_type": "EXPLICIT",
+      "source": "Exclusions encompassed HCWs who were not ward based or worked between different wards with different red/amber/green status (269/609, 44.2 % of positive results), HCW working on amber wards (9/609, 1.5%), non-clinical staff (141/609, 23.1%), and staff working in critical care areas (21/609, 3.5%), where different RPE was used throughout (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes exclusion criteria and provides quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "049520b7-bac5-4858-a357-827587fa183b",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C46",
+      "claim": "Non-clinical staff were excluded (141/609, 23.1% of positive results).",
+      "claim_type": "EXPLICIT",
+      "source": "Exclusions encompassed HCWs who were not ward based or worked between different wards with different red/amber/green status (269/609, 44.2 % of positive results), HCW working on amber wards (9/609, 1.5%), non-clinical staff (141/609, 23.1%), and staff working in critical care areas (21/609, 3.5%), where different RPE was used throughout (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes exclusion criteria and provides quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "e0bb3be9-825a-4c21-bfee-b8c25d551eac",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C47",
+      "claim": "Staff working in critical care areas were excluded (21/609, 3.5% of positive results), where different RPE was used throughout.",
+      "claim_type": "EXPLICIT",
+      "source": "Exclusions encompassed HCWs who were not ward based or worked between different wards with different red/amber/green status (269/609, 44.2 % of positive results), HCW working on amber wards (9/609, 1.5%), non-clinical staff (141/609, 23.1%), and staff working in critical care areas (21/609, 3.5%), where different RPE was used throughout (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes exclusion criteria and provides quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "15b0f60a-001f-4220-817f-fb026df0f20e",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C48",
+      "claim": "If a staff member tested positive within 5 days of their ward changing colour, their case was classified according to the red/green status of their ward 5 days before their positive test.",
+      "claim_type": "EXPLICIT",
+      "source": "If a staff member tested positive within 5 days of their ward changing colour, their case was classified according to the red/green status of their ward 5 days before their positive test (to allow for the incubation period, as above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the analytical approach for handling ward transitions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "9cc03985-1604-45ac-8382-607ab0f614f4",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C49",
+      "claim": "The effects of changing the interval from 5 days to between 3 and 7 days were explored.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of changing the interval from 5 days to between 3 and 7 days explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a sensitivity analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "ef465849-83fb-4182-b75a-ac4d761486bc",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C50",
+      "claim": "The total number of cases of SARS-CoV-2 infection amongst HCWs at CUHNFT increased throughout the study period, in keeping with the rising incidence of SARS-CoV-2 in the community.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of cases of SARS-CoV-2 infection amongst HCWs at CUHNFT increased throughout the study period, in keeping with the rising incidence of SARS-CoV-2 in the community (Figure 1 and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1 and the associated source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "b185bfd3-5ff2-4522-bbaa-0ec94c97e3a4",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C51",
+      "claim": "Similar proportions of cases were ascertained by symptomatic testing and asymptomatic screening on both green and red wards, suggesting similar testing-seeking behaviour between staff groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar proportions of cases were ascertained by symptomatic testing and asymptomatic screening on both green and red wards, suggesting similar testing-seeking behaviour between staff groups (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 1 and involves inference about testing behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "ed9d5d52-283b-4ffc-897f-938eda0454e9",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C52",
+      "claim": "12.1% of cases on green wards were amongst allied health professionals, such as physiotherapists and occupational therapists.",
+      "claim_type": "EXPLICIT",
+      "source": "12.1 % of cases on green wards were amongst allied health professionals, such as physiotherapists and occupational therapists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides quantitative data about the composition of cases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "afa9a73a-a336-45e9-ae6e-b5283e934cf7",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C53",
+      "claim": "There was a significant correlation between community cases and days worked by HCWs on red wards (p < 0.002, Pearson correlation test), reflecting increased hospital admissions.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, there was a significant correlation between community cases and days worked by HCWs on red wards (p < 0.002, Pearson correlation test), reflecting increased hospital admissions (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis and data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "8ab9f089-dea4-4a39-ada6-a402afad707c",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C54",
+      "claim": "Prior to the change in RPE, cases per HCW day were higher on red compared with green wards in seven out of 8 weeks analysed (p = 0.016, Wilcoxon signed-rank test).",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to the change in RPE, cases per HCW day were higher on red compared with green wards in seven out of 8 weeks analysed (p = 0.016, Wilcoxon signed-rank test, Figure 2 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis and data shown in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "833620cb-f4ed-462d-9cdc-2955dbb60370",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C55",
+      "claim": "Following the change in RPE, the incidence of infection on red and green wards was similar, and not statistically different (p = 0.5, Wilcoxon signed-rank test).",
+      "claim_type": "EXPLICIT",
+      "source": "Following the change in RPE, the incidence of infection on red and green wards was similar, and not statistically different (p = 0.5, Wilcoxon signed-rank test, Figure 2 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis and data shown in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "2bd234a8-762d-4e81-b169-7a6cab48e35d",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C56",
+      "claim": "There was a strong positive correlation between the incidence of SARS-CoV-2 in the community and the number of cases per HCW day on green wards (R\u00b2 = 0.80).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, there was a strong positive correlation between the incidence of SARS-CoV-2 in the community and the number of cases per HCW day on green (R2 = 0.80) but not red (R2 = 0.03) wards (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis and data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "0367a785-b20b-471a-91e7-bf877f30c126",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C57",
+      "claim": "There was not a strong positive correlation between the incidence of SARS-CoV-2 in the community and the number of cases per HCW day on red wards (R\u00b2 = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, there was a strong positive correlation between the incidence of SARS-CoV-2 in the community and the number of cases per HCW day on green (R2 = 0.80) but not red (R2 = 0.03) wards (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis and data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "df962a1e-a8c7-451b-8514-1cf4bbe511cf",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C58",
+      "claim": "Most cases amongst HCWs on green wards were caused by community-acquired infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that most cases amongst HCWs on green wards were caused by community-acquired infection, whereas cases amongst HCWs on red wards were driven by direct, ward-based infection from patients with COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the correlation data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "d3eb8e2b-f067-4e8d-b74c-4ba5497e8bdc",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C59",
+      "claim": "Cases amongst HCWs on red wards were driven by direct, ward-based infection from patients with COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that most cases amongst HCWs on green wards were caused by community-acquired infection, whereas cases amongst HCWs on red wards were driven by direct, ward-based infection from patients with COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the correlation data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "5b8117b1-c4b7-4133-bbdf-f3b55501b984",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C60",
+      "claim": "The mathematical model divides the total risk of infection into a risk from community-based exposure and a risk from direct, ward-based exposure to patients.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this model, the total risk of infection is divided into a risk from community-based exposure, and a risk from direct, ward-based exposure to patients (ward-specific risk).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the structure of the mathematical model developed for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "a5ccfc95-b48e-453c-b22a-6bcb4bb27534",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C61",
+      "claim": "The model produced a qualitatively close fit to the observed numbers of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model produced a qualitatively close fit to the observed numbers of cases (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by visual comparison shown in Figure 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "eea48417-03ba-47a4-86ce-e1f90d161cd4",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C62",
+      "claim": "HCWs working on green wards faced a consistent, low risk of infection from direct, ward-based exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "HCWs working on green wards faced a consistent, low risk of infection from direct, ward-based exposure (green line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the model results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "a05c269b-f996-4092-9048-04d3911af16f",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C63",
+      "claim": "HCWs working on red wards initially faced a much higher risk of infection from direct, ward-based exposure, falling to a value close to that on green wards upon the introduction of FFP3 respirators.",
+      "claim_type": "EXPLICIT",
+      "source": "HCWs working on red wards initially faced a much higher risk of infection from direct, ward-based exposure, falling to a value close to that on green wards upon the introduction of filtering face piece 3 (FFP3) respirators.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the model results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "99f89e69-6617-4262-9ee9-53279af31dc2",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C64",
+      "claim": "The risk of direct infection from working on a green ward was low throughout the study period, and consistently lower than the risk of community-based exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred risk of direct infection from working on a green ward was low throughout the study period, and consistently lower than the risk of community-based exposure, which increased in proportion to rising levels of community incidence (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the model results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "3ae33c7f-b74d-46bd-8f3f-af61deeaf626",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C65",
+      "claim": "The risk of direct infection from working on a red ward before the change in RPE was considerably higher than the risk of community-based exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the risk of direct infection from working on a red ward before the change in RPE was considerably higher than the risk of community-based exposure, and approximately 31-fold greater than the corresponding risk from working on a green ward (confidence interval [5.93, \u221e]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the model results and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "f88a2a63-53a6-4e3e-abab-6e70e192ed4a",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C66",
+      "claim": "The risk of direct infection from working on a red ward before the change in RPE was approximately 31-fold greater than the corresponding risk from working on a green ward (confidence interval [5.93, \u221e]).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the risk of direct infection from working on a red ward before the change in RPE was considerably higher than the risk of community-based exposure, and approximately 31-fold greater than the corresponding risk from working on a green ward (confidence interval [5.93, \u221e]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the model results and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "905e5824-d28b-4bcf-bdd1-cfe70976f973",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C67",
+      "claim": "A high proportion of cases on green wards were likely caused by infection in the community.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whilst a high proportion of cases on green wards were likely caused by infection in the community, cases on red wards at the beginning of the study period were attributed mainly to direct, ward-based exposure (Figure 3D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the model results shown in Figure 3D and 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "8028b496-859f-40c4-ac25-48c0d0bc9075",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C68",
+      "claim": "Cases on red wards at the beginning of the study period were attributed mainly to direct, ward-based exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, whilst a high proportion of cases on green wards were likely caused by infection in the community, cases on red wards at the beginning of the study period were attributed mainly to direct, ward-based exposure (Figure 3D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the model results shown in Figure 3D and 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "ba35d38f-a942-440f-9e5d-203b84a66634",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C69",
+      "claim": "The introduction of FFP3 respirators led to a reduction of between 52% and 100% (maximum likelihood 100%) in the risk of direct, ward-based COVID-19 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, our model further suggests that the introduction of FFP3 respirators led to a reduction of between 52% and 100% (maximum likelihood 100%) in the risk of direct, ward-based COVID-19 infection (Table 2, r2/r1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the model results shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "25bf03a0-716d-46c9-bcd8-59a7a999a0d6",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C70",
+      "claim": "Altering the cutoff for attributing cases to ward type did not alter the maximum likelihood inference for the effect of FFP3 respirators (r2/r1, 100%).",
+      "claim_type": "EXPLICIT",
+      "source": "Altering this cutoff did not alter the maximum likelihood inference for the effect of FFP3 respirators (r2/r1, 100%), although the lower bound of the effect size varied between 30% and 72% for cutoffs between 3 and 7 days (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on sensitivity analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "9f75dff0-2092-48ca-9e53-ca74a17c757a",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C71",
+      "claim": "The lower bound of the effect size of FFP3 respirators varied between 30% and 72% for cutoffs between 3 and 7 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Altering this cutoff did not alter the maximum likelihood inference for the effect of FFP3 respirators (r2/r1, 100%), although the lower bound of the effect size varied between 30% and 72% for cutoffs between 3 and 7 days (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on sensitivity analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "419ee3c2-6ac2-40e3-b097-38525d3b9826",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C72",
+      "claim": "Data collected from critical care wards, where enhanced PPE was used throughout the period of the study, showed a consistently low rate of HCW infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Data collected from critical care wards, where enhanced PPE was used throughout the period of the study, showed a consistently low rate of HCW infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observational data from critical care wards.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "1dfcc52f-fceb-4ca8-8cf8-9855268fbc86",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C73",
+      "claim": "Incorporating critical care ward data into the model did not materially affect the outcome, with the introduction of FFP3 respirators associated with a reduction of between 26% and 100% (most likely 94%) in the risk of direct, ward-based COVID-19 infection at the default cutoff.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, incorporating these data into the model did not materially affect the outcome, with the introduction of FFP3 respirators associated with a reduction of between 26% and 100% (most likely 94%) in the risk of direct, ward-based COVID-19 infection at the default cutoff (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on additional model analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "a22a1ddc-4de0-4db9-9343-444c4f8e27d2",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C74",
+      "claim": "Whilst using FRSMs, the majority of infections amongst HCWs working on red wards could be attributed to direct exposure to patients with COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst using FRSMs, the majority of infections amongst HCWs working on red wards could be attributed to direct exposure to patients with COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "cb781462-c35a-4f09-bc31-2e8cd7fdb1a3",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C75",
+      "claim": "As community incidence rose, the majority of infections amongst HCWs working on green wards were attributed by the model to community-based effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, as community incidence rose, the majority of infections amongst HCWs working on green wards were attributed by our model to community-based effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "e4c7bb99-5246-485e-b0ad-12af9a059620",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C76",
+      "claim": "After the change in RPE, cases attributed to ward-based exposure fell significantly, with FFP3 respirators providing an inferred 52\u2013100% (most likely 100%) reduction in the risk of ward-based infection from patients with COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "After the change in RPE, cases attributed to ward-based exposure fell significantly, with FFP3 respirators providing an inferred 52\u2013100% (most likely 100%) reduction in the risk of ward-based infection from patients with COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "9656e882-6943-448f-9df1-13a8ea0432ec",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C77",
+      "claim": "The use of FRSMs as RPE was insufficient to protect HCWs against infection from patients with COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with previous observations (Rivett et al., 2020; Eyre et al., 2020; Cooper et al., 2020), our findings therefore suggest that the use of FRSMs as RPE was insufficient to protect HCWs against infection from patients with COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the study findings and is supported by citations to previous observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "9c8db247-5def-46b5-b573-5dd8edc55c97",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C78",
+      "claim": "Excess infections amongst HCWs caring for patients with COVID-19 may be prevented by the use of FFP3 respirators, in combination with other PPE and infection control measures.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, excess infections amongst HCWs caring for patients with COVID-19 may be prevented by the use of FFP3 respirators, in combination with other PPE and infection control measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "18503145-f33d-4959-bbd3-4990adf2da41",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C79",
+      "claim": "During the study period, the incidence of SARS-CoV-2 in England increased, with spread of the more transmissible B.1.1.7 (alpha) variant.",
+      "claim_type": "EXPLICIT",
+      "source": "During the study period, the incidence of SARS-CoV-2 in England increased (Office of National Statistics, 2021), with spread of the more transmissible B.1.1.7 (alpha) variant (Davies et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to external data sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "8fa45c80-5edd-4059-8732-12ffb6f3e927",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C80",
+      "claim": "By the ninth week of the study, 79% of cases in Cambridgeshire were caused by the B.1.1.7 variant.",
+      "claim_type": "EXPLICIT",
+      "source": "By the ninth week of the study, 79 % of cases in Cambridgeshire were caused by this variant (Wellcome Sanger Institute, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to genomic surveillance data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "6f6da016-f1ed-4494-ac7c-ccf687b37fb6",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C81",
+      "claim": "The observations on the use of FFP3 respirators (weeks 9\u201311) were made at a time when the B.1.1.7 variant predominated, suggesting that they are robust to any associated increase in SARS-CoV-2 transmissibility in a hospital setting attributable to this variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations on the use of FFP3 respirators (weeks 9\u201311) were therefore made at a time when the B.1.1.7 variant predominated, suggesting that they are robust to any associated increase in SARS-CoV-2 transmissibility in a hospital setting attributable to this variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the timing of observations relative to variant prevalence.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "f0d7ac5e-8824-4be5-b596-cccac8086298",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C82",
+      "claim": "The findings are likely also to be applicable to the B.1.617.2 (delta) variant, though this was not formally evaluated in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst likely also to be applicable to the B.1.617.2 (delta) variant, this was not formally evaluated in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, acknowledging a limitation of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "de65eab3-6136-4fc2-849f-113f3dc3713d",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C83",
+      "claim": "This observational study includes a small number of cases in a single Trust.",
+      "claim_type": "EXPLICIT",
+      "source": "This observational study includes a small number of cases in a single Trust, and there may be alternative explanations for the different patterns of infection observed before and after the change in RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "916175af-90e3-4ba3-bf0c-0d520428c19b",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C84",
+      "claim": "There may be alternative explanations for the different patterns of infection observed before and after the change in RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "This observational study includes a small number of cases in a single Trust, and there may be alternative explanations for the different patterns of infection observed before and after the change in RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges uncertainty and potential confounding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "473d21ca-2483-48e4-a4c4-990c3b5712ea",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C85",
+      "claim": "The maximum likelihood inference that FFP3 masks (in combination with other PPE and infection control measures) provide 100% protection against ward-based infection should be treated with caution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our maximum likelihood inference that FFP3 masks (in combination with other PPE and infection control measures) provide 100 % protection against ward-based infection should therefore be treated with caution; the large confidence intervals calculated for parameters in our model reflect the limited amount of data available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges the limitations of the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "c22e404a-1b2d-4842-b4be-0b1047d891fb",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C86",
+      "claim": "The large confidence intervals calculated for parameters in the model reflect the limited amount of data available.",
+      "claim_type": "EXPLICIT",
+      "source": "Our maximum likelihood inference that FFP3 masks (in combination with other PPE and infection control measures) provide 100 % protection against ward-based infection should therefore be treated with caution; the large confidence intervals calculated for parameters in our model reflect the limited amount of data available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim explains the statistical uncertainty in the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "b0456576-7e75-4666-9d76-9b90e43beba1",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C87",
+      "claim": "There is an urgent need for further studies evaluating the appropriate level of RPE for HCWs caring for patients with COVID-19, as well as other respiratory viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our results highlight an urgent need for further studies evaluating the appropriate level of RPE for HCWs caring for patients with COVID-19, as well as other respiratory viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a recommendation based on the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "a48c8324-60c4-4ab1-bdf3-58aeab258c0d",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C88",
+      "claim": "A revision of RPE recommendations is proposed until more definitive information is available, in accordance with the precautionary principle.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the precautionary principle, we propose a revision of RPE recommendations until more definitive information is available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a policy recommendation based on the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "e73d1387-07c2-47bb-a6e5-6c801506837d",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C89",
+      "claim": "Whilst using FRSMs, HCWs working on red wards faced an approximately 31-fold (and at least fivefold) increased risk of direct, ward-based infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst using FRSMs, HCWs working on red wards faced an approximately 31-fold (and at least fivefold) increased risk of direct, ward-based infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and is based on the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "762f15e6-fdb8-4cd7-a46b-a6bf63544e45",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C90",
+      "claim": "After changing to FFP3 respirators, the risk of direct, ward-based infection was significantly reduced (52\u2013100% protection).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, after changing to FFP3 respirators, this risk was significantly reduced (52\u2013100% protection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and is based on the model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "be8316bf-8796-4e77-8595-01b11f8e502b",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C91",
+      "claim": "FFP3 respirators may provide more effective protection than FRSMs for HCWs caring for patients with COVID-19, whether or not AGPs are undertaken.",
+      "claim_type": "EXPLICIT",
+      "source": "FFP3 respirators may therefore provide more effective protection than FRSMs for HCWs caring for patients with COVID-19, whether or not AGPs are undertaken.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion stated in the abstract based on the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "cec3f593-40cd-4889-8d46-af27d2d01dfb",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C92",
+      "claim": "The study previously demonstrated frequent pauci- and asymptomatic SARS-CoV-2 infection in HCWs during the first wave of the COVID-19 pandemic in the UK, using a comprehensive PCR-based HCW screening programme.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated frequent pauci- and asymptomatic severe acute respiratory syndrome coronavirus 2 infection HCWs during the first wave of the COVID-19 pandemic in the UK, using a comprehensive PCR-based HCW screening programme (Rivett et al., 2020; Jones et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to previous work by the authors and is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "2fe393ac-394c-4a12-94a8-ea6fc55a57a7",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C93",
+      "claim": "The study uses observational data and mathematical modelling to analyse infection rates amongst HCWs working on 'red' (COVID-19) and 'green' (non-COVID-19) wards during the second wave of the pandemic, before and after the substitution of FFP3 respirators for FRSMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use observational data and mathematical modelling to analyse infection rates amongst HCWs working on 'red' (coronavirus disease 2019, COVID-19) and 'green' (non-COVID-19) wards during the second wave of the pandemic, before and after the substitution of filtering face piece 3 (FFP3) respirators for FRSMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the study design and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "00275da4-09a3-4524-a6fa-baf6e34a4b7f",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C94",
+      "claim": "The median incubation period of SARS-CoV-2 is 5.1 days.",
+      "claim_type": "EXPLICIT",
+      "source": "This timing was chosen to reflect the median incubation period of SARS-CoV-2 (5.1 days), with 27/12/20 falling 5 days (inclusive) after the change in RPE (Lauer et al., 2020; McAloon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on SARS-CoV-2 incubation period.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "4ffcc167-7070-4f92-8726-f12597abb9d6",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "claim_id": "C95",
+      "claim": "SARS-CoV-2 has a generation time of approximately 7 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Our use of community data from the previous week reflects a generation time for SARS-CoV-2 of approximately 7 days (Volz et al., 2021); we assumed that HCWs diagnosed with COVID-19 infection during this study would have been infected by individuals who were diagnosed in the previous week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and is used to justify the model structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6c0e29de-f473-4fa1-9cb5-fc69c714eb55",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript reviews existing guidance on respiratory protective equipment (RPE) for healthcare workers caring for COVID-19 patients. UK and WHO guidance recommend FRSMs except during aerosol-generating procedures (AGPs), while CDC guidance recommends N95 or higher respirators. A PHE systematic review concluded FRSMs provide adequate protection despite patients generating both droplets and aerosols.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 accurately cite published guidance documents and systematic reviews. These are straightforward factual claims about existing recommendations, properly attributed to authoritative sources (WHO, UK Government, CDC, PHE).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "365d547b-6896-485e-b8b2-e7b0b974a3d1",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FFP3 respirators are more effective than FRSMs in preventing aerosol transmission, and observational data suggest they may improve HCW protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 are supported by citation to observational data and reflect established knowledge about respirator filtration efficiency. This is a well-accepted principle in respiratory protection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "a35b5a67-c458-48d4-94c2-3b42e4a827cf",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Previous studies at CUHNFT and elsewhere showed higher infection rates among HCWs caring for COVID-19 patients compared to those who did not, and this disparity persisted at CUHNFT in December 2020 despite control measures and good compliance with PHE guidance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 are supported by citations to prior published studies (C8, C9) and observational data from the study site (C10). This establishes the rationale for the intervention studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "916d8051-8d32-480c-a24e-b69679d62350",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study describes the intervention and setting: CUHNFT implemented a change from FRSMs to FFP3 respirators on red (COVID-19) wards on 22/12/20, while green (non-COVID-19) wards continued using FRSMs. The hospital used a ward categorization system (red/amber/green), with detailed staffing and capacity data provided for each ward type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C28 provide descriptive information about the study setting, intervention, and ward characteristics. These are factual descriptions of the study design and are internally consistent with quantitative data provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "c1c9130e-5fac-450b-975c-95beabd2d777",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study utilized a comprehensive PCR-based HCW screening program with weekly asymptomatic testing (increased to twice-weekly on red wards from 22/12/20). The study period ran from 02/11/20, with cases attributed to pre- or post-intervention exposure based on a 27/12/20 cutoff (5 days after the RPE change, reflecting the median SARS-CoV-2 incubation period).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 describe the testing program and analytical approach. The 5-day cutoff is appropriately justified by citations to SARS-CoV-2 incubation period studies (C34). The methodology is clearly described and logically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "0de0c554-0e2e-4def-afdf-8c3a9f9a65dd",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A vaccination program commenced at CUHNFT on 08/12/20, initially prioritizing residents over 80 and some high-risk HCWs (who were prevented from working on red wards). From 08/01/21, the program switched to vaccinating HCWs, prioritizing red ward staff. The study ended on 11/01/21 to avoid confounding from vaccine effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 describe a potential confounder (vaccination) and the study's approach to address it. The decision to end the study before vaccine effects would be expected (C40, citing Polack et al.) is appropriately justified. However, this creates a very short post-intervention period (only 3 weeks), which is a limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "b8248b8f-7ecb-4b68-af39-b04b3531aeb1",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The number of red wards increased from one to seven during the study period, with six wards changing designation. Of 609 positive results, only 169 (27.8%) were included, with exclusions for staff working across multiple ward types, amber wards, non-clinical staff, and critical care areas. Cases were classified based on ward status 5 days before positive test, with sensitivity analysis varying this from 3-7 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C49 describe important methodological details. The exclusion of 72.2% of cases (C43-C47) raises concerns about selection bias and generalizability. The changing ward designations (C41-C42) and the classification approach (C48) introduce complexity and potential misclassification. While sensitivity analysis was performed (C49), the large proportion of excluded cases and dynamic ward changes are significant limitations not fully addressed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "e446c1c1-fb89-4eed-a67e-f2201551eb78",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Total HCW infections increased throughout the study period, tracking community incidence. Similar proportions of cases were detected by symptomatic vs. asymptomatic testing on both ward types, suggesting similar testing-seeking behavior. There was significant correlation between community cases and red ward HCW days worked (p<0.002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 present descriptive findings supported by Figure 1 and statistical tests. The correlation between community cases and red ward days (C53) is expected given increased hospital admissions. The similar testing patterns (C51) support the validity of case ascertainment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "bdff71a1-52b7-4b99-bd9e-3a89ec0e56a9",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior to the RPE change, infection rates per HCW day were significantly higher on red vs. green wards in 7/8 weeks (p=0.016, Wilcoxon signed-rank test). After the RPE change, infection rates on red and green wards were similar and not statistically different (p=0.5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 present the primary observational finding with appropriate statistical tests. The Wilcoxon signed-rank test is appropriate for paired weekly comparisons. However, the post-intervention period includes only 3 weeks of data, limiting statistical power. The change from significant difference to no difference is consistent with the hypothesis but could also reflect other factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "f22964c9-0f72-411d-87e7-14e293bff4bf",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "There was strong positive correlation between community incidence and cases per HCW day on green wards (R\u00b2=0.80) but not red wards (R\u00b2=0.03), suggesting most green ward cases were community-acquired while red ward cases were driven by direct ward-based exposure to COVID-19 patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 present correlation analyses that support the interpretation of different infection sources. The strong correlation on green wards (R\u00b2=0.80) vs. weak correlation on red wards (R\u00b2=0.03) is striking and supports the inference in C58-C59. However, this is correlational evidence and alternative explanations exist.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "8fcad2e5-76c5-4ab4-a539-f18c3e74ecad",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A mathematical model was developed dividing infection risk into community-based and ward-specific components. The model fit the observed data well and inferred that green ward HCWs faced consistently low direct ward-based risk, while red ward HCWs faced ~31-fold higher direct risk (CI [5.93, \u221e]) before the RPE change, which fell to near-green-ward levels after FFP3 introduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C66 describe the mathematical model and its key findings. While the model structure is reasonable (C60) and produces qualitatively good fit (C61), several concerns arise: (1) the confidence interval for the 31-fold risk increase is unbounded above (C66), indicating substantial uncertainty; (2) the model has limited data (only 11 weeks, 169 cases); (3) the post-intervention period is very short (3 weeks); (4) the model assumes Poisson-distributed cases but doesn't validate this assumption; (5) multiple parameters are estimated from limited data, potentially leading to overfitting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "1c6a233c-01a5-4954-98ca-203c39200bd4",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model attributed most green ward cases to community infection and most pre-intervention red ward cases to direct ward-based exposure. The introduction of FFP3 respirators was associated with a 52-100% reduction (maximum likelihood 100%) in direct ward-based COVID-19 infection risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C69 present the model's key conclusions. While the model-based attribution (C67-C68) is consistent with the correlation data, the estimated 52-100% reduction with maximum likelihood of 100% (C69) should be treated with extreme caution. A maximum likelihood estimate at the boundary (100%) suggests model misspecification or insufficient data. The wide confidence interval (52-100%) reflects substantial uncertainty, and the authors themselves acknowledge this should be treated with caution (C85).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "df301428-8435-47fe-bcce-54e33cab33ac",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Sensitivity analysis varying the incubation period cutoff from 3-7 days did not change the maximum likelihood estimate (100% protection) but the lower bound of the effect size varied between 30-72%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 describe appropriate sensitivity analysis. The consistency of the maximum likelihood estimate across cutoffs provides some robustness, though the varying lower bounds (30-72%) indicate sensitivity to this methodological choice. This analysis partially addresses concerns about the 5-day cutoff choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "51841274-42cc-4341-a6ca-46e253c887bd",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Critical care wards, where enhanced PPE was used throughout, showed consistently low HCW infection rates. Including these data in the model yielded similar results: 26-100% reduction (most likely 94%) in direct ward-based infection risk with FFP3 respirators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 provide supporting evidence from critical care wards. The consistently low infection rates on critical care wards (C72) support the hypothesis that enhanced PPE is protective. The similar model results when including these data (C73) provide some validation, though the most likely estimate shifts from 100% to 94%.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "80718209-0ccc-478b-8939-1a66f9ba2e80",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study concludes that while using FRSMs, most red ward HCW infections were attributable to direct patient exposure, while green ward infections were mainly community-based. After the RPE change, ward-based exposure cases fell significantly (52-100% reduction, most likely 100%). The findings suggest FRSMs were insufficient protection and that FFP3 respirators may prevent excess infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C78 present the study's main conclusions. While the overall pattern is consistent with FFP3 respirators being more protective than FRSMs, several factors limit confidence: (1) the observational design cannot rule out confounding; (2) the post-intervention period is very short (3 weeks); (3) multiple factors changed during the study (ward numbers, testing frequency, vaccination beginning); (4) the model's maximum likelihood estimate at 100% suggests boundary issues; (5) the wide confidence intervals reflect substantial uncertainty. The conclusion that FRSMs were \"insufficient\" (C77) is supported by prior studies but the specific quantitative estimates from this study should be interpreted cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "ca237ead-6a91-4b67-8b0f-ce163b26796a",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "During the study period, the B.1.1.7 (alpha) variant spread in England, comprising 79% of Cambridgeshire cases by week 9. The FFP3 observations (weeks 9-11) occurred when B.1.1.7 predominated, suggesting the findings are robust to this variant's increased transmissibility. Applicability to the delta variant was not formally evaluated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 are supported by citations to surveillance data and provide important context about variant prevalence. The inference that findings are robust to B.1.1.7 (C81) is reasonable given the timing. The acknowledgment that delta variant applicability was not evaluated (C82) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "b53a6f83-64d5-4dbb-9483-17722367c5d1",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors acknowledge limitations: small number of cases in a single Trust, possible alternative explanations for observed patterns, and that the 100% protection estimate should be treated with caution due to large confidence intervals reflecting limited data. They call for further studies and propose revising RPE recommendations based on the precautionary principle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 appropriately acknowledge study limitations and uncertainty. The authors correctly note the small sample size (C83), potential alternative explanations (C84), and the need to treat the 100% estimate with caution (C85). The call for further studies (C87) and policy recommendation based on the precautionary principle (C88) are reasonable given the uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    },
+    {
+      "id": "cc8fe870-475f-49db-b534-1f694ec5d022",
+      "content_id": "4571132a-213b-41ac-8960-e7de56fedee3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The abstract states that while using FRSMs, red ward HCWs faced ~31-fold (at least 5-fold) increased direct ward-based infection risk, which was significantly reduced (52-100% protection) after changing to FFP3 respirators. The authors conclude FFP3 respirators may provide more effective protection than FRSMs for HCWs caring for COVID-19 patients, regardless of AGPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C91 summarize the main findings in the abstract. While the observational data show a pattern consistent with FFP3 being more protective, the quantitative estimates have substantial uncertainty (wide confidence intervals, boundary estimates, short post-intervention period, potential confounding). The conclusion that FFP3 \"may\" provide more effective protection (C91) is appropriately hedged but the specific numerical estimates (31-fold risk, 52-100% protection) should be interpreted with great caution given the study limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:55:16.174261Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "21009368-2a50-4358-9001-61aa0ce6e661",
+      "result_id": "6c0e29de-f473-4fa1-9cb5-fc69c714eb55"
+    },
+    {
+      "claim_id": "92c3af7e-8cdd-4c2b-9116-fc72b4a17162",
+      "result_id": "6c0e29de-f473-4fa1-9cb5-fc69c714eb55"
+    },
+    {
+      "claim_id": "4e1eccea-77b8-453f-bc5f-90a4c830d19b",
+      "result_id": "6c0e29de-f473-4fa1-9cb5-fc69c714eb55"
+    },
+    {
+      "claim_id": "ecde6a10-160f-4157-99b2-cbe055908ed3",
+      "result_id": "6c0e29de-f473-4fa1-9cb5-fc69c714eb55"
+    },
+    {
+      "claim_id": "cd728a92-b67a-4054-bc68-1c5384232a5a",
+      "result_id": "6c0e29de-f473-4fa1-9cb5-fc69c714eb55"
+    },
+    {
+      "claim_id": "94810778-3092-4270-92ff-f1f0d6cf1d1f",
+      "result_id": "365d547b-6896-485e-b8b2-e7b0b974a3d1"
+    },
+    {
+      "claim_id": "ca20c53e-3205-4509-8529-7afd76a60765",
+      "result_id": "365d547b-6896-485e-b8b2-e7b0b974a3d1"
+    },
+    {
+      "claim_id": "72e6d35d-f461-4508-8498-505d4f54306f",
+      "result_id": "a35b5a67-c458-48d4-94c2-3b42e4a827cf"
+    },
+    {
+      "claim_id": "33bbaa96-9754-4117-933f-c7277447eed9",
+      "result_id": "a35b5a67-c458-48d4-94c2-3b42e4a827cf"
+    },
+    {
+      "claim_id": "cd076499-99a1-4067-a776-588738b7a2bf",
+      "result_id": "a35b5a67-c458-48d4-94c2-3b42e4a827cf"
+    },
+    {
+      "claim_id": "aab72c2e-ff8e-42cd-bec1-1a668a3d43b6",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "af0b5fc2-7ef1-47cb-a2ed-6fc4d89d79af",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "9f8ff4ce-4e44-441b-9022-fa39d10e24fe",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "848d4e18-9335-4512-baeb-7edbdad78984",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "166060cd-af04-404c-b9cb-55f0aff944f6",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "ecb659ba-f5f4-460e-a1e2-979ef1e9567d",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "2fb15782-a760-4eed-bae5-5acce178044a",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "e84c4bdc-02cf-4a44-b325-5c474bbbd465",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "efdc9dca-5b3d-4609-9dd1-b733f0de3b0f",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "2b061243-7d48-4309-8817-bdace0a7cfce",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "83bf2c5c-0004-443b-b62f-1126667a54fc",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "b8e3b4fe-bb77-45a6-bc33-66dfd1e1d5a3",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "ff75ba7a-ca33-4729-b273-e16befa44ca9",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "09653a72-354e-4623-b532-a00c9d1eb2b6",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "c8d3b191-ebe7-43d0-8547-cee58d46b6e6",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "f00b24ec-206b-44c1-98d4-4a2620b9e9c1",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "7c159cec-c704-4085-8076-f9a7e945e917",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "d8970b38-1165-48f0-95dc-cecadd321d73",
+      "result_id": "916d8051-8d32-480c-a24e-b69679d62350"
+    },
+    {
+      "claim_id": "13e294a0-6289-4a72-ad50-fc88950985e5",
+      "result_id": "c1c9130e-5fac-450b-975c-95beabd2d777"
+    },
+    {
+      "claim_id": "6d75faac-2edc-4e98-86cc-c0b11c1b884b",
+      "result_id": "c1c9130e-5fac-450b-975c-95beabd2d777"
+    },
+    {
+      "claim_id": "74eaf453-38e3-4334-a5d1-25a8baa59cce",
+      "result_id": "c1c9130e-5fac-450b-975c-95beabd2d777"
+    },
+    {
+      "claim_id": "4acddf0b-09d4-45d0-9a62-7a035108e3f6",
+      "result_id": "c1c9130e-5fac-450b-975c-95beabd2d777"
+    },
+    {
+      "claim_id": "45bf31e2-7961-4d37-ac05-5a0ee0f2e589",
+      "result_id": "c1c9130e-5fac-450b-975c-95beabd2d777"
+    },
+    {
+      "claim_id": "27e87176-bd4b-477d-9056-4664c1934357",
+      "result_id": "c1c9130e-5fac-450b-975c-95beabd2d777"
+    },
+    {
+      "claim_id": "0b93b0f8-369d-4320-8346-36b6d84858d6",
+      "result_id": "c1c9130e-5fac-450b-975c-95beabd2d777"
+    },
+    {
+      "claim_id": "50080ce6-786d-4822-bc80-3ed99c595103",
+      "result_id": "0de0c554-0e2e-4def-afdf-8c3a9f9a65dd"
+    },
+    {
+      "claim_id": "fb6d4f86-62aa-49f8-aa6d-50da84133c95",
+      "result_id": "0de0c554-0e2e-4def-afdf-8c3a9f9a65dd"
+    },
+    {
+      "claim_id": "48e899bb-b72e-4409-b02d-38562e599cd4",
+      "result_id": "0de0c554-0e2e-4def-afdf-8c3a9f9a65dd"
+    },
+    {
+      "claim_id": "1c1c251d-c516-4628-8bd9-8962ae2c8399",
+      "result_id": "0de0c554-0e2e-4def-afdf-8c3a9f9a65dd"
+    },
+    {
+      "claim_id": "1d227d9d-aaa1-4ffb-8d90-00ca3c0dfdba",
+      "result_id": "0de0c554-0e2e-4def-afdf-8c3a9f9a65dd"
+    },
+    {
+      "claim_id": "3b9a1c1d-5118-49e7-9303-b2daa93c1746",
+      "result_id": "b8248b8f-7ecb-4b68-af39-b04b3531aeb1"
+    },
+    {
+      "claim_id": "fb9b3848-ecb4-49b5-884d-3e90852231cc",
+      "result_id": "b8248b8f-7ecb-4b68-af39-b04b3531aeb1"
+    },
+    {
+      "claim_id": "733706b8-6c4c-45df-ae6e-a1f573c01f64",
+      "result_id": "b8248b8f-7ecb-4b68-af39-b04b3531aeb1"
+    },
+    {
+      "claim_id": "2f3071c3-6013-49a2-b70b-830a9b3b9f54",
+      "result_id": "b8248b8f-7ecb-4b68-af39-b04b3531aeb1"
+    },
+    {
+      "claim_id": "2076cba2-2038-4bb1-978d-45f55bf4a248",
+      "result_id": "b8248b8f-7ecb-4b68-af39-b04b3531aeb1"
+    },
+    {
+      "claim_id": "049520b7-bac5-4858-a357-827587fa183b",
+      "result_id": "b8248b8f-7ecb-4b68-af39-b04b3531aeb1"
+    },
+    {
+      "claim_id": "e0bb3be9-825a-4c21-bfee-b8c25d551eac",
+      "result_id": "b8248b8f-7ecb-4b68-af39-b04b3531aeb1"
+    },
+    {
+      "claim_id": "15b0f60a-001f-4220-817f-fb026df0f20e",
+      "result_id": "b8248b8f-7ecb-4b68-af39-b04b3531aeb1"
+    },
+    {
+      "claim_id": "9cc03985-1604-45ac-8382-607ab0f614f4",
+      "result_id": "b8248b8f-7ecb-4b68-af39-b04b3531aeb1"
+    },
+    {
+      "claim_id": "ef465849-83fb-4182-b75a-ac4d761486bc",
+      "result_id": "e446c1c1-fb89-4eed-a67e-f2201551eb78"
+    },
+    {
+      "claim_id": "b185bfd3-5ff2-4522-bbaa-0ec94c97e3a4",
+      "result_id": "e446c1c1-fb89-4eed-a67e-f2201551eb78"
+    },
+    {
+      "claim_id": "ed9d5d52-283b-4ffc-897f-938eda0454e9",
+      "result_id": "e446c1c1-fb89-4eed-a67e-f2201551eb78"
+    },
+    {
+      "claim_id": "afa9a73a-a336-45e9-ae6e-b5283e934cf7",
+      "result_id": "e446c1c1-fb89-4eed-a67e-f2201551eb78"
+    },
+    {
+      "claim_id": "8ab9f089-dea4-4a39-ada6-a402afad707c",
+      "result_id": "bdff71a1-52b7-4b99-bd9e-3a89ec0e56a9"
+    },
+    {
+      "claim_id": "833620cb-f4ed-462d-9cdc-2955dbb60370",
+      "result_id": "bdff71a1-52b7-4b99-bd9e-3a89ec0e56a9"
+    },
+    {
+      "claim_id": "2bd234a8-762d-4e81-b169-7a6cab48e35d",
+      "result_id": "f22964c9-0f72-411d-87e7-14e293bff4bf"
+    },
+    {
+      "claim_id": "0367a785-b20b-471a-91e7-bf877f30c126",
+      "result_id": "f22964c9-0f72-411d-87e7-14e293bff4bf"
+    },
+    {
+      "claim_id": "df962a1e-a8c7-451b-8514-1cf4bbe511cf",
+      "result_id": "f22964c9-0f72-411d-87e7-14e293bff4bf"
+    },
+    {
+      "claim_id": "d3eb8e2b-f067-4e8d-b74c-4ba5497e8bdc",
+      "result_id": "f22964c9-0f72-411d-87e7-14e293bff4bf"
+    },
+    {
+      "claim_id": "5b8117b1-c4b7-4133-bbdf-f3b55501b984",
+      "result_id": "8fcad2e5-76c5-4ab4-a539-f18c3e74ecad"
+    },
+    {
+      "claim_id": "a5ccfc95-b48e-453c-b22a-6bcb4bb27534",
+      "result_id": "8fcad2e5-76c5-4ab4-a539-f18c3e74ecad"
+    },
+    {
+      "claim_id": "eea48417-03ba-47a4-86ce-e1f90d161cd4",
+      "result_id": "8fcad2e5-76c5-4ab4-a539-f18c3e74ecad"
+    },
+    {
+      "claim_id": "a05c269b-f996-4092-9048-04d3911af16f",
+      "result_id": "8fcad2e5-76c5-4ab4-a539-f18c3e74ecad"
+    },
+    {
+      "claim_id": "99f89e69-6617-4262-9ee9-53279af31dc2",
+      "result_id": "8fcad2e5-76c5-4ab4-a539-f18c3e74ecad"
+    },
+    {
+      "claim_id": "3ae33c7f-b74d-46bd-8f3f-af61deeaf626",
+      "result_id": "8fcad2e5-76c5-4ab4-a539-f18c3e74ecad"
+    },
+    {
+      "claim_id": "f88a2a63-53a6-4e3e-abab-6e70e192ed4a",
+      "result_id": "8fcad2e5-76c5-4ab4-a539-f18c3e74ecad"
+    },
+    {
+      "claim_id": "905e5824-d28b-4bcf-bdd1-cfe70976f973",
+      "result_id": "1c6a233c-01a5-4954-98ca-203c39200bd4"
+    },
+    {
+      "claim_id": "8028b496-859f-40c4-ac25-48c0d0bc9075",
+      "result_id": "1c6a233c-01a5-4954-98ca-203c39200bd4"
+    },
+    {
+      "claim_id": "ba35d38f-a942-440f-9e5d-203b84a66634",
+      "result_id": "1c6a233c-01a5-4954-98ca-203c39200bd4"
+    },
+    {
+      "claim_id": "25bf03a0-716d-46c9-bcd8-59a7a999a0d6",
+      "result_id": "df301428-8435-47fe-bcce-54e33cab33ac"
+    },
+    {
+      "claim_id": "9f75dff0-2092-48ca-9e53-ca74a17c757a",
+      "result_id": "df301428-8435-47fe-bcce-54e33cab33ac"
+    },
+    {
+      "claim_id": "419ee3c2-6ac2-40e3-b097-38525d3b9826",
+      "result_id": "51841274-42cc-4341-a6ca-46e253c887bd"
+    },
+    {
+      "claim_id": "1dfcc52f-fceb-4ca8-8cf8-9855268fbc86",
+      "result_id": "51841274-42cc-4341-a6ca-46e253c887bd"
+    },
+    {
+      "claim_id": "a22a1ddc-4de0-4db9-9343-444c4f8e27d2",
+      "result_id": "80718209-0ccc-478b-8939-1a66f9ba2e80"
+    },
+    {
+      "claim_id": "cb781462-c35a-4f09-bc31-2e8cd7fdb1a3",
+      "result_id": "80718209-0ccc-478b-8939-1a66f9ba2e80"
+    },
+    {
+      "claim_id": "e4c7bb99-5246-485e-b0ad-12af9a059620",
+      "result_id": "80718209-0ccc-478b-8939-1a66f9ba2e80"
+    },
+    {
+      "claim_id": "9656e882-6943-448f-9df1-13a8ea0432ec",
+      "result_id": "80718209-0ccc-478b-8939-1a66f9ba2e80"
+    },
+    {
+      "claim_id": "9c8db247-5def-46b5-b573-5dd8edc55c97",
+      "result_id": "80718209-0ccc-478b-8939-1a66f9ba2e80"
+    },
+    {
+      "claim_id": "18503145-f33d-4959-bbd3-4990adf2da41",
+      "result_id": "ca237ead-6a91-4b67-8b0f-ce163b26796a"
+    },
+    {
+      "claim_id": "8fa45c80-5edd-4059-8732-12ffb6f3e927",
+      "result_id": "ca237ead-6a91-4b67-8b0f-ce163b26796a"
+    },
+    {
+      "claim_id": "6f6da016-f1ed-4494-ac7c-ccf687b37fb6",
+      "result_id": "ca237ead-6a91-4b67-8b0f-ce163b26796a"
+    },
+    {
+      "claim_id": "f0d7ac5e-8824-4be5-b596-cccac8086298",
+      "result_id": "ca237ead-6a91-4b67-8b0f-ce163b26796a"
+    },
+    {
+      "claim_id": "de65eab3-6136-4fc2-849f-113f3dc3713d",
+      "result_id": "b53a6f83-64d5-4dbb-9483-17722367c5d1"
+    },
+    {
+      "claim_id": "916175af-90e3-4ba3-bf0c-0d520428c19b",
+      "result_id": "b53a6f83-64d5-4dbb-9483-17722367c5d1"
+    },
+    {
+      "claim_id": "473d21ca-2483-48e4-a4c4-990c3b5712ea",
+      "result_id": "b53a6f83-64d5-4dbb-9483-17722367c5d1"
+    },
+    {
+      "claim_id": "c22e404a-1b2d-4842-b4be-0b1047d891fb",
+      "result_id": "b53a6f83-64d5-4dbb-9483-17722367c5d1"
+    },
+    {
+      "claim_id": "b0456576-7e75-4666-9d76-9b90e43beba1",
+      "result_id": "b53a6f83-64d5-4dbb-9483-17722367c5d1"
+    },
+    {
+      "claim_id": "a48c8324-60c4-4ab1-bdf3-58aeab258c0d",
+      "result_id": "b53a6f83-64d5-4dbb-9483-17722367c5d1"
+    },
+    {
+      "claim_id": "e73d1387-07c2-47bb-a6e5-6c801506837d",
+      "result_id": "cc8fe870-475f-49db-b534-1f694ec5d022"
+    },
+    {
+      "claim_id": "762f15e6-fdb8-4cd7-a46b-a6bf63544e45",
+      "result_id": "cc8fe870-475f-49db-b534-1f694ec5d022"
+    },
+    {
+      "claim_id": "be8316bf-8796-4e77-8595-01b11f8e502b",
+      "result_id": "cc8fe870-475f-49db-b534-1f694ec5d022"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript establishes the basic organization of the striatal circuit, including the role of SPNs as the primary output neurons (~95% of striatal neurons), the presence of GABAergic interneurons (GINs) that provide feedforward inhibition, and the functional consequences of this inhibition on striatal output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C14-C18 describe well-established knowledge about striatal circuit organization supported by appropriate citations to prior literature. These foundational claims provide necessary context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Cholinergic interneurons (CINs) constitute approximately 1% of striatal neurons, are autonomous pacemakers firing 3-10 spikes/s in vivo, and are identified as tonically active neurons (TANs) that pause (200-300 ms) in response to reward or reward-associated stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 accurately summarize established knowledge about CIN properties, supported by appropriate citations to prior literature. These claims provide essential background for understanding the experimental manipulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "CINs modulate striatal function through multiple mechanisms: muscarinic receptors (mAChRs) that affect SPN excitability with a >400 ms delay, nicotinic receptors (nAChRs) on dopaminergic terminals that evoke dopamine release, and \u03b14\u03b22 nAChRs on GINs that mediate rapid (<400 ms) disynaptic inhibition of SPNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 accurately describe prior knowledge about cholinergic modulation mechanisms in the striatum, supported by appropriate citations. These claims establish the conceptual framework and identify the gap that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "While CINs can disynaptically inhibit SPNs via \u03b14\u03b22 nAChRs on GINs, this pathway is too slow to compete with direct feedforward inhibition, and some nAChR-expressing GINs (like PV-FSIs) respond only weakly to phasic CIN activation, making the overall role of nAChRs unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 identify the conceptual problem that motivates the study, supported by citations to prior work. The inference in C4 about timing is validated by the experimental data presented later (C51-C53).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Blockade of \u03b14\u03b22 nAChRs with mecamylamine or DH\u03b2E shortened SPN spike latencies and increased postsynaptic depolarizations (both ADP and EPSP amplitudes) in response to optogenetic cortical stimulation, from both resting and depolarized membrane potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C34-C36 are directly supported by experimental data in Figures 1 and 1-supplement 1, with appropriate statistical tests (p<0.05). The replication with DH\u03b2E confirms specificity for \u03b14\u03b22 nAChRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The effects of nAChR blockade on SPN responses are indirect (SPNs lack nAChRs) and do not result from modulation of presynaptic glutamate release, as mecamylamine and MLA did not affect corticostriatal afferent strength or release probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by established knowledge (C37) and experimental data in Figures 2 and 2-supplement 1 showing no effect on paired-pulse ratios or EPSC amplitudes. This rules out a presynaptic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The nAChR-dependent effects on SPN spike timing are mediated by downstream GABA release from GINs (not limited to those strongly responsive to phasic CIN activation), as GABA receptor blockade mimicked and fully occluded mecamylamine's effects, and mecamylamine saturated GABAergic inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C42-C45 are supported by experimental data in Figure 3 showing bidirectional occlusion between mecamylamine and GABA receptor antagonists. The inference about GIN involvement (C9) is reasonable given the circuit architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "While Thy1-ChR2 mice showed ChR2 expression in globus pallidus neurons and a monosynaptic GABAergic input to SPNs, this input was insensitive to mecamylamine and unlikely to mediate the observed nAChR effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by immunohistochemical and electrophysiological data in Figure 3-supplement 1. This control experiment addresses a potential confound from ectopic ChR2 expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CINs are robustly engaged by corticostriatal stimulation with lower threshold and shorter latency than SPNs, but phasic CIN activation is too slow (11 ms latency to engage GINs) to account for the mecamylamine-induced changes in SPN spike timing (which occur at ~5 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by experimental data in Figures 4-5. The temporal analysis (C51-C53) provides critical evidence that tonic rather than phasic nAChR activation mediates the observed effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Mecamylamine did not increase SPN intrinsic excitability, as it had no effect on resting membrane potential, rheobase current, spike latency to somatic current injection, or firing rate, and actually decreased responsiveness to some sub-rheobase currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by experimental data in Figures 6 and 6-supplement 1. This rules out changes in intrinsic excitability as the mechanism for reduced spike latency, supporting a synaptic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mecamylamine reduced spontaneous IPSC frequency in SPNs, and DH\u03b2E hyperpolarized PV-FSIs (but not SOM+ interneurons), indicating that tonic nAChR activation depolarizes PV-FSIs and primes them to transmit feedforward inhibition more efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by experimental data in Figures 7 and 7-supplement 1. The cell-type-specific effects on PV-FSIs versus SOM+ interneurons strengthen the conclusion about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Pharmacologically preventing cortical activation of PV-FSIs with Naspm (a Ca2+-permeable AMPA receptor antagonist) reduced spike latency and ADP amplitude and occluded mecamylamine's effects, implicating PV-FSIs as the primary mediator of tonic nAChR-dependent delay in SPN spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by experimental data in Figure 8. The occlusion experiment provides strong evidence for PV-FSI involvement, though the specificity of Naspm for PV-FSIs versus other GINs relies on prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C68"
+    ],
+    "result": "Tonic activation of \u03b14\u03b22 nAChRs by CINs maintains a GABAergic brake on cortically-driven striatal output by priming feedforward inhibition through PV-FSIs, a mechanism termed the 'nicotinic brake.'",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C68 represent the main conclusion, well-supported by the convergent experimental evidence from claims C6-C67. The 'priming' mechanism is supported by multiple lines of evidence including timing, pharmacology, and cell-type-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C83",
+      "C86"
+    ],
+    "result": "The nicotinic brake mechanism could be removed during CIN pauses (200-300 ms), creating an early phase where SPNs become more receptive to cortical inputs before the delayed mAChR-mediated effects, potentially shaping spike timing, learning, and plasticity, particularly in the AChE-enriched matrix compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C78, C82-C83, C86 are largely speculative about functional implications. While the speculation is reasonable and grounded in the experimental findings and prior literature, these claims lack direct experimental validation in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Both dSPNs and iSPNs support spike timing-dependent plasticity, with optimal timing windows of ~5 ms, and corticostriatal long-term potentiation requires coordination of CIN pauses with dopamine release and SPN depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 accurately summarize prior literature with appropriate citations. These claims provide context for the potential functional significance of millisecond-scale changes in spike timing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The matrix compartment constitutes ~85% of the striatum, and coordinated CIN activation can interrupt spike timing in both matrix and striosome SPNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 accurately cite prior literature. These claims provide context for interpreting the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The experimental approach used Thy1-ChR2 mice with optogenetic stimulation to engage corticostriatal afferents, generating EPSPs or action potentials followed by afterdepolarizations (ADPs) that can be modulated by local circuits and influence subsequent spike generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 describe the experimental approach, supported by Figure 1a and appropriate citations. The rationale for separately analyzing ADPs is supported by prior literature (C89-C90).",
+    "result_type": "MINOR"
+  }
+]

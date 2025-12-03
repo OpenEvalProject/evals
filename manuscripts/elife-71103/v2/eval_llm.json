@@ -1,0 +1,595 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C30",
+      "C31",
+      "C46"
+    ],
+    "result": "The study employed two-photon optogenetic stimulation of ChrimsonR-expressing neurons combined with multicellular patch-clamp recording (up to 4 neurons) to characterize synaptic connectivity in mouse visual cortex. The approach used galvo-based rapid spiral scanning and was tested across seven different Cre lines with either transgenic (Ai167) or AAV-mediated ChrimsonR expression, ultimately identifying 722 connections from 10,720 probed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C30, C31, and C46 collectively describe the core methodology used throughout the study. The approach is clearly documented with specific technical details (spiral scanning, ChrimsonR expression methods, number of Cre lines tested) and quantitative outcomes (722/10,720 connections), providing a solid foundation for the experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Characterization of photostimulation sensitivity revealed that the minimum power to reliably evoke action potentials ranged from 0.5-94 mW across cell types, with 85-100% of targeted cells spiking at 85 mW. AAV-transfected Pvalb and Sst interneurons were highly photosensitive (50% responding at 8 mW), leading to use of 85 mW for excitatory lines and 35 mW for interneurons. Latency and jitter decreased with higher stimulus intensities, with most cells showing sub-millisecond jitter even at low power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 provide comprehensive characterization of photostimulation parameters with specific quantitative measurements (power ranges, response percentages, jitter values) referenced to Figure 1B. The data justify the methodological choices for different cell types and demonstrate the reliability of the stimulation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Spatial resolution measurements showed that light-evoked spiking probability decreased rapidly with lateral offset (FWHM: 12-23 \u00b5m) but required greater axial offset for similar decreases (FWHM: 38-75 \u00b5m). Nearly all responsive neurons (99%, 143/144) showed short latency (<15 ms) and low jitter (<2 ms) with on-target stimulation, but only 30% of responses at 10 \u00b5m lateral offset and 2.3% at 20 \u00b5m offset met these criteria, indicating off-target photostimulation is unlikely to produce reliable synaptic responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 provide detailed spatial resolution characterization with specific quantitative measurements (FWHM values, percentages at different offsets) referenced to Figures 1C and supplements. The asymmetry in lateral vs. axial resolution is consistent with two-photon excitation physics and prior literature (C59), and the data convincingly demonstrate spatial specificity of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Cell density measurements showed labeled cells ranged from ~2,000-22,000 cells/mm\u00b3 across Cre lines and expression methods, with interneuron lines being relatively sparse compared to excitatory lines. AAV labeling achieved ~84% of Ai14 densities while Ai167 achieved only ~25% of Ai9/Ai14 densities. Estimated off-target activation was low for sparse interneuron lines (<0.13 cells/stimulus) but higher for dense excitatory lines (up to 0.94 for Ntsr1:Ai167), dramatically lower than the ~4.7 cells/stimulus estimated for glutamate uncaging approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C76 provide comprehensive analysis of cell densities and off-target activation estimates with specific quantitative data referenced to Figure 2. The comparison to total neuron density (C71) and glutamate uncaging (C74) provides important context. The analysis appropriately considers how labeling density affects specificity and demonstrates advantages of Cre-line restriction over non-specific approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Intralaminar excitatory connectivity from Penk-labeled L2/3 neurons showed sparse connections to L2/3 PCs (5.8% at <100 \u00b5m) that decreased with distance, but much higher connectivity to L2/3 FSIs (46.3% at <100 \u00b5m) and intermediate connectivity to putative VIP interneurons (29.2%), demonstrating cell-class specificity. Despite ~12% of Penk-labeled cells expressing the GABAergic marker Gad1, the high connectivity to FSIs is consistent with previous reports of L2/3 excitatory neuron connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 describe intralaminar connectivity patterns with specific quantitative measurements and statistical tests (chi-squared, Fisher's exact) referenced to Figure 3. The cell-class specificity is well-documented, and the authors appropriately acknowledge the Gad1+ population (C82) while noting consistency with prior literature (C83). The validation against paired recordings (discussed elsewhere) further supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Validation of two-photon optogenetic measurements against paired recordings showed strong agreement: connection probabilities measured by the two methods were not statistically different at matched distances (Table 1) and displayed strong positive correlation (Pearson's R=0.74, p=2.3e-3). This demonstrates that two-photon optogenetic stimulation is a powerful and accurate tool for measuring synaptic connectivity in acute brain slices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide critical validation of the optogenetic approach against the gold standard of paired recordings. The strong correlation (R=0.74) and lack of statistical differences across multiple connection types (Table 1) provide convincing evidence for the accuracy of the method. This validation is essential for interpreting all subsequent connectivity measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Direct validation by patching optically identified presynaptic cells confirmed 11/12 putative excitatory connections (92% positive predictive value, 95% CI: 67-99%) and all 22/22 putative inhibitory connections (95% CI: 89-100%). Amplitudes of responses measured by the two methods were strongly correlated, demonstrating that optically evoked responses accurately measure synaptic strength and that connectivity measured in mapping experiments is representative of underlying connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 provide direct experimental validation with high positive predictive values and appropriate confidence intervals referenced to Figure 4 supplement 1. The strong correlation in amplitudes (C90) and high PPV for both excitatory and inhibitory connections provide compelling evidence for specificity. Combined with the paired recording validation (C84-C87), this strongly supports the reliability of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Optically identified connections from Rorb-labeled neurons to L2/3 PCs were observed across L2/3, L4, and L5, but most commonly from L4 and just below the L4/L5 border, with nearly all L4 presynaptic partners within 300 \u00b5m horizontal distance. Connection probabilities from L4 were similar across Rorb:Ai167 (10.7%), Rorb:AAV (7.8%), and Scnn1a:Ai167 (9.1%) (chi-squared p=0.18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 describe L4 to L2/3 connectivity patterns with specific quantitative data and statistical comparisons referenced to Figure 4B. The consistency across different labeling methods (Ai167 vs AAV) and Cre lines (Rorb vs Scnn1a) strengthens confidence in the findings. The spatial distribution data are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Substantial connections from L5 to L2/3 PCs were found using both Rorb-Cre (transgenic and AAV) and Tlx3-Cre (AAV), with L5 Rorb connection probability (6.9% within 300 \u00b5m) only one-third lower than L4 Rorb (9.8%, p=0.01). Tlx3 connectivity (5.8%) was statistically similar to L5 Rorb (p=0.32). Transcriptomic and projection data suggest these L5 Rorb neurons resemble IT-type L5 neurons, leading to the conclusion that L5 IT-type neurons are a significant source of excitatory input to L2/3 PCs in young adult mouse V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 document a surprising finding of substantial L5 to L2/3 connectivity with specific quantitative measurements and statistical tests referenced to Figures 4B and 5B. The use of multiple Cre lines (Rorb and Tlx3) and expression methods strengthens the conclusion. The interpretation is appropriately supported by transcriptomic (C99) and anatomical (C100) data from prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Connectivity from Ntsr1-labeled L6 corticothalamic neurons to L2/3 PCs was minimal, with only 1/1145 connections found. One-photon-evoked responses in Ntsr1 experiments (0.12\u00b10.17 mV) were dramatically smaller than in Rorb (9.09\u00b17.13 mV) or Tlx3 (9.43\u00b16.21 mV) experiments, supporting low connectivity from this population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 demonstrate minimal L6 CT to L2/3 connectivity with clear quantitative data referenced to Figure 5B and supplement 1. The finding is consistent with prior anatomical studies cited in the text and provides important contrast to the substantial L4 and L5 connectivity, helping define the laminar organization of inputs to L2/3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Translaminar excitatory connection probabilities from Rorb and Tlx3-labeled neurons were similar for L2/3 PCs and L2/3 FSIs (Rorb: 7.3% to FSIs vs 9.8% to PCs; Tlx3: 7.1% to FSIs vs 5.8% to PCs, within 300 \u00b5m), contrasting with intralaminar connections that showed strong bias for FSIs over PCs. This suggests L2/3 PCs and FSIs receive different proportions of intralaminar versus translaminar excitatory input, with FSIs receiving a larger fraction from intralaminar neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 identify an important difference in connectivity patterns between intralaminar and translaminar inputs with specific quantitative comparisons referenced to Figures 5C-D and 3B. The interpretation about differential input sources (C106-C107) is appropriately supported by the data showing cell-class-specific connectivity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Excitatory connectivity to L2/3 PCs showed significant dependence on horizontal distance for all excitatory Cre lines (Penk: p=0.013, L4 Rorb: p=0.002, Tlx3: p=0.003). Multiple classification methods (human annotation, machine learning, z-score) yielded highly similar spatial distributions and cell-class preferences. Optically evoked EPSP latencies were consistent with light-evoked spiking measurements and displayed low jitter, and two-photon-evoked responses rarely exceeded 1 mV or approached AP threshold, with one-photon responses only rarely generating APs in non-ChrimsonR-expressing PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 provide important validation and characterization of excitatory connectivity measurements. The distance dependence (C108) is well-documented with statistical tests. The consistency across classification methods (C109) addresses potential bias concerns. The latency/jitter data (C110) and amplitude constraints (C111-C112) argue against polysynaptic responses, strengthening interpretation of connections as monosynaptic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "High probability within-layer inhibitory connectivity from Pvalb and Sst interneurons to L2/3 PCs showed steep distance dependence, with similar rates from L2/3 Pvalb (22.4%) and Sst (28.4%) within 200 \u00b5m (p=0.23). Translaminar inhibition was observed from both interneuron types in L4 and L5, with L5 Sst connections (6.0%) significantly more common than L5 Pvalb connections (0.8%, p=1.1e-3). Results were consistent across classification methods, indicating inhibition of L2/3 PCs originates largely but not exclusively from interneurons within the same layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 characterize inhibitory connectivity patterns with specific quantitative measurements and statistical tests referenced to Figures 6B-C. The comparison between Pvalb and Sst (C114, C116) reveals subclass-specific patterns. Consistency across classification methods (C117) strengthens confidence. The conclusion about predominantly intralaminar but significant translaminar inhibition (C118) is appropriately supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Sst-labeled cells in common anatomical locations showed similar connectivity to L2/3 PCs using either Ai167 or AAV-mediated ChrimsonR expression. Inhibitory connection probability showed steep decline with horizontal distance for both Pvalb and Sst. This spatial pattern is consistent with rabies virus tracing showing broader distribution of excitatory versus inhibitory inputs to L2/3 PCs, indicating both anatomical and physiological surveys reveal differences in spatial distribution of excitatory and inhibitory connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 validate consistency across expression methods (C119) and characterize spatial patterns of inhibitory connectivity (C120). The comparison to anatomical tracing data (C121) from independent methods strengthens the conclusion (C122) about differential spatial organization of excitatory versus inhibitory inputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Inhibitory connections to L2/3 FSIs were observed from presynaptic Sst and Pvalb interneurons in layers 2/3, 4, and 5, demonstrating that translaminar inhibition to L2/3 is not specific to PCs and that cross-layer inhibitory connections shape the activity of both PCs and FSIs. Overall, experiments demonstrate translaminar inhibition is a feature of multiple pre- and postsynaptic subclasses in adult mouse V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 extend inhibitory connectivity findings to FSI targets with data referenced to Figures 6D-E. The conclusion that translaminar inhibition affects multiple postsynaptic cell types (C124-C125) is appropriately supported by the data showing connections to both PCs and FSIs from multiple layers and interneuron subclasses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "PSP amplitude distributions for most connection classes showed mean larger than median due to a small minority of strong connections, with skewed distributions similar to those described in previous paired recording studies. Low trial-to-trial variability in strong connections was observed with inverse correlation between coefficient of variation and PSP amplitude. These strong and reliable connections, while uncommon, are suggested to powerfully influence network activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 describe PSP amplitude distributions with data referenced to Table 2 and Figure 7B, showing consistency with prior literature (C127). The inverse CV-amplitude relationship is well-documented. The functional interpretation (C129) is appropriately attributed to prior studies rather than claimed as a novel finding from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Cell-class-specific differences in synaptic properties were observed: Penk-labeled L2/3 excitatory neurons generated dramatically larger EPSPs in L2/3 FSIs than PCs (p=2.1e-4), while Pvalb interneurons produced stronger (p=1.5e-6) and faster-rising (p=5.6e-4) IPSPs to L2/3 PCs compared to Sst interneurons. These differences are consistent with known subcellular targeting preferences, with Pvalb targeting soma/proximal processes and Sst targeting more distal dendritic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 document cell-class-specific synaptic properties with specific statistical tests and effect sizes referenced to Figure 7 and supplements. The interpretation linking IPSP properties to subcellular targeting (C132-C134) is appropriately supported by prior anatomical literature (C132) and represents a reasonable mechanistic explanation for the observed differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Comparison of Ai167 versus AAV-mediated ChrimsonR expression for Rorb-Cre and Sst-Cre showed that connectivity measures at overlapping cortical depths were not statistically different, and no significant differences were observed in amplitudes, rise times, and CV of synaptic responses. However, greater differences were observed between Cre lines than between expression strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 provide important validation that expression method does not substantially affect connectivity measurements, with data referenced to Figures 4, 6, and Figure 7 supplement 3. The finding that Cre line differences exceed expression method differences (C137) supports the biological relevance of the observed connectivity patterns rather than technical artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Layer-specific differences in connection strength were observed: for L2/3 PCs, EPSP amplitudes were larger for translaminar than intralaminar connections (p=0.017), while L2/3 FSIs showed the opposite pattern with stronger intralaminar connections (p=0.035). For inhibitory connections, Pvalb and Sst interneuron connection strengths were similar when grouped by presynaptic layer (Pvalb: p=0.10, Sst: p=0.38), indicating that while translaminar inhibition may be less common than intralaminar inhibition, unitary connection strengths are similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 identify layer-specific patterns in connection strength with appropriate statistical tests referenced to Figures 7D-E. The contrasting patterns for PCs versus FSIs (C139-C140) and the similarity of inhibitory strengths across layers (C141-C142) are clearly documented and provide insight into functional organization of inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Short-term plasticity patterns varied by connection type: most Penk to L2/3 connections showed paired-pulse facilitation or were linear, while most translaminar excitatory connections (Rorb and Tlx3) showed paired-pulse depression, though ~25% of translaminar connections to L2/3 PCs showed facilitation. This heterogeneity in translaminar connections is consistent with previous paired recording studies in barrel cortex, and facilitation in recurrent L2/3 connections has been previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C145 characterize short-term plasticity with data referenced to Figure 8B. The heterogeneity in translaminar connections (C145) and consistency with prior literature (C146-C147) appropriately contextualize the findings. The data provide important functional characterization of different connection types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Inhibitory short-term plasticity showed subclass-specific patterns: most Pvalb to L2/3 PC connections displayed paired-pulse depression while Sst to L2/3 PC connections were approximately linear or facilitated, consistent with previous reports. This pattern was observed for both intralaminar and translaminar inhibition. Additionally, Sst to L2/3 FSI connections showed significantly smaller PPRs than Sst to L2/3 PC connections (p=0.028), illustrating target-specific synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 document interneuron subclass-specific short-term plasticity patterns with data referenced to Figure 8C and supplement. The consistency with prior literature (C150) and demonstration of target-specific plasticity (C151) are well-supported. The findings provide important functional distinctions between Pvalb and Sst-mediated inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Analysis of convergent inputs identified 96 examples of multiple presynaptic neurons (up to 12 per cell) converging onto individual L2/3 PCs. Of 10 possible convergence patterns, only 2 were significantly overrepresented (Rorb to L2/3 PC and Tlx3 to L2/3 PC), with overrepresentation being subtle (30-35% above random) but highly significant (p<0.001) due to large sample sizes. Connections sharing a postsynaptic target showed weak or insignificant correlations in PSP amplitudes, providing no evidence that strong connections are biased to particular target cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C156 analyze convergence patterns with appropriate statistical comparisons to random network models referenced to Figure 9 and supplement. The finding of selective overrepresentation for translaminar excitatory convergence (C153-C154) is interesting, though the effect size is modest. The lack of amplitude correlation (C155-C156) argues against clustering of strong inputs to specific cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Analysis of divergent outputs identified 82 photostimulated cells diverging to 2-4 simultaneously recorded L2/3 cells. Surprisingly, for excitatory Cre lines, divergence probability did not vary with total intersomatic distance (Penk: p=0.29, Rorb: p=0.43, Tlx3: p=0.22), demonstrating that single excitatory axons contact L2/3 neurons separated by hundreds of microns and arguing that excitatory neurons display target specificity beyond spatial proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C160 document divergence patterns with statistical tests referenced to Figure 10. The finding that excitatory divergence is distance-independent (C158) is surprising and well-supported by the data. The interpretation that this reflects target specificity beyond proximity (C160) is reasonable, though alternative explanations (e.g., extensive axonal arbors) could also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "In contrast to excitatory neurons, both Pvalb and Sst interneurons showed decreased divergence probability with increasing distance between postsynaptic targets (Pvalb: p=0.0014, Sst: p=0.046). Postsynaptic cells within 100 \u00b5m were likely to share common input from these interneurons (Pj|i > 0.5), suggesting less selective outgoing connectivity from interneurons compared to excitatory neurons, though examples of widely distributed inhibitory divergence (>200 \u00b5m) were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C164 document distance-dependent inhibitory divergence contrasting with excitatory patterns, with statistical tests referenced to Figure 10B. The high probability of shared inhibitory input at short distances (C162) is consistent with dense local innervation. The interpretation of differential selectivity (C163) is appropriately qualified by noting examples of long-range inhibitory divergence (C164).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Divergence probability for intralaminar excitatory connections (Penk and L2/3 Rorb: 4-5%) matched overall connection probabilities and was consistent with random networks. However, translaminar excitatory divergence probability (from Rorb and Tlx3) was 2-3-fold higher than overall connection probabilities, with observed divergence motifs dramatically exceeding random network predictions (L4 Rorb: p<0.001, L5 Rorb: p=0.004, L5 Tlx3: p=0.007). Inhibitory divergence was also overrepresented, especially for translaminar connections, suggesting existence of subsets of L4 and L5 neurons that preferentially mediate translaminar connections and likely target more L2/3 neurons than predicted by overall connection probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C171 provide sophisticated analysis of divergence patterns with comparisons to random network models referenced to Figure 10C and supplement. The finding of selective overrepresentation of translaminar divergence (C167-C169) is statistically robust. The interpretation of specialized translaminar projection neurons (C170-C171) is a reasonable inference from the data, though direct identification of these neurons would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Analysis of divergent connection strengths showed no significant correlations in PSP amplitudes from single Rorb, Tlx3, or Pvalb neurons onto multiple L2/3 PCs, but a moderate positive correlation was found for diverging Sst interneurons (R=0.52, p=0.016, n=21). This demonstrates that effective strength of connections from a single presynaptic neuron can vary substantially, but provides evidence that some Sst neurons more strongly inhibit their local network than others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C174 analyze correlations in divergent connection strengths with appropriate statistics referenced to Figure 10D. The finding of Sst-specific correlation (C173) is interesting and statistically significant, though the moderate effect size (R=0.52) and sample size (n=21) suggest this should be interpreted cautiously. The interpretation (C174-C175) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Integration of findings on excitatory connectivity patterns suggests that feedforward inhibition (FFI) may be engaged by excitatory activity in layers 2/3, 4, or 5, but will be most robustly recruited by L2/3 activity due to abundant and strong intralaminar excitatory inputs to L2/3 FSIs. Strong intralaminar FFI could promote sparse coding by L2/3 PCs and contribute to feature competition among L2/3 PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C177 synthesize connectivity data to make functional predictions about FFI recruitment. While the underlying connectivity data (C176) are well-supported, the functional predictions (C177-C178) are speculative inferences not directly tested in this study. Claim C178 is explicitly speculative and cites prior work for the feature competition concept. These represent reasonable hypotheses but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Differences between Pvalb and Sst connection properties (strength, kinetics, dynamics) were found for both intralaminar and translaminar connections, suggesting that horizontal and vertical inhibition from an interneuron subclass may serve similar computational functions. These differences likely impart diverse computational functions to inhibitory interneuron subclasses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C181 synthesize findings on inhibitory connection properties with data referenced to Figures 7E and C. The observation that subclass-specific properties are maintained across laminar boundaries (C180) is well-supported by the data. The functional interpretation (C179, C181) is appropriately qualified and supported by citations to prior theoretical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C182"
+    ],
+    "result": "The properties of synaptic connections are influenced, but are far from fully determined, by presynaptic and postsynaptic cell identity, as evidenced by broad diversity within subclasses and overlapping distributions across subclasses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C182 provides an appropriate summary interpretation of the heterogeneity observed throughout the study. The conclusion is well-supported by the documented variability in connection properties (amplitudes, dynamics, etc.) within defined cell classes shown in multiple figures, particularly the skewed amplitude distributions and variable short-term plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Discussion of spatial organization notes that retinotopic mapping argues for strong vertical connections, while rodent V1 lacks orientation columns but shows local biases in tuning. The highest excitatory connectivity to L2/3 PCs was from L4 Rorb neurons at 0-100 \u00b5m horizontal offset, likely preserving the retinotopic map from dLGN. However, gradual falloff in connection rate with horizontal distance for all translaminar excitatory inputs, combined with convergence and divergence across hundreds of microns, illustrates mechanisms by which translaminar connections can promote both maintenance and redistribution of sensory information across layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C192 integrate experimental findings with prior knowledge about visual cortex organization. The spatial connectivity data (C189, C191) are well-documented in the study. The functional interpretations about map preservation (C190) and information redistribution (C192) are reasonable inferences from the data, appropriately contextualized by prior literature on retinotopic organization (C183) and orientation tuning (C184-C187).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "Excitatory input from L5 IT neurons (Rorb or Tlx3) to L2/3 PCs rivals L4 IT neuron input in connection probability, unitary connection strength, and convergence/divergence patterns. In the context of in vivo studies showing brain state and behavioral influences on V1 activity, if L5 IT neurons receive long-range input encoding behavioral variables from higher cortical areas, local L5 IT projections could provide a mechanism to distribute this information within V1 for integration with sensory information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C195 summarize well-supported findings about L5 IT connectivity documented throughout the study. The functional speculation (C196-C197) is appropriately qualified as a possibility and contextualized by citations to in vivo studies. While speculative, this represents a reasonable hypothesis based on the connectivity data and known properties of L5 IT neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "The study used older animals (40-126 days, mean 58 days) than most previous studies, and connectivity in younger animals may be more specifically driven by sensory input. The use of Tlx3 and Rorb-Cre may have allowed more thorough identification of L5 to L2/3 connections specific to IT-type rather than ET-type L5 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C198-C200 offer speculative explanations for differences from prior literature. The age range (C198) is factual, but the speculation about age-related differences (C199) lacks supporting data. The speculation about genetic labeling advantages (C200) is reasonable but unproven. These represent plausible hypotheses but are not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "Discussion of methodological advantages and limitations notes that genetic restriction of photosensitivity provides insight not achieved with glutamate uncaging, though connections from unlabeled populations cannot be tested. Glutamate uncaging may allow less biased connectivity measures but results in greater off-target activation. Up to 15% of photostimulated neurons may not have generated APs due to within-line variability, and even low variability in AP timing may preclude detection of weak connections, though these sources of false negatives are strongly mitigated in paired recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C201-C206 provide balanced discussion of methodological trade-offs. The advantages of genetic specificity (C201) and disadvantages of glutamate uncaging (C203) are supported by the cell density analysis. The acknowledgment of potential false negatives (C204-C205) is appropriately honest, and the comparison to paired recordings (C206) is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "Photostimulation can generate off-target spiking leading to false positives, but validation experiments showed this was rare (11/12 excitatory and 22/22 inhibitory connections verified). Connection probabilities by the two methods were not statistically different, and measurements at the population level accurately represent underlying connectivity despite sources of error not present in paired recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C207-C210 acknowledge limitations while providing strong validation data. The high verification rates (C208) and statistical agreement with paired recordings (C209) support the conclusion that population-level measurements are accurate (C210) despite potential for individual errors. This represents appropriate scientific rigor in acknowledging and addressing methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216"
+    ],
+    "result": "Discussion of slice preparation limitations notes that severing of neuronal processes is an inherent source of false negatives, and in vitro connection probabilities may represent lower bounds for in vivo connectivity. However, slices were cut at oblique angles to preserve processes, cells were targeted >40 \u00b5m deep, and connections were observed over distances of 485-744 \u00b5m. The near absence of connections over similar distances from Sst (>200 \u00b5m offset) or Ntsr1 neurons indicates selectivity rather than slice preparation artifacts, though intersomatic distance does not equal axonal path length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C216 provide thoughtful discussion of slice preparation limitations with appropriate caveats. The methodological precautions (C213) and observation of long-range connections (C214) are well-documented. The argument for biological selectivity rather than technical artifact (C215) is reasonable given the cell-type-specific patterns. The acknowledgment about intersomatic versus axonal distance (C216) shows appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225"
+    ],
+    "result": "Discussion of recording limitations notes that slice preparation features may differ in vivo due to ionic gradients and neuromodulators, and distal synaptic effects may differ from somatic recordings. Voltage-clamp recording may increase detection of small responses but presents space-clamp challenges, while current-clamp was chosen for this survey to provide insight into cell subclass from intrinsic features. The propensity to miss distal contacts is unlikely to be uniform across cell classes due to diversity in morphologies and interneuron targeting preferences, with differences in Pvalb versus Sst IPSP properties consistent with Sst targeting more distal locations, potentially predicting greater likelihood of missed Sst connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C217-C225 provide comprehensive discussion of recording limitations with appropriate scientific nuance. The choice of current-clamp (C222) is justified and supported by citations to prior studies using similar approaches. The discussion of potential bias in detecting distal connections (C223-C225) shows good scientific awareness, with the Pvalb/Sst comparison (C224) providing a specific example supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231"
+    ],
+    "result": "The study demonstrates that combining multicellular recording with multiphoton optogenetic stimulation can efficiently characterize synaptic connectivity from genetically defined populations. Future studies can employ the validated Cre lines in other layers or cortical areas, validate additional Cre lines to probe more subclasses, and potentially test for differences between transcriptomic cell types within Cre-defined subclasses using post hoc gene expression analysis. Future work utilizing complementary methods promises to further understanding of cell types and their roles in circuit function and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C226-C231 provide appropriate concluding statements about the study's contributions and future directions. The demonstration of the approach's utility (C227) is well-supported by the extensive data presented. The suggestions for future work (C228-C231) are reasonable extensions that acknowledge both the achievements and limitations of the current study.",
+    "result_type": "MINOR"
+  }
+]

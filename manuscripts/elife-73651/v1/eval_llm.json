@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study recruited 35 participants and recorded MEG activity during XOR, AND, and OR tasks, with 10 participants per task after exclusions based on data quality criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17, C32-C36 provide comprehensive methodological details including recruitment (35 participants), exclusion criteria (< 700 trials after preprocessing), final sample (N=30, 10 per task), and quality metrics (head movement, trial counts). The methods are clearly documented with appropriate quality control measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The experimental design used face stimuli with glasses having clear or dark lenses to represent binary inputs, presented for 150ms, with participants making task-specific binary responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 provide detailed stimulus and task specifications including stimulus generation, presentation parameters (150ms duration, spatial positioning), response methods, and experimental structure (80 trials/block, 20-24 blocks across 2-3 sessions). The design is well-documented and appropriate for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Participants performed all three tasks with high accuracy (>98%) and similar reaction times (~450-500ms) across tasks, with no significant differences between tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 report behavioral performance with specific accuracy and RT values including confidence intervals. Statistical comparisons (independent sample t-tests) showed no significant differences between tasks. The high accuracy indicates participants understood and could perform all tasks effectively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "MEG source activity progresses through four computational stages: (1) contralateral linear representation of each input in occipital cortex (~60ms), (2) joint linear representation in midline occipital and right fusiform gyrus (~100ms), (3) nonlinear task-dependent integration in temporal-parietal cortex (~260ms), and (4) response representation in postcentral gyrus (~400ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 and C40-C44 describe the four-stage computational architecture with specific timing and anatomical localization. These findings are supported by the analytical methods (C77-C94) and replicated across participants (C45-C55). The progression from linear to nonlinear computations is consistent with the computational requirements of the tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C44",
+      "C80",
+      "C81"
+    ],
+    "result": "The first two computational stages (linear representations) are similar across XOR, AND, and OR tasks, while the latter two stages (nonlinear integrations) are task-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C44, C80-C81 establish the key distinction between task-general early processing and task-specific later processing. This is supported by clustering analysis (C77-C79) and similarity analysis (Figure 1\u2014figure supplement 1B). The finding is critical for understanding how the brain implements different computations over identical inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The four computational stages replicated in at least 9/10 participants within the same brain regions and time windows, with Bayesian population prevalence estimates of 0.89-1.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C55 document the replication approach (N-of-1 studies with FWER control) and replication rates. Table 2 shows 9-10/10 participants replicated each computation in the specified regions and time windows. The Bayesian prevalence estimates provide strong evidence for population-level effects. This rigorous replication approach is a major strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Detailed analysis of individual sources reveals the progression from linear to nonlinear representations, with right fusiform gyrus showing an intermediate representation that facilitates the nonlinear XOR computation in parietal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 provide detailed characterization of response patterns at individual sources using vector analysis. The progression from linear summation (C56) through intermediate representations (C57-C59) to nonlinear integration (C60-C63) is well-documented with specific examples. However, some interpretations about neural populations (C60-C61) are inferences from MEG dipole patterns rather than direct measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The fourth computational stage in postcentral gyrus shows trial-by-trial correlation with behavioral reaction times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 report the relationship between MEG activity and RT using mutual information analysis (C91). Figure 3\u2014figure supplement 1 shows this relationship is specific to postcentral gyrus and frontal regions in the fourth stage. The analysis appropriately uses information theory to quantify the association.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In AND and OR tasks, the nonlinear stages produce linearly separable representations of task outputs, contrasting with XOR which requires nonlinear separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 describe how the nonlinear stages differ between tasks, with AND and OR producing linearly separable outputs while XOR requires nonlinear transformation. This is consistent with the mathematical properties of these functions (C14-C16) and supported by the representation pattern analysis (C88-C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Data-driven k-means clustering identified five stages (including a baseline stage 0) with k=5 selected as optimal, revealing task-general early stages and task-specific later stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 describe the clustering analysis that objectively identified the computational stages. The elbow method for selecting k=5 is appropriate, and the results are consistent across all three tasks. This data-driven approach validates the four-stage model, though the specific choice of k could be sensitive to methodological details not fully reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The computational stages generalize across stimulus types (faces vs. Gabors) and presentation modes (simultaneous vs. sequential), with early linear stages generalizing across tasks but later nonlinear stages remaining task-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 report two replication experiments using different stimuli (Gabor patches) and presentation modes (sequential). The generalization of early stages across tasks and stimuli, but task-specificity of later stages, strengthens the main findings. However, the Gabor replication used only 3 participants, limiting statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The analytical approach used multivariate R\u00b2 for linear models, log-likelihood ratio tests for nonlinearity, Mahalanobis distances for representation patterns, and Gaussian-Copula mutual information for RT relationships, with appropriate multiple comparisons corrections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 document the statistical methods including multivariate modeling, nonlinearity testing, distance metrics, and information theory. The use of maximum statistics for FWER control (C94) and FDR correction (C89) is appropriate. The methods are well-cited and suitable for the data type, though some implementation details (e.g., number of permutations varies: 100 for linear, 25 for patterns) could be better justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The systems-level approach successfully reverse-engineered brain algorithms by identifying computational stages that meet the five key properties of an algorithm: specified inputs, specified outputs, definite sequence, effectiveness in the brain, and finite processing time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 argue that the identified stages constitute an algorithm at the systems level. The five properties (C70) are well-defined and the data support each criterion. The discussion appropriately acknowledges that this systems-level algorithm does not preclude different implementations at finer granularities (C71) and provides constraints for future studies (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Generalization to naturalistic tasks faces challenges including task- and participant-specific features, which are not typically considered in current neuroscience and deep learning research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 discuss limitations and future directions. While the challenges identified are reasonable, these are speculative statements about generalization rather than tested results. The critique of current approaches (C74-C75) is a general knowledge claim that may oversimplify the field. The suggestion about complementary modalities (C76) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior work established that visual pathways hierarchically process information from simple contralateral features to complex integrated representations, with bidirectional information flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 summarize established knowledge about visual processing pathways, supported by appropriate citations to foundational work. These claims provide necessary background context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "XOR is a nonlinearly separable function while AND and OR are linearly separable, implying different computational requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 state well-established mathematical properties of logical functions, supported by citations to foundational work (Minsky & Papert, Rumelhart et al.). This provides the theoretical motivation for the experimental design.",
+    "result_type": "MINOR"
+  }
+]

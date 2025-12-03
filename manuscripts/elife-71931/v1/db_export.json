@@ -1,0 +1,1923 @@
+{
+  "submission": {
+    "id": "2926dc62-95b1-4233-96d9-6c048f622df5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:43:54.092087Z",
+    "updated_at": "2025-12-03T11:43:54.092087Z"
+  },
+  "content": [
+    {
+      "id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "submission_id": "2926dc62-95b1-4233-96d9-6c048f622df5",
+      "content_type": "manuscript",
+      "content_text": "# C-type natriuretic peptide facilitates autonomic Ca2+ entry in growth plate chondrocytes for stimulating bone growth\n\n## Authors\n\n- Yuu Miyazaki<sup>1</sup>\n- Atsuhiko Ichimura<sup>1</sup> ([ORCID: 0000-0003-0366-5211](https://orcid.org/0000-0003-0366-5211))\n- Ryo Kitayama<sup>1</sup>\n- Naoki Okamoto<sup>1</sup>\n- Tomoki Yasue<sup>1</sup>\n- Feng Liu<sup>1</sup>\n- Takaaki Kawabe<sup>1</sup>\n- Hiroki Nagatomo<sup>1</sup>\n- Yohei Ueda<sup>2</sup>\n- Ichiro Yamauchi<sup>2</sup>\n- Takuro Hakata<sup>2</sup>\n- Kazumasa Nakao<sup>2</sup>\n- Sho Kakizawa<sup>1</sup>\n- Miyuki Nishi<sup>1</sup>\n- Yasuo Mori<sup>3</sup>\n- Haruhiko Akiyama<sup>4</sup>\n- Kazuwa Nakao<sup>5</sup>\n- Hiroshi Takeshima<sup>1</sup> ([ORCID: 0000-0003-4525-3725](https://orcid.org/0000-0003-4525-3725)) \u2020\n\n### Affiliations\n\n1. Graduate School of Pharmaceutical Sciences, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))\n2. Graduate School of Medicine, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))\n3. Graduate School of Engineering, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))\n4. Graduate School of Medicine, Gifu University Gifu Japan ([ROR:024exxj48](https://ror.org/024exxj48))\n5. Medical Innovation Center, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe growth plates are cartilage tissues found at both ends of developing bones, and vital proliferation and differentiation of growth plate chondrocytes are primarily responsible for bone growth. C-type natriuretic peptide (CNP) stimulates bone growth by activating natriuretic peptide receptor 2 (NPR2) which is equipped with guanylate cyclase on the cytoplasmic side, but its signaling pathway is unclear in growth plate chondrocytes. We previously reported that transient receptor potential melastatin-like 7 (TRPM7) channels mediate intermissive Ca2+ influx in growth plate chondrocytes, leading to activation of Ca2+/calmodulin-dependent protein kinase II (CaMKII) for promoting bone growth. In this report, we provide evidence from experiments using mutant mice, indicating a functional link between CNP and TRPM7 channels. Our pharmacological data suggest that CNP-evoked NPR2 activation elevates cellular cGMP content and stimulates big-conductance Ca2+-dependent K+ (BK) channels as a substrate for cGMP-dependent protein kinase (PKG). BK channel-induced hyperpolarization likely enhances the driving force of TRPM7-mediated Ca2+ entry and seems to accordingly activate CaMKII. Indeed, ex vivo organ culture analysis indicates that CNP-facilitated bone growth is abolished by chondrocyte-specific Trpm7 gene ablation. The defined CNP signaling pathway, the NPR2-PKG-BK channel\u2013TRPM7 channel\u2013CaMKII axis, likely pinpoints promising target proteins for developing new therapeutic treatments for divergent growth disorders.\n\n## Introduction\n\nThe development of skeletal long bones occurs through endochondral ossification processes, during which chondrocyte layers form the growth plates at both ends of bone rudiments, and then the expanded cartilage portions are gradually replaced by trabecular bones through the action of osteoclasts and osteoblasts (Berendsen and Olsen, 2015). Therefore, bone size largely depends on the proliferation of growth plate chondrocytes during endochondral development. On the other hand, atrial (ANP), brain (BNP), and C-type (CNP) natriuretic peptides regulate diverse cellular functions by activating the receptor guanylate cyclases, NPR1 and NPR2 (Nakao et al., 1996). Of the natriuretic peptides, CNP exclusively stimulates bone development by acting on growth plate chondrocytes expressing the CNP-specific receptor NPR2 (Nakao et al., 1996; Wit and Camacho-H\u00fcbner, 2011; Peake et al., 2014). Indeed, loss- and gain-of-function mutations in the human NPR2 gene cause acromesomelic dysplasia and skeletal overgrowth disorder, respectively (Vasques et al., 2014; Wit et al., 2016). Furthermore, translational studies have been probing the benefits of CNP treatments in various animal models with impaired skeletal growth, and a phase III clinical trial of CNP therapy has recently been completed and approved for treatment of achondroplasia patients primarily resulting from mutations in the FGFR3 gene (Savarirayan et al., 2020). It is thus likely that NPR2 guanylate cyclase controls chondrocytic cGMP content during growth plate development. Downstream of NPR2 activation, cGMP-dependent protein kinase (PKG) seems to phosphorylate target proteins to facilitate growth plate chondrogenesis (Peake et al., 2014). Activated PKG is postulated to stimulate the biosynthesis of growth plate extracellular matrix by playing an inhibitory role in the mitogen-activated protein kinase Raf\u2013MEK\u2013ERK cascade (Krejci et al., 2005). In parallel, glycogen synthase kinase 3\u03b2 (GSK3\u03b2) is likely activated by PKG-mediated phosphorylation, leading to the hypertrophic maturation of growth plate chondrocytes (Kawasaki et al., 2008). However, it is still unclear how CNP promotes bone growth at the molecular level, and it is important to further address CNP signaling cascade in growth plate chondrocytes.\n\nIn the transient receptor potential channel superfamily, the melastatin subfamily member 7 (TRPM7) forms a mono- and divalent cation-permeable channel in various cell types and participates in important cellular processes including cell growth and adhesion (Fleig and Chubanov, 2014). We recently reported that growth plate chondrocytes generate autonomic intracellular Ca2+ fluctuations, which are generated by the intermittent gating of TRPM7 channels, and also that TRPM7-mediated Ca2+ entry activates Ca2+/calmodulin-dependent protein kinase II (CaMKII), facilitating endochondral bone growth (Qian et al., 2019). Based on these observations, we explored the link between CNP signaling and TRPM7-mediated Ca2+ entry through the experiments described in this report. Our data obtained clearly indicate that big-conductance Ca2+-dependent K+ (BK) channels play a key role in the functional coupling between NPR2 and TRPM7 channels in growth plate chondrocytes.\n\n## Results\n\n### CNP facilitates spontaneous Ca2+ fluctuations in growth plate chondrocytes\n\nIn the growth plates of developing bones, proliferating cartilage cells, designated as round and columnar chondrocytes, frequently exhibit weak increases and decreases in intracellular Ca2+ concentration under resting conditions (Qian et al., 2019). On the other hand, previous in vivo studies demonstrated that CNP application (>1 \u03bcmol/kg) stimulates endochondral bone growth (Nakao et al., 1996). In our Fura-2 imaging of round chondrocytes within femoral bone slices prepared from wild-type mice, CNP pretreatments (30\u2013300 nM for 1 hr) dose-dependently facilitated spontaneous Ca2+ fluctuations (Figure 1A). In particular, fluctuation-positive cell ratio and fluctuation amplitude were remarkably elevated in response to the CNP treatments. In contrast, ANP treatments exerted no effects on Ca2+ fluctuations in growth plate chondrocytes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig1-v1.jpg)\n\n**Figure 1.:** (A) Fura-2 imaging of round chondrocytes pretreated with or without natriuretic peptides. Femoral bone slices prepared from wild-type C57BL embryos were pretreated with or without CNP and atrial natriuretic peptide (ANP), and subjected to Ca2+ imaging. Representative recording traces from three cells are shown in each pretreatment group (upper panels). The effects of CNP and ANP pretreatments on spontaneous Ca2+ fluctuations are summarized (lower graphs). The fluctuation-positive cell ratio, fluctuation amplitude and frequency were statistically analyzed, and significant differences from the control vehicle pretreatment are marked with asterisks (*p < 0.05 and **p < 0.01 in one-way analysis of variance (ANOVA) and Dunnett\u2019s test). The data are presented as the means \u00b1 standard error of the mean (SEM). with n values indicating the number of examined mice. (B) Fura-2 imaging of round chondrocytes prepared from chondrocyte-specific Npr2-knockout (Npr2fl/fl, Col2a1-Cre+/\u2212) and control (Npr2fl/fl, Col2a1-Cre\u2212/\u2212) mice. The bone slices were pretreated with CNP, and then subjected to Ca2+ imaging. Representative recording traces are shown (left panels) and the CNP-pretreated effects are summarized (right graphs); significant differences from the wild-type group are marked with asterisks (*p < 0.05 in one-way ANOVA and Tukey\u2019s test). The data are presented as the means \u00b1 SEM with n values indicating the number of examined mice.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Organization of floxed and deleted Npr2 alleles. The chondrocyte-specific Npr2-knockout (Npr2fl/fl, Col2a1-Cre+/\u2212) mice were previously generated (Nakao et al., 2015). In this study, genotyping primers were newly designed, and Npr2 ablation was evaluated in growth plates. The genomic map shows PCR primers for detecting the mutated Npr2 alleles and Npr2 mRNA. (B) Npr2 gene ablation in various tissues from the chondrocyte-specific Npr2-knockout mice. Genomic DNAs were prepared from tissues (Gp, humeral growth plate; Br, brain; Lu, lung; Hr, heart; Lv, liver; Ki, kidney) from the E17.5 chondrocyte-specific Npr2-knockout and control embryos, and subjected to PCR analysis to detect the floxed and deleted Npr2 alleles; the Col2a1-Cre transgene was also examined. (C) Reduction of Npr2 mRNA in mutant growth plates prepared from the chondrocyte-specific Npr2-knockout mice. Total RNAs were prepared from humeral growth plates from the E17.5 embryos, and subjected to reverse transcription PCR (RT-PCR) analysis for estimating Npr2 mRNA content. 18S ribosomal RNA was examined as an internal control. The relative mRNA contents were estimated from cycle thresholds in RT-PCR reactions and are summarized in the bar graph. (D) Total RNAs were prepared from humeral growth plate sections of the chondrocyte-specific Npr2-knockout (Npr2fl/fl, Col2a1-Cre+/\u2212) and control (Npr2fl/fl, Col2a1-Cre\u2212/\u2212) E17.5 embryos and subjected to quantitative RT-PCR analysis. The cycle threshold (Ct) was determined for each RT-PCR reaction for estimating relative mRNA content. The data represent means \u00b1 standard error of the mean (SEM), and the numbers of mice examined are shown in parentheses. A significant difference between the genotype is marked with an asterisk (**p < 0.01 in t-test).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Total RNAs were prepared from growth plate sections packed with round chondrocytes or enriched with columnar and hypertrophic chondrocytes, and subjected to RT-PCR analysis. The cycle threshold (Ct) was determined for each RT-PCR reaction for estimating relative mRNA content. The data represent the mean \u00b1 standard error of the mean (SEM), and the numbers of mice examined are shown in parentheses. Significant differences between the growth plate sections are marked with asterisks (*p < 0.05 and **p < 0.01 in t-test). n.d.: not detectable.\n\nIn chondrocyte-specific Npr2-knockout mice (Npr2fl/fl, Col2a1-Cre+/\u2212), Cre recombinase is expressed under the control of the collagen type 2\u03b11 gene promoter and thus inactivates the floxed Npr2 alleles in a chondrocyte-specific manner (Nakao et al., 2015). Our RT-PCR analysis indicated that the floxed Npr2 gene was largely inactivated in the growth plates prepared from the E17.5 mutant embryos, but such recombination events were not detected in other tissues examined (Figure 1\u2014figure supplement 1A, B). Accordingly, Npr2 mRNA contents in the mutant growth plates were reduced to less than 40% of controls (Figure 1\u2014figure supplement 1C), despite the growth plate preparations contain not only chondrocytes but also perichondrium-resident cells including undifferentiated mesenchymal cells and immature chondroblasts. Further RT-PCR analysis detected similar expression of representative chondrogenic marker genes between chondrocyte-specific Npr2-knockout and control bones, suggesting that the Npr2 deficiency does not affect fundamental chondrogenesis in growth plates (Figure 1\u2014figure supplement 1D). In contrast to the imaging observations in wild-type and control bone slices, CNP treatments failed to enhance Ca2+ fluctuations in the mutant round chondrocytes prepared from the chondrocyte-specific Npr2-knockout mice (Figure 1B). Therefore, CNP seems to facilitate spontaneous Ca2+ fluctuations downstream of NPR2 activation in growth plate chondrocytes.\n\n### Activated PKG facilitates spontaneous Ca2+ fluctuations\n\nCNP binds to NPR2 to activate its intrinsic guanylate cyclase and thus stimulates PKG by elevating cellular cGMP contents (Nakao et al., 1996). CNP also binds to NPR3 which acts as a decoy receptor for ligand clearance, but the Npr3 gene seemed to be inactive in growth plate chondrocytes (Figure 1\u2014figure supplement 2). Next, we pharmacologically verified the contribution of PKG to CNP-facilitated Ca2+ fluctuations. The cGMP analog 8-(4-chlorophenylthio)-cyclic GMP (8-pCPT-cGMP) is widely used as a PKG-selective activator, while KT5823 is a typical PKG inhibitor. In wild-type growth plate chondrocytes pretreated with 8-pCPT-cGMP (100 \u03bcM for 1 hr), spontaneous Ca2+ fluctuations were remarkably facilitated (Figure 2A); both fluctuation-positive cell rate and fluctuation amplitude were highly increased. In contrast, the bath application of KT5823 (2 \u03bcM) clearly attenuated CNP-facilitated Ca2+ fluctuations within a short time frame (Figure 2B). Therefore, PKG activation seems to be essential for CNP-facilitated Ca2+ fluctuations in growth plate chondrocytes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig2-v1.jpg)\n\n**Figure 2.:** (A) Facilitated Ca2+ fluctuations in round chondrocytes pretreated with the PKG activator 8-pCPT-cGMP. Wild-type bone slices were pretreated with or without the cGMP analog, and then subjected to Ca2+ imaging. Representative recording traces are shown (left panels), and the pharmacological effects are summarized (right graphs). Significant differences between control and 8-pCPT-cGMP pretreatments are marked with asterisks (**p < 0.01 in t-test). The data are presented as the means \u00b1 standard error of the mean (SEM) with n values indicating the number of examined mice. (B) Attenuation of CNP-facilitated Ca2+ fluctuations by the PKG inhibitor KT5823. Wild-type bone slices were pretreated with CNP, and then subjected to Ca2+ imaging. Representative recording traces are shown (left panel), and KT5823-induced effects are summarized (right graphs). Significant KT5823-induced shifts are marked with asterisks (**p < 0.01 in t-test). The data are presented as the means \u00b1 SEM with n values indicating the number of examined mice.\n\n### Activated BK channels contribute to CNP-facilitated Ca2+ fluctuations\n\nSpontaneous Ca2+ fluctuations are facilitated by activated BK channels in growth plate chondrocytes (Qian et al., 2019). Previous studies have established a functional link between PKG and BK channels in several cell types including smooth muscle and endothelial cells; activated PKG enhances BK channel gating by directly phosphorylating the \u03b1 subunit KCNMA1 protein (Dong et al., 2008; Fukao et al., 1999; White et al., 2000). We thus examined whether altered BK channel activity is associated with CNP-facilitated Ca2+ fluctuations. The BK channel inhibitor paxilline (10 \u03bcM) exerted no obvious effects on basal Ca2+ fluctuations in nontreated chondrocytes. However, the same paxilline treatments remarkably inhibited CNP-facilitated Ca2+ fluctuations (Figure 3A); both fluctuation-positive cell ratio and fluctuation amplitude were clearly decreased after paxilline application. On the other hand, the BK channel activator NS1619 (30 \u03bcM) stimulated basal Ca2+ fluctuations in the growth plate chondrocytes prepared from control mice. The NS1619-induced effects were preserved in the mutant chondrocytes prepared from chondrocyte-specific Npr2-knockout mice (Figure 3B). Therefore, BK channel activation is likely involved in CNP-facilitated Ca2+ fluctuations in growth plate chondrocytes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig3-v1.jpg)\n\n**Figure 3.:** (A) Attenuation of CNP-facilitated Ca2+ fluctuations by the BK channel inhibitor paxilline in round chondrocytes. Wild-type bone slices were pretreated with or without CNP, and then subjected to Ca2+ imaging. Representative recording traces are shown (left panels), and paxilline-induced effects are summarized (right graphs). Significant paxilline-induced shifts are marked with asterisks (*p < 0.05 and **p < 0.01 in one-way analysis of variance (ANOVA) and Tukey\u2019s test). The data are presented as the means \u00b1 standard error of the mean (SEM) with n values indicating the number of examined mice. (B) Ca2+ fluctuations facilitated by the BK channel activator NS1619 in Npr2-deficient chondrocytes. Bone slices were prepared from the chondrocyte-specific Npr2-knockout and control embryos, and NS1619-induced effects were examined in Ca2+ imaging. Representative recording traces are shown (left panels), and the effects of NS1619 are summarized (right graphs). Significant NS1619-induced shifts are marked with asterisks (**p < 0.01 in one-way ANOVA and Tukey\u2019s test). The data are presented as the means \u00b1 SEM with n values indicating the number of examined mice.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** In Ca2+ imaging, U73122 was bath applied to wild-type round chondrocytes pretreated with or without CNP. Representative recording traces are shown (left panels), and the effects of U73122 are summarized (right bar graphs). Data represent means \u00b1 standard error of the mean (SEM), and the numbers of cells and mice examined are shown in parentheses in the keys and graph bars, respectively. Significant differences between before and after the U73122 treatment are marked with asterisks (*p < 0.05 and **p < 0.01 in one-way analysis of variance [ANOVA] and Tukey\u2019s test).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Store Ca2+ release triggered by 1-oleoyl lysophosphatidic acid (LPA) in wild-type round chondrocytes pretreated with or without CNP. Representative recording traces are shown (left panels), and LPA-evoked Ca2+ responses are summarized (right graphs). Data represent means \u00b1 standard error of the mean (SEM), and the numbers of cells and mice examined are shown in parentheses in the keys and graph bars, respectively. No significant differences were observed between CNP- and vehicle-pretreated groups (one-way analysis of variance [ANOVA] and Tukey\u2019s test). (B) Ca2+ leak responses evoked by the sarco/endoplasmic reticulum Ca2+-ATPase (SERCA) pump inhibitor thapsigargin (TG) in wild-type round chondrocytes pretreated with or without CNP. Representative recording traces are shown (left panels), and TG-evoked Ca2+ responses are summarized (right bar graphs). Data represent means \u00b1 SEM, and the numbers of cells and mice examined are shown in parentheses in the keys and graph bars, respectively. No significant differences were observed between CNP- and vehicle-pretreated groups (t-test).\n\n### Phospholipase C seems unrelated to CNP-facilitated Ca2+ fluctuations\n\nCa2+ fluctuations are maintained by phosphatidylinositol (PI) turnover in growth plate chondrocytes (Qian et al., 2019). Although it has been reported that activated PKG inhibits phospholipase C (PLC) in smooth muscle (Guo et al., 2018; Huang et al., 2007; Nalli et al., 2014; Xia et al., 2001), it might be possible that NPR2 activation enhances basal PLC activity to facilitate Ca2+ fluctuations. The PLC inhibitor U73122 (10 \u03bcM) remarkably inhibited basal Ca2+ fluctuations in nontreated chondrocytes: the fluctuation-positive cell ratio and fluctuation amplitude reduced less than half in response to U73122 application (Figure 3\u2014figure supplement 1). U73122 was also effective for CNP-facilitated Ca2+ fluctuations, but the inhibitory efficiency seemed relatively weak compared to those on basal fluctuations. Given the different inhibitory effects, it is rather unlikely that PLC activation accompanies CNP-facilitated Ca2+ fluctuations.\n\nPKG stimulates sarco/endoplasmic reticulum Ca2+-ATPase (SERCA) by phosphorylating the Ca2+ pump regulatory peptide phospholamban (PLN) in smooth and cardiac muscle cells (Bibli et al., 2015; Raeymaekers et al., 1988; Lalli et al., 1999), and activated Ca2+ pumps generally elevate stored Ca2+ contents and thus stimulate store Ca2+ release. RT-PCR data suggested that the Pln gene and the Atp2a2 gene encoding SERCA2 are weakly active in growth plate chondrocytes (Figure 1\u2014figure supplement 2). To examine the effects of CNP treatments on Ca2+ stores, we examined Ca2+ responses to the activation of Gq-coupled lysophosphatidic acid (LPA) receptors (Figure 3\u2014figure supplement 2A) and the Ca2+ pump inhibitor thapsigargin (Figure 3\u2014figure supplement 2B). CNP- and vehicle-pretreated chondrocytes exhibited similar LPA-induced Ca2+ release and thapsigargin-induced Ca2+ leak responses. Therefore, CNP treatments seem ineffective for store Ca2+ pumps in growth plate chondrocytes. Moreover, the dose dependency of Ca2+ release by LPA (1\u201310 \u03bcM) was not altered between CNP- and vehicle-pretreated chondrocytes, implying that CNP does not affect basal PLC activity.\n\nAmong diverse Ca2+ handling-related proteins, PLC, PLN, and BK channels have been reported as PKG substrates, however, our observations suggested that both PLC and PLN receive no obvious functional regulation in CNP-treated chondrocytes. On the other hand, the paxilline treatments diminished CNP-facilitated Ca2+ fluctuations down to nontreated basal levels (Figure 3A), suggesting that activated BK channels predominantly contribute to CNP-facilitated Ca2+ fluctuations in growth plate chondrocytes.\n\n### CNP induces BK channel-mediated hyperpolarization\n\nTo confirm the contribution of activated BK channels to CNP-facilitated Ca2+ fluctuations, we conducted confocal imaging using the voltage-dependent dye oxonol VI. In this imaging analysis, depolarization results in the accumulation of the dye into cells, in which the fractional fluorescence intensity, normalized to the maximum intensity monitored in the bath solution containing 100 mM KCl, is thus increased (Figure 4A, left panel). The fractional intensity of CNP-pretreated cells was significantly lower than that of nontreated cells in a normal bath solution (Figure 4A, middle graph), although both cells exhibited similar intensity shifts in high K+ bath solutions. Based on the recording data, we prepared a calibration plot for the relationship between the fractional intensity and theoretical membrane potential (Figure 4A, right panel). In the tentative linear correlation, resting potentials of \u221246.4 \u00b1 0.2 and \u221243.6 \u00b1 0.3 mV were estimated in CNP- and nontreated cells, respectively. The estimated potentials closely approximate the reported value from monitoring articular chondrocytes using sharp microelectrodes (Clark et al., 2010).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig4-v1.jpg)\n\n**Figure 4.:** (A) Oxonol VI imaging of round chondrocytes pretreated with or without CNP. Wild-type bone slices were pretreated with or without CNP, and then subjected to membrane potential imaging. During contiguous treatments with high-K+ solutions, cellular fluorescence intensities were monitored and normalized to the maximum value in the 100 mM KCl-containing solution to yield the fractional intensity (left panel). The resting fractional intensities were quantified and statistically analyzed in CNP- and vehicle-pretreated cells (middle graph). For preparing the calibration plot (right panel), the data from 10 cells in bathing solutions containing 4 (normal solution), 20, 40, 60, and 100 mM KCl are summarized; red and black lines indicate the estimated resting membrane potentials of CNP- and vehicle-pretreated cells, respectively. (B) Effects of the BK channel inhibitor paxilline on resting membrane potential in round chondrocytes. Recording data from 10 cells pretreated with or without CNP were averaged (left panel), and the fractional intensities elevated by paxilline are summarized (right graph). (C) Effects of the BK channel activator NS1619 on membrane potential in round chondrocytes. Recording data from 10 cells pretreated with or without CNP were averaged (left panel), and the fractional intensities in normal, 20 mM KCl and NS1619-containing 20 mM KCl solutions are summarized (right graph). Significant differences between CNP- and vehicle-pretreated cells are indicated by asterisks in (A) (**p < 0.01 in t-test) and in (C) (**p < 0.01 in one-way analysis of variance [ANOVA] and Dunn\u2019s test). The data are presented as the means \u00b1 standard error of the mean (SEM) with n values indicating the number of examined mice.\n\nIn pharmacological assessments, paxilline elevated fractional intensities to the same levels in CNP- and nontreated chondrocytes (Figure 4B). Moreover, NS1619 decreased fractional intensities to the same levels in both cells under 20 mM KCl bathing conditions, which enabled us to reliably evaluate the reducing intensity shifts (Figure 4C). The oxonol VI imaging data suggested that CNP treatments induce BK channel-mediated hyperpolarization and thus facilitate spontaneous Ca2+ fluctuations by enhancing Ca2+-driving forces in growth plate chondrocytes.\n\n### CNP enhances TRPM7-mediated Ca2+ entry and CaMKII activity\n\nSpontaneous Ca2+ fluctuations are predominantly attributed to the intermissive gating of cell-surface TRPM7 channels in growth plate chondrocytes (Qian et al., 2019). For pharmacological characterization of TRPM7 channels, FTY720 is used as a typical inhibitor, while NNC550396 is an activator. As reasonably expected, bath application of FTY720 (10 \u03bcM) clearly diminished CNP-facilitated Ca2+ fluctuations (Figure 5A). On the other hand, NNC550396 (30 \u03bcM) remarkably facilitated Ca2+ fluctuations in nontreated chondrocytes, and this facilitation was preserved in the mutant chondrocytes prepared from chondrocyte-specific Npr2-knockout mice (Figure 5B). Therefore, CNP treatments likely facilitate TRPM7-mediated Ca2+ influx in growth plate chondrocytes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig5-v1.jpg)\n\n**Figure 5.:** (A) Inhibition of CNP-facilitated Ca2+ fluctuations by the TRPM7 inhibitor FTY720 in round chondrocytes. Wild-type bone slices were pretreated with CNP, and then subjected to Ca2+ imaging. Representative recording traces are shown (left panel), and the effects of FTY720 are summarized (right graphs). Significant FTY720-induced shifts are marked with asterisks (**p < 0.01 in t-test). The data are presented as the means \u00b1 standard error of the mean (SEM) with n values indicating the number of examined mice. (B) Ca2+ fluctuations facilitated by the TRPM7 channel activator NNC550396 in Npr2-deficient round chondrocytes. Bone slices were prepared from the chondrocyte-specific Npr2-knockout and control embryos, and NNC550396-induced effects were examined in Ca2+ imaging. Representative recording traces are shown (left panels) and the effects of NNC550396 on Ca2+ fluctuations are summarized (right graphs). Significant NNC550396-induced shifts in each genotype are marked with asterisks (**p < 0.01 in one-way analysis of variance [ANOVA] and Tukey\u2019s test). The data are presented as the means \u00b1 SEM with n values indicating the number of examined mice.\n\nTRPM7-mediated Ca2+ entry activates CaMKII in growth plate chondrocytes toward bone outgrowth (Qian et al., 2019), and cellular CaMKII activity can be estimated by immunochemically quantifying its autophosphorylated form. In immunocytochemical analysis, CNP-pretreated growth plate chondrocytes were more decorated with the antibody against phospho-CaMKII than nontreated control cells (Figure 6A). This CNP-facilitated decoration was abolished by the cotreatment of the CaMKII inhibitor KN93 (30 \u03bcM). This observation was further confirmed by Western blot analysis; CNP treatments increased the phospho-CaMKII population without affecting total CaMKII content in the cell lysates prepared from growth plates (Figure 6B). Therefore, CaMKII is likely activated downstream of enhanced TRPM7-mediated Ca2+ entry in CNP-treated growth plate chondrocytes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig6-v1.jpg)\n\n**Figure 6.:** (A) Immunohistochemical staining against phospho-CaMKII (p-CaMKII) in round chondrocytes. Wild-type bone slices were pretreated with or without CNP and the CaMKII inhibitor KN93, and then subjected to immunostaining with antibody to p-CaMKII. DAPI (4\u2032,6-diamidino-2-phenylindole) was used for nuclear staining. Lower panels show high-magnification views of white-dotted regions in upper panels (scale bars, 10 \u03bcm). (B) Immunoblot analysis of total CaMKII and p-CaMKII in growth plate cartilage. Growth plate lysates were prepared from wild-type bone slices pretreated with or without CNP, and subjected to immunoblot analysis with antibodies against total CaMKII and p-CaMKII (upper panel). Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) was also analyzed as a loading control. The immunoreactivities observed were densitometrically quantified and are summarized (lower graph). A significant difference between CNP- and vehicle pretreatments is marked with an asterisk (*p < 0.05 in one-way analysis of variance [ANOVA] and Tukey\u2019s test). The data are presented as the means \u00b1 standard error of the mean (SEM) with n values indicating the number of examined mice.\n\n### Pharmacologically activated BK channels facilitate bone outgrowth\n\nBased on the present data from in vitro experiments, the novel CNP signaling route, represented as the NPR2-PKG-BK channel\u2013TRPM7 channel\u2013CaMKII axis, can be proposed in growth plate chondrocytes. We attempted to examine the proposed signaling axis in metatarsal bone culture, a widely used ex vivo model system for analyzing bone growth and endochondral ossification (Houston et al., 2016). CNP treatments expanded columnar chondrocytic zones without affecting cell densities to extend cultured wild-type metatarsal bones (Figure 7\u2014figure supplement 1). The extension seemed to be mainly caused by enlarged extracellular matrix area, although CNP significantly dilated columnar cell sizes. In chondrocyte-specific Trpm7-knockout mice (Trpm7fl/fl, Col11a2-Cre+/\u2212), Cre recombinase is expressed under the control of the collagen type XI gene enhancer and promoter, and thus inactivates the floxed Trpm7 alleles in cartilage cells (Qian et al., 2019). The bone rudiments prepared from control embryos (Trpm7fl/fl, Col11a2-Cre\u2212/\u2212) regularly elongated during ex vivo culture, and their outgrowth was significantly stimulated by the supplementation with CNP (30 nM) into the culture medium (Figure 7A). The histological observation of the growth plate regions demonstrated that the CNP treatment extended the columnar chondrocyte zone. In contrast, the mutant rudiments prepared from the chondrocyte-specific Trpm7-knockout embryos were reduced in initial size and did not respond to the CNP supplementation (Figure 7B). Therefore, CNP-facilitated bone outgrowth seems to require TRPM7 channels expressed in growth plate chondrocytes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig7-v1.jpg)\n\n**Figure 7.:** Loss of CNP-facilitated outgrowth in Trpm7-deficient bones. Metatarsal rudiments isolated from control (Trpm7fl/fl, Col11a2-Cre\u2212/\u2212) embryos (A) and chondrocyte-specific Trpm7-knockout (Trpm7fl/fl, Col11a2-Cre+/\u2212) embryos (B) were precultured in normal medium for 6 days, and then cultured in medium supplemented with or without CNP for 3 days. Representative images of cultured metatarsals are shown (upper left panels; scale bar, 0.3 mm), and longitudinal bone outgrowth during the CNP-supplemented period was statistically analyzed in each genotype group (upper right graphs). Growth plate images in longitudinal sections of 3-day cultured bones with or without CNP treatments are presented in lower left panels (scale bar, 0.3 mm), and their high-magnification views in the round (R), columnar (C), and hypertrophic (H) chondrocyte zones are shown in lower right panels (scale bar, 30 \u03bcm). MD, mid-diaphysis. Summary of graphical representations of zonal sizes containing round, columnar, and hypertrophic chondrocytes and number of cells in each zone is shown in lower right graphs. Significant CNP-supplemented effects are marked with asterisks (*p < 0.05 in t-test). The data are presented as the means \u00b1 standard error of the mean (SEM) with n values indicating the number of examined mice.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Metatarsal bones isolated from wild-type embryos were precultured in normal medium for 6 days, and then cultured in medium supplemented with or without CNP (30 nM) for 3 days. Longitudinal sections of cultured bones on day 3 after the CNP treatment are shown in upper left panels (scale bar, 0.3 mm), and high-magnification views of the round (R), columnar (C), and hypertrophic (H) chondrocyte zones in upper right panels (scale bar, 30 \u03bcm). MD, mid-diaphysis. Longitudinal bone outgrowth during the CNP-supplemented period was statistically analyzed in each group to present in the lower left graph. Histological observations are summarized in the lower right graphs; the zonal sizes, cellular (Cell) and extracellular matrix (ECM) areas within the columnar cell zone, cell sizes, and cell numbers were statistically analyzed. Data represent means \u00b1 standard error of the mean (SEM), and the numbers of mice examined are shown in parentheses in the keys. Significant differences between the groups are marked with asterisks (*p < 0.05, **p < 0.01 in t-test).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) The schematic diagram representing the NPR2-PKG-BK channel\u2013TRPM7 channel\u2013CaMKII axis proposed as an essential CNP signaling cascade in growth plate chondrocytes. Previous studies proposed that the RAF\u2013MEK\u2013ERK axis is also involved in growth plate CNP signaling (Krejci et al., 2005). (B) The schematic diagram representing the nitric oxide (NO- and atrial natriuretic peptide) (ANP)/brain natriuretic peptide (BNP)-induced relaxation signaling in vascular smooth muscle.\n\nIn our proposed signaling axis, activated BK channels exert an essential role by converting the chemical signal into the electrical signal. We finally examined the effect of the BK channel activator NS1619 on bone outgrowth (Figure 8A). NS1619 supplementation (30 \u03bcM) significantly stimulated the outgrowth of wild-type bone rudiments. In contrast, under the same culture conditions, no stimulation was detected in the mutant rudiments from the chondrocyte-specific Trpm7-deficient embryos (Figure 8B). The observations seem to support our conclusion that CNP activates BK channels and thus facilitates TRPM7-mediated Ca2+ influx in growth plate chondrocytes for stimulating bone outgrowth.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/71931/elife-71931-fig8-v1.jpg)\n\n**Figure 8.:** Stimulated bone outgrowth by the BK channel activator NS1619. Metatarsal rudiments isolated from wild-type (A) and the chondrocyte-specific Trpm7-knockout embryos (B) were precultured in normal medium for 5 days, and then cultured in medium supplemented with or without NS1619 for 4 days. Representative images of cultured metatarsals are shown (left panels; scale bar, 0.3 mm), and longitudinal bone outgrowth during the NS1619-supplemented period was statistically analyzed in each genotype group (right graphs). A significant NS1619-supplemented effect is marked with asterisks (*p < 0.05 in t-test). The data are presented as the means \u00b1 standard error of the mean (SEM) with n values indicating the number of examined mice.\n\n## Discussion\n\nWe reported that in growth plate chondrocytes, PLC and BK channels maintain autonomic TRPM7-mediated Ca2+ fluctuations, which potentiate chondrogenesis and bone growth by activating CaMKII (Qian et al., 2019). Based on the present data, together with the previous reports, we proposed a new CNP signaling axis in growth plate chondrocytes (Figure 7\u2014figure supplement 2A). CNP-induced NPR2 activation elevates cellular cGMP content and thus activates PKG, leading to the phosphorylation of BK channels. The resulting BK channel activation induces cellular hyperpolarization to facilitate TRPM7-mediated Ca2+ entry by enhancing the Ca2+-driving force, leading to CaMKII activation. Therefore, it is likely that CaMKII activity is physiologically regulated by BK channels as a key player of the CNP signaling cascade. In a recent genetic study, several patients carrying loss-of-function mutations in the KCNMA1 gene encoding BK channel \u03b1 subunit were characterized by a novel syndromic growth deficiency associated with severe developmental delay, cardiac malformation, bone dysplasia, and dysmorphic features (Liang et al., 2019). In the KCNMA1-mutated disorder, CNP signaling likely fails to facilitate TRPM7-mediated Ca2+ fluctuations in growth plate chondrocytes and resulting insufficient Ca2+ entry may lead to systemic bone dysplasia associated with stunted growth plate cartilage. On the other hand, the origin of CNP may still be ambiguous in the signaling scheme. Transgenic mice overexpressing CNP in a chondrocyte-specific manner develop a prominent skeletal overgrowth phenotype, suggesting autocrine CNP signaling in developing bones (Yasoda et al., 2004). However, several genechip data in public databases indicate that prepro-CNP mRNA is abundantly expressed in the placenta among embryonic tissues (e.g., see the records under accession number GSE28277 in NCBI database). Therefore, it may be important to further examine which cell type primarily produces CNP to facilitate bone growth during embryonic development.\n\nIn our proposed CNP-signaling cascade, CaMKII is finally activated by TRPM7-mediated Ca2+ influx in both round and columnar chondrocytes. However, it is still unclear how activated CaMKII contributes to bone outgrowth. Our obeservations in cultured metatarsal bones suggest that CNP expanded the columnar chondrocyte zone by stimulating the cell growth and enlarging the extracellular matrix area toward bone extension (Figure 7). The observations are roughly consistent with the previous studies using cultured tibias treated with CNP (Yasoda et al., 1998; Miyazawa et al., 2002). Therefore, activated CaMKII by TRPM7-mediated Ca2+ influx probably phosphorylates key proteins controlling cell growth and extracellular matrix production in columner chondrocytes.\n\nFrom a physiological point of view, it is interesting to note that the proposed CNP signaling axis has clear overlap with the nitric oxide (NO) and ANP/BNP signaling cascades for vascular relaxation (Martel et al., 2010; Zois et al., 2014; Kubacka et al., 2018). In blood vessels, NO is produced by endothelial cells in response to various stimuli including shear stress and acetylcholine, and activates soluble guanylate cyclase in neighboring vascular smooth muscle cells. ANP and BNP are released from the heart in response to pathological stresses, such as atrial distension and pressure overload, and are delivered to activate the receptor guanylate cyclase NPR1 in vascular muscle. In either case, the resulting cGMP elevation followed by PKG activation induces BK channel-mediated hyperpolarization and thus inhibits L-type Ca2+ channel gating, leading to vascular dilation due to decreased Ca2+ entry into vascular muscle. Therefore, activated BK channels inhibit the voltage-dependent Ca2+ influx in vascular muscle cells regarded as excitable cells (Figure 7\u2014figure supplement 2B). In contrast, activated BK channels reversely stimulate TRPM7-mediated Ca2+ entry in growth plate chondrocytes classified as nonexcitable cells, because the channel activity is voltage independently maintained by the intrinsic PI turnover rate.\n\nCNP is an effective therapeutic reagent for achondroplasia and divergent short statures (Yasoda et al., 2004; Ueda et al., 2016; Yamashita et al., 2020), and the phase III clinical trial of CNP therapy is completed successfully (Nakao et al., 1996). The proteins contributing to the CNP signaling axis may be new pharmaceutical targets for developing medications; in addition to NPR2, BK, and TRPM7 channels are reasonably considered promising targets. Moreover, phosphodiesterase subtypes might be useful targets, although the subtypes responsible for cGMP hydrolysis remain to be identified in growth plate chondrocytes. Chemical compounds specifically targeting the signaling axis defined in this study would be useful drugs for not only clinical treatment of developmental disorders but also artificially modifying body sizes in farm and pet animals.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Mouse: C57BL/6J</td>\n      <td>The Jackson Laboratory</td>\n      <td>Jax: 000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Trpm7fl/fl, Col11a2-Cre mice</td>\n      <td>Qian et al., 2019</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Npr2fl/fl, Col2a1-Cre mice</td>\n      <td>Nakao et al., 2015</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-phospho-CaMKII (Thr 286) (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat#12716; RRID: AB_2713889</td>\n      <td>IF (1:200)WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CaMKII (Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#EP1829Y; RRID: AB_868641</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GAPDH (Rabbit polyclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#G9545; RRID: AB_796208</td>\n      <td>WB (1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit IgG-HRP (Mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Cat#sc-2357; RRID: AB_628497</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit Alexa Flour 488 (Goat polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#A-11008; RRID: AB_143165</td>\n      <td>1:50</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Npr1_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AACAAGGAGAACAGCAGCAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Npr1_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TATCAAATGCCTCAGCCTGGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Npr2_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GGCCCCATCCCTGATGAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Npr2_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CCTGGTACCCCCTTCCTGTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Npr3_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GGTATGGGGACTTCTCTGTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Npr3_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TCTGGTCTCATCTAGTCTCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>FlFor</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTAACCTGGGTAGACTAGTTGTTGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DelFor</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGTTATTTTGTGAGATGACG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Rev</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ATGGTGGAGGAGGTCTTTAATTCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Col2a1-Cre_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CGTTGTGAGTTGGATAGTTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Col2a1-Cre_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CATTGCTGTCACTTGGTCGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Prkg1_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ATGGACTTTTTGTGGGACTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Prkg1_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GGTTTTCATTGGATCTGGGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Prkg2_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TTGCGGAAGAAAATGATGTCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Prkg2_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GAATGGGGAGGTTGAGGAGAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnma_F</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>AATGCACTTCGAGGAGGCTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnma_R</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>CTCAGCCGGTAAATTCCAAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnmb1_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ACAACTGTGCTGCCCCTCTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnmb1_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CACTGTTGGTTTTGATCCCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnmb2_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TCAGGAGACACCAACACTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnmb2_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AGTTAGTTTCACCATAGCAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnmb3_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTGGATGACGGGCTGGACTT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnmb3_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCACTTGGGGTTGGTCCTGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnmb4_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CTCCTGACCAACCCCAAGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnmb4_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TAAAATAGCAAGTGAATGGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnn1_F</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>TCAAAAATGCTGCTGCAAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnn1_R</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>TCGTTCACCTTCCCTTGTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnn2_F</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>GATCTGGCAAAGACCCAGAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnn2_R</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>GAAGTCCCTTTGCTGCTGTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnn3_F</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>ACTTCAACACCCGATTCGTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnn3_R</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>GGAAAGGAACGTGATGGAGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnn4_F</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>GGCACCTCACAGACACACTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Kcnn4_R</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>TTTCTCCGCCTTGTTGAACT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Plcb1_F</td>\n      <td>Yamazaki et al., 2011</td>\n      <td>PCR primers</td>\n      <td>CCCAAGTTGCGTGAACTTCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Plcb1_R</td>\n      <td>Yamazaki et al., 2011</td>\n      <td>PCR primers</td>\n      <td>GTTGCCAAGCTGAAAACCTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Plcb2_F</td>\n      <td>Yamazaki et al., 2011</td>\n      <td>PCR primers</td>\n      <td>ACATCCAGGAAGTGGTCCAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Plcb2_R</td>\n      <td>Yamazaki et al., 2011</td>\n      <td>PCR primers</td>\n      <td>CGCACCGACTCCTTTACTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Plcb3_F</td>\n      <td>Yamazaki et al., 2011</td>\n      <td>PCR primers</td>\n      <td>CAGGCCAGCACAGAGACATA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Plcb3_R</td>\n      <td>Yamazaki et al., 2011</td>\n      <td>PCR primers</td>\n      <td>AGGATGCTGGCAATCAAATC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Plcg1_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AACGCTTTGAGGACTGGAGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Plcg1_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CTCCTCAATCTCTCGCAAGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Plcg2_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AACCCCAACCCACACGAGTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Plcg2_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AATGTTTCACCTTGCCCCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Trpm7_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>ATTGCTTAGTTTTGGTGTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Trpm7_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>GATTGTCGGGAGAGTGGAGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Camk2a_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CACCACCATTGAGGACGAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Camk2a_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GGTTCAAAGGCTGTCATTCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Camk2b_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AAGCAGATGGAGTCAAGCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Camk2b_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGCTGTCGGAAGATTCCAGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Camk2d_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GATAAACAACAAAGCCAACG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Camk2d_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTAAGCCTCAAAGTCCCCAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Camk2g_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CAAGAACAGCAAGCCTATCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Camk2g_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CCTCTGACTGACTGGTGCGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde2a_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ATCTTTGACCACTTCTCTCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde2a_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CATAACCCACTTCAGCCATC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde3a_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AACTATACCTGCTCGGACTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde3a_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TTCGTGCGGCTTTATGCTGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde3b_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ATTCCAAAGCAGAGGTCATC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde3b_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTTAGAGAGCCAGCAGACAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde5a_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GACCCTTGCGTTGCTCATTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde5a_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGATGGAGTGACAGTACAGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6a_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AACCCACCCGCTGACCACTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6a_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CTCTTCCTTCTTGTTGACGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6b_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TCCGGGCCTATCTAAACTGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6b_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AGAAGACAATTTCCCGGCCAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6c_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TTGCTCAGGAAATGGTTATG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6c_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GAAACAGAACTCGTACAGGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6d_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CCCAAGAAAATCCTCAAGTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6d_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ACAAAGCCAAACTCGAAGAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6g_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AAGGGTGAGATTCGGTCAGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6g_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TCATCCCCAAACCCTTGCAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6h_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GGCAGACTCGACAGTTCAAGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde6h_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CTCCAGATGGCTGAACGCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde10a_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CATCCGCAAAGCCATCATCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pde10a_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TCTCATCACCCTCAGCCCAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar1_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCTTGGTGCCTTTATTGTCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar1_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GGTAGGAGTAGATGATGGGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar2_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AGTGTGCTGGTATTGCTGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar2_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TTTGATGGAGAGCCTGGCAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar3_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ACTTTCCCTTCTACTACCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar3_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTCTTTCCACAGCAATAACC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar4_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CCTCAGTGGTGGTATTTCAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar4_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CACAGAAGAACAAGAAACAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar5_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AACACGACTTCTACCAACAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar5_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AAGACCCAGAGAGCCAGAGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar6_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TACTTTGCCATTTCGGATTT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Lpar6_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCACTTCCTCCCATCACTGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Atp2a1_F</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>CAAAACAGGGACCCTCACCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Atp2a1_R</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>GCCAGTGATGGAGAACTCGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Atp2a2_F</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>AAACCAGATGTCCGTGTGCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Atp2a2_R</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>TGATGGCACTTCACTGGCTT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Atp2a3_F</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>CCTCGGTCATCTGCTCTGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Atp2a3_R</td>\n      <td>Liu et al., 2021</td>\n      <td>PCR primers</td>\n      <td>CGTGGTACCCGAAATGGTGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pln_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TACCTCACTCGCTCGGCTAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pln_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGACGGAGTGCTCGGCTTTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Sox9_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>AGGAAGCTGGCAGACCAGTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Sox9_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>CGTTCTTCACCGACTTCCTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Sox5_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>CTCGCTGGAAAGCTATGACC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Sox5_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>GATGGGGATCTGTGCTTGTT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Sox6_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>GGATTGGGGAGTACAAGCAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Sox6_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>CATCTGAGGTGATGGTGTGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Runx2_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>GCCGGGAATGATGAGAACTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Runx2_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>GGACCGTCCACTGTCACTTT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pthlh_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>CTCCCAACACCAAAAACCAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Pthlh_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>GCTTGCCTTTCTTCTTCTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Acan_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>CCTCACCATCCCCTGCTACT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Acan_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>ACTTGATTCTTGGGGTGAGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Col10a1_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>CAAGCCAGGCTATGGAAGTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Col10a1_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>AGCTGGGCCAATATCTCCTT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Col2a1_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>CACACTGGTAAGTGGGGCAAGACCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Col2a1_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>GGATTGTGTTGTTTCAGGGTTCGGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse 18 S_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>AGACAAATCGCTCCACCAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse 18 S_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>CTCAACACGGGAAACCTCAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Actb_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>CATCCGTAAAGACCTCTATGCCAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Actb_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>ATGGAGCCACCGATCCACA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Gapdh_F</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>TGTGTCCGTCGTGGATCTGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mouse Gapdh_R</td>\n      <td>Qian et al., 2019</td>\n      <td>PCR primers</td>\n      <td>TTGCTGTTGAAGTCGCAGGAG</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>ANP (Human, 1\u201328)</td>\n      <td>Peptide Institute</td>\n      <td>Cat#4135</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CNP-22 (Human)</td>\n      <td>Peptide Institute</td>\n      <td>Cat#4229</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Amersham ECL Prime Western Blotting Detection Reagent</td>\n      <td>Cytiva</td>\n      <td>Cat#RPN2232</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ISOGEN</td>\n      <td>NipponGene</td>\n      <td>Cat#319-90211</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ReverTra Ace qPCR RT Master Mix with gDNA Remover</td>\n      <td>TOYOBO</td>\n      <td>Cat#FSQ-301</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>FTY720</td>\n      <td>Sigma-Aldrich</td>\n      <td>SML0700; CAS: 162359-56-0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fura-2 AM</td>\n      <td>DOJINDO</td>\n      <td>F025; CAS: 108964-32-5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hyaluronidase from sheep testes</td>\n      <td>Sigma-Aldrich</td>\n      <td>H2126; CAS: 37326-33-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>KN93</td>\n      <td>WAKO</td>\n      <td>115-00641; CAS: 139298-40-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>KT5823</td>\n      <td>Cayman Chemical</td>\n      <td>10010965; CAS: 126643-37-6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NNC 550396 dihydrochloride</td>\n      <td>Tocris Bioscience</td>\n      <td>2268; CAS: 357400-13-6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NS1619</td>\n      <td>Sigma-Aldrich</td>\n      <td>N170; CAS: 153587-01-0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1-Oleoyl lysophosphatidic acid</td>\n      <td>Cayman Chemical</td>\n      <td>62215: CAS: 325465-93-8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Oxonol VI</td>\n      <td>Sigma-Aldrich</td>\n      <td>75926; CAS: 64724-75-0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Paxilline</td>\n      <td>Tocris Bioscience</td>\n      <td>2006; CAS: 57186-25-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>8-pCPT-cGMP</td>\n      <td>Biolog</td>\n      <td>C009; CAS: 51239-26-0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Thapsigargin</td>\n      <td>Nacalai Tesque</td>\n      <td>33637-31; CAS: 67526-95-8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>U73122</td>\n      <td>Sigma-Aldrich</td>\n      <td>U6756; CAS: 112648-68-7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Ilustrator</td>\n      <td>Adobe Systems</td>\n      <td>http://www.adobe.com/products/illustrator.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism v7</td>\n      <td>GraphPad</td>\n      <td>https://www.graphpad.com/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>N/A</td>\n      <td>https://imagej.nih.gov/ij/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Leica Application Suite X</td>\n      <td>Leica MIcrosystems</td>\n      <td>https://www.leica-microsystems.com/products/microscope-software/p/leica-las-x-ls/</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Reagents, primers, and mice\n\nReagents and antibodies used in this study, and synthetic primers used for RT-PCR analysis and mouse genotyping are listed in Key Resourses Table. C57BL mice were used as wild-type mice in this study. Chondrocyte-specific Trpm7-knockout mice with C57BL genetic background were generated by crossing Trpm7fl/fl mice (Qian et al., 2019) with transgenic mice carrying Col11a2-Cre, originally designated as 11Enh-Cre (Iwai et al., 2008) Using primer sets for detecting Col11a2-Cre transgene and Trpm7 alleles, we previously reported that Trpm7 is specifically inactivated in cartilage tissues from the Trpm7flfl, Col11a2-Cre+/\u2212 mice (Qian et al., 2019). Chondrocyte-specific Npr2-knockout mice with C57BL background were generated as previously described (Nakao et al., 2015), and we designed primers for detecting the Col2a1-Cre transgene and the floxed Npr2 gene in this study (Figure 1\u2014figure supplement 1).\n\n### Bone slice preparations\n\nFemoral bones were isolated from E17.5 mice and immersed in a physiological salt solution (PSS): (in mM) 150 NaCl, 4 KCl, 1 MgCl2, 2 CaCl2, 5.6 glucose, and 5 2-[4-(2-Hydroxyethyl)-1-piperazinyl]ethanesulfonic acid (HEPES, pH 7.4). Longitudinal bone slices (~40 \u00b5m thickness) were prepared using a vibrating microslicer (DTK-1000N, Dosaka EM Co., Japan) as previously described (Qian et al., 2019).\n\n### Ca2+ imaging\n\nFura-2 Ca2+ imaging of bone slices was performed as previously described (Qian et al., 2019). Briefly, bone slices placed on glass-bottom dishes (Matsunami, Japan) were incubated in PSS containing 15 \u03bcM Fura-2AM for 1 hr at 37\u00b0C. Fluorescence microscopy distinguished round, columnar, and hypertrophic chondrocytes with characteristic morphological features in the bone slices loaded with Fura-2. For ratiometric imaging, excitation light of 340 and 380 nm was alternately delivered, and emission light of >510 nm was detected by a cooled EM-CCD camera (Model C9100-13; Hamamatsu Photonics, Japan) mounted on an upright fluorescence microscope (DM6 FS, Leica) using a \u00d740 water-immersion objective (HCX APO L, Leica). In typical measurements, ~30 round chondrocytes were randomly examined in each slice preparation to select the Ca2+ fluctuation-positive cells generating spontaneous events (>0.025 in Fura-2 ratio) using commercial software (Leica Application Suite X), and recording traces from the positive cells were then analyzed using Fiji/ImageJ software (US. NIH) for examining Ca2+ fluctuation amplitude and frequency. Imaging experiments were performed at room temperature (23\u201325\u00b0C) and PSS was used as the normal bathing solution. For the pretreatments of CNP, ANP, and 8-pCPT-cGMP, bone slices were immersed in PSS with the indicated compound for 1 hr at room temperature after Fura-2 loading.\n\n### Membrane potential monitoring\n\nBone slices were perfused with the PSS containing 200 nM oxonol VI at room temperature and analyzed as previously described (Yamazaki et al., 2011). To prepare the calibration plot showing the relationship between the fluorescence intensity and membrane potential, saline solutions containing 20, 40, 60, or 100 mM KCl were used as bathing solutions. Fluorescence images with excitation at 559 nm and emission at >606 nm were captured at a sampling rate of ~7.0 s using a confocal laser scanning microscope (FV1000; Olympus).\n\n### Immunochemical analysis of CaMKII\n\nBone slices were pretreated with or without CNP were subjected to immunochemical assessments as previously described (Li et al., 2011). Briefly, for immunohistochemical analysis, bone slices were fixed in 4% paraformaldehyde and treated with 1% hyaluronidase to enhance immunodetection (Ahrens and Dudley, 2011; Mouser et al., 2016). After blocking with fetal bovine serum-containing solution, bone slices were reacted with primary and Alexa 488-conjugated secondary antibodies and observed with a confocal microscope (FV1000; Olympus). For immunoblot analysis, bone slices were lysed in the buffer containing 4% sodium deoxycholate, 20 mM Tris\u2013HCl (pH 8.8) and a phosphatase inhibitor cocktail (100 mM NaF, 10 mM Na3PO4, 1 mM Na2VO3, and 20 mM \u03b2-glycerophosphate). The resulting lysate proteins were electrophoresed on sodium dodecyl sulfate\u2013polyacrylamide gels and electroblotted onto nylon membranes for immunodetection using primary and Horseradish peroxidase (HRP)-conjugated secondary antibodies. Antigen proteins were visualized using a chemiluminescence reagent and image analyzer (Amersham Imager 600, Cytiva). The immunoreactivities yielded were quantitatively analyzed by means of Fiji/ImageJ software.\n\n### Metatarsal organ culture\n\nMetatarsal bone rudiments were cultured as previously described (Houston et al., 2016). Briefly, the three central metatarsal rudiments were dissected from E15.5 mice and cultured in \u03b1MEM containing 5 \u03bcg/ml ascorbic acid, 1 mM \u03b2-glycerophosphate pentahydrate, 100 units/ml penicillin, 100 \u03bcg/ml streptomycin and 0.2% bovine serum albumin (fatty acid free). The explants were analyzed under a photomicroscope (BZ-X710, Keyence, Japan) for size measurements using Fiji/ImageJ software.\n\n### Histological analysis\n\nFor histological analysis, cultured bones were fixed in 4% paraformaldehyde, embedded in Super Cryoembedding Medium (Section-lab, Japan), and frozen in liquid nitrogen. Serial cryosections (6 \u03bcm in thickness) were prepared from the fixed specimens and stained with hematoxylin and eosin. In the sectional images, round, columnar, and hypertrophic chondrocytes were distinguished by their characteristic morphological features. Microscopic images were quantitatively analyzed using Fiji/ImageJ software.\n\n### Gene expression analysis\n\nQuantitative RT-PCR analysis was performed as previously described (Zhao et al., 2016). From femoral epiphyses, the terminal region containing round chondrocytes and the adjacent region enriched with columnar and hypertrophic chondrocytes were separated under stereo-microscope. Femoral and humeral speciemens were subjected to total RNA preparation using a commercial reagent (Isogen) for cDNA synthesis using a commercial kit (ReverTra ACE qPCR-RT kit). The resulting cDNAs were examined by real-time PCR (LightCycler 480 II, Roche), and the cycle threshold was determined from the amplification curve as an index for relative mRNA content in each reaction.\n\n### Quantification and statistical analysis\n\nAll data obtained are presented as the means \u00b1 standard error of the mean with n values indicating the number of examined mice. Student t-test and analysis of variance were used for two-group and multiple group comparisons, respectively (Prism 7, GraphPad Software Inc): p < 0.05 was considered to be statistically significant.\n",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "68817189-f25c-440b-9f4a-0a0778c176dd",
+      "submission_id": "2926dc62-95b1-4233-96d9-6c048f622df5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Fayez Safadi, https://ror.org/04q9qf557 Northeast Ohio Medical University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71931.sa0](https://doi.org/10.7554/eLife.71931.sa0)\n\nWith the new additional data and descriptions, the paper in its current state is well organized and data presented add a new information on the role of C-type natriuretic peptide and how it facilitates autonomic Ca2+ entry in chondrocytes and modulates bone growth.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Fayez Safadi, https://ror.org/04q9qf557 Northeast Ohio Medical University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71931.sa1](https://doi.org/10.7554/eLife.71931.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"C-type natriuretic peptide facilitates autonomic ca2+ entry in growth plate chondrocytes for stimulating bone growth\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Fayez Safadi as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Nazir M Khan (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The authors needs to clarify the definition of \"round\" chondrocytes. Does this mean differentiating/hypertrophic chondrocytes. If this is the case, then I would replace the term\"round\" by differentiating or hypertrophic chondrocytes.\n\n2) It would be helpful in the authors include a definitive evidence on the state of the chondrocytes assessed in the study. On other word, please provide a staining or expression of markers for chondrocytes differentiated state, e.g. Sox-9, Collagen X, expression.\n\n3) Data presented on ex vivo bone growth would be strongly supported if histological images are provided (staining of H/E) to define at what stage of chondrocyte differentiation is pharmacological treatment alters chondrocytes differentiation and function.\n\n4) It would be very helpful in the authors corellate the role of C-type natriuretic peptide in endothelial cells and bone growth and how the role C-type natriuretic peptide might contribute to endochondral ossification.\n\n5) Does the role of C-type natriuretic peptide regulate intramembranous bone formation, i.e. does C-type natriuretic peptide regulate osteoblast differentiation/function at a similar fashion as chondrocytes. Please discuss this in the \"Discussion section\"\n\n6) How does Trpm7 modulate the CNP mediated bone growth? What effect Trpm7 have on on osteogenesis or osteoclastogenesis?\n",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0c4e325c-b436-45f5-b1b3-2e1c5bb6fb82",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C1",
+      "claim": "Growth plates are cartilage tissues found at both ends of developing bones.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth plates are cartilage tissues found at both ends of developing bones, and vital proliferation and differentiation of growth plate chondrocytes are primarily responsible for bone growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established anatomical knowledge about growth plate location and structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "ddd77c5f-b45e-4a58-a6ab-4b6213b5b929",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C2",
+      "claim": "Vital proliferation and differentiation of growth plate chondrocytes are primarily responsible for bone growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth plates are cartilage tissues found at both ends of developing bones, and vital proliferation and differentiation of growth plate chondrocytes are primarily responsible for bone growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the role of chondrocytes in bone development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "b30fdd52-f0cf-44c2-a30a-72af791ed9e2",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C3",
+      "claim": "CNP stimulates bone growth by activating NPR2.",
+      "claim_type": "EXPLICIT",
+      "source": "C-type natriuretic peptide (CNP) stimulates bone growth by activating natriuretic peptide receptor 2 (NPR2) which is equipped with guanylate cyclase on the cytoplasmic side, but its signaling pathway is unclear in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research cited in the manuscript and is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "785789c6-d016-4072-bd12-4521f5d117e2",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C4",
+      "claim": "NPR2 is equipped with guanylate cyclase on the cytoplasmic side.",
+      "claim_type": "EXPLICIT",
+      "source": "C-type natriuretic peptide (CNP) stimulates bone growth by activating natriuretic peptide receptor 2 (NPR2) which is equipped with guanylate cyclase on the cytoplasmic side, but its signaling pathway is unclear in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the structure and function of NPR2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "95f1ab62-d3b6-4829-a40d-105387f6606c",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C5",
+      "claim": "The signaling pathway of CNP in growth plate chondrocytes is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "C-type natriuretic peptide (CNP) stimulates bone growth by activating natriuretic peptide receptor 2 (NPR2) which is equipped with guanylate cyclase on the cytoplasmic side, but its signaling pathway is unclear in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "ed0bd4f0-9415-49c4-8735-d62422fcf49b",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C6",
+      "claim": "TRPM7 channels mediate intermissive Ca2+ influx in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that transient receptor potential melastatin-like 7 (TRPM7) channels mediate intermissive Ca2+ influx in growth plate chondrocytes, leading to activation of Ca2+/calmodulin-dependent protein kinase II (CaMKII) for promoting bone growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previous work by the authors (Qian et al., 2019) and is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "4a235912-a575-42a3-9a20-cc3f2cf58da1",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C7",
+      "claim": "TRPM7-mediated Ca2+ influx leads to activation of CaMKII for promoting bone growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that transient receptor potential melastatin-like 7 (TRPM7) channels mediate intermissive Ca2+ influx in growth plate chondrocytes, leading to activation of Ca2+/calmodulin-dependent protein kinase II (CaMKII) for promoting bone growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previous work by the authors and is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "283a3b61-bfd0-42d2-9bf2-cc9ee9436260",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C8",
+      "claim": "There is a functional link between CNP and TRPM7 channels in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this report, we provide evidence from experiments using mutant mice, indicating a functional link between CNP and TRPM7 channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from mutant mice presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "4961cad5-f5ea-4435-b5a7-c050a93d83af",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C9",
+      "claim": "CNP-evoked NPR2 activation elevates cellular cGMP content.",
+      "claim_type": "EXPLICIT",
+      "source": "Our pharmacological data suggest that CNP-evoked NPR2 activation elevates cellular cGMP content and stimulates big-conductance Ca2+-dependent K+ (BK) channels as a substrate for cGMP-dependent protein kinase (PKG).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pharmacological experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "c513a0de-3d45-4078-a707-4c2043eb5fd1",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C10",
+      "claim": "CNP-evoked NPR2 activation stimulates BK channels as a substrate for PKG.",
+      "claim_type": "EXPLICIT",
+      "source": "Our pharmacological data suggest that CNP-evoked NPR2 activation elevates cellular cGMP content and stimulates big-conductance Ca2+-dependent K+ (BK) channels as a substrate for cGMP-dependent protein kinase (PKG).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pharmacological experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "463b874b-a04c-4e9a-8af7-0a2c69fed2db",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C11",
+      "claim": "BK channel-induced hyperpolarization enhances the driving force of TRPM7-mediated Ca2+ entry.",
+      "claim_type": "EXPLICIT",
+      "source": "BK channel-induced hyperpolarization likely enhances the driving force of TRPM7-mediated Ca2+ entry and seems to accordingly activate CaMKII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on membrane potential and Ca2+ imaging.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "ad171cba-1888-408a-99ae-989d0113dac7",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C12",
+      "claim": "BK channel-induced hyperpolarization activates CaMKII.",
+      "claim_type": "EXPLICIT",
+      "source": "BK channel-induced hyperpolarization likely enhances the driving force of TRPM7-mediated Ca2+ entry and seems to accordingly activate CaMKII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing increased CaMKII phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "56a4e143-1425-431c-9267-a64dffd8ccdd",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C13",
+      "claim": "CNP-facilitated bone growth is abolished by chondrocyte-specific Trpm7 gene ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ex vivo organ culture analysis indicates that CNP-facilitated bone growth is abolished by chondrocyte-specific Trpm7 gene ablation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ex vivo organ culture experiments with Trpm7 knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "df01fdf4-810e-49f5-8bf1-3ff411bb0c9c",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C14",
+      "claim": "The CNP signaling pathway in growth plate chondrocytes is the NPR2-PKG-BK channel\u2013TRPM7 channel\u2013CaMKII axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The defined CNP signaling pathway, the NPR2-PKG-BK channel\u2013TRPM7 channel\u2013CaMKII axis, likely pinpoints promising target proteins for developing new therapeutic treatments for divergent growth disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion synthesized from all experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "b31fa410-afed-41d1-b4f9-67724cf89b72",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C15",
+      "claim": "Bone size largely depends on the proliferation of growth plate chondrocytes during endochondral development.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, bone size largely depends on the proliferation of growth plate chondrocytes during endochondral development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bone development cited from Berendsen and Olsen, 2015.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "c5a65f75-1a39-402b-9750-4f12849618b4",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C16",
+      "claim": "ANP, BNP, and CNP regulate diverse cellular functions by activating the receptor guanylate cyclases, NPR1 and NPR2.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, atrial (ANP), brain (BNP), and C-type (CNP) natriuretic peptides regulate diverse cellular functions by activating the receptor guanylate cyclases, NPR1 and NPR2 (Nakao et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from Nakao et al., 1996.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "351ac80a-b14e-46d8-80ce-3fa589697c97",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C17",
+      "claim": "CNP exclusively stimulates bone development by acting on growth plate chondrocytes expressing NPR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the natriuretic peptides, CNP exclusively stimulates bone development by acting on growth plate chondrocytes expressing the CNP-specific receptor NPR2 (Nakao et al., 1996; Wit and Camacho-H\u00fcbner, 2011; Peake et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "e09895e2-3df0-41de-89d8-8e09df838b6d",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C18",
+      "claim": "Loss-of-function mutations in the human NPR2 gene cause acromesomelic dysplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, loss- and gain-of-function mutations in the human NPR2 gene cause acromesomelic dysplasia and skeletal overgrowth disorder, respectively (Vasques et al., 2014; Wit et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "1b7161e7-c245-4f33-bd05-cfa407535c80",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C19",
+      "claim": "Gain-of-function mutations in the human NPR2 gene cause skeletal overgrowth disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, loss- and gain-of-function mutations in the human NPR2 gene cause acromesomelic dysplasia and skeletal overgrowth disorder, respectively (Vasques et al., 2014; Wit et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "4e1a89b5-a128-4661-a776-462f96391810",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C20",
+      "claim": "A phase III clinical trial of CNP therapy has been completed and approved for treatment of achondroplasia patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, translational studies have been probing the benefits of CNP treatments in various animal models with impaired skeletal growth, and a phase III clinical trial of CNP therapy has recently been completed and approved for treatment of achondroplasia patients primarily resulting from mutations in the FGFR3 gene (Savarirayan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about clinical trials supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "f15ba659-f8f5-4107-b88a-67eda235c8be",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C21",
+      "claim": "NPR2 guanylate cyclase controls chondrocytic cGMP content during growth plate development.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus likely that NPR2 guanylate cyclase controls chondrocytic cGMP content during growth plate development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the established function of NPR2 and its role in bone development.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "6c0968c1-7fac-4646-98bf-c2b4c5f2e297",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C22",
+      "claim": "PKG phosphorylates target proteins to facilitate growth plate chondrogenesis downstream of NPR2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream of NPR2 activation, cGMP-dependent protein kinase (PKG) seems to phosphorylate target proteins to facilitate growth plate chondrogenesis (Peake et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "15c0cbac-ba12-4e2f-bd2e-1cf4e05e3455",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C23",
+      "claim": "Activated PKG stimulates the biosynthesis of growth plate extracellular matrix by inhibiting the Raf\u2013MEK\u2013ERK cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "Activated PKG is postulated to stimulate the biosynthesis of growth plate extracellular matrix by playing an inhibitory role in the mitogen-activated protein kinase Raf\u2013MEK\u2013ERK cascade (Krejci et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from previous work supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "b2919ee5-3b9e-4f1d-8339-a424868072e7",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C24",
+      "claim": "GSK3\u03b2 is activated by PKG-mediated phosphorylation, leading to hypertrophic maturation of growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, glycogen synthase kinase 3\u03b2 (GSK3\u03b2) is likely activated by PKG-mediated phosphorylation, leading to the hypertrophic maturation of growth plate chondrocytes (Kawasaki et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "a3efa63f-725d-4763-a90f-cd4fc15c2ed5",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C25",
+      "claim": "TRPM7 forms a mono- and divalent cation-permeable channel in various cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "In the transient receptor potential channel superfamily, the melastatin subfamily member 7 (TRPM7) forms a mono- and divalent cation-permeable channel in various cell types and participates in important cellular processes including cell growth and adhesion (Fleig and Chubanov, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TRPM7 supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "7dba7b80-c855-4b12-9836-91366bedd820",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C26",
+      "claim": "TRPM7 participates in important cellular processes including cell growth and adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the transient receptor potential channel superfamily, the melastatin subfamily member 7 (TRPM7) forms a mono- and divalent cation-permeable channel in various cell types and participates in important cellular processes including cell growth and adhesion (Fleig and Chubanov, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TRPM7 supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "3e80a9f3-c0ff-402f-9bc4-1c2999068094",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C27",
+      "claim": "Growth plate chondrocytes generate autonomic intracellular Ca2+ fluctuations generated by the intermittent gating of TRPM7 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported that growth plate chondrocytes generate autonomic intracellular Ca2+ fluctuations, which are generated by the intermittent gating of TRPM7 channels, and also that TRPM7-mediated Ca2+ entry activates Ca2+/calmodulin-dependent protein kinase II (CaMKII), facilitating endochondral bone growth (Qian et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previous work by the authors supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "cdbb3be8-10c1-4de6-bdcd-93fa4bbd3159",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C28",
+      "claim": "TRPM7-mediated Ca2+ entry activates CaMKII, facilitating endochondral bone growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported that growth plate chondrocytes generate autonomic intracellular Ca2+ fluctuations, which are generated by the intermittent gating of TRPM7 channels, and also that TRPM7-mediated Ca2+ entry activates Ca2+/calmodulin-dependent protein kinase II (CaMKII), facilitating endochondral bone growth (Qian et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previous work by the authors supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "2293be6f-4b41-4278-957f-e633d01ef760",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C29",
+      "claim": "BK channels play a key role in the functional coupling between NPR2 and TRPM7 channels in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data obtained clearly indicate that big-conductance Ca2+-dependent K+ (BK) channels play a key role in the functional coupling between NPR2 and TRPM7 channels in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "2a12e190-9282-4639-a006-cdf6a57771e5",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C30",
+      "claim": "CNP pretreatments (30\u2013300 nM for 1 hr) dose-dependently facilitated spontaneous Ca2+ fluctuations in wild-type round chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In our Fura-2 imaging of round chondrocytes within femoral bone slices prepared from wild-type mice, CNP pretreatments (30\u2013300 nM for 1 hr) dose-dependently facilitated spontaneous Ca2+ fluctuations (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "8de1b6ba-ecea-4acf-923b-eadfc579123d",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C31",
+      "claim": "CNP treatments remarkably elevated fluctuation-positive cell ratio and fluctuation amplitude in round chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, fluctuation-positive cell ratio and fluctuation amplitude were remarkably elevated in response to the CNP treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "e6e16efa-9ac0-445e-83db-720e36111d39",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C32",
+      "claim": "ANP treatments exerted no effects on Ca2+ fluctuations in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ANP treatments exerted no effects on Ca2+ fluctuations in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "c9d80c8d-df77-4159-b600-7afe336fdb06",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C33",
+      "claim": "CNP treatments failed to enhance Ca2+ fluctuations in mutant round chondrocytes from chondrocyte-specific Npr2-knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the imaging observations in wild-type and control bone slices, CNP treatments failed to enhance Ca2+ fluctuations in the mutant round chondrocytes prepared from the chondrocyte-specific Npr2-knockout mice (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "93886772-55fc-4ffd-b1d8-24192e54f7c5",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C34",
+      "claim": "CNP facilitates spontaneous Ca2+ fluctuations downstream of NPR2 activation in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, CNP seems to facilitate spontaneous Ca2+ fluctuations downstream of NPR2 activation in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of wild-type and Npr2-knockout data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "3e6edb82-b791-4647-bbc4-c2c83809d41f",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C35",
+      "claim": "The floxed Npr2 gene was largely inactivated in the growth plates from E17.5 chondrocyte-specific Npr2-knockout embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RT-PCR analysis indicated that the floxed Npr2 gene was largely inactivated in the growth plates prepared from the E17.5 mutant embryos, but such recombination events were not detected in other tissues examined (Figure 1\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "b7532098-fa39-4da9-b631-80ab33e64ec6",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C36",
+      "claim": "Npr2 mRNA contents in mutant growth plates were reduced to less than 40% of controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, Npr2 mRNA contents in the mutant growth plates were reduced to less than 40% of controls (Figure 1\u2014figure supplement 1C), despite the growth plate preparations contain not only chondrocytes but also perichondrium-resident cells including undifferentiated mesenchymal cells and immature chondroblasts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by RT-PCR data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "614e0451-67e8-4e48-8a75-d2625f1f41e8",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C37",
+      "claim": "Npr2 deficiency does not affect fundamental chondrogenesis in growth plates.",
+      "claim_type": "EXPLICIT",
+      "source": "Further RT-PCR analysis detected similar expression of representative chondrogenic marker genes between chondrocyte-specific Npr2-knockout and control bones, suggesting that the Npr2 deficiency does not affect fundamental chondrogenesis in growth plates (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data comparing marker gene expression shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "b6e9c17b-e69f-4ff6-a033-9cd7b6b85417",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C38",
+      "claim": "8-pCPT-cGMP pretreatment (100 \u03bcM for 1 hr) remarkably facilitated spontaneous Ca2+ fluctuations in wild-type growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type growth plate chondrocytes pretreated with 8-pCPT-cGMP (100 \u03bcM for 1 hr), spontaneous Ca2+ fluctuations were remarkably facilitated (Figure 2A); both fluctuation-positive cell rate and fluctuation amplitude were highly increased.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "b27a4920-6aae-4546-bc61-02ea2509cfb3",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C39",
+      "claim": "Bath application of KT5823 (2 \u03bcM) clearly attenuated CNP-facilitated Ca2+ fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the bath application of KT5823 (2 \u03bcM) clearly attenuated CNP-facilitated Ca2+ fluctuations within a short time frame (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "e5f6dc2b-e88a-48ab-a187-31a1794d9924",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C40",
+      "claim": "PKG activation is essential for CNP-facilitated Ca2+ fluctuations in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, PKG activation seems to be essential for CNP-facilitated Ca2+ fluctuations in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pharmacological experiments with PKG activator and inhibitor.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "8e0ac013-f76c-4f29-8e03-9722f07cb81e",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C41",
+      "claim": "Paxilline (10 \u03bcM) exerted no obvious effects on basal Ca2+ fluctuations in nontreated chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The BK channel inhibitor paxilline (10 \u03bcM) exerted no obvious effects on basal Ca2+ fluctuations in nontreated chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "3b1a93ee-3238-4326-b7fb-859e7600c91c",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C42",
+      "claim": "Paxilline remarkably inhibited CNP-facilitated Ca2+ fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same paxilline treatments remarkably inhibited CNP-facilitated Ca2+ fluctuations (Figure 3A); both fluctuation-positive cell ratio and fluctuation amplitude were clearly decreased after paxilline application.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "31fe58f4-4e6c-475c-a5ec-8a8242df92e1",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C43",
+      "claim": "NS1619 (30 \u03bcM) stimulated basal Ca2+ fluctuations in growth plate chondrocytes from control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the BK channel activator NS1619 (30 \u03bcM) stimulated basal Ca2+ fluctuations in the growth plate chondrocytes prepared from control mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "e7f06643-99bd-455c-93af-12c468be8fa4",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C44",
+      "claim": "NS1619-induced effects on Ca2+ fluctuations were preserved in mutant chondrocytes from chondrocyte-specific Npr2-knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The NS1619-induced effects were preserved in the mutant chondrocytes prepared from chondrocyte-specific Npr2-knockout mice (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "08ea1de0-c5ec-4e88-bdcc-f05870f8efc2",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C45",
+      "claim": "BK channel activation is involved in CNP-facilitated Ca2+ fluctuations in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, BK channel activation is likely involved in CNP-facilitated Ca2+ fluctuations in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pharmacological experiments with BK channel modulators.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "b60ff4fb-4ecd-43a2-8896-b5307bb5ca38",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C46",
+      "claim": "U73122 (10 \u03bcM) remarkably inhibited basal Ca2+ fluctuations in nontreated chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The PLC inhibitor U73122 (10 \u03bcM) remarkably inhibited basal Ca2+ fluctuations in nontreated chondrocytes: the fluctuation-positive cell ratio and fluctuation amplitude reduced less than half in response to U73122 application (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "3d6100ce-f4a4-4bdc-8101-b69fcfe0e0d4",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C47",
+      "claim": "U73122 was effective for CNP-facilitated Ca2+ fluctuations, but the inhibitory efficiency was relatively weak compared to basal fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "U73122 was also effective for CNP-facilitated Ca2+ fluctuations, but the inhibitory efficiency seemed relatively weak compared to those on basal fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "1f66fef1-e77a-4842-a91f-9a7757041d23",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C48",
+      "claim": "PLC activation does not accompany CNP-facilitated Ca2+ fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the different inhibitory effects, it is rather unlikely that PLC activation accompanies CNP-facilitated Ca2+ fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of U73122 on basal vs CNP-facilitated fluctuations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "54cae72d-c2de-40b5-8c30-4ecc582db672",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C49",
+      "claim": "CNP- and vehicle-pretreated chondrocytes exhibited similar LPA-induced Ca2+ release responses.",
+      "claim_type": "EXPLICIT",
+      "source": "CNP- and vehicle-pretreated chondrocytes exhibited similar LPA-induced Ca2+ release and thapsigargin-induced Ca2+ leak responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "41af5d2d-2c68-414a-83a2-1737b25d7b25",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C50",
+      "claim": "CNP treatments are ineffective for store Ca2+ pumps in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, CNP treatments seem ineffective for store Ca2+ pumps in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similar Ca2+ store responses in CNP- and vehicle-treated cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "2ba349d9-a46a-4e80-a2f4-3f299ce25aa6",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C51",
+      "claim": "CNP does not affect basal PLC activity in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the dose dependency of Ca2+ release by LPA (1\u201310 \u03bcM) was not altered between CNP- and vehicle-pretreated chondrocytes, implying that CNP does not affect basal PLC activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similar dose-response curves for LPA-induced Ca2+ release.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "171e9b08-93f8-41b1-b106-1591178cd8cd",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C52",
+      "claim": "Paxilline treatments diminished CNP-facilitated Ca2+ fluctuations down to nontreated basal levels.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the paxilline treatments diminished CNP-facilitated Ca2+ fluctuations down to nontreated basal levels (Figure 3A), suggesting that activated BK channels predominantly contribute to CNP-facilitated Ca2+ fluctuations in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "693ba8ee-25cc-43f1-bc64-c376b0e4a105",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C53",
+      "claim": "Activated BK channels predominantly contribute to CNP-facilitated Ca2+ fluctuations in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the paxilline treatments diminished CNP-facilitated Ca2+ fluctuations down to nontreated basal levels (Figure 3A), suggesting that activated BK channels predominantly contribute to CNP-facilitated Ca2+ fluctuations in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the complete reversal of CNP effects by paxilline.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "e0da1ca6-368b-4a3f-b9a7-dc42d6fed340",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C54",
+      "claim": "The fractional intensity of CNP-pretreated cells was significantly lower than that of nontreated cells in normal bath solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The fractional intensity of CNP-pretreated cells was significantly lower than that of nontreated cells in a normal bath solution (Figure 4A, middle graph), although both cells exhibited similar intensity shifts in high K+ bath solutions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by oxonol VI imaging data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "c50a432c-594b-4636-89a4-7bfd71d6ecb4",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C55",
+      "claim": "Resting potentials of \u221246.4 \u00b1 0.2 and \u221243.6 \u00b1 0.3 mV were estimated in CNP- and nontreated cells, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the tentative linear correlation, resting potentials of \u221246.4 \u00b1 0.2 and \u221243.6 \u00b1 0.3 mV were estimated in CNP- and nontreated cells, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the calibration plot based on oxonol VI imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "4f9cb30e-c3ec-470c-9e15-c25cb9bc5138",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C56",
+      "claim": "Paxilline elevated fractional intensities to the same levels in CNP- and nontreated chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In pharmacological assessments, paxilline elevated fractional intensities to the same levels in CNP- and nontreated chondrocytes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by oxonol VI imaging data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "60446653-197a-4ceb-b8dd-a201603117d0",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C57",
+      "claim": "NS1619 decreased fractional intensities to the same levels in CNP- and nontreated cells under 20 mM KCl bathing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, NS1619 decreased fractional intensities to the same levels in both cells under 20 mM KCl bathing conditions, which enabled us to reliably evaluate the reducing intensity shifts (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by oxonol VI imaging data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "41c998c7-9c99-4fbe-9f3e-cb042753c321",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C60",
+      "claim": "Bath application of FTY720 (10 \u03bcM) clearly diminished CNP-facilitated Ca2+ fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "As reasonably expected, bath application of FTY720 (10 \u03bcM) clearly diminished CNP-facilitated Ca2+ fluctuations (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "62052c3d-ef5d-4922-8b89-652a03a7a554",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C61",
+      "claim": "NNC550396 (30 \u03bcM) remarkably facilitated Ca2+ fluctuations in nontreated chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, NNC550396 (30 \u03bcM) remarkably facilitated Ca2+ fluctuations in nontreated chondrocytes, and this facilitation was preserved in the mutant chondrocytes prepared from chondrocyte-specific Npr2-knockout mice (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "5a89e647-f82d-44fb-abbe-c9341546d95b",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C62",
+      "claim": "NNC550396-induced facilitation of Ca2+ fluctuations was preserved in mutant chondrocytes from chondrocyte-specific Npr2-knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, NNC550396 (30 \u03bcM) remarkably facilitated Ca2+ fluctuations in nontreated chondrocytes, and this facilitation was preserved in the mutant chondrocytes prepared from chondrocyte-specific Npr2-knockout mice (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "41aee607-5717-4220-8401-193f59fbd1ce",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C63",
+      "claim": "CNP treatments likely facilitate TRPM7-mediated Ca2+ influx in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, CNP treatments likely facilitate TRPM7-mediated Ca2+ influx in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pharmacological experiments with TRPM7 modulators.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "5f58244e-71a1-4aa3-b2f9-10f46a45283f",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C64",
+      "claim": "CNP-pretreated growth plate chondrocytes were more decorated with antibody against phospho-CaMKII than nontreated control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In immunocytochemical analysis, CNP-pretreated growth plate chondrocytes were more decorated with the antibody against phospho-CaMKII than nontreated control cells (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by immunocytochemical data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "ea1bc00d-af01-478b-9499-ab905e153b12",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C65",
+      "claim": "CNP-facilitated decoration with phospho-CaMKII antibody was abolished by cotreatment with KN93 (30 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "This CNP-facilitated decoration was abolished by the cotreatment of the CaMKII inhibitor KN93 (30 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the immunocytochemical data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "aab834ea-eca4-4b4c-9863-a9c2b73b1004",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C66",
+      "claim": "CNP treatments increased the phospho-CaMKII population without affecting total CaMKII content in growth plate cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was further confirmed by Western blot analysis; CNP treatments increased the phospho-CaMKII population without affecting total CaMKII content in the cell lysates prepared from growth plates (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by Western blot data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "b95cf4a3-05e7-420c-8bb7-323ed4bff24d",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C67",
+      "claim": "CaMKII is activated downstream of enhanced TRPM7-mediated Ca2+ entry in CNP-treated growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, CaMKII is likely activated downstream of enhanced TRPM7-mediated Ca2+ entry in CNP-treated growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the increased phospho-CaMKII in CNP-treated cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "034de709-e187-45a8-a9ee-d632ce8c525b",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C68",
+      "claim": "CNP treatments expanded columnar chondrocytic zones without affecting cell densities to extend cultured wild-type metatarsal bones.",
+      "claim_type": "EXPLICIT",
+      "source": "CNP treatments expanded columnar chondrocytic zones without affecting cell densities to extend cultured wild-type metatarsal bones (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by metatarsal culture data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "b44334b0-21f4-41d7-9348-6ce792688450",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C69",
+      "claim": "CNP-induced bone extension was mainly caused by enlarged extracellular matrix area.",
+      "claim_type": "EXPLICIT",
+      "source": "The extension seemed to be mainly caused by enlarged extracellular matrix area, although CNP significantly dilated columnar cell sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the histological analysis shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "eef31e60-cb5a-40f5-a26c-02cb8340f00d",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C70",
+      "claim": "Bone rudiments from control embryos regularly elongated during ex vivo culture.",
+      "claim_type": "EXPLICIT",
+      "source": "The bone rudiments prepared from control embryos (Trpm7fl/fl, Col11a2-Cre\u2212/\u2212) regularly elongated during ex vivo culture, and their outgrowth was significantly stimulated by the supplementation with CNP (30 nM) into the culture medium (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by metatarsal culture data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "c297867d-5273-4e04-8189-9fa28dd560ac",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C71",
+      "claim": "CNP supplementation (30 nM) significantly stimulated outgrowth of control bone rudiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The bone rudiments prepared from control embryos (Trpm7fl/fl, Col11a2-Cre\u2212/\u2212) regularly elongated during ex vivo culture, and their outgrowth was significantly stimulated by the supplementation with CNP (30 nM) into the culture medium (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by metatarsal culture data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "4ce80a47-9002-4b9a-9e05-85124cfa33e1",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C72",
+      "claim": "CNP treatment extended the columnar chondrocyte zone in control bone rudiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The histological observation of the growth plate regions demonstrated that the CNP treatment extended the columnar chondrocyte zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the histological data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "8c67aaf1-2b6b-4cd6-9c71-732cc45a8099",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C73",
+      "claim": "Mutant rudiments from chondrocyte-specific Trpm7-knockout embryos were reduced in initial size.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the mutant rudiments prepared from the chondrocyte-specific Trpm7-knockout embryos were reduced in initial size and did not respond to the CNP supplementation (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by metatarsal culture data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "ffa7a842-b8a2-4059-8fb9-9e75214ef73a",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C74",
+      "claim": "Mutant rudiments from chondrocyte-specific Trpm7-knockout embryos did not respond to CNP supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the mutant rudiments prepared from the chondrocyte-specific Trpm7-knockout embryos were reduced in initial size and did not respond to the CNP supplementation (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by metatarsal culture data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "fd37544b-9f42-45cf-82d6-d5539394fd9f",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C75",
+      "claim": "CNP-facilitated bone outgrowth requires TRPM7 channels expressed in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, CNP-facilitated bone outgrowth seems to require TRPM7 channels expressed in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of CNP response in Trpm7-knockout bones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "903467d9-7572-4dc6-9dc2-bab0362b0179",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C76",
+      "claim": "NS1619 supplementation (30 \u03bcM) significantly stimulated the outgrowth of wild-type bone rudiments.",
+      "claim_type": "EXPLICIT",
+      "source": "NS1619 supplementation (30 \u03bcM) significantly stimulated the outgrowth of wild-type bone rudiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by metatarsal culture data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "fe54e752-fa99-4a2c-9558-7a3ce1c7fca5",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C77",
+      "claim": "No stimulation by NS1619 was detected in mutant rudiments from chondrocyte-specific Trpm7-deficient embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, under the same culture conditions, no stimulation was detected in the mutant rudiments from the chondrocyte-specific Trpm7-deficient embryos (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by metatarsal culture data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "2802835e-b14b-43ff-a790-325119144806",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C78",
+      "claim": "CNP activates BK channels and thus facilitates TRPM7-mediated Ca2+ influx in growth plate chondrocytes for stimulating bone outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "The observations seem to support our conclusion that CNP activates BK channels and thus facilitates TRPM7-mediated Ca2+ influx in growth plate chondrocytes for stimulating bone outgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion synthesized from all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "c4e7530d-8ead-486b-b704-2763d86fe4da",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C79",
+      "claim": "PLC and BK channels maintain autonomic TRPM7-mediated Ca2+ fluctuations in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We reported that in growth plate chondrocytes, PLC and BK channels maintain autonomic TRPM7-mediated Ca2+ fluctuations, which potentiate chondrogenesis and bone growth by activating CaMKII (Qian et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previous work by the authors supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "ddd0c1f4-d4cd-4d9e-84b7-c31aa881c3f5",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C80",
+      "claim": "TRPM7-mediated Ca2+ fluctuations potentiate chondrogenesis and bone growth by activating CaMKII.",
+      "claim_type": "EXPLICIT",
+      "source": "We reported that in growth plate chondrocytes, PLC and BK channels maintain autonomic TRPM7-mediated Ca2+ fluctuations, which potentiate chondrogenesis and bone growth by activating CaMKII (Qian et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previous work by the authors supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "3ef4653e-637e-4edb-a021-0b229e471604",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C81",
+      "claim": "CaMKII activity is physiologically regulated by BK channels as a key player of the CNP signaling cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is likely that CaMKII activity is physiologically regulated by BK channels as a key player of the CNP signaling cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the complete signaling pathway elucidated in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "e1e0e391-bb0b-469c-921f-cd19ea128a5e",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C82",
+      "claim": "Several patients carrying loss-of-function mutations in the KCNMA1 gene are characterized by a novel syndromic growth deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent genetic study, several patients carrying loss-of-function mutations in the KCNMA1 gene encoding BK channel \u03b1 subunit were characterized by a novel syndromic growth deficiency associated with severe developmental delay, cardiac malformation, bone dysplasia, and dysmorphic features (Liang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information from a cited genetic study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "9e0c8cdc-2fba-40e7-8dbe-0e5ddace7a95",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C83",
+      "claim": "In KCNMA1-mutated disorder, CNP signaling likely fails to facilitate TRPM7-mediated Ca2+ fluctuations in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the KCNMA1-mutated disorder, CNP signaling likely fails to facilitate TRPM7-mediated Ca2+ fluctuations in growth plate chondrocytes and resulting insufficient Ca2+ entry may lead to systemic bone dysplasia associated with stunted growth plate cartilage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the signaling pathway elucidated in the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "1d03061a-33a5-4968-9cc6-2ef86c15470d",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C84",
+      "claim": "Insufficient Ca2+ entry may lead to systemic bone dysplasia associated with stunted growth plate cartilage in KCNMA1-mutated disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "In the KCNMA1-mutated disorder, CNP signaling likely fails to facilitate TRPM7-mediated Ca2+ fluctuations in growth plate chondrocytes and resulting insufficient Ca2+ entry may lead to systemic bone dysplasia associated with stunted growth plate cartilage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the signaling pathway elucidated in the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "b28abd21-3070-4794-872f-95f44d22b694",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C85",
+      "claim": "Transgenic mice overexpressing CNP in a chondrocyte-specific manner develop a prominent skeletal overgrowth phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic mice overexpressing CNP in a chondrocyte-specific manner develop a prominent skeletal overgrowth phenotype, suggesting autocrine CNP signaling in developing bones (Yasoda et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information from a cited study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "0289827e-0dfc-4e3b-9279-06606548ce30",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C86",
+      "claim": "Prepro-CNP mRNA is abundantly expressed in the placenta among embryonic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several genechip data in public databases indicate that prepro-CNP mRNA is abundantly expressed in the placenta among embryonic tissues (e.g., see the records under accession number GSE28277 in NCBI database).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information from public gene expression databases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "1941964f-bc82-4ed0-b313-76ca0e42ab5b",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C87",
+      "claim": "CNP expanded the columnar chondrocyte zone by stimulating cell growth and enlarging the extracellular matrix area toward bone extension.",
+      "claim_type": "EXPLICIT",
+      "source": "Our obeservations in cultured metatarsal bones suggest that CNP expanded the columnar chondrocyte zone by stimulating the cell growth and enlarging the extracellular matrix area toward bone extension (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the histological analysis of cultured bones shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "aad3ef8e-9388-4091-b81d-49c1a6772396",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C88",
+      "claim": "Activated CaMKII by TRPM7-mediated Ca2+ influx probably phosphorylates key proteins controlling cell growth and extracellular matrix production in columnar chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, activated CaMKII by TRPM7-mediated Ca2+ influx probably phosphorylates key proteins controlling cell growth and extracellular matrix production in columner chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observed effects of CNP on bone growth.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "30d1284b-26f4-4551-b8b0-ea47e788a41c",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C89",
+      "claim": "The proposed CNP signaling axis has clear overlap with the NO and ANP/BNP signaling cascades for vascular relaxation.",
+      "claim_type": "EXPLICIT",
+      "source": "From a physiological point of view, it is interesting to note that the proposed CNP signaling axis has clear overlap with the nitric oxide (NO) and ANP/BNP signaling cascades for vascular relaxation (Martel et al., 2010; Zois et al., 2014; Kubacka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with established signaling pathways supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "3f2769ff-603e-410b-a61b-b2da1bd0421d",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C90",
+      "claim": "In blood vessels, NO is produced by endothelial cells in response to various stimuli including shear stress and acetylcholine.",
+      "claim_type": "EXPLICIT",
+      "source": "In blood vessels, NO is produced by endothelial cells in response to various stimuli including shear stress and acetylcholine, and activates soluble guanylate cyclase in neighboring vascular smooth muscle cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vascular physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "124dedc1-15a7-4d86-af2a-ce0125998e7f",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C91",
+      "claim": "ANP and BNP are released from the heart in response to pathological stresses such as atrial distension and pressure overload.",
+      "claim_type": "EXPLICIT",
+      "source": "ANP and BNP are released from the heart in response to pathological stresses, such as atrial distension and pressure overload, and are delivered to activate the receptor guanylate cyclase NPR1 in vascular muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cardiac natriuretic peptides.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "f1fcf3d8-e007-4226-8dd8-c25a4394bf09",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C92",
+      "claim": "In vascular muscle, cGMP elevation followed by PKG activation induces BK channel-mediated hyperpolarization and inhibits L-type Ca2+ channel gating, leading to vascular dilation.",
+      "claim_type": "EXPLICIT",
+      "source": "In either case, the resulting cGMP elevation followed by PKG activation induces BK channel-mediated hyperpolarization and thus inhibits L-type Ca2+ channel gating, leading to vascular dilation due to decreased Ca2+ entry into vascular muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vascular smooth muscle physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "be13b72c-79a3-4ad2-95c6-a8e7cadf8761",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C93",
+      "claim": "Activated BK channels inhibit voltage-dependent Ca2+ influx in vascular muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, activated BK channels inhibit the voltage-dependent Ca2+ influx in vascular muscle cells regarded as excitable cells (Figure 7\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about excitable cell physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "0c13ac69-29fa-43a2-8669-662c8846bbca",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C94",
+      "claim": "Activated BK channels stimulate TRPM7-mediated Ca2+ entry in growth plate chondrocytes classified as nonexcitable cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, activated BK channels reversely stimulate TRPM7-mediated Ca2+ entry in growth plate chondrocytes classified as nonexcitable cells, because the channel activity is voltage independently maintained by the intrinsic PI turnover rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the key mechanistic insight from the study, contrasting with vascular muscle.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "e1069bec-5405-4080-8ef6-b513a5736e9d",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C95",
+      "claim": "TRPM7 channel activity is voltage independently maintained by the intrinsic PI turnover rate in growth plate chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, activated BK channels reversely stimulate TRPM7-mediated Ca2+ entry in growth plate chondrocytes classified as nonexcitable cells, because the channel activity is voltage independently maintained by the intrinsic PI turnover rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and previous knowledge about TRPM7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "54e3caf0-37cf-4ee9-8604-7b8f22d4d6d8",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C96",
+      "claim": "CNP is an effective therapeutic reagent for achondroplasia and divergent short statures.",
+      "claim_type": "EXPLICIT",
+      "source": "CNP is an effective therapeutic reagent for achondroplasia and divergent short statures (Yasoda et al., 2004; Ueda et al., 2016; Yamashita et al., 2020), and the phase III clinical trial of CNP therapy is completed successfully (Nakao et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about clinical applications supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "60a53fe2-b2d5-4041-ab70-a3bc3e6bac82",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C97",
+      "claim": "BK and TRPM7 channels are promising pharmaceutical targets for developing medications for growth disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "The proteins contributing to the CNP signaling axis may be new pharmaceutical targets for developing medications; in addition to NPR2, BK, and TRPM7 channels are reasonably considered promising targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential therapeutic applications based on the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "08270add-796d-48d7-b780-e6d08e24da99",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C98",
+      "claim": "Phosphodiesterase subtypes might be useful targets for growth disorder medications.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, phosphodiesterase subtypes might be useful targets, although the subtypes responsible for cGMP hydrolysis remain to be identified in growth plate chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential therapeutic targets.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "6f66abc0-a6a9-4131-b028-71e12f50a0ea",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "claim_id": "C99",
+      "claim": "Chemical compounds specifically targeting the CNP signaling axis would be useful drugs for clinical treatment of developmental disorders and artificially modifying body sizes in farm and pet animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical compounds specifically targeting the signaling axis defined in this study would be useful drugs for not only clinical treatment of developmental disorders but also artificially modifying body sizes in farm and pet animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications of the research findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9ecd21af-2b27-4997-8ea9-68b9777cef17",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CNP dose-dependently facilitates spontaneous Ca2+ fluctuations in wild-type growth plate chondrocytes through NPR2 activation. CNP pretreatment (30-300 nM) increased fluctuation-positive cell ratio and amplitude in wild-type chondrocytes, while ANP had no effect. This CNP effect was abolished in chondrocyte-specific Npr2-knockout mice, where Npr2 mRNA was reduced to <40% of controls without affecting fundamental chondrogenesis markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C37 provide converging evidence from dose-response experiments (C30-C31), negative control with ANP (C32), genetic knockout validation (C33-C36), and marker gene analysis (C37). The data demonstrate specificity through both pharmacological and genetic approaches, with appropriate controls and molecular characterization of the knockout model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "3dbb071e-1e98-426c-a31f-bbe0db0b1406",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PKG activation is essential for CNP-facilitated Ca2+ fluctuations in growth plate chondrocytes. The PKG activator 8-pCPT-cGMP (100 \u03bcM) mimicked CNP effects by facilitating Ca2+ fluctuations, while the PKG inhibitor KT5823 (2 \u03bcM) rapidly attenuated CNP-facilitated fluctuations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 demonstrate PKG involvement through complementary gain-of-function (C38) and loss-of-function (C39) pharmacological experiments. The bidirectional manipulation provides strong evidence for PKG as a necessary intermediate in the CNP signaling pathway, though direct measurement of PKG activity or cGMP levels would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "fb85405f-fa12-4170-929b-19ed1047623d",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "BK channel activation is involved in CNP-facilitated Ca2+ fluctuations and predominantly contributes to the CNP effect. The BK channel inhibitor paxilline (10 \u03bcM) had no effect on basal fluctuations but completely reversed CNP-facilitated fluctuations to basal levels. The BK channel activator NS1619 (30 \u03bcM) stimulated fluctuations in both control and Npr2-knockout chondrocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45, C52-C53 provide strong pharmacological evidence for BK channel involvement. The key observation that paxilline reduces CNP-facilitated fluctuations to basal levels (C52) indicates BK channels are the predominant mediator. The preservation of NS1619 effects in Npr2-knockout cells (C44) demonstrates BK channels act downstream of NPR2, supporting the proposed signaling hierarchy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "f6c99fbd-2ad8-4c89-9b49-9e418c484d32",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PLC activation does not accompany CNP-facilitated Ca2+ fluctuations, and CNP does not affect Ca2+ store pumps or basal PLC activity. The PLC inhibitor U73122 (10 \u03bcM) strongly inhibited basal fluctuations but had weaker effects on CNP-facilitated fluctuations. CNP and vehicle pretreatments produced similar LPA-induced Ca2+ release and thapsigargin-induced Ca2+ leak responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 systematically exclude alternative mechanisms. The differential sensitivity to U73122 (C46-C47) and similar Ca2+ store responses (C49-C51) argue against PLC or SERCA involvement in CNP signaling. This negative data is important for establishing the specificity of the BK channel pathway, though the inference in C48 relies on indirect evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "a14a4d13-ca4f-4caa-88ca-35a0dd44cc1b",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CNP induces BK channel-mediated hyperpolarization in growth plate chondrocytes. Oxonol VI imaging showed CNP-pretreated cells had significantly lower fractional intensity (more negative membrane potential) than controls, with estimated resting potentials of -46.4 \u00b1 0.2 mV vs -43.6 \u00b1 0.3 mV. Paxilline eliminated this difference, while NS1619 produced similar hyperpolarization in both CNP- and vehicle-treated cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 provide direct evidence for CNP-induced hyperpolarization using voltage-sensitive dye imaging. The pharmacological manipulations with paxilline (C56) and NS1619 (C57) confirm BK channel involvement. However, the membrane potential estimates (C55) rely on a linear calibration that may not be accurate across the full voltage range, and the ~3 mV difference is modest though statistically significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "889980bb-27ce-4937-b79a-8e6e0d6e2d23",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CNP treatments facilitate TRPM7-mediated Ca2+ influx in growth plate chondrocytes. The TRPM7 inhibitor FTY720 (10 \u03bcM) diminished CNP-facilitated fluctuations, while the TRPM7 activator NNC550396 (30 \u03bcM) facilitated fluctuations in both control and Npr2-knockout chondrocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 demonstrate TRPM7 involvement through pharmacological manipulation. The preservation of NNC550396 effects in Npr2-knockout cells (C62) indicates TRPM7 acts downstream of NPR2. However, the specificity of these pharmacological tools for TRPM7 is a potential concern, and the conclusion (C63) would be strengthened by genetic validation with Trpm7 knockout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "553ad49e-8a70-4084-a90e-4d68f5071ca2",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CaMKII is activated downstream of enhanced TRPM7-mediated Ca2+ entry in CNP-treated growth plate chondrocytes. CNP-pretreated chondrocytes showed increased phospho-CaMKII immunoreactivity compared to controls, which was abolished by the CaMKII inhibitor KN93 (30 \u03bcM). Western blot confirmed increased phospho-CaMKII without changes in total CaMKII.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 provide both immunocytochemical (C64-C65) and biochemical (C66) evidence for CaMKII activation. The KN93 control (C65) confirms specificity of the phospho-CaMKII signal. The data support CaMKII as a downstream effector, though the causal link to TRPM7 (C67) is inferred rather than directly demonstrated in this result set.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "c4a76d29-6fde-4eeb-bb21-027976cf3dfe",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CNP-facilitated bone outgrowth requires TRPM7 channels expressed in growth plate chondrocytes. CNP (30 nM) significantly stimulated outgrowth of control metatarsal bones and extended the columnar chondrocyte zone, primarily through enlarged extracellular matrix area. However, Trpm7-knockout bone rudiments showed reduced initial size and did not respond to CNP supplementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C75 provide critical functional validation using ex vivo organ culture. The genetic requirement for TRPM7 (C73-C75) strongly supports the proposed signaling pathway. The histological analysis (C68-C69, C72) provides mechanistic insight into how CNP promotes bone growth. This is the key experiment linking the cellular signaling pathway to the physiological outcome.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "3fc25215-8b56-4d1e-a5d4-01670e14c8b0",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pharmacological BK channel activation stimulates bone outgrowth in a TRPM7-dependent manner. NS1619 (30 \u03bcM) significantly stimulated outgrowth of wild-type bone rudiments but had no effect on Trpm7-deficient rudiments, supporting the conclusion that CNP activates BK channels to facilitate TRPM7-mediated Ca2+ influx for bone outgrowth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 provide elegant functional validation of the proposed signaling pathway. The genetic requirement for TRPM7 in NS1619-stimulated growth (C77) demonstrates that BK channels act upstream of TRPM7, consistent with the hyperpolarization mechanism. This experiment directly tests the proposed pathway at the functional level.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "ce0ad942-dc3c-4316-9946-5aeeabfda571",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study defines a novel CNP signaling pathway in growth plate chondrocytes: the NPR2-PKG-BK channel\u2013TRPM7 channel\u2013CaMKII axis. CNP-evoked NPR2 activation elevates cGMP and stimulates BK channels via PKG. BK channel-induced hyperpolarization enhances the driving force for TRPM7-mediated Ca2+ entry, activating CaMKII. This pathway functionally links CNP to TRPM7 channels and is essential for CNP-facilitated bone growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C14, C29, C81 represent the main conclusions synthesized from all experimental data. The pathway is supported by: (1) pharmacological evidence for each component, (2) genetic validation with Npr2 and Trpm7 knockouts, (3) electrophysiological evidence for hyperpolarization, (4) biochemical evidence for CaMKII activation, and (5) functional validation in bone culture. The evidence is comprehensive and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "a07711e1-590d-4c97-b83a-94dfe03b1644",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that in KCNMA1-mutated disorder (loss-of-function mutations in BK channel \u03b1 subunit), CNP signaling likely fails to facilitate TRPM7-mediated Ca2+ fluctuations, potentially leading to bone dysplasia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C84 present a hypothesis connecting the defined pathway to human disease. While C82 accurately cites clinical findings, C83-C84 are speculative extrapolations not tested in this study. The hypothesis is plausible given the defined pathway, but requires experimental validation in KCNMA1-mutant models or patient cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "f5d45578-f74e-444e-af15-f62fe538c0cf",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors discuss the cellular source of CNP and mechanisms of CaMKII action. While transgenic CNP overexpression causes skeletal overgrowth, prepro-CNP mRNA is abundantly expressed in placenta. CNP appears to expand the columnar chondrocyte zone by stimulating cell growth and extracellular matrix production, likely through CaMKII phosphorylation of key proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C88 address important mechanistic questions but provide limited new data. C85-C86 cite existing literature and databases without resolving the CNP source question. C87 is supported by histological data, but C88 is speculative about CaMKII substrates. These represent important future directions rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "5c57977f-3351-4371-8a21-666731685fd9",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The CNP signaling axis in growth plate chondrocytes has clear overlap with NO and ANP/BNP signaling in vascular smooth muscle, but with opposite effects on Ca2+ entry. In vascular muscle (excitable cells), BK channel activation inhibits voltage-dependent Ca2+ influx. In growth plate chondrocytes (nonexcitable cells), BK channels stimulate TRPM7-mediated Ca2+ entry because TRPM7 activity is voltage-independently maintained by intrinsic PI turnover.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C95 provide important physiological context by comparing the chondrocyte pathway to established vascular signaling. The comparison is well-supported by literature (C90-C93) and highlights a key mechanistic insight: the same signaling components produce opposite outcomes depending on cell excitability and Ca2+ channel types. This strengthens the novelty and significance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "b9287a40-202f-4e72-92f4-35610dbdfea5",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that proteins in the defined CNP signaling axis (NPR2, BK channels, TRPM7 channels, phosphodiesterases) represent promising pharmaceutical targets for developing new treatments for growth disorders and potentially for modifying body size in farm and pet animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C99 discuss translational implications. While C96 accurately cites clinical trial success, C97-C99 are speculative about future drug development. The proposed targets are reasonable based on the defined pathway, but no drug development or preclinical validation is presented. These represent potential applications rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "fe70e694-bf12-4982-ae7b-2212eed96fbc",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about growth plate biology, natriuretic peptide signaling, and CNP's role in bone development. Growth plate chondrocyte proliferation drives bone growth. CNP stimulates bone development through NPR2, which activates PKG via cGMP elevation. Mutations in NPR2 cause skeletal disorders, and CNP therapy has been approved for achondroplasia treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C24 summarize established knowledge from the literature with appropriate citations. These provide essential context for the study but do not represent new findings. The claims accurately represent prior work and identify the knowledge gap (C5) that the study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    },
+    {
+      "id": "40f538b0-646c-4224-9337-4e5cfdad5bb5",
+      "content_id": "15ae4ad2-f36b-427d-bf91-f67333365acf",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors' previous work established that TRPM7 channels mediate intermittent Ca2+ influx in growth plate chondrocytes, leading to CaMKII activation and bone growth promotion. PLC and BK channels maintain these autonomic TRPM7-mediated Ca2+ fluctuations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C25-C28, C79-C80 accurately cite the authors' prior publication (Qian et al., 2019) and established knowledge about TRPM7. These provide the foundation for the current study's hypothesis about linking CNP to TRPM7. The claims are appropriately attributed to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:43:54.092087Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2a12e190-9282-4639-a006-cdf6a57771e5",
+      "result_id": "9ecd21af-2b27-4997-8ea9-68b9777cef17"
+    },
+    {
+      "claim_id": "8de1b6ba-ecea-4acf-923b-eadfc579123d",
+      "result_id": "9ecd21af-2b27-4997-8ea9-68b9777cef17"
+    },
+    {
+      "claim_id": "e6e16efa-9ac0-445e-83db-720e36111d39",
+      "result_id": "9ecd21af-2b27-4997-8ea9-68b9777cef17"
+    },
+    {
+      "claim_id": "c9d80c8d-df77-4159-b600-7afe336fdb06",
+      "result_id": "9ecd21af-2b27-4997-8ea9-68b9777cef17"
+    },
+    {
+      "claim_id": "93886772-55fc-4ffd-b1d8-24192e54f7c5",
+      "result_id": "9ecd21af-2b27-4997-8ea9-68b9777cef17"
+    },
+    {
+      "claim_id": "3e6edb82-b791-4647-bbc4-c2c83809d41f",
+      "result_id": "9ecd21af-2b27-4997-8ea9-68b9777cef17"
+    },
+    {
+      "claim_id": "b7532098-fa39-4da9-b631-80ab33e64ec6",
+      "result_id": "9ecd21af-2b27-4997-8ea9-68b9777cef17"
+    },
+    {
+      "claim_id": "614e0451-67e8-4e48-8a75-d2625f1f41e8",
+      "result_id": "9ecd21af-2b27-4997-8ea9-68b9777cef17"
+    },
+    {
+      "claim_id": "b6e9c17b-e69f-4ff6-a033-9cd7b6b85417",
+      "result_id": "3dbb071e-1e98-426c-a31f-bbe0db0b1406"
+    },
+    {
+      "claim_id": "b27a4920-6aae-4546-bc61-02ea2509cfb3",
+      "result_id": "3dbb071e-1e98-426c-a31f-bbe0db0b1406"
+    },
+    {
+      "claim_id": "e5f6dc2b-e88a-48ab-a187-31a1794d9924",
+      "result_id": "3dbb071e-1e98-426c-a31f-bbe0db0b1406"
+    },
+    {
+      "claim_id": "8e0ac013-f76c-4f29-8e03-9722f07cb81e",
+      "result_id": "fb85405f-fa12-4170-929b-19ed1047623d"
+    },
+    {
+      "claim_id": "3b1a93ee-3238-4326-b7fb-859e7600c91c",
+      "result_id": "fb85405f-fa12-4170-929b-19ed1047623d"
+    },
+    {
+      "claim_id": "31fe58f4-4e6c-475c-a5ec-8a8242df92e1",
+      "result_id": "fb85405f-fa12-4170-929b-19ed1047623d"
+    },
+    {
+      "claim_id": "e7f06643-99bd-455c-93af-12c468be8fa4",
+      "result_id": "fb85405f-fa12-4170-929b-19ed1047623d"
+    },
+    {
+      "claim_id": "08ea1de0-c5ec-4e88-bdcc-f05870f8efc2",
+      "result_id": "fb85405f-fa12-4170-929b-19ed1047623d"
+    },
+    {
+      "claim_id": "171e9b08-93f8-41b1-b106-1591178cd8cd",
+      "result_id": "fb85405f-fa12-4170-929b-19ed1047623d"
+    },
+    {
+      "claim_id": "693ba8ee-25cc-43f1-bc64-c376b0e4a105",
+      "result_id": "fb85405f-fa12-4170-929b-19ed1047623d"
+    },
+    {
+      "claim_id": "b60ff4fb-4ecd-43a2-8896-b5307bb5ca38",
+      "result_id": "f6c99fbd-2ad8-4c89-9b49-9e418c484d32"
+    },
+    {
+      "claim_id": "3d6100ce-f4a4-4bdc-8101-b69fcfe0e0d4",
+      "result_id": "f6c99fbd-2ad8-4c89-9b49-9e418c484d32"
+    },
+    {
+      "claim_id": "1f66fef1-e77a-4842-a91f-9a7757041d23",
+      "result_id": "f6c99fbd-2ad8-4c89-9b49-9e418c484d32"
+    },
+    {
+      "claim_id": "54cae72d-c2de-40b5-8c30-4ecc582db672",
+      "result_id": "f6c99fbd-2ad8-4c89-9b49-9e418c484d32"
+    },
+    {
+      "claim_id": "41af5d2d-2c68-414a-83a2-1737b25d7b25",
+      "result_id": "f6c99fbd-2ad8-4c89-9b49-9e418c484d32"
+    },
+    {
+      "claim_id": "2ba349d9-a46a-4e80-a2f4-3f299ce25aa6",
+      "result_id": "f6c99fbd-2ad8-4c89-9b49-9e418c484d32"
+    },
+    {
+      "claim_id": "e0da1ca6-368b-4a3f-b9a7-dc42d6fed340",
+      "result_id": "a14a4d13-ca4f-4caa-88ca-35a0dd44cc1b"
+    },
+    {
+      "claim_id": "c50a432c-594b-4636-89a4-7bfd71d6ecb4",
+      "result_id": "a14a4d13-ca4f-4caa-88ca-35a0dd44cc1b"
+    },
+    {
+      "claim_id": "4f9cb30e-c3ec-470c-9e15-c25cb9bc5138",
+      "result_id": "a14a4d13-ca4f-4caa-88ca-35a0dd44cc1b"
+    },
+    {
+      "claim_id": "60446653-197a-4ceb-b8dd-a201603117d0",
+      "result_id": "a14a4d13-ca4f-4caa-88ca-35a0dd44cc1b"
+    },
+    {
+      "claim_id": "41c998c7-9c99-4fbe-9f3e-cb042753c321",
+      "result_id": "889980bb-27ce-4937-b79a-8e6e0d6e2d23"
+    },
+    {
+      "claim_id": "62052c3d-ef5d-4922-8b89-652a03a7a554",
+      "result_id": "889980bb-27ce-4937-b79a-8e6e0d6e2d23"
+    },
+    {
+      "claim_id": "5a89e647-f82d-44fb-abbe-c9341546d95b",
+      "result_id": "889980bb-27ce-4937-b79a-8e6e0d6e2d23"
+    },
+    {
+      "claim_id": "41aee607-5717-4220-8401-193f59fbd1ce",
+      "result_id": "889980bb-27ce-4937-b79a-8e6e0d6e2d23"
+    },
+    {
+      "claim_id": "5f58244e-71a1-4aa3-b2f9-10f46a45283f",
+      "result_id": "553ad49e-8a70-4084-a90e-4d68f5071ca2"
+    },
+    {
+      "claim_id": "ea1bc00d-af01-478b-9499-ab905e153b12",
+      "result_id": "553ad49e-8a70-4084-a90e-4d68f5071ca2"
+    },
+    {
+      "claim_id": "aab834ea-eca4-4b4c-9863-a9c2b73b1004",
+      "result_id": "553ad49e-8a70-4084-a90e-4d68f5071ca2"
+    },
+    {
+      "claim_id": "b95cf4a3-05e7-420c-8bb7-323ed4bff24d",
+      "result_id": "553ad49e-8a70-4084-a90e-4d68f5071ca2"
+    },
+    {
+      "claim_id": "034de709-e187-45a8-a9ee-d632ce8c525b",
+      "result_id": "c4a76d29-6fde-4eeb-bb21-027976cf3dfe"
+    },
+    {
+      "claim_id": "b44334b0-21f4-41d7-9348-6ce792688450",
+      "result_id": "c4a76d29-6fde-4eeb-bb21-027976cf3dfe"
+    },
+    {
+      "claim_id": "eef31e60-cb5a-40f5-a26c-02cb8340f00d",
+      "result_id": "c4a76d29-6fde-4eeb-bb21-027976cf3dfe"
+    },
+    {
+      "claim_id": "c297867d-5273-4e04-8189-9fa28dd560ac",
+      "result_id": "c4a76d29-6fde-4eeb-bb21-027976cf3dfe"
+    },
+    {
+      "claim_id": "4ce80a47-9002-4b9a-9e05-85124cfa33e1",
+      "result_id": "c4a76d29-6fde-4eeb-bb21-027976cf3dfe"
+    },
+    {
+      "claim_id": "8c67aaf1-2b6b-4cd6-9c71-732cc45a8099",
+      "result_id": "c4a76d29-6fde-4eeb-bb21-027976cf3dfe"
+    },
+    {
+      "claim_id": "ffa7a842-b8a2-4059-8fb9-9e75214ef73a",
+      "result_id": "c4a76d29-6fde-4eeb-bb21-027976cf3dfe"
+    },
+    {
+      "claim_id": "fd37544b-9f42-45cf-82d6-d5539394fd9f",
+      "result_id": "c4a76d29-6fde-4eeb-bb21-027976cf3dfe"
+    },
+    {
+      "claim_id": "903467d9-7572-4dc6-9dc2-bab0362b0179",
+      "result_id": "3fc25215-8b56-4d1e-a5d4-01670e14c8b0"
+    },
+    {
+      "claim_id": "fe54e752-fa99-4a2c-9558-7a3ce1c7fca5",
+      "result_id": "3fc25215-8b56-4d1e-a5d4-01670e14c8b0"
+    },
+    {
+      "claim_id": "2802835e-b14b-43ff-a790-325119144806",
+      "result_id": "3fc25215-8b56-4d1e-a5d4-01670e14c8b0"
+    },
+    {
+      "claim_id": "283a3b61-bfd0-42d2-9bf2-cc9ee9436260",
+      "result_id": "ce0ad942-dc3c-4316-9946-5aeeabfda571"
+    },
+    {
+      "claim_id": "4961cad5-f5ea-4435-b5a7-c050a93d83af",
+      "result_id": "ce0ad942-dc3c-4316-9946-5aeeabfda571"
+    },
+    {
+      "claim_id": "c513a0de-3d45-4078-a707-4c2043eb5fd1",
+      "result_id": "ce0ad942-dc3c-4316-9946-5aeeabfda571"
+    },
+    {
+      "claim_id": "463b874b-a04c-4e9a-8af7-0a2c69fed2db",
+      "result_id": "ce0ad942-dc3c-4316-9946-5aeeabfda571"
+    },
+    {
+      "claim_id": "ad171cba-1888-408a-99ae-989d0113dac7",
+      "result_id": "ce0ad942-dc3c-4316-9946-5aeeabfda571"
+    },
+    {
+      "claim_id": "56a4e143-1425-431c-9267-a64dffd8ccdd",
+      "result_id": "ce0ad942-dc3c-4316-9946-5aeeabfda571"
+    },
+    {
+      "claim_id": "df01fdf4-810e-49f5-8bf1-3ff411bb0c9c",
+      "result_id": "ce0ad942-dc3c-4316-9946-5aeeabfda571"
+    },
+    {
+      "claim_id": "2293be6f-4b41-4278-957f-e633d01ef760",
+      "result_id": "ce0ad942-dc3c-4316-9946-5aeeabfda571"
+    },
+    {
+      "claim_id": "3ef4653e-637e-4edb-a021-0b229e471604",
+      "result_id": "ce0ad942-dc3c-4316-9946-5aeeabfda571"
+    },
+    {
+      "claim_id": "e1e0e391-bb0b-469c-921f-cd19ea128a5e",
+      "result_id": "a07711e1-590d-4c97-b83a-94dfe03b1644"
+    },
+    {
+      "claim_id": "9e0c8cdc-2fba-40e7-8dbe-0e5ddace7a95",
+      "result_id": "a07711e1-590d-4c97-b83a-94dfe03b1644"
+    },
+    {
+      "claim_id": "1d03061a-33a5-4968-9cc6-2ef86c15470d",
+      "result_id": "a07711e1-590d-4c97-b83a-94dfe03b1644"
+    },
+    {
+      "claim_id": "b28abd21-3070-4794-872f-95f44d22b694",
+      "result_id": "f5d45578-f74e-444e-af15-f62fe538c0cf"
+    },
+    {
+      "claim_id": "0289827e-0dfc-4e3b-9279-06606548ce30",
+      "result_id": "f5d45578-f74e-444e-af15-f62fe538c0cf"
+    },
+    {
+      "claim_id": "1941964f-bc82-4ed0-b313-76ca0e42ab5b",
+      "result_id": "f5d45578-f74e-444e-af15-f62fe538c0cf"
+    },
+    {
+      "claim_id": "aad3ef8e-9388-4091-b81d-49c1a6772396",
+      "result_id": "f5d45578-f74e-444e-af15-f62fe538c0cf"
+    },
+    {
+      "claim_id": "30d1284b-26f4-4551-b8b0-ea47e788a41c",
+      "result_id": "5c57977f-3351-4371-8a21-666731685fd9"
+    },
+    {
+      "claim_id": "3f2769ff-603e-410b-a61b-b2da1bd0421d",
+      "result_id": "5c57977f-3351-4371-8a21-666731685fd9"
+    },
+    {
+      "claim_id": "124dedc1-15a7-4d86-af2a-ce0125998e7f",
+      "result_id": "5c57977f-3351-4371-8a21-666731685fd9"
+    },
+    {
+      "claim_id": "f1fcf3d8-e007-4226-8dd8-c25a4394bf09",
+      "result_id": "5c57977f-3351-4371-8a21-666731685fd9"
+    },
+    {
+      "claim_id": "be13b72c-79a3-4ad2-95c6-a8e7cadf8761",
+      "result_id": "5c57977f-3351-4371-8a21-666731685fd9"
+    },
+    {
+      "claim_id": "0c13ac69-29fa-43a2-8669-662c8846bbca",
+      "result_id": "5c57977f-3351-4371-8a21-666731685fd9"
+    },
+    {
+      "claim_id": "e1069bec-5405-4080-8ef6-b513a5736e9d",
+      "result_id": "5c57977f-3351-4371-8a21-666731685fd9"
+    },
+    {
+      "claim_id": "54e3caf0-37cf-4ee9-8604-7b8f22d4d6d8",
+      "result_id": "b9287a40-202f-4e72-92f4-35610dbdfea5"
+    },
+    {
+      "claim_id": "60a53fe2-b2d5-4041-ab70-a3bc3e6bac82",
+      "result_id": "b9287a40-202f-4e72-92f4-35610dbdfea5"
+    },
+    {
+      "claim_id": "08270add-796d-48d7-b780-e6d08e24da99",
+      "result_id": "b9287a40-202f-4e72-92f4-35610dbdfea5"
+    },
+    {
+      "claim_id": "6f66abc0-a6a9-4131-b028-71e12f50a0ea",
+      "result_id": "b9287a40-202f-4e72-92f4-35610dbdfea5"
+    },
+    {
+      "claim_id": "0c4e325c-b436-45f5-b1b3-2e1c5bb6fb82",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "ddd77c5f-b45e-4a58-a6ab-4b6213b5b929",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "b30fdd52-f0cf-44c2-a30a-72af791ed9e2",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "785789c6-d016-4072-bd12-4521f5d117e2",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "95f1ab62-d3b6-4829-a40d-105387f6606c",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "b31fa410-afed-41d1-b4f9-67724cf89b72",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "c5a65f75-1a39-402b-9750-4f12849618b4",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "351ac80a-b14e-46d8-80ce-3fa589697c97",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "e09895e2-3df0-41de-89d8-8e09df838b6d",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "1b7161e7-c245-4f33-bd05-cfa407535c80",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "4e1a89b5-a128-4661-a776-462f96391810",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "f15ba659-f8f5-4107-b88a-67eda235c8be",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "6c0968c1-7fac-4646-98bf-c2b4c5f2e297",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "15c0cbac-ba12-4e2f-bd2e-1cf4e05e3455",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "b2919ee5-3b9e-4f1d-8339-a424868072e7",
+      "result_id": "fe70e694-bf12-4982-ae7b-2212eed96fbc"
+    },
+    {
+      "claim_id": "ed0bd4f0-9415-49c4-8735-d62422fcf49b",
+      "result_id": "40f538b0-646c-4224-9337-4e5cfdad5bb5"
+    },
+    {
+      "claim_id": "4a235912-a575-42a3-9a20-cc3f2cf58da1",
+      "result_id": "40f538b0-646c-4224-9337-4e5cfdad5bb5"
+    },
+    {
+      "claim_id": "a3efa63f-725d-4763-a90f-cd4fc15c2ed5",
+      "result_id": "40f538b0-646c-4224-9337-4e5cfdad5bb5"
+    },
+    {
+      "claim_id": "7dba7b80-c855-4b12-9836-91366bedd820",
+      "result_id": "40f538b0-646c-4224-9337-4e5cfdad5bb5"
+    },
+    {
+      "claim_id": "3e80a9f3-c0ff-402f-9bc4-1c2999068094",
+      "result_id": "40f538b0-646c-4224-9337-4e5cfdad5bb5"
+    },
+    {
+      "claim_id": "cdbb3be8-10c1-4de6-bdcd-93fa4bbd3159",
+      "result_id": "40f538b0-646c-4224-9337-4e5cfdad5bb5"
+    },
+    {
+      "claim_id": "c4e7530d-8ead-486b-b704-2763d86fe4da",
+      "result_id": "40f538b0-646c-4224-9337-4e5cfdad5bb5"
+    },
+    {
+      "claim_id": "ddd0c1f4-d4cd-4d9e-84b7-c31aa881c3f5",
+      "result_id": "40f538b0-646c-4224-9337-4e5cfdad5bb5"
+    }
+  ],
+  "comparisons": []
+}

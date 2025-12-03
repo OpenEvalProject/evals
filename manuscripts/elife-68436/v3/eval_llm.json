@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript provides epidemiological context for Cushing's syndrome (CS) and ectopic ACTH/CRH-secreting pheochromocytoma, citing that CS has an annual incidence of 0.2-5.0 per million, with 80% due to pituitary adenomas, 20% due to ectopic ACTH syndrome, and 1% due to CRH-secreting tumors. Only 2.5-5% of ectopic ACTH syndrome cases are caused by pheochromocytoma, and by 2020, only two cases of pheochromocytoma secreting both ACTH and CRH had been reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C7-C12) are well-supported by citations to established epidemiological literature and provide appropriate context for the rarity of the condition studied. The citations appear appropriate and the statistics are consistent with medical knowledge about Cushing's syndrome etiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Single-cell RNA sequencing of 44,511 cells from seven specimens identified 16 distinct cell types in the tumor microenvironment. The ACTH+&CRH+ pheochromocytoma cell subtype was specific to three tumor samples from Case 1 (esPHEO_T1, T2, T3) and was not observed in the peritumoral sample or other adrenal tumor samples from Cases 2 and 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C26 are supported by the scRNA-seq data analysis pipeline described in the methods and visualized in Figures 2 and 3. The quality control procedures, cell clustering methodology, and sample-specific distribution of cell types are appropriately documented. The specificity of the ACTH+&CRH+ cell type to Case 1 samples is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C17",
+      "C18",
+      "C28"
+    ],
+    "result": "A novel multi-functional chromaffin-like cell type called ACTH+&CRH+ pheochromocyte was identified, characterized by high expression of both POMC (the precursor of ACTH) and CRH (the most important regulator of ACTH secretion), as well as TH (tyrosine hydroxylase, a key enzyme for catecholamine synthesis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, C17, C18, and C28 are well-supported by scRNA-seq gene expression data shown in Figure 3C, combined with established biochemical and endocrinological knowledge about POMC, CRH, and TH. The identification of this cell type represents a major finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C21",
+      "C22",
+      "C23",
+      "C50"
+    ],
+    "result": "Immunohistochemistry and immunofluorescence validation confirmed the multi-functional chromaffin-like properties of the tumor cells with positive staining for CRH, POMC, ACTH, GAL, TH, and CgA. CgA-positive cells were present in both pheochromocytomas (esPHEO_T1 and PHEO_T), but ACTH-positive cells were only observed in the rare pheochromocytoma (esPHEO_T1). Co-localization signals for POMC&CRH and POMC&TH were observed by immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C21-C23, and C50 are supported by IHC and immunofluorescence data shown in Figures 1B, 3D, and 3E. The validation experiments appropriately confirm the scRNA-seq findings at the protein level, demonstrating that the identified cell type expresses multiple hormones. The use of serial sections and co-staining strengthens the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C60"
+    ],
+    "result": "The authors hypothesize that the molecular mechanism of Cushing's syndrome in Case 1 is due to the ACTH+&CRH+ pheochromocyte cell type, where ACTH secretion directly affects the adrenal gland to produce cortisol, while CRH secretion indirectly stimulates ACTH secretion from the anterior pituitary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C60 present a mechanistic hypothesis that is well-supported by the identification of the novel cell type expressing both POMC and CRH (C3, C27), the clinical remission after tumor resection (C19), and established knowledge of the HPA axis. The hypothesis is consistent with the data, though direct mechanistic validation would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C20",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "GAL (galanin) was identified as a new potential marker co-expressed with ACTH and CRH in the ACTH+&CRH+ pheochromocyte that might be involved in the regulation of ACTH secretion and the HPA axis. Previous studies have shown that GAL can regulate diverse physiologic functions including growth hormone, insulin release, and adrenal secretion, and that GAL and ACTH were co-expressed in human pituitary and pituitary adenomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C20, C29-C31 identify GAL as a co-expressed marker based on scRNA-seq data (Figure 3C), which is supported. However, the functional role of GAL in regulating ACTH secretion in this context is speculative and not directly tested. While prior literature supports GAL's involvement in the HPA axis, the specific mechanistic role in this tumor type requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C76"
+    ],
+    "result": "After surgical resection of the tumor, clinical manifestations showed complete remission of Cushing's syndrome. Surgery is the most common treatment strategy for ectopic ACTH&CRH secreting pheochromocytoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C76 are supported by clinical observation data and established clinical knowledge. The complete remission after tumor resection provides strong evidence that the tumor was the source of the ectopic hormone secretion, supporting the overall mechanistic hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Differential gene expression analysis revealed that many genes (GAL, POMC, PNMT, CARTPT) were dramatically upregulated in ACTH+&CRH+ pheochromocyte compared to other tumor cell types. Compared to adrenocortical cells, 248 upregulated and 198 downregulated genes were detected, with upregulated genes enriched in neuropeptide signaling, hormone secretion, and transport pathways. In contrast, only 95 upregulated and 111 downregulated genes were detected when comparing ACTH+&CRH+ pheochromocyte to pheochromocyte, suggesting relatively small differences between these two cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by differential gene expression analysis and GO functional enrichment analysis shown in Figure 4. The quantitative results are clearly presented, and the functional enrichment analysis appropriately characterizes the molecular differences between cell types. The conclusion that ACTH+&CRH+ pheochromocyte is more similar to pheochromocyte than to adrenocortical cells is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C58",
+      "C59"
+    ],
+    "result": "The overexpression of TH and PNMT was responsible for excessive catecholamine secretion in ACTH+&CRH+ pheochromocyte and pheochromocyte cell subtypes. PNMT catalyzes the last step of catecholamine biosynthesis, methylating norepinephrine to form epinephrine. Laboratory tests confirmed that Cases 1 and 2 had high levels of catecholamines in plasma and 24-hour urine, while Case 3 had normal levels. The overexpression of PNMT was responsible for significantly elevated epinephrine in Case 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, C42, C58, and C59 are supported by gene expression data (Figure 3C), established biochemical knowledge about catecholamine biosynthesis, and clinical laboratory test results. The correlation between PNMT expression and elevated epinephrine levels is consistent with the known function of PNMT, though the causal claim is inferential rather than experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Known markers for chromaffin cells (CHGA, CHGB) and catecholamine-synthesizing enzymes (TH, PNMT) were observed in both ACTH+&CRH+ pheochromocyte and pheochromocyte cell subtypes, along with a new candidate marker CARTPT. Typical markers of adrenal cortical cells (CYP17A1, CYP21A2) were also investigated. Chromaffin cell markers were mainly characterized in PHEO_T and three tumor samples from Case 1, while adrenocortical cell clusters mainly existed in ACA_T1 and ACA_T2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36, C43-C45 are supported by gene expression data shown in Figure 3C and established knowledge about cell type markers. The distribution of cell types across samples is consistent with the clinical diagnoses and provides appropriate validation of the cell type annotations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Sustentacular cells, identified by S100B expression, were found near chromaffin cells and nerve terminations. Several studies have shown that sustentacular cells exhibit stem-like characteristics. S100B was specifically identified in PHEO_T from Case 2. Previous literature confirmed that sustentacular cells are absent in most malignant pheochromocytomas, while locally aggressive or recurrent cases usually contain a large number of these cells. This suggests that PHEO_T from Case 2 might be a locally aggressive case, while Case 1 is the opposite.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, C46-C49 are supported by gene expression data, citations to previous literature, and appropriate inference. The presence of S100B-positive sustentacular cells in PHEO_T but not in Case 1 samples is clearly demonstrated, and the interpretation based on prior literature about malignancy is reasonable, though the clinical outcome data to confirm this inference is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C92",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "RNA velocity and pseudotime analyses revealed that sustentacular cells were in an early state with high proportions (36%) of unspliced transcripts, supporting their stem-like properties. The analyses showed a transition from sustentacular cells to pheochromocytes and then to ACTH+&CRH+ pheochromocyte, with adrenocortical cells on another branch. POMC+&CRH+ pheochromocytes had more spliced transcript proportions than pheochromocytes. However, genes like POMC and CRH were detected as fully spliced, suggesting the actual RNA velocity for ACTH+&CRH+ pheochromocytes might be underestimated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61, C62, C92, C107-C115 present RNA velocity and pseudotime analyses (Figures 5 and 6) that support the stem-like properties of sustentacular cells and suggest developmental relationships between cell types. However, there is an internal inconsistency: the RNA velocity analysis (C111) shows the four cell subtypes as independent and not directed toward other cell types, while the pseudotime analysis (C62) shows a transition from sustentacular cells to pheochromocytes to ACTH+&CRH+ pheochromocyte. The authors acknowledge that POMC and CRH are detected as fully spliced (C112), which may lead to underestimation of RNA velocity (C113). These methodological limitations and contradictory interpretations reduce confidence in the developmental trajectory conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Immune cells accounted for more than ~50% of total cells. All three tumor specimens and one peritumoral specimen from Case 1 had similar immune cell composition. CD4 T cells, B cells, and macrophages were mainly present in adrenal cortical adenomas (ACA_T1 and ACA_T2), while CD8 T cells mostly resided in pheochromocytoma tumors and the peritumoral specimen. Pheochromocytoma types were mostly manifested by activated CD8+ T cells, especially in specimens from the ectopic ACTH&CRH secreting pheochromocytoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by immune cell composition analysis shown in Figures 3B and 7B. The quantitative analysis of immune cell frequencies and their distribution across different tumor types is clearly presented. The observation of differential T cell composition between tumor types is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Endothelial cells consisted of four distinct sub-clusters: vascular, lymphatic, cortical, and other endothelial cells. Vascular endothelial cells were mainly identified in pheochromocytoma samples, cortical endothelial cells in adrenocortical adenomas, and lymphatic endothelial cells in the adjacent adrenal specimen. Functional analysis revealed that vascular endothelial cells organize the extracellular matrix and regulate vasoactive substances, lymphatic endothelial cells are responsible for chemokine-mediated pathways, and cortical endothelial cells express TFF3 and FABP4 involved in repair and maintenance functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C69, C71-C75 are supported by endothelial cell clustering analysis (Figure 8A-B) and GO functional enrichment analysis (Figure 8C-D). The identification of endothelial cell subtypes and their tissue-specific distribution is well-documented. The functional characterization based on differential gene expression and GO analysis is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Whole-exome sequencing was performed to investigate genetic drivers. Genetic mutations of pheochromocytoma are mainly classified into pseudo-hypoxic pathway and kinase signaling pathways, but no mutations related to these major clusters were found in the rare case. One shared somatic variant of ACAN (c.5951T>A:p.L1984Q) was identified, but Sanger sequencing only confirmed its presence in esPHEO_T3 and not in esPHEO_T2. ACAN encodes a major component of the extracellular matrix and mutations have been reported related to steroid levels. No obvious genetic driver was found to explain the rare case.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by whole-exome sequencing data analysis and Sanger sequencing validation. The negative finding (no mutations in known pheochromocytoma pathways) is appropriately reported. The ACAN variant is interesting but its inconsistent presence across tumor samples and lack of clear mechanistic connection to the phenotype appropriately leads to the conclusion that no obvious genetic driver was identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Dale's Principle states 'one cell, one hormone, and one neuron one transmitter.' A previous study by Sakuma et al. (2016) reported an ectopic ACTH pheochromocytoma case and proved that ACTH and catecholamine were produced by two functionally distinct chromaffin-like tumor cell types. However, more evidence has emerged that Dale's principle is incorrect because existing studies have shown that these cells are multi-messenger systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 provide appropriate historical and scientific context, supported by citations to previous literature. The discussion of Dale's Principle and its limitations is relevant to the finding of a single cell type producing multiple hormones.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The molecular mechanism of Cushing's syndrome in Case 3 was different, attributed to two cortical adenomas on the left adrenal, showing ACTH-independent hypercortisolemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by clinical observations and data analysis. Case 3 serves as an appropriate control, demonstrating a different mechanism of Cushing's syndrome (ACTH-independent) compared to Case 1 (ACTH-dependent).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C93"
+    ],
+    "result": "The authors suggest that ACTH&CRH secreting pheochromocytoma is more serious than common pheochromocytoma because there are no sustentacular cells, and that ACTH&CRH secreting pheochromocytes have more hormone-producing functions and retain stem- and endocrine-differentiation ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90 and C93 are speculative inferences based on the absence of sustentacular cells and the RNA velocity/pseudotime analyses. While the absence of sustentacular cells is associated with malignancy in the literature (C47, C89), the direct claim that this makes the tumor \"more serious\" is not supported by clinical outcome data. The hypothesis about stem- and endocrine-differentiation ability (C93) is interesting but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The manuscript discusses bidirectional communications between the immune and neuroendocrine systems, noting that hormones (especially glucocorticoids, GH, and PRL) affect immune function, while cytokines can stimulate hormone release (including ACTH and CRH) and activate the HPA axis. T cells coordinate adaptive immunity through cytokines and effector molecules, with CD4+ T cells secreting cytokines and CD8+ T cells having cytotoxic functions. The composition of T cell subsets is related to tissue locations. IL-7R signaling is essential for lymphoid cell development, and disruption may cause immunodeficiency. The authors speculate that CD4+ T cells with high IL-7R expression might be related to adrenal tumor progression, apoptosis, or immune activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C106 provide extensive background on immune-neuroendocrine interactions, supported by citations to previous literature (C94-C105). However, the specific speculation about CD4+ T cells with high IL-7R expression in relation to adrenal tumor progression (C106) is not directly tested and remains speculative. The heterogeneity of immune cell composition across tumor types is well-documented, but the functional implications require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Single-cell RNA-sequencing is recognized as the gold standard for defining cell states and phenotypes, can reveal rare and novel cell types, and provides an unbiased method to understand immune cell diversity in the tumor microenvironment. This study reported a rare case of CRH/ACTH-secreting pheochromocytoma infiltrating the kidney and psoas muscle tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 provide appropriate methodological context supported by citations to scRNA-seq literature and describe the clinical case studied. These are well-established facts and appropriate descriptions of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C41",
+      "C70",
+      "C87",
+      "C88"
+    ],
+    "result": "The manuscript states that catecholamine-producing pheochromocytomas originate from chromaffin cells in the adrenal medulla rather than the adrenal cortex, that pheochromocytoma is a tumor arising in the adrenal medulla, and that adrenal glands are composed of cortex and medulla with different embryonic origins (medulla from neuroectodermal cells of neural crest origin, cortex from intermediate mesoderm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C70, C87, and C88 represent established anatomical, developmental, and pathological knowledge that is correctly stated and provides appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C91"
+    ],
+    "result": "Previous literature reported that sustentacular cells were absent in most malignant pheochromocytomas, and a unique case of a tumor originating from S100-positive sustentacular cells was previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C91 are supported by appropriate citations to previous literature and provide relevant context for interpreting the presence or absence of sustentacular cells in the studied samples.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C114",
+      "C115"
+    ],
+    "result": "Alkylation damage formation (7meG) is significantly suppressed at Abf1 and Reb1 binding sites, particularly in conserved motif regions where TFs directly contact DNA. The suppression is correlated with TF occupancy levels, with 7meG reduced by up to 40% at Abf1 sites and 70% at high-occupancy Reb1 sites, while low-occupancy Reb1 sites show minimal suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C47, C114-C115 are supported by NMP-seq data shown in Figures 1A-F and supplementary figures. The data demonstrate statistically significant reduction in 7meG formation at TF binding sites, with proper normalization to naked DNA controls and correlation with occupancy levels. The reduction is not due to MAG1 deletion (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Individual hotspots with elevated alkylation damage levels were found at specific positions within TF binding sites. Notably, 3meA formation was increased at the -3 position of high-occupancy Reb1 sites in a position-dependent manner, potentially facilitated by DNA structural changes including minor groove compression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46, C48-C51 are supported by NMP-seq data (Figure 1\u2014figure supplement 6) showing elevated damage at specific positions. The structural interpretation (C50-C51) is based on published crystal structure analysis from Jaiswal et al., 2016, providing mechanistic insight into the observed damage patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "BER of 7meG lesions is strongly inhibited by Abf1 and Reb1 binding in vivo, affecting both the core motif and adjacent DNA (~20-30 bp region). The inhibition is mediated by TF binding rather than DNA sequence, as demonstrated by lack of repair suppression at low-occupancy sites and increased unrepaired damage in mag1\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52-C62 are supported by NMP-seq repair data (Figure 2) showing peaks of unrepaired damage at TF binding sites at 1 and 2 hr timepoints. The specificity is demonstrated by comparison with low-occupancy sites (C53) and mag1\u0394 controls (C61-C62). The combined effects of TF binding and nucleosome positioning are documented (C54-C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Nuclear depletion of Abf1 or Reb1 using anchor-away strains specifically restores both damage formation and BER at their respective binding sites. Depletion of each TF accelerates repair at its own binding sites while leaving the other TF's sites unaffected, demonstrating that the observed effects are caused by TF-DNA interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C67-C78 are supported by NMP-seq data from anchor-away experiments (Figure 3 and Figure 3\u2014figure supplement 1). The specificity of TF depletion effects (C71) and restoration of both damage formation and repair (C67-C70, C72-C77) provide strong evidence for causality. The experimental design includes appropriate controls (WT-AA).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Abf1 and Reb1 inhibit BER in the nucleosome-depleted regions (NDR) of their target gene promoters. While global BER analysis shows faster repair in NDR relative to coding regions, gene-specific analysis reveals prominent damage peaks ~100 bp upstream of TSS that overlap with TF binding sites, with strong correlation between BER inhibition and TF binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 are supported by gene-level NMP-seq analysis (Figure 4) showing context-dependent BER inhibition. The global vs. gene-specific analysis (C80-C81) and anchor-away validation (C85-C87) provide comprehensive evidence. Heat map analysis (Figure 4\u2014figure supplement 1) demonstrates gene-by-gene correlation between TF binding and repair inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Repair of 3meA lesions is inhibited at the center of Abf1 and high-occupancy Reb1 binding sites but not at low-occupancy sites. The 3meA repair inhibition peaks are narrower than 7meG peaks with no clear inhibition in surrounding nucleosomes, consistent with greater Mag1 activity toward 3meA. A slow repair spot was identified at the +4 position of Reb1 sites for both 3meA and 7meG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 are supported by NMP-seq A-read analysis (Figure 5A-C, Figure 5\u2014figure supplement 1). The differential repair patterns between 3meA and 7meG (C93-C95) are consistent with known enzyme activities (Connor et al., 2005). The +4 position slow repair spot (C96-C97) is documented for both lesion types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Reb1 protein binding directly inhibits BER in vitro. Using inosine-containing DNA substrates, AAG/APE1 cleavage activity was significantly reduced in Reb1-bound DNA compared to naked DNA, with inhibition observed at the +4 position on both DNA strands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C100-C103 are supported by in vitro BER assays (Figure 5D-F, Figure 5\u2014figure supplement 1). EMSA data show inosine incorporation does not affect Reb1 binding (C100). Quantification demonstrates statistically significant reduction in repair activity (C101, p<0.005). The in vitro data corroborate cellular findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C140",
+      "C141"
+    ],
+    "result": "TF binding inhibits both BER and NER, but NER is inhibited over a broader DNA region (~50 bp) compared to BER (~30 bp). GG-NER is suppressed at the center of Abf1 and Reb1 binding sites but elevated in adjacent nucleosome-depleted DNA, with inhibition extending an additional 10 bp on each side relative to BER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C106-C113, C140-C141 are supported by CPD-seq data (Figure 6) comparing NER and BER at TF binding sites. The broader inhibition region for NER (C110-C112) is quantitatively demonstrated and mechanistically consistent with the dual-incision mechanism of NER. Analysis in rad26\u0394 mutants isolates GG-NER effects (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "NMP-seq methodology successfully maps 7meG and 3meA lesions at single-nucleotide resolution across the genome. The method employs AAG and APE1 enzymes to create nicks at NMP lesion sites, which are ligated to adaptor DNA for sequencing. In MMS-treated mag1\u0394 cells, ~44 million reads were obtained with ~56% associated with G nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 describe the NMP-seq methodology and basic data characteristics. The method is validated by prior publication (Mao et al., 2017) and the read distribution (C37) is consistent with expected MMS damage patterns (Friedberg et al., 2006). Figure 1\u2014figure supplement 1 illustrates the methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Anchor-away strains for Abf1 and Reb1 were successfully employed to conditionally deplete TFs from the nucleus. Both TFs are essential for yeast survival, and rapamycin-mediated depletion is lethal. Control experiments show rapamycin itself has minimal effect on NMP damage formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 describe the anchor-away experimental system. The lethality of TF depletion is demonstrated (C65, Figure 3\u2014figure supplement 1) and control experiments with WT-AA cells show rapamycin does not affect damage formation (C66). The approach is validated by prior publications (Kubik et al., 2018; 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C31",
+      "C122",
+      "C136",
+      "C137",
+      "C147"
+    ],
+    "result": "The interplay between TF binding, base damage formation, and BER may play an important role in affecting mutation frequency in gene regulatory regions, potentially explaining mutation hotspots at TF binding sites in non-UV exposed tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C31, C122, C136-C137, C147 are speculative interpretations about the relevance to cancer mutations. While the experimental data on damage formation and repair inhibition are solid, the connection to human cancer mutations is inferential and not directly tested. This represents a hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C119",
+      "C126",
+      "C130",
+      "C135"
+    ],
+    "result": "The mechanisms underlying modulated damage formation involve TF-mediated changes in nucleotide reactivity and DNA structure. Protein-DNA contacts reduce reactivity at conserved positions, while DNA bending and structural distortions may increase reactivity at specific positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117, C119, C126, C130, C135 propose mechanistic explanations for observed damage patterns. While these interpretations are reasonable and supported by structural data (C50, C127-C129), they remain speculative as the precise molecular mechanisms were not directly tested. The structural analysis provides plausibility but not definitive proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The broader DNA region affected by NER inhibition compared to BER is consistent with mechanistic differences between the pathways. NER requires dual incisions ~25 nt apart, and TF binding may block one cleavage site even when damage is recognizable, while BER involves more localized enzyme access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C145 provide mechanistic interpretation of the differential inhibition patterns. The reasoning is sound and consistent with established NER mechanisms (Huang et al., 1992; Sch\u00e4rer, 2013). While not directly tested, the interpretation logically connects the observed data with known pathway differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C38",
+      "C60",
+      "C63",
+      "C79",
+      "C88",
+      "C89",
+      "C90",
+      "C99",
+      "C104",
+      "C105",
+      "C116",
+      "C118",
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C132",
+      "C138",
+      "C143"
+    ],
+    "result": "Background knowledge and literature context establishing the importance of DNA damage, BER mechanisms, TF function, and prior findings on UV damage and NER inhibition by TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C30, C32, C38, C60, C63, C79, C88-C90, C99, C104-C105, C116, C118, C120-C125, C127-C129, C132, C138, C143 represent established knowledge supported by appropriate citations. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

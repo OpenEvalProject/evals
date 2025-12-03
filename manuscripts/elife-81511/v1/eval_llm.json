@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Prior work has established broad cortico-cerebellar connectivity patterns but has not examined the degree of convergence of cortical inputs onto cerebellar circuits. Resting-state fMRI studies have mapped connectivity between neocortex and cerebellum, typically using winner-take-all approaches that assign each cerebellar voxel to a single cortical network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C16, C19-C21, C76-C81 accurately summarize prior literature on cerebellar function and connectivity, supported by appropriate citations. Claim C2 correctly identifies the knowledge gap that motivates the current study. These background claims establish the scientific context for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C82"
+    ],
+    "result": "Models allowing convergence of cortical inputs (Ridge and Lasso regression) outperformed winner-take-all models in predicting cerebellar activity patterns across novel tasks. Ridge models significantly outperformed WTA models (F1,23=47.122, p<0.001) across all granularity levels \u226580 regions, with this pattern holding across multiple cortical parcellations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C36, C46-C50, C82 present consistent statistical evidence from model comparisons with appropriate tests and p-values. The findings are replicated across multiple parcellation schemes (C46-C48), strengthening the conclusion. Model recovery simulations (referenced in methods) validate that the approach can distinguish between connectivity architectures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The Ridge model achieved mean predictive accuracy of 0.257 (r=0.51 inter-session reliability), predicting approximately 45% of systematic variance in cerebellar activity. Predictive accuracy was highest in anterior motor regions but reasonably high across the entire cerebellar surface, with successful predictions even for novel tasks like spatial working memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 provide quantitative performance metrics with appropriate noise ceiling calculations accounting for measurement reliability. The spatial working memory example (C44-C45) is particularly compelling as this task was not in the training set. The reliability analysis (C38-C40) appropriately contextualizes model performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The degree of convergence varied systematically across the cerebellum, with highest convergence in areas linked to language, working memory, and social cognition (lobule VII regions 7-8 requiring ~10% of cortical surface) and lowest convergence in motor regions (anterior hand regions 1-2 requiring <5% of cortex). This pattern was confirmed by both surface area and dispersion metrics (F9,207=7.244, p<0.001 for surface area; F9,207=18.322, p<0.001 for dispersion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C60-C70 present convergent evidence from multiple quantitative measures (surface area, dispersion) with appropriate statistical tests. The simulation control (C66) rules out collinearity as an explanation. The pattern holds across different parcellation granularities (C65), demonstrating robustness. Both Lasso and Ridge models show consistent regional variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Specific connectivity patterns were identified for functional cerebellar regions: hand regions (1-2) received focal input from contralateral sensorimotor cortex; oculomotor vermis (region 3) from bilateral FEF, intraparietal sulcus, and extrastriate areas; action observation region (4) from bilateral premotor, SMA, and parietal cortex; and cognitive regions (5-10) from distributed association areas with contralateral dominance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59, C83-C85 describe anatomically specific connectivity patterns supported by the experimental data and consistent with known anatomy (C52 cites prior work on M1-cerebellar connectivity). The patterns are visualized in Figure 3 and align with functional expectations for each region. The contralateral dominance for cognitive regions (C55-C56) is particularly well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C103",
+      "C122"
+    ],
+    "result": "The connectivity models successfully generalized to predict cerebellar activity in a separate experiment with new participants and novel tasks. Ridge models provided best predictive accuracy (r=0.657), with models capturing ~43% of cerebellar activity variance, demonstrating task- and participant-invariant connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75, C103, C122 demonstrate strong generalization with quantitative performance metrics from an independent dataset. This is a rigorous test of model validity, showing that connectivity patterns are stable across participants and tasks. The consistency of the 43% variance explained (C75) with earlier within-participant analyses strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The variation in convergence reveals heterogeneity in cortico-cerebellar connectivity, with some cerebellar areas functioning in nearly 1:1 relationships with single cortical regions while others integrate diverse cortical inputs. Strong convergence is anatomically restricted to lobules VI-VII, which expanded during primate evolution, rather than following a simple motor/cognitive functional distinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 synthesize the findings into a coherent picture of connectivity heterogeneity. The anatomical restriction to lobules VI-VII (C92) is supported by data and evolutionary context (C93, citing Balsters 2010). The exceptions to motor/cognitive gradient (C90-C91) are appropriately noted, showing nuanced interpretation. This represents a well-supported inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The functional implications of convergence patterns suggest that cerebellar regions with 1:1 cortical connectivity can only fine-tune processes in their connected cortical region, while regions with convergent input can coordinate interactions between dispersed cortical regions, potentially influencing network-level dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 are theoretical inferences about functional implications that, while logical, are not directly tested in this study. Claim C96-C97 cite rodent work (Pisano 2021) as supporting evidence, but the functional consequences remain speculative. These are reasonable interpretations but require additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The cerebellar BOLD signal predominantly reflects cortical input via mossy fibers with negligible contribution from Purkinje cell output, while neocortical BOLD reflects multiple sources including inter-cortical inputs, local activity, and ascending input. This asymmetry justifies directional modeling from cortex to cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30, C104-C109 are well-supported by extensive citations to prior physiological studies in rodents (Mathiesen 2000, Thomsen 2004, Alahmadi 2015-2016, Mapelli 2017, Gagliano 2022). The inference about directionality (C30, C109) is logical given this physiological evidence. This provides strong methodological justification for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The multi-domain task battery (MDTB) included 24 participants across 4 sessions with 47 unique task conditions spanning motor, cognitive control, language, social, and other domains. The broad task battery ensured reliable variation across neocortex and cerebellum, and the crossed-session design avoided noise correlation biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C98-C100, C131-C138 accurately describe the experimental design. The methodological advantages (C98-C100) are well-justified: broad task coverage ensures comprehensive sampling, and crossed-session prediction (C100) elegantly addresses noise correlation concerns. This represents sound experimental design for connectivity modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Model recovery simulations validated that the dataset could distinguish between connectivity architectures despite cortical collinearity, though absolute degree of convergence could not be determined with high confidence. The true cortical input extent likely lies between Ridge and Lasso estimates, but the pattern of regional variation is robust across methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 appropriately acknowledge methodological limitations while demonstrating validation through simulations. The honest assessment that absolute convergence cannot be precisely determined (C116-C119) is scientifically appropriate, while the robustness of regional variation patterns (C120-C121) is well-supported. This represents careful, transparent methodological evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Some apparent convergent inputs may reflect divergent cerebellar projections to multiple cortical regions via thalamic reticular nuclei. Complete circuit analysis will require viral tracing or functional measures targeting deep cerebellar nuclei and thalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 appropriately acknowledge alternative interpretations and study limitations. The possibility of divergent projections (C110-C111) is supported by citations to Kelly & Strick 2003 and Pisano 2021. The call for complementary methods (C112) is reasonable and scientifically appropriate. This represents honest limitation acknowledgment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "A substantial proportion of cortico-cerebellar communication follows fixed information flow (task-invariant connectivity), though the model does not provide perfect predictions. Task-dependent deviations may reflect adaptive gating in pontine nuclei, and the model provides a tool for testing cerebellar function hypotheses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C124 are reasonable inferences from generalization results but represent interpretation rather than direct evidence. Claims C126-C129 are speculative about mechanisms (pontine gating) that are not tested in this study. Claim C130 about future applications is appropriate but not a result per se. These represent plausible interpretations requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "There are important differences in how functional subdivisions of the cerebellum support motor versus cognitive function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is a high-level inference well-supported by the convergence variation findings (C5-C6, C63-C64, C69-C70). The differential convergence patterns between motor regions (low convergence) and cognitive regions (high convergence) provide strong evidence for functional differences in how these subdivisions operate.",
+    "result_type": "MAJOR"
+  }
+]

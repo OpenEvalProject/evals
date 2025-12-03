@@ -1,0 +1,1580 @@
+{
+  "submission": {
+    "id": "40ef9206-d46e-4ab9-b01c-dd1d90d7a76f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:22:02.482897Z",
+    "updated_at": "2025-12-03T03:22:02.482897Z"
+  },
+  "content": [
+    {
+      "id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "submission_id": "40ef9206-d46e-4ab9-b01c-dd1d90d7a76f",
+      "content_type": "manuscript",
+      "content_text": "# Optimal policy for attention-modulated decisions explains human fixation behavior\n\n## Authors\n\n- Anthony I Jang<sup>1</sup> ([ORCID: 0000-0003-3073-8228](https://orcid.org/0000-0003-3073-8228))\n- Ravi Sharma<sup>2</sup>\n- Jan Drugowitsch<sup>1</sup> ([ORCID: 0000-0002-7846-0408](https://orcid.org/0000-0002-7846-0408)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology, Harvard Medical School Boston United States\n2. Division of Biostatistics and Bioinformatics, Department of Family Medicine and Public Health, UC San Diego School of Medicine La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTraditional accumulation-to-bound decision-making models assume that all choice options are processed with equal attention. In real life decisions, however, humans alternate their visual fixation between individual items to efficiently gather relevant information (Yang et al., 2016). These fixations also causally affect one\u2019s choices, biasing them toward the longer-fixated item (Krajbich et al., 2010). We derive a normative decision-making model in which attention enhances the reliability of information, consistent with neurophysiological findings (Cohen and Maunsell, 2009). Furthermore, our model actively controls fixation changes to optimize information gathering. We show that the optimal model reproduces fixation-related choice biases seen in humans and provides a Bayesian computational rationale for this phenomenon. This insight led to additional predictions that we could confirm in human data. Finally, by varying the relative cognitive advantage conferred by attention, we show that decision performance is benefited by a balanced spread of resources between the attended and unattended items.\n\n## Introduction\n\nWould you rather have a donut or an apple as a mid-afternoon snack? If we instantaneously knew their associated rewards, we could immediately choose the higher-rewarding option. However, such decisions usually take time and are variable, suggesting that they arise from a neural computation that extends over time (Rangel and Hare, 2010; Shadlen and Shohamy, 2016). In the past, such behavior has been modeled descriptively with accumulation-to-bound models that continuously accumulate noisy evidence from each choice option, until a decision boundary is reached in favor of a single option over its alternatives. Such models have been successful at describing accuracy and response time data from human decision makers performing in both perceptual and value-based decision tasks (Ratcliff and McKoon, 2008; Milosavljevic et al., 2010). Recently, we and others showed that, if we assume these computations to involve a stream of noisy samples of each item\u2019s perceptual feature (for perceptual decisions) or underlying value (for value-based decisions), then the normative strategy could be implemented as an accumulation-to-bound model (Bogacz et al., 2006; Drugowitsch et al., 2012; Tajima et al., 2016). Specifically, the normative strategy could be described with the diffusion decision model (Ratcliff and McKoon, 2008) with time-varying decision boundaries that approach each other over time.\n\nStandard accumulation-to-bound models assume that all choice options receive equal attention during decision-making. However, the ability to drive one\u2019s attention amidst multiple, simultaneous trains of internal and external stimuli is an integral aspect of everyday life. Indeed, humans tend to alternate between fixating on different items when making decisions, suggesting that control of overt visual attention is intrinsic to the decision-making process (Kustov and Robinson, 1996; Mohler and Wurtz, 1976). Furthermore, their final choices are biased toward the item that they looked at longer, a phenomenon referred to as a choice bias (Shimojo et al., 2003; Krajbich et al., 2010; Krajbich and Rangel, 2011; Cavanagh et al., 2014). While several prior studies have developed decision-making models that incorporate attention (Yu et al., 2009; Krajbich et al., 2010; Towal et al., 2013; Cassey et al., 2013; Gluth et al., 2020), our goal was to develop a normative framework that incorporates control of attention as an integral aspect of the decision-making process, such that the agent must efficiently gather information from all items while minimizing the deliberation time, akin to real life decisions. In doing so, we hoped to provide a computational rationale for why fixation-driven choice biases seen in human behavior may arise from an optimal decision strategy. For example, the choice bias has been previously replicated with a modified accumulation-to-bound model, but the model assumed that fixations are driven by brain processes that are exogenous to the computations involved in decision-making (Krajbich et al., 2010). This stands in contrast to studies of visual attention where fixations appear to be controlled to extract choice-relevant information in a statistically efficient manner, suggesting that fixations are driven by processes endogenous to the decision (Yang et al., 2016; Hoppe and Rothkopf, 2016; Hayhoe and Ballard, 2005; Chukoskie et al., 2013; Corbetta and Shulman, 2002).\n\nWe asked if the choice bias associated with fixations can be explained with a unified framework in which fixation changes and decision-making are part of the same process. To do so, we endowed normative decision-making models (Tajima et al., 2016) with attention that boost the amount of information one collects about each choice option, in line with neurophysiological findings (Averbeck et al., 2006; Cohen and Maunsell, 2009; Mitchell et al., 2009; Wittig et al., 2018). We furthermore assumed that this attention was overt (Posner, 1980; Geisler and Cormack, 2012), and thus reflected in the decision maker\u2019s gaze which was controlled by the decision-making process.\n\nWe first derive the complex normative decision-making strategy arising from these assumptions and characterize its properties. We then show that this strategy featured the same choice bias as observed in human decision makers: it switched attention more frequently when deciding between items with similar values, and was biased toward choosing items that were attended last, and attended longer. It furthermore led to new predictions that we could confirm in human behavior: choice biases varied based on the amount of time spent on the decision and the average desirability across both choice items. Lastly, it revealed why the observed choice biases might, in fact, be rational. Overall, our work provides a unified framework in which the optimal, attention-modulated information-seeking strategy naturally leads to biases in choice that are driven by visual fixations, as observed in human decisions.\n\n## Results\n\n### An attention-modulated decision-making model\n\nBefore describing our attention-modulated decision-making model, we will first briefly recap the attention-free value-based decision-making model (Tajima et al., 2016) that ours builds upon. This model assumes that for each decision trial, a true value associated with each item (z1,z2) is drawn from a normal prior distribution with mean $z\u00af$ and variance $\\sigma_{z}^{2}$. Therefore, $z_{j}\u223c\ud835\udca9\u2062(z\u00af,\\sigma_{z}^{2})$ for both $j\\in{1,2}$. The smaller the $\\sigma_{z}^{2}$, the more information this prior provides about the true values. We assume the decision maker knows the shape of the prior, but can\u2019t directly observe the drawn true values. In other words, the decision maker a\u00a0priori knows the range of values associated with the items they need to compare, but does\u00a0not know what exact items to expect nor what their associated rewards will be. For example, one such draw might result in a donut and an apple, each of which has an associated value to the decision maker (i.e. satisfaction upon eating it). In each nth time step of length $\\delta\u2062t$, they observe noisy samples centered around the true values, called momentary evidence,\u00a0$\\delta\u2062x_{j,n}|z_{j}\u223c\ud835\udca9\u2062(z_{j}\u2062\\delta\u2062t,2\u2062\\sigma_{x}^{2}\u2062\\delta\u2062t)$. In Tajima et al., 2016 ,\u00a0the variance of the momentary evidence was $\\sigma_{x}^{2}\u2062\\delta\u2062t$ rather than $2\u2062\\sigma_{x}^{2}\u2062\\delta\u2062t$. We here added the factor 2 without loss of generality to relate it more closely to the attention-modulated version we introduce further below. The variance $2\\sigma_{x}^{2}$ here controls how informative the momentary evidence is about the associated true value. A large $\\sigma_{x}^{2}$ implies larger noise, and therefore less information provided by each of the momentary evidence samples. While the model is agnostic to the origin of these samples, they might arise from computations to infer the items\u2019 values (e.g. how much do I currently value the apple?), memory recall (e.g. how much did I previously value the apple?), or a combination thereof (Shadlen and Shohamy, 2016). As the decision maker\u2019s aim is to choose the higher\u00a0valued item, they ought to accumulate evidence for some time to refine their belief in the items\u2019 values. Once they have accumulated evidence for $t=N\u2062\\delta\u2062t$ seconds, their posterior belief for the value associated with either item is\n\n$$\nz_{j}|\\delta\u2062x_{j,1:N}\u223c\ud835\udca9\u2062(\\frac{\\sigma_{x}^{2}\u2062\\sigma_{z}^{-2}\u2062z\u00af+\\frac{1}{2}\u2062x_{j}\u2062(t)}{\\sigma_{x}^{2}\u2062\\sigma_{z}^{-2}+\\frac{1}{2}\u2062t},\\frac{\\sigma_{x}^{2}}{\\sigma_{x}^{2}\u2062\\sigma_{z}^{-2}+\\frac{1}{2}\u2062t}),\n$$\n\nwhere $x_{j}\u2062(t)=\\sum_{n=1}^{N}\\delta\u2062x_{j,n}$ is the accumulated evidence for item $j$ (Tajima et al., 2016). The mean of this posterior (i.e. the first fraction in brackets) is a weighted sum of the prior mean, $z\u00af$, and the accumulated evidence, $x_{j}\u2062(t)$. The weights are determined by the\u00a0accumulation time ($t$), and the variances of the prior ($\\sigma_{z}^{2}$) and the momentary evidence ($\\sigma_{x}^{2}$), which control their respective informativeness. Initially, $t=0$ and $x_{j}\u2062(t)=0$, such that the posterior mean equals that of the prior, $z\u00af$. Over time, with increasing $t$, the influence of $x_{j}\u2062(t)$ becomes dominant, and the mean approaches $x_{j}\u2062(t)/t$ (i.e. the average momentary evidence) for a large $t$, at which point the influence of the prior becomes negligible. The posterior\u2019s variance (i.e. the second fraction in brackets) reflects the uncertainty in the decision maker\u2019s value inference. It initially equals the prior variance, $\\sigma_{z}^{2}$, and drops toward zero once $t$ becomes large. In this attention-free model, uncertainty monotonically decreases identically over time for both items, reflecting the standard assumption of accumulation-to-bound models that, in each small time period, the same amount of evidence is gathered for either choice item.\n\nTo introduce attention-modulation, we assume that attention limits information about the unattended item (Figure 1). This is consistent with behavioral and neurophysiological findings showing that attention boosts behavioral performance (Cohen and Maunsell, 2009; Cohen and Maunsell, 2010; Wang and Krauzlis, 2018) and the information encoded in neural populations (Ni et al., 2018; Ruff et al., 2018; Wittig et al., 2018). To achieve this, we first assume that the total rate of evidence across both items, as controlled by $\\sigma_{x}^{2}$, is fixed, and that attention modulates the relative amount of information gained about the attended versus unattended item. This 'attention bottleneck' is controlled by $\u03ba$ ($0\\leq\u03ba\\leq1$), such that $\u03ba$ represents the proportion of total information received for the unattended item, versus $1-\u03ba$ for the attended item. The decision maker can control which item to attend to, but has no control over the value of $\u03ba$, which we assume is fixed and known. To limit information, we change the momentary evidence for the attended item $j$ to $\\delta\u2062x_{j,n}\u223c\ud835\udca9\u2062(z_{j}\u2062\\delta\u2062t,\\frac{1}{1-\u03ba}\u2062\\sigma_{x}^{2}\u2062\\delta\u2062t)$, and for the unattended item $k=3-j$ to $\\delta\u2062x_{k,n}\u223c\ud835\udca9\u2062(z_{k}\u2062\\delta\u2062t,\\frac{1}{\u03ba}\u2062\\sigma_{x}^{2}\u2062\\delta\u2062t)$. Therefore, if $\u03ba\\leq\\frac{1}{2}$, the variance of the unattended item increases (i.e. noisier evidence) relative to the attended item. This makes the momentary evidence less informative about zk, and more informative about zj, while leaving the overall amount of information unchanged (see Materials\u00a0and\u00a0methods). Setting $\u03ba=\\frac{1}{2}$ indicates equally informative momentary evidence for both items, and recovers the attention-free scenario (Tajima et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63436/elife-63436-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic depicting the value-based decision-making model. When choosing between two snack items (e.g. apple versus donut), people tend to evaluate each item in turn, rather than think about all items simultaneously. While evaluating one item, they will pay less attention to the unattended item (blurred item). (B) Schematic of the value-based decision process for a single decision\u00a0trial. At trial onset, the model randomly attends to one item (green box). At every time step, it accumulates momentary evidence (orange box) that provides information about the true value of each item, which is combined with the prior belief of each item\u2019s value to generate a posterior belief. Note that the momentary evidence of the attended item comes from a tighter distribution. Afterwards, the model assesses whether to accumulate more evidence (orange), make a choice (black), or switch attention to the other item (green). (C) Evolution of the evidence accumulation process. The top panel shows momentary evidence at every time point for the two items. Note that evidence for the unattended item has a wider variance. The middle panel shows how the posterior estimate of each item may evolve over time (mean \u00b1 1SD). The horizontal\u00a0dotted lines indicate the unobserved, true values of the two items. The bottom panel shows how uncertainty decreases regarding the true value of each item. As expected, uncertainty decreases faster for the currently attended item compared to the unattended one. For this descriptive figure, we used the following parameters: $z=[13,10]$, $\\sigma_{x}^{2}=5$, $\\sigma_{z}^{2}=10$, $\\gamma=0.1$, $\\delta\u2062t=0.01$.\n\nLowering information for the unattended item impacts the value posteriors as follows. If the decision maker again accumulates evidence for some time $t=N\u2062\\delta\u2062t$, their belief about item $j=1$\u2019s value changes from Equation (1) to\n\n$$\nz_{1}|\\delta\u2062x_{1,1:N}\u223c\ud835\udca9\u2062(\\frac{\\sigma_{x}^{2}\u2062\\sigma_{z}^{-2}\u2062z\u00af+(1-\u03ba)\u2062X_{1}\u2062(t)}{\\sigma_{x}^{2}\u2062\\sigma_{z}^{-2}+(1-\u03ba)\u2062t_{1}+\u03ba\u2062t_{2}},\\frac{\\sigma_{x}^{2}}{\\sigma_{x}^{2}\u2062\\sigma_{z}^{-2}+(1-\u03ba)\u2062t_{1}+\u03ba\u2062t_{2}}),\n$$\n\nwhere t1 and t2, which sum up to the total accumulation time ($t=t_{1}+t_{2}$), are the durations that items 1 and 2 have been attended, respectively. The accumulated evidence $X_{1}\u2062(t)$ now isn\u2019t simply the sum of all momentary pieces of evidence, but instead down-weights them by $\\frac{1-\u03ba}{\u03ba}$ if the associated item is unattended (see Materials and methods). This prevents the large inattention noise from swamping the overall estimate (Drugowitsch et al., 2014). An analogous expression provides the posterior $z_{2}|\\delta\u2062x_{2,1:N}$ for item 2 (see\u00a0Appendix 1).\n\nThe attention modulation of information is clearly observable in the variance of the value\u2019s posterior for item 1 (Equation 2). For $\u03ba<\\frac{1}{2}$, this variance, which is proportional to the decision maker\u2019s uncertainty about the option\u2019s value, drops more quickly over time if item 1 rather than item 2 is attended (i.e. if t1 rather than t2 increases). Therefore, it depends on how long each of the two items have been attended to, and might differ between the two items across time (Figure 1C). As a result, decision performance depends on how much time is allocated to attending to each item.\n\nThe decision maker\u2019s best choice at any point in time is to choose the item with the larger expected value, as determined by the value posterior. However, the posterior by itself does not determine when it is best to stop accumulating evidence. In our previous attention-free model, we addressed the optimal stopping time by assuming that accumulating evidence comes at cost $c$ per second, and found the optimal decision policy under this assumption (Tajima et al., 2016). Specifically, at each time step of the decision-making process, the decision maker could choose between three possible actions. The first two actions involve immediately choosing one of the two items, which promises the associated expected rewards. The third action is to accumulate more evidence that promises more evidence, better choices, and higher expected reward, but comes at a higher cost for accumulating evidence. We found the optimal policy using dynamic programming that solves this arbitration by constructing a value function that, for each stage of the decision process, returns all expected rewards and costs from that stage onward (Bellman, 1952; Bertsekas, 1995). The associated policy could then be mechanistically implemented by an accumulation-to-bound model that accumulates the difference in expected rewards, $\u0394=\u27e8z_{2}|\\deltax_{2,1:N}\u27e9\u2212\u27e8z_{1}|\\deltax_{1,1:N}\u27e9$, and triggers a choice once one of two decision boundaries, which collapse over time, is reached (Tajima et al., 2016).\n\nOnce we introduce attention, a fourth action becomes available: the decision maker can choose to switch attention to the currently unattended item (Figure 1B). If such a switch comes at no cost, then the optimal strategy would be to continuously switch attention between both items to sample them evenly across time. We avoid this physically unrealistic scenario by introducing a cost cs for switching attention. This cost may represent the physical effort of switching attention, the temporal cost of switching (Wurtz, 2008; Cassey et al., 2013), or a combination of both. Overall, this leads to a value function defined over a four-dimensional space: the expected reward difference $\u0394$, the evidence accumulation times t1 and t2, and the currently attended item $y\\in{1,2}$ (see Appendix 1). As the last dimension can only take one of two values, we can equally use two three-dimensional value functions. This results in two associated policies that span the three-dimensional state space$(\u0394,t_{1},t_{2})$ (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63436/elife-63436-fig2-v2.jpg)\n\n**Figure 2.:** (A) The optimal policy space. The policy space can be divided into regions associated with different optimal actions (choose item 1 or 2, accumulate more evidence, switch attention). The boundaries between these regions can be visualized as contours in this space. The three panels on the right show cross-sections after slicing the space at different $\u0394$ values, indicated by the gray slices in the left panel. Note that when $\u0394=0$ (middle panel), the two items have equal value and therefore there is no preference for one item over the other. (B) Optimal policy spaces for different values of $y$ (currently attended item). The two policy spaces are mirror-images of each other. (C) Example deliberation process of a single trial demonstrated by a particle that diffuses across the optimal policy space. In this example, the model starts by attending to item 1, then makes two switches in attention before eventually choosing item 1. The bottom row shows the plane in which the particle diffuses. Note that the particle diffuses on the (gray, shaded) plane perpendicular to the time axis of the unattended item, such that it only increases in tj when attending to item j. Also note that the policy space changes according to the item being attended to, as seen in (B). See results text for more detailed description. See Figure 2\u2014figure supplement 1 to view changes in the optimal policy space depending on\u00a0changes to model parameters.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63436/elife-63436-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Changes in the optimal policy space and model behavior with adjustments in free model parameters. The optimal policy space and its associated psychometric curves from the base model are shown in the top row. The policy space and psychometric curves corresponding to changes in single free parameters are shown in subsequent rows. In rows 2\u20134, psychometric curves from the base model on row 1 is shown in red for comparison.\n\n### Features of the optimal policy\n\nAt any point within a decision, the model\u2019s current state is represented by a location in this 3D policy space, such that different regions in this space designate the optimal action to perform (i.e. choose, accumulate, switch). The boundaries between these regions can be visualized as contours in this 3D state space (Figure 2A). As previously discussed, there are two distinct policy spaces for when the decision maker is attending to item 1 versus item 2 that are symmetric to each other (Figure 2B).\n\nWithin a given decision, the deliberation process can be thought of as a particle that drifts and diffuses in this state space. The model starts out attending to an item at random ($y\\in1,2$), which determines the initial policy space (Figure 2B). Assume an example trial where the model attends to item 1 initially ($y=1$). At trial onset, the decision maker holds the prior belief, such that the particle starts on the origin ($\u0394=0$, $t_{1}=t_{2}=0$) which is within the \u2018accumulate\u2019 region. As the model accumulates evidence, the particle will move on a plane perpendicular to $t_{2}=0$, since t2 remains constant while attending to item 1 (Figure 2C, first column). During this time, evidence about the true values of both items will be accumulated, but information regarding item 2 will be significantly noisier (as controlled by $\u03ba$). Depending on the evidence accumulated regarding both items, the particle may hit the boundary for \u2018choose 1\u2019, \u2018choose 2\u2019, or 'switch (attention)'. Assume the particle hits the \u2018switch\u2019 boundary, indicating that the model is not confident enough to make a decision after the initial fixation to item 1. In other words, the difference in expected rewards between the two items is too small to make an immediate decision, and it is deemed advantageous to collect more information about the currently unattended item. Now, the model is attending to item 2, and the policy space switches accordingly ($y=2$). The particle, starting from where it left off, will now move on a plane perpendicular to the t1 axis (Figure 2C, second column). This process is repeated until the particle hits a decision boundary (Figure 2C, third column). Importantly, these shifts in attention are endogenously generated by the model as a part of the optimal decision strategy \u2014 it exploits its ability to control how much information it receives about either item\u2019s value.\n\nThe optimal policy space shows some notable properties. As expected, the \u2018switch\u2019 region in a given policy space is always encompassed in the \u2018accumulate\u2019 region of the other policy space, indicating that the model never switches attention or makes a decision immediately after an attention switch. Furthermore, the decision boundaries in 3D space approach each other over time, consistent with previous work that showed a collapsing 2D boundary for optimal value-based decisions without attention (Tajima et al., 2016). The collapsing bound reflects the model\u2019s uncertainty regarding the difficulty of the decision task (Drugowitsch et al., 2012). In our case, this difficulty depends on how different the true item values are, as items of very different values are easier to distinguish than those of similar value. If the difficulty is known within and across choices, the boundaries will not collapse over time, and their (fixed) distance will reflect the difficulty of the choice. However, since the difficulty of individual choices varies and is a priori unknown to the decision maker in our task, the decision boundary collapses so that the model minimizes wasting time on a choice that is potentially too difficult.\n\nThe optimal model had five free parameters that affect its behavior: (1) variance of evidence accumulation ($\\sigma_{x}^{2}$), (2) variance of the prior distribution ($\\sigma_{z}^{2}$), (3) cost of evidence accumulation ($c\u2062[s^{-1}]$), (4) cost of switching attention (cs), and (5) relative information gain from the attended vs. unattended items ($\u03ba$). The contour of the optimal policy boundaries changes in intuitive ways as these parameters are adjusted (Figure 2\u2014figure supplement 1). Increasing the noisiness of evidence accumulation ($\\sigma_{x}^{2}$) causes an overall shrinkage of the evidence accumulation space. This allows the model to reach a decision boundary more quickly under a relatively higher degree of uncertainty, given that evidence accumulation is less reliable but equally costly. Similarly, increasing the cost of accumulating evidence ($c$) leads to a smaller accumulation space so that the model minimizes paying a high cost for evidence accumulation. Increasing the switch cost cs leads to a smaller policy space for the \u2018switch\u2019 behavior, since there is an increased cost for switching attention. Similarly, decreasing the inattention noise by setting $\u03ba$ closer to $\\frac{1}{2}$ leads to a smaller \u2018switch\u2019 space because the model can obtain more reliable information from the unattended item, reducing the necessity to switch attention. To find a set of parameters that best mimic human behavior, we performed a random search over a large parameter space and selected the parameter set that best demonstrated the qualitative aspects of the behavioral data (see Appendix 1).\n\n### The optimal policy replicates human behavior\n\nTo assess if the optimal policy features the same decision-making characteristics as human decision makers, we used it to simulate behavior in a task analogous to the value-based decision task performed by humans in Krajbich et al., 2010. Briefly, in this task, participants first rated their preference of different snack items on a scale of \u221210 to 10. Then, they were presented with pairs of different snacks after excluding the negatively rated items and instructed to choose the preferred item. While they deliberate on their choice, the participants\u2019 eye movements were tracked and the fixation duration to each item was used as a proxy for visual attention.\n\nWe simulated decision-making behavior using value distributions similar to those used in the human experiment (see Materials\u00a0and\u00a0methods), and found that the model behavior qualitatively reproduces essential features of human choice behavior (Figure 3, Figure 3\u2014figure supplement 1). As expected in value-based decisions, a larger value difference among the compared items made it more likely for the model to choose the higher-valued item (Figure 3A; $t\u2062(38)=105.7,p<0.001$). Furthermore, the model\u2019s mean response time (RT) decreased with increasing value difference, indicating that less time was spent on trials that were easier (Figure 3B; $t\u2062(38)=-11.1,p<0.001$). Of note, while human RTs appeared to drop linearly with increasing value difference, our model\u2019s drop was concave across a wide range of model parameters (Figure 3\u2014figure supplement 1C). The model also switched attention less for easier trials, indicating that difficult trials required more evidence accumulation from both items, necessitating multiple switches in attention (Figure 3C; $t\u2062(38)=-8.10,p<0.001$). Since the number of switches is likely correlated with response time, we also looked at switch rate (number of switches divided by response time). Here, although human data showed no relationship between switch rate and trial difficulty, model behavior showed a positive relationship, suggesting an increased rate of switching for easier trials. However, this effect was absent when using the same number of trials as humans, and did not generalize across all model parameter values (Figure 3\u2014figure supplement 1D\u2013G).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63436/elife-63436-fig3-v2.jpg)\n\n**Figure 3.:** (A) Monotonic increase in probability of choosing item 1 as a function of the difference in value between item 1 and 2 ($t\u2062(38)=105.7,p<0.001$). (B) Monotonic decrease in response time (RT) as a function of trial difficulty ($t\u2062(38)=-11.1,p<0.001$). RT increases with increasing difficulty. (C) Decrease in the number of attention switches as a function of trial difficulty. More switches are made for harder trials ($t\u2062(38)=-8.10,p<0.001$). (D) Effect of last fixation location on item preference. The item that was fixated on immediately prior to the decision was more likely to be chosen. (E) Attention\u2019s biasing effect on item preference. The item was more likely to be chosen if it was attended for a longer period of time ($t\u2062(38)=5.32,p<0.001$). Since the probability of choosing item 1 depends on the degree of value difference between the two items, we normalized the p(choose item 1) by subtracting the average probability of choosing item 1 for each difference in item value. (F) Replication of fixation pattern during decision making. Both model and human data showed a fixation pattern where a short initial fixation was followed by a longer, then medium-length fixation. Error bars indicate standard error of the mean (SEM) across both human and simulated participants ($N=39$ for both). See Figure 3\u2014figure supplement 2 for an analogous figure for the perceptual decision task.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63436/elife-63436-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Parameter-dependence of psychometric/chronometric curves, and exploration of switch rate rather than switch number for the optimal model. (A\u2013C) Psychometric (A,B) and chronometric (C) curves after decreasing the evidence noise term ($\\sigma^{2}$) from 27 to 5. Figure 3 suggests a qualitative difference in psychometric/chronometric curves between human and model behavior. For Figure 3A,D, the model\u2019s psychometric curve appeared linear rather than sigmoidal. To show that this is a result of the difficulty of the task, as determined by the evidence noise term ($\\sigma^{2}$), and not a generalizable property of the model, we set ($\\sigma^{2}$) in (A) and (B) to a lower value, in which case the model exhibits sigmoidal psychometric curves. This sigmoidal shape arises because the decision becomes easier at extreme value differences and approaches perfect performance. In Figure 3B, the model\u2019s chronometric curve had a concave shape, whereas that of the humans appeared linear. As (C) shows, decreasing the noise term diminished, but did not eliminate this concave shape. (D) Human switch rate (number of switches divided by time) did not change significantly with trial difficulty ($t\u2062(38)=-0.32,p=0.75$). (E) In the optimal model, it significantly increased with a decrease in task difficulty ($t\u2062(38)=2.96,p=0.0052$). (F) This relationship ceases to be apparent once we reduce the number of simulated trials to that of the human data ($t\u2062(38)=1.02,p=0.31$), suggesting the human data may be underpowered to show such a relationship. (G) The relationship between switch rate and trial difficulty is not a general property of the optimal model, as a significant increase in the switch cost (adjusting $C_{s}$ from 0.018 to 0.1) removes the effect seen in (E) ($t\u2062(38)=-0.50,p=0.62$), even with a large number of simulated trials. Error bars indicate SEM across participants.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63436/elife-63436-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Replicating human perceptual decision-making behavior with the optimal model. In each trial of the perceptual decision task used in Tavares et al., 2017, human decision\u00a0makers had to identify which of two presented lines were closer in orientation to a preceding target orientation. To model this decision, the authors assumed that the decision maker compares the difference in perceptual quality (i.e. angle of a line; 0\u00b0, 5\u00b0, 10\u00b0, 15\u00b0) between the target and the two lines, then converted this difference to a scale ranging from 0 to 3 with three denoting the best possible proximity (i.e. 0\u00b0). Following this, we simulated the task such that our model accumulates noisy evidence centered around the perceptual difference scale (0\u20133) between the target and the two lines, and chose the item with a larger value using this scale (see Appendix 1). (A) Monotonic increase in probability of choosing item 1 as a function of the perceptual difference between item 1 and 2. (B) Decrease in response time (RT) as a function of trial difficulty. (C) Decrease in the number of switches as a function of trial difficulty. (D) Effect of last fixation location on item preference. The item that was fixated on immediately prior to the decision was more likely to be chosen. (E) Attention\u2019s biasing effect on item choice. The item was more likely to be chosen if it was attended to for a longer period of time. (F) Replication of fixation pattern during decision making. In the perceptual decision-making task, both model and human data showed increased duration for every subsequent fixation, a notable difference compared to fixation behavior in the value-based task. For (A\u2013D), the behavioral data has a smaller range of perceptual differences due to insufficient trials with such large perceptual difference. Error bars indicate SEM across participants.\n\nThe model also reproduced the biasing effects of fixation on preference seen in humans (Krajbich et al., 2010). An item was more likely to be chosen if it was the last one to be fixated on (Figure 3D), and if it was viewed for a longer time period (Figure 3E; $t\u2062(38)=5.32,p<0.001$). Interestingly, the model also replicated a particular fixation pattern seen in humans, where a short first fixation is followed by a significantly longer second fixation, which is followed by a medium-length third fixation (Figure 3F). We suspect this pattern arises due to the shape of the optimal decision boundaries, where the particle is more likely to hit the \u2018switch\u2019 boundary in a shorter time for the first fixation, likely reflecting the fact that the model prefers to sample from both items at least once. Consistent with this, Figure 3C shows that the \u2018accumulate\u2019 space is larger for the second fixation compared to the first fixation. Of note, the attentional drift diffusion model (aDDM) that was initially proposed to explain the observed human data did not generate its own fixations, but rather used fixations sampled from the empirical distribution of human subjects. Furthermore, they were only able to achieve this fixation pattern by sampling the first fixation, which was generally shorter than the rest, separately from the remaining fixation durations (Krajbich et al., 2010; Figure 4\u2014figure supplement 3E).\n\nOne feature that distinguishes our model from previous attention-based decision models is that attention only modulates the variance of momentary evidence without explicitly down-weighting the value of the unattended item (Krajbich et al., 2010; Song et al., 2019). Therefore, at first glance, preference for the more-attended item is not an obvious feature since our model does not appear to boost its estimated value. However, under the assumption that decision\u00a0makers start out with a zero-mean prior, Bayesian belief updating with attention modulation turns out to effectively account for a biasing effect of fixation on the subjective value of items (Li and Ma, 2019). For instance, consider choosing between two items with equal underlying value. Without an attention-modulated process, the model will accumulate evidence from both items simultaneously, and thus have no preference for one item over the other. However, once attention is introduced and the model attends to item 1 longer than item 2, it will have acquired more evidence about item 1\u2019s value. This will cause item 1 to have a sharper, more certain likelihood function compared to item 2 (Figure 4A). As posterior value estimates are formed by combining priors and likelihoods in proportion to their associated certainties, the posterior of item 1 will be less biased towards the prior than that of item 2. This leads to a higher subjective value of item 1 compared to that of item 2 even though their true underlying values are equal.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63436/elife-63436-fig4-v2.jpg)\n\n**Figure 4.:** (A) Bayesian explanation of attention-driven value preference. Attending to one of two equally-valued items for a longer time (red vs. blue) leads to a more certain (i.e. narrower) likelihood and weaker bias of its posterior towards the prior. This leads to a subjectively higher value for the\u00a0longer\u00a0attended item. (B) Effect of response time (RT; left panel; $t\u2062(38)=-3.25,p=0.0024$) and sum of the two item values (value sum; right panel; $t\u2062(38)=2.95,p=0.0054$) on attention-driven choice bias in humans. This choice bias quantifies the extent to which fixations affect choices for the chosen subset of trials (see Materials and methods). (C) Effect of response time (left panel; $t\u2062(38)=-32.0,p<0.001$) and sum of the two item values (right panel; $t\u2062(38)=11.4,p<0.001$) on attention-driven choice bias in the optimal model. See Materials and methods for details on how the choice bias coefficients were computed. For (B) and (C), for the left panels, the horizontal axis is binned according to the number of total fixations in a given trial. For the right panels, the horizontal axis is binned to contain the same number of trials per bin. Horizontal error bars indicate SEM across participants of the mean x-values within each bin. Vertical error bars indicate SEM across participants. (D) Comparing decision performance between the optimal policy and the original aDDM model. Performance of the aDDM was evaluated for different boundary heights (error bars = SEM across simulated participants). Even for the reward-maximizing aDDM boundary height, the optimal model significantly outperformed the aDDM ($t\u2062(38)=3.01,p=0.0027$). (E) Decision performance for different degrees of the attention bottleneck ($\u03ba$) while leaving the overall input information unchanged (error bars = SEM across simulated participants). The performance peak at $\u03ba=0.5$ indicates that allocating similar amounts of attentional resource to both items is beneficial ($t\u2062(38)=-8.51,p<0.001$).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63436/elife-63436-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Effect of item values on attention switch rate and fixation duration across trials for human data, optimal model, and aDDM. (A) Effect of absolute value difference (i.e. trial difficulty) on switch rate. Only the aDDM showed a significant dependence of switch rate on difficulty, featuring a higher switch rate for less difficult trials ($t\u2062(38)=4.97,p<0.001$). (B) Relationship between value sum and switch rate. A larger value sum led to a smaller switch rate for the optimal model ($t\u2062(38)=-3.36,p=0.0018$). Human data showed a non-significant trend in the same direction ($t\u2062(38)=-1.31,p=0.20$). (C) Dependence of middle fixation duration on absolute value difference. Humans and both models featured shorter fixation duration in easier trials (human: $t\u2062(38)=-4.15,p<0.001$; optimal model: $t\u2062(38)=-2.85,p=0.0070$; aDDM: $t\u2062(38)=-6.52,p<0.001$). (D) Dependence of middle fixation duration on value sum. Both the optimal model and the aDDM featured shorter fixation durations for larger value sums (optimal model: $t\u2062(38)=-4.06,p<0.001$; aDDM: $t\u2062(38)=-4.34,p<0.001$). Human data featured a non-significant trend in the same direction ($t\u2062(38)=-1.53,p=0.13$). For all plots, we computed the mean switch rate (number of switches divided by RT) and middle fixation duration for every trial, then grouped the trials by absolute value difference (i.e. trial difficulty) or value sum. We then computed the mean switch rate and fixation duration across participants for each x-variable. Curves with a slope significantly different from zero are indicated by a bar above the curve with its associated p-value (see Materials and methods for statistics involving slopes). For both model\u2019s simulations, we used the same item pairs and trial numbers as the human data. For the aDDM simulations, we used the same parameter setup used in the original paper by Krajbich et al., 2010 rather than the signal-to-noise-matched version we used to compare the mean reward between the optimal model and aDDM. Error bars indicate SEM across participants.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63436/elife-63436-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Effect of passed time on switch probability and fixation duration within trials. (A) Effect of passed time on switch probability, using all trials. Switch probability for humans and aDDM peaked within 1 s of stimulus onset and gradually decreased thereafter. For the optimal model, the majority of attention switches were clustered around discrete time points. Note that the optimal model assumes the decision\u00a0maker to use precise time estimates to drive attention switches. If we were to take into account the noisiness of human choice estimates (Buhusi and Meck, 2005), we would expect the optimal model curves to smoothen out and approach those of human data and the aDDM. (B\u2013D) Effect of passed time on switch probability after dividing trials into upper and lower one-third of certain variables (B: RT, C: value sum, D: absolute value difference). When trials are split by RT (B), humans and aDDM featured a higher switch probability for longer (i.e. higher RT) trials. The optimal model featured comparable patterns within the time periods in which switches occurred. The dashed line indicates the point in time in which all trials were completed for the lower RT group. (E) Effect of passed time on fixation duration. Fixation duration increased with passed time for humans and the optimal model, suggesting that more time is allotted to each fixation as the trial becomes more difficult (human: $t\u2062(38)=4.50,p<0.001$; optimal model: $t\u2062(38)=46.4,p<0.001$). This trend is not seen in the aDDM which draws all middle fixations randomly from the same empirical distribution, therefore eliminating any effect of time on fixation duration within a single trial ($t\u2062(38)=-0.57,p=0.57$). To compute the switch probability (A\u2013D), we aligned all trials within each participant by stimulus onset, then counted the number of switches within each 0.2 s time bin. We then averaged the switch count in each time bin across trials to compute the switch probability. We only included time points up to when at least 1/3 of the total trials are included, and removed the last fixations since they are prematurely terminated when a decision is made. To split trials based on different variables, all trials within a participant were split into three equally sized bins based on the variable of interest. We plot the mean switch probability across participants, only including the first (green) and last (magenta) bins. At each time point, we performed a t-test across participants between the two bins, and marked all time points with a significant difference across bins with an asterisk (Bonferroni corrected; Bonferroni, 1936). For (E), whenever a new fixation occurred, we recorded its duration until the next fixation, excluding the first and last fixations. We averaged the fixation durations at each 0.05 s time bin across trials, dropping any time bin that contain data from less than 1/3 of all trials. We then plotted the mean fixation duration at each time bin across participants. Error bars indicate SEM across participants.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63436/elife-63436-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Additional analyses of fixation behavior, performance, and choice bias between human data, optimal model, and aDDM. (A) Proportion of all trials that ended after a single fixation. Both the optimal model and aDDM featured more single fixation trials when compared to human data (optimal model: $t\u2062(76)=2.96,p=0.0052$; aDDM: $t\u2062(76)=3.35,p=0.0019$). (B) Comparing the mean reward received by humans versus the two models using the best-fitting model parameters. There was no significant difference between the mean rewards of humans versus either model (optimal model: $t\u2062(76)=0.69,p=0.49$; aDDM: $t\u2062(76)=-0.062,p=0.95$). Unlike in Figure 4D, the mean reward of the optimal model was not larger than the aDDM in this scenario because we simulated the aDDM using the original parameters rather than those that match the optimal model\u2019s signal-to-noise ratio of the momentary evidence. To calculate mean reward, we used the same cost per unit time used for the optimal model ($c=0.23$). For model simulations in (A) and (B), we used three times as many trials as performed by humans. (C,D) Effect of RT (C) and value sum (D) on choice bias in the aDDM. The aDDM also replicated the same effects as predicted by the optimal model (RT: $t\u2062(38)=-48.6,p<0.001$; value sum: $t\u2062(38)=14.7,p<0.001$). For both plots, trial data were binned into equally sized bins based on the variable on the x-axis. See Materials and\u00a0methods\u00a0for how to compute the choice bias coefficient. (E) Mean fixation duration of the first three fixations across simulated aDDM participants. Since the fixation durations in the aDDM are sampled from the empirical distribution, it closely mimics those from human data. (F) Distribution of response times. Both models predict an RT distribution that seem to include more trials with RT <1 s. For the aDDM simulations, we used the same parameter setup used in the original paper by Krajbich et al., 2010. For (A\u2013E), vertical error bars indicate SEM across participants. For (C) and (D), horizontal error bars indicate the SEM of the bin means.\n\nThis insight leads to additional predictions for how attention-modulated choice bias should vary with certain trial parameters. For instance, the Bayesian account predicts that trials with longer response times should have a weaker choice bias than trials with shorter response times. This is because the difference in fixation times between the two items will decrease over time as the model has more opportunities to switch attention. Both the human and model behavior robustly showed this pattern (Figure 4B; human, $t\u2062(38)=-3.25,p=0.0024$; model, $t\u2062(38)=-32.0,p<0.001$). Similarly, choice bias should increase for trials with higher\u00a0valued items. In this case, since the evidence distribution is relatively far away from the prior distribution, the posterior distribution is \u2018pulled away\u2019 from the prior distribution to a greater degree for the attended versus unattended item, leading to greater choice bias. Both human and model data confirmed this behavioral pattern (Figure 4C; human, $t\u2062(38)=2.95,p=0.0054$; model, $t\u2062(38)=11.4,p<0.001$). Since response time may be influenced by the sum of the two item values and vice versa, we repeated the above analyses using a regression model that includes both value sum and response time as independent variables (see Materials\u00a0and\u00a0methods). The results were largely consistent for both model (effect of RT on choice bias: $t\u2062(38)=-5.73,p<0.001$, effect of value sum: $t\u2062(38)=7.88,p<0.001$) and human (effect of RT: $t\u2062(38)=-1.32,p=0.20$, effect of value sum: $t\u2062(38)=2.91,p=0.006$) behavior.\n\nNext, we assessed how the behavioral predictions arising from the optimal model differed from those of the original attentional drift diffusion model (aDDM) proposed by Krajbich et al., 2010. Unlike our model, the aDDM follows from traditional diffusion models rather than Bayesian models. It assumes that inattention to an item diminishes its value magnitude rather than increasing the noisiness of evidence accumulation. Despite this difference, the aDDM produced qualitatively similar behavioral predictions as the optimal model (see Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2, and Figure 4\u2014figure supplement 3 for additional behavioral comparisons between human data, the optimal model, and aDDM). We also tested to which degree the optimal model yielded a higher mean reward than the aDDM, which, despite its simpler structure, could nonetheless collect competitive amounts of reward. Given that our model provides the optimal solution to the decision problem under the current assumptions, it is expected to outperform, or at least match, the performance of alternative models. To ensure a fair comparison, we adjusted the aDDM model parameters (i.e. attentional value discounting and the noise variance) so that the momentary evidence provided to the two models has equivalent signal-to-noise ratios (see Appendix 1). Using the same parameters fit to human behavior without this adjustment in signal-to-noise ratio yielded a higher mean reward for the aDDM model ($t\u2062(76)=-14.8,p<0.001$), since the aDDM receives more value information at each time point than the optimal model. The original aDDM model fixed the decision boundaries at \u00b11 and subsequently fit model parameters to match behavioral data. Since we were interested in comparing mean reward, we simulated model behavior using incrementally increasing decision barrier heights, looking for the height that yields the maximum mean reward (Figure 4D). We found that even for the best-performing decision barrier height, the signal-to-noise ratio-matched aDDM model yielded a significantly lower mean reward compared to that of the optimal model ($t\u2062(76)=3.01,p=0.0027$).\n\nRecent advances in artificial intelligence used attentional bottlenecks to regulate information flow with significant associated performance gains (Bahdanau et al., 2015; Gehring et al., 2017; Mnih et al., 2014; Ba et al., 2015; Sorokin et al., 2015). Analogously, attentional bottlenecks might also be beneficial for value-based decision-making. To test this, we asked if paying relatively full attention on a single item at a time confers any advantages over the ability to pay relatively less reliable, but equal attention to multiple options in parallel. To do so, we varied the amount of momentary evidence provided about both the attended and unattended items while keeping the overall amount of evidence, as controlled by $\\sigma_{x}^{2}$, fixed. This was accomplished by varying the $\u03ba$ term. The effect of $\u03ba$ on the optimal policy was symmetric around $\u03ba=0.5$, such that information gained from attended item at $\u03ba=0.2$ is equal to that of the unattended item at $\u03ba=0.8$. Setting $\u03ba=0.5$ resulted in equal momentary evidence about both items, such that switching attention had no effect on the evidence collected about either item. When tuning model parameters to best match human behavior, we found a low $\u03ba\u22480.004$, suggesting that humans tend to allocate the majority of their presumably fixed cognitive resources to the attended item. This allows for reliable evidence accumulation for the attended item, but is more likely to necessitate frequent switching of attention.\n\nTo investigate whether widening this attention bottleneck leads to changes in decision performance, we simulated model behavior for different values of $\u03ba$ (0.1 to 0.9, in 0.1 increments). Interestingly, we found that mean reward from the simulated trials is greatest at $\u03ba=0.5$ and decreases for more extreme values of $\u03ba$, suggesting that a more even distribution of attentional resources between the two items is beneficial for maximizing reward ($t\u2062(38)=-8.51,p<0.001$).\n\n### Optimal attention-modulated policy for perceptual decisions\n\nThe impact of attention is not unique to value-based decisions. In fact, recent work showed that fixation can bias choices in a perceptual decision-making paradigm (Tavares et al., 2017). In their task, participants were first shown a target line with a certain orientation, then shown two lines with slightly different orientations. The goal was to choose the line with the closest orientation to the previously shown target. Consistent with results in the value-based decision task, the authors demonstrated that the longer\u00a0fixated option was more likely to be chosen.\n\nWe modified our attention-based optimal policy to perform in such perceptual decisions, in which the goal was to choose the option that is the closest in some quantity to the target, rather than choosing the higher\u00a0valued option. Therefore, our model can be generalized to any task that requires a binary decision based on some perceptual quality, whether that involves finding the brighter dot between two dots on a screen, or identifying which of the two lines on the screen is longer. Similar to our value-based case, the optimal policy for perceptual decisions was successful at reproducing the attention-driven biases seen in humans in Tavares et al., 2017, (Figure 3\u2014figure supplement 2).\n\n## Discussion\n\nIn this work, we derive a novel normative decision-making model with an attentional bottleneck, and show that it is able to reproduce the choice and fixation patterns of human decision\u00a0makers. Our model significantly extends prior attempts to incorporate attention into perceptual and value-based decision-making in several ways. First, we provide a unified framework in which fixations are endogenously generated as a core component of the normative decision-making strategy. This is consistent with previous work that showed that fixation patterns were influenced by variables relevant for the decision, such as trial difficulty or the value of each choice item (Krajbich et al., 2010; Krajbich and Rangel, 2011). However, prior models of such decisions assumed an exogenous source of fixations (Krajbich et al., 2010; Krajbich and Rangel, 2011) or generated fixations using heuristics that relied on features such as the salience or value estimates of the choice options (Towal et al., 2013; Gluth et al., 2020). Other models generated fixations under the assumption that fixation duration should depend on the expected utility or informativeness of the choice items (Cassey et al., 2013; Ke et al., 2016; Song et al., 2019). For example, (Cassey et al., 2013) assumed that the informativeness of each item differed, which means the model should attend to the less informative item longer in general. Furthermore, since their decision task involved a fixed-duration, attention switches also occurred at fixed times rather than being dynamically adjusted across time, as in our case with a free-response paradigm. A recent normative model supported a continuous change of attention across choice items, and so could\u00a0not relate attention to the observed discrete fixation changes (H\u00e9bert and Woodford, 2019). Our work significantly builds on these prior models by identifying the exact optimal policy using dynamic programming, demonstrating that fixation patterns could reflect active information gathering through controlling an attentional bottleneck. This interpretation extends previous work on visual attention to the realm of value-based and perceptual decision-making (Yang et al., 2016; Hoppe and Rothkopf, 2016; Hayhoe and Ballard, 2005; Chukoskie et al., 2013; Corbetta and Shulman, 2002).\n\nSecond, our model posits that attention lowers the variance of the momentary evidence associated with the attended item, which enhances the reliability of its information (Drugowitsch et al., 2014). In contrast, previous models accounted for attention by down-weighting the value of the unattended item (Krajbich et al., 2010; Krajbich and Rangel, 2011; Song et al., 2019), where one would a priori assume fixations to bias choices. Our approach was inspired by neurophysiological findings demonstrating that visual attention selectively increases the firing rate of neurons tuned to task-relevant stimuli (Reynolds and Chelazzi, 2004), decreases the mean-normalized variance of individual neurons (Mitchell et al., 2007; Wittig et al., 2018), and reduces the correlated variability of neurons at the population level (Cohen and Maunsell, 2009; Mitchell et al., 2009; Averbeck et al., 2006). In essence, selective attention appears to boost the signal-to-noise ratio, or the reliability of information encoded by neuronal signals rather than alter the magnitude of the value encoded by these signals. One may argue that we could have equally chosen to boost the evidence\u2019s mean while keeping its variance constant to achieve a similar boost in signal-to-noise ratio of the attended item. However, doing so would still distinguish our model from previous accumulation-to-bound models, as Bayes-optimal evidence accumulation in this model variant nonetheless demands the use of at least three dimensions (see Figure 2), and could not be achieved in the two dimensions used by previous models. Furthermore, this change would have resulted in less intuitive equations for the value posterior (Equation 2).\n\nUnder this framework, we show that the optimal policy can be implemented as a four-dimensional accumulation-to-bound model where the particle drifts and diffuses according to the fixation duration to either item, the currently attended item, and the difference the in items\u2019 value estimates. This policy space is significantly more complex compared to previous attention-free normative models, which can be implemented in a two-dimensional space. Nevertheless, the attention-modulated optimal policy still featured a collapsing boundary in time consistent with the attention-free case (Drugowitsch et al., 2012; Tajima et al., 2016).\n\nWhen designing our model, we took the simplest possible approach to introduce an attentional bottleneck into normative models of decision-making. Our aim was to provide a precise (i.e. without approximations), normative explanation for how fixation changes qualitatively interact with human decisions rather than quantitatively capture all details of human behavior, which is likely driven by additional heuristics and features beyond the scope of our model (Acerbi et al., 2014; Drugowitsch et al., 2016). For instance, it has been suggested that normative allocation of attention should also depend on the item values to eliminate non-contenders, which we did not incorporate as a part of our model (Towal et al., 2013; Gluth et al., 2020). Perhaps as a result of this approach, our model did not provide the best quantitative fit and was unable to capture all of the nuances of the psychometric curves from human behavior, including a seemingly linear relationship between RT and trial difficulty (Figure 3). As such, we expect other models using approximations to have a better quantitative fit to human data (Krajbich et al., 2010; Callaway et al., 2020). Instead, a normative understanding can provide a basis for understanding limitations and biases that emerge in human behavior. Consistent with this goal, we were able to qualitatively capture a wide range of previously observed features of human decisions (Figure 3), suggest a computational rationale for fixation-based choice biases (Figure 4A), and confirm new predictions arising from our theory (Figure 4B\u2013C). In addition, our framework is compatible with recent work by Sepulveda et al., 2020 that demonstrated that attention can bias choices toward the lower-valued option if participants are instructed to choose the less desirable item (see Appendix 1).\n\nDue to the optimal policy\u2019s complexity (Figure 2), we expect the nervous system to implement it only approximately (e.g. similar to Tajima et al., 2019 for multi-alternative decisions). Such an approximation has been recently suggested by Callaway et al., 2020, where they proposed a model of N-alternative choice using approaches from rational inattention to approximate optimal decision-making in the presence of an attentional bottleneck. Unlike our work, they assumed that the unattended item is completely ignored, and therefore could not investigate the effect of graded shifts of attentional resources between items (Figure 4E). In addition, their model did not predict a choice bias in binary choices due to a different assumption about the Bayesian prior.\n\nIn our model, we assumed the decision maker\u2019s prior belief about the item values is centered at zero. In contrast, Callaway et al., 2020 chose a prior distribution based on the choice set, centered on the average value of only the tested items. While this is also a reasonable assumption (Shenhav et al., 2018), it likely contributed to their inability to demonstrate the choice bias for binary decisions. Under the assumption of our zero-mean prior, formulating the choice process through Bayesian inference revealed a simple and intuitive explanation for choice biases (Figure 4A) (see also Li and Ma, 2020). This explanation required the decision maker to a-priori believe the items\u2019 values to be lower than they actually are when choosing between appetitive options, consistent with evidence that item valuations vary inversely with the average value of recently observed items (Khaw et al., 2017). The zero-mean prior also predicts an opposite effect of the choice bias when deciding between aversive items, such that less-fixated items should become the preferred choice. This is exactly what has been observed in human decision\u00a0makers (Armel et al., 2008). We justified using a zero-mean bias by pointing out that participants in the decision task were allowed to rate items as having both positive or negative valence (negative-valence items were excluded from the binary decision task). However, there is some evidence that humans also exhibit choice biases when only choosing between appetitive items (Cavanagh et al., 2014; Smith and Krajbich, 2018; Smith and Krajbich, 2019). Although our setup suggests a zero-mean prior is required to reproduce the choice bias, the exact features and role of the Bayesian prior in human decisions still remains an open question for future work.\n\nWe show that narrowing the attentional bottleneck by setting $\u03ba$ to values closer to 0 or 1 does not boost performance of our decision-making model (Figure 4E). Instead, spreading a fixed cognitive reserve evenly between the attended and unattended items maximized performance. This is consistent with prior work that showed that a modified drift diffusion model with a continuously varying attention would perform optimally when attention is always equally divided (Fudenberg et al., 2018). However, this does not necessarily imply that equally divided attention always constitutes the normative behavior. If the decision maker has already paid more attention to one item over the other within a decision, it may be optimal to switch attention and gain more information about the unattended item rather than to proceed with equally divided attention.\n\nParameters fit to human behavior reveal that humans tend to allocate a large proportion of their cognitive resource toward the attended item, suggesting that the benefits of an attentional bottleneck might lie in other cognitive processes. Indeed, machine learning applied to text translation (Bahdanau et al., 2015; Gehring et al., 2017), object recognition (Mnih et al., 2014; Ba et al., 2015), and video-game playing (Sorokin et al., 2015) benefits from attentional bottlenecks that allow the algorithm to focus resources on specific task subcomponents. For instance, image classification algorithms that extract only the relevant features of an image for high-resolution processing demonstrated improved performance and reduced computational cost compared to those without such attentional features (Mnih et al., 2014). Similarly, attentional bottlenecks that appear to limit human decision-making performance might have beneficial effects on cognitive domains outside the scope of binary value-based decisions. This is consistent with the idea that the evolutionary advantage of selective attention involves the ability to rapidly fixate on salient features in a cluttered environment, thereby limiting the amount of information that reaches upstream processing and reducing the overall computational burden (Itti and Koch, 2001).\n\nAn open question is whether our findings can be generalized to multi-alternative choice paradigms (Towal et al., 2013; Ke et al., 2016; Gluth et al., 2020; Tajima et al., 2019). While implementing the optimal policy for such choices may be analytically intractable, we can reasonably infer that a choice bias driven by a zero-mean prior would generalize to decisions involving more than two options. However, in a multi-alternative choice paradigm where heuristics involving value and salience of items may influence attention allocation, it is less clear whether an equally divided attention among all options would still maximize reward. We hope this will motivate future studies that investigate the role of attention in more realistic decision scenarios.\n\n## Materials and methods\n\nHere, we provide an outline of the framework and its results. Detailed derivations are provided in Appendix 1.\n\n### Attention-modulated decision-making model\n\nBefore each trial, z1 and z2 are drawn from $z_{j}\u223c\ud835\udca9\u2062(z\u00af,\\sigma_{z}^{2})$. z1 and z2 correspond to the value of each item. In each time-step $n>0$ of duration $\\delta\u2062t$, the decision\u00a0maker observes noisy samples of each zj. This momentary evidence is drawn from $\\delta\u2062x_{j,n}|z_{j}\u223c\ud835\udca9\u2062(z_{j}\u2062\\delta\u2062t,\\frac{1}{1-\u03ba}\u2062\\sigma_{x}^{2}\u2062\\delta\u2062t)$ for the attended item $j=y_{n}$, and $\\delta\u2062x_{k,n}|z_{k}\u223c\ud835\udca9\u2062(z_{k}\u2062\\delta\u2062t,\\frac{1}{\u03ba}\u2062\\sigma_{x}^{2}\u2062\\delta\u2062t)$ for the unattended item $k\\neqy_{n}$. We measure how informative a single momentary evidence sample is about the associated true value by computing the Fisher information it provides about this value. This Fisher information sums across independent pieces of information. This makes it an adequate measure for assessing the informativeness of momentary evidence, which we assume to be independent across time and items. Computing the Fisher information results in $(1-\u03ba)\u2062\\sigma_{x}^{-2}\u2062\\delta\u2062t$ in $\\delta\u2062x_{j,n}$ about zj for the attended item, and in $\u03ba\u2062\\sigma_{x}^{-2}\u2062\\delta\u2062t$ in $\\delta\u2062x_{k,n}$ about zk for the unattended item. Therefore, setting $\u03ba\\leq\\frac{1}{2}$ boosts the information of the attended, and reduces the information of the unattended item, while keeping the total information about both items at a constant $(1-\u03ba)\u2062\\sigma_{x}^{-2}\u2062\\delta\u2062t+\u03ba\u2062\\sigma_{x}^{-2}\u2062\\delta\u2062t=\\sigma_{x}^{-2}\u2062\\delta\u2062t$. The posterior zj for $j\\in{1,2}$ after $t=N\u2062\\delta\u2062t$ seconds is found by Bayes\u2019 rule, $p\u2062(z_{j}|\\delta\u2062x_{j,1:N},y_{1:N})\u221dp\u2062(z_{j})\u2062\\prod_{n=1}^{N}p\u2062(\\delta\u2062x_{j,n}|z_{j},y_{n})$, which results in Equation (2). If $y_{n}\\in{1,2}$ identifies the attended item in each time-step, the attention times in this posterior are given by $t_{1}=\\delta\u2062t\u2062\\sum_{n=1}^{N}(2-y_{n})$ and $t_{2}=\\delta\u2062t\u2062\\sum_{n=1}^{N}(y_{n}-1)$. The attention-weighted accumulated evidence is $X_{1}\u2062(t)=\\sum_{n=1}^{N}(\\frac{1-\u03ba}{\u03ba})^{y_{n}-1}\u2062\\delta\u2062x_{1,n}$ and $X_{2}\u2062(t)=\\sum_{n=1}^{N}(\\frac{1-\u03ba}{\u03ba})^{2-y_{n}}\u2062\\delta\u2062x_{2,n}$, down-weighting the momentary evidence for periods when the item is unattended. Fixing $\u03ba=1/2$ recovers the attention-free case of Tajima et al., 2016, and the associated posterior, Equation (1).\n\nWe found the optimal policy by dynamic programming (Bellman, 1952; Drugowitsch et al., 2012), which, at each point in time, chooses the action that promises the largest expected return, including all rewards and costs from that point into the future. Its central component is the value function that specifies this expected return for each value of the sufficient statistics of the task. In our task, the sufficient statistics are the two posterior means, $\u27e8z_{j}|X_{j}(t),t_{1},t_{2}\u27e9$ for $j\\in{1,2}$, the two accumulation times, t1 and t2, and the currently attended item yn. The decision maker can choose between four actions at any point in time. The first two are to choose one of the two items, which is expected to yield the corresponding reward, after which the trial ends. The third action is to accumulate evidence for some more time $\\delta\u2062t$, which comes at cost $c\u2062\\delta\u2062t$, and results in more momentary evidence and a corresponding updated posterior. The fourth is to switch attention to the other item $3-y_{n}$, which comes at cost $c_{s}>0$. As the optimal action is the one that maximizes the expected return, the value for each sufficient statistic is the maximum over the expected returns associated with each action. This leads to the recursive Bellman\u2019s equation that relates values with different sufficient statistics (see Appendix\u00a01 for details) and reveals the optimal action for each of these sufficient statistics. Due to symmetries in our task, it turns out these optimal actions only depend on the difference in posterior means $\u0394$, rather than each of the individual means (see Appendix\u00a01). This allowed us to compute the value function and associated optimal policy in the lower-dimensional $(\u0394,t_{1},t_{2},y)$-space, an example of which is shown in (Figure 2).\n\nThe optimal policy was found numerically by backwards induction (Tajima et al., 2016; Brockwell and Kadane, 2003), which assumes that at a large enough $t=t_{1}+t_{2}$, a decision is guaranteed and the expected return equals $\u0394$. We set this time point as $t=6\u2062s$ based on empirical observations. From this point, we move backwards in small time steps of 0.05\u00a0s and traverse different values of $\u0394$ which was also discretized into steps of 0.05. Upon completing this exercise, we are left with a three-dimensional grid with the axes corresponding to t1, t2 and $\u0394$, where the value assigned to each point in space indicates the optimal decision to take for the given set of sufficient statistics. The boundaries between different optimal actions can be visualized as three-dimensional manifolds (Figure 2).\n\n### Model simulations\n\nUsing the optimal policy, we simulated decisions in a task analogous to the one humans performed in Krajbich et al., 2010. On each simulated trial, two items with values z1 and z2 are presented. The model attends to one item randomly ($y\\in[1,2]$), then starts accumulating noisy evidence and adjusts its behavior across time according to the optimal policy. Since the human data had a total of 39 participants, we simulated the same number of participants ($N=39$) for the model, but with a larger number of trials. For each simulated participant, trials consisted of all pairwise combinations of values between 0 and 7, iterated 20 times. This yielded a total of 1280 trials per simulated participant.\n\nWhen computing the optimal policy, there were several free parameters that determined the shape of the decision boundaries. Those parameters included the evidence noise term ($\\sigma_{x}^{2}$), spread of the prior distribution ($\\sigma_{z}^{2}$), cost of accumulating evidence ($c\u2062[s^{-1}]$), cost of switching attention (cs), and the relative information gain for the attended vs. unattended items ($\u03ba$). In order to find a set of parameters that best mimics human behavior, we performed a random search over a large parameter space and simulated behavior using the randomly selected set of parameters (Bergstra and Bengio, 2012). We iterated this process for 2,000,000 sets of parameters and compared the generated behavior to that of humans (see Appendix 1). After this search process, the parameter set that best replicated human behavior consisted of $c_{s}=0.0065$, $c=0.23$, $\\sigma_{x}^{2}=27$, $\\sigma_{z}^{2}=18$, $\u03ba=0.004$.\n\n### Statistical analysis\n\nThe relationship between task variables (e.g. difference in item value) and behavioral measurements (e.g. response time) were assessed by estimating the slope of the relationship for each participant. For instance, to investigate the association between response times and absolute value difference (Figure 3B), we fit a linear regression within each participant using the absolute value difference and response time for every trial. Statistical testing was performed using one-sample t-tests on the regression coefficients across participants. This procedure was used for statistical testing involving Figure 3B,C,E, and Figure 4B,C. To test for the effect of RT and value sum on choice bias after accounting for the other variable, we used a similar approach and used both RT and value sum as independent variables in the regression model and the choice bias coefficient as the dependent variable. To test for a significant peak effect for Figure 4E, we used the same procedure after subtracting 0.5 from the original $\u03ba$ values and taking their absolute value. To compare performance between the optimal model and the aDDM (Figure 4D), we first selected the best-performing aDDM model, then performed an independent-samples t-test between the mean rewards from simulated participants from both models.\n\nTo quantify the degree of choice bias (Figure 4B,C), we computed a choice bias coefficient. For a given group of trials, we performed a logistic regression with fixation time difference ($t_{1}-t_{2}$) as the independent variable and a binary-dependent variable indicating whether item 1 was chosen on each trial. After performing this regression within each participant\u2019s data, we performed a t-test of the regression coefficients against zero. The the resulting t-statistic was used as the choice bias coefficient, as it quantified the extent to which fixations affected choice in the given subset of trials.\n\n### Data and code availability\n\nThe human behavioral data and code are available through an open source license at https://github.com/DrugowitschLab/Optimal-policy-attention-modulated-decisions\u00a0\u00a0(Jang, 2021;\u00a0copy\u00a0archived at https://archive.softwareheritage.org/swh:1:rev:db4a4481aa6522d990018a34c31683698da039cb/).\n",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "f04d65d8-a03a-48b6-b98e-0a7ddf7c873d",
+      "submission_id": "40ef9206-d46e-4ab9-b01c-dd1d90d7a76f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Konstantinos Tsetsos, University Medical Center Hamburg-Eppendorf Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63436.sa1](https://doi.org/10.7554/eLife.63436.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nAlthough recent research has described the interplay between attention and decision-making processes, the merits of employing selective attention during choice tasks remain largely underexplored. This paper closes this gap by offering a normative framework that specifies how reward-maximizing agents should employ attention while making value-based decisions. This framework, asides its theoretical importance, makes contact with the existing empirical literature while also providing detailed behavioural predictions that can be tested in future experiments.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Optimal policy for attention-modulated decisions explains human fixation behavior\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Konstantinos Tsetsos as the Reviewing Editor and Reviewer #, and the evaluation has been overseen by Joshua Gold as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nIn this paper the authors derive a normative model of attentional switching during binary value-based decisions. The model the authors propose assumes that attentional allocation is under the control of the agent, who on each moment decides among halting deliberation and choosing an alternative, carrying on sampling from the currently attended alternative, switching attention to the other alternative. Under certain assumptions about deliberation and attentional allocation costs, the authors derive the optimal policy, showing also that this policy reproduces key aspects of human behaviour. The approach here stands in contrast with the majority of past research on this topic, which has assumed that attentional allocation is exogenous and that it influences- but is not influenced by- the ongoing choice process. All reviewers agreed that this is an interesting and timely article that takes a normative approach to the important issue of attentional allocation in decision-making tasks. However, the reviewers also agreed that there are several points that will need to be addressed in a revision.\n\nEssential revisions\n\n1. Link between the normative model and human data.\n\nOne of the main claims in the paper is that the normative model reproduces key aspects of human behaviour in a value-based binary choice task reported elsewhere (Krajbich et al., 2010). This claim needs to be backed up by additional analyses and clarifications. In particular:\n\na. In Figure 3A, the model predicts a linear choice curve (as opposed to a sigmoidal in the human data) while, also unlike in the data, the RT curves are concave. Are the shapes of these curves a general feature of the model or do they emerge for a certain parametrisation? Would for example the results look different with fixed bounds?\n\nb. Similarly, in Figure 3D, the model shows that the last fixation influences probability of choice equally across value differences. In the human data this effect diminishes as value difference increases. Is this prediction or a feature of the model?\n\nc. In Figure 3C the authors focus on the number of switches, which however are highly correlated with RTs. Can the authors show in addition the number of switches per unit of time (equivalent to probability of switching) in the human data and in their model?\n\nd. In Figure 4B-C, RTs and \"value sum\" may covary, with high value sums presumably resulting in shorter RTs. Does the value sum effect persist in the model and in the data once the influence of RTs is accounted for?\n\n2. Comparison between the normative and aDDM models.\n\nThe two models differ in the way they conceptualise attentional switching (exogenous vs. endogenous). Does this difference manifest itself in the predictions the two models make? And can the human data distinguish between the two models? The authors comment in the Discussion that their model is more constrained by normative considerations, and may thus fit the data worse than other ad-hoc models. Asides quantitative fitting, which the authors may elect to perform, we would like to see a qualitative comparison between the two models.\n\na. How does the probability of switching changes as a function of time (within trial) and as a function of absolute value difference and sum (across trials) in the two models and in the data?\n\nb. How does the fixation duration changes as a function of time (within trial) and as a function of absolute value difference and sum (across trials) in the two models and in the data?\n\nc. The model seems to predict a non-negligible number of single fixation trials. How does this align with the data and the aDDM predictions?\n\nd. How do reaction time distributions look like under the normative model? Are these comparable to the RT distributions in the data?\n\ne. Please also show the aDDM predictions together with the novel predictions made by the normative model in Figure 4C.\n\nf. The comparison between the two models is currently done on the basis of mean reward. How do the predictions of the models compare to the mean reward accrued by human participants in Krajbich et al? Please also clarify in the main text that the models are not compared on the basis of goodness of fit. In particular, in the paragraph starting in line 260, terms such as \"outperformed\", \"competitive performance\", \"comparison\" are ambiguous.\n\ng. Please explain why the model shows the pattern that is demonstrated in Figure 3F. Is this pattern also predicted by the aDDM?\n\n3. Comprehensibility of the modelling.\n\nThe authors have done an admirable job of boiling down some heavy mathematics (in the SI) into just the key steps in the main text. A lot of this builds on prior work in Tajima et al. Still, the authors could do more to explain the math, which would make this paper more self-contained and really help the reader understand the core ideas/intuitions.\n\na. Equation 1 \u2013 it isn't obvious how the mean will behave over time or where this expressions comes from. It would be helpful to state that the z part is the prior, and that as t->infinity the \u03c3 terms become negligible and the expression converges to x/t, namely the true value. The \u03c3-squared terms seem to come out of nowhere. In the methods the authors explain that this has to do with Fisher information, but most readers won't know what that is or why it is the appropriate thing to include here. Also, \u03c3x is defined later in the text, but should be defined up front here.\n\nb. Between Equation 1 and 2: In the means for \u03b4x, one has a \u03b4t multiplying z and one doesn't. Why? Is this a typo? The \u03b4t should always be there, but again, it isn't obvious.\n\nc. Equation 2: Why does the mean have a z1| at the beginning of it? Is that a typo?\n\nd. Could the authors elaborate more on why/when the decision maker chooses to switch attention? They say that the decision at each time point only depends on the difference in posterior means but Figure 2c seems to indicate that if the difference in posterior means stays constant over a period of time, then the process enters the \"switch\" zone and shifts attention.\n\n4. Model assumptions.\n\na. The model assumes that attention can take one of two discrete states. However, attention is often regarded as operating in a more graded fashion, which would necessitate parameter kappa in the model to be free to change within a trial. This will probably render the model intractable. However, a more viable and less radical assumption, would be to allow for a third \"divided attention\" mode in which the agent samples equally from both alternatives (divided attention mode). If this extension is technically challenging, one conceptual question that the authors can discuss in the paper, is whether the normative model would ever switch away from this divided attention mode.\n\nb. The authors need to assume a certain prior, namely z_bar = 0, in order to always get a positive effect of attention. This seems like an important controversy in the model; it is a noticeably non-Bayesian feature of a Bayesian model. The authors try to explain this away by noting that the original rating scale included both negative and positive values. However, only positive items were included in the choice task, and there is a consistently positive effect of attention on choice for other tasks (see Cavanagh et al. 2014; Smith and Krajbich 2018; Smith and Krajbich 2019) with only positive outcomes. This needs to be more openly acknowledged and discussed.\n\nc. The last paragraph of Discussion talks about a lack of benefit of focussed attention in the analysed task. Would focussing attention would become beneficial in decision tasks with more than 2 options? Although answering this question would be a separate paper, a few sentences on generalising this work to more than two options could be included in the Discussion.\n\n5. Coverage of literature.\n\na. In the Introduction, the authors state that the \"final choices are biased towards the item that they looked at longer, irrespective of its desirability\". This is not quite true. The desirability does matter, as shown in Smith and Krajbich 2019, as well as Westbrook et al. 2020. Moreover, as the authors note in the discussion, Armel et al. 2008 show that attention has a reverse effect when the items are aversive. Please update the introduction accordingly.\n\nb. The authors do not mention that there is some work that has argued for value attracting attention in multi-alternative choice. While that work does not go to the lengths that this paper does, it does make normative arguments for why this should occur, namely to eliminate non-contenders (Krajbich and Rangel 2011; Towal et al. 2013; Gluth et al. 2020). Finally, the authors might also want to mention Ke, Shen, Villas-Boas (2016), which also takes a normative approach to information search in consumer choice.\n\nc. On page 2 the authors state that \"no current normative framework incorporates control of attention as an intrinsic aspect of the decision-making process\". This does not seem to be accurate given the study by of Cassey et al. (2013). The key difference is that in Cassey et al. the focus was placed on the fixed duration paradigm, while the present manuscript focuses on the free-response paradigm. Please clarify the link of the current study with Cassey et al.\n\nd. In lines 318-321, the authors state that the model of Cassey et al. \"could not predict when they [fixation switches] ought to occur\". The model of Cassey et al. does predict when the optimal switching times are, but for the case of a fixed duration paradigm with \\kappa = 0. In this case the optimal switch policy is much simpler (single or at most double switch at particular times) than in the free-response paradigm nicely analysed in the present manuscript.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Optimal policy for attention-modulated decisions explains human fixation behavior\" for further consideration by eLife. Your revised article has been evaluated by Joshua Gold (Senior Editor) and a Reviewing Editor.\n\nSummary:\n\nThe authors have done an excellent and thorough job in addressing most of the comments that were raised during the first review. Please find below a list of remaining issues.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nEssential revisions\n\n1. In our previous points 2a-b the request was to show the switch rate and fixation duration as a function of time, value sum and value difference. We apologise if that was not clear previously but with the term \"time\" we referred to elapsed time within a trial rather than reaction times (RT). Because RT's will be influenced by various properties of the trial (e.g. trial difficulty) the analyses reported in the revision are not very easy to interpret. Additionally, we are puzzled by the fact that the aDDM model predicts non-flat switch rates and fixation durations as a function of the different quantities (Figure 4\u2014figure supplement 1), given that switching in the aDDM version the authors used is random. The aim of these previous points was to (a) highlight the differences between random switching (aDDM) and deliberate switching (optimal model), and (b) understand how switching tendencies change as a function of trial-relevant quantities and time elapsed in the optimal model. We appreciate that such analyses might be difficult to perform given the interrelationship among time, value sum and absolute value difference. Below we offer a few suggestions:\n\n\u2013 One possibility is to consider a \"stimulus locked\" approach, in which the switch rate and fixation duration is plotted as a function of time elapsed from the stimulus onset and up to \"x\" milliseconds before the response. Inevitably, later time points will more likely include certain trial types, e.g. only difficult trials (or trials with low value sum). The authors can consider using a \"stratification\" approach, subsampling the trials such that all time-points have comparable trial distributions (in terms of value difference and value sum). The influence of value difference and value sum can be examined using median splits based on these quantities.\n\n\u2013 Specifically for the switch rate analysis, the authors could perform a logistic regression trying to predict at each point in time the probability of switching, also considering covariates such as value sum or absolute value difference.\n\n\u2013 Since the last fixation can be cut short, we recommend excluding the last fixation from these analyses.\n\n\u2013 We recommend that the scaling of the x and y axis in the data and in the models is the same to allow comparison in absolute terms.\n\n2. Krajbich et al. 2010 used an aDDM implementation in which fixations were not random but instead sampled from the empirical switching times distributions (thus fixations depended on fixation number, trial difficulty etc). The authors currently do not acknowledge this previous implementation. The aDDM with random switching is a good baseline for the scope of this paper, but the version used by Krajbich et al. 2010 makes different predictions than the random aDDM; and this should be explicitly acknowledged. For instance, the aDDM where switching matches the empirical distributions, accounts for the fact that the first fixations were shorter than the rest. Discussing this non-random aDDM used by Krajbich et al. 2010, will fit easily in the current discussion, since the optimal model offers a rationale fort the empirical fixation patterns that the older work simply incorporated into the aDDM simulations.\n\n3. The authors slightly mischaracterise Krajbich and Rangel 2011 by saying that \"fixation patterns were assumed to be either independent of the decision-making strategy\". That paper did condition fixation patterns on the values of the items. Here is a direct quote from the Discussion: \"These patterns are interesting for several reasons. First, they show that the fixation process is not fully independent from the valuation process, and contains an element of choice that needs to be explained in further work.\"\n\n4. When comparing the mean reward of the models, the authors simulate the aDDM not with the parameters from Krajbich et al. 2010, but with different parameters meant to \"ensure a fair comparison\" between the models. We believe that this approach sets the aDDM to a disadvantage. If the best-fitting parameters of the \"optimal model\" lead to a lower signal-to-noise ratio than the aDDM best-fitting parameters, that should be acknowledged and accepted as is. We recommend the authors state upfront that the best-fitting optimal model does not outperform the data or the aDDM. However, if you use a non-best-fitting aDDM, then the aDDM underperforms both.\n",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2f232d7f-786e-4176-8695-33037d2a00ce",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C1",
+      "claim": "Traditional accumulation-to-bound decision-making models assume that all choice options are processed with equal attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional accumulation-to-bound decision-making models assume that all choice options are processed with equal attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about existing models in the literature, supported by citations in the broader context.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "01f7d5a2-806f-4cea-b397-621be00146d6",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C2",
+      "claim": "In real life decisions, humans alternate their visual fixation between individual items to efficiently gather relevant information.",
+      "claim_type": "EXPLICIT",
+      "source": "In real life decisions, however, humans alternate their visual fixation between individual items to efficiently gather relevant information (Yang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "e120819b-d9a4-477a-9d56-e3455b06b74d",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C3",
+      "claim": "Visual fixations causally affect one's choices, biasing them toward the longer-fixated item.",
+      "claim_type": "EXPLICIT",
+      "source": "These fixations also causally affect one's choices, biasing them toward the longer-fixated item (Krajbich et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Krajbich et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "b0656103-c9a9-4b89-b755-0dc0f0250d12",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C4",
+      "claim": "Attention enhances the reliability of information, consistent with neurophysiological findings.",
+      "claim_type": "EXPLICIT",
+      "source": "We derive a normative decision-making model in which attention enhances the reliability of information, consistent with neurophysiological findings (Cohen and Maunsell, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cohen and Maunsell, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "f1d1b4c2-88cc-4326-916b-3a08bb169cf7",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C5",
+      "claim": "The optimal model reproduces fixation-related choice biases seen in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the optimal model reproduces fixation-related choice biases seen in humans and provides a Bayesian computational rationale for this phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "3cd01b0a-7e77-4ab9-993b-c6d64c085b42",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C6",
+      "claim": "The optimal model provides a Bayesian computational rationale for fixation-related choice biases.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the optimal model reproduces fixation-related choice biases seen in humans and provides a Bayesian computational rationale for this phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical contribution of the study, supported by the model derivation and Figure 4A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "e9fd426b-e919-4a7f-985b-0234c472161a",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C7",
+      "claim": "Decision performance is benefited by a balanced spread of resources between the attended and unattended items.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by varying the relative cognitive advantage conferred by attention, we show that decision performance is benefited by a balanced spread of resources between the attended and unattended items.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from simulations shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "001fed4a-e11d-42dd-91f3-e26ed252cb99",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C8",
+      "claim": "Accumulation-to-bound models have been successful at describing accuracy and response time data from human decision makers in perceptual and value-based decision tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Such models have been successful at describing accuracy and response time data from human decision makers performing in both perceptual and value-based decision tasks (Ratcliff and McKoon, 2008; Milosavljevic et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ratcliff and McKoon, 2008 and Milosavljevic et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "5681df40-6cdc-4656-b0e2-d3a57eaa3b79",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C9",
+      "claim": "The normative strategy for decision-making can be implemented as an accumulation-to-bound model with time-varying decision boundaries that approach each other over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we and others showed that, if we assume these computations to involve a stream of noisy samples of each item's perceptual feature (for perceptual decisions) or underlying value (for value-based decisions), then the normative strategy could be implemented as an accumulation-to-bound model (Bogacz et al., 2006; Drugowitsch et al., 2012; Tajima et al., 2016). Specifically, the normative strategy could be described with the diffusion decision model (Ratcliff and McKoon, 2008) with time-varying decision boundaries that approach each other over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bogacz et al., 2006; Drugowitsch et al., 2012; Tajima et al., 2016; and Ratcliff and McKoon, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "8dd4fd26-4b65-4789-baa4-7ca06ee9f027",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C10",
+      "claim": "Standard accumulation-to-bound models assume that all choice options receive equal attention during decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard accumulation-to-bound models assume that all choice options receive equal attention during decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about existing models in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "552c1460-2db0-446e-83d7-0d50e3b5a9e6",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C11",
+      "claim": "Humans tend to alternate between fixating on different items when making decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, humans tend to alternate between fixating on different items when making decisions, suggesting that control of overt visual attention is intrinsic to the decision-making process (Kustov and Robinson, 1996; Mohler and Wurtz, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kustov and Robinson, 1996 and Mohler and Wurtz, 1976.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "16d7f427-f15c-4e93-95cb-01ea42add249",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C12",
+      "claim": "Human final choices are biased toward the item that they looked at longer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, their final choices are biased toward the item that they looked at longer, a phenomenon referred to as a choice bias (Shimojo et al., 2003; Krajbich et al., 2010; Krajbich and Rangel, 2011; Cavanagh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shimojo et al., 2003; Krajbich et al., 2010; Krajbich and Rangel, 2011; Cavanagh et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "fec9d876-7be3-4318-b011-a9c197577ea4",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C13",
+      "claim": "Prior models assumed that fixations are driven by brain processes that are exogenous to the computations involved in decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the choice bias has been previously replicated with a modified accumulation-to-bound model, but the model assumed that fixations are driven by brain processes that are exogenous to the computations involved in decision-making (Krajbich et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Krajbich et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "cf08db14-68a8-4fa0-92aa-29a9524cd95f",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C14",
+      "claim": "Fixations appear to be controlled to extract choice-relevant information in a statistically efficient manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This stands in contrast to studies of visual attention where fixations appear to be controlled to extract choice-relevant information in a statistically efficient manner, suggesting that fixations are driven by processes endogenous to the decision (Yang et al., 2016; Hoppe and Rothkopf, 2016; Hayhoe and Ballard, 2005; Chukoskie et al., 2013; Corbetta and Shulman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yang et al., 2016; Hoppe and Rothkopf, 2016; Hayhoe and Ballard, 2005; Chukoskie et al., 2013; Corbetta and Shulman, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "4ae50f7b-e667-42c8-b9e2-64c4fb2fe612",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C15",
+      "claim": "Visual attention selectively increases the firing rate of neurons tuned to task-relevant stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach was inspired by neurophysiological findings demonstrating that visual attention selectively increases the firing rate of neurons tuned to task-relevant stimuli (Reynolds and Chelazzi, 2004), decreases the mean-normalized variance of individual neurons (Mitchell et al., 2007; Wittig et al., 2018), and reduces the correlated variability of neurons at the population level (Cohen and Maunsell, 2009; Mitchell et al., 2009; Averbeck et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Reynolds and Chelazzi, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "2854e9c3-4e9d-493c-8806-f1b40862d814",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C16",
+      "claim": "Visual attention decreases the mean-normalized variance of individual neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach was inspired by neurophysiological findings demonstrating that visual attention selectively increases the firing rate of neurons tuned to task-relevant stimuli (Reynolds and Chelazzi, 2004), decreases the mean-normalized variance of individual neurons (Mitchell et al., 2007; Wittig et al., 2018), and reduces the correlated variability of neurons at the population level (Cohen and Maunsell, 2009; Mitchell et al., 2009; Averbeck et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mitchell et al., 2007 and Wittig et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "d375f692-09d8-408a-86fa-896d3336a794",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C17",
+      "claim": "Visual attention reduces the correlated variability of neurons at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach was inspired by neurophysiological findings demonstrating that visual attention selectively increases the firing rate of neurons tuned to task-relevant stimuli (Reynolds and Chelazzi, 2004), decreases the mean-normalized variance of individual neurons (Mitchell et al., 2007; Wittig et al., 2018), and reduces the correlated variability of neurons at the population level (Cohen and Maunsell, 2009; Mitchell et al., 2009; Averbeck et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cohen and Maunsell, 2009; Mitchell et al., 2009; Averbeck et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "06acb7e0-6421-43a8-a41e-c57598cbb607",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C18",
+      "claim": "The optimal policy switches attention more frequently when deciding between items with similar values.",
+      "claim_type": "EXPLICIT",
+      "source": "We then show that this strategy featured the same choice bias as observed in human decision makers: it switched attention more frequently when deciding between items with similar values, and was biased toward choosing items that were attended last, and attended longer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "6cf7f850-e5b7-4084-9bec-b3b40550b943",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C19",
+      "claim": "The optimal policy is biased toward choosing items that were attended last.",
+      "claim_type": "EXPLICIT",
+      "source": "We then show that this strategy featured the same choice bias as observed in human decision makers: it switched attention more frequently when deciding between items with similar values, and was biased toward choosing items that were attended last, and attended longer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "39d451fe-56fb-4ca9-8d55-ab4ac77a1eef",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C20",
+      "claim": "The optimal policy is biased toward choosing items that were attended longer.",
+      "claim_type": "EXPLICIT",
+      "source": "We then show that this strategy featured the same choice bias as observed in human decision makers: it switched attention more frequently when deciding between items with similar values, and was biased toward choosing items that were attended last, and attended longer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "11817c13-d9eb-4a39-a57f-7286837ccf2c",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C21",
+      "claim": "Choice biases vary based on the amount of time spent on the decision.",
+      "claim_type": "EXPLICIT",
+      "source": "It furthermore led to new predictions that we could confirm in human behavior: choice biases varied based on the amount of time spent on the decision and the average desirability across both choice items.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction confirmed in human data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "9d8fe704-dd83-401a-8b9f-676a13314683",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C22",
+      "claim": "Choice biases vary based on the average desirability across both choice items.",
+      "claim_type": "EXPLICIT",
+      "source": "It furthermore led to new predictions that we could confirm in human behavior: choice biases varied based on the amount of time spent on the decision and the average desirability across both choice items.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction confirmed in human data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "46db8588-02b8-4fe4-8008-888bc6f6f854",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C24",
+      "claim": "The decision maker knows the shape of the prior but can't directly observe the drawn true values.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume the decision maker knows the shape of the prior, but can't directly observe the drawn true values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "2c515961-7a5a-428d-b100-365978477829",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C25",
+      "claim": "The posterior belief's variance reflects the uncertainty in the decision maker's value inference.",
+      "claim_type": "EXPLICIT",
+      "source": "The posterior's variance (i.e. the second fraction in brackets) reflects the uncertainty in the decision maker's value inference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "a25d481c-b00c-4e08-bdf1-0ccf85fe0ebb",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C26",
+      "claim": "Uncertainty monotonically decreases identically over time for both items in the attention-free model.",
+      "claim_type": "EXPLICIT",
+      "source": "In this attention-free model, uncertainty monotonically decreases identically over time for both items, reflecting the standard assumption of accumulation-to-bound models that, in each small time period, the same amount of evidence is gathered for either choice item.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the attention-free model derived from the equations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "e795f82b-85a4-433c-bcc3-3900dda9c4dc",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C27",
+      "claim": "Attention limits information about the unattended item.",
+      "claim_type": "EXPLICIT",
+      "source": "To introduce attention-modulation, we assume that attention limits information about the unattended item (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model assumption illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "2d0a4b66-040a-4a4e-998b-70fd385f29cd",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C28",
+      "claim": "Attention boosts behavioral performance.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with behavioral and neurophysiological findings showing that attention boosts behavioral performance (Cohen and Maunsell, 2009; Cohen and Maunsell, 2010; Wang and Krauzlis, 2018) and the information encoded in neural populations (Ni et al., 2018; Ruff et al., 2018; Wittig et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cohen and Maunsell, 2009; Cohen and Maunsell, 2010; Wang and Krauzlis, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "8a0148ea-daf4-425f-a688-bb1c3301e097",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C29",
+      "claim": "Attention boosts the information encoded in neural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with behavioral and neurophysiological findings showing that attention boosts behavioral performance (Cohen and Maunsell, 2009; Cohen and Maunsell, 2010; Wang and Krauzlis, 2018) and the information encoded in neural populations (Ni et al., 2018; Ruff et al., 2018; Wittig et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ni et al., 2018; Ruff et al., 2018; Wittig et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "fbd43970-26c6-4966-b0a2-e19f2e6f186d",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C34",
+      "claim": "The optimal policy space can be divided into regions associated with different optimal actions.",
+      "claim_type": "EXPLICIT",
+      "source": "The policy space can be divided into regions associated with different optimal actions (choose item 1 or 2, accumulate more evidence, switch attention).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "0c8ea239-e647-49cd-8d5c-ba67e81beea3",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C35",
+      "claim": "The two policy spaces for attending to item 1 versus item 2 are mirror-images of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The two policy spaces are mirror-images of each other.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "71fd235a-fb32-47d1-9b4c-0966ab9dd0bd",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C36",
+      "claim": "The model never switches attention or makes a decision immediately after an attention switch.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the 'switch' region in a given policy space is always encompassed in the 'accumulate' region of the other policy space, indicating that the model never switches attention or makes a decision immediately after an attention switch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the optimal policy shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "3c06ddff-2524-48f2-8ff6-039fa9ed189a",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C37",
+      "claim": "The decision boundaries in 3D space approach each other over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the decision boundaries in 3D space approach each other over time, consistent with previous work that showed a collapsing 2D boundary for optimal value-based decisions without attention (Tajima et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the optimal policy with citation to Tajima et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "ed9cd1af-6324-479d-a4de-e10264bc9eca",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C38",
+      "claim": "The collapsing bound reflects the model's uncertainty regarding the difficulty of the decision task.",
+      "claim_type": "EXPLICIT",
+      "source": "The collapsing bound reflects the model's uncertainty regarding the difficulty of the decision task (Drugowitsch et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Drugowitsch et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "8af7f6a2-2d49-45df-9707-ebe90676e6d7",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C44",
+      "claim": "The model replicated a particular fixation pattern seen in humans, where a short first fixation is followed by a significantly longer second fixation, which is followed by a medium-length third fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the model also replicated a particular fixation pattern seen in humans, where a short first fixation is followed by a significantly longer second fixation, which is followed by a medium-length third fixation (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model simulations shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "76a55429-8c0b-469e-ab59-40f9be6c73f9",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C45",
+      "claim": "The attentional drift diffusion model (aDDM) did not generate its own fixations, but rather used fixations sampled from the empirical distribution of human subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the attentional drift diffusion model (aDDM) that was initially proposed to explain the observed human data did not generate its own fixations, but rather used fixations sampled from the empirical distribution of human subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the aDDM model from Krajbich et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "8fb434dc-41ce-4607-94eb-b6bb8005239c",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C46",
+      "claim": "The aDDM was only able to achieve the observed fixation pattern by sampling the first fixation separately from the remaining fixation durations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, they were only able to achieve this fixation pattern by sampling the first fixation, which was generally shorter than the rest, separately from the remaining fixation durations (Krajbich et al., 2010; Figure 4\u2014figure supplement 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the aDDM model with citation to Krajbich et al., 2010 and reference to Figure 4\u2014figure supplement 3E.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "4f31cc1a-fb03-4674-87c9-f8b5d81000c4",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C47",
+      "claim": "Attention only modulates the variance of momentary evidence without explicitly down-weighting the value of the unattended item in the current model.",
+      "claim_type": "EXPLICIT",
+      "source": "One feature that distinguishes our model from previous attention-based decision models is that attention only modulates the variance of momentary evidence without explicitly down-weighting the value of the unattended item (Krajbich et al., 2010; Song et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's features with citations to Krajbich et al., 2010 and Song et al., 2019.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "7558e516-bd72-458a-b384-4086977d70b2",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C48",
+      "claim": "Bayesian belief updating with attention modulation effectively accounts for a biasing effect of fixation on the subjective value of items under the assumption of a zero-mean prior.",
+      "claim_type": "EXPLICIT",
+      "source": "However, under the assumption that decision makers start out with a zero-mean prior, Bayesian belief updating with attention modulation turns out to effectively account for a biasing effect of fixation on the subjective value of items (Li and Ma, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model with citation to Li and Ma, 2019.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "8f0d462a-b0ab-44cc-84f3-7489a73f8578",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C49",
+      "claim": "Attending to one of two equally-valued items for a longer time leads to a subjectively higher value for the longer attended item.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to a higher subjective value of item 1 compared to that of item 2 even though their true underlying values are equal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the Bayesian model illustrated in Figure 4A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "91f8eb15-6ecf-4759-bf1b-06f7bf7fe137",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C52",
+      "claim": "The aDDM produced qualitatively similar behavioral predictions as the optimal model.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this difference, the aDDM produced qualitatively similar behavioral predictions as the optimal model (see Figure 4\u2014figure supplement 1, Figure 4\u2014figure supplement 2, and Figure 4\u2014figure supplement 3 for additional behavioral comparisons between human data, the optimal model, and aDDM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing model simulations shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "9d6ab75d-5533-4dea-8f3f-31218cdd3279",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C55",
+      "claim": "Fixation can bias choices in a perceptual decision-making paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of attention is not unique to value-based decisions. In fact, recent work showed that fixation can bias choices in a perceptual decision-making paradigm (Tavares et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tavares et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "fc6ea6fd-0e57-4b70-930c-1ddb59a352d2",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C56",
+      "claim": "The longer fixated option was more likely to be chosen in the perceptual decision task.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with results in the value-based decision task, the authors demonstrated that the longer fixated option was more likely to be chosen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Tavares et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "6894954e-a350-4f4e-9587-b4b9217a54f5",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C57",
+      "claim": "The optimal policy for perceptual decisions was successful at reproducing the attention-driven biases seen in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to our value-based case, the optimal policy for perceptual decisions was successful at reproducing the attention-driven biases seen in humans in Tavares et al., 2017, (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model simulations shown in Figure 3\u2014figure supplement 2 with citation to Tavares et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "4357f034-695c-48c0-b748-506ebc71ef39",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C58",
+      "claim": "The current model provides a unified framework in which fixations are endogenously generated as a core component of the normative decision-making strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we provide a unified framework in which fixations are endogenously generated as a core component of the normative decision-making strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model's contribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "7585ef1e-dc93-4d44-905a-3262726f5404",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C59",
+      "claim": "Fixation patterns are influenced by variables relevant for the decision, such as trial difficulty or the value of each choice item.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous work that showed that fixation patterns were influenced by variables relevant for the decision, such as trial difficulty or the value of each choice item (Krajbich et al., 2010; Krajbich and Rangel, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Krajbich et al., 2010 and Krajbich and Rangel, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "6518f4e1-6c6a-400a-9582-10ed4072007f",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C60",
+      "claim": "Prior models assumed an exogenous source of fixations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, prior models of such decisions assumed an exogenous source of fixations (Krajbich et al., 2010; Krajbich and Rangel, 2011) or generated fixations using heuristics that relied on features such as the salience or value estimates of the choice options (Towal et al., 2013; Gluth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Krajbich et al., 2010; Krajbich and Rangel, 2011; Towal et al., 2013; Gluth et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "af1bf04e-a044-4fbd-917d-bb9f9c9b5fc4",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C61",
+      "claim": "Some prior models generated fixations using heuristics that relied on features such as the salience or value estimates of the choice options.",
+      "claim_type": "EXPLICIT",
+      "source": "However, prior models of such decisions assumed an exogenous source of fixations (Krajbich et al., 2010; Krajbich and Rangel, 2011) or generated fixations using heuristics that relied on features such as the salience or value estimates of the choice options (Towal et al., 2013; Gluth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Towal et al., 2013 and Gluth et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "b33fc502-23c4-4900-b894-b66cb8dba1b5",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C62",
+      "claim": "Some models assumed that fixation duration should depend on the expected utility or informativeness of the choice items.",
+      "claim_type": "EXPLICIT",
+      "source": "Other models generated fixations under the assumption that fixation duration should depend on the expected utility or informativeness of the choice items (Cassey et al., 2013; Ke et al., 2016; Song et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cassey et al., 2013; Ke et al., 2016; Song et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "14e25b19-65a6-499b-bf17-d3d64baedb69",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C63",
+      "claim": "A recent normative model supported a continuous change of attention across choice items, and so could not relate attention to the observed discrete fixation changes.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent normative model supported a continuous change of attention across choice items, and so could not relate attention to the observed discrete fixation changes (H\u00e9bert and Woodford, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to H\u00e9bert and Woodford, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "e6cda3ab-caf9-4b9d-a6d5-d47582a76816",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C64",
+      "claim": "Fixation patterns could reflect active information gathering through controlling an attentional bottleneck.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work significantly builds on these prior models by identifying the exact optimal policy using dynamic programming, demonstrating that fixation patterns could reflect active information gathering through controlling an attentional bottleneck.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "c01c19c0-404a-4350-a56e-89464ffe75ae",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C65",
+      "claim": "Previous models accounted for attention by down-weighting the value of the unattended item.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, previous models accounted for attention by down-weighting the value of the unattended item (Krajbich et al., 2010; Krajbich and Rangel, 2011; Song et al., 2019), where one would a priori assume fixations to bias choices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Krajbich et al., 2010; Krajbich and Rangel, 2011; Song et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "d97cef0c-c6a1-4c4c-8db4-5c57ef5d22b6",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C66",
+      "claim": "Selective attention appears to boost the signal-to-noise ratio, or the reliability of information encoded by neuronal signals rather than alter the magnitude of the value encoded by these signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, selective attention appears to boost the signal-to-noise ratio, or the reliability of information encoded by neuronal signals rather than alter the magnitude of the value encoded by these signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of neurophysiological findings cited earlier.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "dc907611-f4e1-4d63-b191-a034358ab99d",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C67",
+      "claim": "The attention-modulated optimal policy can be implemented as a four-dimensional accumulation-to-bound model.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this framework, we show that the optimal policy can be implemented as a four-dimensional accumulation-to-bound model where the particle drifts and diffuses according to the fixation duration to either item, the currently attended item, and the difference the in items' value estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "6a8ff69b-e16d-4396-862d-047d82e0b8c3",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C68",
+      "claim": "The attention-modulated optimal policy still featured a collapsing boundary in time consistent with the attention-free case.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the attention-modulated optimal policy still featured a collapsing boundary in time consistent with the attention-free case (Drugowitsch et al., 2012; Tajima et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the optimal policy with citations to Drugowitsch et al., 2012 and Tajima et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "881cb63b-6aff-46d6-a035-e6038d8be7c6",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C69",
+      "claim": "The aim was to provide a precise, normative explanation for how fixation changes qualitatively interact with human decisions rather than quantitatively capture all details of human behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Our aim was to provide a precise (i.e. without approximations), normative explanation for how fixation changes qualitatively interact with human decisions rather than quantitatively capture all details of human behavior, which is likely driven by additional heuristics and features beyond the scope of our model (Acerbi et al., 2014; Drugowitsch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the study's goals with citations to Acerbi et al., 2014 and Drugowitsch et al., 2016.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "2cbd6c62-4766-45ce-b606-6cf2ea729ae7",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C70",
+      "claim": "It has been suggested that normative allocation of attention should also depend on the item values to eliminate non-contenders.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, it has been suggested that normative allocation of attention should also depend on the item values to eliminate non-contenders, which we did not incorporate as a part of our model (Towal et al., 2013; Gluth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Towal et al., 2013 and Gluth et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "f47da176-7c61-4eec-a757-c923f5ec3288",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C71",
+      "claim": "Other models using approximations are expected to have a better quantitative fit to human data.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, we expect other models using approximations to have a better quantitative fit to human data (Krajbich et al., 2010; Callaway et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation with citations to Krajbich et al., 2010 and Callaway et al., 2020.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "a3d2ea94-cce9-4cfc-b7ae-7eaed7d6ac90",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C72",
+      "claim": "The nervous system is expected to implement the optimal policy only approximately due to its complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the optimal policy's complexity (Figure 2), we expect the nervous system to implement it only approximately (e.g. similar to Tajima et al., 2019 for multi-alternative decisions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation with citation to Tajima et al., 2019.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "f68800c8-a0af-4132-99eb-f508611be899",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C73",
+      "claim": "Callaway et al., 2020 proposed a model of N-alternative choice using approaches from rational inattention to approximate optimal decision-making in the presence of an attentional bottleneck.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an approximation has been recently suggested by Callaway et al., 2020, where they proposed a model of N-alternative choice using approaches from rational inattention to approximate optimal decision-making in the presence of an attentional bottleneck.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Callaway et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "fa36fdf5-94df-4e76-8dc7-fe9bc5ae848f",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C74",
+      "claim": "Callaway et al., 2020 assumed that the unattended item is completely ignored.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike our work, they assumed that the unattended item is completely ignored, and therefore could not investigate the effect of graded shifts of attentional resources between items (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with Callaway et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "b37b3aff-f5ce-4397-95cd-cac0e7996d9e",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C75",
+      "claim": "Callaway et al., 2020's model did not predict a choice bias in binary choices due to a different assumption about the Bayesian prior.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, their model did not predict a choice bias in binary choices due to a different assumption about the Bayesian prior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with Callaway et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "dd66aafc-faf1-4d6a-bfdc-2641a91bc133",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C76",
+      "claim": "The current model assumed the decision maker's prior belief about the item values is centered at zero.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, we assumed the decision maker's prior belief about the item values is centered at zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model assumption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "6ddce9fe-fd14-4063-92e5-523f79daa68e",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C77",
+      "claim": "Callaway et al., 2020 chose a prior distribution based on the choice set, centered on the average value of only the tested items.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Callaway et al., 2020 chose a prior distribution based on the choice set, centered on the average value of only the tested items.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with Callaway et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "b2d0093e-710a-4f2a-a23c-51333ac4dabf",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C78",
+      "claim": "The zero-mean prior predicts an opposite effect of the choice bias when deciding between aversive items, such that less-fixated items should become the preferred choice.",
+      "claim_type": "EXPLICIT",
+      "source": "The zero-mean prior also predicts an opposite effect of the choice bias when deciding between aversive items, such that less-fixated items should become the preferred choice. This is exactly what has been observed in human decision makers (Armel et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model confirmed by citation to Armel et al., 2008.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "f46c2dae-287a-4917-bffb-83a5c4d5dfb7",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C79",
+      "claim": "There is evidence that humans exhibit choice biases when only choosing between appetitive items.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is some evidence that humans also exhibit choice biases when only choosing between appetitive items (Cavanagh et al., 2014; Smith and Krajbich, 2018; Smith and Krajbich, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cavanagh et al., 2014; Smith and Krajbich, 2018; Smith and Krajbich, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "0d35701b-7258-4df2-9df9-f6a2eb540f43",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C81",
+      "claim": "Spreading a fixed cognitive reserve evenly between the attended and unattended items maximized performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, spreading a fixed cognitive reserve evenly between the attended and unattended items maximized performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "0c6a3450-331e-4163-b645-cd502b0b561a",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C82",
+      "claim": "A modified drift diffusion model with a continuously varying attention would perform optimally when attention is always equally divided.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with prior work that showed that a modified drift diffusion model with a continuously varying attention would perform optimally when attention is always equally divided (Fudenberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fudenberg et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "0cf55584-1e4b-4c64-9c58-ff3148bd7b51",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C83",
+      "claim": "Parameters fit to human behavior reveal that humans tend to allocate a large proportion of their cognitive resource toward the attended item.",
+      "claim_type": "EXPLICIT",
+      "source": "Parameters fit to human behavior reveal that humans tend to allocate a large proportion of their cognitive resource toward the attended item, suggesting that the benefits of an attentional bottleneck might lie in other cognitive processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the parameter fitting results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "74e71879-f8bc-49b2-8df6-7762a9968f38",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C84",
+      "claim": "Machine learning applied to text translation benefits from attentional bottlenecks.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, machine learning applied to text translation (Bahdanau et al., 2015; Gehring et al., 2017), object recognition (Mnih et al., 2014; Ba et al., 2015), and video-game playing (Sorokin et al., 2015) benefits from attentional bottlenecks that allow the algorithm to focus resources on specific task subcomponents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bahdanau et al., 2015 and Gehring et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "eea2a4e0-257a-411a-8d2f-7840487555bc",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C85",
+      "claim": "Machine learning applied to object recognition benefits from attentional bottlenecks.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, machine learning applied to text translation (Bahdanau et al., 2015; Gehring et al., 2017), object recognition (Mnih et al., 2014; Ba et al., 2015), and video-game playing (Sorokin et al., 2015) benefits from attentional bottlenecks that allow the algorithm to focus resources on specific task subcomponents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mnih et al., 2014 and Ba et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "d297e285-4505-4871-b770-4323e0d8a33c",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C86",
+      "claim": "Machine learning applied to video-game playing benefits from attentional bottlenecks.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, machine learning applied to text translation (Bahdanau et al., 2015; Gehring et al., 2017), object recognition (Mnih et al., 2014; Ba et al., 2015), and video-game playing (Sorokin et al., 2015) benefits from attentional bottlenecks that allow the algorithm to focus resources on specific task subcomponents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sorokin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "cfbb573c-36a0-4ebe-afe4-73f6375570d7",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C87",
+      "claim": "Image classification algorithms that extract only the relevant features of an image for high-resolution processing demonstrated improved performance and reduced computational cost compared to those without such attentional features.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, image classification algorithms that extract only the relevant features of an image for high-resolution processing demonstrated improved performance and reduced computational cost compared to those without such attentional features (Mnih et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mnih et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "d045ffb8-e468-4737-858c-681a0b727583",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C88",
+      "claim": "Attentional bottlenecks that appear to limit human decision-making performance might have beneficial effects on cognitive domains outside the scope of binary value-based decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, attentional bottlenecks that appear to limit human decision-making performance might have beneficial effects on cognitive domains outside the scope of binary value-based decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "10ac6a9e-b841-4a9a-a70a-4b3b85ffc793",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C89",
+      "claim": "The evolutionary advantage of selective attention involves the ability to rapidly fixate on salient features in a cluttered environment, thereby limiting the amount of information that reaches upstream processing and reducing the overall computational burden.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the idea that the evolutionary advantage of selective attention involves the ability to rapidly fixate on salient features in a cluttered environment, thereby limiting the amount of information that reaches upstream processing and reducing the overall computational burden (Itti and Koch, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Itti and Koch, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "f7af6b09-0479-4876-8ee2-6dd475828955",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C90",
+      "claim": "A choice bias driven by a zero-mean prior would generalize to decisions involving more than two options.",
+      "claim_type": "EXPLICIT",
+      "source": "While implementing the optimal policy for such choices may be analytically intractable, we can reasonably infer that a choice bias driven by a zero-mean prior would generalize to decisions involving more than two options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about generalization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "8afd0032-f171-44ed-a9b5-05acee3cc468",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "claim_id": "C91",
+      "claim": "In a multi-alternative choice paradigm where heuristics involving value and salience of items may influence attention allocation, it is less clear whether an equally divided attention among all options would still maximize reward.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a multi-alternative choice paradigm where heuristics involving value and salience of items may influence attention allocation, it is less clear whether an equally divided attention among all options would still maximize reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about multi-alternative choices.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "28ee2d11-ec6e-4d0b-bac9-23b6645e9904",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a normative decision-making model where attention modulates the reliability (variance) of momentary evidence rather than the magnitude of value, consistent with neurophysiological findings showing attention reduces neural variability and increases signal-to-noise ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C15-17, C27-29 establish the neurophysiological basis for attention modulating information reliability. Claims C47 and C66 describe the model's implementation of this principle. The approach is well-grounded in cited neurophysiology literature and represents a key theoretical contribution distinguishing this model from prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "e70d9b02-70f5-4bea-ade8-bb091b7ed7b4",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The optimal model reproduces key fixation-related choice biases observed in human behavior: more frequent attention switches for similar-valued items, bias toward last-fixated items, bias toward longer-fixated items, and a specific fixation duration pattern (short-long-medium).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C18-20, C44 are supported by model simulations shown in Figure 3. The model qualitatively replicates multiple established human behavioral patterns without requiring exogenous fixation generation, representing a major validation of the normative framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "72be689b-8d21-4e06-9b87-7c6154c95f58",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model provides a Bayesian computational rationale for fixation-driven choice biases: under a zero-mean prior, longer fixation to one item creates a sharper likelihood function, causing the posterior to be less biased toward the prior and resulting in subjectively higher value for the attended item.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C48-49 present a theoretical explanation illustrated in Figure 4A. The Bayesian account elegantly explains why attention modulation of variance (not value magnitude) can still produce choice biases. This represents a novel theoretical insight, though it depends critically on the zero-mean prior assumption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "da2f5824-a7ce-46a0-b3f0-6201af2d49a0",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model predicted and confirmed in human data that choice biases vary with response time (decreasing with longer RT) and with the sum of item values (increasing with higher value sum).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-22 describe novel predictions confirmed in Figure 4B-C. Statistical tests show significant effects in both human and model data (human RT: t(38)=-3.25, p=0.0024; value sum: t(38)=2.95, p=0.0054). These represent successful a priori predictions validating the model's explanatory power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "735d6f8b-cc31-4ff9-b6a8-d9c3dd845c80",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Simulations varying the attention bottleneck parameter \u03ba revealed that decision performance is maximized when cognitive resources are balanced evenly between attended and unattended items (\u03ba=0.5), though fitted human parameters suggest humans allocate most resources to the attended item (\u03ba\u22480.004).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C81-83 are supported by simulations in Figure 4E showing peak performance at \u03ba=0.5 (t(38)=-8.51, p<0.001). The finding is consistent with prior work (C82). However, the discrepancy between optimal and human-fitted parameters suggests the attentional bottleneck may serve other cognitive functions beyond binary decision-making.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "a6dea076-564c-4948-aefc-e19360259caa",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The optimal policy can be implemented as a four-dimensional accumulation-to-bound model with policy spaces divided into regions for different actions (choose, accumulate, switch), featuring collapsing decision boundaries over time and mirror-symmetric spaces for attending to each item.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-38, C67-68 describe the optimal policy structure shown in Figure 2. The policy was derived using dynamic programming and exhibits expected properties including collapsing boundaries consistent with prior normative models. The mathematical derivation appears sound and the visualizations clearly demonstrate the policy structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "420494f1-06c1-4f25-95d4-a367cb4a9871",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The attentional drift diffusion model (aDDM) produced qualitatively similar behavioral predictions to the optimal model, though the aDDM required sampling fixations from empirical human data and treating the first fixation separately to achieve the observed fixation pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C45-46 compare the optimal model to aDDM using supplementary figures. The comparison is fair and acknowledges that aDDM achieves similar qualitative predictions despite different mechanisms. The limitation that aDDM requires exogenous fixation generation highlights an advantage of the current normative approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "ff4f3c04-cb81-49d3-a2a1-a6d10740ed4e",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The optimal policy framework successfully extends to perceptual decision-making tasks, reproducing attention-driven biases observed in human perceptual decisions where longer-fixated options are more likely to be chosen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-57 demonstrate generalization to perceptual decisions using data from Tavares et al. 2017, shown in Figure 3\u2014figure supplement 2. This extension demonstrates the framework's generality beyond value-based decisions, though the perceptual task analysis appears less detailed than the value-based analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "34b723dc-a1fe-4062-91bc-529faeeecfd9",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model provides a unified normative framework where fixations are endogenously generated as part of the optimal decision strategy, contrasting with prior models that assumed exogenous fixation sources or used heuristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-64 position the work relative to prior literature. The characterization of prior models appears accurate based on citations. The claim that fixations are endogenously generated is supported by the dynamic programming derivation showing attention switches emerge from optimality rather than being imposed externally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "b99d3fd0-549e-4731-9a6c-bb7d85a8b38c",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The zero-mean prior predicts opposite choice bias effects for aversive items (less-fixated items preferred), which has been observed in humans, though some evidence suggests choice biases also occur when choosing only between appetitive items.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78 makes a prediction supported by citation to Armel et al. 2008, but C79 notes conflicting evidence from other studies. The zero-mean prior assumption is critical for the choice bias explanation but may not fully account for all human behavior. The tension between these claims suggests the prior specification remains an open question requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "506b8ae7-9dd1-481b-8ba7-8e9a69ed346d",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model aims to provide qualitative normative explanations rather than quantitative fits to all behavioral details, acknowledging that other models using approximations may achieve better quantitative fits and that the nervous system likely implements the complex optimal policy only approximately.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-72 clearly state the model's scope and limitations. This is an honest assessment supported by observations that the model doesn't perfectly match all human behavioral details (e.g., concave vs. linear chronometric curves in Figure 3). The acknowledgment of limitations is appropriate for a normative modeling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "b1e2177f-42c3-49cb-89d6-f4b574631b63",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The current model differs from Callaway et al. 2020's rational inattention approach in allowing graded attention (rather than complete ignoring of unattended items) and using a zero-mean prior (rather than choice-set-centered prior), which enables prediction of choice biases in binary decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-77 provide detailed comparison with recent related work. The distinctions are clearly articulated and appear accurate based on the citations. These differences have substantive implications for model predictions, particularly regarding choice biases and the role of the attentional bottleneck.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "dba53872-6f69-4132-8a86-4da46e80cd6c",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Attentional bottlenecks provide benefits in machine learning applications (text translation, object recognition, video games) and may similarly benefit human cognition in domains beyond binary decisions by reducing computational burden and focusing on salient features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-89 draw parallels between the model and machine learning applications, supported by multiple citations. The speculation that attentional bottlenecks benefit broader cognitive processes beyond decision-making is reasonable given the machine learning evidence, though it remains speculative for human cognition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "ecf0a7a8-0055-4db6-b468-bd40f9ff9f6b",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that choice biases driven by zero-mean priors would generalize to multi-alternative choices, though it's unclear whether equally divided attention would maximize reward in such scenarios where value and salience heuristics may influence attention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-91 are explicitly speculative about generalization to multi-alternative choice. While the speculation is reasonable, no data or simulations are provided to support these claims. This represents an important direction for future work but cannot be evaluated as supported by the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "0dba585f-eba3-451f-a7f9-6014ce6fe300",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior work establishing that traditional accumulation-to-bound models assume equal attention to all options, while human decision-makers alternate fixations between items in ways that causally bias choices toward longer-fixated items, with prior models treating fixations as exogenous to decision computations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-3, C8-14 accurately characterize prior literature on decision-making models and human fixation behavior, supported by appropriate citations. These claims establish the motivation and context for the current work but do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "b2e96553-8738-4a83-ac26-8f008c5e7505",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The attention-free baseline model assumes the decision maker knows the prior distribution shape but not the true values, with posterior variance reflecting uncertainty that decreases identically over time for both items.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-26 describe properties of the baseline attention-free model from prior work (Tajima et al. 2016). These are standard assumptions in Bayesian decision models and serve as the foundation for introducing attention modulation. The mathematical properties are correctly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    },
+    {
+      "id": "451f3ba1-3864-4789-a42d-6ece6f0711a3",
+      "content_id": "f3f75905-f40c-4817-bc50-41b962843f98",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Previous attention-based decision models accounted for attention by down-weighting the value of unattended items, which a priori assumes fixations should bias choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 accurately characterizes prior models (Krajbich et al. 2010, Song et al. 2019) based on citations. This distinction is important for understanding the novelty of the current approach but represents a characterization of prior work rather than a new finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:22:02.482897Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b0656103-c9a9-4b89-b755-0dc0f0250d12",
+      "result_id": "28ee2d11-ec6e-4d0b-bac9-23b6645e9904"
+    },
+    {
+      "claim_id": "4ae50f7b-e667-42c8-b9e2-64c4fb2fe612",
+      "result_id": "28ee2d11-ec6e-4d0b-bac9-23b6645e9904"
+    },
+    {
+      "claim_id": "2854e9c3-4e9d-493c-8806-f1b40862d814",
+      "result_id": "28ee2d11-ec6e-4d0b-bac9-23b6645e9904"
+    },
+    {
+      "claim_id": "d375f692-09d8-408a-86fa-896d3336a794",
+      "result_id": "28ee2d11-ec6e-4d0b-bac9-23b6645e9904"
+    },
+    {
+      "claim_id": "e795f82b-85a4-433c-bcc3-3900dda9c4dc",
+      "result_id": "28ee2d11-ec6e-4d0b-bac9-23b6645e9904"
+    },
+    {
+      "claim_id": "2d0a4b66-040a-4a4e-998b-70fd385f29cd",
+      "result_id": "28ee2d11-ec6e-4d0b-bac9-23b6645e9904"
+    },
+    {
+      "claim_id": "8a0148ea-daf4-425f-a688-bb1c3301e097",
+      "result_id": "28ee2d11-ec6e-4d0b-bac9-23b6645e9904"
+    },
+    {
+      "claim_id": "4f31cc1a-fb03-4674-87c9-f8b5d81000c4",
+      "result_id": "28ee2d11-ec6e-4d0b-bac9-23b6645e9904"
+    },
+    {
+      "claim_id": "d97cef0c-c6a1-4c4c-8db4-5c57ef5d22b6",
+      "result_id": "28ee2d11-ec6e-4d0b-bac9-23b6645e9904"
+    },
+    {
+      "claim_id": "f1d1b4c2-88cc-4326-916b-3a08bb169cf7",
+      "result_id": "e70d9b02-70f5-4bea-ade8-bb091b7ed7b4"
+    },
+    {
+      "claim_id": "06acb7e0-6421-43a8-a41e-c57598cbb607",
+      "result_id": "e70d9b02-70f5-4bea-ade8-bb091b7ed7b4"
+    },
+    {
+      "claim_id": "6cf7f850-e5b7-4084-9bec-b3b40550b943",
+      "result_id": "e70d9b02-70f5-4bea-ade8-bb091b7ed7b4"
+    },
+    {
+      "claim_id": "39d451fe-56fb-4ca9-8d55-ab4ac77a1eef",
+      "result_id": "e70d9b02-70f5-4bea-ade8-bb091b7ed7b4"
+    },
+    {
+      "claim_id": "8af7f6a2-2d49-45df-9707-ebe90676e6d7",
+      "result_id": "e70d9b02-70f5-4bea-ade8-bb091b7ed7b4"
+    },
+    {
+      "claim_id": "3cd01b0a-7e77-4ab9-993b-c6d64c085b42",
+      "result_id": "72be689b-8d21-4e06-9b87-7c6154c95f58"
+    },
+    {
+      "claim_id": "7558e516-bd72-458a-b384-4086977d70b2",
+      "result_id": "72be689b-8d21-4e06-9b87-7c6154c95f58"
+    },
+    {
+      "claim_id": "8f0d462a-b0ab-44cc-84f3-7489a73f8578",
+      "result_id": "72be689b-8d21-4e06-9b87-7c6154c95f58"
+    },
+    {
+      "claim_id": "11817c13-d9eb-4a39-a57f-7286837ccf2c",
+      "result_id": "da2f5824-a7ce-46a0-b3f0-6201af2d49a0"
+    },
+    {
+      "claim_id": "9d8fe704-dd83-401a-8b9f-676a13314683",
+      "result_id": "da2f5824-a7ce-46a0-b3f0-6201af2d49a0"
+    },
+    {
+      "claim_id": "e9fd426b-e919-4a7f-985b-0234c472161a",
+      "result_id": "735d6f8b-cc31-4ff9-b6a8-d9c3dd845c80"
+    },
+    {
+      "claim_id": "0d35701b-7258-4df2-9df9-f6a2eb540f43",
+      "result_id": "735d6f8b-cc31-4ff9-b6a8-d9c3dd845c80"
+    },
+    {
+      "claim_id": "0c6a3450-331e-4163-b645-cd502b0b561a",
+      "result_id": "735d6f8b-cc31-4ff9-b6a8-d9c3dd845c80"
+    },
+    {
+      "claim_id": "0cf55584-1e4b-4c64-9c58-ff3148bd7b51",
+      "result_id": "735d6f8b-cc31-4ff9-b6a8-d9c3dd845c80"
+    },
+    {
+      "claim_id": "fbd43970-26c6-4966-b0a2-e19f2e6f186d",
+      "result_id": "a6dea076-564c-4948-aefc-e19360259caa"
+    },
+    {
+      "claim_id": "0c8ea239-e647-49cd-8d5c-ba67e81beea3",
+      "result_id": "a6dea076-564c-4948-aefc-e19360259caa"
+    },
+    {
+      "claim_id": "71fd235a-fb32-47d1-9b4c-0966ab9dd0bd",
+      "result_id": "a6dea076-564c-4948-aefc-e19360259caa"
+    },
+    {
+      "claim_id": "3c06ddff-2524-48f2-8ff6-039fa9ed189a",
+      "result_id": "a6dea076-564c-4948-aefc-e19360259caa"
+    },
+    {
+      "claim_id": "ed9cd1af-6324-479d-a4de-e10264bc9eca",
+      "result_id": "a6dea076-564c-4948-aefc-e19360259caa"
+    },
+    {
+      "claim_id": "dc907611-f4e1-4d63-b191-a034358ab99d",
+      "result_id": "a6dea076-564c-4948-aefc-e19360259caa"
+    },
+    {
+      "claim_id": "6a8ff69b-e16d-4396-862d-047d82e0b8c3",
+      "result_id": "a6dea076-564c-4948-aefc-e19360259caa"
+    },
+    {
+      "claim_id": "91f8eb15-6ecf-4759-bf1b-06f7bf7fe137",
+      "result_id": "420494f1-06c1-4f25-95d4-a367cb4a9871"
+    },
+    {
+      "claim_id": "76a55429-8c0b-469e-ab59-40f9be6c73f9",
+      "result_id": "420494f1-06c1-4f25-95d4-a367cb4a9871"
+    },
+    {
+      "claim_id": "8fb434dc-41ce-4607-94eb-b6bb8005239c",
+      "result_id": "420494f1-06c1-4f25-95d4-a367cb4a9871"
+    },
+    {
+      "claim_id": "9d6ab75d-5533-4dea-8f3f-31218cdd3279",
+      "result_id": "ff4f3c04-cb81-49d3-a2a1-a6d10740ed4e"
+    },
+    {
+      "claim_id": "fc6ea6fd-0e57-4b70-930c-1ddb59a352d2",
+      "result_id": "ff4f3c04-cb81-49d3-a2a1-a6d10740ed4e"
+    },
+    {
+      "claim_id": "6894954e-a350-4f4e-9587-b4b9217a54f5",
+      "result_id": "ff4f3c04-cb81-49d3-a2a1-a6d10740ed4e"
+    },
+    {
+      "claim_id": "4357f034-695c-48c0-b748-506ebc71ef39",
+      "result_id": "34b723dc-a1fe-4062-91bc-529faeeecfd9"
+    },
+    {
+      "claim_id": "7585ef1e-dc93-4d44-905a-3262726f5404",
+      "result_id": "34b723dc-a1fe-4062-91bc-529faeeecfd9"
+    },
+    {
+      "claim_id": "6518f4e1-6c6a-400a-9582-10ed4072007f",
+      "result_id": "34b723dc-a1fe-4062-91bc-529faeeecfd9"
+    },
+    {
+      "claim_id": "af1bf04e-a044-4fbd-917d-bb9f9c9b5fc4",
+      "result_id": "34b723dc-a1fe-4062-91bc-529faeeecfd9"
+    },
+    {
+      "claim_id": "b33fc502-23c4-4900-b894-b66cb8dba1b5",
+      "result_id": "34b723dc-a1fe-4062-91bc-529faeeecfd9"
+    },
+    {
+      "claim_id": "14e25b19-65a6-499b-bf17-d3d64baedb69",
+      "result_id": "34b723dc-a1fe-4062-91bc-529faeeecfd9"
+    },
+    {
+      "claim_id": "e6cda3ab-caf9-4b9d-a6d5-d47582a76816",
+      "result_id": "34b723dc-a1fe-4062-91bc-529faeeecfd9"
+    },
+    {
+      "claim_id": "b2d0093e-710a-4f2a-a23c-51333ac4dabf",
+      "result_id": "b99d3fd0-549e-4731-9a6c-bb7d85a8b38c"
+    },
+    {
+      "claim_id": "f46c2dae-287a-4917-bffb-83a5c4d5dfb7",
+      "result_id": "b99d3fd0-549e-4731-9a6c-bb7d85a8b38c"
+    },
+    {
+      "claim_id": "881cb63b-6aff-46d6-a035-e6038d8be7c6",
+      "result_id": "506b8ae7-9dd1-481b-8ba7-8e9a69ed346d"
+    },
+    {
+      "claim_id": "2cbd6c62-4766-45ce-b606-6cf2ea729ae7",
+      "result_id": "506b8ae7-9dd1-481b-8ba7-8e9a69ed346d"
+    },
+    {
+      "claim_id": "f47da176-7c61-4eec-a757-c923f5ec3288",
+      "result_id": "506b8ae7-9dd1-481b-8ba7-8e9a69ed346d"
+    },
+    {
+      "claim_id": "a3d2ea94-cce9-4cfc-b7ae-7eaed7d6ac90",
+      "result_id": "506b8ae7-9dd1-481b-8ba7-8e9a69ed346d"
+    },
+    {
+      "claim_id": "f68800c8-a0af-4132-99eb-f508611be899",
+      "result_id": "b1e2177f-42c3-49cb-89d6-f4b574631b63"
+    },
+    {
+      "claim_id": "fa36fdf5-94df-4e76-8dc7-fe9bc5ae848f",
+      "result_id": "b1e2177f-42c3-49cb-89d6-f4b574631b63"
+    },
+    {
+      "claim_id": "b37b3aff-f5ce-4397-95cd-cac0e7996d9e",
+      "result_id": "b1e2177f-42c3-49cb-89d6-f4b574631b63"
+    },
+    {
+      "claim_id": "dd66aafc-faf1-4d6a-bfdc-2641a91bc133",
+      "result_id": "b1e2177f-42c3-49cb-89d6-f4b574631b63"
+    },
+    {
+      "claim_id": "6ddce9fe-fd14-4063-92e5-523f79daa68e",
+      "result_id": "b1e2177f-42c3-49cb-89d6-f4b574631b63"
+    },
+    {
+      "claim_id": "74e71879-f8bc-49b2-8df6-7762a9968f38",
+      "result_id": "dba53872-6f69-4132-8a86-4da46e80cd6c"
+    },
+    {
+      "claim_id": "eea2a4e0-257a-411a-8d2f-7840487555bc",
+      "result_id": "dba53872-6f69-4132-8a86-4da46e80cd6c"
+    },
+    {
+      "claim_id": "d297e285-4505-4871-b770-4323e0d8a33c",
+      "result_id": "dba53872-6f69-4132-8a86-4da46e80cd6c"
+    },
+    {
+      "claim_id": "cfbb573c-36a0-4ebe-afe4-73f6375570d7",
+      "result_id": "dba53872-6f69-4132-8a86-4da46e80cd6c"
+    },
+    {
+      "claim_id": "d045ffb8-e468-4737-858c-681a0b727583",
+      "result_id": "dba53872-6f69-4132-8a86-4da46e80cd6c"
+    },
+    {
+      "claim_id": "10ac6a9e-b841-4a9a-a70a-4b3b85ffc793",
+      "result_id": "dba53872-6f69-4132-8a86-4da46e80cd6c"
+    },
+    {
+      "claim_id": "f7af6b09-0479-4876-8ee2-6dd475828955",
+      "result_id": "ecf0a7a8-0055-4db6-b468-bd40f9ff9f6b"
+    },
+    {
+      "claim_id": "8afd0032-f171-44ed-a9b5-05acee3cc468",
+      "result_id": "ecf0a7a8-0055-4db6-b468-bd40f9ff9f6b"
+    },
+    {
+      "claim_id": "2f232d7f-786e-4176-8695-33037d2a00ce",
+      "result_id": "0dba585f-eba3-451f-a7f9-6014ce6fe300"
+    },
+    {
+      "claim_id": "01f7d5a2-806f-4cea-b397-621be00146d6",
+      "result_id": "0dba585f-eba3-451f-a7f9-6014ce6fe300"
+    },
+    {
+      "claim_id": "e120819b-d9a4-477a-9d56-e3455b06b74d",
+      "result_id": "0dba585f-eba3-451f-a7f9-6014ce6fe300"
+    },
+    {
+      "claim_id": "001fed4a-e11d-42dd-91f3-e26ed252cb99",
+      "result_id": "0dba585f-eba3-451f-a7f9-6014ce6fe300"
+    },
+    {
+      "claim_id": "5681df40-6cdc-4656-b0e2-d3a57eaa3b79",
+      "result_id": "0dba585f-eba3-451f-a7f9-6014ce6fe300"
+    },
+    {
+      "claim_id": "8dd4fd26-4b65-4789-baa4-7ca06ee9f027",
+      "result_id": "0dba585f-eba3-451f-a7f9-6014ce6fe300"
+    },
+    {
+      "claim_id": "552c1460-2db0-446e-83d7-0d50e3b5a9e6",
+      "result_id": "0dba585f-eba3-451f-a7f9-6014ce6fe300"
+    },
+    {
+      "claim_id": "16d7f427-f15c-4e93-95cb-01ea42add249",
+      "result_id": "0dba585f-eba3-451f-a7f9-6014ce6fe300"
+    },
+    {
+      "claim_id": "fec9d876-7be3-4318-b011-a9c197577ea4",
+      "result_id": "0dba585f-eba3-451f-a7f9-6014ce6fe300"
+    },
+    {
+      "claim_id": "cf08db14-68a8-4fa0-92aa-29a9524cd95f",
+      "result_id": "0dba585f-eba3-451f-a7f9-6014ce6fe300"
+    },
+    {
+      "claim_id": "46db8588-02b8-4fe4-8008-888bc6f6f854",
+      "result_id": "b2e96553-8738-4a83-ac26-8f008c5e7505"
+    },
+    {
+      "claim_id": "2c515961-7a5a-428d-b100-365978477829",
+      "result_id": "b2e96553-8738-4a83-ac26-8f008c5e7505"
+    },
+    {
+      "claim_id": "a25d481c-b00c-4e08-bdf1-0ccf85fe0ebb",
+      "result_id": "b2e96553-8738-4a83-ac26-8f008c5e7505"
+    },
+    {
+      "claim_id": "c01c19c0-404a-4350-a56e-89464ffe75ae",
+      "result_id": "451f3ba1-3864-4789-a42d-6ece6f0711a3"
+    }
+  ],
+  "comparisons": []
+}

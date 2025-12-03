@@ -1,0 +1,599 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Amino acid deprivation in MEFs causes initial mTORC1 inactivation followed by reactivation during prolonged deprivation. This reactivation is suppressed by bafilomycin A1, indicating dependence on lysosomal amino acid supply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by western blot data in Figure 1A showing temporal changes in phospho-S6K1 levels and the effect of bafilomycin A1. The interpretation is consistent with established knowledge about lysosomal function in amino acid recycling and is supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "GCN2 activation during amino acid deprivation is gradual and correlates with progressive decline in translation. However, translation continues at reduced levels even after 6 hours of amino acid deprivation, indicating ongoing adaptive translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are supported by western blot data showing GCN2 phosphorylation kinetics (Figure 1A) and OPP incorporation data demonstrating declining but persistent translation (Figure 1B). The comparison with cycloheximide provides appropriate negative control for complete translation inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "ISRIB treatment has minimal effect on translation suppression during amino acid deprivation, despite blocking ATF4 accumulation and increasing eIF2\u03b1 phosphorylation. This indicates that GCN2-mediated eIF2\u03b1 phosphorylation is not the major cause of translation suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by OPP incorporation and western blot data in Figure 1\u2014figure supplement 1A-B. The logic is sound: if eIF2\u03b1 phosphorylation were the primary mechanism, ISRIB should rescue translation. However, the interpretation could benefit from additional controls to rule out off-target effects of ISRIB.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "During amino acid deprivation, tRNAGln becomes selectively uncharged while tRNAs for Met, Leu, Arg, and Val remain charged. This selective depletion occurs despite maintained charging of other tRNAs even when their corresponding free amino acid levels decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 are well-supported by tRNA charging assay data (Figure 1C, Figure 1\u2014figure supplement 1D-E) and mass spectrometry data. The statistical significance is reported (p<0.05 at 1hr, p<0.001 at 6hr for tRNAGln). The observation that other tRNAs remain charged despite reduced free amino acid levels is particularly important and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Bafilomycin A1 treatment prevents maintenance of tRNAVal and tRNAMet charging during amino acid deprivation but does not further increase GCN2 phosphorylation, suggesting that uncharged tRNAGln alone may saturate GCN2 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by tRNA charging data (Figure 1D) and western blot data (Figure 1A). However, C20 is speculative about GCN2 saturation. While the speculation is reasonable, it lacks direct experimental validation of GCN2's tRNA-sensing capacity limits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Translation inhibitors (cycloheximide and L-valinol) rapidly restore tRNAGln charging in amino acid-deprived cells, indicating that tRNAGln continues to be charged but is rapidly consumed in protein synthesis. This suggests that neither glutamine synthesis nor protein degradation is sufficient to maintain tRNAGln charging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are well-supported by tRNA charging data (Figure 1E-F) showing rapid restoration of tRNAGln charging upon translation inhibition. The on-target activity of L-valinol is confirmed by loss of tRNAVal charging. C24's inference is logical but could benefit from direct measurement of glutamine synthesis rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Northern hybridization-based tRNA charging assay confirms selective uncharging of tRNAGln during amino acid deprivation, with partial recovery upon L-valinol treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by northern blot data (Figure 1G) that independently validates the periodate-based assay results. This orthogonal validation strengthens confidence in the selective tRNAGln depletion finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "In chronic low amino acid conditions (5% AA medium), tRNAGln charging is almost completely lost while other tRNAs remain charged, accompanied by increased GCN2 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by tRNA charging data (Figure 1H) and western blot data (Figure 1I) with appropriate statistical analysis (p=0.0011). This demonstrates that selective tRNAGln depletion occurs in physiologically relevant chronic amino acid limitation, not just acute deprivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Selective loss of tRNAGln charging during amino acid deprivation occurs in both proliferating and quiescent MEFs, indicating independence from proliferative status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by western blot and tRNA charging data in Figure 1\u2014figure supplement 1F-G. This control experiment appropriately addresses whether the phenomenon is specific to proliferating cells or represents a general cellular response to amino acid limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CHARGE-seq analysis reveals that tRNAGln isodecoders (CAG and CAA) are the sole cytosolic tRNAs that become uncharged during amino acid deprivation. Glutaminase inhibitor CB-839 rescues tRNAGln charging but causes compensatory uncharging of tRNAMet, suggesting tRNAMet may be the second-most limiting tRNA in MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are well-supported by comprehensive CHARGE-seq data (Figure 2C) covering 49 of 50 cytosolic tRNA isodecoders. The compensatory uncharging of tRNAMet is clearly demonstrated. However, C36 is speculative about tRNAMet being second-most limiting, though the speculation is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Glutaminase inhibition has only marginal effect on GCN2 phosphorylation in amino acid-deprived MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by western blot data (Figure 2E-F) showing minimal change in GCN2 phosphorylation with CB-839 treatment. This is consistent with the compensatory uncharging of tRNAMet maintaining GCN2 activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Different cell types show distinct patterns of compensatory tRNA uncharging when tRNAGln is restored: A498 cells show no compensatory uncharging and complete GCN2 reversal, while MiaPaCa2 cells show tRNAArg uncharging due to ASS1 deficiency. This indicates cell-type-specific amino acid metabolism dictates tRNA limitation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by tRNA charging data (Figure 2\u2014figure supplement 1A-D) and western blot data across multiple cell lines. The explanation for MiaPaCa2's tRNAArg depletion is well-supported by citation to Singh et al., 2019 documenting ASS1 deficiency. The cell-type specificity is an important finding demonstrating metabolic context dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CB-839 inhibits cell proliferation in complete medium but enables proliferation in amino acid-limited conditions, particularly in A498 cells. Cells maintain robust glutaminase expression regardless of amino acid availability, suggesting glutaminase activity becomes detrimental in amino acid-poor environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by cell proliferation data (Figure 2\u2014figure supplement 1G-I) and western blot data (Figure 2\u2014figure supplement 1J). The paradoxical effect of glutaminase inhibition in different nutrient contexts is well-documented and represents an important finding about metabolic adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "CB-839 suppresses mTORC1 reactivation during prolonged amino acid deprivation across all cell types tested. This may occur because restoring tRNAGln charging increases translation, depleting essential amino acids needed for mTORC1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is well-supported by western blot data (Figure 2E-F, Figure 2\u2014figure supplement 1C-F) showing consistent suppression of mTORC1 reactivation. However, C51 is speculative about the mechanism. While the proposed mechanism is plausible and supported by some data (Figure 2D), direct measurement of essential amino acid depletion rates would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "CB-839 treatment increases ATF4 accumulation in amino acid-poor conditions without further increasing GCN2 phosphorylation. Given ATF4's short half-life (1 hr), this suggests that restoring tRNAGln charging augments overall translational capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by western blot data (Figure 2F, Figure 2\u2014figure supplement 1D, 1F) and citation for ATF4 half-life (Lassot et al., 2001). The inference in C54 is logical: increased ATF4 despite unchanged GCN2 phosphorylation suggests enhanced translation capacity. However, direct measurement of ATF4 synthesis rates would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Glutaminase inhibition or glutamine supplementation markedly increases bulk translation in amino acid-deprived cells, while methionine supplementation has no effect. This indicates translation is specifically limited by tRNAGln charging deficit, which must be resolved before other amino acids can benefit translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are well-supported by OPP incorporation data (Figure 3A-C) showing consistent effects across multiple glutaminase inhibitors and with glutamine supplementation. The specificity is demonstrated by lack of effect with methionine. This is a key finding establishing tRNAGln as the primary translational bottleneck.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Glutaminase inhibition or glutamine supplementation rescues translation suppression in MiaPaCa2 and A498 cells, indicating that tRNAGln charging is a key limiting factor for protein synthesis across diverse cellular contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by OPP incorporation data (Figure 3\u2014figure supplement 1A-B) demonstrating generalizability across cell types. This strengthens the conclusion that tRNAGln limitation is a fundamental constraint in amino acid-poor conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Using destabilized d2GFP reporter, amino acid deprivation causes precipitous decline in d2GFP but not stable GFP. CB-839 or glutamine supplementation restores d2GFP accumulation, while ISRIB has no effect. This demonstrates that restoring tRNAGln charging enhances functional protein production independent of eIF2\u03b1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are well-supported by FACS data (Figure 3D, Figure 3\u2014figure supplement 1C-D) and cycloheximide chase experiments. The use of d2GFP as a reporter for ongoing translation is appropriate given its short half-life. Controls with ISRIB and cycloheximide appropriately rule out alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In A20 B-cell lymphoma cells, IgG secretion is reduced in amino acid-limited conditions but restored to normal levels by glutaminase inhibition. This demonstrates that selective tRNAGln depletion limits translation in specialized protein-producing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by dot blot data (Figure 3E-F) showing IgG secretion levels. This experiment in a specialized secretory cell type strengthens the physiological relevance of the findings. The biomass normalization is appropriate for comparing secretion rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "There are 68 proteins in the human proteome containing polyQ tracts (\u226510 glutamines). These tracts provide flexibility in protein complexes, participate in phase separation, and when expanded, cause neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by established knowledge and appropriate citations (T\u00f3th-Petr\u00f3czy et al., 2008; Fiumara et al., 2010; Vitalis et al., 2007; Lieberman et al., 2019). This provides important context for the subsequent experiments on polyQ protein sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Amino acid limitation (5% AA) selectively depletes polyQ-containing transcription factors (TBP, MED12, CBF\u03b11, CBP) while sparing non-polyQ proteins. CB-839 or glutamine supplementation restores polyQ protein levels, indicating they are sensitive to glutamine availability for translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are well-supported by western blot data (Figure 4A) showing differential effects on polyQ vs non-polyQ proteins. The restoration with CB-839 or glutamine establishes the mechanism. This is a novel and important finding linking tRNAGln availability to polyQ protein expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Amino acid limitation suppresses RNA synthesis, which is partially restored by CB-839 or glutamine. This effect is confirmed by shRNA-mediated GLS knockdown and is not due to increased nucleotide availability, suggesting polyQ transcription factor depletion reduces transcriptional output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by 5-EU incorporation data (Figure 4B, Figure 4\u2014figure supplement 1E) and mass spectrometry data ruling out nucleotide pool changes (Figure 4\u2014figure supplement 1F). The shRNA validation (Figure 4\u2014figure supplement 1D) strengthens confidence in on-target effects. The mechanistic link to polyQ transcription factors is logical but somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "PolyQ tracts in transcriptional regulators may represent an amino acid-sensing adaptation allowing cells to modulate transcriptional output in response to amino acid availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is explicitly speculative ('raise the possibility'). While the hypothesis is interesting and consistent with the data, it lacks direct experimental validation. Testing this would require evolutionary analysis, gain/loss of function experiments with polyQ tracts, and demonstration of adaptive benefit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Glutamine-specific depletion, not general translation inhibition, causes polyQ protein depletion. Both glutamine-poor and leucine-poor conditions inhibit translation equally, but only glutamine depletion reduces polyQ protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by puromycin incorporation and western blot data (Figure 4C) demonstrating equivalent translation inhibition but differential effects on polyQ proteins. This control experiment is critical for establishing specificity to glutamine rather than general translation suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The polyQ tract is required for TBP sensitivity to amino acid depletion. Recombinant TBP with intact polyQ tract behaves like endogenous TBP (depleted by amino acid limitation, restored by CB-839), while \u0394polyQ TBP shows no depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are well-supported by western blot data (Figure 4D) comparing wild-type and \u0394polyQ TBP. This gain/loss of function experiment directly demonstrates that the polyQ tract confers sensitivity to amino acid limitation. This is strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "PolyQ-GFP reporter accumulates less fluorescence in amino acid-depleted conditions compared to control GFP. This is not due to decreased protein stability but is rescued by CB-839 or glutamine supplementation, indicating that adding a polyQ tract confers sensitivity to tRNAGln availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by FACS data (Figure 4F-G) and cycloheximide chase experiments (Figure 4\u2014figure supplement 1G). The control with stable GFP and the half-life measurements appropriately rule out alternative explanations. This demonstrates sufficiency of polyQ tract to confer amino acid sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Prior work by Girstmair et al. (2013) showed that tRNAGln depletion or tRNAAla overexpression causes -1 ribosomal frameshifting on huntingtin polyQ tracts, producing polyalanine products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 accurately cites prior work (Girstmair et al., 2013) that provides the conceptual foundation for the frameshift reporter experiments. This is appropriate background for the subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Amino acid deprivation triggers GFP accumulation in PolyQ-1-GFP frameshift reporter in both MEFs and MiaPaCa2 cells, which is completely blocked by CB-839 or glutamine supplementation. No frameshifting occurs in complete medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are well-supported by FACS data (Figure 5B-C, Figure 5\u2014figure supplement 1A) showing frameshift-dependent GFP expression specifically in amino acid-depleted conditions. The complete suppression by CB-839 or glutamine establishes the mechanism. This is a novel finding demonstrating translational fidelity loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Frameshift-dependent GFP expression occurs in MC38 cells and correlates with the extent of amino acid depletion (10% vs 5% AA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by FACS data (Figure 5\u2014figure supplement 1B-C) demonstrating generalizability to another cell line and dose-response relationship. This strengthens the conclusion that frameshifting is a general response to amino acid limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "ISRIB has no effect on frameshift-dependent GFP expression, indicating the frameshifting is not orchestrated by eIF2\u03b1 phosphorylation-associated stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by FACS data (Figure 5\u2014figure supplement 1D). This control appropriately rules out the eIF2\u03b1 phosphorylation pathway as the mechanism for frameshifting, consistent with earlier findings that ISRIB doesn't rescue translation suppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Across multiple cell types, amino acid depletion causes frameshifting on polyQ tracts. Glutaminase inhibition or glutamine supplementation prevents this frameshifting, implicating tRNAGln deficit as the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by FACS data across multiple cell types showing consistent frameshifting and its prevention by treatments that restore tRNAGln charging. The mechanistic link to tRNAGln is well-established through the pattern of interventions that prevent frameshifting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Only amino acid depletion, not other cellular stresses (glucose depletion, oxidative stress, ER stress, osmotic stress), triggers frameshifting on polyQ tracts, indicating amino acid deficit is a specific trigger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by FACS data (Figure 5D) testing multiple stress conditions. This specificity control is important for establishing that frameshifting is not a general stress response but specifically linked to amino acid availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Luc-1-GFP control reporter shows minimal frameshifting compared to PolyQ-1-GFP, and PolyQ-1-GFP shows greater frameshifting in glutamine-poor than leucine-poor conditions. This demonstrates that polyQ tracts specifically promote frameshifting in response to glutamine depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by FACS data (Figure 5E, Figure 5\u2014figure supplement 1E) comparing PolyQ and Luc reporters and testing amino acid specificity. These controls are critical for establishing that the polyQ tract itself promotes frameshifting and that the effect is glutamine-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Frameshifting is reversible: GFP levels decline when amino acid-depleted cells are re-fed with complete medium, demonstrating that frameshifting is contingent on amino acid deficit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by FACS data (Figure 5F) showing GFP decline after re-feeding. This reversibility experiment is important for demonstrating that frameshifting is a dynamic response to nutrient availability rather than a permanent change.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Translation of polyQ-containing transcripts is prone to frameshifting specifically in response to amino acid deficit (not other stresses) across diverse cellular contexts, and can be prevented by restoring tRNAGln charging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 synthesize findings from multiple experiments across cell types and conditions. The conclusions are well-supported by the comprehensive data showing specificity to amino acid depletion, generalizability across cell types, and mechanistic link to tRNAGln.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "In MiaPaCa2 xenografts, multiple nests of GFP+ cells (10-100 cells) are observed in PolyQ-1-GFP tumors but not controls. These are unlikely to be clonal outgrowths since no GFP+ clones emerge in vitro, indicating frameshifting occurs in discrete areas within solid tumors in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 are supported by immunohistochemistry data (Figure 6A) and clonal density experiments. The control experiment ruling out constitutive GFP+ clones is appropriate. This demonstrates physiological relevance by showing frameshifting occurs in vivo in nutrient-poor tumor regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The proportion of GFP+ cells in xenografts peaks at week 3 and declines by week 5, suggesting either selection against GFP+ cells or reduced mistranslation as tumors mature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is supported by FACS data (Figure 6B) showing temporal changes. However, C123 is speculative about the mechanism. The two proposed explanations (selection vs. reduced mistranslation) are plausible but not distinguished experimentally. Additional experiments would be needed to determine which mechanism is operative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Cells can maintain charged tRNA pools during amino acid deprivation through lysosomal function, consistent with the lysosome's role as an amino acid source in nutrient limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 synthesize findings from multiple experiments showing maintained tRNA charging for most amino acids and its dependence on lysosomal function (bafilomycin A1 experiments). This conclusion is well-supported and consistent with established knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Adaptive translation causes selective tRNAGln depletion that reduces translation. This occurs not from inability to recycle or uptake glutamine, but from glutaminase-mediated conversion to glutamate. Glutaminase inhibition restores tRNAGln charging and translation in amino acid-depleted cells, with opposite effects in nutrient-rich vs. nutrient-poor conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 synthesize the major mechanistic findings. The conclusions are well-supported by comprehensive data showing: (1) selective tRNAGln depletion, (2) ongoing charging but rapid consumption, (3) rescue by glutaminase inhibition, and (4) context-dependent effects on proliferation. This represents the core mechanistic insight of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "Amino acid limitation-associated tRNAGln depletion causes collective depletion of polyQ-containing transcription factors and reduces transcriptional output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C131 is supported by western blot data showing polyQ transcription factor depletion and 5-EU incorporation data showing reduced RNA synthesis. The causal link between polyQ protein depletion and reduced transcription is logical but somewhat indirect - it would be strengthened by rescue experiments showing that maintaining polyQ protein levels prevents transcriptional decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Comparative sequence analysis shows polyQ tract position varies among orthologs, suggesting the presence rather than location is functionally important. This raises the possibility that polyQ tracts serve a nutrient-sensing function by modulating protein levels in response to amino acid availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C133 are supported by citation to Schaefer et al., 2012. However, C134 is explicitly speculative ('raise the possibility'). While the hypothesis is interesting and consistent with the data, it lacks direct experimental validation of adaptive benefit or evolutionary selection for this function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "Amino acid depletion causes loss of translational fidelity on polyQ-containing transcripts, which occurs in discrete areas of solid tumors in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 synthesizes findings from frameshift reporter experiments in vitro and xenograft experiments in vivo. The conclusion is well-supported by comprehensive data demonstrating frameshifting in multiple cell types in culture and in tumor tissue sections.",
+    "result_type": "MAJOR"
+  }
+]

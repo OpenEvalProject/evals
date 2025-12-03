@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C24",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C71"
+    ],
+    "result": "Inhibitory spike-timing-dependent plasticity (iSTDP) is the key mechanism generating novelty responses in the model. Inhibitory plasticity selectively strengthens inhibition onto excitatory neurons tuned to familiar stimuli while leaving inhibition low for novel stimuli, resulting in elevated population responses to novel stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C23, C24 establish the main finding that iSTDP generates novelty responses. Claims C49-C52 provide the mechanistic explanation showing how inhibitory weights increase for familiar stimuli and remain low for novel stimuli. Claim C71 summarizes this as the key mechanism. The model results in Figures 1, 4 demonstrate this mechanism through simulation data showing weight dynamics and population responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C54",
+      "C126"
+    ],
+    "result": "Novelty responses in the model depend on the distribution of presented stimuli rather than the periodicity or exact sequence structure. Shuffling stimuli within a sequence still generates novelty responses, while swapping two stimuli does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47, C54 state that stimulus distribution, not periodicity, determines novelty responses. Claims C46 and C126 show that swapping stimuli does not generate novelty responses. Figure 3D,E demonstrates these findings through simulation results. The mechanistic explanation is that inhibitory plasticity adapts to stimulus frequency regardless of temporal order.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The combination of inhibitory plasticity and tuned inhibitory neurons enables the network to generate stimulus-specific adaptation (SSA). Neither adaptive currents with static synapses nor inhibitory plasticity without tuning can produce SSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C25, C60 establish that the model generates SSA. Claims C61-C62 demonstrate through control simulations (Figure 6C) that alternative mechanisms fail to produce SSA. Claim C63 provides the mechanistic explanation showing stimulus-specific inhibitory weight dynamics (Figure 6D). The results are well-supported by simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Disinhibition can flexibly control the amplitude and density of novelty responses. Including a top-down disinhibitory signal amplifies the novelty response and increases the fraction of active excitatory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26, C66, C70 establish that disinhibition controls novelty response properties. Claims C67-C68, C98-C100 demonstrate specific effects on amplitude and density. Figure 7 shows simulation results with varying disinhibition strength. The mechanism is clearly demonstrated, though the source of disinhibition is phenomenological rather than mechanistically specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C86",
+      "C123"
+    ],
+    "result": "Inhibitory plasticity enables adaptation on multiple timescales: milliseconds (plasticity mechanism), seconds (sequence block presentation), and minutes (multiple sequence blocks), without requiring additional assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C86, C123 establish multi-timescale adaptation. Figure 4C,D demonstrates these timescales through simulation results showing weight dynamics and population responses. The finding is well-supported by model data, though experimental validation of the fast timescale (seconds) for inhibitory plasticity remains uncertain (acknowledged in C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The dynamics of novelty and onset responses depend on sequence properties. Novelty responses emerge after as few as four repetitions, and the decay constant of onset responses scales linearly with sequence length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 describe the emergence and saturation of novelty responses with repetitions. Claims C40-C41 establish the linear relationship between sequence length and adaptation timescale. Figure 2 demonstrates these relationships through systematic parameter variations. The model predictions match experimental data qualitatively (Homann et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Longer inter-repetition intervals reduce adaptation levels because inhibitory weights have more time to decrease between stimulus presentations. The model captures reduced adaptation for longer inter-stimulus intervals when background activity is elevated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 establish the relationship between inter-repetition intervals and adaptation. Claims C77-C79 explain the mechanistic dependence on background activity. Figure 5 demonstrates these effects through simulation results. The explanation is mechanistically sound and consistent with experimental findings (Ulanovsky et al., 2004; Cohen-Kashi Malina et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C124",
+      "C125"
+    ],
+    "result": "Both excitatory and inhibitory neuron populations show adaptive behavior and novelty responses. Adaptation of inhibitory neurons has been verified experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C124 establish that both populations adapt and show novelty responses. Claim C125 notes experimental verification. Figure 3B,C demonstrates these responses in simulation. This is a testable prediction that is partially supported by existing experimental data (Chen et al., 2015; Natan et al., 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C128"
+    ],
+    "result": "The novelty response amplitude depends monotonically on the input strength of the novel stimulus, with reduced input drive decreasing the novelty peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C128 establish the monotonic relationship between stimulus strength and novelty response. Figure 3F demonstrates this through systematic variation of input drive. This is a straightforward prediction from the model mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Repeating sequence blocks dampens the onset response at sequence onset compared to presenting unique sequence blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 establishes this finding by comparing results across figures. The dampening occurs because inhibitory weights remain elevated from previous presentations of the same sequence. This is a testable prediction supported by model simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C93",
+      "C94"
+    ],
+    "result": "The novelty response is robust to variations in pretraining parameters. Varying pretraining duration and number of stimuli affects novelty peak height but preserves the generation of novelty responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C93-C94 establish robustness to pretraining variations. Figure 4\u2014figure supplement 1 and Figure 1\u2014figure supplement 3 demonstrate these effects. The results show that the core mechanism is not critically dependent on specific pretraining choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C89",
+      "C97"
+    ],
+    "result": "Fast inhibitory plasticity is required for both novelty response generation and adaptation to repeated stimuli. Decreasing the learning rate five-fold eliminates these responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C89, C97 establish the requirement for fast inhibitory plasticity. Figure 4\u2014figure supplement 2 demonstrates that slow plasticity fails to stabilize firing rates and eliminates novelty responses. This is a clear model prediction, though experimental validation of the required timescale remains uncertain (C87).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "After a 9 s pause, the adapted response remains adapted, and full recovery requires more than 200 s in the absence of network activity between stimulus presentations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 describe recovery timescales in the SSA paradigm. Figure 6\u2014figure supplement 1 demonstrates these timescales through simulation. The slow recovery is explained by low background activity preventing inhibitory weight depression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Slowing the normalization timescale does not affect the generation of adapted and novelty responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 establishes robustness to normalization timescale. Figure 1\u2014figure supplement 5 demonstrates this through systematic variation. This shows that the core mechanism depends on inhibitory plasticity rather than the normalization mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The model consists of 4000 excitatory and 1000 inhibitory neurons with plastic excitatory-to-excitatory (triplet STDP) and inhibitory-to-excitatory (iSTDP) synapses. The model includes only long-term plasticity and generates stimulus-specific assemblies through tuned input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 describe the model architecture and plasticity rules. These are methodological details supported by citations to previous work (Litwin-Kumar and Doiron, 2014; Vogels et al., 2011) and demonstrated in Figure 1\u2014figure supplement 1 and 2. The model is well-specified and based on established mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C120",
+      "C121"
+    ],
+    "result": "The model suggests that primary sensory areas allow for bottom-up detection of stimulus changes without requiring an explicit population of error neurons or an internal model of the world, though inhibitory weights could be interpreted as an implicit internal model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27, C120 propose that the model provides an alternative to predictive coding frameworks. Claim C121 offers a speculative interpretation. While the model demonstrates novelty detection without explicit error neurons, the interpretation regarding predictive coding is speculative and not directly tested. The claims are marked as INFERENCE and SPECULATION.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "It is unclear whether inhibitory plasticity can act sufficiently fast to explain adaptation on the timescale of seconds, though experimental evidence suggests inhibitory postsynaptic currents increase immediately after plasticity induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 acknowledges uncertainty about the timescale. Claims C90-C91 cite experimental evidence for fast changes. Claim C92 proposes inhibitory plasticity as a suitable candidate. The model requires fast plasticity (seconds), but experimental validation of this timescale is incomplete. This is an acknowledged limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Without disinhibition, the fraction of active neurons for novel stimuli is qualitatively similar to repeated stimuli, resulting in no dense novelty response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 establishes that the baseline model does not produce dense novelty responses. Figure 1\u2014figure supplement 4A demonstrates this through single neuron statistics. This motivates the inclusion of disinhibition to match experimental observations (Homann et al., 2017).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The introduction establishes the experimental and theoretical context for novelty responses and adaptation, including observations across sensory modalities, timescales, and the role of inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 provide background knowledge and cite experimental literature. These are well-supported by citations to established work. They provide context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C35",
+      "C36"
+    ],
+    "result": "The model is based on biologically plausible mechanisms including tuned inhibition, which leads to stimulus-specific inhibitory connectivity and generates novelty responses by increasing excitatory population firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 describe the model basis and cite supporting literature. Claims C35-C36 explain the pretraining phase and novelty response generation. These are supported by citations and demonstrated in Figure 1B. The model design is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C88",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C122",
+      "C125",
+      "C127",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The discussion contextualizes the findings within existing literature on inhibitory plasticity, short-term plasticity, predictive coding, and disinhibition, and proposes inhibitory plasticity as an essential mechanism for adaptive phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide context, cite supporting literature, and offer interpretations of the model results. They are well-supported by citations and logical reasoning, though some claims (C122, C132) are speculative predictions. The discussion appropriately situates the work within the broader field.",
+    "result_type": "MINOR"
+  }
+]

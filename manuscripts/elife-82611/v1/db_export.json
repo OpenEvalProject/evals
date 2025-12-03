@@ -1,0 +1,1705 @@
+{
+  "submission": {
+    "id": "c46750c0-f6bf-4515-a411-666f04f83b5f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:35:15.482137Z",
+    "updated_at": "2025-12-03T19:35:15.482137Z"
+  },
+  "content": [
+    {
+      "id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "submission_id": "c46750c0-f6bf-4515-a411-666f04f83b5f",
+      "content_type": "manuscript",
+      "content_text": "# The effect of variation of individual infectiousness on SARS-CoV-2 transmission in households\n\n## Authors\n\n- Tim K Tsang<sup>1</sup> ([ORCID: 0000-0001-5037-6776](https://orcid.org/0000-0001-5037-6776)) \u2020\n- Xiaotong Huang<sup>1</sup>\n- Can Wang<sup>1</sup>\n- Sijie Chen<sup>1</sup>\n- Bingyi Yang<sup>1</sup>\n- Simon Cauchemez<sup>3</sup> ([ORCID: 0000-0001-9186-4549](https://orcid.org/0000-0001-9186-4549))\n- Benjamin John Cowling<sup>2</sup> ([ORCID: 0000-0002-6297-7154](https://orcid.org/0000-0002-6297-7154)) \u2020\n\n### Affiliations\n\n1. WHO Collaborating Centre for Infectious Disease Epidemiology and Control, School of Public Health, Li Ka Shing Faculty of Medicine, The University of Hong Kong Hong Kong China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))\n2. Laboratory of Data Discovery for Health Hong Kong China ([ROR:02mbz1h25](https://ror.org/02mbz1h25))\n3. Mathematical Modelling of Infectious Diseases Unit, Institut Pasteur Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))\n\n\u2020 Corresponding author\n\n## Abstract\n\nQuantifying variation of individual infectiousness is critical to inform disease control. Previous studies reported substantial heterogeneity in transmission of many infectious diseases including SARS-CoV-2. However, those results are difficult to interpret since the number of contacts is rarely considered in such approaches. Here, we analyze data from 17 SARS-CoV-2 household transmission studies conducted in periods dominated by ancestral strains, in which the number of contacts was known. By fitting individual-based household transmission models to these data, accounting for number of contacts and baseline transmission probabilities, the pooled estimate suggests that the 20% most infectious cases have 3.1-fold (95% confidence interval: 2.2- to 4.2-fold) higher infectiousness than average cases, which is consistent with the observed heterogeneity in viral shedding. Household data can inform the estimation of transmission heterogeneity, which is important for epidemic management.\n\n## Introduction\n\nCharacterizing transmission is critical to control the spread of an emerging infectious disease. The reproductive number is the widely adopted measure of infectiousness. However, it only measures the average number of secondary cases infected by an infected person, not the heterogeneity in the number of transmissions. Variation of individual infectiousness is particularly highlighted by superspreading events (SSEs), in which a minority of cases are responsible for a majority of transmission events. Such phenomena, illustrated by the \u201880/20 rule\u2019 (i.e., 20% of cases responsible for 80% transmission; Adam et al., 2020; Sun et al., 2021), have been observed in emerging infectious disease outbreaks (Lloyd-Smith et al., 2005), including severe acute respiratory syndrome (SARS) (Shen et al., 2004), Middle East respiratory syndrome (Cauchemez et al., 2016; Cowling et al., 2015), and most recently the COVID-19 pandemic (Adam et al., 2020; Lau et al., 2020; Sun et al., 2021; Wong and Collins, 2020; Zhao et al., 2021). In these outbreaks, the proportion of cases attributed to 80% transmission, and the dispersion parameter that is estimated by fitting the negative binomial distribution to the number of secondary cases (Lloyd-Smith et al., 2005), are considered as measures of transmission heterogeneity.\n\nHowever, the number of contacts per index cases is often not reported in SSE studies, and hence not incorporated in the analyses. In addition, SSE studies usually analyze clusters from different settings, in which the baseline transmission risk and density of exposure could be different (Thompson, 2021). Finally, studies of transmission heterogeneity that focus on SSEs described in the literature may suffer from publication bias, with larger clusters having higher probability of being observed and reported (Zhao et al., 2021). Therefore, the observed heterogeneity in the number of secondary cases could be the result of large number of contacts in SSE settings, or confounding from these factors (Althouse et al., 2020; Bagdasarian and Fisher, 2020), instead of variation in individual infectiousness.\n\nHouseholds are one of the most important settings for SARS-CoV-2 transmission, with 4- to 10-fold higher transmission risk than other places (Thompson, 2021). Hence, household transmission studies provide an ideal setting to quantify variations in individual infectiousness. In a household transmission study, an index case is identified, and their household contacts are followed up for 1\u20132 weeks, during which there is high transmission potential (Tsang et al., 2016). Therefore, the number of contacts is known while transmission risks and reporting biases can be controlled. We aim to characterize the variation of individual infectiousness by analyzing data from household transmission studies.\n\n## Results\n\nWe conducted a systematic review to gather information on the number of secondary cases with the number of household contacts for each household, in the form of number of households with X cases among households of size Y. In total, we identified 17 studies, comprising 13,098 index cases and 31,359 household contacts (Appendix 1\u2014figure 1, Appendix 1\u2014table 1; Bernardes-Souza et al., 2021; Carazo et al., 2022; Dattner et al., 2021; Han et al., 2022; Hart et al., 2022; Hsu et al., 2021; Hubiche et al., 2021; Koureas et al., 2021; Laxminarayan et al., 2020; Layan et al., 2022; Lyngse et al., 2022; M\u00e9ndez-Echevarr\u00eda et al., 2021; Posfay-Barbe et al., 2020; Reukers et al., 2021; Wilkinson et al., 2021). Most studies covered a period from January to November 2020, which was dominated by ancestral strains, except for Layan et al. (from December 2020 to April 2021) and Hsu et al. (from January 2020 to February 2021), which covered both ancestral strains and the alpha variant.\n\nWe then developed a statistical model to quantify the degree and the impact of variation of infectiousness of cases on transmission dynamics. The individual-based household transmission model describes the probability of infection of household contacts as depending on the time since infection in other infected persons in the household, so that infections from outside the household (community infections), or infections via other household contacts rather than the index case (tertiary infections) are allowed (Cauchemez et al., 2009; Tsang et al., 2014; Tsang et al., 2021). Therefore, the model could estimate the per-contact hazard of infection, which implicitly controls for number of household contacts in households. We extend this model by adding a random effect ($\\delta_{i}$) on the individual infectiousness of cases. Here, the relative infectiousness of case i compared with case j is exp($\\delta_{i}$)/exp($\\delta_{j}$). The parameter for variation in individual infectiousness (hereafter denoted as infectiousness variation, $\\sigma_{var}$) is the standard deviation (SD) of the random effect characterizing individual infectiousness, so that $\\delta_{i}$ follows a normal distribution with mean equal to 0 and SD equal to $\\sigma_{var}$ .\n\nWe separately fit the models to 14 studies with more than 150 contacts (Carazo et al., 2022; Dattner et al., 2021; Dutta et al., 2020; Han et al., 2022; Hart et al., 2022; Hubiche et al., 2021; Koureas et al., 2021; Laxminarayan et al., 2020; Layan et al., 2022; Lyngse et al., 2022; M\u00e9ndez-Echevarr\u00eda et al., 2021; Reukers et al., 2021; Tsang et al., 2022; Wilkinson et al., 2021; Figure 1, Appendix 1\u2014table 2). For 12 studies out of 14, models with infectiousness variation perform substantially better (range of \u2206DIC: 5.8\u2013268) (Figure 2, Appendix 1\u2014table 2). From these 12 studies, the estimated infectiousness variation ($\\sigma_{var})$ ranged from 1.03 to 2.83. This suggests that, the 20% most infectious cases are 2.4- to 10-fold more infectious than the average case. Based on the two largest studies with 6782 and 3727 households (Carazo et al., 2022; Lyngse et al., 2022), the estimated infectiousness variation is 1.48 (95% credible interval [CrI]: 1.29, 1.7) and 1.41 (95% CrI: 1.19, 1.72), suggesting that, among all cases, the 20% most infectious are 3.5-fold (95% CrI: 3.0- to 4.2-fold) and 3.3-fold (95% CrI: 2.7- to 4.3-fold) more infectious than the average case. The estimated daily probability of infection from outside the household and estimated person-to-person transmission probability within households range from 0.0003 to 0.017, and from 0.06 to 0.51, respectively. The estimates of parameters for the relationship between number of contacts and transmission (larger value indicates stronger inverse association) range from 0.43 to 0.92, except for the study by Layan et al., 2022, where it is equal to 0.2. For all studies, the predicted final size distribution is consistent with the observed data and the model fit is judged adequate (Appendix 1\u2014Tables 3\u20137, Appendix 1\u2014figure 2). Simulation studies demonstrated that there is no important systematic bias, with 88\u2013100% (depending on the parameter) of the 95% credible intervals covering the simulation value (Appendix 1\u2014table 8). This suggests that the algorithm could estimate adequately the posterior distribution. We conduct a sensitivity analysis that assumes the individual infectiousness of cases follows a Gamma distribution, but the fit worsens substantially (Appendix 1\u2014table 9).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82611/elife-82611-fig1-v1.jpg)\n\n**Figure 1.:** Figure shows the average number of contacts and standard deviation (SD) of number of contact, SD of number of secondary cases per index cases ($\\sigma_{sec}$), and secondary attack rate (SAR) for 17 identified studies.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82611/elife-82611-fig2-v1.jpg)\n\n**Figure 2.:** Figure shows the estimates of infectiousness variation ($\\sigma_{var}$), the estimated probability of infection from community and estimated probability of infection from households, and the reduction in deviance information criteriion (DIC) compared with the model without infectiousness variation. Models are fitted separately to 14 household transmission studies.\n\nWe conduct random effects meta-analyses on estimates of individual infectiousness from the 14 identified studies. The pooled estimate of infectiousness variation is 1.33 (95% confidence interval [CI]: 0.95, 1.70), suggesting that the 20% most infectious cases are 3.1-fold (95% CI: 2.2- to 4.2-fold) more infectious than the average case (Figure 3). Based on this fitted distribution, we estimate that 5.9% (95% CI: 1.4%, 11.1%) and 14.9% (95% CI: 7.2%, 20.7%) of cases could be at least 8- and 4-fold more infectious than average cases, respectively.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82611/elife-82611-fig3-v1.jpg)\n\n**Figure 3.:** Red line indicates the estimated distribution and the gray lines indicate the associated uncertainty. Black dashed line indicates average infectiousness (relative infectiousness equal to 1), while the purple and blue dashed lines indicate top 20% and 10% infectiousness, respectively.\n\nWe further explore if the secondary attack rate (SAR, the proportion of infected contacts), and the SD of the distribution of number of secondary cases ($\\sigma_{sec})$ (Figure 4; Appendix 1\u2014table 10) may be correlated with the infectiousness variation. In meta-regression, we find the infectiousness variation is associated with SAR (Appendix 1\u2014table 11). We estimate that doubling SAR are associated with 0.55 (95% CI: 0.21, 0.89) unit decrease in infectiousness variation, with R-squared equal to 67% respectively. In addition, we find that higher infectiousness variation is associated with only using PCR to ascertain secondary cases. Regarding other statistics, we find that $\\sigma_{sec}$ is positively associated with mean and SD of number of contacts. Other than these associations, we find no association between these statistics and implementation of lockdown, ascertainment method of index and secondary cases, and the circulating virus of SARS-CoV-2 in the study period.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82611/elife-82611-fig4-v1.jpg)\n\n**Figure 4.:** In each panel, numbers represent the observed corresponding relationship for the identified studies. Panels A and B show the relationship between infectiousness variation ($\\sigma_{var}$) and secondary attack rate (SAR) and standard deviation (SD) of number of secondary cases per index cases ($\\sigma_{sec}$). In the bottom, numbers in bracket indicate the number of household contacts in corresponding studies.\n\n## Discussion\n\nIn this study, we characterize the impact of variation of individual infectiousness on heterogeneity of transmission of COVID-19 in households. We demonstrate that it can be estimated from household data using a modeling approach. The pooled estimate of infectiousness variation from 14 studies suggests that the 20% most infectious cases have 3.1-fold (95% CI: 2.2- to 4.2-fold) higher infectiousness compared with average index cases. This implies there is substantial variation in individual infectiousness of cases in households. Given that we focused our analysis on households with known number of contacts in studies conducted in the early outbreaks caused by ancestral strains, the estimated infectiousness variations are corrected for the variations caused by number of contacts and transmission risks in different settings, difference in pre-existing immunity among contacts (almost everyone is na\u00efve and unvaccinated), and the difference in transmissibility among variants. Hence, this estimated infectiousness variation measures the variation caused by difference in individuals, which may be contributed by both biological factors and host behaviors, but not other potential confounding factors mentioned above.\n\nRegarding host behaviors, multiple contact patterns, particularly by age, could contribute to the variations in infectiousness of cases. For example, mother-child contacts are usually more intense than father-child contacts, and adult cases are more capable of self-isolation within a household compared with children. Furthermore, contact pattern studies suggested that school-age children and young adults tended to mix with people of the same age (Mossong et al., 2008; Mousa et al., 2021). Also, the duration of contact could vary, which could also contribute to the variations in infectiousness of cases (Toth et al., 2015). It should be noted that contacts have different features, including their number, frequency, and duration that may contribute to variations in infectiousness. Previous studies also suggest that the relative importance of contact characteristics on transmission may be different among viruses (De Cao et al., 2014). Individual behaviors may also be influenced by control measures and recommendation from public health agencies. For example, lockdown and stay-at-home orders may increase the time spending at home. Mask-wearing when in contact with other household members, using separate bedrooms and bathrooms, avoiding having meals together may reduce the transmission in households (Ng et al., 2021). Also, social disparity such as occupation may increase or reduce the risk of transmission in households, including the availability of personal protective equipment (PPE), or being healthcare worker (Yang et al., 2021). These factors may have impact of the transmission risk and hence SAR in households. In addition, heterogeneity in these different factors may have contributed infectiousness variation.\n\nBiological factors may also contribute to such variations. For example, the SAR for index cases with fever and cough are 1.4- and 1.3-fold higher than index cases without fever and cough, respectively (Madewell et al., 2021). Viral shedding is used as a proxy measure of infectiousness, and consistently it also has substantial variations, as suggested by 11 systematic reviews (Appendix 1\u2014Tables 12\u201314). Regarding the magnitude of viral shedding, studies report high variations of temporal viral shedding patterns among individuals (He et al., 2020; Jones et al., 2021; Sun et al., 2022). In addition, the duration of viral shedding can be highly heterogeneous, with pooled estimates of mean durations ranging from 11.1 to 30.3 days, and almost all reviews reporting high heterogeneity of estimates (Cevik et al., 2021; Chen et al., 2021b; D\u00edaz et al., 2022; Fontana et al., 2021; Li et al., 2020b; Okita et al., 2022; Qutub et al., 2022; Rahmani et al., 2022; Xu et al., 2020; Yan et al., 2021; Zhang et al., 2021). Such heterogeneities still exist in subgroup analyses by age and severity (Cevik et al., 2021; Fontana et al., 2021; Okita et al., 2022; Qutub et al., 2022; Rahmani et al., 2022; Xu et al., 2020; Yan et al., 2021). The infectious period, proxied by duration of replicant competent virus isolation, is also heterogeneous (Rahmani et al., 2022; Appendix 1\u2014table 14). One review also suggests that heterogeneity in viral shedding is an intrinsic virological factor facilitating higher dispersion parameter for SARS-CoV-2 if we compare it with the corresponding patterns in SARS-CoV-1 and pandemic influenza A(H1N1)pdm09 (Chen et al., 2021a).\n\nThe observed variation in individual infectiousness is consistent with past analyses of the dispersion parameter in a negative binomial distribution fitted to number of secondary cases per index case of COVID-19 (Sun et al., 2021; Wong et al., 2015). However, in these studies, the number of contacts was not considered. Therefore, the observed variations may not apply directly to households with limited number of contacts. It should be noted that the SD of the distribution of number of secondary cases ($\\sigma_{sec}$) is only weakly correlated with infectiousness variation. This is because $\\sigma_{sec}$ is highly correlated with the mean and SD of the number of contacts, suggesting that it may depend on distribution of number of contacts, and hence may not be comparable among studies. Infectiousness variation is also correlated with the SAR. When SAR is higher, it is expected that more contacts are infected and therefore the observed number of secondary cases is less heterogeneous (Adam et al., 2022). We find higher infectiousness variation is associated with only using PCR to confirm secondary cases. One potential reason is that using other methods may lower the sensitivity of detecting infection, resulting in lower estimates of SAR and hence higher estimates of infectiousness variation. Further investigations are needed to explore roles of other potential factors affecting infectiousness variation, such as contact frequency among different regions (Mousa et al., 2021).\n\nAn important limitation of our study is that we do not have individual-level data. Therefore, we are unable to determine the impact of demographic factors like age and sex on infectiousness variation. Also, we cannot disentangle the host behaviors from biological factors. Previous analysis suggested no evidence of the impact of age on infectiousness of cases (Lau et al., 2020; Sun et al., 2021). In addition, we could not include factors affecting susceptibility to infection. Our estimates of infectiousness variation should be interpreted in light of these limitations: they capture heterogeneity in infectiousness due to demographic, host, and biological factors. However, in one study that included susceptibility component in the estimation of individual infectiousness, substantial heterogeneity remained with 20% of cases estimated to contribute to 80% of transmission (Tsang et al., 2022). Second, the recruitment methods among studies are different. This may affect the comparability of the results, although all index cases are laboratory-confirmed in all studies (Tsang et al., 2021). Third, we assumed that risks of infection from community for all households are the same, but there were different factors that may affecting this, including occupations, such as healthcare workers, social economic status that related to assess to PPEs (Yang et al., 2021). Finally, most of our identified studies were conducted in the period of circulation of ancestral strains, and therefore the identified infectiousness variation may not be directly applicable to other variants.\n\nIn conclusion, we developed a modeling approach to estimate variation in individual infectiousness from household data. Result indicates that there is substantial variation in individual infectiousness, which is important for epidemic management.\n\n## Materials and methods\n\n### Study design\n\nThe aim of this study was to develop a statistical model to quantify the variation of individual infectiousness in households, based on publicly available information. An index case was defined as the first detected case in a household, while secondary cases were defined as the identified infected household contacts of the index case. We conducted a systematic review to collect household studies with at least 30 households, reporting the number of secondary cases with number of household contacts for each household for COVID-19, in the form of number of households with X cases among households of size Y. For each study, we also extracted the study period, the coverage of tests of household contacts, the case ascertainment methods, the circulating virus of SARS-CoV-2, and the public health and social measures in the study period. This information was used as an input of modeling analyses in this study. Details of systematic review could be found in Appendix 1.\n\n### Estimation of variation of individual infectiousness in households\n\nTo determine if there are variations of individual infectiousness of cases, we used an individual-based household transmission model (; Tsang et al., 2014; Tsang et al., 2021). The model described the probability of infection of household contacts as depending on the time since infection in other infected people in the household, while infections from outside the household (community infections), or infections via other household contacts rather than the index case (tertiary infections) are allowed. We extended the model by adding a random effect parameter ($\\delta_{i}$) on the individual infectiousness of each case. In the model, the hazard of infection of individual j at time t from an infected household member i, with infection time ti in household k, was\n\n$$\n\\lambda_{i\u2192j}t=\\frac{\\lambda_{h}}{X_{k}^{\\beta}} *exp\u2061\\delta_{i}*f(t-t_{i})\n$$\n\nwhere $\\lambda_{h}$ was the baseline hazard, $\\delta_{i}$ followed a normal distribution with mean 0 and SD $\\sigma_{var}$ , which quantified the variation of individual infectiousness (hereafter denoted as infectiousness variation). The relative infectiousness of case i compared with case j was exp($\\delta_{i}$)/exp($\\delta_{j}$).\n\n$X_{k}$ was the number of household contacts. $\\beta$ was the parameter describing the relationship between number of household contacts and transmission rate. It ranged from 0 to 1, with 0 indicating that the transmission rate was independent of number of household contacts while 1 indicated that the transmission rate was inversely proportional to number of household contacts (i.e. dilution effect of the contact time per contact which was lower when the number of household contacts is higher). f(\u00b7) was the infectiousness profile since infection generated from the assumed incubation period (mean equal to 5 days) and infectious period (mean equal to 13) (He et al., 2020; Jing et al., 2020; Li et al., 2020a; Appendix 1\u2014table 15). Extracted distribution were summarized in Appendix 1\u2014table 15, and the shape of the assumed function was plotted on Appendix 1\u2014figure 3.\n\nSince the data were extracted from publication, the infection time of all cases was unavailable for all studies. Also, the individual infectiousness parameters $\\delta_{i}$ for cases were augmented variables. Therefore, we conducted our inference under a Bayesian framework using data augmentation Markov chain Monte Carlo (MCMC) algorithm to joint estimate the model parameters, the missing infection time, and augmented variables using metropolis-hasting algorithm. We separately fitted this model to identified studies. We assessed the model adequacy by comparing the observed and expected number of infections in households by household size. We compared the model with or without the random effect for variation of individual infectiousness by using deviance information criterion (DIC) (Spiegelhalter et al., 2002). Smaller DIC indicated a better model fit. DIC difference >5 was considered as substantial improvement (Spiegelhalter et al., 2000). Details of the model and inference could be found in Appendix 1. We conducted a sensitivity analysis that used a Gamma distribution, instead of exponential of normal distribution (Appendix 1).\n\n### Meta-analysis and meta-regression\n\nWe conducted random effects meta-analyses on identified studies to obtain pooled estimates of individual infectiousness, using the inverse variance method and restricted maximum likelihood estimator for heterogeneity (Hedges and Vevea, 1998; Langan et al., 2019; Thompson and Sharp, 1999; Veroniki et al., 2019). Cochran Q test and the I2 statistic were used to identify and quantify heterogeneity among included studies (Cochran, 1954; Higgins et al., 2003). An I2 value more than 75% indicates high heterogeneity (Higgins et al., 2003). We conducted a meta-regression analysis to explore the association between infectiousness variation ($\\sigma_{var}$, SD) of the distribution of number of secondary cases ($\\sigma_{sec}$, and SAR), and further including the following factors: the mean and SD of number of household contacts, implementation of lockdown, ascertainment method of index and secondary cases, only ancestral strains are circulating in study period, and all household contacts were tested.\n\n### Data availability\n\nAll data in this study are publicly available since they are extracted from published articles. Summarized data for analysis could be downloaded from https://github.com/timktsang/covid19_transmission_heterogeneity, (copy archived at swh:1:rev:634390fa66a4bfb998da691e7cd81cf45e38c6db; Tsang, 2022).\n",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "f0485795-9cbe-465f-b953-13bd98e7ace2",
+      "submission_id": "c46750c0-f6bf-4515-a411-666f04f83b5f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Amy Wesolowski, Johns Hopkins Bloomberg School of Public Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82611.sa0](https://doi.org/10.7554/eLife.82611.sa0)\n\nWhile it has been demonstrated that for SARS-CoV-2, a small fraction of individuals contributes to the majority of onward transmission, this heterogeneity is driven by multiple factors that span both biological and behavioral causes. By performing a solid meta-analysis of household transmission studies, the authors fit a household transmission model to the curated data to estimate variation in infectiousness which provides a valuable contribution to the existing knowledge base. By collating data from multiple studies, they are able to more fully investigate individual variability.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Amy Wesolowski, Johns Hopkins Bloomberg School of Public Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82611.sa1](https://doi.org/10.7554/eLife.82611.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The effect of variation of individual infectiousness on SARS-CoV-2 transmission in households\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Miles Davenport as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Both reviewers have highlighted a number of areas where additional clarification (particularly for \u03c3_var) which currently does not have sufficient detail/interpretation to warrant publication.\n\n2) Questions about parameter identifiability and model validation were not sufficiently addressed \u2013 particularly in light of the many individual-level parameters estimated in the analysis.\n\n3) Additional exploration of empirical relationships (such as individual infectiousness and household size, as an example) should be explored. For example, how much of the heterogeneity is driven by biological factors (such as being the primary case).\n\n4) Additional work should be done to help disentangle differences between biological or behavioral factors since this will greatly change the interpretation of inferred parameters. In addition, more contextual information should be provided (socio-economic status and the implications of this as a confounder, a more detailed exploration of interventions that were in place and their implications) should be done.\n\nReviewer #1 (Recommendations for the authors):\n\nTsang et al. evaluate the degree of transmission heterogeneity among COVID-19 cases using data compiled from 17 household transmission studies. Transmission heterogeneity and super spreading are important but incompletely understood drivers of epidemic dynamics. While it is clear that substantial heterogeneity exists among infectors, but the relative contribution of behavior (e.g. the number of contacts), timing (e.g. large number of social interactions near the peak of infectiousness), and intrinsic biological differences in infectiousness are not resolved.\n\nTsang et al. compiled household transmission data from 17 published studies. They independently fit a model to each data set in order to quantify transmission heterogeneity arising from intrinsic biological differences in infectiousness, after controlling for differences in the number of contacts (i.e. household size), and timing (via the inferred time since infection). Repeated application of the same model to multiple datasets is a strength of this study because it allows the authors to assess associations between the inferred parameters and aspects of study design that can influence case ascertainment.\n\nThe authors estimate substantial intrinsic transmission heterogeneity via the parameter \u03c3_var, which could be attributed to individual differences in viral loads or differences in the infector's contact intensity with others in the household. They show that intrinsic, within-household variation is associated with other population-level metrics of transmission heterogeneity, including p_80 and p_0.\n\nAlthough the study focuses on the household size as a confounder of heterogeneity in infectiousness, the ways that the model controls for household size and the interpretation of the inferred heterogeneity parameter, \u03c3_var could be explained more clearly. Furthermore, it seems that basic empirical relationships between individual infectiousness (\u03b4_i) and household size are not explored. Finally, questions about parameter identifiability and model validation could be addressed more extensively, especially in light of the many individual-level parameters estimated in the analysis.\n\nOverall, the study design is sound and the analysis of multiple datasets is a strength. However, the modeling approach and the biological interpretation/significance of the results could be more clearly explained. Also, given the large number of individual-level parameters estimated, it would be ideal to see a direct assessment of parameter identifiability (e.g. correlation plots), and model validation on simulated data (i.e. can the model estimate known parameters from simulated data?). The latter shouldn't be too difficult, given that the authors already have a simulation model for tests of model adequacy.\n\nSpecific comments:\n\n1. Please explain assumptions about the individual infectiousness profile f(.) (from section 2 of the Materials and methods). What is the assumed shape of this function? How is it parameterized? How could the inclusion of this function in the model interact with inferred individual times of infection, especially if times of infection are inaccurate? On a related note, the authors might consider introducing the concept of contact timing as a factor that can influence heterogeneity in transmission.\n\n2. The household size is a key conceptual focus of the study, but the main text methods/results don't explain clearly how the model accounts for household size or contact number. My interpretation is that the model accounts for household size in two ways. First. the model estimates the per-contact hazard of infection, which implicitly controls for household size/contact number. Second, the model includes a parameter, \u03b2, which represents a dilution effect, wherein the transmission hazard might be diluted in larger households due to less per-individual contact intensity. I'm not sure that the dilution effect is currently explained anywhere in the main text, and it could also be explained more clearly that the model is designed to estimate transmission heterogeneity after adjusting for household size.\n\n2a. It would be helpful if the authors could discuss the distinction between contact number, contact frequency, and contact duration somewhere in the text.\n\n3. Given the focus on household size and the number of contacts, it seems there are missed opportunities to explore how the inferred level of individual infectiousness (\u03b4_i) co-varies with metrics like household size.\n\n4. Please explain in more detail the meta-regression sensitivity analyses.\n\n5. I'm not sure that tables S6-S9 are cross-referenced anywhere in the main text, and their legends aren't sufficiently detailed to fully communicate how to interpret these tables in the context of the broader study.\n\nReviewer #2 (Recommendations for the authors):\n\nTransmission heterogeneity and superspreading of SARS-CoV-2 have been demonstrated repeatedly through real-world observational studies, with a small fraction of individuals accounting for the majority of onward transmission. However, this observed transmission heterogeneity is likely a superposition of accumulated variations from multiple factors, including but not limited to host behavioral factors such as the variation in contact numbers contact duration, and contact settings; variations in the adoption of preventive measures (mask-wearing, physical distancing, etc.); the effects of NPIs (case isolations and contact quarantines, population-level lockdowns); as well as biological factors including differences in shedding duration and intensity of the primary case, variation in susceptibility among close contacts. Fewer studies, however, attempted to isolate the effects of individual factors contributing to the overall transmission heterogeneity, while controlling for other factors. In the manuscript entitled \"The effect of variation of individual infectiousness on SARS-CoV-2 transmission in households\", the authors aim at characterizing the variation in individual infectiousness of SARS-CoV-2, controlling for other host factors. To achieve this, the authors performed a meta-analysis of household transmission studies conducted during or not too longer after the initial SARS-CoV-2 wave caused by the ancestral strain across the globe. The authors fitted a household transmission model to the curated data and estimated the variation in infectiousness by introducing random effects of individual infectiousness and its population-level distribution.\n\nThe study has several strengths. First, by choosing analyzing data from the household study, the authors were able to control for several key factors contributing to the overall transmission heterogeneity but not variation in individual infectiousness, including the number of contacts as well the setting of transmission (household). The authors also incorporated an additional parameter in the household transmission model to adjust for the impact of household size on household transmission risk, which has been identified as an important risk factor for SARS-CoV-2 transmission within the household across multiple studies. The authors also curated the studies during the early stage of the pandemic so that most household contacts would remain na\u00efve during the study period, and the immune status of the household contact (either due to prior infection or vaccination) would be unlikely to confound the results of the study.\n\nHowever, the study also has a few limitations. First, it is difficult to disentangle if the observed variation in infectiousness is due to biological factors or behavioral factors. During the study period of interest, public health agencies across the globe were recommending at-home isolation guidelines aiming at reducing transmission within the household, including mask-wearing when in contact with other household members, using separate bedrooms/bathrooms, avoiding having meals together, etc. The differences in the guidelines across nationals/regions as well as the level of compliance with guidelines at the household level would also impact individual household transmission risk. Second, the risk of acquiring infections from the community could be heavily influenced by the socio-economic status, since multiple studies have clearly demonstrated stark disparity of COVID-19 burden, factors such as occupation (essential workers tend to be low-wage jobs) assess to PPE and healthcare were likely to contribute to the observed disparity. Lastly, it is also difficult to entangle if the observed heterogeneity is due to the biological factors of the primary case (i.e., variation in shedding duration/intensity) or the contact (variation in susceptibility). The current formulation of the transmission model only addresses the former not the latter.\n\nFor the household transmission model concerning imputation of the timing of infection, it is unclear if the timing of infection is partially missing, or if the timing of infection were unavailable for all studies. If it is the former case, the authors should give a more detailed description of the imputation process in a study-by-study fashion and report the proportion of infection time that was imputed. If it is the latter case, I do not understand the benefit of explicitly modeling the temporal infectiousness profile, thus I would recommend the authors use a simpler chain-binomial model fitting to only the binary outcome (of infected or not) unless the authors make a convincing case otherwise.\n\nBoth p80 and p0 are poor statistics to characterize household transmission due to the discrete nature of household contact numbers. For example, it is unintuitive to interpret and compare p80 for a household size of 2 vs 10 (for a household size of 2 conditional on an index case within the household this could only be interpreted as the proportion of households with secondary infections, which is cross-household level statistics, while for a household size of 10, it can be interpreted as a meaningful statistical for each household). Furthermore, the interpretation of p80 as a metric for transmission heterogeneity becomes even murkier if multi-generation transmission within the household is considered, especially for a larger household. For p0, this metric is heavily dependent on household size. For example, one would expect the p0 for a household size of 10 (with on index) to be way smaller than p0 household size of 2 (assuming no dilution effects on transmission with the increase of household size), as in the former case p0 characterize the probability of all 9 uninfected contacts escaping infection from the index, while in the latter p0 characterizes the probability to escape infection by only 1 household contact. Thus, it is meaningless to compare p0 without controlling for household size across studies. For the arguments above, I recommend the authors remove both p80 and p0 from the paper.\n\nThrough the formulation of the household transmission model, the authors essentially assume a lognormal distribution of individual infectiousness, which is a long-tailed distribution by nature. I think this is an important point that needs to be highlighted. Has the author tried a normal distribution instead of a log-normal distribution? Would a normal distribution fit better or worse to the data than the log-normal one? I recommend the authors conduct a sensitivity analysis of a normal distribution of the individual infectiousness (i.e., not taking the exponential of the \u03c3 term for the hazard of infection function on page 7).\n\nTable S5 is cropped.\n",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6a53de30-6d09-4649-8503-61af3d2cd9a7",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C1",
+      "claim": "Previous studies reported substantial heterogeneity in transmission of many infectious diseases including SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies reported substantial heterogeneity in transmission of many infectious diseases including SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior literature on transmission heterogeneity in infectious diseases.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "7f57d4a8-8bad-40ba-89d7-ea77d0591116",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C2",
+      "claim": "The number of contacts is rarely considered in approaches studying transmission heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, those results are difficult to interpret since the number of contacts is rarely considered in such approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations in previous methodological approaches, based on review of existing literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "c2082ed4-3a8b-4b8d-b2a4-f9b96f0747dc",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C3",
+      "claim": "The pooled estimate suggests that the 20% most infectious cases have 3.1-fold (95% confidence interval: 2.2- to 4.2-fold) higher infectiousness than average cases.",
+      "claim_type": "EXPLICIT",
+      "source": "By fitting individual-based household transmission models to these data, accounting for number of contacts and baseline transmission probabilities, the pooled estimate suggests that the 20% most infectious cases have 3.1-fold (95% confidence interval: 2.2- to 4.2-fold) higher infectiousness than average cases, which is consistent with the observed heterogeneity in viral shedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical modeling results from the analysis of 17 household transmission studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "ddfe931c-d306-4b9d-9190-c4dedfae1397",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C4",
+      "claim": "The estimated infectiousness variation is consistent with the observed heterogeneity in viral shedding.",
+      "claim_type": "EXPLICIT",
+      "source": "By fitting individual-based household transmission models to these data, accounting for number of contacts and baseline transmission probabilities, the pooled estimate suggests that the 20% most infectious cases have 3.1-fold (95% confidence interval: 2.2- to 4.2-fold) higher infectiousness than average cases, which is consistent with the observed heterogeneity in viral shedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the modeling results with known patterns of viral shedding from the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "2d98fcb4-d88d-4e4d-a485-8f095cd70adb",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C5",
+      "claim": "The '80/20 rule' (i.e., 20% of cases responsible for 80% transmission) has been observed in emerging infectious disease outbreaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Such phenomena, illustrated by the '80/20 rule' (i.e., 20% of cases responsible for 80% transmission; Adam et al., 2020; Sun et al., 2021), have been observed in emerging infectious disease outbreaks (Lloyd-Smith et al., 2005), including severe acute respiratory syndrome (SARS) (Shen et al., 2004), Middle East respiratory syndrome (Cauchemez et al., 2016; Cowling et al., 2015), and most recently the COVID-19 pandemic (Adam et al., 2020; Lau et al., 2020; Sun et al., 2021; Wong and Collins, 2020; Zhao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies documenting the 80/20 rule in various disease outbreaks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "b0347ad5-ecae-4db0-b4a3-72f42413aafd",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C6",
+      "claim": "The number of contacts per index cases is often not reported in superspreading event studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of contacts per index cases is often not reported in SSE studies, and hence not incorporated in the analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about methodological limitations in existing superspreading event studies based on literature review.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "7b8e2ef2-1e0b-4770-a719-335c3571af5e",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C7",
+      "claim": "Superspreading event studies usually analyze clusters from different settings, in which the baseline transmission risk and density of exposure could be different.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SSE studies usually analyze clusters from different settings, in which the baseline transmission risk and density of exposure could be different (Thompson, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Thompson, 2021, discussing heterogeneity in SSE study settings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "26420b48-98da-4714-8d37-75f069bd9fe2",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C8",
+      "claim": "Studies of transmission heterogeneity that focus on superspreading events may suffer from publication bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, studies of transmission heterogeneity that focus on SSEs described in the literature may suffer from publication bias, with larger clusters having higher probability of being observed and reported (Zhao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zhao et al., 2021, discussing publication bias in SSE studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "21240ee4-7e26-4d0e-8960-455680baaf49",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C9",
+      "claim": "Households are one of the most important settings for SARS-CoV-2 transmission, with 4- to 10-fold higher transmission risk than other places.",
+      "claim_type": "EXPLICIT",
+      "source": "Households are one of the most important settings for SARS-CoV-2 transmission, with 4- to 10-fold higher transmission risk than other places (Thompson, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Thompson, 2021, providing quantitative comparison of transmission risks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "819b6751-93bc-4589-ac38-9d8c341cdb20",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C10",
+      "claim": "In a household transmission study, an index case is identified, and their household contacts are followed up for 1\u20132 weeks, during which there is high transmission potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In a household transmission study, an index case is identified, and their household contacts are followed up for 1\u20132 weeks, during which there is high transmission potential (Tsang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the methodology of household transmission studies, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "3e3b3f03-bcef-4e97-8501-e9215549e14d",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C11",
+      "claim": "17 studies were identified, comprising 13,098 index cases and 31,359 household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 17 studies, comprising 13,098 index cases and 31,359 household contacts (Appendix 1\u2014figure 1, Appendix 1\u2014table 1; Bernardes-Souza et al., 2021; Carazo et al., 2022; Dattner et al., 2021; Han et al., 2022; Hart et al., 2022; Hsu et al., 2021; Hubiche et al., 2021; Koureas et al., 2021; Laxminarayan et al., 2020; Layan et al., 2022; Lyngse et al., 2022; M\u00e9ndez-Echevarr\u00eda et al., 2021; Posfay-Barbe et al., 2020; Reukers et al., 2021; Wilkinson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports the data collection results from the systematic review, with specific numbers and citations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "fc7b028f-6b55-455d-8581-b45b7760f4fe",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C12",
+      "claim": "Most studies covered a period from January to November 2020, which was dominated by ancestral strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Most studies covered a period from January to November 2020, which was dominated by ancestral strains, except for Layan et al. (from December 2020 to April 2021) and Hsu et al. (from January 2020 to February 2021), which covered both ancestral strains and the alpha variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the temporal coverage and viral variants in the included studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "f818e838-565b-455b-9bd5-08303047e998",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C13",
+      "claim": "For 12 studies out of 14, models with infectiousness variation perform substantially better (range of \u2206DIC: 5.8\u2013268).",
+      "claim_type": "EXPLICIT",
+      "source": "For 12 studies out of 14, models with infectiousness variation perform substantially better (range of \u2206DIC: 5.8\u2013268) (Figure 2, Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model comparison statistics (DIC) from the analysis, with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "042ac58e-c687-4d25-926e-bf50fa9a4d19",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C14",
+      "claim": "From 12 studies, the estimated infectiousness variation (\u03c3var) ranged from 1.03 to 2.83.",
+      "claim_type": "EXPLICIT",
+      "source": "From these 12 studies, the estimated infectiousness variation (\u03c3var) ranged from 1.03 to 2.83.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports the range of parameter estimates from the modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "a5268111-518c-40a2-9ca0-a7e4311bfced",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C15",
+      "claim": "The 20% most infectious cases are 2.4- to 10-fold more infectious than the average case.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that, the 20% most infectious cases are 2.4- to 10-fold more infectious than the average case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from the range of infectiousness variation estimates (1.03 to 2.83).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "d8b70bfd-3ed9-4ac7-a1b7-be17ee9b7fb2",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C16",
+      "claim": "Based on the two largest studies with 6782 and 3727 households, the estimated infectiousness variation is 1.48 (95% credible interval [CrI]: 1.29, 1.7) and 1.41 (95% CrI: 1.19, 1.72).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the two largest studies with 6782 and 3727 households (Carazo et al., 2022; Lyngse et al., 2022), the estimated infectiousness variation is 1.48 (95% credible interval [CrI]: 1.29, 1.7) and 1.41 (95% CrI: 1.19, 1.72), suggesting that, among all cases, the 20% most infectious are 3.5-fold (95% CrI: 3.0- to 4.2-fold) and 3.3-fold (95% CrI: 2.7- to 4.3-fold) more infectious than the average case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports specific parameter estimates with credible intervals from the two largest studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "b82b532e-588e-41b6-9f1e-18cc4ccbe188",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C17",
+      "claim": "Among all cases, the 20% most infectious are 3.5-fold (95% CrI: 3.0- to 4.2-fold) and 3.3-fold (95% CrI: 2.7- to 4.3-fold) more infectious than the average case in the two largest studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the two largest studies with 6782 and 3727 households (Carazo et al., 2022; Lyngse et al., 2022), the estimated infectiousness variation is 1.48 (95% credible interval [CrI]: 1.29, 1.7) and 1.41 (95% CrI: 1.19, 1.72), suggesting that, among all cases, the 20% most infectious are 3.5-fold (95% CrI: 3.0- to 4.2-fold) and 3.3-fold (95% CrI: 2.7- to 4.3-fold) more infectious than the average case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from the infectiousness variation parameter estimates through mathematical transformation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "95c1a63f-be08-437a-9b4c-8d90dd53d710",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C18",
+      "claim": "The estimated daily probability of infection from outside the household ranges from 0.0003 to 0.017.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated daily probability of infection from outside the household and estimated person-to-person transmission probability within households range from 0.0003 to 0.017, and from 0.06 to 0.51, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports the range of parameter estimates from the modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "2c70a2d9-a260-4051-b877-5d67935511d6",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C19",
+      "claim": "The estimated person-to-person transmission probability within households ranges from 0.06 to 0.51.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated daily probability of infection from outside the household and estimated person-to-person transmission probability within households range from 0.0003 to 0.017, and from 0.06 to 0.51, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports the range of parameter estimates from the modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "9a2aded1-6eda-4c55-854e-8f9607e0380b",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C20",
+      "claim": "The estimates of parameters for the relationship between number of contacts and transmission range from 0.43 to 0.92, except for the study by Layan et al., 2022, where it is equal to 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimates of parameters for the relationship between number of contacts and transmission (larger value indicates stronger inverse association) range from 0.43 to 0.92, except for the study by Layan et al., 2022, where it is equal to 0.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports the range of parameter estimates from the modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "86b7ff31-deaa-476d-baa2-04fb688f3e6d",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C21",
+      "claim": "For all studies, the predicted final size distribution is consistent with the observed data and the model fit is judged adequate.",
+      "claim_type": "EXPLICIT",
+      "source": "For all studies, the predicted final size distribution is consistent with the observed data and the model fit is judged adequate (Appendix 1\u2014Tables 3\u20137, Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim assesses model adequacy based on comparison of predicted and observed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "e89cd4e9-f93e-44a1-9c95-0f1e9a3b1a1b",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C22",
+      "claim": "Simulation studies demonstrated that there is no important systematic bias, with 88\u2013100% (depending on the parameter) of the 95% credible intervals covering the simulation value.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulation studies demonstrated that there is no important systematic bias, with 88\u2013100% (depending on the parameter) of the 95% credible intervals covering the simulation value (Appendix 1\u2014table 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports results from simulation studies validating the estimation algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "b6aa93e3-4b6b-43a9-bd6b-17ce861ab1a1",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C23",
+      "claim": "A sensitivity analysis that assumes the individual infectiousness of cases follows a Gamma distribution results in substantially worse fit.",
+      "claim_type": "EXPLICIT",
+      "source": "We conduct a sensitivity analysis that assumes the individual infectiousness of cases follows a Gamma distribution, but the fit worsens substantially (Appendix 1\u2014table 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports results from a sensitivity analysis comparing different distributional assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "c7c48c03-55f6-42a6-bc25-27f6a2adf9aa",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C24",
+      "claim": "The pooled estimate of infectiousness variation is 1.33 (95% confidence interval [CI]: 0.95, 1.70).",
+      "claim_type": "EXPLICIT",
+      "source": "The pooled estimate of infectiousness variation is 1.33 (95% confidence interval [CI]: 0.95, 1.70), suggesting that the 20% most infectious cases are 3.1-fold (95% CI: 2.2- to 4.2-fold) more infectious than the average case (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim reports the pooled estimate from meta-analysis of 14 studies, with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "354d521e-2660-4f59-931c-15a32e9da95e",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C25",
+      "claim": "5.9% (95% CI: 1.4%, 11.1%) of cases could be at least 8-fold more infectious than average cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this fitted distribution, we estimate that 5.9% (95% CI: 1.4%, 11.1%) and 14.9% (95% CI: 7.2%, 20.7%) of cases could be at least 8- and 4-fold more infectious than average cases, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from the pooled infectiousness variation estimate through mathematical transformation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "01ee02af-5b13-4b5f-bedd-819e97291636",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C26",
+      "claim": "14.9% (95% CI: 7.2%, 20.7%) of cases could be at least 4-fold more infectious than average cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this fitted distribution, we estimate that 5.9% (95% CI: 1.4%, 11.1%) and 14.9% (95% CI: 7.2%, 20.7%) of cases could be at least 8- and 4-fold more infectious than average cases, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from the pooled infectiousness variation estimate through mathematical transformation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "a44fe60d-b0f0-41b1-bf39-ecc321e05323",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C27",
+      "claim": "In meta-regression, infectiousness variation is associated with secondary attack rate (SAR).",
+      "claim_type": "EXPLICIT",
+      "source": "In meta-regression, we find the infectiousness variation is associated with SAR (Appendix 1\u2014table 11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports results from meta-regression analysis examining factors associated with infectiousness variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "01a6d7c6-3605-407e-afcc-a2ab5bc2aa86",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C28",
+      "claim": "Doubling SAR is associated with 0.55 (95% CI: 0.21, 0.89) unit decrease in infectiousness variation, with R-squared equal to 67%.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that doubling SAR are associated with 0.55 (95% CI: 0.21, 0.89) unit decrease in infectiousness variation, with R-squared equal to 67% respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports quantitative results from meta-regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "66030d57-e698-42e7-8618-1d7a872335b7",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C30",
+      "claim": "The standard deviation of the distribution of number of secondary cases (\u03c3sec) is positively associated with mean and SD of number of contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding other statistics, we find that \u03c3sec is positively associated with mean and SD of number of contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports results from meta-regression analysis examining relationships between study characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "e069c336-901f-4f62-aa8a-63e29684bdf7",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C31",
+      "claim": "There is no association between study statistics and implementation of lockdown, ascertainment method of index and secondary cases, and the circulating virus of SARS-CoV-2 in the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "Other than these associations, we find no association between these statistics and implementation of lockdown, ascertainment method of index and secondary cases, and the circulating virus of SARS-CoV-2 in the study period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports null findings from meta-regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "7d4af0d9-48ec-4663-afd2-17a09e51931b",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C32",
+      "claim": "The estimated infectiousness variations are corrected for the variations caused by number of contacts and transmission risks in different settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that we focused our analysis on households with known number of contacts in studies conducted in the early outbreaks caused by ancestral strains, the estimated infectiousness variations are corrected for the variations caused by number of contacts and transmission risks in different settings, difference in pre-existing immunity among contacts (almost everyone is na\u00efve and unvaccinated), and the difference in transmissibility among variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim explains the interpretation of the infectiousness variation estimates based on the study design and modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "1bb5067d-1767-4dea-a84d-6c75d0a6f105",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C33",
+      "claim": "The estimated infectiousness variation measures the variation caused by difference in individuals, which may be contributed by both biological factors and host behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, this estimated infectiousness variation measures the variation caused by difference in individuals, which may be contributed by both biological factors and host behaviors, but not other potential confounding factors mentioned above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim interprets what the infectiousness variation parameter represents based on the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "3b14faad-a15c-476d-8ca0-36d28416fda5",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C34",
+      "claim": "Multiple contact patterns, particularly by age, could contribute to the variations in infectiousness of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding host behaviors, multiple contact patterns, particularly by age, could contribute to the variations in infectiousness of cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential mechanisms underlying the observed variation.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "7a326329-2aa0-40da-8232-17fdba99a29f",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C35",
+      "claim": "Mother-child contacts are usually more intense than father-child contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mother-child contacts are usually more intense than father-child contacts, and adult cases are more capable of self-isolation within a household compared with children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim draws on general knowledge about household contact patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "121ea49d-4d44-449d-a67e-b062775958e7",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C36",
+      "claim": "Adult cases are more capable of self-isolation within a household compared with children.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mother-child contacts are usually more intense than father-child contacts, and adult cases are more capable of self-isolation within a household compared with children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim draws on general knowledge about behavioral differences by age.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "9830c038-c1fd-41ec-8db8-8bd457a3b9cd",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C37",
+      "claim": "Contact pattern studies suggested that school-age children and young adults tended to mix with people of the same age.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, contact pattern studies suggested that school-age children and young adults tended to mix with people of the same age (Mossong et al., 2008; Mousa et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to contact pattern studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "35f907bc-0a05-4db7-b609-3c778ea92764",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C38",
+      "claim": "The duration of contact could vary, which could also contribute to the variations in infectiousness of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the duration of contact could vary, which could also contribute to the variations in infectiousness of cases (Toth et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation discussing contact duration.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "f0d315ec-f96a-4b95-8cb3-8e1e036b3041",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C39",
+      "claim": "Previous studies suggest that the relative importance of contact characteristics on transmission may be different among viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies also suggest that the relative importance of contact characteristics on transmission may be different among viruses (De Cao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study comparing transmission characteristics across viruses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "d80c5a4c-c526-464b-a5fa-2edd043447ff",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C40",
+      "claim": "Lockdown and stay-at-home orders may increase the time spending at home.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lockdown and stay-at-home orders may increase the time spending at home.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the effects of public health measures.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "1dafb70a-4ac3-444e-80bc-3b52b3463852",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C41",
+      "claim": "Mask-wearing when in contact with other household members, using separate bedrooms and bathrooms, avoiding having meals together may reduce the transmission in households.",
+      "claim_type": "EXPLICIT",
+      "source": "Mask-wearing when in contact with other household members, using separate bedrooms and bathrooms, avoiding having meals together may reduce the transmission in households (Ng et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study on household transmission prevention measures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "a287bc0f-06a9-427f-b859-d665c39b74f1",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C42",
+      "claim": "Social disparity such as occupation may increase or reduce the risk of transmission in households, including the availability of personal protective equipment (PPE), or being healthcare worker.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, social disparity such as occupation may increase or reduce the risk of transmission in households, including the availability of personal protective equipment (PPE), or being healthcare worker (Yang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation discussing social factors affecting household transmission.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "d0061d11-3a01-4a8e-b61c-2afe31dbe5ad",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C43",
+      "claim": "The SAR for index cases with fever is 1.4-fold higher than index cases without fever.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the SAR for index cases with fever and cough are 1.4- and 1.3-fold higher than index cases without fever and cough, respectively (Madewell et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation providing quantitative estimates of symptom effects on transmission.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "9f3c36fc-cf63-444b-80c6-1462d4787a2a",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C44",
+      "claim": "The SAR for index cases with cough is 1.3-fold higher than index cases without cough.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the SAR for index cases with fever and cough are 1.4- and 1.3-fold higher than index cases without fever and cough, respectively (Madewell et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation providing quantitative estimates of symptom effects on transmission.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "712a8ce8-eb69-4c10-b863-a90ac6c956df",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C45",
+      "claim": "Viral shedding is used as a proxy measure of infectiousness.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral shedding is used as a proxy measure of infectiousness, and consistently it also has substantial variations, as suggested by 11 systematic reviews (Appendix 1\u2014Tables 12\u201314).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim states a methodological assumption commonly used in infectious disease research, supported by systematic reviews.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "a6159d51-deef-4014-9012-fb49f9f86de2",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C46",
+      "claim": "Viral shedding has substantial variations, as suggested by 11 systematic reviews.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral shedding is used as a proxy measure of infectiousness, and consistently it also has substantial variations, as suggested by 11 systematic reviews (Appendix 1\u2014Tables 12\u201314).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to 11 systematic reviews documenting variation in viral shedding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "3934ffe5-6444-4895-bca2-735fb567ceec",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C47",
+      "claim": "Studies report high variations of temporal viral shedding patterns among individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the magnitude of viral shedding, studies report high variations of temporal viral shedding patterns among individuals (He et al., 2020; Jones et al., 2021; Sun et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies documenting variation in viral shedding patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "4b35974e-a1b9-45e6-a98d-4075aee7389e",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C48",
+      "claim": "The duration of viral shedding can be highly heterogeneous, with pooled estimates of mean durations ranging from 11.1 to 30.3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the duration of viral shedding can be highly heterogeneous, with pooled estimates of mean durations ranging from 11.1 to 30.3 days, and almost all reviews reporting high heterogeneity of estimates (Cevik et al., 2021; Chen et al., 2021b; D\u00edaz et al., 2022; Fontana et al., 2021; Li et al., 2020b; Okita et al., 2022; Qutub et al., 2022; Rahmani et al., 2022; Xu et al., 2020; Yan et al., 2021; Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to systematic reviews reporting heterogeneity in viral shedding duration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "e7b5944d-097b-4cad-9974-902b85c02b6c",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C49",
+      "claim": "Almost all reviews report high heterogeneity of estimates of viral shedding duration.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the duration of viral shedding can be highly heterogeneous, with pooled estimates of mean durations ranging from 11.1 to 30.3 days, and almost all reviews reporting high heterogeneity of estimates (Cevik et al., 2021; Chen et al., 2021b; D\u00edaz et al., 2022; Fontana et al., 2021; Li et al., 2020b; Okita et al., 2022; Qutub et al., 2022; Rahmani et al., 2022; Xu et al., 2020; Yan et al., 2021; Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes findings from multiple systematic reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "14761fcd-f999-4357-b646-ccad8666717a",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C50",
+      "claim": "Heterogeneities in viral shedding duration still exist in subgroup analyses by age and severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such heterogeneities still exist in subgroup analyses by age and severity (Cevik et al., 2021; Fontana et al., 2021; Okita et al., 2022; Qutub et al., 2022; Rahmani et al., 2022; Xu et al., 2020; Yan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies that performed subgroup analyses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "544ef8f9-26d7-4440-a6c5-40ad75fb4891",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C51",
+      "claim": "The infectious period, proxied by duration of replicant competent virus isolation, is heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "The infectious period, proxied by duration of replicant competent virus isolation, is also heterogeneous (Rahmani et al., 2022; Appendix 1\u2014table 14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study documenting heterogeneity in infectious period.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "1e05cfd8-7684-436d-83f7-b432389f0102",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C52",
+      "claim": "One review suggests that heterogeneity in viral shedding is an intrinsic virological factor facilitating higher dispersion parameter for SARS-CoV-2 if compared with SARS-CoV-1 and pandemic influenza A(H1N1)pdm09.",
+      "claim_type": "EXPLICIT",
+      "source": "One review also suggests that heterogeneity in viral shedding is an intrinsic virological factor facilitating higher dispersion parameter for SARS-CoV-2 if we compare it with the corresponding patterns in SARS-CoV-1 and pandemic influenza A(H1N1)pdm09 (Chen et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review comparing viral shedding patterns across different pathogens.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "f468e5e4-2b77-41a4-9751-573c78c3c1db",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C53",
+      "claim": "The observed variation in individual infectiousness is consistent with past analyses of the dispersion parameter in a negative binomial distribution fitted to number of secondary cases per index case of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed variation in individual infectiousness is consistent with past analyses of the dispersion parameter in a negative binomial distribution fitted to number of secondary cases per index case of COVID-19 (Sun et al., 2021; Wong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the current findings with previous analytical approaches, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "e84dcf7f-09d1-4706-90c6-eb1382ae012a",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C54",
+      "claim": "In previous studies of dispersion parameter, the number of contacts was not considered.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in these studies, the number of contacts was not considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies a limitation in previous studies based on literature review.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "bb8aa577-a1d9-4d9a-895e-b00654eef897",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C55",
+      "claim": "The SD of the distribution of number of secondary cases (\u03c3sec) is only weakly correlated with infectiousness variation.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the SD of the distribution of number of secondary cases (\u03c3sec) is only weakly correlated with infectiousness variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of relationships between study statistics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "8a1ae0b9-619a-46bf-a4e5-120f3440056f",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C56",
+      "claim": "\u03c3sec is highly correlated with the mean and SD of the number of contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because \u03c3sec is highly correlated with the mean and SD of the number of contacts, suggesting that it may depend on distribution of number of contacts, and hence may not be comparable among studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of relationships between study statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "98ebb29f-e1fe-42c9-a86e-3a5f494c8c84",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C57",
+      "claim": "When SAR is higher, it is expected that more contacts are infected and therefore the observed number of secondary cases is less heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "When SAR is higher, it is expected that more contacts are infected and therefore the observed number of secondary cases is less heterogeneous (Adam et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides a mechanistic explanation for the observed association, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "39284081-3669-489c-8d9f-6eacf5cb584c",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C58",
+      "claim": "Using other methods besides PCR may lower the sensitivity of detecting infection, resulting in lower estimates of SAR and hence higher estimates of infectiousness variation.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential reason is that using other methods may lower the sensitivity of detecting infection, resulting in lower estimates of SAR and hence higher estimates of infectiousness variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed association between ascertainment method and infectiousness variation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "70c0be04-288f-4d05-80bf-0662d21c5dda",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C59",
+      "claim": "The study does not have individual-level data.",
+      "claim_type": "EXPLICIT",
+      "source": "An important limitation of our study is that we do not have individual-level data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the study's data limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "a0b08054-2615-42cc-96e3-80ab793a3f82",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C60",
+      "claim": "The study is unable to determine the impact of demographic factors like age and sex on infectiousness variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we are unable to determine the impact of demographic factors like age and sex on infectiousness variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations resulting from lack of individual-level data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "a39800d6-42dc-46b0-9830-09af34b3fc9d",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C61",
+      "claim": "The study cannot disentangle the host behaviors from biological factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we cannot disentangle the host behaviors from biological factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations in interpreting the sources of variation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "13e52ff2-90c9-4ca8-be58-a6b52716df3e",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C62",
+      "claim": "Previous analysis suggested no evidence of the impact of age on infectiousness of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous analysis suggested no evidence of the impact of age on infectiousness of cases (Lau et al., 2020; Sun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous analyses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "26f296b1-e6cd-4173-be4c-9a38bd8d87de",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C63",
+      "claim": "The study could not include factors affecting susceptibility to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we could not include factors affecting susceptibility to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about model limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "c56f1aaa-dcf6-4464-9e90-3dcf4ce54ff1",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C64",
+      "claim": "The estimates of infectiousness variation capture heterogeneity in infectiousness due to demographic, host, and biological factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates of infectiousness variation should be interpreted in light of these limitations: they capture heterogeneity in infectiousness due to demographic, host, and biological factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim interprets what the infectiousness variation estimates represent given the study limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "9698095d-e73f-420d-836c-d20a643b706b",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C65",
+      "claim": "In one study that included susceptibility component in the estimation of individual infectiousness, substantial heterogeneity remained with 20% of cases estimated to contribute to 80% of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in one study that included susceptibility component in the estimation of individual infectiousness, substantial heterogeneity remained with 20% of cases estimated to contribute to 80% of transmission (Tsang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a study that accounted for susceptibility.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "8d9cc265-e75a-443d-bebc-81aa54c427c7",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C66",
+      "claim": "The recruitment methods among studies are different.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the recruitment methods among studies are different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about heterogeneity in study methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "cfaed470-3111-41b6-81e5-e5507edbeb59",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C67",
+      "claim": "All index cases are laboratory-confirmed in all studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This may affect the comparability of the results, although all index cases are laboratory-confirmed in all studies (Tsang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a consistent feature across all included studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "2f8d3c3f-144e-442c-806f-f2354cfe7944",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C68",
+      "claim": "The study assumed that risks of infection from community for all households are the same.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we assumed that risks of infection from community for all households are the same, but there were different factors that may affecting this, including occupations, such as healthcare workers, social economic status that related to assess to PPEs (Yang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a modeling assumption and its limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "f431044e-7940-49ff-b224-d6c493caafbd",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C69",
+      "claim": "Most identified studies were conducted in the period of circulation of ancestral strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, most of our identified studies were conducted in the period of circulation of ancestral strains, and therefore the identified infectiousness variation may not be directly applicable to other variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the temporal and viral context of the included studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "3f7127a7-53a6-4b8d-bc08-9a1f2dc33b23",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C70",
+      "claim": "The identified infectiousness variation may not be directly applicable to other variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, most of our identified studies were conducted in the period of circulation of ancestral strains, and therefore the identified infectiousness variation may not be directly applicable to other variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generalizability of the findings to other viral variants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "33097f5a-30d4-4e7a-ba2b-2ad4d20979fe",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C71",
+      "claim": "There is substantial variation in individual infectiousness, which is important for epidemic management.",
+      "claim_type": "EXPLICIT",
+      "source": "Result indicates that there is substantial variation in individual infectiousness, which is important for epidemic management.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the study findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "df9abbe4-86af-4315-97e4-45f15540ff8f",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C72",
+      "claim": "An index case was defined as the first detected case in a household.",
+      "claim_type": "EXPLICIT",
+      "source": "An index case was defined as the first detected case in a household, while secondary cases were defined as the identified infected household contacts of the index case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "64e123b3-e7a0-4308-821e-53a30730d00c",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C73",
+      "claim": "Secondary cases were defined as the identified infected household contacts of the index case.",
+      "claim_type": "EXPLICIT",
+      "source": "An index case was defined as the first detected case in a household, while secondary cases were defined as the identified infected household contacts of the index case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "7ddd0db8-41a1-4f51-a9a9-b8ec69df89db",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C74",
+      "claim": "The study conducted a systematic review to collect household studies with at least 30 households.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted a systematic review to collect household studies with at least 30 households, reporting the number of secondary cases with number of household contacts for each household for COVID-19, in the form of number of households with X cases among households of size Y.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the systematic review methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "aee62201-eaf0-40c0-a6ca-21233f4abf94",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C76",
+      "claim": "The relative infectiousness of case i compared with case j is exp(\u03b4i)/exp(\u03b4j).",
+      "claim_type": "EXPLICIT",
+      "source": "The relative infectiousness of case i compared with case j was exp(\u03b4i)/exp(\u03b4j).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical definition derived from the model specification.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "a01162a7-67e7-4483-b3a1-2b510c859a05",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C77",
+      "claim": "The parameter \u03b2 ranges from 0 to 1, with 0 indicating that the transmission rate was independent of number of household contacts while 1 indicated that the transmission rate was inversely proportional to number of household contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "It ranged from 0 to 1, with 0 indicating that the transmission rate was independent of number of household contacts while 1 indicated that the transmission rate was inversely proportional to number of household contacts (i.e. dilution effect of the contact time per contact which was lower when the number of household contacts is higher).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interpretation of a model parameter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "1b72c06e-3d0c-44e0-abfb-fbba7dfb926b",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C78",
+      "claim": "The infectiousness profile f(\u00b7) was generated from the assumed incubation period (mean equal to 5 days) and infectious period (mean equal to 13 days).",
+      "claim_type": "EXPLICIT",
+      "source": "f(\u00b7) was the infectiousness profile since infection generated from the assumed incubation period (mean equal to 5 days) and infectious period (mean equal to 13) (He et al., 2020; Jing et al., 2020; Li et al., 2020a; Appendix 1\u2014table 15).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes model assumptions based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "f7fbef6f-0e7c-439c-8df6-84c45b5e61c7",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C79",
+      "claim": "The infection time of all cases was unavailable for all studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the data were extracted from publication, the infection time of all cases was unavailable for all studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "943a1c32-2b18-403b-8d9c-dd349e43f044",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C80",
+      "claim": "Inference was conducted under a Bayesian framework using data augmentation Markov chain Monte Carlo (MCMC) algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conducted our inference under a Bayesian framework using data augmentation Markov chain Monte Carlo (MCMC) algorithm to joint estimate the model parameters, the missing infection time, and augmented variables using metropolis-hasting algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical inference methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "6371abcd-9e63-4396-9948-7cb309bbe1ff",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C81",
+      "claim": "Model adequacy was assessed by comparing the observed and expected number of infections in households by household size.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the model adequacy by comparing the observed and expected number of infections in households by household size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model validation approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "f30bfde7-f91d-40be-88bb-8b51cb991771",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C82",
+      "claim": "Models were compared using deviance information criterion (DIC).",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the model with or without the random effect for variation of individual infectiousness by using deviance information criterion (DIC) (Spiegelhalter et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model comparison methodology with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "b7990f49-e320-41b6-a6d5-f6d020afbb45",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C83",
+      "claim": "Smaller DIC indicates a better model fit.",
+      "claim_type": "EXPLICIT",
+      "source": "Smaller DIC indicated a better model fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard interpretation of the DIC statistic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "2ed9a747-abed-4e82-bb9a-16754933499b",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C84",
+      "claim": "DIC difference >5 was considered as substantial improvement.",
+      "claim_type": "EXPLICIT",
+      "source": "DIC difference >5 was considered as substantial improvement (Spiegelhalter et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological criterion supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "48039f94-a991-4a6a-a94d-66528ee55221",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C85",
+      "claim": "Random effects meta-analyses were conducted using the inverse variance method and restricted maximum likelihood estimator for heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted random effects meta-analyses on identified studies to obtain pooled estimates of individual infectiousness, using the inverse variance method and restricted maximum likelihood estimator for heterogeneity (Hedges and Vevea, 1998; Langan et al., 2019; Thompson and Sharp, 1999; Veroniki et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the meta-analysis methodology with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "46683477-6f8e-489a-aa01-7d33d91c6532",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C86",
+      "claim": "Cochran Q test and the I2 statistic were used to identify and quantify heterogeneity among included studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Cochran Q test and the I2 statistic were used to identify and quantify heterogeneity among included studies (Cochran, 1954; Higgins et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the heterogeneity assessment methodology with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "a169966d-725c-4e27-b57d-ebcbb90f266c",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "claim_id": "C87",
+      "claim": "An I2 value more than 75% indicates high heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "An I2 value more than 75% indicates high heterogeneity (Higgins et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard interpretation criterion supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "287a114f-3878-4785-8c17-34cac9782b24",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors conducted a systematic review identifying 17 household transmission studies comprising 13,098 index cases and 31,359 household contacts, with most studies covering January to November 2020 during ancestral strain dominance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C12, and C74 describe the systematic review methodology and data collection results with specific numbers and temporal coverage. These are straightforward descriptive claims supported by the data extraction process and cited studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "3eb54d13-802f-47c9-bc11-3e99be7e208d",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Individual-based household transmission models with infectiousness variation fit substantially better than models without variation for 12 of 14 studies (\u0394DIC: 5.8-268), with estimated infectiousness variation (\u03c3var) ranging from 1.03 to 2.83, suggesting the 20% most infectious cases are 2.4- to 10-fold more infectious than average.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C23 collectively demonstrate that models incorporating infectiousness variation provide substantially better fit (DIC improvements >5 for 12/14 studies), with adequate model validation (C21, C22) and sensitivity analyses (C23). The parameter estimates are reported with credible intervals and the modeling approach is validated through simulation studies showing 88-100% coverage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "4efe262d-7a45-4a51-8ccc-e361beec6e82",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Meta-analysis of 14 studies yielded a pooled infectiousness variation estimate of 1.33 (95% CI: 0.95, 1.70), indicating the 20% most infectious cases are 3.1-fold (95% CI: 2.2- to 4.2-fold) more infectious than average, with 5.9% and 14.9% of cases estimated to be at least 8-fold and 4-fold more infectious, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C3, C25, and C26 report the pooled meta-analysis results with appropriate confidence intervals. The estimates are derived through standard random effects meta-analysis methods (C85-C87) and the mathematical transformations from \u03c3var to fold-differences appear consistent with the log-normal distribution assumption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "913de462-59ca-4483-b6b0-50ac48f31ec3",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Meta-regression analysis revealed that infectiousness variation is negatively associated with secondary attack rate (SAR), with doubling SAR associated with 0.55 unit decrease in infectiousness variation (R\u00b2=67%), while \u03c3sec is positively associated with mean and SD of number of contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 report meta-regression findings with quantitative effect sizes and R\u00b2 values. The negative association between SAR and infectiousness variation is mechanistically plausible (C57) and the statistical relationships are clearly reported with confidence intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "de61802e-e979-4108-b094-0a98d75decaa",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The estimated infectiousness variation is consistent with observed heterogeneity in viral shedding, which shows substantial variation in temporal patterns, duration (11.1-30.3 days), and infectious period across 11 systematic reviews.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C45-C52 establish consistency between the modeling results and independent biological evidence from viral shedding studies. The comparison is well-supported by multiple systematic reviews documenting heterogeneity in viral shedding patterns, duration, and infectious period.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "6ce74dca-8692-4a24-a11f-d908a2b9cd12",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The observed variation in individual infectiousness is consistent with previous dispersion parameter analyses, but \u03c3sec is only weakly correlated with infectiousness variation because it is highly correlated with contact distribution, making it non-comparable across studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 appropriately contextualize the findings relative to prior work and explain why \u03c3sec is not a reliable measure of infectiousness variation. The mechanistic explanation (C57) for the SAR-heterogeneity relationship is supported by citation and logical reasoning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "c5d7f61b-45a5-47ae-964d-043d662bba0e",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The estimated infectiousness variation is corrected for confounding factors (number of contacts, transmission risks in different settings, pre-existing immunity, variant transmissibility) and measures variation caused by individual differences including both biological factors and host behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C33, and C64 provide appropriate interpretation of what the infectiousness variation parameter represents given the study design. The modeling approach explicitly accounts for number of contacts and baseline transmission probabilities, and the focus on ancestral strains in naive populations controls for immunity and variant effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "a5470654-51e5-483a-be5c-f693df9032c9",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Host behaviors including age-specific contact patterns, contact duration, self-isolation capability, and social factors (lockdowns, mask-wearing, PPE availability, occupation) could contribute to variations in infectiousness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34-C42 are largely speculative about mechanisms underlying the observed variation. While supported by citations to relevant literature, these are potential explanations rather than demonstrated findings from the current study. The study lacks individual-level data to test these hypotheses (C59-C61).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "c80e0775-e58d-4fd9-8901-771388ec0209",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Index cases with fever or cough have 1.4-fold and 1.3-fold higher SAR than those without these symptoms, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C44 report findings from cited literature (Madewell et al., 2021) providing quantitative estimates of symptom effects on transmission. These are appropriately cited prior findings used to support discussion of biological factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "ccdefce6-faa1-40a8-9abb-c1788651a6ae",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Study limitations include lack of individual-level data preventing assessment of demographic factors and disentanglement of host behaviors from biological factors, different recruitment methods across studies, assumption of uniform community infection risk, and focus on ancestral strains limiting generalizability to other variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C70 appropriately acknowledge important limitations of the study. These are valid methodological constraints that affect interpretation and generalizability of the findings. The authors transparently discuss how these limitations impact their ability to make certain inferences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "365a6908-2b1d-44eb-b509-a889a793a741",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In one study that included susceptibility components, substantial heterogeneity remained with 20% of cases contributing to 80% of transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 cites a study (Tsang et al., 2022) that accounted for susceptibility and still found substantial heterogeneity. This supports the robustness of the infectiousness variation finding even when susceptibility is considered.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "326ad037-b272-411e-a55f-e8358f5bcc77",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Previous studies documented substantial transmission heterogeneity including the 80/20 rule in infectious disease outbreaks, but rarely considered number of contacts, analyzed clusters from heterogeneous settings, and may suffer from publication bias. Households provide an ideal setting with 4-10-fold higher transmission risk and known contact numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 establish the rationale and context for the study through appropriate citations to prior literature. The limitations of previous SSE studies and advantages of household studies are well-documented in the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study employed an individual-based household transmission model with Bayesian MCMC inference, using DIC for model comparison (difference >5 indicating substantial improvement), and random effects meta-analysis with inverse variance method and restricted maximum likelihood for heterogeneity assessment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C87 describe the methodological approach with appropriate citations to established statistical methods. The definitions, model specifications, inference procedures, and meta-analysis methods are standard approaches well-supported by the cited methodological literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "644bafc2-2a83-402b-bc66-04791bc7d29d",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Using methods other than PCR may lower sensitivity of detecting infection, resulting in lower SAR estimates and higher infectiousness variation estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 is speculative about why ascertainment method is associated with infectiousness variation. While plausible, this is a potential explanation without direct evidence. The direction of bias is logical but unverified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    },
+    {
+      "id": "f21e711e-ae32-4256-97aa-02a87f84ae89",
+      "content_id": "d10c3306-3505-4dc6-a190-97fdf707e8be",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "There is substantial variation in individual infectiousness, which is important for epidemic management.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is a summary conclusion supported by the collective findings from the modeling analysis (C13-C26) showing 3.1-fold higher infectiousness in the top 20% of cases. The importance for epidemic management is a reasonable inference given the documented heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:15.482137Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3e3b3f03-bcef-4e97-8501-e9215549e14d",
+      "result_id": "287a114f-3878-4785-8c17-34cac9782b24"
+    },
+    {
+      "claim_id": "fc7b028f-6b55-455d-8581-b45b7760f4fe",
+      "result_id": "287a114f-3878-4785-8c17-34cac9782b24"
+    },
+    {
+      "claim_id": "7ddd0db8-41a1-4f51-a9a9-b8ec69df89db",
+      "result_id": "287a114f-3878-4785-8c17-34cac9782b24"
+    },
+    {
+      "claim_id": "f818e838-565b-455b-9bd5-08303047e998",
+      "result_id": "3eb54d13-802f-47c9-bc11-3e99be7e208d"
+    },
+    {
+      "claim_id": "042ac58e-c687-4d25-926e-bf50fa9a4d19",
+      "result_id": "3eb54d13-802f-47c9-bc11-3e99be7e208d"
+    },
+    {
+      "claim_id": "a5268111-518c-40a2-9ca0-a7e4311bfced",
+      "result_id": "3eb54d13-802f-47c9-bc11-3e99be7e208d"
+    },
+    {
+      "claim_id": "d8b70bfd-3ed9-4ac7-a1b7-be17ee9b7fb2",
+      "result_id": "3eb54d13-802f-47c9-bc11-3e99be7e208d"
+    },
+    {
+      "claim_id": "b82b532e-588e-41b6-9f1e-18cc4ccbe188",
+      "result_id": "3eb54d13-802f-47c9-bc11-3e99be7e208d"
+    },
+    {
+      "claim_id": "95c1a63f-be08-437a-9b4c-8d90dd53d710",
+      "result_id": "3eb54d13-802f-47c9-bc11-3e99be7e208d"
+    },
+    {
+      "claim_id": "2c70a2d9-a260-4051-b877-5d67935511d6",
+      "result_id": "3eb54d13-802f-47c9-bc11-3e99be7e208d"
+    },
+    {
+      "claim_id": "9a2aded1-6eda-4c55-854e-8f9607e0380b",
+      "result_id": "3eb54d13-802f-47c9-bc11-3e99be7e208d"
+    },
+    {
+      "claim_id": "86b7ff31-deaa-476d-baa2-04fb688f3e6d",
+      "result_id": "3eb54d13-802f-47c9-bc11-3e99be7e208d"
+    },
+    {
+      "claim_id": "e89cd4e9-f93e-44a1-9c95-0f1e9a3b1a1b",
+      "result_id": "3eb54d13-802f-47c9-bc11-3e99be7e208d"
+    },
+    {
+      "claim_id": "b6aa93e3-4b6b-43a9-bd6b-17ce861ab1a1",
+      "result_id": "3eb54d13-802f-47c9-bc11-3e99be7e208d"
+    },
+    {
+      "claim_id": "c7c48c03-55f6-42a6-bc25-27f6a2adf9aa",
+      "result_id": "4efe262d-7a45-4a51-8ccc-e361beec6e82"
+    },
+    {
+      "claim_id": "c2082ed4-3a8b-4b8d-b2a4-f9b96f0747dc",
+      "result_id": "4efe262d-7a45-4a51-8ccc-e361beec6e82"
+    },
+    {
+      "claim_id": "354d521e-2660-4f59-931c-15a32e9da95e",
+      "result_id": "4efe262d-7a45-4a51-8ccc-e361beec6e82"
+    },
+    {
+      "claim_id": "01ee02af-5b13-4b5f-bedd-819e97291636",
+      "result_id": "4efe262d-7a45-4a51-8ccc-e361beec6e82"
+    },
+    {
+      "claim_id": "a44fe60d-b0f0-41b1-bf39-ecc321e05323",
+      "result_id": "913de462-59ca-4483-b6b0-50ac48f31ec3"
+    },
+    {
+      "claim_id": "01a6d7c6-3605-407e-afcc-a2ab5bc2aa86",
+      "result_id": "913de462-59ca-4483-b6b0-50ac48f31ec3"
+    },
+    {
+      "claim_id": "66030d57-e698-42e7-8618-1d7a872335b7",
+      "result_id": "913de462-59ca-4483-b6b0-50ac48f31ec3"
+    },
+    {
+      "claim_id": "e069c336-901f-4f62-aa8a-63e29684bdf7",
+      "result_id": "913de462-59ca-4483-b6b0-50ac48f31ec3"
+    },
+    {
+      "claim_id": "ddfe931c-d306-4b9d-9190-c4dedfae1397",
+      "result_id": "de61802e-e979-4108-b094-0a98d75decaa"
+    },
+    {
+      "claim_id": "712a8ce8-eb69-4c10-b863-a90ac6c956df",
+      "result_id": "de61802e-e979-4108-b094-0a98d75decaa"
+    },
+    {
+      "claim_id": "a6159d51-deef-4014-9012-fb49f9f86de2",
+      "result_id": "de61802e-e979-4108-b094-0a98d75decaa"
+    },
+    {
+      "claim_id": "3934ffe5-6444-4895-bca2-735fb567ceec",
+      "result_id": "de61802e-e979-4108-b094-0a98d75decaa"
+    },
+    {
+      "claim_id": "4b35974e-a1b9-45e6-a98d-4075aee7389e",
+      "result_id": "de61802e-e979-4108-b094-0a98d75decaa"
+    },
+    {
+      "claim_id": "e7b5944d-097b-4cad-9974-902b85c02b6c",
+      "result_id": "de61802e-e979-4108-b094-0a98d75decaa"
+    },
+    {
+      "claim_id": "14761fcd-f999-4357-b646-ccad8666717a",
+      "result_id": "de61802e-e979-4108-b094-0a98d75decaa"
+    },
+    {
+      "claim_id": "544ef8f9-26d7-4440-a6c5-40ad75fb4891",
+      "result_id": "de61802e-e979-4108-b094-0a98d75decaa"
+    },
+    {
+      "claim_id": "1e05cfd8-7684-436d-83f7-b432389f0102",
+      "result_id": "de61802e-e979-4108-b094-0a98d75decaa"
+    },
+    {
+      "claim_id": "f468e5e4-2b77-41a4-9751-573c78c3c1db",
+      "result_id": "6ce74dca-8692-4a24-a11f-d908a2b9cd12"
+    },
+    {
+      "claim_id": "e84dcf7f-09d1-4706-90c6-eb1382ae012a",
+      "result_id": "6ce74dca-8692-4a24-a11f-d908a2b9cd12"
+    },
+    {
+      "claim_id": "bb8aa577-a1d9-4d9a-895e-b00654eef897",
+      "result_id": "6ce74dca-8692-4a24-a11f-d908a2b9cd12"
+    },
+    {
+      "claim_id": "8a1ae0b9-619a-46bf-a4e5-120f3440056f",
+      "result_id": "6ce74dca-8692-4a24-a11f-d908a2b9cd12"
+    },
+    {
+      "claim_id": "98ebb29f-e1fe-42c9-a86e-3a5f494c8c84",
+      "result_id": "6ce74dca-8692-4a24-a11f-d908a2b9cd12"
+    },
+    {
+      "claim_id": "7d4af0d9-48ec-4663-afd2-17a09e51931b",
+      "result_id": "c5d7f61b-45a5-47ae-964d-043d662bba0e"
+    },
+    {
+      "claim_id": "1bb5067d-1767-4dea-a84d-6c75d0a6f105",
+      "result_id": "c5d7f61b-45a5-47ae-964d-043d662bba0e"
+    },
+    {
+      "claim_id": "c56f1aaa-dcf6-4464-9e90-3dcf4ce54ff1",
+      "result_id": "c5d7f61b-45a5-47ae-964d-043d662bba0e"
+    },
+    {
+      "claim_id": "3b14faad-a15c-476d-8ca0-36d28416fda5",
+      "result_id": "a5470654-51e5-483a-be5c-f693df9032c9"
+    },
+    {
+      "claim_id": "7a326329-2aa0-40da-8232-17fdba99a29f",
+      "result_id": "a5470654-51e5-483a-be5c-f693df9032c9"
+    },
+    {
+      "claim_id": "121ea49d-4d44-449d-a67e-b062775958e7",
+      "result_id": "a5470654-51e5-483a-be5c-f693df9032c9"
+    },
+    {
+      "claim_id": "9830c038-c1fd-41ec-8db8-8bd457a3b9cd",
+      "result_id": "a5470654-51e5-483a-be5c-f693df9032c9"
+    },
+    {
+      "claim_id": "35f907bc-0a05-4db7-b609-3c778ea92764",
+      "result_id": "a5470654-51e5-483a-be5c-f693df9032c9"
+    },
+    {
+      "claim_id": "f0d315ec-f96a-4b95-8cb3-8e1e036b3041",
+      "result_id": "a5470654-51e5-483a-be5c-f693df9032c9"
+    },
+    {
+      "claim_id": "d80c5a4c-c526-464b-a5fa-2edd043447ff",
+      "result_id": "a5470654-51e5-483a-be5c-f693df9032c9"
+    },
+    {
+      "claim_id": "1dafb70a-4ac3-444e-80bc-3b52b3463852",
+      "result_id": "a5470654-51e5-483a-be5c-f693df9032c9"
+    },
+    {
+      "claim_id": "a287bc0f-06a9-427f-b859-d665c39b74f1",
+      "result_id": "a5470654-51e5-483a-be5c-f693df9032c9"
+    },
+    {
+      "claim_id": "d0061d11-3a01-4a8e-b61c-2afe31dbe5ad",
+      "result_id": "c80e0775-e58d-4fd9-8901-771388ec0209"
+    },
+    {
+      "claim_id": "9f3c36fc-cf63-444b-80c6-1462d4787a2a",
+      "result_id": "c80e0775-e58d-4fd9-8901-771388ec0209"
+    },
+    {
+      "claim_id": "70c0be04-288f-4d05-80bf-0662d21c5dda",
+      "result_id": "ccdefce6-faa1-40a8-9abb-c1788651a6ae"
+    },
+    {
+      "claim_id": "a0b08054-2615-42cc-96e3-80ab793a3f82",
+      "result_id": "ccdefce6-faa1-40a8-9abb-c1788651a6ae"
+    },
+    {
+      "claim_id": "a39800d6-42dc-46b0-9830-09af34b3fc9d",
+      "result_id": "ccdefce6-faa1-40a8-9abb-c1788651a6ae"
+    },
+    {
+      "claim_id": "13e52ff2-90c9-4ca8-be58-a6b52716df3e",
+      "result_id": "ccdefce6-faa1-40a8-9abb-c1788651a6ae"
+    },
+    {
+      "claim_id": "26f296b1-e6cd-4173-be4c-9a38bd8d87de",
+      "result_id": "ccdefce6-faa1-40a8-9abb-c1788651a6ae"
+    },
+    {
+      "claim_id": "8d9cc265-e75a-443d-bebc-81aa54c427c7",
+      "result_id": "ccdefce6-faa1-40a8-9abb-c1788651a6ae"
+    },
+    {
+      "claim_id": "cfaed470-3111-41b6-81e5-e5507edbeb59",
+      "result_id": "ccdefce6-faa1-40a8-9abb-c1788651a6ae"
+    },
+    {
+      "claim_id": "2f8d3c3f-144e-442c-806f-f2354cfe7944",
+      "result_id": "ccdefce6-faa1-40a8-9abb-c1788651a6ae"
+    },
+    {
+      "claim_id": "f431044e-7940-49ff-b224-d6c493caafbd",
+      "result_id": "ccdefce6-faa1-40a8-9abb-c1788651a6ae"
+    },
+    {
+      "claim_id": "3f7127a7-53a6-4b8d-bc08-9a1f2dc33b23",
+      "result_id": "ccdefce6-faa1-40a8-9abb-c1788651a6ae"
+    },
+    {
+      "claim_id": "9698095d-e73f-420d-836c-d20a643b706b",
+      "result_id": "365a6908-2b1d-44eb-b509-a889a793a741"
+    },
+    {
+      "claim_id": "6a53de30-6d09-4649-8503-61af3d2cd9a7",
+      "result_id": "326ad037-b272-411e-a55f-e8358f5bcc77"
+    },
+    {
+      "claim_id": "7f57d4a8-8bad-40ba-89d7-ea77d0591116",
+      "result_id": "326ad037-b272-411e-a55f-e8358f5bcc77"
+    },
+    {
+      "claim_id": "2d98fcb4-d88d-4e4d-a485-8f095cd70adb",
+      "result_id": "326ad037-b272-411e-a55f-e8358f5bcc77"
+    },
+    {
+      "claim_id": "b0347ad5-ecae-4db0-b4a3-72f42413aafd",
+      "result_id": "326ad037-b272-411e-a55f-e8358f5bcc77"
+    },
+    {
+      "claim_id": "7b8e2ef2-1e0b-4770-a719-335c3571af5e",
+      "result_id": "326ad037-b272-411e-a55f-e8358f5bcc77"
+    },
+    {
+      "claim_id": "26420b48-98da-4714-8d37-75f069bd9fe2",
+      "result_id": "326ad037-b272-411e-a55f-e8358f5bcc77"
+    },
+    {
+      "claim_id": "21240ee4-7e26-4d0e-8960-455680baaf49",
+      "result_id": "326ad037-b272-411e-a55f-e8358f5bcc77"
+    },
+    {
+      "claim_id": "819b6751-93bc-4589-ac38-9d8c341cdb20",
+      "result_id": "326ad037-b272-411e-a55f-e8358f5bcc77"
+    },
+    {
+      "claim_id": "df9abbe4-86af-4315-97e4-45f15540ff8f",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "64e123b3-e7a0-4308-821e-53a30730d00c",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "aee62201-eaf0-40c0-a6ca-21233f4abf94",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "a01162a7-67e7-4483-b3a1-2b510c859a05",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "1b72c06e-3d0c-44e0-abfb-fbba7dfb926b",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "f7fbef6f-0e7c-439c-8df6-84c45b5e61c7",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "943a1c32-2b18-403b-8d9c-dd349e43f044",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "6371abcd-9e63-4396-9948-7cb309bbe1ff",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "f30bfde7-f91d-40be-88bb-8b51cb991771",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "b7990f49-e320-41b6-a6d5-f6d020afbb45",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "2ed9a747-abed-4e82-bb9a-16754933499b",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "48039f94-a991-4a6a-a94d-66528ee55221",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "46683477-6f8e-489a-aa01-7d33d91c6532",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "a169966d-725c-4e27-b57d-ebcbb90f266c",
+      "result_id": "1a0add2f-80b5-4777-ab10-4c4a15cdebef"
+    },
+    {
+      "claim_id": "39284081-3669-489c-8d9f-6eacf5cb584c",
+      "result_id": "644bafc2-2a83-402b-bc66-04791bc7d29d"
+    },
+    {
+      "claim_id": "33097f5a-30d4-4e7a-ba2b-2ad4d20979fe",
+      "result_id": "f21e711e-ae32-4256-97aa-02a87f84ae89"
+    }
+  ],
+  "comparisons": []
+}

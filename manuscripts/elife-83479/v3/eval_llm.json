@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prophages provide multiple benefits to bacterial hosts including biofilm formation, nutrient acquisition, virulence factor expression, superinfection resistance, and competitive advantages through lysogenic conversion and prophage induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are all supported by citations to prior literature and establish the background context for the study. These claims accurately represent established knowledge about prophage biology and lysogeny from the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The experimental system consists of two K. pneumoniae strains: BJ1 (prophage-free, phage-sensitive) and ST14 (polylysogenic, produces phages that infect BJ1), with the capsule as the main phage receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 describe the experimental strains and are supported by citations and direct characterization data. The strain properties are clearly documented and form the basis for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "In 24-hour competition experiments, ST14 has a fitness advantage over BJ1 that varies with phage pressure. Prophages increase ST14 fitness by negatively affecting BJ1 growth in a phage-dependent manner, with the effect strongest under high phage production (MMC) and absent when phages cannot infect (citrate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C28 are supported by experimental data in Figure 1 and supplements, including competitive index measurements, Ci(j) calculations, and statistical tests (Kruskal-Wallis, p<0.01). The experimental design appropriately controls for phage production and infection ability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "During 30 days of coevolution, ST14 did not eliminate BJ1 despite continuous phage production. BJ1 frequency initially decreased rapidly (especially under high phage pressure) but stabilized, suggesting evolution of resistance mechanisms that counter-balance prophage-mediated competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 are supported by longitudinal population dynamics data in Figure 2 and supplements. The observation of coexistence despite continuous phage pressure is well-documented, though the mechanistic explanation (C37) is inferential but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Phage pressure drives rapid emergence of resistance through capsule inactivation. Non-capsulated clones emerged in all populations, with emergence accelerated under high phage pressure. Most non-capsulated clones (52/54) had loss-of-function mutations in wcaJ, the first glycosyltransferase in capsule biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 are supported by phenotypic screening (Figure 2B), sequencing data (Supplementary file 2), and citations to prior work. The genetic basis of capsule inactivation is well-characterized with appropriate sample sizes (N=54 clones sequenced).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Lysogenization occurs but is rare and unstable. Of 1209 capsulated clones screened, only 94 (7.8%) were lysogens. New lysogens showed high spontaneous induction rates, producing 100-1000\u00d7 more phage than ST14 without induction, and exhibited significant cell death and growth delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are supported by extensive screening data (Figure 3, supplements) and phage production assays (Figure 3C). The high spontaneous induction rates are well-documented with appropriate controls and replicates, providing strong evidence for the instability of lysogeny.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Computational simulations using eVIVALDI show that lysogen stability depends on spontaneous induction rates. Low induction rates (1-5%) generate stable lysogens, while high rates (\u226511%) result in bell-shaped dynamics where lysogens quickly invade but are eliminated. This matches experimental observations and suggests competition between multiple resistance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by simulation results (Figure 3D, Figure 3\u2014figure supplement 4) that qualitatively match experimental observations. The simulations appropriately explore parameter space and provide mechanistic insight, though they are simplified models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The fitness hierarchy of resistance mechanisms changes over evolutionary time scales. Initially, non-capsulated clones have highest fitness due to intrinsic advantages and efficient resistance. At longer timescales (>10 days), capsulated resistant clones outcompete both lysogens and non-capsulated clones, suggesting a temporal hierarchy in resistance mechanism advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 are supported by AUC analyses across time points (Figure 4) with appropriate statistical tests (Kruskal-Wallis). The temporal dynamics are well-documented, though the mechanistic explanations involve some inference from the fitness measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Multiple genetic paths to phage resistance involve modulating capsule amount or composition. Five clones had mutations in capsule genes (orf13, wcaJ, wzi) with varying effects on resistance. Some mutations (orf13 frameshifts) conferred complete resistance in both liquid and agar, while others (point mutations) showed environment-dependent resistance (liquid only).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 are supported by whole-genome sequencing, phenotypic characterization (Figure 5, Table 1), and capsule/adsorption assays. The environment-dependent resistance (C77-C78) is an interesting observation, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Seven clones exhibited transient, non-genetic resistance to phages. These clones were resistant when grown directly from glycerol stocks but became susceptible after two passages without phage pressure, despite lacking identifiable mutations. This may involve simple sequence repeats (SSRs) in wcaJ that are difficult to detect with current sequencing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C83, C109-C114 describe an intriguing phenomenon supported by experimental observations (Figure 6). However, the lack of identifiable mutations (C110) and the speculative mechanism involving SSRs (C112) leave the molecular basis uncertain. The SSR hypothesis is reasonable but unproven, and alternative mechanisms (epigenetic, phenotypic switching) are also possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Non-genetic resistance mechanisms can emerge at longer evolutionary timescales and provide advantages over constitutive mutations by avoiding fitness costs and allowing reversion when phage pressure is relieved, similar to inducible immune responses like CRISPR-Cas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 are supported by citations to prior work on transient resistance mechanisms and by the experimental observations of reversible resistance. The comparison to CRISPR-Cas (C118) is appropriate and well-cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Capsulated resistant clones show cross-resistance to phages from other K2 strains (03-9138, ST17) but not T69, despite low overall phage similarity (wGRR <0.25). This cross-resistance correlates with shared structural proteins (23 proteins >50% identity). In contrast, BJ1 lysogens are only resistant to ST14 phages, showing no cross-resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 are supported by cross-resistance assays (Figure 7) and comparative genomics (wGRR analysis, protein identity). The differential cross-resistance between capsule-modified clones and lysogens is well-documented, though the mechanistic link to shared structural proteins (C89) is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Both strains coexist throughout the experiment with varying relative frequencies suggesting ongoing coevolution. In MMC conditions, BJ1 populations initially dropped faster but reached equilibrium by day 6, potentially due to emergence of diverse, less costly resistance mechanisms. Non-capsulated clones dominate early but capsulated resistant clones may outcompete them at longer timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 synthesize observations from multiple experiments and are supported by population dynamics data. The interpretations involve reasonable inferences from the fitness and frequency data, though some mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Lysogenization is not a stable defense mechanism in this system due to high spontaneous induction rates causing cell death. Lysogeny is disfavored when induction rates are high, when bacteria face multiple phages, or when less costly alternatives exist. This is consistent with prior observations in E. coli and P. aeruginosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by experimental data on lysogen instability and are well-contextualized with citations to similar findings in other systems (C101-C103). The synthesis provides a coherent explanation for the rarity of stable lysogens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The dominant resistance mechanism changes across evolutionary timescales. Initially, capsule loss dominates because it can be achieved through many mutational paths. At later stages, resistance through capsule modification emerges and can outcompete both lysogens and non-capsulated clones, suggesting these mutations are rarer or require multiple steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by temporal dynamics of resistance mechanisms (Figure 3, Figure 4) and sequencing data. The interpretation about mutational accessibility is reasonable given the data, though direct measurement of mutation rates would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Phage resistance mechanisms show context-dependent efficiency and costs. Some mutants were resistant in liquid but sensitive on agar, contrasting with expectations from structured environments. This may relate to differences in phage-bacterium interaction stability between liquid and solid media, though reduced capsule production alone does not explain the pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C128 are supported by experimental observations (Figure 5) and appropriate citations. The environment-dependent resistance is well-documented, though the mechanistic explanation (C126-C127) remains speculative. The control with \u0394rcsB (C128) appropriately rules out simple capsule reduction as the mechanism.",
+    "result_type": "MAJOR"
+  }
+]

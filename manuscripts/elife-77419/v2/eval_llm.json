@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C45",
+      "C56",
+      "C57",
+      "C58",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "EZ Clear is a three-step tissue clearing protocol that renders whole adult mouse organs optically transparent in 48 hours at room temperature while maintaining samples in an aqueous environment throughout the process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C45, C56-C58, and C143-C146 collectively establish the core protocol characteristics with consistent descriptions across abstract, introduction, and methods sections. The three steps (lipid removal with 50% THF, washing, and RI matching with EZ View solution) are clearly defined with specific timeframes totaling 48 hours. Figure 1A provides visual documentation of the protocol steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C49",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C140"
+    ],
+    "result": "EZ Clear preserves both endogenous and synthetic fluorescence while maintaining constant sample size (size change ratio = 1.072 \u00b1 0.062), unlike other clearing methods that cause significant shrinkage (3DISCO: 0.593\u00b10.013, Fast 3D: 0.776\u00b10.025) or expansion (X-CLARITY: 1.608\u00b10.049).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C49, C59-C63, and C140 are supported by quantitative data from Figure 1C (n=4, one-way ANOVA) and imaging data from Thy1-EGFP brains (Figure 1D-F). The statistical comparison with other methods provides strong evidence for size preservation. However, the claim of 'no alteration' in C6 is slightly overstated given the 1.072 ratio, though this is not statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C82",
+      "C83",
+      "C129",
+      "C130",
+      "C147",
+      "C148"
+    ],
+    "result": "EZ View solution (80% Nycodenz + 7M urea, RI = 1.518 \u00b1 0.0003) achieves high refractive index matching for tissue transparency while maintaining samples in an aqueous environment compatible with most microscopy platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C68-C71, C82-C83, C129-C130, and C147-C148 describe the development and characterization of EZ View solution. The linear relationship between urea concentration and RI (C68) is documented in Figure 2\u2014source data 1. The optimal formulation (7M urea in 80% Nycodenz) is empirically determined with precise RI measurements. The aqueous nature and platform compatibility are consistently stated across multiple claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "EZ View solution (RI=1.518) provides superior tissue transparency and imaging depth (>6mm) compared to RIMS (RI=1.46), with consistent fluorescence intensity maintained throughout imaging depth in EZ View but significantly reduced after 4mm in RIMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C72-C80 are supported by comparative imaging data (Figure 2B-J) and quantitative fluorescence measurements (n=3, two-way ANOVA). The color-coded depth projections (Figure 2G, J) visually demonstrate signal scattering differences. Statistical analysis confirms significantly lower fluorescence intensity after 4mm depth in RIMS versus EZ View samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Fluorescence signal intensity in EZ View-stored samples remains stable for up to 70 days of storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by longitudinal imaging data at 14, 17, 43, and 70 days (Figure 2L, n=3, two-way ANOVA). This demonstrates long-term stability of the clearing solution for sample storage, which is important for practical applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C150"
+    ],
+    "result": "EZ Clear is compatible with multiple adult mouse organs (brain, eye, heart, lung, liver, kidney, spleen, testis, ovary) using the same protocol, with excellent transparency and preserved lectin-649 fluorescence signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 and C150 are supported by brightfield images (Figure 1G) and LSFM imaging (Figure 1H) showing successful clearing and fluorescence preservation across multiple organ types. All organs were processed using identical protocols, demonstrating broad applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "EZ Clear enables imaging at depths up to 6.5mm with high signal contrast that remains consistent throughout depth, while Fast 3D shows increased light scattering and decreased contrast at deeper imaging depths despite similar fluorescence intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 are supported by comparative lightsheet imaging (Figure 3A-F) and quantitative analysis (Figure 3G-I, n=3, two-way ANOVA). While mean fluorescence intensity shows no significant difference between methods (C91), the Michelson contrast analysis (C92-C93) reveals superior performance of EZ Clear at depth. This demonstrates that transparency and signal quality are distinct from signal intensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "EZ Clear processed samples are compatible with wholemount immunofluorescent staining using both iDISCO and standard protocols, with effective antibody penetration and even nuclear dye labeling throughout the tissue while preserving endogenous fluorescence from transgenic reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C103 are supported by LSFM imaging (Figure 4B-J) and quantitative fluorescence measurements (Figure 4E-F, n=3, two-way ANOVA). Both staining protocols show comparable results with no significant differences in mean fluorescence intensity at depths of 1-5mm. The preservation of Thy1-EGFP signal alongside GFAP immunostaining (C101-C102) demonstrates compatibility with endogenous reporters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C52",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C133"
+    ],
+    "result": "EZ Clear processed and wholemount imaged samples can be subsequently processed for cryosectioning, conventional histology (H&E), and immunofluorescent staining without loss of fluorescence signal from endogenous or synthetic reporters, enabling multi-scale analysis from whole organ to cellular level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C52, C104-C114, and C133 are supported by comprehensive demonstration using glioma model (Figure 5, Figure 6). Wholemount LSFM imaging identifies tumor cell clusters and single cells (C104-C105), followed by successful cryosectioning and mounting in EZ View for fluorescence/confocal imaging (C106-C108). H&E staining quality is comparable to PFA-only fixed tissues (C109-C110, Figure 5\u2014figure supplement 1). Indirect immunofluorescence successfully detects multiple antigens (GFAP, \u03b1SMA, Tuj1) while preserving EGFP and lectin-649 signals (C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Evans blue, when bound to albumin, produces fluorescence in the far-red spectrum (excitation 620nm, emission 680nm) and can be used as a cost-effective alternative to fluorescent lectin for endothelial labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by cited references (Namykin et al., 2019; Saria and Lundberg, 1983; Honeycutt and O'Brien, 2021; Robertson et al., 2015) and demonstrated in Figure 3A-F showing Evans blue labeling of vasculature in cleared brain hemispheres. This represents appropriate citation of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C122"
+    ],
+    "result": "EZ Clear offers practical advantages over other clearing methods: no specialized equipment required, simple adoption in standard laboratories, minimal sample attention during processing, and reduced THF consumption through one-step immersion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 and C122 are logical inferences supported by the protocol design. The three-step protocol at room temperature without specialized equipment (C115-C116) contrasts with CLARITY's electrophoretic apparatus requirements. The 48-hour timeline with defined incubation periods supports minimal attention claims (C117). The single 50% THF step versus graded series reduces reagent use (C122), though quantitative comparison is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Using 50% THF in water is sufficient for lipid removal while maintaining tissue hydration and minimizing size changes, avoiding the dehydration and size alterations caused by graded THF series used in other methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 are supported by cited references for THF properties (Ert\u00fcrk et al., 2012; D\u00edaz et al., 1992; Qi et al., 2019) and empirical demonstration of size preservation (C59). The comparison to graded THF methods that cause dehydration is appropriately cited (Ert\u00fcrk et al., 2012; Kosmidis et al., 2021). The determination that 50% THF is sufficient is demonstrated by successful clearing results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The refractive indices of biological tissues (soft tissue: 1.44-1.56, dry tissue: ~1.50) require high RI matching solutions, with existing aqueous solutions (RIMS RI=1.46, sRIMS RI=1.43) falling below the ideal range of 1.52-1.56, while organic solvents (DBE RI=1.56, BABB RI=1.55) achieve higher RI but require dehydration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C128 accurately cite prior work on tissue refractive indices and existing clearing solutions (Ueda et al., 2020; Jacques, 2013; Silvestri et al., 2016; Yang et al., 2014; McCreedy et al., 2021). This contextualizes the innovation of EZ View solution (RI=1.518) as bridging the gap between aqueous and organic solvent approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C134"
+    ],
+    "result": "EZ View solution can be used as mounting medium for cryosections, and the EZ Clear workflow (whole organ imaging followed by cryosectioning and immunostaining) maximizes tissue yield while minimizing antibody costs compared to whole organ immunostaining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 and C134 are supported by demonstration in Figures 5-6 showing successful use of EZ View for mounting cryosections. The proposal that this workflow maximizes tissue yield and minimizes costs (C134) is a reasonable inference supported by the demonstrated compatibility, though direct cost comparison is not provided. The citation of whole organ immunostaining protocols (Renier et al., 2014; Susaki, 1982) provides appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "EZ Clear has not been tested on larger samples, other species (rats, pigs, humans), or younger mouse tissues (embryos), and future optimization will be needed for scaling to various sample sizes and lipid contents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 appropriately acknowledge limitations of the current study. These are honest assessments of what was not tested (C135-C136) and what future work is needed (C137). The anticipation that the method will work with smaller samples (C138) is reasonable speculation based on the principle that smaller samples should clear more easily.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Historical context: Development of confocal microscopy, increased computing power, and advances in tissue clearing protocols (both organic solvent-based and aqueous-based methods) have enabled 3D visualization of organ structures, with light scattering being the primary limitation for imaging depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C25 provide appropriate background context with proper citations. The classification of clearing methods as organic solvent-based (BABB, 3DISCO, iDISCO, Ethanol-ECi, PEGASOS, Fast 3D) versus aqueous-based (Scale, CLARITY, PACT-PARS, CUBIC, Ce3D) is accurate and well-cited. The statement about light scattering limiting imaging depth (C25) is fundamental to the field and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Aqueous-based clearing protocols have advantages (fluorescence preservation, imaging platform compatibility) but face challenges including extended incubation times, complicated procedures, specialized equipment requirements, and variability in clearing efficiency across tissue types, with CLARITY specifically requiring precise control of fixation and crosslinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 accurately characterize limitations of aqueous-based methods with appropriate citations (Richardson et al., 2021; Tainaka et al., 2016; Ariel, 2017; Chung and Deisseroth, 2013; Gradinaru et al., 2018). The specific discussion of CLARITY's hydrogel scaffolding mechanism (C33-C35) and variability issues is well-supported by cited literature. This contextualizes the motivation for developing EZ Clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Organic solvent-based clearing methods are simple, fast, and efficient without requiring specialized equipment, but face limitations including hazardous solvents, rapid fluorescence decline, requirement for solvent-resistant imaging systems, and uncertain compatibility with downstream histology and immunostaining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 accurately characterize organic solvent-based methods with appropriate citations (Richardson and Lichtman, 2015; Tainaka et al., 2016; Ueda et al., 2020; Ariel, 2017; Gradinaru et al., 2018; Neckel et al., 2016). The identification of the gap in knowledge regarding downstream processing of solvent-cleared samples (C44) establishes a key motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C139",
+      "C141",
+      "C142"
+    ],
+    "result": "Summary claims: EZ Clear is characterized as simple, robust, easy to adopt, applicable to various sample volumes, compatible with most imaging platforms, and preserves samples for downstream analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C139, C141-C142 are summary statements supported by the collective evidence from the experimental results. These claims synthesize the demonstrated features: simplicity (3 steps, 48 hours), robustness (consistent results across organs), ease of adoption (no specialized equipment), broad compatibility (multiple organs, imaging platforms), and downstream processing capability (cryosectioning, histology, immunostaining).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "EZ Clear maintains samples in an aqueous environment throughout clearing and imaging without requiring corrosive/combustible organic solvents or potentially damaging immersion oils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are consistently stated throughout the manuscript and supported by the protocol design using 50% THF in water (aqueous), water washes, and aqueous EZ View solution. The elimination of organic solvents for RI matching and imaging is a key distinguishing feature from methods like 3DISCO and BABB.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C149"
+    ],
+    "result": "Cleared samples are incubated in EZ View solution at room temperature for 24 hours with gentle rocking while protected from light to render them transparent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C149 describes specific methodological details from the Materials and Methods section that are consistent with the protocol overview. These conditions (room temperature, 24 hours, gentle rocking, light protection) are standard practices for tissue clearing and are clearly documented.",
+    "result_type": "MINOR"
+  }
+]

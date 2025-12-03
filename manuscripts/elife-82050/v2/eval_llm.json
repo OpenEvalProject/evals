@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "SARS-CoV-2-specific T cell responses in pre-pandemic samples correlate with CMV seropositivity. CMV+ donors showed higher frequencies of SARS-CoV-2-specific T cells, particularly CD4+ responses to membrane peptides and CD8+ responses to spike peptides, which were accompanied by strong pp65 reactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C31 provide converging experimental evidence from flow cytometry showing that CMV+ donors (N=28) had detectable SARS-CoV-2-specific T cell responses not observed in CMV\u2212 donors (N=39), with statistical support from Figure 1. The correlation between membrane/spike responses and pp65 reactivity (C29, C31) strengthens the association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C69",
+      "C70"
+    ],
+    "result": "Pre-pandemic SARS-CoV-2-specific CD4+ T cells originate from cross-reactive CMV-specific T cells. Clonally expanded CD4+ T cell clones recognized both SARS-CoV-2 membrane and CMV pp65 peptides, with higher avidity for CMV pp65 epitope AGILARNLVPM presented in HLA-DRB3*02:02.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C37, C69-C70 provide experimental evidence from T cell cloning, peptide library screening, and HLA restriction assays (Figure 2). The demonstration that 20/27 clones responded to membrane peptides, and that specific clones recognized both antigens with higher avidity for CMV (C35) supports cross-reactivity. However, the SARS-CoV-2 membrane epitope remains unidentified (C70), which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C73"
+    ],
+    "result": "Pre-pandemic SARS-CoV-2 spike-specific CD8+ T cells originate from cross-reactive CMV-specific T cells. CD8+ T cell clones recognized both SARS-CoV-2 spike peptide FVSNGTHWF and CMV pp65 peptide IPSINVHHY, both presented by HLA-B*35:01, with higher avidity for the CMV peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C38-C43, C73 provide strong experimental evidence from T cell cloning (23/28 clones reactive, all expressing same TCR), peptide identification via CPL assay, HLA restriction experiments, and peptide titration showing higher avidity for IPS (Figure 2). The convergence of multiple experimental approaches supports this cross-reactivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "IPS/FVS cross-reactive CD8+ T cells are mediated by a public TCR found in multiple donors. Tetramer staining identified IPS/FVS-specific T cells in 3/37 healthy donors and 2/2 severe COVID-19 patients, all expressing identical CDR3\u03b1 (CAGNQGGKLIF) and CDR3\u03b2 (CASSLALDEQFF) sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C47-C51, C54-C58 provide strong evidence from tetramer staining (Figure 4) and TCR sequencing (Figure 5). The demonstration that all FVS-binding T cells also bind IPS (C48), the identical TCR sequences across donors (C54-C55), and detection in both healthy donors and COVID-19 patients (C7-C8, C51, C63) support the public TCR conclusion. The finding in donor JZX (C57-C58) extends the prevalence estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C85",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Structural modeling suggests that IPS/FVS cross-reactivity is mediated by similarity in peptide backbone conformation and C-terminal residues. The peptides share limited sequence homology but have similar residues at key positions (P3-S, P6-T/V, P7-H, P9-F/Y) that may enable TCR recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C85, C101-C104 present structural modeling based on the solved IPS-HLA-B*35:01 structure (Figure 3). The analysis identifies shared and similar residues and proposes a mechanism for cross-reactivity. However, this is computational modeling without experimental validation (e.g., crystal structure of TCR-pMHC complex), which limits certainty. The modeling is consistent with the functional data but requires experimental confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "IPS/FVS-specific T cells display an effector memory phenotype with less differentiation compared to IPS-only specific T cells. Flow cytometry showed CCR7\u2212CD45RA\u2212 phenotype in IPS/FVS-specific T cells from three donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by flow cytometry data in Figure 4D showing phenotypic characterization of tetramer-positive cells. The effector memory phenotype is clearly demonstrated, and the comparison with IPS-specific T cells shows reduced differentiation. Sample size is limited (N=3 donors) but the data are consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C66",
+      "C89"
+    ],
+    "result": "IPS/FVS-specific CD8+ T cells can recognize SARS-CoV-2-infected cells and reduce viral replication at low viral titers. In vitro infection assays showed that IPS/FVS-specific T cells reduced intracellular SARS-CoV-2 RNA at 0.05 MOI but not at 0.5 MOI, and were less efficient than vaccination-primed T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62, C66, C89 are supported by experimental data from K562 transduction experiments (C59, Figure 6A) and Calu-3 infection assays (C60-C62, Figure 6B-C). The dose-dependent effect (effective at low MOI but not high MOI) is clearly demonstrated with statistical significance. The comparison with vaccination-primed T cells (C89) provides important context about relative efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C90",
+      "C106"
+    ],
+    "result": "IPS/FVS-specific T cells are present in severe COVID-19 patients but do not show an activated phenotype during acute infection. These cells were detected in 2/2 CMV+ HLA-B*35:01+ severe COVID-19 patients but showed lower CD38/HLA-DR expression compared to SARS-CoV-2-specific T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C67, C90, C106 are supported by tetramer staining and activation marker analysis in COVID-19 patients (Figure 6D-E). The detection in 2/2 patients versus 3/37 healthy donors (C106) suggests enrichment, but the small patient cohort (N=2) limits statistical power. The lack of activation (C64-C65, C67) is clearly demonstrated but interpretation is complicated by the limitation to circulating T cells (C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C93",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "CMV-specific T cells can cross-react with SARS-CoV-2 despite low sequence homology and may contribute to pre-existing immunity. This expands the potential origin of pre-pandemic SARS-CoV-2-specific T cells beyond other human coronaviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C93-C95 are well-supported by the collective experimental evidence demonstrating cross-reactivity between dissimilar CMV and SARS-CoV-2 peptides. However, C12 and C97 regarding contribution to pre-existing immunity are speculative inferences based on the presence of these cells and their in vitro function, without direct evidence of protective effects in vivo. The conclusion is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Cross-reactive T cells display higher avidity for CMV epitopes compared to SARS-CoV-2 epitopes, consistent with repeated CMV exposure. This pattern differs from some prior studies of HCoV cross-reactivity and suggests potential overestimation of HCoV contribution to pre-existing immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is directly supported by peptide titration data (Figure 2B, 2F). Claims C76-C78 provide context from literature and immunological principles. Claim C79 is a speculative inference about prior work, but is logically supported by the avidity data and discussion of experimental design issues in prior studies. The reasoning is sound but the conclusion about overestimation requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background and context from prior literature on SARS-CoV-2 T cell immunity, pre-existing T cells, and heterologous immunity. These claims establish the scientific rationale for investigating CMV as a source of cross-reactive T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C26 are background claims supported by citations to published literature. These provide context for the study but are not novel findings. The citations appear appropriate and the claims accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C71",
+      "C72",
+      "C74",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C96"
+    ],
+    "result": "Discussion of novelty and mechanistic context. The study is the first to identify CMV-SARS-CoV-2 cross-reactive T cells, and cross-reactivity via a public TCR toward dissimilar epitopes is rarely observed. Dual TCR expression is excluded as a mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C81, C96 regarding novelty and rarity are supported by literature context (C71-C72, C74, C81). Claim C83 excluding dual TCR is supported by TCR sequencing showing single TCR. Claims C82, C84, C86 provide mechanistic context from literature. These are appropriate contextual claims that frame the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C87",
+      "C88",
+      "C91",
+      "C92"
+    ],
+    "result": "Limitations and future directions. The study acknowledges limitations including focus on circulating T cells, small COVID-19 cohort, and need for larger studies. Speculative discussion of potential protective role of cross-reactive T cells in early infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80, C91-C92 appropriately acknowledge study limitations and call for future work. Claims C87-C88 are speculative about potential protective effects, supported by citations but not directly tested. These are appropriate caveats and future directions but do not constitute supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Methodological approach for identifying SARS-CoV-2-specific T cells. CD4+ T cells were characterized as CD154+CD137+ and CD8+ T cells as CD137+IFN-\u03b3+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 describe the methodological approach supported by flow cytometry gating strategies (Figure 1A-B, Figure 1\u2014figure supplement 1). This is standard methodology appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The TCR\u03b2 chain identified in IPS/FVS-specific T cells was previously described as IPS-specific in HLA-B*35:01.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by citation to Klarenbeek et al., 2012, providing independent validation of the TCR identification. This strengthens confidence in the peptide identification and TCR characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "CD38 and HLA-DR are established markers of T cell activation during severe COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is a methodological justification supported by citation to Sekine et al., 2020. This is appropriate use of established markers for the phenotypic analysis.",
+    "result_type": "MINOR"
+  }
+]

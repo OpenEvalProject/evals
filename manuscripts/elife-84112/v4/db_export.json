@@ -1,0 +1,1711 @@
+{
+  "submission": {
+    "id": "7d27c3a3-6530-4dac-a41d-7e495ad87a3e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:30:58.381650Z",
+    "updated_at": "2025-12-03T18:30:58.381650Z"
+  },
+  "content": [
+    {
+      "id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "submission_id": "7d27c3a3-6530-4dac-a41d-7e495ad87a3e",
+      "content_type": "manuscript",
+      "content_text": "# Tissue libraries enable rapid determination of conditions that preserve antibody labeling in cleared mouse and human tissue\n\n## Authors\n\n- Theodore J Zwang<sup>1</sup> ([ORCID: 0000-0002-6815-4482](https://orcid.org/0000-0002-6815-4482)) \u2020\n- Rachel E Bennett<sup>1</sup>\n- Maria Lysandrou<sup>1</sup>\n- Benjamin Woost<sup>1</sup>\n- Anqi Zhang<sup>4</sup> ([ORCID: 0000-0001-6121-8095](https://orcid.org/0000-0001-6121-8095))\n- Charles M Lieber<sup>5</sup>\n- Douglas S Richardson<sup>6</sup> ([ORCID: 0000-0002-3189-2190](https://orcid.org/0000-0002-3189-2190))\n- Bradley T Hyman<sup>1</sup> ([ORCID: 0000-0002-7959-9401](https://orcid.org/0000-0002-7959-9401))\n\n### Affiliations\n\n1. Department of Neurology, Massachusetts General Hospital, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n2. Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n3. Massachusetts Alzheimer\u2019s Disease Research Center Charlestown United States ([ROR:05tb9de28](https://ror.org/05tb9de28))\n4. Department of Chemical Engineering, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n5. Department of Chemistry and Chemical Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n6. Department of Molecular and Cellular Biology and Harvard Center for Biological Imaging, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDifficulty achieving complete, specific, and homogenous staining is a major bottleneck preventing the widespread use of tissue clearing techniques to image large volumes of human tissue. In this manuscript, we describe a procedure to rapidly design immunostaining protocols for antibody labeling of cleared brain tissue. We prepared libraries of 0.5\u20131.0 mm thick tissue sections that are fixed, pre-treated, and cleared via similar, but different procedures to optimize staining conditions for a panel of antibodies. Results from a library of mouse tissue correlate well with results from a similarly prepared library of human brain tissue, suggesting mouse tissue is an adequate substitute for protocol optimization. These data show that procedural differences do not influence every antibody-antigen pair in the same way, and minor changes can have deleterious effects, therefore, optimization should be conducted for each target. The approach outlined here will help guide researchers to successfully label a variety of targets, thus removing a major hurdle to accessing the rich 3D information available in large, cleared human tissue volumes.\n\n## Introduction\n\nIn recent years, there have been substantial improvements in the techniques used to visualize features of brains, organs, and whole organisms in three dimensions. One promising method, tissue clearing, involves lipid removal and refractive index matching to significantly decrease light scattering. Tissue clearing allows for light microscopy to observe the distribution of individual molecules throughout entire organs millimeters to centimeters in size (Ueda et al., 2020b; Richardson et al., 2021). This holds extraordinary promise for understanding human diseases, where the identification and characterization of abnormal structures is often an early step toward the development of clinical treatments (Kim et al., 2016). Difficulties with antibody staining and labeling is common in traditional thin tissue section histology, but is dramatically amplified in large, cleared samples. Although techniques have been developed to improve the homogeneity of staining (SWITCH; Murray et al., 2015) and increase the speed of antibody labeling in large, cleared tissue (eFlash [Yun et al., 2019], EFIC [Na et al., 2021], MDH [Dwyer et al., 2021]), these methods only work if an antibody\u2019s epitope is well preserved during the tissue preparation and clearing process. This is rarely the case and complete, specific and homogenous staining is now the most common bottleneck preventing the widespread use of tissue clearing in samples that cannot be modified to express fluorescent proteins such as human tissue. Therefore, most tissue clearing methods have been optimized for studies in rodents, and only a few recent studies apply clearing techniques to human tissue (Scardigli et al., 2021; Lai et al., 2018; Susaki et al., 2020; Matos et al., 2010; Zhao et al., 2020). Here, we present a simple optimization strategy and automated analysis routine that allows researchers to tune their immunohistochemistry (IHC) protocols for labeling protein targets in cleared and uncleared brain tissue. Further, we demonstrate that our optimized protocols can be extended from mouse to human tissue.\n\nIHC has a history of being difficult, with myriad improvements taking place over decades to allow for its current ubiquity in pathology laboratories and biomarker discovery (Matos et al., 2010). The basic concept of IHC is to use antibodies to label specific antigens in a sample, which can then be imaged to determine the antigen\u2019s distribution. Successful IHC requires four fundamentals: (1) the antibody cannot denature, (2) the epitope cannot denature, (3) the antibody must diffuse completely through the tissue, and (4) the antibody must only bind its intended target. Often researchers develop lengthy protocols that include steps thought to enable successful labeling but are not necessarily based on empirical evidence or are borrowed from others using completely different antibodies or tissues. In general, IHC protocols share several common steps: first components of the tissue must be fixed in place to preserve its structure. This is typically performed by freezing the tissue or placing it in an aldehyde containing solution like formalin. It may then be stored for long periods of time before an investigation is initiated. Next, different methods of antigen retrieval can be deployed to enhance antibody binding. The tissue may also be blocked by incubating with serum or other agents to deactivate endogenous enzymes and reduce non-specific antibody staining. Finally, when labeling and imaging thick tissue, tissue clearing protocols are required that introduce several additional chemical treatments including dehydration, hydrogel embedding, delipidation, and immersion in a solution that is refractive index matched to the processed tissue (Richardson et al., 2021; Richardson and Lichtman, 2015).\n\nIt is well understood that differences in staining quality can result from biological heterogeneity such as small differences in tissue composition, individual antibodies, their epitopes, and overall tissue structure. However, further variability can be induced by each step of an IHC protocol (Kim et al., 2016; Matos et al., 2010; Shi et al., 2011). Because of this, IHC protocols can usually be reproduced with the same tissues, antibodies, and fluorophores. Unfortunately, it is common to have difficulties extending these protocols to different antibodies or tissues. The complexity of these multi-step protocols makes it prohibitively costly and time-intensive for researchers to optimize all possible IHC conditions for their specific study. This has slowed the testing and adoption of reported improvements in IHC procedures as many researchers are forced to guess at the best protocol for their samples.\n\nExperiments with human tissue samples are essential for a complete understanding of the pathology of many diseases. However, the necessary optimization of IHC protocols described above is often not possible in human tissue due to its scarcity. Attempting to use IHC protocols optimized for different tissues or antibodies could confound results and limit the insight gained from such precious resources. Ideally, researchers could optimize protocols in a more plentiful model species such as mice and directly transfer these methods to human samples. However, it is not often clear whether IHC improvements in mice (Murray et al., 2015; Wassie et al., 2019; Park et al., 2018) would translate to better staining of human tissue. Methods that can rapidly determine optimal IHC protocols for individual antibodies and assess their applicability to tissues from different species are needed.\n\nInspired by our previous experience troubleshooting IHC in large volumes of mouse brain tissue, we developed a practical workflow to rapidly optimize IHC protocols for different antibodies. We then applied this methodology to a variety of targets in mouse and human brain tissue to understand (1) how much variation exists if IHC protocols are optimized for individual antibodies and (2) if optimized IHC protocols can be generalized between species. We compare the effect of different IHC protocols on antibodies and a small molecule DNA label, 4\u2032,6-diamidino-2-phenylindole (DAPI). We also test the influence of protocols on different antibodies raised against the same protein target and finally, explore whether IHC protocols optimized in mouse tissue can produce equally high-quality staining in human tissue. Together this work provides a method to empirically determine the optimal procedure for IHC studies in large-volume tissue, assess its generalizability, and support the use of abundant mouse tissue to optimize IHC protocols for scarce human samples.\n\n## Results\n\n### Strategy to rapidly assess the optimization of protocols\n\nOur workflow for determining an optimal IHC protocol is inspired by the success of quantitative structure-activity relationship (QSAR) modeling for drug discovery. QSAR models are used to predict the biological activities of untested drugs by first testing a library of drugs with similar but varied structures, measuring how each drug affects the activity, then creating a model that relates the structural changes to the observed activities (Muratov et al., 2020). Borrowing from this strategy and making a library of tissues that all went through similar processing steps but for a few key changes allows for us to predict the optimal staining protocol without needing to test every possible combination of conditions.\n\nThe use of large intact organs such as whole mouse brains is unnecessary and impractical for optimizing an IHC protocol. However, if the tissue sections are too thin, the impact of antibody diffusion cannot be fully appreciated and compared across protocols; whereas, if the sections are too thick, extensive incubation times are required. Through empirical testing, we found tissue sections 0.5\u20131.0 mm thick and antibody incubation times of 18\u201324 hr to be sufficient to assess the influence of our chosen conditions on IHC staining quality (Figure 1, Figure 2, Figure 3\u2014figure supplement 1), and allows dozens of protocols or multiple antibodies to be tested with tissue from a single mouse brain depending on the epitope distribution. It should be noted that these data suggest the signal when staining 24 hr and under may be limited by the depletion of antibodies on their way through the tissue, which should be considered when making comparisons of staining quality.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig1-v4.jpg)\n\n**Figure 1.:** Start with a baseline protocol (see Materials and methods). Choose conditions to test that can be separated into categories believed to influence staining quality. Prepare tissue by varying only one or two conditions from the baseline at a time. Each protocol should only vary by a single condition from at least one other protocol to allow for a complete understanding of how each change influences staining. So resulting immunohistochemistry (IHC) quality can isolate the effect of each condition change. Stored library of cleared tissues then allows for rapid antibody testing to quickly determine optimal IHC conditions for each antibody as well as protocols that allow for multiplexed IHC. We consistently found conditions in red to have exclusively negative effects on IHC or tissue integrity, so they were excluded from testing with most antibodies.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig2-v4.jpg)\n\n**Figure 2.:** Immunohistochemistry (IHC) quality comparisons can be difficult to determine by eye due to differences in fluorescence intensity and background, as well as the many ways that software can modify the visual representation of data, so we created a pipeline to quickly quantify staining quality in a way that allows rapid comparison. (a) First, a confocal or lightsheet microscope is used to image a Z-stack throughout the entire thickness of the sample. All imaging parameters are kept identical for a given antibody/fluorophore to allow for comparison between protocols. (b) Fluorescence values were normalized across the sample, then a rolling-ball algorithm was used in Imaris software to generate surfaces around fluorescent features with intensity above a threshold value. Alternatively, segmentation masks were generated using Ilastik following their pixel classifier workflow. (c) The voxels within the surface were indexed to define the array of voxels with and without staining that could then be analyzed in Matlab. (d) The staining quality was quantified and visualized by plotting the ratio of voxels with staining over the total number of voxels in a plane at that depth in the image, the average signal intensity within the segmented region, and the average noise intensity outside of the segmented region (Figure 3\u2014figure supplements 2 and 3, Figure 7\u2014figure supplements 1 and 2). A higher proportion of indexed voxels, higher signal, lower noise, and longer depth to reach half-max staining intensity all represent better staining quality. This can also be used to provide visual representation of reproducibility (Figure 3\u2014figure supplements 4\u20136). It is also possible to reduce these numbers into a figure of merit that can be quantitatively compared between conditions (Figure 3c, Figure 3\u2014figure supplement 7).\n\nUsing QSAR modeling as a guide, we selected 17 conditions to test in our proof-of-principle studies (Figure 1). These conditions were divided across four standard IHC/tissue clearing steps: fixation, blocking/unmasking, delipidation, and antibody incubation. Five conditions were later omitted, and multiple 0.5\u20131.0 mm thick tissue sections were assigned to 12 protocols to create the final tissue library (Figure 1). With the library complete, a tissue sections from each condition could be selected for further head-to-head analysis in our image analysis pipeline that outputs a quantifiable metric of quality (see below). Using these metrics, we were able to predict the optimal combination of IHC conditions for each antibody we tested from initial fixation through to final labeling. During this proof-of-principle study, we only tested high-quality antibodies that were already known to have high specificity and limited off-target binding for IHC in thin tissue slices.\n\n### Measuring IHC quality in cleared tissue\n\nTo compare the quality of IHC in the cleared tissue libraries we developed a data analysis pipeline to quickly extract the distribution of fluorescence in multiple samples and derive performance parameters. First, we used one of two different software (Imaris or Ilastik) to generate image segmentation masks. For analysis with Imaris, we isolated objects based on the intensity of fluorescence relative to nearby background (Figure 2). For analysis with Ilastik, we leveraged machine learning algorithms that allow users to classify pixels and supervise the generation of the segmentation mask (Berg et al., 2019). Either of these segmentation masks are then run through code in Matlab that extracts the signal, noise, signal-noise ratio, area of staining, and the distance into the tissue at which the staining intensity drops by half. IHC quality can then be made by comparing these features across samples. It should be noted that simply relying on depth to half-max staining does not separate the issues of free antibody penetration speed through the tissue nor the extent of antibody depletion along the way, and it is possible that conditions that reduce the antigenicity may significantly enhance the apparent penetration rate.\n\nThis analysis does not require staining of images to be perfect nor precise but requires features that can at least be separated via pixel classification. For images with unintended background staining, Ilastik can be trained to separately classify intended and unintended binding. Note that Imaris is also capable of performing similar pixel classification by integrating Labkit, which we did not compare.\n\nAfter acquiring segmentation results, turning it into an ideal figure of merit will vary depending on the antigen of interest and its distribution in tissue. For antigens that have relatively constant distribution over the depth of imaging, the area of each plane within a Z-stack that is segmented could be used as a figure of merit for staining quality across conditions. However, if the antigen distribution does not have a constant distribution, it is better to use a figure of merit that is normalized based on the area of segmentation, such as the average staining intensity at each depth plane.\n\n### Conditions that influence antibody and epitope preservation\n\nStarting from a comprehensive collection of published IHC protocols (Richardson et al., 2021; Kim et al., 2016; Scardigli et al., 2021; Richardson and Lichtman, 2015), we selected a subset of commonly varied conditions to create 12 test protocols for proof of principle. Each protocol is nearly identical, only varying by a single condition from at least one other protocol to allow for a complete understanding of how each change influences staining. The baseline protocol involved minimal processing and gentle conditions. Specifically, the tissue was fixed in 4% paraformaldehyde (PFA) for 2 days post-perfusion, embedded in hydrogel made of 4% acrylamide, delipidated in sodium dodecyl sulfate (SDS) for 1 day at 37\u00b0C, rinsed in phosphate-buffered saline (PBS) with 0.2% Triton X-100 (PBST) at 4\u00b0C, and incubated with antibodies at 4\u00b0C for 18 hr. We then created a library of tissue that was processed using small changes to this baseline protocol, so we could compare how each of these changes influenced IHC quality. This library included changes in the composition of the hydrogel (with and without 4% PFA), changes in delipidation time (1, 2, 3 days), additional steps before antibody incubation (such as unmasking with 50\u00b0C or incubation with glycine), and differential changes in antibody incubation temperature (4\u00b0C or room temperature). In addition to this library, we also examined the effects of boiling samples in citrate buffer before or after delipidation, heating to temperatures above 70\u00b0C before immunolabeling, and removal or decrease of PFA concentration in the transcardial perfusion or post-perfusion fixing step (Figure 1). However, these conditions were universally observed to negatively impact IHC or tissue integrity, so they were excluded from our final library.\n\nWe chose two antibodies commonly used in neuroscience studies of cleared volumes (Glut1 and NeuN) and performed IHC on the same tissue sections from a mouse cortex that were processed according to the 12 protocols (Figure 1, Figure 3). Each antibody was directly conjugated to a fluorophore: Glut1 to Alexa Fluor 488 and NeuN to Alexa Fluor 568. Increasing delipidation time to 2 days had a positive influence on NeuN staining, and no influence on Glut1 staining, but both showed worse IHC when increasing the delipidation time further. Incubation of tissue at 50\u00b0C for 1 hr prior to antibody incubation improved staining for Glut1 and NeuN. Glycine treatment had no significant effect on NeuN staining, but inhibited Glut1 staining. Incubating antibodies at room temperature improved NeuN staining and on Glut1 staining. Intriguingly, staining with DAPI appears insensitive to the different protocols (Figure 4). Inclusion of PFA in the hydrogel resulted in decreased IHC quality for both Glut1 and NeuN, however this significantly improved IHC of dopamine receptor 2 (Figure 4\u2014figure supplement 1). Therefore, we ascertained the optimal protocol for simultaneously staining Glut1, NeuN, and DAPI was to delipidate for 2 days, place the tissue at 50\u00b0C for 1 hr before incubating with antibodies, and incubating the antibodies at room temperature. Importantly, these same conditions would result in no staining of dopamine receptor 2 (Figure 4\u2014figure supplement 1). Instead, an IHC protocol is required to use PFA in the hydrogel step to show adequate staining of dopamine receptor 2, which can still allow for simultaneous staining of NeuN, Glut1, and DAPI if the tissue is only delipidated for 1 day and incubated with antibodies at 4\u00b0C. Together, these results show that different conditions can have opposite effects on the quality of staining and depth of antibody penetration and reinforce the importance of optimizing sample preparation conditions for each antibody.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-v4.jpg)\n\n**Figure 3.:** (a) Representative maximum intensity projection views from the top and side of 500 \u00b5m thick, 5 mm wide tissue sections. C57Bl/6J mouse isocortex was processed, stained, and imaged simultaneously with NeuN (green, left panels) and Glut1 (purple, right panels). (b) Quantitative comparison of immunohistochemistry labeling across conditions using Imaris. A rolling-ball subtraction was used to determine the area with signal-to-noise above cut-off for every image plane in the Z-stack. The proportion of indexed voxels in each plane was then divided by the maximum value across all conditions to generate a normalized staining quality score, which allows for quick visual assessment of staining quality differences with depth and between conditions. (c) Quantitative comparison of the depth at which the immunohistochemistry (IHC) staining intensity becomes half of the maximum, using segmentation results from Ilastik. Error bars represent standard error. Two-tailed t-test comparing results to baseline were represented with p<0.05 = *, p<0.01 = **, and no significance = unlabeled. N=3 for all samples.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp1-v4.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Average signal intensity of immunohistochemistry labeling with NeuN-A568 in mouse cortex tissue prepared using baseline conditions, with antibodies incubated at room temperature (left) and 4\u00b0C (right) with gentle shaking. For each time point, n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp2-v4.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Quantification of the (a) average signal intensity, (b) average background noise intensity, (c) percent of segmented area, (d) and the average corrected staining intensity versus depth from the tissue surface. Signal, noise, and corrected signal were normalized to the amount of staining in each imaging plane by dividing the percent segmented area in that plane. Immunohistochemistry labeling was conducted with NeuN-A568 in mouse cleared tissue library with three independently prepared sections from different mice for each condition.For each condition n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp3-v4.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Quantification of the (a) average signal intensity, (b) average background noise intensity, (c) percent of segmented area, (d) and the average corrected staining intensity versus depth from the tissue surface. Signal, noise, and corrected signal were normalized to the amount of staining in each imaging plane by dividing the percent segmented area in that plane. Immunohistochemistry labeling was conducted with Glut1-A568 in mouse cleared tissue library with three independently prepared sections from different mice for each condition.For each condition n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp4-v4.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Quantitative comparison of immunohistochemistry labeling across conditions. N=3 independently prepared tissue sections from different mice for each condition. All conditions were tested with one section each from the same three mice. (Left) For the Imaris analysis, a rolling-ball subtraction was used to determine the area with signal-to-noise above cut-off for every image plane in the Z-stack. (Right) For the Ilastik analysis, the staining was segmented using their pixel classifier workflow. In short, a paintbrush was used to draw over the signal and background to help train the classifier on how to segment each image. Real-time segmentation results were then improved using a minimum of 600 image planes from six different staining conditions that reflect the distribution of staining quality in the entire set. All images were then batch processed through the trained pixel classifier.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp5-v4.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Quantitative comparison of immunohistochemistry labeling across conditions. N=3 independently prepared tissue sections from different mice for each condition. All conditions were tested with one section each from the same three mice, with each condition having every condition having. (Left) For the Imaris analysis, a rolling-ball subtraction was used to determine the area with signal-to-noise above cut-off for every image plane in the Z-stack. (Right) For the Ilastik analysis, the staining was segmented using their pixel classifier workflow. In short, a paintbrush was used to draw over the signal and background to help train the classifier on how to segment each image. Real-time segmentation results were then improved using a minimum of 600 image planes from six different staining conditions that reflect the distribution of staining quality in the entire set. All images were then batch processed through the trained pixel classifier.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp6-v4.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Segmentation results from ilastik were used to determine the signal within the segmented area as well as the noise outside of the segmented area. The noise values were subtracted from the signal value to visually represent the staining intensity value over noise. These change with depth in a notably different way than the segmented area (Figure 3\u2014figure supplements 4 and 5) which suggests that conditions differentially influence the amount of staining and the intensity of staining.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp7-v4.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Quantitative comparison of immunohistochemistry labeling across conditions using Imaris analysis. A rolling-ball subtraction was used to determine the area with signal-to-noise above cut-off for every image plane in the Z-stack. The total area in each plane with fluorescence above the threshold value was then summed to reduce the dimensionality of comparison and allow for a comparison between conditions with a single number as the figure of merit. This comparison in staining quality is only appropriate when the target antigen is consistently distributed throughout the tissue, which may not always be the case. For each condition n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp8-v4.jpg)\n\n**Figure 3\u2014figure supplement 8.:** Average signal intensity of immunohistochemistry labeling with NeuN-A568 in ~500 \u00b5m thick mouse cortex tissue prepared using optimized conditions and incubated with antibodies for 3 days. n=6 independently prepared longitudinal sections from three different mice. Error bars represent standard error of the mean. Each section was imaged at the hippocampus (blue), posterior cortex (gray), and anterior cortex (orange).\n\n![Figure 3\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig3-figsupp9-v4.jpg)\n\n**Figure 3\u2014figure supplement 9.:** Average signal intensity of immunohistochemistry labeling with Glut1-A488 in ~500 \u00b5m thick mouse cortex tissue prepared using optimized conditions and incubated with antibodies for 3 days. n=6 independently prepared longitudinal sections from three different mice.Error bars represent standard error of the mean. Each section was imaged at the hippocampus (blue), posterior cortex (gray), and anterior cortex (orange).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig4-v4.jpg)\n\n**Figure 4.:** Representative maximum intensity projection views from the top and side of 500 \u00b5m thick, 5 mm wide tissue sections of C57Bl/6J mouse isocortex stained with DAPI.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig4-figsupp1-v4.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Representative maximum intensity projection views from the top and side of 1 mm thick sagittal slices of C57Bl/6J mouse brain. Dopamine receptor 2 (green) shows significantly better fluorescent labeling in both the cortex (CTX) and hippocampus (HIPP) when the tissue is prepared with paraformaldehyde (PFA) in hydrogel.\n\n### Comparison of IHC conditions for different antibodies directed against a single protein\n\nA common strategy following unsuccessful IHC in tissue is to test antibodies from different suppliers or antibodies raised against different epitopes in the desired target. To better understand whether optimal IHC protocols may be shared for antibodies against the same target, we compared the staining of a monoclonal GFAP directly conjugated to a fluorophore and a polyclonal GFAP that was detected with a fluorophore conjugated to a secondary antibody. To enable a direct comparison, both sets of antibodies were used to label the same tissue sections. Immunolabeling GFAP with different antibodies shows that the trends in staining quality are similar for both antibodies across all conditions (Figure 5). This suggests that conditions that enhance GFAP stability and prevent denaturation of its epitopes have a positive effect on all GFAP antibodies provided the antibodies are of high quality, have high specificity and limited off-target binding. This also suggests that IHC of GFAP with these antibodies is limited more by denaturation of the epitope than the antibody itself. We found that both GFAP antibodies successfully labeled their target under similar conditions (Figure 5), and both showed similar conditions where no labeling occurred (Figure 5\u2014figure supplement 1). Some differences in labeling quality are apparent between antibodies, however it is not clear whether the differences in labeling quality are due to the conjugation of the fluorophore or other differences between the monoclonal and polyclonal antibodies. As this approach also reduces the length of the staining protocol, it is recommended to use primary antibodies directly conjugated to fluorophores whenever possible.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig5-v4.jpg)\n\n**Figure 5.:** Representative maximum intensity projection views from the top and side of 500 \u00b5m thick, 5 mm wide tissue sections of C57Bl/6J mouse isocortex stained with two different antibodies for GFAP. Monoclonal GA5 conjugated to Alexa Fluor 488 (green) was stained and imaged in the same tissue as a polyclonal antibody using a goat anti-rabbit secondary conjugated to Alexa Fluor 647 (red). Other protocols show no significant labeling (Figure 5\u2014figure supplement 1).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig5-figsupp1-v4.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative maximum intensity projection views from the top and side of 500 \u00b5m thick, 5 mm wide tissue sections of C57Bl/6J mouse isocortex stained with two different antibodies for GFAP. Monoclonal GA5 conjugated to Alexa Fluor 488 (green) was stained and imaged in the same tissue as a polyclonal antibody using a goat anti-rabbit secondary conjugated to Alexa Fluor 647 (red).\n\nMultiple antibodies that recognize tau protein were also compared including AT8 anti-tau, HT7 anti-tau, and DAKO total tau antibodies. Tau is a microtubule associated protein that is primarily expressed by neurons and is the main component of neurofibrillary tangles in Alzheimer\u2019s disease (AD). We chose three commonly used antibodies against tau and tested them first in tissue from a transgenic mouse model, hTau (Andorfer et al., 2003), that expresses normal human tau isoforms.\n\nThere was significantly more variability between tau antibodies than seen with GFAP antibodies, primarily due to the inability for DAKO total tau antibody to effectively penetrate beyond the tissue\u2019s surface (Figure 6, Figure 6\u2014figure supplement 1). However, as the DAKO total tau antibody was not directly conjugated to a fluorophore, we cannot exclude the possibility that the inability to image DAKO-stained tau beyond the surface may be an effect of poor penetration and diffusion of the secondary antibody. Importantly, when used in traditional IHC in microtome slices of human tissue, all three of these antibodies labeled similar structures (Figure 6\u2014figure supplement 2). As expected, similar trends in optimal IHC protocols were observed for AT8 and HT7 anti-tau antibodies in mouse tissue expressing human tau (Figure 6\u2014figure supplement 3) and showed no labeling in a negative control; mice without tau expression (Figure 6\u2014figure supplement 4).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig6-v4.jpg)\n\n**Figure 6.:** Representative maximum intensity projection views from the top and side of 500 \u00b5m thick, 5 mm wide tissue sections. Other protocols showed worse staining quality (Figure 6\u2014figure supplement 2).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig6-figsupp1-v4.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Representative maximum intensity projection views from the top and side of 500 \u00b5m thick, 5 mm wide tissue sections from frozen human tissue samples.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig6-figsupp2-v4.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Human tissue was stained with Dako, AT8, and HT7 to confirm the presence of their target tau prior to testing large-volume immunohistochemistry (IHC) conditions.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig6-figsupp3-v4.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Representative maximum intensity projection views from the top of 500 \u00b5m thick, 5 mm wide tissue sections of HTau mouse isocortex AT8 (blue) and HT7 (red) show labeling of tau in mice expressing human tau in the same conditions that show staining in human tissue.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig6-figsupp4-v4.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Representative maximum intensity projection views from the top of 500 \u00b5m thick, 5 mm wide tissue sections of Htau knockout mouse isocortex. AT8 (blue) and HT7 (red) show no labeling of tau in knockout mice using the same baseline conditions where they show labeling in Htau mice expressing human tau.\n\n### Mouse brain tissue as a model system for optimizing IHC in cleared human tissue\n\nOptimizing IHC in human tissue is especially difficult due to the limited amount of tissue available for experimentation. Therefore, we performed IHC optimization in both mouse and human brain tissue for individual antibodies and analyzed their similarities. Surprisingly, our testing of IHC protocols for NeuN and Glut1 in human tissue showed similar changes in staining quality and depth when compared to mouse tissue (Figure 7, Figure 7\u2014figure supplements 1 and 2). Both human and mouse tissue showed decreases in staining quality with increasing clearing time and fixation with PFA. Room temperature antibody incubation as well as epitope unmasking at 50\u00b0C for 1 hr prior to antibody incubation improved Glut1 and NeuN staining in both mouse and human tissue. It is also worth noting that this NeuN antibody appears to accumulate off-target in the human tissue, which is not observed in the mouse tissue.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig7-v4.jpg)\n\n**Figure 7.:** (a) Representative maximum intensity projection views from the top and side of 500 \u00b5m thick, 5 mm wide tissue sections. Tissue was processed, stained, and imaged simultaneously with NeuN (green, left panels) and Glut1 (purple, right panels). (b) Quantitative comparison of immunohistochemistry labeling across conditions using Imaris. A rolling-ball subtraction was used to determine the area with signal-to-noise above cut-off for every image plane in the Z-stack. The area in each plane was then divided by the maximum value across all conditions to provide a staining quality score, which allows for quick visual assessment of staining quality differences with depth and between conditions. (c) Quantitative comparison of the depth at which the immunohistochemistry (IHC) staining intensity becomes half of the maximum, using segmentation results from Ilastik. Error bars represent standard error. Two-tailed t-test comparing results to baseline were represented with p<0.05 = *, p<0.01 = **, and no significance = unlabeled. N=3 for all samples.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig7-figsupp1-v4.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Quantification of the (a) average signal intensity, (b) average background noise intensity, (c) percent of segmented area, (d) and the average corrected staining intensity versus depth from the tissue surface. Signal, noise, and corrected signal were normalized to the amount of staining in each imaging plane by dividing the percent segmented area in that plane. Immunohistochemistry labeling was conducted with NeuN-A568 in human cleared tissue library with three independently prepared sections from different donors for each condition. For each condition n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig7-figsupp2-v4.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Quantification of the (a) average signal intensity, (b) average background noise intensity, (c) percent of segmented area, (d) and the average corrected staining intensity versus depth from the tissue surface. Signal, noise, and corrected signal were normalized to the amount of staining in each imaging plane by dividing the percent segmented area in that plane. Immunohistochemistry labeling was conducted with Glut1-A488 in human cleared tissue library with three independently prepared sections from different donors for each condition. For each condition n=3 independently prepared sections from different mice. Error bars represent standard error of the mean.\n\nThe optimal protocol that allows NeuN, Glut1, and AT8-tau staining was then determined by finding the conditions that allow for the simultaneous IHC of all three antibodies in a single tissue section, and then finding the combination of conditions among those that maximizing the staining quality. It is worth noting that this was not necessarily the best protocol for each individual antibody. It is more important to have adequate staining of each epitope than to have fantastic staining of one at the cost of another. As described above, we determined the optimal protocol for multiplexed labeling by combining the protocol changes that quantitatively improve the staining quality, defined by half-max depth, for each antibody above the baseline protocol and do not significantly degrade performance of other antibodies. For NeuN, Glut1, and AT8 antibodies this protocol involves clearing for 2 days, using 50\u00b0C to unmask epitopes, and incubation of antibodies at room temperature. The optimal protocol was then validated in 1 mm thick pieces of human brain tissue, approximately 100-fold thicker than typical paraffin embedded sections. Antibodies for tau in mice expressing human tau show similar variability across conditions for the labeling of labeling tau in human tissue (Figure 6). We concurrently incubated the human tissue with three antibodies conjugated to three different fluorophores (NeuN-A568, Glut1-A488, and AT8-A647). These antibodies were used to stain tissue that was first embedded in a 4% acrylamide hydrogel, cleared for 2 days and thoroughly washed. The antibodies were incubated with the tissue for 14 days to ensure complete staining through the whole sample in both humans (Figure 8) and mice (Figure 8\u2014figure supplement 1). It should be noted that we found 3 days of antibody incubation sufficient for consistent and thorough staining across brain regions in 500 \u00b5m mouse tissue (Figure 3\u2014figure supplements 8 and 9), and there were no notable downsides to leaving the antibody incubating longer. By carefully following the optimal IHC protocol determined in this work, we were able to achieve complete penetration and simultaneous labeling of the 1 mm thick human tissue with all three antibodies. Both the Glut1-labeled vasculature and AT8-labeled tau are extremely well defined and could be easily quantitated. The NeuN reflects the same quality that it had during the troubleshooting but does not appear to be an ideal antibody for assessment of human neurons under these conditions.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig8-v4.jpg)\n\n**Figure 8.:** The tissue was crosslinked without paraformaldehyde (PFA), cleared for 2 days, rinsed, then the antibodies NeuN-A568 (red), Glut1-A488 (green), and AT8-A647 (white) were incubated with the tissue for 14 days. (a) Top-down view of fluorescence from 1 mm section human brain. (b) Side view of each antibody fluorescence through entire section depth. (c) A 200 \u00b5m virtual section of human tissue, from a 1 mm thick sample. (d) Zoomed-in regions from the full images show that AT8-labeled tau tangles are present at multiple locations throughout the human brain sections.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84112/elife-84112-fig8-figsupp1-v4.jpg)\n\n**Figure 8\u2014figure supplement 1.:** The tissue was crosslinked without paraformaldehyde (PFA), cleared for 2 days, rinsed, then the antibodies NeuN-A568 (red), Glut1-A488 (green), and AT8-A647 (blue) were incubated with the tissue for 14 days. A small section of the total stained tissue was imaged and shows complete staining throughout the entire thickness of the sample.\n\n## Discussion\n\nAlthough it is well known that alterations to IHC protocols can have detrimental effects to the staining results, many researchers accept the dogma that a universal IHC protocol exists that is robust enough to support labeling with a wide range of antibodies. When a subset of antibodies fail in a multi-target IHC protocol, often the antibodies themselves are blamed. Here, we have found that small changes to an IHC protocol can have profound effects on labeling efficiency. Rather than the antibody, our data suggests that poor staining is most often due to denaturation or blockage of the epitope. These procedural differences do not influence every antibody-antigen pair in the same way, so the optimal protocols for IHC should be determined for each individual target. Using combinations of antibodies in the same tissue may require using a protocol with conditions that are acceptable for all antibodies, rather than conditions that are optimal for each individual antibody. Unfortunately, as we found with the dopamine receptor 2 (Figure 4\u2014figure supplement 1) and GFAP (Figure 5, Figure 5\u2014figure supplement 1) IHC, a protocol may not exist to allow for both targets to be effectively stained simultaneously. However, the methods described here allow a researcher to rapidly determine (1) an optimal protocol for single antibody staining, (2) an acceptable protocol that allows simultaneous multi-antibody staining, or (3) that cyclical single-antibody staining and stripping will be required to match conditions necessary for each antibody.\n\nImportantly, temperature, fixation conditions, and the other conditions investigated here have greater influence, the larger the tissue volume becomes. For many of the tested protocols, the difference in staining is not apparent at the surface which suggests that the use of tissue sections that are too thin does not allow for appropriate optimization. Many of the protocols we tested for NeuN or Glut1 produce some degree of labeling at the surface of the sample that would have appeared no different between samples thinner than 50 \u00b5m, despite obvious differences in staining quality at depth.\n\nMost surprising to us was that mouse tissue is a good model system for determining large-volume IHC protocols for human samples. However, these results show that minor procedural changes can disrupt the quality of staining, so it is important that tissue preparations are identical.\n\nIHC protocols in large-volume tissue that requires clearing can take weeks or months to complete depending on the initial state and size of the tissue (Susaki et al., 2020; Ueda et al., 2020a). Previous studies have suggested that human tissue requires processing for longer than comparable-sized rodent tissue. Our results suggest that this is not due to intrinsic differences between human and mouse brain tissue, but rather a result of differences in the state of the tissue when clearing experiments are started. Human tissue is often stored in fixative for extended periods of time and, as our data shows, even a small increase in PFA exposure can have significant influence on IHC quality and depth. To our surprise, tissue that was delipidated for 3 days showed less rapid IHC penetration than tissue that was cleared for 2 days in all cases except for DAPI labeling. This suggests that samples can quickly become over-cleared and lose antigenicity which may extend the amount of time previously reported as necessary for IHC. It follows that future experiments should explore labeling tissue with antibodies with even shorter or milder fixation conditions and, where possible, carried out prior to any tissue clearing procedures.\n\nOur methodology enables rapid optimization of IHC protocols, including protocols that require tissue clearing and provides a simple path to imaging tissue blocks that are 100 times thicker than conventional tissue slices. First, a library of cleared tissue samples that were each processed using different conditions is generated that can be stored for future experiments. Then, optimal IHC conditions are determined for new antibodies within a few days (approximately 24 hr for staining, 24 hr for rinsing, 12\u201324 hr for refractive index matching/clearing, 3 hr to image the samples, and a similar amount of time to quantify and compare the staining quality). The variability in staining quality across protocols suggests that researchers should use this process to test how changes may affect antibodies or epitopes that they plan to study before committing many weeks or months to a procedure in larger volumes. Additionally, these results speak to the necessity for scientists to publish both conditions that improve and degrade specific antibody performance. Understanding which procedures and antibodies are appropriate for a given sample will be essential for tissue clearing techniques to gain widespread use in human tissue. We are optimistic that our optimization process will allow researchers use these techniques to successfully label cleared human tissue, which will improve the adoption of this technique and the ability to unlock new insight into human pathology and neuroanatomy.\n\n## Materials and methods\n\n### Human tissue samples\n\nHuman tissue was provided by the Massachusetts Alzheimer\u2019s Disease Research Center (ADRC) with approval from the Mass General Brigham IRB (1999P009556). Three human participants with AD were selected from the Massachusetts Alzheimer\u2019s Disease Research Center. Sex, age at death, Braak staging, which hemisphere, and comorbidities are listed in Supplementary file 1. Autopsy tissue from human brains were collected at Massachusetts General Hospital, with informed consent of patients or their relatives and approval of local institutional review boards. Human tissue was received unfrozen immediately after autopsy and fixed (sample 2620) or frozen immediately after autopsy then thawed prior to fixation (samples 1581 and 1762). Tissue was placed in 4% PFA for 48 hr at 4\u00b0C, transferred to PBS for 24 hr at 4\u00b0C before slicing. This tissue was treated identically to the mouse tissue described below in the tissue slicing procedure and onward.\n\n### Mice strains\n\nMale and female C57Bl/6J mice (Jackson Laboratory 000664) were used for most tissue experiments. For tissue to test IHC of tau, 10- to 12-month-old male hTau mice bred from a local colony (B6.Cg-Mapttm1(EGFP)Klt Tg(MAPT)8cPdav/J, Jackson Laboratory 005491) that express only human tau isoforms were used. hTau knockout mice bred from a local colony (Mapttm1(EGFP)Klt/J, Jackson Laboratory 004779) were used as controls for tau IHC experiments. Mouse experiments were performed with approval of local institutional review boards (IACUC protocol # 2019N000026).\n\n### Perfusion\n\nMice were transcardially perfused with ice-cold 40 ml PBS, followed by 40 ml 4% PFA (Electron Microscopy Sciences). Brains were removed from the cranium and placed in 4% PFA for 48 hr at 4\u00b0C. Brains were then transferred to PBS for 24 hr at 4\u00b0C before slicing.\n\n### Tissue slicing\n\nBrains were embedded in 4% agarose hydrogel. To do this, extracted brains were placed individually in a small Petri dish and let dry slightly. The agarose solution was dissolved by boiling in a microwave, then left on the counter to cool before pouring. Agarose was poured to completely cover the top of the brain, which allows it to provide a solid support to prevent deformation during cutting. A block of agarose containing the brain was placed in a vibratome (VT1000S vibrating blade microtome, Leica, Wetzlar, Germany) then cut into 500 or 1000 \u00b5m coronal or sagittal slices. Each slice was then removed from the agarose through gentle manipulation with blunt forceps or paintbrushes before crosslinking.\n\n### Tissue hydrogel crosslinking\n\nEach slice was incubated with a hydrogel crosslinking solution for 1 day at 4\u00b0C to let the molecules diffuse through the tissue. Solutions should be kept cold before and after the addition of VA-044 to prevent premature initiation of polymerization. Different crosslinking solutions were used to determine the effect of including PFA on IHC. Crosslinking solution 1: PBS with 4% (wt/vol) acrylamide (Sigma-Aldrich, St Louis, MO) and 0.25% (wt/vol) VA-044 thermal polymerization initiator (Thermo Fisher Scientific, Pittsburgh, PA). Crosslinking solution 2: PBS with 4% (wt/vol) acrylamide, 0.25% (wt/vol) VA-044 thermal polymerization initiator, and 4% PFA. After incubation with the crosslinking solution for 1 day, the tissue was left in solution and placed in vacuum at 37\u00b0C for 3 hr. After polymerization with X-CLARITY polymerization system (Logos Biosystems, South Korea), the slices were rinsed with 50 ml PBS three times over 3 hr. Each slice was then cut into small pieces with width and length at least twice the thickness. This was done to increase the number of conditions that could be tested with small amounts of tissue.\n\n### Delipidation\n\nAfter hydrogel crosslinking, the tissue was placed in a delipidation solution (SDS 200 mM, sodium sulfite 20 mM, sodium borate 20 mM, sodium hydroxide to pH 8.5\u20139, filtered if necessary) at 37\u00b0C for different amounts of time (1, 2, or 3 days), to determine the effect of delipidation in IHC. After delipidation, the brain slices were rinsed with 50 ml PBST (PBS with 0.2% Triton X-100, Thermo Fisher Scientific) five times over 1 day.\n\n### Pre-IHC tissue processing\n\nDifferent conditions were tested at this step to determine their influence on IHC. Each tissue section was tested using only one of the following conditions. Baseline: Tissue was left at 4\u00b0C in PBST. 50\u00b0C Condition: Tissue was heated to 50\u00b0C for 1 hr in PBST. Glycine: Tissue was incubated with 0.1 M glycine at 4\u00b0C for 12\u201318 hr. Glycerol: Tissue was placed in a low osmolarity solution of 80% glycerol/20% water for 12\u201318 hr. Blocking: Tissue was placed in 5% BSA in PBS for 12\u201318 hr.\n\n### Storage of tissue library\n\nThe tissue library was then used immediately or stored at 4\u00b0C in PBS with 0.02% (wt/vol) sodium azide. Mouse and human tissue was processed following all of the steps above and then used up to 3 months later. Additional mouse and human tissue was stored following delipidation, then successfully used up to 6 months later by resuming from the pre-IHC tissue processing state. IHC conditions for a given antibody were always compared using batches of tissue that were stored for the same amount of time.\n\n### Immunohistochemistry\n\nEach brain slice was placed in a 2 ml Eppendorf tube (or similar vessel) that could hold the slice so its large, flat sides could be exposed to solution. PBST was added to just cover the top of the samples (~300 \u00b5l). One to 5 \u00b5l of stock antibody solution was added, depending on the concentration of the stock. The final concentration of each antibody in solution was 5 \u00b5g/ml. Fluorophores or host species were chosen so multiple different antibodies could be tested at the same time in a single slice of tissue. The tissue was then incubated with the antibodies at 4\u00b0C or room temperature for 18 hr. The tissue was then rinsed in PBST 3\u00d750 ml overnight (18\u201324 hr) at room temperature. If using unconjugated primary antibodies, the secondary antibodies were then added to give a final concentration of 5 \u00b5g/ml and incubated for 48 hr at 4\u00b0C. The tissue was then rinsed in PBST 3\u00d750 ml overnight at room temperature.\n\n### IHC of human microtome sections\n\nPrior to preparation of cleared tissue volumes, fresh/frozen human samples were tested for the presence of AT8, HT7, and DAKO. Microtome sections were fixed in 4% PFA for 15 min, rinsed in Tris-buffered saline (TBS) three times, then blocked in TBS with 5% bovine serum albumin. Primary antibodies were incubated at a concentration of 1:500 overnight. Tissue was rinsed in TBS 3\u00d7, then incubated in secondaries at room temperature for 60 min, and rinsed in TBS 3\u00d7. Immumount was then used to seal the tissue prior to imaging.\n\n### Refractive index matching\n\nThe samples were incubated with 80% glycerol, 15% DI water, 5% PBS (RI-matching solution) for at least 3 hr at room temperature with gentle shaking. The RI-matching solution was then replaced with fresh solution and left to incubate for at least 3 more hr before imaging. Samples were stable stored in this solution at room temperature and could be re-imaged for at least 3 months.\n\n### Imaging\n\nSamples were imaged using Olympus Inverted Confocal FV3000 with a 10\u00d7 objective except for samples using dopamine receptor antibodies which were imaged using the Zeiss Lightsheet Z.1. Image Z-stacks were then reconstructed and visualized using Imaris microscopy image analysis software.\n\n### Post-imaging analysis\n\nPrior to analysis, images were assigned a random number so the analyzing scientist was blind to tissue clearing conditions but still aware of the antibodies used in the tissue, which was necessary to identify staining.\n\n### Analysis with Imaris\n\nImaris software was used to assess the staining quality score. First, the distribution of fluorescence values across all slices in the Z-stack were normalized. Then, a rolling-ball algorithm was applied to define the edges of fluorescent shapes with signal intensity greater than background by a threshold value. The area within each slice of a Z-stack that contained staining above this threshold was then divided by the maximum across all tissue stained with that fluorophore to determine the staining quality throughout the tissue. This metric was only applied to stains like NeuN or Glut1 in the cortex where we can make the assumption that there is a uniform and consistent distribution of these cells across sections. All samples that were imaged as part of the library described in Figure 1 were included in this study, with at least three independent samples per condition to determine reproducibility.\n\n### Analysis with Ilastik\n\nRaw data was converted to HDF5 format using ilastik\u2019s ImageJ plugin plus custom macro to batch convert. The staining was then segmented using their pixel classifier workflow (Berg et al., 2019). In short, a paintbrush was used to draw over the signal and background to help train the classifier on how to segment each image. Real-time segmentation results were then improved using a minimum of 600 image planes from six different staining conditions that reflect the distribution of staining quality in the entire set. All images were then batch processed through the trained pixel classifier and exported as multipage tiff.\n\n### Post-image segmentation analysis in Matlab\n\nThe image segmentation output from either Imaris or Matlab was saved as a single-channel multipage Tiff and placed into a folder, and all the raw images were saved as a single-channel multipage Tiff and placed into a different folder. Image conversion was done using ImageJ macros. Quantification and generation of data for plotting can then be done by specifying the data path, ensuring the Matlab code is on the path, then running the code. The main code \u2018QuantifyIHC.mat\u2019 should be run first, which goes through the files in each folder in order and determines the segmentation area, staining within the segmentation, and noise outside of the segmentation. Next, running the \u2018FindHalfHax.mat\u2019 code will find the starting plane for plotting, the half-max depth, place all data for plotting into arrays, allow for the re-ordering of blinded data, and plotting of the heatmaps.\n\n### Code availability\n\nAll Matlab code and ImageJ macros used to quantify data can be accessed at https://github.com/tjzwang/IHC, (copy archived at swh:1:rev:64acafda08ebdda1021edfe47e3d328b21218aa6; Zwang, 2022).\n",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "8909d440-f69d-4e7d-be50-e9864dda5bc0",
+      "submission_id": "7d27c3a3-6530-4dac-a41d-7e495ad87a3e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Albert Cardona, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84112.sa0](https://doi.org/10.7554/eLife.84112.sa0)\n\nThis valuable Tools and Resources paper presents a solid workflow for testing and comparing variations in tissue clearing, antigen retrieval, and antibody staining methods using thick slices of tissue. Though staining results vary sensitively with processing conditions, results from screening conditions in mouse brain tissue can be carried over to staining in human brain tissue. This solid story will be of broad interest to those carrying out immunohistochemistry experiments in human tissue samples.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Albert Cardona, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84112.sa1](https://doi.org/10.7554/eLife.84112.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Tissue libraries enable rapid determination of conditions that preserve antibody labeling in cleared mouse and human tissue\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife at this stage.\n\nSpecifically, the reviewers noted and detailed a lack of clarity in key points of the protocol, and a rather large variability in the staining outcomes. Additionally, the reviewers were concerned about a few key assumptions regarding the properties of the subset of antibodies tested, and premature generalization of the results from analysis of these antibodies.\n\nOverall, the work has a lot of potential, and we encourage resubmission of the story when the reviewer comments can be adequately addressed.\n\nThe complete and detailed reviewer evaluations are below.\n\nReviewer #1 (Recommendations for the authors):\n\nImmunohistochemistry (IHC) encompasses a complex set of methods with many possible variations on conditions for tissue fixation, clearing, antigen retrieval, blocking, and staining. Choices of these conditions that are optimized for one antibody/target pair often do not generalize to others, or to other tissue types. As high throughput microscopy (particularly lightsheet microscopy) and clearing methods allow for imaging thicker blocks of tissue, these problems are increasingly a limiting factor in experimental studies. A more systematic understanding of how these various aspects of IHC methods choices should be made is of great interest. Optimizing IHC conditions for a given protein target in a given tissue is currently somewhat of an art. A more systematic approach to carrying out this optimization is also potentially of great interest. This would be particularly helpful for human tissue, as it is too precious to routinely test many IHC method variants.\n\nThe authors set out to create a streamlined, standardized tissue processing and image analysis workflow for comparing different tissue preparations in terms of IHC performance. They create a library of mouse brain tissue specimens processed with several variants of each processing step including fixation, clearing, and antigen retrieval. They vary only one parameter at a time to facilitate direct comparison between conditions. They set up a data analysis pipeline that is extremely simple and easy to use but probably underpowered for comparing quantitatively between conditions because it keeps only a signal mask and discards signal intensity information. It is also not clear how the pipeline should be modified to accommodate targets with different types of staining pattern. The results are presented as a 1D heatmap that varies with depth in the specimen, rather than a simple line plot, making it difficult to compare quantitatively between conditions.\n\nEach of 12 process variants is carried out for two antibodies on three replicate specimens to assess repeatability. The authors do not discuss this experiment in detail, but there is high variability between replicates. For example, in Figure S1, the 2 days cleared case has fairly high signal in two replicates and almost none in the middle one. The staining solutions were apparently also not well mixed, as the antibody signals on the two sides of each specimen are very different in all cases, and the amount of difference between the two sides is also highly varying between specimens. From Figure 1, it is also clear that the signal varies across each specimen within the imaging plane. In this comparison of 12 conditions, one result pops out: incubating the antibodies at room temperature (as opposed to the default of 4oC) improves penetration. This effect is dramatic for NeuN. It is probably also present for Glut1, although it is necessary to look at Figure S2, showing all three replicates, to see this clearly. Every other method variant appears to result in worse performance except that in the case of 2 day clearing with Glut1 staining, one replicate has a particularly high signal area (Figure S2).\n\nThey then test two antibodies against GFAP and show that varying processing conditions affects both antibodies similarly, though they do not include any quantification. In contrast, they find that two antibodies against tau do vary differently with processing conditions, but again without quantification. Next, they carry out the same screen in human brain tissue that had previously been done in mouse brain tissue in order to assess the suitability of mouse tissue as a proxy for IHC quality in human tissue. The trends of IHC quality as a function of method variant appear to be qualitatively preserved between mouse and human. They finally show that three antibodies (primaries directly conjugated with fluorophores) against Glut1, tau, and NeuN fully penetrate through a 1 mm slice of human brain tissue after incubating for 14 days.\n\nThe goal of putting IHC on a more quantitative footing is an admirable and timely one, but the approach presented here requires some more work to deliver on this substantial promise.\n\nTissue library: Tissue thickness and staining time choices should be justified more carefully. Of particular concern is the antibody staining time, as the optimal time depends strongly on the temperature of incubation. Staining should be quantified at several time points to determine the extent of saturation at the tissue surface. The assumption that antigens have a \"relatively constant distribution with the depth of imaging\" should also be supported with data. The same goes for lateral variation. Variation between replicates also would ideally be reduced. From the methods, it seems as though the antibody is simply added to the staining buffer with the tissue, which might indicate there is insufficient mixing before and during antibody incubation.\n\nImage analysis: A more sophisticated but still highly user-friendly segmentation strategy such as the Ilastik software package might be a more reliable and versatile choice for analyzing image data. Furthermore, the signal intensity distribution within the masked signal area can be extracted (e.g. in Matlab) to quantitatively compare processing conditions, in addition to the area occupied by the mask as used here. The area outside the mask could potentially be treated as a background segment, whose intensity distribution can also be quantified. This way, quantitative measures of both signal intensity and background staining levels could be used for a more full comparison between method variants. The results should be viewed as a 1D line plot for more quantitative comparison between conditions. Finally, this lineplot could be used to measure derived performance parameters such as the distance into the tissue at which the staining intensity drops by half.\n\nThese improvements in quantitation are necessary to draw strong conclusions from any further experiments, but with them this work stands to make a strong contribution to the field.\n\nReviewer #2 (Recommendations for the authors):\n\nThis work presents a systematic approach to evaluation and optimization of antibody labeling in cleared human brain tissue. The authors outline the problems very clearly and present strategies to solve them. First, libraries of tissue prepared using different protocols are generated to easily test the performance of different antibodies and different staining conditions. Importantly, only one condition at a time is varied, which allows to evaluate the contribution of individual variables to the final staining quality. Second, a strategy for finding the optimal conditions for simultaneous staining with several different antibodies is outlined. And third and very important results is that mouse tissue can be used for optimization of antibody labeling of human tissue, thus allowing efficient use of human tissue which is a scarce and very valuable resource.\n\nStrengths\n\nAntibody labeling of tissues, and especially large volume cleared tissues involves a multitude of steps and reagents. Variations in any of the tissue preparation or immunolabeling steps can affect antibody performance and finding the optimal conditions can be a very tedious process. This paper provides clear examples of how much variability there can be even when using the same antibody on the same tissue prepared in different ways or stained under different conditions. It gives a clear solution of how this problem can be addressed by using libraries of tissues prepared by varying a single condition in each instance.\n\nThe presented approach results in a huge saving of time as it can be completed much faster (several days) compared to the complete immunolabeling protocol for large volume cleared tissue which can take several weeks.\n\nThe demonstration that mouse tissue can be used for optimization of staining conditions for human tissue is very important, allowing the best use of human tissue.\n\nWeaknesses\n\nResults from a small number of antibodies are extrapolated to apply to all antibodies in general. For example, the results from the comparison between 2 different GFAP antibodies, showing that the antibody conjugated to a fluorophore performs better that the antibody that is not conjugated, is used to generalize that primary antibodies directly conjugated to a fluorophore are preferrable to use compared to antibodies that are visualized using indirect immunolabeling with a secondary antibody. Even when considering the 2 GFAP antibodies this conclusion cannot be made, because it is not clear whether the difference in performance is due to the primary antibodies themselves (monoclonal vs. polyclonal) or to the method of their visualization (direct vs indirect).\n\nThe authors conclude that \"IHC is limited more by denaturation of the epitope than the antibody itself\". This conclusion is based on the experiments that show that varying the conditions of tissue preparation and staining can dramatically change antibody performance from no label to excellent label. However, the authors do not take into account that they are using antibodies that have already been shown to work reasonably well for immunolabeling.\n\nImportant methodological information is missing in some instances, for example how was the human tissue fixed or how are the tissue libraries stored.\n\nRecommendations in order of appearance in the manuscript:\n\nIntroduction: It is very well written! It is important to specify here, as done further below in the paper (in Comparison of IHC conditions for different antibodies directed against a single protein) that the proposed strategies apply when \"the antibodies are of high quality, have high specificity and limited off-target binding\".\n\nResults, Measuring IHC quality in cleared tissue: It is unclear how the threshold was determined. Another concern is that this \"measure of IHC quality\" is essentially a measure of what fraction of the tissue is labeled. Thus, it does not account for specific vs non-specific staining.\n\nConditions that influence antibody and epitope preservation: It is unclear whether the baseline protocol described here applies only to mouse tissue or to human tissue as well. The mention of perfusion leads me to believe this is specifically for mouse, but I couldn't find information on how the human tissue was fixed.\n\nThere is no mention here of whether the antibodies (GluT1 and NeuN) are directly conjugated to fluorophores. I assumed that they were, based on the info in the Methods section. But then in the last paragraph of Results the authors say that \"Therefore, we directly conjugated three antibodies to three different fluorophores (NeuN-A568, Glut1- A488, and AT8-A647).\" Which to me implies that they weren't conjugated in previous experiments.\n\nComparison of IHC conditions for different antibodies directed against a single protein: As explained in the Public review section, I disagree with the conclusion \"it is recommended to use primary antibodies directly conjugated to fluorophores whenever possible.\" Unless the authors add more experiments that compare direct vs. indirect immmunolabeling with the same primary antibody (for several different antibodies), this conclusion is not justified.\n\n\"In order to examine how much of the observed variability in antibody labeling is due to targets being more or less accessible depending on cell type or subcellular location, multiple antibodies were also chosen that recognize tau protein.\" I don't understand what the comparison of the tau antibodies will tell us about the accessibility of targets depending on cell type or subcellular location.\n\nMouse brain tissue as a model system for optimizing IHC in cleared human tissue: Determining the optimal protocol for simultaneous staining of 3 antibodies is an important point. It will be very useful if the authors elaborate more on how this optimal protocol was determined. How was the combination of conditions that maximize staining quality established? Minor point: how was the 14 days duration determined?\n\nDiscussion: \"Rather than the antibody, our data suggests that poor staining is most often due to denaturation or blockage of the epitope.\" I disagree with this conclusion, as explained above.\n\n\"Unfortunately, as we found with the dopamine receptor 2 and GFAP IHC, a protocol may not exist to allow for both targets to be effectively stained simultaneously.\" \u2013 I didn't see this presented in the Results section.\n\nMaterials and methods:\n\nHow were the human samples fixed? Were the slicing and all the following steps performed in an identical way? I assume they were, but this should be stated clearly in the methods. How were the tissue libraries stored? For how long can they be used after preparation?\n\nFigures\n\nFigures 1, 2 and others. How is the top of the side view determined? Is this the surface of the tissue and therefore conditions where the label in the side view starts lower that in other conditions means that the tissue surface was not labeled? And why would that be? If that is not the case, it will be best to align the side views and have the labeling start at the same level.\n\nFigure S3. This is a very clear way of summarizing the differences in labeling. It would be very helpful to have this summary next to the actual immunostaining images in the main figures.\n\nFigure S9 Representative microtome images taken from the human tissue prior to staining: Do you mean prior to clearing?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Tissue libraries enable rapid determination of conditions that preserve antibody labeling in cleared mouse and human tissue\" for further consideration by eLife. Your revised article has been evaluated by Suzanne Pfeffer (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nEssential revisions:\n\nRegarding the comparison between conjugated antibodies and primary plus secondary antibodies, it seems that it's possible to interpret the data in a different way, as outlined below by the reviewers, given that the comparison is not between the same primary antibodies with one conjugated and one not. Thus the observed differences can also be due to the primary antibodies themselves. Also, it is not clear whether a different secondary antibody would give a similar result.\n\nOn the question of antibody penetration, it is possible to interpret some of the results not as a problem of an impediment to physical penetration but of antibody depletion as the latter binds the tissue as it diffuses across.\n\nReviewer #1 (Recommendations for the authors):\n\nThe revised manuscript has addressed most of the reviewers' concerns and is significantly improved.Regarding the comparison between directly conjugated antibodies and use of secondary antibodies. I agree that directly conjugated antibodies save time and can be recommended for that purpose. I still have a problem with claims like: \"As shown in Figure 3, the use of a primary antibody directly conjugated to a fluorophore greatly reduced background fluorescence over traditional primary/secondary antibody systems.\" The comparison is not between the same primary antibodies with one conjugated and one not; thus the observed differences can also be due to the primary antibodies themselves. Also, it is not at all clear whether a different secondary antibody would give a similar result. There is a great variety of secondary antibodies commercially available and, generally, the preadsorbed secondary antibodies that have undergone an extra purification step have higher specificity and give less background labeling; however the secondary antibodies used here were not of the \"preadsorbed\" kind.\n\nThe authors now include more details on the human tissue handling, which clarifies many questions that I had. A few remaining ones are:\n\nMaterials and methods: Human tissue samples: what was the postmortem interval before fixation? Even a rough estimate will be helpful.\n\nSupplementary Table 1. Hemisphere column: \"Frozen left\". Does this mean that the human tissue was stored frozen? And then fixed? If it was indeed frozen before fixation, which was not mentioned elsewhere in the methods, that could explain why it looks like the antibodies penetrate deeper into the human tissue compared to mouse, (e.g. Figure 1 vs. Figure 5), but it is also an important difference to keep in mind.\n\nReviewer #2 (Recommendations for the authors):\n\nThe additions to the manuscript re-submission are greatly appreciated, in particular the updated analysis approach and 1d line profiles of signal versus tissue depth. There is one additional point that I believe is important and can be handled in the text. From the screen of antibody staining times (Figure S1), it appears that up through 24 hours of incubation the effect of increased incubation time is to increase the signal in a ~120 \u00b5m surface layer whose thickness does not change appreciably. After this, up to 48 hr (at least for RT incubation) the thickness of the surface layer changes strongly. This suggests that the limitation on signal for staining 24hr and under is depletion of antibodies on the way through the tissue. It should be pointed out that in the present work, the focus on depth to half-max staining does not separate the issues of (1) free antibody penetration speed through the tissue and (2) the extent of depletion along the way. Reducing antigenicity will improve the apparent penetration rate by reducing the effect of depletion due to epitope binding. This may be what is happening with the 50oC unmasking treatment, which increases penetration but greatly reduces the staining level (Figure 1 b,c, column 8). This limitation should be discussed explicitly.\n",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4965a343-ebbb-4cd9-a8ea-89b7f98ec356",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C1",
+      "claim": "Difficulty achieving complete, specific, and homogenous staining is a major bottleneck preventing the widespread use of tissue clearing techniques to image large volumes of human tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Difficulty achieving complete, specific, and homogenous staining is a major bottleneck preventing the widespread use of tissue clearing techniques to image large volumes of human tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a problem in the abstract and is supported by the subsequent methodology developed to address it.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "731e23ed-a38c-4a96-8555-8a18eb712f68",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C2",
+      "claim": "Results from a library of mouse tissue correlate well with results from a similarly prepared library of human brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from a library of mouse tissue correlate well with results from a similarly prepared library of human brain tissue, suggesting mouse tissue is an adequate substitute for protocol optimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing mouse and human tissue staining results presented in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "89e7cd97-b9e5-4242-921d-195aabe63ff9",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C3",
+      "claim": "Mouse tissue is an adequate substitute for protocol optimization for human tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from a library of mouse tissue correlate well with results from a similarly prepared library of human brain tissue, suggesting mouse tissue is an adequate substitute for protocol optimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation data between mouse and human tissue results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "5ef28564-1754-4914-87cc-bff3f820a7b6",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C4",
+      "claim": "Procedural differences do not influence every antibody-antigen pair in the same way.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that procedural differences do not influence every antibody-antigen pair in the same way, and minor changes can have deleterious effects, therefore, optimization should be conducted for each target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing different antibodies respond differently to the same protocol changes (Figures 3-7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "12646bed-7901-49da-9875-ef847c65b7dc",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C5",
+      "claim": "Minor changes in IHC protocols can have deleterious effects on antibody staining.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that procedural differences do not influence every antibody-antigen pair in the same way, and minor changes can have deleterious effects, therefore, optimization should be conducted for each target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data showing protocol variations affecting staining quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "66b08cc0-6ba2-4360-adb4-7ddd44a7e41a",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C6",
+      "claim": "Optimization should be conducted for each target antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that procedural differences do not influence every antibody-antigen pair in the same way, and minor changes can have deleterious effects, therefore, optimization should be conducted for each target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the observed variability in antibody responses to different protocols.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "b8b11ca7-ab7d-4544-bd1e-635b9391d944",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C7",
+      "claim": "Tissue clearing involves lipid removal and refractive index matching to significantly decrease light scattering.",
+      "claim_type": "EXPLICIT",
+      "source": "One promising method, tissue clearing, involves lipid removal and refractive index matching to significantly decrease light scattering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about tissue clearing techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "dabb14b1-fed7-47a5-a4a9-c62dcc9aba47",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C8",
+      "claim": "Tissue clearing allows for light microscopy to observe the distribution of individual molecules throughout entire organs millimeters to centimeters in size.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue clearing allows for light microscopy to observe the distribution of individual molecules throughout entire organs millimeters to centimeters in size (Ueda et al., 2020b; Richardson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "04391b58-8312-42e5-ba55-a7fbf4bc9f66",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C9",
+      "claim": "Complete, specific and homogenous staining is now the most common bottleneck preventing the widespread use of tissue clearing in samples that cannot be modified to express fluorescent proteins such as human tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "This is rarely the case and complete, specific and homogenous staining is now the most common bottleneck preventing the widespread use of tissue clearing in samples that cannot be modified to express fluorescent proteins such as human tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the field and is supported by the context of the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "bf68b23c-c900-4947-b739-61e020f557b6",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C10",
+      "claim": "Most tissue clearing methods have been optimized for studies in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, most tissue clearing methods have been optimized for studies in rodents, and only a few recent studies apply clearing techniques to human tissue (Scardigli et al., 2021; Lai et al., 2018; Susaki et al., 2020; Matos et al., 2010; Zhao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the literature showing limited human tissue studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "86ce5749-d04d-4f0d-86ae-3b359dd8e94e",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C11",
+      "claim": "Only a few recent studies apply clearing techniques to human tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, most tissue clearing methods have been optimized for studies in rodents, and only a few recent studies apply clearing techniques to human tissue (Scardigli et al., 2021; Lai et al., 2018; Susaki et al., 2020; Matos et al., 2010; Zhao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by specific citations to recent human tissue clearing studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "9536b9d2-b5cd-45c6-82c5-e869688344fd",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C12",
+      "claim": "Successful IHC requires four fundamentals: (1) the antibody cannot denature, (2) the epitope cannot denature, (3) the antibody must diffuse completely through the tissue, and (4) the antibody must only bind its intended target.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful IHC requires four fundamentals: (1) the antibody cannot denature, (2) the epitope cannot denature, (3) the antibody must diffuse completely through the tissue, and (4) the antibody must only bind its intended target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about IHC requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "b4026ade-89d6-47db-ad54-859a3c218332",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C13",
+      "claim": "Differences in staining quality can result from biological heterogeneity such as small differences in tissue composition, individual antibodies, their epitopes, and overall tissue structure.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well understood that differences in staining quality can result from biological heterogeneity such as small differences in tissue composition, individual antibodies, their epitopes, and overall tissue structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of IHC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "77f1ee11-b3d8-4d54-8330-c8f1c3feb14f",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C14",
+      "claim": "Variability in IHC can be induced by each step of an IHC protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "However, further variability can be induced by each step of an IHC protocol (Kim et al., 2016; Matos et al., 2010; Shi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "c4fa40f1-75e7-4016-a7a6-898061e9876c",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C15",
+      "claim": "IHC protocols can usually be reproduced with the same tissues, antibodies, and fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this, IHC protocols can usually be reproduced with the same tissues, antibodies, and fluorophores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about IHC reproducibility.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "38668111-dc82-4082-8656-557415ba420c",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C16",
+      "claim": "It is common to have difficulties extending IHC protocols to different antibodies or tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, it is common to have difficulties extending these protocols to different antibodies or tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known problem in the field that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "b7345bcb-8334-4e70-8a44-4b2f073f7f24",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C17",
+      "claim": "Tissue sections 0.5\u20131.0 mm thick and antibody incubation times of 18\u201324 hr are sufficient to assess the influence of chosen conditions on IHC staining quality.",
+      "claim_type": "EXPLICIT",
+      "source": "Through empirical testing, we found tissue sections 0.5\u20131.0 mm thick and antibody incubation times of 18\u201324 hr to be sufficient to assess the influence of our chosen conditions on IHC staining quality (Figure 1, Figure 2, Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by empirical testing data shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "5df79f1c-138c-4fc5-96f5-f4a3ec2ea5f6",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C18",
+      "claim": "The signal when staining 24 hr and under may be limited by the depletion of antibodies on their way through the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that these data suggest the signal when staining 24 hr and under may be limited by the depletion of antibodies on their way through the tissue, which should be considered when making comparisons of staining quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on antibody incubation times.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "b9ae3482-2283-47e8-b59b-7cd8be0ac102",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C19",
+      "claim": "Increasing delipidation time to 2 days had a positive influence on NeuN staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing delipidation time to 2 days had a positive influence on NeuN staining, and no influence on Glut1 staining, but both showed worse IHC when increasing the delipidation time further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing different delipidation times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "843b5f39-dec9-4976-83af-56c1728143ce",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C20",
+      "claim": "Increasing delipidation time to 2 days had no influence on Glut1 staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing delipidation time to 2 days had a positive influence on NeuN staining, and no influence on Glut1 staining, but both showed worse IHC when increasing the delipidation time further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing different delipidation times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "90da6e06-5681-4b86-b412-a8cc2d811d9b",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C21",
+      "claim": "Both NeuN and Glut1 showed worse IHC when increasing the delipidation time beyond 2 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing delipidation time to 2 days had a positive influence on NeuN staining, and no influence on Glut1 staining, but both showed worse IHC when increasing the delipidation time further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing different delipidation times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "b02dfe28-c922-4e5a-8428-1520d5a3938f",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C22",
+      "claim": "Incubation of tissue at 50\u00b0C for 1 hr prior to antibody incubation improved staining for Glut1 and NeuN.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation of tissue at 50\u00b0C for 1 hr prior to antibody incubation improved staining for Glut1 and NeuN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data testing different pre-treatment conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "89cf4952-8d7f-4fd7-ae53-c55f83986a80",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C23",
+      "claim": "Glycine treatment had no significant effect on NeuN staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycine treatment had no significant effect on NeuN staining, but inhibited Glut1 staining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data testing glycine treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "a4a4656e-2d74-4e2d-9037-0d45e321aae3",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C24",
+      "claim": "Glycine treatment inhibited Glut1 staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycine treatment had no significant effect on NeuN staining, but inhibited Glut1 staining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data testing glycine treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "69784d4b-33a8-42c5-b099-bcc6dd10c91c",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C25",
+      "claim": "Incubating antibodies at room temperature improved NeuN staining and Glut1 staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubating antibodies at room temperature improved NeuN staining and on Glut1 staining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing different incubation temperatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "bc723710-a3c2-4a83-a56c-49c2336b9a16",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C26",
+      "claim": "Staining with DAPI appears insensitive to the different protocols tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, staining with DAPI appears insensitive to the different protocols (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "1acb469c-ea6c-46de-a3ff-3ceeadb5ff3b",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C27",
+      "claim": "Inclusion of PFA in the hydrogel resulted in decreased IHC quality for both Glut1 and NeuN.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of PFA in the hydrogel resulted in decreased IHC quality for both Glut1 and NeuN, however this significantly improved IHC of dopamine receptor 2 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing protocols with and without PFA in hydrogel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "cbeb34e4-a940-4c62-b7c8-adb92f608f56",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C28",
+      "claim": "Inclusion of PFA in the hydrogel significantly improved IHC of dopamine receptor 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of PFA in the hydrogel resulted in decreased IHC quality for both Glut1 and NeuN, however this significantly improved IHC of dopamine receptor 2 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "ebd0d3b0-5aa0-40ea-8f8d-cd52f9fe3024",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C29",
+      "claim": "The optimal protocol for simultaneously staining Glut1, NeuN, and DAPI is to delipidate for 2 days, place the tissue at 50\u00b0C for 1 hr before incubating with antibodies, and incubating the antibodies at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we ascertained the optimal protocol for simultaneously staining Glut1, NeuN, and DAPI was to delipidate for 2 days, place the tissue at 50\u00b0C for 1 hr before incubating with antibodies, and incubating the antibodies at room temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from the experimental data comparing different protocol conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "fe206112-afae-4ee4-bb46-68f7f80495f6",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C30",
+      "claim": "The optimal conditions for Glut1, NeuN, and DAPI would result in no staining of dopamine receptor 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these same conditions would result in no staining of dopamine receptor 2 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "6e829bcd-52b3-4151-8ad2-b0c5b8457f38",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C31",
+      "claim": "Different conditions can have opposite effects on the quality of staining and depth of antibody penetration.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that different conditions can have opposite effects on the quality of staining and depth of antibody penetration and reinforce the importance of optimizing sample preparation conditions for each antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing variable effects of different conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "7c3251a8-87a2-43be-939e-7d9d9546b22a",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C32",
+      "claim": "The trends in staining quality are similar for both monoclonal and polyclonal GFAP antibodies across all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunolabeling GFAP with different antibodies shows that the trends in staining quality are similar for both antibodies across all conditions (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing two different GFAP antibodies shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "cc1417aa-4985-43b0-aecb-655608918b3f",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C33",
+      "claim": "Conditions that enhance GFAP stability and prevent denaturation of its epitopes have a positive effect on all GFAP antibodies provided the antibodies are of high quality, have high specificity and limited off-target binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that conditions that enhance GFAP stability and prevent denaturation of its epitopes have a positive effect on all GFAP antibodies provided the antibodies are of high quality, have high specificity and limited off-target binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similar trends observed for different GFAP antibodies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "af592d8e-ee92-435a-a4f5-2d1cc340fe44",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C34",
+      "claim": "IHC of GFAP with the tested antibodies is limited more by denaturation of the epitope than the antibody itself.",
+      "claim_type": "EXPLICIT",
+      "source": "This also suggests that IHC of GFAP with these antibodies is limited more by denaturation of the epitope than the antibody itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that different antibodies show similar responses to protocol changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "441ff879-31fa-44bb-b2f5-c435018bf8f2",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C35",
+      "claim": "It is recommended to use primary antibodies directly conjugated to fluorophores whenever possible.",
+      "claim_type": "EXPLICIT",
+      "source": "As this approach also reduces the length of the staining protocol, it is recommended to use primary antibodies directly conjugated to fluorophores whenever possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the advantages observed in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "89ef3916-c32f-4cf9-8363-2dd40d9825c6",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C36",
+      "claim": "There was significantly more variability between tau antibodies than seen with GFAP antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "There was significantly more variability between tau antibodies than seen with GFAP antibodies, primarily due to the inability for DAKO total tau antibody to effectively penetrate beyond the tissue's surface (Figure 6, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing different tau antibodies shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "fe897305-edb7-4f54-8893-1d0fb343d158",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C37",
+      "claim": "DAKO total tau antibody was unable to effectively penetrate beyond the tissue's surface.",
+      "claim_type": "EXPLICIT",
+      "source": "There was significantly more variability between tau antibodies than seen with GFAP antibodies, primarily due to the inability for DAKO total tau antibody to effectively penetrate beyond the tissue's surface (Figure 6, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "43313b81-2390-4b90-887f-12d807bc5c74",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C38",
+      "claim": "All three tau antibodies (AT8, HT7, and DAKO) labeled similar structures when used in traditional IHC in microtome slices of human tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when used in traditional IHC in microtome slices of human tissue, all three of these antibodies labeled similar structures (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "c70dbba3-4e74-47cd-8b35-607ce0b3be95",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C39",
+      "claim": "Similar trends in optimal IHC protocols were observed for AT8 and HT7 anti-tau antibodies in mouse tissue expressing human tau.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, similar trends in optimal IHC protocols were observed for AT8 and HT7 anti-tau antibodies in mouse tissue expressing human tau (Figure 6\u2014figure supplement 3) and showed no labeling in a negative control; mice without tau expression (Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "d42002e1-b1e2-481b-8f90-78c89efdf6d9",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C40",
+      "claim": "AT8 and HT7 anti-tau antibodies showed no labeling in mice without tau expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, similar trends in optimal IHC protocols were observed for AT8 and HT7 anti-tau antibodies in mouse tissue expressing human tau (Figure 6\u2014figure supplement 3) and showed no labeling in a negative control; mice without tau expression (Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "58e79b1d-7eb3-4993-b2bd-723d10b4eca3",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C41",
+      "claim": "Testing of IHC protocols for NeuN and Glut1 in human tissue showed similar changes in staining quality and depth when compared to mouse tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, our testing of IHC protocols for NeuN and Glut1 in human tissue showed similar changes in staining quality and depth when compared to mouse tissue (Figure 7, Figure 7\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data comparing mouse and human tissue shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "38318eae-01da-4b90-8461-378f70397274",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C42",
+      "claim": "Both human and mouse tissue showed decreases in staining quality with increasing clearing time and fixation with PFA.",
+      "claim_type": "EXPLICIT",
+      "source": "Both human and mouse tissue showed decreases in staining quality with increasing clearing time and fixation with PFA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing different clearing and fixation conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "0497f995-9809-4293-ab9d-b2f58f52f3f5",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C43",
+      "claim": "Room temperature antibody incubation improved Glut1 and NeuN staining in both mouse and human tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Room temperature antibody incubation as well as epitope unmasking at 50\u00b0C for 1 hr prior to antibody incubation improved Glut1 and NeuN staining in both mouse and human tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing different incubation conditions in both species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "b6f16839-43a3-4790-be98-ebcf61c9d811",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C44",
+      "claim": "Epitope unmasking at 50\u00b0C for 1 hr prior to antibody incubation improved Glut1 and NeuN staining in both mouse and human tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Room temperature antibody incubation as well as epitope unmasking at 50\u00b0C for 1 hr prior to antibody incubation improved Glut1 and NeuN staining in both mouse and human tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing different pre-treatment conditions in both species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "856e4a18-b4ba-44f8-bc8c-01e17aefa373",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C45",
+      "claim": "The NeuN antibody appears to accumulate off-target in human tissue, which is not observed in mouse tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also worth noting that this NeuN antibody appears to accumulate off-target in the human tissue, which is not observed in the mouse tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data comparing mouse and human tissue staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "767444ae-6edc-475b-8567-f4f1ada9738b",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C46",
+      "claim": "Complete penetration and simultaneous labeling of 1 mm thick human tissue with NeuN, Glut1, and AT8 antibodies was achieved by following the optimal IHC protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "By carefully following the optimal IHC protocol determined in this work, we were able to achieve complete penetration and simultaneous labeling of the 1 mm thick human tissue with all three antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "448690fa-6ff9-4ead-bb21-56a52c8cb53e",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C47",
+      "claim": "The Glut1-labeled vasculature and AT8-labeled tau are extremely well defined and could be easily quantitated in the optimized protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the Glut1-labeled vasculature and AT8-labeled tau are extremely well defined and could be easily quantitated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental results shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "f4756b81-a8b5-47ca-a346-5ba478797fd9",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C48",
+      "claim": "Small changes to an IHC protocol can have profound effects on labeling efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have found that small changes to an IHC protocol can have profound effects on labeling efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing variable effects of protocol changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "63ccc5f6-3b92-40b0-9a80-c818b23ff90e",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C49",
+      "claim": "Poor staining is most often due to denaturation or blockage of the epitope rather than the antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than the antibody, our data suggests that poor staining is most often due to denaturation or blockage of the epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing similar responses for different antibodies against the same target.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "fc9c6b60-d632-496d-8e8f-da36a86a4794",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C50",
+      "claim": "The optimal protocols for IHC should be determined for each individual target.",
+      "claim_type": "EXPLICIT",
+      "source": "These procedural differences do not influence every antibody-antigen pair in the same way, so the optimal protocols for IHC should be determined for each individual target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the observed variability in antibody responses to different protocols.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "a85a78a6-9615-4448-b016-2ce047ecb89f",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C51",
+      "claim": "Using combinations of antibodies in the same tissue may require using a protocol with conditions that are acceptable for all antibodies, rather than conditions that are optimal for each individual antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Using combinations of antibodies in the same tissue may require using a protocol with conditions that are acceptable for all antibodies, rather than conditions that are optimal for each individual antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical consideration derived from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "325010f3-13df-48b6-84c0-520cfe50bb56",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C52",
+      "claim": "Temperature, fixation conditions, and other investigated conditions have greater influence the larger the tissue volume becomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, temperature, fixation conditions, and the other conditions investigated here have greater influence, the larger the tissue volume becomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that differences are more apparent at depth than at the surface.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "0bea1081-96c6-4f6f-9d7b-fb586a089c6e",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C53",
+      "claim": "The use of tissue sections that are too thin does not allow for appropriate optimization of IHC protocols for thick tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "For many of the tested protocols, the difference in staining is not apparent at the surface which suggests that the use of tissue sections that are too thin does not allow for appropriate optimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that protocol differences are more apparent at depth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "a4731565-7b0d-4c34-b5c2-4aaccdcc9979",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C54",
+      "claim": "Mouse tissue is a good model system for determining large-volume IHC protocols for human samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Most surprising to us was that mouse tissue is a good model system for determining large-volume IHC protocols for human samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the correlation data between mouse and human tissue results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "806ddf52-a24f-4bd7-a28c-0a853a023458",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C55",
+      "claim": "It is important that tissue preparations are identical when using mouse tissue as a model for human tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these results show that minor procedural changes can disrupt the quality of staining, so it is important that tissue preparations are identical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the observed sensitivity to protocol variations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "bf4972e6-3b3c-4898-a81f-1e4148f1ee95",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C56",
+      "claim": "IHC protocols in large-volume tissue that requires clearing can take weeks or months to complete depending on the initial state and size of the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "IHC protocols in large-volume tissue that requires clearing can take weeks or months to complete depending on the initial state and size of the tissue (Susaki et al., 2020; Ueda et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "68647831-3f39-4553-85d4-69bc01be82f6",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C57",
+      "claim": "The requirement for human tissue to be processed longer than comparable-sized rodent tissue is not due to intrinsic differences between human and mouse brain tissue, but rather a result of differences in the state of the tissue when clearing experiments are started.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that this is not due to intrinsic differences between human and mouse brain tissue, but rather a result of differences in the state of the tissue when clearing experiments are started.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing similar responses in mouse and human tissue when prepared identically.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "571ffa3c-f2ff-4d21-8c46-f9359bca4849",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C58",
+      "claim": "Human tissue is often stored in fixative for extended periods of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Human tissue is often stored in fixative for extended periods of time and, as our data shows, even a small increase in PFA exposure can have significant influence on IHC quality and depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known practice in the field and is supported by the experimental data showing effects of PFA exposure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "3bb3c6ad-65ce-4810-8655-a64e3ccaf6c5",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C59",
+      "claim": "Even a small increase in PFA exposure can have significant influence on IHC quality and depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Human tissue is often stored in fixative for extended periods of time and, as our data shows, even a small increase in PFA exposure can have significant influence on IHC quality and depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing different PFA exposure conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "cc129187-5ad7-47b3-a8ed-ca8856e5d351",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C60",
+      "claim": "Tissue that was delipidated for 3 days showed less rapid IHC penetration than tissue that was cleared for 2 days in all cases except for DAPI labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, tissue that was delipidated for 3 days showed less rapid IHC penetration than tissue that was cleared for 2 days in all cases except for DAPI labeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing different delipidation times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "241e6b1a-8054-4946-b0f5-1a3632c126db",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C61",
+      "claim": "Samples can quickly become over-cleared and lose antigenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that samples can quickly become over-cleared and lose antigenicity which may extend the amount of time previously reported as necessary for IHC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that longer clearing times reduced staining quality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "376184d8-2a83-4e19-954d-e20da76d4f4e",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C62",
+      "claim": "Optimal IHC conditions can be determined for new antibodies within a few days using the described methodology.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, optimal IHC conditions are determined for new antibodies within a few days (approximately 24 hr for staining, 24 hr for rinsing, 12\u201324 hr for refractive index matching/clearing, 3 hr to image the samples, and a similar amount of time to quantify and compare the staining quality).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the timeline for the methodology developed in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "36eff8a0-09ef-4352-a70a-cac489c19105",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C63",
+      "claim": "Tau is a microtubule associated protein that is primarily expressed by neurons and is the main component of neurofibrillary tangles in Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Tau is a microtubule associated protein that is primarily expressed by neurons and is the main component of neurofibrillary tangles in Alzheimer's disease (AD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about tau protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "8b15224b-5a3b-42cb-9550-fb35432f6117",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C64",
+      "claim": "Three days of antibody incubation is sufficient for consistent and thorough staining across brain regions in 500 \u00b5m mouse tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that we found 3 days of antibody incubation sufficient for consistent and thorough staining across brain regions in 500 \u00b5m mouse tissue (Figure 3\u2014figure supplements 8 and 9), and there were no notable downsides to leaving the antibody incubating longer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplements 8 and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "5f2d187d-7048-4fa6-903e-1d5d360e4b57",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C65",
+      "claim": "There were no notable downsides to leaving the antibody incubating longer than 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that we found 3 days of antibody incubation sufficient for consistent and thorough staining across brain regions in 500 \u00b5m mouse tissue (Figure 3\u2014figure supplements 8 and 9), and there were no notable downsides to leaving the antibody incubating longer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "ba26b34a-e2ef-4c4d-abfb-1e5cb0aede04",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C66",
+      "claim": "The inability of DAKO total tau antibody to penetrate beyond the tissue surface may be an effect of poor penetration and diffusion of the secondary antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the DAKO total tau antibody was not directly conjugated to a fluorophore, we cannot exclude the possibility that the inability to image DAKO-stained tau beyond the surface may be an effect of poor penetration and diffusion of the secondary antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a possible explanation for the observed results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "7b8d5e33-470a-43df-8c9c-d786d8c5e8d8",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C67",
+      "claim": "Conditions that reduce the antigenicity may significantly enhance the apparent penetration rate.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that simply relying on depth to half-max staining does not separate the issues of free antibody penetration speed through the tissue nor the extent of antibody depletion along the way, and it is possible that conditions that reduce the antigenicity may significantly enhance the apparent penetration rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary note about interpreting the depth to half-max staining metric.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "f87b087e-cd98-4ec6-b70d-bd1cabfb3c72",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C68",
+      "claim": "Human tissue was provided by the Massachusetts Alzheimer's Disease Research Center with approval from the Mass General Brigham IRB.",
+      "claim_type": "EXPLICIT",
+      "source": "Human tissue was provided by the Massachusetts Alzheimer's Disease Research Center (ADRC) with approval from the Mass General Brigham IRB (1999P009556).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the source and ethical approval for human tissue samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "51b852cf-fd46-4847-a936-3fc559207c8f",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C69",
+      "claim": "Three human participants with AD were selected from the Massachusetts Alzheimer's Disease Research Center.",
+      "claim_type": "EXPLICIT",
+      "source": "Three human participants with AD were selected from the Massachusetts Alzheimer's Disease Research Center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the human tissue samples used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "2e1f2a2f-9e2e-418a-b43e-db434917092b",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C70",
+      "claim": "C57Bl/6J mice were used for most tissue experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Male and female C57Bl/6J mice (Jackson Laboratory 000664) were used for most tissue experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mouse strains used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "7b6af911-9d57-4794-9c80-2ea5bed5e38f",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C71",
+      "claim": "10- to 12-month-old male hTau mice that express only human tau isoforms were used for tissue to test IHC of tau.",
+      "claim_type": "EXPLICIT",
+      "source": "For tissue to test IHC of tau, 10- to 12-month-old male hTau mice bred from a local colony (B6.Cg-Mapttm1(EGFP)Klt Tg(MAPT)8cPdav/J, Jackson Laboratory 005491) that express only human tau isoforms were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the mouse model used for tau experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "36a9c9f2-67d9-49d1-bf46-e04b7e8038dd",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C72",
+      "claim": "hTau knockout mice were used as controls for tau IHC experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "hTau knockout mice bred from a local colony (Mapttm1(EGFP)Klt/J, Jackson Laboratory 004779) were used as controls for tau IHC experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the control mice used in tau experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "f4abcc02-8ce8-4f39-af87-51a36d2e828f",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C73",
+      "claim": "Mouse experiments were performed with approval of local institutional review boards (IACUC protocol # 2019N000026).",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse experiments were performed with approval of local institutional review boards (IACUC protocol # 2019N000026).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for animal experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "4f24c97f-6f09-4e9d-bc3f-eb02267617f3",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C74",
+      "claim": "The baseline protocol involved minimal processing and gentle conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The baseline protocol involved minimal processing and gentle conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the baseline protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "af7ed364-1b90-454a-9748-c9520a6b1b1f",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C75",
+      "claim": "The baseline protocol involved tissue fixed in 4% PFA for 2 days post-perfusion, embedded in hydrogel made of 4% acrylamide, delipidated in SDS for 1 day at 37\u00b0C, rinsed in PBST at 4\u00b0C, and incubated with antibodies at 4\u00b0C for 18 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the tissue was fixed in 4% paraformaldehyde (PFA) for 2 days post-perfusion, embedded in hydrogel made of 4% acrylamide, delipidated in sodium dodecyl sulfate (SDS) for 1 day at 37\u00b0C, rinsed in phosphate-buffered saline (PBS) with 0.2% Triton X-100 (PBST) at 4\u00b0C, and incubated with antibodies at 4\u00b0C for 18 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a detailed description of the baseline protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "f7381f63-501c-4de1-894d-4fdd01b7e25a",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C76",
+      "claim": "Conditions including boiling samples in citrate buffer before or after delipidation, heating to temperatures above 70\u00b0C before immunolabeling, and removal or decrease of PFA concentration in the transcardial perfusion or post-perfusion fixing step were universally observed to negatively impact IHC or tissue integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these conditions were universally observed to negatively impact IHC or tissue integrity, so they were excluded from our final library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations during protocol development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "430f5874-c25c-4897-af26-dcc95dc6d739",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C77",
+      "claim": "Mouse and human tissue was stored following delipidation and successfully used up to 6 months later.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional mouse and human tissue was stored following delipidation, then successfully used up to 6 months later by resuming from the pre-IHC tissue processing state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of tissue storage and viability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "6761a9a3-1fc9-41ca-ac8e-d5464f5d9a01",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C78",
+      "claim": "The final concentration of each antibody in solution was 5 \u00b5g/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "The final concentration of each antibody in solution was 5 \u00b5g/ml.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the antibody concentration used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "9b7cdd65-4054-4c13-a27d-713faa894e7b",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "claim_id": "C79",
+      "claim": "Samples were stable stored in RI-matching solution at room temperature and could be re-imaged for at least 3 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were stable stored in this solution at room temperature and could be re-imaged for at least 3 months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of sample stability after refractive index matching.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b8538ae-c36d-4884-a104-bdaaeba90221",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identify incomplete, non-specific, and inhomogeneous staining as a major bottleneck preventing widespread use of tissue clearing techniques for imaging large volumes of human tissue. This problem is particularly acute when protocols developed for one antibody or tissue type are extended to different antibodies or tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9, and C16 establish the motivation for the study based on known challenges in the field. These are well-established problems in tissue clearing and IHC that are supported by the literature citations and the subsequent experimental work addressing these issues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "45043a90-f9d0-4312-9157-5eecc5a82c50",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors empirically determined that tissue sections 0.5-1.0 mm thick with antibody incubation times of 18-24 hours are sufficient to assess IHC staining quality for protocol optimization, though signal at 24 hours may be limited by antibody depletion. For 500 \u03bcm mouse tissue, 3 days of incubation is sufficient for thorough staining with no downsides to longer incubation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C18, C64, and C65 are supported by empirical data shown in Figures 1-3 and supplementary figures. The methodology is clearly described and the tissue thickness and incubation times are validated experimentally, providing practical parameters for the optimization workflow.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "7e1f9ee4-70fd-433d-9a11-dcd41974cc0c",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Different protocol conditions have differential effects on NeuN and Glut1 antibody staining quality. Increasing delipidation to 2 days improved NeuN but not Glut1 staining, while 3 days of delipidation decreased staining quality for both antibodies (except DAPI). Epitope unmasking at 50\u00b0C for 1 hour improved both antibodies, glycine treatment inhibited Glut1 but not NeuN, and room temperature antibody incubation improved both.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C25 and C60 are well-supported by experimental data in Figures 3-4 with quantitative analysis. The differential effects of protocol variations on different antibodies are clearly demonstrated, supporting the main conclusion that optimization is needed for each antibody-antigen pair. Statistical comparisons are provided in Figure 3c.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "021a4829-e1b1-488b-a508-40b5b5d1489f",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DAPI staining appears insensitive to the different IHC protocols tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is supported by data in Figure 4 showing consistent DAPI staining across multiple protocol conditions. This is an important control demonstrating that the observed effects are specific to antibody-antigen interactions rather than general tissue properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "5ae77766-3d94-4603-99f3-67cc67596a79",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Inclusion of PFA in the hydrogel had opposite effects on different antibodies: it decreased IHC quality for Glut1 and NeuN but significantly improved staining of dopamine receptor 2. The optimal protocol for Glut1, NeuN, and DAPI would result in no staining of dopamine receptor 2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C28, and C30 are supported by experimental data in Figure 4\u2014figure supplement 1. This demonstrates a critical finding that no single protocol may be optimal for all antibodies, and some targets may require incompatible conditions for multiplexed staining.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "a2e4ef73-6e49-471f-ae32-a06996890e7e",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The optimal protocol for simultaneously staining Glut1, NeuN, and DAPI involves delipidation for 2 days, epitope unmasking at 50\u00b0C for 1 hour, and room temperature antibody incubation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is supported by the systematic comparison of protocol conditions in Figures 3-4. The determination of optimal conditions is based on quantitative metrics of staining quality across multiple protocol variations, providing a data-driven recommendation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "ac75df34-96dc-4663-944d-77f73405164f",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors demonstrate that procedural differences do not influence every antibody-antigen pair in the same way, and minor protocol changes can have profound effects on labeling efficiency. Therefore, optimal IHC protocols should be determined for each individual target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C31, C48, and C50 represent the central conclusion of the study, supported by extensive experimental data across Figures 3-7 showing differential responses of multiple antibodies to the same protocol variations. This is a well-supported major finding with clear practical implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "b294dfa7-b2c3-4376-b1ee-0f346bd06a05",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Two different GFAP antibodies (monoclonal and polyclonal) showed similar trends in staining quality across all tested conditions, suggesting that conditions enhancing GFAP stability and preventing epitope denaturation benefit all GFAP antibodies. This indicates that IHC of GFAP is limited more by epitope denaturation than antibody denaturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by experimental data in Figure 5 comparing monoclonal and polyclonal GFAP antibodies. The similar response patterns provide evidence for the interpretation that epitope preservation is the limiting factor, though the inference in C34 could benefit from additional controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "f2a9a819-5a14-4a3e-9483-c499f520b307",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "There was significantly more variability between tau antibodies than GFAP antibodies, primarily because DAKO total tau antibody could not effectively penetrate beyond the tissue surface, though this may be due to poor secondary antibody penetration. All three tau antibodies labeled similar structures in traditional thin-section IHC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C38 are supported by data in Figure 6 and supplements, but C66 acknowledges uncertainty about whether the DAKO penetration issue is due to the primary or secondary antibody. This confounding factor limits the interpretation, and the authors appropriately note this limitation. Additional experiments with directly conjugated DAKO would resolve this uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "3983ac14-13e2-40ee-977a-d1c121859a0b",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "AT8 and HT7 anti-tau antibodies showed similar trends in optimal IHC protocols in mouse tissue expressing human tau and showed no labeling in knockout mice lacking tau expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C40 are supported by data in Figure 6\u2014figure supplements 3 and 4. The negative control in knockout mice is particularly important for validating antibody specificity and strengthens confidence in the positive results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "3aa880ef-796a-42fb-842c-e8c3e2c60189",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mouse tissue is a good model system for determining large-volume IHC protocols for human samples. Testing of NeuN and Glut1 in human tissue showed similar changes in staining quality and depth compared to mouse tissue across protocol variations, though tissue preparations must be identical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C41-C44, C54-C55 are supported by comparative data in Figure 7 showing parallel responses to protocol variations in mouse and human tissue. This is a surprising and practically important finding that enables protocol optimization using more readily available mouse tissue. The caveat about identical preparation (C55) is appropriate given the observed sensitivity to protocol variations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "01ced5d1-8440-4043-b8c3-4fb6148a92eb",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The NeuN antibody appears to accumulate off-target in human tissue, which is not observed in mouse tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is supported by visual observation in the experimental data comparing mouse and human tissue. This highlights a limitation of the NeuN antibody for human tissue studies and demonstrates that not all aspects of antibody performance translate perfectly between species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "f88d52ea-b730-46a7-9a79-bb6acb8b28a2",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Following the optimized protocol, the authors achieved complete penetration and simultaneous labeling of 1 mm thick human tissue with NeuN, Glut1, and AT8 antibodies, with well-defined Glut1-labeled vasculature and AT8-labeled tau that could be easily quantitated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C47 are supported by data in Figure 8 demonstrating successful application of the optimized protocol to thick human tissue. This validates the practical utility of the optimization approach and demonstrates the quality of staining achievable with proper protocol selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "b8689057-370d-4636-acc4-013cfc065985",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Poor staining is most often due to denaturation or blockage of the epitope rather than the antibody.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by the GFAP antibody comparison data (C32-C34) showing similar responses for different antibodies against the same target. However, this conclusion is based primarily on one target (GFAP) and the tau data show more variability, so the generalization could be strengthened with additional targets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "ac3e348c-80a5-4da2-bf2a-309f10e6110d",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Using combinations of antibodies in the same tissue may require using a protocol with conditions that are acceptable for all antibodies, rather than conditions that are optimal for each individual antibody.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is a logical inference from the experimental data showing differential optimal conditions for different antibodies (e.g., C27-C30). This is an important practical consideration for multiplexed staining experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "9514551c-4471-4c60-b8c9-2acee11418aa",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Temperature, fixation conditions, and other investigated conditions have greater influence as tissue volume increases, and differences in staining are often not apparent at the surface. Therefore, tissue sections that are too thin do not allow for appropriate optimization of IHC protocols for thick tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52 and C53 are supported by the depth-dependent staining data throughout Figures 3-7 showing that protocol differences become more apparent with depth. This is an important methodological insight that justifies the use of 0.5-1.0 mm tissue sections for optimization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "d5522ce5-9b8a-4cd1-b329-524d16026464",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The requirement for human tissue to be processed longer than comparable-sized rodent tissue is not due to intrinsic differences between species, but rather differences in tissue state at the start of clearing experiments. Human tissue is often stored in fixative for extended periods, and even small increases in PFA exposure can significantly influence IHC quality and depth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are supported by the mouse-human comparison data (Figure 7) and the PFA exposure experiments. The inference in C57 is reasonable given the similar responses when tissues are prepared identically, though direct testing of human tissue with varying fixation times would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "0d9c7236-5796-45fa-be7b-41d228a99d50",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Samples can quickly become over-cleared and lose antigenicity, which may extend the amount of time previously reported as necessary for IHC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by data showing reduced staining quality with 3 days versus 2 days of delipidation (C60). This is an important finding that challenges assumptions about longer clearing times always being beneficial and suggests optimization of clearing duration is critical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "95ec5069-5c9a-4828-bc7e-bbb1a5e7bab1",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Optimal IHC conditions can be determined for new antibodies within a few days using the described methodology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by the description of the workflow timeline. The rapid turnaround time is a key practical advantage of the tissue library approach compared to traditional optimization methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "def80956-9663-4c77-b6ef-13618d8468a2",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "It is recommended to use primary antibodies directly conjugated to fluorophores whenever possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is a reasonable recommendation based on the reduced protocol length and the uncertainty about secondary antibody penetration (C66). However, the experimental support is indirect, and direct comparison of conjugated versus unconjugated versions of the same primary antibody would strengthen this recommendation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "921a1e38-98e6-4f0f-b749-01ffa81bd963",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Conditions that reduce antigenicity may significantly enhance the apparent penetration rate, and depth to half-max staining does not separate issues of free antibody penetration speed from antibody depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is an important methodological caveat about interpreting the depth metrics used in the study. This demonstrates appropriate scientific caution in interpretation and acknowledges limitations of the quantification approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The authors provide detailed methodology for tissue sources, animal models, ethical approvals, baseline protocol specifications, tissue storage conditions, antibody concentrations, and sample stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C79 describe methodological details that are clearly stated in the Materials and Methods section. These provide essential information for reproducibility and are appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    },
+    {
+      "id": "6df4d4b0-ab9e-49f7-bb1c-61aeb9f730fd",
+      "content_id": "4185b682-09f5-42ab-b7a7-2be53f0eafeb",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The authors provide background knowledge about tissue clearing techniques, IHC fundamentals, sources of variability in IHC, and tau protein biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C10-C15, and C63 represent established knowledge in the field that is appropriately cited and provides context for the study. These are well-supported by the literature citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:30:58.381650Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4965a343-ebbb-4cd9-a8ea-89b7f98ec356",
+      "result_id": "4b8538ae-c36d-4884-a104-bdaaeba90221"
+    },
+    {
+      "claim_id": "04391b58-8312-42e5-ba55-a7fbf4bc9f66",
+      "result_id": "4b8538ae-c36d-4884-a104-bdaaeba90221"
+    },
+    {
+      "claim_id": "38668111-dc82-4082-8656-557415ba420c",
+      "result_id": "4b8538ae-c36d-4884-a104-bdaaeba90221"
+    },
+    {
+      "claim_id": "b7345bcb-8334-4e70-8a44-4b2f073f7f24",
+      "result_id": "45043a90-f9d0-4312-9157-5eecc5a82c50"
+    },
+    {
+      "claim_id": "5df79f1c-138c-4fc5-96f5-f4a3ec2ea5f6",
+      "result_id": "45043a90-f9d0-4312-9157-5eecc5a82c50"
+    },
+    {
+      "claim_id": "8b15224b-5a3b-42cb-9550-fb35432f6117",
+      "result_id": "45043a90-f9d0-4312-9157-5eecc5a82c50"
+    },
+    {
+      "claim_id": "5f2d187d-7048-4fa6-903e-1d5d360e4b57",
+      "result_id": "45043a90-f9d0-4312-9157-5eecc5a82c50"
+    },
+    {
+      "claim_id": "b9ae3482-2283-47e8-b59b-7cd8be0ac102",
+      "result_id": "7e1f9ee4-70fd-433d-9a11-dcd41974cc0c"
+    },
+    {
+      "claim_id": "843b5f39-dec9-4976-83af-56c1728143ce",
+      "result_id": "7e1f9ee4-70fd-433d-9a11-dcd41974cc0c"
+    },
+    {
+      "claim_id": "90da6e06-5681-4b86-b412-a8cc2d811d9b",
+      "result_id": "7e1f9ee4-70fd-433d-9a11-dcd41974cc0c"
+    },
+    {
+      "claim_id": "b02dfe28-c922-4e5a-8428-1520d5a3938f",
+      "result_id": "7e1f9ee4-70fd-433d-9a11-dcd41974cc0c"
+    },
+    {
+      "claim_id": "89cf4952-8d7f-4fd7-ae53-c55f83986a80",
+      "result_id": "7e1f9ee4-70fd-433d-9a11-dcd41974cc0c"
+    },
+    {
+      "claim_id": "a4a4656e-2d74-4e2d-9037-0d45e321aae3",
+      "result_id": "7e1f9ee4-70fd-433d-9a11-dcd41974cc0c"
+    },
+    {
+      "claim_id": "69784d4b-33a8-42c5-b099-bcc6dd10c91c",
+      "result_id": "7e1f9ee4-70fd-433d-9a11-dcd41974cc0c"
+    },
+    {
+      "claim_id": "cc129187-5ad7-47b3-a8ed-ca8856e5d351",
+      "result_id": "7e1f9ee4-70fd-433d-9a11-dcd41974cc0c"
+    },
+    {
+      "claim_id": "bc723710-a3c2-4a83-a56c-49c2336b9a16",
+      "result_id": "021a4829-e1b1-488b-a508-40b5b5d1489f"
+    },
+    {
+      "claim_id": "1acb469c-ea6c-46de-a3ff-3ceeadb5ff3b",
+      "result_id": "5ae77766-3d94-4603-99f3-67cc67596a79"
+    },
+    {
+      "claim_id": "cbeb34e4-a940-4c62-b7c8-adb92f608f56",
+      "result_id": "5ae77766-3d94-4603-99f3-67cc67596a79"
+    },
+    {
+      "claim_id": "fe206112-afae-4ee4-bb46-68f7f80495f6",
+      "result_id": "5ae77766-3d94-4603-99f3-67cc67596a79"
+    },
+    {
+      "claim_id": "ebd0d3b0-5aa0-40ea-8f8d-cd52f9fe3024",
+      "result_id": "a2e4ef73-6e49-471f-ae32-a06996890e7e"
+    },
+    {
+      "claim_id": "5ef28564-1754-4914-87cc-bff3f820a7b6",
+      "result_id": "ac75df34-96dc-4663-944d-77f73405164f"
+    },
+    {
+      "claim_id": "12646bed-7901-49da-9875-ef847c65b7dc",
+      "result_id": "ac75df34-96dc-4663-944d-77f73405164f"
+    },
+    {
+      "claim_id": "66b08cc0-6ba2-4360-adb4-7ddd44a7e41a",
+      "result_id": "ac75df34-96dc-4663-944d-77f73405164f"
+    },
+    {
+      "claim_id": "6e829bcd-52b3-4151-8ad2-b0c5b8457f38",
+      "result_id": "ac75df34-96dc-4663-944d-77f73405164f"
+    },
+    {
+      "claim_id": "f4756b81-a8b5-47ca-a346-5ba478797fd9",
+      "result_id": "ac75df34-96dc-4663-944d-77f73405164f"
+    },
+    {
+      "claim_id": "fc9c6b60-d632-496d-8e8f-da36a86a4794",
+      "result_id": "ac75df34-96dc-4663-944d-77f73405164f"
+    },
+    {
+      "claim_id": "7c3251a8-87a2-43be-939e-7d9d9546b22a",
+      "result_id": "b294dfa7-b2c3-4376-b1ee-0f346bd06a05"
+    },
+    {
+      "claim_id": "cc1417aa-4985-43b0-aecb-655608918b3f",
+      "result_id": "b294dfa7-b2c3-4376-b1ee-0f346bd06a05"
+    },
+    {
+      "claim_id": "af592d8e-ee92-435a-a4f5-2d1cc340fe44",
+      "result_id": "b294dfa7-b2c3-4376-b1ee-0f346bd06a05"
+    },
+    {
+      "claim_id": "89ef3916-c32f-4cf9-8363-2dd40d9825c6",
+      "result_id": "f2a9a819-5a14-4a3e-9483-c499f520b307"
+    },
+    {
+      "claim_id": "fe897305-edb7-4f54-8893-1d0fb343d158",
+      "result_id": "f2a9a819-5a14-4a3e-9483-c499f520b307"
+    },
+    {
+      "claim_id": "43313b81-2390-4b90-887f-12d807bc5c74",
+      "result_id": "f2a9a819-5a14-4a3e-9483-c499f520b307"
+    },
+    {
+      "claim_id": "ba26b34a-e2ef-4c4d-abfb-1e5cb0aede04",
+      "result_id": "f2a9a819-5a14-4a3e-9483-c499f520b307"
+    },
+    {
+      "claim_id": "c70dbba3-4e74-47cd-8b35-607ce0b3be95",
+      "result_id": "3983ac14-13e2-40ee-977a-d1c121859a0b"
+    },
+    {
+      "claim_id": "d42002e1-b1e2-481b-8f90-78c89efdf6d9",
+      "result_id": "3983ac14-13e2-40ee-977a-d1c121859a0b"
+    },
+    {
+      "claim_id": "731e23ed-a38c-4a96-8555-8a18eb712f68",
+      "result_id": "3aa880ef-796a-42fb-842c-e8c3e2c60189"
+    },
+    {
+      "claim_id": "89e7cd97-b9e5-4242-921d-195aabe63ff9",
+      "result_id": "3aa880ef-796a-42fb-842c-e8c3e2c60189"
+    },
+    {
+      "claim_id": "58e79b1d-7eb3-4993-b2bd-723d10b4eca3",
+      "result_id": "3aa880ef-796a-42fb-842c-e8c3e2c60189"
+    },
+    {
+      "claim_id": "38318eae-01da-4b90-8461-378f70397274",
+      "result_id": "3aa880ef-796a-42fb-842c-e8c3e2c60189"
+    },
+    {
+      "claim_id": "0497f995-9809-4293-ab9d-b2f58f52f3f5",
+      "result_id": "3aa880ef-796a-42fb-842c-e8c3e2c60189"
+    },
+    {
+      "claim_id": "b6f16839-43a3-4790-be98-ebcf61c9d811",
+      "result_id": "3aa880ef-796a-42fb-842c-e8c3e2c60189"
+    },
+    {
+      "claim_id": "a4731565-7b0d-4c34-b5c2-4aaccdcc9979",
+      "result_id": "3aa880ef-796a-42fb-842c-e8c3e2c60189"
+    },
+    {
+      "claim_id": "806ddf52-a24f-4bd7-a28c-0a853a023458",
+      "result_id": "3aa880ef-796a-42fb-842c-e8c3e2c60189"
+    },
+    {
+      "claim_id": "856e4a18-b4ba-44f8-bc8c-01e17aefa373",
+      "result_id": "01ced5d1-8440-4043-b8c3-4fb6148a92eb"
+    },
+    {
+      "claim_id": "767444ae-6edc-475b-8567-f4f1ada9738b",
+      "result_id": "f88d52ea-b730-46a7-9a79-bb6acb8b28a2"
+    },
+    {
+      "claim_id": "448690fa-6ff9-4ead-bb21-56a52c8cb53e",
+      "result_id": "f88d52ea-b730-46a7-9a79-bb6acb8b28a2"
+    },
+    {
+      "claim_id": "63ccc5f6-3b92-40b0-9a80-c818b23ff90e",
+      "result_id": "b8689057-370d-4636-acc4-013cfc065985"
+    },
+    {
+      "claim_id": "a85a78a6-9615-4448-b016-2ce047ecb89f",
+      "result_id": "ac3e348c-80a5-4da2-bf2a-309f10e6110d"
+    },
+    {
+      "claim_id": "325010f3-13df-48b6-84c0-520cfe50bb56",
+      "result_id": "9514551c-4471-4c60-b8c9-2acee11418aa"
+    },
+    {
+      "claim_id": "0bea1081-96c6-4f6f-9d7b-fb586a089c6e",
+      "result_id": "9514551c-4471-4c60-b8c9-2acee11418aa"
+    },
+    {
+      "claim_id": "68647831-3f39-4553-85d4-69bc01be82f6",
+      "result_id": "d5522ce5-9b8a-4cd1-b329-524d16026464"
+    },
+    {
+      "claim_id": "571ffa3c-f2ff-4d21-8c46-f9359bca4849",
+      "result_id": "d5522ce5-9b8a-4cd1-b329-524d16026464"
+    },
+    {
+      "claim_id": "3bb3c6ad-65ce-4810-8655-a64e3ccaf6c5",
+      "result_id": "d5522ce5-9b8a-4cd1-b329-524d16026464"
+    },
+    {
+      "claim_id": "241e6b1a-8054-4946-b0f5-1a3632c126db",
+      "result_id": "0d9c7236-5796-45fa-be7b-41d228a99d50"
+    },
+    {
+      "claim_id": "376184d8-2a83-4e19-954d-e20da76d4f4e",
+      "result_id": "95ec5069-5c9a-4828-bc7e-bbb1a5e7bab1"
+    },
+    {
+      "claim_id": "441ff879-31fa-44bb-b2f5-c435018bf8f2",
+      "result_id": "def80956-9663-4c77-b6ef-13618d8468a2"
+    },
+    {
+      "claim_id": "7b8d5e33-470a-43df-8c9c-d786d8c5e8d8",
+      "result_id": "921a1e38-98e6-4f0f-b749-01ffa81bd963"
+    },
+    {
+      "claim_id": "f87b087e-cd98-4ec6-b70d-bd1cabfb3c72",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "51b852cf-fd46-4847-a936-3fc559207c8f",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "2e1f2a2f-9e2e-418a-b43e-db434917092b",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "7b6af911-9d57-4794-9c80-2ea5bed5e38f",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "36a9c9f2-67d9-49d1-bf46-e04b7e8038dd",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "f4abcc02-8ce8-4f39-af87-51a36d2e828f",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "4f24c97f-6f09-4e9d-bc3f-eb02267617f3",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "af7ed364-1b90-454a-9748-c9520a6b1b1f",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "f7381f63-501c-4de1-894d-4fdd01b7e25a",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "430f5874-c25c-4897-af26-dcc95dc6d739",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "6761a9a3-1fc9-41ca-ac8e-d5464f5d9a01",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "9b7cdd65-4054-4c13-a27d-713faa894e7b",
+      "result_id": "a4e1d3a0-5f64-40a7-ae9e-fb619217c694"
+    },
+    {
+      "claim_id": "b8b11ca7-ab7d-4544-bd1e-635b9391d944",
+      "result_id": "6df4d4b0-ab9e-49f7-bb1c-61aeb9f730fd"
+    },
+    {
+      "claim_id": "dabb14b1-fed7-47a5-a4a9-c62dcc9aba47",
+      "result_id": "6df4d4b0-ab9e-49f7-bb1c-61aeb9f730fd"
+    },
+    {
+      "claim_id": "bf68b23c-c900-4947-b739-61e020f557b6",
+      "result_id": "6df4d4b0-ab9e-49f7-bb1c-61aeb9f730fd"
+    },
+    {
+      "claim_id": "86ce5749-d04d-4f0d-86ae-3b359dd8e94e",
+      "result_id": "6df4d4b0-ab9e-49f7-bb1c-61aeb9f730fd"
+    },
+    {
+      "claim_id": "9536b9d2-b5cd-45c6-82c5-e869688344fd",
+      "result_id": "6df4d4b0-ab9e-49f7-bb1c-61aeb9f730fd"
+    },
+    {
+      "claim_id": "b4026ade-89d6-47db-ad54-859a3c218332",
+      "result_id": "6df4d4b0-ab9e-49f7-bb1c-61aeb9f730fd"
+    },
+    {
+      "claim_id": "77f1ee11-b3d8-4d54-8330-c8f1c3feb14f",
+      "result_id": "6df4d4b0-ab9e-49f7-bb1c-61aeb9f730fd"
+    },
+    {
+      "claim_id": "c4fa40f1-75e7-4016-a7a6-898061e9876c",
+      "result_id": "6df4d4b0-ab9e-49f7-bb1c-61aeb9f730fd"
+    },
+    {
+      "claim_id": "36eff8a0-09ef-4352-a70a-cac489c19105",
+      "result_id": "6df4d4b0-ab9e-49f7-bb1c-61aeb9f730fd"
+    }
+  ],
+  "comparisons": []
+}

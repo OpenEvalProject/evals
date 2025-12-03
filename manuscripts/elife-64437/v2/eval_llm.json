@@ -1,0 +1,434 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "During mitosis in C. elegans intestinal star cells, apical PAR complex proteins (PAR-6, PKC-3, PAR-3) and actin remain apically localized, while apical microtubules and MTOC proteins (including \u03b3-TuRC components, ZYG-9, AIR-1, NOCA-1, PTRN-1, VAB-10B) are transiently removed from the apical surface. Some MTOC proteins relocalize to active centrosomes while others become cytoplasmic. This creates a visible 'midline gap' in MTOC proteins during synchronous star cell divisions that is refilled upon mitotic exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C39-C45 are well-supported by live imaging data presented in Figures 1 and Figure 1\u2014figure supplements showing protein localization during mitosis. The differential behavior of PAR complex proteins versus MTOC proteins during mitosis is clearly documented with multiple protein markers and quantification (Figure 1E-H, Figure 1\u2014figure supplement 2). The transient nature of MTOC removal and gap formation is demonstrated through time-lapse imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Junctional proteins (HMR-1/E-cadherin and DLG-1/Discs large) retain some localization during mitosis but are reduced compared to interphase neighboring cells, with DLG-1 showing the strongest reduction and HMR-1 appearing as thin fluorescent threads at new cell boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by imaging data in Figure 1F and Figure 1\u2014figure supplement 2B, D-E showing junctional protein localization during mitosis with quantification demonstrating significant reduction compared to non-dividing cells. The differential reduction of DLG-1 versus HMR-1 is documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The authors hypothesize that PAR complex proteins (PAR-3, PAR-6, PKC-3) actively mark the apical surface during mitotic remodeling to facilitate the return of apical MTOC function after division, based on their observation that these proteins remain apically localized during mitosis while MTOC proteins are removed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 is well-supported by imaging data (Figure 1G-H, Figure 1\u2014figure supplement 2C, G), but C50 is a hypothesis/speculation rather than a demonstrated result. While the observation that PAR proteins remain apical during mitosis is solid, the mechanistic claim that they 'actively mark' the surface to facilitate MTOC return requires additional functional evidence beyond localization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Intestine-specific depletion of PAR-6, PKC-3, or CDC-42 causes persistent gaps in the apical MTOC after cell division. In control embryos, MTOC gaps formed during synchronous star cell divisions are refilled within 12 minutes, but in PAR-6gut(-) embryos, these gaps persist for at least 24 minutes after mitotic exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C51-C54 are strongly supported by experimental data from tissue-specific protein depletion experiments shown in Figure 2. Time-lapse imaging (Figure 2E-G) clearly demonstrates the differential kinetics of gap closure between control and PAR-6gut(-) embryos with quantification. The use of the ZIF-1/ZF degradation system is well-validated and protein depletion is confirmed (Figure 2\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "PAR-6 and PKC-3 are required for maintaining apical MTOC continuity during intestinal elongation in both dividing star cells and non-dividing non-star cells. In PAR-6gut(-) and PKC-3gut(-) embryos, midline gaps in MTOC proteins form and increase over time during elongation, with 55.5% of PAR-6gut(-) and 44.4% of PKC-3gut(-) embryos showing one or more gaps compared to 0% of controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C55-C63 are well-supported by extensive imaging and quantification data in Figure 3. Time-lapse imaging demonstrates gap formation during elongation (Figure 3D-E), and stringent quantitative criteria are used to define gaps (Figure 3F-H). The observation that gaps form in both star and non-star cells, and increase over time specifically in PAR-6gut(-) embryos, is clearly documented. The methodology for gap quantification is described in detail in Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C115"
+    ],
+    "result": "Midline gaps in MTOC proteins occur at cell-cell interfaces without physical cell separation. Star cells show higher gap frequency than non-star cells in all PAR complex depletion backgrounds. Blocking star cell divisions with cdc-25.2(0) mutation reduces the difference in gap frequency between star and non-star cells in PAR-6gut(-) embryos, suggesting PAR-6 is specifically required to protect MTOC continuity from disruption by cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 and C115 are supported by data in Figure 4 using membrane markers to map gap locations and the cdc-25.2(0) genetic experiment. The membrane marker GFP::CAAX clearly spans gaps (Figure 4B-D), demonstrating no physical separation. Gap frequency analysis (Figure 4F, I) shows higher frequency in star cells, and the cdc-25.2(0) rescue experiment (Figure 4G-I) provides genetic evidence for the role of division in gap formation. However, the causal interpretation in C67 and C115 is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In PAR-6gut(-) embryos, gaps form not only in MTOC proteins but also in other apical markers including ACT-5/actin and PAR-3, suggesting PAR-6 is essential for general continuity of the apical domain during elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by imaging data in Figure 5A-C showing gaps in multiple apical markers (ACT-5, PAR-3) that overlap with MTOC protein gaps. The inference in C70 that PAR-6 is essential for 'general' apical continuity is reasonable given the multiple markers affected, though the term 'general' could be more precisely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In PAR-6gut(-) embryos, 92% of MTOC gaps span cell-cell interfaces. Junctional proteins (HMR-1, DLG-1) are generally absent from these gaps, indicating that junctional complexes do not spread into and fill midline gaps in apical proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by imaging and quantification data in Figure 4F and Figure 5D-F. The localization of junctional markers relative to MTOC gaps is clearly shown, with HMR-1 localizing to the outer edge of TBG-1 signal and DLG-1 being absent from most gaps. The inference in C74 is reasonable based on the localization data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In PAR-6gut(-) embryos, basolateral markers LGL-1 and LET-413 show significantly elevated signal intensity in midline gaps (similar to lateral surface levels) and are also observed at midline non-gap regions where apical markers localize, suggesting a general failure of basolateral protein exclusion from the apical surface rather than specific invasion into gaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by imaging and quantification data in Figure 5G-J. The signal intensity measurements clearly show elevated LGL-1 and LET-413 in gaps compared to control midlines, and the presence of these proteins at non-gap midline regions is documented. The interpretation in C78 is a reasonable inference from the data, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "PAR-6gut(-) and PKC-3gut(-) larvae arrest as L1 larvae with intestinal luminal obstructions that block food passage. In 83% of PAR-6gut(-) and 93% of PKC-3gut(-) larvae, food is trapped at the anterior intestine (int1), while 98% of control larvae have normal food passage. CDC-42gut(-) larvae show a milder phenotype with only 39% arresting at L1. Most larvae retain barrier function with minimal leakage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C79-C85 are well-supported by larval arrest assays (Figure 6A, Figure 6\u2014source data 1) and feeding assays (Figure 6B-G', Figure 6\u2014source data 2). The phenotypic penetrance is clearly quantified across multiple trials. The inference in C84 about retained barrier function is reasonable given the low leakage frequency, though this is somewhat indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Blocking star cell divisions with cdc-25.2(0) in PAR-6gut(-) embryos shifts the luminal obstruction phenotype from predominantly int1 (83%) to more posterior locations (25% vs 5% in PAR-6gut(-) alone), suggesting that defects from loss of PAR-6 in dividing star cells can be partially rescued by preventing division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by feeding assay data in Figure 6B, H showing the shift in obstruction location when divisions are blocked. The interpretation in C87 is a reasonable inference from the genetic rescue experiment, though the mechanism of rescue is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "PAR-6 is required during elongation itself and not just during earlier intestinal development, as demonstrated by later-stage depletion (PAR-6late gut(-)) using asp-1 promoter resulting in partially penetrant larval arrest (16%) and obstructed lumen phenotypes (16%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by the late depletion experiment shown in Figure 6A, B, I, I' and Figure 6\u2014figure supplement 1A. The timing of degradation is documented, and the partially penetrant phenotype is consistent with later-stage requirement. However, the penetrance is much lower than early depletion, which could reflect incomplete degradation or a lesser requirement at later stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "PKC-3 rescue experiments demonstrate that wild-type PKC-3 rescues larval arrest and luminal defects, while PAR-6-binding mutant (\u0394PB) and kinase-dead mutant (K282A) show minimal rescue despite restoring apical PAR-6 localization. The G336N kinase mutant shows partial rescue similar to CDC-42gut(-) phenotype. These results demonstrate that apical PAR-6 localization is insufficient for function and that both PKC-3 kinase activity and PAR-6 binding are critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 are supported by comprehensive rescue experiments in Figure 7 and Figure 7\u2014figure supplement 1. Multiple independent transgenic lines were tested for each construct, and both larval arrest and feeding assays were performed. The key finding that PAR-6 localization is restored by mutant PKC-3 but function is not rescued (C95-C96) is well-demonstrated. However, the interpretation of G336N as specifically affecting kinase activity (C92, C155) versus being hypomorphic (C156) remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "PAR-6gut(-) and PKC-3gut(-) larval intestines have lumens that are pinched shut in multiple places with edematous swellings. All PAR-6gut(-) and PKC-3gut(-) intestines have one or more int interface with constricted lumen, and most have lumens pinched shut within int1. CDC-42gut(-) larvae show milder defects. PAR-6 and PKC-3 are essential for building an intestine with a continuous open lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 are supported by detailed morphological analysis in Figure 8 using membrane markers and DIC imaging. The quantification of luminal constrictions at int interfaces (Figure 8F-G) is systematic and clearly shows the severity and location of defects. The conclusion in C101 is well-supported by the combined data from embryonic gaps and larval luminal defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "In PAR-6gut(-) L1 larvae, apical markers (PAR-3, ACT-5) show discontinuous localization with gaps, junctional marker DLG-1 shows discontinuous bands between int rings, and basolateral marker LGL-1 shows partial midline localization. These results suggest that early embryonic gaps in apical and junctional proteins persist through morphogenesis, leading to discontinuous apical surfaces and junctions in larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 are supported by larval imaging data in Figure 9 showing persistent defects in multiple markers. The correlation between embryonic gaps and larval defects (C107, C133) is demonstrated through the progression of phenotypes, though direct lineage tracing of specific gaps from embryo to larva is not performed. The inference is reasonable but somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Tissue-specific protein degradation was critical for this study, allowing bypass of embryonic lethality from ubiquitous PAR-6, PKC-3, or CDC-42 depletion. This approach revealed that PAR-6 and PKC-3 are required embryonically to build a functional intestine but appear dispensable once built, suggesting embryonic and larval intestines elongate via different mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 are supported by the successful application of tissue-specific degradation and comparison with prior work showing embryonic lethality from ubiquitous depletion (C109, citations provided). The inference about differential mechanisms (C112) is reasonable based on the late depletion experiments showing reduced penetrance, though direct mechanistic evidence is not provided. The caveat that tissue-specific degradation is not equivalent to null (C146) is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Dividing star cells are particularly sensitive to PAR-6, PKC-3, and CDC-42 depletion. Although star cells contribute only three of nine int rings, over half of midline gaps in 1.5-fold embryos affect star cell daughters. Cell division appears to cause this high gap frequency as inhibiting divisions ameliorates gaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by gap frequency analysis (Figure 4F) and the cdc-25.2(0) genetic experiment (Figure 4I). The disproportionate effect on star cells is clearly documented. However, the causal statement in C115 is somewhat inferential - while blocking divisions reduces gaps, this could reflect either a direct effect of division or an indirect effect of having fewer cells to maintain continuity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C148"
+    ],
+    "result": "The primary defect in PAR-6-, PKC-3-, and CDC-42-depleted intestines is failure to maintain coordination of apicobasal polarity between cells. Apical and junctional gaps correlate with luminal gaps that block food passage. Despite severe luminal defects, barrier function is largely intact with rare leakage. DLG-1 appears to recover junction-like localization in larvae, suggesting a secondary mechanism may drive septate-like junction formation independent of PAR-6 and PKC-3. These proteins maintain apical and junctional continuity rather than being required for lumen formation per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C138 and C148 represent the authors' synthesis of results. The correlation between gaps and luminal defects (C133) is well-documented. The retention of barrier function (C134) is supported by low leakage frequency, though this is somewhat unexpected given junction defects (C135). The recovery of DLG-1 in larvae (C136-C137) is observed, and the speculation about secondary mechanisms (C138) is reasonable but not directly tested. The overall conclusion (C148) is well-supported by the totality of data, though the caveat about tissue-specific degradation not being equivalent to null (C146-C147) is important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "CDC-42 shows tissue-specific requirements distinct from other tissues. While CDC-42 is required for PAR complex localization in many tissues, it is not required for apical polarity establishment in the intestine. Intestine-specific CDC-42 depletion revealed a role in promoting apical continuity after polarity establishment. CDC-42gut(-), PAR-6gut(-), and PKC-3gut(-) embryos show similar embryonic gaps, but only PAR-6gut(-) and PKC-3gut(-) larvae show increased gaps, suggesting CDC-42 is required early while PAR-6 and PKC-3 are required throughout elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C153 are supported by comparison of phenotypes across genotypes (Figures 3-9) and prior work (citations provided). The differential severity in larvae (C152) is clearly documented. The interpretation about temporal requirements (C153) is a reasonable inference from the data, though direct temporal analysis of CDC-42 requirement is not performed. The tissue-specific difference in CDC-42 requirement (C150-C151) is well-established by prior work and confirmed here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The differential rescue by PKC-3 kinase mutants suggests CDC-42 may activate PKC-3 kinase activity, with PAR-6 and PKC-3 also providing kinase-independent activity. The G336N mutant partially rescues with phenotype similar to CDC-42gut(-), while K282A completely abolishes rescue. However, G336N could be acting as a hypomorphic mutation rather than specifically affecting kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C154-C156 represent speculation about mechanisms based on the rescue data (Figure 7). While the differential rescue by G336N versus K282A is clearly demonstrated (C155), the mechanistic interpretations (C154, C156) are speculative. The similarity between G336N rescue and CDC-42gut(-) phenotype is noted but does not definitively establish that CDC-42 activates kinase activity. The alternative explanation that G336N is hypomorphic (C156) is equally plausible. Additional biochemical experiments would be needed to distinguish these possibilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors propose several speculative mechanisms for why dividing cells are sensitive to PAR complex depletion: (1) loss of apical microtubules during mitosis weakens epithelial integrity, making cells more dependent on PAR complex; (2) apical microtubules and PAR-6 may redundantly maintain the apical domain; (3) division requires new junction formation that relies on PAR complex proteins; (4) synchronous division of neighboring cells removes positional information from junctions. Supporting these ideas, HMR-1 and DLG-1 levels are drastically reduced during synchronous divisions, and PAR-6gut(-) gaps form during synchronous but not asynchronous divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C126 mix established facts (C116, C118, C121, C123-C124) with speculation (C117, C119, C120, C122, C125-C126). The observations about junctional protein reduction during synchronous divisions (C123) and gap formation only during synchronous divisions in PAR-6gut(-) (C124) are well-supported by data (Figure 1\u2014figure supplement 2, Figure 2\u2014figure supplement 2). However, the mechanistic interpretations (C117, C119, C122, C125-C126) are speculative and not directly tested. These represent reasonable hypotheses for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The midline gap phenotype becomes more severe during the threefold increase in intestine length to L1 stage. Later PAR-6 depletion also causes discontinuous lumens, confirming continued requirement during elongation. Most gaps occur at anterior-posterior cell interfaces without physical separation. Basolateral protein localization to gaps is not specific, suggesting compromised apical/junctional expansion allows basolateral protein diffusion rather than basolateral invasion creating gaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 are supported by comparison of embryonic and larval phenotypes (Figures 3, 8-9) and late depletion experiments (Figure 6\u2014figure supplement 1). The observation about gap locations (C129) is documented in Figure 4F. The interpretation about basolateral protein localization (C130-C131) is reasonable based on the observation that LGL-1 and LET-413 are present at both gap and non-gap midline regions (Figure 5G-J), though the mechanistic speculation in C131 is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The authors speculate about mechanisms of lumen formation and barrier function in PAR-6gut(-) larvae. They propose the Crumbs complex as a candidate parallel pathway for junction formation. They note that luminal regions with apical proteins form despite PAR-6 loss, suggesting lumenogenesis machinery is intact. They favor a model where edematous swellings result from normal lumenogenesis with no exit route for luminal fluid, rather than dysregulated luminal expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C145 are largely speculative. The Crumbs complex as a candidate pathway (C139-C141) is reasonable speculation based on prior work but not tested here. The observation that luminal regions with apical proteins form (C142) is supported by imaging data (Figure 9), and the inference about intact lumenogenesis is reasonable. However, the model for edematous swellings (C143-C145) is speculative and not directly tested. The observation that luminal expansion is usually associated with increased apical proteins (C144) makes the edema somewhat paradoxical, and the proposed model (C145) is one possible explanation but not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The manuscript provides extensive background on epithelial polarity, the PAR complex, C. elegans intestinal development, and prior work on PAR complex function in the intestine. This includes established knowledge about epithelial cell polarity, junctions, microtubule organization, PAR complex composition and function, and C. elegans intestinal anatomy and development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C38 represent background knowledge and prior work, all supported by appropriate citations. These provide essential context for the study but are not novel results. The anatomical descriptions of C. elegans intestine (C31-C38) are well-established and supported by the authors' own imaging (Figure 1, Figure 1\u2014figure supplements).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The authors conclude that apicobasal polarity regulators are highly conserved yet differentially required across organisms and tissues, with the same gene having different functions in different contexts. They emphasize the importance of detailed studies of diverse epithelia for understanding polarity protein function in development and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 represent the authors' perspective on the broader significance of their work. C157-C158 are supported by citations to prior work showing differential requirements and context-dependent functions. C159 is a statement about the value of future research that is reasonable given the findings of this study demonstrating tissue-specific requirements.",
+    "result_type": "MINOR"
+  }
+]

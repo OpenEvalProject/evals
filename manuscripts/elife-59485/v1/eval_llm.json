@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Extensive natural variation in seed germination time variability exists among Arabidopsis accessions and MAGIC lines, with CVs ranging from 0.09 to 1.7. This variation is reproducible across independent experiments and storage conditions, with broad-sense heritability estimated at ~40%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C33 provide converging experimental evidence from multiple independent experiments showing reproducible variation in germination time variability across hundreds of lines. The heritability estimate (C33) is appropriately compared to published values, and reproducibility is demonstrated across different seed harvests (C31) and storage periods (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Variability in germination time arises independently of positional or developmental gradients within plants or siliques. Seeds from individual siliques show the full range of germination times observed in whole-plant samples, with no consistent differences between top and bottom halves of siliques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by experimental data showing that variability exists within single siliques and is not dependent on position along the silique. The experimental design appropriately controls for positional effects, though the mechanism generating this variability remains unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Within the MAGIC population, germination time variability (CV) shows weak correlations with modal germination time and percentage germination, but these traits can be uncoupled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by statistical analysis and visualization of the data (Figure 3). The weak correlations are quantified, and specific examples demonstrate that lines can have similar modes but different CVs, supporting the conclusion that these traits can be partially decoupled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "QTL mapping identified two genetic loci contributing to germination time variability: one on Chr3 (~16 Mb, accounting for ~14% of variance) and one on Chr5 (~18.6-19.8 Mb, accounting for ~9% of variance). The Chr3 QTL affects multiple germination traits, while the Chr5 QTL specifically affects variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42-C55 are supported by QTL mapping in MAGIC lines and independent validation through bulk-segregant analysis in F2 populations. The statistical significance is appropriately assessed with genome-wide thresholds. The Chr5 QTL is independently validated (C52-C54), strengthening the conclusion. Together, the two QTL account for only 23% of variance (C134), indicating additional loci likely exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C72",
+      "C73"
+    ],
+    "result": "Candidate genes at the identified QTL (ANAC060 at Chr3, DOG1 and AHG1 at Chr5) are implicated in modulating ABA sensitivity. Mutant analysis shows that dog1 mutants have reduced CV and reduced ABA sensitivity, while ahg1 mutants show increased CV and increased ABA sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C56-C68, C72-C73 are based on literature citations for candidate gene functions (C57-C63) and experimental testing of mutants (C64-C68). While dog1 and ahg1 mutants show effects consistent with altered ABA sensitivity (C64-C68), the anac060 mutant shows inconsistent phenotypes depending on storage conditions (C69-C71), weakening support for ANAC060 as the causal gene. The connection between candidate genes and QTL effects remains correlative rather than definitively causal, as the natural allelic variants have not been directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "A stochastic mathematical model of the ABA-GA network shows that modulating ABA sensitivity can generate the range of germination time distributions observed experimentally. Varying the ABA threshold for Integrator production causes correlated effects on CV and mode, producing distributions from less variable to more variable that qualitatively match experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C74-C84 describe the model structure and its ability to reproduce experimental observations. The model is appropriately justified based on known biology (C75), and simulations demonstrate that varying ABA sensitivity generates distributions matching experimental data (C82-C84). However, the model is simplified and represents multiple proteins as a single 'Integrator' variable, which limits mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C102",
+      "C103"
+    ],
+    "result": "The model operates in monostable or bistable regimes depending on ABA sensitivity. In the bistable regime, seeds can remain in a non-germination state until stochastic fluctuations drive transition to germination, resulting in higher CV and mode. High variability in germination time is associated with the ABA-GA network operating in the bistable regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93, C102-C103 describe the model's dynamical behavior and its relationship to germination variability. The bistable switch mechanism is well-characterized through nullcline analysis and simulations (Figure 5\u2014figure supplement 1). The hypothesis that natural variation arises from differences in ABA sensitivity affecting bistability (C92-C93) is a reasonable inference from the modeling results, though it remains speculative without direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Parameter screens reveal that multiple model parameters beyond ABA sensitivity can affect the relationship between CV and mode. Some parameters show positively correlated effects, others show anti-correlated or decoupled effects, capturing the complex relationships observed in MAGIC lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C101 are supported by extensive parameter screens (Figure 5\u2014figure supplements 2-4). The analysis demonstrates that the model can capture diverse relationships between germination traits depending on which parameters vary, consistent with the weak correlations observed experimentally. This suggests that undetected genetic variation in multiple network components may contribute to the observed phenotypic variation (C135).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C118"
+    ],
+    "result": "Model predictions on exogenous ABA addition were validated experimentally. ABA treatment increases CV in low variability lines, making their distributions similar to high variability lines in control conditions. For high variability lines, ABA increases mode but has little effect on CV. The overall effects of exogenous ABA were qualitatively similar between model and experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C104-C112, C118 demonstrate good qualitative agreement between model predictions and experimental observations for ABA dose-response experiments. The model correctly predicts that ABA will increase CV in low variability lines (C109-C110) and have less effect on CV in high variability lines (C111-C112). However, the agreement is qualitative rather than quantitative, and some high variability lines show slight decreases in CV with ABA (C111), which is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Model predictions on exogenous GA addition were validated experimentally. GA treatment decreases CV and mode in high variability lines by destabilizing the non-germination steady state. For low variability lines, GA has little effect as these lines already germinate with low variability and high percentage germination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 show good qualitative agreement between model predictions and experimental observations for GA dose-response experiments. The model correctly predicts that GA will decrease variability in high variability lines (C115) and have minimal effect on low variability lines (C117). The mechanistic explanation through destabilization of the non-germination state (C114) is supported by nullcline analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Genetic perturbations of ABA and GA levels validate model predictions. Loss of ABA catabolism enzymes (cyp707a1, cyp707a1 cyp707a2) increases CV and mode, while loss of GA biosynthesis enzymes (ga3ox1-3 ga3ox2-1) increases CV and mode. These effects are consistent with model predictions for altered ABA and GA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 provide genetic validation of the model through mutant analysis. The effects of cyp707a mutants (increased ABA) and ga3ox mutants (decreased GA) on germination distributions are consistent with model predictions and with the hormone dose-response experiments. This convergent evidence from multiple approaches strengthens support for the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Germination time distributions are genetically controlled and can vary greatly between lines. Candidate genes underlying identified loci may alter germination time through influencing ABA sensitivity. Modeling and experiments show that perturbation of the ABA-GA network can modulate variability in germination times in a predictable manner, suggesting that high or low variability could be specifically selected for in the wild and in crop breeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 summarize the main findings of the study. The genetic control of germination distributions is well-supported by the reproducibility data and QTL mapping (C126). The role of ABA sensitivity is supported by candidate gene analysis and mutant studies, though not definitively proven (C127). The predictable modulation of variability through the ABA-GA network is supported by the validated model (C128). The suggestion about selection (C129) is a reasonable inference but remains speculative without direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Variability in germination time exists even for seeds from the same silique, suggesting it can arise independently from developmental gradients in the plant. Seeds from proximal and distal halves of siliques have similar germination behaviors, indicating variability is likely not caused by gradients of regulatory molecules along the fruit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 are supported by experimental data showing variability within single siliques and no consistent differences between silique halves (Figure 2). This rules out simple positional or developmental gradient explanations for the observed variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "The Chr3 and Chr5 QTL together account for only 23% of the variance in CV in the MAGIC lines. Undetected genetic variation in multiple components of the ABA-GA network may contribute to the variation in germination time distributions and the complex relationship between CV, mode, and percentage germination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 acknowledge the limitations of the QTL mapping. The low percentage of variance explained (C134) is clearly stated and indicates that additional loci exist. The suggestion that undetected variation in multiple network components contributes to the observed phenotypic variation (C135) is a reasonable inference supported by the parameter screen results showing that multiple parameters can affect germination traits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "The model behaves as a time-dependent toggle switch with stochastic fluctuations, which can be used as a framework to understand variable germination behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 describe the model's behavior and its utility as a conceptual framework. The time-dependent toggle switch behavior is well-characterized through the modeling analysis, and the framework successfully accounts for the observed variability in germination times.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "The level of variability in germination times is an important trait that does not always correlate with percentage germination. Future work should characterize the effects of germination regulators on CV as well as on percentage germination and average germination time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 emphasize the importance of measuring variability as a distinct trait from percentage germination. This is well-supported by the data showing weak correlations between these traits (C39-C41). The recommendation for future work (C145) is a reasonable suggestion based on the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148"
+    ],
+    "result": "Germination time is a plausible system for studying the genetics of inter-individual variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C148 is supported by the demonstration that germination time variability is a robust, heritable trait that varies between natural accessions. The successful QTL mapping and model validation establish germination time as a tractable system for studying phenotypic variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C124",
+      "C125"
+    ],
+    "result": "Phenotypic variability among genetically identical individuals can promote species survival in unpredictable environments through bet-hedging strategies. In plants, theoretical and ecological studies support that variability in germination time is advantageous in unpredictable environments. This contrasts with agriculture, where minimal variability is desirable for crop uniformity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C17, C124-C125 provide context from the literature on bet-hedging and phenotypic variability. These claims are appropriately supported by citations to theoretical and empirical studies. The contrast between wild and agricultural contexts (C125) is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The decision to germinate is controlled by the balance between ABA (which represses germination) and GA (which promotes germination). These hormones function in a mutually antagonistic manner, and the ABA-GA network can act as a bistable switch with two possible states: dormant (high ABA, low GA) or germinating (low ABA, high GA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C18-C27 summarize established knowledge about seed dormancy and the ABA-GA network. These claims are appropriately supported by citations to the literature and provide necessary background for the study. The bistable switch behavior has been previously demonstrated experimentally and through modeling (C25-C27).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "Previous studies showed that in some Arabidopsis accessions, seeds matured on primary inflorescences had different germination behaviors than those on branches, and developmental differences along the inflorescence could create differences in seed germination time between fruits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 cite previous work on positional effects in Arabidopsis. These claims provide context for the current study's investigation of within-silique variability and are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Previous work suggests that feedback on ABA biosynthesis and catabolism can modulate variability in ABA concentrations, and that genes involved in ABA response show high variability in expression between seedlings. The decision to germinate is likely made by groups of cells in the embryonic root, though it is unclear how noise in individual cells influences this multicellular decision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 cite relevant literature on ABA regulation, gene expression variability, and the multicellular nature of germination decisions. These claims provide context for discussing the model's limitations and potential mechanisms of variability generation. The citations are appropriate and the discussion acknowledges uncertainties (C139).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146",
+      "C147"
+    ],
+    "result": "Multiple aspects of Arabidopsis development display phenotypic variability. A common feature across studies is that multiple QTL affect variability of a trait, with some also affecting the average trait value and others not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C147 cite literature on phenotypic variability in other Arabidopsis traits and compare the findings to the current study. The comparison is appropriate and helps contextualize the results within the broader field of variability genetics.",
+    "result_type": "MINOR"
+  }
+]

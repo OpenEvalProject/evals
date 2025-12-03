@@ -1,0 +1,1923 @@
+{
+  "submission": {
+    "id": "ce70e83a-33b0-413f-a106-96a2cb398a97",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:15:20.950474Z",
+    "updated_at": "2025-12-03T11:15:20.950474Z"
+  },
+  "content": [
+    {
+      "id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "submission_id": "ce70e83a-33b0-413f-a106-96a2cb398a97",
+      "content_type": "manuscript",
+      "content_text": "# PEAR, a flexible fluorescent reporter for the identification and enrichment of successfully prime edited cells\n\n## Authors\n\n- Dorottya Anna Simon<sup>1</sup> ([ORCID: 0000-0002-0252-0072](https://orcid.org/0000-0002-0252-0072))\n- Andr\u00e1s T\u00e1las<sup>1</sup> ([ORCID: 0000-0003-0851-8333](https://orcid.org/0000-0003-0851-8333)) \u2020\n- P\u00e9ter Istv\u00e1n Kulcs\u00e1r<sup>1</sup>\n- Zsuzsanna Bicz\u00f3k<sup>1</sup>\n- Sarah Laura Krausz<sup>1</sup>\n- Gy\u00f6rgy V\u00e1rady<sup>1</sup>\n- Ervin Welker<sup>1</sup> ([ORCID: 0000-0001-9874-8794](https://orcid.org/0000-0001-9874-8794)) \u2020\n\n### Affiliations\n\n1. Institute of Enzymology, Research Centre for Natural Sciences Budapest Hungary ([ROR:03zwxja46](https://ror.org/03zwxja46))\n2. ProteoScientia Budapest Hungary\n3. School of Ph.D. Studies, Semmelweis University Budapest Hungary ([ROR:01g9ty582](https://ror.org/01g9ty582))\n4. Biospiral-2006 Szeged Hungary\n5. Institute of Biochemistry, Biological Research Centre Szeged Hungary ([ROR:016gb1631](https://ror.org/016gb1631))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrime editing is a recently developed CRISPR/Cas9 based gene engineering tool that allows the introduction of short insertions, deletions, and substitutions into the genome. However, the efficiency of prime editing, which typically achieves editing rates of around 10%\u201330%, has not matched its versatility. Here, we introduce the prime editor activity reporter (PEAR), a sensitive fluorescent tool for identifying single cells with prime editing activity. PEAR has no background fluorescence and specifically indicates prime editing events. Its design provides apparently unlimited flexibility for sequence variation along the entire length of the spacer sequence, making it uniquely suited for systematic investigation of sequence features that influence prime editing activity. The use of PEAR as an enrichment marker for prime editing can increase the edited population by up to 84%, thus significantly improving the applicability of prime editing for basic research and biotechnological applications.\n\n## Introduction\n\nDiscovery of CRISPR systems in bacteria and archaea has not only drastically increased the spectrum of organisms that we can genetically modify but it has also equipped us with a simple tool for the introduction of a variety of different types of modifications into the genome (Cong et al., 2013; Mali et al., 2013; Wang et al., 2013). Many of the CRISPR-based approaches rely on generating double-stranded DNA breaks that are usually accompanied by genome-wide off-target editing (Tsai et al., 2015; Kim et al., 2015; Kleinstiver et al., 2016b; Tsai et al., 2017). Recently, more precise CRISPR tools\u2014base (Komor et al., 2016; Gaudelli et al., 2017) and prime (Anzalone et al., 2019) editors\u2014have been developed, and these enzymes can introduce modifications into the DNA with a base pair resolution without the requirement of donor DNA templates or the introduction of double-stranded DNA breaks. While current base editor (BE) variants provide efficient editing, they are restricted to certain substitution mutations (Komor et al., 2016; Gaudelli et al., 2017; Kurt et al., 2021; Zhao et al., 2021).\n\nIn contrast, prime editors (PEs) can introduce all types of substitutions and/or precise insertions/deletions (indels), however, their efficiency lags behind that of BEs. Prime editor 2 (PE2) consists of a nickase version of Streptococcus pyogenes Cas9 (SpCas9) fused to a reverse transcriptase enzyme (Anzalone et al., 2019). The fused reverse transcriptase can extend the nicked DNA strand using an RNA template that is located on the 3\u2032 terminus of an extended single-guide RNA (sgRNA), called the prime editing sgRNA (pegRNA). By careful design of the pegRNA, modifications can be introduced downstream of the nick generated on the non-targeted DNA strand. The 3\u2032 end of the pegRNA, that is complementary to the non-targeted DNA strand, consists of the reverse transcriptase template (RT) and the primer binding site (PBS). The RT, which contains the mutation(s) to be introduced, also comprises the protospacer adjacent motif (PAM). The PBS is complementary to the 3\u2032 end of the nicked non-targeted DNA strand, with which it forms a hybrid DNA-RNA helix. The optimal length of the PBS and the RT varies from target to target and requires extensive optimization for each different target. The efficiency of prime editing can be increased by nicking the non-edited strand (prime editor 3\u2014PE3) at the expense of potentially generating unwanted indels at the targeted locus (Anzalone et al., 2019). The effect of the nicking varies depending on its position and it requires further optimization. In some cases, the efficiency of prime editing can be further increased by also altering the PAM sequence with the desired mutation this may prevent the PE from nicking the sequence again. This method can reduce the chance of introducing unwanted indels alongside the intended mutations, thus increasing the occurrence of precise modifications (Anzalone et al., 2019).\n\nThe development of improved PE variants can be forecasted in view of the history of BEs which are now available with highly improved features and efficiency (Kim et al., 2017; Komor et al., 2017; Koblan et al., 2018; Huang et al., 2019; Gehrke et al., 2018; Zafra et al., 2018; Gaudelli et al., 2020). The aim of our study was to develop a reporter system for an easy, fluorescence-based detection of prime editing outcomes that allows maximum flexibility for the target sequences and pegRNA designs to be tested on it. Several systems have been developed for reporting base editing that use BEs for the generation or alteration of a start or stop codon (Katti et al., 2020; Wang et al., 2020), or to rescue a disruptive amino acid and subsequently recover functions of antibiotic resistance genes or fluorescence proteins (Martin et al., 2019). Alternatively, a non-synonymous mutation in the chromophore of a fluorescent protein that induces fluorescence spectral change has also been explored as a method to monitor base editing activity (Coelho et al., 2018; Standage-Beier et al., 2019). Reporter systems have also been demonstrated for prime editing, but they were restricted to very few target sequences (Lin et al., 2020; S\u00fcr\u00fcn et al., 2020) and/or showed a rather low signal (Katti et al., 2020).\n\nWe also wanted to find out whether prime edited mammalian cells could be identified and enriched by using a plasmid-based surrogate marker for chromosomal DNA modifications, as demonstrated before with Cas nucleases (Ramakrishna et al., 2014; Grav et al., 2015) and BEs (Katti et al., 2020; Coelho et al., 2018; St Martin et al., 2018; T\u00e1las et al., 2021).\n\n## Results\n\nWe aimed to develop a reporter system that possesses several key features. It should be a transient plasmid-based system that is not restricted to one or a few cell lines nor does it require extensive work, such as the generation of cell lines. It needs to be based on a gain-of-function fluorescent signal with minimal background so it can be detected in the timeframe of a transient system. The sequence requirements of efficient prime editing are not yet fully understood (Anzalone et al., 2019; Kim et al., 2021); thus, for the widespread application of a reporter system, it is crucial that the sequence of the target and the flanking nucleotides of the position to be edited can be freely interchanged. We have recently developed a base editor activity reporter (BEAR), which meets these criteria (T\u00e1las et al., 2021), and it has the potential to be converted into a tool suitable for reporting on prime editing activity. BEAR is based on a split GFP protein separated by the last intron of the mouse Vim gene. The sequence of the functional splice donor site (or 5\u2032 splice site) is altered in such way, that splicing and therefore the GFP fluorescence is disrupted, however, they can be restored by applying adenine or cytosine BEs (Figure 1\u2014figure supplement 1A). Sequence alterations in the intronic sequence are well tolerated, which gave us the flexibility to investigate numerous target sequences. Using the information acquired during the development of the BEAR system (T\u00e1las et al., 2021), we have designed a plasmid that contains an inactive splice site, which can be activated by the action of a PE harboring an appropriately designed pegRNA (Figure 1A). Cells containing plasmids with activated splice site sequences will then be able to efficiently express GFP, which can be quantified by flow cytometry. Therefore, we name assays that exploit this design as prime editor activity reporters (PEARs).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the PEAR. The mechanism of PEAR is based on the same concept as BEAR (see Figure 1\u2014figure supplement 1A and B), and it contains the same inactive splice site, shown in (A). PE can revert the \u2018G-AC-AAGT\u2019 sequence to the canonical \u2018G-GT-AAGT\u2019 splice site. Prime editing occurs downstream of the cut site in the target; hence, this method enables us to position the spacer sequence within the intron, thus, the entire length of the spacer (shown as \u2018N\u2019-s) is freely adjustable in PEAR. The altered bases of the splice site are shown in red, the edited bases are shown in blue, and the PAM sequence is shown as dark green letters, the nCas9 is blue and the fused reverse transcriptase is orange. (B) Optimization of PBS, RT, and complementary DNA strand nicking on the PEAR-GFP plasmid. The heatmap shows the average percentage of GFP-positive cells of three replicates of transfections with the PEAR-GFP plasmid in combination with PE vectors which also contain the different pegRNAs and the sgRNAs for secondary nicking. The position of the second nick is given in relation to the first nick. Positive values indicate 3\u2032, negative values indicate 5\u2032 direction on the targeted DNA. When no second nick was introduced, it is indicated as \u2018no nick\u2019. (C, D) Flow cytometry measurements of HEK293T cells transfected with active (positive control) or with inactive PEAR plasmids either along with nCas9 for negative controls or with PE2 vectors (black, gray, or green columns, respectively). (C) In the PEAR system, GFP fluorescence can be restored from various inactive splice sequences not only by substitutions but also by insertions/deletions. Each inactive sequence (gray columns) was corrected (green columns) to the canonical splice site by PE2 with the optimal pegRNA (pegRNA 1) from (B). The edited sequences are shown next to the columns. Red indicates inserted, blue substituted, and purple deleted bases. (D) Prime editing can result in various active splice sequences, further demonstrating the sequence flexibility of the PEAR system. Based on T\u00e1las et al., 2021, four additional active splice site variants were selected. To generate suitable inactive plasmids, splicing was disrupted by systematically replacing the 5\u2032-GT splice donor site to 5\u2032-AC and 5\u2032-CT (negative controls with inactive sequences, gray columns). With the appropriate pegRNAs, PE2 was able to restore GFP fluorescence in every case (green columns). Letters highlighted in blue indicate the bases of the canonical splice donor site and the flanking sequences which influence splicing the most: 5\u2032-G-GT-AAGT-3\u2032; the altered bases of the inactive sequences are bold, and bases in the active sequences that are reverted by PE2 are underlined. (C, D) Columns represent means \u00b1 SD of three parallel transfections (white circles). For all measured values see Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic representation of the BEAR. BEAR consists of a split GFP coding sequence separated by an intron, of which the 5\u2032 splice donor site (G-GT-AAGT) is altered, resulting in an inactive splice site and a dysfunctional protein (gray). ABE converts the inactive splice site into a functional one. Here, the \u2018G-AC-AAGT\u2019 inactive splice site is illustrated, which can be modified by ABE to \u2018G-GC-AAGT,\u2019 which is a functional non-canonical splice site, and hence, restores GFP expression (green). In this assay, BEs act on the sense strand of the DNA. The altered bases of the splice site are shown in red, the edited base is shown in blue, and the variable bases in the sequence of the spacer are shown as \u2018N\u2019-s. The PAM sequence is dark green, nCas9 is blue, and the fused tadA deaminase is purple. (B) Detailed view of the 5\u2032 splice site and the surrounding sequences of the BEAR-GFP plasmid. The 3\u2032 end of the first exon of GFP is shown in green, the intron is shown as a dashed line. The spacer sequence and the target sequence are shown in gray, the PAM is green, and the inactive splice site is red. The Cas9 nick site is indicated by a black arrow. (C) Detailed view of the 5\u2032 splice site and the surrounding sequences of the PEAR-GFP plasmid. The 3\u2032 end of the first exon of GFP is shown in green, the intron is shown as a dashed line. The spacer sequence in the pegRNA and the target sequence in the DNA are shown in gray, the PAM is green, and the inactive splice site is red. The RT (purple) and the PBS (blue) sequences in the pegRNA and the targeted sequences are also colored. The Cas9 nick site is indicated by a black arrow. (D) A density plot of HEK293T cells when all live single cells (determined by FSC and SSC parameters) are either (1) untransfected (left plot), and thus show no fluorescence for mCherry or GFP, (2) co-transfected with a pegRNA-mCherry plasmid and the PEAR-GFP plasmid but with a nCas9, thus displaying mCherry but no GFP fluorescence, (3) or pegRNA-mCherry and PEAR-GFP plasmid is co-transfected with a prime editor expressing plasmid, causing the splice site to be edited, and thus displaying both mCherry and GFP fluorescence. (E) A HEK293T cell line containing an integrated EGFP expression cassette was co-transfected with the BEAR-mScarlet plasmid, a pegRNA and a second nicking sgRNA for BEAR-mScarlet, GFP targeting sgRNA(s) and either WT-Cas9, nCas9, or PE2. Cells were monitored for mScarlet and EGFP fluorescence (orange and green columns, respectively) 3 days after transfection. Columns represent means \u00b1 SD of three parallel transfections. For all measured values, see Figure 1\u2014figure supplement 1\u2014source data 1. PEAR, prime editor activity reporter.\n\nThere are differences between the features of BEAR and PEAR. The editing windows of BEs exploited for the BEAR system are located PAM distal, 5\u2032 of the nick (Figure 1\u2014figure supplement 1B). PEs on the other hand can introduce mutations 3\u2032 of the nick, a region that contains the PAM sequence (Figure 1A, Figure 1\u2014figure supplement 1C). To ensure maximum flexibility for the PE target, we kept the target sequence in the intron by placing the PAM to the complementary strand. As a result, the target sequence can be freely adjusted in its entire length (Figure 1A). Thus, while BEAR could be used with a few million of different target sequences, PEAR offers unrestricted sequence variations for the entire SpCas9 target. On the contrary, PEAR is similar to BEAR in that it is permissive with respect to the interchangeability of the targeted nucleotides (here the splice site and the splice site flanking nucleotides; T\u00e1las et al., 2021). No other fluorescence-based reporter systems have demonstrated such degree of flexibility before (Katti et al., 2020; Lin et al., 2020; S\u00fcr\u00fcn et al., 2020).\n\nTo identify the optimal PBS, RT, and complementary nick combination, HEK293T cells were transfected with the target plasmid (named PEAR-GFP) carrying the inactive splice site sequence to be edited, and several combinations of plasmids coding various pegRNAs, sgRNAs (targeting the PEAR-GFP plasmid), and PE2 protein. The number of GFP-positive cells was then measured by flow cytometry (Figure 1\u2014figure supplement 1D). The heatmap in Figure 1B shows that the PEAR-GFP plasmid can be efficiently edited by many of these combinations of PBS, RT, and nicking position. The most efficient editing occurred, when a 10-nucleotide long PBS (PBS-10) and a 24-nucleotide long RT region (RT-24) were applied. Figure 1B also shows that in line with expectations, editing efficiency is generally higher when the complementary strand is nicked, than when it is not (Anzalone et al., 2019). The most effective complementary strand nicking site was position +17 in the case of most PBS and RT length combinations. In all conditions, PBS-10 gave greater values than PBS-13 and PBS-16. Comparing the RTs, the efficiency of the editing was in the order of RT-24>RT-33>RT-16 in most conditions (16 out of 18). These results are consistent with the concept that the effect of the length of PBS and RT on editing efficiency is primarily independent of one another (Kim et al., 2020). It is also in line with the current optimization practice, where first, the length of the PBS is optimized using a given RT length, and then the length of the RT is optimized using the PBS selected in the first step. Thus, these experiments support the hypothesis, that PE efficiency is governed by the same factors when using a PEAR plasmid, as demonstrated earlier on chromosomal targets (Anzalone et al., 2019; Kim et al., 2021).\n\nBefore proceeding to the further characterization of the sequence dependence of PEAR, we examined whether the fluorescent signal originates exclusively from the recovered splice site sequence. PEs themselves generate various amounts of indels that may lead to the incidental restoration of fluorescence. In this experiment, to report on prime editing, we used a previously constructed plasmid (T\u00e1las et al., 2021) that expresses a split mScarlet (BEAR-mScarlet). We wanted to simultaneously detect caused indels in a cell line by the means of a disruption assay, as well as prime editing on the BEAR-mScarlet plasmid. We transfected the BEAR-mScarlet plasmid along with either an SpCas9 nuclease, a nickase or a PE protein-coding plasmid into HEK293.EGFP cells (harboring the coding sequence of EGFP integrated into the genome). We also transfected a pegRNA to correct the splice site on the BEAR-mScarlet plasmid along with sgRNA(s) targeting the GFP coding sequence. This design allowed us to co-monitor indel generation via GFP disruption and prime editing via restoring mScarlet fluorescence on the BEAR-mScarlet plasmid. As expected, while all three variants\u2014SpCas9 nuclease, nickase, or PE\u2014demonstrated GFP disruption activity, only PE restored mScarlet fluorescence, indicating that PEAR specifically reports on prime editing activity and is insensitive to the potential presence of indel background (Figure 1\u2014figure supplement 1E).\n\nUsing the optimal PBS-RT combination found in Figure 1 constructs with different inactive splice site sequences were edited by PE2 to the same active splice site sequence (as in Figure 1B) by either deleting or inserting nucleotides in six and seven cases, respectively (Figure 1C). Interestingly, there seems to be no connection between the efficiency and the complexity of the editing. Figure 1C demonstrates that all types of sequence alterations can be examined using the PEAR system.\n\nThe versatility of the PEAR assay, with respect to sequence modifications, lies not only in the fact that an active splice site can be restored from seemingly any inactive sequence as long as the change can be efficiently implemented by prime editing, but also that the active splice site sequence itself can be varied. To demonstrate this, we corrected three additional active splice sites from different inactive sequences (Figure 1D).\n\nIn order to verify that the same factors influence prime editing on a plasmid as on genomic targets, we compared prime editing efficiency on previously constructed plasmids and two HEK293T cell lines (HEK-BEAR-GFP and HEK-BEAR-mScarlet\u2014Figure 2\u2014figure supplement 1; T\u00e1las et al., 2021) that contain a chromosomal copy of these plasmids harboring an interrupted GFP or mScarlet sequence, respectively. As the plasmids (BEAR-GFP and BEAR-mScarlet) contain the same sequence around the inactive splice site as in the cell lines, they can be compared pairwise. The sequences to be edited in the two cell lines were designed to be used with base editing that requires a PAM sequence 5\u2032 upstream of the edit. By contrast, prime editing requires a PAM position 3\u2032 downstream. Thus, we needed to identify another PAM site that would allow the application of prime editing on these sequences. For BEAR-GFP, there is just one PAM, but for BEAR-mScarlet there are two PAMs in the primary editing window, and this gave the opportunity to perform the comparison for two targets for BEAR-mScarlet.\n\nIn case of the GFP expressing cells, we tested 36 different conditions for both the cell line and the BEAR-GFP plasmid: all possible PBS-RT-second nick site combinations. The heatmap in Figure 2A shows that PBS-13 and RT-22 or RT-26 in combination with the second nick site at position +103 results in maximum efficiency for the BEAR-GFP plasmid. In the absence of a second nick, the efficiency of editing was considerably lower. The most ideal conditions for prime editing were the same both in the plasmid and in the cell line (Figure 2A). The overall pattern of the two heatmaps is indisputably similar, exhibiting strong correlation (r=0.89, Figure 2\u2014figure supplement 2A). In case of the cell line, a somewhat lower general editing efficiency is apparent compared to that with the plasmid. This difference is likely due to the much higher copy number of the plasmids present in the cell.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig2-v1.jpg)\n\n**Figure 2.:** PEs targeting BEAR sequences either located in plasmids (Plasmid) or incorporated into the genome (Cell line) were transfected into cells alongside different sgRNAs for different complementary strand nick locations. The heatmaps show the average percentage of GFP (A) and mScarlet (B) positive cells derived from three replicates. For all measured values see Figure 2\u2014source data 1. BEAR, base editor activity reporter; PEAR, prime editor activity reporter.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Gating examples are shown from Figure 2 where cells harboring a genomically integrated copy of BEAR-mScarlet (A) or BEAR-GFP (B) (HEK-BEAR-mScarlet and HEK-BEAR-GFP cell lines, respectively) sequences were subjected to various prime editing conditions. On the upper sections density plots of HEK-BEAR-mScarlet (A) or HEK-BEAR-GFP (B) cells are shown when all live single cells (determined by FSC and SSC parameters) are either (1) untransfected (left plot), and thus show no fluorescence for either fluorescent proteins; (2) co-transfected with a pegRNA-BFP (A) or a pegRNA-mCherry (B) plasmid but with a nCas9, thus displaying BFP but no mScarlet fluorescence in case of HEK-BEAR-mScarlet cells (A) or displaying mCherry but no GFP fluorescence in the case of HEK-BEAR-GFP cells (B); (3) the pegRNA plasmid is co-transfected with a prime editor expressing plasmid, causing the splice site to be edited, and thus displaying both BFP and mScarlet fluorescence in the case of HEK-BEAR-mScarlet cells (A) or displaying mCherry and GFP fluorescence in the case of HEK-BEAR-GFP cells (B). BEAR, base editor activity reporter.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Scatter plot of GFP-positive cells measured either when the BEAR-GFP plasmid or the HEK-BEAR-GFP cell line (Figure 2A) was edited by PE3 with various pegRNA and secondary nicking sgRNA combinations (Pearson\u2019s r=0.89). (B) The heatmaps show the average percentage of mScarlet positive cells derived from three replicates where PE vectors targeting inactive splice sequences located on plasmids (Plasmid) or incorporated into the genome (Cell line) were transfected into cells alongside different sgRNAs for different complementary strand nick locations. The position of the second nick is indicated on the left side of the heatmaps with positive numbers or when no second nick was introduced, it is indicated as \u2018no nick\u2019. (C\u2013D) Scatter plot of mScarlet positive cells measured either when the BEAR-mScarlet plasmid or the HEK-BEAR-mScarlet cell line was edited by PE3 targeting mScarlet target 1 (C) data are from Figure 2B or target 2 (D) data are from (B) with various pegRNAs and secondary nicking sgRNA combinations (Pearson\u2019s r=0.92 for (C) and r=0.93 for (D)). For all measured values, see Figure 2\u2014figure supplement 2\u2014source data 1. BEAR, base editor activity reporter.\n\nIn case of the mScarlet expressing cells, we compared the efficiency of prime editing with both target 1 (Figure 2B) and target 2 (Figure 2\u2014figure supplement 2B), by exploring 36 different combinations of PBS, RT, and second nick site for each target. Target 1 gave higher prime editing efficiencies, with the top working PBS being 10 nucleotides long in the case of both the BEAR-mScarlet plasmid and the cell line (Figure 2B). The two heatmaps exhibit a remarkably similar pattern, and there is a strong correlation of the editing efficiency in the cell line and the BEAR plasmid (r=0.93; Figure 2\u2014figure supplement 2C). Similar outcomes can be seen with target 2 where the best PBS length is also 10 nucleotides long for both the BEAR-mScarlet plasmid and the cell line (Figure 2\u2014figure supplement 2B). Comparing plasmid and genomic results also revealed a remarkably similar pattern (r=0.92; Figure 2\u2014figure supplement 2D). With the same intron being in all three plasmids, we used the same three sgRNAs for secondary nicking in combination with all pegRNAs and plasmids or cell lines. For all three targets studied, regardless of whether in plasmids or in cell lines, the three secondary nick positions affected the effectiveness of prime editing in the same way. Collectively, these results strongly imply that the main features of prime editing and factors affecting its efficiency are reflected accurately within our system.\n\nPost-transfection selection of edited cells by fluorescence-activated cell sorting (FACS) or antibiotics have proven to be effective methods for the enrichment of genetically modified cells within a population, given that the SpCas9 coding plasmid co-expressed a protein that is fluorescent or bears antibiotic resistance (Katti et al., 2020; Standage-Beier et al., 2019; Ramakrishna et al., 2014; Grav et al., 2015; St Martin et al., 2018; T\u00e1las et al., 2021). Experiments have also shown that selecting for cells with a surrogate marker, that is subjected to the same type of genetic modification (knockout, HDR, or base editing) as the intended edit, results in higher enrichment of successfully edited cells, than when solely selecting for transfection markers (Katti et al., 2020; Coelho et al., 2018; Ramakrishna et al., 2014; Grav et al., 2015; St Martin et al., 2018; T\u00e1las et al., 2021; Yan et al., 2020) suggesting that some individual cells allow for higher editing efficiency. This phenomenon could be due to the nuclease being able to exhibit higher activity, or the activity of DNA repair systems could be considerably more engaged in these cells. We proposed that the level of enrichment, that can be achieved using the transfection marker alone, can be exceeded by enriching cells in which a marker protein in a plasmid is simultaneously prime edited. The PEAR-GFP plasmid was used in these experiments as a surrogate marker with previously optimized RT and PBS conditions (Figure 1B).\n\nTo test this principle, first, we transfected the BEAR-mScarlet cell line edited in Figure 2 with the PEAR-GFP plasmid along with two pegRNAs (also coding BFP as a transfection marker) one targeting the cell line and one targeting the plasmid to explore if prime editing on the plasmid is associated with genomic (mScarlet) editing. We measured the ratio of the mScarlet positive cells in (1) all measured cells, (2) within cells that either express BFP for transfection marker enrichment, or (3) express GFP (regardless of BFP expression) for PEAR enrichment. For this purpose, we chose two efficient PEAR-GFP targeting pegRNAs tested earlier (Figure 1B). Figure 3A shows that transfection marker enrichments significantly increased the ratio of edited and non-edited cells: gating for the BFP-expressing cells increased the percentage of the edited population from 18% to 24% with both pegRNAs tested. PEAR-enrichment resulted in a considerable increase compared to the transfection enrichments in case of both pegRNAs (57% and 76% mScarlet expressing cells, respectively). These results demonstrate that prime edited cells can be substantially enriched when using a PEAR plasmid as a surrogate marker.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig3-v1.jpg)\n\n**Figure 3.:** (A) Flow cytometry measurements of prime edited (i.e., mScarlet positive) cells in the HEK-BEAR-mScarlet cell line. The PEAR-GFP plasmid was co-transfected with PE protein-coding plasmid, two pegRNAs targeting either the plasmid or the genomic PEAR sequences and an sgRNA (for complementary strand nicking at position +112). To edit the PEAR-GFP plasmid, two efficient pegRNAs were selected from a previous experiment (Figure 1B) (pegRNA 1 and pegRNA 2 are those shown in Figure 1B with an RT of 24 and a PBS of 10 nucleotides, and an RT of 33 and a PBS of 10 nucleotides, respectively). The mScarlet positive cell count was gated for either all live single cells (no enrichment, black bars); for BFP-positive cells (transfection enrichment, gray bars); and for GFP-positive cells (PEAR enrichment, green bars). (B) Schematic workflow of PEAR enrichment experiments. Various cell lines were co-transfected with PEAR-GFP-2in1, a pegRNA, and a complementary nicking sgRNA targeting a genomic sequence (the latter two carrying a BFP expression cassette to monitor transfection efficiency), and the PE2-encoding plasmid. Cells expressing GFP, BFP, or both are represented as green, blue or half green/half blue circles, respectively. Cells not expressing these fluorescent proteins are shown in gray. Three days after transfection, cells were sorted into three fractions: single living cells, cells expressing BFP, and cells expressing GFP. After purification of genomic DNA and PCR amplification of the targeted amplicon, the percentage of editing was determined by NGS from each sorted sample. (C\u2013E) The PEAR-GFP-2in1 plasmid and endogenous genomic targets were co-edited in HEK293T, K562, U2OS, and HUES9 cells. Cells were enriched and analyzed as described in (B). Results from cells without enrichment are shown in black, transfection enrichment in gray, PEAR enrichment in green, and untransfected cells in striped black and white. Precise prime editing (C) and unwanted indel formation (D) were quantified from the same samples. Specificity (prime editing%/indel%) was calculated separately for each sample (E). Columns represent means \u00b1 SD of three parallel transfections (white circles). When indel% was below the detection limit of NGS, specificity was calculated with 0.05% indel to avoid falsely high specificity values. Differences between samples were tested using one-way ANOVA. Only statistically significant differences are shown, differences to untransfected cells are not shown. *p<0.05, **p<0.01, ***p<0.001. (F, G) Off-target prime editing (F) and indel formation (G) were analyzed for known off-targets of target sites from (C) and (D) in HEK293T cells. Columns represent means \u00b1 SD of three parallel transfections (white circles). Differences between samples were tested using one-way ANOVA. Only statistically significant differences are shown. *p<0.05, **p<0.01, ***p<0.001. For all measured values, applied statistic tests and exact p values see Figure 3\u2014source data 1. BEAR, base editor activity reporter; PEAR, prime editor activity reporter.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** PEAR enriched populations (sorted for GFP, day 0) of HEK293T cells from the experiments in Figure 3C were passaged for 3\u20134 weeks. GFP-positive cells were measured by flow cytometry to determine whether fluorescence was due to stable integration of the plasmid. Columns represent means \u00b1 SD of three parallel transfections. For all measured values, see Figure 3\u2014figure supplement 1\u2014source data 1. PEAR, prime editor activity reporter.\n\nTo test the applicability of PEAR for enriching the prime edited population in endogenous targets generating single-nucleotide substitutions, we chose five genomic targets (EMX1, RNF2, FANCF, HEK3, and HEK4) which have been investigated previously (Anzalone et al., 2019). Here, BFP was used as the indicator of transfection efficiency, and we constructed a new plasmid (PEAR-GFP-2in1) as a marker for successful prime editing, which contains the pegRNA 1 (the best pegRNA in Figure 1B) expression cassette on the same plasmid. We co-edited the genomic targets and the PEAR-GFP-2in1 plasmid, and three days after transfection, cells were sorted into three fractions: (1) all single living cells, (2) BFP-positive cells, and (3) GFP-positive cells (Figure 3B). From the sorted cell populations, editing was quantified by NGS. Since HEK293T cells are very susceptible to prime editing due to the fact that their mismatch repair system is partially defective (Chen et al., 2021; Trojan et al., 2002), we also attempted enrichment in K562 and U2OS cells, and on a human embryonic stem cell line HUES9, that are all less susceptible to prime editing (Figure 3C\u2013E).\n\nThe editing rates increased using transfection marker enrichment by up to 1.65-fold; however, they all showed a significantly greater increase when the PEAR enrichment was used. PEAR enrichments ranged between about twofold and fourfold, reaching up to 62% and 76% editing at FANCF site in K562 and HEK293T cells, respectively. Editing the same target in HUES9 cells showed a 7.8-fold increase with 28% PEAR-enriched editing, whilst editing without enrichment remained below 4% in HUES9 cells (Figure 3C and Figure 3\u2014source data 1).\n\nWe also analyzed whether PEAR-enrichment alters the specificity (defined here as editing%/indel%) of editing, by quantifying the generated indels by NGS from the same samples (Figure 3D). Enrichments increased the incidence of indels at the edited sites in the population in 8 out of the 13 edits. However, the extent of these increments is generally low: the specificity slightly decreased for only one edit, while it slightly increased in five cases (Figure 3E).\n\nFurthermore, we determined off-target prime editing from enriched samples at previously reported (Tsai et al., 2015; Anzalone et al., 2019; Kleinstiver et al., 2016a) SpCas9 off-target sites for four targets in HEK293T cells. Only 1 of the 15 off-target sites showed detectable editing (Figure 3F) and indel formation (Figure 3G) that was also enriched by PEAR enrichments. For the remaining 14 sites, PEAR-enrichment did not increase either off-target editing or indel formation to a detectable level. Thus, these data suggest that PEAR enrichments substantially increase prime editing in various cell lines without compromising neither on-target nor off-target specificity.\n\nThe PEAR plasmid may also contribute to undesired DNA modifications during editing. Figure 3\u2014figure supplement 1 shows that integration of the active plasmid to the genome is minimal; however, since plasmids tend to integrate into the genome, albeit with low efficiency, unedited PEAR plasmids are likely to still integrate into the genome. Clones should be checked for the absence of the transfected plasmids, such as the PE-expressing and the PEAR plasmid. We have developed PCR primers (Supplementary file 1) for detecting whether the PEAR plasmid has been integrated into the genome.\n\nIt is also important, that the pegRNA used for co-editing the PEAR plasmid has no on-target site in the genome and has only minimal genome-wide off-target effect in order to decrease the potential off-target events during PEAR-enrichments. However, to check the genome-wide off-targets of SpCas9 with such sgRNA is inherently a challenging task, since, due to the lack of a reference on-target site in the genome, it is difficult to interpret the results of a GUIDE-seq experiment aiming to determine its off-targets. To overcome this problem, we chose two EGFP targets (sites 2 and 7) that have no on-target sites in the genome but can be tested for off-targets in HEK293.EGFP cells. This cell line provides the reference on-target sites that are normally not present in the genome of human cells. The genome-wide off-target sites of WT-SpCas9 nuclease for EGFP site 2 have been determined previously (Kulcs\u00e1r et al., 2020) and for EGFP site 7, they were determined in this work by GUIDE-seq. Both sgRNAs proved to have no detectable off-targets (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig4-v1.jpg)\n\n**Figure 4.:** (A) Potential off-target cleavage of WT-SpCas9 was assessed by GUIDE-seq on EGFP site 7. Read counts are shown for the on-target sequence only, as no off-targets were identified. On the bar charts, the on-target genome modification (indel+tag integration) and the tag integration frequency of the modified cells are shown that were analyzed by NGS. The other analyzed site (EGFP site 2) has previously been proven to have no detectable off-target sites by GUIDE-seq (Figure 5f, Kulcs\u00e1r et al., 2020). (B) Flow cytometry measurements of HEK293T cells transfected with different 2in1 PEAR plasmids, and the PE2 encoding plasmid. Target sites EGFP site 7 and EGFP site 2 (pink and yellow columns, respectively) were candidates for the construction of a PEAR-GFP-2in1 plasmid with no genome-wide off-target activity. For the plasmid targeting pegRNA, three different PBS lengths were tested with each target in combination with the 24-nucleotide long RT-template identified as the most efficient in Figure 1B. The PEAR-GFP-2in1 plasmid used in previous experiments is shown in green. Columns represent means \u00b1 SD of three parallel transfections (white circles). (C\u2013E) PEAR can enrich all types of editing (insertions, deletions, and substitutions) in HEK293T cells. Results from cells without enrichment are shown in black, transfection enrichment in gray, PEAR enrichment in green, and untransfected cells in striped black and white. Prime editing (C) and indel formation (D) were quantified from the same samples. (E) Specificity (prime editing%/indel%) was calculated separately for each sample. Columns represent means \u00b1 SD of three parallel transfections (white circles). When indel% was below the detection limit of NGS, specificity was calculated with 0.05% indel to avoid falsely high specificity values. Differences between samples were tested using one-way ANOVA. Only statistically significant differences are shown, differences to untransfected cells are not shown. *p<0.05, **p<0.01, ***p<0.001. For all measured values, applied statistic tests and exact p values see Figure 4\u2014source data 1. PEAR, prime editor activity reporter.\n\nFor further experiments, we constructed PEAR plasmids using these targets that can be edited without off-targets. As the GFP targets are also present in the original PEAR-GFP plasmid, by introducing silent mutations we created six mismatches in the case of EGFP site 2 and altered the PAM sequence in the case of EGFP site 7 to make sure that the pegRNA will not target the GFP coding sequence on the plasmid. To find an effective pegRNA to edit the new PEAR plasmids, three PBS lengths were tested for each spacer sequence with the 24-nucleotide long RT sequence identified in Figure 1B as the most efficient (Figure 4B). The highest editing was found with EGFP site 2 with a 12-nucleotide long PBS sequence. This plasmid\u2014named PEAR-GFP-2in1-2.0\u2014was used in subsequent experiments to enrich additional nine target sites installing three insertions, deletions, and substitutions each (Figure 4C\u2013E). These results proved that the PEAR-GFP-2in1-2.0 plasmid is also suitable for the enrichment of prime editing and confirmed the efficiency of PEAR-enrichment for various types of editing. The editing rates by PEAR-enrichments increased from 2.1- to 4.6-fold and up to 84% (Figure 4C). Figure 4D and E show that the increase in editing rates is not accompanied with a decrease in specificity in the case of any of the nine target sites.\n\n## Discussion\n\nPrime editing provides a great flexibility for genomic modifications without having to supply a donor DNA or needing a double-stranded DNA break (Anzalone et al., 2019). This technology could revolutionize the rapidly expanding universe of genome editing. Prime editing technology has readily been translated from mammalian models (Anzalone et al., 2019; S\u00fcr\u00fcn et al., 2020; Kim et al., 2020; Liu et al., 2020; Schene et al., 2020) to plants (Lin et al., 2020; Jiang et al., 2020; Lu et al., 2021; Xu et al., 2020) and Drosophila (Bosch et al., 2020). Despite its great potential, during the preparation of our manuscript, we have found surprisingly few studies that had demonstrated the practical use of prime editing in mammalian cells (S\u00fcr\u00fcn et al., 2020; Schene et al., 2020), which is a vast underestimation of the true potential flexibility of this method. This might be due to the extensive optimization it requires and the relatively low editing efficiency that can be achieved at a subset of targets. In this aspect, any approach that can substantially increase the editing efficiency is critical to aid its generalized use. Here, we developed PEAR, a sensitive fluorescent assay for the monitoring of prime editing activity in mammalian cells, and we also showed that prime editing occurs at much higher frequencies in those individual cells, in which the PEAR plasmid is co-edited. In fact, enrichment with a transfection marker resulted in only a 1.45-fold increment on average in all experiments, whilst PEAR enrichments tripled the number of edited cells (Figures 3A, C ,, 4C). Furthermore, we constructed a PEAR plasmid (PEAR-GFP-2in1-2.0) which bears a pegRNA that has no detectable off-target sites in the human genome as assessed by GUIDE-seq. This plasmid was used to successfully enrich additional targets with the same efficiency. Thus, the application of PEAR as a surrogate marker, as demonstrated in four cell lines including HUES9 cells, could substantially contribute to the more widespread use of prime editing by considerably increasing the number of potential targets, which may now be edited with appropriate efficiency.\n\nPEAR is also a versatile tool that can be utilized for the characterization of different PEs. We examined more than 250 conditions combining different sgRNAs, PBS- and RT-lengths, and nick sites, and our results confirmed that the efficiency of prime editing to modify PEAR plasmids is governed by the same factors as prime editing in genomic context (Figure 2 and Figure 2\u2014figure supplement 2). The tolerance of the splice donor site for substitutions (Figure 1D; T\u00e1las et al., 2021) makes the target region sequence of the PEAR plasmid readily adjustable. This versatility allows the user to examine the effect of sequence features and other factors affecting the efficiency of prime editing in a systematic manner that cannot be explored otherwise using genomic targets. Our approach, beyond its general use, may also assist the development of more efficient PEs or variants with enhanced characteristics in the future.\n\nOwning to the relatively low efficiency of prime editing with many potential target sequences, PEAR is expected to become a widespread tool to be used in a wide variety of biomedical and biotechnological applications. PEAR may be an especially useful tool to be used with hard-to-edit cells or where the efficiency of PEs is particularly compromised.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>CRL-3216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (H. sapiens)</td>\n      <td>HEK293.EGFP</td>\n      <td>Kulcs\u00e1r et al., 2017</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>U2OS</td>\n      <td>ATCC</td>\n      <td>HTB-96</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>K562</td>\n      <td>ATCC</td>\n      <td>CCL-243</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (H. sapiens)</td>\n      <td>HEK-BEAR-GFP</td>\n      <td>T\u00e1las et al., 2021</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (H. sapiens)</td>\n      <td>HEK-BEAR-mScarlet</td>\n      <td>T\u00e1las et al., 2021</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HUES9</td>\n      <td>Dr. Douglas Melton</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Turbofect</td>\n      <td>Thermo Fischer Scientific Inc</td>\n      <td>R0531</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Qubit dsDNA HS Assay Kit</td>\n      <td>Thermo Fischer Scientific Inc</td>\n      <td>Q32854</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SF and SE Cell Line 4D-Nucleofector X Kit S</td>\n      <td>Lonza</td>\n      <td>V4XC-2032V4XC-1032</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmids</td>\n      <td>This study</td>\n      <td></td>\n      <td>see Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagents</td>\n      <td>DNA oligonucleotides</td>\n      <td>This study</td>\n      <td></td>\n      <td>see Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Q5 High-Fidelity DNA Polymerase</td>\n      <td>New England Biolabs Inc</td>\n      <td>M0491L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>HiFi Assembly Master Mix</td>\n      <td>New England Biolabs Inc</td>\n      <td>E2621X</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>KAPA Universal qPCR Master Mix</td>\n      <td>KAPA Biosystems</td>\n      <td>KK4602</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>NEB5-alpha competent cells</td>\n      <td>New England Biolabs Inc</td>\n      <td>C2987I</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV-PE2</td>\n      <td>Addgene</td>\n      <td>(#132775)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAT9624-BEAR-cloning</td>\n      <td>Addgene</td>\n      <td>(#162986)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAT9651-BEAR-GFP</td>\n      <td>Addgene</td>\n      <td>(#162989)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAT9752-BEAR-mScarlet</td>\n      <td>Addgene</td>\n      <td>(#162991)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAT9658-sgRNA-mCherry</td>\n      <td>Addgene</td>\n      <td>(#162987)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAT9679-sgRNA-BFP</td>\n      <td>Addgene</td>\n      <td>(#162988)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pX330-Flag-wtSpCas9-H840A</td>\n      <td>Addgene</td>\n      <td>(#80453)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pX330-Flag-dSpCas9</td>\n      <td>Addgene</td>\n      <td>(#92113)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pX330-Flag-wtSpCas9</td>\n      <td>Addgene</td>\n      <td>(#92353)</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Materials\n\nRestriction enzymes, T4 ligase, Dulbecco\u2019s modified Eagle\u2019s medium (DMEM), RPMI 1640 medium, fetal bovine serum (FBS), Turbofect, Geltrex, StemPro Accutase, Qubit dsDNA HS Assay Kit, Platinum Taq DNA polymerase, and penicillin/streptomycin were purchased from Thermo Fischer Scientific Inc SF and SE Cell Line 4D-Nucleofector X Kit S were purchased from Lonza. Bioruptor 0.5 ml microtubes for DNA Shearing were from Diagenode. Agencourt AMPure XP beads were purchased from Beckman Coulter. T4 DNA ligase (for GUIDE-seq) and end-repair mix were acquired from Enzymatics. KAPA Universal qPCR Master Mix was purchased from KAPA Biosystems. DNA oligonucleotides and the GenElute HP Plasmid Miniprep and Midiprep kit used for plasmid purifications were acquired from Sigma-Aldrich. Q5 High-Fidelity DNA Polymerase, NEB5-alpha competent cells, and HiFi Assembly Master Mix were purchased from New England Biolabs Inc.\n\n### Plasmid construction\n\nThe PEAR-GFP plasmid (pDAS12125_PEAR-GFP) was constructed by Esp3I digestion of the pAT9624-BEAR-cloning plasmid (T\u00e1las et al., 2021), followed by one-pot cloning of the linker oligonucleotides (12125-L1 and -L2). The reaction included 2 units of Esp3I enzyme, 1.5 units of T4 DNA ligase, 1 mM DTT, 500 \u03bcM ATP, 50 ng vector, and 5\u20135 \u03bcM of target-coding oligonucleotides. Components were mixed in with 1\u00d7 Tango buffer, and the mixture was incubated at 37\u00b0C for 30 min before being transformed into NEB5-alpha competent cells. The active PEAR-GFP plasmid (pDAS12124_PEAR-GFP-preedited) was constructed by the above protocol using linker oligonucleotides (12124-L1 and -L2).\n\nThe PEAR-GFP-2in1 plasmids (pDAS12342_PEAR-GFP_2in1, pDAS12489_PEAR-GFP_2in1_2.0) and their active versions were constructed via NEB HiFi Assembly and are available from Addgene.\n\nTo monitor transfection efficiency, fluorescent protein (mCherry or TagBFP) expressing pegRNA cloning plasmids were constructed (pDAS12069-U6-pegRNA-mCherry, pDAS12222-U6-pegRNA-BFP). To construct both plasmids, an exchangeable cassette from a previously made plasmid was cloned into pAT9658 and pAT9679 between NdeI and EcoRI sites. Both pegRNA cloning plasmids bear a spacer cloning site (between BpiI sites) and a PBS-RT cloning site (between Esp3I sites).\n\nFor the construction of pegRNAs, a one-step pegRNA cloning protocol was used, described by Anzalone et al., 2019; however, it resulted in frequent deletions and/or mutations in the constructs, therefore we also used alternative strategies. The most effective was a two-step cloning procedure: first, the spacer coding linkers were cloned into pDAS12069 or pDAS12222 plasmids between BpiI sites using 2 units of the BpiI enzyme, 1.5 units of T4 DNA ligase, 500 \u03bcM ATP, 1\u00d7 Green buffer, 50 ng vector, and 5 \u03bcM of each annealed oligonucleotide. In the second cloning step, oligonucleotides bearing the PBS-RT were cloned into between Esp3I sites of the plasmids created in the first cloning step with the above method using 1 mM DTT and 1\u00d7 Tango buffer.\n\nFor the second nicking of a plasmid or the genome, all sgRNA targets were cloned into pAT9658-sgRNA-mCherry or pAT9679-sgRNA-BFP plasmids between BpiI sites via one-pot cloning, as described above.\n\nSupplementary file 2 includes all plasmids Supplementary file 3 includes all primers developed or used in this study. The sequences of all plasmid constructs were confirmed by Sanger sequencing (Microsynth AG).\n\nPlasmids acquired from the non-profit plasmid distribution service Addgene were the following: pCMV-PE2 (#132775) (Anzalone et al., 2019), pAT9624-BEAR-cloning (#162986), pAT9651-BEAR-GFP (#162989), pAT9752-BEAR-mScarlet (#162991), pAT9658-sgRNA-mCherry (#162987), pAT9679-sgRNA-BFP (#162988) (T\u00e1las et al., 2021), pX330-Flag-wtSpCas9-H840A (#80453), pX330-Flag-dSpCas9 (#92113), and pX330-Flag-wtSpCas9 (#92353) (Kulcs\u00e1r et al., 2017).\n\nThe following plasmids developed in this study are available from Addgene: pDAS12125_PEAR-GFP (#177178), pDAS12124_PEAR-GFP-preedited (#177179), pDAS12069-U6-pegRNA-mCherry (#177180), pDAS12222-U6-pegRNA-BFP (#177181), pDAS12230_pegRNA-PEAR-GFP(10PBS-24RT)-mCherry (#177182), pDAS12137_sgRNA-PEAR-GFP-nick(+17)-mCherry (#177183), pDAS12342_PEAR-GFP_2in1 (#177184), pDAS12395_PEAR-GFP-2.0-preedited (#177185), and pDAS12489_PEAR-GFP-2in1-2.0 (#177186).\n\n### Cell culturing and transfection\n\nHEK293T (CRL-3216), U2OS (HTB-96), and K562 (CCL-243) cell lines were from ATCC. The HUES9 human embryonic stem cell line was a gift from Dr. Douglas Melton. Cell lines were authenticated by their respective suppliers and were regularly tested negative for mycoplasma.\n\nHEK293T, HEK293.EGFP, and U2OS cells were grown in DMEM, K562 cells were grown in RPMI 1640, both media were supplemented with 10% heat-inactivated FBS with 100 units/ml penicillin and 100 \u03bcg/ml streptomycin. Cells were cultured at 37\u00b0C in a humidified atmosphere of 5% CO2. HUES9 cells were maintained on Geltrex coated plates in mTeSR1 media (Stemcell Technologies) at 37\u00b0C and 5% CO2. Cultures were passaged every 4\u20135 days using StemPro Accutase Cell Dissociation Reagent and placed in mTeSR1 supplemented with 10 \u00b5M ROCK inhibitor (Y-27632-2HCl, Selleckchem) for the first 24 hr.\n\nHEK293T cells were seeded on 48-well plates 1 day before transfection at a density of 5\u00d7104 cells/well. A total of 565 ng DNA was used: 55 ng of PEAR target plasmid, 153 ng of pegRNA-mCherry (or pegRNA-BFP in the case of BEAR-mScarlet), 49 ng of sgRNA-mCherry (or sgRNA-BFP in the case of BEAR-mScarlet), and 308 ng of PE2 coding plasmid. These were mixed with 1 \u03bcl Turbofect reagent diluted in 50 \u03bcl serum-free DMEM, and the mixture was incubated for 30 min at RT before adding it to the cells. Each transfection was performed in three replicates. Cells were analyzed by flow cytometry on day 3 from transfection.\n\nIn the enrichment experiments, where FACS was used, HEK293T cells were transfected with the above protocol. A total of 550 ng DNA was used: 40 ng of PEAR-GFP-2in1 plasmid, 153 ng of pegRNA-BFP, 49 ng of sgRNA-BFP, and 308 ng of PE2 coding plasmid. In each parallel condition a total of 12 wells were transfected. Three days after transfection, cells were trypsinized and sorted directly into genomic lysis buffer, which was followed by genomic DNA extraction.\n\nThe BEAR-GFP and BEAR-mScarlet cell lines were constructed as described earlier in T\u00e1las et al., 2021. These stable cell lines were transfected with a total of 565 ng DNA: 170 ng of pegRNA-mCherry (or pegRNA-BFP in the case of BEAR-mScarlet), 54 ng of sgRNA-mCherry (or sgRNA-BFP in the case of BEAR-mScarlet), and 340 ng of PE2 coding plasmid, that was all mixed with 1 \u03bcl Turbofect reagent diluted in 50 \u03bcl serum-free DMEM. The mixture then was incubated for 30 min at RT before adding it to the cells.\n\nIn the case of U2OS and K562 cells, 1000 ng total DNA; 603 ng PE2 coding plasmid, 300 ng pegRNA-BFP, 97 ng sgRNA-BFP, and 78 ng PEAR-2in1 plasmid was nucleofected in a final volume of 20 \u00b5l in a 16-well nucleocuvette strip. 3\u00d7105 U2OS and 5\u00d7105 K562 cells were transfected per well using an Amaxa 4D-Nucleofector (Lonza) according to the manufacturer\u2019s protocol. For U2OS, the SE Cell Line 4D-Nucleofector X Kit (program DN-100) for K562 the SF Cell Line 4D-Nucleofector X Kit (program FF-120) was used. Three days after transfection, U2OS and K562 cells were sorted directly into genomic lysis buffer, which was followed by genomic DNA extraction.\n\nHUES9 cells were transfected at ~70% confluence. Two hours before electroporation, the media were changed to fresh mTeSR1, then the cells were singularised by StemPro Accutase. 603 ng PE2 coding plasmid, 300 ng pegRNA-BFP, 97 ng sgRNA-BFP, and 78 ng PEAR-2in1 plasmid were nucleofected in a final volume of 20 \u00b5l in a 16-well nucleocuvette strip. 2\u00d7105 cells were mixed with 20 \u00b5l homemade electroporation buffer (described in Vriend et al., 2014), then were electroporated with an Amaxa 4D-Nucleofector using the CA-137 program. Transfected cells were plated at Geltrex coated 48-well plates in ROCK inhibitor supplemented mTeSR1 for the first 24 hr and then the media were changed. Three days after transfection, HUES9 cells were sorted directly into genomic lysis buffer, which was followed by genomic DNA extraction.\n\nIn all experiments, the pCMV-PE2 (Anzalone et al., 2019) plasmid was used as the PE expressing plasmid, pX330-Flag-wtSpCas9-H840A as the nSpCas9, pX330-Flag-dSpCas9 as the dSpCas expressing plasmid, and pX330-Flag-wtSpCas9 as the WT-SpCas9 expressing plasmid. When no second nick was introduced a mock sgRNA expressing plasmid (pAT9922-mCherry or pAT9762-BFP) was used. All experiments were transfected in triplicates unless stated otherwise.\n\n### Flow cytometry and cell sorting\n\nFlow cytometry analysis was carried out using an Attune NxT Acoustic Focusing Cytometer (Applied Biosystems by Life Technologies). In all experiments, a minimum of 10,000 viable single cells were acquired by gating based on the side and forward light-scatter parameters. BFP, GFP, mCherry, and mScarlet signals were detected using the 405 (for BFP), 488 (for GFP), and 561 nm (for mCherry and mScarlet) diode laser for excitation, and the 440/50 (BFP), 530/30 (GFP), 620/15 (mCherry), and 585/16 nm (mScarlet) filter for emission. Attune Cytometric Software v.4.2 was used for data analysis. To compare prime editing in the cell line or on a plasmid Pearson\u2019s correlation coefficient was used.\n\nCell sorting was carried out on a FACSAria III cell sorter (BD Biosciences). The live single-cell fraction was acquired by gating based on side and forward light-scatter parameters. BFP or GFP signals were detected using the 405 or 488 nm diode laser for excitation and the 450/50 or 530/30 nm filter for emission, respectively. To sort control (no enrichment) cells, live single cells were sorted regardless of any fluorescent markers. To sort transfection marker enriched cells, BFP-positive cells were sorted regardless of GFP fluorescence. To sort PEAR enriched cells GFP-positive cells were sorted regardless of BFP fluorescence. A minimum of 50,000 cells were sorted in all experiments.\n\n### GUIDE-seq\n\n2\u00d7105 HEK293.EGFP cells were resuspended in a homemade nucleofection solution (described by Vriend et al., 2014) and mixed with 666 ng of WT-SpCas9 expression plasmid (pX330-Flag-wtSpCas9), 334 ng of mCherry and sgRNA coding plasmid, and 30 pmol of the dsODN containing phosphorothioate bonds at both ends (according to the original GUIDE-seq protocol Tsai et al., 2015). Cells were nucleofected in a final volume of 20 \u00b5l in a 16-well nucleocuvette strip using the CM-130 program on a Lonza 4-D Nucleofector instrument. Transfection efficacy was analyzed by counting mCherry expressing cells after 96 hr post-transfection by flow cytometry, then genomic DNA was purified.\n\ndsODN tag integration and efficient indel formation were verified on the on-target site by Sanger sequencing followed by TIDE (Brinkman et al., 2014) analysis or by NGS. The entire dsODN sequence as well as a 15-bp long centre fragment of it (\u2018gttgtcatatgttaa\u2019/\u2018ttaacatatgacaac\u2019) was counted in the aligned reads to measure dsODN on-target tag integration for GUIDE-seq experiments. In the next step, genomic DNA was sheared with BioraptorPlus (Diagenode) to 550 bp in average. Sample libraries were assembled as described by Tsai et al., 2015 and sequenced on an Illumina MiniSeq Instrument by Delta Bio 2000 Ltd. Data were analyzed using open-source GUIDE-seq software (version 1.1; Tsai et al., 2016). Consolidated reads were mapped to the human reference genome GRCh37 supplemented with the integrated EGFP sequence. Upon identification of the genomic regions with integrated double-stranded oligodeoxynucleotide (dsODNs) in aligned data, off-target sites were retained if at most seven mismatches against the target were present and if absent in the background controls. Visualization of aligned off-target sites is provided as a color-coded sequence grid. GUIDE-seq sequencing data are deposited at NCBI Sequence Read Archive: PRJNA779199.\n\n### Genomic DNA purification and genomic PCR\n\nGenomic DNA from FACS or other experiments was extracted according to the Puregene DNA Purification protocol (Gentra Systems Inc). The purified genomic DNA was subjected to PCR analysis conducted with Q5 polymerase and locus-specific primers (see Supplementary file 2). PCR products were gel purified via NucleoSpin Gel and PCR Clean-up Kit (Macherey-Nagel) and were subjected to Sanger or next-generation sequencing.\n\n### Next-generation sequencing, indel, and editing frequency analysis\n\nIn enrichment experiments, prime editing efficiency and indel frequency were analyzed by NGS (Figures 3 and 4). Amplicons for deep sequencing were generated using two rounds of PCR by Q5 high-fidelity polymerase to attach Illumina handles. The first step, PCR primers used to amplify target genomic sequences and indexing of samples are listed in Supplementary file 4. After the second step, PCR samples were quantified using Qubit dsDNA HS Assay Kit and PCR products were pooled for deep sequencing. Sequencing on an Illumina NextSeq instrument was performed by Delta Bio 2000 Ltd. Reads were aligned to the reference sequence using BBMap.\n\nIndels were counted computationally among the aligned reads that matched at least 75% to the first 20 bp of the reference amplicon. Indels without mismatches were searched at \u00b1 2 bp around the cut site with allowing indels of any size. For each sample, indel frequency was determined as (number of reads with an indel)/(number of total reads).\n\nFrequency of substitution without indels generated by prime editing was determined as the percentage of (sequencing reads with the intended modification, without indels)/(number of total reads). By contrast, frequency of intended insertions or deletions generated by prime editing was determined as the percentage of (all sequencing reads with the intended modification)/(number of total reads). For these samples, the indel background was calculated from reads containing different types of indels, than the aimed edit. For NGS analysis, the following software were used: BBMap 38.08, samtools 1.8, BioPython 1.71, and PySam 0.13. To avoid falsely high specificity ratios on Figures 3E and 4E, during calculations indels lower than 0.05% were assumed to be 0.05% as this amount is considered to be the resolution limit of NGS. The deep sequencing data have been submitted to the NCBI Sequence Read Archive under accession number PRJNA779199.\n\n### Statistics\n\nUnless stated otherwise, differences between samples were tested using one-way ANOVA with Tukey\u2019s post hoc test for homoscedastic samples. Homogeneity of variances was tested by Brown-Forsythe test and normality of residuals was tested by D'Agostino-Pearson omnibus (K2) test. In cases where data did not pass normality but fulfilled the assumptions of Box-Cox transformation the transformed data were analyzed as above. If not, Kruskal-Wallis test with Dunn\u2019s test was applied. Statistical tests were performed using GraphPad Prism 9.2. Test results are shown in Figure 3\u2014source data 1 and in Figure 4\u2014source data 1.\n",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "66f08c31-7b9e-41ec-aa6e-331aa987d633",
+      "submission_id": "ce70e83a-33b0-413f-a106-96a2cb398a97",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Audrone Lapinaite, https://ror.org/03efmqc40 Arizona State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69504.sa0](https://doi.org/10.7554/eLife.69504.sa0)\n\nPrime editing (PE) is an emerging precision genome editing technology. It is based on the fusion of reverse transcriptase and Cas9 nickase guided by a modified guide RNA (pegRNA) to select the target site in the genomic DNA. The design of pegRNAs is not trivial and PE's editing efficiencies are low and highly dependent on the context. The authors of this manuscript have developed a surrogate reporter-based approach (PEAR) not only to identify but also to enrich for the cells that have been edited by PE. This approach will provide the means to better understand the molecular basis of PE (which could lead to the development of new, improved PEs) and improve the efficiency of PE mediated genome editing. This study, describing PEAR is of interest to the researchers in the basic biological, biomedical and agricultural sciences fields.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Audrone Lapinaite, https://ror.org/03efmqc40 Arizona State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69504.sa1](https://doi.org/10.7554/eLife.69504.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"PEAR: a flexible fluorescent reporter for the identification and enrichment of successfully prime edited cells\" for peer review at eLife. Your article is being evaluated by 4 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation is being overseen by Didier Stainier as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Jennifer Hamilton (Reviewer #3).\n\nThe main concern expressed by all four reviewers is that the PEAR technology has so far limited usefulness, at least as presented in the current version of the manuscript. In order to consider this manuscript for publication, we would like to see additional experiments demonstrating that this technology can be used to detect and enrich for PE edits in difficult-to-edit cell types and more elaborate prime edits beyond single nucleotide substitutions, such as insertions/deletions.\n\nReviewer #1:\n\nCurrent reporter systems to detect prime editing outcomes are restricted to few target sequences and/or show a low signal. The aim of the study was to develop a reporter system for an easy, fluorescence-based detection of prime editing outcomes, that allows maximum flexibility for testing the target sequences and pegRNA designs in various cell types. Moreover, the authors aimed to use the developed reporter system as a plasmid-based surrogate marker to select/enrich for cells that undergo PE mediated chromosomal DNA modifications.\n\nStrengths\n\nThe reporter is based on a split GFP protein separated by the last intron of the mouse Vim gene. The sequence of the functional 5' splice site is altered in such way, that splicing and therefore the GFP fluorescence is disrupted, however, they can be restored by prime editor harboring an appropriately designed pegRNA. In this case the DNA sequence that base pairs to the spacer region of the pegRNA is downstream of the splice site. This setup provides a gain-of-function fluorescent signal with minimal background and an unlimited flexibility to test and design pegRNAs for multiple target sequences and surrounding sequence context.\n\nSince this setup allows to replicate the chromosomal site of interest on the surrogate reporter plasmid, it enables enrichment (~3 fold) of the cells that get edited at the chromosomal DNA site.\n\nSince the reporter is on plasmid, it is easy to use, no need to create cell lines. In principle, it is not restricted to specific cell lines.\n\nWeaknesses\n\nAlthough the paper does have strengths, the main weakness of the paper is that not all of these strengths are directly demonstrated. In particular:\n\nThe authors imply that the surrogate reporter system they've developed is not restricted to one or a few cell lines. However, all the experiments were performed in one cell line (HEK293T).\n\nThe advantage of using prime editing instead of more efficient base editing is that this approach allows the introduction of all types of substitutions and/or precise indels. The authors demonstrated that their reporter system works well when PE is designed to substitute several nucleotides but there were no experiments performed to demonstrate how well this reporter system performs when designing pegRNAs to perform small or large indels.\n\n1. The authors imply that the surrogate reporter system they've developed is not restricted to one or a few cell lines. The authors should demonstrate this by performing prime editing in different cells in the presence of their surrogate reporter system. It would be interesting to see if the PEAR would allow significant enrichment of PE edited cells such as K562 or U2Os which have quite low prime editing efficiencies (PMID: 31634902).\n\n2. The authors aimed to demonstrate that indels introduced by nCas9 do not turn on GFP fluorescence (Figure 1c). However, this could result due to nCas9 being inactive during this experiment. The authors should perform an additional control experiment showing that nCas9 was active and introduced indels but at the same time did not turn on GFP fluorescence.\n\n3. The advantage of using prime editing instead of more efficient base editing is that this approach allows the introduction of all types of substitutions and/or precise indels. The authors demonstrated that their reporter system works well when PE is designed to substitute several nucleotides. Is it possible to use this system for designing pegRNAs to perform small or large indels?\n\nReviewer #2:\n\nSimon and colleagues report on the development of a fluorescent reporter system, PEAR, which facilitates the enrichment and isolation of cell populations edited by prime editors (PEs). The strength of this reported method is that it can increase the likelihood of identifying cells that have undergone successful prime editing at target loci. In addition, the relative ease of use of the reporter system will make it easily adoptable by other researchers. However, there are several weaknesses in the manuscript in its current form including but not limited to the following: (i) Relative limited number of target loci that were used to validate the PEAR-based system, (ii) Lack of demonstration that the PEAR-based system works across multiple cell lines including those recalcitrant to genome modification, (iii) Missing off-target analysis as it relates to PEAR-induced editing events, (iv) Insufficient statistical analysis, and (v) Missing comparisons to gold-standard methods of editing enrichment. Because of these significant weaknesses, I do not recommend the manuscript to be published in its current form.\n\nI recommend the authors address the following points prior to publication:\n\n(1) As it relates Figure 3b, the standard for analyzing these types of editing events would be an NGS/HTS analysis of the targeted loci to see the individual allelic outcomes from the editing. As in currently stands, the authors only perform Sanger sequencing of the bulk populations. On a related note, does PEAR-based enrichment also increase the frequency of indel formation relative to transfection or no-enrichment? The current Sanger sequencing-based analysis does not provide this sort of insight.\n\n(2) In Figure 3b, the authors do not perform any off-target analysis of prime editor activity. At minimum, the authors should PCR amplify the most-likely off-target loci and confirm that PEAR-based enrichment does not increase likelihood of off-target events. In addition, the authors should ensure that the pegRNA and nicking sgRNA targeting the PEAR plasmids do not induce off-target edits.\n\n(3) In Figure 3b, the authors perform comparison against reporters of transfection. However, much of the field are using reporters of expression for enriching gene editing events. The authors should make similar comparisons to demonstrate the utility of their method.\n\n(4) The authors only perform analysis of PEAR in bulk sorted cell populations. Although such enrichment is useful the authors do not provide any analysis of clonally isolated cell populations to determine the utility of PEAR in such applications.\n\n(5) The authors only perform analysis on 3 genomic loci which does not provide a good indication of the broad utility of PEAR-based enrichment strategies. It is recommended that the authors demonstrate the utility of PEAR-based enrichment methods in the context of additional loci including those that are recalcitrant to typical PE strategies. In addition, the authors should demonstrate the utility of PEAR in the context of other types of PE-driven edits (i.e. small deletions, insertions) in addition to single base pair changes.\n\n(6) Is the fluorescent signal associated with the PEAR plasmids transient? Are there a certain number of passages required to lose the fluorescent signal? Along similar lines, the authors should at least discuss what strategies can be taken to ensure there is not genomic integration of the PEAR reporter plasmids.\n\n(7) The authors only perform PEAR based enrichment with HEK293 cells, which are very amenable to gene editing. To demonstrate the broad utility of this tool the authors should perform additional experiments in other cells lines, including those such a primary cells or pluripotent stem cells which are resistant to genetic modification.\n\n(8) Throughout the manuscript, information about statistical analysis, number of biological replicates, and other information related to scientific rigor are missing.\n\nReviewer #3:\n\nPrime editing is an exciting new tool in the CRISPR genome editing toolbox which can introduce targeted sequence insertions, deletions and base substitutions. New strategies to enrich for prime edited cells would abrogate the need for time-consuming single-cell sorting and clonal expansion. Simon and colleagues sought to develop a method for easily recovering prime edited cells. Such a method would be useful, as prime editing thus far has only reached moderate levels of efficiency. To achieve this, the authors developed a fluorescence-on, plasmid-based reporter that, when successfully prime edited, repairs a damaged splice site and leads to expression of a fluorescent transgene.\n\nThe authors nicely demonstrate that sorting out fluorescent, reporter-positive cells enriches for successful prime editing in the cellular genome. Prime editing of the surrogate plasmid reporter robustly enriched for successful prime editing in a genomically-integrated transgene. Interestingly, this method was also successful when one pegRNA drove prime editing of the plasmid reporter and one pegRNA directed a single base change in endogenous genes (FANCF, RNF2, HEK3).\n\nOne key feature of prime editing is that it can be used to make complex genomic alterations such as templated sequence insertions. This has been used to epitope tag endogenous genes (FLAG/His6 tags) and make prime editing distinct from base editors, which aim to alter single base pairs. A weakness of the work presented by Simon and colleagues is that they limit testing of the PEAR reporter to enrichment of cells following single base pair modifications in endogenous genes. In this context, the PEAR reporter was very good at enriching for prime edited cells but it is an open question as to how well PEAR would allow for the enrichment of more complex prime edits (such as multiple base changes or sequence insertions/deletions). Additionally, it is unclear how well the PEAR reporter would enrich for prime-edited cells edited at low efficiency (<10%), where enrichment would be most valuable. Lastly, the PEAR reporter functioned well in the cell line tested (HEK293Ts) but it is unknown how this strategy would work in other immortalized cell lines or primary cells. The PEAR reporter would be a boon if it could successfully enrich for prime edited cell types that are not amenable to single cell sorting and clonal expansion (such as primary cells or cell lines that are difficult to grow up from a single cell, such as Calu-3s).\n\nTogether, the authors achieved their aim of developing a fluorescence-on reporter that allows for the enrichment of prime edited cells, both when the prime edit is made in a genomically-integrated transgene or at an endogenous genomic site. This tool will be useful for the genome editing community and/or researchers who wish to introduce minimal base pair changes in HEK293T cells.\n\nIn the discussion, the authors state that \"The tolerance of the 5' splice site for substitutions makes the sequences of the target region of the PEAR plasmid easily adjustable.\" The manuscript would be strengthened if the authors demonstrate that this is true.\n\nReviewer #4:\n\nThe manuscript by Dorottya Simon and colleagues describes a reporter of prime editing activity, dubbed PEAR. Prime editing is a next-generation CRISPR-based genome editing strategy. Prime editing relies on a CRISPR enzyme appended with a reverse transcriptase and a stretch of single-stranded RNA that can be used as a template for a reaction that extends a genomic DNA \"primer\", ultimately incorporating the RNA-templated information into the genome. Some incarnations of prime editing incorporate a second, nicking CRISPR enzyme that can increase the frequency of desired outcomes. Prime editing efficiencies typically surpass those of homology-directed repair, but often lag behind those of base editing or cutting-based editing (the introduction of insertions/deletions). Prime editing outcomes remain somewhat unpredictable and the approach would greatly benefit from an improved \"guidebook\" that outlines the best practices for the technique. To this end, the PEAR reporter may facilitate high-throughput examination of new prime editing strategies, in turn resulting in a greater understanding of the technique.\n\nA strength of this system is the substantial flexibility with respect to the spacer (targeting RNA / targeted DNA) sequence that can be used. A PAM (protospacer-adjacent motif) is required at the \"business end\" of the prime editing, but otherwise there is considerable freedom in terms of the guide RNA (spacer) that can be used. The PEAR system also allows enrichment of prime-edited populations, allowing the researcher to triple\n\nA potential disadvantage is that the PEAR cassette \u2013 whether in plasmid form or following transfection or incorporation \u2013 will not be likely to capture all the qualities of a truly endogenous locus. Indeed, these qualities (and their diversity) play a critical role in determining why certain prime editing attempts fare drastically better than others. Loss of this diversity might limit the reporter's capacity for elucidating the determinants of efficient prime editing.\n\nThe following comments are intended to improve the manuscript.\n\n\"more precise CRISPR tools; base\" \u2026 this should not be a semicolon. Consider a pair of dashes, and adjusting \"developed, that can\" to \"developed, and these enzymes can\"\n\n\"BEs'.\" no apostrophe needed; \"of BEs\" conveys the possessive.\n\nFigure 1e: the black text can be hard to see when it is in front of the black data points.\n\n\"former observations that indels cannot, only substitution mutations\" \u2026 This seems incorrect.\n",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "014f6030-63a4-43c0-85bf-4e3de1ce65b9",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C1",
+      "claim": "Prime editing is a recently developed CRISPR/Cas9 based gene engineering tool that allows the introduction of short insertions, deletions, and substitutions into the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Prime editing is a recently developed CRISPR/Cas9 based gene engineering tool that allows the introduction of short insertions, deletions, and substitutions into the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general characterization of prime editing technology, supported by citations in the introduction section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "59a863c9-9791-40dc-ad2c-1a00d0ca8588",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C2",
+      "claim": "The efficiency of prime editing typically achieves editing rates of around 10%\u201330%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the efficiency of prime editing, which typically achieves editing rates of around 10%\u201330%, has not matched its versatility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of prime editing efficiency.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "f8f9b5ba-f74f-4973-b504-fa3bbb728ab2",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C3",
+      "claim": "PEAR has no background fluorescence and specifically indicates prime editing events.",
+      "claim_type": "EXPLICIT",
+      "source": "PEAR has no background fluorescence and specifically indicates prime editing events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1E demonstrating specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "48888d2f-7af3-403c-aea4-6b02d0c7a2b7",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C4",
+      "claim": "PEAR provides apparently unlimited flexibility for sequence variation along the entire length of the spacer sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Its design provides apparently unlimited flexibility for sequence variation along the entire length of the spacer sequence, making it uniquely suited for systematic investigation of sequence features that influence prime editing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the design shown in Figure 1A and experimental validation in Figures 1C and 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "2c0d584b-bdee-490a-878d-d9dfb91ef268",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C5",
+      "claim": "The use of PEAR as an enrichment marker for prime editing can increase the edited population by up to 84%.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of PEAR as an enrichment marker for prime editing can increase the edited population by up to 84%, thus significantly improving the applicability of prime editing for basic research and biotechnological applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "a303a14f-21b0-4f83-b336-0e16a0321281",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C6",
+      "claim": "Many CRISPR-based approaches rely on generating double-stranded DNA breaks that are usually accompanied by genome-wide off-target editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the CRISPR-based approaches rely on generating double-stranded DNA breaks that are usually accompanied by genome-wide off-target editing (Tsai et al., 2015; Kim et al., 2015; Kleinstiver et al., 2016b; Tsai et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "edeb3a84-1e8c-417e-8a38-568b499d5692",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C7",
+      "claim": "Base and prime editors can introduce modifications into the DNA with a base pair resolution without the requirement of donor DNA templates or the introduction of double-stranded DNA breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, more precise CRISPR tools\u2014base (Komor et al., 2016; Gaudelli et al., 2017) and prime (Anzalone et al., 2019) editors\u2014have been developed, and these enzymes can introduce modifications into the DNA with a base pair resolution without the requirement of donor DNA templates or the introduction of double-stranded DNA breaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the original publications describing these technologies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "563dc150-0dfc-40a6-897b-354afb1d787a",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C8",
+      "claim": "Current base editor variants provide efficient editing but are restricted to certain substitution mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "While current base editor (BE) variants provide efficient editing, they are restricted to certain substitution mutations (Komor et al., 2016; Gaudelli et al., 2017; Kurt et al., 2021; Zhao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on base editors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "eb5b4374-a0dc-464a-9ef1-ac3adc33f754",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C9",
+      "claim": "Prime editors can introduce all types of substitutions and/or precise insertions/deletions (indels), however, their efficiency lags behind that of base editors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, prime editors (PEs) can introduce all types of substitutions and/or precise insertions/deletions (indels), however, their efficiency lags behind that of BEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on established knowledge of the two technologies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "a8efc546-e189-44b0-a530-31ca8b7dfd14",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C10",
+      "claim": "Prime editor 2 (PE2) consists of a nickase version of Streptococcus pyogenes Cas9 (SpCas9) fused to a reverse transcriptase enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Prime editor 2 (PE2) consists of a nickase version of Streptococcus pyogenes Cas9 (SpCas9) fused to a reverse transcriptase enzyme (Anzalone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of PE2 architecture supported by citation to the original publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "eabc7d14-765e-4cdf-8ae4-b2f32d530e2e",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C11",
+      "claim": "The fused reverse transcriptase can extend the nicked DNA strand using an RNA template that is located on the 3\u2032 terminus of an extended single-guide RNA (sgRNA), called the prime editing sgRNA (pegRNA).",
+      "claim_type": "EXPLICIT",
+      "source": "The fused reverse transcriptase can extend the nicked DNA strand using an RNA template that is located on the 3\u2032 terminus of an extended single-guide RNA (sgRNA), called the prime editing sgRNA (pegRNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of prime editing based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "eb8433d0-1fd1-4292-aae9-02f2121a8e5c",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C12",
+      "claim": "The optimal length of the PBS and the RT varies from target to target and requires extensive optimization for each different target.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal length of the PBS and the RT varies from target to target and requires extensive optimization for each different target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the optimization experiments shown in Figures 1B and 2.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "68fda5d2-7d73-437e-a6a3-684697130920",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C13",
+      "claim": "The efficiency of prime editing can be increased by nicking the non-edited strand (prime editor 3\u2014PE3) at the expense of potentially generating unwanted indels at the targeted locus.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of prime editing can be increased by nicking the non-edited strand (prime editor 3\u2014PE3) at the expense of potentially generating unwanted indels at the targeted locus (Anzalone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original PE publication and confirmed by data in Figures 1B and 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "ab374de6-7f3f-4c37-bb78-0238d6011ffa",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C14",
+      "claim": "Altering the PAM sequence with the desired mutation may prevent the PE from nicking the sequence again, which can reduce the chance of introducing unwanted indels alongside the intended mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, the efficiency of prime editing can be further increased by also altering the PAM sequence with the desired mutation this may prevent the PE from nicking the sequence again. This method can reduce the chance of introducing unwanted indels alongside the intended mutations, thus increasing the occurrence of precise modifications (Anzalone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original PE publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "d1622179-00d7-4bc3-8c57-50dddc7d6c07",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C15",
+      "claim": "Several systems have been developed for reporting base editing that use BEs for the generation or alteration of a start or stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Several systems have been developed for reporting base editing that use BEs for the generation or alteration of a start or stop codon (Katti et al., 2020; Wang et al., 2020), or to rescue a disruptive amino acid and subsequently recover functions of antibiotic resistance genes or fluorescence proteins (Martin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on base editing reporters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "ef4f28a9-5814-4dec-b7b2-1dab8efba1d0",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C16",
+      "claim": "A non-synonymous mutation in the chromophore of a fluorescent protein that induces fluorescence spectral change has been explored as a method to monitor base editing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, a non-synonymous mutation in the chromophore of a fluorescent protein that induces fluorescence spectral change has also been explored as a method to monitor base editing activity (Coelho et al., 2018; Standage-Beier et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "37b1b525-32c8-4d59-a4e0-d876c14b8ccb",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C17",
+      "claim": "Reporter systems for prime editing were restricted to very few target sequences and/or showed a rather low signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter systems have also been demonstrated for prime editing, but they were restricted to very few target sequences (Lin et al., 2020; S\u00fcr\u00fcn et al., 2020) and/or showed a rather low signal (Katti et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on prime editing reporters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "9f73f3bb-f581-4e6d-9245-ba6e1232c093",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C18",
+      "claim": "Prime edited mammalian cells can be identified and enriched by using a plasmid-based surrogate marker for chromosomal DNA modifications, as demonstrated before with Cas nucleases and base editors.",
+      "claim_type": "EXPLICIT",
+      "source": "We also wanted to find out whether prime edited mammalian cells could be identified and enriched by using a plasmid-based surrogate marker for chromosomal DNA modifications, as demonstrated before with Cas nucleases (Ramakrishna et al., 2014; Grav et al., 2015) and BEs (Katti et al., 2020; Coelho et al., 2018; St Martin et al., 2018; T\u00e1las et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and confirmed by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "2fb62633-ad60-4394-ad00-1128c87fca39",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C19",
+      "claim": "BEAR is based on a split GFP protein separated by the last intron of the mouse Vim gene.",
+      "claim_type": "EXPLICIT",
+      "source": "BEAR is based on a split GFP protein separated by the last intron of the mouse Vim gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the BEAR system design, supported by reference to Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "7842e304-55f8-4065-a288-c778b285c1b8",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C20",
+      "claim": "In BEAR, the sequence of the functional splice donor site is altered in such way that splicing and therefore the GFP fluorescence is disrupted, however, they can be restored by applying adenine or cytosine base editors.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence of the functional splice donor site (or 5\u2032 splice site) is altered in such way, that splicing and therefore the GFP fluorescence is disrupted, however, they can be restored by applying adenine or cytosine BEs (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the description and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "58828639-4b06-4d25-aa23-b38f63b626a4",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C21",
+      "claim": "Sequence alterations in the intronic sequence of BEAR are well tolerated, which provides flexibility to investigate numerous target sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alterations in the intronic sequence are well tolerated, which gave us the flexibility to investigate numerous target sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous work with BEAR cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "fff83447-0c2c-49da-8858-1a7abf874428",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C22",
+      "claim": "PEAR contains an inactive splice site which can be activated by the action of a PE harboring an appropriately designed pegRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the information acquired during the development of the BEAR system (T\u00e1las et al., 2021), we have designed a plasmid that contains an inactive splice site, which can be activated by the action of a PE harboring an appropriately designed pegRNA (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the description and Figure 1A showing the design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "37430a36-cdc1-4a78-9ac9-1cb841f90b07",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C23",
+      "claim": "Cells containing plasmids with activated splice site sequences will be able to efficiently express GFP, which can be quantified by flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells containing plasmids with activated splice site sequences will then be able to efficiently express GFP, which can be quantified by flow cytometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown throughout the manuscript using flow cytometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "9914a394-7dc1-4e2a-ac7f-d1f179bf90c8",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C24",
+      "claim": "The editing windows of base editors exploited for the BEAR system are located PAM distal, 5\u2032 of the nick.",
+      "claim_type": "EXPLICIT",
+      "source": "The editing windows of BEs exploited for the BEAR system are located PAM distal, 5\u2032 of the nick (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1\u2014figure supplement 1B showing the BEAR design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "501c4403-aa82-47f6-be2a-7b9bb3dc1ece",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C25",
+      "claim": "Prime editors can introduce mutations 3\u2032 of the nick, a region that contains the PAM sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "PEs on the other hand can introduce mutations 3\u2032 of the nick, a region that contains the PAM sequence (Figure 1A, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figures 1A and 1\u2014figure supplement 1C showing the PEAR design.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "55bfb639-1d13-4a6d-b414-a3edbd3d4259",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C26",
+      "claim": "In PEAR, the target sequence can be freely adjusted in its entire length because the PAM is placed on the complementary strand.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure maximum flexibility for the PE target, we kept the target sequence in the intron by placing the PAM to the complementary strand. As a result, the target sequence can be freely adjusted in its entire length (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the design shown in Figure 1A and experimental validation in Figures 1C and 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "8b59fdba-731f-43a4-8458-8880380b61fa",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C27",
+      "claim": "PEAR is similar to BEAR in that it is permissive with respect to the interchangeability of the targeted nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while BEAR could be used with a few million of different target sequences, PEAR offers unrestricted sequence variations for the entire SpCas9 target. On the contrary, PEAR is similar to BEAR in that it is permissive with respect to the interchangeability of the targeted nucleotides (here the splice site and the splice site flanking nucleotides; T\u00e1las et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and experimental data in Figures 1C and 1D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "1893973c-c983-4ccd-9b6c-a25b52922f6e",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C28",
+      "claim": "No other fluorescence-based reporter systems have demonstrated the degree of flexibility shown by PEAR.",
+      "claim_type": "EXPLICIT",
+      "source": "No other fluorescence-based reporter systems have demonstrated such degree of flexibility before (Katti et al., 2020; Lin et al., 2020; S\u00fcr\u00fcn et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim supported by citations to other reporter systems.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "de60a97d-cddc-4662-8b49-59e609c15445",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C29",
+      "claim": "The PEAR-GFP plasmid can be efficiently edited by many combinations of PBS, RT, and nicking position.",
+      "claim_type": "EXPLICIT",
+      "source": "The heatmap in Figure 1B shows that the PEAR-GFP plasmid can be efficiently edited by many of these combinations of PBS, RT, and nicking position.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "5be5369d-6d7b-40dd-8192-e00737ffd1fd",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C30",
+      "claim": "The most efficient editing of PEAR-GFP occurred when a 10-nucleotide long PBS (PBS-10) and a 24-nucleotide long RT region (RT-24) were applied.",
+      "claim_type": "EXPLICIT",
+      "source": "The most efficient editing occurred, when a 10-nucleotide long PBS (PBS-10) and a 24-nucleotide long RT region (RT-24) were applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "27c529bc-62ac-4a46-96e8-b21c3549d3ab",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C31",
+      "claim": "Editing efficiency is generally higher when the complementary strand is nicked than when it is not.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1B also shows that in line with expectations, editing efficiency is generally higher when the complementary strand is nicked, than when it is not (Anzalone et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data in Figure 1B and citation to the original PE publication.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "9345e993-40ea-4c79-b001-8d5091666842",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C32",
+      "claim": "The most effective complementary strand nicking site was position +17 in the case of most PBS and RT length combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "The most effective complementary strand nicking site was position +17 in the case of most PBS and RT length combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "9fed9a7c-43d5-471b-863c-b8c18329ca55",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C33",
+      "claim": "In all conditions, PBS-10 gave greater values than PBS-13 and PBS-16.",
+      "claim_type": "EXPLICIT",
+      "source": "In all conditions, PBS-10 gave greater values than PBS-13 and PBS-16.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "831c2b0b-d2b0-4c95-b84c-5077fd9eeccd",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C34",
+      "claim": "Comparing the RTs, the efficiency of the editing was in the order of RT-24>RT-33>RT-16 in most conditions (16 out of 18).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the RTs, the efficiency of the editing was in the order of RT-24>RT-33>RT-16 in most conditions (16 out of 18).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "a96179c6-b0b2-4be1-8440-6f7e3ca2fb0a",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C35",
+      "claim": "The effect of the length of PBS and RT on editing efficiency is primarily independent of one another.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the concept that the effect of the length of PBS and RT on editing efficiency is primarily independent of one another (Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data in Figure 1B and citation to published research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "56ce9b4f-bcba-4acf-b58a-a76af2e19b95",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C36",
+      "claim": "PE efficiency is governed by the same factors when using a PEAR plasmid as demonstrated earlier on chromosomal targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these experiments support the hypothesis, that PE efficiency is governed by the same factors when using a PEAR plasmid, as demonstrated earlier on chromosomal targets (Anzalone et al., 2019; Kim et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data in Figures 1B and 2, and citations to published research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "7925f50e-8d72-4c60-89ab-b4619d4ca6e7",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C37",
+      "claim": "PEAR specifically reports on prime editing activity and is insensitive to the potential presence of indel background.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, while all three variants\u2014SpCas9 nuclease, nickase, or PE\u2014demonstrated GFP disruption activity, only PE restored mScarlet fluorescence, indicating that PEAR specifically reports on prime editing activity and is insensitive to the potential presence of indel background (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "2c59f198-dfb0-42a9-8a26-6607213256a7",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C38",
+      "claim": "All types of sequence alterations (insertions, deletions, substitutions) can be examined using the PEAR system.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1C demonstrates that all types of sequence alterations can be examined using the PEAR system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "be803cf7-dec4-40e4-b193-2ad125ab7fc5",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C39",
+      "claim": "There seems to be no connection between the efficiency and the complexity of the editing in PEAR.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there seems to be no connection between the efficiency and the complexity of the editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "635af574-1a5e-4fb9-9e0b-b358ffa171c1",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C40",
+      "claim": "The versatility of the PEAR assay lies in the fact that an active splice site can be restored from seemingly any inactive sequence as long as the change can be efficiently implemented by prime editing.",
+      "claim_type": "EXPLICIT",
+      "source": "The versatility of the PEAR assay, with respect to sequence modifications, lies not only in the fact that an active splice site can be restored from seemingly any inactive sequence as long as the change can be efficiently implemented by prime editing, but also that the active splice site sequence itself can be varied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figures 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "a3c1404b-8980-4e40-b430-fffd527a0952",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C41",
+      "claim": "The active splice site sequence itself can be varied in PEAR.",
+      "claim_type": "EXPLICIT",
+      "source": "The versatility of the PEAR assay, with respect to sequence modifications, lies not only in the fact that an active splice site can be restored from seemingly any inactive sequence as long as the change can be efficiently implemented by prime editing, but also that the active splice site sequence itself can be varied. To demonstrate this, we corrected three additional active splice sites from different inactive sequences (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "ed0aab26-ca4d-4bc1-88ab-21e30ddfec5c",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C42",
+      "claim": "The same factors influence prime editing on a plasmid as on genomic targets.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to verify that the same factors influence prime editing on a plasmid as on genomic targets, we compared prime editing efficiency on previously constructed plasmids and two HEK293T cell lines (HEK-BEAR-GFP and HEK-BEAR-mScarlet\u2014Figure 2\u2014figure supplement 1; T\u00e1las et al., 2021) that contain a chromosomal copy of these plasmids harboring an interrupted GFP or mScarlet sequence, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 2 and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "371c3c08-d2d1-4c17-8ba3-6c2a90cec1cb",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C43",
+      "claim": "For BEAR-GFP, PBS-13 and RT-22 or RT-26 in combination with the second nick site at position +103 results in maximum efficiency for both the plasmid and the cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "The heatmap in Figure 2A shows that PBS-13 and RT-22 or RT-26 in combination with the second nick site at position +103 results in maximum efficiency for the BEAR-GFP plasmid. In the absence of a second nick, the efficiency of editing was considerably lower. The most ideal conditions for prime editing were the same both in the plasmid and in the cell line (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "ebd38574-bfa8-4e35-8f09-ba393e4ba240",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C44",
+      "claim": "The overall pattern of prime editing efficiency between the BEAR-GFP plasmid and cell line is similar, exhibiting strong correlation (r=0.89).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall pattern of the two heatmaps is indisputably similar, exhibiting strong correlation (r=0.89, Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data and correlation analysis shown in Figure 2A and Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "bda96795-d73e-4aeb-9a5e-46c704c79394",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C45",
+      "claim": "In the case of the cell line, a somewhat lower general editing efficiency is apparent compared to that with the plasmid, likely due to the much higher copy number of the plasmids present in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In case of the cell line, a somewhat lower general editing efficiency is apparent compared to that with the plasmid. This difference is likely due to the much higher copy number of the plasmids present in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "150954d8-8520-4a47-8291-838c26bd4267",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C46",
+      "claim": "For mScarlet target 1, the top working PBS is 10 nucleotides long in the case of both the BEAR-mScarlet plasmid and the cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Target 1 gave higher prime editing efficiencies, with the top working PBS being 10 nucleotides long in the case of both the BEAR-mScarlet plasmid and the cell line (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "d4bab723-2973-4bd1-b9a2-e888898da0c9",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C47",
+      "claim": "The two heatmaps for mScarlet target 1 exhibit a remarkably similar pattern, with a strong correlation of the editing efficiency in the cell line and the BEAR plasmid (r=0.93).",
+      "claim_type": "EXPLICIT",
+      "source": "The two heatmaps exhibit a remarkably similar pattern, and there is a strong correlation of the editing efficiency in the cell line and the BEAR plasmid (r=0.93; Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data and correlation analysis shown in Figure 2B and Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "159c7c2e-e21b-4ae2-bc65-9eb0cf9059eb",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C48",
+      "claim": "For mScarlet target 2, the best PBS length is also 10 nucleotides long for both the BEAR-mScarlet plasmid and the cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar outcomes can be seen with target 2 where the best PBS length is also 10 nucleotides long for both the BEAR-mScarlet plasmid and the cell line (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "ace7d600-43f0-4e25-8a07-a998ec867ec5",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C49",
+      "claim": "Comparing plasmid and genomic results for mScarlet target 2 revealed a remarkably similar pattern (r=0.92).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing plasmid and genomic results also revealed a remarkably similar pattern (r=0.92; Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data and correlation analysis shown in Figure 2\u2014figure supplement 2B and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "d4f5e1f3-516e-430b-b75c-a5ff460dcde8",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C50",
+      "claim": "For all three targets studied, regardless of whether in plasmids or in cell lines, the three secondary nick positions affected the effectiveness of prime editing in the same way.",
+      "claim_type": "EXPLICIT",
+      "source": "For all three targets studied, regardless of whether in plasmids or in cell lines, the three secondary nick positions affected the effectiveness of prime editing in the same way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 2 and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "d1fc57fc-a05d-4eda-b9b1-0a2c7152045b",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C51",
+      "claim": "The main features of prime editing and factors affecting its efficiency are reflected accurately within the PEAR system.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results strongly imply that the main features of prime editing and factors affecting its efficiency are reflected accurately within our system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data shown in Figure 2 and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "63040446-928b-41df-bec4-c8bd367f265f",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C52",
+      "claim": "Post-transfection selection of edited cells by FACS or antibiotics have proven to be effective methods for the enrichment of genetically modified cells within a population.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-transfection selection of edited cells by fluorescence-activated cell sorting (FACS) or antibiotics have proven to be effective methods for the enrichment of genetically modified cells within a population, given that the SpCas9 coding plasmid co-expressed a protein that is fluorescent or bears antibiotic resistance (Katti et al., 2020; Standage-Beier et al., 2019; Ramakrishna et al., 2014; Grav et al., 2015; St Martin et al., 2018; T\u00e1las et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "e6b31c1b-5a2d-4310-8de8-1a09b4d2a20f",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C53",
+      "claim": "Selecting for cells with a surrogate marker that is subjected to the same type of genetic modification as the intended edit results in higher enrichment of successfully edited cells than when solely selecting for transfection markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments have also shown that selecting for cells with a surrogate marker, that is subjected to the same type of genetic modification (knockout, HDR, or base editing) as the intended edit, results in higher enrichment of successfully edited cells, than when solely selecting for transfection markers (Katti et al., 2020; Coelho et al., 2018; Ramakrishna et al., 2014; Grav et al., 2015; St Martin et al., 2018; T\u00e1las et al., 2021; Yan et al., 2020) suggesting that some individual cells allow for higher editing efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research and confirmed by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "dabbd40a-a470-49c2-8348-700dc7c3939e",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C54",
+      "claim": "Some individual cells allow for higher editing efficiency, which could be due to the nuclease being able to exhibit higher activity, or the activity of DNA repair systems being considerably more engaged in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments have also shown that selecting for cells with a surrogate marker, that is subjected to the same type of genetic modification (knockout, HDR, or base editing) as the intended edit, results in higher enrichment of successfully edited cells, than when solely selecting for transfection markers (Katti et al., 2020; Coelho et al., 2018; Ramakrishna et al., 2014; Grav et al., 2015; St Martin et al., 2018; T\u00e1las et al., 2021; Yan et al., 2020) suggesting that some individual cells allow for higher editing efficiency. This phenomenon could be due to the nuclease being able to exhibit higher activity, or the activity of DNA repair systems could be considerably more engaged in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed enrichment phenomenon.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "baebc6c0-7851-4429-9e67-aa518f08945a",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C55",
+      "claim": "Transfection marker enrichments significantly increased the ratio of edited and non-edited cells: gating for the BFP-expressing cells increased the percentage of the edited population from 18% to 24% with both pegRNAs tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3A shows that transfection marker enrichments significantly increased the ratio of edited and non-edited cells: gating for the BFP-expressing cells increased the percentage of the edited population from 18% to 24% with both pegRNAs tested.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "66ec2458-bfa1-4386-aeb3-8ea5082410aa",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C56",
+      "claim": "PEAR-enrichment resulted in a considerable increase compared to the transfection enrichments, with 57% and 76% mScarlet expressing cells for the two pegRNAs tested.",
+      "claim_type": "EXPLICIT",
+      "source": "PEAR-enrichment resulted in a considerable increase compared to the transfection enrichments in case of both pegRNAs (57% and 76% mScarlet expressing cells, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "f5a56e56-987e-400c-b58d-468758be5b18",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C57",
+      "claim": "Prime edited cells can be substantially enriched when using a PEAR plasmid as a surrogate marker.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that prime edited cells can be substantially enriched when using a PEAR plasmid as a surrogate marker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "5806a59e-84fe-4438-8839-20a339a37377",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C58",
+      "claim": "PEAR enrichments ranged between about twofold and fourfold, reaching up to 62% and 76% editing at FANCF site in K562 and HEK293T cells, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "PEAR enrichments ranged between about twofold and fourfold, reaching up to 62% and 76% editing at FANCF site in K562 and HEK293T cells, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "83a9ddde-84c1-4d85-b7c9-adda9beac35b",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C59",
+      "claim": "Editing the FANCF target in HUES9 cells showed a 7.8-fold increase with 28% PEAR-enriched editing, whilst editing without enrichment remained below 4% in HUES9 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Editing the same target in HUES9 cells showed a 7.8-fold increase with 28% PEAR-enriched editing, whilst editing without enrichment remained below 4% in HUES9 cells (Figure 3C and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "95d82305-81de-436b-8e9d-d7c3983969ce",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C60",
+      "claim": "Enrichments increased the incidence of indels at the edited sites in the population in 8 out of the 13 edits.",
+      "claim_type": "EXPLICIT",
+      "source": "Enrichments increased the incidence of indels at the edited sites in the population in 8 out of the 13 edits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "b2c0aad5-978e-439d-b767-09eb4c896195",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C61",
+      "claim": "The extent of indel increments is generally low: the specificity slightly decreased for only one edit, while it slightly increased in five cases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the extent of these increments is generally low: the specificity slightly decreased for only one edit, while it slightly increased in five cases (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "34118290-25bf-4285-8124-9829213cac51",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C62",
+      "claim": "Only 1 of the 15 off-target sites showed detectable editing and indel formation that was also enriched by PEAR enrichments.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 1 of the 15 off-target sites showed detectable editing (Figure 3F) and indel formation (Figure 3G) that was also enriched by PEAR enrichments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figures 3F and 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "c5a4f8c5-b760-4adb-8ae9-742a6b88e0ee",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C63",
+      "claim": "For the remaining 14 off-target sites, PEAR-enrichment did not increase either off-target editing or indel formation to a detectable level.",
+      "claim_type": "EXPLICIT",
+      "source": "For the remaining 14 sites, PEAR-enrichment did not increase either off-target editing or indel formation to a detectable level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figures 3F and 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "b56bf8ab-787f-4110-baa2-41e6b1b9f92a",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C64",
+      "claim": "PEAR enrichments substantially increase prime editing in various cell lines without compromising neither on-target nor off-target specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these data suggest that PEAR enrichments substantially increase prime editing in various cell lines without compromising neither on-target nor off-target specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data shown in Figures 3C-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "c56971c0-5db3-454a-bcb4-a6b2a172b2bf",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C65",
+      "claim": "Integration of the active PEAR plasmid to the genome is minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3\u2014figure supplement 1 shows that integration of the active plasmid to the genome is minimal; however, since plasmids tend to integrate into the genome, albeit with low efficiency, unedited PEAR plasmids are likely to still integrate into the genome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "65974192-cf31-42c4-8cbb-c3489b3922d2",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C66",
+      "claim": "Unedited PEAR plasmids are likely to still integrate into the genome, albeit with low efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3\u2014figure supplement 1 shows that integration of the active plasmid to the genome is minimal; however, since plasmids tend to integrate into the genome, albeit with low efficiency, unedited PEAR plasmids are likely to still integrate into the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known plasmid behavior and the data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "eb9aac74-0182-49e0-8210-89f98fcebf71",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C67",
+      "claim": "Clones should be checked for the absence of the transfected plasmids, such as the PE-expressing and the PEAR plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Clones should be checked for the absence of the transfected plasmids, such as the PE-expressing and the PEAR plasmid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the potential for plasmid integration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "e5bb9aaa-228c-42fd-b1fc-c57f82a0e689",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C68",
+      "claim": "The pegRNA used for co-editing the PEAR plasmid should have no on-target site in the genome and have only minimal genome-wide off-target effect in order to decrease the potential off-target events during PEAR-enrichments.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important, that the pegRNA used for co-editing the PEAR plasmid has no on-target site in the genome and has only minimal genome-wide off-target effect in order to decrease the potential off-target events during PEAR-enrichments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design consideration for optimal use of PEAR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "26c5697f-858e-4a39-b3c6-566e858e57a0",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C69",
+      "claim": "Both EGFP site 2 and EGFP site 7 sgRNAs have no detectable off-targets as assessed by GUIDE-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome-wide off-target sites of WT-SpCas9 nuclease for EGFP site 2 have been determined previously (Kulcs\u00e1r et al., 2020) and for EGFP site 7, they were determined in this work by GUIDE-seq. Both sgRNAs proved to have no detectable off-targets (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GUIDE-seq data shown in Figure 4A and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "6fc8ceb9-e04d-441b-b455-145bbcfd6585",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C70",
+      "claim": "The highest editing was found with EGFP site 2 with a 12-nucleotide long PBS sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest editing was found with EGFP site 2 with a 12-nucleotide long PBS sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "7286c897-c6da-4d73-9537-ff8a5b7478e3",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C71",
+      "claim": "The PEAR-GFP-2in1-2.0 plasmid is suitable for the enrichment of prime editing and confirmed the efficiency of PEAR-enrichment for various types of editing.",
+      "claim_type": "EXPLICIT",
+      "source": "This plasmid\u2014named PEAR-GFP-2in1-2.0\u2014was used in subsequent experiments to enrich additional nine target sites installing three insertions, deletions, and substitutions each (Figure 4C\u2013E). These results proved that the PEAR-GFP-2in1-2.0 plasmid is also suitable for the enrichment of prime editing and confirmed the efficiency of PEAR-enrichment for various types of editing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figures 4C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "a5378c29-375a-40cd-a2f5-80be47759f98",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C72",
+      "claim": "The editing rates by PEAR-enrichments increased from 2.1- to 4.6-fold and up to 84%.",
+      "claim_type": "EXPLICIT",
+      "source": "The editing rates by PEAR-enrichments increased from 2.1- to 4.6-fold and up to 84% (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "6449924c-f512-41af-8e79-17d323eb7c4a",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C73",
+      "claim": "The increase in editing rates is not accompanied with a decrease in specificity in the case of any of the nine target sites tested with PEAR-GFP-2in1-2.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4D and E show that the increase in editing rates is not accompanied with a decrease in specificity in the case of any of the nine target sites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figures 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "26ae70fb-0400-4725-a312-35dc27c7ee8d",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C74",
+      "claim": "Prime editing technology has readily been translated from mammalian models to plants and Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Prime editing technology has readily been translated from mammalian models (Anzalone et al., 2019; S\u00fcr\u00fcn et al., 2020; Kim et al., 2020; Liu et al., 2020; Schene et al., 2020) to plants (Lin et al., 2020; Jiang et al., 2020; Lu et al., 2021; Xu et al., 2020) and Drosophila (Bosch et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "8d9ae6d1-c74e-468a-89cd-acfe924f58a2",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C75",
+      "claim": "During the preparation of the manuscript, surprisingly few studies had demonstrated the practical use of prime editing in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its great potential, during the preparation of our manuscript, we have found surprisingly few studies that had demonstrated the practical use of prime editing in mammalian cells (S\u00fcr\u00fcn et al., 2020; Schene et al., 2020), which is a vast underestimation of the true potential flexibility of this method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on literature review at the time of manuscript preparation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "739ea1e3-0459-4d82-9367-4f71423f1bc5",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C76",
+      "claim": "The limited practical use of prime editing might be due to the extensive optimization it requires and the relatively low editing efficiency that can be achieved at a subset of targets.",
+      "claim_type": "EXPLICIT",
+      "source": "This might be due to the extensive optimization it requires and the relatively low editing efficiency that can be achieved at a subset of targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the limited adoption of prime editing.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "1db67e6d-1c49-499f-a1bc-2667a94430f1",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C77",
+      "claim": "Any approach that can substantially increase the editing efficiency is critical to aid the generalized use of prime editing.",
+      "claim_type": "EXPLICIT",
+      "source": "In this aspect, any approach that can substantially increase the editing efficiency is critical to aid its generalized use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the importance of improving prime editing efficiency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "fcd471ad-5e5c-4205-807e-5967719dc0ea",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C78",
+      "claim": "Enrichment with a transfection marker resulted in only a 1.45-fold increment on average in all experiments, whilst PEAR enrichments tripled the number of edited cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, enrichment with a transfection marker resulted in only a 1.45-fold increment on average in all experiments, whilst PEAR enrichments tripled the number of edited cells (Figures 3A, C ,, 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the experimental data shown in Figures 3A, 3C, and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "cd1d170e-4018-408e-95b0-33bd7a6f0589",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C79",
+      "claim": "The application of PEAR as a surrogate marker could substantially contribute to the more widespread use of prime editing by considerably increasing the number of potential targets which may now be edited with appropriate efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the application of PEAR as a surrogate marker, as demonstrated in four cell lines including HUES9 cells, could substantially contribute to the more widespread use of prime editing by considerably increasing the number of potential targets, which may now be edited with appropriate efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "5e3bb890-5777-4738-99c7-a20e352bbc9a",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C80",
+      "claim": "PEAR is a versatile tool that can be utilized for the characterization of different prime editors.",
+      "claim_type": "EXPLICIT",
+      "source": "PEAR is also a versatile tool that can be utilized for the characterization of different PEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing optimization of various parameters in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "57ce5a6b-31bd-4c10-906d-0193c79b5c6f",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C81",
+      "claim": "More than 250 conditions combining different sgRNAs, PBS- and RT-lengths, and nick sites were examined using PEAR.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined more than 250 conditions combining different sgRNAs, PBS- and RT-lengths, and nick sites, and our results confirmed that the efficiency of prime editing to modify PEAR plasmids is governed by the same factors as prime editing in genomic context (Figure 2 and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental work performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "f498732f-81ad-4007-998a-8255c58e7990",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C82",
+      "claim": "The tolerance of the splice donor site for substitutions makes the target region sequence of the PEAR plasmid readily adjustable.",
+      "claim_type": "EXPLICIT",
+      "source": "The tolerance of the splice donor site for substitutions (Figure 1D; T\u00e1las et al., 2021) makes the target region sequence of the PEAR plasmid readily adjustable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data in Figure 1D and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "7f528953-7d72-4da6-821e-c257617f546e",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C83",
+      "claim": "The versatility of PEAR allows the user to examine the effect of sequence features and other factors affecting the efficiency of prime editing in a systematic manner that cannot be explored otherwise using genomic targets.",
+      "claim_type": "EXPLICIT",
+      "source": "This versatility allows the user to examine the effect of sequence features and other factors affecting the efficiency of prime editing in a systematic manner that cannot be explored otherwise using genomic targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the demonstrated flexibility of PEAR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "9a7b57e1-675c-47c1-adf3-62b106793a36",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C84",
+      "claim": "PEAR may assist the development of more efficient prime editors or variants with enhanced characteristics in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach, beyond its general use, may also assist the development of more efficient PEs or variants with enhanced characteristics in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications of PEAR.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "b0299867-ff8d-4744-9e2e-a1a46571c766",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C85",
+      "claim": "PEAR is expected to become a widespread tool to be used in a wide variety of biomedical and biotechnological applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Owning to the relatively low efficiency of prime editing with many potential target sequences, PEAR is expected to become a widespread tool to be used in a wide variety of biomedical and biotechnological applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the future adoption of PEAR.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "9d707068-7ab3-4a83-b7a0-3109ffc9c927",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C86",
+      "claim": "PEAR may be an especially useful tool to be used with hard-to-edit cells or where the efficiency of prime editors is particularly compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "PEAR may be an especially useful tool to be used with hard-to-edit cells or where the efficiency of PEs is particularly compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the demonstrated enrichment capabilities of PEAR, particularly in HUES9 cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "b26baede-1d47-4dce-a79d-64b0b4ea60f9",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C87",
+      "claim": "HEK293T cells are very susceptible to prime editing due to the fact that their mismatch repair system is partially defective.",
+      "claim_type": "EXPLICIT",
+      "source": "Since HEK293T cells are very susceptible to prime editing due to the fact that their mismatch repair system is partially defective (Chen et al., 2021; Trojan et al., 2002), we also attempted enrichment in K562 and U2OS cells, and on a human embryonic stem cell line HUES9, that are all less susceptible to prime editing (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "d6989726-9aa7-462c-bed7-58e9f4286424",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C88",
+      "claim": "K562, U2OS, and HUES9 cells are all less susceptible to prime editing than HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Since HEK293T cells are very susceptible to prime editing due to the fact that their mismatch repair system is partially defective (Chen et al., 2021; Trojan et al., 2002), we also attempted enrichment in K562 and U2OS cells, and on a human embryonic stem cell line HUES9, that are all less susceptible to prime editing (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "8d8b3f8d-0160-427b-bcfc-cabaabd48cf9",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C89",
+      "claim": "The editing rates increased using transfection marker enrichment by up to 1.65-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The editing rates increased using transfection marker enrichment by up to 1.65-fold; however, they all showed a significantly greater increase when the PEAR enrichment was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "42550a29-4e10-49d6-87a5-feeb786422ed",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C90",
+      "claim": "PEAR is based on the same concept as BEAR and contains the same inactive splice site.",
+      "claim_type": "IMPLICIT",
+      "source": "The mechanism of PEAR is based on the same concept as BEAR (see Figure 1\u2014figure supplement 1A and B), and it contains the same inactive splice site, shown in (A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "044cbdd7-3dad-478e-a5ea-4f15fe5e52c1",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C91",
+      "claim": "PE can revert the 'G-AC-AAGT' sequence to the canonical 'G-GT-AAGT' splice site in PEAR.",
+      "claim_type": "EXPLICIT",
+      "source": "PE can revert the 'G-AC-AAGT' sequence to the canonical 'G-GT-AAGT' splice site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "59f0f715-888c-43c3-af3f-54a86fe35694",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C92",
+      "claim": "Prime editing occurs downstream of the cut site in the target.",
+      "claim_type": "EXPLICIT",
+      "source": "Prime editing occurs downstream of the cut site in the target; hence, this method enables us to position the spacer sequence within the intron, thus, the entire length of the spacer (shown as 'N'-s) is freely adjustable in PEAR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known mechanism of prime editing and the design shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "365c0fa5-321e-42e8-b6d5-f6abb5708753",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C93",
+      "claim": "In the PEAR system, GFP fluorescence can be restored from various inactive splice sequences not only by substitutions but also by insertions/deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PEAR system, GFP fluorescence can be restored from various inactive splice sequences not only by substitutions but also by insertions/deletions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "931bee1c-8252-4006-8f4d-f510b598183e",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C94",
+      "claim": "Prime editing can result in various active splice sequences, demonstrating the sequence flexibility of the PEAR system.",
+      "claim_type": "EXPLICIT",
+      "source": "Prime editing can result in various active splice sequences, further demonstrating the sequence flexibility of the PEAR system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "ea3ad23d-6338-4611-aafe-30a271fbf95a",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C95",
+      "claim": "Based on previous work, four additional active splice site variants were selected for testing in PEAR.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on T\u00e1las et al., 2021, four additional active splice site variants were selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "77bf9268-20ab-4715-82c0-7d8a2f6eaeec",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C96",
+      "claim": "To generate suitable inactive plasmids, splicing was disrupted by systematically replacing the 5\u2032-GT splice donor site to 5\u2032-AC and 5\u2032-CT.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate suitable inactive plasmids, splicing was disrupted by systematically replacing the 5\u2032-GT splice donor site to 5\u2032-AC and 5\u2032-CT (negative controls with inactive sequences, gray columns).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "d6e0361a-df95-4fb4-9086-e5d4ab7b88d0",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "claim_id": "C97",
+      "claim": "With the appropriate pegRNAs, PE2 was able to restore GFP fluorescence in every case of the four active splice site variants tested.",
+      "claim_type": "EXPLICIT",
+      "source": "With the appropriate pegRNAs, PE2 was able to restore GFP fluorescence in every case (green columns).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on prime editing technology, describing it as a CRISPR/Cas9-based tool that allows insertions, deletions, and substitutions without double-stranded breaks, but with typical editing rates of only 10-30% and requiring extensive optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C14) accurately summarize established knowledge about prime editing technology, supported by appropriate citations to the original literature. The characterization of prime editing efficiency, mechanism, and optimization requirements is consistent with published work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "5b77bc5d-d8cf-4957-a5bf-b9c3835e7ff5",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous reporter systems for base editing and prime editing had significant limitations, being restricted to few target sequences or showing low signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 accurately characterize prior work on editing reporters, supported by appropriate citations. This establishes the context and need for the PEAR system developed in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "ae1dfd6f-e146-406f-8371-9b740c555077",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PEAR is based on the BEAR system design, using a split GFP with an inactive splice site that can be activated by prime editing, with the key innovation being placement of the PAM on the complementary strand to allow unrestricted sequence variation across the entire spacer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27, C90-C92 describe the PEAR design and its relationship to BEAR. The design is clearly illustrated in Figure 1A and Figure 1\u2014figure supplement 1, and the key innovation of PAM placement is well-supported. The comparison to BEAR is appropriate given prior work by the same group.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "b3b4efa4-b69c-46f6-b8be-58601b44f104",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PEAR has no background fluorescence, specifically reports prime editing events, and provides unprecedented flexibility for sequence variation, allowing all types of edits (insertions, deletions, substitutions) and various active splice site sequences to be tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C28, C37-C41, C93-C97 are well-supported by experimental data in Figures 1C, 1D, and Figure 1\u2014figure supplement 1E. The specificity experiment (C37) convincingly shows that only PE2 (not nuclease or nickase) restores fluorescence. The flexibility claims are demonstrated across multiple sequence variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "75eb8cd0-a747-447e-8fc9-6cb4db66b2ba",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optimization experiments with PEAR-GFP identified PBS-10 and RT-24 as optimal, with complementary strand nicking at position +17 generally most effective, and confirmed that PBS and RT length effects are independent, consistent with genomic prime editing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 are directly supported by the heatmap data in Figure 1B. The systematic testing of 18 conditions (3 PBS \u00d7 3 RT \u00d7 2 nicking conditions) provides robust evidence. The conclusion that PEAR reflects genomic prime editing factors is reasonable but requires validation (addressed in subsequent experiments).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "84d8f71a-8f77-4f56-9240-e46a9787945e",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Comparison of prime editing on PEAR plasmids versus genomic targets in cell lines showed strong correlations (r=0.89-0.93) across three different targets, with over 250 conditions tested, confirming that PEAR accurately reflects the factors governing genomic prime editing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C51, C81 are strongly supported by the comparative data in Figure 2 and Figure 2\u2014figure supplement 2. The high correlations (r=0.89-0.93) across three independent targets provide convincing evidence. The lower absolute efficiency in cell lines (C45) is reasonably attributed to plasmid copy number differences. This is a critical validation of the PEAR system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "512dcc2a-9e1a-4491-a317-44a98e46afca",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior work has shown that surrogate markers subjected to the same type of genetic modification result in higher enrichment than transfection markers alone, possibly due to cell-to-cell variability in editing efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 accurately summarize prior work on enrichment strategies, supported by appropriate citations. C54 is appropriately labeled as speculative regarding the mechanism. This provides context for testing PEAR as an enrichment marker.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "7414084e-c80d-421c-a549-328070a42c0c",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In HEK-BEAR-mScarlet cells, PEAR enrichment substantially outperformed transfection marker enrichment, increasing edited populations from 18% to 57-76% compared to 18% to 24% with transfection markers, representing approximately a 3-fold average improvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C78 are directly supported by data in Figure 3A and summarized across experiments. The comparison between enrichment strategies is clear and statistically significant. This demonstrates proof-of-concept for PEAR enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "451b9c71-208d-43c3-be5b-50977af12ff4",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PEAR enrichment was effective across multiple cell lines (HEK293T, K562, U2OS, HUES9), with 2-7.8 fold increases in editing efficiency, including a particularly dramatic improvement in hard-to-edit HUES9 cells (from <4% to 28%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59, C87-C89 are supported by data in Figure 3C. The testing across four cell lines with different editing susceptibilities strengthens the generalizability. The HUES9 result is particularly compelling given the low baseline efficiency. Statistical significance is shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "f80fff5d-c599-403d-bedb-c5192db21e68",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PEAR enrichment increased indel frequency in 8 of 13 edits, but the increases were generally small and specificity (editing%/indel%) was maintained or improved in most cases, with no compromise to on-target specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61, C64 are supported by data in Figures 3D-E. The analysis of specificity is appropriate, though the definition (editing%/indel%) could be clearer. The conclusion that specificity is not compromised is reasonable given the data, though modest increases in indels are acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "a2c55cdd-d1e5-4286-9679-ce65b442d0d5",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Off-target analysis of 15 predicted sites showed detectable editing at only 1 site, with PEAR enrichment not increasing off-target editing or indels at the remaining 14 sites to detectable levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are supported by data in Figures 3F-G. The off-target analysis is appropriately conducted on previously reported sites. The finding that PEAR enrichment does not substantially increase off-target effects is important for practical application, though the analysis is limited to predicted sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "462659ea-fdea-4558-9581-1770b889a9ca",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Integration of active PEAR plasmid into the genome is minimal, but unedited plasmids may still integrate at low efficiency, so clones should be checked for plasmid absence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are supported by data in Figure 3\u2014figure supplement 1. C66 is appropriately cautious about potential integration of unedited plasmids. C67 is a reasonable recommendation, and the authors provide PCR primers for detection. This addresses an important practical concern.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "3618eb79-4347-4187-81dc-1b889a731c2f",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "To minimize off-target effects, PEAR-GFP-2in1-2.0 was developed using EGFP site 2 (with no detectable off-targets by GUIDE-seq) and a 12-nt PBS, and successfully enriched nine additional targets with various edit types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 are supported by GUIDE-seq data in Figure 4A and enrichment data in Figures 4B-E. The GUIDE-seq validation is rigorous and addresses the concern raised in C68. The successful enrichment of nine diverse targets demonstrates broad applicability of the optimized system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "b892b29b-b533-41fa-9b3a-452cb590e7d2",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Using PEAR-GFP-2in1-2.0, editing rates increased 2.1-4.6 fold, reaching up to 84%, without decreasing specificity for any of nine target sites tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C72-C73 are directly supported by data in Figures 4C-E. The 84% maximum editing rate is impressive and represents a substantial improvement. The maintenance of specificity across all nine targets strengthens confidence in the approach. Statistical significance is shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "11d4af79-67ad-4ed8-a7fd-3412f14c6c5e",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PEAR can be used as a surrogate marker for enriching prime edited cells and as a versatile tool for characterizing prime editors, with the flexibility to systematically examine sequence features affecting editing efficiency in ways not possible with genomic targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C79-C80, C82-C83 are supported by the collective experimental data. The enrichment capability is demonstrated in Figures 3-4, and the characterization utility is shown in Figures 1-2. The claim about systematic investigation (C83) is reasonable given the demonstrated flexibility, though further examples would strengthen this.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    },
+    {
+      "id": "13f7ee8e-c285-4d4f-b5f7-0ffc005692e2",
+      "content_id": "d3252eaa-ac5f-4cdd-9646-5cf7169edcac",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors discuss the broader context of prime editing adoption, noting limited practical use in mammalian cells despite translation to other systems, and suggest PEAR may facilitate wider adoption and future development of improved prime editors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C77, C84-C86 are primarily speculative or contextual. C74 is supported by citations. C75-C76 represent observations/speculation about field adoption. C77 is a logical inference. C84-C86 are speculations about future impact that cannot be evaluated from current data. These are reasonable discussion points but not experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:15:20.950474Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "014f6030-63a4-43c0-85bf-4e3de1ce65b9",
+      "result_id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77"
+    },
+    {
+      "claim_id": "59a863c9-9791-40dc-ad2c-1a00d0ca8588",
+      "result_id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77"
+    },
+    {
+      "claim_id": "a303a14f-21b0-4f83-b336-0e16a0321281",
+      "result_id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77"
+    },
+    {
+      "claim_id": "edeb3a84-1e8c-417e-8a38-568b499d5692",
+      "result_id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77"
+    },
+    {
+      "claim_id": "563dc150-0dfc-40a6-897b-354afb1d787a",
+      "result_id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77"
+    },
+    {
+      "claim_id": "eb5b4374-a0dc-464a-9ef1-ac3adc33f754",
+      "result_id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77"
+    },
+    {
+      "claim_id": "a8efc546-e189-44b0-a530-31ca8b7dfd14",
+      "result_id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77"
+    },
+    {
+      "claim_id": "eabc7d14-765e-4cdf-8ae4-b2f32d530e2e",
+      "result_id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77"
+    },
+    {
+      "claim_id": "eb8433d0-1fd1-4292-aae9-02f2121a8e5c",
+      "result_id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77"
+    },
+    {
+      "claim_id": "68fda5d2-7d73-437e-a6a3-684697130920",
+      "result_id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77"
+    },
+    {
+      "claim_id": "ab374de6-7f3f-4c37-bb78-0238d6011ffa",
+      "result_id": "a3aabdf7-2168-4c92-8d10-45e8ebafac77"
+    },
+    {
+      "claim_id": "d1622179-00d7-4bc3-8c57-50dddc7d6c07",
+      "result_id": "5b77bc5d-d8cf-4957-a5bf-b9c3835e7ff5"
+    },
+    {
+      "claim_id": "ef4f28a9-5814-4dec-b7b2-1dab8efba1d0",
+      "result_id": "5b77bc5d-d8cf-4957-a5bf-b9c3835e7ff5"
+    },
+    {
+      "claim_id": "37b1b525-32c8-4d59-a4e0-d876c14b8ccb",
+      "result_id": "5b77bc5d-d8cf-4957-a5bf-b9c3835e7ff5"
+    },
+    {
+      "claim_id": "2fb62633-ad60-4394-ad00-1128c87fca39",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "7842e304-55f8-4065-a288-c778b285c1b8",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "58828639-4b06-4d25-aa23-b38f63b626a4",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "fff83447-0c2c-49da-8858-1a7abf874428",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "37430a36-cdc1-4a78-9ac9-1cb841f90b07",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "9914a394-7dc1-4e2a-ac7f-d1f179bf90c8",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "501c4403-aa82-47f6-be2a-7b9bb3dc1ece",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "55bfb639-1d13-4a6d-b414-a3edbd3d4259",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "8b59fdba-731f-43a4-8458-8880380b61fa",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "42550a29-4e10-49d6-87a5-feeb786422ed",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "044cbdd7-3dad-478e-a5ea-4f15fe5e52c1",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "59f0f715-888c-43c3-af3f-54a86fe35694",
+      "result_id": "ae1dfd6f-e146-406f-8371-9b740c555077"
+    },
+    {
+      "claim_id": "f8f9b5ba-f74f-4973-b504-fa3bbb728ab2",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "48888d2f-7af3-403c-aea4-6b02d0c7a2b7",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "1893973c-c983-4ccd-9b6c-a25b52922f6e",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "7925f50e-8d72-4c60-89ab-b4619d4ca6e7",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "2c59f198-dfb0-42a9-8a26-6607213256a7",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "be803cf7-dec4-40e4-b193-2ad125ab7fc5",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "635af574-1a5e-4fb9-9e0b-b358ffa171c1",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "a3c1404b-8980-4e40-b430-fffd527a0952",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "365c0fa5-321e-42e8-b6d5-f6abb5708753",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "931bee1c-8252-4006-8f4d-f510b598183e",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "ea3ad23d-6338-4611-aafe-30a271fbf95a",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "77bf9268-20ab-4715-82c0-7d8a2f6eaeec",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "d6e0361a-df95-4fb4-9086-e5d4ab7b88d0",
+      "result_id": "b3b4efa4-b69c-46f6-b8be-58601b44f104"
+    },
+    {
+      "claim_id": "de60a97d-cddc-4662-8b49-59e609c15445",
+      "result_id": "75eb8cd0-a747-447e-8fc9-6cb4db66b2ba"
+    },
+    {
+      "claim_id": "5be5369d-6d7b-40dd-8192-e00737ffd1fd",
+      "result_id": "75eb8cd0-a747-447e-8fc9-6cb4db66b2ba"
+    },
+    {
+      "claim_id": "27c529bc-62ac-4a46-96e8-b21c3549d3ab",
+      "result_id": "75eb8cd0-a747-447e-8fc9-6cb4db66b2ba"
+    },
+    {
+      "claim_id": "9345e993-40ea-4c79-b001-8d5091666842",
+      "result_id": "75eb8cd0-a747-447e-8fc9-6cb4db66b2ba"
+    },
+    {
+      "claim_id": "9fed9a7c-43d5-471b-863c-b8c18329ca55",
+      "result_id": "75eb8cd0-a747-447e-8fc9-6cb4db66b2ba"
+    },
+    {
+      "claim_id": "831c2b0b-d2b0-4c95-b84c-5077fd9eeccd",
+      "result_id": "75eb8cd0-a747-447e-8fc9-6cb4db66b2ba"
+    },
+    {
+      "claim_id": "a96179c6-b0b2-4be1-8440-6f7e3ca2fb0a",
+      "result_id": "75eb8cd0-a747-447e-8fc9-6cb4db66b2ba"
+    },
+    {
+      "claim_id": "56ce9b4f-bcba-4acf-b58a-a76af2e19b95",
+      "result_id": "75eb8cd0-a747-447e-8fc9-6cb4db66b2ba"
+    },
+    {
+      "claim_id": "ed0aab26-ca4d-4bc1-88ab-21e30ddfec5c",
+      "result_id": "84d8f71a-8f77-4f56-9240-e46a9787945e"
+    },
+    {
+      "claim_id": "371c3c08-d2d1-4c17-8ba3-6c2a90cec1cb",
+      "result_id": "84d8f71a-8f77-4f56-9240-e46a9787945e"
+    },
+    {
+      "claim_id": "ebd38574-bfa8-4e35-8f09-ba393e4ba240",
+      "result_id": "84d8f71a-8f77-4f56-9240-e46a9787945e"
+    },
+    {
+      "claim_id": "bda96795-d73e-4aeb-9a5e-46c704c79394",
+      "result_id": "84d8f71a-8f77-4f56-9240-e46a9787945e"
+    },
+    {
+      "claim_id": "150954d8-8520-4a47-8291-838c26bd4267",
+      "result_id": "84d8f71a-8f77-4f56-9240-e46a9787945e"
+    },
+    {
+      "claim_id": "d4bab723-2973-4bd1-b9a2-e888898da0c9",
+      "result_id": "84d8f71a-8f77-4f56-9240-e46a9787945e"
+    },
+    {
+      "claim_id": "159c7c2e-e21b-4ae2-bc65-9eb0cf9059eb",
+      "result_id": "84d8f71a-8f77-4f56-9240-e46a9787945e"
+    },
+    {
+      "claim_id": "ace7d600-43f0-4e25-8a07-a998ec867ec5",
+      "result_id": "84d8f71a-8f77-4f56-9240-e46a9787945e"
+    },
+    {
+      "claim_id": "d4f5e1f3-516e-430b-b75c-a5ff460dcde8",
+      "result_id": "84d8f71a-8f77-4f56-9240-e46a9787945e"
+    },
+    {
+      "claim_id": "d1fc57fc-a05d-4eda-b9b1-0a2c7152045b",
+      "result_id": "84d8f71a-8f77-4f56-9240-e46a9787945e"
+    },
+    {
+      "claim_id": "57ce5a6b-31bd-4c10-906d-0193c79b5c6f",
+      "result_id": "84d8f71a-8f77-4f56-9240-e46a9787945e"
+    },
+    {
+      "claim_id": "63040446-928b-41df-bec4-c8bd367f265f",
+      "result_id": "512dcc2a-9e1a-4491-a317-44a98e46afca"
+    },
+    {
+      "claim_id": "e6b31c1b-5a2d-4310-8de8-1a09b4d2a20f",
+      "result_id": "512dcc2a-9e1a-4491-a317-44a98e46afca"
+    },
+    {
+      "claim_id": "dabbd40a-a470-49c2-8348-700dc7c3939e",
+      "result_id": "512dcc2a-9e1a-4491-a317-44a98e46afca"
+    },
+    {
+      "claim_id": "baebc6c0-7851-4429-9e67-aa518f08945a",
+      "result_id": "7414084e-c80d-421c-a549-328070a42c0c"
+    },
+    {
+      "claim_id": "66ec2458-bfa1-4386-aeb3-8ea5082410aa",
+      "result_id": "7414084e-c80d-421c-a549-328070a42c0c"
+    },
+    {
+      "claim_id": "f5a56e56-987e-400c-b58d-468758be5b18",
+      "result_id": "7414084e-c80d-421c-a549-328070a42c0c"
+    },
+    {
+      "claim_id": "fcd471ad-5e5c-4205-807e-5967719dc0ea",
+      "result_id": "7414084e-c80d-421c-a549-328070a42c0c"
+    },
+    {
+      "claim_id": "5806a59e-84fe-4438-8839-20a339a37377",
+      "result_id": "451b9c71-208d-43c3-be5b-50977af12ff4"
+    },
+    {
+      "claim_id": "83a9ddde-84c1-4d85-b7c9-adda9beac35b",
+      "result_id": "451b9c71-208d-43c3-be5b-50977af12ff4"
+    },
+    {
+      "claim_id": "b26baede-1d47-4dce-a79d-64b0b4ea60f9",
+      "result_id": "451b9c71-208d-43c3-be5b-50977af12ff4"
+    },
+    {
+      "claim_id": "d6989726-9aa7-462c-bed7-58e9f4286424",
+      "result_id": "451b9c71-208d-43c3-be5b-50977af12ff4"
+    },
+    {
+      "claim_id": "8d8b3f8d-0160-427b-bcfc-cabaabd48cf9",
+      "result_id": "451b9c71-208d-43c3-be5b-50977af12ff4"
+    },
+    {
+      "claim_id": "95d82305-81de-436b-8e9d-d7c3983969ce",
+      "result_id": "f80fff5d-c599-403d-bedb-c5192db21e68"
+    },
+    {
+      "claim_id": "b2c0aad5-978e-439d-b767-09eb4c896195",
+      "result_id": "f80fff5d-c599-403d-bedb-c5192db21e68"
+    },
+    {
+      "claim_id": "b56bf8ab-787f-4110-baa2-41e6b1b9f92a",
+      "result_id": "f80fff5d-c599-403d-bedb-c5192db21e68"
+    },
+    {
+      "claim_id": "34118290-25bf-4285-8124-9829213cac51",
+      "result_id": "a2c55cdd-d1e5-4286-9679-ce65b442d0d5"
+    },
+    {
+      "claim_id": "c5a4f8c5-b760-4adb-8ae9-742a6b88e0ee",
+      "result_id": "a2c55cdd-d1e5-4286-9679-ce65b442d0d5"
+    },
+    {
+      "claim_id": "c56971c0-5db3-454a-bcb4-a6b2a172b2bf",
+      "result_id": "462659ea-fdea-4558-9581-1770b889a9ca"
+    },
+    {
+      "claim_id": "65974192-cf31-42c4-8cbb-c3489b3922d2",
+      "result_id": "462659ea-fdea-4558-9581-1770b889a9ca"
+    },
+    {
+      "claim_id": "eb9aac74-0182-49e0-8210-89f98fcebf71",
+      "result_id": "462659ea-fdea-4558-9581-1770b889a9ca"
+    },
+    {
+      "claim_id": "e5bb9aaa-228c-42fd-b1fc-c57f82a0e689",
+      "result_id": "3618eb79-4347-4187-81dc-1b889a731c2f"
+    },
+    {
+      "claim_id": "26c5697f-858e-4a39-b3c6-566e858e57a0",
+      "result_id": "3618eb79-4347-4187-81dc-1b889a731c2f"
+    },
+    {
+      "claim_id": "6fc8ceb9-e04d-441b-b455-145bbcfd6585",
+      "result_id": "3618eb79-4347-4187-81dc-1b889a731c2f"
+    },
+    {
+      "claim_id": "7286c897-c6da-4d73-9537-ff8a5b7478e3",
+      "result_id": "3618eb79-4347-4187-81dc-1b889a731c2f"
+    },
+    {
+      "claim_id": "2c0d584b-bdee-490a-878d-d9dfb91ef268",
+      "result_id": "b892b29b-b533-41fa-9b3a-452cb590e7d2"
+    },
+    {
+      "claim_id": "a5378c29-375a-40cd-a2f5-80be47759f98",
+      "result_id": "b892b29b-b533-41fa-9b3a-452cb590e7d2"
+    },
+    {
+      "claim_id": "6449924c-f512-41af-8e79-17d323eb7c4a",
+      "result_id": "b892b29b-b533-41fa-9b3a-452cb590e7d2"
+    },
+    {
+      "claim_id": "9f73f3bb-f581-4e6d-9245-ba6e1232c093",
+      "result_id": "11d4af79-67ad-4ed8-a7fd-3412f14c6c5e"
+    },
+    {
+      "claim_id": "cd1d170e-4018-408e-95b0-33bd7a6f0589",
+      "result_id": "11d4af79-67ad-4ed8-a7fd-3412f14c6c5e"
+    },
+    {
+      "claim_id": "5e3bb890-5777-4738-99c7-a20e352bbc9a",
+      "result_id": "11d4af79-67ad-4ed8-a7fd-3412f14c6c5e"
+    },
+    {
+      "claim_id": "f498732f-81ad-4007-998a-8255c58e7990",
+      "result_id": "11d4af79-67ad-4ed8-a7fd-3412f14c6c5e"
+    },
+    {
+      "claim_id": "7f528953-7d72-4da6-821e-c257617f546e",
+      "result_id": "11d4af79-67ad-4ed8-a7fd-3412f14c6c5e"
+    },
+    {
+      "claim_id": "26ae70fb-0400-4725-a312-35dc27c7ee8d",
+      "result_id": "13f7ee8e-c285-4d4f-b5f7-0ffc005692e2"
+    },
+    {
+      "claim_id": "8d9ae6d1-c74e-468a-89cd-acfe924f58a2",
+      "result_id": "13f7ee8e-c285-4d4f-b5f7-0ffc005692e2"
+    },
+    {
+      "claim_id": "739ea1e3-0459-4d82-9367-4f71423f1bc5",
+      "result_id": "13f7ee8e-c285-4d4f-b5f7-0ffc005692e2"
+    },
+    {
+      "claim_id": "1db67e6d-1c49-499f-a1bc-2667a94430f1",
+      "result_id": "13f7ee8e-c285-4d4f-b5f7-0ffc005692e2"
+    },
+    {
+      "claim_id": "9a7b57e1-675c-47c1-adf3-62b106793a36",
+      "result_id": "13f7ee8e-c285-4d4f-b5f7-0ffc005692e2"
+    },
+    {
+      "claim_id": "b0299867-ff8d-4744-9e2e-a1a46571c766",
+      "result_id": "13f7ee8e-c285-4d4f-b5f7-0ffc005692e2"
+    },
+    {
+      "claim_id": "9d707068-7ab3-4a83-b7a0-3109ffc9c927",
+      "result_id": "13f7ee8e-c285-4d4f-b5f7-0ffc005692e2"
+    }
+  ],
+  "comparisons": []
+}

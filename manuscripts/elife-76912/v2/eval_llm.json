@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C80",
+      "C81",
+      "C84",
+      "C85",
+      "C89"
+    ],
+    "result": "Drd1 receptors are expressed in a subset of unipolar brush cells (UBCs) in the mouse cerebellar vermis, specifically in approximately 35% of Tbr2+ UBCs, with 76% of tdT+ UBCs expressing Drd1a mRNA transcripts. These Drd1+ UBCs are predominantly mGluR1+ ON-type UBCs (71%), with minimal overlap with calretinin+ UBCs (5.3%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C16, C80-C81, C84-C85, and C89 provide converging evidence from multiple complementary techniques (immunohistochemistry, FISH, confocal imaging) demonstrating Drd1 expression in a specific UBC subpopulation. The quantitative data are internally consistent and supported by appropriate controls and markers (Tbr2, mGluR1, calretinin). The 40-fold enrichment of Drd1a puncta within tdT+ soma (C16) provides strong spatial validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C90",
+      "C92"
+    ],
+    "result": "Drd1 activation by SKF81297 increases firing rate in UBCs by 2.48 Hz (110% increase), along with increases in membrane potential and input resistance. This effect is specific to Drd1 receptors, as demonstrated by appropriate antagonist and vehicle controls, though approximately 30% of UBCs (quiescent cells) did not respond.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C21, C90, and C92 demonstrate Drd1-mediated excitability changes with appropriate pharmacological controls (antagonist cocktail and ACSF vehicle). The statistical significance (p=0.02) and effect size (110% increase) are substantial. Controls showing no effect with antagonists (p=0.49) or ACSF (p=0.33) strengthen the specificity claim. The observation of non-responding quiescent cells (C92) adds biological nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C94",
+      "C96"
+    ],
+    "result": "Drd1 activation increases NMDAR-mediated currents in UBCs through a post-synaptic mechanism, with a 15% increase observed with electrical stimulation and a 51% increase with glutamate uncaging. The currents are confirmed as NMDAR-mediated by CPP blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C24, C94, and C96 provide strong evidence for post-synaptic NMDAR modulation using complementary approaches (electrical stimulation and glutamate uncaging). The glutamate uncaging experiment (C23, C24) is particularly convincing as it bypasses presynaptic mechanisms. The CPP control (C94) confirms NMDAR identity. The difference in effect size between electrical stimulation (15%) and uncaging (51%) may reflect network effects or methodological differences but both show the same direction of effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C33",
+      "C39",
+      "C75"
+    ],
+    "result": "Midbrain dopaminergic nuclei (SNc/VTA) do not project to the cerebellar regions containing Drd1+ UBCs, as demonstrated by absence of retrograde labeling in multiple tracing experiments using both Dat-Cre;tdT mice and Th-Flpo mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C26, C33, C39, and C75 provide consistent negative evidence from multiple independent tracing approaches (CTB-488 retrograde tracing, retrograde AAV, and rabies virus tracing). The observation that Dat-Cre;tdT+ axons in cerebellum originate from LRN (C26) rather than SNc/VTA strengthens the conclusion. This contradicts some prior literature (C74) but is consistent with recent mouse studies (C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C100",
+      "C101",
+      "C140"
+    ],
+    "result": "TH+ Purkinje cells in lobule X lack the molecular machinery necessary for dopamine synthesis and release, specifically lacking transcripts for Ddc (8/163 cells), Slc18a2 (4/37 cells), and Slc6a3 (4/37 cells), in stark contrast to SNc dopamine neurons where these transcripts are abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29-C31, C100-C101, and C140 provide compelling FISH data with appropriate positive controls (SNc neurons). The quantitative comparison showing minimal expression in TH+ Pkj cells versus high expression in SNc neurons (e.g., 119/134 SNc neurons express Ddc vs 8/163 Pkj cells) is convincing. This resolves a longstanding question in the field about whether TH+ Purkinje cells can release dopamine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C38",
+      "C102",
+      "C141"
+    ],
+    "result": "The locus coeruleus (LC) is identified as the most likely source of dopamine to Drd1+ UBCs, supported by retrograde tracing showing LC neurons project to lobules IX/X, rabies virus tracing showing sparse LC inputs to Drd1+ UBCs, and exclusion of other potential sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C32, C38, C102, and C141 converge on LC as the dopamine source through multiple lines of evidence: retrograde AAV tracing (C32), rabies virus tracing (C38), and process of elimination (C102). However, the rabies tracing shows only 'sparse' LC labeling (C38), and it's noted that rabies virus may have labeling biases (C107). The conclusion is well-supported but the sparse connectivity suggests the LC-UBC dopaminergic connection may be modulatory rather than a major input.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42"
+    ],
+    "result": "Electrical stimulation of cerebellar inputs (50 stimuli at 50 Hz) elicits monoamine release onto UBCs, as detected by GRABDA2h sensor fluorescence increases that are blocked by Drd2 antagonist L-741,626 (4.88-fold reduction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41-C42 demonstrate monoamine release using the GRABDA2h sensor with appropriate pharmacological validation. The Drd2 antagonist control (C42) is critical as GRABDA2h is a Drd2-based sensor. However, electrical stimulation lacks specificity and activates all inputs to lobule X, so this doesn't definitively identify the source as LC. The result supports monoamine release but requires optogenetic experiments for source identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Optogenetic activation of LC axons (200 pulses at 39 Hz) elicits time-locked increases in GRABDA2h fluorescence in a subset of UBCs (5/20 cells, 25%), with an average success rate of approximately 40% across responding cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C43-C45 provide direct evidence for LC-mediated monoamine release using cell-type-specific optogenetics. The low response rate (25% of cells, 40% trial success in responding cells) is notable and honestly reported. The bimodal response pattern (C44, Figure 5G-H) suggests heterogeneity in LC-UBC connectivity. Controls excluding TH+ Purkinje cell labeling strengthen specificity. However, GRABDA2h can respond to both dopamine and norepinephrine (C110), so this doesn't definitively prove dopamine release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Optogenetic stimulation of LC fibers increases UBC firing rate by 1.2 Hz (26% above baseline) in cell-attached recordings with extensive pharmacological isolation, and this effect is abolished by Drd1 antagonist, supporting dopaminergic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide the strongest evidence for dopaminergic (rather than noradrenergic) signaling from LC to UBCs through extensive pharmacological controls blocking adrenergic, glutamatergic, and other receptors. The Drd1 antagonist control (C48) is critical. However, the effect size is modest (1.2 Hz, 26%) compared to bath-applied SKF81297 (2.48 Hz, 110%), and NMDA receptors were blocked in these experiments (C114), which may reduce the effect. The result is well-controlled but suggests dopamine is one of multiple neuromodulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Purkinje cells directly inhibit Drd1+ UBCs, with 46% of UBCs (11/24) receiving short-latency GABAergic IPSCs (average latency 9.4 ms, amplitude 91 pA) in response to optogenetic Purkinje cell activation, with a trial success rate of 0.64.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C56-C60 demonstrate direct Pkj-to-UBC inhibition with appropriate controls (gabazine abolishes IPSCs, C60) and pharmacological isolation of Golgi cells (mGluR2 agonist). The short latency (9.4 ms) supports monosynaptic connectivity. The connectivity rate (46%) and trial success (0.64) are reasonable for cerebellar circuits. This finding, combined with parallel work (C123), establishes a recurrent Pkj-UBC circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C119",
+      "C138"
+    ],
+    "result": "Drd1+ UBCs and Purkinje cells form a recurrent circuit where optogenetic UBC activation causes Purkinje cells to pause (28% of cells) or burst (7%), with pausing correlated with lower EPSC/IPSC ratios (R\u00b2=0.63), suggesting the circuit can bidirectionally modulate vestibulo-cerebellar output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C51-C55, C119, and C138 demonstrate bidirectional UBC-Pkj connectivity with functional consequences. The correlation between EPSC/IPSC ratio and pausing (C55, R\u00b2=0.63) provides mechanistic insight into on-beam/off-beam parallel fiber effects. However, the majority of Pkj cells showed no response (64%, C51), and the experiments were done in acute slices which may underestimate in vivo connectivity. The authors appropriately acknowledge slice limitations in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "Rabies virus tracing reveals that Drd1+ UBCs receive diverse presynaptic inputs including Purkinje cells, Golgi cells, cerebellar nuclei neurons (majority), vestibular nuclei neurons, and sparse LC neurons, with no labeling from midbrain dopaminergic nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 and C40 provide comprehensive input mapping using modified rabies virus tracing with appropriate helper viruses. The finding that cerebellar nuclei provide the majority of inputs (C40) is consistent with prior literature (C108). The sparse LC labeling (C38) is consistent with the low GRABDA2h response rate (C44). However, the authors acknowledge potential biases in rabies virus labeling (C107), and semicircular canal inputs were not assessed (C106).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Optogenetic activation of Drd1+ UBCs causes bursts of 2-5 action potentials per pulse, with decreased spike number across the stimulus train, indicating adaptation or depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 characterize UBC responses to optogenetic stimulation, showing burst firing and adaptation. This is consistent with known UBC physiology and provides important context for interpreting downstream Purkinje cell responses. The data are straightforward and well-presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C98",
+      "C99"
+    ],
+    "result": "LRN neurons, which form mossy fiber inputs to the cerebellum, express minimal dopaminergic machinery (19/135 express Th, 2/135 express Slc18a2) and are therefore unlikely to be a source of cerebellar dopamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C98-C99 exclude LRN as a dopamine source through FISH analysis and anatomical characterization. The quantification is clear and the conclusion is well-supported. This is an important negative control given that Dat-Cre;tdT+ axons in cerebellum originate from LRN (C26).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The Drd1-Cre;tdTomato mouse line used in this study does not show tdT expression in cerebellar nuclei, in contrast to a different Drd1-Cre line reported in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 document an important difference between Cre lines that affects interpretation. This is appropriately noted and helps explain discrepancies with prior literature (C86). The observation is straightforward and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The overlap between tdT+ and mGluR1+ UBCs is incomplete (65% of mGluR1+ UBCs express tdT), and only 12.5% of calretinin+ UBCs express tdT, indicating that Drd1 expression defines a specific UBC subpopulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 provide important quantitative characterization of the Drd1+ UBC population relative to established UBC markers. The incomplete overlap with mGluR1 (C82) and minimal overlap with calretinin (C83) help define the Drd1+ population. The data are clear and well-quantified.",
+    "result_type": "MINOR"
+  }
+]

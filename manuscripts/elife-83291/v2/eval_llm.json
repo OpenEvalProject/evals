@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors identified transcription factors (TFs) that direct hiPSC differentiation to granulosa-like cells through a pooled barcode screening approach. They found that NR5A1 and either RUNX1 or RUNX2 are sufficient to generate granulosa-like cells, with NR5A1 showing the strongest enrichment in FOXL2+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C42, C45, C46, C51, and C52 are directly supported by experimental data from barcode enrichment screening (Figure 2A) and combinatorial TF testing (Figure 2B). The computational TF selection strategy (C37-C39) and reporter construction (C40-C41) provide methodological support. The negative feedback observation for FOXL2 (C44) is an inference but is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors demonstrate that TF-induced granulosa-like cells have transcriptomes highly similar to human fetal ovarian cells. RNA-seq analysis shows expression of key granulosa markers (AMHR2, CD82, FOXL2, FSHR, etc.) at levels comparable to in vivo data, and TROM analysis reveals high similarity to gestational week 12 fetal ovary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C57, C58, C65, and C66 are well-supported by bulk RNA-seq data (Figure 3A) and TROM analysis (Figure 3B). The characterization of control cell lines COV434 and KGN (C62-C64) provides important context. The observation about residual POU5F1 expression (C61) appropriately acknowledges incomplete differentiation in the polyclonal population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors optimized differentiation conditions to achieve high-efficiency generation of granulosa-like cells. Out of 23 lines tested, 4 showed >50% FOXL2+CD82+EpCAM\u2212 cells, and addition of CHIR99021 resulted in near-homogeneous populations in top lines. Low FSHR expression suggests generation of early-stage granulosa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C50 are directly supported by flow cytometry data (Figure 3\u2014figure supplement 1A and Figure 3\u2014figure supplement 2). The inference about early-stage granulosa cells (C48) is reasonable given the FSHR expression data and citation to Oktay et al., 1997 (C49), though this remains an interpretation rather than direct proof of developmental stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors characterized regulatory effects of individual TFs on granulosa marker genes. FOXL2, NR5A1, GATA4, and RUNX1 had the greatest effects on granulosa markers. GATA4 upregulated NR2F2 (stromal/theca marker) and LGR5 (pre-granulosa marker), while FOXL2 upregulated CDKN1B and downregulated ORC1 and MYC, suggesting suppression of proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by differential gene expression analysis from RNA-seq experiments (Figure 3C-I). The regulatory relationships are demonstrated through TF overexpression experiments with appropriate controls. The inference about proliferation suppression (C72) is reasonable given the known functions of the affected genes, though functional validation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors demonstrate that granulosa-like cells produce estradiol from androstenedione and respond to FSH stimulation. Seven out of nine monoclonal lines showed significantly increased steroidogenic activity upon FSH or forskolin treatment, with levels comparable to KGN cells. Control experiments with COV434, HGL5, and mouse cells provide comparative context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C81 are well-supported by ELISA data (Figure 4A) with appropriate statistical testing. The comparison to control cell lines (KGN, COV434, HGL5) and primary mouse cells strengthens the findings. The speculation about mouse cells (C82) is appropriately qualified. The observation that COV434 cells lack FSHR expression (C78-C79) is consistent with their reclassification as non-granulosa cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors show that ovaroids produce both estradiol and progesterone. Estradiol production required androstenedione supplementation and increased with FSH treatment, while progesterone was produced in all conditions but was highest without androstenedione.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are directly supported by ELISA data from ovaroid supernatants (Figure 4B). The hormone production patterns are consistent with known ovarian steroidogenesis pathways. However, only 5 out of 6 samples produced both hormones, and the experiments used a limited number of cell lines, which somewhat limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C120"
+    ],
+    "result": "The authors demonstrate that hiPSC-derived granulosa-like cells support hPGCLC maturation to the gonadal stage more rapidly than mouse fetal ovarian cells. DAZL expression was observed at 4 days in human ovaroids versus 32 days with mouse cells, with the fraction of DAZL+ cells peaking at day 14 in human ovaroids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C86, C87, C89, C90, C91, and C120 are well-supported by immunofluorescence data (Figure 5A-C) showing DAZL expression kinetics. The direct comparison to mouse cells (C87, C120) and citation to previous work (C88) strengthen the conclusion. The observation of DAZL+OCT4\u2212 cells (C91) indicates progression beyond early germ cell stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors characterize temporal dynamics of germ cell marker expression in ovaroids. TFAP2C expression declined and was absent by day 8, while SOX17, OCT4, and DAZL expression continued longer. However, germ cell numbers declined over prolonged culture, and hiPSC-derived ovaroids gradually flattened and collapsed by day 38.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by immunofluorescence data (Figure 5A, C, D) showing marker expression over time. The decline in germ cell numbers (C96) and structural collapse (C97) represent important limitations of the system. The citation to Anderson et al., 2007 (C92) provides appropriate context for in vivo development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors demonstrate that granulosa-like cells form follicle-like structures, including empty follicles without oocytes. Follicle formation was first visible at day 16, and by day 70 ovaroids contained follicles of various sizes including antral follicles. NR2F2+ stromal cells were present outside follicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C98, C100, C101, and C102 are supported by immunofluorescence data (Figures 5\u2014figure supplement 1, 6A-D) showing follicle-like structures with appropriate markers (AMHR2, FOXL2, NR2F2). The inference that TFs can drive folliculogenesis without oocytes (C99) is reasonable but remains speculative without functional validation or mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors performed scRNA-seq analysis of ovaroids showing distinct cell populations. The largest cluster expressed granulosa markers (FOXL2, WNT4, CD82), a smaller cluster expressed stromal marker NR2F2, and hPGCLCs showed elevated X-chromosomal lncRNAs (XIST, TSIX, XACT) suggesting X-reactivation. Cell type composition changed over time with granulosa cells increasing from day 2 to 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C116 are well-supported by scRNA-seq data (Figure 7A-D). The identification of cell clusters and marker expression is straightforward. The inference about X-reactivation (C108) is reasonable given the lncRNA expression patterns and citations to previous studies (C109, C110). The temporal dynamics of cell populations (C112, C115, C116) are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors analyzed differential gene expression in DAZL+ cells, finding upregulation of genes related to developmental processes, adhesion, and migration, while downregulated genes were related to metabolic processes and cell division. This suggests DAZL+ cells are downregulating metabolism and proliferation, consistent with DAZL's known role in suppressing PGC proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by differential gene expression analysis and gene ontology enrichment from scRNA-seq data. The inference about downregulation of metabolism and proliferation (C119) is well-supported by the data and consistent with cited literature (Yan et al., 2022; Gill et al., 2011), though functional validation would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors discuss limitations and future directions for the ovaroid system. They note that these are the first fully human ovarian organoids, but improved methods are needed to maintain ovaroids and prevent germ cell loss. The system lacks functional theca cells, as ovaroids only produced estradiol with androstenedione supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 represent appropriate discussion of the work's significance and limitations. The claim about being first fully human ovarian organoids (C121) appears accurate based on cited literature. The acknowledgment of limitations (C122, C125-C127) is well-supported by the experimental data. The speculation about future improvements (C123) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The authors compare their system to existing methods, noting advantages over previous approaches. Their method achieves >70% efficiency in top lines versus 4-12% for growth factor-based protocols, requires only 5 days versus multiple weeks, and shows faster DAZL induction (4 days) compared to mouse cell co-culture (32 days). They acknowledge the limitation of random transposon integration requiring screening of multiple clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C136 provide appropriate context and comparison to prior work. The efficiency and timing comparisons (C131, C134, C135) are supported by the experimental data and citations. The characterization of COV434 cells (C132-C133) is consistent with recent literature. The acknowledgment of the random integration limitation (C129) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors provide extensive background on ovarian development, germ cell biology, and previous attempts to generate granulosa-like cells. This includes established knowledge about ovarian cell types, developmental timing, key markers like DAZL, and limitations of prior differentiation protocols and mixed-species systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 represent background knowledge and literature review that is well-supported by appropriate citations. These claims establish the scientific context and rationale for the study. The characterization of prior work (C12-C13, C32-C35) is accurate based on the cited references. This background appropriately motivates the need for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C137",
+      "C138"
+    ],
+    "result": "The authors speculate about future applications and broader impact of their approach. They suggest the TF-based differentiation strategy could be applied to generate other cell types, that the system will be useful for studying ovarian development and function, and that further optimization could enable human in vitro oogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128, C137, and C138 are speculative statements about future work and potential applications. While these are reasonable projections based on the demonstrated results, they represent hypotheses rather than tested conclusions. The speculation is appropriately qualified in the text but cannot be evaluated as supported or unsupported without additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

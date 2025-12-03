@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "MatP dimers bind to the MukB hinge domain with 1:1 stoichiometry (one MatP dimer per LH dimer) with a Kd of ~0.6 \u03bcM, as determined by ITC, nMS, and AUC. Dimerization of the MukB hinge is not essential for MatP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are well-supported by multiple independent biochemical assays (ITC, nMS, AUC) showing consistent 1:1 stoichiometry and similar binding affinities. The observation that MatP binds both SH monomers and dimers (C40-C41) provides additional evidence that hinge dimerization is not required, though this inference is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47"
+    ],
+    "result": "ParC dimers bind to the MukB hinge domain with 1:1 stoichiometry (one ParC dimer per LH dimer) with a Kd of ~0.7 \u03bcM, similar to MatP binding affinity. This stoichiometry was confirmed even with 8-fold molar excess of ParC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45, C47 are supported by ITC and nMS data showing 1:1 stoichiometry. The titration experiment with excess ParC (C47) strengthens the conclusion. The authors appropriately note this contradicts a prior study (C46), but their use of two independent methods and excess ParC provides strong evidence for their conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MatP and ParC have overlapping binding interfaces on the MukB hinge and bind mutually exclusively. No ternary complexes (LH-MatP-ParC) were detected by SEC, nMS, or native PAGE. Competition assays and analysis of the MukBKKK mutant support this competitive binding model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C52-C55, C57, C61-C66 collectively demonstrate mutually exclusive binding through multiple complementary approaches: failure to detect ternary complexes (SEC, nMS, native PAGE), FCS competition experiments showing ParC reduces MatP binding, and analysis of MukBKKK mutant impaired in both MatP and ParC binding. The convergence of evidence from different techniques strongly supports the competitive binding model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "matS DNA competes with the MukB hinge for MatP binding. No ternary LH-MatP-matS complexes were detected. MatP mutants (MatP4A, MatP4E) defective in matS binding are also impaired in LH binding, suggesting overlapping binding determinants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C67-C77 are supported by FCS, nMS, and native PAGE showing matS DNA inhibits MatP-hinge binding and no ternary complex formation. The MatP mutant analysis (C71-C77) provides strong evidence for overlapping binding sites, with proper controls showing the mutants remain folded (C77). The specificity of matS vs. non-specific DNA (C68) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Cells expressing MukBKKK (mutated at the ParC/MatP binding interface) show ablated topoIV-MukB interaction in vivo by PALM, are not temperature-sensitive, have normal cell lengths, but show altered MukBEF localization patterns and ori positioning intermediate between WT and \u0394mukB cells, indicating partial MukBEF dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C78-C94 are supported by comprehensive in vivo analyses including PALM (C83-C85), growth assays (C78), cell length measurements (C79), and quantitative microscopy (C86-C90). The PALM data clearly demonstrates loss of ParC-MukB interaction (C83-C85). The phenotype is appropriately characterized as a partial defect rather than complete loss of function, with cells remaining viable but showing altered chromosome organization patterns. The lack of a MatP- phenotype (C94) is consistent with the separate MatP-matS binding site in coiled-coils reported by others.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors propose a model where a single ParC dimer has both C-terminal domains interacting with the two binding interfaces on a dimeric MukB hinge, potentially involving hinge opening to allow DNA passage between topoIV and MukBEF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 are speculative proposals based on the observed 1:1 stoichiometry and analogies to other SMC complexes. While the 1:1 stoichiometry is well-established, the specific structural model of how ParC CTDs engage the hinge and the proposed coordination of DNA passage are not directly tested. These remain reasonable hypotheses requiring structural and functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "The authors propose that competitive binding between MatP and topoIV for the MukB hinge may coordinate MukBEF and topoIV activity spatiotemporally, depleting both from ter and enriching them at ori. The MatP-hinge interaction may represent a transient 'handover' state distinct from the MatP-matS coiled-coil binding state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C100, C102 are interpretive proposals that integrate the competitive binding data with prior knowledge of MukBEF and topoIV distribution. While the competitive binding is well-established, the functional consequences for spatiotemporal regulation (C99) and the 'handover' model (C100) are inferences that require additional experimental validation. The proposal of two distinct MatP binding states (C102) is reasonable given the cryo-EM structure (C101) but their relationship remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Background claims establishing the roles of MukBEF, MatP, and topoIV in E. coli chromosome organization based on prior published work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C13-C35, C48-C51 are appropriately cited background claims from prior published work. These establish the context for the current study and are supported by the cited literature. These are not new findings from this manuscript but provide essential background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C101"
+    ],
+    "result": "The authors note their 1:1 ParC:MukB hinge stoichiometry contradicts a prior study reporting 2:1 stoichiometry, and reference a separate cryo-EM study showing MatP-matS binding to MukB coiled-coils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C101 appropriately reference prior work that either contradicts (C46) or complements (C101) the current findings. The authors address the discrepancy with the prior stoichiometry determination by providing multiple lines of evidence for their 1:1 conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Additional biochemical observations including detection of low-abundance LH4-ParC2E2 complexes, absence of non-specific DNA binding to MatP, validation of labeled MatP-Cy3B, and competition controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C58-C60 report supporting observations and controls. The LH4-ParC2E2 complexes (C56) are appropriately noted as low abundance with unclear significance. The controls (C58-C60) validate the experimental approaches used in the main findings.",
+    "result_type": "MINOR"
+  }
+]

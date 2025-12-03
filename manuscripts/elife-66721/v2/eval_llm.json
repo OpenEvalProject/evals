@@ -1,0 +1,436 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C165",
+      "C166"
+    ],
+    "result": "ARL4C is frequently overexpressed in pancreatic cancer patients and correlates with poor prognosis. High ARL4C expression was observed in 82% of PDAC patients (47/57), was minimally detected in non-tumor regions, and was significantly associated with perineural invasion. ARL4C expression correlated with decreased overall survival in both the study cohort and TCGA datasets, and multivariate analysis identified higher ARL4C expression as an independent prognostic factor. ARL4C was also expressed in 77% of PanIN lesions, suggesting expression in early stages of PDAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C41, C165-C166 are well-supported by immunohistochemistry data (Figure 1A), survival analysis (Figures 1B, 1D), TCGA/GTEx dataset analysis (Figure 1C), and multivariate Cox regression (Table 1). The statistical analyses are appropriate, sample sizes are adequate (n=57 for IHC, n=174 for TCGA), and the conclusions are consistent across multiple independent datasets. The association with perineural invasion provides mechanistic insight linking ARL4C to invasive behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ARL4C expression in pancreatic cancer cells is regulated by RAS-MAP kinase and Wnt-\u03b2-catenin pathways. ARL4C was highly expressed in PANC-1 and S2-CP8 cells but barely detected in BxPC-3 cells. MEK inhibitors (PD184161, U0126) and siRNAs targeting \u03b2-catenin or KRAS decreased ARL4C expression, with simultaneous knockdown of KRAS and \u03b2-catenin showing additive suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by Western blot and qPCR data (Figures 1E-I) showing dose-dependent effects of pathway inhibitors and genetic knockdowns on ARL4C expression. The experiments include appropriate controls, multiple independent approaches (pharmacological and genetic), and are consistent with prior literature on ARL4C regulation. The additive effect of dual knockdown (C46) provides evidence for convergent pathway regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ARL4C ASO-1316 inhibits migration and invasion of pancreatic cancer cells with dominant effects on invasion, without affecting cell proliferation or viability. ARL4C ASO had little effect on sphere formation and did not induce cell death, but significantly inhibited migratory and invasive abilities in Boyden chamber assays. The inhibitory effects were rescued by ectopic expression of ARL4C-GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by sphere formation assays (Figure 2\u2014figure supplement 1A-B), PI staining (Figure 2\u2014figure supplement 1C), and Boyden chamber migration/invasion assays (Figures 2A-D). The rescue experiments (C52) provide critical specificity controls demonstrating on-target effects. The differential effect on invasion versus proliferation is well-documented and suggests a specific role in invasive behavior rather than general cytotoxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ARL4C localizes to invasive pseudopods where it promotes ECM degradation and directional invasion. In 3D collagen gel invasion assays, ARL4C ASO decreased invasive ability in high-density collagen but not in low-density collagen. ARL4C-tdTomato accumulated dynamically at the tips of invasive pseudopods, which were oriented toward the chemoattractant (within \u00b145 degrees). Protease activity, measured by DQ-collagen degradation, was localized to pseudopod tips and was decreased upon ARL4C depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 are supported by 3D gel invasion assays (Figures 2F-G), time-lapse imaging (Figure 2H), angular analysis (Figure 2I), and DQ-collagen degradation assays (Figures 2J-K). The experiments demonstrate spatial and temporal specificity of ARL4C function. The collagen concentration-dependence (C55-C56) provides mechanistic insight, suggesting ARL4C is required for proteolytic invasion through dense ECM but not for migration through sparse matrices. The quantitative imaging data are rigorous and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Cytohesin2 does not function downstream of ARL4C in pancreatic cancer cells. ARL4C did not bind to cytohesin2 in S2-CP8 cells, knockdown of cytohesin2 had no effect on migration or invasion, cytohesin2 showed different subcellular localization compared to HeLaS3 cells, and ARL4C ASO did not affect RAC1 activity or YAP/TAZ nuclear localization in pancreatic cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by immunoprecipitation (Figure 3\u2014figure supplement 1A), migration/invasion assays (Figure 3\u2014figure supplement 1B), immunofluorescence (Figure 3\u2014figure supplement 1C), RAC1 activity assays (Figure 3\u2014figure supplement 1D), and YAP/TAZ localization studies (Figure 3\u2014figure supplement 1E). These negative results are important for establishing cell-type-specific mechanisms and are well-controlled with appropriate positive controls (A549, HCT116, HeLaS3 cells). The conclusion (C69) appropriately interprets the negative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "IQGAP1 is a novel ARL4C-interacting protein that colocalizes with ARL4C at invasive pseudopods and regulates invasion through the same pathway. IQGAP1 was identified by mass spectrometry and confirmed by co-immunoprecipitation. ARL4C and IQGAP1 colocalized at invasive pseudopods in 94% of cells under 2D and 3D culture conditions. IQGAP1 knockdown inhibited migration and invasion, with rescue by ectopic IQGAP1 expression. Double knockdown of ARL4C and IQGAP1 showed non-additive effects, indicating they function in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C70-C78 are supported by mass spectrometry (Figure 3A), co-immunoprecipitation (Figures 3B-D), immunofluorescence in 2D and 3D cultures (Figures 3E-F), migration/invasion assays with rescue experiments (Figures 3G-H), and epistasis analysis (Figure 3I). The identification of IQGAP1 as a binding partner is rigorous, with multiple orthogonal validation approaches. The non-additive effect of double knockdown (C77-C78) provides strong evidence for a linear pathway, though alternative interpretations (parallel pathways with redundancy) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "IQGAP1 expression correlates with poor prognosis in pancreatic cancer and shows positive correlation with ARL4C expression. IQGAP1 was highly expressed in 54% of PDAC patients (31/57) and correlated with decreased overall survival. IQGAP1 mRNA expression positively correlated with ARL4C mRNA in TCGA datasets. Among high ARL4C patients, IQGAP1 co-expression was associated with perineural invasion, and overall survival decreased progressively with combined high ARL4C/high IQGAP1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by immunohistochemistry (Figure 3J), survival analysis (Figure 3K), TCGA correlation analysis (Figure 3L), and clinical data stratification (Figure 3\u2014figure supplement 2K, Supplementary file 1 table 4). The correlation between ARL4C and IQGAP1 expression strengthens the mechanistic link. However, the survival analysis for combined expression (C84) has limitations due to small sample size in one group (n=2 for low ARL4C/high IQGAP1), which the authors acknowledge. The statistical significance of the trend is maintained despite this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The polybasic region (PBR) of ARL4C is necessary for IQGAP1 binding and recruitment to invasive pseudopods. ARL4C mutants lacking myristoylation (G2A) or the PBR (\u0394PBR) failed to localize to pseudopods and showed severely decreased IQGAP1 binding. Fusion of the KRAS C-terminus restored membrane localization, but only the G2A-Cterm mutant (not \u0394PBR-Cterm) bound IQGAP1, indicating membrane localization alone is insufficient. IQGAP1 localization to pseudopods was lost in ARL4C KO cells and rescued by ARL4C-GFP or G2A-Cterm but not by G2A, \u0394PBR, or \u0394PBR-Cterm. Only G2A-Cterm rescued the invasive ability inhibited by ARL4C ASO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 are supported by immunofluorescence (Figures 4A-B, 4E-F), co-immunoprecipitation (Figures 4C-D), and invasion assays (Figure 4G). The structure-function analysis is rigorous, using multiple mutants to dissect the roles of myristoylation versus PBR. The rescue experiments in KO cells (C92-C95) provide strong evidence for the necessity of both membrane localization and PBR-mediated IQGAP1 binding. The logic is sound and the conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "PIP3-dependent membrane targeting of ARL4C recruits IQGAP1 to invasive pseudopods and promotes invasion. GFP-GRP1PH (PIP3 biosensor) accumulated at invasive pseudopods while GFP-PLC\u03b4PH (PIP2 biosensor) was distributed throughout the membrane. PIP3 depletion (by LY294002 or rapamycin-inducible phosphatase) decreased ARL4C and IQGAP1 membrane targeting and reduced invasion, while PIP2 depletion had no effect. ARL4C and IQGAP1 colocalized with GRP1PH at pseudopods. Fusion of GRP1PH (but not PLC\u03b4PH) to ARL4CG2A restored pseudopod localization, IQGAP1 recruitment, and invasive ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C106 are supported by PH domain localization studies (Figure 5A), rapamycin-inducible phosphatase experiments (Figures 5B-C), triple colocalization imaging (Figure 5D), and PH domain fusion rescue experiments (Figures 5F-H). The experiments elegantly demonstrate PIP3 specificity using multiple orthogonal approaches (biosensors, depletion, domain swaps). The rescue experiments with PH domain fusions (C102-C105) provide strong mechanistic evidence. The conclusion that PIP3-dependent targeting is necessary and sufficient for IQGAP1 recruitment is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C27",
+      "C28",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "ARL4C recruits MMP14 to invasive pseudopods through IQGAP1 in a PIP3-dependent manner, which is required for ECM degradation and invasion. Cell surface MMP14 accumulated at invasive pseudopods containing ARL4C and IQGAP1. MMP14 localization was lost upon ARL4C or IQGAP1 knockout and rescued by re-expression. The PBR of ARL4C and PIP3 (but not PIP2) were required for MMP14 recruitment. Double knockdown experiments showed non-additive effects, indicating a linear pathway. Expression of MMP14\u0394C (which cannot be endocytosed) rescued invasion defects in ARL4C knockdown cells, demonstrating that MMP14 recruitment to pseudopods is the critical function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C27-C28, C107-C118, C120-C122 are supported by immunofluorescence of cell surface MMP14 (Figures 6A-D), rescue experiments in KO cells (Figures 6B-C), epistasis analysis (Figures 6E-F), 3D invasion and DQ-collagen assays (Figures 6F-G), and MMP14\u0394C rescue experiments (Figure 6H). The experiments comprehensively demonstrate that ARL4C-dependent MMP14 recruitment is necessary and sufficient for invasion. The MMP14\u0394C rescue (C120-C122) is particularly compelling, showing that preventing endocytosis bypasses the need for ARL4C, directly implicating trafficking as the key function. The correlation with TCGA data (C108-C109) provides clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The ARL4C-IQGAP1-MMP14 signaling axis is activated in invasive pancreatic cancer cells. In patient tissues, ARL4C and MMP14 were more highly expressed in invasive cancer cells than in PanIN lesions, while IQGAP1 was expressed throughout tumor lesions. Triple immunofluorescence confirmed simultaneous expression of all three proteins in PDAC cells invading surrounding tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 are supported by serial section immunohistochemistry (Figure 6I) and triple immunofluorescence (Figure 6\u2014figure supplement 1J) of patient PDAC tissues. The differential expression pattern (ARL4C/MMP14 in invasive cells, IQGAP1 throughout) is consistent with the proposed model where ARL4C recruits IQGAP1 and MMP14 to invasive fronts. The triple staining provides direct evidence of pathway co-activation in vivo. However, the analysis is descriptive and does not prove functional interaction in patient tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C29",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Subcutaneous injection of ARL4C ASO-1316 suppresses lymph node metastasis in an orthotopic pancreatic cancer mouse model. ARL4C ASO suppressed bioluminescence signals at 2 and 3 weeks and decreased ARL4C expression in tumors. While primary tumor size was not reduced, the number of lymph node metastases was significantly decreased and survival showed a trend toward improvement. Fluorescently labeled ASO accumulated specifically in tumor lesions. ARL4C ASO reduced ARL4C expression and IQGAP1 localization to cell surfaces in primary tumors, and tumor cells were absent from lymphatic vessels in ASO-treated mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C29, C126-C136 are supported by bioluminescence imaging (Figure 7B), immunohistochemistry (Figure 7C), tumor weight and metastasis counts (Figures 7D-E), survival analysis (Figure 7\u2014figure supplement 1A), fluorescence imaging of labeled ASO (Figures 7F-G), qPCR and Western blot (Figure 7H), IQGAP1 staining (Figure 7I), and lymphatic vessel analysis (Figure 7J). The in vivo data demonstrate therapeutic efficacy against metastasis. However, the survival benefit (C130) only showed a trend (p=0.085), not statistical significance. The lack of effect on primary tumor growth (C128) is consistent with the in vitro data showing no effect on proliferation. The ASO biodistribution data (C131-C132) support tumor-specific delivery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "RNA sequencing of tumors from ARL4C ASO-treated mice shows transcriptional changes consistent with inhibition of invasion. Principal component analysis and hierarchical clustering revealed clear differences in gene expression between control and ARL4C ASO-treated tumors. Ingenuity Pathway Analysis identified differentially expressed genes linked to inhibition of cell migration and invasion pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 are supported by RNA-seq analysis including PCA (Figure 7K), hierarchical clustering (Figure 7L), and IPA (Figure 7M). The transcriptional changes are consistent with the proposed anti-invasive function of ARL4C ASO. However, the RNA-seq data are descriptive and do not establish causality. The changes could be direct effects of ARL4C inhibition or indirect consequences of altered tumor-stroma interactions. The authors appropriately acknowledge this limitation (C162). The analysis would be strengthened by validation of key differentially expressed genes and functional studies linking them to the invasion phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Invasive pseudopods in S2-CP8 and PANC-1 cells are distinct from classical invadopodia but contain similar molecular components. Typical invadopodia were not observed in S2-CP8 and PANC-1 cells, but invasive pseudopods contained cortactin, ARPC2, IQGAP1, and MMP14. ARL4C depletion severely suppressed IQGAP1 and MMP14 localization but only moderately affected cortactin localization and pseudopod structure, suggesting the major function of ARL4C is to recruit MMP14 via IQGAP1 rather than to form pseudopods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 are supported by invadopodia assays (Figure 2\u2014figure supplement 2A), immunofluorescence showing component localization (Figure 2\u2014figure supplement 2B), and quantification of pseudopod numbers and marker intensity in ARL4C KO cells (Figure 2\u2014figure supplement 2C-I). The distinction between invadopodia and invasive pseudopods is important for understanding cell-type-specific invasion mechanisms. The differential effects of ARL4C depletion on different components (C149) support the proposed model. However, the functional equivalence of these structures to invadopodia in promoting invasion could be more rigorously tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "ARL4C is constitutively active and regulates different downstream pathways in a cell-type-dependent manner. ARL4C is constitutively active regardless of wild-type status, potentially due to its long interswitch region preventing GDP-bound conformational changes. ARL4C activity may be controlled by transcriptional regulation. In pancreatic cancer cells, ARL4C binds IQGAP1 rather than cytohesin2, suggesting context-dependent pathway selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C145 are supported by prior structural studies (cited) and the differential binding partner data in this manuscript (Figure 3\u2014figure supplement 1A). The constitutive activity of ARL4C (C142) is well-established in the literature. The speculation about transcriptional control (C144) is reasonable given the expression data but remains speculative. The context-dependent pathway selection (C145) is well-supported by the comparison with other cell types (HeLa, A549, HCT116) where ARL4C functions through different effectors. This is an important conceptual contribution but is largely interpretive rather than experimentally demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C155"
+    ],
+    "result": "Both myristoylation and the PBR are necessary for ARL4C plasma membrane localization, but the PBR is specifically required for ARL4C-IQGAP1-MMP14 signaling axis activity. ARL4C in pancreatic cancer cells preferred PIP3 to PIP2 for membrane targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152, C155 are supported by the mutant analysis (Figures 4A-G) and PIP2/PIP3 depletion experiments (Figures 5B-C). The distinction between requirements for membrane localization versus functional activity is important and well-demonstrated. The PIP3 preference (C155) is clearly shown by the differential effects of PIP2 versus PIP3 depletion. These findings refine the understanding of ARL4C membrane targeting mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C156",
+      "C157"
+    ],
+    "result": "PIP3 is localized to the leading edge and invadopodia and recruits PH domain-containing proteins. PI3 kinase is a direct RAS effector, suggesting RAS-dependent PI3K activation and ARL4C expression could cooperatively promote pancreatic cancer invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154, C156 are well-established facts from the literature (appropriately cited). Claim C157 is speculation based on the known RAS-PI3K connection and the PIP3-dependence of ARL4C shown in this study. While the speculation is reasonable and supported by the data, it remains a hypothesis that is not directly tested. The cooperative function of RAS-PI3K-PIP3 and RAS-induced ARL4C expression is plausible but would require additional experiments (e.g., testing effects of PI3K inhibitors on ARL4C-dependent invasion) to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Summary and mechanistic conclusions: Invasion of pancreatic cancer cells is promoted by ARL4C, whose expression is induced by KRAS and Wnt signaling. Association of ARL4C with IQGAP1 and MMP14 at invasive pseudopod tips is essential for invasive ability. These functions were confirmed in mouse models. ARL4C ASO directly inhibits invasion and may indirectly affect invasion-related genes through tumor-stroma interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C162 are summary statements integrating the major findings. C158-C159 are well-supported by the collective data. C160 is supported by the in vivo experiments. C161 is supported by the in vitro and in vivo data. C162 is appropriate speculation based on the RNA-seq data, with the authors correctly noting the indirect effects are speculative. These conclusions appropriately synthesize the findings and acknowledge limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C163",
+      "C164"
+    ],
+    "result": "ARL4C ASO-1316 shows no histological damage to non-tumor regions and may represent an appropriate therapeutic target for pancreatic cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C163 is supported by citation to prior work (Harada et al., 2019) showing safety of ARL4C ASO. Claim C164 is a reasonable conclusion based on the efficacy data in this study and the safety data from prior work. However, the therapeutic potential (C164) remains speculative pending more extensive preclinical studies (dose optimization, combination therapies, toxicity studies in larger cohorts) and eventual clinical trials. The statement is appropriately hedged with 'might represent.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C35"
+    ],
+    "result": "Background claims about pancreatic cancer: Pancreatic cancer has high mortality due to metastasis, with 5-year survival of only 5%. Most deaths are due to metastatic disease, and >80% of patients have locally advanced or metastatic disease. KRAS is mutated in most patients and is an initiating event, but controlling KRAS or its effectors has not succeeded clinically. Perineural invasion is a cause of recurrence and metastasis after resection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C15, C35 are well-established facts about pancreatic cancer, appropriately cited to authoritative sources (Klein 2013, Hidalgo 2010, Collins et al. 2012, Waddell et al. 2015, Liang et al. 2016). These provide accurate context for the study and justify the focus on KRAS downstream effectors and invasion/metastasis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C119",
+      "C146",
+      "C167"
+    ],
+    "result": "Background claims about ARL4C and IQGAP1: ARL4C is a small G protein induced by Wnt and EGF-RAS pathways, belongs to the ARF-like protein family, and plays roles in morphogenesis and tumorigenesis. Cytohesin2 is an ARL4C effector. ARL4C is expressed in various cancers due to aberrant Wnt/RAS pathway activation and promotes proliferation through different mechanisms in different cancer types. IQGAP1 is a cytoskeletal regulator highly expressed in tumors and involved in metastasis and MMP14 trafficking. MMP14\u0394C fails to be endocytosed. Invadopodia are observed in certain cancer cell types. ARL4C is expressed in precursor lesions of lung adenocarcinoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16-C26, C119, C146, C167 are background information appropriately cited to prior literature. These claims provide context for the current study and are accurately represented. The citations support the statements made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C9",
+      "C11",
+      "C30",
+      "C31",
+      "C41",
+      "C53",
+      "C62",
+      "C63",
+      "C69",
+      "C78",
+      "C85",
+      "C90",
+      "C91",
+      "C94",
+      "C96",
+      "C101",
+      "C106",
+      "C115",
+      "C122",
+      "C125",
+      "C132",
+      "C140",
+      "C141",
+      "C144",
+      "C145",
+      "C149",
+      "C157",
+      "C161",
+      "C162",
+      "C164"
+    ],
+    "result": "Interpretive and inferential claims: These claims represent interpretations and inferences drawn from the experimental data, including mechanistic conclusions about ARL4C function, pathway relationships, and therapeutic implications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6, C9, C11, C30, C31, C41, C53, C62, C63, C69, C78, C85, C90, C91, C94, C96, C101, C106, C115, C122, C125, C132, C140, C141, C144, C145, C149, C157, C161, C162, C164) are inferences and interpretations based on the experimental data. They are generally well-supported by the data and represent reasonable conclusions. Some are more speculative (C31, C157, C162, C164) but are appropriately hedged. The mechanistic inferences (C90, C91, C94, C96, C106, C115, C122) are logical conclusions from the structure-function and epistasis experiments. The pathway inferences (C69, C78) are supported by the non-additive effects in double knockdown experiments. Overall, these interpretive claims are justified by the data, though some remain hypotheses requiring further testing.",
+    "result_type": "MINOR"
+  }
+]

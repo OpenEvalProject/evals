@@ -1,0 +1,1999 @@
+{
+  "submission": {
+    "id": "5b176f4d-6ccb-47ae-8bf4-ab50ca1d28bf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:33:14.941066Z",
+    "updated_at": "2025-12-03T10:33:14.941066Z"
+  },
+  "content": [
+    {
+      "id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "submission_id": "5b176f4d-6ccb-47ae-8bf4-ab50ca1d28bf",
+      "content_type": "manuscript",
+      "content_text": "# Juxtacellular opto-tagging of hippocampal CA1 neurons in freely moving mice\n\n## Authors\n\n- Lingjun Ding<sup>1</sup> ([ORCID: 0000-0002-9183-7062](https://orcid.org/0000-0002-9183-7062))\n- Giuseppe Balsamo<sup>1</sup>\n- Hongbiao Chen<sup>1</sup> ([ORCID: 0000-0002-0025-4380](https://orcid.org/0000-0002-0025-4380))\n- Eduardo Blanco-Hernandez<sup>1</sup>\n- Ioannis S Zouridis<sup>1</sup> ([ORCID: 0000-0002-4032-3723](https://orcid.org/0000-0002-4032-3723))\n- Robert Naumann<sup>4</sup>\n- Patricia Preston-Ferrer<sup>1</sup> \u2020\n- Andrea Burgalossi<sup>1</sup> ([ORCID: 0000-0003-0039-3599](https://orcid.org/0000-0003-0039-3599)) \u2020\n\n### Affiliations\n\n1. Institute of Neurobiology, Eberhard Karls University of T\u00fcbingen T\u00fcbingen Germany\n2. Werner-Reichardt Centre for Integrative Neuroscience T\u00fcbingen Germany\n3. Graduate Training Centre of Neuroscience \u2013 International Max-Planck Research School (IMPRS) T\u00fcbingen Germany\n4. Chinese Academy of Sciences, Key Laboratory of Brain Connectome and Manipulation, The Brain Cognition and Brain Disease Institute, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences Nanshan China\n5. Shenzhen-Hong Kong Institute of Brain Science-Shenzhen Fundamental Research Institutions Shenzhen China\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeural circuits are made of a vast diversity of neuronal cell types. While immense progress has been made in classifying neurons based on morphological, molecular, and functional properties, understanding how this heterogeneity contributes to brain function during natural behavior has remained largely unresolved. In the present study, we combined the juxtacellular recording and labeling technique with optogenetics in freely moving mice. This allowed us to selectively target molecularly defined cell classes for in vivo single-cell recordings and morphological analysis. We validated this strategy in the CA1 region of the mouse hippocampus by restricting Channelrhodopsin expression to Calbindin-positive neurons. Directly versus indirectly light-activated neurons could be readily distinguished based on the latencies of light-evoked spikes, with juxtacellular labeling and post hoc histological analysis providing \u2018ground-truth\u2019 validation. Using these opto-juxtacellular procedures in freely moving mice, we found that Calbindin-positive CA1 pyramidal cells were weakly spatially modulated and conveyed less spatial information than Calbindin-negative neurons \u2013 pointing to pyramidal cell identity as a key determinant for neuronal recruitment into the hippocampal spatial map. Thus, our method complements current in vivo techniques by enabling optogenetic-assisted structure\u2013function analysis of single neurons recorded during natural, unrestrained behavior.\n\n## Introduction\n\nSince the seminal work of Ram\u00f3n y Cajal it has become clear that neuronal circuits consist of a large variety of neuronal elements. Such diversity encompasses virtually all aspects of neuronal biology, including morphological, genetic, physiological, and functional properties. Over recent years, major advances have been made toward the systematic classification of neuronal cell types (Ascoli et al., 2008; Scala et al., 2020; Tasic et al., 2016; Zeisel et al., 2015). From these research lines, it has become increasingly clear that a combinatorial approach \u2013 integrating morphological, molecular, electrophysiological, and functional properties \u2013 is required for neuronal cell-type classification.\n\nAs inventories of cell types within brain circuits are beginning to emerge, the next challenge is to understand how these cell types contribute to neural circuit computations during behavior. Bridging this gap is a methodological challenge, since current in vivo techniques for neural circuit analysis \u2013 for example optogenetic tagging and Ca2+ imaging (Anikeeva et al., 2011; Ghosh et al., 2011; Lima et al., 2009) \u2013 provide only limited information about the recorded neuronal elements. These methods largely rely upon the genetically restricted expression of Channelrhodopsin (ChR2) or Ca2+ indicators \u2013 for example via Cre driver lines (Adesnik, 2018; Gafford and Ressler, 2016; Kravitz et al., 2013). In the case of \u2018optogenetic tagging\u2019, recordings are performed with a dual optical and electrical probe (referred to as \u2018optrode\u2019) and short-latency spikes elicited upon illumination provide information about the identity of the recorded units. One limitation of this approach is that \u2018cell types\u2019 are defined by single features, like genetic marker expression or projection target. Additional structural features \u2013 like morphology, local and long-range axonal projections, and gene expression profiles \u2013 are not accessible with these techniques, thereby making it difficult to map neuronal activity (assessed in vivo) to the multidimensional cell-type classification schemes (being developed in vitro).\n\nIn vivo single-cell identification techniques can in principle provide the necessary anatomical resolution for multidimensional classification of the recorded neurons. For example, the juxtacellular method (Pinault, 1996; Pinault, 1994) allows recording of single neurons in awake behaving animals, along with post hoc morphological analysis and molecular phenotyping of the recorded cells (Averkin et al., 2016; Diamantaki et al., 2018; Katona et al., 2014; Lapray et al., 2012; Tang et al., 2014b; Valero et al., 2015). However, a significant limitation of these methods is that neurons are typically sampled by \u2018blind\u2019 procedures; hence, recordings cannot be targeted to a predefined cell class, which makes it extremely challenging \u2013 if not impossible \u2013 to efficiently sample sparse neuronal elements within a given circuit.\n\nTo circumvent this limitation, an elegant approach has been recently developed by combining single-cell identification techniques with optogenetic tagging (Katz et al., 2013; Mu\u00f1oz et al., 2014). This approach enabled ChR2-assisted targeting of genetically defined cell classes; in addition, by means of juxtacellular labeling and post hoc morphological/molecular analysis, it also provided access to the multidimensional neuronal features required for precise cell-type classification (Mu\u00f1oz et al., 2017). In its current form however, the applicability of this method is limited to mechanically stable preparations (e.g., anesthetized or head-restrained animals), thereby preventing structure\u2013function analysis in freely moving animals, engaged in ethologically relevant behaviors.\n\nIn the present study, we aimed at bridging this gap by combining the single-cell opto-tagging method (Katz et al., 2013; Mu\u00f1oz et al., 2014) with the juxtacellular procedures that we have recently established in freely moving mice (Diamantaki et al., 2018). This approach enabled us to efficiently target juxtacellular recording and labeling to predefined, genetically tagged cell classes in awake animals, engaged in natural exploratory behavior.\n\nWe demonstrate the technical feasibility of this approach in the dorsal CA1 of the mouse hippocampus. During behavior, the activity of \u2018place cells\u2019 in this region (O\u2019Keefe, 1976) is thought to contribute to the encoding of spatial and episodic experiences, and thus to form the neural basis of \u2018memory engrams\u2019 (Tonegawa et al., 2018). Anatomically \u2013 despite its relatively simple organization \u2013 the CA1 has a remarkably diverse cellular composition. In vitro and in vivo work has distinguished more than 20 different morphofunctional interneuronal classes (Bezaire and Soltesz, 2013; Freund and Buzs\u00e1ki, 1998; Klausberger and Somogyi, 2008), and recent transcriptomic studies point to a seemingly complex heterogeneity among pyramidal neurons, with at least 15 classes being identified purely based on gene expression data (Yao et al., 2021). At present it is unclear how these distinct cell types contribute to neural activity during behavior. As test ground for our technique, we focused on a well-defined dimension of pyramidal cell diversity, namely along the radial (deep-superficial) axis of the dorsal CA1 (deep, closer to stratum oriens; superficial, closer to stratum radiatum). Indeed, a growing body of evidence indicates that the anatomical location of the neurons along this axis correlates with in vivo activity patterns (Cohen et al., 2017; Danielson et al., 2016; Fattahi et al., 2018; Geiller et al., 2017; Li et al., 2017; Mizuseki et al., 2011; Sharif et al., 2021; Valero et al., 2015; for review, see Preston-Ferrer and Burgalossi, 2018; Soltesz and Losonczy, 2018). We thus took advantage of the expression of Calbindin (Calb1) \u2013 which is selective for superficially located pyramidal neurons \u2013 for testing our juxtacellular opto-tagging procedures in freely behaving mice. We found that, while animals explored a familiar environment, Calb1-negative pyramidal neurons were preferentially recruited into the place cell map, while Calb1-positive pyramidal cells were only weakly spatially modulated. These data are thus consistent with the emerging idea of an asymmetric recruitment of CA1 pyramidal cells types into the hippocampal representation.\n\n## Results\n\nTo genetically target Calb1-positive CA1 pyramidal neurons, we took advantage of the Calb1cre driver line (Daigle et al., 2018; Nigro et al., 2018). As expected from the distribution of Calb1-positive neurons within the CA1 pyramidal layer, injections of AAV-CAG-flex-GFP in Calb1cre mice resulted in selective labeling of superficial pyramidal cells (Figure 1A) along with scattered, putative interneurons located primarily within the stratum oriens (not shown).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71720/elife-71720-fig1-v1.jpg)\n\n**Figure 1.:** (A) Left, a schematic of a mouse coronal brain section showing the injection site of AAV-CAG-flex-GFP in Calb1cre mice. Right, epifluoresence image showing Green Fluorescent Protein (GFP) expression (green) in the superficial pyramidal cell layer (blue, DAPI). SO, stratum oriens; Pyr, stratum pyramidale; SR, stratum radiatum; SLM, stratum lacunosum moleculare; ML, molecular layer of dentate gyrus. Scale bar = 100 \u00b5m. (B) Left, a schematic of a mouse coronal brain section showing the juxtacellular opto-tagging recording configuration. Right, a confocal image showing the expression of mCherry coexpressed with ChR2 (red) in the superficial Calb1-positive pyramidal layer (green). Scale bar = 20 \u00b5m. (C) A representative light-responsive pyramidal neuron, recorded in vivo. Top, epifluorescence images showing Calb1 (green), ChR2 (red), and Neurobiotin labeling of the neuron (white). Middle, z-stack projection of the same neuron (inverted signal). The arrowhead indicates a branching point of the primary apical dendrite. Bottom, high-pass filtered juxtacellular spike trace, showing short-latency spike responses upon pulses of blue light (5 ms, indicated in blue). Scale bar = 20 \u00b5m. (D) Bottom, high-pass filtered juxtacellular spike traces of a representative neuron responding to 25 Hz light-pulse stimuli. Top, high-magnification view on a single train (25 Hz, 10 pulses). (E) Raster plot (top) and peristimulus time histogram (bottom) showing the spike latency to the light stimulus for the neuron shown in C. The average latency is indicated. (F) Histogram of average spike latencies of all identified Calb1-positive pyramidal neurons in CA1 (n = 10).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71720/elife-71720-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Epifluorescence images showing a Calb1-positive interneuron recorded, opto-tagged and identified in an anesthetized mouse (Neurobiotin, white; Calb1, green; ChR2, red). Scale bar = 200 \u00b5m (top) and 20 \u00b5m (bottom). (B) Bottom, high-pass filtered juxtacellular spike traces of the neuron shown in (A) responding to 40 Hz trains of light pulses. Top, high-magnification view on two light pulses. (C) Raster plot (top) and peristimulus time histogram (bottom) showing the spike latency to the light stimulus for the neuron shown in (A). The average latency is indicated. (D) Color-coded rate map (top) and spike-trajectory plot (bottom) of a putative Calb1-positive interneuron recorded in a freely moving mouse. (E) Same as (C) but for the interneuron shown in (D). (F) The distribution of interspike intervals (top) and average spike waveform for the putative Calb1-positive interneuron shown in (C). (G\u2013I) Same as (D\u2013F), but for another putative Calb1-positive interneuron.\n\nTo record the activity from single Calb1-positive CA1 pyramidal neurons, we selectively expressed ChR2 in Calb1-positive CA1 neurons by injecting AAV-hSyn1-flex-ChR2-mCherry in the dorsal CA1 of Calb1cre mice. We then employed the juxtacellular opto-tagging configuration (also known as \u2018optopatcher\u2019; Katz et al., 2013; Mu\u00f1oz et al., 2014) \u2013 consisting of a 50-\u03bcm-core diameter optic fiber, connected to a blue laser source, placed inside the glass electrode (Figure 1B) \u2013 for recording single CA1 neurons in anesthetized animals. Once a recording was established from a putative CA1 pyramidal neuron, low-power (0.1\u20131 mW) brief blue light pulses (5 ms) were delivered via the optic fiber to test for light-evoked spike responses. Subsequently, the neuron was labeled via juxtacellular procedures. One representative recording is shown in Figure 1C\u2013E. This neuron was located in the superficial pyramidal layer and its apical dendrite displayed a proximal branching point (see Figure 1C) \u2013 a characteristic morphological correlate of superficial CA1 pyramidal neurons (Bannister and Larkman, 1995; Li et al., 2017). This neuron was confirmed to be positive for the marker Calb1 as well as ChR2 (Figure 1C). Indeed, blue light pulses could reliably drive short-latency spikes (mean latency = 2.1 \u00b1 0.12 ms; Figure 1D, E) thus confirming the Calb1-positive identity of the recorded cell.\n\nAltogether, we recorded and labeled 19 neurons in anesthetized mice. In all cases where short-latency spiking responses were observed (mean latency <4 ms; Figure 1F) the neurons were confirmed to be Calb1-positive by immunohistochemical analysis (n = 10), therefore validating our opto-tagging strategy. Seven additional nonresponsive neurons were also juxtacellularly labeled and confirmed to be Calb1-negative pyramidal cells (not shown). In two cases, we recorded the activity of light-responsive, narrow-waveform neurons (spike peak-to-trough <0.4 ms, see Ding et al., 2020; Preston-Ferrer et al., 2016) which were positive for Calb1 immunoreactivity, and were thus classified as putative Calb1-positive interneurons (see Figure 1\u2014figure supplement 1A\u2013C; these neurons were not included in further analysis).\n\nOne known challenge of optogenetic tagging experiments is to reliably distinguish directly versus indirectly excited neurons (e.g., Beyeler et al., 2016; Zutshi et al., 2018). The short latency of our light-responsive neurons (Figure 1F) together with post hoc validation by juxtacellular labeling (Figure 1C), provide strong support for direct light activation. To further support these observations and benchmark our opto-tagging strategy, we tested our approach with presynaptic input activation. To this end, we injected AAV-CAG-ChR2-mCherry in the CA3 of wild-type mice (Figure 2A). By these means, we obtained strong labeling of CA3 axon terminals (Schaffer collaterals), extending into the CA1 strata radiatum and oriens (Figure 2B). We then juxtacellularly recorded from single postsynaptic CA1 pyramidal neurons while simultaneously activating presynaptic CA3 terminals. A representative recording from a light-responsive identified CA1 pyramidal neuron is shown in Figure 2B\u2013D. In this neuron, photostimulation at ~1.3 mW was sufficient for inducing suprathreshold spiking (Figure 2C), although with lower efficiency and longer latencies (7.4 \u00b1 0.8 ms) as compared to the directly light-activated neurons (see Figure 1C\u2013F). At the population level, the response latencies of indirectly light-activated CA1 neurons were significantly longer than those of directly light-activated CA1 Calb1-positive cells (direct light activation, mean latency = 2.7 \u00b1 0.3 ms, n = 10; indirect light activation, mean latency = 7.0 \u00b1 1.8 ms, n = 11; p = 0.0010; Figure 2E), thereby further validating our latency-based criteria for cell-type classification.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71720/elife-71720-fig2-v1.jpg)\n\n**Figure 2.:** (A) Left, schematic of a mouse coronal brain section showing the injection site of an opsin-expressing viral vector (AAV-CAG-ChR2-mCherry) in the CA3 region. Right, schematic showing the opto-activation of Schaffer collateral inputs combined with juxtacellular recording from single CA1 pyramidal neurons. (B) Confocal images showing a light-responsive CA1 pyramidal neuron (recording shown in C, D) labeled in vivo. Right panel, high-magnification view on the neuron (white, Neurobiotin, Nb) relative to the labeled Schaffer collaterals (red, ChR2-mCherry) and Calb1 staining (green). Scale bars = 100 \u00b5m (left), 20 \u00b5m (right). (C) High-pass filtered juxtacellular trace (bottom) for the neuron shown in B. Note the partial spiking responses to the light pulses (3 Hz, ~1.3 mW). Top, high magnification showing long-latency spike responses upon pulses of blue light (5 ms, indicated in blue). Scale bar = 2 mV, 2 s. (D) Raster plot (top) and peristimulus time histogram (bottom) showing the spike latency to the light stimuli for the CA1 pyramidal neuron shown in B. The average latency is indicated. (E) Histogram of average spike latencies of CA1 neurons (n = 11) showing spiking responses to Schaffer collateral input activation. The average latency is indicated. (F) Left, schematic of a mouse coronal brain section showing the injection site of recombinase-dependent opsin-expressing viral vectors (e.g., AAV-EF1a-flex-ChR2-eYFP, AAV-hSyn1-flex-ChR2-mCherry, or AAV-hSyn1-flex-oChIEF-TdTomato) in the dentate gyrus of Calb1cre mice. Right top, schematic showing the opto-activation of mossy fiber inputs combined with juxtacellular recording from single CA3 pyramidal neurons. Right bottom, epifluorescence image showing eYFP signal (pseudocolored to red for display purposes) following the injection of AAV-CAG-flex-eYFP. Note the labeling of mossy fibers (red) along the transverse CA3 axis. DG, dentate gyrus; SL, stratum lucidum; SO, stratum oriens; Pyr, stratum pyramidale; SR, stratum radiatum; SLM, stratum lacunosum moleculare; ML, molecular layer of dentate gyrus. Scale bar = 200 \u00b5m. (G) Epifluorescence image showing a nonresponsive (Cell 1) and a responsive (Cell 2) CA3a pyramidal neuron, recorded (as in F) along the same electrode penetration and labeled in vivo. Left panel, high magnification on the somata of the two neurons (green, Nb) relative to the labeled mossy terminals (red, oChIEF-TdTomato). Scale bars = 100 \u00b5m (left inset), 200 \u00b5m (right). (H) Representative recordings from the nonresponsive (Cell 1) and responsive (Cell 2) CA3a pyramidal neurons shown in G. The recording form Cell 1 (top, gray) shows the absence of spiking, but increasing amplitude of the negative local field potential (LPF) deflection during the stimulus train (25 Hz, 5-ms pulse duration) \u2212 consistent with the expected facilitation of neurotransmitter release at mossy terminals. Scale bars = 2 mV, 100 ms. The recording from Cell 2 (middle and bottom, black) shows partial spiking responses to low and high-frequency light pulses (3 and 40 Hz, 5 ms). Note the increase of the local field potential (LFP) amplitude (indicated with an arrow) during the stimulus trains. Scale bars = 2 mV, 500 ms (middle trace); 2 mV, 50 ms (bottom trace). (I) Raster plot (top) and peristimulus time histogram (bottom) showing the spike latency to the light stimuli for Cell 2 shown in G,H. 40 Hz light stimulus trains were excluded because of a high probability of spiking failure (see details in Materials and Methods). The average latency is indicated. (J) Boxplots showing comparison of latencies between directly activated CA1 cells (n = 10), indirectly activated CA3 (via mossy fiber photostimulation, n = 7), and CA1 cells (via Schaffer collateral photostimulation, n = 11). Significant p values after multiple group comparison are indicated (Kruskal\u2013Wallis, p = 0.00006). Red lines indicate medians. Outliers are shown as crosses.\n\nThe above data indicate that synaptically activated neurons can be reliably discriminated from directly light-activated cells, at least when \u2018weak and unreliable\u2019 synapses \u2013 like typical cortical synapses, including Schaffer terminals (Csicsvari et al., 2000; Sayer et al., 1990; Sayer et al., 1989) \u2013 are activated. As additional challenge, we next asked whether our latency-based criteria would still be valid under conditions of \u2018strong and reliable\u2019 synaptic activation. To this end, we performed a subset of experiments on the hippocampal mossy fiber synapse, which is among the strongest and most reliable connections in the nervous system (Henze et al., 2002; Neubrandt et al., 2018; Vyleta et al., 2016). We selectively expressed ChR2 in dentate gyrus granule cells by injecting AAV-hSyn1-flex-ChR2-mCherry (or AAV-hSyn1-flex-oChIEF-TdTomato) in the dentate gyrus of Calb1cre mice (Figure 2F). By these means, we obtained strong labeling of presynaptic mossy fibers terminals, extending into the CA3 field (Figure 2F, G). We then juxtacellularly recorded from single postsynaptic CA3 pyramidal neurons while simultaneously activating presynaptic mossy fibers at different light stimulation frequencies (e.g., 3\u201340 Hz; see details in Materials and Methods). Two representative recordings from a nonresponsive and a responsive identified CA3 pyramidal neuron are shown in Figure 2G\u2013I. In the first neuron, no spiking activity was observed upon light illumination; however, a prominent light-induced facilitation of local field potential amplitude was observed \u2013 consistent with the known facilitation of neurotransmitter release at mossy terminal (Capogna, 1998; Vyleta et al., 2016; Zucca et al., 2017). In the second neuron, photostimulation was sufficient for inducing suprathreshold spiking (Figure 2H), whose probability increased as a function of stimulus number, consistent with presynaptic facilitation of mossy inputs. Notably, the response latencies of synaptically activated CA3 neurons (mean latency = 8.1 \u00b1 2.4 ms, n = 7) were significantly longer than that of directly light-activated CA1 Calb1-positive cells (Figure 2J).\n\nAltogether, this dataset shows the technical feasibility of combining the opto-juxtacellular approach for single-cell recording, labeling, and presynaptic input manipulations. Moreover, the longer spike latencies in indirectly activated neurons compared to the directly activated ones (Figure 2J) further corroborate the validity of our latency-based opto-tagging approach.\n\nBased on these results, we took advantage of the juxtacellular opto-tagging approach for assessing the in vivo activity patterns of Calb1-positive and Calb1-negative CA1 pyramidal neurons. To this end, we adapted juxtacellular opto-tagging procedures (Figure 1) to freely moving mice. Animals were implanted with miniaturized components (see Figure 3A; Diamantaki et al., 2018) and a 50-\u03bcm-core optic fiber was inserted within the glass electrode. The use of a reversible fiber fixation strategy, together with a mechanical micropositioning system (see Figure 3\u2014figure supplement 1; details in Materials and Methods) allowed us to perform multiple recording/opto-tagging trials within individual animals.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71720/elife-71720-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic drawing of the fully assembled recording implant for juxtacellular opto-tagging in freely moving mice (adapted from Diamantaki et al., 2018). (B) Raster plots (top) and peristimulus time histograms (bottom) showing responses from a Calb1-positive (left) and Calb1-negative (right) neuron to the light stimulus (indicated in blue). Note the short-latency spiking of the Calb1-positive neurons (mean latency indicated) and the absence of response in the Calb1-negative cell. (C) Reconstruction of the dendritic morphology of a Calb1-negative CA1 pyramidal neuron, recorded in a freely moving mouse (recording shown in E). Scale bar = 50 \u00b5m. (D) Epifluorescence image showing Calb1 staining (green) and the juxtacellular labeled CA1 neuron (Neurobiotin, red) for the neurons shown in C. Scale bar = 20 \u00b5m. (E) Rate map (top) and spike-trajectory plot (bottom) for the neuron shown in (C). (F\u2013H) Same as in (C\u2013E) but for a representative Calb1-positive CA1 pyramidal neuron. (I) Linearized rate maps of all Calb1-negative cells (n = 26) that met the inclusion criteria for spatial analysis (see Materials and Methods). Each row represents the normalized firing rates relative to the linearized 1D projection of the circular arena. Cells are ordered according to their maximal firing rate position along the linearized trajectory. The bar graph on the right indicates peak firing rates (\u2018Peak FR\u2019) for each cell, calculated from the original, non-linearized rate maps. (J) Same as in (I) except for all Calb1-positive cells (n = 12) that met the inclusion criteria for spatial analysis (see Materials and Methods). (K) Boxplots showing spatial information content and sparsity for Calb1-negative (n = 26, as in I) and Calb1-positive (n = 12, as in J) CA1 neurons. p values are indicated (Wilcoxon rank-sum test). Black/green lines indicate medians. Outliers are shown as crosses.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71720/elife-71720-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A known limitation of previous juxtacellular procedures in freely moving animals (Tang et al., 2014a; Diamantaki et al., 2018) is that \u2013 following implantation of the recording components \u2013 the position of the recording electrode relative to the craniotomy cannot be easily adjusted by the experimenter. De facto, this limits the number of electrode penetrations (and recording/labeling attempts) that can be performed within an individual craniotomy, since consecutive electrode penetrations cannot be efficiently and systematically spaced relative to each other. To circumvent this limitation, we have developed a mechanical micropositioning system that enables adjusting the electrode\u2019s position prior to recording. A representative experiment showing multiple recordings from CA1 neurons obtained during sequential electrode penetrations in the same craniotomy is shown in (C\u2013E). (A) Left, 3D schematic representations of the microdrive/micromanipulator assembly for obtaining juxtacellular recordings in freely moving mice. The base of the micropositioning drive (image shown on the right panel) is cemented on the mouse\u2019s head (not shown). By means of a positioning Screw (2), the mechanical microdrive allows the displacement of the electrode along the horizontal plane (100 \u03bcm per turn), thereby allowing spacing (and differentiating) multiple electrode penetrations along one dimension (maximum travel distance, 1 mm). (B) Side and top views of the micropositioning drive (dimensions are shown). Screw (1) secures the microdrive to the motorized micromanipulator (Diamantaki et al., 2018); Screw (2) is the positioning screw (see A); Screw (3) secures the microdrive components after the Screw (2) has been operated. (C) A representative recording from an identified CA1 place cell, recorded in a freely moving mouse. Left, color-coded rate map (top) and spike-trajectory plot (bottom) showing spatially localized activity. Peak firing rate is indicated. Right, high-pass filtered juxtacellular spike traces (top) and averaged spike waveform (bottom). (D) Epifluoresence image showing the CA1 pyramidal neuron (Nb, red) recorded in a freely moving mouse (recording shown in C). The neuron was located in the deep CA1 layer, and was negative for Calb1 expression (green). Red, Neurobiotin (Nb); green, Calb1; blue, DAPI. Scale bar = 50 \u00b5m. (E) Color-coded rate maps (left; peak firing rates indicated) and average spike waveforms (right) for the recordings performed in the same animal as the cell in (C, D). These recordings included two putative fast-spiking (FS) interneurons and eight additional putative pyramidal (Pyr) neurons. Note the higher firing rates and shorter spike peak-to-trough times for the FS, compared to Pyr recordings.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71720/elife-71720-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Representative recording from a putative Calb1-positive neuron, recorded in a freely moving mouse (recording configuration as in Figure 3A). Linearized spike-trajectory (top) and firing rates (bottom) computed for the first half (black) and second half (blue) of the recording. Pearson\u2019s correlation coefficient (R) is indicated. (B) Average spike waveform for the recording shown in (A). (C) Raster plot (top) and peristimulus time histogram (bottom) showing the spike latency to the light stimuli for the recording shown in (A). The average latency is indicated. (D\u2013F) Same as (A\u2013C), but for another putative Calb1-positive neuron. (G\u2013J) Same as in (A\u2013E), but for two putative Calb1-negative neurons. (K) Boxplot showing Pearson\u2019s correlation coefficients between the rate maps computed for the two halves of each Calb1-positive (n = 12) and Calb1-negative (n = 26) recording. p values are indicated (Wilcoxon rank-sum test). Black/green lines indicate medians. Outliers are shown as crosses.\n\nUsing these juxtacellular opto-tagging procedures, we monitored the activity of single CA1 pyramidal neurons while mice explored a familiar maze. All neurons included in the present study displayed low firing rates (<10 Hz; average firing rate, 2.16 \u00b1 2.06 Hz; n = 54) and often fired complex spikes (average burst index, 0.28 \u00b1 0.18, n = 45) \u2013 features classically associated with principal cell identity (O\u2019Keefe and Dostrovsky, 1971; Ranck, 1973). All histologically identified neurons were classified as pyramidal neurons (see Materials and Methods), thus further confirming our electrophysiological classification criteria.\n\nAs in the anesthetized dataset (Figure 1), neurons recorded in behaving mice were classified as Calb1-positive if short-latency spikes (<4 ms) were reliably evoked by the light pulse (n = 15; Figure 3B). In a subset of recordings, juxtacellular labeling was performed and the cytochemical identity of the recorded neuron was assessed via Calb1 immunoreactivity (Figure 3C\u2013H). Neurons were classified as Calb1-negative neurons (n = 39) if they did not respond to the light stimulus or were located in the deep pyramidal layer and were negative for Calb1 expression (see Materials and Methods). In two cases, we recorded from light-responsive, putative Calb1-positive interneurons, which fired at high rates during exploration (>10 Hz average firing rates; see Figure 1\u2014figure supplement 1D\u2013I; these neurons were not included in further analysis).\n\nDuring spatial exploration, Calb1-positive and Calb1-negative pyramidal cells displayed similar average firing rates (Calb1-positive, 2.17 \u00b1 2.02 Hz, n = 15; Calb1-negative, 2.15 \u00b1 2.10 Hz, n = 39; p = 0.86) and tendency to fire spike bursts (\u2018burst index\u2019; Calb1-positive, 0.29 \u00b1 0.21, n = 13; Calb1-negative, 0.29 \u00b1 0.18, n = 32; p = 0.97). However, these two cell types differed remarkably in the degree of spatial modulation. While the large majority of Calb1-negative neurons displayed spatially localized firing patterns, which were homogeneously distributed over the available space (Figure 3I), the spiking activity of Calb1-positive neurons was less spatially modulated (Figure 3J) (n = 26 Calb1-negative and n = 12 Calb1-positive neurons included in the spatial analysis; see details in Material and Methods). To quantify these differences, we computed spatial information content (Skaggs et al., 1993) and the sparsity index \u2013 a metric of how compact the place field is relative to the recording arena (Jung et al., 1994). Indeed, we found that Calb1-positive neurons conveyed significantly less spatial information (Calb1-positive, 0.65 \u00b1 0.35 bits/spike, n = 12; Calb1-negative, 1.56 \u00b1 0.79 bits/spike, n = 26; p = 0.0003) and displayed a higher sparsity index (Calb1-positive, 0.53 \u00b1 0.15, n = 12; Calb1-negative, 0.31 \u00b1 0.17, n = 26; p = 0.0003) (Figure 3K), indicating a more diffuse firing pattern compared to Calb1-negative cells. To further confirm these observations, we performed a spatial stability analysis by calculating the Pearson\u2019s correlation coefficient for rate maps computed for the two halves of each recording (Figure 3\u2014figure supplement 2). Indeed, in line with their weaker spatial tuning (Figure 3K), spatial firing in Calb1-positive neurons was significantly less stable than in Calb1-negative cells (mean correlation coefficient, Calb1-positive, 0.33 \u00b1 0.35; n = 12; Calb1-negative, 0.68 \u00b1 0.31; n = 26; p = 0.0019; see Figure 3\u2014figure supplement 2). Altogether, these findings are in line with previous observations (Danielson et al., 2016; Geiller et al., 2017; Mizuseki et al., 2011; Oliva et al., 2016; Sharif et al., 2021) and indicate that in the dorsal CA1, place cells are preferentially contributed by deep (Calb1-negative) pyramidal neurons, while Calb1-positive neurons are only weakly spatially modulated.\n\n## Discussion\n\nA mechanistic dissection of neural circuits requires resolving the contribution of individual neuronal elements to in vivo function, neural computation and behavior. Significant experimental efforts have been undertaken, aimed at resolving neuronal diversity within brain circuits. However, due to methodological limitations, it is still largely unknown whether and how the individual neuronal cell classes \u2013 typically identified in vitro \u2013 contribute to in vivo activity during natural behavior.\n\nThe advent of \u2018genetic tagging\u2019 has revolutionized neural circuit research. By restricting the expression of ChR2 (or Ca2+ indicators) to a specific subset of neurons, it has become possible to link in vivo activity patterns to the underlying neuronal elements. In freely behaving animals, the combination of extracellular recordings with optogenetic tagging (e.g., Anikeeva et al., 2011; Lima et al., 2009) has become a gold-standard approach for neural circuit dissection. However, while the implementation of the \u2018opto-tagging\u2019 method is rather straightforward, there are two important limitations to be considered. First, cell-type identification is indirect, since it is inferred from the spiking responses to the light stimuli. While a number of criteria have been proposed for distinguishing directly versus indirectly light-activated neurons, this distinction is often far from trivial, especially within networks with high recurrent connectivity (Beyeler et al., 2016; Roux et al., 2014; Zutshi et al., 2018). The reliability of optogenetic identification is further complicated by the challenge of \u2018spike sorting\u2019 during periods of highly synchronous activity \u2013 occurring for example during photostimulation \u2013 since the superimposition of multiple, co-occurring spike waveforms can make the detection of individual spikes difficult and unreliable (Roux et al., 2014; Stark et al., 2012). While a number of strategies have been proposed for alleviating these problems (Roux et al., 2014; Royer et al., 2010; Stark et al., 2012; Wu et al., 2015), obtaining \u2018ground truth\u2019 validation of opto-tagging procedures is particularly challenging, especially in freely behaving animals. A second important limitation is that opto-tagging approaches do not provide access to structural neuronal features \u2013 like for example morphology and molecular expression patterns \u2013 which are necessary for unequivocal cell-type identification.\n\nIn the present study, we aimed at filling these methodological gaps by combining optogenetic tagging with juxtacellular procedures in freely moving mice. This combination of techniques enables targeting of juxtacellular recordings to a genetically predefined cell class; hence, it represents a significant advance over current juxtacellular protocols, where individual neurons are blindly sampled within a target structure (Averkin et al., 2016; Diamantaki et al., 2018; Katona et al., 2014; Lapray et al., 2012; Tang et al., 2014a; Valero et al., 2015). We provide proof-of-principle validation of our method by recording from Calb1-positive pyramidal neurons (Figure 3) in the mouse CA1. In a limited number of cases, we monitored the activity of Calb1-positive interneurons, whose somata were located outside of the pyramidal layer (Figure 1\u2014figure supplement 1). These neurons fired at high rates during spatial exploration, and did not display the \u2018fast-spiking\u2019 phenotype which is often associated to perisomatic-targeting CA1 interneurons (\u2018theta cells\u2019; O\u2019Keefe and Dostrovsky, 1971; Ranck, 1973). This evidence indicates that our juxtacellular opto-tagging approach could facilitate the targeting of sparse neuronal populations \u2013 like different subtypes of GABAergic neurons (Bartos et al., 2011; Bartos and Elgueta, 2012; Klausberger, 2009; Klausberger and Somogyi, 2008) \u2013 whose blind sampling in freely moving animals, along with post hoc immunohistochemical phenotyping, is known to be very challenging and labor intensive (Averkin et al., 2016; Katona et al., 2020; Lagler et al., 2016; Lapray et al., 2012).\n\nOur combined opto-juxtacellular method also provides several advantages over \u2018conventional\u2019 extracellular opto-tagging approaches. First, it enables direct validation of opto-tagging criteria, in that single ChR2-responsive (or nonresponsive) neurons can not only be recorded, but also labeled by juxtacellular procedures, thereby enabling post hoc verification of ChR2 and/or marker expression. Second, the large amplitude juxtacellular spikes (typically >1\u20132 mV peak-to-peak amplitudes, Herfst et al., 2012; Tang et al., 2014a) allow unequivocal spike identification, thereby providing \u2018ground truth\u2019 spiking signals that are not dependent on the performance of spike sorting algorithms, especially during photostimulation periods. Third, post hoc morphological and molecular expression analysis of the recorded/labeled cells provides access to structural features that are typically not accessible with alternative techniques, thereby enabling unequivocal cell-type classification. Moreover, our data also provide proof-of-principle evidence that our juxtacellular recording/labeling procedures can also be used in combination with presynaptic input manipulations (Figure 2). This approach can be particularly useful for mapping synaptic inputs onto identified cell types, like for example the distinct subtypes of CA2 and CA3 pyramidal neurons (Helton et al., 2019; Hunt et al., 2018; Marissal et al., 2012; Raus Balind et al., 2019) or dentate granule cells (Diamantaki et al., 2016; Erwin et al., 2020; Zhang et al., 2020) which have been classified based on dendritic morphological criteria. We envision that the future combination with single-cell stimulation (Diamantaki et al., 2018; Diamantaki et al., 2016), will allow pairing between pre- and postsynaptic activity (Nicoll and Schmitz, 2005; Salin et al., 1996; Toth et al., 2000), thus enabling the study of single-cell plasticity mechanisms, so far limited to simplified preparations, to the intact system during natural behaviors.\n\nWhile it is technically possible to perform multiple opto-juxtacellular recordings within individual experiments (Figure 3\u2014figure supplement 1), our method still remains laborious and of limited output compared to alternative techniques (e.g., extracellular recordings). Hence, it should not be seen as high throughput, but rather as complementary to existing in vivo recording methods. We envision that opto-juxtacellular datasets \u2013 although limited \u2013 could still provide a valuable complement to current cell-type classification approaches, for example by offering the possibility of building a classifier, which could then be used for assigning cell identity to \u2018blind\u2019 extracellular units (as in e.g. GoodSmith et al., 2017; Tang et al., 2014b).\n\nRecent in vitro and in vivo work has shown that the CA1 pyramidal layer can be subdivided into two sublayers (superficial and deep) according to morphological, molecular, and electrophysiological criteria (Baimbridge and Miller, 1982; Slomianka et al., 2011; Preston-Ferrer and Burgalossi, 2018; Soltesz and Losonczy, 2018). Deep and superficial pyramidal cells have been shown to display distinct in vivo activity patterns relative to local field potential oscillations (Navas-Olive et al., 2020; Valero et al., 2015) and distinct tendencies to express place fields (Danielson et al., 2016; Geiller et al., 2017; Mizuseki et al., 2011; Navas-Olive et al., 2020; Sharif et al., 2021). However, most of the previous in vivo observations were based upon the anatomical assignment of extracellular recording locations (but see Valero et al., 2015; Navas-Olive et al., 2020). As a testing ground for our technique, we recorded, opto-tagged, and labeled single CA1 pyramidal neurons in freely moving mice \u2013 thus validating and extending previous observations by mapping functional deep-superficial gradients onto the underlying neuronal elements. We found that Calb1-positive pyramidal neurons were only weakly spatially modulated, while \u2018place cells\u2019 were preferentially recruited from the Calb1-negative population (Figure 3). While this finding is in line with previous work (e.g., Danielson et al., 2016; Geiller et al., 2017; Mizuseki et al., 2011; Navas-Olive et al., 2020; Sharif et al., 2021), we acknowledge that it rests on a limited number of observations (Figure 3I\u2013K). Notably, inputs from the medial and lateral entorhinal cortices are known to preferentially target deep and superficial CA1 pyramidal cells, respectively (Li et al., 2017; Masurkar et al., 2017); hence, the weaker spatial selectivity of upstream lateral entorhinal inputs (Hargreaves et al., 2005) might account for the weaker spatial tuning of Calb1-positive CA1 pyramidal neurons.\n\nIn summary, we demonstrated the technical feasibility of performing ChR2-assisted juxtacellular recordings in freely moving mice. We envision that this method will be useful for resolving neuronal heterogeneity beyond \u2018single-marker\u2019 classification schemes, thus providing a valuable complement to current techniques for structure\u2013function analysis of neuronal circuits during natural behaviors.\n\n## Materials and methods\n\n### Experimental subjects\n\nWild-type C57BL/6J mice (RRID:IMSR_JAX:000664; male, >8 weeks old; Charles River, Sulzfeld, Germany) and Calb1cre mice (RRID:IMSR_JAX:028532; male, >8 weeks old; The Jackson Laboratory, Bar Harbor, United States, Cat#028532) were used in this study (see details below).\n\n### Viral injections and juxtacellular recordings\n\nAAV-CAG-flex-GFP (Chan et al., 2017; Cat#BA-002, Charit\u00e8 Viral Vector Core, Berlin, Germany; RRID:Addgene_28304) or AAV-hSyn1-flex-ChR2(H134R)-mCherry (Cat#v332-1, Viral Vector Facility, University of Z\u00fcrich, Zurich, Switzerland; RRID:Addgene_20297) were injected in the dorsal CA1 of Calb1cre mice (2.0 mm posterior to bregma; 1.8 mm lateral to midline). AAV-CAG-ChR2-mCherry (Addgene, Cat#100054; RRID:Addgene_100054) was injected in the dorsal CA3 of C57BL/6J mice (2.0 mm posterior to bregma; 2.0 mm lateral to midline). AAV-EF1a-flex-ChR2-eYFP (Addgene, Cat#20298-AAV9, Watertown, MA; RRID:Addgene_20298), AAV-hSyn1-flex-ChR2(H134R)-mCherry, AAV-hSyn1-flex-oChIEF-TdTomato (Charit\u00e8 Viral Vector Core, Cat#BA-030; RRID:Addgene_30541), and AAV-CAG-ChR2-mCherry were injected in the dorsal dentate gyrus of Calb1cre mice or C57BL/6J mice (2.2 mm posterior to bregma; 1 mm lateral to midline). Viral injections were performed via pressure injection, essentially as previously described (Kitamura et al., 2014; Liu et al., 2012). Briefly, animals were anesthetized with fentanyl-midazolam-medetomidine anesthesia (Burgalossi et al., 2011; Chakrabarti and Schwarz, 2018). 50\u2013150 nl of viral solution (titer ~1011\u20131012 vg/ml) were injected with a pression-injection pump (Microinjection Syringe Pump, Cat#UMP3T, WPI) mounted onto a Robot Stereotaxic (StereoDrive, Cat#9001001 Neurostar). Twelve to eighteen days following injection, mice were subjected to histological analysis (see paragraph \u2018Histology, immunohistochemistry and neuronal reconstructions\u2019) or electrophysiological recordings (see paragraph \u2018Opto-tagging procedures\u2019). In Calb1cre mice injected within the CA1 pyramidal layer, ChR2 was almost exclusively expressed in Calb1-positive neurons (0 out of 272 neurons were ChR2-positive/Calb1-negative), thus confirming the specificity of the Calb1cre driver line (see also Daigle et al., 2018; Nigro et al., 2018). Viral titers and injection volumes were optimized to obtain high infection efficiency and ChR2 expression levels (~95.8% of Calb1-positive neurons were also ChR2-positive; 261/272 neurons), thereby minimizing the occurrence of false negatives in our opto-tagging experiments.\n\nExperimental procedures for obtaining juxtacellular recordings, signal acquisition and processing were essentially performed as described previously (Diamantaki et al., 2018; Tang et al., 2014a). Briefly, glass electrodes with resistance 4\u20136 M\u03a9 were filled with 1.5\u20132% Neurobiotin (Vector Laboratories; Cat# SP-1120, RRID:AB_2313575) in Ringer\u2019s solution containing (in mM): 135 NaCl, 5.4 KCl, 5 HEPES, 1.8 CaCl2, and 1 MgCl2 or Intracellular solution containing (in mM): 135 K-gluconate, 10 HEPES, 10 Na2-phosphocreatine, 4 KCl, 4 MgATP, and 0.3 Na3GTP. Osmolarity was adjusted to 280\u2013310 mOsm. Before electrophysiological recording (either in anesthetized or awake animals), mapping experiments were performed to precisely estimate the location of dorsal CA1 or CA3. The occurrence of sharp-wave ripples complexes, their polarity reversal and the increased juxtacellular hit rates served as reliable electrophysiological signatures for precisely localizing the CA1 or CA3 pyramidal layer. Histological analysis confirmed the expected electrode location, since all identified cells were located within CA1 or CA3 region respectively (n = 38).\n\nFor recordings in anesthetized animals, mice were anesthetized with ketamine/xylazine, as previously described (Diamantaki et al., 2018). Recordings were performed with the optopatcher (A-M systems, Maulbronn, Germany, Cat#667844, Katz et al., 2013; Mu\u00f1oz et al., 2014) and a 50-\u03bcm-core diameter fiber (Thorlabs, Newton, New Jersey, Cat#FG050LGA). Recordings in freely moving animals were obtained by means of a miniaturized micromanipulator (Nanomotor, RRID:SCR_016100; Kleindiek Nanotechnik) secured onto a custom-made base, and an ELC miniature headstage (RRID:SCR_016102) (connected to the preimplanted pin connector), essentially as previously described (Diamantaki et al., 2018). In a subset of recordings, we employed a novel custom-made micromanipulator base with a mechanical micropositioning system that allowed adjustments of the electrode position (entry point) between individual sessions (Figure 3\u2014figure supplement 1). The location of the animal was tracked using two LEDs (red and blue) mounted on the mouse\u2019s head. Prior recordings, an optic fiber (Thorlabs, Cat#FG050LGA) was inserted in the glass electrode and secured with a reversible fixation strategy, that is by means of silicone sealant (Kwik-Cast silicone sealant, WPI). The use of a reversible optic fiber fixation strategy, together with a mechanical micropositioning system of the glass electrode, allowed us to perform multiple recording/opto-tagging trials within individual animals. Recordings were performed while animals were freely exploring an O-shaped, linear maze (70 \u00d7 50 cm, 9-cm wide path).\n\nFor both anesthetized and freely moving juxtacellular recordings, the juxtacellular voltage signal was acquired via an ELC headstage (Cat#ELC-03XS, anesthetized animals) or an ELC miniature headstage (Cat#ELC-MINI-DIFF-LED, freely moving animals), and an ELC-03XS amplifier (NPI Electronic, Tamm, Germany), sampled at 20 kHz by a POWER1401-3 analog-to-digital interface under the control of Spike2 Software (CED, Cambridge, UK). Juxtacellular labeling was performed according to standard procedures (Pinault, 1996; Pinault, 1994) with 200-ms-long squared current pulses.\n\n### Opto-tagging procedures\n\nDuring juxtacellular recording in anesthetized and freely moving mice, an optic fiber (50 \u03bcm core) was inserted in the glass pipette. The optical fiber was connected to a 473 nm laser (Oxxius, Cat#LBX-473\u2013300) and controlled by the Spike2 software. The laser output (controlled by the Oxxius software) was calibrated and measured at the glass electrode tip (containing Ringer solution). We did not systematically test photostimulation intensities for all recorded neurons, but light intensities were adjusted on a cell-by-cell basis to the amount that elicited reliable spiking. Neurons, especially nonresponsive ones, were occasionally tested with laser power intensities up to 5 mW, like the example Cell 1 shown in Figure 2H (light stimulation trials with >5 mW output power were not included in the analysis). For directly light-activated CA1 neurons, low-power intensities were sufficient for eliciting reliable spiking (typically <1 mW; range 0.1\u20131 mW). In the datasets of synaptically activated CA1 and CA3 neurons (Figure 2), higher light power (>1 mW; range 1\u20132.5 mW) was necessary for evoking spiking from light-responsive neurons \u2212 consistent with the notion that higher stimulus intensities are needed for synaptic activation, as compared to direct light activation.\n\nIndividual juxtacellularly recorded neurons were tested for light-evoked spiking by delivering short pulses of blue light at the end of the recording session (1- to 5-ms long pulses). Notably, while in anesthetized animals, 5-ms light pulses largely evoked single spikes in the responsive CA1 neurons (mean number of evoked spikes per pulse, 1.02 \u00b1 0.04), during awake behavior, the same stimulation protocol reliably evoked burst activity (i.e., 2\u20133 spikes at Interspike Intervals (ISI) <6 ms; not shown). In order to elicit minimal light-evoked responses in the awake state, pulse duration was thus reduced to 1 ms (1 Hz frequency, 10\u201350 total pulses; mean number of evoked spikes per pulse, 1.56 \u00b1 0.87). In a subset of anesthetized recordings (n = 4), putative Calb1-positive neurons could also be reliably driven to spike with a 100-\u03bcm-core optic fiber, coupled to a 470-nm LED light source (M470F3, ThorLab). Spike latencies tended to be slightly longer than \u2013 but not significantly different from \u2013 spike latencies assessed with laser stimulation (mean latencies; laser: 2.45 \u00b1 0.43 ms; LED: 2.96 \u00b1 0.30 ms; p = 0.11); hence, these recordings were pooled together.\n\nPeristimulus time histograms (PSTHs) were computed with 0.1 ms bin size (the only exception being the putative Calb1-negative cell in Figure 3B, where the PSTH was computed with a bin size of 20 ms for display purposes). Spike latencies to light stimulations were computed by measuring, for each trial, the time between the onset of the light stimulus and the first evoked spike within a 20-ms window. The mean latency for each cell was calculated as the average spike-latency across all trials (only pulses with interpulse intervals \u2265200 ms where included in the analysis of directly light-activated CA1 neurons). A cell was defined as directly light activated (i.e., putative Calb1-positive) if short-latency spikes were evoked by the light stimulus (mean latency <4 ms). ChR2-expressing neurons could be reliably entrained by the light stimuli up to 40 Hz frequencies (e.g., see Figure 1C, D and Figure 1\u2014figure supplement 1B). The average number of light-evoked spikes was calculated by averaging the number of spikes in a 20-ms-long window following the onset of the light stimulus.\n\n### Histology, immunohistochemistry, and neuronal reconstruction\n\nFor histological processing, animals were euthanized with an overdose of pentobarbital and perfused transcardially with 0.1 M phosphate-buffered saline followed by a 4% paraformaldehyde solution. Brains were sliced on vibratome (VT1200S; Leica, Wetzlar, Germany) to obtain: 70-\u03bcm-thick sagittal or coronal sections.\n\nImmunostainings were performed on free-floating sections as described previously (Ray et al., 2014). To reveal the morphology of juxtacellularly labeled CA1 or CA3 cells (i.e., filled with Neurobiotin), brain slices were processed with streptavidin-546 (Thermo Fisher Scientific, Waltham, MA, Cat#S1225) or streptavidin-488 (Thermo Fisher Scientific, Cat#S1223). Immunohistochemical stainings for Calbindin1 were performed with a rabbit anti-Calbindin antibody (Swant, Cat#300; RRID:AB_10000347). Fluorescence images were acquired by epifluorescence microscopy (Axio imager; Zeiss, Jena, Germany) and confocal microscopy (LSM 900; Zeiss). For cell reconstruction, after fluorescence images were acquired, the Neurobiotin staining was converted into a dark DAB reaction product followed by Ni2+-DAB enhancement protocol (Klausberger et al., 2003). Neuronal reconstructions were performed manually on DAB-converted specimens with Neurolucida software (MBF Bioscience, Williston, Vermont), and displayed as 2D projections.\n\n### Analysis of electrophysiology data\n\nSpike signals from juxtacellular voltage traces were manually isolated, as described previously (Burgalossi et al., 2011). Recordings (or portions of recordings) in which cellular damage was observed (e.g., spike-shape broadening, increase in firing rate accompanied by negative DC shifts of the juxtacellular voltage signal, as described in Pinault, 1996; Herfst et al., 2012) were excluded from the analysis. In the present study (in line with previous work; Epsztein et al., 2011; Lee et al., 2012; Diamantaki et al., 2016; Diamantaki et al., 2018), a linear circular maze was used for enabling the assessment of spatial modulation in CA1 pyramidal neurons within shorter recording durations compared to extracellular recordings. Recording displayed in Figure 3I, J were converted to a one-dimensional representation. This was done by first projecting the X\u2013Y coordinates onto the ellipse that best approximated the trajectory, and then converting the projected coordinates into a one-dimensional representation by finding their associated positions along the linearized ellipse.\n\nThe dataset of directly light-activated CA1 recordings in anesthetized animals (Figure 1; six mice) consisted of 10 Calb1-positive and 7 Calb1-negative pyramidal neurons (two additional recordings from putative Calb1-positive interneurons were excluded from further analysis, Figure 1\u2014figure supplement 1A\u2013C ). The datasets of indirect (synaptic) activation consisted of 7 light-activated CA3 cells (4 mice) and 11 light-activated CA1 cells (3 mice) (Figure 2). The dataset of CA1 recordings in freely moving animals (54 recordings) consisted of 10 recordings from histologically identified neurons (3 of which were reported in a previous study, Diamantaki et al., 2018) and 44 recordings from opto-tagged neurons (10 mice). Out of the 10 histologically identified neurons, 2 neurons were classified as Calb1-positive and 8 neurons were classified as Calb1-negative (by Calbindin1 immunoreactivity and/or their relative position within the pyramidal layer, i.e., deep versus superficial). Of the 44 opto-tagged recordings, 13 were classified as putative Calb1-positive and 31 as putative Calb1-negative neurons, based on spiking probability and spike latency to the light stimulus (see Figure 3B and main text). Two additional recordings from putative Calb1-positive interneurons were excluded from further analysis (Figure 1\u2014figure supplement 1D\u2013I). Data from one mouse were not included in the analysis because juxtacellular labeling was not performed, and the recording location in the CA1 region could not be unequivocally verified.\n\nFor the analysis of spatial firing patterns (spatial information per spike, sparsity, and spatial stability, Figure 3K and Figure 3\u2014figure supplement 2) a speed threshold was applied (speed >1 cm/s) and only recordings with >50 spikes and \u22653 laps were included. In total, 38 of 54 recordings met these inclusion criteria (12 putative Calb1-positive and 26 putative Calb1-negative neurons, see Figure 3I\u2013K). Applying more stringent inclusion criteria (e.g., >3 laps, > 100 spikes) and/or different speed thresholds (1\u201310 cm/s) led to qualitatively similar results and did not change the statistical significance of our findings (P < 0.05 for Figure 3I\u2013K). The burst index was defined as the sum of spikes with an ISI \u22646 ms, divided by the total number of spikes (Hunt et al., 2018; Neunuebel and Knierim, 2012). Only recordings with >50 spikes were included in the burstiness analysis.\n\n### Analysis of spatial modulation\n\nThe position of the mouse was defined as the midpoint between two head-mounted LEDs. For computing color-coded firing rate maps, only spikes during movement (>1 cm/s) were included. Space was discretized into pixels of 2.5 \u00d7 2.5 cm, for which the occupancy (z) of a given pixel x was calculated as\n\n$$\nz(x)=\\sumtw(|x\u2212x_{t}|)\u0394t\n$$\n\nwhere xt is the position of the mouse at time t, \u0394t the interframe interval, and w a Gaussian smoothing kernel with \u03c3 = 1. Then, the firing rate (r) for a given pixel (x) was calculated as\n\n$$\nr(x)=\\frac{\\sumiw(|x\u2212x_{i}|)}{Z(x)}\n$$\n\nwhere xi is the position of the mouse when spike i was fired. The firing rate of pixels, whose occupancy (z) was less than 20 ms, was not shown.\n\nThe spatial information of a cell in bits per spike (Markus et al., 1994) is calculated as\n\n$$\nI_{spike}=\\sumn(p_{n}\u2217(\\frac{\\lambda_{n}}{\\lambda})\u2217log_{2}\u2061(\\frac{\\lambda_{n}}{\\lambda}))\n$$\n\nThe sparsity index of a cell (Markus et al., 1994) is calculated as\n\n$$\nSparsity=\\sum_{n}\\frac{p_{n}*\\lambda_{n}^{2}}{\\lambda^{2}}\n$$\n\nIn both cases, $p_{n}$ is the probability of the animal being in nth pixel bin, $\\lambda_{n}$ is the mean firing rate in the nth pixel bin, and \u03bb is the overall mean fire rate of the cell.\n\nThe stability of spatial firing was quantified by computing rate-map correlation (via Pearson\u2019s correlation coefficient) (as in e.g. Agnihotri et al., 2004; Grieves et al., 2020; Preston-Ferrer et al., 2016) between linearized rate maps from the first and second half of each recording.\n\n### Statistical analysis\n\nStatistical analysis was performed with standard MATLAB functions. No statistical methods were used to predetermine sample sizes, but our sample size estimates were based upon previous work addressing structure\u2013function relationships of single neurons with similar techniques (e.g., Diamantaki et al., 2016; Preston-Ferrer et al., 2016; Tang et al., 2014b, Tang et al., 2015). Data are presented as mean \u00b1 SD, unless indicated otherwise. Statistical significance was assessed by a two-sided Wilcoxon rank-sum test with 95% confidence (for the comparison of spatial firing patterns between Calb1-positive and Calb1-negative populations). For multiple groups comparisons (Figure 2J), Kruskal\u2013Wallis test was used.\n",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "e408a06b-3280-4c1a-a25f-af524767a664",
+      "submission_id": "5b176f4d-6ccb-47ae-8bf4-ab50ca1d28bf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Adrien Peyrache, McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71720.sa0](https://doi.org/10.7554/eLife.71720.sa0)\n\nThis study presents a major technical advance by recording from genetically identified neurons in freely moving mice. This method is applied to the hippocampus to determine circuit specific synaptic interaction in vivo and to compare behavioral correlates of genetically-defined cell types. This technique paves the way for future studies aiming to relate genetics, circuits, and neuronal coding in freely moving animals.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Adrien Peyrache, McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71720.sa1](https://doi.org/10.7554/eLife.71720.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Juxtacellular opto-tagging of hippocampal CA1 neurons in freely-moving mice\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWhile all three reviewers were impressed by the technical tour-de-force presented in this manuscript, they also agreed that the last part of the study regarding cFos expression is underpowered and would be better suited in a future study focusing on this particular question.\n\n1) The main comment is that the authors should reframe their study as a technical report only, focusing on the combination of opto-tagging (including cell type and synaptic interaction) and juxtacellular recording in freely moving animals. In other words, the study should only include the first three figures, and the abstract should be rephrased to only present the technical aspect of the work. The study should then provide an in-depth discussion of the potential advantages and challenges of combining the two techniques (this is only briefly discussed in the present manuscript).\n\n2) In the present form of the manuscript, it is not immediately clear how Figure 2 relates to the rest of the study, which won't be the case if this the study is framed as a technical report only. The disambiguation between direct and indirect light-evoked spikes is interesting, but it would have been more natural to carry out such experiments in the CA3/CA1 pathway. Some justification of this choice, if possible, would be helpful to the reader.\n\n3) Firing rate is normalized in figure 3I and 3J \u2013 but it would be interesting to know what the max firing rate is for each cell (just add the Hz to each row).\n\nReviewer #1:\n\nIn this manuscript by Ding et al. from the group of Andrea Burgalossi, the authors use a sophisticated combination of juxtacellular recordings and optogenetics to study the spatial firing properties of genetically defined neurons in CA1 of the hippocampus. They first focus on showing that calbindin-positive pyramidal cell were weakly spatially tuned compared to calbindin-negative pyramidal neurons. The authors finish with a brief analysis showing that cFos expressing cells were often calbindin-expressing and this increased with spatial exploration. Overall this is an impressive body of work and will be informative to those interested in heterogeneity in CA1 pyramidal cells, engram recruitment, and more generally this paper established an important technique that can be applied throughout the brain.\n\nOverall enthusiasm for the paper is somewhat muted given the finding from the McHugh lab that cfos engram cells are not highly spatial, however the novelty here is the additional link to calbindin expression in addition to the novelty and impressive nature of the methodology used.\n\n1. One concern I have is the low number of neurons in the Calbindin positive group (n=7). Of these 7 cells, at least 3 or 4 of them seem as spatial as the calbindin negative group. I realize these are hard experiments, and I don't think more data is needed \u2013 but perhaps a more thorough analysis of the data is needed (lap to lap variability, control for firing rates (see below)), etc.\n\n2. It also appears that the firing rates of calbindin-positive neurons is lower (at least from the example in figure 3F this seems to be the case. I think the authors will need to subsample spiking from the calbindin-negative group to match the low firing rate of the calbindin positive population and then compute information and sparsity (I understand these things so account for firing rate, but a subsampled analysis would help to void this concern)).\n\nReviewer #2:\n\nThe manuscript of Ding et al. is primarily designed as a technical study, describing the synthesis of two challenging approaches that have hitherto have not been attempted in a single preparation. The main experiments describe the bringing together of in vivo juxtacellular recording of mouse hippocampal CA1 pyramidal cells and cell-type specific optoID in behaving mice. Together these approaches allow the generation of ground truth data on in vivo physiology across the levels of anatomy, genetic marker expression, and anatomical location. They demonstrate the feasibility of the approach both in anesthetized and freely moving mice, as well as providing additional data in Figure 2 speaking to the differences in light-evoked spike latency between direct stimulation of ChR2 expression neurons and neurons post-synaptic to stimulated ChR2 expressing axon terminals. These is a nice confirmation on the specificity of the techique although these data would have been stronger if generating in the same circuit (CA3 presynaptic expression of ChR2 instead of the DG/CA3 circuit).\n\nThe authors validate the approach in the CA1 region of the hippocampus, addressing the previously noted distinction in spatial coding between superficial (calbindin positive) and deep (calbindin negative) CA1 pyramidal cells (see studies by Danielson et al. 2016, Mizuseki et al. 2011, Fernandez Ruiz et al. 2017Valero et al. 2015). The data included reinforce the previous findings they reference, but offer no new insights.\n\n1. Finally, a final experiment uses the cFos-tTA mouse to label neurons expressing cFos ('engram neurons ') following exploration of a novel environment to examine differences between Calbinin positive and negative populations. The authors claim a bias of transgenic cFos tagging, both in terms of ratio and expression intensity in the calbindin-positive pyramidal cells in mice exposed to novelty compared to mice remaining in the homecage. There are several flaws in this experiments. First it is underpowered, only including three experimental mice, and the comparison of calb+ cFos+/total cFos+ ratios between homecage and novelty exposed mice makes little sense. It is clear even in this limited sample (figure 4B) that the fraction of calb+ neurons/total cFos + is roughly 50% in the novelty group. Further it is unclear how to interpret the changes observed in GFP intensity in terms of endogenous cFos expression. Finally, these data do not fit the main theme of this technical study.\n\nOverall, while there is some clear technical advance the data generated do not provide much additional insight into hippocampal spatial coding or memory storage.\n\n2. While I appreciate the authors addressing the challenge of disambiguating direct light evoked spikes from spikes generated by presynaptic stimulation it is unclear why they moved to the DG/CA3 circuit. These data would have been stronger if generating in the same circuit (CA3 presynaptic expression of ChR2 instead of the DG/CA3 circuit). Is there a justification why this was not performed?\n\n3. Regarding the cFos labeling experiment- first a larger sample is required. Next. It is clear even in this limited sample (figure 4B) that the fraction of calb+ neurons/total cFos + is roughly 50% in the novelty group. The appropriate analysis should compare Calb+/cFos+ to calb-/cFos+ population adjusted for their relative abundance. Further it is unclear how to interpret the changes observed in GFP intensity in terms of endogenous cFos expression. Is there justification for this measure using this mouse line? This should be discussed.\n\nReviewer #3:\n\nIn this paper, the author bring the proof of concept that they can combine juxtacellular single units in freely moving mice with opto-tagging methods. They use this method to show that calbindin-positive neurons are weakly spatially modulated on an o-shaped linear track, but preferentially recruited into spatial memory engrams. The article is clear, concise and well written and is bringing the addition of opto-tagging to the very challenging method of juxtacellular recordings in freely moving animals. The discussion highlights future potential uses of this method. Overall, I do not have major criticisms, but I think the article would benefit from better highlighting the advantages of the technique: opto-tagging in regular extracellular recordings already allows for the recordings of genetically defined subgroups of cells, while \"simple\" juxtacellular labeling and reconstruction allows for post-hoc characterization of the recorded cellular type. What's the advantage of combining the 2 techniques?\n",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "72e52565-8fdf-485e-b497-19cc6436adcf",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C1",
+      "claim": "The juxtacellular recording and labeling technique was combined with optogenetics in freely moving mice to selectively target molecularly defined cell classes for in vivo single-cell recordings and morphological analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we combined the juxtacellular recording and labeling technique with optogenetics in freely moving mice. This allowed us to selectively target molecularly defined cell classes for in vivo single-cell recordings and morphological analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "9c579157-c6ba-40b0-94c8-0a306246c896",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C2",
+      "claim": "The strategy was validated in the CA1 region of the mouse hippocampus by restricting Channelrhodopsin expression to Calbindin-positive neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated this strategy in the CA1 region of the mouse hippocampus by restricting Channelrhodopsin expression to Calbindin-positive neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the validation approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "abf6394f-5f9f-4fbb-b225-21093814a124",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C3",
+      "claim": "Directly versus indirectly light-activated neurons could be readily distinguished based on the latencies of light-evoked spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Directly versus indirectly light-activated neurons could be readily distinguished based on the latencies of light-evoked spikes, with juxtacellular labeling and post hoc histological analysis providing 'ground-truth' validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that spike latencies can distinguish direct from indirect activation, validated by histology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "6d43b6da-caf6-4802-a544-a70c6571b0d6",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C5",
+      "claim": "Pyramidal cell identity is a key determinant for neuronal recruitment into the hippocampal spatial map.",
+      "claim_type": "EXPLICIT",
+      "source": "pointing to pyramidal cell identity as a key determinant for neuronal recruitment into the hippocampal spatial map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract interprets the findings to suggest cell identity determines spatial map recruitment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "8dd7b300-e13c-4527-8e3c-9dcd412092df",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C6",
+      "claim": "Neural circuits consist of a large variety of neuronal elements with diversity encompassing morphological, genetic, physiological, and functional properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the seminal work of Ram\u00f3n y Cajal it has become clear that neuronal circuits consist of a large variety of neuronal elements. Such diversity encompasses virtually all aspects of neuronal biology, including morphological, genetic, physiological, and functional properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws on established scientific knowledge about neuronal diversity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "5cdff271-70c3-43b2-b0ee-08fbb3a0f362",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C7",
+      "claim": "Major advances have been made toward the systematic classification of neuronal cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Over recent years, major advances have been made toward the systematic classification of neuronal cell types (Ascoli et al., 2008; Scala et al., 2020; Tasic et al., 2016; Zeisel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work on cell type classification.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "0d31fb47-8086-4518-a17e-7f6940d54b06",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C8",
+      "claim": "A combinatorial approach integrating morphological, molecular, electrophysiological, and functional properties is required for neuronal cell-type classification.",
+      "claim_type": "EXPLICIT",
+      "source": "From these research lines, it has become increasingly clear that a combinatorial approach \u2013 integrating morphological, molecular, electrophysiological, and functional properties \u2013 is required for neuronal cell-type classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the cited research on cell type classification.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "075d4729-b2e9-44fd-809b-470f14908b22",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C9",
+      "claim": "Current in vivo techniques for neural circuit analysis provide only limited information about the recorded neuronal elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Bridging this gap is a methodological challenge, since current in vivo techniques for neural circuit analysis \u2013 for example optogenetic tagging and Ca2+ imaging (Anikeeva et al., 2011; Ghosh et al., 2011; Lima et al., 2009) \u2013 provide only limited information about the recorded neuronal elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to work on optogenetic tagging and calcium imaging.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "0b4fd1a1-6b0e-4f22-b7e0-bb4ff341ccc5",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C10",
+      "claim": "Optogenetic tagging and calcium imaging methods largely rely upon the genetically restricted expression of Channelrhodopsin or calcium indicators via Cre driver lines.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods largely rely upon the genetically restricted expression of Channelrhodopsin (ChR2) or Ca2+ indicators \u2013 for example via Cre driver lines (Adesnik, 2018; Gafford and Ressler, 2016; Kravitz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations describing the use of Cre driver lines in optogenetics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "856d3654-c56a-48bc-8b17-b9ac15d08474",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C11",
+      "claim": "In optogenetic tagging, recordings are performed with a dual optical and electrical probe (optrode) and short-latency spikes elicited upon illumination provide information about the identity of the recorded units.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of 'optogenetic tagging', recordings are performed with a dual optical and electrical probe (referred to as 'optrode') and short-latency spikes elicited upon illumination provide information about the identity of the recorded units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard optogenetic tagging methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "f4d4961c-20dc-47af-9f6a-08e9ba328b8c",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C12",
+      "claim": "A limitation of optogenetic tagging is that cell types are defined by single features like genetic marker expression or projection target.",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation of this approach is that 'cell types' are defined by single features, like genetic marker expression or projection target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of the limitations of optogenetic tagging methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "c204e377-4691-4f1c-b86d-c988599f846b",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C13",
+      "claim": "Additional structural features like morphology, local and long-range axonal projections, and gene expression profiles are not accessible with optogenetic tagging and calcium imaging techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional structural features \u2013 like morphology, local and long-range axonal projections, and gene expression profiles \u2013 are not accessible with these techniques, thereby making it difficult to map neuronal activity (assessed in vivo) to the multidimensional cell-type classification schemes (being developed in vitro).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies specific limitations of current in vivo recording methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "8d286d37-34a4-4c25-89d3-97fc42497195",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C14",
+      "claim": "The juxtacellular method allows recording of single neurons in awake behaving animals, along with post hoc morphological analysis and molecular phenotyping of the recorded cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the juxtacellular method (Pinault, 1996; Pinault, 1994) allows recording of single neurons in awake behaving animals, along with post hoc morphological analysis and molecular phenotyping of the recorded cells (Averkin et al., 2016; Diamantaki et al., 2018; Katona et al., 2014; Lapray et al., 2012; Tang et al., 2014b; Valero et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations describing juxtacellular recording methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "0c36433e-3f3d-47eb-a5e9-276687c25332",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C15",
+      "claim": "A significant limitation of juxtacellular methods is that neurons are typically sampled by blind procedures, making it challenging to efficiently sample sparse neuronal elements within a given circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a significant limitation of these methods is that neurons are typically sampled by 'blind' procedures; hence, recordings cannot be targeted to a predefined cell class, which makes it extremely challenging \u2013 if not impossible \u2013 to efficiently sample sparse neuronal elements within a given circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a key limitation of traditional juxtacellular recording approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "7eede453-17ab-4639-9fba-4fd414c7cfcd",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C16",
+      "claim": "An approach combining single-cell identification techniques with optogenetic tagging has been developed to enable ChR2-assisted targeting of genetically defined cell classes.",
+      "claim_type": "EXPLICIT",
+      "source": "To circumvent this limitation, an elegant approach has been recently developed by combining single-cell identification techniques with optogenetic tagging (Katz et al., 2013; Mu\u00f1oz et al., 2014). This approach enabled ChR2-assisted targeting of genetically defined cell classes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work combining these techniques.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "bb757f76-ab14-4354-b0df-255841e03a9d",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C17",
+      "claim": "The combination of juxtacellular labeling and post hoc morphological/molecular analysis provides access to multidimensional neuronal features required for precise cell-type classification.",
+      "claim_type": "EXPLICIT",
+      "source": "in addition, by means of juxtacellular labeling and post hoc morphological/molecular analysis, it also provided access to the multidimensional neuronal features required for precise cell-type classification (Mu\u00f1oz et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to work demonstrating this capability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "df78191b-3881-4092-9f27-385f5699fccc",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C18",
+      "claim": "The applicability of the single-cell opto-tagging method is limited to mechanically stable preparations (e.g., anesthetized or head-restrained animals), preventing structure-function analysis in freely moving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In its current form however, the applicability of this method is limited to mechanically stable preparations (e.g., anesthetized or head-restrained animals), thereby preventing structure\u2013function analysis in freely moving animals, engaged in ethologically relevant behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a limitation of the existing opto-tagging method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "1c0da8fd-aa0c-4f61-9a1a-119709586a1b",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C19",
+      "claim": "The study aimed to bridge the gap by combining the single-cell opto-tagging method with juxtacellular procedures established in freely moving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we aimed at bridging this gap by combining the single-cell opto-tagging method (Katz et al., 2013; Mu\u00f1oz et al., 2014) with the juxtacellular procedures that we have recently established in freely moving mice (Diamantaki et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the main goal of the study with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "c24382e8-2ec8-4e7f-aea3-c9fe5bd5c78d",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C20",
+      "claim": "The approach enabled efficient targeting of juxtacellular recording and labeling to predefined, genetically tagged cell classes in awake animals engaged in natural exploratory behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach enabled us to efficiently target juxtacellular recording and labeling to predefined, genetically tagged cell classes in awake animals, engaged in natural exploratory behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capability achieved by the new method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "0a8763b8-c87a-4fb4-9735-f786ae013849",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C21",
+      "claim": "The activity of place cells in the CA1 region is thought to contribute to the encoding of spatial and episodic experiences and form the neural basis of memory engrams.",
+      "claim_type": "EXPLICIT",
+      "source": "During behavior, the activity of 'place cells' in this region (O'Keefe, 1976) is thought to contribute to the encoding of spatial and episodic experiences, and thus to form the neural basis of 'memory engrams' (Tonegawa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational work on place cells and memory engrams.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "2d46a8e3-691b-4546-921f-a478ecbea10f",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C22",
+      "claim": "Despite its relatively simple organization, the CA1 has a remarkably diverse cellular composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomically \u2013 despite its relatively simple organization \u2013 the CA1 has a remarkably diverse cellular composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about CA1 anatomy based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "bf22db31-81e2-4c1a-ae41-7257b7f843c7",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C23",
+      "claim": "In vitro and in vivo work has distinguished more than 20 different morphofunctional interneuronal classes in the CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro and in vivo work has distinguished more than 20 different morphofunctional interneuronal classes (Bezaire and Soltesz, 2013; Freund and Buzs\u00e1ki, 1998; Klausberger and Somogyi, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to work classifying CA1 interneurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "119d1e7f-0efd-4ff9-a8ee-2b4b7f590cbb",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C24",
+      "claim": "Recent transcriptomic studies point to a complex heterogeneity among pyramidal neurons, with at least 15 classes identified based on gene expression data.",
+      "claim_type": "EXPLICIT",
+      "source": "recent transcriptomic studies point to a seemingly complex heterogeneity among pyramidal neurons, with at least 15 classes being identified purely based on gene expression data (Yao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to transcriptomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "57cbd605-df99-4d7b-814a-615c3ec8bdef",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C25",
+      "claim": "It is unclear how distinct CA1 cell types contribute to neural activity during behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "At present it is unclear how these distinct cell types contribute to neural activity during behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge about CA1 cell types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "0dd9b171-4fb6-490b-9248-7fc99b4fc822",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C26",
+      "claim": "The anatomical location of CA1 neurons along the deep-superficial axis correlates with in vivo activity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a growing body of evidence indicates that the anatomical location of the neurons along this axis correlates with in vivo activity patterns (Cohen et al., 2017; Danielson et al., 2016; Fattahi et al., 2018; Geiller et al., 2017; Li et al., 2017; Mizuseki et al., 2011; Sharif et al., 2021; Valero et al., 2015; for review, see Preston-Ferrer and Burgalossi, 2018; Soltesz and Losonczy, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies showing this correlation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "99f31dc0-989f-4f7b-85af-986b0dc049dc",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C27",
+      "claim": "Calbindin (Calb1) expression is selective for superficially located pyramidal neurons in CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus took advantage of the expression of Calbindin (Calb1) \u2013 which is selective for superficially located pyramidal neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known anatomical feature of CA1 pyramidal neurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "476c73e3-d029-4c60-821f-52981a25c558",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C28",
+      "claim": "Calb1-negative pyramidal neurons were preferentially recruited into the place cell map while Calb1-positive pyramidal cells were only weakly spatially modulated.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, while animals explored a familiar environment, Calb1-negative pyramidal neurons were preferentially recruited into the place cell map, while Calb1-positive pyramidal cells were only weakly spatially modulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main experimental finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "e0aef27d-9c5b-449d-a21a-2e172338c8dc",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C29",
+      "claim": "The data are consistent with the emerging idea of an asymmetric recruitment of CA1 pyramidal cell types into the hippocampal representation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are thus consistent with the emerging idea of an asymmetric recruitment of CA1 pyramidal cells types into the hippocampal representation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interprets the findings in the context of existing hypotheses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "01316b43-f1d4-4a0c-a8ac-fdaf34981898",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C30",
+      "claim": "Injections of AAV-CAG-flex-GFP in Calb1cre mice resulted in selective labeling of superficial pyramidal cells along with scattered putative interneurons located primarily within the stratum oriens.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from the distribution of Calb1-positive neurons within the CA1 pyramidal layer, injections of AAV-CAG-flex-GFP in Calb1cre mice resulted in selective labeling of superficial pyramidal cells (Figure 1A) along with scattered, putative interneurons located primarily within the stratum oriens (not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the observed pattern of viral expression shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "8481e5d7-1643-49fa-9913-e0e9062e775e",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C31",
+      "claim": "A representative light-responsive pyramidal neuron was located in the superficial pyramidal layer and its apical dendrite displayed a proximal branching point.",
+      "claim_type": "EXPLICIT",
+      "source": "This neuron was located in the superficial pyramidal layer and its apical dendrite displayed a proximal branching point (see Figure 1C) \u2013 a characteristic morphological correlate of superficial CA1 pyramidal neurons (Bannister and Larkman, 1995; Li et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes morphological features of a recorded neuron shown in Figure 1C, with citations supporting the interpretation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "70fa977b-f5b5-4e24-a4e8-bc6baebc4275",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C32",
+      "claim": "A proximal branching point of the apical dendrite is a characteristic morphological correlate of superficial CA1 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "a proximal branching point (see Figure 1C) \u2013 a characteristic morphological correlate of superficial CA1 pyramidal neurons (Bannister and Larkman, 1995; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "e426a0c8-984a-41eb-ae24-031b54f23afd",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C33",
+      "claim": "A representative neuron was confirmed to be positive for the marker Calb1 as well as ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "This neuron was confirmed to be positive for the marker Calb1 as well as ChR2 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes immunohistochemical confirmation shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "6669909e-7335-4bca-a9ac-9218b964006b",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C34",
+      "claim": "Blue light pulses could reliably drive short-latency spikes (mean latency = 2.1 \u00b1 0.12 ms) in a representative Calb1-positive neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, blue light pulses could reliably drive short-latency spikes (mean latency = 2.1 \u00b1 0.12 ms; Figure 1D, E) thus confirming the Calb1-positive identity of the recorded cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports quantitative data on spike latencies shown in Figures 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "77cdf99d-d1a0-4ffa-9690-ab5c946f8d3c",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C35",
+      "claim": "19 neurons were recorded and labeled in anesthetized mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we recorded and labeled 19 neurons in anesthetized mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the sample size for the anesthetized dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "8a8f8a55-bea7-47d4-8aac-e59135056a7f",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C36",
+      "claim": "In all cases where short-latency spiking responses were observed (mean latency <4 ms), the neurons were confirmed to be Calb1-positive by immunohistochemical analysis (n = 10).",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases where short-latency spiking responses were observed (mean latency <4 ms; Figure 1F) the neurons were confirmed to be Calb1-positive by immunohistochemical analysis (n = 10), therefore validating our opto-tagging strategy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports validation data with reference to Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "076c36a4-845e-4d9c-8c89-f2be66641f1e",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C37",
+      "claim": "Seven additional nonresponsive neurons were juxtacellularly labeled and confirmed to be Calb1-negative pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven additional nonresponsive neurons were also juxtacellularly labeled and confirmed to be Calb1-negative pyramidal cells (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports additional validation data for nonresponsive neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "86e8731e-03f4-4f5a-8796-782d3cc519bf",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C38",
+      "claim": "Two light-responsive, narrow-waveform neurons were recorded that were positive for Calb1 immunoreactivity and classified as putative Calb1-positive interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In two cases, we recorded the activity of light-responsive, narrow-waveform neurons (spike peak-to-trough <0.4 ms, see Ding et al., 2020; Preston-Ferrer et al., 2016) which were positive for Calb1 immunoreactivity, and were thus classified as putative Calb1-positive interneurons (see Figure 1\u2014figure supplement 1A\u2013C; these neurons were not included in further analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes recordings of interneurons with reference to supplementary figure and citations for classification criteria.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "acaa2473-6ff6-473d-b148-d787c6848c18",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C39",
+      "claim": "One known challenge of optogenetic tagging experiments is to reliably distinguish directly versus indirectly excited neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "One known challenge of optogenetic tagging experiments is to reliably distinguish directly versus indirectly excited neurons (e.g., Beyeler et al., 2016; Zutshi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a known methodological challenge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "11f7dd73-1a4b-4324-b961-100986631108",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C40",
+      "claim": "The short latency of light-responsive neurons together with post hoc validation by juxtacellular labeling provide strong support for direct light activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The short latency of our light-responsive neurons (Figure 1F) together with post hoc validation by juxtacellular labeling (Figure 1C), provide strong support for direct light activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interprets the data from Figures 1C and 1F to support direct activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "27b829e4-19d0-4c2b-8805-f22e491dbd5e",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C41",
+      "claim": "AAV-CAG-ChR2-mCherry was injected in the CA3 of wild-type mice to obtain strong labeling of CA3 axon terminals (Schaffer collaterals) extending into the CA1 strata radiatum and oriens.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we injected AAV-CAG-ChR2-mCherry in the CA3 of wild-type mice (Figure 2A). By these means, we obtained strong labeling of CA3 axon terminals (Schaffer collaterals), extending into the CA1 strata radiatum and oriens (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental approach shown in Figures 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "3079941b-6265-4825-acf9-d819ab90e5d9",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C42",
+      "claim": "In a representative light-responsive CA1 pyramidal neuron, photostimulation at ~1.3 mW was sufficient for inducing suprathreshold spiking with lower efficiency and longer latencies (7.4 \u00b1 0.8 ms) compared to directly light-activated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this neuron, photostimulation at ~1.3 mW was sufficient for inducing suprathreshold spiking (Figure 2C), although with lower efficiency and longer latencies (7.4 \u00b1 0.8 ms) as compared to the directly light-activated neurons (see Figure 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports quantitative data on a representative neuron shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "edc92410-2f38-4271-ab06-dcc77c641bea",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C43",
+      "claim": "The response latencies of indirectly light-activated CA1 neurons were significantly longer than those of directly light-activated CA1 Calb1-positive cells (direct: 2.7 \u00b1 0.3 ms, n = 10; indirect: 7.0 \u00b1 1.8 ms, n = 11; p = 0.0010).",
+      "claim_type": "EXPLICIT",
+      "source": "At the population level, the response latencies of indirectly light-activated CA1 neurons were significantly longer than those of directly light-activated CA1 Calb1-positive cells (direct light activation, mean latency = 2.7 \u00b1 0.3 ms, n = 10; indirect light activation, mean latency = 7.0 \u00b1 1.8 ms, n = 11; p = 0.0010; Figure 2E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports statistical comparison of latencies with reference to Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "d52a4c8c-2696-4d5b-b5be-7041d7ed75ff",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C44",
+      "claim": "The longer response latencies of indirectly light-activated CA1 neurons further validate the latency-based criteria for cell-type classification.",
+      "claim_type": "EXPLICIT",
+      "source": "thereby further validating our latency-based criteria for cell-type classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interprets the latency data as validation of the classification method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "35caa8ac-b792-43fb-ab22-a58eeb894639",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C45",
+      "claim": "The hippocampal mossy fiber synapse is among the strongest and most reliable connections in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we performed a subset of experiments on the hippocampal mossy fiber synapse, which is among the strongest and most reliable connections in the nervous system (Henze et al., 2002; Neubrandt et al., 2018; Vyleta et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies characterizing mossy fiber synapses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "a40cbcac-6394-4966-bc9f-c24c87888ce0",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C46",
+      "claim": "ChR2 was selectively expressed in dentate gyrus granule cells by injecting AAV-hSyn1-flex-ChR2-mCherry (or AAV-hSyn1-flex-oChIEF-TdTomato) in the dentate gyrus of Calb1cre mice, resulting in strong labeling of presynaptic mossy fiber terminals extending into the CA3 field.",
+      "claim_type": "EXPLICIT",
+      "source": "We selectively expressed ChR2 in dentate gyrus granule cells by injecting AAV-hSyn1-flex-ChR2-mCherry (or AAV-hSyn1-flex-oChIEF-TdTomato) in the dentate gyrus of Calb1cre mice (Figure 2F). By these means, we obtained strong labeling of presynaptic mossy fibers terminals, extending into the CA3 field (Figure 2F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental approach shown in Figures 2F and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "2da2bd80-cff7-4b79-82ba-f77b318fb76f",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C47",
+      "claim": "In a nonresponsive CA3 neuron, no spiking activity was observed upon light illumination, but a prominent light-induced facilitation of local field potential amplitude was observed, consistent with facilitation of neurotransmitter release at mossy terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first neuron, no spiking activity was observed upon light illumination; however, a prominent light-induced facilitation of local field potential amplitude was observed \u2013 consistent with the known facilitation of neurotransmitter release at mossy terminal (Capogna, 1998; Vyleta et al., 2016; Zucca et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes observations from a representative neuron with citations supporting the interpretation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "42559f76-dfed-49f2-a518-6cbe0223b479",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C48",
+      "claim": "In a responsive CA3 neuron, photostimulation was sufficient for inducing suprathreshold spiking whose probability increased as a function of stimulus number, consistent with presynaptic facilitation of mossy inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second neuron, photostimulation was sufficient for inducing suprathreshold spiking (Figure 2H), whose probability increased as a function of stimulus number, consistent with presynaptic facilitation of mossy inputs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes observations from a representative neuron shown in Figure 2H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "7546bea4-8937-4f43-9e93-79463bb667aa",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C49",
+      "claim": "The response latencies of synaptically activated CA3 neurons (mean latency = 8.1 \u00b1 2.4 ms, n = 7) were significantly longer than that of directly light-activated CA1 Calb1-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the response latencies of synaptically activated CA3 neurons (mean latency = 8.1 \u00b1 2.4 ms, n = 7) were significantly longer than that of directly light-activated CA1 Calb1-positive cells (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports quantitative comparison of latencies with reference to Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "4f3cd6af-f80d-4466-a45a-d90dd20f77ec",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C50",
+      "claim": "The dataset shows the technical feasibility of combining the opto-juxtacellular approach for single-cell recording, labeling, and presynaptic input manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, this dataset shows the technical feasibility of combining the opto-juxtacellular approach for single-cell recording, labeling, and presynaptic input manipulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the technical validation achieved in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "64910686-99df-4a0f-8ba0-426864661d0e",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C51",
+      "claim": "The longer spike latencies in indirectly activated neurons compared to directly activated ones further corroborate the validity of the latency-based opto-tagging approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the longer spike latencies in indirectly activated neurons compared to the directly activated ones (Figure 2J) further corroborate the validity of our latency-based opto-tagging approach.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interprets the latency data from Figure 2J as validation of the method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "e1280213-564e-4d2e-b5e0-ba96f9f3c7a2",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C52",
+      "claim": "Animals were implanted with miniaturized components and a 50-\u03bcm-core optic fiber was inserted within the glass electrode for recordings in freely moving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals were implanted with miniaturized components (see Figure 3A; Diamantaki et al., 2018) and a 50-\u03bcm-core optic fiber was inserted within the glass electrode.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the recording configuration shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "874a4fd6-2068-400e-88be-24c5e8706344",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C53",
+      "claim": "The use of a reversible fiber fixation strategy together with a mechanical micropositioning system allowed multiple recording/opto-tagging trials within individual animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of a reversible fiber fixation strategy, together with a mechanical micropositioning system (see Figure 3\u2014figure supplement 1; details in Materials and Methods) allowed us to perform multiple recording/opto-tagging trials within individual animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a technical feature enabling repeated recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "5301af32-4627-49ae-a6c9-43cd2bbef5d7",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C54",
+      "claim": "All neurons included in the study displayed low firing rates (<10 Hz; average firing rate, 2.16 \u00b1 2.06 Hz; n = 54) and often fired complex spikes (average burst index, 0.28 \u00b1 0.18, n = 45).",
+      "claim_type": "EXPLICIT",
+      "source": "All neurons included in the present study displayed low firing rates (<10 Hz; average firing rate, 2.16 \u00b1 2.06 Hz; n = 54) and often fired complex spikes (average burst index, 0.28 \u00b1 0.18, n = 45) \u2013 features classically associated with principal cell identity (O'Keefe and Dostrovsky, 1971; Ranck, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports quantitative characterization of recorded neurons with citations supporting the interpretation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "8d89076c-0609-4f42-a0f2-e05723e92774",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C55",
+      "claim": "Low firing rates and complex spike firing are features classically associated with principal cell identity.",
+      "claim_type": "EXPLICIT",
+      "source": "features classically associated with principal cell identity (O'Keefe and Dostrovsky, 1971; Ranck, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to classic studies on hippocampal neurons.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "44fd7e57-e597-464e-b81b-a19352ee4e63",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C56",
+      "claim": "All histologically identified neurons were classified as pyramidal neurons, confirming the electrophysiological classification criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "All histologically identified neurons were classified as pyramidal neurons (see Materials and Methods), thus further confirming our electrophysiological classification criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports validation of classification criteria through histology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "569e97b7-0e36-4b14-a4c1-64fa5648cbba",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C57",
+      "claim": "Neurons recorded in behaving mice were classified as Calb1-positive if short-latency spikes (<4 ms) were reliably evoked by the light pulse (n = 15).",
+      "claim_type": "EXPLICIT",
+      "source": "As in the anesthetized dataset (Figure 1), neurons recorded in behaving mice were classified as Calb1-positive if short-latency spikes (<4 ms) were reliably evoked by the light pulse (n = 15; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the classification criteria applied to behaving animal data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "2ab14b6b-6e7a-4290-b1f3-fc0b37a1c0d0",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C58",
+      "claim": "In a subset of recordings, juxtacellular labeling was performed and the cytochemical identity of the recorded neuron was assessed via Calb1 immunoreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In a subset of recordings, juxtacellular labeling was performed and the cytochemical identity of the recorded neuron was assessed via Calb1 immunoreactivity (Figure 3C\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes validation procedures shown in Figures 3C-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "ae45b77f-bdd8-4b47-8f0a-718b769c5fd5",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C59",
+      "claim": "Neurons were classified as Calb1-negative neurons (n = 39) if they did not respond to the light stimulus or were located in the deep pyramidal layer and were negative for Calb1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons were classified as Calb1-negative neurons (n = 39) if they did not respond to the light stimulus or were located in the deep pyramidal layer and were negative for Calb1 expression (see Materials and Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the classification criteria for Calb1-negative neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "ad205f34-cd85-4880-a3cc-1bedfd611f46",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C60",
+      "claim": "Two light-responsive, putative Calb1-positive interneurons were recorded that fired at high rates during exploration (>10 Hz average firing rates).",
+      "claim_type": "EXPLICIT",
+      "source": "In two cases, we recorded from light-responsive, putative Calb1-positive interneurons, which fired at high rates during exploration (>10 Hz average firing rates; see Figure 1\u2014figure supplement 1D\u2013I; these neurons were not included in further analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes recordings of interneurons shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "89d4e0f1-fad4-467c-ad88-41727ea856e1",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C61",
+      "claim": "During spatial exploration, Calb1-positive and Calb1-negative pyramidal cells displayed similar average firing rates (Calb1-positive: 2.17 \u00b1 2.02 Hz, n = 15; Calb1-negative: 2.15 \u00b1 2.10 Hz, n = 39; p = 0.86).",
+      "claim_type": "EXPLICIT",
+      "source": "During spatial exploration, Calb1-positive and Calb1-negative pyramidal cells displayed similar average firing rates (Calb1-positive, 2.17 \u00b1 2.02 Hz, n = 15; Calb1-negative, 2.15 \u00b1 2.10 Hz, n = 39; p = 0.86)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical comparison of firing rates between cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "0a9a92fc-4750-45b2-bf0b-bfcb72162902",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C62",
+      "claim": "Calb1-positive and Calb1-negative pyramidal cells displayed similar tendency to fire spike bursts (Calb1-positive: 0.29 \u00b1 0.21, n = 13; Calb1-negative: 0.29 \u00b1 0.18, n = 32; p = 0.97).",
+      "claim_type": "EXPLICIT",
+      "source": "and tendency to fire spike bursts ('burst index'; Calb1-positive, 0.29 \u00b1 0.21, n = 13; Calb1-negative, 0.29 \u00b1 0.18, n = 32; p = 0.97).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical comparison of burst indices between cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "d9805779-05d1-4de3-8628-90db6b2e00f1",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C63",
+      "claim": "Calb1-positive and Calb1-negative pyramidal cells differed remarkably in the degree of spatial modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these two cell types differed remarkably in the degree of spatial modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the main finding about spatial modulation differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "d19de21b-2bdf-482e-9bc4-7e53c5741bc0",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C64",
+      "claim": "The large majority of Calb1-negative neurons displayed spatially localized firing patterns that were homogeneously distributed over the available space.",
+      "claim_type": "EXPLICIT",
+      "source": "While the large majority of Calb1-negative neurons displayed spatially localized firing patterns, which were homogeneously distributed over the available space (Figure 3I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the spatial firing patterns shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "10c5222a-ad99-4432-a9eb-60983ba7ec60",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C65",
+      "claim": "The spiking activity of Calb1-positive neurons was less spatially modulated.",
+      "claim_type": "EXPLICIT",
+      "source": "the spiking activity of Calb1-positive neurons was less spatially modulated (Figure 3J)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the spatial firing patterns shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "967ad3f0-5fa5-46ff-b381-2b122a90cf1d",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C66",
+      "claim": "Calb1-positive neurons conveyed significantly less spatial information (0.65 \u00b1 0.35 bits/spike, n = 12) than Calb1-negative neurons (1.56 \u00b1 0.79 bits/spike, n = 26; p = 0.0003).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that Calb1-positive neurons conveyed significantly less spatial information (Calb1-positive, 0.65 \u00b1 0.35 bits/spike, n = 12; Calb1-negative, 1.56 \u00b1 0.79 bits/spike, n = 26; p = 0.0003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical comparison of spatial information content shown in Figure 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "f747916b-836c-4d96-b9be-ab739f1a3251",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C67",
+      "claim": "Calb1-positive neurons displayed a higher sparsity index (0.53 \u00b1 0.15, n = 12) than Calb1-negative neurons (0.31 \u00b1 0.17, n = 26; p = 0.0003), indicating a more diffuse firing pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "and displayed a higher sparsity index (Calb1-positive, 0.53 \u00b1 0.15, n = 12; Calb1-negative, 0.31 \u00b1 0.17, n = 26; p = 0.0003) (Figure 3K), indicating a more diffuse firing pattern compared to Calb1-negative cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports statistical comparison of sparsity shown in Figure 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "5cda81b5-5f17-4420-ad11-7b2f4dd1e4fc",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C68",
+      "claim": "Spatial firing in Calb1-positive neurons was significantly less stable than in Calb1-negative cells (mean correlation coefficient, Calb1-positive: 0.33 \u00b1 0.35, n = 12; Calb1-negative: 0.68 \u00b1 0.31, n = 26; p = 0.0019).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in line with their weaker spatial tuning (Figure 3K), spatial firing in Calb1-positive neurons was significantly less stable than in Calb1-negative cells (mean correlation coefficient, Calb1-positive, 0.33 \u00b1 0.35; n = 12; Calb1-negative, 0.68 \u00b1 0.31; n = 26; p = 0.0019; see Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports statistical comparison of spatial stability shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "bfeb014c-9b03-48f0-9a20-f63e9052301b",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C69",
+      "claim": "The findings are in line with previous observations and indicate that in the dorsal CA1, place cells are preferentially contributed by deep (Calb1-negative) pyramidal neurons, while Calb1-positive neurons are only weakly spatially modulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these findings are in line with previous observations (Danielson et al., 2016; Geiller et al., 2017; Mizuseki et al., 2011; Oliva et al., 2016; Sharif et al., 2021) and indicate that in the dorsal CA1, place cells are preferentially contributed by deep (Calb1-negative) pyramidal neurons, while Calb1-positive neurons are only weakly spatially modulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interprets the findings in the context of previous work with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "33bc73b6-541e-4408-81a5-084ba108fdcb",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C70",
+      "claim": "The combination of extracellular recordings with optogenetic tagging has become a gold-standard approach for neural circuit dissection in freely behaving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In freely behaving animals, the combination of extracellular recordings with optogenetic tagging (e.g., Anikeeva et al., 2011; Lima et al., 2009) has become a gold-standard approach for neural circuit dissection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the current state of the field with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "66587f64-dc0e-4db5-9f65-02d183db1004",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C71",
+      "claim": "Cell-type identification in opto-tagging is indirect since it is inferred from the spiking responses to the light stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "First, cell-type identification is indirect, since it is inferred from the spiking responses to the light stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a limitation of optogenetic tagging methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "8112d1fb-31df-4346-956a-0af794c033b5",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C72",
+      "claim": "Distinguishing directly versus indirectly light-activated neurons is often far from trivial, especially within networks with high recurrent connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "While a number of criteria have been proposed for distinguishing directly versus indirectly light-activated neurons, this distinction is often far from trivial, especially within networks with high recurrent connectivity (Beyeler et al., 2016; Roux et al., 2014; Zutshi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a challenge in optogenetic tagging with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "e8832e12-2f44-441b-91ea-4ee87af28de7",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C73",
+      "claim": "The reliability of optogenetic identification is complicated by the challenge of spike sorting during periods of highly synchronous activity, since the superimposition of multiple co-occurring spike waveforms can make the detection of individual spikes difficult and unreliable.",
+      "claim_type": "EXPLICIT",
+      "source": "The reliability of optogenetic identification is further complicated by the challenge of 'spike sorting' during periods of highly synchronous activity \u2013 occurring for example during photostimulation \u2013 since the superimposition of multiple, co-occurring spike waveforms can make the detection of individual spikes difficult and unreliable (Roux et al., 2014; Stark et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a technical challenge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "6af01c9a-2175-4c0a-8829-10ad37398d43",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C74",
+      "claim": "Obtaining ground truth validation of opto-tagging procedures is particularly challenging, especially in freely behaving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "While a number of strategies have been proposed for alleviating these problems (Roux et al., 2014; Royer et al., 2010; Stark et al., 2012; Wu et al., 2015), obtaining 'ground truth' validation of opto-tagging procedures is particularly challenging, especially in freely behaving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a limitation of current methods with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "16a30ba5-05a5-4ccf-a37e-31ec16c67aac",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C75",
+      "claim": "Opto-tagging approaches do not provide access to structural neuronal features like morphology and molecular expression patterns which are necessary for unequivocal cell-type identification.",
+      "claim_type": "EXPLICIT",
+      "source": "A second important limitation is that opto-tagging approaches do not provide access to structural neuronal features \u2013 like for example morphology and molecular expression patterns \u2013 which are necessary for unequivocal cell-type identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a key limitation of optogenetic tagging methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "e8f7df66-7c2b-45f4-9907-11ecab1b7bb0",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C76",
+      "claim": "The combined opto-juxtacellular method enables targeting of juxtacellular recordings to a genetically predefined cell class, representing a significant advance over current juxtacellular protocols where individual neurons are blindly sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "This combination of techniques enables targeting of juxtacellular recordings to a genetically predefined cell class; hence, it represents a significant advance over current juxtacellular protocols, where individual neurons are blindly sampled within a target structure (Averkin et al., 2016; Diamantaki et al., 2018; Katona et al., 2014; Lapray et al., 2012; Tang et al., 2014a; Valero et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantage of the new method with citations to previous approaches.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "9091980a-f935-4f81-b59c-62b1f0143a79",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C77",
+      "claim": "The juxtacellular opto-tagging approach could facilitate the targeting of sparse neuronal populations like different subtypes of GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This evidence indicates that our juxtacellular opto-tagging approach could facilitate the targeting of sparse neuronal populations \u2013 like different subtypes of GABAergic neurons (Bartos et al., 2011; Bartos and Elgueta, 2012; Klausberger, 2009; Klausberger and Somogyi, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This speculates on potential applications with supporting citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "c8432757-5ba2-4558-9be7-2e58cd0b25fc",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C78",
+      "claim": "Blind sampling of sparse neuronal populations in freely moving animals along with post hoc immunohistochemical phenotyping is known to be very challenging and labor intensive.",
+      "claim_type": "EXPLICIT",
+      "source": "whose blind sampling in freely moving animals, along with post hoc immunohistochemical phenotyping, is known to be very challenging and labor intensive (Averkin et al., 2016; Katona et al., 2020; Lagler et al., 2016; Lapray et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies demonstrating these challenges.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "f4c690c5-6260-4d12-b00e-f8c664fc23b9",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C79",
+      "claim": "The combined opto-juxtacellular method enables direct validation of opto-tagging criteria since single ChR2-responsive or nonresponsive neurons can be recorded and labeled by juxtacellular procedures, enabling post hoc verification of ChR2 and/or marker expression.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it enables direct validation of opto-tagging criteria, in that single ChR2-responsive (or nonresponsive) neurons can not only be recorded, but also labeled by juxtacellular procedures, thereby enabling post hoc verification of ChR2 and/or marker expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the new method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "4306fc9a-7e2d-40ce-ba8f-16b9bdf1d07f",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C80",
+      "claim": "The large amplitude juxtacellular spikes (typically >1\u20132 mV peak-to-peak amplitudes) allow unequivocal spike identification, providing ground truth spiking signals that are not dependent on the performance of spike sorting algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the large amplitude juxtacellular spikes (typically >1\u20132 mV peak-to-peak amplitudes, Herfst et al., 2012; Tang et al., 2014a) allow unequivocal spike identification, thereby providing 'ground truth' spiking signals that are not dependent on the performance of spike sorting algorithms, especially during photostimulation periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of juxtacellular recordings with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "45215cbb-092b-43dd-9b04-150dbc4a05fb",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C81",
+      "claim": "Post hoc morphological and molecular expression analysis of recorded/labeled cells provides access to structural features that are typically not accessible with alternative techniques, enabling unequivocal cell-type classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, post hoc morphological and molecular expression analysis of the recorded/labeled cells provides access to structural features that are typically not accessible with alternative techniques, thereby enabling unequivocal cell-type classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the juxtacellular labeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "1b9ffe7d-dea3-41f3-9d4c-177c046e038e",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C82",
+      "claim": "The juxtacellular recording/labeling procedures can be used in combination with presynaptic input manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our data also provide proof-of-principle evidence that our juxtacellular recording/labeling procedures can also be used in combination with presynaptic input manipulations (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a capability demonstrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "17286e19-5d81-4fc6-b51c-4061b557ee7a",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C83",
+      "claim": "The approach can be particularly useful for mapping synaptic inputs onto identified cell types like distinct subtypes of CA2 and CA3 pyramidal neurons or dentate granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach can be particularly useful for mapping synaptic inputs onto identified cell types, like for example the distinct subtypes of CA2 and CA3 pyramidal neurons (Helton et al., 2019; Hunt et al., 2018; Marissal et al., 2012; Raus Balind et al., 2019) or dentate granule cells (Diamantaki et al., 2016; Erwin et al., 2020; Zhang et al., 2020) which have been classified based on dendritic morphological criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This speculates on potential applications with supporting citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "5dd6b028-7f5e-4171-b7fe-e1f21a8ee514",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C84",
+      "claim": "Future combination with single-cell stimulation will allow pairing between pre- and postsynaptic activity, enabling the study of single-cell plasticity mechanisms in the intact system during natural behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that the future combination with single-cell stimulation (Diamantaki et al., 2018; Diamantaki et al., 2016), will allow pairing between pre- and postsynaptic activity (Nicoll and Schmitz, 2005; Salin et al., 1996; Toth et al., 2000), thus enabling the study of single-cell plasticity mechanisms, so far limited to simplified preparations, to the intact system during natural behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This speculates on future applications with supporting citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "1d189ec0-f965-4b97-901e-fb6a2faabb65",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C85",
+      "claim": "The method remains laborious and of limited output compared to alternative techniques and should not be seen as high throughput but rather as complementary to existing in vivo recording methods.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is technically possible to perform multiple opto-juxtacellular recordings within individual experiments (Figure 3\u2014figure supplement 1), our method still remains laborious and of limited output compared to alternative techniques (e.g., extracellular recordings). Hence, it should not be seen as high throughput, but rather as complementary to existing in vivo recording methods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This acknowledges limitations of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "6fff42cd-c51f-46ec-83b5-7f5f4efd7b54",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C86",
+      "claim": "Opto-juxtacellular datasets could provide a valuable complement to current cell-type classification approaches by offering the possibility of building a classifier which could be used for assigning cell identity to blind extracellular units.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that opto-juxtacellular datasets \u2013 although limited \u2013 could still provide a valuable complement to current cell-type classification approaches, for example by offering the possibility of building a classifier, which could then be used for assigning cell identity to 'blind' extracellular units (as in e.g. GoodSmith et al., 2017; Tang et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This speculates on potential applications with supporting citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "21ad41d0-3b67-49d2-8542-068a313dbc1c",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C87",
+      "claim": "Recent in vitro and in vivo work has shown that the CA1 pyramidal layer can be subdivided into two sublayers (superficial and deep) according to morphological, molecular, and electrophysiological criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent in vitro and in vivo work has shown that the CA1 pyramidal layer can be subdivided into two sublayers (superficial and deep) according to morphological, molecular, and electrophysiological criteria (Baimbridge and Miller, 1982; Slomianka et al., 2011; Preston-Ferrer and Burgalossi, 2018; Soltesz and Losonczy, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on CA1 sublayers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "87c53188-bcfd-485b-a695-8dd68f32a4b6",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C88",
+      "claim": "Deep and superficial pyramidal cells have been shown to display distinct in vivo activity patterns relative to local field potential oscillations and distinct tendencies to express place fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep and superficial pyramidal cells have been shown to display distinct in vivo activity patterns relative to local field potential oscillations (Navas-Olive et al., 2020; Valero et al., 2015) and distinct tendencies to express place fields (Danielson et al., 2016; Geiller et al., 2017; Mizuseki et al., 2011; Navas-Olive et al., 2020; Sharif et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies on CA1 pyramidal cell activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "2651e9c8-8340-49f2-90d2-f2203f276cad",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C89",
+      "claim": "Most previous in vivo observations on deep-superficial differences were based upon the anatomical assignment of extracellular recording locations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most of the previous in vivo observations were based upon the anatomical assignment of extracellular recording locations (but see Valero et al., 2015; Navas-Olive et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of previous studies with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "0942f747-c174-459a-af8c-84587edd0b4e",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C90",
+      "claim": "The study validated and extended previous observations by mapping functional deep-superficial gradients onto the underlying neuronal elements through recording, opto-tagging, and labeling single CA1 pyramidal neurons in freely moving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "As a testing ground for our technique, we recorded, opto-tagged, and labeled single CA1 pyramidal neurons in freely moving mice \u2013 thus validating and extending previous observations by mapping functional deep-superficial gradients onto the underlying neuronal elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the study extends previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "e91fc6aa-2ece-4a05-9bf5-c3542af63958",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C91",
+      "claim": "Inputs from the medial and lateral entorhinal cortices are known to preferentially target deep and superficial CA1 pyramidal cells, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, inputs from the medial and lateral entorhinal cortices are known to preferentially target deep and superficial CA1 pyramidal cells, respectively (Li et al., 2017; Masurkar et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "cd9fd773-780b-4eb6-a6b3-dde7aa5e1dcb",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C92",
+      "claim": "The weaker spatial selectivity of upstream lateral entorhinal inputs might account for the weaker spatial tuning of Calb1-positive CA1 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "hence, the weaker spatial selectivity of upstream lateral entorhinal inputs (Hargreaves et al., 2005) might account for the weaker spatial tuning of Calb1-positive CA1 pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This proposes a mechanistic explanation with supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "3227d4a6-90c5-4a1d-9e53-08f48e6ef483",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C93",
+      "claim": "In Calb1cre mice injected within the CA1 pyramidal layer, ChR2 was almost exclusively expressed in Calb1-positive neurons (0 out of 272 neurons were ChR2-positive/Calb1-negative), confirming the specificity of the Calb1cre driver line.",
+      "claim_type": "EXPLICIT",
+      "source": "In Calb1cre mice injected within the CA1 pyramidal layer, ChR2 was almost exclusively expressed in Calb1-positive neurons (0 out of 272 neurons were ChR2-positive/Calb1-negative), thus confirming the specificity of the Calb1cre driver line (see also Daigle et al., 2018; Nigro et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports validation data for the Cre driver line with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "b22e9b95-0ae8-4ffd-b352-dbbeae09172d",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C94",
+      "claim": "Viral titers and injection volumes were optimized to obtain high infection efficiency and ChR2 expression levels (~95.8% of Calb1-positive neurons were also ChR2-positive; 261/272 neurons), minimizing the occurrence of false negatives in opto-tagging experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral titers and injection volumes were optimized to obtain high infection efficiency and ChR2 expression levels (~95.8% of Calb1-positive neurons were also ChR2-positive; 261/272 neurons), thereby minimizing the occurrence of false negatives in our opto-tagging experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports optimization of experimental parameters with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "36bdc7ba-a35e-43cc-bebf-7c991f72f74d",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C95",
+      "claim": "For directly light-activated CA1 neurons, low-power intensities were sufficient for eliciting reliable spiking (typically <1 mW; range 0.1\u20131 mW).",
+      "claim_type": "EXPLICIT",
+      "source": "For directly light-activated CA1 neurons, low-power intensities were sufficient for eliciting reliable spiking (typically <1 mW; range 0.1\u20131 mW).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the light power requirements for direct activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "e1f8eec1-34c8-4ad6-936e-b0e4e7c395ae",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C96",
+      "claim": "In the datasets of synaptically activated CA1 and CA3 neurons, higher light power (>1 mW; range 1\u20132.5 mW) was necessary for evoking spiking from light-responsive neurons, consistent with the notion that higher stimulus intensities are needed for synaptic activation compared to direct light activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the datasets of synaptically activated CA1 and CA3 neurons (Figure 2), higher light power (>1 mW; range 1\u20132.5 mW) was necessary for evoking spiking from light-responsive neurons \u2212 consistent with the notion that higher stimulus intensities are needed for synaptic activation, as compared to direct light activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports light power requirements for synaptic activation with interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "e94cd309-f729-4e26-9684-b29f5544be29",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C97",
+      "claim": "In anesthetized animals, 5-ms light pulses largely evoked single spikes in responsive CA1 neurons (mean number of evoked spikes per pulse: 1.02 \u00b1 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, while in anesthetized animals, 5-ms light pulses largely evoked single spikes in the responsive CA1 neurons (mean number of evoked spikes per pulse, 1.02 \u00b1 0.04)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports quantitative data on light-evoked responses in anesthetized animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "9a1a865e-f211-4425-93f2-b4d10510197c",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C98",
+      "claim": "During awake behavior, 5-ms light pulses reliably evoked burst activity (i.e., 2\u20133 spikes at Interspike Intervals <6 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "during awake behavior, the same stimulation protocol reliably evoked burst activity (i.e., 2\u20133 spikes at Interspike Intervals (ISI) <6 ms; not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports observations on light-evoked responses in awake animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "f34abf15-ed7e-4a8e-80e0-f147ddbb55d2",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C99",
+      "claim": "In order to elicit minimal light-evoked responses in the awake state, pulse duration was reduced to 1 ms (1 Hz frequency, 10\u201350 total pulses; mean number of evoked spikes per pulse: 1.56 \u00b1 0.87).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to elicit minimal light-evoked responses in the awake state, pulse duration was thus reduced to 1 ms (1 Hz frequency, 10\u201350 total pulses; mean number of evoked spikes per pulse, 1.56 \u00b1 0.87).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the adjusted stimulation protocol for awake recordings with quantitative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "11164f79-d2bc-4d70-814b-08029a2d4407",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C100",
+      "claim": "In a subset of anesthetized recordings (n = 4), putative Calb1-positive neurons could be reliably driven to spike with a 100-\u03bcm-core optic fiber coupled to a 470-nm LED light source.",
+      "claim_type": "EXPLICIT",
+      "source": "In a subset of anesthetized recordings (n = 4), putative Calb1-positive neurons could also be reliably driven to spike with a 100-\u03bcm-core optic fiber, coupled to a 470-nm LED light source (M470F3, ThorLab).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports validation of the method with an alternative light source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "22e46f19-b063-46df-85ae-03d1d71f7699",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C101",
+      "claim": "Spike latencies with LED stimulation tended to be slightly longer than but not significantly different from spike latencies assessed with laser stimulation (laser: 2.45 \u00b1 0.43 ms; LED: 2.96 \u00b1 0.30 ms; p = 0.11).",
+      "claim_type": "EXPLICIT",
+      "source": "Spike latencies tended to be slightly longer than \u2013 but not significantly different from \u2013 spike latencies assessed with laser stimulation (mean latencies; laser: 2.45 \u00b1 0.43 ms; LED: 2.96 \u00b1 0.30 ms; p = 0.11); hence, these recordings were pooled together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports statistical comparison of latencies between light sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "c44d2ebd-0094-455b-aaeb-b7d6b48ea459",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C102",
+      "claim": "A cell was defined as directly light activated (i.e., putative Calb1-positive) if short-latency spikes were evoked by the light stimulus (mean latency <4 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "A cell was defined as directly light activated (i.e., putative Calb1-positive) if short-latency spikes were evoked by the light stimulus (mean latency <4 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines the classification criterion used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "f37c4f1b-3d62-4de4-9f05-a99d306e1dd3",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C103",
+      "claim": "ChR2-expressing neurons could be reliably entrained by the light stimuli up to 40 Hz frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "ChR2-expressing neurons could be reliably entrained by the light stimuli up to 40 Hz frequencies (e.g., see Figure 1C, D and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the frequency response characteristics shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "0d7d9ede-fbb5-45bd-ab8e-191940d94d50",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C104",
+      "claim": "The dataset of directly light-activated CA1 recordings in anesthetized animals consisted of 10 Calb1-positive and 7 Calb1-negative pyramidal neurons from six mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset of directly light-activated CA1 recordings in anesthetized animals (Figure 1; six mice) consisted of 10 Calb1-positive and 7 Calb1-negative pyramidal neurons (two additional recordings from putative Calb1-positive interneurons were excluded from further analysis, Figure 1\u2014figure supplement 1A\u2013C ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the composition of the anesthetized dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "07813820-c189-4f02-8747-f7011ef62057",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C105",
+      "claim": "The datasets of indirect (synaptic) activation consisted of 7 light-activated CA3 cells from 4 mice and 11 light-activated CA1 cells from 3 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The datasets of indirect (synaptic) activation consisted of 7 light-activated CA3 cells (4 mice) and 11 light-activated CA1 cells (3 mice) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the composition of the synaptic activation datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "a269369b-bf28-433e-89f7-30ac5ff05e88",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C106",
+      "claim": "The dataset of CA1 recordings in freely moving animals (54 recordings) consisted of 10 recordings from histologically identified neurons and 44 recordings from opto-tagged neurons from 10 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset of CA1 recordings in freely moving animals (54 recordings) consisted of 10 recordings from histologically identified neurons (3 of which were reported in a previous study, Diamantaki et al., 2018) and 44 recordings from opto-tagged neurons (10 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the composition of the freely moving dataset with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "5799ea67-0cbf-4734-afdb-7ddb31eac943",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C107",
+      "claim": "Out of 10 histologically identified neurons in freely moving mice, 2 neurons were classified as Calb1-positive and 8 neurons were classified as Calb1-negative.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the 10 histologically identified neurons, 2 neurons were classified as Calb1-positive and 8 neurons were classified as Calb1-negative (by Calbindin1 immunoreactivity and/or their relative position within the pyramidal layer, i.e., deep versus superficial).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports the classification of histologically identified neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "871a0c13-74a4-43d2-a4a8-684e7b4e4f5a",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C108",
+      "claim": "Of the 44 opto-tagged recordings in freely moving mice, 13 were classified as putative Calb1-positive and 31 as putative Calb1-negative neurons based on spiking probability and spike latency to the light stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 44 opto-tagged recordings, 13 were classified as putative Calb1-positive and 31 as putative Calb1-negative neurons, based on spiking probability and spike latency to the light stimulus (see Figure 3B and main text).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the classification of opto-tagged neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "42f681f5-79e7-4cce-a28d-3ae6c4e37206",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C109",
+      "claim": "For the analysis of spatial firing patterns, 38 of 54 recordings met the inclusion criteria (>50 spikes and \u22653 laps), consisting of 12 putative Calb1-positive and 26 putative Calb1-negative neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For the analysis of spatial firing patterns (spatial information per spike, sparsity, and spatial stability, Figure 3K and Figure 3\u2014figure supplement 2) a speed threshold was applied (speed >1 cm/s) and only recordings with >50 spikes and \u22653 laps were included. In total, 38 of 54 recordings met these inclusion criteria (12 putative Calb1-positive and 26 putative Calb1-negative neurons, see Figure 3I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This reports the sample size and inclusion criteria for spatial analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "108379b6-62a2-48a0-9b27-6a06f4d4292e",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "claim_id": "C110",
+      "claim": "Applying more stringent inclusion criteria (e.g., >3 laps, >100 spikes) and/or different speed thresholds (1\u201310 cm/s) led to qualitatively similar results and did not change the statistical significance of the findings (P < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Applying more stringent inclusion criteria (e.g., >3 laps, > 100 spikes) and/or different speed thresholds (1\u201310 cm/s) led to qualitatively similar results and did not change the statistical significance of our findings (P < 0.05 for Figure 3I\u2013K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reports robustness analysis of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "182058ff-7a7b-4ea2-b828-07fb894fc118",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study developed a combined juxtacellular recording and optogenetic tagging method for freely moving mice, validated in CA1 by targeting Calb1-positive neurons, enabling efficient targeting of genetically defined cell classes during natural behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C19, and C20 collectively establish the core methodological achievement. The approach successfully combines juxtacellular recording with optogenetics in freely moving mice (C1), was validated in CA1 using Calb1-positive neurons (C2), and enabled efficient targeting of predefined cell classes during natural behavior (C19, C20). The data presented in Figures 1-3 support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "210a9c0e-ed83-44da-84f3-639f6d0d0626",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Direct versus indirect light activation can be distinguished by spike latency, with directly activated neurons showing short latencies (<4 ms) and indirectly activated neurons showing significantly longer latencies (7-8 ms), validated by juxtacellular labeling and histology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C34, C36, C40, C43, C44, C49, and C51 provide converging evidence for latency-based discrimination. Direct activation produces mean latencies of 2.1-2.7 ms (C34, C43), while indirect activation via Schaffer collaterals or mossy fibers produces significantly longer latencies of 7.0-8.1 ms (C43, C49, p<0.01). Post hoc histological validation confirms cell identity (C36, C40), establishing ground truth for the classification method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "994b80de-4e7b-4452-be58-942aa6969145",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Calb1-negative pyramidal neurons are preferentially recruited into the place cell map with high spatial information content, while Calb1-positive neurons show weak spatial modulation, supporting asymmetric recruitment of CA1 pyramidal cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C63-C69 present the main functional finding with statistical support. Calb1-negative neurons show significantly higher spatial information (1.56\u00b10.79 vs 0.65\u00b10.35 bits/spike, p=0.0003, C66), lower sparsity (0.31\u00b10.17 vs 0.53\u00b10.15, p=0.0003, C67), and greater spatial stability (correlation 0.68\u00b10.31 vs 0.33\u00b10.35, p=0.0019, C68). Sample sizes are adequate (n=26 Calb1-negative, n=12 Calb1-positive, C109) and findings are consistent with prior work (C69).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "a89a488c-461e-40ed-8a26-5472ff19be48",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Viral expression in Calb1cre mice selectively labels superficial pyramidal neurons with high specificity (95.8% infection efficiency, 0/272 off-target neurons) and characteristic morphology including proximal apical dendrite branching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33, C93-C94 establish the specificity and efficiency of the genetic targeting approach. Quantitative validation shows 95.8% of Calb1-positive neurons express ChR2 (261/272, C94) with no off-target expression in Calb1-negative neurons (0/272, C93). Morphological features (proximal branching, C31-C32) are consistent with known anatomy of superficial CA1 pyramidal neurons, supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "d5951984-8b14-4b41-923a-92efa737b0c7",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The opto-juxtacellular approach can be combined with presynaptic input manipulations, demonstrated by optogenetic activation of Schaffer collaterals and mossy fibers while recording from postsynaptic CA1 and CA3 neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C46-C48, C50, and C82 demonstrate proof-of-principle for combining the method with circuit manipulation. Successful recordings from synaptically activated neurons are shown with appropriate latencies (7.4\u00b10.8 ms for Schaffer collaterals, C42) and characteristic facilitation for mossy fibers (C47-C48). This extends the technical capabilities beyond simple cell identification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "012f5022-46f8-4529-a365-7db81b50b6d5",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Technical parameters for opto-juxtacellular recordings in freely moving mice were optimized, including fiber configuration, light power requirements (0.1-1 mW for direct activation, 1-2.5 mW for synaptic activation), and pulse duration adjustments for awake versus anesthetized states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53, C95-C101 provide detailed technical validation. The reversible fiber fixation strategy enables multiple recordings per animal (C53). Light power requirements are systematically characterized and differ appropriately between direct and synaptic activation (C95-C96). State-dependent differences in light-evoked responses are documented (C97-C99), with pulse duration adjusted accordingly. LED validation provides additional technical robustness (C100-C101).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "9a41a63c-56bb-40bc-8648-6fddc6665983",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Recorded neurons display electrophysiological properties characteristic of CA1 pyramidal cells (low firing rates <10 Hz, complex spike bursting) with no differences in firing rate or burst index between Calb1-positive and Calb1-negative populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56, C61-C62 establish basic electrophysiological characterization. All recorded neurons show pyramidal cell features (firing rate 2.16\u00b12.06 Hz, burst index 0.28\u00b10.18, C54), confirmed histologically (C56). Importantly, Calb1-positive and Calb1-negative neurons show similar firing rates (p=0.86, C61) and burst indices (p=0.97, C62), indicating that spatial modulation differences are not due to basic firing properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "7590bca7-7918-45e1-b638-808891616e56",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Current optogenetic tagging methods have significant limitations including indirect cell-type identification, difficulty distinguishing direct versus indirect activation, spike sorting challenges during photostimulation, lack of ground truth validation, and inability to access structural features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 provide a critical assessment of existing methods, well-supported by citations (Beyeler et al., 2016; Roux et al., 2014; Zutshi et al., 2018; Stark et al., 2012). These limitations establish the rationale for the new method. The assessment is fair and acknowledges that optogenetic tagging is a 'gold-standard approach' (C70) while identifying specific technical challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "9228225c-a77d-4031-877e-6b0d865b4b41",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The combined opto-juxtacellular method addresses limitations of conventional approaches by enabling targeted recordings of genetically defined cells, providing ground truth validation through large-amplitude spikes (>1-2 mV), and allowing post hoc morphological and molecular analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76, C79-C81 articulate the advantages of the new method over existing approaches. The method enables targeted recordings (C76), provides direct validation through juxtacellular labeling (C79), offers unequivocal spike identification with large-amplitude signals (C80), and allows access to structural features for cell-type classification (C81). These advantages are demonstrated throughout the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study recorded and classified 19 neurons in anesthetized mice and 54 neurons in freely moving mice, with systematic classification criteria and validation through histology, opto-tagging, or both methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C37-C38, C57-C60, C104-C110 provide comprehensive documentation of sample sizes and classification procedures. The anesthetized dataset includes 10 Calb1-positive and 7 Calb1-negative neurons (C35-C37, C104). The freely moving dataset includes 54 recordings with 15 Calb1-positive and 39 Calb1-negative neurons (C57, C59, C106-C108). Inclusion criteria for spatial analysis are clearly defined (C109) and robustness checks confirm findings (C110).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "ec437f7c-e6be-4412-b10a-1b77d86ea95b",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The opto-juxtacellular method is laborious and low-throughput compared to extracellular recordings, but could complement current approaches by providing training data for classifiers to assign cell identity to blind extracellular units.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 provide an honest assessment of the method's limitations and potential applications. The acknowledgment that the method is not high-throughput (C85) is appropriate given the technical demands. The suggestion that limited datasets could still provide value for building classifiers (C86) is reasonable and supported by citations to similar approaches (GoodSmith et al., 2017; Tang et al., 2014b).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "aca996b2-8305-4610-a61f-d6dd3d214168",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study validates and extends previous observations on deep-superficial CA1 gradients by mapping functional differences onto identified neuronal elements through combined recording, opto-tagging, and labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 contextualize the findings within existing literature. The CA1 sublayer organization is well-established (C87-C88, multiple citations), but previous work relied mainly on anatomical assignment of recording locations (C89). The current study extends this by directly identifying cell types (C90), providing stronger evidence for functional differences between sublayers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "54628a37-e5e4-48ba-9e0e-c932816917c9",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The method could facilitate future studies of sparse neuronal populations (GABAergic interneurons), synaptic input mapping onto identified cell types, and single-cell plasticity mechanisms during natural behaviors, with weaker spatial tuning of Calb1-positive neurons potentially explained by lateral entorhinal cortex inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C78, C83-C84, C92 are speculative about future applications and mechanistic explanations. While the suggestions are reasonable and supported by relevant citations, they represent potential rather than demonstrated capabilities. The mechanistic explanation for Calb1-positive neuron properties (C92) is plausible but not directly tested. These are appropriate forward-looking statements but lack empirical support in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    },
+    {
+      "id": "758e679a-fb14-4bb1-8666-a72939a6ea20",
+      "content_id": "1e81c2f2-1020-47b0-85ba-1ee42555e63d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The classification criterion for direct light activation was defined as mean spike latency <4 ms, with ChR2-expressing neurons reliably entrained up to 40 Hz stimulation frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 define key methodological criteria. The 4 ms latency threshold (C102) is validated by the clear separation between direct (2.7\u00b10.3 ms) and indirect (7.0\u00b11.8 ms) activation shown in C43. The 40 Hz entrainment capability (C103) is demonstrated in figures and represents a reasonable frequency range for optogenetic stimulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:33:14.941066Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "72e52565-8fdf-485e-b497-19cc6436adcf",
+      "result_id": "182058ff-7a7b-4ea2-b828-07fb894fc118"
+    },
+    {
+      "claim_id": "9c579157-c6ba-40b0-94c8-0a306246c896",
+      "result_id": "182058ff-7a7b-4ea2-b828-07fb894fc118"
+    },
+    {
+      "claim_id": "1c0da8fd-aa0c-4f61-9a1a-119709586a1b",
+      "result_id": "182058ff-7a7b-4ea2-b828-07fb894fc118"
+    },
+    {
+      "claim_id": "c24382e8-2ec8-4e7f-aea3-c9fe5bd5c78d",
+      "result_id": "182058ff-7a7b-4ea2-b828-07fb894fc118"
+    },
+    {
+      "claim_id": "abf6394f-5f9f-4fbb-b225-21093814a124",
+      "result_id": "210a9c0e-ed83-44da-84f3-639f6d0d0626"
+    },
+    {
+      "claim_id": "6669909e-7335-4bca-a9ac-9218b964006b",
+      "result_id": "210a9c0e-ed83-44da-84f3-639f6d0d0626"
+    },
+    {
+      "claim_id": "8a8f8a55-bea7-47d4-8aac-e59135056a7f",
+      "result_id": "210a9c0e-ed83-44da-84f3-639f6d0d0626"
+    },
+    {
+      "claim_id": "11f7dd73-1a4b-4324-b961-100986631108",
+      "result_id": "210a9c0e-ed83-44da-84f3-639f6d0d0626"
+    },
+    {
+      "claim_id": "edc92410-2f38-4271-ab06-dcc77c641bea",
+      "result_id": "210a9c0e-ed83-44da-84f3-639f6d0d0626"
+    },
+    {
+      "claim_id": "d52a4c8c-2696-4d5b-b5be-7041d7ed75ff",
+      "result_id": "210a9c0e-ed83-44da-84f3-639f6d0d0626"
+    },
+    {
+      "claim_id": "7546bea4-8937-4f43-9e93-79463bb667aa",
+      "result_id": "210a9c0e-ed83-44da-84f3-639f6d0d0626"
+    },
+    {
+      "claim_id": "64910686-99df-4a0f-8ba0-426864661d0e",
+      "result_id": "210a9c0e-ed83-44da-84f3-639f6d0d0626"
+    },
+    {
+      "claim_id": "476c73e3-d029-4c60-821f-52981a25c558",
+      "result_id": "994b80de-4e7b-4452-be58-942aa6969145"
+    },
+    {
+      "claim_id": "d9805779-05d1-4de3-8628-90db6b2e00f1",
+      "result_id": "994b80de-4e7b-4452-be58-942aa6969145"
+    },
+    {
+      "claim_id": "d19de21b-2bdf-482e-9bc4-7e53c5741bc0",
+      "result_id": "994b80de-4e7b-4452-be58-942aa6969145"
+    },
+    {
+      "claim_id": "10c5222a-ad99-4432-a9eb-60983ba7ec60",
+      "result_id": "994b80de-4e7b-4452-be58-942aa6969145"
+    },
+    {
+      "claim_id": "967ad3f0-5fa5-46ff-b381-2b122a90cf1d",
+      "result_id": "994b80de-4e7b-4452-be58-942aa6969145"
+    },
+    {
+      "claim_id": "f747916b-836c-4d96-b9be-ab739f1a3251",
+      "result_id": "994b80de-4e7b-4452-be58-942aa6969145"
+    },
+    {
+      "claim_id": "5cda81b5-5f17-4420-ad11-7b2f4dd1e4fc",
+      "result_id": "994b80de-4e7b-4452-be58-942aa6969145"
+    },
+    {
+      "claim_id": "bfeb014c-9b03-48f0-9a20-f63e9052301b",
+      "result_id": "994b80de-4e7b-4452-be58-942aa6969145"
+    },
+    {
+      "claim_id": "01316b43-f1d4-4a0c-a8ac-fdaf34981898",
+      "result_id": "a89a488c-461e-40ed-8a26-5472ff19be48"
+    },
+    {
+      "claim_id": "8481e5d7-1643-49fa-9913-e0e9062e775e",
+      "result_id": "a89a488c-461e-40ed-8a26-5472ff19be48"
+    },
+    {
+      "claim_id": "70fa977b-f5b5-4e24-a4e8-bc6baebc4275",
+      "result_id": "a89a488c-461e-40ed-8a26-5472ff19be48"
+    },
+    {
+      "claim_id": "e426a0c8-984a-41eb-ae24-031b54f23afd",
+      "result_id": "a89a488c-461e-40ed-8a26-5472ff19be48"
+    },
+    {
+      "claim_id": "3227d4a6-90c5-4a1d-9e53-08f48e6ef483",
+      "result_id": "a89a488c-461e-40ed-8a26-5472ff19be48"
+    },
+    {
+      "claim_id": "b22e9b95-0ae8-4ffd-b352-dbbeae09172d",
+      "result_id": "a89a488c-461e-40ed-8a26-5472ff19be48"
+    },
+    {
+      "claim_id": "27b829e4-19d0-4c2b-8805-f22e491dbd5e",
+      "result_id": "d5951984-8b14-4b41-923a-92efa737b0c7"
+    },
+    {
+      "claim_id": "3079941b-6265-4825-acf9-d819ab90e5d9",
+      "result_id": "d5951984-8b14-4b41-923a-92efa737b0c7"
+    },
+    {
+      "claim_id": "a40cbcac-6394-4966-bc9f-c24c87888ce0",
+      "result_id": "d5951984-8b14-4b41-923a-92efa737b0c7"
+    },
+    {
+      "claim_id": "2da2bd80-cff7-4b79-82ba-f77b318fb76f",
+      "result_id": "d5951984-8b14-4b41-923a-92efa737b0c7"
+    },
+    {
+      "claim_id": "42559f76-dfed-49f2-a518-6cbe0223b479",
+      "result_id": "d5951984-8b14-4b41-923a-92efa737b0c7"
+    },
+    {
+      "claim_id": "4f3cd6af-f80d-4466-a45a-d90dd20f77ec",
+      "result_id": "d5951984-8b14-4b41-923a-92efa737b0c7"
+    },
+    {
+      "claim_id": "1b9ffe7d-dea3-41f3-9d4c-177c046e038e",
+      "result_id": "d5951984-8b14-4b41-923a-92efa737b0c7"
+    },
+    {
+      "claim_id": "e1280213-564e-4d2e-b5e0-ba96f9f3c7a2",
+      "result_id": "012f5022-46f8-4529-a365-7db81b50b6d5"
+    },
+    {
+      "claim_id": "874a4fd6-2068-400e-88be-24c5e8706344",
+      "result_id": "012f5022-46f8-4529-a365-7db81b50b6d5"
+    },
+    {
+      "claim_id": "36bdc7ba-a35e-43cc-bebf-7c991f72f74d",
+      "result_id": "012f5022-46f8-4529-a365-7db81b50b6d5"
+    },
+    {
+      "claim_id": "e1f8eec1-34c8-4ad6-936e-b0e4e7c395ae",
+      "result_id": "012f5022-46f8-4529-a365-7db81b50b6d5"
+    },
+    {
+      "claim_id": "e94cd309-f729-4e26-9684-b29f5544be29",
+      "result_id": "012f5022-46f8-4529-a365-7db81b50b6d5"
+    },
+    {
+      "claim_id": "9a1a865e-f211-4425-93f2-b4d10510197c",
+      "result_id": "012f5022-46f8-4529-a365-7db81b50b6d5"
+    },
+    {
+      "claim_id": "f34abf15-ed7e-4a8e-80e0-f147ddbb55d2",
+      "result_id": "012f5022-46f8-4529-a365-7db81b50b6d5"
+    },
+    {
+      "claim_id": "11164f79-d2bc-4d70-814b-08029a2d4407",
+      "result_id": "012f5022-46f8-4529-a365-7db81b50b6d5"
+    },
+    {
+      "claim_id": "22e46f19-b063-46df-85ae-03d1d71f7699",
+      "result_id": "012f5022-46f8-4529-a365-7db81b50b6d5"
+    },
+    {
+      "claim_id": "5301af32-4627-49ae-a6c9-43cd2bbef5d7",
+      "result_id": "9a41a63c-56bb-40bc-8648-6fddc6665983"
+    },
+    {
+      "claim_id": "8d89076c-0609-4f42-a0f2-e05723e92774",
+      "result_id": "9a41a63c-56bb-40bc-8648-6fddc6665983"
+    },
+    {
+      "claim_id": "44fd7e57-e597-464e-b81b-a19352ee4e63",
+      "result_id": "9a41a63c-56bb-40bc-8648-6fddc6665983"
+    },
+    {
+      "claim_id": "89d4e0f1-fad4-467c-ad88-41727ea856e1",
+      "result_id": "9a41a63c-56bb-40bc-8648-6fddc6665983"
+    },
+    {
+      "claim_id": "0a9a92fc-4750-45b2-bf0b-bfcb72162902",
+      "result_id": "9a41a63c-56bb-40bc-8648-6fddc6665983"
+    },
+    {
+      "claim_id": "33bc73b6-541e-4408-81a5-084ba108fdcb",
+      "result_id": "7590bca7-7918-45e1-b638-808891616e56"
+    },
+    {
+      "claim_id": "66587f64-dc0e-4db5-9f65-02d183db1004",
+      "result_id": "7590bca7-7918-45e1-b638-808891616e56"
+    },
+    {
+      "claim_id": "8112d1fb-31df-4346-956a-0af794c033b5",
+      "result_id": "7590bca7-7918-45e1-b638-808891616e56"
+    },
+    {
+      "claim_id": "e8832e12-2f44-441b-91ea-4ee87af28de7",
+      "result_id": "7590bca7-7918-45e1-b638-808891616e56"
+    },
+    {
+      "claim_id": "6af01c9a-2175-4c0a-8829-10ad37398d43",
+      "result_id": "7590bca7-7918-45e1-b638-808891616e56"
+    },
+    {
+      "claim_id": "16a30ba5-05a5-4ccf-a37e-31ec16c67aac",
+      "result_id": "7590bca7-7918-45e1-b638-808891616e56"
+    },
+    {
+      "claim_id": "e8f7df66-7c2b-45f4-9907-11ecab1b7bb0",
+      "result_id": "9228225c-a77d-4031-877e-6b0d865b4b41"
+    },
+    {
+      "claim_id": "f4c690c5-6260-4d12-b00e-f8c664fc23b9",
+      "result_id": "9228225c-a77d-4031-877e-6b0d865b4b41"
+    },
+    {
+      "claim_id": "4306fc9a-7e2d-40ce-ba8f-16b9bdf1d07f",
+      "result_id": "9228225c-a77d-4031-877e-6b0d865b4b41"
+    },
+    {
+      "claim_id": "45215cbb-092b-43dd-9b04-150dbc4a05fb",
+      "result_id": "9228225c-a77d-4031-877e-6b0d865b4b41"
+    },
+    {
+      "claim_id": "77cdf99d-d1a0-4ffa-9690-ab5c946f8d3c",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "076c36a4-845e-4d9c-8c89-f2be66641f1e",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "86e8731e-03f4-4f5a-8796-782d3cc519bf",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "569e97b7-0e36-4b14-a4c1-64fa5648cbba",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "2ab14b6b-6e7a-4290-b1f3-fc0b37a1c0d0",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "ae45b77f-bdd8-4b47-8f0a-718b769c5fd5",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "ad205f34-cd85-4880-a3cc-1bedfd611f46",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "0d7d9ede-fbb5-45bd-ab8e-191940d94d50",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "07813820-c189-4f02-8747-f7011ef62057",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "a269369b-bf28-433e-89f7-30ac5ff05e88",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "5799ea67-0cbf-4734-afdb-7ddb31eac943",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "871a0c13-74a4-43d2-a4a8-684e7b4e4f5a",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "42f681f5-79e7-4cce-a28d-3ae6c4e37206",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "108379b6-62a2-48a0-9b27-6a06f4d4292e",
+      "result_id": "db6c6b28-d729-4d76-9a58-0de34a4fa54b"
+    },
+    {
+      "claim_id": "1d189ec0-f965-4b97-901e-fb6a2faabb65",
+      "result_id": "ec437f7c-e6be-4412-b10a-1b77d86ea95b"
+    },
+    {
+      "claim_id": "6fff42cd-c51f-46ec-83b5-7f5f4efd7b54",
+      "result_id": "ec437f7c-e6be-4412-b10a-1b77d86ea95b"
+    },
+    {
+      "claim_id": "21ad41d0-3b67-49d2-8542-068a313dbc1c",
+      "result_id": "aca996b2-8305-4610-a61f-d6dd3d214168"
+    },
+    {
+      "claim_id": "87c53188-bcfd-485b-a695-8dd68f32a4b6",
+      "result_id": "aca996b2-8305-4610-a61f-d6dd3d214168"
+    },
+    {
+      "claim_id": "2651e9c8-8340-49f2-90d2-f2203f276cad",
+      "result_id": "aca996b2-8305-4610-a61f-d6dd3d214168"
+    },
+    {
+      "claim_id": "0942f747-c174-459a-af8c-84587edd0b4e",
+      "result_id": "aca996b2-8305-4610-a61f-d6dd3d214168"
+    },
+    {
+      "claim_id": "9091980a-f935-4f81-b59c-62b1f0143a79",
+      "result_id": "54628a37-e5e4-48ba-9e0e-c932816917c9"
+    },
+    {
+      "claim_id": "c8432757-5ba2-4558-9be7-2e58cd0b25fc",
+      "result_id": "54628a37-e5e4-48ba-9e0e-c932816917c9"
+    },
+    {
+      "claim_id": "17286e19-5d81-4fc6-b51c-4061b557ee7a",
+      "result_id": "54628a37-e5e4-48ba-9e0e-c932816917c9"
+    },
+    {
+      "claim_id": "5dd6b028-7f5e-4171-b7fe-e1f21a8ee514",
+      "result_id": "54628a37-e5e4-48ba-9e0e-c932816917c9"
+    },
+    {
+      "claim_id": "cd9fd773-780b-4eb6-a6b3-dde7aa5e1dcb",
+      "result_id": "54628a37-e5e4-48ba-9e0e-c932816917c9"
+    },
+    {
+      "claim_id": "c44d2ebd-0094-455b-aaeb-b7d6b48ea459",
+      "result_id": "758e679a-fb14-4bb1-8666-a72939a6ea20"
+    },
+    {
+      "claim_id": "f37c4f1b-3d62-4de4-9f05-a99d306e1dd3",
+      "result_id": "758e679a-fb14-4bb1-8666-a72939a6ea20"
+    }
+  ],
+  "comparisons": []
+}

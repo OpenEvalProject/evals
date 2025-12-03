@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The DL121 fusion is a synthetic allosteric switch created by inserting the LOV2 domain between residues 120 and 121 of E. coli DHFR, guided by Statistical Coupling Analysis. This fusion displays a twofold increase in DHFR hydride transfer rate (khyd) in response to blue light, and under steady-state conditions exhibits a 28% increase in kcat with statistically insignificant change in Km.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by experimental data (Figure 1C) and prior work citations (Lee et al., 2008). Claims C25-C28 provide the theoretical basis (SCA) and structural rationale for the fusion design. The in vitro kinetic measurements are consistent with the reported allosteric effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "DHFR has no known natural allosteric regulation, but the DL121 fusion confers a selectable growth advantage in vivo. E. coli growth rate can be used as a proxy for DHFR activity because DHFR catalyzes the reduction of DHF to THF, which is critical for nucleotide and amino acid synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C33-C35 establish the biological context and rationale for using growth rate as a proxy for DHFR activity, supported by citations. Claim C6 demonstrates the in vivo relevance of the allosteric effect (17% faster growth in light), supported by prior work (Reynolds et al., 2011).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "A turbidostat-based growth rate assay was developed that can discriminate changes of \u00b10.02 \u00b5M\u207b\u00b9 s\u207b\u00b9 in catalytic power (kcat/Km), with resolution on par with or better than literature-reported errors for in vitro steady state kinetics measurements of DHFR. The assay shows a log-linear relationship between relative growth rate and DHFR velocity over nearly four orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 establish the assay resolution, supported by comparison to literature values. Claims C36-C40 describe the assay methodology and validation, with Figure 2C showing the log-linear relationship. The use of 25 \u00b5M DHF (C39) is justified by citation to prior work measuring endogenous DHF concentration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C14"
+    ],
+    "result": "Deep mutational scanning of DL121 yielded growth rate measurements for 2130 mutations (70.5%) with high reproducibility (correlation coefficient >0.9 between replicates). After removing slow-growing and null mutations, 1548 mutations (51%) were retained for allostery analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 provide the data quality metrics, supported by Figure 3\u2014figure supplement 3. Claim C14 describes the filtering strategy and final dataset size. The high reproducibility and clear rationale for filtering support the validity of the dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The vast majority of mutations were at least modestly deleterious to growth (median relative growth rate of \u22120.084 in dark and \u22120.083 in light). A cluster of beneficial mutations was observed near the LOV2 insertion site at position 121. The DL121 fusion is comparably less robust than native DHFR because the unoptimized LOV2 insertion introduces an initial compromise to DHFR function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by Figure 3D and Figure 3\u2014figure supplement 4. Claims C43-C45 provide context by comparing to prior work on native proteins and native DHFR. Claim C46 provides experimental validation of the D27N cutoff used for filtering. The interpretation that DL121 is less robust is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C47"
+    ],
+    "result": "Mutations with growth rates at or below the DL121 D27N cutoff were significantly enriched in the sector (p=7.9\u00d710\u207b\u2078) and at evolutionarily conserved positions (p=8.7\u00d710\u207b\u00b2\u2070). These positions surround the active site and co-factor binding pocket, indicating that sector positions continue to play a key role in conferring DHFR catalytic activity in the DL121 fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by statistical analysis and structural mapping (Figures 3E-G, Figure 3\u2014figure supplement 6). The p-values indicate strong statistical significance. Claim C47 is a reasonable inference from the enrichment of deleterious mutations in the sector.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C48",
+      "C81"
+    ],
+    "result": "Of the 1548 viable mutations evaluated, the allosteric effect is normally distributed with a mean near zero (\u00b5 = 0.0017). Only 69 mutations (4.5%) significantly influenced allostery at the adjusted p-value threshold (p=0.016, determined by Sequential Goodness of Fit): 56 mutations enhanced allostery while 13 disrupted allostery. The most allosteric single mutant (H124Q) yielded a twofold increase in velocity in response to light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 are supported by Figure 4\u2014figure supplement 1 and the text. Claim C48 describes the statistical method for determining the adjusted p-value. The use of SGoF for multiple hypothesis testing correction is appropriate. Claim C81 summarizes the key finding that allostery-influencing mutations are rare.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C63",
+      "C64",
+      "C65",
+      "C83"
+    ],
+    "result": "Allostery disrupting mutations tended to cluster near the LOV2 insertion site and were modestly enriched at both conserved and co-evolving amino acid positions. The 13 allostery disrupting mutations localized to six DHFR positions, with 90% occurring within 10 \u00c5 of the DHFR 121 c\u03b1 atom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C63-C65 are supported by structural analysis (Figures 5A-B) and supplementary data. Claim C83 summarizes the key finding. The spatial clustering near the insertion site is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C84"
+    ],
+    "result": "Allostery enhancing mutations were distributed across the DHFR structure and strongly associated with the protein surface. The 56 allostery enhancing mutations were observed at 25 positions and were never found in the protein sector (statistically significantly depleted, p=0.0002). This pattern holds at different significance thresholds and when considering surface sites within or contacting the sector.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C66-C74 are supported by structural analysis (Figures 5C-F) and supplementary data. The statistical significance of sector depletion is strong. Claims C70-C72 provide additional analysis of sector-contacting positions. Claim C84 summarizes the unexpected finding that allostery enhancing mutations are depleted from the sector.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In vitro characterization of selected mutants showed that light predominantly modulated catalytic turnover (kcat), with the ratio of kcat in light relative to dark ranging from 1.1 (DL121-C450S) to 2.0 (H124Q). The change in Km was neither significant nor correlated to allosteric effect size (R\u00b2 = 0.003). A comparison of in vitro allosteric effect on velocity to in vivo growth rate effect yields a near-linear relationship with a correlation coefficient of 0.83.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C62 are supported by in vitro kinetic measurements (Figure 4\u2014figure supplements 2-6, Supplementary file 1a) and the correlation analysis (Figure 4D). The high correlation (R\u00b2 = 0.83) between in vitro and in vivo measurements validates the growth-based assay. The observation that light predominantly modulates kcat is consistent with the in vivo DHF concentration being well above Km.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Combining several allostery enhancing mutations yielded near-additive improvements to dynamic range. The triple mutant DL121-M16A,D87A,H124Q produces a 3.87-fold increase in velocity upon light stimulation, up from the 1.3-fold allosteric effect of the starting construct. The improvement in allostery is realized by reducing the dark state (constitutive) activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C75-C80 are supported by in vitro kinetic measurements (Figure 6B, Figure 6\u2014figure supplement 1, Supplementary file 1a). The near-log-additive nature of the combined mutations is demonstrated. The mechanism of allostery improvement (reducing dark state activity) is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In LOV2 signaling, blue light triggers the formation of a covalent adduct between a cysteine residue (C450) and FMN, and associated unfolding of the C-terminal J\u03b1-helix. In native DHFR, hydrogen bonds between the \u03b2F-\u03b2G loop (Asp122) and the Met20 loop (Gly15, Glu17) are thought to stabilize the closed conformation. Mutations to positions 121 and 122 reduce activity and cause the enzyme to prefer the occluded conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide mechanistic context for the DL121 fusion, supported by citations to prior work. These claims establish the known mechanisms of LOV2 signaling and DHFR conformational dynamics that are relevant to understanding the allosteric regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Mutations at conserved and co-evolving (sector) positions were often deleterious to DHFR function and infrequently influenced allosteric regulation. When considered individually, the allostery-enhancing mutations had modest effects (up to twofold) on regulation. The results should be considered in the context that the DL121 fusion begins with sharply reduced DHFR activity, and the experiment intentionally used relatively stringent DHFR selection conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C85 summarize key findings. Claims C86-C90 provide important context by comparing to prior work and discussing factors that affect mutational robustness. The comparison to pyruvate kinase (C90) highlights that the frequency and magnitude of allostery-tuning mutations can vary across systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "There are different structural requirements for establishing and tuning allostery in this system. Prior work found that sector connected surface sites served as hotspots for introducing new light-based regulation in DHFR, and allosteric regulation was never obtained when the LOV2 domain was inserted at a non-sector connected site. However, allostery enhancing mutations were observed at positions where LOV2 insertions did not initiate allostery, suggesting that allostery is more easily introduced at evolutionarily conserved and co-evolving sites, but once established, can be optimized through less conserved sector-peripheral residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 synthesize the current findings with prior work (Reynolds et al., 2011; Lee et al., 2008) to propose a model for how allostery is introduced and optimized. The disparity between sites for introducing and tuning allostery is supported by the data (C93). The proposed model (C94-C95) is a reasonable inference from the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The results are broadly consistent with an emerging body of work characterizing allostery-influencing mutations in natural proteins. Together, these data point to a model in which mutations at evolutionarily conserved positions exert large (and often disruptive) effects on function while allostery is tuned at less conserved surface sites. Similar patterns have been observed in TetR, pyruvate kinase, and lacI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 place the findings in the broader context of allostery research by comparing to studies of TetR (Leander et al., 2020), pyruvate kinase, and lacI (Campitelli et al., 2020; Wu et al., 2019). The consistency across multiple systems strengthens the generality of the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The association of allostery enhancing mutations with the protein surface hints at a possible role for solvent in tuning regulation. The finding that allostery can be further enhanced by single mutations implies a path to improved allosteric dynamic range by stepwise mutagenesis and selection. Diffuse surface site mutations could present an effective alternative to mutations near the domain insertion site for optimizing regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is speculative but reasonable given the surface enrichment of allostery enhancing mutations. Claims C102-C106 draw practical implications for protein engineering and evolution. These implications are well-supported by the data showing near-additive effects of combined mutations and the distributed nature of allostery enhancing mutations.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,579 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C86"
+    ],
+    "result": "The computational model is based on a realistic upper extremity musculoskeletal system with 47 Hill-type muscle-tendon actuators, five degrees-of-freedom, and simulated using OpenSim and Simbody. The wrist and finger joints were locked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1\u2013C4 and C86 describe the computational model structure and simulation platform, all supported by appropriate citations and direct statements. The model specifications are clearly documented and based on established prior work (Saul et al., 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The computational model reproduces hand paths and velocity profiles similar to experimental data from Beer et al., 2000 and Soechting, 1984, including gently curved trajectories and appropriate speed ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5\u2013C7 demonstrate model validation through comparison with established experimental data. The model reproduces known kinematic features (curved trajectories, speed ranges) with appropriate quantitative agreement, supported by Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The model reproduces the effect of target size on velocity profiles and speed-dependent asymmetry in velocity profiles, including earlier peak velocities for smaller targets and multiple local minima in slower movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C11\u2013C13 show the model captures known velocity profile characteristics with appropriate citations to prior work (Soechting, 1984; Nagasaki, 1989; van der Wel et al., 2009). The quantitative values (C12) and qualitative features are documented in Figures 2 and 2\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C54"
+    ],
+    "result": "A torque-driven model does not reproduce the asymmetries in velocity profiles that the muscle-based model produces, supporting the hypothesis that muscle force-velocity properties explain why faster movements have later peak velocities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C54 provide a critical comparison showing that realistic muscle properties are necessary to reproduce velocity asymmetries. The comparison is supported by data in Figure 2\u2014figure supplement 2 and provides mechanistic insight into the role of muscle dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "The model predictions for elbow and shoulder flexion angles have root mean square errors of 16.8\u00b0 and 7\u00b0 when compared to experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C15 provides quantitative error metrics, but without context about what constitutes acceptable error for this type of model, or comparison to other models, it is difficult to assess whether this represents good or poor agreement. The relatively large elbow error (16.8\u00b0) may indicate limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22"
+    ],
+    "result": "The model's predicted movement durations fit Fitts' law well (R\u00b2=0.974) with parameters within experimental ranges, and correlate significantly with experimental data for both means (r=0.959, p<0.001) and standard deviations (r=0.70, p=0.0167).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16\u2013C18, C21\u2013C22 demonstrate strong quantitative agreement between model predictions and Fitts' law, with appropriate statistical support. The parameters fall within experimentally determined ranges (Goldberg et al., 2014), and correlations are statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Movement duration variability increases with smaller target sizes due to optimization falling into local minima, a feature present in experimental data but not predicted by previous models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19\u2013C20 identify a novel prediction of the model that matches experimental observations but was not captured by prior models (Harris and Wolpert, 1998). This is supported by data in Figures 3A and B and represents an important advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The torque-driven model shows good agreement with Fitts' law (R\u00b2=0.88) but weak and non-significant correlations with experimental data for means and standard deviations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23\u2013C24 demonstrate that simplified models can reproduce Fitts' law but fail to capture important details of movement variability. This comparison strengthens the argument for realistic biomechanical modeling and is supported by Figure 3\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "With a less effective optimizer, the model still shows close agreement with Fitts' law (R\u00b2=0.969) and significant correlations with experimental data for means (r=0.82, p=0.007) and standard deviations (r=0.83, p=0.006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25\u2013C26 demonstrate robustness of the main findings to optimizer performance, supporting the theory that Fitts' law emerges from the optimization landscape rather than specific optimizer characteristics. This is an important control shown in Figure 3\u2014figure supplement 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Fitts' law emerges even without the muscle activations term in the cost function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 shows that the muscle activation cost term is not necessary for Fitts' law to emerge, supported by Figure 3\u2014figure supplement 3. This helps isolate the mechanism underlying the speed-accuracy tradeoff.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C61"
+    ],
+    "result": "Models with unrealistic muscle properties or missing muscles produce movement durations consistent with Fitts' law but are not correlated with experimental data, while the realistic model shows strong correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C61 demonstrate that biomechanical realism is critical for capturing detailed movement characteristics beyond just Fitts' law. This is systematically documented in Table 1 and supports the importance of the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C102"
+    ],
+    "result": "In monkey reaching experiments, reaches to smaller targets (0.75 cm) are slower (661\u00b1258 ms) and more variable than reaches to larger targets (2 cm, 461\u00b1234 ms), with statistically significant difference in variability (p=0.0262).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29\u2013C30 and C102 provide experimental validation of Fitts' law in the neural recording paradigm with appropriate statistical support. The data is shown in Figure 4C and provides the behavioral foundation for the neural analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C31",
+      "C103"
+    ],
+    "result": "Reaches to smaller targets exhibit less variability in the population-level motor cortical preparatory neural state than reaches to larger targets, measured using PCA on trial-averaged firing rates in the last 200 ms before movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C103 present a key neural finding with clear methodology. The analysis follows established methods (Vyas et al., 2018; Even-Chen et al., 2019) and is shown in Figure 4D. This finding is counterintuitive if execution noise alone drives the speed-accuracy tradeoff.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C35",
+      "C48",
+      "C72"
+    ],
+    "result": "The contribution of preparatory variability to movement duration variability is larger for smaller targets than larger targets, with nearly 60% of movement duration variability attributed to planning variability for smaller targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C35, C48, and C72 present a central finding linking preparatory neural variability to the speed-accuracy tradeoff. The analysis follows established methods (Churchland et al., 2006a) and is shown in Figure 4E with appropriate statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C37",
+      "C62",
+      "C63"
+    ],
+    "result": "The speed-accuracy tradeoff emerges without motor noise through a mechanism where task constraints reduce the number of good control solutions in the optimization landscape, suggesting motor planning variability rather than signal-dependent noise as the primary factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C36\u2013C37, C62\u2013C63 present the core theoretical contribution. The computational model demonstrates Fitts' law without noise (C34), the proposed mechanism is supported by systematic experiments (C62), and the explanation is logically consistent with the optimization results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C56",
+      "C57",
+      "C76"
+    ],
+    "result": "For challenging tasks, stringent constraints remove effective solutions from the optimization landscape, causing the optimizer to find less effective (slower) solutions, while less challenging tasks retain more effective solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44\u2013C46, C56\u2013C57, and C76 elaborate the theoretical mechanism with support from Figure 5. The logic is internally consistent and supported by the computational experiments showing increased variability with smaller targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47",
+      "C67",
+      "C74"
+    ],
+    "result": "Motor planning variability accounts for approximately 65% of the total difference in movement duration between target sizes, representing the dominant factor in the speed-accuracy tradeoff in these results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C67, and C74 quantify the contribution of planning variability through calculation from the data in Figure 3C. The calculation is transparent and supported by both computational and neural evidence (Figure 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Motor planning variability can account for more than 75% of the movement duration difference between large and small targets based on the calculation 0.6 \u00d7 258/200.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 presents a calculation that depends on several assumptions: that the 60% figure from preparatory variability analysis directly translates to movement duration differences, and that the relationship is linear. The calculation method and assumptions need more explicit justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "A theory based purely on signal-dependent motor noise does not predict increased movement duration variability with more severe accuracy constraints, as observed in experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 provides a critical distinction between the proposed theory and the signal-dependent noise theory. This is supported by the experimental observations (C20, C30) and represents an important theoretical advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The difference between the fastest trials to smallest and largest targets is 0.04 s in both computational experiments and experimental data (0.04\u00b10.03 s), indicating the role of limb dynamics in the speed-accuracy tradeoff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65\u2013C66 quantify the contribution of limb dynamics through comparison of fastest trials. The agreement between model and experiment supports the model's biomechanical realism, though the interpretation assumes fastest trials approach dynamic limits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C43",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Asymmetric velocity profiles arise from optimal control with realistic biomechanical models, contradicting Bullock and Grossberg's claim that optimal control always predicts symmetric profiles, and this feature did not emerge in earlier simplified models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C50\u2013C52 address a specific theoretical debate with appropriate citations. The model results demonstrate that optimal control can produce asymmetric profiles when biomechanics are realistic, supported by Figures 2C and 2\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Elbow flexors undergoing eccentric contraction have larger force generating capacity at higher speeds due to the force-velocity relationship of muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 states established muscle physiology supported by citation to Millard et al., 2013. This provides mechanistic explanation for velocity profile asymmetries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Current theory suggests movement neural activity evolves from preparatory states in motor cortex, with trial-by-trial behavioral variability strongly linked to preparatory neural variability and motor learning linked to systematic changes in preparatory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68\u2013C70 summarize established theoretical framework with appropriate citations (Shenoy et al., 2013; Afshar et al., 2011; Churchland et al., 2006a; Vyas et al., 2018, 2020b). This provides context for the neural analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C71",
+      "C73"
+    ],
+    "result": "If planning variability dominates the speed-accuracy tradeoff, then the proportion of movement duration variability explained by preparatory variability should increase with smaller targets; if execution noise dominates, movement duration variability should decrease when planning variability decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C73 present clear, testable hypotheses that distinguish between competing theories. The logic is sound and the predictions are subsequently tested (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C75",
+      "C78",
+      "C80"
+    ],
+    "result": "The model implements motor planning variability through stochastic optimization (CMA-ES) with Gaussian noise, approximating trial-to-trial variability in preparatory states, though not claiming the brain literally performs stochastic optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C78, and C80 clearly describe the modeling approach and its limitations. The authors appropriately distinguish between the computational implementation and biological mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Reaches to large targets that do not reach the small target are on average faster than reaches to the small target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 provides empirical verification of a key prediction: that some solutions valid for large targets but invalid for small targets are faster. This supports the optimization landscape theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Implementing planning variability in the computational model produces movement durations consistent with Fitts' law and experimental findings on movement duration variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 summarizes the key model result shown in Figure 3C. This demonstrates that planning variability alone is sufficient to produce Fitts' law-like behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "There is no causal evidence linking neural variability during preparation and Fitts' law, though there is a causal link in the computational model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 appropriately acknowledges a limitation: the neural data is correlative. The authors correctly distinguish between the causal relationships in the model and the correlative evidence from neural recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The preparatory state encodes important parameters of the upcoming reach, such as distance, direction, and speed, though not the whole trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 summarizes established findings with appropriate citations (Messier and Kalaska, 2000; Churchland et al., 2006b; Even-Chen et al., 2019; Vyas et al., 2020a). This justifies using preparatory state variability as a proxy for motor plan variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Fitts' law may be tightly linked to movement planning rather than just execution, with the difficulty of finding optimal solutions for challenging tasks potentially related to finding optimal preparatory neural states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84\u2013C85 present interpretations and speculations about the relationship between the computational model and neural mechanisms. While plausible, these remain speculative connections that require further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "A testable prediction is that neural variability during motor planning should progressively decrease as performance improves during practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 presents a clear, testable prediction that follows logically from the theory. This provides a concrete avenue for future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The broader mechanism for motor control likely engages both the proposed planning variability mechanism and aspects of signal-dependent noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 appropriately acknowledges that the proposed mechanism does not exclude signal-dependent noise but rather shows it is not necessary. This represents a balanced interpretation of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "A realistic biomechanical model allows for more accurate estimation of the optimization landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by the systematic comparison in Table 1 showing that realistic models correlate with experimental data while simplified models do not. This justifies the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Prior work has proposed that signal-dependent noise is sufficient to explain Fitts' law, using simple one-dimensional or torque-driven planar models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38\u2013C39 accurately summarize prior theoretical work with appropriate citations (Harris and Wolpert, 1998; Flash and Hogan, 1985; and others). This provides context for the current contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Signal-dependent noise scales with the size of the control signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 states established experimental findings with appropriate citations (Jones et al., 2002; Matthews, 1996). This provides background on the prevailing theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The musculoskeletal model from Saul et al. was previously used for tracking but not de novo synthesis; movements are synthesized by minimizing a cost function with end-point accuracy and squared muscle activation terms, where the latter approximates metabolic power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40\u2013C42 describe the methodological innovation and cost function with appropriate citations. The squared activation term as metabolic proxy is supported by Millard et al., 2013.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "There is evidence of improved signal-to-noise ratio during motor skill learning in rodents through reduction in signal-independent noise and pre-burst firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 cites relevant prior work (Kargo and Nitz, 2004) but notes it proposes a different mechanism than signal-dependent noise reduction. This contextualizes the current theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Motor planning stochasticity could arise from noise on an initial motor plan due to variability in inputs from other brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 presents a plausible speculation about neural mechanisms with citation to Vyas et al., 2020b. The authors appropriately frame this as unknown but possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The optimization uses 500 iterations and population size of 20 in CMA-ES, initialized with all knots set to 0.1, taking about 3 hours of computation time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87\u2013C88 provide clear methodological details about the optimization procedure. These are straightforward descriptions of the computational methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Human subjects (n=4, age 27\u00b13, 2 males, 2 females) gave informed consent and performed reaching movements measured with inertial motion capture, instructed to reach at comfortable speed without moving trunk or feet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89\u2013C91 describe the human experimental procedures with appropriate ethical approval and methodological details. The methods are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C104"
+    ],
+    "result": "Neural recordings were made from PMd and M1 of one adult male monkey with two chronic 96-electrode arrays implanted 7 years prior, using threshold crossings for spike detection, during an instructed-delay reaching task with 40 targets and two target size conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92\u2013C99 and C104 provide comprehensive methodological details about the neural recording experiments. The methods are clearly described with appropriate citations for threshold crossing analysis (Trautmann et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Neural analyses followed standard methods from prior publications for preparatory state variance (Vyas et al., 2018; Even-Chen et al., 2019; Vyas et al., 2020b) and contribution of preparatory variability (Churchland et al., 2006a).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100\u2013C101 indicate that established, validated analysis methods were used. This strengthens confidence in the neural results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The speed-accuracy tradeoff is observed in motor, perceptual, and cognitive tasks, and Fitts' law quantifies this relationship showing that movements requiring greater accuracy are slower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107\u2013C108 provide background on the speed-accuracy tradeoff with appropriate citations (Heitz, 2014; Wickelgren, 1977; Fitts, 1954). This establishes the broader context for the study.",
+    "result_type": "MINOR"
+  }
+]

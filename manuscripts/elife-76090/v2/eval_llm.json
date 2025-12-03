@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C81",
+      "C82"
+    ],
+    "result": "PSH cleaves C99 in DDM micelles with reduced processivity, producing predominantly A\u03b242 over A\u03b240 and generating longer A\u03b2 species including A\u03b246. The cleavage is inhibited by the TSA GSI L-685,458, though at micromolar rather than nanomolar concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are directly supported by experimental data in Figures 1B-D showing AICD and A\u03b2 generation, mass spectrometry identification of A\u03b2 species, and inhibition by L-685,458. The reduced processivity is evidenced by the abundance of longer A\u03b2 species (C30, C82) compared to \u03b3-secretase. Multiple independent replicates and complementary techniques (immunoblotting, mass spectrometry) strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "Reconstitution of PSH into POPC lipid bilayers strongly enhances processivity compared to DDM micelles, with increased production of shorter A\u03b2 species (A\u03b238, A\u03b240) and reduced longer species. The pH optimum is around 7.0 in both environments, with activity highest in mild acidic to mild alkaline range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are well-supported by experimental data in Figure 2 showing dramatic shifts in A\u03b2 profiles between DDM and POPC conditions. Mass spectrometry (Figure 2C-D) confirms the identity of cleavage products and sites. The pH-dependence studies (Figure 2A-B) provide systematic characterization across multiple pH values with consistent results across biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The enhanced processivity in POPC bilayers is independent of substrate N-terminus, as demonstrated by comparable behavior of C83 and C99 substrates. Both substrates show increased production of shorter cleavage products in POPC versus DDM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by direct experimental comparison in Figure 3, showing parallel processivity enhancement for both C83 (p3 products) and C99 (A\u03b2 products) in POPC versus DDM. The ECL-IA quantification provides statistical support (n=3 replicates). This validates C83 as a suitable surrogate for computational modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C87",
+      "C88"
+    ],
+    "result": "Homology modeling reveals that substrate-bound PSH contains key structural elements including TMD6a helix and a hybrid \u03b2-sheet between enzyme and substrate. Mutational analysis confirms that the putative \u03b22-strand (residues 213-217) is functionally critical for PSH activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are supported by structural modeling (Figure 4A-D) based on established templates and validated by experimental mutagenesis (Figure 4E). The mutations and deletions in the \u03b22-strand region show consistent, strong reductions in activity across multiple constructs in both DDM and POPC conditions, providing functional validation of the structural predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Molecular dynamics simulations reveal that PSH exhibits greater structural fluctuations in DDM micelles compared to POPC bilayers, particularly in TMD6a and hydrophilic loop 1. In DDM, TMD6a undergoes conformational transitions between \u03b1-helix and loop structures, while remaining stable in POPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 are supported by extensive MD simulation data (600 ns \u00d7 3 replicates per condition) shown in Figure 5 and supplements. RMSD, RMSF, and secondary structure analyses consistently show reduced flexibility in POPC versus DDM. Model 2 is justified as the working model based on lower RMSD and more realistic TMD6a behavior. The simulations used appropriate force fields and multiple independent runs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "TMD6a forms a hydrophobic patch that contacts the substrate near the \u03b5-cleavage site. DDM molecules can transiently insert into gaps between TMDs, forming non-specific hydrogen bonds that destabilize TMD6a, while well-ordered POPC molecules do not enter these gaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 are supported by detailed MD simulation analysis in Figure 6, including lipid order parameters, structural snapshots, and videos. The hydrophobic patch interactions are consistent with experimentally resolved \u03b3-secretase structures (C56). The mechanism of DDM insertion and TMD6a destabilization is clearly visualized and quantified through multiple metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C92",
+      "C93"
+    ],
+    "result": "Lysine mutations in the TMD6a hydrophobic patch (M172K, I173K, L175K, A176K) destabilize the helix in simulations and nearly abolish C99 cleavage activity in both DDM and POPC environments, confirming TMD6a as a critical structural element for substrate interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are strongly supported by combined computational (Figure 7A-E) and experimental validation (Figure 7F). All four mutations show consistent effects: increased RMSF in simulations and dramatic loss of activity in biochemical assays. The convergence of computational predictions and experimental results across multiple mutants provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C96",
+      "C97"
+    ],
+    "result": "The catalytic aspartate residues (D162-D220) adopt closer, proteolysis-compatible distances (<7.0 \u00c5) more frequently in POPC bilayers (~76%) compared to DDM micelles (~63%), suggesting enhanced formation of catalytically competent active site geometry in the membrane environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by MD simulation data in Figure 8A and supplements showing distance distributions and frequencies. The 6.8 \u00c5 distance in POPC is consistent with catalytically active geometries. However, the ~13% difference in frequency (76% vs 63%) is modest, and the claim would benefit from error estimates and statistical testing to confirm significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C98"
+    ],
+    "result": "The biotinylated TSA inhibitor Merck C shows markedly enhanced binding to PSH in POPC bilayers compared to DDM micelles. Both L-685,458 and Merck C inhibit PSH more effectively in POPC than DDM, supporting stabilization of the active site in the lipid bilayer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by affinity precipitation experiments (Figure 8C-D) and inhibition assays (Figure 8E-F) with appropriate controls including competitor L-685,458. Quantification shows statistically significant enhancement in POPC (n=4 replicates). The convergence of binding and inhibition data provides strong support for active site stabilization in bilayers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Only TSA inhibitors (L-685,458 and III-31C) effectively inhibit PSH, while non-TSA GSIs (DAPT, LY411575, Begacestat, MRK-560) are largely ineffective even at high concentrations. L-685,458 requires micromolar concentrations for PSH inhibition versus nanomolar for \u03b3-secretase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by systematic inhibitor screening (Figure 8G) and dose-response studies. The differential sensitivity to TSA versus non-TSA inhibitors is clearly demonstrated. However, the mechanistic interpretation (C76, C102) that interactions are \"too weak\" is speculative without direct binding measurements or structural data for the non-TSA inhibitors with PSH.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C105",
+      "C106",
+      "C114",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The lipid bilayer environment promotes formation of a conformationally stable enzyme-substrate complex and active site geometry by stabilizing TMD6a and reducing structural fluctuations, which is critical for efficient intramembrane proteolysis. This provides a molecular basis for the enhanced processivity observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C77-C80, C105-C106, C114, C116-C118) integrate the experimental and computational findings into a coherent mechanistic model. The claims are well-supported by the convergence of multiple lines of evidence: biochemical assays showing enhanced processivity, MD simulations revealing reduced flexibility, inhibitor binding demonstrating active site stabilization, and mutagenesis validating key structural elements. The qualitative agreement between simulation and experiment is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The findings support and extend previous observations on \u03b3-secretase showing that lipid environment affects processivity, and are consistent with computational and experimental studies suggesting FAD mutations cause structural destabilizations affecting substrate interactions and processivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 appropriately contextualize the current findings within prior literature. C107 is supported by citation to Szaruga et al. 2017 and the current data provide mechanistic insights. C108-C109 cite multiple computational and experimental studies showing FAD mutation effects, drawing reasonable parallels to the artificial destabilization in detergent micelles observed here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "PSH has a pH optimum shifted to neutral pH (~7.0) compared to \u03b3-secretase (pH 6.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by pH-dependent activity assays (Figure 2A) and comparison to cited literature for \u03b3-secretase. The shift is modest (0.5 pH units) but consistently observed across conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C99"
+    ],
+    "result": "Increased substrate residence time at the enzyme, which has been shown to be key for \u03b3-secretase processivity, likely contributes to enhanced PSH processivity in stable membrane environments. L-685,458 occupies similar binding sites as substrate in \u03b3-secretase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C99 appropriately cite prior work (Okochi et al. 2013, Dehury et al. 2019, Yang et al. 2021, Hitzenberger and Zacharias 2019) to support mechanistic interpretations. The connection to substrate residence time is reasonable but indirect, as residence time was not directly measured in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "A less stable enzyme-substrate complex in detergent micelles might account for differences in cleavage site usage and inhibition profiles observed in previous PSH studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is speculative, attempting to explain discrepancies in prior literature based on the current findings. While plausible, this hypothesis is not directly tested and would require systematic re-analysis of previous substrates under controlled conditions to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Available structures of GxGD-type proteases show catalytically inactive conformations with distant catalytic residues, presumably due to non-native environments. Upon substrate binding, the distance between catalytic aspartates decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by citations to structural studies (Bai et al. 2015b, Hu et al. 2011, Zhou et al. 2019, Yang et al. 2019). The interpretation that large distances represent inactive forms is reasonable based on mechanistic understanding of aspartyl proteases, though the role of crystallization/cryo-EM conditions is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Lipid bilayer-mediated stabilization of active-site geometry might be observable for other intramembrane proteases of different catalytic types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 is speculative extrapolation beyond the data. While the principle may apply broadly, this would require experimental validation with other protease families. The claim is appropriately presented as a suggestion rather than a conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establishing the importance of intramembrane proteases, the role of \u03b3-secretase in Alzheimer's disease, the structure and function of presenilin, and the properties of the archaeal homolog PSH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C26 are background/context claims supported by appropriate citations to established literature. These provide necessary context but are not novel findings of the current study.",
+    "result_type": "MINOR"
+  }
+]

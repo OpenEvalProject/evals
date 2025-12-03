@@ -1,0 +1,1955 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The ratio of microbial population size relative to the amount of host tissue, or 'microbial load', is a fundamental metric of colonization and infection.",
+    "claim_type": "EXPLICIT",
+    "source": "The ratio of microbial population size relative to the amount of host tissue, or 'microbial load', is a fundamental metric of colonization and infection, but it cannot be directly deduced from microbial amplicon data such as 16S rRNA gene counts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definitional statement establishing the concept of microbial load as a key measurement in microbiome research.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Microbial load cannot be directly deduced from microbial amplicon data such as 16S rRNA gene counts.",
+    "claim_type": "EXPLICIT",
+    "source": "The ratio of microbial population size relative to the amount of host tissue, or 'microbial load', is a fundamental metric of colonization and infection, but it cannot be directly deduced from microbial amplicon data such as 16S rRNA gene counts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement identifies a fundamental limitation of standard amplicon sequencing methods.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Existing methods to determine microbial load add substantial cost and/or experimental burden.",
+    "claim_type": "EXPLICIT",
+    "source": "Because existing methods to determine load, such as serial dilution plating, quantitative PCR, and whole metagenome sequencing add substantial cost and/or experimental burden, they are only rarely paired with amplicon sequencing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the observation that these methods are rarely paired with amplicon sequencing, implying practical barriers.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "hamPCR is a robust strategy to both quantify microbial load and describe interkingdom microbial community composition in a single amplicon library.",
+    "claim_type": "EXPLICIT",
+    "source": "We introduce host-associated microbe PCR (hamPCR), a robust strategy to both quantify microbial load and describe interkingdom microbial community composition in a single amplicon library.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main claim of the paper, supported by multiple experiments throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "hamPCR is accurate across multiple study systems, including nematodes and major crops.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate its accuracy across multiple study systems, including nematodes and major crops, and further present a cost-saving technique to reduce host overrepresentation in the library prior to sequencing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by experimental data from P. pacificus, T. aestivum, Z. mays, and C. annuum presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "A cost-saving technique can reduce host overrepresentation in the library prior to sequencing.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate its accuracy across multiple study systems, including nematodes and major crops, and further present a cost-saving technique to reduce host overrepresentation in the library prior to sequencing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 3 where host and microbial amplicons are separated and remixed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Amplicon counting-by-sequencing methods do not provide information on the density or load of the microbes.",
+    "claim_type": "EXPLICIT",
+    "source": "An expedient means of learning their composition in a sample is to sequence and count a defined number of 16S or 18S rRNA genes (hereafter rDNA), the internal transcribed spacer (ITS) of rRNA arrays, or other amplicons that distinguish microbial species in a sample. However, these common amplicon counting-by-sequencing methods do not provide information on the density or load of the microbes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-known limitation of compositional data in microbiome research.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Microbial sequence counts lack a denominator accounting for the amount of the habitat sampled.",
+    "claim_type": "EXPLICIT",
+    "source": "Critically, such microbial sequence counts lack a denominator accounting for the amount of the habitat sampled, and thus, sparsely-colonized and densely-colonized samples become indistinguishable, despite most study systems being open systems in which the total number of microbial cells can vary over many orders of magnitude.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why standard amplicon sequencing cannot distinguish between different levels of colonization.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Sparsely-colonized and densely-colonized samples become indistinguishable in standard amplicon sequencing.",
+    "claim_type": "EXPLICIT",
+    "source": "Critically, such microbial sequence counts lack a denominator accounting for the amount of the habitat sampled, and thus, sparsely-colonized and densely-colonized samples become indistinguishable, despite most study systems being open systems in which the total number of microbial cells can vary over many orders of magnitude.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of the compositional nature of amplicon data.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Most study systems are open systems in which the total number of microbial cells can vary over many orders of magnitude.",
+    "claim_type": "EXPLICIT",
+    "source": "Critically, such microbial sequence counts lack a denominator accounting for the amount of the habitat sampled, and thus, sparsely-colonized and densely-colonized samples become indistinguishable, despite most study systems being open systems in which the total number of microbial cells can vary over many orders of magnitude.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general characteristic of ecological systems.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "An increase in the abundance of one microbe reduces the relative abundance of all other microbes in compositional data.",
+    "claim_type": "EXPLICIT",
+    "source": "Another limitation of such compositional data is that because the sum of all microbes is constrained, an increase in the abundance of one microbe reduces the relative abundance of all other microbes, creating misleading interpretations in the absence of appropriate statistical methods (Barlow et al., 2020; Gloor et al., 2017; Morton et al., 2019; Tsilimigras and Fodor, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a well-documented mathematical property of compositional data, supported by multiple citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Compositional data can create misleading interpretations in the absence of appropriate statistical methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Another limitation of such compositional data is that because the sum of all microbes is constrained, an increase in the abundance of one microbe reduces the relative abundance of all other microbes, creating misleading interpretations in the absence of appropriate statistical methods (Barlow et al., 2020; Gloor et al., 2017; Morton et al., 2019; Tsilimigras and Fodor, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations to statistical literature on compositional data analysis.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Experimental determination of microbial load has led to important insights in microbiome research that would have been missed with relative abundance data.",
+    "claim_type": "EXPLICIT",
+    "source": "Experimental determination of the microbial load, for example by relating microbial abundance to sample volume, mass, or surface area, has led to important insights in microbiome research that otherwise would have been missed with relative abundance data (Humphrey and Whiteman, 2020; Niu et al., 2017; Props et al., 2017; Regalado et al., 2020; Smets et al., 2016; St\u00e4mmler et al., 2016; Tkacz et al., 2018; Vandeputte et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations to studies that have used microbial load measurements.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "For many host-associated microbiome samples, it is difficult or impossible to physically separate microbes from host tissues.",
+    "claim_type": "EXPLICIT",
+    "source": "For many host-associated microbiome samples, in particular those from plants (Regalado et al., 2020), nematodes (Ogier et al., 2020), insects (Ellegaard et al., 2020; Gendrin et al., 2015; Parker et al., 2020), and other organisms in which it is difficult or impossible to physically separate microbes from host tissues, a thorough DNA extraction yields both host and microbial DNA.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to studies on various host-associated microbiomes.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "A thorough DNA extraction from host-associated samples yields both host and microbial DNA.",
+    "claim_type": "EXPLICIT",
+    "source": "For many host-associated microbiome samples, in particular those from plants (Regalado et al., 2020), nematodes (Ogier et al., 2020), insects (Ellegaard et al., 2020; Gendrin et al., 2015; Parker et al., 2020), and other organisms in which it is difficult or impossible to physically separate microbes from host tissues, a thorough DNA extraction yields both host and microbial DNA.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a standard observation in DNA extraction protocols for host-associated samples.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The amount of DNA from host and microbe is directly proportional to the number of cells sampled.",
+    "claim_type": "EXPLICIT",
+    "source": "For such samples, the amount of DNA from host and microbe is directly proportional to the number of cells sampled (Davies, 1977; Massonnet et al., 2011), and therefore the ratio of microbial DNA to host DNA is an intrinsic measure of the microbial load of the sample (Humphrey and Whiteman, 2020; Karasov et al., 2019; Karasov et al., 2018; Lebeis et al., 2015; Regalado et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to studies establishing this relationship.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The ratio of microbial DNA to host DNA is an intrinsic measure of the microbial load of the sample.",
+    "claim_type": "EXPLICIT",
+    "source": "For such samples, the amount of DNA from host and microbe is directly proportional to the number of cells sampled (Davies, 1977; Massonnet et al., 2011), and therefore the ratio of microbial DNA to host DNA is an intrinsic measure of the microbial load of the sample (Humphrey and Whiteman, 2020; Karasov et al., 2019; Karasov et al., 2018; Lebeis et al., 2015; Regalado et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the fundamental principle underlying hamPCR, supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Researchers have attempted to use host rDNA amplified as a byproduct of microbial rDNA to calculate microbial load.",
+    "claim_type": "EXPLICIT",
+    "source": "Researchers have attempted to exploit this property and use the host rDNA amplified as a byproduct of microbial rDNA to calculate microbial load (Humphrey and Whiteman, 2020; Lebeis et al., 2015), but because host nuclear ribosomal arrays may have hundreds or thousands of copies (Rabanal et al., 2017), and organellar DNA is also overabundant, these methods are inefficient and require noisy interventions to increase the microbial signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous attempts at this approach.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Host nuclear ribosomal arrays may have hundreds or thousands of copies.",
+    "claim_type": "EXPLICIT",
+    "source": "Researchers have attempted to exploit this property and use the host rDNA amplified as a byproduct of microbial rDNA to calculate microbial load (Humphrey and Whiteman, 2020; Lebeis et al., 2015), but because host nuclear ribosomal arrays may have hundreds or thousands of copies (Rabanal et al., 2017), and organellar DNA is also overabundant, these methods are inefficient and require noisy interventions to increase the microbial signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to a study on ribosomal copy number variation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Using host rDNA to calculate microbial load is inefficient and requires noisy interventions to increase the microbial signal.",
+    "claim_type": "EXPLICIT",
+    "source": "Researchers have attempted to exploit this property and use the host rDNA amplified as a byproduct of microbial rDNA to calculate microbial load (Humphrey and Whiteman, 2020; Lebeis et al., 2015), but because host nuclear ribosomal arrays may have hundreds or thousands of copies (Rabanal et al., 2017), and organellar DNA is also overabundant, these methods are inefficient and require noisy interventions to increase the microbial signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the high copy number of ribosomal arrays.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Whole metagenome sequencing can in principle describe the microbial community composition and measure the microbial load.",
+    "claim_type": "EXPLICIT",
+    "source": "Sufficiently deep whole metagenome sequencing (WMS) also can in principle describe the microbial community composition and measure the microbial load, but is rarely practical because of a similar overrepresentation of host DNA (Karasov et al., 2019; Regalado et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to WMS studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Whole metagenome sequencing is rarely practical because of overrepresentation of host DNA.",
+    "claim_type": "EXPLICIT",
+    "source": "Sufficiently deep whole metagenome sequencing (WMS) also can in principle describe the microbial community composition and measure the microbial load, but is rarely practical because of a similar overrepresentation of host DNA (Karasov et al., 2019; Regalado et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to WMS studies that encountered this problem.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "WMS of a leaf extract from wild Arabidopsis thaliana typically yields >95% plant DNA and <5% microbial DNA.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, WMS of a leaf extract from wild Arabidopsis thaliana typically yields >95% plant DNA and <5% microbial DNA.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specific example illustrating the problem of host DNA overrepresentation in WMS.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Many WMS reads remain unclassifiable and thus unquantifiable in complex samples.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, many WMS reads remain unclassifiable and thus unquantifiable in complex samples (Karasov et al., 2019; Regalado et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to WMS studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Researchers commonly combine amplicon sequencing with an additional orthogonal method.",
+    "claim_type": "EXPLICIT",
+    "source": "Most commonly, researchers combine amplicon sequencing with an additional orthogonal method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the list of methods and citations that follow this statement.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Combining amplicon sequencing with other approaches requires more work, consumes more sample material, and introduces technical caveats.",
+    "claim_type": "EXPLICIT",
+    "source": "While combining amplicon sequencing with any of these other approaches improves data, it requires more work, consumes more sample material, and introduces technical caveats, such as a reliance on accurately pipetting small quantities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about the practical limitations of combining multiple methods.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "hamPCR uses a two-step PCR protocol.",
+    "claim_type": "EXPLICIT",
+    "source": "We accomplish this with a two-step PCR protocol (Carlson et al., 2013; Gohl et al., 2016; Lundberg et al., 2013; Symeonidi et al., 2020; Wen and Zhang, 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to other studies using two-step PCR protocols.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "In hamPCR, gene-specific primer pairs bind to the 'raw' templates in a first short step, which is run for only two cycles.",
+    "claim_type": "EXPLICIT",
+    "source": "In hamPCR, gene-specific primer pairs bind to the 'raw' templates in a first short step, which is run for only two cycles to limit propagating amplification biases related to primer annealing and primer availability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the HM-tagging step of the hamPCR protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The first step of hamPCR is run for only two cycles to limit propagating amplification biases related to primer annealing and primer availability.",
+    "claim_type": "EXPLICIT",
+    "source": "In hamPCR, gene-specific primer pairs bind to the 'raw' templates in a first short step, which is run for only two cycles to limit propagating amplification biases related to primer annealing and primer availability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the rationale for using only two cycles in the HM-tagging step.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "In the second exponential step of hamPCR, a single set of primers with complementarity to the universal overhangs add barcodes and sequencing adapters.",
+    "claim_type": "EXPLICIT",
+    "source": "In the second exponential step, a single set of primers with complementarity to the universal overhangs add barcodes and sequencing adapters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the exponential PCR step of the hamPCR protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Co-amplification of diverse fragments is used in many RNA-seq and WMS protocols.",
+    "claim_type": "EXPLICIT",
+    "source": "Such co-amplification of diverse fragments is used in many RNA-seq and WMS protocols (Kukurba and Montgomery, 2015; Quince et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to RNA-seq and WMS literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Carlson et al., 2013 used a two-step PCR including a multiplexed first step of five to seven cycles to sequence and quantify both variable and joining segments at human T and B cell receptor loci.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, Carlson et al., 2013 similarly used a two-step PCR including a multiplexed first step of five to seven cycles to sequence and quantify both variable and joining segments at human T and B cell receptor loci, providing strong proof-of-concept for our method applied to the microbiome.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a citation to a previous study that used a similar approach.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The host and microbe amplicons in hamPCR are designed to have slightly different lengths so they can be resolved by electrophoresis for quality control.",
+    "claim_type": "EXPLICIT",
+    "source": "We designed our host and microbe amplicons to have slightly different lengths, such that they can be resolved by electrophoresis for quality control.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in the gel images throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "After pooling finished sequencing libraries, the amplicons can be separately purified and re-mixed at any favorable ratio prior to sequencing.",
+    "claim_type": "EXPLICIT",
+    "source": "We further show that after pooling finished sequencing libraries, the amplicons can be separately purified and re-mixed at any favorable ratio prior for sequencing (for example, with host DNA representing an affordable 5\u201310%), and sequence counts can be accurately scaled back to original levels in-silico.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Sequence counts can be accurately scaled back to original levels in-silico after remixing host and microbial amplicons.",
+    "claim_type": "EXPLICIT",
+    "source": "We further show that after pooling finished sequencing libraries, the amplicons can be separately purified and re-mixed at any favorable ratio prior for sequencing (for example, with host DNA representing an affordable 5\u201310%), and sequence counts can be accurately scaled back to original levels in-silico.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 3 where the R2 coefficient of determination was 0.99.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "In hamPCR, samples with initially unfavorable host-to-microbe ratios can be easily adjusted prior to sequencing without loss of information.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, in stark contrast to WMS, samples with initially unfavorable host-to-microbe ratios can be easily adjusted prior to sequencing without loss of information.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "hamPCR has the potential to supplant traditional microbial amplicon sequencing in host-associated microbiomes.",
+    "claim_type": "EXPLICIT",
+    "source": "Because of the practical simplicity and flexibility of hamPCR, it has the potential to supplant traditional microbial amplicon sequencing in host-associated microbiomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative claim about the future impact of the method.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The HM-tagging primers are cleaned with Solid Phase Reversible Immobilization (SPRI) magnetic beads.",
+    "claim_type": "EXPLICIT",
+    "source": "The HM-tagging primers are then cleaned with Solid Phase Reversible Immobilization (SPRI) magnetic beads (Rohland and Reich, 2012; Appendix 1\u2014figure 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "An exponential PCR of 20\u201330 cycles is performed using universal barcoded primers after the HM-tagging step.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, an exponential PCR of 20\u201330 cycles is performed using universal barcoded primers (Figure 1a, Appendix 1\u2014figure 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail shown in Figure 1a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The GIGANTEA (GI) gene was targeted as a host amplicon in A. thaliana samples.",
+    "claim_type": "EXPLICIT",
+    "source": "As a host amplicon in A. thaliana samples, we targeted a fragment of the GIGANTEA (GI) gene, which is well conserved and present as a single copy in A. thaliana and many other plant species (Duarte et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to a study on the GI gene.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The GIGANTEA (GI) gene is well conserved and present as a single copy in A. thaliana and many other plant species.",
+    "claim_type": "EXPLICIT",
+    "source": "As a host amplicon in A. thaliana samples, we targeted a fragment of the GIGANTEA (GI) gene, which is well conserved and present as a single copy in A. thaliana and many other plant species (Duarte et al., 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to a study on the GI gene.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Widely used regions of 16S rDNA were initially targeted as microbial amplicons.",
+    "claim_type": "EXPLICIT",
+    "source": "As microbial amplicons, we initially targeted widely used regions of 16S rDNA.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological choice based on established practices.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "A synthetic titration panel was made combining varying amounts of pure A. thaliana plant DNA with pure bacterial DNA.",
+    "claim_type": "EXPLICIT",
+    "source": "To assess the technical reproducibility of the protocol, we made a titration panel of artificial samples combining varying amounts of pure A. thaliana plant DNA with pure bacterial DNA that reflects a simple synthetic community (Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is described in the Materials and methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The synthetic titration panel represented a realistic range of bacterial concentrations as previously observed from WMS of wild leaves, ranging from about 0.25% to 24% bacterial DNA.",
+    "claim_type": "EXPLICIT",
+    "source": "These represented a realistic range of bacterial concentrations as previously observed from WMS of wild leaves, ranging from about 0.25% to 24% bacterial DNA (Regalado et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to a previous WMS study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "All DNA preps employed heavy bead beating to ensure thorough lysis of both host and microbes.",
+    "claim_type": "EXPLICIT",
+    "source": "All DNA preps employed heavy bead beating to ensure thorough lysis of both host and microbes, as an incomplete DNA extraction can lead to underrepresentation of hard-to-lyse cells (Albertsen et al., 2015; Yuan et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to studies on DNA extraction methods.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "An incomplete DNA extraction can lead to underrepresentation of hard-to-lyse cells.",
+    "claim_type": "EXPLICIT",
+    "source": "All DNA preps employed heavy bead beating to ensure thorough lysis of both host and microbes, as an incomplete DNA extraction can lead to underrepresentation of hard-to-lyse cells (Albertsen et al., 2015; Yuan et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to studies on DNA extraction methods.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Three commonly-used 16S rDNA amplicons for the V4, V3V4, and V5V6V7 variable regions were paired with either a 502 bp or 466 bp GI amplicon.",
+    "claim_type": "EXPLICIT",
+    "source": "We applied hamPCR to the panel, pairing each of three commonly-used 16S rDNA amplicons for the V4, V3V4, and V5V6V7 variable regions with either a 502 bp or 466 bp GI amplicon (Materials and methods, Supplementary file 1), such that the host and microbial amplicons differed by approximately 80 bp in length and were resolvable by gel electrophoresis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The host and microbial amplicons differed by approximately 80 bp in length and were resolvable by gel electrophoresis.",
+    "claim_type": "EXPLICIT",
+    "source": "We applied hamPCR to the panel, pairing each of three commonly-used 16S rDNA amplicons for the V4, V3V4, and V5V6V7 variable regions with either a 502 bp or 466 bp GI amplicon (Materials and methods, Supplementary file 1), such that the host and microbial amplicons differed by approximately 80 bp in length and were resolvable by gel electrophoresis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 1b and Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "In all pairings of host and microbial amplicons, the GI band intensity increased as the 16S rDNA band intensity decreased.",
+    "claim_type": "EXPLICIT",
+    "source": "In all pairings, the GI band intensity increased as the 16S rDNA band intensity decreased (Figure 1b, Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 1b and Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "PNAs do not work for all plant hosts.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that although these PNAs are widely used and extremely effective, they do not work for all plant hosts (Fitzpatrick et al., 2018) and they can interfere with analysis of certain bacteria present in some environments (Jackrel et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to studies on PNA limitations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "PNAs can interfere with analysis of certain bacteria present in some environments.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that although these PNAs are widely used and extremely effective, they do not work for all plant hosts (Fitzpatrick et al., 2018) and they can interfere with analysis of certain bacteria present in some environments (Jackrel et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to a study on PNA limitations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "There was high consistency between the four replicates of the synthetic titration panel.",
+    "claim_type": "EXPLICIT",
+    "source": "There was high consistency between the four replicates, more than what was visually apparent in the gel (Figure 1c, Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 1c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "hamPCR accurately captured consistent and accurate quantification of absolute microbial abundance from 0 up to about 16% total bacterial DNA.",
+    "claim_type": "EXPLICIT",
+    "source": "Plotting the data with a fourth-root transformed Y axis for better visualization of low bacterial loads, we observed consistent and accurate quantification of absolute microbial abundance from 0 up to about 16% total bacterial DNA (Figure 1d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 1d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Through the range of 0 to 16% bacterial DNA, the actual sequence counts for total bacteria matched theoretical expectations based on the volumes pipetted to make the titration.",
+    "claim_type": "EXPLICIT",
+    "source": "Through this range, the actual sequence counts for total bacteria matched theoretical expectations based on the volumes pipetted to make the titration (solid black line, Figure 1d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 1d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "At 16% bacterial DNA, bacteria contributed more than 96% of sequences, and the microbe-to-host template ratio was near 25.",
+    "claim_type": "EXPLICIT",
+    "source": "At 16% bacterial DNA, bacteria contributed more than 96% of sequences, and the microbe-to-host template ratio was near 25.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a calculation based on the data in Figure 1d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "At higher microbial loads, the decrease in precision was likely exacerbated by the effects of small numbers.",
+    "claim_type": "EXPLICIT",
+    "source": "At higher microbial loads the trend was still apparent, and the decrease in precision was likely exacerbated by the effects of small numbers; when the host ASV abundance is used as a denominator and the abundance approaches 0, load approaches infinity and sampling error has a greater and greater influence on the quotient.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on statistical principles.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "When the host ASV abundance is used as a denominator and the abundance approaches 0, load approaches infinity and sampling error has a greater influence on the quotient.",
+    "claim_type": "EXPLICIT",
+    "source": "At higher microbial loads the trend was still apparent, and the decrease in precision was likely exacerbated by the effects of small numbers; when the host ASV abundance is used as a denominator and the abundance approaches 0, load approaches infinity and sampling error has a greater and greater influence on the quotient.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical explanation for the loss of precision at high microbial loads.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Samples for which the noise factor N > 0.22 should only be classified as 'highly colonized', and should not be used for quantitative measurements.",
+    "claim_type": "EXPLICIT",
+    "source": "We determined conservatively that samples for which N > 0.22 should only be classified as 'highly colonized', and should not be used for quantitative measurements (Appendix 1\u2014figure 3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a threshold defined by the authors based on their analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Only a minority of highly infected hosts reached bacterial abundances above the highly quantitative range.",
+    "claim_type": "EXPLICIT",
+    "source": "In our case, only a minority of highly infected hosts reached bacterial abundances above the highly quantitative range.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the authors' experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The inclusion of a host amplicon in the reaction did not introduce taxonomic biases.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the inclusion of a host amplicon in the reaction did not introduce taxonomic biases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the comparison in Figure 2c showing R2 of 0.99.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Comparing pure 16S rDNA replicates to each other resulted in a coefficient of determination R2 of 0.99.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, this resulted in a nearly perfect correlation, with a coefficient of determination R2 of 0.99 and abundance distributions that were indistinguishable by a Kolmogorov\u2013Smirnov test (Figure 2b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 2b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Comparing pure 16S rDNA replicates to rescaled hamPCR replicates resulted in R2 of 0.99.",
+    "claim_type": "EXPLICIT",
+    "source": "In this comparison as well, R2 was 0.99 and the distributions were essentially identical (Figure 2c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 2c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "For the primers used, there was no apparent influence of additional HM-tagging cycles on the distribution of host and 16S rDNA ASV abundances.",
+    "claim_type": "EXPLICIT",
+    "source": "Surprisingly, for the primers used here, there was no apparent influence of additional HM-tagging cycles, as 7\u201310 HM-tagging cycles yielded the same distribution of host and 16S rDNA ASV abundances as two cycles (Kolmogorov-Smirnov test, p > 0.47).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 2d and e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Application of hamPCR to the 1:1 synthetic template yielded an average of 56.5% host GI and 43.5% bacteria, invariant with HM-tagging cycle number.",
+    "claim_type": "EXPLICIT",
+    "source": "We noticed that application of hamPCR to the 1:1 synthetic template yielded an average of 56.5% host GI and 43.5% bacteria, invariant with HM-tagging cycle number (Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 2\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The slight bias in favor of GI in the 1:1 synthetic template may be a result of slight differences in HM-tagging primer efficiency or primer concentration.",
+    "claim_type": "EXPLICIT",
+    "source": "This slight and consistent bias in favor of GI may be a result of slight differences in HM-tagging primer efficiency or primer concentration, and should be fine-tunable by altering primer concentration (Carlson et al., 2013; Appendix 1\u2014figure 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference supported by a citation and data in Appendix 1\u2014figure 4.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Through the typical template range of 5\u2013100 ng, there was no difference in microbe or host ASV abundances.",
+    "claim_type": "EXPLICIT",
+    "source": "Through the typical range, there was no difference in microbe or host ASV abundances.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Appendix 1\u2014figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "At 200 ng or above template concentration, the host amplicon seemed to be slightly favored, possibly because the 16S rDNA primers started to become limiting.",
+    "claim_type": "EXPLICIT",
+    "source": "At 200 ng or above, the host amplicon seemed to be slightly favored, possibly because the 16S rDNA primers started to become limiting at these concentrations (Appendix 1\u2014figure 5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Appendix 1\u2014figure 5 and is an inference about primer limitation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "When fourth-root abundances for ASVs above a 0.05% threshold were compared between the original and reconstructed libraries, the R2 coefficient of determination was 0.99.",
+    "claim_type": "EXPLICIT",
+    "source": "When the fourth-root abundances for ASVs above a 0.05% threshold were compared between the original and reconstructed libraries, the R2 coefficient of determination was 0.99, with no significant difference between the distributions (Kolmogorov-Smirnov test, p > 0.86).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 3f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "There was no significant difference between the distributions of the original and reconstructed libraries (Kolmogorov-Smirnov test, p > 0.86).",
+    "claim_type": "EXPLICIT",
+    "source": "When the fourth-root abundances for ASVs above a 0.05% threshold were compared between the original and reconstructed libraries, the R2 coefficient of determination was 0.99, with no significant difference between the distributions (Kolmogorov-Smirnov test, p > 0.86).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statistical test result shown in Figure 3f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "If hamPCR libraries have already been prepared and the host amplicon is overabundant, the host representation in the pooled libraries can be easily and accurately reduced using basic agarose gel technologies.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, if hamPCR libraries have already been prepared and the host amplicon is overabundant, the host representation in the pooled libraries can be easily and accurately reduced using basic agarose gel technologies to enable more efficient sequencing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Across WMS and the three hamPCR amplicon combinations, the relative abundance of bacterial families was consistent.",
+    "claim_type": "EXPLICIT",
+    "source": "Across WMS and the three hamPCR amplicon combinations, the relative abundance of bacterial families was consistent (Figure 4a\u2013d: i), with slight deviations likely due to the different taxonomic classification pipeline used for the metagenome reads (Regalado et al., 2020), as well as known biases resulting from amplification or classification of different 16S rDNA variable regions (Graspeuntner et al., 2018; Thijs et al., 2017).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4a-d and supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Slight deviations in bacterial family relative abundance between WMS and hamPCR were likely due to the different taxonomic classification pipeline used for the metagenome reads and known biases resulting from amplification or classification of different 16S rDNA variable regions.",
+    "claim_type": "EXPLICIT",
+    "source": "Across WMS and the three hamPCR amplicon combinations, the relative abundance of bacterial families was consistent (Figure 4a\u2013d: i), with slight deviations likely due to the different taxonomic classification pipeline used for the metagenome reads (Regalado et al., 2020), as well as known biases resulting from amplification or classification of different 16S rDNA variable regions (Graspeuntner et al., 2018; Thijs et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference supported by citations.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "After converting both WMS and hamPCR bacterial reads to load by dividing by the plant read count in each sample, a similar pattern was recovered.",
+    "claim_type": "EXPLICIT",
+    "source": "After converting both WMS and hamPCR bacterial reads to load by dividing by the plant read count in each sample, we recovered a similar pattern despite the quantification method, with decreasingly lower total loads progressing from plant S1 to plant S8, and individual bacterial family loads showing similar patterns (Figure 4a\u2013d: ii, iii).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4a-d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "hamPCR using V4 rDNA had the highest correlation to WGS.",
+    "claim_type": "EXPLICIT",
+    "source": "To quantify the consistency of hamPCR load estimates with WGS load estimates, we plotted the loads against each other and found strong positive correlations, with hamPCR using V4 rDNA having the highest correlation to WGS (Figure 4e\u2013g).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 4e-g.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Relative differences in load estimates when comparing the different hamPCR amplicons are likely in part due to different affinities of the 16S rDNA primer pairs for their targets in different bacterial species, and rDNA copy number variation among the microbial families.",
+    "claim_type": "EXPLICIT",
+    "source": "Relative differences in load estimates when comparing the different hamPCR amplicons are likely in part due to different affinities of the 16S rDNA primer pairs for their targets in different bacterial species, and rDNA copy number variation among the microbial families (Kembel et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference supported by a citation.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "A combination of all three amplicons (ITSo, 16S rDNA, and GI) seemed to work efficiently for the V4 region.",
+    "claim_type": "EXPLICIT",
+    "source": "A combination of all three amplicons seemed to work efficiently for the V4 region (Figure 5\u2014figure supplement 1), and with this encouraging result, we set up a simple infection experiment.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The reference accession Col-0 is resistant to Hpa 466\u20131 but susceptible to Pst DC3000.",
+    "claim_type": "EXPLICIT",
+    "source": "We used two A. thaliana genotypes: the reference accession Col-0, which is resistant to Hpa 466\u20131 but susceptible to Pst DC3000, and an enhanced disease susceptibility 1 (eds1-1) mutant, which has a well-studied defect in a lipase-like protein necessary for many disease resistance responses and which is susceptible to both pathogens (Bhandari et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The eds1-1 mutant has a well-studied defect in a lipase-like protein necessary for many disease resistance responses and is susceptible to both Hpa 466-1 and Pst DC3000.",
+    "claim_type": "EXPLICIT",
+    "source": "We used two A. thaliana genotypes: the reference accession Col-0, which is resistant to Hpa 466\u20131 but susceptible to Pst DC3000, and an enhanced disease susceptibility 1 (eds1-1) mutant, which has a well-studied defect in a lipase-like protein necessary for many disease resistance responses and which is susceptible to both pathogens (Bhandari et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The eds1-1 plants inoculated with Hpa 466\u20131 became heavily infected and sporangiophores were too numerous to count.",
+    "claim_type": "EXPLICIT",
+    "source": "The eds1-1 plants inoculated with Hpa 466\u20131 became heavily infected and sporangiophores were too numerous to count.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the infection experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "No visible bacterial disease symptoms were present on any of the plants, likely because the cool temperature decelerated bacterial growth and symptom appearance.",
+    "claim_type": "EXPLICIT",
+    "source": "No visible bacterial disease symptoms were present on any of the plants, likely because the cool temperature decelerated bacterial growth and symptom appearance (Huot et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation with an inference supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Pst DC3000 CFUs were recovered from the inoculated plants despite the lack of bacterial symptoms.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the lack of bacterial symptoms, we recovered Pst DC3000 CFUs from the inoculated plants.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 5c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Intensity of the actin product correlated with visual Hpa symptoms.",
+    "claim_type": "EXPLICIT",
+    "source": "Intensity of the actin product correlated with visual Hpa symptoms (Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "A standard bacterial relative abundance plot failed to detect obvious differences between microbial communities on Col-0 and eds1-1 plants.",
+    "claim_type": "EXPLICIT",
+    "source": "A standard bacterial relative abundance plot, as would be obtained from pure 16S rDNA data, confirmed the presence of Pst DC3000 in the bacteria-infected samples, and in addition revealed that Hpa-infected samples had a different bacterial community than uninfected samples (Figure 5a). Importantly, it failed to detect obvious differences between microbial communities on Col-0 and eds1-1 plants.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "After including the actin ASV from Hpa and converting all abundances to microbial load, a striking difference became apparent between Col-0 and eds1-1, with eds1-1 supporting higher bacterial and Hpa abundances.",
+    "claim_type": "EXPLICIT",
+    "source": "However, after including the actin ASV from Hpa and converting all abundances to microbial load, a striking difference became apparent between Col-0 and eds1-1, with eds1-1 supporting higher bacterial and Hpa abundances (Figure 5b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The difference in microbial load between Col-0 and eds1-1 is expected from existing knowledge and supported by Pst DC3000 CFU counts.",
+    "claim_type": "EXPLICIT",
+    "source": "This is expected from existing knowledge (Bhandari et al., 2019), and supported by Pst DC3000 CFU counts from the same plants (Figure 5c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by a citation and data in Figure 5c.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Hpa-challenged plants supported more bacteria than buffer-treated plants, indicating either that successful bacterial colonizers were unintentionally co-inoculated with Hpa, or that Hpa caused changes in the native flora.",
+    "claim_type": "EXPLICIT",
+    "source": "The microbial load plot also revealed that Hpa-challenged plants supported more bacteria than buffer-treated plants, indicating either that successful bacterial colonizers were unintentionally co-inoculated with Hpa, or that Hpa caused changes in the native flora (Figure 5b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference based on the data in Figure 5b.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "hamPCR is quantitative for at least two independent microbial amplicons in real-world samples.",
+    "claim_type": "EXPLICIT",
+    "source": "These data, combined with the infection experiment, show that hamPCR is quantitative for at least two independent microbial amplicons in real-world samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the data from the Hpa/Pst infection experiment in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Over three replicates, hamPCR accurately captured the changing bacterial loads of the gut microbes in P. pacificus.",
+    "claim_type": "EXPLICIT",
+    "source": "Over three replicates, hamPCR accurately captured the changing bacterial loads of the gut microbes (Figure 5e, Figure 5\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5e and Figure 5\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Wheat is the most widely grown crop in the world.",
+    "claim_type": "EXPLICIT",
+    "source": "We similarly validated the technique for fungal and bacterial microbes of Triticum aestivum (bread wheat), because it is the most widely grown crop in the world yet one of the most difficult to study due to being hexaploid and having a 16 Gb haploid genome (Appels et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Wheat is one of the most difficult crops to study due to being hexaploid and having a 16 Gb haploid genome.",
+    "claim_type": "EXPLICIT",
+    "source": "We similarly validated the technique for fungal and bacterial microbes of Triticum aestivum (bread wheat), because it is the most widely grown crop in the world yet one of the most difficult to study due to being hexaploid and having a 16 Gb haploid genome (Appels et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "RNA polymerase A1 (PolA1) is present as a single copy in each of the A, B, and D subgenomes of wheat.",
+    "claim_type": "EXPLICIT",
+    "source": "To simulate different levels of infection, we titrated DNA from axenically-grown wheat leaves into DNA from wheat roots that had been cultivated in non-sterile soil and applied hamPCR, using as a host gene RNA polymerase A1 (PolA1), which is present as a single copy in each of the A, B, and D subgenomes (Rai et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Expected abundance patterns were recovered in the wheat titration panel both for ITS1 rDNA primers and for V4 16S rDNA primers.",
+    "claim_type": "EXPLICIT",
+    "source": "We recovered expected abundance patterns in the panel both for ITS1 rDNA primers (Figure 5f, Figure 5\u2014figure supplements 3 and 4) and for V4 16S rDNA primers (Figure 5\u2014figure supplements 3 and 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5f and Figure 5\u2014figure supplements 3 and 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Increasing the ratio of the ITS1:PolA1 HM-tagging primers from 1:1 to 2:1 successfully enriched the ITS1 amplicon without sacrificing relative load determination between samples.",
+    "claim_type": "EXPLICIT",
+    "source": "However, increasing the ratio of the ITS1:PolA1 HM-tagging primers from 1:1 to 2:1 (Materials and methods) successfully enriched the ITS1 amplicon without sacrificing relative load determination between samples (Figure 5\u2014figure supplements 3 and 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 5\u2014figure supplement 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Sequencing the hamPCR libraries from the pepper infiltration panel revealed that as the Xe 85\u201310 infiltration concentration increased, so did the resulting load of the ASV corresponding to Xe 85\u201310.",
+    "claim_type": "EXPLICIT",
+    "source": "Sequencing the hamPCR libraries revealed that as the Xe 85\u201310 infiltration concentration increased, so did the resulting load of the ASV corresponding to Xe 85\u201310 (Figure 6\u2014figure supplement 1 and Figure 6\u2014figure supplement 2a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6\u2014figure supplement 2a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The other major bacterial classes detected in the infiltration panel, comprising commensal bacteria already present in the leaves, had similar, low abundances, regardless of the amount of infiltrated Xe 85\u201310.",
+    "claim_type": "EXPLICIT",
+    "source": "The other major bacterial classes detected in the infiltration panel, comprising commensal bacteria already present in the leaves, had similar, low abundances, regardless of the amount of infiltrated Xe 85\u201310 (Figure 6\u2014figure supplement 2b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6\u2014figure supplement 2b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The hamPCR and qPCR Xe 85\u201310 ASV loads showed nearly the same exponential differences between samples.",
+    "claim_type": "EXPLICIT",
+    "source": "When we scaled hamPCR and qPCR values to fit the range of CFU counts recovered from the same lysates (Materials and methods), the hamPCR and qPCR Xe 85\u201310 ASV loads showed nearly the same exponential differences between samples, although at lower infiltration concentrations, qPCR and hamPCR gave a slightly higher estimate than CFU counts (Figure 6\u2014figure supplement 2c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6\u2014figure supplement 2c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "At lower infiltration concentrations, qPCR and hamPCR gave a slightly higher estimate than CFU counts.",
+    "claim_type": "EXPLICIT",
+    "source": "When we scaled hamPCR and qPCR values to fit the range of CFU counts recovered from the same lysates (Materials and methods), the hamPCR and qPCR Xe 85\u201310 ASV loads showed nearly the same exponential differences between samples, although at lower infiltration concentrations, qPCR and hamPCR gave a slightly higher estimate than CFU counts (Figure 6\u2014figure supplement 2c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6\u2014figure supplement 2c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The presence of a low level of native, antibiotic-sensitive Xe on the leaves could potentially explain the discrepancy between DNA-based methods and CFU counts.",
+    "claim_type": "EXPLICIT",
+    "source": "The presence of a low level of native, antibiotic-sensitive Xe on the leaves could potentially explain this discrepancy, because this could be detected by DNA-based methods but not culturing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative explanation for the observed discrepancy.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "A rapid increase in Xe 85\u201310 ASV abundance was observed as a result of rapid bacterial growth, leveling off at 7 dpi.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed a rapid increase in Xe 85\u201310 ASV abundance as a result of rapid bacterial growth, leveling off at 7 dpi (Figure 6a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "By 7 dpi, bacterial growth had reduced the host GI amplicon abundances for most samples to levels at which load calculations become less reliable at their sequencing depth.",
+    "claim_type": "EXPLICIT",
+    "source": "By 7 dpi, bacterial growth had reduced the host GI amplicon abundances for most samples to levels at which load calculations become less reliable at their sequencing depth (as defined in Appendix 1\u2014figure 3d); this was also the case at 9 and 11 dpi (gray box, Figure 6a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Scaled Xe 85\u201310 ASV loads compared very closely to CFU counts and to scaled qPCR abundances up to 7 dpi.",
+    "claim_type": "EXPLICIT",
+    "source": "Scaled Xe 85\u201310 ASV loads compared very closely to CFU counts and to scaled qPCR abundances up to 7 dpi (Figure 6c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The other major bacterial classes (Actinobacteria and the Alpha-, Beta-, and Gammaproteobacteria) also increased in microbial load through time.",
+    "claim_type": "EXPLICIT",
+    "source": "Notably, the other major bacterial classes, Actinobacteria and the Alpha-, Beta-, and Gammaproteobacteria, also increased in microbial load through time, a trend significant even comparing 2 dpi to 0 dpi (Figure 6b, Mann-Whitney U-test, p < 0.001).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6b with statistical support.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The increase in load for the other bacterial classes was not a PCR artifact due to high Xe 85\u201310 titers.",
+    "claim_type": "EXPLICIT",
+    "source": "This increase in load for the other classes was not a PCR artifact due to high Xe 85\u201310 titers, because in the infiltration panel, measurements for these classes had not changed even at higher pathogen concentrations (Figure 6\u2014figure supplement 2b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by data in Figure 6\u2014figure supplement 2b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The subtle but biologically significant effect of infection on growth of commensal bacteria would be completely invisible in a pure 16S rDNA amplicon analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "This subtle but biologically significant effect of infection on growth of commensal bacteria would be completely invisible in a pure 16S rDNA amplicon analysis, which would only show Xe 85\u201310 overtaking the community.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the comparison of relative abundance and load data.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "In some maize samples, the genus Sphingomonas exceeded 80% of the bacterial community.",
+    "claim_type": "EXPLICIT",
+    "source": "In some samples, the genus Sphingomonas exceeded 80% of the bacterial community, creating especially strong compositionality effects; other abundant genera Perlucidibaca, Limnohabitans, and Acidovorax visibly increased in relative abundance as Sphingomonas became less abundant (Figure 6d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Other abundant genera Perlucidibaca, Limnohabitans, and Acidovorax visibly increased in relative abundance as Sphingomonas became less abundant.",
+    "claim_type": "EXPLICIT",
+    "source": "In some samples, the genus Sphingomonas exceeded 80% of the bacterial community, creating especially strong compositionality effects; other abundant genera Perlucidibaca, Limnohabitans, and Acidovorax visibly increased in relative abundance as Sphingomonas became less abundant (Figure 6d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The bacterial load of Perlucidibaca, Limnohabitans, and Acidovorax appeared mostly unaffected by Sphingomonas bacterial load.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, the bacteria load of these same genera appeared mostly unaffected by Sphingomonas bacterial load (Figure 6e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "A Pearson correlation network made with relative abundance data revealed that Sphingomonas was negatively correlated with many genera.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, a Pearson correlation network made with relative abundance data revealed that Sphingomonas was negatively correlated with many genera, a well-known and problematic artifact of compositionality (Friedman and Alm, 2012; Figure 6f).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6f and supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Negative correlations with Sphingomonas in relative abundance data are a well-known and problematic artifact of compositionality.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, a Pearson correlation network made with relative abundance data revealed that Sphingomonas was negatively correlated with many genera, a well-known and problematic artifact of compositionality (Friedman and Alm, 2012; Figure 6f).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "A Pearson correlation network made with microbial load data showed that Sphingomonas, despite having the highest median abundance of any genus, is among the genera least correlated with others.",
+    "claim_type": "EXPLICIT",
+    "source": "A Pearson correlation network made with microbial load data was remarkable in that Sphingomonas, despite having the highest median abundance of any genus, is among the genera least correlated with others (Figure 6f).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is shown in Figure 6f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "The SparCC correlation network avoided the spurious negative correlations with Sphingomonas, although it still implicated the genus more strongly than the correlation network built with hamPCR data.",
+    "claim_type": "EXPLICIT",
+    "source": "We also calculated a correlation network using SparCC (Friedman and Alm, 2012), which estimates Pearson correlations on log-transformed components to avoid compositionality artifacts. This network did indeed avoid the spurious negative correlations with Sphingomonas, although it still implicated the genus more strongly than the correlation network built with hamPCR data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 6f and supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "Overrepresentation of a few abundant organisms is a feature shared by most ecological communities.",
+    "claim_type": "EXPLICIT",
+    "source": "Overrepresentation of a few abundant organisms is a feature shared by most ecological communities (McGill et al., 2007), including microbial communities (Zhou et al., 2013); overcoming this compositionality problem is broadly relevant to studies of host-associated microbiomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "Overcoming the compositionality problem is broadly relevant to studies of host-associated microbiomes.",
+    "claim_type": "EXPLICIT",
+    "source": "Overrepresentation of a few abundant organisms is a feature shared by most ecological communities (McGill et al., 2007), including microbial communities (Zhou et al., 2013); overcoming this compositionality problem is broadly relevant to studies of host-associated microbiomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the widespread nature of the problem.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The principle behind hamPCR stands on a body of literature describing related, firmly established techniques.",
+    "claim_type": "EXPLICIT",
+    "source": "The principle behind hamPCR stands on a body of literature describing related, firmly established techniques, which bodes well for wide-spread adoption of our approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the citations throughout the discussion.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "Using two steps in a PCR protocol is common in amplicon sequencing, including of microbial marker genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Using two steps in a PCR protocol is common in amplicon sequencing, including of microbial marker genes (de Muinck et al., 2017; Gohl et al., 2016; Holm et al., 2019; Lundberg et al., 2013; Symeonidi et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Two-step PCR protocols provide the major advantage that only a one-time investment is needed in a set of universal barcoding primers for a flexible step two.",
+    "claim_type": "EXPLICIT",
+    "source": "Two-step PCR protocols provide the major advantage that only a one-time investment is needed in a set of universal barcoding primers for a flexible step two.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general advantage of two-step PCR protocols.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "For labs already equipped for two-step PCR, implementing hamPCR involves only slight adjustments to cycling conditions and template-specific HM-tagging primers.",
+    "claim_type": "EXPLICIT",
+    "source": "For labs already equipped for two-step PCR, implementing hamPCR involves only slight adjustments to cycling conditions and template-specific HM-tagging primers (Appendix 1 - Discussion 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the ease of implementation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "Quantitative co-amplification using multiple primer pairs has proven reliable.",
+    "claim_type": "EXPLICIT",
+    "source": "Quantitative co-amplification using multiple primer pairs also has proven reliable (Carlson et al., 2013; Weller et al., 2000; Wen and Zhang, 2012), and PCR biases affecting co-amplification of diverse fragments are manageable and well-understood from popular RNA-seq and WMS protocols (Bowers et al., 2015; Rinke et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "PCR biases affecting co-amplification of diverse fragments are manageable and well-understood from popular RNA-seq and WMS protocols.",
+    "claim_type": "EXPLICIT",
+    "source": "Quantitative co-amplification using multiple primer pairs also has proven reliable (Carlson et al., 2013; Weller et al., 2000; Wen and Zhang, 2012), and PCR biases affecting co-amplification of diverse fragments are manageable and well-understood from popular RNA-seq and WMS protocols (Bowers et al., 2015; Rinke et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "Microbial load measurement is sensitive to the relative concentrations between the host and microbe primers in the HM-tagging step.",
+    "claim_type": "EXPLICIT",
+    "source": "We have demonstrated that microbial load measurement is sensitive to the relative concentrations between the host and microbe primers in the HM-tagging step (Appendix 1\u2014figure 4), consistent with the effects of primer concentration on amplification efficiency in qPCR (Bustin and Huggett, 2017; Pierce et al., 2005; Sanchez et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Appendix 1\u2014figure 4 and supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The sensitivity to primer concentration makes it possible to fine-tune the primer ratios.",
+    "claim_type": "EXPLICIT",
+    "source": "This property makes it possible to fine-tune the primer ratios, either to yield the expected ratio of products (Carlson et al., 2013), or to intentionally increase the representation of a microbial amplicon for more efficient sequencing (Figure 5\u2014figure supplement 4a\u2013d).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation and data in Figure 5\u2014figure supplement 4.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "The HM-tagging primers should be carefully pipetted into a multiplexed primer master mix sufficiently large to be used for the entire project.",
+    "claim_type": "EXPLICIT",
+    "source": "We recommend that the HM-tagging primers be carefully pipetted into a multiplexed primer master mix sufficiently large to be used for the entire project, or alternatively the same control samples should be sequenced across sample batches to allow correction of slight batch differences.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation based on the sensitivity to primer concentration.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "hamPCR can only quantify the DNA available in the template.",
+    "claim_type": "EXPLICIT",
+    "source": "Because hamPCR can only quantify the DNA available in the template, choice of sample and appropriate DNA extraction methods are very important.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a fundamental limitation of the method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "The sample must include a meaningful quantity of host DNA for hamPCR to work.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, the sample must in the first place include a meaningful quantity of host DNA.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a requirement for the method to function.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "The DNA extraction method chosen must lyse both the host and microbial cell types.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, the DNA extraction method chosen must lyse both the host and microbial cell types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a requirement for accurate quantification.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Strong bead-beating increases the yield and completeness of the DNA extraction, but comes at the cost of some DNA fragmentation.",
+    "claim_type": "EXPLICIT",
+    "source": "Appropriate DNA preparation methods for metagenomics have been thoroughly evaluated elsewhere (Albertsen et al., 2015; Yuan et al., 2012), and a common point of agreement is that strong bead-beating increases the yield and completeness of the DNA extraction, but comes at the cost of some DNA fragmentation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to DNA extraction studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "A limitation of hamPCR is reduced accuracy at the highest microbial loads.",
+    "claim_type": "EXPLICIT",
+    "source": "A limitation of hamPCR is reduced accuracy at the highest microbial loads (Appendix 1\u2014figure 3).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Appendix 1\u2014figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "Only a minority of samples reached a level of infection that interfered with accurate quantification.",
+    "claim_type": "EXPLICIT",
+    "source": "Only a minority of our samples reached a level of infection that interfered with accurate quantification, and we expect that this will be the case for most colonized hosts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the authors' experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "Altering the host and microbe amplicon ratio in the pooled library prior to sequencing can increase the overall host representation.",
+    "claim_type": "EXPLICIT",
+    "source": "First, altering the host and microbe amplicon ratio in the pooled library prior to sequencing, as demonstrated in Figure 3, could be used to increase the overall host representation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "A host gene with a higher copy number could be chosen for HM-tagging to increase host representation by a factor of that copy number.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, a host gene with a higher copy number could be chosen for HM-tagging throughout the entire project, which would increase host representation by a factor of that copy number (Kembel et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a suggestion supported by a citation.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "Adjusting the concentration of the host primers in the HM-tagging reaction could increase the representation of host.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, adjusting the concentration of the host primers in the HM-tagging reaction could also increase the representation of host (Appendix 1\u2014figure 4; Carlson et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Appendix 1\u2014figure 4 and supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "hamPCR is best suited to comparing microbial loads within an experimental system using consistent host and microbe primers.",
+    "claim_type": "EXPLICIT",
+    "source": "hamPCR is best suited to comparing microbial loads within an experimental system using consistent host and microbe primers, because different microbe primer pairs can differ in their amplification efficiency and therefore yield different load measurements on the same template DNA (Figure 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the data in Figure 4.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Different microbe primer pairs can differ in their amplification efficiency and therefore yield different load measurements on the same template DNA.",
+    "claim_type": "EXPLICIT",
+    "source": "hamPCR is best suited to comparing microbial loads within an experimental system using consistent host and microbe primers, because different microbe primer pairs can differ in their amplification efficiency and therefore yield different load measurements on the same template DNA (Figure 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "The lack of cross-comparability can be overcome by including a simple standard curve.",
+    "claim_type": "EXPLICIT",
+    "source": "However, looking toward future best practices, this lack of cross-comparability can be overcome by including a simple standard curve.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a suggestion for future best practices.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "hamPCR is agnostic to the taxonomic identities of the organisms studied on both the host and microbe side, their genome sizes, or the functions of the regions amplified.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, we have demonstrated that hamPCR is agnostic to the taxonomic identities of the organisms studied on both the host and microbe side, their genome sizes, or the functions of the regions amplified.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the diverse applications shown in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "hamPCR can monitor three amplicons at the same time for interkingdom microbial quantification.",
+    "claim_type": "EXPLICIT",
+    "source": "We have also shown that hamPCR can monitor three amplicons at the same time for interkingdom microbial quantification, and in principle can multiplex more with careful design.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "hamPCR can in principle multiplex more than three amplicons with careful design.",
+    "claim_type": "EXPLICIT",
+    "source": "We have also shown that hamPCR can monitor three amplicons at the same time for interkingdom microbial quantification, and in principle can multiplex more with careful design.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative claim about future possibilities.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "The protocol could be adapted to quantitatively relate different amplicons targeting archaea, bacteria, and fungi in diverse 'host-free' environments like soil.",
+    "claim_type": "EXPLICIT",
+    "source": "Our focus here has been on tracking hosts and their closely-associated microbes, but the protocol could also be adapted to quantitatively relate different amplicons targeting archaea, bacteria, and fungi in diverse 'host-free' environments like soil.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative claim about future applications.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "hamPCR enables quantitative monitoring of bacterial populations and sub-genomic elements, such as plasmids or pathogenicity islands.",
+    "claim_type": "EXPLICIT",
+    "source": "Besides whole organisms, hamPCR also enables quantitative monitoring of bacterial populations and sub-genomic elements, such as plasmids or pathogenicity islands that might not be shared by all strains in a population.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative claim about potential applications.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "An exciting application of hamPCR is the study of endophytic microbial colonization and infection in crop plants, many of which have very large genomes that preclude the analysis of any sizable number of samples by WMS.",
+    "claim_type": "EXPLICIT",
+    "source": "An exciting application of hamPCR is the study of endophytic microbial colonization and infection in crop plants, many of which have very large genomes that preclude the analysis of any sizable number of samples by WMS.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the wheat example in the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "In a previous study, over 200 A. thaliana plant leaf metagenomes were sequenced at not insignificant costs.",
+    "claim_type": "EXPLICIT",
+    "source": "In a previous study, we sequenced leaf metagenomes from over 200 A. thaliana plants, at not insignificant costs (Regalado et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "In wheat, assuming comparable microbial loads to A. thaliana, the same investment in sequencing would barely be sufficient for two samples due to the size of the wheat genome of over 16 Gb.",
+    "claim_type": "EXPLICIT",
+    "source": "In wheat, assuming comparable microbial loads, the same investment in sequencing would barely be sufficient for two samples due to the size of the wheat genome of over 16 Gb.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a calculation based on genome size differences.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "WMS of the >200 samples of field-grown maize would be prohibitively expensive.",
+    "claim_type": "EXPLICIT",
+    "source": "WMS of the >200 samples we processed of field-grown maize likewise would be prohibitively expensive, and supplementing these data with an orthogonal method on this scale requires at least double the number of samples and double the experimental time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the cost and effort of WMS.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "Other exciting applications of hamPCR include the recognition of cryptic infections, tracking of mixed infections, and measurement of pathogen abundances on hosts showing quantitative disease resistance.",
+    "claim_type": "EXPLICIT",
+    "source": "Other exciting applications are the recognition of cryptic infections (Stergiopoulos and Gordon, 2014), tracking of mixed infections, and measurement of pathogen abundances on hosts showing quantitative disease resistance \u2013 this could even be accomplished by spiking hamPCR amplicons into the same sequencing run used to genotype the hosts (St Clair, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "These are speculative claims about potential applications, supported by citations.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "In sparsely colonized samples, hamPCR will help prevent inflating the abundance of ultra-low abundance microbes, such as reagent contaminants.",
+    "claim_type": "EXPLICIT",
+    "source": "In sparsely colonized samples, hamPCR will help prevent inflating the abundance of ultra-low abundance microbes, such as reagent contaminants.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of having load information.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "For projects with many samples, the fact that hamPCR derives microbial composition and load from the same library saves costs, uses less of the sample, and simplifies analysis and project organization.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, for projects with many samples, the fact that hamPCR derives microbial composition and load from the same library not only saves costs and uses less of the sample, but also simplifies analysis and project organization.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the practical benefits of the method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

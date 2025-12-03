@@ -1,0 +1,979 @@
+{
+  "submission": {
+    "id": "7ed6f36a-38d5-4667-82d1-57d7f6542c3e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:46:58.941777Z",
+    "updated_at": "2025-12-03T14:46:58.941777Z"
+  },
+  "content": [
+    {
+      "id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "submission_id": "7ed6f36a-38d5-4667-82d1-57d7f6542c3e",
+      "content_type": "manuscript",
+      "content_text": "# Adiposity may confound the association between vitamin D and disease risk \u2013 a lifecourse Mendelian randomization study\n\n## Authors\n\n- Tom G Richardson<sup>1</sup> ([ORCID: 0000-0002-7918-2040](https://orcid.org/0000-0002-7918-2040)) \u2020\n- Grace M Power<sup>1</sup> ([ORCID: 0000-0002-5702-7728](https://orcid.org/0000-0002-5702-7728))\n- George Davey Smith<sup>1</sup> ([ORCID: 0000-0002-1407-8314](https://orcid.org/0000-0002-1407-8314))\n\n### Affiliations\n\n1. MRC Integrative Epidemiology Unit (IEU), Population Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Vitamin D supplements are widely prescribed to help reduce disease risk. However, this strategy is based on findings using conventional epidemiological methods which are prone to confounding and reverse causation.Methods:In this short report, we leveraged genetic variants which differentially influence body size during childhood and adulthood within a multivariable Mendelian randomization (MR) framework, allowing us to separate the genetically predicted effects of adiposity at these two timepoints in the lifecourse.Results:Using data from the Avon Longitudinal Study of Parents and Children (ALSPAC), there was strong evidence that higher childhood body size has a direct effect on lower vitamin D levels in early life (mean age: 9.9 years, range = 8.9\u201311.5 years) after accounting for the effect of the adult body size genetic score (beta = \u22120.32, 95% CI = \u22120.54 to \u20130.10, p=0.004). Conversely, we found evidence that the effect of childhood body size on vitamin D levels in midlife (mean age: 56.5 years, range = 40\u201369 years) is putatively mediated along the causal pathway involving adulthood adiposity (beta = \u22120.17, 95% CI = \u22120.21 to \u20130.13, p=4.6 \u00d7 10-17).Conclusions:Our findings have important implications in terms of the causal influence of vitamin D deficiency on disease risk. Furthermore, they serve as a compelling proof of concept that the timepoints across the lifecourse at which exposures and outcomes are measured can meaningfully impact overall conclusions drawn by MR studies.Funding:This work was supported by the Integrative Epidemiology Unit which receives funding from the UK Medical Research Council and the University of Bristol (MC_UU_00011/1).\n\n## Introduction\n\nAssociations between vitamin D deficiency and disease risk have been widely reported by conventional epidemiological studies, including diseases which typically have a late-onset over the lifecourse, such as coronary artery disease, but also those which may be diagnosed in early life such as type 1 diabetes (T1D). As a result, vitamin D supplements are widely prescribed with an estimated 18% of adults in the USA reportedly taking supplements daily (Rooney et al., 2017). However, there is increasing evidence from the literature suggesting that vitamin D supplements may be ineffective at reducing disease risk in the population (Bouillon et al., 2022). Furthermore, these conventional association studies may have been susceptible to bias, given that vitamin D levels are known to differ amongst individuals based on various lifestyle factors, including their body mass index (BMI), as well as being prone to reverse causation, for example due to inflammatory processes which are known to lower vitamin D levels (Preiss and Sattar, 2019).\n\nAn approach to mitigate the influence of these sources of bias is Mendelian randomization (MR), a causal inference technique which exploits the random allocation of genetic variants at birth to evaluate the genetically predicted effects of modifiable exposures on disease outcomes and circulating biomarkers (Davey Smith and Ebrahim, 2003, Richmond and Davey Smith, 2022). For example, MR has been applied in recent years to suggest that vitamin D supplements are unlikely to have a beneficial effect on risk of T1D (Manousaki et al., 2021), whereas a recent study suggests that genetically lowered vitamin D levels may increase the risk of multiple sclerosis (Mokry et al., 2015). We previously extended the application of MR to investigate epidemiological hypotheses in a lifecourse setting (known to as \u2018lifecourse MR\u2019), by deriving sets of genetic variants to separate the independent effects of body size during childhood and adulthood within a multivariable framework (Richardson et al., 2020). Applying this approach has highlighted the putative causal role that early life adiposity may have on outcomes such as T1D risk (Richardson et al., 2022) and cardiac structure (O\u2019Nunain et al., 2022). In contrast, we have demonstrated that its influence on other disease outcomes (e.g. cardiovascular disease; Power et al., 2021) is likely attributed to the long-term consequence of remaining overweight into later life.\n\nWhilst these applications serve as powerful examples of lifecourse MR as an approach to separate the effects of the same exposure based on data derived from early and later life, it has yet to be applied to the same outcome when measured at different timepoints in the lifecourse. In this study, we applied lifecourse MR to investigate the independent effects of childhood and adult body size on 25-hydroxyvitamin D (25OHD) levels measured during childhood (mean age: 9.9 years, range = 8.9\u201311.5 years) using individual-level data from the Avon Longitudinal Study of Parents and Children (ALSPAC) (Boyd et al., 2013; Fraser et al., 2013) and during adulthood (mean age: 56.5 years, range = 40\u201369 years) using summary-level data based on individuals from the UK Biobank (UKB) study (Manousaki et al., 2020).\n\n## Materials and methods\n\n### Genetic instruments for childhood and adult body size\n\nDerivation of genetic instruments for childhood and adulthood body size have been described in detail previously (Richardson et al., 2020). In brief, genome-wide association studies (GWAS) were conducted on 463,005 UKB participants (mean age: 56.5 years, range = 40\u201369 years) who had both reported their body size at age 10 as well as had their BMI clinically measured. Genetic instruments were identified from these analyses (based on p<5 \u00d7 10\u20138) and the resulting genetic score for childhood body size has been validated using measured childhood BMI in ALSPAC (Richardson et al., 2020), the Young Finns Study (Richardson et al., 2021), and the Tr\u00f8ndelag Health (HUNT) study (Brandkvist et al., 2020).\n\n### The Avon Longitudinal Study of Parents and Children\n\nALSPAC is a population-based cohort investigating genetic and environmental factors that affect the health and development of children. The study methods are described in detail elsewhere (Boyd et al., 2013; Fraser et al., 2013). In brief, 14,541 pregnant women residents in the former region of Avon, UK, with an expected delivery date between April 1, 1991, and December 31, 1992, were eligible to take part in ALSPAC. Detailed phenotypic information, biological samples, and genetic data which have been collected from the ALSPAC participants are available through a searchable data dictionary (http://\u200cwww.bris.ac.uk/\u200calspac/\u200cresearchers/\u200cour-data/). Written informed consent was obtained for all study participants. Ethical approval for this study was obtained from the ALSPAC Ethics and Law Committee and the Local Research Ethics Committees. Measures of 25OHD levels were obtained from non-fasting blood samples taken from ALSPAC participants at mean age 9.9 years (range = 8.9\u201311.5 years) which were log-transformed to ensure normality.\n\n### Adulthood estimates of 25OHD levels\n\nGenetic estimates on adulthood 25OHD were obtained from a previously conducted GWAS in UKB by Manousaki et al., 2020, as well as by Revez et al., 2020. All data on adulthood 25OHD analysed in this study were based on summary-level information and therefore the relevant ethical approval for the individual-level data analyses which generated them can be found in their corresponding articles. Despite 431,074 of the 476,169 participants with measures of childhood and adult body size in UKB also having measures of vitamin D levels (90.5%), there was little evidence of inflated type 1 error rates (based on the calculator at https://sb452.shinyapps.io/overlap) (Burgess et al., 2016). Genetic estimates were harmonized using the \u2018TwoSampleMR\u2019 R package (Hemani et al., 2018) which by default removes palindromic variants and attempts to identify proxies for any instruments whose estimates are not available in the outcome dataset.\n\n### Lifecourse MR analysis\n\nMR analyses to estimate genetically predicted effects of adiposity on childhood 25OHD were conducted in a one-sample setting using individual-level data from ALSPAC after generating genetic risk scores for our body size instruments with adjustment for age and sex. MR analyses to estimate effects on adulthood 25OHD were undertaken in a two-sample setting using the inverse variance weighted method (Burgess et al., 2013), as well as the weighted median and MR-Egger methods (Bowden et al., 2015; Bowden et al., 2016; Supplementary file 1\u2014Table 1). Multivariable MR analyses were performed in one- and two-sample settings respectively for childhood and adulthood measures of 25OHD (Sanderson et al., 2019; Supplementary file 1\u2014Table 2).\n\n## Results\n\nFirstly, using data measured at mean age 9.9 years in the lifecourse from the ALSPAC study, our analyses indicated that childhood body size directly influences vitamin D levels during childhood after accounting for the adult body size genetic instrument in our model (beta = \u22120.32 standard deviation change in natural log-transformed 25OHD per change in body size category, 95% CI = \u22120.54 to \u20130.10, p=0.004) (Figure 1). Using data from the UKB study, evidence of an effect of higher childhood body size on adulthood measured 25OHD levels (beta = \u22120.14, 95% CI = \u22120.10 to \u20130.03, p=2.4 \u00d7 10\u20134) attenuated in a multivariable setting upon accounting for adulthood body size (beta = 0.04, 95% CI = \u22120.01 to 0.08, p=0.10). In contrast, strong evidence of an effect for higher adult body size on lower 25OHD levels measured in adulthood was found in the multivariable model accounting for the childhood body size score (beta = \u22120.17, 95% CI = \u22120.21 to \u20130.13, p=4.6 \u00d7 10\u201317) (Figure 1C). This suggests that childhood body size has an indirect influence of 25OHD levels in adulthood, likely due to its persistent effect throughout the lifecourse (Figure 1D). The full sets of univariable and multivariable estimates derived in this analysis can be found in Supplementary file 1\u2014Table 1 and Supplementary file 1\u2014Table 2, respectively. Similar conclusions were drawn using estimates derived on adult 25OHD levels using findings by Revez et al (Revez et al., 2020; Supplementary file 1\u2014Table 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79798/elife-79798-fig1-v1.jpg)\n\n**Figure 1.:** (A) A forest plot illustrating the direct effect of childhood body size on circulating vitamin D levels measured during childhood (mean age: 9.9 years, n=3,800 participants) using data from the Avon Longitudinal Study of Parents and Children (ALSPAC) with the corresponding schematic diagram for this finding being located in panel (B). (C) A forest plot depicting the indirect effect of childhood body size on adulthood measured vitamin D levels using data from the UK Biobank study (mean age: 56.5 years, n=401,460 participants) as described in the schematic diagram presented in panel (D). MR \u2013 Mendelian randomization. All estimates underlying the forest plots can be found in Supplementary file 1.\n\n## Discussion\n\nOur findings suggest that increased adiposity exerts a strong effect on lower vitamin D levels during both childhood and adulthood. Separating causal from confounding factors, particularly in a lifecourse setting, would have been extremely challenging to disentangle without the use of genetic variants as achieved in this study. In contrast, appropriately accounting for confounding factors in an conventional epidemiological setting is notoriously challenging, with previous studies reporting evidence of association between vitamin D and T1D in early life even after adjusting for factors such as birthweight (Hypp\u00f6nen et al., 2001). Taken together with evidence from previous MR studies, which have found that childhood body size (Richardson et al., 2022), but not vitamin D levels (Manousaki et al., 2021), increases risk of T1D, our results suggest that adiposity may have acted as a confounding factor on the observed association between vitamin D and T1D. Evidence from this study therefore highlights the importance of developing a deeper understanding into the role that confounding factors, such as adiposity, may potentially have in distorting observational associations between vitamin D levels and disease risk. Future studies are therefore warranted to disentangle the causal factors which influence disease risk from non-causal confounding factors through the triangulation of multiple lines of evidence including those identified by robustly conducted MR studies.\n\nOur conclusions are also supported by the outcomes of recent large-scale randomized controlled clinical trials (RCTs) of vitamin D supplementation. For instance, as highlighted by recent reviews (Ebeling, 2022; Bouillon et al., 2022), whilst observational studies have found that low vitamin D levels associate with increased risk of cardiovascular disease and cancer outcomes, there has been little convincing evidence from RCTs that a causal relationship may underly these findings. Additionally, recent RCTs have reported evidence of a potential interaction between vitamin D supplementation and BMI, such as the Finnish Vitamin D Trial (FIND) (Virtanen et al., 2022) and D-Health (Waterhouse et al., 2021) studies.\n\nEffect estimates derived from MR studies are conventionally interpreted as \u2018lifelong effects\u2019 given that the germline genetic variants harnessed by this approach as instrumental variables are typically fixed at conception. The results of this study serve as a compelling demonstration that the timepoint at which both exposures and outcomes are measured across the lifecourse can meaningfully impact conclusions drawn by MR investigations. Whilst the childhood and adult body size genetic scores were used in this study as a proof of concept, our findings also help to further validate their utility in separating the temporal effects of adiposity within a lifecourse MR framework. Overall, these findings emphasise the importance of future MR studies taking further consideration into the age of participants that their genetic estimates are based on, as well as the age at which cases are diagnosed for disease outcome estimates, before interpreting and drawing conclusions from their findings.\n\nFurthermore, our results suggest that conducting GWAS on populations of different age groups will add value in helping uncover time-varying genetic effects scattered throughout the human genome. Findings from these endeavours should facilitate studies applying techniques such as lifecourse MR, which can provide insight into the direct and indirect effects of modifiable early life exposures on disease outcomes by harnessing genetic estimates obtained from unprecedented sample sizes when conducted in a two-sample setting. That said, lifecourse MR requires careful examination of genetic instruments to ensure that they are capable of robustly separating the effects of an exposure at different timepoints over the lifecourse (Sanderson et al., 2022). Doing so may help to elucidate the critical timepoints whereby conferred risk by these exposures on disease outcomes starts to become immutable, which has important implications for improving patient care in a clinical setting.\n\n### Consent\n\nWritten informed consent was obtained for all study participants. Ethical approval for this study was obtained from the ALSPAC Ethics and Law Committee and the Local Research Ethics Committees.\n",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "5a1d2fb5-1257-4f37-8fa4-3bd6d468c7bc",
+      "submission_id": "7ed6f36a-38d5-4667-82d1-57d7f6542c3e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eduardo Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79798.sa0](https://doi.org/10.7554/eLife.79798.sa0)\n\nThis paper is of great interest to readers in the fields of vitamin D and obesity. It uses a Mendelian randomization framework to separate the genetically predicted effects of adiposity at two timepoints in the lifecourse, childhood, and adulthood. The key claims are well supported by the data. Higher childhood body size had a direct effect on lower vitamin D levels in early life, while in midlife, childhood body size impacted adult obesity to result in lower vitamin D levels.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Eduardo Franco, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79798.sa1](https://doi.org/10.7554/eLife.79798.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Associations between vitamin D and disease risk may be attributed to the confounding influence of adiposity during childhood and adulthood: a lifecourse Mendelian randomization study\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and I personally oversaw the evaluation in my joint role of Reviewing Editor and Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Peter Ebeling (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another and with me. I drafted this decision letter to help you prepare a revised submission. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you attempt to amend or expand the text to clarify the narrative accordingly.\n\nEssential revisions:\n\n1) As recommended by the two reviewers, please include a discussion on recent trials or studies that shed light on the same topic of the interplay of BMI and vitamin D on health outcomes.\n\n2) Please acknowledge the limitations and additional caveats pointed out by reviewer #2\n\n3) In addition, please revise the manuscript as per the additional recommendations by both reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nThis reviewer has the following recommendations for the authors:\n\n1. It might be worth including data from recent large RCTs showing interactions of BMI with outcomes related to vitamin D supplementation, cardiovascular events and falls, highlighted in a recent editorial (PMID: 35348579). This would support their data.\n\n2. Examples are the FIND (PMID: 34982819) and D-Health (PMID: 34337905) studies with the specific outcomes of increased cardiovascular events and falls, respectively, in those supplemented participants with a BMI <25 kg/m2.\n\nReviewer #2 (Recommendations for the authors):\n\nIntroduction:\n\n\u2013 Line 50-52: I would suggest replacing the Murai et al. 2021 reference by a paper providing a more general overview, as the Murai et al. 2021 publication describes a RCT for vitamin D supplementation in covid-19 patients specifically. PMID 34815552 (Bouillon et al. Nat Rev Endocrinol 2022) might be more suited here\n\n\u2013 Line 53: Mokry et al. 2015 is a Mendelian randomisation study, which is further described in the second paragraph of the introduction (starting from line 61). It might be more suited to incorporate this reference in line 64-65.\n\nResults:\n\n\u2013 Line 82: 'has a largely indirect influence' needs to be removed here?\n\n\u2013 Line 87: Manousaki et al. 2020 GWAS was used to select instrumental variables for adulthood vitamin D. I was wondering whether similar results are obtained when selecting variants from the Revez et al. 2020 GWAS (PMID 32242144) ? Both are conducted in UK Biobank, though there are small differences in sample sizes and number of variants (especially due to differences in minor allele frequency filtering).\n\n\u2013 Line 93: Multivariate while in line 96: multivariable. Is there a difference here?\n\n\u2013 Line 96-97: perhaps add 'upon accounting for childhood body size'? (as in line 94), for further clarification on analyses\n\nFigure 1: Number is lacking in the legend (mean age: X years)\n\nMaterials and methods:\n\n\u2013 Line 168-171: What was the percentage of sample overlap? Although sample overlap does not seem to influence the findings, it may be worth mentioning the numbers of sample overlap, aiding readers in interpreting the degree of overlap.\n\n\u2013 Line 173-182: It is stated in line 159-160 that genetic instruments for childhood and adulthood body size are derived from Richardson et al. 2020. Would it be possible to add some more details on selection of instrumental variables (in line with STROBE-MR guidelines), as initially 295 variants for childhood and 557 variants for adulthood body size have been identified in Richardson et al. 2020 while respectively 253 and 488 are included in the MR analyses. Are palindromic SNPs retained? Are proxy SNPs identified for SNPs missing in the outcome data?\n\n\u2013 Line 177-178: The two-sample MR design allowed the performance of additional analyses (weighted median and MR-Egger, beyond the inverse variance weighted method). Now it seems that the IVW method allowed the additional analyses rather than the two-sample MR design. Would it be possible to rephrase this sentence accordingly?\n",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4eaefd2a-204c-4193-aefa-2bc9e4db45c3",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C1",
+      "claim": "Vitamin D supplements are widely prescribed to help reduce disease risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Vitamin D supplements are widely prescribed to help reduce disease risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current medical practice presented in the abstract and introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "738a1027-481b-4ad7-b25d-f054556f167b",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C2",
+      "claim": "Conventional epidemiological methods for studying vitamin D and disease risk are prone to confounding and reverse causation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this strategy is based on findings using conventional epidemiological methods which are prone to confounding and reverse causation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological critique based on established understanding of epidemiological limitations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "f752efe6-fa6b-4d52-8195-c8472b285542",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C3",
+      "claim": "Higher childhood body size has a direct effect on lower vitamin D levels in early life (mean age: 9.9 years) after accounting for adult body size.",
+      "claim_type": "EXPLICIT",
+      "source": "Using data from the Avon Longitudinal Study of Parents and Children (ALSPAC), there was strong evidence that higher childhood body size has a direct effect on lower vitamin D levels in early life (mean age: 9.9 years, range = 8.9\u201311.5 years) after accounting for the effect of the adult body size genetic score (beta = \u22120.32, 95% CI = \u22120.54 to \u20130.10, p=0.004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of ALSPAC data with specific effect estimates, confidence intervals, and p-values provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "8ac68d1c-5eb4-4792-93a0-363c74d5d952",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C4",
+      "claim": "The effect of childhood body size on vitamin D levels in midlife (mean age: 56.5 years) is putatively mediated along the causal pathway involving adulthood adiposity.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we found evidence that the effect of childhood body size on vitamin D levels in midlife (mean age: 56.5 years, range = 40\u201369 years) is putatively mediated along the causal pathway involving adulthood adiposity (beta = \u22120.17, 95% CI = \u22120.21 to \u20130.13, p=4.6 \u00d7 10-17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis with effect estimates, confidence intervals, and p-values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "a8fe7d84-c2f1-4ca2-ac3c-1973b1c151cb",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C5",
+      "claim": "The timepoints across the lifecourse at which exposures and outcomes are measured can meaningfully impact overall conclusions drawn by MR studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, they serve as a compelling proof of concept that the timepoints across the lifecourse at which exposures and outcomes are measured can meaningfully impact overall conclusions drawn by MR studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "930a4006-0d57-49b4-b71f-9c64314a4d6a",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C6",
+      "claim": "An estimated 18% of adults in the USA reportedly take vitamin D supplements daily.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, vitamin D supplements are widely prescribed with an estimated 18% of adults in the USA reportedly taking supplements daily (Rooney et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rooney et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "783f99ee-d972-4bc3-bf01-4eccbb4cc259",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C7",
+      "claim": "There is increasing evidence from the literature suggesting that vitamin D supplements may be ineffective at reducing disease risk in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is increasing evidence from the literature suggesting that vitamin D supplements may be ineffective at reducing disease risk in the population (Bouillon et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bouillon et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "91d0b86a-7da2-484f-8367-3a7b412ff6ac",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C8",
+      "claim": "Vitamin D levels are known to differ amongst individuals based on various lifestyle factors, including their body mass index (BMI).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these conventional association studies may have been susceptible to bias, given that vitamin D levels are known to differ amongst individuals based on various lifestyle factors, including their body mass index (BMI), as well as being prone to reverse causation, for example due to inflammatory processes which are known to lower vitamin D levels (Preiss and Sattar, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Preiss and Sattar, 2019 and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "b5fbf90b-b5b4-415d-9f6e-eb9bf1911fc8",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C9",
+      "claim": "Inflammatory processes are known to lower vitamin D levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these conventional association studies may have been susceptible to bias, given that vitamin D levels are known to differ amongst individuals based on various lifestyle factors, including their body mass index (BMI), as well as being prone to reverse causation, for example due to inflammatory processes which are known to lower vitamin D levels (Preiss and Sattar, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Preiss and Sattar, 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "74219961-7b7a-4ff3-8166-93276fc0a2b9",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C10",
+      "claim": "Mendelian randomization exploits the random allocation of genetic variants at birth to evaluate the genetically predicted effects of modifiable exposures on disease outcomes and circulating biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "An approach to mitigate the influence of these sources of bias is Mendelian randomization (MR), a causal inference technique which exploits the random allocation of genetic variants at birth to evaluate the genetically predicted effects of modifiable exposures on disease outcomes and circulating biomarkers (Davey Smith and Ebrahim, 2003, Richmond and Davey Smith, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by citations to foundational MR papers.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "3bd58f58-b0ca-48c1-b81f-0e342fa9afdb",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C11",
+      "claim": "MR has been applied to suggest that vitamin D supplements are unlikely to have a beneficial effect on risk of T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, MR has been applied in recent years to suggest that vitamin D supplements are unlikely to have a beneficial effect on risk of T1D (Manousaki et al., 2021), whereas a recent study suggests that genetically lowered vitamin D levels may increase the risk of multiple sclerosis (Mokry et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Manousaki et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "0b671715-3bc7-4113-a215-f035696e1156",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C12",
+      "claim": "Genetically lowered vitamin D levels may increase the risk of multiple sclerosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, MR has been applied in recent years to suggest that vitamin D supplements are unlikely to have a beneficial effect on risk of T1D (Manousaki et al., 2021), whereas a recent study suggests that genetically lowered vitamin D levels may increase the risk of multiple sclerosis (Mokry et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mokry et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "2fa91b07-e344-404c-b9a4-a24cc2bfba4c",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C13",
+      "claim": "Early life adiposity may have a putative causal role on T1D risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying this approach has highlighted the putative causal role that early life adiposity may have on outcomes such as T1D risk (Richardson et al., 2022) and cardiac structure (O'Nunain et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Richardson et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "c017c891-da03-4fe5-8271-06f873fbfe50",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C14",
+      "claim": "Early life adiposity may have a putative causal role on cardiac structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying this approach has highlighted the putative causal role that early life adiposity may have on outcomes such as T1D risk (Richardson et al., 2022) and cardiac structure (O'Nunain et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to O'Nunain et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "cafe1555-4c23-4b77-a1a3-fd50a32c151a",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C15",
+      "claim": "The influence of early life adiposity on cardiovascular disease is likely attributed to the long-term consequence of remaining overweight into later life.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we have demonstrated that its influence on other disease outcomes (e.g. cardiovascular disease; Power et al., 2021) is likely attributed to the long-term consequence of remaining overweight into later life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Power et al., 2021 and represents an inference from that work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "f648f975-1d98-4541-9e3c-8c18d62f6061",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C16",
+      "claim": "GWAS were conducted on 463,005 UKB participants (mean age: 56.5 years, range = 40\u201369 years) who had both reported their body size at age 10 as well as had their BMI clinically measured.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, genome-wide association studies (GWAS) were conducted on 463,005 UKB participants (mean age: 56.5 years, range = 40\u201369 years) who had both reported their body size at age 10 as well as had their BMI clinically measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data and methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "d5d96a1e-ecc1-45cd-a4bb-f81f7dde7288",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C17",
+      "claim": "The genetic score for childhood body size has been validated using measured childhood BMI in ALSPAC.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic instruments were identified from these analyses (based on p<5 \u00d7 10\u20138) and the resulting genetic score for childhood body size has been validated using measured childhood BMI in ALSPAC (Richardson et al., 2020), the Young Finns Study (Richardson et al., 2021), and the Tr\u00f8ndelag Health (HUNT) study (Brandkvist et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to validation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "b73d9fcf-a202-4d65-b98c-13714915a96a",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C18",
+      "claim": "The genetic score for childhood body size has been validated using measured childhood BMI in the Young Finns Study.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic instruments were identified from these analyses (based on p<5 \u00d7 10\u20138) and the resulting genetic score for childhood body size has been validated using measured childhood BMI in ALSPAC (Richardson et al., 2020), the Young Finns Study (Richardson et al., 2021), and the Tr\u00f8ndelag Health (HUNT) study (Brandkvist et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Richardson et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "f4a4d0fe-09eb-44b2-8110-bf2b037fe4bf",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C19",
+      "claim": "The genetic score for childhood body size has been validated using measured childhood BMI in the Tr\u00f8ndelag Health (HUNT) study.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic instruments were identified from these analyses (based on p<5 \u00d7 10\u20138) and the resulting genetic score for childhood body size has been validated using measured childhood BMI in ALSPAC (Richardson et al., 2020), the Young Finns Study (Richardson et al., 2021), and the Tr\u00f8ndelag Health (HUNT) study (Brandkvist et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Brandkvist et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "347e4d2f-4bef-4ea0-a5c7-66b09c5a16dc",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C20",
+      "claim": "14,541 pregnant women residents in the former region of Avon, UK, with an expected delivery date between April 1, 1991, and December 31, 1992, were eligible to take part in ALSPAC.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, 14,541 pregnant women residents in the former region of Avon, UK, with an expected delivery date between April 1, 1991, and December 31, 1992, were eligible to take part in ALSPAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ALSPAC cohort composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "c1df6665-3761-4c33-a0a5-200fa0dc6f2f",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C21",
+      "claim": "Measures of 25OHD levels were obtained from non-fasting blood samples taken from ALSPAC participants at mean age 9.9 years (range = 8.9\u201311.5 years).",
+      "claim_type": "EXPLICIT",
+      "source": "Measures of 25OHD levels were obtained from non-fasting blood samples taken from ALSPAC participants at mean age 9.9 years (range = 8.9\u201311.5 years) which were log-transformed to ensure normality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection methods for the outcome variable.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "8fe973b8-e15a-4e3d-a464-68403d5a4bb9",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C22",
+      "claim": "25OHD levels were log-transformed to ensure normality.",
+      "claim_type": "EXPLICIT",
+      "source": "Measures of 25OHD levels were obtained from non-fasting blood samples taken from ALSPAC participants at mean age 9.9 years (range = 8.9\u201311.5 years) which were log-transformed to ensure normality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data processing step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "310930c3-ecc8-4151-80ff-9f672c521ce4",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C23",
+      "claim": "Genetic estimates on adulthood 25OHD were obtained from a previously conducted GWAS in UKB by Manousaki et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic estimates on adulthood 25OHD were obtained from a previously conducted GWAS in UKB by Manousaki et al., 2020, as well as by Revez et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for adult vitamin D estimates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "10586cf6-8ec8-49ac-bccc-5d706293424b",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C24",
+      "claim": "Genetic estimates on adulthood 25OHD were obtained from a previously conducted GWAS by Revez et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic estimates on adulthood 25OHD were obtained from a previously conducted GWAS in UKB by Manousaki et al., 2020, as well as by Revez et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for adult vitamin D estimates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "13cd81fa-dbc1-4d69-9eb5-b09111d26513",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C25",
+      "claim": "431,074 of the 476,169 participants with measures of childhood and adult body size in UKB also have measures of vitamin D levels (90.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite 431,074 of the 476,169 participants with measures of childhood and adult body size in UKB also having measures of vitamin D levels (90.5%), there was little evidence of inflated type 1 error rates (based on the calculator at https://sb452.shinyapps.io/overlap) (Burgess et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample overlap and statistical assessment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "3bbd812d-b96e-4da1-b274-1fcb3f1b0329",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C26",
+      "claim": "There was little evidence of inflated type 1 error rates due to sample overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite 431,074 of the 476,169 participants with measures of childhood and adult body size in UKB also having measures of vitamin D levels (90.5%), there was little evidence of inflated type 1 error rates (based on the calculator at https://sb452.shinyapps.io/overlap) (Burgess et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a statistical calculation using a tool referenced by Burgess et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "bc46307e-6013-46c4-b51b-6d08cb6f8e05",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C27",
+      "claim": "Evidence of an effect of higher childhood body size on adulthood measured 25OHD levels (beta = \u22120.14, 95% CI = \u22120.10 to \u20130.03, p=2.4 \u00d7 10\u20134) attenuated in a multivariable setting upon accounting for adulthood body size (beta = 0.04, 95% CI = \u22120.01 to 0.08, p=0.10).",
+      "claim_type": "EXPLICIT",
+      "source": "Using data from the UKB study, evidence of an effect of higher childhood body size on adulthood measured 25OHD levels (beta = \u22120.14, 95% CI = \u22120.10 to \u20130.03, p=2.4 \u00d7 10\u20134) attenuated in a multivariable setting upon accounting for adulthood body size (beta = 0.04, 95% CI = \u22120.01 to 0.08, p=0.10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis with specific effect estimates provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "652b165c-d8b2-4a69-8f2b-c98c204bfc7c",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C28",
+      "claim": "Strong evidence of an effect for higher adult body size on lower 25OHD levels measured in adulthood was found in the multivariable model accounting for the childhood body size score (beta = \u22120.17, 95% CI = \u22120.21 to \u20130.13, p=4.6 \u00d7 10\u201317).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, strong evidence of an effect for higher adult body size on lower 25OHD levels measured in adulthood was found in the multivariable model accounting for the childhood body size score (beta = \u22120.17, 95% CI = \u22120.21 to \u20130.13, p=4.6 \u00d7 10\u201317) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis with specific effect estimates and is illustrated in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "ac520f4c-3a1f-42ef-bc32-824614f6092e",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C29",
+      "claim": "Childhood body size has an indirect influence of 25OHD levels in adulthood, likely due to its persistent effect throughout the lifecourse.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that childhood body size has an indirect influence of 25OHD levels in adulthood, likely due to its persistent effect throughout the lifecourse (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the statistical results and illustrated in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "5033295e-5ab1-42fa-9293-170146e4cc3c",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C30",
+      "claim": "Similar conclusions were drawn using estimates derived on adult 25OHD levels using findings by Revez et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar conclusions were drawn using estimates derived on adult 25OHD levels using findings by Revez et al (Revez et al., 2020; Supplementary file 1\u2014Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This indicates replication of findings using an alternative data source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "83faa717-f89d-4282-a313-a1614e01dae0",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C31",
+      "claim": "Increased adiposity exerts a strong effect on lower vitamin D levels during both childhood and adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that increased adiposity exerts a strong effect on lower vitamin D levels during both childhood and adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from the study's data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "0958402c-2583-4b5c-947c-e583f98bc68b",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C32",
+      "claim": "Separating causal from confounding factors, particularly in a lifecourse setting, would have been extremely challenging to disentangle without the use of genetic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Separating causal from confounding factors, particularly in a lifecourse setting, would have been extremely challenging to disentangle without the use of genetic variants as achieved in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological inference about the value of the genetic approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "cab4157e-2eac-4d00-8366-0f154e17047c",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C33",
+      "claim": "Previous studies reported evidence of association between vitamin D and T1D in early life even after adjusting for factors such as birthweight.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, appropriately accounting for confounding factors in an conventional epidemiological setting is notoriously challenging, with previous studies reporting evidence of association between vitamin D and T1D in early life even after adjusting for factors such as birthweight (Hypp\u00f6nen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hypp\u00f6nen et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "e504a064-4cda-48b0-9924-592c7eea47e4",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C34",
+      "claim": "Childhood body size increases risk of T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with evidence from previous MR studies, which have found that childhood body size (Richardson et al., 2022), but not vitamin D levels (Manousaki et al., 2021), increases risk of T1D, our results suggest that adiposity may have acted as a confounding factor on the observed association between vitamin D and T1D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Richardson et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "32b916bb-1347-4689-b5e7-ef936b666a53",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C35",
+      "claim": "Vitamin D levels do not increase risk of T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with evidence from previous MR studies, which have found that childhood body size (Richardson et al., 2022), but not vitamin D levels (Manousaki et al., 2021), increases risk of T1D, our results suggest that adiposity may have acted as a confounding factor on the observed association between vitamin D and T1D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Manousaki et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "b03e817a-1f3e-41d9-8231-8839c2c52f1f",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C36",
+      "claim": "Adiposity may have acted as a confounding factor on the observed association between vitamin D and T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with evidence from previous MR studies, which have found that childhood body size (Richardson et al., 2022), but not vitamin D levels (Manousaki et al., 2021), increases risk of T1D, our results suggest that adiposity may have acted as a confounding factor on the observed association between vitamin D and T1D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from combining the current study's results with previous MR findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "1ac4658d-5fed-49f0-aacb-cd184bbf7107",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C37",
+      "claim": "Observational studies have found that low vitamin D levels associate with increased risk of cardiovascular disease and cancer outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, as highlighted by recent reviews (Ebeling, 2022; Bouillon et al., 2022), whilst observational studies have found that low vitamin D levels associate with increased risk of cardiovascular disease and cancer outcomes, there has been little convincing evidence from RCTs that a causal relationship may underly these findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "00d8d868-e8fc-4aa9-b28b-3ce3f1b6364c",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C38",
+      "claim": "There has been little convincing evidence from RCTs that a causal relationship between vitamin D and cardiovascular disease/cancer outcomes may underly observational findings.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, as highlighted by recent reviews (Ebeling, 2022; Bouillon et al., 2022), whilst observational studies have found that low vitamin D levels associate with increased risk of cardiovascular disease and cancer outcomes, there has been little convincing evidence from RCTs that a causal relationship may underly these findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "f8ceeb80-5810-473f-885e-721fbe8a4b62",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C39",
+      "claim": "Recent RCTs have reported evidence of a potential interaction between vitamin D supplementation and BMI.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, recent RCTs have reported evidence of a potential interaction between vitamin D supplementation and BMI, such as the Finnish Vitamin D Trial (FIND) (Virtanen et al., 2022) and D-Health (Waterhouse et al., 2021) studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific RCT studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "9652a679-608d-4c4b-9614-deac45548913",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C40",
+      "claim": "Effect estimates derived from MR studies are conventionally interpreted as 'lifelong effects' given that the germline genetic variants harnessed by this approach as instrumental variables are typically fixed at conception.",
+      "claim_type": "EXPLICIT",
+      "source": "Effect estimates derived from MR studies are conventionally interpreted as 'lifelong effects' given that the germline genetic variants harnessed by this approach as instrumental variables are typically fixed at conception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about conventional interpretation of MR studies based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "2a1de3ca-491e-4bd8-98ed-f1e0af9edc68",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C41",
+      "claim": "The childhood and adult body size genetic scores are validated for separating the temporal effects of adiposity within a lifecourse MR framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the childhood and adult body size genetic scores were used in this study as a proof of concept, our findings also help to further validate their utility in separating the temporal effects of adiposity within a lifecourse MR framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "42bed20e-bbc5-4efe-8681-6706dc0500e1",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C42",
+      "claim": "Future MR studies should take further consideration into the age of participants that their genetic estimates are based on, as well as the age at which cases are diagnosed for disease outcome estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these findings emphasise the importance of future MR studies taking further consideration into the age of participants that their genetic estimates are based on, as well as the age at which cases are diagnosed for disease outcome estimates, before interpreting and drawing conclusions from their findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "1e305950-d826-4443-9f7f-a7c0d5b78419",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C43",
+      "claim": "Conducting GWAS on populations of different age groups will add value in helping uncover time-varying genetic effects scattered throughout the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results suggest that conducting GWAS on populations of different age groups will add value in helping uncover time-varying genetic effects scattered throughout the human genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "72396ceb-8ee0-4258-9273-209d300e69e3",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C44",
+      "claim": "Lifecourse MR requires careful examination of genetic instruments to ensure that they are capable of robustly separating the effects of an exposure at different timepoints over the lifecourse.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, lifecourse MR requires careful examination of genetic instruments to ensure that they are capable of robustly separating the effects of an exposure at different timepoints over the lifecourse (Sanderson et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "e7e65571-9cc0-49e9-b587-1c8f60dbd4af",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C45",
+      "claim": "Elucidating the critical timepoints whereby conferred risk by exposures on disease outcomes starts to become immutable has important implications for improving patient care in a clinical setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Doing so may help to elucidate the critical timepoints whereby conferred risk by these exposures on disease outcomes starts to become immutable, which has important implications for improving patient care in a clinical setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential clinical implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "ba6721d4-f742-40b3-9e20-18ae0c5ec84c",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C46",
+      "claim": "Childhood body size has a direct effect on circulating vitamin D levels measured during childhood (mean age: 9.9 years, n=3,800 participants) using data from ALSPAC.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) A forest plot illustrating the direct effect of childhood body size on circulating vitamin D levels measured during childhood (mean age: 9.9 years, n=3,800 participants) using data from the Avon Longitudinal Study of Parents and Children (ALSPAC) with the corresponding schematic diagram for this finding being located in panel (B).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1A and supported by the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "c99fe2c5-3abf-4620-88dd-744380d9311c",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "claim_id": "C47",
+      "claim": "Childhood body size has an indirect effect on adulthood measured vitamin D levels using data from the UK Biobank study (mean age: 56.5 years, n=401,460 participants).",
+      "claim_type": "EXPLICIT",
+      "source": "(C) A forest plot depicting the indirect effect of childhood body size on adulthood measured vitamin D levels using data from the UK Biobank study (mean age: 56.5 years, n=401,460 participants) as described in the schematic diagram presented in panel (D).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1C and supported by the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dfab7c16-b11b-443b-8729-253ac3c8b68a",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Higher childhood body size has a direct effect on lower vitamin D levels in early life (mean age: 9.9 years) after accounting for adult body size, as demonstrated using ALSPAC data (beta = \u22120.32, 95% CI = \u22120.54 to \u22120.10, p=0.004).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C21, C22, and C46 provide converging evidence for this result. The statistical analysis shows a significant direct effect with appropriate confidence intervals and p-value (C3). The outcome measurement is clearly described (C21, C22), and Figure 1A visually confirms the finding (C46). The multivariable MR approach appropriately controls for adult body size.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "559efb24-7901-4041-9ec5-74504084cd0d",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The effect of childhood body size on vitamin D levels in midlife (mean age: 56.5 years) is mediated through adulthood adiposity rather than being a direct effect. In multivariable analysis, the childhood body size effect attenuates to non-significance (beta = 0.04, p=0.10) while adult body size shows a strong effect (beta = \u22120.17, 95% CI = \u22120.21 to \u22120.13, p=4.6 \u00d7 10^-17).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C27, C28, C29, and C47 collectively demonstrate mediation through statistical attenuation. The univariable effect of childhood body size (C27) becomes non-significant in multivariable analysis, while adult body size maintains strong significance (C28). This pattern supports the mediation interpretation (C29), and Figure 1C-D illustrates the indirect pathway (C47).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "fb609ff4-300b-4422-8a5b-044570678c13",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Genetic instruments for childhood and adult body size were derived from GWAS of 463,005 UK Biobank participants and validated in three independent cohorts (ALSPAC, Young Finns Study, and HUNT study).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 describe the derivation and validation of genetic instruments. The large sample size (C16) and independent validation in three cohorts (C17-C19) provide strong support for instrument validity. However, the manuscript does not provide detailed validation statistics, relying on citations to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "0f42abc3-2299-4451-b00e-6f7dec13dc32",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Despite 90.5% sample overlap between exposure and outcome datasets in UK Biobank, there was little evidence of inflated type 1 error rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C26 address a critical methodological concern about sample overlap. The authors used an established calculator (Burgess et al., 2016) to assess type 1 error inflation. However, the manuscript does not report the actual calculated values, only stating 'little evidence' of inflation, which limits full evaluation of this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "3e16f097-e781-4bd1-8249-57b416a1646c",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The main findings were replicated using an alternative GWAS dataset for adult vitamin D levels (Revez et al., 2020).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 indicates replication of findings using independent genetic estimates. This strengthens confidence in the results, though the manuscript only briefly mentions this replication in supplementary materials without presenting detailed comparison of effect sizes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "3a1f7cf9-c132-437b-9d11-2e6c26b16d82",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Adiposity may have acted as a confounding factor in the observed association between vitamin D and type 1 diabetes (T1D), as childhood body size (but not vitamin D) increases T1D risk in prior MR studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C32, and C36 synthesize the current findings with prior MR evidence (C34, C35) to propose adiposity as a confounder. The logic is sound: if adiposity lowers vitamin D and increases T1D risk, while vitamin D does not directly affect T1D, then adiposity confounds the vitamin D-T1D association. However, this remains an inference requiring direct testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "c63d03b4-bcc3-4b1c-a765-2479d7b3bc97",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The timing of exposure and outcome measurement across the lifecourse meaningfully impacts MR study conclusions, demonstrating that conventional 'lifelong effect' interpretations may be oversimplified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C40, C41, and C42 present a methodological insight from the study. The differential effects of childhood vs. adult body size on vitamin D at different life stages (C5) challenge conventional MR interpretation (C40). The genetic scores are validated for temporal separation (C41), and the authors recommend age-specific considerations in future MR studies (C42).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "be030000-d3b4-4638-a0ac-0bfe23c717e3",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Vitamin D supplements are widely prescribed based on conventional epidemiological evidence, but these studies are prone to confounding by factors like BMI and reverse causation from inflammatory processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C6, C7, C8, and C9 establish the background and motivation for the study. These claims are well-supported by citations to prior literature and represent established knowledge in the field. The 18% supplementation rate (C6) and methodological limitations (C2, C8, C9) are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "a54faf70-dfcb-4e94-809c-fe55cd886041",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Observational studies show associations between low vitamin D and cardiovascular disease/cancer, but RCTs provide little evidence for causality, with some trials suggesting interactions with BMI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C38, and C39 summarize prior literature on vitamin D and disease outcomes. These are appropriately cited to review articles (C37, C38) and specific RCTs (C39). This contextualizes the current study's findings but does not represent new empirical results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "0a3c90f9-d07d-4aa3-8885-dfa35161768d",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mendelian randomization has been applied to study vitamin D effects on various diseases, with prior lifecourse MR studies showing that early life adiposity has direct effects on some outcomes (T1D, cardiac structure) but indirect effects on others (cardiovascular disease).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 describe the MR methodology and prior applications. These are well-supported by citations to foundational MR papers (C10) and specific applications (C11-C15). This establishes the methodological framework and precedent for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    },
+    {
+      "id": "447a9d72-9104-4fae-98cc-240ffd6c9e7b",
+      "content_id": "81a7877b-855c-4dd4-aa8a-f0210b4dee49",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Future research should conduct GWAS on different age groups to uncover time-varying genetic effects, with careful examination of genetic instruments to identify critical timepoints for disease risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43, C44, and C45 represent speculative recommendations for future work. While C44 is supported by citation to methodological considerations, C43 and C45 are forward-looking suggestions that cannot be evaluated as supported or unsupported based on the current study's data. These are reasonable implications but remain to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:58.941777Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f752efe6-fa6b-4d52-8195-c8472b285542",
+      "result_id": "dfab7c16-b11b-443b-8729-253ac3c8b68a"
+    },
+    {
+      "claim_id": "c1df6665-3761-4c33-a0a5-200fa0dc6f2f",
+      "result_id": "dfab7c16-b11b-443b-8729-253ac3c8b68a"
+    },
+    {
+      "claim_id": "8fe973b8-e15a-4e3d-a464-68403d5a4bb9",
+      "result_id": "dfab7c16-b11b-443b-8729-253ac3c8b68a"
+    },
+    {
+      "claim_id": "ba6721d4-f742-40b3-9e20-18ae0c5ec84c",
+      "result_id": "dfab7c16-b11b-443b-8729-253ac3c8b68a"
+    },
+    {
+      "claim_id": "8ac68d1c-5eb4-4792-93a0-363c74d5d952",
+      "result_id": "559efb24-7901-4041-9ec5-74504084cd0d"
+    },
+    {
+      "claim_id": "bc46307e-6013-46c4-b51b-6d08cb6f8e05",
+      "result_id": "559efb24-7901-4041-9ec5-74504084cd0d"
+    },
+    {
+      "claim_id": "652b165c-d8b2-4a69-8f2b-c98c204bfc7c",
+      "result_id": "559efb24-7901-4041-9ec5-74504084cd0d"
+    },
+    {
+      "claim_id": "ac520f4c-3a1f-42ef-bc32-824614f6092e",
+      "result_id": "559efb24-7901-4041-9ec5-74504084cd0d"
+    },
+    {
+      "claim_id": "c99fe2c5-3abf-4620-88dd-744380d9311c",
+      "result_id": "559efb24-7901-4041-9ec5-74504084cd0d"
+    },
+    {
+      "claim_id": "f648f975-1d98-4541-9e3c-8c18d62f6061",
+      "result_id": "fb609ff4-300b-4422-8a5b-044570678c13"
+    },
+    {
+      "claim_id": "d5d96a1e-ecc1-45cd-a4bb-f81f7dde7288",
+      "result_id": "fb609ff4-300b-4422-8a5b-044570678c13"
+    },
+    {
+      "claim_id": "b73d9fcf-a202-4d65-b98c-13714915a96a",
+      "result_id": "fb609ff4-300b-4422-8a5b-044570678c13"
+    },
+    {
+      "claim_id": "f4a4d0fe-09eb-44b2-8110-bf2b037fe4bf",
+      "result_id": "fb609ff4-300b-4422-8a5b-044570678c13"
+    },
+    {
+      "claim_id": "13cd81fa-dbc1-4d69-9eb5-b09111d26513",
+      "result_id": "0f42abc3-2299-4451-b00e-6f7dec13dc32"
+    },
+    {
+      "claim_id": "3bbd812d-b96e-4da1-b274-1fcb3f1b0329",
+      "result_id": "0f42abc3-2299-4451-b00e-6f7dec13dc32"
+    },
+    {
+      "claim_id": "5033295e-5ab1-42fa-9293-170146e4cc3c",
+      "result_id": "3e16f097-e781-4bd1-8249-57b416a1646c"
+    },
+    {
+      "claim_id": "83faa717-f89d-4282-a313-a1614e01dae0",
+      "result_id": "3a1f7cf9-c132-437b-9d11-2e6c26b16d82"
+    },
+    {
+      "claim_id": "0958402c-2583-4b5c-947c-e583f98bc68b",
+      "result_id": "3a1f7cf9-c132-437b-9d11-2e6c26b16d82"
+    },
+    {
+      "claim_id": "b03e817a-1f3e-41d9-8231-8839c2c52f1f",
+      "result_id": "3a1f7cf9-c132-437b-9d11-2e6c26b16d82"
+    },
+    {
+      "claim_id": "a8fe7d84-c2f1-4ca2-ac3c-1973b1c151cb",
+      "result_id": "c63d03b4-bcc3-4b1c-a765-2479d7b3bc97"
+    },
+    {
+      "claim_id": "9652a679-608d-4c4b-9614-deac45548913",
+      "result_id": "c63d03b4-bcc3-4b1c-a765-2479d7b3bc97"
+    },
+    {
+      "claim_id": "2a1de3ca-491e-4bd8-98ed-f1e0af9edc68",
+      "result_id": "c63d03b4-bcc3-4b1c-a765-2479d7b3bc97"
+    },
+    {
+      "claim_id": "42bed20e-bbc5-4efe-8681-6706dc0500e1",
+      "result_id": "c63d03b4-bcc3-4b1c-a765-2479d7b3bc97"
+    },
+    {
+      "claim_id": "4eaefd2a-204c-4193-aefa-2bc9e4db45c3",
+      "result_id": "be030000-d3b4-4638-a0ac-0bfe23c717e3"
+    },
+    {
+      "claim_id": "738a1027-481b-4ad7-b25d-f054556f167b",
+      "result_id": "be030000-d3b4-4638-a0ac-0bfe23c717e3"
+    },
+    {
+      "claim_id": "930a4006-0d57-49b4-b71f-9c64314a4d6a",
+      "result_id": "be030000-d3b4-4638-a0ac-0bfe23c717e3"
+    },
+    {
+      "claim_id": "783f99ee-d972-4bc3-bf01-4eccbb4cc259",
+      "result_id": "be030000-d3b4-4638-a0ac-0bfe23c717e3"
+    },
+    {
+      "claim_id": "91d0b86a-7da2-484f-8367-3a7b412ff6ac",
+      "result_id": "be030000-d3b4-4638-a0ac-0bfe23c717e3"
+    },
+    {
+      "claim_id": "b5fbf90b-b5b4-415d-9f6e-eb9bf1911fc8",
+      "result_id": "be030000-d3b4-4638-a0ac-0bfe23c717e3"
+    },
+    {
+      "claim_id": "1ac4658d-5fed-49f0-aacb-cd184bbf7107",
+      "result_id": "a54faf70-dfcb-4e94-809c-fe55cd886041"
+    },
+    {
+      "claim_id": "00d8d868-e8fc-4aa9-b28b-3ce3f1b6364c",
+      "result_id": "a54faf70-dfcb-4e94-809c-fe55cd886041"
+    },
+    {
+      "claim_id": "f8ceeb80-5810-473f-885e-721fbe8a4b62",
+      "result_id": "a54faf70-dfcb-4e94-809c-fe55cd886041"
+    },
+    {
+      "claim_id": "74219961-7b7a-4ff3-8166-93276fc0a2b9",
+      "result_id": "0a3c90f9-d07d-4aa3-8885-dfa35161768d"
+    },
+    {
+      "claim_id": "3bd58f58-b0ca-48c1-b81f-0e342fa9afdb",
+      "result_id": "0a3c90f9-d07d-4aa3-8885-dfa35161768d"
+    },
+    {
+      "claim_id": "0b671715-3bc7-4113-a215-f035696e1156",
+      "result_id": "0a3c90f9-d07d-4aa3-8885-dfa35161768d"
+    },
+    {
+      "claim_id": "2fa91b07-e344-404c-b9a4-a24cc2bfba4c",
+      "result_id": "0a3c90f9-d07d-4aa3-8885-dfa35161768d"
+    },
+    {
+      "claim_id": "c017c891-da03-4fe5-8271-06f873fbfe50",
+      "result_id": "0a3c90f9-d07d-4aa3-8885-dfa35161768d"
+    },
+    {
+      "claim_id": "cafe1555-4c23-4b77-a1a3-fd50a32c151a",
+      "result_id": "0a3c90f9-d07d-4aa3-8885-dfa35161768d"
+    },
+    {
+      "claim_id": "1e305950-d826-4443-9f7f-a7c0d5b78419",
+      "result_id": "447a9d72-9104-4fae-98cc-240ffd6c9e7b"
+    },
+    {
+      "claim_id": "72396ceb-8ee0-4258-9273-209d300e69e3",
+      "result_id": "447a9d72-9104-4fae-98cc-240ffd6c9e7b"
+    },
+    {
+      "claim_id": "e7e65571-9cc0-49e9-b587-1c8f60dbd4af",
+      "result_id": "447a9d72-9104-4fae-98cc-240ffd6c9e7b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1782 @@
+{
+  "submission": {
+    "id": "1435c799-ff02-4d65-a657-bfff8441c9f8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T00:50:52.968409Z",
+    "updated_at": "2025-12-03T00:50:52.968409Z"
+  },
+  "content": [
+    {
+      "id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "submission_id": "1435c799-ff02-4d65-a657-bfff8441c9f8",
+      "content_type": "manuscript",
+      "content_text": "# Vanishing white matter disease expression of truncated EIF2B5 activates induced stress response\n\n## Authors\n\n- Matthew D Keefe<sup>1</sup>\n- Haille E Soderholm<sup>1</sup>\n- Hung-Yu Shih<sup>1</sup>\n- Tamara J Stevenson<sup>1</sup>\n- Kathryn A Glaittli<sup>1</sup>\n- D Miranda Bowles<sup>1</sup>\n- Erika Scholl<sup>1</sup>\n- Samuel Colby<sup>2</sup>\n- Samer Merchant<sup>2</sup>\n- Edward W Hsu<sup>2</sup>\n- Joshua L Bonkowsky<sup>1</sup> ([ORCID: 0000-0001-8775-147X](https://orcid.org/0000-0001-8775-147X)) \u2020\n\n### Affiliations\n\n1. Department of Pediatrics, University of Utah School of Medicine Salt Lake City United States\n2. Department of Bioengineering, University of Utah Salt Lake City United States\n3. Brain and Spine Center, Primary Children\u2019s Hospital Salt Lake City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nVanishing white matter disease (VWM) is a severe leukodystrophy of the central nervous system caused by mutations in subunits of the eukaryotic initiation factor 2B complex (eIF2B). Current models only partially recapitulate key disease features, and pathophysiology is poorly understood. Through development and validation of zebrafish (Danio rerio) models of VWM, we demonstrate that zebrafish eif2b mutants phenocopy VWM, including impaired somatic growth, early lethality, effects on myelination, loss of oligodendrocyte precursor cells, increased apoptosis in the CNS, and impaired motor swimming behavior. Expression of human EIF2B2 in the zebrafish eif2b2 mutant rescues lethality and CNS apoptosis, demonstrating conservation of function between zebrafish and human. In the mutants, intron 12 retention leads to expression of a truncated eif2b5 transcript. Expression of the truncated eif2b5 in wild-type larva impairs motor behavior and activates the ISR, suggesting that a feed-forward mechanism in VWM is a significant component of disease pathophysiology.\n\n## Introduction\n\nVanishing white matter (VWM) disease is a genetic leukodystrophy leading to severe neurological disease and early death (Fogli et al., 2004; van der Knaap et al., 2006; Labauge et al., 2009; Carra-Dalliere et al., 2011; VWM Research Group et al., 2018). VWM disease is caused by bi-allelic recessive variants in any of the five genes encoding subunits (1-5) of the eukaryotic translation initiation factor 2B (eIF2B) complex. Symptoms of VWM include ataxia, spasticity, seizures, cognitive impairment, and motor problems. While there are no sex differences seen in VWM patients, females can experience ovarian failure. In patients, autopsies have revealed affected oligodendrocytes and astrocytes, myelin loss, and cystic cavitations of white matter (van der Knaap et al., 1997; van der Knaap et al., 1998; Pronk et al., 2006). Genotype-phenotype correlations of mutation severity have been shown (VWM Research Group et al., 2018), and severe multi-organ involvement is characteristic of fetal and neonatal forms (van der Knaap et al., 2003b; Song et al., 2017). Disease onset\u00a0<4 years of age is followed by a rapid deterioration of symptoms, while disease onset\u00a0>4 years of age shows greater variability in disease course (VWM Research Group et al., 2018). There is no treatment for VWM disease, and current mouse models only partially recapitulate disease pathophysiology (Geva et al., 2010; Dooves et al., 2016).\n\nThe eIF2B complex is a heteropentameric guanine nucleotide exchange factor (GEF) for eukaryotic initiation factor 2 (eIF2), which governs the rate of global protein synthesis and cap-dependent translation initiation. The eIF2B complex also functions to displace eIF5 from inactive GDP-bound eIF2 to allow its recruitment to the ribosome (Jennings and Pavitt, 2014). Importantly, the eIF2B complex plays a central role in the cellular integrated stress response (ISR). Stress-dependent kinase activation leads to phosphorylation of eIF2, which binds eIF2B more tightly and reduces overall protein synthesis (Krishnamoorthy et al., 2001; Pakos-Zebrucka et al., 2016). In human cell lines, it has been shown that translation is suppressed to a greater degree after stress in VWM patients (Moon and Parker, 2018). This suppression of translation lasts for a longer period of time in VWM cells, and the protein responsible for de-phosphorylating eIF2 and allowing translation recovery, GADD34, was found in lower quantities.\n\nMouse lines with knock-in/knock-out mutations in Eif2b5R132H, a common allele of VWM patients, have impaired motor function, growth deficits, delayed development of white matter, and abnormal abundance of oligodendrocytes and astrocytes (Geva et al., 2010; Atzmon et al., 2018). This developmental role for eIF2B was further confirmed in a mouse model with developmental misexpression of pancreatic endoplasmic reticulum kinase (PERK) in oligodendrocytes. PERK is one of the stress-responsive kinases that activate the ISR via phosphorylation of eIF2. PERK misexpression caused hypomyelination, oligodendrocyte damage, and myelin loss (Lin et al., 2014). However, this result was only seen in young mice, and could not be induced in mature animals.\n\nISR activation has been identified in VWM patient brain autopsy samples (van Kollenburg et al., 2006) and in mouse VWM models (Wong et al., 2019; Abbink et al., 2019). A small molecule inhibitor of the ISR, ISRIB, has been shown to bind to and activate the decameric, functional eIF2B complex (Sidrauski et al., 2013; Sidrauski et al., 2015; Wong et al., 2018).\n\nThere are key aspects that remain unclear about eIF2B function and its involvement in VWM pathophysiology. eIF2B is expressed globally but VWM primarily affect the CNS, including differential effects in the CNS. For example, oligodendrocyte numbers are decreased in affected white matter, but they are increased in other areas (Van Haren et al., 2004; Bugiani et al., 2010). GEF activity of the eIF2B complex does not appear to correlate with VWM disease severity (Liu et al., 2011), suggesting that the overall protein translation is not the key component of VWM pathophysiology. Another unusual and poorly understood aspect of VWM is that rapid clinical deterioration and white matter loss can be provoked by a stressor, such as minor head trauma or mild illness (van der Knaap et al., 2006). This is consistent with models in which chronic ISR activation causes cellular apoptosis (Bond et al., 2020), but the mechanism by which VWM mutation affects ISR response is unclear. Further, there is some evidence that a de-regulated ISR is not alone sufficient to cause VWM pathology (Wisse et al., 2017), and in fact blocking the ISR worsens VWM pathology (Sekine et al., 2016). Thus, current models and approaches have left key questions unanswered.\n\nWe report the development and characterization of a small vertebrate (zebrafish \u2013 Danio rerio) model of VWM. We have generated and characterized mutant alleles in zebrafish eif2b subunits 1, 2, and 4, and an allelic series in subunit 5. We demonstrate that the eif2b mutants exhibit a range of phenotypic severity, including changes in growth, lethality, behavior, myelination, apoptosis, and proliferation in the CNS. We also show conservation of function of eif2b2 between zebrafish and humans, validating the zebrafish model for understanding human VWM. We find that the eif2b mutants at baseline have activated induced stress response (ISR). The zebrafish eif2b mutants have impaired swimming motor behavior, a phenotype that could be used in a phenotype-based screen. Finally, we found that in the zebrafish eif2b mutants, a truncated eif2b5 transcript is generated. The truncated eif2b5 is capable of activating the ISR, and can impair motor behavior, suggesting that a feedback loop with truncated eif2b5 may play an important role in disease pathology. Our work reveals a similar role for the eif2b complex in zebrafish and in humans, identifies a novel mechanism of VWM pathophysiology, and provides a useful model of VWM for future therapeutics screening.\n\n## Results\n\n### Phylogenetic analysis of EIF2B sequence homology and expression in zebrafish development\n\nWe characterized the sequence and developmental expression of the five Eif2b subunit orthologs in zebrafish, eif2b1-5 (eif2b1, ENSDARG00000091402; eif2b2 ENSDARG00000041397; eif2b3, ENSDARG00000018106; eif2b4, ENSDARG00000014004; eif2b5, ENSDARG00000074995). Each human EIF2B subunit gene has a single zebrafish ortholog with a conserved amino acid sequence (Figure 1A). The Eif2b zebrafish and human protein structures also show conserved structural domains (Figure 1B). We evaluated eif2b gene expression during early development. Expression analysis of zebrafish eif2b genes at 24 hpf (hours post-fertilization) showed expression chiefly in the brain and eye (Figure 1C\u2013G). By 72 hpf expression was clearly noted throughout the animal, with higher levels in the brain (Figure 1H\u2013L). Quantitative RT-PCR analysis revealed subunit specific expression changes in the first 7 days of life, although only for eif2b4 were the changes significant (Figure 1M\u2013Q).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig1-v2.jpg)\n\n**Figure 1.:** (A) A horizontal cladogram of eif2b1-5 gene sequences shows that zebrafish have a single ortholog of each human EIF2B gene, and a relative conservation of amino acid sequence between orthologs. Scale bar equals an evolutionary distance of 0.1 amino acid changes per position in the sequence (Phylodendron). (B) Comparison of zebrafish and human EIF2B protein sequences shows conserved domain architectures. (C\u2013L) Whole-mount in situ expression analysis in zebrafish embryos and larvae, brightfield microscopy, rostral left, dorsal top. (C\u2013E) eif2b subunit genes at 24 hpf shows predominantly brain and eye expression, with lower levels of expression throughout the embryo. (H\u2013L) eif2b subunit genes at 72 hpf shows higher expression throughout the animal and in the brain compared to 24 hpf. (M\u2013Q) qRT-PCR expression of eif2b subunit genes from 24 hpf through 7 dpf, normalized to 24 hpf expression demonstrates variable expression changes across development. Error bars, standard error of the mean.\n\n### Zebrafish eif2b subunit mutant alleles generation and molecular characterization\n\nWe obtained zebrafish mutant alleles for three eif2b subunit genes from the Sanger Institute Zebrafish Mutation Project (eif2b1, ENSDARG00000091402; eif2b2 ENSDARG00000041397; eif2b4, ENSDARG00000014004) (Figure 2A\u2013C) (15). eif2b1 (sa12357) harbors a T/A transversion resulting in an early stop in exon 8 (Figure 2A); eif2b2 (sa17223) has a G/A transition in exon 5, mutating an essential splice site (Figure 2B); and eif2b4 (sa17367) has a G/A transition in exon 12 mutating an essential splice site (Figure 2C). To mutagenize subunit eif2b5, we used the Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR)/Cas9 system and created six different alleles by targeting exon 1 (Figure 2D). This created three alleles (zc101, zc103, and zc104) with in-frame deletions leading to loss of amino acids; two alleles with a combination of amino acid loss and missense mutations (zc105 and zc106); and one allele (zc102) with a nonsense mutation that caused a frame shift in exon one leading to a premature stop codon in exon 2. Following CRISPR mutagenesis, individual G0 fish were outcrossed to wild-type animals and offspring were screened by high-resolution melt analysis (HRMA) PCR (Xing et al., 2014). In addition to HRMA PCR genotyping, we confirmed genotypes by Sanger sequencing both in the G0 and subsequent generations. cDNA sequencing of eif2b2sa17223, eif2b5zc102 and eif2b5zc103 confirmed that the genomic mutations caused splicing failure or the nonsense mutation and frame shift (Figure 2E). We tried western blotting with several commercial antibodies against Eif2b2 and Eif2b5 (Eif2B2 Abcam 133848; Eif2B5 Abcam ab91563, GeneTex 30808, Santa Cruz 514056, ProSci 56\u2013847, Bethyl A302-557A) but none gave a specific band.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig2-v2.jpg)\n\n**Figure 2.:** (A-D) Depiction of zebrafish eif2b subunits exon structure and the location and nucleotide change for each mutant. (A) eif2b1 harbors a T/A transversion resulting in an early stop in exon 8. (B) eif2b2 has a G/A transition in exon 5, mutating an essential splice site. (C) eif2b4 has a G/A transition in exon 12 mutating an essential splice site. (D) eif2b5 exon one was targeted for mutagenesis using a gRNA (red). Six distinct alleles were recovered (described in text). (E) Chromatograms of cDNA confirm presence of predicted mutations for eif2b5zc103/zc103, eif2b5zc102/zc102, and eif2b2sa17223/sa17223. (F) eif2b5zc103/zc103 mutants survive until adulthood in Mendelian ratios, but show grow defects compared to their heterozygous and wild-type siblings. (G) Adult eif2b5zc103/zc103 lengths are significantly shorter compared to their wild-type and heterozygous siblings. (H) Bright-field (BF) images of 6 dpf eif2b5zc103/zc103, eif2b5zc102/zc102, and eif2b2sa17223/sa17223 larva. eif2b2sa17223/sa17223 and eif2b5zc102/zc102 have no swim bladder (arrowhead) and a small head. (I) Kaplan-Meyer survival curves from an eif2b2sa17223/+ heterozygous in-cross shows 1% (n\u00a0=\u00a03) homozygote survival at 10 dpf (total n\u00a0=\u00a0302); however no homozygotes live past 2 weeks of age. (J) Kaplan-Meyer survival curves from an eif2b5zc102/+ heterozygous in-cross shows that all homozygotes were dead by 10 dpf (total n\u00a0=\u00a062). (K) Kaplan-Meyer survival curves from an eif2b5zc103/+ heterozygous in-cross show no mortality of homozygotes. (L) Motor swimming analysis shows impaired swimming behavior in mutants. Distance moved, time spent moving, and velocity, for wild-type controls, and eif2b5zc103/zc103, eif2b5zc102/zc102, and eif2b2sa17223/sa17223 mutants, at 5, 6, and 7 dpf. Mean shown with 95% confidence intervals.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) BF image of 6 dpf eif2b4sa17367/sa17367 shows a lack of swim bladder (arrowhead) and a small head. (B) Motor swimming analysis shows impaired swimming behavior in homozygous mutants. Distance moved, time spent moving, and velocity, for wild-type controls, and eif2b5zc103 heterozygous and homozygous mutants, at 5 dpf. Mean shown with 95% confidence intervals. (C) eif2b4sa17367/sa17367 mutants have impaired survival, with\u00a0<5% surviving past 10 dpf (total n\u00a0=\u00a0100). (D) eif2b4sa17367/sa17367 mutants have activation of ISR transcripts (qRT-PCR).\n\nMost of the alleles in the different subunits were homozygous viable, and survived to adulthood and were fertile. The eif2b5zc103/zc103 mutants showed a decrease in size compared to their wild type and heterozygous siblings (2.2 cm vs 1.8 cm, 0.3 and 0.2 s.D., and p<0.0001) (Figure 2F\u2013G). Mutants of a more severe allele, eif2b5zc102/zc102, harboring an early stop codon, exhibited growth deficits such as failure to develop a swim bladder, and were smaller in size compared to their wild type and heterozygous siblings (Figure 2H, arrowhead). This phenotype was also present in the eif2b2sa17223/sa17223 allele (Figure 2H, arrowhead). Two alleles did not survive past 2 weeks of age: eif2b5zc102/zc102 and eif2b2sa17223/sa17223 (at 10 dpf, eif2b5+/+ WT n\u00a0=\u00a012; eif2b5zc102/+ heterozygous n\u00a0=\u00a026; eif2b5zc102/zc102 homozygous n\u00a0=\u00a00. eif2b2+/+ WT n\u00a0=\u00a068; eif2b2sa17223/+ heterozygous n\u00a0=\u00a0118; eif2b2sa17223/sa17223 homozygous n\u00a0=\u00a02) (Figure 2I\u2013J). By contrast, the milder phenotype eif2b5zc103 allele survives until adulthood (at 10 dpf, eif2b5+/+ WT n\u00a0=\u00a025; eif2b5zc103/+ heterozygous n\u00a0=\u00a041; eif2b5zc103/zc103 homozygous n\u00a0=\u00a022) (Figure 2K).\n\nSince affected VWM patients often have motor impairment, we analyzed the functional effects of eif2b2, eif2b4, and eif2b5 mutants on motor behavior from 5 dpf to 7 dpf. The eif2b2sa17222sa172232 homozygous mutants showed reduction in distance moved, movement time, and velocity at 7dpf (Figure 2L). The eif2b4sa17367/sa17367 mutants also had impairments in growth, motor function, and survival (Figure 2\u2014figure supplement 1A-C). The eif2b5 zc102/zc102 mutants had motor function impairments by 5 dpf (Figure 2L). On the other hand, the eif2b5zc103/zc103 mutants had no difference in distance moved, movement time, or velocity as compared to their wild-type siblings (Figure 2L). To exclude the possibility that the reduced motor function was due to the developmental delay, we compared the behavior of 7\u00a0dpf eif2b2sa17223 or eif2b5zc102 mutants, to 6dpf wild-type siblings, and still found abnormal motor function in mutants (Figure 2L). However, since some of the mutants (such as eif2b5zc102) had phenotypes including reduced viability, smaller body size, etc., it is possible that some of the behavioral deficits are not due to problems of the CNS. Since the eif2b2 and eif2b5 mutations are the most commonly reported in clinical patients (van der Knaap et al., 2003a), the eif2b2sa17223, eif2b5zc102, and eif2b5zc103 mutants were used for the remaining experiments in this manuscript. eif2b mutants had abnormal CNS development.\n\nBecause we observed that the eif2b mutants had early lethality and abnormal growth, we evaluated different CNS markers in early development. We compared three eif2b alleles: two alleles in two different subunits with early lethality, eif2b5zc102 and eif2b2sa17223; and a homozygous viable allele, eif2b5zc103. At 5 dpf, all three of these mutants showed an increase in cell death, quantified using terminal deoxynucleotidyl transferase dUTP nick-end labeling (TUNEL) (eif2b5zc103: mean\u00a0=\u00a0129.1, S.D.\u00a0=\u00a079.5, eif2b5+/+: mean\u00a0=\u00a012.2, S.D.\u00a0=\u00a09.8, p=0.001; eif2b5zc102: mean\u00a0=\u00a0163.7, S.D.\u00a0=\u00a078.2 eif2b5+/+: mean\u00a0=\u00a018.7, S.D.\u00a0=\u00a010.6 p=2.03\u00d710\u22125; eif2b2sa17223: mean\u00a0=\u00a0202.8, S.D.\u00a0=\u00a060.8: eif2B2+/+: mean\u00a0=\u00a037.4, S.D.\u00a0=\u00a025.2, p=0.0005) (Figure 3A\u2013E). We also compared counts of cells expressing phospho-histone H3 (pH3), an indicator of cell proliferation. eif2b5zc103 and eif2b5zc102 mutants showed no change in pH3 cell counts at\u00a05\u00a0dpf compared to controls, but showed a noticeable change in proliferation pattern: a lack of proliferation in the outer perimeter of the eyes (arrow) and the tectum (arrowhead), but increased proliferation in the ventricular region (asterisk) (eif2b5zc103: mean\u00a0=\u00a0247.2, S.D.\u00a0=\u00a044.5, eif2b5+/+: mean\u00a0=\u00a0273.1, S.D.\u00a0=\u00a043.8, p=0.206; eif2b5zc102: mean\u00a0=\u00a0243.3, S.D.\u00a0=\u00a040.0, eif2b5+/+: mean\u00a0=\u00a0288.3, S.D.\u00a0=\u00a032.0, p=0.0238) (Figure 3F\u2013H,J). eif2b2sa17223 mutants showed a decrease in pH3 cell counts at 5 dpf compared to controls as well as a change in proliferation pattern (eif2b2sa17223: mean\u00a0=\u00a0185.3, S.D.\u00a0=\u00a037.8: eif2b2+/+: mean\u00a0=\u00a0271.6, S.D.\u00a0=\u00a046.7, p=0.0004) (Figure 3I,J).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig3-v2.jpg)\n\n**Figure 3.:** Confocal images, z-stack maximal projections. (A\u2013I), dorsal views of the brain, rostral to the top, scale bar 50 \u03bcm; (K\u2013N), lateral views of spinal cord, dorsal to the top, scale bar 50 um. (P\u2013S), dorsal views of brain, rostral to top, scale bar 50 \u03bcm. *p<0.05. (A\u2013D) TUNEL and DAPI staining shows increased apoptosis in homozygous mutant alleles compared to controls (wild-type and heterozygous siblings) in eif2b5zc103/zc103 eif2b5zc102/zc102 and eif2b2sa17223/sa17223 mutants. (E) Quantification of mean TUNEL+ cell counts in eif2b5zc103/zc103 eif2b5zc102/zc102 and eif2b2sa17223/sa17223 mutants compared to sibling controls. (F\u2013I) Phospho-histone 3 and DAPI staining shows decreased cell proliferation in 5 dpf eif2b2sa17223/sa17223 mutants compared to controls, while eif2b5zc103/zc103 eif2b5zc102/zc102 mutants show a change in proliferation pattern, specifically in the optic tectum. (J) Quantification of mean number pH3+ cells counts in eif2b5zc103/zc103 eif2b5zc102/zc102 and eif2b2sa17223/sa17223 mutants compared to sibling controls. (K\u2013N) Olig2dsRed and DAPI staining shows no change in OPC counts in the spinal cords of 5 dpf eif2b5zc103/zc103 eif2b5zc102/zc102 and eif2b2sa17223/sa17223 mutants compared to controls. (O) Quantification of mean number Olig2dsRed+ counts in eif2b5zc103/zc103 eif2b5zc102/zc102 or eif2b2sa17223/sa17223 mutants compared to sibling controls. (P\u2013S) Co-labeled Olig2dsRed+/TUNEL+ cell counts staining shows increase in Olig2dsRed+ cells undergoing apoptosis in brains of 5 dpf eif2b5zc103/zc103, eif2b5zc102/zc102, or eif2b2sa17223/sa17223 mutants compared to sibling controls. (O) Quantification of mean number of co-labeled Olig2dsRed+/TUNEL+ cell counts in eif2b5zc103/zc103, eif2b5zc102/zc102, or eif2b2sa17223/sa17223 mutants compared to sibling controls.\n\nIn the spinal cord, we measured counts of oligodendrocyte precursor cells (OPCs), which give rise to myelin-producing oligodendroglia. We used the Tg(olig2:dsRed) line crossed into the eif2b5zc103/zc103, eif2b5zc102/zc102 or eif2b2sa17223/sa172233 background (Kucenas et al., 2008). The Tg(olig2:dsRed) line labels OPCs as well as motor neurons and neuronal precursors, but in the spinal cord is specific for OPCs in labeled cells that have migrated dorsally. We observed no change in the number of OPCs (measured in two somites directly above the caudal end of the yolk) (eif2b5zc103: mean\u00a0=\u00a026.6, S.D.\u00a0=\u00a07.55, eif2b5+/+: mean\u00a0=\u00a030.71, S.D.=,5.88 p=0.278; eif2b5zc102: mean\u00a0=\u00a030.6, S.D.\u00a0=\u00a011.0, eif2b5+/+: mean\u00a0=\u00a036.6, S.D.\u00a0=\u00a09.63, p=0.514; eif2b2sa17223: mean\u00a0=\u00a035.8, S.D.\u00a0=\u00a05.36, eif2b2+/+: mean\u00a0=\u00a039.2, S.D.\u00a0=\u00a04.66, p=0.163) (Figure 3K\u2013O). We evaluated apoptotic OPCs in the brain by crossing the Tg(olig2:dsRed) line into the eif2b5zc103/zc103, eif2b5zc102/zc102 or the eif2b2sa17223/sa172233 background and staining with TUNEL. All three lines showed significant increases in the number of TUNEL-positive OPCs specifically in the hindbrain (eif2b5zc102: mean\u00a0=\u00a017.5, S.D.\u00a0=\u00a03.02, eif2b5+/+: mean\u00a0=\u00a01, S.D.\u00a0=\u00a01, p=0.00004; eif2b5zc103: mean\u00a0=\u00a03, S.D.\u00a0=\u00a02.26, eif2b5+/+: mean\u00a0=\u00a00.7, S.D.\u00a0=\u00a01.06, p=0.0144; eif2b2sa17223: mean\u00a0=\u00a03.5, S.D.\u00a0=\u00a01.05, eif2b2+/+: mean\u00a0=\u00a00.333, S.D.\u00a0=\u00a00.577, p=0.002) (Figure 3P\u2013T).\n\nTo further quantify effects on oligodendrocytes, we analyzed the expression of myelin associated glycoprotein in differentiated oligodendrocytes by in situ hybridization, and showed no difference in numbers of those cells in the spinal cord of mutants compared with wild-type siblings (Figure 4). To confirm that the increased apoptosis was due to loss of OPCs, we counterstained for the OPC marker, olig1 along with the TUNEL assay in the eif2b5zc103/zc103, eif2b5zc102/zc102 or eif2b2sa17223/sa172233 mutants (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig4-v2.jpg)\n\n**Figure 4.:** Confocal images of brain, z-stack, rostral to the top, double-labeling for TUNEL and olig1 (in situ probe), in WT, eif2b5zc103/zc103, eif2b5zc102/zc102 or eif2b2sa17223/sa172233 larvae. Region used for quantification shown by box. Inset in each panel shows example of double-labeled cell (TUNEL, olig1) for each genotype (except WT), single confocal slice image. Middle panels: no change in apoptosis of differentiated oligodendrocytes, co-labeled with myelin associated glycoprotein (mag) (in situ probe) and TUNEL. Confocal z-stack images of spinal cord, rostral to the left; quantified in lower right panel.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Dorsal to top, rostral to left, in spinal cord. Arrows point to co-localized GFP and mag. Confocal image, single slice, step size 2.5 \u03bcm, scale bar, 10 \u03bcm.\n\nThe data above showed that proliferation patterns were altered in eif2b mutants, and in order to discover in which cell types this occurred, we counterstained with the radial glia marker (Zrf1), the pan-neuronal maker (HuC/D), and the microglial marker (apoeb) along with phospho-histone3 (pH3). The Zrf1 and pH3 double-positive cells showed no difference in either the tectum or the eye in eif2b mutants. In contrast, the midline of eif2b5zc102/zc102 contained significantly more Zrf1 and pH3 double-positive cells, while eif2b2sa17223/sa17223 and eif2b5zc103/zc103 tended towards increased numbers (Figure 5A,B). The HuC/D and pH3 double-positive cells were significantly decreased in the tectum and tended towards decreased numbers in the eye of eif2b5zc102/zc102 and eif2b2sa17223/sa17223 mutants. But there were no differences in either the tectum or eye of eif2b5zc103/zc103 compared to wild-type siblings (Figure 5A,B). The apoeb and pH3 double-positive cells were increased in the midline of eif2b5 mutants but not in the tectum and eye (Figure 5C,D). On the other hand, the eif2b2sa17223/sa17223 mutation had no impact on the apoeb and pH3 double-positive cells in the tectum, the midline, or the eye (Figure 5C,D). Thus, interestingly, the disordered proliferation was a widespread phenotype in different cell lineages, but did also show spatial specificity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig5-v2.jpg)\n\n**Figure 5.:** (A) Confocal images of brain, z-stack, rostral to the top, in WT, eif2b5zc103/zc103, eif2b5zc102/zc102 or eif2b2sa17223/sa172233 larvae. Confocal images of brain, z-stack, rostral to the top. Top row, labeling for Zrf1, DAPI, and pH3. Middle row, labeling for HuC/D, DAPI, and pH3. Bottom row, labeling for apoeb, DAPI, and pH3. (B) Quantification of cell counts in (A). (C) Confocal images of brain, z-stack, rostral to the top, in WT, eif2b5zc103/zc103, eif2b5zc102/zc102 or eif2b2sa17223/sa172233 larvae. Confocal images of brain, z-stack, rostral to the top. Top row, labeling for Zrf1, DAPI, and TUNEL. Middle row, labeling for HuC/D, DAPI, and TUNEL. Bottom row, labeling for apoeb, DAPI, and TUNEL. (D) Quantification of cell counts in (C).\n\nIn order to identify the cell type of apoptotic cells outside the hindbrain, we stained with Zrf1, HuC/D, and apoeb, and counterstained with TUNEL. This revealed that only eif2b5zc102/c102 mutants had a significant increase in Zrf1 and TUNEL double-positive cells in the midline (Figure 5).\n\n### Zebrafish adult eif2b5zc103/zc103 mutants show myelin defects\n\nVWM patients have a loss of white matter and abnormal white matter signal quality on MRI (Leegwater et al., 2003; van der Knaap et al., 2006). We used transmission electron microscopy (TEM) to measure myelin content in the adult eif2b5zc103/zc103 mutants compared to age-matched controls. The adult mutants showed a decrease in the thickness of the myelin sheath as measured by estimation of the G-ratio, the perimeter of the axon to the perimeter of the myelin sheath (eif2b5zc103: mean\u00a0=\u00a00.690, S.D.\u00a0=\u00a00.076, eif2b5+/+: mean\u00a0=\u00a00.593, S.D.\u00a0=\u00a00.085, p=2.18E-22) (Figure 6A\u2013E). We also performed Black Gold II staining to compare myelination patterns in the CNS. The adult mutants showed a disorganized pattern of myelinated axons in the optic tectum compared to age-matched wild-type adult controls (Figure 6F,G).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013C) Transmission electron microscopy (TEM) of adult eif2b5zc103/zc103 optic nerve compared to eif2b5+/+ adults. Scale bar 2 \u03bcm. (A) eif2b5+/+ adult TEM image. (B) eif2b5zc103/zc103 adult TEM image. (A\u2019, B\u2019) Higher magnification views of insets represented in (A) and (B), scale bar 0.5 \u03bcm. (C\u2013E). Comparison of ratio between axon perimeter and myelin sheath perimeter, G-ratio, between eif2b5zc103/zc103 and eif2b5+/+; axon diameter and myelin thickness quantification shown. (F\u2013G) Black Gold stain of adult eif2b5zc103/zc103 optic tectum compared to eif2b5+/+ adults. Scale bar 5 \u03bcm. (F) eif2b5+/+ adult Black Gold stained image. (G) eif2b5zc103/zc103 adult Black Gold stained image. (H\u2013J) Magnetic Resonance Image (MRI) of adult eif2b5zc103/zc103 compared to eif2b5+/+. Scale bar 2 mm. Slice scheme of MRI images from the rhombencephalic ventricle (RV) at the end of the midbrain moving rostrally. (H) eif2b5+/+ adult T2 MRI image slice 1. (I) eif2b5zc103/zc103 adult T2 MRI of slice 1. (J) T2 intensity analysis. The normalized change in intensity from the from grey matter region of the optic tectum to the white matter region of the periventricular grey zone of the optic tectum, indicated by red boxes.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Demonstration of orientation used for length, width, and height measurements of head. (B) MRI images, and quantification, of control compared to mutant, demonstrating decreased sizes.\n\nWe performed magnetic resonance imaging (MRI) of adult eif2b5 mutants, and found a decrease in overall brain size in the adult eif2b5zc103/zc103 mutants compared to adult wild-type controls using the skull as a normalization factor to account for the decrease in overall size of the mutants (Figure 6H\u2013J; Figure 6\u2014figure supplement 1). These images showed a decrease in overall brain volume of the eif2b5zc103/zc103 mutants as measured by length, width and height of the brains compared to age-matched controls (eif2b5zc103/zc103 normalized length: mean\u00a0=\u00a00.933; S.D.\u00a0=\u00a00.041; eif2b5+/+ normalized length: mean\u00a0=\u00a01.11, S.D.\u00a0=\u00a00.091, p=0.001; eif2b5zc103/zc103 normalized width: mean\u00a0=\u00a00.836; S.D.\u00a0=\u00a00.034; eif2b5+/+ normalized width: mean\u00a0=\u00a00.958, S.D.\u00a0=\u00a00.023, p=0.00002; eif2b5zc103/zc103 normalized height: mean\u00a0=\u00a00.551; S.D.\u00a0=\u00a00.018; eif2b5+/+ normalized height: mean\u00a0=\u00a00.629, S.D.\u00a0=\u00a00.035, p=0.0006) (Figure 6\u2014figure supplement 1). We also found a change in the intensity between the grey of the optic tectum and the white matter of the periventricular grey zone in the T2 MRI images from the rhombencephalic ventricle (RV) at the end of the midbrain moving rostrally (eif2b5zc103/zc103 normalized intensity: mean\u00a0=\u00a00.849; S.D.\u00a0=\u00a00.108; eif2b5+/+ normalized length: mean\u00a0=\u00a00.743, S.D.\u00a0=\u00a00.091, p=0.0005) (Figure 6J).\n\n### Human EIF2B genes rescue zebrafish eif2b mutant lethality and CNS apoptosis\n\nAlthough the human and zebrafish eif2b subunit genes show significant conservation in protein sequence, an important question for modeling VWM is to demonstrate functional conservation. Zebrafish and human eif2b2 ortholog amino acids are highly conserved, and both orthologs have the same number of exons (Figure 7A\u2013C). To test functional conservation, we created transgenic animals ubiquitously-expressing human EIF2B2. We created a Tol2 transposable vector in which the human EIF2B2 gene and enhanced green fluorescent protein (eGFP) was expressed under control of the ubiquitously-expressing promoter \u00df-actin (Figure 7D). We mated eif2b2sa17223/+ heterozygous adults, and injected their embryos at the one-cell stage with the human EIF2B2 vector to introduce the transgene (Tg) into the germline. Embryos were screened at 3 dpf, and those positive for GFP were grown up to adults and genotyped to identify and generate stable lines (Figure 7F). The transgenic mutant eif2b2sa17223/ sa17223;Tg(\u00df-actin:EIF2B2-2A-eGFP) larva developed a swim bladder and the growth deficits were rescued (Figure 7F, arrowhead). As adults, the GFP positive eif2b2sa17223/+;Tg(\u00df-actin:EIF2B2-2A-eGFP) were crossed with non-transgenic eif2b2sa17223/+. The offspring from this cross were genotyped and compared to a non-transgenic eif2b2sa17223/+ in-cross. Typically, eif2b2sa17223/ sa17223 have early lethality by 10 dpf. In contrast the transgenic homozygous mutant eif2b2sa17223/ sa17223;Tg(\u00df-actin:EIF2B2-2A-eGFP) animals showed 21% survival at 10 dpf (e.g. Mendelian ratios) (Figure 7E). This increase in transgenic homozygous mutant survival continued to adulthood, and the mutants were able to mate and were fertile. Further, the eif2b2sa17223/sa17223 increase in apoptosis (Figure 7G\u2013H,K) was rescued and apoptosis in the eif2b2sa17223/sa17223;Tg(\u00df-actin:EIF2B2-2A-eGFP) was significantly reduced (TUNEL counts eif2b2sa17223/sa17223 transgenic: mean\u00a0=\u00a031.5, S.D.\u00a0=\u00a012.9; eif2b2sa17223/sa17223 non-transgenic: mean\u00a0=\u00a084.4, S.D.\u00a0=\u00a027.63, p=1.89E-05) (Figure 7I\u2013K). eif2b mutants express a truncated eif2b5 transcript that causes ISR activation and defects in behavior.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig7-v2.jpg)\n\n**Figure 7.:** (A) 11.1 kb zebrafish eif2b2 gene structure. (B) 9.5 kb human EIF2B2 gene structure. (C) Conservation of amino acid sequence between zebrafish eif2b2 and human EIF2B2. (D) Schematic of rescue construct containing Tol2, \u03b2-actin, human EIF2B2, and eGFP. (E) Genotype results (at adult age), of an eif2b2sa17223/+ heterozygous incross, and an eif2b2sa17223/+ heterozygous zebrafish crossed with two different transgenic alleles (#3 and #4): eif2b2sa17223/+;Tg3(\u03b2-actin:EIF2B2:2A:eGFP) or eif2b2sa17223/+;Tg4(\u03b2-actin:EIF2B2:2A:eGFP) heterozygous zebrafish. (F) Bright-field and immunofluorescent images of eif2b2sa17223/sa17223;\u03b2-actin:EIF2B2:2A:eGFP mutant fish: showing a swim bladder and regular-sized head; or showing GFP expression in eif2b2sa17223/sa17223;\u03b2-actin:EIF2B2:2A:eGFP mutant fish. (G\u2013J) TUNEL and DAPI antibody staining of wild-type control; eif2b2sa17223/sa17223 mutant; eif2b2+/+;\u03b2-actin:EIF2B2:2A:eGFP wild-type control; and eif2b2sa17223/sa17223;\u03b2-actin:EIF2B2:2A:eGFP mutant. (K) Quantification of TUNEL+ cells.\n\nWork studying cancer cell lines has shown that during periods of hypoxia, ISR activation leads to retention of intron 12 in EIF2B5 by interfering with the exon 12 splice site (Brady et al., 2017;\u00a0Figure 8A). This retained intron contains a premature stop codon, resulting in a truncated 65 kDa EIF2B5 protein, and rendering the eIF2B complex unable to initiate translation. To test whether the ISR in VWM could similarly affect eif2b5 splicing, we tested intron 12 retention. We found an increase in retention of intron 12 associated with truncated eif2b5 in eif2b mutant alleles (eif2b5: zc102 and zc103; eif2b2: sa17223) (Figure 8B); and which was also observed in peripheral lymphocytes from a human VWM patient (Figure 8C).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig8-v2.jpg)\n\n**Figure 8.:** (A) Schematic showing integrated stress response activated intron 12 retention of eif2b5 resulting in premature stop codon and truncated form of EIF2B5. (B) Fold change of eif2b5 intron 12 expression with qRT-PCR in eif2b5zc103/zc103, eif2b5zc102/zc102, and eif2b2sa17223/sa17223 mutants relative to controls. (C) qRT-PCR for intron 12 expression in a VWM patient and their control unaffected father. (D) Control-injected larvae, compared to those injected with truncated eif2b5 construct, shows impaired swimming behavior; distance moved, time spent moving, and velocity, at\u00a05\u00a0dpf. (E) qRT-PCR for atf4, bip, chopII, and perk ISR transcripts shows increased expression in eif2b5zc103/zc103, eif2b5zc102/zc102, and eif2b2sa17223/sa17223 mutants. (F) qRT-PCR for ISR transcripts (atf 4, bip, chop II, and perk) shows increased expression following injection of truncated eif2b5 construct.\n\nTo test the effects of the 65 kDa human EIF2B5 on behavior, we expressed truncated EIF2B5 in wild-type embryos. We injected one-cell stage WT embryos with transcribed RNA and evaluated behavior at\u00a05\u00a0dpf. We observed impairment of motor behavior (Figure 8D), suggesting a dominant-negative effect, although we could not exclude that the effect was caused by over-expression. Since in VWM chronic activation of the ISR is believed to contribute to pathophysiology, we examined ISR activation in eif2b5 mutants by analyzing the expression of atf4, bip, chop II, and perk, which are critical regulators of the ISR. qRT-PCR analysis showed atf4, bip, and chop II expression were increased, but perk had variable expression in eif2b2 and eif2b5 homozygous mutants (Figure 8E), indicating that ISR activation is mainly triggered by atf4 up-regulation the in eif2b mutants. Next, we also examined ISR activation in wild-type embryos expressing truncated EIF2B5. qRT-PCR showed that ISR markers including atf4, chop II, bip and perk, were up-regulated (Figure 8F), indicating that truncated EIF2B5 was sufficient to activate the ISR.\n\n## Discussion\n\nWe have generated and characterized a zebrafish model for VWM by analysis of alleles in eif2b1, 2, 4; and an allelic series in eif2b5. The zebrafish eif2b mutants phenocopy important aspects of human VWM, including increased morbidity and mortality, altered myelination, and impaired motor behavior. Further, using rescue with expression of the human EIF2B2 cDNA, we demonstrate functional conservation in the zebrafish eif2b2 mutant. The mutations we have generated are not specifically homologous to known human VWM patient disease alleles. For therapeutic tests and similar studies future work will benefit from having zebrafish mutants that are homologous to known disease alleles. However, the range of phenotypes in our zebrafish mutants, from lethality in the first several weeks of life, to viability and fecundity, provide an opportunity to further study genotype-phenotype relationships in VWM, which have been noted in patients (van der Lei et al., 2010).\n\nImportantly, our data reveals a novel potential mechanism of VWM pathophysiology: ISR activation in the eif2b mutants causes abnormal splicing and generation of a truncated eif2b5 transcript, which is capable of further activating the ISR and impairing motor behavior. Thus, in healthy individuals, stress would activate the ISR but would appropriately be terminated through down-regulation of the ISR by dephosphorylation of eIF2 (Pakos-Zebrucka et al., 2016). But in VWM patients, stress would activate the ISR, and would also lead to expression of truncated EIF2B5 expression; which would cause a feed-forward mechanism of further and chronic ISR activation (Figure 9). This chronic activation of the ISR is observed in human autopsy samples and in a mouse VWM model (van der Voorn et al., 2005; van Kollenburg et al., 2006; Wong et al., 2019).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/56319/elife-56319-fig9-v2.jpg)\n\n**Figure 9.:** (A\u2013C) Under normal conditions, stress leads to activation of the ISR, which is terminated by dephosphorylation of eIF2a by PP1 (protein phosphatase one complex) and resumption of normal cap-dependent translation. (A\u2019\u2013C\u2019) In the presence of eif2b subunit mutations in VWM, normal translation is impaired, and there is activation of the ISR above baseline (A\u2019). In response to stress, there is ISR activation and expression of truncated EIF2B5, which leads to chronic activation of the ISR and an inability to terminate the ISR.\n\nThe eIF2B complex is comprised of five subunits that together act as the guanine nucleotide exchange factor for eIF2, governing the rate of global protein synthesis and cap-dependent translation initiation. VWM can be caused by autosomal recessive mutations in any of the five subunits of eIF2B. Zebrafish show expression of the eif2b genes at 24 hpf through\u00a07\u00a0dpf including in the CNS. Mutations in the most commonly affected patient subunits, eif2b2 and eif2b5, showed growth deficits and decreased survival, mimicking clinical features of VWM. Interestingly, we found that human EIF2B2 expression in zebrafish can rescue the increased apoptosis and early lethality phenotype of eif2b2 sa17223 homozygous mutants, but not human EIF2B5. The difference between the EIF2B2 and EIF2B5 rescues might be due to the fact that EIF2B5 is the key catalytic subunit of the eIF2B complex for the eIF2\u2022GDP to eIF2\u2022GTP transition, which enhances protein translation. In contrast, expression of human EIF2B5 in zebrafish was lethal, consistent with data showing that stoichiometry of the EIF2B5 subunit (\u03b5) expression is critical (Wortham et al., 2016). Taken together, our work suggests conservation of eif2b expression and function.\n\nMutations in the zebrafish eIF2B complex were associated with multiple defects in development of the CNS. In the\u00a05\u00a0dpf homozygous mutants of eif2b2sa17223, eif2b5zc102,\u00a0and eif2b5zc103 alleles, there was an increase in apoptosis in the CNS. We also observed altered patterns of cell proliferation pattern in the CNS, and a decrease in overall CNS proliferation in the eif2b2sa17223 mutants. Although there was no change in total OPC numbers in the CNS, we found an increase in the number of OPCs undergoing apoptosis in the hindbrain. We also observed effects on myelination, marked by an apparent decrease in thickness of the myelin sheath, abnormal patterning of myelinated axon tracts in the optic tectum, and abnormal intensity of white matter regions on MRI. However, because mutants can have a decrease in axon diameter, we cannot conclude definitively that myelin sheath thickness is decreased (for example, see Klingseisen et al., 2019). To fully investigate whether the zebrafish VWM mutants have a decreased G-ratio (decreased myelin sheath thickness), future studies should analyze this by binning results by axon diameter.\n\nSince a hallmark of VWM is that disease progression can be precipitated by stressors, we tested the ISR and the response to stress in the eif2b mutants. We noted that while stress of wild-type zebrafish caused motor deficits, stress in the mutant eif2b zebrafish (including heat shock, hypoxia, or thapsigargin) did not worsen further worsen their already impaired motor behavior (data not shown). This suggests that the eif2b mutant zebrafish are already \u2018maximally\u2019 stressed at baseline, consistent with the observed activation of the ISR at baseline, and the finding of increased intron 12 retention. ISR induces expression of transcription factors including ATF4 (Harding et al., 2000; Watatani et al., 2008). ATF4 and other components of the ISR trigger a stress-induced transcriptional program that promotes cell survival during mild or acute conditions, but which causes pathological changes under severe or chronic insults (Pakos-Zebrucka et al., 2016).\n\nA poorly understood aspect of VWM is why a minor stressor can precipitate significant white matter loss and neurological deterioration. Our work suggests that this is caused by a feed-forward effect of chronic ISR that cannot be terminated. This occurs by alternative splicing and retention of intron 12 in EIF2B5 leading to a premature stop codon and expression of a truncated EIF2B5. This was first observed in cancer cell lines in response to hypoxia (Brady et al., 2017). The truncated EIF2B5 permits formation of the eIF2B complex and a partial catalytic domain, but is missing the eIF2\u03b1 interaction domain. This would result in impaired translation mechanism and a decrease in protein synthesis (Adomavicius et al., 2019). We demonstrated the pathological role of truncated EIF2B5 in VWM disease by showing that truncated eif2b5 is expressed in VWM mutants, and that expression of the truncated EIF2B5 impairs motor function, and itself leads to further activation of the ISR.\n\nMajor advances in the past several years have shown that a small molecule stabilizing the decameric eIF2B complex (ISRIB - ISR InhiBitor) can boost the GEF activity of wild-type and VWM mutant eIF2B complexes (Tsai et al., 2018; Wong et al., 2018) and can inhibit the ISR in mice bearing an Eif2b5R132H/R132H VWM mutation (Wong et al., 2019). However, it is not clear whether ISRIB or other drugs targeting eIF2B complex stability will be sufficient to prevent stress-induced ISR chronic, feed-forward activation. Therapies for VWM may need a combinatorial approach incorporating eIF2B stabilization at baseline; and prevention of stress-induced truncated eIF2B5 expression.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>eif2b1</td>\n      <td>D. rerio genome resource</td>\n      <td>GRCz11: ENSDARG00000091402</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. rerio)</td>\n      <td>eif2b2</td>\n      <td>D. rerio genome resource</td>\n      <td>GRCz11: ENSDARG00000041397</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. rerio)</td>\n      <td>eif2b3</td>\n      <td>D. rerio genome resource</td>\n      <td>GRCz11: ENSDARG00000018106</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. rerio)</td>\n      <td>eif2b4</td>\n      <td>D. rerio genome resource</td>\n      <td>GRCz11: ENSDARG00000014004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. rerio)</td>\n      <td>eif2b5</td>\n      <td>D. rerio genome resource</td>\n      <td>GRCz11: ENSDARG00000074995</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (D. rerio)</td>\n      <td>apoeb</td>\n      <td>D. rerio genome resource</td>\n      <td>GRCz11: ENSDARG00000040295</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>EIF2B2</td>\n      <td>H. sapiens genome resource</td>\n      <td>GRCh38.p13: ENSG00000119718</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (H. sapiens)</td>\n      <td>EIF2B5</td>\n      <td>H. sapiens genome resource</td>\n      <td>GRCh38.p13: ENSG00000145191</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>eif2b1sa12357</td>\n      <td>Zebrafish International Resource Center (ZIRC)</td>\n      <td>ZIRC Catalog ID: ZL8971.02; RRID:ZIRC_ZL8971.02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>eif2b2sa17223</td>\n      <td>Zebrafish International Resource Center (ZIRC)</td>\n      <td>ZIRC Catalog ID: ZL10609.15; RRID:ZIRC_ZL10609.15</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>eif2b4sa17367</td>\n      <td>Zebrafish International Resource Center (ZIRC)</td>\n      <td>ZIRC Catalog ID: ZL10621.10; RRID:ZIRC_ZL10621.10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>eif2b5zc102</td>\n      <td>This paper- generated and described in Materials\u00a0and\u00a0methods.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>eif2b5zc103</td>\n      <td>This paper- generated and described in Materials\u00a0and\u00a0methods.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>Tg (\u00df-actin:EIF2B2-2A-eGFP)</td>\n      <td>This paper- generated and described in Materials\u00a0and\u00a0methods.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>Tg(olig2:dsRed)vu19</td>\n      <td>It is available from EZRC and China ZRC</td>\n      <td>ZFIN ID:ZDB-ALT-080321\u20132</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-acetylated tubulin (mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>Sigma: T6793; RRID:AB_477585</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (mouse monoclonal)</td>\n      <td>Millipore</td>\n      <td>Millipore: MAB3580; RRID:AB_94936</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (mouse polyclonal)</td>\n      <td>Aves Labs</td>\n      <td>Aves Labs : GFP-1020; RRID:AB_10000240</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HuC/D (mouse monoclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific: A-21271; RRID:AB_221448</td>\n      <td>(1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-dsRed</td>\n      <td>Takara</td>\n      <td>Clontech: 632496; RRID:AB_10013483</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cy-3 anti-rabbit (goat polyclonal)</td>\n      <td>Millipore</td>\n      <td>Millipore: AP132C; RRID:AB_92489</td>\n      <td>(1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa 488 donkey anti-mouse (donkey polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Molecular Probes: A-21202; RRID:AB_141607</td>\n      <td>(1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa 633 donkey anti-rabbit (donkey polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Molecular Probes: A-21070; RRID:AB_2535731</td>\n      <td>(1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa 488 goat anti-chicken (goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Molecular Probes: A-11039; RRID:AB_2534096</td>\n      <td>(1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa 555 rabbit anti-goat (rabbit polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Molecular Probes: A-21431; RRID:AB_2535852</td>\n      <td>(1:400)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Gateway BP Clonase II enzyme mix</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific: 11789020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Gateway LR Clonase II enzyme mix</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific: 11701020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>10-beta</td>\n      <td>New England BioLabs</td>\n      <td>NEB: C3019H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Human cancer cell line)</td>\n      <td>SH-SY5Y</td>\n      <td>Gift from the Pulst lab</td>\n      <td>RRID:CVCL_0019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCR4.0-TOPO</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific: 450030, cat #</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pDONR P4-P1R</td>\n      <td>Tol2 kit</td>\n      <td>Tol2kit.genetics.utah.edu</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pDONR 221</td>\n      <td>Tol2 kit</td>\n      <td>Tol2kit.genetics.utah.edu</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pDONR P2R-P3</td>\n      <td>Tol2 kit</td>\n      <td>Tol2kit.genetics.utah.edu</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Tg (\u00df-actin:EIF2B2-2A-eGFP)</td>\n      <td>This paper- generated and described in Materials\u00a0and\u00a0methods.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Tg (\u00df-actin:EIF2B5-2A-eGFP)</td>\n      <td>This paper- generated and described in Materials\u00a0and\u00a0methods.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCS2+-Transposase</td>\n      <td>This paper- generated and described in Materials\u00a0and\u00a0methods.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Human)</td>\n      <td>Tg (\u00df-actin:EIF2B2-2A-eGFP)</td>\n      <td>This paper- generated and described in Materials\u00a0and\u00a0methods.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Human)</td>\n      <td>Human patient sample (serum)</td>\n      <td>This paper- generated and described in Materials\u00a0and\u00a0methods.</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DIG RNA Labeling Kit (SP6/T7)</td>\n      <td>Roche</td>\n      <td>Roche: 11175025910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ApopTag-fluorescein</td>\n      <td>Millipore</td>\n      <td>Millipore: S7111</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ApopTag-Red</td>\n      <td>Millipore</td>\n      <td>Millipore: S7165</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ImmPACT (TM) VECTOR (R) RED AP Substrate</td>\n      <td>Vector Laboratories</td>\n      <td>Vector Laboratories: SK-5105</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Black Gold II kit</td>\n      <td>Millipore</td>\n      <td>Millipore: AG105</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Applied Biosystems PowerUp SYBR Green Master Mix</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Thermo Fisher Scientific: A25776</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks</td>\n      <td>Version R2017b</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>EthoVision-XT software</td>\n      <td>Noldus (https://www.noldus.com/ethovision-xt)</td>\n      <td>RRID:SCR_000441</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism software</td>\n      <td>GraphPad Prism (https://graphpad.com)</td>\n      <td>RRID:SCR_015807</td>\n      <td>Version 8.4.3</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ software</td>\n      <td>ImageJ (http://imagej.nih.gov/ij/)</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Sigma</td>\n      <td>D9542</td>\n      <td>(1 \u00b5g/mL)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>ZEG and ZEG chips</td>\n      <td>wFluidx, Inc</td>\n      <td>http://www.wfluidx.com</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Fish stocks and embryo raising\n\nAdult fish were bred according to standard methods. Embryos were raised at 28.5\u00b0C in E3 embryo medium and staged by time and morphology. For in situ staining and immunohistochemistry, embryos were fixed in 4% paraformaldehyde (PFA) in 1xPBS overnight (O/N) at 4\u00b0C, washed briefly in 1xPBS with 0.1% Tween-20, serially dehydrated, and stored in 100% MeOH at \u221220\u00b0C until use. Transgenic fish line and allele used in this paper was the following: Tg(olig2:dsRed)vu19 (Kucenas et al., 2008). eif2B Sequence Analysis.\n\nHuman and zebrafish eif2b1, eif2b2, eif2b3, eif2b4 and eif2b5 subunit genes amino acid sequences were compared using Clustal Omega (Sievers et al., 2011) and aligned using PRALINE (Simossis and Heringa, 2005); phylogenetic tree analysis was performed with Phylodendron.\n\n### Zebrafish eif2b mutant lines obtained from Sanger zebrafish mutation project\n\nWe obtained the eif2b1sa12357, eif2b2sa17223, and eif2b4sa17367 alleles generated by the Sanger Zebrafish Mutation Project per our request and established these lines as viable stock at our facility. The eif2b1sa12357 allele results in a T\u00a0>\u00a0A nonsense mutation resulting in an early stop in exon 8. The eif2b2sa17223 and eif2b4sa17367 alleles have mutations in an essential splice site predicted to interrupt splicing from exon 5 to 6 of eif2b2 by a G\u00a0>\u00a0A mutation at the end of exon 5 (744 nt), and from exon 12 to 13 in eif2b4 by a G\u00a0>\u00a0A mutation at the end of exon 12 (1404 nt).\n\n### eif2b5 CRISPR sgRNA construction and injection\n\nTargeting the D. rerio eif2b5 gene (Ensembl Zv10: ENSDART00000110416.4) for CRISPR mutagenesis was performed by the University of Utah Mutation Generation and Detection Core. We designed sgRNA target sites by looking for sequences corresponding to N18GG on the sense or antisense strand of the DNA using the CRISPR design program at http://crispr.mit.edu. Off-target effects were checked through the use of NIH BLAST tool applied to the zebrafish genome (zv10). Off-target sequences that had significant matches of the final 23 nt of the target and NGG PAM sequence were discarded.\n\nsgRNAs targeting exon 1 (eif2b5-ex1) were transcribed using DraI-digested gRNA expression vectors as templates, and the HiScribe T7 RNA Synthesis kit (New England BioLabs) followed by RNA purification with Micro Bio-spin six columns (BioRad).\n\nTo maximize mutagenesis and minimize lethality, an eif2b5-ex1 sgRNA dose curve was performed. A mix of eif2b5-ex1 sgRNA (between 250 pg-600 pg) and Cas9 protein (600 pg, Integrated DNA Technologies) were injected into one-cell stage embryos, as previously described. CRISPR efficiency was evaluated on individual 24 hpf injected embryos after DNA extraction, PCR amplification of the target locus, and HRMA analysis. An eif2b5-ex1 sgRNA dose of 450 pg resulted in\u00a0>90% mutagenesis in 24 hpf embryos, assayed by HRMA, with no difference in survivability compared to uninjected controls. Embryos used for injection were derived from wild-type AB parents, previously confirmed at the eif2b5 locus to have exact homology for the sgRNA sequence.\n\n### HRMA PCR\n\nDNA was extracted from embryos (24 hpf-72 hpf), or fin clips from adults, into 50 mM NaOH, and incubated at 95 \u00b0C for 20 min, followed by neutralization with 1M Tris pH 8.0 (1:10 by volume) as previously described (Xing et al., 2014). Oligonucleotides were designed using Primer3 to give 60\u2013100 nucleotide products spanning the CRISPR cleavage site, and tested in silico using uMELT to determine PCR products with optimal thermodynamic profiles. PCR was performed using LightScanner Master Mix System (BioFire) in 10 \u03bcl reactions as previously described (Xing et al., 2014). Thermal melt profiles were collected on a LightScanner (Idaho Technology) (65\u201398\u00b0C, hold 62\u00b0C) and analyzed with LightScanner Software.\n\nGenotyping was performed by PCR and high-resolution melt analysis (HRMA), using the LightScanner Master Mix system. For eif2b5 alleles with mutations in exon 1, we used the following primers and conditions: (eif2b5 forward primer) 5\u2019- AAGCCGGTGTCGGATAAAGAT-3\u2019 and (eif2b5 reverse primer) 5\u2019- AAACCTGCGGTTGAAACTGTC-3\u2019; 95 \u00b0C for 2 min, followed by 29 cycles of 94 \u00b0C for 30 s, and 60 \u00b0C for 30 s, followed by a final denaturation and annealing step of 95 \u00b0C for 30 s, and 25 \u00b0C for 30 s. For eif2b2sa17223 genotyping we did PCR with the following primers and conditions: (eif2b2 forward primer) 5\u2019- TAATGTCACGAGTCAATAAG-3\u2019 and (eif2b2 reverse primer) 5\u2019-AGGATTAATCTTTTATTTCA-3\u2019; 95 \u00b0C for 2 min, followed by 29 cycles of 94 \u00b0C for 30 s, and 60 \u00b0C for 30 s, followed by a final denaturation and annealing step of 95 \u00b0C for 30 s, and 25 \u00b0C for 30 s. For eif2b4sa17367 genotyping we did PCR with the following primers and conditions (eif2b4 forward primer) 5\u2019-TTGAGCATCAAAAGGGTTATTG \u22123\u2019 and (eif2b4 reverse primer) 5\u2019-CGGACTCTTTTGTATCCAATG \u22123\u2019; 95 \u00b0C for 2 min, followed by 29 cycles of 94 \u00b0C for 30 s, and 55 \u00b0C for 30 s, followed by a final denaturation and annealing step of 95 \u00b0C for 30 s, and 25 \u00b0C for 30 s. All PCR was run in an optically transparent plate with 25 \u03bcl mineral oil overlay. We then performed HRMA to differentiate the eif2b melt-curves from their corresponding controls.\n\nFor eif2b1sa12357 genotyping, HRMA analysis was not able to reliably identify mutant versus wild-type alleles. We therefore used the restriction endonuclease sequence Hpy188I (taTCAGAtg) present in the wild-type allele of eif2b1, but not in the eif2b1sa12357 mutant allele (taACAGAtg) to create a restriction fragment length polymorphism (RFLP) for genotyping. We first performed PCR of the target locus (667 bp) in a 10 \u03bcl reaction, with the following primers and conditions (eif2b1 forward primer) 5\u2019- GGAGACGTAAAATGTACCTGCAAT-3\u2019 and (eif2b1 reverse primer) 5\u2019-CACCCCAACCATCACAGGAG-3\u2019; 98 \u00b0C for 1 m, followed by 34 cycles of 98 \u00b0C for 10 s, 58 \u00b0C for 15 s, and 72 for 25 s, followed by a final extension step of 72 \u00b0C for 10 m. Following PCR, the entire 10 \u03bcl reaction was digested with Hpy188I in a 15 \u03bcl reaction for 2 hr at 37 \u00b0C. The digest was then run out on a 2.5% agarose gel. Animals homozygous for eif2b1sa12357/sa12357 produced a 623 bp mutant band, and a 44 bp band unrelated to the eif2b1sa12357 allele, used as an internal control for the restriction digest. Wild-type animals, harboring the non-mutated Hpy188I restriction site, generate a 404 bp and 219 bp band, specific to the wild-type allele, as well as the 44 bp internal control band; heterozygous animals generate all four bands after Hpy188I digestion: mutant 623 bp, wild-type 404 bp and 219 bp, and the internal digest control band 44 bp.\n\n### Chip genotyping\n\nSurvival genotyping of 72 hpf zebrafish was performed as previously described (Lambert et al., 2018). Briefly, embryos were loaded individually onto genotyping wells of a ZEG chip (wFluidx, Inc) in 12 \u03bcl of E3 with a wide bore pipette tip. Once embryos are loaded, the ZEG chip was placed on the vibration unit, covered with the lid and vibrated for 7.5 min at 1.4 volts, 0.026 amps and 0.03 watts. After the samples are vibrated, 10 \u03bcl of E3 is removed from the well into a PCR strip tube. The corresponding embryo is removed from the chip well with a transfer pipette and a small amount of E3, into a 96 square well plate (650 \u03bcl/well) until after genotyping. For genotyping PCR, 5 \u03bcl of E3 is removed from each well is used directly in the PCR without further cell lysis steps.\n\nCloning and characterization of zebrafish eif2b5 CRISPR mutants eif2b5-ex1 CRISPR injected F0 embryos were raised and crossed to non-mutagenized wild-type AB siblings. eif2b5 F1 founder offspring were then raised to adulthood, fin-clipped for DNA extraction and PCR amplification of the target locus, using the above described HRMA primers for eif2b5. Individual fish identified as potential mutants by HRMA were further confirmed by Topo-TA cloning (Thermo Fisher Scientific) of the target locus, and Sanger sequencing four clones per animal. To ensure that we did not miss larger mutations at the CRISPR mutagenesis site, PCR amplification of a larger region surrounding the target locus (517 bp) was performed using the following primers and PCR conditions: (eif2b5 forward sequencing primer) 5\u2019- AGCTACCTCAACAGGGCGTA-3\u2019, and (eif2b5 reverse sequencing primer) 5\u2019- CGTCCAAAAACAAAACAGCA-3\u2019; 98 \u00b0C for 1 m, followed by 34 cycles of 98 \u00b0C for 10 s, 60 \u00b0C for 15 s, and 72 for 20 s, followed by a final extension step of 72 \u00b0C for 10 m.\n\n### Cloning of human EIF2B2 and EIF2B5\n\nHuman EIF2B2 and EIF2B5 were amplified from cDNA prepared from SH-SY5Y human cell line. The following primers, and PCR conditions were used to amplify EIF2B2 for cloning into a middle entry clone Gateway-compatible vector (EIF2B2 forward primer contains: 31 nt attB1F sequence, a nine nt zebrafish optimized Kozak sequence, and 20 nt region of EIF2B2 beginning at the ATG) 5\u2019- GGGGACAAGTTTGTACAAAAAAGCAGGCTACGCCGCCACCATGCCGGGATCCGCAGCGAA-3\u2019, and (EIF2B2 reverse primer contains: 30 nt attB2R sequence, and a 20 nt region of the 3\u2019 EIF2B2 that does not contain the stop codon) 5\u2019- GGGGACCACTTTGTACAAGAAAGCTGGGTCTAAAACATGATCATCAGGAT-3\u2019; PCR conditions: 98 \u00b0C for 1 m, followed by 34 cycles of 98 \u00b0C for 10 s, 68 \u00b0C for 15 s, and 72 for 30 s, followed by a final extension step of 72 \u00b0C for 10 m. The following primers, and PCR conditions were used to amplify EIF2B5 for Gateway cloning (EIF2B5 forward primer contains: 31 nt attB1F sequence to allow for Gateway pME cloning, a nine nt zebrafish optimized Kozak sequence, and a 20 nt region of EIF2B5 beginning at the ATG) 5\u2019- GGGGACAAGTTTGTACAAAAAAGCAGGCTACGCCGCCACCATGGCGGCCCCTGTAGTGGC-3\u2019, and (EIF2B5 Reverse primer contains: 30 nt attB2R sequence to allow for Gateway pME cloning, and a 20 nt region of the 3\u2019 EIF2B5 that does not contain the stop codon) 5\u2019-GGGGACCACTTTGTACAAGAAAGCTGGGTCTCAGTCATCTTCAGATGACT-3\u2019; PCR conditions: 98 \u00b0C for 1 m, followed by 34 cycles of 98 \u00b0C for 10 s, 68 \u00b0C for 15 s, and 72 for 75 s, followed by a final extension step of 72 \u00b0C for 10 m.\n\nThe attB containing EIF2B PCR product were combined with a donor vector (pDonor #221) in a BP recombination reaction to generate Gateway middle clones, pME EIF2B2 and pME EIF2B5. These plasmids were then diagnostically digested and sequenced to confirm the correct cloning. Expression clones were assembled using the Tol2 kit and recombination reactions with Gateway plasmids. For expression and visualization of human EIF2B5 (pME EIF2B5) in the zebrafish we used the ubiquitous Beta actin enhancer containing a minimal core promoter (mcp) encoding the viral E1b TATA box fused to the carp b-actin 5\u2019 UTR (p5E Beta actin) and the viral 2A bicistronic eGFP fluorescent tag (p3E 2A:eGFP) assembled into the pDestTol2pA2 plasmid.\n\n### Immunohistochemistry\n\nImmunohistochemistry was performed as previously described (Bonkowsky et al., 2008). Antibodies used were: mouse anti-acetylated tubulin 1:250 (Sigma), mouse monoclonal anti-GFP 1:250 (Millipore), chicken anti-GFP 1:1000 (Aves Labs), mouse anti-HuC/D 1:400 (ThermoFisher), rabbit anti-dsRed 1:250 (Clontech), Cy-3 anti-rabbit 1:400 (Millipore), Alexa 488 donkey anti-mouse 1:400, Alexa 633 donkey anti-rabbit, Alexa 488 donkey anti-chicken 1:400, Alexa 555 rabbit anti-goat 1:400 (ThermoFisher), and 4',6-diamidino-2-phenylindole (DAPI).\n\n### In situ hybridization\n\nThe antisense digoxigenin-labeled cRNA probes for zebrafish eif2b1-5 and apoeb were prepared by using a clone-free method, as previously described (Thisse and Thisse, 2008). Forward and reverse primers were generated using Primer3 to generate a PCR product between 800\u00a0and\u00a0950 nt. The following primers were used: eif2b1 forward in situ primer 5\u2019- CGTTGCATCAGCGACACTAT-3\u2019, eif2b1 reverse in situ primer 5\u2019-GAAATGCTTTATAAACAGCAATAATCA-3\u2019; eif2b2 forward in situ primer 5\u2019- CGCAGGTGAACTGATGGAG-3\u2019, eif2b2 reverse in situ primer 5\u2019-GATGTTTTGAATGCCAGACG-3\u2019; eif2b3 forward in situ primer 5\u2019-GAGAACAGCGGGACTTTGTC-3\u2019, eif2b3 reverse in situ primer 5\u2019-TTCGTCTTCAGGCCTGTTCT-3\u2019,; eif2b4 forward in situ primer 5\u2019-GGATCCAATGCTCGATCTGT-3\u2019, eif2b4 reverse in situ primer 5\u2019- GAGGGAAGTGTGTGCATCTG-3\u2019; eif2b5 forward in situ primer 5\u2019- TGGTGGTGGGTCCAGATATT-3\u2019, eif2b5 reverse in situ primer 5\u2019- CAGCCCGTTGTATTTTCCAG-3\u2019; apoeb forward in situ primer 5\u2019- ATGAGGTCTCTTGTGGTATTCTTTGCTC-3\u2019, apoeb reverse in situ primer 5\u2019- TTAAGCCTGAGTGGGAAGAGCTGCTG-3\u2019. To generate a PCR product for antisense probe generation, the reverse primer also contains a 32 nt sequence containing; a 9 nt 5\u2019 spacer sequence, a 17 nt T7 polymerase sequence, and a 6 nt 3\u2019 spacer (5\u2019-CCAAGCTTCTAATACGACTCACTATAGGGAGA \u22123\u2019), resulting in a PCR product\u00a0<1 kb. The constructs of olig1 and mag riboprobes are kindly provided by Yi-Chuan Cheng. Synthesis of digoxigenin-labeled antisense RNA probes were synthesized using a DIG RNA Labeling Kit (SP6/T7; Roche).\n\n### Microscopy and image analysis\n\nImmunostained embryos were transferred step-wise into 80% glycerol/20% PBST, mounted on a glass slide with a #0 coverslip, and imaged on a confocal microscope. Confocal stacks were projected in ImageJ, and images composed with Adobe Photoshop and Illustrator.\n\n### TUNEL quantification\n\nTerminal deoxynucleotidyl transferase dUTP nick-end labeling (TUNEL) was performed on whole-mount larvae (ApopTag-Fluorescein In Situ Apoptosis Detection Kit; Millipore) as previously described (Lambert et al., 2012). Confocal imaging was performed and images were rendered in ImageJ by compiling a max sum projection of 100 \u03bcm (step size 2.5 \u03bcm) into a single z-stack image, for cell counting using Photoshop\u2019s (Adobe) count tool.\n\n### RNA isolation and cDNA synthesis\n\nRNA was isolated from between 50\u2013100 embryos per sample, depending on age. Each sample was suspended in 900 \u03bcl Trizol Reagent (Invitrogen), triturated with a 25-gauge needle until homogeneous; 270 \u03bcl chloroform was added and the sample was centrifuged for 15 m at 4 \u00b0C. The aqueous solution was moved to a new tube, an equal volume isopropanol (approximately 500 \u03bcl) was added, and 5 \u03bcl Glycoblue (Invitrogen) added, followed by centrifugation for 15 m at 4 \u00b0C. The pellet was washed in 70% ethanol, centrifuged for 10 m at 4 \u00b0C, and resuspended in 44 \u03bcl DEPC H2O. To remove DNA, 5 \u03bcl DNase I buffer and 1 \u03bcl Turbo DNase (Invitrogen) was added to each sample and incubate for 15 m at 25 \u00b0C. The volume was brought to 400 \u03bcl with DEPC H2O, and an equal volume phenol:chloroform was added, mixed, and centrifuged for 15 m at 4 \u00b0C. The aqueous phase was transferred to a new tube and 1.5 \u03bcl Glycoblue was added, 1/10 vol 3M NaOAc added, and 2.5x of the total volume of 100% ethanol was added. The sample was allowed to precipitate overnight at \u221220 \u00b0C. The sample was then centrifuged for 15 m at 4 \u00b0C, supernatant removed, and the pellet washed in 70% ethanol. This was followed by a final centrifugation step of 15 m at 4 \u00b0C, supernatant removed, and the RNA resuspended in 15 \u03bcl DEPC H2O.\n\nFirst-strand cDNA was made from 1 to 5 \u03bcg total RNA using the SuperScript III First-Strand Synthesis System (Applied Biosystems) per manufacturer\u2019s instructions.\n\n### qRT-PCR\n\nAll qRT-PCR reactions were performed using SYBR Green PCR master mix (Invitrogen) and 2 \u03bcl cDNA with the following conditions: 50 \u00b0C for 2 min, 95 for 10 min followed by 39 cycles of 95 \u00b0C for 20 s, 60 \u00b0C for 20 s, and 72 for 20 s, followed by a final melt curve step that ramps in temperature between 60\u00b0C and 95\u00b0C.\n\n### Behavior analysis\n\nLarval behavior analysis was performed on\u00a07\u00a0dpf larvae in 96-well square bottom plates (Krackeler Scientific) using video analysis software (Noldus EthoVision). For spontaneous behavior, animals were transferred at 6 dpf to the 96-well plate and kept at 28.5 \u00b0C overnight. At\u00a07\u00a0dpf the plate was placed on the video imaging system and animals were allowed to adapt in the dark for 10 min, and then recording was performed for 5 m (1 min dark and 4 min light).\n\n### TEM\n\nFollowing fixation overnight at 4 \u00b0C (in 2.5% glutaraldehyde; 1% PFA in 0.1M sodium cacodylate, 8 mM CaCl2, 2.4% sucrose; pH 7.4), then processed and embedded in plastic as follows: rinsed 2 X ten minutes in 0.1M sodium cacodylate buffer containing 2.4% sucrose and 8 mM CaCl2. Tissue was then post-fixed in 2% osmium tetroxide in a 0.1M sodium cacodylate buffer for 1 hr at room temperature, followed by a rinse for 5 min in water filtered through a 0.22 \u03bcm millipore filter. Staining was performed en bloc for 1 hr at room temperature with saturated aqueous uranyl acetate, that was filtered through a 0.22 \u03bcm millipore filter. Samples were dehydrated through a graded series of ethanol, 10 min at each step at room temperature.\n\nTissue was then transitioned through three changes of absolute acetone, 10 min each, followed by infiltration with with increasing concentrations of plastic (Embed 812) as follows: 1 hr, Plastic:Acetone 1:1; overnight, Plastic:Acetone 3:1, done at room temperature. Final plastic infiltration was carried out the following day by changing the plastic three times, then placing tissue vials on a rotator for 1 hr and then under vacuum for 1 hr. After the third change tissue was embedded in a fresh plastic in mold with appropriate labels and placed in 60\u201370\u00b0C oven overnight. Once the plastic was cured the samples were thick sectioned (0.5\u20131.0 um) and placed on glass slides; stained with 1% Toluidine Blue-O in 1% borax on a hot plate. Tissue was sectioned with a diamond knife on a Leica EMUC6 ultramicrotome, picked up on 150 mesh copper grids and contrasted sequentially with saturated aqueous uranyl acetate followed by staining with Reynold's lead citrate. Sections were examined on a JEOL 1400+ electron microscope.\n\n### MRI\n\nThe brains of wild-type (n\u00a0=\u00a06; 7-months old) and eif2b5zc103 fish (n\u00a0=\u00a06; 5.5-months old) were dissected leaving the skull, a small piece of the spinal cord, and a small amount of fat tissue surrounding the brain intact. They were placed in 4% paraformaldehyde and 0.5% magnevist (gadopentetate dimeglumine) overnight at 4 \u00b0C on a nutator.\n\nMR imaging was performed with a 1.0 cm diameter loop-gap radiofrequency transmitter-receiver and a preclinical 7T MRI scanner (Bruker Biospec) with the microimaging gradient set (1100mTm\u22121, BGA-6, Bruker). Two primary scans were done to map the T1 and T2 behavior of the tissue. These scans were 3D turbo spin-echo scans (Rapid Acquisition with Refocused Echoes, RARE), specialized with varying repetition time (TR) or echo time (TE) to optimize T1 and T2 contrast. The T1 map scan utilized the following parameters: T1 weighted RARE: TR = [50, 150, 275, 450, 600]ms, TE\u00a0=\u00a012 ms, four averages, RARE factor\u00a0=\u00a02, matrix size\u00a0=\u00a0305\u00d7140 x 165, spatial resolution\u00a0=\u00a00.036 mm isotropic, field of view: 110 x 50 x 60 mm. T2 weighted RARE: TR\u00a0=\u00a0500 ms, TE = [12.2, 36.6, 60.94]ms, nine averages, RARE factor\u00a0=\u00a02, matrix size\u00a0=\u00a0305\u00a0\u00d7\u00a0140 x 165, spatial resolution\u00a0=\u00a00.036 mm isotropic, field of view: 110 x 50 x 60 mm. Six zebrafish skulls were scanned in wild-type/mutant pairs in the custom coil.\n\nThe raw intensity data was exported from Paravision 5.1 (Bruker BioSpec). This data was imported into MATLAB r2017b (Mathworks, Natick MA), and reshaped into two sets of 3D volumes. For the T1 weighted scan, each volume was representative of an individual TR. For the T2 weighted scans, each volume was representative of a different TE. With this, a gradient descent algorithm could be applied to the intensity vs TR, TE curve of each pixel, for the T1, T2 volumes respectively. General parameters were T1: Initial constants: M0\u00a0=\u00a08000, T1\u00a0=\u00a0150, Loop limit\u00a0=\u00a075000, learning rate\u00a0=\u00a00.000001. Equation: $S=M_{0}(1\u2212e^{TR/T1})$\u00a0T2: Initial constants: M0\u00a0=\u00a08000, T2\u00a0=\u00a075, Loop limit\u00a0=\u00a075000, learning rate\u00a0=\u00a00.000001. Equation: $S=M_{0}e^{TE/T2}$.\n\nSub-millimeter movement was witnessed between the T1 experiments, which caused pixel intensities to not properly fit to the T1 equation, and blurred in the averaged image. This was corrected for with simple 2D rigid body transformations between TR experiments, using the MATLAB r2017b \u2018affine2d\u2019 function. A transformation matrix was generated for a single representative slice, then applied to all slices within the volume. This transformation was applied to each T1 experiment of a given set and were averaged into a single volume.\n\nTransformation matrices were generated with landmark based analysis. Three primary landmarks were utilized to build the transformation: the center of the lens of each eye and the tip of the vagal lobe. The repetitions were averaged and fitted with the gradient descent algorithm detailed above. This resulted in two volumes of T1 and T2 values for each scan pair. The skull pair was separated into two distinct volumes for each T1, T2 map, and rotated into the anatomical planes for visualization.\n\nAnalysis of the T1 and T2 maps involved a two-step process of quantifying overall brain volume, and determining the T1 and T2 values for white matter regions of interest (ROI). To begin, four representative measurements were taken for each wild-type and mutant pair. Measurements taken were the length from the tip of olfactory bulb to end of the tectum, the maximum width of the optic tectum, and the maximum height of brain at center ventricle. These measurements were normalized to the width of the specimen\u2019s skull.\n\nTo measure the intensity of white matter regions in the T2 images, a 2 \u00d7 2 pixel region was taken from the periventricular grey zone and normalized to a 2 \u00d7 2 pixel region in the optic tectum from a slice at the end of the rhombencephalic ventricle (RV) of midbrain. Two more slices were measured moving rostrally from the RV.\n\n### Black/gold staining\n\nAdult brains were dissected, fixed overnight in 4% PFA, then incubated 1 hr in 5% sucrose in PBS, overnight in 15% sucrose in PBS, and overnight in 30% sucrose in PBS, prior to embedding in OCT. Tissues were sectioned at 30 \u03bcm at \u221220 \u00b0C in the cryostat and mounted on positively charged slides.\n\nBlack gold II powder (Millipore) was resuspended in 0.9% NaCl to a final concentration of 0.3% and preheated to 60\u00b0C along with 1% sodium thiosulfate. Tissue sections were brought to room temperature for 5 min, then post-fixed in 10% formalin for 1 hr. Slides were incubated at 60\u00b0C in the pre-warmed Black Gold II solution for 15 min. Slides were rinsed 1X in tap water for 2 min, then incubated in sodium thiosulfate solution (1%) for 3 min at 60\u00b0C. After another tap water rinse, slides were dehydrated to 100% EtOH, incubated in 50:50 Hemo-De:EtOH for 3 min, and finally in Hemo-De for 3 min prior to mounting in Cytoseal 60.\n\n### Statistical analysis and blinding\n\nStatistical analyses were performed using Prism6 software (GraphPad). Student\u2019s t-test was used for two-way comparisons; comparisons between three or more groups was performed with ANOVA with post-hoc Tukey\u2019s HSD between individual means.\n\nSamples were randomly allocated to control or experimental groups, other than required distribution by genotype (e.g. wild-type embryos were in the wild-type group). Allocation of samples and animals, data collection, and analysis were performed blinded to genotype and/or experimental group.\n",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "a74f91f2-977d-4bf4-8fc2-aaa6089b8fe1",
+      "submission_id": "1435c799-ff02-4d65-a657-bfff8441c9f8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Beth Stevens, Boston Children's Hospital United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56319.sa1](https://doi.org/10.7554/eLife.56319.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this study, Keefe et al., develop and validate a novel zebrafish model to study the mechanisms underlying Vanishing White Matter disease (VWM). They demonstrate that distinct mutations in multiple eIF2B complex subunits recapitulate several features of VWM, including disrupted growth, impaired myelination and motor defects. They show conservation of function by rescuing some of these defects with a human EIF2B2 ortholog. By leveraging this model, the authors show that the integrated stress response (ISR) that is activated in these mutants results in truncation of the eif2b5 subunit transcript. This truncated form is capable of causing motor defects and activating the ISR in wild type mice, suggesting that a feed-forward mechanism drives ISR activation in VWM. These findings address could provide insight regarding how minor stressors can lead to significant clinical deterioration and white matter damage in VWM patients.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Vanishing white matter disease expression of truncated EIF2B5 activates induced stress response\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Beth Stevens as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard White as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Cody J Smith (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is 'in revision at eLife'. Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary\n\nMutations in the five subunits of the eukaryotic initiation factor 2B (eIF2B1-5) complex cause a severe leukodystrophy called Vanishing White Matter (VWM) disease. In this study from the Bonkowsky lab, new mutants were either generated or imported and analyzed for CNS defects relevant to VWM. By studying growth, lethality, myelination, CNS cell development, and swimming behavior, the authors conclude that the new eif2b mutants phenocopy VWM patients. The authors also show that in mutants, a retained intron leads to expression of a truncated transcript, which they conclude acts in a dominant-negative fashion and suggest that this explains some pathology in human VWM patients.\n\nAlthough modeling human disease in model organisms like zebrafish is important, there are several major issues with the study that dampen enthusiasm as outlined below.\n\nEssential revisions:\n\nSignificance of Model\n\n1) For most of five the mutations most of them are heterozygous. Here the authors showed that only 2 out of 4 subunit mutants (eif2b5, eif2b2) exhibited phenotypes. Is it possible that other mutant alleles have mild phenotypes, such as increased ISR? More characterization of phenotypes in the other mutants (eif2b1, eif2b4) and the heterozygous siblings is needed to address relevance of this as a model of VWM.\n\nMotor defects\n\n1) It is unconvincing that the movement measurements in eif2b5zc103 mutants represent motor behavior deficits. Please address possible non-specific developmental delays cause the observed phenotypes. Can the authors perform the behavioral experiments at later stages or provide stage matched (rather than age matched) characterizations the mutants?\n\n2) In Figure 6, for the truncated EIF2B5 mis-expression experiments, it is unclear from the text and Materials and methods how the experiments were performed. If the truncated protein acts as a dominant-negative in the e1f2b mutants, why would expression of the wild-type gene rescue the mutant phenotype? The dominant-negative product would still be present. Also, Figure 6D: Compare motor behavior in actin:eif2b vs eif2b5 expression and clarify and address alternative interpretations of the data (See reviewer 3 comments).\n\nCharacterization of oligodendrocytes and myelin:\n\n1) Olig2 also labels motor neurons in the spinal cord and neural precursors in the hindbrain. Based on this marker alone it cannot be concluded they are only quantifying oligodendrocyte lineage cells in Figure 3. Please address.\n\n2) Figure 3P-S: the TUNEL staining overlaps with Olig2 in the hindbrain but not in the rest of the brain. Please investigate which other cell types are undergoing apoptosis the optic nerve and optic tectum where the myelination and axon defects are evident in the eif2b5zc103/103 mutants/\n\n3) Figure 3F-I:the eif2b2 and eif2b5 mutants show a striking change in proliferation pattern at 5dpf, including a loss of proliferation in the eyes and cerebellum and increased proliferation in the ventricles. To investigate which cell types are undergoing altered proliferation co-staining for cell-type-specific markers (eg: microglia, astrocytes, neurons) Is needed. See reviewer 1 comments.\n\n4) The electron micrographs in Figure 4 are low quality and cannot be analyzed for G-ratio based on what is shown. Please address.\n\nReviewer #1:\n\nIn the manuscript entitled \"Vanishing white matter disease expression of truncated EIF2B5 activates induced stress response\", Keefe et al., develop and validate a novel zebrafish model to study the mechanisms underlying Vanishing White Matter disease (VWM). They demonstrate that distinct mutations in multiple eIF2B complex subunits recapitulate several features of VWM, including disrupted growth, impaired myelination and motor defects. Remarkably, they show conservation of function by rescuing these defects with a human EIF2B2 ortholog. By leveraging this model, the authors show that the integrated stress response (ISR) that is activated in these mutants results in truncation of the eif2b5 subunit transcript. This truncated form is capable of causing motor defects and activating the ISR in wild type mice, suggesting that a feed-forward mechanism drives ISR activation in VWM. These findings address a key question in the field regarding how minor stressors can lead to significant clinical deterioration and white matter damage in VWM patients.\n\nOverall, this study presents a potential new model to interrogate VWM pathophysiology and identify therapeutic agents. Below are a few comments that would strengthen the findings.\n\n1) In Figure 3F-I, the eif2b2 and eif2b5 mutants show a striking change in proliferation pattern at 5dpf, including a loss of proliferation in the eyes and cerebellum and increased proliferation in the ventricles. The authors are encouraged to investigate which cell types are undergoing altered proliferation by co-staining for cell-type-specific markers (eg: microglia, astrocytes, neurons). This would further inform the origin of the defects seen in the adult eif2b5zc103/103 mutants.\n\n2) Similarly, in Figure 3P-S, the TUNEL staining overlaps with Olig2 in the hindbrain but not in the rest of the brain. The authors are encouraged to investigate which other cell types are undergoing apoptosis, particularly in the optic nerve and optic tectum where the myelination and axon defects are evident in the eif2b5 zc103/103 mutants.\n\nReviewer #2:\n\nMutations in the five subunits of the eukaryotic initiation factor 2B (eIF2B1-5) complex cause a severe leukodystrophy called Vanishing White Matter (VWM) disease. In this study from the Bonkowsky lab, new mutants were either generated or imported and analyzed for CNS defects relevant to VWM. By studying growth, lethality, myelination, CNS cell development, and swimming behavior, the authors conclude that the new eif2b mutants phenocopy VWM patients. The authors also show that in mutants, a retained intron leads to expression of a truncated transcript, which they conclude acts in a dominant-negative fashion and suggest that this explains some pathology in human VWM patients. Although modeling human disease in model organisms like zebrafish is important, there are several issues with the study that dampen enthusiasm.\n\n1) In human patients, mutations in each of the 5 eIF2B subunits can cause VWM, and most of them are heterozygous (van der Knaap et al., 2002). In this study, the authors showed that only 2 out of 4 subunit mutants (eif2b5, eif2b2) exhibited phenotypes. It is possible that other mutant alleles have mild phenotypes, such as increased ISR? Can the authors characterize such phenotypes in the other mutants (eif2b1, eif2b4) and also in the heterozygous siblings?\n\n2) It is unconvincing that the movement measurements in eif2b5zc103 mutants represent motor behavior deficits. The authors point out that these mutants are smaller than wild-type controls and the mutant larvae fail to inflate their swim bladders. Thus, it is also possible that non-specific developmental delays cause the observed phenotypes. Can the authors perform the behavioral experiments at later stages or provide stage matched (rather than age matched) characterizations the mutants?\n\n3) Olig2 also labels motor neurons in the spinal cord and neural precursors in the hindbrain. Thus, the authors cannot conclude they are only quantifying oligodendrocyte lineage cells in Figure 3.\n\n4) The electron micrographs in Figure 4 are low quality and cannot be analyzed for G-ratio based on what is shown. These images look more like toluidine blue stained semi-thick sections than EM sections.\n\n5) In Figure 6, for the truncated EIF2B5 mis-expression experiments, it is unclear from the text and Materials and methods how the experiments were performed. Did the authors generate a stable transgenic line, as for EIF2B2, or it was a transient injection of expressing DNA construct? If it was a transient injection experiment, expression would be mosaic and likely short-term; thus, a motor phenotype is surprising if this was the method.\n\n6) If the truncated protein acts as a dominant-negative in the e1f2b mutants, why would expression of the wild-type gene rescue the mutant phenotype? The dominant-negative product would still be present.\n\nReviewer #3:\n\nKeefe and Soderholm and Shih et al. present a thorough paper that uses multiple approaches to address how eif2b5 functions in neural development and function. The work nicely evaluated common features of VWM disease and sets foundation for future studies that would dissect mechanistic regulators in VWM. The model and data that is present will be of broad interest to groups studying neural development as well as VWM. The conclusions that are stated in the paper nicely match the data that is presented. Overall, this is a well written and complete story.\n\nIn Figure 6D, the impaired motor movement is observed. The authors conclude that it is acting as a dominant negative. However, it could be over expression and not a dominant negative effect. Can the authors compare motor behavior in actin:eif2b vs eif2b5 expression? Alternatively, can the authors add text that demonstrate alternative interpretations of the data.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Vanishing white matter disease expression of truncated EIF2B5 activates induced stress response\" for further consideration by eLife. Your revised article has been evaluated by Richard White (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below. Overall, this manuscript can serve as a useful model for understanding how mutations in eIF2b2 can leading to phenotypes present in VWM and will be a resource for the community. The authors have included several new data panels that help to clarify some of the previous concerns. However, a few issues remain that need to be addressed before publication.\n\n1) A major issue remains in the quality of the electron microscopy to show myelin ultrastructure. As shown, it is unclear how g-ratio could have been calculated from images shown. Please address comments below (reviewer 1) and provide data using high quality EMs images as is standard for the field and important for a manuscript focused on a model of Vanishing White Matter disease.\n\n2) New data in supplemental figures 1 and 2 are critical are important for the main story and should be included in the main figures for the story as written and revised. However, it is difficult to visualize the co-labeling of tunel and ph3 with the noted cell-type markers in those images that influence the quantification of data and results.\n\n3) Please provide clarification and details on the sox10:mrfp transgene used in the study: The authors listed sox10:mrfp as a transgene that they used in the study but it is not clear which figure that transgenic animal was used. Tg(sox10:mrfp) would be a useful tool to validate the OPC phenotype in the spinal cord since sox10 labels OPCs with very different morphology than the subset of neurons that are labeled with that transgene.\n\nReviewer #2:\n\nThe authors were decently responsive to the previous round of critiques. A major issue remains in the quality of the electron microscopy to show myelin ultrastructure. As shown, it is unclear how g-ratio could have been calculated from images shown. Additionally, g-ratio quantifications are usually binned by axon size, which was not performed here and likely cannot be based on the quality of the EMs. The EMs are not publication quality and should not be published. If publication quality EMs cannot be obtained and quantified, the histological analysis of myelin will have to suffice, although this is certainly not ideal for a manuscript focused on a model of Vanishing White Matter disease. In this case, myelin was never formally examined, and the wording throughout the Abstract and manuscript will need to be changed to reflect this.\n\nReviewer #3:\n\nOverall, this manuscript can serve as a useful model for understanding how mutations in eIF2b2 can leading to phenotypes present in VWM and will be a resource for the community. The authors have provided a point by point rebuttal to the reviewers concern. The authors have also included several new data panels that help to clarify some of the previous concerns. Most of this new data matches the conclusions as written. However, some of new data shown has presented a concern or clarification that should be addressed before publication.\n\nNew data in supplemental figures 1 and 2 are critical for the story as written and revised. It is difficult to visualize the co-labeling of tunel and ph3 with the noted cell-type markers in those images. It is not clear how such quantification could be completed, especially with the resolution of in situ hybridization vs immunostaining. As written, these figures are important for the main story and should be included in the main figures. The tunel staining in these new supplementary files is also different than displayed in the main figures. Can the authors provide insets for the labeling demonstrating an example of a co-labeled cell in each of the genotypes.\n\nIn an effort for the authors to address a review regarding the specificity of cell death in the spinal cord they used mag as a marker for oligodendrocytes. mag is certainly one marker that could identify an oligodendrocyte. But the mag in situ appears to be present in areas of the PNS without defined myelinating cells. There are also a low number of mag+ cells in the spinal cord of animal at 5 dpf in those images than would be expected for labeling of myelinating cells. Can the authors test that the mag+ cells in the spinal cord are also olig2+ or sox10+ to confirm that the mag labeling is specific.\n",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "713d05f4-35d5-408f-8d28-2a85069f3c91",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C1",
+      "claim": "Vanishing white matter disease (VWM) is a severe leukodystrophy of the central nervous system caused by mutations in subunits of the eukaryotic initiation factor 2B complex (eIF2B).",
+      "claim_type": "EXPLICIT",
+      "source": "Vanishing white matter disease (VWM) is a severe leukodystrophy of the central nervous system caused by mutations in subunits of the eukaryotic initiation factor 2B complex (eIF2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the literature about VWM disease, supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "52ce0499-c317-488e-b0c3-972b7844ba9f",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C2",
+      "claim": "Current models only partially recapitulate key disease features of VWM, and pathophysiology is poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Current models only partially recapitulate key disease features, and pathophysiology is poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to existing mouse models in the introduction (Geva et al., 2010; Dooves et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "6fedc604-eb5e-4df1-b0c5-fd134bca6b62",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C3",
+      "claim": "Zebrafish eif2b mutants phenocopy VWM, including impaired somatic growth, early lethality, effects on myelination, loss of oligodendrocyte precursor cells, increased apoptosis in the CNS, and impaired motor swimming behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Through development and validation of zebrafish (Danio rerio) models of VWM, we demonstrate that zebrafish eif2b mutants phenocopy VWM, including impaired somatic growth, early lethality, effects on myelination, loss of oligodendrocyte precursor cells, increased apoptosis in the CNS, and impaired motor swimming behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple experimental results presented in the manuscript, including survival curves, motor behavior analysis, TUNEL staining, and OPC counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "de932c3e-673f-465c-a362-41831a98c426",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C4",
+      "claim": "Expression of human EIF2B2 in the zebrafish eif2b2 mutant rescues lethality and CNS apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of human EIF2B2 in the zebrafish eif2b2 mutant rescues lethality and CNS apoptosis, demonstrating conservation of function between zebrafish and human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing survival and TUNEL counts in transgenic rescue experiments (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "3d2a2d58-1b25-4c21-b93d-b948516c71dc",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C5",
+      "claim": "In the eif2b mutants, intron 12 retention leads to expression of a truncated eif2b5 transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mutants, intron 12 retention leads to expression of a truncated eif2b5 transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qRT-PCR data showing increased intron 12 retention in mutants (Figure 8B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "00820cec-a71d-4dc4-8c14-79eba390441a",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C6",
+      "claim": "Expression of the truncated eif2b5 in wild-type larva impairs motor behavior and activates the ISR.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the truncated eif2b5 in wild-type larva impairs motor behavior and activates the ISR, suggesting that a feed-forward mechanism in VWM is a significant component of disease pathophysiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motor behavior analysis and qRT-PCR of ISR markers following injection of truncated eif2b5 (Figure 8D, F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "0b4f9a4a-d0bf-4047-92a3-880188eb092e",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C7",
+      "claim": "Each human EIF2B subunit gene has a single zebrafish ortholog with a conserved amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Each human EIF2B subunit gene has a single zebrafish ortholog with a conserved amino acid sequence (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "fb9cd8a0-cda3-49db-820d-38be6e57cda4",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C8",
+      "claim": "The Eif2b zebrafish and human protein structures show conserved structural domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The Eif2b zebrafish and human protein structures also show conserved structural domains (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by protein domain comparison shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "875efcc7-a4c7-4223-be2d-9b3067ef8074",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C9",
+      "claim": "Expression analysis of zebrafish eif2b genes at 24 hpf showed expression chiefly in the brain and eye.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression analysis of zebrafish eif2b genes at 24 hpf (hours post-fertilization) showed expression chiefly in the brain and eye (Figure 1C\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization images shown in Figure 1C-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "1e80cbc6-2545-4c6a-a8ac-7de19b5027f4",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C10",
+      "claim": "By 72 hpf expression was clearly noted throughout the animal, with higher levels in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "By 72 hpf expression was clearly noted throughout the animal, with higher levels in the brain (Figure 1H\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in situ hybridization images shown in Figure 1H-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "92fd6771-3729-49ba-9312-a39f5b8d05b8",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C11",
+      "claim": "Only for eif2b4 were the expression changes significant during the first 7 days of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative RT-PCR analysis revealed subunit specific expression changes in the first 7 days of life, although only for eif2b4 were the changes significant (Figure 1M\u2013Q).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1M-Q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "0cf192f1-adc3-4a9f-8eab-48183c42fd30",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C12",
+      "claim": "eif2b1 (sa12357) harbors a T/A transversion resulting in an early stop in exon 8.",
+      "claim_type": "EXPLICIT",
+      "source": "eif2b1 (sa12357) harbors a T/A transversion resulting in an early stop in exon 8 (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the mutation generated, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "75a44c54-763a-4ef4-b7cd-2719aa69d881",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C13",
+      "claim": "eif2b2 (sa17223) has a G/A transition in exon 5, mutating an essential splice site.",
+      "claim_type": "EXPLICIT",
+      "source": "eif2b2 (sa17223) has a G/A transition in exon 5, mutating an essential splice site (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the mutation obtained, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "898762c1-7e17-4412-beff-3b91825ca94e",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C14",
+      "claim": "eif2b4 (sa17367) has a G/A transition in exon 12 mutating an essential splice site.",
+      "claim_type": "EXPLICIT",
+      "source": "eif2b4 (sa17367) has a G/A transition in exon 12 mutating an essential splice site (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the mutation obtained, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "0a445a47-efca-42f6-a6be-fca2424c70c6",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C15",
+      "claim": "Six different eif2b5 alleles were created by targeting exon 1 using CRISPR/Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "To mutagenize subunit eif2b5, we used the Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR)/Cas9 system and created six different alleles by targeting exon 1 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the mutagenesis approach, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "506c7b89-7697-4d72-be89-3cefa89321de",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C16",
+      "claim": "The eif2b5zc103/zc103 mutants showed a decrease in size compared to their wild type and heterozygous siblings (2.2 cm vs 1.8 cm, 0.3 and 0.2 s.D., and p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "The eif2b5zc103/zc103 mutants showed a decrease in size compared to their wild type and heterozygous siblings (2.2 cm vs 1.8 cm, 0.3 and 0.2 s.D., and p<0.0001) (Figure 2F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by measurements and statistical analysis shown in Figure 2F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "7dbd7581-e626-4e5d-ad76-b833b6e5c6ec",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C17",
+      "claim": "Mutants of eif2b5zc102/zc102 exhibited growth deficits such as failure to develop a swim bladder, and were smaller in size compared to their wild type and heterozygous siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants of a more severe allele, eif2b5zc102/zc102, harboring an early stop codon, exhibited growth deficits such as failure to develop a swim bladder, and were smaller in size compared to their wild type and heterozygous siblings (Figure 2H, arrowhead).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by brightfield images shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "1a8fa595-c5db-400a-ab6b-2493d1994371",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C18",
+      "claim": "The eif2b2sa17223/sa17223 allele exhibited failure to develop a swim bladder.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype was also present in the eif2b2sa17223/sa17223 allele (Figure 2H, arrowhead).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by brightfield images shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "35fa88c6-e640-47d6-8b0c-b9948e64f059",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C19",
+      "claim": "Two alleles did not survive past 2 weeks of age: eif2b5zc102/zc102 and eif2b2sa17223/sa17223.",
+      "claim_type": "EXPLICIT",
+      "source": "Two alleles did not survive past 2 weeks of age: eif2b5zc102/zc102 and eif2b2sa17223/sa17223 (at 10 dpf, eif2b5+/+ WT n = 12; eif2b5zc102/+ heterozygous n = 26; eif2b5zc102/zc102 homozygous n = 0. eif2b2+/+ WT n = 68; eif2b2sa17223/+ heterozygous n = 118; eif2b2sa17223/sa17223 homozygous n = 2) (Figure 2I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Kaplan-Meier survival curves shown in Figure 2I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "d053cc1c-a5d0-4c98-b143-8213509c54c2",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C20",
+      "claim": "The milder phenotype eif2b5zc103 allele survives until adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the milder phenotype eif2b5zc103 allele survives until adulthood (at 10 dpf, eif2b5+/+ WT n = 25; eif2b5zc103/+ heterozygous n = 41; eif2b5zc103/zc103 homozygous n = 22) (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Kaplan-Meier survival curves shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "94728422-103f-4562-bb77-49365bff80ec",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C21",
+      "claim": "The eif2b2sa17223/sa17223 homozygous mutants showed reduction in distance moved, movement time, and velocity at 7dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "The eif2b2sa17222sa172232 homozygous mutants showed reduction in distance moved, movement time, and velocity at 7dpf (Figure 2L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by motor behavior analysis shown in Figure 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "eae3e0e2-49b3-4afc-bbfd-2577a7668ddd",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C22",
+      "claim": "The eif2b5 zc102/zc102 mutants had motor function impairments by 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "The eif2b5 zc102/zc102 mutants had motor function impairments by 5 dpf (Figure 2L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by motor behavior analysis shown in Figure 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "17a57ee4-8f31-43ac-bb30-8c43db51ff52",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C23",
+      "claim": "The eif2b5zc103/zc103 mutants had no difference in distance moved, movement time, or velocity as compared to their wild-type siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the eif2b5zc103/zc103 mutants had no difference in distance moved, movement time, or velocity as compared to their wild-type siblings (Figure 2L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by motor behavior analysis shown in Figure 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "6fad5f29-7d82-4725-b016-0f6b38a6dfd9",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C24",
+      "claim": "At 5 dpf, all three mutant alleles (eif2b5zc103, eif2b5zc102, and eif2b2sa17223) showed an increase in cell death, quantified using TUNEL.",
+      "claim_type": "EXPLICIT",
+      "source": "At 5 dpf, all three of these mutants showed an increase in cell death, quantified using terminal deoxynucleotidyl transferase dUTP nick-end labeling (TUNEL) (eif2b5zc103: mean = 129.1, S.D. = 79.5, eif2b5+/+: mean = 12.2, S.D. = 9.8, p=0.001; eif2b5zc102: mean = 163.7, S.D. = 78.2 eif2b5+/+: mean = 18.7, S.D. = 10.6 p=2.03\u00d710\u22125; eif2b2sa17223: mean = 202.8, S.D. = 60.8: eif2B2+/+: mean = 37.4, S.D. = 25.2, p=0.0005) (Figure 3A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TUNEL staining and quantification shown in Figure 3A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "582d1676-a49f-49c1-9bca-571d81dd63a7",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C25",
+      "claim": "eif2b5zc103 and eif2b5zc102 mutants showed no change in pH3 cell counts at 5 dpf compared to controls, but showed a noticeable change in proliferation pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "eif2b5zc103 and eif2b5zc102 mutants showed no change in pH3 cell counts at 5 dpf compared to controls, but showed a noticeable change in proliferation pattern: a lack of proliferation in the outer perimeter of the eyes (arrow) and the tectum (arrowhead), but increased proliferation in the ventricular region (asterisk) (eif2b5zc103: mean = 247.2, S.D. = 44.5, eif2b5+/+: mean = 273.1, S.D. = 43.8, p=0.206; eif2b5zc102: mean = 243.3, S.D. = 40.0, eif2b5+/+: mean = 288.3, S.D. = 32.0, p=0.0238) (Figure 3F\u2013H,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pH3 staining and quantification shown in Figure 3F-H, J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "cd9a58a2-743f-416f-8dc8-358330680b6c",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C26",
+      "claim": "eif2b2sa17223 mutants showed a decrease in pH3 cell counts at 5 dpf compared to controls as well as a change in proliferation pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "eif2b2sa17223 mutants showed a decrease in pH3 cell counts at 5 dpf compared to controls as well as a change in proliferation pattern (eif2b2sa17223: mean = 185.3, S.D. = 37.8: eif2b2+/+: mean = 271.6, S.D. = 46.7, p=0.0004) (Figure 3I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pH3 staining and quantification shown in Figure 3I, J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "7c9bed65-107b-4fda-b28e-da3b9f845713",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C27",
+      "claim": "No change in the number of OPCs was observed in the spinal cord of eif2b5zc103, eif2b5zc102, or eif2b2sa17223 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no change in the number of OPCs (measured in two somites directly above the caudal end of the yolk) (eif2b5zc103: mean = 26.6, S.D. = 7.55, eif2b5+/+: mean = 30.71, S.D.=,5.88 p=0.278; eif2b5zc102: mean = 30.6, S.D. = 11.0, eif2b5+/+: mean = 36.6, S.D. = 9.63, p=0.514; eif2b2sa17223: mean = 35.8, S.D. = 5.36, eif2b2+/+: mean = 39.2, S.D. = 4.66, p=0.163) (Figure 3K\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Olig2dsRed staining and quantification shown in Figure 3K-O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "04a5d37d-f835-4c91-be2e-f63a6f04ab6b",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C28",
+      "claim": "All three mutant lines (eif2b5zc103, eif2b5zc102, and eif2b2sa17223) showed significant increases in the number of TUNEL-positive OPCs specifically in the hindbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "All three lines showed significant increases in the number of TUNEL-positive OPCs specifically in the hindbrain (eif2b5zc102: mean = 17.5, S.D. = 3.02, eif2b5+/+: mean = 1, S.D. = 1, p=0.00004; eif2b5zc103: mean = 3, S.D. = 2.26, eif2b5+/+: mean = 0.7, S.D. = 1.06, p=0.0144; eif2b2sa17223: mean = 3.5, S.D. = 1.05, eif2b2+/+: mean = 0.333, S.D. = 0.577, p=0.002) (Figure 3P\u2013T).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-labeling of Olig2dsRed and TUNEL shown in Figure 3P-T.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "bd896980-9032-437a-85d6-67b5f2b0f04d",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C29",
+      "claim": "The adult eif2b5zc103/zc103 mutants showed a decrease in the thickness of the myelin sheath as measured by estimation of the G-ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "The adult mutants showed a decrease in the thickness of the myelin sheath as measured by estimation of the G-ratio, the perimeter of the axon to the perimeter of the myelin sheath (eif2b5zc103: mean = 0.690, S.D. = 0.076, eif2b5+/+: mean = 0.593, S.D. = 0.085, p=2.18E-22) (Figure 6A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TEM analysis and G-ratio quantification shown in Figure 6A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "208f5062-bc65-44e6-840b-7d2960848ad6",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C30",
+      "claim": "The adult eif2b5zc103/zc103 mutants showed a disorganized pattern of myelinated axons in the optic tectum compared to age-matched wild-type adult controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The adult mutants showed a disorganized pattern of myelinated axons in the optic tectum compared to age-matched wild-type adult controls (Figure 6F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Black Gold II staining shown in Figure 6F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "e28bf5ba-14de-4a0e-a0f4-5307710061a9",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C31",
+      "claim": "MRI of adult eif2b5zc103/zc103 mutants showed a decrease in overall brain size compared to adult wild-type controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed magnetic resonance imaging (MRI) of adult eif2b5 mutants, and found a decrease in overall brain size in the adult eif2b5zc103/zc103 mutants compared to adult wild-type controls using the skull as a normalization factor to account for the decrease in overall size of the mutants (Figure 6H\u2013J; Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MRI analysis shown in Figure 6H-J and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "505e20d3-2daf-4241-b992-f8fa83dab80e",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C32",
+      "claim": "The transgenic mutant eif2b2sa17223/sa17223;Tg(\u00df-actin:EIF2B2-2A-eGFP) larva developed a swim bladder and the growth deficits were rescued.",
+      "claim_type": "EXPLICIT",
+      "source": "The transgenic mutant eif2b2sa17223/ sa17223;Tg(\u00df-actin:EIF2B2-2A-eGFP) larva developed a swim bladder and the growth deficits were rescued (Figure 7F, arrowhead).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by brightfield images shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "4b0465b8-cbb2-462e-86f6-2c2786143635",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C33",
+      "claim": "The transgenic homozygous mutant eif2b2sa17223/sa17223;Tg(\u00df-actin:EIF2B2-2A-eGFP) animals showed 21% survival at 10 dpf (e.g. Mendelian ratios).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast the transgenic homozygous mutant eif2b2sa17223/ sa17223;Tg(\u00df-actin:EIF2B2-2A-eGFP) animals showed 21% survival at 10 dpf (e.g. Mendelian ratios) (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genotype results shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "93b8a040-5ce7-4e14-afe3-f8139c651f02",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C34",
+      "claim": "The eif2b2sa17223/sa17223 increase in apoptosis was rescued and apoptosis in the eif2b2sa17223/sa17223;Tg(\u00df-actin:EIF2B2-2A-eGFP) was significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the eif2b2sa17223/sa17223 increase in apoptosis (Figure 7G\u2013H,K) was rescued and apoptosis in the eif2b2sa17223/sa17223;Tg(\u00df-actin:EIF2B2-2A-eGFP) was significantly reduced (TUNEL counts eif2b2sa17223/sa17223 transgenic: mean = 31.5, S.D. = 12.9; eif2b2sa17223/sa17223 non-transgenic: mean = 84.4, S.D. = 27.63, p=1.89E-05) (Figure 7I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TUNEL staining and quantification shown in Figure 7G-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "5d319e9b-2b5b-4160-8c89-88a48eb6aabe",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C35",
+      "claim": "An increase in retention of intron 12 associated with truncated eif2b5 was found in eif2b mutant alleles (eif2b5: zc102 and zc103; eif2b2: sa17223).",
+      "claim_type": "EXPLICIT",
+      "source": "We found an increase in retention of intron 12 associated with truncated eif2b5 in eif2b mutant alleles (eif2b5: zc102 and zc103; eif2b2: sa17223) (Figure 8B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "3d58f01f-e4c3-43d1-9644-2037dff3e0cf",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C36",
+      "claim": "Intron 12 retention was observed in peripheral lymphocytes from a human VWM patient.",
+      "claim_type": "EXPLICIT",
+      "source": "and which was also observed in peripheral lymphocytes from a human VWM patient (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data from a human patient shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "0ef1a013-47c5-48eb-9276-ffd8c8865a36",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C37",
+      "claim": "Expression of truncated EIF2B5 in wild-type embryos caused impairment of motor behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed impairment of motor behavior (Figure 8D), suggesting a dominant-negative effect, although we could not exclude that the effect was caused by over-expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by motor behavior analysis shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "a68b429e-5608-4027-991b-031eb6514f09",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C38",
+      "claim": "qRT-PCR analysis showed atf4, bip, and chop II expression were increased in eif2b2 and eif2b5 homozygous mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analysis showed atf4, bip, and chop II expression were increased, but perk had variable expression in eif2b2 and eif2b5 homozygous mutants (Figure 8E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "ae9864c0-fdfd-48e1-bad0-d2800776cc0c",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C39",
+      "claim": "ISR markers including atf4, chop II, bip and perk, were up-regulated in wild-type embryos expressing truncated EIF2B5.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR showed that ISR markers including atf4, chop II, bip and perk, were up-regulated (Figure 8F), indicating that truncated EIF2B5 was sufficient to activate the ISR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 8F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "26f460fa-a45f-47dc-a7da-d6c8fec75bbe",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C40",
+      "claim": "VWM disease is caused by bi-allelic recessive variants in any of the five genes encoding subunits (1-5) of the eukaryotic translation initiation factor 2B (eIF2B) complex.",
+      "claim_type": "EXPLICIT",
+      "source": "VWM disease is caused by bi-allelic recessive variants in any of the five genes encoding subunits (1-5) of the eukaryotic translation initiation factor 2B (eIF2B) complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about VWM disease.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "b120ddb5-3803-4269-953b-f6a6a4f863c7",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C41",
+      "claim": "Symptoms of VWM include ataxia, spasticity, seizures, cognitive impairment, and motor problems.",
+      "claim_type": "EXPLICIT",
+      "source": "Symptoms of VWM include ataxia, spasticity, seizures, cognitive impairment, and motor problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of clinical symptoms of VWM disease.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "2762fd48-1918-4d34-916c-0108ddd6240d",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C42",
+      "claim": "There are no sex differences seen in VWM patients, but females can experience ovarian failure.",
+      "claim_type": "EXPLICIT",
+      "source": "While there are no sex differences seen in VWM patients, females can experience ovarian failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clinical observation about VWM disease.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "98e0b105-10f8-414e-b0f8-9d0fac32af3b",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C43",
+      "claim": "In VWM patients, autopsies have revealed affected oligodendrocytes and astrocytes, myelin loss, and cystic cavitations of white matter.",
+      "claim_type": "EXPLICIT",
+      "source": "In patients, autopsies have revealed affected oligodendrocytes and astrocytes, myelin loss, and cystic cavitations of white matter (van der Knaap et al., 1997; van der Knaap et al., 1998; Pronk et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to autopsy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "bd5d8ec1-f60c-4160-abb6-d426c6affee4",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C44",
+      "claim": "Genotype-phenotype correlations of mutation severity have been shown in VWM.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotype-phenotype correlations of mutation severity have been shown (VWM Research Group et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on genotype-phenotype correlations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "5a9ee6f9-a06e-460b-ac37-ddb08d26740a",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C45",
+      "claim": "Severe multi-organ involvement is characteristic of fetal and neonatal forms of VWM.",
+      "claim_type": "EXPLICIT",
+      "source": "and severe multi-organ involvement is characteristic of fetal and neonatal forms (van der Knaap et al., 2003b; Song et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on fetal and neonatal VWM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "c040dc90-c902-4a52-af2f-e417ae17c561",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C46",
+      "claim": "Disease onset <4 years of age is followed by a rapid deterioration of symptoms in VWM.",
+      "claim_type": "EXPLICIT",
+      "source": "Disease onset <4 years of age is followed by a rapid deterioration of symptoms, while disease onset >4 years of age shows greater variability in disease course (VWM Research Group et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on disease course.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "83e66f52-3783-4467-be18-e9d45366f223",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C47",
+      "claim": "There is no treatment for VWM disease.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no treatment for VWM disease, and current mouse models only partially recapitulate disease pathophysiology (Geva et al., 2010; Dooves et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of treatment for VWM.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "cb497cc2-7bf5-4376-a161-0b4ae4c49949",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C48",
+      "claim": "The eIF2B complex is a heteropentameric guanine nucleotide exchange factor (GEF) for eukaryotic initiation factor 2 (eIF2).",
+      "claim_type": "EXPLICIT",
+      "source": "The eIF2B complex is a heteropentameric guanine nucleotide exchange factor (GEF) for eukaryotic initiation factor 2 (eIF2), which governs the rate of global protein synthesis and cap-dependent translation initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the eIF2B complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "7d011559-b4a7-44d2-9e9f-e9cb95f96863",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C49",
+      "claim": "The eIF2B complex functions to displace eIF5 from inactive GDP-bound eIF2 to allow its recruitment to the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The eIF2B complex also functions to displace eIF5 from inactive GDP-bound eIF2 to allow its recruitment to the ribosome (Jennings and Pavitt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on eIF2B function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "f26a21f0-182c-4138-a46b-6058c69ee00d",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C50",
+      "claim": "The eIF2B complex plays a central role in the cellular integrated stress response (ISR).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the eIF2B complex plays a central role in the cellular integrated stress response (ISR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the eIF2B complex and ISR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "1a9037ef-1e1f-4182-980b-7d37a89b9080",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C51",
+      "claim": "Stress-dependent kinase activation leads to phosphorylation of eIF2, which binds eIF2B more tightly and reduces overall protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Stress-dependent kinase activation leads to phosphorylation of eIF2, which binds eIF2B more tightly and reduces overall protein synthesis (Krishnamoorthy et al., 2001; Pakos-Zebrucka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on the ISR mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "f26e2278-0c46-4a60-942c-74745108dc6b",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C52",
+      "claim": "In human cell lines, translation is suppressed to a greater degree after stress in VWM patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cell lines, it has been shown that translation is suppressed to a greater degree after stress in VWM patients (Moon and Parker, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on translation suppression in VWM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "589e89ca-a222-4072-88f9-93e069d5e2c0",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C53",
+      "claim": "The suppression of translation lasts for a longer period of time in VWM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This suppression of translation lasts for a longer period of time in VWM cells, and the protein responsible for de-phosphorylating eIF2 and allowing translation recovery, GADD34, was found in lower quantities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cited study (Moon and Parker, 2018).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "a0261bbd-0be7-490f-b59e-0b85975d1180",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C54",
+      "claim": "Mouse lines with knock-in/knock-out mutations in Eif2b5R132H have impaired motor function, growth deficits, delayed development of white matter, and abnormal abundance of oligodendrocytes and astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse lines with knock-in/knock-out mutations in Eif2b5R132H, a common allele of VWM patients, have impaired motor function, growth deficits, delayed development of white matter, and abnormal abundance of oligodendrocytes and astrocytes (Geva et al., 2010; Atzmon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on mouse models of VWM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "edffa374-bbfd-4501-b453-97ff7b5966ce",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C55",
+      "claim": "PERK misexpression in oligodendrocytes caused hypomyelination, oligodendrocyte damage, and myelin loss in young mice.",
+      "claim_type": "EXPLICIT",
+      "source": "PERK misexpression caused hypomyelination, oligodendrocyte damage, and myelin loss (Lin et al., 2014). However, this result was only seen in young mice, and could not be induced in mature animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on PERK misexpression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "766d61a6-f35e-44cf-bbc0-06515d9b7d7f",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C56",
+      "claim": "ISR activation has been identified in VWM patient brain autopsy samples.",
+      "claim_type": "EXPLICIT",
+      "source": "ISR activation has been identified in VWM patient brain autopsy samples (van Kollenburg et al., 2006) and in mouse VWM models (Wong et al., 2019; Abbink et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on ISR activation in VWM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "a33db682-6c8d-4acd-8e60-e33098eb91b7",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C57",
+      "claim": "ISRIB has been shown to bind to and activate the decameric, functional eIF2B complex.",
+      "claim_type": "EXPLICIT",
+      "source": "A small molecule inhibitor of the ISR, ISRIB, has been shown to bind to and activate the decameric, functional eIF2B complex (Sidrauski et al., 2013; Sidrauski et al., 2015; Wong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on ISRIB.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "bd8f0ca7-11c2-47dd-b8e4-f4b9f8c7f484",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C58",
+      "claim": "eIF2B is expressed globally but VWM primarily affects the CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF2B is expressed globally but VWM primarily affect the CNS, including differential effects in the CNS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the paradox of VWM pathology.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "52876fb1-ffa3-4801-a160-accdd13414f3",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C59",
+      "claim": "Oligodendrocyte numbers are decreased in affected white matter, but they are increased in other areas in VWM.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, oligodendrocyte numbers are decreased in affected white matter, but they are increased in other areas (Van Haren et al., 2004; Bugiani et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on oligodendrocyte changes in VWM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "885f138a-c6fc-4e9c-a4a3-73505b4a73e0",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C60",
+      "claim": "GEF activity of the eIF2B complex does not appear to correlate with VWM disease severity.",
+      "claim_type": "EXPLICIT",
+      "source": "GEF activity of the eIF2B complex does not appear to correlate with VWM disease severity (Liu et al., 2011), suggesting that the overall protein translation is not the key component of VWM pathophysiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on GEF activity and disease severity.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "1e7e3007-d744-4de8-b4f4-d13f4baca3ea",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C61",
+      "claim": "Rapid clinical deterioration and white matter loss in VWM can be provoked by a stressor, such as minor head trauma or mild illness.",
+      "claim_type": "EXPLICIT",
+      "source": "Another unusual and poorly understood aspect of VWM is that rapid clinical deterioration and white matter loss can be provoked by a stressor, such as minor head trauma or mild illness (van der Knaap et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a clinical study on VWM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "4479a8f9-32a2-418c-a034-fde5e309c30c",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C62",
+      "claim": "Chronic ISR activation causes cellular apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with models in which chronic ISR activation causes cellular apoptosis (Bond et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on ISR and apoptosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "d81a959c-b9f5-44ce-bbba-655cf4c26c8c",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C63",
+      "claim": "There is some evidence that a de-regulated ISR is not alone sufficient to cause VWM pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, there is some evidence that a de-regulated ISR is not alone sufficient to cause VWM pathology (Wisse et al., 2017), and in fact blocking the ISR worsens VWM pathology (Sekine et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on ISR and VWM pathology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "028773d5-827e-4b47-a180-c81d87018e4f",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C64",
+      "claim": "During periods of hypoxia, ISR activation leads to retention of intron 12 in EIF2B5 by interfering with the exon 12 splice site in cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Work studying cancer cell lines has shown that during periods of hypoxia, ISR activation leads to retention of intron 12 in EIF2B5 by interfering with the exon 12 splice site (Brady et al., 2017; Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to a study on intron 12 retention in cancer cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "e317803a-8968-4b60-b2e1-4edf9f2df114",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C65",
+      "claim": "The retained intron 12 contains a premature stop codon, resulting in a truncated 65 kDa EIF2B5 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This retained intron contains a premature stop codon, resulting in a truncated 65 kDa EIF2B5 protein, and rendering the eIF2B complex unable to initiate translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cited study (Brady et al., 2017) and the mechanism of intron retention.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "179d3fa2-99d1-4fe7-93f2-e26ef6ec32eb",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C66",
+      "claim": "ISR activation is mainly triggered by atf4 up-regulation in the eif2b mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analysis showed atf4, bip, and chop II expression were increased, but perk had variable expression in eif2b2 and eif2b5 homozygous mutants (Figure 8E), indicating that ISR activation is mainly triggered by atf4 up-regulation the in eif2b mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the qRT-PCR data showing consistent atf4 upregulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "77f7e728-da6a-4a62-9880-81bfa6a8aae7",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C67",
+      "claim": "Truncated EIF2B5 was sufficient to activate the ISR.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR showed that ISR markers including atf4, chop II, bip and perk, were up-regulated (Figure 8F), indicating that truncated EIF2B5 was sufficient to activate the ISR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data showing ISR marker upregulation after truncated EIF2B5 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "f3c40951-13d7-4851-b6bc-e6b2d2782547",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C68",
+      "claim": "In VWM patients, stress would activate the ISR, and would also lead to expression of truncated EIF2B5 expression; which would cause a feed-forward mechanism of further and chronic ISR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "But in VWM patients, stress would activate the ISR, and would also lead to expression of truncated EIF2B5 expression; which would cause a feed-forward mechanism of further and chronic ISR activation (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental data showing truncated EIF2B5 expression and ISR activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "3f239ef6-6521-4748-af42-5cacd28fd496",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C69",
+      "claim": "Chronic activation of the ISR is observed in human autopsy samples and in a mouse VWM model.",
+      "claim_type": "EXPLICIT",
+      "source": "This chronic activation of the ISR is observed in human autopsy samples and in a mouse VWM model (van der Voorn et al., 2005; van Kollenburg et al., 2006; Wong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on ISR activation in VWM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "ff591b8a-bacd-4739-a1f6-1f21771c910b",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C70",
+      "claim": "The truncated EIF2B5 permits formation of the eIF2B complex and a partial catalytic domain, but is missing the eIF2\u03b1 interaction domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The truncated EIF2B5 permits formation of the eIF2B complex and a partial catalytic domain, but is missing the eIF2\u03b1 interaction domain. This would result in impaired translation mechanism and a decrease in protein synthesis (Adomavicius et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structure of truncated EIF2B5 and a citation to a study on eIF2B structure-function.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "8a4032ca-f2ec-44d8-adbe-3a4f30ce0e36",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C71",
+      "claim": "ISRIB can inhibit the ISR in mice bearing an Eif2b5R132H/R132H VWM mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Major advances in the past several years have shown that a small molecule stabilizing the decameric eIF2B complex (ISRIB - ISR InhiBitor) can boost the GEF activity of wild-type and VWM mutant eIF2B complexes (Tsai et al., 2018; Wong et al., 2018) and can inhibit the ISR in mice bearing an Eif2b5R132H/R132H VWM mutation (Wong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on ISRIB in VWM models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "ba2937d7-2aee-4721-bc9e-3feb886d07ee",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C72",
+      "claim": "It is not clear whether ISRIB or other drugs targeting eIF2B complex stability will be sufficient to prevent stress-induced ISR chronic, feed-forward activation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is not clear whether ISRIB or other drugs targeting eIF2B complex stability will be sufficient to prevent stress-induced ISR chronic, feed-forward activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the proposed feed-forward mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "298a60dd-ded4-4f9b-bf50-22d063869a50",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C73",
+      "claim": "Therapies for VWM may need a combinatorial approach incorporating eIF2B stabilization at baseline; and prevention of stress-induced truncated eIF2B5 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Therapies for VWM may need a combinatorial approach incorporating eIF2B stabilization at baseline; and prevention of stress-induced truncated eIF2B5 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future therapeutic approaches based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "7c0d4a4e-f99f-4e1d-90c4-9180c6f66faf",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C74",
+      "claim": "The mutations generated in zebrafish are not specifically homologous to known human VWM patient disease alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations we have generated are not specifically homologous to known human VWM patient disease alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the nature of the zebrafish mutations generated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "c9cd96a5-e3ae-4845-9445-6f2f37decdc0",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C75",
+      "claim": "The range of phenotypes in zebrafish mutants, from lethality in the first several weeks of life, to viability and fecundity, provide an opportunity to further study genotype-phenotype relationships in VWM.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the range of phenotypes in our zebrafish mutants, from lethality in the first several weeks of life, to viability and fecundity, provide an opportunity to further study genotype-phenotype relationships in VWM, which have been noted in patients (van der Lei et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the utility of the zebrafish model based on the observed phenotypic range.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "2b2855ec-5044-4ee2-bee5-132f7a3f67a1",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C76",
+      "claim": "The eif2b mutant zebrafish are already 'maximally' stressed at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the eif2b mutant zebrafish are already 'maximally' stressed at baseline, consistent with the observed activation of the ISR at baseline, and the finding of increased intron 12 retention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that additional stress did not worsen motor behavior in mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "d7e5a818-3a89-4d6d-bd86-cfdcb2934d91",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C77",
+      "claim": "The eif2b4sa17367/sa17367 mutants have impaired survival, with <5% surviving past 10 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "(C) eif2b4sa17367/sa17367 mutants have impaired survival, with <5% surviving past 10 dpf (total n = 100).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival curve data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "98e57622-e1ec-421a-938e-a7fee9c39a11",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C78",
+      "claim": "eif2b4sa17367/sa17367 mutants have activation of ISR transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) eif2b4sa17367/sa17367 mutants have activation of ISR transcripts (qRT-PCR).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "35a4b51e-6e4a-42af-9671-62eaae096cf9",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C79",
+      "claim": "The Zrf1 and pH3 double-positive cells showed no difference in either the tectum or the eye in eif2b mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The Zrf1 and pH3 double-positive cells showed no difference in either the tectum or the eye in eif2b mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantification of double-labeled cells shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "b50e17d9-e81b-4423-a321-5f10e762b2d7",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C80",
+      "claim": "The midline of eif2b5zc102/zc102 contained significantly more Zrf1 and pH3 double-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the midline of eif2b5zc102/zc102 contained significantly more Zrf1 and pH3 double-positive cells, while eif2b2sa17223/sa17223 and eif2b5zc103/zc103 tended towards increased numbers (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification of double-labeled cells shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "bdd8e062-e8f4-469f-a8e8-13bb3b29ee83",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C81",
+      "claim": "The HuC/D and pH3 double-positive cells were significantly decreased in the tectum and tended towards decreased numbers in the eye of eif2b5zc102/zc102 and eif2b2sa17223/sa17223 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The HuC/D and pH3 double-positive cells were significantly decreased in the tectum and tended towards decreased numbers in the eye of eif2b5zc102/zc102 and eif2b2sa17223/sa17223 mutants. But there were no differences in either the tectum or eye of eif2b5zc103/zc103 compared to wild-type siblings (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification of double-labeled cells shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "cde8ceb3-c195-4985-9224-b44e2756928a",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C82",
+      "claim": "The apoeb and pH3 double-positive cells were increased in the midline of eif2b5 mutants but not in the tectum and eye.",
+      "claim_type": "EXPLICIT",
+      "source": "The apoeb and pH3 double-positive cells were increased in the midline of eif2b5 mutants but not in the tectum and eye (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification of double-labeled cells shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "ec318a9f-aa29-4acf-88c1-284fb12e0f88",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C83",
+      "claim": "The eif2b2sa17223/sa17223 mutation had no impact on the apoeb and pH3 double-positive cells in the tectum, the midline, or the eye.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the eif2b2sa17223/sa17223 mutation had no impact on the apoeb and pH3 double-positive cells in the tectum, the midline, or the eye (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification of double-labeled cells shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "cebadda6-8d26-4c9e-9907-00d6613bb226",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C84",
+      "claim": "Only eif2b5zc102/c102 mutants had a significant increase in Zrf1 and TUNEL double-positive cells in the midline.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that only eif2b5zc102/c102 mutants had a significant increase in Zrf1 and TUNEL double-positive cells in the midline (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification of double-labeled cells shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "b72cecd4-bece-4e6b-af9d-cd43742e8347",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C85",
+      "claim": "The disordered proliferation was a widespread phenotype in different cell lineages, but did also show spatial specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, interestingly, the disordered proliferation was a widespread phenotype in different cell lineages, but did also show spatial specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cell-type specific proliferation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "5fa5ed56-5f69-4e73-aca6-7d1fc4f9e0cc",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C86",
+      "claim": "The difference between the EIF2B2 and EIF2B5 rescues might be due to the fact that EIF2B5 is the key catalytic subunit of the eIF2B complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the EIF2B2 and EIF2B5 rescues might be due to the fact that EIF2B5 is the key catalytic subunit of the eIF2B complex for the eIF2\u2022GDP to eIF2\u2022GTP transition, which enhances protein translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why EIF2B2 but not EIF2B5 rescued the phenotype.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "256eb6d6-b858-4b15-97f8-b8f3c9e92ecc",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C87",
+      "claim": "Expression of human EIF2B5 in zebrafish was lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, expression of human EIF2B5 in zebrafish was lethal, consistent with data showing that stoichiometry of the EIF2B5 subunit (\u03b5) expression is critical (Wortham et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the rescue experiments, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "e21b6b3e-8bd6-4e45-9999-d4b0143d7137",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C88",
+      "claim": "Because mutants can have a decrease in axon diameter, we cannot conclude definitively that myelin sheath thickness is decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because mutants can have a decrease in axon diameter, we cannot conclude definitively that myelin sheath thickness is decreased (for example, see Klingseisen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about the interpretation of the G-ratio data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "3d6b757a-3832-45fe-8fe9-803510767b3c",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C89",
+      "claim": "Stress of wild-type zebrafish caused motor deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that while stress of wild-type zebrafish caused motor deficits, stress in the mutant eif2b zebrafish (including heat shock, hypoxia, or thapsigargin) did not worsen further worsen their already impaired motor behavior (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from stress experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "a8bbc7d7-953d-4a29-b4d4-e1fd5b9e62f5",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "claim_id": "C90",
+      "claim": "Stress in the mutant eif2b zebrafish did not further worsen their already impaired motor behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that while stress of wild-type zebrafish caused motor deficits, stress in the mutant eif2b zebrafish (including heat shock, hypoxia, or thapsigargin) did not worsen further worsen their already impaired motor behavior (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from stress experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f464cd42-fd14-4a60-b132-5a0cd2f1e6dd",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Zebrafish have single orthologs of each human EIF2B subunit with conserved amino acid sequences and protein domains. Expression analysis shows eif2b genes are expressed in brain and eye at 24 hpf, with broader expression by 72 hpf.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 are well-supported by phylogenetic analysis (Figure 1A), protein domain comparison (Figure 1B), in situ hybridization (Figure 1C-L), and qRT-PCR data (Figure 1M-Q). The data clearly demonstrates conservation between zebrafish and human eIF2B.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "9f9377c2-c03c-49e0-8ab7-1fe50732bc88",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Multiple zebrafish eif2b mutant alleles were generated showing a range of phenotypic severity from early lethality (eif2b2sa17223, eif2b5zc102, eif2b4sa17367) to viable adults with growth defects (eif2b5zc103).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C20 and C77 are supported by molecular characterization (Figure 2A-E), survival curves (Figure 2I-K), growth measurements (Figure 2F-G), and phenotypic observations (Figure 2H). The allelic series demonstrates genotype-phenotype relationships consistent with VWM disease severity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "3df2fbad-0c04-4eb3-bfb4-7c2276290dca",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Severe eif2b mutants (eif2b2sa17223, eif2b5zc102) show impaired motor swimming behavior by 5-7 dpf, while the milder eif2b5zc103 mutant shows no motor deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by quantitative motor behavior analysis (Figure 2L) showing significant reductions in distance moved, movement time, and velocity in severe mutants but not in eif2b5zc103. This correlates with mutation severity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "780a1b49-6abc-42c1-bcff-5dff036ef7ba",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All three eif2b mutant alleles (eif2b5zc103, eif2b5zc102, eif2b2sa17223) show significantly increased CNS apoptosis at 5 dpf. Proliferation patterns are altered with eif2b2sa17223 showing decreased total pH3+ cells while eif2b5 mutants show spatial redistribution of proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are well-supported by TUNEL quantification (Figure 3A-E) and pH3 staining (Figure 3F-J). Statistical significance is demonstrated for apoptosis in all mutants (p<0.001-0.0005) and for proliferation changes (p=0.0004-0.0238).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "d6551e44-24ff-42d5-802d-783b56b0f2ae",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "While total OPC numbers in spinal cord are unchanged in eif2b mutants, all three mutant lines show significant increases in apoptotic OPCs specifically in the hindbrain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by Olig2dsRed quantification showing no change in spinal cord OPCs (Figure 3K-O, p>0.16) but significant increases in TUNEL+/Olig2+ cells in hindbrain (Figure 3P-T, p<0.02). This demonstrates regional specificity of OPC loss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "cb1eb21c-351e-4d42-8c31-f2d47f23248c",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cell-type specific analysis reveals spatially restricted proliferation and apoptosis defects in eif2b mutants, with radial glia, neurons, and microglia showing different patterns of dysfunction across brain regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C85 are supported by double-labeling experiments (Figure 5) showing cell-type and region-specific effects. The data demonstrates that proliferation defects are widespread but spatially specific, supporting claim C85's inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "5d635cad-18df-4d62-8734-d9a3576d4aef",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Adult eif2b5zc103 mutants show myelin defects including increased G-ratio, disorganized myelinated axon patterns, and decreased brain size on MRI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29-C31 are supported by TEM (Figure 6A-E), Black Gold staining (Figure 6F-G), and MRI (Figure 6H-J). However, C88 correctly notes that increased G-ratio could reflect decreased axon diameter rather than decreased myelin thickness, introducing uncertainty about the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "62d59c77-eb7b-4ccf-93ce-9f491b511bca",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Expression of human EIF2B2 in zebrafish eif2b2 mutants rescues lethality (21% survival vs 1%), growth defects, and CNS apoptosis, demonstrating functional conservation. In contrast, human EIF2B5 expression is lethal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C32-C34 are strongly supported by rescue experiments (Figure 7) showing Mendelian ratios of transgenic mutants, swim bladder development, and reduced apoptosis (p<0.00002). C86-C87 provide reasonable speculation about why EIF2B5 but not EIF2B2 rescue failed, supported by citation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "52d9616d-2c4c-4896-9548-6c76fab1e97f",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "eif2b mutants show increased retention of intron 12 in eif2b5, leading to expression of truncated eif2b5. This same intron retention is observed in human VWM patient lymphocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by qRT-PCR data (Figure 8B-C) showing increased intron 12 retention in zebrafish mutants and human patient. C64-C65 provide mechanistic context from prior work (Brady et al., 2017) about ISR-induced intron retention.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "9cefe169-8b01-465d-9e70-69d0fab42685",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Expression of truncated EIF2B5 in wild-type embryos impairs motor behavior and activates ISR markers (atf4, bip, chop II, perk), demonstrating that truncated EIF2B5 is sufficient to activate the ISR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by motor behavior analysis (Figure 8D) and qRT-PCR (Figure 8E-F) showing ISR marker upregulation. C66-C67 provide reasonable inferences about atf4-driven ISR activation based on consistent upregulation patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "adf1512a-966a-4c54-9d8c-f19dd5bc71c9",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose a feed-forward mechanism where stress-induced ISR activation leads to truncated EIF2B5 expression, which further activates the ISR chronically. This mechanism may explain stress-induced deterioration in VWM patients and suggests combinatorial therapeutic approaches may be needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C6 is supported by experimental data (Figure 8D,F). However, C68 represents a mechanistic model that, while consistent with the data, involves speculation about human disease. C72-C73 are explicitly speculative about therapeutic implications. The feed-forward mechanism is plausible but requires additional validation in human systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "ebc123bc-f7c9-44ab-be37-d1733704efd8",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Zebrafish eif2b mutants phenocopy key VWM features including impaired growth, early lethality, myelination defects, OPC loss, increased CNS apoptosis, and impaired motor behavior, providing a useful model despite not being homologous to specific human disease alleles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C3 is a summary claim supported by multiple experimental results throughout the manuscript. C74 acknowledges a limitation while C75 correctly infers the utility of the phenotypic range for studying genotype-phenotype relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "bacbcfb8-053e-4ee0-9f96-4c2805b7f31f",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "eif2b mutants show baseline ISR activation and do not show further motor behavior impairment with additional stress, suggesting they are 'maximally stressed' at baseline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C78 is supported by qRT-PCR data (Figure 2\u2014figure supplement 1D). C89-C90 describe stress experiments (data not shown). C76 provides a reasonable inference that mutants are maximally stressed, consistent with baseline ISR activation and intron 12 retention.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "f5c4e876-d245-4979-9f99-2ce909c6757c",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "VWM is a severe leukodystrophy caused by mutations in eIF2B subunits, with symptoms including ataxia, spasticity, motor problems, and white matter loss. Current models only partially recapitulate disease features and there is no treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C40-C47 provide background on VWM disease, supported by multiple citations to established literature. These are well-established facts that provide context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    },
+    {
+      "id": "3d234b75-d069-4654-8776-d60196209b9c",
+      "content_id": "1261d2fd-90e1-4fcd-825d-695b04206de9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The eIF2B complex functions as a GEF for eIF2 and plays a central role in the ISR. Prior work has shown ISR activation in VWM patients and models, but the relationship between ISR dysregulation and VWM pathology remains incompletely understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C63 provide background on eIF2B function and ISR biology, supported by citations to established literature. These claims establish the knowledge gaps that motivate the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:52.968409Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0b4f9a4a-d0bf-4047-92a3-880188eb092e",
+      "result_id": "f464cd42-fd14-4a60-b132-5a0cd2f1e6dd"
+    },
+    {
+      "claim_id": "fb9cd8a0-cda3-49db-820d-38be6e57cda4",
+      "result_id": "f464cd42-fd14-4a60-b132-5a0cd2f1e6dd"
+    },
+    {
+      "claim_id": "875efcc7-a4c7-4223-be2d-9b3067ef8074",
+      "result_id": "f464cd42-fd14-4a60-b132-5a0cd2f1e6dd"
+    },
+    {
+      "claim_id": "1e80cbc6-2545-4c6a-a8ac-7de19b5027f4",
+      "result_id": "f464cd42-fd14-4a60-b132-5a0cd2f1e6dd"
+    },
+    {
+      "claim_id": "92fd6771-3729-49ba-9312-a39f5b8d05b8",
+      "result_id": "f464cd42-fd14-4a60-b132-5a0cd2f1e6dd"
+    },
+    {
+      "claim_id": "0cf192f1-adc3-4a9f-8eab-48183c42fd30",
+      "result_id": "9f9377c2-c03c-49e0-8ab7-1fe50732bc88"
+    },
+    {
+      "claim_id": "75a44c54-763a-4ef4-b7cd-2719aa69d881",
+      "result_id": "9f9377c2-c03c-49e0-8ab7-1fe50732bc88"
+    },
+    {
+      "claim_id": "898762c1-7e17-4412-beff-3b91825ca94e",
+      "result_id": "9f9377c2-c03c-49e0-8ab7-1fe50732bc88"
+    },
+    {
+      "claim_id": "0a445a47-efca-42f6-a6be-fca2424c70c6",
+      "result_id": "9f9377c2-c03c-49e0-8ab7-1fe50732bc88"
+    },
+    {
+      "claim_id": "506c7b89-7697-4d72-be89-3cefa89321de",
+      "result_id": "9f9377c2-c03c-49e0-8ab7-1fe50732bc88"
+    },
+    {
+      "claim_id": "7dbd7581-e626-4e5d-ad76-b833b6e5c6ec",
+      "result_id": "9f9377c2-c03c-49e0-8ab7-1fe50732bc88"
+    },
+    {
+      "claim_id": "1a8fa595-c5db-400a-ab6b-2493d1994371",
+      "result_id": "9f9377c2-c03c-49e0-8ab7-1fe50732bc88"
+    },
+    {
+      "claim_id": "35fa88c6-e640-47d6-8b0c-b9948e64f059",
+      "result_id": "9f9377c2-c03c-49e0-8ab7-1fe50732bc88"
+    },
+    {
+      "claim_id": "d053cc1c-a5d0-4c98-b143-8213509c54c2",
+      "result_id": "9f9377c2-c03c-49e0-8ab7-1fe50732bc88"
+    },
+    {
+      "claim_id": "d7e5a818-3a89-4d6d-bd86-cfdcb2934d91",
+      "result_id": "9f9377c2-c03c-49e0-8ab7-1fe50732bc88"
+    },
+    {
+      "claim_id": "94728422-103f-4562-bb77-49365bff80ec",
+      "result_id": "3df2fbad-0c04-4eb3-bfb4-7c2276290dca"
+    },
+    {
+      "claim_id": "eae3e0e2-49b3-4afc-bbfd-2577a7668ddd",
+      "result_id": "3df2fbad-0c04-4eb3-bfb4-7c2276290dca"
+    },
+    {
+      "claim_id": "17a57ee4-8f31-43ac-bb30-8c43db51ff52",
+      "result_id": "3df2fbad-0c04-4eb3-bfb4-7c2276290dca"
+    },
+    {
+      "claim_id": "6fad5f29-7d82-4725-b016-0f6b38a6dfd9",
+      "result_id": "780a1b49-6abc-42c1-bcff-5dff036ef7ba"
+    },
+    {
+      "claim_id": "582d1676-a49f-49c1-9bca-571d81dd63a7",
+      "result_id": "780a1b49-6abc-42c1-bcff-5dff036ef7ba"
+    },
+    {
+      "claim_id": "cd9a58a2-743f-416f-8dc8-358330680b6c",
+      "result_id": "780a1b49-6abc-42c1-bcff-5dff036ef7ba"
+    },
+    {
+      "claim_id": "7c9bed65-107b-4fda-b28e-da3b9f845713",
+      "result_id": "d6551e44-24ff-42d5-802d-783b56b0f2ae"
+    },
+    {
+      "claim_id": "04a5d37d-f835-4c91-be2e-f63a6f04ab6b",
+      "result_id": "d6551e44-24ff-42d5-802d-783b56b0f2ae"
+    },
+    {
+      "claim_id": "35a4b51e-6e4a-42af-9671-62eaae096cf9",
+      "result_id": "cb1eb21c-351e-4d42-8c31-f2d47f23248c"
+    },
+    {
+      "claim_id": "b50e17d9-e81b-4423-a321-5f10e762b2d7",
+      "result_id": "cb1eb21c-351e-4d42-8c31-f2d47f23248c"
+    },
+    {
+      "claim_id": "bdd8e062-e8f4-469f-a8e8-13bb3b29ee83",
+      "result_id": "cb1eb21c-351e-4d42-8c31-f2d47f23248c"
+    },
+    {
+      "claim_id": "cde8ceb3-c195-4985-9224-b44e2756928a",
+      "result_id": "cb1eb21c-351e-4d42-8c31-f2d47f23248c"
+    },
+    {
+      "claim_id": "ec318a9f-aa29-4acf-88c1-284fb12e0f88",
+      "result_id": "cb1eb21c-351e-4d42-8c31-f2d47f23248c"
+    },
+    {
+      "claim_id": "cebadda6-8d26-4c9e-9907-00d6613bb226",
+      "result_id": "cb1eb21c-351e-4d42-8c31-f2d47f23248c"
+    },
+    {
+      "claim_id": "b72cecd4-bece-4e6b-af9d-cd43742e8347",
+      "result_id": "cb1eb21c-351e-4d42-8c31-f2d47f23248c"
+    },
+    {
+      "claim_id": "bd896980-9032-437a-85d6-67b5f2b0f04d",
+      "result_id": "5d635cad-18df-4d62-8734-d9a3576d4aef"
+    },
+    {
+      "claim_id": "208f5062-bc65-44e6-840b-7d2960848ad6",
+      "result_id": "5d635cad-18df-4d62-8734-d9a3576d4aef"
+    },
+    {
+      "claim_id": "e28bf5ba-14de-4a0e-a0f4-5307710061a9",
+      "result_id": "5d635cad-18df-4d62-8734-d9a3576d4aef"
+    },
+    {
+      "claim_id": "e21b6b3e-8bd6-4e45-9999-d4b0143d7137",
+      "result_id": "5d635cad-18df-4d62-8734-d9a3576d4aef"
+    },
+    {
+      "claim_id": "de932c3e-673f-465c-a362-41831a98c426",
+      "result_id": "62d59c77-eb7b-4ccf-93ce-9f491b511bca"
+    },
+    {
+      "claim_id": "505e20d3-2daf-4241-b992-f8fa83dab80e",
+      "result_id": "62d59c77-eb7b-4ccf-93ce-9f491b511bca"
+    },
+    {
+      "claim_id": "4b0465b8-cbb2-462e-86f6-2c2786143635",
+      "result_id": "62d59c77-eb7b-4ccf-93ce-9f491b511bca"
+    },
+    {
+      "claim_id": "93b8a040-5ce7-4e14-afe3-f8139c651f02",
+      "result_id": "62d59c77-eb7b-4ccf-93ce-9f491b511bca"
+    },
+    {
+      "claim_id": "5fa5ed56-5f69-4e73-aca6-7d1fc4f9e0cc",
+      "result_id": "62d59c77-eb7b-4ccf-93ce-9f491b511bca"
+    },
+    {
+      "claim_id": "256eb6d6-b858-4b15-97f8-b8f3c9e92ecc",
+      "result_id": "62d59c77-eb7b-4ccf-93ce-9f491b511bca"
+    },
+    {
+      "claim_id": "5d319e9b-2b5b-4160-8c89-88a48eb6aabe",
+      "result_id": "52d9616d-2c4c-4896-9548-6c76fab1e97f"
+    },
+    {
+      "claim_id": "3d58f01f-e4c3-43d1-9644-2037dff3e0cf",
+      "result_id": "52d9616d-2c4c-4896-9548-6c76fab1e97f"
+    },
+    {
+      "claim_id": "028773d5-827e-4b47-a180-c81d87018e4f",
+      "result_id": "52d9616d-2c4c-4896-9548-6c76fab1e97f"
+    },
+    {
+      "claim_id": "e317803a-8968-4b60-b2e1-4edf9f2df114",
+      "result_id": "52d9616d-2c4c-4896-9548-6c76fab1e97f"
+    },
+    {
+      "claim_id": "0ef1a013-47c5-48eb-9276-ffd8c8865a36",
+      "result_id": "9cefe169-8b01-465d-9e70-69d0fab42685"
+    },
+    {
+      "claim_id": "a68b429e-5608-4027-991b-031eb6514f09",
+      "result_id": "9cefe169-8b01-465d-9e70-69d0fab42685"
+    },
+    {
+      "claim_id": "ae9864c0-fdfd-48e1-bad0-d2800776cc0c",
+      "result_id": "9cefe169-8b01-465d-9e70-69d0fab42685"
+    },
+    {
+      "claim_id": "179d3fa2-99d1-4fe7-93f2-e26ef6ec32eb",
+      "result_id": "9cefe169-8b01-465d-9e70-69d0fab42685"
+    },
+    {
+      "claim_id": "77f7e728-da6a-4a62-9880-81bfa6a8aae7",
+      "result_id": "9cefe169-8b01-465d-9e70-69d0fab42685"
+    },
+    {
+      "claim_id": "00820cec-a71d-4dc4-8c14-79eba390441a",
+      "result_id": "adf1512a-966a-4c54-9d8c-f19dd5bc71c9"
+    },
+    {
+      "claim_id": "f3c40951-13d7-4851-b6bc-e6b2d2782547",
+      "result_id": "adf1512a-966a-4c54-9d8c-f19dd5bc71c9"
+    },
+    {
+      "claim_id": "3f239ef6-6521-4748-af42-5cacd28fd496",
+      "result_id": "adf1512a-966a-4c54-9d8c-f19dd5bc71c9"
+    },
+    {
+      "claim_id": "ff591b8a-bacd-4739-a1f6-1f21771c910b",
+      "result_id": "adf1512a-966a-4c54-9d8c-f19dd5bc71c9"
+    },
+    {
+      "claim_id": "ba2937d7-2aee-4721-bc9e-3feb886d07ee",
+      "result_id": "adf1512a-966a-4c54-9d8c-f19dd5bc71c9"
+    },
+    {
+      "claim_id": "298a60dd-ded4-4f9b-bf50-22d063869a50",
+      "result_id": "adf1512a-966a-4c54-9d8c-f19dd5bc71c9"
+    },
+    {
+      "claim_id": "6fedc604-eb5e-4df1-b0c5-fd134bca6b62",
+      "result_id": "ebc123bc-f7c9-44ab-be37-d1733704efd8"
+    },
+    {
+      "claim_id": "7c0d4a4e-f99f-4e1d-90c4-9180c6f66faf",
+      "result_id": "ebc123bc-f7c9-44ab-be37-d1733704efd8"
+    },
+    {
+      "claim_id": "c9cd96a5-e3ae-4845-9445-6f2f37decdc0",
+      "result_id": "ebc123bc-f7c9-44ab-be37-d1733704efd8"
+    },
+    {
+      "claim_id": "98e57622-e1ec-421a-938e-a7fee9c39a11",
+      "result_id": "bacbcfb8-053e-4ee0-9f96-4c2805b7f31f"
+    },
+    {
+      "claim_id": "3d6b757a-3832-45fe-8fe9-803510767b3c",
+      "result_id": "bacbcfb8-053e-4ee0-9f96-4c2805b7f31f"
+    },
+    {
+      "claim_id": "a8bbc7d7-953d-4a29-b4d4-e1fd5b9e62f5",
+      "result_id": "bacbcfb8-053e-4ee0-9f96-4c2805b7f31f"
+    },
+    {
+      "claim_id": "2b2855ec-5044-4ee2-bee5-132f7a3f67a1",
+      "result_id": "bacbcfb8-053e-4ee0-9f96-4c2805b7f31f"
+    },
+    {
+      "claim_id": "713d05f4-35d5-408f-8d28-2a85069f3c91",
+      "result_id": "f5c4e876-d245-4979-9f99-2ce909c6757c"
+    },
+    {
+      "claim_id": "52ce0499-c317-488e-b0c3-972b7844ba9f",
+      "result_id": "f5c4e876-d245-4979-9f99-2ce909c6757c"
+    },
+    {
+      "claim_id": "26f460fa-a45f-47dc-a7da-d6c8fec75bbe",
+      "result_id": "f5c4e876-d245-4979-9f99-2ce909c6757c"
+    },
+    {
+      "claim_id": "b120ddb5-3803-4269-953b-f6a6a4f863c7",
+      "result_id": "f5c4e876-d245-4979-9f99-2ce909c6757c"
+    },
+    {
+      "claim_id": "2762fd48-1918-4d34-916c-0108ddd6240d",
+      "result_id": "f5c4e876-d245-4979-9f99-2ce909c6757c"
+    },
+    {
+      "claim_id": "98e0b105-10f8-414e-b0f8-9d0fac32af3b",
+      "result_id": "f5c4e876-d245-4979-9f99-2ce909c6757c"
+    },
+    {
+      "claim_id": "bd5d8ec1-f60c-4160-abb6-d426c6affee4",
+      "result_id": "f5c4e876-d245-4979-9f99-2ce909c6757c"
+    },
+    {
+      "claim_id": "5a9ee6f9-a06e-460b-ac37-ddb08d26740a",
+      "result_id": "f5c4e876-d245-4979-9f99-2ce909c6757c"
+    },
+    {
+      "claim_id": "c040dc90-c902-4a52-af2f-e417ae17c561",
+      "result_id": "f5c4e876-d245-4979-9f99-2ce909c6757c"
+    },
+    {
+      "claim_id": "83e66f52-3783-4467-be18-e9d45366f223",
+      "result_id": "f5c4e876-d245-4979-9f99-2ce909c6757c"
+    },
+    {
+      "claim_id": "cb497cc2-7bf5-4376-a161-0b4ae4c49949",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "7d011559-b4a7-44d2-9e9f-e9cb95f96863",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "f26a21f0-182c-4138-a46b-6058c69ee00d",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "1a9037ef-1e1f-4182-980b-7d37a89b9080",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "f26e2278-0c46-4a60-942c-74745108dc6b",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "589e89ca-a222-4072-88f9-93e069d5e2c0",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "a0261bbd-0be7-490f-b59e-0b85975d1180",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "edffa374-bbfd-4501-b453-97ff7b5966ce",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "766d61a6-f35e-44cf-bbc0-06515d9b7d7f",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "a33db682-6c8d-4acd-8e60-e33098eb91b7",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "bd8f0ca7-11c2-47dd-b8e4-f4b9f8c7f484",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "52876fb1-ffa3-4801-a160-accdd13414f3",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "885f138a-c6fc-4e9c-a4a3-73505b4a73e0",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "1e7e3007-d744-4de8-b4f4-d13f4baca3ea",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "4479a8f9-32a2-418c-a034-fde5e309c30c",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    },
+    {
+      "claim_id": "d81a959c-b9f5-44ce-bbba-655cf4c26c8c",
+      "result_id": "3d234b75-d069-4654-8776-d60196209b9c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C53",
+      "C57",
+      "C62",
+      "C75"
+    ],
+    "result": "Alcohol consumption shows a monotonic, dose-dependent association with reduced brain volume across the full range of intake. Specifically, doubling alcohol consumption is associated with 0.17% lower normalized brain volume (p=3.0\u00d710\u207b\u00b9\u2074), with reductions in both grey matter (\u22121.2\u00d710\u207b\u00b3, p=1.9\u00d710\u207b\u00b9\u00b2) and white matter (\u22125.1\u00d710\u207b\u2074, p=2.1\u00d710\u207b\u2075). Voxel-wise analysis identified greatest associations in the cingulate, orbital frontal cortices, bilateral insula, and thalami, with no evidence of a safe threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C35-C37 provide statistically significant, highly powered associations (p<10\u207b\u00b9\u00b2) with appropriate adjustments for confounders. The monotonic relationship is confirmed by partial residual plots (C53) and voxel-wise analysis (C38-C39). Sample sizes (N=10,143 for grey matter, N=9,053 for white matter) are adequate. However, the cross-sectional design (C112) and reliance on self-reported alcohol intake (C110-C111) limit causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "White matter microstructure analysis revealed increased fractional anisotropy in bilateral corticospinal tracts with higher alcohol intake (left: 0.013\u00b10.003, p=1.0\u00d710\u207b\u2074; right: 0.011\u00b10.003, p=4.2\u00d710\u207b\u2074), associated with lower orientation dispersion. The authors interpret this as reflecting reduced density of crossing fiber tracts rather than adaptive changes in corticospinal tracts themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the statistical associations are significant (C40-C41), the interpretation (C82) is speculative and relies on indirect reasoning. The authors acknowledge higher variance-to-effect ratios for white matter (C80), suggesting these findings may be less robust than grey matter results. The interpretation contradicts typical expectations for fractional anisotropy increases, and alternative explanations are not rigorously excluded. The consistency with grey matter findings (C83) provides some support but does not validate the mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C54",
+      "C58"
+    ],
+    "result": "Alcohol consumption is associated with increased left ventricular mass index (0.36\u00b10.04 per doubling, p=8.5\u00d710\u207b\u00b2\u00b2), increased left ventricular end-diastolic volume index (0.61\u00b10.07, p=4.1\u00d710\u207b\u00b9\u2077), and increased left and right atrial volume indices. These effects are in the opposite direction to age-related changes and show monotonic associations without evidence of U-shaped relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C48 are supported by highly significant statistical associations (p<10\u207b\u00b9\u2077) in a large sample (N=11,821). The monotonic relationship is confirmed by partial residual plots (C53) and absence of U-shaped associations (C54). The comparison with age effects (C43-C49) provides meaningful context. However, the observational design (C107) and cross-sectional nature (C112) preclude causal inference, and the clinical significance of these subclinical changes requires longitudinal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C59",
+      "C60"
+    ],
+    "result": "Alcohol consumption is associated with increased aortic area indices (ascending: 2.64\u00b10.50 mm\u00b2/m\u00b2, p=1.5\u00d710\u207b\u2077; descending: 1.34\u00b10.22 mm\u00b2/m\u00b2, p=2.1\u00d710\u207b\u2079) and reduced descending aortic distensibility (\u22120.02\u00b10.005\u00d710\u207b\u00b3 mmHg\u207b\u00b9, p=7.5\u00d710\u207b\u2074), showing the same direction of effect as aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C59-C60 are supported by statistically significant associations in a large sample (N=12,376). The monotonic relationship is confirmed by partial residual plots (C53). The parallel with aging effects (C52) is concerning and well-documented. However, the effect size for descending aortic distensibility is modest, and the clinical significance of these changes at low-to-moderate intake levels is uncertain without longitudinal outcomes data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C55",
+      "C56",
+      "C61",
+      "C100"
+    ],
+    "result": "Liver fat increased by 0.15\u00b10.06% per doubling of alcohol consumption (p=0.006), with no age-related differences observed after adjusting for alcohol. The magnitude suggests alcohol could explain a major proportion of population variance in liver fat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56 provide a statistically significant association (p=0.006) with appropriate adjustments. The absence of age effects (C55) strengthens the specificity of the alcohol association. However, the sample size for liver imaging is substantially smaller (N=3,649) than other analyses, reducing power. The inference about population variance (C100) is reasonable given the effect size relative to population ranges (C101), but the cross-sectional design limits causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C63",
+      "C68",
+      "C114"
+    ],
+    "result": "The study concludes there is no safe threshold for alcohol consumption, with pathological effects observed across the full range of intake, including below current recommended guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the monotonic associations (C62) support the absence of a threshold effect, the claim of 'no safe threshold' (C7) is an overinterpretation. The study demonstrates structural changes but does not establish these are definitively 'pathological' or clinically meaningful at low intake levels. The cross-sectional design (C107, C112) cannot establish causality or temporal relationships. The term 'toxic effects' (C7) implies harm that is not directly demonstrated. Longitudinal data on clinical outcomes would be needed to support this strong conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors suggest that current public health guidelines on alcohol consumption may need to be revisited, as their findings show structural changes below recommended thresholds (UK: 16 g/d; US: 14-28 g/d).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This policy recommendation (C8, C116) is speculative and goes beyond what the data support. While the study demonstrates structural changes at intake levels below guidelines (C64-C65), it does not establish clinical harm or compare risks versus benefits. The observational design (C107) and lack of outcome data preclude definitive policy recommendations. The authors appropriately acknowledge this is speculative (C8: 'may need'), but the strength of the recommendation is not fully justified by the evidence presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study utilized UK Biobank imaging data from 10,143 (brain grey matter), 9,053 (brain white matter), 11,821 (heart), 12,376 (aorta), and 3,649 (liver) participants aged 40-69 years, with median alcohol intakes of ~20.9 g/d for men and ~10.7 g/d for women, excluding non-drinkers and those with relevant diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27, C117-C119 accurately describe the study population and sample sizes, which are well-documented in the manuscript and Figure 1. The exclusion criteria (C119) are appropriate for the research question. However, the authors acknowledge important limitations: the population is healthier than the general UK population and predominantly European ancestry (C108), limiting generalizability (C109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The study employed standardized MRI acquisition protocols (Siemens 3T for brain, 1.5T for cardiac/aortic imaging) with established processing pipelines including CNN-based segmentation for cardiac images and normalization to intracranial volume for brain measures. Alcohol intake was calculated from self-reported questionnaire data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 describe well-established, validated methodologies with appropriate citations. The MRI protocols (C30, C32) and processing methods (C31, C33) are standard for UK Biobank. However, the reliance on self-reported alcohol intake (C29) is a significant limitation, as acknowledged by the authors (C110-C111), particularly regarding potential underreporting by heavy drinkers and recall bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The magnitude of alcohol's effect on brain volume (doubling intake associated with over half the brain volume reduction of one year of aging) suggests a possible relationship with increased susceptibility to age-related brain pathologies, consistent with genetic correlations between alcohol consumption and neuropsychiatric disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The comparative magnitude calculation (C72) is a reasonable way to contextualize effect sizes, but the inference about susceptibility to pathologies (C73) is speculative. The genetic correlation cited (C74) provides some supporting evidence but does not establish a mechanistic link. The cross-sectional design cannot determine whether these structural changes lead to clinical outcomes. This interpretation goes beyond what the data directly support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors acknowledge key limitations including the observational design precluding causal inference, a relatively healthy and predominantly European ancestry population limiting generalizability, reliance on single-occasion self-reported alcohol intake subject to misreporting, and cross-sectional imaging data. They note future longitudinal analysis is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 appropriately and transparently acknowledge the study's major limitations. The observational design (C107) is a fundamental constraint on causal interpretation. Self-report bias (C111) is particularly concerning for alcohol studies. The cross-sectional nature (C112) prevents assessment of temporal relationships. The call for longitudinal data (C113) is appropriate. These limitations substantially qualify the strength of the conclusions, particularly regarding policy recommendations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C69",
+      "C70",
+      "C71",
+      "C76",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The manuscript provides extensive background on alcohol's known effects on multiple organs, citing established literature on mortality, cardiovascular effects, brain changes, liver damage, and biological mechanisms. The authors note prior studies on brain and cardiac effects were often small, underpowered, or showed conflicting results, particularly for low-to-moderate intake levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C21, C69-C71, C76, C84-C92, C95-C98, C103-C106 appropriately cite and summarize prior literature. The characterization of previous studies as small and underpowered (C71) justifies the current large-scale investigation. The background establishes the scientific context and knowledge gaps. However, these are primarily literature review claims rather than novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C93",
+      "C94",
+      "C99",
+      "C102"
+    ],
+    "result": "The voxel-wise analysis provides new evidence for alcohol associations with specific brain regions (orbital frontal cortex, bilateral insula, thalami) beyond previously reported areas. The study found no evidence for U-shaped cardiovascular associations, contradicting some prior literature. Results are consistent with a randomized trial showing increased liver fat with moderate wine consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 describe novel findings from voxel-wise analysis extending prior work (C76). The absence of U-shaped associations (C93) contradicts some prior studies (C92) but is supported by diagnostic plots. The consistency with the randomized trial on liver fat (C98-C99) strengthens confidence in those findings. However, the interpretation that results 'point to pathological effects' (C94) goes beyond what the structural data alone can establish.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1348 @@
+{
+  "submission": {
+    "id": "b2aef794-6ea3-419a-8b80-c6a084db5f12",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:08:51.732955Z",
+    "updated_at": "2025-12-03T09:08:51.732955Z"
+  },
+  "content": [
+    {
+      "id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "submission_id": "b2aef794-6ea3-419a-8b80-c6a084db5f12",
+      "content_type": "manuscript",
+      "content_text": "# ANTH domains within CALM, HIP1R, and Sla2 recognize ubiquitin internalization signals\n\n## Authors\n\n- Natalya Pashkova<sup>1</sup>\n- Lokesh Gakhar<sup>2</sup>\n- Liping Yu<sup>3</sup>\n- Nicholas J Schnicker<sup>2</sup> ([ORCID: 0000-0002-5189-4943](https://orcid.org/0000-0002-5189-4943))\n- Annabel Y Minard<sup>1</sup>\n- Stanley Winistorfer<sup>1</sup>\n- Ivan E Johnson<sup>1</sup>\n- Robert C Piper<sup>1</sup> ([ORCID: 0000-0001-9995-5699](https://orcid.org/0000-0001-9995-5699)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Physiology and Biophysics, University of Iowa Iowa City United States\n2. Carver College of Medicine Protein Crystallography Core, University of Iowa Iowa City United States\n3. Department of Biochemistry and Molecular Biology, University of Iowa Iowa City United States\n4. Carver College of Medicine NMR Core, University of Iowa Iowa City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAttachment of ubiquitin (Ub) to cell surface proteins serves as a signal for internalization via clathrin-mediated endocytosis (CME). How ubiquitinated membrane proteins engage the internalization apparatus remains unclear. The internalization apparatus contains proteins such as Epsin and Eps15, which bind Ub, potentially acting as adaptors for Ub-based internalization signals. Here, we show that additional components of the endocytic machinery including CALM, HIP1R, and Sla2 bind Ub via their N-terminal ANTH domain, a domain belonging to the superfamily of ENTH and VHS domains. Structural studies revealed that Ub binds with \u00b5M affinity to a unique C-terminal region within the ANTH domain not found in ENTH domains. Functional studies showed that combined loss of Ub-binding by ANTH-domain proteins and other Ub-binding domains within the yeast internalization apparatus caused defects in the Ub-dependent internalization of the GPCR Ste2 that was engineered to rely exclusively on Ub as an internalization signal. In contrast, these mutations had no effect on the internalization of Ste2 engineered to use an alternate Ub-independent internalization signal. These studies define new components of the internalization machinery that work collectively with Epsin and Eps15 to specify recognition of Ub as an internalization signal.\n\n## Introduction\n\nUbiquitination of membrane proteins dictates a variety of trafficking fates, usually ending in their degradation. Early in the biosynthetic pathway, ubiquitin (Ub) serves as a signal to mark mis-folded proteins for processing by ER-associated degradation and delivery to the Proteasome (Lemberg and Strisovsky, 2021; Wu and Rapoport, 2018). Post-ER membrane proteins undergo a variety of Ub-dependent sorting steps including transport to endosomes from the Golgi by GGAs, and MVB sorting by ESCRTs to incorporate ubiquitinated proteins into endosomal intralumenal vesicles that are delivered to the lysosome (Piper et al., 2014; Weeratunga et al., 2020). Each of these sorting steps is mediated by an array of machinery that harbors multiple Ub-binding domains that recognize ubiquitinated proteins and, in some cases, help organize the processes they execute. At the plasma membrane, ubiquitination of membrane proteins is a signal for internalization via clathrin-mediated endocytosis (CME), a process largely conserved across eukaryotes (Kaksonen and Roux, 2018; Traub and Lukacs, 2007). Ub is a versatile signal for internalization since it can be added or removed from virtually all membrane proteins by a myriad of regulatory mechanisms (Traub, 2009). Studying this process in detail and evaluating the overall contribution of Ub as an internalization signal has been difficult because many proteins, including well-studied vanguard proteins that serve as model endocytic cargo, use multiple internalization signals. Furthermore, while ubiquitination of a wide variety of membrane proteins mediates their endocytosis and degradation in lysosomes/vacuoles, for many it is less clear whether Ub serves as the key internalization signal vs a sorting signal that works deeper in the endocytic pathway to convey proteins into intralumenal vesicles of multivesicular bodies (Piper et al., 2014). The fact that Ub can serve as an internalization signal has been clearly demonstrated with reporter membrane proteins translationally fused to Ub, which accelerates the rate of their internalization (Traub and Lukacs, 2007). The first instance of Ub as an internalization signal was recognized in yeast where it controls the internalization of the GPCR Ste2 that can be followed by the uptake of its ligand \u03b1-factor (Hicke and Riezman, 1996). Yet, Ste2 has other internalization signals that operate in tandem with Ub, likely reflecting the ability of this GPCR to be regulated at the level of internalization by multiple mechanisms (Howard et al., 2002). In mammalian cells, the receptor tyrosine kinase EGFR undergoes ubiquitination concomitant with its internalization. Yet EGFR also uses multiple internalization signals besides Ub to access CME and also uses different internalization routes from the plasma membrane (Caldieri et al., 2017; Fortian et al., 2015; Goh et al., 2010; Pascolutti et al., 2019; Sigismund et al., 2013).\n\nA key step toward understanding the broader roles of Ub-dependent trafficking is identifying the CME machinery that recognizes Ub as an internalization signal. CME involves sequential steps of assembly and disassembly of several protein complexes including clathrin, other coat proteins, as well as adaptors that connect cargo to the internalization apparatus (Kaksonen and Roux, 2018; Mettlen et al., 2018). In the early phase, pioneering proteins localize to membrane subdomains enriched in PtdIns(4,5)P2. These in turn recruit a variety of adaptors and coat proteins concomitant with localization of cargo into the growing internalization site. The later stages of internalization are marked by the recruitment and polymerization of actin, leading to invagination and scission of the nascent endosome from the plasma membrane. Coordination between these two phases is mediated in part by proteins such as Ent1/2 and Sla2 (Epsin and HIP1R in humans) that bridge PtdIns(4,5)P2 with the actin machinery. These series of events are coordinated by multiple protein interactions that add redundancy to the system, making it more robust, while also allowing the cell to use alternate assemblies of the internalization apparatus to accommodate different cargos or respond to different regulatory pathways. Proteins that assemble in the early phase, such as AP2, have low-affinity binding sites for cargo that become operational when polymerized into coat assemblies. Within this cohort are cargo receptors for Ub. Among the best characterized candidates are Ede1/Eps15 and Ent1, Ent2/Epsin, yeast, and human orthologs, respectively, which harbor Ub-binding domains, associate with Ub-cargo, and help concentrate Ub-cargo in forming CME sites (Traub, 2009; Traub and Lukacs, 2007). Loss of these components clearly has an impact on the internalization of proteins that undergo ubiquitination as part of their internalization process. Because these proteins have multiple interactions that are collectively important for full function of the CME apparatus, their complete loss is likely to impede cargo internalization by mechanisms beyond mere loss of Ub-recognition. The strongest data for these proteins as adaptors for Ub comes from defects specifically associated with ablation of their Ub-binding domains, especially when these defects are cargo specific (Chen et al., 2011; Dores et al., 2010; Henry et al., 2012; Sen et al., 2020; Shih et al., 2002). Yet, the model that these components function as the sole adaptors for Ub-cargo does not represent the whole story since combined inactivation of Ub-binding domains within these proteins (eg. Ent1/2 and Ede1) in yeast does not affect Ub-dependent internalization of the Ste2 GPCR, suggesting other components help recognize Ub-internalization signals (Dores et al., 2010). Moreover, roles for Ub-binding domains are readily revealed when they are assessed in mutants with an endocytic apparatus weakened by the deletion of other CME components, suggesting an alternate idea whereby Ub-binding by the endocytic machinery serves a more general function that helps organize and regulate the internalization apparatus (Piper et al., 2014).\n\nHere, we find that additional components of the CME apparatus bind Ub. Ub is bound by N-terminal ANTH (AP180 N-Terminal Homology) domains from both ANTH subfamilies, which includes the CALM and AP180 subfamily as well as the subfamily including HIP1, HIP1R, and Sla2. We obtained a crystal structure of the CALM ANTH domain in a complex with Ub that we verified with NMR and mutagenesis experiments. Using this structure, we installed mutations that specifically blocked Ub-binding within the 3 ANTH-domain-containing proteins in yeast: the HIP1R homolog Sla2 and the CALM/AP180 homologs, Yap1801 and Yap1802. We followed internalization of two engineered Ste2 \u03b1-factor receptor mutants, one restricted to use only Ub as an internalization signal and another restricted to use a Ub-independent NPFxD-like motif as an internalization signal. We found that when Ub-binding was ablated within the ANTH domains in combination with other Ub-binding components of the internalization apparatus, Ub-dependent internalization was inhibited. In contrast, internalization of Ste2 that used the NPFxD internalization signal was unaffected by the loss of multiple Ub-binding sites, implying these Ub-binding sites work collectively to recognize Ub as an internalization signal of cargo.\n\n## Results\n\n### ANTH domains bind ubiquitin\n\nIn a previous study that used a large-scale Y2H screening method referred to as 'DEEPN', we found that the N-terminal portion of HIP1 bound to Ub (Pashkova et al., 2016). This Y2H interaction was observed between a Gal4-DNA-binding domain fused to two tandem copies of Ub linked via a three residue spacer and a the Gal4-transcriptional activation domain fused to residues 1\u2013363 of mouse HIP1 (XP_036020882). This interaction was further validated by pulldown of GST-fused to residues 1\u2013363 of mouse HIP1, which bound K63-linked polyubiquitin chains (Pashkova et al., 2016). This fragment contains the ANTH (AP180 N-Terminal Homology) domain and indicated that the N-terminal ANTH domain of HIP1 might be an unrecognized Ub-binding domain (Figure 1). GST-pulldown experiments with the ANTH domain alone from HIP1 confirmed this was sufficient for Ub-binding (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig1-v3.jpg)\n\n**Figure 1.:** (A) Domain organization of proteins containing an N-terminal ANTH domain. Other domains indicated are: actin-binding I/LWEQ/THATCH (talin-HIP1/R/Slap2p actin-tethering C-terminal homology) domains; AD\u2206C (C-terminal Assembly Domain lacking the central clathrin and adaptor protein binding) domains (Moshkanbaryans et al., 2014); and CC (coiled-coil) domains that drives homodimerization (Wilbur et al., 2008). (B) SDS-PAGE and Coomassie stain of purified recombinant ANTH domains from proteins cartooned in A. (C) Binding of ANTH domain from mouse HIP1 using pulldown assays with GST alone (\u00f8) or fused to the N-terminus of five linear tandem copies of Ub (GST-5xUb) or to the C-terminus of mono-Ub (Ub-GST). (D) Binding of 15N-labeled Ub monitored by NMR HSQC experiments with the indicated corresponding ANTH domains in A. Titration of 30 \u00b5M 15N-Ub in the absence (green) or presence of increasing levels of unlabeled ANTH domain. Left shows portion of HSQC spectra. Middle shows binding curves calculated from the difference in the peak intensity in absence and presence of various indicated concentrations of the ANTH domains (Kds indicated). The concentration of ANTH domains used in titration experiments are color coded to match that used in HSQC spectra. Right shows the largest chemical shift perturbations in detectable backbone resonances caused by ANTH domain binding mapped onto the molecular surface of Ub (red).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The magnitude of chemical shift perturbations ((0.2\u2206N2 + \u2206H2)1/2) of 30 \u00b5M Ub in the presence of the indicated proportion of various ANTH domains are plotted for each detectable backbone amides of Ub. Horizontal dashed line indicates the level chemical shift perturbation 1 StDev above the mean. Peaks that disappeared upon ANTH binding are colored grey and were assigned the equivalent maximum CSP value for quantitation. Residues absent in the HSQC spectra are designated by vertical blue dashed line. (B) HSQC spectra of 90 \u00b5M 15N-labeled ANTH domain of HIP1 in the presence and absence of 90 \u00b5M mono-Ub. Some of the Ub-dependent chemical shift perturbations are circled in green.\n\nANTH domains are part of the larger family of ENTH (Epsin N-Terminal Homology) and VHS (Vps27, HRS, STAM) domains that are found in the N-terminus of proteins that play a variety of roles in endocytosis and many bind Ub (Figure 1A; Moshkanbaryans et al., 2014; Takatori and Tomita, 2019). ANTH domains are structurally similar to ENTH domains but are larger, with an additional 3 C-terminal \u03b1-helices. By sequence homology, there are two broad subgroups of ANTH domains, those found in proteins such as CALM and AP180 and those found in HIP1, HIP1R, and Sla2 (De Craene et al., 2012). We purified multiple recombinant ANTH domains that fell into these two subcategories (Figure 1B) and tested their ability to bind Ub (Figure 1D). Binding in solution was monitored by HSQC NMR of 15N-Ub in increasing concentrations of ANTH domains. This produced both chemical shift perturbations as well as overall peak broadening, indicating binding was in fast-exchange. Binding of Ub to 15N-labeled HIP1-ANTH was also observed in HSQC experiments, which produced selective chemical shift perturbations in backbone amides of 15N-HIP1 ANTH as well (Figure 1\u2014figure supplement 1). These concentration dependent changes allowed us to derive equilibrium binding constants for each ANTH domain, ranging from 2.9 \u00b1 0.4 \u00b5M for the mouse HIP1 ANTH domain to 33 \u00b1 6 \u00b5M for Drosophila LAP, a homolog of human AP180. Mapping the largest backbone amide chemical shift perturbations in 15N-Ub (Figure 1\u2014figure supplement 1) onto the structure of Ub (Figure 1D) indicated that all ANTH domains bound a similar surface on Ub centered on L8, I44, and V70, which mediates the vast majority of Ub-binding interactions (Piper et al., 2014).\n\n### Structural basis of CALM ANTH domain bound to ubiquitin\n\nTo gain further insight into how ANTH domains bound Ub, we obtained a crystal structure of the human CALM ANTH domain in a complex with Ub resolved to 2.4 \u00c5 (Figure 2, Table 1, PDB:7JXV). These data showed that Ub bound near a loop within the C-terminal three-helical portion of the ANTH domain connecting the last two \u03b1-helices (Figure 2A). The structure of CALM when bound to Ub had extensive overlap with a previously determined crystal structure of CALM alone (PDB:1HFA) (Ford et al., 2001), indicating that the CALM-ANTH does not undergo large conformational rearrangements upon binding Ub (Figure 2B). This result is also consistent with NMR experiments with 15N-labeled HIP1 ANTH domain showing that the HSQC spectra is largely unaltered upon Ub-binding (Figure 1\u2014figure supplement 1B). Mapping the chemical shift perturbations from HSQC experiments with 15N-Ub bound to the CALM ANTH domain (Figure 1D and Figure 1\u2014figure supplement 1B) onto the ANTH:Ub crystal structure showed that the residues undergoing the largest changes were located at the interface captured in the crystal structure (Figure 2C). The CALM-ANTH:Ub interface showed hydrophobic interactions between Ub (L8, I44, V70) and CALM ANTH (F223, L274); and electrostatic interactions between Ub (R42, K48) and CALM (D224, D276) -To confirm this structure, we performed a series of Paramagnetic Relaxation Enhancement (PRE) experiments (Figure 2\u2014figure supplement 1A-C) that are summarized in Figure 2D. PRE effects are observed in HSQC spectra when 15N-labeled Ub residues are in close proximity to a spin-label in the CALM ANTH domain, which accelerates the relaxation of nearby 15N1H spin systems and causes peak-specific broadening. We made a series of CALM ANTH domains containing single cysteine residues. Native cysteine residues were altered (C27S, C48A, and C230A) resulting in a cysteine-free ANTH domain that retained its ability to bind Ub (Figure 2\u2014figure supplement 1A-C). Single cysteine substitutions were then introduced at positions 204, 209, 268, and 284, which allowed conjugation of a nitrosyl spin label, MTSL. PRE effects were measured by relative peak heights in the absence and presence of ascorbate, which reduces the nitrosyl group and inactivates the spin label. The largest PRE effects from the HSQC of 15N-Ub resulting from binding to CALM spin-labeled at residues 209, 268, and 284 were mapped onto the CALM:Ub structure and confirmed that in solution, Ub bound the same region and orientation as observed in the crystal structure.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig2-v3.jpg)\n\n**Figure 2.:** (A) Ribbon cartoon of the crystal structure of CALM ANTH domain (light blue) in a complex with Ub (colored from N to C terminus as blue to red (PDB:7JXV)). Basic residues in CALM that interact with PtdIns(4,5)P2 (K28, K38, K40) are highlighted in blue. (B) Overlay of CALM ANTH domain PDB:7JXV with CALM (residues 20\u2013286) in the previously determined crystal structure of CALM alone (PDB:3ZYK, pink). (C) Rotated views of the CALM:Ub complex with the Ub residues undergoing strongest chemical shift perturbations in HSQC experiments when binding CALM ANTH shown in red (residues L8, R42, I44, K48, Q49, V70, R72). (D) Summary of paramagnetic relaxation enhancement (PRE) experiments using spin labels at either residue 209 (green sphere) or 284 (blue sphere) in CALM ANTH domain. Positions of spin labels are mapped onto the CALM:Ub structure. Residues of (30 \u00b5M) 15N-Ub undergoing the strongest PRE effect from binding (30 \u00b5M) CALM ANTH spin-labeled at 209 or 284 are colored green or blue on the ribbon cartoon. (E) Close-up view of residues in the ANTH:Ub interface. Electron density maps contoured to 1\u03c3 in mesh are shown for some residues (basic: blue; acidic: red; hydrophobic: yellow).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Views of the CALM:Ub structure with positions of different spin-labeled cysteine residues (209, 268, and 284) labeled as green, black, and blue spheres, respectively. The backbone amides undergoing the largest PRE effects from spin-labels placed at 209 (green) and 284 (blue) are mapped onto the structure of Ub shown in the upper cartoons, whereas the Ub residues undergoing the largest PRE effects from ANTH spin-labeled at 268 (black) and 284 (blue) are in the lower cartoon. No PRE effects were observed from spin-label at 204 (pink). (B) Summary of PRE data. Residues undergoing detectable PRE are plotted by residue number. PRE was calculated as the difference in peak intensity in HSQC spectra of 30 \u00b5M 15N-Ub in the presence of MTSL-labelled ANTH domain without (oxidized state) or with 5 mM ascorbate (reduced state), then divided by the peak intensity in the reduced state. PRE effects over 1 StDev of the mean for the dataset are color coded as increasing levels of red. Residues that had PRE effects lower than 1 StDev are plotted in gray. Residues absent in the HSQC spectra are designated by a white dashed line. (C) Relative average peak heights of all HSQC backbone amide peaks of (30 \u00b5M) 15N-Ub in the absence (\u00f8) or presence of indicated ascorbate-reduced MTSL-labeled ANTH domains (30 \u00b5M). Decrease in relative peak height in the presence of ANTH domains correlates to the extent of binding as shown in Figure 1D. The wildtype CALM ANTH domain lacking cysteines (WT\u2206C) into which individual cysteine residues were introduce is also shown.\n\n**Table 1.**\n Crystallographic data.Data Collection and Refinement Statistics for the complex of CALM (UniProt: O55012, PICAL_RAT) and Ubiquitin (UniProt: P0CG47.1, UBB_HUMAN). Values in parathesis are for the outer shell.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>CALM-Ub</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data Collection</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space Group</td>\n      <td>P 41 21 2</td>\n    </tr>\n    <tr>\n      <td>Unit Cell Dimensions</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a b c (\u00c5)</td>\n      <td>94.06 94.06 91.39</td>\n    </tr>\n    <tr>\n      <td>\u03b1 \u03b2 \u03b3 (deg)</td>\n      <td>90 90 90</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>1.5418</td>\n    </tr>\n    <tr>\n      <td>Resolution Range (\u00c5)</td>\n      <td>18.83\u20132.35 (2.44\u20132.35)</td>\n    </tr>\n    <tr>\n      <td>Observations</td>\n      <td>238,917 (24333)</td>\n    </tr>\n    <tr>\n      <td>Unique Reflections</td>\n      <td>17,581 (1749)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>13.6 (13.9)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.4 (96.5)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3 (I)</td>\n      <td>22.1 (3.2)</td>\n    </tr>\n    <tr>\n      <td>Rmerge (%)</td>\n      <td>9.3 (90.8)</td>\n    </tr>\n    <tr>\n      <td>Rpim (%)</td>\n      <td>3.7 (35.9)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>0.999 (0.918)</td>\n    </tr>\n    <tr>\n      <td>Wilson B-Factor (\u00c52)</td>\n      <td>40.1</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree (%)</td>\n      <td>20.6/26.4</td>\n    </tr>\n    <tr>\n      <td>Number of Atoms:</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>2,748</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>97</td>\n    </tr>\n    <tr>\n      <td>Average B-Factor (\u00c52)</td>\n      <td>48.9</td>\n    </tr>\n    <tr>\n      <td>RMSD Bond Lengths (\u00c5)</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>RMSD Bond Angles (deg)</td>\n      <td>1.6</td>\n    </tr>\n    <tr>\n      <td>Ramachandran favored (%)</td>\n      <td>95.9</td>\n    </tr>\n    <tr>\n      <td>Ramachandran allowed (%)</td>\n      <td>4.1</td>\n    </tr>\n    <tr>\n      <td>Clash score</td>\n      <td>4.1</td>\n    </tr>\n  </tbody>\n</table>\n\nUsing the structural information above, we then made mutant versions of CALM ANTH that lacked Ub-binding (Figure 3). We mutated residue F223, since it sits within the hydrophobic interface with Ub, and mutated residues D224 and D276, which make electrostatic interactions with R42 and K48 of Ub (Figure 3B). Binding was first assessed in 15N-Ub HSQC experiments in the presence and absence of wildtype and mutant CALM ANTH domains at a 1:1 ratio. Although wildtype CALM-ANTH caused significant chemical shift perturbations within the 15N HSQC spectra, no perturbations were observed when F223 was altered to Ser or Ala alone or in combination with altering D224R or D276A (Figure 3A). Likewise, no Ub-binding was observed by the double mutant L274A, D276A. These results were confirmed in GST-pulldown experiments using GST fused to five tandem copies of linear Ub (Figure 3C) that bound the wildtype CALM ANTH domain but not a mutant ANTH domain carrying the F223A single substitution or the combined F223S and D224R double substitutions. This region of CALM is highly conserved across a subgroup of ANTH domains that includes Drosophila melanogaster LAP and Saccharomyces cerevisiae Yap1801 and Yap1802. Accordingly, mutation of residues F238 and D239 in LAP, which correspond to F223 and D224 in rat CALM, ablated detectable binding to 15N-Ub as monitored with HSQC experiments (Figure 4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig3-v3.jpg)\n\n**Figure 3.:** (A) Region of HSQC spectra of (30 \u00b5M) 15N-Ub in the absence (green) or presence of wild type CALM ANTH domain (red) or indicated mutants (blue). Clear chemical shift perturbations of 15N-Ub are observed only in the presence of wild type CALM ANTH domain. (B) Cartoon of the CALM:Ub interface that when mutated abolishes Ub-binding. (C) GST pulldown assays of HA-epitope tagged wildtype CALM ANTH domain and the indicated mutant HA-tagged ANTH domains. ANTH domains were allowed to bind GST alone (\u00f8), or GST fused to five linear copies of Ub or fused to Vamp7 (residues 1\u2013188). Pulldowns were performed in the absence or presence (+:1 mg/ml; ++:5 mg/ml) of purified linear Ub (five tandem copies). Samples of Input and GSH-bead bound complexes were resolved by SDS-PAGE and immunoblotted withe \u03b1-HA antibodies.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Structures of CALM alone (PDB:3ZYK; residues 20\u2013286), the CALM:Ub complex PDB:7JXV (middle), and the crystal structure of the CALM ANTH domain in which the C-terminal helical residues are replaced by a portion of VAMP8 to illustrate potential binding site for VAMP8. Position of L219 and M244 are shown in violet spheres that when changed to Ser and Lys, respectively, inhibit binding to VAMP8. (B) Portion of HSQC spectra of 30 \u00b5M 15N-Ub in the absence (green) or presence of either wildtype or mutant ANTH (L219S, M244K) domain at 30 \u00b5M (red) or 60 \u00b5M (blue). No binding of mutant ANTH domain (L219S, M244K) to 15N-Ub was observed.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig4-v3.jpg)\n\n**Figure 4.:** (A) Cartoon representation of the CALM ANTH:Ub crystal structure (PDB: 7JXV) with helices as cylinders highlighting F223 and D224 residues required for Ub-binding (left) compared to model of S. cerevisiae Sla2 ANTH domain (right) generated by threading through the crystal structure of the C. thermophilum homolog of Sla2 (PDB:5OO7). Structurally analogous residues (L212 and D218) are shown in black spheres. (B) PRE effect on Ub by Sla2 binding. Residues undergoing detectable PRE are plotted by residue number. A set of Sla2 ANTH domains with single residues that were spin-labeled with MTSL and used in a series of PRE experiments with 15N-Ub. Left shows detected PRE effects over 1 StDev for the dataset color coded by residue number. Residues absent in the HSQC spectra are designated by white dashed lines. Middle shows relative average peak heights of all HSQC backbone amide peaks of (30 \u00b5M) 15N-Ub in the absence (\u00f8) or presence of reduced MTSL-labeled Sla2 ANTH (in reduced state) at the indicated positions (30 \u00b5M). Right, positions of the MTSL-labels mapped onto the model of Sla2 ANTH domain. (C) GST pulldown assays using GST alone (\u00f8) or fused to wildtype mouse HIP1 or S. cerevisiae Sla2 ANTH domains or the indicated mutants. A mixture of polyubiquitin chains (K63-linked) of different lengths were allowed to bind. Samples of input and GSH-bead-bound complexes were resolved by SDS-PAGE and immunoblotted with \u03b1-Ub antibodies. (D) NMR titrations using 30 \u00b5M 15N-Ub in the presence of increasing concentrations of mutant (L212A, D218A) or wildtype Sla2 ANTH domain. Binding data were analyzed using selective amides detected in the HSQC spectra.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Analysis of Ub-binding by HIP1/Sla2 subfamily of ANTH domains. Left shows structure of the CALM-ANTH:Ub complex marking F223 and D224 responsible for Ub-binding. Right shows human HIP1 (1\u2013309 NCBI: NP_005329.3), human HIP1R (residues 28\u2013296 of NCBI: NP_003950.1), and S. cerevisiae Sla2 ANTH (residues 5\u2013272 of SGD:S000005187) domains modeled on C. thermophilum Sla2 with hydrophobic and acidic residues highlighted that are predicted to be located similarly to F223 and D224 in the CALM ANTH domain. (B) Cartoon representation of C. thermophilum ANTH domain with loop region proposed for the Ub-binding site in HIP1, HIP1R, and Sc Sla2, in violet. (C) Sequence alignment of helix-loop-helix region of the indicated orthologs of HIP1 ANTH domains with a predicted loop and the hydrophobic and acidic residues that are in analogous position in the Ub-binding site of CALM ANTH domain in violet. Residues that were targeted for mutation are shown in black. (D) Yeast 2-hybrid assay of wildtype and indicated mutant HIP1 and HIP1R binding to Ub. Gal4 (DBD) DNA-binding domains (bait) fused to nothing (\u00f8) or the indicated ANTH domains were tested for Y2H interaction with Gal4-transcription activation domain (prey) fused to either nothing (\u00f8) or 2 copies of Ub translationally fused with a 3-spacer linker (diUb). Dilutions of cells were grown on plates that only select for the presence of Gal4-DBD and Gal4(AD) encoding plasmids (SD-L-W) or plates that also select for a positive Y2H interaction that results in production of His3 (SD-L-W-H). (E) Anti-myc immunoblots showing Gal4 (DBD) fusion proteins in strains in (D). HIP1R-ANTH (residues 32\u2013300 of NCBI: NP_003950.1), HIP1 (41\u2013309 of NCBI: NP_005329.3) (F) Predicted structure of YAP1801 and YAP1802 ANTH domains bound to Ub made by threading through the CALM:Ub structure. The residues in Yap1801 and Yap1802 that are analagous to those in CALM required for Ub-binding are indicated. (G) Sequence alignment of highly homologous CALM and YAP1801/2 ANTH domains. Violet region indicates position of loop between helices and bold residues indicate positions of CALM residues responsible for Ub-binding. Arrows point to residues targeted for mutation to ablate Ub-binding in YAP1801 (F213, E214), YAP1802 (F207, E208), and CALM (F223,D224).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Region of HSQC spectra of (30 \u00b5M) 15N-Ub in the absence (green) or presence of wild type LAP ANTH domain (red) from Drosophila (Top); in the presence of 30 \u00b5M LAP ANTH mutant (F237A,D238A); 60 \u00b5M Sla2 ANTH domain from Chaetomium Thermophilium; or mutant Saccharomyces cerevisiae Sla2 ANTH domain (Sla2*\u2206UbL212S, D281R; Sla2\u2206UbL212A, D281A). Clear chemical shift perturbations of 15N-Ub are observed only in the presence of wild type LAP ANTH domain and wild type Sla2 ANTH domain.\n\nThe CALM ANTH domain was shown previously to bind endocytic SNAREs VAMP7 and VAMP8, which is a property conserved by the S. cerevisiae orthologs of CALM, Yap1801, and Yap1802 (Burston et al., 2009; Fujimoto et al., 2020; Koo et al., 2011; Miller et al., 2011). To determine how these v-SNAREs bound CALM, previous studies solved a crystal structure of the CALM-ANTH domain in which the last C-terminal helix of the ANTH domain was replaced with residues 16\u201338 of VAMP8 (PDB:3ZYM). In this structure, the v-SNARE helix sits in the same region as the C-terminal helix of CALM (residues 261\u2013276). This proposed binding mode for v-SNAREs substantially overlaps with that for Ub. Moreover, the binding site for Ub relies on the position of the last helical region of the ANTH domain, whereas this region would have to be dramatically repositioned to allow v-SNARE binding at the site it occupies in the crystal structure (Figure 3\u2014figure supplement 1A). Thus, CALM should not be able to bind simultaneously to v-SNAREs and Ub. In view of this structure, we sought to determine whether the mutations in the CALM-ANTH that ablated Ub-binding did not adversely affect binding of v-SNAREs. This would ensure that functional analysis of the role of Ub-binding using these mutations not complicated by loss of other interactions. Therefore, we performed binding experiments using GST-VAMP7 (Figure 3C). Wildtype ANTH domain as well as ANTH domain containing the F223A mutation or the F223S, D224R double mutation all bound GST-VAMP7. Additionally, inclusion of excess free linear Ub (5 x) chains diminished binding of wildtype ANTH domain on GST-VAMP7 indicating that Ub and VAMP7 binding are mutually exclusive. In contrast, inclusion of 5 x linear Ub chains had no effect on the ability VAMP7 to bind to the mutant ANTH domains that lacked their Ub-binding sites. These results show that the F223A/S, D224R mutations specifically ablate Ub-binding but not v-SNARE binding. Previous studies also identified mutations (L219S and M244K) that ablated binding of CALM to v-SNAREs. However, these mutations also abolished all detectable Ub-binding in NMR HSQC experiments with 15N-Ub (Figure 3\u2014figure supplement 1B). Thus, phenotypes observed from these mutations may not solely be due to loss of v-SNARE binding.\n\n### Ubiquitin binding to HIP1, HIP1R and Sla2 ANTH domains\n\nWe next sought mutations that disrupt Ub-binding in HIP1, HIP1R, and Sla2 ANTH domains, that belong to a different subfamily of ANTH domains (De Craene et al., 2012). This subfamily has limited homology with the Ub-binding region of the CALM-AP180 subfamily and residues that might coordinate Ub-binding in this ANTH subfamily were not obvious by sequence alignment alone. Secondary structure predictions and a solved crystal structure of the Sla2 ortholog from Chaetomium thermophilum (Garcia-Alai et al., 2018), provided a template to model the ANTH domains from HIP1, HIP1R, and Sla2 (Figure 4A and Figure 4\u2014figure supplement 1A-C). These models indicated that the hydrophobic and acidic residues that reside in the loop region of the CALM ANTH domain that connect the penultimate and last \u03b1-helices where Ub binds are analogous to L212, D218 in Sla2; L250, D253 in HIP1; and L241, D244 in HIP1R. This loop region of the C. thermophilum Sla2 ANTH crystal structure was not resolved, likely due to flexibility, and also had the lowest level of conservation in comparison to HIP1/Sla2 family members across other species. For instance, there is no bulky hydrophobic residue at a position analogous to F223 in CALM ANTH as there is in the HIP1, HIP1R, and yeast Sla2, nor is the position of an acidic residue at the edge of the loop. We found that recombinant C. thermophilum Sla2 ANTH domain had negligible binding to Ub, preventing a structural analysis of Ub-binding by this ANTH domain (Figure 4\u2014figure supplement 2).\n\nWe performed a series of PRE experiments to assess whether the site of Ub-binding was within the C-terminal distal portion of the yeast Sla2 ANTH domain as it is in the CALM ANTH domain. A set of Sla2 ANTH proteins each containing a single cysteine residue at different positions were spin-labeled with MTSL and used in HSQC experiments with 15N-Ub in the absence (active spin-labeled) or presence of (reduced and inactive) ascorbate to assess PRE effects (Figure 4B). Spin-labels placed in the N-terminal portion of the Sla2 ANTH domain did not yield PRE effects (Figure 4B, left) despite comparable binding overall to Ub (Figure 4B, middle). In contrast, spin labels in the C-terminal portion of the Sla2 ANTH domain that were near the presumptive Ub-binding site predicated by structure and sequence homology (Figure 4\u2014figure supplement 1A-C) gave strong PRE effects (Figure 4B).\n\nThese data confirmed the model that Ub bound to a similar place in the Sla2 ANTH domain as it does in the CALM ANTH domain. However, without a bonafide structure of ANTH domains from human HIP1, HIP1R, or S. cerevisiae Sla2 we could not accurately deduce an orientation of bound Ub or a high-resolution interface. Therefore, to test our low-resolution model, we assessed the impact of mutating the bulky hydrophobic residue and acidic residues predicted in the same modeled loop region in which the Ub-binding F223 and D224 reside in the CALM ANTH domain. GST-pulldown assays showed that these residues were indeed required for efficient binding of Ub. GST fused to the HIP1 or Sla2 ANTH domain bound K63 linked polyubiquitin chains well (Figure 4C). Altering L250 or D253 to arginines in mouse HIP1 or L212 and D218 to alanines in Sla2 ablated detectable binding. Similarly, the human HIP1 L250S, D253R double mutant or the hHIP1R L241S, D244R double mutant failed to bind di-Ub via a yeast two-hybrid assay, in contrast to the robust interaction observed with wildtype human HIP1 and human HIP1R ANTH domains (Figure 4\u2014figure supplement 1D, E). NMR titrations with mutant L212A, D218A Sla2 ANTH domain showed a > 10 fold loss of apparent Kd for Ub-binding in comparison with wildtype Sla2 ANTH domain (Figure 4D). Even less binding was observed in HSQC experiments when Sla2 ANTH carried an L212S, D218R double mutation (Figure 4\u2014figure supplement 2). This placement of Ub-binding coincides well with the position of the CALM Ub-binding site, which is well conserved in this subfamily of ANTH domain proteins in yeast and Drosophila (Figure 4\u2014figure supplement 1F, G). Together our mutational studies based on structure predictions combined with PRE experiments that verified the proximity of Ub-binding verified a similar binding site in the HIP1/HIP1R/Sla2 subgroup of ANTH domains that is observed in the CALM/LAP/AP180 subgroup of ANTH domains.\n\n### Cargo-specific role for ub-binding by ANTH domains\n\nWe next examined the role of Ub-binding by ANTH-domains in internalization from the cell surface (Figure 5). Many previous studies have found that a variety of components of the internalization machinery possess Ub-binding domains (Figure 5B, and Figure 5\u2014figure supplement 1A), though it is not clear whether these might be functionally confined to only binding Ub-cargo, or fulfill some generalized regulatory function for the internalization process, or be dedicated to another function altogether (Traub and Lukacs, 2007). We pursued this question in yeast, where many aspects of CME are similar to that of animal cells and offer the capacity of combining systematic mutations in multiple proteins expressed from their endogenous loci (Kaksonen and Roux, 2018; Mettlen et al., 2018).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig5-v3.jpg)\n\n**Figure 5.:** (A) Schematic of Ste2. Full-length Ste2 (upper) has redundant internalization signals: lysine (K) residues serve as acceptors for ubiquitination and an NPFXD-like motif (residues 392\u2013396) that allows for Ub-independent internalization. Also shown is the serine-containing region (residues S-331-INNDAKSS) that undergoes ligand dependent phosphorylation that is required for ligand-stimulated internalization. (B) Schematic of cellular machinery that catalyzes clathrin-associated internalization in yeast, with proteins arriving earliest to the site of internalization placed closer to the plasma membrane. Proteins highlighted with a yellow border are those identified in this and previous studies as harboring Ub-binding domains. (C) Internalization assays following localization of Rhodamine(RhD)-labeled \u03b1-factor bound to the surface of cells at 0 \u00b0C for 1h, washed and then allowed to warm to 20 \u00b0C during imaging. Sample micrographs of deconvoluted images of yeast expressing Ste2-\u2206C allowed to endocytose \u03b1-factorRhd for 0, 10, and 22 min at 20 \u00b0C. (D) Quantitative assays were performed in wildtype yeast strains expressing the indicated forms of Ste2. Image stacks of cells throughout the time course were collected, deconvolved, and quantified for the percentage of fluorescence at the cell surface. Data were fit to a one-phase exponential decay and normalized to the 0 time point. Insert at right shows the mean \u00b1 StDev level of normalized \u03b1-factorRhd at the plasma membrane 10 min after warming. Statistical significance of indicated pairs were calculated using one-way ANOVA for all conditions (p: \u2265 0.05 = \u00f8, \u2264 0.05 = *, \u2264 0.01 = **, \u2264 0.001 = ***, \u2264 0.0001 = ****) (E) Internalization of \u03b1-factorRhd by Ste2-\u2206C in yeast strains carrying the indicated mutations. Fitted lines to data normalized to the 0 time point. The proportion of surface-localized \u03b1-factorRhd at 10 min (mean \u00b1 StDev) is also shown. (F) Internalization of \u03b1-factorRhd by Ste2-8K > R in yeast strains carrying the indicated mutations.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic of yeast proteins involved in internalization that have Ub-binding domains (yellow). (B) Micrographs of \u03b1-factorRhd bound to cells expressing the indicated forms of Ste2 that were labeled with \u03b1-factorRhd at 0 \u00b0C and allowed to internalize for 0 min or 10 min at room temperature. (C) Kinetics of internalization of \u03b1-factorRhd using the indicated Ste2 reporter proteins in strains carrying the indicated mutations. Shown are the rate of cell surface loss fitted to a one-phase decay that is co-plotted with individual data values from different cells analyzed through multiple time courses. Mean \u00b1 StDev of the level of \u03b1-factorRhd at the cell surface after 10 min or >18 min along with comparisons after one-way ANOVA are shown (p: \u2265 0.05 = \u00f8, \u2264 0.05 = *, \u2264 0.01 = **, \u2264 0.001 = ***, \u2264 0.0001 = ****).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72583/elife-72583-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Schematic of Ste2 with designated mutations in the cytosolic tail and depicting placement of GFP pHluorin (GFPpH). (B) Micrographs of \u03b1-factorRhd bound to cells expressing the indicated forms of Ste2 that were labeled with \u03b1-factorRhd at 0 \u00b0C and allowed to internalize for 0 min or 10 min at room temperature. Images show localization of \u03b1-factorRhd and GFP fluorescence for those cells expressing pHluorin-tagged Ste2. (C) Explanation of steps to quantify cell surface and intracellular amount of \u03b1-factorRhd from image stacks collected by epifluorescence that are subsequently deconvolved, split into regions of interest, and quantified.\n\nInternalization in yeast can be followed by ligand-stimulated internalization of the \u03b1-factor receptor, a GPCR that undergoes ligand-dependent phosphorylation that then allows its ubiquitination and endocytosis (Hicke et al., 1998; Rohrer et al., 1993). Previous studies have shown that Ste2 can use Ub as an internalization signal and/or NPFxD-like sequence, the latter of which binds to an Sla1-homology domain in Sla1 (Howard et al., 2002). Ste2 lacking its NPFxD motif, made by truncation at residue 365, relies on ubiquitination for an internalization signal. Whereas Ste2 lacking ubiqitinatable lysines in its C-terminal tail relies on Ub-independent/NPFxD-mediated internalization via Sla1 binding (Figure 5A). We reasoned that if Ub-binding ANTH domains served as specific adaptors to internalize ubiqutinated cell surface proteins, loss of Ub-binding would cause defects in Ub-dependent internalization of Ste2 without affecting NPFxD-dependent internalization of Ste2. If instead, Ub-binding served a general regulatory role for the internalization apparatus, loss of Ub-binding would impose defects on both Ub-dependent and Ub-independent routes of Ste2 internalization.\n\nTo measure internalization, we followed the subcellular distribution of a synthetic \u03b1-factor peptide that was conjugated to rhodamine (\u03b1-factorRhD). Previous experiments indicated that the central lysine (K7) of \u03b1-factor likely points away from the ligand binding site in Ste2, allowing it to carry a fluorescent dye without loss of activity (Naider and Becker, 2020). In addition, norleucine was substituted for Met12 in \u03b1-factor, making it resistant to inactivation by oxidation. Cells kept at 0 \u00b0C were labeled with \u03b1-factorRhD, washed in cold buffer and warmed while imaged by epifluorescence microscopy (Figure 5C). Deconvolved images were measured for the amount of fluorescence remaining at the cell surface and data were fit to a single exponential decay. As expected, internalization of wildtype Ste2 was rapid and complete within 10 min (Figure 5D and Figure 5\u2014figure supplement 1B, C). In contrast, truncated Ste2 lacking its NPFxD-like motif yet still possessing ubiquitinatable lysines (Ste2-\u2206C), had an intermediate rate of internalization. Likewise, Ste2 containing an intact NPFxD motif but carrying K > R mutations (Ste2-8K > R) within its cytosolic domain also internalized at an intermediate rate, though somewhat slower than the truncated Ste2. In contrast, a truncated mutant Ste2 lacking its NPFxD motif and its C-terminal ubiquitinatable lysines (Ste2-\u2206C,8K > R) showed almost no internalization. Expression of Ste2 variants was done from the STE2 loci rather than low-copy plasmids, which produced high variability in the level of surface labeling with \u03b1-factorRhD.\n\nWe assessed strains which carried mutations in their endogenous loci that inactivated Ub-binding in Sla2 (Sla2\u2206Ub: L212A, D218A), Yap1801 (Yap1801\u2206Ub: F213A, E214S) and Yap1802 (Yap1802\u2206Ub: F207A, E208A). When all these mutations were combined (3xANTH\u2206Ub), internalization assays showed that \u03b1-factorRhD uptake by Ste2 via its Ub-dependent (Ste2-\u2206C) (Figure 5E and Figure 5\u2014figure supplement 1B-C) or Ub-independent routes (Ste2-8K > R) (Figure 5F and Figure 5\u2014figure supplement 1B, C) was unaffected. We then combined these mutations with ones in other Ub-binding proteins that participate in internalization. Previous studies showed that Ent1 and Ent2 each possess 2 UIM (Ub-Interaction Motifs) whereas Ede1 contains a C-terminal UBA (UB-Associated) domain. Combined loss of Ub-binding activity of Ent1/2 and Ede1 had no effect on \u03b1-factorRhD internalization (Figure 5E) in agreement with previous studies (Dores et al., 2010). Likewise, loss of Ub-binding by Ede1 or loss of Ub-binding in both Ent1 and Ent2 had no affect on internalization when each was combined with loss of Ub-binding in all ANTH domains. In contrast, marked reduction in \u03b1-factorRhD internalization by Ste2\u2206C was observed in strains carrying all of these mutations in which Ub-binding mutations in Ent1/2 and Ede1 were combined with Ub-binding mutations in all of the ANTH domain proteins, Sla2, Yap1801, and Yap1802 (Figure 5E and Figure 5\u2014figure supplement 1C). Thus, all the Ub-binding domains we evaluated appear to contribute redundantly to internalization of Ste2\u2206C, which uses ubiquitination as its internalization signal. We also assessed the effect of these mutant combinations on the internalization of Ste2-8K > R, which has an NPFxD interanalization motif. Here, combined loss of Ub-binding by the three ANTH domains in addition to Ent1/2 and Ede1 had no effect on \u03b1-factorRhD internalization (Figure 5F). Thus, the combination of mutations that inactivated Ub-binding by a whole cohort of Ub-binding proteins was selective for a cargo that uses Ub as an internalization signal, demonstrating that the general ability of cells to execute and regulate internalization was largely intact.\n\nWe did note that while internalization of Ste2-\u2206C in the combined 3xANTH\u2206Ub, Ent1/2\u2206Ub, Ede1\u2206Ub mutant was greatly slowed (Figure 5E), it was not reduced to the level of Ste2-\u2206C,K > R lacking Ub and NPFxD internalization signals altogether (Figure 5D). One possibility is that the mutations we used to inactivate Ub-binding by Sla2 ANTH (Sla2\u2206Ub: L212A,D218A), which diminished the Kd of Ub-binding by 10 fold (Figure 4D), were not severe enough to ablate all functional Ub-binding. Thus, we also analyzed an alternative mutant of Sla2 ANTH (Sla2*\u2206Ub: L212S,D218R) with even weaker binding to Ub (Figure 4\u2014figure supplement 2). However, in the context of combined mutations in the Ub-binding domains of Yap1801, Yap1802, Ent1/2 and Ede1, the Sla2*\u2206Ub mutant (L212S, D218R) did not reduce internalization beyond what was observed for the Sla2\u2206Ub (L212A,D218A) mutant in the same context (e.g. 3xANTH\u2206Ub, Ent1/2\u2206Ub, Ede1\u2206Ub) (Figure 5\u2014figure supplement 1).\n\n## Discussion\n\nOur data show that ANTH domains bind Ub and that this plays a role in endocytosis. Our functional data show that a set of Ub-binding domains found within several components of the endocytic apparatus can work together to recognize and internalize ubiquitinated cell surface proteins.\n\nThe three ANTH domain-containing proteins in yeast are Sla2 (the ortholog of human HIP1 and HIP1R) and Yap1801 and Yap1802 (orthologs of human AP180 and CALM). Sla2 plays a major role in internalization in yeast and its loss causes severe defects in the internalization of proteins and lipid dyes and disrupts the ordered assembly of the endocytic apparatus and transition to actin polymerization (Brach et al., 2014; Kaksonen et al., 2003; Newpher et al., 2005; Skruzny et al., 2015; Wesp et al., 1997). Sla2 forms a complex with Ent1/2 (yeast Epsins) that can bridge PtdIns(4,5)P2-containing membranes with the actin cytoskeleton via its PtdIns(4,5)P2-binding ANTH domain and C-terminal THATCH domains, respectively (Skruzny et al., 2015). Sla2 arrives early in the assembly process and remains during actin polymerization making it a plausible candidate cargo receptor. Yap1801 and Yap1802 play a more nuanced role in internalization. Both localize with clathrin at the cell surface and arrive in the early phase of CME assembly (Carroll et al., 2012). Loss of both has no effect on GPCR internalization but does cause accumulation of the v-SNARE Snc1 at the cell surface implying they work as dedicated cargo-specific adaptors for a subset of proteins (Burston et al., 2009; Huang et al., 1999; Maldonado-B\u00e1ez et al., 2008). More severe phenotypes are revealed when yap1801/2\u2206 double deletion mutations are combined with other mutations in the endocytic apparatus suggesting that these proteins may provide additional functions made redundant in the context in wild type cells with a full complement of endocytic machinery (Dores et al., 2010; Maldonado-B\u00e1ez et al., 2008). Nonetheless, these earlier results suggested that YAP1801/2 play some role in supporting the ability of the CME apparatus to mediate Ub-dependent internalization.\n\nOur studies, that combined precise mutations within genes at their endogenous loci while also following internalization of a cargo protein constrained to rely on Ub as an internalization signal, reveal a role of ANTH-domain proteins receptors/adaptors for ubiquitinated proteins. An alternative idea for the role of Ub-binding within the internalization apparatus is that it is used to control the assembly and activity of the CME machinery. This idea is supported by experiments that show general defects in endocytosis resulting from deleting Ub-domains in combination with loss of other genes and by the observation that the endocytic machinery also can undergo ubiquitination itself (Dores et al., 2010; Maldonado-B\u00e1ez et al., 2008; Polo et al., 2002; Savio et al., 2016; Sugiyama et al., 2005; Tanner et al., 2019; Weinberg and Drubin, 2014; Woelk et al., 2006). In some ways, these ideas may be a false dichotomy in view of studies that show cargo itself can influence the assembly process, providing a way that recognition of Ub as an internalization signal is the mode through which Ub-binding domains control assembly (Carroll et al., 2012; Henry et al., 2012; Loerke et al., 2009; Maib et al., 2018; Pedersen et al., 2020; Puthenveedu and von Zastrow, 2006). The presence of Ub-cargo might help form endocytic vesicles of different constituents that can determine different fates (Sigismund et al., 2021), or drive more processive assembly of clathrin-coated vesicles by satisfying cargo checkpoints that Ub-binding components control (Chen and Schmid, 2020). Our data help distinguish a clear role for Ub-binding as a way to recognize Ub as a discrete internalization signal. This conclusion rests on the observation that eliminating Ub-binding sites in ANTH domains in addition to other CME components specifically inhibits internalization of Ub-cargo while leaving endocytosis of proteins that rely on other internalization motifs unperturbed. The functional effect we tested was at the level of cargo internalization. Yet, there may well be many alterations in the assembly kinetics of the endocytic apparatus (Kaksonen and Roux, 2018; Mettlen et al., 2018) that result from altering multiple Ub-interactions which are not apparent when singly eliminated (Lu and Drubin, 2017). Such alterations might not dramatically affect the overall internalization of cell surface proteins since yeast cells lacking multiple components of the endocytic apparatus display measurable changes in the assembly of the actin-based internalization machinery yet internalize proteins and lipophilic dyes (e.g. FM4-64) relatively well (Brach et al., 2014; Prosser et al., 2011). Thus, a deeper analysis of how the assembly process could be altered in these combinatorial mutants will be important to assess other roles for Ub-binding. The identification of additional Ub-binding sites within the CME apparatus coupled with a variety of new tools for locally perturbing ubiquitination (Huang et al., 2013; Stringer and Piper, 2011; Wu et al., 2020) as well as a wealth of high-resolution approaches that examine the assembly and architecture of CME (Kaksonen and Roux, 2018; Mettlen et al., 2018) can enable those investigations. In addition, the ability to better perturb endocytosis of proteins that use Ub as an internalization signal provides a way to determine how prevalent and biologically important the use of Ub as internalization signal actually is. For instance, one aspect of CALM function is that it is correlated with Alzheimer\u2019s Disease in GWAS studies (Harold et al., 2009). Perturbing CALM experimentally alters the trafficking of proteins associated with driving Alzheimer\u2019s Disease pathogenesis and it will be of interest to determine whether some of those effects are due to the function of CALM as an adaptor for ubiquitinated proteins (Harel et al., 2011; Kanatsu et al., 2016; Kanatsu et al., 2014; Moreau et al., 2014; Wu et al., 2009).\n\nIn mammalian cells, the Ub-binding Eps15 and especially Epsin1 proteins appear to contribute to recognition of Ub as an internalization signal, with the most compelling experiments involving specific defects in the internalization process that can be correlated with specifically altering Ub-binding domains (Barriere et al., 2006; Bertelsen et al., 2011; Chen et al., 2011; Fortian et al., 2015; Gucwa and Brown, 2014; Hawryluk et al., 2006; Kazazic et al., 2009; Szymanska et al., 2016; Vuong et al., 2013; Wang et al., 2006). The ability to follow cargo internalization vs post-internalization processes such as delivery to the vacuole or decreased recycling is more challenging in yeast. However, endocytosis of one Ub-cargo in yeast is particularly reliant on Ub-binding by Epsin (Ent1/2), further supporting the idea it might work as a Ub-dependent adaptor (Sen et al., 2020). For other yeast cargo such as Ste2, removing Ub-binding from Ede1 and Ent1/2 together has no effect on internalization (Dores et al., 2010), unless also combined with eliminating other Ub-binding sites in ANTH domains as shown here. Future work is required to find how mammalian ANTH-domain containing proteins cooperate with Eps15 or Epsin to internalize Ub-cargo and whether that balance is universal or tissue and cargo specific. A possibility emerges that the combination of ENTH and ANTH domain proteins converge to form the core Ub-recognition machinery for CME. Indeed, Ent1/2 and Sla2 collaborate to form a coated structure complex catalyzed around PtdIns(4,5)P2 (Garcia-Alai et al., 2018; Lizarrondo et al., 2021; Skruzny et al., 2015). Although there are differences between the respective yeast and human orthologs, Epsin and Hip1R form oligomers as well (Garcia-Alai et al., 2018; Messa et al., 2014). In addition, although the other subfamily of ANTH domains in proteins such as AP180 and CALM do not readily form oligomers in vitro with Epsin/Ent1,2, they have similar assembly kinetics and occupy the same region within forming clathrin-coated vesicles as Epsin/Hip1R determined by CLEM and FRET studies (Brach et al., 2014; Skruzny et al., 2020; Sochacki et al., 2017).\n\nDespite our ability to specifically slow Ub-mediated internalization of a cargo that exclusively relies on Ub as an internalization signal, the residual rate was still higher than that of cargo stripped of its ubiquitinatable lysine residues. This implies there are additional Ub-receptors. We found no evidence that the Ub-binding component Lsb5 (Costa et al., 2005) fulfilled that role (Figure 5\u2014figure supplement 1C) leaving the most likely candidate to be Sla1, which harbors an SH3 domain that binds Ub (He et al., 2007; Stamenova et al., 2007). Sla1 interacts with Sla2 and serves as the receptor for NPFxD internalization motifs, which operates in full-length Ste2, so it is positioned effectively in the CME assembly cascade to also work as a bonafide Ub-adaptor (Gourlay et al., 2003; Howard et al., 2002; Sun et al., 2015). One of the issues that arises from this study is why there are many Ub-binding domains. Other cellular machines that process ubiquitinated proteins also possess multiple Ub-binding sites, including the proteasome, which degrades ubiquitinated cytosolic proteins (Sahu and Glickman, 2021), and the ESCRT machinery, that sorts ubiquitinated proteins into endosomal intralumenal vesicles (Piper et al., 2014). Many of the same hypotheses to explain multiple Ub-binding interfaces in these complexes are also plausible for the internalization apparatus. One possibility is that different types of Ub-cargo are optimally captured by different Ub-binding components. These differences could be due to where the Ub moiety is in proximity to the membrane or be due to the type of Ub linkage on the cargo. Although mono-Ub as well as different poly-Ub topologies can serve as internalization signals (Boname et al., 2010; Goto et al., 2010; Lauwers et al., 2010; Okiyoneda et al., 2010; Traub and Lukacs, 2007), each might require specific Ub-binding components to sort cargo efficiently into forming CCVs (Clathrin-coated vesicles). Where Ub is attached onto cargo might also play a role. ANTH domains orient with their N-termini near the membrane, by binding PtdIns(4,5)P2 (Ford et al., 2001; Miller et al., 2011; Sun et al., 2005) as well as binding either similarly tethered Ent1 or Epsin (Garcia-Alai et al., 2018; Itoh et al., 2001; Lizarrondo et al., 2021; Messa et al., 2014; Skruzny et al., 2015) or inserting an N-terminal helix into the lipid bilayer (Miller et al., 2015). This would serve as a mechanism to space the Ub-binding domains at a set distance from the membrane and be contained within the clathrin lattice where they would be constrained to interact with Ub near the membrane. In contrast, other Ub-binding domains in Ent1/2 and Epsin or Ub-binding sites in Ede1 and Eps15 (Figure 5\u2014figure supplement 1A) lie within long flexible regions that could sample Ub attached at a number of positions on the cytosolic regions of cargo. Another possibility is that the ability of these proteins to work as adaptors to bring Ub-cargo into an internalization site may actually reflect a secondary function revealed experimentally when other mechanisms for Ub-cargo sorting are eliminated. That is, these Ub-binding proteins might serve as cargo sensors, recruited or stabilized by Ub-cargo to allow CCVs to be programed with a different cohort of adaptors that determine different internalization routes (Cao et al., 1998; Fortian et al., 2015; Mundell et al., 2006; Pascolutti et al., 2019), recruit additional proteins that work downstream and direct different endocytic fates of their cargo (Gucwa and Brown, 2014; Manna et al., 2015; Mayers et al., 2013; Rai et al., 2014; Roxrud et al., 2008; Sigismund et al., 2008), or to alter assembly dynamics to hasten CCV completion and extinguish signaling which might otherwise be enhanced by extended clathrin-coated pit lifetimes (Eichel et al., 2016; Flores-Otero et al., 2014). Finally, these Ub-binding proteins may be uniquely important for roles outside the internalization apparatus, such as transcription, autophagy and endosomal function (Borlido et al., 2009; Brodsky et al., 2014; Moreau et al., 2014; Tian et al., 2013; Tsushima et al., 2013; Wilfling et al., 2020).\n\n## Materials and methods\n\n### Reagents\n\nPlasmids used for protein expression are described in Supplementary file 1. E. coli bacteria were grown in LB media or 2xYT media. Yeast strains were grown in standard synthetic media (SD) or rich media (YPD). Yeast strains used in this study are described in Supplementary file 2. Plasmids were made by Gibson assembly cloning (NEB BioLabs, Ipswich, MA). Synthetic DNA fragments were obtained from IDT (Coralville, IA). Plasmid point mutations were generated using Pfu Ultra polymerase by Quick Change PCR mutagenesis (Agilent Technologies, Santa Clara, CA). The resulting DNA constructs and strains were verified by DNA sequencing.\n\nThe antibodies used were: monoclonal anti-His THE HIS Tag (GenScript, Piscataway, NJ); monoclonal anti-HA (BioLegend, San Diego, CA); monoclonal anti-Ub P4D1 (Santa Cruz Biotechnology Inc, Santa Cruz, CA); polyclonal anti-c-Myc (QED Bioscience Inc, San Diego, CA). The \u03b1-factorRhd peptide was custom synthesized by LifeTein LLC, Hillsborough, NJ: W-H-W-L-Q-L-K-(Ahx-TAMRA)-P-G-Q-P-Nle-Y where Nle is norleucine, Ahx is aminohexanoic acid and TAMRA is tetramethyl Rhodamine. The peptide was resuspended in DMSO as 10 mg/ml stock kept at \u201320 \u00b0C. For NMR PRE experiments, MTSL [S-(1-oxyl-2,2,5,5-tetramethyl-2,5-dihydro-1H-pyrrol-3-yl)methyl methanesulfonothioate] was used as a niroxide spin label of proteins with single Cysteine (TRC Inc, Toronto, Canada).\n\n### Fluorescence microscopy and \u03b1-factorRhd internalization\n\nWe initially used Ste2 fused to the pH-sensitive GFP, pHluorin, which could be extinguished upon delivery to the slightly acidic vacuole (Miesenb\u00f6ck et al., 1998; Prosser et al., 2016). However, our preliminary experiments using dual-labeling with the addition of \u03b1-factorRhD indicated that while pHluorin did not confer an acceptor site that could promote internalization, the presence of pHluorin slowed uptake of \u03b1-factorRhD by Ste3-\u2206C and the conditions we used did not fully quench fluorescence in the vacuole, prompting us to use untagged Ste2 mutants (Figure 5\u2014figure supplement 1A, B).\n\nImages were acquired using Olympus fluorescent microscope BX60 controlled by iVision software (BioVision Technologies) and equipped with UPlanSApo100\u00d7/1.40 oil objective and Hamamatsu Orca-R2 digital camera (Hamamatsu, JP).\n\nTo define plasma membrane localization, yeast strains were expressing pFur4-GFP missing 60 a.a. at the N-terminus and thus failed to internalize (Marchal et al., 2000). Cells were grown overnight at 29 \u00b0C in liquid synthetic SD-Ura-Met media to OD600 = 0.2\u20130.4, spun down (1\u20131.5 ml) and resuspended in 300\u2013500 \u00b5l SD media pH = 6.7.\n\nThe aliquot of 50 \u00b5l cells was transferred in small glass tube pre-chilled on ice with added 5 \u00b5l BSA (10 mg/ml stock) and 1 \u00b5l \u03b1-factorRhd peptide (1 mg/ml sock in H2O), covered from light and incubated 1 hr on ice mixing occasionally. Labeled cells were spin-washed at 2 \u00b0C in Eppendorf tubes with ice-cold SD media 3 \u00d7 1 ml then resuspended in 20 \u00b5l SD media. Labeled cells kept on ice protected from the light up to 2 hr while 2 \u00b5l aliquots were taken and applied on a pre-chilled glass slide to initiate a microscopy time series. Images were taken at 20 \u00b0C with the time zero delayed by 30 s to allow cells to warm and to focus on cells. For each timepoint, the field of view was changed to prevent photobleaching. Five-slice images stacks with GFP and Rhodamine channels taken at 0.3 \u00b5m intervals were obtained using 1 s exposure times for each channel. For each strain time course, 500\u2013800 cells were imaged over >5 time-course runs and >5 experiments.\n\nImage stacks were deconvoluted, then analyzed and quantified for inner (internalized) vs. plasma membrane (PM) localized \u03b1-factorRhd as ROIs using Fiji (Schindelin et al., 2012) as outlined (Figure 5\u2014figure supplement 1C) using the scripts in supplemental materials (Source code 1). Ratio data of PM/Total fluorescent intensity for each cell and each strain from multiple experiments were extracted to Excel, combined and re-grouped by time points then normalized to the zero timepoint. Source data 2 were plotted and fit to non-linear fit one phase decay in Prism (GraphPad Software, San Diego, CA). One-way ANOVA statistical tests were performed for data at individual timepoints. Calculation of cell surface vs internal fluorescent \u03b1-factor ratios were determined by an observer blinded to the sample identity.\n\n### Recombinant protein purification and crystallization\n\nANTH domain proteins and GST fusion proteins were expressed in E. coli BL21(DE3) strain upon induction with 0.5 M IPTG at 18 \u00b0C for 20 hr in LB media supplemented with ampicillin. Cells were lysed by French Press or OneShot cell disruptor (Constant Systems) in 287 mM NaCl, 2.7 mM KCl, 12 mM NaPO4 buffer pH 7.4 and protease inhibitors (Complete EDTA-free, Roche). 6xHis tagged proteins were purified using Talon Co2+ affinity resin (Takara Bio, USA) and eluted with 150 mM Imidazole in the lysis buffer pH 7.8. GST fusion proteins were purified over Glutathione (GSH) beads (GE Healthcare Biosciences, Pittsburg, PA) in PBS buffer supplemented with protease inhibitors and eluted with 20 mM GSH in PBS pH 7.4. Ub was purified as described previously (Pashkova et al., 2010).\n\nFor crystallization, CALM ANTH domain and Ub proteins were further purified on a HiLoad 16/60 Superdex 200 column (GE Healthcare Biosciences, Pittsburg, PA) equilibrated with 20 mM HEPES-NaOH, 150 mM NaCl buffer pH 7.3. Crystallization samples were obtained by combining two proteins CALM ANTH (33 mg/ml) and Ub (21 mg/ml) at molar ratio 1:1 at 20 \u00b0C. Co-crystals were grown by the hanging drop vapor diffusion method at 4 \u00b0C mixing equal amount of the CALM ANTH:Ub protein complex and reservoir solution containing 0.2 M NaCl, 20 % (w/v) Polyethylene glycol monomethyl ether 2,000 and 0.1 M MES monohydrate pH = 6. In 2 weeks, thick rod-shaped crystals appeared and were flash-cooled in liquid nitrogen directly from the crystallization solution. X-ray diffraction data of the crystal mounted frozen in a nitrogen gas stream at 100\u00b0K were collected to 2.4 \u00c5 on an \u2018in house\u2019 Rigaku RU-H3R X-ray machine with RAXIS-IV++ image plate detectors (University of Iowa, Protein Crystallography facility). Data were processed using XDS (Kabsch, 2010) and AIMLESS (Evans, 2011). Processing statistics are summarized in Table 1. Structure of CALM ANTH in complex with Ub was solved by molecular replacement with PHASER (McCoy et al., 2007) using published CALM structure PDB:1HF8 and Ub structure PDB:1UBQ as a starting model. Phenix.autobuild and phenix.refine were used to build and refine the model. Coot and PyMOL (The PyMOL Molecular Graphics System, Version 2.0 Schr\u00f6dinger, LLC) were used to manually fit the structure and generate the structural figures. Software used in this project was curated by SBGrid (Morin et al., 2013).\n\n### NMR binding experiments\n\n15N/1H HSQC spectra of 15N-HIP1 ANTH with or without addition of native Ub, and 15N-Ub in presence of binding ANTH proteins or alone were collected at 25 \u00b0C on a Bruker Avance II 800 MHz spectrometer. Protein samples were prepared in 50 mM NaCl, 40 mM NaPO4, pH 6.95 (NMR buffer). Data were analyzed with SPARKY (T. D. Goddard and D. G. Kneller, SPARKY 3, UCSF, CA) and NMRView (One Moon Scientific, Westfield, NJ). Chemical shift perturbations were measured by comparing peak positions to 15N-Ub alone using ((0.2\u2206N2 + \u2206H2)1/2) to map residues in and near the interface Ub uses to bind ANTH domains. binding affinities were obtained by using the peak intensities of Ile30 of 15N-Ub in 15N/1H HSQC spectra collected in the presence of various concentrations of the Ub-binding protein ANTH domain (WT or mutant). The bound fraction was calculated by measuring the difference in the peak intensity in the absence (free form) and presence (bound form) of the Ub-binding protein, then divided by the peak intensity of the free form. These data were then fitted to a standard quadratic equation using GraphPad Prism (GraphPad Software) as reported previously (Briggs et al., 2016). The standard deviation from data fitting is reported. Every binding affinity experiment shown is a separate titration curve using the indicated ratios of proteins. To measure Paramagnetic Relaxation Enhancement (PRE) effects, mutant ANTH domain proteins containing a single cysteine at different positions were created. The Talon resin purified proteins were incubated with 1 mM MTSL in the elution buffer 18 hrs at 4 \u00b0C, then dialyzed into NMR buffer. For each spin-labeled Cys mutant protein sample, two HSQC spectra were collected with addition of 15N-Ub at 30 \u00b5M for two NMR samples. One sample had MTSL in the oxidized state, whereas second sample contained MTSL reduced by 5 mM sodium ascorbate as described (Pashkova et al., 2013). The degree of PRE effects was calculated as ratio of a particular residue peak intensity in the oxidized vs. reduced protein sample.\n\n### Yeast strain construction\n\nTo generate yeast strains with genome-integrated versions of ANTH domain proteins containing Ub-binding site mutations, these following genes were cloned into pRS306 (Sikorski and Hieter, 1989), cut as listed below and sequentially recombined into yeast cells to URA+: For YAP1801 F213A, E214S: p6305 was cut with AleI. For YAP1802 F207A, E208A: p6306 was cut with PacI. For Sla2 L212A, D218A: p6307 was cut with XhoI. To obtain yeast that removed out URA3 by spontaneous recombination (loop out), cells were plated on SD media containing 5-Fluoroorotic Acid.\n\nTo alter STE2, a KanMX DNA fragment from pUG6 (G\u00fcldener et al., 1996) and STE2 wild type or a mutant ste2 DNA fragment were amplified and recombined into a strain, colonies selected on YPD + G418 and checked for negative growth on SD-Leu.\n\nTo make yeast strains with integrated Ent1 and Ent2 UIM mutants, wild type Ent1 and Ent2 from yeast genomic DNA and the mutant UIM region from gene synthesized DNA were PCR amplified and assembled into pRS306 linearized with NotI/XhoI. For ent1\u2206UIM, p6712 was linearized with SpeI; for ent2\u2206UIM p6713 with NotI. Ura + transformants were then selected for Ura- loopout colonies by growth on SD-5FOA.\n\nFor yeast with integrated Ede1\u2206UBA (\u2206K1342-stop), URA3_LoxP cassette was PCR amplified from pUG72 for recombination into the EDE1 locus at the 3\u2019 end of the coding region. Colonies were selected on SD-Ura-Met plates. Recombination of the LoxP_URA3_LoxP site was induced with pPL5608_TEF1*-Cre_TRP1 (MacDonald and Piper, 2015). To make pGAD with human HIP1 and human HIP1R, corresponding ANTH domain was PCR amplified from human ORFeome library (Transomic Technologies) and assembled into p5808 cut (Peterson et al., 2018).\n\n### Protein binding assays\n\nPurified HA- or 6xHis-tagged recombinant proteins were incubated 1 hr at 20 \u00b0C with 0.1 mg of GST or GST fusion proteins bound to GSH beads (50 \u00b5l per sample) in PBS buffer in presence of 0.01 % Triton X100 and 0.1 mg BSA and casein, as described in Pashkova et al., 2013. After spin-wash, protein complexes were eluted from the beads with 40 mM GSH in PBS pH 7.4, resolved on SDS-PAGE then subjected to Western blotting analysis. Raw data available in Source data 1.\n\n### Yeast two-hybrid test\n\nYeast MAT A (strain Y3581) expressing Gal4-BD diUb fusion protein from p5643 was grown on SD-Trp agar media. MAT \u03b1 Y5725 yeast expressing Gal4-AD ANTH domain fusion proteins (wild type or mutants) from p6968, p6969, p7026, p7027 were grown on SD-Leu agar media. After mating on YPD plate, diploids were grown on SD-Leu-Trp at 28 \u00b0C and tested for ability to grow in absence of His and in the presence of 3-amino-triazole in the growth media (Pashkova et al., 2016). Raw data available in Source data 1.\n",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "1b54a514-914a-43b0-b0d4-670835bdfcd7",
+      "submission_id": "b2aef794-6ea3-419a-8b80-c6a084db5f12",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wade Harper, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72583.sa0](https://doi.org/10.7554/eLife.72583.sa0)\n\nThis manuscript describes application of x-ray crystallography and NMR spectroscopy to define how ANTH domains, which are present in endocytic machinery, bind to ubiquitin. The structural study is well-done, and results extended to the domain family by using well designed, structure-based amino acid substitutions. The Ub-binding surface was found to overlap with that used to bind VAMP8 but the authors identify mutations that retain this interaction while losing binding to Ub. These mutations are then used in yeast-based functional assays to provide new insights into Ub-dependent internalization. This study is an impressive tour de force.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Wade Harper, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72583.sa1](https://doi.org/10.7554/eLife.72583.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"ANTH domains within CALM, HIP1R, and Sla2 recognize ubiquitin internalization signals\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Cynthia Wolberger as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Florian Wilfling (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nOverall, the reviewers feel that the paper is important and interesting. The reviewer's feel that 2 points need additional attention.\n\n(1.) The authors do not provide data on how much the additional effect of the ANTH domain on Ub-binding compared to previously described Ub-domains in Ede1, Ent1 and Ent2 is. Internalization of fluorescence \u03b1-factor by the Ub-dependent STE2-\u2206C in Figure 5E should be performed and compared to ede1\u2206UBA ent1\u2206Ub ent2\u2206Ub to estimate the additional effect of the 3xANTH\u2206Ub combination. This seems critical to the conclusions of the paper.\n\n(2.) The PDF version of the submitted paper had multiple issues related to missing or out of order figures, and figures that were not described appropriately. These are detailed by the comments of reviewer 1. Careful consideration of this will be important.\n\nThe reviewer comments below also contain a number of issues that can be addressed by changes to the text or figures but that do not require additional experiments. We look forward to seeing the revised version.\n\nReviewer #1:\n\nThis manuscript describes application of x-ray crystallography and NMR spectroscopy to define how ANTH domains, which are present in endocytic machinery, bind to ubiquitin. The structural study is well-done, and results extended to the domain family by using well designed, structure-based amino acid substitutions. The Ub-binding surface was found to overlap with that used to bind VAMP8 but the authors identify mutations that retain this interaction while losing binding to Ub. These mutations are then used in yeast-based functional assays to provide new insights into Ub-dependent internalization. This study is an impressive tour de force.\n\nSome suggested textual changes are made below to make the manuscript more accessible to a general audience and easier to follow.\n\nFigure 1D \u2013 the amino acids for which data is not available (such as Prolines) should be indicated as such on the surface diagrams and also in Supplementary Figure 1A.\n\nThe reference for Figure 2C at the bottom of p. 5 (pdf file) is missing. Including amino acid #s would also be helpful.\n\nIssues with figure referencing made this manuscript challenging to follow. The figures are out of order, some panels not referenced, Figure S4F for example is not labeled as such but rather part of S4E, I can't find Figure S4-2. Figures are pre-referenced before the experimental data are described. p. 8-9 has quite a bit of introductory text that breaks the flow and distracts from the Results/experimental description with Figure 5C referenced along with Figure 5A (top of p. 9), before description of the experiment. Isn't Figure 5C the analysis of Figure 5D? It's not referenced where it is described in the text, directly following Figure 5D.\n\nThe supplementary figures that include the data points for Figure 5C, 5E, 5F should be referenced along with these figures at first appearance/experimental description in the text.\n\nReviewer #2:\n\nIn N. Pashkova et al., the authors follow up on results of a large-scale Y2H screen which revealed that the N-terminal portion of the endocytosis protein HIP1 binds ubiquitin (Ub). In the first part of the manuscript the authors clearly establish that the ANTH domain can serve as a Ub binding domain. Through biochemical analysis using GST-pulldown assays the authors showed that the ANTH domain alone was sufficient to bind Ub. Purification of different ANTH domains from various proteins and monitoring of their binding to Ub by HSQC NMR confirmed the initial findings and revealed equilibrium binding constants in the low \u00b5M range, which is in line with previous observed Ub binding domains (K.A. Swanson et al., JMB 2006).\n\nTo get insights into the mode of binding between the ANTH domain and Ub the authors pursued a crystal structure of CALM ANTH domain in complex with Ub. This revealed a CALM-ANTH:Ub interface. The key residues establishing the interface were seen in both the NMR experiments as well as the crystal structure. Paramagnetic Relaxation Enhancement (PRE) experiments confirmed the structural information and showed that Ub binds to the same region in solution. Based on this structural information the authors created mutants disrupting the binding between ANTH domains and Ub.\n\nIn the second part of the manuscript N. Pashkova et al., aim to investigate the role of the ANTH:Ub interaction on receptor internalization during endocytosis. For this they use two mutant variants of the \u03b1-factor receptor Ste2 which either is dependent or independent on Ub as an internalization signal as well as a mutant lacking both signals. With this system they test the effect of Ub-binding deficient ANTH proteins in Ste2 internalization. Using fluorescence microscopy, they measure indirectly the \u03b1-factor internalization by monitoring the fluorescence \u03b1-factor signal at the plasma membrane in chase experiments. From these experiments they conclude that Ub-dependent internalization is dependent on all Ub-binding domains within the endocytic machinery, including the Ub-binding property of the ANTH domains. The conclusion of the second part of this manuscript is mostly well supported by data, but some aspects would need to be clarified and extended.\n\n(1.) The authors do not provide data on how much the additional effect of the ANTH domain on Ub-binding compared to previously described Ub-domains in Ede1, Ent1 and Ent2 is. Internalization of fluorescence \u03b1-factor by the Ub-dependent STE2-\u2206C in Figure 5E should be performed and compared to ede1\u2206UBA ent1\u2206Ub ent2\u2206Ub to estimate the additional effect of the 3xANTH\u2206Ub combination.\n\n(2.) Figure 5D should contain microscopy images of all four Ste2 constructs at 10 min to allow comparison, since this timepoint is mainly used for analysis.\n\nIn summary, the manuscript by N. Pashkova et al., provides compelling evidence that the list of Ub-binding motifs with the endocytic machinery is much larger as currently anticipated. They provide initial evidence, that these new motifs might play a role in cargo internalization but more work is necessary to elucidate their mode of action. Additionally, it will be of great interest to see the contribution of those domains on assembly of the endocytic machinery.\n\nThe manuscript by N. Pashkova et al., seems to have a pdf compilation problem. Figure S4-2 is missing and many other figures are duplicated such as Figure 1. This needs to be fixed. Therefore, the bioRxiv version of the manuscript was partially used to evaluate the missing figures. Moreover, some figures such as Figure 3A and 3B are not annotated in the text.\n\nIn Figure 4B the amino acid labelling is too small to read this should be rearranged to make it readable.\n\nOverall, the result that the ANTH domain serves as a Ub-binding domain is an intriguing finding. It would be very interesting to see if Ub-binding is important for assembly of the CME machinery. The authors provide a discussion but some experimental evidence would be very helpful and increase the impact of the work. For example, does patch life time of endocytic machinery proteins vary in the 3xANTH mutants or Ub\u2206 mutants?\n\nThe authors mention that 3xANTH\u2206Ub ede1\u2206UBA ent1\u2206Ub ent2\u2206Ub mutant does not show the same internalization defect as the Ste2-\u2206C, K>R. The SH3 domain of Sla1 another endocytic machinery protein has also been suggested to bind to ubiquitin (PMID: 17244534). Adding this mutation to the 3xANTH\u2206Ub ede1\u2206UBA ent1\u2206Ub ent2\u2206Ub could completely abolish receptor uptake and lead to a similar effect as seen in the Ste2-\u2206C, K>R. This would add additional value since it would show that most likely no additional Ub-binding mutants are necessary.\n\nThe authors mention data about pHIuorin fused Ste2 but do not provide any data. These data should be provided or the section should be removed from the manuscript.\n",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c63bf088-9d43-4c31-87f6-d73e33358b2c",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C1",
+      "claim": "The N-terminal portion of HIP1 (residues 1-363) bound to Ub in a Y2H screening method called 'DEEPN'",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study that used a large-scale Y2H screening method referred to as 'DEEPN', we found that the N-terminal portion of HIP1 bound to Ub (Pashkova et al., 2016). This Y2H interaction was observed between a Gal4-DNA-binding domain fused to two tandem copies of Ub linked via a three residue spacer and a the Gal4-transcriptional activation domain fused to residues 1\u2013363 of mouse HIP1 (XP_036020882).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Pashkova et al., 2016) and described experimental observation",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "13970850-bc0b-4efa-8146-64385c64c083",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C2",
+      "claim": "GST-fused residues 1-363 of mouse HIP1 bound K63-linked polyubiquitin chains",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction was further validated by pulldown of GST-fused to residues 1\u2013363 of mouse HIP1, which bound K63-linked polyubiquitin chains (Pashkova et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Pashkova et al., 2016) describing pulldown experiments",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "8a9b7041-1b4e-4800-98e3-90f418f4498d",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C3",
+      "claim": "The N-terminal fragment of HIP1 (residues 1-363) contains the ANTH domain",
+      "claim_type": "EXPLICIT",
+      "source": "This fragment contains the ANTH (AP180 N-Terminal Homology) domain and indicated that the N-terminal ANTH domain of HIP1 might be an unrecognized Ub-binding domain (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1 domain organization diagram",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "8bcd590b-f095-4538-8a5c-ea95133d3194",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C4",
+      "claim": "The ANTH domain alone from HIP1 is sufficient for Ub-binding",
+      "claim_type": "EXPLICIT",
+      "source": "GST-pulldown experiments with the ANTH domain alone from HIP1 confirmed this was sufficient for Ub-binding (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "6581f4f1-ef4e-422c-9811-56d62cb863b0",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C5",
+      "claim": "ANTH domains are part of the larger family of ENTH and VHS domains",
+      "claim_type": "EXPLICIT",
+      "source": "ANTH domains are part of the larger family of ENTH (Epsin N-Terminal Homology) and VHS (Vps27, HRS, STAM) domains that are found in the N-terminus of proteins that play a variety of roles in endocytosis and many bind Ub (Figure 1A; Moshkanbaryans et al., 2014; Takatori and Tomita, 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to previous work (Moshkanbaryans et al., 2014; Takatori and Tomita, 2019) and established knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "42c8d2f8-2a7c-4c88-8129-93a157f8babc",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C6",
+      "claim": "ANTH domains are structurally similar to ENTH domains but are larger, with an additional 3 C-terminal \u03b1-helices",
+      "claim_type": "EXPLICIT",
+      "source": "ANTH domains are structurally similar to ENTH domains but are larger, with an additional 3 C-terminal \u03b1-helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established structural knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "4ac93bf1-7067-46a1-81dd-498c28ae3442",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C7",
+      "claim": "There are two broad subgroups of ANTH domains by sequence homology: those found in CALM and AP180, and those found in HIP1, HIP1R, and Sla2",
+      "claim_type": "EXPLICIT",
+      "source": "By sequence homology, there are two broad subgroups of ANTH domains, those found in proteins such as CALM and AP180 and those found in HIP1, HIP1R, and Sla2 (De Craene et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (De Craene et al., 2012)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "cd0bc852-7d56-4522-b110-488fb03515dc",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C8",
+      "claim": "Multiple ANTH domains from both subcategories bind Ub in solution with equilibrium binding constants ranging from 2.9 \u00b1 0.4 \u00b5M to 33 \u00b1 6 \u00b5M",
+      "claim_type": "EXPLICIT",
+      "source": "Binding in solution was monitored by HSQC NMR of 15N-Ub in increasing concentrations of ANTH domains. This produced both chemical shift perturbations as well as overall peak broadening, indicating binding was in fast-exchange. Binding of Ub to 15N-labeled HIP1-ANTH was also observed in HSQC experiments, which produced selective chemical shift perturbations in backbone amides of 15N-HIP1 ANTH as well (Figure 1\u2014figure supplement 1). These concentration dependent changes allowed us to derive equilibrium binding constants for each ANTH domain, ranging from 2.9 \u00b1 0.4 \u00b5M for the mouse HIP1 ANTH domain to 33 \u00b1 6 \u00b5M for Drosophila LAP, a homolog of human AP180.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR experimental data shown in Figure 1D and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "14e0efc4-753b-4788-8f08-ceb022b392d8",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C9",
+      "claim": "All ANTH domains tested bound a similar surface on Ub centered on L8, I44, and V70",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping the largest backbone amide chemical shift perturbations in 15N-Ub (Figure 1\u2014figure supplement 1) onto the structure of Ub (Figure 1D) indicated that all ANTH domains bound a similar surface on Ub centered on L8, I44, and V70, which mediates the vast majority of Ub-binding interactions (Piper et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR data analysis shown in Figure 1D and Figure 1\u2014figure supplement 1, with citation to previous work (Piper et al., 2014)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "710a61ae-d220-4123-974f-88c419767c26",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C10",
+      "claim": "A crystal structure of the human CALM ANTH domain in complex with Ub was resolved to 2.4 \u00c5",
+      "claim_type": "EXPLICIT",
+      "source": "To gain further insight into how ANTH domains bound Ub, we obtained a crystal structure of the human CALM ANTH domain in a complex with Ub resolved to 2.4 \u00c5 (Figure 2, Table 1, PDB:7JXV).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystallographic data shown in Figure 2 and Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "9c54aaf6-127d-4502-a820-cf71b48794a7",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C11",
+      "claim": "Ub binds near a loop within the C-terminal three-helical portion of the CALM ANTH domain connecting the last two \u03b1-helices",
+      "claim_type": "EXPLICIT",
+      "source": "These data showed that Ub bound near a loop within the C-terminal three-helical portion of the ANTH domain connecting the last two \u03b1-helices (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by crystal structure data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "9b8def4e-203c-49c4-a701-d74fb296067c",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C12",
+      "claim": "The structure of CALM when bound to Ub had extensive overlap with a previously determined crystal structure of CALM alone (PDB:1HFA), indicating that the CALM-ANTH does not undergo large conformational rearrangements upon binding Ub",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of CALM when bound to Ub had extensive overlap with a previously determined crystal structure of CALM alone (PDB:1HFA) (Ford et al., 2001), indicating that the CALM-ANTH does not undergo large conformational rearrangements upon binding Ub (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison shown in Figure 2B and citation to previous work (Ford et al., 2001)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "a57d1dbf-c746-417b-8603-8ddb04b6583a",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C13",
+      "claim": "NMR experiments with 15N-labeled HIP1 ANTH domain showed that the HSQC spectra is largely unaltered upon Ub-binding",
+      "claim_type": "EXPLICIT",
+      "source": "This result is also consistent with NMR experiments with 15N-labeled HIP1 ANTH domain showing that the HSQC spectra is largely unaltered upon Ub-binding (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR data shown in Figure 1\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "83c74a71-39c1-4a63-8ea5-af2d34e61e33",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C14",
+      "claim": "The CALM-ANTH:Ub interface shows hydrophobic interactions between Ub (L8, I44, V70) and CALM ANTH (F223, L274)",
+      "claim_type": "EXPLICIT",
+      "source": "The CALM-ANTH:Ub interface showed hydrophobic interactions between Ub (L8, I44, V70) and CALM ANTH (F223, L274); and electrostatic interactions between Ub (R42, K48) and CALM (D224, D276)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crystal structure analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "d9a2ecb8-ad35-4d2e-baf4-d0dd3edb3034",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C15",
+      "claim": "The CALM-ANTH:Ub interface shows electrostatic interactions between Ub (R42, K48) and CALM (D224, D276)",
+      "claim_type": "EXPLICIT",
+      "source": "The CALM-ANTH:Ub interface showed hydrophobic interactions between Ub (L8, I44, V70) and CALM ANTH (F223, L274); and electrostatic interactions between Ub (R42, K48) and CALM (D224, D276)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by crystal structure analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "3034d064-4585-4040-b2c7-b7d6f8c1aba8",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C16",
+      "claim": "PRE effects from HSQC of 15N-Ub resulting from binding to CALM spin-labeled at residues 209, 268, and 284 confirmed that in solution, Ub bound the same region and orientation as observed in the crystal structure",
+      "claim_type": "EXPLICIT",
+      "source": "The largest PRE effects from the HSQC of 15N-Ub resulting from binding to CALM spin-labeled at residues 209, 268, and 284 were mapped onto the CALM:Ub structure and confirmed that in solution, Ub bound the same region and orientation as observed in the crystal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PRE NMR experiments described in text and shown in Figure 2D and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "2233feaa-ea65-495a-be6b-4a23505c4bbf",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C17",
+      "claim": "Mutation of F223 to Ser or Ala in CALM ANTH abolished detectable Ub-binding in HSQC experiments",
+      "claim_type": "EXPLICIT",
+      "source": "Although wildtype CALM-ANTH caused significant chemical shift perturbations within the 15N HSQC spectra, no perturbations were observed when F223 was altered to Ser or Ala alone or in combination with altering D224R or D276A (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "654a5bb1-1fa1-4763-a5a4-8322645b7eac",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C18",
+      "claim": "The double mutant L274A, D276A in CALM ANTH abolished detectable Ub-binding in HSQC experiments",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, no Ub-binding was observed by the double mutant L274A, D276A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR experiments described in text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "54c569d5-7b43-46bf-bd23-863f1240376e",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C19",
+      "claim": "GST-pulldown experiments confirmed that CALM ANTH carrying the F223A single substitution or the combined F223S and D224R double substitutions did not bind GST fused to five tandem copies of linear Ub",
+      "claim_type": "EXPLICIT",
+      "source": "These results were confirmed in GST-pulldown experiments using GST fused to five tandem copies of linear Ub (Figure 3C) that bound the wildtype CALM ANTH domain but not a mutant ANTH domain carrying the F223A single substitution or the combined F223S and D224R double substitutions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GST-pulldown data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "3631563d-e647-4fab-97fe-7fc134d6bed2",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C20",
+      "claim": "The region of CALM responsible for Ub-binding is highly conserved across a subgroup of ANTH domains that includes Drosophila melanogaster LAP and Saccharomyces cerevisiae Yap1801 and Yap1802",
+      "claim_type": "EXPLICIT",
+      "source": "This region of CALM is highly conserved across a subgroup of ANTH domains that includes Drosophila melanogaster LAP and Saccharomyces cerevisiae Yap1801 and Yap1802.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated based on sequence analysis",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "9597bdf4-79dd-46f8-8914-bb4fd5f806a7",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C21",
+      "claim": "Mutation of residues F238 and D239 in Drosophila LAP (corresponding to F223 and D224 in rat CALM) ablated detectable binding to 15N-Ub as monitored with HSQC experiments",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, mutation of residues F238 and D239 in LAP, which correspond to F223 and D224 in rat CALM, ablated detectable binding to 15N-Ub as monitored with HSQC experiments (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "d9620d72-e35b-4829-9a75-171b6356563b",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C22",
+      "claim": "The CALM ANTH domain was shown previously to bind endocytic SNAREs VAMP7 and VAMP8",
+      "claim_type": "EXPLICIT",
+      "source": "The CALM ANTH domain was shown previously to bind endocytic SNAREs VAMP7 and VAMP8, which is a property conserved by the S. cerevisiae orthologs of CALM, Yap1801, and Yap1802 (Burston et al., 2009; Fujimoto et al., 2020; Koo et al., 2011; Miller et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Burston et al., 2009; Fujimoto et al., 2020; Koo et al., 2011; Miller et al., 2011)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "7c42cd1e-08c2-4a6a-8885-3910c4008d58",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C23",
+      "claim": "CALM should not be able to bind simultaneously to v-SNAREs and Ub because the binding sites substantially overlap",
+      "claim_type": "EXPLICIT",
+      "source": "This proposed binding mode for v-SNAREs substantially overlaps with that for Ub. Moreover, the binding site for Ub relies on the position of the last helical region of the ANTH domain, whereas this region would have to be dramatically repositioned to allow v-SNARE binding at the site it occupies in the crystal structure (Figure 3\u2014figure supplement 1A). Thus, CALM should not be able to bind simultaneously to v-SNAREs and Ub.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural analysis shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "9e6df823-66d7-472e-9607-d5abbac40535",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C24",
+      "claim": "Wildtype CALM ANTH domain as well as ANTH domain containing the F223A mutation or the F223S, D224R double mutation all bound GST-VAMP7",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we performed binding experiments using GST-VAMP7 (Figure 3C). Wildtype ANTH domain as well as ANTH domain containing the F223A mutation or the F223S, D224R double mutation all bound GST-VAMP7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GST-pulldown data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "1218e118-5fb5-4c89-980d-ecb052ff199a",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C25",
+      "claim": "Inclusion of excess free linear Ub chains diminished binding of wildtype CALM ANTH domain on GST-VAMP7 indicating that Ub and VAMP7 binding are mutually exclusive",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, inclusion of excess free linear Ub (5 x) chains diminished binding of wildtype ANTH domain on GST-VAMP7 indicating that Ub and VAMP7 binding are mutually exclusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GST-pulldown experiments described in text and shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "bafcdd75-2e1d-4d8f-81ce-4f849dcdea5e",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C26",
+      "claim": "Inclusion of 5 x linear Ub chains had no effect on the ability of VAMP7 to bind to the mutant CALM ANTH domains that lacked their Ub-binding sites",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, inclusion of 5 x linear Ub chains had no effect on the ability VAMP7 to bind to the mutant ANTH domains that lacked their Ub-binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GST-pulldown experiments described in text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "d62abf11-a75d-47b5-9512-5e7cedfd0f42",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C27",
+      "claim": "The F223A/S, D224R mutations in CALM ANTH specifically ablate Ub-binding but not v-SNARE binding",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the F223A/S, D224R mutations specifically ablate Ub-binding but not v-SNARE binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GST-pulldown experiments described in text and shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "077557d1-b4e3-4dc8-80ee-313f3a97a3b1",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C28",
+      "claim": "Mutations L219S and M244K in CALM ANTH abolished all detectable Ub-binding in NMR HSQC experiments with 15N-Ub",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies also identified mutations (L219S and M244K) that ablated binding of CALM to v-SNAREs. However, these mutations also abolished all detectable Ub-binding in NMR HSQC experiments with 15N-Ub (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR data shown in Figure 3\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "2dd4dbeb-ee6a-4b55-95ba-e8f2557ce3de",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C29",
+      "claim": "Recombinant C. thermophilum Sla2 ANTH domain had negligible binding to Ub",
+      "claim_type": "EXPLICIT",
+      "source": "We found that recombinant C. thermophilum Sla2 ANTH domain had negligible binding to Ub, preventing a structural analysis of Ub-binding by this ANTH domain (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR data shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "6a1e1737-6fb3-4fcf-9f63-c0ff81bdb171",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C30",
+      "claim": "Spin-labels placed in the N-terminal portion of the Sla2 ANTH domain did not yield PRE effects",
+      "claim_type": "EXPLICIT",
+      "source": "Spin-labels placed in the N-terminal portion of the Sla2 ANTH domain did not yield PRE effects (Figure 4B, left) despite comparable binding overall to Ub (Figure 4B, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PRE NMR data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "943626dc-9b76-4a72-b2ec-888d7635a34a",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C31",
+      "claim": "Spin labels in the C-terminal portion of the Sla2 ANTH domain near the presumptive Ub-binding site gave strong PRE effects",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, spin labels in the C-terminal portion of the Sla2 ANTH domain that were near the presumptive Ub-binding site predicated by structure and sequence homology (Figure 4\u2014figure supplement 1A-C) gave strong PRE effects (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PRE NMR data shown in Figure 4B and structural models in Figure 4\u2014figure supplement 1A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "cb37ec84-3e4a-413e-953a-7dd115cbd41c",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C32",
+      "claim": "GST fused to the HIP1 or Sla2 ANTH domain bound K63 linked polyubiquitin chains well",
+      "claim_type": "EXPLICIT",
+      "source": "GST-pulldown assays showed that these residues were indeed required for efficient binding of Ub. GST fused to the HIP1 or Sla2 ANTH domain bound K63 linked polyubiquitin chains well (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GST-pulldown data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "855dbfa0-b26f-4565-a830-419d3d31848a",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C33",
+      "claim": "Altering L250 or D253 to arginines in mouse HIP1 ablated detectable binding to K63 linked polyubiquitin chains",
+      "claim_type": "EXPLICIT",
+      "source": "Altering L250 or D253 to arginines in mouse HIP1 or L212 and D218 to alanines in Sla2 ablated detectable binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GST-pulldown experiments described in text and shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "692507f1-68b9-4d24-960a-44c80cd43f62",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C34",
+      "claim": "Altering L212 and D218 to alanines in Sla2 ablated detectable binding to K63 linked polyubiquitin chains",
+      "claim_type": "EXPLICIT",
+      "source": "Altering L250 or D253 to arginines in mouse HIP1 or L212 and D218 to alanines in Sla2 ablated detectable binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GST-pulldown experiments described in text and shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "6b693b98-580f-4bc5-93f1-d7410544303e",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C35",
+      "claim": "The human HIP1 L250S, D253R double mutant failed to bind di-Ub via a yeast two-hybrid assay",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the human HIP1 L250S, D253R double mutant or the hHIP1R L241S, D244R double mutant failed to bind di-Ub via a yeast two-hybrid assay, in contrast to the robust interaction observed with wildtype human HIP1 and human HIP1R ANTH domains (Figure 4\u2014figure supplement 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by yeast two-hybrid data shown in Figure 4\u2014figure supplement 1D, E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "35efc3b2-be97-4d72-a0ce-da8c89a9a297",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C36",
+      "claim": "The hHIP1R L241S, D244R double mutant failed to bind di-Ub via a yeast two-hybrid assay",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the human HIP1 L250S, D253R double mutant or the hHIP1R L241S, D244R double mutant failed to bind di-Ub via a yeast two-hybrid assay, in contrast to the robust interaction observed with wildtype human HIP1 and human HIP1R ANTH domains (Figure 4\u2014figure supplement 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by yeast two-hybrid data shown in Figure 4\u2014figure supplement 1D, E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "5c76dcb2-c171-495c-8078-4abd1626c220",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C37",
+      "claim": "NMR titrations with mutant L212A, D218A Sla2 ANTH domain showed a > 10 fold loss of apparent Kd for Ub-binding in comparison with wildtype Sla2 ANTH domain",
+      "claim_type": "EXPLICIT",
+      "source": "NMR titrations with mutant L212A, D218A Sla2 ANTH domain showed a > 10 fold loss of apparent Kd for Ub-binding in comparison with wildtype Sla2 ANTH domain (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR titration data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "c64d94f5-2cf4-4453-980d-e63d3f5edbcf",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C38",
+      "claim": "Even less binding was observed in HSQC experiments when Sla2 ANTH carried an L212S, D218R double mutation",
+      "claim_type": "EXPLICIT",
+      "source": "Even less binding was observed in HSQC experiments when Sla2 ANTH carried an L212S, D218R double mutation (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR data shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "f1e3b126-b4ab-4fa2-b21a-2ed8ebd66945",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C39",
+      "claim": "Sla2 plays a major role in internalization in yeast and its loss causes severe defects in the internalization of proteins and lipid dyes",
+      "claim_type": "EXPLICIT",
+      "source": "Sla2 plays a major role in internalization in yeast and its loss causes severe defects in the internalization of proteins and lipid dyes and disrupts the ordered assembly of the endocytic apparatus and transition to actin polymerization (Brach et al., 2014; Kaksonen et al., 2003; Newpher et al., 2005; Skruzny et al., 2015; Wesp et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Brach et al., 2014; Kaksonen et al., 2003; Newpher et al., 2005; Skruzny et al., 2015; Wesp et al., 1997)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "7e1dd873-bb5b-46b8-9666-9c742c7c5e69",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C40",
+      "claim": "Sla2 forms a complex with Ent1/2 (yeast Epsins) that can bridge PtdIns(4,5)P2-containing membranes with the actin cytoskeleton via its PtdIns(4,5)P2-binding ANTH domain and C-terminal THATCH domains",
+      "claim_type": "EXPLICIT",
+      "source": "Sla2 forms a complex with Ent1/2 (yeast Epsins) that can bridge PtdIns(4,5)P2-containing membranes with the actin cytoskeleton via its PtdIns(4,5)P2-binding ANTH domain and C-terminal THATCH domains, respectively (Skruzny et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Skruzny et al., 2015)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "2b683a8b-7d4f-4d26-a216-0084432e1e2c",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C41",
+      "claim": "Sla2 arrives early in the assembly process and remains during actin polymerization",
+      "claim_type": "EXPLICIT",
+      "source": "Sla2 arrives early in the assembly process and remains during actin polymerization making it a plausible candidate cargo receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated based on established knowledge of Sla2 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "74e40f0a-964b-4f9a-a5cb-b6a6e04f45e2",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C42",
+      "claim": "Yap1801 and Yap1802 localize with clathrin at the cell surface and arrive in the early phase of CME assembly",
+      "claim_type": "EXPLICIT",
+      "source": "Both localize with clathrin at the cell surface and arrive in the early phase of CME assembly (Carroll et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Carroll et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "8a23f9fc-ae23-4461-8cd8-52b4734f0c93",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C43",
+      "claim": "Loss of both Yap1801 and Yap1802 has no effect on GPCR internalization but does cause accumulation of the v-SNARE Snc1 at the cell surface",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of both has no effect on GPCR internalization but does cause accumulation of the v-SNARE Snc1 at the cell surface implying they work as dedicated cargo-specific adaptors for a subset of proteins (Burston et al., 2009; Huang et al., 1999; Maldonado-B\u00e1ez et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Burston et al., 2009; Huang et al., 1999; Maldonado-B\u00e1ez et al., 2008)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "20611247-f3f3-4284-8ea1-1ba3f958ad5a",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C44",
+      "claim": "Internalization of wildtype Ste2 was rapid and complete within 10 min",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, internalization of wildtype Ste2 was rapid and complete within 10 min (Figure 5D and Figure 5\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by internalization assay data shown in Figure 5D and Figure 5\u2014figure supplement 1B, C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "96a67451-2548-49db-9a9b-333054788b3a",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C45",
+      "claim": "Truncated Ste2 lacking its NPFxD-like motif yet still possessing ubiquitinatable lysines (Ste2-\u2206C) had an intermediate rate of internalization",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, truncated Ste2 lacking its NPFxD-like motif yet still possessing ubiquitinatable lysines (Ste2-\u2206C), had an intermediate rate of internalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by internalization assay data described in text and shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "23ef0e7c-813b-4809-8588-b484c39e8028",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C46",
+      "claim": "Ste2 containing an intact NPFxD motif but carrying K > R mutations (Ste2-8K > R) within its cytosolic domain internalized at an intermediate rate, though somewhat slower than the truncated Ste2",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, Ste2 containing an intact NPFxD motif but carrying K > R mutations (Ste2-8K > R) within its cytosolic domain also internalized at an intermediate rate, though somewhat slower than the truncated Ste2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by internalization assay data described in text and shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "60cca2cc-de20-44e5-8f06-2a05d8fb55ea",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C47",
+      "claim": "A truncated mutant Ste2 lacking its NPFxD motif and its C-terminal ubiquitinatable lysines (Ste2-\u2206C,8K > R) showed almost no internalization",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a truncated mutant Ste2 lacking its NPFxD motif and its C-terminal ubiquitinatable lysines (Ste2-\u2206C,8K > R) showed almost no internalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by internalization assay data described in text and shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "948c9333-a392-4392-bb2f-3e0167bedf3c",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C48",
+      "claim": "When all Ub-binding mutations in Sla2, Yap1801, and Yap1802 were combined (3xANTH\u2206Ub), internalization of \u03b1-factorRhD uptake by Ste2 via its Ub-dependent (Ste2-\u2206C) or Ub-independent routes (Ste2-8K > R) was unaffected",
+      "claim_type": "EXPLICIT",
+      "source": "When all these mutations were combined (3xANTH\u2206Ub), internalization assays showed that \u03b1-factorRhD uptake by Ste2 via its Ub-dependent (Ste2-\u2206C) (Figure 5E and Figure 5\u2014figure supplement 1B-C) or Ub-independent routes (Ste2-8K > R) (Figure 5F and Figure 5\u2014figure supplement 1B, C) was unaffected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by internalization assay data shown in Figure 5E, 5F and Figure 5\u2014figure supplement 1B-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "bb213a27-5479-4ac8-9d02-0d12540cc77c",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C49",
+      "claim": "Combined loss of Ub-binding activity of Ent1/2 and Ede1 had no effect on \u03b1-factorRhD internalization",
+      "claim_type": "EXPLICIT",
+      "source": "Combined loss of Ub-binding activity of Ent1/2 and Ede1 had no effect on \u03b1-factorRhD internalization (Figure 5E) in agreement with previous studies (Dores et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by internalization assay data shown in Figure 5E and citation to previous work (Dores et al., 2010)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "884542ae-d8bf-483e-888f-bbcb952cfcef",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C50",
+      "claim": "Loss of Ub-binding by Ede1 or loss of Ub-binding in both Ent1 and Ent2 had no affect on internalization when each was combined with loss of Ub-binding in all ANTH domains",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, loss of Ub-binding by Ede1 or loss of Ub-binding in both Ent1 and Ent2 had no affect on internalization when each was combined with loss of Ub-binding in all ANTH domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by internalization assay data described in text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "b1a09d5b-7764-4731-ae3e-5d3a948768ec",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C51",
+      "claim": "Marked reduction in \u03b1-factorRhD internalization by Ste2\u2206C was observed in strains carrying all mutations in which Ub-binding mutations in Ent1/2 and Ede1 were combined with Ub-binding mutations in all of the ANTH domain proteins, Sla2, Yap1801, and Yap1802",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, marked reduction in \u03b1-factorRhD internalization by Ste2\u2206C was observed in strains carrying all of these mutations in which Ub-binding mutations in Ent1/2 and Ede1 were combined with Ub-binding mutations in all of the ANTH domain proteins, Sla2, Yap1801, and Yap1802 (Figure 5E and Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by internalization assay data shown in Figure 5E and Figure 5\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "748fd41b-c756-4cfc-9b34-4e1658721452",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C52",
+      "claim": "Combined loss of Ub-binding by the three ANTH domains in addition to Ent1/2 and Ede1 had no effect on \u03b1-factorRhD internalization by Ste2-8K > R, which has an NPFxD internalization motif",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed the effect of these mutant combinations on the internalization of Ste2-8K > R, which has an NPFxD interanalization motif. Here, combined loss of Ub-binding by the three ANTH domains in addition to Ent1/2 and Ede1 had no effect on \u03b1-factorRhD internalization (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by internalization assay data shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "e6f06e75-4fcb-4a54-bedd-7ec14b487ac3",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C53",
+      "claim": "The combination of mutations that inactivated Ub-binding by a whole cohort of Ub-binding proteins was selective for a cargo that uses Ub as an internalization signal",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the combination of mutations that inactivated Ub-binding by a whole cohort of Ub-binding proteins was selective for a cargo that uses Ub as an internalization signal, demonstrating that the general ability of cells to execute and regulate internalization was largely intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of internalization data for Ste2-\u2206C vs Ste2-8K>R in mutant strains",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "a426fe21-294d-463e-9395-180e3a6abeef",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C54",
+      "claim": "Ubiquitination of membrane proteins is a signal for internalization via clathrin-mediated endocytosis (CME), a process largely conserved across eukaryotes",
+      "claim_type": "EXPLICIT",
+      "source": "At the plasma membrane, ubiquitination of membrane proteins is a signal for internalization via clathrin-mediated endocytosis (CME), a process largely conserved across eukaryotes (Kaksonen and Roux, 2018; Traub and Lukacs, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Kaksonen and Roux, 2018; Traub and Lukacs, 2007)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "d72ad533-5fcb-4991-b7c9-b95e07b176ce",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C55",
+      "claim": "Ub is a versatile signal for internalization since it can be added or removed from virtually all membrane proteins by a myriad of regulatory mechanisms",
+      "claim_type": "EXPLICIT",
+      "source": "Ub is a versatile signal for internalization since it can be added or removed from virtually all membrane proteins by a myriad of regulatory mechanisms (Traub, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Traub, 2009)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "a9beab0c-9e0e-46f1-bdf6-674993f4b60a",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C56",
+      "claim": "The fact that Ub can serve as an internalization signal has been clearly demonstrated with reporter membrane proteins translationally fused to Ub, which accelerates the rate of their internalization",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that Ub can serve as an internalization signal has been clearly demonstrated with reporter membrane proteins translationally fused to Ub, which accelerates the rate of their internalization (Traub and Lukacs, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Traub and Lukacs, 2007)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "cb905565-6c91-4471-9a7b-ee5488116078",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C57",
+      "claim": "The first instance of Ub as an internalization signal was recognized in yeast where it controls the internalization of the GPCR Ste2 that can be followed by the uptake of its ligand \u03b1-factor",
+      "claim_type": "EXPLICIT",
+      "source": "The first instance of Ub as an internalization signal was recognized in yeast where it controls the internalization of the GPCR Ste2 that can be followed by the uptake of its ligand \u03b1-factor (Hicke and Riezman, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Hicke and Riezman, 1996)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "721c0884-8931-4ced-887d-c8ddf9fe42cd",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C58",
+      "claim": "Ste2 has other internalization signals that operate in tandem with Ub",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, Ste2 has other internalization signals that operate in tandem with Ub, likely reflecting the ability of this GPCR to be regulated at the level of internalization by multiple mechanisms (Howard et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Howard et al., 2002)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "5ba9f911-86a9-4af2-9570-be4b050dfc3e",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C59",
+      "claim": "EGFR uses multiple internalization signals besides Ub to access CME and also uses different internalization routes from the plasma membrane",
+      "claim_type": "EXPLICIT",
+      "source": "Yet EGFR also uses multiple internalization signals besides Ub to access CME and also uses different internalization routes from the plasma membrane (Caldieri et al., 2017; Fortian et al., 2015; Goh et al., 2010; Pascolutti et al., 2019; Sigismund et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Caldieri et al., 2017; Fortian et al., 2015; Goh et al., 2010; Pascolutti et al., 2019; Sigismund et al., 2013)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "8678e4be-d2b1-4f1e-a875-632bbb583ce6",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C60",
+      "claim": "Among the best characterized candidates for cargo receptors for Ub are Ede1/Eps15 and Ent1, Ent2/Epsin, which harbor Ub-binding domains, associate with Ub-cargo, and help concentrate Ub-cargo in forming CME sites",
+      "claim_type": "EXPLICIT",
+      "source": "Among the best characterized candidates are Ede1/Eps15 and Ent1, Ent2/Epsin, yeast, and human orthologs, respectively, which harbor Ub-binding domains, associate with Ub-cargo, and help concentrate Ub-cargo in forming CME sites (Traub, 2009; Traub and Lukacs, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Traub, 2009; Traub and Lukacs, 2007)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "39ddf1c1-64be-4b78-bb8e-6b3b4002f0d7",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C61",
+      "claim": "Combined inactivation of Ub-binding domains within Ent1/2 and Ede1 in yeast does not affect Ub-dependent internalization of the Ste2 GPCR",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the model that these components function as the sole adaptors for Ub-cargo does not represent the whole story since combined inactivation of Ub-binding domains within these proteins (eg. Ent1/2 and Ede1) in yeast does not affect Ub-dependent internalization of the Ste2 GPCR, suggesting other components help recognize Ub-internalization signals (Dores et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work (Dores et al., 2010)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "17343e51-9e52-4868-b422-707443cad90c",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C62",
+      "claim": "Ub binds with \u00b5M affinity to a unique C-terminal region within the ANTH domain not found in ENTH domains",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies revealed that Ub binds with \u00b5M affinity to a unique C-terminal region within the ANTH domain not found in ENTH domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural and NMR data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "962f4c0b-e2a2-42c1-a2bd-f895c62bf497",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C63",
+      "claim": "Combined loss of Ub-binding by ANTH-domain proteins and other Ub-binding domains within the yeast internalization apparatus caused defects in the Ub-dependent internalization of the GPCR Ste2 that was engineered to rely exclusively on Ub as an internalization signal",
+      "claim_type": "EXPLICIT",
+      "source": "Functional studies showed that combined loss of Ub-binding by ANTH-domain proteins and other Ub-binding domains within the yeast internalization apparatus caused defects in the Ub-dependent internalization of the GPCR Ste2 that was engineered to rely exclusively on Ub as an internalization signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by internalization assay data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "c424165d-5631-4aee-97c1-61840d87c914",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "claim_id": "C64",
+      "claim": "Mutations that ablated Ub-binding had no effect on the internalization of Ste2 engineered to use an alternate Ub-independent internalization signal",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, these mutations had no effect on the internalization of Ste2 engineered to use an alternate Ub-independent internalization signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by internalization assay data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f9683d8a-929f-41bc-bd5a-28f9f48498d9",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The ANTH domain of HIP1 is sufficient for ubiquitin binding. Previous Y2H screening and GST-pulldown experiments showed that the N-terminal portion of HIP1 (residues 1-363), which contains the ANTH domain, binds ubiquitin and K63-linked polyubiquitin chains. GST-pulldown experiments confirmed that the ANTH domain alone is sufficient for Ub-binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 collectively establish that the ANTH domain of HIP1 binds ubiquitin. C1 and C2 cite prior work demonstrating binding, C3 identifies the ANTH domain within the tested fragment, and C4 provides direct experimental validation that the ANTH domain alone is sufficient. The convergence of Y2H, GST-pulldown, and domain mapping provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "e89ac1f0-ce54-4501-801d-cda462b04154",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ANTH domains belong to the ENTH/VHS superfamily and can be divided into two subgroups. ANTH domains are structurally similar to ENTH domains but larger, with an additional 3 C-terminal \u03b1-helices. By sequence homology, there are two broad subgroups: those found in CALM and AP180, and those found in HIP1, HIP1R, and Sla2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 describe established structural and evolutionary relationships of ANTH domains, supported by citations to prior work and general knowledge in the field. These are well-accepted classifications that provide context for the subsequent findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "2c764339-0793-4c4a-995d-498179f3955e",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Multiple ANTH domains from both subcategories bind ubiquitin in solution with micromolar affinity (Kd ranging from 2.9 \u00b1 0.4 \u00b5M to 33 \u00b1 6 \u00b5M) and recognize a similar surface on Ub centered on L8, I44, and V70.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C9 are supported by comprehensive NMR HSQC experiments with multiple ANTH domains. The binding constants were derived from concentration-dependent chemical shift perturbations, and the binding surface was mapped by analyzing the largest perturbations. The data shown in Figure 1D and Figure 1\u2014figure supplement 1 provide strong quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "bbb3b936-c712-4e51-b5e2-043c66a959fe",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Crystal structure of the CALM ANTH:Ub complex reveals the molecular basis of binding. The structure, resolved to 2.4 \u00c5, shows that Ub binds near a loop in the C-terminal three-helical portion of the ANTH domain without inducing large conformational changes. The interface involves hydrophobic interactions (Ub L8, I44, V70 with CALM F223, L274) and electrostatic interactions (Ub R42, K48 with CALM D224, D276). PRE NMR experiments confirmed the binding mode in solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 describe the crystal structure and its validation. The 2.4 \u00c5 resolution structure (C10) provides atomic-level detail of the binding interface (C11, C14, C15). Structural comparison (C12) and NMR data (C13) confirm no major conformational changes occur. PRE experiments (C16) validate that the solution structure matches the crystal structure. The convergence of crystallography, structural comparison, and solution NMR provides robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "721ff1d3-21f8-4803-b6aa-e88b86bb502b",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutations in the Ub-binding site of CALM and LAP ANTH domains abolish Ub-binding. Mutations F223A/S or F223S+D224R in CALM, and the double mutant L274A+D276A, eliminated detectable Ub-binding in NMR and GST-pulldown experiments. The Ub-binding region is conserved across CALM, LAP, Yap1801, and Yap1802, and corresponding mutations in LAP (F238A, D239A) also abolished Ub-binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 demonstrate structure-guided mutagenesis that specifically disrupts Ub-binding. NMR HSQC experiments (C17, C18, C21) and GST-pulldown assays (C19) consistently show loss of binding with mutations at the predicted interface. The conservation analysis (C20) and validation in LAP (C21) extend the findings across the CALM/AP180 subfamily. The multiple orthogonal assays provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "5b13a2b5-e2c7-4ec5-b0b0-dfb03206bb77",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ub and v-SNARE binding to CALM ANTH are mutually exclusive. The CALM ANTH domain binds v-SNAREs VAMP7 and VAMP8, but structural analysis indicates the binding sites overlap with the Ub-binding site. Mutations that abolish Ub-binding (F223A/S, D224R) do not affect VAMP7 binding, and excess free Ub diminishes VAMP7 binding by wildtype but not mutant CALM ANTH, demonstrating mutual exclusivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 establish that Ub and v-SNARE binding are mutually exclusive. Prior work (C22) and structural analysis (C23) predict overlapping binding sites. Competition experiments (C24-C26) show that wildtype CALM binds VAMP7, excess Ub reduces this binding, but mutants lacking Ub-binding are unaffected by excess Ub. Claim C27 summarizes the specificity of the mutations. The combination of structural prediction and functional validation provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "eab23b00-a88a-4db8-b7d1-75b52c789ae8",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mutations L219S and M244K in CALM ANTH, which were previously shown to abolish v-SNARE binding, also abolish Ub-binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is supported by NMR HSQC experiments showing that these mutations eliminate detectable Ub-binding. However, this finding complicates interpretation of phenotypes from these mutations, as they affect both Ub and v-SNARE binding. The data are clear but the biological interpretation is limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "37c0c3ef-0ea2-454a-ae34-b3b841d6972c",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The HIP1/Sla2 subfamily of ANTH domains binds Ub via a C-terminal region analogous to the CALM binding site. PRE NMR experiments with Sla2 ANTH showed that Ub binds near the C-terminal region. Mutations of conserved hydrophobic and acidic residues (L250R or D253R in HIP1; L212A and D218A in Sla2) abolished or greatly reduced Ub-binding in GST-pulldown and NMR experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34, C37-C38 establish Ub-binding by the HIP1/Sla2 subfamily through a combination of PRE NMR (C30, C31), GST-pulldown (C32-C34), and NMR titration (C37, C38) experiments. The C. thermophilum Sla2 showed negligible binding (C29), but yeast Sla2 and mouse HIP1 showed robust binding that was eliminated by mutations at predicted interface residues. The convergence of multiple techniques provides strong support despite the lack of a crystal structure for this subfamily.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "e32b756c-cd4e-4f64-a28d-c1fa32799806",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mutations in human HIP1 (L250S, D253R) and HIP1R (L241S, D244R) abolish di-Ub binding in yeast two-hybrid assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C36 are supported by yeast two-hybrid data showing loss of interaction with di-Ub for both mutants, while wildtype proteins show robust interactions. This extends the findings to human orthologs and provides additional validation of the Ub-binding site.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "dff8ce85-38f7-4777-98ca-1ccea2e175ec",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sla2, Yap1801, and Yap1802 are components of the yeast endocytic machinery with distinct roles. Sla2 plays a major role in internalization and forms complexes with Ent1/2 to bridge membranes with the actin cytoskeleton. Yap1801 and Yap1802 localize with clathrin in early CME assembly and act as cargo-specific adaptors, particularly for v-SNARE Snc1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 describe established functions of these proteins based on extensive prior work. These claims provide important biological context for the functional studies but do not represent new findings from this manuscript. They are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "ee0995a8-b7f9-4a0f-873a-b93213054360",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Engineered Ste2 variants show differential internalization rates depending on available internalization signals. Wildtype Ste2 internalizes rapidly (complete within 10 min). Ste2-\u0394C (lacking NPFxD but retaining ubiquitinatable lysines) and Ste2-8K>R (retaining NPFxD but lacking ubiquitinatable lysines) show intermediate internalization rates. Ste2-\u0394C,8K>R (lacking both signals) shows almost no internalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 establish a system to test Ub-dependent vs. Ub-independent internalization using engineered Ste2 variants. The internalization assays shown in Figure 5D and supplements provide clear quantitative data supporting the differential rates. This validates the experimental system for subsequent genetic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "e32beb2e-f92d-4e41-af6e-5c7b9021554b",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Loss of Ub-binding by ANTH domains alone, or by Ent1/2 and Ede1 alone, does not affect Ste2 internalization. Combined mutations in all three ANTH domains (3xANTH\u0394Ub) or in Ent1/2 and Ede1 (ent1\u0394Ub ent2\u0394Ub ede1\u0394UBA) had no effect on internalization of either Ste2-\u0394C or Ste2-8K>R.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 show that individual sets of Ub-binding mutations are insufficient to block internalization. The internalization assays in Figure 5E-F demonstrate that neither 3xANTH\u0394Ub alone nor Ent1/2+Ede1 Ub-binding mutations alone affect internalization. This establishes functional redundancy and sets up the key combinatorial experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "c69d2c6f-1eca-43ae-a4cb-a76d53f6a00e",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Combined loss of Ub-binding by ANTH domains, Ent1/2, and Ede1 specifically impairs Ub-dependent internalization. The combination of all Ub-binding mutations (3xANTH\u0394Ub + ent1\u0394Ub ent2\u0394Ub + ede1\u0394UBA) caused marked reduction in internalization of Ste2-\u0394C (which relies on Ub) but had no effect on internalization of Ste2-8K>R (which uses NPFxD), demonstrating cargo-specific recognition of Ub as an internalization signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 represent the key functional result. The internalization assays show that only the combination of all Ub-binding mutations impairs Ub-dependent internalization (C51), while Ub-independent internalization is unaffected (C52). This selectivity (C53) strongly supports the conclusion that these Ub-binding domains collectively recognize Ub as an internalization signal. The data in Figure 5E-F provide clear quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "5bdfaf00-c868-41f2-a743-fa60a5b6a6ae",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on ubiquitin as an internalization signal and the role of known Ub-binding proteins in CME. Ubiquitination serves as a signal for CME internalization across eukaryotes. Ede1/Eps15 and Ent1,2/Epsin are candidate cargo receptors for Ub, but combined inactivation of their Ub-binding domains does not affect Ub-dependent internalization of Ste2, suggesting additional components are involved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C61 provide essential background and motivation for the study. They are supported by extensive citations to prior work and establish the gap in knowledge that this manuscript addresses. These are not new findings but rather context from the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    },
+    {
+      "id": "b4b6d538-909d-47cd-b266-51a7bb45cb46",
+      "content_id": "b0195654-c26c-488a-bd67-63e7c5c266b6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Summary of main findings: ANTH domains bind Ub with \u00b5M affinity via a unique C-terminal region, and combined loss of Ub-binding by ANTH domains and other Ub-binding proteins causes defects in Ub-dependent but not Ub-independent internalization of Ste2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 summarize the major findings of the manuscript. C62 summarizes the structural findings (supported by claims C8-C16), C63 summarizes the functional findings with Ub-dependent cargo (supported by claims C51, C53), and C64 summarizes the specificity (supported by claims C52, C53). These summary claims are well-supported by the detailed results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:08:51.732955Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c63bf088-9d43-4c31-87f6-d73e33358b2c",
+      "result_id": "f9683d8a-929f-41bc-bd5a-28f9f48498d9"
+    },
+    {
+      "claim_id": "13970850-bc0b-4efa-8146-64385c64c083",
+      "result_id": "f9683d8a-929f-41bc-bd5a-28f9f48498d9"
+    },
+    {
+      "claim_id": "8a9b7041-1b4e-4800-98e3-90f418f4498d",
+      "result_id": "f9683d8a-929f-41bc-bd5a-28f9f48498d9"
+    },
+    {
+      "claim_id": "8bcd590b-f095-4538-8a5c-ea95133d3194",
+      "result_id": "f9683d8a-929f-41bc-bd5a-28f9f48498d9"
+    },
+    {
+      "claim_id": "6581f4f1-ef4e-422c-9811-56d62cb863b0",
+      "result_id": "e89ac1f0-ce54-4501-801d-cda462b04154"
+    },
+    {
+      "claim_id": "42c8d2f8-2a7c-4c88-8129-93a157f8babc",
+      "result_id": "e89ac1f0-ce54-4501-801d-cda462b04154"
+    },
+    {
+      "claim_id": "4ac93bf1-7067-46a1-81dd-498c28ae3442",
+      "result_id": "e89ac1f0-ce54-4501-801d-cda462b04154"
+    },
+    {
+      "claim_id": "cd0bc852-7d56-4522-b110-488fb03515dc",
+      "result_id": "2c764339-0793-4c4a-995d-498179f3955e"
+    },
+    {
+      "claim_id": "14e0efc4-753b-4788-8f08-ceb022b392d8",
+      "result_id": "2c764339-0793-4c4a-995d-498179f3955e"
+    },
+    {
+      "claim_id": "710a61ae-d220-4123-974f-88c419767c26",
+      "result_id": "bbb3b936-c712-4e51-b5e2-043c66a959fe"
+    },
+    {
+      "claim_id": "9c54aaf6-127d-4502-a820-cf71b48794a7",
+      "result_id": "bbb3b936-c712-4e51-b5e2-043c66a959fe"
+    },
+    {
+      "claim_id": "9b8def4e-203c-49c4-a701-d74fb296067c",
+      "result_id": "bbb3b936-c712-4e51-b5e2-043c66a959fe"
+    },
+    {
+      "claim_id": "a57d1dbf-c746-417b-8603-8ddb04b6583a",
+      "result_id": "bbb3b936-c712-4e51-b5e2-043c66a959fe"
+    },
+    {
+      "claim_id": "83c74a71-39c1-4a63-8ea5-af2d34e61e33",
+      "result_id": "bbb3b936-c712-4e51-b5e2-043c66a959fe"
+    },
+    {
+      "claim_id": "d9a2ecb8-ad35-4d2e-baf4-d0dd3edb3034",
+      "result_id": "bbb3b936-c712-4e51-b5e2-043c66a959fe"
+    },
+    {
+      "claim_id": "3034d064-4585-4040-b2c7-b7d6f8c1aba8",
+      "result_id": "bbb3b936-c712-4e51-b5e2-043c66a959fe"
+    },
+    {
+      "claim_id": "2233feaa-ea65-495a-be6b-4a23505c4bbf",
+      "result_id": "721ff1d3-21f8-4803-b6aa-e88b86bb502b"
+    },
+    {
+      "claim_id": "654a5bb1-1fa1-4763-a5a4-8322645b7eac",
+      "result_id": "721ff1d3-21f8-4803-b6aa-e88b86bb502b"
+    },
+    {
+      "claim_id": "54c569d5-7b43-46bf-bd23-863f1240376e",
+      "result_id": "721ff1d3-21f8-4803-b6aa-e88b86bb502b"
+    },
+    {
+      "claim_id": "3631563d-e647-4fab-97fe-7fc134d6bed2",
+      "result_id": "721ff1d3-21f8-4803-b6aa-e88b86bb502b"
+    },
+    {
+      "claim_id": "9597bdf4-79dd-46f8-8914-bb4fd5f806a7",
+      "result_id": "721ff1d3-21f8-4803-b6aa-e88b86bb502b"
+    },
+    {
+      "claim_id": "d9620d72-e35b-4829-9a75-171b6356563b",
+      "result_id": "5b13a2b5-e2c7-4ec5-b0b0-dfb03206bb77"
+    },
+    {
+      "claim_id": "7c42cd1e-08c2-4a6a-8885-3910c4008d58",
+      "result_id": "5b13a2b5-e2c7-4ec5-b0b0-dfb03206bb77"
+    },
+    {
+      "claim_id": "9e6df823-66d7-472e-9607-d5abbac40535",
+      "result_id": "5b13a2b5-e2c7-4ec5-b0b0-dfb03206bb77"
+    },
+    {
+      "claim_id": "1218e118-5fb5-4c89-980d-ecb052ff199a",
+      "result_id": "5b13a2b5-e2c7-4ec5-b0b0-dfb03206bb77"
+    },
+    {
+      "claim_id": "bafcdd75-2e1d-4d8f-81ce-4f849dcdea5e",
+      "result_id": "5b13a2b5-e2c7-4ec5-b0b0-dfb03206bb77"
+    },
+    {
+      "claim_id": "d62abf11-a75d-47b5-9512-5e7cedfd0f42",
+      "result_id": "5b13a2b5-e2c7-4ec5-b0b0-dfb03206bb77"
+    },
+    {
+      "claim_id": "077557d1-b4e3-4dc8-80ee-313f3a97a3b1",
+      "result_id": "eab23b00-a88a-4db8-b7d1-75b52c789ae8"
+    },
+    {
+      "claim_id": "2dd4dbeb-ee6a-4b55-95ba-e8f2557ce3de",
+      "result_id": "37c0c3ef-0ea2-454a-ae34-b3b841d6972c"
+    },
+    {
+      "claim_id": "6a1e1737-6fb3-4fcf-9f63-c0ff81bdb171",
+      "result_id": "37c0c3ef-0ea2-454a-ae34-b3b841d6972c"
+    },
+    {
+      "claim_id": "943626dc-9b76-4a72-b2ec-888d7635a34a",
+      "result_id": "37c0c3ef-0ea2-454a-ae34-b3b841d6972c"
+    },
+    {
+      "claim_id": "cb37ec84-3e4a-413e-953a-7dd115cbd41c",
+      "result_id": "37c0c3ef-0ea2-454a-ae34-b3b841d6972c"
+    },
+    {
+      "claim_id": "855dbfa0-b26f-4565-a830-419d3d31848a",
+      "result_id": "37c0c3ef-0ea2-454a-ae34-b3b841d6972c"
+    },
+    {
+      "claim_id": "692507f1-68b9-4d24-960a-44c80cd43f62",
+      "result_id": "37c0c3ef-0ea2-454a-ae34-b3b841d6972c"
+    },
+    {
+      "claim_id": "5c76dcb2-c171-495c-8078-4abd1626c220",
+      "result_id": "37c0c3ef-0ea2-454a-ae34-b3b841d6972c"
+    },
+    {
+      "claim_id": "c64d94f5-2cf4-4453-980d-e63d3f5edbcf",
+      "result_id": "37c0c3ef-0ea2-454a-ae34-b3b841d6972c"
+    },
+    {
+      "claim_id": "6b693b98-580f-4bc5-93f1-d7410544303e",
+      "result_id": "e32b756c-cd4e-4f64-a28d-c1fa32799806"
+    },
+    {
+      "claim_id": "35efc3b2-be97-4d72-a0ce-da8c89a9a297",
+      "result_id": "e32b756c-cd4e-4f64-a28d-c1fa32799806"
+    },
+    {
+      "claim_id": "f1e3b126-b4ab-4fa2-b21a-2ed8ebd66945",
+      "result_id": "dff8ce85-38f7-4777-98ca-1ccea2e175ec"
+    },
+    {
+      "claim_id": "7e1dd873-bb5b-46b8-9666-9c742c7c5e69",
+      "result_id": "dff8ce85-38f7-4777-98ca-1ccea2e175ec"
+    },
+    {
+      "claim_id": "2b683a8b-7d4f-4d26-a216-0084432e1e2c",
+      "result_id": "dff8ce85-38f7-4777-98ca-1ccea2e175ec"
+    },
+    {
+      "claim_id": "74e40f0a-964b-4f9a-a5cb-b6a6e04f45e2",
+      "result_id": "dff8ce85-38f7-4777-98ca-1ccea2e175ec"
+    },
+    {
+      "claim_id": "8a23f9fc-ae23-4461-8cd8-52b4734f0c93",
+      "result_id": "dff8ce85-38f7-4777-98ca-1ccea2e175ec"
+    },
+    {
+      "claim_id": "20611247-f3f3-4284-8ea1-1ba3f958ad5a",
+      "result_id": "ee0995a8-b7f9-4a0f-873a-b93213054360"
+    },
+    {
+      "claim_id": "96a67451-2548-49db-9a9b-333054788b3a",
+      "result_id": "ee0995a8-b7f9-4a0f-873a-b93213054360"
+    },
+    {
+      "claim_id": "23ef0e7c-813b-4809-8588-b484c39e8028",
+      "result_id": "ee0995a8-b7f9-4a0f-873a-b93213054360"
+    },
+    {
+      "claim_id": "60cca2cc-de20-44e5-8f06-2a05d8fb55ea",
+      "result_id": "ee0995a8-b7f9-4a0f-873a-b93213054360"
+    },
+    {
+      "claim_id": "948c9333-a392-4392-bb2f-3e0167bedf3c",
+      "result_id": "e32beb2e-f92d-4e41-af6e-5c7b9021554b"
+    },
+    {
+      "claim_id": "bb213a27-5479-4ac8-9d02-0d12540cc77c",
+      "result_id": "e32beb2e-f92d-4e41-af6e-5c7b9021554b"
+    },
+    {
+      "claim_id": "884542ae-d8bf-483e-888f-bbcb952cfcef",
+      "result_id": "e32beb2e-f92d-4e41-af6e-5c7b9021554b"
+    },
+    {
+      "claim_id": "b1a09d5b-7764-4731-ae3e-5d3a948768ec",
+      "result_id": "c69d2c6f-1eca-43ae-a4cb-a76d53f6a00e"
+    },
+    {
+      "claim_id": "748fd41b-c756-4cfc-9b34-4e1658721452",
+      "result_id": "c69d2c6f-1eca-43ae-a4cb-a76d53f6a00e"
+    },
+    {
+      "claim_id": "e6f06e75-4fcb-4a54-bedd-7ec14b487ac3",
+      "result_id": "c69d2c6f-1eca-43ae-a4cb-a76d53f6a00e"
+    },
+    {
+      "claim_id": "a426fe21-294d-463e-9395-180e3a6abeef",
+      "result_id": "5bdfaf00-c868-41f2-a743-fa60a5b6a6ae"
+    },
+    {
+      "claim_id": "d72ad533-5fcb-4991-b7c9-b95e07b176ce",
+      "result_id": "5bdfaf00-c868-41f2-a743-fa60a5b6a6ae"
+    },
+    {
+      "claim_id": "a9beab0c-9e0e-46f1-bdf6-674993f4b60a",
+      "result_id": "5bdfaf00-c868-41f2-a743-fa60a5b6a6ae"
+    },
+    {
+      "claim_id": "cb905565-6c91-4471-9a7b-ee5488116078",
+      "result_id": "5bdfaf00-c868-41f2-a743-fa60a5b6a6ae"
+    },
+    {
+      "claim_id": "721c0884-8931-4ced-887d-c8ddf9fe42cd",
+      "result_id": "5bdfaf00-c868-41f2-a743-fa60a5b6a6ae"
+    },
+    {
+      "claim_id": "5ba9f911-86a9-4af2-9570-be4b050dfc3e",
+      "result_id": "5bdfaf00-c868-41f2-a743-fa60a5b6a6ae"
+    },
+    {
+      "claim_id": "8678e4be-d2b1-4f1e-a875-632bbb583ce6",
+      "result_id": "5bdfaf00-c868-41f2-a743-fa60a5b6a6ae"
+    },
+    {
+      "claim_id": "39ddf1c1-64be-4b78-bb8e-6b3b4002f0d7",
+      "result_id": "5bdfaf00-c868-41f2-a743-fa60a5b6a6ae"
+    },
+    {
+      "claim_id": "17343e51-9e52-4868-b422-707443cad90c",
+      "result_id": "b4b6d538-909d-47cd-b266-51a7bb45cb46"
+    },
+    {
+      "claim_id": "962f4c0b-e2a2-42c1-a2bd-f895c62bf497",
+      "result_id": "b4b6d538-909d-47cd-b266-51a7bb45cb46"
+    },
+    {
+      "claim_id": "c424165d-5631-4aee-97c1-61840d87c914",
+      "result_id": "b4b6d538-909d-47cd-b266-51a7bb45cb46"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79",
+      "C82",
+      "C83",
+      "C84",
+      "C90",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "FF and FB inputs selectively target looped IT neurons in L5 and L6 over non-looped IT, PT, and CT neurons. This selectivity is often subcellularly specific, with preferential innervation of apical dendrites (especially in L5) rather than perisomatic dendrites. In 7 out of 8 FF/FB projections to L5/L6, stronger inputs to looped IT neurons were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C94 collectively demonstrate layer-specific looped connectivity using sCRACM mapping with appropriate controls (C46-C48). Statistical significance is reported with p-values for multiple comparisons across different projection types and dendritic compartments. The findings are internally consistent across multiple experimental configurations (V1\u2192V2L, V1\u2192V2M, V2L\u2192V1, V2M\u2192V1) and supported by quantitative data in Figures 4-5. Control experiments address potential confounds including dendritic filtering (C80) and Ih currents (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C95"
+    ],
+    "result": "In L2/3, FF and FB inputs show no preference for looped neurons, and in one case (V1\u2192V2M FF inputs to L1), inputs were significantly stronger in non-looped neurons. This contrasts sharply with the looped preference observed in L5/L6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C95 demonstrate a clear layer-specific difference in connectivity rules. Statistical tests show no significant differences in most L2/3 comparisons (p>0.05), with one significant exception showing opposite selectivity (C86, p=0.013). This is supported by quantitative data in Figure 6 and is internally consistent with the overall finding of laminar-specific connectivity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Stronger FB innervation of looped L6 IT neurons results in larger depolarizations and increased spiking activity upon photostimulation compared to non-looped neurons, demonstrating functional consequences of the anatomical selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 provide functional validation of the sCRACM findings using current-clamp recordings without channel blockers. The relative difference in input strength measured with current-clamp (CRI: -0.38\u00b10.35) matches sCRACM measurements (SRI: -0.39\u00b10.36 and -0.52\u00b10.39), validating the technique (C97-C98). Statistical significance is demonstrated for both depolarization amplitude (p=0.004) and spiking modulation (p=0.0273, Figure 8E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Different projection neuron types (IT, PT, CT) are intermingled within cortical layers, with IT neurons distributed across L2-6, while PT and CT neurons are confined to L5 and L5/6 respectively. Some IT neurons project to multiple cortical areas, but cortical- and subcortical-projecting neurons constitute distinct classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 describe the anatomical organization of projection neurons supported by retrograde tracing data (Figure 1A,B) and citations to established literature (Harris et al., 2019; Minamisawa et al., 2018; Economo et al., 2018; Tasic et al., 2018). The finding of intermingled neurons is critical for establishing that observed connectivity differences reflect synaptic selectivity rather than spatial accessibility (C44).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "FF axons in V2L are denser in L2/3 and L6, while FB axons in V1 arborize in L1 and L6 while avoiding middle layers. Despite axo-dendritic overlap suggesting equal accessibility, functional mapping is required to reveal synaptic specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 describe the laminar distribution of FF and FB axons using AAV-GFP tracing (Figure 1C,D). The observation that axo-dendritic overlap doesn't predict connectivity (C45) is supported by citation to Harris and Shepherd, 2015 and provides justification for the functional mapping approach used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "FF and FB inputs show distinct dendritic targeting patterns. FF inputs target perisomatic dendrites in L2/3 and extend to apical dendrites in L5/L6. FB inputs show greater targeting of distal dendrites in L1 compared to FF, with preferential detection in L5 IT neurons over PT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 describe the subcellular distribution of inputs supported by sCRACM mapping data (Figure 3). The findings are consistent with previous measurements (citations to Petreanu et al., 2009; Yang et al., 2013) and with the laminar profile of axons (C56). The observation that FF axons also target apical dendrites (C53-C54) is an important finding that challenges the assumption that apical targeting is exclusive to FB.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Retrograde AAV-mediated transfection of ChR2 was rare (96% of neurons showed delayed EPSC onset), indicating that sCRACM maps measure monosynaptic CC inputs with minimal contamination from local collaterals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide critical validation of the sCRACM technique. The delayed onset of EPSCs (>2ms in 96% of neurons) is supported by quantitative data and histological analyses (Figure 2\u2014figure supplement 2). Additional validation using AAV5 with lower retrograde infection confirms the findings are not artifacts of retrograde labeling. This is essential for interpreting all subsequent connectivity measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C80",
+      "C81"
+    ],
+    "result": "The stronger FB inputs to looped L5 IT neurons in L1 cannot be explained by differences in dendritic morphology or passive filtering properties. V2L- and V2M-projecting neurons have similar apical morphologies, and simulations show PT neurons would receive larger signals if connectivity were non-selective. Ih current differences also do not account for the observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C80-C81 provide important controls ruling out alternative explanations. Morphological analysis (Figure 5\u2014figure supplement 2) shows similar dendritic structures between looped populations. NEURON simulations (Figure 5\u2014figure supplement 3) demonstrate that PT neurons' thicker dendrites would predict larger, not smaller, responses without selectivity. Ih blocker experiments (Figure 5\u2014figure supplement 4) confirm the effect persists, supporting genuine synaptic selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "CC axons provide inputs to all neuron types regardless of projection pattern, but input strength differs consistently across projection classes. IT neurons are the principal excitatory targets in deep layers, with looped IT neurons being the main recipients in most cases. The specificity is not absolute as monosynaptic inputs were detected in all cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C114 summarize the overall connectivity pattern supported by comprehensive sCRACM data across multiple projection types. The findings are consistent with previous reports (citations to DeNardo et al., 2015; Kim et al., 2015; Kinnischtzke et al., 2016; Yamawaki et al., 2016) while extending them by comparing looped vs. non-looped IT neurons. The acknowledgment that specificity is not absolute (C114) appropriately qualifies the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The measurements likely underestimate the selectivity of CC inputs for looped neurons due to incomplete retrograde labeling (many neurons project to multiple areas) and non-specific ChR2 expression across layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C118 acknowledge important limitations that could lead to underestimation of selectivity. While the reasoning is sound (supported by citations to Economo et al., 2016; Han et al., 2018), these are speculative statements about potential technical limitations rather than demonstrated effects. The magnitude of underestimation cannot be quantified from the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The absence of loop specificity in L2/3 is unlikely due to incomplete labeling, as L5 showed looped connectivity despite having more neurons with bifurcating axons. The connectivity rules in L2/3 differ from deep layers, though some variability across individual projections may exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 provide reasoning for why L2/3 shows different connectivity rules. The comparison with L5 (C119) is supported by data in Figure 1 showing double-labeling percentages. Citation to Kim et al., 2020 (C120) provides independent support for different L2/3 connectivity patterns. However, C122 acknowledges uncertainty about whether differences reflect true biological variability or measurement limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Both FF and FB inputs innervate perisomatic and apical dendrites of L5 IT neurons, but differ in apical distribution (FB targets L1 tufts, FF extends to L2). Both show stronger selectivity for apical than perisomatic dendrites of looped neurons, suggesting an important role for apical dendrites in looped hierarchical interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 describe the subcellular specificity of looped connectivity in L5 supported by sCRACM data (Figures 3, 5, 7). The finding that 3/4 CC projections showed apical preference when comparing looped vs. non-looped IT neurons (C126) is quantitatively supported. The inference about functional importance (C127) is reasonable given the consistent pattern across multiple projections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The selective engagement of looped neurons by FF and FB afferents supports theories of looped computations in cortical circuitry, suggesting L5/6 IT neurons may be preferential players in implementing long-range loops. This could enable neurons to optimize synaptic weights based on activity in higher-order areas they project to, similar to backpropagation in artificial neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C140 connect the experimental findings to theoretical frameworks, supported by multiple citations to computational models (Bastos et al., 2012; Guerguiev et al., 2017; Lillicrap et al., 2016; etc.). The experimental data (C133) directly supports these theories by demonstrating the anatomical substrate for looped interactions. However, C140 is appropriately qualified as speculative about functional implications, as the study demonstrates connectivity but not learning mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The results are consistent with some degree of weight alignment (symmetry between FF and FB weights) in neocortical circuits, as predicted by models where descending projections modulate plasticity. However, the experimental approach cannot prove the existence of symmetric synaptic weights in pairs of neurons at different hierarchical levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C147 discuss weight symmetry, a theoretical concept from computational models (citations to Guerguiev et al., 2017; Lillicrap et al., 2016; Sacramento et al., 2018). While the data showing stronger inputs to looped neurons from both FF and FB pathways (C145) is consistent with weight alignment, C147 appropriately acknowledges this cannot be proven without paired recordings between hierarchical levels. The inference is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "While the findings and laminar distribution of CC connections are consistent with pairs of same-layer neurons in different cortical areas selectively engaging in bidirectional monosynaptic loops, the prevalence of such circuit arrangements remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C153 discuss the possibility of reciprocal neuron pairs forming loops, supported by citations about laminar specificity (DeNardo et al., 2015) and axonal targeting patterns (Harris et al., 2019; Tasic et al., 2018). However, C148 and C153 appropriately acknowledge this remains unknown, as the study measured population selectivity with ChR2 expressed in multiple neurons, not single-cell resolution of reciprocal pairs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Since input strength in L2/3 was either independent of looped connectivity or weaker in looped neurons, synaptic weight symmetry (if present) might be laminar-specific, involving deep but not superficial layers. This suggests recurrent interareal cortical interactions may play different roles in supragranular and infragranular layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C157 synthesize the major finding of laminar-specific connectivity rules. C154 accurately summarizes the L2/3 data. C155-C156 are appropriately qualified as speculative about weight symmetry mechanisms. C157 represents a well-supported conclusion that recurrent interactions differ by layer, directly supported by the contrasting results in L2/3 vs. L5/L6 throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes the hierarchical organization of cortical areas based on FF and FB projections, the classification of projection neuron types (IT, PT, CT), and identifies the key unknown question: whether CC connections are wired to selectively facilitate looped computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 provide background context supported by extensive citations to established literature. These claims appropriately frame the study's motivation by identifying what is known (hierarchical organization, projection neuron types, existence of monosynaptic loops) and what remains unknown (selectivity for looped vs. non-looped neurons, C27-C28). The background is well-supported but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The preferential wiring of FF and FB axons to IT neurons could be guided by projection-type specific molecular cues. The findings are consistent with some previous studies showing IT preference but contrast with others showing no preference or different patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C110 discuss consistency with prior literature. C105 is speculative about molecular mechanisms (though supported by citation to Tasic et al., 2018 on gene expression). C106-C110 cite previous studies with varying results, acknowledging the field shows mixed findings. The discussion appropriately notes discrepancies may reflect pathway-specific differences or methodological limitations in detecting subcellular selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Inputs to apical tufts might be selectively involved in recurrent computations while perisomatic inputs mediate other hierarchical exchanges. The apical dendrites of L5 IT neurons are less well understood than PT neurons but can perform complex computations. Distal inputs in L2/3 might also be involved in looped interactions with different rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C132 are largely speculative about functional roles of different dendritic compartments. C129 is supported by citations to established literature on dendritic computation (Larkum, 2013; London and H\u00e4usser, 2005; Stuart and Spruston, 2015). C130 acknowledges knowledge gaps. C128 and C132 are reasonable hypotheses based on the anatomical findings but lack direct functional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C141",
+      "C142"
+    ],
+    "result": "CC inputs and postsynaptic neurons have similar tuning properties and overlapping receptive fields. L5 PT neurons receive more inputs from frontal/associative areas than IT neurons, and their thicker apical dendrites might mediate top-down processes not requiring excitatory looped connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 are supported by citations to studies on tuning properties (Glickfeld et al., 2013; Huh et al., 2018; Zhang et al., 2018; Marques et al., 2018). C141 is supported by citation to Kim et al., 2015. C142 is speculative about functional specialization but is appropriately qualified and supported by citations to studies on attentional modulation (Manita et al., 2015; Takahashi et al., 2016, 2020; Zhang et al., 2014).",
+    "result_type": "MINOR"
+  }
+]

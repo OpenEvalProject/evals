@@ -1,0 +1,1826 @@
+{
+  "submission": {
+    "id": "e8e34146-56d6-4b10-b49c-c529d8316240",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:57:17.514595Z",
+    "updated_at": "2025-12-03T13:57:17.514595Z"
+  },
+  "content": [
+    {
+      "id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "submission_id": "e8e34146-56d6-4b10-b49c-c529d8316240",
+      "content_type": "manuscript",
+      "content_text": "# US women screen at low rates for both cervical and colorectal cancers than a single cancer: a cross-sectional population-based observational study\n\n## Authors\n\n- Diane M Harper<sup>1</sup> ([ORCID: 0000-0001-7648-883X](https://orcid.org/0000-0001-7648-883X)) \u2020\n- Melissa Plegue<sup>1</sup>\n- Masahito Jimbo<sup>1</sup>\n- Sherri Sheinfeld Gorin<sup>1</sup>\n- Ananda Sen<sup>1</sup>\n\n### Affiliations\n\n1. Department of Family Medicine, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n2. Department of Obstetrics and Gynecology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n3. Department of Women's and Gender Studies, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n4. Department of Family and Community Medicine, University of Illinois Chicago United States ([ROR:02mpq6x41](https://ror.org/02mpq6x41))\n5. Department of Biostatistics, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Using screen counts, women 50\u201364 years old have lower cancer screening rates for cervical and colorectal cancers (CRC) than all other age ranges. This paper aims to present woman-centric cervical cancer and CRC screenings to determine the predictor of being up-to-date for both.Methods:We used the Behavioral Risk Factor Surveillance System (BRFSS), an annual survey to guide health policy in the United States, to explore the up-to-date status of dual cervical cancer and CRC screening for women 50\u201364 years old. We categorized women into four mutually exclusive categories: up-to-date for dual-screening, each single screen, or neither screen. We used multinomial multivariate regression modeling to evaluate the predictors of each category.Results:Among women ages 50\u201364 years old, dual-screening was reported for 58.2% (57.1\u201359.4), cervical cancer screening alone (27.1% (26.0\u201328.2)), CRC screening alone (5.4% (4.9\u20135.9)), and neither screen (9.3% (8.7\u20139.9)). Age, race, education, income, and chronic health conditions were significantly associated with dual-screening compared to neither screen. Hispanic women compared to non-Hispanic White women were more likely to be up-to-date with cervical cancer screening than dual-screening (adjusted odds ratio [aOR] = 1.39 (1.10, 1.77)). Compared to younger women, those 60\u201364 years are significantly more likely to be up-to-date with CRC screening than dual-screening (aOR = 1.75 (1.30, 2.35)).Conclusions:Screening received by each woman shows a much lower rate of dual-screening than prior single cancer screening rates. Addressing dual-screening strategies rather than single cancer screening programs for women 50\u201364 years may increase both cancer screening rates.Funding:This work was supported by NIH through the Michigan Institute for Clinical and61 Health Research UL1TR002240 and by NCI through The University of Michigan Rogel Cancer62 Center P30CA046592 grants.\n\n## Introduction\n\nOne of the primary goals of Healthy People 2030 is to improve cancer screening behaviors with evidence-based screening and prevention strategies (HP2030-CR02 Office of Disease Prevention and Health Promotion, 2020). On the population level, the Center for Disease Control and Prevention (CDC) issues the Behavioral Risk Factor Surveillance System (BRFSS) survey which collects data on cancer screenings by cancer type, screening method, and by the time from their last screening (Behavioral Risk Factor Surveillance System, 2019). BRFSS is the United States\u2019 premier database used to report single cancer screening rates, such as cervical cancer or colorectal cancer (CRC). Never has the perspective of woman-centered screening been published reporting the patterns of screening for both cervical cancer and CRC (dual-screening) among women 50\u201365 years old.\n\nCRC screening has never approached the Healthy People goals, but up-to-date screening has shown a steady increase, regardless of screening method (National Cancer Institute Cancer Trends Progress Reports, 2020a). Most recently, however, BRFSS showed a significant gap in CRC screening among women 50\u201364 years of age, with self-reported rates as low as 50% for the youngest age-appropriate women (Joseph et al., 2020). At this time, among women 50\u201364 years old, the incidence of CRC is 60/100,000 women, and the mortality is 20/100,000 women (Seigel, 2020). Unlike CRC screening, cervical cancer screening prevalence peaked at the turn of the 21st century and has been declining year over year (National Cancer Institute Cancer Trends Progress Reports, 2020b, summary table). Like CRC screening, the lowest cervical cancer screening rates are among women who were 50\u201364 years old (Harper et al., 2020). Cervical cancer incidence and mortality are reported in 5-year time frames: among women 50\u201354 years old, the incidence is 12.5/100,000; 55\u201359 years old: 12.1/100,000; 60\u201364 years old: 10.8/100,000. The mortality for the same age groups is 4.6/100,000, 4.6/100,000, and 4.3/100,000 (US Cancer Statistics Working Group, 2021US Cancer Statistics Working Group, 2021US Cancer Statistics Working Group, 2021).\n\nBoth cervical cancer and CRC generally do not have symptoms until a very late stage when cure is not possible (World Health Organization, 2017), making early screening, even self-screening (El Khoury et al., 2021; Bakr et al., 2020; Jaklevic, 2020), a critical health imperative.\n\nThis paper aims to present cervical cancer and CRC screenings per woman 50\u201364 years old and determine the predictors of being up-to-date in both cervical cancer and CRC screening (dual-screened) compared to each single screen.\n\n## Materials and methods\n\n### Survey data\n\nBRFSS is the premier US health-related telephone survey that collects state-level data about US residents regarding their health-related risk behaviors as well as their completion of clinical preventive services. BRFSS is an annual, state-based, cross-sectional telephone survey that US state health departments conduct monthly using landline telephones and cellular telephones using a standardized questionnaire developed and sponsored by the CDC. CRC screening is defined as using a home kit for blood stool tests including fecal occult blood test (FOBT) or fecal immunochemical test (FIT) or office-based procedures including sigmoidoscopy or colonoscopy. The interval options since the last screening include (1) within the past year (anytime less than 12 months ago), (2) within the past 2 years (1 year but less than 2 years ago), (3) within the past 3 years (2 years but less than 3 years ago), (4) within the past 5 years (3 years but less than 5 years ago), and (5) 5 or more years ago. The responses for cervical cancer screening are based on office-based testing for HPV, Pap test, or both. The interval options since the last screening were identical to those for CRC screening. The BRFSS dataset available for our analysis was 2018.\n\n### Screening outcomes\n\nCervical cancer screening was considered up-to-date if the respondent reported a Pap within the past 3 years, an HPV test within the past 5 years, or a Pap and HPV test within the past 5 years (Curry et al., 2018). We included the 5-year screening interval in our outcome measure of cervical cancer screening. For CRC screening, up-to-date screening included FOBT or FIT within the past year, a sigmoidoscopy within the last 5 years, or a colonoscopy within the past 10 years, in accordance with the USPSTF guidelines (Force et al., 2016; Force et al., 2021). To examine up-to-date screening for both cancers, we grouped women into four mutually exclusive screening categories: those who were up-to-date for both screens (dual-screening), those up-to-date with a single screen (cervical cancer screen only or CRC screen only), and those who denied completing either screen.\n\n### Survey respondents\n\nWe included women aged 50\u201364 years with no reported history of uterine or cervical cancer and who had not had a hysterectomy. We also excluded those with reported colon or rectal cancers and those who did not answer both the cervical cancer and CRC screening questions.\n\n### Statistical analysis\n\nData were summarized using proportions, unweighted and weighted, with 95% confidence intervals. The dataset was analyzed using weighted sampling methods to ensure valid inferences from the responding sample to the general population, correcting for nonresponse and noncoverage biases (StataCorp, 2017; BRFSS sample weights, 2018). Composite up-to-date screening prevalences were summarized across all screening methods for each cancer screen. For instance, a woman was up-to-date with CRC screening if she had reported a FIT or FOBT test within the past 1 year OR a sigmoidoscopy within the past 5 years OR a colonoscopy within the past 10 years. Likewise, a woman was up-to-date with cervical cancer screening if she had reported a Pap test within the past 3 years OR a combined Pap and HPV test within the past 5 years OR an HPV test within the past 5 years. Women with complete screening status were included in the analysis.\n\nIn order to reduce potential bias due to missingness, we employed inverse propensity weighting (Rosenbaum, 1987; Office of Disease Prevention and Health Promotion, 2019). Propensity weight was estimated as the predicted probability of nonmissingness based on a logistic regression with age, race, marital status, education, income, employment status, and insurance status as covariates all of which significantly predicted missingness. The inverse of the propensity weights was further multiplied with the BRFSS survey weights to construct updated weights, which were subsequently used in all models for the complete cases.\n\nMultinomial logistic regression was used to evaluate the associations with the predictors of screening outcomes. Predictors of interest were age, race, education, income, marital status, occupational status, geolocation, and the presence of any chronic health condition as found to be pertinent in past work (Harper et al., 2020). All tests of statistical significance used a p-value threshold of 0.05. This retrospective study was exempt from the IRB.\n\n## Results\n\n### Main results\n\nThere were 67,473 women identified between the ages of 50\u201364 years from which 40,511 met the inclusion and exclusion criteria and reported complete screening data for CRC and cervical cancers in the BRFSS 2018 survey (Figure 1). Weighted prevalences are presented in Table 1, where the largest proportion of women were of the White race, married, attended at least some college, lived in an urban area, had an income of over $50,000, and were employed.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76070/elife-76070-fig1-v1.jpg)\n\n**Figure 1.:** Screening rates differ by calculation approach. A patient-centered approach considers the total number of screens each woman has, whereas a population-centered system documents each single test completion. Our data show much lower women-centered cervical cancer and colorectal cancer (CRC) screening rates than a population-based screening approach. This difference is especially relevant as women may be able to do these two cancer screenings at home by themselves.\n\n**Table 1.**\n Demographic characteristics of the study population.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Weighted %</th>\n      <th>Eligible for analysis (n = 40,511)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age, n (%)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>50\u201354</td>\n      <td>35.8</td>\n      <td>12,165 (30.0)</td>\n    </tr>\n    <tr>\n      <td>55\u201359</td>\n      <td>31.3</td>\n      <td>13,757 (34.0)</td>\n    </tr>\n    <tr>\n      <td>60\u201364</td>\n      <td>32.9</td>\n      <td>14,589 (36.0)</td>\n    </tr>\n    <tr>\n      <td>Race, n (%)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NH White</td>\n      <td>67.4</td>\n      <td>31,340 (77.4)</td>\n    </tr>\n    <tr>\n      <td>NH Black</td>\n      <td>10.6</td>\n      <td>3401 (98.4)</td>\n    </tr>\n    <tr>\n      <td>NH Other/Multiracial</td>\n      <td>6.9</td>\n      <td>2484 (6.1)</td>\n    </tr>\n    <tr>\n      <td>Hispanic</td>\n      <td>13.5</td>\n      <td>2836 (7.0)</td>\n    </tr>\n    <tr>\n      <td>Unknown/Refused</td>\n      <td>1.5</td>\n      <td>450 (1.1)</td>\n    </tr>\n    <tr>\n      <td>Marital, n (%)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Married/partnered</td>\n      <td>63.4</td>\n      <td>25,022 (61.8)</td>\n    </tr>\n    <tr>\n      <td>Unmarried*</td>\n      <td>35.9</td>\n      <td>15,335 (37.9)</td>\n    </tr>\n    <tr>\n      <td>Unknown/refused</td>\n      <td>0.7</td>\n      <td>154 (0.4)</td>\n    </tr>\n    <tr>\n      <td>Education, n (%)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Less than high school</td>\n      <td>11.6</td>\n      <td>2293 (5.7)</td>\n    </tr>\n    <tr>\n      <td>High school</td>\n      <td>25.1</td>\n      <td>9447 (23.3)</td>\n    </tr>\n    <tr>\n      <td>Attended college/Tech school</td>\n      <td>31.1</td>\n      <td>11,066 (27.3)</td>\n    </tr>\n    <tr>\n      <td>Graduated college/Tech school</td>\n      <td>32.1</td>\n      <td>17,671 (43.6)</td>\n    </tr>\n    <tr>\n      <td>Refused/don\u2019t know</td>\n      <td>0.2</td>\n      <td>34 (0.1)</td>\n    </tr>\n    <tr>\n      <td>Location, n (%)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Urban</td>\n      <td>92.7</td>\n      <td>33,500 (82.7)</td>\n    </tr>\n    <tr>\n      <td>Rural</td>\n      <td>6.2</td>\n      <td>6292 (15.5)</td>\n    </tr>\n    <tr>\n      <td>Unknown/missing</td>\n      <td>1.1</td>\n      <td>719 (1.8)</td>\n    </tr>\n    <tr>\n      <td>Income, n (%)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>&lt;50,000</td>\n      <td>36.5</td>\n      <td>14,870 (36.7)</td>\n    </tr>\n    <tr>\n      <td>50,000+</td>\n      <td>46.4</td>\n      <td>20,295 (50.1)</td>\n    </tr>\n    <tr>\n      <td>Don\u2019t know/refused</td>\n      <td>17.1</td>\n      <td>5346 (13.2)</td>\n    </tr>\n    <tr>\n      <td>Employment status\u2020, n (%)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Employed/self-employed</td>\n      <td>59.5</td>\n      <td>25,289 (62.4)</td>\n    </tr>\n    <tr>\n      <td>Unemployed, looking</td>\n      <td>5.4</td>\n      <td>1866 (4.6)</td>\n    </tr>\n    <tr>\n      <td>Unemployed, not looking</td>\n      <td>21.3</td>\n      <td>8392 (20.7)</td>\n    </tr>\n    <tr>\n      <td>Unable to work</td>\n      <td>12.7</td>\n      <td>4763 (11.8)</td>\n    </tr>\n    <tr>\n      <td>Refused</td>\n      <td>1.2</td>\n      <td>201 (0.5)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Unmarried includes divorced, widowed, separated, and never married.\u2020\u2018Unemployed, not looking\u2019 includes \u2018Homemaker, Student, and Retired\u2019, \u2018Unemployed, looking\u2019 includes out of work over a year and out of work less than a year._\n\nTable 2 presents mutually exclusive up-to-date screening categories by screening modality by the woman. The weighted prevalence for women with dual CRC and cervical cancer screening was 58.2% (57.1%, 59.4%), n = 24,678, for women with neither screen was 9.3% (8.7%, 9.9%), n = 3560, for women with only cervical cancer screening was 27.1% (26.0%, 28.2%), n = 10,051, and for women with only CRC screening was [5.4% (4.9%, 5.9%)], n = 2222. The tests used by the majority of women for CRC and cervical cancer screening, respectively, were colonoscopy and a Pap test (54.6% (53.2%, 55.9%)). Women who chose only one screen chose cervical cancer screening five times more often than CRC screening (27.1% vs. 5.4%). By traditional screening calculations, cervical cancer screening was 86% (85.4\u201386.1) and CRC screening was 66% (65.9\u201366.8) (see Figure 1).\n\n**Table 2.**\n Up-to-date screening status by woman by screening modality.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"3\">Dual screened, n = 24,678; 58.2% (57.1, 59.4)</th>\n      <th rowspan=\"2\">Current for colorectal only, n = 22225.4% (4.9, 5.9)</th>\n    </tr>\n    <tr>\n      <th>Pap only, within last 3 years</th>\n      <th>HPV only, within last 5 years</th>\n      <th>Pap and HPV, within last 5 years</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Blood stool only,last year</td>\n      <td>5.0 (4.3, 5.8)</td>\n      <td>0.1 (0.001, 0.2)</td>\n      <td>3.0 (2.5, 3.6)</td>\n      <td>10.0 (7.7, 13.1)</td>\n    </tr>\n    <tr>\n      <td>Sigmoidoscopy only,last 5 years</td>\n      <td>0.6 (0.4, 0.8)</td>\n      <td>&lt;0.1%</td>\n      <td>0.4 (0.3, 0.5)</td>\n      <td>1.2 (0.6, 2.3)</td>\n    </tr>\n    <tr>\n      <td>Colonoscopy only,last 10 years</td>\n      <td>54.6 (53.2, 55.9)</td>\n      <td>1.9 (1.4, 2.5)</td>\n      <td>27.2 (26.0, 28.3)</td>\n      <td>83.3 (79.4, 86.6)</td>\n    </tr>\n    <tr>\n      <td>Two CRC tests</td>\n      <td>3.8 (3.4, 4.3)</td>\n      <td>&lt;0.1%</td>\n      <td>3.3 (2.8, 4.0)</td>\n      <td>5.5 (3.4, 8.6)</td>\n    </tr>\n    <tr>\n      <td>Current for cervical cancer only, n = 10,05127.1% (26.0, 28.2)</td>\n      <td>66.5 (64.2, 68.6)</td>\n      <td>2.9 (2.2, 3.7)</td>\n      <td>30.7 (28.6, 32.8)</td>\n      <td>100%</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Not current for either, n = 3560; 9.3% (8.7, 9.9)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Women receiving only one of the two screensCRC: The left-hand column lists the types of colorectal cancer screening that a woman could report. The far right-hand column presents the weighted screening proportions (95% CI) of women with only CRC screening by that modality. For instance, 10.0% of the 5.4% of women who were only current for CRC indicated they had been screened with a blood stool test within the last year but had no other CRC screen and no other cervical cancer screen. Likewise, 83.3% of the 5.4% of women who were only current on CRC screening (but had no other CRC screen and no other cervical cancer screen) indicated that they had a colonoscopy within the past 10 years.Cervical: The second to bottom row indicates the weighted screening proportions (95% CI) of women who only were up- to -date with cervical cancer screening by the columnar headings for types of cervical cancer screening modalities. For instance, 66.5% of the 27.1% of women who only had cervical cancer screening received a Pap test within the past 3 years. Likewise, 30.7% of the 27.1% of women who only had cervical cancer screening had received co-testing within the past 5 years.Women who had both screens by modalityThe top row indicates that 58.2% of all women were up-to-date with both cervical cancer and colorectal cancer screening (dual-screening). The inner 12 cells indicate the weighted percentage of women with dual-screening by modality. For instance, 54.6% of the 58.2% of women having both screens up-to-date did so with a colonoscopy and a Pap test. Likewise, 27.4% of 58.7% of women having both screens up-to-date did so with colonoscopy and cotesting.Women not up-to-date with either screenThe bottom row indicates that 9.3% of the analytic cohort received neither screen because of underscreening or no screening.CI, confidence interval; CRC, colorectal cancer._\n\nThe descriptive analyses (Table 3) showed differences among women across the four mutually exclusive groups. Age by 5-year intervals showed that the youngest group was least screened for both CRC and cervical cancer (dual-screening) (47.4%) as well as CRC screening alone (3.1%). However, this age group had the highest screening for cervical cancer alone (40.0%). Among races, Hispanic women had the lowest dual-screening (46.5%), the lowest screening for CRC alone (5.2%), and yet had the highest screening for cervical cancer alone (39.4%).\n\n**Table 3.**\n Sociodemographic descriptors by screening category.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Total</th>\n      <th colspan=\"3\">Dual-screening</th>\n      <th colspan=\"3\">Cervical cancer screening alone</th>\n      <th colspan=\"3\">CRC screening alone</th>\n      <th colspan=\"3\">Neither screening</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>n = 40,511</td>\n      <td colspan=\"3\">N = 24,678</td>\n      <td colspan=\"3\">N = 10,051</td>\n      <td colspan=\"3\">N = 2222</td>\n      <td colspan=\"3\">N = 3560</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>N</td>\n      <td>Unweighted row %</td>\n      <td>Weighted row %</td>\n      <td>N</td>\n      <td>Unweighted row %</td>\n      <td>Weighted row %</td>\n      <td>N</td>\n      <td>Unweighted row %</td>\n      <td>Weighted row %</td>\n      <td>N</td>\n      <td>Unweighted row %</td>\n      <td>Weighted row %</td>\n    </tr>\n    <tr>\n      <td>Age, (n, row %)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>50\u201354</td>\n      <td>6121</td>\n      <td>50.3</td>\n      <td>47.4</td>\n      <td>4603</td>\n      <td>37.8</td>\n      <td>40.0</td>\n      <td>355</td>\n      <td>2.9</td>\n      <td>3.1</td>\n      <td>1086</td>\n      <td>8.9</td>\n      <td>9.5</td>\n    </tr>\n    <tr>\n      <td>55\u201359</td>\n      <td>8864</td>\n      <td>64.4</td>\n      <td>62.5</td>\n      <td>2893</td>\n      <td>21.0</td>\n      <td>22.7</td>\n      <td>778</td>\n      <td>5.7</td>\n      <td>5.2</td>\n      <td>1222</td>\n      <td>8.9</td>\n      <td>9.6</td>\n    </tr>\n    <tr>\n      <td>60\u201364</td>\n      <td>9693</td>\n      <td>66.4</td>\n      <td>66.0</td>\n      <td>2555</td>\n      <td>17.5</td>\n      <td>17.3</td>\n      <td>1089</td>\n      <td>7.5</td>\n      <td>7.9</td>\n      <td>1252</td>\n      <td>8.6</td>\n      <td>8.8</td>\n    </tr>\n    <tr>\n      <td>Race (n, row %)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>White</td>\n      <td>19,507</td>\n      <td>62.2</td>\n      <td>60.3</td>\n      <td>7345</td>\n      <td>23.4</td>\n      <td>24.8</td>\n      <td>1799</td>\n      <td>5.7</td>\n      <td>5.6</td>\n      <td>2689</td>\n      <td>8.6</td>\n      <td>9.3</td>\n    </tr>\n    <tr>\n      <td>Black</td>\n      <td>2198</td>\n      <td>64.6</td>\n      <td>60.7</td>\n      <td>856</td>\n      <td>25.2</td>\n      <td>26.6</td>\n      <td>137</td>\n      <td>4.0</td>\n      <td>5.4</td>\n      <td>210</td>\n      <td>6.2</td>\n      <td>7.4</td>\n    </tr>\n    <tr>\n      <td>Other*</td>\n      <td>1335</td>\n      <td>53.7</td>\n      <td>59.2</td>\n      <td>706</td>\n      <td>28.4</td>\n      <td>25.2</td>\n      <td>135</td>\n      <td>5.4</td>\n      <td>3.0</td>\n      <td>308</td>\n      <td>12.4</td>\n      <td>12.6</td>\n    </tr>\n    <tr>\n      <td>Hispanic</td>\n      <td>1381</td>\n      <td>48.7</td>\n      <td>46.5</td>\n      <td>1025</td>\n      <td>36.1</td>\n      <td>39.4</td>\n      <td>126</td>\n      <td>4.4</td>\n      <td>5.2</td>\n      <td>304</td>\n      <td>10.7</td>\n      <td>8.8</td>\n    </tr>\n    <tr>\n      <td>Education (n, row %)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Less than high school graduate</td>\n      <td>965</td>\n      <td>42.1</td>\n      <td>41.0</td>\n      <td>775</td>\n      <td>33.8</td>\n      <td>36.8</td>\n      <td>152</td>\n      <td>6.6</td>\n      <td>6.9</td>\n      <td>401</td>\n      <td>17.5</td>\n      <td>15.3</td>\n    </tr>\n    <tr>\n      <td>High school graduate</td>\n      <td>5109</td>\n      <td>54.1</td>\n      <td>52.9</td>\n      <td>2574</td>\n      <td>27.3</td>\n      <td>27.7</td>\n      <td>583</td>\n      <td>6.2</td>\n      <td>6.5</td>\n      <td>1181</td>\n      <td>12.5</td>\n      <td>12.8</td>\n    </tr>\n    <tr>\n      <td>Attended college/Tech school</td>\n      <td>6587</td>\n      <td>59.5</td>\n      <td>60.0</td>\n      <td>2820</td>\n      <td>25.5</td>\n      <td>26.2</td>\n      <td>679</td>\n      <td>6.1</td>\n      <td>5.4</td>\n      <td>989</td>\n      <td>8.9</td>\n      <td>8.4</td>\n    </tr>\n    <tr>\n      <td>Graduated college/Tech school</td>\n      <td>11,994</td>\n      <td>67.9</td>\n      <td>67.0</td>\n      <td>3876</td>\n      <td>21.9</td>\n      <td>24.2</td>\n      <td>816</td>\n      <td>4.6</td>\n      <td>3.8</td>\n      <td>985</td>\n      <td>5.6</td>\n      <td>5.1</td>\n    </tr>\n    <tr>\n      <td>Income (n, row %)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>&lt;$50K</td>\n      <td>7779</td>\n      <td>52.3</td>\n      <td>49.7</td>\n      <td>4127</td>\n      <td>27.8</td>\n      <td>29.8</td>\n      <td>1021</td>\n      <td>6.9</td>\n      <td>6.7</td>\n      <td>1943</td>\n      <td>13.1</td>\n      <td>13.8</td>\n    </tr>\n    <tr>\n      <td>\u2265$50K</td>\n      <td>13,711</td>\n      <td>67.6</td>\n      <td>65.7</td>\n      <td>4562</td>\n      <td>22.5</td>\n      <td>24.5</td>\n      <td>930</td>\n      <td>4.6</td>\n      <td>4.3</td>\n      <td>1092</td>\n      <td>5.4</td>\n      <td>5.5</td>\n    </tr>\n    <tr>\n      <td>Marital status (n, row %)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Married or partnered</td>\n      <td>15,966</td>\n      <td>63.8</td>\n      <td>61.0</td>\n      <td>6014</td>\n      <td>24.0</td>\n      <td>26.3</td>\n      <td>1230</td>\n      <td>4.9</td>\n      <td>5.0</td>\n      <td>1812</td>\n      <td>7.2</td>\n      <td>7.7</td>\n    </tr>\n    <tr>\n      <td>Single*</td>\n      <td>8630</td>\n      <td>56.3</td>\n      <td>53.7</td>\n      <td>3995</td>\n      <td>26.1</td>\n      <td>28.2</td>\n      <td>979</td>\n      <td>6.4</td>\n      <td>6.0</td>\n      <td>1731</td>\n      <td>11.3</td>\n      <td>12.1</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Occupational status (n, row %)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Employed</td>\n      <td>15,613</td>\n      <td>61.7</td>\n      <td>58.6</td>\n      <td>6566</td>\n      <td>26.0</td>\n      <td>28.6</td>\n      <td>1126</td>\n      <td>4.5</td>\n      <td>4.4</td>\n      <td>1984</td>\n      <td>7.9</td>\n      <td>8.4</td>\n    </tr>\n    <tr>\n      <td>Unemployed, looking\u2020</td>\n      <td>975</td>\n      <td>52.3</td>\n      <td>52.3</td>\n      <td>533</td>\n      <td>28.6</td>\n      <td>28.8</td>\n      <td>111</td>\n      <td>60</td>\n      <td>5.6</td>\n      <td>247</td>\n      <td>13.2</td>\n      <td>13.4</td>\n    </tr>\n    <tr>\n      <td>Unemployed, not looking\u2020</td>\n      <td>5327</td>\n      <td>63.5</td>\n      <td>62.5</td>\n      <td>1758</td>\n      <td>21.0</td>\n      <td>23.3</td>\n      <td>543</td>\n      <td>6.5</td>\n      <td>5.8</td>\n      <td>764</td>\n      <td>9.1</td>\n      <td>9.0</td>\n    </tr>\n    <tr>\n      <td>Unable to work</td>\n      <td>2662</td>\n      <td>55.9</td>\n      <td>53.5</td>\n      <td>1132</td>\n      <td>23.8</td>\n      <td>25.6</td>\n      <td>435</td>\n      <td>9.1</td>\n      <td>9.2</td>\n      <td>534</td>\n      <td>11.2</td>\n      <td>11.7</td>\n    </tr>\n    <tr>\n      <td>Location (n, row %)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Urban</td>\n      <td>20,903</td>\n      <td>62.4</td>\n      <td>58.9</td>\n      <td>8105</td>\n      <td>24.2</td>\n      <td>26.8</td>\n      <td>1762</td>\n      <td>5.3</td>\n      <td>5.3</td>\n      <td>2730</td>\n      <td>8.2</td>\n      <td>9.0</td>\n    </tr>\n    <tr>\n      <td>Rural</td>\n      <td>3479</td>\n      <td>55.3</td>\n      <td>52.0</td>\n      <td>1662</td>\n      <td>26.4</td>\n      <td>28.4</td>\n      <td>431</td>\n      <td>6.9</td>\n      <td>7.2</td>\n      <td>720</td>\n      <td>11.4</td>\n      <td>12.4</td>\n    </tr>\n    <tr>\n      <td>Chronic conditions (n, row %)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ANY</td>\n      <td>16,168</td>\n      <td>63.2</td>\n      <td>60.7</td>\n      <td>5724</td>\n      <td>22.4</td>\n      <td>24.5</td>\n      <td>1631</td>\n      <td>6.4</td>\n      <td>6.4</td>\n      <td>2052</td>\n      <td>8.0</td>\n      <td>8.4</td>\n    </tr>\n    <tr>\n      <td>Cardiac</td>\n      <td>1117</td>\n      <td>56.5</td>\n      <td>55.1</td>\n      <td>457</td>\n      <td>23.1</td>\n      <td>23.5</td>\n      <td>176</td>\n      <td>8.9</td>\n      <td>8.4</td>\n      <td>228</td>\n      <td>11.5</td>\n      <td>13.1</td>\n    </tr>\n    <tr>\n      <td>Stroke</td>\n      <td>745</td>\n      <td>58.6</td>\n      <td>60.6</td>\n      <td>293</td>\n      <td>23.1</td>\n      <td>24.2</td>\n      <td>101</td>\n      <td>8.0</td>\n      <td>5.2</td>\n      <td>132</td>\n      <td>10.4</td>\n      <td>9.9</td>\n    </tr>\n    <tr>\n      <td>Lung</td>\n      <td>4039</td>\n      <td>60.2</td>\n      <td>58.5</td>\n      <td>1539</td>\n      <td>22.9</td>\n      <td>25.6</td>\n      <td>479</td>\n      <td>7.1</td>\n      <td>6.3</td>\n      <td>655</td>\n      <td>9.8</td>\n      <td>9.6</td>\n    </tr>\n    <tr>\n      <td>Arthritis</td>\n      <td>9799</td>\n      <td>64.3</td>\n      <td>62.9</td>\n      <td>3237</td>\n      <td>21.3</td>\n      <td>22.3</td>\n      <td>1049</td>\n      <td>6.9</td>\n      <td>7.2</td>\n      <td>1148</td>\n      <td>7.5</td>\n      <td>7.6</td>\n    </tr>\n    <tr>\n      <td>Kidney</td>\n      <td>751</td>\n      <td>62.3</td>\n      <td>63.2</td>\n      <td>242</td>\n      <td>20.1</td>\n      <td>19.5</td>\n      <td>96</td>\n      <td>8.0</td>\n      <td>5.2</td>\n      <td>117</td>\n      <td>9.7</td>\n      <td>12.1</td>\n    </tr>\n    <tr>\n      <td>Diabetes</td>\n      <td>2988</td>\n      <td>58.6</td>\n      <td>54.8</td>\n      <td>1233</td>\n      <td>24.2</td>\n      <td>28.9</td>\n      <td>413</td>\n      <td>8.1</td>\n      <td>7.6</td>\n      <td>468</td>\n      <td>9.2</td>\n      <td>8.7</td>\n    </tr>\n    <tr>\n      <td>Depression</td>\n      <td>5987</td>\n      <td>62.2</td>\n      <td>60.2</td>\n      <td>2133</td>\n      <td>22.2</td>\n      <td>24.5</td>\n      <td>695</td>\n      <td>7.2</td>\n      <td>6.7</td>\n      <td>805</td>\n      <td>8.4</td>\n      <td>8.5</td>\n    </tr>\n    <tr>\n      <td>Skin cancer</td>\n      <td>2182</td>\n      <td>70.4</td>\n      <td>68.4</td>\n      <td>540</td>\n      <td>17.4</td>\n      <td>18.7</td>\n      <td>189</td>\n      <td>6.1</td>\n      <td>5.1</td>\n      <td>190</td>\n      <td>6.1</td>\n      <td>7.8</td>\n    </tr>\n    <tr>\n      <td>Other cancer</td>\n      <td>2282</td>\n      <td>69.3</td>\n      <td>67.2</td>\n      <td>648</td>\n      <td>19.7</td>\n      <td>22.8</td>\n      <td>209</td>\n      <td>6.3</td>\n      <td>6.3</td>\n      <td>156</td>\n      <td>4.7</td>\n      <td>3.7</td>\n    </tr>\n  </tbody>\n</table>\n\n_CRC, colorectal cancer.*Single includes divorced, widowed, separated, and never married.\u2020\u2018Unemployed, not looking\u2019 includes \u2018Homemaker, Student, and Retired\u2019, \u2018Unemployed, looking\u2019 includes out of work over a year and out of work less than a year._\n\nAmong women of all education levels, those with the least education had the lowest dual-screening (41.0%), but the most for a single cancer (cervical (36.8%); CRC alone (6.9%)). In addition, the least educated women had the highest percentage of not participating in either screen (15.3%). Conversely, among all income levels, those with the highest income reported the greatest dual-screening (65.7%) and the lowest single cancer screening (cervical: 24.5%; CRC: 4.3%).\n\nAmong marital categories, never-married women reported the lowest dual-screening (53.7%); and the highest for the single screens (cervical: 28.2%; CRC 6.0%). Unemployed women (homemaker, student, or retired) among all occupational categories reported the highest dual-screening (62.5%), while those living in rural areas reported the lowest dual-screening (52.0%). 60.7% of women with chronic conditions completed dual-screening.\n\nTables of the univariate multinomial regression models are discussed as results in Appendix 1\u2014table 1.\n\n### Multivariate multinomial logistic regression\n\nMultivariate multinomial logistic regression was used to evaluate screening outcomes adjusted for the significant model matched variables of age, race, education, income, and some chronic conditions. Wald tests were used to test the inclusion of the variable in the overall model where marital status (p = 0.202), current employment (p = 0.189), geographic location (p = 0.08), cardiac comorbidities (p = 0.12), kidney comorbidities (p = 0.11), and lung comorbidities (p = 0.64) were no longer significant and, hence, were dropped from the model (Table 4).\n\n**Table 4.**\n Multinomial multivariate regression.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"3\">N = 42,701Weighted n = 19,849,774</th>\n      <th colspan=\"3\">Referent outcome: neither screen</th>\n      <th colspan=\"2\">Referent outcome: dual screens</th>\n      <th>Referent outcome:cervical only</th>\n    </tr>\n    <tr>\n      <th>Dual screen</th>\n      <th>Cervical only</th>\n      <th>CRC only</th>\n      <th>Cervical only</th>\n      <th>CRC only</th>\n      <th>CRC only</th>\n    </tr>\n    <tr>\n      <th>aOR (95% CI)</th>\n      <th>aOR (95% CI)</th>\n      <th>aOR (95% CI)</th>\n      <th>aOR (95% CI)</th>\n      <th>aOR (95% CI)</th>\n      <th>aOR (95% CI)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>50\u201354</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n    </tr>\n    <tr>\n      <td>55\u201359</td>\n      <td>1.35 (1.09, 1.67)</td>\n      <td>0.60 (0.48, 0.76)</td>\n      <td>1.76 (1.25, 2.47)</td>\n      <td>0.44 (0.39, 0.51)</td>\n      <td>1.30 (0.98, 1.74)</td>\n      <td>2.93 (2.17, 3.96)</td>\n    </tr>\n    <tr>\n      <td>60\u201364</td>\n      <td>1.46 (1.18, 1.79)</td>\n      <td>0.45 (0.36, 0.56)</td>\n      <td>2.55 (1.81, 3.58)</td>\n      <td>0.31 (0.27, 0.36)</td>\n      <td>1.75 (1.30, 2.35)</td>\n      <td>5.63 (4.14, 7.66)</td>\n    </tr>\n    <tr>\n      <td>Race</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>White</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n    </tr>\n    <tr>\n      <td>Black</td>\n      <td>2.25 (1.62, 3.13)</td>\n      <td>1.73 (1.22, 2.44)</td>\n      <td>1.58 (0.95, 2.61)</td>\n      <td>0.77 (0.64, 0.92)</td>\n      <td>0.70 (0.46, 1.07)</td>\n      <td>0.91 (0.59, 1.41)</td>\n    </tr>\n    <tr>\n      <td>Other*</td>\n      <td>0.72 (0.46, 1.12)</td>\n      <td>0.76 (0.47, 1.21)</td>\n      <td>0.37 (0.21, 0.64)</td>\n      <td>1.05 (0.74, 1.50)</td>\n      <td>0.51 (0.33, 0.80)</td>\n      <td>0.49 (0.30, 0.80)</td>\n    </tr>\n    <tr>\n      <td>Hispanic</td>\n      <td>1.68 (1.25, 2.25)</td>\n      <td>2.34 (1.72, 3.18)</td>\n      <td>1.42 (0.77, 2.63)</td>\n      <td>1.39 (1.10, 1.77)</td>\n      <td>0.84 (0.48, 1.50)</td>\n      <td>0.61 (0.34, 1.10)</td>\n    </tr>\n    <tr>\n      <td>Education</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Less than high school</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n    </tr>\n    <tr>\n      <td>High school graduate</td>\n      <td>1.37 (1.02, 1.83)</td>\n      <td>1.08 (0.80, 1.46)</td>\n      <td>1.14 (0.65, 1.98)</td>\n      <td>0.78 (0.61, 1.01)</td>\n      <td>0.83 (0.49, 1.39)</td>\n      <td>1.06 (0.62, 1.80)</td>\n    </tr>\n    <tr>\n      <td>Attended college/Tech school</td>\n      <td>1.98 (1.46, 2.69)</td>\n      <td>1.47 (1.07, 2.00)</td>\n      <td>1.30 (0.76, 2.22)</td>\n      <td>0.74 (0.58, 0.95)</td>\n      <td>0.65 (0.40, 1.07)</td>\n      <td>0.88 (0.53, 1.46)</td>\n    </tr>\n    <tr>\n      <td>Graduated college/Tech school</td>\n      <td>3.35 (2.33, 4.81)</td>\n      <td>2.02 (1.39, 2.94)</td>\n      <td>1.66 (0.94, 2.93)</td>\n      <td>0.60 (0.46, 0.79)</td>\n      <td>0.50 (0.31, 0.81)</td>\n      <td>0.82 (0.49, 1.36)</td>\n    </tr>\n    <tr>\n      <td>Income</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>&lt;$50K</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n      <td>Ref</td>\n    </tr>\n    <tr>\n      <td>\u2265$50K</td>\n      <td>3.32 (2.64, 4.18)</td>\n      <td>2.19 (1.71, 2.80)</td>\n      <td>2.13 (1.54, 2.96)</td>\n      <td>0.66 (0.58, 0.75)</td>\n      <td>0.64 (0.49, 0.84)</td>\n      <td>0.98 (0.74, 1.29)</td>\n    </tr>\n    <tr>\n      <td>Chronic conditions\u2020</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Arthritis</td>\n      <td>1.83 (1.54, 2.18)</td>\n      <td>1.28 (1.06, 1.55)</td>\n      <td>2.17 (1.65, 2.87)</td>\n      <td>0.70 (0.61, 0.80)</td>\n      <td>1.19 (0.94, 1.50)</td>\n      <td>1.70 (1.31, 2.19)</td>\n    </tr>\n    <tr>\n      <td>Diabetes</td>\n      <td>1.34 (1.06, 1.69)</td>\n      <td>1.34 (1.03, 1.75)</td>\n      <td>1.79 (1.25, 2.55)</td>\n      <td>1.00 (0.83, 1.22)</td>\n      <td>1.33 (0.98, 1.81)</td>\n      <td>1.33 (0.95, 1.86)</td>\n    </tr>\n    <tr>\n      <td>Depression</td>\n      <td>1.35 (1.11, 1.63)</td>\n      <td>1.05 (0.85, 1.29)</td>\n      <td>1.47 (1.09, 1.99)</td>\n      <td>0.78 (0.68, 0.89)</td>\n      <td>1.09 (0.85, 1.41)</td>\n      <td>1.41 (1.07, 1.84)</td>\n    </tr>\n    <tr>\n      <td>Skin cancer</td>\n      <td>1.04 (0.73, 1.48)</td>\n      <td>0.78 (0.53, 1.15)</td>\n      <td>0.75 (0.48, 1.17)</td>\n      <td>0.75 (0.61, 0.92)</td>\n      <td>0.72 (0.54, 0.97)</td>\n      <td>0.97 (0.69, 1.36)</td>\n    </tr>\n    <tr>\n      <td>Other cancer</td>\n      <td>2.90 (2.09, 4.05)</td>\n      <td>2.28 (1.57, 3.31)</td>\n      <td>3.08 (1.94, 4.91)</td>\n      <td>0.78 (0.62, 0.99)</td>\n      <td>1.06 (0.75, 1.51)</td>\n      <td>1.35 (0.90, 2.03)</td>\n    </tr>\n  </tbody>\n</table>\n\n_aOR, adjusted odds ratio; CI, confidence interval; CRC, colorectal cancer. Bold values = statistically significant.*Other means American Indian, Native Hawaiian, Asian, Multiracial, and 'Other'.\u2020Persons may have more than one condition or cancer._\n\n### Screening compared to neither screening\n\n1a. Women who graduated from college compared to less than high school graduation (adjusted odds ratio aOR = 3.35 (2.33, 4.81)), who had the highest income level (aOR = 3.32 (2.64, 4.18)) or had experienced prior cancer (aOR = 2.90 (2.09, 4.05)) had the highest adjusted odds of completing dual-screening compared to no screening. In addition, women who were older aOR = 1.35 (1.09, 1.67) and aOR = 1.46 (1.18, 1.79) for 55\u201359 and 60\u201364 years, respectively, compared to 50\u201354 years old, Black aOR = 2.25 (1.62, 3.13) or Hispanic (aOR = 1.68 (1.25, 2.25)) compared to White, and past history of arthritis aOR = 1.83 (1.54, 2.18), diabetes aOR = 1.34 (1.06, 1.69), or depression aOR = 1.35 (1.11, 1.63) were also significantly more likely to be up-to-date for both screens compared to neither screen.\n\n1b. Black and Hispanic women compared to White had the highest adjusted odds of completing just the cervical cancer screening compared to neither screening aOR = 1.73 (1.22, 2.44) and aOR = 2.34 (1.72, 3.18), respectively. In addition, women with the highest income level (aOR = 2.19 (1.71, 2.80)), who graduated from college compared to those with less than high school graduation (aOR = 2.02 (1.39, 2.94)) or had prior cancer (aOR = 2.28 (1.57, 3.31)) were also more than twice as likely to have only cervical cancer screening compared to having no screening. Finally, younger women, and those with a past history of arthritis (aOR = 1.28 (1.06, 1.55)), or diabetes (aOR = 1.34 (1.03, 1.75)) were more likely to screen for cervical cancer alone than neither screening.\n\n1c. Women with prior cancer had the highest adjusted odds of completing just the CRC screen compared to having neither screening (aOR = 3.08 (1.94, 4.91)). The oldest women (aOR = 2.55 (1.81, 3.58) for 60\u201364 years old, aOR = 1.76 (1.25, 2.47) for 55\u201359 years old), those with the highest income level (aOR = 2.13 (1.54, 2.96)) or those with a past history of arthritis (aOR = 2.17 (1.65, 2.87)) were more than two times more likely to have CRC screening alone compared to neither screening. Finally, women with a past history of diabetes (aOR = 1.79 (1.25, 2.55)) or depression (aOR = 1.47 (1.09, 1.99)) were more likely to screen for CRC only compared to neither screening. Conversely, women who were American Indian, Native Hawaiian, Asian, or multiracial were significantly less likely to be up-to-date for CRC screening compared to neither screening (aOR = 0.37 (0.21, 0.64)).\n\n### No or single screen compared to dual-screening\n\n2a. Only Hispanic women compared to White women had significantly higher adjusted odds of having cervical cancer screening alone compared to dual-screening (aOR = 1.39 (1.10, 1.77)). Alternatively, older women (aOR = 0.44 (0.39, 0.51) for 55\u201359 years old and aOR = 0.31 (0.27, 0.36) for 60\u201364 years old), Black women compared to White (aOR = 0.77 (0.64, 0.92)), that graduated college compared to less than high school (aOR = 0.60 (0.46, 0.79)), those with higher incomes (aOR = 0.66 (0.58, 0.75)), or those with arthritis (aOR = 0.70 (0.61, 0.80)), depression (aOR = 0.78 (0.68, 0.89)), skin cancer (aOR = 0.75 (0.61, 0.92)), or other cancers (aOR = 0.78 (0.62, 0.99)) were significantly less likely to have cervical cancer screening alone compared to completing both screens.\n\n2b. Only women 60\u201364 years old compared to younger women had significantly higher adjusted odds for having CRC only screening compared to both screens (aOR = 1.75 (1.30, 2.35)). Women who were American Indian, Native Hawaiian, Asian, or Multiracial (aOR = 0.51 (0.33, 0.80)), graduated from college (aOR = 0.50 (0.31, 0.81)), had a higher income (aOR = 0.64 (0.49, 0.84)), or had past history of skin cancer (aOR = 0.72 (0.54, 0.97)) were significantly less likely to be up-to-date for CRC screening alone compared to both screens.\n\n### Only CRC screening compared to only cervical cancer screening\n\n3a. Older women compared to younger women had the highest adjusted odds of completing only the CRC screening compared to cervical cancer screening alone (aOR = 2.93 (2.17, 3.96)) for 55\u201359 years old and aOR = 5.63 (4.14, 7.66) for 60\u201364 years old. In addition, women with a past history of arthritis (aOR = 1.70 (1.31, 2.19)) or depression (aOR = 1.41 (1.07, 1.84)) had significantly higher adjusted odds of having only CRC screening compared to only cervical cancer screening. Women who were American Indian, Native Hawaiian, Asian, or Multiracial (aOR = 0.49 (0.30, 0.80)) were less likely to have only CRC screening compared to only cervical cancer screening.\n\n## Discussion\n\n### Screening rates low in the woman-centered analysis\n\nBRFSS\u2019 large-scale nationally weighted survey data show a new perspective that the rate of women who screened for both cervix cancer and CRC (58.2%) is far below the recommended rates for each cancer individually (HP2030 goals cervix: 84.3% and CRC: 74.4%) (US Department of Health & Human Services, 2013), HP2030-C07 (Harper et al., 2021a). Another new finding is that women 50\u201364 years old screen for cervical cancer alone five times more often than CRC alone. We show that the 50- to 64-year age range is dynamic with changing cancer screening behaviors from predominantly cervical screening at 50 years to mostly CRC screening at 65 years. These results are similar to the population survey study completed in southeast Michigan (Harper et al., 2021a).\n\n### Screening decision making at multiple levels driven by age of the woman\n\n2a. Physician level. Age becomes the most interesting factor predicting the divergence of the two cancer screening rates. One hypothesis is that it may be due to the specialty of the physician to whom the woman visits, a gynecologist vs. a primary care physician (PCP; family physician vs. general internist vs. geriatrician). A study of mammography orders noted that gynecologists provided care for 15% of the population who had mammograms ordered for ages 50\u201375 years, a small percentage of the age-appropriate screening population (Taplin et al., 1994). In addition, there is a 90% drop in visits to a gynecologist for prevention-related visits for those who are 45 years or older compared to the 18- to 44-year-old group, with a concomitant increase in PCP visits during this age transition (Scholle et al., 2002). This indicates that the decision level for the type of cancer screening could be at the physician level where specialty may influence the cancer screening (cervical vs. colorectal vs. both) offered to the woman.\n\n2b. Patient level. Another decision level for screening could be at the level of the woman. The effects of screening by the age divergence could be due to physiologic aging with menopause at an average of 52 years in the United States (US Department of Health & Human Services, 2021; Green and Santoro, 2009). She may choose not to have any further cervical cancer screenings by vaginal speculum examination due to a variety of possible reasons: painful examinations, sexually inactive, no symptoms, or other personal reasons including past abuse (Cadman et al., 2012; Saunders et al., 2021; G\u00fcne\u015f and Kara\u00e7am, 2017). She may choose to wait until 65 years to start CRC screening because this is the time that the Welcome to Medicare and Annual Medicare Wellness Visit overtly discuss CRC screening.\n\n2c. Health system level. Decision making about screening could also reside in the health system as was evident during COVID when mailed FIT tests were sent to enrollees in response to the drop in cancer screenings (BlueCross Blue Shield of Texas, 2020; Gupta et al., 2020; Gorin et al., 2021; Van Hoy, 2020). It is well established that CRC screening, as recommended by the USPSTF (Force et al., 2016; Force et al., 2021) can be completed by any of six available tests, three of which are home based: FOBT, FIT, and multitarget stool DNA (FIT-DNA, Cologuard). Most recently, the American Cancer Society (ACS) and the USPSTF have recommended primary HPV testing for women 25/30\u201365 years for cervical cancer screening (Fontham et al., 2020; Curry et al., 2018) as the test that provides the most benefit for the least harm which can also be an at-home test, a well-accepted option (Maver and Poljak, 2020; Kim et al., 2018; El Khoury et al., 2021 ). Nevertheless, our data show that of those women who only choose one cancer to screen for, cervical cancer will be almost five times more likely to be the screen chosen. We hypothesize from our study that If a home-based cervical cancer screening was FDA approved, it could enhance uptake of the already FDA approved CRC home-based testing for women in this vulnerable age range (Bakr et al., 2020; Jaklevic, 2020).\n\nAnother hypothesis-generating result of this study is that the high rates of a single cancer screen among the least educated may represent screening divorced from their routine primary care. Perhaps the single screen was completed at a local health fair, worksite, or a targeted program for that single cancer (NBCCEDP, 2020; CRCCP, 2020), achieving a maximum screening rate for this cancer, still lagging the HP2030 goals. We have shown that women who screen for one cancer do not necessarily screen for other cancers. In prior work, we have shown that having a strong relationship with a PCP leads to greater participation in dual cervical cancer and CRC screens (Harper et al., 2021a; Harper et al., 2021b) and we encourage leveraging the power of the PCP\u2013woman dyad to address her multiple competing health needs. We showed that the single screen predictors of self-reported location (urban vs. rural) and employment status (Harper et al., 2020) were not associated with dual-screening in the final multivariate multinominal model. Again, this could support the hypothesis that the relationship between the PCP and the woman rather than her location or her employment status may increase cancer screening rates beyond the single cancer screen.\n\n### Limitations\n\nBRFSS is a highly respected and influential database for the US healthcare system reporting chronic health conditions and the use of preventive services. It is also a cross-sectional self-report survey whose responses are not equivalent to validated medical records (St Clair et al., 2017). Others have shown that the reported cancer screens could be mistakenly overestimated by about half of those who did not have a screen, whereas they accurately reflect those who have screened (Anderson et al., 2019; Bonafede et al., 2019). It is essential to point out, in support of using BRFSS, though, that BRFSS collects data in all 50 states, the District of Columbia, and three US territories interviewing more than 400,000 adults each year, making it the largest continuously conducted health survey system in the world. Nearly two-thirds of the US states use BFSS data to support health-related legislative efforts.\n\nUsing insurance claims data as the source of data extraction provide another option for analysis. Large populations with longitudinal follow-up and specific billing codes for cancer screenings are advantages. Still, the proven disadvantages include only having an insured population represented, incomplete billing data for each patient encounter, inaccurate coding data, and missing data altogether (Stein et al., 2014).\n\n16.6% of the potential analysis cohort did not answer at least one of the cervical cancer or CRC screening questions. This nonresponse bias was considered by the inverse propensity scoring for missingness as detailed in Methods.\n\nEven with accurate reporting by women themselves, a limitation of our work is that women were likely not aware of the screening modality used, and hence overestimated Pap alone screening when cotesting was used (Watson et al., 2018). For women 50\u201365 years old, though, cotesting is less common than Pap testing alone, mitigating that possible overestimation (Watson et al., 2018). In addition, cervical cancer screening modalities in the United States at the time of the survey were 80% cotesting and 20% cytology alone, indicating 14% of the women responded inaccurately to the type of cervical cancer screen they had (Cuzick et al., 2021).\n\nOur age range, 50\u201364 years, was aligned with the screening guidelines at the time of the BRFSS 2018 survey. The most recent CRC recommendations by USPSTF move the age of initiation of CRC screening to 45 years, providing a greater potential age gap to be addressed for dual-screening. Finally, our work applies to the United States and the healthcare structure it provides. These results may not apply to other national healthcare systems.\n\n### Conclusions\n\nWe showed that the risk factors associated with dual cancer screening are different from those associated with single cancer screens and that the risk factors for cervical cancer screening only are different from CRC screening only.\n",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "db9d741e-59a8-4c24-a8ff-f6106561612d",
+      "submission_id": "e8e34146-56d6-4b10-b49c-c529d8316240",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nicolas Schlecht, https://ror.org/0499dwk57 Roswell Park Comprehensive Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76070.sa0](https://doi.org/10.7554/eLife.76070.sa0)\n\nThis work presents a different US perspective for cancer screenings among the least screened women, those 50-64 years old. Using the Behavioral Risk Factor Surveillance System and the two cancer screenings (cervical and colorectal) done by her primary care physician, the findings of this work show that women-centric screening is lower than single cancer screenings. There is a large gap in health systems processes to meet the cancer screening needs of each woman.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Nicolas Schlecht, https://ror.org/0499dwk57 Roswell Park Comprehensive Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76070.sa1](https://doi.org/10.7554/eLife.76070.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"US women screen at low rates for both cervical and colorectal cancers than a single cancer: a cross-sectional population-based observational study\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Tatiana Ramirez (Reviewer #1).\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another. What follows below is the Reviewing Editor's edited compilation of the essential and ancillary points provided by reviewers in their critiques and in their interaction post-review. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you attempt to amend or expand the text to clarify the narrative accordingly.\n\nEssential revisions:\n\nThe reviewers agreed that this manuscript addresses an important question and that the results were worthy of consideration for publication. However, the reviewers felt that the limitations of relying on self-report data from the Behavioral Risk Factor Surveillance System should be given careful attention, and that the scope of the manuscript should be narrowed and concluding statements tempered. The reviewers provided editorial comments below that should also be addressed.\n\nReviewer #1 (Recommendations for the authors):\n\nIt is an interesting paper with potential to be accepted in eLife. In general, I find the manuscript correctly written.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors are investigating an important question. However, this paper needs major editing to convey clear, concise and appropriate information. As detailed in the public sections, there is inconsistency in terms used \u2013 dual screening vs by-woman analysis. In addition you should refer to screening as the women reported being UTD with X screening. This is BRFSS data \u2013 women did not choice to screen \u2013 they reported screening \u2013 you have no Medical Record Data so you have to be very careful how you phrase things. It is not clear why you are focusing only on cervical and CRC screening.\n\nTo reduce the confusion in the presentation of the results, I suggest you tighten that up \u2013 too many comparisons that seem repetitive. You seem to put too much weight on descriptive and unadjusted results \u2013 why not put the unadjusted results in a shorter section after the main results. The numbers on your Graphical Abstract don't add up \u2013 and this is not a \"New\" way \u2013 it's your proposed way or the results of this analysis.\n\nYour conclusions need to be tempered by what your data shows \u2013 don't over stretch \u2013 and this is self-reported data from 2018. You make claims that are not supported \u2013 e.g. comparing HP 2030 goals that are derived by single screen to your dual measure \u2013 that is not a fair comparison. Lastly, there are some published studies that have examined multiple screening behaviors in terms of interventions. You might want to include them.\n\nReviewer #3 (Recommendations for the authors):\n\n1) Further discussion over the reason for a significant value for geographic location should be discussed- is this related to access?\n\n2) The authors discuss physician decision level- how can this be gleaned through these data? A provider can make a recommendation for a CRC and even book the GI appt- but a patient actually has to show up.\n\n3) We know screening is not necessarily linked to primary care and, particularly cervical cancer screening, happens in a silo as many women who have not gotten a Pap or HPV test in the US has seen a provider. How do these data clarify this- if so, needs to be further discussed in discussion.\n\n4) Self reported data and claims data are very different. Often for cervical cancer screening, a patient might have thought a speculum exam is a Pap or HPV. When it is not. How would this affect these data- assume under-reporting of Pap, which should be stated.\n",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4ce331e2-d71c-4dcc-874a-eaf0fefa35a4",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C1",
+      "claim": "Women 50-64 years old have lower cancer screening rates for cervical and colorectal cancers (CRC) than all other age ranges when using screen counts.",
+      "claim_type": "EXPLICIT",
+      "source": "Using screen counts, women 50\u201364 years old have lower cancer screening rates for cervical and colorectal cancers (CRC) than all other age ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a background claim without specific data presented in this sentence, but is supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "157515cb-ba63-4516-b66f-9c56adad72f9",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C2",
+      "claim": "Among women ages 50-64 years old, dual-screening was reported for 58.2% (57.1-59.4).",
+      "claim_type": "EXPLICIT",
+      "source": "Among women ages 50\u201364 years old, dual-screening was reported for 58.2% (57.1\u201359.4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of survey data analysis results from BRFSS 2018.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "f88aa0f9-9804-4a15-9ca3-5af67574d16a",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C3",
+      "claim": "Among women ages 50-64 years old, cervical cancer screening alone was reported for 27.1% (26.0-28.2).",
+      "claim_type": "EXPLICIT",
+      "source": "cervical cancer screening alone (27.1% (26.0\u201328.2))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of survey data analysis results from BRFSS 2018.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "fab111e5-d869-4468-9ab5-ef9880d06f40",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C4",
+      "claim": "Among women ages 50-64 years old, CRC screening alone was reported for 5.4% (4.9-5.9).",
+      "claim_type": "EXPLICIT",
+      "source": "CRC screening alone (5.4% (4.9\u20135.9))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of survey data analysis results from BRFSS 2018.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "c557df2d-54d3-46b9-a159-5815b8a5e79d",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C5",
+      "claim": "Among women ages 50-64 years old, neither cervical nor CRC screening was reported for 9.3% (8.7-9.9).",
+      "claim_type": "EXPLICIT",
+      "source": "neither screen (9.3% (8.7\u20139.9))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of survey data analysis results from BRFSS 2018.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "b4dbce8f-d824-4ac4-a50c-b49a1a9c5a21",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C6",
+      "claim": "Age, race, education, income, and chronic health conditions were significantly associated with dual-screening compared to neither screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Age, race, education, income, and chronic health conditions were significantly associated with dual-screening compared to neither screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of multivariate regression analysis results presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "ee0f6b45-b3b1-44ac-bd35-667ab2e2dfda",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C7",
+      "claim": "Hispanic women compared to non-Hispanic White women were more likely to be up-to-date with cervical cancer screening than dual-screening (adjusted odds ratio [aOR] = 1.39 (1.10, 1.77)).",
+      "claim_type": "EXPLICIT",
+      "source": "Hispanic women compared to non-Hispanic White women were more likely to be up-to-date with cervical cancer screening than dual-screening (adjusted odds ratio [aOR] = 1.39 (1.10, 1.77)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate regression analysis with statistical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "862c26cd-cf6a-43ec-8e0d-9bb10c01823e",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C8",
+      "claim": "Women 60-64 years old compared to younger women are significantly more likely to be up-to-date with CRC screening than dual-screening (aOR = 1.75 (1.30, 2.35)).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to younger women, those 60\u201364 years are significantly more likely to be up-to-date with CRC screening than dual-screening (aOR = 1.75 (1.30, 2.35)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate regression analysis with statistical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "c05e6a84-9b52-4857-b9e7-26e31c345bab",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C9",
+      "claim": "Woman-centered screening shows a much lower rate of dual-screening than prior single cancer screening rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening received by each woman shows a much lower rate of dual-screening than prior single cancer screening rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the dual-screening rate (58.2%) to traditional single cancer screening rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "9e94e176-35e6-4ee9-9b15-714561d90ab1",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C10",
+      "claim": "BRFSS is the United States' premier database used to report single cancer screening rates.",
+      "claim_type": "EXPLICIT",
+      "source": "BRFSS is the United States' premier database used to report single cancer screening rates, such as cervical cancer or colorectal cancer (CRC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the role and status of BRFSS in US health surveillance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "44d36240-bee7-4232-8f49-dcd883988bab",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C11",
+      "claim": "Woman-centered screening patterns for both cervical cancer and CRC (dual-screening) among women 50-65 years old have never been published.",
+      "claim_type": "EXPLICIT",
+      "source": "Never has the perspective of woman-centered screening been published reporting the patterns of screening for both cervical cancer and CRC (dual-screening) among women 50\u201365 years old.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study's approach based on literature review.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "6363dce5-f383-4436-9e3d-a105b12ad7a0",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C12",
+      "claim": "CRC screening has never approached the Healthy People goals.",
+      "claim_type": "EXPLICIT",
+      "source": "CRC screening has never approached the Healthy People goals, but up-to-date screening has shown a steady increase, regardless of screening method (National Cancer Institute Cancer Trends Progress Reports, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to National Cancer Institute Cancer Trends Progress Reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "7d160969-55a1-498f-a9fb-bc5156e572c1",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C13",
+      "claim": "BRFSS showed a significant gap in CRC screening among women 50-64 years of age, with self-reported rates as low as 50% for the youngest age-appropriate women.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, however, BRFSS showed a significant gap in CRC screening among women 50\u201364 years of age, with self-reported rates as low as 50% for the youngest age-appropriate women (Joseph et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Joseph et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "a7e23362-c24c-428f-b82f-88488e9f7436",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C14",
+      "claim": "Among women 50-64 years old, the incidence of CRC is 60/100,000 women, and the mortality is 20/100,000 women.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time, among women 50\u201364 years old, the incidence of CRC is 60/100,000 women, and the mortality is 20/100,000 women (Seigel, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is epidemiological data cited from Seigel, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "2b6461e7-35ec-4527-ac40-5a52a53c2703",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C15",
+      "claim": "Cervical cancer screening prevalence peaked at the turn of the 21st century and has been declining year over year.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike CRC screening, cervical cancer screening prevalence peaked at the turn of the 21st century and has been declining year over year (National Cancer Institute Cancer Trends Progress Reports, 2020b, summary table).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to National Cancer Institute Cancer Trends Progress Reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "33b5076b-1a60-44d7-a609-5ebc4e10a133",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C16",
+      "claim": "The lowest cervical cancer screening rates are among women who were 50-64 years old.",
+      "claim_type": "EXPLICIT",
+      "source": "Like CRC screening, the lowest cervical cancer screening rates are among women who were 50\u201364 years old (Harper et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Harper et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "b37410bc-ad2e-42a9-92e1-f554a022b61d",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C17",
+      "claim": "Among women 50-54 years old, the cervical cancer incidence is 12.5/100,000.",
+      "claim_type": "EXPLICIT",
+      "source": "among women 50\u201354 years old, the incidence is 12.5/100,000",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is epidemiological data cited from US Cancer Statistics Working Group, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "ed4867f4-c6f9-45f3-ab6d-b55c3bd538d4",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C18",
+      "claim": "Among women 55-59 years old, the cervical cancer incidence is 12.1/100,000.",
+      "claim_type": "EXPLICIT",
+      "source": "55\u201359 years old: 12.1/100,000",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is epidemiological data cited from US Cancer Statistics Working Group, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "cb7dac9e-1a21-43c7-9be4-e07096cf89eb",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C19",
+      "claim": "Among women 60-64 years old, the cervical cancer incidence is 10.8/100,000.",
+      "claim_type": "EXPLICIT",
+      "source": "60\u201364 years old: 10.8/100,000",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is epidemiological data cited from US Cancer Statistics Working Group, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "80b38eb7-0f31-48b7-92e8-72e4a5390650",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C20",
+      "claim": "Among women 50-54 years old, the cervical cancer mortality is 4.6/100,000.",
+      "claim_type": "EXPLICIT",
+      "source": "The mortality for the same age groups is 4.6/100,000",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is epidemiological data cited from US Cancer Statistics Working Group, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "f62992c4-dacc-48e3-9c55-eaa467b12f68",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C21",
+      "claim": "Among women 55-59 years old, the cervical cancer mortality is 4.6/100,000.",
+      "claim_type": "EXPLICIT",
+      "source": "4.6/100,000",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is epidemiological data cited from US Cancer Statistics Working Group, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "c8010f00-c88c-4cfd-a15e-f2cf6ce1bf98",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C22",
+      "claim": "Among women 60-64 years old, the cervical cancer mortality is 4.3/100,000.",
+      "claim_type": "EXPLICIT",
+      "source": "4.3/100,000 (US Cancer Statistics Working Group, 2021US Cancer Statistics Working Group, 2021US Cancer Statistics Working Group, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is epidemiological data cited from US Cancer Statistics Working Group, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "b480724f-bb93-4869-ae0a-ed2b3612e0c0",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C23",
+      "claim": "Both cervical cancer and CRC generally do not have symptoms until a very late stage when cure is not possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cervical cancer and CRC generally do not have symptoms until a very late stage when cure is not possible (World Health Organization, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clinical characteristic of these cancers cited from WHO, 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "471f5a12-8d12-47aa-8df3-2a589b7958b5",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C24",
+      "claim": "Early screening, even self-screening, is a critical health imperative for cervical cancer and CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "making early screening, even self-screening (El Khoury et al., 2021; Bakr et al., 2020; Jaklevic, 2020), a critical health imperative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the asymptomatic nature of these cancers and supported by citations about self-screening.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "c16621d8-3d2b-4127-988f-304848ac9638",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C25",
+      "claim": "There were 67,473 women identified between the ages of 50-64 years from the BRFSS 2018 survey.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 67,473 women identified between the ages of 50\u201364 years from which 40,511 met the inclusion and exclusion criteria and reported complete screening data for CRC and cervical cancers in the BRFSS 2018 survey (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the study sample from BRFSS 2018 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "2c14f2d8-e10a-468c-a195-913dc9b94b22",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C26",
+      "claim": "40,511 women met the inclusion and exclusion criteria and reported complete screening data for CRC and cervical cancers in the BRFSS 2018 survey.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 67,473 women identified between the ages of 50\u201364 years from which 40,511 met the inclusion and exclusion criteria and reported complete screening data for CRC and cervical cancers in the BRFSS 2018 survey (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the final analytic sample from BRFSS 2018 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "9c03046d-0266-4a4d-be7d-de1802815e7a",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C27",
+      "claim": "The tests used by the majority of women for CRC and cervical cancer screening, respectively, were colonoscopy and a Pap test (54.6% (53.2%, 55.9%)).",
+      "claim_type": "EXPLICIT",
+      "source": "The tests used by the majority of women for CRC and cervical cancer screening, respectively, were colonoscopy and a Pap test (54.6% (53.2%, 55.9%)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of screening modality data from the study analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "6ce29f5e-1551-479c-8a9d-17b302f33de6",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C28",
+      "claim": "Women who chose only one screen chose cervical cancer screening five times more often than CRC screening (27.1% vs. 5.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "Women who chose only one screen chose cervical cancer screening five times more often than CRC screening (27.1% vs. 5.4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of screening rates from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "a8f61827-62d3-4d5a-af37-f5b430c4e3d6",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C29",
+      "claim": "By traditional screening calculations, cervical cancer screening was 86% (85.4-86.1) and CRC screening was 66% (65.9-66.8).",
+      "claim_type": "EXPLICIT",
+      "source": "By traditional screening calculations, cervical cancer screening was 86% (85.4\u201386.1) and CRC screening was 66% (65.9\u201366.8) (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation from the study data showing population-based screening rates, also illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "086b637f-842f-4708-a1ef-a0d7594ae419",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C30",
+      "claim": "Cervical cancer screening was considered up-to-date if the respondent reported a Pap within the past 3 years, an HPV test within the past 5 years, or a Pap and HPV test within the past 5 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Cervical cancer screening was considered up-to-date if the respondent reported a Pap within the past 3 years, an HPV test within the past 5 years, or a Pap and HPV test within the past 5 years (Curry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition based on USPSTF guidelines cited from Curry et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "51d0c0b1-cd4b-4cc6-ba00-55fe23e96bdc",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C31",
+      "claim": "For CRC screening, up-to-date screening included FOBT or FIT within the past year, a sigmoidoscopy within the last 5 years, or a colonoscopy within the past 10 years, in accordance with the USPSTF guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "For CRC screening, up-to-date screening included FOBT or FIT within the past year, a sigmoidoscopy within the last 5 years, or a colonoscopy within the past 10 years, in accordance with the USPSTF guidelines (Force et al., 2016; Force et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition based on USPSTF guidelines cited from Force et al., 2016 and 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "f3a082f2-253e-44a2-ab59-838aa148e39e",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C32",
+      "claim": "Women who graduated from college compared to less than high school graduation had the highest adjusted odds of completing dual-screening compared to no screening (aOR = 3.35 (2.33, 4.81)).",
+      "claim_type": "EXPLICIT",
+      "source": "Women who graduated from college compared to less than high school graduation (adjusted odds ratio aOR = 3.35 (2.33, 4.81))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "be377c82-ad4b-4c6e-901d-734c57ba7b50",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C33",
+      "claim": "Women with the highest income level had the highest adjusted odds of completing dual-screening compared to no screening (aOR = 3.32 (2.64, 4.18)).",
+      "claim_type": "EXPLICIT",
+      "source": "who had the highest income level (aOR = 3.32 (2.64, 4.18))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "d9906b6b-5c55-40b7-923f-2d12b022e074",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C34",
+      "claim": "Women who had experienced prior cancer had the highest adjusted odds of completing dual-screening compared to no screening (aOR = 2.90 (2.09, 4.05)).",
+      "claim_type": "EXPLICIT",
+      "source": "or had experienced prior cancer (aOR = 2.90 (2.09, 4.05)) had the highest adjusted odds of completing dual-screening compared to no screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "147a9f95-2a05-4b35-b2ad-8d556d2b60b0",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C35",
+      "claim": "Women 55-59 years old compared to 50-54 years old were significantly more likely to complete dual-screening compared to no screening (aOR = 1.35 (1.09, 1.67)).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, women who were older aOR = 1.35 (1.09, 1.67) and aOR = 1.46 (1.18, 1.79) for 55\u201359 and 60\u201364 years, respectively, compared to 50\u201354 years old",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "80bb9d19-6b43-4885-9937-e3843a97cebb",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C36",
+      "claim": "Women 60-64 years old compared to 50-54 years old were significantly more likely to complete dual-screening compared to no screening (aOR = 1.46 (1.18, 1.79)).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, women who were older aOR = 1.35 (1.09, 1.67) and aOR = 1.46 (1.18, 1.79) for 55\u201359 and 60\u201364 years, respectively, compared to 50\u201354 years old",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "fa849958-1082-4f57-a7c3-195d5963aadf",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C37",
+      "claim": "Black women compared to White women were significantly more likely to complete dual-screening compared to no screening (aOR = 2.25 (1.62, 3.13)).",
+      "claim_type": "EXPLICIT",
+      "source": "Black aOR = 2.25 (1.62, 3.13) or Hispanic (aOR = 1.68 (1.25, 2.25)) compared to White",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "f51cec73-2d79-42ea-898e-98235570efef",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C38",
+      "claim": "Hispanic women compared to White women were significantly more likely to complete dual-screening compared to no screening (aOR = 1.68 (1.25, 2.25)).",
+      "claim_type": "EXPLICIT",
+      "source": "Black aOR = 2.25 (1.62, 3.13) or Hispanic (aOR = 1.68 (1.25, 2.25)) compared to White",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "980ab187-0496-4781-b125-8e776cff7511",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C39",
+      "claim": "Women with past history of arthritis were significantly more likely to complete dual-screening compared to no screening (aOR = 1.83 (1.54, 2.18)).",
+      "claim_type": "EXPLICIT",
+      "source": "and past history of arthritis aOR = 1.83 (1.54, 2.18), diabetes aOR = 1.34 (1.06, 1.69), or depression aOR = 1.35 (1.11, 1.63) were also significantly more likely to be up-to-date for both screens compared to neither screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "ac24da32-3cd7-43cf-927f-e4404603e2f6",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C40",
+      "claim": "Women with past history of diabetes were significantly more likely to complete dual-screening compared to no screening (aOR = 1.34 (1.06, 1.69)).",
+      "claim_type": "EXPLICIT",
+      "source": "and past history of arthritis aOR = 1.83 (1.54, 2.18), diabetes aOR = 1.34 (1.06, 1.69), or depression aOR = 1.35 (1.11, 1.63) were also significantly more likely to be up-to-date for both screens compared to neither screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "7ad80423-03dc-474c-8261-4fd8a0f21842",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C41",
+      "claim": "Women with past history of depression were significantly more likely to complete dual-screening compared to no screening (aOR = 1.35 (1.11, 1.63)).",
+      "claim_type": "EXPLICIT",
+      "source": "and past history of arthritis aOR = 1.83 (1.54, 2.18), diabetes aOR = 1.34 (1.06, 1.69), or depression aOR = 1.35 (1.11, 1.63) were also significantly more likely to be up-to-date for both screens compared to neither screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "8b333dcb-c71c-48e0-aaea-c56e824e1eb4",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C42",
+      "claim": "Black women compared to White women had the highest adjusted odds of completing just cervical cancer screening compared to neither screening (aOR = 1.73 (1.22, 2.44)).",
+      "claim_type": "EXPLICIT",
+      "source": "Black and Hispanic women compared to White had the highest adjusted odds of completing just the cervical cancer screening compared to neither screening aOR = 1.73 (1.22, 2.44) and aOR = 2.34 (1.72, 3.18), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "1d6ff6e6-5340-40ff-96c9-cc7a2a798c6e",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C43",
+      "claim": "Hispanic women compared to White women had the highest adjusted odds of completing just cervical cancer screening compared to neither screening (aOR = 2.34 (1.72, 3.18)).",
+      "claim_type": "EXPLICIT",
+      "source": "Black and Hispanic women compared to White had the highest adjusted odds of completing just the cervical cancer screening compared to neither screening aOR = 1.73 (1.22, 2.44) and aOR = 2.34 (1.72, 3.18), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "f8cc2583-e9ef-42d9-be74-620079c93724",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C44",
+      "claim": "Women with prior cancer had the highest adjusted odds of completing just the CRC screen compared to having neither screening (aOR = 3.08 (1.94, 4.91)).",
+      "claim_type": "EXPLICIT",
+      "source": "Women with prior cancer had the highest adjusted odds of completing just the CRC screen compared to having neither screening (aOR = 3.08 (1.94, 4.91)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "4bdc056d-ca5a-40c8-aeaa-c22d34c94a20",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C45",
+      "claim": "Women 60-64 years old were more than two times more likely to have CRC screening alone compared to neither screening (aOR = 2.55 (1.81, 3.58)).",
+      "claim_type": "EXPLICIT",
+      "source": "The oldest women (aOR = 2.55 (1.81, 3.58) for 60\u201364 years old, aOR = 1.76 (1.25, 2.47) for 55\u201359 years old)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "0d3a22b2-b9ee-46cd-91b7-d3a3c50778fc",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C46",
+      "claim": "Women 55-59 years old were more than two times more likely to have CRC screening alone compared to neither screening (aOR = 1.76 (1.25, 2.47)).",
+      "claim_type": "EXPLICIT",
+      "source": "The oldest women (aOR = 2.55 (1.81, 3.58) for 60\u201364 years old, aOR = 1.76 (1.25, 2.47) for 55\u201359 years old)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "88d3accb-44ff-4175-a588-559c1cd4b1af",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C47",
+      "claim": "Women who were American Indian, Native Hawaiian, Asian, or multiracial were significantly less likely to be up-to-date for CRC screening compared to neither screening (aOR = 0.37 (0.21, 0.64)).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, women who were American Indian, Native Hawaiian, Asian, or multiracial were significantly less likely to be up-to-date for CRC screening compared to neither screening (aOR = 0.37 (0.21, 0.64)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from multivariate multinomial regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "24e93574-d661-47c3-b162-e4158f265ed4",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C48",
+      "claim": "The rate of women who screened for both cervix cancer and CRC (58.2%) is far below the recommended rates for each cancer individually (HP2030 goals cervix: 84.3% and CRC: 74.4%).",
+      "claim_type": "EXPLICIT",
+      "source": "BRFSS' large-scale nationally weighted survey data show a new perspective that the rate of women who screened for both cervix cancer and CRC (58.2%) is far below the recommended rates for each cancer individually (HP2030 goals cervix: 84.3% and CRC: 74.4%) (US Department of Health & Human Services, 2013), HP2030-C07 (Harper et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of study findings to established health goals, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "f95b6038-29e5-4c22-9921-33d70ab6edb2",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C49",
+      "claim": "Women 50-64 years old screen for cervical cancer alone five times more often than CRC alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Another new finding is that women 50\u201364 years old screen for cervical cancer alone five times more often than CRC alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "8e8b754e-9515-48cf-acf0-c1b573a83107",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C50",
+      "claim": "The 50- to 64-year age range is dynamic with changing cancer screening behaviors from predominantly cervical screening at 50 years to mostly CRC screening at 65 years.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the 50- to 64-year age range is dynamic with changing cancer screening behaviors from predominantly cervical screening at 50 years to mostly CRC screening at 65 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study findings showing age-related patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "91442091-a293-47a5-8285-8b87c467e7a8",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C51",
+      "claim": "Gynecologists provided care for 15% of the population who had mammograms ordered for ages 50-75 years.",
+      "claim_type": "EXPLICIT",
+      "source": "A study of mammography orders noted that gynecologists provided care for 15% of the population who had mammograms ordered for ages 50\u201375 years, a small percentage of the age-appropriate screening population (Taplin et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Taplin et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "ffd3769e-a604-4ccc-8f03-3e9afdbde15c",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C52",
+      "claim": "There is a 90% drop in visits to a gynecologist for prevention-related visits for those who are 45 years or older compared to the 18- to 44-year-old group.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there is a 90% drop in visits to a gynecologist for prevention-related visits for those who are 45 years or older compared to the 18- to 44-year-old group, with a concomitant increase in PCP visits during this age transition (Scholle et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Scholle et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "d27a280b-2b32-4400-a205-1a2f794659a1",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C53",
+      "claim": "The average age of menopause is 52 years in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of screening by the age divergence could be due to physiologic aging with menopause at an average of 52 years in the United States (US Department of Health & Human Services, 2021; Green and Santoro, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from US Department of Health & Human Services, 2021 and Green and Santoro, 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "53b302a1-d0b5-4767-a2a0-5a02bef3ae38",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C54",
+      "claim": "CRC screening, as recommended by the USPSTF, can be completed by any of six available tests, three of which are home based: FOBT, FIT, and multitarget stool DNA (FIT-DNA, Cologuard).",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that CRC screening, as recommended by the USPSTF (Force et al., 2016; Force et al., 2021) can be completed by any of six available tests, three of which are home based: FOBT, FIT, and multitarget stool DNA (FIT-DNA, Cologuard).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on USPSTF guidelines cited from Force et al., 2016 and 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "f46550f6-eefa-4d69-8d67-5424148755fa",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C55",
+      "claim": "The American Cancer Society (ACS) and the USPSTF have recommended primary HPV testing for women 25/30-65 years for cervical cancer screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, the American Cancer Society (ACS) and the USPSTF have recommended primary HPV testing for women 25/30\u201365 years for cervical cancer screening (Fontham et al., 2020; Curry et al., 2018) as the test that provides the most benefit for the least harm which can also be an at-home test, a well-accepted option (Maver and Poljak, 2020; Kim et al., 2018; El Khoury et al., 2021 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ACS and USPSTF recommendations cited from Fontham et al., 2020 and Curry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "b736eef9-8ed5-4c48-98c5-3c4c6da9729d",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C56",
+      "claim": "Primary HPV testing is the test that provides the most benefit for the least harm for cervical cancer screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, the American Cancer Society (ACS) and the USPSTF have recommended primary HPV testing for women 25/30\u201365 years for cervical cancer screening (Fontham et al., 2020; Curry et al., 2018) as the test that provides the most benefit for the least harm which can also be an at-home test, a well-accepted option (Maver and Poljak, 2020; Kim et al., 2018; El Khoury et al., 2021 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in guidelines cited from Fontham et al., 2020 and Curry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "41cd73db-878e-4b87-86c1-fd0d8bb2105c",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C57",
+      "claim": "At-home HPV testing is a well-accepted option for cervical cancer screening.",
+      "claim_type": "EXPLICIT",
+      "source": "as the test that provides the most benefit for the least harm which can also be an at-home test, a well-accepted option (Maver and Poljak, 2020; Kim et al., 2018; El Khoury et al., 2021 ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Maver and Poljak, 2020; Kim et al., 2018; El Khoury et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "d30dd38a-7e2a-4fe4-8868-26ccdc48621b",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C58",
+      "claim": "Having a strong relationship with a PCP leads to greater participation in dual cervical cancer and CRC screens.",
+      "claim_type": "EXPLICIT",
+      "source": "In prior work, we have shown that having a strong relationship with a PCP leads to greater participation in dual cervical cancer and CRC screens (Harper et al., 2021a; Harper et al., 2021b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior work by the authors cited from Harper et al., 2021a and 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "76fe5268-81af-4fed-b42c-d5b6ce135157",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C59",
+      "claim": "BRFSS is a cross-sectional self-report survey whose responses are not equivalent to validated medical records.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also a cross-sectional self-report survey whose responses are not equivalent to validated medical records (St Clair et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged and cited from St Clair et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "9e531dda-2005-402c-bc62-c7aa0b758b38",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C60",
+      "claim": "The reported cancer screens could be mistakenly overestimated by about half of those who did not have a screen, whereas they accurately reflect those who have screened.",
+      "claim_type": "EXPLICIT",
+      "source": "Others have shown that the reported cancer screens could be mistakenly overestimated by about half of those who did not have a screen, whereas they accurately reflect those who have screened (Anderson et al., 2019; Bonafede et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of self-reported data cited from Anderson et al., 2019 and Bonafede et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "227cd194-bb3a-487e-92e3-cc0c7b98af52",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C61",
+      "claim": "BRFSS collects data in all 50 states, the District of Columbia, and three US territories interviewing more than 400,000 adults each year.",
+      "claim_type": "EXPLICIT",
+      "source": "It is essential to point out, in support of using BRFSS, though, that BRFSS collects data in all 50 states, the District of Columbia, and three US territories interviewing more than 400,000 adults each year, making it the largest continuously conducted health survey system in the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the BRFSS survey scope and scale.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "3d31f1d7-dec9-46ee-8f90-09795f5a5d6a",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C62",
+      "claim": "BRFSS is the largest continuously conducted health survey system in the world.",
+      "claim_type": "EXPLICIT",
+      "source": "making it the largest continuously conducted health survey system in the world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of BRFSS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "9c67c10f-6b11-40c8-b9de-f1f2ac7a77df",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C63",
+      "claim": "Nearly two-thirds of the US states use BRFSS data to support health-related legislative efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly two-thirds of the US states use BFSS data to support health-related legislative efforts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the use and impact of BRFSS data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "331338f4-85c1-461a-9543-751d0372a829",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C64",
+      "claim": "16.6% of the potential analysis cohort did not answer at least one of the cervical cancer or CRC screening questions.",
+      "claim_type": "EXPLICIT",
+      "source": "16.6% of the potential analysis cohort did not answer at least one of the cervical cancer or CRC screening questions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of missing data in the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "5e056586-4a41-4fa2-b643-3e5cc85b38ca",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C65",
+      "claim": "For women 50-65 years old, cotesting is less common than Pap testing alone.",
+      "claim_type": "EXPLICIT",
+      "source": "For women 50\u201365 years old, though, cotesting is less common than Pap testing alone, mitigating that possible overestimation (Watson et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Watson et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "549599c0-c1b4-41f2-a7b9-3a9f6ba82f87",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C66",
+      "claim": "Cervical cancer screening modalities in the United States at the time of the survey were 80% cotesting and 20% cytology alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cervical cancer screening modalities in the United States at the time of the survey were 80% cotesting and 20% cytology alone, indicating 14% of the women responded inaccurately to the type of cervical cancer screen they had (Cuzick et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Cuzick et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "eee3ad3b-44cf-4e64-a6ad-bad259785814",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C67",
+      "claim": "The most recent CRC recommendations by USPSTF move the age of initiation of CRC screening to 45 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The most recent CRC recommendations by USPSTF move the age of initiation of CRC screening to 45 years, providing a greater potential age gap to be addressed for dual-screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about updated USPSTF guidelines.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "090f8c2a-c07d-4cac-97c1-176f2948e445",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C68",
+      "claim": "The risk factors associated with dual cancer screening are different from those associated with single cancer screens.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the risk factors associated with dual cancer screening are different from those associated with single cancer screens",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the multivariate regression analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "3fbc19b4-3172-47ea-a684-a23a92b09773",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C69",
+      "claim": "The risk factors for cervical cancer screening only are different from CRC screening only.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the risk factors for cervical cancer screening only are different from CRC screening only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the multivariate regression analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "61a71b62-0148-4731-90e1-9606daa36f38",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C70",
+      "claim": "A patient-centered approach considers the total number of screens each woman has, whereas a population-centered system documents each single test completion.",
+      "claim_type": "EXPLICIT",
+      "source": "A patient-centered approach considers the total number of screens each woman has, whereas a population-centered system documents each single test completion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 1 caption explaining the difference between the two approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "ac25a876-3e16-47a9-bb58-3c43b635fd4a",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C71",
+      "claim": "Woman-centered cervical cancer and CRC screening rates are much lower than population-based screening approach rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show much lower women-centered cervical cancer and colorectal cancer (CRC) screening rates than a population-based screening approach.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 1 caption and illustrated in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "73dbe98b-f2f3-45a9-a2d6-436d766db652",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C72",
+      "claim": "The youngest age group (50-54 years) was least screened for both CRC and cervical cancer (dual-screening) at 47.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Age by 5-year intervals showed that the youngest group was least screened for both CRC and cervical cancer (dual-screening) (47.4%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "46e5394e-0ab4-44f7-a3e8-4353aee23af5",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C73",
+      "claim": "The youngest age group (50-54 years) had the lowest CRC screening alone at 3.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as CRC screening alone (3.1%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "e0409c15-658b-484b-9bfc-aea92dbdfcb7",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C74",
+      "claim": "The youngest age group (50-54 years) had the highest screening for cervical cancer alone at 40.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this age group had the highest screening for cervical cancer alone (40.0%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "e7703cc4-e6a7-4907-84b4-3bd0511dbcb7",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C75",
+      "claim": "Hispanic women had the lowest dual-screening at 46.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Among races, Hispanic women had the lowest dual-screening (46.5%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "fb1e1337-5696-4509-bbce-ee23f806f709",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C76",
+      "claim": "Hispanic women had the lowest screening for CRC alone at 5.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "the lowest screening for CRC alone (5.2%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "cbad9726-a37b-43ef-8ae4-3b52287b1bdd",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C77",
+      "claim": "Hispanic women had the highest screening for cervical cancer alone at 39.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "and yet had the highest screening for cervical cancer alone (39.4%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "588ebb5a-7b55-42d4-9eaf-311db11a485f",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C78",
+      "claim": "Women with the least education had the lowest dual-screening at 41.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "Among women of all education levels, those with the least education had the lowest dual-screening (41.0%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "52a4db4b-746a-4bf8-a10a-21d26ce6cd75",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C79",
+      "claim": "The least educated women had the highest percentage of not participating in either screen at 15.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the least educated women had the highest percentage of not participating in either screen (15.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "b5db6481-f34a-4fc3-b329-1f5c42a283ac",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C80",
+      "claim": "Women with the highest income reported the greatest dual-screening at 65.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, among all income levels, those with the highest income reported the greatest dual-screening (65.7%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "429b797c-68d4-4ae7-88bc-5ccfca3c3236",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C81",
+      "claim": "Women with the highest income had the lowest single cancer screening for cervical cancer at 24.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "and the lowest single cancer screening (cervical: 24.5%; CRC: 4.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "4d83beb5-2ecb-4fda-9ce3-90311470ac5f",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C82",
+      "claim": "Women with the highest income had the lowest single cancer screening for CRC at 4.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "and the lowest single cancer screening (cervical: 24.5%; CRC: 4.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "08e93b7a-6b93-46ef-9732-5a498ac15832",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C83",
+      "claim": "Never-married women reported the lowest dual-screening at 53.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "Among marital categories, never-married women reported the lowest dual-screening (53.7%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "82cebe0d-6351-41f6-b3cc-ddd1930a60f2",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C84",
+      "claim": "Unemployed women (homemaker, student, or retired) reported the highest dual-screening at 62.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Unemployed women (homemaker, student, or retired) among all occupational categories reported the highest dual-screening (62.5%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "90b66ca1-d99e-4512-b3a8-62b54ab2315b",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C85",
+      "claim": "Women living in rural areas reported the lowest dual-screening at 52.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "while those living in rural areas reported the lowest dual-screening (52.0%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "f8959b7a-8707-44dd-8a7e-5d5d25eabb86",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C86",
+      "claim": "60.7% of women with chronic conditions completed dual-screening.",
+      "claim_type": "EXPLICIT",
+      "source": "60.7% of women with chronic conditions completed dual-screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from descriptive analysis of the data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "a78072e0-08a4-4d22-a723-fb9752c9ad84",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C87",
+      "claim": "If a home-based cervical cancer screening was FDA approved, it could enhance uptake of the already FDA approved CRC home-based testing for women in this vulnerable age range.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize from our study that If a home-based cervical cancer screening was FDA approved, it could enhance uptake of the already FDA approved CRC home-based testing for women in this vulnerable age range (Bakr et al., 2020; Jaklevic, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis generated from the study findings, supported by citations about home-based testing.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "ab1679ed-cd8a-495d-a469-2de44bf8e49a",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C88",
+      "claim": "The high rates of a single cancer screen among the least educated may represent screening divorced from their routine primary care.",
+      "claim_type": "EXPLICIT",
+      "source": "Another hypothesis-generating result of this study is that the high rates of a single cancer screen among the least educated may represent screening divorced from their routine primary care.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis generated from the study results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "49c954ac-9387-4482-8685-75431db2a53d",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C89",
+      "claim": "The single screen may have been completed at a local health fair, worksite, or a targeted program for that single cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps the single screen was completed at a local health fair, worksite, or a targeted program for that single cancer (NBCCEDP, 2020; CRCCP, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed pattern, supported by citations to screening programs.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "e7c67680-53c5-4988-895d-4f581ca9a05a",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C90",
+      "claim": "The decision level for the type of cancer screening could be at the physician level where specialty may influence the cancer screening offered to the woman.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the decision level for the type of cancer screening could be at the physician level where specialty may influence the cancer screening (cervical vs. colorectal vs. both) offered to the woman.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about decision-making based on the observed patterns and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "a55e105a-9e40-41b7-9e56-e878e1a7f19d",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C91",
+      "claim": "Women may choose not to have any further cervical cancer screenings by vaginal speculum examination due to a variety of possible reasons: painful examinations, sexually inactive, no symptoms, or other personal reasons including past abuse.",
+      "claim_type": "EXPLICIT",
+      "source": "She may choose not to have any further cervical cancer screenings by vaginal speculum examination due to a variety of possible reasons: painful examinations, sexually inactive, no symptoms, or other personal reasons including past abuse (Cadman et al., 2012; Saunders et al., 2021; G\u00fcne\u015f and Kara\u00e7am, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for screening patterns, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "c4035048-a701-44dc-b932-67996d1c83a1",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C92",
+      "claim": "Women may choose to wait until 65 years to start CRC screening because this is the time that the Welcome to Medicare and Annual Medicare Wellness Visit overtly discuss CRC screening.",
+      "claim_type": "EXPLICIT",
+      "source": "She may choose to wait until 65 years to start CRC screening because this is the time that the Welcome to Medicare and Annual Medicare Wellness Visit overtly discuss CRC screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed age-related screening patterns.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "fb355be6-a13c-4d96-8edf-c87be6176887",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C93",
+      "claim": "The relationship between the PCP and the woman rather than her location or her employment status may increase cancer screening rates beyond the single cancer screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, this could support the hypothesis that the relationship between the PCP and the woman rather than her location or her employment status may increase cancer screening rates beyond the single cancer screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the regression analysis findings and prior work.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "f80d548a-de9b-4cd8-bafa-db9d926b3bf3",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "claim_id": "C94",
+      "claim": "Addressing dual-screening strategies rather than single cancer screening programs for women 50-64 years may increase both cancer screening rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Addressing dual-screening strategies rather than single cancer screening programs for women 50\u201364 years may increase both cancer screening rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Among women aged 50-64 years, dual-screening (both cervical and CRC) was reported at 58.2%, cervical cancer screening alone at 27.1%, CRC screening alone at 5.4%, and neither screen at 9.3%. Woman-centered screening rates (58.2% dual-screening) are substantially lower than population-based single cancer screening rates (86% cervical, 64% CRC). This represents a novel analytical perspective showing that women choose cervical cancer screening alone five times more often than CRC screening alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 provide direct survey data with confidence intervals from BRFSS 2018 (n=40,511). Claims C29, C70, and C71 demonstrate the methodological distinction between woman-centered and population-based approaches, with Figure 1 providing visual support. The data are internally consistent and the sample size is adequate for the reported precision.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "90402e70-8578-4950-8443-464f0c2ea13f",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Multivariate multinomial regression analysis identified significant predictors of dual-screening versus no screening. The strongest associations were college graduation (aOR=3.35), highest income (aOR=3.32), and prior cancer (aOR=2.90). Age, race (Black aOR=2.25, Hispanic aOR=1.68), and chronic conditions (arthritis, diabetes, depression) were also significantly associated with dual-screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C41 report adjusted odds ratios with 95% confidence intervals from multivariate analysis controlling for confounders. The statistical approach is appropriate (multinomial logistic regression for categorical outcomes), and inverse propensity weighting was used to address missing data. Effect sizes and confidence intervals support the stated associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "9425527e-053a-45d5-b2ca-b5c5fcff4778",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Hispanic women compared to White women were significantly more likely to have cervical cancer screening alone than dual-screening (aOR=1.39) or no screening (aOR=2.34). Black women also showed elevated odds of cervical-only screening versus no screening (aOR=1.73).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C42, and C43 present specific racial/ethnic disparities with statistical significance demonstrated by confidence intervals excluding 1.0. These findings are consistent with the descriptive data in C75-C77 showing Hispanic women had the highest cervical-only screening (39.4%) but lowest dual-screening (46.5%).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "cde2b77d-f473-42a9-923f-66527c416b5e",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Older women (60-64 years) were significantly more likely to have CRC screening alone compared to dual-screening (aOR=1.75) or no screening (aOR=2.55). Women with prior cancer had the highest odds of CRC-only screening versus no screening (aOR=3.08).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C44-C46 report age-related patterns with appropriate statistical evidence. The findings align with descriptive data (C72-C74) showing the youngest group (50-54) had lowest CRC screening (3.1%) but highest cervical-only screening (40.0%), supporting the interpretation of age-related screening transitions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "9b7881e5-cda2-4b55-b027-e722994c85f5",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Women who were American Indian, Native Hawaiian, Asian, or multiracial were significantly less likely to be up-to-date for CRC screening compared to neither screening (aOR=0.37).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 reports a specific finding with a confidence interval (0.21, 0.64) that excludes 1.0, indicating statistical significance. However, this aggregated racial category may mask important heterogeneity among diverse populations, limiting interpretability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "809a1e5a-46ae-48e1-9f9f-aa4c80ccbe23",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The dual-screening rate (58.2%) falls far below Healthy People 2030 goals for individual cancers (cervix: 84.3%, CRC: 74.4%). The 50-64 year age range shows dynamic screening behavior transitioning from predominantly cervical screening at age 50 to mostly CRC screening at age 65. Risk factors for dual-screening differ from those for single cancer screens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 synthesize the study's main findings with appropriate comparisons to national goals. Claims C68-C69 represent valid conclusions from the multinomial regression showing different predictor patterns across screening categories. The interpretation is supported by the data, though C50's claim about screening at age 65 extends slightly beyond the study's 50-64 age range.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "23fe1991-0cde-401c-9006-35275fbeea98",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Descriptive analysis revealed substantial variation in screening patterns by demographic characteristics. The youngest age group (50-54) had the lowest dual-screening (47.4%) and highest cervical-only screening (40.0%). Hispanic women showed similar patterns. Education and income showed strong gradients, with the least educated having lowest dual-screening (41.0%) and highest non-screening (15.3%), while highest income women had greatest dual-screening (65.7%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C86 report descriptive statistics from Table 3 with appropriate precision. These weighted prevalence estimates provide the foundation for the multivariate analyses. The patterns are internally consistent and align with the regression findings, though these are unadjusted associations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "ddd6dfb6-325c-4f81-91ea-37590b647369",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cervical cancer screening was defined as up-to-date based on Pap test within 3 years, HPV test within 5 years, or co-testing within 5 years. CRC screening was defined as up-to-date based on FOBT/FIT within 1 year, sigmoidoscopy within 5 years, or colonoscopy within 10 years, following USPSTF guidelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 accurately describe the operational definitions used in the study, appropriately citing USPSTF guidelines (Curry et al. 2018; Force et al. 2016, 2021). These definitions are standard and appropriate for the study period (2018 BRFSS data).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "e7b0687c-6476-49d2-b858-300627a2a27a",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims establish that women 50-64 have lower screening rates than other age groups, CRC screening has never met Healthy People goals, cervical cancer screening has been declining, and both cancers are asymptomatic until late stages. Epidemiological data on cancer incidence and mortality are provided. The study claims to present the first woman-centered dual-screening analysis for this age group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C24 provide appropriate background context with citations to support epidemiological data and prior screening trends. Claim C11 about novelty is reasonable given the literature review, though comprehensive verification of \"never published\" claims is challenging. The background appropriately motivates the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "e5eb338d-333f-43bb-92b3-44ae3a5b3ed3",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Discussion contextualizes findings with evidence that gynecologist visits drop 90% after age 45, menopause averages 52 years in the US, multiple CRC and cervical screening modalities exist including home-based options, and PCP relationships increase dual-screening participation based on prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C58 appropriately cite supporting literature to contextualize the study findings. The citations appear relevant and the interpretations are reasonable, though the authors are citing their own prior work for C58 without independent verification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "0cb12d09-2fb8-4227-a336-1fb0e24b1976",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Study limitations include that BRFSS is self-reported and not equivalent to medical records, with potential overestimation of screening among non-screeners but accurate reporting among screeners. 16.6% had missing data. Women may inaccurately report screening modality (particularly cotesting vs. Pap alone). BRFSS is described as the largest continuously conducted health survey globally, used by two-thirds of US states for legislative efforts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C66 appropriately acknowledge study limitations with supporting citations. The characterization of BRFSS scope (C61-C63) appears accurate. The limitation about screening modality misreporting (C65-C66) is important, with C66 noting 80% cotesting vs. 20% cytology alone nationally, suggesting potential 14% misclassification. Inverse propensity weighting was used to address missing data (C64).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "b47bad15-5032-4856-83b1-d57673040c84",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors hypothesize that FDA-approved home-based cervical screening could enhance CRC screening uptake, that single-screen patterns among less educated women may reflect screening outside routine primary care (e.g., health fairs), that physician specialty influences screening offered, that women may avoid speculum exams for various reasons, that women may delay CRC screening until Medicare eligibility at 65, and that PCP relationships may be more important than location or employment for dual-screening. They recommend dual-screening strategies over single-cancer programs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C94 are explicitly labeled as hypotheses, speculations, or recommendations by the authors. While these interpretations are plausible given the data patterns, they extend beyond what the cross-sectional observational data can directly support. C87 and C94 are particularly speculative about interventions not tested in this study. C90-C92 offer reasonable explanations for observed patterns but lack direct evidence. These represent hypothesis-generating findings rather than established conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    },
+    {
+      "id": "4bc85163-372f-4cc2-8fff-21afe62069e7",
+      "content_id": "eacf1b55-7694-4e1d-96a2-c5605779d90a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The most recent USPSTF CRC screening recommendations moved the initiation age to 45 years, providing a greater potential age gap for dual-screening considerations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 accurately describes the updated USPSTF guideline, though this occurred after the 2018 BRFSS data collection. This is appropriately noted as a limitation affecting the study's age range selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:57:17.514595Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "157515cb-ba63-4516-b66f-9c56adad72f9",
+      "result_id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad"
+    },
+    {
+      "claim_id": "f88aa0f9-9804-4a15-9ca3-5af67574d16a",
+      "result_id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad"
+    },
+    {
+      "claim_id": "fab111e5-d869-4468-9ab5-ef9880d06f40",
+      "result_id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad"
+    },
+    {
+      "claim_id": "c557df2d-54d3-46b9-a159-5815b8a5e79d",
+      "result_id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad"
+    },
+    {
+      "claim_id": "c16621d8-3d2b-4127-988f-304848ac9638",
+      "result_id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad"
+    },
+    {
+      "claim_id": "2c14f2d8-e10a-468c-a195-913dc9b94b22",
+      "result_id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad"
+    },
+    {
+      "claim_id": "9c03046d-0266-4a4d-be7d-de1802815e7a",
+      "result_id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad"
+    },
+    {
+      "claim_id": "6ce29f5e-1551-479c-8a9d-17b302f33de6",
+      "result_id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad"
+    },
+    {
+      "claim_id": "a8f61827-62d3-4d5a-af37-f5b430c4e3d6",
+      "result_id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad"
+    },
+    {
+      "claim_id": "61a71b62-0148-4731-90e1-9606daa36f38",
+      "result_id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad"
+    },
+    {
+      "claim_id": "ac25a876-3e16-47a9-bb58-3c43b635fd4a",
+      "result_id": "72e03a9d-24f9-4ae4-985d-57de46ccdaad"
+    },
+    {
+      "claim_id": "b4dbce8f-d824-4ac4-a50c-b49a1a9c5a21",
+      "result_id": "90402e70-8578-4950-8443-464f0c2ea13f"
+    },
+    {
+      "claim_id": "f3a082f2-253e-44a2-ab59-838aa148e39e",
+      "result_id": "90402e70-8578-4950-8443-464f0c2ea13f"
+    },
+    {
+      "claim_id": "be377c82-ad4b-4c6e-901d-734c57ba7b50",
+      "result_id": "90402e70-8578-4950-8443-464f0c2ea13f"
+    },
+    {
+      "claim_id": "d9906b6b-5c55-40b7-923f-2d12b022e074",
+      "result_id": "90402e70-8578-4950-8443-464f0c2ea13f"
+    },
+    {
+      "claim_id": "147a9f95-2a05-4b35-b2ad-8d556d2b60b0",
+      "result_id": "90402e70-8578-4950-8443-464f0c2ea13f"
+    },
+    {
+      "claim_id": "80bb9d19-6b43-4885-9937-e3843a97cebb",
+      "result_id": "90402e70-8578-4950-8443-464f0c2ea13f"
+    },
+    {
+      "claim_id": "fa849958-1082-4f57-a7c3-195d5963aadf",
+      "result_id": "90402e70-8578-4950-8443-464f0c2ea13f"
+    },
+    {
+      "claim_id": "f51cec73-2d79-42ea-898e-98235570efef",
+      "result_id": "90402e70-8578-4950-8443-464f0c2ea13f"
+    },
+    {
+      "claim_id": "980ab187-0496-4781-b125-8e776cff7511",
+      "result_id": "90402e70-8578-4950-8443-464f0c2ea13f"
+    },
+    {
+      "claim_id": "ac24da32-3cd7-43cf-927f-e4404603e2f6",
+      "result_id": "90402e70-8578-4950-8443-464f0c2ea13f"
+    },
+    {
+      "claim_id": "7ad80423-03dc-474c-8261-4fd8a0f21842",
+      "result_id": "90402e70-8578-4950-8443-464f0c2ea13f"
+    },
+    {
+      "claim_id": "ee0f6b45-b3b1-44ac-bd35-667ab2e2dfda",
+      "result_id": "9425527e-053a-45d5-b2ca-b5c5fcff4778"
+    },
+    {
+      "claim_id": "8b333dcb-c71c-48e0-aaea-c56e824e1eb4",
+      "result_id": "9425527e-053a-45d5-b2ca-b5c5fcff4778"
+    },
+    {
+      "claim_id": "1d6ff6e6-5340-40ff-96c9-cc7a2a798c6e",
+      "result_id": "9425527e-053a-45d5-b2ca-b5c5fcff4778"
+    },
+    {
+      "claim_id": "862c26cd-cf6a-43ec-8e0d-9bb10c01823e",
+      "result_id": "cde2b77d-f473-42a9-923f-66527c416b5e"
+    },
+    {
+      "claim_id": "f8cc2583-e9ef-42d9-be74-620079c93724",
+      "result_id": "cde2b77d-f473-42a9-923f-66527c416b5e"
+    },
+    {
+      "claim_id": "4bdc056d-ca5a-40c8-aeaa-c22d34c94a20",
+      "result_id": "cde2b77d-f473-42a9-923f-66527c416b5e"
+    },
+    {
+      "claim_id": "0d3a22b2-b9ee-46cd-91b7-d3a3c50778fc",
+      "result_id": "cde2b77d-f473-42a9-923f-66527c416b5e"
+    },
+    {
+      "claim_id": "88d3accb-44ff-4175-a588-559c1cd4b1af",
+      "result_id": "9b7881e5-cda2-4b55-b027-e722994c85f5"
+    },
+    {
+      "claim_id": "24e93574-d661-47c3-b162-e4158f265ed4",
+      "result_id": "809a1e5a-46ae-48e1-9f9f-aa4c80ccbe23"
+    },
+    {
+      "claim_id": "f95b6038-29e5-4c22-9921-33d70ab6edb2",
+      "result_id": "809a1e5a-46ae-48e1-9f9f-aa4c80ccbe23"
+    },
+    {
+      "claim_id": "8e8b754e-9515-48cf-acf0-c1b573a83107",
+      "result_id": "809a1e5a-46ae-48e1-9f9f-aa4c80ccbe23"
+    },
+    {
+      "claim_id": "090f8c2a-c07d-4cac-97c1-176f2948e445",
+      "result_id": "809a1e5a-46ae-48e1-9f9f-aa4c80ccbe23"
+    },
+    {
+      "claim_id": "3fbc19b4-3172-47ea-a684-a23a92b09773",
+      "result_id": "809a1e5a-46ae-48e1-9f9f-aa4c80ccbe23"
+    },
+    {
+      "claim_id": "73dbe98b-f2f3-45a9-a2d6-436d766db652",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "46e5394e-0ab4-44f7-a3e8-4353aee23af5",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "e0409c15-658b-484b-9bfc-aea92dbdfcb7",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "e7703cc4-e6a7-4907-84b4-3bd0511dbcb7",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "fb1e1337-5696-4509-bbce-ee23f806f709",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "cbad9726-a37b-43ef-8ae4-3b52287b1bdd",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "588ebb5a-7b55-42d4-9eaf-311db11a485f",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "52a4db4b-746a-4bf8-a10a-21d26ce6cd75",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "b5db6481-f34a-4fc3-b329-1f5c42a283ac",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "429b797c-68d4-4ae7-88bc-5ccfca3c3236",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "4d83beb5-2ecb-4fda-9ce3-90311470ac5f",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "08e93b7a-6b93-46ef-9732-5a498ac15832",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "82cebe0d-6351-41f6-b3cc-ddd1930a60f2",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "90b66ca1-d99e-4512-b3a8-62b54ab2315b",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "f8959b7a-8707-44dd-8a7e-5d5d25eabb86",
+      "result_id": "23fe1991-0cde-401c-9006-35275fbeea98"
+    },
+    {
+      "claim_id": "086b637f-842f-4708-a1ef-a0d7594ae419",
+      "result_id": "ddd6dfb6-325c-4f81-91ea-37590b647369"
+    },
+    {
+      "claim_id": "51d0c0b1-cd4b-4cc6-ba00-55fe23e96bdc",
+      "result_id": "ddd6dfb6-325c-4f81-91ea-37590b647369"
+    },
+    {
+      "claim_id": "4ce331e2-d71c-4dcc-874a-eaf0fefa35a4",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "9e94e176-35e6-4ee9-9b15-714561d90ab1",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "44d36240-bee7-4232-8f49-dcd883988bab",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "6363dce5-f383-4436-9e3d-a105b12ad7a0",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "7d160969-55a1-498f-a9fb-bc5156e572c1",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "a7e23362-c24c-428f-b82f-88488e9f7436",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "2b6461e7-35ec-4527-ac40-5a52a53c2703",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "33b5076b-1a60-44d7-a609-5ebc4e10a133",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "b37410bc-ad2e-42a9-92e1-f554a022b61d",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "ed4867f4-c6f9-45f3-ab6d-b55c3bd538d4",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "cb7dac9e-1a21-43c7-9be4-e07096cf89eb",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "80b38eb7-0f31-48b7-92e8-72e4a5390650",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "f62992c4-dacc-48e3-9c55-eaa467b12f68",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "c8010f00-c88c-4cfd-a15e-f2cf6ce1bf98",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "b480724f-bb93-4869-ae0a-ed2b3612e0c0",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "471f5a12-8d12-47aa-8df3-2a589b7958b5",
+      "result_id": "e7b0687c-6476-49d2-b858-300627a2a27a"
+    },
+    {
+      "claim_id": "91442091-a293-47a5-8285-8b87c467e7a8",
+      "result_id": "e5eb338d-333f-43bb-92b3-44ae3a5b3ed3"
+    },
+    {
+      "claim_id": "ffd3769e-a604-4ccc-8f03-3e9afdbde15c",
+      "result_id": "e5eb338d-333f-43bb-92b3-44ae3a5b3ed3"
+    },
+    {
+      "claim_id": "d27a280b-2b32-4400-a205-1a2f794659a1",
+      "result_id": "e5eb338d-333f-43bb-92b3-44ae3a5b3ed3"
+    },
+    {
+      "claim_id": "53b302a1-d0b5-4767-a2a0-5a02bef3ae38",
+      "result_id": "e5eb338d-333f-43bb-92b3-44ae3a5b3ed3"
+    },
+    {
+      "claim_id": "f46550f6-eefa-4d69-8d67-5424148755fa",
+      "result_id": "e5eb338d-333f-43bb-92b3-44ae3a5b3ed3"
+    },
+    {
+      "claim_id": "b736eef9-8ed5-4c48-98c5-3c4c6da9729d",
+      "result_id": "e5eb338d-333f-43bb-92b3-44ae3a5b3ed3"
+    },
+    {
+      "claim_id": "41cd73db-878e-4b87-86c1-fd0d8bb2105c",
+      "result_id": "e5eb338d-333f-43bb-92b3-44ae3a5b3ed3"
+    },
+    {
+      "claim_id": "d30dd38a-7e2a-4fe4-8868-26ccdc48621b",
+      "result_id": "e5eb338d-333f-43bb-92b3-44ae3a5b3ed3"
+    },
+    {
+      "claim_id": "76fe5268-81af-4fed-b42c-d5b6ce135157",
+      "result_id": "0cb12d09-2fb8-4227-a336-1fb0e24b1976"
+    },
+    {
+      "claim_id": "9e531dda-2005-402c-bc62-c7aa0b758b38",
+      "result_id": "0cb12d09-2fb8-4227-a336-1fb0e24b1976"
+    },
+    {
+      "claim_id": "227cd194-bb3a-487e-92e3-cc0c7b98af52",
+      "result_id": "0cb12d09-2fb8-4227-a336-1fb0e24b1976"
+    },
+    {
+      "claim_id": "3d31f1d7-dec9-46ee-8f90-09795f5a5d6a",
+      "result_id": "0cb12d09-2fb8-4227-a336-1fb0e24b1976"
+    },
+    {
+      "claim_id": "9c67c10f-6b11-40c8-b9de-f1f2ac7a77df",
+      "result_id": "0cb12d09-2fb8-4227-a336-1fb0e24b1976"
+    },
+    {
+      "claim_id": "331338f4-85c1-461a-9543-751d0372a829",
+      "result_id": "0cb12d09-2fb8-4227-a336-1fb0e24b1976"
+    },
+    {
+      "claim_id": "5e056586-4a41-4fa2-b643-3e5cc85b38ca",
+      "result_id": "0cb12d09-2fb8-4227-a336-1fb0e24b1976"
+    },
+    {
+      "claim_id": "549599c0-c1b4-41f2-a7b9-3a9f6ba82f87",
+      "result_id": "0cb12d09-2fb8-4227-a336-1fb0e24b1976"
+    },
+    {
+      "claim_id": "a78072e0-08a4-4d22-a723-fb9752c9ad84",
+      "result_id": "b47bad15-5032-4856-83b1-d57673040c84"
+    },
+    {
+      "claim_id": "ab1679ed-cd8a-495d-a469-2de44bf8e49a",
+      "result_id": "b47bad15-5032-4856-83b1-d57673040c84"
+    },
+    {
+      "claim_id": "49c954ac-9387-4482-8685-75431db2a53d",
+      "result_id": "b47bad15-5032-4856-83b1-d57673040c84"
+    },
+    {
+      "claim_id": "e7c67680-53c5-4988-895d-4f581ca9a05a",
+      "result_id": "b47bad15-5032-4856-83b1-d57673040c84"
+    },
+    {
+      "claim_id": "a55e105a-9e40-41b7-9e56-e878e1a7f19d",
+      "result_id": "b47bad15-5032-4856-83b1-d57673040c84"
+    },
+    {
+      "claim_id": "c4035048-a701-44dc-b932-67996d1c83a1",
+      "result_id": "b47bad15-5032-4856-83b1-d57673040c84"
+    },
+    {
+      "claim_id": "fb355be6-a13c-4d96-8edf-c87be6176887",
+      "result_id": "b47bad15-5032-4856-83b1-d57673040c84"
+    },
+    {
+      "claim_id": "f80d548a-de9b-4cd8-bafa-db9d926b3bf3",
+      "result_id": "b47bad15-5032-4856-83b1-d57673040c84"
+    },
+    {
+      "claim_id": "eee3ad3b-44cf-4e64-a6ad-bad259785814",
+      "result_id": "4bc85163-372f-4cc2-8fff-21afe62069e7"
+    }
+  ],
+  "comparisons": []
+}

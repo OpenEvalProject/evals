@@ -1,0 +1,1973 @@
+{
+  "submission": {
+    "id": "6530c1be-3392-4cac-9249-b076f4f17214",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:03:19.114567Z",
+    "updated_at": "2025-12-03T03:03:19.114567Z"
+  },
+  "content": [
+    {
+      "id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "submission_id": "6530c1be-3392-4cac-9249-b076f4f17214",
+      "content_type": "manuscript",
+      "content_text": "# Locus coeruleus spiking differently correlates with S1 cortex activity and pupil diameter in a tactile detection task\n\n## Authors\n\n- Hongdian Yang<sup>1</sup> ([ORCID: 0000-0002-5203-9519](https://orcid.org/0000-0002-5203-9519)) \u2020\n- Bilal A Bari<sup>2</sup>\n- Jeremiah Y Cohen<sup>2</sup> ([ORCID: 0000-0002-4768-7124](https://orcid.org/0000-0002-4768-7124))\n- Daniel H O'Connor<sup>2</sup> ([ORCID: 0000-0002-9193-6714](https://orcid.org/0000-0002-9193-6714)) \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cell and Systems Biology, University of California, Riverside Riverside United States\n2. Department of Neuroscience, Brain Science Institute, and Kavli Neuroscience Discovery Institute, Johns Hopkins School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe examined the relationships between activity in the locus coeruleus (LC), activity in the primary somatosensory cortex (S1), and pupil diameter in mice performing a tactile detection task. While LC spiking consistently preceded S1 membrane potential depolarization and pupil dilation, the correlation between S1 and pupil was more heterogeneous. Furthermore, the relationships between LC, S1, and pupil varied on timescales of sub-seconds to seconds within trials. Our data suggest that pupil diameter can be dissociated from LC spiking and cannot be used as a stationary index of LC activity.\n\n## Introduction\n\nMultiple lines of evidence implicate the locus coeruleus/norepinephrine (LC/NE) system in perceptual task performance. First, LC activity modulates feedforward processing of sensory stimuli (Hirata et al., 2006; Devilbiss et al., 2006; Rodenkirch et al., 2019) and impacts sensory cortex states (Constantinople and Bruno, 2011; Polack et al., 2013). Second, LC activity correlates with task performance (Rajkowski et al., 1994; Usher et al., 1999) and pupil diameter (Rajkowski et al., 1994; Joshi et al., 2016; Reimer et al., 2016; Liu et al., 2017). Finally, pupil diameter is thought to index arousal and has been found to be correlated with neuronal and behavioral detection or discrimination sensitivity (Reimer et al., 2014; McGinley et al., 2015a; McGinley et al., 2015b; Vinck et al., 2015; Lee and Margolis, 2016; Schriver et al., 2018; Lee et al., 2020; Cazettes et al., 2021), as well as decision bias (de Gee et al., 2014; de Gee et al., 2020). Since sensory cortex activity impacts perceptual reports (Sachidhanandam et al., 2013; Miyashita and Feldman, 2013), these observations suggest the hypothesis that LC/NE modulates sensory cortex activity and affects perceptual task performance and that this effect can be monitored noninvasively via the easy-to-measure pupil diameter. Testing this hypothesis requires simultaneous measurement of (1) LC activity, (2) cortical activity, ideally subthreshold membrane potential, and (3) pupil diameter, all during perceptual task performance. Here, we recorded spiking activity of optogenetically-tagged LC units together with pupil diameter in mice performing a tactile detection task (Yang et al., 2016). In a subset of experiments, we also performed simultaneous whole-cell current clamp recordings in S1 (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig1-v1.jpg)\n\n**Figure 1.:** (a) Task schematic, trial structure, and all trial types of the single-whisker detection task (Yang et al., 2016). (b) Schematic of tetrode recording in LC, whole-cell recording in S1, and pupil tracking during the task. (c) Expression of ChR2 in a Dbh;Ai32 mouse (ChR2-EYFP: green; tyrosine hydroxylase\u00a0TH: red). (d) Left: Responses of a ChR2-expressing LC unit to opto-tagging (lightning bolts: blue light pulses) and tail pinch. Middle: LC unit responses to 12 blue light pulses (200 ms) aligned to individual pulse onset. Ticks represent spikes. PSTH is shown at the bottom. Right: Typical wide waveforms of LC units and an electrolytic lesion (arrow: lesion site) in the LC (white) showing the recording location. (e) Example simultaneously recorded LC activity, S1 Vm, and pupil with auditory cue and whisker stimulation onsets indicated. Trace is from a brief period of non-performance during a behavioral session and so there are no licks. The example pupil size is typical for all sessions (Figure 1\u2014figure supplement 1).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Histogram of median pupil diameter (n = 39 recordings). Magenta arrow indicates the recording shown in Figure 1e.\n\n## Results\n\nFirst, we report the analysis of LC and pupil recordings during behavior (e.g., Figure 2a). Consistent with prior reports (Joshi et al., 2016; Reimer et al., 2016; Liu et al., 2017), cross-correlogram analysis revealed that LC spiking activity and pupil diameter were correlated across entire sessions, with pupil dilation following LC spikes (peak correlation coefficient: 0.15\u00a0\u00b1\u00a00.02; time lags: 2.61\u00a0\u00b1\u00a00.39 s, n\u00a0=\u00a039 recordings, Figure 2b). Mean LC spiking activity aligned with\u00a0trial onsets showed prominent responses to a tone delivered at the beginning of each trial, as well as in trials where mice made Go (licking) responses (Hit and False Alarm trials, Figure 2a,c). LC spiking activity to the tone was comparable to Go responses (p=0.24, Figure 2d, Materials and methods). On Hit trials, where mice successfully licked to the whisker stimulus, pre-stimulus LC activity (measured in a 0.5 s window prior to stimulus onset) was slightly but significantly lower than Miss trials, where mice failed to lick to the whisker stimulus (Figure 2e). We note that on Miss trials, LC responded weakly to the whisker stimulus alone (<0.5 sp/s above baseline, Figure 2\u2014figure supplement 1). LC activity measured in a short window (0.2 s) after stimulus onset was larger on Hits compared with Misses (Figure 2e; the same trend holds for 0.1 s window, data not shown). Ideal-observer analysis showed that both pre- and post-stimulus LC activity significantly predicted perceptual reports of the mice on a trial-by-trial basis, with choice probabilities (Yang et al., 2016) of 0.47\u00a0\u00b1\u00a00.014 (p=0.032, n\u00a0=\u00a043) for pre-stimulus and 0.59\u00a0\u00b1\u00a00.017 (p=4.6e-6, n\u00a0=\u00a043) for post-stimulus LC activity, respectively (Figure 2e). LC activity aligned to the time of licking showed that spiking responses began\u00a0~200 ms prior to licking (Figure 2f).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig2-v1.jpg)\n\n**Figure 2.:** (a) Example LC recording with pupil tracking. Left: LC spike raster separated by trial types. Right: Mean pupil diameter (\u00b1 s.e.m.) separated by trial types. Gray and black arrows indicate tone and stimulus onsets, respectively. Gray and black bars indicate the time windows during which pupil responses to tone and to Go (behavioral responses) were quantified, respectively. We note that based on the temporal profiles of pupil diameter in different trial types (i.e., in the presence or absence of tactile stimulus or licking) and that the\u00a0tactile stimulus starts 1 s after tone onset, pupil responses to tone and Go can be segregated (Materials\u00a0and\u00a0methods). (b) Top: Grand average cross-correlogram between LC spike train and pupil diameter (n\u00a0=\u00a039). Individual LC spikes were convolved with a 400 ms wide Gaussian kernel. Spike times were shuffled and LC\u2013pupil correlations computed to establish controls (narrow gray band around zero). Bottom: Histogram of peak correlation coefficient (left), and time lags (right) between LC spike train and pupil diameter for each paired recording (magenta dot: mean). Both distributions are significantly larger than 0 (peak correlation coefficient: 0.15\u00a0\u00b1\u00a00.02, p=8.3e-7, signed rank\u00a0=\u00a0743; time lags: 2.61\u00a0\u00b1\u00a00.39 s, p=7.8e-7, signed rank\u00a0=\u00a0744, n\u00a0=\u00a039). (c) Grand average trial-aligned LC spike rate (n\u00a0=\u00a043, top), and pupil diameter (n\u00a0=\u00a036, bottom) averaged by different trial types. Gray and black arrows indicate tone and stimulus onsets, respectively. In Hit trials, the latency of LC responses to tone onset was 0.064\u00a0\u00b1\u00a00.005 s, and to whisker stimulation onset was 0.111\u00a0\u00b1\u00a00.008 s, and the reaction time (first lick latency to whisker stimulation onset) of the mice was 0.58\u00a0\u00b1\u00a00.03 s. (d) Left: LC responses to tone (T) and Go responses (G) during Hit trials with median indicated. Tone vs. Go: 4.79 (3.70\u20136.66) sp/s vs. 4.68 (3.33\u20137.26) sp/s, median (IQR), p=0.24, signed rank\u00a0=\u00a0496.5, n\u00a0=\u00a043. Right: Pupil responses to tone and Go responses during Hit trials with median indicated. Tone vs. Go: 0.003 (\u22120.015\u20130.015) mm vs. 0.027 (\u22120.010\u20130.063) mm, median (IQR), p=6.4e-5, signed rank\u00a0=\u00a0559, n\u00a0=\u00a036. Gray lines indicate individual recordings. (e) Top: Pre-stimulus (baseline) and post-stimulus (evoked) LC spike rate for Hit and Miss trials with median indicated (Baseline: Hit vs. Miss, 0.66 (0.30\u20133.51) sp/s vs. 1.55 (0.68\u20133.00) sp/s, median (IQR), p=0.0083, signed rank\u00a0=\u00a0254.5; Evoked: Hit vs. Miss, 3.24 (1.78\u20135.49) sp/s vs. 1.82 (0.95\u20133.45) sp/s, median (IQR), p=5.5e-7, signed rank\u00a0=\u00a0782.5, n\u00a0=\u00a043). Gray lines indicate individual recordings. Bottom: Histogram of choice probability for Hit vs. Miss trials based on baseline and evoked LC activity (magenta dots: mean). Choice probabilities are significantly deviated from 0.5. Baseline: 0.47\u00a0\u00b1\u00a00.014, p=0.032, signed rank\u00a0=\u00a0295.5; Evoked: 0.59\u00a0\u00b1\u00a00.017, p=4.6e-6, signed rank\u00a0=\u00a0751, n\u00a0=\u00a043. (f) Lick-aligned LC spike rate (top) and pupil diameter (\u2206Pupil, bottom) averaged by trial types: Hit (blue), FA (green).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Hit trials: Pre-stimulus vs. post-stimulus: 0.66 (0.30-3.51) sp/s vs. 3.24 (1.78-5.49) sp/s, median (IQR), P = 7.6e-7, n = 43. (b) Miss trials: Pre-stimulus vs. post-stimulus: 1.55 (0.68-3.00) sp/s vs. 1.82 (0.95-3.45) sp/s, median (IQR), P = 0.02, n = 43.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Pupil responses to the tone for Hit and Miss trials with median indicated. Hit vs. Miss, 0.003 (-0.015 \u2013 0.015) mm vs. 0.0083 (-0.0005 \u2013 0.029) mm, median (IQR), P = 0.0062, n = 36. Gray lines indicate individual recordings. (b) Histogram of choice probability for Hit vs. Miss trials based on pupil responses to the tone (magenta dot: mean). Choice probability is significantly deviated from 0.5 (0.44 \u00b1 0.021, P = 0.0036, n = 36).\n\nIn striking contrast, pupil diameter minimally increased in response to the tone. Instead, pupil strongly dilated on Hit and False Alarm trials, in which mice made Go (licking) responses (Figure 2a,c,d; tone vs. Go: p=6.4e-5, n\u00a0=\u00a036, Materials\u00a0and\u00a0methods) (Lee and Margolis, 2016). Interestingly, pupil response to the tone was larger on Misses compared to Hits and significantly predicted perceptual choices of the mice (Figure 2\u2014figure supplement 2). Pupil diameter changes (\u2206Pupil) aligned to the time of licking showed that pupil responses occurred after licking (Figure 2f).\n\nTogether, these data show that LC and pupil responses were positively correlated. Both LC activity and pupil diameter increased during licking responses, but LC also strongly responded to the tone, a salient sensory cue that alerted mice to trial onsets. Thus, LC activity and pupil diameter appear to reflect different sets of task events during this behavior.\n\nNext, we analyzed recordings where we simultaneously measured membrane potential (Vm) of S1 neurons (mostly from layer 2/3, Figure 3\u2014figure supplement 1), along with LC spiking and/or pupil diameter during the detection task. Our goal was to determine how LC spiking related to cortical activity and to pupil diameter during task performance. We used spike-triggered averages (STAs) to quantify how individual spikes from single LC units correlated with changes in Vm and pupil diameter. LC spike-triggered Vm analyses revealed that LC spikes were associated with a depolarization in cortical neurons (1.39\u00a0\u00b1\u00a00.35 mV, n\u00a0=\u00a012, Figure 3a\u2013c). On average, Vm depolarization associated with an LC spike peaked after the spike, with short time lags from an LC spike to peak depolarization in S1 (0.17\u00a0\u00b1\u00a00.06 s, n\u00a0=\u00a012, Figure 3a\u2013c; also see Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig3-v1.jpg)\n\n**Figure 3.:** (a) Two examples of LC spike-triggered average \u2206Vm. (b) Group mean of LC spike-triggered average \u2206Vm (\u00b1\u00a0s.e.m., n\u00a0=\u00a012). (c) Histograms of peak \u2206Vm and peak lags (showing all LC\u2013S1 pairs) with means indicated (magenta dots). Both distributions are significantly larger than 0 (peak \u2206Vm: 1.39\u00a0\u00b1\u00a00.35 mV, p=4.9e-4, signed rank\u00a0=\u00a078; peak lags: 0.17\u00a0\u00b1\u00a00.06 s, p=4.9e-4, signed rank\u00a0=\u00a078, n\u00a0=\u00a012). (d) Two examples of LC spike-triggered average \u2206Pupil. (e) LC spike-triggered average \u2206Pupil group mean (\u00b1 s.e.m., n\u00a0=\u00a07). (f) Histograms of peak \u2206Pupil and peak lags (showing all LC\u2013Pupil pairs) with means indicated (magenta dots). Both distributions are significantly larger than 0 (peak \u2206Pupil: 0.03\u00a0\u00b1\u00a00.01 mm, p=0.016, signed rank\u00a0=\u00a028; peak lags: 1.89\u00a0\u00b1\u00a00.25 s, p=0.016, signed rank\u00a0=\u00a028, n\u00a0=\u00a07). (g) Two examples of Pupil\u2013Vm cross-correlograms. (h) Group mean of Pupil\u2013Vm cross-correlograms (\u00b1 s.e.m., n\u00a0=\u00a019). (i) Histograms of peak Pupil\u2013Vm correlation coefficient and peak lags (showing all S1\u2013Pupil pairs) with means indicated (magenta dots). Both distributions are not significantly deviated from 0 (peak correlation coefficient: 0.05\u00a0\u00b1\u00a00.04, p=0.33, signed rank\u00a0=\u00a0119; peak lags: - 0.22\u00a0\u00b1\u00a01.01 s, p=0.87, signed rank\u00a0=\u00a099, n\u00a0=\u00a019). (j) Group mean of the time derivative of pupil (Pupil\u2019)\u2013Vm cross-correlograms (\u00b1 s.e.m., n\u00a0=\u00a019). (k) Histograms of peak Pupil\u2019-Vm correlation coefficient and peak lags with means indicated (magenta dots). Both distributions are significantly larger than 0 (peak correlation coefficient: 0.15\u00a0\u00b1\u00a00.03, p=1.6e-4, signed rank\u00a0=\u00a0189; peak lags: 1.31\u00a0\u00b1\u00a00.24 s, p=1.3e-4, signed rank\u00a0=\u00a0190, n\u00a0=\u00a019). (l) Left: Peak correlation coefficient for LC\u2013Vm, Pupil\u2013Vm and Pupil\u2019\u2013Vm pairs after progressive high-pass filtering of S1 Vm. Right: Exponential decay functions (corr. coef. = a*exp(\u2212freq*\u03bc)) were fitted to these curves. The time constant \u03bc is significantly different (repeated-measures ANOVA, F(2, 36)=74.5, p=1.6e-13, n\u00a0=\u00a019). Post\u00a0hoc Tukey\u2013Kramer tests revealed that the LC\u2013Vm relationship had the slowest decay and Pupil\u2013Vm had the fastest decay. LC\u2013Vm vs. Pupil\u2013Vm, p=5.9e-8; LC\u2013Vm vs. Pupil\u2019\u2013Vm, p=0.0037; Pupil\u2013Vm vs. Pupil\u2019\u2013Vm, p=7.1e-7.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Red: 12 S1 recordings included in the LC\u2013S1 pairs in Figures 3a\u2013c\u00a0and 4a. Gray: 19 S1 recordings included in the Pupil\u2013S1 pairs in Figure 3g\u2013I.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Group mean of cross-correlogram between LC spike train and S1 Vm (n\u00a0=\u00a012).\u00a0Individual LC spikes were convolved with a 400 ms wide Gaussian kernel. (b) Histogram of peak correlation coefficient (0.24\u00a0\u00b1\u00a00.03) and time lag (0.24\u00a0\u00b1\u00a00.06 s) between LC spike train and S1 Vm for each paired recording (magenta dot: mean).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Group mean of LC spike-triggered time derivative of pupil diameter (Pupil\u2019, n\u00a0=\u00a07), same dataset as used in Figure 3d\u2013f.\u00a0(b) Histogram of peak pupil\u2019 (0.05\u00a0\u00b1\u00a00.01 mm/s) and time lag (0.53\u00a0\u00b1\u00a00.35 s) between LC spike train and pupil\u2019 for each paired recording (pupil dot: mean).\n\nConsistent with the previous cross-correlogram analysis based on a larger set of LC\u2013pupil recordings (Figure 2b), here STA analysis showed that pupil diameter increased in association with individual spikes from LC single units (0.03\u00a0\u00b1\u00a00.01 mm, n\u00a0=\u00a07), with peak dilation occurring roughly 10-fold slower than peak Vm depolarization (time lags from an LC spike to peak pupil dilation: 1.89\u00a0\u00b1\u00a00.25 s, n\u00a0=\u00a07, Figure 3d\u2013f).\n\nGiven that pupil diameter and LC activity are positively correlated, and that pupil diameter has been often considered to index LC activity (Aston-Jones and Cohen, 2005; McGinley et al., 2015b), we next tested whether the pupil\u2013S1 relationship resembled the LC\u2013S1 relationship. Cross-correlogram analyses revealed heterogeneous correlations between pupil diameter and S1 Vm, with both positive and negative correlations as well as positive and negative time lags (peak correlation coefficient: 0.05\u00a0\u00b1\u00a00.04; time lags: \u22120.22\u00a0\u00b1\u00a01.01 s, n\u00a0=\u00a019, Figure 3g\u2013i). In sharp contrast, the time derivative of pupil diameter (pupil\u2019) was positively correlated with S1 Vm in a more consistent manner (peak correlation coefficient: 0.15\u00a0\u00b1\u00a00.03; time lags: 1.31\u00a0\u00b1\u00a00.24 s, n\u00a0=\u00a019, Figure 3j,k; Reimer et al., 2016; Reimer et al., 2014). We further examined how well LC spiking and pupil diameter can predict cortical Vm fluctuations at different timescales. We found that LC activity was superior in predicting cortical dynamics faster than\u00a0~200\u2013300 ms (exponential decay time constant: LC\u2013Vm vs. Pupil\u2013Vm vs. Pupil\u2019-Vm,\u00a01.02\u00a0\u00b1\u00a00.09 vs. 6.59\u00a0\u00b1\u00a00.60 vs. 1.53\u00a0\u00b1\u00a00.14, Figure 3l; repeated-measures ANOVA, F(2, 36)=74.5, p=1.6e-13, n\u00a0=\u00a019). Post\u00a0hoc Tukey\u2013Kramer tests revealed that LC activity reflects higher\u00a0frequency correlations with Vm compared with the pupil (LC\u2013Vm vs. Pupil\u2013Vm, p=5.9e-8; LC-Vm vs. Pupil\u2019\u2013Vm, p=0.0037; Pupil\u2013Vm vs. Pupil\u2019\u2013Vm, p=7.1e-7). On the other hand, the LC\u2013Pupil\u2019 relationship was similar to that of LC\u2013Pupil (compare Figure 3\u2014figure supplement 3 with Figure 3e,f).\n\nTogether, these data show that LC spikes preceded S1 depolarizations and pupil dilations. LC spiking correlated with both Vm and pupil diameter changes, but on vastly different timescales (~0.2 s vs.\u00a0~2 s). Our data also show that the time derivative of pupil diameter, but not the absolute pupil size, is a good predictor of S1 Vm fluctuations. However, LC spiking can track fast Vm fluctuations better than either pupil or pupil\u2019.\n\nIndividual trials in our detection task contained distinct events, including the tone that alerted mice of the trial start (\u2018Tone\u2019), the whisker stimulus on Go trials (\u2018Stimulus\u2019), and licks (\u2018Lick\u2019), as well as other periods in which mice did not receive stimuli or make lick responses (\u2018Quiet\u2019). For a more granular perspective on how LC spiking correlated with changes in Vm and pupil diameter, we computed LC spike-triggered averages separately in these different event windows (task epochs, Materials and methods).\n\nWhile single LC spikes were associated with prominent changes in both cortical Vm and pupil diameter, we found that these associations strikingly depended on task epoch: Vm depolarization associated with an LC spike had the biggest response to tone/licking and almost no response during the quiet periods (Figure 4a). In contrast, pupil dilation associated with an LC spike had the biggest response to licking and almost no response to the tone (Figure 4b; this was true as well for pupil dilation after z-scoring, Figure 4\u2014figure supplement 1). The pupil\u2019 associated with an LC spike had an intermediate response to the tone (Figure 4c). In addition, peak pupil dilation, pupil\u2019 and Vm depolarization appeared to have different dependencies on LC spike counts, with a roughly monotonic relationship between pupil and LC, and a much weaker dependence between Vm and LC (Figure 4\u2014figure supplement 2). The relationship between Vm and LC spike count could partly but not fully be attributable to differences in the LC inter-spike intervals (Figure 4\u2014figure supplement 2a). Thus, the correlations between LC spiking and Vm, and between LC spiking and pupil diameter, are non-stationary, even on the timescale of a few seconds. Importantly, these epoch\u00a0dependencies were different for Vm and pupil \u2013 with the biggest response occurring to the tone for Vm and the smallest response occurring to the tone for pupil \u2013 suggesting that the correlations between LC activity and Vm and pupil each reflect distinct unmeasured underlying processes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig4-v1.jpg)\n\n**Figure 4.:** (a) Top: LC spike-triggered \u2206Vm separated by task epoch: tone, stimulus, lick, and quiet. Bottom: Bar graphs of peak \u2206Vm for each epoch. Dots indicate individual paired recordings. Repeated-measure ANOVA, F(3, 33)=9.2, p=1.4e-4, n\u00a0=\u00a012. Post\u00a0hoc Tukey\u2013Kramer tests revealed that peak \u2206Vm in lick, stimulus, and tone epochs were not different from each other. Lick vs. Stim, p=1.00; Lick vs. Tone, p=0.76; Stim vs. Tone, p=0.94. Peak \u2206Vm in quiet epochs was lower. Quiet vs. Lick, p=0.0059; Quiet vs. Stim, p=0.0038; Quiet vs. Tone, p=0.0041. (b) Top: LC spike-triggered \u2206Pupil separated by task epoch. Bottom: Bar graphs of peak \u2206Pupil for each epoch. Dots indicate individual paired recordings. Repeated-measure ANOVA, F(3, 57)=22.1, p=1.3e-9, n\u00a0=\u00a020. Post\u00a0hoc Tukey\u2013Kramer tests revealed that peak \u2206Pupil in lick and stimulus epochs were larger than in tone and quiet epochs. Lick vs. Stim, p=0.10; Tone vs. Quiet, p=0.76; Lick vs. Tone, p=3.7e-7; Lick vs. Quiet, p=6.2e-4; Stim vs. Tone, p=1.1e-4; Stim vs. Quiet, p=0.0027. (c) Top: LC spike-triggered pupil\u2019 separated by task epoch. Bottom: Bar graphs of peak pupil\u2019 for each epoch. Dots indicate individual paired recordings. Repeated-measures ANOVA, F(3, 57)=35.3, p=4.9e-13, n\u00a0=\u00a020. Post\u00a0hoc Tukey\u2013Kramer tests revealed that peak pupil\u2019 in lick and stimulus epochs were larger than in tone, and peak pupil\u2019 in quiet epochs was the lowest. Lick vs. Stim, p=0.46; Tone vs. Quiet, p=0.0013; Lick vs. Tone, p=1.0e-4; Lick vs. Quiet, p=1.4e-8; Stim vs. Tone, p=0.0058; Stim vs. Quiet, p=6.7e-6.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) LC spike-triggered z-scored \u2206Pupil separated by task epoch.\u00a0(b) Bar graphs of z-scored peak \u2206Pupil for each epoch. Dots indicate individual paired recordings. Repeated-measure ANOVA, F(3, 57)=21.4, p=2.1e-9, n\u00a0=\u00a020. Post\u00a0hoc Tukey\u2013Kramer tests revealed that z-scored peak \u2206Pupil in lick and stimulus epochs were larger than in tone and quiet epochs. Lick vs. Stim, p=0.16; Tone vs. Quiet, p=0.65; Lick vs. Tone, p=3.0e-8; Lick vs. Quiet, p=3.3e-4; Stim vs. Tone, p=3.0e-4; Stim vs. Quiet, p=0.0087.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) From left to right: (1) Peak \u2206Vm vs. LC spike counts by epoch. (2) Inter-spike-interval vs. LC spike counts by epoch. Quiet and Stimulus epochs differ for the Vm response across LC spike counts, but their ISIs are similar. At low spike counts, Quiet and Tone epochs differ for both Vm response and ISI. \u2206Vm for LC spike counts 2-5, Quiet vs. Stim: P = 9.9e-4, 0.081, 0.016, 0.14; Quiet vs. Tone: P = 0.0043, 0.062, 0.11, 0.19. ISI for LC spike counts 2-5, Quiet vs. Stim: P = 0.44, 0.25, 1, 0.79; Quiet vs. Tone: P = 0.0061, 0.0068, 0.20, 0.38. Two-tailed Wilcoxon rank sum test. (3) Peak \u2206Vm vs. mean inter-spike-interval for LC spike counts 2-5. This is essentially replotting the values in the\u00a0y axis in (1) against the values in y axis in (2). (4) Cumulative histograms showing numbers of trials that go into the plots when broken down by LC spike counts.\u00a0(b) From left to right: (1) Peak \u2206Pupil vs. LC spike counts by epochs. (2) Inter-spike-interval vs. LC spike counts by epochs. (3) Peak \u2206Pupil vs. mean inter-spike-interval for LC spike counts 2-5. (4) Cumulative histograms showing numbers of trials that go into the plots when broken down by LC spike counts.\u00a0(c) From left to right: (1) Peak Pupil\u2019 vs. LC spike counts by epochs. (2) Inter-spike-interval vs. LC spike counts by epochs, identical to what is shown in b. (3) Peak Pupil\u2019 vs. mean inter-spike-interval for LC spike counts 2-5. (4) Cumulative histograms showing numbers of trials that go into the plots when broken down by LC spike counts, which is identical to the histogram in (b).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64327/elife-64327-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Bar graphs of peak \u2206Vm (a) and \u2206Pupil (b) for each epoch, when \u2018Tone\u2019 epochs were defined 0 s to 0.5 s with respect to tone onset.\n\n## Discussion\n\nTonic LC activity is thought to reflect attentive state (Usher et al., 1999; Aston-Jones and Cohen, 2005). We found that pre-stimulus baseline LC spiking predicted behavioral responses, suggesting that being in a hyperactive or distractable state underlies failed stimulus detection. We excluded trials where mice licked before stimulus onset from our analysis; thus, the higher baseline spiking in Miss trials was not caused by premature licking. However, it is possible that higher baseline LC activity was correlated with more whisking, which has been shown to lead to failed stimulus detection (Ollerenshaw et al., 2012; Kyriakatos et al., 2017). Overall, the effect was weak, possibly due to the use of an auditory cue that puts the mice in a more homogeneous arousal/attentive state. In other tasks without such alerting cues, task performance may have a stronger dependence on arousal and pre-stimulus LC activity.\n\nRecent optogenetic and pharmacological work has shown that activating the LC\u2013NE system enhances detection/discrimination sensitivity (Gelbard-Sagiv et al., 2018; Rodenkirch et al., 2019; McBurney-Lin et al., 2020). Thus, LC\u2013NE acting on early sensory areas (i.e., primary sensory thalamus, primary sensory cortex) likely affects perceptual decision\u00a0making (McBurney-Lin et al., 2019). We showed that S1 depolarizations immediately follow LC spiking, suggesting that LC activity at least partially contributes to the amount of depolarization in S1 neurons (Constantinople and Bruno, 2011; Polack et al., 2013). Given that sensory-evoked S1 responses predict the behavioral choices of the mice (Sachidhanandam et al., 2013; Yang et al., 2016; Kwon et al., 2016), our results suggest that the LC\u2013S1 pathway is involved during this task. However, the effect could be mediated directly through LC innervation of S1 or indirectly through LC innervating other early somatosensory areas, such as the VPM thalamus (Rodenkirch et al., 2019). Future gain- and loss-of-function experiments are needed to determine causal roles of these distinct pathways to S1 and to determine how different LC activity patterns (e.g., tonic vs. phasic) affect sensory processing and task performance.\n\nLC responded strongly to an auditory cue (tone) meant to alert the mice to the beginning of a trial. Such responses may be mediated via synaptic inputs to LC from the brainstem (e.g., nucleus paragigantocellularis) (Ennis and Aston-Jones, 1988; Aston-Jones et al., 1991; Van Bockstaele et al., 1993; Llorca-Torralba et al., 2016). While this tone carried no information about the presence of a tactile stimulus or reward on any given trial, and therefore was not associated with a particular movement response, it did inform the mice about the time when a tactile stimulus could occur (in our task the duration between the tone and stimulus onset was fixed). The robust LC spiking responses to this cue are therefore consistent with LC\u2019s role in promoting alertness or preparedness to detect a weak stimulus (Berridge and Waterhouse, 2003; Aston-Jones and Cohen, 2005). We also found that LC responded to operant licking responses, which is consistent with earlier work showing that LC encoded overt decision execution (Kalwani et al., 2014).\n\nOur data show that while LC spiking and pupil diameter correlate well at long timescales, and both can predict changes in cortical dynamics, LC does so an order of magnitude faster. Moreover, the correlation between pupil and Vm is much more heterogeneous than between LC and Vm. In support of previous studies, our results suggest that compared with change in the absolute size of pupil diameter, its time derivative is a better predictor of cortical states (Reimer et al., 2014; Reimer et al., 2016). Importantly, the relationships between LC activity, S1 Vm, and pupil depended on task epoch. Because these epochs changed on the timescale of a few seconds, our data imply that pupil diameter can be dissociated from LC spiking and cannot be used as a stationary index of LC activity. However, comparing across repeats of similar epochs should yield a more accurate prediction of LC spiking by pupil diameter. That is, in attempting to use pupil diameter as a proxy for LC spiking, our data suggest it would be useful to separately normalize distinct task epochs. Future work should examine the LC\u2013pupil relationship using fine-scale analyses that consider behavioral states at a granular level specific to individual tasks.\n\nPupil size changes have been linked to activity in multiple brain areas and neuromodulatory systems (Joshi et al., 2016; Reimer et al., 2016; Cazettes et al., 2021), and different pupil response profiles reflect different cognitive processes (Schriver et al., 2020). Therefore, it is possible that the pupil exhibits dynamic coupling with different underlying brain circuits in a cognitive process\u00a0(behavioral epoch)-dependent way. In addition, a recent study showed that pupil responses to dorsal raphe stimulation exhibited task uncertainty-dependent variations (Cazettes et al., 2021). Thus, it is also possible that other modulatory systems (e.g., serotonergic and cholinergic,\u00a0Berridge and Waterhouse, 2003) modulate the pupil\u2013LC coupling in a dynamic manner.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>DBH-Cre</td>\n      <td>MMRRC</td>\n      <td>Cat# 036778-UCD, RRID:MMRRC_036778-UCD</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Ai32</td>\n      <td>Jackson Laboratory</td>\n      <td>Cat#: JAX:012569, RRID:IMSR_JAX:012569</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BControl</td>\n      <td>Princeton University</td>\n      <td>https://brodylabwiki.princeton.edu/bcontrol</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>WaveSurfer</td>\n      <td>HHMI Janelia</td>\n      <td>http://wavesurfer.janelia.org/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MathWorks</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>StreamPix</td>\n      <td>Norpix</td>\n      <td>RRID:SCR_015773</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Illustrator</td>\n      <td>Adobe</td>\n      <td>RRID:SCR_010279</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>High-speed CMOS camera</td>\n      <td>PhotonFocus</td>\n      <td>DR1-D1312-200-G2-8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Telecentric lens</td>\n      <td>Edmund Optics</td>\n      <td>Cat#: 55\u2013349</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Pipette glass</td>\n      <td>Warner Instruments</td>\n      <td>Cat#: 640792</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Tetrode drive</td>\n      <td>Cohen et al., 2012</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TH primary antibody (rabbit, polyclonal)</td>\n      <td>Thermo-Fisher</td>\n      <td>Cat#: OPA1-04050, RRID: AB_325653</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Secondary antibody (goat, polyclonal)</td>\n      <td>Thermo-Fisher</td>\n      <td>Cat#: A-11008, RRID:AB_2534079</td>\n      <td>(1:500)</td>\n    </tr>\n  </tbody>\n</table>\n\nAll procedures were performed in accordance with protocols approved by the Johns Hopkins University Animal Care and Use Committee. Mice were DBH-Cre (B6.FVB(Cg)-Tg(Dbh-cre) KH212Gsat/Mmucd, 036778-UCD, MMRRC)\u00a0and Ai32 (RCL-ChR2(H134R)/EYFP, 012569, JAX), singly housed in a vivarium with reverse light\u2013dark cycle (12 hr each phase). Male and female mice of 6\u201312 weeks were implanted with titanium head posts as described previously (Yang et al., 2016). After recovery, mice were trained to perform a Go/NoGo single whisker detection task as described previously (Yang et al., 2016). Behavioral apparatus was controlled by BControl (C. Brody, Princeton University). A custom \u2018lickport\u2019 was placed within reach of the mouse\u2019s tongue and used both to deliver water rewards and to record the time of each lick, determined via measurement of an electrical conductance change caused by contact between tongue and lickport. On go trials, a single whisker was deflected for 0.5 s with a 40 Hz sinusoidal deflection (rostral to caudal, peak angular speed\u00a0~800 deg/s). A \u2018response window\u2019 was defined as 0.2\u20132 s after the time of whisker stimulus onset for go trials or the time that the whisker stimulus would have onset on no-go trials. A \u2018hit\u2019 trial occurred when mice licked the lickport within the response window, and a drop of water was delivered. On go trials, if mice did not lick within the 1.8 s response window, the trial was scored as a \u2018miss\u2019 and no reward or punishment was delivered. Go trials were randomly mixed with no-go trials, in which the whisker was not deflected. No more than three consecutive trials of the same type were allowed. On no-go trials, if mice licked within the response window, it was scored as a \u2018false alarm\u2019, and mice were punished with a 3\u20135 s time-out. If mice licked during the time-out, an additional time-out was triggered. A \u2018correct rejection\u2019 occurred when mice withheld licking during the response window. Correct rejections were not rewarded. A 0.1 s auditory cue (8 kHz tone,\u00a0~80 dB SPL) was introduced starting 1 s before stimulus onset. During all sessions, ambient white noise (cut off at 40 kHz,\u00a0~80 dB SPL) was played through a separate speaker to mask any other potential auditory cues associated with movement of the piezo stimulator. Trials where mice made \u2018premature\u2019 licking during the period between tone and 0.1 s after whisker stimulation onset were excluded from further analysis. To align LC activity and pupil traces to the \u2018first lick\u2019 (Figure 2f), we used the first lick occurring in the response window. A total of 46 recordings from eight mice are reported (mean hit rate: 0.52\u00a0\u00b1\u00a00.03; false alarm rate: 0.11\u00a0\u00b1\u00a00.02).\n\nCustom microdrives with eight tetrodes and an optic fiber (Cohen et al., 2012,\u00a00.39 NA, 200 \u00b5m core) were built to make extracellular recordings from LC neurons. Each tetrode comprised four nichrome wires (100\u2013300 k\u03a9). A\u00a0~1 mm diameter craniotomy was made (centered at \u22125.2 mm caudal and 0.85 mm lateral relative to bregma) for implanting the tetrodes to a depth of 2.7 mm relative to the brain surface. The microdrive was advanced in steps of\u00a0~100 \u00b5m each day until reaching LC, identified by optogenetic tagging of DBH+ neurons expressing ChR2, tail pinch response, wide extracellular spike waveforms, and post\u00a0hoc electrolytic lesions. Broadband voltage traces were acquired at 30 kHz (Intan Technologies) and filtered between 0.1 and 10 kHz. Signals were then bandpass filtered between 300 and 6000 Hz, and spikes were detected using a threshold of 4\u20136 standard deviations. The timestamp of the peak of each detected spike, as well as a 1 ms waveform centered at the peak, was extracted from each channel for offline spike sorting using MClust (Redish, 2014). At the conclusion of the experiments, brains were perfused with PBS followed by 4% PFA, post-fixed overnight, then cut into 100 \u03bcm coronal sections, and stained with anti-tyrosine hydroxylase antibody (Thermo-Fisher OPA1-04050).\n\nPupil video was acquired at 50 Hz using a PhotonFocus camera and StreamPix five software. Light from a 940 nm LED was passed through a condenser lens and directed to the right eye, reflected off a mirror, and directed into a 0.25\u00d7 telecentric lens. WaveSurfer (https://www.janelia.org/open-science/wavesurfer) triggered individual camera frames synchronized with electrophysiological recordings.\n\nIn a subset of animals, we performed simultaneous intracellular current clamp (whole-cell) recordings in conjunction with LC recording and/or pupil tracking during behavior. A craniotomy over the C2 barrel was made based on intrinsic signal imaging (Yang et al., 2016). In some cases, we also made craniotomies over nearby barrels based on the known somatotopy of S1\u00a0(Welker and Woolsey, 1974; Wilson et al., 2000) to increase yield. Whole-cell recording procedures, quality control, and data processing were performed as described previously (Yang et al., 2016). Briefly, borosilicate glass pipettes (1.5 mm OD, 0.86 mm ID; Harvard Apparatus) were pulled (P-97, Sutter) to have a long shank and were 4\u20137 M\u2126 when filled with solution containing (in mM): 135 potassium gluconate, 4 KCl, 10 sodium phos-phocreatine, 4 ATP magnesium salt, 0.3 GTP sodium salt hydrate, 10 HEPES, 3 mg/ml biocytin (pH 7.3 with KOH). Electrophysiological signals (Multiclamp 700B, Molecular Devices) were filtered at 10 kHz and acquired at 20 kHz using Ephus or WaveSurfer.\n\nFor Figure 2d, LC responses to the tone were calculated using a 300 ms window starting at tone onset, and LC responses to Go were calculated using a 300 ms window starting 200 ms after stimulus onset to capture peak responses. These estimates were based on LC response profiles in Figure 2c. Pupil responses to the tone were calculated using a 1 s window starting 1 s after tone onset. This estimate was primarily based on the\u00a0pupil response profile during CR trials (e.g., Figure 2a,c, indicated by th gray bar), where there was no whisker stimulus or licking response. Pupil responses to Go (licking) were calculated using a 1 s window starting 1.5 s after stimulus onset (e.g., False\u00a0Alarm\u00a0trials in Figure 2a,c, indicated by the black bar). Based on the temporal profiles of pupil diameter in different trial types shown in Figure 2a,c, and that the whisker stimulus started 1 s after tone onset, pupil responses to tone and Go can be segregated. These estimates were consistent with the results showing that pupil dilated 1\u20132 s after LC spikes (Figures 2b and 3d-f).\n\nFor Figure 2e, pre-stimulus LC baseline activity was calculated using a 500 ms window ending 50 ms before stimulus onset. Post-stimulus activity was calculated using a 200 ms window starting 20 ms after stimulus onset, before licking responses (Yang et al., 2016). Choice probabilities were computed as described previously (Yang et al., 2016).\n\nTo compute lick-aligned changes in LC spiking and pupil diameter, we only used licks that occurred at least 0.5 s after the previous lick. To compute LC spike-triggered S1 Vm and pupil, we only used LC spikes that occurred at least 0.5 s after the previous spike. For STA analysis, peak \u2206Vm, \u2206Pupil, or the time derivative of Pupil (Pupil\u2019) were defined as the largest positive or negative value within the observed window (\u00b11 s or\u00a0\u00b110 s, respectively).\n\nFor cross-correlogram analysis, each LC spike train was convolved with a 400 ms wide Gaussian kernel (results hold for 200 ms kernel, data not shown). Peak correlation coefficients were defined as the largest positive or negative value within the observed window (\u00b11 s or\u00a0\u00b110 s). To examine how well LC spiking and pupil diameter could predict cortical Vm fluctuations at different timescales (Figure 3l), Vm was high-pass filtered at 0, 0.2, 0.4, 0.6, 0.8, 1, 2, 3, 4, and 5 Hz separately. Cross-correlogram analysis between the filtered Vm and LC (pupil) activities was then performed as described above, and largest absolute values of peak correlation coefficients were taken.\n\nTask epochs were defined as\u00a0follows: \u2018Tone\u2019 epochs: \u22120.2 s to 0.3 s with respect to tone onset (we also tested 0 to 0.5 s, Figure 4\u2014figure supplement 3); \u2018Stimulus\u2019 epochs: \u22120.2 s to 0.3 s with respect to stimulus onset (i.e., only on trials with whisker stimulation); \u2018Licking\u2019 epochs: \u22120.2 s to 0.3 s with respect to licks that occurred at least 0.5 s after the previous lick; \u2018Quiet\u2019 epochs: non-overlapping 0.5 s segments excluding the three types of epoch defined previously during the entire session.\n\nThirty-nine LC\u2013pupil pairs from seven mice were included in Figure 2b, including single- and multi-units, with and without S1 recordings. For the rest of Figure 2, LC analysis included 43\u00a0recordings from eight mice, each with at least four\u00a0Hit and four Miss trials. Among those, 36\u00a0were with pupil recordings and were used for pupil analysis. Twelve pairs of S1 whole-cell and LC single-unit recordings from six mice were included in Figures 3a\u2013c and 4a, of which\u00a0seven were with pupil recordings and included in Figure 3d\u2013f. Nineteen S1\u2013pupil recordings from three mice were included in Figure 3g\u2013l. Twenty pairs of LC SU and pupil recordings from five mice were included in Figure 4b,c, with and without S1 recordings.\n\nData were reported as mean \u00b1 s.e.m. unless otherwise noted. Statistical tests were by two-tailed Wilcoxon signed-rank unless otherwise noted. We did not use statistical methods to predetermine sample sizes. Sample sizes are similar to those reported in the field. We assigned mice to experimental groups arbitrarily, without randomization or blinding.\n",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "4b27d95f-b53c-4aca-a575-289d5120ca36",
+      "submission_id": "6530c1be-3392-4cac-9249-b076f4f17214",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jacob Reimer, United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64327.sa1](https://doi.org/10.7554/eLife.64327.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper will be of interest to neuroscientists studying the effect of brain state on sensory processing and behavior and the effects of noradrenergic input from the locus coeruleus on cortex. By combining multiple types of recordings in the same behaving animal, the authors are able to build on and extend previous work that has demonstrated some of these effects in separate experiments.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Locus coeruleus spiking differently correlates with somatosensory cortex activity and pupil diameter\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Joshua Gold as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Qi Wang (Reviewer #2); Carl C H Petersen (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of significant interest, but as described below that additional analyses are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nYang et al., make careful measurements of the spiking activity of optogenetically-identified locus coeruleus (LC) neurons during a whisker detection task in head-restrained mice together with measurement of neuronal membrane potential in the primary somatosensory cortex (S1) and pupil diameter. A substantial body of previous work has linked LC activity with cortical intracellular membrane potential (Vm) depolarization, pupil dilation, and behavioral performance, but simultaneous measurements of all of three of these correlates in the same behaving animal \u2013 as the authors perform here \u2013 are rare and technically challenging, and these experiments offer the potential to study features of timing and trial-to-trial variability that might otherwise be inaccessible. The authors focus on two issues in particular: First, the relative ability of pupil dilation and \"ground truth\" recordings of LC firing to predict behavioral performance and membrane depolarization in sensory cortex. Perhaps not surprisingly, both pupil and LC are informative, but the time scale of pupil correlations with behavior and intracellular membrane potentials is an order of magnitude longer (1s-10s of seconds), compared to LC firing. Second, the authors discovered that the impact of LC spikes upon S1 membrane potential and pupil diameter differed across behavioural epochs. Given that pupil diameter is often interpreted as a direct correlate of LC activity, the results may be of broad interest. There are many potential factors that likely contribute to this heterogeneity across different task epochs that the authors do not explore, including other neuromodulator systems like acetylcholine, and population-level changes in cortical activity, but reviewers agreed that the high quality of the experimental methodology make the data strong.\n\nEssential revisions:\n\n1) Given the qualitative difference between the tonic and phasic modes in the LC, it would be helpful to have a plot like Figure 4\u2014figure supplement 2, but conditioned on different inter-spike intervals. Specifically it would be interesting to know whether the larger effect on membrane potential during the trial epochs compared to quiet periods might be due to differences in the LC ISI distributions in these epochs (i.e. presence or absence of bursting rather than total spike counts).\n\n2) Some justification or analysis of the specific time windows chosen for analysis of the pupil in Figure 2A would be useful. It is unclear why tone epochs were defined as [-0.2 0.3s] around tone onset. LC activity should not be affected in the period prior to tone as animals didn't know when the tone would occur.\n\n3) Prestimulus whisking was found to be an important determinant of hit vs miss trials in a related whisker-detection paradigm (Kyriakatos et al., 2017). Does LC activity correlate with whisking, as well as licking? Here, the authors report that pre-whisker stimulus LC spiking differed across hit and miss trials (with lower spike rate in hit trials), suggesting the LC activity could participate in determining hit vs miss, but perhaps it is an indirect correlation because of whisking. This might be good to discuss, and perhaps analyze if whisker movements were tracked in these experiments. The authors might also discuss potential future optogenetic and pharmacological tests of the hypothesis that LC activity contributes to task performance.\n\n4) The authors should give a more complete methods description. In general, I am not sure why the authors chose to write in such a short format, and they might expand on some points. How might the auditory stimulus drive LC spiking? How might LC spiking affect membrane potential in S1?\n\n5) It is very intriguing that tone prior to stimulus presentation evoked strong LC responses but no changes in pupil size. The underlying mechanisms may be complicated, but some further discussion would be helpful. There may be an interesting link here with a recent work where task-evoked pupil dilation was decomposed to contributions of different cognitive processes, which may be differently modulated by the LC-NE system (Schriver et al., 2020).\n\n6) In Figure 1E, the minimal pupil size seemed already fairly large. Was this panel a poor example or animals were already in a high arousal state throughout sessions?\n\n7) The manuscript reported changes in raw pupil diameter in Figure 2, Figure 3, Figure 4. Given the large dynamic range of pupil fluctuations reported in literature, would Z-scored pupil size be a better way to lump data across animals/sessions?\n\n8) It would be very interesting to know if there were any differences between regular spiking neurons and fast spiking neuron in terms of their correlation with LC spiking activity.\n",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "706a19a5-790a-45a3-8bbd-f6f593f1a501",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C1",
+      "claim": "LC spiking consistently preceded S1 membrane potential depolarization in mice performing a tactile detection task.",
+      "claim_type": "EXPLICIT",
+      "source": "While LC spiking consistently preceded S1 membrane potential depolarization and pupil dilation, the correlation between S1 and pupil was more heterogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by spike-triggered average analysis showing LC spikes preceded S1 depolarization with time lags of 0.17 \u00b1 0.06 s (Figure 3a-c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "35911c53-6e6e-473b-941e-17b244d72b40",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C2",
+      "claim": "LC spiking consistently preceded pupil dilation in mice performing a tactile detection task.",
+      "claim_type": "EXPLICIT",
+      "source": "While LC spiking consistently preceded S1 membrane potential depolarization and pupil dilation, the correlation between S1 and pupil was more heterogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by spike-triggered average analysis showing LC spikes preceded pupil dilation with time lags of 1.89 \u00b1 0.25 s (Figure 3d-f).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "bf6874bb-59eb-42ef-9ee4-2aa1d326a5a6",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C3",
+      "claim": "The correlation between S1 and pupil was more heterogeneous than the correlations between LC and S1 or LC and pupil.",
+      "claim_type": "EXPLICIT",
+      "source": "While LC spiking consistently preceded S1 membrane potential depolarization and pupil dilation, the correlation between S1 and pupil was more heterogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cross-correlogram analysis showing heterogeneous correlations with both positive and negative correlations and time lags (Figure 3g-i).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "5ef5a79b-0776-44f2-ae85-b353d8754340",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C4",
+      "claim": "The relationships between LC, S1, and pupil varied on timescales of sub-seconds to seconds within trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the relationships between LC, S1, and pupil varied on timescales of sub-seconds to seconds within trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by task epoch-dependent analysis showing different correlations during tone, stimulus, lick, and quiet periods (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "a6ee95fe-3b1a-413b-b213-42967fcac1ea",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C5",
+      "claim": "Pupil diameter can be dissociated from LC spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that pupil diameter can be dissociated from LC spiking and cannot be used as a stationary index of LC activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by epoch-dependent analysis showing different response profiles for LC and pupil across task events (Figure 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "f963b77d-d858-4237-9d33-61887703f95e",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C6",
+      "claim": "Pupil diameter cannot be used as a stationary index of LC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that pupil diameter can be dissociated from LC spiking and cannot be used as a stationary index of LC activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by non-stationary correlations between LC and pupil that depend on task epoch (Figure 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "75261f66-dcea-42a2-86fd-2201c07b3943",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C7",
+      "claim": "LC activity modulates feedforward processing of sensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "First, LC activity modulates feedforward processing of sensory stimuli (Hirata et al., 2006; Devilbiss et al., 2006; Rodenkirch et al., 2019) and impacts sensory cortex states (Constantinople and Bruno, 2011; Polack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "6f913d70-c9a4-4c33-bf72-f1ced5bba0d6",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C8",
+      "claim": "LC activity impacts sensory cortex states.",
+      "claim_type": "EXPLICIT",
+      "source": "First, LC activity modulates feedforward processing of sensory stimuli (Hirata et al., 2006; Devilbiss et al., 2006; Rodenkirch et al., 2019) and impacts sensory cortex states (Constantinople and Bruno, 2011; Polack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "5cf6f562-581a-41bd-8cb4-f0945de8a345",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C9",
+      "claim": "LC activity correlates with task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, LC activity correlates with task performance (Rajkowski et al., 1994; Usher et al., 1999) and pupil diameter (Rajkowski et al., 1994; Joshi et al., 2016; Reimer et al., 2016; Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "28ae0dcc-af8b-4230-ba1e-0ed1f721afbc",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C10",
+      "claim": "LC activity correlates with pupil diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, LC activity correlates with task performance (Rajkowski et al., 1994; Usher et al., 1999) and pupil diameter (Rajkowski et al., 1994; Joshi et al., 2016; Reimer et al., 2016; Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research and data from this study showing correlation coefficient of 0.15 \u00b1 0.02 (Figure 2b).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "c0db0e28-3dd9-42c0-b806-89727ffac283",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C11",
+      "claim": "Pupil diameter is thought to index arousal.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, pupil diameter is thought to index arousal and has been found to be correlated with neuronal and behavioral detection or discrimination sensitivity (Reimer et al., 2014; McGinley et al., 2015a; McGinley et al., 2015b; Vinck et al., 2015; Lee and Margolis, 2016; Schriver et al., 2018; Lee et al., 2020; Cazettes et al., 2021), as well as decision bias (de Gee et al., 2014; de Gee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "6ff586ae-0b88-48c4-b3d7-e71a9febd758",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C12",
+      "claim": "Pupil diameter has been found to be correlated with neuronal and behavioral detection or discrimination sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, pupil diameter is thought to index arousal and has been found to be correlated with neuronal and behavioral detection or discrimination sensitivity (Reimer et al., 2014; McGinley et al., 2015a; McGinley et al., 2015b; Vinck et al., 2015; Lee and Margolis, 2016; Schriver et al., 2018; Lee et al., 2020; Cazettes et al., 2021), as well as decision bias (de Gee et al., 2014; de Gee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "0cfa5666-ad3e-4b49-a94e-d626a405aa08",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C13",
+      "claim": "Pupil diameter has been found to be correlated with decision bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, pupil diameter is thought to index arousal and has been found to be correlated with neuronal and behavioral detection or discrimination sensitivity (Reimer et al., 2014; McGinley et al., 2015a; McGinley et al., 2015b; Vinck et al., 2015; Lee and Margolis, 2016; Schriver et al., 2018; Lee et al., 2020; Cazettes et al., 2021), as well as decision bias (de Gee et al., 2014; de Gee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "8dc5c974-e3ad-428d-b915-389e891e749f",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C14",
+      "claim": "Sensory cortex activity impacts perceptual reports.",
+      "claim_type": "EXPLICIT",
+      "source": "Since sensory cortex activity impacts perceptual reports (Sachidhanandam et al., 2013; Miyashita and Feldman, 2013), these observations suggest the hypothesis that LC/NE modulates sensory cortex activity and affects perceptual task performance and that this effect can be monitored noninvasively via the easy-to-measure pupil diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "8838dddd-910d-4575-ae88-f0c6ef273ff3",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C15",
+      "claim": "LC/NE modulates sensory cortex activity and affects perceptual task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Since sensory cortex activity impacts perceptual reports (Sachidhanandam et al., 2013; Miyashita and Feldman, 2013), these observations suggest the hypothesis that LC/NE modulates sensory cortex activity and affects perceptual task performance and that this effect can be monitored noninvasively via the easy-to-measure pupil diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis based on logical inference from cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "3499ee16-8d1c-4f39-80d4-462091868204",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C16",
+      "claim": "LC spiking activity and pupil diameter were correlated across entire sessions with a peak correlation coefficient of 0.15 \u00b1 0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior reports (Joshi et al., 2016; Reimer et al., 2016; Liu et al., 2017), cross-correlogram analysis revealed that LC spiking activity and pupil diameter were correlated across entire sessions, with pupil dilation following LC spikes (peak correlation coefficient: 0.15 \u00b1 0.02; time lags: 2.61 \u00b1 0.39 s, n = 39 recordings, Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cross-correlogram analysis of experimental data (Figure 2b).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "3eced635-719b-48ba-aaaa-3fea0ac10104",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C17",
+      "claim": "Pupil dilation followed LC spikes with time lags of 2.61 \u00b1 0.39 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with prior reports (Joshi et al., 2016; Reimer et al., 2016; Liu et al., 2017), cross-correlogram analysis revealed that LC spiking activity and pupil diameter were correlated across entire sessions, with pupil dilation following LC spikes (peak correlation coefficient: 0.15 \u00b1 0.02; time lags: 2.61 \u00b1 0.39 s, n = 39 recordings, Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cross-correlogram analysis of experimental data (Figure 2b).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "b259580d-394e-4744-aa39-66a8830d05bc",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C18",
+      "claim": "Mean LC spiking activity showed prominent responses to a tone delivered at the beginning of each trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean LC spiking activity aligned with trial onsets showed prominent responses to a tone delivered at the beginning of each trial, as well as in trials where mice made Go (licking) responses (Hit and False Alarm trials, Figure 2a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by trial-aligned LC spike rate data (Figure 2a,c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "59fa2cec-fe42-4645-9242-22788457c09f",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C19",
+      "claim": "Mean LC spiking activity showed prominent responses in trials where mice made Go (licking) responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean LC spiking activity aligned with trial onsets showed prominent responses to a tone delivered at the beginning of each trial, as well as in trials where mice made Go (licking) responses (Hit and False Alarm trials, Figure 2a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by trial-aligned LC spike rate data (Figure 2a,c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "286dd168-830a-42d7-be41-b654cafae93f",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C20",
+      "claim": "LC spiking activity to the tone was comparable to Go responses (p=0.24).",
+      "claim_type": "EXPLICIT",
+      "source": "LC spiking activity to the tone was comparable to Go responses (p=0.24, Figure 2d, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical comparison of LC responses (Figure 2d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "4b6f5384-f6f9-4b3a-b9dc-c5bd72d626e9",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C21",
+      "claim": "Pre-stimulus LC activity was slightly but significantly lower on Hit trials compared to Miss trials.",
+      "claim_type": "EXPLICIT",
+      "source": "On Hit trials, where mice successfully licked to the whisker stimulus, pre-stimulus LC activity (measured in a 0.5 s window prior to stimulus onset) was slightly but significantly lower than Miss trials, where mice failed to lick to the whisker stimulus (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical comparison showing p=0.0083 (Figure 2e).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "192130d3-ef31-4023-baef-21c95ad4cf30",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C22",
+      "claim": "On Miss trials, LC responded weakly to the whisker stimulus alone (<0.5 sp/s above baseline).",
+      "claim_type": "EXPLICIT",
+      "source": "We note that on Miss trials, LC responded weakly to the whisker stimulus alone (<0.5 sp/s above baseline, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "d23b3311-4b51-499b-bcc5-f1011247ada7",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C23",
+      "claim": "LC activity measured in a short window (0.2 s) after stimulus onset was larger on Hits compared with Misses.",
+      "claim_type": "EXPLICIT",
+      "source": "LC activity measured in a short window (0.2 s) after stimulus onset was larger on Hits compared with Misses (Figure 2e; the same trend holds for 0.1 s window, data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical comparison showing p=5.5e-7 (Figure 2e).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "2e30915c-58a9-4175-847e-0cb09743703a",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C24",
+      "claim": "Pre-stimulus LC activity significantly predicted perceptual reports of the mice on a trial-by-trial basis with a choice probability of 0.47 \u00b1 0.014 (p=0.032).",
+      "claim_type": "EXPLICIT",
+      "source": "Ideal-observer analysis showed that both pre- and post-stimulus LC activity significantly predicted perceptual reports of the mice on a trial-by-trial basis, with choice probabilities (Yang et al., 2016) of 0.47 \u00b1 0.014 (p=0.032, n = 43) for pre-stimulus and 0.59 \u00b1 0.017 (p=4.6e-6, n = 43) for post-stimulus LC activity, respectively (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ideal-observer analysis of experimental data (Figure 2e).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "6efdba30-75cd-46b3-8025-0fa1e2d6954a",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C25",
+      "claim": "Post-stimulus LC activity significantly predicted perceptual reports of the mice on a trial-by-trial basis with a choice probability of 0.59 \u00b1 0.017 (p=4.6e-6).",
+      "claim_type": "EXPLICIT",
+      "source": "Ideal-observer analysis showed that both pre- and post-stimulus LC activity significantly predicted perceptual reports of the mice on a trial-by-trial basis, with choice probabilities (Yang et al., 2016) of 0.47 \u00b1 0.014 (p=0.032, n = 43) for pre-stimulus and 0.59 \u00b1 0.017 (p=4.6e-6, n = 43) for post-stimulus LC activity, respectively (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ideal-observer analysis of experimental data (Figure 2e).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "bf7b328a-ddc2-4348-a035-0b85079a3b3d",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C26",
+      "claim": "LC spiking responses began ~200 ms prior to licking.",
+      "claim_type": "EXPLICIT",
+      "source": "LC activity aligned to the time of licking showed that spiking responses began ~200 ms prior to licking (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lick-aligned LC spike rate data (Figure 2f).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "582ecb94-c981-4a3a-9517-d0ea431a9d62",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C27",
+      "claim": "Pupil diameter minimally increased in response to the tone.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, pupil diameter minimally increased in response to the tone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pupil diameter measurements shown in Figure 2a,c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "01486c55-e04e-4995-98ac-6bd95eaa5a30",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C28",
+      "claim": "Pupil strongly dilated on Hit and False Alarm trials, in which mice made Go (licking) responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, pupil strongly dilated on Hit and False Alarm trials, in which mice made Go (licking) responses (Figure 2a,c,d; tone vs. Go: p=6.4e-5, n = 36, Materials and methods) (Lee and Margolis, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pupil diameter measurements and statistical comparison (Figure 2a,c,d).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "bbece40d-8987-4720-8497-555fef72482e",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C29",
+      "claim": "Pupil response to the tone was larger on Misses compared to Hits.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, pupil response to the tone was larger on Misses compared to Hits and significantly predicted perceptual choices of the mice (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "a1fb7557-a779-47a9-9c72-6ae0c3f1cd85",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C30",
+      "claim": "Pupil response to the tone significantly predicted perceptual choices of the mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, pupil response to the tone was larger on Misses compared to Hits and significantly predicted perceptual choices of the mice (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by choice probability analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "54e69dc4-2bb7-4025-988f-239d0b7b0c99",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C31",
+      "claim": "Pupil responses occurred after licking.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil diameter changes (\u2206Pupil) aligned to the time of licking showed that pupil responses occurred after licking (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lick-aligned pupil diameter data (Figure 2f).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "414de7ef-6f40-4c26-a547-98166482ffee",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C32",
+      "claim": "LC activity and pupil diameter appear to reflect different sets of task events during this behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, LC activity and pupil diameter appear to reflect different sets of task events during this behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the different response profiles of LC and pupil to tone and licking events.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "eeae55a0-da57-4acd-ae2c-8bc4eb620fe7",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C33",
+      "claim": "LC spikes were associated with a depolarization in cortical neurons (1.39 \u00b1 0.35 mV, n = 12).",
+      "claim_type": "EXPLICIT",
+      "source": "LC spike-triggered Vm analyses revealed that LC spikes were associated with a depolarization in cortical neurons (1.39 \u00b1 0.35 mV, n = 12, Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by spike-triggered average analysis (Figure 3a-c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "5df99a2d-5d99-4df1-b8b6-9d5e236bffae",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C34",
+      "claim": "Vm depolarization associated with an LC spike peaked after the spike, with short time lags of 0.17 \u00b1 0.06 s.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, Vm depolarization associated with an LC spike peaked after the spike, with short time lags from an LC spike to peak depolarization in S1 (0.17 \u00b1 0.06 s, n = 12, Figure 3a\u2013c; also see Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by spike-triggered average analysis (Figure 3a-c, Figure 3\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "29633f43-5dec-420a-a124-9a80c06d011b",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C35",
+      "claim": "Pupil diameter increased in association with individual spikes from LC single units (0.03 \u00b1 0.01 mm, n = 7).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous cross-correlogram analysis based on a larger set of LC\u2013pupil recordings (Figure 2b), here STA analysis showed that pupil diameter increased in association with individual spikes from LC single units (0.03 \u00b1 0.01 mm, n = 7), with peak dilation occurring roughly 10-fold slower than peak Vm depolarization (time lags from an LC spike to peak pupil dilation: 1.89 \u00b1 0.25 s, n = 7, Figure 3d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by spike-triggered average analysis (Figure 3d-f).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "257b7f36-b58a-40a6-8a46-19bf9c82f316",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C36",
+      "claim": "Peak pupil dilation occurred roughly 10-fold slower than peak Vm depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous cross-correlogram analysis based on a larger set of LC\u2013pupil recordings (Figure 2b), here STA analysis showed that pupil diameter increased in association with individual spikes from LC single units (0.03 \u00b1 0.01 mm, n = 7), with peak dilation occurring roughly 10-fold slower than peak Vm depolarization (time lags from an LC spike to peak pupil dilation: 1.89 \u00b1 0.25 s, n = 7, Figure 3d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison of time lags: 1.89 s for pupil vs 0.17 s for Vm.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "56160e91-cd5c-443e-8f0f-ee4fdffe71b8",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C37",
+      "claim": "Cross-correlogram analyses revealed heterogeneous correlations between pupil diameter and S1 Vm, with both positive and negative correlations as well as positive and negative time lags.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-correlogram analyses revealed heterogeneous correlations between pupil diameter and S1 Vm, with both positive and negative correlations as well as positive and negative time lags (peak correlation coefficient: 0.05 \u00b1 0.04; time lags: \u22120.22 \u00b1 1.01 s, n = 19, Figure 3g\u2013i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cross-correlogram analysis (Figure 3g-i).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "325afb08-c90e-4baf-962a-4d84661c7dba",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C38",
+      "claim": "The time derivative of pupil diameter (pupil') was positively correlated with S1 Vm in a more consistent manner (peak correlation coefficient: 0.15 \u00b1 0.03; time lags: 1.31 \u00b1 0.24 s, n = 19).",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, the time derivative of pupil diameter (pupil') was positively correlated with S1 Vm in a more consistent manner (peak correlation coefficient: 0.15 \u00b1 0.03; time lags: 1.31 \u00b1 0.24 s, n = 19, Figure 3j,k; Reimer et al., 2016; Reimer et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cross-correlogram analysis (Figure 3j,k) and consistent with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "25f505cd-93ff-4855-9b04-0dbfdbc79de4",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C39",
+      "claim": "LC activity was superior in predicting cortical dynamics faster than ~200\u2013300 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LC activity was superior in predicting cortical dynamics faster than ~200\u2013300 ms (exponential decay time constant: LC\u2013Vm vs. Pupil\u2013Vm vs. Pupil'-Vm, 1.02 \u00b1 0.09 vs. 6.59 \u00b1 0.60 vs. 1.53 \u00b1 0.14, Figure 3l; repeated-measures ANOVA, F(2, 36)=74.5, p=1.6e-13, n = 19).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by high-pass filtering analysis and statistical comparison (Figure 3l).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "2ef05a63-54f2-486a-acc1-a36e6e97d18f",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C40",
+      "claim": "LC activity reflects higher frequency correlations with Vm compared with the pupil.",
+      "claim_type": "EXPLICIT",
+      "source": "Post hoc Tukey\u2013Kramer tests revealed that LC activity reflects higher frequency correlations with Vm compared with the pupil (LC\u2013Vm vs. Pupil\u2013Vm, p=5.9e-8; LC-Vm vs. Pupil'\u2013Vm, p=0.0037; Pupil\u2013Vm vs. Pupil'\u2013Vm, p=7.1e-7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by post hoc statistical tests on high-pass filtering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "9fc5dc60-d698-4f33-b5f5-e9e8b28a6072",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C41",
+      "claim": "The LC\u2013Pupil' relationship was similar to that of LC\u2013Pupil.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the LC\u2013Pupil' relationship was similar to that of LC\u2013Pupil (compare Figure 3\u2014figure supplement 3 with Figure 3e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of data in Figure 3\u2014figure supplement 3 with Figure 3e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "aa025d44-ad1b-4b0d-bfbc-12b4d0f07302",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C42",
+      "claim": "LC spikes preceded S1 depolarizations and pupil dilations.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that LC spikes preceded S1 depolarizations and pupil dilations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by spike-triggered average analyses showing positive time lags.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "c3aa5be5-d801-4bce-8952-2fbb939943d1",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C43",
+      "claim": "LC spiking correlated with both Vm and pupil diameter changes, but on vastly different timescales (~0.2 s vs. ~2 s).",
+      "claim_type": "EXPLICIT",
+      "source": "LC spiking correlated with both Vm and pupil diameter changes, but on vastly different timescales (~0.2 s vs. ~2 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by time lag measurements from spike-triggered average analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "745de84a-a042-489f-b6ce-e33f88648a09",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C44",
+      "claim": "The time derivative of pupil diameter, but not the absolute pupil size, is a good predictor of S1 Vm fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data also show that the time derivative of pupil diameter, but not the absolute pupil size, is a good predictor of S1 Vm fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of correlation coefficients between pupil-Vm and pupil'-Vm (Figure 3g-k).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "a6ba7217-a4f0-4efa-95c6-14167fb79fed",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C45",
+      "claim": "LC spiking can track fast Vm fluctuations better than either pupil or pupil'.",
+      "claim_type": "EXPLICIT",
+      "source": "However, LC spiking can track fast Vm fluctuations better than either pupil or pupil'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by high-pass filtering analysis showing LC has the slowest decay time constant (Figure 3l).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "a40d022d-7e6c-4dc1-a592-9f7efd6d964b",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C46",
+      "claim": "Vm depolarization associated with an LC spike had the biggest response to tone/licking and almost no response during the quiet periods.",
+      "claim_type": "EXPLICIT",
+      "source": "While single LC spikes were associated with prominent changes in both cortical Vm and pupil diameter, we found that these associations strikingly depended on task epoch: Vm depolarization associated with an LC spike had the biggest response to tone/licking and almost no response during the quiet periods (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by epoch-dependent spike-triggered average analysis (Figure 4a).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "6040298e-65a0-4cda-be7b-befed3dbaef5",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C47",
+      "claim": "Pupil dilation associated with an LC spike had the biggest response to licking and almost no response to the tone.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pupil dilation associated with an LC spike had the biggest response to licking and almost no response to the tone (Figure 4b; this was true as well for pupil dilation after z-scoring, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by epoch-dependent spike-triggered average analysis (Figure 4b, Figure 4\u2014figure supplement 1).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "0602722a-1490-4893-af49-4b6673c807c0",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C48",
+      "claim": "The pupil' associated with an LC spike had an intermediate response to the tone.",
+      "claim_type": "EXPLICIT",
+      "source": "The pupil' associated with an LC spike had an intermediate response to the tone (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by epoch-dependent spike-triggered average analysis (Figure 4c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "37c4cb21-47c6-4e5c-9de5-1463f89681a0",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C49",
+      "claim": "Peak pupil dilation, pupil' and Vm depolarization appeared to have different dependencies on LC spike counts.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, peak pupil dilation, pupil' and Vm depolarization appeared to have different dependencies on LC spike counts, with a roughly monotonic relationship between pupil and LC, and a much weaker dependence between Vm and LC (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of responses as a function of LC spike counts (Figure 4\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "e6215b08-f224-4bc7-88d1-cfc70135625e",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C50",
+      "claim": "The correlations between LC spiking and Vm, and between LC spiking and pupil diameter, are non-stationary, even on the timescale of a few seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the correlations between LC spiking and Vm, and between LC spiking and pupil diameter, are non-stationary, even on the timescale of a few seconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from epoch-dependent differences in correlations shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "368bf710-f7d1-4ceb-a8ae-d86b7ba5955b",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C51",
+      "claim": "The correlations between LC activity and Vm and pupil each reflect distinct unmeasured underlying processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these epoch dependencies were different for Vm and pupil \u2013 with the biggest response occurring to the tone for Vm and the smallest response occurring to the tone for pupil \u2013 suggesting that the correlations between LC activity and Vm and pupil each reflect distinct unmeasured underlying processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the different epoch-dependent response patterns for Vm and pupil.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "60de4aea-9086-4de7-ad5a-9b549c4c835e",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C52",
+      "claim": "Tonic LC activity is thought to reflect attentive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Tonic LC activity is thought to reflect attentive state (Usher et al., 1999; Aston-Jones and Cohen, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "7cfc957f-a08d-4903-891a-96585e94b146",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C53",
+      "claim": "Pre-stimulus baseline LC spiking predicted behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that pre-stimulus baseline LC spiking predicted behavioral responses, suggesting that being in a hyperactive or distractable state underlies failed stimulus detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by choice probability analysis showing significant prediction (Figure 2e).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "3f9829ee-4fa6-4a3a-9b12-68e16e0a9e20",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C54",
+      "claim": "Being in a hyperactive or distractable state underlies failed stimulus detection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that pre-stimulus baseline LC spiking predicted behavioral responses, suggesting that being in a hyperactive or distractable state underlies failed stimulus detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that higher baseline LC activity was associated with Miss trials.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "18ef620c-4faf-4bd3-a2f8-d6b3829dff4b",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C55",
+      "claim": "Higher baseline LC activity was correlated with more whisking, which has been shown to lead to failed stimulus detection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is possible that higher baseline LC activity was correlated with more whisking, which has been shown to lead to failed stimulus detection (Ollerenshaw et al., 2012; Kyriakatos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Presented as a possible explanation with citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "585b93e8-c6d0-4713-9be3-39573b728d50",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C56",
+      "claim": "Activating the LC\u2013NE system enhances detection/discrimination sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent optogenetic and pharmacological work has shown that activating the LC\u2013NE system enhances detection/discrimination sensitivity (Gelbard-Sagiv et al., 2018; Rodenkirch et al., 2019; McBurney-Lin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "7a2daac7-b157-4f86-b78b-1f79ac6b1f9d",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C57",
+      "claim": "LC\u2013NE acting on early sensory areas likely affects perceptual decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, LC\u2013NE acting on early sensory areas (i.e., primary sensory thalamus, primary sensory cortex) likely affects perceptual decision making (McBurney-Lin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from prior research with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "94176acd-2cb2-4885-973a-bccfd56015a0",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C58",
+      "claim": "S1 depolarizations immediately follow LC spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that S1 depolarizations immediately follow LC spiking, suggesting that LC activity at least partially contributes to the amount of depolarization in S1 neurons (Constantinople and Bruno, 2011; Polack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by spike-triggered average analysis showing short time lags.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "be09c659-6aca-4c81-adad-2cd104a3d668",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C59",
+      "claim": "LC activity at least partially contributes to the amount of depolarization in S1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that S1 depolarizations immediately follow LC spiking, suggesting that LC activity at least partially contributes to the amount of depolarization in S1 neurons (Constantinople and Bruno, 2011; Polack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from temporal relationship between LC spikes and S1 depolarization, with citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "fc3273fc-2cee-4e0c-84e8-feba5ecc0ee3",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C60",
+      "claim": "Sensory-evoked S1 responses predict the behavioral choices of the mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that sensory-evoked S1 responses predict the behavioral choices of the mice (Sachidhanandam et al., 2013; Yang et al., 2016; Kwon et al., 2016), our results suggest that the LC\u2013S1 pathway is involved during this task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "c9de0530-ddc8-4ef7-ac6a-6148b54b4749",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C61",
+      "claim": "The LC\u2013S1 pathway is involved during this task.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that sensory-evoked S1 responses predict the behavioral choices of the mice (Sachidhanandam et al., 2013; Yang et al., 2016; Kwon et al., 2016), our results suggest that the LC\u2013S1 pathway is involved during this task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the temporal relationship between LC and S1 activity and the role of S1 in behavioral choices.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "ce4cdf76-4841-4c17-a4e2-cfb3b7ad2ddb",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C62",
+      "claim": "The effect could be mediated directly through LC innervation of S1 or indirectly through LC innervating other early somatosensory areas, such as the VPM thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the effect could be mediated directly through LC innervation of S1 or indirectly through LC innervating other early somatosensory areas, such as the VPM thalamus (Rodenkirch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Presented as alternative possible mechanisms with citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "e07e5ca4-c30a-43ef-9309-20ce62909785",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C63",
+      "claim": "LC responded strongly to an auditory cue (tone) meant to alert the mice to the beginning of a trial.",
+      "claim_type": "EXPLICIT",
+      "source": "LC responded strongly to an auditory cue (tone) meant to alert the mice to the beginning of a trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by trial-aligned LC spike rate data (Figure 2a,c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "98bdeaa9-a092-4b18-9d26-933834f893fa",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C64",
+      "claim": "LC responses to the auditory cue may be mediated via synaptic inputs to LC from the brainstem (e.g., nucleus paragigantocellularis).",
+      "claim_type": "EXPLICIT",
+      "source": "Such responses may be mediated via synaptic inputs to LC from the brainstem (e.g., nucleus paragigantocellularis) (Ennis and Aston-Jones, 1988; Aston-Jones et al., 1991; Van Bockstaele et al., 1993; Llorca-Torralba et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Presented as a possible mechanism with citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "cb6d154e-3694-45d4-8f3d-96a346466f51",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C65",
+      "claim": "The robust LC spiking responses to the auditory cue are consistent with LC's role in promoting alertness or preparedness to detect a weak stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The robust LC spiking responses to this cue are therefore consistent with LC's role in promoting alertness or preparedness to detect a weak stimulus (Berridge and Waterhouse, 2003; Aston-Jones and Cohen, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observed LC responses with citations to prior research on LC function.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "afaf7738-3aee-4374-8e51-84345e67d293",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C66",
+      "claim": "LC responded to operant licking responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that LC responded to operant licking responses, which is consistent with earlier work showing that LC encoded overt decision execution (Kalwani et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by trial-aligned LC spike rate data (Figure 2a,c,f) and consistent with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "f5a03683-927c-4413-a66f-46dfd3b0b82d",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C67",
+      "claim": "LC encoded overt decision execution.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that LC responded to operant licking responses, which is consistent with earlier work showing that LC encoded overt decision execution (Kalwani et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "f67465b9-855f-40c6-8e0b-f631387be1d0",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C68",
+      "claim": "LC spiking and pupil diameter correlate well at long timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that while LC spiking and pupil diameter correlate well at long timescales, and both can predict changes in cortical dynamics, LC does so an order of magnitude faster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cross-correlogram analysis showing correlation at ~2 s timescale (Figure 2b).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "efb41e89-1120-45c4-9b42-e7ba0332cb0d",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C69",
+      "claim": "Both LC spiking and pupil diameter can predict changes in cortical dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that while LC spiking and pupil diameter correlate well at long timescales, and both can predict changes in cortical dynamics, LC does so an order of magnitude faster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cross-correlogram analyses with S1 Vm (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "1ff636f9-40c1-4b71-bfd3-78705abe9193",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C70",
+      "claim": "LC predicts changes in cortical dynamics an order of magnitude faster than pupil diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that while LC spiking and pupil diameter correlate well at long timescales, and both can predict changes in cortical dynamics, LC does so an order of magnitude faster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of time lags: ~0.2 s for LC vs ~2 s for pupil.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "86a4c706-42e1-4ea2-9f41-0088662514c5",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C71",
+      "claim": "The correlation between pupil and Vm is much more heterogeneous than between LC and Vm.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the correlation between pupil and Vm is much more heterogeneous than between LC and Vm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cross-correlogram analyses showing variable correlations for pupil-Vm (Figure 3g-i) vs consistent correlations for LC-Vm (Figure 3a-c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "64da5181-bbd0-4db1-869b-761ea320fe1d",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C72",
+      "claim": "Compared with change in the absolute size of pupil diameter, its time derivative is a better predictor of cortical states.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of previous studies, our results suggest that compared with change in the absolute size of pupil diameter, its time derivative is a better predictor of cortical states (Reimer et al., 2014; Reimer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of correlation coefficients (Figure 3g-k) and consistent with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "85e566a1-96a3-4477-b29d-c6252ef22f82",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C73",
+      "claim": "The relationships between LC activity, S1 Vm, and pupil depended on task epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the relationships between LC activity, S1 Vm, and pupil depended on task epoch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by epoch-dependent spike-triggered average analysis (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "597c29e8-88a6-4110-8545-35a7a3ba1a52",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C74",
+      "claim": "In attempting to use pupil diameter as a proxy for LC spiking, it would be useful to separately normalize distinct task epochs.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, in attempting to use pupil diameter as a proxy for LC spiking, our data suggest it would be useful to separately normalize distinct task epochs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the epoch-dependent differences in LC-pupil relationships.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "889572fe-cc59-409f-ad26-fda8fe02bfa6",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C75",
+      "claim": "Pupil size changes have been linked to activity in multiple brain areas and neuromodulatory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil size changes have been linked to activity in multiple brain areas and neuromodulatory systems (Joshi et al., 2016; Reimer et al., 2016; Cazettes et al., 2021), and different pupil response profiles reflect different cognitive processes (Schriver et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "849f62db-fd2e-4a6c-9161-6b1c8473268f",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C76",
+      "claim": "Different pupil response profiles reflect different cognitive processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil size changes have been linked to activity in multiple brain areas and neuromodulatory systems (Joshi et al., 2016; Reimer et al., 2016; Cazettes et al., 2021), and different pupil response profiles reflect different cognitive processes (Schriver et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "6f9119a5-6060-4a0e-9e85-e669e9417e3e",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C77",
+      "claim": "The pupil exhibits dynamic coupling with different underlying brain circuits in a cognitive process (behavioral epoch)-dependent way.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that the pupil exhibits dynamic coupling with different underlying brain circuits in a cognitive process (behavioral epoch)-dependent way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Presented as a possible explanation for the observed epoch-dependent relationships.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "da646478-67f4-4222-aef1-a142b3e2988a",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C78",
+      "claim": "Pupil responses to dorsal raphe stimulation exhibited task uncertainty-dependent variations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a recent study showed that pupil responses to dorsal raphe stimulation exhibited task uncertainty-dependent variations (Cazettes et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "929a9ef5-53f8-40c2-860f-9f6c1437d6f6",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C79",
+      "claim": "Other modulatory systems (e.g., serotonergic and cholinergic) may modulate the pupil\u2013LC coupling in a dynamic manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is also possible that other modulatory systems (e.g., serotonergic and cholinergic, Berridge and Waterhouse, 2003) modulate the pupil\u2013LC coupling in a dynamic manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Presented as a possible explanation with citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "9aa60e45-46ab-4192-ba4d-dd252d0807f8",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C80",
+      "claim": "In Hit trials, the latency of LC responses to tone onset was 0.064 \u00b1 0.005 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In Hit trials, the latency of LC responses to tone onset was 0.064 \u00b1 0.005 s, and to whisker stimulation onset was 0.111 \u00b1 0.008 s, and the reaction time (first lick latency to whisker stimulation onset) of the mice was 0.58 \u00b1 0.03 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of trial-aligned data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "cd12fe34-f45d-4be3-859d-0c0a2816ae99",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C81",
+      "claim": "In Hit trials, the latency of LC responses to whisker stimulation onset was 0.111 \u00b1 0.008 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In Hit trials, the latency of LC responses to tone onset was 0.064 \u00b1 0.005 s, and to whisker stimulation onset was 0.111 \u00b1 0.008 s, and the reaction time (first lick latency to whisker stimulation onset) of the mice was 0.58 \u00b1 0.03 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of trial-aligned data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "a80d6374-7da0-4583-91e7-54efd7f528fa",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C82",
+      "claim": "The reaction time (first lick latency to whisker stimulation onset) of the mice was 0.58 \u00b1 0.03 s.",
+      "claim_type": "EXPLICIT",
+      "source": "In Hit trials, the latency of LC responses to tone onset was 0.064 \u00b1 0.005 s, and to whisker stimulation onset was 0.111 \u00b1 0.008 s, and the reaction time (first lick latency to whisker stimulation onset) of the mice was 0.58 \u00b1 0.03 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "186bb9bc-7d54-4b90-bfe3-05a5ab4d9432",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C83",
+      "claim": "Mean hit rate was 0.52 \u00b1 0.03.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 46 recordings from eight mice are reported (mean hit rate: 0.52 \u00b1 0.03; false alarm rate: 0.11 \u00b1 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "4d6046b0-dbb6-49b8-984f-88db7e7a1e89",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C84",
+      "claim": "False alarm rate was 0.11 \u00b1 0.02.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 46 recordings from eight mice are reported (mean hit rate: 0.52 \u00b1 0.03; false alarm rate: 0.11 \u00b1 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "a95f145e-19bb-402e-b1b2-d583e2078844",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C85",
+      "claim": "Mice were DBH-Cre and Ai32 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were DBH-Cre (B6.FVB(Cg)-Tg(Dbh-cre) KH212Gsat/Mmucd, 036778-UCD, MMRRC) and Ai32 (RCL-ChR2(H134R)/EYFP, 012569, JAX), singly housed in a vivarium with reverse light\u2013dark cycle (12 hr each phase).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "14e6efb6-081d-4c3d-b5cc-a22a5edc262b",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C86",
+      "claim": "Mice were singly housed in a vivarium with reverse light\u2013dark cycle (12 hr each phase).",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were DBH-Cre (B6.FVB(Cg)-Tg(Dbh-cre) KH212Gsat/Mmucd, 036778-UCD, MMRRC) and Ai32 (RCL-ChR2(H134R)/EYFP, 012569, JAX), singly housed in a vivarium with reverse light\u2013dark cycle (12 hr each phase).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "3b23223d-a315-4c11-b002-4006ce28e579",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C87",
+      "claim": "Male and female mice of 6\u201312 weeks were implanted with titanium head posts.",
+      "claim_type": "EXPLICIT",
+      "source": "Male and female mice of 6\u201312 weeks were implanted with titanium head posts as described previously (Yang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "bd4b909c-6d52-4f7b-a604-7f87fc0ea2bc",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C88",
+      "claim": "On go trials, a single whisker was deflected for 0.5 s with a 40 Hz sinusoidal deflection (rostral to caudal, peak angular speed ~800 deg/s).",
+      "claim_type": "EXPLICIT",
+      "source": "On go trials, a single whisker was deflected for 0.5 s with a 40 Hz sinusoidal deflection (rostral to caudal, peak angular speed ~800 deg/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "945b5172-ee62-4a46-bce6-85bca1991154",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C89",
+      "claim": "A 0.1 s auditory cue (8 kHz tone, ~80 dB SPL) was introduced starting 1 s before stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "A 0.1 s auditory cue (8 kHz tone, ~80 dB SPL) was introduced starting 1 s before stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "45e3a3e6-0985-444a-ba21-dae45b11f7e3",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C90",
+      "claim": "Pupil video was acquired at 50 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil video was acquired at 50 Hz using a PhotonFocus camera and StreamPix five software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "7743740a-8ee7-4056-be95-bc181dd2cc7f",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C91",
+      "claim": "Whole-cell recordings were mostly from layer 2/3 of S1.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we analyzed recordings where we simultaneously measured membrane potential (Vm) of S1 neurons (mostly from layer 2/3, Figure 3\u2014figure supplement 1), along with LC spiking and/or pupil diameter during the detection task.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in Results with reference to Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "d34df32b-e88b-49bc-b269-ab7083f524d2",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C92",
+      "claim": "Thirty-nine LC\u2013pupil pairs from seven mice were included in Figure 2b.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-nine LC\u2013pupil pairs from seven mice were included in Figure 2b, including single- and multi-units, with and without S1 recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "97a4df75-4a13-4b6c-b708-78265b6f3db1",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C93",
+      "claim": "Twelve pairs of S1 whole-cell and LC single-unit recordings from six mice were included in Figures 3a\u2013c and 4a.",
+      "claim_type": "EXPLICIT",
+      "source": "Twelve pairs of S1 whole-cell and LC single-unit recordings from six mice were included in Figures 3a\u2013c and 4a, of which seven were with pupil recordings and included in Figure 3d\u2013f.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "bc6c0b70-66e8-4fbf-ae3d-999e99225104",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C94",
+      "claim": "Nineteen S1\u2013pupil recordings from three mice were included in Figure 3g\u2013l.",
+      "claim_type": "EXPLICIT",
+      "source": "Nineteen S1\u2013pupil recordings from three mice were included in Figure 3g\u2013l.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "c700f0d3-9450-4847-b6b0-06bf486957eb",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "claim_id": "C95",
+      "claim": "Twenty pairs of LC SU and pupil recordings from five mice were included in Figure 4b,c.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty pairs of LC SU and pupil recordings from five mice were included in Figure 4b,c, with and without S1 recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c254de5a-605e-437b-984e-c92df08773ed",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LC spiking precedes both S1 membrane potential depolarization and pupil dilation, but on vastly different timescales. LC spikes were associated with S1 Vm depolarization (1.39 \u00b1 0.35 mV) peaking at 0.17 \u00b1 0.06 s after LC spikes, while pupil dilation (0.03 \u00b1 0.01 mm) peaked at 1.89 \u00b1 0.25 s after LC spikes, approximately 10-fold slower.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C33-36, C42-43, and C58 are well-supported by spike-triggered average analyses (Figure 3a-f) showing consistent temporal relationships with appropriate statistical measures. The ~10-fold difference in timescales (0.17 s vs 1.89 s) is clearly demonstrated with adequate sample sizes (n=12 for LC-Vm, n=7 for LC-pupil).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "e2cae47f-7828-4e06-9fa9-7d786e12974d",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The correlation between pupil diameter and S1 Vm is heterogeneous with both positive and negative correlations, while the time derivative of pupil diameter (pupil') shows more consistent positive correlation with S1 Vm. Pupil' (peak correlation: 0.15 \u00b1 0.03) is a better predictor of S1 Vm fluctuations than absolute pupil size (peak correlation: 0.05 \u00b1 0.04).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C37-38, C44, C71-72 are supported by cross-correlogram analyses (Figure 3g-k) showing heterogeneous pupil-Vm correlations versus consistent pupil'-Vm correlations. The statistical comparisons are appropriate with n=19 recordings, and the findings are consistent with prior literature (Reimer et al., 2014, 2016).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "075e16ad-22c4-4508-a8a1-108d8c9216f1",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The relationships between LC activity, S1 Vm, and pupil diameter are non-stationary and depend on task epoch. Vm depolarization associated with LC spikes showed the largest responses during tone/licking epochs and minimal response during quiet periods, while pupil dilation showed the largest response during licking and minimal response to tone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C46-48, C50-51, and C73 are well-supported by epoch-dependent spike-triggered average analyses (Figure 4). The statistical comparisons using repeated-measures ANOVA with post-hoc tests are appropriate. The different epoch dependencies for Vm versus pupil provide strong evidence for non-stationary relationships and distinct underlying processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "1f434dfd-1702-459e-ba12-06f067848bd7",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pupil diameter can be dissociated from LC spiking and cannot be used as a stationary index of LC activity. The data suggest that pupil diameter should be normalized separately for distinct task epochs when attempting to use it as a proxy for LC activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-6, C32, and C74 represent the main conclusion of the paper and are well-supported by the epoch-dependent analyses showing different response profiles for LC and pupil across task events (Figure 4). The inference that pupil cannot serve as a stationary index is logically sound given the demonstrated non-stationary correlations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "560e3a4b-5270-4d9b-9e0d-278abbd3ba9f",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LC activity is superior to pupil diameter in predicting fast cortical dynamics (faster than ~200-300 ms). High-pass filtering analysis showed LC-Vm had the slowest exponential decay time constant (1.02 \u00b1 0.09) compared to Pupil-Vm (6.59 \u00b1 0.60) and Pupil'-Vm (1.53 \u00b1 0.14).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-40 and C45 are supported by appropriate high-pass filtering analysis with repeated-measures ANOVA (F(2,36)=74.5, p=1.6e-13, n=19) and post-hoc Tukey-Kramer tests (Figure 3l). The statistical approach is sound and the conclusion that LC tracks faster Vm fluctuations better than pupil measures is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "0da46692-9ad1-4c7e-920a-44cc655dbf02",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LC spiking activity and pupil diameter are correlated across entire behavioral sessions at long timescales, with pupil dilation following LC spikes by 2.61 \u00b1 0.39 s and a peak correlation coefficient of 0.15 \u00b1 0.02.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-17, C10, and C68 are supported by cross-correlogram analysis with adequate sample size (n=39 recordings, Figure 2b). The findings are consistent with prior reports (Joshi et al., 2016; Reimer et al., 2016; Liu et al., 2017), and the statistical significance is demonstrated (p<0.001 for both correlation coefficient and time lag).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "529dd3ba-10ec-484e-b728-a524c86a5bb0",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LC showed prominent responses to both the auditory tone cue at trial onset and to licking (Go) responses, with comparable magnitude between tone and Go responses (p=0.24).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-20 and C63 are supported by trial-aligned LC spike rate data (Figure 2a,c,d) with appropriate statistical comparison. The finding that LC responds strongly to the alerting tone is consistent with LC's proposed role in promoting alertness, though the lack of significant difference between tone and Go responses (p=0.24) is appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "3850adeb-00f9-49d8-855c-b29cf7ffffce",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pupil diameter showed minimal response to the auditory tone but strongly dilated during licking responses (Go trials), with pupil responses occurring after licking. The difference between tone and Go responses was statistically significant (p=6.4e-5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-28 and C31 are supported by pupil diameter measurements (Figure 2a,c,d,f) with appropriate statistical comparison (n=36). The temporal relationship showing pupil responses after licking is clearly demonstrated in lick-aligned data (Figure 2f), contrasting with LC responses that precede licking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "91b233f3-9e73-4264-bb28-8425cfbdc8ab",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pre-stimulus LC activity was slightly but significantly lower on Hit trials compared to Miss trials (p=0.0083), while post-stimulus LC activity was larger on Hits versus Misses (p=5.5e-7). Both pre-stimulus (choice probability: 0.47 \u00b1 0.014, p=0.032) and post-stimulus (choice probability: 0.59 \u00b1 0.017, p=4.6e-6) LC activity significantly predicted behavioral responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-25 and C53 are supported by appropriate statistical analyses (Figure 2e) with adequate sample size (n=43). The choice probability analysis using ideal-observer methods is appropriate. However, the interpretation that higher baseline LC reflects a 'hyperactive or distractable state' (C53-54) is somewhat speculative, though the authors acknowledge alternative explanations (C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "4aa20d6b-2a80-4fca-b5b5-4bb450cb7e40",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Pupil response to the tone was larger on Miss trials compared to Hit trials and significantly predicted perceptual choices of the mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-30 are supported by data in Figure 2\u2014figure supplement 2 showing significant differences (p=0.0062) and choice probability analysis (0.44 \u00b1 0.021, p=0.0036, n=36). This finding is interesting as it contrasts with LC responses and suggests pupil may reflect different aspects of behavioral state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "2935e730-0a3c-4411-8553-539391fbdf48",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "LC spiking responses began approximately 200 ms prior to licking, consistent with LC encoding overt decision execution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C66 are supported by lick-aligned LC spike rate data (Figure 2f) and are consistent with prior work (Kalwani et al., 2014). The temporal relationship is clearly demonstrated, though the causal interpretation requires additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "1ba9dd06-038f-42f6-b549-ded1fa87d91c",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The LC-Pupil' relationship was similar to that of LC-Pupil.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by comparison of data in Figure 3\u2014figure supplement 3 with Figure 3e,f. Both show similar time lags (~0.5 s for pupil' vs ~1.9 s for pupil) and response magnitudes, though the pupil' response is faster.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "38d918bf-c6d8-46d0-b44a-e18561fc504d",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Peak pupil dilation, pupil', and Vm depolarization showed different dependencies on LC spike counts, with a roughly monotonic relationship between pupil and LC, and a much weaker dependence between Vm and LC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by analysis in Figure 4\u2014figure supplement 2 showing different relationships between these measures and LC spike counts. The analysis appropriately considers inter-spike intervals, though the mechanisms underlying these different dependencies remain unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "4769e837-8ec0-46bf-a196-5cb47171db29",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Being in a hyperactive or distractable state underlies failed stimulus detection, though this could alternatively be explained by higher baseline LC activity correlating with more whisking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-55 represent speculative interpretations of the finding that higher baseline LC activity predicts Miss trials. While the data (C21, C24) support the predictive relationship, the mechanistic interpretation is uncertain. The authors appropriately acknowledge alternative explanations (whisking) but did not measure whisking to test this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "1b045460-c2ad-4407-b03d-4f80afa34e8f",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "LC activity at least partially contributes to S1 depolarization, and the LC-S1 pathway is involved during the tactile detection task, though the effect could be mediated directly or indirectly through other somatosensory areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59, C61-62 represent inferences from the temporal relationship between LC spikes and S1 depolarization. While the correlation is well-established (C1, C33-34, C58), the causal contribution of LC to S1 depolarization and the specific pathways involved remain uncertain without gain/loss-of-function experiments, which the authors appropriately acknowledge as future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "cc0d4f12-54d7-46de-9a03-c117ece80a02",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "LC responses to the auditory cue may be mediated via brainstem inputs and are consistent with LC's role in promoting alertness or preparedness to detect stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-65 represent speculative interpretations of the observed LC responses to tone (C18, C63). While the responses are well-documented and the interpretation is consistent with prior literature on LC function, the specific neural mechanisms and functional role remain uncertain without additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "4ede1d3b-665f-4aff-8f31-3e161247dad6",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The pupil may exhibit dynamic coupling with different brain circuits in a task epoch-dependent manner, and other modulatory systems (serotonergic, cholinergic) may modulate pupil-LC coupling dynamically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77 and C79 represent speculative explanations for the observed epoch-dependent relationships. While the speculation is reasonable given the data (C4, C46-48, C73) and prior literature (C75-76, C78), these mechanisms remain untested hypotheses requiring future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims about LC function, pupil diameter, and their relationships to arousal, task performance, and sensory processing based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-9, C11-14, C52, C56-57, C60, C67, C75-76, and C78 represent background information from prior literature with appropriate citations. These provide context for the current study and are appropriately attributed to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "0f7c8ac5-d167-472f-a254-85383a81eb5b",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "LC/NE modulates sensory cortex activity and affects perceptual task performance, and this effect can be monitored noninvasively via pupil diameter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claim C15 represents the initial hypothesis of the study. While the first part (LC/NE modulates sensory cortex and affects task performance) is supported by prior literature, the second part (monitoring via pupil diameter) is actually contradicted by the main findings of this study (C5-6, C32, C74), which show pupil cannot serve as a stationary index of LC activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "142e5bb0-2881-4417-895b-6f9b10af54d1",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Both LC spiking and pupil diameter can predict changes in cortical dynamics, with LC predicting changes an order of magnitude faster than pupil.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-70 are supported by cross-correlogram analyses showing both measures correlate with S1 Vm (Figure 3), with LC showing ~0.2 s time lags versus ~2 s for pupil. The order of magnitude difference is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "0ad7a8c5-0015-46bb-bc50-60712c8084bd",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Behavioral and physiological response latencies: LC responses to tone (0.064 \u00b1 0.005 s) and whisker stimulus (0.111 \u00b1 0.008 s), mouse reaction time (0.58 \u00b1 0.03 s), hit rate (0.52 \u00b1 0.03), and false alarm rate (0.11 \u00b1 0.02).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-84 report basic behavioral and physiological measurements that are well-documented in the data. These provide important context for interpreting the main findings and demonstrate adequate task performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    },
+    {
+      "id": "17909fd8-63cd-4d71-b4d4-54036aa16094",
+      "content_id": "a69c6ba4-375b-41b6-97d2-37c9c00dae9f",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Methodological details including mouse strains, housing conditions, surgical procedures, task parameters, recording techniques, and sample sizes for different analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-95 describe methodological details that are clearly stated in the Materials and methods section. The methods appear appropriate for the experiments conducted, with adequate sample sizes for most analyses (n=7-43 depending on analysis).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:03:19.114567Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "706a19a5-790a-45a3-8bbd-f6f593f1a501",
+      "result_id": "c254de5a-605e-437b-984e-c92df08773ed"
+    },
+    {
+      "claim_id": "35911c53-6e6e-473b-941e-17b244d72b40",
+      "result_id": "c254de5a-605e-437b-984e-c92df08773ed"
+    },
+    {
+      "claim_id": "eeae55a0-da57-4acd-ae2c-8bc4eb620fe7",
+      "result_id": "c254de5a-605e-437b-984e-c92df08773ed"
+    },
+    {
+      "claim_id": "5df99a2d-5d99-4df1-b8b6-9d5e236bffae",
+      "result_id": "c254de5a-605e-437b-984e-c92df08773ed"
+    },
+    {
+      "claim_id": "29633f43-5dec-420a-a124-9a80c06d011b",
+      "result_id": "c254de5a-605e-437b-984e-c92df08773ed"
+    },
+    {
+      "claim_id": "257b7f36-b58a-40a6-8a46-19bf9c82f316",
+      "result_id": "c254de5a-605e-437b-984e-c92df08773ed"
+    },
+    {
+      "claim_id": "aa025d44-ad1b-4b0d-bfbc-12b4d0f07302",
+      "result_id": "c254de5a-605e-437b-984e-c92df08773ed"
+    },
+    {
+      "claim_id": "c3aa5be5-d801-4bce-8952-2fbb939943d1",
+      "result_id": "c254de5a-605e-437b-984e-c92df08773ed"
+    },
+    {
+      "claim_id": "94176acd-2cb2-4885-973a-bccfd56015a0",
+      "result_id": "c254de5a-605e-437b-984e-c92df08773ed"
+    },
+    {
+      "claim_id": "bf6874bb-59eb-42ef-9ee4-2aa1d326a5a6",
+      "result_id": "e2cae47f-7828-4e06-9fa9-7d786e12974d"
+    },
+    {
+      "claim_id": "56160e91-cd5c-443e-8f0f-ee4fdffe71b8",
+      "result_id": "e2cae47f-7828-4e06-9fa9-7d786e12974d"
+    },
+    {
+      "claim_id": "325afb08-c90e-4baf-962a-4d84661c7dba",
+      "result_id": "e2cae47f-7828-4e06-9fa9-7d786e12974d"
+    },
+    {
+      "claim_id": "745de84a-a042-489f-b6ce-e33f88648a09",
+      "result_id": "e2cae47f-7828-4e06-9fa9-7d786e12974d"
+    },
+    {
+      "claim_id": "86a4c706-42e1-4ea2-9f41-0088662514c5",
+      "result_id": "e2cae47f-7828-4e06-9fa9-7d786e12974d"
+    },
+    {
+      "claim_id": "64da5181-bbd0-4db1-869b-761ea320fe1d",
+      "result_id": "e2cae47f-7828-4e06-9fa9-7d786e12974d"
+    },
+    {
+      "claim_id": "5ef5a79b-0776-44f2-ae85-b353d8754340",
+      "result_id": "075e16ad-22c4-4508-a8a1-108d8c9216f1"
+    },
+    {
+      "claim_id": "a40d022d-7e6c-4dc1-a592-9f7efd6d964b",
+      "result_id": "075e16ad-22c4-4508-a8a1-108d8c9216f1"
+    },
+    {
+      "claim_id": "6040298e-65a0-4cda-be7b-befed3dbaef5",
+      "result_id": "075e16ad-22c4-4508-a8a1-108d8c9216f1"
+    },
+    {
+      "claim_id": "0602722a-1490-4893-af49-4b6673c807c0",
+      "result_id": "075e16ad-22c4-4508-a8a1-108d8c9216f1"
+    },
+    {
+      "claim_id": "e6215b08-f224-4bc7-88d1-cfc70135625e",
+      "result_id": "075e16ad-22c4-4508-a8a1-108d8c9216f1"
+    },
+    {
+      "claim_id": "368bf710-f7d1-4ceb-a8ae-d86b7ba5955b",
+      "result_id": "075e16ad-22c4-4508-a8a1-108d8c9216f1"
+    },
+    {
+      "claim_id": "85e566a1-96a3-4477-b29d-c6252ef22f82",
+      "result_id": "075e16ad-22c4-4508-a8a1-108d8c9216f1"
+    },
+    {
+      "claim_id": "a6ee95fe-3b1a-413b-b213-42967fcac1ea",
+      "result_id": "1f434dfd-1702-459e-ba12-06f067848bd7"
+    },
+    {
+      "claim_id": "f963b77d-d858-4237-9d33-61887703f95e",
+      "result_id": "1f434dfd-1702-459e-ba12-06f067848bd7"
+    },
+    {
+      "claim_id": "414de7ef-6f40-4c26-a547-98166482ffee",
+      "result_id": "1f434dfd-1702-459e-ba12-06f067848bd7"
+    },
+    {
+      "claim_id": "597c29e8-88a6-4110-8545-35a7a3ba1a52",
+      "result_id": "1f434dfd-1702-459e-ba12-06f067848bd7"
+    },
+    {
+      "claim_id": "25f505cd-93ff-4855-9b04-0dbfdbc79de4",
+      "result_id": "560e3a4b-5270-4d9b-9e0d-278abbd3ba9f"
+    },
+    {
+      "claim_id": "2ef05a63-54f2-486a-acc1-a36e6e97d18f",
+      "result_id": "560e3a4b-5270-4d9b-9e0d-278abbd3ba9f"
+    },
+    {
+      "claim_id": "a6ba7217-a4f0-4efa-95c6-14167fb79fed",
+      "result_id": "560e3a4b-5270-4d9b-9e0d-278abbd3ba9f"
+    },
+    {
+      "claim_id": "3499ee16-8d1c-4f39-80d4-462091868204",
+      "result_id": "0da46692-9ad1-4c7e-920a-44cc655dbf02"
+    },
+    {
+      "claim_id": "3eced635-719b-48ba-aaaa-3fea0ac10104",
+      "result_id": "0da46692-9ad1-4c7e-920a-44cc655dbf02"
+    },
+    {
+      "claim_id": "28ae0dcc-af8b-4230-ba1e-0ed1f721afbc",
+      "result_id": "0da46692-9ad1-4c7e-920a-44cc655dbf02"
+    },
+    {
+      "claim_id": "f67465b9-855f-40c6-8e0b-f631387be1d0",
+      "result_id": "0da46692-9ad1-4c7e-920a-44cc655dbf02"
+    },
+    {
+      "claim_id": "b259580d-394e-4744-aa39-66a8830d05bc",
+      "result_id": "529dd3ba-10ec-484e-b728-a524c86a5bb0"
+    },
+    {
+      "claim_id": "59fa2cec-fe42-4645-9242-22788457c09f",
+      "result_id": "529dd3ba-10ec-484e-b728-a524c86a5bb0"
+    },
+    {
+      "claim_id": "286dd168-830a-42d7-be41-b654cafae93f",
+      "result_id": "529dd3ba-10ec-484e-b728-a524c86a5bb0"
+    },
+    {
+      "claim_id": "e07e5ca4-c30a-43ef-9309-20ce62909785",
+      "result_id": "529dd3ba-10ec-484e-b728-a524c86a5bb0"
+    },
+    {
+      "claim_id": "582ecb94-c981-4a3a-9517-d0ea431a9d62",
+      "result_id": "3850adeb-00f9-49d8-855c-b29cf7ffffce"
+    },
+    {
+      "claim_id": "01486c55-e04e-4995-98ac-6bd95eaa5a30",
+      "result_id": "3850adeb-00f9-49d8-855c-b29cf7ffffce"
+    },
+    {
+      "claim_id": "54e69dc4-2bb7-4025-988f-239d0b7b0c99",
+      "result_id": "3850adeb-00f9-49d8-855c-b29cf7ffffce"
+    },
+    {
+      "claim_id": "4b6f5384-f6f9-4b3a-b9dc-c5bd72d626e9",
+      "result_id": "91b233f3-9e73-4264-bb28-8425cfbdc8ab"
+    },
+    {
+      "claim_id": "192130d3-ef31-4023-baef-21c95ad4cf30",
+      "result_id": "91b233f3-9e73-4264-bb28-8425cfbdc8ab"
+    },
+    {
+      "claim_id": "d23b3311-4b51-499b-bcc5-f1011247ada7",
+      "result_id": "91b233f3-9e73-4264-bb28-8425cfbdc8ab"
+    },
+    {
+      "claim_id": "2e30915c-58a9-4175-847e-0cb09743703a",
+      "result_id": "91b233f3-9e73-4264-bb28-8425cfbdc8ab"
+    },
+    {
+      "claim_id": "6efdba30-75cd-46b3-8025-0fa1e2d6954a",
+      "result_id": "91b233f3-9e73-4264-bb28-8425cfbdc8ab"
+    },
+    {
+      "claim_id": "7cfc957f-a08d-4903-891a-96585e94b146",
+      "result_id": "91b233f3-9e73-4264-bb28-8425cfbdc8ab"
+    },
+    {
+      "claim_id": "bbece40d-8987-4720-8497-555fef72482e",
+      "result_id": "4aa20d6b-2a80-4fca-b5b5-4bb450cb7e40"
+    },
+    {
+      "claim_id": "a1fb7557-a779-47a9-9c72-6ae0c3f1cd85",
+      "result_id": "4aa20d6b-2a80-4fca-b5b5-4bb450cb7e40"
+    },
+    {
+      "claim_id": "bf7b328a-ddc2-4348-a035-0b85079a3b3d",
+      "result_id": "2935e730-0a3c-4411-8553-539391fbdf48"
+    },
+    {
+      "claim_id": "afaf7738-3aee-4374-8e51-84345e67d293",
+      "result_id": "2935e730-0a3c-4411-8553-539391fbdf48"
+    },
+    {
+      "claim_id": "9fc5dc60-d698-4f33-b5f5-e9e8b28a6072",
+      "result_id": "1ba9dd06-038f-42f6-b549-ded1fa87d91c"
+    },
+    {
+      "claim_id": "37c4cb21-47c6-4e5c-9de5-1463f89681a0",
+      "result_id": "38d918bf-c6d8-46d0-b44a-e18561fc504d"
+    },
+    {
+      "claim_id": "3f9829ee-4fa6-4a3a-9b12-68e16e0a9e20",
+      "result_id": "4769e837-8ec0-46bf-a196-5cb47171db29"
+    },
+    {
+      "claim_id": "18ef620c-4faf-4bd3-a2f8-d6b3829dff4b",
+      "result_id": "4769e837-8ec0-46bf-a196-5cb47171db29"
+    },
+    {
+      "claim_id": "be09c659-6aca-4c81-adad-2cd104a3d668",
+      "result_id": "1b045460-c2ad-4407-b03d-4f80afa34e8f"
+    },
+    {
+      "claim_id": "c9de0530-ddc8-4ef7-ac6a-6148b54b4749",
+      "result_id": "1b045460-c2ad-4407-b03d-4f80afa34e8f"
+    },
+    {
+      "claim_id": "ce4cdf76-4841-4c17-a4e2-cfb3b7ad2ddb",
+      "result_id": "1b045460-c2ad-4407-b03d-4f80afa34e8f"
+    },
+    {
+      "claim_id": "98bdeaa9-a092-4b18-9d26-933834f893fa",
+      "result_id": "cc0d4f12-54d7-46de-9a03-c117ece80a02"
+    },
+    {
+      "claim_id": "cb6d154e-3694-45d4-8f3d-96a346466f51",
+      "result_id": "cc0d4f12-54d7-46de-9a03-c117ece80a02"
+    },
+    {
+      "claim_id": "6f9119a5-6060-4a0e-9e85-e669e9417e3e",
+      "result_id": "4ede1d3b-665f-4aff-8f31-3e161247dad6"
+    },
+    {
+      "claim_id": "929a9ef5-53f8-40c2-860f-9f6c1437d6f6",
+      "result_id": "4ede1d3b-665f-4aff-8f31-3e161247dad6"
+    },
+    {
+      "claim_id": "75261f66-dcea-42a2-86fd-2201c07b3943",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "6f913d70-c9a4-4c33-bf72-f1ced5bba0d6",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "5cf6f562-581a-41bd-8cb4-f0945de8a345",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "c0db0e28-3dd9-42c0-b806-89727ffac283",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "6ff586ae-0b88-48c4-b3d7-e71a9febd758",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "0cfa5666-ad3e-4b49-a94e-d626a405aa08",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "8dc5c974-e3ad-428d-b915-389e891e749f",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "60de4aea-9086-4de7-ad5a-9b549c4c835e",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "585b93e8-c6d0-4713-9be3-39573b728d50",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "7a2daac7-b157-4f86-b78b-1f79ac6b1f9d",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "fc3273fc-2cee-4e0c-84e8-feba5ecc0ee3",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "f5a03683-927c-4413-a66f-46dfd3b0b82d",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "889572fe-cc59-409f-ad26-fda8fe02bfa6",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "849f62db-fd2e-4a6c-9161-6b1c8473268f",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "da646478-67f4-4222-aef1-a142b3e2988a",
+      "result_id": "f5c75a39-0e43-4e03-9b04-a2f820a22f26"
+    },
+    {
+      "claim_id": "8838dddd-910d-4575-ae88-f0c6ef273ff3",
+      "result_id": "0f7c8ac5-d167-472f-a254-85383a81eb5b"
+    },
+    {
+      "claim_id": "efb41e89-1120-45c4-9b42-e7ba0332cb0d",
+      "result_id": "142e5bb0-2881-4417-895b-6f9b10af54d1"
+    },
+    {
+      "claim_id": "1ff636f9-40c1-4b71-bfd3-78705abe9193",
+      "result_id": "142e5bb0-2881-4417-895b-6f9b10af54d1"
+    },
+    {
+      "claim_id": "9aa60e45-46ab-4192-ba4d-dd252d0807f8",
+      "result_id": "0ad7a8c5-0015-46bb-bc50-60712c8084bd"
+    },
+    {
+      "claim_id": "cd12fe34-f45d-4be3-859d-0c0a2816ae99",
+      "result_id": "0ad7a8c5-0015-46bb-bc50-60712c8084bd"
+    },
+    {
+      "claim_id": "a80d6374-7da0-4583-91e7-54efd7f528fa",
+      "result_id": "0ad7a8c5-0015-46bb-bc50-60712c8084bd"
+    },
+    {
+      "claim_id": "186bb9bc-7d54-4b90-bfe3-05a5ab4d9432",
+      "result_id": "0ad7a8c5-0015-46bb-bc50-60712c8084bd"
+    },
+    {
+      "claim_id": "4d6046b0-dbb6-49b8-984f-88db7e7a1e89",
+      "result_id": "0ad7a8c5-0015-46bb-bc50-60712c8084bd"
+    },
+    {
+      "claim_id": "a95f145e-19bb-402e-b1b2-d583e2078844",
+      "result_id": "17909fd8-63cd-4d71-b4d4-54036aa16094"
+    },
+    {
+      "claim_id": "14e6efb6-081d-4c3d-b5cc-a22a5edc262b",
+      "result_id": "17909fd8-63cd-4d71-b4d4-54036aa16094"
+    },
+    {
+      "claim_id": "3b23223d-a315-4c11-b002-4006ce28e579",
+      "result_id": "17909fd8-63cd-4d71-b4d4-54036aa16094"
+    },
+    {
+      "claim_id": "bd4b909c-6d52-4f7b-a604-7f87fc0ea2bc",
+      "result_id": "17909fd8-63cd-4d71-b4d4-54036aa16094"
+    },
+    {
+      "claim_id": "945b5172-ee62-4a46-bce6-85bca1991154",
+      "result_id": "17909fd8-63cd-4d71-b4d4-54036aa16094"
+    },
+    {
+      "claim_id": "45e3a3e6-0985-444a-ba21-dae45b11f7e3",
+      "result_id": "17909fd8-63cd-4d71-b4d4-54036aa16094"
+    },
+    {
+      "claim_id": "7743740a-8ee7-4056-be95-bc181dd2cc7f",
+      "result_id": "17909fd8-63cd-4d71-b4d4-54036aa16094"
+    },
+    {
+      "claim_id": "d34df32b-e88b-49bc-b269-ab7083f524d2",
+      "result_id": "17909fd8-63cd-4d71-b4d4-54036aa16094"
+    },
+    {
+      "claim_id": "97a4df75-4a13-4b6c-b708-78265b6f3db1",
+      "result_id": "17909fd8-63cd-4d71-b4d4-54036aa16094"
+    },
+    {
+      "claim_id": "bc6c0b70-66e8-4fbf-ae3d-999e99225104",
+      "result_id": "17909fd8-63cd-4d71-b4d4-54036aa16094"
+    },
+    {
+      "claim_id": "c700f0d3-9450-4847-b6b0-06bf486957eb",
+      "result_id": "17909fd8-63cd-4d71-b4d4-54036aa16094"
+    }
+  ],
+  "comparisons": []
+}

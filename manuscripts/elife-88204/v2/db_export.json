@@ -1,0 +1,1989 @@
+{
+  "submission": {
+    "id": "c04059b3-1197-4da4-b522-0d4e31526389",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:14:44.416640Z",
+    "updated_at": "2025-12-03T20:14:44.416640Z"
+  },
+  "content": [
+    {
+      "id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "submission_id": "c04059b3-1197-4da4-b522-0d4e31526389",
+      "content_type": "manuscript",
+      "content_text": "# Transmembrane protein CD69 acts as an S1PR1 agonist\n\n## Authors\n\n- Hongwen Chen<sup>1</sup> ([ORCID: 0000-0002-1065-9808](https://orcid.org/0000-0002-1065-9808))\n- Yu Qin<sup>1</sup>\n- Marissa Chou<sup>2</sup>\n- Jason G Cyster<sup>2</sup> ([ORCID: 0000-0002-4735-9745](https://orcid.org/0000-0002-4735-9745)) \u2020\n- Xiaochun Li<sup>1</sup> ([ORCID: 0000-0002-0177-0803](https://orcid.org/0000-0002-0177-0803)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics, The University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))\n2. Department of Microbiology and Immunology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n3. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n4. Department of Biophysics, The University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe activation of Sphingosine-1-phosphate receptor 1 (S1PR1) by S1P promotes lymphocyte egress from lymphoid organs, a process critical for immune surveillance and T cell effector activity. Multiple drugs that inhibit S1PR1 function are in use clinically for the treatment of autoimmune diseases. Cluster of Differentiation 69 (CD69) is an endogenous negative regulator of lymphocyte egress that interacts with S1PR1 in cis to facilitate internalization and degradation of the receptor. The mechanism by which CD69 causes S1PR1 internalization has been unclear. Moreover, although there are numerous class A GPCR structures determined with different small molecule agonists bound, it remains unknown whether a transmembrane protein per se can act as a class A GPCR agonist. Here, we present the cryo-EM structure of CD69-bound S1PR1 coupled to the heterotrimeric Gi complex. The transmembrane helix (TM) of one protomer of CD69 homodimer contacts the S1PR1-TM4. This interaction allosterically induces the movement of S1PR1-TMs 5\u20136, directly activating the receptor to engage the heterotrimeric Gi. Mutations in key residues at the interface affect the interactions between CD69 and S1PR1, as well as reduce the receptor internalization. Thus, our structural findings along with functional analyses demonstrate that CD69 acts in cis as a protein agonist of S1PR1, thereby promoting Gi-dependent S1PR1 internalization, loss of S1P gradient sensing, and inhibition of lymphocyte egress.\n\n## Introduction\n\nSphingosine-1-phosphate (S1P) plays an essential role in the immune system by promoting the egress of lymphocytes from lymphoid organs into blood and lymph via a direct interaction with one of its five cognate G protein\u2013coupled receptors, S1PR1 (Baeyens and Schwab, 2020; Cartier and Hla, 2019; Cyster and Schwab, 2012; Pappu et al., 2007; Rosen et al., 2013; Spiegel and Milstien, 2003). After egressing from spleen, lymph nodes, or mucosal lymphoid tissues, T and B lymphocytes travel to other lymphoid organs in a cycle of continual pathogen surveillance. When an infection occurs, there is a temporary shutdown of lymphocyte egress from the responding lymphoid organ(s) and this enables increased accumulation of lymphocytes and enhances the immune response (Cyster and Schwab, 2012). Egress shutdown is mediated by type I interferon (IFN) inducing lymphocyte CD69 expression. CD69, a type II transmembrane C-type lectin protein, intrinsically inhibits the function of S1PR1 in T and B cells (Shiow et al., 2006). CD69 also regulates T cell egress from the thymus (Nakayama et al., 2002; Zachariah and Cyster, 2010). A disulfide-bond in the extracellular domain links CD69 as a homodimer (Ziegler et al., 1994). Biochemical studies demonstrated that CD69 may associate with S1PR1 through interactions between their transmembrane domains (TMs) to facilitate S1PR1 internalization and degradation (Bankovich et al., 2010). Unlike S1P, CD69 has been shown to bind S1PR1 but not the other S1PRs (Bankovich et al., 2010; Jenne et al., 2009; Shiow et al., 2006). However, the mechanism of CD69-induced S1PR1 internalization and thus functional inactivation has been unclear.\n\nImportantly, several S1PR1 modulators (e.g. Fingolimod, also known as FTY720, Siponimod, Ozanimod, and Etrasimod), have been approved for treating the autoimmune diseases multiple sclerosis and ulcerative colitis (Brinkmann et al., 2010; Chun et al., 2021; Dal Buono et al., 2022; Kappos et al., 2010). These immunosuppressants are believed to act by inhibiting S1PR1 function and thereby preventing autoimmune effector lymphocytes exiting lymphoid organs, blocking the autoimmune attack. Either sphingosine or FTY720 is metabolically catalyzed by two intracellular sphingosine kinases into the phosphorylated form (S1P or FTY720-P) and then exported to the extracellular space via S1P transporters (Baeyens and Schwab, 2020; Spiegel et al., 2019). There, S1P binds to its receptors for initiation of the signal while FTY720-P activates the S1PR1 but causes a persistent internalization and degradation of S1PR1 to attenuate the signal (Brinkmann et al., 2010).\n\nRecently, cryogenic electron microscopy (cryo-EM) structures of S1PR1 complexed with different small molecule ligands have been determined (Liu et al., 2022; Xu et al., 2022; Yu et al., 2022; Yuan et al., 2021). These findings reveal a mechanism of how S1PR1 engages its endogenous ligand S1P and its modulators to adopt the active conformation for recruiting the heterotrimeric Gi protein. The previously determined crystal structure of antagonist ML056-bound S1PR1 reveals its inactive state (Hanson et al., 2012). However, the molecular mechanism remains unknown of how CD69 binds to S1PR1 to trigger its internalization. Therefore, structural study on the S1PR1-CD69 complex will provide molecular insights into the CD69-mediated functional inhibition of S1PR1 and reveal how a class A GPCR can be regulated by a transmembrane protein modulator. In this manuscript, we determined the structure of CD69-bound S1PR1 coupled to G\u03b1i\u03b21\u03b32 heterotrimer by cryo-EM at 3.15 \u00c5 resolution. Our findings reveal that TM of CD69 contacts TM4 of S1PR1 to activate the receptor allowing it to engage the \u03b15 helix of G\u03b1i in the absence of S1P ligand, thereby disrupting the receptor\u2019s egress-promoting function.\n\n## Results\n\nSince serum contains an abundance of lipids including S1P, we expressed human S1PR1 or CD69 in HEK293 cells cultured in a medium with lipid-deficient serum. Then, we purified human S1PR1 protein alone to validate its activation in the presence of S1P using the GTPase-Glo assay (Figure 1A). We then tested the effect on S1PR1 of adding the CD69 homodimer in the absence of S1P. Remarkably, addition of CD69 alone caused a similar amount of Gi activation as addition of S1P indicating that CD69 functions as a protein agonist of S1PR1 (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig1-v2.jpg)\n\n**Figure 1.:** (A) S1PR1-induced GTP turnover for Gi1 in the presence of purified CD69 or S1P. Luminescence signals were normalized relative to the condition with Gi1 only. Data are mean \u00b1 s.e.m. of three independent experiments. One-way ANOVA with Tukey\u2019s test; ****p<0.0001. Experiments were repeated at least three times with similar results. (B) Cryo-EM map of human CD69 bound S1PR1-Gi complex. (C) Cartoon presentation of the complex in the same view and color scheme as shown in (B). Slab view of S1PR1 from the extracellular side showing that the orthosteric binding pocket is vacant.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Size exclusion column profile of CD69-S1PR1-Gi complex. Elution fractions of the peak indicated by cyan color were pooled and concentrated for use in grid vitrification. (B) Representative micrograph after motion correction. (C) Data processing workflow of CD69-S1PR1-Gi complex. Representative 2D classes are shown. (D) FSC curve of the final reconstruction in Post-processing of Relion. (E) Local resolution display of the reconstructed map. Local resolution was estimated within Relion. (F) Angular distribution of particles used in the final reconstruction of the complex.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative regions of CD69, S1PR1, and G\u03b1i1 are shown. (B) The cryo-EM density maps of the CD69 residues. (C) The cryo-EM density maps of the S1PR1 residues. The density map is drawn by ChimeraX.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Structures of S1PR1 binding with CD69 and S1P. CD69-bound receptor in blue and S1P-bound S1PR1 (PDB code: 7TD3) in cyan. S1P is shown as balls and sticks in yellow. (B) The flipping of F1614.43 of the structures. (C) A model of 2:2 CD69-S1PR1 complex with Gi heterotrimer. The steric clash between the modeled S1PR1 and the N-helix of Gai is indicated by an arrow.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Overall structures of Gs-protein-coupled CGRP receptor with CGRP. (B) Overall structures of mGlu2 homodimer. (C) mGlu2\u2013mGlu7 heterodimer. (D) the class D GPCR Ste2. Transmembrane helices are labeled and PDB codes are shown in parentheses.\n\nTo perform structural studies, we mixed lysates from HEK293 cells that independently expressed human CD69 and human S1PR1. The CD69-S1PR1 complex was then incubated with G\u03b1i\u03b21\u03b32 heterotrimer and scFv16 (Maeda et al., 2018) at 1:1.2:1.4 molar ratio. After gel-filtration purification, the resulting complex was concentrated for cryo-EM analysis (Figure 1\u2014figure supplement 1A). We obtained over 1 million particles from ~4000 cryo-EM images. The overall structure of the CD69-bound S1PR1 coupled to heterotrimeric Gi was determined at 3.15 \u00c5 resolution by 293,516 particles (Figure 1\u2014figure supplement 1B\u2013F; Table 1). The structure shows that one S1PR1 binds one CD69 homodimer and one Gi heterotrimer. It also revealed well-defined features for the canonical seven transmembrane helices (7-TMs) of S1PR1, the G\u03b1i Ras-like domain, the G\u03b2 and G\u03b3 subunits and scFv16 (Figure 1B, Figure 1\u2014figure supplement 2A). The intracellular loop 3 (ICL3) and the C-terminus of S1PR1 and the intracellular and extracellular domains of CD69 were not found in the cryo-EM map indicating their flexibility in the complex. In contrast, the TMs of the CD69 homodimer were clearly defined in the map owing to their interactions with S1PR1 (Figure 1B, Figure 1\u2014figure supplement 2A; the interacting TM helix is referred to as CD69-a). Because no lipid was supplemented into the protein during the expression and purification, there is no notable lipid ligand in the 7-TM bundle of S1PR1, which is different from the previous structural discoveries on S1PRs (Chen et al., 2022; Liu et al., 2022; Xu et al., 2022; Yu et al., 2022; Yuan et al., 2021; Zhao et al., 2022).\n\n**Table 1.**\n Cryo-EM data collection, processing, and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Structure</th>\n      <th>CD69-S1PR1-Gi-scFv16</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PDB</td>\n      <td>8G94</td>\n    </tr>\n    <tr>\n      <td>EMDB</td>\n      <td>EMD-29861</td>\n    </tr>\n    <tr>\n      <td>Data collection/ processing</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>105,000</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>0.83</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>1.0\u20132.0</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e-/\u00c52)</td>\n      <td>60</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>C1</td>\n    </tr>\n    <tr>\n      <td>Initial particles (No.)</td>\n      <td>~1.1 million</td>\n    </tr>\n    <tr>\n      <td>Final particles (No.)</td>\n      <td>293,516</td>\n    </tr>\n    <tr>\n      <td>Map resolution (\u00c5)</td>\n      <td>3.14</td>\n    </tr>\n    <tr>\n      <td>FSC threshold</td>\n      <td>0.143</td>\n    </tr>\n    <tr>\n      <td>Map resolution range (\u00c5)</td>\n      <td>25\u20133.0</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Model Resolution (\u00c5)</td>\n      <td>3.3</td>\n    </tr>\n    <tr>\n      <td>FSC threshold</td>\n      <td>0.5</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B-factor (\u00c52)</td>\n      <td>\u201360</td>\n    </tr>\n    <tr>\n      <td>Model composition</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Non-hydrogen atoms</td>\n      <td>9223</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>1187</td>\n    </tr>\n    <tr>\n      <td>Ligand</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>B-factors (\u00c52)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>98.23</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.702</td>\n    </tr>\n    <tr>\n      <td>Validation</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MolProbity score</td>\n      <td>1.64</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>6.49</td>\n    </tr>\n    <tr>\n      <td>Rotamers outliers (%)</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot (%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored</td>\n      <td>95.87</td>\n    </tr>\n    <tr>\n      <td>Allowed</td>\n      <td>4.13</td>\n    </tr>\n    <tr>\n      <td>Outliers</td>\n      <td>0.00</td>\n    </tr>\n  </tbody>\n</table>\n\nStructural comparison shows that the entire complex and the S1P bound S1PR1-Gi complex share a similar conformation with a root-mean-square deviation (RMSD) of 0.82 \u00c5 (Figure 1\u2014figure supplement 3A). The receptors in both complexes can be aligned well; however, the F1614.43 in TM4 presents a notable shift due to CD69 binding (Figure 1\u2014figure supplement 3B). We docked the S1PR1 bound to the other TM of the CD69 homodimer which showed that the modeled receptor would sterically clash with the Gi\u03b1 subunit (Figure 1\u2014figure supplement 3C). This may explain why only one receptor binds one CD69 homodimer in the presence of the heterotrimeric G-protein.\n\nReceptor activity-modifying protein 1 (RAMP1), a type I transmembrane domain protein, binds the calcitonin receptor-like receptor (CLR) class B GPCR to form the Calcitonin gene-related peptide (CGRP) receptor which is involved in the pathology of migraine (Russell et al., 2014). The structure of Gs-protein coupled CGRP receptor uncovers that TM of RAMP1 interacts with TMs 3\u20135 of CLR and the extracellular domains of RAMP1 and CLR have extensive interactions (Liang et al., 2018; Figure 1\u2014figure supplement 4A). Both CLR and RAMP1 contribute to the engagement of their agonist CGRP. However, in our structure, CD69 acts as an agonist to activate S1PR1 through a direct binding to TM4 of S1PR1 in the absence of a canonical agonist (e.g. S1P or FTY720-P). The extracellular domain of CD69 is completely invisible in the complex and may not interact with the extracellular loops of S1PR1.\n\nAnother type of intramembrane interaction observed for GPCRs is the formation of either homodimers or heterodimers. The metabotropic glutamate receptor 2 (mGlu2), a Class-C GPCR, employs TM4 to maintain its inactive dimeric state or TM6 to assemble as a homodimer in the presence of its agonist (Du et al., 2021; Figure 1\u2014figure supplement 4B). The structure of inactive mGlu2\u2013mGlu7 heterodimer shows that TM5 plays a key role in the complex assembly (Du et al., 2021; Figure 1\u2014figure supplement 4C). Moreover, TM1 of the class D GPCR Ste2 is responsible for engaging the TM1 of another Ste2 to form a homodimer (Velazhahan et al., 2021; Figure 1\u2014figure supplement 4D). These findings elucidate that GPCRs could employ distinct TMs to recruit their transmembrane binding partners.\n\nThe TM of one protomer of CD69 homodimer interacts with the TM4 of S1PR1 (Figure 1C). The interface area between TMs is about 600 \u00c52. Structural analysis shows that residues V41, V45, V48, V49, T52, I56, I59, A60 of CD69 mediate its extensive interactions with the receptor (Figure 2A, Figure 1\u2014figure supplement 2B). Residues L1604.42, F1614.43, I1644.46, W1684.50, V1694.51, L1724.54, I1734.55, G1764.58, I1794.61 and M1804.62 of S1PR1-TM4 contribute to the interaction with CD69 (Figure 2B, Figure 1\u2014figure supplement 2B). However, the TM of another CD69 does not have any interactions with the receptor and heterotrimeric Gi protein (Figure 1C). Further structural comparison with the S1P-bound S1PR1-Gi complex indicates that the heterotrimeric Gi proteins in both complexes exhibit a similar state with a RMSD of 0.45 \u00c5. Also, the intracellular regions of the heptahelical domain adopt a similar conformation to accommodate the Gi proteins. This finding implies that S1P and CD69 stimulate the receptor to engage the heterotrimeric Gi proteins in an analogous fashion.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig2-v2.jpg)\n\n**Figure 2.:** (A) and (B) Detailed interactions between CD69-a and TM4 of S1PR1. Residues that contribute to complex formation are labeled. CD69 is shown in green and S1PR1 in slate. (C) S1PR1-Flag and CD69-StrepII co-immunoprecipitation assay in transfected HEK293 GnTI- cells from one experiment that is representative of three. (D) Dose-response curves of S1PR1WT, S1PR1V169Y and S1PR1M180Y for the TGF\u03b1 shedding assay using S1P. Data are mean \u00b1 s.d. (n=3). (E) S1PR1-induced GTP turnover for Gi1 in the presence of purified wild-type and mutant CD69. Luminescence signals were normalized relative to the condition with Gi1 only. Data are mean \u00b1 s.e.m. of three independent experiments. One-way ANOVA with Tukey\u2019s test; ***p<0.001, ****p<0.0001. Experiments in (C)-(E) were repeated at least twice with similar results. (F) Flow cytometric analysis of S1PR1 surface expression on WEHI231 lymphoma cells transduced with S1PR1 and CD69 wild-type and mutant constructs as indicated. From one experiment that is representative of three.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** CD69 is a dimer in size exclusion buffer, but partially dissociated to be monomer when resolved in SDS-PAGE gel.\n\nTo validate our structural observations, we performed the co-immunoprecipitation (co-IP) assay using S1PR1 and CD69 variants. Compared to the wild-type S1PR1, two mutants (V1694.51Y and M1804.62Y) present reduced binding to CD69 (Figure 2C). The TGF\u03b1 shedding assay showed that these two mutants retained normal activity in response to S1P (Figure 2D). We also tested two CD69 double mutations (V48F/V49F and I56F/I59F) for their association with S1PR1. The co-IP results show that the interaction between S1PR1 and either mutant is considerably attenuated, thus directly supporting the role of CD69-TM in the complex assembly (Figure 2C). Moreover, we have purified CD69(V48F/V49F) and CD69(I56F/I59F) individually and mixed with S1PR1 and G\u03b1i\u03b21\u03b32 to conduct a GTPase-Glo assay (Figure 2\u2014figure supplement 1). Consistent with the results of our co-IP assays, the activation of Gi proteins in the presence of either variant was decreased (Figure 2E). To further validate the physiological role of the CD69-S1PR1-Gi complex, we tested the two CD69 variants, for their influence on CD69-mediated S1PR1 internalization in WEHI231 B lymphoma cells. In accord with the biochemical data, CD69(V48F/V49F), and CD69(I56F/I59F) were both reduced in their ability to downregulate S1PR1 (Figure 2F).\n\nThe structures of the S1PR1 complex with its small molecule modulators (including S1P, FTY720-P, BAF312, and ML056) uncover that the TMs 3, 5, 6, and 7 contribute to accommodate the modulators in the orthosteric site (Hanson et al., 2012; Liu et al., 2022; Xu et al., 2022; Yu et al., 2022; Yuan et al., 2021). In contrast, S1PR1 employs its TM4 to associate with CD69 which functions as a protein agonist for triggering receptor activation. Structural comparison with the inactive state of ML056 bound S1PR1 reveals a unique mechanism of CD69-mediated S1PR1 activation (Figure 3A). The binding of CD69 induces a 4 \u00c5 shift at the intracellular end of TM4 causing the residues C1674.49, I1704.52, and L1744.56 in TM4 to face TM3 (Figure 3B). C1674.49 and I1704.52 have hydrophobic contacts with the F1333.41 in TM3, and L1744.56 pushes the F2105.47 in TM5 towards the edge of the receptor to form the hydrophobic interactions with W2696.48 and F2736.52 in TM6 (Figure 3C, Figure 1\u2014figure supplement 2C). These interactions trigger the notable movement of TM5 and TM6 allowing the opening of intracellular regions to engage the heterotrimeric Gi proteins (Figure 3A and D). Residues A1373.45, I1704.52, L1744.56, F2105.47, W2696.48, and F2736.52 are conserved among S1PR1, S1PR2 and S1PR3, but not F1333.41 and C1674.49. Remarkably, further comparison shows that the key residues, which are crucial for the S1P binding and receptor activation, present similar conformations in the structures of S1P-bound S1PR1 and CD69-bound S1PR1, although S1P and CD69 have different structural natures and completely distinct binding sites in the receptor (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig3-v2.jpg)\n\n**Figure 3.:** (A) Overall structures of S1PR1 binding with CD69 and ML056. The CD69-bound S1PR1 structure was aligned to ML056-bound inactive S1PR1 (PDB code: 3V2Y). ML056-bound receptor is shown in brown, CD69-bound receptor in blue, and the TM of CD69 in green. The same color scheme is used (C) and (D). (B) The movements of TM4 and TM6 of CD69-bound S1PR1 compared with ML056-bound inactive S1PR1. (C) Residues involved in the TM movements. (D) TM6 movement around W2696.48 and F2736.52. (E) Comparison between CD69-bound S1PR1 and S1P-bound S1PR1 (PDB code: 7TD3). Residues in the ligand binding pocket are shown. CD69-bound receptor in blue and S1P-bound S1PR1 in cyan. S1P is shown as balls and sticks in yellow.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Co-immunoprecipitation assay in transfected HEK293 GnTI- cells from one experiment that is representative of three. (B) Sequence alignment of S1PR homologues. The different residues among S1PRs which are crucial for CD69 binding are indicated by blue stars.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Structure of GABAB. The BHFF, a positive allosteric modulator (PAM) of GABAB, is shown as magenta sticks. (B) Structure of CB1. The ZCZ011, a PAM of CB1, is shown as magenta sticks. (C) Structure of A1R. The MIPS521, a PAM of A1R, is shown as magenta sticks. Transmembrane helices for PAM binding are labeled and PDB codes are shown in parentheses.\n\nTo date, five S1PRs have been identified. These receptors have different tissue distributions, and they also function via distinct kinds of G proteins (including Gi, Gq, and G12/13) (Cartier and Hla, 2019). Previous work showed that CD69 specifically binds to S1PR1, and it does not associate with S1PR2, S1PR3 or S1PR5 (Bankovich et al., 2010; Jenne et al., 2009; Shiow et al., 2006). To dissect the binding specificity of CD69, we carried out the co-IP assays to show a very weak interaction between S1PR2 and CD69 (Figure 3\u2014figure supplement 1A). Although the sequence homology among five S1PRs is high, residues L1574.51 and L1684.62 in S1PR2-TM4 are not conserved with those in S1PR1 and are determinants for specific recognition of CD69 (Figure 3\u2014figure supplement 1B). We speculated that converting these two residues to those in S1PR1 may prompt the interaction between S1PR2 variant and CD69. Our co-IP result clearly shows that S1PR2(L1574.51V/L1684.62M) could interact with CD69 albeit the interactions are weaker than that between S1PR1 and CD69 (Figure 3\u2014figure supplement 1A). This finding further demonstrates the essential role of S1PR1-TM4 in the CD69-mediated S1PR1 signaling.\n\nAll the known small molecule S1PR1 agonists or antagonists bind to the orthosteric site in the heptahelical domain (Hanson et al., 2012; Liu et al., 2022; Xu et al., 2022; Yu et al., 2022; Yuan et al., 2021). Interestingly, the CD69 binding site is akin to that of the allosteric agents which attach to receptors (Draper-Joyce et al., 2021; Mao et al., 2020; Yang et al., 2022), although the nature of these agents and CD69 is quite different. The diversity of the allosteric modulator binding sites in GPCRs has been revealed by numerous structures (Figure 3\u2014figure supplement 2). When the orthosteric site is occupied, the positive allosteric modulator attaches to the receptor and then increases agonist affinity and/or efficacy. CD69 binds to the edge of S1PR1, but it acts as a protein agonist to directly activate the receptor in the absence of any agonists in the orthosteric site. Thus, our finding suggests CD69 is different from other S1PR1 agonists in that it functions via a direct binding to the edge of the receptor.\n\nIt remains unknown whether the antagonist of S1PR1 bound to the 7-TMs will affect the CD69-mediated regulation of S1PR1. We co-transfected S1PR1-GFP and CD69-mCherry into HEK293 cells in a lipid depleted medium. After 24 hr, the fluorescence images show that substantial receptors (~80%) have been internalized with CD69. However, when we added the Ex26, a potent S1PR1 antagonist (Cahalan et al., 2013), into the cells 6 hr after transfection, the images show that just ~50% receptors have been internalized (Figure 4A and B). This finding indicates that the CD69-mediated S1PR1 activation could be reversed when the 7-TMs pocket is preoccupied by an antagonist.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig4-v2.jpg)\n\n**Figure 4.:** (A) HEK293 cells were treated with 2 \u03bcM Ex26 or vehicle for 12 hr and imaged using confocal microscopy. Scale bar, 10 \u03bcm. (B) Quantification of intracellular S1PR1 of the cells in (A). (C) HEK293 cells were treated with 20 \u03bcM Barbadin for 12 hr and imaged for analysis. Scale bar, 10 \u03bcm. (D) Quantification of intracellular S1PR1 of the cells in (C). (E) HEK293 cells were treated with 200 ng/ml pertussis toxin (PTX) for 12 hr and imaged for analysis. Scale bar, 10 \u03bcm. (F) Quantification of intracellular S1PR1 of the cells in (E). Data are mean \u00b1 s.e.m. Two-sided Welch\u2019s t-test; ns, not significant, **p<0.01, ****p<0.0001. All experiments were repeated at least three times with similar results.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) HEK293 cells were treated with 20 mM Barbadin for 2 hr followed by vehicle- or FTY720-P-treatment for 1 hr and imaged using confocal microscopy. Scale bar, 10 mm. (B) Quantification of intracellular S1PR1 of the cells in (A). Data are mean \u00b1 s.e.m. Two-sided Welch\u2019s t-test; ****p<0.0001. Experiments were repeated at least twice with similar results.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Luminescence signals were normalized relative to the condition with Gi1 only. Data are mean \u00b1 s.e.m. of three independent experiments. Two-sided Student\u2019s t-test; ns, not significant. Experiments were repeated at least twice with similar results.\n\nIt has been known that S1P, FTY720-P and CD69, could promote the internalization of S1PR1. However, the mechanisms of S1P- and FTY720-P-mediated internalization appear to be different. While both S1P and FTY720-P activate Gi-signaling, FTY720-P is considered as a \u03b2-arrestin-biased agonist, and FTY720-P-induced S1PR1 internalization is \u03b2-arrestin-dependent (Oo et al., 2007; Xu et al., 2022). The pathway of S1P-mediated internalization can be \u03b2-arrestin-dependent or independent (Galvani et al., 2015; Reeves et al., 2016). To test the mechanism of how CD69 induces the receptor internalization, we performed a fluorescence imaging assay to check the internalization of S1PR1 in the presence of either Gi inhibitor Pertussis toxin (PTX) or \u03b2-arrestin inhibitor Barbadin. The plasmids encoding S1PR1-GFP and CD69-mCherry were co-transfected into HEK293 cells in a lipid depleted medium. After 6 hr, we added PTX or Barbadin. On day 2, we calculated the fraction of internalized S1PR1 in each group by fluorescence imaging. The results show that Barbadin does not interfere with CD69-induced receptor internalization (Figure 4C and D), but PTX could prevent half of the receptors from internalization (Figure 4E and F). Our finding also supports that Barbadin was effective in reducing FTY70-P-induced S1PR1 internalization (Figure 4\u2014figure supplement 1). Thus, CD69 agonism of S1PR1 induces Gi-dependent internalization of the complex.\n\n## Discussion\n\nOur studies provide a model for understanding how the lymphocyte activation marker CD69 controls lymphocyte egress and thus augments adaptive immunity. As an immediate early gene, CD69 is strongly transcriptionally induced in lymphocytes within an hour of exposure to type I IFN, toll-like receptor (TLR) ligands, or antigen receptor engagement (Grigorova et al., 2010; Shiow et al., 2006; Ziegler et al., 1994). Following induction, CD69 protein engages S1PR1 as an agonist, causing S1PR1 internalization and loss of the ability to sense S1P gradients. We speculate that even prior to internalization, CD69 disrupts S1PR1\u2019s egress promoting function by acting as a high concentration agonist and thus making the receptor \u2018blind\u2019 to S1P distribution. Consistently, our functional analysis reveals that CD69 could not synergize with S1P to trigger S1PR1 activation (Figure 4\u2014figure supplement 2).\n\nPrevious work has shown the critical importance of correctly distributed S1P and thus correctly localized S1PR1 activation for effective lymphocyte egress (Schwab et al., 2005). As well as promoting egress, S1PR1, transmits signals needed for maintaining T cell survival (Mendoza et al., 2017) and CD69 has been implicated in transmitting signals that influence T cell differentiation (Cibri\u00e1n and S\u00e1nchez-Madrid, 2017; Kimura et al., 2017). Whether the CD69-S1PR1 complex contributes to these signals before undergoing degradation merits further study. GRK2 (Arnon et al., 2011; Oo et al., 2007; Watterson et al., 2002) and dynamin (Willinger et al., 2014) participate in S1PR1 internalization in response to S1P. In accord with these factors possibly having a role in CD69-mediated S1PR1 internalization, they have been shown to promote internalization of some receptors independently of \u03b2-arrestins (Moo et al., 2021). The selectivity of CD69 for S1PR1 is important for allowing activated CD69+ lymphocytes and natural killer cells to employ other S1PRs, such as S1PR2 and S1PR5, to carry out functions without interruption by CD69 (Jenne et al., 2009; Laidlaw et al., 2019; Moriyama et al., 2014). The lack of conservation of key residues that mediate the S1PR1-CD69 interaction in TM4 of S1PR2, S1PR5 and the other S1PRs provides an explanation for this selectivity (Figure 3\u2014figure supplement 1B). In summary, we provide the first example of GPCR activation by interaction in cis with a transmembrane ligand and thereby explain the mechanism of lymphocyte egress shutdown. The structure also offers insights that may enable introduction of transcriptionally inducible GPCR switches into CAR-T cells and other engineered cell types.\n\n## Methods\n\n### Constructs\n\nFor expression and purification, the wild-type human S1PR1 (a.a.1\u2013347, UniProt: P21453) and CD69 (full-length, UniProt: Q07108) were separately cloned into pEZT-BM vector (Morales-Perez et al., 2016) with a C-terminal Flag tag and StrepII tag, respectively. Plasmids of G\u03b1i1, G\u03b21/G\u03b32 and scFv16 are kind gifts from Brian Kobilka (Stanford University). For co-immunoprecipitation assay, the full-length wild-type human S1PR1 fused with a C-terminal Flag tag and CD69 fused with a C-terminal StrepII tag, were separately cloned into pCAGGS vector (Niwa et al., 1991) with modified multiple cloning sites. For fluorescence microscopy, the plasmids pCAGGS-S1PR1-Flag-GFP and pCAGGS-CD69-StrepII-mCherry were constructed.\n\n### Protein expression and purification\n\nS1PR1-Flag and CD69-StrepII were separately expressed using baculovirus-mediated transduction of mammalian HEK293S GnTI\u2212 cells (ATCC CRL-3022) in a medium containing FreeStyle 293 (Gibco Cat# 12338018) supplemented with 2% charcoal-dextran stripped fetal bovine serum (Gibco Cat# 12676029), penicillin (100 U/mL), and streptomycin (100 \u03bcg/mL) (Corning Cat# 30\u2013002 CI). Baculoviruses were generated in Sf9 cells, and P2 virus was used to infect HEK293S GnTI\u2212 cells at 37 \u00b0C. At 8 hr after infection, sodium butyrate at a final concentration of 10 mM was added to the culture. After further incubation for 64 hr at 30 \u00b0C, cells expressing S1PR1-Flag and CD69-StrepII were mixed together and resuspended in buffer A (20 mM HEPES, pH 7.5, 150 mM NaCl) supplemented with protease inhibitors and then homogenized by sonication. The protein was solubilized with 1% LMNG (lauryl maltose neopentyl glycol) /0.1% CHS (cholesteryl hemisuccinate) for 1 hr at 4 \u00b0C. Insoluble material was removed by centrifugation at 40,000 g, 4 \u00b0C for 30 min, and the supernatant was incubated with Strep-Tactin XT resin (IBA Cat# 2-5030-025) for batch binding. The resin was washed with 20 column volumes (CV) of buffer A containing 0.01% LMNG/0.001% CHS. The protein complex was eluted with 6 CVs of buffer A containing 0.01% LMNG/0.001% CHS and 50 mM biotin, followed by a second affinity purification by anti-Flag M2 resin (Sigma-Aldrich). The excessive CD69-StrepII was washed off with 20 CVs of buffer A containing 0.01% LMNG/0.001% CHS, and the complex was eluted with 5 CVs of 3\u00d7Flag peptide (0.1 mg/ml; ApexBio). The eluted protein was further purified by gel filtration using a Superose 6 Increase 10/300 GL column (Cytiva) with 20 mM HEPES, pH 7.5, 150 mM NaCl, 0.001% L-MNG/0.0001% CHS, and 0.0025% glyco-diosgenin (GDN). The peak fractions were collected for complex assembly.\n\nTo assemble the CD69-S1PR1-Gi-scFv16 complex, purified CD69-S1PR1 was mixed with the Gi heterotrimer at a 1:1.2 molar ratio. This mixture was incubated on ice for 1 hr, followed by the addition of apyrase to catalyze the hydrolysis of unbound GDP on ice for 1 hr. Then, scFv16 was added at a 1.4:1 molar ratio (scFv16: CD69-S1PR1) followed by 30 min incubation on ice. The mixture was diluted 10-fold by gel filtration column buffer. To remove excess Gi and scFv16 proteins, the mixture was purified by anti-Flag M2 affinity chromatography. The complex was eluted and concentrated using an Amicon Ultra Centrifugal Filter (molecular weight cutoff 100 kDa). The complex was further purified by gel filtration (Superose 6 Increase 10/300 GL) with buffer 20 mM HEPES, pH 7.5, 150 mM NaCl, 0.001% L-MNG/0.0001% CHS, and 0.0025% GDN. Peak fractions consisting of CD69-S1PR1-Gi complex were concentrated to ~10\u201312 mg/ml for cryo-EM studies.\n\n### Cryo-EM sample preparation and data acquisition\n\nThe freshly purified CD69-S1PR1-Gi-scFv16 complex was added to Quantifoil R1.2/1.3 400-mesh Au holey carbon grids (Quantifoil), blotted using a Vitrobot Mark IV (FEI), and vitrified in liquid ethane. The grids were imaged in a 300-kV Titan Krios (FEI) with a Gatan K3 Summit direct electron detector. Data were collected in super-resolution mode at a pixel size of 0.415 \u00c5 with a dose rate of 23 electrons per physical pixel per second. Images were recorded for 5 s exposures in 50 subframes with a total dose of 60 electrons per \u00c52.\n\n### Imaging processing and 3D reconstruction\n\nA total of 4,239 dose-fractionated image stacks of CD69-S1PR1-Gi complex were collected and subjected to single particle analysis using RELION-3.1 (Zivanov et al., 2018) and cryoSPARC v3.3 (Punjani et al., 2017). MotionCor2 (Zheng et al., 2017) was used for motion correction and dose weighting, CTFFIND-4.1 Rohou and Grigorieff, 2015 for contrast transfer function (CTF) estimation, and crYOLO Wagner et al., 2019 for particle picking with a general model. A total of 1,113,446 particles were extracted with a pixel size of 1.66 \u00c5 in RELION and imported to cryoSPARC. The imported particles were subjected to ab initio model reconstruction and several rounds of alternating 2D classification and heterogeneous refinement. Then 336,669 particles from the best class were re-extracted at full pixel size (0.83 \u00c5) in RELION and imported to cryoSPARC again. Two heterogeneous refinements were performed in parallel and the resulting particles from the two best classes were combined with duplicates removed. These 293,516 particles were subjected to CTF refinement and Bayesian polishing followed by masked 3D auto refinement. RELION postprocessing was used for sharpening of the final map.\n\n### Model construction and refinement\n\nThe cryo-EM structure of the S1PR1-Gi bound to S1P (PDB: 7TD3) (Liu et al., 2022) was used as initial models and manually docked into cryo-EM density map with UCSF Chimera-1.15 (Pettersen et al., 2004). The transmembrane helix of CD69 was manually built using Coot-0.9.6 (Emsley and Cowtan, 2004). Due to the limited local resolution, the TM of CD69-b was built as polyalanine. The resulting model was subjected to iterative rounds of manual adjustment and rebuilding in Coot and real-space refinement in Phenix-1.16 (Adams et al., 2010). MolProbity (Williams et al., 2018) was used to validate the geometries of the model. Structural figures were generated using UCSF Chimera-1.15, ChimeraX-1.5 (Pettersen et al., 2021), and PyMOL-2.3 (https://pymol.org/2/).\n\n### GTP turnover assay\n\nGTP turnover was analyzed using GTPase-Glo Assay kit (Promega Cat# V7681). Briefly, the purified S1PR1 was first incubated with purified CD69 and/or S1P followed by mixing with isolated Gi protein in an assay buffer containing 20 mM HEPES, pH7.5, 150 mM NaCl, 0.01% LMNG/0.001% CHS, 10 mM MgCl2, 100 \u03bcM TCEP, 10 \u03bcM GDP and 5 \u03bcM GTP. After incubation for 60 min, the reconstituted GTPase-Glo reagent was added to the sample and incubated for 30 min at room temperature. The amount of remaining GTP was assessed by measuring luminescence after adding and incubation with the detection reagent for 10 min at room temperature. The luminescence signal was normalized in each case to that of G-protein alone. Data were analyzed using GraphPad Prism 9.\n\n### Co-immunoprecipitation and immunoblotting assay\n\nHEK293 GnTI- cells were transfected with plasmids encoding CD69-StrepII and S1PR1-Flag using FuGene 6 transfection reagent in 60 mm dishes. Forty-eight hr post transfection, cells were harvested and whole cell lysates were prepared using IP lysis buffer (Thermo Scientific) supplemented with protease inhibitor cocktail (Roche). Lysates were cleared by centrifuging at 20,000 g for 15 min at 4 \u00b0C. Supernatants were incubated with anti-Flag M2 affinity beads (MilliporeSigma) with end-over-end rotation for 2 h at 4 \u00b0C. Beads were washed three times with lysis buffer for 5 min per wash with end-over-end rotation at 4 \u00b0C. Proteins were eluted from beads with lysis buffer supplemented with 0.4 mg/ml 3\u00d7Flag peptide. Protein samples were loaded Bolt 4\u201312% Bis-Tris plus gels (Invitrogen) and transferred to TransBlot Turbo nitrocellulose membranes (Bio-Rad). Membranes were blocked for 1 hr at room temperature with 5% milk in PBS with 0.05% Tween 20 (PBST) followed by primary antibody incubation, three-times wash, secondary antibody incubation, and three-times wash again. Membranes were developed for 2 min at room temperature using SuperSignal West Pico PLUS Chemiluminescent Substrate (Thermo Scientific) and then imaged using the LI-COR Odyssey Fc imaging system. The following primary antibodies were used: Tubulin (D3U1W), Cell Signaling Cat# 86298 (1:3000 dilution); Flag tag (FLA-1), MBL International Cat# M185-3L (1:3000 dilution); StrepII tag, IBA GmbH Cat# 2-1507-001 (1:2000 dilution). Anti-mouse IgG HRP-linked secondary antibody (Cell Signaling Cat# 7076) was used for chemiluminescent detection (1:3000 dilution).\n\n### TGF\u03b1 shedding assay\n\nThe agonist activity of S1P for the mutant S1PR1s was determined by the TGF\u03b1 shedding assays (Inoue et al., 2012). Briefly, three pCAGGS plasmids encoding the human full-length S1PR1 variant (empty vector as negative control), the chimeric G\u03b1q/i1 subunit and alkaline phosphatase-fused TGF\u03b1 (AP-TGF\u03b1) were co-transfected into HEK293 cells using FuGene 6 transfection reagent in a 12-well plate. After 24 hr, the transfected cells were collected by trypsinization, washed with phosphate-buffered saline (PBS), and resuspended in Hanks\u2019 balanced salt solution (HBSS) with 5 mM HEPES (pH 7.4). Then, the cells were seeded into a 96-well culture plate and treated with S1P, which was serially diluted in HEPES-containing HBSS with 0.01% fatty acid\u2013free bovine serum albumin. After incubation with S1P, the cell plate was spun, and conditioned media was transferred to an empty 96-well plate. AP reaction solution (120 mM Tris-HCl, pH 9.5, 40 mM NaCl, 10 mM MgCl2, and 10 mM p-nitrophenyl phosphate) was added into the cell plates and the conditioned media plates. The absorbance at 405 nm was measured using a microplate reader (Synergy Neo2, BioTek) before and after 2 hr incubation at 37 \u00b0C. Ligand-induced AP-TGF\u03b1 release was calculated as described previously (Inoue et al., 2012). AP-TGF\u03b1 release signal of empty vector-transfected cells were subtracted from that of S1PR1 cells at the corresponding S1P concentration points. Then, the vehicle-treated AP-TGF\u03b1 release signal was set as a baseline and ligand-induced AP-TGF\u03b1 release signals were fitted to a four-parameter sigmoidal concentration\u2013response curve using GraphPad Prism 9 software.\n\n### Fluorescence microscopy\n\nHEK293 cells were plated in 35 mm glass bottom dishes (Cellvis Cat# D35141.5N) followed by transfection with S1PR1-GFP and/or CD69-mCherry using FuGene 6 reagent on the next day. Twenty-four hr post transfection, the cells were stained with Hoechst 33342 reagent (Thermo Fisher Cat# R37605) and fluorescence images were acquired using a Zeiss LSM 800 microscope system with ZEN imaging software (Zeiss).\n\nFor fluorescence quantification of intracellular S1PR1 and CD69, outside and inside of plasma membrane were circled manually in Fiji software (Schindelin et al., 2012). The fluorescence intensities in each circle were measured and regarded as whole-cell and intracellular fluorescence intensity, respectively. The intracellular fluorescence intensity was normalized to its corresponding whole-cell fluorescence intensity. For each data point, ~30 cells were randomly selected for quantification. The data shown in the figures are representative of two or more independent experiments.\n\n### WEHI231 cell retroviral transduction\n\nWEHI231 B lymphoma cells were co-transduced with retroviral constructs encoding OX56 N-terminal tagged human S1PR1 containing an IRES-hCD4 reporter and either empty vector or constructs encoding wildtype, V48F/V49F or I56F/I59F human CD69 and an IRES-GFP reporter using methods previously described (Lu et al., 2019). After 3\u20135 days, the cells were harvested and rested for 20 min at 37 \u00b0C in PBS without serum, then stained to detect OX56, CD69, and hCD4. OX56 (S1PR1) staining on hCD4 +GFP + CD69 + cells were plotted.\n",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "4177ba69-bb87-44e8-bf76-c066f156be13",
+      "submission_id": "c04059b3-1197-4da4-b522-0d4e31526389",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jungsan Sohn, https://ror.org/00za53h95 Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.88204.sa0](https://doi.org/10.7554/eLife.88204.sa0)\n\nThis important study provides unprecedented molecular insight into the activation and internalization of an important cell surface receptor induced by another membrane protein. The data supporting the conclusions are compelling, which include rigorous electron microscopy analysis, and biochemical and cell-based functional assays. The findings here not only reveal important mechanisms of S1P GPCR regulation, but also have implications for other fields such as receptor pharmacology and immunity.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jungsan Sohn, https://ror.org/00za53h95 Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.88204.sa1](https://doi.org/10.7554/eLife.88204.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Transmembrane protein CD69 acts as an S1PR1 agonist\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the assessment has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor.\n\nReviewing Editor (Recommendations for the Authors):\n\n1. Please show densities for the key residues of the binding interface between CD69 and S1PR1 (Figure 2a and b), and the key residues relay the movement from TM4 to TM6 upon CD69 binding (Figure 3c)\n\nReviewer #1 (Recommendations for the Authors):\n\nChen et al. solve the structure of S1PR1/CD69/Gi protein complex by Cryo-EM. They show that a single helix of CD69 contacts the TM4 domain of S1PR1, maps the interacting sites and demonstrates the activation of Gi protein by this \"allosteric\" transmembrane modulator of S1PR1 GPCR. Their work suggests that CD69 activates S1PR1 in a manner independent of the ligand S1P, which is surprising and perhaps somewhat different than a previous publication (PMID: 20463015). Mutagenesis studies define important residues in both S1PR1 TM4 and CD69 for the association. Through the use of inhibitors for Gi and \u00df-arrestin, they suggest that CD69 induces S1PR1 internalization via the Gi pathway. They also address why CD69 is selective for S1PR1 vs. other S1PRs (i.e. S1PR2-5). By mutating 2 residues in the TM4 of one of the non-interacting GPCR (S1PR2), the authors demonstrate a partial association, suggesting that this approach may be useful in modulating other GPCRs.\n\nThe major strength of this work is the provision of a high-resolution (3.5 \u00c4) structure of S1PR1/CD69/Gi complex. This is important since it is the first structural description of the transmembrane GPCR modulator. Given that S1PR1 is an essential regulator of vascular development and lymphocyte trafficking, and that S1PR1 modulators are an important class of drugs for autoimmune diseases, the implications of this work are quite widespread. The work is rigorous and definitive and the manuscript is written in a lucid and scholarly manner.\n\nThere are some minor issues regarding detailed conclusions that the authors might want to address, either by discussion and/or provision of new experimental data to further increase the impact of the work.\n\nSuggestions for further discussion and/or provision of new data:\n\n1) The non-requirement for S1P in the GTPase assay and the structure is interesting and novel, especially since a previous influential publication on CD69/ S1PR1 interaction (PMID: 20463015) suggested that not to be the case. This should be further expounded.\n\n2) In Figure 1 \u2013 since there is some basal GTP turnover even without the ligand, I wonder if there is some trace S1P in the cell system, even though the cells are maintained in charcoal/dextran-stripped FBS. Do the authors know if the media is indeed S1P null? Similarly, cells can make S1P via SPT pathway and activate the receptor. Again, this could be trace amounts since the palmitate concentration in stripped FBS is likely low. It would strengthen the authors' argument to measure S1P in cells and media.\n\n3) Figure 4- The internalization data could be strengthened if the high-resolution images of cells are provided as an inset.\n\n4) Can CD69 dimer accommodate 2 S1PR1 molecules in the absence of G proteins? Similarly, can CD69/ S1PR1 complex (either monomer or dimer) accommodate \u00df-arrestin? I am not suggesting the provision of actual data, but based on the structures, modeling can suggest whether steric hindrance can permit such a complex.\n\nReviewer #2 (Recommendations for the Authors):\n\nThis paper by Chen et al. reports the functional characterization of a membrane protein, CD69, as an agonist of the S1p1 receptor to induce receptor activation and internalization without lipid ligands. The authors further determined a cryo-electron microscopy (cryo-EM) structure of the human S1p1-Gi complex with CD69. The structure revealed how CD69 activates S1p1 by interacting with the transmembrane helix 4 (TM4) of S1p1. The structural findings are further validated by mutagenesis studies. The results provide a novel mechanism for the modulation of GPCR signaling by other membrane proteins.\n\nThe findings and conclusions of this paper are well supported by data. The cryo-EM structure determination looks solid. All functional assays were performed with appropriate replicates and controls. I would suggest addressing or clarifying the following issues:\n\n1) Does CD69 just function as an agonist of S1p1 in vivo? What are other possible functional roles of CD69 involving its extracellular region? Does CD69 need to form a homodimer to activate S1p1?\n\n2) The Gi-induced and b-arrestin-independent receptor internalization is interesting. What could be the molecular mechanism? Gi protein itself doesn't internalize upon activation.\n\nThe data are solid. The writing is good. All figures are clear and easy to understand. I don't have further suggestions for the authors.\n",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "28d1b7cb-0d68-49dc-87c0-008061b752b4",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C1",
+      "claim": "S1PR1 activation by S1P promotes lymphocyte egress from lymphoid organs.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of Sphingosine-1-phosphate receptor 1 (S1PR1) by S1P promotes lymphocyte egress from lymphoid organs, a process critical for immune surveillance and T cell effector activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about S1PR1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "1cfb942e-5120-437c-bf70-7ccac98750e3",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C2",
+      "claim": "Multiple drugs that inhibit S1PR1 function are in clinical use for treating autoimmune diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple drugs that inhibit S1PR1 function are in use clinically for the treatment of autoimmune diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "f8d65e21-24f8-401c-b2b4-9e3c33b5e727",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C3",
+      "claim": "CD69 is an endogenous negative regulator of lymphocyte egress.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster of Differentiation 69 (CD69) is an endogenous negative regulator of lymphocyte egress that interacts with S1PR1 in cis to facilitate internalization and degradation of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "aea96d33-2803-45f5-aba4-dddc0bef04ea",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C4",
+      "claim": "CD69 interacts with S1PR1 in cis to facilitate internalization and degradation of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster of Differentiation 69 (CD69) is an endogenous negative regulator of lymphocyte egress that interacts with S1PR1 in cis to facilitate internalization and degradation of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "211e557e-4cb2-4c25-9982-30b9b9773c08",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C5",
+      "claim": "The mechanism by which CD69 causes S1PR1 internalization has been unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism by which CD69 causes S1PR1 internalization has been unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the abstract as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "5a2d9036-9aa4-46c6-baa3-dc1fcbfa52b2",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C6",
+      "claim": "The cryo-EM structure of CD69-bound S1PR1 coupled to heterotrimeric Gi complex was determined at 3.15 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the cryo-EM structure of CD69-bound S1PR1 coupled to the heterotrimeric Gi complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the structural data presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "51742923-56ea-4ae9-9b17-fdd246294746",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C7",
+      "claim": "The transmembrane helix of one protomer of CD69 homodimer contacts S1PR1-TM4.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane helix (TM) of one protomer of CD69 homodimer contacts the S1PR1-TM4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and shown in Figure 1C and Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "c08aa412-36cc-4e37-8aac-bed13ae71b90",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C8",
+      "claim": "CD69 binding allosterically induces the movement of S1PR1-TMs 5-6.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction allosterically induces the movement of S1PR1-TMs 5\u20136, directly activating the receptor to engage the heterotrimeric Gi.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "9a35836a-eb1f-42bc-9bd4-a97d96b43742",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C9",
+      "claim": "CD69 directly activates S1PR1 to engage heterotrimeric Gi.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction allosterically induces the movement of S1PR1-TMs 5\u20136, directly activating the receptor to engage the heterotrimeric Gi.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and supported by GTPase assay data in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "5fb187c3-c41c-4ccc-a489-9bb1621b7683",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C10",
+      "claim": "Mutations in key residues at the CD69-S1PR1 interface affect the interactions between CD69 and S1PR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in key residues at the interface affect the interactions between CD69 and S1PR1, as well as reduce the receptor internalization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and shown in Figure 2C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "c3c603b8-f578-4182-9231-f8b7347b15b9",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C11",
+      "claim": "Mutations in key residues at the CD69-S1PR1 interface reduce receptor internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in key residues at the interface affect the interactions between CD69 and S1PR1, as well as reduce the receptor internalization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "b4733529-be69-4251-a12d-82c99ca12808",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C12",
+      "claim": "CD69 acts in cis as a protein agonist of S1PR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our structural findings along with functional analyses demonstrate that CD69 acts in cis as a protein agonist of S1PR1, thereby promoting Gi-dependent S1PR1 internalization, loss of S1P gradient sensing, and inhibition of lymphocyte egress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract and supported by structural and functional data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "abeb8bea-b7e1-4faa-9ad0-e4f633133909",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C13",
+      "claim": "CD69 promotes Gi-dependent S1PR1 internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our structural findings along with functional analyses demonstrate that CD69 acts in cis as a protein agonist of S1PR1, thereby promoting Gi-dependent S1PR1 internalization, loss of S1P gradient sensing, and inhibition of lymphocyte egress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 4E-F showing PTX reduces CD69-mediated internalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "171615f5-dedb-44bb-9775-059c31570d21",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C14",
+      "claim": "CD69 causes loss of S1P gradient sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our structural findings along with functional analyses demonstrate that CD69 acts in cis as a protein agonist of S1PR1, thereby promoting Gi-dependent S1PR1 internalization, loss of S1P gradient sensing, and inhibition of lymphocyte egress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a consequence of CD69 action.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "3797af2d-3474-4929-957c-0c009e2f6e03",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C15",
+      "claim": "CD69 inhibits lymphocyte egress.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our structural findings along with functional analyses demonstrate that CD69 acts in cis as a protein agonist of S1PR1, thereby promoting Gi-dependent S1PR1 internalization, loss of S1P gradient sensing, and inhibition of lymphocyte egress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by prior literature cited in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "de268068-9718-48bb-a636-cb0befbb4b79",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C16",
+      "claim": "S1P plays an essential role in promoting lymphocyte egress from lymphoid organs into blood and lymph via interaction with S1PR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Sphingosine-1-phosphate (S1P) plays an essential role in the immune system by promoting the egress of lymphocytes from lymphoid organs into blood and lymph via a direct interaction with one of its five cognate G protein\u2013coupled receptors, S1PR1 (Baeyens and Schwab, 2020; Cartier and Hla, 2019; Cyster and Schwab, 2012; Pappu et al., 2007; Rosen et al., 2013; Spiegel and Milstien, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "aadcd36d-6cb8-45d2-bd24-ee90da884d0d",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C17",
+      "claim": "After egressing from lymphoid tissues, T and B lymphocytes travel to other lymphoid organs in a cycle of continual pathogen surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "After egressing from spleen, lymph nodes, or mucosal lymphoid tissues, T and B lymphocytes travel to other lymphoid organs in a cycle of continual pathogen surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "3cf11566-4555-4f4f-8492-706a399cec9b",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C18",
+      "claim": "During infection, there is a temporary shutdown of lymphocyte egress from responding lymphoid organs.",
+      "claim_type": "EXPLICIT",
+      "source": "When an infection occurs, there is a temporary shutdown of lymphocyte egress from the responding lymphoid organ(s) and this enables increased accumulation of lymphocytes and enhances the immune response (Cyster and Schwab, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "16812e7d-5430-47e7-a3b7-f3ef17f25ff3",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C19",
+      "claim": "Egress shutdown enables increased accumulation of lymphocytes and enhances the immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "When an infection occurs, there is a temporary shutdown of lymphocyte egress from the responding lymphoid organ(s) and this enables increased accumulation of lymphocytes and enhances the immune response (Cyster and Schwab, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "1d2ac299-aaa1-4c44-abe5-468717ee28b1",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C20",
+      "claim": "Egress shutdown is mediated by type I interferon inducing lymphocyte CD69 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Egress shutdown is mediated by type I interferon (IFN) inducing lymphocyte CD69 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "49e90436-29fd-4175-bcdc-865c2acd607d",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C21",
+      "claim": "CD69 is a type II transmembrane C-type lectin protein.",
+      "claim_type": "EXPLICIT",
+      "source": "CD69, a type II transmembrane C-type lectin protein, intrinsically inhibits the function of S1PR1 in T and B cells (Shiow et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "ded60ef9-0e3d-4108-941b-ec8ca6aba5ca",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C22",
+      "claim": "CD69 intrinsically inhibits the function of S1PR1 in T and B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CD69, a type II transmembrane C-type lectin protein, intrinsically inhibits the function of S1PR1 in T and B cells (Shiow et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "8599fafa-0089-4fbd-84a1-fa2cdd6b1e4a",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C23",
+      "claim": "CD69 regulates T cell egress from the thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "CD69 also regulates T cell egress from the thymus (Nakayama et al., 2002; Zachariah and Cyster, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "c6bdf54e-5c47-447a-a1e2-59bffea87db5",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C24",
+      "claim": "A disulfide bond in the extracellular domain links CD69 as a homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "A disulfide-bond in the extracellular domain links CD69 as a homodimer (Ziegler et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "37027075-22d5-4bec-8c53-59f134eebfb3",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C25",
+      "claim": "CD69 may associate with S1PR1 through interactions between their transmembrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies demonstrated that CD69 may associate with S1PR1 through interactions between their transmembrane domains (TMs) to facilitate S1PR1 internalization and degradation (Bankovich et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "be29ba9d-7978-4e67-a3eb-a13561fef408",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C26",
+      "claim": "CD69 binds S1PR1 but not the other S1PRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike S1P, CD69 has been shown to bind S1PR1 but not the other S1PRs (Bankovich et al., 2010; Jenne et al., 2009; Shiow et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "f7f7446b-94f4-4e1a-aecd-4f0435f10c3c",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C27",
+      "claim": "Several S1PR1 modulators (Fingolimod, Siponimod, Ozanimod, and Etrasimod) have been approved for treating multiple sclerosis and ulcerative colitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, several S1PR1 modulators (e.g. Fingolimod, also known as FTY720, Siponimod, Ozanimod, and Etrasimod), have been approved for treating the autoimmune diseases multiple sclerosis and ulcerative colitis (Brinkmann et al., 2010; Chun et al., 2021; Dal Buono et al., 2022; Kappos et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "564d7f00-889a-467a-952c-a53c0dd471a1",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C28",
+      "claim": "S1PR1 immunosuppressants act by inhibiting S1PR1 function and preventing autoimmune effector lymphocytes from exiting lymphoid organs.",
+      "claim_type": "EXPLICIT",
+      "source": "These immunosuppressants are believed to act by inhibiting S1PR1 function and thereby preventing autoimmune effector lymphocytes exiting lymphoid organs, blocking the autoimmune attack.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as the mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "b7a8854b-4ead-408e-b05e-1963c49c114d",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C29",
+      "claim": "Sphingosine or FTY720 is metabolically catalyzed by intracellular sphingosine kinases into the phosphorylated form.",
+      "claim_type": "EXPLICIT",
+      "source": "Either sphingosine or FTY720 is metabolically catalyzed by two intracellular sphingosine kinases into the phosphorylated form (S1P or FTY720-P) and then exported to the extracellular space via S1P transporters (Baeyens and Schwab, 2020; Spiegel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "e120781b-6d2f-471c-abf5-779cbfea1325",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C30",
+      "claim": "FTY720-P activates S1PR1 but causes persistent internalization and degradation of S1PR1.",
+      "claim_type": "EXPLICIT",
+      "source": "There, S1P binds to its receptors for initiation of the signal while FTY720-P activates the S1PR1 but causes a persistent internalization and degradation of S1PR1 to attenuate the signal (Brinkmann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "2a4c348e-9593-4943-9df1-3e08b548b995",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C31",
+      "claim": "Cryo-EM structures of S1PR1 complexed with different small molecule ligands have been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, cryogenic electron microscopy (cryo-EM) structures of S1PR1 complexed with different small molecule ligands have been determined (Liu et al., 2022; Xu et al., 2022; Yu et al., 2022; Yuan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "d61d8af2-925e-4f8c-a2d1-13c7fc0fb06e",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C32",
+      "claim": "The crystal structure of antagonist ML056-bound S1PR1 reveals its inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "The previously determined crystal structure of antagonist ML056-bound S1PR1 reveals its inactive state (Hanson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "ee3eeb1c-0c1f-4fa3-b4f4-a9a94d82bcfd",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C33",
+      "claim": "Addition of CD69 alone caused a similar amount of Gi activation as addition of S1P.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, addition of CD69 alone caused a similar amount of Gi activation as addition of S1P indicating that CD69 functions as a protein agonist of S1PR1 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "ce2b2a1f-bd90-4b4f-b7d2-c6f7ac3783f9",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C34",
+      "claim": "CD69 functions as a protein agonist of S1PR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, addition of CD69 alone caused a similar amount of Gi activation as addition of S1P indicating that CD69 functions as a protein agonist of S1PR1 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by GTPase assay data in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "f23322a3-ed90-4047-9e0d-95ab73a7492b",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C35",
+      "claim": "The overall structure of the CD69-bound S1PR1 coupled to heterotrimeric Gi was determined at 3.15 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structure of the CD69-bound S1PR1 coupled to heterotrimeric Gi was determined at 3.15 \u00c5 resolution by 293,516 particles (Figure 1\u2014figure supplement 1B\u2013F; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "2de01783-a42d-4827-92df-306066a81c86",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C36",
+      "claim": "The structure shows that one S1PR1 binds one CD69 homodimer and one Gi heterotrimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure shows that one S1PR1 binds one CD69 homodimer and one Gi heterotrimer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "b22e12c6-4649-4da0-a27a-636deff288a8",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C37",
+      "claim": "The intracellular loop 3 (ICL3) and the C-terminus of S1PR1 and the intracellular and extracellular domains of CD69 were not found in the cryo-EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular loop 3 (ICL3) and the C-terminus of S1PR1 and the intracellular and extracellular domains of CD69 were not found in the cryo-EM map indicating their flexibility in the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as an observation from the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "251af00b-ef2d-452c-a7d7-611896e8776d",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C38",
+      "claim": "The TMs of the CD69 homodimer were clearly defined in the map owing to their interactions with S1PR1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the TMs of the CD69 homodimer were clearly defined in the map owing to their interactions with S1PR1 (Figure 1B, Figure 1\u2014figure supplement 2A; the interacting TM helix is referred to as CD69-a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1B and Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "951d4151-8bd8-4733-9d6c-5090ae5c446b",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C39",
+      "claim": "There is no notable lipid ligand in the 7-TM bundle of S1PR1 in the CD69-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Because no lipid was supplemented into the protein during the expression and purification, there is no notable lipid ligand in the 7-TM bundle of S1PR1, which is different from the previous structural discoveries on S1PRs (Chen et al., 2022; Liu et al., 2022; Xu et al., 2022; Yu et al., 2022; Yuan et al., 2021; Zhao et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as an observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "4ed9f6af-e074-4fc5-bb83-4678c6b6733f",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C40",
+      "claim": "The entire CD69-S1PR1-Gi complex and the S1P bound S1PR1-Gi complex share a similar conformation with a root-mean-square deviation (RMSD) of 0.82 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural comparison shows that the entire complex and the S1P bound S1PR1-Gi complex share a similar conformation with a root-mean-square deviation (RMSD) of 0.82 \u00c5 (Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "34d1f6e2-dbf1-4f71-b828-380a5c00690f",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C41",
+      "claim": "F1614.43 in TM4 presents a notable shift due to CD69 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The receptors in both complexes can be aligned well; however, the F1614.43 in TM4 presents a notable shift due to CD69 binding (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "5eacc823-072c-4258-96c7-d29c2d88b147",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C42",
+      "claim": "The modeled S1PR1 bound to the other TM of the CD69 homodimer would sterically clash with the Gi\u03b1 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "We docked the S1PR1 bound to the other TM of the CD69 homodimer which showed that the modeled receptor would sterically clash with the Gi\u03b1 subunit (Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "32d9acce-c442-40fd-969a-8db8419d79e6",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C43",
+      "claim": "Only one receptor binds one CD69 homodimer in the presence of the heterotrimeric G-protein due to steric clash.",
+      "claim_type": "EXPLICIT",
+      "source": "This may explain why only one receptor binds one CD69 homodimer in the presence of the heterotrimeric G-protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as an inference from the structural modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "27aa5449-775a-4774-9d2c-d4e77d77aa83",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C44",
+      "claim": "The TM of one protomer of CD69 homodimer interacts with the TM4 of S1PR1.",
+      "claim_type": "EXPLICIT",
+      "source": "The TM of one protomer of CD69 homodimer interacts with the TM4 of S1PR1 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "bd14303b-bb20-402f-9355-770f7c24a395",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C45",
+      "claim": "The interface area between CD69 and S1PR1 TMs is about 600 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface area between TMs is about 600 \u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a measurement from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "681501f3-328a-4ae1-a475-82e5d5cbeef6",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C46",
+      "claim": "Residues V41, V45, V48, V49, T52, I56, I59, A60 of CD69 mediate its extensive interactions with S1PR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural analysis shows that residues V41, V45, V48, V49, T52, I56, I59, A60 of CD69 mediate its extensive interactions with the receptor (Figure 2A, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2A and Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "a3e3b142-9e2c-46bc-95cc-46b005988f28",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C47",
+      "claim": "Residues L1604.42, F1614.43, I1644.46, W1684.50, V1694.51, L1724.54, I1734.55, G1764.58, I1794.61 and M1804.62 of S1PR1-TM4 contribute to the interaction with CD69.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues L1604.42, F1614.43, I1644.46, W1684.50, V1694.51, L1724.54, I1734.55, G1764.58, I1794.61 and M1804.62 of S1PR1-TM4 contribute to the interaction with CD69 (Figure 2B, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2B and Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "b53e913c-2305-453e-a7e1-67a3f53f98e2",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C48",
+      "claim": "The TM of another CD69 protomer does not have any interactions with the receptor and heterotrimeric Gi protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the TM of another CD69 does not have any interactions with the receptor and heterotrimeric Gi protein (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "4f846bb0-6f9f-4d0b-8822-76e9350bdb65",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C49",
+      "claim": "The heterotrimeric Gi proteins in CD69-bound and S1P-bound S1PR1 complexes exhibit a similar state with a RMSD of 0.45 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Further structural comparison with the S1P-bound S1PR1-Gi complex indicates that the heterotrimeric Gi proteins in both complexes exhibit a similar state with a RMSD of 0.45 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "e7070282-2561-4ad4-9cff-c90c24e8f009",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C50",
+      "claim": "S1P and CD69 stimulate the receptor to engage the heterotrimeric Gi proteins in an analogous fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding implies that S1P and CD69 stimulate the receptor to engage the heterotrimeric Gi proteins in an analogous fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as an inference from the structural comparison.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "38b061f3-026f-4bb9-b7a1-204fe1d44862",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C51",
+      "claim": "S1PR1 mutants V1694.51Y and M1804.62Y present reduced binding to CD69 compared to wild-type S1PR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the wild-type S1PR1, two mutants (V1694.51Y and M1804.62Y) present reduced binding to CD69 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "d6328857-d409-4cdd-a500-82010b29ef03",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C52",
+      "claim": "S1PR1 mutants V1694.51Y and M1804.62Y retained normal activity in response to S1P.",
+      "claim_type": "EXPLICIT",
+      "source": "The TGF\u03b1 shedding assay showed that these two mutants retained normal activity in response to S1P (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "e5b2f34a-580f-4bfd-8fcc-7f47fd116893",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C53",
+      "claim": "The interaction between S1PR1 and CD69 mutants V48F/V49F or I56F/I59F is considerably attenuated.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-IP results show that the interaction between S1PR1 and either mutant is considerably attenuated, thus directly supporting the role of CD69-TM in the complex assembly (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "f03e0e21-c95c-49e6-ad58-6c4b2e7dddea",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C54",
+      "claim": "The activation of Gi proteins in the presence of CD69(V48F/V49F) or CD69(I56F/I59F) was decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results of our co-IP assays, the activation of Gi proteins in the presence of either variant was decreased (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "3077daa4-2f34-48d3-83d6-623c18d4f048",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C55",
+      "claim": "CD69(V48F/V49F) and CD69(I56F/I59F) were both reduced in their ability to downregulate S1PR1.",
+      "claim_type": "EXPLICIT",
+      "source": "In accord with the biochemical data, CD69(V48F/V49F), and CD69(I56F/I59F) were both reduced in their ability to downregulate S1PR1 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "4071c0d6-844e-487c-ba5c-78a0eec26f4a",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C56",
+      "claim": "The binding of CD69 induces a 4 \u00c5 shift at the intracellular end of TM4.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of CD69 induces a 4 \u00c5 shift at the intracellular end of TM4 causing the residues C1674.49, I1704.52, and L1744.56 in TM4 to face TM3 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "02429b32-a2c7-44b6-ae2b-fd1efb15c552",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C57",
+      "claim": "C1674.49 and I1704.52 have hydrophobic contacts with F1333.41 in TM3.",
+      "claim_type": "EXPLICIT",
+      "source": "C1674.49 and I1704.52 have hydrophobic contacts with the F1333.41 in TM3, and L1744.56 pushes the F2105.47 in TM5 towards the edge of the receptor to form the hydrophobic interactions with W2696.48 and F2736.52 in TM6 (Figure 3C, Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "8677f30e-35e4-43ea-82a8-63afee6cfa09",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C58",
+      "claim": "L1744.56 pushes F2105.47 in TM5 towards the edge of the receptor to form hydrophobic interactions with W2696.48 and F2736.52 in TM6.",
+      "claim_type": "EXPLICIT",
+      "source": "C1674.49 and I1704.52 have hydrophobic contacts with the F1333.41 in TM3, and L1744.56 pushes the F2105.47 in TM5 towards the edge of the receptor to form the hydrophobic interactions with W2696.48 and F2736.52 in TM6 (Figure 3C, Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "09489c0a-dafc-480e-ba09-6e16a1537787",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C59",
+      "claim": "These interactions trigger the notable movement of TM5 and TM6 allowing the opening of intracellular regions to engage the heterotrimeric Gi proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions trigger the notable movement of TM5 and TM6 allowing the opening of intracellular regions to engage the heterotrimeric Gi proteins (Figure 3A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3A and D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "756e4f7a-ca9b-4bc9-904b-b44940d0f891",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C60",
+      "claim": "Residues A1373.45, I1704.52, L1744.56, F2105.47, W2696.48, and F2736.52 are conserved among S1PR1, S1PR2 and S1PR3.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues A1373.45, I1704.52, L1744.56, F2105.47, W2696.48, and F2736.52 are conserved among S1PR1, S1PR2 and S1PR3, but not F1333.41 and C1674.49.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a sequence comparison observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "95599f60-1444-45a3-a80e-79188d32d7e0",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C61",
+      "claim": "F1333.41 and C1674.49 are not conserved among S1PR1, S1PR2 and S1PR3.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues A1373.45, I1704.52, L1744.56, F2105.47, W2696.48, and F2736.52 are conserved among S1PR1, S1PR2 and S1PR3, but not F1333.41 and C1674.49.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a sequence comparison observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "c9646808-b20e-4ae6-ba2c-7de881829427",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C62",
+      "claim": "Key residues crucial for S1P binding and receptor activation present similar conformations in S1P-bound S1PR1 and CD69-bound S1PR1 structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, further comparison shows that the key residues, which are crucial for the S1P binding and receptor activation, present similar conformations in the structures of S1P-bound S1PR1 and CD69-bound S1PR1, although S1P and CD69 have different structural natures and completely distinct binding sites in the receptor (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "bef1427c-fc9c-4b8d-b333-d6a14ff83bdd",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C63",
+      "claim": "CD69 specifically binds to S1PR1, and does not associate with S1PR2, S1PR3 or S1PR5.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work showed that CD69 specifically binds to S1PR1, and it does not associate with S1PR2, S1PR3 or S1PR5 (Bankovich et al., 2010; Jenne et al., 2009; Shiow et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "ff16c27e-036b-4a4f-8915-c93891b4d7fc",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C64",
+      "claim": "There is a very weak interaction between S1PR2 and CD69.",
+      "claim_type": "EXPLICIT",
+      "source": "To dissect the binding specificity of CD69, we carried out the co-IP assays to show a very weak interaction between S1PR2 and CD69 (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "92e4f635-bb0b-4cd4-81eb-0af8b0299afc",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C65",
+      "claim": "Residues L1574.51 and L1684.62 in S1PR2-TM4 are determinants for specific recognition of CD69.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sequence homology among five S1PRs is high, residues L1574.51 and L1684.62 in S1PR2-TM4 are not conserved with those in S1PR1 and are determinants for specific recognition of CD69 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "fd6c2424-4ea6-4c64-bffa-e6d7d601d010",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C66",
+      "claim": "S1PR2(L1574.51V/L1684.62M) could interact with CD69 albeit the interactions are weaker than that between S1PR1 and CD69.",
+      "claim_type": "EXPLICIT",
+      "source": "Our co-IP result clearly shows that S1PR2(L1574.51V/L1684.62M) could interact with CD69 albeit the interactions are weaker than that between S1PR1 and CD69 (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "be1d2ed3-ca29-4220-a34b-06c33f376313",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C67",
+      "claim": "The CD69 binding site is akin to that of allosteric agents which attach to receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the CD69 binding site is akin to that of the allosteric agents which attach to receptors (Draper-Joyce et al., 2021; Mao et al., 2020; Yang et al., 2022), although the nature of these agents and CD69 is quite different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "901eca96-2ac3-4961-8fae-3c066e1757bb",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C68",
+      "claim": "CD69 binds to the edge of S1PR1 and acts as a protein agonist to directly activate the receptor in the absence of any agonists in the orthosteric site.",
+      "claim_type": "EXPLICIT",
+      "source": "CD69 binds to the edge of S1PR1, but it acts as a protein agonist to directly activate the receptor in the absence of any agonists in the orthosteric site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "7206bddf-9311-4ff4-bdab-845f864fdb18",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C69",
+      "claim": "When Ex26 (an S1PR1 antagonist) was added to cells, only ~50% receptors were internalized compared to ~80% without Ex26.",
+      "claim_type": "EXPLICIT",
+      "source": "After 24 hr, the fluorescence images show that substantial receptors (~80%) have been internalized with CD69. However, when we added the Ex26, a potent S1PR1 antagonist (Cahalan et al., 2013), into the cells 6 hr after transfection, the images show that just ~50% receptors have been internalized (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "b6302ffd-2ce8-4393-b77d-cf1394834895",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C70",
+      "claim": "CD69-mediated S1PR1 activation could be reversed when the 7-TMs pocket is preoccupied by an antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that the CD69-mediated S1PR1 activation could be reversed when the 7-TMs pocket is preoccupied by an antagonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as an inference from the Ex26 experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "1277874f-fbbf-48ac-9fb1-f292ced229fd",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C71",
+      "claim": "Barbadin does not interfere with CD69-induced receptor internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that Barbadin does not interfere with CD69-induced receptor internalization (Figure 4C and D), but PTX could prevent half of the receptors from internalization (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "8882a74d-53ff-4f9b-b6d8-d814f65d176a",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C72",
+      "claim": "PTX could prevent half of the receptors from internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that Barbadin does not interfere with CD69-induced receptor internalization (Figure 4C and D), but PTX could prevent half of the receptors from internalization (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "3367b349-3f77-459f-9144-b66e667d7734",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C73",
+      "claim": "CD69 agonism of S1PR1 induces Gi-dependent internalization of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CD69 agonism of S1PR1 induces Gi-dependent internalization of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from the PTX experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "ecd66a3f-b895-4c25-a2a4-97946499d59b",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C74",
+      "claim": "Barbadin was effective in reducing FTY70-P-induced S1PR1 internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding also supports that Barbadin was effective in reducing FTY70-P-induced S1PR1 internalization (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "92e99d88-3911-40d6-9c20-d76bbfba2077",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C75",
+      "claim": "CD69 is strongly transcriptionally induced in lymphocytes within an hour of exposure to type I IFN, TLR ligands, or antigen receptor engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "As an immediate early gene, CD69 is strongly transcriptionally induced in lymphocytes within an hour of exposure to type I IFN, toll-like receptor (TLR) ligands, or antigen receptor engagement (Grigorova et al., 2010; Shiow et al., 2006; Ziegler et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "610d3f43-66e1-41a4-9616-16086d19e2d7",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C76",
+      "claim": "Following induction, CD69 protein engages S1PR1 as an agonist, causing S1PR1 internalization and loss of the ability to sense S1P gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Following induction, CD69 protein engages S1PR1 as an agonist, causing S1PR1 internalization and loss of the ability to sense S1P gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "47bf2fd8-dc71-45e6-a55a-8735bd591410",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C77",
+      "claim": "Even prior to internalization, CD69 disrupts S1PR1's egress promoting function by acting as a high concentration agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that even prior to internalization, CD69 disrupts S1PR1's egress promoting function by acting as a high concentration agonist and thus making the receptor 'blind' to S1P distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "a6243628-d760-4ec9-a10c-69875c227817",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C78",
+      "claim": "Correctly distributed S1P and correctly localized S1PR1 activation are critical for effective lymphocyte egress.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, our functional analysis reveals that CD69 could not synergize with S1P to trigger S1PR1 activation (Figure 4\u2014figure supplement 2). Previous work has shown the critical importance of correctly distributed S1P and thus correctly localized S1PR1 activation for effective lymphocyte egress (Schwab et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "14e026a6-386f-42fa-824c-7e769db41d95",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C79",
+      "claim": "CD69 could not synergize with S1P to trigger S1PR1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, our functional analysis reveals that CD69 could not synergize with S1P to trigger S1PR1 activation (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "98e59b62-5b02-4a43-ba07-b4f70bb078be",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C80",
+      "claim": "S1PR1 transmits signals needed for maintaining T cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "As well as promoting egress, S1PR1, transmits signals needed for maintaining T cell survival (Mendoza et al., 2017) and CD69 has been implicated in transmitting signals that influence T cell differentiation (Cibri\u00e1n and S\u00e1nchez-Madrid, 2017; Kimura et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "addcc025-30b5-4619-a376-559f53b56d4d",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C81",
+      "claim": "CD69 has been implicated in transmitting signals that influence T cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "As well as promoting egress, S1PR1, transmits signals needed for maintaining T cell survival (Mendoza et al., 2017) and CD69 has been implicated in transmitting signals that influence T cell differentiation (Cibri\u00e1n and S\u00e1nchez-Madrid, 2017; Kimura et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "15c99f9e-e653-4ff0-a593-ca60814ad29c",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C82",
+      "claim": "GRK2 and dynamin participate in S1PR1 internalization in response to S1P.",
+      "claim_type": "EXPLICIT",
+      "source": "GRK2 (Arnon et al., 2011; Oo et al., 2007; Watterson et al., 2002) and dynamin (Willinger et al., 2014) participate in S1PR1 internalization in response to S1P.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "c08479ca-39e3-4305-8225-5c676762f382",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C83",
+      "claim": "GRK2 and dynamin may have a role in CD69-mediated S1PR1 internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "In accord with these factors possibly having a role in CD69-mediated S1PR1 internalization, they have been shown to promote internalization of some receptors independently of \u03b2-arrestins (Moo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation with a supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "28092eee-b688-4eeb-b930-e8f8fcbebc7c",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C84",
+      "claim": "The selectivity of CD69 for S1PR1 is important for allowing activated CD69+ lymphocytes and natural killer cells to employ other S1PRs without interruption by CD69.",
+      "claim_type": "EXPLICIT",
+      "source": "The selectivity of CD69 for S1PR1 is important for allowing activated CD69+ lymphocytes and natural killer cells to employ other S1PRs, such as S1PR2 and S1PR5, to carry out functions without interruption by CD69 (Jenne et al., 2009; Laidlaw et al., 2019; Moriyama et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "dc87793d-8d53-4d2c-8376-d66a7756f13c",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C85",
+      "claim": "The lack of conservation of key residues in TM4 of S1PR2, S1PR5 and other S1PRs provides an explanation for CD69 selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of conservation of key residues that mediate the S1PR1-CD69 interaction in TM4 of S1PR2, S1PR5 and the other S1PRs provides an explanation for this selectivity (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "ee31e126-942a-44cc-a02d-0318b501e39a",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C86",
+      "claim": "This study provides the first example of GPCR activation by interaction in cis with a transmembrane ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we provide the first example of GPCR activation by interaction in cis with a transmembrane ligand and thereby explain the mechanism of lymphocyte egress shutdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "95a1eb6c-a90b-4b0b-9756-61582fd77068",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C87",
+      "claim": "The structure offers insights that may enable introduction of transcriptionally inducible GPCR switches into CAR-T cells and other engineered cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure also offers insights that may enable introduction of transcriptionally inducible GPCR switches into CAR-T cells and other engineered cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a potential application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "c954cffd-183b-4628-a234-e4bc728d61d2",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C88",
+      "claim": "Human S1PR1 and CD69 were expressed in HEK293 cells cultured in medium with lipid-deficient serum.",
+      "claim_type": "EXPLICIT",
+      "source": "Since serum contains an abundance of lipids including S1P, we expressed human S1PR1 or CD69 in HEK293 cells cultured in a medium with lipid-deficient serum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "0752f8e8-36e5-4d1b-b942-ef2eddb6702b",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C89",
+      "claim": "The interface area between CD69 and S1PR1 transmembrane domains is approximately 600 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface area between TMs is about 600 \u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a measurement from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "368c4d5f-ea56-4bbf-8fa6-7ef1dbb91830",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C90",
+      "claim": "RAMP1 binds CLR class B GPCR to form the CGRP receptor involved in migraine pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor activity-modifying protein 1 (RAMP1), a type I transmembrane domain protein, binds the calcitonin receptor-like receptor (CLR) class B GPCR to form the Calcitonin gene-related peptide (CGRP) receptor which is involved in the pathology of migraine (Russell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results with a supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "ad90937a-0e1f-4603-9cbc-bf59a82cb90a",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C91",
+      "claim": "The TM of RAMP1 interacts with TMs 3-5 of CLR.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of Gs-protein coupled CGRP receptor uncovers that TM of RAMP1 interacts with TMs 3\u20135 of CLR and the extracellular domains of RAMP1 and CLR have extensive interactions (Liang et al., 2018; Figure 1\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with a supporting citation and shown in Figure 1\u2014figure supplement 4A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "af14d8ac-7ecb-4bcd-9db4-0df4f4f99d49",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C92",
+      "claim": "Both CLR and RAMP1 contribute to the engagement of their agonist CGRP.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CLR and RAMP1 contribute to the engagement of their agonist CGRP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "899fe918-9661-4252-83ab-a633cf69dffc",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C93",
+      "claim": "The extracellular domain of CD69 is completely invisible in the complex and may not interact with the extracellular loops of S1PR1.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular domain of CD69 is completely invisible in the complex and may not interact with the extracellular loops of S1PR1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as an observation from the structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "c4226925-30cc-4963-9572-9c11de0e4e6b",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C94",
+      "claim": "mGlu2 employs TM4 to maintain its inactive dimeric state or TM6 to assemble as a homodimer in the presence of its agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "The metabotropic glutamate receptor 2 (mGlu2), a Class-C GPCR, employs TM4 to maintain its inactive dimeric state or TM6 to assemble as a homodimer in the presence of its agonist (Du et al., 2021; Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with a supporting citation and shown in Figure 1\u2014figure supplement 4B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "53013ac1-e0b4-4e77-a199-44876acdbbfc",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C95",
+      "claim": "TM5 plays a key role in the assembly of inactive mGlu2-mGlu7 heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of inactive mGlu2\u2013mGlu7 heterodimer shows that TM5 plays a key role in the complex assembly (Du et al., 2021; Figure 1\u2014figure supplement 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with a supporting citation and shown in Figure 1\u2014figure supplement 4C.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "4922c169-5d9d-4968-ba6f-3814479388f1",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C96",
+      "claim": "TM1 of the class D GPCR Ste2 is responsible for engaging the TM1 of another Ste2 to form a homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TM1 of the class D GPCR Ste2 is responsible for engaging the TM1 of another Ste2 to form a homodimer (Velazhahan et al., 2021; Figure 1\u2014figure supplement 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results with a supporting citation and shown in Figure 1\u2014figure supplement 4D.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "af5db275-0be1-4ffa-96fc-a4c3849ebea2",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "claim_id": "C97",
+      "claim": "GPCRs could employ distinct TMs to recruit their transmembrane binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings elucidate that GPCRs could employ distinct TMs to recruit their transmembrane binding partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results as a conclusion from comparing different GPCR structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0aa38f60-a3c5-4e09-b785-eb709e65390d",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of CD69-bound S1PR1 coupled to heterotrimeric Gi was determined at 3.15 \u00c5 resolution, revealing that one S1PR1 binds one CD69 homodimer and one Gi heterotrimer. The structure shows well-defined transmembrane helices of CD69 interacting with S1PR1, while the intracellular and extracellular domains of CD69 and certain S1PR1 regions were not resolved, indicating flexibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C35-C39 collectively describe the structural determination and key features of the CD69-S1PR1-Gi complex. The 3.15 \u00c5 resolution is appropriate for the level of detail described, the stoichiometry is clearly defined, and the observation of missing density for flexible regions is consistent with standard cryo-EM practice. The data in Table 1 and Figure 1 support these structural claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "c73c00c1-f416-4a29-b30e-5cd2ecb74740",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The transmembrane helix of one CD69 protomer contacts S1PR1-TM4 with an interface area of approximately 600 \u00c5\u00b2. Specific residues from both CD69 (V41, V45, V48, V49, T52, I56, I59, A60) and S1PR1-TM4 (L160, F161, I164, W168, V169, L172, I173, G176, I179, M180) mediate this interaction, while the other CD69 protomer does not interact with S1PR1 or Gi.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C44-C48 describe the detailed molecular interface between CD69 and S1PR1. The structural data in Figures 1C, 2A-B, and supplementary figures clearly show these interactions. The interface area measurement and specific residue identification are consistent with the resolution of the structure. The asymmetric binding (only one CD69 protomer interacting) is well-supported by the structural evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "5b098614-64f3-4d99-b49d-a679408b5d2e",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CD69 functions as a protein agonist of S1PR1, as demonstrated by GTPase assays showing that CD69 alone activates Gi to a similar extent as S1P, directly activating the receptor to engage heterotrimeric Gi.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C34, and C9 are supported by the GTPase-Glo assay data in Figure 1A, which shows comparable Gi activation between CD69 and S1P treatment. The statistical significance (****p<0.0001) and multiple replicates strengthen this conclusion. This functional data directly supports the structural interpretation that CD69 acts as an agonist.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "8b1ee7c0-a633-4058-8627-15c04a53f05d",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CD69 binding allosterically induces conformational changes in S1PR1, including a 4 \u00c5 shift at the intracellular end of TM4, leading to specific hydrophobic interactions that trigger movement of TM5 and TM6, thereby opening the intracellular region to engage Gi proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C56-C59 describe the allosteric mechanism of S1PR1 activation by CD69. The structural data in Figure 3 clearly shows these conformational changes and the cascade of interactions. The measurements (4 \u00c5 shift) and specific residue interactions are consistent with the resolution of the structure. The mechanistic interpretation is well-supported by the structural comparisons with inactive and active states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "efc9b5f0-df16-4ef3-99ea-f065f7d49ca9",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutations at key residues in the CD69-S1PR1 interface (S1PR1 V169Y, M180Y; CD69 V48F/V49F, I56F/I59F) reduce binding between CD69 and S1PR1, decrease Gi activation, and impair CD69-mediated S1PR1 internalization, while S1PR1 mutants retain normal S1P responsiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C51-C55 are supported by multiple complementary assays: co-IP (Figure 2C), GTPase activation (Figure 2E), TGF\u03b1 shedding (Figure 2D), and flow cytometry (Figure 2F). The mutations were rationally designed based on the structure, and the functional consequences validate the structural observations. The retention of S1P responsiveness in S1PR1 mutants (C52) is an important control showing specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "c62bf16c-f3ae-4e09-8931-f84edcab7acd",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CD69 promotes Gi-dependent S1PR1 internalization, as demonstrated by pertussis toxin (PTX) preventing approximately half of receptor internalization, while the \u03b2-arrestin inhibitor Barbadin does not interfere with CD69-induced internalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C71-C73 are supported by fluorescence microscopy data in Figure 4C-F showing differential effects of PTX and Barbadin on CD69-mediated S1PR1 internalization. The statistical significance (**p<0.01) and multiple replicates support the conclusion. This distinguishes the CD69-mediated pathway from the \u03b2-arrestin-dependent FTY720-P pathway (C74), providing mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "cf41f4a8-716a-4269-9b15-973445465828",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CD69 acts in cis as a protein agonist of S1PR1, representing the first example of GPCR activation by interaction in cis with a transmembrane ligand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C86 represent the central conclusion of the manuscript, integrating structural and functional data. The structural evidence (C6-C8, C44-C47, C56-C59) combined with functional validation (C33-C34, C51-C55, C71-C73) strongly support this novel mechanism. The comparison with other GPCR-transmembrane protein interactions (C90-C97) contextualizes the uniqueness of this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "3dfe6cc5-9c9d-4cca-9849-aa949546ed01",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The CD69-bound S1PR1-Gi complex adopts a conformation similar to the S1P-bound complex (RMSD 0.82 \u00c5 overall, 0.45 \u00c5 for Gi), with key residues for receptor activation showing similar conformations despite CD69 and S1P having different binding sites, suggesting analogous mechanisms of Gi engagement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41, C49-C50, C62 are supported by structural comparisons shown in Figures 1 and 3. The RMSD values are appropriate for the resolution, and the observation that different ligands produce similar active conformations is mechanistically important. The notable shift of F161 (C41) provides specific structural detail distinguishing the two activation modes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "29660011-ee1d-40e3-887b-6158b5f5fad9",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Structural modeling indicates that binding of S1PR1 to the second TM of the CD69 homodimer would cause steric clash with the Gi\u03b1 subunit, explaining why only one receptor binds one CD69 homodimer in the presence of heterotrimeric G-protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by the modeling shown in Figure 1\u2014figure supplement 3C. The steric clash explanation for the 1:1:1 stoichiometry is reasonable given the structural constraints. However, this is based on modeling rather than direct observation, which is appropriately acknowledged in the text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "3c66adbe-ebc4-43c2-8935-7048e887bef5",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CD69 specifically binds S1PR1 but shows only weak interaction with S1PR2. Residues L157 and L168 in S1PR2-TM4 (corresponding to V169 and M180 in S1PR1) are determinants for this specificity, as the S1PR2(L157V/L168M) mutant can interact with CD69, though more weakly than S1PR1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66, C85 are supported by co-IP data (Figure 3\u2014figure supplement 1A) and sequence analysis (Figure 3\u2014figure supplement 1B). The gain-of-function experiment with S1PR2 mutant provides strong evidence for the structural determinants of specificity. This explains the biological selectivity of CD69 for S1PR1 over other S1PRs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "9dff6441-93e8-4174-b664-7fa6b9999276",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The S1PR1 antagonist Ex26 partially reverses CD69-mediated receptor internalization, reducing internalization from ~80% to ~50%, indicating that CD69-mediated S1PR1 activation can be modulated when the orthosteric pocket is occupied by an antagonist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 are supported by fluorescence microscopy data in Figure 4A-B with high statistical significance (****p<0.0001). This experiment provides important mechanistic insight into the relationship between orthosteric and allosteric activation. The partial (not complete) reversal suggests complex interplay between the two binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "e204e42e-7389-4c33-bbbb-bf348f32ff04",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CD69 could not synergize with S1P to trigger S1PR1 activation, as shown by functional analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by data in Figure 4\u2014figure supplement 2 showing no additive or synergistic effect when both CD69 and S1P are present. This is consistent with the model that CD69 acts as a saturating agonist, making the receptor insensitive to S1P gradients.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "12221c49-5c7a-4a67-b8bf-0266a2d0c682",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Residues A137, I170, L174, F210, W269, and F273 are conserved among S1PR1, S1PR2, and S1PR3, while F133 and C167 are not conserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 describe sequence conservation patterns relevant to the activation mechanism. This is a straightforward observation from sequence alignment that supports the structural interpretation of which residues are critical for the conserved activation mechanism versus CD69 specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "e21d6420-e6e7-4193-b86f-5cb71e4fcdcd",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The CD69 binding site is similar to allosteric modulator binding sites in other GPCRs, but CD69 uniquely acts as a protein agonist that directly activates S1PR1 in the absence of orthosteric agonists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by structural comparisons with other GPCRs (Figure 3\u2014figure supplement 2). The comparison contextualizes the CD69 binding mode within the broader GPCR field while highlighting its unique functional properties. The distinction between allosteric modulation and direct agonism is mechanistically important.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "f32d8a50-eb0f-4183-9336-1b28f76271e6",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Barbadin was effective in reducing FTY720-P-induced S1PR1 internalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is supported by data in Figure 4\u2014figure supplement 1 showing that Barbadin reduces FTY720-P-mediated internalization. This serves as a positive control demonstrating that Barbadin is functional in this system, strengthening the conclusion that CD69-mediated internalization is \u03b2-arrestin-independent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "79de3fb5-5bd3-4354-995b-b1c1ea79c74b",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Comparison with other GPCR-transmembrane protein interactions (RAMP1-CLR, mGlu2 dimers, mGlu2-mGlu7 heterodimer, Ste2 homodimer) reveals that GPCRs employ distinct transmembrane helices to recruit binding partners, with CD69-S1PR1 being unique in that the CD69 extracellular domain does not interact with S1PR1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C97 provide important context by comparing the CD69-S1PR1 interaction with other known GPCR-transmembrane protein complexes. These comparisons are based on published structures (properly cited) and highlight the unique features of the CD69-S1PR1 interaction, particularly the lack of extracellular domain involvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "6e4b99c9-af30-4845-a071-5ce15607c8f6",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "CD69 causes loss of S1P gradient sensing and inhibits lymphocyte egress. Following induction, CD69 engages S1PR1 as an agonist, causing internalization and loss of gradient sensing ability, potentially by acting as a high concentration agonist that makes the receptor 'blind' to S1P distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C14-C15, C76-C77 represent mechanistic interpretations extending beyond the direct experimental data. While C76 is a reasonable inference from the structural and internalization data, C77 is explicitly stated as speculation. The loss of gradient sensing (C14) is inferred rather than directly demonstrated. These claims require additional experiments (e.g., chemotaxis assays, in vivo egress studies) for full validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "0bb969e2-0c40-4902-bd82-80d8d3cbe385",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "GRK2 and dynamin may have a role in CD69-mediated S1PR1 internalization, as they have been shown to promote internalization of some receptors independently of \u03b2-arrestins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C83 is explicitly presented as speculation in the discussion. While the authors cite evidence that GRK2 and dynamin can act independently of \u03b2-arrestins, no direct experiments testing their role in CD69-mediated internalization are presented. This remains a hypothesis requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "078149a0-df89-4e16-90eb-17f7293c0f98",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The structure offers insights that may enable introduction of transcriptionally inducible GPCR switches into CAR-T cells and other engineered cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C87 is a speculative statement about potential future applications. While the structural insights could theoretically inform such engineering efforts, no experimental evidence or specific design principles are provided to support this application. This is appropriately framed as a possibility rather than a demonstrated capability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context of S1PR1 signaling, CD69 function, lymphocyte egress, clinical relevance of S1PR1 modulators, and prior structural work on S1PRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C16-C32, C75, C78, C80-C82, C84 represent established knowledge from prior literature, appropriately cited throughout the manuscript. These provide essential context for interpreting the novel findings but are not new results from this study. They are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    },
+    {
+      "id": "ab1e9631-23ef-487a-a868-79162a793196",
+      "content_id": "2921e1d0-0707-4a86-b259-c0e37cd5c6d9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Human S1PR1 and CD69 were expressed in HEK293 cells cultured in medium with lipid-deficient serum to avoid contamination with endogenous S1P.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 describes a critical methodological detail that ensures the structural studies examine CD69-mediated activation without confounding effects from endogenous S1P. This is a sound experimental design choice that strengthens the interpretation of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:44.416640Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5a2d9036-9aa4-46c6-baa3-dc1fcbfa52b2",
+      "result_id": "0aa38f60-a3c5-4e09-b785-eb709e65390d"
+    },
+    {
+      "claim_id": "f23322a3-ed90-4047-9e0d-95ab73a7492b",
+      "result_id": "0aa38f60-a3c5-4e09-b785-eb709e65390d"
+    },
+    {
+      "claim_id": "2de01783-a42d-4827-92df-306066a81c86",
+      "result_id": "0aa38f60-a3c5-4e09-b785-eb709e65390d"
+    },
+    {
+      "claim_id": "b22e12c6-4649-4da0-a27a-636deff288a8",
+      "result_id": "0aa38f60-a3c5-4e09-b785-eb709e65390d"
+    },
+    {
+      "claim_id": "251af00b-ef2d-452c-a7d7-611896e8776d",
+      "result_id": "0aa38f60-a3c5-4e09-b785-eb709e65390d"
+    },
+    {
+      "claim_id": "951d4151-8bd8-4733-9d6c-5090ae5c446b",
+      "result_id": "0aa38f60-a3c5-4e09-b785-eb709e65390d"
+    },
+    {
+      "claim_id": "51742923-56ea-4ae9-9b17-fdd246294746",
+      "result_id": "c73c00c1-f416-4a29-b30e-5cd2ecb74740"
+    },
+    {
+      "claim_id": "27aa5449-775a-4774-9d2c-d4e77d77aa83",
+      "result_id": "c73c00c1-f416-4a29-b30e-5cd2ecb74740"
+    },
+    {
+      "claim_id": "bd14303b-bb20-402f-9355-770f7c24a395",
+      "result_id": "c73c00c1-f416-4a29-b30e-5cd2ecb74740"
+    },
+    {
+      "claim_id": "681501f3-328a-4ae1-a475-82e5d5cbeef6",
+      "result_id": "c73c00c1-f416-4a29-b30e-5cd2ecb74740"
+    },
+    {
+      "claim_id": "a3e3b142-9e2c-46bc-95cc-46b005988f28",
+      "result_id": "c73c00c1-f416-4a29-b30e-5cd2ecb74740"
+    },
+    {
+      "claim_id": "b53e913c-2305-453e-a7e1-67a3f53f98e2",
+      "result_id": "c73c00c1-f416-4a29-b30e-5cd2ecb74740"
+    },
+    {
+      "claim_id": "ee3eeb1c-0c1f-4fa3-b4f4-a9a94d82bcfd",
+      "result_id": "5b098614-64f3-4d99-b49d-a679408b5d2e"
+    },
+    {
+      "claim_id": "ce2b2a1f-bd90-4b4f-b7d2-c6f7ac3783f9",
+      "result_id": "5b098614-64f3-4d99-b49d-a679408b5d2e"
+    },
+    {
+      "claim_id": "9a35836a-eb1f-42bc-9bd4-a97d96b43742",
+      "result_id": "5b098614-64f3-4d99-b49d-a679408b5d2e"
+    },
+    {
+      "claim_id": "c08aa412-36cc-4e37-8aac-bed13ae71b90",
+      "result_id": "8b1ee7c0-a633-4058-8627-15c04a53f05d"
+    },
+    {
+      "claim_id": "4071c0d6-844e-487c-ba5c-78a0eec26f4a",
+      "result_id": "8b1ee7c0-a633-4058-8627-15c04a53f05d"
+    },
+    {
+      "claim_id": "02429b32-a2c7-44b6-ae2b-fd1efb15c552",
+      "result_id": "8b1ee7c0-a633-4058-8627-15c04a53f05d"
+    },
+    {
+      "claim_id": "8677f30e-35e4-43ea-82a8-63afee6cfa09",
+      "result_id": "8b1ee7c0-a633-4058-8627-15c04a53f05d"
+    },
+    {
+      "claim_id": "09489c0a-dafc-480e-ba09-6e16a1537787",
+      "result_id": "8b1ee7c0-a633-4058-8627-15c04a53f05d"
+    },
+    {
+      "claim_id": "5fb187c3-c41c-4ccc-a489-9bb1621b7683",
+      "result_id": "efc9b5f0-df16-4ef3-99ea-f065f7d49ca9"
+    },
+    {
+      "claim_id": "c3c603b8-f578-4182-9231-f8b7347b15b9",
+      "result_id": "efc9b5f0-df16-4ef3-99ea-f065f7d49ca9"
+    },
+    {
+      "claim_id": "38b061f3-026f-4bb9-b7a1-204fe1d44862",
+      "result_id": "efc9b5f0-df16-4ef3-99ea-f065f7d49ca9"
+    },
+    {
+      "claim_id": "d6328857-d409-4cdd-a500-82010b29ef03",
+      "result_id": "efc9b5f0-df16-4ef3-99ea-f065f7d49ca9"
+    },
+    {
+      "claim_id": "e5b2f34a-580f-4bfd-8fcc-7f47fd116893",
+      "result_id": "efc9b5f0-df16-4ef3-99ea-f065f7d49ca9"
+    },
+    {
+      "claim_id": "f03e0e21-c95c-49e6-ad58-6c4b2e7dddea",
+      "result_id": "efc9b5f0-df16-4ef3-99ea-f065f7d49ca9"
+    },
+    {
+      "claim_id": "3077daa4-2f34-48d3-83d6-623c18d4f048",
+      "result_id": "efc9b5f0-df16-4ef3-99ea-f065f7d49ca9"
+    },
+    {
+      "claim_id": "abeb8bea-b7e1-4faa-9ad0-e4f633133909",
+      "result_id": "c62bf16c-f3ae-4e09-8931-f84edcab7acd"
+    },
+    {
+      "claim_id": "1277874f-fbbf-48ac-9fb1-f292ced229fd",
+      "result_id": "c62bf16c-f3ae-4e09-8931-f84edcab7acd"
+    },
+    {
+      "claim_id": "8882a74d-53ff-4f9b-b6d8-d814f65d176a",
+      "result_id": "c62bf16c-f3ae-4e09-8931-f84edcab7acd"
+    },
+    {
+      "claim_id": "3367b349-3f77-459f-9144-b66e667d7734",
+      "result_id": "c62bf16c-f3ae-4e09-8931-f84edcab7acd"
+    },
+    {
+      "claim_id": "b4733529-be69-4251-a12d-82c99ca12808",
+      "result_id": "cf41f4a8-716a-4269-9b15-973445465828"
+    },
+    {
+      "claim_id": "ee31e126-942a-44cc-a02d-0318b501e39a",
+      "result_id": "cf41f4a8-716a-4269-9b15-973445465828"
+    },
+    {
+      "claim_id": "4ed9f6af-e074-4fc5-bb83-4678c6b6733f",
+      "result_id": "3dfe6cc5-9c9d-4cca-9849-aa949546ed01"
+    },
+    {
+      "claim_id": "34d1f6e2-dbf1-4f71-b828-380a5c00690f",
+      "result_id": "3dfe6cc5-9c9d-4cca-9849-aa949546ed01"
+    },
+    {
+      "claim_id": "4f846bb0-6f9f-4d0b-8822-76e9350bdb65",
+      "result_id": "3dfe6cc5-9c9d-4cca-9849-aa949546ed01"
+    },
+    {
+      "claim_id": "e7070282-2561-4ad4-9cff-c90c24e8f009",
+      "result_id": "3dfe6cc5-9c9d-4cca-9849-aa949546ed01"
+    },
+    {
+      "claim_id": "c9646808-b20e-4ae6-ba2c-7de881829427",
+      "result_id": "3dfe6cc5-9c9d-4cca-9849-aa949546ed01"
+    },
+    {
+      "claim_id": "5eacc823-072c-4258-96c7-d29c2d88b147",
+      "result_id": "29660011-ee1d-40e3-887b-6158b5f5fad9"
+    },
+    {
+      "claim_id": "32d9acce-c442-40fd-969a-8db8419d79e6",
+      "result_id": "29660011-ee1d-40e3-887b-6158b5f5fad9"
+    },
+    {
+      "claim_id": "bef1427c-fc9c-4b8d-b333-d6a14ff83bdd",
+      "result_id": "3c66adbe-ebc4-43c2-8935-7048e887bef5"
+    },
+    {
+      "claim_id": "ff16c27e-036b-4a4f-8915-c93891b4d7fc",
+      "result_id": "3c66adbe-ebc4-43c2-8935-7048e887bef5"
+    },
+    {
+      "claim_id": "92e4f635-bb0b-4cd4-81eb-0af8b0299afc",
+      "result_id": "3c66adbe-ebc4-43c2-8935-7048e887bef5"
+    },
+    {
+      "claim_id": "fd6c2424-4ea6-4c64-bffa-e6d7d601d010",
+      "result_id": "3c66adbe-ebc4-43c2-8935-7048e887bef5"
+    },
+    {
+      "claim_id": "dc87793d-8d53-4d2c-8376-d66a7756f13c",
+      "result_id": "3c66adbe-ebc4-43c2-8935-7048e887bef5"
+    },
+    {
+      "claim_id": "7206bddf-9311-4ff4-bdab-845f864fdb18",
+      "result_id": "9dff6441-93e8-4174-b664-7fa6b9999276"
+    },
+    {
+      "claim_id": "b6302ffd-2ce8-4393-b77d-cf1394834895",
+      "result_id": "9dff6441-93e8-4174-b664-7fa6b9999276"
+    },
+    {
+      "claim_id": "14e026a6-386f-42fa-824c-7e769db41d95",
+      "result_id": "e204e42e-7389-4c33-bbbb-bf348f32ff04"
+    },
+    {
+      "claim_id": "756e4f7a-ca9b-4bc9-904b-b44940d0f891",
+      "result_id": "12221c49-5c7a-4a67-b8bf-0266a2d0c682"
+    },
+    {
+      "claim_id": "95599f60-1444-45a3-a80e-79188d32d7e0",
+      "result_id": "12221c49-5c7a-4a67-b8bf-0266a2d0c682"
+    },
+    {
+      "claim_id": "be1d2ed3-ca29-4220-a34b-06c33f376313",
+      "result_id": "e21d6420-e6e7-4193-b86f-5cb71e4fcdcd"
+    },
+    {
+      "claim_id": "901eca96-2ac3-4961-8fae-3c066e1757bb",
+      "result_id": "e21d6420-e6e7-4193-b86f-5cb71e4fcdcd"
+    },
+    {
+      "claim_id": "ecd66a3f-b895-4c25-a2a4-97946499d59b",
+      "result_id": "f32d8a50-eb0f-4183-9336-1b28f76271e6"
+    },
+    {
+      "claim_id": "368c4d5f-ea56-4bbf-8fa6-7ef1dbb91830",
+      "result_id": "79de3fb5-5bd3-4354-995b-b1c1ea79c74b"
+    },
+    {
+      "claim_id": "ad90937a-0e1f-4603-9cbc-bf59a82cb90a",
+      "result_id": "79de3fb5-5bd3-4354-995b-b1c1ea79c74b"
+    },
+    {
+      "claim_id": "af14d8ac-7ecb-4bcd-9db4-0df4f4f99d49",
+      "result_id": "79de3fb5-5bd3-4354-995b-b1c1ea79c74b"
+    },
+    {
+      "claim_id": "899fe918-9661-4252-83ab-a633cf69dffc",
+      "result_id": "79de3fb5-5bd3-4354-995b-b1c1ea79c74b"
+    },
+    {
+      "claim_id": "c4226925-30cc-4963-9572-9c11de0e4e6b",
+      "result_id": "79de3fb5-5bd3-4354-995b-b1c1ea79c74b"
+    },
+    {
+      "claim_id": "53013ac1-e0b4-4e77-a199-44876acdbbfc",
+      "result_id": "79de3fb5-5bd3-4354-995b-b1c1ea79c74b"
+    },
+    {
+      "claim_id": "4922c169-5d9d-4968-ba6f-3814479388f1",
+      "result_id": "79de3fb5-5bd3-4354-995b-b1c1ea79c74b"
+    },
+    {
+      "claim_id": "af5db275-0be1-4ffa-96fc-a4c3849ebea2",
+      "result_id": "79de3fb5-5bd3-4354-995b-b1c1ea79c74b"
+    },
+    {
+      "claim_id": "171615f5-dedb-44bb-9775-059c31570d21",
+      "result_id": "6e4b99c9-af30-4845-a071-5ce15607c8f6"
+    },
+    {
+      "claim_id": "3797af2d-3474-4929-957c-0c009e2f6e03",
+      "result_id": "6e4b99c9-af30-4845-a071-5ce15607c8f6"
+    },
+    {
+      "claim_id": "610d3f43-66e1-41a4-9616-16086d19e2d7",
+      "result_id": "6e4b99c9-af30-4845-a071-5ce15607c8f6"
+    },
+    {
+      "claim_id": "47bf2fd8-dc71-45e6-a55a-8735bd591410",
+      "result_id": "6e4b99c9-af30-4845-a071-5ce15607c8f6"
+    },
+    {
+      "claim_id": "c08479ca-39e3-4305-8225-5c676762f382",
+      "result_id": "0bb969e2-0c40-4902-bd82-80d8d3cbe385"
+    },
+    {
+      "claim_id": "95a1eb6c-a90b-4b0b-9756-61582fd77068",
+      "result_id": "078149a0-df89-4e16-90eb-17f7293c0f98"
+    },
+    {
+      "claim_id": "28d1b7cb-0d68-49dc-87c0-008061b752b4",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "1cfb942e-5120-437c-bf70-7ccac98750e3",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "f8d65e21-24f8-401c-b2b4-9e3c33b5e727",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "aea96d33-2803-45f5-aba4-dddc0bef04ea",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "211e557e-4cb2-4c25-9982-30b9b9773c08",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "de268068-9718-48bb-a636-cb0befbb4b79",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "aadcd36d-6cb8-45d2-bd24-ee90da884d0d",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "3cf11566-4555-4f4f-8492-706a399cec9b",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "16812e7d-5430-47e7-a3b7-f3ef17f25ff3",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "1d2ac299-aaa1-4c44-abe5-468717ee28b1",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "49e90436-29fd-4175-bcdc-865c2acd607d",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "ded60ef9-0e3d-4108-941b-ec8ca6aba5ca",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "8599fafa-0089-4fbd-84a1-fa2cdd6b1e4a",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "c6bdf54e-5c47-447a-a1e2-59bffea87db5",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "37027075-22d5-4bec-8c53-59f134eebfb3",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "be29ba9d-7978-4e67-a3eb-a13561fef408",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "f7f7446b-94f4-4e1a-aecd-4f0435f10c3c",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "564d7f00-889a-467a-952c-a53c0dd471a1",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "b7a8854b-4ead-408e-b05e-1963c49c114d",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "e120781b-6d2f-471c-abf5-779cbfea1325",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "2a4c348e-9593-4943-9df1-3e08b548b995",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "d61d8af2-925e-4f8c-a2d1-13c7fc0fb06e",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "92e99d88-3911-40d6-9c20-d76bbfba2077",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "a6243628-d760-4ec9-a10c-69875c227817",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "98e59b62-5b02-4a43-ba07-b4f70bb078be",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "addcc025-30b5-4619-a376-559f53b56d4d",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "15c99f9e-e653-4ff0-a593-ca60814ad29c",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "28092eee-b688-4eeb-b930-e8f8fcbebc7c",
+      "result_id": "03712b7c-91fa-4e5e-9875-f9d20858a9d8"
+    },
+    {
+      "claim_id": "c954cffd-183b-4628-a234-e4bc728d61d2",
+      "result_id": "ab1e9631-23ef-487a-a868-79162a793196"
+    }
+  ],
+  "comparisons": []
+}

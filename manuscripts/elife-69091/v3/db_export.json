@@ -1,0 +1,2243 @@
+{
+  "submission": {
+    "id": "b09dbbd7-a180-416c-b837-3a85d080e624",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:55:26.678955Z",
+    "updated_at": "2025-12-03T06:55:26.678955Z"
+  },
+  "content": [
+    {
+      "id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "submission_id": "b09dbbd7-a180-416c-b837-3a85d080e624",
+      "content_type": "manuscript",
+      "content_text": "# N501Y mutation of spike protein in SARS-CoV-2 strengthens its binding to receptor ACE2\n\n## Authors\n\n- Fang Tian<sup>1</sup> ([ORCID: 0000-0002-4212-6328](https://orcid.org/0000-0002-4212-6328))\n- Bei Tong<sup>2</sup> ([ORCID: 0000-0002-6863-6019](https://orcid.org/0000-0002-6863-6019)) \u2020\n- Liang Sun<sup>3</sup>\n- Shengchao Shi<sup>1</sup>\n- Bin Zheng<sup>1</sup>\n- Zibin Wang<sup>3</sup>\n- Xianchi Dong<sup>3</sup> \u2020\n- Peng Zheng<sup>1</sup> ([ORCID: 0000-0003-4792-6364](https://orcid.org/0000-0003-4792-6364)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Coordination Chemistry, Chemistry and Biomedicine Innovation Center (ChemBIC), School of Chemistry and Chemical Engineering, Nanjing University Nanjing China\n2. Institute of Botany, Jiangsu Province and Chinese Academy of Sciences Nanjing China\n3. State Key Laboratory of Pharmaceutical Biotechnology, School of Life Sciences, Nanjing University Nanjing China\n4. Engineering Research Center of Protein and Peptide Medicine, Ministry of Education Nanjing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nSARS-CoV-2 has been spreading around the world for the past year. Recently, several variants such as B.1.1.7 (alpha), B.1.351 (beta), and P.1 (gamma), which share a key mutation N501Y on the receptor-binding domain (RBD), appear to be more infectious to humans. To understand the underlying mechanism, we used a cell surface-binding assay, a kinetics study, a single-molecule technique, and a computational method to investigate the interaction between these RBD (mutations) and ACE2. Remarkably, RBD with the N501Y mutation exhibited a considerably stronger interaction, with a faster association rate and a slower dissociation rate. Atomic force microscopy (AFM)-based single-molecule force microscopy (SMFS) consistently quantified the interaction strength of RBD with the mutation as having increased binding probability and requiring increased unbinding force. Molecular dynamics simulations of RBD\u2013ACE2 complexes indicated that the N501Y mutation introduced additional \u03c0-\u03c0 and \u03c0-cation interactions that could explain the changes observed by force microscopy. Taken together, these results suggest that the reinforced RBD\u2013ACE2 interaction that results from the N501Y mutation in the RBD should play an essential role in the higher rate of transmission of SARS-CoV-2 variants, and that future mutations in the RBD of the virus should be under surveillance.\n\n## Introduction\n\nOver the past 20 years, coronaviruses have posed severe threats to public health. In 2003, severe acute respiratory syndrome coronavirus (SARS-CoV-1) emerged in humans after being transferred from an animal reservoir and infected over 8000 people with a fatality rate of ~10% fatality rate (Ksiazek et al., 2003; Florindo et al., 2020). Middle East respiratory syndrome coronavirus (MERS-CoV) has infected over 1700 people with a fatality rate of ~36% since 2012 (Zaki et al., 2012). In late December 2019, a novel coronavirus, called severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was identified as the cause of an outbreak of a new respiratory illness named COVID-19. SARS-CoV-2 has caused more than 4 million deaths to date. Considerable efforts have been made to understand its molecule mechanism.\n\nCoronaviruses are large, enveloped, positive-stranded RNA viruses belonging to the coronaviridae family, which comprises four genera: alpha-coronaviruses, beta-coronaviruses, gamma-coronaviruses, and delta-coronaviruses (Zumla et al., 2016). SARS-CoV-2, SARS-CoV-1, and MERS-CoV, which infect mammalians (Wu et al., 2020), are beta-coronaviruses. Envelope-anchored spike proteins are capable of mediating coronavirus entry into host cells by first binding to a specific host receptor and then fusing the viral and host membranes (Wu et al., 2020; Yuan et al., 2017). The coronavirus spike protein, a class I fusion protein, is synthesized as a precursor single polypeptide chain consisting of three segments: a large ectodomain, a single-pass transmembrane anchor, and a short intracellular tail (Figure 1A). After interacting with the host receptor, the spike protein is cleaved into an amino-terminal subunit (S1) and a carboxyl-terminal subunit (S2) by host furin-like proteases (Yuan et al., 2017; Li, 2016; Lan et al., 2020). The receptor-binding domain (RBD) located in the C-terminal region of the S1 subunit (S1 CTD) is responsible for recognizing and binding the host receptor and is critical in determining the cell tropism, host range, and zoonotic transmission of coronaviruses (Wu et al., 2020; Li, 2016). The S2 subunit contains a hydrophobic fusion loop for membrane fusion. Cryo-EM studies have illuminated the prefusion and postfusion structures of the SARS-CoV-1 and SARS-CoV-2 spike proteins, implying that coronaviruses undergo conformational changes during infection. The spike protein forms a clove-shaped homotrimer with three S1 heads and a trimeric S2 stalk. Structural comparisons indicated that spike protein utilizes the CTD1 (N-terminal domain in CTD) as the RBD, which changes from the \u2018down\u2019 conformation to the \u2018up\u2019 conformation and then converts from the inactivated state to the activated state to allow for receptor binding, and possibly also to initiate subsequent conformational changes of the S2 subunits to mediate membrane fusion (Yuan et al., 2017; Li, 2016; Lan et al., 2020; Kirchdoerfer et al., 2018). The binding of spike RBD to SARS-CoV-2 and ACE2 is the first step in viral entry into the host cell. Thus, the majority of vaccines and neutralizing antibodies that are under development target this region.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig1-v3.jpg)\n\n**Figure 1.:** (A) Domain architecture of the SARS-CoV-2 spike monomer. NTD, N-terminal domain; RBD, receptor-binding domain; SD1, subdomain 1; SD2, subdomain 2; FP, fusion peptide; HR1, heptad repeat 1; CH, central helix; CD, connector domain; HR2, heptad repeat 2; TM, transmembrane region; CT, C-terminal. (B) Sequence alignment of RBD from SARS-CoV-2, B.1.1.7, and B.1.351 variant spike proteins. The N501Y, K417N, and E484K mutations are highlighted in red with a *. Cysteines forming disulfide bonds are marked in orange. (C\u2013E) The interface of ACE2 (cyan) in complex with spike RBD from SARS-CoV-2 (violet), B.1.1.7 lineage (yellow), and B.1.351 lineage (green). Residues 501, 500, 417, 487, and 484 from the RBD and the mutant RBD, and the contacting residues from ACE2 (Y41, K353, D355, D30, and Y83) are shown in sticks. Hydrogen bonds are shown in dash lines. (F) Representative images of ACE2\u2013mCherry (red) HEK293 cells stained with 100 nM AlexaFluor488-labeled RBD (green). (G) Saturated binding of AlexaFluor488-labeled RBD to cell-surface ACE2. NS, non-specific. (H) Series-diluted RBD and RBD mutants were incubated with ACE2-expressing cells in the presence of AlexaFluor488-labeled RBD protein (100 nM). Concentrations used for unlabeled RBD and RBD mutants were from 5 \u03bcM to 0.25 nM with threefold dilution. Kd values were calculated using the Cheng\u2013Prusoff equation.\n\nRecently, several variants with increased transmissibility have been found. The alpha variant (B.1.1.7 lineage) was first detected in the United Kingdom in September 2020, and another variant (B.1.351 lineage, beta) was first detected in October 2020 in the Republic of South Africa (Rahimi and Talebi Bezmin Abadi, 2021; Greaney et al., 2021; CNBC, 2021). Both of these mutants carry an N501Y mutation, and the B.1.351 lineage has two additional mutations (K417N and E484K) within the RBD region (Figure 1B,C; Leung et al., 2021; Tu et al., 2021). Recent data suggest that the FDA-authorized mRNA vaccines continued to induce a high level of neutralization against the B.1.1.7 variant, but a lower level against B.1.351 variants. Several researchers have assessed the neutralization potency of numerous antibodies against the two new variants. Their data suggest that some neutralizing antibodies in phase II/III clinical trials were not able to retain their neutralizing capability against the B.1.351 variant. As these mutations are within the RBD region, an understanding of the mechanism that allows the new variants to bind to the ACE2 receptor is of great value.\n\nThe structure of the RBD\u2013ACE2 complex showed that extensive interactions are formed between RBD and ACE2 (Lu et al., 2020; Bauer et al., 2020). To understand the potential role of the RBD mutations in binding to ACE2, we combined a cell-surface-binding assay, a kinetics study, a single-molecule biophysical method, and steered molecular dynamics (SMD) simulations to study the interaction of RBD mutants and ACE2 (Figure 1D,E). Our results reveal the molecular mechanism that underlies the increased transmissibility of two SARS-CoV-2 variants by identifying the key mutation N501Y. This information could be valuable for the development of further vaccines and neutralizing antibodies against mutant forms of the SARS-CoV-2 virus.\n\n## Results\n\n### Cell-surface binding of RBD to ACE2\n\nTo elucidate the interaction between the RBD of SARS-CoV-2 variants and ACE2, we performed a cell-surface-binding assay. ACE2 with a mCherry fused at the C-terminus was transfected into HEK293 cells. Confocal microscopic images subsequently showed that ACE2 was located mainly in the cell membrane and endoplasmic reticulum (Figure 1F). ACE2\u2013mCherry-positive cells were stained with AlexaFluor488 labeled-RBD, and the overlay images showed the co-localization of RBD and ACE2 on the cell surface (Figure 1F), validating their interaction.\n\nTo measure the binding affinity of RBD from SARS-CoV-2 for ACE2 on the surface of cells, saturation binding was performed using fluorescence flow cytometry by titration of Alexa488-RBD without washing the cells, which yielded a Kd of about 50 nM (Figure 1G). We also performed a competition-binding assay by titrating unlabeled RBD to compete with 100 nM Alexa488-RBD, which showed a similar affinity of 50 nM (Figure 1H).\n\n### N501Y mutation slowed the dissociation of the RBD from the ACE2 receptor\n\nTo determine the role of the receptor mutations, we first compared the ability of all of the RBD mutants to bind to the cell surface with that of wild-type RBD using a competition binding assay (Figure 1H). The N501Y mutation from the B.1.1.7 variant showed a fourfold greater affinity than wild-type RBD for the cell surface. The mutation resulted in a slightly weaker or similar affinity to cell-surface ACE2, whereas the N501Y, K417N, E484K triple mutation resulted in an affinity similar to that of the wild type RBD. These results demonstrated that N501Y is the key residue change that increases binding affinity.\n\nTo further understand the changes in kinetics that result from the RBD mutations, we performed surface plasmon resonance (SPR) on the immobilized RBD or RBD mutants with ACE2 as an analyte (Figure 2A\u2013C, thin black lines). Compared to RBD, both RBDN501Y and RBDTriple showed a 10-fold increase in affinity, which resulted from a significantly lower off-rate and a slightly higher on-rate (Figure 2). Two other amino acid mutations (K417N and E484K) had less impact on ACE2 binding, as verified by two single-point mutants (Figure 2\u2014figure supplement 1). This result again emphasized the role of N501Y, rather than the other two mutations, in increasing binding affinity by slowing the rate of dissociation from the ACE2 receptor.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig2-v3.jpg)\n\n**Figure 2.:** (A\u2013C) Surface plasmon resonance (SPR) sensorgrams (thin black lines) with fits (thick gray lines). ACE2 protein concentrations of 50, 20, 10, 5, 2, and 1 nM were used. Values were fitted to the 1:1 binding model. (D) Kd and kinetic rates are shown as fit \u00b1 fitting error.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) Surface plasmon resonance (SPR) sensorgrams (thin black lines) are shown with fits (thick gray lines). Concentrations used for ACE2 protein were 50, 20, 10, 5, 2, and 1 nM, respectively. Values were fitted to the 1:1 binding model. (C) Kd and kinetic rates are shown as fit \u00b1 fitting error.\n\n### AFM showed a higher binding probability and binding strength for the two variants containing N501Y\n\nIn addition to classic ensemble measurements, we used atomic force microscopy (AFM)-based single-molecule force spectroscopy (SMFS) to measure the strength of binding between the three different RBDs and ACE2 on a living cell directly (Alsteens et al., 2017a; Hinterdorfer and Dufr\u00eane, 2006). AFM-SMFS is a powerful single-molecule nanotechnology that can be used like optical and magnetic tweezers to manipulate a single molecule or several molecules mechanically (Jobst et al., 2015; Walder et al., 2017; Alonso-Caballero et al., 2021; L\u00f6f et al., 2019; Huang et al., 2019; Zhang et al., 2019; Xing et al., 2020). It has been widely used to study protein mechanics and protein\u2013protein interactions, including the interaction between the spike proteins of viruses and living cells (Kim et al., 2010; Cuellar-Camacho et al., 2020; Yang et al., 2020; Sieben et al., 2012; Alsteens et al., 2017b; Yu et al., 2019; Ma et al., 2017). A previous AFM experiment identified the binding events between the wild-type RBD and human ACE2 transfected on A549 cells, obtaining their binding probability and unbinding force/kinetics (Yang et al., 2020). In our work, a single RBD is site-specifically immobilized to a peptide-coated AFM tip via an enzymatic ligation (Figure 3A, step 1) (Deng et al., 2019; Ott et al., 2018; Yuan et al., 2019; Popa et al., 2016). An N-terminal GL sequence is present in the peptide, and a C-terminal NGL is added to the three RBDs. These two sequences can be recognized and ligated by protein ligase OaAEP1 into a peptide bond linkage, and the RBD is attached to the tip for AFM measurement (Deng et al., 2019). Then, we used the ACE2\u2013mCherry-transfected HEK293 cells as the target cell, which is immobilized on a Petri dish coated with poly-D-lysine. With the help of fluorescence, we targeted the transfected cell for measurement (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic of the AFM-SMFS measurement process showing how the interaction is quantified. RBD with an N-terminal NGL recognition sequence is immobilized on a GL-coated AFM tip by the ligase OaAEP1, which recognizes the two sequences and ligates them to form a peptide bond (1). As the AFM tip approaches the target cell (2), RBD binds to ACE2 (3). Then the tip retracts, and the complex dissociates, leading to an unbinding force peak (4). (B) The reddish ACE2\u2013mCherry-transfected HEK293 cell is measured under the AFM tip by an inverted fluorescent microscope. (C) Representative force-extension curves show no binding event (curve 1) and specific binding events between RBD\u2013ACE2 complexes with an unbinding force peak (curves 2\u20134). In the force histograms (inset), RBDN501Y and RBDTriple show higher unbinding forces (57 pN and 56 pN) than the RBD (49 pN). (D) Box plot of the specific binding probabilities between the three RBDs and target cells from AFM experiments, indicating a higher binding probability for the two mutants under five different velocities. The box indicates the 25th and 75th percentiles. (E) 3D AFM force mapping of the cell surface showed the unbinding force distribution. (F) A plot of loading rate against the most probable unbinding forces from the complexes showed a linear relationship. The data are fitted to the Bell\u2013Evans model to extract the off-rate.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A clear unbinding peak with force higher than 20 pN is present.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig3-figsupp2-v3.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The rupture forces are 40 \u00b1 11 pN (RBDK417N, n = 894) and 41 \u00b1 9 pN (RBDE484K, n = 606), respectively.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The gray symbols are the forces required for an individual unbinding event under a specific loading rate. The five solid markers in each graph are the most probable unbinding forces under the five different loading rates. The data are fitted by the Bell\u2013Evans model to obtain the koff.\n\nUpon moving the AFM tip towards the cell, the RBD contacts the cell and binds to the ACE2 on the surface (steps 2 and 3). Then, the tip retracts at a constant velocity and pulls the complex apart by breaking all the interactions, leading to a force-extension curve with a force peak corresponding to the unbinding of the RBD\u2013ACE2 complex (steps 3 and 4, Figure 3A; Rief et al., 1997). If the RBD does not bind to the ACE2 receptor, a featureless curve will be observed (Figure 3C, curve 1). Finally, the tip moves to another spot (65 nm away) on the cell and repeats the cycle for tens of hundreds of times, leading to a force map of the unbinding force distribution of RBD over the cell surface (Figure 3E; Hinterdorfer et al., 1996; M\u00fcller et al., 2009).\n\nBecause previous ensemble measurements showed that the N501Y mutation contributes most to the higher binding affinity of the RBD, we mainly focus on RBDN501Y, RBDTriple, and wild-type RBD for AFM-SMFS studies and comparisons. For example, 2815 data points on force-extension curves (using a pulling speed of 5 \u00b5m/s) have been obtained by probing ACE2-transfected cells with a RBDN501Y-functionalized AFM tip. As indicated by an unbinding force of >20 pN, 14% of the events involved a specific interaction between RBDN501Y and ACE2 (Figure 3D curve 4, Figure 3\u2014figure supplement 1). The same experiments and analysis were performed for RBD (3.3%) and RBDTriple (11.2%). The interaction between RBD and untransfected normal HEK293 cells (1.7%) was also measured as a control (Figure 3\u2014figure supplement 2a). The mean unbinding forces for RBD, RBDN501Y, and RBDTriple were 49 \u00b1 11 pN (n = 349), 57 \u00b1 18 pN (n = 394), and 56 \u00b1 12 pN (n = 312), respectively (Figure 3C). Both RBD mutants showed a higher binding probability and unbinding force than the wild type, while the properties of the two variants are similar to each other (Figure 3C,D, Figure 3\u2014figure supplement 2B-D). The absolute difference in force value between the two mutations and the wild type is small (~10 pN), but this is still a difference of ~15% difference due to their low unbinding force (~50 pN). Finally, we also performed AFM measurements on RBDK417N (40 \u00b1 11 pN, n = 894) and RBDE484K (41 \u00b1 11 pN, n = 606) (Figure 3\u2014figure supplement 3). These mutant RBDs showed weaker unbinding forces than wild type RBD, in agreement with previous ensemble measurements and verifying our single-molecule results.\n\nMoreover, AFM-SMFS can also be used to obtain the unbinding kinetics, which further support our previous conclusions. According to the Bell\u2013Evans model, the force that is externally applied by AFM lowers the unbinding activation energy (Merkel et al., 1999; Yu et al., 2017; Zheng and Li, 2011; Garcia-Manyes and Beedle, 2017). Thus, the binding strength of the ligand\u2013receptor bond (i.e. interaction) is proportional to the logarithm of the loading rate, which describes the effect of the force applied on the bond over time. Thus, we pulled the RBD\u2013ACE2 complexes apart at different velocities, and plotted the relationship between the unbinding forces and loading rate (Figure 3F, Figure 3\u2014figure supplement 4). From the fit (SI), we can estimate the bond dissociation rate (koff) and the length scale of the energy barrier (\u0394x\u03b2) (Hickman et al., 2017). Similarly, the koff of the two RBD mutants are close to each other (0.030 \u00b1 0.017 s\u22121 and 0.035 \u00b1 0.024 \u2009s\u22121) but slower than that of the wild-type RBD (0.075 \u00b1 0.048 \u2009s\u22121).\n\n### SMD simulations revealed a higher unbinding force for the complexes due to additional \u03c0-\u03c0 and cation-\u03c0 interactions resulting from the N501Y mutation\n\nTo explore the possible molecular mechanism of RBD\u2013ACE2 complex dissociation under force, we performed SMD simulations to visualize the unbinding process that took place during the AFM study (Figure 4 and Figure 4\u2014video 1, Figure 4\u2014video 2, Figure 4\u2014video 3; Dong et al., 2017; Milles et al., 2018; Tian et al., 2020; Mei et al., 2020). In the wild-type RBD\u2013ACE2 interaction, T500 forms two hydrogen bonds with Y41 and D355 from ACE2; K417 from RBD forms a salt bridge with D30 from ACE2; and N487 forms one hydrogen bond with Y83 (Figure 4A, snapshot 1). The broken forms of these interactions, except the interaction between N487 and Y83, showed the highest rupture force during the simulations and are regarded as the most critical step for the dissociation of the complex . This force was defined as the rupture or disassociation force for the complex and was simulated as 427 \u00b1 58 pN (n = 20, Figure 4A, Figure 4\u2014figure supplement 1A). Then, the interaction between N487 and Y83 was broken, leading to the complete dissociation of the complex (Figure 4A, snapshot 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig4-v3.jpg)\n\n**Figure 4.:** (A\u2013C) Force-extension traces of RBD\u2013ACE2 (violet), RBDN501Y\u2013ACE2 (orange), and RBDTriple\u2013ACE2 (green) complexes pulled apart at 5 \u00c5/ns. The curves represent the average results from 20 simulations, with the standard deviations represented by vertical lines. In the ribbon diagrams, ACE2 is colored in cyan. Snapshots 1 and 2 represent the changes that occur as the RBDs are dissociated from ACE2 sequentially. The residues that are involved in the interaction between RBDs and ACE2 are labeled and depicted in sphere models, and the residue is colored in red if the interaction in which it participates is ruptured in the snapshot. (D, E) The distances between the Y41 (left) and K353 (right) residues of the ACE2 receptor and the Y(N)501 and residue of RBD (colored in purple), RBDN501Y (orange) or RBDTriple (green) as the extension elongates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig4-figsupp1-v3.jpg)\n\nIn the RBDN501Y\u2013ACE2 complex, Y501 forms an additional \u03c0-\u03c0 interaction with Y41 and an additional \u03c0-cation interaction with K353 (Figure 4B, snapshot 1). The rupture of these additional interactions as well as the interactions that are also present in the wild-type complex (snapshot 1) led to the highest rupture force during the simulation. An elevated unbinding force of 499 \u00b1 67 pN (n = 20) was obtained for the complex between RBDN501Y and ACE2 compared to that for the complex between wild-type RBD and ACE2 (p=8.29 e\u20134, Figure 4B, Figure 4\u2014figure supplement 1B). Similarly, SMD simulations revealed that RBDTriple might also have a stronger contact than wild-type RBD with ACE2. The unbinding force was 521 \u00b1 65 pN (p=2.33 e\u20135, Figure 4C, Figure 4\u2014figure supplement 1C).\n\nIn addition to the complex dissociation force, we also measured the distance between these key residues (Y(N)501\u2013Y41 and Y(N)501\u2013K353) during the simulations (see Materials and methods for details). For the wild-type RBD\u2013ACE2 complex, the distances between residue N501 and residues Y41 (Figure 4D) and K353 (Figure 4E) increased significantly at a shorter extension along the pulling pathway (purple line) at the distance of 2.2 \u00b1 0.7 nm (n = 20), indicating no interaction between these residues in the RBD\u2013ACE2 complex. For the two variants (Figure 4D,E), the distances showed a smaller increase at an extension of 2.9 \u00b1 0.8 nm (p=5.38 e\u20133, orange line, n = 20) and 3.3 \u00b1 0.8 nm (p=6.39 e\u20135, green line, n = 20), respectively. Consequently, the SMD simulations further demonstrate that the RBDN501Y\u2013ACE2 and RBDTriple\u2013ACE2 complexes have a higher unbinding force than wild-type RBD\u2013ACE2 complexes, and that the additional \u03c0-\u03c0 and cation-\u03c0 interactions that result from the N501Y mutation may provide the molecular mechanism that underlies this result.\n\n## Discussion\n\nCoronaviruses are large, enveloped, positive-stranded RNA viruses that have a remarkable mutation rate that allows them to evolve in a way that affects their transmission. In this study, we combined cell-surface-binding assays, mechanical manipulation by AFM-SMFS, and molecular dynamics simulations to understand the behavior of key mutations recently detected in B.1.1.7 and B.1.351 variants that affect RBD binding. All of these methodologies suggested that, of the three mutations examined in this work, the N501Y mutation in the RBD has the most significant role in binding and dissociation from the ACE2 receptor . The cell surface-binding assay showed that, when compared wild-type RBD, RBDN501Y had greater binding affinity for ACE2. SPR and AFM-SMFS measurements consistently showed that RBDN501Y had increased kon and binding probability and decreased koff. It is noted that SPR was performed on the complex between RBD and isolated ACE2 protein, whereas the other two measurements were performed on the complex between RBD and ACE2 on living cells. The more complex cell surface of living cells, where other proteins or receptors may interact with RBD in a non-specific and weaker way, may account for the relatively weak results observed at the cellular level. Indeed, the AFM unbinding results indicated a fraction of non-specific interactions between RBDs and the surface of untransfected normal cells (~5% for a RBD monomer on HEK293 cells studied here, ~10% for a S1/RBD homotrimer on A549 cells) (Alsteens et al., 2017a). Previous AFM results on wild-type RBD showed a higher specific binding probability than that observed in this study (~20% vs. ~15%), possibly resulting from different RBD construct and immobilization methods and the use of different host (A549) cells (Yang et al., 2020; Deng et al., 2019; Cao et al., 2020). Nevertheless, the specific unbinding forces detected for the RBD\u2013ACE2 complex (~50 pN) in the two experiments are similar. Moreover, the two mutants showed higher binding probability and unbinding force, as well as lower off-rate, under the same conditions in our studies.\n\nOne concern was whether ACE2 was pulled out of the cell membrane during our AFM experiments. First, the unbinding force that was measured (~50 pN) is much smaller than the typical force needed to pull a membrane-bound protein out of a cell membrane (~100 pN). Also, if this had happened, the isolated ACE2 would stick to the RBD-functionalized coverslip and would block further measurement. In our AFM experiment, the pick-up ratio was mostly consistent with the measurements. Finally, previous work on purified ACE2 protein and wild-type RBD showed a rupture force of ~50 pN (Yang et al., 2020; Cao et al., 2020). Thus, we believe that the ACE2 was not pulled out of the cell membrane during our experiments.\n\nThere was only a small difference in complex stability between RBDN501Y and RBDTriple, where two more mutations are present in RBDTriple. Indeed, the results from flow cytometry showed that E484K contributed less to the interaction increment than N501Y, whereas K417N even decreased the interaction. The effects of the E484K and K417N mutations may cancel each other out, and N501Y is the dominant site in affecting the interaction. Thus, the combination of all three of these mutations in RBDTriple lead to an effect that was similar to that of RBDN501Y. Indeed, a similar koff value is obtained for RBDN501Y and RBDTriple from AFM-SMFS measurement.\n\nFinally, the SMD simulations provide valuable information on the enhanced interaction between the RBD mutants and ACE2. It is noted that only a modest effect from the N501Y mutation was detected in the experimental data, such as the 10 pN difference in complex dissociation force between the wild-type and variants detected by AFM measurement. Consequently, we performed a range of different experimental biophysical methods to measure the kinetics and confirm these differences. Thus, the results of SMD simulations are essential parts of our work, revealing that additional interactions are present for the N501Y mutant RBD and are responsible for the increased rupture force. Owing to computational limitations, we chose 0.5 m/s as the pulling speed for the SMD simulations, which is a normal speed for simulations. Nevertheless, this speed is much higher than the experimental speed (5 \u00b5m/s), although it does not affect the molecular insights provided by the simulations. As confirmed by other simulation studies performed at various speeds (Kim et al., 2021; Pavlova et al., 2021; Han et al., 2021), our simulations revealed that additional \u03c0-\u03c0 and cation-\u03c0 interactions resulting from the N501Y mutation lead to the higher rupture force. In addition, a higher pulling speed typically leads to a higher rupture or dissociation force. Thus, the simulation also confirmed rupture force trend for the three complexes. Nevertheless, all of these methods have their own advantages and limitations. The experiment provides quantitative results under physiological conditions, whereas the simulations provide an underlying molecular mechanism that rarely obtained by experimentation (Kim et al., 2021; Zhou et al., 2019). Thus, we believe that the combination of experimental and simulation techniques used here is necessary and provides a complete picture of this important problem.\n\nAnother SARS-CoV-2 variant, P.1 lineage (gamma), was identified in January 2021 in Brazil. Studies found that, like the two variants studied in this work, it may also affect the ability of antibodies to recognize and neutralize the virus (Hodcroft et al., 2021). Interestingly, three key mutations (N501Y, E484K, and K417T) are found in the RBD of the P.1 variant. Consequently, we believe that N501Y is a critical mutation that affects the transmission of COVID-19 by strengthening the interaction between RBD and ACE2. The strong interaction of the N501Y mutant RBD leads to the tighter binding of SARS-CoV-2 to the host cell, allowing complete membrane fusion or the internalization of the receptor with the virus. Thus, we speculate that the enhanced affinity of SARS-CoV-2 variants for host cells may contribute to the observed increase in infectivity by lowering the effective virion concentration required for cell entry. A modest change in affinity could cause a significant increase in the infection rate. Indeed, the alpha variant of SARS-CoV-2, which contains the N501Y mutation, had become the most common lineage in the United States by June 2020. It is noted that several other SARS-CoV-2 variants, such as delta, epsilon, and kappa, have been found very recently during the revision of our work (Kim et al., 2021). Some of these variants have very high transmission rates and have been proposed to be more dangerous. Although they do not contain the N501Y mutation, other mutations in the RBD might increase the binding of the virus to the human receptor ACE2, leading to a similar effect. As an RNA virus, SARS-CoV-2 is evolving rapidly. Hundreds of millions of human beings have been affected, and the virus is still spreading rapidly, so future dangerous mutations causing even higher transmission to humans or other creatures are very possible. Thus, further surveillance, diagnosis, evaluation, and treatment of mutated SARS-CoV-2 strains are necessary.\n\nNowadays, most vaccines are designed on the basis of the RBD or spike protein. Neutralizing antibodies from these vaccines mainly target the RBD to weaken its binding to ACE2. Here, we found that a RBD with the N501Y mutation has a 5\u201310 times higher affinity than wild-type RBD for ACE2. Additional mutations within the receptor-binding site (K417N and E484K) changed the amino acid sequence of the epitope and may contribute to the escape from antibody binding. Thus, a higher vaccine-induced antibody titer or neutralizing antibodies of higher affinity are needed to compete for the RBDN501Y\u2013ACE2 interaction (Chen et al., 2021; Focosi and Maggi, 2021). This will make the current vaccine less effective against SARS-CoV-2 variants that contain the N501Y mutation.\n\n## Materials and methods\n\n### Protein expression and purification\n\nThe genes were ordered from GenScript Inc The RBD construct contains the SAS-COV-2 spike protein (residues 319\u2013591), followed by a GGGGS linker and an 8XHis tag in a pcDNA3.4 modified vector (SI). Its mutants, including RBDN501Y, RBDK417N, RBDE484K, and RBDTriple (N501Y, K417N, E484K), were generated using the QuikChange kit. Their sequences were all verified by direct DNA sequencing (GENERAL BIOL). A C-terminal NGL was added to the RBD for use in the AFM-SMFS experiment. The human ACE2 construct contains the ACE2 extracellular domain (residues 19\u2013740) and an Fc region of IgG1 at the C-terminus.\n\nAll RBD and human ACE2 proteins were expressed in Expi293 cells with OPM-293 CD05 serum-free medium (OPM Biosciences). For protein purification of RBD with His-tag, culture supernatant was passed through a Ni-NTA affinity column (Qiagen), and Fc-tag ACE2 protein was purified using a protein affinity A column (Qiagen). Proteins were further purified by gel filtration (Superdex 200 Increase 10/30 GL, GE Healthcare). The full-length ACE2 construct contains the ACE2 protein (residues 1\u2013805), followed by a GGSGGGGS linker and a mCherry tag in a pcDNA3.4 modified vector. The ACE2 expression cell line was constructed by transient transfection of HEK293 cells and used for flow cytometry and AFM in this study.\n\nOaAEP1(C247A) is cysteine 247 to alanine mutant of asparaginyl endoprotease 1 from Oldenlandia affinis, abbreviated as OaAEP1 here (Yang et al., 2017; Shi et al., 2021). ELP is the elastin-like polypeptide (Ott et al., 2017). OaAEP1 and ELP were overexpressed in BL21(DE3) Escherichia coli. Luria-Bertani (LB) medium and agar plates (Sangon Biotech) were used for the culture of E. coli. Protein concentrations were routinely determined by Nanodrop 2000. Details of the protein expression and purification protocols can be found in the literature (Deng et al., 2019; Yang et al., 2017; Ott et al., 2017).\n\n### Confocal microscopy\n\nA confocal microscope was used to detect binding between SARS-CoV-2 RBD and the ACE2 receptor on the cell surface. Briefly, ACE2\u2013mCherry cells were seeded into a poly-D-lysine precoated confocal dish and stained with AlexaFluor488-labeled-RBD (100 nM) for 30 min at room temperature (RT). After three washes, the samples were imaged on a confocal microscope (Zeiss LSM 710), and the images were prepared using ZEN software.\n\n### Cell-surface binding by flow cytometry\n\nFor saturation binding, wide-type RBD protein was labeled with AlexaFluor488 NHS Ester (Yeasen) according to the manufacturer\u2019s instructions. ACE2 expression cells (mCherry positive) and control HEK293 cells (mCherry negative) were resuspended in PBS buffer and incubated with AlexaFluor488 labeled-RBD at 4\u2103 for 1 hr, and then subjected to flow cytometry without washing. Mean fluorescence intensity (MFI) of AlexaFluor488 was reported for total binding (mCherry positive) and non-specific binding (mCherry negative). Kd value was calculated from the saturation-binding curve.\n\nFor the competitive binding, ACE2 expression cells were resuspended in PBS buffer and incubated with 100 nM AlexaFluor488-labeled RBD in the presence of competitors (0\u20135000 nM of unlabeled-RBD and RBD mutants). The mixture was allowed to equilibrate for 1 hr before flow cytometry (ThermoFisher Attune NxT) without washing. The binding of RBD mutants was reported by changes in the MFI of AlexaFluor488. The decrease in the MFI value was directly proportional to the increase in the concentration of competitors. Competition curves were fitted using nonlinear regression with top and bottom values shared. The IC50 value was converted to an absolute inhibition constant Kd using the Cheng\u2013Prusoff equation (Newton et al., 2008).\n\n### Surface plasma resonance\n\nSPR studies were performed using Biacore T200 (GE Healthcare). Purified RBD and RBD mutants were amine-immobilized on the CM5 chips. Purified ACE2 protein was injected at 20 \u03bcL/min in 0.15 M NaCl, 20 mM HEPES, pH 7.4. The surface was regenerated with a pulse of 25 mM HCl at the end of each cycle to restore resonance units to baseline. Kinetics analysis was performed with SPR evaluation software version 4.0.1 (GE Healthcare).\n\n### AFM tip functionalization\n\nFirst, the maleimide group for cysteine coupling was added onto the amino-functionalized AFM tip using the hetero-bifunctional crosslinker sulfosuccinimidyl 4-(N-maleimidomehthyl) cyclohexane-1-carboxylate (Sulfo-SMCC, Thermo Scientific) from the reaction between amino and -NHS. Then, the peptide GL-ELP20-C was added to the maleimide. The long ELP20 serves as a spacer that prevents non-specific interactions between the tip and the cell surface, and is a signature for the single-molecule event. Finally, target RBDs with the C-terminal NGL sequence were site-specifically linked to the tip by the ligase OaAEP1, which recognized the N-terminal GL on the tip and the C-terminal NGL, forming a peptide bond (Deng et al., 2019; Song et al., 2021).\n\nSpecifically, we used the silicon nitride AFM cantilever (MLCT-BIO-DC, Bruker Corp.). The tip was coated with the amino group by amino-silanization (Ebner et al., 2019). Briefly, the cantilevers were immersed in 1.5% (v/v) APTES toluene solution for 1 hr at RT in the dark and rinsed with ethyl alcohol. After drying, they were baked at 80\u00b0C for 15 min and then cooled down to RT. 200 \u03bcL of sulfo-SMCC (1 \u2009mg/mL) in dimethyl sulfoxide (DMSO) were added and incubated for 2 \u2009hr, while protected from light. The cantilevers were washed with absolute ethyl alcohol to remove residual sulfo-SMCC. Finally, each cantilever was reacted with more than 50 \u03bcL of GL-ELP20-C and washed with 50 mL high-salt buffer (100 mM Tris, 1 M NaCl, pH 7.4), and then dried. The cantilevers were then ready for RBD immobilization.\n\nTo add RBD to the AFM tip, the GL-functionalized cantilevers were incubated with a 50 \u03bcL of a mixed solution of 60 \u03bcM RBD-NGL and 1 \u03bcM OaAEP1 in the measurement buffer. The OaAEP1-catalyzed coupling was performed in the measurement buffer (100 mM Tris, 100 mM NaCl, pH 7.4) at RT for ~30 min, forming a covalent NGL linkage between the AFM tip and the RBD.\n\n### AFM-SMFS experiment\n\nAFM (Nanowizard4, JPK) coupled to an inverted fluorescent microscope (Olympus IX73) was used to acquire correlative images and the force-extension curve. The AFM and the microscope were equipped with a cell culture chamber that allowed the temperature to be maintained at 37\u00b0C \u2009\u00b1\u2009 1\u2009\u00b0C. Fluorescence images were recorded using a water-immersion lens (\u00d710, numerical aperture (NA) 0.3). Optical images were analyzed using ImageJ software.\n\nThe D tip of the MLCT-Bio-DC cantilever (Bruker) was used to probe the interaction between the RBD and ACE2 on the cell. Its accurate spring constant was determined by a thermally induced fluctuation method (Hutter and Bechhoefer, 1993). The peptide linker C-ELP20-GL was used to functionalize the AFM tips as previously described (Deng et al., 2019). Typically, the tip contacted the cell surface for 400 ms under an indentation force of 450 pN, thereby ensuring a site-specific interaction between the RBD on the tip and ACE2 on a cell while minimizing the non-specific interaction. The sample was scanned using 32 \u00d7 32 pixels per line (1024 lines) and a sample number of 10,500. Then, moving the tip up vertically at a constant velocity (5 \u00b5m/s, if not specified), the complex ruptured. Then, the tip was moved to another location to repeat this cycle several thousands of times. As a result, a force-extension curve, possibly including the complex unbinding event, was obtained. AFM images and force-extension curves were analyzed using JPK data process analysis software.\n\n### Bell\u2013Evans model to extract kinetics\n\nThe dissociation of the RBD\u2013ACE2 complex in the AFM experiment is a non-equilibrium process that can be modeled as an all-or-none two-state process, with force-dependent rate constant k(F). The rate constant can be described by the Bell\u2013Evans model (Merkel et al., 1999; Evans and Ritchie, 1997):\n\n$$\nkF=k_{off}exp\u2061\\frac{F\\Deltax_{\\beta}}{k_{b}T}\n$$\n\nwhere k(F) is the complex dissociation rate constant under a stretching force of F, koff is the dissociation rate constant under zero force, and \u0394x\u03b2 is the distance between the bonded state and the transition state of dissociation.\n\nFor the dynamic force spectroscopy measurements, the slope $a$ of the force-extension curves immediately (2\u20133 nm) before the rupture event was first determined to obtain the average loading rate ($r=av$, where $v$ is the velocity in the rupture event). All of the data were fitted with the Bell\u2013Evans model (1), yielding the spontaneous rupture rate, and the distance from the bound state to the transition state with the following equation:\n\n$$\nF=\\frac{k_{b}T}{\\Deltax_{\\beta}}ln\\frac{\\Deltax_{\\beta}}{k_{off}k_{b}T}+\\frac{k_{b}T}{\\Deltax_{\\beta}}ln\u2061r\n$$\n\nBy performing the AFM unbinding experiment under five different pulling speeds, 0.5 \u00b5m/s, 1 \u00b5m/s, 3 \u00b5m/s, 5 \u00b5m/s, and 10 \u00b5m/s, the relationship between the most probable rupture force and loading rate can be obtained on a log scale, which is fitted by a linear line as equation (2). Thus, the slope of this line can be used to calculate the \u0394x\u03b2, which is the distance between the bonded state and the transitional unbonded state, and the y-intercept is used to calculate the koff.\n\n### SMD simulation for the dissociation of RBD\u2013ACE2 complex\n\nThe structure model for RBD in complex with the receptor ACE2 was taken from the Protein Data Bank (PDB:6M0J). The RBD mutants RBDN501Y and RBDTriple have no structure available and thus were created using the CHARMM36 force field (Best et al., 2012). Each system underwent a similar equilibration and minimization procedure. The molecular dynamics simulations were set up with the QwikMD plug-in in VMD (Humphrey et al., 1996), and simulations were performed employing the NAMD molecular dynamics package (Phillips et al., 2005). The CHARMM36 force field was used in all simulations. Simulations were performed with explicit solvent using the CHARMM TIP3P (Zheng and Li, 2011) water model in the NpT ensemble. The temperature was maintained at 300.00 K using Langevin dynamics. The pressure was maintained at one atmosphere using a Nos\u00e9\u2013Hoover Langevin piston (Kim et al., 2019). A distance cut-off of 12.0 \u00c5 was applied to short-range, non-bonded interactions, and 10.0 \u00c5 for the smothering functions. Long-range electrostatic interactions were treated using the particle-mesh Ewald method. The motion equations were integrated using the r-RESPA (Phillips et al., 2005) multiple time-step scheme to update the short-range interactions every one step and long-range electrostatic interactions every two steps. A time step of integration of 2 fs was chosen for all simulations. Before the molecular dynamics (MD) simulations, all of the systems were submitted to an energy minimization protocol for 1000 steps. An MD simulation with position restraints in the protein backbone atoms was performed for 1 ns, with temperature ramping from 0 K to 300 K in the first 0.25 ns, which served to pre-equilibrate the system before the steered MD simulations. The RBD mutations were subjected to 100 ns of equilibrium MD to ensure conformational stability. All structures shown are from post-equilibration MD simulations.\n\nTo characterize the interaction between RBDs and ACE2, the SMD simulations with constant velocity stretching employed a pulling speed of 5.0 \u00c5/ns and a harmonic constraint force of 7.0 kcal/mol/\u00c5 (Florindo et al., 2020) was applied for 10.0 ns. In this step, SMD were employed by harmonically restraining the position of the C-terminus of ACE2 and pulling on the C-terminus of the RBD (wildtype or mutant). Each system was run 20 times. Simulation force-extension traces were analyzed analogously to experimental data. For each simulation, the key step was determined as the interaction of the key residues in the RBDs and ACE2. Data were analyzed by the MD 1.9.3 program and its plug-ins. In VMD, the distance between the center of mass (COM) of the benzene ring of Y41 from the ACE2 and the COM of the benzene ring of Y501 (sidechain of N501) from the RBDs, as well as the distance between the hydrogen atom on the sidechain nitrogen-hydrogen bond of K353 from the ACE2 and the COM of the benzene ring of Y501 (sidechain of N501) from the RBDs were measured. p-values were determined by two-sample t-tests in Origin. The numerical calculations in this paper were performed using computing facilities in the High-Performance Computing Center (HPCC) of Nanjing University.\n",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "68a92239-691e-48f7-a632-82dbf3f018a8",
+      "submission_id": "b09dbbd7-a180-416c-b837-3a85d080e624",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Aaron Frank, University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69091.sa1](https://doi.org/10.7554/eLife.69091.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis study finds that the receptor-binding domains (RBD) of variants containing the N501Y mutation exhibits higher affinity for ACE2, which provides a possible explanation for their higher transmission for SARS-CoV-2. While follow-up studies will be undoubtedly required to more thoroughly establish this hypothesis, we believe that this manuscript, which has shown vast improvements during this peer-review process, will be broad of interest to eLife readers.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"COVID-19 N501Y Mutation of Spike Protein Strengthens the binding to its Receptor ACE2\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jos\u00e9 Faraldo-G\u00f3mez as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another and with the Editors. Based on this discussion, we would like to invite you to submit a revised version of your manuscript. The Reviewing Editor has drafted this letter to help you prepare a revised submission.\n\nEssential revisions:\n\n1. A concern is regarding the AFM measurement is how do the authors know that the AFM pulling procedure is not pulling ACE2 out of the cell membrane?\n\n2. The authors provide estimates of error in the off-rates measured using SPR (Figure 2d). However, they do not for the koff measured using AFM-SM. Why is the error estimates neglected in the latter case? As presented, the differences in koff derived from AFM-SM seem small. Without knowing the errors in the estimates, it isn't easy to gauge whether the observed differences are meaningful. The authors should therefore address this.\n\n3. Can the authors please comment on why they did not carry out AFM-SM experiments on the K417N and E484K mutants?\n\n4. The B.1.351 variant exhibits higher transmission and is less sensitive to existing vaccines than wild-type. The N501Y mutation might explain the increased transmission rate. The authors should comment on whether the additional mutations render the vaccines less neutralizing to B.1.351 variant in the Discussion section.\n\n5. Moreover, the effects they have identified might be statistically significant, but they are modest. The authors must put forward an argument to explain why this difference is enough to drive the known differences in the SARS-CoV-2 variants.\n\n6. In the abstract, the authors stated that \"Molecular dynamics simulations of RBD-ACE2 complexes indicated that the N501Y introduced additional \u03c0-\u03c0 and \u03c0-cation interaction for the higher 11 force/interaction.\" Unfortunately, though the authors observed higher maximum forces during the simulated unfolding of the Triple mutant, they did not perform a detailed contact analysis that links it to the additional \u03c0-\u03c0 and \u03c0-cation interaction. Without such analysis, one cannot know why they observed higher forces for the mutant. The simulations have not yielded any more information beyond what is already evident from the AFM-SM experiments. Put differently, the current simulations and analyses have added little biophysical insights.\n\n7. In the caption of Figure 4, the authors state that \"Arrows indicate the key step during the dissociation of these complexes, of which structures are shown in (b-d), respectively.\" What do they mean by key step, how was it determined, and is it consistent over many independent trajectories? Related to the latter, the authors appear only to carry out three independent simulations per system. They should repeat the simulations at least 20 times and show that their observations are converged or consistent across the 20 trajectories.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"N501Y Mutation of Spike Protein in SARS-CoV-2 Strengthens its Binding to Receptor ACE2\" for further consideration by eLife. Your revised article has been evaluated by Aaron Frank as Reviewing Editor and Jos\u00e9 Faraldo-G\u00f3mez as Senior Editor.\n\nWhile we recognize the manuscript has improved, there remain substantial issues that must be resolved prior to publication \u2013 as outlined below. We urge you to address all of these issues as thoroughly and convincingly as possible before submitting the next revision of the manuscript.\n\nIn the abstract reference is made to \"COVID-19 variants\". The variants are of the virus, and so should be \"SARS-CoV-2 variants\".\n\nRegarding Response 1: The transition to the added paragraph (Page 12; Line 305) is abrupt. The authors might consider something like:\n\n\"One concern was whether ACE2 was pulled out of the cell membrane during our AFM experiments. First, the unbinding force measured (~50 pN) is much smaller than the typical force needed to pull a membrane-bound protein out of the cell membrane\u2026.\"\n\nRegarding Response 2: It is stated that \"In addition, as this reviewer pointed out later, it is a modest effect with a relatively small difference. That's another reason we performed a range of different methods to measure the kinetics and confirm this difference.\" This rationale should be explicitly articulated in the discussion of the manuscript. It will have the reader understand why multiple biophysical approaches were employed and the value-added by combining these methods.\n\nRegarding Response 5: It is stated that \"Enhanced affinity of SARS-CoV-2 variants contribute to the increased infectivity by lowering the effective virion concentration required for cell entry. Thus, a modest change in affinity will cause a significant arising in the infection rate.\" However, no direct or supporting evidence is present that supports this statement. Thus, it would be more appropriate if the authors should state this as an untested hypothesis. For example, \"We speculate that enhanced affinity of SARS-CoV-2 variants may contribute to the increased infectivity by lowering the effective virion concentration required for cell entry. Thus, a modest change in affinity could cause a significant increase in the infection rate.\"\n\nRegarding Response 6:\n\n\u2013 Are the traces (4A-4E) from one simulation or an aggregate of 20 simulations? If from multiple simulations, we urge that you plot the error (or variation) in the force (4A-4C) and distance (4D and 4E) at each extension so that readers can get a sense of the uncertainty in the simulation data.\n\n\u2013 Also, the statement that \"SMD simulations revealed a higher unbinding force due to additional interactions for the complex with RBD mutant\" needs to be revised to enhance clarity.\n\n\u2013 Also, on Pg. 10, Line 247, it is written that \"In the wild-type RBD-ACE2 interaction, T500 forms two hydrogen bonds with Y41 and D355 from ACE2. K417 from RBD forms a salt bridge with D30 from ACE2 (Figure 4A, Snapshot 1)\" and on Pg. 252 that \"In the RBDN501Y-ACE2 complex, Y501 forms an additional \u03c0-\u03c0 interaction with Y41 and an additional \u03c0-cation interaction with K353(Figure 4B, Snapshot 1).\" However, the referenced figure does not highlight these contacts. It will help the reader if close-up views of all the contacts that refer to in the text are included. These images should specifically show the contacts between the center of mass (COM) of benzene rings of Y41 from the ACE2 and the benzene ring of Y501 (for the \u03c0-\u03c0 contact) and the distance between the hydrogen atom on the sidechain nitrogen-hydrogen bond of K353 from the ACE2 and COM of the benzene ring of Y501 (\u03c0-cation interaction).\n\n\u2013 After reading the responses and the caption, it is not clear what Snapshot 1 and 2 are. Figure 4 caption states that \"Snapshots (1) and (2) represent the difference of RBDs dissociated from ACE2 sequentially.\" What does \"the difference of RBDs dissociated from ACE2 sequentially\" mean? The caption and the references to Snapshot 1 and 2 in the main text should be revised to make it understandable to the general reader.\n\n\u2013 In the representative SMD videos, we suggest that you render the specific contact \u03c0-\u03c0 interaction between Y501 and Y41 and the rupture of the \u03c0-cation interaction between Y501 and K353. These contacts, between the center of mass (COM) of benzene rings of Y41 from the ACE2 and the benzene ring of Y501 (for the \u03c0-\u03c0 contact) and the distance between the hydrogen atom on the sidechain nitrogen-hydrogen bond of K353 from the ACE2 and COM of the benzene ring of Y501 (\u03c0-cation interaction), can be displayed as dashed lines. The distances associated with these contacts at each frame should also be displayed. It will also help if the first frame in the video is annotated with labels highlighting which residue is Y501, Y41, and K353, and which contact is the contact \u03c0-\u03c0 and \u03c0-cation. These modifications will enhance the information content of these animations.\n\n\u2013 It remains unclear how the rupture force is determined. Please clarify, in the revised manuscript, what criteria were used to determine when a rupture has occurred.\n\nThe Discussion section lacks appropriate citations. It can also need to be further expanded to better place the results presented in the manuscript within the broader context of what is already known. Moreover, a careful and thoughtful discussion of the specific caveats associated with the experiments and simulation techniques employed currently is lacking but should be included in the revised manuscript.\n",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "03799166-f8ec-4feb-a6b6-a31a9e069cbd",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C1",
+      "claim": "SARS-CoV-2 has been spreading around the world for the past year.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 has been spreading around the world for the past year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a temporal statement about the pandemic that is stated in the abstract without specific data or citation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "6959b6db-f297-4236-9d03-6b9c5ed18aa1",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C2",
+      "claim": "B.1.1.7 (alpha), B.1.351 (beta), and P.1 (gamma) variants share a key mutation N501Y on the receptor-binding domain (RBD).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, several variants such as B.1.1.7 (alpha), B.1.351 (beta), and P.1 (gamma), which share a key mutation N501Y on the receptor-binding domain (RBD), appear to be more infectious to humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge about SARS-CoV-2 variants and their genetic characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "1df8ed78-37f8-44c1-81e3-e3356278311f",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C3",
+      "claim": "B.1.1.7 (alpha), B.1.351 (beta), and P.1 (gamma) variants appear to be more infectious to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, several variants such as B.1.1.7 (alpha), B.1.351 (beta), and P.1 (gamma), which share a key mutation N501Y on the receptor-binding domain (RBD), appear to be more infectious to humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by epidemiological knowledge about these variants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "835a7ad1-48a5-46fb-9b91-be3eda10eeb8",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C4",
+      "claim": "RBD with the N501Y mutation exhibited a considerably stronger interaction with ACE2, with a faster association rate and a slower dissociation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, RBD with the N501Y mutation exhibited a considerably stronger interaction, with a faster association rate and a slower dissociation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from cell surface-binding assays and kinetics studies presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "53a6631c-b84e-41b4-a481-a8fb3a5e6b44",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C5",
+      "claim": "AFM-based single-molecule force microscopy quantified the interaction strength of RBD with the N501Y mutation as having increased binding probability and requiring increased unbinding force.",
+      "claim_type": "EXPLICIT",
+      "source": "Atomic force microscopy (AFM)-based single-molecule force microscopy (SMFS) consistently quantified the interaction strength of RBD with the mutation as having increased binding probability and requiring increased unbinding force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "d6e1787a-944a-42b2-942e-d9139fadfbef",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C6",
+      "claim": "The N501Y mutation introduced additional \u03c0-\u03c0 and \u03c0-cation interactions that could explain the changes observed by force microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations of RBD\u2013ACE2 complexes indicated that the N501Y mutation introduced additional \u03c0-\u03c0 and \u03c0-cation interactions that could explain the changes observed by force microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "e0f7632b-ce1e-4633-98b6-f56fece3b807",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C7",
+      "claim": "The reinforced RBD\u2013ACE2 interaction resulting from the N501Y mutation should play an essential role in the higher rate of transmission of SARS-CoV-2 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that the reinforced RBD\u2013ACE2 interaction that results from the N501Y mutation in the RBD should play an essential role in the higher rate of transmission of SARS-CoV-2 variants, and that future mutations in the RBD of the virus should be under surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the experimental data showing stronger RBD-ACE2 binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "c7eb1cf7-66e5-42e2-9a9f-66f320c412fe",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C8",
+      "claim": "Future mutations in the RBD of the virus should be under surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that the reinforced RBD\u2013ACE2 interaction that results from the N501Y mutation in the RBD should play an essential role in the higher rate of transmission of SARS-CoV-2 variants, and that future mutations in the RBD of the virus should be under surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings about the N501Y mutation's impact.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "0e678a7d-3ffd-46bd-8d7b-765a7b8f129e",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C9",
+      "claim": "SARS-CoV-1 emerged in humans in 2003 after being transferred from an animal reservoir.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2003, severe acute respiratory syndrome coronavirus (SARS-CoV-1) emerged in humans after being transferred from an animal reservoir and infected over 8000 people with a fatality rate of ~10% fatality rate (Ksiazek et al., 2003; Florindo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "f12091cc-d2f5-4c3c-9402-f7f6a8becae3",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C10",
+      "claim": "SARS-CoV-1 infected over 8000 people with a fatality rate of ~10%.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2003, severe acute respiratory syndrome coronavirus (SARS-CoV-1) emerged in humans after being transferred from an animal reservoir and infected over 8000 people with a fatality rate of ~10% fatality rate (Ksiazek et al., 2003; Florindo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "0c5e74e8-1341-4eeb-ae1a-964484753eec",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C11",
+      "claim": "MERS-CoV has infected over 1700 people with a fatality rate of ~36% since 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "Middle East respiratory syndrome coronavirus (MERS-CoV) has infected over 1700 people with a fatality rate of ~36% since 2012 (Zaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "6f9f3b98-58eb-4beb-a7e4-a710eff719ca",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C12",
+      "claim": "SARS-CoV-2 was identified as the cause of an outbreak of a new respiratory illness named COVID-19 in late December 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "In late December 2019, a novel coronavirus, called severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was identified as the cause of an outbreak of a new respiratory illness named COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the COVID-19 pandemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "468a0530-fb34-4569-976b-0e5c5d1e6d11",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C13",
+      "claim": "SARS-CoV-2 has caused more than 4 million deaths to date.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2 has caused more than 4 million deaths to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the pandemic death toll at the time of writing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "473686dd-924b-4298-8f46-7e8092206ba3",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C14",
+      "claim": "Coronaviruses are large, enveloped, positive-stranded RNA viruses belonging to the coronaviridae family.",
+      "claim_type": "EXPLICIT",
+      "source": "Coronaviruses are large, enveloped, positive-stranded RNA viruses belonging to the coronaviridae family, which comprises four genera: alpha-coronaviruses, beta-coronaviruses, gamma-coronaviruses, and delta-coronaviruses (Zumla et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature and represents established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "f1a522bc-20a6-4023-a247-76c768bef350",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C15",
+      "claim": "The coronaviridae family comprises four genera: alpha-coronaviruses, beta-coronaviruses, gamma-coronaviruses, and delta-coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Coronaviruses are large, enveloped, positive-stranded RNA viruses belonging to the coronaviridae family, which comprises four genera: alpha-coronaviruses, beta-coronaviruses, gamma-coronaviruses, and delta-coronaviruses (Zumla et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "8e8fa02f-6350-4377-8095-08035ca73cd4",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C16",
+      "claim": "SARS-CoV-2, SARS-CoV-1, and MERS-CoV are beta-coronaviruses that infect mammalians.",
+      "claim_type": "EXPLICIT",
+      "source": "SARS-CoV-2, SARS-CoV-1, and MERS-CoV, which infect mammalians (Wu et al., 2020), are beta-coronaviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "b2e2400b-78e7-4316-84b3-7f0e9370048b",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C17",
+      "claim": "Envelope-anchored spike proteins mediate coronavirus entry into host cells by first binding to a specific host receptor and then fusing the viral and host membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Envelope-anchored spike proteins are capable of mediating coronavirus entry into host cells by first binding to a specific host receptor and then fusing the viral and host membranes (Wu et al., 2020; Yuan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "08c71eb6-20cd-4511-a352-19c3f4ea2b59",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C18",
+      "claim": "The coronavirus spike protein is a class I fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The coronavirus spike protein, a class I fusion protein, is synthesized as a precursor single polypeptide chain consisting of three segments: a large ectodomain, a single-pass transmembrane anchor, and a short intracellular tail (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about coronavirus spike protein structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "6055dc9a-074b-4c89-99ee-105974d33d93",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C19",
+      "claim": "The coronavirus spike protein is synthesized as a precursor single polypeptide chain consisting of three segments: a large ectodomain, a single-pass transmembrane anchor, and a short intracellular tail.",
+      "claim_type": "EXPLICIT",
+      "source": "The coronavirus spike protein, a class I fusion protein, is synthesized as a precursor single polypeptide chain consisting of three segments: a large ectodomain, a single-pass transmembrane anchor, and a short intracellular tail (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by established knowledge and is illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "2bd65891-049a-4cd6-aeea-7cb8f3cb0b07",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C20",
+      "claim": "The spike protein is cleaved into an amino-terminal subunit (S1) and a carboxyl-terminal subunit (S2) by host furin-like proteases after interacting with the host receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "After interacting with the host receptor, the spike protein is cleaved into an amino-terminal subunit (S1) and a carboxyl-terminal subunit (S2) by host furin-like proteases (Yuan et al., 2017; Li, 2016; Lan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "0f81198d-2018-4697-b8fc-cd6d84d9f5bb",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C21",
+      "claim": "The receptor-binding domain (RBD) located in the C-terminal region of the S1 subunit is responsible for recognizing and binding the host receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The receptor-binding domain (RBD) located in the C-terminal region of the S1 subunit (S1 CTD) is responsible for recognizing and binding the host receptor and is critical in determining the cell tropism, host range, and zoonotic transmission of coronaviruses (Wu et al., 2020; Li, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "d48cb2ad-28fe-4249-981e-206872d594ac",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C22",
+      "claim": "The RBD is critical in determining the cell tropism, host range, and zoonotic transmission of coronaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The receptor-binding domain (RBD) located in the C-terminal region of the S1 subunit (S1 CTD) is responsible for recognizing and binding the host receptor and is critical in determining the cell tropism, host range, and zoonotic transmission of coronaviruses (Wu et al., 2020; Li, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "862bcc4b-d117-4617-b1ae-548f9a854eb2",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C23",
+      "claim": "The S2 subunit contains a hydrophobic fusion loop for membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The S2 subunit contains a hydrophobic fusion loop for membrane fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about coronavirus spike protein structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "7082f5ad-3174-494d-9131-dae9328443cf",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C24",
+      "claim": "Cryo-EM studies have illuminated the prefusion and postfusion structures of the SARS-CoV-1 and SARS-CoV-2 spike proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM studies have illuminated the prefusion and postfusion structures of the SARS-CoV-1 and SARS-CoV-2 spike proteins, implying that coronaviruses undergo conformational changes during infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to established structural biology studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "f5b86868-e188-4109-adab-0d0589d3601c",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C25",
+      "claim": "Coronaviruses undergo conformational changes during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM studies have illuminated the prefusion and postfusion structures of the SARS-CoV-1 and SARS-CoV-2 spike proteins, implying that coronaviruses undergo conformational changes during infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural studies showing different conformational states.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "1945662f-3050-4945-a3a8-265603056e0d",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C26",
+      "claim": "The spike protein forms a clove-shaped homotrimer with three S1 heads and a trimeric S2 stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "The spike protein forms a clove-shaped homotrimer with three S1 heads and a trimeric S2 stalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about spike protein structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "b1b815c4-ab08-4ea8-b670-12edc74f9429",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C27",
+      "claim": "Spike protein utilizes the CTD1 as the RBD, which changes from the 'down' conformation to the 'up' conformation to allow for receptor binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural comparisons indicated that spike protein utilizes the CTD1 (N-terminal domain in CTD) as the RBD, which changes from the 'down' conformation to the 'up' conformation and then converts from the inactivated state to the activated state to allow for receptor binding, and possibly also to initiate subsequent conformational changes of the S2 subunits to mediate membrane fusion (Yuan et al., 2017; Li, 2016; Lan et al., 2020; Kirchdoerfer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "6d90d5ff-d9d7-4c88-b3fb-a11cab69d918",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C28",
+      "claim": "The binding of spike RBD to SARS-CoV-2 and ACE2 is the first step in viral entry into the host cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of spike RBD to SARS-CoV-2 and ACE2 is the first step in viral entry into the host cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the viral entry mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "ce9c8d8e-d277-4d5f-a476-33ed75fad612",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C29",
+      "claim": "The majority of vaccines and neutralizing antibodies under development target the RBD region.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the majority of vaccines and neutralizing antibodies that are under development target this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge about vaccine and therapeutic development strategies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "272a13fc-8042-4c81-8024-70c10a6cc6e2",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C30",
+      "claim": "The B.1.1.7 variant was first detected in the United Kingdom in September 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The alpha variant (B.1.1.7 lineage) was first detected in the United Kingdom in September 2020, and another variant (B.1.351 lineage, beta) was first detected in October 2020 in the Republic of South Africa (Rahimi and Talebi Bezmin Abadi, 2021; Greaney et al., 2021; CNBC, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "87acb4b6-49bc-4d53-b5e3-f98cac5c986f",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C31",
+      "claim": "The B.1.351 variant was first detected in October 2020 in the Republic of South Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "The alpha variant (B.1.1.7 lineage) was first detected in the United Kingdom in September 2020, and another variant (B.1.351 lineage, beta) was first detected in October 2020 in the Republic of South Africa (Rahimi and Talebi Bezmin Abadi, 2021; Greaney et al., 2021; CNBC, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "aeeac438-dcea-4b18-8714-1a43af5b6340",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C32",
+      "claim": "Both B.1.1.7 and B.1.351 variants carry an N501Y mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these mutants carry an N501Y mutation, and the B.1.351 lineage has two additional mutations (K417N and E484K) within the RBD region (Figure 1B,C; Leung et al., 2021; Tu et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and illustrated in Figure 1B,C.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "5c528ff9-6e1e-4af4-84c5-416ad8a2d74c",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C33",
+      "claim": "The B.1.351 lineage has two additional mutations (K417N and E484K) within the RBD region.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these mutants carry an N501Y mutation, and the B.1.351 lineage has two additional mutations (K417N and E484K) within the RBD region (Figure 1B,C; Leung et al., 2021; Tu et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and illustrated in Figure 1B,C.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "73bdb8c1-ca50-4185-ab3b-c492af9895fc",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C34",
+      "claim": "FDA-authorized mRNA vaccines continued to induce a high level of neutralization against the B.1.1.7 variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent data suggest that the FDA-authorized mRNA vaccines continued to induce a high level of neutralization against the B.1.1.7 variant, but a lower level against B.1.351 variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on recent data mentioned in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "4fca6d92-e20d-4d96-aa2f-a289269ffb62",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C35",
+      "claim": "FDA-authorized mRNA vaccines induced a lower level of neutralization against B.1.351 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent data suggest that the FDA-authorized mRNA vaccines continued to induce a high level of neutralization against the B.1.1.7 variant, but a lower level against B.1.351 variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on recent data mentioned in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "c3794896-091e-4da8-aac6-31ab915a59c8",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C36",
+      "claim": "Some neutralizing antibodies in phase II/III clinical trials were not able to retain their neutralizing capability against the B.1.351 variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Several researchers have assessed the neutralization potency of numerous antibodies against the two new variants. Their data suggest that some neutralizing antibodies in phase II/III clinical trials were not able to retain their neutralizing capability against the B.1.351 variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on research data mentioned in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "16948d1a-d347-4f91-be3c-0be54addf261",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C37",
+      "claim": "The structure of the RBD\u2013ACE2 complex showed that extensive interactions are formed between RBD and ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the RBD\u2013ACE2 complex showed that extensive interactions are formed between RBD and ACE2 (Lu et al., 2020; Bauer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "60e5eff5-d04e-4a2f-8861-371654ba7819",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C38",
+      "claim": "ACE2 with a mCherry fused at the C-terminus was located mainly in the cell membrane and endoplasmic reticulum.",
+      "claim_type": "EXPLICIT",
+      "source": "ACE2 with a mCherry fused at the C-terminus was transfected into HEK293 cells. Confocal microscopic images subsequently showed that ACE2 was located mainly in the cell membrane and endoplasmic reticulum (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "c316bf7f-dfdc-44d4-9605-52263b986310",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C39",
+      "claim": "ACE2\u2013mCherry-positive cells showed co-localization of RBD and ACE2 on the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "ACE2\u2013mCherry-positive cells were stained with AlexaFluor488 labeled-RBD, and the overlay images showed the co-localization of RBD and ACE2 on the cell surface (Figure 1F), validating their interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal microscopy data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "4b8b76d8-a9e2-4aa3-acbc-bf1b3d537ca5",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C40",
+      "claim": "The Kd of RBD from SARS-CoV-2 for ACE2 on the surface of cells is about 50 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "To measure the binding affinity of RBD from SARS-CoV-2 for ACE2 on the surface of cells, saturation binding was performed using fluorescence flow cytometry by titration of Alexa488-RBD without washing the cells, which yielded a Kd of about 50 nM (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "31d8cf30-d17c-4e77-9dd4-ce7beb31c24a",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C41",
+      "claim": "Competition binding assay showed a similar affinity of 50 nM for RBD to ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed a competition-binding assay by titrating unlabeled RBD to compete with 100 nM Alexa488-RBD, which showed a similar affinity of 50 nM (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competition binding assay data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "59efcd29-229b-4efc-8306-b191dac14630",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C42",
+      "claim": "The N501Y mutation from the B.1.1.7 variant showed a fourfold greater affinity than wild-type RBD for the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The N501Y mutation from the B.1.1.7 variant showed a fourfold greater affinity than wild-type RBD for the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by competition binding assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "3547c94e-f025-4701-9932-7d2d85a6caff",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C43",
+      "claim": "The N501Y, K417N, E484K triple mutation resulted in an affinity similar to that of the wild type RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation resulted in a slightly weaker or similar affinity to cell-surface ACE2, whereas the N501Y, K417N, E484K triple mutation resulted in an affinity similar to that of the wild type RBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by competition binding assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "53102f54-83c9-4087-b977-7ed83ee61b27",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C44",
+      "claim": "N501Y is the key residue change that increases binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated that N501Y is the key residue change that increases binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the binding affinity data from competition assays.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "99df3962-9eec-4bd9-ae34-a88fa5b9ed59",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C45",
+      "claim": "RBDN501Y and RBDTriple showed a 10-fold increase in affinity compared to RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to RBD, both RBDN501Y and RBDTriple showed a 10-fold increase in affinity, which resulted from a significantly lower off-rate and a slightly higher on-rate (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SPR data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "1ad4e4e3-af17-4583-aa2a-00e00b304dc0",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C46",
+      "claim": "The 10-fold increase in affinity for RBDN501Y and RBDTriple resulted from a significantly lower off-rate and a slightly higher on-rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to RBD, both RBDN501Y and RBDTriple showed a 10-fold increase in affinity, which resulted from a significantly lower off-rate and a slightly higher on-rate (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SPR kinetics data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "3c6a50fb-7b07-4c92-8248-ec4fe235bd6f",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C47",
+      "claim": "Two other amino acid mutations (K417N and E484K) had less impact on ACE2 binding than N501Y.",
+      "claim_type": "EXPLICIT",
+      "source": "Two other amino acid mutations (K417N and E484K) had less impact on ACE2 binding, as verified by two single-point mutants (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SPR data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "2da4181b-eed9-44c6-86f5-37267daf68e6",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C48",
+      "claim": "N501Y, rather than the other two mutations, is responsible for increasing binding affinity by slowing the rate of dissociation from the ACE2 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "This result again emphasized the role of N501Y, rather than the other two mutations, in increasing binding affinity by slowing the rate of dissociation from the ACE2 receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the SPR kinetics data comparing different mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "e1e13970-349f-4cc2-bad2-58395fd7fa48",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C49",
+      "claim": "AFM-SMFS is a powerful single-molecule nanotechnology that can be used to manipulate a single molecule or several molecules mechanically.",
+      "claim_type": "EXPLICIT",
+      "source": "AFM-SMFS is a powerful single-molecule nanotechnology that can be used like optical and magnetic tweezers to manipulate a single molecule or several molecules mechanically (Jobst et al., 2015; Walder et al., 2017; Alonso-Caballero et al., 2021; L\u00f6f et al., 2019; Huang et al., 2019; Zhang et al., 2019; Xing et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature about AFM-SMFS methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "4064ce1c-e5d9-4a6c-89b3-b960f63a0ab5",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C50",
+      "claim": "AFM-SMFS has been widely used to study protein mechanics and protein\u2013protein interactions, including the interaction between the spike proteins of viruses and living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been widely used to study protein mechanics and protein\u2013protein interactions, including the interaction between the spike proteins of viruses and living cells (Kim et al., 2010; Cuellar-Camacho et al., 2020; Yang et al., 2020; Sieben et al., 2012; Alsteens et al., 2017b; Yu et al., 2019; Ma et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature about AFM-SMFS applications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "75a6fda3-14c9-4b9c-b16e-c76c1922fa18",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C51",
+      "claim": "A previous AFM experiment identified the binding events between the wild-type RBD and human ACE2 transfected on A549 cells, obtaining their binding probability and unbinding force/kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous AFM experiment identified the binding events between the wild-type RBD and human ACE2 transfected on A549 cells, obtaining their binding probability and unbinding force/kinetics (Yang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "6b60c701-9b33-44bd-b525-05064564dc92",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C52",
+      "claim": "14% of the events involved a specific interaction between RBDN501Y and ACE2 at a pulling speed of 5 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 2815 data points on force-extension curves (using a pulling speed of 5 \u00b5m/s) have been obtained by probing ACE2-transfected cells with a RBDN501Y-functionalized AFM tip. As indicated by an unbinding force of >20 pN, 14% of the events involved a specific interaction between RBDN501Y and ACE2 (Figure 3D curve 4, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data shown in Figure 3D and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "1190dd6d-6517-42db-9431-55b7c002c309",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C53",
+      "claim": "The binding probability for RBD with ACE2 was 3.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "The same experiments and analysis were performed for RBD (3.3%) and RBDTriple (11.2%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "b1e4ac28-6bd7-486d-8c1f-533db53e59df",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C54",
+      "claim": "The binding probability for RBDTriple with ACE2 was 11.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "The same experiments and analysis were performed for RBD (3.3%) and RBDTriple (11.2%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "2d2c5f34-f429-40a6-b634-36a53d48e728",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C55",
+      "claim": "The interaction between RBD and untransfected normal HEK293 cells was 1.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between RBD and untransfected normal HEK293 cells (1.7%) was also measured as a control (Figure 3\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data shown in Figure 3\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "d5adff11-0e06-460b-9b17-34f69c921349",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C56",
+      "claim": "The mean unbinding force for RBD was 49 \u00b1 11 pN (n = 349).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean unbinding forces for RBD, RBDN501Y, and RBDTriple were 49 \u00b1 11 pN (n = 349), 57 \u00b1 18 pN (n = 394), and 56 \u00b1 12 pN (n = 312), respectively (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "5d97efe5-9a2f-4c31-87dc-25b927197dae",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C57",
+      "claim": "The mean unbinding force for RBDN501Y was 57 \u00b1 18 pN (n = 394).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean unbinding forces for RBD, RBDN501Y, and RBDTriple were 49 \u00b1 11 pN (n = 349), 57 \u00b1 18 pN (n = 394), and 56 \u00b1 12 pN (n = 312), respectively (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "b7af6d2b-981d-4218-bc33-1f6de45d833f",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C58",
+      "claim": "The mean unbinding force for RBDTriple was 56 \u00b1 12 pN (n = 312).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean unbinding forces for RBD, RBDN501Y, and RBDTriple were 49 \u00b1 11 pN (n = 349), 57 \u00b1 18 pN (n = 394), and 56 \u00b1 12 pN (n = 312), respectively (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "bc260f24-9108-4e90-86b3-48569941361a",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C59",
+      "claim": "Both RBD mutants showed a higher binding probability and unbinding force than the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Both RBD mutants showed a higher binding probability and unbinding force than the wild type, while the properties of the two variants are similar to each other (Figure 3C,D, Figure 3\u2014figure supplement 2B-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data shown in Figure 3C,D and Figure 3\u2014figure supplement 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "810f6cd2-99e3-44ea-a6da-6894349b2a0d",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C60",
+      "claim": "The properties of the two variants (RBDN501Y and RBDTriple) are similar to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Both RBD mutants showed a higher binding probability and unbinding force than the wild type, while the properties of the two variants are similar to each other (Figure 3C,D, Figure 3\u2014figure supplement 2B-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data shown in Figure 3C,D and Figure 3\u2014figure supplement 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "46bd248a-a34d-4590-bc07-4429af0d7645",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C61",
+      "claim": "RBDK417N showed an unbinding force of 40 \u00b1 11 pN (n = 894).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also performed AFM measurements on RBDK417N (40 \u00b1 11 pN, n = 894) and RBDE484K (41 \u00b1 11 pN, n = 606) (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "828cf778-119c-4c3d-bd96-afcd303255e1",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C62",
+      "claim": "RBDE484K showed an unbinding force of 41 \u00b1 11 pN (n = 606).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also performed AFM measurements on RBDK417N (40 \u00b1 11 pN, n = 894) and RBDE484K (41 \u00b1 11 pN, n = 606) (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "a3b71ac7-9fe5-453a-a052-eab8904430e8",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C63",
+      "claim": "RBDK417N and RBDE484K showed weaker unbinding forces than wild type RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutant RBDs showed weaker unbinding forces than wild type RBD, in agreement with previous ensemble measurements and verifying our single-molecule results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM-SMFS experimental data and is consistent with other measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "17f53bad-b963-4319-b0b8-4e2c9cc27bcb",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C64",
+      "claim": "According to the Bell\u2013Evans model, the force that is externally applied by AFM lowers the unbinding activation energy.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the Bell\u2013Evans model, the force that is externally applied by AFM lowers the unbinding activation energy (Merkel et al., 1999; Yu et al., 2017; Zheng and Li, 2011; Garcia-Manyes and Beedle, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature about the Bell-Evans model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "4cc67372-fc7b-4040-ab03-0c0f033b3fc2",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C65",
+      "claim": "The binding strength of the ligand\u2013receptor bond is proportional to the logarithm of the loading rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the binding strength of the ligand\u2013receptor bond (i.e. interaction) is proportional to the logarithm of the loading rate, which describes the effect of the force applied on the bond over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a principle of the Bell-Evans model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "90504446-043a-474a-b2d8-5b98d1c37c46",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C66",
+      "claim": "The koff of RBDN501Y is 0.030 \u00b1 0.017 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the koff of the two RBD mutants are close to each other (0.030 \u00b1 0.017 s\u22121 and 0.035 \u00b1 0.024  s\u22121) but slower than that of the wild-type RBD (0.075 \u00b1 0.048  s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM-SMFS data fitted to the Bell-Evans model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "4d8dda84-8ccc-42e6-a428-13eac7284ba3",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C67",
+      "claim": "The koff of RBDTriple is 0.035 \u00b1 0.024 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the koff of the two RBD mutants are close to each other (0.030 \u00b1 0.017 s\u22121 and 0.035 \u00b1 0.024  s\u22121) but slower than that of the wild-type RBD (0.075 \u00b1 0.048  s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM-SMFS data fitted to the Bell-Evans model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "cfc34404-06fa-4c16-925b-9f8b7dccd421",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C68",
+      "claim": "The koff of wild-type RBD is 0.075 \u00b1 0.048 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the koff of the two RBD mutants are close to each other (0.030 \u00b1 0.017 s\u22121 and 0.035 \u00b1 0.024  s\u22121) but slower than that of the wild-type RBD (0.075 \u00b1 0.048  s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM-SMFS data fitted to the Bell-Evans model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "884e4adf-69d4-43c4-bcce-c33c34c4bba7",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C69",
+      "claim": "The koff of the two RBD mutants are slower than that of the wild-type RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the koff of the two RBD mutants are close to each other (0.030 \u00b1 0.017 s\u22121 and 0.035 \u00b1 0.024  s\u22121) but slower than that of the wild-type RBD (0.075 \u00b1 0.048  s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM-SMFS data fitted to the Bell-Evans model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "e6c26ac7-b8a3-4408-9db1-76284383b5f0",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C70",
+      "claim": "In the wild-type RBD\u2013ACE2 interaction, T500 forms two hydrogen bonds with Y41 and D355 from ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild-type RBD\u2013ACE2 interaction, T500 forms two hydrogen bonds with Y41 and D355 from ACE2; K417 from RBD forms a salt bridge with D30 from ACE2; and N487 forms one hydrogen bond with Y83 (Figure 4A, snapshot 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SMD simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "f08543d7-3c82-4192-af21-b347c593dc3f",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C71",
+      "claim": "K417 from RBD forms a salt bridge with D30 from ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild-type RBD\u2013ACE2 interaction, T500 forms two hydrogen bonds with Y41 and D355 from ACE2; K417 from RBD forms a salt bridge with D30 from ACE2; and N487 forms one hydrogen bond with Y83 (Figure 4A, snapshot 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SMD simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "49fcd36b-f571-4c23-8ce3-8cbe4b28c6ee",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C72",
+      "claim": "N487 forms one hydrogen bond with Y83.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild-type RBD\u2013ACE2 interaction, T500 forms two hydrogen bonds with Y41 and D355 from ACE2; K417 from RBD forms a salt bridge with D30 from ACE2; and N487 forms one hydrogen bond with Y83 (Figure 4A, snapshot 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SMD simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "24446906-4735-4ba1-8b0d-ecf11cac1df5",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C73",
+      "claim": "The rupture force for the wild-type RBD-ACE2 complex was simulated as 427 \u00b1 58 pN (n = 20).",
+      "claim_type": "EXPLICIT",
+      "source": "This force was defined as the rupture or disassociation force for the complex and was simulated as 427 \u00b1 58 pN (n = 20, Figure 4A, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SMD simulation data shown in Figure 4A and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "33bf8e25-73db-48aa-a5fc-18934ffec7c9",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C74",
+      "claim": "In the RBDN501Y\u2013ACE2 complex, Y501 forms an additional \u03c0-\u03c0 interaction with Y41 and an additional \u03c0-cation interaction with K353.",
+      "claim_type": "EXPLICIT",
+      "source": "In the RBDN501Y\u2013ACE2 complex, Y501 forms an additional \u03c0-\u03c0 interaction with Y41 and an additional \u03c0-cation interaction with K353 (Figure 4B, snapshot 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SMD simulation data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "700c7ce3-c61c-459c-b93f-c1a8d14c11df",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C75",
+      "claim": "An elevated unbinding force of 499 \u00b1 67 pN (n = 20) was obtained for the complex between RBDN501Y and ACE2 compared to that for the complex between wild-type RBD and ACE2 (p=8.29 e\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "An elevated unbinding force of 499 \u00b1 67 pN (n = 20) was obtained for the complex between RBDN501Y and ACE2 compared to that for the complex between wild-type RBD and ACE2 (p=8.29 e\u20134, Figure 4B, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SMD simulation data shown in Figure 4B and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "2970af76-9d92-4f7a-a055-265ff4d0d061",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C76",
+      "claim": "RBDTriple might have a stronger contact than wild-type RBD with ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, SMD simulations revealed that RBDTriple might also have a stronger contact than wild-type RBD with ACE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on SMD simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "98896c1f-ca44-4d63-a2ff-d4b0d401e93f",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C77",
+      "claim": "The unbinding force for RBDTriple was 521 \u00b1 65 pN (p=2.33 e\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "The unbinding force was 521 \u00b1 65 pN (p=2.33 e\u20135, Figure 4C, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SMD simulation data shown in Figure 4C and Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "624c21b0-64fd-4616-8ef4-1b3a2fcb313e",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C78",
+      "claim": "For the wild-type RBD\u2013ACE2 complex, the distances between residue N501 and residues Y41 and K353 increased significantly at a shorter extension along the pulling pathway at the distance of 2.2 \u00b1 0.7 nm (n = 20).",
+      "claim_type": "EXPLICIT",
+      "source": "For the wild-type RBD\u2013ACE2 complex, the distances between residue N501 and residues Y41 (Figure 4D) and K353 (Figure 4E) increased significantly at a shorter extension along the pulling pathway (purple line) at the distance of 2.2 \u00b1 0.7 nm (n = 20), indicating no interaction between these residues in the RBD\u2013ACE2 complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SMD simulation data shown in Figure 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "e95351a1-2a7e-4c69-ae7c-1a84640584c2",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C79",
+      "claim": "For RBDN501Y, the distances showed a smaller increase at an extension of 2.9 \u00b1 0.8 nm (p=5.38 e\u20133, n = 20).",
+      "claim_type": "EXPLICIT",
+      "source": "For the two variants (Figure 4D,E), the distances showed a smaller increase at an extension of 2.9 \u00b1 0.8 nm (p=5.38 e\u20133, orange line, n = 20) and 3.3 \u00b1 0.8 nm (p=6.39 e\u20135, green line, n = 20), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SMD simulation data shown in Figure 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "d9649afc-2433-4453-af03-b1ff2f6c5adc",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C80",
+      "claim": "For RBDTriple, the distances showed a smaller increase at an extension of 3.3 \u00b1 0.8 nm (p=6.39 e\u20135, n = 20).",
+      "claim_type": "EXPLICIT",
+      "source": "For the two variants (Figure 4D,E), the distances showed a smaller increase at an extension of 2.9 \u00b1 0.8 nm (p=5.38 e\u20133, orange line, n = 20) and 3.3 \u00b1 0.8 nm (p=6.39 e\u20135, green line, n = 20), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SMD simulation data shown in Figure 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "87017ae8-614c-450b-9466-8d68ce528125",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C81",
+      "claim": "SMD simulations demonstrate that the RBDN501Y\u2013ACE2 and RBDTriple\u2013ACE2 complexes have a higher unbinding force than wild-type RBD\u2013ACE2 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the SMD simulations further demonstrate that the RBDN501Y\u2013ACE2 and RBDTriple\u2013ACE2 complexes have a higher unbinding force than wild-type RBD\u2013ACE2 complexes, and that the additional \u03c0-\u03c0 and cation-\u03c0 interactions that result from the N501Y mutation may provide the molecular mechanism that underlies this result.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on SMD simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "997627a6-0341-4499-9178-cab263cb60d9",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C82",
+      "claim": "The additional \u03c0-\u03c0 and cation-\u03c0 interactions that result from the N501Y mutation may provide the molecular mechanism that underlies the higher unbinding force.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the SMD simulations further demonstrate that the RBDN501Y\u2013ACE2 and RBDTriple\u2013ACE2 complexes have a higher unbinding force than wild-type RBD\u2013ACE2 complexes, and that the additional \u03c0-\u03c0 and cation-\u03c0 interactions that result from the N501Y mutation may provide the molecular mechanism that underlies this result.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on SMD simulation data showing specific molecular interactions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "db5e8957-6473-486d-a504-85672b8c8661",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C83",
+      "claim": "Coronaviruses have a remarkable mutation rate that allows them to evolve in a way that affects their transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Coronaviruses are large, enveloped, positive-stranded RNA viruses that have a remarkable mutation rate that allows them to evolve in a way that affects their transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RNA virus evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "b9bba390-042e-44ae-9edd-a998c665d5a1",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C84",
+      "claim": "Of the three mutations examined in this work, the N501Y mutation in the RBD has the most significant role in binding and dissociation from the ACE2 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we combined cell-surface-binding assays, mechanical manipulation by AFM-SMFS, and molecular dynamics simulations to understand the behavior of key mutations recently detected in B.1.1.7 and B.1.351 variants that affect RBD binding. All of these methodologies suggested that, of the three mutations examined in this work, the N501Y mutation in the RBD has the most significant role in binding and dissociation from the ACE2 receptor .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple experimental and computational approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "bf7d815b-f76d-440e-a5f8-2ecdb43dc83a",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C85",
+      "claim": "RBDN501Y had increased kon and binding probability and decreased koff compared to wild-type RBD.",
+      "claim_type": "EXPLICIT",
+      "source": "SPR and AFM-SMFS measurements consistently showed that RBDN501Y had increased kon and binding probability and decreased koff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SPR and AFM-SMFS experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "9b7b4ef8-83c7-4090-bf2d-68ab521ff0a3",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C86",
+      "claim": "SPR was performed on the complex between RBD and isolated ACE2 protein, whereas the other two measurements were performed on the complex between RBD and ACE2 on living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noted that SPR was performed on the complex between RBD and isolated ACE2 protein, whereas the other two measurements were performed on the complex between RBD and ACE2 on living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the different experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "35c31fff-128e-4e8e-a566-617ada56e30d",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C87",
+      "claim": "The more complex cell surface of living cells, where other proteins or receptors may interact with RBD in a non-specific and weaker way, may account for the relatively weak results observed at the cellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "The more complex cell surface of living cells, where other proteins or receptors may interact with RBD in a non-specific and weaker way, may account for the relatively weak results observed at the cellular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why cellular measurements differ from isolated protein measurements.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "6e5009a3-ae96-4894-a32a-c6d6a71b9d4c",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C88",
+      "claim": "The AFM unbinding results indicated a fraction of non-specific interactions between RBDs and the surface of untransfected normal cells (~5% for a RBD monomer on HEK293 cells studied here, ~10% for a S1/RBD homotrimer on A549 cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the AFM unbinding results indicated a fraction of non-specific interactions between RBDs and the surface of untransfected normal cells (~5% for a RBD monomer on HEK293 cells studied here, ~10% for a S1/RBD homotrimer on A549 cells) (Alsteens et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM data and a citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "e890ff45-288e-4332-adfa-4cda3a2754c7",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C89",
+      "claim": "Previous AFM results on wild-type RBD showed a higher specific binding probability than that observed in this study (~20% vs. ~15%).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous AFM results on wild-type RBD showed a higher specific binding probability than that observed in this study (~20% vs. ~15%), possibly resulting from different RBD construct and immobilization methods and the use of different host (A549) cells (Yang et al., 2020; Deng et al., 2019; Cao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares current results with previous studies and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "8b0c9153-5651-46c2-b536-4c790505dc89",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C90",
+      "claim": "The specific unbinding forces detected for the RBD\u2013ACE2 complex (~50 pN) in the two experiments are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the specific unbinding forces detected for the RBD\u2013ACE2 complex (~50 pN) in the two experiments are similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares current results with previous studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "9ab182b7-7bec-4ff6-b7e1-a0a2b06fb676",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C91",
+      "claim": "The unbinding force measured (~50 pN) is much smaller than the typical force needed to pull a membrane-bound protein out of a cell membrane (~100 pN).",
+      "claim_type": "EXPLICIT",
+      "source": "First, the unbinding force that was measured (~50 pN) is much smaller than the typical force needed to pull a membrane-bound protein out of a cell membrane (~100 pN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim uses established knowledge about membrane protein extraction forces to interpret the experimental results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "ccc7afc0-903c-47b8-ab9b-0743beaa5edf",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C92",
+      "claim": "Previous work on purified ACE2 protein and wild-type RBD showed a rupture force of ~50 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, previous work on purified ACE2 protein and wild-type RBD showed a rupture force of ~50 pN (Yang et al., 2020; Cao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "a7cce8a1-d6ae-4d8d-a77b-aac0fa03b1ed",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C93",
+      "claim": "E484K contributed less to the interaction increment than N501Y.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the results from flow cytometry showed that E484K contributed less to the interaction increment than N501Y, whereas K417N even decreased the interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "aa49dde1-6625-4be5-86fa-79b64f462e6c",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C94",
+      "claim": "K417N decreased the interaction between RBD and ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the results from flow cytometry showed that E484K contributed less to the interaction increment than N501Y, whereas K417N even decreased the interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "105a0524-12af-48a7-8b5f-6b25ab13074f",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C95",
+      "claim": "The effects of the E484K and K417N mutations may cancel each other out, and N501Y is the dominant site in affecting the interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of the E484K and K417N mutations may cancel each other out, and N501Y is the dominant site in affecting the interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the binding data for different mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "5abac0c0-7459-4a55-afee-c912cc5fb228",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C96",
+      "claim": "The combination of all three mutations in RBDTriple lead to an effect that was similar to that of RBDN501Y.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the combination of all three of these mutations in RBDTriple lead to an effect that was similar to that of RBDN501Y.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the binding data comparing RBDN501Y and RBDTriple.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "5fc805c8-4290-4905-8294-aea7b29af603",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C97",
+      "claim": "A similar koff value is obtained for RBDN501Y and RBDTriple from AFM-SMFS measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a similar koff value is obtained for RBDN501Y and RBDTriple from AFM-SMFS measurement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM-SMFS kinetics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "e77ce35a-4397-430d-b7a2-d7f2a9436ed5",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C98",
+      "claim": "Additional interactions are present for the N501Y mutant RBD and are responsible for the increased rupture force.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the results of SMD simulations are essential parts of our work, revealing that additional interactions are present for the N501Y mutant RBD and are responsible for the increased rupture force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on SMD simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "8c8e4376-7b10-4c7b-bb0d-93392da9756a",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C99",
+      "claim": "A higher pulling speed typically leads to a higher rupture or dissociation force.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a higher pulling speed typically leads to a higher rupture or dissociation force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about force spectroscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "d02208db-7ef7-448e-a900-8d47991eafa7",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C100",
+      "claim": "The P.1 lineage (gamma) variant was identified in January 2021 in Brazil.",
+      "claim_type": "EXPLICIT",
+      "source": "Another SARS-CoV-2 variant, P.1 lineage (gamma), was identified in January 2021 in Brazil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about a SARS-CoV-2 variant.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "e4ac5a59-436a-4eb6-bbd3-50dde5e30279",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C101",
+      "claim": "The P.1 variant may affect the ability of antibodies to recognize and neutralize the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies found that, like the two variants studied in this work, it may also affect the ability of antibodies to recognize and neutralize the virus (Hodcroft et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "094aef9f-20a6-455c-b8ff-3232ee1a0ca9",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C102",
+      "claim": "Three key mutations (N501Y, E484K, and K417T) are found in the RBD of the P.1 variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, three key mutations (N501Y, E484K, and K417T) are found in the RBD of the P.1 variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about the P.1 variant's genetic characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "eaee57f7-9205-4fa1-9710-14614d9a9602",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C103",
+      "claim": "N501Y is a critical mutation that affects the transmission of COVID-19 by strengthening the interaction between RBD and ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, we believe that N501Y is a critical mutation that affects the transmission of COVID-19 by strengthening the interaction between RBD and ACE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental and computational data presented in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "469ce1d0-a17f-4010-9fe0-ef45494180bf",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C104",
+      "claim": "The strong interaction of the N501Y mutant RBD leads to the tighter binding of SARS-CoV-2 to the host cell, allowing complete membrane fusion or the internalization of the receptor with the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong interaction of the N501Y mutant RBD leads to the tighter binding of SARS-CoV-2 to the host cell, allowing complete membrane fusion or the internalization of the receptor with the virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the biological consequences of stronger RBD-ACE2 binding.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "07d8b230-27e3-4f6a-b36e-05aaeb64931a",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C105",
+      "claim": "The enhanced affinity of SARS-CoV-2 variants for host cells may contribute to the observed increase in infectivity by lowering the effective virion concentration required for cell entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we speculate that the enhanced affinity of SARS-CoV-2 variants for host cells may contribute to the observed increase in infectivity by lowering the effective virion concentration required for cell entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of increased infectivity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "a3a6a246-4890-4163-b701-554bc80a3140",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C106",
+      "claim": "A modest change in affinity could cause a significant increase in the infection rate.",
+      "claim_type": "EXPLICIT",
+      "source": "A modest change in affinity could cause a significant increase in the infection rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the relationship between binding affinity and infection rate.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "5452e3cf-a64f-485d-8936-a6bdabf97b2d",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C107",
+      "claim": "The alpha variant of SARS-CoV-2, which contains the N501Y mutation, had become the most common lineage in the United States by June 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the alpha variant of SARS-CoV-2, which contains the N501Y mutation, had become the most common lineage in the United States by June 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about the spread of the alpha variant.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "f80a4f25-0997-4531-b64f-a851ca4dc891",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C108",
+      "claim": "Several other SARS-CoV-2 variants, such as delta, epsilon, and kappa, have been found very recently during the revision of this work.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noted that several other SARS-CoV-2 variants, such as delta, epsilon, and kappa, have been found very recently during the revision of our work (Kim et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is factual information about emerging variants, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "46e153ff-09a9-4d26-a5ed-610d333b104b",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C109",
+      "claim": "Some SARS-CoV-2 variants have very high transmission rates and have been proposed to be more dangerous.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these variants have very high transmission rates and have been proposed to be more dangerous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge about the characteristics of emerging variants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "ca1b7217-8595-4167-8cd0-4fa9217251d6",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C110",
+      "claim": "Other mutations in the RBD might increase the binding of the virus to the human receptor ACE2, leading to a similar effect as N501Y.",
+      "claim_type": "EXPLICIT",
+      "source": "Although they do not contain the N501Y mutation, other mutations in the RBD might increase the binding of the virus to the human receptor ACE2, leading to a similar effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential effects of other RBD mutations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "58f77569-1baf-4a9c-824c-28adfab69a0f",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C111",
+      "claim": "SARS-CoV-2 is an RNA virus that is evolving rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "As an RNA virus, SARS-CoV-2 is evolving rapidly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RNA virus evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "eb29b3c7-9e0f-4f68-969c-d9f311bf465f",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C112",
+      "claim": "Future dangerous mutations causing even higher transmission to humans or other creatures are very possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Hundreds of millions of human beings have been affected, and the virus is still spreading rapidly, so future dangerous mutations causing even higher transmission to humans or other creatures are very possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future viral evolution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "29aa2316-969e-466d-af05-2ecef1dd84a7",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C113",
+      "claim": "Further surveillance, diagnosis, evaluation, and treatment of mutated SARS-CoV-2 strains are necessary.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, further surveillance, diagnosis, evaluation, and treatment of mutated SARS-CoV-2 strains are necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings about viral mutations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "00ed9bd6-f6fb-4054-886e-5c80cd33d84e",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C114",
+      "claim": "Most vaccines are designed on the basis of the RBD or spike protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Nowadays, most vaccines are designed on the basis of the RBD or spike protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge about vaccine design strategies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "b92cd545-fa09-4374-863a-2e1cb8aa77c0",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C115",
+      "claim": "Neutralizing antibodies from these vaccines mainly target the RBD to weaken its binding to ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutralizing antibodies from these vaccines mainly target the RBD to weaken its binding to ACE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge about how neutralizing antibodies work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "5c7fdb52-8790-4bc8-bb93-3afb47d6e023",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C116",
+      "claim": "A RBD with the N501Y mutation has a 5\u201310 times higher affinity than wild-type RBD for ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that a RBD with the N501Y mutation has a 5\u201310 times higher affinity than wild-type RBD for ACE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from SPR and other assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "c2540374-9c7c-4f4c-9b88-fe35d03180fa",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C117",
+      "claim": "Additional mutations within the receptor-binding site (K417N and E484K) changed the amino acid sequence of the epitope and may contribute to the escape from antibody binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional mutations within the receptor-binding site (K417N and E484K) changed the amino acid sequence of the epitope and may contribute to the escape from antibody binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how mutations affect antibody recognition.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "1635e4f0-317f-4bff-a81f-612df9b63958",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C118",
+      "claim": "A higher vaccine-induced antibody titer or neutralizing antibodies of higher affinity are needed to compete for the RBDN501Y\u2013ACE2 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a higher vaccine-induced antibody titer or neutralizing antibodies of higher affinity are needed to compete for the RBDN501Y\u2013ACE2 interaction (Chen et al., 2021; Focosi and Maggi, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the stronger binding of RBDN501Y, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "3f575f75-4545-4489-a944-c65f113276b6",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "claim_id": "C119",
+      "claim": "The current vaccine will be less effective against SARS-CoV-2 variants that contain the N501Y mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "This will make the current vaccine less effective against SARS-CoV-2 variants that contain the N501Y mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about vaccine effectiveness based on the stronger RBD-ACE2 binding.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fab667e5-a250-42cb-b9b6-98ab566dcade",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cell-surface binding assays using flow cytometry demonstrated that RBD binds to ACE2-expressing HEK293 cells with a Kd of approximately 50 nM. Confocal microscopy confirmed co-localization of fluorescently labeled RBD with ACE2-mCherry on the cell surface, validating the interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by confocal microscopy (Figure 1F) and flow cytometry data (Figures 1G-H) showing consistent Kd values of ~50 nM from both saturation and competition binding assays. The methodological approach is appropriate for measuring cell-surface binding affinity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "63b23af3-a07e-416a-88ba-f2aefb56f5cc",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Competition binding assays revealed that the N501Y mutation is the key residue change responsible for increased binding affinity to cell-surface ACE2, showing a fourfold greater affinity than wild-type RBD. The triple mutant (N501Y/K417N/E484K) showed affinity similar to wild-type, as K417N decreased binding while E484K contributed less than N501Y, with effects canceling out.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 and C93-C96 are supported by competition binding data (Figure 1H) showing N501Y has the strongest effect on binding affinity. The interpretation that K417N and E484K effects cancel each other is a reasonable inference from the data showing RBDTriple has similar affinity to wild-type despite containing N501Y.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "f7e070c3-f983-4511-88e9-237c51a893a6",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Surface plasmon resonance (SPR) measurements demonstrated that RBDN501Y and RBDTriple exhibit a 10-fold increase in affinity for ACE2 compared to wild-type RBD, resulting from a significantly lower off-rate (koff) and slightly higher on-rate (kon). Single-point mutants K417N and E484K had less impact on binding than N501Y.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are well-supported by SPR data (Figure 2, Figure 2\u2014figure supplement 1) showing quantitative kinetic parameters. The 10-fold affinity increase is clearly demonstrated with appropriate fitting to a 1:1 binding model. The conclusion that N501Y is primarily responsible for slowing dissociation is supported by comparative kinetics data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AFM-SMFS measurements quantified binding probability and unbinding forces for RBD-ACE2 interactions on living cells. RBDN501Y (14% binding probability, 57\u00b118 pN) and RBDTriple (11.2%, 56\u00b112 pN) showed higher binding probability and unbinding force than wild-type RBD (3.3%, 49\u00b111 pN). Single mutants K417N (40\u00b111 pN) and E484K (41\u00b111 pN) showed weaker unbinding forces than wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C63 are supported by extensive AFM-SMFS data (Figure 3, supplementary figures) with large sample sizes (n=312-894 events). The measurements include appropriate controls (untransfected cells showing 1.7% interaction). The statistical differences between mutants and wild-type are clear, though the absolute force differences are modest (~10 pN, ~15% increase).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "2fbc984d-2203-4d92-9847-e5abf5b83458",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AFM-SMFS data fitted to the Bell-Evans model revealed that the koff values for RBDN501Y (0.030\u00b10.017 s\u207b\u00b9) and RBDTriple (0.035\u00b10.024 s\u207b\u00b9) are approximately 2-3 fold slower than wild-type RBD (0.075\u00b10.048 s\u207b\u00b9), indicating more stable complexes for the mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 are supported by AFM-SMFS kinetics analysis (Figure 3F, Figure 3\u2014figure supplement 4) using the Bell-Evans model. The koff values are derived from loading rate-dependent force measurements at multiple pulling speeds. The error bars are substantial but the trend is clear and consistent with SPR data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "f2ec3574-244b-417a-9cd1-09ed045ef431",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Steered molecular dynamics (SMD) simulations revealed that the N501Y mutation introduces additional \u03c0-\u03c0 interactions with Y41 and \u03c0-cation interactions with K353 in ACE2. This results in elevated unbinding forces for RBDN501Y (499\u00b167 pN) and RBDTriple (521\u00b165 pN) compared to wild-type RBD (427\u00b158 pN). Distance measurements during pulling confirmed that Y501 maintains interactions with Y41 and K353 longer during dissociation than N501 in wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C82 are supported by SMD simulation data (Figure 4) with n=20 simulations per condition and statistically significant differences (p<0.001). The simulations provide molecular-level mechanistic insights explaining the experimental observations. However, the pulling speed (5 \u00c5/ns = 0.5 m/s) is much faster than experimental speeds (5 \u00b5m/s), which is acknowledged but limits quantitative comparison of absolute force values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "a0132d8a-09f0-4e40-b9ab-98cf7b43be2a",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Integrating cell-surface binding assays, SPR, AFM-SMFS, and molecular dynamics simulations, the study demonstrates that the N501Y mutation is the most significant contributor to enhanced RBD-ACE2 binding among the three mutations examined. The mutation results in 5-10 fold higher affinity through faster association, slower dissociation, increased binding probability, and higher unbinding force, mediated by additional \u03c0-\u03c0 and \u03c0-cation interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C84-C85, C103, and C116 represent the main conclusions supported by convergent evidence from multiple complementary techniques. The 5-10 fold affinity increase is consistently observed across SPR (10-fold) and cell-based assays (4-fold). The mechanistic explanation from simulations is consistent with experimental observations. This represents a well-supported major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "73e85a9c-98e7-4212-8206-ac9600c874bc",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors conclude that the reinforced RBD-ACE2 interaction from the N501Y mutation plays an essential role in higher transmission rates of SARS-CoV-2 variants, potentially by lowering the effective virion concentration required for cell entry and enabling tighter binding that facilitates membrane fusion. They further suggest this will make current vaccines less effective against N501Y-containing variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C104-C106, and C119 represent speculative inferences about transmission and vaccine effectiveness based on the binding data. While the enhanced binding affinity is well-demonstrated, the causal link to increased transmission is not directly tested. The relationship between binding affinity and infectivity/transmission is complex and involves many factors beyond RBD-ACE2 binding strength. The vaccine effectiveness claim (C119) is particularly speculative without direct neutralization data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "59528cca-16be-4fa2-b315-0fc1ea00d1d8",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors discuss methodological differences between SPR (isolated proteins) and cell-based assays (AFM-SMFS, flow cytometry), noting that the more complex cell surface may account for relatively weaker binding observed at the cellular level. They provide evidence that ACE2 was not pulled from the membrane during AFM measurements based on force magnitudes (~50 pN vs ~100 pN for membrane extraction) and consistency with previous studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C92 provide appropriate methodological discussion and controls. The comparison with membrane extraction forces (C91) and previous studies (C89, C92) supports the interpretation that specific RBD-ACE2 unbinding was measured rather than membrane protein extraction. The speculation about non-specific interactions (C87) is reasonable given the control data showing ~5% binding to untransfected cells (C88).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "e3794003-d4ba-4877-9429-cc631382900a",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript provides background information on SARS-CoV-2 variants, including that B.1.1.7, B.1.351, and P.1 variants share the N501Y mutation and appear more infectious, with specific detection dates and geographic origins. The alpha variant became the most common lineage in the US by June 2020, and other variants (delta, epsilon, kappa) emerged during manuscript revision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C30-C33, C100, C102, C107-C109 represent established epidemiological and genomic knowledge about SARS-CoV-2 variants, supported by appropriate citations. These provide necessary context for the study but are not original findings. Note: C107 contains a likely error (June 2020 should be 2021 for alpha variant dominance in US).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "acb56310-4b77-40ac-b45f-96320f894533",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors cite recent data suggesting FDA-authorized mRNA vaccines maintain high neutralization against B.1.1.7 but lower neutralization against B.1.351, and that some neutralizing antibodies in clinical trials lost efficacy against B.1.351. They infer that mutations K417N and E484K may contribute to antibody escape and that higher antibody titers or higher-affinity antibodies are needed to compete with RBDN501Y-ACE2 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34-C36 cite external data without providing primary evidence in this manuscript. Claims C117-C118 are reasonable inferences based on the binding data and cited literature, but the manuscript does not directly test antibody neutralization or epitope recognition. The connection between enhanced RBD-ACE2 binding and antibody requirements is logical but not experimentally validated here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "0251e325-41a1-4f0f-8885-c23823725b51",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors recommend that future RBD mutations should be under surveillance, noting that SARS-CoV-2 is rapidly evolving and other RBD mutations might increase ACE2 binding similarly to N501Y. They suggest future dangerous mutations causing higher transmission are possible and that continued surveillance and evaluation of mutated strains is necessary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C110-C113 represent reasonable recommendations and speculation based on the findings. The recommendation for surveillance (C8, C113) is a logical public health implication of the results. The speculation about future mutations (C110, C112) is appropriately cautious and acknowledges uncertainty. These are appropriate forward-looking statements rather than testable claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    },
+    {
+      "id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862",
+      "content_id": "89d58632-4055-4444-a58b-de982e6d8b63",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on coronavirus biology, including SARS-CoV-1 and MERS-CoV epidemiology, coronavirus classification, spike protein structure and function, viral entry mechanisms, and AFM-SMFS methodology. This establishes the scientific context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C29, C37, C49-C51, C64-C65, C83, C99, C111, C114-C115 represent established scientific knowledge appropriately cited from the literature. These provide necessary background and methodological context but are not original findings of this study. The information is accurate and well-referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:55:26.678955Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "60e5eff5-d04e-4a2f-8861-371654ba7819",
+      "result_id": "fab667e5-a250-42cb-b9b6-98ab566dcade"
+    },
+    {
+      "claim_id": "c316bf7f-dfdc-44d4-9605-52263b986310",
+      "result_id": "fab667e5-a250-42cb-b9b6-98ab566dcade"
+    },
+    {
+      "claim_id": "4b8b76d8-a9e2-4aa3-acbc-bf1b3d537ca5",
+      "result_id": "fab667e5-a250-42cb-b9b6-98ab566dcade"
+    },
+    {
+      "claim_id": "31d8cf30-d17c-4e77-9dd4-ce7beb31c24a",
+      "result_id": "fab667e5-a250-42cb-b9b6-98ab566dcade"
+    },
+    {
+      "claim_id": "59efcd29-229b-4efc-8306-b191dac14630",
+      "result_id": "63b23af3-a07e-416a-88ba-f2aefb56f5cc"
+    },
+    {
+      "claim_id": "3547c94e-f025-4701-9932-7d2d85a6caff",
+      "result_id": "63b23af3-a07e-416a-88ba-f2aefb56f5cc"
+    },
+    {
+      "claim_id": "53102f54-83c9-4087-b977-7ed83ee61b27",
+      "result_id": "63b23af3-a07e-416a-88ba-f2aefb56f5cc"
+    },
+    {
+      "claim_id": "a7cce8a1-d6ae-4d8d-a77b-aac0fa03b1ed",
+      "result_id": "63b23af3-a07e-416a-88ba-f2aefb56f5cc"
+    },
+    {
+      "claim_id": "aa49dde1-6625-4be5-86fa-79b64f462e6c",
+      "result_id": "63b23af3-a07e-416a-88ba-f2aefb56f5cc"
+    },
+    {
+      "claim_id": "105a0524-12af-48a7-8b5f-6b25ab13074f",
+      "result_id": "63b23af3-a07e-416a-88ba-f2aefb56f5cc"
+    },
+    {
+      "claim_id": "5abac0c0-7459-4a55-afee-c912cc5fb228",
+      "result_id": "63b23af3-a07e-416a-88ba-f2aefb56f5cc"
+    },
+    {
+      "claim_id": "99df3962-9eec-4bd9-ae34-a88fa5b9ed59",
+      "result_id": "f7e070c3-f983-4511-88e9-237c51a893a6"
+    },
+    {
+      "claim_id": "1ad4e4e3-af17-4583-aa2a-00e00b304dc0",
+      "result_id": "f7e070c3-f983-4511-88e9-237c51a893a6"
+    },
+    {
+      "claim_id": "3c6a50fb-7b07-4c92-8248-ec4fe235bd6f",
+      "result_id": "f7e070c3-f983-4511-88e9-237c51a893a6"
+    },
+    {
+      "claim_id": "2da4181b-eed9-44c6-86f5-37267daf68e6",
+      "result_id": "f7e070c3-f983-4511-88e9-237c51a893a6"
+    },
+    {
+      "claim_id": "6b60c701-9b33-44bd-b525-05064564dc92",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "1190dd6d-6517-42db-9431-55b7c002c309",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "b1e4ac28-6bd7-486d-8c1f-533db53e59df",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "2d2c5f34-f429-40a6-b634-36a53d48e728",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "d5adff11-0e06-460b-9b17-34f69c921349",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "5d97efe5-9a2f-4c31-87dc-25b927197dae",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "b7af6d2b-981d-4218-bc33-1f6de45d833f",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "bc260f24-9108-4e90-86b3-48569941361a",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "810f6cd2-99e3-44ea-a6da-6894349b2a0d",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "46bd248a-a34d-4590-bc07-4429af0d7645",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "828cf778-119c-4c3d-bd96-afcd303255e1",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "a3b71ac7-9fe5-453a-a052-eab8904430e8",
+      "result_id": "2f7b415a-2fe0-4a49-9d3b-d1cddbedf4b0"
+    },
+    {
+      "claim_id": "90504446-043a-474a-b2d8-5b98d1c37c46",
+      "result_id": "2fbc984d-2203-4d92-9847-e5abf5b83458"
+    },
+    {
+      "claim_id": "4d8dda84-8ccc-42e6-a428-13eac7284ba3",
+      "result_id": "2fbc984d-2203-4d92-9847-e5abf5b83458"
+    },
+    {
+      "claim_id": "cfc34404-06fa-4c16-925b-9f8b7dccd421",
+      "result_id": "2fbc984d-2203-4d92-9847-e5abf5b83458"
+    },
+    {
+      "claim_id": "884e4adf-69d4-43c4-bcce-c33c34c4bba7",
+      "result_id": "2fbc984d-2203-4d92-9847-e5abf5b83458"
+    },
+    {
+      "claim_id": "e6c26ac7-b8a3-4408-9db1-76284383b5f0",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "f08543d7-3c82-4192-af21-b347c593dc3f",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "49fcd36b-f571-4c23-8ce3-8cbe4b28c6ee",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "24446906-4735-4ba1-8b0d-ecf11cac1df5",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "33bf8e25-73db-48aa-a5fc-18934ffec7c9",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "700c7ce3-c61c-459c-b93f-c1a8d14c11df",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "2970af76-9d92-4f7a-a055-265ff4d0d061",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "98896c1f-ca44-4d63-a2ff-d4b0d401e93f",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "624c21b0-64fd-4616-8ef4-1b3a2fcb313e",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "e95351a1-2a7e-4c69-ae7c-1a84640584c2",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "d9649afc-2433-4453-af03-b1ff2f6c5adc",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "87017ae8-614c-450b-9466-8d68ce528125",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "997627a6-0341-4499-9178-cab263cb60d9",
+      "result_id": "f2ec3574-244b-417a-9cd1-09ed045ef431"
+    },
+    {
+      "claim_id": "835a7ad1-48a5-46fb-9b91-be3eda10eeb8",
+      "result_id": "a0132d8a-09f0-4e40-b9ab-98cf7b43be2a"
+    },
+    {
+      "claim_id": "53a6631c-b84e-41b4-a481-a8fb3a5e6b44",
+      "result_id": "a0132d8a-09f0-4e40-b9ab-98cf7b43be2a"
+    },
+    {
+      "claim_id": "d6e1787a-944a-42b2-942e-d9139fadfbef",
+      "result_id": "a0132d8a-09f0-4e40-b9ab-98cf7b43be2a"
+    },
+    {
+      "claim_id": "b9bba390-042e-44ae-9edd-a998c665d5a1",
+      "result_id": "a0132d8a-09f0-4e40-b9ab-98cf7b43be2a"
+    },
+    {
+      "claim_id": "bf7d815b-f76d-440e-a5f8-2ecdb43dc83a",
+      "result_id": "a0132d8a-09f0-4e40-b9ab-98cf7b43be2a"
+    },
+    {
+      "claim_id": "eaee57f7-9205-4fa1-9710-14614d9a9602",
+      "result_id": "a0132d8a-09f0-4e40-b9ab-98cf7b43be2a"
+    },
+    {
+      "claim_id": "5c7fdb52-8790-4bc8-bb93-3afb47d6e023",
+      "result_id": "a0132d8a-09f0-4e40-b9ab-98cf7b43be2a"
+    },
+    {
+      "claim_id": "e0f7632b-ce1e-4633-98b6-f56fece3b807",
+      "result_id": "73e85a9c-98e7-4212-8206-ac9600c874bc"
+    },
+    {
+      "claim_id": "469ce1d0-a17f-4010-9fe0-ef45494180bf",
+      "result_id": "73e85a9c-98e7-4212-8206-ac9600c874bc"
+    },
+    {
+      "claim_id": "07d8b230-27e3-4f6a-b36e-05aaeb64931a",
+      "result_id": "73e85a9c-98e7-4212-8206-ac9600c874bc"
+    },
+    {
+      "claim_id": "a3a6a246-4890-4163-b701-554bc80a3140",
+      "result_id": "73e85a9c-98e7-4212-8206-ac9600c874bc"
+    },
+    {
+      "claim_id": "3f575f75-4545-4489-a944-c65f113276b6",
+      "result_id": "73e85a9c-98e7-4212-8206-ac9600c874bc"
+    },
+    {
+      "claim_id": "9b7b4ef8-83c7-4090-bf2d-68ab521ff0a3",
+      "result_id": "59528cca-16be-4fa2-b315-0fc1ea00d1d8"
+    },
+    {
+      "claim_id": "35c31fff-128e-4e8e-a566-617ada56e30d",
+      "result_id": "59528cca-16be-4fa2-b315-0fc1ea00d1d8"
+    },
+    {
+      "claim_id": "6e5009a3-ae96-4894-a32a-c6d6a71b9d4c",
+      "result_id": "59528cca-16be-4fa2-b315-0fc1ea00d1d8"
+    },
+    {
+      "claim_id": "e890ff45-288e-4332-adfa-4cda3a2754c7",
+      "result_id": "59528cca-16be-4fa2-b315-0fc1ea00d1d8"
+    },
+    {
+      "claim_id": "8b0c9153-5651-46c2-b536-4c790505dc89",
+      "result_id": "59528cca-16be-4fa2-b315-0fc1ea00d1d8"
+    },
+    {
+      "claim_id": "9ab182b7-7bec-4ff6-b7e1-a0a2b06fb676",
+      "result_id": "59528cca-16be-4fa2-b315-0fc1ea00d1d8"
+    },
+    {
+      "claim_id": "ccc7afc0-903c-47b8-ab9b-0743beaa5edf",
+      "result_id": "59528cca-16be-4fa2-b315-0fc1ea00d1d8"
+    },
+    {
+      "claim_id": "6959b6db-f297-4236-9d03-6b9c5ed18aa1",
+      "result_id": "e3794003-d4ba-4877-9429-cc631382900a"
+    },
+    {
+      "claim_id": "1df8ed78-37f8-44c1-81e3-e3356278311f",
+      "result_id": "e3794003-d4ba-4877-9429-cc631382900a"
+    },
+    {
+      "claim_id": "272a13fc-8042-4c81-8024-70c10a6cc6e2",
+      "result_id": "e3794003-d4ba-4877-9429-cc631382900a"
+    },
+    {
+      "claim_id": "87acb4b6-49bc-4d53-b5e3-f98cac5c986f",
+      "result_id": "e3794003-d4ba-4877-9429-cc631382900a"
+    },
+    {
+      "claim_id": "aeeac438-dcea-4b18-8714-1a43af5b6340",
+      "result_id": "e3794003-d4ba-4877-9429-cc631382900a"
+    },
+    {
+      "claim_id": "5c528ff9-6e1e-4af4-84c5-416ad8a2d74c",
+      "result_id": "e3794003-d4ba-4877-9429-cc631382900a"
+    },
+    {
+      "claim_id": "d02208db-7ef7-448e-a900-8d47991eafa7",
+      "result_id": "e3794003-d4ba-4877-9429-cc631382900a"
+    },
+    {
+      "claim_id": "094aef9f-20a6-455c-b8ff-3232ee1a0ca9",
+      "result_id": "e3794003-d4ba-4877-9429-cc631382900a"
+    },
+    {
+      "claim_id": "5452e3cf-a64f-485d-8936-a6bdabf97b2d",
+      "result_id": "e3794003-d4ba-4877-9429-cc631382900a"
+    },
+    {
+      "claim_id": "f80a4f25-0997-4531-b64f-a851ca4dc891",
+      "result_id": "e3794003-d4ba-4877-9429-cc631382900a"
+    },
+    {
+      "claim_id": "46e153ff-09a9-4d26-a5ed-610d333b104b",
+      "result_id": "e3794003-d4ba-4877-9429-cc631382900a"
+    },
+    {
+      "claim_id": "73bdb8c1-ca50-4185-ab3b-c492af9895fc",
+      "result_id": "acb56310-4b77-40ac-b45f-96320f894533"
+    },
+    {
+      "claim_id": "4fca6d92-e20d-4d96-aa2f-a289269ffb62",
+      "result_id": "acb56310-4b77-40ac-b45f-96320f894533"
+    },
+    {
+      "claim_id": "c3794896-091e-4da8-aac6-31ab915a59c8",
+      "result_id": "acb56310-4b77-40ac-b45f-96320f894533"
+    },
+    {
+      "claim_id": "c2540374-9c7c-4f4c-9b88-fe35d03180fa",
+      "result_id": "acb56310-4b77-40ac-b45f-96320f894533"
+    },
+    {
+      "claim_id": "1635e4f0-317f-4bff-a81f-612df9b63958",
+      "result_id": "acb56310-4b77-40ac-b45f-96320f894533"
+    },
+    {
+      "claim_id": "c7eb1cf7-66e5-42e2-9a9f-66f320c412fe",
+      "result_id": "0251e325-41a1-4f0f-8885-c23823725b51"
+    },
+    {
+      "claim_id": "ca1b7217-8595-4167-8cd0-4fa9217251d6",
+      "result_id": "0251e325-41a1-4f0f-8885-c23823725b51"
+    },
+    {
+      "claim_id": "58f77569-1baf-4a9c-824c-28adfab69a0f",
+      "result_id": "0251e325-41a1-4f0f-8885-c23823725b51"
+    },
+    {
+      "claim_id": "eb29b3c7-9e0f-4f68-969c-d9f311bf465f",
+      "result_id": "0251e325-41a1-4f0f-8885-c23823725b51"
+    },
+    {
+      "claim_id": "29aa2316-969e-466d-af05-2ecef1dd84a7",
+      "result_id": "0251e325-41a1-4f0f-8885-c23823725b51"
+    },
+    {
+      "claim_id": "0e678a7d-3ffd-46bd-8d7b-765a7b8f129e",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "f12091cc-d2f5-4c3c-9402-f7f6a8becae3",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "0c5e74e8-1341-4eeb-ae1a-964484753eec",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "6f9f3b98-58eb-4beb-a7e4-a710eff719ca",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "468a0530-fb34-4569-976b-0e5c5d1e6d11",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "473686dd-924b-4298-8f46-7e8092206ba3",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "f1a522bc-20a6-4023-a247-76c768bef350",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "8e8fa02f-6350-4377-8095-08035ca73cd4",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "b2e2400b-78e7-4316-84b3-7f0e9370048b",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "08c71eb6-20cd-4511-a352-19c3f4ea2b59",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "6055dc9a-074b-4c89-99ee-105974d33d93",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "2bd65891-049a-4cd6-aeea-7cb8f3cb0b07",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "0f81198d-2018-4697-b8fc-cd6d84d9f5bb",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "d48cb2ad-28fe-4249-981e-206872d594ac",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "862bcc4b-d117-4617-b1ae-548f9a854eb2",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "7082f5ad-3174-494d-9131-dae9328443cf",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "f5b86868-e188-4109-adab-0d0589d3601c",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "1945662f-3050-4945-a3a8-265603056e0d",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "b1b815c4-ab08-4ea8-b670-12edc74f9429",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "6d90d5ff-d9d7-4c88-b3fb-a11cab69d918",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "ce9c8d8e-d277-4d5f-a476-33ed75fad612",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "16948d1a-d347-4f91-be3c-0be54addf261",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "e1e13970-349f-4cc2-bad2-58395fd7fa48",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "4064ce1c-e5d9-4a6c-89b3-b960f63a0ab5",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "75a6fda3-14c9-4b9c-b16e-c76c1922fa18",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "17f53bad-b963-4319-b0b8-4e2c9cc27bcb",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "4cc67372-fc7b-4040-ab03-0c0f033b3fc2",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "db5e8957-6473-486d-a504-85672b8c8661",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "8c8e4376-7b10-4c7b-bb0d-93392da9756a",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "58f77569-1baf-4a9c-824c-28adfab69a0f",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "00ed9bd6-f6fb-4054-886e-5c80cd33d84e",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    },
+    {
+      "claim_id": "b92cd545-fa09-4374-863a-2e1cb8aa77c0",
+      "result_id": "32b82993-e3d2-43cd-9f94-d1b9b88bc862"
+    }
+  ],
+  "comparisons": []
+}

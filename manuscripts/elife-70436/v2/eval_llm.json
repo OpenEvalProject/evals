@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C33",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "P. aeruginosa is pathogenic to M. brevicollis, causing cell death, reduced motility, flagellar truncation, and cell settling. This pathogenic effect is specific to P. aeruginosa among tested Gammaproteobacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence converge: growth curves show cell death (C2, C20, C46), video microscopy documents behavioral changes (C42, C43), and immunofluorescence reveals flagellar truncation (C44). The specificity is demonstrated by comparison with control bacteria (C20, C45). The data are internally consistent and well-replicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C22",
+      "C53"
+    ],
+    "result": "M. brevicollis does not phagocytose P. aeruginosa, but this is not due to general phagocytic inhibition. M. brevicollis maintains the ability to phagocytose other bacteria and beads in the presence of P. aeruginosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Quantitative microscopy shows 92% of cells phagocytose E. coli-GFP but only 3% phagocytose P. aeruginosa-GFP (C48, C49). Bead uptake assays (C51) and E. coli phagocytosis in the presence of P. aeruginosa (C52) demonstrate that phagocytic machinery remains functional. The conclusion that P. aeruginosa avoids phagocytosis without broadly inhibiting phagocytosis is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Secreted P. aeruginosa small molecules are sufficient to induce M. brevicollis cell death. The virulence factors are heat-, protease-, and nuclease-resistant, suggesting they are not proteins or nucleic acids. No single tested virulence gene deletion eliminated pathogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Conditioned medium experiments (C23, C56) demonstrate sufficiency of secreted factors. Biochemical characterization (C60) and methanol extraction/fractionation (C62) support the small molecule hypothesis. The deletion mutant screen (C58, C59) suggests redundancy or involvement of uncharacterized factors. However, the specific molecular identity remains unknown, which is acknowledged (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Sustained exposure (\u22656 hours) to P. aeruginosa secreted factors is required to induce M. brevicollis cell death, suggesting that cell death pathways are activated after prolonged exposure rather than immediately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Time-course experiments (C64, C65) clearly show a temporal threshold for cell death induction. The inference that cell death pathways require time to activate (C66) is reasonable given the data, though the specific mechanisms remain to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "M. brevicollis expresses STING, and both STING mRNA and protein levels are upregulated in response to P. aeruginosa exposure. The transcriptional response includes 674 upregulated and 232 downregulated genes enriched in stress response, endocytosis, and immune-related processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data (C67, C68, C71) and immunoblotting (C72) provide convergent evidence for STING upregulation. The transcriptional response is well-characterized with appropriate statistical thresholds (FDR \u2264 10\u207b\u2074). Gene ontology enrichment analysis (C69, C70) provides biological context. The custom STING antibody was validated (Figure 2\u2014figure supplement 1C,D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C79",
+      "C16"
+    ],
+    "result": "M. brevicollis STING has a predicted domain architecture consisting of four transmembrane domains followed by a cytosolic STING domain, with conserved cyclic dinucleotide-binding residues. This architecture likely matches the ancestral animal STING protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Bioinformatic analysis (C73, C79) and sequence alignment (Figure 3B) support the domain architecture and conservation of key residues. The inference about ancestral structure (C74) is reasonable given the phylogenetic position of choanoflagellates, though it remains a prediction based on sequence analysis rather than structural determination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Treatment with 2'3' cGAMP, but not 3'3'-linked bacterial cyclic dinucleotides, induces dose-dependent cell death in M. brevicollis and increases STING protein levels. STING mRNA and protein levels increase within 3 hours and remain elevated for at least 7 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Dose-response curves (C81) clearly demonstrate specificity for 2'3' cGAMP. Immunoblotting (C82, C83, C86) and RNA-seq (C84, C85) provide convergent evidence for STING upregulation with appropriate time-course analysis. The differential response to 2'3' vs 3'3' cGAMP is consistently observed across multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "A transfection protocol was successfully developed for M. brevicollis, enabling stable expression of fluorescently-tagged proteins. STING-mTFP localizes to the endoplasmic reticulum, similar to mammalian STING.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development of transfection methods (C89, C90) is supported by successful generation of stable cell lines. Co-localization microscopy (C91, C92) demonstrates ER localization. The comparison to mammalian STING (C93) is appropriate and supported by citations. This represents a significant technical advance for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "A STING knockout cell line was generated using CRISPR/Cas9 genome editing. STING protein is undetectable in knockout cells, which have similar growth kinetics to wild-type cells under standard laboratory conditions, indicating STING is not required for viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Sequencing confirms the deletion (C94), immunoblotting confirms loss of protein (C95), and growth curves demonstrate normal viability (C96). The inference that STING is not essential under standard conditions (C97) is well-supported. This is a critical tool for functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "STING is required for M. brevicollis responses to 2'3' cGAMP. STING knockout cells are resistant to 2'3' cGAMP-induced cell death and fail to mount a robust transcriptional response (371 genes in WT vs 28 genes in STING\u207b). The phenotype can be partially rescued by STING re-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The knockout phenotype is clear: resistance to cell death (C99), loss of transcriptional response (C101-C103), and partial rescue (C100). The dramatic difference in differentially expressed genes (371 vs 28) strongly supports STING-dependent signaling. The partial rescue validates the specificity of the knockout phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C139"
+    ],
+    "result": "Among 22 sequenced choanoflagellate species, only M. brevicollis and S. macrocollata possess both STING and cGAS homologs. S. macrocollata also shows impaired survival in response to 2'3' cGAMP, suggesting a conserved cGAS-STING pathway in these species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Transcriptome analysis (C105) and survival assays (C106) support the correlation between STING/cGAS presence and 2'3' cGAMP sensitivity. The inference about a conserved pathway (C107, C139) is reasonable but remains speculative without direct functional studies in S. macrocollata. The phylogenetic distribution is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "M. brevicollis responds to high concentrations of E. coli LPS with cell death, but this response is STING-independent, indicating separable pathways for responding to 2'3' cGAMP and LPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Dose-response curves show LPS-induced cell death (C108), and the identical responses of WT and STING\u207b cells (C109) demonstrate STING-independence. This is an important control showing pathway specificity. The inference of separable pathways (C110) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "STING increases M. brevicollis susceptibility to P. aeruginosa-induced cell death. STING knockout cells show reduced growth inhibition and can still divide in the presence of P. aeruginosa, whereas wild-type cells show complete growth restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Growth curve data (C111, C112) clearly show differential susceptibility. The conclusion that STING increases susceptibility (C5, C113) is well-supported, though the mechanism remains unclear as acknowledged in the text. This is a key finding linking STING to the pathogen response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C122",
+      "C123",
+      "C124",
+      "C127",
+      "C128"
+    ],
+    "result": "2'3' cGAMP induces STING-dependent autophagic signaling in M. brevicollis, as evidenced by increased Atg8-II/Atg8-I ratios and Atg8+ puncta formation in wild-type but not STING knockout cells. Chloroquine treatment confirms autophagy induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support autophagy induction: Atg8 lipidation by immunoblot (C122), chloroquine inhibitor experiments (C123), and Atg8 puncta quantification by microscopy (C127). The STING-dependence is clearly demonstrated by the knockout phenotype. The chloroquine experiment is critical for confirming autophagy flux rather than just Atg8 accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Autophagy inhibitors (chloroquine and NH\u2084Cl) rescue 2'3' cGAMP-induced cell death in wild-type but not STING knockout cells, suggesting that 2'3' cGAMP induces cell death by overstimulating STING-mediated autophagic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiments (C129) provide strong evidence linking autophagy to cell death. The lack of effect in STING\u207b cells (C130) confirms pathway specificity. The hypothesis about overstimulation (C131) is reasonable given the data, though the mechanism of how excessive autophagy leads to cell death requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C34",
+      "C37",
+      "C136",
+      "C147"
+    ],
+    "result": "STING has a pre-animal role in antibacterial immunity. Key features of STING-mediated immune responses, including autophagy induction, are conserved in M. brevicollis, indicating that STING's role in regulating autophagy predates animal origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional data in M. brevicollis (C34, C37) combined with the phylogenetic position of choanoflagellates (C1) strongly support a pre-animal role for STING (C8). The conservation of autophagy induction (C147) is well-demonstrated. This is a major evolutionary conclusion supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "M. brevicollis has distinct responses to 2'3' cGAMP versus 3'3'-linked bacterial cyclic dinucleotides. While 2'3' cGAMP induces STING upregulation and cell death, 3'3' cGAMP induces a robust transcriptional response without these effects, suggesting differential binding affinities or activation of additional pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential responses are clearly documented: survival (C81), STING upregulation (C82, C85), and transcriptional responses (C141). The hypotheses about mechanisms (C142, C143) are speculative but reasonable. This finding raises important questions about ligand specificity and pathway activation that require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C145",
+      "C149",
+      "C150"
+    ],
+    "result": "M. brevicollis lacks many downstream effectors of animal STING signaling (TBK1, NF-\u03baB) but possesses conserved autophagy machinery. The signaling pathways downstream of STING in choanoflagellates remain unknown, suggesting additional pathways exist beyond NF-\u03baB and autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Transcriptome analysis confirms the absence of TBK1 and NF-\u03baB (C116, C149) and presence of autophagy genes (C117). The extensive transcriptional response to 2'3' cGAMP (C150) in the absence of NF-\u03baB strongly suggests alternative downstream pathways. This identifies an important area for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C154"
+    ],
+    "result": "M. brevicollis is established as a model system for studying immune responses through the development of molecular genetic tools including transfection and CRISPR/Cas9 genome editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The successful development of transfection (C89, C90) and genome editing (C94) methods, combined with the identification of a pathogen-host interaction (C2, C33), provides the foundation for M. brevicollis as an immune model. This represents a significant advance for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C153",
+      "C155",
+      "C157"
+    ],
+    "result": "Several key questions remain for future research: the endogenous triggers of STING activation in M. brevicollis, the specific P. aeruginosa virulence factors, identification of additional choanoflagellate pathogens, and expansion to diverse choanoflagellate species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are reasonable statements about knowledge gaps and future directions based on the current findings. They appropriately identify limitations of the current study and suggest logical next steps. These are not results per se but rather discussion points about future work.",
+    "result_type": "MINOR"
+  }
+]

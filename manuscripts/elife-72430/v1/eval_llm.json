@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "N-BPs are bone-targeting drugs that inhibit FPP synthase in the mevalonate pathway of osteoclasts, preventing protein prenylation and thereby treating bone disorders like osteoporosis and cancer-associated bone disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C12-C17 establish well-accepted background knowledge about N-BP mechanism of action in bone, supported by multiple citations to established literature. This represents standard textbook knowledge about bisphosphonates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Clinical studies suggest N-BP therapy is associated with reduced pneumonia mortality, though the mechanisms underlying this benefit are unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C23, C25-C27 cite multiple clinical studies (randomized trials, observational studies, retrospective analyses) showing reduced pneumonia mortality with N-BP treatment. The consistency across study types and the explicit acknowledgment that mechanisms are unknown (C27) appropriately frames the state of knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Systemically administered fluorescently-labeled bisphosphonate (AF647-ZOL) is efficiently internalized by alveolar macrophages (>98%) and large peritoneal macrophages (99%) in vivo, but not by small peritoneal macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C35-C44 are supported by flow cytometry data in Figure 1 showing selective uptake of AF647-ZOL by specific macrophage populations. The data clearly demonstrate >98% labeling of alveolar macrophages and selective uptake by large but not small peritoneal macrophages. Controls with saline-treated mice are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A single dose of ZOL inhibits the mevalonate pathway in tissue-resident macrophages, causing IPP/DMAPP accumulation and preventing protein prenylation, demonstrating pharmacological activity outside the skeleton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C46-C53 are supported by LC-MS/MS data (Figure 2b) showing IPP/DMAPP accumulation and in vitro prenylation assay data (Figure 2c) showing unprenylated Rab protein accumulation in BAL and PL cells after ZOL treatment. These are established biochemical markers of N-BP action. The use of a sensitive assay (C51) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C32",
+      "C33",
+      "C45"
+    ],
+    "result": "The findings overturn the paradigm that N-BP drugs act only in the skeleton, though this remains to be confirmed in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is an inference supported by the experimental data showing drug uptake and biochemical activity in non-skeletal macrophages (Figures 1-2). The authors appropriately note this needs confirmation in humans. Prior work (C32-C33, C45) provides context that some soft tissue accumulation was known but concentrations and functional effects were unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C82"
+    ],
+    "result": "ZOL treatment enhances the immune response to bacterial endotoxin (LPS), significantly increasing cytokine and chemokine production (2.5-5 fold) in lung and peritoneum without affecting macrophage numbers or viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C58-C63, C82 are supported by multiplex immunoassay data (Figure 3b-c) showing significant increases in multiple cytokines/chemokines after LPS challenge in ZOL-treated mice. Statistical significance is reported (p<0.001-0.0001, ANOVA). Controls show ZOL alone has no effect (C58-C59), and cell numbers/viability are unchanged (C61, Figure 3-supplement 1), indicating the effect requires immune challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C80",
+      "C83"
+    ],
+    "result": "ZOL-mediated inhibition of protein prenylation enhances NLRP3 inflammasome activation in macrophages, requiring a second signal (like nigericin) for IL-1\u03b2 release, consistent with prior findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C64-C67, C80, C83 are supported by western blot data (Figure 3d) showing increased IL-1\u03b2 release from ZOL-treated peritoneal cells only when stimulated with both LPS and nigericin, not LPS alone. This is consistent with cited prior work (Skinner et al., 2019) showing N-BP enhances but does not trigger inflammasome activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Tissue-resident macrophages (alveolar and large peritoneal) are a more likely source of IPP for V\u03b39V\u03b42-T cell activation than circulating monocytes, revising the previous understanding of the acute phase response mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 present a mechanistic reinterpretation based on the finding of IPP accumulation in tissue-resident macrophages. While C55 correctly cites prior work, C56 is speculative inference without direct experimental evidence comparing IPP levels or T cell activation between tissue-resident macrophages and circulating monocytes. The claim is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "N-BPs may boost immune responses to lung infections through multiple mechanisms including \u03b3\u03b4-T cell activation, pathogen prenylation inhibition, mimicking IFN signaling, and inflammasome activation, potentially explaining reduced pneumonia mortality and suggesting prophylactic use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C68-C79, C81, C84-C86, C90-C92 present a mechanistic framework linking the experimental findings to clinical observations. While individual mechanisms are supported by citations (C70-C79), the overall hypothesis that these mechanisms explain the clinical benefit (C90) is speculative. The suggestion for prophylactic use (C92) is premature without clinical trials. The authors appropriately use cautious language ('may', 'suggest', 'could be considered').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C34"
+    ],
+    "result": "Respiratory infections, particularly bacterial pneumonia, are major causes of morbidity and mortality globally, with alveolar macrophages playing a critical role in initial immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C28-C31, C34 represent established medical and epidemiological knowledge supported by appropriate citations. These provide important context for the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "ZOL was computationally identified as a candidate drug for repurposing against COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by citation to Han et al., 2021. This is a minor contextual point about potential future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Systemically administered N-BP inhibits the mevalonate pathway in tissue-resident macrophages, enhancing their responsiveness to bacterial endotoxin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 summarize the main experimental findings supported by data in Figures 1-3. This represents the core conclusion integrating the uptake, biochemical, and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Large and small peritoneal macrophages differ in origin, phenotype, and function, though the reason for selective N-BP uptake by large macrophages remains undetermined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 appropriately cites established knowledge (Cassado Ados et al., 2015) while acknowledging that the mechanism of selective uptake is unknown. This represents an honest assessment of knowledge gaps.",
+    "result_type": "MINOR"
+  }
+]

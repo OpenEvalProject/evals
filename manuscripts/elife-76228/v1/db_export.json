@@ -1,0 +1,1631 @@
+{
+  "submission": {
+    "id": "5be45bde-4f71-4285-99e0-f6a8324a5c70",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:50:21.317761Z",
+    "updated_at": "2025-12-03T14:50:21.317761Z"
+  },
+  "content": [
+    {
+      "id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "submission_id": "5be45bde-4f71-4285-99e0-f6a8324a5c70",
+      "content_type": "manuscript",
+      "content_text": "# Modeling osteoporosis to design and optimize pharmacological therapies comprising multiple drug types\n\n## Authors\n\n- David J J\u00f6rg<sup>1</sup> ([ORCID: 0000-0001-5960-0260](https://orcid.org/0000-0001-5960-0260)) \u2020\n- Doris H Fuertinger<sup>1</sup> ([ORCID: 0000-0001-6321-2367](https://orcid.org/0000-0001-6321-2367))\n- Alhaji Cherif<sup>2</sup>\n- David A Bushinsky<sup>3</sup>\n- Ariella Mermelstein<sup>2</sup>\n- Jochen G Raimann<sup>2</sup>\n- Peter Kotanko<sup>2</sup> ([ORCID: 0000-0003-4373-412X](https://orcid.org/0000-0003-4373-412X))\n\n### Affiliations\n\n1. Biomedical Modeling and Simulation Group, Global Research and Development, Fresenius Medical Care Germany Bad Homburg Germany ([ROR:04sk0bj73](https://ror.org/04sk0bj73))\n2. Renal Research Institute New York United States ([ROR:032g46r36](https://ror.org/032g46r36))\n3. Department of Medicine, University of Rochester School of Medicine and Dentistry Rochester United States ([ROR:00trqv719](https://ror.org/00trqv719))\n4. Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n\n\u2020 Corresponding author\n\n## Abstract\n\nFor the treatment of postmenopausal osteoporosis, several drug classes with different mechanisms of action are available. Since only a limited set of dosing regimens and drug combinations can be tested in clinical trials, it is currently unclear whether common medication strategies achieve optimal bone mineral density gains or are outperformed by alternative dosing schemes and combination therapies that have not been explored so far. Here, we develop a mathematical framework of drug interventions for postmenopausal osteoporosis that unifies fundamental mechanisms of bone remodeling and the mechanisms of action of four drug classes: bisphosphonates, parathyroid hormone analogs, sclerostin inhibitors, and receptor activator of NF-\u03baB ligand inhibitors. Using data from several clinical trials, we calibrate and validate the model, demonstrating its predictive capacity for complex medication scenarios, including sequential and parallel drug combinations. Via simulations, we reveal that there is a large potential to improve gains in bone mineral density by exploiting synergistic interactions between different drug classes, without increasing the total amount of drug administered.\n\n## Introduction\n\nOsteoporosis, a disease characterized by porous bone prone to fractures, affects hundreds of millions of people worldwide (Cooper and Ferrari, 2019; Hernlund et al., 2013). Most recent estimates place the global annual incidence of bone fragility fractures at 9 million in the year 2000 (Cooper and Ferrari, 2019); projections for the year 2050 suggest between 7 and 21 million annual hip fractures (Gullberg et al., 1997). Osteoporosis-associated bone fractures lead to disabilities, pain, and increased mortality (Cooper and Ferrari, 2019). In the United States, medical cost for osteoporosis, including inpatient, outpatient, and long-term care costs, has been estimated at US$17 billion in 2005 (Burge et al., 2007); in the European Union, the total cost of osteoporosis, including pharmacological interventions and loss of quality-adjusted life-years (QALYs), is projected to rise from about \u20ac100 billion in 2010 to \u20ac120 billion in 2025 (Od\u00e9n et al., 2013).\n\nOsteoporotic bone is the consequence of an imbalance of continuous bone resorption and bone formation, which\u2014under close to homeostatic conditions\u2014has the function to remove microfractures and renew the structural integrity of bone. Postmenopausal women are particularly at risk of osteoporosis: the rapid decline of systemic estrogen levels after menopause and other aging-related effects such as increased oxidative stress contribute to or drive the development of osteoporosis (Riggs et al., 1998; Manolagas, 2010). Moreover, osteoporosis can be a sequela of diseases affecting bone metabolism and remodeling such as primary hyperparathyroidism or gastrointestinal diseases (Painter et al., 2006). Osteoporosis can also be a side effect of treatments for other diseases; as a prime example, glucocorticoid administration is the most common cause of secondary osteoporosis (Weinstein, 2012). Over the last decades, an array of different osteoporosis treatments have emerged, from simple dietary supplementations such as calcium and vitamin D to specialized drugs targeting bone-forming and -resorbing cells and related signaling pathways (Tu et al., 2018). This entails a plethora of different medication options, including a large number of possible dosing schemes and combinations of drugs, administered in sequence or in parallel. Due to the huge number of such treatment schemes and the required time from study inception to completion, very few of them have been clinically tested so far when compared to the total number of available options.\n\nConcomitant with the development of new osteoporosis drugs, mathematical and biophysical modeling approaches capturing bone-related physiology have advanced our quantitative understanding of the biological principles governing bone mineral metabolism, bone turnover, and development of osteoporosis. Pioneering work by Lemaire et al., 2004 describes the dynamics of bone-forming and -resorbing cell populations coupled through signaling pathways and could qualitatively reproduce the effects of senescence, glucocorticoid excess, and estrogen and vitamin D deficiency on bone turnover. Since then, compartment-based descriptions of the mineral metabolism, bone-forming and -resorbing cell populations, and related signaling factors have elucidated the role of essential regulatory mechanisms underlying mineral balance and bone turnover (Komarova et al., 2003; Lemaire et al., 2004; Pivonka et al., 2008; Pivonka et al., 2010; Peterson and Riggs, 2010; Zumsande et al., 2011; Schmidt et al., 2011; Graham et al., 2013; Tanaka et al., 2014; Komarova et al., 2015; Berkhout et al., 2015). Coarse-grained as well as detailed spatially extended descriptions of bone geometry have also addressed the effects of mechanical forces and the propagation of the multicellular units responsible for bone turnover (Ryser et al., 2009; Buenzli et al., 2011; Scheiner et al., 2013; Buenzli et al., 2014; Pivonka et al., 2013), as well as the influence of secondary diseases such as multiple myeloma (Ayati et al., 2010). Detailed models of bone remodeling and calcium homeostasis have become versatile and widely used tools in hypothesis testing, such as the seminal model by Peterson and Riggs, 2010, which includes submodels for various organs such as gut, kidney, and the parathyroid gland. Pharmacokinetic and pharmacodynamic (PK/PD) models of therapeutic interventions have mostly focused on capturing the mechanisms of action of a single or a few drugs and testing their dosing regimens (Marathe et al., 2008; Marathe et al., 2011; Ross et al., 2012; Scheiner et al., 2014; Eudy et al., 2015; Lisberg et al., 2017; Mart\u00ednez-Reina and Pivonka, 2019; Zhang and Mager, 2019). Recent modeling efforts have also started addressing the effects of drug combinations on bone-forming and -resorbing cells, pointing out the need for corresponding model frameworks to include clinically relevant variables like bone mineral density (BMD) and bone turnover biomarkers (BTMs) (Lemaire and Cox, 2019), as well as combination therapies of physical exercise and drug treatment (Lavaill et al., 2020). An integrated mathematical framework for multiple drugs, which can also be used to quantitatively predict the effects of drug combinations in sequence and in parallel is not yet available.\n\nBuilding on established mechanisms of bone turnover, we here present a quantitative model of bone turnover and postmenopausal osteoporosis treatment, unifying the description of multiple classes of drugs with different mechanisms of action, namely, bisphosphonates, parathyroid hormone (PTH) analogs, sclerostin antibodies, and receptor activator of NF-$\u03ba$B ligand (RANKL) antibodies. We calibrate the model using published population-level data from several clinical trials and assess its ability to predict the outcome of previously conducted clinical studies based on the medication scheme alone. We then use the model to demonstrate how medication schemes involving drug combinations can be optimized for a given medication load and discuss future model extensions.\n\n### Mechanisms of bone turnover and its regulation\n\nOur model is based on a small set of key principles of bone turnover, which we briefly recapitulate here (Figure 1). As a composite tissue comprising hydroxyapatite, collagen, other proteins, and water (Boskey, 2013), bone is constantly turned over to renew its integrity and remove microdamage, at an average rate of about 4% per year in cortical bone and about 30% per year in trabecular bone (Manolagas, 2000).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76228/elife-76228-fig1-v1.jpg)\n\n**Figure 1.:** Regulatory interactions between different model components are indicated by colored boxes (see legend). TGF\u03b2, transforming growth factor beta; BMP, bone morphogenetic protein; PDGF, platelet-derived growth factor; IGF, insulin-like growth factor; FGF, fibroblast growth factor.\n\n#### Bone-resorbing and -forming cells\n\nBone resorption is performed by osteoclasts, multinucleated cells formed through the differentiation and fusion of their immediate precursors (pre-osteoclasts), which are derived from pluripotent hematopoietic stem cells via the myeloid lineage (Boyce and Xing, 2008). Osteoclasts attach to bone tissue and resorb it through the secretion of hydrogen ions and bone-degrading enzymes (Fuller and Chambers, 1995), which leads to the release of minerals and signaling factors stored in the bone matrix. New bone is formed by osteoblasts, a cell type derived from mesenchymal stem cells via several intermediate states that give rise to pre-osteoblasts and finally osteoblasts (Eriksen, 2010). Groups of osteoblasts organize into cell clusters (osteons) and collectively lay down an organic matrix (osteoid), which subsequently becomes mineralized over the course of months. Osteoblasts that are enclosed in the newly secreted bone matrix become osteocytes, nondividing cells with an average life span of up to several decades. Osteoclasts and osteoblasts organize into spatially defined local clusters termed \u2018bone remodeling units\u2019 (BRUs) (Figure 1), in which osteoblasts replenish the bone matrix previously resorbed by osteoclasts with a delay of several weeks. In cortical bone, the outer protective bone layer, BRUs migrate as a whole in \u2018tunnels,\u2019 whereas within the inner cancellous bone, BRUs propagate on the surfaces of the trabeculae, renewing the bone matrix in the process (Eriksen, 2010).\n\n#### Signaling pathways\n\nThe differentiation and activity of osteoclasts and osteoblasts are regulated through several signaling pathways and hormones; recent reviews provide comprehensive descriptions of the various pathways (Siddiqui and Partridge, 2016). Osteoclast formation and activity are prominently regulated by RANKL and macrophage colony-stimulating factor (M-CSF) synthesized by bone marrow stromal cells. RANKL binds to receptor activator of NF-$\u03ba$B (RANK) on osteoclast precursors and promotes their differentiation into mature osteoclasts; osteoprotegerin (OPG) acts as a decoy receptor for RANKL and thus inhibits bone resorption (Boyce and Xing, 2008; Clarke, 2008). When laying down new bone, osteoblasts store signaling factors in the bone matrix, including transforming growth factor beta (TGF\u03b2), bone morphogenetic protein (BMP), insulin growth factors (IGFs), platelet-derived growth factor (PDGF), and fibroblast growth factors (FGFs) (Solheim, 1998). Upon bone resorption, these factors are released and regulate cell fates and activity of osteoblasts and osteoclasts, thereby coupling bone resorption and formation (Houde et al., 2009; Eriksen, 2010). Osteocytes secrete sclerostin, a Wnt inhibitor interfering with extracellular binding of Wnt ligands (Li et al., 2005). Sclerostin inhibits bone formation and promotes resorption via downregulation of osteoblastogenesis and upregulation of osteoclastogenesis (Delgado-Calle et al., 2017; Mar\u00e9 et al., 2020). Since bone also acts as a mineral reservoir for the body, regulators of calcium homeostasis such as PTH and vitamin D also strongly affect the balance of bone formation and resorption alongside the intestinal absorption and renal reabsorption of calcium (Mundy and Guise, 1999).\n\n#### Estrogen\n\nThe sex hormone estrogen inhibits bone resorption by inducing apoptosis of osteoclasts (Kameda et al., 1997) and lowering circulating sclerostin levels (M\u00f6dder et al., 2011). The rapid decline of estrogen levels after menopause is one known cause of postmenopausal osteoporosis (Riggs et al., 1998).\n\n## Results\n\n### Model overview\n\nThe primary purpose of our model is to provide an efficient representation of bone turnover on multiple time scales from weeks to decades that allows for the quantitative description of drug interventions. Of particular interest are the consequences of pharmacological therapies on long-term dynamics of the BMD in specific bone sites and biochemical markers of bone formation and resorption. To this end, we considered a minimal set of physiologically relevant dynamic components (Figure 1) that are sufficient to capture a large range of clinically observed population-level data on drug interventions. Thus, our model describes a \u2018representative BRU\u2019 that abstracts from the vast set of intricate regulatory mechanisms underlying calcium homeostasis or the complex bone geometry.\n\nOur model comprises the following dynamic components to describe the bone turnover through a representative BRU: cell densities of (i) pre-osteoclasts, (ii) osteoclasts, (iii) pre-osteoblasts, (iv) osteoblasts, (v) osteocytes, (vi) sclerostin concentration, (vii) total bone density, and (viii) bone mineral content (BMC). The BMD is given by the product of bone density and BMC. Osteoblasts and osteoclasts can undergo apoptosis and are derived from pre-osteoblasts and pre-osteoclasts, respectively, with differentiation rates that depend on regulatory factors such as estrogen and sclerostin (Figure 1). Pre-osteoblasts and pre-osteoclasts are formed at constant rates and undergo apoptosis. These progenitor populations provide a dynamic reservoir for rapid differentiation and activation of osteoblasts and osteoclasts, respectively, which can be temporarily depleted if stimulated by a drug intervention. Osteocytes are derived from osteoblasts and provide a source of sclerostin, which has a regulatory effect on osteoblasts, osteoclasts, and thus, bone density change. The gain and loss rates of bone density are proportional to the density of osteoblasts and osteoclasts, respectively. The BMC has a steady state whose level can be temporarily shifted through drug administration, effectively accounting for more complex underlying dynamics such as promotion of secondary mineralization. All rates of cell formation, differentiation, apoptosis, and bone formation and resorption generally depend on the concentration of sclerostin, estrogen, and a \u2018resorption signal.\u2019 These dependencies also implicitly account for regulation of bone remodeling via other routes, for example, the RANK\u2013RANKL\u2013OPG pathway. The effects of aging and the onset of menopause are represented through an age-dependent serum estrogen concentration, which has been determined from the literature (Sowers et al., 2008; Appendix 1). The resorption signal corresponds to the melange of signaling factors stored in the bone matrix. Therefore, its release is proportional to the rate of bone resorption. The serum concentration of BTMs such as the resorption marker C-terminal telopeptide (CTX), the formation markers procollagen type 1 amino-terminal propeptide (P1NP), and bone-specific alkaline phosphatase (BSAP) were identified with elementary functions of the bone resorption and formation rates in the model (Appendix 1).\n\nWe extended this core model of long-term bone turnover by a dynamic description of the mechanisms of action of several drug classes used in osteoporosis treatment: RANKL antibodies (denosumab), sclerostin antibodies (romosozumab), bisphosphonates (alendronate and others), and PTH analogs (teriparatide) (Appendix 2). We also included blosozumab, another sclerostin inhibitor, which was investigated in osteoporosis trials but not approved for osteoporosis treatment at the time the present work was conducted. PTH is known to exert anabolic or catabolic effects depending on whether administration is intermittent or continuous (Tam et al., 1982; Hock and Gera, 1992); PTH description in our model is restricted to the anabolic administration regimes relevant for osteoporosis treatment. A schematic overview of all model components, mechanisms, and regulatory interactions is given in Figure 1; a detailed formal description of the model and its extensions is provided in Appendix 1 and Appendix 2.\n\n### Capturing clinical study results with the model\n\nThe model and the corresponding medication modules rely on an array of physiological parameters (rates of cell formation, differentiation and death, concentration thresholds for signaling activity, medication efficacies and half-lives, etc.) many of which are not directly measureable. However, clinical measurements on physiological responses to medications with different mechanisms of action provide a wealth of indirect information about time scales of bone turnover and regulatory feedbacks. We calibrated the model using published clinical data from various seminal studies on both (i) long-term BMD age dependence and (ii) the response of BMD and BTMs to the administration of different drugs (see Appendix 3\u2014table 2 for a comprehensive list of data sources). Although BMD constitutes the major target variable of our model, the dynamics of BTM concentrations carry important complementary information about the mode of action of the administered drugs (antiresorptive, anabolic, and combinations) that crucially informs the calibration procedure. To allow the model to capture the effects of medications as physiologically sensible modulations of the age-dependent bone mineral metabolism, we created hybrid datasets each of which comprised both aging-related BMD changes and the response to a treatment (see \u2018Methods\u2019 and Appendix 1\u2014figure 1D).\n\nWe then determined a single set of model parameters through a simultaneous fit of the free 31 model parameters to capture a specified set of hybrid aging/treatment datasets containing different drug responses (Appendix 3). Without constraining the average rate of skeletal bone turnover, model calibration yielded an inferred value of about 6% per year on average, of the same order of values reported for cortical bone, which constitutes about 75% of the skeleton (Manolagas, 2000). The model was able to capture the BMD and BTM dynamics across all calibration datasets with remarkable accuracy (Appendix 3\u2014figure 1), despite the model\u2019s structural simplicity. To quantify the goodness of the fit, we computed the mean absolute percentage error (MAPE) between model simulations and clinical data; the MAPE for BMD was consistently below 1% for all calibration datasets (Appendix 3\u2014table 3), indicating an excellent agreement between model and data. The qualitative behavior of BTMs (i.e., the direction of their excursions from baseline) was captured correctly in all calibration datasets, indicating an adequate description of the drugs\u2019 mode of action in the model; relative deviations in the total magnitude of BTM excursions observed for some datasets were mostly due to slight offsets in the timing of peaks and troughs and low absolute values of the respective BTM concentrations, as highlighted by comparing different goodness measures (Appendix 3 and Appendix 3\u2014table 3).\n\nAfter obtaining the reference parameter set, we sought to validate the calibrated model by assessing its ability to predict the effects of drug dosing schemes that had not been used for calibration. Model validation included complex sequential and parallel drug combinations and therefore challenged the model to predict the effects of treatment schemes beyond those used in calibration (Appendix 3\u2014table 2). To this end, the model received only drug dosing information used in the respective clinical trials but was not informed by BMD or BTM measurements, which instead it had to predict. With the single set of previously determined parameters, the model showed a remarkable capacity to quantitatively forecast the effects of a multitude of medication schemes, both during treatment and follow-up periods (Figure 2, Figure 2\u2014figure supplement 1). Even in scenarios including sequential treatments with up to three different drug types and parallel treatments with two different drugs, respectively, the model was able to predict the complex progression of both BMD and biomarker levels with a high degree of accuracy (Figure 2). Across all validation datasets, MAPEs for BMD were consistently below 1.5% (Appendix 3\u2014table 3), indicating an excellent predictive capacity of the model. In summary, this validation provided a strong corroboration of the model\u2019s capacity to capture the physiological dynamics of bone turnover and the mechanisms of action of various drugs relevant to osteoporosis treatment using a single set of model parameters.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76228/elife-76228-fig2-v1.jpg)\n\n**Figure 2.:** (A) Comparison of simulated total hip bone mineral density (BMD, black curves) and clinical data (dots), including aging behavior (green dots) and treatment behavior (black dots) of various sequential drug treatments, including denosumab, romosozumab, alendronate, and teriparatide. Hybrid aging/treatment datasets were created combining data from Looker et al., 1998 (aging dataset, green dots in panel A; in total $N=3251$ subjects 20 years and older), as well as Recknor et al., 2015 (blosozumab 180 mg Q2W: $N=25$), McClung et al., 2018 (placebo/deno.: $N=18$, alendro./romo./deno.: $N=21$), and Leder et al., 2015 (deno./teri.: $N=27$, teri. + deno./deno.: $N=23$) (treatment datasets, black dots in panels A and B) as indicated, see \u2018Methods.\u2019 (B) Zoom into the treatment regions shown in panel (A) including BMD (black) and baseline changes of the bone resorption marker C-terminal telopeptide (CTX, red) and the bone formation marker procollagen type 1 amino-terminal propeptide (P1NP, blue). Colored bars above the plots indicate the medication scheme (see legend). Data points show population averages; average types and error bar types as reported in the respective original publication. In both panels, BMD is displayed as a fraction of its value at $t_{0}=25$ years.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76228/elife-76228-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** See Appendix 3\u2014table 2 for a list of data sources and Appendix 3\u2014table 3 for goodness-of-fit measures. Dosing: mg, milligrams; mcg, micrograms; Q $x$ M, dose administered every $x$ months; Q $x$ W, every $x$ weeks; Q $x$ D, every $x$ days; R, romosozumab; A, alendronate; D, denosumab; T, teriparatide.\n\n### Testing alternative treatment schemes\n\nHaving established the predictive capacity of the model for the considered medications, we aimed to utilize the model to study and optimize hypothetic drug dosing regimens. As an example, we considered a sequential treatment with three drugs of different types: the bisphosphonate alendronate, the sclerostin inhibitor romosozumab, and the RANKL inhibitor denosumab. In a clinical trial reported by McClung et al., 2018, the sequence alendronate (70 mg per week for 1 year), followed by romosozumab (140 mg per month for 1 year), followed by denosumab (60 mg per 6 months for 1 year) had been studied (Figure 2). However, in principle there are six different sequences in which these drugs can be administered: ARD, ADR, DAR, DRA, RAD, and RDA (A: alendronate; R: romosozumab; D: denosumab). A priori, it is not obvious whether synergistic or antagonistic interactions between these drugs and the physiological state in which they leave the patient may lead to a differential short- and long-term evolution of BMD and biomarkers between different medication sequences. Probing all six sequences in a clinical trial would present a time- and resource-consuming endeavor and inevitably expose part of the study population to suboptimal treatment schemes. Instead, we probed these different treatment options using the present model (Figure 3A). To assess the predicted clinical success of different sequences, we compared two clinically relevant outcomes across different schemes: (i) the maximum achieved BMD increase (as compared to baseline at treatment start) irrespective of when it occurred (Figure 3B) and (ii) the residual long-term effects of treatment on BMD as monitored by the relative BMD 10 years after treatment end (Figure 3C) .\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76228/elife-76228-fig3-v1.jpg)\n\n**Figure 3.:** (A) Simulated progression of bone mineral density (BMD) and C-terminal telopeptide (CTX) and procollagen type 1 amino-terminal propeptide (P1NP) concentrations for different sequences (columns) of the three drugs denosumab (D), alendronate (A), and romosozumab (R) as indicated. Simulated treatment starts at age 67. The total amount of drug administered is identical among columns. Clinical results on the sequence ARD (column 5) were reported in McClung et al., 2018, see also Figure 2. (B) Maximum simulated BMD (relative to baseline at treatment start) achieved during the course of treatment for different drug sequences. (C) Simulated BMD 10 years after treatment end (relative to baseline at treatment start) for different drug sequences.\n\nIndeed, we found that the outcomes of different medication sequences were markedly different despite the same total amount of drug administered (Figure 3A). Some sequences (such as ARD and RAD) reached a considerably higher maximum BMD during the course of the simulated treatment, which allowed us to rank treatments according to maximum BMD gain (Figure 3B). Notably, while some sequences were superior to others as measured by the maximum BMD increase during treatment, they performed markedly worse (as compared to, e.g., DRA and RDA) with regard to long-term BMD evolution as predicted by model simulations (Figure 3C). This behavior suggests that short-term BMD gains may be limited as a proxy for the clinical benefit of a treatment as a whole. Within our modeling scheme, the explanation for this behavior is found in differing \u2018rebound\u2019 effects after treatment end: simulated drug-mediated inhibition of osteoclastogenesis leads to a build-up of an undifferentiated osteoclast precursor pool. After treatment end, this precursor pool becomes licensed to differentiate and rapidly gives rise to a large active osteoclast population, leading to accelerated resorption of the bone matrix that had been built up during treatment. In this paradigm, specific drug sequences lead to an attenuation of this effect, for example, by enhancing osteoclast apoptosis during such a \u2018rebound\u2019 phase, thereby modulating bone turnover in the long run.\n\nIn summary, our model analysis suggests considerable potential in the improvement of dosing regimens and drug sequencing in osteoporosis treatment, especially combination therapies, to achieve an optimal effect for a given medication load. These improvements are possible because the mechanisms of action of one drug may act either favorably or adversely on the state of the bone mineral metabolism left behind by the preceding treatment with another drug.\n\n## Discussion\n\nTreatment of osteoporosis is complex, expensive, and in many circumstances opinion-based. With bone physiology as our guiding principle, we have introduced a mathematical modeling framework that can quantitatively capture and predict the progression of osteoporosis in postmenopausal women with and without medical therapy. Our model is built on a small set of essential mechanisms of bone turnover. The effectivity of this approach suggests that\u2014despite the complexity of the bone mineral metabolism\u2014the dynamics relevant for osteoporosis medications can be condensed into only a few components. These components describe the biology of osteoblasts, osteoclasts, and osteocytes, as well as their precursor cell populations and a few essential regulatory feedbacks through hormones and signaling factors such as estrogen, sclerostin, and bone-matrix-derived factors.\n\nThe general nature of the model allowed us to capture the BMD and BTMs of a multitude of clinical treatment studies. Notably, the model can also predict the effects of a broad range of drug dosing regimens and complex drug combination therapies beyond those used for model development. This corroborates the model\u2019s predictive capacity, supporting its use for the design of future clinical trials. However, it is important to note that some parameters (e.g., concentration thresholds for signaling factors) were inferred through the model calibration procedure from BMD and BTM dynamics alone. Hence, when used as a predictive tool, general quantitative limitations of the model have to be considered, especially when extrapolating into extreme dosing regimens, dosing frequencies, or age regions beyond the validated ones.\n\nIt is of clinical relevance that exemplary model predictions suggest a large potential for the development of optimized combination therapies involving different drug types and treatment schemes. These may range from a simple rearrangement of a sequence of drugs at given total drug doses (as shown in this article) to complex interwoven or cyclic administration schemes that exploit synergistic effects between different medication types. Notably, model simulations extrapolating the long-term BMD development after treatment end suggest that medication schemes eliciting a rapid BMD increase are not necessarily accompanied by a sustained elevation of the BMD. Instead, some initially successful treatment schemes may lead to a \u2018rebound\u2019 effect of accelerated bone loss after treatment end, a prediction that cautions against using short-term BMD increases as the sole proxy for treatment success. Such extrapolations into follow-up periods long after treatment end, which are mostly inaccessible to clinical studies, highlight the potential role of the model in considering long-term treatment success when optimizing treatment schemes.\n\nIn our research, we have focused on postmenopausal osteoporosis, the most widespread type of osteoporosis. However, the generic manner in which the model represents bone remodeling and the effects of medications renders it a general platform for the study of treatments that can be adapted to other types of primary and secondary osteoporosis. The modular nature of the model enables future extensions; besides additional medication types, these may include the effects of comorbidities that elicit osteoporosis or interact with it (such as primary and secondary hyperparathyroidism), medications that contribute to osteoporosis (such as glucocorticoid therapy), lifestyle-dependent factors such as smoking and alcohol consumption, the effects of dietary supplementation of osteoporosis treatment through calcium and vitamin D and effects of microgravity on bone, as experienced by astronauts on extended missions in space. Physical activity is another important contributor to bone remodeling, which we have not considered here. Detailed modeling approaches involving biomechanical feedback suggest synergistic effects between drug treatment of osteoporosis and physical activity (Lavaill et al., 2020). Such results call for a further exploration of integrated approaches to osteoporosis therapy combining pharmacological treatment and lifestyle adjustments.\n\nClearly, the goal of osteoporosis therapy is the reduction of fracture risk during and after therapy. While BMD has a prime role in the evaluation of osteoporosis therapies and can be measured rather easily using dual-energy x-ray absorptiometry (DXA), its relationship to fracture risk is complex. Fracture risk calculations used in clinical practice also involve demographic and lifestyle-related factors while mostly relying on BMD point measurements (Kanis et al., 2009). However, the quantitative associations between BMD, age, and fracture risk reported in many studies (Kanis et al., 2001; Berger et al., 2009; Austin et al., 2012; Krege et al., 2013; Black et al., 2018; Ensrud et al., 2022) can be used to create statistical models that may relate entire BMD time courses to a patient\u2019s fracture risk. Combining such statistical models with the physiology-based model presented here would enable to optimize therapies directly for a minimized long-term fracture risk instead of maximized BMD gain. Thus, our model can serve as a quantitative starting point for the forecast of pharmacological therapies of osteoporosis but also highlights the role of mechanistic mathematical descriptions in understanding the biological principles of drug action.\n\n## Methods\n\n### Hybrid aging/treatment datasets\n\nTo create hybrid aging/treatment datasets, we merged a dataset comprising the BMD age dependence from Looker et al., 1998 with different clinical study datasets containing the BMD response to various medications (Appendix 3\u2014table 2). The aging dataset from Looker et al., 1998 consisted of mean total femur BMD measurements in non-Hispanic white, non-Hispanic black, and Mexican American women, reported in 10-year age bins ranging from 20 to 80 years and older. We used bin averages as proxy BMD indicators for the center of the respective age window (Appendix 1\u2014figure 1B). Rescaling the reported means for the three ethnic groups to their value for the earliest age bin revealed that relative changes in BMD were remarkably consistent among ethnic groups (Appendix 1\u2014figure 1C) despite differing absolute baselines. Therefore, and since the model only addresses relative BMD changes, we resorted to the dataset with the largest underlying study population for calibration, which was the dataset comprising the non-Hispanic white female study population. Datasets on the response to medications from clinical trials on romosozumab, blosozumab, denosumab, alendronate, and teriparatide consisted of study population averages of total hip BMD and serum concentrations of one or more BTMs (CTX, P1NP, BSAP) during the treatment, and if available, during a follow-up period. Reported study population averages on the respective quantities were digitized directly from the data figures in the corresponding publications (Appendix 3\u2014table 2).\n\nTo merge aging and treatment datasets, the BMD from treatment datasets was rescaled such that the BMD baseline at treatment start corresponds to the linearly interpolated age-dependent BMD at treatment start. The treatment start was placed at the average age of the study population upon study start (rounded to full years) as reported in the respective publication (Appendix 1\u2014figure 1D). BTM measurements were normalized to baseline values.\n",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "acf35db1-b8b9-4f10-9f08-12e3619107e7",
+      "submission_id": "5be45bde-4f71-4285-99e0-f6a8324a5c70",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nicola Napoli, https://ror.org/04gqx4x78 Campus Bio-Medico University of Rome Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76228.sa0](https://doi.org/10.7554/eLife.76228.sa0)\n\nThe authors have developed a mathematical framework of drug interventions for postmenopausal osteoporosis using bisphosphonates, parathyroid hormone analogs, romosozumab, and denosumab. After calibrating and validating the model, authors demonstrated a predictive ability for complex clinical scenarios including sequential and parallel drug combinations. These data may be of great help in clinical practice.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Nicola Napoli, https://ror.org/04gqx4x78 Campus Bio-Medico University of Rome Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76228.sa1](https://doi.org/10.7554/eLife.76228.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Modeling osteoporosis to design and optimize pharmacologic therapies comprising multiple drug types\" for consideration by eLife. Your article has been reviewed by 1 peer reviewer, and the evaluation has been overseen by a Reviewing Editor and Mone Zaidi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Peter Pivonka (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n(1) The discussion needs a lot of revision: it must be clear to authors that the manuscript will be read also by a lot of physicians and a clear, clinical language should be used.\n\n(2) In terms of bone density measurements authors should compare their data with those from Black et al., (JBMR 2018) from the SOF study and Dr Ensrud (JCEM 2022).\n\nThe paper is very well written and presents promising results.\n\nThe introduction is very comprehensive.\n\nThe only additional reference I would suggest is:\n\nLavaill et al., 2021 \"Effects of PTH treatment in osteoporosis \u2013 insights from a mechanistic PK-PD model, BMMB, pp1-16, 2020.\" (https://doi.org/10.1007/s10237-020-01307-6)\n\nThis paper explores the synergy between exercise and PTH treatment which is essentially a combined treatment. This would be one of the few papers that could be used in the Discussion section as comparison with the current results / model developments.\n\nSentence containing \"(BMD) in specific bone types\";\n\nI suggest substituting \"types\" with \"site\" as you refer to hip, wrist, vertebra BMD.\n",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4c98626c-4107-4c06-915d-d2528b35fccd",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C1",
+      "claim": "Osteoporosis affects hundreds of millions of people worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoporosis, a disease characterized by porous bone prone to fractures, affects hundreds of millions of people worldwide (Cooper and Ferrari, 2019; Hernlund et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cooper and Ferrari, 2019 and Hernlund et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "2164ac72-7e83-4ead-b7e4-a6ac5931a7ca",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C2",
+      "claim": "The global annual incidence of bone fragility fractures was 9 million in the year 2000.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recent estimates place the global annual incidence of bone fragility fractures at 9 million in the year 2000 (Cooper and Ferrari, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cooper and Ferrari, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "0e2a04eb-2e40-45b9-ae52-cded67952368",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C3",
+      "claim": "Projections for the year 2050 suggest between 7 and 21 million annual hip fractures.",
+      "claim_type": "EXPLICIT",
+      "source": "projections for the year 2050 suggest between 7 and 21 million annual hip fractures (Gullberg et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gullberg et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "f75a7d0f-aacb-4ef4-955a-806b5798bb99",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C4",
+      "claim": "Osteoporosis-associated bone fractures lead to disabilities, pain, and increased mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoporosis-associated bone fractures lead to disabilities, pain, and increased mortality (Cooper and Ferrari, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cooper and Ferrari, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "33880ec0-70a5-43ea-acdd-bf800cf62a6f",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C5",
+      "claim": "In the United States, medical cost for osteoporosis was estimated at US$17 billion in 2005.",
+      "claim_type": "EXPLICIT",
+      "source": "In the United States, medical cost for osteoporosis, including inpatient, outpatient, and long-term care costs, has been estimated at US$17 billion in 2005 (Burge et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burge et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "575cb1e4-4560-46b1-9dad-88c907dddae6",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C6",
+      "claim": "In the European Union, the total cost of osteoporosis is projected to rise from about \u20ac100 billion in 2010 to \u20ac120 billion in 2025.",
+      "claim_type": "EXPLICIT",
+      "source": "in the European Union, the total cost of osteoporosis, including pharmacological interventions and loss of quality-adjusted life-years (QALYs), is projected to rise from about \u20ac100 billion in 2010 to \u20ac120 billion in 2025 (Od\u00e9n et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Od\u00e9n et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "c1821613-285e-474e-ba4d-3729efd6451c",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C7",
+      "claim": "Osteoporotic bone is the consequence of an imbalance of continuous bone resorption and bone formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoporotic bone is the consequence of an imbalance of continuous bone resorption and bone formation, which\u2014under close to homeostatic conditions\u2014has the function to remove microfractures and renew the structural integrity of bone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific understanding of osteoporosis pathophysiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "c23f5c04-bf5c-4747-bc1e-48f92aeccc34",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C8",
+      "claim": "Postmenopausal women are particularly at risk of osteoporosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Postmenopausal women are particularly at risk of osteoporosis: the rapid decline of systemic estrogen levels after menopause and other aging-related effects such as increased oxidative stress contribute to or drive the development of osteoporosis (Riggs et al., 1998; Manolagas, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Riggs et al., 1998 and Manolagas, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "3542bfe0-cc91-4cd8-aaa0-73f0e1d83237",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C9",
+      "claim": "The rapid decline of systemic estrogen levels after menopause contributes to or drives the development of osteoporosis.",
+      "claim_type": "EXPLICIT",
+      "source": "the rapid decline of systemic estrogen levels after menopause and other aging-related effects such as increased oxidative stress contribute to or drive the development of osteoporosis (Riggs et al., 1998; Manolagas, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Riggs et al., 1998 and Manolagas, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "a7bc0ce2-a383-45d2-b584-ed12fa0c18f5",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C10",
+      "claim": "Aging-related effects such as increased oxidative stress contribute to or drive the development of osteoporosis.",
+      "claim_type": "EXPLICIT",
+      "source": "the rapid decline of systemic estrogen levels after menopause and other aging-related effects such as increased oxidative stress contribute to or drive the development of osteoporosis (Riggs et al., 1998; Manolagas, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Riggs et al., 1998 and Manolagas, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "3cecd6bb-73de-4bc7-8adc-e942d193c1c8",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C11",
+      "claim": "Osteoporosis can be a sequela of diseases affecting bone metabolism and remodeling such as primary hyperparathyroidism or gastrointestinal diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, osteoporosis can be a sequela of diseases affecting bone metabolism and remodeling such as primary hyperparathyroidism or gastrointestinal diseases (Painter et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Painter et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "2789a48c-288f-4ce5-ae72-bec2e803189e",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C12",
+      "claim": "Glucocorticoid administration is the most common cause of secondary osteoporosis.",
+      "claim_type": "EXPLICIT",
+      "source": "as a prime example, glucocorticoid administration is the most common cause of secondary osteoporosis (Weinstein, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weinstein, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "a8d287ad-5626-4dd9-a6ce-3c5bc06d7e42",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C13",
+      "claim": "Over the last decades, an array of different osteoporosis treatments have emerged, from simple dietary supplementations such as calcium and vitamin D to specialized drugs targeting bone-forming and -resorbing cells and related signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the last decades, an array of different osteoporosis treatments have emerged, from simple dietary supplementations such as calcium and vitamin D to specialized drugs targeting bone-forming and -resorbing cells and related signaling pathways (Tu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "b6648f6b-f0d0-44af-be42-5498a893a44c",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C14",
+      "claim": "Very few treatment schemes have been clinically tested so far when compared to the total number of available options.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the huge number of such treatment schemes and the required time from study inception to completion, very few of them have been clinically tested so far when compared to the total number of available options.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the large number of possible treatment combinations and practical limitations of clinical trials",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "c03f09bd-afa5-4194-a96b-65b81722e93e",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C15",
+      "claim": "Lemaire et al., 2004 describes the dynamics of bone-forming and -resorbing cell populations coupled through signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneering work by Lemaire et al., 2004 describes the dynamics of bone-forming and -resorbing cell populations coupled through signaling pathways and could qualitatively reproduce the effects of senescence, glucocorticoid excess, and estrogen and vitamin D deficiency on bone turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lemaire et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "c5400809-9972-429e-a461-fa3056276417",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C16",
+      "claim": "The model by Lemaire et al., 2004 could qualitatively reproduce the effects of senescence, glucocorticoid excess, and estrogen and vitamin D deficiency on bone turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneering work by Lemaire et al., 2004 describes the dynamics of bone-forming and -resorbing cell populations coupled through signaling pathways and could qualitatively reproduce the effects of senescence, glucocorticoid excess, and estrogen and vitamin D deficiency on bone turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lemaire et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "47a4e38c-fb76-4fce-9084-519a5e88fd90",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C17",
+      "claim": "Compartment-based descriptions of the mineral metabolism, bone-forming and -resorbing cell populations, and related signaling factors have elucidated the role of essential regulatory mechanisms underlying mineral balance and bone turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Since then, compartment-based descriptions of the mineral metabolism, bone-forming and -resorbing cell populations, and related signaling factors have elucidated the role of essential regulatory mechanisms underlying mineral balance and bone turnover (Komarova et al., 2003; Lemaire et al., 2004; Pivonka et al., 2008; Pivonka et al., 2010; Peterson and Riggs, 2010; Zumsande et al., 2011; Schmidt et al., 2011; Graham et al., 2013; Tanaka et al., 2014; Komarova et al., 2015; Berkhout et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to modeling studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "80e469cb-4b76-4f27-bbd3-8ebdb20bc217",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C18",
+      "claim": "An integrated mathematical framework for multiple drugs, which can also be used to quantitatively predict the effects of drug combinations in sequence and in parallel is not yet available.",
+      "claim_type": "EXPLICIT",
+      "source": "An integrated mathematical framework for multiple drugs, which can also be used to quantitatively predict the effects of drug combinations in sequence and in parallel is not yet available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of existing literature and identification of a gap in current modeling approaches",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "15a2d330-4b1d-4b2c-9d13-d7e1da887e90",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C21",
+      "claim": "The authors calibrate and validate the model using data from several clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Using data from several clinical trials, we calibrate and validate the model, demonstrating its predictive capacity for complex medication scenarios, including sequential and parallel drug combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology and validation approach used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "95db9c5f-9a84-4fb7-9d67-b178f125d50b",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C22",
+      "claim": "The model demonstrates predictive capacity for complex medication scenarios, including sequential and parallel drug combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using data from several clinical trials, we calibrate and validate the model, demonstrating its predictive capacity for complex medication scenarios, including sequential and parallel drug combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript supported by the validation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "175220da-c160-48ad-90df-2b5ba02241bf",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C23",
+      "claim": "There is a large potential to improve gains in bone mineral density by exploiting synergistic interactions between different drug classes, without increasing the total amount of drug administered.",
+      "claim_type": "EXPLICIT",
+      "source": "Via simulations, we reveal that there is a large potential to improve gains in bone mineral density by exploiting synergistic interactions between different drug classes, without increasing the total amount of drug administered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the simulation results presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "87a2d26c-2782-4f63-b0e8-d83eac4993d1",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C24",
+      "claim": "Bone is constantly turned over to renew its integrity and remove microdamage, at an average rate of about 4% per year in cortical bone and about 30% per year in trabecular bone.",
+      "claim_type": "EXPLICIT",
+      "source": "As a composite tissue comprising hydroxyapatite, collagen, other proteins, and water (Boskey, 2013), bone is constantly turned over to renew its integrity and remove microdamage, at an average rate of about 4% per year in cortical bone and about 30% per year in trabecular bone (Manolagas, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Boskey, 2013 and Manolagas, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "b4c9fbe3-38c8-47f4-a7f3-c0df1811bb5c",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C25",
+      "claim": "Bone is a composite tissue comprising hydroxyapatite, collagen, other proteins, and water.",
+      "claim_type": "EXPLICIT",
+      "source": "As a composite tissue comprising hydroxyapatite, collagen, other proteins, and water (Boskey, 2013), bone is constantly turned over to renew its integrity and remove microdamage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boskey, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "3aa6a7be-9f62-4fc7-9676-8a211a739bd5",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C26",
+      "claim": "Bone resorption is performed by osteoclasts, multinucleated cells formed through the differentiation and fusion of their immediate precursors (pre-osteoclasts).",
+      "claim_type": "EXPLICIT",
+      "source": "Bone resorption is performed by osteoclasts, multinucleated cells formed through the differentiation and fusion of their immediate precursors (pre-osteoclasts), which are derived from pluripotent hematopoietic stem cells via the myeloid lineage (Boyce and Xing, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boyce and Xing, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "9fbe5210-b956-4c47-9e1f-97fa018451f4",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C27",
+      "claim": "Pre-osteoclasts are derived from pluripotent hematopoietic stem cells via the myeloid lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Bone resorption is performed by osteoclasts, multinucleated cells formed through the differentiation and fusion of their immediate precursors (pre-osteoclasts), which are derived from pluripotent hematopoietic stem cells via the myeloid lineage (Boyce and Xing, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boyce and Xing, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "05fd03e3-5576-4d1f-970c-6a9591d6f66f",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C28",
+      "claim": "Osteoclasts attach to bone tissue and resorb it through the secretion of hydrogen ions and bone-degrading enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoclasts attach to bone tissue and resorb it through the secretion of hydrogen ions and bone-degrading enzymes (Fuller and Chambers, 1995), which leads to the release of minerals and signaling factors stored in the bone matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fuller and Chambers, 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "119714b2-abca-4cf0-bfd4-f85233726a2e",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C29",
+      "claim": "Osteoclast activity leads to the release of minerals and signaling factors stored in the bone matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoclasts attach to bone tissue and resorb it through the secretion of hydrogen ions and bone-degrading enzymes (Fuller and Chambers, 1995), which leads to the release of minerals and signaling factors stored in the bone matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the mechanism of bone resorption and citation to Fuller and Chambers, 1995",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "8cb15f05-125f-4904-890b-ed044621151d",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C30",
+      "claim": "New bone is formed by osteoblasts, a cell type derived from mesenchymal stem cells via several intermediate states that give rise to pre-osteoblasts and finally osteoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "New bone is formed by osteoblasts, a cell type derived from mesenchymal stem cells via several intermediate states that give rise to pre-osteoblasts and finally osteoblasts (Eriksen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Eriksen, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "12326da0-7291-40f7-8173-9fb69e0e65f8",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C31",
+      "claim": "Groups of osteoblasts organize into cell clusters (osteons) and collectively lay down an organic matrix (osteoid), which subsequently becomes mineralized over the course of months.",
+      "claim_type": "EXPLICIT",
+      "source": "Groups of osteoblasts organize into cell clusters (osteons) and collectively lay down an organic matrix (osteoid), which subsequently becomes mineralized over the course of months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge of bone formation physiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "7b103d78-bc59-4e88-8fea-6cebd1a84640",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C32",
+      "claim": "Osteoblasts that are enclosed in the newly secreted bone matrix become osteocytes, nondividing cells with an average life span of up to several decades.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoblasts that are enclosed in the newly secreted bone matrix become osteocytes, nondividing cells with an average life span of up to several decades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge of osteocyte biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "3584b6a2-6bb6-49bd-b188-35ce96fd2f9e",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C33",
+      "claim": "Osteoclasts and osteoblasts organize into spatially defined local clusters termed 'bone remodeling units' (BRUs).",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoclasts and osteoblasts organize into spatially defined local clusters termed 'bone remodeling units' (BRUs) (Figure 1), in which osteoblasts replenish the bone matrix previously resorbed by osteoclasts with a delay of several weeks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Draws from established knowledge and illustrated in Figure 1",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "4f966190-c317-48e5-a843-c5f9c8735b1c",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C34",
+      "claim": "In bone remodeling units, osteoblasts replenish the bone matrix previously resorbed by osteoclasts with a delay of several weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoclasts and osteoblasts organize into spatially defined local clusters termed 'bone remodeling units' (BRUs) (Figure 1), in which osteoblasts replenish the bone matrix previously resorbed by osteoclasts with a delay of several weeks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Draws from established knowledge of bone remodeling dynamics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "34ef6792-0e5b-4c5e-82a1-bd767466b75f",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C35",
+      "claim": "In cortical bone, BRUs migrate as a whole in 'tunnels'.",
+      "claim_type": "EXPLICIT",
+      "source": "In cortical bone, the outer protective bone layer, BRUs migrate as a whole in 'tunnels,' whereas within the inner cancellous bone, BRUs propagate on the surfaces of the trabeculae, renewing the bone matrix in the process (Eriksen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Eriksen, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "b3d6bc39-5483-459b-a977-83089572b5de",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C36",
+      "claim": "Within the inner cancellous bone, BRUs propagate on the surfaces of the trabeculae, renewing the bone matrix in the process.",
+      "claim_type": "EXPLICIT",
+      "source": "In cortical bone, the outer protective bone layer, BRUs migrate as a whole in 'tunnels,' whereas within the inner cancellous bone, BRUs propagate on the surfaces of the trabeculae, renewing the bone matrix in the process (Eriksen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Eriksen, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "5651a443-31a3-4140-833b-79b5c1d0501e",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C37",
+      "claim": "Osteoclast formation and activity are prominently regulated by RANKL and macrophage colony-stimulating factor (M-CSF) synthesized by bone marrow stromal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoclast formation and activity are prominently regulated by RANKL and macrophage colony-stimulating factor (M-CSF) synthesized by bone marrow stromal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge of osteoclast regulation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "2af0d8d9-1195-435d-ba69-d7c933eb58d0",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C40",
+      "claim": "When laying down new bone, osteoblasts store signaling factors in the bone matrix, including transforming growth factor beta (TGF\u03b2), bone morphogenetic protein (BMP), insulin growth factors (IGFs), platelet-derived growth factor (PDGF), and fibroblast growth factors (FGFs).",
+      "claim_type": "EXPLICIT",
+      "source": "When laying down new bone, osteoblasts store signaling factors in the bone matrix, including transforming growth factor beta (TGF\u03b2), bone morphogenetic protein (BMP), insulin growth factors (IGFs), platelet-derived growth factor (PDGF), and fibroblast growth factors (FGFs) (Solheim, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Solheim, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "deec9a33-d0a1-4a9d-a3a2-a64a6d510849",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C41",
+      "claim": "Upon bone resorption, signaling factors stored in the bone matrix are released and regulate cell fates and activity of osteoblasts and osteoclasts, thereby coupling bone resorption and formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon bone resorption, these factors are released and regulate cell fates and activity of osteoblasts and osteoclasts, thereby coupling bone resorption and formation (Houde et al., 2009; Eriksen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Houde et al., 2009 and Eriksen, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "092757a8-5a97-4db2-b29c-2266d6b88d5d",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C42",
+      "claim": "Osteocytes secrete sclerostin, a Wnt inhibitor interfering with extracellular binding of Wnt ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteocytes secrete sclerostin, a Wnt inhibitor interfering with extracellular binding of Wnt ligands (Li et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "dab55186-1c8f-4530-a5f5-b41f241d58e0",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C43",
+      "claim": "Sclerostin inhibits bone formation and promotes resorption via downregulation of osteoblastogenesis and upregulation of osteoclastogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Sclerostin inhibits bone formation and promotes resorption via downregulation of osteoblastogenesis and upregulation of osteoclastogenesis (Delgado-Calle et al., 2017; Mar\u00e9 et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Delgado-Calle et al., 2017 and Mar\u00e9 et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "a1758f62-dfe6-4752-a55f-1c1f307ad03b",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C44",
+      "claim": "Regulators of calcium homeostasis such as PTH and vitamin D strongly affect the balance of bone formation and resorption alongside the intestinal absorption and renal reabsorption of calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "Since bone also acts as a mineral reservoir for the body, regulators of calcium homeostasis such as PTH and vitamin D also strongly affect the balance of bone formation and resorption alongside the intestinal absorption and renal reabsorption of calcium (Mundy and Guise, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mundy and Guise, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "5608d06e-952a-4bb7-b294-4b909e3d59fc",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C45",
+      "claim": "Estrogen inhibits bone resorption by inducing apoptosis of osteoclasts.",
+      "claim_type": "EXPLICIT",
+      "source": "The sex hormone estrogen inhibits bone resorption by inducing apoptosis of osteoclasts (Kameda et al., 1997) and lowering circulating sclerostin levels (M\u00f6dder et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kameda et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "a97d08fc-780e-4e42-b95e-973a22feb3a4",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C46",
+      "claim": "Estrogen lowers circulating sclerostin levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The sex hormone estrogen inhibits bone resorption by inducing apoptosis of osteoclasts (Kameda et al., 1997) and lowering circulating sclerostin levels (M\u00f6dder et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to M\u00f6dder et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "c0e12b61-f0a0-4b4d-ad66-c905b577a4a8",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C47",
+      "claim": "The model comprises dynamic components including cell densities of pre-osteoclasts, osteoclasts, pre-osteoblasts, osteoblasts, osteocytes, sclerostin concentration, total bone density, and bone mineral content (BMC).",
+      "claim_type": "EXPLICIT",
+      "source": "Our model comprises the following dynamic components to describe the bone turnover through a representative BRU: cell densities of (i) pre-osteoclasts, (ii) osteoclasts, (iii) pre-osteoblasts, (iv) osteoblasts, (v) osteocytes, (vi) sclerostin concentration, (vii) total bone density, and (viii) bone mineral content (BMC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the model developed in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "806a9f6a-e80a-4a26-8760-25c75ec3b296",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C48",
+      "claim": "The BMD is given by the product of bone density and BMC.",
+      "claim_type": "EXPLICIT",
+      "source": "The BMD is given by the product of bone density and BMC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a mathematical relationship in the model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "6790592f-6072-4e8a-9cf7-fb04ef56ce0a",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C49",
+      "claim": "The effects of aging and the onset of menopause are represented through an age-dependent serum estrogen concentration, which has been determined from the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of aging and the onset of menopause are represented through an age-dependent serum estrogen concentration, which has been determined from the literature (Sowers et al., 2008; Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sowers et al., 2008 and reference to Appendix 1",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "e8ed081a-c5fb-4380-a495-3e85a656b56e",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C50",
+      "claim": "PTH is known to exert anabolic or catabolic effects depending on whether administration is intermittent or continuous.",
+      "claim_type": "EXPLICIT",
+      "source": "PTH is known to exert anabolic or catabolic effects depending on whether administration is intermittent or continuous (Tam et al., 1982; Hock and Gera, 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tam et al., 1982 and Hock and Gera, 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "6010f6d4-dc83-471d-9fdc-306d9f8d1b75",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C51",
+      "claim": "PTH description in the model is restricted to the anabolic administration regimes relevant for osteoporosis treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "PTH description in our model is restricted to the anabolic administration regimes relevant for osteoporosis treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design choice in the model development",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "fe79bfde-5178-496b-bfe1-9756bdd10168",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C52",
+      "claim": "The model was calibrated using published clinical data from various seminal studies on both long-term BMD age dependence and the response of BMD and BTMs to the administration of different drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "We calibrated the model using published clinical data from various seminal studies on both (i) long-term BMD age dependence and (ii) the response of BMD and BTMs to the administration of different drugs (see Appendix 3\u2014table 2 for a comprehensive list of data sources).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calibration methodology used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "4dc19888-2d63-4a93-b749-1ff3f7851065",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C53",
+      "claim": "Model calibration yielded an inferred value of about 6% per year on average for skeletal bone turnover, of the same order of values reported for cortical bone, which constitutes about 75% of the skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Without constraining the average rate of skeletal bone turnover, model calibration yielded an inferred value of about 6% per year on average, of the same order of values reported for cortical bone, which constitutes about 75% of the skeleton (Manolagas, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model calibration, compared to literature values from Manolagas, 2000",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "0196de13-c2a1-4b12-a336-b4a259505dfd",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C54",
+      "claim": "The model was able to capture the BMD and BTM dynamics across all calibration datasets with remarkable accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was able to capture the BMD and BTM dynamics across all calibration datasets with remarkable accuracy (Appendix 3\u2014figure 1), despite the model's structural simplicity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the calibration results, supported by data shown in Appendix 3\u2014figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "a8a5dcca-cdf6-4110-9925-ca7a21f87fb8",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C55",
+      "claim": "The MAPE for BMD was consistently below 1% for all calibration datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify the goodness of the fit, we computed the mean absolute percentage error (MAPE) between model simulations and clinical data; the MAPE for BMD was consistently below 1% for all calibration datasets (Appendix 3\u2014table 3), indicating an excellent agreement between model and data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the calibration analysis, with data in Appendix 3\u2014table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "a0e2c6b3-602f-4f2c-a4a0-b2670fafec99",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C56",
+      "claim": "The qualitative behavior of BTMs (i.e., the direction of their excursions from baseline) was captured correctly in all calibration datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The qualitative behavior of BTMs (i.e., the direction of their excursions from baseline) was captured correctly in all calibration datasets, indicating an adequate description of the drugs' mode of action in the model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the calibration results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "a077e3ff-6042-43c1-8d16-f7d79971d6e5",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C57",
+      "claim": "With the single set of previously determined parameters, the model showed a remarkable capacity to quantitatively forecast the effects of a multitude of medication schemes, both during treatment and follow-up periods.",
+      "claim_type": "EXPLICIT",
+      "source": "With the single set of previously determined parameters, the model showed a remarkable capacity to quantitatively forecast the effects of a multitude of medication schemes, both during treatment and follow-up periods (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the validation analysis, supported by data shown in Figure 2 and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "0a54529f-233c-4685-a61a-fb781dcf4ec1",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C58",
+      "claim": "Across all validation datasets, MAPEs for BMD were consistently below 1.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all validation datasets, MAPEs for BMD were consistently below 1.5% (Appendix 3\u2014table 3), indicating an excellent predictive capacity of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the validation analysis, with data in Appendix 3\u2014table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "8130e8fc-a14f-4c1c-80be-7d0c8a439d75",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C59",
+      "claim": "The outcomes of different medication sequences were markedly different despite the same total amount of drug administered.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the outcomes of different medication sequences were markedly different despite the same total amount of drug administered (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation analysis, supported by data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "38cbf0bc-839f-446b-bfde-8462dca6b2f0",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C60",
+      "claim": "Some sequences (such as ARD and RAD) reached a considerably higher maximum BMD during the course of the simulated treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Some sequences (such as ARD and RAD) reached a considerably higher maximum BMD during the course of the simulated treatment, which allowed us to rank treatments according to maximum BMD gain (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation analysis, supported by data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "0fe8ec56-7eff-4639-a50a-d9a30ad3333c",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C61",
+      "claim": "While some sequences were superior to others as measured by the maximum BMD increase during treatment, they performed markedly worse with regard to long-term BMD evolution as predicted by model simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, while some sequences were superior to others as measured by the maximum BMD increase during treatment, they performed markedly worse (as compared to, e.g., DRA and RDA) with regard to long-term BMD evolution as predicted by model simulations (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation analysis, supported by data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "615731c1-af5c-4c0e-a407-8a0e38ad7935",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C62",
+      "claim": "Short-term BMD gains may be limited as a proxy for the clinical benefit of a treatment as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior suggests that short-term BMD gains may be limited as a proxy for the clinical benefit of a treatment as a whole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the simulation results showing differential short-term vs. long-term outcomes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "d059fbd2-c629-43c9-9497-3f7dec66d372",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C63",
+      "claim": "Simulated drug-mediated inhibition of osteoclastogenesis leads to a build-up of an undifferentiated osteoclast precursor pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Within our modeling scheme, the explanation for this behavior is found in differing 'rebound' effects after treatment end: simulated drug-mediated inhibition of osteoclastogenesis leads to a build-up of an undifferentiated osteoclast precursor pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation derived from the model simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "e3629795-942c-4e65-9aee-34f821c5ed94",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C64",
+      "claim": "After treatment end, the osteoclast precursor pool becomes licensed to differentiate and rapidly gives rise to a large active osteoclast population, leading to accelerated resorption of the bone matrix that had been built up during treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "After treatment end, this precursor pool becomes licensed to differentiate and rapidly gives rise to a large active osteoclast population, leading to accelerated resorption of the bone matrix that had been built up during treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation derived from the model simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "414598ba-84c9-4d93-a84a-fa5c4e6820dd",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C65",
+      "claim": "Specific drug sequences lead to an attenuation of the rebound effect, for example, by enhancing osteoclast apoptosis during such a 'rebound' phase, thereby modulating bone turnover in the long run.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paradigm, specific drug sequences lead to an attenuation of this effect, for example, by enhancing osteoclast apoptosis during such a 'rebound' phase, thereby modulating bone turnover in the long run.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation derived from the model simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "b197170c-cd59-4a49-aa2e-07640d165ca0",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C66",
+      "claim": "Model analysis suggests considerable potential in the improvement of dosing regimens and drug sequencing in osteoporosis treatment, especially combination therapies, to achieve an optimal effect for a given medication load.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our model analysis suggests considerable potential in the improvement of dosing regimens and drug sequencing in osteoporosis treatment, especially combination therapies, to achieve an optimal effect for a given medication load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "0153b0f2-d7e2-49ca-ae1e-5051937417a2",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C67",
+      "claim": "The mechanisms of action of one drug may act either favorably or adversely on the state of the bone mineral metabolism left behind by the preceding treatment with another drug.",
+      "claim_type": "EXPLICIT",
+      "source": "These improvements are possible because the mechanisms of action of one drug may act either favorably or adversely on the state of the bone mineral metabolism left behind by the preceding treatment with another drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the observed differences in treatment outcomes based on model simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "159d6564-ecb5-4fca-acbd-0374840f3062",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C68",
+      "claim": "The effectivity of the modeling approach suggests that\u2014despite the complexity of the bone mineral metabolism\u2014the dynamics relevant for osteoporosis medications can be condensed into only a few components.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model is built on a small set of essential mechanisms of bone turnover. The effectivity of this approach suggests that\u2014despite the complexity of the bone mineral metabolism\u2014the dynamics relevant for osteoporosis medications can be condensed into only a few components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the success of the simplified model in capturing clinical data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "6c6e9b5e-0c5f-4250-97fd-169663516ea6",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C69",
+      "claim": "The model can predict the effects of a broad range of drug dosing regimens and complex drug combination therapies beyond those used for model development.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the model can also predict the effects of a broad range of drug dosing regimens and complex drug combination therapies beyond those used for model development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the validation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "8dcef899-2cf4-462d-a74b-adebf32f665a",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C70",
+      "claim": "Some parameters (e.g., concentration thresholds for signaling factors) were inferred through the model calibration procedure from BMD and BTM dynamics alone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note that some parameters (e.g., concentration thresholds for signaling factors) were inferred through the model calibration procedure from BMD and BTM dynamics alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the model calibration approach",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "c93db568-20c6-4574-8623-edb1694ab1f2",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C71",
+      "claim": "Model simulations extrapolating the long-term BMD development after treatment end suggest that medication schemes eliciting a rapid BMD increase are not necessarily accompanied by a sustained elevation of the BMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, model simulations extrapolating the long-term BMD development after treatment end suggest that medication schemes eliciting a rapid BMD increase are not necessarily accompanied by a sustained elevation of the BMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "4a573717-1e0b-4dbc-8710-4f23eb88033f",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C72",
+      "claim": "Some initially successful treatment schemes may lead to a 'rebound' effect of accelerated bone loss after treatment end.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, some initially successful treatment schemes may lead to a 'rebound' effect of accelerated bone loss after treatment end, a prediction that cautions against using short-term BMD increases as the sole proxy for treatment success.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "8e9b76b9-91a5-4740-b0c3-ba23ed75b11c",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C73",
+      "claim": "The generic manner in which the model represents bone remodeling and the effects of medications renders it a general platform for the study of treatments that can be adapted to other types of primary and secondary osteoporosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the generic manner in which the model represents bone remodeling and the effects of medications renders it a general platform for the study of treatments that can be adapted to other types of primary and secondary osteoporosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential future applications of the model",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "5c7802a9-b794-45be-8d93-b7d2a53c224b",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C74",
+      "claim": "The modular nature of the model enables future extensions including additional medication types, effects of comorbidities, medications that contribute to osteoporosis, lifestyle-dependent factors, dietary supplementation, and effects of microgravity on bone.",
+      "claim_type": "EXPLICIT",
+      "source": "The modular nature of the model enables future extensions; besides additional medication types, these may include the effects of comorbidities that elicit osteoporosis or interact with it (such as primary and secondary hyperparathyroidism), medications that contribute to osteoporosis (such as glucocorticoid therapy), lifestyle-dependent factors such as smoking and alcohol consumption, the effects of dietary supplementation of osteoporosis treatment through calcium and vitamin D and effects of microgravity on bone, as experienced by astronauts on extended missions in space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential future extensions of the model",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "2e8502a1-2664-43c5-bddb-a1606da65049",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C75",
+      "claim": "Detailed modeling approaches involving biomechanical feedback suggest synergistic effects between drug treatment of osteoporosis and physical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed modeling approaches involving biomechanical feedback suggest synergistic effects between drug treatment of osteoporosis and physical activity (Lavaill et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lavaill et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "ea267589-60e1-4113-ba08-cc96abc27942",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C76",
+      "claim": "BMD has a prime role in the evaluation of osteoporosis therapies and can be measured rather easily using dual-energy x-ray absorptiometry (DXA).",
+      "claim_type": "EXPLICIT",
+      "source": "While BMD has a prime role in the evaluation of osteoporosis therapies and can be measured rather easily using dual-energy x-ray absorptiometry (DXA), its relationship to fracture risk is complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established clinical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "9b44d15d-3894-4927-828d-4f73dbf9d9c7",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C77",
+      "claim": "The relationship between BMD and fracture risk is complex.",
+      "claim_type": "EXPLICIT",
+      "source": "While BMD has a prime role in the evaluation of osteoporosis therapies and can be measured rather easily using dual-energy x-ray absorptiometry (DXA), its relationship to fracture risk is complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established clinical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "e1d9e5ad-66ad-4161-b16d-d5bc6dd2fd8f",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C78",
+      "claim": "Fracture risk calculations used in clinical practice involve demographic and lifestyle-related factors while mostly relying on BMD point measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Fracture risk calculations used in clinical practice also involve demographic and lifestyle-related factors while mostly relying on BMD point measurements (Kanis et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kanis et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "8b8ec0bc-9718-437a-ad08-01bb9c4fb7e7",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C79",
+      "claim": "Quantitative associations between BMD, age, and fracture risk have been reported in many studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the quantitative associations between BMD, age, and fracture risk reported in many studies (Kanis et al., 2001; Berger et al., 2009; Austin et al., 2012; Krege et al., 2013; Black et al., 2018; Ensrud et al., 2022) can be used to create statistical models that may relate entire BMD time courses to a patient's fracture risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to studies on BMD and fracture risk",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "8352c7eb-20de-411f-8936-c493c0503beb",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C80",
+      "claim": "Statistical models relating BMD time courses to fracture risk can be combined with the physiology-based model to optimize therapies directly for minimized long-term fracture risk instead of maximized BMD gain.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining such statistical models with the physiology-based model presented here would enable to optimize therapies directly for a minimized long-term fracture risk instead of maximized BMD gain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential future applications combining the model with statistical approaches",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "8bb28df6-f442-4308-a1ea-50b92fc6f8e5",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C81",
+      "claim": "Relative changes in BMD were remarkably consistent among ethnic groups (non-Hispanic white, non-Hispanic black, and Mexican American women) despite differing absolute baselines.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescaling the reported means for the three ethnic groups to their value for the earliest age bin revealed that relative changes in BMD were remarkably consistent among ethnic groups (Appendix 1\u2014figure 1C) despite differing absolute baselines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of the aging dataset from Looker et al., 1998, shown in Appendix 1\u2014figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "8029ba1b-8213-44f5-aae4-53bbb13c94dd",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C82",
+      "claim": "The model received only drug dosing information used in the respective clinical trials but was not informed by BMD or BTM measurements during validation.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, the model received only drug dosing information used in the respective clinical trials but was not informed by BMD or BTM measurements, which instead it had to predict.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation methodology used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "f15f7945-fe24-4d68-84ac-c2ce7fe0b8fb",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "claim_id": "C83",
+      "claim": "The model was able to predict the complex progression of both BMD and biomarker levels with a high degree of accuracy even in scenarios including sequential treatments with up to three different drug types and parallel treatments with two different drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in scenarios including sequential treatments with up to three different drug types and parallel treatments with two different drugs, respectively, the model was able to predict the complex progression of both BMD and biomarker levels with a high degree of accuracy (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the validation analysis, supported by data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b6f62a9d-39a6-4b1b-a431-67bc4b240a1c",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Osteoporosis is a major global health burden affecting hundreds of millions of people worldwide, with 9 million bone fragility fractures in 2000 and projections of 7-21 million annual hip fractures by 2050. The disease leads to significant clinical consequences (disabilities, pain, increased mortality) and substantial economic costs (US$17 billion in the US in 2005; \u20ac100-120 billion projected in the EU from 2010-2025).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are all supported by appropriate citations to peer-reviewed literature and provide consistent epidemiological and economic data establishing the scope and impact of osteoporosis. These background claims appropriately contextualize the importance of the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "126a0ee5-2e8e-4317-bf03-2a267f89c142",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Osteoporosis results from an imbalance between bone resorption and formation, with postmenopausal women at particular risk due to declining estrogen levels and aging-related effects. The disease can also occur secondary to other conditions (hyperparathyroidism, gastrointestinal diseases) or treatments (glucocorticoid administration being the most common cause of secondary osteoporosis).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12 accurately describe established pathophysiology of osteoporosis and are supported by appropriate citations. These represent well-established background knowledge rather than novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "c0887f29-47de-4bc3-8c13-010849629130",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "While numerous osteoporosis treatments have emerged targeting different mechanisms, very few treatment schemes have been clinically tested relative to the total number of possible dosing regimens and drug combinations. An integrated mathematical framework for multiple drugs that can quantitatively predict effects of drug combinations in sequence and in parallel is not yet available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 and C18 establish the gap in current knowledge that motivates this study. The logical inference that few combinations have been tested (C14) is reasonable given the combinatorial explosion of possibilities, and the claim about lack of integrated frameworks (C18) is supported by the literature review provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "e837c357-b6f5-4395-a75e-85f3482785a4",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prior mathematical modeling work has described bone-forming and bone-resorbing cell population dynamics coupled through signaling pathways, with models qualitatively reproducing effects of various conditions on bone turnover and elucidating regulatory mechanisms underlying mineral balance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 accurately summarize prior modeling work with appropriate citations, establishing the foundation upon which the current work builds. These represent accurate characterizations of the existing literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "a3b55721-82d5-41ba-b050-c5eae228de79",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The manuscript describes established mechanisms of bone turnover including the cellular basis (osteoclasts, osteoblasts, osteocytes), their organization into bone remodeling units (BRUs), and key regulatory pathways involving RANKL, sclerostin, estrogen, PTH, and matrix-derived signaling factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C46 describe well-established bone biology supported by appropriate citations. These represent accurate background knowledge that forms the biological foundation for the model rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "9629ddbe-0583-4f52-bdf8-9ab4e5a49281",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors developed a mathematical model comprising eight dynamic components (pre-osteoclasts, osteoclasts, pre-osteoblasts, osteoblasts, osteocytes, sclerostin, bone density, and BMC) with BMD calculated as the product of bone density and BMC. The model incorporates age-dependent estrogen concentration and restricts PTH description to anabolic administration regimes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 clearly describe the model structure and design choices. The model components are well-defined and the restriction to anabolic PTH regimes (C51) is appropriately justified given the clinical focus on osteoporosis treatment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "eec2b567-0dfc-4ba8-ae85-e95c64760164",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model was calibrated using published clinical data on long-term BMD age dependence and drug responses, yielding an inferred skeletal bone turnover rate of ~6% per year (consistent with cortical bone values). The model captured BMD and BTM dynamics across all calibration datasets with MAPE for BMD consistently below 1% and correct qualitative BTM behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 describe the calibration results with quantitative metrics (MAPE <1%) and reference to supporting data in appendices. The inferred turnover rate (C53) being consistent with literature values provides validation. However, the claim of \"remarkable accuracy\" should be interpreted cautiously given that these are calibration (not validation) datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "45cd7536-0073-4df9-a8e3-c3d25e6cb530",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Using a single parameter set, the model demonstrated predictive capacity for complex medication scenarios including sequential treatments with up to three drug types and parallel treatments with two drugs. Validation MAPEs for BMD were consistently below 1.5%, with the model receiving only dosing information (not BMD/BTM measurements) during validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C57-C58, C82-C83 describe rigorous validation methodology where the model predicted outcomes without being informed by the validation data. The quantitative performance (MAPE <1.5%) and ability to handle complex combination therapies represent strong evidence for the model's predictive capacity. The validation on independent datasets is a key strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "5fd561d3-b93a-4df7-9fa4-ca353bbef35c",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model demonstrates predictive capacity for complex medication scenarios including sequential and parallel drug combinations, and can predict effects of drug dosing regimens and combination therapies beyond those used for model development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C69 are supported by the validation results showing accurate predictions for complex treatment schemes not used in calibration. This represents a key finding demonstrating the model's utility beyond simple interpolation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "7b4483df-9edc-452e-9b84-8aaa5abe742a",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Simulations reveal large potential to improve BMD gains by exploiting synergistic interactions between drug classes without increasing total drug administered. Different medication sequences produced markedly different outcomes, with some sequences achieving higher maximum BMD but worse long-term outcomes, suggesting considerable potential for optimization of dosing regimens and drug sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C59-C61, C66-C67 describe simulation results showing differential outcomes for different drug sequences (Figure 3). The finding that sequence matters despite identical total drug amounts is well-supported by the model simulations. However, these are model predictions that would require clinical validation to confirm actual patient outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "368222e8-2395-4e38-be9d-723c11c12bb7",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Model simulations suggest that short-term BMD gains may be limited as a proxy for overall clinical benefit, as some initially successful treatment schemes may lead to 'rebound' effects of accelerated bone loss after treatment end, with rapid BMD increases not necessarily accompanied by sustained elevation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C71-C72 describe an important model prediction about rebound effects. While supported by the model simulations (Figure 3C), this represents an extrapolation beyond available clinical data and would require long-term follow-up studies to validate. The authors appropriately frame this as a prediction/caution rather than established fact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "df2cfd94-6670-4f4a-bca2-08824e002e62",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model provides a mechanistic explanation for differential treatment outcomes: drug-mediated inhibition of osteoclastogenesis leads to build-up of undifferentiated osteoclast precursors that rapidly differentiate after treatment end, causing accelerated bone resorption. Specific drug sequences can attenuate this rebound effect by enhancing osteoclast apoptosis during the rebound phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 describe mechanistic insights from the model about precursor pool dynamics and rebound effects. These represent plausible biological mechanisms consistent with the model structure, though they are model-derived hypotheses rather than directly measured phenomena. The mechanistic explanation is internally consistent with the model framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "37fabefa-2104-462c-ac29-fa42d33bd5e9",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The effectiveness of the modeling approach suggests that despite the complexity of bone mineral metabolism, the dynamics relevant for osteoporosis medications can be condensed into only a few components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 represents a reasonable inference from the model's success in capturing diverse clinical data with a simplified framework. However, this should be interpreted as demonstrating sufficiency for the specific modeling goals rather than proving these are the only relevant components.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "bcad2f8d-375d-47b7-a403-bc5d9d8783d9",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Some model parameters (e.g., concentration thresholds for signaling factors) were inferred through calibration from BMD and BTM dynamics alone rather than being directly measured.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 appropriately acknowledges a limitation of the modeling approach. This is an honest assessment that some parameters are effectively fitted rather than independently validated, which is important for interpreting the model's predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "6ba1ee39-856f-4ad0-8637-d5bbbdb53143",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors speculate that the model's generic representation of bone remodeling makes it adaptable to other types of osteoporosis, with potential future extensions including additional medications, comorbidities, lifestyle factors, and integration with statistical models relating BMD to fracture risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74 and C80 represent speculations about future applications rather than demonstrated results. While the modular structure may facilitate extensions, these remain untested possibilities. The claims are appropriately framed as potential future work rather than established capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "b3b17697-ae1a-42b5-9480-a96141514c69",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript discusses the relationship between BMD, fracture risk, and clinical practice, noting that while BMD is easily measured and has a prime role in therapy evaluation, its relationship to fracture risk is complex, with clinical fracture risk calculations involving demographic and lifestyle factors alongside BMD measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C79 accurately describe established clinical knowledge about BMD measurement and fracture risk assessment, supported by appropriate citations. These provide important context for interpreting the model's focus on BMD as an outcome measure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    },
+    {
+      "id": "e0cb9c1c-f821-4902-be37-cd828eac1e68",
+      "content_id": "6e73caa6-6768-4cb0-a89a-2f6c3848039c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Analysis of the aging dataset revealed that relative changes in BMD were remarkably consistent among ethnic groups (non-Hispanic white, non-Hispanic black, and Mexican American women) despite differing absolute baselines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 describes a finding from the data analysis (Appendix 1\u2014figure 1C) that justified using a single ethnic group for calibration. This represents appropriate data exploration supporting a methodological choice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:50:21.317761Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4c98626c-4107-4c06-915d-d2528b35fccd",
+      "result_id": "b6f62a9d-39a6-4b1b-a431-67bc4b240a1c"
+    },
+    {
+      "claim_id": "2164ac72-7e83-4ead-b7e4-a6ac5931a7ca",
+      "result_id": "b6f62a9d-39a6-4b1b-a431-67bc4b240a1c"
+    },
+    {
+      "claim_id": "0e2a04eb-2e40-45b9-ae52-cded67952368",
+      "result_id": "b6f62a9d-39a6-4b1b-a431-67bc4b240a1c"
+    },
+    {
+      "claim_id": "f75a7d0f-aacb-4ef4-955a-806b5798bb99",
+      "result_id": "b6f62a9d-39a6-4b1b-a431-67bc4b240a1c"
+    },
+    {
+      "claim_id": "33880ec0-70a5-43ea-acdd-bf800cf62a6f",
+      "result_id": "b6f62a9d-39a6-4b1b-a431-67bc4b240a1c"
+    },
+    {
+      "claim_id": "575cb1e4-4560-46b1-9dad-88c907dddae6",
+      "result_id": "b6f62a9d-39a6-4b1b-a431-67bc4b240a1c"
+    },
+    {
+      "claim_id": "c1821613-285e-474e-ba4d-3729efd6451c",
+      "result_id": "126a0ee5-2e8e-4317-bf03-2a267f89c142"
+    },
+    {
+      "claim_id": "c23f5c04-bf5c-4747-bc1e-48f92aeccc34",
+      "result_id": "126a0ee5-2e8e-4317-bf03-2a267f89c142"
+    },
+    {
+      "claim_id": "3542bfe0-cc91-4cd8-aaa0-73f0e1d83237",
+      "result_id": "126a0ee5-2e8e-4317-bf03-2a267f89c142"
+    },
+    {
+      "claim_id": "a7bc0ce2-a383-45d2-b584-ed12fa0c18f5",
+      "result_id": "126a0ee5-2e8e-4317-bf03-2a267f89c142"
+    },
+    {
+      "claim_id": "3cecd6bb-73de-4bc7-8adc-e942d193c1c8",
+      "result_id": "126a0ee5-2e8e-4317-bf03-2a267f89c142"
+    },
+    {
+      "claim_id": "2789a48c-288f-4ce5-ae72-bec2e803189e",
+      "result_id": "126a0ee5-2e8e-4317-bf03-2a267f89c142"
+    },
+    {
+      "claim_id": "a8d287ad-5626-4dd9-a6ce-3c5bc06d7e42",
+      "result_id": "c0887f29-47de-4bc3-8c13-010849629130"
+    },
+    {
+      "claim_id": "b6648f6b-f0d0-44af-be42-5498a893a44c",
+      "result_id": "c0887f29-47de-4bc3-8c13-010849629130"
+    },
+    {
+      "claim_id": "80e469cb-4b76-4f27-bbd3-8ebdb20bc217",
+      "result_id": "c0887f29-47de-4bc3-8c13-010849629130"
+    },
+    {
+      "claim_id": "c03f09bd-afa5-4194-a96b-65b81722e93e",
+      "result_id": "e837c357-b6f5-4395-a75e-85f3482785a4"
+    },
+    {
+      "claim_id": "c5400809-9972-429e-a461-fa3056276417",
+      "result_id": "e837c357-b6f5-4395-a75e-85f3482785a4"
+    },
+    {
+      "claim_id": "47a4e38c-fb76-4fce-9084-519a5e88fd90",
+      "result_id": "e837c357-b6f5-4395-a75e-85f3482785a4"
+    },
+    {
+      "claim_id": "87a2d26c-2782-4f63-b0e8-d83eac4993d1",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "b4c9fbe3-38c8-47f4-a7f3-c0df1811bb5c",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "3aa6a7be-9f62-4fc7-9676-8a211a739bd5",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "9fbe5210-b956-4c47-9e1f-97fa018451f4",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "05fd03e3-5576-4d1f-970c-6a9591d6f66f",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "119714b2-abca-4cf0-bfd4-f85233726a2e",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "8cb15f05-125f-4904-890b-ed044621151d",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "12326da0-7291-40f7-8173-9fb69e0e65f8",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "7b103d78-bc59-4e88-8fea-6cebd1a84640",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "3584b6a2-6bb6-49bd-b188-35ce96fd2f9e",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "4f966190-c317-48e5-a843-c5f9c8735b1c",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "34ef6792-0e5b-4c5e-82a1-bd767466b75f",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "b3d6bc39-5483-459b-a977-83089572b5de",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "5651a443-31a3-4140-833b-79b5c1d0501e",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "2af0d8d9-1195-435d-ba69-d7c933eb58d0",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "deec9a33-d0a1-4a9d-a3a2-a64a6d510849",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "092757a8-5a97-4db2-b29c-2266d6b88d5d",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "dab55186-1c8f-4530-a5f5-b41f241d58e0",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "a1758f62-dfe6-4752-a55f-1c1f307ad03b",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "5608d06e-952a-4bb7-b294-4b909e3d59fc",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "a97d08fc-780e-4e42-b95e-973a22feb3a4",
+      "result_id": "a3b55721-82d5-41ba-b050-c5eae228de79"
+    },
+    {
+      "claim_id": "c0e12b61-f0a0-4b4d-ad66-c905b577a4a8",
+      "result_id": "9629ddbe-0583-4f52-bdf8-9ab4e5a49281"
+    },
+    {
+      "claim_id": "806a9f6a-e80a-4a26-8760-25c75ec3b296",
+      "result_id": "9629ddbe-0583-4f52-bdf8-9ab4e5a49281"
+    },
+    {
+      "claim_id": "6790592f-6072-4e8a-9cf7-fb04ef56ce0a",
+      "result_id": "9629ddbe-0583-4f52-bdf8-9ab4e5a49281"
+    },
+    {
+      "claim_id": "e8ed081a-c5fb-4380-a495-3e85a656b56e",
+      "result_id": "9629ddbe-0583-4f52-bdf8-9ab4e5a49281"
+    },
+    {
+      "claim_id": "6010f6d4-dc83-471d-9fdc-306d9f8d1b75",
+      "result_id": "9629ddbe-0583-4f52-bdf8-9ab4e5a49281"
+    },
+    {
+      "claim_id": "fe79bfde-5178-496b-bfe1-9756bdd10168",
+      "result_id": "eec2b567-0dfc-4ba8-ae85-e95c64760164"
+    },
+    {
+      "claim_id": "4dc19888-2d63-4a93-b749-1ff3f7851065",
+      "result_id": "eec2b567-0dfc-4ba8-ae85-e95c64760164"
+    },
+    {
+      "claim_id": "0196de13-c2a1-4b12-a336-b4a259505dfd",
+      "result_id": "eec2b567-0dfc-4ba8-ae85-e95c64760164"
+    },
+    {
+      "claim_id": "a8a5dcca-cdf6-4110-9925-ca7a21f87fb8",
+      "result_id": "eec2b567-0dfc-4ba8-ae85-e95c64760164"
+    },
+    {
+      "claim_id": "a0e2c6b3-602f-4f2c-a4a0-b2670fafec99",
+      "result_id": "eec2b567-0dfc-4ba8-ae85-e95c64760164"
+    },
+    {
+      "claim_id": "15a2d330-4b1d-4b2c-9d13-d7e1da887e90",
+      "result_id": "45cd7536-0073-4df9-a8e3-c3d25e6cb530"
+    },
+    {
+      "claim_id": "a077e3ff-6042-43c1-8d16-f7d79971d6e5",
+      "result_id": "45cd7536-0073-4df9-a8e3-c3d25e6cb530"
+    },
+    {
+      "claim_id": "0a54529f-233c-4685-a61a-fb781dcf4ec1",
+      "result_id": "45cd7536-0073-4df9-a8e3-c3d25e6cb530"
+    },
+    {
+      "claim_id": "8029ba1b-8213-44f5-aae4-53bbb13c94dd",
+      "result_id": "45cd7536-0073-4df9-a8e3-c3d25e6cb530"
+    },
+    {
+      "claim_id": "f15f7945-fe24-4d68-84ac-c2ce7fe0b8fb",
+      "result_id": "45cd7536-0073-4df9-a8e3-c3d25e6cb530"
+    },
+    {
+      "claim_id": "95db9c5f-9a84-4fb7-9d67-b178f125d50b",
+      "result_id": "5fd561d3-b93a-4df7-9fa4-ca353bbef35c"
+    },
+    {
+      "claim_id": "6c6e9b5e-0c5f-4250-97fd-169663516ea6",
+      "result_id": "5fd561d3-b93a-4df7-9fa4-ca353bbef35c"
+    },
+    {
+      "claim_id": "175220da-c160-48ad-90df-2b5ba02241bf",
+      "result_id": "7b4483df-9edc-452e-9b84-8aaa5abe742a"
+    },
+    {
+      "claim_id": "8130e8fc-a14f-4c1c-80be-7d0c8a439d75",
+      "result_id": "7b4483df-9edc-452e-9b84-8aaa5abe742a"
+    },
+    {
+      "claim_id": "38cbf0bc-839f-446b-bfde-8462dca6b2f0",
+      "result_id": "7b4483df-9edc-452e-9b84-8aaa5abe742a"
+    },
+    {
+      "claim_id": "0fe8ec56-7eff-4639-a50a-d9a30ad3333c",
+      "result_id": "7b4483df-9edc-452e-9b84-8aaa5abe742a"
+    },
+    {
+      "claim_id": "b197170c-cd59-4a49-aa2e-07640d165ca0",
+      "result_id": "7b4483df-9edc-452e-9b84-8aaa5abe742a"
+    },
+    {
+      "claim_id": "0153b0f2-d7e2-49ca-ae1e-5051937417a2",
+      "result_id": "7b4483df-9edc-452e-9b84-8aaa5abe742a"
+    },
+    {
+      "claim_id": "615731c1-af5c-4c0e-a407-8a0e38ad7935",
+      "result_id": "368222e8-2395-4e38-be9d-723c11c12bb7"
+    },
+    {
+      "claim_id": "c93db568-20c6-4574-8623-edb1694ab1f2",
+      "result_id": "368222e8-2395-4e38-be9d-723c11c12bb7"
+    },
+    {
+      "claim_id": "4a573717-1e0b-4dbc-8710-4f23eb88033f",
+      "result_id": "368222e8-2395-4e38-be9d-723c11c12bb7"
+    },
+    {
+      "claim_id": "d059fbd2-c629-43c9-9497-3f7dec66d372",
+      "result_id": "df2cfd94-6670-4f4a-bca2-08824e002e62"
+    },
+    {
+      "claim_id": "e3629795-942c-4e65-9aee-34f821c5ed94",
+      "result_id": "df2cfd94-6670-4f4a-bca2-08824e002e62"
+    },
+    {
+      "claim_id": "414598ba-84c9-4d93-a84a-fa5c4e6820dd",
+      "result_id": "df2cfd94-6670-4f4a-bca2-08824e002e62"
+    },
+    {
+      "claim_id": "159d6564-ecb5-4fca-acbd-0374840f3062",
+      "result_id": "37fabefa-2104-462c-ac29-fa42d33bd5e9"
+    },
+    {
+      "claim_id": "8dcef899-2cf4-462d-a74b-adebf32f665a",
+      "result_id": "bcad2f8d-375d-47b7-a403-bc5d9d8783d9"
+    },
+    {
+      "claim_id": "8e9b76b9-91a5-4740-b0c3-ba23ed75b11c",
+      "result_id": "6ba1ee39-856f-4ad0-8637-d5bbbdb53143"
+    },
+    {
+      "claim_id": "5c7802a9-b794-45be-8d93-b7d2a53c224b",
+      "result_id": "6ba1ee39-856f-4ad0-8637-d5bbbdb53143"
+    },
+    {
+      "claim_id": "8352c7eb-20de-411f-8936-c493c0503beb",
+      "result_id": "6ba1ee39-856f-4ad0-8637-d5bbbdb53143"
+    },
+    {
+      "claim_id": "2e8502a1-2664-43c5-bddb-a1606da65049",
+      "result_id": "b3b17697-ae1a-42b5-9480-a96141514c69"
+    },
+    {
+      "claim_id": "ea267589-60e1-4113-ba08-cc96abc27942",
+      "result_id": "b3b17697-ae1a-42b5-9480-a96141514c69"
+    },
+    {
+      "claim_id": "9b44d15d-3894-4927-828d-4f73dbf9d9c7",
+      "result_id": "b3b17697-ae1a-42b5-9480-a96141514c69"
+    },
+    {
+      "claim_id": "e1d9e5ad-66ad-4161-b16d-d5bc6dd2fd8f",
+      "result_id": "b3b17697-ae1a-42b5-9480-a96141514c69"
+    },
+    {
+      "claim_id": "8b8ec0bc-9718-437a-ad08-01bb9c4fb7e7",
+      "result_id": "b3b17697-ae1a-42b5-9480-a96141514c69"
+    },
+    {
+      "claim_id": "8bb28df6-f442-4308-a1ea-50b92fc6f8e5",
+      "result_id": "e0cb9c1c-f821-4902-be37-cd828eac1e68"
+    }
+  ],
+  "comparisons": []
+}

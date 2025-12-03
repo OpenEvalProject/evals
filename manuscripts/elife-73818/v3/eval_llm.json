@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Frizzled-7 (fzd7) expression in cardiac tissues is upregulated by Wnt signaling. \u03b2-catenin activation at the tailbud stage increased fzd7 and gata5 expression while decreasing myl2 expression (C31-C33). Treatment with Wnt agonist CHIR99021 resulted in broader fzd7 expression (C34). Wnt6 knockdown reduced fzd7 expression, which was rescued by \u03b2-catenin activation (C37-C38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (\u03b2-catenin activation, CHIR treatment, Wnt6 knockdown/rescue) consistently demonstrate Wnt-dependent fzd7 expression with appropriate statistical analysis (Fisher's exact test, p<10^-7 for multiple comparisons). The convergence of genetic, pharmacological, and rescue experiments provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Fzd7 receptor specifically accumulates Wnt6 protein on cell membranes. mV-Wnt6 accumulated heavily on Fzd7-expressing cells but secreted mVenus did not (C41-C42). The tagged Wnt6 retained functional activity comparable to intact Wnt6 (C40).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design includes appropriate controls (secreted mVenus, morphotrap validation) and quantification (Figure 2C). The functional validation of the tagged protein (C40) is critical for interpreting the localization data. Statistical analysis (t-test, p=0.02) supports the specificity of Wnt6 accumulation on Fzd7-expressing cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C88",
+      "C89"
+    ],
+    "result": "Receptor feedback is essential for shaping a steep Wnt signaling gradient and enables rapid achievement of steady state. Computational modeling shows that positive feedback increases Wnt signal activity near the source while decreasing it distally (C88), and systems with strong feedback quickly reach steady state (C89). This feedback imparts robustness against variations in Wnt ligand production (C5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational modeling is supported by appropriate mathematical formulations (reaction-diffusion equations) with parameters derived from literature or experimental measurements. The model predictions are tested experimentally (C75, C90). However, some parameter values are set by the authors without independent validation, which introduces uncertainty about quantitative predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C90"
+    ],
+    "result": "Experimental interference with fzd7 feedback using dominant-negative Fzd7 (dnFzd7) resulted in expansion of the pericardium region in vivo. Injection of TCF-dnFzd7-TM plasmids expanded the fzd7 expression area (C90), suggesting that fzd7 expressed after feedback initiation is necessary for normal patterning (C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clever, using Wnt-dependent expression of dnFzd7 to specifically interfere with feedback. The construct is validated for both Wnt6 accumulation and signaling inhibition (Figure 3\u2014figure supplement 7B-C). Statistical analysis shows significant expansion (p=8.0\u00d710^-8, paired t-test). The computational modeling (Figure 3\u2014figure supplement 8) supports the interpretation that the effect is due to direct Fzd7 inhibition rather than competitive Wnt binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C84"
+    ],
+    "result": "sFRP1 preferentially binds to and accumulates on N-acetyl-rich heparan sulfate (HS). sFRP1 distribution was altered by Ndst1 expression and was not detected on Ndst1-expressing cells (C48). sFRP1 was highly co-localized with N-acetyl-rich HS (Pearson's r quantification) but not with N-sulfo-rich HS (C51-C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental approach uses multiple complementary methods: Ndst1 overexpression, Ndst1 knockdown, and direct immunohistochemistry visualization with quantitative colocalization analysis. The Pearson correlation analysis provides statistical support (t-test, p=1.6\u00d710^-11). The specificity is demonstrated by lack of colocalization with N-sulfo-rich HS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "N-acetyl-rich HS is present in prospective pericardium while N-sulfo-rich HS is not clearly detected in heart tissue (C53-C54). Heat-induced expression of ndst1 (which converts N-acetyl to N-sulfo HS) expanded myocardium and slightly decreased pericardium (C55-C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distribution of HS modifications is demonstrated by immunohistochemistry (Figure 4E). The functional importance is tested by heat-shock inducible Ndst1, with appropriate controls (hsp::EGFP) and statistical analysis (Fisher's exact test, p=2.8\u00d710^-11 for myocardium expansion). The construct is validated to reduce N-acetyl-rich HS (Figure 4\u2014figure supplement 2B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C57",
+      "C64",
+      "C65"
+    ],
+    "result": "N-acetyl-rich HS traps sFRP1 between Wnt and sFRP1 sources, achieving local inhibition of Wnt signaling and restricting sFRP1 spreading. This mechanism, together with sFRP1, contributes to shaping a steep Wnt gradient and keeping the pericardium thin (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is supported by the combination of sFRP1-HS binding data (C8, C51), HS distribution data (C9, C53), and functional perturbation experiments (C55-C56). Computational modeling (C58-C60) provides additional support. The mechanism is consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The Wnt antagonist sFRP1 expands Wnt6 ligand distribution. When sFRP1 was co-injected with mVenus-Wnt6 into different blastomeres, the range of mVenus-Wnt6 was wider (C45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design appropriately tests the effect by injecting Wnt6 and sFRP1 into different blastomeres to mimic in vivo spatial separation. The result is consistent with the known mechanism of Frzb/sFRP proteins preventing Wnt binding to receptors and HS, as cited for Wnt8-Frzb interactions. Quantification is provided in Figure 4\u2014figure supplement 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C79"
+    ],
+    "result": "Computational modeling reveals that sFRP1 and N-acetyl HS narrow the Wnt-signal-active region (C58), accelerate achievement of steady state (C59-C60), and impart robustness against changes in developmental speed (C61). The time to achieve steady state positioning was shorter with sFRP1 and heparan sulfate (C79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational predictions are based on the mathematical model with assumptions about sFRP1 expression (inhibited by Wnt) and N-acetyl HS distribution. The heatmap analysis (Figure 4G) clearly shows faster vertical contour formation with sFRP1, indicating quicker steady state. However, the model assumptions about sFRP1 expression patterns and kinetics are not all independently validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C62",
+      "C70",
+      "C71",
+      "C80"
+    ],
+    "result": "Integrated regulatory systems involving fzd7 feedback, sFRP1, and N-acetyl HS restrict the Wnt signaling range and ensure reproducible patterning of the thin pericardium. The feedback is essential for efficient and reliable patterning (C70) and ensures reproducibility against variations in Wnt ligand amount and developmental timing (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the main conclusion integrating all experimental and computational findings. The support comes from: (1) experimental demonstration of each component's function, (2) computational modeling showing robustness properties, (3) perturbation experiments showing both mechanisms are necessary (C75-C78). The conclusion is well-supported by the totality of evidence, though individual components have varying levels of experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "High initial receptor expression could theoretically achieve steep gradients without feedback (C66), but the biological system uses feedback starting from low initial expression (C68-C69), which may be more efficient (C67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational modeling clearly shows that high initial receptor expression can produce steep gradients (Figure 3\u2014figure supplement 1B). The inference about low initial expression (C68) is based on cited literature showing sFRP1 overexpression eliminates detectable fzd7 signal. The efficiency argument (C67) is speculative but reasonable. The conclusion that feedback expression is higher than initial expression (C69) is supported by combining multiple experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C78"
+    ],
+    "result": "Receptor feedback and sFRP1 mechanisms have different properties: receptor feedback can overcome variation in Wnt production (C73), while sFRP1 cannot buffer this variation because sFRP1 expression is inhibited by Wnt (C74). Both mechanisms are necessary together to make the pericardium thin (C78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distinction between the two mechanisms is supported by computational modeling and the regulatory network structure. The necessity of both mechanisms is supported by experimental perturbations: dnFzd7 expands pericardium (C75), and sFRP1 knockdown expands pericardium (C77, cited). The mechanistic explanation for why sFRP1 cannot buffer Wnt variation is logical given the negative regulation of sFRP1 by Wnt.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Wnt6/Fzd7 represents an example of self-enhanced degradation via positive feedback of receptor expression, similar to the Hedgehog/Patched pathway. The network motif may be specialized for making extremely robust, steep morphogen gradients to pattern thin tissue (C82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification of Wnt6/Fzd7 as self-enhanced degradation with receptor induction is well-supported by the experimental data. The comparison to Hh/Ptc is appropriate and cited. The speculation about specialization for thin tissue patterning (C82) is reasonable given the data but remains speculative without comparative analysis of other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C85"
+    ],
+    "result": "N-acetyl HS, previously considered just a precursor modification, has specific binding partners including sFRP1 (C83). Differences in N-acetyl HS binding preference may generally determine distributional and signaling ranges of ligands (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The finding that sFRP1 specifically binds N-acetyl HS is well-supported (C84). However, the broader claim about general principles (C85) is speculative and based on limited examples (sFRP1, Frzb, and unpublished work). More examples and systematic analysis would be needed to support this as a general principle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The computational model assumes: two Fzd7 molecules bind one Wnt molecule (C91), Wnt6 production is limited to 0-10 \u03bcm from the embryo surface (C92), Fzd7 is broadly expressed at 10-40 \u03bcm (C93), and Wnt signaling activity is proportional to the integral of endocytosis rate of Wnt6-receptor complexes (C94).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are modeling assumptions, not experimental results. C91 is based on structural analysis citation (Hirai et al., 2019). C92 is based on citation (Lavery et al., 2008a). C93 is based on the authors' own measurements (Figure 1\u2014figure supplement 1B). C94 is a reasonable modeling choice based on \u03b2-catenin accumulation. The assumptions are appropriately documented and justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Wnt6 distribution was not substantially changed by Ndst1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This negative result is supported by experimental data (Figure 4\u2014figure supplement 1C) with quantification showing no significant difference. This contrasts with sFRP1, which was affected by Ndst1, demonstrating specificity of the HS-binding interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background knowledge about Wnt signaling in heart development: Wnt is a morphogen organizing cardiac development (C1), Wnt6 patterns cardiogenic mesoderm to induce pericardium in Xenopus (C2), canonical Wnt/\u03b2-catenin signaling restricts myocardium and promotes pericardium differentiation (C15-C16), and pericardium needs to be thin for flexibility (C18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established knowledge claims supported by appropriate citations. They provide necessary context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background knowledge about morphogen regulation: Receptors trap morphogens and mediate internalization/degradation (C12-C13), positive feedback of receptor expression imparts robustness (C14), HS modifications regulate Wnt8 signaling (C21-C24), sFRP1 is expressed in prospective myocardium (C25), and Fzd7 is expressed in cardiogenic mesoderm and essential for heart development (C26-C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established knowledge claims from prior literature, appropriately cited. They provide the conceptual framework for the current study. The citations appear appropriate and the claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Initially broad fzd7 expression becomes restricted within prospective pericardium as cardiogenic mesoderm becomes patterned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation is supported by citation (Wheeler and Hoppler, 1999) and the authors' own data (Figure 1\u2014figure supplement 1B) showing temporal changes in fzd7 expression pattern with quantification of expression width across developmental stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Wnt6 and sFRP1 regulate repair and regeneration after myocardial infarction in animal models (C86), and cell-surface molecules like Frizzled or HS modifications generally provide better drug targets than intracellular molecules (C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C86 is supported by appropriate citations to previous literature. C87 is stated as general knowledge about drug targeting, which is widely accepted in the field. These claims provide context for potential applications but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

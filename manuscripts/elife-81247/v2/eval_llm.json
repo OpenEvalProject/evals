@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "RNA-seq analysis of MDA-MB-231 cells under hypoxic stress identified 1151 upregulated genes (related to cell proliferation and cancer pathways) and 310 downregulated genes (related to DNA damage repair, senescence, SIRT1, and p53 signaling pathways).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are supported by RNA-seq data and pathway enrichment analysis shown in Figures 1A and 1B. The differential expression analysis with adjusted p<0.05 threshold and Metascape enrichment analysis provide appropriate statistical support for these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C14"
+    ],
+    "result": "Under hypoxia, SIRT1 and p53 protein levels remain stable while p53 acetylation decreases and DBC1 protein levels gradually decrease in a time-dependent manner, without changes in DBC1 mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C14 are supported by Western blotting (Figure 1C-D) and qRT-PCR data (Figure 1G). The data demonstrate post-translational regulation of DBC1 under hypoxia. However, quantification and statistical analysis of Western blots would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "The HIF1\u03b1 signaling pathway is not involved in hypoxia-induced DBC1 degradation, as demonstrated by HIF1\u03b1 inhibitor experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are supported by Western blotting data with HIF1\u03b1 inhibitor (Figure 1\u2014figure supplement 1A). However, the conclusion would be strengthened by additional controls such as verification of HIF1\u03b1 inhibition and testing multiple HIF1\u03b1 inhibitors or genetic knockdown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Hypoxia-induced DBC1 degradation occurs through the ubiquitin-proteasome system, as evidenced by inhibition with proteasome inhibitor MG132 but not lysosomal inhibitor BA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are supported by Western blotting data with MG132 and BA1 treatments (Figure 1E and supplementary figures). The differential effects of proteasome versus lysosomal inhibitors provide strong evidence for the degradation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "DBC1 protein degradation under hypoxia is a general phenomenon observed across multiple breast cancer and other cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by Western blotting data from multiple cell lines (Figure 1F). The breadth of cell lines tested strengthens the generalizability, though statistical analysis across cell lines would improve the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "CCAR2 knockout cells show similar transcriptional changes to hypoxia-treated cells (upregulation of proliferation/migration genes, downregulation of DNA repair/apoptosis genes), suggesting hypoxia may regulate tumor progression through DBC1 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15-C16 are supported by RNA-seq data (Figure 1H-I), but claims C17-C18 are speculative. While the parallel transcriptional changes are suggestive, causality is not established. Direct functional experiments linking hypoxia-induced DBC1 degradation to tumor progression phenotypes are needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "SIAH2 was identified as the E3 ubiquitin ligase responsible for DBC1 stability through screening, LC-MS/MS analysis, and co-immunoprecipitation experiments demonstrating direct interaction between SIAH2 and DBC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are well-supported by multiple complementary approaches: E3 ligase screening (Figure 2A-B), LC-MS/MS proteomics, co-IP of exogenous and endogenous proteins (Figure 2C-D), and in vitro GST pull-down (Figure 2E). The convergence of evidence strongly supports direct SIAH2-DBC1 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The N-terminal region (amino acids 1-230) of DBC1 is necessary and sufficient for binding to SIAH2, while full-length SIAH2 is required for the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by domain mapping experiments using truncation mutants in co-IP assays (Figure 2F-G) and in vitro pull-down assays (Figure 2H-I). The systematic deletion analysis provides clear evidence for the binding domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "SIAH2 promotes DBC1 degradation through direct interaction and proteasome-mediated degradation, as demonstrated by dose-dependent protein reduction, cycloheximide chase assays, and differential effects of proteasome versus lysosomal inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 are supported by multiple lines of evidence: dose-dependent degradation (Figure 2J, M), CHX chase assays (Figure 2K-L), qRT-PCR showing no transcriptional effects (Figure 2\u2014figure supplement 1F), and differential inhibitor effects (Figure 2N, supplementary figures). The use of catalytically inactive SIAH2RM as a control strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "SIAH2 directly ubiquitinates DBC1 at lysine 287 with K48-linked polyubiquitin chains, as demonstrated by in vivo and in vitro ubiquitination assays and mass spectrometry, with the K287R mutant being resistant to SIAH2-mediated ubiquitination and degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are strongly supported by comprehensive ubiquitination studies: in vivo ubiquitination assays (Figure 3A-B), K48-linkage specificity (Figure 3\u2014figure supplement 1A-B), in vitro reconstitution (Figure 3C), mass spectrometry identification of K287 (Figure 3D), and functional validation with K287R mutant (Figure 3E, supplementary figures). The convergence of multiple approaches provides robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C49"
+    ],
+    "result": "Hypoxia-induced DBC1 degradation is dependent on SIAH2-mediated ubiquitination at K287, as SIAH2 deletion or K287R mutation prevents DBC1 ubiquitination and degradation under hypoxia and prolongs DBC1 half-life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C49 are supported by ubiquitination assays and Western blotting in SIAH2 knockout cells and with K287R mutant under hypoxia (Figure 3F-J, supplementary figures), plus CHX chase assays (Figure 3K-L). The genetic and mutagenesis approaches provide strong evidence for SIAH2-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Hypoxia activates SIAH2 through p38-mediated phosphorylation, increasing its stability and interaction with DBC1, leading to DBC1 degradation through the ubiquitin-proteasome system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C45 is supported by citation to prior literature. Claims C46-C47 show p38 inhibitor partially reduces SIAH2 levels and SIAH2-DBC1 interaction (Figure 3\u2014figure supplement 1J), but the effects are partial and mechanistic details are incomplete. Claim C48 is a summary inference that requires additional validation of the p38-SIAH2 connection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "OTUD5 deubiquitinase interacts with DBC1 and removes ubiquitin chains upon reoxygenation, with wildtype but not catalytically inactive OTUD5 preventing hypoxia-induced DBC1 degradation and prolonging DBC1 half-life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 are supported by: ubiquitination assays showing reduced DBC1 ubiquitination after reoxygenation (Figure 4A), DUB screening (Figure 4\u2014figure supplement 1A-C), co-IP of endogenous proteins (Figure 4B), in vitro pull-down (Figure 4C), enzyme activity-dependent deubiquitination (Figure 4D-E), and CHX chase assays (Figure 4F-G). The use of catalytically inactive OTUD5 as control strengthens conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SIAH2 and OTUD5 competitively bind to the same N-terminal region (amino acids 1-230) of DBC1, with hypoxia promoting SIAH2-DBC1 interaction while inhibiting OTUD5-DBC1 interaction, thereby cooperatively regulating reversible DBC1 ubiquitination and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by domain mapping showing both bind the N-terminus (Figure 4H), co-IP experiments showing competitive binding under different oxygen conditions (Figure 4I, supplementary figures), and the model in Figure 4J. The competitive binding mechanism is well-demonstrated, though the molecular basis for oxygen-dependent switching could be further explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "SIAH2 promotes tumor cell growth, proliferation, and migration under hypoxia through DBC1 degradation, as SIAH2 knockout inhibits these processes while maintaining p53 pathway activity, and double knockout of SIAH2/CCAR2 rescues the phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by multiple functional assays: Western blotting showing maintained p53 acetylation with SIAH2 knockdown (Figure 5A), apoptosis assays (Figure 5B, supplementary), colony formation (Figure 5C, supplementary), and migration assays (Figure 5D-E, supplementary). The rescue experiments with double knockout provide strong evidence for DBC1-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "SIAH2-mediated DBC1 degradation promotes tumor growth in vivo, as SIAH2 knockout reduces tumor volume, weight, and Ki67-positive proliferative cells in xenografts, while SIAH2/CCAR2 double knockout partially rescues tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by xenograft experiments showing reduced tumor growth with SIAH2 knockout and partial rescue with double knockout (Figure 5F-H), immunohistochemistry for Ki67 (Figure 5I), and EdU proliferation assays (Figure 5J-K). The in vivo validation strengthens the functional significance, though sample sizes and statistical details could be better documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "SIAH2 expression is significantly elevated in most human tumors including breast cancer compared to normal tissues, and positively correlates with tumor stage and lymph node metastasis in breast cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by TCGA data analysis using TIMER (Figure 6A-D). The large-scale bioinformatics analysis provides strong evidence for clinical relevance, though the statistical methods and multiple testing corrections should be clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In human breast cancer tissues, DBC1 and SIAH2 expression are negatively correlated, DBC1 is reduced in hypoxic regions, and DBC1 downregulation negatively correlates with clinical stage and Ki67-positive cell percentage, indicating SIAH2-mediated DBC1 degradation promotes tumor progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by tissue microarray immunohistochemistry (Figure 6E-F, supplementary), immunofluorescence showing reduced DBC1 in CAIX-positive hypoxic regions (Figure 6G), and statistical correlations with clinical parameters (Figure 6H-I). The clinical validation strengthens translational relevance, though the statistical test (\u03c7\u00b2 test) and sample size details should be more clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "SIAH2 ubiquitinates DBC1 at Lys287 by binding to the N-terminus, resulting in proteasome-mediated degradation, and SIAH2 deletion blocks hypoxia-induced DBC1 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 summarize key findings supported by mass spectrometry (Figure 3D), mutagenesis studies (Figure 3E), domain mapping (Figure 2F), and knockout experiments (Figure 3H-L). These are well-supported summary statements of major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "OTUD5 deubiquitinates DBC1 upon reoxygenation, and OTUD5 overexpression under hypoxia inhibits DBC1 degradation. SIAH2 and OTUD5 competitively bind DBC1's N-terminus, with hypoxia favoring SIAH2 binding, leading to DBC1 ubiquitination, degradation, and tumor progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 summarize findings supported by ubiquitination assays (Figure 4A, D-E), domain mapping (Figure 4H), competitive binding experiments (Figure 4I), and functional assays (Figures 5-6). These are well-supported summary statements integrating multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Activation of OTUD5-mediated DBC1 deubiquitination may suppress tumor growth and provide a novel therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 is speculative and presented as such by the authors. While supported by the demonstrated effects of OTUD5 on DBC1 stability and the functional consequences of DBC1 loss, direct therapeutic validation experiments are not provided. This represents a reasonable hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Hypoxia stimulates SIAH2 to ubiquitinate DBC1 while inhibiting OTUD5-mediated deubiquitination, resulting in proteasome-dependent DBC1 degradation that promotes tumor cell survival and migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are comprehensive summary statements integrating findings from multiple experiments throughout the manuscript. The overall model is well-supported by the convergence of biochemical, cellular, and in vivo evidence, though some mechanistic details (e.g., how hypoxia switches SIAH2/OTUD5 binding) remain incompletely resolved.",
+    "result_type": "MAJOR"
+  }
+]

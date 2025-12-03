@@ -1,0 +1,1841 @@
+{
+  "submission": {
+    "id": "81dfad77-8fb2-47e1-9333-83672138100b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:51:50.607997Z",
+    "updated_at": "2025-12-03T19:51:50.607997Z"
+  },
+  "content": [
+    {
+      "id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "submission_id": "81dfad77-8fb2-47e1-9333-83672138100b",
+      "content_type": "manuscript",
+      "content_text": "# Context-dependent requirement of G protein coupling for Latrophilin-2 in target selection of hippocampal axons\n\n## Authors\n\n- Daniel T Pederick<sup>1</sup> ([ORCID: 0000-0003-1870-9475](https://orcid.org/0000-0003-1870-9475))\n- Nicole A Perry-Hauser<sup>2</sup> ([ORCID: 0000-0003-3130-3023](https://orcid.org/0000-0003-3130-3023))\n- Huyan Meng<sup>4</sup> ([ORCID: 0000-0003-1511-6156](https://orcid.org/0000-0003-1511-6156))\n- Zhigang He<sup>4</sup>\n- Jonathan A Javitch<sup>2</sup> ([ORCID: 0000-0001-7395-2967](https://orcid.org/0000-0001-7395-2967)) \u2020\n- Liqun Luo<sup>1</sup> ([ORCID: 0000-0001-5467-9264](https://orcid.org/0000-0001-5467-9264)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Howard Hughes Medical Institute, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n2. Departments of Psychiatry and Molecular Pharmacology and Therapeutics, Columbia University Vagelos College of Physicians and Surgeons New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n3. Division of Molecular Therapeutics, New York State Psychiatric Institute New York United States\n4. F.M. Kirby Neurobiology Center, Department of Neurology, Boston Children\u2019s Hospital, Harvard Medical School Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe formation of neural circuits requires extensive interactions of cell-surface proteins to guide axons to their correct target neurons. Trans-cellular interactions of the adhesion G protein-coupled receptor latrophilin-2 (Lphn2) with its partner teneurin-3 instruct the precise assembly of hippocampal networks by reciprocal repulsion. Lphn2 acts as a repulsive receptor in distal CA1 neurons to direct their axons to the proximal subiculum, and as a repulsive ligand in the proximal subiculum to direct proximal CA1 axons to the distal subiculum. It remains unclear if Lphn2-mediated intracellular signaling is required for its role in either context. Here, we show that Lphn2 couples to G\u03b112/13 in heterologous cells; this coupling is increased by constitutive exposure of the tethered agonist. Specific mutations of Lphn2\u2019s tethered agonist region disrupt its G protein coupling and autoproteolytic cleavage, whereas mutating the autoproteolytic cleavage site alone prevents cleavage but preserves a functional tethered agonist. Using an in vivo misexpression assay, we demonstrate that wild-type Lphn2 misdirects proximal CA1 axons to the proximal subiculum and that Lphn2 tethered agonist activity is required for its role as a repulsive receptor in axons. By contrast, neither tethered agonist activity nor autoproteolysis were necessary for Lphn2\u2019s role as a repulsive ligand in the subiculum target neurons. Thus, tethered agonist activity is required for Lphn2-mediated neural circuit assembly in a context-dependent manner.\n\n## Introduction\n\nLatrophilins (Lphn1\u20133) are highly expressed in the brain and were originally identified as responders to \u0251-latrotoxin, a neurotoxin from black widow spider venom that causes the profound release of neurotransmitters from nerve terminals (Davletov et al., 1996). They belong to the family of adhesion G protein-coupled receptors (aGPCRs), capable of eliciting intracellular effects through coupling with heterotrimeric G proteins (Lelianova et al., 1997). Additionally, as cell adhesion molecules, latrophilins interact via their N-terminal extracellular domain with four different families of interacting partners including neurexins (Boucard et al., 2012), teneurins (Silva et al., 2011), fibronectin leucine-rich transmembrane proteins (FLRTs) (O\u2019Sullivan et al., 2012), and contactins (Zuko et al., 2016). In the central nervous system, latrophilins have been implicated in neuronal migration, circuit assembly, and synapse formation (Anderson et al., 2017; Del Toro et al., 2020; Donohue et al., 2021; Pederick et al., 2021; Sando et al., 2019; Sando and S\u00fcdhof, 2021). In humans, polymorphisms in LPHN3 are associated with an increased risk of attention-deficit/hyperactivity disorder, and a missense variant in the LPHN2 gene is responsible for extreme microcephaly (Arcos-Burgos et al., 2010; Domen\u00e9 et al., 2011; Vezain et al., 2018).\n\nWe recently showed in mice that one of the three latrophilins, Lphn2, displays expression patterns inverse to teneurin-3 (Ten3) in two parallel hippocampal networks (Pederick et al., 2021). While hippocampal Lphn2 is preferentially expressed in the distal CA1 and the proximal subiculum, Ten3 is enriched in the proximal CA1 and the distal subiculum. These expression patterns and reciprocal repulsions mediated by Ten3-Lphn2 interactions instruct proximal CA1 axons to target the distal subiculum, and more distal CA1 axons to target more proximal subiculum (Figure 1A). Specifically, Lphn2 acts as a \u2018receptor\u2019 in more distal CA1 axons that is repelled by Ten3 expressed from the distal subiculum (Figure 1B). At the same time, Lphn2 acts as a repulsive \u2018ligand\u2019 in the proximal subiculum to repel Ten3-expressing (Ten3+) proximal CA1 axons; this action requires Lphn2\u2019s teneurin-binding domain but not its FLRT-binding activity (Figure 1C; Pederick et al., 2021). Therefore, Lphn2 is required cell autonomously as a receptor in more distal CA1 axons for their precise target selection, and non-autonomously in target neurons as a ligand for precise target selection of proximal CA1 axons. While Ten3 additionally mediates homophilic attraction (Berns et al., 2018; Pederick et al., 2021), Lphn2 does not mediate homophilic binding in trans (Boucard et al., 2014; Pederick et al., 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon depicting the topographic connections from proximal CA1 (pCA1) to distal subiculum (dSub) and distal CA1 (dCA1) to proximal subiculum (pSub). Ten3+ proximal CA1 axons are repelled from Lphn2 expressing (Lphn2+) proximal subiculum and Lphn2+ axons are repelled from Ten3+ distal subiculum. Red symbols indicate the repulsive cues experienced by CA1 axons, previously described in Pederick et al., 2021. (B) Deletion of Lphn2 from CA1 leads to distal CA1 axons mistargeting to distal subiculum, suggesting that Lphn2 acts cell-autonomously as a repulsive receptor. (C) Deletion of Lphn2 from proximal subiculum results in proximal CA1 axon mistargeting to proximal subiculum, suggesting Lphn2 acts cell-non-autonomously as a repulsive ligand. Figures (A\u2013C) are based on Pederick et al., 2021. (D) Experimental design of Lphn2 misexpression assay in proximal CA1. At postnatal day (P) 0, lentivirus expressing Cre or Cre and Lphn2 was injected into CA1. This was followed by injection at P42 of Cre-dependent membrane bound mCherry (mCh) into proximal CA1 as an axon tracer. (E and F) Representative images of AAV-DIO-mCh (magenta; mCh expression in a Cre-dependent manner) injections in proximal CA1 (top) and corresponding projections in the subiculum (bottom). (G) A representative image of the subiculum with proximal subiculum (pSub), mid subiculum (mSub), and distal subiculum (dSub) regions highlighted. (H) The fraction of total axon intensity within proximal, mid, and distal subiculum. Cre: N=5 and Cre-Lphn2: N=5. Means \u00b1 SEM; two-way ANOVA with Sidak\u2019s multiple comparisons test. Injection sites of all subjects are shown in Figure 1\u2014figure supplement 3. Scale bars represent 200 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Representative images of Cre and FLAG immunostaining in CA1 of P9 mice injected with lentiviruses used in Figures 1, 3 and 4. The region between the white dashed line is CA1. The region below the yellow dashed line is the molecular layer of dentate gyrus. FLAG staining below the dashed yellow line is coming from dentate gyrus and not CA1 infected cells. Scale bar represents 200 \u03bcm. FLAG staining in Cre-Lphn2_F831A/M835A appears lower than Cre-Lphn- and Cre-Lphn2_T829G due to a lower efficiency injection site. Please see Figure 1\u2014figure supplement 2 for further quantification of expression levels of latrophilin-2 (Lphn2, Lphn2_F831A/M835A, and Lphn2_T829G).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative images of GFP and FLAG staining in CA1 of P9 mice injected with LV-GFP, LV-GFP-P2A-Lphn2-FLAG, LV-GFP-P2A-Lphn2_F831A/M835A-FLAG, or LV-GFP-P2A-Lphn2_T829G-FLAG (left). Representative images of FLAG staining in the subiculum of mice injected with LV-GFP, LV-GFP-P2A-Lphn2-FLAG, LV-GFP-P2A-Lphn2_F831A/M835A-FLAG, or LV-GFP-P2A-Lphn2_T829G-FLAG in CA1 (Right). FLAG staining present in the subiculum originates from CA1 axons (arrows). (B) Mean expression of FLAG immunostaining relative to mean expression of GFP within the same section. FLAG signal was measured from CA1 molecular layer and GFP signal was measured from CA1 cell body layer. FLAG/GFP mean intensity was used to normalize the variation between injections. The section with the highest mean expression of GFP was used from each animal. GFP-Lphn2: N=15, GFP-Lphn2_F831A/M835A: N=10 and GFP-Lphn2_T829G: N=9. Means \u00b1 SEM. One-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparisons test. (C) Representative images of GFP and latrophilin-2 (Lphn2) immunostaining in the same sections as (A). (D) GFP and Lphn2 immunostaining in the same section as top (C) with 19 x higher laser power. At increased laser power endogenous Lphn2 can be visualized in the molecular layer of CA1. We found that the laser power required to visualize endogenous Lphn2 in the molecular layer of CA1 was ~19 x of that required to observed overexpressed wild type Lphn2 and mutant Lphn2. This suggests that even with variations of injection efficiency, the levels of overexpressed Lphn2 are very likely above that of endogenous Lphn2. The region between the white dashed line is CA1. The region below the yellow dashed line is the molecular layer of dentate gyrus. Immunostaining signal below the dashed yellow line is coming from dentate gyrus and not CA1 infected cells. Scale bars represent 200 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** All injection sites are in the most proximal 30% of CA1. The most proximal 30% of CA1 is the Lphn2-low region of CA1 (Pederick et al., 2021) and was, therefore, targeted for latrophilin-2 (Lphn2) misexpression.\n\nStructurally, the N-terminal extracellular domain of latrophilins comprises a rhamnose-binding lectin (RBL) domain, an olfactomedin-like (OLF) ligand-binding domain, a serine/threonine-rich region and hormone receptor motif (HRM), and a conserved GPCR autoproteolysis-inducing (GAIN) domain that encompasses the GPCR proteolysis site (GPS) (Ara\u00e7 et al., 2012; Moreno-Salinas et al., 2019; Vizurraga et al., 2020; Figure 2A). aGPCRs undergo autoproteolytic cleavage at the HL/T consensus site within the GPS. This self-cleavage divides the receptor into an extracellular N-terminal fragment (NTF) and a membrane-bound C-terminal fragment (CTF) that remain noncovalently associated throughout biosynthesis and membrane trafficking (Vizurraga et al., 2020). The seven residues immediately C-terminal to the GPS constitute the tethered agonist peptide (also known as the Stachel or stalk peptide), which upon exposure binds within the transmembrane domain to activate heterotrimeric G proteins (Liebscher and Sch\u00f6neberg, 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cartoon representations of full-length and tethered agonist-exposed (CTF) Lphn2 with detailed amino acid sequences for the TA. The extracellular domain of Lphn2 comprises an N-terminal rhamnose-binding lectin domain (RBL), an olfactomedin-like domain (OLF), a serine/threonine-rich region, and a HormR domain (HRM). It also contains the GPCR autoproteolysis-inducing (GAIN) domain necessary for autoproteolytic cleavage. This cleavage divides the aGPCR into two polypeptide chains: an N-terminal fragment (NTF) and a C-terminal fragment (CTF). The peptide stretch directly following the proteolytic cleavage site is known as the \u2018Stachel\u2019 or tethered agonist. Exposure of the tethered agonist results in aGPCR activation and downstream signaling. (B) Representative immunoblot analysis (N=3) of wild-type Lphn2 and Lphn2-CTF expression in HEK293T cells using a primary antibody against FLAG (1:500, ThermoFisher, PA1-984B). Expected bands for full-length Lphn2-FLAG and Lphn2-CTF-FLAG are 164 kDa and 72 kDa, respectively. (C) Serum response element (SRE) luciferase reporter assay for Lphn2 and Lphn2-CTF shows that removing the entire NTF up to the GPS cleavage site constitutively enhances SRE signaling (N=3 biological replicates, 9 technical replicates). (D) Schematic outlining the G\u03b2\u03b3-release bioluminescence resonance energy transfer (BRET) assay. The Lphn2 tethered agonist is capped with an enterokinase cleavage site (EK) preceded by a hemagglutinin signal peptide (SP), the P2Y12 N-terminal extracellular sequence, and a flexible linker (Lizano et al., 2021). Addition of 10 nM enterokinase generates a tethered agonist neoepitope identical to activated endogenous Lphn2. Lphn2 activation results in G protein dissociation, allowing G\u03b2\u03b3-Venus to associate with the C-terminus of GPCR kinase 3 (GRK3-ct) (Hollins et al., 2009). (E) G\u03b2\u03b3-release BRET assay testing SP-P2Y12-EK-Lphn2-CTF activation of G\u03b1s, G\u03b1i, G\u03b1q, G\u03b112, and G\u03b113 in HEK\u03947 cells (N=3\u20134 biological replicates, 9\u201312 technical replicates). \u03b22-adrenergic receptor (\u03b22AR) with 1 \u00b5M isoproteronal, dopamine receptor D2 (D2R) with 10 \u00b5M quinpirole, and endothelin receptor (ETA) with 100 nM ligand ET-1 were used as positive controls, for G\u03b1s, G\u03b1i and G\u03b1q/12/13 ,respectively. Means \u00b1 SEM; Multiple unpaired t tests between no G protein and G protein conditions; **p<0.01; ****p<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic of YM-254890 activity in the gene reporter assay. YM-254890 inhibits signaling responses downstream of G\u03b1q activation. (B) 1 \u00b5M YM-254890 inhibited muscarinic acetylcholine receptor M1 (M1R) signaling in the SRE luciferase assay (N=3 biological replicates, 9 technical replicates). For the M1R, 10 \u00b5M acetylcholine (Ach) was added for 6 hr prior to reading the luminescence signal. 1 \u00b5M YM-254890 did not inhibit Lphn2-CTF signaling in the SRE luciferase assay.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Schematic outlining the G\u03b2\u03b3-release BRET assay. The Lphn2 tethered agonist is capped with an enterokinase cleavage site (EK) preceded by a hemagglutinin signal peptide (SP), P2Y12 N-terminal extracellular sequence, and flexible linker (Lizano et al., 2021). Addition of 10 nM enterokinase generates a tethered agonist neoepitope identical to activated endogenous Lphn2. Lphn2 activation results in G protein dissociation, allowing G\u03b2\u03b3-Venus to associate with the C-terminus of GPCR kinase 3 (GRK3-ct) (Hollins et al., 2009). Testing activation of SP-P2Y12-EK-Lphn2-CTF constructs with (B) G\u03b1i,(C) G\u03b1s, (D) G\u03b1q, (E) G\u03b112, and (F) G\u03b113 in HEK\u03947 cells (N=3\u20134 biological replicates, 9\u201312 technical replicates). Dopamine receptor D2 (D2R) with 10 \u00b5M quinpirole, \u03b22-adrenergic receptor (\u03b22AR) with 1 \u00b5M isoproterenol, and endothelin receptor (ETA) with 100 nM ligand ET-1 were used as positive controls.\n\nWhile our previous in vivo work established that interaction between Ten3 and Lphn2 was required for precise circuit assembly (Pederick et al., 2021), it did not examine how this might depend on Lphn2-mediated signaling mechanisms. Here, we modified our previous hippocampal model to develop an Lphn2 misexpression assay (Figure 1D). We misexpressed Lphn2 in either CA1 axons or the subiculum target and assessed the impact on normal proximal CA1\u2192distal subiculum axon targeting. We found that ectopically expressing wild-type Lphn2 in proximal CA1 axons causes their mistargeting to the proximal subiculum. This provided us with a robust platform to interrogate whether tethered agonist activity or autoproteolytic cleavage is required for axon mistargeting in this Lphn2 ectopic expression system. When misexpressed in CA1, Lphn2 tethered-agonist activity was required for Lphn2-mediated axon mistargeting. By contrast, when we misexpressed Lphn2 in subiculum target neurons, both tethered agonist activity and autoproteolysis were dispensable for Lphn2-mediated axon repulsion. Thus, our data support that Lphn2 G-protein coupling is required in axons but not target neurons during precise circuit assembly.\n\n## Results\n\n### Misexpression of wild-type Lphn2 in proximal CA1 leads to axon mistargeting in the subiculum\n\nTo investigate the role of Lphn2-mediated G protein activity in hippocampal axon targeting, we first designed a gain-of-function assay in which we misexpressed Lphn2 in proximal CA1 neurons. We hypothesized that this ectopic expression would cause proximal CA1 axons to avoid the Ten3+ distal subiculum and incorrectly target the proximal subiculum. If so, this platform could provide us with an assay to test Lphn2 mutants with defects in various functions to determine whether wild-type Lphn2 mistargeting is compromised.\n\nTo test our hypothesis, we used a dual injection strategy to ectopically express Lphn2 in proximal CA1 and trace its axons into the subiculum (Figure 1\u2014figure supplement 1). At postnatal day 0 (P0), lentivirus expressing Cre (LV-Cre) (control) or Cre-Lphn2 (LV-Cre-P2A-Lphn2) was injected into proximal CA1, followed by injection of a Cre-dependent membrane-bound mCherry (AAV-DIO-mCherry) into proximal CA1 in the same mice at approximately P42 (Figure 1D). We confirmed the expression of Lphn2 in CA1 axons by the presence of FLAG immunostaining in the subiculum and that ectopic expression levels were higher than that of endogenous Lphn2 (Figure 1\u2014figure supplement 2A, C and D). As expected, in control animals (Cre), Cre expressing (Cre+) proximal CA1 axons targeted the most distal parts of the subiculum (Figure 1E). By contrast, when Lphn2 was misexpressed in proximal CA1 (Cre-Lphn2), Cre+ proximal CA1 axons targeted the most proximal parts of the subiculum (Figure 1F). To analyze the location of proximal CA1 axons in the subiculum, we calculated the fraction of axon intensity within thirds of the subiculum across the proximal/distal axis (Figure 1G). Proximal CA1 axons misexpressing Lphn2 are located significantly more in the proximal third of the subiculum and significantly less in the distal third of the subiculum when compared to control axons (Figure 1H).\n\nThese data supported our hypothesis that ectopic expression of Lphn2 in proximal CA1 axons causes mistargeting to the proximal subiculum. Importantly, the phenotype observed when overexpressing Lphn2 in pCA1 axons is more severe than that observed when Ten3 is deleted (Berns et al., 2018), suggesting that mistargeting is not caused by disruption of Ten3 expression alone. Having established the effect of wild-type Lphn2 misexpression in proximal CA1 axons, we next sought to characterize G protein coupling of wild-type Lphn2 and generate Lphn2 mutants to test the requirement of G protein signaling in Lphn2 mediated neural circuit assembly.\n\n### Lphn2 signals through G\u03b112/13\n\nThe G protein interaction partners for Lphn2 have not been previously established. We recently showed that Lphn3, another member of the latrophilin family of aGPCRs, couples principally to G\u03b112/13, and also more weakly to G\u03b1q, using a combination of gene expression assays and an activation strategy that permitted acute exposure of the tethered agonist in a live-cell system (Mathiasen et al., 2020). Thus, we began our signaling characterization of Lphn2 similarly using a wild-type full-length Lphn2 construct, and a constitutively active construct termed Lphn2-CTF (Figure 2A). The wild-type Lphn2 construct comprises all extracellular elements including the RBL, OLF, HRM, and GAIN domains, in addition to the seven transmembrane helix domain. The Lphn2-CTF lacks the entire NTF up to the GPS and instead has only a methionine residue before the tethered agonist. We tested the expression of these constructs in mammalian cells using immunoblotting and showed that both full-length Lphn2 and Lphn2-CTF ran at the expected truncated position (~72 kDa) suggesting that full-length Lphn2 undergoes normal proteolytic cleavage (Figure 2B). This result for full-length Lphn2 is similar to our work characterizing autoproteolysis of Lphn3 (Perry-Hauser et al., 2022).\n\nTo infer the activity of these constructs in G protein signaling pathways, we used a luminescence-based gene expression assay for serum response element (SRE), which produced a robust response in our previous studies of Lphn3 (Mathiasen et al., 2020). In our assay design, SRE action is coupled to the transcription and translation of firefly luciferase; this readout is then normalized to the control reporter, Renilla luciferase, expressed from the same plasmid under a constitutive promoter. We found that Lphn2-CTF significantly enhanced signaling over wild-type Lphn2 for SRE gene expression at varying levels of cDNA transfection (Figure 2C). Since the SRE assay reports on signaling by G\u03b112/13 as well as G\u03b1q we tested whether G\u03b112/13 or G\u03b1q was the primary contributor to this response using a selective G\u03b1q inhibitor, YM-254890 (Figure 2\u2014figure supplement 1). We did not observe a significant effect upon the addition of the inhibitor, suggesting that Lphn2 signals through G\u03b112/13.\n\nTo verify our result in the context of acute G protein activation, we next tested how tethered agonist exposure affects G protein activation in a bioluminescence resonance energy transfer (BRET) assay (Figure 2D). We designed a synthetically-activatable Lphn2 construct based on a recent publication that took advantage of the protease enterokinase (Lizano et al., 2021). Enterokinase selectively recognizes the trypsinogen substrate sequence DDDDK and cleaves after the lysine residue, thereby exposing the native tethered agonist. Thus, we cloned an Lphn2 construct that included a modified hemagglutinin signal peptide, the P2Y12 N-terminal extracellular sequence (amino acids 1\u201324), a flexible linker (GGSGGSGGS), the enterokinase recognition site (DYKDDDDK), and the truncated Lphn2-CTF sequence. We tested this construct in a G\u03b2\u03b3-release assay where energy transfer was monitored between the membrane-anchored luminescent donor, GRK3-ct-Rluc8, and the fluorescent acceptor, G\u03b3-Venus (Hollins et al., 2009). This assay was performed in a HEK\u03947 cell line with targeted deletion of G\u03b112 and G\u03b113, as well as G\u03b1s/olf, G\u03b1q/11, and G\u03b1z (Alvarez-Curto et al., 2016) to enable systematic re-introduction of the G\u03b1 subunits. As expected, in the absence of G\u03b1 subunits no BRET signal was observed; however, when G\u03b112 or G\u03b113 was re-introduced to cells expressing the Lphn2 construct there was a significant increase in the BRET signal upon treatment with enterokinase (Figure 2E). This increase was not observed upon co-expression of the receptor with G\u03b1s, G\u03b1i1, or G\u03b1q (Figure 2E and Figure 2\u2014figure supplement 2). This suggests that the increase in cAMP reported previously for the Lphn2 CTF (Sando and S\u00fcdhof, 2021) may not result from the direct activation of G\u03b1s, but rather from some other form of signaling crosstalk. Alternatively, it is possible that our Lphn2, which was isolated from the P8 hippocampus and lacks exons 19 and 20, may represent a different transcript variant in the brain that activates distinct signaling pathways. In fact, alternative splicing has been shown to affect G protein coupling specificity for several GPCRs, including Lphn3 (Markovic and Challiss, 2009; R\u00f6the et al., 2019).\n\nTaken together, these data demonstrate that Lphn2 signals through the G proteins G\u03b112 and G\u03b113 in heterologous cells. Having established that these in-cell methods were sufficient to characterize G protein signaling pathways for Lphn2, we next characterized how different mutations in the tethered agonist region affect intracellular signaling.\n\n### Mutating conserved residues F831A and M835A in the tethered agonist impairs G protein coupling activity\n\nPrevious studies suggest that the third and seventh residues of aGPCRs are required for tethered agonist-mediated G protein activation (Stoveken et al., 2015). We hypothesized that mutating these residues in Lphn2, phenylalanine (F831), and methionine (M835), to alanine (F831A/M835A) would impair G protein signaling mediated by the tethered agonist (Figure 3A). Like our work with wild-type Lphn2 and Lphn2-CTF, we mutated the tethered agonist residues in both full-length and truncated constructs (Lphn2_F831A/M835A and Lphn2-CTF_F831A/M835A, respectively). Immunoblotting against the C-terminal FLAG-tag confirmed expression in HEK293T cells but showed that Lphn2_F831A/M835A is largely uncleaved (Figure 3B). This is consistent with previous work with Lphn1 showing that mutating the third phenylalanine to an alanine disrupts autoproteolytic cleavage (Ara\u00e7 et al., 2012) and shows that the double mutation (F831A/M835A) in Lphn2 also inhibits cleavage. We also validated that Lphn2_F831A/M835A is expressed on the cell surface at a comparable level as Lphn2 wild-type (Figure 3\u2014figure supplement 1). We then proceeded to test these constructs in our SRE gene expression system (Figure 3A). As hypothesized, both the full-length and truncated Lphn2 had dramatically impaired responses to SRE across varying levels of cDNA transfection.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of the mutated tethered agonist for Lphn2_F381A/M835A. The serum response element (SRE) luciferase reporter assay shows that both the full-length Lphn2_F831A/M835A and the Lphn2-CTF_F831A/M835A have impaired signaling (N=3 biological replicates, 9 technical replicates). Means \u00b1 SEM; Multiple unpaired t-tests between full-length latrophilin-2 (Lphn2) and Lphn2_F831A/M835A and Lphn2-CTF and Lphn2-CTF_F831A/M835A constructs; ****p<0.0001. (B) Representative immunoblot analysis (N=3) of TA-dead Lphn2 and TA-dead Lphn2-CTF expression in HEK293T cells using a primary antibody against FLAG (1:500, ThermoFisher, PA1-984B). Expected bands for full-length Lphn2_F831A/M835A-FLAG and Lphn2_F831A/M835A-CTF-FLAG are 164 kDa and 72 kDa, respectively. (C) G\u03b2\u03b3-release BRET assay testing SP-P2Y12-EK-Lphn2-CTF_F831A/M835A activation of G\u03b112 and G\u03b113 in HEK\u03947 cells (N=3\u20134 biological replicates, 9\u201312 technical replicates). SP-P2Y12-EK-Lphn2-CTF signaling is shown for comparison. Means \u00b1 SEM; Multiple unpaired t tests between no G protein and G protein conditions; *p<0.05, **p<0.01; ****p<0.0001. (D) Representative images of AAV-DIO-mCh (magenta; mCh expression in a Cre-dependent manner) injections in proximal CA1 (top) and corresponding projections in the subiculum (bottom). (E) Fraction of total axon intensity within proximal, mid, and distal subiculum. Cre: N=5, Cre-Lphn2: N=5 and Cre-Lphn2_F831A/M835A: N=6. Means \u00b1 SEM; two-way ANOVA with Sidak\u2019s multiple comparisons test. Injection sites of all subjects are shown in Figure 1\u2014figure supplement 3. Scale bars represent 200 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematic of Lphn2 constructs with an additional SNAPfast-tag on the N terminus. (B) Lphn2 constructs tagged with a SNAPfast-tag were expressed in HEK293T cells for 24 hr. Transfected cells were incubated for 30 min with 1 \u00b5M membrane-impermeant Janelia Fluor 646, a SNAP-tag substrate. Emission was read using the filter 640/680 at a gain of 2000 using a PHERAstar FS microplate reader. Expression was calculated as a percentage of wild-type Lphn2. Statistical analysis was conducted using a one-way analysis of variance (ANOVA) followed by Dunnett\u2019s multiple comparisons test (N=3 biological replicates, nine technical replicates; ****p<0.0001).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Cre animals have low axon intensity in proximal subiculum (pSub) and high axon intensity in distal subiculum (dSub). Cre-Lphn2 animals have high axon intensity in pSub and low axon intensity in dSub. Cre-Lphn2_F831A/M835A animals show a similar pattern to LV-Cre with increasing axon intensity from pSub to dSub. Cre-Lphn2_T829G shows moderate axon enrichment in pSub but overall the total axon intensity is not biased towards any one region of subiculum. Means \u00b1 SEM; two-way analysis of variance (ANOVA) with Sidak\u2019s multiple comparisons test.\n\nTo confirm that the reduced SRE response was due to impaired G protein coupling and not simply to impaired proteolysis, we cloned the CTF of our Lphn2_F831A/M835A mutant into our enterokinase-activatable construct. We then tested our construct in the G\u03b2\u03b3-release assay and compared the BRET response to wild-type Lphn2-CTF. Unlike the wild-type receptor, Lphn2-CTF_F831A/M835A did not yield a BRET signal after the re-introduction of any of the G proteins in question (G\u03b1s, G\u03b1i1, G\u03b1q, G\u03b112, or G\u03b113) (Figure 3C, Figure 2\u2014figure supplement 2). Taken together, our findings demonstrate that the F831A/M835A mutations in Lphn2 impair tethered agonist-mediated G protein coupling.\n\n### Tethered agonist activity or autoproteolysis of Lphn2 is required for its cell-autonomous effect in causing proximal CA1 axon mistargeting\n\nWe next misexpressed Lphn2-F831A/M835A in proximal CA1 to determine if Lphn2 tethered agonist activity or autoproteolysis is required in vivo to direct mistargeting of proximal CA1 axons. Lphn2_F831A/M835A was ectopically expressed at levels similar to that of wild-type Lphn2 and was detected in CA1 axons (Figure 1\u2014figure supplement 1A and B). We injected LV-Cre-P2A-Lphn2_F831A/M835A-FLAG into CA1 of P0 mice, followed by AAV-DIO-mCherry into proximal CA1 of the same mice as adults. The majority of Lphn2_F831A/M835A-expressing proximal CA1 axons targeted the most distal third of the subiculum, like negative control Cre animals (Figure 3D). The fraction of axon intensity in Cre-Lphn2_F831A/M835A animals was significantly lower in the proximal subiculum and significantly higher in the distal subiculum when compared to Cre-P2A-Lphn2 animals (Figure 3E). Proximal CA1 axons in Cre-P2A-Lphn2_F831A/M835A animals showed a similar pattern of targeting to negative control Cre animals (Figure 3\u2014figure supplement 2), although the total fraction of axon intensity was significantly lower in the distal subiculum (Figure 3E).\n\nCollectively, these findings suggest that tethered agonist activity or autoproteolysis is required for Lphn2-mediated miswiring of proximal CA1 axons.\n\n### Mutating residue T829G in the tethered agonist renders Lphn2 cleavage deficient but preserves the ability of the tethered agonist to activate G protein\n\nWhile misexpressing Lphn2_F831A/M835A failed to cause proximal CA1 axons to mistarget to the proximal subiculum, we could not definitively link this result to impaired tethered agonist activity since the Lphn2_F831A/M835A mutant was also resistant to autoproteolytic cleavage (Figure 3B). Since our initial efforts to find a tethered agonist mutant with impaired G protein signaling that retained normal autoproteolytic cleavage were unsuccessful, we designed a construct that rendered Lphn2 resistant to autoproteolytic cleavage but preserved tethered agonist activity. Previous studies showed that replacing threonine-838 in the tethered agonist of Lphn1 or threonine-923 in the tethered agonist of Lphn3 to glycine inhibited autoproteolysis while maintaining proper folding of the receptor (Ara\u00e7 et al., 2012; Kordon et al., 2023). Thus, we mutated the analogous threonine-829 in Lphn2 (Lphn2_T829G) and confirmed that Lphn2_T829G was cleavage resistant using immunoblotting (Figure 4A). We also validated that Lphn2_T829G is expressed on the cell surface at a comparable level as Lphn2 wild-type (Figure 3\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative immunoblot analysis (N=3) of Lphn2_T829G and Lphn2-CTF_T829G expression in HEK293T cells using a primary antibody against FLAG (1:500, ThermoFisher, PA1-984B). Expected bands for full-length Lphn2_T829G-FLAG and Lphn2-CTF_T829G-FLAG are 164 kDa and 72 kDa, respectively. (B) Schematic of the mutated tethered agonist for Lphn2_T829G. The serum response element (SRE) luciferase reporter assay shows that the full-length Lphn2_T829G has impaired SRE levels while the Lphn2_T829G truncated up to the GPS cleavage site has SRE levels comparable to Lphn2_CTF (N=3 biological replicates, nine technical replicates). Means \u00b1 SEM; Multiple unpaired t tests between full-length Lphn2 and Lphn2_T829G and Lphn2-CTF and Lphn2-CTF_T829G constructs; *p<0.05; ***p<0.001; ****p<0.0001. (C) G\u03b2\u03b3-release BRET assay testing SP-P2Y12-EK-Lphn2-CTF_T829G activation of G\u03b112 and G\u03b113 in HEK\u03947 cells (N=3\u20134 biological replicates, 9\u201312 technical replicates). SP-P2Y12-EK-Lphn2-CTF signaling is shown for comparison. Means \u00b1 SEM; Multiple unpaired t-tests between no G protein and G protein conditions; ***p<0.001; ****p<0.0001. (D) Representative images of AAV-DIO-mCh (magenta; mCh expression in a Cre-dependent manner) injections in proximal CA1 (top) and corresponding projections in the subiculum (bottom). (E) Fraction of total axon intensity within proximal, mid, and distal subiculum. Cre: n=5, Cre-Lphn2: n=5 and Cre-Lphn2_T829G: n=5. Means \u00b1 SEM; two-way analysis of variance (ANOVA) with Sidak\u2019s multiple comparisons test. Injection sites of all subjects are shown in Figure 1\u2014figure supplement 3. Scale bars represent 200 \u03bcm.\n\nWe next assessed G protein signaling for Lphn2_T829G using our SRE gene expression system with full-length and truncated receptors (Lphn2_T829G and Lphn2-CTF_T829G, respectively) (Figure 4B). Full-length Lphn2_T829G had significantly impaired SRE response compared to wild-type Lphn2, consistent with diminished exposure of the tethered agonist in the absence of cleavage; however, when we tested Lphn2-CTF_T829G, which lacked the entire NTF up to the GPS cleavage site, we observed SRE levels comparable to Lphn2-CTF suggesting that the mutated tethered agonist is fully active if exposed. We, therefore, cloned the CTF of the T829G mutant into our enterokinase-activatable construct and tested BRET signaling following the re-introduction of G\u03b1 proteins (Figure 4C). The T829G-CTF retained BRET signaling comparable to wild-type Lphn2-CTF for G\u03b112 and G\u03b113, with no discernable BRET response for G\u03b1s, G\u03b1i1, or G\u03b1q (Figure 2\u2014figure supplement 2). Taken together, these data supported that Lphn2_T829G is resistant to autoproteolytic cleavage but maintains a functional tethered agonist.\n\n### Autocleavage-deficient Lphn2 retains moderate activity in directing proximal CA1 axon mistargeting\n\nTo assess if autoproteolytic cleavage is required in vivo for Lphn2-mediated proximal CA1 axon mistargeting, we injected Cre-Lphn2_T829G into proximal CA1 of P0 mice, followed by AAV-DIO-mCherry into pCA1 of the same mice as adults. Lphn2_T829G was ectopically expressed at levels similar to wild-type Lphn2 and was detected in CA1 axons (Figure 1\u2014figure supplement 1A and B). Overall, Lphn2_T829G-expressing proximal CA1 axons did not show highly enriched targeting to a specific region of the subiculum, as observed for control proximal CA1 axons or Lphn2 misexpressing proximal CA1 axons, which preferentially target distal and proximal subiculum, respectively (Figure 4E). However, compared to the control there was a significant increase in the fraction of axon intensity in the proximal subiculum in Cre-Lphn2_T829G animals, even though this mistargeting was not as pronounced as seen with wild-type Cre-Lphn2 (Figure 3\u2014figure supplement 2.).\n\nThe intermediate gain-of-function phenotypes of misexpressing Lphn2_T829G compared to misexpressing wild-type Lphn2 or tethered agonist-deficient (and non-cleavable) Lphn2 suggest that autoproteolysis is not absolutely required for Lphn2 misexpression-induced miswiring of proximal CA1 axons. The weaker than wild-type overexpression phenotype is likely caused by the decreased G protein signaling of the full-length construct given the more limited exposure of the tethered agonist in the absence of cleavage. The preservation of some signaling activity of Lphn2_T829G is consistent with the ability of its tethered agonist to signal.\n\n### Neither tethered agonist activity nor autoproteolysis is required for Lphn2\u2019s action as a repulsive ligand\n\nWe previously showed that misexpression of Lphn2 in distal subiculum target neurons causes proximal CA1 axons to avoid this area, suggesting that Lphn2 acts cell non-autonomously as a repulsive ligand in directing target selection of proximal CA1 axons (Pederick et al., 2021). In the context of repulsive axon guidance, proteolysis has been proposed as a mechanism to disassemble the extracellular binding complex after repulsive signaling, which is necessary for repulsion (Hattori et al., 2000). Are tethered agonist activity and/or autoproteolysis required for Lphn2\u2019s cell non-autonomous role in neural circuit assembly? To test this, we used a strategy to ectopically express Lphn2 in the distal subiculum and trace proximal CA1 axons into the subiculum (Figure 5A; Figure 5\u2014figure supplement 1) identical to the one we previously reported for comparing lentiviruses expressing GFP alone (LV-GFP) or GFP and Lphn2 (LV-GFP-P2A-Lphn2-FLAG; Pederick et al., 2021). At postnatal day 0 (P0), LV-GFP-P2A-Lphn2_F831A/M835A-FLAG and LV-GFP-P2A-Lphn2_T829G-FLAG were injected into distal subiculum, followed by injection of membrane-bound mCherry (AAV-mCherry) into proximal CA1 in the same mice at approximately P42. The P0 lentivirus injection only covers a small fraction of the entire proximal CA1 axon projection, enabling us to assess whether proximal CA1 axons target lentivirus-expressing regions differently from adjacent regions that do not express lentivirus. To observe the relationship between proximal CA1 axon projections and lentivirus-induced regions of the subiculum, we plotted axon signal intensity (mCh) and lentivirus injection site (GFP) from the same animal as height and color, respectively.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig5-v2.jpg)\n\n**Figure 5.:** (A) Experimental design of Lphn2 misexpression assay in distal subiculum. (B to E). Representative mountain plots showing normalized mCh fluorescence as height (proximal CA1 axon projections in subiculum) and normalized GFP fluorescence as color (lentivirus expression). P, proximal; D, distal; M, medial; L, lateral. (F) Ratio of mCh fluorescence intensity (from proximal CA1 axons) in GFP+ versus GFP\u2013 regions of the subiculum. GFP: N=5, GFP-Lphn2: N=5, GFP-Lphn2_F831A/M835A: N=5 and GFP-Lphn2_T829G: N=6. Means \u00b1 SEM. One-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparisons test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative images of GFP and FLAG immunostaining in P8 subiculum of mice injected with lentiviruses used in Figure 5. The region between the white dashed line is subiculum. Scale bar represents 200 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83529/elife-83529-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Representative images from mice injected with LV-GFP (A) and LV-GFP-P2A-Lphn2-FLAG (B), LV-GFP-P2A-Lphn2_F831A/M835A-FLAG (C), or LV-GFP-P2A-Lphn2_T829G-FLAG (D) at P0 subiculum, followed by AAV-mCh injection in adult proximal CA1, showing axons from proximal CA1 neurons (magenta) and LV injection site (green) in subiculum.Three 60 \u03bcm sections that contain proximal CA1 axons at different positions along the medial\u2013lateral (M\u2013L) axis are shown, with the center section overlapping with the LV injection site. These images correspond to mice analyzed in Figure 5B\u2013E. Scale bar represents 200 \u03bcm.\n\nWe previously reported that GFP alone does not affect the intensity of proximal CA1 axons, whereas GFP-Lphn2 regions have significantly reduced proximal CA1 axon intensity in GFP-Lphn2 positive regions (Pederick et al., 2021; Figure 5B and C; Figure 5\u2014figure supplement 2A and B). When either GFP-Lphn2_F831A/M835A or GFP-Lphn2_T829G were expressed in the distal subiculum, we also observed a significant decrease in axon intensity in GFP positive regions compared to GFP (Figure 5D, E and F and Figure 5\u2014figure supplement 2C and D). This decrease was not significantly different from GFP-Lphn2 animals (Figure 5F). These findings suggest that neither tethered agonist activity nor autoproteolysis is required for Lphn2\u2019s cell-non-autonomous role as a ligand in the neural circuit assembly.\n\n## Discussion\n\nIn this study, we utilized a combination of in vivo axon target selection and in vitro cell signaling assays to determine if Lphn2 G protein signaling is required for its role as a neural wiring molecule. First, we showed that Lphn2 misexpression can cell-autonomously misdirect proximal CA1 axons to the proximal subiculum, establishing an assay to test the requirements of Lphn2 G protein signaling when it acts as a receptor (Figure 1). Second, we identified the G protein interaction partners of Lphn2 (Figure 2) and validated point mutations that disrupt tethered agonist activity and/or autoproteolysis of the GPS region (Figures 3 and 4). Third, we showed that when Lphn2 is misexpressed in CA1 axons, tethered agonist activity is required for Lphn2\u2019s ability to misdirect axon targeting (Figures 3 and 4). Finally, when Lphn2 acts as a repulsive ligand in subiculum target neurons, we demonstrated that neither tethered agonist activity nor autoproteolytic cleavage is required for the receptor\u2019s ability to repel Ten3+ proximal CA1 axons (Figure 5). Taken together, these findings highlight the importance of Lphn2 G protein signaling during precise circuit assembly in a context-specific manner. Our results also support that while aGPCR GPS cleavage is dispensable for Lphn2\u2019s role as a receptor to direct axon targeting, an intact tethered agonist is essential.\n\n### The role of autoproteolytic cleavage and tethered agonism in aGPCR activation\n\nUpon aGPCR biosynthesis, the conserved GAIN domain undergoes autoproteolytic cleavage at the GPS to generate N- and C-terminal fragments that remain non-covalently bound during trafficking to the cell surface (Ara\u00e7 et al., 2012). Crystal structures of GAIN domains from Lphn1 and ADGRB3 (BAI3) (Ara\u00e7 et al., 2012), ADGRG1 (GPR56) (Salzman et al., 2016), and ADGRG6 (GPR126) (Leon et al., 2020), revealed that in an intact aGPCR, the tethered agonist is buried as a \u03b2-strand in the GAIN domain, forming an extensive network of conserved hydrogen bonds and hydrophobic side chains. This suggests that when the complex between aGPCR\u2019s NTF and CTF remains intact the tethered agonist is inaccessible for engagement with its binding site in the 7TM domain. However, several studies have reported that naturally cleavage-resistant aGPCRs can still function (Liebscher et al., 2014; Wilde et al., 2016). This suggests that the tethered agonist can in fact interact with the 7TM independent of cleavage, although the efficacy of this interaction is likely to be diminished, as we see in the present study. Thus, the relative contributions and/or necessity of autoproteolytic cleavage and the tethered agonist to aGPCR activity remain an area of active study.\n\nRecent efforts reported the structures of eight aGPCRs, seven of which were truncated up to the GPS (Barros-\u00c1lvarez et al., 2022; Ping et al., 2022; Qu et al., 2022; Xiao et al., 2022). While most discussions from the structural aGPCR studies argued that NTF dissociation is required for tethered agonist interaction with the receptor, the structure of autoproteolysis-deficient ADGRF1 supported the possibility of the cleavage-independent manner of receptor activation (Qu et al., 2022). The density for the tethered agonist of ADGRF1 was well-resolved and bound in an \u03b1-helical structure within the orthosteric site of the 7TM bundle. This interaction was like that of the cleaved structures, and ADGRF1 was also observed to be bound to a miniGi1, supporting that receptor cleavage and tethered agonist exposure are not absolutely required for G protein coupling. One caveat, however, is that there is little density for the NTF in this structure, suggesting that the structure obtained may result from a fraction of receptor where cleavage has still occurred and the NTF has dissociated.\n\nAs mentioned above, not all aGPCRs are auto-proteolytically cleaved; therefore, activation cannot be fully dependent on tethered agonist exposure through the removal of the NTF (Kishore et al., 2016; Liebscher et al., 2022). In this regard, it is possible that full-length aGPCRs exist in multiple conformational states that include receptor molecules in which the tethered agonist is unmasked from the GAIN domain. In fact, molecular dynamics (MD) simulations of spontaneous tethered agonist exposure were recently reported for five intact aGPCR homologs (ADGRB3, ADGRE2, ADGRE5, ADGRG1, and Lphn1) (Beliu et al., 2021). Here, the authors show that tethered agonist exposure occurs due to the high intrinsic flexibility of the GAIN domain. They also used biorthogonal labeling of conserved positions within the tethered agonist to show that large portions (+6 residues) of the tethered agonist can become solvent accessible in the context of the GAIN domain. They argue that tethered agonist exposure likely occurs in a stepwise mechanism where the tethered agonist is uncovered along its N\u2192C axis. Thus, it is possible that an intact complex of aGPCR\u2019s NTF and CTF could unmask the tethered agonist sufficiently for interaction with the 7TM, resulting in receptor activation.\n\nThe ability of tethered agonist exposure to occur in intact aGPCRs could provide an explanation for why our Lphn2_T829G mutant displays a partial axon mistargeting phenotype (Figure 4). Even though the Lphn2_T829G mutant cannot undergo autoproteolytic cleavage, it still retains a functional tethered agonist that is able to initiate G protein signaling if transiently unmasked. This is likely why activation of full-length Lphn2_T829G is less robust than the wild-type Lphn2, which can more readily unmask the TA. We also cannot rule out the possibility that a small amount of cleavage, although undetectable in the HEK cells immunoblotting, nonetheless contributes to the partial mistargeting phenotype in vivo.\n\nLike the Lphn2_T829G mutant, Lphn2_F831A/M835A cannot undergo autoproteolytic cleavage. However, this mutant also has impaired G protein coupling activity even with full exposure of the TA. This explains why we observed close-to-normal axon targeting when we overexpressed Lphn2_F831A/M835A in proximal CA1 (Figure 3). Even if the tethered agonist of Lphn2_F831A/M835A becomes unmasked it still cannot initiate tethered agonist-mediated receptor. However, given the statistically significant difference in total axon intensity in dSub between control and Lphn2_F831A/M835A (Figure 3E), we cannot rule out some residual tethered agonist-independent, G protein-mediated signaling or an Lphn2 function independent of G protein signaling, at least in the context of overexpression.\n\n### Implication of Lphn2 signaling in neural circuit assembly\n\nHow could Lphn2-mediated G protein signaling in the CA1 axons lead to axon repulsion? We show here that Lphn2 primarily signals through G\u03b112 and G\u03b113 in heterologous cells (Figure 2E). G\u03b112/G\u03b113 are known to regulate Rho GTPase; for example, G\u03b113 binds to and activates p115RhoGEF, an exchange factor for and activator of the small GTPase RhoA (Kozasa et al., 2011). RhoA activation is known to cause growth cone collapse and neuronal process retraction via its regulation of the actin-myosin contractility (Luo, 2002; Spillane and Gallo, 2014). Thus, if Lphn2 coupling to G\u03b112/G\u03b113 also applies to CA1 neurons, as suggested by our results in heterologous cells, G\u03b112/G\u03b113\u2192RhoGEF\u2192RhoA may be a plausible pathway for Lphn2 to mediate its function as a receptor for axon repulsion.\n\nInterestingly, neither autoproteolytic cleavage nor tethered agonist activity is required for Lphn2 to act cell non-autonomously as a repulsive ligand in subiculum target neurons (Figure 5). This suggests that cleavage of Lphn2 is not required for repulsion in this context and implies that another mechanism mediates the disassembly of the extracellular binding complex, which is required for retracting axons to pull away from the targets. Other potential mechanisms to disassemble the extracellular binding complex include Ten3 cleavage (teneurins are known to also undergo proteolytic cleavage at its extracellular domain; Sita et al., 2019), endocytosis of the adhesion complex as in the case of ephrin/Eph receptor (Egea and Klein, 2007), or forces produced by actin-myosin contractility in axon terminals induced by repulsive signaling. Indeed, since Lphn2 also acts as a repulsive ligand and Ten3 as a repulsive receptor, extracellular binding of Lphn2 to Ten3 should also trigger a repulsive response in Ten3+ axon terminals, but the signaling mechanism is completely unknown. Future studies on the mechanisms that disassemble the extracellular complex and intracellular signaling in the axon downstream of Ten3 will increase our understanding of how the interaction of these two molecules can lead to repulsive outcomes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T (epithelial, kidney)</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK\u03947</td>\n      <td>Alvarez-Curto et al., 2016, PMCID:PMC5207144</td>\n      <td>JBC</td>\n      <td>HEK293 cells with targeted deletion via CRISPR-Cas9 of GNAS, GNAL, GNAQ, GNA11, GNA12, GNA13, and GNAZ</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-FLAG (rabbit polyclonal)</td>\n      <td>ThermoFisher, PA1-984B</td>\n      <td>RRID:AB_347227</td>\n      <td>IB: 1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-rabbit HRP (donkey polyclonal)</td>\n      <td>ThermoFisher, Cat #31458</td>\n      <td>RRID:AB_228213</td>\n      <td>IB: 1:10,000</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SRE-luciferase/glo (plasmid)</td>\n      <td>Nazarko et al., 2018, PMCID:PMC6137404</td>\n      <td>iScience</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lphn2-Flag (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>pCDNA3.1 with Kozak (GCC) and C-terminal Flag tag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lphn2-CTF-Flag (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>pCDNA3.1 with Kozak (GCC), Lphn2 C-terminal fragment and C-terminal Flag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SP-P2Y12-EK-Lphn2-CTF (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Enterokinase cleavage site based on Lizano et al., 2021, Lphn2-CTF</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lphn2-F831A/M835A-Flag (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>pCDNA3.1 with kozak (GCC), Lphn2, F831A and M835A, and C-terminal Flag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lphn2-F831A/M835A-CTF-Flag (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>pCDNA3.1 with kozak (GCC), Lphn2, F831A and M835A C-terminal fragment, and C-terminal Flag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SP-P2Y12-EK-Lphn2-F831A/M835A-CTF (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Enterokinase cleavage site based on Lizano et al., 2021, Lphn2-F831A/M835A-CTF</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lphn2-T829G-Flag (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>pCDNA3.1 with kozak (GCC), Lphn2, T829G, and C-terminal Flag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lphn2-T829G-CTF-Flag (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>pCDNA3.1 with kozak (GCC), Lphn2, T829G C-terminal fragment, and C-terminal Flag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>SP-P2Y12-EK-Lphn2-T829G-CTF (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Enterokinase cleavage site based on Lizano et al., 2021, Lphn2-T829G-CTF</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>G\u03b1s/G\u03b1i/ G\u03b1q/ G\u03b112/G\u03b113 (plasmid)</td>\n      <td>Hollins et al., 2009, PMCID:PMC2668204</td>\n      <td>Cell Signal</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>G\u03b21</td>\n      <td>Hollins et al., 2009, PMCID:PMC2668204</td>\n      <td>Cell Signal</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>G\u03b32-Venus</td>\n      <td>Hollins et al., 2009, PMCID:PMC2668204</td>\n      <td>Cell Signal</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>GRK3ct-Rluc8</td>\n      <td>Hollins et al., 2009, PMCID:PMC2668204</td>\n      <td>Cell Signal</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Firefly D-luciferin</td>\n      <td>NanoLight Technology</td>\n      <td>Cat #306</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Coelenterazine-h</td>\n      <td>NanoLight Technology</td>\n      <td>Cat #301</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>YM-254890</td>\n      <td>AdipoGene Life Sciences</td>\n      <td>CAS 568580-02-9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Janelia Fluor 646</td>\n      <td>Lavis Lab, Howard Hughes Medical Institute Janelia Research Campus</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>CD-1</td>\n      <td>Charles River Laboratory</td>\n      <td></td>\n      <td>CD-1 mice were used for all animal experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral UbC-Cre</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentivirus co-expressing Cre for in vivo experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral UbC-Cre-P2A-Lphn2-FLAG</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentivirus co-expressing Cre-P2A-Lphn2-FLAG for in vivo experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral UbC-Cre-P2A Lphn2_F831A/M835A-FLAG</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentivirus co-expressing Cre-P2A-Lphn2_F831A/M835A-FLAG for in vivo experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral UbC-Cre-P2A-Lphn2_T828G-FLAG</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentivirus co-expressing Cre-P2A-Lphn2_T829G-FLAG for in vivo experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral UbC-GFP</td>\n      <td>Pederick et al., 2021, PMCID:PMC8830376</td>\n      <td>Science</td>\n      <td>Lentivirus co-expressing GFP for in vivo experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral UbC-GFP-P2A-Lphn2-FLAG</td>\n      <td>Pederick et al., 2021, PMCID:PMC8830376</td>\n      <td>Science</td>\n      <td>Lentivirus co-expressing GFP-P2A-Lphn2-FLAG for in vivo experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral UbC-GFP-P2A-Lphn2_F831A/M835A-FLAG</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentivirus co-expressing GFP-P2A-Lphn2_F831A/M835A-FLAG for in vivo experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Lentiviral UbC-GFP-P2A-Lphn2_T828G-FLAG</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Lentivirus co-expressing GFP-P2A-Lphn2_F831A/M835A-FLAG for in vivo experiments</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV8-EF1a-DIO-ChR2-mCh</td>\n      <td>Addgene plasmid 20297</td>\n      <td></td>\n      <td>AAV used to label axons of Cre expressing neurons with mCherry</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV8-CaMKIIa-ChR2-mCh</td>\n      <td>Addgene plasmid26975</td>\n      <td></td>\n      <td>AAV used to label axons of neurons with mCherry</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI</td>\n      <td>ThermoFisher</td>\n      <td>D1306</td>\n      <td>1:10,000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mCherry (rat monoclonal)</td>\n      <td>ThermoFisher, M11217</td>\n      <td>RRID:AB_2536611</td>\n      <td>Immunohistochemistry1:1,000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Cre (Rabbit polyclonal)</td>\n      <td>Synaptic Systems, 257 003,</td>\n      <td>RRID:AB_2619968</td>\n      <td>Immunohistochemistry1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GFP (chicken polyclonal)</td>\n      <td>Aves Labs, GFP-1020</td>\n      <td>RRID:AB_10000240</td>\n      <td>Immunohistochemistry1:2,500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-FLAG (goat polyclonal)</td>\n      <td>Abcam, ab95045</td>\n      <td>RRID:AB_10676074</td>\n      <td>Immunohistochemistry 1:3000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Lphn2 (Rabbit polyclonal)</td>\n      <td>Novus Biologicals, nbp2-58704</td>\n      <td></td>\n      <td>Immunohistochemistry1:500</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Zen</td>\n      <td>Zeiss</td>\n      <td></td>\n      <td>Previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>National Institutes of Health</td>\n      <td></td>\n      <td>Previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Photoshop</td>\n      <td>Adobe</td>\n      <td></td>\n      <td>Previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Illustrator</td>\n      <td>Adobe</td>\n      <td></td>\n      <td>Previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>MathWorks</td>\n      <td></td>\n      <td>Previously existing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 9</td>\n      <td>GraphPad Software</td>\n      <td></td>\n      <td>Previously existing</td>\n    </tr>\n  </tbody>\n</table>\n\n### Materials for cell culture experiments\n\nDulbecco\u2019s Modified Eagle Medium (DMEM), high glucose, and penicillin-streptomycin (P/S) (10,000 U/mL) were purchased from Gibco (ThermoFisher Scientific, Waltham, MA). Fetal bovine serum (FBS), 0.5% trypsin, and Dulbecco\u2019s phosphate-buffered saline (DPBS) were purchased from Corning (Fisher Scientific, Waltham, MA). Opti-MEM reduced serum medium, no phenol red, and Lipofectamine 2000 transfection reagent was purchased from Invitrogen (ThermoFisher Scientific). FuGENE transfection reagent was purchased from Promega (Madison, WI). RIPA buffer was purchased from Sigma-Aldrich (St. Louis, MO). Triton lysis buffer consisted of 0.11 M Tris-HCl powder, 0.04 M Tris-base powder, 75 mM NaCl, 3 mM MgCl2, and 0.25% Triton X-100 pure liquid. The 3 X Firefly Assay Buffer was freshly prepared in Triton lysis buffer and contained 15 mM DTT, 0.6 mM coenzyme A (MedChemExpress, Monmouth Junction, NJ), 0.45 mM ATP (MedChemExpress, Monmouth Junction, NJ), and 0.42 mg/mL firefly D-luciferin (NanoLight Technology). Renilla Salts buffer consisted of 45 mM Na2EDTA, 30 mM Na Pyrophosphate, and 1.425 M NaCl. The 3 X Renilla Assay Buffer was freshly prepared in Renilla Salts and contained 0.06 mM PTC124 in DMSO (MedChemExpress) and 0.01 mM coelenterazine-h (NanoLight Technologies, Pinetop, AZ). For the BRET assays, enterokinase, light chain, was obtained from New England Biolabs (Ipswich, MA), isoproterenol and quinpirole from Sigma Aldrich, and endothelin 1 (ET-1) from Tocris Bioscience (Bristol, United Kingdom). YM-254890 was purchased from AdipoGen Life Sciences (San Diego, CA). Impermeant Janelia Fluor 646 conjugated to benzyl guanine was a kind gift from Dr. Luke Lavis (Howard Hughes Medical Institute Janelia Research Campus).\n\n### Plasmid DNA constructs\n\nLphn2 was amplified from cDNA isolated from the P8 mouse hippocampus. Sanger sequencing confirmed that exons 19 and 20 were excluded from the amplified Lphn2 (Refer to NCBI Reference Sequence: NM_001081298.2 for exon annotation). This cDNA was used as a polymerase chain reaction (PCR) template to make the Lphn2 constructs used in this study. All cDNA constructs were assembled in a pCDNA3.1+ vector by Gibson assembly using NEBuilder HiFi DNA Assembly Master Mix (New England Biolabs). Sequences were confirmed with the Genewiz sequencing service (South Plainfield, NJ). Plasmid DNA constructs are available upon request.\n\n### Cell culture\n\nHEK293T cells (American Type Culture Collection, Manassas, VA; RRID:CVCL_0063) and HEK293 cells with targeted deletion via CRISPR-Cas9 of GNAS, GNAL, GNAQ, GNA11, GNA12, GNA13, and GNAZ (HEK\u03947) (Alvarez-Curto et al., 2016) were maintained in high-glucose DMEM supplemented with 10% FBS and 1% P/S at 37 \u00b0C in a 5% CO2 humidified incubator. Cell authentication was not performed as the cells were obtained directly from the supplier. PCR-based mycoplasma testing was performed routinely using ATCC mycoplasma testing services. Cell viability was assessed for each passage using the Countess II automated cell counter (ThermoFisher Scientific).\n\n### Immunoblot analysis\n\nHEK293T cells were detached for 2\u20133 min using 0.5% trypsin and then plated at a density of 350,000 cells/mL in a six-well culture plate. After 24 hr, the cells were transfected using FuGENE transfection reagent (8 \u03bcL/2 \u03bcg cDNA) and Opti-Mem with receptor cDNA (2 \u03bcg). After 24 hr, cells were placed on ice and incubated in 500 \u03bcL RIPA buffer for 30 min. Following this incubation, cells were scraped from the culture plate and moved into 1.5 mL microcentrifuge tubes. Cells were then spun at 15,000 \u00d7 g in a 4 \u00b0C benchtop centrifuge to pellet debris. After centrifugation, 50 \u03bcL of the supernatant was transferred into a fresh microcentrifuge tube and combined with 50 \u03bcL 2 X SDS Laemmli sample buffer (Sigma-Aldrich). In preparation for immunoblot analysis, a 20 \u03bcL sample was run on an SDS-PAGE gel (Mini-PROTEAN TGX, 4\u201315%, Bio-Rad Laboratories, Inc, Hercules, CA) prior to transfer to a PDVF membrane (Immobilon-P Membrane, Merck Millipore Ltd., Burlington, MA). The membrane was then incubated in a 5% milk tris-buffered saline with 0.1% tween-20 (TBS-T) solution for 1 hr at RT with gentle rotation. The membrane was washed five times 5 min in TBS-T prior to overnight incubation at 4 \u00b0C with 1\u00b0 anti-FLAG antibody (1:500, ThermoFisher, PA1-984B; RRID:AB_347227). The next morning, the membrane was washed five times 5 min in TBS-T. The membrane was then incubated for 1 hr at RT with 2\u00b0 anti-rabbit HRP antibody (1:10,000, ThermoFisher, Cat #31458;RRID:AB_228213). The membrane was washed five times 5 min in TBS-T prior to visualization with SuperSignal West Pico Chemiluminescent Substrate (Fisher Scientific) using the Azure c600 Gel Imaging System (Azure Biosystems, Dublin, CA).\n\n### Gene expression assays\n\nIn preparation for transfection, HEK293T cells were detached for 2\u20133 min using 0.5% trypsin and then seeded at a density of 400,000 cells/mL in a 12-well culture plate. After 24 hr, the cells were co-transfected using Lipofectamine 2000 (2.5 \u03bcL/1 \u03bcg cDNA) and Opti-Mem with receptor cDNA (10\u2013600 ng), gene reporter cDNA (600 ng), and empty vector pCDNA5/FRT to balance the total amount of cDNA up to 1200 ng. After 6 hr with the transfection reagent, the media was volume exchanged to serum-free DMEM supplemented with 1% P/S (~18 hr serum starvation).\n\nAfter 24 hr, the media was aspirated from the cells and each well was gently rinsed with DPBS. Cells were then mechanically detached using 275 \u03bcL DPBS and 80 \u03bcL of the resuspension was distributed in triplicate to a 96-well black/white isoplate (Perkin Elmer Life Sciences). Next, 40 \u03bcL of 3 X Firefly Assay Buffer was added to each well. The emission was then read at 535 nm after 10 min incubation using a PHERAstar FS microplate reader (BMG LABTECH, Ortenberg, Germany). Next, 60 \u03bcL 3 X Renilla Assay Buffer was added to each well. The emission was then read at 475 nm after 10 min incubation using a PHERAstar FS microplate reader. For assays using the G\u03b1q-inhibitor YM-254890, the cell media was exchanged to DMEM containing 1 \u03bcM YM-254890 approximately 6 hr after transfection.\n\n### Bioluminescence resonance energy transfer assays\n\nIn preparation for transfection, HEK\u03947 cells were detached for 2\u20133 min using 0.5% trypsin and then seeded at a density of 400,000 cells/mL in a 12-well culture plate. After 24 hr, the cells were co-transfected using Lipofectamine 2000 (2.5 \u03bcL/1 \u03bcg cDNA) and Opti-Mem with receptor cDNA (200 ng), G\u03b1 (720 ng), G\u03b21 (250 ng), G\u03b32-Venus (250 ng), membrane-anchored GRK3ct-Rluc8 (50 ng), and empty vector pCDNA5/FRT to balance the total amount of cDNA up to 1470 ng. After 24 hr transfection, cells were washed with DPBS before being re-suspended in 400 \u03bcL BRET buffer (DPBS containing 5 mM glucose). Next, 45 \u03bcL of the resuspension was distributed to six wells of a 96-well OptiPlate black-white plate (Perkin Elmer Life Sciences, Waltham, MA). Cells were then incubated for 10 mins with 10 \u03bcL coelenterazine-h (final concentration 5 \u03bcM) before ligand addition to reach a final well volume of 100 \u03bcL. Donor (Rluc8) and acceptor (mVenus) emission was read using a PHERAstar FS microplate reader at 485 nm and 525 nm, respectively. The BRET ratio was then measured by dividing the 525 emissions by the 485 emissions. The drug-induced BRET ratio was then calculated by subtracting the buffer BRET for each condition.\n\n### Surface expression measurements using SNAPfast-tag\n\nIn preparation for transfection, HEK293T cells were detached for 2\u20133 min using 0.5% trypsin and then seeded at a density of 900,000 cells/well in a six-well culture plate. After 24 hr, the cells were transfected using FuGENE transfection reagent (8 \u03bcL/2 \u03bcg cDNA) and Opti-Mem with SNAPfast-tagged receptor cDNA (2 \u03bcg). After 24 hr, cells were incubated for 30 min with 500 \u00b5L 1 \u00b5M impermeant Janelia Fluor 646 conjugated to benzyl guanine was dissolved in DMEM containing 10% FBS and 1% P/S. Cells were then washed three times with complete DMEM and once with DPBS prior to resuspension in 500 \u00b5L DPBS. Next, 100 \u03bcL of resuspension was added to three wells of a 96-well OptiPlate black plate (Perkin Elmer Life Sciences, Waltham, MA). The emission was then read using the filter 640/680 at a gain of 1000 using a PHERAstar FS microplate reader (BMG LABTECH, Ortenberg, Germany).\n\n### Mice\n\nAll procedures followed animal care and biosafety guidelines approved by Stanford University\u2019s Administrative Panel on Laboratory Animal Care (APLAC 14007) and Administrative Panel on Biosafety (APB-3669-LL120) in accordance with NIH guidelines. Both male and female mice were used, and mice were group housed on a 12 hr light/dark cycle with access to food and water ad libitum. CD-1 mice from Charles River Laboratories were used for all experiments. The total number of mice injected and screened for each experiment is as follows: Figure 1: LV-Cre, 101, LV-Cre-P2A-Lphn2-FLAG, 60; Figure 3: LV-Cre-P2A-Lphn2_F831A/M835A-FLAG, 86; Figure 4: LV-Cre-P2A-Lphn2_T829G-FLAG, 102; and Figure 5: LV-GFP-P2A-Lphn2_F831A/M835A-FLAG, 79 and LV-GFP-P2A-Lphn2_T829G-FLAG, 56.\n\n### Lentivirus generation\n\nAll lentivirus constructs expressing Cre, GFP, Lphn2, Lphn2_F831A/M835A, or Lphn2_T829G were made by inserting corresponding cDNA into the LV-UbC plasmid (Pederick et al., 2021) with a P2A sequence between the two ORFs. Cre and GFP were amplified from LV-UbC-GFP-Cre and full-length Lphn2 cDNA was isolated from a cDNA library made from mRNAs from the P8 mouse hippocampus. GFP and Lphn2 were inserted into LV-UbC with a Gibson assembly cloning kit (NEB E5510S). The Lphn2_F831A/M835A and Lphn2_T829G mutations were made using Q5 mutagenesis (NEB, E0552S). All plasmids were sequenced and verified before the virus was produced. All custom lentiviruses were generated by transfecting 36 10 cm plates (HEK293T) with four plasmids (4.1 R, RTR2, VSVg, and transfer vector containing gene of interest). Medium was collected 48 hr later and centrifuged at 8400 relative centrifugal force (rcf) for 18 hr at 4 \u00b0C. Viral pellets were dissolved with PBS and further purified with a 20% sucrose gradient centrifugation at 80,000 rcf for 2 hr.\n\n### Stereotactic injections in neonatal mice\n\nP0 mice were anesthetized using hypothermia. CA1 injections were 1.0 mm lateral, 0.85 mm anterior, and 0.8 mm ventral from lambda and subiculum injections were 1.3 mm lateral, 0.45 mm anterior, and 0.8 mm ventral from lambda. 100 nl of lentivirus was injected at 100 \u2009nl/min at the following titers: LV-Cre (7 \u00d7 1012 copies per ml), LV-Cre-P2A-Lphn2-FLAG (2.4 \u00d7 1012 copies per ml), LV-Cre-P2A-Lphn2_F831A/M831A-FLAG (2.24 \u00d7 1012 copies per ml) and LV-Cre-P2A-Lphn2_T829G-FLAG (1.2 \u00d7 1013 copies per ml), LV-GFP (6 \u00d7 1012 copies per ml), LV-GFP-P2A-Lphn2-FLAG (5 \u00d7 1012 copies per ml), LV-GFP-P2A-Lphn2_F831A/M831A-FLAG (3.6 \u00d7 1012 copies per ml), LV-GFP-P2A-Lphn2_T829G-FLAG (9 \u00d7 1012 copies per ml).\n\n### Stereotactic injection in adult mice\n\nInjections of AAV8-EF1a-DIO-ChR2-mCh (2 \u00d7 1012 copies per ml, Neuroscience Gene Vector and Virus core, Stanford University) and AAV8-CaMKIIa-ChR2-mCh (2 \u00d7 1012 copies per ml, Neuroscience Gene Vector and Virus core, Stanford University) were performed at about P42. Mice were anesthetized using isoflurane and mounted in stereotactic apparatus (Kopf). Coordinates for proximal CA1 were 1.4 mm lateral and 1.25 mm posterior from bregma, and 1.12 mm ventral from the brain surface. Virus was iontophoretically injected with current parameters 5 \u00b5A, 7 s on, 7 s off, for 2 min, using pipette tips with an outside perimeter of 10\u201315 \u03bcm. Mice were perfused about 2 weeks later and processed for immunostaining as described below.\n\n### Immunostaining\n\nMice were injected with 2.5% Avertin and were transcardially perfused with PBS followed by 4% paraformaldehyde (PFA). Brains were dissected and post-fixed in 4% PFA overnight, and cryoprotected for about 24 hr in 30% sucrose. Brains were embedded in Optimum Cutting Temperature (OCT, Tissue-Tek), frozen in dry ice-cooled isopentane bath, and stored at \u201380 \u00b0C until sectioned. 60 \u03bcm thick floating sections were collected in PBS +0.02% sodium azide and stored at 4 \u00b0C. Sections were incubated in the following solutions at room temperature unless indicated: 1 hr in 0.3% PBS/Triton X-100 and 10% normal donkey serum, two nights in the primary antibody at 4 \u00b0C in 0.3% PBS/Triton X-100 and 10% normal donkey serum, 3 \u00d7 15 min in 0.3% PBS/Triton X-100, overnight in secondary antibody +DAPI (1:10,000 of 5 mg/ml, Sigma-Aldrich) in 0.3% PBS/Triton X-100 and 10% normal donkey serum, 2 \u00d7 15 min in 0.3% PBS/Triton X-100, and 15 min in PBS. Sections were mounted with Fluoromount-G (SouthernBiotech). Primary antibodies used were rat anti-mCherry (1:1000, ThermoFisher, M11217, RRID:AB_2536611), rabbit anti-Cre (1:500, Synaptic Systems, 257 003, RRID:AB_2619968), chicken anti-GFP (1:2500, Aves Labs, GFP-1020, RRID:AB_10000240) goat anti-FLAG (1:3000, Abcam, ab95045, RRID:AB_10676074) and rabbit anti-Lphn2 (1:500, Novus Biologicals, NBP2-58704). Secondary antibodies conjugated to Alexa 488, Alexa 568, or Cy3 (Jackson ImmunoResearch) were used at 1:500 from 50% glycerol stocks.\n\n### Image and data analysis for CA1 axon tracing\n\nMice were only included if they passed the following criteria: (1) AAV injection site must be in proximal CA1 (most proximal 30%), (2) lentivirus injections sites must be in CA1 and not in the subiculum (Figures 1, 3 and 4) or lentivirus injections must be in the distal subiculum (Figure 5), (3) proximal CA1 axons must overlap with lentivirus injection site in the subiculum (Figure 5). All mice that fulfilled these criteria are reported in Figures 1 and 3\u20145 and were included in quantifications. Images of injection sites (5x magnification) and projections (10x magnification) were acquired for every other 60 \u03bcm sagittal section using a Zeiss epifluorescence scope. Due to variations in injection sites within each mouse, exposure was adjusted for each mouse to avoid saturation. Fluorescence intensity measurements on unprocessed images were taken using FIJI and data processing was performed using MATLAB.\n\nFor injection site quantification, a 30-pixel-wide segmented line was drawn from proximal CA1 to distal CA1 using the DAPI signal as a guide. For projection quantification in the subiculum, a 200-pixel-wide segmented line was drawn from the proximal subiculum to the distal subiculum through the cell body layer using only DAPI as a guide. From this point, injection site and projection images were processed the same. Segmented lines were straightened using the \u2018Straighten\u2019 function, background subtraction was performed using the \u2018Subtract\u2019 function and intensity values were measured using the \u2018Plot Profile\u2019 command (FIJI). For injections that labeled both CA2 and proximal CA1, CA2 axons were present near the distal border of CA1 and spilled into the proximal subiculum. These axons had their intensity set to zero by using area selection and the clear function (FIJI). The intensity plots were resampled into 100 equal bins using a custom MATLAB code.\n\nFor trace quantification in Figures 1, 3 and 4 the axon intensity was combined for all sections by summing all intensity values at each binned position. To calculate the fraction of axon intensity across proximal, mid, and distal subiculum the total axon intensity in bins 1\u201333, 34\u201366, and 67\u2013100 were summed, respectively. The summed value from each of these regions was then divided by the total sum of axons from bins 1\u2013100 to obtain the fraction of axons intensity within the proximal, mid, and distal subiculum. Fractions of axon intensities were compared using a two-way ANOVA with Sidak\u2019s multiple comparisons tests using Prism 9 (GraphPad). The mean position of the injection sites was calculated by generating a summed intensity trace as above and then multiplying the intensity value by the bin position, summing across the entire axis, and dividing by the sum of the intensity values. Representative images (Figures 1, 3 and 4) were taken using a Zeiss LSM 780 confocal microscope (20\u00d7magnification, tile scan, max projection).\n\nIn Figure 5, the experimental and data analysis procedures were identical to Pederick et al., 2021 and, therefore, we used LV-GFP and LV-GFP-P2A-Lphn2-FLAG from that study to compare with LV-GFP-P2A-Lphn2_F831A/M831A-FLAG and LV-GFP-P2A-Lphn2_T828G-FLAG data generated from this study.\n\nTo quantify average axon intensity in GFP+ and adjacent GFP\u2013 regions in subiculum targets (Figure 5F), we restricted the analysis to the most distal 20% of the subiculum. To determine the GFP+ region we identified the intensity-weighted central row using the summed fluorescence of each row and determined the minimal symmetric window of rows around the central row that encompassed at least 50% of the total intensity in the restricted GFP image. This defined a rectangle in the original image that we designated as the GFP+ region. We then computed the mean fluorescence intensity in this region for the mCh channel. We used the two rows above and below (lateral and medial) the designated GFP+ region as the adjacent GFP\u2013 region and computed the mean mCh fluorescence across these four rows. To determine mCh fluorescence differences in GFP+ versus GFP\u2013 regions, we divided the mCh intensity in the GFP+ region by the mCh intensity in the GFP\u2013 region for each mouse (i.e. GFP+/GFP\u2013). mCh fluorescence intensity GFP+/GFP\u2013 was compared across groups using a one-way ANOVA with Tukey\u2019s multiple comparisons tests using Prism 9 (GraphPad). Three-dimensional mountain plots were generated using the \u2018surf\u2019 function.\n\n### Quantification of overexpressed Lphn2 in CA1\n\nP0 neonatal injections into CA1 and immunostaining were performed as stated above. 16-bit images were acquired with a Zeiss Axio Imager Z2 confocal microscope. All conditions were imaged with equal settings. For mean intensity quantification of FLAG and GFP a 50- and 20-pixel wide segmented line was drawn through the molecular layer and cell body layer of CA1, respectively, using the DAPI signal as a guide. The mean intensity of FLAG and GFP was calculated using the \u2018Measure\u2019 function.\n\nFrom this point, only the section with the highest mean GFP expression was used from each animal. The FLAG mean intensity value was divided by the GFP mean intensity value to determine the FLAG/GFP mean intensity. FLAG/GFP mean intensities across conditions were compared using a one-way analysis of variance (ANOVA) with Tukey\u2019s multiple comparisons test in Prism 9 (GraphPad).\n\n### Replicates\n\nTechnical replicates are defined here as repeated measurements of the same sample while biological replicates are defined as measurements of biologically distinct samples.\n",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "1de92ee8-1377-4470-b6fb-50c3785ca658",
+      "submission_id": "81dfad77-8fb2-47e1-9333-83672138100b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kelly Monk, https://ror.org/009avj582 Vollum Institute, Oregon Health & Science University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83529.sa0](https://doi.org/10.7554/eLife.83529.sa0)\n\nThis is an intriguing study investigating the molecular mechanisms of neural circuit developmental organization. Using a defined hippocampal circuit, the authors find that ectopic expression of an adhesion G protein receptor leads to axon mistargeting. This work defines new mechanisms of axon target specificity.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kelly Monk, https://ror.org/009avj582 Vollum Institute, Oregon Health & Science University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83529.sa1](https://doi.org/10.7554/eLife.83529.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Context-dependent requirement of G protein coupling for Latrophilin-2 in target selection of hippocampal axons\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Yimin Zou (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Examine ectopic Lphn2 expression, including the F831A/M835M mutant, and its impact on endogenous Ten3 expression.\n\n2) Confirmation of Lphn2 localization in axons.\n\n3) Clarify in the text that the presented results strongly suggest, but do not necessarily prove, that Lphn2 specifically couples with G-\u03b1 12/13 signaling in CA1, as this link has only been demonstrated in heterologous cells.\n\nThe authors can also consider the remaining reviewer comments, though these were not deemed to be essential.\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 Figure 1\u2014figure supplement 1: The F831A/M835A mutant expression looks qualitatively and quantitatively different from wt Lphn2 and T829G mutant (i.e., lower expression). If this is truly a representative image, it is problematic for interpreting these experiments since this is the mutant that fails to induce axon mistargeting. Could a more representative image be found? Or can the authors explain why this is not a problem?\n\n\u2013 Figure 2B, 3B, 4A: The western blots in these figures contain many bands in addition to the expected cleaved and uncleaved Lphn2 protein. Do the authors have an explanation for this? Is this the result of Lphn2 proteolysis or aggregation? Can the western blot be cleaned up?\n\n\u2013 Figure 5: Were all of the experiments in Figure 5 done at the same time? It seems that if any significant time passed between the experiments shown in 5B/C and 5D/E, then the latter pair are uncontrolled. (See legend to Figure 5. where the authors state that data from 5 B and C are from a previous publication).\n\n\u2013 Figure 2-4. While these experiments convincingly show that Lphn2 can couple to G\u03b112/13 in heterologous cells, it is possible that they do not in neurons, or that they do in subiculum, but not (as expected) in CA1. As mentioned in the public review, the finding in this manuscript that Lphn2 signaling is context-dependent underscores the importance of this issue. While it is not reasonable to request a repeat of all the BRET experiments in neurons, much less in vivo, providing some type of evidence that Lphn2 couples to G\u03b112/13 in CA1 would strengthen this manuscript substantially. This could be done in a number of ways, including:\n\n\u2013 Showing an interaction between Lphn2 and G\u03b112/13 (testing for other G-proteins) in neurons or in hippocampus via co-immunoprecipitation.\n\n\u2013 Demonstrating an Lphn2-mediated increase in RhoA in neurons or hippocampus.\n\n\u2013 Inhibiting RhoA and demonstrating that the ability of Lphn2 to redirect axons is compromised.\n\n\u2013 Creating an Lphn2 mutant that does not interact with G\u03b112/13 and testing its ability to redirect axons.\n\n\u2013 Creating an Lphn2 chimera that interacts with a different G-protein and tests its ability to redirect axons.\n\nReviewer #2 (Recommendations for the authors):\n\nSpecific recommendations related to presentation of data:\n\n\u2013 Figure 1A \u2013 unclear what unlabeled red objects are meant to represent.\n\n\u2013 Figure 2B/C -It's not clear to the specificity of Flag detection in the shown western blots. Could benefit from providing a negative control alongside Lphn2 transfected cells.\n\n\u2013 Figure 2E \u2013 Graph is labelled \"enterokinase-induced BRET\", but enterokinase is only added to Lphn2 assay, correct? Signaling induction is relatively weak in comparison to their \"control\" Endothelin receptor, but this is activated by optimized ligand ET-1 induction. Based on this presentation, it is unclear as to the rationale for focus on Gq/G12/G13 signaling activation. Supplemental figure 2 better demonstrates G-protein selectivity, and as such would suggest remodeling main figure to include this data.\n\n\u2013 Figure 3- From the quantifications, it appears that the mutant blocks GPCR signaling, but still has an impact on the axon targeting specificity. This suggests that there are GPCR signaling independent mechanisms that are also at work? This is briefly mentioned in the text, but could use additional discussion. Additionally, representative images of subiculum targeting for all conditions are not included, and should be provided.\n\n\u2013 Figure 5 \u2013 Lack of representative images makes it difficult to assess quality and interpretability of experiment.\n\n\u2013 Supplemental Figure 2S2 \u2013 Panel B mislabeled D1R? (labelled D2R in figure legend).\n\n\u2013 Supplemental Figure 2/3/4 \u2013 Source data. Western blot lane descriptions not provided.\n\nReviewer #3 (Recommendations for the authors):\n\nI have a suggestion for the authors to consider, probably by looking at the sections they already have, to see whether the misexpression of latrophilin-2 in the proximal CA1 may potentially change the expression of teneurin-3. If so, the interpretation of the results may be different or may need to include the possibility that the mistargeting of proximal axons to the proximal subiculum may be caused by a down regulation of teneurin-3.\n",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5fe56891-312b-4644-9096-2217980f9fca",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C1",
+      "claim": "Latrophilins were originally identified as responders to \u03b1-latrotoxin, a neurotoxin from black widow spider venom that causes the profound release of neurotransmitters from nerve terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "They belong to the family of adhesion G protein-coupled receptors (aGPCRs), capable of eliciting intracellular effects through coupling with heterotrimeric G proteins (Lelianova et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Davletov et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "bf5cdb83-2d66-428a-a7ea-d51b6b41a4bd",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C2",
+      "claim": "Latrophilins belong to the family of adhesion G protein-coupled receptors (aGPCRs).",
+      "claim_type": "EXPLICIT",
+      "source": "They belong to the family of adhesion G protein-coupled receptors (aGPCRs), capable of eliciting intracellular effects through coupling with heterotrimeric G proteins (Lelianova et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lelianova et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "07a35637-50f0-4a04-99b8-9c2174d85d0b",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C3",
+      "claim": "Latrophilins are capable of eliciting intracellular effects through coupling with heterotrimeric G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "They belong to the family of adhesion G protein-coupled receptors (aGPCRs), capable of eliciting intracellular effects through coupling with heterotrimeric G proteins (Lelianova et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lelianova et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "eafb2d17-c3d4-4aec-a8ef-ea752d4d6bfb",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C4",
+      "claim": "Latrophilins interact via their N-terminal extracellular domain with neurexins.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as cell adhesion molecules, latrophilins interact via their N-terminal extracellular domain with four different families of interacting partners including neurexins (Boucard et al., 2012), teneurins (Silva et al., 2011), fibronectin leucine-rich transmembrane proteins (FLRTs) (O'Sullivan et al., 2012), and contactins (Zuko et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Boucard et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "09c58e05-9987-43c6-8c7e-50b69cc167c6",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C5",
+      "claim": "Latrophilins interact via their N-terminal extracellular domain with teneurins.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as cell adhesion molecules, latrophilins interact via their N-terminal extracellular domain with four different families of interacting partners including neurexins (Boucard et al., 2012), teneurins (Silva et al., 2011), fibronectin leucine-rich transmembrane proteins (FLRTs) (O'Sullivan et al., 2012), and contactins (Zuko et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Silva et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "09b22912-8f08-4cbe-a4f9-ef6154893324",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C6",
+      "claim": "Latrophilins interact via their N-terminal extracellular domain with fibronectin leucine-rich transmembrane proteins (FLRTs).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as cell adhesion molecules, latrophilins interact via their N-terminal extracellular domain with four different families of interacting partners including neurexins (Boucard et al., 2012), teneurins (Silva et al., 2011), fibronectin leucine-rich transmembrane proteins (FLRTs) (O'Sullivan et al., 2012), and contactins (Zuko et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to O'Sullivan et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "8a47ec5e-de5f-4764-8b8d-0eb387fee86e",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C7",
+      "claim": "Latrophilins interact via their N-terminal extracellular domain with contactins.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as cell adhesion molecules, latrophilins interact via their N-terminal extracellular domain with four different families of interacting partners including neurexins (Boucard et al., 2012), teneurins (Silva et al., 2011), fibronectin leucine-rich transmembrane proteins (FLRTs) (O'Sullivan et al., 2012), and contactins (Zuko et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zuko et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "8dc919cb-947f-42de-9fd4-e94680835f12",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C8",
+      "claim": "Latrophilins have been implicated in neuronal migration in the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "In the central nervous system, latrophilins have been implicated in neuronal migration, circuit assembly, and synapse formation (Anderson et al., 2017; Del Toro et al., 2020; Donohue et al., 2021; Pederick et al., 2021; Sando et al., 2019; Sando and S\u00fcdhof, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Anderson et al., 2017; Del Toro et al., 2020; Donohue et al., 2021; Pederick et al., 2021; Sando et al., 2019; Sando and S\u00fcdhof, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "3a6a71b9-6455-4111-b86e-640b6e9257a0",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C9",
+      "claim": "Latrophilins have been implicated in circuit assembly in the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "In the central nervous system, latrophilins have been implicated in neuronal migration, circuit assembly, and synapse formation (Anderson et al., 2017; Del Toro et al., 2020; Donohue et al., 2021; Pederick et al., 2021; Sando et al., 2019; Sando and S\u00fcdhof, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Anderson et al., 2017; Del Toro et al., 2020; Donohue et al., 2021; Pederick et al., 2021; Sando et al., 2019; Sando and S\u00fcdhof, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "053ad898-c2b3-467f-8a27-a6f6bc059abb",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C10",
+      "claim": "Latrophilins have been implicated in synapse formation in the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "In the central nervous system, latrophilins have been implicated in neuronal migration, circuit assembly, and synapse formation (Anderson et al., 2017; Del Toro et al., 2020; Donohue et al., 2021; Pederick et al., 2021; Sando et al., 2019; Sando and S\u00fcdhof, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Anderson et al., 2017; Del Toro et al., 2020; Donohue et al., 2021; Pederick et al., 2021; Sando et al., 2019; Sando and S\u00fcdhof, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "23948109-5fb6-429a-a4cc-be7a4025b346",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C11",
+      "claim": "Polymorphisms in LPHN3 are associated with an increased risk of attention-deficit/hyperactivity disorder in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, polymorphisms in LPHN3 are associated with an increased risk of attention-deficit/hyperactivity disorder, and a missense variant in the LPHN2 gene is responsible for extreme microcephaly (Arcos-Burgos et al., 2010; Domen\u00e9 et al., 2011; Vezain et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Arcos-Burgos et al., 2010; Domen\u00e9 et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "bdca11ac-7b61-4cc4-ba19-a978eb769c69",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C12",
+      "claim": "A missense variant in the LPHN2 gene is responsible for extreme microcephaly in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, polymorphisms in LPHN3 are associated with an increased risk of attention-deficit/hyperactivity disorder, and a missense variant in the LPHN2 gene is responsible for extreme microcephaly (Arcos-Burgos et al., 2010; Domen\u00e9 et al., 2011; Vezain et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Vezain et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "5fa50754-ca01-4119-a4a3-00dcfeeeff69",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C13",
+      "claim": "Lphn2 displays expression patterns inverse to teneurin-3 (Ten3) in two parallel hippocampal networks in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently showed in mice that one of the three latrophilins, Lphn2, displays expression patterns inverse to teneurin-3 (Ten3) in two parallel hippocampal networks (Pederick et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pederick et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "a4c20eb7-a2ed-4326-aa62-9906d42c7593",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C14",
+      "claim": "Hippocampal Lphn2 is preferentially expressed in the distal CA1 and the proximal subiculum.",
+      "claim_type": "EXPLICIT",
+      "source": "While hippocampal Lphn2 is preferentially expressed in the distal CA1 and the proximal subiculum, Ten3 is enriched in the proximal CA1 and the distal subiculum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pederick et al., 2021 in the preceding sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "f195c970-6d14-4d63-b086-eb2a1e3e0a39",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C15",
+      "claim": "Ten3 is enriched in the proximal CA1 and the distal subiculum.",
+      "claim_type": "EXPLICIT",
+      "source": "While hippocampal Lphn2 is preferentially expressed in the distal CA1 and the proximal subiculum, Ten3 is enriched in the proximal CA1 and the distal subiculum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pederick et al., 2021 in the preceding sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "3ed51886-3d31-496e-9ca4-80fc05b07de3",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C16",
+      "claim": "Expression patterns and reciprocal repulsions mediated by Ten3-Lphn2 interactions instruct proximal CA1 axons to target the distal subiculum.",
+      "claim_type": "EXPLICIT",
+      "source": "These expression patterns and reciprocal repulsions mediated by Ten3-Lphn2 interactions instruct proximal CA1 axons to target the distal subiculum, and more distal CA1 axons to target more proximal subiculum (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pederick et al., 2021 in the preceding context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "7b2a79c1-a659-4036-81ac-cde99f091e74",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C17",
+      "claim": "Expression patterns and reciprocal repulsions mediated by Ten3-Lphn2 interactions instruct more distal CA1 axons to target more proximal subiculum.",
+      "claim_type": "EXPLICIT",
+      "source": "These expression patterns and reciprocal repulsions mediated by Ten3-Lphn2 interactions instruct proximal CA1 axons to target the distal subiculum, and more distal CA1 axons to target more proximal subiculum (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pederick et al., 2021 in the preceding context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "70583a10-b548-492f-b4f2-a73db6f50245",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C18",
+      "claim": "Lphn2 acts as a 'receptor' in more distal CA1 axons that is repelled by Ten3 expressed from the distal subiculum.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Lphn2 acts as a 'receptor' in more distal CA1 axons that is repelled by Ten3 expressed from the distal subiculum (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pederick et al., 2021 in the preceding context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "dbea8375-a96f-470a-a23d-67b89d2e59a5",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C19",
+      "claim": "Lphn2 acts as a repulsive 'ligand' in the proximal subiculum to repel Ten3-expressing proximal CA1 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, Lphn2 acts as a repulsive 'ligand' in the proximal subiculum to repel Ten3-expressing (Ten3+) proximal CA1 axons; this action requires Lphn2's teneurin-binding domain but not its FLRT-binding activity (Figure 1C; Pederick et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pederick et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "36afab81-741d-4b89-b22e-42aec105fbb3",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C20",
+      "claim": "Lphn2's action as a repulsive ligand in the proximal subiculum requires Lphn2's teneurin-binding domain but not its FLRT-binding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, Lphn2 acts as a repulsive 'ligand' in the proximal subiculum to repel Ten3-expressing (Ten3+) proximal CA1 axons; this action requires Lphn2's teneurin-binding domain but not its FLRT-binding activity (Figure 1C; Pederick et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pederick et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "b3a14e50-6238-43c9-aaa3-99cf3aa442d8",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C21",
+      "claim": "Lphn2 is required cell autonomously as a receptor in more distal CA1 axons for their precise target selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Lphn2 is required cell autonomously as a receptor in more distal CA1 axons for their precise target selection, and non-autonomously in target neurons as a ligand for precise target selection of proximal CA1 axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pederick et al., 2021 in the preceding context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "7a9116eb-0ecc-4a12-9623-91162a0e1e79",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C22",
+      "claim": "Lphn2 is required non-autonomously in target neurons as a ligand for precise target selection of proximal CA1 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Lphn2 is required cell autonomously as a receptor in more distal CA1 axons for their precise target selection, and non-autonomously in target neurons as a ligand for precise target selection of proximal CA1 axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pederick et al., 2021 in the preceding context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "c24c6c90-a2aa-4428-a33b-45fe745ce503",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C23",
+      "claim": "Ten3 mediates homophilic attraction.",
+      "claim_type": "EXPLICIT",
+      "source": "While Ten3 additionally mediates homophilic attraction (Berns et al., 2018; Pederick et al., 2021), Lphn2 does not mediate homophilic binding in trans (Boucard et al., 2014; Pederick et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Berns et al., 2018; Pederick et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "2c52869f-6117-42f8-b270-73496d100d47",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C24",
+      "claim": "Lphn2 does not mediate homophilic binding in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "While Ten3 additionally mediates homophilic attraction (Berns et al., 2018; Pederick et al., 2021), Lphn2 does not mediate homophilic binding in trans (Boucard et al., 2014; Pederick et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Boucard et al., 2014; Pederick et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "fdfb3cc5-5cf8-410a-a66f-066064442fcd",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C25",
+      "claim": "The N-terminal extracellular domain of latrophilins comprises a rhamnose-binding lectin (RBL) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, the N-terminal extracellular domain of latrophilins comprises a rhamnose-binding lectin (RBL) domain, an olfactomedin-like (OLF) ligand-binding domain, a serine/threonine-rich region and hormone receptor motif (HRM), and a conserved GPCR autoproteolysis-inducing (GAIN) domain that encompasses the GPCR proteolysis site (GPS) (Ara\u00e7 et al., 2012; Moreno-Salinas et al., 2019; Vizurraga et al., 2020; Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ara\u00e7 et al., 2012; Moreno-Salinas et al., 2019; Vizurraga et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "d7f60e95-a894-4170-8e31-0ad9cc71c8ac",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C26",
+      "claim": "The N-terminal extracellular domain of latrophilins comprises an olfactomedin-like (OLF) ligand-binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, the N-terminal extracellular domain of latrophilins comprises a rhamnose-binding lectin (RBL) domain, an olfactomedin-like (OLF) ligand-binding domain, a serine/threonine-rich region and hormone receptor motif (HRM), and a conserved GPCR autoproteolysis-inducing (GAIN) domain that encompasses the GPCR proteolysis site (GPS) (Ara\u00e7 et al., 2012; Moreno-Salinas et al., 2019; Vizurraga et al., 2020; Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ara\u00e7 et al., 2012; Moreno-Salinas et al., 2019; Vizurraga et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "841d6db5-a0d5-48a9-aaff-7f189cd581bd",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C27",
+      "claim": "The N-terminal extracellular domain of latrophilins comprises a serine/threonine-rich region and hormone receptor motif (HRM).",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, the N-terminal extracellular domain of latrophilins comprises a rhamnose-binding lectin (RBL) domain, an olfactomedin-like (OLF) ligand-binding domain, a serine/threonine-rich region and hormone receptor motif (HRM), and a conserved GPCR autoproteolysis-inducing (GAIN) domain that encompasses the GPCR proteolysis site (GPS) (Ara\u00e7 et al., 2012; Moreno-Salinas et al., 2019; Vizurraga et al., 2020; Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ara\u00e7 et al., 2012; Moreno-Salinas et al., 2019; Vizurraga et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "f723cf74-3ecf-4c09-a27b-0428211c93a3",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C28",
+      "claim": "The N-terminal extracellular domain of latrophilins comprises a conserved GPCR autoproteolysis-inducing (GAIN) domain that encompasses the GPCR proteolysis site (GPS).",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, the N-terminal extracellular domain of latrophilins comprises a rhamnose-binding lectin (RBL) domain, an olfactomedin-like (OLF) ligand-binding domain, a serine/threonine-rich region and hormone receptor motif (HRM), and a conserved GPCR autoproteolysis-inducing (GAIN) domain that encompasses the GPCR proteolysis site (GPS) (Ara\u00e7 et al., 2012; Moreno-Salinas et al., 2019; Vizurraga et al., 2020; Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ara\u00e7 et al., 2012; Moreno-Salinas et al., 2019; Vizurraga et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "b1b3ec29-ce7b-4a0d-a3f7-4d25e7e5223d",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C29",
+      "claim": "aGPCRs undergo autoproteolytic cleavage at the HL/T consensus site within the GPS.",
+      "claim_type": "EXPLICIT",
+      "source": "aGPCRs undergo autoproteolytic cleavage at the HL/T consensus site within the GPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ara\u00e7 et al., 2012; Moreno-Salinas et al., 2019; Vizurraga et al., 2020 in the preceding sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "302d9729-4827-4c80-a793-5ab7569a31d4",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C30",
+      "claim": "Self-cleavage of aGPCRs divides the receptor into an extracellular N-terminal fragment (NTF) and a membrane-bound C-terminal fragment (CTF) that remain noncovalently associated throughout biosynthesis and membrane trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "This self-cleavage divides the receptor into an extracellular N-terminal fragment (NTF) and a membrane-bound C-terminal fragment (CTF) that remain noncovalently associated throughout biosynthesis and membrane trafficking (Vizurraga et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Vizurraga et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "0a6de2d4-87e1-4a58-b5d1-880022118cdf",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C31",
+      "claim": "The seven residues immediately C-terminal to the GPS constitute the tethered agonist peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The seven residues immediately C-terminal to the GPS constitute the tethered agonist peptide (also known as the Stachel or stalk peptide), which upon exposure binds within the transmembrane domain to activate heterotrimeric G proteins (Liebscher and Sch\u00f6neberg, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liebscher and Sch\u00f6neberg, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "29a30d8c-4b54-464a-b9c6-c560910bf440",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C32",
+      "claim": "The tethered agonist peptide upon exposure binds within the transmembrane domain to activate heterotrimeric G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The seven residues immediately C-terminal to the GPS constitute the tethered agonist peptide (also known as the Stachel or stalk peptide), which upon exposure binds within the transmembrane domain to activate heterotrimeric G proteins (Liebscher and Sch\u00f6neberg, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liebscher and Sch\u00f6neberg, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "d3978a2d-3efb-46bb-9e8f-12a97787883e",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C33",
+      "claim": "Lphn2 couples to G\u03b112/13 in heterologous cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Lphn2 couples to G\u03b112/13 in heterologous cells; this coupling is increased by constitutive exposure of the tethered agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "b1118cda-ad3e-47cf-a4f0-0dc2fa668c3e",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C34",
+      "claim": "Lphn2 coupling to G\u03b112/13 is increased by constitutive exposure of the tethered agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Lphn2 couples to G\u03b112/13 in heterologous cells; this coupling is increased by constitutive exposure of the tethered agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C and 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "13fbc74c-24dd-4ab8-ba21-35f0ba00d390",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C35",
+      "claim": "Specific mutations of Lphn2's tethered agonist region disrupt its G protein coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific mutations of Lphn2's tethered agonist region disrupt its G protein coupling and autoproteolytic cleavage, whereas mutating the autoproteolytic cleavage site alone prevents cleavage but preserves a functional tethered agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3 and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "650a277a-3fd0-441a-a01c-f2b4e2268e5a",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C36",
+      "claim": "Specific mutations of Lphn2's tethered agonist region disrupt its autoproteolytic cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific mutations of Lphn2's tethered agonist region disrupt its G protein coupling and autoproteolytic cleavage, whereas mutating the autoproteolytic cleavage site alone prevents cleavage but preserves a functional tethered agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "a0eb263a-7aa9-491e-a140-b9f706873080",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C37",
+      "claim": "Mutating the autoproteolytic cleavage site alone prevents cleavage but preserves a functional tethered agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific mutations of Lphn2's tethered agonist region disrupt its G protein coupling and autoproteolytic cleavage, whereas mutating the autoproteolytic cleavage site alone prevents cleavage but preserves a functional tethered agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "6b62110c-f3be-44b5-94b6-306d67af1083",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C38",
+      "claim": "Wild-type Lphn2 misdirects proximal CA1 axons to the proximal subiculum when misexpressed in proximal CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an in vivo misexpression assay, we demonstrate that wild-type Lphn2 misdirects proximal CA1 axons to the proximal subiculum and that Lphn2 tethered agonist activity is required for its role as a repulsive receptor in axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "754df25d-3c0e-490b-af5d-969f584da5f4",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C39",
+      "claim": "Lphn2 tethered agonist activity is required for its role as a repulsive receptor in axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an in vivo misexpression assay, we demonstrate that wild-type Lphn2 misdirects proximal CA1 axons to the proximal subiculum and that Lphn2 tethered agonist activity is required for its role as a repulsive receptor in axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3 and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "b7998c3a-69ea-4eec-add4-1b67084a9558",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C40",
+      "claim": "Neither tethered agonist activity nor autoproteolysis were necessary for Lphn2's role as a repulsive ligand in the subiculum target neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, neither tethered agonist activity nor autoproteolysis were necessary for Lphn2's role as a repulsive ligand in the subiculum target neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "6f5e4160-c0ae-4759-b40c-10ff09a89964",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C41",
+      "claim": "Tethered agonist activity is required for Lphn2-mediated neural circuit assembly in a context-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, tethered agonist activity is required for Lphn2-mediated neural circuit assembly in a context-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3, 4, and 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "344010ec-c282-4463-bc01-37397e74860c",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C42",
+      "claim": "Lphn2-CTF significantly enhanced signaling over wild-type Lphn2 for SRE gene expression at varying levels of cDNA transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Lphn2-CTF significantly enhanced signaling over wild-type Lphn2 for SRE gene expression at varying levels of cDNA transfection (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "06872739-5808-47e5-a0f0-15b1e4a96a27",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C43",
+      "claim": "Lphn2 signals through G\u03b112/13 rather than G\u03b1q.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the SRE assay reports on signaling by G\u03b112/13 as well as G\u03b1q we tested whether G\u03b112/13 or G\u03b1q was the primary contributor to this response using a selective G\u03b1q inhibitor, YM-254890 (Figure 2\u2014figure supplement 1). We did not observe a significant effect upon the addition of the inhibitor, suggesting that Lphn2 signals through G\u03b112/13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "f7ba20b4-1b6d-497a-ae28-e0cff93b6f28",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C44",
+      "claim": "When G\u03b112 or G\u03b113 was re-introduced to cells expressing the Lphn2 construct there was a significant increase in the BRET signal upon treatment with enterokinase.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, in the absence of G\u03b1 subunits no BRET signal was observed; however, when G\u03b112 or G\u03b113 was re-introduced to cells expressing the Lphn2 construct there was a significant increase in the BRET signal upon treatment with enterokinase (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "1c300a27-730d-4c69-af66-06b1ac1761a1",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C45",
+      "claim": "No increase in BRET signal was observed upon co-expression of the Lphn2 receptor with G\u03b1s, G\u03b1i1, or G\u03b1q.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was not observed upon co-expression of the receptor with G\u03b1s, G\u03b1i1, or G\u03b1q (Figure 2E and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E and Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "38557ee9-6814-4a30-81e3-5d24bf6eda8c",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C46",
+      "claim": "Lphn2 signals through the G proteins G\u03b112 and G\u03b113 in heterologous cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate that Lphn2 signals through the G proteins G\u03b112 and G\u03b113 in heterologous cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "5b705c66-799d-4915-a643-3a323832be6c",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C47",
+      "claim": "Mutating phenylalanine (F831) and methionine (M835) to alanine (F831A/M835A) would impair G protein signaling mediated by the tethered agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that mutating these residues in Lphn2, phenylalanine (F831), and methionine (M835), to alanine (F831A/M835A) would impair G protein signaling mediated by the tethered agonist (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The hypothesis is based on previous studies suggesting that the third and seventh residues of aGPCRs are required for tethered agonist-mediated G protein activation (Stoveken et al., 2015)",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "e7a3ac47-4699-45a4-87f8-9e2e84b543e1",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C48",
+      "claim": "Lphn2_F831A/M835A is largely uncleaved.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting against the C-terminal FLAG-tag confirmed expression in HEK293T cells but showed that Lphn2_F831A/M835A is largely uncleaved (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "6f7a078b-d42b-40b6-bff2-bcb339c49a1a",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C49",
+      "claim": "Mutating the third phenylalanine to an alanine disrupts autoproteolytic cleavage in Lphn1.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous work with Lphn1 showing that mutating the third phenylalanine to an alanine disrupts autoproteolytic cleavage (Ara\u00e7 et al., 2012) and shows that the double mutation (F831A/M835A) in Lphn2 also inhibits cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ara\u00e7 et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "f986470e-fc4a-4ce0-b880-ba980e9fcefb",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C50",
+      "claim": "The double mutation (F831A/M835A) in Lphn2 inhibits cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous work with Lphn1 showing that mutating the third phenylalanine to an alanine disrupts autoproteolytic cleavage (Ara\u00e7 et al., 2012) and shows that the double mutation (F831A/M835A) in Lphn2 also inhibits cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "5654ff35-08f5-4a5c-910d-1b56d390f7ec",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C51",
+      "claim": "Lphn2_F831A/M835A is expressed on the cell surface at a comparable level as Lphn2 wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "We also validated that Lphn2_F831A/M835A is expressed on the cell surface at a comparable level as Lphn2 wild-type (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "edbbbd35-4027-4bab-869d-837bc9d4043c",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C52",
+      "claim": "Both the full-length Lphn2_F831A/M835A and the Lphn2-CTF_F831A/M835A have dramatically impaired responses to SRE across varying levels of cDNA transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "As hypothesized, both the full-length and truncated Lphn2 had dramatically impaired responses to SRE across varying levels of cDNA transfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "1ba29821-4a02-44ac-9d61-e4b729822d45",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C53",
+      "claim": "Lphn2-CTF_F831A/M835A did not yield a BRET signal after the re-introduction of any of the G proteins in question (G\u03b1s, G\u03b1i1, G\u03b1q, G\u03b112, or G\u03b113).",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the wild-type receptor, Lphn2-CTF_F831A/M835A did not yield a BRET signal after the re-introduction of any of the G proteins in question (G\u03b1s, G\u03b1i1, G\u03b1q, G\u03b112, or G\u03b113) (Figure 3C, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C and Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "6edced41-6421-4307-8f27-360b6ccfdb88",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C54",
+      "claim": "The F831A/M835A mutations in Lphn2 impair tethered agonist-mediated G protein coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our findings demonstrate that the F831A/M835A mutations in Lphn2 impair tethered agonist-mediated G protein coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "5cce9bd1-b8b8-4397-b1f5-cdf0959dfb26",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C55",
+      "claim": "The majority of Lphn2_F831A/M835A-expressing proximal CA1 axons targeted the most distal third of the subiculum, like negative control Cre animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of Lphn2_F831A/M835A-expressing proximal CA1 axons targeted the most distal third of the subiculum, like negative control Cre animals (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "65d746e8-3750-4cb9-ad29-b28d5218dd74",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C56",
+      "claim": "The fraction of axon intensity in Cre-Lphn2_F831A/M835A animals was significantly lower in the proximal subiculum and significantly higher in the distal subiculum when compared to Cre-P2A-Lphn2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of axon intensity in Cre-Lphn2_F831A/M835A animals was significantly lower in the proximal subiculum and significantly higher in the distal subiculum when compared to Cre-P2A-Lphn2 animals (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "8f144e52-af3e-4e4d-8ed8-168463bf1fab",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C57",
+      "claim": "Tethered agonist activity or autoproteolysis is required for Lphn2-mediated miswiring of proximal CA1 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these findings suggest that tethered agonist activity or autoproteolysis is required for Lphn2-mediated miswiring of proximal CA1 axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "76f6887a-6d09-42e1-b363-2a98420ae2f9",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C58",
+      "claim": "Replacing threonine-838 in the tethered agonist of Lphn1 to glycine inhibited autoproteolysis while maintaining proper folding of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that replacing threonine-838 in the tethered agonist of Lphn1 or threonine-923 in the tethered agonist of Lphn3 to glycine inhibited autoproteolysis while maintaining proper folding of the receptor (Ara\u00e7 et al., 2012; Kordon et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ara\u00e7 et al., 2012; Kordon et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "5fe542b3-f4dd-444c-a61c-e112c8b5b72b",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C59",
+      "claim": "Replacing threonine-923 in the tethered agonist of Lphn3 to glycine inhibited autoproteolysis while maintaining proper folding of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that replacing threonine-838 in the tethered agonist of Lphn1 or threonine-923 in the tethered agonist of Lphn3 to glycine inhibited autoproteolysis while maintaining proper folding of the receptor (Ara\u00e7 et al., 2012; Kordon et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ara\u00e7 et al., 2012; Kordon et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "633e0bc6-6bea-45f6-824e-49e6596d4c4e",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C60",
+      "claim": "Lphn2_T829G was cleavage resistant.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we mutated the analogous threonine-829 in Lphn2 (Lphn2_T829G) and confirmed that Lphn2_T829G was cleavage resistant using immunoblotting (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "cc3affe1-7087-41fd-b779-c26800f7d7a5",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C61",
+      "claim": "Lphn2_T829G is expressed on the cell surface at a comparable level as Lphn2 wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "We also validated that Lphn2_T829G is expressed on the cell surface at a comparable level as Lphn2 wild-type (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "333c7e60-b5a4-46c4-bcb4-544bf74f38c8",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C62",
+      "claim": "Full-length Lphn2_T829G had significantly impaired SRE response compared to wild-type Lphn2.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length Lphn2_T829G had significantly impaired SRE response compared to wild-type Lphn2, consistent with diminished exposure of the tethered agonist in the absence of cleavage; however, when we tested Lphn2-CTF_T829G, which lacked the entire NTF up to the GPS cleavage site, we observed SRE levels comparable to Lphn2-CTF suggesting that the mutated tethered agonist is fully active if exposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "2855ef2c-9622-463c-89aa-8b4d400ca7ab",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C63",
+      "claim": "Lphn2-CTF_T829G, which lacked the entire NTF up to the GPS cleavage site, had SRE levels comparable to Lphn2-CTF.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length Lphn2_T829G had significantly impaired SRE response compared to wild-type Lphn2, consistent with diminished exposure of the tethered agonist in the absence of cleavage; however, when we tested Lphn2-CTF_T829G, which lacked the entire NTF up to the GPS cleavage site, we observed SRE levels comparable to Lphn2-CTF suggesting that the mutated tethered agonist is fully active if exposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "f96e93fe-c5ef-45d1-94e6-47b72373ac9a",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C64",
+      "claim": "The T829G-CTF retained BRET signaling comparable to wild-type Lphn2-CTF for G\u03b112 and G\u03b113.",
+      "claim_type": "EXPLICIT",
+      "source": "The T829G-CTF retained BRET signaling comparable to wild-type Lphn2-CTF for G\u03b112 and G\u03b113, with no discernable BRET response for G\u03b1s, G\u03b1i1, or G\u03b1q (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C and Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "245e9f42-9a1c-4c85-9bda-7ce26b180035",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C65",
+      "claim": "Lphn2_T829G is resistant to autoproteolytic cleavage but maintains a functional tethered agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data supported that Lphn2_T829G is resistant to autoproteolytic cleavage but maintains a functional tethered agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "fd9eebd6-b815-4734-b784-a7f99dceeab1",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C66",
+      "claim": "Lphn2_T829G-expressing proximal CA1 axons did not show highly enriched targeting to a specific region of the subiculum.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, Lphn2_T829G-expressing proximal CA1 axons did not show highly enriched targeting to a specific region of the subiculum, as observed for control proximal CA1 axons or Lphn2 misexpressing proximal CA1 axons, which preferentially target distal and proximal subiculum, respectively (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "2a48cc86-0b8e-42a8-a412-73feb7152d23",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C67",
+      "claim": "Compared to the control there was a significant increase in the fraction of axon intensity in the proximal subiculum in Cre-Lphn2_T829G animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, compared to the control there was a significant increase in the fraction of axon intensity in the proximal subiculum in Cre-Lphn2_T829G animals, even though this mistargeting was not as pronounced as seen with wild-type Cre-Lphn2 (Figure 3\u2014figure supplement 2.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4E and Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "e9a03a11-1ed0-4153-9089-9e0bc5e93538",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C68",
+      "claim": "Autoproteolysis is not absolutely required for Lphn2 misexpression-induced miswiring of proximal CA1 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "The intermediate gain-of-function phenotypes of misexpressing Lphn2_T829G compared to misexpressing wild-type Lphn2 or tethered agonist-deficient (and non-cleavable) Lphn2 suggest that autoproteolysis is not absolutely required for Lphn2 misexpression-induced miswiring of proximal CA1 axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "90e79ea1-17ed-4157-ba11-39d184c3b461",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C69",
+      "claim": "Misexpression of Lphn2 in distal subiculum target neurons causes proximal CA1 axons to avoid this area.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that misexpression of Lphn2 in distal subiculum target neurons causes proximal CA1 axons to avoid this area, suggesting that Lphn2 acts cell non-autonomously as a repulsive ligand in directing target selection of proximal CA1 axons (Pederick et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pederick et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "bad0cb8d-fc93-428f-8a99-f02303250f2b",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C70",
+      "claim": "When either GFP-Lphn2_F831A/M835A or GFP-Lphn2_T829G were expressed in the distal subiculum, there was a significant decrease in axon intensity in GFP positive regions compared to GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "When either GFP-Lphn2_F831A/M835A or GFP-Lphn2_T829G were expressed in the distal subiculum, we also observed a significant decrease in axon intensity in GFP positive regions compared to GFP (Figure 5D, E and F and Figure 5\u2014figure supplement 2C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D, E, F and Figure 5\u2014figure supplement 2C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "affb030d-bf83-4190-a33f-c07ff940dce0",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C71",
+      "claim": "The decrease in axon intensity in GFP positive regions for GFP-Lphn2_F831A/M835A or GFP-Lphn2_T829G was not significantly different from GFP-Lphn2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease was not significantly different from GFP-Lphn2 animals (Figure 5F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "6ca2524d-3b6c-42da-9ab7-78420df332ef",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C72",
+      "claim": "Neither tethered agonist activity nor autoproteolysis is required for Lphn2's cell-non-autonomous role as a ligand in the neural circuit assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that neither tethered agonist activity nor autoproteolysis is required for Lphn2's cell-non-autonomous role as a ligand in the neural circuit assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "72933a77-e858-4b87-9843-245712cfe25f",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C73",
+      "claim": "Lphn2 G protein signaling is required in axons but not target neurons during precise circuit assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data support that Lphn2 G-protein coupling is required in axons but not target neurons during precise circuit assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3, 4, and 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "10d90a45-81a7-4606-beef-68606bf49118",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C74",
+      "claim": "G\u03b113 binds to and activates p115RhoGEF, an exchange factor for and activator of the small GTPase RhoA.",
+      "claim_type": "EXPLICIT",
+      "source": "G\u03b112/G\u03b113 are known to regulate Rho GTPase; for example, G\u03b113 binds to and activates p115RhoGEF, an exchange factor for and activator of the small GTPase RhoA (Kozasa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kozasa et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "ebde98bd-3b43-435f-bb32-1c1eb4e72c37",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C75",
+      "claim": "RhoA activation is known to cause growth cone collapse and neuronal process retraction via its regulation of the actin-myosin contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "RhoA activation is known to cause growth cone collapse and neuronal process retraction via its regulation of the actin-myosin contractility (Luo, 2002; Spillane and Gallo, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Luo, 2002; Spillane and Gallo, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "566d4064-eb2d-451e-accc-19a71f525a15",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C76",
+      "claim": "Teneurins are known to undergo proteolytic cleavage at its extracellular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Other potential mechanisms to disassemble the extracellular binding complex include Ten3 cleavage (teneurins are known to also undergo proteolytic cleavage at its extracellular domain; Sita et al., 2019), endocytosis of the adhesion complex as in the case of ephrin/Eph receptor (Egea and Klein, 2007), or forces produced by actin-myosin contractility in axon terminals induced by repulsive signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sita et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "23e08ea0-8b2d-460a-89dc-d062665b63bc",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C77",
+      "claim": "Crystal structures of GAIN domains from Lphn1 and ADGRB3 (BAI3) revealed that in an intact aGPCR, the tethered agonist is buried as a \u03b2-strand in the GAIN domain, forming an extensive network of conserved hydrogen bonds and hydrophobic side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures of GAIN domains from Lphn1 and ADGRB3 (BAI3) (Ara\u00e7 et al., 2012), ADGRG1 (GPR56) (Salzman et al., 2016), and ADGRG6 (GPR126) (Leon et al., 2020), revealed that in an intact aGPCR, the tethered agonist is buried as a \u03b2-strand in the GAIN domain, forming an extensive network of conserved hydrogen bonds and hydrophobic side chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ara\u00e7 et al., 2012; Salzman et al., 2016; Leon et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "baa0c344-f951-4ab5-b6cb-3521506973cb",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C78",
+      "claim": "Several studies have reported that naturally cleavage-resistant aGPCRs can still function.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several studies have reported that naturally cleavage-resistant aGPCRs can still function (Liebscher et al., 2014; Wilde et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Liebscher et al., 2014; Wilde et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "46e8140d-8c57-475b-bc94-fb9e0f8241b6",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C79",
+      "claim": "The structure of autoproteolysis-deficient ADGRF1 supported the possibility of the cleavage-independent manner of receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "While most discussions from the structural aGPCR studies argued that NTF dissociation is required for tethered agonist interaction with the receptor, the structure of autoproteolysis-deficient ADGRF1 supported the possibility of the cleavage-independent manner of receptor activation (Qu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Qu et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "b33a5120-8876-4d12-aa9c-45c643e5c667",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C80",
+      "claim": "The density for the tethered agonist of ADGRF1 was well-resolved and bound in an \u03b1-helical structure within the orthosteric site of the 7TM bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "The density for the tethered agonist of ADGRF1 was well-resolved and bound in an \u03b1-helical structure within the orthosteric site of the 7TM bundle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Qu et al., 2022 in the preceding sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "6c2cedc0-0e5f-42ea-b600-a95c68c385d8",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C81",
+      "claim": "ADGRF1 was observed to be bound to a miniGi1, supporting that receptor cleavage and tethered agonist exposure are not absolutely required for G protein coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction was like that of the cleaved structures, and ADGRF1 was also observed to be bound to a miniGi1, supporting that receptor cleavage and tethered agonist exposure are not absolutely required for G protein coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Qu et al., 2022 in the preceding context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "fce6393c-c1cf-46a6-bb0c-7dd4889690fc",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C82",
+      "claim": "Molecular dynamics (MD) simulations of spontaneous tethered agonist exposure were recently reported for five intact aGPCR homologs (ADGRB3, ADGRE2, ADGRE5, ADGRG1, and Lphn1).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, molecular dynamics (MD) simulations of spontaneous tethered agonist exposure were recently reported for five intact aGPCR homologs (ADGRB3, ADGRE2, ADGRE5, ADGRG1, and Lphn1) (Beliu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Beliu et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "f72d517f-2e59-47db-b3b3-74ae6094041b",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C83",
+      "claim": "Tethered agonist exposure occurs due to the high intrinsic flexibility of the GAIN domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the authors show that tethered agonist exposure occurs due to the high intrinsic flexibility of the GAIN domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Beliu et al., 2021 in the preceding sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "6326d2a2-a23b-4cd4-b260-712c69205715",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C84",
+      "claim": "Large portions (+6 residues) of the tethered agonist can become solvent accessible in the context of the GAIN domain.",
+      "claim_type": "EXPLICIT",
+      "source": "They also used biorthogonal labeling of conserved positions within the tethered agonist to show that large portions (+6 residues) of the tethered agonist can become solvent accessible in the context of the GAIN domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Beliu et al., 2021 in the preceding context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "795c85fe-eb4e-4cf0-9920-a1e024ab1f2e",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C85",
+      "claim": "Lphn2 was amplified from cDNA isolated from the P8 mouse hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Lphn2 was amplified from cDNA isolated from the P8 mouse hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "0ac21237-844c-4668-ab13-4edad61d4a32",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C86",
+      "claim": "Sanger sequencing confirmed that exons 19 and 20 were excluded from the amplified Lphn2.",
+      "claim_type": "EXPLICIT",
+      "source": "Sanger sequencing confirmed that exons 19 and 20 were excluded from the amplified Lphn2 (Refer to NCBI Reference Sequence: NM_001081298.2 for exon annotation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "00f0b3e5-8ab0-4cea-a7f5-6dbf99a0ff9a",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C87",
+      "claim": "Full-length Lphn2 and Lphn2-CTF ran at the expected truncated position (~72 kDa) suggesting that full-length Lphn2 undergoes normal proteolytic cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the expression of these constructs in mammalian cells using immunoblotting and showed that both full-length Lphn2 and Lphn2-CTF ran at the expected truncated position (~72 kDa) suggesting that full-length Lphn2 undergoes normal proteolytic cleavage (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "22906276-31c0-47d6-ad1e-22c3872a3fc7",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C88",
+      "claim": "Ectopically expressing wild-type Lphn2 in proximal CA1 axons causes their mistargeting to the proximal subiculum.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, when Lphn2 was misexpressed in proximal CA1 (Cre-Lphn2), Cre+ proximal CA1 axons targeted the most proximal parts of the subiculum (Figure 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "f85bf79f-206d-41fc-9653-6f8f96dae059",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C89",
+      "claim": "Proximal CA1 axons misexpressing Lphn2 are located significantly more in the proximal third of the subiculum and significantly less in the distal third of the subiculum when compared to control axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Proximal CA1 axons misexpressing Lphn2 are located significantly more in the proximal third of the subiculum and significantly less in the distal third of the subiculum when compared to control axons (Figure 1H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "7e8849ae-174a-4e32-ac45-507c317a9b06",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C90",
+      "claim": "The phenotype observed when overexpressing Lphn2 in pCA1 axons is more severe than that observed when Ten3 is deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the phenotype observed when overexpressing Lphn2 in pCA1 axons is more severe than that observed when Ten3 is deleted (Berns et al., 2018), suggesting that mistargeting is not caused by disruption of Ten3 expression alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Berns et al., 2018 and experimental data shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "b728bb23-c0c3-4512-a02a-45b99ab7486f",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C91",
+      "claim": "Lphn3 couples principally to G\u03b112/13, and also more weakly to G\u03b1q.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently showed that Lphn3, another member of the latrophilin family of aGPCRs, couples principally to G\u03b112/13, and also more weakly to G\u03b1q, using a combination of gene expression assays and an activation strategy that permitted acute exposure of the tethered agonist in a live-cell system (Mathiasen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mathiasen et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "03dbf242-9210-4174-8372-fb2bcb007a38",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C92",
+      "claim": "Lphn2_F831A/M835A was ectopically expressed at levels similar to that of wild-type Lphn2 and was detected in CA1 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Lphn2_F831A/M835A was ectopically expressed at levels similar to that of wild-type Lphn2 and was detected in CA1 axons (Figure 1\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "fb96b5c2-3a64-47c9-9d1b-080d3def0716",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "claim_id": "C93",
+      "claim": "Lphn2_T829G was ectopically expressed at levels similar to wild-type Lphn2 and was detected in CA1 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Lphn2_T829G was ectopically expressed at levels similar to wild-type Lphn2 and was detected in CA1 axons (Figure 1\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "28e61ef8-4701-4928-8eb3-02513b806f36",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on latrophilins (Lphn1-3) as adhesion GPCRs that respond to \u03b1-latrotoxin, interact with multiple protein families, and are implicated in neuronal migration, circuit assembly, synapse formation, and human neurological disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 are all supported by citations to prior literature and represent established background knowledge. These claims appropriately contextualize the current study within the existing literature on latrophilins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "71daf979-ae19-46ff-b367-78e07a4b1312",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript describes prior work (Pederick et al., 2021) showing that Lphn2 and Ten3 display inverse expression patterns in hippocampal CA1-subiculum networks and mediate reciprocal repulsion to guide axon targeting, with Lphn2 acting both as a receptor in distal CA1 axons and as a ligand in proximal subiculum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C24 are all supported by citations to Pederick et al., 2021 and other prior work. These claims establish the foundation for the current study's investigation of Lphn2 signaling mechanisms. The claims accurately represent prior findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "fcdcaeed-1ccc-4fc2-977d-887262293df3",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript describes the structural organization of latrophilins, including the N-terminal extracellular domain with RBL, OLF, HRM, and GAIN domains, and the mechanism of autoproteolytic cleavage at the GPS site that generates NTF and CTF fragments, with the tethered agonist activating G proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 are supported by multiple citations to structural and mechanistic studies of aGPCRs. These claims provide essential background on aGPCR structure and function that is necessary for understanding the experimental design and interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "6e22f859-2c93-4daf-a7d0-559409ff8011",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Lphn2 couples to G\u03b112/13 in heterologous cells, and this coupling is increased by constitutive exposure of the tethered agonist, as demonstrated by SRE reporter assays and BRET assays with selective G protein reconstitution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C46 are supported by experimental data in Figure 2, including SRE assays showing enhanced signaling with Lphn2-CTF (C42), pharmacological inhibition ruling out G\u03b1q (C43), and BRET assays demonstrating specific coupling to G\u03b112/13 but not other G proteins (C44-C46). The experimental design is appropriate with proper controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "6638ddd0-4259-494e-b149-7ebed4d89e63",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The F831A/M835A mutations in Lphn2's tethered agonist region disrupt both G protein coupling and autoproteolytic cleavage, as shown by impaired SRE responses and loss of BRET signaling, while maintaining normal cell surface expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C54 are supported by experimental data in Figure 3, including immunoblots showing lack of cleavage (C48, C50), SRE assays showing impaired signaling (C52), BRET assays showing loss of G protein coupling (C53), and surface expression assays (C51). The data consistently support that F831A/M835A disrupts both cleavage and signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "457949b1-4696-41ca-a946-b53c626c0a1b",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The T829G mutation prevents autoproteolytic cleavage but preserves a functional tethered agonist, as demonstrated by resistance to cleavage, impaired SRE response in full-length but not CTF constructs, and retained BRET signaling for G\u03b112/13.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C58-C65 are supported by experimental data in Figure 4, including immunoblots confirming cleavage resistance (C60), SRE assays showing differential effects on full-length vs CTF (C62-C63), and BRET assays demonstrating retained G protein coupling (C64). The design successfully separates cleavage from tethered agonist function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "f3bf1b8f-b477-40d2-acfc-cb9ab74d8ad8",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Misexpression of wild-type Lphn2 in proximal CA1 neurons causes their axons to mistarget to the proximal subiculum, establishing a gain-of-function assay to test Lphn2 function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C88-C90 are supported by experimental data in Figure 1, showing that Cre-Lphn2 animals have significantly increased axon intensity in proximal subiculum compared to controls (C89). The phenotype is more severe than Ten3 deletion (C90), supporting that it reflects Lphn2 gain-of-function rather than disruption of Ten3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "752531df-64f0-4d60-8f70-b7141fa12719",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Tethered agonist activity or autoproteolysis is required for Lphn2-mediated miswiring of proximal CA1 axons, as Lphn2_F831A/M835A fails to cause mistargeting when misexpressed in proximal CA1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C55-C57, C92 are supported by experimental data in Figure 3D-E showing that Lphn2_F831A/M835A-expressing axons target similarly to controls rather than to proximal subiculum like wild-type Lphn2. Expression levels were confirmed to be similar (C92). This demonstrates requirement for tethered agonist activity in the receptor role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "6ac23c3c-f513-4ba8-8a50-d1e1ebfdabf6",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Autoproteolysis is not absolutely required for Lphn2 misexpression-induced miswiring, as Lphn2_T829G shows intermediate mistargeting phenotypes with significant but less pronounced effects than wild-type Lphn2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68, C93 are supported by experimental data in Figure 4D-E showing that Lphn2_T829G causes significant increase in proximal subiculum targeting compared to control, but less than wild-type Lphn2. Expression was confirmed (C93). The intermediate phenotype is consistent with preserved tethered agonist function but reduced exposure due to lack of cleavage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "8f9fb960-ba41-4231-8480-9598323bbf77",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Neither tethered agonist activity nor autoproteolysis is required for Lphn2's cell-non-autonomous role as a repulsive ligand in subiculum target neurons, as both mutants (F831A/M835A and T829G) retain the ability to repel proximal CA1 axons when misexpressed in distal subiculum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C69-C72 are supported by experimental data in Figure 5 showing that GFP-Lphn2_F831A/M835A and GFP-Lphn2_T829G both cause significant decreases in axon intensity in GFP+ regions, not significantly different from wild-type GFP-Lphn2 (C71). This demonstrates that G protein signaling is dispensable for the ligand role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "9039a678-521b-4ca1-b594-221907e45ce9",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Tethered agonist activity is required for Lphn2-mediated neural circuit assembly in a context-dependent manner, being necessary when Lphn2 acts as a receptor in axons but not when it acts as a ligand in target neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C73 represent the main conclusion integrating results from Figures 3-5. The conclusion is well-supported by the differential requirements for tethered agonist activity in the receptor vs ligand contexts. The logic is sound and the data are consistent across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "728dfccc-bc83-408e-9557-34a9f00bcdee",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript discusses potential mechanisms by which Lphn2 signaling could mediate axon repulsion, including G\u03b112/13 activation of RhoGEF-RhoA pathways leading to growth cone collapse, and alternative mechanisms for disassembling the extracellular binding complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 are supported by citations to prior literature and represent reasonable mechanistic speculation based on known signaling pathways. These claims appropriately discuss potential mechanisms without overstating the evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "53dd1272-c611-481b-abbc-4048f7f608ea",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript discusses structural and computational studies showing that the tethered agonist can be buried in the GAIN domain but may become exposed through intrinsic flexibility, and that some aGPCRs can function without cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C84 are all supported by citations to structural biology and molecular dynamics studies. These claims provide important context for interpreting the T829G results and the possibility of cleavage-independent activation. The discussion appropriately integrates structural insights with functional data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "b73eff8c-49c0-4e7b-af67-c3b5b541425c",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Lphn2 construct used in this study was amplified from P8 mouse hippocampus cDNA and lacks exons 19 and 20, and full-length Lphn2 undergoes normal proteolytic cleavage as shown by immunoblotting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 are supported by methods descriptions and experimental data in Figure 2B. The characterization of the specific Lphn2 isoform used is important for interpretation, as alternative splicing can affect G protein coupling specificity as noted in the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    },
+    {
+      "id": "96b419ed-7a51-4e7c-99dd-6abe7c13ed7d",
+      "content_id": "270d09e3-399d-4b73-9d9e-7f0959404b5c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work showed that Lphn3 couples principally to G\u03b112/13 and more weakly to G\u03b1q.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 is supported by citation to Mathiasen et al., 2020 and provides relevant context for the experimental approach used to characterize Lphn2 G protein coupling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:51:50.607997Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5fe56891-312b-4644-9096-2217980f9fca",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "bf5cdb83-2d66-428a-a7ea-d51b6b41a4bd",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "07a35637-50f0-4a04-99b8-9c2174d85d0b",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "eafb2d17-c3d4-4aec-a8ef-ea752d4d6bfb",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "09c58e05-9987-43c6-8c7e-50b69cc167c6",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "09b22912-8f08-4cbe-a4f9-ef6154893324",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "8a47ec5e-de5f-4764-8b8d-0eb387fee86e",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "8dc919cb-947f-42de-9fd4-e94680835f12",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "3a6a71b9-6455-4111-b86e-640b6e9257a0",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "053ad898-c2b3-467f-8a27-a6f6bc059abb",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "23948109-5fb6-429a-a4cc-be7a4025b346",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "bdca11ac-7b61-4cc4-ba19-a978eb769c69",
+      "result_id": "28e61ef8-4701-4928-8eb3-02513b806f36"
+    },
+    {
+      "claim_id": "5fa50754-ca01-4119-a4a3-00dcfeeeff69",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "a4c20eb7-a2ed-4326-aa62-9906d42c7593",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "f195c970-6d14-4d63-b086-eb2a1e3e0a39",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "3ed51886-3d31-496e-9ca4-80fc05b07de3",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "7b2a79c1-a659-4036-81ac-cde99f091e74",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "70583a10-b548-492f-b4f2-a73db6f50245",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "dbea8375-a96f-470a-a23d-67b89d2e59a5",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "36afab81-741d-4b89-b22e-42aec105fbb3",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "b3a14e50-6238-43c9-aaa3-99cf3aa442d8",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "7a9116eb-0ecc-4a12-9623-91162a0e1e79",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "c24c6c90-a2aa-4428-a33b-45fe745ce503",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "2c52869f-6117-42f8-b270-73496d100d47",
+      "result_id": "71daf979-ae19-46ff-b367-78e07a4b1312"
+    },
+    {
+      "claim_id": "fdfb3cc5-5cf8-410a-a66f-066064442fcd",
+      "result_id": "fcdcaeed-1ccc-4fc2-977d-887262293df3"
+    },
+    {
+      "claim_id": "d7f60e95-a894-4170-8e31-0ad9cc71c8ac",
+      "result_id": "fcdcaeed-1ccc-4fc2-977d-887262293df3"
+    },
+    {
+      "claim_id": "841d6db5-a0d5-48a9-aaff-7f189cd581bd",
+      "result_id": "fcdcaeed-1ccc-4fc2-977d-887262293df3"
+    },
+    {
+      "claim_id": "f723cf74-3ecf-4c09-a27b-0428211c93a3",
+      "result_id": "fcdcaeed-1ccc-4fc2-977d-887262293df3"
+    },
+    {
+      "claim_id": "b1b3ec29-ce7b-4a0d-a3f7-4d25e7e5223d",
+      "result_id": "fcdcaeed-1ccc-4fc2-977d-887262293df3"
+    },
+    {
+      "claim_id": "302d9729-4827-4c80-a793-5ab7569a31d4",
+      "result_id": "fcdcaeed-1ccc-4fc2-977d-887262293df3"
+    },
+    {
+      "claim_id": "0a6de2d4-87e1-4a58-b5d1-880022118cdf",
+      "result_id": "fcdcaeed-1ccc-4fc2-977d-887262293df3"
+    },
+    {
+      "claim_id": "29a30d8c-4b54-464a-b9c6-c560910bf440",
+      "result_id": "fcdcaeed-1ccc-4fc2-977d-887262293df3"
+    },
+    {
+      "claim_id": "d3978a2d-3efb-46bb-9e8f-12a97787883e",
+      "result_id": "6e22f859-2c93-4daf-a7d0-559409ff8011"
+    },
+    {
+      "claim_id": "b1118cda-ad3e-47cf-a4f0-0dc2fa668c3e",
+      "result_id": "6e22f859-2c93-4daf-a7d0-559409ff8011"
+    },
+    {
+      "claim_id": "344010ec-c282-4463-bc01-37397e74860c",
+      "result_id": "6e22f859-2c93-4daf-a7d0-559409ff8011"
+    },
+    {
+      "claim_id": "06872739-5808-47e5-a0f0-15b1e4a96a27",
+      "result_id": "6e22f859-2c93-4daf-a7d0-559409ff8011"
+    },
+    {
+      "claim_id": "f7ba20b4-1b6d-497a-ae28-e0cff93b6f28",
+      "result_id": "6e22f859-2c93-4daf-a7d0-559409ff8011"
+    },
+    {
+      "claim_id": "1c300a27-730d-4c69-af66-06b1ac1761a1",
+      "result_id": "6e22f859-2c93-4daf-a7d0-559409ff8011"
+    },
+    {
+      "claim_id": "38557ee9-6814-4a30-81e3-5d24bf6eda8c",
+      "result_id": "6e22f859-2c93-4daf-a7d0-559409ff8011"
+    },
+    {
+      "claim_id": "13fbc74c-24dd-4ab8-ba21-35f0ba00d390",
+      "result_id": "6638ddd0-4259-494e-b149-7ebed4d89e63"
+    },
+    {
+      "claim_id": "650a277a-3fd0-441a-a01c-f2b4e2268e5a",
+      "result_id": "6638ddd0-4259-494e-b149-7ebed4d89e63"
+    },
+    {
+      "claim_id": "5b705c66-799d-4915-a643-3a323832be6c",
+      "result_id": "6638ddd0-4259-494e-b149-7ebed4d89e63"
+    },
+    {
+      "claim_id": "e7a3ac47-4699-45a4-87f8-9e2e84b543e1",
+      "result_id": "6638ddd0-4259-494e-b149-7ebed4d89e63"
+    },
+    {
+      "claim_id": "6f7a078b-d42b-40b6-bff2-bcb339c49a1a",
+      "result_id": "6638ddd0-4259-494e-b149-7ebed4d89e63"
+    },
+    {
+      "claim_id": "f986470e-fc4a-4ce0-b880-ba980e9fcefb",
+      "result_id": "6638ddd0-4259-494e-b149-7ebed4d89e63"
+    },
+    {
+      "claim_id": "5654ff35-08f5-4a5c-910d-1b56d390f7ec",
+      "result_id": "6638ddd0-4259-494e-b149-7ebed4d89e63"
+    },
+    {
+      "claim_id": "edbbbd35-4027-4bab-869d-837bc9d4043c",
+      "result_id": "6638ddd0-4259-494e-b149-7ebed4d89e63"
+    },
+    {
+      "claim_id": "1ba29821-4a02-44ac-9d61-e4b729822d45",
+      "result_id": "6638ddd0-4259-494e-b149-7ebed4d89e63"
+    },
+    {
+      "claim_id": "6edced41-6421-4307-8f27-360b6ccfdb88",
+      "result_id": "6638ddd0-4259-494e-b149-7ebed4d89e63"
+    },
+    {
+      "claim_id": "a0eb263a-7aa9-491e-a140-b9f706873080",
+      "result_id": "457949b1-4696-41ca-a946-b53c626c0a1b"
+    },
+    {
+      "claim_id": "76f6887a-6d09-42e1-b363-2a98420ae2f9",
+      "result_id": "457949b1-4696-41ca-a946-b53c626c0a1b"
+    },
+    {
+      "claim_id": "5fe542b3-f4dd-444c-a61c-e112c8b5b72b",
+      "result_id": "457949b1-4696-41ca-a946-b53c626c0a1b"
+    },
+    {
+      "claim_id": "633e0bc6-6bea-45f6-824e-49e6596d4c4e",
+      "result_id": "457949b1-4696-41ca-a946-b53c626c0a1b"
+    },
+    {
+      "claim_id": "cc3affe1-7087-41fd-b779-c26800f7d7a5",
+      "result_id": "457949b1-4696-41ca-a946-b53c626c0a1b"
+    },
+    {
+      "claim_id": "333c7e60-b5a4-46c4-bcb4-544bf74f38c8",
+      "result_id": "457949b1-4696-41ca-a946-b53c626c0a1b"
+    },
+    {
+      "claim_id": "2855ef2c-9622-463c-89aa-8b4d400ca7ab",
+      "result_id": "457949b1-4696-41ca-a946-b53c626c0a1b"
+    },
+    {
+      "claim_id": "f96e93fe-c5ef-45d1-94e6-47b72373ac9a",
+      "result_id": "457949b1-4696-41ca-a946-b53c626c0a1b"
+    },
+    {
+      "claim_id": "245e9f42-9a1c-4c85-9bda-7ce26b180035",
+      "result_id": "457949b1-4696-41ca-a946-b53c626c0a1b"
+    },
+    {
+      "claim_id": "6b62110c-f3be-44b5-94b6-306d67af1083",
+      "result_id": "f3bf1b8f-b477-40d2-acfc-cb9ab74d8ad8"
+    },
+    {
+      "claim_id": "22906276-31c0-47d6-ad1e-22c3872a3fc7",
+      "result_id": "f3bf1b8f-b477-40d2-acfc-cb9ab74d8ad8"
+    },
+    {
+      "claim_id": "f85bf79f-206d-41fc-9653-6f8f96dae059",
+      "result_id": "f3bf1b8f-b477-40d2-acfc-cb9ab74d8ad8"
+    },
+    {
+      "claim_id": "7e8849ae-174a-4e32-ac45-507c317a9b06",
+      "result_id": "f3bf1b8f-b477-40d2-acfc-cb9ab74d8ad8"
+    },
+    {
+      "claim_id": "754df25d-3c0e-490b-af5d-969f584da5f4",
+      "result_id": "752531df-64f0-4d60-8f70-b7141fa12719"
+    },
+    {
+      "claim_id": "5cce9bd1-b8b8-4397-b1f5-cdf0959dfb26",
+      "result_id": "752531df-64f0-4d60-8f70-b7141fa12719"
+    },
+    {
+      "claim_id": "65d746e8-3750-4cb9-ad29-b28d5218dd74",
+      "result_id": "752531df-64f0-4d60-8f70-b7141fa12719"
+    },
+    {
+      "claim_id": "8f144e52-af3e-4e4d-8ed8-168463bf1fab",
+      "result_id": "752531df-64f0-4d60-8f70-b7141fa12719"
+    },
+    {
+      "claim_id": "03dbf242-9210-4174-8372-fb2bcb007a38",
+      "result_id": "752531df-64f0-4d60-8f70-b7141fa12719"
+    },
+    {
+      "claim_id": "fd9eebd6-b815-4734-b784-a7f99dceeab1",
+      "result_id": "6ac23c3c-f513-4ba8-8a50-d1e1ebfdabf6"
+    },
+    {
+      "claim_id": "2a48cc86-0b8e-42a8-a412-73feb7152d23",
+      "result_id": "6ac23c3c-f513-4ba8-8a50-d1e1ebfdabf6"
+    },
+    {
+      "claim_id": "e9a03a11-1ed0-4153-9089-9e0bc5e93538",
+      "result_id": "6ac23c3c-f513-4ba8-8a50-d1e1ebfdabf6"
+    },
+    {
+      "claim_id": "fb96b5c2-3a64-47c9-9d1b-080d3def0716",
+      "result_id": "6ac23c3c-f513-4ba8-8a50-d1e1ebfdabf6"
+    },
+    {
+      "claim_id": "b7998c3a-69ea-4eec-add4-1b67084a9558",
+      "result_id": "8f9fb960-ba41-4231-8480-9598323bbf77"
+    },
+    {
+      "claim_id": "90e79ea1-17ed-4157-ba11-39d184c3b461",
+      "result_id": "8f9fb960-ba41-4231-8480-9598323bbf77"
+    },
+    {
+      "claim_id": "bad0cb8d-fc93-428f-8a99-f02303250f2b",
+      "result_id": "8f9fb960-ba41-4231-8480-9598323bbf77"
+    },
+    {
+      "claim_id": "affb030d-bf83-4190-a33f-c07ff940dce0",
+      "result_id": "8f9fb960-ba41-4231-8480-9598323bbf77"
+    },
+    {
+      "claim_id": "6ca2524d-3b6c-42da-9ab7-78420df332ef",
+      "result_id": "8f9fb960-ba41-4231-8480-9598323bbf77"
+    },
+    {
+      "claim_id": "6f5e4160-c0ae-4759-b40c-10ff09a89964",
+      "result_id": "9039a678-521b-4ca1-b594-221907e45ce9"
+    },
+    {
+      "claim_id": "72933a77-e858-4b87-9843-245712cfe25f",
+      "result_id": "9039a678-521b-4ca1-b594-221907e45ce9"
+    },
+    {
+      "claim_id": "10d90a45-81a7-4606-beef-68606bf49118",
+      "result_id": "728dfccc-bc83-408e-9557-34a9f00bcdee"
+    },
+    {
+      "claim_id": "ebde98bd-3b43-435f-bb32-1c1eb4e72c37",
+      "result_id": "728dfccc-bc83-408e-9557-34a9f00bcdee"
+    },
+    {
+      "claim_id": "566d4064-eb2d-451e-accc-19a71f525a15",
+      "result_id": "728dfccc-bc83-408e-9557-34a9f00bcdee"
+    },
+    {
+      "claim_id": "23e08ea0-8b2d-460a-89dc-d062665b63bc",
+      "result_id": "53dd1272-c611-481b-abbc-4048f7f608ea"
+    },
+    {
+      "claim_id": "baa0c344-f951-4ab5-b6cb-3521506973cb",
+      "result_id": "53dd1272-c611-481b-abbc-4048f7f608ea"
+    },
+    {
+      "claim_id": "46e8140d-8c57-475b-bc94-fb9e0f8241b6",
+      "result_id": "53dd1272-c611-481b-abbc-4048f7f608ea"
+    },
+    {
+      "claim_id": "b33a5120-8876-4d12-aa9c-45c643e5c667",
+      "result_id": "53dd1272-c611-481b-abbc-4048f7f608ea"
+    },
+    {
+      "claim_id": "6c2cedc0-0e5f-42ea-b600-a95c68c385d8",
+      "result_id": "53dd1272-c611-481b-abbc-4048f7f608ea"
+    },
+    {
+      "claim_id": "fce6393c-c1cf-46a6-bb0c-7dd4889690fc",
+      "result_id": "53dd1272-c611-481b-abbc-4048f7f608ea"
+    },
+    {
+      "claim_id": "f72d517f-2e59-47db-b3b3-74ae6094041b",
+      "result_id": "53dd1272-c611-481b-abbc-4048f7f608ea"
+    },
+    {
+      "claim_id": "6326d2a2-a23b-4cd4-b260-712c69205715",
+      "result_id": "53dd1272-c611-481b-abbc-4048f7f608ea"
+    },
+    {
+      "claim_id": "795c85fe-eb4e-4cf0-9920-a1e024ab1f2e",
+      "result_id": "b73eff8c-49c0-4e7b-af67-c3b5b541425c"
+    },
+    {
+      "claim_id": "0ac21237-844c-4668-ab13-4edad61d4a32",
+      "result_id": "b73eff8c-49c0-4e7b-af67-c3b5b541425c"
+    },
+    {
+      "claim_id": "00f0b3e5-8ab0-4cea-a7f5-6dbf99a0ff9a",
+      "result_id": "b73eff8c-49c0-4e7b-af67-c3b5b541425c"
+    },
+    {
+      "claim_id": "b728bb23-c0c3-4512-a02a-45b99ab7486f",
+      "result_id": "96b419ed-7a51-4e7c-99dd-6abe7c13ed7d"
+    }
+  ],
+  "comparisons": []
+}

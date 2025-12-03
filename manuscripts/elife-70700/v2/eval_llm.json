@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The manuscript establishes the clinical context for CRPC research, stating that prostate cancer is a leading cause of cancer death, that advanced disease progresses to castration-resistant prostate cancer (CRPC) despite initial response to androgen deprivation therapy, and that second-generation antiandrogens (SGAs) face resistance through multiple mechanisms including AR mutations, amplification, splice variants, and de novo androgen synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are all supported by appropriate citations to established literature (Siegel et al., 2022; Sung et al., 2021; Harris et al., 2009; Desai et al., 2021; Dai et al., 2017; Sternberg et al., 2020; Armstrong et al., 2019; Smith et al., 2021; Smith et al., 2022; Ryan et al., 2015; de Bono et al., 2011; Buttigliero et al., 2015; Robinson et al., 2015; Karantanos et al., 2015). These claims provide standard background knowledge that is well-established in the field and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The authors screened approximately 7.5 million compounds using a pharmacophore model, identified 47,202 compounds matching the model, selected 80 hits for bioactivity evaluation, and identified 19 compounds with >25% AR transcription inhibition activity, with compound Z15 showing the most potent AR inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 describe a rational drug discovery workflow with clear numerical outcomes at each stage. The screening funnel (7.5M \u2192 47,202 \u2192 80 \u2192 19 \u2192 Z15) is logical and well-documented with reference to supplementary figures. The identification of Z15 as the lead compound is supported by experimental data (Figure 1\u2014figure supplement 2A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Z15 is characterized as a highly selective AR inhibitor that inhibits DHT-induced AR transcriptional activity in a dose-dependent manner across multiple cell lines (PC-3, LNCaP, VCaP, 22Rv1), shows minimal GR inhibition, and demonstrates selectivity with IC50 of 0.41 \u03bcM for AR versus >20 \u03bcM for GR and ER, and 9.29 \u03bcM for PR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 are supported by dose-response experiments across multiple cell lines with appropriate controls (ENZa, mifepristone). The selectivity profile is quantified with IC50 values showing >50-fold selectivity for AR over GR/ER and >20-fold over PR. The data are presented with statistical significance markers and referenced figures (Figure 1B-G, Figure 1\u2014figure supplement 4A-D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Z15 efficiently inhibits DHT-induced transcriptional activities of AR mutants T877A (flutamide-resistant) and F876L (ENZa- and apalutamide-resistant), which are key causes of antiandrogen resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by dual-luciferase reporter assays (Figure 1H-I). The clinical relevance of these mutations is established knowledge (C20, C21), and the experimental demonstration that Z15 inhibits both mutants (C22) is clearly shown. This addresses a key resistance mechanism and strengthens the therapeutic potential of Z15.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Z15 inhibits AR downstream target genes at both mRNA and protein levels, including PSA, PMEPA1, and TMPRSS2, in multiple cell lines (LNCaP, 22Rv1, VCaP). Notably, Z15 also downregulates AR protein levels, which differs from the effect of ENZa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by RNA-sequencing (C23, Figure 2A), qRT-PCR (C24-C25, Figure 2B-C), and Western blot analyses (C26-C28, Figure 2D-F). The consistency between RNA-seq and qRT-PCR strengthens the findings. The observation that Z15 degrades AR protein while ENZa does not (C27) is a key distinguishing feature supported by Western blot data (Figure 2\u2014figure supplement 1A-B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Z15 degrades AR and ARV7 with DC50 values of 1.05 \u03bcM (LNCaP) and 1.16 \u03bcM/2.24 \u03bcM (22Rv1 for AR/ARV7). Proteomics analysis shows Z15 downregulates 69 proteins including AR, KLK3, and TMPRSS2, with no effect on GR, HSP90, or CDK7, indicating Z15 is a specific AR pathway inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by Western blot dose-response experiments (Figure 2G-H) and 4D-label free proteomics (C31-C32, Figure 2\u2014figure supplement 2). The specificity is demonstrated by showing no effect on related proteins GR, HSP90, and CDK7 (C33, Figure 2\u2014figure supplement 3). The proteomics data provide unbiased confirmation of AR pathway specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Z15 blocks DHT-induced AR nuclear translocation, as demonstrated by immunofluorescence showing that both ENZa and Z15 prevent the nuclear import of AR that occurs with DHT treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by immunofluorescence microscopy (Figure 3A-B) showing clear differences in AR localization between DHT-treated cells and those co-treated with Z15 or ENZa. The quantitative analysis (Figure 3B) provides statistical support. This mechanism is consistent with AR antagonist activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Z15 directly binds to AR LBD with an IC50 of 63.3 nM (comparable to ENZa at 121.2 nM) as demonstrated by competitive binding assay, fluorescence polarization, and biolayer interferometry, indicating Z15 antagonizes AR by directly targeting the LBD region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by multiple orthogonal binding assays: competitive radioligand binding (Figure 4A), fluorescence polarization (Figure 4\u2014figure supplement 1), and biolayer interferometry (Figure 4B, Figure 4\u2014figure supplement 2A). The use of R1881 as a positive control (C38) validates the assay system. The convergence of multiple binding assays strongly supports direct AR LBD binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Z15 directly binds to AR AF1 with a KD of 0.93 \u03bcM (by SPR) and comparable affinity to UT-34 (by BLI), while ENZa shows no AF1 binding. This AF1 binding explains Z15's ability to inhibit ARV7, which ARV-110 and UT-34 cannot degrade despite their respective binding to AR LBD or AF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by surface plasmon resonance (C45, Figure 4C) and biolayer interferometry (C46, Figure 4\u2014figure supplement 2B-C). The negative controls are critical: ARV-110 cannot degrade ARV7 (C44, Figure 4\u2014figure supplement 3A-C), UT-34 cannot degrade ARV7 (C47, Figure 4\u2014figure supplement 3D-F), and ENZa does not bind AF1 (C48, Figure 4\u2014figure supplement 2D). This suggests dual binding (LBD + AF1) is necessary for ARV7 degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Z15 reduces AR protein levels in a dose-dependent manner without affecting AR mRNA levels in LNCaP, 22Rv1, and VCaP cells, and accelerates AR degradation in cycloheximide chase experiments, confirming Z15 is an AR degrader.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by Western blot and qRT-PCR showing protein reduction without mRNA changes (Figure 5A-C, Figure 5\u2014figure supplement 1A-D), and cycloheximide chase experiments demonstrating accelerated protein turnover (C52, Figure 5D, Figure 5\u2014figure supplement 1E). The dissociation between protein and mRNA levels is the hallmark of a protein degrader rather than a transcriptional inhibitor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Z15 degrades AR through the ubiquitin-proteasome pathway, as demonstrated by rescue of AR protein levels with proteasome inhibitor MG132 in LNCaP and VCaP cells, and increased AR ubiquitination upon Z15 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by MG132 rescue experiments (Figure 5E, Figure 5\u2014figure supplement 1F-G) and immunoprecipitation showing increased AR ubiquitination (C56, Figure 5F). The MG132 rescue is the gold standard for demonstrating proteasome-dependent degradation, and the ubiquitination data provide direct mechanistic evidence. Together, these data conclusively demonstrate UPP-mediated degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Z15 selectively inhibits proliferation of AR-positive CRPC cell lines (VCaP, 22Rv1) with IC50 values of 1.37 \u03bcM and 3.63 \u03bcM respectively, showing superior activity to ARV-110 in ARV7-positive 22Rv1 cells (IC50 3.63 \u03bcM vs 14.85 \u03bcM), while showing minimal effect on AR-negative cells (PC-3, DU145). Colony formation assays confirm selective inhibition of AR-positive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by MTT proliferation assays (Figure 6A) and colony formation assays (Figure 6B). The selectivity for AR-positive over AR-negative cells is clear and statistically significant. The superior activity in ARV7-positive 22Rv1 cells compared to ARV-110 (C59) is a key finding that validates the dual LBD/AF1 binding mechanism. The IC50 values are appropriately determined from dose-response curves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Z15 inhibits patient-derived PCa organoid proliferation and promotes apoptosis in AR-positive VCaP and 22Rv1 cells in a dose- and time-dependent manner (as measured by cleaved PARP), while showing no effect on apoptosis in AR-negative DU145 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by organoid culture experiments (C64, Figure 6C) and Western blot analysis of cleaved PARP (C65-C66, Figure 6D-E, Figure 6\u2014figure supplement 1A-E). The organoid data provide clinically relevant validation, and the apoptosis data show dose- and time-dependence with appropriate AR-negative controls. The selectivity for AR-positive cells is consistent across proliferation, colony formation, and apoptosis assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In vivo, Z15 (10 and 20 mg/kg) suppresses 22Rv1 xenograft tumor growth and reduces tumor weight significantly without measurable side effects (assessed by body weight). Z15 treatment reduces AR, ARV7, PSA, and Ki-67 protein levels in tumor tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by xenograft experiments showing tumor growth inhibition (Figure 7B-C), no body weight loss (C67, Figure 7A), reduced AR/ARV7/PSA by Western blot (C69, Figure 7D, Figure 7\u2014figure supplement 1A-C), and reduced Ki-67/PSA by IHC (C70, Figure 7E). The in vivo data validate the in vitro findings and demonstrate therapeutic potential. However, body weight alone is an incomplete safety assessment; more comprehensive toxicology would strengthen the claim of no side effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Seven Z15 analogs with >80% structural similarity were identified and evaluated. Most analogs (except ZL-1) inhibited AR transcriptional activity at 1 \u03bcM, suggesting the dimethyl isoxazole group is essential for activity. ZL-2 and ZL-4 showed the strongest AR inhibition, and some analogs demonstrated stronger AR downregulation than Z15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by dual-luciferase reporter assays (Figure 8A-B, Figure 8\u2014figure supplement 2A) and Western blot analysis (Figure 8C, Figure 8\u2014figure supplement 2B, Figure 8\u2014figure supplement 3A-D). The structure-activity relationship (SAR) observation that ZL-1 (lacking the dimethyl isoxazole) is inactive (C73-C74) provides valuable mechanistic insight. However, C78 is speculative about future optimization and should be considered a hypothesis rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors contextualize their findings by noting that AR amplification is common in CRPC patients, that ENZa cannot overcome AR amplification-induced resistance in VCaP cells, and that Z15 overcomes this resistance through combined AR antagonism and degradation, similar to other AR degraders like ARV-110, ailanthone, and CPPI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 combine established knowledge (C79, C82-C84 with appropriate citations) with the authors' experimental observations (C80-C81, C85). The claim that ENZa cannot downregulate PSA in AR-overexpressed VCaP cells (C80) is supported by their data (Figure 1D shows Z15 works in VCaP while ENZa is less effective). The conclusion that Z15 overcomes AR amplification-induced resistance (C85) is supported by the VCaP cell data and the demonstrated degradation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors position Z15 in the context of ARV-targeted therapies, noting that ARVs (especially ARV7) correlate with poor prognosis, that existing ARV-targeted compounds (niclosamide, UT-34, UT-69, EPI, TAS3681, 26f) have shown promise but face limitations, and that Z15's dual LBD/AF1 binding enables inhibition of both AR and ARV7-driven CRPC, illustrating the synergistic importance of AR antagonism and degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 combine literature context (C86-C91 with appropriate citations) with the authors' conclusions (C92-C93). The claim that Z15 binds both AR LBD and AF1 and inhibits AR/ARV7-driven cells (C92) is well-supported by the binding data (Claims C38-C49) and functional data (Claims C58-C71). The conclusion about synergistic importance of antagonism and degradation (C93) is a reasonable interpretation of the data showing Z15's dual mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors acknowledge limitations: Z15's AR degradation potency is weaker than ARV-110, making it a less specific degrader; Z15 may have additional mechanisms beyond AR/ARV7 targeting; and further structure optimization and mechanistic investigation are warranted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 represent appropriate acknowledgment of limitations. The comparison to ARV-110 (C94-C95) is supported by the proteomics data showing ARV-110 affects fewer proteins (34 vs 69, C31). The acknowledgment of potential additional mechanisms (C96) is scientifically appropriate given the proteomics data. The call for further optimization (C97) is a reasonable conclusion. These limitations do not undermine the main findings but provide important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The abstract summarizes the key findings: Z15 is a bifunctional molecule that acts as both an AR antagonist and selective AR degrader, directly interacting with AR LBD and AF1, promoting AR degradation through the proteasome pathway, and efficiently suppressing AR, AR mutants, and ARVs to overcome multiple resistance mechanisms in CRPC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 are summary statements from the abstract that are supported by the detailed experimental results throughout the manuscript. The dual binding (C98) is supported by Claims C38-C49, degradation through proteasome (C99) by Claims C54-C57, suppression of AR/mutants/ARVs (C100-C101) by Claims C13-C15, C22-C28, and overcoming resistance (C102) by Claims C14-C15, C22, C58-C71. The abstract accurately reflects the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The introduction contextualizes the need for novel AR degraders by noting limitations of PROTAC drugs (poor cell permeability, pharmacokinetics, complex structures) and LBD-targeted PROTACs (cannot degrade ARVs), while citing precedents like fulvestrant for ER degradation and existing SARDs (UT-155, UT-69, UT-34) that have limited ARV degradation potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 provide appropriate literature context with citations (He et al., 2020; Fettke et al., 2020; Bross et al., 2003; Nardone et al., 2019; Bradbury et al., 2011; Ponnusamy et al., 2017; Ponnusamy et al., 2019; Hwang et al., 2019). These claims establish the rationale for developing Z15 as a non-PROTAC AR degrader with ARV7 activity. The limitations of existing approaches are accurately represented based on the cited literature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript establishes the biochemical pathway and functional role of ceramide in cellular membranes. Asm hydrolyzes sphingomyelin to ceramide (C1), which is further metabolized to sphingosine by Ac (C2). Ceramide forms ceramide-enriched platforms in the plasma membrane (C3, C14) that contribute to receptor clustering and protein interactions (C15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established biochemical knowledge supported by citations (C14, C15) and are foundational to the study. The enzymatic pathway and functional role of ceramide-enriched platforms are widely accepted in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Asm-deficient mice show accelerated tumor growth associated with impaired T cell responses. Asm-KO mice exhibited significantly faster tumor growth rates compared to WT mice (C43), with lower frequencies of CD4+ and CD8+ T cells in draining lymph nodes (C44), increased Treg frequencies in tumors (C45), and reduced expression of activation markers IFN-\u03b3 and CD44 in tumor-infiltrating lymphocytes (C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are directly supported by experimental data in Figure 1A-C with appropriate statistical analysis. The interpretation (C47) logically follows from the data. The tumor growth phenotype is consistent with prior work (Garcia-Barros, 2003) and the T cell phenotypes are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Pharmacological inhibition of Asm with amitriptyline recapitulates the tumor growth and T cell phenotypes observed in Asm-KO mice. Amitriptyline-treated mice showed enhanced tumor progression (C48) and reduced TIL activation (C49) compared to vehicle-treated controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by data in Figure 1\u2014figure supplement 1A-B. This pharmacological validation strengthens the genetic findings, though sample sizes and statistical details are less clear in the supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Asm deficiency promotes regulatory T cell differentiation. Elevated Treg frequencies were detected in spleens of na\u00efve Asm-KO mice (C50), and CD4+CD25\u2212 T cells from Asm-KO mice showed improved capacity to differentiate into Tregs in vitro (C51), suggesting that T cell-intrinsic Asm activity regulates T cell differentiation via ceramide generation (C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by flow cytometry data in Figure 1D-E and are consistent with prior literature (Hollmann et al., 2016; Hose et al., 2019). The mechanistic interpretation (C52) is reasonable given the enzymatic function of Asm, though direct ceramide measurements in this context would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CD4+ T cell depletion experiments reveal that Asm deficiency impairs CD8+ T cell function independently of CD4+ T cells. After CD4+ T cell depletion, Asm-deficient mice still showed higher tumor growth than WT mice (C54), though depletion nearly abolished tumor progression in WT mice (C55). CD8+ TILs from Asm-deficient mice showed reduced expression of IFN-\u03b3, CD44, and granzyme B after depletion (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by experimental data in Figure 2A-C. The depletion experiment is well-designed to dissect CD4+ versus CD8+ T cell contributions. The interpretation (C57) appropriately concludes that Asm affects CD8+ T cells independently of CD4+ T cells, though the dramatic effect of CD4+ depletion in WT mice (C55) suggests complex interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "T cell-specific Asm ablation reduces ceramide levels and impairs CD8+ T cell activation and cytotoxic function in vitro. Asm/CD4cre mice lack Asm expression specifically in T cells (C58), resulting in significantly reduced ceramide levels (C59). In vitro stimulation led to reduced expression of activation markers CD25, CD69, and CD44 (C60), reduced killing capacity (C61), and reduced granzyme B expression (C62). The granzyme B phenotype was partially rescued by exogenous C16 ceramide (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are well-supported by qPCR (Figure 3A), mass spectrometry (Figure 3B), flow cytometry (Figure 3C, E), and killing assays (Figure 3D, F). The ceramide rescue experiment (C63) provides strong evidence for a causal role of ceramide. The interpretation (C64) is appropriately cautious, limiting conclusions to in vitro conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Asm deficiency affects CD4+ T cell differentiation, reducing Th1 differentiation (C65) while enhancing Treg differentiation (C66) in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by in vitro differentiation data in Figure 3\u2014figure supplement 1C-D. These findings are consistent with the Treg phenotype observed in vivo and extend the role of Asm to multiple CD4+ T cell subsets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "T cell-specific Asm ablation in Asm/CD4cre mice results in enhanced tumor progression with impaired T cell responses in vivo. Asm/CD4cre mice showed significantly higher tumor growth rates (C4), elevated percentages of tumor-infiltrating Tregs (C70), reduced frequencies of CD4+ and CD8+ T cells in draining lymph nodes (C71), reduced absolute numbers of intratumoral T cells (C72), and decreased expression of IFN-\u03b3, TNF-\u03b1, and granzyme B in TILs (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C70-C73 are supported by tumor growth data (Figure 4A) and flow cytometry analysis (Figure 4B-C). The T cell-specific model strengthens the conclusion that T cell-intrinsic Asm activity is critical for anti-tumor responses, ruling out contributions from other Asm-deficient cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C75",
+      "C76"
+    ],
+    "result": "Ceramide co-localizes with TCR and CD3 at the immunological synapse. Fluorescence microscopy revealed that ceramide accumulates at the contact site between T cells and CD3/CD28 MACSiBead particles (C75) and co-localizes with both TCR (C11) and CD3 (C12), suggesting involvement of ceramide in TCR signaling (C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C75-C76 are supported by microscopy data in Figure 5A-B. The co-localization is visually clear, though quantification of co-localization would strengthen the claim. The interpretation (C76) is reasonable but remains suggestive rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "T cell-specific Ac ablation increases ceramide levels and enhances CD8+ T cell activation and cytotoxic function in vitro. Ac/CD4cre mice have T cells deficient for Ac (C77, C78), resulting in elevated ceramide concentrations (C79). CD8+ T cells from Ac/CD4cre mice showed significantly elevated phosphorylation of ZAP70 and PLC\u03b3 (C80, C81), increased granzyme B expression (C82), and improved killing capacity (C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 are well-supported by qPCR (Figure 6A), mass spectrometry (Figure 6B), flow cytometry (Figure 6C, E), western blot (Figure 6D), and killing assays (Figure 6F). The complementary phenotype to Asm deficiency strongly supports a causal role for ceramide in T cell function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Ac ablation has differential effects on CD4+ T cell subsets. While Ac ablation had no impact on Th1 differentiation regarding IFN-\u03b3 expression (C84), CD4+ T cells from Ac/CD4cre mice showed enhanced granzyme B expression under Th1-polarizing conditions (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by flow cytometry data in Figure 6\u2014figure supplement 1D. The finding that granzyme B but not IFN-\u03b3 is affected suggests ceramide may selectively regulate cytotoxic effector functions rather than general Th1 differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C67",
+      "C68",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Ceramide levels at the immunological synapse correlate with TCR signaling strength. Phosphorylation of TCR signaling molecules was elevated in Ac-deficient T cells (C13), and synaptic ceramide signal was highly elevated in Ac-deficient T cells compared to Asm-deficient T cells (C67). Asm and Ac activity affect both overall cellular ceramide content (C113) and ceramide levels within the immunological synapse (C114), supporting the hypothesis that ceramide level is involved in TCR signaling strength (C115).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C67 are supported by flow cytometry (Figure 6C-D) and microscopy quantification (Figure 7B). Claims C113-C115 represent reasonable interpretations of the combined data. The correlation between synaptic ceramide and signaling strength is compelling, though direct manipulation of synaptic ceramide would provide stronger causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "T cell-specific Ac ablation reduces tumor growth and enhances anti-tumor T cell responses in vivo. Ac/CD4cre mice showed reduced tumor growth rates (C6, C87) and elevated T cell activation with increased IFN-\u03b3 and granzyme B expression in TILs (C7, C88). The authors conclude that enhancing ceramide by Ac ablation promotes T cell function (C89), while reduced ceramide due to Asm loss decreases T cell activity (C90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C87-C88 are supported by tumor growth data (Figure 8A) and flow cytometry (Figure 8C). The conclusions (C89-C90) are well-supported by the complementary phenotypes of Asm and Ac deficiency across multiple experiments. The in vivo tumor data provide strong validation of the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C119",
+      "C120"
+    ],
+    "result": "Cell-intrinsic ceramide content, regulated by Asm and Ac activity, determines T cell phenotype and function in vitro and during tumorigenesis in vivo. The study demonstrates a correlation between ceramide levels and T cell activity (C93), with reduced ceramide triggering Treg induction and interfering with effector responses (C94-C95), while elevated ceramide enhances T cell activation (C96). These effects were observed both in vitro (C91) and during tumorigenesis in vivo (C92, C97-C98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 and C119-C120 represent summary statements supported by the comprehensive experimental data throughout the manuscript. The bidirectional genetic manipulation (Asm vs. Ac deficiency), complementary phenotypes, ceramide measurements, rescue experiments, and in vivo validation provide strong evidence for the central conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Co-stimulation of CD3 and CD28 is important for induction of Asm activity in CD4+ T cells, as evidenced by elevated ceramide concentrations upon anti-CD3/anti-CD28 treatment that were substantially reduced in Asm-deficient T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by mass spectrometry data showing ceramide induction upon CD3/CD28 stimulation (Figures 3B, 6B). This addresses a controversy in the literature about the stimulation requirements for Asm activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C103",
+      "C104"
+    ],
+    "result": "Asm deficiency in T cells contributes to impaired anti-tumor immune responses and loss of tumor growth control. The CD4+ T cell depletion experiments demonstrate that Asm activity impacts not only CD4+ T cell subsets but also CD8+ T cell function during tumorigenesis (C103), with Asm deficiency associated with lowered killing capacity suggesting ceramide regulates cytotoxic function (C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C103-C104 are supported by the depletion experiments (Figure 2) and in vitro functional assays (Figure 3D). The interpretation appropriately integrates multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Ac-deficient CD8+ T cells show increased granzyme B expression (C105) and elevated killing activity (C106), correlating with facilitated anti-tumor responses and reduced tumor growth in Ac/CD4cre mice (C107). Ablation of Ac led to facilitated phosphorylation of ZAP-70 and PLC\u03b3 (C109), suggesting ceramide-enriched platforms modulate TCR signaling (C110). These results indicate ceramide concentrations determine T cell activity in vitro and in vivo (C108).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 are supported by flow cytometry (Figure 6C-E), western blot (Figure 6D), killing assays (Figure 6F), and tumor growth data (Figure 8). The mechanistic interpretation linking ceramide platforms to TCR signaling (C110) is reasonable but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The authors speculate about a positive feedback regulation between ceramide and T cell activation, noting that TCR stimulation increases ceramide concentration (C111), which in turn may strengthen TCR signaling (C112).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 is supported by mass spectrometry data (Figures 3B, 6B), but C112 represents speculation about feedback regulation. While the data are consistent with this model, direct testing of the feedback hypothesis would require additional experiments such as temporal analysis or perturbation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C118"
+    ],
+    "result": "Ablation of Asm resulted in lower cellular and synaptic ceramide levels associated with impaired CD8+ T cell function, suggesting other sphingomyelinases cannot fully compensate for Asm deficiency in T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C118 are supported by the ceramide measurements (Figures 3B, 7B) and functional data throughout the study. The interpretation is reasonable, though the authors acknowledge other enzymes like neutral sphingomyelinase 2 could contribute (C116-C117).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "S-1-P concentrations in stimulated T cells were below the detection limit (C124), suggesting ceramide rather than S-1-P modulates anti-tumor T cell responses (C125).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is stated as an experimental observation, though the data are not shown. The interpretation (C125) is reasonable given that S-1-P was undetectable, ruling out this alternative mechanism. However, the lack of shown data and limited methodological detail reduce confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors propose that sphingolipid metabolism represents a potential therapeutic target for improving anti-tumor T cell responses (C121), suggesting modulation of ceramide levels by interfering with Asm or Ac activity might represent a novel therapeutic strategy (C122), including genetic engineering of T cells (C123).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C123 represent speculative therapeutic proposals based on the study's findings. While the data support the biological importance of ceramide in T cell function, translation to therapy would require extensive additional work including safety studies, optimization, and clinical validation. The authors appropriately note caution regarding FIASMA use in cancer patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C102",
+      "C116",
+      "C117"
+    ],
+    "result": "The introduction provides extensive background on sphingolipid metabolism in disease and immunity, including roles in Niemann-Pick disease (C16-C17), depression (C18-C19), Farber disease (C20-C21), cancer (C22-C31), T cell biology (C32-C42, C102), and alternative ceramide-generating pathways (C116-C117).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent literature review and are supported by appropriate citations. They provide necessary context for the study but do not constitute novel findings.",
+    "result_type": "MINOR"
+  }
+]

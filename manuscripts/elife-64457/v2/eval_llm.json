@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Behavioral performance in the auditory delayed match-to-sample (DMS) task declined with increasing delay duration, indicating that the task requires short-term memory processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by behavioral data shown in Figure 1d. The decline in performance with increasing delay is a standard validation that the task engages working memory processes, and the data directly demonstrate this relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Electrophysiological recordings revealed that AC neurons were active during auditory stimulus presentation and continued to show elevated activity during the early delay period (first 800 ms), with over 60% of neurons showing increased firing during the first 500 ms of delay, decreasing to ~30% during 500-800 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C30-C35 are well-supported by electrophysiological data presented in Figure 2. The recordings from 915 neurons (287 task-related) provide robust evidence for sustained neural activity during the early delay period. ROC analysis confirms stimulus selectivity during this period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "During passive presentation of auditory stimuli (without the working memory task), AC neurons showed selectivity for a much shorter interval in the delay period compared to the active WM task, indicating that delay-period activity is behaviorally-related rather than a passive sensory response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by comparison of neural recordings during WM task versus passive listening (Figure 2). This control experiment is critical for demonstrating that the delay-period activity reflects active memory maintenance rather than sensory persistence. The comparison is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "AC neurons exhibited elevated activity for approximately 1000 ms from stimulus onset regardless of stimulus duration (200, 300, or 400 ms), suggesting that temporal dynamics of delay-period activity are relative to stimulus onset rather than offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by experiments with varying stimulus durations (Figure 2\u2014figure supplement 1). The finding that activity duration is locked to stimulus onset rather than offset is important for understanding the temporal dynamics of AC involvement. However, C40 appropriately notes this is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Optogenetic suppression of AC pyramidal neurons during the entire delay period (1.5 s) significantly impaired WM task performance (p=1.1\u00d710\u207b\u2075), primarily through increased false alarm rate (p=2.63\u00d710\u207b\u2075) with a smaller decrease in hit rate (p=0.018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are well-supported by optogenetic experiments with appropriate controls (Figure 3c,d). The statistical significance is strong, sample size is adequate (n=8), and the control virus experiment confirms specificity. The pattern of effects (increased false alarms > decreased hits) is informative about the nature of the deficit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C10",
+      "C71"
+    ],
+    "result": "Optogenetic suppression of AC during the stimulus epoch dramatically reduced task performance (p=4.92\u00d710\u207b\u2077), demonstrating that AC is crucial for initial encoding of auditory information in the WM task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, C10, and C71 are supported by optogenetic suppression during stimulus presentation (Figure 3\u2014figure supplement 1). The strong statistical significance and large effect size support the conclusion that AC is essential for encoding. This is a critical control for interpreting delay-period effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Optogenetic suppression of AC during the delay period in a four-tone auditory WM task resulted in substantial impairment in task performance (p=0.025), demonstrating that AC involvement extends beyond simple two-tone discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by optogenetic experiments with four tones (Figure 3e). This control addresses whether the findings generalize beyond simple two-choice tasks. The effect is statistically significant with adequate sample size (n=7), though the p-value is less robust than other experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C11",
+      "C72"
+    ],
+    "result": "Optogenetic suppression of AC during the early delay period (300-800 ms) significantly impaired WM performance, while suppression during the late delay period (800-1300 ms) had no significant effect, demonstrating temporal specificity of AC involvement in memory maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54, C11, and C72 are strongly supported by temporally-specific optogenetic manipulations (Figure 4). The systematic testing of different time windows (300-550 ms, 550-800 ms, 800-1050 ms, 1050-1300 ms) provides robust evidence for temporal specificity. Statistical tests are appropriate and sample sizes adequate (n=7-8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The temporal specificity of AC involvement (critical during 300-800 ms but not later) was maintained even when delay duration was extended to 3 s or 7 s, indicating that AC's role is temporally constrained to the early delay period regardless of total delay length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by experiments with extended delays (Figure 5). This is an important control demonstrating that the temporal window of AC involvement is absolute rather than relative to delay duration. Statistical tests show significant effects during 300-800 ms but not later periods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C82",
+      "C83"
+    ],
+    "result": "Mice adapted to WM task with noise distractor (300-500 ms), and optogenetic suppression of AC after the distractor (500-800 ms) still impaired performance (p=0.017), demonstrating that AC is essential for active memory maintenance even in the presence of distractors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64, C82-C83 are supported by distractor experiments (Figure 6). This is a critical test addressing whether AC activity reflects active maintenance versus passive sensory traces. The finding that suppression after the distractor still impairs performance strongly supports active maintenance. Sample size is adequate (n=9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C87",
+      "C89"
+    ],
+    "result": "Optogenetic suppression of AC during the delay period of a delayed go/no-go task (which requires memory of action plan but not auditory frequency) had no effect on behavior (p=0.335), indicating that AC delay-period activity is specific to memory of auditory cues rather than action plans or general task engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C87, and C89 are supported by control experiments with delayed go/no-go task (Figure 7a). This control is essential for ruling out non-specific effects of optogenetic suppression and demonstrating functional specificity. The lack of effect in this control task strengthens the interpretation of DMS task results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Optogenetic suppression of AC during the delay period of a go/no-go task (which requires attention/expectation but not memory) produced no significant effect (p=0.536), and the effect was significantly smaller than in the DMS task (p=7.68\u00d710\u207b\u00b3), indicating AC activity is more critical for memory retention than general processes like attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by go/no-go control experiments (Figure 7b). The direct comparison between tasks (\u0394performance: go/no-go = -3.15\u00b12.5% vs DMS = -13.14\u00b11.98%) provides strong evidence for functional specificity. This control addresses alternative explanations related to attention or expectation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Optogenetic suppression during the late delay period (800-1300 ms) did not impair WM performance, indicating that the suppression did not impair perception of the test stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by the lack of effect when suppression occurred during 800-1300 ms (Figure 4b). This is a logical inference that helps rule out alternative explanations for the observed deficits during early delay suppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C73",
+      "C84"
+    ],
+    "result": "AC may not be involved in WM storage during the entire delay period but is crucial for encoding, maintaining memory traces for a limited time (~800 ms), and potentially transferring information for further storage elsewhere, supporting the idea that sensory cortices participate in sensory information maintenance in WM tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70 and C84 are reasonably supported by the collective experimental evidence, but C73 (transfer to other regions) is speculative and not directly tested. While the temporal pattern of AC involvement is consistent with a transfer mechanism, no direct evidence of information transfer or identification of downstream storage sites is provided. This remains an inference requiring future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12"
+    ],
+    "result": "Working memory is defined as the ability to actively hold information over a delay period of seconds and is a fundamental component of cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C12 are standard definitional statements about working memory supported by established scientific consensus and appropriate citations (Baddeley, 1992). These provide necessary background context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior research has established that PFC is crucial for WM, and there is increasing evidence that sensory cortices (including AC) are important for WM when tasks require short-term retention of sensory information, though the functional role and timing remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C13-C24 accurately summarize prior literature with appropriate citations. These claims establish the scientific context and knowledge gap that motivates the current study. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Traditional perturbation methods (lesions, pharmacological inactivation, cooling) lack the temporal resolution needed to determine when AC contributes to memory maintenance because they disrupt both encoding and retention and cannot be silenced rapidly enough.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 accurately describe limitations of traditional methods and provide justification for the optogenetic approach. This is based on established knowledge about these techniques and their temporal limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C85",
+      "C86",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The discussion contextualizes findings within the broader debate about sensory cortex involvement in WM, noting both supporting and contradictory evidence from prior studies, and discusses distributed WM networks including PFC, parietal cortex, and superior colliculus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 and C85-C95 provide appropriate discussion of prior literature with citations. The authors fairly present both supporting evidence and alternative interpretations. C95 (inter-areal interactions) is appropriately noted as speculative. These claims provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study used adult male C57BL/6 mice (8-12 weeks), with 71% (41/58) successfully learning the auditory WM task after an average of 29 days of training to reach >80% performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are straightforward methodological details supported by the methods section and behavioral training data. The success rate and training duration provide important context for evaluating the feasibility and reproducibility of the behavioral paradigm.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The study retrieved 480,236 ADE reports from FAERS for hypertensive patients (2004-2020), aggregated to 1520 ADEs and 1131 drugs. After filtering drugs with <500 reports, 98.8% of data corresponded to 134 drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 describe the data collection and initial filtering process with specific numbers and clear criteria. The filtering threshold (500 reports, <0.1% of data) is explicitly stated and the resulting dataset (134 drugs, 98.8% of data) is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Macitentan and bosentan, both endothelin receptor antagonists used for pulmonary arterial hypertension, were associated with the highest pulmonary ADEs (64% and 56% respectively, or 16 and 14 out of 25 ADEs by EBGM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C28-C29 provide consistent quantitative findings from the analysis. Claims C30-C31 provide mechanistic context from cited literature. The high ADE rates are expected given these drugs' indication for pulmonary disease, which the authors acknowledge as validation of their methods (C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C32",
+      "C33",
+      "C45"
+    ],
+    "result": "Doxazosin and rilmenidine exhibited the least pulmonary ADEs among selected drugs, with only 2 ADE signals detected by EBGM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C45 consistently report the finding using EBGM analysis. Claims C32-C33 provide mechanistic context from literature about these drugs' primary uses and favorable ADE profiles, supporting why they might have fewer pulmonary ADEs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Nifedipine (CCB) and candesartan (ARB) formed a drug cluster by signal detection methods, showing four similar pulmonary ADEs. Prior studies support this combination's effectiveness for blood pressure lowering with improved side effect profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C34 report the clustering finding with specific ADEs identified. Claims C22 and C35 cite multiple studies supporting the combination's efficacy and safety. Claim C36 appropriately suggests future pharmacokinetic investigation rather than claiming established benefit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C62"
+    ],
+    "result": "Drugs from antihypertensives, urologicals, and antithrombotic agents formed a class with significantly higher pulmonary ADEs. Individual drugs showed significant differences within and between drug classes, confirming that drugs from the same ATC class can have very different pulmonary ADE profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 report specific findings from the filtering and analysis. Claim C26 states the hypothesis was confirmed, and C62 reinforces this conclusion. The statistical analyses (Friedman test, GLASSO clustering) support heterogeneity within drug classes, though the strength of evidence varies by class.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "EBGM with EB05>1 threshold provided more conservative and robust ADE assessment than RR, particularly for drugs with variable reporting frequencies. Rankings changed substantially between methods (e.g., beraprost ranked 1st by RR but 10th by EBGM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 establish the methodological rationale. Claims C64-C67 and C75 provide specific examples of ranking changes between RR and EBGM. Claims C76-C77 appropriately characterize EBGM's advantages for large, heterogeneous datasets. The comparison validates the conservative approach, though the authors acknowledge no method is free from false positives/negatives (C12).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Friedman test showed GL Clusters (from GLASSO) exhibited homogeneity within clusters, while original ATC classes showed significant heterogeneity. GL Cluster 1 showed significantly higher EBGM for pulmonary events compared to GL Clusters 3, 4, and 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 report specific p-values from Friedman tests showing no significant differences within GL Clusters but significant differences within ATC classes. Claims C50-C51 interpret this as validation of GLASSO clustering. Claims C52-C55 report between-cluster comparisons with appropriate statistical tests (Wilcoxon with Bonferroni correction). The statistical approach is sound, though the biological interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "PCA revealed that PC1 was dominated by 12 respiratory tract-related ADEs, PC2 by 7 pleural/vascular ADEs, and PC3 by fungal effects. Drugs at the perimeter of branches showed disparate pulmonary ADE profiles, suggesting they may not be best managed by class-based profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C59-C60 provide specific ADE loadings for each principal component with reference to supplementary data. Claim C57 makes an appropriate inference from the spatial separation observed in PCA. The interpretation is consistent with the study's main hypothesis about within-class heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C73",
+      "C74"
+    ],
+    "result": "After stringent filtering, drug classes exhibited very low correlations between drugs from the same class. GL Cluster 1 contained most drugs with most pulmonary ADEs. Within-class associations were minimal for ACEIs, ARBs, AHAs, and BBAs, but more evident in CCBs and combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C73-C74 report correlation patterns from the analysis. Claim C62 appropriately interprets this as supporting the hypothesis. Claim C63 identifies GL Cluster 1 characteristics with reference to figures and tables. The findings are internally consistent and support the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "44 drugs were selected based on EB05>1 and \u22652 pulmonary ADEs, with most in ARBs, AHAs, ATAs, and CCBs. GLASSO further reduced this to 22 drugs classified by cardiovascular therapeutic groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 clearly describe the selection criteria and resulting drug distribution. Claim C72 describes the classification approach for the 22 drugs retained after GLASSO. The filtering process is well-documented and appropriate for reducing noise in the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Tadalafil and sildenafil are used for erectile dysfunction and pulmonary arterial hypertension. Top products were Adcirca/Cialis (tadalafil) and Revatio/Viagra (sildenafil). Dose had insignificant effect on ADE outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 provide product information from the 1DATA database with specific report counts. Claim C41 reports a dose-response analysis (referenced in Supplementary file 9). The finding that dose is insignificant is important for interpretation but lacks detail on the analysis method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C58",
+      "C76",
+      "C77"
+    ],
+    "result": "EBGM and IC are recommended over other quantitative methods for mean average precision. The consistency of Friedman test and GLASSO in capturing EBGM signals across population sizes could be beneficial for drug comparative analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 cites prior work (Zorych et al., 2013) supporting EBGM/IC superiority. Claims C58, C76-C77 make appropriate inferences about the utility of the combined methodological approach based on the study's results. The claims are appropriately cautious (\"could be beneficial\") rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "COVID-19 context: As of March 2021, there were 115M cases and 2.6M deaths. Up to 45% of infections may be asymptomatic. Hypertension is a prevalent risk factor, affecting 23% of Chinese and 45% of US adults. ACEIs/ARBs target RAS, which is linked to COVID-19 through ACE2 viral entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide background context from cited sources (WHO, CDC, published literature). These establish the rationale for studying pulmonary ADEs in hypertensive patients during COVID-19. All claims are appropriately cited and provide relevant context, though they are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C37"
+    ],
+    "result": "Prior work focused on pulmonary ADEs with ACEIs/ARBs in hypertensive patients, finding specific drugs rather than entire classes have higher ADE incidences. Most epidemiological studies compare drug classes rather than individual drugs. Previous work showed quinapril and trandolapril differed from other ACEIs/ARBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C37 cite the authors' previous work establishing the foundation for this study. Claim C11 provides context about typical epidemiological approaches. These appropriately position the current work as extending prior findings to a broader drug set with refined methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The 1DATA database will be updated with MedDRA 24.0 containing new COVID-19 terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 describes a planned future update. This is speculation about future work rather than a current finding. While it indicates the authors' intentions, it cannot be evaluated as a result of the present study.",
+    "result_type": "MINOR"
+  }
+]

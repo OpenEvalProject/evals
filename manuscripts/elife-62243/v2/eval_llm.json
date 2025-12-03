@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors developed and validated a proximity biotinylation method using BirA enzyme and AviTag reporters to study cohesin architecture in vivo. All four Smc3p-AviTag reporters and Smc3p-BirA constructs are functional, biotinylated equally by free nuclear BirA, and the western blot assay is quantitative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 establish the technical foundation of the proximity biotinylation method. The functionality of all constructs is demonstrated by growth assays (C52-C53), equal biotinylation by free BirA validates reporter accessibility (C54), and linearity of western signals confirms quantitative measurement (C55). These controls are essential and well-documented in Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C123"
+    ],
+    "result": "Cohesin heterodimers and fully assembled cohesin complexes adopt multiple dynamic butterfly conformations in vivo, with flexible coiled coils between hinge and elbow but stiffer coils between head and elbow. The majority of biotinylation reflects cis-interactions within the same complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 and C123 are supported by cis-biotinylation experiments in Figure 2. The promiscuous biotinylation of multiple AviTags by hinge BirA (C57-C58) versus restricted biotinylation by head BirA (C59) provides strong evidence for structural dynamics and differential coiled coil flexibility. The comparison of cis versus trans biotinylation (C56, Figure 2B) validates the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Both the head and hinge domains of cohesin are proximal to chromosomal DNA, while the elbow and coiled coil regions are more distal. Cohesin binding to DNA enhanced head and hinge reporter biotinylation four-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C61-C64 are supported by DNA-tethered BirA experiments in Figure 3. The hierarchical biotinylation pattern (head and hinge > elbow > CC) and the requirement for Scc2p-dependent DNA loading (Figure 3C) provide strong evidence. The four-fold enhancement upon DNA binding is quantitatively documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Cohesins form ordered clusters in vivo with head-head and head-hinge interactions between different cohesin molecules. Trans-biotinylation increased 7.5-fold in S phase (to 45%) and four-fold in mid-M phase (to 25%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C65-C69 are supported by trans-biotinylation experiments in Figure 4. The high levels of head and hinge reporter biotinylation (C65-C66) combined with low CC reporter biotinylation (C68) support ordered clustering (C69). The quantitative measurements are well-documented, though the interpretation of \"ordered\" clustering relies on inference from the biotinylation pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C70",
+      "C71"
+    ],
+    "result": "Cohesin clustering is cell cycle-regulated, forming and peaking during S phase and then partially dissolving from G2 to M phase. The presence of clusters correlates with the time when cohesion is established and maintained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C70-C71 are supported by biotinylation experiments during cell cycle progression (Figure 4\u2014figure supplement 1D). The temporal correlation between clustering and cohesion establishment/maintenance (C71) is an inference based on known cell cycle timing, which is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The distribution of cohesin clusters on chromosomes is cell cycle-regulated. In S phase, clusters occur at all CARs (centromeres, pericentric regions, and chromosome arms). In mid-M, clusters remain high at centromeres and pericentric regions but are reduced on chromosome arms by mechanisms other than cohesin dissociation from DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C72-C86 are supported by ChIP-qPCR and ChIP-seq data in Figure 5. The similar signals between Smc3p-BirA and NLS-BirA in S phase (C74, C85) and the differential signals in mid-M (C75-C77, C82-C83, C86) are well-documented. The conclusion that cohesin remains bound to CARs in mid-M (C78-C79) is supported by control ChIP experiments (Figure 5\u2014figure supplement 2), validating the interpretation that clustering is downregulated by mechanisms other than DNA dissociation (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Both non-Smc subunits (Mcd1p and Scc3p) are essential for cohesin clustering. Clustering can occur in the absence of cohesion, as demonstrated by cluster formation in G1 arrested cells upon Mcd1p overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by auxin-degron depletion experiments in Figure 6 and Figure 6\u2014figure supplement 1. The requirement for Mcd1p (C88-C89) and Scc3p (C90) is clearly demonstrated. The observation that clustering occurs in G1 upon Mcd1p overexpression (C91, Figure 6B) where cohesion does not normally occur provides strong evidence for the independence of clustering from cohesion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Neither cohesin loading on DNA (Scc2p) nor cohesin acetylation (Eco1p) is required to form cohesin clusters. Clustering occurs in the absence of cohesion, and the presence of clusters alone is not sufficient to ensure cohesion or condensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by depletion experiments in Figure 7B-C. The lack of effect of Scc2p-AID or Eco1p-AID depletion on trans-biotinylation (C92-C93) is clearly shown. The conclusions about clustering independence from cohesion (C95) and insufficiency for cohesion (C96) are logical inferences from the data, though C96 could benefit from more direct functional assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Wpl1p is neither an activator nor an inhibitor of cohesin clustering, as deletion of WPL1 had no effect on biotinylation levels of head or hinge reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by biotinylation data in wpl1\u0394 cells (Figure 7D). The lack of effect on clustering is clearly demonstrated, though this is a negative result that depends on the sensitivity of the assay.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Pds5p is required for cohesin clustering on and off DNA. Cohesin clusters can be maintained in the absence of Pds5p in S phase but require Pds5p to persist post S phase. Pds5p promotes clustering by a mechanism distinct from its functions in promoting cohesin acetylation or DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C99-C104 are supported by Pds5p-AID depletion experiments in Figure 7E-F. The dramatic reduction in trans-biotinylation upon Pds5p depletion (C99) and the differential effects in S phase versus mid-M (C102-C104) are well-documented. The conclusion about mechanism independence (C100) is a logical inference from comparison with Scc2p and Eco1p depletion results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The biotinylation patterns observed with double-tagged Smc3p reflect domain interactions within the same cohesin complex (cis-interactions) rather than trans-interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by comparison of biotinylation patterns with and without Pds5p (Figure 7\u2014figure supplement 1K). The similar patterns in the presence and absence of clustering validate the cis-interpretation, though this is an important control that addresses a potential confound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C137"
+    ],
+    "result": "Cohesin clustering is necessary for cohesion maintenance because clustering and maintenance uniquely require the same subset of cohesin domains (Mcd1p linker, Mcd1p ROCC, Smc3p hinge) and Pds5p. Three mutations (mcd1-V137K, mcd1-Q266, smc3-D667) that specifically block cohesion maintenance also block clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C106-C119, and C137 are supported by mutant analysis in Figure 8. The correlation between clustering defects and cohesion maintenance defects (C10, C114, C137) is strong, with all three known maintenance-specific mutants showing ~70% reduction in clustering (C112). The mechanistic model (C119) integrating Pds5p recruitment and domain requirements is a reasonable inference from the data and prior studies (C115-C118). However, the claim that clustering is \"necessary\" (C10, C114) is correlative rather than causally proven\u2014the mutations could affect both clustering and cohesion through independent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The mechanism for cohesin clustering and cohesion maintenance is independent of cohesin acetylation and stable DNA binding, as the clustering-defective mutants are acetylated normally and bind DNA stably.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 are supported by citations to previous studies showing that mcd1 mutants are acetylated and bind DNA normally. This supports the independence of the clustering/maintenance mechanism from these other functions, though the data are from prior work rather than the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Multiple butterfly conformations may reflect inherent cohesin flexibility or intermediates in loop extrusion/tethering. This is likely a generic property of SMC complexes, and DNA binding to head and hinge domains supports proposed scrunching mechanisms for loop extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C128 are largely speculative interpretations (C124) or inferences based on comparison with other SMC complexes (C125, C127). While the observations of multiple conformations and DNA binding patterns are supported, the functional significance (C124) and mechanistic implications (C128) are not directly tested in this study. These are reasonable hypotheses but require further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Cohesin could be converted from loop extrusion to DNA tethering by blocking ADP release, trapping a butterfly intermediate where the hinge and head each bind a different sister chromatid at the replication fork.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C132 are speculative models about cohesion establishment mechanisms. While C129 references a prior study by the authors, C130-C132 are explicitly stated as speculation (\"we speculate\"). These models are consistent with the structural data but are not directly tested and represent hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Cohesin clustering may be a conserved feature of eukaryotic chromosomes, as cohesin-cohesin interactions have been inferred in yeast and observed in C. elegans meiotic chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 are supported by citations to prior studies showing functional complementation in yeast (C133) and superresolution microscopy in C. elegans (C134-C135). The inference about conservation (C136) is reasonable based on observations in multiple organisms, though more extensive comparative analysis would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Pds5p-dependent cohesion maintenance is independent of Eco1p and Wpl1p. Pds5p may promote cluster maintenance either indirectly through post-translational modifications or directly by binding adjacent cohesin complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C138 is supported by data showing clustering is independent of Eco1p and Wpl1p (Figure 7) and citations showing Pds5p-dependent cohesion maintenance is independent of these factors. Claims C139-C140 are speculative mechanistic proposals (\"may\") that are not directly tested but represent reasonable hypotheses based on the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Cohesin forms positioned loops genome-wide in mid-M, and these loops continue to form in clustering-defective mutants, suggesting that clusters are not obligatory for loop extrusion but may modulate looping patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 are supported by citations to recent work by the authors showing loop formation in clustering-defective mutants. This provides strong evidence that clustering is not required for loop extrusion (C143). Claim C144 is speculative (\"may modulate\") but represents a reasonable hypothesis for future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The reduction in arm clusters in mid-M likely reduces arm cohesion robustness. This reduction of arm cohesion is conserved in mammals and may help maintain tension at centromeres for proper chromosome segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C148 is an inference from the correlation between clustering and cohesion maintenance, which is reasonable but not directly tested. Claims C149-C150 about conservation are supported by citations to mammalian studies. Claims C151-C152 about the functional significance for tension maintenance are speculative (\"may be strengthened\") and represent hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "In C. elegans meiosis, COH-3/COH-4 cohesins form clusters that may strengthen cohesion and facilitate tension persistence. The regulation of cluster persistence may be a conserved feature important for chromosome alignment in meiosis and mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C154 are supported by citations to studies on C. elegans meiotic cohesin. Claims C155-C156 are speculative (\"may serve,\" \"may be\") about the functional significance and conservation of cluster regulation. These are reasonable hypotheses based on observations in multiple organisms but require direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Background claims about cohesin functions, SMC complex architecture, cohesion establishment and maintenance mechanisms, and prior observations of cohesin conformations and clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C48 are background information supported by citations to prior work. These establish the context for the current study and are generally well-established in the field. Claim C48 about functional complementation being \"best explained\" by clustering is an inference that motivated the current study.",
+    "result_type": "MINOR"
+  }
+]

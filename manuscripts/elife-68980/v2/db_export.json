@@ -1,0 +1,2179 @@
+{
+  "submission": {
+    "id": "f9bb2bf8-37b7-465c-b3a0-ac218901cbc1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:08:44.365038Z",
+    "updated_at": "2025-12-03T07:08:44.365038Z"
+  },
+  "content": [
+    {
+      "id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "submission_id": "f9bb2bf8-37b7-465c-b3a0-ac218901cbc1",
+      "content_type": "manuscript",
+      "content_text": "# Decoding the brain state-dependent relationship between pupil dynamics and resting state fMRI signal fluctuation\n\n## Authors\n\n- Filip Sobczak<sup>1</sup> ([ORCID: 0000-0001-9169-0243](https://orcid.org/0000-0001-9169-0243)) \u2020\n- Patricia Pais-Rold\u00e1n<sup>1</sup> ([ORCID: 0000-0002-9381-3048](https://orcid.org/0000-0002-9381-3048))\n- Kengo Takahashi<sup>1</sup> ([ORCID: 0000-0002-3532-1512](https://orcid.org/0000-0002-3532-1512))\n- Xin Yu<sup>4</sup> ([ORCID: 0000-0001-9890-5489](https://orcid.org/0000-0001-9890-5489)) \u2020\n\n### Affiliations\n\n1. Translational Neuroimaging and Neural Control Group, High Field Magnetic Resonance Department, Max Planck Institute for Biological Cybernetics T\u00fcbingen Germany\n2. Graduate Training Centre of Neuroscience, International Max Planck Research School, University of Tuebingen Tuebingen Germany\n3. Institute of Neuroscience and Medicine 4, Medical Imaging Physics, Forschungszentrum J\u00fclich J\u00fclich Germany\n4. Athinoula A. Martinos Center for Biomedical Imaging, Massachusetts General Hospital and Harvard Medical School Charlestown, Massachusetts United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPupil dynamics serve as a physiological indicator of cognitive processes and arousal states of the brain across a diverse range of behavioral experiments. Pupil diameter changes reflect brain state fluctuations driven by neuromodulatory systems. Resting-state fMRI (rs-fMRI) has been used to identify global patterns of neuronal correlation with pupil diameter changes; however, the linkage between distinct brain state-dependent activation patterns of neuromodulatory nuclei with pupil dynamics remains to be explored. Here, we identified four clusters of trials with unique activity patterns related to pupil diameter changes in anesthetized rat brains. Going beyond the typical rs-fMRI correlation analysis with pupil dynamics, we decomposed spatiotemporal patterns of rs-fMRI with principal component analysis (PCA) and characterized the cluster-specific pupil\u2013fMRI relationships by optimizing the PCA component weighting via decoding methods. This work shows that pupil dynamics are tightly coupled with different neuromodulatory centers in different trials, presenting a novel PCA-based decoding method to study the brain state-dependent pupil\u2013fMRI relationship.\n\n## Introduction\n\nPupil diameter change reflects the brain state and cognitive processing (Beatty and Lucero-Wagoner, 2000; Eckstein et al., 2017; Laeng et al., 2012; Wilhelm and Wilhelm, 2003). It contains information about behavioral variables as diverse as a subject\u2019s arousal fluctuation (McGinley et al., 2015; Yoss et al., 1970; McCormick et al., 2020), sensory task performance (McGinley et al., 2015; Hakerem and Sutton, 1966), movement (Stringer et al., 2019; Salkoff et al., 2020; Musall et al., 2019; Reimer et al., 2014), exerted mental effort (Hess and Polt, 1964; Kahneman and Beatty, 1966; Aln\u00e6s et al., 2014), expected reward (O\u2019Doherty et al., 2003), task-related uncertainty (Satterthwaite et al., 2007; Nassar et al., 2012; Richer and Beatty, 1987), or upcoming decisions (de Gee et al., 2014; Sheng et al., 2020). This richness of behavioral correlates is partly explained by the fact that multiple neuronal sources drive pupil activity. Pupil diameter changes reflect spontaneous neural activity across the cortex (Stringer et al., 2019; Salkoff et al., 2020; Musall et al., 2019; Yellin et al., 2015; Pais-Rold\u00e1n et al., 2020) and in major subcortical areas (Stringer et al., 2019; Joshi et al., 2016; Wang et al., 2012; Schneider et al., 2016; Ranson and Magoun, 1933). Both sympathetic and parasympathetic systems innervate muscles controlling pupil dilation and constriction (Bonvallet and Zbrozyna, 1963; McDougal and Gamlin, 2015; Y\u00fczge\u00e7 et al., 2018), and the activity of subcortical nuclei mediating neuromodulation has been tightly coupled with pupillary movements (Pais-Rold\u00e1n et al., 2020; Joshi et al., 2016; Reimer et al., 2016; Rajkowski, 1993; de Gee et al., 2017; Murphy et al., 2014; Breton-Provencher and Sur, 2019). In particular, rapid and sustained pupil size changes are associated with cortical noradrenergic and cholinergic projections, respectively (Reimer et al., 2016), and direct recordings of the noradrenergic locus coeruleus demonstrate neuronal activity highly correlated with pupil dynamics (Joshi et al., 2016; Rajkowski, 1993; Breton-Provencher and Sur, 2019; Aston-Jones and Cohen, 2005). Also, pupil diameter changes are regulated through dopaminergic neuromodulation under drug administration (Shannon et al., 1976) and in reward-related tasks (O\u2019Doherty et al., 2003; de Gee et al., 2017). Studies also show that pupil dilation and constriction can be controlled by serotonergic agonists and antagonists, respectively (Vitiello et al., 1997; Schmid et al., 2015). These studies have revealed the highly complex relationship between pupil dynamics and brain state fluctuations (McCormick et al., 2020; Reimer et al., 2014; Y\u00fczge\u00e7 et al., 2018; Lowenstein et al., 1963).\n\nResting-state fMRI (rs-fMRI) studies have uncovered global pupil\u2013fMRI correlation patterns in human brains as well as revealed that the pupil dynamics\u2013fMRI relationship changed under different lighting conditions or when subjects engaged in mental imagery (Yellin et al., 2015; Schneider et al., 2016). The dynamic functional connectivity changes detected by fMRI, possibly modulated by the interplay of cholinergic and noradrenergic systems (Shine, 2019), are also reflected in pupil dynamics both at rest (Shine et al., 2016) and in task conditions (M\u00e4ki-Marttunen, 2020). Furthermore, rs-fMRI has been used to display a differential correlation pattern with brainstem noradrenergic nuclei, e.g., A5 cell group, depending on the cortical cross-frequency coupling state in the animal model (Pais-Rold\u00e1n et al., 2020). Although rs-fMRI enables brain-wide pupil\u2013fMRI correlation analysis across different states, the linkage of brain state-dependent pupil dynamics with distinct activation patterns of neuromodulatory nuclei remains to be thoroughly investigated beyond the conventional analysis methods.\n\nHere, we aimed to differentiate brain states with varied coupling patterns of pupil dynamics with the subcortical activity of major neuromodulatory nuclei in an anesthetized rat model. First, we demonstrated that the pupil\u2013fMRI relationship is not uniform across different scanning trials and employed a clustering procedure to identify distinct pupil\u2013fMRI spatial correlation patterns from a cohort of datasets. Next, we modeled the relationship of the two modalities for each cluster using principal component analysis (PCA)-based decoding methods (gated recurrent unit [GRU] [Cho, 2014] neural networks and linear regression) and characterized unique subcortical activation patterns coupled with specific pupil dynamic features. This work demonstrates the effectiveness of PCA-based decoding to dissect the time-varied pupil\u2013fMRI relationship corresponding to different forms of brain state-dependent neuromodulation.\n\n## Results\n\n### Identification of brain states with distinct pupil dynamics correlation patterns\n\nTo investigate brain state-dependent pupil dynamics, we acquired whole-brain rs-fMRI with real-time pupillometry in anesthetized rats (n = 10) as previously reported (Pais-Rold\u00e1n et al., 2020). Initially, the pupil dilation and fMRI time series from all 15 min trials (n = 74) were concatenated. A voxel-wise correlation map of the concatenated pupil signals with fMRI time courses showed a global negative correlation (Figure 1A). However, the generated map was not representative of all trials, which was revealed by creating correlation maps for individual trials (Figure 1B). These maps demonstrated high variability of pupil\u2013fMRI correlations, which is presented by the histogram distribution of spatial correlation values between individual-trial spatial maps and the concatenated all-trial map (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig1-v2.jpg)\n\n**Figure 1.:** (A) Pupil\u2013fMRI correlation map created by correlating the two modalities\u2019 concatenated signals from all trials. (B) Selected individual-trial correlations maps. (C) Histogram of spatial correlations between the all-trial correlation map and individual-trial maps. High variability of similarities between the maps shows that the pupil\u2013fMRI relationship is not stationary and changes across trials.\n\nNext, we clustered all trials into different groups based on pupil\u2013fMRI correlation maps (Figure 2A). To facilitate the clustering analysis, we reduced the dimensionality of the spatial correlation maps using the uniform manifold approximation and projection (UMAP) method (McInnes et al., 2020) and decreased the number of features used for clustering from the number of voxels (n = 20,804) to 72 for each map. Three to seven clusters were identified with Gaussian mixture modeling and examined using silhouette analysis (McLachlan and Basford, 1988; Rousseeuw, 1987). Here, we focused on the four-cluster categorization since this division yielded the highest mean silhouette scores (Figure 2B) across 100 random UMAP and GMM initializations. For each trial, we selected its most common cluster membership across the 100 repetitions and used it in the following analysis. The clustering results exhibited a very high degree of reproducibility as seen in the plots displaying the reproducibility of cluster labels and mean cluster correlation maps (Figure 2\u2014figure supplement 1). The clusters had the following trial counts: n1 = 8; n2 = 30; n3 = 24; n4 = 12. The mean power spectral density (PSD) estimates of pupil dynamics based on the cluster division were plotted in Figure 2C. PSD of cluster one showed a distinct peak at 0.018 Hz as well as the lowest baseline pupil diameter values. In contrast, cluster 4 had the highest mean baseline diameter and a peak at 0.011 Hz. Clusters 2 and 3 showed peaks of oscillatory power at less than 0.01 Hz. The ultra-slow oscillation is typical for spontaneous pupil fluctuations (McLaren et al., 1992). All PSDs and example pupil signals from each cluster are shown in Figure 2\u2014figure supplement 2. We recreated pupil\u2013fMRI correlation maps based on the four clusters (Figure 2D). Three clusters (1, 2, and 4) showed negative correlations across large parts of the brain, with the correlation strength differing across clusters. In contrast, cluster 3 displayed a very low mean correlation with positive coefficients spreading across the entire brain. It is also noteworthy that cluster 1 showed a high positive correlation in the periaqueductal gray and ventral midbrain regions. The distinct qualities of identified clusters supported the usage of data-driven clustering for identifying brain state-dependent pupil dynamics.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of the clustering procedure. UMAP is used to reduce the dimensionality of all individual-trial correlation maps to 72 dimensions. A 2D UMAP-projection of the real data is shown. Each dot represents a single trial. The trials are clustered using Gaussian mixture model clustering. Different numbers of clusters are evaluated. (B) The final number of clusters is selected based on silhouette analysis. The highest average silhouette score is obtained with k = 4 clusters. Shaded area shows standard deviations. (C) Pupil power spectral density estimates (PSD) of each of the four clusters. Signals were downsampled to match the fMRI sampling rate. Shaded areas show standard deviations. (D) Cluster-specific correlation maps based on concatenated signals belonging to the respective groups.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Matrix displaying the ratio of cluster membership labels matching the most common cluster membership assignment across the 100 repetitions. (B) Matrix displaying the mean spatial correlation between the 100 cluster-specific maps and the maps based on the most common cluster membership assignment.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) PSDs of all trials divided based on their cluster memberships. Clusters 1 and 3 show specific peak frequencies. Cluster 4 shows the largest PSDs, hence the largest pupil size fluctuations. Cluster 1 shows the opposite. (B) Two example pupil diameter time courses are plotted per cluster. The magnitude of changes reflects the PSD differences visible in (A).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) HRFs with different peak times were used to create the convolved and lagged pupil signals. (B) Mean match ratio of cluster membership labels created using the convolved signals and those employed throughout the manuscript. The shaded area shows the standard deviation. (C) Mean spatial correlation between cluster-specific maps created using the convolved and non-convolved signals. The shaded area shows the standard deviation.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Matrix displaying the ratio of split-halves cluster membership labels matching the cluster membership assignment based on all trials across 100 repetitions. (B) Matrix displaying the mean spatial correlation between the 100 split-halves cluster-specific maps and maps based on all trials.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) A real pupil\u2013fMRI correlation map and three example surrogate maps. (B) Matrix displaying the ratio of cluster membership labels generated based on the surrogate maps and those based on real data. (C) Matrix displaying the mean spatial correlation between the surrogate cluster-specific maps and those based on real data.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Based on the silhouette score criterion, the n = 4 clusters result should be chosen even when dividing the trials into three parts.\n\nLastly, we performed a series of analyses to investigate cluster reproducibility beyond the initial random initializations. First, to compensate for the possible lag between pupil and fMRI, we convolved pupil signals with hemodynamic response function (HRF) kernels with different peak times (Yellin et al., 2015; Pais-Rold\u00e1n et al., 2020; Figure 2\u2014figure supplement 3A). We regenerated the correlation maps and repeated the clustering procedure 100 times for each kernel. The high cluster membership and correlation map reproducibility across a range of HRF peak times (Figure 2\u2014figure supplement 3B,C) justify the use of non-convolved signals and emphasize the impact of slow fluctuations on the correlation results. Similarly to Allen et al., 2014, we performed 100 half-split reproducibility analyses and showed that to a large degree the cluster memberships are preserved when using half of the trials (Figure 2\u2014figure supplement 4). The match might be imperfect, e.g., due to smaller numbers of a particular cluster\u2019s samples in a half-split interacting with UMAP dimensionality reduction parameters. Next, using spatial surrogate maps with spatial autocorrelation and value distribution matching that of real correlation maps (Burt et al., 2020) (see Materials and methods), we verified that the spatial location of correlation values and not the mean values or spatial autocorrelation properties were driving the clustering (Figure 2\u2014figure supplement 5). Finally, we showed that when splitting the trials into shorter runs, clustering the data into n = 4 clusters should be selected based on the silhouette score criterion up to a 300 s trial length (Figure 2\u2014figure supplement 6). The conducted analyses further justified the selection of n = 4 clusters and verified the reproducibility of the UMAP and GMM clustering procedure.\n\n### Decoding-based investigation of the relationship between whole-brain rs-fMRI and pupil dynamics\n\nTo characterize the pupil\u2013fMRI relationship beyond the conventional correlation analysis, we implemented data-driven decoding models to couple the dynamics of the two modalities. First, we validated the approach in a setting involving all trials. We then employed it to investigate the pupil\u2013fMRI coupling in the previously identified clusters. First, we performed principal component analysis (PCA) to extract spatiotemporal features of whole-brain rs-fMRI signals (n = 300) and trained either linear regression (LR) or a gated recurrent unit (GRU) neural network to predict pupil dynamics based on rs-fMRI PCA time courses (Figure 3A). Furthermore, we compared the LR and GRU prediction models with a correlation-template-based pupil dynamics estimation used in previous studies (Pais-Rold\u00e1n et al., 2020; Chang et al., 2016). All methods were trained on randomly chosen 64 trials using cross-validation and then were tested on additional 10 unseen trials from the same animals. The PCA model was fit with the 64 training trials only. As the correlation-template-based predictions were bounded to the <\u22121; 1> range, Pearson\u2019s correlation coefficient was used to evaluate the decoding of all methods. We optimized the hyperparameters of GRUs and linear regression variants using Bayesian optimization and fourfold cross-validation (hyperparameter values are listed in Materials and methods). Both linear regression and GRU outperformed the correlation-template approach on both training (CCbase = 0.37 \u00b1 0.27 s.d., CCLR = 0.45 \u00b1 0.26 s.d., CCGRU = 0.46 \u00b1 0.25 s.d., pLR = 4.3*10\u20136, pGRU = 2.4 \u00d7 10\u20136) and test sets (CCbase = 0.25 \u00b1 0.17 s.d., CCLR = 0.44 \u00b1 0.24 s.d., CCGRU = 0.45 \u00b1 0.27 s.d., pLR = 0.003, pGRU = 0.01) (Figure 3B). Notably, the test set prediction scores do not reflect generalization across different rats as the training and test data could belong to the same animals. We repeated the linear regression prediction procedure (including the PCA step) on 100 other random train-test trial splits and validated that the obtained scores are representative of the distribution (Figure 3\u2014figure supplement 1A). We also verified the number of rs-fMRI PCA components by testing varied component counts, showing that the highest prediction scores were achieved with 300 components (Figure 3\u2014figure supplement 1B,C). In addition, when varying the temporal shift between pupil dynamics and rs-fMRI signals, we obtained the highest prediction scores with zero shift between the input and output signals (Figure 3\u2014figure supplement 1B). Similarly, the highest prediction scores were obtained based on pupil signals convolved with an HRF kernel with a peak at 0 s (Figure 3\u2014figure supplement 1C). Interestingly, the component which explained the most pupillary variance (explained var. = 7.03%) and had the highest linear regression weight, explained only 0.8% of the fMRI variance (Figure 3\u2014figure supplement 2). Furthermore, the component that explained the most fMRI variance (explained var. = 22.01%) was weakly coupled with the pupil fluctuation (explained var. = 0.51%). Thus, this prediction-based PCA component weighting scheme enabled the dissection of unique brain activity features for the modeling of the pupil\u2212fMRI relationship. It should also be noted that GRU and linear regression methods obtained comparable scores and both methods showed similar prediction performance (Figure 3C). Figure 3\u2014figure supplement 3 shows prediction maps created by integrating PCA components using linear regression weights or averaged GRU gradients (details in Materials and methods). The resemblance of the two maps suggests that despite GRU\u2019s potential for encoding complex and non-linear functions, a linear regression-based rs-fMRI mapping scheme was sufficient for predicting pupil dynamics.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of the decoding procedure. PCA was applied to fMRI data. The PCA time courses were fed into either linear regression or GRU decoders, which generated pupil signal predictions. The prediction quality was evaluated by comparing the generated signals with real pupil fluctuations using Pearson\u2019s correlation coefficients. (B) Comparison of the three methods\u2019 pupil dynamics predictions. Linear regression and GRU performed better than the correlation-based baseline method on both the cross-validation splits (CCbase = 0.37 \u00b1 0.27 s.d., CCLR = 0.45 \u00b1 0.26 s.d., CCGRU = 0.46 \u00b1 0.25 s.d., pLR = 4.3*10\u20136, pGRU = 2.4 \u00d7 10\u20136) and on test data (CCbase = 0.25 \u00b1 0.17 s.d., CCLR = 0.44 \u00b1 0.24 s.d., CCGRU = 0.45 \u00b1 0.27 s.d., pLR = 0.003, pGRU = 0.01). Scattered points show individual prediction scores. (C) Linear regression and GRU predictions of three selected trials (CCGRU-top = 0.79, CCLR-top = 0.77, CCGRU-middle = 0.75,CCLR-middle = 0.73, CCGRU-bottom = 0.02, CCLR-bottom = 0.06). Qualitatively, linear regression and GRU predictions were very similar.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Mean test and train set prediction scores across 100 random train-test splits. The red dot shows values described in the manuscript. (B) The influence of temporal shifts and different component counts on prediction scores. Temporally shifting the fMRI and pupil fluctuation signals reduced prediction accuracy. Predictions generated based on 300 PCA components obtained the best scores. (C) The influence of predicting the HRF-convolved pupil signals and using different component counts on prediction scores. Predicting signals convolved with an HRF with a peak at 0 s generated the highest scores. Predictions generated based on 300 PCA components obtained the best scores.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) fMRI variance explained by individual PCA components. Components are ordered by variance explained. Black dot marks the component with the most explained pupil variance. (B) Pupil variance explained by the PCA signals. Same ordering as in (A). The component explaining the most pupil variance (explained var. = 7.03%) explains only 0.8% of fMRI variance. Black dot marks the component with the most explained pupil variance. (C) Weights of the linear regression model trained to decode pupil signals based on fMRI-PCA data. Each weight corresponds to a single PCA component\u2019s time course. The highest absolute weights are not assigned to the components explaining the most fMRI variance. Black dot marks the component with the most explained pupil variance.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Spatial maps were generated by integrating PCA spatial maps with either linear regression weights or average GRU gradients. The maps highlight the same areas. This observation coupled with the similarity of predictions generated by both methods and the short GRU training time suggests that a linear mapping was sufficient for this decoding task.\n\nThe map generated by combining PCA components with the linear regression decoder enabled the identification of brain nuclei which were not highlighted in the correlation map shown in Figure 1A. Figure 4 shows an overview of the PCA-based fMRI prediction map overlaid on the brain atlas, revealing pupil-related activation patterns at key neuromodulatory nuclei of the ascending reticular activating system (ARAS) \u2013 the dopaminergic ventral tegmental area, substantia nigra and supramammillary nucleus, the serotonergic raphe and B9 cells, the histaminergic tuberomammillary nucleus, the cholinergic laterodorsal tegmental and pontine nuclei, the glutamatergic parabrachial nuclei, and the area containing the noradrenergic locus coeruleus. Positive weights were also located in subcortical regions involved in autonomous regulation \u2013 the lateral and preoptic hypothalamus and the periaqueductal gray. In addition, the subcortical basal forebrain nuclei (the horizontal limb of the diagonal band, nucleus accumbens, and olfactory tubercle) and the septal area were positively coupled with pupil dynamics. Lastly, regions of the hippocampal formation \u2013 the hippocampus, entorhinal cortex, and subiculum, as well as cingulate, retrosplenial, and visual cortices displayed positive weighting. It should be noted that the thalamus and the hippocampus displayed both positive and negative weights. Negative coupling was also found in the cerebellum and most somatosensory cortical regions. The voxel-wise statistical significance (p<0.01) was validated using randomization tests and corrected for multiple comparisons with false discovery rate correction (details in Materials and methods). The identification of pupil-related information in brain regions closely tied to neuromodulatory activity and to autonomous and brain state regulation (Duyn et al., 2020; Benarroch, 2018; Dampney, 2016; Silvani et al., 2015; Kuwaki and Zhang, 2010; Grimaldi et al., 2014; van den Brink et al., 2019) highlights the advantage of using PCA decomposition combined with prediction-based decoding methods instead of conventional correlation analysis to identify pupil-related subcortical activation patterns.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig4-v2.jpg)\n\n**Figure 4.:** The spatial map highlights regions from which pupil-related information was decoded. It was created by integrating PCA spatial maps with weights of the trained linear regression model. The map displays positive weights in all neuromodulatory regions of the ascending reticular activating system as well as in other regions involved in autonomous regulation \u2013 the lateral and preoptic hypothalamus and the periaqueductal gray. The subcortical basal forebrain nuclei (the horizontal limb of the diagonal band, nucleus accumbens, and olfactory tubercle) and the septal area were also positively coupled to pupil dynamics. Finally, regions of the hippocampal formation \u2013 the hippocampus, entorhinal cortex and subiculum, as well as cingulate, retrosplenial and visual cortices showed positive weights. The thalamus and the hippocampus had both positive and negative weights. Strong negative weighting was found in the cerebellum and most somatosensory cortical regions. Masked regions (white) did not pass the false discovery rate corrected significance threshold (p=0.01). Abbreviations: B9 \u2013 B9 serotonergic cells, Ce \u2013 cerebellum, CgCx \u2013 cingulate cortex, DB \u2013 horizontal limb of the diagonal band, ECx \u2013 entorhinal cortex, Hp \u2013 hippocampus, LC \u2013 locus coeruleus, LDT \u2013 laterodorsal tegmental nuclei, LH \u2013 lateral hypothalamus, NA \u2013 nucleus accumbens, OTu \u2013 olfactory tubercle, PAG \u2013 periaqueductal gray, PB \u2013 parabrachial nuclei, PO \u2013 preoptic nuclei, PPT \u2013 pedunculopontine tegmental nuclei, Ra \u2013 raphe, RF \u2013 reticular formation, RsCx \u2013 retrosplenial cortex, Sb \u2013 subiculum, SCx \u2013 somatosensory cortex, Se \u2013 septal nuclei, SN \u2013 substantia nigra, SuM \u2013 supramammillary nucleus, Th \u2013 thalamus, TuM \u2013 tuberomammillary nucleus, VTA \u2013 ventral tegmental area.\n\n### Characterization of brain state-dependent PCA-based pupil\u2013fMRI prediction maps\n\nTo differentiate brain state-dependent subcortical activation patterns related to different pupil dynamics, we retrained the linear regression model based on the four different clusters shown in Figure 2D and created PCA-based fMRI prediction maps for each cluster (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig5-v2.jpg)\n\n**Figure 5.:** (A) Pupil information content maps generated by integrating PCA spatial maps with weights of linear regression models trained on cluster-specific trials. In all clusters, negative weights were found in the somatosensory cortex, the cerebellum, and posterior parts of the thalamus. All clusters had positive weights in anterior thalamic, preoptic and hypothalamic nuclei, subiculum, parts of the hippocampus and in the region containing the tuberomammillary nucleus. Clusters 1\u20133 displayed positive weights in neuromodulatory brainstem regions, substantia nigra, and ventral tegmental area, as well as the entorhinal cortex. The cingulate cortex and retrosplenial cortex and supramammillary nucleus were positive in clusters 2\u20134. Marked with gray are frames plotted in (B). (B) Cluster-specific spatial patterns are portrayed on slices selected from A (marked with gray rectangles). Characteristic to cluster 1 were positive weights in the dopaminergic substantia nigra and ventral tegmental area as well as in their efferent projections in the nucleus accumbens and caudate-putamen. Positive weighting was also found in the periaqueductal gray and brainstem laterodorsal tegmental and parabrachial nuclei, as well as in the superior colliculus. Cluster 2 was characterized by the strongest positive weights in hypothalamic regions, lateral in particular. Brainstem areas containing the arousal-regulating locus coeruleus, laterodorsal tegmental, and parabrachial nuclei, as well as the septal area and the olfactory tubercle displayed high positive weights. In cluster 3, as in cluster 2, the area containing the locus coeruleus, laterodorsal tegmental, and parabrachial nuclei showed positive linkage with pupil dynamics. The highest cluster 3 values were located in preoptic and other hypothalamic areas, as well as in stria terminalis carrying primarily afferent hypothalamic fibers, caudate-putamen, and globus pallidus. In cluster 4, the neuromodulatory region showing the strongest positive weights was the caudal raphe. The anterior parts of the brainstem displayed negative weighting. Characteristic to cluster 4 were high weights in the thalamus and in the hippocampus and the subiculum forming the hippocampal formation. Masked regions (white) did not pass the false discovery rate corrected significance threshold (p=0.01). Abbreviations: Ce \u2013 cerebellum, CgCx \u2013 cingulate cortex, CP \u2013 caudate-putamen, GP \u2013 globus pallidus, Hp \u2013 hippocampus, Hy \u2013 hypothalamus, LC \u2013 locus coeruleus, LDT \u2013 laterodorsal tegmental nuclei, LH \u2013 lateral hypothalamus, NA \u2013 nucleus accumbens, OTu \u2013 olfactory tubercle, PAG \u2013 periaqueductal gray, PB \u2013 parabrachial nuclei, PO \u2013 preoptic nuclei, Ra \u2013 raphe, Sb \u2013 subiculum, SC \u2013 superior colliculus, Se \u2013 septal area, SN \u2013 substantia nigra, ST \u2013 stria terminalis, Th \u2013 thalamus, VTA \u2013 ventral tegmental area.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Masked regions (white) did not pass the false discovery rate corrected significance threshold (p=0.01). Abbreviations: Ce \u2013 cerebellum, CP \u2013 caudate-putamen, ECx \u2013 entorhinal cortex, Hp \u2013 hippocampus, Hy \u2013 hypothalamus, LDT \u2013 laterodorsal tegmental nuclei, LH \u2013 lateral hypothalamus, NA \u2013 nucleus accumbens, PAG \u2013 periaqueductal gray, PB \u2013 parabrachial nuclei, Sb \u2013 subiculum, SC \u2013 superior colliculus, SCx \u2013 somatosensory cortex, SN \u2013 substantia nigra, Th \u2013 thalamus, TuM \u2013 tuberomammillary nucleus, VTA \u2013 ventral tegmental area.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Masked regions (white) did not pass the false discovery rate corrected significance threshold (p=0.01). Abbreviations: B9 \u2013 B9 serotonergic cells, Ce \u2013 cerebellum, CgCx \u2013 cingulate cortex, ECx \u2013 entorhinal cortex, Hp \u2013 hippocampus, Hy \u2013 hypothalamus, LC \u2013 locus coeruleus, LDT \u2013 laterodorsal tegmental nuclei, LH \u2013 lateral hypothalamus, OTu \u2013 olfactory tubercle, PB \u2013 parabrachial nuclei, PPT \u2013 pedunculopontine tegmental nuclei, Ra \u2013 raphe, RsCx \u2013 retrosplenial cortex, Sb \u2013 subiculum, SCx \u2013 somatosensory cortex, Se \u2013 septal nuclei, SN \u2013 substantia nigra, SuM \u2013 supramammillary nucleus, Th \u2013 thalamus, TuM \u2013 tuberomammillary nucleus, VTA \u2013 ventral tegmental area.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Masked regions (white) did not pass the false discovery rate corrected significance threshold (p=0.01). Abbreviations: Ce \u2013 cerebellum, CgCx \u2013 cingulate cortex, CP \u2013 caudate-putamen, ECx \u2013 entorhinal cortex, GP \u2013 globus pallidusHp \u2013 hippocampus, LC \u2013 locus coeruleus, LDT \u2013 laterodorsal tegmental nuclei, LH \u2013 lateral hypothalamus, PAG \u2013 periaqueductal gray, PB \u2013 parabrachial nuclei, PO \u2013 preoptic nuclei, Ra \u2013 raphe, RF \u2013 reticular formation, RsCx \u2013 retrosplenial cortex, Sb \u2013 subiculum, SCx \u2013 somatosensory cortex, SN \u2013 substantia nigra, ST \u2013 stria terminalis, SuM \u2013 supramammillary nucleus, Th \u2013 thalamus, TuM \u2013 tuberomammillary nucleus, VTA \u2013 ventral tegmental area.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68980/elife-68980-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Masked regions (white) did not pass the false discovery rate corrected significance threshold (p=0.01). Abbreviations: Ce \u2013 cerebellum, CgCx \u2013 cingulate cortex, Hp \u2013 hippocampus, LH \u2013 lateral hypothalamus, Ra \u2013 raphe, RsCx \u2013 retrosplenial cortex, Sb \u2013 subiculum, SCx \u2013 somatosensory cortex, SuM \u2013 supramammillary nucleus, Th \u2013 thalamus, TuM \u2013 tuberomammillary nucleus.\n\nEach PCA-based prediction map portrayed a cluster-specific spatial pattern (Figure 5B). Cluster 1 was characterized by strong positive weights in the dopaminergic substantia nigra and ventral tegmental area as well as in their efferent projections in the striatum (nucleus accumbens and caudate-putamen) (Beckstead et al., 1979). Positive coupling was also displayed in the periaqueductal gray and brainstem laterodorsal tegmental and parabrachial nuclei as well as in the superior colliculus. Cluster 2 had the strongest positive weights in hypothalamic regions, lateral in particular, but also in brainstem arousal-regulating areas containing the locus coeruleus, laterodorsal tegmental, and parabrachial nuclei. High positive values were also found in the septal area and the olfactory tubercle. In cluster 3, the highest values were visible in preoptic and other hypothalamic areas, as well as in stria terminalis carrying primarily afferent hypothalamic fibers (De Olmos and Ingram, 1972), caudate-putamen, and globus pallidus. As in cluster 2, the region containing the locus coeruleus, laterodorsal tegmental, and parabrachial nuclei showed positive linkage with pupil dynamics. Contrastingly, in cluster 4, caudal raphe was the neuromodulatory region showing the strongest positive weights and the anterior parts of the brainstem displayed negative weighting. Characteristic to cluster 4 were high weights in the hippocampus and the subiculum forming the hippocampal formation, as well as in thalamic and amygdaloid areas. In all clusters, negative weights were detected across somatosensory cortices, the cerebellum, and posterior parts of the thalamus, as well as positive weights in hypothalamic and anterior thalamic nuclei and in the area containing the tuberomammillary nucleus. The subiculum and parts of the hippocampus were also positive in all clusters; however, the entorhinal cortex, also belonging to the hippocampal formation, was positive only in clusters 1\u20133. The same three clusters showed major positive weights in the neuromodulatory brainstem regions, substantia nigra, and ventral tegmental area. Clusters 2\u20134 displayed strong weights in the supramammillary nucleus, retrosplenial cortex, and the cingulate cortex, which has been coupled with both noradrenergic modulation (Aston-Jones and Cohen, 2005) and pupil dynamics (Pais-Rold\u00e1n et al., 2020; Joshi et al., 2016). Enlarged cluster-specific maps are displayed in Figure 5\u2014figure supplements 1\u20134. Here, we demonstrated the effectiveness of combining the PCA-based approach with clustering methods to reveal brain state-specific subcortical activity patterns related to pupil diameter changes.\n\n## Discussion\n\nPrevious studies analyzed the relationship of fMRI and pupil dynamics either by directly correlating pupil size changes with the fMRI signal fluctuation (Yellin et al., 2015; Pais-Rold\u00e1n et al., 2020; Schneider et al., 2016) or by applying a general linear model to produce voxel-wise activation maps (Aln\u00e6s et al., 2014; Murphy et al., 2014; Clewett et al., 2018). Here, we performed PCA-based dimensionality reduction to decouple spatiotemporal features of fMRI signals (Mwangi et al., 2014) and implemented prediction methods to decode pupil dynamics based on the optimized PCA component weighting (Figure 3).\n\nTwo advantages can be highlighted in the present pupil\u2013fMRI dynamic mapping scheme. First, conventional correlation analysis relies on the temporal features of fMRI time courses from individual voxels or regions of interest. Hence, it could not decouple the superimposed effects of multiple signal sources (Carbonell et al., 2011; Tong et al., 2019) or characterize the state-dependent dynamic subcortical correlation patterns. On the other hand, the PCA decomposition scheme solved these issues by decoupling multiple components of rs-fMRI signals with unique spatiotemporal patterns carrying pupil-related information. Second, the data-driven training of prediction methods optimized the weighting of individual rs-fMRI PCA components. Using the optimized neural network (GRU) or linear regression (LR)-based decoding models, we created prediction maps linking pupil dynamics with fMRI signal fluctuation of specific subcortical nuclei (Figure 4, Figure 3\u2014figure supplement 3). Also, the decoding models showed much better pupil dynamics prediction than the correlation-template-based approach reported previously (Pais-Rold\u00e1n et al., 2020; Chang et al., 2016). Meanwhile, it should be noted that both LR and GRU models generated qualitatively similar prediction maps, highlighting the pupil-related rs-fMRI signal fluctuation from the same subcortical brain regions (Figure 3C, Figure 3\u2014figure supplement 3). Unlike our previous single-vessel fMRI prediction study (Sobczak et al., 2021a), the GRU-based neural network prediction scheme may require much bigger training datasets to outperform linear regression modeling (Schulz et al., 2020). Another plausible explanation is that the pupil dynamics were predominantly and linearly driven by only a few rs-fMRI PCA components (Figure 3\u2014figure supplement 2), presenting brain activation patterns related to arousal fluctuation and autonomous regulation (Duyn et al., 2020; \u00d6zbay, 2019).\n\nThe PCA-based prediction modeling provides a novel scheme to decipher subcortical spatial patterns of fMRI signal fluctuation related to brain state-dependent pupil dynamics. Most notably, neuromodulatory nuclei of ARAS and other subcortical nuclei involved in brain state modulation, as well as autonomous regulation were identified in the PCA-prediction map created from all trials. The highlighted hypothalamus, basal forebrain, and neuromodulatory brainstem nuclei are responsible for both global brain state modulation and autonomous cardiovascular, respiratory, and baroreflex control (Duyn et al., 2020; Benarroch, 2018; Dampney, 2016; Silvani et al., 2015; Kuwaki and Zhang, 2010; Grimaldi et al., 2014; van den Brink et al., 2019). Consequently, the source of pupil-related information found across the cortex was probably modulated through global subcortical projections rather than a more direct causal interaction with pupil size changes (Reimer et al., 2016; Lecrux and Hamel, 2016). Noradrenergic neurons of the locus coeruleus are the hypothesized drivers of pupil dilation (Joshi et al., 2016; Aston-Jones and Cohen, 2005), and both the area containing the locus coeruleus and many of its input regions (Breton-Provencher and Sur, 2019) were highlighted in the PCA map. However, the observed activation of the hypothalamus and other neuromodulatory nuclei suggests that, in the anesthetized state, pupil diameter fluctuation reflects a complex interaction of subcortical homeostatic and brain state-modulating centers.\n\nAlso, we have shown that these subcortical interactions and the neural correlates of pupil dynamics are not stationary but change across trials in a brain state-dependent manner. Based on the correlation patterns, we identified four clusters of trials with distinct pupil\u2013fMRI coupling. The clusters displayed a high degree of reproducibility when repeating the clustering procedure with all trials; however, the lower label match ratios of clusters 1 and 2 in half-split analyses (Figure 2\u2014figure supplement 4) should be considered. Our results demonstrate that pupil size changes can be modulated by different combinations of subcortical nuclei, indicating varied brain state fluctuations underlying different oscillatory patterns of pupil dynamics (Figure 2C). This is further exemplified by examining the cluster-specific PCA prediction maps. The map of cluster 2 demonstrates the strongest coupling of pupil dynamics with the hypothalamus, which is known to drive pupil dilation (Ranson and Magoun, 1933) and also highlights other brain state-regulating nuclei of the ARAS. It is possible that the hypothalamus was the key driver of brain state fluctuation in cluster 2 (Grimaldi et al., 2014; Lee and Dan, 2012). On the other hand, hypothalamic weights were least prevalent in cluster 1, which displayed strong pupil coupling with the dopaminergic system known to modulate pupil dynamics (O\u2019Doherty et al., 2003; de Gee et al., 2017; Shannon et al., 1976). Finally, in trials of cluster 4, the caudal raphe nucleus was the brainstem neuromodulatory nucleus whose activity had the strongest positive weighting to predict pupil fluctuations. Additionally, the subiculum weights were the strongest in cluster 4 out of all clusters. The positive coupling of the raphe and subiculum hints at the possibility of pupillometry reflecting the activity of circuits responsible for autonomous stress modulation (Lowry, 2002). The PCA prediction maps identify key nuclei coupled with pupil dynamics at different states and also highlight the complexity of brain activation patterns responsible for autonomous and brain state regulation.\n\nThe presented results should be interpreted in light of employing anesthesia to acquire BOLD fMRI signals within the MRI scanner. Alpha-chloralose was employed due to the quality of BOLD fMRI responses under this anesthetic (Hyder et al., 2016; Alonso et al., 2011). The neural correlates of brain state-dependent pupil\u2013fMRI correlation differences under alpha-chloralose anesthesia have previously been verified (Pais-Rold\u00e1n et al., 2020). However, as alpha-chloralose has been reported to inhibit the sympathetic system\u2019s responses (Gaumann and Yaksh, 1990), its influence on pupil size and brain state changes should be investigated similarly to what has been done with other anesthetics. Previous studies report that the use of propofol dampened higher frequency pupil size changes observed in the awake state (Behrends et al., 2019), and slow pupil diameter fluctuations were influenced by both isoflurane and urethane anesthesia (Kum et al., 2016; Blasiak et al., 2013). Furthermore, the brain state changes we observed across trials could be a typical feature of brain activity observed in unanesthetized human subjects e.g. due to arousal or sleep state changes (Allen et al., 2014; Kaufmann et al., 2006; Tagliazucchi and Laufs, 2014) but could also be driven by the anesthetic, as in the case of urethane inducing sleep-like state changes (Blasiak et al., 2013; Clement et al., 2008). Although the present study is based on the anesthetized rat model, it provides a framework that could be applied to analyze human datasets. Working with awake subjects would mitigate the potential impact of anesthesia on the activity of the sympathetic system, which controls pupillary movements in an antagonistic relationship with the parasympathetic system (Bonvallet and Zbrozyna, 1963; McDougal and Gamlin, 2015). Additionally, the cognitive component of brain activity reflected in pupil diameter changes of awake human subjects could be investigated using the PCA-based fMRI decoding method.\n\nFurther research should also be directed toward investigating the state-dependent coupling of pupil dynamics and brain activity at finer temporal scales. Importantly, assuming stationarity of the relationship at any scale could lead to oversimplification of the results, as already evidenced by our ability to differentiate four distinct pupil\u2013fMRI coupling patterns instead of one common correlation map. Combining the analysis of individual fMRI frames (Liu et al., 2013; Tseng and Poppenk, 2020) with the phase of pupil diameter fluctuation, which is known to reflect the activity of different cortical neural populations (Reimer et al., 2014), would demonstrate whole-brain activity patterns coupled with pupil dilation and constriction. Finally, regions like the subiculum, which previously have not been linked to pupil dynamics, but displayed strong coupling weights in our study, could guide future electrophysiological studies to reveal novel neuronal regulatory mechanisms underlying pupil dynamics.\n\n### Conclusion\n\nWe provided a framework to investigate the brain state-dependent relationship between pupil dynamics and fMRI. The pupil-related brain activity was decoupled from other signal sources based on PCA decomposition and the cluster-specific pupil\u2013fMRI relationship was identified by integrating optimized PCA weighting features using decoding methods. Eventually, distinct subcortical activation patterns were revealed to highlight varied neuromodulatory nuclei corresponding to pupil dynamics.\n\n## Materials and methods\n\n### Animal preparation\n\nAll experimental procedures were approved by the Animal Protection Committee of T\u00fcbingen (Regierungsprasidium T\u00fcbingen; protocol KY12-14) and performed following the guidelines. Pupillometry and fMRI data acquired from 10 male Sprague Dawley rats had been previously published (Pais-Rold\u00e1n et al., 2020). The rats were imaged under alpha-chloralose anesthesia. For details related to the experimental procedures, refer to Pais-Rold\u00e1n et al., 2020.\n\n### fMRI acquisition and preprocessing\n\nAll MRI measurements were performed on a 14.1 T/26 cm magnet (Magnex, Oxford) with an Avance III console (Bruker, Ettlingen) using an elliptic trans-receiver surface coil (~2 \u00d7 2.7 cm). To acquire functional data, a whole-brain 3D EPI sequence was used. The sequence parameters were as follows: 1 s TR, 12.5 ms TE, 48 \u00d7 48 \u00d7 32 matrix size, 400 \u00d7 400 \u00d7 600 \u00b5m resolution. Each run had a length of 925 TRs (15 min 25 s). The RARE sequence was used to acquire an anatomical image for each rat. The RARE parameters were as follows: 4 s TR, 9 ms TE, 128 \u00d7 128 matrix size, 32 slices, 150 \u00b5m in-plane resolution, 600 \u00b5m slice thickness, 8\u00d7 RARE factor. The data from all rats were spatially co-registered. First, for each EPI run, all volumes were registered to the EPI mean. The EPI means were registered to corresponding anatomical images. To register all data to a common template, all RARE images were registered to a selected RARE image. The obtained registration matrices were then applied to the functional data. A temporal filter (0.002, 0.15 Hz) was applied to the co-registered data. The registration was performed using the AFNI software package (Cox, 1996). Principal component analysis (PCA) implemented in the Python scikit-learn library (Pedregosa, 2011) was used to reduce the dimensionality of fMRI data for prediction purposes. The PCA time courses were variance normalized before the optimization of linear regression and GRU weights. The functional and anatomical data are available online (Sobczak et al., 2021b).\n\n### Pupillometry acquisition and pupil diameter extraction\n\nFor each fMRI scan, a video with the following parameters was recorded: 24 bits per pixel, 240 \u00d7 352 pixels, 29.97 frames/s, RGB24 format. A customized MRI-compatible camera was used. For details related to the setup, refer to Pais-Rold\u00e1n et al., 2020. The DeepLabCut toolbox (Mathis et al., 2018; Nath, 2018) was used to extract the pupil position from each video frame. The toolbox\u2019s artificial neural network was optimized using 1330 manually labeled images extracted from 74 eye monitoring videos. Training frames were selected using an automated clustering-based DeepLabCut procedure. Four pupil edge points were manually labeled in each training image. Using the trained network, the four points were located in each recorded frame and their coordinates were used to calculate the pupil diameter as follows:\n\n$$\nd=\\frac{\\sqrt{x_{2}-x_{1}^{2}+y_{2}-y_{1}^{2}}+\\sqrt{x_{4}-x_{3}^{2}+y_{4}-y_{3}^{2}}}{2}\n$$\n\nSimultaneously, in each video, the eye size was calculated based on manual landmark identification. The eye size was then used to normalize the pupil size, such that pupil diameter values were limited to the <0, 1> range. The pupil diameter signals were averaged over 1 s windows to match the fMRI temporal resolution while reducing noise. Pupillometry time courses were variance normalized before the optimization of linear regression and GRU weights. The time courses are available online (Sobczak et al., 2021b).\n\n### Hemodynamic response function convolution\n\nPupil signals were convolved with HRF kernels with varied peak times to investigate the influence of correcting for the lag between pupil and fMRI signals. The following equation, involving a positive component for the positive response and a negative one for the undershoot, was used to generate the kernels:\n\n$$\nf(a)=\\frac{t^{a\u22121}e^{\u2212t}}{\u0393(a)}\u22120.3\\frac{t^{11}e^{\u2212t}}{\u0393(12)},\n$$\n\nwhere $a$ is a parameter controlling the peak time, and \u0393 is the gamma function. HRFs with peaks in the <0; 5> s range were used.\n\n### UMAP dimensionality reduction\n\nThe uniform manifold approximation and projection (UMAP) (McInnes et al., 2020) algorithm was employed to reduce the dimensionality of pupil\u2013fMRI correlation maps before clustering. We used the Python implementation of the algorithm provided by the authors of the method. First, UMAP finds a k-nearest neighbor graph. Based on silhouette scores we set k = 7. To facilitate clustering, we set the minimum allowed distance between points on the low dimensional manifold to 0. We projected the data from the voxel space (n = 20,804) to a 72-dimensional representation, as this was the highest number of dimensions the method permitted given 74 input trials.\n\n### Gaussian mixture model clustering\n\nTo cluster the trials in the low dimensional space resulting from the UMAP embedding, we used the expectation-maximization algorithm fitting mixture of Gaussians models to the data (McLachlan and Basford, 1988). We used the Python implementation from the scikit-learn library (Pedregosa, 2011) with default parameters.\n\n### Silhouette analysis \u2013 cluster number verification\n\nTo find the number of clusters for successive analyses, we evaluated clustering results using silhouette analysis (Rousseeuw, 1987) implemented in the Python scikit-learn library (Pedregosa, 2011). For each point, the method computes a silhouette score which evaluates how similar it is to points in its cluster versus points in other clusters. The clustering of the entire dataset was evaluated by computing the mean silhouette score across all points. The clustering result with the highest mean silhouette score was selected for successive analyses.\n\n### Cluster reproducibility\n\nThe cluster membership label of each trial was specified based on 100 repetitions of UMAP dimensionality reduction and GMM clustering applied to all trials. We found the final cluster labels by identifying which trials clustered together most often. These final labels were used to create cluster-specific correlation maps. Both the labels and maps were compared with those generated in following analyses to evaluate cluster reproducibility. In particular, we compared label match ratios and cluster map similarities (spatial correlations). We generated alternative clustering results based on: half-split analysis (randomly dividing the 74 trials into groups of 37), using HRF-convolved pupil signals, temporally splitting the data into more trials with shorter durations, and employing spatial surrogates with properties matching those of real maps. We repeated each analysis 100 times and compared results with the initial clustering.\n\n### Surrogate map generation\n\nSurrogate maps were created using the Brainsmash toolbox (Burt et al., 2020). For each correlation map, we generated 100 artificial surrogates that had the same values and spatial autocorrelation as the real map but different spatial patterns. By showing that clustering results based on surrogates were different, we verified that our clustering was not dependent on, e.g., mean map values but on the spatial patterns and regions highlighted in the maps.\n\n### Power spectral density estimation\n\nThe spectral analysis was performed using the Python SciPy library (Virtanen et al., 2020). To compute the PSDs of utilized signals, we employed Welch\u2019s method (Welch, 1967), with the following parameters: 512 discrete Fourier transform points; Hann window; 50% overlap.\n\n### Correlation map-based prediction\n\nFollowing a strategy described in previous studies (Pais-Rold\u00e1n et al., 2020; Chang et al., 2016) we used a pupil\u2013fMRI correlation map to predict pupillometry time courses given fMRI input data. To create the correlation map, pupillometry and fMRI data were concatenated across all trials and the pupil diameter fluctuation signal was correlated with each voxel\u2019s signal. This generated a 3D volume (the correlation map), which was then spatially correlated with each individual fMRI volume yielding a single predicted value for each time point. As the resulting time courses\u2019 amplitudes were bounded to the <\u22121; 1> range and not informative of the target signals amplitudes, Pearson\u2019s correlation coefficient was used to evaluate the quality of the predictions on a trial-by-trial basis.\n\n### Linear regression variants\n\nLinear regression was used to predict pupillometry data given fMRI-PCA inputs. Four linear regression variants were available to a Bayesian optimizer, which selected both the linear model type and its parameters. The available variants were ordinary least squares, Ridge, Lasso and elastic-net regression models. Python scikit-learn library (Pedregosa, 2011) implementations were used. L2 Ridge regression with a regularization parameter $\\alpha=19861$ obtained the best prediction scores and was found using the Hyperopt toolbox (Bergstra, 2011; Bergstra et al., 2013).\n\n### GRU\n\nThe second model employed for pupillometry decoding was the gated recurrent unit (GRU) (Cho, 2014) artificial neural network. The GRU is a recurrent neural network, which encodes each element of the input fMRI-PCA sequence $x$ into a hidden state vector $ht$ through the following computations:\n\n$$\nrt=\\sigmaW_{ir}xt+b_{ir}+W_{hr}ht-1+b_{hr}\n$$\n\n\n\n$$\nzt=\\sigmaW_{iz}xt+b_{iz}+W_{hz}ht-1+b_{hz}\n$$\n\n\n\n$$\nn(t)=tanh(W_{in}x(t)+b_{in}+r(t)\u2299(W_{hn}h(t\u22121)+b_{hn}))\n$$\n\n\n\n$$\nh(t)=(1\u2212z(t))\u2299n(t)+z(t)\u2299h(t\u22121)\n$$\n\nwhere $r,z,n$ are the reset, update, and new gates, $W$ are matrices connecting the inputs, gates, and hidden states, $\\sigma$ and $tanh$ are the sigmoid and hyperbolic tangent functions, $b$ are bias vectors, and \u2a00 is the elementwise product. A linear decoder generated predictions based on the hidden state vector:\n\n$$\nyt=w_{out}ht\n$$\n\nThe correlation coefficient was used as the loss function. The networks were trained in PyTorch (Paszke, 2019) using the Adam optimizer (Kingma and Ba, 2017). Hyperparameters were found using Bayesian optimization using the tree of Parzen estimators algorithm (Hyperopt toolbox, n = 200) (Bergstra, 2011; Bergstra et al., 2013). The optimized hyperparameters have been described in Table 1. Early stopping was used in the Bayesian optimization procedure. To set the final number of training epochs for the best network, cross-validation was repeated and the GRU was trained for 100 epochs on each split. Training for seven epochs yielded the best performance.\n\n**Table 1.**\n Optimized GRU hyperparameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter name</th>\n      <th>Description</th>\n      <th>Range</th>\n      <th>Final value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number of layers</td>\n      <td>Multiple recurrent layers could be stacked on top of each other.</td>\n      <td>[1; 3]</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Hidden size</td>\n      <td>Hidden state vector size.</td>\n      <td>[10; 500]</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Learning rate</td>\n      <td>The rate at which network weights were updated during training.</td>\n      <td>[10\u20136; 1]</td>\n      <td>0.0023</td>\n    </tr>\n    <tr>\n      <td>L2</td>\n      <td>Strength of the L2 weight regularization.</td>\n      <td>[0; 10]</td>\n      <td>0.0052</td>\n    </tr>\n    <tr>\n      <td>Gradient clipping</td>\n      <td>Gradient clipping (Pascanu et al., 2013) limits the gradient magnitude at a specified maximum value.</td>\n      <td>[yes; no]</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>Max. gradient</td>\n      <td>Value at which the gradients are clipped.</td>\n      <td>[0.1, 2]</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Dropout</td>\n      <td>During training, a percentage of units could be set to 0 for regularization purposes (Srivastava et al., 2014).</td>\n      <td>[0; 0.2]</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Residual connection</td>\n      <td>Feeding the input directly to the linear decoder bypassing the RNN\u2019s computation.</td>\n      <td>[yes; no]</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Batch size</td>\n      <td>The number of training trials fed into the network before each weight update.</td>\n      <td>[3; 20]</td>\n      <td>12</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cross-validation\n\nThe available 74 trials were divided into training (n = 64) and test (n = 10) sets. Linear regression and GRU parameters were found based on the training set with fourfold cross-validation. The final performance was evaluated on the test set. Scores of the correlation-template-based prediction were based on the same data splits.\n\n### Spatial map \u2013 linear regression\n\nTo create spatial maps highlighting areas that contributed to linear regression predictions, we weighted PCA component maps by their associated linear regression weights, summed them, and took their means. Region borders from the rat brain atlas (Paxinos and Watson, 2006) were matched to and overlaid on spatial map slices.\n\n### Spatial map \u2013 GRU\n\nTo create spatial maps highlighting areas that contributed to GRU predictions, we computed gradients of each of the predicted time points with respect to the 300 input features. We then averaged the gradients across all time points for each of the features and used these mean values just like the weights in the case of linear regression map generation.\n\n### Variance explained\n\nWe obtained the fMRI variance explained by each PCA component directly from the scikit-learn (Pedregosa, 2011) PCA model. To compute the pupil variance explained by each of the PCA time courses, we used an approach described in Musall et al., 2019 with fourfold cross-validation. The explained variance of each component was found by randomly shuffling the time points of all other components, training the Ridge linear regression model ($\\alpha=19861$) on shuffled data and assessing the explained variance based on generated predictions.\n\n### Statistical tests \u2013 prediction\n\nWe used a paired t-test to compare the prediction scores across methods.\n\n### Statistical tests \u2013 linear regression spatial maps\n\nTo test which linear regression spatial map values significantly contributed to the predictions, we used randomization tests. For each cluster, we shuffled the input and output pairings 10,000 times, trained a linear model, and created a spatial map for each of those pairings. We then compared the values in the original maps with the shuffled ones. Values that were at least as extreme as the shuffled values at the 0.005 positive or negative percentile (p=0.01) were considered significant. The results were controlled for false discovery rate with adjustment (Benjamini and Hochberg, 1995; Yekutieli and Benjamini, 1997).\n",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "b7392e71-8fa1-4452-860a-794029b23d87",
+      "submission_id": "f9bb2bf8-37b7-465c-b3a0-ac218901cbc1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy E Behrens, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68980.sa1](https://doi.org/10.7554/eLife.68980.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nPupil diameter is used as an index of the brain's arousal system, and has traditionally thought to be a non-invasive index of specific neuromodulatory activity. It is therefore been heavily used as a measure in neuroscience. More recent data suggests a more complex picture whereby a pupil dilation might track cocktail of different neuromodulators. This paper provides firm data supporting this view, and introduces the new view that the make-up of this cocktail changes significantly over time. Pupil dynamics are linked with different neuromodulatory centers over different intervals of time. This is clearly important data across a broad range of human and animal systems neuroscience.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Decoding the brain state-dependent relationship between pupil dynamics and resting state fMRI signal fluctuation\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Timothy Behrens as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: Jan Willem de Gee (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nAfter our discussion, we believe the following 3 points from the review are essential. All remaining points are strongly recommended to improve the paper, but are discretionary.\n\nEssential points\n\nFrom Reviewer 2:\n\n(1) First point in public review \u2013 the lag between pupil and BOLD\n\nFrom Reviewer 3's public review:\n\n(2) assessing reproducibility of the clusters,\n\n(3) potential inter-dependence between train/testing data.\n\nReviewer #3 (Recommendations for the authors):\n\nMy specific suggestions for addressing the above points are as follows:\n\n1) Regarding reproducibility and comparison against null models, the authors might refer to the paper Allen et al., 2014 (\"Tracking whole-brain connectivity\u2026\"), which examined the reproducibility of time-varying fMRI connectivity matrices using a split-halves analysis, and compared the results against \"null\" data that matched the actual data in terms of mean, variance, and autocorrelation.\n\n2) In the power spectral density (PSD) of pupil dynamics for each cluster (Figure 2c), it may be helpful to display some measure of variability over the trials within each cluster -- otherwise it is unclear whether the spectral profiles are distinct across the clusters. Also, how should these different spectral peaks be interpreted in light of the corresponding fMRI spatial maps?\n\n3) Regarding the decoding models \u2013 from what I understood, the PCA step included all 74 scans, including the test data, which would be a source of leakage between train/test sets. It was also not clear whether trials from the same rat could appear in both training and testing sets, which would also affect the interpretation of the decoding accuracy.\n\n4) It is also mentioned that models were trained on 64 trials, and tested on 10 held-out trials. Since the result might be quite sensitive to the 10 particular trials that were held out, it may be helpful to do a nested cross-validation, holding out multiple subsets of trials for testing (and averaging over the resulting test-set errors).\n\n5) On first reading, I was a bit confused that the paper first shows 1) that different pupil-fMRI correlation patterns were found in different scans, and then 2) that generalizable models (including linear models) could be trained to predict pupil waveforms from fMRI. The section beginning on p. 9 seems to link these sections by fitting models separately across clusters, but it may be helpful to make this conceptually clearer at the outset.\n\n6) As clustering is currently performed over 15-min intervals (entire trials), I wondered if the authors had experimented with using shorter intervals. In other words, based on the mechanisms that could drive these changes in pupil-fMRI correlation (and accounting for limitations of fMRI temporal resolution), how quickly would the correlation patterns expect to shift?\n",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d960aee8-b7ae-4179-abbd-7c21de37656b",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C1",
+      "claim": "Pupil dynamics serve as a physiological indicator of cognitive processes and arousal states of the brain across a diverse range of behavioral experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil dynamics serve as a physiological indicator of cognitive processes and arousal states of the brain across a diverse range of behavioral experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by the context of the manuscript and established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "af8a2fa3-d645-4626-96f9-828c8406b508",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C2",
+      "claim": "Pupil diameter changes reflect brain state fluctuations driven by neuromodulatory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil diameter changes reflect brain state fluctuations driven by neuromodulatory systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge and is a foundational premise of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "b8e4b257-beaf-497c-8ce5-e33be9d75f32",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C3",
+      "claim": "Four clusters of trials with unique activity patterns related to pupil diameter changes were identified in anesthetized rat brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identified four clusters of trials with unique activity patterns related to pupil diameter changes in anesthetized rat brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the experimental data and clustering analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "e71d0b5d-6fed-4ff9-a9e3-b125b5f5f425",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C4",
+      "claim": "Spatiotemporal patterns of rs-fMRI were decomposed with principal component analysis (PCA).",
+      "claim_type": "EXPLICIT",
+      "source": "Going beyond the typical rs-fMRI correlation analysis with pupil dynamics, we decomposed spatiotemporal patterns of rs-fMRI with principal component analysis (PCA) and characterized the cluster-specific pupil\u2013fMRI relationships by optimizing the PCA component weighting via decoding methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim directly stated and supported by the experimental procedures described.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "3f466082-2924-4550-92e3-2ee9a5e8efbe",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C5",
+      "claim": "Cluster-specific pupil\u2013fMRI relationships were characterized by optimizing PCA component weighting via decoding methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Going beyond the typical rs-fMRI correlation analysis with pupil dynamics, we decomposed spatiotemporal patterns of rs-fMRI with principal component analysis (PCA) and characterized the cluster-specific pupil\u2013fMRI relationships by optimizing the PCA component weighting via decoding methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This methodological approach is described and implemented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "5393352d-9fe5-46bc-92f6-31eb9a991103",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C6",
+      "claim": "Pupil dynamics are tightly coupled with different neuromodulatory centers in different trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This work shows that pupil dynamics are tightly coupled with different neuromodulatory centers in different trials, presenting a novel PCA-based decoding method to study the brain state-dependent pupil\u2013fMRI relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental data and analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "8f8f428f-b606-4ff1-ad54-e0c7b06dfcaf",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C7",
+      "claim": "Pupil diameter change reflects the brain state and cognitive processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil diameter change reflects the brain state and cognitive processing (Beatty and Lucero-Wagoner, 2000; Eckstein et al., 2017; Laeng et al., 2012; Wilhelm and Wilhelm, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "b3c9601c-fb41-40a0-bc77-e00b77217ce9",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C8",
+      "claim": "Pupil diameter contains information about a subject's arousal fluctuation.",
+      "claim_type": "EXPLICIT",
+      "source": "It contains information about behavioral variables as diverse as a subject's arousal fluctuation (McGinley et al., 2015; Yoss et al., 1970; McCormick et al., 2020), sensory task performance (McGinley et al., 2015; Hakerem and Sutton, 1966), movement (Stringer et al., 2019; Salkoff et al., 2020; Musall et al., 2019; Reimer et al., 2014), exerted mental effort (Hess and Polt, 1964; Kahneman and Beatty, 1966; Aln\u00e6s et al., 2014), expected reward (O'Doherty et al., 2003), task-related uncertainty (Satterthwaite et al., 2007; Nassar et al., 2012; Richer and Beatty, 1987), or upcoming decisions (de Gee et al., 2014; Sheng et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "23f73b3e-b988-4066-abae-68db89a6ff5b",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C9",
+      "claim": "Multiple neuronal sources drive pupil activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This richness of behavioral correlates is partly explained by the fact that multiple neuronal sources drive pupil activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the diversity of behavioral correlates and is supported by subsequent citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "d33bbc12-dc4f-4c95-a6d1-613f231a226a",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C10",
+      "claim": "Pupil diameter changes reflect spontaneous neural activity across the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil diameter changes reflect spontaneous neural activity across the cortex (Stringer et al., 2019; Salkoff et al., 2020; Musall et al., 2019; Yellin et al., 2015; Pais-Rold\u00e1n et al., 2020) and in major subcortical areas (Stringer et al., 2019; Joshi et al., 2016; Wang et al., 2012; Schneider et al., 2016; Ranson and Magoun, 1933).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "d5ddf012-9b2d-430b-9b04-c9ab32d4a8ec",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C11",
+      "claim": "Both sympathetic and parasympathetic systems innervate muscles controlling pupil dilation and constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Both sympathetic and parasympathetic systems innervate muscles controlling pupil dilation and constriction (Bonvallet and Zbrozyna, 1963; McDougal and Gamlin, 2015; Y\u00fczge\u00e7 et al., 2018), and the activity of subcortical nuclei mediating neuromodulation has been tightly coupled with pupillary movements (Pais-Rold\u00e1n et al., 2020; Joshi et al., 2016; Reimer et al., 2016; Rajkowski, 1993; de Gee et al., 2017; Murphy et al., 2014; Breton-Provencher and Sur, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "726ab741-a40a-428d-9f6e-2b9d1688d499",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C12",
+      "claim": "Rapid and sustained pupil size changes are associated with cortical noradrenergic and cholinergic projections, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, rapid and sustained pupil size changes are associated with cortical noradrenergic and cholinergic projections, respectively (Reimer et al., 2016), and direct recordings of the noradrenergic locus coeruleus demonstrate neuronal activity highly correlated with pupil dynamics (Joshi et al., 2016; Rajkowski, 1993; Breton-Provencher and Sur, 2019; Aston-Jones and Cohen, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "721138a3-938a-410f-a320-285206f0b384",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C13",
+      "claim": "Direct recordings of the noradrenergic locus coeruleus demonstrate neuronal activity highly correlated with pupil dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, rapid and sustained pupil size changes are associated with cortical noradrenergic and cholinergic projections, respectively (Reimer et al., 2016), and direct recordings of the noradrenergic locus coeruleus demonstrate neuronal activity highly correlated with pupil dynamics (Joshi et al., 2016; Rajkowski, 1993; Breton-Provencher and Sur, 2019; Aston-Jones and Cohen, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "9f30c760-3481-4056-becd-1e4340ca30d9",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C14",
+      "claim": "Pupil diameter changes are regulated through dopaminergic neuromodulation under drug administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, pupil diameter changes are regulated through dopaminergic neuromodulation under drug administration (Shannon et al., 1976) and in reward-related tasks (O'Doherty et al., 2003; de Gee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "c7177204-408b-40c6-ba1e-d4ac8464186b",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C15",
+      "claim": "Pupil dilation and constriction can be controlled by serotonergic agonists and antagonists, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies also show that pupil dilation and constriction can be controlled by serotonergic agonists and antagonists, respectively (Vitiello et al., 1997; Schmid et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "f5973cba-8219-4e28-a077-fd9ddf35e5e2",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C16",
+      "claim": "Resting-state fMRI studies have uncovered global pupil\u2013fMRI correlation patterns in human brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting-state fMRI (rs-fMRI) studies have uncovered global pupil\u2013fMRI correlation patterns in human brains as well as revealed that the pupil dynamics\u2013fMRI relationship changed under different lighting conditions or when subjects engaged in mental imagery (Yellin et al., 2015; Schneider et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "e1368e1f-4dfc-4b31-a5d3-6b2cc9664a25",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C17",
+      "claim": "The pupil dynamics\u2013fMRI relationship changed under different lighting conditions or when subjects engaged in mental imagery.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting-state fMRI (rs-fMRI) studies have uncovered global pupil\u2013fMRI correlation patterns in human brains as well as revealed that the pupil dynamics\u2013fMRI relationship changed under different lighting conditions or when subjects engaged in mental imagery (Yellin et al., 2015; Schneider et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "2edc07b5-d7db-45ec-a31e-26a62d755d26",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C18",
+      "claim": "Dynamic functional connectivity changes detected by fMRI are possibly modulated by the interplay of cholinergic and noradrenergic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic functional connectivity changes detected by fMRI, possibly modulated by the interplay of cholinergic and noradrenergic systems (Shine, 2019), are also reflected in pupil dynamics both at rest (Shine et al., 2016) and in task conditions (M\u00e4ki-Marttunen, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research and involves speculation about the mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "8370dd4b-f674-4046-8a40-c311a82d6973",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C19",
+      "claim": "rs-fMRI has been used to display a differential correlation pattern with brainstem noradrenergic nuclei depending on the cortical cross-frequency coupling state in the animal model.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, rs-fMRI has been used to display a differential correlation pattern with brainstem noradrenergic nuclei, e.g., A5 cell group, depending on the cortical cross-frequency coupling state in the animal model (Pais-Rold\u00e1n et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "1e2c7c21-bb32-4282-af0f-240cd63d5b49",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C20",
+      "claim": "Whole-brain rs-fMRI with real-time pupillometry was acquired in anesthetized rats (n = 10).",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate brain state-dependent pupil dynamics, we acquired whole-brain rs-fMRI with real-time pupillometry in anesthetized rats (n = 10) as previously reported (Pais-Rold\u00e1n et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim directly stated and supported by the experimental procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "b9212521-5422-42be-a37a-1fbbfc1ae4c0",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C21",
+      "claim": "A voxel-wise correlation map of the concatenated pupil signals with fMRI time courses showed a global negative correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, the pupil dilation and fMRI time series from all 15 min trials (n = 74) were concatenated. A voxel-wise correlation map of the concatenated pupil signals with fMRI time courses showed a global negative correlation (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data and Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "55414b5a-bfa8-4ebf-a9a6-29b7f31ce983",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C22",
+      "claim": "Individual-trial correlation maps demonstrated high variability of pupil\u2013fMRI correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the generated map was not representative of all trials, which was revealed by creating correlation maps for individual trials (Figure 1B). These maps demonstrated high variability of pupil\u2013fMRI correlations, which is presented by the histogram distribution of spatial correlation values between individual-trial spatial maps and the concatenated all-trial map (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data and Figures 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "8f51b48d-617e-4646-8ef7-c44e875a6555",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C23",
+      "claim": "The pupil\u2013fMRI relationship is not stationary and changes across trials.",
+      "claim_type": "EXPLICIT",
+      "source": "High variability of similarities between the maps shows that the pupil\u2013fMRI relationship is not stationary and changes across trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed variability in correlation maps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "7af80d06-e964-4a25-821f-a3a1e824942c",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C24",
+      "claim": "The dimensionality of the spatial correlation maps was reduced using the uniform manifold approximation and projection (UMAP) method.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate the clustering analysis, we reduced the dimensionality of the spatial correlation maps using the uniform manifold approximation and projection (UMAP) method (McInnes et al., 2020) and decreased the number of features used for clustering from the number of voxels (n = 20,804) to 72 for each map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "75090c5e-45f3-48ab-b649-27ad4c7c3a04",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C25",
+      "claim": "Three to seven clusters were identified with Gaussian mixture modeling and examined using silhouette analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Three to seven clusters were identified with Gaussian mixture modeling and examined using silhouette analysis (McLachlan and Basford, 1988; Rousseeuw, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "bdf595f4-4769-49b2-9c4e-ee9161e59e21",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C26",
+      "claim": "The four-cluster categorization yielded the highest mean silhouette scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we focused on the four-cluster categorization since this division yielded the highest mean silhouette scores (Figure 2B) across 100 random UMAP and GMM initializations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the silhouette analysis data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "b8d8d287-f573-4b7d-bb54-e244d5bbeeb4",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C27",
+      "claim": "The clusters had the following trial counts: n1 = 8; n2 = 30; n3 = 24; n4 = 12.",
+      "claim_type": "EXPLICIT",
+      "source": "The clusters had the following trial counts: n1 = 8; n2 = 30; n3 = 24; n4 = 12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "04ff1403-5a6e-4234-8f22-56078bd9e124",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C28",
+      "claim": "PSD of cluster one showed a distinct peak at 0.018 Hz as well as the lowest baseline pupil diameter values.",
+      "claim_type": "EXPLICIT",
+      "source": "PSD of cluster one showed a distinct peak at 0.018 Hz as well as the lowest baseline pupil diameter values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the power spectral density analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "a4b5a4f8-5b51-4db6-9fc8-d054cce2ca04",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C29",
+      "claim": "Cluster 4 had the highest mean baseline diameter and a peak at 0.011 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cluster 4 had the highest mean baseline diameter and a peak at 0.011 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the power spectral density analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "b8db0497-0a95-451a-b6a5-c2f6fba38263",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C30",
+      "claim": "Clusters 2 and 3 showed peaks of oscillatory power at less than 0.01 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters 2 and 3 showed peaks of oscillatory power at less than 0.01 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the power spectral density analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "28e6ea75-c1bf-4371-bd7c-7ca027d56bbf",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C31",
+      "claim": "Ultra-slow oscillation is typical for spontaneous pupil fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "The ultra-slow oscillation is typical for spontaneous pupil fluctuations (McLaren et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "518aac46-c9e2-4b86-ab9e-a59a3d3e0af4",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C32",
+      "claim": "Three clusters (1, 2, and 4) showed negative correlations across large parts of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Three clusters (1, 2, and 4) showed negative correlations across large parts of the brain, with the correlation strength differing across clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific correlation maps presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "a8890e80-bd55-4d39-b980-9b7ede4f9db3",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C33",
+      "claim": "Cluster 3 displayed a very low mean correlation with positive coefficients spreading across the entire brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cluster 3 displayed a very low mean correlation with positive coefficients spreading across the entire brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific correlation maps presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "d2f80990-92d3-4827-a459-feed5c25e8a2",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C34",
+      "claim": "Cluster 1 showed a high positive correlation in the periaqueductal gray and ventral midbrain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also noteworthy that cluster 1 showed a high positive correlation in the periaqueductal gray and ventral midbrain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific correlation maps presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "28375fc9-80df-40c6-bdf8-86ebecf7b44a",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C35",
+      "claim": "Principal component analysis (PCA) was performed to extract spatiotemporal features of whole-brain rs-fMRI signals (n = 300).",
+      "claim_type": "EXPLICIT",
+      "source": "First, we performed principal component analysis (PCA) to extract spatiotemporal features of whole-brain rs-fMRI signals (n = 300) and trained either linear regression (LR) or a gated recurrent unit (GRU) neural network to predict pupil dynamics based on rs-fMRI PCA time courses (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological claim directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "049ba81c-f8f7-4ee6-a3cf-932159ac97e9",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C36",
+      "claim": "Linear regression (LR) or a gated recurrent unit (GRU) neural network was trained to predict pupil dynamics based on rs-fMRI PCA time courses.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we performed principal component analysis (PCA) to extract spatiotemporal features of whole-brain rs-fMRI signals (n = 300) and trained either linear regression (LR) or a gated recurrent unit (GRU) neural network to predict pupil dynamics based on rs-fMRI PCA time courses (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological claim directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "31e3e168-8eb8-475b-8d3a-2c1e95c247ca",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C37",
+      "claim": "Both linear regression and GRU outperformed the correlation-template approach on both training and test sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Both linear regression and GRU outperformed the correlation-template approach on both training (CCbase = 0.37 \u00b1 0.27 s.d., CCLR = 0.45 \u00b1 0.26 s.d., CCGRU = 0.46 \u00b1 0.25 s.d., pLR = 4.3*10\u20136, pGRU = 2.4 \u00d7 10\u20136) and test sets (CCbase = 0.25 \u00b1 0.17 s.d., CCLR = 0.44 \u00b1 0.24 s.d., CCGRU = 0.45 \u00b1 0.27 s.d., pLR = 0.003, pGRU = 0.01) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the statistical comparison of prediction scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "5fbeb475-487a-4321-8d7c-a6e55a96b510",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C38",
+      "claim": "The component which explained the most pupillary variance (explained var. = 7.03%) explained only 0.8% of the fMRI variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the component which explained the most pupillary variance (explained var. = 7.03%) and had the highest linear regression weight, explained only 0.8% of the fMRI variance (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the variance analysis presented in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "82402a8c-b3ee-4f90-87a2-6db70a6f1f37",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C39",
+      "claim": "The component that explained the most fMRI variance (explained var. = 22.01%) was weakly coupled with the pupil fluctuation (explained var. = 0.51%).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the component that explained the most fMRI variance (explained var. = 22.01%) was weakly coupled with the pupil fluctuation (explained var. = 0.51%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the variance analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "9df6d294-1d8c-4e8a-b9a6-575426fb14ad",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C40",
+      "claim": "GRU and linear regression methods obtained comparable scores and both methods showed similar prediction performance.",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be noted that GRU and linear regression methods obtained comparable scores and both methods showed similar prediction performance (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of prediction scores shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "b88f8ce3-b207-4589-9500-3668a938947e",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C41",
+      "claim": "The resemblance of GRU and linear regression prediction maps suggests that a linear regression-based rs-fMRI mapping scheme was sufficient for predicting pupil dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The resemblance of the two maps suggests that despite GRU's potential for encoding complex and non-linear functions, a linear regression-based rs-fMRI mapping scheme was sufficient for predicting pupil dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the similarity of the prediction maps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "d3421c5a-7e3e-4b97-be6e-76570ae18a6d",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C42",
+      "claim": "The PCA-based fMRI prediction map revealed pupil-related activation patterns at key neuromodulatory nuclei of the ascending reticular activating system (ARAS).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4 shows an overview of the PCA-based fMRI prediction map overlaid on the brain atlas, revealing pupil-related activation patterns at key neuromodulatory nuclei of the ascending reticular activating system (ARAS) \u2013 the dopaminergic ventral tegmental area, substantia nigra and supramammillary nucleus, the serotonergic raphe and B9 cells, the histaminergic tuberomammillary nucleus, the cholinergic laterodorsal tegmental and pontine nuclei, the glutamatergic parabrachial nuclei, and the area containing the noradrenergic locus coeruleus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the spatial map shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "879b1bac-a0a3-4bba-b4c0-a5404fdb9ef2",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C43",
+      "claim": "Positive weights were located in subcortical regions involved in autonomous regulation \u2013 the lateral and preoptic hypothalamus and the periaqueductal gray.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive weights were also located in subcortical regions involved in autonomous regulation \u2013 the lateral and preoptic hypothalamus and the periaqueductal gray.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "5c2af87c-d787-4310-9e74-4932c67312da",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C44",
+      "claim": "The subcortical basal forebrain nuclei (the horizontal limb of the diagonal band, nucleus accumbens, and olfactory tubercle) and the septal area were positively coupled with pupil dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the subcortical basal forebrain nuclei (the horizontal limb of the diagonal band, nucleus accumbens, and olfactory tubercle) and the septal area were positively coupled with pupil dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "404e3f7d-d7af-44c9-bfee-f98f103248d1",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C45",
+      "claim": "Regions of the hippocampal formation \u2013 the hippocampus, entorhinal cortex, and subiculum, as well as cingulate, retrosplenial, and visual cortices displayed positive weighting.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, regions of the hippocampal formation \u2013 the hippocampus, entorhinal cortex, and subiculum, as well as cingulate, retrosplenial, and visual cortices displayed positive weighting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "f1db0778-ddb6-4abd-a1e8-c000d588e220",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C46",
+      "claim": "The thalamus and the hippocampus displayed both positive and negative weights.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the thalamus and the hippocampus displayed both positive and negative weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "adcfeec2-58cd-469a-a94d-d49148b88029",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C47",
+      "claim": "Negative coupling was found in the cerebellum and most somatosensory cortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative coupling was also found in the cerebellum and most somatosensory cortical regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "40e7ca74-0137-4317-a0b7-e0b3070bc4c4",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C48",
+      "claim": "Cluster 1 was characterized by strong positive weights in the dopaminergic substantia nigra and ventral tegmental area as well as in their efferent projections in the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 1 was characterized by strong positive weights in the dopaminergic substantia nigra and ventral tegmental area as well as in their efferent projections in the striatum (nucleus accumbens and caudate-putamen) (Beckstead et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "4d534ed3-1a8e-40f6-a65a-a86c8f7a5407",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C49",
+      "claim": "Cluster 2 had the strongest positive weights in hypothalamic regions, lateral in particular.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 2 had the strongest positive weights in hypothalamic regions, lateral in particular, but also in brainstem arousal-regulating areas containing the locus coeruleus, laterodorsal tegmental, and parabrachial nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "1ee57ca7-7ccc-4a55-8b5e-71d2c0012303",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C50",
+      "claim": "In cluster 3, the highest values were visible in preoptic and other hypothalamic areas, as well as in stria terminalis carrying primarily afferent hypothalamic fibers, caudate-putamen, and globus pallidus.",
+      "claim_type": "EXPLICIT",
+      "source": "In cluster 3, the highest values were visible in preoptic and other hypothalamic areas, as well as in stria terminalis carrying primarily afferent hypothalamic fibers (De Olmos and Ingram, 1972), caudate-putamen, and globus pallidus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "00bdeb55-2178-4f5e-ae06-0441d50928f1",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C51",
+      "claim": "In cluster 4, caudal raphe was the neuromodulatory region showing the strongest positive weights and the anterior parts of the brainstem displayed negative weighting.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, in cluster 4, caudal raphe was the neuromodulatory region showing the strongest positive weights and the anterior parts of the brainstem displayed negative weighting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "ed7bc049-d1f8-4a56-86f2-03cb540c1d29",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C52",
+      "claim": "Characteristic to cluster 4 were high weights in the hippocampus and the subiculum forming the hippocampal formation, as well as in thalamic and amygdaloid areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Characteristic to cluster 4 were high weights in the hippocampus and the subiculum forming the hippocampal formation, as well as in thalamic and amygdaloid areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "60ac8fb6-1416-4f48-8c86-6b9be245f8a5",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C53",
+      "claim": "In all clusters, negative weights were detected across somatosensory cortices, the cerebellum, and posterior parts of the thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "In all clusters, negative weights were detected across somatosensory cortices, the cerebellum, and posterior parts of the thalamus, as well as positive weights in hypothalamic and anterior thalamic nuclei and in the area containing the tuberomammillary nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "ca2c67d2-9e1b-490d-accd-afbf2154b9c1",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C54",
+      "claim": "The subiculum and parts of the hippocampus were positive in all clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The subiculum and parts of the hippocampus were also positive in all clusters; however, the entorhinal cortex, also belonging to the hippocampal formation, was positive only in clusters 1\u20133.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "712f42da-6729-4220-b7a8-9fd5daae7fb1",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C55",
+      "claim": "The entorhinal cortex was positive only in clusters 1\u20133.",
+      "claim_type": "EXPLICIT",
+      "source": "The subiculum and parts of the hippocampus were also positive in all clusters; however, the entorhinal cortex, also belonging to the hippocampal formation, was positive only in clusters 1\u20133.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "60bc8fe9-f66b-4b15-88a4-3106aa99eb7e",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C56",
+      "claim": "Clusters 1\u20133 showed major positive weights in the neuromodulatory brainstem regions, substantia nigra, and ventral tegmental area.",
+      "claim_type": "EXPLICIT",
+      "source": "The same three clusters showed major positive weights in the neuromodulatory brainstem regions, substantia nigra, and ventral tegmental area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "e3049132-f8c8-4732-a50b-f7759b108d32",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C57",
+      "claim": "Clusters 2\u20134 displayed strong weights in the supramammillary nucleus, retrosplenial cortex, and the cingulate cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters 2\u20134 displayed strong weights in the supramammillary nucleus, retrosplenial cortex, and the cingulate cortex, which has been coupled with both noradrenergic modulation (Aston-Jones and Cohen, 2005) and pupil dynamics (Pais-Rold\u00e1n et al., 2020; Joshi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cluster-specific spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "465c6444-fd4b-4bf0-aec4-3161dcce7d69",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C58",
+      "claim": "The cingulate cortex has been coupled with both noradrenergic modulation and pupil dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters 2\u20134 displayed strong weights in the supramammillary nucleus, retrosplenial cortex, and the cingulate cortex, which has been coupled with both noradrenergic modulation (Aston-Jones and Cohen, 2005) and pupil dynamics (Pais-Rold\u00e1n et al., 2020; Joshi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "db324baf-0db3-493f-aaed-5254612b335a",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C59",
+      "claim": "Conventional correlation analysis relies on the temporal features of fMRI time courses from individual voxels or regions of interest and could not decouple the superimposed effects of multiple signal sources.",
+      "claim_type": "EXPLICIT",
+      "source": "First, conventional correlation analysis relies on the temporal features of fMRI time courses from individual voxels or regions of interest. Hence, it could not decouple the superimposed effects of multiple signal sources (Carbonell et al., 2011; Tong et al., 2019) or characterize the state-dependent dynamic subcortical correlation patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of conventional methods discussed in the context of the study's approach.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "a37ca6da-b049-4d99-9a5d-61becf8ed4f5",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C60",
+      "claim": "The PCA decomposition scheme solved the issues of conventional correlation analysis by decoupling multiple components of rs-fMRI signals with unique spatiotemporal patterns carrying pupil-related information.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the PCA decomposition scheme solved these issues by decoupling multiple components of rs-fMRI signals with unique spatiotemporal patterns carrying pupil-related information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of the PCA-based approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "61864107-2792-4e23-81ca-58c6bd85f1ac",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C61",
+      "claim": "The data-driven training of prediction methods optimized the weighting of individual rs-fMRI PCA components.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the data-driven training of prediction methods optimized the weighting of individual rs-fMRI PCA components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "064d453a-84f8-49cc-9c63-26a32a4aaba2",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C62",
+      "claim": "The decoding models showed much better pupil dynamics prediction than the correlation-template-based approach reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the decoding models showed much better pupil dynamics prediction than the correlation-template-based approach reported previously (Pais-Rold\u00e1n et al., 2020; Chang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparison of prediction scores.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "c9f00aa2-bfbc-4679-a3b6-0b05b6a31f0e",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C63",
+      "claim": "Both LR and GRU models generated qualitatively similar prediction maps, highlighting the pupil-related rs-fMRI signal fluctuation from the same subcortical brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, it should be noted that both LR and GRU models generated qualitatively similar prediction maps, highlighting the pupil-related rs-fMRI signal fluctuation from the same subcortical brain regions (Figure 3C, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of prediction maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "10de4cb7-5627-4d24-9a8f-4131809f2ace",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C64",
+      "claim": "The GRU-based neural network prediction scheme may require much bigger training datasets to outperform linear regression modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike our previous single-vessel fMRI prediction study (Sobczak et al., 2021a), the GRU-based neural network prediction scheme may require much bigger training datasets to outperform linear regression modeling (Schulz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the requirements for GRU to outperform linear regression, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "8844ac8c-e953-46a7-be70-db10dd0cee70",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C65",
+      "claim": "The pupil dynamics were predominantly and linearly driven by only a few rs-fMRI PCA components.",
+      "claim_type": "EXPLICIT",
+      "source": "Another plausible explanation is that the pupil dynamics were predominantly and linearly driven by only a few rs-fMRI PCA components (Figure 3\u2014figure supplement 2), presenting brain activation patterns related to arousal fluctuation and autonomous regulation (Duyn et al., 2020; \u00d6zbay, 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the analysis of PCA components, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "d458c6a2-5a9e-4c0e-a161-4d89c24a27b9",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C66",
+      "claim": "Neuromodulatory nuclei of ARAS and other subcortical nuclei involved in brain state modulation, as well as autonomous regulation were identified in the PCA-prediction map created from all trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The PCA-based prediction modeling provides a novel scheme to decipher subcortical spatial patterns of fMRI signal fluctuation related to brain state-dependent pupil dynamics. Most notably, neuromodulatory nuclei of ARAS and other subcortical nuclei involved in brain state modulation, as well as autonomous regulation were identified in the PCA-prediction map created from all trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the spatial map analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "e7486789-2c56-410c-a402-cf78c25e48c1",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C67",
+      "claim": "The highlighted hypothalamus, basal forebrain, and neuromodulatory brainstem nuclei are responsible for both global brain state modulation and autonomous cardiovascular, respiratory, and baroreflex control.",
+      "claim_type": "EXPLICIT",
+      "source": "The highlighted hypothalamus, basal forebrain, and neuromodulatory brainstem nuclei are responsible for both global brain state modulation and autonomous cardiovascular, respiratory, and baroreflex control (Duyn et al., 2020; Benarroch, 2018; Dampney, 2016; Silvani et al., 2015; Kuwaki and Zhang, 2010; Grimaldi et al., 2014; van den Brink et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "add42ccd-7258-41e4-a1ef-abb0d466aa12",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C68",
+      "claim": "The source of pupil-related information found across the cortex was probably modulated through global subcortical projections rather than a more direct causal interaction with pupil size changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the source of pupil-related information found across the cortex was probably modulated through global subcortical projections rather than a more direct causal interaction with pupil size changes (Reimer et al., 2016; Lecrux and Hamel, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "81212dd6-f0d7-4cd5-8e6a-dd8d350db6bc",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C69",
+      "claim": "Noradrenergic neurons of the locus coeruleus are the hypothesized drivers of pupil dilation.",
+      "claim_type": "EXPLICIT",
+      "source": "Noradrenergic neurons of the locus coeruleus are the hypothesized drivers of pupil dilation (Joshi et al., 2016; Aston-Jones and Cohen, 2005), and both the area containing the locus coeruleus and many of its input regions (Breton-Provencher and Sur, 2019) were highlighted in the PCA map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "331a93b9-3e50-4336-b827-d8bf0e7a3eb4",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C70",
+      "claim": "The observed activation of the hypothalamus and other neuromodulatory nuclei suggests that, in the anesthetized state, pupil diameter fluctuation reflects a complex interaction of subcortical homeostatic and brain state-modulating centers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the observed activation of the hypothalamus and other neuromodulatory nuclei suggests that, in the anesthetized state, pupil diameter fluctuation reflects a complex interaction of subcortical homeostatic and brain state-modulating centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed activation patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "519496ff-83ac-46b3-b50c-8c955d5e8fd2",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C71",
+      "claim": "These subcortical interactions and the neural correlates of pupil dynamics are not stationary but change across trials in a brain state-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we have shown that these subcortical interactions and the neural correlates of pupil dynamics are not stationary but change across trials in a brain state-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the clustering and analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "71ad41af-164c-49e9-bb67-71d4e864fa7c",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C72",
+      "claim": "Pupil size changes can be modulated by different combinations of subcortical nuclei, indicating varied brain state fluctuations underlying different oscillatory patterns of pupil dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that pupil size changes can be modulated by different combinations of subcortical nuclei, indicating varied brain state fluctuations underlying different oscillatory patterns of pupil dynamics (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the cluster-specific analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "aa5e18e6-5afb-47f8-8dc4-2d122907327c",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C73",
+      "claim": "It is possible that the hypothalamus was the key driver of brain state fluctuation in cluster 2.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the hypothalamus was the key driver of brain state fluctuation in cluster 2 (Grimaldi et al., 2014; Lee and Dan, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the role of the hypothalamus in cluster 2, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "fb1a3d12-95db-44be-a21b-bd7e21aef77e",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C74",
+      "claim": "The dopaminergic system is known to modulate pupil dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, hypothalamic weights were least prevalent in cluster 1, which displayed strong pupil coupling with the dopaminergic system known to modulate pupil dynamics (O'Doherty et al., 2003; de Gee et al., 2017; Shannon et al., 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "d4297557-bcad-4480-bb7e-0238cb9ca758",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C75",
+      "claim": "The positive coupling of the raphe and subiculum hints at the possibility of pupillometry reflecting the activity of circuits responsible for autonomous stress modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The positive coupling of the raphe and subiculum hints at the possibility of pupillometry reflecting the activity of circuits responsible for autonomous stress modulation (Lowry, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional significance of the observed coupling, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "0175d054-fc5c-4f80-8e35-eaed2cbd31cb",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C76",
+      "claim": "Alpha-chloralose was employed due to the quality of BOLD fMRI responses under this anesthetic.",
+      "claim_type": "EXPLICIT",
+      "source": "Alpha-chloralose was employed due to the quality of BOLD fMRI responses under this anesthetic (Hyder et al., 2016; Alonso et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological justification supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "eea1dd3c-d9a5-476d-9096-855c28d45490",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C77",
+      "claim": "The neural correlates of brain state-dependent pupil\u2013fMRI correlation differences under alpha-chloralose anesthesia have previously been verified.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural correlates of brain state-dependent pupil\u2013fMRI correlation differences under alpha-chloralose anesthesia have previously been verified (Pais-Rold\u00e1n et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "7c2d5e1a-d8e9-4e5c-b431-11542d258f0e",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C78",
+      "claim": "Alpha-chloralose has been reported to inhibit the sympathetic system's responses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as alpha-chloralose has been reported to inhibit the sympathetic system's responses (Gaumann and Yaksh, 1990), its influence on pupil size and brain state changes should be investigated similarly to what has been done with other anesthetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "77ef7978-b7c5-4deb-a5af-2a5e0cd344be",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C79",
+      "claim": "The use of propofol dampened higher frequency pupil size changes observed in the awake state.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies report that the use of propofol dampened higher frequency pupil size changes observed in the awake state (Behrends et al., 2019), and slow pupil diameter fluctuations were influenced by both isoflurane and urethane anesthesia (Kum et al., 2016; Blasiak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "d0e3e781-0200-40b6-bb37-be1a4832628f",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C80",
+      "claim": "Slow pupil diameter fluctuations were influenced by both isoflurane and urethane anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies report that the use of propofol dampened higher frequency pupil size changes observed in the awake state (Behrends et al., 2019), and slow pupil diameter fluctuations were influenced by both isoflurane and urethane anesthesia (Kum et al., 2016; Blasiak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "5b27aa2d-4463-4047-9f7f-10b3e244e836",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C81",
+      "claim": "The brain state changes observed across trials could be a typical feature of brain activity observed in unanesthetized human subjects e.g. due to arousal or sleep state changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the brain state changes we observed across trials could be a typical feature of brain activity observed in unanesthetized human subjects e.g. due to arousal or sleep state changes (Allen et al., 2014; Kaufmann et al., 2006; Tagliazucchi and Laufs, 2014) but could also be driven by the anesthetic, as in the case of urethane inducing sleep-like state changes (Blasiak et al., 2013; Clement et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the nature of the observed brain state changes, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "7ae4ff87-ff39-4412-8049-812da8536cbe",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C82",
+      "claim": "Urethane induces sleep-like state changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the brain state changes we observed across trials could be a typical feature of brain activity observed in unanesthetized human subjects e.g. due to arousal or sleep state changes (Allen et al., 2014; Kaufmann et al., 2006; Tagliazucchi and Laufs, 2014) but could also be driven by the anesthetic, as in the case of urethane inducing sleep-like state changes (Blasiak et al., 2013; Clement et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "3d508702-01fc-41b9-93e1-f0aad0cf45c2",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C83",
+      "claim": "The present study provides a framework that could be applied to analyze human datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the present study is based on the anesthetized rat model, it provides a framework that could be applied to analyze human datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applicability of the study's methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "d11f9604-479f-4f67-8692-7ad076132262",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C84",
+      "claim": "Working with awake subjects would mitigate the potential impact of anesthesia on the activity of the sympathetic system.",
+      "claim_type": "EXPLICIT",
+      "source": "Working with awake subjects would mitigate the potential impact of anesthesia on the activity of the sympathetic system, which controls pupillary movements in an antagonistic relationship with the parasympathetic system (Bonvallet and Zbrozyna, 1963; McDougal and Gamlin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of working with awake subjects, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "877b3346-63b0-43dc-b76d-d90e7297baf1",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C85",
+      "claim": "The sympathetic system controls pupillary movements in an antagonistic relationship with the parasympathetic system.",
+      "claim_type": "EXPLICIT",
+      "source": "Working with awake subjects would mitigate the potential impact of anesthesia on the activity of the sympathetic system, which controls pupillary movements in an antagonistic relationship with the parasympathetic system (Bonvallet and Zbrozyna, 1963; McDougal and Gamlin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "796220d4-f7d2-4bdc-8274-454e3f397454",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C86",
+      "claim": "The cognitive component of brain activity reflected in pupil diameter changes of awake human subjects could be investigated using the PCA-based fMRI decoding method.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the cognitive component of brain activity reflected in pupil diameter changes of awake human subjects could be investigated using the PCA-based fMRI decoding method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential future application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "6b4a2129-3422-42da-a815-64bb7a73b7ab",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C87",
+      "claim": "Assuming stationarity of the relationship at any scale could lead to oversimplification of the results.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, assuming stationarity of the relationship at any scale could lead to oversimplification of the results, as already evidenced by our ability to differentiate four distinct pupil\u2013fMRI coupling patterns instead of one common correlation map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "d5afb215-a21b-47fe-9593-5287fc0e7089",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C88",
+      "claim": "The phase of pupil diameter fluctuation is known to reflect the activity of different cortical neural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the analysis of individual fMRI frames (Liu et al., 2013; Tseng and Poppenk, 2020) with the phase of pupil diameter fluctuation, which is known to reflect the activity of different cortical neural populations (Reimer et al., 2014), would demonstrate whole-brain activity patterns coupled with pupil dilation and constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "8f2d34a2-0153-44bd-8f71-3bbe1affa4e2",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C89",
+      "claim": "Regions like the subiculum, which previously have not been linked to pupil dynamics, displayed strong coupling weights in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, regions like the subiculum, which previously have not been linked to pupil dynamics, but displayed strong coupling weights in our study, could guide future electrophysiological studies to reveal novel neuronal regulatory mechanisms underlying pupil dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the study's findings and their potential implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "2a15de68-e6f6-4bbc-ad81-4fb30170dccd",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C90",
+      "claim": "All experimental procedures were approved by the Animal Protection Committee of T\u00fcbingen (Regierungsprasidium T\u00fcbingen; protocol KY12-14).",
+      "claim_type": "EXPLICIT",
+      "source": "All experimental procedures were approved by the Animal Protection Committee of T\u00fcbingen (Regierungsprasidium T\u00fcbingen; protocol KY12-14) and performed following the guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the ethical approval of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "023ce8ea-e3c3-49f3-823d-ccd58c28911a",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C91",
+      "claim": "Pupillometry and fMRI data acquired from 10 male Sprague Dawley rats had been previously published.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupillometry and fMRI data acquired from 10 male Sprague Dawley rats had been previously published (Pais-Rold\u00e1n et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data source, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "19ee7b10-f1e0-4af8-bc58-884021a49c28",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C92",
+      "claim": "The rats were imaged under alpha-chloralose anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "The rats were imaged under alpha-chloralose anesthesia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "d6a48c60-ffd3-45b7-b556-c9d3ae46c6b5",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C93",
+      "claim": "All MRI measurements were performed on a 14.1 T/26 cm magnet (Magnex, Oxford) with an Avance III console (Bruker, Ettlingen) using an elliptic trans-receiver surface coil (~2 \u00d7 2.7 cm).",
+      "claim_type": "EXPLICIT",
+      "source": "All MRI measurements were performed on a 14.1 T/26 cm magnet (Magnex, Oxford) with an Avance III console (Bruker, Ettlingen) using an elliptic trans-receiver surface coil (~2 \u00d7 2.7 cm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "6ad55d60-2d36-4f69-99ed-c6578ea02b01",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C94",
+      "claim": "A whole-brain 3D EPI sequence was used to acquire functional data.",
+      "claim_type": "EXPLICIT",
+      "source": "To acquire functional data, a whole-brain 3D EPI sequence was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "d522725a-101f-43fe-ad0e-1d9daa9aab81",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C95",
+      "claim": "The sequence parameters were as follows: 1 s TR, 12.5 ms TE, 48 \u00d7 48 \u00d7 32 matrix size, 400 \u00d7 400 \u00d7 600 \u00b5m resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence parameters were as follows: 1 s TR, 12.5 ms TE, 48 \u00d7 48 \u00d7 32 matrix size, 400 \u00d7 400 \u00d7 600 \u00b5m resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "8a700047-db0b-4cb5-82fe-1f44793473da",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C96",
+      "claim": "Each run had a length of 925 TRs (15 min 25 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Each run had a length of 925 TRs (15 min 25 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "f9c3630b-e754-4970-8c0f-cae341a23cce",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C97",
+      "claim": "The RARE sequence was used to acquire an anatomical image for each rat.",
+      "claim_type": "EXPLICIT",
+      "source": "The RARE sequence was used to acquire an anatomical image for each rat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "f479fb1e-0f03-4703-bcc7-7b9487c40a57",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C98",
+      "claim": "A temporal filter (0.002, 0.15 Hz) was applied to the co-registered data.",
+      "claim_type": "EXPLICIT",
+      "source": "A temporal filter (0.002, 0.15 Hz) was applied to the co-registered data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "6c95fba5-8611-4e5f-b43f-a98ddc0c5c13",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C99",
+      "claim": "The registration was performed using the AFNI software package.",
+      "claim_type": "EXPLICIT",
+      "source": "The registration was performed using the AFNI software package (Cox, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "43ae8c7c-ee60-41ba-adee-306154612d55",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C100",
+      "claim": "Principal component analysis (PCA) implemented in the Python scikit-learn library was used to reduce the dimensionality of fMRI data for prediction purposes.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) implemented in the Python scikit-learn library (Pedregosa, 2011) was used to reduce the dimensionality of fMRI data for prediction purposes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "f1193e31-a278-4f4f-8230-e888c4fc0912",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C101",
+      "claim": "The PCA time courses were variance normalized before the optimization of linear regression and GRU weights.",
+      "claim_type": "EXPLICIT",
+      "source": "The PCA time courses were variance normalized before the optimization of linear regression and GRU weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "5b0cd037-e0bb-4ba9-b489-de280ac2e46f",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C102",
+      "claim": "The DeepLabCut toolbox was used to extract the pupil position from each video frame.",
+      "claim_type": "EXPLICIT",
+      "source": "The DeepLabCut toolbox (Mathis et al., 2018; Nath, 2018) was used to extract the pupil position from each video frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "73b7c03a-7640-4b08-a36f-16da8a234915",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C103",
+      "claim": "The toolbox's artificial neural network was optimized using 1330 manually labeled images extracted from 74 eye monitoring videos.",
+      "claim_type": "EXPLICIT",
+      "source": "The toolbox's artificial neural network was optimized using 1330 manually labeled images extracted from 74 eye monitoring videos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "48f2760b-637a-47f0-b5f4-72f315397808",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C104",
+      "claim": "Pupillometry time courses were variance normalized before the optimization of linear regression and GRU weights.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupillometry time courses were variance normalized before the optimization of linear regression and GRU weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "db96d32d-8a17-4245-9904-d40e7c725690",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C105",
+      "claim": "The uniform manifold approximation and projection (UMAP) algorithm was employed to reduce the dimensionality of pupil\u2013fMRI correlation maps before clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "The uniform manifold approximation and projection (UMAP) (McInnes et al., 2020) algorithm was employed to reduce the dimensionality of pupil\u2013fMRI correlation maps before clustering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "c427f9a0-e17b-4989-b815-14d656309dcf",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C106",
+      "claim": "The data was projected from the voxel space (n = 20,804) to a 72-dimensional representation.",
+      "claim_type": "EXPLICIT",
+      "source": "We projected the data from the voxel space (n = 20,804) to a 72-dimensional representation, as this was the highest number of dimensions the method permitted given 74 input trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "5eb2c758-54fc-434d-af59-ae6ccda12aae",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C107",
+      "claim": "The expectation-maximization algorithm fitting mixture of Gaussians models to the data was used to cluster the trials.",
+      "claim_type": "EXPLICIT",
+      "source": "To cluster the trials in the low dimensional space resulting from the UMAP embedding, we used the expectation-maximization algorithm fitting mixture of Gaussians models to the data (McLachlan and Basford, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "91b9c11b-7973-41e5-b366-1ffa7e9a81ab",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C108",
+      "claim": "Silhouette analysis was used to find the number of clusters for successive analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "To find the number of clusters for successive analyses, we evaluated clustering results using silhouette analysis (Rousseeuw, 1987) implemented in the Python scikit-learn library (Pedregosa, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "9eec17ea-b8a1-4759-aa0b-6ad0863a4f28",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C109",
+      "claim": "The clustering result with the highest mean silhouette score was selected for successive analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "The clustering result with the highest mean silhouette score was selected for successive analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "7ababbb3-52e8-4cf3-98b4-91f5303bb73a",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C110",
+      "claim": "Surrogate maps were created using the Brainsmash toolbox.",
+      "claim_type": "EXPLICIT",
+      "source": "Surrogate maps were created using the Brainsmash toolbox (Burt et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "ac8c97df-6564-4bdb-99d5-d53095d6dcf3",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C111",
+      "claim": "The spectral analysis was performed using the Python SciPy library.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectral analysis was performed using the Python SciPy library (Virtanen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "5d7fc0f6-01d4-4436-9abf-7f3558b5a81e",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C112",
+      "claim": "Welch's method was employed to compute the PSDs of utilized signals.",
+      "claim_type": "EXPLICIT",
+      "source": "To compute the PSDs of utilized signals, we employed Welch's method (Welch, 1967), with the following parameters: 512 discrete Fourier transform points; Hann window; 50% overlap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "aa6f1385-a319-4864-971e-2f03b41999d5",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C113",
+      "claim": "Four linear regression variants were available to a Bayesian optimizer.",
+      "claim_type": "EXPLICIT",
+      "source": "Four linear regression variants were available to a Bayesian optimizer, which selected both the linear model type and its parameters. The available variants were ordinary least squares, Ridge, Lasso and elastic-net regression models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "b9b6ae73-4261-42db-8feb-a7fb1b02bfea",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C114",
+      "claim": "L2 Ridge regression with a regularization parameter \u03b1=19861 obtained the best prediction scores.",
+      "claim_type": "EXPLICIT",
+      "source": "L2 Ridge regression with a regularization parameter \u03b1=19861 obtained the best prediction scores and was found using the Hyperopt toolbox (Bergstra, 2011; Bergstra et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "a29d0fd6-25af-4479-9698-eb355f09fe92",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C115",
+      "claim": "The networks were trained in PyTorch using the Adam optimizer.",
+      "claim_type": "EXPLICIT",
+      "source": "The networks were trained in PyTorch (Paszke, 2019) using the Adam optimizer (Kingma and Ba, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "e15aa6c1-0a64-46d8-8579-83df285d682a",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C116",
+      "claim": "Hyperparameters were found using Bayesian optimization using the tree of Parzen estimators algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperparameters were found using Bayesian optimization using the tree of Parzen estimators algorithm (Hyperopt toolbox, n = 200) (Bergstra, 2011; Bergstra et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "7a41b0bf-058f-48dd-bd52-f16a109e0ab9",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C117",
+      "claim": "Training for seven epochs yielded the best performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Training for seven epochs yielded the best performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "80ef4fa5-5406-4f33-a366-6e5edac9e94e",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C118",
+      "claim": "A paired t-test was used to compare the prediction scores across methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a paired t-test to compare the prediction scores across methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "54a09014-9819-4ba3-9c71-ef93f3001da8",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C119",
+      "claim": "Randomization tests were used to test which linear regression spatial map values significantly contributed to the predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "To test which linear regression spatial map values significantly contributed to the predictions, we used randomization tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "777e4642-6ee3-46dd-b9c8-47db4e9c0af7",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C120",
+      "claim": "Values that were at least as extreme as the shuffled values at the 0.005 positive or negative percentile (p=0.01) were considered significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Values that were at least as extreme as the shuffled values at the 0.005 positive or negative percentile (p=0.01) were considered significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "12550bc3-c201-4537-9224-ccecf6128ab8",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "claim_id": "C121",
+      "claim": "The results were controlled for false discovery rate with adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "The results were controlled for false discovery rate with adjustment (Benjamini and Hochberg, 1995; Yekutieli and Benjamini, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail directly stated, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cda03512-0a1b-491f-a30a-2ffd1d2f35d0",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The pupil\u2013fMRI relationship is not stationary across trials. Concatenating all trials showed a global negative correlation, but individual-trial correlation maps demonstrated high variability, indicating that the pupil\u2013fMRI relationship changes across trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21\u2013C23 collectively demonstrate non-stationarity through direct observation of variability in individual-trial correlation maps (Figures 1A\u2013C). The histogram distribution of spatial correlations provides quantitative evidence supporting the inference that the relationship changes across trials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Four distinct clusters of trials with unique pupil\u2013fMRI correlation patterns were identified using UMAP dimensionality reduction and Gaussian mixture modeling. The clusters showed distinct power spectral density profiles and different spatial correlation patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24\u2013C27 describe the clustering methodology and selection of four clusters based on silhouette analysis (Figure 2B). Claims C28\u2013C30, C32\u2013C34 characterize the distinct features of each cluster through PSD analysis and spatial correlation patterns (Figures 2C\u2013D), providing converging evidence for meaningful cluster separation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "229cc445-6a4c-44f2-a036-de6acb481118",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PCA-based decoding methods (linear regression and GRU) successfully predicted pupil dynamics from rs-fMRI signals and outperformed correlation-template approaches. Both methods showed comparable performance, suggesting linear relationships were sufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35\u2013C37 establish the methodology and demonstrate statistically significant improvements over baseline (p<0.01 on test sets). Claims C40\u2013C41, C62 show that linear regression and GRU performed similarly, supporting the sufficiency of linear modeling. Statistical tests (C118) validate the comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "2c80a8be-6782-4143-8311-19023eb88a96",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PCA decomposition decoupled spatiotemporal features where components explaining the most pupillary variance explained little fMRI variance and vice versa. Pupil dynamics were predominantly driven by a few rs-fMRI PCA components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38\u2013C39 provide specific variance explained values (7.03% pupil variance explained only 0.8% fMRI variance; 22.01% fMRI variance explained only 0.51% pupil variance) from Figure 3\u2014figure supplement 2. Claims C60\u2013C61, C65 interpret these findings, demonstrating the advantage of PCA-based weighting optimization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "ba6ccc02-1c2f-4f16-91d6-e7440a558805",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The PCA-based prediction map revealed pupil-related activation patterns at key neuromodulatory nuclei of the ARAS and subcortical regions involved in autonomous regulation, including positive weights in hypothalamus, basal forebrain, hippocampal formation, and negative weights in cerebellum and somatosensory cortices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42\u2013C47, C66 describe specific anatomical regions identified in Figure 4 with statistical validation (C119\u2013C121: randomization tests, p<0.01, FDR corrected). The spatial maps show consistent patterns across multiple brain regions involved in neuromodulation and autonomous regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cluster-specific PCA prediction maps revealed distinct subcortical activation patterns: Cluster 1 showed strong dopaminergic system coupling, Cluster 2 showed hypothalamic dominance, Cluster 3 showed preoptic/hypothalamic activation, and Cluster 4 showed caudal raphe and hippocampal formation coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48\u2013C57 provide detailed characterization of each cluster's spatial patterns from Figure 5, with statistical validation. Claims C71\u2013C72 synthesize these findings to conclude that subcortical interactions and neural correlates of pupil dynamics change across trials in a brain state-dependent manner, directly supported by the cluster-specific differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "4a699759-0ea8-4f5c-a433-87994e7c2b88",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Conventional correlation analysis cannot decouple superimposed effects of multiple signal sources, while PCA decomposition solves this by decoupling multiple components with unique spatiotemporal patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59\u2013C60 present a methodological advantage of the PCA approach over conventional methods. This is supported by the demonstration that PCA successfully identified distinct components (C38\u2013C39) and by citations to prior work on limitations of conventional approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "14490d22-235c-473b-ad2a-c9a37b0b08e3",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GRU-based neural networks may require larger training datasets to outperform linear regression, possibly because pupil dynamics were predominantly linearly driven by few rs-fMRI PCA components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 is speculative about GRU requirements, supported only by citation and comparison to prior work. Claim C65 offers a plausible explanation based on Figure 3\u2014figure supplement 2, but this remains an inference rather than a directly tested hypothesis. The comparable performance of GRU and linear regression (C40) is consistent with but does not prove this explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "5e18527f-198d-455c-b77e-705480fecc0d",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In the anesthetized state, pupil diameter fluctuation reflects complex interactions of subcortical homeostatic and brain state-modulating centers, with hypothalamus potentially driving cluster 2 and raphe-subiculum coupling possibly reflecting autonomous stress modulation circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70, C73, C75 are interpretive inferences about functional significance. While the spatial patterns are well-documented (C48\u2013C52), the mechanistic interpretations remain speculative. The claims are supported by citations to prior work but lack direct experimental validation of the proposed functional roles in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "54b11c5a-b289-4213-ae40-26ed747c4297",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Alpha-chloralose anesthesia was used for quality BOLD fMRI responses, but may inhibit sympathetic system responses. Other anesthetics also influence pupil dynamics, and observed brain state changes could reflect either natural arousal fluctuations or anesthetic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76\u2013C82 acknowledge limitations of the anesthetized model with appropriate citations. C77 validates prior work under the same anesthetic. C78\u2013C82 cite literature on anesthetic effects, appropriately qualifying the interpretation of results. This represents a balanced discussion of methodological limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "8f2890e2-a8d8-49ec-ad20-ea1482bb2452",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The PCA-based framework could be applied to human datasets and awake subjects to investigate cognitive components of brain activity. Future work should examine finer temporal scales and novel regions like the subiculum that showed strong coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83\u2013C89 appropriately discuss future directions and potential applications. C87 is supported by the demonstration of four distinct patterns versus one (C3, C23). C89 identifies a novel finding (subiculum coupling) from the data (C52, C54). These represent reasonable extensions and implications of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    },
+    {
+      "id": "61d9d621-a1f9-4132-9ae2-43e8f009b564",
+      "content_id": "5ed1a6b6-3806-4c48-bfd6-d5c621048bbc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Detailed experimental and analytical methods are described, including animal preparation (n=10 rats), fMRI acquisition (14.1T, 3D EPI), pupillometry (DeepLabCut), PCA (300 components), UMAP dimensionality reduction (72 dimensions), GMM clustering, and statistical validation (randomization tests, FDR correction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C90\u2013C121 provide comprehensive methodological details with specific parameters, software citations, and validation procedures. The methods are sufficiently detailed for reproducibility, with appropriate statistical corrections (C121) and validation approaches (C108\u2013C109, C119\u2013C120).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:08:44.365038Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b9212521-5422-42be-a37a-1fbbfc1ae4c0",
+      "result_id": "cda03512-0a1b-491f-a30a-2ffd1d2f35d0"
+    },
+    {
+      "claim_id": "55414b5a-bfa8-4ebf-a9a6-29b7f31ce983",
+      "result_id": "cda03512-0a1b-491f-a30a-2ffd1d2f35d0"
+    },
+    {
+      "claim_id": "8f51b48d-617e-4646-8ef7-c44e875a6555",
+      "result_id": "cda03512-0a1b-491f-a30a-2ffd1d2f35d0"
+    },
+    {
+      "claim_id": "b8e4b257-beaf-497c-8ce5-e33be9d75f32",
+      "result_id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7"
+    },
+    {
+      "claim_id": "7af80d06-e964-4a25-821f-a3a1e824942c",
+      "result_id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7"
+    },
+    {
+      "claim_id": "75090c5e-45f3-48ab-b649-27ad4c7c3a04",
+      "result_id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7"
+    },
+    {
+      "claim_id": "bdf595f4-4769-49b2-9c4e-ee9161e59e21",
+      "result_id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7"
+    },
+    {
+      "claim_id": "b8d8d287-f573-4b7d-bb54-e244d5bbeeb4",
+      "result_id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7"
+    },
+    {
+      "claim_id": "04ff1403-5a6e-4234-8f22-56078bd9e124",
+      "result_id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7"
+    },
+    {
+      "claim_id": "a4b5a4f8-5b51-4db6-9fc8-d054cce2ca04",
+      "result_id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7"
+    },
+    {
+      "claim_id": "b8db0497-0a95-451a-b6a5-c2f6fba38263",
+      "result_id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7"
+    },
+    {
+      "claim_id": "518aac46-c9e2-4b86-ab9e-a59a3d3e0af4",
+      "result_id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7"
+    },
+    {
+      "claim_id": "a8890e80-bd55-4d39-b980-9b7ede4f9db3",
+      "result_id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7"
+    },
+    {
+      "claim_id": "d2f80990-92d3-4827-a459-feed5c25e8a2",
+      "result_id": "908bf1c3-19b2-4e83-8e8e-b8b62222c0b7"
+    },
+    {
+      "claim_id": "28375fc9-80df-40c6-bdf8-86ebecf7b44a",
+      "result_id": "229cc445-6a4c-44f2-a036-de6acb481118"
+    },
+    {
+      "claim_id": "049ba81c-f8f7-4ee6-a3cf-932159ac97e9",
+      "result_id": "229cc445-6a4c-44f2-a036-de6acb481118"
+    },
+    {
+      "claim_id": "31e3e168-8eb8-475b-8d3a-2c1e95c247ca",
+      "result_id": "229cc445-6a4c-44f2-a036-de6acb481118"
+    },
+    {
+      "claim_id": "9df6d294-1d8c-4e8a-b9a6-575426fb14ad",
+      "result_id": "229cc445-6a4c-44f2-a036-de6acb481118"
+    },
+    {
+      "claim_id": "b88f8ce3-b207-4589-9500-3668a938947e",
+      "result_id": "229cc445-6a4c-44f2-a036-de6acb481118"
+    },
+    {
+      "claim_id": "064d453a-84f8-49cc-9c63-26a32a4aaba2",
+      "result_id": "229cc445-6a4c-44f2-a036-de6acb481118"
+    },
+    {
+      "claim_id": "5fbeb475-487a-4321-8d7c-a6e55a96b510",
+      "result_id": "2c80a8be-6782-4143-8311-19023eb88a96"
+    },
+    {
+      "claim_id": "82402a8c-b3ee-4f90-87a2-6db70a6f1f37",
+      "result_id": "2c80a8be-6782-4143-8311-19023eb88a96"
+    },
+    {
+      "claim_id": "a37ca6da-b049-4d99-9a5d-61becf8ed4f5",
+      "result_id": "2c80a8be-6782-4143-8311-19023eb88a96"
+    },
+    {
+      "claim_id": "61864107-2792-4e23-81ca-58c6bd85f1ac",
+      "result_id": "2c80a8be-6782-4143-8311-19023eb88a96"
+    },
+    {
+      "claim_id": "8844ac8c-e953-46a7-be70-db10dd0cee70",
+      "result_id": "2c80a8be-6782-4143-8311-19023eb88a96"
+    },
+    {
+      "claim_id": "d3421c5a-7e3e-4b97-be6e-76570ae18a6d",
+      "result_id": "ba6ccc02-1c2f-4f16-91d6-e7440a558805"
+    },
+    {
+      "claim_id": "879b1bac-a0a3-4bba-b4c0-a5404fdb9ef2",
+      "result_id": "ba6ccc02-1c2f-4f16-91d6-e7440a558805"
+    },
+    {
+      "claim_id": "5c2af87c-d787-4310-9e74-4932c67312da",
+      "result_id": "ba6ccc02-1c2f-4f16-91d6-e7440a558805"
+    },
+    {
+      "claim_id": "404e3f7d-d7af-44c9-bfee-f98f103248d1",
+      "result_id": "ba6ccc02-1c2f-4f16-91d6-e7440a558805"
+    },
+    {
+      "claim_id": "f1db0778-ddb6-4abd-a1e8-c000d588e220",
+      "result_id": "ba6ccc02-1c2f-4f16-91d6-e7440a558805"
+    },
+    {
+      "claim_id": "adcfeec2-58cd-469a-a94d-d49148b88029",
+      "result_id": "ba6ccc02-1c2f-4f16-91d6-e7440a558805"
+    },
+    {
+      "claim_id": "d458c6a2-5a9e-4c0e-a161-4d89c24a27b9",
+      "result_id": "ba6ccc02-1c2f-4f16-91d6-e7440a558805"
+    },
+    {
+      "claim_id": "40e7ca74-0137-4317-a0b7-e0b3070bc4c4",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "4d534ed3-1a8e-40f6-a65a-a86c8f7a5407",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "1ee57ca7-7ccc-4a55-8b5e-71d2c0012303",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "00bdeb55-2178-4f5e-ae06-0441d50928f1",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "ed7bc049-d1f8-4a56-86f2-03cb540c1d29",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "60ac8fb6-1416-4f48-8c86-6b9be245f8a5",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "ca2c67d2-9e1b-490d-accd-afbf2154b9c1",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "712f42da-6729-4220-b7a8-9fd5daae7fb1",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "60bc8fe9-f66b-4b15-88a4-3106aa99eb7e",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "e3049132-f8c8-4732-a50b-f7759b108d32",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "519496ff-83ac-46b3-b50c-8c955d5e8fd2",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "71ad41af-164c-49e9-bb67-71d4e864fa7c",
+      "result_id": "eb3980e1-e4eb-4aa2-8ee4-9ca8b1d35f29"
+    },
+    {
+      "claim_id": "db324baf-0db3-493f-aaed-5254612b335a",
+      "result_id": "4a699759-0ea8-4f5c-a433-87994e7c2b88"
+    },
+    {
+      "claim_id": "a37ca6da-b049-4d99-9a5d-61becf8ed4f5",
+      "result_id": "4a699759-0ea8-4f5c-a433-87994e7c2b88"
+    },
+    {
+      "claim_id": "10de4cb7-5627-4d24-9a8f-4131809f2ace",
+      "result_id": "14490d22-235c-473b-ad2a-c9a37b0b08e3"
+    },
+    {
+      "claim_id": "8844ac8c-e953-46a7-be70-db10dd0cee70",
+      "result_id": "14490d22-235c-473b-ad2a-c9a37b0b08e3"
+    },
+    {
+      "claim_id": "331a93b9-3e50-4336-b827-d8bf0e7a3eb4",
+      "result_id": "5e18527f-198d-455c-b77e-705480fecc0d"
+    },
+    {
+      "claim_id": "aa5e18e6-5afb-47f8-8dc4-2d122907327c",
+      "result_id": "5e18527f-198d-455c-b77e-705480fecc0d"
+    },
+    {
+      "claim_id": "d4297557-bcad-4480-bb7e-0238cb9ca758",
+      "result_id": "5e18527f-198d-455c-b77e-705480fecc0d"
+    },
+    {
+      "claim_id": "0175d054-fc5c-4f80-8e35-eaed2cbd31cb",
+      "result_id": "54b11c5a-b289-4213-ae40-26ed747c4297"
+    },
+    {
+      "claim_id": "eea1dd3c-d9a5-476d-9096-855c28d45490",
+      "result_id": "54b11c5a-b289-4213-ae40-26ed747c4297"
+    },
+    {
+      "claim_id": "7c2d5e1a-d8e9-4e5c-b431-11542d258f0e",
+      "result_id": "54b11c5a-b289-4213-ae40-26ed747c4297"
+    },
+    {
+      "claim_id": "77ef7978-b7c5-4deb-a5af-2a5e0cd344be",
+      "result_id": "54b11c5a-b289-4213-ae40-26ed747c4297"
+    },
+    {
+      "claim_id": "d0e3e781-0200-40b6-bb37-be1a4832628f",
+      "result_id": "54b11c5a-b289-4213-ae40-26ed747c4297"
+    },
+    {
+      "claim_id": "5b27aa2d-4463-4047-9f7f-10b3e244e836",
+      "result_id": "54b11c5a-b289-4213-ae40-26ed747c4297"
+    },
+    {
+      "claim_id": "7ae4ff87-ff39-4412-8049-812da8536cbe",
+      "result_id": "54b11c5a-b289-4213-ae40-26ed747c4297"
+    },
+    {
+      "claim_id": "3d508702-01fc-41b9-93e1-f0aad0cf45c2",
+      "result_id": "8f2890e2-a8d8-49ec-ad20-ea1482bb2452"
+    },
+    {
+      "claim_id": "d11f9604-479f-4f67-8692-7ad076132262",
+      "result_id": "8f2890e2-a8d8-49ec-ad20-ea1482bb2452"
+    },
+    {
+      "claim_id": "796220d4-f7d2-4bdc-8274-454e3f397454",
+      "result_id": "8f2890e2-a8d8-49ec-ad20-ea1482bb2452"
+    },
+    {
+      "claim_id": "6b4a2129-3422-42da-a815-64bb7a73b7ab",
+      "result_id": "8f2890e2-a8d8-49ec-ad20-ea1482bb2452"
+    },
+    {
+      "claim_id": "d5afb215-a21b-47fe-9593-5287fc0e7089",
+      "result_id": "8f2890e2-a8d8-49ec-ad20-ea1482bb2452"
+    },
+    {
+      "claim_id": "8f2d34a2-0153-44bd-8f71-3bbe1affa4e2",
+      "result_id": "8f2890e2-a8d8-49ec-ad20-ea1482bb2452"
+    },
+    {
+      "claim_id": "1e2c7c21-bb32-4282-af0f-240cd63d5b49",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "2a15de68-e6f6-4bbc-ad81-4fb30170dccd",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "023ce8ea-e3c3-49f3-823d-ccd58c28911a",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "19ee7b10-f1e0-4af8-bc58-884021a49c28",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "d6a48c60-ffd3-45b7-b556-c9d3ae46c6b5",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "6ad55d60-2d36-4f69-99ed-c6578ea02b01",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "d522725a-101f-43fe-ad0e-1d9daa9aab81",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "8a700047-db0b-4cb5-82fe-1f44793473da",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "f9c3630b-e754-4970-8c0f-cae341a23cce",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "f479fb1e-0f03-4703-bcc7-7b9487c40a57",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "6c95fba5-8611-4e5f-b43f-a98ddc0c5c13",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "43ae8c7c-ee60-41ba-adee-306154612d55",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "f1193e31-a278-4f4f-8230-e888c4fc0912",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "5b0cd037-e0bb-4ba9-b489-de280ac2e46f",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "73b7c03a-7640-4b08-a36f-16da8a234915",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "48f2760b-637a-47f0-b5f4-72f315397808",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "db96d32d-8a17-4245-9904-d40e7c725690",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "c427f9a0-e17b-4989-b815-14d656309dcf",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "5eb2c758-54fc-434d-af59-ae6ccda12aae",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "91b9c11b-7973-41e5-b366-1ffa7e9a81ab",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "9eec17ea-b8a1-4759-aa0b-6ad0863a4f28",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "7ababbb3-52e8-4cf3-98b4-91f5303bb73a",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "ac8c97df-6564-4bdb-99d5-d53095d6dcf3",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "5d7fc0f6-01d4-4436-9abf-7f3558b5a81e",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "aa6f1385-a319-4864-971e-2f03b41999d5",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "b9b6ae73-4261-42db-8feb-a7fb1b02bfea",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "a29d0fd6-25af-4479-9698-eb355f09fe92",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "e15aa6c1-0a64-46d8-8579-83df285d682a",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "7a41b0bf-058f-48dd-bd52-f16a109e0ab9",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "80ef4fa5-5406-4f33-a366-6e5edac9e94e",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "54a09014-9819-4ba3-9c71-ef93f3001da8",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "777e4642-6ee3-46dd-b9c8-47db4e9c0af7",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    },
+    {
+      "claim_id": "12550bc3-c201-4537-9224-ccecf6128ab8",
+      "result_id": "61d9d621-a1f9-4132-9ae2-43e8f009b564"
+    }
+  ],
+  "comparisons": []
+}

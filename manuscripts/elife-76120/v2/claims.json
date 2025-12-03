@@ -1,0 +1,1688 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "A 250 \u00d7 140 \u00d7 90 \u03bcm\u00b3 ssEM dataset was acquired from L2/3 primary visual cortex of a P36 male mouse at 3.58 \u00d7 3.58 \u00d7 40 nm\u00b3 resolution.",
+    "claim_type": "EXPLICIT",
+    "source": "We acquired a 250 \u00d7 140 \u00d7 90 \u03bcm3 ssEM dataset (Figure 1\u2014figure supplement 1) from L2/3 primary visual cortex of a P36 male mouse at 3.58 \u00d7 3.58 \u00d7 40 nm3 resolution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript directly states the dimensions, resolution, brain region, and mouse age for the acquired dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "State-of-the-art convolutional nets produced many reconstruction errors when applied to a pilot subvolume, mainly due to misaligned images and damaged or incompletely imaged sections.",
+    "claim_type": "EXPLICIT",
+    "source": "When we aligned a pilot subvolume and applied state-of-the-art convolutional nets, we found many reconstruction errors, mainly due to misaligned images and damaged or incompletely imaged sections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports observed reconstruction errors and attributes them to specific image defects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Convolutional nets can approach human-level performance on one benchmark ssEM image dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "This was disappointing given reports that convolutional nets can approach human-level performance on one benchmark ssEM image dataset (Beier et al., 2017; Zeng et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites two references supporting this claim about convolutional net performance.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The high error rate in large volumes can be explained by the fact that image defects are difficult to escape in large volumes, though they may be rare in small (<1000 \u03bcm\u00b3) benchmark datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "The high error rate could be explained by the fact that image defects are difficult to escape in large volumes, though they may be rare in small (<1000 \u03bcm3) benchmark datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides a logical explanation for the observed error rates based on volume size.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "ssEM images were historically considered problematic for automated analysis because they were difficult to align, contained defects caused by lost or damaged serial sections, and had inferior axial resolution.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, ssEM images were historically considered problematic for automated analysis (Briggman and Bock, 2012; Lee et al., 2019) because they were difficult to align, contained defects caused by lost or damaged serial sections, and had inferior axial resolution (Knott et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites three references supporting historical challenges with ssEM automated analysis.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "These difficulties with ssEM were the motivation for developing block face electron microscopy (bfEM) as an alternative to ssEM.",
+    "claim_type": "EXPLICIT",
+    "source": "These difficulties were the motivation for developing block face electron microscopy (bfEM) as an alternative to ssEM (Denk and Horstmann, 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a reference explaining the motivation for developing bfEM.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Most large-scale ssEM reconstructions have been completely manual, while many large-scale bfEM reconstructions have been semi-automated.",
+    "claim_type": "EXPLICIT",
+    "source": "Most large-scale ssEM reconstructions have been completely manual, while many large-scale bfEM reconstructions have been semi-automated (19/20 and 5/10 in Table 1 of Kornfeld and Denk, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites specific statistics from a reference comparing reconstruction methods.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The higher imaging throughput of ssEM makes it suitable for scaling up to volumes that are large enough to encompass the arbors of mammalian neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, the higher imaging throughput of ssEM (Nickell and Zeidler, 2019; Yin et al., 2019) makes it suitable for scaling up to volumes that are large enough to encompass the arbors of mammalian neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites two references supporting the higher throughput of ssEM and draws an inference about its suitability.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Existing algorithms for aligning ssEM images were supplemented with human-in-the-loop capabilities.",
+    "claim_type": "EXPLICIT",
+    "source": "We supplemented existing algorithms for aligning ssEM images (Saalfeld et al., 2012) with human-in-the-loop capabilities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes a methodological approach with citation to existing algorithms.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "After manual intervention by a human expert, large misalignments were resolved but small ones still remained near damaged locations and near the borders of the volume.",
+    "claim_type": "EXPLICIT",
+    "source": "After manual intervention by a human expert, large misalignments were resolved but small ones still remained near damaged locations and near the borders of the volume.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the results of manual intervention on alignment quality.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Training data for the convolutional net was augmented with simulated misalignments and missing sections.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, we augmented the training data for our convolutional net with simulated misalignments and missing sections (Figure 1a, Figure 1\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the data augmentation approach and references figures showing the method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The convolutional net trained with augmented data was better able to trace neurites through image defects.",
+    "claim_type": "EXPLICIT",
+    "source": "The resulting net was better able to trace neurites through such image defects (Figure 1b, quantification in Figure 1\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports improved performance and references figures with quantification.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "417 PyCs and 34 inhibitory cells with somas in the volume were semi-automatically identified based on morphological characteristics and automated nucleus detection.",
+    "claim_type": "EXPLICIT",
+    "source": "After alignment and automatic segmentation (Materials and methods), we semi-automatically identified 417 PyCs and 34 inhibitory cells with somas in the volume based on morphological characteristics and automated nucleus detection (Figure 1d and e, Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the number of identified cells and the methods used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "A subset of 362 PyCs and 34 inhibitory cells with sufficient neurite length within the volume were chosen for proofreading.",
+    "claim_type": "EXPLICIT",
+    "source": "We then chose a subset of 362 PyCs and 34 inhibitory cells with sufficient neurite length within the volume for proofreading.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the selection criteria and number of cells chosen for proofreading.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The PyC reconstructions were corrected through ~1300 hr of human proofreading to yield 670 mm cable length (axon: 100 mm, dendrite: 520 mm, perisomatic: 40 mm).",
+    "claim_type": "EXPLICIT",
+    "source": "We estimate that the PyC reconstructions were corrected through ~1300 hr of human proofreading to yield 670 mm cable length (axon: 100 mm, dendrite: 520 mm, perisomatic: 40 mm, Figure 1\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the proofreading effort and resulting cable lengths.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "12 randomly sampled axons were examined and 0.28 merge errors per millimeter remain after proofreading.",
+    "claim_type": "EXPLICIT",
+    "source": "We examined 12 randomly sampled axons and conservatively estimated that 0.28 merge errors per millimeter remain after proofreading (see Materials and methods for other estimates).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the error rate estimation from a sample of axons.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The dendrites of the PyCs receive more than one-quarter of the 3.2 million synapses that were automatically detected in the volume.",
+    "claim_type": "EXPLICIT",
+    "source": "The dendrites of the PyCs receive more than one-quarter of the 3.2 million synapses that were automatically detected in the volume (Materials and methods, Turner et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the proportion of synapses received by PyC dendrites with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The synapses onto PyC dendrites are almost all from 'orphan' axons, defined as those axonal fragments that belong to somas of unknown location outside the volume.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the synapses onto PyC dendrites are almost all from 'orphan' axons, defined as those axonal fragments that belong to somas of unknown location outside the volume.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript defines orphan axons and reports their prevalence.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The end result was a wiring diagram of 6210 synapses from 3347 connections in the dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "The end result was a wiring diagram of 6210 synapses from 3347 connections in the dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the total number of synapses and connections in the wiring diagram.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The subgraph of PyCs contained 1960 synapses from 1735 connections between 334 L2/3 PyCs.",
+    "claim_type": "EXPLICIT",
+    "source": "The subgraph of PyCs contained 1960 synapses from 1735 connections between 334 L2/3 PyCs (Figure 2a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the number of synapses and connections specifically between PyCs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Some connections are multisynaptic, that is, they are mediated by multiple synapses sharing the same presynaptic and postsynaptic cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that some connections are multisynaptic, that is, they are mediated by multiple synapses sharing the same presynaptic and postsynaptic cells (Figure 2b, Figure 2\u2014figure supplement 1, see Table 1 for a tabular overview of these statistics).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript defines multisynaptic connections and references figures and tables.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "A connection between two PyCs usually (89.1%) contains one synapse, but can contain up to five synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "A connection between two PyCs usually (89.1%) contains one synapse, but can contain up to five synapses (2: 9.22%, 3: 1.38%, 4: 0.17%, 5: 0.12%, Figure 2c)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the distribution of synapse numbers per connection.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The observed number of synapses for a connection is a lower bound for the true number of synapses, because two PyCs with cell bodies in the EM volume could synapse with each other outside the bounds of the volume.",
+    "claim_type": "EXPLICIT",
+    "source": "these numbers should be taken with the caveat that the observed number of synapses for a connection is a lower bound for the true number of synapses, because two PyCs with cell bodies in our EM volume could synapse with each other outside the bounds of the volume.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides a caveat about the limitations of the observation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Only 60.3% of connections from PyCs on inhibitory cells were monosynaptic.",
+    "claim_type": "EXPLICIT",
+    "source": "In comparison, only 60.3% of connections from PyCs on inhibitory cells were monosynaptic.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the percentage of monosynaptic connections for a specific cell type pair.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "62.1% connections made by inhibitory neurons were monosynaptic when targeting other inhibitory neurons, which reduces to only 42.6% when targeting PyCs.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, 62.1% connections made by inhibitory neurons were monosynaptic when targeting other inhibitory neurons, which reduces to only 42.6% when targeting PyCs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the percentage of monosynaptic connections for different target types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The number of synapses per PyC-PyC connection varies least compared to the other three categories.",
+    "claim_type": "EXPLICIT",
+    "source": "While the number of synapses per PyC-PyC connection varies least compared to the other three categories, we observed the highest variance in synapse sizes for these connections (Figure 2d and e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript compares variability across connection types with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The highest variance in synapse sizes was observed for PyC-PyC connections.",
+    "claim_type": "EXPLICIT",
+    "source": "While the number of synapses per PyC-PyC connection varies least compared to the other three categories, we observed the highest variance in synapse sizes for these connections (Figure 2d and e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the variance in synapse sizes with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Synaptic cleft size was quantified as the number of voxels labeled by the output of the automated cleft detector.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we quantified synaptic cleft size as the number of voxels labeled by the output of our automated cleft detector (Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the method for quantifying cleft size.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Dual connections with two synapses more than 100 \u03bcm apart were observed.",
+    "claim_type": "EXPLICIT",
+    "source": "The dimensions of our reconstructions allowed us to observe dual connections with two synapses more than 100 \u03bcm apart (Figure 2b and f), involving different axonal and dendritic branches.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the observation of widely separated synapses in dual connections.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Previous analyses reporting correlations between synapses from dual synaptic connections only included synapses that were close to another and were between the SASD.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous analyses reporting correlations between synapses from dual synaptic connections only included synapses that were close to another and were between the SASD.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript characterizes the scope of previous analyses.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Previous studies of cortical synapses have found a continuum of synapse sizes.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies of cortical synapses have found a continuum of synapse sizes (Arellano, 2007) that is approximated by a log-normal distribution (Loewenstein et al., 2011; de Vivo et al., 2017; Santuy et al., 2018; Kasai et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites multiple references supporting the continuum of synapse sizes.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Previous studies found that cortical synapse sizes are approximated by a log-normal distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies of cortical synapses have found a continuum of synapse sizes (Arellano, 2007) that is approximated by a log-normal distribution (Loewenstein et al., 2011; de Vivo et al., 2017; Santuy et al., 2018; Kasai et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites multiple references supporting the log-normal distribution model.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Researchers who report bimodally distributed synapse size on a log-scale in hippocampus still find log-normally distributed synapse size in neocortex by the same methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Even researchers who report bimodally distributed synapse size on a log-scale in hippocampus (Spano et al., 2019) still find log-normally distributed synapse size in neocortex (de Vivo et al., 2017) by the same methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites references showing different distributions in different brain regions.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Spine volumes spanned over two orders of magnitude, though 75% of spines lie within a single order of magnitude.",
+    "claim_type": "EXPLICIT",
+    "source": "Spine volumes spanned over two orders of magnitude, though 75% of spines lie within a single order of magnitude.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the range and distribution of spine volumes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The distribution of spine volumes is highly skewed, with a long tail of large spines.",
+    "claim_type": "EXPLICIT",
+    "source": "The distribution of spine volumes is highly skewed, with a long tail of large spines (Figure 3b) as observed before (Loewenstein et al., 2011; Santuy et al., 2018; Kasai et al., 2021).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the skewed distribution with citations to previous observations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The distribution of spine volumes deviated from normality on a logarithmic scale, due to a 'knee' on the right side of the histogram.",
+    "claim_type": "EXPLICIT",
+    "source": "We were surprised to find that the distribution deviated from normality, due to a 'knee' on the right side of the histogram (Figure 3c)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports an unexpected deviation from normality with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "A mixture of two normal distributions was a better fit than a single normal distribution for spine volumes on a log scale (likelihood ratio test: p<1e-39, n=1960).",
+    "claim_type": "EXPLICIT",
+    "source": "A mixture of two normal distributions was a better fit than a single normal distribution when accounting for the number of free parameters (likelihood ratio test: p<1e-39, n=1960, Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports a statistical test comparing model fits.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "A bimodal model yields a significantly superior fit compared to a unimodal mixture for spine volume and geometric mean of spine volume (p=0.0425, n=320).",
+    "claim_type": "EXPLICIT",
+    "source": "When comparing best fit unimodal and bimodal mixtures we found that a bimodal model yields a significantly superior fit for spine volume and geometric mean of spine volume (p=0.0425, n=320; Figure 3\u2014figure supplement 4, see Holzmann and Vollmer, 2008, for statistical methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a statistical test comparing bimodal and unimodal models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "There is a close relationship between spine volume and cleft size in the data.",
+    "claim_type": "EXPLICIT",
+    "source": "We found a close relationship between spine volume and cleft size in our data (Figure 3\u2014figure supplement 5a), in accord with previous studies (Harris and Stevens, 1989; Arellano, 2007; Bartol et al., 2015).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the relationship with citations to previous studies.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "When spine volume is replaced by cleft size in the analysis, similar results are obtained.",
+    "claim_type": "EXPLICIT",
+    "source": "When spine volume is replaced by cleft size in the preceding analysis, we obtain similar results (Figure 3\u2014figure supplement 5).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports that the analysis is robust to using a different measure of synapse size.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The parameters of the mixture components should stay roughly constant for the distribution of any subset of synapses between L2/3 PyCs according to the two-state model.",
+    "claim_type": "EXPLICIT",
+    "source": "According to our two-state model, the parameters of the mixture components should stay roughly constant for the distribution of any subset of synapses between L2/3 PyCs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a prediction of the two-state model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Parameter estimates for Gaussian mixture fits to single, dual, and triple connections lie within sampling error of the single connection dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We trained on input patches of size 128 \u00d7 128 \u00d7 20 at 7.16 \u00d7 7.16 \u00d7 40 nm3 resolution. The prediction during training was bilinearly upsampled to full image resolution before calculating the loss.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports that mixture components are consistent across connection types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "There is an overrepresentation of large synapses for dual connections compared to single connections.",
+    "claim_type": "EXPLICIT",
+    "source": "When comparing these distributions we observed an overrepresentation of large synapses for dual connections compared to single connections (Figure 3g).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a difference in size distributions between connection types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "There is a linear increase in fraction of synapses in the 'L' state with the number of synapses per connection.",
+    "claim_type": "EXPLICIT",
+    "source": "We found a linear increase in fraction of synapses in the 'L' state with the number of synapses per connection (Figure 3h).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a linear relationship with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Mean spine volume is expected to increase with the true number of synapses per connection.",
+    "claim_type": "EXPLICIT",
+    "source": "This relationship was found for the observed number of synapses. On average, this number is expected to increase with the true number of synapses. Therefore, mean spine volume is also expected to increase with the true number of synapses per connection",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript draws an inference about the relationship between spine volume and synapse number.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Large spines have been reported to contain an intracellular organelle called a spine apparatus (SA), which is a specialized form of smooth endoplasmic reticulum (ER).",
+    "claim_type": "EXPLICIT",
+    "source": "Large spines have been reported to contain an intracellular organelle called a spine apparatus (SA), which is a specialized form of smooth endoplasmic reticulum (ER) (Peters and Kaiserman-Abramof, 1970; Spacek, 1985; Harris and Stevens, 1989).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites three references about spine apparatus in large spines.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "SA was manually annotated in all dendritic spines of all synapses between L2/3 PyCs.",
+    "claim_type": "EXPLICIT",
+    "source": "We manually annotated SA in all dendritic spines of all synapses between L2/3 PyCs, and confirmed quantitatively that the probability of an SA increases with spine volume (Figure 3\u2014figure supplement 7, Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the manual annotation process and reports the result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The probability of an SA increases with spine volume.",
+    "claim_type": "EXPLICIT",
+    "source": "We manually annotated SA in all dendritic spines of all synapses between L2/3 PyCs, and confirmed quantitatively that the probability of an SA increases with spine volume (Figure 3\u2014figure supplement 7, Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a quantitative confirmation of the relationship.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Positive correlation between synapse sizes at dual connections has been reported previously in hippocampus for synapse pairs formed by the same axonal and dendritic branches.",
+    "claim_type": "EXPLICIT",
+    "source": "Positive correlation between synapse sizes at dual connections has been reported previously in hippocampus (Sorra and Harris, 1993; Bartol et al., 2015; Bloss et al., 2018) and neocortex (Kasthuri et al., 2015; Motta et al., 2019) for synapse pairs formed by the same axonal and dendritic branches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites multiple references about synapse size correlations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Positive correlation between synapse sizes at dual connections has been reported previously in neocortex for synapse pairs formed by the same axonal and dendritic branches.",
+    "claim_type": "EXPLICIT",
+    "source": "Positive correlation between synapse sizes at dual connections has been reported previously in hippocampus (Sorra and Harris, 1993; Bartol et al., 2015; Bloss et al., 2018) and neocortex (Kasthuri et al., 2015; Motta et al., 2019) for synapse pairs formed by the same axonal and dendritic branches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites multiple references about synapse size correlations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "A positive correlation between the two spine volumes of each dual connection is evident (Pearson's r=0.418).",
+    "claim_type": "EXPLICIT",
+    "source": "A positive correlation between the two spine volumes of each dual connection is evident in a scatter plot of the spine volume pairs (Figure 4a, see Figure 4\u2014figure supplement 1 for an unoccluded plot; Pearson's r=0.418).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a correlation coefficient with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "In the best-fitting model for dual connections, SS occurs roughly half the time, LL one-third of the time, and the mixed states (SL, LS) occur more rarely.",
+    "claim_type": "EXPLICIT",
+    "source": "In the best-fitting model, SS occurs roughly half the time, LL one-third of the time, and the mixed states (SL, LS) occur more rarely (Figure 4e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the state probabilities from the best-fitting model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The low probability of the mixed states can be seen directly in the scarcity of points in the upper left and lower right corners of the scatter plot.",
+    "claim_type": "EXPLICIT",
+    "source": "The low probability of the mixed states can be seen directly in the scarcity of points in the upper left and lower right corners of the scatter plot (Figure 4a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes a visual feature of the data that supports the model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Pearson's phi coefficient for the latent states of dual connections is 0.637.",
+    "claim_type": "EXPLICIT",
+    "source": "Pearson's phi coefficient, the specialization of Pearson's correlation coefficient to binary variables, is 0.637.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports a correlation coefficient for binary variables.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The spine volumes in a dual connection are approximately uncorrelated when conditioned on the latent states.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, the spine volumes in a dual connection are approximately uncorrelated when conditioned on the latent states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript draws a conclusion from resampling analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Pearson's correlation for resampled data weighted by posterior probabilities of SS and LL states is not significantly greater than zero.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, Pearson's correlation for the resampled data is not significantly greater than zero (Figure 4g and h).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a statistical test result with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The residual synapse sizes after subtracting the binary components show no remaining correlation between synapse pairs.",
+    "claim_type": "EXPLICIT",
+    "source": "We validated this result by examining the residual synapse sizes after subtracting the binary components and found no remaining correlation between then synapse pairs (Figure 4\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a validation analysis with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Crosstalk between plasticity of neighboring synapses (<10 \u03bcm separation) has been reported previously.",
+    "claim_type": "EXPLICIT",
+    "source": "Could the observed correlations between synapses in dual connections be caused by crosstalk between plasticity of neighboring synapses (<10 \u03bcm separation), which has been reported previously (Harvey and Svoboda, 2007; Harvey et al., 2008)?",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites references about crosstalk between neighboring synapses.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Dual connections were split into two groups based on whether synapses were nearer or farther than the median Euclidean distance of 46.5 \u03bcm.",
+    "claim_type": "EXPLICIT",
+    "source": "We looked for dependence of latent state correlations on separation by splitting dual connections into two groups, those with synapses nearer or farther than the median Euclidean distance in the volume of 46.5 \u03bcm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the analysis approach and reports the median distance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Both near and far groups of dual connections were fit by mixture models with positive correlations between latent variables (near: \u03c6 = 0.53, far: \u03c6 = 0.75).",
+    "claim_type": "EXPLICIT",
+    "source": "Both groups were fit by mixture models with positive correlations between latent variables (near: \u03c6 = 0.53, far: \u03c6 = 0.75, see Materials and methods, Figure 4\u2014figure supplement 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports correlation coefficients for both groups.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "For dual connections involving pairs of distant synapses, the latent state correlations are still strong.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, for dual connections involving pairs of distant synapses, the latent state correlations are still strong.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript draws a conclusion from the correlation analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Correlations in the latent state or synapse size were negligible for synapse pairs sharing the same axon but not the same postsynaptic cell (same axon: \u03c6 = \u22120.11\u00b10.08 SD, r = \u22120.06\u00b10.06 SD).",
+    "claim_type": "EXPLICIT",
+    "source": "Correlations in the latent state or synapse size were negligible (same axon: \u03c6 = \u22120.11\u00b10.08 SD, r = \u22120.06\u00b10.06 SD; same dendrite: \u03c6 = \u22120.06\u00b10.06 SD, r = \u22120.13\u00b10.05 SD; Figure 4\u2014figure supplement 5), similar to previous findings (Bloss et al., 2018; Motta et al., 2019).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports correlation coefficients with standard deviations and cites previous findings.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Correlations in the latent state or synapse size were negligible for synapse pairs sharing the same postsynaptic cell but not the same presynaptic cell (same dendrite: \u03c6 = \u22120.06\u00b10.06 SD, r = \u22120.13\u00b10.05 SD).",
+    "claim_type": "EXPLICIT",
+    "source": "Correlations in the latent state or synapse size were negligible (same axon: \u03c6 = \u22120.11\u00b10.08 SD, r = \u22120.06\u00b10.06 SD; same dendrite: \u03c6 = \u22120.06\u00b10.06 SD, r = \u22120.13\u00b10.05 SD; Figure 4\u2014figure supplement 5), similar to previous findings (Bloss et al., 2018; Motta et al., 2019).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports correlation coefficients with standard deviations and cites previous findings.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Synapse size correlations are specific to pairs of synapses that share both the same presynaptic and postsynaptic L2/3 PyCs.",
+    "claim_type": "EXPLICIT",
+    "source": "Our synapse size correlations are specific to pairs of synapses that share both the same presynaptic and postsynaptic L2/3 PyCs, similar to previous findings (Sorra and Harris, 1993; Koester and Johnston, 2005; Bartol et al., 2015; Kasthuri et al., 2015; Dvorkin and Ziv, 2016; Bloss et al., 2018; Motta et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes the specificity of correlations with citations to previous findings.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The correlations exist even for large spatial separations between synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "We have further demonstrated that the correlations exist even for large spatial separations between synapses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a key finding about correlation persistence over distance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The correlations are confined to the binary latent variables in the synapse size model; the log-normal analog variables exhibit little or no correlation.",
+    "claim_type": "EXPLICIT",
+    "source": "More importantly, we have shown the correlations are confined to the binary latent variables in our synapse size model; the log-normal analog variables exhibit little or no correlation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a key finding about which components of the model show correlations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The correlations in the binary variables could arise from a Hebbian or other synaptic plasticity rule driven by presynaptic and postsynaptic activity signals that are relatively uniform across neuronal arbors.",
+    "claim_type": "EXPLICIT",
+    "source": "The correlations in the binary variables could arise from a Hebbian or other synaptic plasticity rule driven by presynaptic and postsynaptic activity signals that are relatively uniform across neuronal arbors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes a mechanistic explanation for the observed correlations.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Such activity signals are shared by synapses in a multisynaptic connection.",
+    "claim_type": "EXPLICIT",
+    "source": "Such signals are shared by synapses in a multisynaptic connection (Sorra and Harris, 1993; Koester and Johnston, 2005; Bartol et al., 2015; Kasthuri et al., 2015; Dvorkin and Ziv, 2016; Bloss et al., 2018; Motta et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites multiple references supporting the idea of shared signals.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Much of the analog variation may arise from the spontaneous dynamical fluctuations that have been observed at single dendritic spines through time-lapse imaging.",
+    "claim_type": "EXPLICIT",
+    "source": "We speculate that much of the analog variation arises from the spontaneous dynamical fluctuations that have been observed at single dendritic spines through time-lapse imaging.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes a speculative explanation for analog variation.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Computational models of temporal variance suggest that it can account for much of the population variance.",
+    "claim_type": "EXPLICIT",
+    "source": "Computational models of this temporal variance suggest that it can account for much of the population variance (Yasumatsu et al., 2008; Loewenstein et al., 2011; Statman et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites three references about computational models of variance.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Experiments have shown that large dynamical fluctuations persist even after activity is pharmacologically blocked.",
+    "claim_type": "EXPLICIT",
+    "source": "Experiments have shown that large dynamical fluctuations persist even after activity is pharmacologically blocked (Yasumatsu et al., 2008; Statman et al., 2014; Sando et al., 2017; Sigler, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites four references about activity-independent fluctuations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The analog variation may arise from plasticity driven by activity-related signals that are local to neighborhoods within neuronal arbors.",
+    "claim_type": "EXPLICIT",
+    "source": "Another possibility is that the analog variation arises from plasticity driven by activity-related signals that are local to neighborhoods within neuronal arbors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes an alternative explanation for analog variation.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "It remains unclear whether the binary latent variable in the model reflects some underlying bistable mechanism or is merely a convenient statistical description.",
+    "claim_type": "EXPLICIT",
+    "source": "It remains unclear whether the binary latent variable in our model reflects some underlying bistable mechanism or is merely a convenient statistical description.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges uncertainty about the interpretation of the model.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The latent variable model is consistent with the scenario in which synapses behave like binary switches that are flipped by activity-dependent plasticity.",
+    "claim_type": "EXPLICIT",
+    "source": "Our latent variable model is consistent with the scenario in which synapses behave like binary switches that are flipped by activity-dependent plasticity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes a possible interpretation of the model.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Switch-like behavior could arise from bistable networks of molecular interactions at synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "Switch-like behavior could arise from bistable networks of molecular interactions at synapses (Lisman, 1985), has been observed in physiology experiments on synaptic plasticity (Petersen et al., 1998; O'Connor et al., 2005), and has been the basis of a number of computational models of memory (Tsodyks, 1990; Amit and Fusi, 1994; Fusi et al., 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites multiple references supporting bistable mechanisms.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "In the bistable scenario, synapses only appear volatile due to fluctuations in the analog variable, which obscures an underlying bistability.",
+    "claim_type": "EXPLICIT",
+    "source": "In this scenario, synapses only appear volatile due to fluctuations in the analog variable (Loewenstein et al., 2011), which obscures an underlying bistability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a reference and proposes an explanation for apparent volatility.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "In a second scenario, the bimodality of synapse size does not reflect an underlying bistability.",
+    "claim_type": "EXPLICIT",
+    "source": "In a second scenario, the bimodality of synapse size does not reflect an underlying bistability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes an alternative scenario.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Models of activity-dependent plasticity can cause synapses to partition into two clusters located at upper and lower bounds for synaptic size.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, models of activity-dependent plasticity can cause synapses to partition into two clusters located at upper and lower bounds for synaptic size (Song et al., 2000; van Rossum et al., 2000; Rubin et al., 2001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites three references about plasticity models that produce bimodality.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "In the non-bistable scenario, synapses are intrinsically volatile, and bimodality arises because learning drives them to extremes.",
+    "claim_type": "EXPLICIT",
+    "source": "In this scenario, synapses are intrinsically volatile, and bimodality arises because learning drives them to extremes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes a characteristic of the non-bistable scenario.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The first scenario of binary switches is somewhat more plausible because it is unclear how the second scenario could lead to strong correlations in the binary variable.",
+    "claim_type": "EXPLICIT",
+    "source": "We would like to suggest that the first scenario of binary switches is somewhat more plausible, for two reasons. First, it is unclear how the second scenario could lead to strong correlations in the binary variable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript argues for one scenario over another based on the data.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "It is unclear how the non-bistable scenario could be consistent with the little or no correlation that remains in the data once the contribution from the binary latent variables is removed.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, it is unclear how the second scenario could be consistent with the little or no correlation that remains in our data once the contribution from the binary latent variables is removed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript argues for one scenario over another based on the data.",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Bimodality and strong correlations were found for a restricted ensemble of synapses, those belonging to dual connections between L2/3 PyCs.",
+    "claim_type": "EXPLICIT",
+    "source": "Bimodality and strong correlations were found for a restricted ensemble of synapses, those belonging to dual connections between L2/3 PyCs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes the specificity of the findings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Bimodality is not observed for the ensemble of all excitatory synapses onto L2/3 PyCs, including those from orphan axons.",
+    "claim_type": "EXPLICIT",
+    "source": "However, bimodality is not observed for the ensemble of all excitatory synapses onto L2/3 PyCs, including those from orphan axons (Figure 4\u2014figure supplement 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the absence of bimodality in a broader population.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The ensemble of all excitatory synapses onto L2/3 PyCs is similar to ones studied previously.",
+    "claim_type": "EXPLICIT",
+    "source": "This ensemble is similar to ones studied previously, that is, synapses onto L2/3 PyCs (Arellano, 2007), L4 neurons (Motta et al., 2019), or L5 PyCs (Loewenstein et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript compares the current ensemble to those in previous studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Bimodality and strong correlations are also not observed for the ensemble of all dual connections received by L2/3 PyCs, including those from orphan axons.",
+    "claim_type": "EXPLICIT",
+    "source": "Bimodality and strong correlations are also not observed for the ensemble of all dual connections received by L2/3 PyCs, including those from orphan axons (Figure 4\u2014figure supplement 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the absence of bimodality and correlations in another broader population.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The findings are not inconsistent with previous studies that failed to find evidence for discreteness of cortical synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "Because our findings are based on a highly specific population of synapses, they are not inconsistent with previous studies that failed to find evidence for discreteness of cortical synapses (Harris and Stevens, 1989; Arellano, 2007; Loewenstein et al., 2011; Loewenstein et al., 2015; de Vivo et al., 2017; Santuy et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reconciles the current findings with previous studies by citing them.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The simplest explanation for why bimodality disappears when one includes dual connections with orphan axons is that orphan axons come from a mixed population of cell types, each one with its different distribution of synapse sizes.",
+    "claim_type": "EXPLICIT",
+    "source": "Why does the bimodality disappear when one includes dual connections with orphan axons? In our view, the simplest explanation is that this is due to the fact that orphan axons come from a mixed population of cell types, each one with its different distribution of synapse sizes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes an explanation for the loss of bimodality.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "While each cell type to cell type connection might have its unique properties, they are lost to the observer when combining connections between different cell types together.",
+    "claim_type": "EXPLICIT",
+    "source": "While each cell type to cell type connection might have its unique properties, they are lost to the observer when combining connections between different cell types together.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explains why cell type specificity matters for observing bimodality.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Bimodality and correlations may turn out to be heterogeneous across classes of neocortical synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "Bimodality and correlations may turn out to be heterogeneous across classes of neocortical synapses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript speculates about the generality of the findings.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Heterogeneity in the hippocampus has been demonstrated by the finding that dual connections onto granule cell dendrites in the middle molecular layer of dentate gyrus do not exhibit the correlations that are found in stratum radiatum of CA1.",
+    "claim_type": "EXPLICIT",
+    "source": "Heterogeneity in the hippocampus has been demonstrated by the finding that dual connections onto granule cell dendrites in the middle molecular layer of dentate gyrus (Bromer et al., 2018) do not exhibit the correlations that are found in stratum radiatum of CA1 (Bartol et al., 2015; Bloss et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites three references demonstrating heterogeneity in the hippocampus.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The physiological strength of a multisynaptic connection can be approximately predicted from the sum of synaptic sizes.",
+    "claim_type": "EXPLICIT",
+    "source": "Since the physiological strength of a multisynaptic connection can be approximately predicted from the sum of synaptic sizes (Holler-Rickauer et al., 2019), our S and L latent states and their correlations have implications for the debate over whether infrequent strong connections play a disproportionate role in cortical computation (Song et al., 2005; Cossell et al., 2015; Scholl, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites four references about connection strength and its computational implications.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The cortical reconstruction has been made publicly available at https://www.microns-explorer.org/phase1.",
+    "claim_type": "EXPLICIT",
+    "source": "Our cortical reconstruction has been made publicly available and used concurrently in other studies (https://www.microns-explorer.org/phase1)(Schneider-Mizell et al., 2021; Turner et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states the public availability of the data with URL and citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The code that generated the reconstruction is freely available.",
+    "claim_type": "EXPLICIT",
+    "source": "The code that generated the reconstruction is already freely available.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states the availability of the code.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Learning from experience depends at least in part on changes in neuronal connections.",
+    "claim_type": "EXPLICIT",
+    "source": "Learning from experience depends at least in part on changes in neuronal connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a general principle about learning.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The study presents the largest map of connectivity to date between cortical neurons of a defined type (layer 2/3 pyramidal cells in mouse primary visual cortex).",
+    "claim_type": "EXPLICIT",
+    "source": "We present the largest map of connectivity to date between cortical neurons of a defined type (layer 2/3 [L2/3] pyramidal cells in mouse primary visual cortex), which was enabled by automated analysis of serial section electron microscopy images with improved handling of image defects (250 \u00d7 140 \u00d7 90 \u03bcm3 volume).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript claims to present the largest connectivity map of its kind.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The map was used to identify constraints on the learning algorithms employed by the cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "We used the map to identify constraints on the learning algorithms employed by the cortex.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states the purpose of the connectivity map.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "A continuum of synapse sizes is consistent with most neural network models of learning, in which synaptic strength is a continuously graded analog variable.",
+    "claim_type": "EXPLICIT",
+    "source": "A continuum is consistent with most neural network models of learning, in which synaptic strength is a continuously graded analog variable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a general principle about neural network models.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Synapse size, when restricted to synapses between L2/3 pyramidal cells, is well modeled by the sum of a binary variable and an analog variable drawn from a log-normal distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we show that synapse size, when restricted to synapses between L2/3 pyramidal cells, is well modeled by the sum of a binary variable and an analog variable drawn from a log-normal distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a key finding about synapse size modeling.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Two synapses sharing the same presynaptic and postsynaptic cells are known to be correlated in size.",
+    "claim_type": "EXPLICIT",
+    "source": "Two synapses sharing the same presynaptic and postsynaptic cells are known to be correlated in size.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a known fact about synapse correlations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The binary variables of two synapses in a dual connection are highly correlated, while the analog variables are not.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that the binary variables of the two synapses are highly correlated, while the analog variables are not.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a key finding about variable correlations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Binary variation could be the outcome of a Hebbian or other synaptic plasticity rule depending on activity signals that are relatively uniform across neuronal arbors.",
+    "claim_type": "EXPLICIT",
+    "source": "Binary variation could be the outcome of a Hebbian or other synaptic plasticity rule depending on activity signals that are relatively uniform across neuronal arbors, while analog variation may be dominated by other influences such as spontaneous dynamical fluctuations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes a mechanistic explanation for binary variation.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Analog variation may be dominated by other influences such as spontaneous dynamical fluctuations.",
+    "claim_type": "EXPLICIT",
+    "source": "Binary variation could be the outcome of a Hebbian or other synaptic plasticity rule depending on activity signals that are relatively uniform across neuronal arbors, while analog variation may be dominated by other influences such as spontaneous dynamical fluctuations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript proposes a mechanistic explanation for analog variation.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Synapses between excitatory neurons in the cortex and hippocampus are typically made onto spines, tiny thorn-like protrusions from dendrites.",
+    "claim_type": "EXPLICIT",
+    "source": "Synapses between excitatory neurons in the cortex and hippocampus are typically made onto spines, tiny thorn-like protrusions from dendrites (Yuste, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a reference about spine anatomy.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "In the 2000s, long-term in vivo microscopy studies showed that dendritic spines change in shape and size, and can appear and disappear.",
+    "claim_type": "EXPLICIT",
+    "source": "In the 2000s, long-term in vivo microscopy studies showed that dendritic spines change in shape and size, and can appear and disappear (Bhatt et al., 2009; Holtmaat and Svoboda, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites two references about spine dynamics.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Spine dynamics were interpreted as synaptic plasticity, because spine volume is well correlated with physiological strength of a synapse.",
+    "claim_type": "EXPLICIT",
+    "source": "Spine dynamics were interpreted as synaptic plasticity, because spine volume is well correlated with physiological strength of a synapse (Matsuzaki et al., 2001; Noguchi et al., 2011; Holler et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites three references about the correlation between spine volume and synaptic strength.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The plasticity was thought to be in part activity-dependent, because spine volume increases with long-term potentiation.",
+    "claim_type": "EXPLICIT",
+    "source": "The plasticity was thought to be in part activity-dependent, because spine volume increases with long-term potentiation (Matsuzaki et al., 2004; Kopec et al., 2006; Noguchi et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites three references about activity-dependent spine volume changes.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The sizes of other synaptic structures (postsynaptic density, presynaptic active zone, and so on) are well correlated with spine volume and with each other.",
+    "claim_type": "EXPLICIT",
+    "source": "Given that the sizes of other synaptic structures (postsynaptic density, presynaptic active zone, and so on) are well correlated with spine volume and with each other (Harris and Stevens, 1989), we use the catch-all term 'synapse size' to refer to the size of any synaptic structure, and 'synapse strength' as a synonym.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a reference about correlations among synaptic structure sizes.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "In the 2000s, some hypothesized the existence of 'learning spines' and 'memory spines', appearing to define two discrete categories that are structurally and functionally different.",
+    "claim_type": "EXPLICIT",
+    "source": "In the 2000s, some hypothesized the existence of 'learning spines' and 'memory spines', appearing to define two discrete categories that are structurally and functionally different (Kasai et al., 2003; Bourne and Harris, 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites two references about the hypothesis of discrete spine categories.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Quantitative studies of cortical synapses found no evidence for discreteness.",
+    "claim_type": "EXPLICIT",
+    "source": "Quantitative studies of cortical synapses, however, found no evidence for discreteness (Harris and Stevens, 1989; Arellano, 2007; Loewenstein et al., 2011; Loewenstein et al., 2015; de Vivo et al., 2017; Santuy et al., 2018; Kasai et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites seven references about the lack of evidence for discrete synapse categories.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "In theoretical neuroscience and artificial intelligence, it is common for the synaptic strengths in a neural network model to be continuously variable, enabling learning to proceed by the accumulation of arbitrarily small synaptic changes over time.",
+    "claim_type": "EXPLICIT",
+    "source": "Whether in theoretical neuroscience or artificial intelligence, it is common for the synaptic strengths in a neural network model to be continuously variable, enabling learning to proceed by the accumulation of arbitrarily small synaptic changes over time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states a common assumption in neural network models.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "The closest precedents for wiring diagrams between cortical neurons of a defined type had 29 connections between 43 L2/3 PyCs in mouse visual cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "The closest precedents for wiring diagrams between cortical neurons of a defined type had 29 connections between 43 L2/3 PyCs in mouse visual cortex (Lee et al., 2016), 63 connections between 22 L2 excitatory neurons in mouse medial entorhinal cortex (Schmidt et al., 2017), and 32 connections between 89 L4 neurons in mouse somatosensory cortex (Motta et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites three references about previous wiring diagrams.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "A previous wiring diagram had 63 connections between 22 L2 excitatory neurons in mouse medial entorhinal cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "The closest precedents for wiring diagrams between cortical neurons of a defined type had 29 connections between 43 L2/3 PyCs in mouse visual cortex (Lee et al., 2016), 63 connections between 22 L2 excitatory neurons in mouse medial entorhinal cortex (Schmidt et al., 2017), and 32 connections between 89 L4 neurons in mouse somatosensory cortex (Motta et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites three references about previous wiring diagrams.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "A previous wiring diagram had 32 connections between 89 L4 neurons in mouse somatosensory cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "The closest precedents for wiring diagrams between cortical neurons of a defined type had 29 connections between 43 L2/3 PyCs in mouse visual cortex (Lee et al., 2016), 63 connections between 22 L2 excitatory neurons in mouse medial entorhinal cortex (Schmidt et al., 2017), and 32 connections between 89 L4 neurons in mouse somatosensory cortex (Motta et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites three references about previous wiring diagrams.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The mouse used for the experiment was a triple heterozygote for CamKIIa-Cre, B6;CBA-Tg(Camk2a-tTA)1Mmay/J, and Ai93 (GCaMP6f Reporter).",
+    "claim_type": "EXPLICIT",
+    "source": "For this dataset, the mouse we used was a triple heterozygote for the following three genes: (1) Cre driver: CamKIIa-Cre (Jax: 005359 https://www.jax.org/strain/005359), (2) tTA driver: B6;CBA-Tg(Camk2a-tTA)1Mmay/J (Jax: 003010 https://www.jax.org/strain/003010), (3) GCaMP6f Reporter: Ai93 (Allen Institute).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the mouse genotype used in the experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "Imaging was performed in V1, in a 400 \u00d7 400 \u00d7 200 \u00b5m\u00b3 volume with the superficial surface of the volume at the border of L1 and L2/3, approximately 100 \u00b5m below the pia.",
+    "claim_type": "EXPLICIT",
+    "source": "Imaging for candidate mice was performed in V1, in a 400 \u00d7 400 \u00d7 200 \u00b5m3 volume with the superficial surface of the volume at the border of L1 and L2/3, approximately 100 \u00b5m below the pia.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the imaging location and volume.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Laser excitation was at 920 nm at 25\u201345 mW depending on depth.",
+    "claim_type": "EXPLICIT",
+    "source": "Laser excitation was at 920 nm at 25\u201345 mW depending on depth.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the imaging parameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "The objective used was a 25\u00d7 Nikon objective with a numerical aperture of 1.1.",
+    "claim_type": "EXPLICIT",
+    "source": "The objective used was a 25\u00d7 Nikon objective with a numerical aperture of 1.1, and the imaging point spread function was measured with 500 nm beads and was approximately 0.5 \u00d7 0.5 \u00d7 3 \u00b5m3 in x, y, and z.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the imaging objective and resolution.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The imaging point spread function was measured with 500 nm beads and was approximately 0.5 \u00d7 0.5 \u00d7 3 \u00b5m\u00b3 in x, y, and z.",
+    "claim_type": "EXPLICIT",
+    "source": "The objective used was a 25\u00d7 Nikon objective with a numerical aperture of 1.1, and the imaging point spread function was measured with 500 nm beads and was approximately 0.5 \u00d7 0.5 \u00d7 3 \u00b5m3 in x, y, and z.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the measured point spread function.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "For 18.7 mm of dendritic path length inspected, three false splits (falsely excluding 160 synapses) and three false merges (falsely including 117 synapses) were identified (99% precision and 99% recall for incoming synapses).",
+    "claim_type": "EXPLICIT",
+    "source": "For 18.7 mm of dendritic path length inspected, three false splits (falsely excluding 160 synapses) and three false merges (falsely including 117 synapses) were identified (99% precision and 99% recall for incoming synapses).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports error rates for dendritic reconstructions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "For 3.6 mm of axonal path length inspected, two false splits (falsely excluding four synapses) and one false merge (falsely including nine synapses) were identified (98% precision and 99% recall for outgoing synapses).",
+    "claim_type": "EXPLICIT",
+    "source": "For 3.6 mm of axonal path length inspected, two false splits (falsely excluding four synapses) and one false merge (falsely including nine synapses) were identified (98% precision and 99% recall for outgoing synapses).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports error rates for axonal reconstructions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "Four dendritic branches with a collective 0.7 mm of path length were sampled, and 126 false negative and 0 false positive spines were identified (88% recall of spines).",
+    "claim_type": "EXPLICIT",
+    "source": "We also sampled four dendritic branches with a collective 0.7 mm of path length, and identified 126 false negative and 0 false positive spines (88% recall of spines).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports error rates for spine detection.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "1972 correct synapses were identified out of 2433 putative synapses between PyCs after manual review with 2\u00d7 redundancy.",
+    "claim_type": "EXPLICIT",
+    "source": "We reviewed these synapses manually with 2\u00d7 redundancy (1972 correct synapses out of 2433 putative synapses).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the results of manual synapse review.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "1960 synapses were admitted into the analysis after excluding synapses with errors or missing spine head volume calculations.",
+    "claim_type": "EXPLICIT",
+    "source": "We were not able to calculate spine head volumes for 8 out of these 1968 synapses and they were excluded from the analysis. This left 1960 synapses admitted into the analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the final number of synapses used in the analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "The trained synaptic cleft detection network achieved 93.0% precision and 90.9% recall in detecting clefts of the test set.",
+    "claim_type": "EXPLICIT",
+    "source": "The trained network achieved 93.0% precision and 90.9% recall in detecting clefts of the test set.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the performance of the cleft detection network.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "Test set accuracy for synaptic partner assignment was 98.9% after 710k training iterations.",
+    "claim_type": "EXPLICIT",
+    "source": "Test set accuracy was 98.9% after 710k training iterations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the accuracy of the synaptic partner assignment network.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "The final cleft predictions resulted in 3,556,643 clefts after merging and filtering.",
+    "claim_type": "EXPLICIT",
+    "source": "This resulted in 3,556,643 final cleft predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the total number of predicted clefts.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

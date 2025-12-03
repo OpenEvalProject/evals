@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C16",
+      "C18",
+      "C20",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "THINGS-data is a multimodal dataset comprising fMRI (3 participants, 8,740 images, 720 objects), MEG (4 participants, 22,448 images, 1,854 objects), and behavioral data (4.70 million similarity judgments from 12,340 participants), all based on the THINGS database of 1,854 object concepts with 26,107 naturalistic images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C16, C18, C20, C48-C51 collectively describe the composition and scope of THINGS-data. The numbers are explicitly stated and internally consistent across the manuscript. The multimodal nature and systematic sampling strategy are clearly documented with specific participant counts, image counts, and object concept counts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C55",
+      "C56",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The experimental design for neuroimaging involved presenting images for 500ms with SOAs of 4.5s (fMRI) and 1.5\u00b10.2s (MEG), with participants performing an oddball detection task while maintaining central fixation on images subtending 10 degrees of visual angle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C55-C56, C61-C67 describe the experimental procedures with specific timing parameters, task design, and stimulus properties. These are explicitly stated in the methods section with clear numerical values and rationales (e.g., C67 explains jitter rationale). The design is internally consistent across claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Head motion was minimized using custom head casts, resulting in very low motion: fMRI mean framewise displacement <0.2mm per run, MEG median head position changes <1.5mm within sessions and <3mm between sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 describe head motion control methods and quantitative results shown in Figure 2. The reported values are specific and supported by the data visualization. The use of custom head casts and the resulting low motion measurements demonstrate effective experimental control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Noise ceilings in the test set reached up to 80% explainable variance in early visual cortex for fMRI and up to 70% for MEG, indicating high data reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 report noise ceiling measurements with reference to Figure 2C-D. These values represent data quality metrics computed from repeated measurements. The high values indicate good signal-to-noise ratio, though the manuscript notes individual differences between participants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C9"
+    ],
+    "result": "The final behavioral dataset consisted of 12,340 participants providing 4,699,160 triplet judgments, with 4,574,059 triplets for training/testing and 125,101 for noise ceiling estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C9 provide consistent numbers for the behavioral dataset composition. The breakdown of triplets into training/test and noise ceiling subsets is explicitly stated and the numbers sum correctly (4,574,059 + 125,101 = 4,699,160).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The SPoSE behavioral model identified 66 interpretable dimensions underlying perceived similarity judgments, consistent with extrapolation predictions (67.54 dimensions at saturation), using 90 initial dimensions, regularization parameter \u03bb=0.00385, and selection from 72 random initializations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C78-C82 describe the behavioral modeling procedure and results. The final dimensionality (66) closely matches the extrapolated prediction (67.54, 95% CI: 61.94-74.82) from C82, supporting the claim that sufficient data was collected. The methodological details are clearly specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The behavioral dataset showed high within-subject reliability (86.34\u00b10.46% noise ceiling) and the larger dataset improved prediction of within-category similarity for 7 of 8 external datasets (mean improvement 0.041\u00b10.007, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 report quantitative validation metrics with statistical significance. C33 references Figure 3B and provides specific statistical results from bootstrap testing. The improvement demonstrates that the larger dataset captures finer-grained similarity information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Object image decoding achieved peak accuracies of 80% in early visual cortex for fMRI (participants F1, F2) and 70-80% for MEG (participants M2, M3) within an 80-1000ms time window peaking around 100ms post-stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 report decoding performance with reference to Figure 4. The accuracies are specific to participants and brain regions/timepoints. The results demonstrate that object identity information is robustly decodable from both modalities, validating dataset quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Object category decoding accuracies peaked in high-level visual cortex for fMRI, contrasting with the early visual cortex peak for image-level decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 reports a shift in peak decoding location from early (image-level) to high-level (category-level) visual cortex, referenced to Figure 5A. This finding is consistent with hierarchical processing models and demonstrates the dataset's utility for studying representational abstraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "fMRI results replicated the spoke-like organization of animacy and size preferences in occipitotemporal cortex, with animate preference in fusiform gyrus, inanimate preference in parahippocampal cortex, big object preference in place-selective areas, and small object preference in lateral occipital cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 report replication of known organizational principles with reference to Figure 6A and citations to prior work (Konkle and Caramazza, 2013). The manuscript notes some divergence from previous findings regarding size preferences, which is appropriately discussed as potentially due to stimulus sampling differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "MEG revealed animacy information peaking at ~180ms across all participants and object size information peaking later, both replicating and extending previous findings to a comprehensive set of naturalistic object images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 report temporal dynamics of animacy and size information with reference to Figure 6B and comparison to previous studies. The ~180ms peak for animacy is consistent with the cited literature (140-190ms range), and the later, weaker size peak replicates prior findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Representational similarity analysis revealed correspondence between behavioral similarity and fMRI patterns strongest in ventral temporal and lateral occipital areas, and MEG patterns emerging as early as 80-100ms and sustained for at least 500ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 report RSA results linking brain activity to behavior, with references to Figure 7. The early MEG timing (80-100ms) is noted as earlier than previous reports, which could reflect the larger dataset's improved sensitivity. The sustained correlations demonstrate prolonged processing of similarity-relevant information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C91",
+      "C92"
+    ],
+    "result": "Direct regression-based MEG-fMRI fusion showed V1 responses could be predicted from MEG within the first 100ms while FFA responses emerged around 180ms, with V1 correlation exceeding FFA between 105-130ms, revealing spatiotemporal dynamics of object processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C91-C92 describe a novel MEG-fMRI fusion approach with specific timing results referenced to Figure 8. The differential timing for V1 vs. FFA is consistent with hierarchical processing and cited prior work. The method avoids assumptions of traditional RSA approaches, though validation against those methods would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Neuroimaging data were acquired using a 3T Siemens Prisma scanner with 32-channel coil (fMRI: 2mm isotropic, TR=1.5s) and CTF 275 MEG system (272 functional channels, 1200Hz sampling, downsampled to 200Hz), with preprocessing using fMRIPrep v20.2.0 and MNE-python.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 provide detailed acquisition and preprocessing parameters. These technical specifications are clearly stated and appropriate for the study design. The preprocessing pipelines use established, validated tools (fMRIPrep, MNE-python) with proper version documentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "ICA-based denoising yielded strong and consistent improvements in the reliability of single-trial BOLD response estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 reports the effectiveness of the custom ICA denoising approach with reference to Figure 1\u2014figure supplement 1. The manuscript describes a semi-automated classification method with manual labeling by two raters (87% agreement) and reports improved noise ceilings, validating the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Multivariate decoding used searchlight analysis (10mm radius) with linear SVM for fMRI and time-resolved linear discriminant analysis for MEG, both with leave-one-session-out cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe the decoding methodology with specific parameters and appropriate cross-validation. The methods are standard for the field and properly implemented with established toolboxes (Decoding Toolbox, CoSMoMVPA). The large number of pairwise classifiers (258,840 for fMRI, 1,717,731 for MEG) is appropriate given the dataset size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Animacy and size analyses used ratings from THINGS+ metadata, with ordinary least squares regression predicting fMRI responses from ratings and MEG sensor patterns predicting ratings, and behavioral similarity computed from the 66-dimensional SPoSE embedding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 describe analysis methods linking metadata to neural responses and computing behavioral similarity. The methods are clearly specified and appropriate. The use of external metadata (THINGS+) allows testing generalization of neural representations to independent behavioral measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Neuroimaging studies included 3 fMRI participants (2 female, 1 male, mean age 25.33 years) and 4 MEG participants (2 female, 2 male, mean age 23.25 years), all right-handed with normal/corrected vision, approved by NIH IRB (protocol 93 M-0170).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 provide participant demographics and ethical approval. The small sample sizes are acknowledged as a limitation but are justified by the dense sampling approach. The manuscript notes that a fourth fMRI participant was planned but canceled due to technical issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Test sets comprised 200 repeatedly presented images for MEG (100 for fMRI as a subset), and 100 catch images were generated using BigGAN to ensure participant engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 describe the test and catch image sets. The use of repeated test images enables noise ceiling estimation, while BigGAN-generated catch images provide unrecognizable stimuli for the oddball task. The design is appropriate for the stated purposes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior research has established functionally selective regions in occipitotemporal cortex, coarse-scale gradients reflecting visual and semantic properties, temporal dynamics of object processing, and links between brain activity and behavior, with humans capable of distinguishing thousands of objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 summarize prior literature with appropriate citations. These claims establish the scientific context and motivation for THINGS-data. The citations are to seminal papers in the field, and the characterizations of prior findings appear accurate based on the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Previous large-scale neuroimaging datasets focused primarily on dataset size rather than systematic sampling and often contain biases toward specific object categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 critiques prior datasets with citations (Allen et al., 2022; Chang et al., 2019). The manuscript provides detailed comparison in the Discussion showing that previous datasets used ImageNet/MSCOCO with category biases (e.g., many dog images, 80 MSCOCO categories). This justifies THINGS-data's systematic sampling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "The THINGS database comes with rich annotations and metadata enabling cross-domain comparisons, computational modeling, and hypothesis testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 describes available metadata with citations. The manuscript mentions THINGS+ metadata (Stoinski et al., 2022) used in analyses (C87) and memorability scores (Kramer et al., 2022), demonstrating the growing annotation ecosystem. The utility is demonstrated through the animacy/size analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The triplet odd-one-out task measures context-dependent similarity with minimal bias, with 1.46 million judgments previously reported and the current 4.70 million dataset including age information and 37,000 within-subject triplets for variability estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 describe the behavioral task design and dataset composition. The task rationale is clearly explained, and the incremental additions (age, within-subject repeats) address specific research questions. The previous publication of a subset (C100) is properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "THINGS-data is expected to serve as an important resource enabling novel analyses and validation of findings, constituting the core release of the THINGS initiative which will provide multimodal, multispecies datasets for advancing cognitive neuroscience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C95, C103-C105 make forward-looking statements about impact and future datasets. While C104 states analyses demonstrate high quality (supported by the results), claims about future utility (C93) and forthcoming datasets (C95) are speculative. The demonstrated quality and replication of prior findings support potential utility, but actual impact remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "A complete understanding of visual and semantic object processing requires high-dimensional accounts that cannot be derived from traditional experiments with small numbers of stimuli or categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 present a theoretical argument with supporting citations (Naselaris et al., 2021; Haxby et al., 2011; Hebart et al., 2020; Lehky et al., 2014). This argument motivates the large-scale approach of THINGS-data. The 66-dimensional behavioral embedding and complex neural response patterns support this perspective, though the necessity of high-dimensional accounts remains a theoretical position.",
+    "result_type": "MINOR"
+  }
+]

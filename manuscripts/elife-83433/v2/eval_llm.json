@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C64"
+    ],
+    "result": "The study pooled individual patient data from 1073 patients with P. vivax malaria and 72 healthy volunteers across multiple pre-registration trials, with tafenoquine doses ranging from 50-600 mg (0.5-14.3 mg/kg), representing a >25-fold variation in weight-adjusted dosing. A total of 4499 plasma tafenoquine concentrations were available for pharmacokinetic modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C44-C48, and C64 describe the study population and data collection comprehensively. The numbers are internally consistent (1073 patients + 72 volunteers \u2248 1102 total mentioned in abstract), and the dose ranges and geographic variation are clearly documented with appropriate detail for a meta-analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C100",
+      "C149"
+    ],
+    "result": "Tafenoquine dose (mg/kg) is the primary determinant of radical cure efficacy, with each additional mg/kg associated with an OR of 0.70 (95% CI: 0.65-0.76) for recurrence at 4 months. The dose-response relationship is steep around the currently recommended dose and was consistent across all three geographic regions (Americas, Horn of Africa, Southeast Asia).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C51-C54, C100, and C149 collectively demonstrate a clear, statistically significant dose-response relationship supported by logistic regression and Emax modeling. The consistency across geographic regions (C54, C149) strengthens the finding. The statistical evidence is robust with appropriate confidence intervals and the relationship holds in multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Under an Emax model, the currently recommended 300 mg dose (5 mg/kg in 60 kg adult) achieves only 70% of maximal hypnozoiticidal effect, with predicted recurrence of 15.3% (95% CI: 9.6-21.7). Increasing to 450 mg would achieve 90% of maximal effect with predicted recurrence of 6.2% (95% CI: 3.2-11.5), translating to NNT=11 (95% CI: 7-21) to prevent one additional recurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56-C63 present model-based predictions from the Emax pharmacodynamic model. The estimates are internally consistent and appropriately qualified with confidence intervals. The NNT calculation (C63) follows logically from the predicted recurrence rates. However, these are model predictions requiring prospective validation, which the authors acknowledge in their recommendations (C155).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C106",
+      "C107",
+      "C156"
+    ],
+    "result": "Increasing the tafenoquine dose to 7.5 mg/kg (450 mg) would result in 90% reduction in P. vivax recurrence risk and is predicted to more than halve recurrence rates at 4 months, averting one relapse per 11 patients treated, with greatest benefit in heavier patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C106-C107, and C156 present consistent model-based predictions for higher dosing. The 90% reduction claim (C5) aligns with the Emax model showing 7.5 mg/kg achieves 90% of maximal effect (C56). The predictions are appropriately qualified as estimates requiring prospective validation, though the wording in C5 could be misinterpreted as empirical rather than model-based.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C68",
+      "C69",
+      "C113"
+    ],
+    "result": "After adjustment for dose, terminal elimination half-life and day 7 methaemoglobin concentration were associated with recurrence, but parent compound exposure (AUC, Cmax) was not. More rapid elimination (despite lower total exposure) was associated with increased efficacy, indicating that dose administered rather than parent compound exposure drives therapeutic efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C68-C69, and C113 describe multivariable regression results showing that pharmacokinetic parameters associated with metabolism (half-life, MetHb) predict efficacy after dose adjustment, while exposure metrics do not. This pattern is internally consistent and supports the metabolite hypothesis. The statistical analyses appropriately control for confounding by dose.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C112",
+      "C114",
+      "C118",
+      "C119",
+      "C142"
+    ],
+    "result": "The production of oxidative metabolites is central to tafenoquine's hypnozoiticidal efficacy. Tafenoquine behaves pharmacologically like a slowly eliminated form of primaquine and requires metabolism for its pharmacological activity, with oxidative activity necessary for both radical curative activity and haemolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C112, C114, C118-C119, and C142 present the central mechanistic conclusion. This inference is well-supported by the convergent evidence: (1) dose matters more than exposure (C69), (2) faster elimination predicts better efficacy (C113), (3) MetHb correlates with efficacy (C74), and (4) the pattern fits the proposed causal model (C142). However, direct measurement of active metabolites is lacking (acknowledged limitation C129).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C115",
+      "C124",
+      "C140",
+      "C141"
+    ],
+    "result": "Methaemoglobin production is highly correlated with tafenoquine dose (19% increase per mg/kg, 95% CI: 17-21%), peaks around day 7, and is associated with radical curative efficacy (OR 0.81 per percentage point increase, 95% CI: 0.65-0.99) after dose adjustment. MetHb serves as a useful, non-invasive pharmacodynamic surrogate for radical curative activity, though it does not lie on the causal pathway to hypnozoite killing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74, C115, C124, C140-C141 describe the MetHb findings comprehensively. The dose-MetHb correlation is strong and well-quantified (C72). The association with efficacy after dose adjustment (C74) is statistically significant though the confidence interval barely excludes 1.0. The interpretation that MetHb is a surrogate marker rather than causal mediator (C140) is appropriate and consistent with the causal model in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C138",
+      "C139"
+    ],
+    "result": "Tafenoquine pharmacokinetics were adequately described by a two-compartment elimination model. Since tafenoquine metabolites could not be measured directly, their production was inferred from parent drug elimination rate and pharmacodynamic properties were inferred from methaemoglobin concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C138-C139 describe the pharmacokinetic modeling approach and its limitations. The two-compartment model is consistent with prior analyses (C65 cites Thakkar et al., 2018). The inference approach (C138-C139) is clearly stated as a methodological limitation, which is appropriate given the inability to measure active metabolites directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Healthy volunteers had 15% lower day 7 methaemoglobinaemia than P. vivax patients after dose adjustment (p=0.02). Among healthy volunteers, those receiving DHA-PQP had 23% lower MetHb (95% CI: 1.5-40%) compared to no partner drug. Higher lumefantrine concentrations were associated with 40% lower MetHb (95% CI: 3-62%), while piperaquine showed no clear association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C80 describe potential drug-drug interactions affecting MetHb production. The statistical associations are reported with appropriate confidence intervals. However, the interpretation is complicated by the inability to separate drug effects from disease effects when comparing patients to volunteers (acknowledged in text). The lumefantrine-MetHb association (C79) is intriguing but based on small sample size (n=24 per arm in phase 1 trial) and the mechanism via CYP2D6 inhibition (C78) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C143",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Among 716 genotyped patients, 8.9% (34/382) receiving tafenoquine were CYP2D6 poor metabolisers (activity score \u22640.5). There was no clear association between CYP2D6 activity score and recurrence (OR 0.9, 95% CI: 0.4-2.2) or elimination half-life. The study was insufficiently powered to evaluate CYP2D6's role in tafenoquine bioactivation, though CYP2D6 appears to be a minor determinant of efficacy at the population level compared to dosing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86, C143, C150-C153 describe the CYP2D6 analysis and its limitations. The lack of association (C86) is appropriately qualified as having low statistical power due to small numbers of poor metabolisers (C85, C151). The conclusion that CYP2D6 is a minor population-level determinant (C153) is reasonable given the low prevalence of poor metabolisers, but the study cannot definitively rule out an important role in the subset of poor metabolisers. The inference is limited by inadequate power rather than contradictory evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C108"
+    ],
+    "result": "Tafenoquine was generally well tolerated with 2.3% vomiting within 1 hour (no dose association). Severe haemolysis was rare: one patient had >5 g/dL Hb fall, none had >25% fall to <7 g/dL. Each mg/kg increase was associated with -0.02 g/dL Hb change (95% CI: -0.04 to 0.00, p=0.02), implying 300 mg in 60 kg adult causes ~0.1 g/dL reduction (<1% of Hb), and 450 mg would cause 0.15 g/dL reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 and C108 describe safety outcomes with appropriate quantification. The haemoglobin effects are small and clinically insignificant in G6PD-normal individuals. The statistical significance (p=0.02, C92) with confidence interval barely excluding zero suggests a real but minimal effect. The calculations for 300 mg and 450 mg doses (C93-C94) follow appropriately from the regression coefficient. However, these data are only for G6PD-normal individuals and cannot inform safety in G6PD-deficient patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C116",
+      "C117"
+    ],
+    "result": "Day 7 MetHb concentration was correlated with haemoglobin reductions on day 2-3 (1% MetHb increase associated with -0.08 g/dL Hb change, 95% CI: -0.12 to -0.03). Conversely, each day increase in elimination half-life was associated with +0.02 g/dL Hb (95% CI: 0.01-0.04). Tafenoquine causes minor oxidative haemolysis in G6PD-normal individuals that correlates with methaemoglobinaemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C116-C117 describe relationships between MetHb, half-life, and haemolysis that are internally consistent with the oxidative metabolite hypothesis. The opposing directions of effect for MetHb (negative) and half-life (positive) on haemoglobin align with the model where faster metabolism produces more oxidative metabolites. The statistical associations are appropriately quantified with confidence intervals. These findings support the causal model in Figure 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C101",
+      "C102",
+      "C154"
+    ],
+    "result": "The currently recommended adult dose of tafenoquine is insufficient for radical cure in all adults, with heavier patients particularly disadvantaged by fixed dosing. Substantial improvements in radical curative efficacy are possible with small dose increases. The results allow accurate characterisation of the tafenoquine dose-response relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C101-C102, and C154 present the main clinical conclusion. This is well-supported by the steep dose-response curve (C100), the Emax modeling showing current dose achieves only 70% of maximal effect (C4), and the consistency across geographic regions (C149). The disadvantage for heavier patients (C101) follows logically from fixed dosing with steep dose-response. The characterisation is based on the largest dataset available (C112 notes this comprises majority of all tafenoquine trial data).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C155",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Prospective studies should assess tolerability, safety and efficacy of higher tafenoquine doses. Much larger doses (up to 2100 mg over one week) have been studied previously. The only severe haemolytic reaction occurred in a G6PD-deficient heterozygote receiving 1200 mg over 3 days; a homozygote receiving the same dose had 3 g/dL Hb drop but remained asymptomatic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155, C109-C111 present the recommendation for future studies with supporting safety context. The recommendation (C155) follows logically from the finding of suboptimal current dosing. The historical safety data (C109-C111) from cited studies provides context that higher doses have been tolerated, though the severe reaction in a heterozygote (C110) highlights the continued concern for G6PD-deficient individuals. This appropriately frames the need for careful dose-escalation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C31"
+    ],
+    "result": "The steep dose-response relationship explains the poor results in the INSPECTOR trial, where Indonesian soldiers (mean weight 70 kg, heavier than registration trial patients) received fixed 300 mg dose in a high-transmission setting (Papua). High transmission (heavier hypnozoite burdens) and lower mg/kg dosing likely contributed substantially to poor efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 and C31 provide a retrospective explanation for the INSPECTOR trial results using the current study's findings. The explanation is internally consistent: heavier patients (C126) receiving fixed dose get lower mg/kg dosing, which combined with high transmission (C127) and the steep dose-response curve (C100) would predict poor efficacy. This demonstrates the clinical relevance of the dose-response findings, though it remains a post-hoc explanation rather than a prospective prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The two major study limitations are absence of direct metabolite measurements and imprecision in measuring relapse. Genotyping was limited to three microsatellite loci without probabilistic relapse/reinfection assessment. However, studies were in low-transmission settings and 83% (298/360) of recurrences occurred within 4 months, making reinfection contribution unlikely. The similar 4-month and 6-month endpoint results suggest future studies could use 4-month follow-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C137 comprehensively describe study limitations and their mitigation. The authors appropriately acknowledge the inability to measure active metabolites (C129) and limitations in distinguishing relapse from reinfection (C130-C132). The argument that reinfection is unlikely (C133-C134) is reasonable given low transmission settings and timing of recurrences. The recommendation for 4-month follow-up (C135) is pragmatic and supported by the data (C136-C137), though this represents a change from traditional 6-month endpoints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Only DETECTIVE part 1 randomised patients to different doses; other studies had dose variation from weight variation. Patient weight was not associated with recurrence, and over half of weight variation is polygenic (unlikely related to malaria risk). The dose-recurrence relationship was consistent across all three geographic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 address potential confounding in the dose-response analysis. The concern that weight-based dose variation could be confounded by weight-related malaria risk factors is appropriately addressed by: (1) lack of weight-recurrence association (C147), (2) polygenic nature of weight variation (C148), and (3) consistency across regions (C149). The authors also note nearly identical results when analyzing only the randomised dose-ranging trial (DETECTIVE part 1), though this is mentioned in text rather than as a formal claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C50",
+      "C55"
+    ],
+    "result": "For primaquine, a 0.7 mg/kg dose increase was associated with OR 0.72 (95% CI: 0.66-0.78) for recurrence at 4 months, similar to tafenoquine's dose effect. No recurrences occurred in the highest tafenoquine dosing group (\u22658.75 mg/kg, n=43).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C55 provide comparative context for tafenoquine's dose-response. The primaquine comparison (C50) validates that the observed tafenoquine dose effect is of similar magnitude to the established comparator drug. The zero recurrences in the highest dose group (C55) supports the dose-response relationship, though the sample size (n=43) is relatively small and confidence intervals would be wide.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Tafenoquine is a newly licensed 8-aminoquinoline antimalarial, the first new drug for radical treatment of relapsing malaria in 70 years. It is eliminated slowly and can be given as single-dose radical cure or weekly chemoprophylaxis, providing substantial operational advantage over primaquine which requires daily dosing for 7-14 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C13 provide background context about tafenoquine's regulatory status and clinical positioning. These are well-established facts supported by the cited registration trials (C11-C12) and comparative pharmacology (C13). This contextual information appropriately frames the study's importance.",
+    "result_type": "MINOR"
+  }
+]

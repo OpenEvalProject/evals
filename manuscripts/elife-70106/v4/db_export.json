@@ -1,0 +1,2029 @@
+{
+  "submission": {
+    "id": "f9c9fcc4-8a84-4f41-b39c-7aa3473ff2dc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:58:03.300176Z",
+    "updated_at": "2025-12-03T07:58:03.300176Z"
+  },
+  "content": [
+    {
+      "id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "submission_id": "f9c9fcc4-8a84-4f41-b39c-7aa3473ff2dc",
+      "content_type": "manuscript",
+      "content_text": "# Single-cell growth inference of Corynebacterium glutamicum reveals asymptotically linear growth\n\n## Authors\n\n- Joris JB Messelink<sup>1</sup> ([ORCID: 0000-0002-7986-4527](https://orcid.org/0000-0002-7986-4527))\n- Fabian Meyer<sup>2</sup> ([ORCID: 0000-0002-8305-0390](https://orcid.org/0000-0002-8305-0390))\n- Marc Bramkamp<sup>2</sup> ([ORCID: 0000-0002-7704-3266](https://orcid.org/0000-0002-7704-3266)) \u2020\n- Chase P Broedersz<sup>1</sup> ([ORCID: 0000-0001-7283-3704](https://orcid.org/0000-0001-7283-3704)) \u2020\n\n### Affiliations\n\n1. Arnold-Sommerfeld-Center for Theoretical Physics, Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen Munich Germany\n2. Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen, Fakult\u00e4t Biologie Planegg-Martinsried Germany\n3. Christian-Albrechts-Universit\u00e4t zu Kiel, Institut f\u00fcr allgemeine Mikrobiologie Kiel Germany\n4. Department of Physics and Astronomy, Vrije Universiteit Amsterdam Amsterdam Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nRegulation of growth and cell size is crucial for the optimization of bacterial cellular function. So far, single bacterial cells have been found to grow predominantly exponentially, which implies the need for tight regulation to maintain cell size homeostasis. Here, we characterize the growth behavior of the apically growing bacterium Corynebacterium glutamicum using a novel broadly applicable inference method for single-cell growth dynamics. Using this approach, we find that C. glutamicum exhibits asymptotically linear single-cell growth. To explain this growth mode, we model elongation as being rate-limited by the apical growth mechanism. Our model accurately reproduces the inferred cell growth dynamics and is validated with elongation measurements on a transglycosylase deficient \u0394rodA mutant. Finally, with simulations we show that the distribution of cell lengths is narrower for linear than exponential growth, suggesting that this asymptotically linear growth mode can act as a substitute for tight division length and division symmetry regulation.\n\n## Introduction\n\nRegulated single-cell growth is crucial for the survival of a bacterial population. At the population level, fundamental laws of growth were discussed as early as the beginning of the 20th century, and distinct population growth phases were identified and attributed to bacterial growth (Lane-Claypon, 1909; Buchanan, 1918; Monod, 1949). At the time, however, growth behavior at the single-cell level remained elusive. This changed only over the last decade, as evolving technologies enabled detailed measurements of single-cell growth dynamics. Extensive work was done on common model organisms, including Escherichia coli, Bacillus subtilis, and Caulobacter crescentus, revealing that averaged over the cell cycle, single cells grow exponentially for these species (Taheri-Araghi et al., 2015; Mir et al., 2011; Iyer-Biswas et al., 2014; Yu et al., 2017; Godin et al., 2010).\n\nSingle-cell exponential growth is expected if cellular volume production is proportional to the protein content (Amir, 2014), as shown to be the case for E. coli (Belliveau et al., 2020). Importantly, however, such a proportionality will only be present if cellular volume production is rate-limiting for growth. Cells with different rate-limiting steps could display distinct growth behavior. Recently, detailed analysis of the mean growth rate throughout the cell cycle revealed deviations from pure exponential growth. For B. subtilis (Nordholt et al., 2020), a biphasic growth mode was observed, where a phase of approximately constant elongation rate is followed by a phase of increasing elongation rate. For E. coli, a new method provides evidence for super-exponential in the later stages of the cell cycle (Kar et al., 2021).\n\nA promising candidate for uncovering strong deviations from exponential growth is the Gram-positive Corynebacterium glutamicum. This rod-shaped bacterium grows its cell wall exclusively at the cell poles, allowing, in principle, for deviations from exponential single-cell growth (Figure 1). The dominant growth mode depends on the rate-limiting step for growth, which is presently unknown for this bacterium. Non-exponential growth modes may have important implications for growth regulatory mechanisms: while exponential growth requires checkpoints and regulatory systems to maintain a constant size distribution (Mir et al., 2011), such tight regulation might not be needed for other growth modes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70106/elife-70106-fig1-v4.jpg)\n\n**Figure 1.:** Here, $V$ is the cellular volume, $A$ is the cell\u00a0wall area, and $C(t)\u00a0$ is the concentration of membrane building blocks in the cytoplasm. A constant cell width is assumed throughout, implying $\\frac{dA}{dt}\u221d\\frac{dV}{dt}$. A fixed production capacity per unit volume is assumed for the rate-limiting steps 'cell mass production' and 'formation of cell wall building blocks'. For the rate-limiting step 'assembly of cell wall', a constant insertion area at the cell poles is assumed. For an analysis of the single-cell growth mode if cell wall building block formation is the rate-limiting step for growth, see Appendix 1. Cell mass production, specifically ribosome synthesis, has previously been indicated as the rate-limiting step for growth in E. coli (Belliveau et al., 2020; Scott et al., 2010; Amir, 2014). Linear growth is observed if the rate-limiting step for volume growth is the cell wall assembly (shown here in a simplified representation). The protein DivIVA serves as a scaffold at the curved membrane of the cell pole for the recruitment of the Lipid-II flippase MurJ and several mono- and bi-functional trans-peptidases (TP) and -gylcosylases (TG). In the process of elongation, peptidoglycan (PG) precursors are integrated into the existing PG sacculus, which serves as a scaffold of the synthesis of the arabinogalactan-layer (AG) and the mycolic-acid bilayer (MM).\n\nCorynebacterium glutamicum is broadly used as a production-organism for amino-acids and vitamins and also serves as model organism for the taxonomically related human pathogens Corynebacterium diphteriae and Mycobacterium tuberculosis (Hermann, 2003; Antoine et al., 1988; Schubert et al., 2017). A common feature of Corynebacteria and Mycobacteria is the existence of a complex cell envelope. The cell wall of these bacteria is a polymer assembly composed of a classical bacterial peptidoglycan (PG) sacculus that is covalently bound to an arabinogalactan (AG) layer (Alderwick et al., 2015). Mycolic acids are fused to the arabinose and form an outer membrane like bilayer, rendering the cell surface highly hydrophobic (Puech et al., 2001). The mycolic acid membrane (MM) is an efficient barrier that protects the cells from many conventional antibiotics.\n\nC. glutamicum's growth and division behavior is vastly different to that of classical model species. In contrast to rod-shaped firmicutes and \u03b3-proteobacteria, where cell-wall synthesis is dependent on the laterally acting MreB, members of the Corynebacterianeae lack a mreB homologue and elongate apically. This apical elongation is mediated by the protein DivIVA, which accumulates at the cell poles and serves as a scaffold for the organization of the elongasome complex (Letek et al., 2008; Hett and Rubin, 2008; Sieger et al., 2013; Figures 1 and 2A,B). Furthermore, a tightly regulated division-site selection mechanism is absent in this species. Without harboring any known functional homologues of the Min- and nucleoid occlusion (Noc) system, division typically results in unequally sized daughter cells (Donovan et al., 2013; Donovan and Bramkamp, 2014). Lastly, the spread in growth times between birth and division is much wider than in other model organisms, suggesting a weaker regulation of this growth feature (Donovan et al., 2013). These atypical growth properties suggest that this bacterium is an interesting candidate to search for novel growth modes. To reveal the underlying growth regulation mechanisms, it is necessary to study the elongation dynamics of C. glutamicum.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70106/elife-70106-fig2-v4.jpg)\n\n**Figure 2.:** (A, left) Phase contrast image of C. glutamicum in logarithmic growth phase, indicating the variable size of daughter cells. (A, right) HADA labeling of nascent peptidoglycan (PG), indicating the asymmetric apical growth where the old cell-pole always shows a larger area covered compared to the new pole. The labeling also reveals the variable septum positioning; Scale bar: 2 \u00b5m (B) Schematic showing the generation-dependent sites of PG synthesis in C. glutamicum, including the maturation of a new to an old cell-pole. (C) Illustration of the microfluidic device for microscopic monitoring of a growing colony. (D) Example screen-shot of the developed method to extract individual cell cycles from a multi-channel time-lapse micrograph. The left panel shows a merging of the bright-field channel and the mCherry-tagged DivIVA together with an individual ID# that is assigned to cells right after division. The black dots in the right panel indicate the new cell pole. (E) Example of an extracted individual cell cycle from birth (left) until prior to division (right), showing the bright-field (top), the orientation (middle) and the localization of mCherry-tagged DivIVA (bottom). (F) Example of the developed single cell analysis algorithm, measuring the length according to the cell\u2019s geometry, as well as the cell\u2019s area and the septum position relative to the new pole. (G) Dendrogram providing the rationale for identification of single cells in a growing colony.\n\nHere, we measure the single-cell elongations within a proliferating population of C. glutamicum cells, and develop an analysis procedure to infer their growth behavior. We find that C. glutamicum deviates from the generally assumed single-cell exponential growth law. Instead, these Corynebacteria exhibit asymptotically linear growth. We develop a mechanistic model, termed the rate-limiting apical growth (RAG) model, showing that these anomalous elongation dynamics are consistent with the polar cell wall synthesis being the rate-limiting step for growth. Finally, we demonstrate a connection between mode of growth and the impact of single-cell variability on the cell size distribution of the population. For an asymptotically linear grower, these variations have a much smaller impact on this distribution than they would for an exponential grower, which may suggest an evolutionary explanation for the lack of tight regulation of single-cell growth in C. glutamicum.\n\n## Results\n\n### Measuring elongation trajectories using microfluidic experiments\n\nTo measure the development of single C. glutamicum cells over time, we established a workflow combining single-cell epifluorescence microscopy with semi-automatic image processing. Cells were grown in a microfluidic device. We used wild type cells and cells expressing the scaffold protein DivIVA as a translational fusion to mCherry. DivIVA is used as a marker for cell cycle progression, since it localizes to the cell poles and to the newly formed division septum in C. glutamicum (Letek et al., 2008; Donovan et al., 2013).\n\nFor the choice of microfluidic device, we deviate from the commonly used Mother Machine (Long et al., 2013), which grows bacteria in thin channels roughly equaling the cell width. The Mother Machine is not ideally suited for C. glutamicum growth, as the characteristic V-snapping at division could lead to shear forces and stress during cell separation, affecting growth (Zhou et al., 2019). Indeed, in some cases, the mother machine has been shown to affect growth properties even in cells not exhibiting V-snapping at division, due to mechanical stresses inducing cell deformation (Yang et al., 2018). Therefore, we instead used microfluidic chambers that allow the growing colony to expand without spatial limitations into two dimensions for several generations (Figure 2C,D, Materials and methods). Within the highly controlled environment of the microfluidic device, a steady medium feed and a constant temperature of 30\u00b0C was maintained. We extracted bright-field- and fluorescent-images over 3-min intervals, which were subsequently processed semi-automatically with a workflow developed in FIJI and R (Schindelin et al., 2012; R Development Core Team, 2003). For each individual cell per time-frame, the data set contains the cell's length, area and estimated volume, the DivIVA-mCherry intensity profile, and information about generational lineage (Figure 2E\u2013G). We used these data sets to further investigate the growth behavior of our bacterium. Thus, using this procedure, we obtained data sets containing detailed statistics on single-cell growth of C. glutamicum.\n\nFor subsequent analysis, the measured cell lengths were used, because of their low noise levels as compared to other measures (Appendix 2\u2014figure 1B). Importantly, the increases in cell length are proportional to the increases in cell area (Appendix 2\u2014figure 1A), suggesting that cellular length increase is also proportional to the volume increase. This proportionality is expected since the rod-shaped C. glutamicum cells insert new cell wall material exclusively at the poles, while maintaining a roughly constant cell width over the cell cycle (Schubert et al., 2017; Daniel and Errington, 2003).\n\n### Population-average test suggests non-exponential growth for C. glutamicum\n\nA standard way of characterizing single-cell bacterial growth, is to determine the average relation between birth length $l_{b}\u00a0$ and division length $l_{d}$ (Amir, 2014). For C. glutamicum, we find an approximately linear relationship between these birth and division lengths, with a slope of 0.91\u00b10.16 (2xSEM, Figure 3A). This indicates that on a population level, C. glutamicum behaves close to the adder model, in which cells on average grow by adding a fixed length before dividing (Jun and Taheri-Araghi, 2015; Amir, 2014).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70106/elife-70106-fig3-v4.jpg)\n\n**Figure 3.:** (A) Birth length $l_{b}$ plotted against division length $l_{d}$ for all measured cells, together with a linear fit (blue line), which has a slope of 0.91\u00b10.16. Gray solid line: best fit assuming a pure sizer (slope 0). Gray dashed line: best fit assuming a pure adder (slope 1). The 95% confidence intervals of the linear fit, obtained via bootstrapping, are indicated by the blue shaded region. (B) Generation time versus $ln(\\frac{l_{d}}{l_{b}})$ for all cells (blue dots) and the average per generation time (orange squares), with the standard error of the mean shown for all generation times for which at least three data points are available. The orange line represents a linear fit through the generation time averages that passes through the origin. For exponential growth, the averages would lie along this line, and the slope would be equal to the exponential growth rate. (C) Growth trajectory for a single cell (upper panel), together with its derivative for each measurement interval (lower panel). Fits to the derivative are shown for linear growth (black dash-dotted line) and exponential growth (red dashed line).\n\nTo investigate the growth dynamics from birth to division, we first tested if our cells conform to the generally observed exponential mode of single-cell growth. To this end, we applied a previously developed analysis on bacterial elongation data (Logsdon et al., 2017), by plotting $ln\u2061(\\frac{l_{d}}{l_{b}})$ versus the growth time (Figure 3B). For an exponential grower, with the same exponential growth rate \u03b1 for all cells, the averages of $ln(\\frac{l_{d}}{l_{b}})$ per growth time bin are expected to lie along a straight line with slope \u03b1 intersecting the origin. By contrast, there appears to be a systematic deviation from this trend, with cells with shorter growth times lying above this line and cells with longer growth times lying below it, suggesting non-exponential elongation behavior. However, the significance and implications of these deviations for single-cell growth behavior are not clear from this analysis. There are several quantities that could be highly variable between cells that are averaged out in this representation, such as possible variations in exponential growth rate as a function of birth length, or variations in growth mode over time. Furthermore, it was recently shown that exponentially growing cells can appear non-exponential with this test in the presence of noise in the exponential growth rate (Kar et al., 2021). Thus, a more detailed analysis of the growth trajectories is needed to rule out exponential growth, and to quantitatively characterize the growth dynamics.\n\nThe variability of key growth parameters is not easily extracted from individual growth trajectories due to the inherent stochasticity of the elongation dynamics and measurement noise (Figure 3C). In fact, it has been estimated that to distinguish between exponential and linear growth for an individual trajectory, the trajectory needs to be determined with an error of ~6% (Cooper, 1998). Distinguishing subtler growth features may require an even higher degree of accuracy, which is presently experimentally unavailable (Appendix 3). Therefore, an analysis method is needed that is less noise-sensitive than an inspection of the single-cell trajectories, but simultaneously does not average out potentially relevant growth features such as time-dependence and birth length variability.\n\n### Growth-inference method yields average elongation rate curves\n\nTo obtain quantitative elongation rate curves as a function of time and birth length, despite the high degree of individual variation, we developed a data analysis procedure that exploits the noise-reducing properties of multiple-cell conditional averaging. The key idea is to obtain an average dependence of the cellular length $L(t,l_{b})$ on the time $t$ since birth and birth length $l_{b}$, by first obtaining the average dependence of $L(t,l_{b})$ on $l_{b}$ for each discrete value of $t$ individually. This yields an average elongation curve for each birth length $l_{b}$, without the need to perform inference on noisy $L(t)$ single-cell curves.\n\nThe analysis procedure is as follows. First, for all cells in our data set, we determine the time since birth $t$, the cellular length $L$ at time $t$, and the birth length $l_{b}.$ Subsequently, we relate the length at time $t$ to the birth length, yielding a series of scatter plots for each measurement time (Figure 4A). Importantly, these scatterplots suggest a simple apparently linear relationship between $L$ and $l_{b}$. For each such plot, we thus make a linear fit through the data, yielding a family of curves for each time since birth $t$ (Figure 4B). Higher-order fitting functions result in a negligible improvement of the goodness-of-fit, while increasing the mean error on inferred elongation rates (Appendix 2\u2014figure 3). Note that for both purely linear and purely exponential growth, would depend linearly on: for linear growth $L(t,\u00a0l_{b})=\\alphat+l_{b}$, whereas for exponential growth $L(t,\u00a0l_{b})=l_{b}exp\u2061(\\alphat)$ (Appendix 2\u2014figure 3). From the family of relations, we compute a series of points ${L(t_{0},\u00a0l_{b}),\u00a0L(t_{1},\u00a0l_{b}),\u00a0L(t_{2},\u00a0l_{b})}$ yielding the average growth trajectory of a cell starting out at length $l_{b}$ (Figure 4C). Note, we must remove a bias in the $l_{b}$ associated with each average trajectory, arising from measurement noise in the cell lengths at birth (Appendix 4). In summary, this procedure allows us to obtain an unbiased interference of the average elongation trajectories as a function of the cell\u2019s birth length.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70106/elife-70106-fig4-v4.jpg)\n\n**Figure 4.:** (A) For each cell, the length $L(t)$ at different times t since birth is plotted as a function of birth length $l_{b}$. A linear fit of the resulting \u2018wave front\u2019 is performed for each time $t$. This allows us to determine average cell length $L(t,\u00a0l_{b})$ at time $t$ as a function of birth length $l_{b}$. (B) 3D representation of the inference method of average length trajectories, with the added length $L(t,\u00a0l_{b})\u2212l_{b}$ on the z-axis. Elongation trajectories for individual cells are indicated in gray, linear fits through all cell lengths at each timestamp are indicated by green lines. The orange lines represent four sample average length trajectories, obtained by connecting all values of the green lines associated with one birth length. Dotted lines represent regimes where averages are biased due to dividing cells. (C) Average elongation trajectories obtained from the fits shown in (A) for a range of birth lengths, starting at 1.9 \u03bcm with steps of 0.1 \u03bcm (solid lines). The dashed lines represent regions where the inferred elongation curves are biased due to dividing cells, and are excluded from subsequent analysis. (D) Cumulative fraction of cells divided as a function of grow time. (E) Elongation trajectories for cells with birth lengths close to 2.5 \u03bcm (purple dashed lines) and birth lengths close to 2.1 \u03bcm (black dashed lines) together with their respective inferred average trajectories (purple solid line and black solid line).\n\n### Elongation rate inference reveals asymptotically linear growth mode\n\nOur inference approach yields the functional dependence of the average added length on growth time and birth length. We find that the average length steadily increases initially, but levels off and shows pronounced fluctuations for larger growth times (Figure 4C). This late-time behavior (dashed lines in Figure 4C) is caused by decreasing cell numbers due to division events (Figure 4D), which also introduces a bias in the averaging procedure. After the first division event, the average inferred growth would be conditioned on the cells that have not divided yet. For a given birth length, faster-growing cells divide earlier than slower-growing cells (Appendix 2\u2014figure 2) causing this conditional average to underestimate cellular elongation rates for the whole population after the first division. Because our aim is to infer elongation curves that characterize the whole population, ranging from slow to fast growers, for further analysis only the part of each trajectory before the first division event is used (Figure 4D). Sub-population elongation curves can also be obtained that extend past the first division event, but only if the entire analysis for these curves is performed only on these slower-dividing cells (Appendix 2\u2014figure 4).\n\nWe obtain elongation rate curves by taking a numerical derivative of smoothed growth trajectories (Appendix 5). To determine the associated error margins of the elongation rates, we use a custom bootstrapping algorithm (Efron, 1979). The resulting 2\u03c3 bounds are shown as semitransparent bands. Despite the high noise level of individual elongation trajectories, the inferred average elongation rates have an error margin of around 8%. Thus, our approach robustly infers average elongation trajectories from single-cell growth data. Elongation rates of cells with larger birth length are consistently higher than the elongation rates of cells with smaller birth length. Strikingly, the elongation rate curves initially increase, but then gradually level off toward a linear growth mode (Figure 5). We note a slight difference in the cell elongation rates between the strain expressing DivIVA-mCherry (Figure 5A) and wild type cells (Figure 5B). Importantly, this difference does not qualitatively change the mode of growth, but does show that a translational fusion to DivIVA tends to lower elongation rates. This likely reflects a disturbance in the interaction between RodA or bifunctional PBPs and the DivIVA-mCherry fusion protein, indicating that the DivIVA-mCherry fusion is not fully functional. This is consistent with findings we reported earlier (Donovan et al., 2013).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70106/elife-70106-fig5-v4.jpg)\n\n**Figure 5.:** (A) Average elongation rates for four birth lengths (dots), for the DivIVA-labeled cells. The 2\u03c3 confidence intervals obtained by bootstrapping are indicated by the shaded areas. Vertical dashed lines: average onset of septum formation per birth length. (B) Average elongation rate trajectories for the wild-type cells, confidence intervals shown as in (A). Inset: average elongation trajectories as a function of the time until division. (C) Average elongation rate trajectories for the \u0394rodA mutant, confidence intervals shown as in (A).\n\nTo further test if the linear growth mode persists until division, we adapt our inference procedure to obtain average elongation curves $L(t\u2212t_{d},\u00a0l_{d})$ as a function of the time until division $t\u2212t_{d}$ and division length $l_{d}$. The construction is analogous to that of $L(t,\u00a0l_{b})$ (Appendix 6). Calculating the corresponding elongation rate curves, we find that that linear growth indeed extends until the division time across division lengths (inset Figure 5B,SI, Appendix 6\u2014figure 1). Note that with this construction, elongation rates become biased once $|t\u2212t_{d}|$ exceeds the shortest single-cell total growth time. Hence, for our analysis we only consider elongation rate curves until this point.\n\nTo test the performance of our proposed inference method, we simulated a population of growing cells with a presumed growth mode from which we sample cells lengths as in our experiments, including measurement noise (Appendix 3). We ran simulations for cells performing linear growth, exponential growth, and the growth mode inferred here for DivIVA-labeled cells (Figure 5A). We find that our inference method is able to recover the input growth mode with high precision in all cases (Appendix 4, Appendix 7), demonstrating the accuracy and internal consistency of our inference method.\n\n### Onset of the linear growth regime does not consistently coincide with septum formation\n\nA central feature of the obtained elongation rate curves is a transition from an accelerating to a linear growth mode after approximately 20\u201325 min (Figure 5). One possibility is that this levelling off is connected with the onset of division septum formation. Given that the FtsZ-dependent divisome propagates the invagination of the septum under the consumption of cell wall precursors (e.g. Lipid-II), we hypothesized that the appearance of the additional sink for cell-wall building blocks could lead to coincidental leveling-off of the elongation rates (Scheffers and Tol, 2015). To test this hypothesis, we used the moment of a sharp increase in the average DivIVA-mCherry signal at the cell center as a proxy for the moment of onset of septum formation (Appendix 2\u2014figure 7): the inward growing septum introduces a negative curvature of the plasma membrane, leading to the accumulation of DivIVA (Lenarcic et al., 2009; Strahl and Hamoen, 2012). We observe that the onset of septum formation does not consistently coincide with the moment at which the elongation rate levels off (Figure 5A): for smaller cells, the onset of septum formation occurs much later. Therefore, it seems implausible that the observed linear growth regime is due the septum acting as a sink for cell-wall building blocks.\n\n### Polar cell wall formation is the rate-limiting step for growth, leading to a linear growth regime\n\nTo provide insight into the anomalous single-cell growth behavior, we model single-cell elongation as being rate-limited by the apical cell wall formation mechanism. To formulate this rate-limiting apical growth (RAG) model, we first consider the biochemical pathway that leads to cell wall formation in C. glutamicum, as illustrated in Figure 1. The key process for cell wall formation in C. glutamicum is polar peptidoglycan (PG) synthesis. PG intermediates are provided by the substrate Lipid-II, and the integration of new material into the PG-mesh is mediated by transglycosylases (TGs) located at the cell pole. At the TG sites, Lipid-II is translocated across the plasma membrane by the Lipid-II flippase MurJ (Sham et al., 2014; Kuk et al., 2017; Butler et al., 2013). After PG building blocks provided by Lipid-II are incorporated into the existing cell wall by transglycolylation, transpeptidases (TP) conduct the crosslinking of peptide subunits, which contributes to the rigidity of the cell wall (Scheffers and Pinho, 2005; Valbuena et al., 2007; Schleifer and Kandler, 1972). During growth, the area of the PG sacculus, and thus the number of TG sites, is extended by RodA and bifunctional penicillin binding proteins (PBPs), recruited by DivIVA (Letek et al., 2008;\u00a0Sieger et al., 2013).\n\nTo model this growth mechanism, we assume that the rate of new cell wall formation is proportional to the number of TG sites. We describe the interaction between Lipid-II and TG sites by Michaelis-Menten kinetics (Figure 6A). Specifically, if the cell length added per unit time is proportional to the cell wall area added per unit time, we find\n\n$$\n\\frac{dL(t)}{dt}\u00a0=\u00a0\\alpha\\frac{\u00a0C(t)N(t)}{K_{m}+C(t)}\n$$\n\nwith\u00a0$L(t)$ the cell length at time $t$, $C(t)$ the concentration of Lipid-II,\u00a0$K_{m}$ the Michaelis constant for this reaction, and $\\alpha$ is a proportionality constant.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70106/elife-70106-fig6-v4.jpg)\n\n**Figure 6.:** (A) Schematic depicting cell wall formation via Lipid-II and transgrlycosylases (TG's). The corresponding Michaelis-Menten equation describes the change of length over time as function of the Lipid-II concentration $C(t)$ and the number of the TG sites $N(t)$. (B) Demograph of C. glutamicum cells stained with HADA. Cell are ordered by length, with the stronger signal oriented downwards. (C) Average elongation rate as a function of cell length (red), predicted from obtained average elongation rate curves (Appendix 8), together with the average HADA staining intensity at the cell pole after background correction (blue). The cell pole is defined here as the region within 0.77 \u00b5m (60 pixels) of the cell tip. The shaded regions indicate the 2XSEM bounds. For both curves, a moving average over cells within 0.7 \u00b5m of each x-coordinate is applied over the underlying data. Inset: predicted average elongation rate versus average HADA staining intensity (blue dots). A linear fit through the result (red line) is consistent with a proportional relationship. (D) Average HADA intensity as a function of cell length, shown for four regions close to the cell tip. A moving average over cells within 0.7 \u00b5m of each x-coordinate is applied over the underlying data. (E-G) Dots: average elongation rate curves as shown in Figure 5A. Solid lines: best fit of elongation model from Equation (2), which assumes constant transglycosylase recruitment. Dashed lines: best fit of elongation model from Equation (3), which assumes an exponential increase of transglycosylase recruitment.\n\nTo gain insight into the cell-cycle-dependence of $N(t)$ and $C(t)$, we made use of the cyan fluorescent D-alanine analogue HADA (see Materials and methods) to stain newly inserted peptidoglycan. Exponentially growing C. glutamicum cells were labeled with HADA for 5 min before imaging. The HADA stain will mainly appear at sites of nascent PG synthesis. As expected, HADA staining resulted in a bright cyan fluorescent signal at the cell poles and at the site of septation. Still images were obtained with fluorescence microscopy and subjected to image analysis (Figures 2A and 6B, Materials and methods).\n\nWe first verify that the HADA intensity profile at the cell poles can be used as a measure for the peptidoglycan insertion rate. To do this, we assume that the HADA intensity profile has two relevant contributions: fluorescent probe present in the cell plasma, and fluorescent probe attached to newly inserted peptidoglycan. We use the minimum of the HADA intensity profile, consistently located around mid-cell in non-dividing cells, as an estimate of the contribution from the cell plasma in each cell, and subtract this from the entire cellular profile to obtain the corrected HADA profile (Appendix 2\u2014figure 8). We then define the polar regions where we use the corrected HADA intensity to measure newly inserted peptidoglycan as the portions of the cell within 0.78 \u03bcm of the cell tips. Our results are, however, not strongly dependent on this polar region definition (Appendix 2\u2014figure 10). Subsequently, we compute a moving average of the corrected polar HADA intensity as a function of cell length (Figure 6C). These polar HADA intensities are approximately proportional to the inferred average single-cell elongation rates (Appendix 8), as shown in the inset of Figure 6C. Thus, the polar HADA intensities can be used as a measure for the cellular elongation rate. Assuming a proportional relationship between elongation rate and peptidoglycan insertion rate, this implies the polar HADA intensities are also approximately proportional to the peptidoglycan insertion rate. Deviations of ~10% from proportionality within the error margins observed over the range of tip intensities do not affect subsequent conclusions from the HADA intensity data.\n\nAnalyzing the HADA intensity profile for smaller segments within the polar region, we find that the increase in intensity is unevenly distributed (Figure 6D). Close to the cell tip, the HADA intensity remains approximately constant across cell lengths, whereas a linear increase over cell lengths is seen further from the tip. Considering the implications of these measured intensities for $C(t)$ and $N(t)$ within our model in Equation (1), we argue for a scenario where either $C(t)$ is constant or $C(t)\u226bK_{m}$. Our reasoning is as follows. From Equation (1), we see that the approximately constant intensity at the cell tip can be produced in two ways: (1) $C(t)\u226bK_{m}$ or $C(t)$ is constant across cell lengths, and the number of transglycosylases at the tip $N_{tip}(t)$ is constant, or (2) $N_{tip}(t)$ and $C(t)$ anticorrelate in such a way to produce constant insertion.\n\nHowever, we consider constant $N_{tip}(t)$ as biologically the most plausible scenario. This is supported by noting that the concentration of Lipid-II is the same directly before and after division, such that $C(t)$, and by implication $N_{tip}(t)$, is similar for the shortest and the longest cell lengths (Appendix 2\u2014figure 9). In our subsequent analysis, we will therefore assume that either $C(t)$ is constant, or $C(t)\u226bK_{m}$. This implies that $\\frac{dL(t)}{dt}$ in Equation (1) is directly proportional to $N(t)$.\n\nTo derive an expression for $N(t)$, we first note that the old and new cell pole in the cell need to be treated differently. We assume the number of polar TG-sites to saturate within one cellular lifecycle, such that the new pole initiates with $N(t)$ below saturation, while the old pole \u2013 inherited from the mother cell \u2013 is saturated. Letting the number of TG sites increase proportional to the number of available sites, we arrive at the following kinetic description for $N(t)$\n\n$$\n\\frac{dN(t)}{dt}=\\beta(N^{max}\u2212N(t))\n$$\n\nHere, $N^{max}$ is the maximum number of sites at the cell poles, and $\\beta$ is a rate constant. This result, together with Equation (1), defines our RAG model. The predicted elongation rates provide a good fit to the experiment for all studied genotypes (Figure 6E\u2013G), although the data appear to exhibit a stronger inflection.\n\nInstead of assuming a constant recruitment of TG enzymes, we can construct a more refined model that takes TG recruitment dynamics into account. There is evidence that transglycosylase RodA and PBPs are recruited to the cell pole via the curvature-sensing protein DivIVA (Letek et al., 2008; Sieger et al., 2013). As shown in Lenarcic et al., 2009, DivIVA also recruits itself, leading to the exponential growth of a nucleating DivIVA cluster. Therefore, we let the recruitment rate of TG enzymes be proportional to the number of DivIVA proteins $N_{D}(t)=N_{D}(0)e^{\\gammat}$. This results in a modified kinetic description for $N(t)$ (Equation (2)):\n\n$$\n\\frac{dN(t)}{dt}=\\betae^{\\gammat}(N^{max}\u2212N(t))\n$$\n\nThis refined model can capture more detailed features of the measured elongation rate curves (Figure 6E\u2013G), including the stronger inflection, with an additional free parameter, $\\gamma$, encoding the self-recruitment rate of DivIVA.\n\nThe central assumption of our RAG model is that the growth of the cell poles, mediated via accumulation of TG enzymes, is the rate-limiting step for cellular growth. To test this assumption, we repeated our experiment with a rodA knockout (Sieger et al., 2013). The SEDS-protein RodA is a mono-functional TG (Meeske et al., 2016; Emami et al., 2017; Sjodt et al., 2018), whose deletion results in a phenotype with a decreased population growth rate in the shaking-flask (Sieger et al., 2013). The cells' viability is nonetheless backed up by the presence of bifunctional class A PBPs capable of catalyzing transglycoslyation and transpeptidation reactions. We expect this knockout to lower the efficiency of polar cell wall formation, thus slowing down the rate-limiting step of growth. Specifically, we expect the knockout of rodA to mainly affect the efficiency of Lipid-II integration into the murein sacculus. Within our RAG model, this translates to a lowering of the cell wall production per transglycosylase site $\\alpha$. This would imply elongation rate curves of similar shape for the \u0394rodA mutant, only scaled down by a factor $\\alpha^{WT}/\\alpha^{\u0394rodA}$. Indeed, we observe such a scaling down of the elongation rate curves (Figure 5C), lending further credence to our model for C. glutamicum growth.\n\nA striking feature observed across growth conditions and birth lengths, is the onset of a linear growth regime after approximately 20 min (Figure 5A\u2013C). The robustness of this timing can be understood from the RAG model: the regime of linear growth is reached via an exponential decay of the number of available TG sites until saturation is reached. This exponential decay makes the moment of onset of the linear growth regime relatively insensitive to variations in $N(0)$ and $N^{max}$. Specifically, from Equation (2), it can be shown that the difference between $N(t)$ and $N^{max}$ is halved every $ln(2)\\beta$ minutes, which amounts to ~8 min given fitted value of $\\beta$ (Appendix 9\u2014table 1).\n\nFinally, our RAG model makes a prediction for the degree of transglycosylase saturation of the cell poles at birth, relative to the saturation in the linear growth regime. We find that this saturation is comparable between wild-type and the \u0394rodA mutant (~65% on average), but significantly higher for DivIVA-labeled cells (~80% on average) (Appendix 9\u2014tables 1 and 2). Note that the percentage of the saturation levels are relative values and do not suggest that in the DivIVA-mCherry fusion more transglycosylase sites are present in absolute numbers.\n\n### Birth length distribution of linear growers is more robust to single-cell growth variability\n\nAfter obtaining average single-cell growth trajectories, we next asked how this growth behavior at the single cell level affects the growth of the colony. It was shown that asymmetric division and noise in individual growth times results in a dramatic widening of the cell-size distribution for a purely exponential grower (Marantan and Amir, 2016). For an asymptotically linear grower, however, we would expect single-cell variations to have a much weaker impact.\n\nTo quantify the difference between asymptotically linear growth and hypothetical exponential growth for C. glutamicum, we performed population growth simulations for both cases. For the asymptotically linear growth, we assumed the elongation rate curves obtained from our model. For exponential growth, we assumed the final cell size to be given by\u00a0$l_{d}=l_{b}exp\u2061(\\alpha(t_{t}+\u0394t))+\u0394l$, with \u03b1 the exponential elongation rate, $t_{t}$ the target growth time, $\u0394t$ a time-additive noise term and $\u0394l$ a size-additive noise term. All growth parameters necessary for the simulation were obtained directly from the experimental data (Appendix 10). From this simulation, the distribution of initial cell lengths was determined for each scenario.\n\nThe resulting distribution of birth lengths for the asymptotically linear growth case closely matches the experimentally determined distribution (Figure 7). By contrast, the distribution for exponential growth is much wider, and exhibits a broad tail for longer cell lengths. This suggests a strong connection between growth mode and the effect of individual growth variations on population statistics. C. glutamicum has a high degree of variation of division symmetry (Appendix 10\u2014figure 1C) and single-cell growth times, but due to the asymptotically linear growth mode, the population-level variations in cell size are still relatively small. This indicates that linear growth can act as a regulator for cell size.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/70106/elife-70106-fig7-v4.jpg)\n\n**Figure 7.:** Left: birth length distribution for simulated asymptotically linear growth (blue dash-dotted line), and for simulated exponential growth (orange dashed line). For both simulations, all relevant growth parameters and distributions are obtained directly from the experimental data. Black dots: experimental birth length distribution. Right: sample of 11 cells from the exponential and asymptotically linear growth simulations, color coded according to length.\n\n## Discussion\n\nBy developing a novel growth trajectory inference and analysis method, we showed that C. glutamicum exhibits asymptotically linear growth, rather than the exponential growth predominantly found in bacteria. The obtained elongation rate curves are shown to be consistent with a model of apical cell wall formation being the rate-limiting step for growth. The RAG model is further validated by experiments with a \u0394rodA mutant, in which the elongation rate curves look functionally similar, but with a downward shift compared to wild type (Figure 5B,C), as expected based on our model. For C. glutamicum, apical cell wall formation is a plausible candidate for the rate-limiting step of growth, because synthesis of the highly complex cell wall and lipids for the mycolic acid membrane is cost intensive and a major sink for energy and carbon in Corynebacteria and Mycobacteria (Brennan, 2003).\n\nAn analysis of elongation rates as a function of time and birth length has previously been done in B. subtilis by binning cells based on birth length (Nordholt et al., 2020). Applying this method to our data set yields elongation rates averaged over cells within a binning interval (Appendix 2\u2014figure 5). Averaging our inferred elongation rates over the same bins, we find the two methods to yield consistent results. The binning method, however, involves a tradeoff: a smaller bin width results in a larger error on the inferred elongation rates, whereas a larger bin width averages out all variation within a larger birth length interval. Our method does not suffer from this binning-related tradeoff, and it provides detailed elongation rate curves at any given birth length. In other recent work (Kar et al., 2021), average growth rate curves were calculated as a function of cell phase. Our method provides additional detail by extracting the dependence of elongation rate on birth length as well as time since birth.\n\nOur proposed growth model shares some similar features to recent experimental observations on polar growth in Mycobacteria (Hannebelle et al., 2020). Polar growth was shown to follow 'new end take off' (NETO) dynamics (Hannebelle et al., 2020), in which the new cell pole makes a sudden transition from slow to fast growth, leading to a bilinear polar growth mode. In our proposed growth model for C. glutamicum however, the new pole gradually increases its average elongation rate before saturating to a constant maximum. The deviation of C. glutamicum from NETO dynamics can also be seen by comparing each of the pole intensities in the HADA staining experiment, which does not show any signatures of NETO-like growth (Appendix 2\u2014figure 11). It remains unclear which molecular mechanisms produce the differences in growth between such closely related species. However, the mode of growth described here for C. glutamicum might well be an adaption to enable higher growth rates.\n\nTo investigate the implications of our inferred single-cell growth mode for cell-size homeostasis throughout a population of cells, we performed simulations of cellular growth and division over many generations. We found that our asymptotically linear growth model accurately reproduces the experimental distribution of cell birth lengths. By contrast, a model of exponential growth predicts a much broader distribution with a long tail for larger birth lengths. This indicates a possible connection between mode of growth and permissible growth-related noise levels for the cell. Indeed, if single-cell growth variability is reduced by a factor 3, the distributions corresponding to both growth modes show a similarly narrow width (Appendix 10\u2014figure 2). However, an asymptotically linear grower is able to maintain a narrow distribution of cell sizes even for higher noise levels, whereas for an exponential grower this distribution widens dramatically (Figure 7).\n\nThe enhanced robustness of the length distribution of linear growers is interesting from an evolutionary point of view. Most rod-shaped bacteria use sophisticated systems, such as the Min system, to ensure cytokinesis precisely at midcell (Bramkamp et al., 2009; Lutkenhaus, 2007). Bacteria encoding a Min system grow by lateral cell wall insertion. In contrast, rod-shaped bacteria in the Actinobacteria phylum such as Mycobacterium or Corynebacterium species, grow apically and do not contain a Min system, nor any other known division site selection system (Donovan and Bramkamp, 2014). C. glutamicum rather couples division site selection to nucleoid positioning after chromosome segregation via the ParAB partitioning system (Donovan et al., 2013), and has a broader distribution of division symmetries. We speculate that due to C. glutamicum's distinct growth mechanism, a more precise division site selection mechanism is not necessary to maintain a narrow cell size distribution.\n\nThe elongation rates reported in this work reflect the increase in cellular volume over time. However, the increase in cell mass is not necessarily proportional to cellular volume. In exponentially growing E. coli, the cellular density was recently reported to systematically vary during the cell cycle, while the surface-to-mass ratio was reported to remain constant (Oldewurtel et al., 2019). It is unknown how single-cell mass increases in C. glutamicum, but it would follow exponential growth if mass production is proportional to protein content. This raises the question how linear volume growth and exponential mass growth are coordinated. The presence of a regulatory mechanism for cell mass production that couples to cell volume is implied by the elongation rate curves obtained for the \u0394rodA mutant. As the elongation rate is lower in this mutant, average mass production needs to be lowered compared to the WT in order to prevent the cellular density from increasing indefinitely.\n\nOur growth trajectory inference method is not cell-type specific, and can be used to obtain detailed growth dynamics in a wide range of organisms. The inferred asymptotically linear growth of C. glutamicum deviates from the predominantly found exponential single-cell bacterial growth, and suggests the presence of novel growth regulatory mechanisms.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (include species here)</td>\n      <td>\u2018divIVA\u2019; \u2018rodA\u2019</td>\n      <td>KEGG</td>\n      <td>\u2018cg2361\u2019; \u2018cg0061\u2019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Corynebacterium glutamicum)</td>\n      <td>\u2018ATCC 13032\u2019; \u2018RES 167\u2019</td>\n      <td>\u2018ATCC\u2019; \u2018Tauch et al., 2002\u2019</td>\n      <td>\u201813032\u2019;\u201dRES 167\u2019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Corynebacterium glutamicum)</td>\n      <td>\u2018RES 167 divIVA::divIVA-mCherry\u2019;\u201dRES 167 \u2206 rodA, divIVA::divIVA-mCherry\u2019</td>\n      <td>\u2018Donovan et al., 2012'; \u2018Sieger et al., 2013\u2019</td>\n      <td>\u2018CDC010\u2019; \u2018BSC002\u2019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>HADA stain</td>\n      <td>Tocris Bioscience</td>\n      <td>6647/5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MorpholyzerGT</td>\n      <td>This paper</td>\n      <td></td>\n      <td>see Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>CellASIC microfluidic System</td>\n      <td>Millipore</td>\n      <td>B04A</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Culture and live-cell time-lapse imaging\n\nExponentially growing cells of C. glutamicum WT, C. glutamicum divIVA::divIVA-mCherry and C. glutamicum divIVA::divIVA-mCherry \u0394rodA respectively, grown in BHI\u2013medium (Oxoid) at 30\u00b0C and 200 rpm shaking, were diluted to an OD600 of 0.01. According to the manufacturer\u2019s manual cells were loaded into a CellASIC- microfluidic plate type B04A (Merck Milipore) and mounted on a Delta Vision Elite microscope (GE Healthcare, Applied Precision) with a standard four-color InSightSSI module and an environmental chamber heated to 30\u00b0C. Images were taken in a three-minute interval for 10 hr with a 100\u00d7/1.4 oil PSF U-Plan S-Apo objective and a DS-red-specific filter set (32% transmission, 0.025 s exposure).\n\n### Staining of newly inserted peptidoglycan and visualization in demographs\n\nFor the staining of nascent PG, 1 ml of exponentially growing C. glutamicum ATCC 13032 cells, cultivated in BHI\u2013medium (Oxoid) at 30\u00b0C and 200 rpm, were harvested, washed with PBS and resuspended in 25 \u00b5l PBS, together with 0.25 \u00b5l of 5 mM HADA dissolved in DMSO. The cells were incubated at 30\u00b0C in the dark for 5 min, followed by a two-time washing step with 1 ml PBS and finally resuspended in 100 \u00b5l PBS. To obtain still- phase-contrast and fluorescent micrographs, 2 \u00b5l of the cell suspension were immobilized on an agarose pad. For microscopy, an Axio Imager (Zeiss) equipped with EC Plan-Neofluar 100x/1.3 Oil Ph3 objective and a Axiocam camera (Zeiss) was used together with the appropriate filter sets (ex: 405 nm; em: 450 nm). For single-cell analysis and the visualization in demographs, custom algorithms, developed in FIJI and R (Schindelin et al., 2012; R Development Core Team, 2003), were used. The code is available upon request.\n\n### Image analysis\n\nFor image analysis, a custom-made algorithm was developed using the open-source programs FIJI and R (Schindelin et al., 2012; R Development Core Team, 2003). During the workflow unique identifiers to single-cell cycles are assigned. The cell outlines are determined manually. Individual cells per timeframe are extracted then from the raw image and further processed automatically. The parameters length, area and relative septum position are extracted and stored together with the genealogic information and the timepoint within the respective cell cycle. The combination of image analysis and cell cycle dependent data structuring yields a list that serves as a base for further analysis. The documented code is available at: https://github.com/Morpholyzer/MorpholyzerGenerationTracker (copy archived at swh:1:rev:d01d362ea53b9be6027f29fb85668a0ed418398a,\u00a0Morpholyzer, 2021).\n",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "75ec2f5c-d3b2-4a2a-ab24-2399c93d96a1",
+      "submission_id": "f9c9fcc4-8a84-4f41-b39c-7aa3473ff2dc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Aleksandra M Walczak, \u00c9cole Normale Sup\u00e9rieure France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70106.sa1](https://doi.org/10.7554/eLife.70106.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThe paper presents a new and interesting method for inferring the growth dynamics of bacteria from noisy single-cell data and applies this to C. glutamicum. The method which is original, is promising for other systems.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Single-cell growth inference of Corynebacterium glutamicum reveals asymptotically linear growth\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe work is nicely executed and it should be published in eLife. Generally the method is potentially more notable than the result, so strengthening the method's validation is a good idea. There are two main remaining issues (please also see the reviewer comments below and address all of them):\n\n1. The issue of whether seeing non-exponential growth is a notable result in itself as advertised in the paper, especially in light of recent work by Bruggeman's group (Biphasic Cell-Size and Growth-Rate Homeostasis by Single Bacillus subtilis Cells, Current Biology 2020) that shows non-exponential growth for the well-studied model bacterium B. subtilis. This example of non-exponential growth is not discussed at length in the paper under review.\n\n2. Regarding the analysis method, it would be useful to spell out the central novelty and the method should be validated more appropriately. For example, in Bruggeman's paper cited above they used a different analysis method (growth rate vs. age plot) that seems to work well, and the two methods were not compared or discussed.\n\nReviewer #1 (Recommendations for the authors):\n\nThis is an interesting study, with a strong method, but also nice results for the specific system. Here are a few points where the authors could improve the manuscript:\n\nMain issues:\n\n\u2013 Change the text to remove the repeated references to the consensus of exponential growth, this is likely less dominant than claimed here. E.g. abstract, on p. 2 bottom, p.4 line 80 (\"universality\") etc.\n\n\u2013 Add some analysis to test whether linear growth continues into the phase where the first cells have started to divide. I imagine that removing the earliest dividing cells before the elongation rate determination should give the opportunity to analyze the remaining ones for a longer time. This could be done successively, and while the growth rate would be reduced as more and more cells are removed, one should see that growth rate remains constant up to later times.\n\nReviewer #2 (Recommendations for the authors):\n\nSome comments:\n\n1. The trend of elongation rate at birth seems to be different for different mutants. Figure 5A shows that in C. glutamicum divIVA:divIVA-mCherry the elongation rate is higher for cells with longer size at birth. Can the authors comment on this and how this is to be interpreted within their model?\n\n2. Similarly, could the authors explain why the asymptotic linear elongation rate is smaller in C. glutamicum divIVA:divIVA-mCherry such cells as compared to WT using the RAG model?\n\n3. In Figure 7, the authors seem to compare the birth length distribution obtained from theory and experiment. However, the fitness advantage or disadvantage of a longer-tailed distribution is unclear. In my opinion, the section can be removed from the main text for a better reading of the paper.\n\n[Editors' note: What follows are minor comments after acceptance.]\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have done a good job of addressing the comments and I find the paper adequate for publication in eLife. I would like to raise a potential issue with the agreement of the model and data implicated by Author response image 1 of the response letter: In the biorxiv paper referenced in the updated version (by Kar et al.), a plot of the form of Author response image 1 is shown to be linear (y=x) both for exponential and linear growth. It therefore seems that for the model of growth proposed in the work (exponential crossing to linear) one would also obtain a simple y=x dependence. However Author response image 1 shows significant deviations from such dependence, suggesting that the proposed model might be inconsistent with the data?\n",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "410bde8b-de84-451e-a84c-03b013fb5321",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C1",
+      "claim": "Single bacterial cells have been found to grow predominantly exponentially.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, single bacterial cells have been found to grow predominantly exponentially, which implies the need for tight regulation to maintain cell size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about bacterial growth supported by citations in the introduction section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "8fef25e4-47b1-486d-b918-72e278aa5e9e",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C2",
+      "claim": "C. glutamicum exhibits asymptotically linear single-cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we characterize the growth behavior of the apically growing bacterium Corynebacterium glutamicum using a novel broadly applicable inference method for single-cell growth dynamics. Using this approach, we find that C. glutamicum exhibits asymptotically linear single-cell growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data and analysis presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "8009dc77-54df-4803-88a6-3209be1c0b12",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C3",
+      "claim": "The distribution of cell lengths is narrower for linear than exponential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, with simulations we show that the distribution of cell lengths is narrower for linear than exponential growth, suggesting that this asymptotically linear growth mode can act as a substitute for tight division length and division symmetry regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "3198a48f-3e8c-4c66-be6e-db0aef4a6ae0",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C4",
+      "claim": "Exponential growth implies the need for tight regulation to maintain cell size homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, single bacterial cells have been found to grow predominantly exponentially, which implies the need for tight regulation to maintain cell size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference about the implications of exponential growth.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "3ad9bc4e-a536-49ae-b4d9-a6a008b13645",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C5",
+      "claim": "E. coli, B. subtilis, and C. crescentus grow exponentially at the single-cell level when averaged over the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive work was done on common model organisms, including Escherichia coli, Bacillus subtilis, and Caulobacter crescentus, revealing that averaged over the cell cycle, single cells grow exponentially for these species (Taheri-Araghi et al., 2015; Mir et al., 2011; Iyer-Biswas et al., 2014; Yu et al., 2017; Godin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "d3395e0f-7952-4300-976a-972b06b04875",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C6",
+      "claim": "Single-cell exponential growth is expected if cellular volume production is proportional to the protein content.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell exponential growth is expected if cellular volume production is proportional to the protein content (Amir, 2014), as shown to be the case for E. coli (Belliveau et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "b355bc93-edcc-4886-ae3b-3f0ef018fc32",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C7",
+      "claim": "For E. coli, cellular volume production is proportional to protein content.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell exponential growth is expected if cellular volume production is proportional to the protein content (Amir, 2014), as shown to be the case for E. coli (Belliveau et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to experimental work on E. coli.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "bd5b8a96-e313-4410-a7cd-b30bdd5f6c56",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C8",
+      "claim": "B. subtilis exhibits biphasic growth with a phase of approximately constant elongation rate followed by a phase of increasing elongation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For B. subtilis (Nordholt et al., 2020), a biphasic growth mode was observed, where a phase of approximately constant elongation rate is followed by a phase of increasing elongation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work on B. subtilis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "44fbfaad-ae90-4f2d-9a8e-470fdfd6c939",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C9",
+      "claim": "E. coli shows evidence for super-exponential growth in the later stages of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "For E. coli, a new method provides evidence for super-exponential in the later stages of the cell cycle (Kar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to recent work on E. coli.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "08951d0f-1228-44ad-932e-eabb1926c68c",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C10",
+      "claim": "C. glutamicum is a rod-shaped bacterium that grows its cell wall exclusively at the cell poles.",
+      "claim_type": "EXPLICIT",
+      "source": "This rod-shaped bacterium grows its cell wall exclusively at the cell poles, allowing, in principle, for deviations from exponential single-cell growth (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a known characteristic of C. glutamicum supported by established knowledge and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "b9c7166d-29ee-44ab-a51b-152d9efbefad",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C11",
+      "claim": "Exponential growth requires checkpoints and regulatory systems to maintain a constant size distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "while exponential growth requires checkpoints and regulatory systems to maintain a constant size distribution (Mir et al., 2011), such tight regulation might not be needed for other growth modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous theoretical work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "8f8b295e-26e1-4c00-ab03-fc03b658b773",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C12",
+      "claim": "C. glutamicum is broadly used as a production-organism for amino-acids and vitamins.",
+      "claim_type": "EXPLICIT",
+      "source": "Corynebacterium glutamicum is broadly used as a production-organism for amino-acids and vitamins and also serves as model organism for the taxonomically related human pathogens Corynebacterium diphteriae and Mycobacterium tuberculosis (Hermann, 2003; Antoine et al., 1988; Schubert et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. glutamicum supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "c3e8b4d1-6e01-413c-a999-f402ff21651b",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C13",
+      "claim": "C. glutamicum serves as a model organism for C. diphteriae and M. tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Corynebacterium glutamicum is broadly used as a production-organism for amino-acids and vitamins and also serves as model organism for the taxonomically related human pathogens Corynebacterium diphteriae and Mycobacterium tuberculosis (Hermann, 2003; Antoine et al., 1988; Schubert et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "bd3e8d1c-0bcc-45af-90d7-074e75c4954a",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C14",
+      "claim": "The cell wall of Corynebacteria and Mycobacteria is composed of a peptidoglycan sacculus covalently bound to an arabinogalactan layer.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell wall of these bacteria is a polymer assembly composed of a classical bacterial peptidoglycan (PG) sacculus that is covalently bound to an arabinogalactan (AG) layer (Alderwick et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cell wall structure supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "9348d008-38f3-400d-8ba4-f0659a731dea",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C15",
+      "claim": "Mycolic acids form an outer membrane-like bilayer in Corynebacteria and Mycobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Mycolic acids are fused to the arabinose and form an outer membrane like bilayer, rendering the cell surface highly hydrophobic (Puech et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "e0b0ae5e-5e92-498c-9201-20a044adb400",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C16",
+      "claim": "The mycolic acid membrane is an efficient barrier that protects cells from many conventional antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "The mycolic acid membrane (MM) is an efficient barrier that protects the cells from many conventional antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of the mycolic acid membrane.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "e653c3a1-d1f2-42fe-8cb5-83400edf75ac",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C17",
+      "claim": "Members of the Corynebacterianeae lack a mreB homologue and elongate apically.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to rod-shaped firmicutes and \u03b3-proteobacteria, where cell-wall synthesis is dependent on the laterally acting MreB, members of the Corynebacterianeae lack a mreB homologue and elongate apically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the growth mechanism of Corynebacterianeae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "a08a8716-56b3-4e8c-8900-01074c59d930",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C18",
+      "claim": "Apical elongation in C. glutamicum is mediated by the protein DivIVA.",
+      "claim_type": "EXPLICIT",
+      "source": "This apical elongation is mediated by the protein DivIVA, which accumulates at the cell poles and serves as a scaffold for the organization of the elongasome complex (Letek et al., 2008; Hett and Rubin, 2008; Sieger et al., 2013; Figures 1 and 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and illustrated in Figures 1 and 2A,B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "b24d4b1a-e9a5-4257-b136-bec3239efa09",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C19",
+      "claim": "C. glutamicum lacks functional homologues of the Min- and nucleoid occlusion (Noc) system.",
+      "claim_type": "EXPLICIT",
+      "source": "Without harboring any known functional homologues of the Min- and nucleoid occlusion (Noc) system, division typically results in unequally sized daughter cells (Donovan et al., 2013; Donovan and Bramkamp, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "dff2f91a-a4cc-407e-816b-450f534b4fdf",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C20",
+      "claim": "Division in C. glutamicum typically results in unequally sized daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Without harboring any known functional homologues of the Min- and nucleoid occlusion (Noc) system, division typically results in unequally sized daughter cells (Donovan et al., 2013; Donovan and Bramkamp, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "502b6aca-cc19-4508-bfc3-cc0eb054baf2",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C21",
+      "claim": "The spread in growth times between birth and division is much wider in C. glutamicum than in other model organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the spread in growth times between birth and division is much wider than in other model organisms, suggesting a weaker regulation of this growth feature (Donovan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and suggests an inference about regulation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "71600946-f3fc-444b-9825-2c0725bf9d51",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C22",
+      "claim": "C. glutamicum exhibits a linear relationship between birth length and division length with a slope of 0.91\u00b10.16.",
+      "claim_type": "EXPLICIT",
+      "source": "For C. glutamicum, we find an approximately linear relationship between these birth and division lengths, with a slope of 0.91\u00b10.16 (2xSEM, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "64a48171-70ab-4b9e-8cba-ccd4946bc6bc",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C23",
+      "claim": "C. glutamicum behaves close to the adder model on a population level.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that on a population level, C. glutamicum behaves close to the adder model, in which cells on average grow by adding a fixed length before dividing (Jun and Taheri-Araghi, 2015; Amir, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data on birth and division lengths, supported by citations to theoretical frameworks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "75d3ef31-b5f2-4b23-b6a1-2cf81fb292de",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C24",
+      "claim": "There is a systematic deviation from exponential growth in C. glutamicum when plotting ln(l_d/l_b) versus growth time.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, there appears to be a systematic deviation from this trend, with cells with shorter growth times lying above this line and cells with longer growth times lying below it, suggesting non-exponential elongation behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "51abfd31-30cb-4985-ab05-d6de8bcc6beb",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C25",
+      "claim": "To distinguish between exponential and linear growth for an individual trajectory, the trajectory needs to be determined with an error of ~6%.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, it has been estimated that to distinguish between exponential and linear growth for an individual trajectory, the trajectory needs to be determined with an error of ~6% (Cooper, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "d1099677-95bd-4593-81b9-cacd63d6edf3",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C29",
+      "claim": "The inferred average elongation rates have an error margin of around 8%.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the high noise level of individual elongation trajectories, the inferred average elongation rates have an error margin of around 8%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the bootstrapping analysis of the inference method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "c41dbbe1-c42c-4ec1-a8d0-cf6698c68bd7",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C30",
+      "claim": "Elongation rates of cells with larger birth length are consistently higher than the elongation rates of cells with smaller birth length.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongation rates of cells with larger birth length are consistently higher than the elongation rates of cells with smaller birth length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the inferred elongation rate curves shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "d96d0866-59b2-420d-9b4c-dc186148036f",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C31",
+      "claim": "The elongation rate curves initially increase, but then gradually level off toward a linear growth mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the elongation rate curves initially increase, but then gradually level off toward a linear growth mode (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main finding from the elongation rate analysis, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "240e392f-de8f-4fa5-acf3-09aef213af7a",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C32",
+      "claim": "There is a slight difference in cell elongation rates between the strain expressing DivIVA-mCherry and wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We note a slight difference in the cell elongation rates between the strain expressing DivIVA-mCherry (Figure 5A) and wild type cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from comparing the data in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "6a702c6b-ba11-4ba0-9ddf-75fe7c865fc9",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C33",
+      "claim": "The difference in elongation rates between DivIVA-mCherry and wild type does not qualitatively change the mode of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this difference does not qualitatively change the mode of growth, but does show that a translational fusion to DivIVA tends to lower elongation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing the growth modes in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "71339390-d9de-4377-98c2-a0f8f5e9ee71",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C34",
+      "claim": "The translational fusion to DivIVA tends to lower elongation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this difference does not qualitatively change the mode of growth, but does show that a translational fusion to DivIVA tends to lower elongation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed difference in elongation rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "77e7dc4f-5da9-4b84-82ba-5d55dbdd9c8a",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C35",
+      "claim": "The lowered elongation rates in DivIVA-mCherry fusion likely reflect a disturbance in the interaction between RodA or bifunctional PBPs and the DivIVA-mCherry fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely reflects a disturbance in the interaction between RodA or bifunctional PBPs and the DivIVA-mCherry fusion protein, indicating that the DivIVA-mCherry fusion is not fully functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed difference in elongation rates.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "8e073479-8701-4de1-903f-0e4a7c5d5410",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C36",
+      "claim": "The DivIVA-mCherry fusion is not fully functional.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely reflects a disturbance in the interaction between RodA or bifunctional PBPs and the DivIVA-mCherry fusion protein, indicating that the DivIVA-mCherry fusion is not fully functional. This is consistent with findings we reported earlier (Donovan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "923c990e-26aa-4a69-b1f6-e2d7508a094b",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C37",
+      "claim": "Linear growth extends until the division time across division lengths in C. glutamicum.",
+      "claim_type": "EXPLICIT",
+      "source": "Calculating the corresponding elongation rate curves, we find that that linear growth indeed extends until the division time across division lengths (inset Figure 5B,SI, Appendix 6\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of elongation rates as a function of time until division.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "2d78d6c7-2631-4be5-840a-7539a8fe4995",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C38",
+      "claim": "The onset of septum formation does not consistently coincide with the moment at which the elongation rate levels off.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that the onset of septum formation does not consistently coincide with the moment at which the elongation rate levels off (Figure 5A): for smaller cells, the onset of septum formation occurs much later.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from comparing septum formation timing with elongation rate curves in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "351cca30-df69-453d-b1a0-967c7aafaa9a",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C39",
+      "claim": "It is implausible that the observed linear growth regime is due to the septum acting as a sink for cell-wall building blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it seems implausible that the observed linear growth regime is due the septum acting as a sink for cell-wall building blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that septum formation timing does not coincide with the onset of linear growth.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "9d6eb2db-1481-41cf-bd39-daf4bf755c21",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C40",
+      "claim": "The rate of new cell wall formation is proportional to the number of TG sites in the RAG model.",
+      "claim_type": "EXPLICIT",
+      "source": "To model this growth mechanism, we assume that the rate of new cell wall formation is proportional to the number of TG sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption of the RAG model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "8ffb38e9-a0bd-4a93-9fcf-eaa73fd25411",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C41",
+      "claim": "The interaction between Lipid-II and TG sites can be described by Michaelis-Menten kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe the interaction between Lipid-II and TG sites by Michaelis-Menten kinetics (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a modeling assumption based on established biochemical kinetics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "3d928747-fe60-4ec8-adc3-78ee10574771",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C42",
+      "claim": "The polar HADA intensities are approximately proportional to the inferred average single-cell elongation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we compute a moving average of the corrected polar HADA intensity as a function of cell length (Figure 6C). These polar HADA intensities are approximately proportional to the inferred average single-cell elongation rates (Appendix 8), as shown in the inset of Figure 6C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the HADA staining experiment shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "e09eba15-5294-4759-a11a-57fdfb9de3e2",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C43",
+      "claim": "The polar HADA intensities are approximately proportional to the peptidoglycan insertion rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the polar HADA intensities can be used as a measure for the cellular elongation rate. Assuming a proportional relationship between elongation rate and peptidoglycan insertion rate, this implies the polar HADA intensities are also approximately proportional to the peptidoglycan insertion rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed proportionality between HADA intensity and elongation rate.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "05a12bb5-2638-4fa7-8759-592b078a959c",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C44",
+      "claim": "Close to the cell tip, the HADA intensity remains approximately constant across cell lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing the HADA intensity profile for smaller segments within the polar region, we find that the increase in intensity is unevenly distributed (Figure 6D). Close to the cell tip, the HADA intensity remains approximately constant across cell lengths, whereas a linear increase over cell lengths is seen further from the tip.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the HADA intensity analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "ccfb8c7f-8a92-4df5-9739-527c49accf47",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C45",
+      "claim": "Further from the cell tip, a linear increase in HADA intensity over cell lengths is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing the HADA intensity profile for smaller segments within the polar region, we find that the increase in intensity is unevenly distributed (Figure 6D). Close to the cell tip, the HADA intensity remains approximately constant across cell lengths, whereas a linear increase over cell lengths is seen further from the tip.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the HADA intensity analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "41309a0b-8b34-472a-9973-3611d4bab0de",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C49",
+      "claim": "The predicted elongation rates from the RAG model provide a good fit to the experimental data for all studied genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted elongation rates provide a good fit to the experiment for all studied genotypes (Figure 6E\u2013G), although the data appear to exhibit a stronger inflection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing model predictions to experimental data shown in Figures 6E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "5bcbd97a-7dea-43a9-b21e-f4fb3a38d09a",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C50",
+      "claim": "DivIVA recruits itself, leading to exponential growth of a nucleating DivIVA cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that transglycosylase RodA and PBPs are recruited to the cell pole via the curvature-sensing protein DivIVA (Letek et al., 2008; Sieger et al., 2013). As shown in Lenarcic et al., 2009, DivIVA also recruits itself, leading to the exponential growth of a nucleating DivIVA cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "eb53a111-04fd-4776-8584-385fec8aca5d",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C52",
+      "claim": "The deletion of rodA results in a phenotype with a decreased population growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The SEDS-protein RodA is a mono-functional TG (Meeske et al., 2016; Emami et al., 2017; Sjodt et al., 2018), whose deletion results in a phenotype with a decreased population growth rate in the shaking-flask (Sieger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "ad09b6dc-74a8-42d2-9dde-0ee9e806c10a",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C53",
+      "claim": "The knockout of rodA is expected to lower the efficiency of polar cell wall formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect this knockout to lower the efficiency of polar cell wall formation, thus slowing down the rate-limiting step of growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the RAG model and the known function of RodA.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "981edb9b-d7b1-4f87-9494-2e42e83a62a0",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C54",
+      "claim": "The knockout of rodA mainly affects the efficiency of Lipid-II integration into the murein sacculus.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we expect the knockout of rodA to mainly affect the efficiency of Lipid-II integration into the murein sacculus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the known function of RodA.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "07a99cff-c0e7-406f-8c43-28a5fadae752",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C55",
+      "claim": "Elongation rate curves of the \u0394rodA mutant are scaled down compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observe such a scaling down of the elongation rate curves (Figure 5C), lending further credence to our model for C. glutamicum growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 5C that validates the RAG model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "a71525a4-3900-4fdc-b266-9a118d13a862",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C56",
+      "claim": "The onset of linear growth regime occurs after approximately 20-25 minutes across growth conditions and birth lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking feature observed across growth conditions and birth lengths, is the onset of a linear growth regime after approximately 20 min (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the elongation rate curves shown in Figures 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "b5a62960-57c3-4b21-a2d7-24741878ce1c",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C57",
+      "claim": "The robustness of the timing of onset of linear growth can be understood from the RAG model.",
+      "claim_type": "EXPLICIT",
+      "source": "The robustness of this timing can be understood from the RAG model: the regime of linear growth is reached via an exponential decay of the number of available TG sites until saturation is reached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on the mathematical properties of the RAG model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "b7860e14-47aa-45ca-881f-34426b66f1dd",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C59",
+      "claim": "The degree of transglycosylase saturation at birth is comparable between wild-type and the \u0394rodA mutant (~65% on average).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that this saturation is comparable between wild-type and the \u0394rodA mutant (~65% on average), but significantly higher for DivIVA-labeled cells (~80% on average) (Appendix 9\u2014tables 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from fitting the RAG model to the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "50de4b0b-521a-4da4-8d4f-49b1178daf0f",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C60",
+      "claim": "The degree of transglycosylase saturation at birth is significantly higher for DivIVA-labeled cells (~80% on average).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that this saturation is comparable between wild-type and the \u0394rodA mutant (~65% on average), but significantly higher for DivIVA-labeled cells (~80% on average) (Appendix 9\u2014tables 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from fitting the RAG model to the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "bfc78a5e-f9bc-4430-b20e-59582bd09e7f",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C61",
+      "claim": "Asymmetric division and noise in individual growth times results in a dramatic widening of the cell-size distribution for a purely exponential grower.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that asymmetric division and noise in individual growth times results in a dramatic widening of the cell-size distribution for a purely exponential grower (Marantan and Amir, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "0446bc7f-3584-471e-b30d-4d29bae3e700",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C62",
+      "claim": "Single-cell variations have a much weaker impact on cell size distribution for an asymptotically linear grower than for an exponential grower.",
+      "claim_type": "EXPLICIT",
+      "source": "For an asymptotically linear grower, however, we would expect single-cell variations to have a much weaker impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on theoretical reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "f0b3cc9b-5e86-4a28-a591-ff7049ceb9c0",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C63",
+      "claim": "The distribution of birth lengths for asymptotically linear growth closely matches the experimentally determined distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting distribution of birth lengths for the asymptotically linear growth case closely matches the experimentally determined distribution (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation study shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "36da5232-e825-411d-b8b7-a68dd7545008",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C64",
+      "claim": "The distribution for exponential growth is much wider than the experimental distribution and exhibits a broad tail for longer cell lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the distribution for exponential growth is much wider, and exhibits a broad tail for longer cell lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulation study shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "42601945-d147-4a28-880e-cb5304644e8c",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C65",
+      "claim": "Linear growth can act as a regulator for cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that linear growth can act as a regulator for cell size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results showing narrower size distributions for linear growth.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "ecd5ce67-3f47-464b-8ebf-adaf87749695",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C66",
+      "claim": "C. glutamicum has a high degree of variation of division symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "C. glutamicum has a high degree of variation of division symmetry (Appendix 10\u2014figure 1C) and single-cell growth times, but due to the asymptotically linear growth mode, the population-level variations in cell size are still relatively small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "9eace5fc-d314-4c75-9846-79ed544b6773",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C67",
+      "claim": "Due to asymptotically linear growth mode, population-level variations in cell size are relatively small in C. glutamicum despite high variation in division symmetry and growth times.",
+      "claim_type": "EXPLICIT",
+      "source": "C. glutamicum has a high degree of variation of division symmetry (Appendix 10\u2014figure 1C) and single-cell growth times, but due to the asymptotically linear growth mode, the population-level variations in cell size are still relatively small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the growth mode to population-level size variation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "b62a34de-42c0-40da-8749-0069e067568e",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C68",
+      "claim": "Apical cell wall formation is a plausible candidate for the rate-limiting step of growth in C. glutamicum.",
+      "claim_type": "EXPLICIT",
+      "source": "For C. glutamicum, apical cell wall formation is a plausible candidate for the rate-limiting step of growth, because synthesis of the highly complex cell wall and lipids for the mycolic acid membrane is cost intensive and a major sink for energy and carbon in Corynebacteria and Mycobacteria (Brennan, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by a citation about the cost of cell wall synthesis.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "75979177-66ce-4b02-b2de-ee3f9cfc7e60",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C69",
+      "claim": "Synthesis of the highly complex cell wall and lipids for the mycolic acid membrane is cost intensive and a major sink for energy and carbon in Corynebacteria and Mycobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "For C. glutamicum, apical cell wall formation is a plausible candidate for the rate-limiting step of growth, because synthesis of the highly complex cell wall and lipids for the mycolic acid membrane is cost intensive and a major sink for energy and carbon in Corynebacteria and Mycobacteria (Brennan, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "6aabf6b6-5383-4074-a6c4-9cdb7919383e",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C70",
+      "claim": "The binning method for analyzing elongation rates involves a tradeoff between bin width and error.",
+      "claim_type": "EXPLICIT",
+      "source": "The binning method, however, involves a tradeoff: a smaller bin width results in a larger error on the inferred elongation rates, whereas a larger bin width averages out all variation within a larger birth length interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological observation about the binning approach.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "c5417c0b-25cf-4be6-9d3a-c773889f9f6b",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C71",
+      "claim": "The inference method developed in this study does not suffer from the binning-related tradeoff.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method does not suffer from this binning-related tradeoff, and it provides detailed elongation rate curves at any given birth length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the advantages of the proposed method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "0cd4298a-0ed8-4b8b-9511-4fe576f29e6d",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C72",
+      "claim": "Polar growth in Mycobacteria follows 'new end take off' (NETO) dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Polar growth was shown to follow 'new end take off' (NETO) dynamics (Hannebelle et al., 2020), in which the new cell pole makes a sudden transition from slow to fast growth, leading to a bilinear polar growth mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work on Mycobacteria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "a3a6a564-e132-4925-9c03-f70c4b5f76fb",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C73",
+      "claim": "In C. glutamicum, the new pole gradually increases its average elongation rate before saturating to a constant maximum.",
+      "claim_type": "EXPLICIT",
+      "source": "In our proposed growth model for C. glutamicum however, the new pole gradually increases its average elongation rate before saturating to a constant maximum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the RAG model and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "7f59d565-ec07-4622-a4bf-c8f4d6c3840d",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C74",
+      "claim": "C. glutamicum deviates from NETO dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The deviation of C. glutamicum from NETO dynamics can also be seen by comparing each of the pole intensities in the HADA staining experiment, which does not show any signatures of NETO-like growth (Appendix 2\u2014figure 11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the HADA staining data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "76ffd117-5e9e-49bd-99fa-1811bb5171b1",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C75",
+      "claim": "The asymptotically linear growth model accurately reproduces the experimental distribution of cell birth lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that our asymptotically linear growth model accurately reproduces the experimental distribution of cell birth lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulation study shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "908182eb-e9f9-4305-805e-6852eb4be055",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C76",
+      "claim": "A model of exponential growth predicts a much broader distribution of birth lengths with a long tail for larger birth lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, a model of exponential growth predicts a much broader distribution with a long tail for larger birth lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulation study shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "f11a4b0d-8753-45be-80fe-5e26f895ccb9",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C77",
+      "claim": "If single-cell growth variability is reduced by a factor 3, the distributions corresponding to both growth modes show a similarly narrow width.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, if single-cell growth variability is reduced by a factor 3, the distributions corresponding to both growth modes show a similarly narrow width (Appendix 10\u2014figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from additional simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "f5376a86-2a5b-4d39-992b-6c76356ddb9f",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C78",
+      "claim": "An asymptotically linear grower is able to maintain a narrow distribution of cell sizes even for higher noise levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, an asymptotically linear grower is able to maintain a narrow distribution of cell sizes even for higher noise levels, whereas for an exponential grower this distribution widens dramatically (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation study shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "7fe8f1df-473e-49fa-ac50-9f996b1b64ab",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C79",
+      "claim": "Most rod-shaped bacteria use sophisticated systems such as the Min system to ensure cytokinesis precisely at midcell.",
+      "claim_type": "EXPLICIT",
+      "source": "Most rod-shaped bacteria use sophisticated systems, such as the Min system, to ensure cytokinesis precisely at midcell (Bramkamp et al., 2009; Lutkenhaus, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "1f5b1465-e773-4dca-993e-e5fb61398cce",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C80",
+      "claim": "Bacteria encoding a Min system grow by lateral cell wall insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria encoding a Min system grow by lateral cell wall insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bacterial growth mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "a865e8d7-0e01-4f68-a2a6-0456c1f3f1ad",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C81",
+      "claim": "Rod-shaped bacteria in the Actinobacteria phylum grow apically and do not contain a Min system.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, rod-shaped bacteria in the Actinobacteria phylum such as Mycobacterium or Corynebacterium species, grow apically and do not contain a Min system, nor any other known division site selection system (Donovan and Bramkamp, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "68ede752-9291-4283-b94c-1441fdd6f7ce",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C82",
+      "claim": "C. glutamicum couples division site selection to nucleoid positioning after chromosome segregation via the ParAB partitioning system.",
+      "claim_type": "EXPLICIT",
+      "source": "C. glutamicum rather couples division site selection to nucleoid positioning after chromosome segregation via the ParAB partitioning system (Donovan et al., 2013), and has a broader distribution of division symmetries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "66d851a0-d9f3-4308-97ae-9d987063f83c",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C83",
+      "claim": "Due to C. glutamicum's distinct growth mechanism, a more precise division site selection mechanism is not necessary to maintain a narrow cell size distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that due to C. glutamicum's distinct growth mechanism, a more precise division site selection mechanism is not necessary to maintain a narrow cell size distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings about linear growth and size distribution.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "7d5ddadd-35a7-49b1-9304-36b55e3289fd",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C84",
+      "claim": "The increase in cell mass is not necessarily proportional to cellular volume.",
+      "claim_type": "EXPLICIT",
+      "source": "The elongation rates reported in this work reflect the increase in cellular volume over time. However, the increase in cell mass is not necessarily proportional to cellular volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the relationship between mass and volume.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "61234fb3-db73-42b2-9b4a-a3b679884ae6",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C85",
+      "claim": "In exponentially growing E. coli, cellular density systematically varies during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In exponentially growing E. coli, the cellular density was recently reported to systematically vary during the cell cycle, while the surface-to-mass ratio was reported to remain constant (Oldewurtel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to recent work on E. coli.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "e222ea95-b768-4156-ba59-6c98c0134577",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C86",
+      "claim": "The surface-to-mass ratio remains constant during the cell cycle in exponentially growing E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "In exponentially growing E. coli, the cellular density was recently reported to systematically vary during the cell cycle, while the surface-to-mass ratio was reported to remain constant (Oldewurtel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to recent work on E. coli.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "e7dc2d4a-780c-413f-aff9-e868f0a82f9e",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C87",
+      "claim": "Mass production would follow exponential growth if mass production is proportional to protein content.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unknown how single-cell mass increases in C. glutamicum, but it would follow exponential growth if mass production is proportional to protein content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement based on established principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "6c9754ad-442d-444f-b4a1-d3efc344852c",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C88",
+      "claim": "A regulatory mechanism for cell mass production that couples to cell volume is implied by the elongation rate curves obtained for the \u0394rodA mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a regulatory mechanism for cell mass production that couples to cell volume is implied by the elongation rate curves obtained for the \u0394rodA mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations on the \u0394rodA mutant.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "8aa5704a-e275-454c-9ab6-81eaf60f13d4",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C89",
+      "claim": "Average mass production needs to be lowered in the \u0394rodA mutant compared to WT to prevent cellular density from increasing indefinitely.",
+      "claim_type": "EXPLICIT",
+      "source": "As the elongation rate is lower in this mutant, average mass production needs to be lowered compared to the WT in order to prevent the cellular density from increasing indefinitely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the observation of lower elongation rates in the mutant.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "8a783cbc-d2bd-485b-bf4c-e71e40e2a91e",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C90",
+      "claim": "The growth trajectory inference method is not cell-type specific and can be used to obtain detailed growth dynamics in a wide range of organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our growth trajectory inference method is not cell-type specific, and can be used to obtain detailed growth dynamics in a wide range of organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the generalizability of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "6fe265e1-c81e-4388-993a-5fd762c73659",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C91",
+      "claim": "The inferred asymptotically linear growth of C. glutamicum suggests the presence of novel growth regulatory mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred asymptotically linear growth of C. glutamicum deviates from the predominantly found exponential single-cell bacterial growth, and suggests the presence of novel growth regulatory mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "4cf375a7-c325-4704-a8e2-af5d58dd9fc0",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C92",
+      "claim": "Increases in cell length are proportional to increases in cell area in C. glutamicum.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the increases in cell length are proportional to the increases in cell area (Appendix 2\u2014figure 1A), suggesting that cellular length increase is also proportional to the volume increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "dbeb86ec-e2a9-48fa-86d4-0b6fecb20ebe",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C93",
+      "claim": "Cellular length increase is proportional to volume increase in C. glutamicum.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the increases in cell length are proportional to the increases in cell area (Appendix 2\u2014figure 1A), suggesting that cellular length increase is also proportional to the volume increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed proportionality between length and area increases.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "2308b4f1-3d00-4043-9a6a-8fa7573dc3bb",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C94",
+      "claim": "C. glutamicum cells maintain a roughly constant cell width over the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This proportionality is expected since the rod-shaped C. glutamicum cells insert new cell wall material exclusively at the poles, while maintaining a roughly constant cell width over the cell cycle (Schubert et al., 2017; Daniel and Errington, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "7c3bccdb-d8ed-446e-9649-2363c5ffbbe9",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C95",
+      "claim": "DivIVA localizes to the cell poles and to the newly formed division septum in C. glutamicum.",
+      "claim_type": "EXPLICIT",
+      "source": "DivIVA is used as a marker for cell cycle progression, since it localizes to the cell poles and to the newly formed division septum in C. glutamicum (Letek et al., 2008; Donovan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "ee23e637-4144-4408-8033-5c45bf5aae6a",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C96",
+      "claim": "The Mother Machine is not ideally suited for C. glutamicum growth due to V-snapping at division.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mother Machine is not ideally suited for C. glutamicum growth, as the characteristic V-snapping at division could lead to shear forces and stress during cell separation, affecting growth (Zhou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "bb950777-be4c-419f-8040-56bffb5089ba",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C97",
+      "claim": "The mother machine has been shown to affect growth properties in some cells due to mechanical stresses inducing cell deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in some cases, the mother machine has been shown to affect growth properties even in cells not exhibiting V-snapping at division, due to mechanical stresses inducing cell deformation (Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "6cb4c781-4ad6-4367-866d-1b3c8f369709",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C98",
+      "claim": "The sharp increase in average DivIVA-mCherry signal at the cell center is used as a proxy for the onset of septum formation.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we used the moment of a sharp increase in the average DivIVA-mCherry signal at the cell center as a proxy for the moment of onset of septum formation (Appendix 2\u2014figure 7): the inward growing septum introduces a negative curvature of the plasma membrane, leading to the accumulation of DivIVA (Lenarcic et al., 2009; Strahl and Hamoen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach supported by citations about DivIVA accumulation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "b833fc4d-d52a-4e96-9fab-c7072426b3c3",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C99",
+      "claim": "The inward growing septum introduces a negative curvature of the plasma membrane, leading to the accumulation of DivIVA.",
+      "claim_type": "EXPLICIT",
+      "source": "the inward growing septum introduces a negative curvature of the plasma membrane, leading to the accumulation of DivIVA (Lenarcic et al., 2009; Strahl and Hamoen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "cce10f1e-afc2-4aba-8286-43aa3197ce71",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C100",
+      "claim": "Lipid-II is translocated across the plasma membrane by the Lipid-II flippase MurJ.",
+      "claim_type": "EXPLICIT",
+      "source": "At the TG sites, Lipid-II is translocated across the plasma membrane by the Lipid-II flippase MurJ (Sham et al., 2014; Kuk et al., 2017; Butler et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "9e9c0d8e-3890-4c32-86c8-29546d753458",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C101",
+      "claim": "Transpeptidases conduct the crosslinking of peptide subunits, which contributes to the rigidity of the cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "After PG building blocks provided by Lipid-II are incorporated into the existing cell wall by transglycolylation, transpeptidases (TP) conduct the crosslinking of peptide subunits, which contributes to the rigidity of the cell wall (Scheffers and Pinho, 2005; Valbuena et al., 2007; Schleifer and Kandler, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "e4b29973-3b43-42d8-8fef-5a67e506d71a",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C102",
+      "claim": "RodA and bifunctional penicillin binding proteins (PBPs) are recruited by DivIVA.",
+      "claim_type": "EXPLICIT",
+      "source": "During growth, the area of the PG sacculus, and thus the number of TG sites, is extended by RodA and bifunctional penicillin binding proteins (PBPs), recruited by DivIVA (Letek et al., 2008; Sieger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "be2a7880-d4f5-42e8-9d5b-123733c33d3c",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C104",
+      "claim": "RodA is a mono-functional transglycosylase.",
+      "claim_type": "EXPLICIT",
+      "source": "The SEDS-protein RodA is a mono-functional TG (Meeske et al., 2016; Emami et al., 2017; Sjodt et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "e627c815-610b-4478-8f95-f00e673b8c2e",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C105",
+      "claim": "Transglycosylase RodA and PBPs are recruited to the cell pole via the curvature-sensing protein DivIVA.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence that transglycosylase RodA and PBPs are recruited to the cell pole via the curvature-sensing protein DivIVA (Letek et al., 2008; Sieger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "8458bf36-9056-484f-85ad-725de3d31f2c",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C106",
+      "claim": "The inference method developed here can recover the input growth mode with high precision for linear, exponential, and the inferred growth modes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that our inference method is able to recover the input growth mode with high precision in all cases (Appendix 4, Appendix 7), demonstrating the accuracy and internal consistency of our inference method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result from simulations testing the inference method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "96534cb8-2647-42e3-a012-ea0ec1c621b4",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C107",
+      "claim": "Faster-growing cells divide earlier than slower-growing cells for a given birth length.",
+      "claim_type": "EXPLICIT",
+      "source": "For a given birth length, faster-growing cells divide earlier than slower-growing cells (Appendix 2\u2014figure 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "482d1f38-c579-4283-9c2d-221e0fd976b9",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "claim_id": "C108",
+      "claim": "Higher-order fitting functions result in negligible improvement of goodness-of-fit while increasing mean error on inferred elongation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher-order fitting functions result in a negligible improvement of the goodness-of-fit, while increasing the mean error on inferred elongation rates (Appendix 2\u2014figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological finding from testing different fitting approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c859539e-0da1-4b1c-b59c-8b90dfbb8a20",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C. glutamicum exhibits asymptotically linear single-cell growth. The elongation rate curves initially increase but then gradually level off toward a linear growth mode, which extends until division time across division lengths. This deviates from the exponential growth typically observed in bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C24, C31, and C37 collectively demonstrate asymptotically linear growth through multiple lines of evidence: systematic deviations from exponential growth patterns (C24), elongation rate curves that level off (C31), and persistence of linear growth until division (C37). The inference method with ~8% error margins provides sufficient precision to distinguish this growth mode from exponential growth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "392a1f00-b549-43fb-a379-4d046f4ec2fa",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A novel growth trajectory inference method was developed that provides detailed elongation rate curves as a function of time and birth length without binning-related tradeoffs. The method achieves ~8% error margins and can recover input growth modes with high precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C71, C106, and C108 demonstrate methodological rigor through validation with simulated data, comparison with alternative approaches, and quantified error margins. The bootstrapping analysis and recovery of known growth modes from simulations provide strong evidence for the method's accuracy and reliability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "435f5362-192e-45d6-99c0-9b48b8fa3801",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Rate-limiting Apical Growth (RAG) model explains asymptotically linear growth by assuming cell wall formation at the poles is rate-limited by transglycosylase sites following Michaelis-Menten kinetics. The model accurately fits experimental data across genotypes and is validated by \u0394rodA mutant experiments showing scaled-down elongation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45, C49, C55, and C57 provide converging evidence for the RAG model through HADA staining data showing proportionality between polar intensity and elongation rates (C42-C45), good model fits to experimental data (C49), and validation with the \u0394rodA mutant showing predicted scaling behavior (C55). The mechanistic basis is well-supported by established biochemical principles (C41).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "47746fbf-d215-489e-887a-d8fe3b023969",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Asymptotically linear growth produces narrower cell length distributions than exponential growth under equivalent noise conditions. Simulations show that linear growers maintain narrow size distributions even with high variability in division symmetry and growth times, suggesting linear growth can act as a cell size regulator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C63, C64, C65, C67, and C78 demonstrate through simulation that linear growth is more robust to single-cell variability than exponential growth. The simulated linear growth distribution matches experimental data (C63), while exponential growth produces much broader distributions with long tails (C64, C78). This provides strong computational evidence for the regulatory implications of the growth mode.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "2557241d-09b9-441b-aacc-9307fcf28876",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "C. glutamicum exhibits a linear relationship between birth length and division length with a slope of 0.91\u00b10.16, indicating the population behaves close to the adder model where cells add a fixed length before dividing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C23 are well-supported by experimental data shown in Figure 3A with appropriate statistical analysis (2xSEM reported). The slope of 0.91\u00b10.16 is close to 1.0, which is consistent with the adder model, and this interpretation is supported by established theoretical frameworks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "6d5a4dfa-91ea-47e7-abf9-107c822d573a",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Elongation rates increase with birth length and differ between DivIVA-mCherry labeled cells and wild-type, with the fusion protein showing lower rates. This difference does not qualitatively change the growth mode but indicates the DivIVA-mCherry fusion is not fully functional.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C32, C33, C34, C35, and C36 are supported by comparative data in Figures 5A and 5B. The observation of consistent growth mode despite quantitative differences (C33) and support from previous work (C36) strengthen the conclusion. However, the mechanistic explanation (C35) remains somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "8545b413-3106-475d-96a2-241784579fb0",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The onset of septum formation does not consistently coincide with the leveling off of elongation rates, particularly in smaller cells where septum formation occurs later. This makes it implausible that the linear growth regime is caused by the septum acting as a sink for cell-wall building blocks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C39 are supported by data in Figure 5A comparing septum formation timing (via DivIVA-mCherry signal) with elongation rate curves. The temporal mismatch, especially in smaller cells, provides strong evidence against the septum-as-sink hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "25f8a76e-0cf1-41f4-84f2-cf2b3c7d28de",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The onset of linear growth occurs after approximately 20-25 minutes across growth conditions and birth lengths. Transglycosylase saturation at birth is ~65% for wild-type and \u0394rodA mutant, but ~80% for DivIVA-labeled cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56, C59, and C60 are supported by experimental observations across multiple conditions (Figures 5A-C) and model fitting results (Appendix 9). The robustness of timing and quantified saturation levels provide strong evidence, though the higher saturation in DivIVA-labeled cells may reflect the fusion protein's reduced functionality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "b16efc66-fdac-429a-89fb-890dfe20cde5",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "C. glutamicum deviates from the 'new end take off' (NETO) dynamics observed in Mycobacteria. Instead, the new pole gradually increases its elongation rate before saturating to a constant maximum, as evidenced by HADA staining data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C74 are supported by HADA staining data (Appendix 2\u2014figure 11) and the RAG model predictions. The gradual increase in elongation rate contrasts with the sudden transition characteristic of NETO dynamics, providing clear evidence for a distinct growth mechanism in C. glutamicum.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "10ff3c63-24de-443b-87f5-5c9f15462184",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Increases in cell length are proportional to increases in cell area in C. glutamicum, suggesting length increase is proportional to volume increase. This proportionality is expected given apical growth and constant cell width.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92, C93, and C94 are supported by experimental data (Appendix 2\u2014figure 1A) and established knowledge about C. glutamicum's growth mechanism. The proportionality between length and area, combined with constant width, logically implies proportionality to volume, making the use of length as a proxy for volume valid.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "845d638e-b22b-4277-91f1-063ae4ebce20",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "C. glutamicum has high variation in division symmetry and couples division site selection to nucleoid positioning via the ParAB system rather than using a Min system. The distinct linear growth mechanism may eliminate the need for precise division site selection to maintain narrow cell size distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C82, and C83 combine experimental observations (C66) with established knowledge (C82) to support a speculative but logical conclusion (C83). The speculation is well-grounded in the demonstrated robustness of linear growth to variability, though direct experimental validation of the evolutionary hypothesis is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "95793461-4882-4f00-bc97-157ad8d73109",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The elongation rate curves from the \u0394rodA mutant imply a regulatory mechanism coupling cell mass production to cell volume. Average mass production must be lowered in the mutant to prevent indefinite density increases given the lower elongation rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88 and C89 present a logical inference from the \u0394rodA mutant data. The reasoning is sound: if volume growth slows but mass production continues unchanged, density would increase indefinitely. However, this remains an inference without direct measurement of mass or density changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "390318d4-99d4-400d-8cf6-8bd9e57d55c6",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The growth trajectory inference method is broadly applicable to other organisms, and the inferred asymptotically linear growth of C. glutamicum suggests novel growth regulatory mechanisms distinct from exponential growers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90 and C91 are reasonable conclusions from the work. The method's generalizability (C90) is supported by its theoretical basis and validation, though application to other organisms would strengthen this claim. The suggestion of novel regulatory mechanisms (C91) is a logical inference from the demonstrated deviation from exponential growth.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "20157fdb-b541-420f-ac76-1acea7dfa9ee",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work has established that single bacterial cells predominantly grow exponentially, which requires tight regulation for size homeostasis. E. coli, B. subtilis, and C. crescentus exhibit exponential growth, with some recent evidence for deviations in B. subtilis (biphasic) and E. coli (super-exponential late in cell cycle).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4, C5, C6, C7, C8, and C9 accurately summarize prior work with appropriate citations. These provide essential context for the current study's findings and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "C. glutamicum is characterized by apical growth mediated by DivIVA, a complex cell wall structure with mycolic acid membrane, lack of Min/Noc systems leading to asymmetric division, and wider variation in growth times than other model organisms. It serves as a model for related pathogens and is used industrially.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C12-C21 provide well-established background on C. glutamicum's biology, supported by appropriate citations. These contextual claims are important for understanding why C. glutamicum is a promising candidate for discovering non-exponential growth modes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "77d89133-1559-4721-bb7a-95e66be70968",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The molecular machinery of apical growth involves DivIVA recruiting RodA and PBPs to the cell pole, with DivIVA self-recruitment leading to exponential cluster growth. RodA is a mono-functional transglycosylase whose deletion decreases population growth rate. Lipid-II is translocated by MurJ, and transpeptidases crosslink peptide subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C52-C54, C100-C102, C104-C105 describe established molecular mechanisms supported by appropriate citations. These provide the biochemical foundation for the RAG model and are well-supported by prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "defb81ea-f13a-40b6-99aa-81dbdcd033d1",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Distinguishing exponential from linear growth in individual trajectories requires ~6% error, which is challenging experimentally. The binning method for analyzing elongation rates involves tradeoffs between bin width and error. Mycobacteria exhibit NETO dynamics with sudden transitions in polar growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C70, and C72 provide methodological context and comparison to related organisms, all supported by appropriate citations. These help justify the need for the novel inference method and contextualize C. glutamicum's growth relative to Mycobacteria.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "a1136810-3261-4e38-a670-1891a25443ba",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior theoretical work shows exponential growers experience dramatic widening of size distributions with asymmetric division and growth time noise. Most rod-shaped bacteria use Min systems for precise midcell division and grow by lateral insertion, while Actinobacteria grow apically without Min systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C62, C77, C79-C81 provide theoretical and comparative context supported by citations. These establish the framework for understanding the evolutionary implications of linear growth and the distinctiveness of Actinobacteria growth mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "ccf040f9-a13b-4853-b264-789aff139f2f",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Cell mass increase is not necessarily proportional to volume increase. In E. coli, cellular density varies during the cell cycle while surface-to-mass ratio remains constant. Mass production would follow exponential growth if proportional to protein content.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 raise important caveats about the relationship between volume and mass growth, supported by recent work on E. coli (C85-C86). These are important considerations for interpreting the volume-based elongation measurements, though direct measurements in C. glutamicum are lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "db6d9c6e-4798-493b-bc38-d6313e9d2283",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "DivIVA localizes to cell poles and division septa and is used as a cell cycle marker. The Mother Machine is not ideal for C. glutamicum due to V-snapping and potential mechanical stress effects. DivIVA-mCherry signal increase at cell center serves as a proxy for septum formation onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C99 describe methodological choices and markers used in the study, supported by citations. The rationale for avoiding the Mother Machine (C96-C97) and using DivIVA as a marker (C95, C98-C99) are well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "2bfc694c-85b8-4121-b4bb-c86879d27df1",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Apical cell wall formation is a plausible candidate for the rate-limiting step of growth in C. glutamicum because synthesis of the complex cell wall and mycolic acid membrane is cost-intensive and a major sink for energy and carbon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68 and C69 present a reasonable speculation supported by citation (C69) about the metabolic costs of cell wall synthesis. While plausible, this remains speculative without direct measurements of metabolic fluxes or demonstration that other processes are not rate-limiting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    },
+    {
+      "id": "1a6e1881-840c-46b7-8dfe-9009dcfb2c27",
+      "content_id": "610795ce-fde6-47ca-8b7f-50488b78e70b",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "For a given birth length, faster-growing cells divide earlier than slower-growing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C107 is a straightforward observation from experimental data (Appendix 2\u2014figure 2) that is consistent with expected biological variability in growth rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:03.300176Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8fef25e4-47b1-486d-b918-72e278aa5e9e",
+      "result_id": "c859539e-0da1-4b1c-b59c-8b90dfbb8a20"
+    },
+    {
+      "claim_id": "75d3ef31-b5f2-4b23-b6a1-2cf81fb292de",
+      "result_id": "c859539e-0da1-4b1c-b59c-8b90dfbb8a20"
+    },
+    {
+      "claim_id": "d96d0866-59b2-420d-9b4c-dc186148036f",
+      "result_id": "c859539e-0da1-4b1c-b59c-8b90dfbb8a20"
+    },
+    {
+      "claim_id": "923c990e-26aa-4a69-b1f6-e2d7508a094b",
+      "result_id": "c859539e-0da1-4b1c-b59c-8b90dfbb8a20"
+    },
+    {
+      "claim_id": "d1099677-95bd-4593-81b9-cacd63d6edf3",
+      "result_id": "392a1f00-b549-43fb-a379-4d046f4ec2fa"
+    },
+    {
+      "claim_id": "c5417c0b-25cf-4be6-9d3a-c773889f9f6b",
+      "result_id": "392a1f00-b549-43fb-a379-4d046f4ec2fa"
+    },
+    {
+      "claim_id": "8458bf36-9056-484f-85ad-725de3d31f2c",
+      "result_id": "392a1f00-b549-43fb-a379-4d046f4ec2fa"
+    },
+    {
+      "claim_id": "482d1f38-c579-4283-9c2d-221e0fd976b9",
+      "result_id": "392a1f00-b549-43fb-a379-4d046f4ec2fa"
+    },
+    {
+      "claim_id": "9d6eb2db-1481-41cf-bd39-daf4bf755c21",
+      "result_id": "435f5362-192e-45d6-99c0-9b48b8fa3801"
+    },
+    {
+      "claim_id": "8ffb38e9-a0bd-4a93-9fcf-eaa73fd25411",
+      "result_id": "435f5362-192e-45d6-99c0-9b48b8fa3801"
+    },
+    {
+      "claim_id": "3d928747-fe60-4ec8-adc3-78ee10574771",
+      "result_id": "435f5362-192e-45d6-99c0-9b48b8fa3801"
+    },
+    {
+      "claim_id": "e09eba15-5294-4759-a11a-57fdfb9de3e2",
+      "result_id": "435f5362-192e-45d6-99c0-9b48b8fa3801"
+    },
+    {
+      "claim_id": "05a12bb5-2638-4fa7-8759-592b078a959c",
+      "result_id": "435f5362-192e-45d6-99c0-9b48b8fa3801"
+    },
+    {
+      "claim_id": "ccfb8c7f-8a92-4df5-9739-527c49accf47",
+      "result_id": "435f5362-192e-45d6-99c0-9b48b8fa3801"
+    },
+    {
+      "claim_id": "41309a0b-8b34-472a-9973-3611d4bab0de",
+      "result_id": "435f5362-192e-45d6-99c0-9b48b8fa3801"
+    },
+    {
+      "claim_id": "07a99cff-c0e7-406f-8c43-28a5fadae752",
+      "result_id": "435f5362-192e-45d6-99c0-9b48b8fa3801"
+    },
+    {
+      "claim_id": "b5a62960-57c3-4b21-a2d7-24741878ce1c",
+      "result_id": "435f5362-192e-45d6-99c0-9b48b8fa3801"
+    },
+    {
+      "claim_id": "8009dc77-54df-4803-88a6-3209be1c0b12",
+      "result_id": "47746fbf-d215-489e-887a-d8fe3b023969"
+    },
+    {
+      "claim_id": "f0b3cc9b-5e86-4a28-a591-ff7049ceb9c0",
+      "result_id": "47746fbf-d215-489e-887a-d8fe3b023969"
+    },
+    {
+      "claim_id": "36da5232-e825-411d-b8b7-a68dd7545008",
+      "result_id": "47746fbf-d215-489e-887a-d8fe3b023969"
+    },
+    {
+      "claim_id": "42601945-d147-4a28-880e-cb5304644e8c",
+      "result_id": "47746fbf-d215-489e-887a-d8fe3b023969"
+    },
+    {
+      "claim_id": "9eace5fc-d314-4c75-9846-79ed544b6773",
+      "result_id": "47746fbf-d215-489e-887a-d8fe3b023969"
+    },
+    {
+      "claim_id": "f5376a86-2a5b-4d39-992b-6c76356ddb9f",
+      "result_id": "47746fbf-d215-489e-887a-d8fe3b023969"
+    },
+    {
+      "claim_id": "71600946-f3fc-444b-9825-2c0725bf9d51",
+      "result_id": "2557241d-09b9-441b-aacc-9307fcf28876"
+    },
+    {
+      "claim_id": "64a48171-70ab-4b9e-8cba-ccd4946bc6bc",
+      "result_id": "2557241d-09b9-441b-aacc-9307fcf28876"
+    },
+    {
+      "claim_id": "c41dbbe1-c42c-4ec1-a8d0-cf6698c68bd7",
+      "result_id": "6d5a4dfa-91ea-47e7-abf9-107c822d573a"
+    },
+    {
+      "claim_id": "240e392f-de8f-4fa5-acf3-09aef213af7a",
+      "result_id": "6d5a4dfa-91ea-47e7-abf9-107c822d573a"
+    },
+    {
+      "claim_id": "6a702c6b-ba11-4ba0-9ddf-75fe7c865fc9",
+      "result_id": "6d5a4dfa-91ea-47e7-abf9-107c822d573a"
+    },
+    {
+      "claim_id": "71339390-d9de-4377-98c2-a0f8f5e9ee71",
+      "result_id": "6d5a4dfa-91ea-47e7-abf9-107c822d573a"
+    },
+    {
+      "claim_id": "77e7dc4f-5da9-4b84-82ba-5d55dbdd9c8a",
+      "result_id": "6d5a4dfa-91ea-47e7-abf9-107c822d573a"
+    },
+    {
+      "claim_id": "8e073479-8701-4de1-903f-0e4a7c5d5410",
+      "result_id": "6d5a4dfa-91ea-47e7-abf9-107c822d573a"
+    },
+    {
+      "claim_id": "2d78d6c7-2631-4be5-840a-7539a8fe4995",
+      "result_id": "8545b413-3106-475d-96a2-241784579fb0"
+    },
+    {
+      "claim_id": "351cca30-df69-453d-b1a0-967c7aafaa9a",
+      "result_id": "8545b413-3106-475d-96a2-241784579fb0"
+    },
+    {
+      "claim_id": "a71525a4-3900-4fdc-b266-9a118d13a862",
+      "result_id": "25f8a76e-0cf1-41f4-84f2-cf2b3c7d28de"
+    },
+    {
+      "claim_id": "b7860e14-47aa-45ca-881f-34426b66f1dd",
+      "result_id": "25f8a76e-0cf1-41f4-84f2-cf2b3c7d28de"
+    },
+    {
+      "claim_id": "50de4b0b-521a-4da4-8d4f-49b1178daf0f",
+      "result_id": "25f8a76e-0cf1-41f4-84f2-cf2b3c7d28de"
+    },
+    {
+      "claim_id": "a3a6a564-e132-4925-9c03-f70c4b5f76fb",
+      "result_id": "b16efc66-fdac-429a-89fb-890dfe20cde5"
+    },
+    {
+      "claim_id": "7f59d565-ec07-4622-a4bf-c8f4d6c3840d",
+      "result_id": "b16efc66-fdac-429a-89fb-890dfe20cde5"
+    },
+    {
+      "claim_id": "4cf375a7-c325-4704-a8e2-af5d58dd9fc0",
+      "result_id": "10ff3c63-24de-443b-87f5-5c9f15462184"
+    },
+    {
+      "claim_id": "dbeb86ec-e2a9-48fa-86d4-0b6fecb20ebe",
+      "result_id": "10ff3c63-24de-443b-87f5-5c9f15462184"
+    },
+    {
+      "claim_id": "2308b4f1-3d00-4043-9a6a-8fa7573dc3bb",
+      "result_id": "10ff3c63-24de-443b-87f5-5c9f15462184"
+    },
+    {
+      "claim_id": "ecd5ce67-3f47-464b-8ebf-adaf87749695",
+      "result_id": "845d638e-b22b-4277-91f1-063ae4ebce20"
+    },
+    {
+      "claim_id": "68ede752-9291-4283-b94c-1441fdd6f7ce",
+      "result_id": "845d638e-b22b-4277-91f1-063ae4ebce20"
+    },
+    {
+      "claim_id": "66d851a0-d9f3-4308-97ae-9d987063f83c",
+      "result_id": "845d638e-b22b-4277-91f1-063ae4ebce20"
+    },
+    {
+      "claim_id": "6c9754ad-442d-444f-b4a1-d3efc344852c",
+      "result_id": "95793461-4882-4f00-bc97-157ad8d73109"
+    },
+    {
+      "claim_id": "8aa5704a-e275-454c-9ab6-81eaf60f13d4",
+      "result_id": "95793461-4882-4f00-bc97-157ad8d73109"
+    },
+    {
+      "claim_id": "8a783cbc-d2bd-485b-bf4c-e71e40e2a91e",
+      "result_id": "390318d4-99d4-400d-8cf6-8bd9e57d55c6"
+    },
+    {
+      "claim_id": "6fe265e1-c81e-4388-993a-5fd762c73659",
+      "result_id": "390318d4-99d4-400d-8cf6-8bd9e57d55c6"
+    },
+    {
+      "claim_id": "410bde8b-de84-451e-a84c-03b013fb5321",
+      "result_id": "20157fdb-b541-420f-ac76-1acea7dfa9ee"
+    },
+    {
+      "claim_id": "3198a48f-3e8c-4c66-be6e-db0aef4a6ae0",
+      "result_id": "20157fdb-b541-420f-ac76-1acea7dfa9ee"
+    },
+    {
+      "claim_id": "3ad9bc4e-a536-49ae-b4d9-a6a008b13645",
+      "result_id": "20157fdb-b541-420f-ac76-1acea7dfa9ee"
+    },
+    {
+      "claim_id": "d3395e0f-7952-4300-976a-972b06b04875",
+      "result_id": "20157fdb-b541-420f-ac76-1acea7dfa9ee"
+    },
+    {
+      "claim_id": "b355bc93-edcc-4886-ae3b-3f0ef018fc32",
+      "result_id": "20157fdb-b541-420f-ac76-1acea7dfa9ee"
+    },
+    {
+      "claim_id": "bd5b8a96-e313-4410-a7cd-b30bdd5f6c56",
+      "result_id": "20157fdb-b541-420f-ac76-1acea7dfa9ee"
+    },
+    {
+      "claim_id": "44fbfaad-ae90-4f2d-9a8e-470fdfd6c939",
+      "result_id": "20157fdb-b541-420f-ac76-1acea7dfa9ee"
+    },
+    {
+      "claim_id": "08951d0f-1228-44ad-932e-eabb1926c68c",
+      "result_id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c"
+    },
+    {
+      "claim_id": "8f8b295e-26e1-4c00-ab03-fc03b658b773",
+      "result_id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c"
+    },
+    {
+      "claim_id": "c3e8b4d1-6e01-413c-a999-f402ff21651b",
+      "result_id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c"
+    },
+    {
+      "claim_id": "bd3e8d1c-0bcc-45af-90d7-074e75c4954a",
+      "result_id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c"
+    },
+    {
+      "claim_id": "9348d008-38f3-400d-8ba4-f0659a731dea",
+      "result_id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c"
+    },
+    {
+      "claim_id": "e0b0ae5e-5e92-498c-9201-20a044adb400",
+      "result_id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c"
+    },
+    {
+      "claim_id": "e653c3a1-d1f2-42fe-8cb5-83400edf75ac",
+      "result_id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c"
+    },
+    {
+      "claim_id": "a08a8716-56b3-4e8c-8900-01074c59d930",
+      "result_id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c"
+    },
+    {
+      "claim_id": "b24d4b1a-e9a5-4257-b136-bec3239efa09",
+      "result_id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c"
+    },
+    {
+      "claim_id": "dff2f91a-a4cc-407e-816b-450f534b4fdf",
+      "result_id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c"
+    },
+    {
+      "claim_id": "502b6aca-cc19-4508-bfc3-cc0eb054baf2",
+      "result_id": "392e3bc7-5cd6-44e5-ac79-81bc0099561c"
+    },
+    {
+      "claim_id": "5bcbd97a-7dea-43a9-b21e-f4fb3a38d09a",
+      "result_id": "77d89133-1559-4721-bb7a-95e66be70968"
+    },
+    {
+      "claim_id": "eb53a111-04fd-4776-8584-385fec8aca5d",
+      "result_id": "77d89133-1559-4721-bb7a-95e66be70968"
+    },
+    {
+      "claim_id": "ad09b6dc-74a8-42d2-9dde-0ee9e806c10a",
+      "result_id": "77d89133-1559-4721-bb7a-95e66be70968"
+    },
+    {
+      "claim_id": "981edb9b-d7b1-4f87-9494-2e42e83a62a0",
+      "result_id": "77d89133-1559-4721-bb7a-95e66be70968"
+    },
+    {
+      "claim_id": "cce10f1e-afc2-4aba-8286-43aa3197ce71",
+      "result_id": "77d89133-1559-4721-bb7a-95e66be70968"
+    },
+    {
+      "claim_id": "9e9c0d8e-3890-4c32-86c8-29546d753458",
+      "result_id": "77d89133-1559-4721-bb7a-95e66be70968"
+    },
+    {
+      "claim_id": "e4b29973-3b43-42d8-8fef-5a67e506d71a",
+      "result_id": "77d89133-1559-4721-bb7a-95e66be70968"
+    },
+    {
+      "claim_id": "be2a7880-d4f5-42e8-9d5b-123733c33d3c",
+      "result_id": "77d89133-1559-4721-bb7a-95e66be70968"
+    },
+    {
+      "claim_id": "e627c815-610b-4478-8f95-f00e673b8c2e",
+      "result_id": "77d89133-1559-4721-bb7a-95e66be70968"
+    },
+    {
+      "claim_id": "51abfd31-30cb-4985-ab05-d6de8bcc6beb",
+      "result_id": "defb81ea-f13a-40b6-99aa-81dbdcd033d1"
+    },
+    {
+      "claim_id": "6aabf6b6-5383-4074-a6c4-9cdb7919383e",
+      "result_id": "defb81ea-f13a-40b6-99aa-81dbdcd033d1"
+    },
+    {
+      "claim_id": "0cd4298a-0ed8-4b8b-9511-4fe576f29e6d",
+      "result_id": "defb81ea-f13a-40b6-99aa-81dbdcd033d1"
+    },
+    {
+      "claim_id": "bfc78a5e-f9bc-4430-b20e-59582bd09e7f",
+      "result_id": "a1136810-3261-4e38-a670-1891a25443ba"
+    },
+    {
+      "claim_id": "0446bc7f-3584-471e-b30d-4d29bae3e700",
+      "result_id": "a1136810-3261-4e38-a670-1891a25443ba"
+    },
+    {
+      "claim_id": "f11a4b0d-8753-45be-80fe-5e26f895ccb9",
+      "result_id": "a1136810-3261-4e38-a670-1891a25443ba"
+    },
+    {
+      "claim_id": "7fe8f1df-473e-49fa-ac50-9f996b1b64ab",
+      "result_id": "a1136810-3261-4e38-a670-1891a25443ba"
+    },
+    {
+      "claim_id": "1f5b1465-e773-4dca-993e-e5fb61398cce",
+      "result_id": "a1136810-3261-4e38-a670-1891a25443ba"
+    },
+    {
+      "claim_id": "a865e8d7-0e01-4f68-a2a6-0456c1f3f1ad",
+      "result_id": "a1136810-3261-4e38-a670-1891a25443ba"
+    },
+    {
+      "claim_id": "7d5ddadd-35a7-49b1-9304-36b55e3289fd",
+      "result_id": "ccf040f9-a13b-4853-b264-789aff139f2f"
+    },
+    {
+      "claim_id": "61234fb3-db73-42b2-9b4a-a3b679884ae6",
+      "result_id": "ccf040f9-a13b-4853-b264-789aff139f2f"
+    },
+    {
+      "claim_id": "e222ea95-b768-4156-ba59-6c98c0134577",
+      "result_id": "ccf040f9-a13b-4853-b264-789aff139f2f"
+    },
+    {
+      "claim_id": "e7dc2d4a-780c-413f-aff9-e868f0a82f9e",
+      "result_id": "ccf040f9-a13b-4853-b264-789aff139f2f"
+    },
+    {
+      "claim_id": "7c3bccdb-d8ed-446e-9649-2363c5ffbbe9",
+      "result_id": "db6d9c6e-4798-493b-bc38-d6313e9d2283"
+    },
+    {
+      "claim_id": "ee23e637-4144-4408-8033-5c45bf5aae6a",
+      "result_id": "db6d9c6e-4798-493b-bc38-d6313e9d2283"
+    },
+    {
+      "claim_id": "bb950777-be4c-419f-8040-56bffb5089ba",
+      "result_id": "db6d9c6e-4798-493b-bc38-d6313e9d2283"
+    },
+    {
+      "claim_id": "6cb4c781-4ad6-4367-866d-1b3c8f369709",
+      "result_id": "db6d9c6e-4798-493b-bc38-d6313e9d2283"
+    },
+    {
+      "claim_id": "b833fc4d-d52a-4e96-9fab-c7072426b3c3",
+      "result_id": "db6d9c6e-4798-493b-bc38-d6313e9d2283"
+    },
+    {
+      "claim_id": "b62a34de-42c0-40da-8749-0069e067568e",
+      "result_id": "2bfc694c-85b8-4121-b4bb-c86879d27df1"
+    },
+    {
+      "claim_id": "75979177-66ce-4b02-b2de-ee3f9cfc7e60",
+      "result_id": "2bfc694c-85b8-4121-b4bb-c86879d27df1"
+    },
+    {
+      "claim_id": "96534cb8-2647-42e3-a012-ea0ec1c621b4",
+      "result_id": "1a6e1881-840c-46b7-8dfe-9009dcfb2c27"
+    }
+  ],
+  "comparisons": []
+}

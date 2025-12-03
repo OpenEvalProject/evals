@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C31",
+      "C39",
+      "C41",
+      "C42"
+    ],
+    "result": "Arginine residues are the primary rate-limiting factor in pre-protein transport through the Sec machinery. Removing all eight arginines from pSpyXLX reduces transport time threefold (from 0.64 to 0.26 min), while adding eight more arginines slows transport over fourfold (to 3.1 min). Transport is slower when more bulky, hydrophobic, and positively charged residues are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28, C31, C39, C41, and C42 provide converging experimental evidence from the NanoLuc transport assay showing that arginine is by far the slowest amino acid to transport. The quantitative data on arginine substitution variants (C41, C42) strongly support this conclusion, with statistically significant effects shown in the supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C30",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C63"
+    ],
+    "result": "The differential effect of arginine versus lysine on transport is explained by lysine deprotonation. Steered molecular dynamics shows that charged lysine and arginine require equally high force to transport, but uncharged lysine transports as easily as neutral residues. The energy barrier difference between charged and uncharged lysine is ~10 kJ/mol. Lysine (pKa ~10) can be deprotonated in hydrophobic environments, while arginine's guanidinium group (pKa ~13.8) cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C30, and C54-C59 provide complementary experimental and computational evidence supporting lysine deprotonation as the mechanism. The steered MD simulations (C54-C56) directly demonstrate that charge, not residue identity, determines transport difficulty. The potential of mean force calculations (C57) quantify this effect, and the pKa values from literature (C58-C59) provide the chemical basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "In silico pKa analysis reveals a region of pKa perturbation at the SecYEG-SecA interface where lysine deprotonation could occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by computational pKa scanning data shown in Figure 4c. The methodology involves threading pre-protein through the SecA-SecYEG complex, MD relaxation, and systematic pKa calculation using propKa31, which is a well-established approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C60"
+    ],
+    "result": "The PMF can aid transport through a 'proton ratchet' mechanism, where the \u0394pH component assists lysine deprotonation at the cytosolic entrance and rapid reprotonation in the periplasm, preventing backsliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6 and C60 propose a mechanistic model based on the lysine deprotonation findings, but this specific ratchet mechanism is largely inferential and speculative. While the pH gradient would thermodynamically favor this process, direct experimental evidence for the ratchet mechanism itself is not provided. The model is plausible but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Removing all arginine residues from the pre-protein reveals a large number of kinetic transport steps (>20) that are otherwise too fast to measure. In most variants, the number of steps falls between 4-7, but for pSpyXLX(R\u2192Q), no discrete number of steps can be determined as RMSD continues to decrease with increasing step number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C50, C51, and C52 are supported by kinetic modeling analysis shown in Figure 3. The Berkeley Madonna modeling approach is well-described and the finding that arginine removal eliminates slow rate-limiting steps, revealing many fast steps, is consistent with the diffusion-based transport model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C84"
+    ],
+    "result": "Variable step size in transport is characteristic of diffusion-based mechanisms and distinguishes them from power-stroke mechanisms where step size would be invariant and determined by SecA geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, and C84 present a logical argument supported by the experimental observation of variable step numbers (C50-C52). The distinction between diffusion-based and power-stroke mechanisms based on step size variability is theoretically sound and supported by citations to alternative models (Catipovic et al., 2019; Catipovic and Rapoport, 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Secreted proteins show evolutionary selection for lysine over arginine. In E. coli and S. meliloti, Sec substrates have higher Lys/Arg ratios than cytosolic proteins, while Tat substrates are intermediate. In alkalophilic B. halodurans with inverted \u0394pH, this preference is reversed, while neutral-growing B. subtilis shows the expected lysine preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 present bioinformatic analysis across multiple bacterial species shown in Figure 5. The correlation between \u0394pH direction and Lys/Arg preference (C68-C69) provides strong support that this is a transport-pathway-specific effect. Statistical significance is documented in Supplementary file 3c.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "PMF accelerates transport approximately twofold in vitro. Valinomycin (eliminating \u0394\u03c8) slows transport, while nigericin (eliminating \u0394pH, increasing \u0394\u03c8) speeds transport and increases amplitude. The \u0394\u03c8 produced by ATP synthase in IMVs is comparable to intact E. coli cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by experimental data in Figure 6b-c using ionophores to dissect PMF components. The measurements are internally consistent and use established methods for PMF determination. However, C79 notes that absolute \u0394\u03c8 values are lower than literature values, suggesting some limitations in the in vitro system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The stimulatory effect of PMF on transport is pH-dependent, with strong effects at pH 8.0 that vanish at pH 6.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C81 are supported by systematic pH-dependent transport experiments shown in Figure 6d-e. The data demonstrate that PMF effects are abolished at low pH, consistent with a mechanism involving pH-dependent lysine deprotonation. The experiments are well-controlled with both BL21 (+PMF) and HB1 (-PMF) IMVs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C32"
+    ],
+    "result": "Unexpectedly, charged residues show reduced PMF effect relative to native sequence, and the only amino acid property correlating with PMF effect magnitude is hydrophobicity. Charged residues appear unaffected by the electrical component of PMF (\u0394\u03c8) despite theoretical expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82, C83, and C32 present surprising results that contradict theoretical expectations. While the experimental data in Figure 7 are clearly presented, the authors acknowledge large error bars and note that the correlation with hydrophobicity is weak (r=0.271, or 0.681 excluding charge variants). The authors themselves suggest the PMF effect may be confounded by other factors in the IMV system, making these results uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Kinetic modeling reveals that transport of pSpyLXX proceeds in 6 steps with kstep = 5.30 min\u207b\u00b9, while pSpyXLX requires 10 steps with kstep = 4.42 min\u207b\u00b9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C49 are supported by Berkeley Madonna kinetic modeling shown in Figure 3a. The modeling approach is well-described in Materials and Methods and builds on previously validated methods (Allen et al., 2020). The fits show clear minima in RMSD at the reported step numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The difference in transport time between pSpyLXX and pSpyXLX corresponds exactly to the time required to transport the central mSpy, and these lags match perfectly with the pSpy4x series, validating lag as a measure of transport time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C38 provide validation of the experimental approach. The data in Figure 2 and Figure 2\u2014figure supplement 1 show good agreement between different construct designs, supporting the reliability of the lag measurement as a proxy for transport time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C47"
+    ],
+    "result": "F\u2192W substitutions slow transport, suggesting residue size is more important than hydrophobicity in determining transport rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43 and C47 attempt to distinguish size from hydrophobicity effects, but the authors acknowledge that tryptophan is more hydrophobic than phenylalanine on some scales (Wimley-White), making this interpretation uncertain. The conclusion is reasonable but not definitive given the confounding variables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C44"
+    ],
+    "result": "Removing sufficient helical content from pSpyXLX slows transport, supporting the notion that helix formation is part of the transport mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C44 are supported by experimental data in Figure 2i and prior work (Corey et al., 2019). The helicity variants show measurable effects on transport rate, though the effects are modest compared to charge and size effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Removing hydrophobic patches has marginal if any effect on transport rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by experimental data in Figure 2j showing minimal effects of hydrophobic patch removal on transport kinetics. This finding helps distinguish hydrophobicity from size effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Negative charges have limited effect on transport time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by experimental data in Figure 2f showing that Q\u2192E and E\u2192Q substitutions have minimal effects on transport lag compared to arginine substitutions. This contrasts with the strong effects of positive charges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Bulkier residues increase secretion time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by experimental data showing that size variants (L\u2192A, A\u2192L, F\u2192W) affect transport time in Figure 2d,h. However, the effect is smaller than that of arginine and is confounded with hydrophobicity in some cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Transport lag is identical for PLs and HB1 IMVs (lacking ATP synthase), but IMV transport reaches completion faster, suggesting enhanced processivity due to auxiliary Sec components or membrane environment differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C72 are supported by experimental comparison in Figure 6a. However, C73 is speculative about the cause. The observation is clear but the mechanistic interpretation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The absolute measured value of \u0394\u03c8 in IMVs is much lower than generally reported for E. coli (~150 mV), and protein transport may consume PMF in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by PMF measurements in Figure 6c compared to literature values (McMillan et al., 2007). This observation is important for interpreting the PMF effects and suggests limitations of the in vitro system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on Sec machinery mechanism and prior work establishing the diffusion-based transport model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 provide established background knowledge and prior work from the authors and others. These are well-supported by citations and provide context for the current study. C25-C27 describe the authors' previous diffusion-based model that is being tested in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Altering pSpy affects its solubility and potentially other properties such as SecA affinity and initiation/termination rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 describes an experimental observation that motivated the pSpyXLX construct design. This is a methodological consideration that led to the experimental approach used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "SecYEG is strongly selective against positively charged ions or residues, but more permeable to anions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 cites prior work (Dalal and Duong, 2009; Nouwen et al., 2009; Schiebel and Wickner, 1992) establishing this property of SecYEG. This provides important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Aside from their pKas, lysines and arginines are very similar in physical and chemical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by the amino acid property analysis shown in Figure 2\u2014figure supplement 2a. This observation strengthens the argument that pKa differences explain the differential transport effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Ratcheting allows other factors to contribute to pre-protein transport, including PMF, pre-protein folding, and auxiliary Sec components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is a mechanistic interpretation supported by the current findings and citations to prior work on SecDF (Tsukazaki, 2018), periplasmic chaperones (F\u00fcrst et al., 2018; Knyazev et al., 2018), and folding effects (Corey et al., 2019). This represents a synthesis of multiple lines of evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The requirement for SecA to facilitate lysine transport may have implications for membrane protein topogenesis, potentially explaining the 'positive-inside rule' through slower kinetics of transporting positively charged loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86 and C87 are explicitly speculative, as indicated by language like \"might plausibly\" and \"may in part reflect.\" While the speculation is reasonable given the findings, it requires experimental validation in the context of membrane protein insertion.",
+    "result_type": "MINOR"
+  }
+]

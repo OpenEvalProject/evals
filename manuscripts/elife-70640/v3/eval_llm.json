@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The COVID-19 outbreak in Lombardy caused over 30,000 deaths by March 2021, and the Spedali Civili di Brescia hospital experienced a surge of severely ill patients that exceeded available resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 provide contextual background about the severity of the COVID-19 outbreak in the region. C1 presents mortality statistics, while C2 describes the hospital's resource constraints, supported by a citation. These claims establish the clinical context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "A chest X-ray severity score (Brescia X-ray score) was developed to grade pulmonary involvement and was able to predict in-hospital mortality in 302 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 describe prior work on the Brescia X-ray score. C3 is supported by multiple citations documenting the score's development, and C4 reports its predictive capability in a specific cohort. These claims establish the foundation for incorporating the X-ray score into the BS-EWM model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study enrolled 2782 COVID-19 patients hospitalized between March and December 2020, divided into two temporal waves with distinct demographic and clinical characteristics, including different mortality rates (20.09% in first wave vs. 12.13% in second wave).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C20, C57-C59 provide comprehensive descriptive statistics for the study cohort. The data are internally consistent, with appropriate statistical comparisons (p-values reported) between groups. The demographic and clinical characteristics are clearly documented with means, standard deviations, and statistical significance testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C82"
+    ],
+    "result": "The Brescia X-ray score showed significant correlations with multiple blood biomarkers, with positive correlations with inflammatory markers (NLR, CRP, LDH, ferritin, D-dimer) and negative correlations with lymphocyte %, monocyte %, and basophil %. Most covariates were strongly correlated (multicollinearity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, and C82 describe correlation analyses supported by Figure 2. The correlation patterns are biologically plausible and consistent with COVID-19 pathophysiology. The identification of multicollinearity appropriately justifies the choice of random forests over linear methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C80",
+      "C83"
+    ],
+    "result": "The BS-EWM was developed using random forests to handle multicollinearity and non-linear relationships, with 70% of first-wave patients used for training and 30% for validation. SMOTE was applied to address class imbalance, creating a rebalanced dataset with equal numbers of living and deceased patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C71, C80, C83 describe the methodological approach with appropriate justifications. The use of random forests is well-justified given multicollinearity and non-linearity. The SMOTE procedure is appropriately applied to address class imbalance, though this approach has limitations (synthetic data generation). The methodology is supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The SMOTE procedure improved accuracy, specificity, and sensitivity of the random forest model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by reference to Supplementary file 1c comparing performance metrics with and without SMOTE. However, the specific performance improvements are not quantified in the main text, limiting full evaluation of the magnitude of improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Age was the most powerful predictor in the BS-EWM model, masking other covariates. Among blood analytes, the strongest predictors were LDH, D-dimer, NLR, CRP, lymphocyte %, ferritin, and monocyte %. Nine of 17 analytes and the Brescia X-ray score had relative variable importance >60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C24-C26 describe variable importance findings supported by Figures 3 and 4. The identification of age as the dominant predictor is consistent with COVID-19 epidemiology. The partial dependence plots (C26) show appropriate non-monotonic relationships with plateaus at high values, which is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C27",
+      "C28"
+    ],
+    "result": "The BS-EWM achieved AUC values of 0.98 (training), 0.83 (validation), and 0.78 (testing), with sensitivity of 0.93 (training), 0.82 (validation), and 0.73 (testing). Random forest outperformed GBM and logistic regression in terms of AUC, sensitivity, and specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C27, C28 report model performance metrics supported by Table 2 and Figure 5. However, the very high training AUC (0.98) compared to validation (0.83) and testing (0.78) suggests potential overfitting. The substantial drop in performance on the second wave (testing set) raises concerns about temporal generalizability. The comparison with other models is appropriate, but the logistic regression shows poor testing performance (AUC 0.52), suggesting potential issues with model specification or the SMOTE approach for that method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C81"
+    ],
+    "result": "The BS-EWM demonstrated sensitivity >70% in predicting high risk in second-wave patients, despite 40% lower in-hospital mortality compared to the first wave.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C81 describe the model's performance on the second wave. The 40% reduction in mortality (from 20.09% to 12.13%) is accurately calculated. The maintained sensitivity >70% (specifically 0.73 per C28) demonstrates some temporal robustness, though the performance decline is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Univariate models based on single biomarkers showed good training performance but poor out-of-sample performance, while the multivariate BS-EWM model provided better results by considering interactions among variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 are supported by Supplementary file 1d comparing univariate and multivariate models. This comparison appropriately demonstrates the value of the multivariate approach and justifies the complexity of the BS-EWM model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The key biomarkers in the model (LDH, D-dimer, NLR, lymphocyte counts) reflect established COVID-19 pathophysiology including systemic tissue damage, coagulopathy, cytokine storm, and lymphopenia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C43 provide biological interpretation of the model's key predictors, supported by appropriate citations. The mechanistic explanations are consistent with established COVID-19 pathophysiology and provide biological plausibility for the model's predictive features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The biomarker thresholds identified in the BS-EWM align with values proposed by other authors. The chest X-ray score was significantly higher in patients who died and may provide stability to the model when blood data are missing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by citations (Webb et al., 2020; Caricchio et al., 2021) and statistical analysis (Table 1). The external validation of thresholds strengthens confidence in the model. The role of the X-ray score in handling missing data is appropriately noted, though its lower variable importance suggests limited independent predictive value.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C74",
+      "C75"
+    ],
+    "result": "The BS-EWM is implemented as a web-based calculator integrated with the hospital's Laboratory Information System, providing rapid risk assessment using readily available, inexpensive biomarkers obtainable within one hour, with a risk threshold of 0.5 for clinical decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C47-C55, C74-C75 describe the practical implementation and clinical utility of the model. The claims about rapid turnaround time are supported by citation (Garrafa et al., 2020a). The web-based calculator and LIS integration demonstrate practical deployment. However, the clinical validation of the 0.5 threshold for decision-making is not explicitly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C56"
+    ],
+    "result": "The study has limitations including geographic restriction to one Italian region, potential equipment-dependent variation in biomarker values, and inapplicability to asymptomatic or pediatric populations. Regular model updates are needed given the evolving nature of COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C56 appropriately acknowledge study limitations. The geographic limitation is significant for generalizability. The equipment variation concern is supported by citations (Martens et al., 2021; Lippi et al., 2020). The exclusion of asymptomatic and pediatric patients is appropriate given the study design. The recommendation for regular updates is prudent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C76",
+      "C77"
+    ],
+    "result": "The model was validated on 676 second-wave patients, with predictions interpreted as in-hospital death probability. The study adhered to TRIPOD guidelines and received ethics approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C73, C76, C77 describe validation procedures and study governance. The temporal validation on the second wave is appropriate. Adherence to TRIPOD guidelines (Collins et al., 2015) and ethics approval demonstrate methodological rigor and appropriate oversight.",
+    "result_type": "MINOR"
+  }
+]

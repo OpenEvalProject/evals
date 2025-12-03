@@ -1,0 +1,906 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "CRISPRi enables programmable, reversible, and titratable repression of gene expression (knockdown) in mammalian cells.",
+    "claim_type": "EXPLICIT",
+    "source": "CRISPR interference (CRISPRi) enables programmable, reversible, and titratable repression of gene expression (knockdown) in mammalian cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a foundational claim about CRISPRi capabilities, supported by established scientific knowledge and citations in the introduction.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The dual-sgRNA library design produces significantly stronger growth phenotypes for essential genes compared to single-sgRNA libraries.",
+    "claim_type": "EXPLICIT",
+    "source": "Yet, for essential genes previously identified by the Cancer Dependency Map (DepMap) (Behan et al., 2019; Tsherniak et al., 2017), the dual-sgRNA library produced significantly stronger growth phenotypes (mean 29% decrease in the growth rate [\u03b3]) than the single-sgRNA library (n=2005 genes; single-sgRNA mean \u03b3 = \u22120.20; dual-sgRNA mean \u03b3 = \u22120.26; Mann-Whitney p-value = 6 \u2219 10\u221215; Figure 1C and D)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data from growth screens comparing single- and dual-sgRNA libraries, with statistical analysis showing significant differences.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Lentiviral reverse transcriptase can undergo template switching between two copies of the lentiviral genome, producing recombined elements.",
+    "claim_type": "EXPLICIT",
+    "source": "A well-recognized challenge for the use of dual-sgRNA libraries is that the lentiviral reverse transcriptase can undergo template switching between the two copies of the lentiviral genome packaged into each capsid (Adamson et al., 2018; Adamson et al., 2016; Feldman et al., 2018; Hill et al., 2018; Horlbeck et al., 2018; Xie et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to prior work documenting this phenomenon.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Recombination occurred with a frequency of 29% in K562 cells, 26% in RPE1 cells, and 24% in Jurkat cells.",
+    "claim_type": "EXPLICIT",
+    "source": "These two copies generally bear two different sgRNA pairs in a pooled dual-sgRNA library, such that template switching can produce a recombined element with sgRNAs targeting different genes. Our sequencing strategy allowed us to directly identify such recombined elements (Figure 1B), which occurred with a frequency of 29% in K562 cells, 26% in RPE1 cells, and 24% in Jurkat cells, consistent with prior reports (Horlbeck et al., 2018; Replogle et al., 2020).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by direct experimental measurements from sequencing data across multiple cell types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Recombination is stochastic rather than biased to specific sgRNA sequences.",
+    "claim_type": "EXPLICIT",
+    "source": "We expected that recombination would be stochastic rather than biased to specific sgRNA sequences, because the length of the invariable sequence between sgRNAs (400 bp) far exceeds the length of sgRNA targeting regions (20 bp).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on logical inference from the structural properties of the sgRNA cassette design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Recombination rates of non-targeting control elements were only weakly correlated across replicate screens (r=0.30).",
+    "claim_type": "EXPLICIT",
+    "source": "To further distinguish between these possibilities, we compared the recombination rates of elements across replicate screens in K562 cells and found that recombination rates of non-targeting control elements were only weakly correlated (r=0.30, Figure 1\u2014figure supplement 1E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data comparing recombination rates across biological replicates.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The dual-sgRNA library significantly outperformed the Dolcetto library in on-target knockdown.",
+    "claim_type": "EXPLICIT",
+    "source": "Our dual-sgRNA library significantly outperformed the Dolcetto library, as quantified by the average knockdown (dual-sgRNA median knockdown 82%; Dolcetto median knockdown 65%; Mann-Whitney p-value = 2.4 \u2219 10\u22127) as well as the strongest knockdown per gene (dual-sgRNA median knockdown 90%; Dolcetto median knockdown 87%; Mann-Whitney p-value = 2 \u2219 10\u22124; Figure 1F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by Perturb-seq experimental data comparing knockdown efficacy between libraries with statistical significance testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The top-ranked element of the dual-sgRNA library (guides 1+2) alone produced comparable knockdown to the best of all three Dolcetto sgRNAs.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, the top-ranked element of our dual-sgRNA library (guides 1+2) alone produced comparable knockdown to the best of all three Dolcetto sgRNAs (dual-sgRNA element 1+2 median knockdown 86%; best Dolcetto sgRNA median knockdown 87%; Mann-Whitney p-value = 0.43) (Figure 1G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by Perturb-seq experimental data with statistical testing showing no significant difference.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Cells expressing SID-dCas9-Kox1 had a strong growth defect (~6% per day).",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, cells expressing SID-dCas9-Kox1 had a strong growth defect (~6% per day), and cells expressing dCas9-Kox1-MeCP2 had a mild growth defect (~1% per day, Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by competitive growth assay data measuring proliferation rates over 19 days.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Cells expressing dCas9-Kox1-MeCP2 had a mild growth defect (~1% per day).",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, cells expressing SID-dCas9-Kox1 had a strong growth defect (~6% per day), and cells expressing dCas9-Kox1-MeCP2 had a mild growth defect (~1% per day, Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by competitive growth assay data measuring proliferation rates over 19 days.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Cells expressing dCas9 only, dCas9-Kox1, or Zim3-dCas9 proliferated at the same rate as cells expressing GFP only or non-transduced control cells over 19 days.",
+    "claim_type": "EXPLICIT",
+    "source": "Over 19 days, cells expressing dCas9 only, dCas9-Kox1, or Zim3-dCas9 proliferated at the same rate as cells expressing GFP only or non-transduced control cells, suggesting that expression of these effectors is not toxic over this time span (Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by competitive growth assay data over 19 days.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Cells expressing SID-dCas9-Kox1 had 4282 genes differentially expressed compared to control cells expressing GFP only at p<0.05.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with the growth assay, cells expressing SID-dCas9-Kox1 had globally perturbed transcription, with 4282 genes differentially expressed compared to control cells expressing GFP only at p<0.05 (Figure 2E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by RNA-seq data with differential expression analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "53 genes were differentially expressed in cells with dCas9-Kox1-MeCP2.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, 53 genes were differentially expressed in cells with dCas9-Kox1-MeCP2, suggesting that constitutive expression of this effector also leads to minor non-specific effects on transcription (Figure 2E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by RNA-seq data with differential expression analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "No more than three genes were detected to be differentially expressed in cells expressing dCas9, dCas9-Kox1, or Zim3-dCas9.",
+    "claim_type": "EXPLICIT",
+    "source": "No more than three genes were detected to be differentially expressed in cells expressing any of the other effectors, suggesting that these effectors do not non-specifically perturb transcription (Figure 2E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by RNA-seq data with differential expression analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "For all sgRNAs tested, sgRNA-expressing cells depleted at the fastest rate with Zim3-dCas9.",
+    "claim_type": "EXPLICIT",
+    "source": "For all sgRNAs tested, sgRNA-expressing cells depleted at the fastest rate with Zim3-dCas9 and at the second-fastest rate with either dCas9-Kox1 or dCas9-Kox1-MeCP2 (Figure 3B, Figure 3\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by competitive growth assay data measuring depletion of cells expressing essential gene-targeting sgRNAs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "With strong sgRNAs, Zim3-dCas9, dCas9-Kox1, and dCas9-Kox1-MeCP2 all mediated strong depletion of each cell surface protein (>96.8% median depletion for all effectors and sgRNAs).",
+    "claim_type": "EXPLICIT",
+    "source": "With strong sgRNAs, Zim3-dCas9, dCas9-Kox1, and dCas9-Kox1-MeCP2 all mediated strong depletion of each cell surface protein (>96.8% median depletion for all effectors and sgRNAs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by flow cytometry data measuring cell surface protein levels.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "With weak sgRNAs, dCas9-Kox1-MeCP2 mediated the strongest knockdown closely followed by Zim3-dCas9, whereas dCas9-Kox1 mediated weaker knockdown.",
+    "claim_type": "EXPLICIT",
+    "source": "With weak sgRNAs, dCas9-Kox1-MeCP2 mediated the strongest knockdown closely followed by Zim3-dCas9, whereas dCas9-Kox1 mediated weaker knockdown (Figure 3C and D, Figure 3\u2014figure supplement 1B\u2013D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by flow cytometry data measuring cell surface protein levels with weak sgRNAs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "For Zim3-dCas9, only ~5% of cells did not achieve detectable knockdown despite using a strong sgRNA.",
+    "claim_type": "EXPLICIT",
+    "source": "For Zim3-dCas9, knockdown was largely homogeneous, with only ~5% of cells without detectable knockdown (Figure 3D and E, Figure 3\u2014figure supplement 1B\u2013D), perhaps due to the presence of some senescent cells in the population in which lack of cell division limits protein dilution.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by flow cytometry data analyzing single-cell distributions of knockdown.",
+    "evidence_type": [
+      "DATA",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "For dCas9-Kox1-MeCP2, 15\u201320% of cells did not achieve knockdown.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, for dCas9-Kox1-MeCP2, 15\u201320% of cells did not achieve knockdown (Figure 3D and E, Figure 3\u2014figure supplement 1B\u2013D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by flow cytometry data analyzing single-cell distributions of knockdown.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Cells expressing Zim3-dCas9 had stronger knockdown than previously reported cell lines expressing dCas9-Kox1 in both RPE1 and Jurkat cells.",
+    "claim_type": "EXPLICIT",
+    "source": "In both RPE1 (retinal pigment epithelium) and Jurkat (acute T-cell leukemia) cells, cells expressing Zim3-dCas9 had stronger knockdown than previously reported cell lines expressing dCas9-Kox1 (Figure 4A; Horlbeck et al., 2018; Jost et al., 2017).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by flow cytometry data comparing knockdown efficacy between effectors, with reference to prior published data.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Zim3-dCas9 conferred strong and homogeneous knockdown in HepG2, HT29, and HuTu-80 cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Zim3-dCas9 also conferred strong and homogeneous knockdown in HepG2 (hepatocellular carcinoma), HT29 (colorectal adenocarcinoma), and HuTu-80 (duodenal adenocarcinoma) cells (Figure 4B, Figure 4\u2014figure supplement 1)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by flow cytometry data measuring knockdown in multiple cell types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Zim3-dCas9 expression had no negative impacts on cell proliferation in HepG2, HT29, and HuTu-80 cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Zim3-dCas9 also conferred strong and homogeneous knockdown in HepG2 (hepatocellular carcinoma), HT29 (colorectal adenocarcinoma), and HuTu-80 (duodenal adenocarcinoma) cells (Figure 4B, Figure 4\u2014figure supplement 1) without negative impacts on cell proliferation (Figure 4\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by growth assay data in multiple cell types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "K562 cells stably transduced with Zim3-dCas9 (Hygro) and selected with hygromycin for 4 weeks had strong and homogeneous knockdown that was indistinguishable from knockdown in a cell line generated by FACS.",
+    "claim_type": "EXPLICIT",
+    "source": "K562 cells stably transduced with Zim3-dCas9 (Hygro) and selected with hygromycin for 4 weeks had strong and homogeneous knockdown that was indistinguishable from knockdown in a cell line generated by FACS (Figure 4C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by flow cytometry data comparing knockdown between selection methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "CRISPRi does not rely on introduction of double-stranded DNA breaks and therefore does not cause genomic rearrangements.",
+    "claim_type": "EXPLICIT",
+    "source": "(i) Unlike Cas9, CRISPRi does not rely on introduction of double-stranded DNA breaks and therefore does not cause genomic rearrangements (Kosicki et al., 2018) and DNA damage-associated toxicity (Meyers et al., 2017), which may be especially limiting in primary and stem cells (Bowden et al., 2020; Haapaniemi et al., 2018; Ihry et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work documenting these properties of CRISPRi versus Cas9.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "CRISPRi tends to confer more homogeneous loss of gene function compared to Cas9, which often generates subpopulations of cells bearing active in-frame indels.",
+    "claim_type": "EXPLICIT",
+    "source": "(ii) CRISPRi tends to confer more homogeneous loss of gene function compared to Cas9, which often generates subpopulations of cells bearing active in-frame indels (Smits et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work comparing CRISPRi and Cas9 outcomes.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "CRISPRi is reversible and affords temporal control over gene expression levels.",
+    "claim_type": "EXPLICIT",
+    "source": "(iii) CRISPRi is reversible and thus affords temporal control over gene expression levels (Gilbert et al., 2014; Mandegar et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work demonstrating reversibility of CRISPRi.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "CRISPRi enables titration of gene expression, which allows for partial depletion of genes essential for cell growth and interrogation of the resulting phenotypes.",
+    "claim_type": "EXPLICIT",
+    "source": "(iv) CRISPRi enables titration of gene expression, which for example allows for partial depletion of genes essential for cell growth and interrogation of the resulting phenotypes (Bosch et al., 2021; Hawkins et al., 2020; Jost et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work demonstrating titratable knockdown with CRISPRi.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "CRISPRi enables loss-of-function studies for non-coding RNAs, which are difficult to inactivate through CRISPR cutting.",
+    "claim_type": "EXPLICIT",
+    "source": "(vi) CRISPRi enables loss-of-function studies for non-coding RNAs, which are difficult to inactivate or repress through CRISPR cutting and the introduction of indels as they are insensitive to frame-shifting mutations (Liu et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work demonstrating CRISPRi application to non-coding RNAs.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "CRISPRi screens have been deployed to identify essential protein-coding and non-coding genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Such screens have been deployed to identify essential protein-coding and non-coding genes (Gilbert et al., 2014; Haswell et al., 2021; Horlbeck et al., 2016a; Liu et al., 2017; Raffeiner et al., 2020)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to prior CRISPRi screening studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "CRISPRi screens have been used to map the targets of regulatory elements.",
+    "claim_type": "EXPLICIT",
+    "source": "to map the targets of regulatory elements (Fulco et al., 2019; Fulco et al., 2016; Gasperini et al., 2019; Kearns et al., 2015; Klann et al., 2017; Thakore et al., 2015)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to prior CRISPRi screening studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "CRISPRi screens have been used to identify regulators of cellular signaling and metabolism.",
+    "claim_type": "EXPLICIT",
+    "source": "to identify regulators of cellular signaling and metabolism (Coukos et al., 2021; Liang et al., 2020; Luteijn et al., 2019; Semesta et al., 2020)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to prior CRISPRi screening studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "CRISPRi screens have been used to uncover stress response pathways in stem cell-derived neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "to uncover stress response pathways in stem cell-derived neurons (Tian et al., 2021; Tian et al., 2019)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior CRISPRi screening studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "CRISPRi screens have been used to uncover regulators of disease-associated states in microglia and astrocytes.",
+    "claim_type": "EXPLICIT",
+    "source": "to uncover regulators of disease-associated states in microglia and astrocytes (Dr\u00e4ger et al., 2022; Leng et al., 2022)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior CRISPRi screening studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "CRISPRi screens have been used to decode regulators of cytokine production in primary human T-cells.",
+    "claim_type": "EXPLICIT",
+    "source": "to decode regulators of cytokine production in primary human T-cells (Schmidt et al., 2022)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior CRISPRi screening study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "CRISPRi screens have been used to define mechanisms of action of bioactive small molecules.",
+    "claim_type": "EXPLICIT",
+    "source": "to define mechanisms of action of bioactive small molecules (Jost et al., 2017; Morgens et al., 2019; le Sage et al., 2017)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to prior CRISPRi screening studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "CRISPRi screens have been used to identify synthetic-lethal genetic interactions in cancer cells.",
+    "claim_type": "EXPLICIT",
+    "source": "to identify synthetic-lethal genetic interactions in cancer cells (Du et al., 2017; Horlbeck et al., 2018)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior CRISPRi screening studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "CRISPRi screens have been used to identify genetic determinants of complex transcriptional responses using RNA-seq readouts (Perturb-seq).",
+    "claim_type": "EXPLICIT",
+    "source": "and to identify genetic determinants of complex transcriptional responses using RNA-seq readouts (Perturb-seq) (Adamson et al., 2016; Replogle et al., 2022; Replogle et al., 2020; Tian et al., 2021; Tian et al., 2019), among others.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to prior CRISPRi Perturb-seq studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "CRISPRi screening is constrained by the large size of sgRNA libraries.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite these successes, two technical factors have limited wider adoption of CRISPRi. First, CRISPRi screening is constrained by the large size of sgRNA libraries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a limitation of current CRISPRi approaches based on practical considerations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Commonly used CRISPRi libraries target each gene with three or more sgRNAs to decrease false-negative results in screens.",
+    "claim_type": "EXPLICIT",
+    "source": "Nonetheless, commonly used libraries (e.g., Dolcetto, CRISPRi v2) target each gene with three or more sgRNAs to decrease false-negative results in screens.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the design of existing CRISPRi libraries based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "There is no clear consensus guiding the use of different reported CRISPRi effector proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, there is no clear consensus guiding the use of the different reported CRISPRi effector proteins, complicating the generation of CRISPRi cell models (Alerasool et al., 2020; Carleton et al., 2017; Gilbert et al., 2014; Yeo et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the current state of the field supported by citations to multiple different effector designs.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The growth phenotypes produced by the single- and dual-sgRNA libraries were well correlated with previously published CRISPRi growth screens using five sgRNAs per gene.",
+    "claim_type": "EXPLICIT",
+    "source": "The growth phenotypes produced by the single- and dual-sgRNA libraries were well correlated with previously published CRISPRi growth screens using five sgRNAs per gene (single sgRNA r=0.82; dual sgRNA r=0.83; Figure 1\u2014figure supplement 1A\u2013C)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by experimental data comparing growth phenotypes across different library designs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Both single- and dual-sgRNA libraries produced near-perfect recall of essential genes (AUC > 0.98).",
+    "claim_type": "EXPLICIT",
+    "source": "and produced near-perfect recall of essential genes (Figure 1\u2014figure supplement 1D) (AUC > 0.98 for both single- and dual-sgRNA libraries).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by ROC curve analysis of screen data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Targeting individual genes with dual-sgRNA constructs substantially improved CRISPRi-mediated gene knockdown.",
+    "claim_type": "EXPLICIT",
+    "source": "In recent work, we found that targeting individual genes with dual-sgRNA constructs substantially improved CRISPRi-mediated gene knockdown (Replogle et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work by the authors.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "In mammalian cells, CRISPRi requires an effector protein of catalytically dead Cas9 (dCas9) fused to one or more transcription repressor domains and a single guide RNA (sgRNA).",
+    "claim_type": "EXPLICIT",
+    "source": "In mammalian cells, CRISPRi requires two components: (i) an effector protein of catalytically dead Cas9 (dCas9) fused to one or more transcription repressor domains, which recruits endogenous epigenetic modulators to the genome, and (ii) a single guide RNA (sgRNA), which directs the effector protein to target DNA (Gilbert et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a foundational description of CRISPRi mechanism supported by citation to the original work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "When the sgRNA is targeted to a gene promoter, CRISPRi leads to repressive epigenome editing and knockdown of the gene.",
+    "claim_type": "EXPLICIT",
+    "source": "When the sgRNA is targeted to a gene promoter, CRISPRi leads to repressive epigenome editing and knockdown of the gene (Gilbert et al., 2014; Horlbeck et al., 2016a, Horlbeck et al., 2016b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mechanism of CRISPRi action supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The KRAB domain from KOX1 (ZNF10) was used in the original conception of CRISPRi for mammalian cells.",
+    "claim_type": "EXPLICIT",
+    "source": "(1) the KRAB domain from KOX1 (ZNF10), which was used in the original conception of CRISPRi for mammalian cells Gilbert et al., 2013",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a historical statement about the development of CRISPRi supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The KRAB domain from ZIM3 was recently reported to mediate stronger knockdown than KRAB(KOX1).",
+    "claim_type": "EXPLICIT",
+    "source": "(2) the KRAB domain from ZIM3, which was recently reported to mediate stronger knockdown than KRAB(KOX1) Alerasool et al., 2020",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work comparing effector activities.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Repression of gene expression by KRAB domains is generally mediated through recruitment of endogenous cofactors, specifically TRIM28 for Zim3 and Kox1.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, repression of gene expression is generally mediated through recruitment of endogenous cofactors; for KRAB domains such as those from Zim3 and Kox1, this endogenous cofactor is TRIM28 (Ecco et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the mechanism of KRAB domain function supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "TRIM28 expression varies by cell type, and efficacy of Zim3 and Kox1 may be limited in cell types with low TRIM28 expression.",
+    "claim_type": "EXPLICIT",
+    "source": "TRIM28 expression varies by cell type, and efficacy of Zim3 and Kox1 may be limited in cell types with low TRIM28 expression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about potential limitations based on the mechanism of action.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Previous work on dCas9-Kox1 documented that well-designed sgRNAs have minimal off-target effects.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous work on dCas9-Kox1 had documented that well-designed sgRNAs have minimal off-target effects (Gilbert et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work characterizing off-target effects.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The main source of off-target effects of CRISPRi are at bidirectional promoters.",
+    "claim_type": "EXPLICIT",
+    "source": "The main source of off-target effects of CRISPRi are at bidirectional promoters, which likely is an inevitable consequence of the mechanism of CRISPRi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the nature of CRISPRi off-target effects based on mechanistic understanding.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The stronger activity of Zim3-based effectors may amplify off-target effects at bidirectional promoters.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that the stronger activity of Zim3-based effectors may amplify such effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about potential consequences of stronger effector activity.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "In some cell types effector expression is silenced over time, leading to loss of CRISPRi activity.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, in some cell types effector expression is silenced over time, leading to loss of CRISPRi activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a known limitation based on practical experience.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Zim3-dCas9 is the effector of choice as it appears equal or superior to other effectors in every test performed.",
+    "claim_type": "EXPLICIT",
+    "source": "In the realm of CRISPRi effectors, our work points to a clear consensus: Zim3-dCas9 is the effector of choice, as it appears equal or superior to other effectors in every test we performed and had no apparent downsides.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Zim3-dCas9 afforded median mRNA knockdown of 91.6% across 2285 genes in RPE1 cells as measured by Perturb-seq.",
+    "claim_type": "EXPLICIT",
+    "source": "We had previously measured by Perturb-seq that Zim3-dCas9 afforded median mRNA knockdown of 91.6% across 2285 genes in RPE1 cells (Replogle et al., 2022)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work by the authors measuring knockdown by Perturb-seq.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Zim3-dCas9 mediates robust knockdown across a range of cell types.",
+    "claim_type": "EXPLICIT",
+    "source": "and here we further found that Zim3-dCas9 mediates robust knockdown across a range of cell types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by experimental data presented in the manuscript across multiple cell types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The heterogeneity in MeCP2 knockdown may help explain why dCas9-Kox1-MeCP2 appears to mediate the strongest median knockdown while Zim3-dCas9 leads to faster dropout of sgRNA-expressing cells in the essential gene growth assay.",
+    "claim_type": "EXPLICIT",
+    "source": "The observed heterogeneity in MeCP2 knockdown may help explain why dCas9-Kox1-MeCP2 appears to mediate the strongest median knockdown while Zim3-dCas9 leads to faster dropout of sgRNA-expressing cells in the essential gene growth assay; in the growth assay, heterogeneity would lead to worse performance due to selection against strong knockdown.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from the experimental observations to explain the data.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The lack of knockdown in 15-20% of cells for dCas9-Kox1-MeCP2 may be explained by toxicity of the effector protein leading to selection against effector expression.",
+    "claim_type": "EXPLICIT",
+    "source": "This result may be explained by the toxicity of the effector protein leading to selection against effector expression (Figure 2C) or by larger cell-to-cell variability in expression levels of the dCas9-Kox1-MeCP2 effector or may be indicative of an intrinsic property of MeCP2 activity.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a speculative explanation for the observed heterogeneity based on prior toxicity data.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Incorporation of barcodes into the sgRNA cassette enabled marking and tracing populations of cells derived from individual lentiviral integrations in CRISPR cutting libraries.",
+    "claim_type": "EXPLICIT",
+    "source": "In previously reported CRISPR cutting libraries, incorporation of barcodes into the sgRNA cassette enabled marking and tracing populations of cells derived from individual lentiviral integrations, which allowed for detection of bottlenecking events and amplification bias and thereby improved screen sensitivity and robustness (Michlits et al., 2017; Zhu et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior work using barcoded CRISPR libraries.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Recombination primarily decreases effective library coverage, requiring cell numbers to be increased by ~20\u201330% to ensure coverage.",
+    "claim_type": "EXPLICIT",
+    "source": "We can detect and computationally remove such recombination events, such that they do not corrupt the resulting data. As a consequence, recombination primarily decreases effective library coverage, and in return cell numbers need to be increased by ~20\u201330% to ensure coverage.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the practical consequences of recombination based on the measured recombination rates.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Screens will be inherently noisier and sensitive to off-target effects with only a single element per gene.",
+    "claim_type": "EXPLICIT",
+    "source": "Second and perhaps more importantly, screens will be inherently noisier and sensitive to off-target effects with only a single element per gene, such that in standard cell lines in which cell numbers are not a concern, existing single-sgRNA libraries may remain the approach of choice.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about expected properties of single-element libraries based on statistical principles.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The compactness of the dual-sgRNA library will be transformative in cases where cell numbers are limited by the model, time, or cost.",
+    "claim_type": "EXPLICIT",
+    "source": "In cases in which cell numbers are limited by the model, time, or cost, however, the compactness of our dual-sgRNA library will be transformative.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about the potential impact of the dual-sgRNA library.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Examples of applications where the dual-sgRNA library will be beneficial include screens in primary or stem cell-derived models or in vivo as well as screens with high-content readout such as Perturb-seq.",
+    "claim_type": "EXPLICIT",
+    "source": "Examples include screens in primary or stem cell-derived models or in vivo as well as screens with high-content readout such as Perturb-seq (Bock et al., 2022; Przybyla and Gilbert, 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about potential applications supported by citations to relevant work.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The dual-sgRNA strategy may provide similar benefits for CRISPR-mediated overexpression (CRISPRa) and in mouse cells.",
+    "claim_type": "EXPLICIT",
+    "source": "The dual-sgRNA strategy may provide similar benefits for other CRISPR modalities such as CRISPR-mediated overexpression (CRISPR activation [CRISPRa]), as also described by others (Yin et al., 2022), and in mouse cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about potential extensions of the approach, with citation to related work.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "A human dual-sgRNA CRISPRa library has been cloned.",
+    "claim_type": "EXPLICIT",
+    "source": "We have cloned a human dual-sgRNA CRISPRa library (Supplementary file 9)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a reagent generated in this work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Dual-sgRNA CRISPRi and CRISPRa libraries targeting the mouse genome have been designed in silico.",
+    "claim_type": "EXPLICIT",
+    "source": "and designed in silico dual-sgRNA CRISPRi and CRISPRa libraries targeting the mouse genome (Supplementary files 10 and 11).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about computational designs generated in this work.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Few human CRISPRa and mouse screens have been reported.",
+    "claim_type": "EXPLICIT",
+    "source": "Because few human CRISPRa and mouse screens have been reported, we did not use empirical sgRNA selection for these libraries and instead ranked sgRNAs by their predicted activities (Horlbeck et al., 2016a).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the state of the field that informed the design choices.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  }
+]

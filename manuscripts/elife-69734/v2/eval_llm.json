@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "A new Cre-inducible zebrafish model of Ewing sarcoma was developed using ubiquitin promoter-driven EWSR1-FLI1 expression, resulting in 34% tumor penetrance with rapid onset (3-4 weeks post-fertilization) in wild-type fish, representing a significant improvement over previous models that required tp53 deficiency and showed only 0.6% penetrance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33-C37 provide direct experimental evidence for tumor development with specific penetrance and timing data (Figure 1C). Claims C101-C104, C108-C111 provide comparative context showing this model's advantages over previous attempts, with appropriate controls (C35) demonstrating specificity. The temporal and promoter-specific optimization is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Zebrafish tumors recapitulate key molecular and histological features of human Ewing sarcoma, including expression of canonical markers (CD99, PAS positivity), EWSR1-FLI1 target genes (nr0b1), nuclear EWSR1-FLI1 localization, cell-to-cell heterogeneity, and significant enrichment of tumor-associated proteins in human Ewing sarcoma datasets (NES=1.501, FWER=0.029) but not rhabdomyosarcoma (NES=-1.476, FWER=0.024).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C38-C48 provide direct experimental validation through IHC, qRT-PCR, and immunoblot (Figures 2A-E). Claims C49-C52 provide strong comparative validation through GSEA analysis showing specific enrichment in human Ewing sarcoma but not other sarcomas, with statistically significant p-values. The model demonstrates both molecular and histological fidelity to human disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "EWSR1-FLI1 expression in zebrafish embryos causes developmental toxicity with increased mortality and drives formation of nkx2.2a-positive outgrowths with distinct spatial distribution patterns, demonstrating early tumorigenic events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide direct experimental evidence from survival analysis (Figure 3A), imaging (Figure 3B), and molecular validation (Figures 3D-E). Claim C58 demonstrates expression of the Ewing sarcoma marker nkx2.2a in outgrowths (Figure 3F), consistent with human disease (C57). The spatial restriction of expression suggests cell-type-specific tolerance to EWSR1-FLI1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "EWSR1-FLI1-driven tumorigenesis is associated with early activation of ERK1/2 signaling, as demonstrated by pERK1/2 positivity in embryonic outgrowths and mature tumors, with significant enrichment of ERK1/2 cascade genes in tumor proteomics (NES=1.387, FWER p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 provide direct immunofluorescence evidence of pERK1/2 activation in EWSR1-FLI1-expressing cells in embryos (Figures 4A-C). Claims C65-C67 demonstrate ERK1/2 activation persists in mature tumors through GSEA, IHC, and immunoblot (Figures 4D-F). The observation of pERK1/2 in some surrounding cells (C63) suggests potential paracrine effects. Claim C64's inference is well-supported by the temporal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "EWSR1-FLI1 expression significantly alters the embryonic proteome (248 proteins at 24 hpf, 1102 at 48 hpf), with 65-73% downregulation suggesting transcriptional repression, and strong upregulation of proteins involved in ECM reorganization, proteoglycan metabolism, and heparan sulfate catabolism (including sgsh, gnsb, gnsa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 provide quantitative LC-MS/MS data (Figure 5A-B) showing extensive proteomic changes. Claim C73's inference about transcriptional repression is reasonable given the predominance of downregulated proteins. Claims C74-C78 identify specific upregulated pathways and proteins through GO analysis and direct proteomic identification (Figures 5D-E), providing mechanistic insights into tumor biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C79",
+      "C80",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Dysregulated proteoglycan metabolism, particularly heparan sulfate catabolism, is linked to ERK1/2 activation in both zebrafish and human Ewing sarcoma, with enzymes including SGSH, GNS, HS3ST4, HS3ST1, HS2ST1, and HS6ST1 upregulated in human tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 establish the link between ERK1/2 activation and proteoglycan metabolism in the zebrafish model. Claims C79-C80 provide validation in human Ewing sarcoma through analysis of GSE17674 dataset (Figure 5F). Claims C117-C120 provide additional supporting evidence and mechanistic interpretation. The convergence of zebrafish and human data strengthens the conclusion, though the mechanistic link between proteoglycan metabolism and ERK1/2 activation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Surfen, a heparan sulfate antagonist, reduces ERK1/2 phosphorylation and significantly inhibits Ewing sarcoma cell proliferation (62.7% reduction in TC32, 63.4% in EWS502 at 10\u03bcM) and colony formation (90.3% reduction in TC32, 97.8% in EWS502 at 2.5\u03bcM) in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 demonstrate ERK1/2 inhibition through immunoblot (Figures 6A-B). Claims C86-C92 provide comprehensive in vitro efficacy data through proliferation assays, morphological analysis, and clonogenic assays (Figures 6C-F) with specific quantitative effects. The dose-dependent responses and consistency across two cell lines strengthen the findings. However, the inference that effects are solely through proteoglycan blockade (C85) may be oversimplified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Surfen demonstrates in vivo efficacy in zebrafish models, inhibiting outgrowth formation in embryos, rescuing fin phenotypes, and reducing established tumor size by 30% over 15 days, with effects comparable to MEK inhibitor trametinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 demonstrate surfen's effects on embryonic outgrowths and phenotypic rescue (Figures 7A, 7-supplement 2D). Claims C96-C97 provide quantitative data on tumor reduction in established tumors (Figures 7B-C). Claim C94 provides important comparative context with trametinib. Claim C98's conclusion is well-supported by the combined embryonic and adult data. The small sample size (N=4 per group) for tumor experiments is a limitation but results show clear trends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The temporal expression of EWSR1-FLI1 is crucial for tumor development, supporting the existence of a specific cell or lineage of origin for Ewing sarcoma, and the zebrafish model emphasizes the role of proteoglycans in mediating ERK1/2 signaling and tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C126 is a reasonable inference based on the observation that different promoters and timing yielded different results (C101-C104). However, claim C127 is more speculative - while temporal sensitivity suggests a specific permissive window, it does not definitively prove a specific cell of origin exists. Claim C128 is a summary statement that is supported by the collective findings but represents an interpretation rather than direct evidence. These claims require additional lineage tracing and cell-type-specific studies for full validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C99",
+      "C100",
+      "C105",
+      "C106"
+    ],
+    "result": "Background information establishing Ewing sarcoma as a malignant SRBCT affecting children and young adults, characterized by EWSR1-FLI1 fusion (85% of cases), with poor survival for metastatic disease (fewer than 30% 5-year survival), no molecularly targeted therapies, and lack of reliable genetic animal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C16-C19, C99-C100, C105-C106 represent established clinical and epidemiological knowledge about Ewing sarcoma, supported by appropriate citations. These provide essential context for the study but do not represent novel findings. All statements are consistent with current understanding of the disease.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background on EWSR1-FLI1 molecular function as an aberrant transcription factor, ERK1/2 pathway involvement in Ewing sarcoma, proteoglycan biology, and previous modeling attempts including the authors' earlier zebrafish model with limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C32 provide established molecular and biological knowledge supported by appropriate citations, plus context from the authors' previous work (C31-C32). These claims establish the scientific rationale for the current study but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C43",
+      "C45",
+      "C57",
+      "C81",
+      "C82",
+      "C83",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C119",
+      "C121",
+      "C123",
+      "C124"
+    ],
+    "result": "Background information on established Ewing sarcoma markers (CD99, PAS, NKX2.2, NR0B1), cell heterogeneity, ERK1/2 activation in cell lines, ECM biology, heparanase upregulation, proteoglycan signaling, and surfen's properties and prior applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41, C43, C45, C57, C81-C83, C112-C116, C119, C121, C123-C124 represent established knowledge from the literature, appropriately cited, that provides context for interpreting the experimental findings. These are accurate representations of prior knowledge but do not constitute novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C122",
+      "C125"
+    ],
+    "result": "Speculative interpretations including that EWSR1-FLI1 may redirect differentiation programs (based on ectopic fin formation), that dysregulated proteoglycan catabolism can affect signal transduction, and that targeting glycosaminoglycan metabolism may represent a therapeutic opportunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 is speculation based on limited observation of ectopic fins. Claim C122 is a reasonable inference based on known proteoglycan biology but not directly tested. Claim C125 is a forward-looking statement about therapeutic potential that requires clinical validation. These represent hypotheses and interpretations rather than established results, though they are reasonable based on the data presented.",
+    "result_type": "MINOR"
+  }
+]

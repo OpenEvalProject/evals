@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors developed a cue-phrase based approach using signal and filter terms to identify disagreement in scientific citation sentences (citances). Through manual validation of over 3,000 sentences by two independent coders, they achieved 85.5% overall agreement and identified 23 queries with \u226580% validity, representing 0.31% of all citances (455,625 instances) in their dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 provide detailed validation metrics showing high inter-coder agreement (85.5%) and systematic assessment of validity across signal/filter combinations. The methodology is transparent and well-documented, with clear thresholds (80% validity cutoff) and quantitative results. The validation process appears rigorous with appropriate sample sizes (50 sentences per query combination).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The study analyzed 3,883,563 papers containing 118,012,368 citances from the Elsevier ScienceDirect corpus (2000-2015), linked to Web of Science classification covering five broad fields and 817 meso-level fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 provide clear documentation of the dataset construction, including source (Elsevier ScienceDirect), size (nearly 5 million articles initially, 3.9 million after filtering), and temporal coverage (2000-2015). The linking procedure to Web of Science for field classification is described, though some technical details about matching accuracy are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C57",
+      "C58"
+    ],
+    "result": "Disagreement rates varied significantly across fields: highest in social sciences and humanities (0.61%), followed by biomedical and health sciences (0.41%), life and earth sciences (0.29%), physical sciences and engineering (0.15%), and lowest in mathematics and computer science (0.06%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 present the primary empirical findings with specific percentages for each field, supported by Figure 2a. The ordering is consistent across claims and represents a clear hierarchy. However, the interpretation of these percentages as representing actual disagreement levels depends on the validity of the cue-phrase approach, which has acknowledged limitations (C102-C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Disagreement remained relatively stable over time (2000-2015), with an average decrease of 0.0005 percentage points per year. Field-specific trends showed decreases in physical sciences and engineering (-0.0045/year), social sciences and humanities (-0.0033/year), and mathematics and computer science (-0.0019/year), while biomedical and health sciences (+0.0017/year) and life and earth sciences (+0.0018/year) showed slight increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 provide specific temporal trends with quantitative rates of change, supported by Figure 2b. The overall stability with field-specific variations is clearly documented. However, the small magnitude of changes (0.0005-0.0045 percentage points per year) raises questions about statistical significance, which is not addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Considerable heterogeneity exists across 817 meso-level fields, with socially-oriented fields showing higher disagreement regardless of their parent discipline. Fields studying inaccessible phenomena (e.g., geological past, astronomy) also exhibited elevated disagreement rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 provide specific examples of meso-fields with high disagreement, supported by Figure 3. The pattern of socially-oriented fields having higher disagreement is consistent across multiple disciplines. However, the authors acknowledge (C106-C107) that methodological artifacts may confound some field-level results, particularly where signal terms match topics of study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Younger cited papers are more likely to appear in disagreement citances than older papers, with variation across fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by Figure 3\u2014figure supplement 1, showing clear age-related patterns. However, the interpretation is complicated by field differences, and the mechanism underlying this pattern is not fully explained. The result is descriptive rather than explanatory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Disagreement citances are concentrated at the beginning (likely introduction) and end (likely discussion) of papers, with field-specific variations in distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by Figure 3\u2014figure supplement 2 and aligns with prior work (Bertin et al., 2016). The bimodal distribution is clear, though the inference about specific sections (introduction/discussion) is reasonable but not directly verified since section labels were not analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Gender differences in disagreement citation rates are minimal overall, with the exception of mathematics and computer science where women last authors issue 1.2 times more disagreement citations than men.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C70 are supported by Figure 3\u2014figure supplement 3, but the analysis has significant limitations. Gender is inferred from first names (C69), which has known accuracy issues. The Math & Comp finding (C70) is acknowledged to be driven by small numbers, raising concerns about statistical power and reliability. No statistical significance testing is reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Non-self-citations show 2.4 times higher disagreement rates than self-citations overall, with field-specific ratios ranging from 1.6x (social sciences and humanities) to 2.5x (biomedical and health sciences).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by Figure 3\u2014figure supplement 4 and serve as a validation check for the disagreement measure, as authors are expected to disagree less with their own work. The consistent pattern across all fields strengthens confidence in the measure, though the magnitude of differences varies by field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Results are robust to changes in validity threshold (80% vs 70%), maintaining the same field ordering despite including more citances at lower thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 demonstrate robustness through sensitivity analysis, showing qualitative consistency across different validity cutoffs. This strengthens confidence in the main findings, though quantitative differences exist (C74). The analysis is appropriate for assessing methodological robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Specific signal and filter terms show field-dependent patterns reflecting disciplinary jargon, topics of study, and methodological norms. For example, 'conflict*' is over-represented in social sciences and humanities as a topic of study, while 'disprove*' appears more in mathematics and computer science in relation to mathematical proofs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 are supported by Figure 1\u2014figure supplement 1 and Table S3, documenting systematic field differences in query performance. These findings reveal important methodological artifacts and demonstrate the transparency of the approach. However, they also highlight limitations in applying uniform queries across disciplines (C106-C107).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Papers receiving the most disagreement citations include those related to a longstanding controversy about the formation of the North China Craton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by Table S6 and provides a concrete example of how the method identifies known scientific controversies. This serves as a qualitative validation of the approach, though it represents only one case study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Papers containing disagreement citances receive more citations over their lifespan, with a difference of approximately 4.7 citations by the fourth year after publication. However, this effect may be confounded by article type, as 24.6% of review articles contain disagreement citances and reviews are typically more highly cited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 are supported by Figure 4, but the authors acknowledge important confounding factors (C88). The analysis does not adequately control for article type, field, or other factors that might explain both higher disagreement and higher citations. The causal interpretation is unclear, and the authors note this limitation. Additional multivariate analysis would be needed to support causal claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The overall disagreement rate of 0.31% is lower than previous studies reporting 2.4% for 'negative' references and 0.8% for 'disputing' citations, likely due to prioritizing precision over recall and differences in corpus and definitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 accurately compare results to prior work and provide reasonable explanations for differences. The comparison is appropriate given different methodologies, definitions, and corpora. The lower rate reflects the conservative approach (high validity threshold) rather than necessarily indicating less disagreement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The findings support the 'hierarchy of sciences' model, with disagreement highest in complex, 'soft' sciences (social sciences and humanities) and lowest in 'hard' sciences (mathematics and physics). Alternative explanations include structural characteristics and paradigm strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 provide theoretical interpretation of the empirical findings, supported by citations to relevant literature (Comte, Cole, Fanelli, Kuhn, Biglan). The interpretation is reasonable and consistent with prior theoretical frameworks, though multiple explanations are possible and the data cannot definitively distinguish between them.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Temporal trends in disagreement may reflect transitions to 'normal science' periods or increased collaboration requiring consensus among larger teams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C97 are explicitly speculative interpretations (marked as 'SPECULATION' in evidence_type) of temporal trends. While supported by relevant citations (Kuhn, Smolin, Wuchty), these are post-hoc explanations without direct empirical support. The claims are appropriately tentative but lack the evidence needed for strong support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Field differences in disagreement may reflect cultural characteristics including norms around consensus formation, dispute resolution, 'agonism' in humanities, and distinct cultures of evaluation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 provide cultural and sociological interpretations supported by relevant literature (Whitley, de Cetina and Reyes, Tannen, Lamont). These interpretations are plausible and well-grounded in science studies literature, though they remain theoretical explanations rather than empirically tested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The approach has limitations: it captures only a fraction of textual disagreements due to prioritizing precision over recall, uses non-exhaustive term lists, and cannot detect non-explicit disagreements or those occurring outside citances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 provide honest assessment of methodological limitations. These are appropriate acknowledgments that help interpret the results correctly. The limitations are inherent to the cue-phrase approach and do not invalidate the findings but do constrain their scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The approach produces false positives in specific disciplinary contexts, such as when signal terms match topics of study (e.g., 'conflict*' in sociology and international relations) or author names.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by the validation data and examples provided. The authors demonstrate awareness of these artifacts through their transparent methodology. While this is a limitation, the overall precision (80% validity threshold) suggests these false positives are a minority of identified cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The inclusive definition homogenizes disagreement into a single category, whereas multiple types of disagreement exist in science (e.g., paper-level vs. community-level, or different citation classification schemes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 acknowledges an important conceptual limitation. The authors recognize that their broad operationalization may obscure important distinctions between types of disagreement. This is a valid limitation that suggests directions for future work, though it doesn't invalidate the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The approach offers advantages over keyword-based and machine learning methods: it provides nuanced views through signal/filter combinations, enables easy identification of confounding artifacts, is transparent and reproducible, and is easily adjustable to different contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 accurately describe methodological advantages demonstrated throughout the paper. The transparency is evident in the detailed validation (C50-C56), artifact identification (C76-C83), and robustness checks (C73-C75). These advantages are real and distinguish this approach from alternatives, though each method has trade-offs.",
+    "result_type": "MINOR"
+  }
+]

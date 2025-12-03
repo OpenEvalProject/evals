@@ -1,0 +1,1874 @@
+{
+  "submission": {
+    "id": "fb898e24-0a3e-44ce-9416-3021a3f3c0a0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:58:12.612037Z",
+    "updated_at": "2025-12-03T16:58:12.612037Z"
+  },
+  "content": [
+    {
+      "id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "submission_id": "fb898e24-0a3e-44ce-9416-3021a3f3c0a0",
+      "content_type": "manuscript",
+      "content_text": "# A connectomics-based taxonomy of mammals\n\n## Authors\n\n- Laura E Suarez<sup>1</sup> ([ORCID: 0000-0003-0700-1500](https://orcid.org/0000-0003-0700-1500)) \u2020\n- Yossi Yovel<sup>3</sup>\n- Martijn P van den Heuvel<sup>4</sup>\n- Olaf Sporns<sup>5</sup>\n- Yaniv Assaf<sup>3</sup> ([ORCID: 0000-0001-6941-1535](https://orcid.org/0000-0001-6941-1535))\n- Guillaume Lajoie<sup>2</sup>\n- Bratislav Misic<sup>1</sup> ([ORCID: 0000-0003-0307-2862](https://orcid.org/0000-0003-0307-2862)) \u2020\n\n### Affiliations\n\n1. Montr\u00e9al Neurological Institute, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))\n2. Mila - Quebec Artificial Intelligence Institute Montreal Canada ([ROR:05c22rx21](https://ror.org/05c22rx21))\n3. School of Neurobiology, Biochemistry and Biophysics, Tel Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))\n4. Center for Neurogenomics and Cognitive Research, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))\n5. Psychological and Brain Sciences, Indiana University Bloomington United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMammalian taxonomies are conventionally defined by morphological traits and genetics. How species differ in terms of neural circuits and whether inter-species differences in neural circuit organization conform to these taxonomies is unknown. The main obstacle to the comparison of neural architectures has been differences in network reconstruction techniques, yielding species-specific connectomes that are not directly comparable to one another. Here, we comprehensively chart connectome organization across the mammalian phylogenetic spectrum using a common reconstruction protocol. We analyse the mammalian MRI (MaMI) data set, a database that encompasses high-resolution ex vivo structural and diffusion MRI scans of 124 species across 12 taxonomic orders and 5 superorders, collected using a unified MRI protocol. We assess similarity between species connectomes using two methods: similarity of Laplacian eigenspectra and similarity of multiscale topological features. We find greater inter-species similarities among species within the same taxonomic order, suggesting that connectome organization reflects established taxonomic relationships defined by morphology and genetics. While all connectomes retain hallmark global features and relative proportions of connection classes, inter-species variation is driven by local regional connectivity profiles. By encoding connectomes into a common frame of reference, these findings establish a foundation for investigating how neural circuits change over phylogeny, forging a link from genes to circuits to behaviour.\n\n## Introduction\n\nAnatomical projections between brain regions form a complex network of polyfunctional neural circuits (Sporns et al., 2005). Signalling on the brain\u2019s connectome is thought to support cognition and the emergence of adaptive behaviour. Advances in imaging technologies have made it increasingly feasible to reconstruct the wiring diagram of biological neural networks. Thanks to extensive international data-sharing efforts, these detailed reconstructions of the nervous system\u2019s connection patterns have been made available in humans and in multiple model organisms (van den Heuvel et al., 2016), including invertebrate (White et al., 1986; Chiang et al., 2011; Towlson et al., 2013; Worrell et al., 2017), avian (Shanahan et al., 2013), rodent (Oh et al., 2014; Bota et al., 2015; Rubinov et al., 2015), feline (Scannell et al., 1995; de Reus and de Reus and van den Heuvel, 2013; Beul et al., 2015), and primate species (Markov et al., 2012; Majka et al., 2016; Liu et al., 2020).\n\nThe rising availability of connectomics data facilitates cross-species comparative studies that identify commonalities in brain network topology and universal principles of connectome evolution (van den Heuvel et al., 2016; Barker, 2021; Barsotti et al., 2021). A common thread throughout these studies is the existence of non-random topological attributes that theoretically enhance the capacity for information processing (Sporns, 2013). These include a highly clustered architecture with segregated modules that promote specialized information processing (Watts and Strogatz, 1998; Hilgetag and Kaiser, 2004), as well as a densely interconnected core of high-degree hubs that shortens communication pathways (van den Heuvel et al., 2012), promoting the integration of information from distributed specialized domains (Zamora-L\u00f3pez et al., 2010; Avena-Koenigsberger et al., 2017). These universal organizational features suggest that connectome evolution has been shaped by two opposing and competitive pressures: maintaining efficient communication while minimizing neural resources used for connectivity (Bullmore and Sporns, 2012).\n\nWhile comparative analysis can focus on commonalities among mammalian connectomes and identify universal wiring principles, it can also be used to systematically explore differences among connectomes that confer specific adaptive advantages. Indeed, despite commonalities, architectural variations are also observed even among closely related species (Barker, 2021). Factors such as the external environment, genetics. and distinct gene expression programs also account for diversity in neural connectivity patterns (Martinez and Sprecher, 2020). Subtle variations in connectome organization may potentially account for species-specific adaptations in behaviour and cognitive function.\n\nBut how does the connectome vary over phylogeny? Traditionally, mammalian taxonomies were built on morphological differences among species (Darwin, 1959). Besides physical commonalities, species within the same taxonomic group also tend to share similar behavioural repertoires (York, 2018; Bendesky and Bargmann, 2011; Yokoyama et al., 2021). Modern high-throughput whole-genome sequencing has further delineated phylogenetic links and relationships among mammalian species (Murphy et al., 2021; Zoonomia Consortium, 2020; \u00c1lvarez-Carretero et al., 2021; Seehausen et al., 2014). In addition to refining the overall classification of mammals, whole-genome comparative analyses have established the genetic basis of phenotypic variation across phylogeny (Murphy et al., 2021). Whether inter-species differences in the organization of connectome wiring conform to this taxonomy remains unknown. How do genes sculpt behaviour across evolution? Could speciation events in the genome leading to variations in connectome architecture be the missing link between genomics and behaviour? Rigorously addressing these questions is challenging due to the lack of methodological consistency in the acquisition and reconstruction of neural circuits, or the limited number of available species.\n\nHere, we comprehensively chart connectome organization across the mammalian phylogenetic spectrum. We analyse the mammalian MRI (MaMI) data set, a comprehensive database that encompasses high-resolution ex vivo diffusion and structural (T1- and T2-weighted) MRI scans of 124 species (a total of 225 scans including replicas) (Assaf et al., 2020). All images were acquired using the same scanner and protocol. All connectomes were reconstructed using a uniform parcellation scheme consisting of 200 brain areas, including cortical and subcortical regions. Notably, the MaMI data set spans a wide range of categories across different taxa levels of morphological and phylogenetic mammalian taxonomies (Assaf et al., 2020). Specifically, it includes animal species across 5 different superorders (Afrotheria, Euarchontoglires, Laurasiatheria, Xenarthra, and Marsupialia) and 12 different orders (Cetartiodactyla, Carnivora, Chiroptera, Eulipotyphla, Hyracoidea, Lagomorpha, Marsupialia, Perissodactyla, Primates, Rodentia, Scandentia, and Xenarthra).\n\nTaking advantage of the harmonized imaging and reconstruction protocols, we quantitatively assess the similarity of species\u2019 connectomes to construct data-driven phylogenetic relationships based on brain wiring. We compare these inter-species wiring similarities with conventional morphologically and genetically defined mammalian taxonomies. We determine the extent to which connectome topology conforms to established taxonomic classes, and identify network features that are associated with speciation.\n\n## Results\n\nThe MaMI data set consists of high-resolution ex vivo diffusion and structural (T1- and T2-weighted) MRI scans of 124 species. Since there is no species-specific template, all connectomes were reconstructed using a uniformly applied 200-node parcellation. Having equally sized networks facilitates graph comparison but also implies a lack of direct correspondence between nodes across species. However, because our focus is on the statistics of connectomes\u2019 topology, this does not impact our analyses. As the size of the network is kept constant across all species, voxel size is normalized to brain volume. Figure 1 shows the distribution of connectomes across 10 mammalian orders (out of the 12 present in the data set). We focus on the 6 orders that contain 5 or more distinct species (within the Laurasiatheria and Euarchontoglires superorders); these include Chiroptera, Rodentia, Cetartiodactyla, Carnivora, Perissodactyla, and Primates, resulting in a total of 111 different animal species and 203 brain scans. A complete list of the animal species included in the data set is provided in Figure 1\u2014figure supplement 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig1-v2.jpg)\n\n**Figure 1.:** The MaMI data set encompasses high-resolution ex vivo structural and diffusion MRI scans of 124 animal species spanning 12 morphologically and phylogenetically defined taxonomic orders: Cetartiodactyla, Carnivora, Chiroptera, Eulipotyphla, Hyracoidea, Lagomorpha, Marsupialia, Perissodactyla, Primates, Rodentia, Scandentia, and Xenarthra. (a) Hierarchical relationships across 10 (out of the 12 included in the data set) morphological and phylogenetic taxonomic orders. Numbers outside the parenthesis correspond to the number of unique species within each order, and numbers inside the parenthesis correspond to the number of samples (including replicas). (b) Connectivity matrices for five randomly chosen sample species within each of the six orders included in the analyses (i.e. Cetartiodactyla, Carnivora, Chiroptera, Perissodactyla, Primates, and Rodentia). Only orders with at least five different species were included for the analyses. Nodes are organized according to their community affiliation obtained from consensus clustering applied on the connectivity matrix (see \u2018Materials and methods\u2019). Communities in (b) correspond to the partition for which the resolution parameter $\\gamma=1.0$ (Figure 1\u2014figure supplement 1).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Modularity as a function of resolution the resolution parameter $\\gamma$, which controls for the size of the identified modules (see \u2018Multi-resolution community detection\u2019). (b) Modularity distributions for each taxonomic order ($\\gamma=1$).\n\n### Connectome-based inter-species distances\n\nSimilarity between species\u2019 network architectures is estimated using two network-based distance metrics: spectral distance, based on the eigenspectrum of the normalized Laplacian of the connectivity matrix (see Figure 2\u2014figure supplement 1; de Lange et al., 2014), and topological distance, based on a combination of multiscale graph features of the binary and weighted connectivity matrices (Figure 2\u2014figure supplements 2 and 3 show the distribution of individual local and global graph features, respectively; Rubinov and Sporns, 2010). For completeness, Figure 2\u2014figure supplements 4 and 5 show the cumulative distribution of binary and weighted local features, respectively, for individual species. Both methods measure how similar the architectures of two connectomes are. To identify brain connectivity differences across species, we need to be able to analyse data in a shared frame of reference. The normalized Laplacian eigenspectrum and the graph features of the connectivity matrix allow us to translate connectomes into a common feature space in which they are comparable, despite the fact that they come from different species, and that the nodes do not correspond to one another (Mars et al., 2021). To account for the fact that some of the species have more than one scan, we randomly select one sample per species and estimate (spectral and topological) inter-species distances. We repeat this procedure 10,000 times and report the average across iterations.\n\nFigure 2a shows the spectral distances between species\u2019 connectomes. In general, we observe smaller distances among members of the same order (outlined in yellow). Figure 2b confirms this intuition by showing that spectral distances within orders (i.e. values along the diagonal) tend to be smaller than distances between orders (i.e. values off the diagonal). Figure 2c shows the distributions of intra- and inter-order distances. The mean/median intra-order distance is significantly smaller than the mean/median inter-order distance (two-sample Welch\u2019s t-test: mean intra- and inter-order distances are 0.43 and 0.55, respectively, $p<10^{\u22124}$ two-tailed, and Cohen\u2019s $d$ effect size = 0.67; two-sample Mann\u2013Whitney U-test: median intra- and inter-order distances are 0.44 and 0.55, respectively, $p<10^{\u22124}$ two-tailed, and common-language effect size = 68%; Figure 2c). We find comparable results when estimating species similarity using topological distance (two-sample Welch\u2019s t-test: mean intra- and inter-order distances are 0.41 and 0.53, respectively, $p<10^{\u22124}$ two-tailed, and Cohen\u2019s $d$ effect size = 0.59; two-sample Mann\u2013Whitney U-test: median intra- and inter-order distances are 0.41 and 0.53, respectively, $p<10^{\u22124}$ two-tailed, and common-language effect size = 66%; Figure 2d\u2013f). Figure 2\u2014figure supplement 6 shows the same results as in Figure 2, but using all samples including replicas (i.e. without random resampling). Altogether, results suggest that species with similar genetics, morphology, and behaviour tend to have similar connectome architecture. In other words, variations in connectome architecture reflect phylogeny.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-v2.jpg)\n\n**Figure 2.:** (a) Spectral distance between species-specific connectomes. Lower distances indicate greater similarity. Yellow outlines indicate morphologically and genetically defined orders. (b) Median spectral distance within and between all constituent members of each order. (c) Distribution of intra- and inter-order spectral distances. (d) Topological distance between species-specific connectomes. Lower distances indicate greater similarity. Yellow outlines indicate morphologically and genetically defined orders. (e) Median topological distance within and between all constituent members of each order. (f) Distribution of intra- and inter-order topological distances. Effect sizes in (c) and (f) are Cohen\u2019s $d$ estimator corresponding to a two-sample Welch\u2019s t-test ($p<10^{\u22124}$). Equivalent conclusions are drawn if common-language effect sizes from the two-sample Mann\u2013Whitney U-test are used.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Spectral plots were obtained by convolving the eigenspectrum of the normalized Laplacian matrix of the graph with a Gaussian kernel. The eigenvalues of the normalized Laplacian of the connectivity matrix, and their multiplicities, capture distinct topological properties of the graph (Banerjee and Jost, 2009; Banerjee and Jost, 2008; Newman, 2001; Grone et al., 1990; Grone and Merris, 1994; Das, 2004), thus acting like a spectroscopy of its underlying topology. More importantly, it has the advantage of situating graphs of different sizes and with non-homologous node correspondence in a common frame of reference in which they can be compared.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Distributions of average local features are shown for each order. Features are normalized relative to a set of 1000 randomly rewired graphs that preserve the degree sequence and distribution of the nodes (Maslov and Sneppen, 2002). Features are computed for both the binary (left) and weighted (right) connectomes.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Distributions of global features are shown for each order. Features are normalized relative to a set of 1000 randomly rewired graphs that preserve the degree sequence and distribution of the nodes (Maslov and Sneppen, 2002). Features are computed for both the binary (left) and weighted (right) connectomes.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The cumulative distributions of individual features are shown for each individual sample within each order.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** The cumulative distributions of individual features are shown for each individual sample within each order.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** All samples, including replicas, were used to estimate inter-species spectral and topological distance. (a) Spectral distance between species-specific connectomes. (b) Median spectral distance within and between all constituent members of each order. (c) Distribution of intra- and inter-order spectral distances. (d) Topological distance between species-specific connectomes. (e) Median topological distance within and between all constituent members of each order. (f) Distribution of intra- and inter-order topological distances. Effect sizes in (c) and (f) are Cohen\u2019s $d$ estimator corresponding to a two-sample Welch\u2019s t-test ($p<10^{\u22124}$). Equivalent conclusions are drawn if common-language effect sizes from the two-sample Mann-Whitney U-test are used.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Results were replicated using a 100-node parcellation. (a) Spectral distance between species-specific connectomes. (b) Median spectral distance within and between all constituent members of each order. (c) Distribution of intra- and inter-order spectral distances. (d) Topological distance between species-specific connectomes. (e) Median topological distance within and between all constituent members of each order. (f) Distribution of intra- and inter-order topological distances. Effect sizes in (c) and (f) are Cohen\u2019s $d$ estimator corresponding to a two-sample Welch\u2019s t-test ($p<10^{\u22124}$). Equivalent conclusions are drawn if common-language effect sizes from the two-sample Mann-Whitney U-test are used.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** Results were replicated using a 300-node parcellation. (a) Spectral distance between species-specific connectomes. (b) Median spectral distance within and between all constituent members of each order. (c) Distribution of intra- and inter-order spectral distances. (d) Topological distance between species-specific connectomes. (e) Median topological distance within and between all constituent members of each order. (f) Distribution of intra- and inter-order topological distances. Effect sizes in (c) and (f) are Cohen\u2019s $d$ estimator corresponding to a two-sample Welch\u2019s t-test ($p<10^{\u22124}$). Equivalent conclusions are drawn if common-language effect sizes from the two-sample Mann\u2013Whitney U-test are used.\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig2-figsupp9-v2.jpg)\n\n**Figure 2\u2014figure supplement 9.:** To allow comparison with previous reports, Gaussian kde smoothing is applied to the Laplacian eigenspectrum of individual species, before estimating inter-species distances. Spectral distance with (a) and without (b) kernel density estimation smoothing. Left: inter-species spectral distance. Centre: median inter-species spectral distance. Right: intra- vs. inter-order spectral distance distributions. Effect sizes correspond to Cohen\u2019s $d$ estimator from a two-sample Welch\u2019s t-test ($p<10^{\u22124}$).\n\n### Architectural features differentiate species\n\nNext we consider which network features contribute to the differentiation (Figure 2\u2014figure supplements 2 and 3 show the distributions of local and global graph features, respectively). To address this question, we recompute inter-species topological distances using different sets of graph features (Figure 3). We find that the difference between intra- and inter-order topological distances tends to be larger when only local (node-level) features are included in the estimation of the topological distance (i.e. degree, clustering coefficient, betweenness, and closeness; Figure 3b and e) compared to when only global features are considered (i.e. characteristic path length, transitivity, and assortativity; Figure 3c and f). This is the case for both the binary and weighted versions of these features (top and bottom rows in Figure 3, respectively). Figure 3\u2014figure supplement 1 shows the same results as in Figure 3, but using all samples including replicas (i.e. without random resampling). These results suggest that differentiation of orders is better explained by differences in local network topology; conversely, global network topology appears to be conserved across species. An illustration of this principle is depicted in Figure 3\u2014figure supplement 2 showing that the relative local connectivity of the anterior and the posterior ends of the cortex changes across taxonomic orders (Barrett et al., 2020; Krubitzer and Kaas, 2005; Krubitzer and Kahn, 2003).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-v2.jpg)\n\n**Figure 3.:** Topological distance can be computed using different combinations of local and global, binary and weighted connectome features. Histograms show intra- and inter-order distance distributions when using (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. For definitions, please see \u2018Materials and methods.\u2019 Effect sizes correspond to Cohen\u2019s $d$ estimator from a two-sample Welch\u2019s t-test. Equivalent conclusions are drawn if common-language effect sizes from a two-sample Mann\u2013Whitney U-test are used. In all cases, the difference in the mean and median of intra- and inter-order distance distributions is statistically significant ($p<10^{\u22124}$). The same conclusions can be drawn after controlling for network density (Figure 3\u2014figure supplement 6).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** All samples, including replicas, were used to estimate inter-species topological distance. Topological distance can be computed using different combinations of local and global, binary and weighted connectome features. Histograms show intra- and inter-order distance distributions when using (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. Effect sizes correspond to Cohen\u2019s $d$ estimator from a two-sample Welch\u2019s t-test. Equivalent conclusions are drawn if common-language effect sizes from a two-sample Mann\u2013Whitney U-test are used. In all cases, the difference in the mean and median of intra- and inter-order distance distributions is statistically significant ($p<10^{\u22124}$).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Distribution across taxonomic orders of the difference in average local network topology between the 10% most anterior and the 10% most posterior brain regions (i.e. the anterior\u2013posterior difference). Local features considered include: binary (average) degree, clustering, betweenness centrality and closeness. (b) Top 5% strongest connections of the 10% most anterior (red) and the 10% most posterior (blue) brain regions for exemplar species within each taxonomic order. Separate one-way ANOVAs were performed to compare the effect of taxonomic order on anterior\u2013posterior differences in local: (i) degree: $F_{5}=20.29$, $P=2.57\\times10^{-16}$, (ii) clustering: $F_{5}=15.88$, $P=3.88\\times10^{-13}$, (iii) betweenness: $F_{5}=17.97$, $P=1.14\\times10^{-14}$; and (iv) closeness: $F_{5}=13.54$, $P=2.36\\times10^{-11}$.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Pearson\u2019s correlation between inter-species distances computed using topological distance (abscissa) and spectral distance (ordinate). Correlations are shown for (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Distribution of network density is shown for each taxonomic order. Connection density is estimated as the ration of existent connections to the total number of possible connections.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Network density is regressed out from (a) binary local, (b) weighted local, (c) binary global and (d) weighted global topological features (see \u2018Materials and methods\u2019).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Network density is regressed out from topological features (see \u2018Materials and methods\u2019), and topological distance is computed using multiple local and global connectome features. Histograms show intra- and inter-order distance distributions when using (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. For definitions please see \u2018Materials and methods.\u2019 Effect sizes correspond to Cohen\u2019s $d$ estimator from a two-sample Welch\u2019s t-test. Equivalent conclusions are drawn if common-language effect sizes from a two-sample Mann\u2013Whitney U-test are used. In all cases, the difference in the mean and median of intra- and inter-order distance distributions is statistically significant ($p<10^{\u22124}$).\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Multidimensional scaling (MDS) with cosine distance is applied to (a) spectral and (b\u2013j) topological features to generate a low-dimensional (2D) projection of the data set. MDS was implemented using the MDS function in the manifold module of the Scikit-learn Python package (Pedregosa et al., 2011). Details of the implementation can be found in the publicly available code repository. Specifically, MDS was applied to (a) the Laplacian eigenspectra, (b) all (binary, weighted, local, and global), (c) all local (binary and weighted), (d) all global (binary and weighted), (e) all binary (local and global), (f) only binary local, (g) only binary global, (h) all weighted (local and global), (i) only weighted local, and (j) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. Each dot in the scatter plots represents a sample from a different order. Visual inspection of the 2D projections shows that, generally speaking, local features tend to provide a better class separation compared to global features.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp8-v2.jpg)\n\n**Figure 3\u2014figure supplement 8.:** Hierarchical clustering was applied to the (a) spectral and (b\u2013j) topological distance matrices to assess the extent to which data-driven clustering of mammalian species recapitulates traditional taxonomies based on morphology and genetics. Hierarchical clustering was implemented using the hierarchy.linkage function in the cluster module of the Scipy Python package (Virtanen et al., 2020). Details of the implementation can be found in the publicly available code repository. Specifically, hierarchical clustering was applied to the inter-species distance matrix estimated using (a) the Laplacian eigenspectra, (b) all (binary, weighted, local, and global), (c) all local (binary and weighted), (d) all global (binary and weighted), (e) all binary (local and global), (f) only binary local, (g) only binary global, (h) all weighted (local and global), (i) only weighted local, and (j) only weighted global topological features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. Each heat map represents an inter-species distance matrix. Coloured rectangles represent the order each sample belongs to. Visual inspection of the results shows that, generally speaking, local features tend to provide a clustering solution that resembles more traditional taxonomies.\n\n![Figure 3\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp9-v2.jpg)\n\n**Figure 3\u2014figure supplement 9.:** Results were replicated using a 100-node parcellation. Topological distance can be computed using different combinations of local and global, binary and weighted connectome features. Histograms show intra- and inter-order distance distributions when using (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. For definitions, please see \u2018Materials and methods.\u2019 Effect sizes correspond to Cohen\u2019s $d$ estimator from a two-sample Welch\u2019s t-test. Equivalent conclusions are drawn if common-language effect sizes from a two-sample Mann\u2013Whitney U-test are used. In all cases, the difference in the mean and median of intra- and inter-order distance distributions is statistically significant ($p<10^{\u22124}$).\n\n![Figure 3\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig3-figsupp10-v2.jpg)\n\n**Figure 3\u2014figure supplement 10.:** Results were replicated using a 300-node parcellation. Topological distance can be computed using different combinations of local and global, binary and weighted connectome features. Histograms show intra- and inter-order distance distributions when using (a) all (binary, weighted, local, and global), (b) all local (binary and weighted), (c) all global (binary and weighted), (d) all binary (local and global), (e) only binary local, (f) only binary global, (g) all weighted (local and global), (h) only weighted local, and (i) only weighted global features. Local features include (the average and standard deviation of) degree, clustering, betweenness, and closeness. Global features include characteristic path length, transitivity, and assortativity. For definitions, please see \u2018Materials and methods.\u2019 Effect sizes correspond to Cohen\u2019s $d$ estimator from a two-sample Welch\u2019s t-test. Equivalent conclusions are drawn if common-language effect sizes from a two-sample Mann\u2013Whitney U-test are used. In all cases, the difference in the mean and median of intra- and inter-order distance distributions is statistically significant ($p<10^{\u22124}$).\n\nA similar conclusion can be drawn when the eigenvalue distributions of the (normalized) Laplacian of the connectivity matrices are compared across species (Figure 2\u2014figure supplement 1). In spectral graph theory, the presence of eigenvalues with high multiplicities or eigenvalues symmetric around $\\lambda_{i}=1$ provides information about the network\u2019s local organization that results from the recursive manipulation of connectivity motifs (Banerjee and Jost, 2008; Banerjee and Jost, 2009; de Lange et al., 2014). For instance, node duplication (i.e. the presence of nodes with the same connectivity profile) results in an increase of $\\lambda_{i}=1$. The duplication of edge motifs (i.e. the multiple presence of pairs of connected nodes with the same connectivity profile), on the other hand, produces eigenvalues at equal distances to $\\lambda_{i}=1$. Visually inspecting their Laplacian eigenspectra, one can notice that, across taxonomic orders, species tend to differ mostly around the interval $0.5\\leq\\lambda_{i}\\leq1.5$, both in terms of the multiplicity of $\\lambda_{i}=1$, as well as in the width of the bell-shaped curve around $\\lambda_{i}=1$. While differences in the multiplicity of $\\lambda_{i}=1$ indicate differential amounts of duplicated node motifs present in the network, differences in the value and multiplicity of eigenvalues around $\\lambda_{i}=1$ indicate the presence of distinct edge motifs with disparate numbers of duplications in the network. Therefore, differences across taxonomic orders are most likely due to the presence of different local connectivity fingerprints in the connectivity matrix (Figure 2\u2014figure supplement 1; de Lange et al., 2014; Mars et al., 2018a; Mars et al., 2018b). Determining which are specifically these node and edge motifs cannot be done by simply examining the Laplacian eigenspectra, and is out of the scope of this study. Additional evidence supporting the idea that spectral distance captures mostly differences in local network topology is the fact that the correlation between spectral and topological distance is maximum when only local features are included in the estimation of the topological distance (Figure 3\u2014figure supplement 3).\n\nWe also observe that that the difference between intra- and inter-order topological distances is greater for binary than for weighted features (Figure 3a\u2013c and d\u2013f, respectively), independently of being local or global. This suggests that the strength of the connections is less important than the binary architecture of the connectivity matrix.\n\nSome of the features used for the estimation of the topological distance depend on network density, which varies across taxonomic orders (Figure 3\u2014figure supplement 4). To determine whether the observed differences between intra- and inter-order distances are above and beyond differences due to network density, we perform the same analysis shown in Figure 3, after controlling for density (Figure 3\u2014figure supplement 5). Results, shown in Figure 3\u2014figure supplement 6, suggest that differences between intra- and inter-order topological distances are not driven by differences in network density, but variations in wiring patterns, as captured by topological features, play a role in the observed phylogenetic variations in connectome organization.\n\nAltogether, our results show that the subset of features that best differentiate species across taxonomic orders are the binary local topological features. We perform a set of complementary analyses to assess which subset of features produces the best partition of animal species relative to traditional taxonomies. To do so, we (1) project the data on a 2D plane using multidimensional scaling (Figure 3\u2014figure supplement 7) and (2) apply hierarchical clustering to inter-species distance matrices (Figure 3\u2014figure supplement 8). Visual inspection of these results suggests that, consistent with our previous results (Figure 3), local features compared to global features (ignoring panel a, centre vs. right column, respectively, in Figure 3\u2014figure supplements 7 and 8), as well as binary features compared to weighted features (ignoring panel a, centre vs. bottom row, respectively, in Figure 3\u2014figure supplements 7 and 8), yield species partitions that more closely reflect established phylogenetic relationships, further supporting the idea that connectome organization recapitulates traditional taxonomic relationships that are based on morphology and genetics.\n\n### Conservation of small-world architecture\n\nAnatomical brain networks are thought to simultaneously reconcile the opposing demands of functional integration and segregation by combining the presence of functionally specialized clusters with short polysynaptic communication pathways (Tononi et al., 1994; Sporns, 2013; Sporns et al., 2005; Bassett and Bullmore, 2006). Such architecture is often referred to as small-world and is observed in a wide variety of naturally occurring and engineered networks (Watts and Strogatz, 1998). Here, we explore whether these principles of segregation and integration in global connectome organization are consistent across phylogeny. To do so, we estimate for each species the ratio of clustering coefficient to characteristic path length, normalized relative to a set of randomly rewired graphs that preserve the degree sequence of the nodes (Humphries and Gurney, 2008; Maslov and Sneppen, 2002; Rubinov and Sporns, 2010; Figure 4). Consistent with previous reports in individual species\u2019 connectomes (Hilgetag and Kaiser, 2004; Sporns and Zwi, 2004; Bassett and Bullmore, 2006), we find that all connectomes display high and diverse levels of small-worldness, suggesting that simultaneously highly segregated and integrated networks is a global trait conserved across mammalian brains.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig4-v2.jpg)\n\n**Figure 4.:** Clustering coefficient vs. characteristic path length normalized relative to a set of 1000 randomly rewired graphs that preserve the degree sequence of the nodes (Maslov and Sneppen, 2002). For definitions of each graph measure, see \u2018Materials and methods.\u2019 Each data point represents a different animal species. Data points above the identity line are said to have small-world architecture. The inset on the right bottom corner is a zoom on the abscissa; dots correspond to the median and error bars correspond to the standard deviation across species within the same taxonomic order.\n\n### Conservation of edge classes across species\n\nThe topological and spatial arrangement of connections in connectomes is thought to shape the segregation and integration of information and, ultimately, their computational capacity (Faskowitz et al., 2021). To investigate inter-species differences in the topological and spatial distribution of connections, we stratify edges into different classes in four commonly studied partitions. Partitions include inter- and intra-modular connections (Figure 5a), inter- and intra-hemispheric connections (Figure 5b), connection length distribution (short-, medium-, and long-range connections; Figure 5c and Figure 5\u2014figure supplement 1), and rich-club (rich-club, feeder and peripheral connections; Figure 5d). Overall, we find that, along the four partitions, the relative proportions of each connection class are conserved across taxonomic orders, despite differences in connection density. Collectively, this is consistent with the results from the previous sections showing that global architectural features of connectomes are consistent across phylogeny.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig5-v2.jpg)\n\n**Figure 5.:** Mean proportion of (a) inter- and intra-modular connections, (b) inter- and intra-hemispheric connections, (c) short- (length \u2264 25%), medium- (25% < length \u2264 75%) and long-range connections (length \u2265 75%), and (d) rich-club (connecting two rich-club nodes), feeder (connecting one rich-club and one non-rich-club node) and peripheral (connecting two non-rich-club nodes) connections. Error bars indicate 95% confidence intervals.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78635/elife-78635-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The connection length distributions of individual species for each taxonomic order.\n\n## Discussion\n\nIn this study, we chart the organization of whole-brain neural circuits across 111 mammalian species and 5 superorders. We find that connectome organization recapitulates to a large extent traditional taxonomies. While all connectomes retain hallmark global features and relative proportions of edge classes, inter-species variation is driven by local regional connection profiles.\n\nConventional mammalian taxonomies are delineated based on the concept that a species is a group of organisms that can reproduce naturally with one another and create fertile offspring (Mallet, 1995). As a result, classical taxonomies based on animal morphology have largely been reconciled with emerging evidence from whole-genome sequencing Baker and Bradley, 2006; namely, organisms with similar genomes display similar physical characteristics and behaviour. Our work shows that inter-species similarity \u2013 as defined by morphology, behaviour, and genetics \u2013 is concomitant with the organization of neural circuits. Specifically, species that are part of the same taxonomic order tend to display similar connectome architecture, suggesting that brain network organization is under selection pressure (see also Butler and King, 2004; Lande, 1976; Wright, 1931 for an alternative mechanism of trait evolution characterized by pure drift models based on Brownian motion), analogous to size, weight, or colour.\n\nWhich network features drive differences across taxonomic orders? Interestingly, all connectomes display consistent global hallmarks that were previously documented in tract-tracing studies, including high clustering and near-minimal path length characteristic of small-world organization, as well as segregated network communities and densely interconnected hub nodes (van den Heuvel et al., 2016). The conservation in global wiring and organizational principles is further supported by a reduced difference between intra- and inter-order topological distances estimated exclusively from global features compared to the case in which only local features are considered. Thus, relative differences between connectomes across taxonomic orders are mainly driven by local regional features. These results are in line with the idea that a brain region\u2019s functional fingerprint \u2013 the specific computation or function that it performs by virtue of its unique firing patterns and dynamics \u2013 is determined by its underlying cortico-cortical connectional fingerprint (Mars et al., 2021; Mars et al., 2018b; Mars et al., 2016; Passingham et al., 2002). Accordingly, inter-species differences in functional and behavioural repertoire are likely supported by changes in local connectivity patterns. Along the same lines, our results are also consistent with the notion that neural circuit evolution involves random local circuit modifications that may have provided species with behavioural adaptations, allowing them to face specific challenges (Barker, 2021), such as extreme environmental pressures Park et al., 2008; Smith et al., 2011; Eigenbrod et al., 2019, or to support specific behaviours, such as courtship (O\u2019Grady and DeSalle, 2018; Markow and O\u2019Grady, 2005; Ding et al., 2019; Seeholzer et al., 2018; Khallaf et al., 2020; Barkan et al., 2018; Ding et al., 2016; York et al., 2019), social bonding (Insel and Shapiro, 1992; Winslow et al., 1993; Jaggard et al., 2020; Loomis et al., 2019), or foraging (Vanwalleghem et al., 2018; Pantoja et al., 2020). How computations and cognitive functions emerge from these species-specific circuit modifications remains a key question in the field (Buckner and Krienen, 2013; Su\u00e1rez et al., 2021).\n\nThese results highlight the importance of developing species-specific, anatomical-based parcellations, as well as new ways to align connectomes from different species. Understanding how homologous regions correspond to one another will allow further investigation of regional inter-species differences in connectome topology, which is a fundamental step for advancing comparative connectomics. A variety of emerging methods are contributing to further resolve correspondence between brain regions across species, facilitating fine-grained comparisons at the level of individual regions. These methods implement regional comparisons based on different data modalities including measures of cytoarchitecture (J Garey, 1999; Bianchi et al., 2013), receptor distribution (Levant, 1998), functional and structural connectivity fingerprints (Passingham et al., 2002; Mars et al., 2016), patterns of gene expression (Warrington et al., 2022; Beauchamp et al., 2022), and macroscale gradients of functional activation (Buckner and Margulies, 2019).\n\nIt is noteworthy that the relative proportion of edge classes (inter- vs. intra-modular, inter- vs. intra-hemispheric, short- vs. medium- vs. long-range and rich-club vs. feeder vs. peripheral) are preserved across species. This result is reminiscent of recent work on allometric scaling that investigates how white matter connectivity scales with brain size (Bullmore and Sporns, 2012). For example, species with fewer commissural inter-hemispheric connections exhibit lower hemispheric mean shortest path (i.e. stronger intra-hemispheric connectivity), suggesting a similar connectivity conservation principle (Assaf et al., 2020). Likewise, using diffusion-weighted MRI data across 14 different primate species, another study reported negative allometric scaling of cortical surface area with white matter volume and corpus callosum cross-sectional area (Ardesch et al., 2021). This scaling results in less space for white matter connectivity with increasing brain size, translating into larger brains with a relatively higher proportion of short-range connections than long-range connections when compared with smaller brains (Ardesch et al., 2021). These results, however, do not contradict studies showing a positive allometric scaling between white matter and grey matter volume (Zhang and Sejnowski, 2000; Theunissen, 1988; Schlenska, 1974; Frahm et al., 1982); while the proportion of total volume devoted to cerebral white matter is higher in larger brains, it does not keep pace with the rapid cortical expansion that occurs with larger brain size. Collectively these studies highlight that the architecture of neural circuits and their physical embedding are intertwined, and the distribution of connections is such that it retains consistent global architectural features across phylogeny.\n\nThe present results contribute to the emerging field of comparative connectomics (van den Heuvel et al., 2016; Mars et al., 2021; Barker, 2021; Tendler et al., 2021). Adopting a harmonized imaging protocol in a large number of mammalian species facilitates a rigorous quantitative comparison of neural circuits. Central to this are network analytic methods that map connectomes to a common space and quantify similarities across local and global levels of organization (de Lange et al., 2014; de Lange et al., 2016; Bassett and Sporns, 2017; Mars et al., 2018b, Mars et al., 2021; Warrington et al., 2022). By comprehensively charting taxonomies of connectome architectures, we may uncover the principles that govern the wiring of neural circuits (Avena-Koenigsberger et al., 2015). In particular, quantitative analysis of connectome architecture across phylogeny may help to link genomics and behaviour (Mi\u0161i\u0107 and Sporns, 2016). Traditionally, taxonomic groups were defined in terms of physical morphology and behavioural repertoire (Burke, 1968), but these are now understood to be driven by speciation events in the genome (Murphy et al., 2021; Zoonomia Consortium, 2020; \u00c1lvarez-Carretero et al., 2021). However, we do not yet understand how genes influence neural circuit architecture, which in turn shapes the behavioural repertoire of an organism. By understanding how neural circuits change over phylogeny, we can fill this gap and forge a link from genes to circuits to behaviour. Ultimately, the confluence of genomics, connectomics, and behaviour may help to triangulate towards a more well-rounded view of speciation (Hern\u00e1ndez-Hern\u00e1ndez et al., 2021), and their simultaneous investigation can further illuminate the link between structure and function in brain networks (Bassett et al., 2010; Stiso and Bassett, 2018; Su\u00e1rez et al., 2020).\n\nThis work must be considered with respect to multiple limitations. First, uniformly parcellating brains of different size into the same number of nodes facilitates comparison of network architecture, but potentially obscures biologically important regional differences. Second, many species are represented by a single individual. Although we focus on orders rather than individual species and there is high within-species reliability (Assaf et al., 2020), the analyses do not capture individual variability within species. Third, all connectomes are reconstructed using diffusion-weighted imaging, which is subject to both systematic false positives and false negatives (Maier-Hein et al., 2017; Schilling et al., 2019). While a uniform, high-resolution ex vivo scanning protocol allows for systematic comparisons among species, and our results recapitulate findings from tract-tracing studies, future work in comparative connectomics will benefit from technological and analytical advances in neural circuit mapping. Fourth, evolutionary circuit modifications may not occur at the level of large-scale white matter, but at finer scales involving smaller nuclei or physiological events not accessible by diffusion imaging, such as up- or downregulation of neurotransmitter receptors (Barker, 2021). Nevertheless, the strikingly consistent taxonomic and phylogenetic relationships revealed by connectome analysis remain and suggest that macroscale connectivity, as measured by diffusion MRI, is informative of species similarities and differences across taxonomic orders.\n\nBy encoding connectomes into a common frame of reference, we quantitatively assess neural circuit architecture across the mammalian phylogeny. We find that connectome organization recapitulates previously established taxonomic relationships. Collectively, these findings set the stage for future mechanistic studies to trace the link between genes to neural circuits and ultimately to behaviour, and offer new opportunities to explore how changes in brain network structure across phylogeny translate into changes in function and behaviour.\n\n## Materials and methods\n\n### Brain samples\n\nThe MaMI database includes a total of 225 ex vivo diffusion and T2- and T1-weighted brain scans of 125 different animal species (Figure 1\u2014figure supplement 1). No animals were deliberately euthanized for this study. All brains were collected based on incidental death of animals in zoos in Israel or natural death collected abroad, and with the permission of the national park authority (approval no. 2012/38645) or its equivalent in the relevant countries. All scans were performed on excised and fixated tissue. Animals\u2019 brains were extracted within 24 hr of death and placed in formaldehyde (10%) for a fixation period of a few days to a few weeks (depending on the brain size). Approximately 24 hr before the MRI scanning session, the brains were placed in phosphate-buffered saline for rehydration. Given the limited size of the bore, small brains were scanned using a 7-T 30/70 BioSpec Avance Bruker system, whereas larger brains were scanned using a 3-T Siemens Prisma system. To minimize image artefacts caused by magnet susceptibility effects, the brains were immersed in fluorinated oil (Flourinert, 3M) inside a plastic bag during the MRI scanning session.\n\n### MRI acquisition\n\nA unified MRI protocol was implemented for all species. The protocol included high-resolution anatomical scans (T2- or T1-weighted MRI), which were used as an anatomical reference, and diffusion MR scans. Diffusion MRI data were acquired using high angular resolution diffusion imaging (HARDI), which consists of a series of diffusion-weighted, spin-echo, echo-planar-imaging images covering the whole brain, scanned in either 60 (in the 7-T scanner) or 64 gradient directions (in the 3-T scanner) with an additional three non-diffusion-weighted images (B0). The b value was 1000 smm-2 in all scans. In the 7-T scans, TR was longer than 12,000 ms (depending on the number of slices), TE was 20 ms, and \u0394/\u03b4 = 10/4.5 ms. In the 3-T scans, TR was 3500 ms, with a TE of 47 ms and \u0394/\u03b4 = 17/23 ms.\n\nTo linearly scale according to brain size the two-dimensional image pixel resolution (per slice), the size of the matrix remained constant across all species (128 \u00d7 96). Due to differences in brain shape, the number of slices varied between 46 and 68. Likewise, the number of scan repetitions and the acquisition time were different for each species, depending on brain size and desired signal-to-noise ratio (SNR) levels. To keep SNR levels above 20, an acquisition time of 48 hr was used for small brains (\u223c0.15 ml) and 25 min for large brains (>1000 ml). SNR was defined as the ratio of mean signal strength to the standard deviation of the noise (an area in the non-brain part of the image). Full details are provided in Assaf et al., 2020.\n\n### Connectome reconstruction\n\nThe ExploreDTI software was used for diffusion analysis and tractography (Leemans et al., 2009). The following steps were used to reconstruct fibre tracts:\n\nThe end result of the tractography analysis is a list of streamlines starting and ending between pairs of voxels. Recent studies have shown that fibre tracking tends to present a bias where the vast majority of end points reside in the white matter (Tournier et al., 2004). To avoid this, the CSD tracking implemented here ensures that approximately 90% of the end points reside in the cortical and subcortical grey matter.\n\n### Network generation and analysis\n\nBefore the reconstruction of the networks, certain fibre tracts were removed from the final list of tracts. These include external projection fibres that pass through the cerebral peduncle, as well as cerebellar connections. Inner-hemispheric projections, such as the thalamic radiation, were included in the analysis. Brains were parcellated into 200 nodes using a k-means clustering algorithm. All the fibre end-point positions were used as input, and cluster assignment was done based on the similarity in connectivity profile between pairs of end points. Therefore, vertices with similar connectivity profile have a higher chance of grouping together. The clustering was performed twice, once for each hemisphere. Nodes were defined as the mass centre of the resulting 200 clusters. Connectivity matrices were generated by indexing the number of streamlines between any two nodes (Assaf et al., 2020). The resulting connectivity matrices are hence sparse and weighted adjacency matrices. For the analysis of the Laplacian eigenspectrum, connectivity matrices were binarized by setting connectivity values to 1 if the connection exists and 0 otherwise.\n\nEven though the sizes of the regions differ across species, we opted for a uniform parcellation scheme (i.e. 200 nodes) for several reasons. First, to our knowledge, there is no MRI parcellation for the brains of the majority of the species studied here. Second, how brain regions correspond to one another across species (i.e. homologues) is still not completely understood for many regions and for many species. Third, comparing networks of different sizes introduces numerous analytical biases because most network measures trivially depend on size, making the comparison challenging. We therefore opted to implement a uniform parcellation scheme across species, allowing us to translate connectomes into a common reference feature space in which they can be compared (see \u2018Spectral distance\u2019 and \u2018Topological distance\u2019 sections). Note that this approach does not take into account species-specific regional delineations, nor does it capture homologies between nodes across species, which are still not completely understood. To ensure that the results are not idiosyncratic to the choice of parcellation and parcellation scale, we replicated all results using a lower resolution (100 node; Figure 2\u2014figure supplement 7 and Figure 3\u2014figure supplement 9) and higher resolution (300 node; Figure 2\u2014figure supplement 8 and Figure 3\u2014figure supplement 10) parcellation.\n\n### Controlling for the scanning resolution and acquisition parameters\n\nAs the size of the matrix was kept constant across species (i.e. 200 nodes), voxel dimensions were linearly scaled with brain volume, thus resulting in different scanning resolutions across the samples. To verify that this was a reasonable assumption, several tests were performed: (1) the diffusion-based connectome of the mouse was previously compared against one derived from tract-tracing (see Assaf et al., 2020 for details), obtaining a strong correlation between both networks. (2) Results on the connectivity conservation principle presented in Assaf et al., 2020 were invariant to different scanning and parcellation parameters across nine different species. (3) The diffusion-weighted imaging method was able to reconstruct specific ground truth fibre systems across brains, and these fibre bundles scaled in size with brain volume.\n\n### Spectral distance\n\nTo estimate similarities between species\u2019 connectome organization, we computed the Laplacian eigenspectrum of each graph. The Laplacian eigenspectrum acts like a spectroscopy of the graph and summarizes distinct aspects of the underlying topology (Banerjee and Jost, 2009; Banerjee and Jost, 2008; Newman, 2001; Grone et al., 1990; Grone and Merris, 1994; Das, 2004). We considered the normalized Laplacian matrix $L$ for undirected graphs with binary adjacency matrix $A$ defined as $L=I-D^{-1}\u2062A$, where $D$ is a diagonal matrix with $D\u2062(i,i)=$ deg $i$, and deg $i$ is the binary degree of vertex $i$.\n\n$$\nL(i,j)={1ifi=j\u2212\\frac{1}{degi}ifiandjareconnected0otherwise\n$$\n\nwith $i$ and $j$ representing two vertices of the graph. The Laplacian spectrum is then given by the set of all the eigenvalues of $L$. Importantly, the eigenspectrum of the normalized Laplacian has the advantage that all eigenvalues are in the range $[0,2]$ (Chung, 1996), facilitating comparison across species. Furthermore, the normalized Laplacian is unitarily equivalent to the symmetric normalized Laplacian (Chung, 1996), that is, $L_{s\u2062y\u2062m\u2062m}=I-D^{-\\frac{1}{2}}\u2062A\u2062D^{\\frac{1}{2}}$, thus the eigenvalues of both Laplacians are real. The spectral distance between every pair of animal species was then estimated as 1 minus the cosine similarity of their Laplacian eigenvalue distributions, where eigenvalue distributions were assumed to be vectors in a high-dimensional space.\n\nTo allow comparison of our results with previous reports (de Lange et al., 2014), in addition to comparing species using their connectome\u2019s Laplacian eigenspectra straightaway, we smoothed the eigenvalue distribution (i.e. $\\lambda_{1}$, $\\lambda_{2}$, \u2026, $\\lambda_{n}$) by convolving eigenvalue frequencies with a Gaussian kernel. The new estimated density is given by\n\n$$\n\u0393(x)=\\sumi=1n\\frac{1}{\\sqrt{2\\pi\\sigma^{2}}}exp(\u2212\\frac{|x\u2212\\lambda_{i}|^{2}}{2\\sigma^{2}})\n$$\n\nwith $n$ being the number of eigenvalues in the approximated distribution, and $\\sigma$ being a smoothing factor of 0.015. We used a step of 0.001, which resulted in a total of $n=2000$ points. The approximated distribution was normalized such that area under the curve is 1. For the smoothing, we used the KernelDensity function in the neighbors module of the Scikit-learn Python package (Pedregosa et al., 2011). Details of the implementation can be found in the publicly available code repository. As with the Laplacian eigenspectrum, the spectral distance between every pair of animal species was estimated as 1 minus the cosine similarity of their smoothed (normalized) Laplacian eigenvalue distributions. Results of this supplementary analysis can be found in Figure 2\u2014figure supplement 9.\n\n### Topological distance\n\nAn alternative way to estimate inter-species distances in connectome organization is to compute the correlation between their network features. We estimated a set of local and global graph theory measures of the connectivity matrix. Local measures include node degree, clustering coefficient, node betweenness, and closeness. Global measures include characteristic path length, transitivity, and assortativity. We included both the binary and the weighted versions of these measures. We constructed a vector of local and global topological features for every animal species. Because there are as many local features as nodes in a network, we only used the average and the standard deviation of these measures. Similar to the spectral distance, the topological distance between every pair of animal species was estimated as 1 minus the cosine similarity of their topological feature vectors. All local and global features were estimated using the Python version of the Brain Connectivity Toolbox (https://github.com/aestrivex/bctpy; Sporns et al., 2022; Rubinov and Sporns, 2010). Definitions of these topological metrics can be found below.\n\n#### Local features\n\n#### Global features\n\n### Small-world organization\n\nWe use the index proposed in Humphries and Gurney, 2008 to measure connectomes\u2019 small-worldness level. The index is given by\n\n$$\n\\gamma=\\frac{C}{C_{rand}}\n$$\n\n\n\n$$\n\\lambda=\\frac{L}{L_{rand}}\n$$\n\n\n\n$$\nS=\\frac{\\gamma}{\\lambda}\n$$\n\nwhere $L$ and $C$ are the corresponding characteristic path length and clustering coefficient of each connectome, respectively, and $L_{r\u2062a\u2062n\u2062d}$ and $C_{r\u2062a\u2062n\u2062d}$ are the corresponding average quantities for a set of 1000 randomly rewired graphs that preserve the degree sequence and distribution of the nodes (Maslov and Sneppen, 2002). A network is said to possess a small-world architecture if $S\\geq1$, that is, if it situates above the identity line in a $\\gamma$ vs. $\\lambda$ plot.\n\n### Multi-resolution community detection\n\nWe used the Louvain algorithm to determine the optimal community structure of connectomes (Blondel et al., 2008). Briefly, this algorithm extracts communities from large networks by optimizing a modularity score. Here, we use the Q-metric as the objective function (Blondel et al., 2008; Fortunato and Barth\u00e9lemy, 2007):\n\n$$\nQ\u2062(\\gamma)=\\frac{1}{2\u2062m}\u2062\\sumi\u2062j[A_{i\u2062j}-\\gamma\u2062\\frac{k_{i}\u2062k_{j}}{2\u2062m}]\u2062\\delta\u2062(c_{i},c_{j})\n$$\n\nwhere $A$ corresponds to the adjacency matrix of the network, ki is the degree of node $i$, $m$ is the sum of all connections in the graph, ci is the community affiliation of node $i$, and $\\delta$ is the Kronecker delta function (i.e. $\\delta\u2062(x,y)=1\u2003if\u2003x=y,0\u2003otherwise$). The size of the partition is controlled by a resolution parameter $\\gamma$ (higher $\\gamma$ values result in a larger number of modules). Because the Louvain method is a greedy algorithm, we first found multiple (250) optimal partitions at $\\gamma=1$, and then we determined a single partition using a consensus clustering approach (Bassett et al., 2013).\n\n### Classification of edges\n\nConnectomes\u2019s connections were classified into different categories based on four criteria. The first criterion is based on the modular structure of the network and classifies connections depending on whether they link brain regions within the same module (i.e. intra-modular) or regions across different modules (i.e. inter-modular); the second criterion is whether connections link brain regions within the same hemisphere (i.e. intra-hemispheric connections) or across hemispheres (inter-hemispheric connections); the third criterion is based on the physical length of the connections (i.e. short-, medium-, and long-range connections); and the fourth criterion is based on the rich-club structure of the network (i.e. rich-club, feeder, and peripheral connections).\n\n#### Inter- vs. intra-modular connections\n\nTo classify connections as being either inter- or intra-modular, a consensus clustering algorithm was applied on each connectome to determine a partition of the network into different modules (see \u2018Community detection\u2019). Once modules are identified, inter-modular connections correspond to those linking brain regions across different modules, whereas intra-modular connections correspond to those linking brain regions belonging to the same module.\n\n#### Connection length\n\nEuclidean distance between regions\u2019 centres was used as a proxy for connection length. To subdivide connections into short-, medium-, and long-range, connection lengths were estimated as a percentage with respect to the maximum distance between regions. Short-range connections correspond to those that are less than or equal to 25% of the maximum distance; medium-range connections are above 25% but less than or equal to 75% of the maximum distance; and long-range connections are those above 75% of the maximum distance.\n\n#### Rich-club vs. feeder vs. peripheral connections\n\nTo classify edges as being either rich-club, feeder, or peripheral connections, it is necessary to identify first the rich-club of hubs in the network, that is, the densely interconnected core of nodes that have a disproportionately high number of connections (van den Heuvel and Sporns, 2011; van den Heuvel et al., 2012). To do so, we compute the rich-club coefficients $\u03a6\u2062(k)$ across a range of degree $k$ of the unweighted (binary) connectomes. For binary networks, all nodes that show a degree $\\leqk$ are removed from the network, and for the remaining set of nodes (i.e. a sub-graph), the rich-club coefficient is estimated as the ratio of connections present in the sub-graph, to the total number of possible connections that would be present if the resulting sub-graph was fully connected. Formally, the rich-club coefficient is given by Zhou and Mondragon, 2004; Colizza et al., 2006; McAuley et al., 2007\n\n$$\n\u03d5(k)=\\frac{2E_{>k}}{N_{>k}(N_{>k}\u22121)}\n$$\n\nIn random networks, such as the Erd\u0151s\u2013R\u00e9nyi model, nodes with a higher degree have a higher probability of being interconnected by chance alone, thus showing an increasing function of $\u03a6\u2062(k)$. For this reason, the rich-club coefficient is typically normalized relative to a set of $m$ comparable random networks of equal size and node degree sequence and distribution (Maslov and Sneppen, 2002; Colizza et al., 2006; McAuley et al., 2007). The normalized rich-club coefficient is then given by\n\n$$\n\u03d5_{norm}(k)=\\frac{\u03d5(k)}{\u03d5_{random}(k)}\n$$\n\nwhere $\u03d5_{r\u2062a\u2062n\u2062d\u2062o\u2062m}$ corresponds to the average rich-club coefficient over the $m$ random networks. In our particular case, $m=1000$. An increasing normalized coefficient $\u03a6_{norm}>1$ over a range of $k$ reflects the existence of rich-club organization.\n\nTo assess the statistical significance of rich-club organization, we used permutation testing (Bassett and Bullmore, 2009; van den Heuvel et al., 2010). Briefly, the population of the $m$ random networks yields a null distribution of rich-club coefficients. For the range of $k$ expressing rich-club organization (i.e. $\u03a6_{norm}>1$), we tested whether $\u03d5\u2062(k)$ significantly exceeds $\u03a6_{r\u2062a\u2062n\u2062d\u2062o\u2062m}\u2062(k)$. Next, we identify the kth level at which the maximum significant $\u03a6_{n\u2062o\u2062r\u2062m}$ occurs. Nodes with a degree $\\geqk$ are said to belong to the kth-core of the network. Next, we identify the hubs, that is, nodes whose degree is above the average degree of the network plus 1 standard deviation. Therefore, rich-club nodes were identified as those nodes that are both hubs and belong to the kth-core of the network.\n\nOnce rich-club nodes are identified, rich-club connections are defined as edges between rich-club nodes; feeder connections are edges connecting rich-club to non-rich-club nodes, and peripheral connections are edges between non-rich-club nodes.\n\n### Controlling for replicas\n\nBecause some of the species have multiple scans, this could bias the distribution of intra- and inter-order distances, which could be dominated by those species with a large number of replicas. To account for that, we randomly sample a single connectome per species, and we calculated inter-species distances. We repeated this procedure iteratively 10,000 times. The reported intra- and inter-order distance distributions correspond to the average distances across iterations.\n\n### Controlling for density\n\nSome of the graph features used for the estimation of the topological distance are highly dependent on the density of the network. To regress out the effects of network density on a graph feature, a univariate linear and an exponential model are fitted using density as the explanatory variable, and each feature as response variable. That is,\n\n$$\nLinear:\u2003y=a\u2062x+b\n$$\n\n\n\n$$\nExponential:\u2003y=a\u2062e^{b\u2062x}+c\n$$\n\nwhere $y$ represents network features and $x$ corresponds to density. Network features are then replaced by the residuals of the model. The decision to fit either a linear, an exponential, or no model at all was based on the variance explained by the model or $R^{2}$. The model with the largest $R^{2}$ is selected. Only those features with $R^{2}>0.1$ were controlled to account for density (features in Figure 3\u2014figure supplement 5 with a regression line).\n\n### Code availability\n\nAll codes used for data analysis and figure generation are publicly available on GitHub (https://github.com/netneurolab/suarez_connectometaxonomy; Suarez, 2022 copy archived at swh:1:rev:0d8e98f65a51a77784b31ec3ca59176d9119d927) and are built on top of the following open-source Python packages: rnns (https://github.com/estefanysuarez/rnns.git; Suarez, 2021), Netneurotools (https://github.com/netneurolab/netneurotools; Markello et al., 2022), Numpy (Harris et al., 2020; van der Walt et al., 2011; Oliphant, 2006), Scipy (Virtanen et al., 2020), Pandas (McKinney, 2010), Scikit-learn (Pedregosa et al., 2011), bctpy (https://github.com/aestrivex/bctpy; Sporns et al., 2022; Rubinov and Sporns, 2010), Matplotlib (Hunter, 2007), and Seaborn (Waskom et al., 2016).\n",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "33039ea2-c6fa-4f9a-b6e5-10e28991a060",
+      "submission_id": "fb898e24-0a3e-44ce-9416-3021a3f3c0a0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chris I Baker, https://ror.org/01cwqze88 National Institute of Mental Health, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78635.sa0](https://doi.org/10.7554/eLife.78635.sa0)\n\nThis important article uses an impressively rich data set (obtained and curated by the authors) to compare the structural brain connectomes of many animals spanning six taxonomic orders. The approach is innovative and relies on graph theoretical measures to describe the connectivity, which means it can be done without the need to spatially/functionally match the brains. The authors find compelling evidence that there is more variability between than within order. They attribute this effect to changes in local connectivity features, whereas global patterns are preserved. The approach can potentially be a useful way to study phylogeny and brain evolution.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Chris I Baker, https://ror.org/01cwqze88 National Institute of Mental Health, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78635.sa1](https://doi.org/10.7554/eLife.78635.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A connectomics-based taxonomy of mammals\" for consideration by eLife, and sorry for the delay in getting the reviews back to you.\n\nYour article has been reviewed by 3 peer reviewers, including Saad Jbabdi as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Chris Baker as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Katja Heuer (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe paper was well received. There are several technical comments that need addressing, but the main revision in my opinion concerns the need for more insight as to what is driving the similarities and differences in the connectomes. See the detailed comments below.\n\nPlease find below the detailed reviews. I have tried to merge the 3 reviewer comments into a single set of comments, so these might not be in a sensible order.\n\nReviewer Comments\n\nReviewers' (Recommendations for the authors):\n\nI think the assumption of the use of the same 200 regions for all species should be shown to be justified.\n\nI would have liked to have seen more detail on how the differences between species is really implemented on the brains, if even in a few species. For instance, some of the authors have published extensively on human specializations in connectivity. It would be nice to show that some of the differences they identified in that work fall under the 'local regional connectivity profile' features that are reported here.\n\nSpecies names sometimes correspond to groups of species. Would it be possible to provide the exact species names? The dataset in Zenodo includes, for example, \"Macaque\" which I assume may be Rhesus macaques, but for example, \"colobus\" is a group of monkeys including several species and it would be good to know which species have been included here. Given the vast nature of the dataset, either the exact English names, or the binomial species names, or a csv file which could allow potential users of the data to make the correspondence could be great to facilitate reuse of the data.\n\nOn page 6 the authors conclude that given the larger connectome similarity within one taxonomic group, the organisation of the brain connectome may be under selection pressure. However, also the Brownian motion model of evolution \u2013 where phenotypes are assumed to vary randomly along the phylogenetic tree \u2013 can explain phenotypes that are more similar within one taxonomic group.\n\nWhen the authors introduce that the \"common space\" approach was used, maybe they can add a short note on what this means in addition to just the reference?\n\nMethods: in the abstract, the authors say the data was \"collected using a single protocol on a single scanner.\" whereas in the methods section they refer to 2 scanners and 2 field strengths. It seems quite standard to acquire small animal brains on a scanner with higher field strength and different head coils, there is no problem, I just thought maybe there is no need for the 1-scanner statement in the abstract? If the authors wanted to keep something along these lines, it could take up the idea they mention of a \"unified MRI protocol was implemented for all species\" I guess.\n\nOn page 7, the authors say \"Consistent with the notion that neural circuit evolution involves local circuit modifications to adapt to specific challenges [10], such as extreme environmental pressures [36, 79, 89], or to support specific behaviours.\" I would just suggest a slight reformulation, as evolution doesn't do modifications to adapt to challenges or to support behaviour, but rather involves random modifications, that then may have provided an advantage in facing certain challenges or supporting certain behaviours.\n\nOn page 8, the authors suggest a \"This scaling results in less space for white matter connectivity with increasing brain size.\" I wonder how this result compares with the reports of a positive allometry of white matter. For example, Zhang and Sejnowski\n\n(https://doi.org/10.1073/pnas.090504197) report a scaling of 1.23 for white matter and build a scaling model for justifying it. There are several references within that paper that go in the same direction. The positive scaling of WM seems also intuitively true, as mice have very little WM compared with monkeys or humans, for example.\n\nOther Comments:\n\n\u2013 Visualisation\n\nSome comments / suggestions on the various visualisations in the paper:\n\n\u2013 I think a 2D scatter plot using multidimensional scaling would nicely show the between and within order distances (I tried it on your data, it looks nice). This could be complemented by a hierarchical clustering diagram?\n\n\u2013 I am not sure why you need to min-max rescale all the distances to be between 0 and 1. In addition, min-max measures are sensitive to outliers. If one group happens to have an outlier, that could drive the entire group to be at the extreme. Is this likely to be happening here? It would also be useful to know at what stage this rescaling is done?\n\n\u2013 I don't think the histograms in figures 2 and 3 should be shown using kde smoothing. It hides the data, and actually does a disservice to the data (e.g. in Figure 2B, the diagonal values are visibly lower than the extra diagonal values, but when kde-smoothed the effect appears to be lower than it is).\n\nAnother thing about the spectral approach: the lowest eigenvalue is famously important in telling us something about how connected the network is in general (i.e. how easy it is to break it down). Did you see any differences between and within species/orders in this measure?\n",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "99ec7b09-51df-47e2-a253-095f4e9d5cc3",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C1",
+      "claim": "The MaMI database includes high-resolution ex vivo diffusion and T2- and T1-weighted brain scans of 125 different animal species (a total of 225 scans including replicas).",
+      "claim_type": "EXPLICIT",
+      "source": "The MaMI database includes a total of 225 ex vivo diffusion and T2- and T1-weighted brain scans of 125 different animal species (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number of species and scans in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "68aa24fc-65ae-4d3b-bf56-9c50ae846ed7",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C2",
+      "claim": "All MaMI images were acquired using the same scanner and protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "All images were acquired using the same scanner and protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the unified acquisition protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "4096f207-2f84-4f22-abeb-6af89c336dc3",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C3",
+      "claim": "The MaMI data set spans 5 different superorders: Afrotheria, Euarchontoglires, Laurasiatheria, Xenarthra, and Marsupialia.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it includes animal species across 5 different superorders (Afrotheria, Euarchontoglires, Laurasiatheria, Xenarthra, and Marsupialia) and 12 different orders (Cetartiodactyla, Carnivora, Chiroptera, Eulipotyphla, Hyracoidea, Lagomorpha, Marsupialia, Perissodactyla, Primates, Rodentia, Scandentia, and Xenarthra).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists the taxonomic superorders included in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "7aecc1a8-0610-49db-80d2-345a7d0d36db",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C4",
+      "claim": "The MaMI data set spans 12 different orders: Cetartiodactyla, Carnivora, Chiroptera, Eulipotyphla, Hyracoidea, Lagomorpha, Marsupialia, Perissodactyla, Primates, Rodentia, Scandentia, and Xenarthra.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it includes animal species across 5 different superorders (Afrotheria, Euarchontoglires, Laurasiatheria, Xenarthra, and Marsupialia) and 12 different orders (Cetartiodactyla, Carnivora, Chiroptera, Eulipotyphla, Hyracoidea, Lagomorpha, Marsupialia, Perissodactyla, Primates, Rodentia, Scandentia, and Xenarthra).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly lists the taxonomic orders included in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "08462d79-c3a7-4a7f-86cb-aadd2a393d0c",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C5",
+      "claim": "All connectomes were reconstructed using a uniform parcellation scheme consisting of 200 brain areas, including cortical and subcortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "All connectomes were reconstructed using a uniform parcellation scheme consisting of 200 brain areas, including cortical and subcortical regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the parcellation scheme used for connectome reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "1eed3ed8-cff2-4e98-9738-6541069be60d",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C10",
+      "claim": "Species with similar genetics, morphology, and behaviour tend to have similar connectome architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, results suggest that species with similar genetics, morphology, and behaviour tend to have similar connectome architecture. In other words, variations in connectome architecture reflect phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the statistical findings to draw this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "e95390e0-71bd-40f5-99a9-2e6c9bf4ba78",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C11",
+      "claim": "Variations in connectome architecture reflect phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, results suggest that species with similar genetics, morphology, and behaviour tend to have similar connectome architecture. In other words, variations in connectome architecture reflect phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the statistical findings to draw this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "dc09e206-57d5-480f-9d6a-371e54fed865",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C12",
+      "claim": "The difference between intra- and inter-order topological distances is larger when only local (node-level) features are included compared to when only global features are considered.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the difference between intra- and inter-order topological distances tends to be larger when only local (node-level) features are included in the estimation of the topological distance (i.e. degree, clustering coefficient, betweenness, and closeness; Figure 3b and e) compared to when only global features are considered (i.e. characteristic path length, transitivity, and assortativity; Figure 3c and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports findings from analysis of topological features shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "769b75b6-98d8-4e98-9bf7-fe93907edb50",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C13",
+      "claim": "Differentiation of orders is better explained by differences in local network topology than by global network topology.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that differentiation of orders is better explained by differences in local network topology; conversely, global network topology appears to be conserved across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the topological distance findings to draw this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "d4ef88b1-c001-4820-ae95-e24fb936afa5",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C14",
+      "claim": "Global network topology appears to be conserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that differentiation of orders is better explained by differences in local network topology; conversely, global network topology appears to be conserved across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the topological distance findings to draw this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "8b0f5ecc-4d05-459a-ae15-9e895b6cf650",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C15",
+      "claim": "The relative local connectivity of the anterior and the posterior ends of the cortex changes across taxonomic orders.",
+      "claim_type": "EXPLICIT",
+      "source": "An illustration of this principle is depicted in Figure 3\u2014figure supplement 2 showing that the relative local connectivity of the anterior and the posterior ends of the cortex changes across taxonomic orders (Barrett et al., 2020; Krubitzer and Kaas, 2005; Krubitzer and Kahn, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript references Figure 3\u2014figure supplement 2 and cites supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "a78f13c5-8fc8-450d-868b-7091ee133727",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C16",
+      "claim": "The difference between intra- and inter-order topological distances is greater for binary than for weighted features.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe that that the difference between intra- and inter-order topological distances is greater for binary than for weighted features (Figure 3a\u2013c and d\u2013f, respectively), independently of being local or global.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports findings from analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "a72ee4fe-533f-4456-8d31-ead8f27909ff",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C17",
+      "claim": "The strength of the connections is less important than the binary architecture of the connectivity matrix for differentiating taxonomic orders.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the strength of the connections is less important than the binary architecture of the connectivity matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the binary vs. weighted feature comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "55f73686-eef6-46d2-ac24-868fb90a6436",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C18",
+      "claim": "Network density varies across taxonomic orders.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the features used for the estimation of the topological distance depend on network density, which varies across taxonomic orders (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript references Figure 3\u2014figure supplement 4 showing density variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "af030fbe-3f0d-468a-8908-02df5db8f1a1",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C19",
+      "claim": "Differences between intra- and inter-order topological distances are not driven by differences in network density.",
+      "claim_type": "EXPLICIT",
+      "source": "Results, shown in Figure 3\u2014figure supplement 6, suggest that differences between intra- and inter-order topological distances are not driven by differences in network density, but variations in wiring patterns, as captured by topological features, play a role in the observed phylogenetic variations in connectome organization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results after controlling for network density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "22a44e9e-f888-44c8-b3f5-cb4139fb0881",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C20",
+      "claim": "Variations in wiring patterns, as captured by topological features, play a role in the observed phylogenetic variations in connectome organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Results, shown in Figure 3\u2014figure supplement 6, suggest that differences between intra- and inter-order topological distances are not driven by differences in network density, but variations in wiring patterns, as captured by topological features, play a role in the observed phylogenetic variations in connectome organization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript interprets results after controlling for network density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "3336765d-d1a3-4d4a-a913-97f061b1fff8",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C21",
+      "claim": "All connectomes display high and diverse levels of small-worldness.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports in individual species' connectomes (Hilgetag and Kaiser, 2004; Sporns and Zwi, 2004; Bassett and Bullmore, 2006), we find that all connectomes display high and diverse levels of small-worldness, suggesting that simultaneously highly segregated and integrated networks is a global trait conserved across mammalian brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports findings on small-worldness and cites supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "694157af-efd9-4baa-b943-a7fd26bc9ef5",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C22",
+      "claim": "Simultaneously highly segregated and integrated networks is a global trait conserved across mammalian brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports in individual species' connectomes (Hilgetag and Kaiser, 2004; Sporns and Zwi, 2004; Bassett and Bullmore, 2006), we find that all connectomes display high and diverse levels of small-worldness, suggesting that simultaneously highly segregated and integrated networks is a global trait conserved across mammalian brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the small-worldness findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "a44bfd01-add1-4526-958d-a5937760866b",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C23",
+      "claim": "The relative proportions of inter- and intra-modular connections are conserved across taxonomic orders.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find that, along the four partitions, the relative proportions of each connection class are conserved across taxonomic orders, despite differences in connection density.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports findings on edge class proportions shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "bd03a030-ddaf-4773-9192-93b511b1744c",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C24",
+      "claim": "The relative proportions of inter- and intra-hemispheric connections are conserved across taxonomic orders.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find that, along the four partitions, the relative proportions of each connection class are conserved across taxonomic orders, despite differences in connection density.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports findings on edge class proportions shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "aa64f136-719b-4a35-bdb7-45c3f91995da",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C25",
+      "claim": "The relative proportions of short-, medium-, and long-range connections are conserved across taxonomic orders.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find that, along the four partitions, the relative proportions of each connection class are conserved across taxonomic orders, despite differences in connection density.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports findings on edge class proportions shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "4f3f78ea-9032-4caf-9dd9-c216a2d1dfba",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C26",
+      "claim": "The relative proportions of rich-club, feeder, and peripheral connections are conserved across taxonomic orders.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find that, along the four partitions, the relative proportions of each connection class are conserved across taxonomic orders, despite differences in connection density.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports findings on edge class proportions shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "08546053-b1d8-4871-bd7a-69912d96f058",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C27",
+      "claim": "Connectome organization recapitulates to a large extent traditional taxonomies.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we chart the organization of whole-brain neural circuits across 111 mammalian species and 5 superorders. We find that connectome organization recapitulates to a large extent traditional taxonomies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the main finding in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "874bc6e6-a284-4f25-a9e1-653e17b489ea",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C28",
+      "claim": "While all connectomes retain hallmark global features and relative proportions of edge classes, inter-species variation is driven by local regional connection profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "While all connectomes retain hallmark global features and relative proportions of edge classes, inter-species variation is driven by local regional connection profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the main finding in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "38b6f4c5-cabe-489c-b4c1-2dc1b417c27f",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C29",
+      "claim": "Inter-species similarity \u2013 as defined by morphology, behaviour, and genetics \u2013 is concomitant with the organization of neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows that inter-species similarity \u2013 as defined by morphology, behaviour, and genetics \u2013 is concomitant with the organization of neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the findings in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "717f47c2-afb3-4eb6-b132-ada58ea64ed1",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C30",
+      "claim": "Species that are part of the same taxonomic order tend to display similar connectome architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, species that are part of the same taxonomic order tend to display similar connectome architecture, suggesting that brain network organization is under selection pressure (see also Butler and King, 2004; Lande, 1976; Wright, 1931 for an alternative mechanism of trait evolution characterized by pure drift models based on Brownian motion), analogous to size, weight, or colour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the findings and cites supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "3f1ac21f-9ecb-4ef6-b192-2409b7290aa6",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C31",
+      "claim": "Brain network organization is under selection pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, species that are part of the same taxonomic order tend to display similar connectome architecture, suggesting that brain network organization is under selection pressure (see also Butler and King, 2004; Lande, 1976; Wright, 1931 for an alternative mechanism of trait evolution characterized by pure drift models based on Brownian motion), analogous to size, weight, or colour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript suggests this interpretation with citation to alternative mechanisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "a044949b-bbe6-4c48-ba3c-a38d83bea17f",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C32",
+      "claim": "All connectomes display consistent global hallmarks including high clustering and near-minimal path length characteristic of small-world organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all connectomes display consistent global hallmarks that were previously documented in tract-tracing studies, including high clustering and near-minimal path length characteristic of small-world organization, as well as segregated network communities and densely interconnected hub nodes (van den Heuvel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports findings and cites supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "3f1f489d-121d-4fc5-ac5b-080a36679313",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C33",
+      "claim": "All connectomes display segregated network communities and densely interconnected hub nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all connectomes display consistent global hallmarks that were previously documented in tract-tracing studies, including high clustering and near-minimal path length characteristic of small-world organization, as well as segregated network communities and densely interconnected hub nodes (van den Heuvel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports findings and cites supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "a7badaa7-35e0-4931-bb69-174c41b17e5a",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C34",
+      "claim": "The conservation in global wiring and organizational principles is supported by a reduced difference between intra- and inter-order topological distances estimated exclusively from global features compared to local features.",
+      "claim_type": "EXPLICIT",
+      "source": "The conservation in global wiring and organizational principles is further supported by a reduced difference between intra- and inter-order topological distances estimated exclusively from global features compared to the case in which only local features are considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the topological distance findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "48900364-31de-4a64-a8f5-fd16cd5c0511",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C35",
+      "claim": "Relative differences between connectomes across taxonomic orders are mainly driven by local regional features.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, relative differences between connectomes across taxonomic orders are mainly driven by local regional features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the topological distance findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "46241f3b-92f0-4dfe-bc2a-a5845686c40c",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C36",
+      "claim": "A brain region's functional fingerprint is determined by its underlying cortico-cortical connectional fingerprint.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with the idea that a brain region's functional fingerprint \u2013 the specific computation or function that it performs by virtue of its unique firing patterns and dynamics \u2013 is determined by its underlying cortico-cortical connectional fingerprint (Mars et al., 2021; Mars et al., 2018b; Mars et al., 2016; Passingham et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "16374f9b-2f04-49ce-85c2-dcf78544960a",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C37",
+      "claim": "Inter-species differences in functional and behavioural repertoire are likely supported by changes in local connectivity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, inter-species differences in functional and behavioural repertoire are likely supported by changes in local connectivity patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the findings on local connectivity differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "ccc94394-f53a-434b-9910-a0487724e586",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C38",
+      "claim": "Neural circuit evolution involves random local circuit modifications that may have provided species with behavioural adaptations.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the same lines, our results are also consistent with the notion that neural circuit evolution involves random local circuit modifications that may have provided species with behavioural adaptations, allowing them to face specific challenges (Barker, 2021), such as extreme environmental pressures Park et al., 2008; Smith et al., 2011; Eigenbrod et al., 2019, or to support specific behaviours, such as courtship (O'Grady and DeSalle, 2018; Markow and O'Grady, 2005; Ding et al., 2019; Seeholzer et al., 2018; Khallaf et al., 2020; Barkan et al., 2018; Ding et al., 2016; York et al., 2019), social bonding (Insel and Shapiro, 1992; Winslow et al., 1993; Jaggard et al., 2020; Loomis et al., 2019), or foraging (Vanwalleghem et al., 2018; Pantoja et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites extensive literature supporting this interpretation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "1196c2ff-885d-44b6-9cff-6e05cfbc240e",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C39",
+      "claim": "The relative proportion of edge classes (inter- vs. intra-modular, inter- vs. intra-hemispheric, short- vs. medium- vs. long-range and rich-club vs. feeder vs. peripheral) are preserved across species.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that the relative proportion of edge classes (inter- vs. intra-modular, inter- vs. intra-hemispheric, short- vs. medium- vs. long-range and rich-club vs. feeder vs. peripheral) are preserved across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports this finding in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "2b7162ad-bc13-4f37-a1ac-6737665177a6",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C40",
+      "claim": "Species with fewer commissural inter-hemispheric connections exhibit lower hemispheric mean shortest path (i.e. stronger intra-hemispheric connectivity).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, species with fewer commissural inter-hemispheric connections exhibit lower hemispheric mean shortest path (i.e. stronger intra-hemispheric connectivity), suggesting a similar connectivity conservation principle (Assaf et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a supporting study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "4be32d50-36b6-412f-8049-9ede1fd519f6",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C41",
+      "claim": "Diffusion-weighted MRI data across 14 different primate species reported negative allometric scaling of cortical surface area with white matter volume and corpus callosum cross-sectional area.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, using diffusion-weighted MRI data across 14 different primate species, another study reported negative allometric scaling of cortical surface area with white matter volume and corpus callosum cross-sectional area (Ardesch et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a supporting study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "1fb0a73e-6bc8-4c5d-9a38-698fcc84546b",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C42",
+      "claim": "Negative allometric scaling results in less space for white matter connectivity with increasing brain size, translating into larger brains with a relatively higher proportion of short-range connections than long-range connections when compared with smaller brains.",
+      "claim_type": "EXPLICIT",
+      "source": "This scaling results in less space for white matter connectivity with increasing brain size, translating into larger brains with a relatively higher proportion of short-range connections than long-range connections when compared with smaller brains (Ardesch et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a supporting study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "10f067a0-872c-41f6-985b-13ec88f7e086",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C43",
+      "claim": "The proportion of total volume devoted to cerebral white matter is higher in larger brains, but it does not keep pace with the rapid cortical expansion that occurs with larger brain size.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, however, do not contradict studies showing a positive allometric scaling between white matter and grey matter volume (Zhang and Sejnowski, 2000; Theunissen, 1988; Schlenska, 1974; Frahm et al., 1982); while the proportion of total volume devoted to cerebral white matter is higher in larger brains, it does not keep pace with the rapid cortical expansion that occurs with larger brain size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting studies and provides interpretation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "6014dccd-3600-4c7e-bd22-8ac5c11f4f22",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C44",
+      "claim": "The architecture of neural circuits and their physical embedding are intertwined.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively these studies highlight that the architecture of neural circuits and their physical embedding are intertwined, and the distribution of connections is such that it retains consistent global architectural features across phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets findings from multiple studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "aeb5f116-f3b1-4d28-b45e-cc35b677b15f",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C45",
+      "claim": "The distribution of connections retains consistent global architectural features across phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively these studies highlight that the architecture of neural circuits and their physical embedding are intertwined, and the distribution of connections is such that it retains consistent global architectural features across phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets findings from multiple studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "737a6382-7225-4b07-8d3f-55b356fdf413",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C46",
+      "claim": "No animals were deliberately euthanized for this study.",
+      "claim_type": "EXPLICIT",
+      "source": "No animals were deliberately euthanized for this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this ethical consideration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "4af34ba5-3b6e-4a46-a4b9-6116b31bc778",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C47",
+      "claim": "All brains were collected based on incidental death of animals in zoos in Israel or natural death collected abroad.",
+      "claim_type": "EXPLICIT",
+      "source": "All brains were collected based on incidental death of animals in zoos in Israel or natural death collected abroad, and with the permission of the national park authority (approval no. 2012/38645) or its equivalent in the relevant countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the sample collection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "bf469d71-94bd-40e5-8dfe-7445151abd36",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C48",
+      "claim": "Small brains were scanned using a 7-T 30/70 BioSpec Avance Bruker system, whereas larger brains were scanned using a 3-T Siemens Prisma system.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the limited size of the bore, small brains were scanned using a 7-T 30/70 BioSpec Avance Bruker system, whereas larger brains were scanned using a 3-T Siemens Prisma system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the scanning equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "6a46300f-20c0-457c-9f55-67667fc86aeb",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C49",
+      "claim": "Diffusion MRI data were acquired using high angular resolution diffusion imaging (HARDI) with 60 gradient directions (in the 7-T scanner) or 64 gradient directions (in the 3-T scanner).",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusion MRI data were acquired using high angular resolution diffusion imaging (HARDI), which consists of a series of diffusion-weighted, spin-echo, echo-planar-imaging images covering the whole brain, scanned in either 60 (in the 7-T scanner) or 64 gradient directions (in the 3-T scanner) with an additional three non-diffusion-weighted images (B0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the MRI acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "37c24212-82f0-455d-9e39-2ecfe626efae",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C50",
+      "claim": "The b value was 1000 smm-2 in all scans.",
+      "claim_type": "EXPLICIT",
+      "source": "The b value was 1000 smm-2 in all scans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the b value used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "aeaac453-afd5-43df-b74f-91f8dcc72f83",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C51",
+      "claim": "Brains were parcellated into 200 nodes using a k-means clustering algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Brains were parcellated into 200 nodes using a k-means clustering algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the parcellation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "b77909a0-3f84-4973-bdd4-fd9661cfe233",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C52",
+      "claim": "All the fibre end-point positions were used as input for k-means clustering, and cluster assignment was done based on the similarity in connectivity profile between pairs of end points.",
+      "claim_type": "EXPLICIT",
+      "source": "All the fibre end-point positions were used as input, and cluster assignment was done based on the similarity in connectivity profile between pairs of end points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the clustering method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "d260133f-b7c3-4ee1-9d65-9cdae86b8fb0",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C53",
+      "claim": "Connectivity matrices were generated by indexing the number of streamlines between any two nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Connectivity matrices were generated by indexing the number of streamlines between any two nodes (Assaf et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the connectivity matrix generation method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "1096612a-f294-4107-8c8d-9f7c45808cae",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C54",
+      "claim": "The resulting connectivity matrices are sparse and weighted adjacency matrices.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting connectivity matrices are hence sparse and weighted adjacency matrices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the properties of the connectivity matrices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "6347be6e-ad98-461d-a5e0-6fd61c60aa82",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C55",
+      "claim": "A uniform parcellation scheme (200 nodes) was implemented to facilitate comparison of network architecture across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the sizes of the regions differ across species, we opted for a uniform parcellation scheme (i.e. 200 nodes) for several reasons. First, to our knowledge, there is no MRI parcellation for the brains of the majority of the species studied here. Second, how brain regions correspond to one another across species (i.e. homologues) is still not completely understood for many regions and for many species. Third, comparing networks of different sizes introduces numerous analytical biases because most network measures trivially depend on size, making the comparison challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly justifies the uniform parcellation approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "4e46f119-df5a-474f-85ae-ab06a2cdac3c",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C56",
+      "claim": "Comparing networks of different sizes introduces numerous analytical biases because most network measures trivially depend on size.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, comparing networks of different sizes introduces numerous analytical biases because most network measures trivially depend on size, making the comparison challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites this as a reason for using uniform parcellation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "803fd2ed-9ba9-407c-b3c7-ccd5e13f0f90",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C57",
+      "claim": "The uniform parcellation approach does not take into account species-specific regional delineations, nor does it capture homologies between nodes across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this approach does not take into account species-specific regional delineations, nor does it capture homologies between nodes across species, which are still not completely understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly acknowledges this limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "573667d4-5385-405f-bcfd-8d1e215e30dd",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C58",
+      "claim": "Voxel dimensions were linearly scaled with brain volume.",
+      "claim_type": "EXPLICIT",
+      "source": "As the size of the matrix was kept constant across species (i.e. 200 nodes), voxel dimensions were linearly scaled with brain volume, thus resulting in different scanning resolutions across the samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the voxel scaling approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "b0c72c17-1c7e-41bf-8d8e-72a96f786b41",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C59",
+      "claim": "The diffusion-based connectome of the mouse was previously compared against one derived from tract-tracing, obtaining a strong correlation between both networks.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that this was a reasonable assumption, several tests were performed: (1) the diffusion-based connectome of the mouse was previously compared against one derived from tract-tracing (see Assaf et al., 2020 for details), obtaining a strong correlation between both networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a validation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "73e6b6b4-6166-4937-8923-b2397dbccdeb",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C60",
+      "claim": "Results on the connectivity conservation principle were invariant to different scanning and parcellation parameters across nine different species.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Results on the connectivity conservation principle presented in Assaf et al., 2020 were invariant to different scanning and parcellation parameters across nine different species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a validation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "e3bec8cf-4bf2-4811-ab93-7782d537a760",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C61",
+      "claim": "The diffusion-weighted imaging method was able to reconstruct specific ground truth fibre systems across brains, and these fibre bundles scaled in size with brain volume.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) The diffusion-weighted imaging method was able to reconstruct specific ground truth fibre systems across brains, and these fibre bundles scaled in size with brain volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a validation test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "1564f08e-be95-4abf-a066-6d1f270da812",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C62",
+      "claim": "The eigenvalues of the normalized Laplacian of the connectivity matrix, and their multiplicities, capture distinct topological properties of the graph.",
+      "claim_type": "EXPLICIT",
+      "source": "The eigenvalues of the normalized Laplacian of the connectivity matrix, and their multiplicities, capture distinct topological properties of the graph (Banerjee and Jost, 2009; Banerjee and Jost, 2008; Newman, 2001; Grone et al., 1990; Grone and Merris, 1994; Das, 2004), thus acting like a spectroscopy of its underlying topology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "1fe8fd71-fa58-4153-b594-292ddbf1684e",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C63",
+      "claim": "The Laplacian eigenspectrum has the advantage of situating graphs of different sizes and with non-homologous node correspondence in a common frame of reference in which they can be compared.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, it has the advantage of situating graphs of different sizes and with non-homologous node correspondence in a common frame of reference in which they can be compared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the advantage of using the Laplacian eigenspectrum.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "ac0627d9-f089-4e31-af7b-8b2b49d0cd8d",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C67",
+      "claim": "Differences across taxonomic orders are most likely due to the presence of different local connectivity fingerprints in the connectivity matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, differences across taxonomic orders are most likely due to the presence of different local connectivity fingerprints in the connectivity matrix (Figure 2\u2014figure supplement 1; de Lange et al., 2014; Mars et al., 2018a; Mars et al., 2018b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript interprets the eigenspectra findings and cites supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "cd94b0c0-6863-410a-b4de-3ab4be1de936",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C68",
+      "claim": "The correlation between spectral and topological distance is maximum when only local features are included in the estimation of the topological distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional evidence supporting the idea that spectral distance captures mostly differences in local network topology is the fact that the correlation between spectral and topological distance is maximum when only local features are included in the estimation of the topological distance (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports correlation analysis shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "e2f77bb7-e22e-4958-94ce-a5d829d92699",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C69",
+      "claim": "Anatomical brain networks simultaneously reconcile the opposing demands of functional integration and segregation by combining the presence of functionally specialized clusters with short polysynaptic communication pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical brain networks are thought to simultaneously reconcile the opposing demands of functional integration and segregation by combining the presence of functionally specialized clusters with short polysynaptic communication pathways (Tononi et al., 1994; Sporns, 2013; Sporns et al., 2005; Bassett and Bullmore, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "b18fa637-ad12-4fb4-9f24-d0301b3409bb",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C70",
+      "claim": "Small-world architecture is observed in a wide variety of naturally occurring and engineered networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Such architecture is often referred to as small-world and is observed in a wide variety of naturally occurring and engineered networks (Watts and Strogatz, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "af845859-49ce-48e5-9450-8939552362d0",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C71",
+      "claim": "Anatomical projections between brain regions form a complex network of polyfunctional neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical projections between brain regions form a complex network of polyfunctional neural circuits (Sporns et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "335c5952-9061-4393-81b9-6887fba66139",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C72",
+      "claim": "Signalling on the brain's connectome is thought to support cognition and the emergence of adaptive behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Signalling on the brain's connectome is thought to support cognition and the emergence of adaptive behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "3e6ac280-e94c-42ea-8dae-20e7f5c26c83",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C73",
+      "claim": "Advances in imaging technologies have made it increasingly feasible to reconstruct the wiring diagram of biological neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in imaging technologies have made it increasingly feasible to reconstruct the wiring diagram of biological neural networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "c92cb21d-92dd-4c25-901a-ffa4f5898b0d",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C74",
+      "claim": "Detailed reconstructions of the nervous system's connection patterns have been made available in humans and in multiple model organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Thanks to extensive international data-sharing efforts, these detailed reconstructions of the nervous system's connection patterns have been made available in humans and in multiple model organisms (van den Heuvel et al., 2016), including invertebrate (White et al., 1986; Chiang et al., 2011; Towlson et al., 2013; Worrell et al., 2017), avian (Shanahan et al., 2013), rodent (Oh et al., 2014; Bota et al., 2015; Rubinov et al., 2015), feline (Scannell et al., 1995; de Reus and de Reus and van den Heuvel, 2013; Beul et al., 2015), and primate species (Markov et al., 2012; Majka et al., 2016; Liu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites extensive literature documenting available connectomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "27737d7f-03c4-4887-8c19-4616c66345ef",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C75",
+      "claim": "Cross-species comparative studies identify commonalities in brain network topology and universal principles of connectome evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The rising availability of connectomics data facilitates cross-species comparative studies that identify commonalities in brain network topology and universal principles of connectome evolution (van den Heuvel et al., 2016; Barker, 2021; Barsotti et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "c302ad94-2b59-41f2-bc07-c301da988376",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C76",
+      "claim": "A common thread throughout comparative connectomics studies is the existence of non-random topological attributes that theoretically enhance the capacity for information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "A common thread throughout these studies is the existence of non-random topological attributes that theoretically enhance the capacity for information processing (Sporns, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "de747113-0df9-4480-a5ba-cf9422093d7d",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C77",
+      "claim": "Connectomes have a highly clustered architecture with segregated modules that promote specialized information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "These include a highly clustered architecture with segregated modules that promote specialized information processing (Watts and Strogatz, 1998; Hilgetag and Kaiser, 2004), as well as a densely interconnected core of high-degree hubs that shortens communication pathways (van den Heuvel et al., 2012), promoting the integration of information from distributed specialized domains (Zamora-L\u00f3pez et al., 2010; Avena-Koenigsberger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "cbcafe12-19c9-42c6-be98-bceec3d7866e",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C78",
+      "claim": "Connectomes have a densely interconnected core of high-degree hubs that shortens communication pathways, promoting the integration of information from distributed specialized domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These include a highly clustered architecture with segregated modules that promote specialized information processing (Watts and Strogatz, 1998; Hilgetag and Kaiser, 2004), as well as a densely interconnected core of high-degree hubs that shortens communication pathways (van den Heuvel et al., 2012), promoting the integration of information from distributed specialized domains (Zamora-L\u00f3pez et al., 2010; Avena-Koenigsberger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "7d1a4c10-9669-4166-9f70-23ee4a065220",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C79",
+      "claim": "Universal organizational features suggest that connectome evolution has been shaped by two opposing and competitive pressures: maintaining efficient communication while minimizing neural resources used for connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "These universal organizational features suggest that connectome evolution has been shaped by two opposing and competitive pressures: maintaining efficient communication while minimizing neural resources used for connectivity (Bullmore and Sporns, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "7c68483f-61ef-485e-99df-f9ea0afd8c1f",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C80",
+      "claim": "Architectural variations are observed even among closely related species.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, despite commonalities, architectural variations are also observed even among closely related species (Barker, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "13677a30-5df1-4ada-90b8-b0e69541d081",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C81",
+      "claim": "Factors such as the external environment, genetics, and distinct gene expression programs account for diversity in neural connectivity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Factors such as the external environment, genetics. and distinct gene expression programs also account for diversity in neural connectivity patterns (Martinez and Sprecher, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "e9939d29-6a07-4472-8d19-8b430f29bfed",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C82",
+      "claim": "Subtle variations in connectome organization may potentially account for species-specific adaptations in behaviour and cognitive function.",
+      "claim_type": "EXPLICIT",
+      "source": "Subtle variations in connectome organization may potentially account for species-specific adaptations in behaviour and cognitive function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the functional implications of connectome variations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "cc66cf6f-69bc-4495-85a7-7d1590c84421",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C83",
+      "claim": "Mammalian taxonomies were traditionally built on morphological differences among species.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, mammalian taxonomies were built on morphological differences among species (Darwin, 1959).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Darwin's work on taxonomy.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "df9ff476-cd99-4d45-99f4-8ffdbd6df086",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C84",
+      "claim": "Species within the same taxonomic group tend to share similar behavioural repertoires.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides physical commonalities, species within the same taxonomic group also tend to share similar behavioural repertoires (York, 2018; Bendesky and Bargmann, 2011; Yokoyama et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "90c75be6-469f-4a85-b21f-20fef9ea0736",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C85",
+      "claim": "Modern high-throughput whole-genome sequencing has further delineated phylogenetic links and relationships among mammalian species.",
+      "claim_type": "EXPLICIT",
+      "source": "Modern high-throughput whole-genome sequencing has further delineated phylogenetic links and relationships among mammalian species (Murphy et al., 2021; Zoonomia Consortium, 2020; \u00c1lvarez-Carretero et al., 2021; Seehausen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "834807dc-9e8a-4eb4-954a-0e3e087a533d",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C86",
+      "claim": "Whole-genome comparative analyses have established the genetic basis of phenotypic variation across phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to refining the overall classification of mammals, whole-genome comparative analyses have established the genetic basis of phenotypic variation across phylogeny (Murphy et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites supporting literature for this concept.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "2f9bc4a0-e96d-405a-9d4a-6b34699f6d92",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C87",
+      "claim": "Whether inter-species differences in the organization of connectome wiring conform to taxonomy remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether inter-species differences in the organization of connectome wiring conform to this taxonomy remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies this as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "2763632e-706f-41e2-9bd0-4acc8f082269",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C88",
+      "claim": "Rigorously addressing questions about connectome-taxonomy relationships is challenging due to the lack of methodological consistency in the acquisition and reconstruction of neural circuits, or the limited number of available species.",
+      "claim_type": "EXPLICIT",
+      "source": "Rigorously addressing these questions is challenging due to the lack of methodological consistency in the acquisition and reconstruction of neural circuits, or the limited number of available species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies methodological challenges in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "ddcc12f9-c64e-4f6b-bedf-e9d02039887b",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C89",
+      "claim": "The study focuses on 6 orders that contain 5 or more distinct species within the Laurasiatheria and Euarchontoglires superorders.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus on the 6 orders that contain 5 or more distinct species (within the Laurasiatheria and Euarchontoglires superorders); these include Chiroptera, Rodentia, Cetartiodactyla, Carnivora, Perissodactyla, and Primates, resulting in a total of 111 different animal species and 203 brain scans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the subset of data analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "70d07c41-345e-4205-8230-f80123b30273",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C90",
+      "claim": "The study analyzes a total of 111 different animal species and 203 brain scans.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus on the 6 orders that contain 5 or more distinct species (within the Laurasiatheria and Euarchontoglires superorders); these include Chiroptera, Rodentia, Cetartiodactyla, Carnivora, Perissodactyla, and Primates, resulting in a total of 111 different animal species and 203 brain scans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the subset of data analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "96c63eab-debd-4c65-b681-8227e047c2a3",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C91",
+      "claim": "Uniformly parcellating brains of different size into the same number of nodes facilitates comparison of network architecture, but potentially obscures biologically important regional differences.",
+      "claim_type": "EXPLICIT",
+      "source": "First, uniformly parcellating brains of different size into the same number of nodes facilitates comparison of network architecture, but potentially obscures biologically important regional differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges this limitation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "e963bd78-f814-40ae-a99e-f27c2f4b90f6",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C92",
+      "claim": "Many species are represented by a single individual in the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, many species are represented by a single individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges this limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "c02366a8-a484-45b4-8b66-f86b6044bb92",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C93",
+      "claim": "All connectomes are reconstructed using diffusion-weighted imaging, which is subject to both systematic false positives and false negatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, all connectomes are reconstructed using diffusion-weighted imaging, which is subject to both systematic false positives and false negatives (Maier-Hein et al., 2017; Schilling et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges this limitation and cites supporting literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "1d7ae65f-0c16-48be-b99e-711041ee1d94",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C94",
+      "claim": "Evolutionary circuit modifications may not occur at the level of large-scale white matter, but at finer scales involving smaller nuclei or physiological events not accessible by diffusion imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, evolutionary circuit modifications may not occur at the level of large-scale white matter, but at finer scales involving smaller nuclei or physiological events not accessible by diffusion imaging, such as up- or downregulation of neurotransmitter receptors (Barker, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges this limitation and cites supporting literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "00c93f9c-ad3f-40a5-858d-5630089401ba",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C95",
+      "claim": "The strikingly consistent taxonomic and phylogenetic relationships revealed by connectome analysis suggest that macroscale connectivity, as measured by diffusion MRI, is informative of species similarities and differences across taxonomic orders.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the strikingly consistent taxonomic and phylogenetic relationships revealed by connectome analysis remain and suggest that macroscale connectivity, as measured by diffusion MRI, is informative of species similarities and differences across taxonomic orders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the findings despite acknowledged limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "a1184946-b904-43f9-bc18-e2fc356b4bac",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C96",
+      "claim": "The study sets the stage for future mechanistic studies to trace the link between genes to neural circuits and ultimately to behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these findings set the stage for future mechanistic studies to trace the link between genes to neural circuits and ultimately to behaviour, and offer new opportunities to explore how changes in brain network structure across phylogeny translate into changes in function and behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses future implications of the work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "e8a30836-b10c-4b9c-a65a-04592f57b769",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "claim_id": "C97",
+      "claim": "The study offers new opportunities to explore how changes in brain network structure across phylogeny translate into changes in function and behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these findings set the stage for future mechanistic studies to trace the link between genes to neural circuits and ultimately to behaviour, and offer new opportunities to explore how changes in brain network structure across phylogeny translate into changes in function and behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses future implications of the work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The MaMI database comprises 225 ex vivo MRI scans from 125 mammalian species across 12 taxonomic orders and 5 superorders, acquired using a unified protocol and reconstructed with a uniform 200-node parcellation scheme. The study focuses on 111 species (203 scans) from 6 orders within Laurasiatheria and Euarchontoglires superorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C46-C54, C58, C89-C90 collectively describe the dataset composition, acquisition protocol, and reconstruction methodology. The manuscript explicitly documents the number of species, scans, taxonomic coverage, ethical considerations, scanning equipment, MRI parameters, and parcellation approach. These methodological details are clearly stated and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "26880336-d68d-4a40-975b-ee5f019e3170",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Connectome organization recapitulates traditional taxonomies: species with similar genetics, morphology, and behavior display similar connectome architecture, with species within the same taxonomic order showing greater similarity than species across orders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C27, C29-C30 are supported by the spectral and topological distance analyses (Figure 2) showing statistically significant differences between intra- and inter-order distances (p<10^-4, Cohen's d=0.67 for spectral, 0.59 for topological). The manuscript demonstrates that connectome similarity aligns with established taxonomic relationships through multiple quantitative metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "da7271f4-edc9-4f67-8d91-2cf7ecb0c62f",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Inter-species differences in connectome organization are primarily driven by local (node-level) network topology rather than global network features, with local features showing larger differences between intra- and inter-order distances compared to global features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14, C34-C35, C67-C68 are supported by systematic analysis of topological distances using different feature combinations (Figure 3). The manuscript demonstrates larger effect sizes for local features (Cohen's d=0.63 for binary local) compared to global features (Cohen's d=0.44 for binary global), with statistical significance (p<10^-4). The correlation analysis (Figure 3\u2014supplement 3) further supports that spectral distance captures local topology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "8ead376a-3cba-43aa-9041-6b5d9b0a2a18",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Binary network architecture differentiates taxonomic orders more effectively than weighted connection strength, suggesting that the presence/absence of connections is more important than connection weights for species differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 are supported by Figure 3 showing consistently larger differences between intra- and inter-order distances for binary features compared to weighted features across both local and global measures. The manuscript reports this pattern holds independently of whether features are local or global, with statistical significance (p<10^-4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "eb68d69c-ace3-4247-b1b4-1139ec46907d",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Differences in connectome organization across taxonomic orders are not driven by network density but by variations in wiring patterns as captured by topological features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are supported by control analyses shown in Figure 3\u2014supplement 6, where network density was regressed out from topological features. The manuscript demonstrates that significant differences between intra- and inter-order distances persist after controlling for density (p<10^-4), indicating that wiring patterns rather than density drive phylogenetic variations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "c0d6596e-be7a-4d3b-8610-d33206b0f91d",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "All mammalian connectomes display conserved global hallmarks including small-world organization (high clustering with near-minimal path length), segregated network communities, and densely interconnected hub nodes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22, C32-C33 are supported by Figure 4 showing all connectomes exhibit small-worldness (values above identity line) and by citations to prior tract-tracing studies. The manuscript demonstrates these features are consistent across all species despite taxonomic differences, indicating conservation of global organizational principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "2da609d5-f3c3-47f9-87f7-2d3c170fa79e",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The relative proportions of edge classes (inter- vs. intra-modular, inter- vs. intra-hemispheric, short- vs. medium- vs. long-range, and rich-club vs. feeder vs. peripheral connections) are conserved across taxonomic orders despite differences in connection density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26, C39 are supported by Figure 5 showing consistent proportions of different connection classes across all six taxonomic orders. The manuscript demonstrates that while absolute density varies, the relative distribution of connection types remains stable, indicating conservation of global architectural features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "395d7fa0-f06f-421f-8656-359df42caa0a",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The relative local connectivity of anterior and posterior cortical regions changes across taxonomic orders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is supported by Figure 3\u2014supplement 2 showing significant differences in anterior-posterior connectivity patterns across orders (one-way ANOVA, p<10^-11 for all local features). This illustrates the principle that local connectivity profiles vary across phylogeny while global features remain conserved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "6975d5c3-c666-43cc-9739-7530b4675567",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Inter-species variation in connectomes is driven by local regional connection profiles, which likely support differences in functional and behavioral repertoires across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C37 synthesize findings from multiple analyses showing that local features differentiate species while global features are conserved. The inference that local connectivity differences support functional/behavioral differences is reasonable given the established relationship between connectivity and function (C36), though direct functional validation is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "f0939a64-f538-442a-a6c5-89dca363f7a3",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Brain network organization is under selection pressure, with neural circuit evolution involving random local circuit modifications that may provide species with behavioral adaptations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31, C38 represent interpretations that extend beyond the data. While the manuscript shows connectome similarity aligns with phylogeny (supporting selection pressure), it acknowledges alternative mechanisms (Brownian motion drift models). The claim about 'random local circuit modifications' is supported by extensive citations but represents speculation about evolutionary mechanisms rather than direct evidence from the current study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "89c4a70a-7b4f-46ae-8052-f0b490cdedd4",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A uniform 200-node parcellation was implemented to facilitate cross-species comparison, though this approach does not capture species-specific regional delineations or homologies between nodes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C91 describe the methodological rationale and limitations of the uniform parcellation approach. The manuscript explicitly justifies this choice based on lack of species-specific parcellations, incomplete understanding of homologies, and analytical biases from comparing different-sized networks. The acknowledged limitation is clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "8fb45f85-93ee-4ab3-ad6b-c64a191e464b",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The diffusion MRI reconstruction method was validated through comparison with tract-tracing data in mice, invariance to scanning parameters across species, and ability to reconstruct ground truth fiber systems that scale with brain volume.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 cite validation studies (Assaf et al., 2020) demonstrating the reliability of the reconstruction approach. While these validations are from prior work rather than new analyses, they provide important methodological support for the current study's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "4b08134c-32fe-4c67-8710-6afb02d38111",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Laplacian eigenspectrum captures distinct topological properties of graphs and enables comparison of networks with different sizes and non-homologous node correspondence in a common reference frame.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 describe established mathematical properties of the Laplacian eigenspectrum, supported by multiple citations. This methodological foundation is critical for enabling cross-species comparisons despite lack of node homology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "9e136c6a-d8f4-4b35-93a6-9cbec4c777fc",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Many species in the dataset are represented by a single individual.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is explicitly acknowledged as a limitation. While the manuscript notes high within-species reliability from prior work (Assaf et al., 2020) and focuses on order-level rather than species-level comparisons, the lack of multiple individuals per species limits assessment of within-species variability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "a3c632cc-0aef-44e0-9df3-101e589e7628",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "All connectomes are reconstructed using diffusion-weighted imaging, which is subject to both systematic false positives and false negatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 acknowledges a fundamental limitation of diffusion MRI tractography, supported by citations (Maier-Hein et al., 2017; Schilling et al., 2019). This is an honest assessment of methodological constraints that applies to all diffusion-based connectome studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "079693c8-9f74-4bdb-b81b-1c66cc990b8f",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Evolutionary circuit modifications may occur at finer scales involving smaller nuclei or physiological events not accessible by diffusion imaging, such as neurotransmitter receptor regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 acknowledges that macroscale white matter connectivity may not capture all evolutionarily relevant circuit changes. This is a reasonable limitation given the spatial resolution of diffusion MRI and is supported by citation (Barker, 2021).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "a78466ae-0f6d-43ba-a487-b8a876cafb06",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Despite methodological limitations, the consistent taxonomic and phylogenetic relationships revealed by connectome analysis suggest that macroscale connectivity measured by diffusion MRI is informative of species similarities and differences across taxonomic orders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 represents a balanced conclusion acknowledging limitations while asserting the validity of the main findings. The strong statistical relationships observed (p<10^-4, moderate-to-large effect sizes) and consistency across multiple analytical approaches support this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "6b4fa00b-e3da-41ee-9abf-6345438ce6de",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A brain region's functional fingerprint is determined by its underlying cortico-cortical connectional fingerprint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 represents established knowledge from prior work (Mars et al., 2021; 2018b; 2016; Passingham et al., 2002) that provides theoretical context for interpreting the current findings. This is appropriately cited background knowledge rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "b3e1bca0-d811-4291-a08f-ad48219f355a",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The conservation of edge class proportions across species is consistent with allometric scaling principles showing that brain size constrains connectivity patterns, with larger brains having relatively more short-range connections, though the architecture of neural circuits and their physical embedding are intertwined to retain consistent global features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 integrate findings from cited studies (Assaf et al., 2020; Ardesch et al., 2021; Zhang and Sejnowski, 2000) with the current results. The interpretation that physical constraints and network architecture interact to maintain global features is well-supported by converging evidence from multiple studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background context establishing that brain connectomes form complex networks supporting cognition and behavior, that comparative connectomics identifies universal organizational principles, that mammalian taxonomies are based on morphology/genetics/behavior, and that whether connectome organization conforms to taxonomy was previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C88 provide background knowledge and context from prior literature, appropriately cited throughout. These establish the scientific foundation and motivation for the current study, identifying the knowledge gap that the manuscript addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    },
+    {
+      "id": "6e9a9801-1764-4a5f-af5b-84984a676848",
+      "content_id": "3f59e078-5fbe-4cf2-b94a-939074672679",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study sets the stage for future mechanistic studies linking genes to neural circuits to behavior and offers opportunities to explore how changes in brain network structure across phylogeny translate into functional and behavioral changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 represent appropriate forward-looking statements about future research directions enabled by the current work. These are reasonable implications of establishing that connectome organization reflects phylogeny, though they acknowledge that mechanistic links remain to be established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:58:12.612037Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "99ec7b09-51df-47e2-a253-095f4e9d5cc3",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "68aa24fc-65ae-4d3b-bf56-9c50ae846ed7",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "4096f207-2f84-4f22-abeb-6af89c336dc3",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "7aecc1a8-0610-49db-80d2-345a7d0d36db",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "08462d79-c3a7-4a7f-86cb-aadd2a393d0c",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "737a6382-7225-4b07-8d3f-55b356fdf413",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "4af34ba5-3b6e-4a46-a4b9-6116b31bc778",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "bf469d71-94bd-40e5-8dfe-7445151abd36",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "6a46300f-20c0-457c-9f55-67667fc86aeb",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "37c24212-82f0-455d-9e39-2ecfe626efae",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "aeaac453-afd5-43df-b74f-91f8dcc72f83",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "b77909a0-3f84-4973-bdd4-fd9661cfe233",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "d260133f-b7c3-4ee1-9d65-9cdae86b8fb0",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "1096612a-f294-4107-8c8d-9f7c45808cae",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "573667d4-5385-405f-bcfd-8d1e215e30dd",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "ddcc12f9-c64e-4f6b-bedf-e9d02039887b",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "70d07c41-345e-4205-8230-f80123b30273",
+      "result_id": "1d1e0b38-b859-4c3c-9089-8a1eea18925c"
+    },
+    {
+      "claim_id": "1eed3ed8-cff2-4e98-9738-6541069be60d",
+      "result_id": "26880336-d68d-4a40-975b-ee5f019e3170"
+    },
+    {
+      "claim_id": "e95390e0-71bd-40f5-99a9-2e6c9bf4ba78",
+      "result_id": "26880336-d68d-4a40-975b-ee5f019e3170"
+    },
+    {
+      "claim_id": "08546053-b1d8-4871-bd7a-69912d96f058",
+      "result_id": "26880336-d68d-4a40-975b-ee5f019e3170"
+    },
+    {
+      "claim_id": "38b6f4c5-cabe-489c-b4c1-2dc1b417c27f",
+      "result_id": "26880336-d68d-4a40-975b-ee5f019e3170"
+    },
+    {
+      "claim_id": "717f47c2-afb3-4eb6-b132-ada58ea64ed1",
+      "result_id": "26880336-d68d-4a40-975b-ee5f019e3170"
+    },
+    {
+      "claim_id": "dc09e206-57d5-480f-9d6a-371e54fed865",
+      "result_id": "da7271f4-edc9-4f67-8d91-2cf7ecb0c62f"
+    },
+    {
+      "claim_id": "769b75b6-98d8-4e98-9bf7-fe93907edb50",
+      "result_id": "da7271f4-edc9-4f67-8d91-2cf7ecb0c62f"
+    },
+    {
+      "claim_id": "d4ef88b1-c001-4820-ae95-e24fb936afa5",
+      "result_id": "da7271f4-edc9-4f67-8d91-2cf7ecb0c62f"
+    },
+    {
+      "claim_id": "a7badaa7-35e0-4931-bb69-174c41b17e5a",
+      "result_id": "da7271f4-edc9-4f67-8d91-2cf7ecb0c62f"
+    },
+    {
+      "claim_id": "48900364-31de-4a64-a8f5-fd16cd5c0511",
+      "result_id": "da7271f4-edc9-4f67-8d91-2cf7ecb0c62f"
+    },
+    {
+      "claim_id": "ac0627d9-f089-4e31-af7b-8b2b49d0cd8d",
+      "result_id": "da7271f4-edc9-4f67-8d91-2cf7ecb0c62f"
+    },
+    {
+      "claim_id": "cd94b0c0-6863-410a-b4de-3ab4be1de936",
+      "result_id": "da7271f4-edc9-4f67-8d91-2cf7ecb0c62f"
+    },
+    {
+      "claim_id": "a78f13c5-8fc8-450d-868b-7091ee133727",
+      "result_id": "8ead376a-3cba-43aa-9041-6b5d9b0a2a18"
+    },
+    {
+      "claim_id": "a72ee4fe-533f-4456-8d31-ead8f27909ff",
+      "result_id": "8ead376a-3cba-43aa-9041-6b5d9b0a2a18"
+    },
+    {
+      "claim_id": "55f73686-eef6-46d2-ac24-868fb90a6436",
+      "result_id": "eb68d69c-ace3-4247-b1b4-1139ec46907d"
+    },
+    {
+      "claim_id": "af030fbe-3f0d-468a-8908-02df5db8f1a1",
+      "result_id": "eb68d69c-ace3-4247-b1b4-1139ec46907d"
+    },
+    {
+      "claim_id": "22a44e9e-f888-44c8-b3f5-cb4139fb0881",
+      "result_id": "eb68d69c-ace3-4247-b1b4-1139ec46907d"
+    },
+    {
+      "claim_id": "3336765d-d1a3-4d4a-a913-97f061b1fff8",
+      "result_id": "c0d6596e-be7a-4d3b-8610-d33206b0f91d"
+    },
+    {
+      "claim_id": "694157af-efd9-4baa-b943-a7fd26bc9ef5",
+      "result_id": "c0d6596e-be7a-4d3b-8610-d33206b0f91d"
+    },
+    {
+      "claim_id": "a044949b-bbe6-4c48-ba3c-a38d83bea17f",
+      "result_id": "c0d6596e-be7a-4d3b-8610-d33206b0f91d"
+    },
+    {
+      "claim_id": "3f1f489d-121d-4fc5-ac5b-080a36679313",
+      "result_id": "c0d6596e-be7a-4d3b-8610-d33206b0f91d"
+    },
+    {
+      "claim_id": "a44bfd01-add1-4526-958d-a5937760866b",
+      "result_id": "2da609d5-f3c3-47f9-87f7-2d3c170fa79e"
+    },
+    {
+      "claim_id": "bd03a030-ddaf-4773-9192-93b511b1744c",
+      "result_id": "2da609d5-f3c3-47f9-87f7-2d3c170fa79e"
+    },
+    {
+      "claim_id": "aa64f136-719b-4a35-bdb7-45c3f91995da",
+      "result_id": "2da609d5-f3c3-47f9-87f7-2d3c170fa79e"
+    },
+    {
+      "claim_id": "4f3f78ea-9032-4caf-9dd9-c216a2d1dfba",
+      "result_id": "2da609d5-f3c3-47f9-87f7-2d3c170fa79e"
+    },
+    {
+      "claim_id": "1196c2ff-885d-44b6-9cff-6e05cfbc240e",
+      "result_id": "2da609d5-f3c3-47f9-87f7-2d3c170fa79e"
+    },
+    {
+      "claim_id": "8b0f5ecc-4d05-459a-ae15-9e895b6cf650",
+      "result_id": "395d7fa0-f06f-421f-8656-359df42caa0a"
+    },
+    {
+      "claim_id": "874bc6e6-a284-4f25-a9e1-653e17b489ea",
+      "result_id": "6975d5c3-c666-43cc-9739-7530b4675567"
+    },
+    {
+      "claim_id": "16374f9b-2f04-49ce-85c2-dcf78544960a",
+      "result_id": "6975d5c3-c666-43cc-9739-7530b4675567"
+    },
+    {
+      "claim_id": "3f1ac21f-9ecb-4ef6-b192-2409b7290aa6",
+      "result_id": "f0939a64-f538-442a-a6c5-89dca363f7a3"
+    },
+    {
+      "claim_id": "ccc94394-f53a-434b-9910-a0487724e586",
+      "result_id": "f0939a64-f538-442a-a6c5-89dca363f7a3"
+    },
+    {
+      "claim_id": "6347be6e-ad98-461d-a5e0-6fd61c60aa82",
+      "result_id": "89c4a70a-7b4f-46ae-8052-f0b490cdedd4"
+    },
+    {
+      "claim_id": "4e46f119-df5a-474f-85ae-ab06a2cdac3c",
+      "result_id": "89c4a70a-7b4f-46ae-8052-f0b490cdedd4"
+    },
+    {
+      "claim_id": "803fd2ed-9ba9-407c-b3c7-ccd5e13f0f90",
+      "result_id": "89c4a70a-7b4f-46ae-8052-f0b490cdedd4"
+    },
+    {
+      "claim_id": "96c63eab-debd-4c65-b681-8227e047c2a3",
+      "result_id": "89c4a70a-7b4f-46ae-8052-f0b490cdedd4"
+    },
+    {
+      "claim_id": "b0c72c17-1c7e-41bf-8d8e-72a96f786b41",
+      "result_id": "8fb45f85-93ee-4ab3-ad6b-c64a191e464b"
+    },
+    {
+      "claim_id": "73e6b6b4-6166-4937-8923-b2397dbccdeb",
+      "result_id": "8fb45f85-93ee-4ab3-ad6b-c64a191e464b"
+    },
+    {
+      "claim_id": "e3bec8cf-4bf2-4811-ab93-7782d537a760",
+      "result_id": "8fb45f85-93ee-4ab3-ad6b-c64a191e464b"
+    },
+    {
+      "claim_id": "1564f08e-be95-4abf-a066-6d1f270da812",
+      "result_id": "4b08134c-32fe-4c67-8710-6afb02d38111"
+    },
+    {
+      "claim_id": "1fe8fd71-fa58-4153-b594-292ddbf1684e",
+      "result_id": "4b08134c-32fe-4c67-8710-6afb02d38111"
+    },
+    {
+      "claim_id": "e963bd78-f814-40ae-a99e-f27c2f4b90f6",
+      "result_id": "9e136c6a-d8f4-4b35-93a6-9cbec4c777fc"
+    },
+    {
+      "claim_id": "c02366a8-a484-45b4-8b66-f86b6044bb92",
+      "result_id": "a3c632cc-0aef-44e0-9df3-101e589e7628"
+    },
+    {
+      "claim_id": "1d7ae65f-0c16-48be-b99e-711041ee1d94",
+      "result_id": "079693c8-9f74-4bdb-b81b-1c66cc990b8f"
+    },
+    {
+      "claim_id": "00c93f9c-ad3f-40a5-858d-5630089401ba",
+      "result_id": "a78466ae-0f6d-43ba-a487-b8a876cafb06"
+    },
+    {
+      "claim_id": "46241f3b-92f0-4dfe-bc2a-a5845686c40c",
+      "result_id": "6b4fa00b-e3da-41ee-9abf-6345438ce6de"
+    },
+    {
+      "claim_id": "2b7162ad-bc13-4f37-a1ac-6737665177a6",
+      "result_id": "b3e1bca0-d811-4291-a08f-ad48219f355a"
+    },
+    {
+      "claim_id": "4be32d50-36b6-412f-8049-9ede1fd519f6",
+      "result_id": "b3e1bca0-d811-4291-a08f-ad48219f355a"
+    },
+    {
+      "claim_id": "1fb0a73e-6bc8-4c5d-9a38-698fcc84546b",
+      "result_id": "b3e1bca0-d811-4291-a08f-ad48219f355a"
+    },
+    {
+      "claim_id": "10f067a0-872c-41f6-985b-13ec88f7e086",
+      "result_id": "b3e1bca0-d811-4291-a08f-ad48219f355a"
+    },
+    {
+      "claim_id": "6014dccd-3600-4c7e-bd22-8ac5c11f4f22",
+      "result_id": "b3e1bca0-d811-4291-a08f-ad48219f355a"
+    },
+    {
+      "claim_id": "aeb5f116-f3b1-4d28-b45e-cc35b677b15f",
+      "result_id": "b3e1bca0-d811-4291-a08f-ad48219f355a"
+    },
+    {
+      "claim_id": "e2f77bb7-e22e-4958-94ce-a5d829d92699",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "b18fa637-ad12-4fb4-9f24-d0301b3409bb",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "af845859-49ce-48e5-9450-8939552362d0",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "335c5952-9061-4393-81b9-6887fba66139",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "3e6ac280-e94c-42ea-8dae-20e7f5c26c83",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "c92cb21d-92dd-4c25-901a-ffa4f5898b0d",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "27737d7f-03c4-4887-8c19-4616c66345ef",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "c302ad94-2b59-41f2-bc07-c301da988376",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "de747113-0df9-4480-a5ba-cf9422093d7d",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "cbcafe12-19c9-42c6-be98-bceec3d7866e",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "7d1a4c10-9669-4166-9f70-23ee4a065220",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "7c68483f-61ef-485e-99df-f9ea0afd8c1f",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "13677a30-5df1-4ada-90b8-b0e69541d081",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "e9939d29-6a07-4472-8d19-8b430f29bfed",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "cc66cf6f-69bc-4495-85a7-7d1590c84421",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "df9ff476-cd99-4d45-99f4-8ffdbd6df086",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "90c75be6-469f-4a85-b21f-20fef9ea0736",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "834807dc-9e8a-4eb4-954a-0e3e087a533d",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "2f9bc4a0-e96d-405a-9d4a-6b34699f6d92",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "2763632e-706f-41e2-9bd0-4acc8f082269",
+      "result_id": "92c9463b-ea96-4e4e-a7f6-b40793fd2b5d"
+    },
+    {
+      "claim_id": "a1184946-b904-43f9-bc18-e2fc356b4bac",
+      "result_id": "6e9a9801-1764-4a5f-af5b-84984a676848"
+    },
+    {
+      "claim_id": "e8a30836-b10c-4b9c-a65a-04592f57b769",
+      "result_id": "6e9a9801-1764-4a5f-af5b-84984a676848"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1948 @@
+{
+  "submission": {
+    "id": "e61b0507-a196-41e8-984e-d7693ad807fd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:50:21.386309Z",
+    "updated_at": "2025-12-03T02:50:21.386309Z"
+  },
+  "content": [
+    {
+      "id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "submission_id": "e61b0507-a196-41e8-984e-d7693ad807fd",
+      "content_type": "manuscript",
+      "content_text": "# Estimating SARS-CoV-2 seroprevalence and epidemiological parameters with uncertainty from serological surveys\n\n## Authors\n\n- Daniel B Larremore<sup>1</sup> ([ORCID: 0000-0001-5273-5234](https://orcid.org/0000-0001-5273-5234)) \u2020\n- Bailey K Fosdick<sup>3</sup>\n- Kate M Bubar<sup>4</sup>\n- Sam Zhang<sup>4</sup>\n- Stephen M Kissler<sup>6</sup> ([ORCID: 0000-0003-3062-7800](https://orcid.org/0000-0003-3062-7800))\n- C Jessica E Metcalf<sup>7</sup> ([ORCID: 0000-0003-3166-7521](https://orcid.org/0000-0003-3166-7521))\n- Caroline O Buckee<sup>8</sup> ([ORCID: 0000-0002-8386-5899](https://orcid.org/0000-0002-8386-5899))\n- Yonatan H Grad<sup>6</sup> ([ORCID: 0000-0001-5646-1314](https://orcid.org/0000-0001-5646-1314)) \u2020\n\n### Affiliations\n\n1. Department of Computer Science, University of Colorado Boulder Boulder United States\n2. BioFrontiers Institute, University of Colorado Boulder Boulder United States\n3. Department of Statistics, Colorado State University Fort Collins United States\n4. Department of Applied Mathematics, University of Colorado Boulder Boulder United States\n5. IQ Biology Program, University of Colorado Boulder Boulder United States\n6. Department of Immunology and Infectious Diseases, Harvard T.H. Chan School of Public Health Boston United States\n7. Department of Ecology and Evolutionary Biology and the Woodrow Wilson School, Princeton University Princeton United States\n8. Department of Epidemiology, Harvard T.H. Chan School of Public Health Boston United States\n9. Center for Communicable Disease Dynamics, Harvard T.H. Chan School of Public Health Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEstablishing how many people have been infected by SARS-CoV-2 remains an urgent priority for controlling the COVID-19 pandemic. Serological tests that identify past infection can be used to estimate cumulative incidence, but the relative accuracy and robustness of various sampling strategies have been unclear. We developed a flexible framework that integrates uncertainty from test characteristics, sample size, and heterogeneity in seroprevalence across subpopulations to compare estimates from sampling schemes. Using the same framework and making the assumption that seropositivity indicates immune protection, we propagated estimates and uncertainty through dynamical models to assess uncertainty in the epidemiological parameters needed to evaluate public health interventions and found that sampling schemes informed by demographics and contact networks outperform uniform sampling. The framework can be adapted to optimize serosurvey design given test characteristics and capacity, population demography, sampling strategy, and modeling approach, and can be tailored to support decision-making around introducing or removing interventions.\n\n## Introduction\n\nSerological testing is a critical component of the response to COVID-19 as well as to future epidemics. Assessment of population seropositivity, a measure of the prevalence of individuals who have been infected in the past and developed antibodies to the virus, can address gaps in knowledge of the cumulative disease incidence. This is particularly important given inadequate viral diagnostic testing and incomplete understanding of the rates of mild and asymptomatic infections (Sutton et al., 2020). In this context, serological surveillance has the potential to provide information about the true number of infections, allowing for robust estimates of case and infection fatality rates (Fontanet et al., 2020) and for the parameterization of epidemiological models to evaluate the possible impacts of specific interventions and thus guide public health decision-making.\n\nThe proportion of the population that has been infected by, and recovered from, the coronavirus causing COVID-19 will be a critical measure to inform policies on a population level, including when and how social distancing interventions can be relaxed, and the prioritization of vaccines (Bubar et al., 2021). Individual serological testing may allow low-risk individuals to return to work, school, or university, contingent on the immune protection afforded by a measurable antibody response (Weitz et al., 2020; Larremore, 2020). At a population level, however, methods are urgently needed to design and interpret serological data based on testing of subpopulations, including convenience samples such as blood donors (Valenti et al., 2020; Erikstrup et al., 2021; Fontanet et al., 2020) and neonatal heel sticks, to reliably estimate population seroprevalence.\n\nThree sources of uncertainty complicate efforts to learn population seroprevalence from subsampling. First, tests may have imperfect sensitivity and specificity, and studies that do not adjust for test imperfections will produce biased seroprevalence estimates. Complicating this issue is the fact that sensitivity and specificity are, themselves, estimated from data (Larremore and Fosdick, 2020; Gelman and Carpenter, 2020), which can lead to statistical confusion if uncertainty is not correctly propagated (Bendavid et al., 2020). Second, the population sampled will likely not be a representative random sample (Bendavid et al., 2020), especially in the first rounds of testing, when there is urgency to test using convenience samples and potentially limited serological testing capacity. Third, there is uncertainty inherent to any model-based forecast that uses the empirical estimation of seroprevalence, regardless of the quality of the test, in part because of the uncertain relationship between seropositivity and immunity (Tan et al., 2020; Ward et al., 2020).\n\nA clear evidence-based guide to aid the design of serological studies is critical to policy makers and public health officials both for estimation of seroprevalence and forward-looking modeling efforts, particularly if serological positivity reflects immune protection. To address this need, we developed a framework that can be used to design and interpret cross-sectional serological studies, with applicability to SARS-CoV-2. Starting with results from a serological survey of a given size and age stratification, the framework incorporates the test\u2019s sensitivity and specificity and enables estimates of population seroprevalence that include uncertainty. These estimates can then be used in models of disease spread to calculate the effective reproductive number $R_{eff}$, the transmission potential of SARS-CoV-2 under partial immunity, forecast disease dynamics, and assess the impact of candidate public health and clinical interventions. Similarly, starting with a pre-specified tolerance for uncertainty in seroprevalence estimates, the framework can be used to optimize the sample size and allocation needed. This framework can be used in conjunction with any model, including ODE models (Kissler et al., 2020a; Weitz et al., 2020), agent-based simulations (Ferguson et al., 2020), or network simulations (St-Onge et al., 2019), and can be used to estimate $R_{eff}$ or to simulate transmission dynamics.\n\n## Materials and methods\n\n### Design and modeling framework\n\nWe developed a framework for the design and analysis of serosurveys in conjunction with epidemiological models (Figure 1), which can be used in two directions. In the forward direction, starting from serological data, one can estimate seroprevalence. While valuable on its own, seroprevalence can also be used as the input to an appropriate model to update forecasts or estimate the impacts of interventions. In the reverse direction, sample sizes can be calculated to yield seroprevalence estimates with a desired level of uncertainty and efficient sampling strategies can be developed based on prospective modeling tasks. The key methods include seroprevalence estimation, propagation of uncertainty through models, and model-informed sample size calculations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig1-v3.jpg)\n\n### Bayesian inference of seroprevalence\n\nTo integrate uncertainty arising from test sensitivity and specificity, we used a Bayesian model to produce a posterior distribution of seroprevalence that incorporates uncertainty associated with a finite sample size (Figure 1, green annotations). We denote the posterior probability that the true population seroprevalence is equal to $\\theta$, given test outcome data X and test sensitivity and specificity characteristics, as $Pr\u2062(\\theta\u2223X,se,sp)$. Because sample size and outcomes are included in X, and because test sensitivity and specificity are included in the calculations, this posterior distribution over $\\theta$ appropriately handles uncertainty due to limited sample sizes and an imperfect testing instrument, and can be used to produce a point estimate of seroprevalence or a posterior credible interval. The model and sampling algorithm are fully described in Appendix A1.\n\nSampling frameworks for seropositivity estimates are likely to be non-random and constrained to subpopulations. For example, convenience sampling (testing blood samples that were obtained for another purpose and are readily available) will often be the easiest and quickest data collection method (Winter et al., 2018). Two examples of such convenience samples are newborn heel stick dried blood spots, which contain maternal antibodies and thus reflect maternal exposure, and serum from blood donors (Valenti et al., 2020; Erikstrup et al., 2021; Fontanet et al., 2020). As a result, another source of statistical uncertainty comes from uneven sampling from a population.\n\nTo estimate seropositivity for all subpopulations based on a given sample (stratified, convenience, or otherwise), we specified a Bayesian hierarchical model that included a common prior distribution on subpopulation-specific seropositivities $\\theta_{i}$ (Appendix A1). In effect, this allowed seropositivity estimates from individual subpopulations to inform each other while still taking into account subpopulation-specific testing outcomes. The joint posterior distribution of all subpopulation prevalences was sampled using Markov chain Monte Carlo (MCMC) methods (Appendix A1). Those samples, representing posterior seroprevalence estimates for individual subpopulations, were then combined in a demographically weighted average to obtain estimates of overall seroprevalence, a process commonly known as poststratification (Little, 1993; Gelman and Carpenter, 2020). We focus the demonstrations and analyses of our methods on age-based subpopulations due to their integration into POLYMOD-type age-structured models (Mossong et al., 2008; Prem et al., 2017), but note that our mathematical framework generalizes naturally to other definitions of subpopulations, including those defined by geography (Fontanet et al., 2020; Nyc health testing data, 2020; Nisar et al., 2020; Malani et al., 2020).\n\n### Propagating serological uncertainty through models\n\nIn addition to estimating core epidemiological quantities (Farrington and Whitaker, 2003; Farrington et al., 2001; Hens et al., 2012) or mapping out patterns of outbreak risk (Abrams et al., 2014), the posterior distribution of seroprevalence can be used as an input to any epidemiological model. Such models include the standard SEIR model, where the proportion seropositive may correspond to the recovered/immune compartment, as well as more complex frameworks such as an age-structured SEIR model incorporating interventions like school closures and social distancing (Davies et al., 2020;\u00a0Figure 1, blue annotations). We integrated and propagated uncertainty in the posterior estimates of seroprevalence and uncertainty in model dynamics or parameters using Monte Carlo sampling to produce a posterior distribution of epidemic trajectories or key epidemiological parameter estimates (Figure 1, black annotations).\n\n### Single-population SEIR model with social distancing and serology\n\nTo integrate inferred seroprevalence with uncertainty into a single-population SEIR model, we created an ensemble of SEIR model trajectories by repeatedly running simulations whose initial conditions were drawn from the seroprevalence posterior distribution. In particular, the seroprevalence posterior distribution was sampled, and each sample $\\theta$ was used to inform the fraction of the population initially placed into the \u2018recovered\u2019 compartment of the model. Thus, uncertainty in posterior seroprevalence was propagated through model outcomes, which were measured as epidemic peak timing and peak height. Social distancing was modeled by decreasing the contact rate between susceptible and infected model compartments. A full description of the model and its parameters can be found in Appendix A2 and Supplementary file 1.\n\n### Age-structured SEIR model with serology\n\nTo integrate inferred seroprevalence with uncertainty into an age-structured SEIR model, we considered a model with 16\u00a0age\u00a0bins ($0-4,5-9,\u2026\u206275-79$). This model was parameterized using country-specific age-contact patterns (Mossong et al., 2008; Prem et al., 2017) and COVID-19 parameter estimates (Davies et al., 2020). The model, due to Davies et al., 2020, includes age-specific clinical fractions and varying durations of preclinical, clinical, and subclinical infectiousness, as well as a decreased infectiousness for subclinical cases. A full description of the model and its parameters can be found in Appendix A2 and Supplementary file 1.\n\nAs in the single-population SEIR model, seroprevalence with uncertainty was integrated into the age-structured model by drawing samples from seroprevalence posterior to specify the fraction of each subpopulation placed into \u2018recovered\u2019 compartments. Posterior samples were drawn from the age-stratified joint posterior distribution whose subpopulations matched the model\u2019s subpopulations. For each set of posterior samples, the effective reproduction number $R_{eff}$ was computed from the model\u2019s next-generation matrix. Thus, we quantified both the impact of age-stratified seroprevalence (assumed to be protective) on $R_{eff}$ as well as uncertainty in $R_{eff}$.\n\n### Serosurvey sample size and allocation for inference and modeling\n\nThe flexible framework described in Figure 1 enables the calculation of sample sizes for different serological survey designs. To calculate the number of tests required to achieve a seroprevalence estimate with a specified tolerance for uncertainty, and to determine optimal test allocation across subpopulations in the context of studying a particular intervention, we treated the estimate uncertainty as a framework output and then sought to minimize it by improving the allocation of samples (Figure 1, dashed arrow).\n\nUniform allocation of samples to subpopulations is not always optimal. It can be improved by (i) increasing sampling in subpopulations with higher seroprevalence and (ii) sampling in subpopulations with higher relative influence on the quantity to be estimated. This approach, which we term model and demographics informed (MDI), allocates samples to subpopulations in proportion to how much sampling them would decrease the posterior variance of estimates, that\u00a0is, $n_{i}\u221dx_{i}\u2062\\sqrt{\\theta_{i}^{*}\u2062(1-\\theta_{i}^{*})}$, where $\\theta_{i}^{*}=1-sp+\\theta_{i}\u2062(se+sp-1)$ is the probability of a positive test in subpopulation i given test sensitivity (se), test specificity (sp), and subpopulation seroprevalence $\\theta_{i}$, and xi is the relative importance of subpopulation i to the quantity to be estimated.\n\nThe sample allocation recommended by MDI varies depending on the information available and the quantity of interest. When the key quantity is overall seroprevalence, xi is the fraction of the population in subpopulation i. When the key quantity is total infections, the effective reproductive number,\u00a0$R_{eff}$, or another quantity derived from compartmental models with subpopulations, xi,\u00a0is the ith entry of the principal eigenvector of the model\u2019s next-generation matrix, after modification to include modeled interventions. In such scenarios, this approach balances the importance of sampling subpopulations due to their role in dynamics (xi) and higher variance in seroprevalence estimates themselves ($\\sqrt{\\theta_{i}^{*}\u2062(1-\\theta_{i}^{*})}$). If subpopulation prevalence estimates $\\theta_{i}$ are unknown, sample allocation based solely on xi is recommended. These methods are derived in Appendix A3.\n\n### Data sources\n\nAge distribution of U.S. blood donors was drawn from a study of Atlanta donors (Shaz et al., 2011). Age distribution of U.S. mothers was drawn from the 2016 CDC Vital Statistics Report using Massachusetts as a reference state (Martin et al., 2018). Daily age-structured contact data were drawn from Prem et al., 2017. All data were represented using 5-year age bins, that\u00a0is, $(0-4$, $5-9$,\u2026,$74-79)$. For datasets with bins wider than 5 years, counts were distributed evenly into the 5-year bins. Serological test characteristics were collected from registrations with the U.S. Food and Drug Administration, 2021 and summarized in Supplementary file 1. No attempt was made to test or validate manufacturer claims, and point estimates of sensitivity and specificity were used that did not incorporate test calibration sample sizes (Gelman and Carpenter, 2020; Larremore and Fosdick, 2020). Demographic data for the U.S., India, and Switzerland (analyzed in the article) as well as other countries (provided in open-source code) were downloaded from the 2019 United Nations World Populations Prospects report (United Nations, 2019). Hypothetical survey samples were drawn based on comprehensive seroprevalence estimates from Geneva, Switzerland (Stringhini et al., 2020).\n\n## Results\n\n### Test sensitivity/specificity, sampling bias, and true seroprevalence influence the accuracy and robustness of estimates\n\nWe simulated serological data from a single population with seroprevalence rates ranging from 1% to 50% using the reported sensitivity (90%) and specificity (>99.9%) of the Euroimmun SARS-CoV-2 IgG test (U.S. Food and Drug Administration, 2021;\u00a0Supplementary file 1), and with the number of samples ranging from 100 to 5000. We constructed Bayesian posterior estimates of seroprevalence, finding that, when seroprevalence is 10% or lower, around 1000 samples are necessary to correctly estimate seroprevalence to within \u00b12% (Figure 2). Marketed tests with other characteristics also required around 1000 tests (Figure 2\u2014figure supplement 1A,\u00a0B) to achieve the same uncertainty levels, approaching the minimum sample size achieved by a theoretical test with perfect sensitivity and specificity (Figure 2\u2014figure supplement 1C). Similar calculations for other test characteristics may be performed using the open-source tools that accompany this study (Open-source code repository and reproducible notebooks for this manuscript, 2020). In general, estimates were most uncertain when true seropositivity was near 50%, the number of samples was low, and/or test sensitivity/specificity were low.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig2-v3.jpg)\n\n**Figure 2.:** Uncertainty, represented by the width of 95% credible intervals, is presented as \u00b1 seroprevalence percentage points in (A) a contour plot and (B) for selected seroprevalence values, based on a serological test with 90% sensitivity and >99.9% specificity (Figure 2\u2014figure supplement 1 depicts results for other sensitivity and specificity values). In\u00a0total,\u00a05000 samples are sufficient to estimate any seroprevalence to within a worst-case tolerance of \u00b11.4 percentage points (e.g., 20%\u00a0\u00b1\u00a01.4% = [18.6%, 21.4%]), even with the imperfect test studied. Each point or pixel is averaged over 250 stochastic draws from the specified seroprevalence with the indicated sensitivity and specificity.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Uncertainty, represented by the width of 95% credible intervals, is presented as \u00b1 seroprevalence percentage points in contour plots and for selected seroprevalence values, ranging from 1% to 50%, based on a serological test with (A,\u00a0B) 96.6% sensitivity and >99.9% specificity, matching the claims of the Roche IgG test (U.S. Food and Drug Administration, 2021), (C,\u00a0D) 95.0% sensitivity and >99.9% specificity, matching the claims of the Abbott Architect IgG test (U.S. Food and Drug Administration, 2021), and\u00a0(E,\u00a0F) 100% sensitivity and specificity, representing an ideal test, complementing the results for a test with 90% sensitivity and >99.9% specificity, matching the claims of the Euroimmun IgG test (U.S. Food and Drug Administration, 2021) shown in Figure 2. See Supplementary file 1 for details on serological test kits.\n\nNext, we tested the ability of the Bayesian hierarchical model to infer both population and subpopulation seroprevalence. We simulated serological data from subpopulations for which samples were allocated and with heterogeneous seroprevalence levels (Supplementary file 2) and average seroprevalence values between 5% and 50%. Test outcomes were randomly generated conditioning on the false positive and negative properties of the test being modeled (Supplementary file 1). Test allocations across subpopulations were specified in proportion to age demographics of blood donations, delivering mothers, uniformly across subpopulations, or according to an MDI allocation focused on minimized posterior uncertainty in $R_{eff}$.\n\nCredible intervals of the resulting overall seroprevalence estimates were influenced by the age demographics sampled, with the most uncertainty in the newborn dried blood spots sample set, due to the narrow age range for the mothers (Figure 3). For such sampling strategies, which draw from only a subset of the population, our approach assumes that seroprevalence in each subpopulation does not dramatically vary and thus infers that seroprevalence in the unsampled bins is similar to that in the sampled bins but with increased uncertainty. Uncertainty was also influenced by the overall seroprevalence, such that the width of the 95% credible interval increased with higher seroprevalence for a given sample size. While test sensitivity and specificity also impacted uncertainty, central estimates of overall seropositivity were robust for sampling strategies that spanned the entire population. Note that the MDI sample allocation shown in Figure 3 was optimized to estimate the effective reproductive number\u00a0$R_{eff}$, and thus, while it performs well, it is slightly outperformed by uniform sampling when used to estimate overall seroprevalence.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig3-v3.jpg)\n\n**Figure 3.:** Uncertainty, represented by the width of 95% credible intervals, is presented as \u00b1\u00a0seroprevalence percentage points, based on a serological test with 90% sensitivity and >99.9% specificity (Figure 3\u2014figure supplement 1 depicts results for other sensitivity and specificity values). (A) Curves show the decrease in average CI widths for 15% seroprevalence, illustrating the advantages of using uniform and model and demographics informed\u00a0(MDI) samples over convenience samples. (B) Contour plots show average CI widths for various total sample counts and overall seroprevalence ranging from 5% to 50%. Convenience samples derived from newborn blood spots (reflecting the age demographics of mothers) or U.S. blood donors improve with additional sampling but retain baseline uncertainty due to demographics not covered by the convenience sample. For the estimation of overall seroprevalence, uniform sampling is marginally superior to this example of the MDI sampling strategy, which was designed to optimize estimation of the effective reproductive number\u00a0$R_{eff}$. Each point or pixel is averaged over 250 stochastic draws from the specified seroprevalence with the indicated sensitivity and specificity.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Uncertainty, represented by the width of 95% credible intervals, is presented as \u00b1 seroprevalence percentage points, based on a serological test with (A,\u00a0B) 96.6% sensitivity and >99.9% specificity, matching the claims of the Roche IgG test (U.S. Food and Drug Administration, 2021), (C,\u00a0D) 95.0% sensitivity and >99.9% specificity, matching the claims of the Abbott Architect IgG test (U.S. Food and Drug Administration, 2021), and\u00a0(E,\u00a0F) 100% sensitivity and specificity, representing an ideal test, complementing the results for a test with 90% sensitivity and >99.9% specificity, matching the claims of the Euroimmun IgG test (U.S. Food and Drug Administration, 2021) shown in Figure 3. (A,\u00a0C,\u00a0E) Curves show the decrease in average CI widths for 15% seroprevalence, illustrating the advantages of using uniform and model and demographics informed\u00a0(MDI) samples over convenience samples. (B,\u00a0D,\u00a0F) Contour plots show average CI widths for various total sample counts and overall seroprevalence. Convenience samples derived from newborn blood spots or U.S. blood donors improve with additional sampling but retain baseline uncertainty due to demographics not covered by the convenience sample. For the estimation of overall seroprevalence, uniform sampling is marginally superior to this example of the MDI sampling strategy, which was designed to optimize estimation of $R_{eff}$. Each point or pixel is averaged over 250 stochastic draws from the specified seroprevalence, ranging from 5% to 50%, with the indicated sensitivity and specificity.\n\n### Seroprevalence estimates inform uncertainty in epidemic peak, timing, and reproductive number\n\nFigure 4 illustrates how the height and timing of peak infections varied in forward simulations under two serological sampling scenarios and two hypothetical social distancing policies for a basic SEIR framework parameterized using seroprevalence data. Uncertainty in seroprevalence estimates propagated through SEIR model outputs in stages: larger sample sizes at a given seroprevalence resulted in a smaller credible interval for the seroprevalence estimate, which improved the precision of estimates of both the height and timing of the epidemic peak. We note that seroprevalence estimates without correction for the sensitivity and specificity of the test resulted in biased estimates in spite of increasing precision with larger sample size (Figure 4C,\u00a0D). Test characteristics also impacted model estimates, with more specific and sensitive tests leading to more precise estimates (Figure 4\u2014figure supplement 1). Even estimations from a perfect test carried uncertainty corresponding to the size of the sample set (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig4-v3.jpg)\n\n**Figure 4.:** Serological test outcomes for $n=100$ tests (A; red) and $n=1000$ tests (B; blue) produce (C,\u00a0D) posterior seroprevalence estimates with quantified uncertainty with posterior means of 15.2% and 14.6%, respectively; estimates uncorrected for assay performance bias: 13.0% and 13.0%. (E,\u00a0F) Samples from the seroprevalence posterior produce a distribution of simulated epidemic curves for scenarios of 25% and 50% social distancing (see Materials\u00a0and\u00a0methods), leading to uncertainty in (G) epidemic peak and (H) timing, which is mitigated in the $n=1000$ sample scenario. Boxplot whiskers span 1.5\u00d7\u00a0IQR, boxes span central quartile, lines indicate medians, and outliers were suppressed. se, sensitivity; sp, specificity.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Serological test outcomes for (A) $n=100$\u00a0tests and (B) $n=1000$ tests are shown as bar graphs for four tests with sensitivity and specificity values as indicated. Serological test samples were not generated stochastically but instead according to expectation to highlight how sensitivity and specificity affect inference. Posterior seroprevalence estimates for (C) $n=100$ and (D) $n=1000$ scenarios reveal that Bayesian estimate places posteriors over the correct values (15%) but with uncertainty that depends on n (compare C to D) and test characteristics (compare peak heights of yellow and purple to blue and orange). Samples from the seroprevalence posterior produce a distribution of epidemic curves for scenarios of 25% and 50% social distancing (see Materials\u00a0and\u00a0methods), leading to uncertainty in (E) height of epidemic peak and (F) timing of epidemic peak. Uncertainty is mitigated but not eliminated in the $n=1000$ scenario, just as uncertainty is mitigated but not eliminated using a perfect serological test. Boxplots reflect 100 samples from SEIR dynamics; whiskers span 1.5\u00d7IQR, boxes span central quartile, lines indicate medians, and outliers not shown.\n\nFigure 5 illustrates how the Bayesian hierarchical model extrapolates seroprevalence values in sampled subpopulations, based on convenience samples from particular age groups or age-stratified serological surveys, to the overall population, with uncertainty propagated from these estimates to model-inferred epidemiological parameters of interest, such as the effective reproduction number\u00a0$R_{eff}$. Estimates from 1000 neonatal heel sticks or blood donations achieved more uncertain, but still reasonable, estimates of overall seroprevalence and $R_{eff}$ as compared to uniform or demographically informed sample sets (Figure 5). Here, convenience samples produced higher confidence estimates in the heavily sampled subpopulations, but high uncertainty estimates in unsampled populations through our Bayesian modeling framework. In all scenarios, our framework propagated uncertainty appropriately from serological inputs to estimates of overall seroprevalence (Figure 5I) or $R_{eff}$ (Figure 5J). Importantly, we note that the inferred posterior estimates shown in Figure 5 are derived from stochastically generated data, meaning that repeating this numerical experiment would produce different simulated test outcomes and therefore different inferred seroprevalence and $R_{eff}$ estimates whose accuracy will stochastically vary, as expected. Improved test sensitivity and specificity correspondingly improved estimation and reduced the number of samples required (i) to achieve the same credible interval for a given seroprevalence and (ii) estimates of $R_{eff}$ (Figure 5\u2014figure supplements 1 and 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig5-v3.jpg)\n\n**Figure 5.:** (A\u2013D) For four sampling strategies, $n=1000$ tests were allocated to age groups with negative tests (gray outlines) and positive tests (colors) as shown, drawn stochastically based on seroprevalence estimates reflecting SARS-CoV-2 serosurvey outcomes from Geneva, Switzerland, as of May 2020 (Stringhini et al., 2020) for a test with 90% sensitivity and >99.9% specificity. The model and demographics informed\u00a0(MDI) strategy shown was designed to optimize estimation of $R_{eff}$. (E\u2013H) Age-group seroprevalence estimates $\\theta_{i}$ are shown as boxplots (boxes 90% CIs, whiskers 95% CIs); dots indicate the true values from which data were sampled (Stringhini et al., 2020). Note the decreased uncertainty for boxes with higher sampling rates. (I) Age-group seroprevalences were weighted by Swiss population demographics to produce overall seroprevalence estimates, shown as probability densities with 95% credible intervals shaded and highlighted with dashed lines. (J) Age-group seroprevalences were used to estimate the effective reproductive number ($R_{eff}$) from an age-stratified transmission model under status quo ante contact patterns, shown as probability densities with 95% credible intervals shaded and highlighted with dashed lines, based on a basic reproductive number in the absence of population immunity (R0) of 2.5. Dashed lines indicate true values from which the data were sampled. Each distribution depicts inference outcomes from a single set of stochastically sampled data; no averaging is done. Note that although uniform and MDI sample allocation produces equivalently confident estimates of overall seroprevalence, MDI produces a more confident estimate of $R_{eff}$ because it allocates more samples to age groups most relevant to model dynamics.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Credible intervals were calculated for data generated according to four sampling strategies (columns, colors) and four test kits (rows), with sensitivity and specificity values as indicated; see legends. Each point represents the average width of the intervals for the indicated overall seroprevalence value (see annotations on plots) at the specified number of serological samples n out of a total of 250 independent trials. Some seroprevalence values are plotted in black simply to guide the eye. The model and demographics informed strategy shown was designed to optimize estimation of $R_{eff}$. Sampling strategies that resulted in posterior credible intervals with inaccurate coverage are crossed out to indicate that estimates in these regimes should be interpreted with caution.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Average credible interval width for $R_{\ud835\udc1e\ud835\udc1f\ud835\udc1f}$ estimates using four sampling strategies and four serological test kits.Credible intervals were calculated for data generated according to four sampling strategies (columns, colors) and four test kits (rows), with sensitivity and specificity values as indicated; see legends. Each point represents the average width of the intervals for the indicated overall seroprevalence value (see annotations on plots) at the specified number of serological samples n out of a total of 250 independent trials. Some seroprevalence values are plotted in black simply to guide the eye. The model and demographics informed strategy shown was designed to optimize estimation of $R_{eff}$.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig5-figsupp3-v3.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Credible interval coverage, defined as the fraction of posterior credible intervals that covered the true parameter used to generate the data, is shown for four sampling strategies (columns, colors) and four test kits (rows), with sensitivity and specificity values as indicated; see legends. Each point represents the fraction of credible intervals that covered the planted value for the indicated overall seroprevalence value (see annotations on plots) at the specified number of serological samples n out of a total of 250 independent trials. The estimated coverage from a perfectly calibrated posterior will have coverage fractions within 0.9\u00a0\u00b1\u00a00.37 (gray bands) 95% of the time. Some seroprevalence values are plotted in black simply to guide the eye. The model and demographics informed strategy shown was designed to optimize estimation of $R_{eff}$.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig5-figsupp4-v3.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Credible interval coverage for $R_{\ud835\udc1e\ud835\udc1f\ud835\udc1f}$ estimates using four sampling strategies and four serological test kits.Credible interval coverage, defined as the fraction of posterior credible intervals that covered the true parameter used to generate the data, is shown for four sampling strategies (columns, colors) and four test kits (rows), with sensitivity and specificity values as indicated; see legends. Each point represents the fraction of credible intervals that covered the planted value for the indicated overall seroprevalence value (see annotations on plots) at the specified number of serological samples n out of a total of 250 independent trials. The estimated coverage from a perfectly calibrated posterior will have coverage fractions within 0.9\u00a0\u00b1\u00a00.37 (gray bands) 95% of the time. Some seroprevalence values are plotted in black simply to guide the eye. The model and demographics informed strategy shown was designed to optimize estimation of $R_{eff}$.\n\nIf the subpopulations in the convenience sample have systematically different seroprevalence rates from the general population, increasing the sample size may bias estimates (Figure 5\u2014figure supplements 3 and 4) while simultaneously decreasing the widths of posterior credible intervals, producing higher confidence in estimates in spite of their bias. This may be avoided using data from other sources or by updating the prior distributions in the Bayesian model with known or hypothesized relationships between seroprevalence of the sampled and unsampled populations. In general, the magnitude of this type of bias is not possible to estimate without secondary sources of seroprevalence data, differentiating it from the avoidable biases that result from failing to post-stratify based on population demographics or adjust for the sensitivity and specificity of the test instrument.\n\n### Strategic sample allocation improves estimates\n\nWe used the MDI strategy to design a study that optimizes estimation of $R_{eff}$ and then tested the performance of the sample allocations against those resulting from blood donation and neonatal heel stick convenience sampling, as well as uniform sampling. As designed, MDI produced higher confidence posterior estimates (Figure 5J, Figure 5\u2014figure supplement 2). Importantly, because the relative importance of subpopulations in a model varies based on the hypothetical interventions being modeled (e.g., the reopening of workplaces would place higher importance on the serological status of working-age adults), MDI sample allocation recommendations should be derived for multiple hypothetical interventions and then averaged to design a study from which the largest variety of high confidence results can be derived. To illustrate how such recommendations would work in practice, we computed MDI recommendations to optimize three scenarios for the contact patterns and demography of the U.S. and India, deriving a balanced sampling recommendation (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64206/elife-64206-fig6-v3.jpg)\n\n**Figure 6.:** Bar charts depict recommended sample allocation for three objectives, reducing posterior uncertainty for (A,\u00a0E) estimates of overall seroprevalence, (B,\u00a0F) predictions from an age-structured model with status quo ante contact patterns, (C,\u00a0G) predictions from an age-structured model with modified contacts representing, relative to pre-crisis levels,\u00a0a 20% increase in home contact rates, closed schools, a 25% decrease in work contacts, and a 50% decrease of other contacts (Mossong et al., 2008; Prem et al., 2017), and (D,\u00a0H) averaging the other three MDI recommendations to balance competing objectives. Data for both the U.S. (blue; A\u2013D) and India (orange; E\u2013H) illustrate the impact of demography and contact structure on strategic sample allocation. These sample allocation strategies assume no prior knowledge of subpopulation seroprevalences ${\\theta_{i}}$.\n\n## Discussion\n\nThere is a critical need for serological surveillance of SARS-CoV-2 to estimate cumulative incidence. Here, we presented a formal framework for doing so to aid in the design and interpretation of serological studies, which avoids the biases associated with seroprevalence estimates that fail to account for sensitivity, specificity, and sampling schemes. We considered that sampling may be done in multiple ways, including efforts to approximate seroprevalence using convenience samples, as well as more complex and resource-intensive structured sampling schemes, and that these efforts may use one of any number of serological tests with distinct test characteristics. We incorporated into this framework an approach to propagating the estimates and associated uncertainty through mathematical models of disease transmission (focusing on scenarios where seroprevalence maps to immunity) to provide decision-makers with tools to evaluate the potential impact of interventions and thus guide policy development and implementation.\n\nOur results suggest approaches to serological surveillance that can be adapted as needed based on pre-existing knowledge of disease prevalence and trajectory, availability of convenience samples, and the extent of resources that can be put towards structured survey design and implementation. While this work focuses on the design and analysis of single cross-sectional surveys, stratified by age, extensions to the analysis of serial cross-sectional surveys (Stringhini et al., 2020; Nisar et al., 2020) or other stratifications are also possible. Our results suggest that such surveys could benefit from the rebalancing of limited test budgets between subpopulations from one cross-sectional wave to the next by basing each wave\u2019s test allocation strategy on the MDI recommendations derived from the preceding wave. Although our numerical demonstrations here focused on heterogeneity and modeling by age, our work may be applied to any population stratification for which there is heterogeneity. Indeed, seroprevalence studies by neighborhood in New York City (Nyc health testing data, 2020), Karachi (Nisar et al., 2020), and Mumbai (Malani et al., 2020) have all found geographical variation in seroprevalence. In situations where sample sizes are low and heterogeneity is high, hyperprior parameters can be adjusted to accommodate larger variation between subpopulations.\n\nIn the absence of baseline estimates of cumulative incidence, an initial serosurvey can provide a preliminary estimate (Figure 2). Our framework updates the 'rule of 3' approach (Hanley and Lippman-Hand, 1983) by incorporating uncertainty in test characteristics and can further address uncertainty from biased sampling schemes (see Appendix A4). As a result, convenience samples, such as the maternal antibodies within newborn heel stick dried blood spots or samples from blood donors, can be used to estimate population seroprevalence. However, it is important to note that in the absence of reliable assessment of correlations in seroprevalence across age groups, extrapolations from these convenience samples to entire populations may be misleading as sample size increases (Figure 5\u2014figure supplement 3). Indeed, as convenience sample size increases, credible intervals will shrink, which, if sampled groups are unrepresentative of unsampled groups, will constitute a \u2018false precision\u2019. Uniform or model and demographic informed samples, while more challenging logistically to implement, give the most reliable estimates. The results of a one-time study could be used to update the priors of our Bayesian hierarchical model and improve the inferences from convenience samples. In this context, we note that our framework naturally allows the integration of samples from multiple test kits and protocols, provided that their sensitivities and specificities can be estimated (Larremore and Fosdick, 2020; Gelman and Carpenter, 2020), which will become useful as serological assays improve in their specifications.\n\nThe results from serological surveys will be invaluable in projecting epidemic trajectories and understanding the impact of interventions such as age-prioritized vaccination (Bubar et al., 2021). We have shown how the estimates from these serological surveys can be propagated into transmission models, incorporating model uncertainty as well. Conversely, to aid in rigorous assessment of particular interventions that meet accuracy and precision specifications, this framework can be used to determine the needed number and distribution of population samples via model and demographic-informed sampling. Extensions could conceivably address other study planning questions, including sampling frequency (Herzog et al., 2017).\n\nThere are a number of limitations to this approach that reflect uncertainties in the underlying assumptions of serological responses and the changes in mobility and interactions due to public health efforts (Kissler et al., 2020b). Serology reflects past infection, and the delay between infection and detectable immune response means that serological tests reflect a historical cumulative incidence (the date of sampling minus the delay between infection and detectable response). However, due to the waning of antibody concentrations over time (Ward et al., 2020), seroreversion may cause seroprevalence studies to underestimate cumulative incidence. As a consequence, modeling studies that incorporate seroprevalence estimates should acknowledge such potential delays and seroreversion when interpreting their findings. The possibility of heterogeneous immune responses to infection and unknown dynamics and duration of immune response means that interpretation of serological survey results may not accurately capture cumulative incidence. For COVID-19, we do not yet understand the serological correlates of protection from infection, and as such projecting seroprevalence into models that assume seropositivity indicates immunity to reinfection may be an overestimate; models would need to be updated to include partial protection or return to susceptibility.\n\nOur work also requires the specification of prior and hyperprior distributions, assumptions inherent to any Bayesian approach to statistical inference. Here, we used uninformative uniform prior distributions and a weakly informative hyperprior distribution in order to impose minimal assumptions when modeling the data. This is a conservative choice as assuming uninformative prior distributions results in higher posterior uncertainty. While informative priors can reduce uncertainty in seroprevalence studies (Gelman and Carpenter, 2020), specifying such priors appropriately relies on additional information and/or assumptions about the study population, which may be sparse, particularly during an unfolding pandemic.\n\nUse of model and demographic-informed sampling schemes is valuable for projections that evaluate interventions but are dependent on accurate parameterization. While in our examples we used POLYMOD and other contact matrices, these represent the status quo ante and should be updated to the extent possible using other data, such as those obtainable from surveys (Mossong et al., 2008; Prem et al., 2017) and mobility data from online platforms and mobile phones (Buckee et al., 2020; Ainslie et al., 2020; Open COVID-19 Data Working Group et al., 2020). Moreover, the framework could be extended to geographic heterogeneity as well as longitudinal sampling if, for example, one wanted to compare whether the estimated quantities of interest (e.g., seroprevalence, $R_{eff}$) differ across locations or time (Abrams et al., 2014; Stringhini et al., 2020; Kissler et al., 2020a).\n\nHere, we explored only SEIR models, but extensions to alternatives that incorporate waning immunity (Ward et al., 2020) and a return to full or partial susceptibility are possible (Saad-Roy et al., 2020). Clarified understanding of SARS-CoV-2 antibody titers, protection, and durability will further inform whether it is appropriate to model seropositive individuals as no longer susceptible, as we did in example calculations here. We note that, across model types, the derivation of model-focused MDI sample allocation strategies requires only the formulation of a next-generation matrix or network of subpopulations\u2019 epidemiological impacts on each other, providing a more general framework spanning model assumptions and classes.\n\nOverall, the framework here can be adapted to communities of varying size and resources seeking to monitor and respond to SARS-CoV-2 and future pandemics. Further, while the analyses and discussion focused on addressing urgent needs, this is a generalizable framework that with appropriate modifications can be applicable to other infectious disease epidemics.\n",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "63914259-222b-4a2b-8c0a-b7eadf39f636",
+      "submission_id": "e61b0507-a196-41e8-984e-d7693ad807fd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Isabel Rodriguez-Barraquer, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64206.sa1](https://doi.org/10.7554/eLife.64206.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe paper by Larremore et al. presents a Bayesian framework to incorporate several sources of uncertainty (test characteristics, sample size, and heterogeneity across tested subpopulations) into estimates of SARS-CoV-2 seroprevalence and derived epidemiological/transmission parameters. They then use this framework to optimize study design and sampling schemes for serosurveys. While none of the methods presented are novel per se, the paper does present a much needed formal framework to guide the analysis and design of SARS-CoV-2 serosurveys.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Estimating SARS-CoV-2 seroprevalence and epidemiological parameters with uncertainty from serological surveys\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Miles Davenport as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andrew Azman (Reviewer #1); Sereina Herzog (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary\n\nThe paper by Larremore et al. presents a Bayesian framework to incorporate several sources of uncertainty (test characteristics, sample size, and heterogeneity across tested subpopulations) into estimates of SARS-CoV-2 seroprevalence and derived epidemiological/transmission parameters. They then use this framework to optimize study design and sampling schemes for serosurveys. While none of the methods presented are novel per se, the paper does present a much needed formal framework to guide the analysis and design of SARS-CoV-2 serosurveys. The paper was previously reviewed in another journal and the authors have provided the comments and responses. We thank them for providing these as they were very useful when evaluating the manuscript. We find that critiques have been adequately addressed.\n\nEssential revisions:\n\n1) As it is clear some research groups conducting large serosurveys have decided not to correct for assay performance, I think the authors missed an important opportunity to clarify the expected magnitude of biases (and false precision) from this. It would be very useful to put this in comparison to the biases and uncertainty expected from sampling and sampling of non-representative demographic samples.\n\n2) It isn't clear why the authors chose to focus on 90% credible intervals as opposed to more commonly used 95% intervals. I don't think this is a major issue but seems like one of many decisions made throughout the paper that make these interesting results one (seemingly unnecessary) step removed from more practical application.\n\n3) Figure 5: I don't see any attempt to explain why the modes for seroprev. posteriors are fairly off from the true values. Can you expand a bit and perhaps provide some solutions on how to do better?\n\n4) Figure S4: Useful lessons here to illustrate how large samples from sub-populations alone (e.g., newborns and blood donors) can artificially increase apparent precision in seroprevalence estimates. Perhaps I missed this somewhere in the text but this seems useful to note.\n\n5) The serological assays modelled in the text are not typical ones used in practice today. I appreciate that this manuscript was drafted early on the pandemic but the supplementary table should at least be updated to include the characteristics of some of the main assays in use today (e.g., EuroImmun, Roche, Abbot) for comparison purposes.\n\n6) Some of the parameter assumptions cite other modelling papers as a reference. While some of these previous papers may have been based on empirical data, others are not. Please cite references for empirical data (e.g., incubation period) otherwise just be clear that these parameters were assumed.\n",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "320263da-af24-47a1-b7d7-37b1a0f9f37d",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C1",
+      "claim": "Establishing how many people have been infected by SARS-CoV-2 remains an urgent priority for controlling the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Establishing how many people have been infected by SARS-CoV-2 remains an urgent priority for controlling the COVID-19 pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of determining infection rates, reflecting established public health priorities during the pandemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "05f520bf-f00a-40c0-9b3d-f386fbc56e18",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C2",
+      "claim": "Serological tests that identify past infection can be used to estimate cumulative incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Serological tests that identify past infection can be used to estimate cumulative incidence, but the relative accuracy and robustness of various sampling strategies have been unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about the use of serological testing in epidemiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "4bb63bd0-25db-428f-a697-8a8dfc6bee0a",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C3",
+      "claim": "The relative accuracy and robustness of various sampling strategies for serological testing have been unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Serological tests that identify past infection can be used to estimate cumulative incidence, but the relative accuracy and robustness of various sampling strategies have been unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "9abe9296-ac2f-4d59-8bd8-953c2cdc556b",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C4",
+      "claim": "The authors developed a flexible framework that integrates uncertainty from test characteristics, sample size, and heterogeneity in seroprevalence across subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a flexible framework that integrates uncertainty from test characteristics, sample size, and heterogeneity in seroprevalence across subpopulations to compare estimates from sampling schemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "63c13ddb-5487-4960-afc8-587973e21368",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C5",
+      "claim": "Sampling schemes informed by demographics and contact networks outperform uniform sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same framework and making the assumption that seropositivity indicates immune protection, we propagated estimates and uncertainty through dynamical models to assess uncertainty in the epidemiological parameters needed to evaluate public health interventions and found that sampling schemes informed by demographics and contact networks outperform uniform sampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the study's analysis, supported by the modeling results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "80f0f0f1-a556-460a-9561-d679ac9fa0bb",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C6",
+      "claim": "Assessment of population seropositivity can address gaps in knowledge of the cumulative disease incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessment of population seropositivity, a measure of the prevalence of individuals who have been infected in the past and developed antibodies to the virus, can address gaps in knowledge of the cumulative disease incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established epidemiological principles about the utility of serological surveillance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "c78c0a35-42bc-4cca-84b8-0d78fbd076d2",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C7",
+      "claim": "There has been inadequate viral diagnostic testing for COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly important given inadequate viral diagnostic testing and incomplete understanding of the rates of mild and asymptomatic infections (Sutton et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sutton et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "1c338f20-7f29-4858-880d-262a08c496fe",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C8",
+      "claim": "There is incomplete understanding of the rates of mild and asymptomatic COVID-19 infections.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly important given inadequate viral diagnostic testing and incomplete understanding of the rates of mild and asymptomatic infections (Sutton et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sutton et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "b9c6500d-71c1-4867-b670-a68ce5555777",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C9",
+      "claim": "Serological surveillance has the potential to provide information about the true number of infections.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, serological surveillance has the potential to provide information about the true number of infections, allowing for robust estimates of case and infection fatality rates (Fontanet et al., 2020) and for the parameterization of epidemiological models to evaluate the possible impacts of specific interventions and thus guide public health decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established epidemiological knowledge and supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "51cc1c9f-6c04-4e07-bb4f-d28df10d8a4f",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C10",
+      "claim": "Serological surveillance allows for robust estimates of case and infection fatality rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, serological surveillance has the potential to provide information about the true number of infections, allowing for robust estimates of case and infection fatality rates (Fontanet et al., 2020) and for the parameterization of epidemiological models to evaluate the possible impacts of specific interventions and thus guide public health decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Fontanet et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "f273e7d1-00a5-4738-8ef5-608cd1bd1915",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C11",
+      "claim": "The proportion of the population that has been infected by and recovered from SARS-CoV-2 will be a critical measure to inform policies on a population level.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of the population that has been infected by, and recovered from, the coronavirus causing COVID-19 will be a critical measure to inform policies on a population level, including when and how social distancing interventions can be relaxed, and the prioritization of vaccines (Bubar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on public health knowledge and supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "2238a734-c460-4f4a-b832-b074020f0cad",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C12",
+      "claim": "Individual serological testing may allow low-risk individuals to return to work, school, or university, contingent on the immune protection afforded by a measurable antibody response.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual serological testing may allow low-risk individuals to return to work, school, or university, contingent on the immune protection afforded by a measurable antibody response (Weitz et al., 2020; Larremore, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Weitz et al., 2020 and Larremore, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "d1fca339-b0d2-4c6c-9a33-5e674fd36fa7",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C13",
+      "claim": "Methods are urgently needed to design and interpret serological data based on testing of subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "At a population level, however, methods are urgently needed to design and interpret serological data based on testing of subpopulations, including convenience samples such as blood donors (Valenti et al., 2020; Erikstrup et al., 2021; Fontanet et al., 2020) and neonatal heel sticks, to reliably estimate population seroprevalence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a methodological gap that the study addresses, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "85e895da-c4c9-494b-b452-85c58ad24be3",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C14",
+      "claim": "Tests may have imperfect sensitivity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "First, tests may have imperfect sensitivity and specificity, and studies that do not adjust for test imperfections will produce biased seroprevalence estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about diagnostic test characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "cea30324-ffc8-4f30-aa5f-f7c59c053ad5",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C15",
+      "claim": "Studies that do not adjust for test imperfections will produce biased seroprevalence estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "First, tests may have imperfect sensitivity and specificity, and studies that do not adjust for test imperfections will produce biased seroprevalence estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical principles regarding measurement error.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "f6006edb-72be-4098-90c6-26b4b58b7031",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C16",
+      "claim": "Sensitivity and specificity are themselves estimated from data.",
+      "claim_type": "EXPLICIT",
+      "source": "Complicating this issue is the fact that sensitivity and specificity are, themselves, estimated from data (Larremore and Fosdick, 2020; Gelman and Carpenter, 2020), which can lead to statistical confusion if uncertainty is not correctly propagated (Bendavid et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Larremore and Fosdick, 2020 and Gelman and Carpenter, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "87b01bdc-121c-49a3-a4c4-ac0823c7381e",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C17",
+      "claim": "Uncertainty in sensitivity and specificity estimates can lead to statistical confusion if not correctly propagated.",
+      "claim_type": "EXPLICIT",
+      "source": "Complicating this issue is the fact that sensitivity and specificity are, themselves, estimated from data (Larremore and Fosdick, 2020; Gelman and Carpenter, 2020), which can lead to statistical confusion if uncertainty is not correctly propagated (Bendavid et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bendavid et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "8c94df53-d015-42e6-a8f9-4c95947b7da6",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C18",
+      "claim": "The population sampled will likely not be a representative random sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the population sampled will likely not be a representative random sample (Bendavid et al., 2020), especially in the first rounds of testing, when there is urgency to test using convenience samples and potentially limited serological testing capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bendavid et al., 2020 and reflects practical constraints in epidemiological surveillance.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "42e1118e-907e-4390-a0a3-6738fb4f0770",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C19",
+      "claim": "There is uncertainty inherent to any model-based forecast that uses the empirical estimation of seroprevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, there is uncertainty inherent to any model-based forecast that uses the empirical estimation of seroprevalence, regardless of the quality of the test, in part because of the uncertain relationship between seropositivity and immunity (Tan et al., 2020; Ward et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tan et al., 2020 and Ward et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "378418be-be23-4a4b-a27a-7e0666c9304e",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C20",
+      "claim": "There is an uncertain relationship between seropositivity and immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, there is uncertainty inherent to any model-based forecast that uses the empirical estimation of seroprevalence, regardless of the quality of the test, in part because of the uncertain relationship between seropositivity and immunity (Tan et al., 2020; Ward et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tan et al., 2020 and Ward et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "c834ab1c-d7ad-472f-ae99-e635d81497d9",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C21",
+      "claim": "The framework incorporates the test's sensitivity and specificity and enables estimates of population seroprevalence that include uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting with results from a serological survey of a given size and age stratification, the framework incorporates the test's sensitivity and specificity and enables estimates of population seroprevalence that include uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the methodological framework developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "09ccb2f0-cc7b-44ff-b7c3-debb6099dbe6",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C23",
+      "claim": "The authors used a Bayesian model to produce a posterior distribution of seroprevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "To integrate uncertainty arising from test sensitivity and specificity, we used a Bayesian model to produce a posterior distribution of seroprevalence that incorporates uncertainty associated with a finite sample size (Figure 1, green annotations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "9a387dcf-d6cd-4cd2-a7e5-7632e818b6f1",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C25",
+      "claim": "Convenience sampling will often be the easiest and quickest data collection method.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, convenience sampling (testing blood samples that were obtained for another purpose and are readily available) will often be the easiest and quickest data collection method (Winter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Winter et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "8115447d-6853-4b34-8a55-d8b676346e1f",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C26",
+      "claim": "Newborn heel stick dried blood spots contain maternal antibodies and thus reflect maternal exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Two examples of such convenience samples are newborn heel stick dried blood spots, which contain maternal antibodies and thus reflect maternal exposure, and serum from blood donors (Valenti et al., 2020; Erikstrup et al., 2021; Fontanet et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about maternal antibody transfer and supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "f4a315e7-d95b-4314-8232-2189aea60484",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C28",
+      "claim": "The hierarchical model allows seropositivity estimates from individual subpopulations to inform each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In effect, this allowed seropositivity estimates from individual subpopulations to inform each other while still taking into account subpopulation-specific testing outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the properties of the hierarchical Bayesian model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "4f12ff25-aa8c-4d4d-a3f9-56442af7ba5c",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C29",
+      "claim": "The authors focus on age-based subpopulations due to their integration into POLYMOD-type age-structured models.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus the demonstrations and analyses of our methods on age-based subpopulations due to their integration into POLYMOD-type age-structured models (Mossong et al., 2008; Prem et al., 2017), but note that our mathematical framework generalizes naturally to other definitions of subpopulations, including those defined by geography (Fontanet et al., 2020; Nyc health testing data, 2020; Nisar et al., 2020; Malani et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological choices made in the study, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "b6039ab5-f868-4f0f-8668-daf4ff15a6ae",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C30",
+      "claim": "The mathematical framework generalizes naturally to other definitions of subpopulations, including those defined by geography.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus the demonstrations and analyses of our methods on age-based subpopulations due to their integration into POLYMOD-type age-structured models (Mossong et al., 2008; Prem et al., 2017), but note that our mathematical framework generalizes naturally to other definitions of subpopulations, including those defined by geography (Fontanet et al., 2020; Nyc health testing data, 2020; Nisar et al., 2020; Malani et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the generalizability of the framework, supported by citations to geographical studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "28106963-f14c-494c-8985-ab71471afa7a",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C31",
+      "claim": "The posterior distribution of seroprevalence can be used as an input to any epidemiological model.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to estimating core epidemiological quantities (Farrington and Whitaker, 2003; Farrington et al., 2001; Hens et al., 2012) or mapping out patterns of outbreak risk (Abrams et al., 2014), the posterior distribution of seroprevalence can be used as an input to any epidemiological model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the flexibility of the framework, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "a606717b-3b77-44b4-b688-8d676a46454c",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C32",
+      "claim": "The authors integrated and propagated uncertainty in the posterior estimates of seroprevalence and uncertainty in model dynamics or parameters using Monte Carlo sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "We integrated and propagated uncertainty in the posterior estimates of seroprevalence and uncertainty in model dynamics or parameters using Monte Carlo sampling to produce a posterior distribution of epidemic trajectories or key epidemiological parameter estimates (Figure 1, black annotations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "3423b260-de79-40df-b1f6-1fe3a2153642",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C33",
+      "claim": "Social distancing was modeled by decreasing the contact rate between susceptible and infected model compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Social distancing was modeled by decreasing the contact rate between susceptible and infected model compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how social distancing interventions were represented in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "725fd947-cda6-4c7b-958f-f066eaa8d325",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C34",
+      "claim": "The age-structured SEIR model was parameterized using country-specific age-contact patterns and COVID-19 parameter estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "This model was parameterized using country-specific age-contact patterns (Mossong et al., 2008; Prem et al., 2017) and COVID-19 parameter estimates (Davies et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameterization of the model, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "5346e2e8-8b89-4e07-a998-48968260ba19",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C35",
+      "claim": "The model includes age-specific clinical fractions and varying durations of preclinical, clinical, and subclinical infectiousness.",
+      "claim_type": "EXPLICIT",
+      "source": "The model, due to Davies et al., 2020, includes age-specific clinical fractions and varying durations of preclinical, clinical, and subclinical infectiousness, as well as a decreased infectiousness for subclinical cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes features of the model used, citing Davies et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "47d6d81b-d5c8-47b5-b18c-6634c92a7ca0",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C36",
+      "claim": "Uniform allocation of samples to subpopulations is not always optimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Uniform allocation of samples to subpopulations is not always optimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "56b7454b-ad80-405a-81b3-7fbfc88636d5",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C37",
+      "claim": "Sample allocation can be improved by increasing sampling in subpopulations with higher seroprevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be improved by (i) increasing sampling in subpopulations with higher seroprevalence and (ii) sampling in subpopulations with higher relative influence on the quantity to be estimated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a principle for optimizing sample allocation derived from the study's analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "870f9842-59aa-41f9-b95f-b81ab3fffdea",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C38",
+      "claim": "Sample allocation can be improved by sampling in subpopulations with higher relative influence on the quantity to be estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be improved by (i) increasing sampling in subpopulations with higher seroprevalence and (ii) sampling in subpopulations with higher relative influence on the quantity to be estimated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a principle for optimizing sample allocation derived from the study's analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "6f87eb22-3ae0-4f03-a5c9-3b6cdf759c16",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C39",
+      "claim": "Age distribution of U.S. blood donors was drawn from a study of Atlanta donors.",
+      "claim_type": "EXPLICIT",
+      "source": "Age distribution of U.S. blood donors was drawn from a study of Atlanta donors (Shaz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data source used in the study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "741661ea-9217-4ac0-959b-5c6c6f878185",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C40",
+      "claim": "Age distribution of U.S. mothers was drawn from the 2016 CDC Vital Statistics Report using Massachusetts as a reference state.",
+      "claim_type": "EXPLICIT",
+      "source": "Age distribution of U.S. mothers was drawn from the 2016 CDC Vital Statistics Report using Massachusetts as a reference state (Martin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data source used in the study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "64e7b5b6-a68c-43bd-ae63-6442809cb771",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C41",
+      "claim": "Daily age-structured contact data were drawn from Prem et al., 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "Daily age-structured contact data were drawn from Prem et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data source used in the study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "195016e8-2582-4f98-9745-714dc32d9392",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C42",
+      "claim": "Serological test characteristics were collected from registrations with the U.S. Food and Drug Administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Serological test characteristics were collected from registrations with the U.S. Food and Drug Administration, 2021 and summarized in Supplementary file 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data source used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "f16422d7-b582-40f3-85b8-87840184ac34",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C43",
+      "claim": "No attempt was made to test or validate manufacturer claims for serological tests.",
+      "claim_type": "EXPLICIT",
+      "source": "No attempt was made to test or validate manufacturer claims, and point estimates of sensitivity and specificity were used that did not incorporate test calibration sample sizes (Gelman and Carpenter, 2020; Larremore and Fosdick, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the study's approach, with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "1d93b226-ffff-4737-8ad6-fb79a68c6128",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C44",
+      "claim": "Hypothetical survey samples were drawn based on comprehensive seroprevalence estimates from Geneva, Switzerland.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothetical survey samples were drawn based on comprehensive seroprevalence estimates from Geneva, Switzerland (Stringhini et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data source used in the study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "88da859e-2551-4c1d-ad7b-04348896cb14",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C45",
+      "claim": "When seroprevalence is 10% or lower, around 1000 samples are necessary to correctly estimate seroprevalence to within \u00b12%.",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed Bayesian posterior estimates of seroprevalence, finding that, when seroprevalence is 10% or lower, around 1000 samples are necessary to correctly estimate seroprevalence to within \u00b12% (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's simulations, supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "e639ab99-5a52-41e8-ad90-0166e2ff08f6",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C46",
+      "claim": "Marketed tests with other characteristics also required around 1000 tests to achieve \u00b12% uncertainty levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Marketed tests with other characteristics also required around 1000 tests (Figure 2\u2014figure supplement 1A, B) to achieve the same uncertainty levels, approaching the minimum sample size achieved by a theoretical test with perfect sensitivity and specificity (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's simulations, supported by Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "8be8b984-2bcc-4acf-b826-372586a836ab",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C47",
+      "claim": "Estimates were most uncertain when true seropositivity was near 50%, the number of samples was low, and/or test sensitivity/specificity were low.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, estimates were most uncertain when true seropositivity was near 50%, the number of samples was low, and/or test sensitivity/specificity were low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "0980acb0-1070-4a51-af69-25cc076ebef1",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C48",
+      "claim": "5000 samples are sufficient to estimate any seroprevalence to within a worst-case tolerance of \u00b11.4 percentage points, even with the imperfect test studied.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 5000 samples are sufficient to estimate any seroprevalence to within a worst-case tolerance of \u00b11.4 percentage points (e.g., 20% \u00b1 1.4% = [18.6%, 21.4%]), even with the imperfect test studied.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's simulations, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "4b6f0ee3-8fef-433f-b595-c2c62fc14015",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C49",
+      "claim": "Credible intervals of the resulting overall seroprevalence estimates were influenced by the age demographics sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "Credible intervals of the resulting overall seroprevalence estimates were influenced by the age demographics sampled, with the most uncertainty in the newborn dried blood spots sample set, due to the narrow age range for the mothers (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis, supported by Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "044e6fdc-92b0-42ff-a3db-06cd1c1aea9d",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C50",
+      "claim": "The newborn dried blood spots sample set had the most uncertainty due to the narrow age range for the mothers.",
+      "claim_type": "EXPLICIT",
+      "source": "Credible intervals of the resulting overall seroprevalence estimates were influenced by the age demographics sampled, with the most uncertainty in the newborn dried blood spots sample set, due to the narrow age range for the mothers (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis, supported by Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "9d638959-52b2-4edf-bda6-bf58615518a4",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C51",
+      "claim": "The Bayesian approach assumes that seroprevalence in each subpopulation does not dramatically vary and thus infers that seroprevalence in the unsampled bins is similar to that in the sampled bins but with increased uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "For such sampling strategies, which draw from only a subset of the population, our approach assumes that seroprevalence in each subpopulation does not dramatically vary and thus infers that seroprevalence in the unsampled bins is similar to that in the sampled bins but with increased uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an assumption of the Bayesian hierarchical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "79f41177-be33-4662-a78f-88dde181269b",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C52",
+      "claim": "Uncertainty was influenced by the overall seroprevalence, such that the width of the 95% credible interval increased with higher seroprevalence for a given sample size.",
+      "claim_type": "EXPLICIT",
+      "source": "Uncertainty was also influenced by the overall seroprevalence, such that the width of the 95% credible interval increased with higher seroprevalence for a given sample size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "b4508f28-1ee6-427d-aa56-b0c7ed119b08",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C53",
+      "claim": "Central estimates of overall seropositivity were robust for sampling strategies that spanned the entire population.",
+      "claim_type": "EXPLICIT",
+      "source": "While test sensitivity and specificity also impacted uncertainty, central estimates of overall seropositivity were robust for sampling strategies that spanned the entire population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "212ceab3-275b-416f-814a-de57432c5a4c",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C56",
+      "claim": "Larger sample sizes at a given seroprevalence resulted in a smaller credible interval for the seroprevalence estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "Uncertainty in seroprevalence estimates propagated through SEIR model outputs in stages: larger sample sizes at a given seroprevalence resulted in a smaller credible interval for the seroprevalence estimate, which improved the precision of estimates of both the height and timing of the epidemic peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "09db9859-4503-4cb0-b5b8-86b18fe07d06",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C57",
+      "claim": "Larger sample sizes improved the precision of estimates of both the height and timing of the epidemic peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Uncertainty in seroprevalence estimates propagated through SEIR model outputs in stages: larger sample sizes at a given seroprevalence resulted in a smaller credible interval for the seroprevalence estimate, which improved the precision of estimates of both the height and timing of the epidemic peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "200a6f57-3f0e-44da-ae54-42a44600d2e5",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C58",
+      "claim": "Seroprevalence estimates without correction for the sensitivity and specificity of the test resulted in biased estimates in spite of increasing precision with larger sample size.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that seroprevalence estimates without correction for the sensitivity and specificity of the test resulted in biased estimates in spite of increasing precision with larger sample size (Figure 4C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis, supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "a9c60386-0681-4043-9741-cc9b3e2e7ffe",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C59",
+      "claim": "Test characteristics impacted model estimates, with more specific and sensitive tests leading to more precise estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Test characteristics also impacted model estimates, with more specific and sensitive tests leading to more precise estimates (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis, supported by Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "d182eda9-c6d8-44df-94fc-f1bb26ea6c50",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C60",
+      "claim": "Even estimations from a perfect test carried uncertainty corresponding to the size of the sample set.",
+      "claim_type": "EXPLICIT",
+      "source": "Even estimations from a perfect test carried uncertainty corresponding to the size of the sample set (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis, supported by Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "b35cbe7f-a6b3-4929-a450-7dfd856351b1",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C62",
+      "claim": "Convenience samples produced higher confidence estimates in the heavily sampled subpopulations, but high uncertainty estimates in unsampled populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, convenience samples produced higher confidence estimates in the heavily sampled subpopulations, but high uncertainty estimates in unsampled populations through our Bayesian modeling framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "533ae3f2-2ec1-4b5f-9153-60893521cea7",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C65",
+      "claim": "If the subpopulations in the convenience sample have systematically different seroprevalence rates from the general population, increasing the sample size may bias estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "If the subpopulations in the convenience sample have systematically different seroprevalence rates from the general population, increasing the sample size may bias estimates (Figure 5\u2014figure supplements 3 and 4) while simultaneously decreasing the widths of posterior credible intervals, producing higher confidence in estimates in spite of their bias.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis, supported by Figure 5\u2014figure supplements 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "72ca3171-5fb6-49dd-aa3a-02024155b8cb",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C66",
+      "claim": "Increasing sample size from biased convenience samples may produce higher confidence in estimates in spite of their bias.",
+      "claim_type": "EXPLICIT",
+      "source": "If the subpopulations in the convenience sample have systematically different seroprevalence rates from the general population, increasing the sample size may bias estimates (Figure 5\u2014figure supplements 3 and 4) while simultaneously decreasing the widths of posterior credible intervals, producing higher confidence in estimates in spite of their bias.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis, supported by Figure 5\u2014figure supplements 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "d244da11-e547-41f7-b4fd-72e5774630ff",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C67",
+      "claim": "The magnitude of bias from convenience sampling is not possible to estimate without secondary sources of seroprevalence data.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the magnitude of this type of bias is not possible to estimate without secondary sources of seroprevalence data, differentiating it from the avoidable biases that result from failing to post-stratify based on population demographics or adjust for the sensitivity and specificity of the test instrument.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "d5a44a9e-1bfc-4c7f-9c87-11f19a2f6ea7",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C68",
+      "claim": "MDI produced higher confidence posterior estimates of R_eff compared to other sampling strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "As designed, MDI produced higher confidence posterior estimates (Figure 5J, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis, supported by Figure 5J and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "a5cfaa3b-4610-4699-aa6d-597df2607173",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C69",
+      "claim": "The relative importance of subpopulations in a model varies based on the hypothetical interventions being modeled.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, because the relative importance of subpopulations in a model varies based on the hypothetical interventions being modeled (e.g., the reopening of workplaces would place higher importance on the serological status of working-age adults), MDI sample allocation recommendations should be derived for multiple hypothetical interventions and then averaged to design a study from which the largest variety of high confidence results can be derived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how to apply the MDI approach in practice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "4c9a879a-96a8-4d7d-9a3e-bac1f76c0a2a",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C70",
+      "claim": "MDI sample allocation recommendations should be derived for multiple hypothetical interventions and then averaged to design a study from which the largest variety of high confidence results can be derived.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, because the relative importance of subpopulations in a model varies based on the hypothetical interventions being modeled (e.g., the reopening of workplaces would place higher importance on the serological status of working-age adults), MDI sample allocation recommendations should be derived for multiple hypothetical interventions and then averaged to design a study from which the largest variety of high confidence results can be derived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "38f7007d-6b7f-41db-af0e-c12a4d21c95d",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C71",
+      "claim": "There is a critical need for serological surveillance of SARS-CoV-2 to estimate cumulative incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a critical need for serological surveillance of SARS-CoV-2 to estimate cumulative incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of serological surveillance, reflecting public health priorities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "276f08a6-7b76-492a-955d-1cf393f9e631",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C72",
+      "claim": "The framework avoids the biases associated with seroprevalence estimates that fail to account for sensitivity, specificity, and sampling schemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we presented a formal framework for doing so to aid in the design and interpretation of serological studies, which avoids the biases associated with seroprevalence estimates that fail to account for sensitivity, specificity, and sampling schemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key advantage of the framework developed in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "30ca3233-05e3-4e10-ba40-a39dc3a98a12",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C73",
+      "claim": "The framework can be adapted as needed based on pre-existing knowledge of disease prevalence and trajectory, availability of convenience samples, and the extent of resources that can be put towards structured survey design and implementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest approaches to serological surveillance that can be adapted as needed based on pre-existing knowledge of disease prevalence and trajectory, availability of convenience samples, and the extent of resources that can be put towards structured survey design and implementation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the flexibility and applicability of the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "ca7fc41c-3e88-4026-9245-e55d386d0dc2",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C74",
+      "claim": "Extensions to the analysis of serial cross-sectional surveys or other stratifications are possible.",
+      "claim_type": "EXPLICIT",
+      "source": "While this work focuses on the design and analysis of single cross-sectional surveys, stratified by age, extensions to the analysis of serial cross-sectional surveys (Stringhini et al., 2020; Nisar et al., 2020) or other stratifications are also possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes potential extensions of the framework, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "659bbf63-ca52-4c00-b2a2-e29147b93c07",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C75",
+      "claim": "Serial cross-sectional surveys could benefit from rebalancing limited test budgets between subpopulations from one cross-sectional wave to the next by basing each wave's test allocation strategy on the MDI recommendations derived from the preceding wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that such surveys could benefit from the rebalancing of limited test budgets between subpopulations from one cross-sectional wave to the next by basing each wave's test allocation strategy on the MDI recommendations derived from the preceding wave.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "75cebdce-4b0c-47e4-a7ab-d49b58a54842",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C76",
+      "claim": "The work may be applied to any population stratification for which there is heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our numerical demonstrations here focused on heterogeneity and modeling by age, our work may be applied to any population stratification for which there is heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the generalizability of the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "12360754-a7e5-45df-943a-9b939924a4be",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C77",
+      "claim": "Seroprevalence studies by neighborhood in New York City, Karachi, and Mumbai have all found geographical variation in seroprevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, seroprevalence studies by neighborhood in New York City (Nyc health testing data, 2020), Karachi (Nisar et al., 2020), and Mumbai (Malani et al., 2020) have all found geographical variation in seroprevalence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies in New York City, Karachi, and Mumbai.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "e311bd4a-76fa-4be3-a67a-a594b6942685",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C78",
+      "claim": "In situations where sample sizes are low and heterogeneity is high, hyperprior parameters can be adjusted to accommodate larger variation between subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In situations where sample sizes are low and heterogeneity is high, hyperprior parameters can be adjusted to accommodate larger variation between subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological consideration for applying the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "761e5d6d-30d9-4ec3-95b6-2e4cfe22fd39",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C79",
+      "claim": "In the absence of baseline estimates of cumulative incidence, an initial serosurvey can provide a preliminary estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of baseline estimates of cumulative incidence, an initial serosurvey can provide a preliminary estimate (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an application of the framework, supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "b226308f-96f8-4dfd-893d-fe0fb9a97f4b",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C80",
+      "claim": "The framework updates the 'rule of 3' approach by incorporating uncertainty in test characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our framework updates the 'rule of 3' approach (Hanley and Lippman-Hand, 1983) by incorporating uncertainty in test characteristics and can further address uncertainty from biased sampling schemes (see Appendix A4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the framework improves upon existing methods, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "9db2dc19-9915-46a2-9e6a-50ea11b4421f",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C81",
+      "claim": "Convenience samples can be used to estimate population seroprevalence.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, convenience samples, such as the maternal antibodies within newborn heel stick dried blood spots or samples from blood donors, can be used to estimate population seroprevalence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an application of the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "9cc3ac72-b29b-4d7a-bfde-0ce3de3f7f87",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C82",
+      "claim": "In the absence of reliable assessment of correlations in seroprevalence across age groups, extrapolations from convenience samples to entire populations may be misleading as sample size increases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note that in the absence of reliable assessment of correlations in seroprevalence across age groups, extrapolations from these convenience samples to entire populations may be misleading as sample size increases (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a caution about the limitations of convenience sampling, supported by Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "11520167-5102-462c-afb5-668086fdd9b8",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C83",
+      "claim": "As convenience sample size increases, credible intervals will shrink, which, if sampled groups are unrepresentative of unsampled groups, will constitute a 'false precision'.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as convenience sample size increases, credible intervals will shrink, which, if sampled groups are unrepresentative of unsampled groups, will constitute a 'false precision'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the potential pitfall of convenience sampling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "84231c87-c19d-4ff5-b8ff-18c21ee4cf9f",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C84",
+      "claim": "Uniform or model and demographic informed samples give the most reliable estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Uniform or model and demographic informed samples, while more challenging logistically to implement, give the most reliable estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "f1429b1f-7c55-4820-a94d-be8de1fbb35b",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C85",
+      "claim": "The results of a one-time study could be used to update the priors of the Bayesian hierarchical model and improve the inferences from convenience samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of a one-time study could be used to update the priors of our Bayesian hierarchical model and improve the inferences from convenience samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a potential application of the framework.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "f55a768d-6ec5-4dee-9295-552f10e20499",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C86",
+      "claim": "The framework naturally allows the integration of samples from multiple test kits and protocols, provided that their sensitivities and specificities can be estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, we note that our framework naturally allows the integration of samples from multiple test kits and protocols, provided that their sensitivities and specificities can be estimated (Larremore and Fosdick, 2020; Gelman and Carpenter, 2020), which will become useful as serological assays improve in their specifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the framework, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "8ae1ba4b-ef86-4307-8af8-4a916a8b9ec5",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C87",
+      "claim": "The results from serological surveys will be invaluable in projecting epidemic trajectories and understanding the impact of interventions such as age-prioritized vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "The results from serological surveys will be invaluable in projecting epidemic trajectories and understanding the impact of interventions such as age-prioritized vaccination (Bubar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the utility of serological surveys, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "118b05eb-9cc8-4822-a816-97212aa88a01",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C88",
+      "claim": "The framework can be used to determine the needed number and distribution of population samples via model and demographic-informed sampling to aid in rigorous assessment of particular interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, to aid in rigorous assessment of particular interventions that meet accuracy and precision specifications, this framework can be used to determine the needed number and distribution of population samples via model and demographic-informed sampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an application of the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "f09a260f-c1c3-486e-8377-e92baaba09c9",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C89",
+      "claim": "Extensions could conceivably address other study planning questions, including sampling frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensions could conceivably address other study planning questions, including sampling frequency (Herzog et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes potential extensions of the framework, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "3b01e32c-5deb-4532-be62-44734a59ac53",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C90",
+      "claim": "Serology reflects past infection, and the delay between infection and detectable immune response means that serological tests reflect a historical cumulative incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Serology reflects past infection, and the delay between infection and detectable immune response means that serological tests reflect a historical cumulative incidence (the date of sampling minus the delay between infection and detectable response).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about serological testing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "62a18a23-2658-460a-abbf-6782580b6a7a",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C91",
+      "claim": "Due to the waning of antibody concentrations over time, seroreversion may cause seroprevalence studies to underestimate cumulative incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the waning of antibody concentrations over time (Ward et al., 2020), seroreversion may cause seroprevalence studies to underestimate cumulative incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ward et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "cd3c44b7-05c6-4e58-b4b0-bfb6be015683",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C92",
+      "claim": "Modeling studies that incorporate seroprevalence estimates should acknowledge potential delays and seroreversion when interpreting their findings.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, modeling studies that incorporate seroprevalence estimates should acknowledge such potential delays and seroreversion when interpreting their findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the limitations discussed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "dee29698-26b6-4b70-b6bb-55c930ca0c4f",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C93",
+      "claim": "The possibility of heterogeneous immune responses to infection and unknown dynamics and duration of immune response means that interpretation of serological survey results may not accurately capture cumulative incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility of heterogeneous immune responses to infection and unknown dynamics and duration of immune response means that interpretation of serological survey results may not accurately capture cumulative incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of serological surveillance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "0c269639-4911-4b1c-bd1a-cc1a9781c5fa",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C94",
+      "claim": "For COVID-19, we do not yet understand the serological correlates of protection from infection.",
+      "claim_type": "EXPLICIT",
+      "source": "For COVID-19, we do not yet understand the serological correlates of protection from infection, and as such projecting seroprevalence into models that assume seropositivity indicates immunity to reinfection may be an overestimate; models would need to be updated to include partial protection or return to susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation in current knowledge about COVID-19 immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "6eff8f58-58ad-411b-82c5-15da610b3db0",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C95",
+      "claim": "Projecting seroprevalence into models that assume seropositivity indicates immunity to reinfection may be an overestimate.",
+      "claim_type": "EXPLICIT",
+      "source": "For COVID-19, we do not yet understand the serological correlates of protection from infection, and as such projecting seroprevalence into models that assume seropositivity indicates immunity to reinfection may be an overestimate; models would need to be updated to include partial protection or return to susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the potential limitations of modeling assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "799afa68-b861-45b3-a967-2cfd657fac0d",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C96",
+      "claim": "The work requires the specification of prior and hyperprior distributions, assumptions inherent to any Bayesian approach to statistical inference.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work also requires the specification of prior and hyperprior distributions, assumptions inherent to any Bayesian approach to statistical inference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological requirement of the Bayesian approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "08894a00-c7e7-4d1c-9807-0a2801528c29",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C97",
+      "claim": "The authors used uninformative uniform prior distributions and a weakly informative hyperprior distribution in order to impose minimal assumptions when modeling the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used uninformative uniform prior distributions and a weakly informative hyperprior distribution in order to impose minimal assumptions when modeling the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological choices made in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "c3f8203d-6fd8-4099-83fa-dce826990711",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C98",
+      "claim": "Assuming uninformative prior distributions results in higher posterior uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a conservative choice as assuming uninformative prior distributions results in higher posterior uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of the methodological choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "b3ae43df-f474-4f43-8d27-2f16c3dd5282",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C99",
+      "claim": "Informative priors can reduce uncertainty in seroprevalence studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While informative priors can reduce uncertainty in seroprevalence studies (Gelman and Carpenter, 2020), specifying such priors appropriately relies on additional information and/or assumptions about the study population, which may be sparse, particularly during an unfolding pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gelman and Carpenter, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "8d1f7c98-4a17-432f-b254-a861511c4c72",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C100",
+      "claim": "Use of model and demographic-informed sampling schemes is valuable for projections that evaluate interventions but are dependent on accurate parameterization.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of model and demographic-informed sampling schemes is valuable for projections that evaluate interventions but are dependent on accurate parameterization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a consideration for applying the MDI approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "c3db2ad7-ec3b-41f7-94e5-bcc0cfe4f35a",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C101",
+      "claim": "POLYMOD and other contact matrices represent the status quo ante and should be updated to the extent possible using other data.",
+      "claim_type": "EXPLICIT",
+      "source": "While in our examples we used POLYMOD and other contact matrices, these represent the status quo ante and should be updated to the extent possible using other data, such as those obtainable from surveys (Mossong et al., 2008; Prem et al., 2017) and mobility data from online platforms and mobile phones (Buckee et al., 2020; Ainslie et al., 2020; Open COVID-19 Data Working Group et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for improving the parameterization of models, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "a6c2b1b0-1ead-4a57-95c4-4d570a733dcd",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C103",
+      "claim": "Extensions to alternatives that incorporate waning immunity and a return to full or partial susceptibility are possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we explored only SEIR models, but extensions to alternatives that incorporate waning immunity (Ward et al., 2020) and a return to full or partial susceptibility are possible (Saad-Roy et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes potential extensions of the framework, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "40bee92c-8193-4c22-988e-f6cf0ce163c1",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C104",
+      "claim": "Clarified understanding of SARS-CoV-2 antibody titers, protection, and durability will further inform whether it is appropriate to model seropositive individuals as no longer susceptible.",
+      "claim_type": "EXPLICIT",
+      "source": "Clarified understanding of SARS-CoV-2 antibody titers, protection, and durability will further inform whether it is appropriate to model seropositive individuals as no longer susceptible, as we did in example calculations here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how future knowledge could inform modeling assumptions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "e1bfc6c5-f2f1-4dec-98ed-4be980b8798a",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C105",
+      "claim": "The derivation of model-focused MDI sample allocation strategies requires only the formulation of a next-generation matrix or network of subpopulations' epidemiological impacts on each other.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that, across model types, the derivation of model-focused MDI sample allocation strategies requires only the formulation of a next-generation matrix or network of subpopulations' epidemiological impacts on each other, providing a more general framework spanning model assumptions and classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the generalizability of the MDI approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "45973853-afcf-4e89-beb8-6ba028bcde05",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C106",
+      "claim": "The framework can be adapted to communities of varying size and resources seeking to monitor and respond to SARS-CoV-2 and future pandemics.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the framework here can be adapted to communities of varying size and resources seeking to monitor and respond to SARS-CoV-2 and future pandemics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the applicability of the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "1db41bc5-f906-43ab-a6a7-c4e062a43cca",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "claim_id": "C107",
+      "claim": "This is a generalizable framework that with appropriate modifications can be applicable to other infectious disease epidemics.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, while the analyses and discussion focused on addressing urgent needs, this is a generalizable framework that with appropriate modifications can be applicable to other infectious disease epidemics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the generalizability of the framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ea808c67-5d95-4baa-9ffc-0a08856c2f2b",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a Bayesian hierarchical framework that integrates uncertainty from test characteristics (sensitivity and specificity), sample size, and heterogeneity in seroprevalence across subpopulations to estimate population seroprevalence with quantified uncertainty. The framework uses Monte Carlo sampling to propagate uncertainty through epidemiological models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C21, C23, C28, C32, and C72 collectively describe the methodological framework. The Bayesian approach with hierarchical modeling is well-documented in the methods section, and the framework's ability to handle test imperfections and sampling heterogeneity is demonstrated through simulations. The approach is mathematically sound and appropriately addresses known sources of bias in seroprevalence estimation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "82051ead-33d2-4b01-9c40-73c283f40209",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "For seroprevalence \u226410%, approximately 1000 samples are necessary to estimate seroprevalence within \u00b12%. With 5000 samples, any seroprevalence can be estimated within \u00b11.4 percentage points worst-case tolerance. Uncertainty is highest when true seropositivity is near 50%, sample size is low, or test sensitivity/specificity are low.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by simulation results shown in Figure 2 and supplementary figures. The sample size calculations are based on systematic simulations across different seroprevalence levels and test characteristics. The findings are consistent with statistical principles regarding binomial sampling and measurement error, and the results are averaged over 250 stochastic draws, providing robust estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "b9473110-2ba9-4696-be74-6004a900b982",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Credible intervals for overall seroprevalence estimates are influenced by the age demographics sampled, with the most uncertainty in convenience samples like newborn dried blood spots due to narrow age ranges. The Bayesian hierarchical model assumes seroprevalence in unsampled subpopulations is similar to sampled ones but with increased uncertainty. Central estimates remain robust for sampling strategies spanning the entire population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are supported by Figure 3 and the described hierarchical modeling approach. The finding that convenience samples produce higher uncertainty is expected given the limited age coverage, and the Bayesian framework appropriately propagates this uncertainty. The assumption of similarity across subpopulations is reasonable for the hierarchical model but is explicitly stated as a limitation when subpopulations differ systematically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "47a3d4a8-fb5d-4c7b-a8e3-b34136463bc2",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Larger sample sizes reduce credible intervals for seroprevalence estimates, which improves precision of epidemic peak height and timing predictions in SEIR models. Seroprevalence estimates without correction for test sensitivity and specificity produce biased estimates despite increasing precision. More sensitive and specific tests lead to more precise model estimates, but even perfect tests carry uncertainty corresponding to sample size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 are supported by Figure 4 and supplementary figures showing how uncertainty propagates from serological data through SEIR model outputs. The demonstration that uncorrected estimates remain biased (C58) is particularly important and well-illustrated. The relationship between test characteristics and model precision is appropriately quantified across multiple test scenarios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "2513ea7b-304d-4bd3-b7f8-44634d552aa1",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sampling schemes informed by demographics and contact networks (MDI approach) outperform uniform sampling for estimating epidemiological parameters like R_eff. Uniform allocation is not always optimal and can be improved by increasing sampling in subpopulations with higher seroprevalence and higher relative influence on the quantity being estimated. Uniform or MDI samples give the most reliable estimates compared to convenience samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C36-C38, C68, and C84 are supported by Figure 5 and Figure 6, which demonstrate that MDI sampling produces tighter credible intervals for R_eff estimates compared to other strategies. The mathematical derivation of optimal allocation based on the next-generation matrix is sound. However, the superiority of MDI depends on the specific quantity being estimated (e.g., MDI optimized for R_eff is slightly outperformed by uniform sampling for overall seroprevalence estimation, as noted in the text).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "8b87dad7-d848-4517-9550-474b5e49b4a7",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Convenience samples produce higher confidence estimates in heavily sampled subpopulations but high uncertainty in unsampled populations. If convenience sample subpopulations have systematically different seroprevalence from the general population, increasing sample size may bias estimates while producing false precision (narrower credible intervals despite bias). The magnitude of this bias cannot be estimated without secondary data sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C65-C67, C82-C83 are supported by Figure 5 and supplementary figures 3-4, which show coverage issues for convenience samples at large sample sizes. This is a critical finding about the limitations of convenience sampling. The distinction between this unavoidable bias and avoidable biases from failing to adjust for test characteristics is appropriately made. The warning about 'false precision' is well-founded and important for practitioners.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "d6ecf03c-59a2-4624-95a7-f54ef08eed04",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The relative importance of subpopulations in a model varies based on hypothetical interventions being modeled. MDI sample allocation recommendations should be derived for multiple hypothetical interventions and averaged to design studies yielding high confidence results across diverse objectives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 are supported by Figure 6, which shows how MDI recommendations differ for different intervention scenarios (status quo ante, modified contacts, etc.) in the U.S. and India. The recommendation to average across multiple objectives is a logical inference from the observation that optimal allocation is objective-dependent. This is a practical and important insight for study design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "71a007e6-480b-4b3e-84a5-e840b9c3e9f0",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Serological tests may have imperfect sensitivity and specificity, and studies not adjusting for these imperfections produce biased seroprevalence estimates. Sensitivity and specificity are themselves estimated from data, and uncertainty in these estimates can lead to statistical confusion if not correctly propagated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 are well-established principles in diagnostic testing and epidemiology, supported by appropriate citations (Larremore and Fosdick 2020; Gelman and Carpenter 2020; Bendavid et al. 2020). The framework explicitly addresses these issues through Bayesian modeling that incorporates test characteristics. This represents established knowledge appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "78f04eb0-178a-4ee6-9150-54817da549d0",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The framework focuses on age-based subpopulations due to integration with POLYMOD-type models but generalizes to other stratifications including geography. Seroprevalence studies in New York City, Karachi, and Mumbai have found geographical variation in seroprevalence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30, C76-C77 are supported by appropriate citations and the mathematical generality of the framework. The focus on age stratification is justified by the availability of age-structured contact matrices, while the generalizability to geographic stratification is demonstrated by cited empirical studies. The framework's flexibility is a strength.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "1333785c-3eff-48b7-a402-cb46eb0cc952",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Serological tests reflect historical cumulative incidence due to delays between infection and detectable antibody response. Antibody waning over time may cause seroprevalence studies to underestimate cumulative incidence. The relationship between seropositivity and immunity is uncertain for COVID-19, and models assuming seropositivity equals immunity may overestimate protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C95 appropriately acknowledge important limitations of serological surveillance, supported by citations (Ward et al. 2020; Tan et al. 2020). These are well-recognized issues in the field. The authors appropriately caution that their modeling assumption (seropositivity = immunity) may not hold and that models would need updating as understanding of immune correlates improves. This represents responsible acknowledgment of uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "6a502f07-f4a6-4207-8efe-5c2ab8860027",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Bayesian approach requires specification of prior and hyperprior distributions. The authors used uninformative uniform priors and weakly informative hyperpriors to impose minimal assumptions, which is conservative as it results in higher posterior uncertainty. Informative priors can reduce uncertainty but require additional information that may be sparse during a pandemic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C99 appropriately describe the Bayesian methodology and the rationale for prior choices. The use of uninformative priors is indeed conservative and appropriate given uncertainty during an emerging pandemic. The acknowledgment that informative priors could improve estimates (with citation to Gelman and Carpenter 2020) while noting practical limitations is balanced and appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "82992c76-36c1-4467-9246-8fdfac38cb2e",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "No attempt was made to test or validate manufacturer claims for serological tests, and point estimates of sensitivity and specificity were used without incorporating test calibration sample sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claim C43 describes a significant limitation: using manufacturer-reported test characteristics without validation and without accounting for uncertainty in sensitivity/specificity estimates. While the authors cite appropriate references (Gelman and Carpenter 2020; Larremore and Fosdick 2020) about the importance of incorporating calibration uncertainty, they did not implement this in their analysis. This is a methodological weakness that could affect the reliability of uncertainty quantification, particularly for tests with small calibration samples.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "3c84407f-0511-4dbf-81f0-8b962343b907",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The framework is flexible and can be adapted based on available resources, extended to serial cross-sectional surveys, applied to different population stratifications, integrated with multiple test kits, used to determine sample sizes for specific interventions, extended to incorporate waning immunity, and generalized to other infectious disease epidemics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C75, C85-C86, C88-C89, C103-C107 describe potential applications and extensions of the framework. While the mathematical generality suggests these extensions are feasible, most are not demonstrated in the manuscript. These represent reasonable inferences about the framework's capabilities and appropriate suggestions for future work, but they have not been validated. The claims are speculative rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "8ae72fdb-6426-46d5-a789-6df00f1f97b3",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Model and demographic-informed sampling is valuable for evaluating interventions but depends on accurate parameterization. POLYMOD contact matrices represent pre-pandemic conditions and should be updated using surveys and mobility data from online platforms and mobile phones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 appropriately acknowledge that MDI sampling recommendations depend on model parameterization quality and that contact patterns changed during the pandemic. The recommendation to update contact matrices using contemporary data sources (with appropriate citations) is sound. This represents responsible acknowledgment of the limitations of using pre-pandemic contact data for pandemic modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "88e1d221-77cf-44f7-a4c9-96120805f169",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Establishing SARS-CoV-2 infection rates is an urgent priority for pandemic control. Serological testing can estimate cumulative incidence and inform policy decisions, but methods for designing and interpreting serological surveys from subpopulations have been unclear and are urgently needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C6-C13, and C71 establish the motivation and context for the study. These represent well-established public health priorities during the COVID-19 pandemic, supported by appropriate citations. The identification of methodological gaps (C3, C13) that the study addresses is appropriate and well-justified. This provides important context but is not a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "0d69d5ca-a11d-45d8-a027-43b0eefa55e6",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Data sources for the study included convenience sample demographics (blood donors from Atlanta, mothers from Massachusetts CDC data), contact patterns from Prem et al. 2017, test characteristics from FDA registrations, and seroprevalence estimates from Geneva, Switzerland.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26, C39-C42, and C44 describe data sources used in the study, all appropriately cited. These are standard methodological details necessary for reproducibility. The use of established data sources is appropriate for the simulation-based study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "07928fbf-9a05-4141-8d72-5e0236270a75",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The age-structured SEIR model was parameterized using country-specific age-contact patterns and COVID-19 parameter estimates from Davies et al. 2020, including age-specific clinical fractions, varying durations of infectiousness, and decreased infectiousness for subclinical cases. Social distancing was modeled by decreasing contact rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 describe the SEIR model parameterization and structure, appropriately citing Davies et al. 2020 as the source. These are standard methodological details for epidemiological modeling. The model structure is appropriate for the study's objectives and is adequately described for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    },
+    {
+      "id": "39b8e15e-b82d-4a70-bfb0-7da720b61155",
+      "content_id": "f8cddeb4-5bd3-45c4-b402-e516ce609f4b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Hyperprior parameters can be adjusted for high heterogeneity scenarios. Initial serosurveys can provide preliminary estimates in the absence of baseline data. The framework updates the 'rule of 3' approach by incorporating test characteristic uncertainty and can address biased sampling. Convenience samples can be used to estimate population seroprevalence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 describe practical applications and features of the framework. The ability to adjust hyperpriors (C78) is a standard feature of Bayesian hierarchical models. The comparison to the 'rule of 3' (C80) with citation to Hanley and Lippman-Hand 1983 appropriately positions the work relative to existing methods. The utility for preliminary estimates (C79) and convenience samples (C81) is demonstrated in the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:50:21.386309Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9abe9296-ac2f-4d59-8bd8-953c2cdc556b",
+      "result_id": "ea808c67-5d95-4baa-9ffc-0a08856c2f2b"
+    },
+    {
+      "claim_id": "c834ab1c-d7ad-472f-ae99-e635d81497d9",
+      "result_id": "ea808c67-5d95-4baa-9ffc-0a08856c2f2b"
+    },
+    {
+      "claim_id": "09ccb2f0-cc7b-44ff-b7c3-debb6099dbe6",
+      "result_id": "ea808c67-5d95-4baa-9ffc-0a08856c2f2b"
+    },
+    {
+      "claim_id": "f4a315e7-d95b-4314-8232-2189aea60484",
+      "result_id": "ea808c67-5d95-4baa-9ffc-0a08856c2f2b"
+    },
+    {
+      "claim_id": "a606717b-3b77-44b4-b688-8d676a46454c",
+      "result_id": "ea808c67-5d95-4baa-9ffc-0a08856c2f2b"
+    },
+    {
+      "claim_id": "276f08a6-7b76-492a-955d-1cf393f9e631",
+      "result_id": "ea808c67-5d95-4baa-9ffc-0a08856c2f2b"
+    },
+    {
+      "claim_id": "88da859e-2551-4c1d-ad7b-04348896cb14",
+      "result_id": "82051ead-33d2-4b01-9c40-73c283f40209"
+    },
+    {
+      "claim_id": "e639ab99-5a52-41e8-ad90-0166e2ff08f6",
+      "result_id": "82051ead-33d2-4b01-9c40-73c283f40209"
+    },
+    {
+      "claim_id": "8be8b984-2bcc-4acf-b826-372586a836ab",
+      "result_id": "82051ead-33d2-4b01-9c40-73c283f40209"
+    },
+    {
+      "claim_id": "0980acb0-1070-4a51-af69-25cc076ebef1",
+      "result_id": "82051ead-33d2-4b01-9c40-73c283f40209"
+    },
+    {
+      "claim_id": "4b6f0ee3-8fef-433f-b595-c2c62fc14015",
+      "result_id": "b9473110-2ba9-4696-be74-6004a900b982"
+    },
+    {
+      "claim_id": "044e6fdc-92b0-42ff-a3db-06cd1c1aea9d",
+      "result_id": "b9473110-2ba9-4696-be74-6004a900b982"
+    },
+    {
+      "claim_id": "9d638959-52b2-4edf-bda6-bf58615518a4",
+      "result_id": "b9473110-2ba9-4696-be74-6004a900b982"
+    },
+    {
+      "claim_id": "79f41177-be33-4662-a78f-88dde181269b",
+      "result_id": "b9473110-2ba9-4696-be74-6004a900b982"
+    },
+    {
+      "claim_id": "b4508f28-1ee6-427d-aa56-b0c7ed119b08",
+      "result_id": "b9473110-2ba9-4696-be74-6004a900b982"
+    },
+    {
+      "claim_id": "212ceab3-275b-416f-814a-de57432c5a4c",
+      "result_id": "47a3d4a8-fb5d-4c7b-a8e3-b34136463bc2"
+    },
+    {
+      "claim_id": "09db9859-4503-4cb0-b5b8-86b18fe07d06",
+      "result_id": "47a3d4a8-fb5d-4c7b-a8e3-b34136463bc2"
+    },
+    {
+      "claim_id": "200a6f57-3f0e-44da-ae54-42a44600d2e5",
+      "result_id": "47a3d4a8-fb5d-4c7b-a8e3-b34136463bc2"
+    },
+    {
+      "claim_id": "a9c60386-0681-4043-9741-cc9b3e2e7ffe",
+      "result_id": "47a3d4a8-fb5d-4c7b-a8e3-b34136463bc2"
+    },
+    {
+      "claim_id": "d182eda9-c6d8-44df-94fc-f1bb26ea6c50",
+      "result_id": "47a3d4a8-fb5d-4c7b-a8e3-b34136463bc2"
+    },
+    {
+      "claim_id": "63c13ddb-5487-4960-afc8-587973e21368",
+      "result_id": "2513ea7b-304d-4bd3-b7f8-44634d552aa1"
+    },
+    {
+      "claim_id": "47d6d81b-d5c8-47b5-b18c-6634c92a7ca0",
+      "result_id": "2513ea7b-304d-4bd3-b7f8-44634d552aa1"
+    },
+    {
+      "claim_id": "56b7454b-ad80-405a-81b3-7fbfc88636d5",
+      "result_id": "2513ea7b-304d-4bd3-b7f8-44634d552aa1"
+    },
+    {
+      "claim_id": "870f9842-59aa-41f9-b95f-b81ab3fffdea",
+      "result_id": "2513ea7b-304d-4bd3-b7f8-44634d552aa1"
+    },
+    {
+      "claim_id": "d5a44a9e-1bfc-4c7f-9c87-11f19a2f6ea7",
+      "result_id": "2513ea7b-304d-4bd3-b7f8-44634d552aa1"
+    },
+    {
+      "claim_id": "84231c87-c19d-4ff5-b8ff-18c21ee4cf9f",
+      "result_id": "2513ea7b-304d-4bd3-b7f8-44634d552aa1"
+    },
+    {
+      "claim_id": "b35cbe7f-a6b3-4929-a450-7dfd856351b1",
+      "result_id": "8b87dad7-d848-4517-9550-474b5e49b4a7"
+    },
+    {
+      "claim_id": "533ae3f2-2ec1-4b5f-9153-60893521cea7",
+      "result_id": "8b87dad7-d848-4517-9550-474b5e49b4a7"
+    },
+    {
+      "claim_id": "72ca3171-5fb6-49dd-aa3a-02024155b8cb",
+      "result_id": "8b87dad7-d848-4517-9550-474b5e49b4a7"
+    },
+    {
+      "claim_id": "d244da11-e547-41f7-b4fd-72e5774630ff",
+      "result_id": "8b87dad7-d848-4517-9550-474b5e49b4a7"
+    },
+    {
+      "claim_id": "9cc3ac72-b29b-4d7a-bfde-0ce3de3f7f87",
+      "result_id": "8b87dad7-d848-4517-9550-474b5e49b4a7"
+    },
+    {
+      "claim_id": "11520167-5102-462c-afb5-668086fdd9b8",
+      "result_id": "8b87dad7-d848-4517-9550-474b5e49b4a7"
+    },
+    {
+      "claim_id": "a5cfaa3b-4610-4699-aa6d-597df2607173",
+      "result_id": "d6ecf03c-59a2-4624-95a7-f54ef08eed04"
+    },
+    {
+      "claim_id": "4c9a879a-96a8-4d7d-9a3e-bac1f76c0a2a",
+      "result_id": "d6ecf03c-59a2-4624-95a7-f54ef08eed04"
+    },
+    {
+      "claim_id": "85e895da-c4c9-494b-b452-85c58ad24be3",
+      "result_id": "71a007e6-480b-4b3e-84a5-e840b9c3e9f0"
+    },
+    {
+      "claim_id": "cea30324-ffc8-4f30-aa5f-f7c59c053ad5",
+      "result_id": "71a007e6-480b-4b3e-84a5-e840b9c3e9f0"
+    },
+    {
+      "claim_id": "f6006edb-72be-4098-90c6-26b4b58b7031",
+      "result_id": "71a007e6-480b-4b3e-84a5-e840b9c3e9f0"
+    },
+    {
+      "claim_id": "87b01bdc-121c-49a3-a4c4-ac0823c7381e",
+      "result_id": "71a007e6-480b-4b3e-84a5-e840b9c3e9f0"
+    },
+    {
+      "claim_id": "4f12ff25-aa8c-4d4d-a3f9-56442af7ba5c",
+      "result_id": "78f04eb0-178a-4ee6-9150-54817da549d0"
+    },
+    {
+      "claim_id": "b6039ab5-f868-4f0f-8668-daf4ff15a6ae",
+      "result_id": "78f04eb0-178a-4ee6-9150-54817da549d0"
+    },
+    {
+      "claim_id": "75cebdce-4b0c-47e4-a7ab-d49b58a54842",
+      "result_id": "78f04eb0-178a-4ee6-9150-54817da549d0"
+    },
+    {
+      "claim_id": "12360754-a7e5-45df-943a-9b939924a4be",
+      "result_id": "78f04eb0-178a-4ee6-9150-54817da549d0"
+    },
+    {
+      "claim_id": "3b01e32c-5deb-4532-be62-44734a59ac53",
+      "result_id": "1333785c-3eff-48b7-a402-cb46eb0cc952"
+    },
+    {
+      "claim_id": "62a18a23-2658-460a-abbf-6782580b6a7a",
+      "result_id": "1333785c-3eff-48b7-a402-cb46eb0cc952"
+    },
+    {
+      "claim_id": "cd3c44b7-05c6-4e58-b4b0-bfb6be015683",
+      "result_id": "1333785c-3eff-48b7-a402-cb46eb0cc952"
+    },
+    {
+      "claim_id": "dee29698-26b6-4b70-b6bb-55c930ca0c4f",
+      "result_id": "1333785c-3eff-48b7-a402-cb46eb0cc952"
+    },
+    {
+      "claim_id": "0c269639-4911-4b1c-bd1a-cc1a9781c5fa",
+      "result_id": "1333785c-3eff-48b7-a402-cb46eb0cc952"
+    },
+    {
+      "claim_id": "6eff8f58-58ad-411b-82c5-15da610b3db0",
+      "result_id": "1333785c-3eff-48b7-a402-cb46eb0cc952"
+    },
+    {
+      "claim_id": "799afa68-b861-45b3-a967-2cfd657fac0d",
+      "result_id": "6a502f07-f4a6-4207-8efe-5c2ab8860027"
+    },
+    {
+      "claim_id": "08894a00-c7e7-4d1c-9807-0a2801528c29",
+      "result_id": "6a502f07-f4a6-4207-8efe-5c2ab8860027"
+    },
+    {
+      "claim_id": "c3f8203d-6fd8-4099-83fa-dce826990711",
+      "result_id": "6a502f07-f4a6-4207-8efe-5c2ab8860027"
+    },
+    {
+      "claim_id": "b3ae43df-f474-4f43-8d27-2f16c3dd5282",
+      "result_id": "6a502f07-f4a6-4207-8efe-5c2ab8860027"
+    },
+    {
+      "claim_id": "f16422d7-b582-40f3-85b8-87840184ac34",
+      "result_id": "82992c76-36c1-4467-9246-8fdfac38cb2e"
+    },
+    {
+      "claim_id": "30ca3233-05e3-4e10-ba40-a39dc3a98a12",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "ca7fc41c-3e88-4026-9245-e55d386d0dc2",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "659bbf63-ca52-4c00-b2a2-e29147b93c07",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "f1429b1f-7c55-4820-a94d-be8de1fbb35b",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "f55a768d-6ec5-4dee-9295-552f10e20499",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "118b05eb-9cc8-4822-a816-97212aa88a01",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "f09a260f-c1c3-486e-8377-e92baaba09c9",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "a6c2b1b0-1ead-4a57-95c4-4d570a733dcd",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "40bee92c-8193-4c22-988e-f6cf0ce163c1",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "e1bfc6c5-f2f1-4dec-98ed-4be980b8798a",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "45973853-afcf-4e89-beb8-6ba028bcde05",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "1db41bc5-f906-43ab-a6a7-c4e062a43cca",
+      "result_id": "3c84407f-0511-4dbf-81f0-8b962343b907"
+    },
+    {
+      "claim_id": "8d1f7c98-4a17-432f-b254-a861511c4c72",
+      "result_id": "8ae72fdb-6426-46d5-a789-6df00f1f97b3"
+    },
+    {
+      "claim_id": "c3db2ad7-ec3b-41f7-94e5-bcc0cfe4f35a",
+      "result_id": "8ae72fdb-6426-46d5-a789-6df00f1f97b3"
+    },
+    {
+      "claim_id": "320263da-af24-47a1-b7d7-37b1a0f9f37d",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "05f520bf-f00a-40c0-9b3d-f386fbc56e18",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "4bb63bd0-25db-428f-a697-8a8dfc6bee0a",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "80f0f0f1-a556-460a-9561-d679ac9fa0bb",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "c78c0a35-42bc-4cca-84b8-0d78fbd076d2",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "1c338f20-7f29-4858-880d-262a08c496fe",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "b9c6500d-71c1-4867-b670-a68ce5555777",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "51cc1c9f-6c04-4e07-bb4f-d28df10d8a4f",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "f273e7d1-00a5-4738-8ef5-608cd1bd1915",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "2238a734-c460-4f4a-b832-b074020f0cad",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "d1fca339-b0d2-4c6c-9a33-5e674fd36fa7",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "38f7007d-6b7f-41db-af0e-c12a4d21c95d",
+      "result_id": "88e1d221-77cf-44f7-a4c9-96120805f169"
+    },
+    {
+      "claim_id": "9a387dcf-d6cd-4cd2-a7e5-7632e818b6f1",
+      "result_id": "0d69d5ca-a11d-45d8-a027-43b0eefa55e6"
+    },
+    {
+      "claim_id": "8115447d-6853-4b34-8a55-d8b676346e1f",
+      "result_id": "0d69d5ca-a11d-45d8-a027-43b0eefa55e6"
+    },
+    {
+      "claim_id": "6f87eb22-3ae0-4f03-a5c9-3b6cdf759c16",
+      "result_id": "0d69d5ca-a11d-45d8-a027-43b0eefa55e6"
+    },
+    {
+      "claim_id": "741661ea-9217-4ac0-959b-5c6c6f878185",
+      "result_id": "0d69d5ca-a11d-45d8-a027-43b0eefa55e6"
+    },
+    {
+      "claim_id": "64e7b5b6-a68c-43bd-ae63-6442809cb771",
+      "result_id": "0d69d5ca-a11d-45d8-a027-43b0eefa55e6"
+    },
+    {
+      "claim_id": "195016e8-2582-4f98-9745-714dc32d9392",
+      "result_id": "0d69d5ca-a11d-45d8-a027-43b0eefa55e6"
+    },
+    {
+      "claim_id": "1d93b226-ffff-4737-8ad6-fb79a68c6128",
+      "result_id": "0d69d5ca-a11d-45d8-a027-43b0eefa55e6"
+    },
+    {
+      "claim_id": "3423b260-de79-40df-b1f6-1fe3a2153642",
+      "result_id": "07928fbf-9a05-4141-8d72-5e0236270a75"
+    },
+    {
+      "claim_id": "725fd947-cda6-4c7b-958f-f066eaa8d325",
+      "result_id": "07928fbf-9a05-4141-8d72-5e0236270a75"
+    },
+    {
+      "claim_id": "5346e2e8-8b89-4e07-a998-48968260ba19",
+      "result_id": "07928fbf-9a05-4141-8d72-5e0236270a75"
+    },
+    {
+      "claim_id": "e311bd4a-76fa-4be3-a67a-a594b6942685",
+      "result_id": "39b8e15e-b82d-4a70-bfb0-7da720b61155"
+    },
+    {
+      "claim_id": "761e5d6d-30d9-4ec3-95b6-2e4cfe22fd39",
+      "result_id": "39b8e15e-b82d-4a70-bfb0-7da720b61155"
+    },
+    {
+      "claim_id": "b226308f-96f8-4dfd-893d-fe0fb9a97f4b",
+      "result_id": "39b8e15e-b82d-4a70-bfb0-7da720b61155"
+    },
+    {
+      "claim_id": "9db2dc19-9915-46a2-9e6a-50ea11b4421f",
+      "result_id": "39b8e15e-b82d-4a70-bfb0-7da720b61155"
+    }
+  ],
+  "comparisons": []
+}

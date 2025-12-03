@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors identified eight ccm genes at four chromosomal loci in M. acetivorans and generated markerless deletion mutants using CRISPR-Cas9 genome editing. Whole-genome sequencing confirmed negligible off-target activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 document the genomic organization of ccm genes, C43 describes successful mutant generation, and C44-C45 provide whole-genome sequencing validation showing no off-target mutations. The experimental approach is well-documented and the CRISPR methodology is validated by prior work (C45).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors demonstrate that ccmABCEF1F2 constitute a functional, streamlined Ccm machinery in M. acetivorans. Using TAP-tagged MmcA as a diagnostic cytochrome, they show that ccmABC, ccmE, and ccmF2 are essential for cytochrome c biogenesis, while ccmF1 is important but not essential, and ccmG/ccdA are dispensable under laboratory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 provide converging biochemical evidence from heme staining and immunoblotting experiments showing differential requirements for ccm genes. The use of MmcA as a diagnostic tool is well-justified (C46-C47), and the observation that apo-MmcA is degraded in ccm mutants (C52) is consistent with bacterial studies. The conclusion (C57) is well-supported by the genetic dissection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The CcmABC complex in M. acetivorans transports heme to form holo-CcmE in a CcmD-independent manner, unlike the bacterial CcmABCD complex. Overexpression of CcmE does not rescue the ccmABC deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 show that holo-CcmE formation requires CcmABC (detected only in wild-type and \u0394ccmE backgrounds, not \u0394ccmABC). Claim C63 demonstrates that CcmE overexpression cannot bypass CcmABC requirement. This provides strong evidence for C64's conclusion about CcmABC function, representing a key mechanistic difference from bacteria (C58-C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The C120 residue in the CXXXY motif of archaeal CcmE is critical for both heme attachment and protein stability. The C120A mutant is stable but cannot bind heme, while the C120H mutant is unstable and undetectable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 provide clear experimental evidence: C120A mutant protein is detected but lacks heme binding, C120H mutant is undetectable (suggesting degradation), and neither mutant rescues cytochrome maturation. This supports C73's conclusion about the dual importance of C120. The comparison with bacterial systems (C65-C66) provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The ccmABCEF1F2 genes from M. acetivorans are sufficient to produce holo-cytochrome c in the heterologous host M. barkeri Fusaro, which naturally lacks ccm genes and does not produce cytochrome c.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 establish that M. barkeri Fusaro lacks ccm genes and cyt c. Claims C79-C80 demonstrate successful heterologous expression and holo-MmcA production. This is strong evidence that ccmABCEF1F2 constitute a complete, functional system (C80), as no additional archaeal-specific factors are required. The choice of M. barkeri as host is well-justified (C74-C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Cytochrome c and the Ccm machinery show substrate-specific importance in M. acetivorans. They are essential for acetoclastic methanogenesis but dispensable (though important) for methylotrophic growth. MmcA is the sole physiologically relevant cyt c on TMA and DMS, but other cytochromes contribute on methanol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 provide comprehensive growth data across multiple substrates showing differential phenotypes. The essential role on acetate (C87-C88) contrasts with slower but viable growth on methylated compounds (C89-C93). The distinction between MmcA-specific effects (C90-C91) and broader cytochrome contributions (C92-C93) is supported by comparing \u0394mmcA and \u0394ccm mutants. Statistical analysis details are limited but growth curves appear robust with replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The Ccm machinery was present in the last common ancestor of Methanosarcinales and has been lost in multiple extant lineages. The machinery is broadly distributed across Methanosarcinaceae but shows frequent loss events, possibly as environmental adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 provide phylogenetic and synteny evidence supporting ancestral presence and subsequent loss (rather than multiple gains). The non-monophyletic distribution (C97) and presence of truncated ccmE remnants (C99) strongly support gene loss. Claims C100-C102 document broader distribution patterns. However, C103's adaptive interpretation is speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C36",
+      "C37",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The streamlined Ccm machinery is universally conserved across Archaea but was acquired through multiple independent horizontal gene transfer events from different bacterial groups, not through vertical inheritance from an archaeal ancestor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 describe phylogenetic evidence showing archaeal sequences nested within diverse bacterial clades, with different ccm genes potentially acquired from different bacteria. This strongly supports the HGT hypothesis (C105, C108) over vertical inheritance (C107). The phylogenetic trees (Figure 8 and supplements) provide the primary evidence. However, the analysis would benefit from explicit bootstrap values and consideration of alternative phylogenetic artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "CcmD is universally absent in archaeal genomes but essential in bacteria. M. acetivorans achieves CcmD-independent holo-CcmE release, possibly due to unique archaeal membrane lipid composition altering protein anchoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C120 establish the absence of CcmD in archaea and demonstrate functional CcmD-independent holo-CcmE formation (supported by Figure 3 data). However, the mechanistic explanation (C124) is purely speculative. Claims C121-C122 rule out some alternatives (gene fusion, CXXXY motif involvement) but don't provide positive evidence for the lipid hypothesis. The result correctly identifies a key difference but the mechanism remains unresolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Archaeal CcmE universally contains a CXXXY heme-binding motif (versus HXXXY in many bacteria), and the Cys and His residues are not functionally interchangeable. Additional uncharacterized features of CcmE are likely important for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 are well-supported by sequence data and experimental evidence from both M. acetivorans (C127) and comparative bacterial studies (C126, C128). The non-interchangeability conclusion (C129) is solid. However, C130 is speculative about additional features without providing specific hypotheses or evidence. The core observation about the CXXXY motif is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The archaeal cytochrome c synthetase contains only CcmF (split into CcmF1 and CcmF2 in M. acetivorans), lacking the bacterial CcmH/I proteins. CcmF2 contains all functionally important domains, while CcmF1 plays a secondary role. Heterologous expression suggests no non-orthologous replacement for CcmH/I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 document the structural differences and domain conservation. Claim C134 is supported by residual holo-cyt c production in \u0394ccmF1 mutants (C53-C54). Claim C136's inference about no non-orthologous replacement is supported by successful heterologous expression (C31, C80), though this doesn't completely rule out that M. barkeri might encode such a factor. The conclusion is reasonable but has minor uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Lineages lacking Ccm machinery and cyt c are predominantly found in freshwater or anthropogenic environments, while the machinery is conserved in marine lineages, suggesting environment-specific selective pressures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C142 describe an observed correlation between Ccm presence and habitat type based on phylogenetic distribution data. However, C143's causal interpretation about selective pressure is speculative without direct evidence. The pattern is interesting but confounded by phylogeny (marine vs. freshwater lineages may differ for many reasons). This observation warrants further investigation but doesn't constitute strong evidence for environment-specific selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Background information on c-type cytochromes: they are widespread proteins that facilitate redox reactions through covalently bound heme, requiring complex post-translational maturation machinery that varies across domains of life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge about cytochrome c structure, function, and maturation, supported by appropriate citations to review articles and prior research. This contextualizes the study but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C115"
+    ],
+    "result": "Prior to this study, archaeal genomes were known to encode incomplete Ccm machinery (lacking ccmD, ccmH, ccmI), yet mature cytochromes c had been identified in archaea. This paradox had never been functionally resolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the knowledge gap and novelty of the study, supported by citations to genomic surveys and prior biochemical work. Claims C19-C22 correctly identify the paradox: bacterial studies showed these genes were essential, yet archaea lacked them but still produced cyt c (C23). This effectively motivates the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "M. acetivorans was selected as a model system because it encodes multiple cytochromes c, is easily cultivated, has advanced genetic tools including CRISPR-Cas9, and is an obligate methanogen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims justify the choice of model organism with appropriate citations. The rationale is sound: genetic tractability (C25-C26), multiple cytochromes for functional studies (C24, C28-C29), and relevance to methane metabolism (C27). This represents methodological justification rather than a result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Background on methanogenesis pathways: methylotrophic growth produces CO2 and CH4 in a 3:1 ratio, while acetoclastic growth produces them in a 1:1 ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established biochemical knowledge about methanogenic pathways, supported by Figure 6\u2014figure supplement 1. This contextualizes the growth experiments but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Cytochromes c are important for diverse metabolic processes in Methanosarcinaceae, including methane oxidation in ANME consortia and alkane metabolism. M. acetivorans provides a platform for studying these diverse cytochromes since ANME archaea cannot be cultured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 cite prior work on cytochrome roles in various archaea. Claim C140 makes a reasonable inference about using M. acetivorans as a surrogate system, though this represents a future application rather than a demonstrated result. This is primarily discussion/context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C110"
+    ],
+    "result": "Methanogenesis contributes substantially to global methane emissions, and cytochromes c catalyze electron transfer processes that facilitate microbial interactions and biogeochemical cycles in archaea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide broader context about the environmental significance of the research, supported by established knowledge and citations. This motivates the study's importance but doesn't represent a finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C94"
+    ],
+    "result": "The study identified substrate-specific functional roles for cytochromes c during methanogenesis in M. acetivorans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize the physiological findings (detailed in the growth experiments result above). They represent high-level conclusions that are well-supported by the growth data (C86-C93). This is essentially a restatement of a major result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C124",
+      "C130",
+      "C143"
+    ],
+    "result": "Speculative interpretations: unique archaeal features may render certain ccm genes dispensable, additional CcmE features may be important, and environment-specific selective pressures may influence ccm retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent speculative discussion points that are not directly tested. While they provide reasonable hypotheses for future work, they lack experimental support in the current study. C109 and C124 about archaeal cell features are plausible but unproven. C130 about additional CcmE features is vague. C143 about environmental selection is correlative at best.",
+    "result_type": "MINOR"
+  }
+]

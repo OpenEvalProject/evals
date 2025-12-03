@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C30",
+      "C31",
+      "C71"
+    ],
+    "result": "The authors developed SiteLoc, a novel imaging-based method for molecular localization on cellular surface proteins that achieves nanometer-scale resolution through one-dimensional distance measurement from bound ligands to a reference surface using topological image averaging and normalization of axial positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C30-C31 describe the core methodological innovation, while C71 explains the key distinguishing feature (axial normalization) that enables application to native cell surfaces. The method description is internally consistent and supported by the presented data throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C72",
+      "C73"
+    ],
+    "result": "Simulated fluorescence images with varying morphologies and surface expression patterns demonstrate that SiteLoc achieves high accuracy across diverse cell surface patterns, with potential for 1 nm precision under ideal conditions, though accuracy varies with shape complexity, labeling strategy, and signal-to-noise ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C42 and C72-C73 collectively present comprehensive simulation results with well-defined parameters (C36-C37). The simulations systematically test various conditions and identify sources of uncertainty (C40-C41), providing strong validation of the method's robustness. Figure 2 supports these findings with quantitative measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "DNA height probe measurements on erythrocyte surfaces validate that SiteLoc accurately estimates molecular heights on both spherical and non-spherical cells, with measured heights approximately half the DNA strand length and in good agreement with worm-like chain model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C48 describe a well-designed validation experiment using DNA probes of known lengths. The agreement with both an existing method (C44) and theoretical WLC predictions (C47) provides strong orthogonal validation. Figure 3 shows consistent results across different DNA lengths and cell morphologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C33",
+      "C34",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C74"
+    ],
+    "result": "SiteLoc successfully localizes known binding sites on M protein of S. pyogenes, measuring distances of 5.6 nm for Xolair Fc binding, 6.2 nm for Ab49 Fab binding, and 18.0 nm for fibrinogen binding sites, consistent with literature-reported arrangements and demonstrating applicability to non-spherical cells with heterogeneous protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C49-C55 present measurements on a biologically relevant system with known binding site locations from prior literature. The measured distances follow the expected spatial arrangement (C55), and C74 confirms applicability to non-spherical topology. However, the large IQR values (29.7-49.3 nm) relative to median distances suggest substantial measurement variability that warrants caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C69"
+    ],
+    "result": "SiteLoc achieves approximately 10 nm precision with structured illumination microscopy data through dimension reduction of surface data within an image plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C69 state the achieved precision with specific quantitative metrics (~10 nm, ~12 nm IQR, ~9 nm SD). This is supported by the DNA probe validation experiments and bacterial measurements, though the precision varies considerably depending on experimental conditions as shown in other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C77",
+      "C78"
+    ],
+    "result": "Site localization precision is increased when using directly conjugated antibodies compared to secondary antibody labeling, and measurement variation can be minimized by increasing signal-to-noise ratio and reducing biological variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C78 are supported by both in silico (Figure 2\u2014figure supplement 1) and in vitro experiments (Figure 4\u2014figure supplement 2). The comparison between direct and secondary labeling shows consistent trends across different experimental systems, providing strong evidence for these optimization strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C85"
+    ],
+    "result": "SiteLoc yields viable results with conventional widefield microscopy images, and deconvolution using the Richardson-Lucy algorithm may increase precision, though measured distances are generally larger than with SIM data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C57-C62 demonstrate applicability to widefield microscopy with quantitative comparisons (C59-C60). The results show consistent trends across two different samples (Xolair and fibrinogen), though the increased distances and larger IQR values with widefield data suggest reduced precision. The deconvolution approach (C85) is well-established and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Signal precision is improved by accounting for the distortion of ovoid bacteria through axial normalization in polar coordinates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is directly supported by Figure 1c, which visually demonstrates improved signal-to-noise ratio after radial alignment. This is a key technical feature that enables the method to work on non-spherical cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Site localization measurements on bacteria have proven difficult, possibly due to the small size of bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 acknowledges experimental difficulty, but C76 is speculative without supporting evidence. The large IQR values in bacterial measurements (C52-C54) support that measurements are challenging, but the specific cause remains unvalidated. Additional experiments would be needed to confirm whether bacterial size is the limiting factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The measured offset in dual-labeled cell wall experiments is likely due to chromatic aberration at the imaging plane and is used to correct subsequent site localization measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 describe a standard chromatic aberration correction procedure. The dual-labeling control experiment (Figures 3\u2014figure supplement 2 and 5\u2014figure supplement 1) provides appropriate calibration data, and the correction approach is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C29",
+      "C79"
+    ],
+    "result": "SiteLoc is well suited for antibody binding site measurements on native cell surface morphology, can be applied to other molecular distance estimations, enables rapid determination of binding sites without synthetic modification, and may be useful for rapid screening of epitope locales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C29 are supported by the diverse applications demonstrated (DNA probes, antibody binding sites, different cell types). However, C79 is speculative about future applications. The evidence supports the method's versatility, but high-throughput screening capability and broader applicability require further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "Background and motivation: Epitope localization is critical for immunological outcomes, but current methods are costly and time-consuming, and existing imaging-based averaging methods are unsuitable for native cell surfaces with variable morphology and heterogeneous protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 and C63-C70 establish the scientific context and motivation through citations to prior literature. These claims accurately represent established knowledge about antibody-epitope interactions, limitations of current methods, and the need for improved approaches. The characterization of existing methods' limitations (C19-C21, C70) appropriately justifies the development of SiteLoc.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Methodological details: The experiments used appropriate reagents and biological materials including WGA for bacterial peptidoglycan labeling, S. pyogenes strain SF370 expressing M1 protein, Xolair antibody that binds M protein via Fc, and IdeS enzyme for antibody cleavage, with the implementation provided as open-source Julia code on GitHub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C80-C84 describe standard experimental materials and procedures with appropriate citations. The open-source code availability (C80) enhances reproducibility. These are well-established reagents and methods appropriately applied to the experimental system.",
+    "result_type": "MINOR"
+  }
+]

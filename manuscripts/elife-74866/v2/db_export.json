@@ -1,0 +1,2303 @@
+{
+  "submission": {
+    "id": "69854e1d-fc74-4a1e-961d-2013bb89cebd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:11:04.756814Z",
+    "updated_at": "2025-12-03T11:11:04.756814Z"
+  },
+  "content": [
+    {
+      "id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "submission_id": "69854e1d-fc74-4a1e-961d-2013bb89cebd",
+      "content_type": "manuscript",
+      "content_text": "# Epithelial-to-mesenchymal transition proceeds through directional destabilization of multidimensional attractor\n\n## Authors\n\n- Weikang Wang<sup>1</sup> ([ORCID: 0000-0002-4783-7540](https://orcid.org/0000-0002-4783-7540)) \u2020\n- Dante Poe<sup>1</sup> ([ORCID: 0000-0002-4813-3035](https://orcid.org/0000-0002-4813-3035))\n- Yaxuan Yang<sup>1</sup> ([ORCID: 0000-0003-3077-2813](https://orcid.org/0000-0003-3077-2813))\n- Thomas Hyatt<sup>3</sup> ([ORCID: 0000-0001-7536-0850](https://orcid.org/0000-0001-7536-0850))\n- Jianhua Xing<sup>1</sup> ([ORCID: 0000-0002-3700-8765](https://orcid.org/0000-0002-3700-8765)) \u2020\n\n### Affiliations\n\n1. Department of Computational and Systems Biology, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))\n2. Joint CMU-Pitt Ph.D. Program in Computational Biology, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))\n3. Department of Physics and Astronomy, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))\n4. UPMC-Hillman Cancer Center, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow a cell changes from one stable phenotype to another one is a fundamental problem in developmental and cell biology. Mathematically, a stable phenotype corresponds to a stable attractor in a generally multi-dimensional state space, which needs to be destabilized so the cell relaxes to a new attractor. Two basic mechanisms for destabilizing a stable fixed point, pitchfork and saddle-node bifurcations, have been extensively studied theoretically; however, direct experimental investigation at the single-cell level remains scarce. Here, we performed live cell imaging studies and analyses in the framework of dynamical systems theories on epithelial-to-mesenchymal transition (EMT). While some mechanistic details remain controversial, EMT is a cell phenotypic transition (CPT) process central to development and pathology. Through time-lapse imaging we recorded single cell trajectories of human A549/Vim-RFP cells undergoing EMT induced by different concentrations of exogenous TGF-\u03b2 in a multi-dimensional cell feature space. The trajectories clustered into two distinct groups, indicating that the transition dynamics proceeds through parallel paths. We then reconstructed the reaction coordinates and the corresponding quasi-potentials from the trajectories. The potentials revealed a plausible mechanism for the emergence of the two paths where the original stable epithelial attractor collides with two saddle points sequentially with increased TGF-\u03b2 concentration, and relaxes to a new one. Functionally, the directional saddle-node bifurcation ensures a CPT proceeds towards a specific cell type, as a mechanistic realization of the canalization idea proposed by Waddington.\n\n## Introduction\n\nCells of multicellular organisms assume different phenotypes that can have drastically different functions, morphologies, and gene expression patterns, and can undergo distinct changes when subjected to specific stimuli and microenvironments. Examples of cell phenotypic transitions (CPTs) include cell differentiation during development and induced and spontaneous cell fate transition such as reprogramming and trans-differentiation. Epithelial-to-mesenchymal transition (EMT) is a prototypic progress that has been extensively studied due to its significance in cell and developmental biology as well as in biomedical research (Figure 1a). Recent advances in single-cell techniques have further accelerated the long-term efforts on unraveling the mechanisms of CPTs, for understanding processes such as differentiation and reprogramming in developmental and cell biology, and for potential biomedical implications of modulating cell phenotypes in regenerative medicine and diseases such as cancer and chronic diseases (Wagner and Klein, 2020; Weinreb et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig1-v2.jpg)\n\n**Figure 1.:** (a) Transmission light and fluorescence (Vimentin-RFP) images showing an A549/Vim-RFP cell undergoing epithelial-to-mesenchymal transition. Scale bar: 30 \u00b5m. (b) Possible critical transition mechanisms in EMT. This is an illustration of pitchfork (top) and saddle-node (bottom) bifurcations using 1-D potential systems.\n\nConsidering cell as a dynamical system, understanding the CPT process from a dynamical systems theory perspective is an intriguing long-standing question in mathematical and systems biology. Mathematically, at any time a cell state can be specified by a set of state variables, such as gene expression levels, or other collective cell feature variables. A stable cell phenotype is an attractor in a high-dimensional cell state space formed by the state variables (Huang et al., 2005), and a CPT is a transition between different attractors. Waddington famously made an analogy comparing developmental processes to a ball sliding down a potential landscape, and diverging into multiple paths at some bifurcation points (Rand et al., 2021). This picture exemplifies a pitchfork bifurcation, where an original stable attractor turns to an unstable saddle point together with the emergence of two new attractors (Figure 1b top). Another well-discussed mechanism for attractor-to-attractor transition is through a series of saddle-node bifurcations, where first a new fixed point emerges, splits into a saddle point and attractor, then the saddle point separating the two attractors moves toward and eventually collides with the old attractor to destabilize the latter (Figure 1b bottom). A notable difference between the two types of bifurcations is that after a pitchfork bifurcation the original state can relax to multiple new stable states, while the saddle-node bifurcation the system is directed to relax to one attractor. A fundamental theoretical question is which mechanism a CPT process assumes, and why.\n\nPitchfork and saddle-node bifurcation are two important theoretical mechanisms of critical state transition and have been discussed in the context of CPTs (Mojtahedi et al., 2016). A new challenge then is how to evaluate various mathematical models experimentally at single cell levels. Several studies have suggested that analyzing snapshot single-cell genomics data (Mojtahedi et al., 2016; Chen et al., 2012), fixed cell data, to understand critical state transitions cannot provide temporal information on how individual cells transition. In addition, information from fluorescence-based live cell imaging is typically restricted to a small number of molecular species. Thus, tracking a small number of molecular species through live cell imaging cannot provide the collective transition dynamics due to the intrinsic high-dimensional nature.\n\nSpecifically in the context of EMT, theoretical studies suggest that EMT proceeds as a saddle-node bifurcation (Tian et al., 2013); however, there is no direct experimental study on the single-cell transition dynamics. As recognized in a consensus statement from researchers in the EMT field, several open questions and challenges exist on understanding the mechanisms of the EMT process (Yang et al., 2020). For example, it is unclear whether the process proceeds as hopping among a small number of discrete and distinct intermediate states, or a continuum of such states with no clear boundary. The transition may proceed either along a linear array of states or through multiple parallel paths. Pseudo-time analyses of high throughput single cell genomics studies infer that EMT proceeds through a 1-D continuum path (McFaline-Figueroa et al., 2019), consistent with a prevalent EMT axis concept with the epithelial and the mesenchymal states as the two end states (Nieto et al., 2016). These predictions, which are indirectly inferred from snapshot single-cell data, require direct testing by tracking single cells over time. However, live cell imaging studies are impeded because EMT status cannot be assessed based on only a small number of molecular markers such as key transcriptional factors (Yang et al., 2020).\n\nTo address the above challenge when studying EMT dynamics, recently we developed a platform of tracking cell state change in a composite cell feature space that is accessible for multiplex and long-term live cell imaging (Wang et al., 2020). Here, we first apply the platform to study EMT in a human A549 derivative cell line with endogenous vimentin-RFP labeling (ATCC CCL-185EMT, denoted as A549/Vim-RFP in later discussions) induced by different concentrations of TGF-\u03b2. Then we analyze an ensemble of recorded multi-dimensional single-cell trajectories within the framework of reaction rate theories that have been a focused subject in the context of physics and chemistry.\n\n## Results\n\n### Single-cell trajectories are mathematically represented in a collective morphology/texture feature space\n\nFor quantitative studies of CPT dynamics, one first needs to establish a mathematical representation of the cell states and cell trajectories. Mathematically, one can represent a cell state by a point in a multi-dimensional space defined by gene expression (Ye and Sarkar, 2018) or other cell properties (Gordonov et al., 2016; Chang and Marshall, 2019; Kimmel et al., 2018). Noticing that cells have phenotype-specific morphological features that can be monitored even with transmission light microscopes, recently we developed a framework that defines cell states in a combined morphology and texture feature space (Wang et al., 2020). The framework allows one to trace individual cell trajectories during a CPT process through live-cell imaging. We applied the framework to study the TGF-\u03b2 induced EMT with the A549/Vim-RFP cells (Figure 2; Wang et al., 2020). Vimentin is a type of intermediate filament protein commonly used as a mesenchymal marker, and changes its expression and spatial distribution during EMT (Zhang et al., 2014). Furthermore, during EMT cells undergo dramatic change of cell morphology accompanying gene expression change (Figure 1a; Zhang et al., 2014; Zhang et al., 2019). Accordingly, we used a combination of vimentin texture and cell shape features to specify a cell state.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig2-v2.jpg)\n\n**Figure 2.:** (a) Time-lapse imaging of A549/Vim-RFP cells treated with TGF-\u03b2. (b) Deep-learning aided single-cell segmentation and tracking on the acquired time-lapse images. (c) Extraction of morphology and vimentin features of single cells. (d) Representation of single cell states in a multidimensional morphology/texture feature space. (e) Transition path analyses over recorded trajectories. Right: A representative single cell trajectory of EMT in the feature space. Color represents time (unit: hour). Left: the same trajectory colored by the regions in the feature space (E, I, and M, for epithelial, intermediate, and mesenchymal regions, respectively) each data point resides. Reduced units are used in this and all other figures.\n\nWe first performed time-lapse imaging of the EMT process of A549/Vim-RFP induced with 4 ng/ml TGF-\u03b2 (Figure 2a, Materials and methods Wagner and Klein, 2020; Weinreb et al., 2020), then performed single-cell segmentation and tracking on the acquired images (Figure 2b, Materials and methods Huang et al., 2005). We quantified the images with an active shape model (Cootes et al., 1995) and performed principal component analysis (PCA) to form a set of orthonormal basis vectors of collective variables, which include cell body shape of 296 degrees of freedom (DoF) quantified by an active shape model (Cootes et al., 1995), and texture features of cellular vimentin distribution quantified by 13 Haralick features (Haralick, 1979; Figure 2c, Materials and methods Huang et al., 2005). Then the state of a cell at a given instant is represented as a point in the 309-dimensional composite morphology/texture feature space (Figure 2d), and the temporal evolution of the state forms a continuous trajectory in the space subject to further theoretical analyses (Figure 2e).\n\n### Transition path analyses identify an ensemble of reactive single-cell trajectories\n\nBefore TGF-\u03b2 treatment, a population of cells assume a localized stationary distribution in this 309-dimensional composite space, and most cells are epithelial (Figure 3a, blue). TGF-\u03b2 treatment destabilizes such distribution, and the cells relax into a new stationary distribution dominated by mesenchymal cells (Figure 3a red). We recorded 204 continuous trajectories in the state space. A representative trajectory shown in Figure 2e (right) (also in Video 1) reveals how a cell transits step-by-step from an epithelial cell with convex polygon shapes and a localized intracellular vimentin distribution, to the mesenchymal phenotype with elongated spear shapes and a dispersive vimentin distribution.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig3-v2.jpg)\n\n**Figure 3.:** (a) Kernel density estimation of cells in control condition (Blue) and cells after being treated with 4 ng/ml TGF-\u03b2 for 46\u201348 hours (Red). (b) Schematic example reactive and nonreactive trajectories in a potential system. Also shown is a valley connecting regions A and B that most reactive trajectories fall in and form a reaction tube. (c) Discretization of the whole single cell data set with self-organizing map into 12 \u00d7 12 discrete states (clusters) in the state space. Directed network generated base on the self-organizing map and the transitions between states. The distance between two states is defined as the negative logarithm of transition probability. White lines are shortest between epithelial states (purple stars) and mesenchymal states (red stars). Green dots are states that the shorted paths pass by. The size of a dot stands for the frequency of this dot passed by shortest paths. The width of a white line represents the frequency that these shortest paths pass by. (d) Contour map (top, superimposed with the shortest paths in panel c) and 3D surface-plot (bottom) of density of reactive trajectories in the plane of morphology PC1 and vimentin Haralick PC1. (e) Representative trajectories from the two groups. Left: Vimentin varies first. Right: Concerted variation.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Directed network generated base on the self-organizing map and the transition between states. The distance between two states is defined as the negative logarithm of transition probability.\n\n![Video 1.](https://cdn.elifesciences.org/articles/74866/elife-74866-video1.mp4.jpg)\n\n**Video 1.:** Each frame is a segmented cell mask cropped from the original vimentin fluorescence image.\n\nNext, we applied rate theory analyses on the recorded single-cell trajectories. Rate theory studies how a system escapes from a metastable state, or relaxation from one stationary distribution to a new one (H\u00e4nggi et al., 1990). Specifically, transition path theory (TPT) is a modern development in the field (Weinan et al., 2005; Rohrdanz et al., 2013; Bolhuis et al., 2002; Weinan and Vanden-Eijnden, 2010). Within the TPT framework, one divides the state space into regions containing the initial (A) and final (B) attractors, and an intermediate (I) region. A reactive trajectory is one that originates from region A, and enters region I then B before re-entering region A (Figure 3b). The reactive trajectories form an ensemble of transition paths that connect regions A and B.\n\nAccordingly, we divided the four-dimensional principal component subspace into epithelial (E), intermediate (I), and mesenchymal (M) regions (Figure 2e left) (Wang et al., 2020). With this division of space, we identified a subgroup of 135 recorded single-cell trajectories that form an ensemble of reactive trajectories that connect E and M by day 2. It should be noted that the practical definition of reactive trajectories here differs from the theoretical definition in classical TPT. In classical TPT, one runs a trajectory of infinite length that travel back and forth between the initial and final regions numerous times, and a reactive trajectory refers to a segment that starts from the initial region and ends in the final region.\n\n### TGF-\u03b2 induced EMT in A549/Vim-RFP cells proceeds through parallel transition paths\n\nWe first examined whether EMT proceeds through one or multiple types of paths by analyzing the ensemble of reactive trajectories using self-organizing map (SOM) (Materials and methods Rand et al., 2021). SOM is an unsupervised artificial neural network that utilizes a neighborhood function to represent the topology structure of input data (Kohonen, 1982). The algorithm clusters the recorded cell states into 144 discrete states, and represents the EMT process as a Markovian transition process among these states (Figure 3\u2014figure supplement 1). Shortest path analysis using the Dijkstra algorithm (Dijkstra, 1959) over the transition matrix reveals two groups of paths: vimentin Haralick PC1 varies first, and concerted variation of morphology PC1 and vimentin Haralick PC1, with finite probabilities of transition between the two groups (Figure 3c). This result is consistent with our previous trajectory clustering analysis using dynamics time warping (DTW) distance between reactive trajectories (Wang et al., 2020). To further support this conclusion, we examined the density of reactive trajectories \u03c1R, in the plane of morphology PC1 and vimentin Haralick PC1 (Materials and methods Mojtahedi et al., 2016). The contour map of \u03c1R shows two peaks corresponding to the two groups of shorted paths in the directed network (Figure 3d). The peak where vimentin Haralick PC1 varies first is higher than the peak of concerted variation, indicating more reactive trajectories along this path. The distinct features of the two types of trajectories are apparent from the two representative single-cell trajectories shown in Figure 3e.\n\n### A revised string method is developed to reconstruct reaction coordinate from single-cell trajectories\n\nDue to the continuous and stochastic nature of the system dynamics there are infinite number of reactive trajectories, which mainly concentrate within a tube in the state space that connects regions A and B (Figure 3b; Weinan and Vanden-Eijnden, 2010). The center of the tube has been used to define a reaction coordinate (RC), a concept central to rate theories (Figure 4a; Vanden-Eijnden and Venturoli, 2009). A RC is a one-dimensional geometric parameter (denoted as s in the subsequent discussions) that describes the progression along a continuous reaction path defined in the state space (Rohrdanz et al., 2013). A good choice of RC can provide mechanistic insight on how the transition process proceeds.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig4-v2.jpg)\n\n**Figure 4.:** (a) Discrete representation of a 1-D reaction coordinate (i.e. image points, represented as colored dots) on the filled contour map with corresponding Voronoi cells. The cyan line is a reactive trajectory that starts from A and ends in B. (b) Reconstructed RCs from reactive single cell EMT trajectories using a revised finite temperature string method. Single cell images represent typical cell states in their locations (Epithelial state, mesenchymal state, in mid-transition with vimentin varies first and in mid-transition with concerted variation) (c) Separate representation of the RCs overlaid with representative reactive single-cell trajectories. Top: vimentin varies first; Bottom: concerted variation. For visual clarity, the trajectories were plotted with data points separated by 50 min. (d) Cell shape (left), Haralick feature (right) along RC s1. The colors of the cell shapes in b/c left represent progression of EMT (starts from blue and ends in red). Haralick feature 1: Angular Second Moment; 2: Contrast; 3: Correlation; 4: Sum of Squares: Variance; 5: Inverse Difference Moment; 6: Sum Average; 7: Sum Variance; 8: Sum Entropy; 9: Entropy; 10: Difference Variance; 11: Difference Entropy; 12: Information Measure of Correlation 1; 13: Information Measure of Correlation 2. (e) Similar to panel e but along RC s2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Flow chart of the procedure. (b) Example RC curves obtained at different iteration cycles.\n\nTherefore, we set to reconstruct the RC for each path with the recorded reactive trajectories using a revised finite temperature string method, which was originally designed for RC reconstruction for theoretical and computational modeling systems (Vanden-Eijnden and Venturoli, 2009; Allen et al., 2005; Dickson et al., 2009). The method first approximates the RC by a set of discrete image points that are uniformly distributed along the arc length of the RC, so the multi-dimensional state space can be divided by a 1-D array of Voronoi polyhedra containing individual images, and the data points can be assigned to individual Voronoi cells (Figure 4a). Starting with a trial RC to define the initial division of the Voronoi cells, one optimizes the trial RC iteratively by minimizing the distance dispersion between the string point and sample points within each Voronoi cell (Figure 4\u2014figure supplement 1). Since here we have an ensemble of continuous trajectories, we modified the iteration procedure slightly. Specifically, we minimized both the distance between the ensemble of measured reactive trajectories and the image point within each individual Voronoi cell, as well as the overall distance between each individual trajectory and the trial RC (Materials and methods Chen et al., 2012).\n\nTherefore, we grouped the reactive trajectories based on the DTW distance, then identified the RCs for each group separately following the modified string method. The iteration procedure gives the RC of each path ($s_{1}$ and $s_{2}$) that characterizes common features of the reactive trajectories for the TGF-\u03b2 induced EMT in A549/Vim-RFP cells (Figure 4b). The recorded trajectories fluctuate around the RCs and form reaction tubes as expected from the TPT theory (Figure 4c). Along each RC, the cell shape changes dominantly through elongation and growth (Figure 4d & e, left), and most of the 13 vimentin Haralick features increase or decrease monotonically and continuously over time (Figure 4d & e, right) (Materials and Methods Tian et al., 2013). The two RCs first diverge from the E region to follow two distinct paths, then converge within the M region. In one group (Figure 4d), most of the Haralick feature changes take place before major morphology change. For the group with concerted dynamics (Figure 4e), both cell shape and Haralick features vary gradually along the RC.\n\n### Reconstructed reaction coordinate and quasi-potentials reveal EMT as relaxation along continuum manifolds\n\nConsidering a cell as a dynamical system, with the single-cell trajectories one may formulate an inverse problem to reconstruct the underlying dynamical equations governing the EMT transition. Let\u2019s take a minimal ansatz that assumes the dynamics of the collective variables (x) can be described by a set of Langevin equations in the morphology/texture feature space, $dx/dt=F(x)+\u03b7(x,t)$, where F(x) is a governing vector field, and \u03b7 are white Gaussian noises with zero mean. Then in principle one can reconstruct F(x) from the single-cell trajectory data, $F(x)=\u27e8dx/dt\u27e9$, averaged over the neighborhood of each x. Notice for the ensemble average one needs to use all the reactive and nonreactive trajectories.\n\nFor mathematical simplicity and better numerical convergence, here we restricted to reconstructing the dynamics along the RC (Figure 5a). The ansatz becomes a 1-D convection-diffusion process, $ds/dt=\u2212d\u03d5/ds+\u03b7$. Notice that for a 1-D system even without detailed balance one can define a quasi-scalar potential \u03d5 (Xing, 2010; Xing and Kim, 2011; Risken, 1996). This quasi-potential corresponds to a potential of mean force in the case of a conserved system. To confirm that the ansatz of using a memory-less 1-D Langevin equation is a good approximation for the EMT dynamics along a RC, we performed the Chapman-Kolmogorov Test (CK-test). The test shows that the one-step transition matrix can indeed predict the dynamics on longer time scales, and thus the Markovian assumption is a good zeroth-order approximation of the EMT dynamics (Figure 5\u2014figure supplement 1, Materials and Methods Yang et al., 2020).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig5-v2.jpg)\n\n**Figure 5.:** (a) Reconstructed RC s1 on density plot of single cell trajectories data. Cyan dots are single cell data points. (b) Enlarged view of the red box region in (a). The arrow associated with each data point (cyan dot) represents the value of ds/dt (white: > 0, magenta: = 0, black: < 0). (c) Theoretical framework of dynamics reconstruction along the RC. (d) Comparison of reconstructed quasi-potentials along the RC with 1 ng/ml (star) and 4 ng/ml (circle) TGF-\u03b2 treatment. Top: Reconstructed quasi-potentials along RC s1. Bottom: Reconstructed quasi-potentials along RC s2. (e) Quasi-potential of the control cells based on kernel density estimation. (f) A metaphorical potential system to illustrate a plausible mechanism for generating the two paths through sequential collision between a stable attractor and two saddle points when the concentration of TGF-\u03b2 increases. The width of the arrows represents the probabilities that single-cell trajectories follow corresponding paths. E: epithelial attractor; Partial M: partial EMT attractor; M: mesenchymal attractor.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Black solid lines are model predictions estimated from one-step time lag. Blue dashed lines are the estimations from larger steps of time lag. The shading blue region is the region with 95% confidence.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) Reconstructed d\u03a6/ds along the RC s1. (b) Reconstructed d\u03a6/ds along the RC s2.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Along the RC s1 (a) and the RC s2 (b). The effective temperature value in calculation is set as $\\frac{1}{2k_{B}}$.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Each dot represents a reactive trajectory. The colors of dots represent different clusters they belong to: Brown, vimentin varies first; Yellow, Concerted variation.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** (a) Reconstructed d\u03d5/ds along the RC s1 in the case of 1 ng/ml TGF-\u03b2 treatment (b) Reconstructed d\u03d5/ds along the RC s2 in the case of 1 ng/ml TGF-\u03b2 treatment. (c) Typical single cell trajectories treated with 1 ng/ml TGF-\u03b2 along RC s1 (d) Typical single-cell trajectories treated with 1 ng/ml TGF-\u03b2 along RC s2.\n\n![Figure 5\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig5-figsupp6-v2.jpg)\n\n**Figure 5\u2014figure supplement 6.:** Top: Reconstructed quasi-potentials along RC s1. Bottom: Reconstructed quasi-potentials along RC s2. (a) The number of image points is 20. (b) The number of image points is 33.\n\n![Figure 5\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/74866/elife-74866-fig5-figsupp7-v2.jpg)\n\nTo reconstruct the dynamical equations, we used the measured trajectories and instant velocities (along the RC direction) as input. An enlarged view in Figure 5b shows the instant velocities (ds/dt) of various trajectories segments within Voronoi cells. Numerically, we related the potential gradient d\u03d5/ds with the mean velocity within the ith Voronoi cell through averaging over all recorded reactive and nonreactive trajectory segments that locate within the Voronoi cell at any time t (Figure 5a & c, Materials and methods McFaline-Figueroa et al., 2019; Nieto et al., 2016). On the obtained curve of d\u03d5/ds vs. s (Figure 5\u2014figure supplement 2), the zeroes correspond to stationary points of the potential. We then reconstructed the quasi-potential through integrating over s, $\u03d5(s_{i})=\u03d5(s_{0})+\\int_{s_{0}}^{s_{i}}(d\u03d5/ds)ds$ (Figure 5d). We also obtained the quasi-potential of the untreated cells (Figure 5e) from the steady state distribution of untreated cells along the RC, $\u03d5_{0}\u221d\u2212logp_{ss}$.\n\nThe reconstructed RCs and quasi-potentials provide mechanistic insight on the transition. Before TGF-\u03b2 induction, cells reside on the untreated cell potential centered with a potential well corresponding to the epithelial attractor (Figure 5e). After induction, the system relaxes following the new potential into a new well corresponding to the mesenchymal attractor. Notably, in the new potential the original epithelial attractor disappears, reflecting that the epithelial phenotype is destabilized under the applied 4 ng/ml TGF-\u03b2 concentration.\n\nWith the reconstructed quasi-potentials and variance of d\u03d5/ds obtained from experiment, we solved the Fokker-Planck (FP) equation corresponding to the Langevin equation to predict the steady distribution vs. RC (Materials and methods Wang et al., 2020). While the dynamical equations were reconstructed from trajectories during the transition process and with a minimal Langevin equation ansatz, the predicted stationary distribution have average values and standard deviations, (17.2, 4.6) and (14.7, 4.4) for the two paths, respectively, close to those calculated from the distributions sampled from cells after 39 h TGF-\u03b2 treatment, (16.0, 5.0) and (16.2, 4.0), respectively (Figure 5\u2014figure supplement 3a and b).\n\n### Lowering TGF-\u03b2 concentration leads to relaxation to a new partial EMT attractor through two parallel paths\n\nNotice that quasi-potential with 4 ng/ml TGF-\u03b2 for the Vimentin varies first path shows a plateau around s1 = 8 (Figure 5d). We hypothesized that this plateau is a remnant of the original epithelial attractor, and if so we expect to observe a flatter plateau or even a metastable attractor with a lower TGF-\u03b2 concentration. Therefore, we treated A549/Vim-RFP cells with 1 ng/ml TGF-\u03b2 and recorded 135 3-day long single-cell trajectories. Among the recorded trajectories 65 indeed reached the M region. The reactive trajectories also cluster into two groups (Figure 5\u2014figure supplement 4). For the purpose of comparison, we projected the trajectories onto the RCs obtained from the 4 ng/ml TGF-\u03b2 and reconstructed the quasi-potentials in the case of 1 ng/ml of TGF-\u03b2. Indeed, the quasi-potential for the path with vimentin varying first has a plateau flatter than that of the 4 ng/ml TGF-\u03b2-treated cells. The quasi-potential of another path, however, does not show such flattening.\n\nIn the EMT field, it is under debate whether EMT has a discrete or continuum spectrum of intermediate states (Yang et al., 2020). Single-cell transcriptomic studies reveal intermediate states (Cook and Vanderhyden, 2020). If EMT proceeds through a set of discrete and definite states, we expect to observe attractors, i.e., potential wells, corresponding to these states. In addition, lowering the TGF-\u03b2 concentration would lead to an increased barrier between neighboring wells and cells trapped at some intermediate state for a long time. While all the quasi-potentials at the two TGF-\u03b2 concentrations reveal destabilization of the epithelial attractor, they do not have multiple attractors anticipated for discrete EMT states (Figure 5e d\u03d5/ds in Figure 5\u2014figure supplement 5a, b). Compared to those at 4 ng/ml TGF-\u03b2, both quasi-potentials at 1 ng/ml TGF-\u03b2 have the new attractor closer to the epithelial state. Examination of individual trajectories also reveals that cells with 1 ng/ml TGF-\u03b2 treatment leave the E region and mostly reside around a new attractor in the I region (Figure 5\u2014figure supplement 5c, d). Some trajectories fluctuate within the attractor and only transiently reach the M region. That is, cells reach a new stable phenotype whose degree of mesenchymal features depends on the TGF-\u03b2 concentration, which is consistent with previous studies on MCF10A cells treated with different concentrations of TGF-\u03b2 (Zhang et al., 2014). Fluctuations of single-cell trajectories limit the state resolution in the cell feature space and prevent us from telling whether the two paths reach one common intermediate state or two distinct ones. To examine how the number of Voronoi cells affects the quasi-potential properties, we varied the number of discretization points along the RCs and did the same analysis to reconstruct the quasi-potential (Figure 5\u2014figure supplement 6a and b). The reconstructed potentials have similar shapes, although show different smoothness.\n\n## Discussion\n\nCell type regulation is an important topic in mathematical and systems biology, and several theoretical and computational studies on modeling CPT systems have been performed in the context of rate theories (Aurell and Sneppen, 2002; Brackston et al., 2018; Morelli et al., 2008; Wang et al., 2014; Ge et al., 2015; Wang et al., 2011; Tse et al., 2018). Recent advances in single-cell techniques have catalyzed quantitative measurements on the dynamics of CPTs, and have opened new questions on how to quantify and analyze single-cell data in the framework of dynamical systems theory and how it compares with theoretical results. In our previous studies (Wang et al., 2020), we developed an integrated live cell imaging and image analysis framework for quantifying and representing live cell imaging data. In this work, we further showed that the mathematical representation allows one to analyze the single cell trajectories and study CPT dynamics using rate theories for quantitative mechanistic insights (Figure 5\u2014figure supplement 7).\n\nA long-held concept in cell and developmental biology is that cells exist as discrete and distinct phenotypes. Single cell genomics measurements have challenged such views and have revealed that cells move along continuum manifolds. The live cell imaging studies presented here support such a picture by demonstrating EMT as a relaxation along a continuum manifold, which is also supported by single cell RNA-seq studies (McFaline-Figueroa et al., 2019).The high-throughput single-cell data provides high dimensional information, but identifying the intermediate states in the snap-shot data requires the development of new dimension reduction and clustering methods (MacLean et al., 2018). Compared to the snapshot studies, live cell trajectories reveal that the EMT trajectories can be clustered as fluctuating around two distinct paths that connect the epithelial and mesenchymal phenotypes. The existence of two types of transition paths suggest that the previously proposed conceptual 1D EMT axis (Nieto et al., 2016) is insufficient for understanding how EMT proceeds, and puts dynamics inferred indirectly from snapshot data questionable (McFaline-Figueroa et al., 2019). Extracting multi-dimensional features from live cell imaging data provides a complementary strategy, and further development along this direction will benefit from advances of imaging technology and algorithm (Christiansen et al., 2018; Ounkomol et al., 2018).\n\nIn rate theories, identifying an appropriate RC provides mechanistic insights of a transition process. For example, recognizing collective solvent reorganization as part of the reaction coordinate is a key part of Marcus\u2019s electron transfer theory (Marcus, 1993). Adopting the fraction of native contacts as a RC also historically plays a key role in the development of protein folding theories. Therefore, continuous efforts have been made on defining an optimal RC for a complex dynamical system (Li and Ma, 2014; Best and Hummer, 2005; Fukui, 2002), and it is even questionable to assume that the system dynamics can be well presented by a 1-D RC, as suggested by theoretical analysis on protein folding (Udgaonkar, 2008). Indeed, the analyses presented in this study shows such a breakdown of this basic assumption.\n\nIn the introduction, we discussed two basic mechanisms of critical state transitions. For TGF-\u03b2 induced EMT in A549 cells, analysis of the trajectories reveals that mathematically multiple paths may originate from destabilization of a multi-dimensional epithelial attractor through colliding with multiple saddle points sequentially. We illustrated such a mechanism in Figure 5f and in Video 2 schematically with a metaphorical potential system. With no or low TGF-\u03b2, the system resides in the epithelial attractor (Figure 5f, first). Adding TGF-\u03b2 leads to the appearance of a new (mesenchymal) attractor, and elevation of the epithelial attractor (Figure 5f, second). The epithelial attractor approaches and collides first with a saddle point to form a barrier-less (concerted-variation) path to the new attractor (Figure 5f, third). At this TGF-\u03b2 concentration (e.g. 1 ng/ml), some barrier still exists along an alternative (vimentin-first) path, which then disappears with the increase of TGF-\u03b2 concentration again (as revealed in Figure 5d) through saddle node collision (Figure 5f, fourth). Indeed, we observed the reactive trajectories predominantly assume the concerted-variation path under 1 ng/ml TGF-\u03b2 treatment (Figure 5\u2014figure supplement 4a), while the vimentin-first path becomes dominant under 4 ng/ml TGF-\u03b2 treatment (Figure 5\u2014figure supplement 4b). It should be pointed out that this sequential saddle-node bifurcation mechanism is only a plausible one that can explain the experimental data. Multidimensional systems can show complex bifurcation patterns (Rand et al., 2021; Kheir Gouda et al., 2019). With sufficient single-cell trajectories, one can extend the procedure described in this work and in Qiu et al., 2022 to reconstruct the multi-dimensional vector field and the full governing Fokker-Planck equations directly. The full model will help address questions on the role of noise in CPTs (Bal\u00e1zsi et al., 2011).\n\n![Video 2.](https://cdn.elifesciences.org/articles/74866/elife-74866-video2.mp4.jpg)\n\nOne major limitation of the minimal Langevin equation ansatz used in this work is that the dynamics is assumed to be Markovian, that is, the temporal evolution of the system depends only on the current but not previous cell state. A cell has a much larger number of degrees of freedom than what can be measured explicitly through live-cell imaging, and these implicit degrees of freedom result in possible non-Markovian dynamics. Future studies may use the generalized Langevin equation formalism that takes into account the non-Markovian effects. In addition, we used the added exogenous TGF-\u03b2 concentration as a control parameter, as in previous studies (Tian et al., 2013; Zhang et al., 2014). Cells also secrete endogenous TGF-\u03b2, and interact with other cells, so the extracellular microenvironment for individual cells is in general spatially and temporally changing. In future studies, one can relax the mean-field approximation assumed in this work. Experimentally, one can use microfluidic chambers for more precise control of extracellular environments. Furthermore, one needs to identify the expression profiles of cell states along the two paths for deeper mechanistic understanding how the two paths emerge and how one can modulate the EMT dynamics, possibly through combining live cell imaging and fixed-cell measurements.\n\nIn summary, through an integrated framework of live cell imaging and single-cell trajectories with dynamical systems theories we obtained quantitative mechanistic insights of TGF-\u03b2 induced EMT as a prototype for CPTs in general. Since a cell is a complex dynamical system with many strongly coupled degrees of freedom and a broad range of relevant time scales, further development will benefit from a finer resolution of cell state through including additional measurable cell features.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens, human)</td>\n      <td>A-549 VIM RFP</td>\n      <td>American Type Culture Collection(ATCC)</td>\n      <td>Cat# CCL-185EMTRRID:SCR_007358</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>TGF-\u03b2 (Recombinant Human TGF-beta 1 Protein)</td>\n      <td>R&amp;D Systems</td>\n      <td>Cat#240-B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CellProfiler</td>\n      <td>Broad Institute</td>\n      <td>RRID:SCR_007358</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Scipy</td>\n      <td>PMID:32015543</td>\n      <td>RRID:SCR_008058</td>\n      <td>https://scipy.org/</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell line\n\nA549/VIM-RFP cells were obtained from (ATCC CCL-185EMT, RRID:CVCL_LI35), and cells within 5\u201315 generations were used in the studies. Cells were cultured in F-12K medium (Corning) with 10% fetal bovine serum (FBS) in MatTek glass bottom culture dishes (P35G-0\u201310 C) in a humidified atmosphere at 37 \u00b0C and 5% CO2, as detailed in Wang et al., 2020. The cell line was authenticated as A549 cells with short tandem repeat (STR) analysis by University of Arizona Genetics Core (UAGC). The result of mycoplasma contamination test (MycoFluor Mycoplasma Detection Kit Molecular Probes, M-7006) was negative.\n\n### Time-lapse imaging\n\nTime-lapse images were taken with a Nikon Ti2-E microscope with differential interference contrast (DIC) and TRITC channels (Excitation wavelength is 555 nm and Emission wavelength is 587) (20\u00d7 objective, N.A. = 0.75). The cell culture condition was maintained with Tokai Hit Microscope Stage Top Incubator. For the 4 ng/ml TGF-\u03b2 (R&D Systems 240-B) experiment, cells were imaged every 5 min with the DIC channel and every 10 min with the TRITC channel for 2 days. The exposure time for DIC was 100 ms and the exposure time for the TRITC channel was 30 ms. For the 1 ng/ml TGF-\u03b2 experiment, cells were imaged every 5 min with the DIC channel and every 15 min with the TRITC channel for 3 days. The exposure time for DIC was 100ms and the exposure time for the TRITC channel was 30ms. While taking the images, all the imaging fields were chosen randomly.\n\n### Trajectory analyses\n\nAfter single-cell segmentation, we performed single cell tracking with CellProfiler (RRID:SCR_007358) using a linear assignment problem (LAP) method (Jaqaman et al., 2008; Carpenter et al., 2006). To reduce the influence of over- and under-segmentation on the trajectory analysis, we utilized the cell tracking to detect these false segmentations through calculating the overlap relationship between single cells in the consecutive frames. If a cell in one frame and its maximum overlap cell in the next frame do not belong to the same trajectory, cells that overlap with the two cells were manually checked. Specifically, we trained an CNN (ResNet) to identify the over- and under-segmented cells (He et al., 2016). To increase accuracy, we used both the prediction results from this CNN, and other criteria. For instance, falsely segmented cells usually do not exist for a long duration. We used the lasting duration (30 minutes) to identify possible over- and under-segmentation. The identified falsely segmented cells were removed from the trajectories, and the broken trajectories were relinked using the LAP method.\n\nWe represented the state of a cell by its morphology and Vimentin Haralick features (Wang et al., 2020). The morphology was described with the active shape model (Pincus and Theriot, 2007). Calculation of Haralick features was based on the gray-level co-occurrence matrix G. $G_{ij}$ is the frequency of observing the gray-levels values of two neighboring pixels i and j, respectively. It was normalized by the total counts. In 2D images, there are four directions of such neighbors (0\u00b0, 45\u00b0, 90\u00b0, and 135\u00b0). To be rotation invariant, each feature was calculated on all the four directions of G matrix and averaged over them. Haralick features include the following features: 1 Angular Second Moment; 2: Contrast; 3: Correlation; 4: Sum of Squares: Variance; 5: Inverse Difference Moment; 6: Sum Average; 7: Sum Variance; 8: Sum Entropy; 9: Entropy; 10: Difference Variance; 11: Difference Entropy; 12: Information Measure of Correlation 1; 13: Information Measure of Correlation 2.\n\n### Self-organizing map and shortest transition paths in the directed network\n\nThe self-organizing map is an unsupervised machine learning method to represent the topology structure of date sets. We used a 12 \u00d7 12 grid (neurons) to perform space approximation of all reactive trajectories. The SOM was trained for 50 epochs on the data with Neupy (http://neupy.com/pages/home.html). We set the learning radius as one and standard deviation 1. These neurons divide the data into 144 micro-clusters (${\u03c8}$). With the single-cell trajectory data, we counted the transition probabilities from cluster i to cluster j (including self), with $\\sumjp_{ij}=1$. If the transition probability is smaller than 0.01, the value is then reset as 0. With the transition probability matrix, we built a directed network of these 144 neurons (Figure 3\u2014figure supplement 1). The distance (weight) of the edge between neuron $\u03c8_{i}$ and neuron $\u03c8_{j}$ is defined as the negative logarithm of transition probability ($\u2212logp_{ij}$). We set the neurons that close to the center of epithelial and mesenchymal state (sphere with radius = 0.7) as epithelial community and mesenchymal community, respectively, and used Dijkstra algorithm to find the shortest path between each pair of epithelial and mesenchymal neurons (Dijkstra, 1959) with NetworkX (Hagberg et al., 2008). We recorded the frequency of neurons and edge between these neurons that were past by these shortest paths.\n\n### Calculation of density of reactive trajectories\n\nThe density of reactive trajectory on the plane of morphology PC1 and vimentin Haralick PC1 was calculated with the following procedure:\n\n### Procedure for determining a reaction coordinate\n\nWe followed a procedure adapted from what used in the finite temperature string method for numerical searching of reaction coordinate and non-equilibrium umbrella sampling (Vanden-Eijnden and Venturoli, 2009; Dickson et al., 2009), with a major difference that we used experimentally measured single-cell trajectories (Figure 4\u2014figure supplement 1).\n\n### Calculation of dynamics of morphology and Haralick features along reaction path\n\nThe reaction path is calculated in the principal component (PC) space of morphology PC1, vimentin Haralick PC1, PC3, and PC4. Distribution of cells show significant shift before and after TGF-\u03b2 treatment in these dimensions (Wang et al., 2020). To reconstruct dynamics in the original features space from PCs, the reaction path\u2019s coordinates on the other dimensions of PC are set as means of data in the corresponding Voronoi cell of each point on the reaction path. We obtain the reaction path in full dimension of PC space. The dynamics of morphology and Haralick features are calculated by inverse-transform of coordinates of PCs.\n\n### Markov property test\n\nWe examined the Markov property of the RC trajectories with Chapman-Kolmogorov Test (CK-test) (Figure 5\u2014figure supplement 1). The CK-test compares the left and right sides of Chapman-Kolmogorov equation ($P(k\\tau)=p^{k}(\\tau)$). The $k$-step transition matrix should equal to the $k_{th}$ power of 1-step transition matrix if the process is Markovian. We estimated the transition matrix with PyEMMA (Scherer et al., 2015).\n\n### Reconstruction of quasi-potential along the reaction coordinate\n\nBased on the theoretical framework in Figure 5c, we followed the procedure below:\n\n### Reconstruction of quasi-potential along parallel paths\n\nWe followed the same mapping procedure for trajectories of cells treated with different TGF-\u03b2 concentration. We used tslearn to calculate the DTW distance between two reactive trajectories, then performed K-Means clustering (Sammut and Webb, 2017) on the DTW distance matrix (Sakoe and Chiba, 1978) to cluster the reactive trajectories into two groups. We then followed the procedure in Materials and methods (McFaline-Figueroa et al., 2019) to reconstruct the RC for each group. We reconstructed the quasi-potentials using all trajectories.\n\nFor a single-cell trajectory, it is possible that the cell jumps out its original path due to fluctuation. For example, for a trajectory that mainly follows RC1, certain parts of it may transit into the range of RC2. So we used a part-aligning method to map all the trajectories to the RCs.\n\nFor a trajectory not belonging to the reactive trajectory ensemble, we assigned it to one of the two group associated to the two RCs, ${s_{1}}={s_{1,1},...,s_{1,i},...s_{1,N}}$ and ${s_{2}}={s_{2,1},...,s_{2,i},...s_{2,N}}$ by using sub-sequence DTW distance (Sammut and Webb, 2017). We first calculate the sub-sequence DTW distance of this trajectory to the Voronoi cells of ${S_{1}}$ and ${S_{2}}$, respectively, and identified its matching coordinates ${s_{1,a},...,s_{1,i},...,s_{1,b}}$, and ${s_{2,c},...,s_{2,i},...s_{2,d}}$ on the RCs. Each point on the trajectory was assigned to the RCs based on minimum Euclidean distance. Then the consecutive parts of this trajectory along each RC were used to calculate the drift speed $\u27e8ds/dt\u27e9$ and quasi-potential $\u03d5(s)$ following the definition and procedure described in Materials and methods (McFaline-Figueroa et al., 2019).\n\n### Numerical solution of the Fokker-Planck equation\n\nThe Langevin equation, $ds/dt=F(s)+\u03b7(s,t)$, describes how one cell evolves along a reaction coordinate s in the state space. Equivalently under the Ito interpretation the Fokker-Planck equation describes on the probability density of observing cells at a specific point s, $\u03c1(s,t)$ changes over time (Kubo et al., 1991; Schnoerr et al., 2017),\n\n$$\n\u2202_{t}\u03c1(s,t|s_{0},t_{0})=\u2207\u22c5[D(\u2207\u2212\\frac{F(s)}{k_{B}T})\u03c1(s,t|s_{0},t_{0})].\n$$\n\nIn the equation, the spatially dependent diffusion constant D was estimate from the experiment data, $D_{s_{i}}=Var(\\frac{ds}{dt}|_{s}_{_{i}})$, the variance of $\\frac{ds}{dt}|_{s}_{_{i}}$ calculated from experiment data in corresponding Voronoi cells. The term $F(s)=\u2212\\nablaU$, where $U$ is the quasi-potential obtained from experiment data, the pseudo-temperature T was set as $\\frac{1}{2k_{B}}$ , where $k_{B}$ is the Boltzmann constant. With these inputs, we solved the equations numerically (Holubec et al., 2019).\n\n### Data availability\n\nThe scripts and single-cell trajectory data can be found in the link https://github.com/opnumten/trajectory_analysis (Wang, 2022 copy archived at swh:1:rev:1153076f88acab6f1030eefa119f4e6bd49cbb97).\n",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "ee00d143-928e-41d1-8930-e4d11a89975d",
+      "submission_id": "69854e1d-fc74-4a1e-961d-2013bb89cebd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenying Shou, https://ror.org/02jx3x895 University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74866.sa0](https://doi.org/10.7554/eLife.74866.sa0)\n\nThis is a multifaceted study of the epithelial to mesenchymal transition (EMT) in live cells. EMT is relevant for cancer, development, and wound healing. The authors were able to discern two possible cell transition path categories without multi-color labeling or other advanced experimental approaches, which could be impactful for other studies. The study draws on a wide range of experimental, data science, and modelling tools and techniques.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Wenying Shou, https://ror.org/02jx3x895 University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74866.sa1](https://doi.org/10.7554/eLife.74866.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Epithelial-to-mesenchymal transition proceeds through directional destabilization of multidimensional attractor\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Gabor Balazsi (Reviewer #1); Michael Stumpf (Reviewer #2); Jian Liu (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nOverall, all three reviewers are positive about your work. However, there are items that need to be addressed, which are summarised below. Note that the three reviews are attached in their entirety to assist your revision.\n\nEssential points to be addressed:\n\n1. How the existence of multiple reaction paths is or is not robust to e.g. multiplicative noise and other factors in the analysis.\n\n2. What is the method's applicability to other cell lines, proteins, and cellular transitions.\n\n3. Whether a simpler analysis would have given the same results.\n\n4. Clearly state what the advance this paper has over the previous Science Advance paper (Ref. 11).\n\n5. Improve clarity of your writing, including tidying up typos and references, explaining to biology audience the difference between Langevin and Fokker-Planck equations, providing justification of using Langevin, discussing how this system's transition is different from the typical analysis, explaining the plethora of computational methods deployed, and providing better illustration of morphological and textural features.\n\nReviewer #1 (Recommendations for the authors):\n\n(1) In the Introduction, the definition of the saddle-node bifurcation is unusual. Specifically, the saddle-node bifurcation is described here as both the appearance of a saddle point and a new steady state, and then the merger of the saddle point with the original steady state. Typically, however, these are considered two different saddle-node bifurcations. In fact, there are systems exhibiting a single saddle-node bifurcation, when the saddle point never merges with the original steady state, so the system remains bistable even as the bifurcation parameter tends to infinity. See the wild-type circuit in PMID: 31754027 for an example.\n\n(2) The way the system's transition is induced here is different from the way typical bifurcations are realized mathematically. Specifically, in mathematics the system's steady states are investigated while a bifurcation parameter is scanned \u2013 but each particular value of the bifurcation parameter is considered fixed. In contrast, in this experimental system the bifurcation parameter is time-dependent: intracellular TGF-\u03b2 concentrations change as they equilibrate with the extracellular TGF-\u03b2 levels. This difference should be mentioned and discussed, regarding the influx rate of TGF-\u03b2 and membrane permeability. About how long does it take for intracellular and extracellular TGF-\u03b2 to equilibrate?\n\n(3) Related to the previous point, an experiment closer to the mathematical studies would keep cells in microfluidic chambers, perfusing media with constant TGF-\u03b2 concentration that does not depend on time but may increase from chamber to chamber. This should be mentioned as a possibility for future studies.\n\n(4) The analysis involves a plethora of computational and mathematical methods: PCA, active shape model, Haralick features, SOM, Dijkstra algorithm, Onsager-Machlup action, dynamics time warping, Focker-Planck equation, pseudopotential, Voronoi partitioning, finite temperature string method, etc. While all of this is impressive, there is a concern. Some parts of the text are difficult to follow, and the overall procedure is not easy to comprehend. To make this approach really useful to the EMT community, a knowledgeable biologist should be able to comprehend and reproduce the results. So, is it possible to get to the same conclusion with fewer and/or simpler computational steps? Are all the steps employed here necessary to uncover the two cell transition path categories? Moreover, how transferable is the methodology to other cell lines, other CPTs and other proteins? A highly sophisticated, multistep approach is probably less likely to transfer and generalize than a simpler one. All of this should be at least discussed, and possibly addressed by an attempt to simplify the steps, accordingly simplifying the text of the manuscript by reducing some of the jargon.\n\n(5) Most of the methods are introduced and similar conclusions about the CPT paths are reached in the earlier Science Advances paper (Ref. 11.) using the same cell line, the same markers, and the same CPT. The authors should clearly state what is distinguishingly novel in this manuscript compared to their earlier publication.\n\n(6) A more intuitive illustration of the morphology and texture features is needed. What cellular aspects do the main Principal Components contain? Are any morphology and texture aspects overrepresented in the first PCs? For example, it would be very helpful to illustrate the morphology and texture extracted, along with their computational analysis to obtain the numbers for a few cells: (i) in the E state; (ii) in the M state; (iii) in mid-transition with vimentin increases first; (iv) in mid-transition with concordant increase. This could be addressed by altering the current Figure 4, similar to Figures 3 and 4 in the Science Advances paper (Ref. 11.).\n\n(7) The Langevin approach assumes uncorrelated Gaussian noise. However, most fluctuations of cellular molecules are neither Gaussian, nor uncorrelated. Moreover, the noise properties can depend on the deterministic components of the Langevin approach: F, x and t. What justifies the applicability of the approach? This should be discussed.\n\n(8) For the 1 ng/mL TGF-\u03b2 treatment, what would the actual reaction path look like (compared to the 4 ng/mL treatment)? Here the new trajectories are projected onto the RCs for the 4 ng/mL treatment \"for comparison\". What does this projection imply compared to a separate analysis of the 1 ng/mL treatment? What if the reverse is done: the trajectories of the 4 ng/mL treatment are projected onto the RCs of the 1 ng/mL treatment?\n\n(9) Related to the above question, it is interesting that the new M attractor for 1 ng/mL treatment is closer to the E state. Does this mean that the attractor-based definition of the \"M\" state is stimulus-dependent? So how can we be sure there is an \"E\" and an \"M\" state if their definition changes according to the environment? Shouldn't these states be independent of the environment?\n\n(10) It is interesting that some cells become mesenchymal in low TGF-\u03b2, and possibly even without TGF-\u03b2. Do any of these cells revert? It is understood that high TGF-\u03b2 prevents reversion, but the plateau in Figure 5 implies that reversions may be possible at low or zero TGF-\u03b2.\n\n(11) Are there any \"early signs\" of cells that will become mesenchymal? Could this be predicted based on the values, or fluctuations of numerical features or their correlation analysis?\n\n(12) This manuscript is about environment-induced CPTs. On the other hand, CPTs can also occur stochastically in a constant environment. This distinction would be worth making to place the research in context, citing PMID:21414483.\n\n(13) A reference is needed for TPT in line 151 and also for the Onsager-Machlup action in line 200.\n\n(14) The phrase \"round polygon\" probably means convex polygon?\n\n(15) CPT appears in the Abstract without a prior definition.\n\n(16) References (16) and (17) are identical.\n\n(17) Please watch the grammar! There are some missing or extra words, e.g., \"instant OF time\", \"towards TO\", etc.\n\nReviewer #2 (Recommendations for the authors):\n\nSpecific points:\n\nFigure 1: The figure legend could be made clearer. The figure might give the impression that the data is sufficient to distinguish between saddle node and pitchfork bifurcation.\n\nline 135: I would like to see an outline of what Haralick features are.\n\nline 199-200: It would help to define in general terms what an action is.\n\nline 203: reference 22 has nothing to do with reaction coordinates as far as I can make out. Did the bibliography get mixed up here?\n\nline 262: in 1D all dynamical systems are gradient systems. References 28 and 29 are not the most appropriate references in this context. Most introductory dynamical systems books would suffice.\n\nline 283-284: It may help some readers to learn more about the differences between Langevin and Fokker-Planck equations. Schnoerr et al., Journal of Physics A (2017) 50:093001 is a reference that I find very useful.\n\nline 287: Is it possible to do better than \"matches reasonably well\"? Are there statistical measures by which this can be quantified? Or is it possible to explain why there is a mismatch.\n\nline 319-323: I found the discussion about the intermediate states fascinating: I was wondering if this could be extended to include some of the arguments of PMC6238957 or similar? More generally, mathematically, for the systems considered here (in a deterministic regime) the Palais-Smale conditions or the mountain pass theorem would hold. MacLean et al., make such arguments less formally and more intuitive.\n\nFinally, most other previous authors appear to have used the term quasi-potential to denote landscapes of differentiating systems. In solid-state theory and chemistry pseudo-potential appears to be favoured to describe e.g. effective electron potentials. I would recommend the terminology \"quasi-potential\" here.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The writing needs to be greatly improved. While some parts are arguably a subject of style/taste, the rest of the manuscript is littered with grammar mistakes. For instance, the \"CPT\" in Abstract needs to be defined first. On Lines 37-38: \"different function, morphology, \u2026\" should be \"different functions, morphologies\u2026\". On Line 48-49: \"A cell is a dynamical system, and understanding a CPT process from dynamical systems theory \u2026\" should be something like \"Considering cell as a dynamical system, understanding a CPT process from dynamical systems theory\u2026\".\n\n2. Any results from deep learning critically hinge on the quality of the training set; otherwise, the automation can easily go wrong. In automatically characterizing the live-cell time-lapsed images, the authors need to provide the necessary baseline or the control in their deep learning method. If it is already done in their previous work, then the authors need to explicitly state and refer to it in the current paper. If not, then such a control measure in deep learning needs to be included in the Method.\n\n3. Using time-lapsed images to reconstruct pseudopotential is a great improvement over the previous work. The question: How does the number of images points or the time-resolution along the reaction coordinate affect the reconstructed potential? The authors need to at least discuss the potential effects.\n\n4. With the high-dimensional parameter space, the authors reconstructed the common transition paths of EMT. It is well known that cells exhibit large heterogeneity in terms of gene expression and dynamics. The question is: How can we reconcile the two opposing features?\n\n5. The authors demonstrated the two parallel pathways in EMT with the same starting and ending states (e.g., Figure 3e). While the reaction coordinates of transition state along one pathway (vimentin PC1 and morphology PC1) are intermediate between the E and the M states (the right panel of Figure 3e), those along the other pathway are not (the left panel of Figure 3e). What is the physical nature of this largely non-monotonic change? And if possible, what is the functional role? In perspective, cell operates in the multi-dimensional parameter space. What the authors have characterized is only the subset. Possibly, there exist additional but essential parameters that remain to be explored. This way, the non-monotonic change in the reaction coordinates may reflect the projection from a higher dimensional space onto the two-dimensional parameter plane. For instance, cell mechanics may be another set of key parameters that underlie EMT, which has been demonstrated to display non-monotonic changes during EMT (see Margaron et al., Biophysical properties of intermediate states of EMT outperform both epithelial and mesenchymal states (bioRxiv, 2019)). I'd suggest the authors discuss the finding in a broader context.\n",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d84a0d08-3d31-4188-adf1-699a5beeb2e2",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C1",
+      "claim": "A stable cell phenotype corresponds to a stable attractor in a generally multi-dimensional state space.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematically, a stable phenotype corresponds to a stable attractor in a generally multi-dimensional state space, which needs to be destabilized so the cell relaxes to a new attractor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical framework statement presented in the abstract as the basis for the study's approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "42f33b97-b0d3-42cd-b73f-1458e715d51e",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C2",
+      "claim": "Pitchfork and saddle-node bifurcations are two basic mechanisms for destabilizing a stable fixed point.",
+      "claim_type": "EXPLICIT",
+      "source": "Two basic mechanisms for destabilizing a stable fixed point, pitchfork and saddle-node bifurcations, have been extensively studied theoretically",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established theoretical knowledge in dynamical systems theory.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "7f5c7b2d-5165-41bc-a4e5-fa35d63ed3af",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C3",
+      "claim": "Direct experimental investigation of bifurcation mechanisms at the single-cell level remains scarce.",
+      "claim_type": "EXPLICIT",
+      "source": "however, direct experimental investigation at the single-cell level remains scarce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field, presented as motivation for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "27fe233a-70c2-46d3-83b3-bce2f637e3e6",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C4",
+      "claim": "EMT is a cell phenotypic transition process central to development and pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "While some mechanistic details remain controversial, EMT is a cell phenotypic transition (CPT) process central to development and pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about EMT cited as background.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "244d802e-c460-4a12-9721-7d16b8309ab7",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C5",
+      "claim": "Single cell trajectories of A549/Vim-RFP cells undergoing TGF-\u03b2 induced EMT were recorded through time-lapse imaging in a multi-dimensional cell feature space.",
+      "claim_type": "EXPLICIT",
+      "source": "Through time-lapse imaging we recorded single cell trajectories of human A549/Vim-RFP cells undergoing EMT induced by different concentrations of exogenous TGF-\u03b2 in a multi-dimensional cell feature space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology and data collection performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "152b51b4-e285-4204-834c-4a14fbc379ea",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C6",
+      "claim": "The trajectories clustered into two distinct groups, indicating that the transition dynamics proceeds through parallel paths.",
+      "claim_type": "EXPLICIT",
+      "source": "The trajectories clustered into two distinct groups, indicating that the transition dynamics proceeds through parallel paths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "79f01e48-5c92-4859-a84d-dbafbea570a3",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C7",
+      "claim": "The original stable epithelial attractor collides with two saddle points sequentially with increased TGF-\u03b2 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The potentials revealed a plausible mechanism for the emergence of the two paths where the original stable epithelial attractor collides with two saddle points sequentially with increased TGF-\u03b2 concentration, and relaxes to a new one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reconstructed quasi-potentials at different TGF-\u03b2 concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "cbb43cff-6a24-42b3-8262-d93ab20e78ea",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C8",
+      "claim": "Directional saddle-node bifurcation ensures a CPT proceeds towards a specific cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, the directional saddle-node bifurcation ensures a CPT proceeds towards a specific cell type, as a mechanistic realization of the canalization idea proposed by Waddington.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional significance of the observed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "d22adfef-385a-4561-b8ee-7b79503d7b19",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C9",
+      "claim": "Cells of multicellular organisms can undergo distinct changes when subjected to specific stimuli and microenvironments.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells of multicellular organisms assume different phenotypes that can have drastically different functions, morphologies, and gene expression patterns, and can undergo distinct changes when subjected to specific stimuli and microenvironments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge presented as background.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "69de1a3c-707b-4ff2-ada5-845ac6df8b85",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C10",
+      "claim": "Recent advances in single-cell techniques have accelerated efforts on unraveling the mechanisms of CPTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in single-cell techniques have further accelerated the long-term efforts on unraveling the mechanisms of CPTs, for understanding processes such as differentiation and reprogramming in developmental and cell biology, and for potential biomedical implications of modulating cell phenotypes in regenerative medicine and diseases such as cancer and chronic diseases (Wagner and Klein, 2020; Weinreb et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "6b1cc695-6658-48d2-96c7-43982af7865f",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C11",
+      "claim": "A stable cell phenotype is an attractor in a high-dimensional cell state space formed by state variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematically, at any time a cell state can be specified by a set of state variables, such as gene expression levels, or other collective cell feature variables. A stable cell phenotype is an attractor in a high-dimensional cell state space formed by the state variables (Huang et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical framework statement supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "74c7581c-6c84-4f27-9a0b-69330694af56",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C12",
+      "claim": "A CPT is a transition between different attractors.",
+      "claim_type": "EXPLICIT",
+      "source": "A stable cell phenotype is an attractor in a high-dimensional cell state space formed by the state variables (Huang et al., 2005), and a CPT is a transition between different attractors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical definition supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "a5f3af1d-e24b-49a2-8fc1-602c67136fe2",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C13",
+      "claim": "Waddington made an analogy comparing developmental processes to a ball sliding down a potential landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Waddington famously made an analogy comparing developmental processes to a ball sliding down a potential landscape, and diverging into multiple paths at some bifurcation points (Rand et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical reference to Waddington's work, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "cd0743e6-40ae-45de-a76b-caf2ceb4419c",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C14",
+      "claim": "In a pitchfork bifurcation, an original stable attractor turns to an unstable saddle point together with the emergence of two new attractors.",
+      "claim_type": "EXPLICIT",
+      "source": "This picture exemplifies a pitchfork bifurcation, where an original stable attractor turns to an unstable saddle point together with the emergence of two new attractors (Figure 1b top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical description illustrated in Figure 1b.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "efadf1ed-85cf-4a9a-8e12-706c086b0352",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C15",
+      "claim": "In saddle-node bifurcation, a new fixed point emerges, splits into a saddle point and attractor, then the saddle point collides with the old attractor to destabilize it.",
+      "claim_type": "EXPLICIT",
+      "source": "Another well-discussed mechanism for attractor-to-attractor transition is through a series of saddle-node bifurcations, where first a new fixed point emerges, splits into a saddle point and attractor, then the saddle point separating the two attractors moves toward and eventually collides with the old attractor to destabilize the latter (Figure 1b bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical description illustrated in Figure 1b.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "4e952369-5504-482a-a9cf-4e4f1a8b9612",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C16",
+      "claim": "After a pitchfork bifurcation the original state can relax to multiple new stable states.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable difference between the two types of bifurcations is that after a pitchfork bifurcation the original state can relax to multiple new stable states, while the saddle-node bifurcation the system is directed to relax to one attractor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical distinction between bifurcation types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "baf6d6f0-8f2b-41f6-8c99-7188ca277ba4",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C17",
+      "claim": "In saddle-node bifurcation the system is directed to relax to one attractor.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable difference between the two types of bifurcations is that after a pitchfork bifurcation the original state can relax to multiple new stable states, while the saddle-node bifurcation the system is directed to relax to one attractor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical distinction between bifurcation types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "35d2f5ea-7618-498e-ab71-4f5050a08243",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C18",
+      "claim": "Pitchfork and saddle-node bifurcation have been discussed in the context of CPTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Pitchfork and saddle-node bifurcation are two important theoretical mechanisms of critical state transition and have been discussed in the context of CPTs (Mojtahedi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "ae0e093e-de3c-486e-81ad-3d8816c6dd06",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C19",
+      "claim": "Analyzing snapshot single-cell genomics data cannot provide temporal information on how individual cells transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have suggested that analyzing snapshot single-cell genomics data (Mojtahedi et al., 2016; Chen et al., 2012), fixed cell data, to understand critical state transitions cannot provide temporal information on how individual cells transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of snapshot data cited from previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "e32f3472-3df7-4c24-9063-85b79d3b0c4a",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C20",
+      "claim": "Information from fluorescence-based live cell imaging is typically restricted to a small number of molecular species.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, information from fluorescence-based live cell imaging is typically restricted to a small number of molecular species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of live cell imaging technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "089bc298-5316-46c1-852d-0d498dfbc5b8",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C21",
+      "claim": "Tracking a small number of molecular species through live cell imaging cannot provide the collective transition dynamics due to the intrinsic high-dimensional nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, tracking a small number of molecular species through live cell imaging cannot provide the collective transition dynamics due to the intrinsic high-dimensional nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of tracking few molecular species.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "b06a790c-b94a-430d-b915-dd101feb0d8f",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C22",
+      "claim": "Theoretical studies suggest that EMT proceeds as a saddle-node bifurcation.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically in the context of EMT, theoretical studies suggest that EMT proceeds as a saddle-node bifurcation (Tian et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "2d599d5d-ef30-4fd7-907e-be458d1db851",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C23",
+      "claim": "There is no direct experimental study on the single-cell transition dynamics of EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "however, there is no direct experimental study on the single-cell transition dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "33492cd9-3dc6-4ba4-82f9-c4eaf48b0673",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C24",
+      "claim": "Several open questions and challenges exist on understanding the mechanisms of the EMT process.",
+      "claim_type": "EXPLICIT",
+      "source": "As recognized in a consensus statement from researchers in the EMT field, several open questions and challenges exist on understanding the mechanisms of the EMT process (Yang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a consensus statement citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "c985f920-45ba-4f04-bb36-8c996a5bc306",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C25",
+      "claim": "It is unclear whether EMT proceeds as hopping among a small number of discrete and distinct intermediate states, or a continuum of such states with no clear boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is unclear whether the process proceeds as hopping among a small number of discrete and distinct intermediate states, or a continuum of such states with no clear boundary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an open question in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "485cd5f4-1f23-4d6b-a377-f38f959c21aa",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C26",
+      "claim": "The EMT transition may proceed either along a linear array of states or through multiple parallel paths.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition may proceed either along a linear array of states or through multiple parallel paths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an open question about EMT dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "71330e01-6481-4769-ac40-5e1c3f99cf97",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C27",
+      "claim": "Pseudo-time analyses of high throughput single cell genomics studies infer that EMT proceeds through a 1-D continuum path.",
+      "claim_type": "EXPLICIT",
+      "source": "Pseudo-time analyses of high throughput single cell genomics studies infer that EMT proceeds through a 1-D continuum path (McFaline-Figueroa et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from cited genomics studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "172d3374-e967-43aa-897d-1700de254317",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C28",
+      "claim": "The 1-D continuum path finding is consistent with a prevalent EMT axis concept with the epithelial and the mesenchymal states as the two end states.",
+      "claim_type": "EXPLICIT",
+      "source": "Pseudo-time analyses of high throughput single cell genomics studies infer that EMT proceeds through a 1-D continuum path (McFaline-Figueroa et al., 2019), consistent with a prevalent EMT axis concept with the epithelial and the mesenchymal states as the two end states (Nieto et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects cited findings to a conceptual framework.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "17b1c9cf-908d-4876-9b66-a2e50a61dffe",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C29",
+      "claim": "Predictions from snapshot single-cell data require direct testing by tracking single cells over time.",
+      "claim_type": "EXPLICIT",
+      "source": "These predictions, which are indirectly inferred from snapshot single-cell data, require direct testing by tracking single cells over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the need for validation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "04e2ed5b-5113-42ca-83b3-259eafc0b971",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C30",
+      "claim": "Live cell imaging studies of EMT are impeded because EMT status cannot be assessed based on only a small number of molecular markers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, live cell imaging studies are impeded because EMT status cannot be assessed based on only a small number of molecular markers such as key transcriptional factors (Yang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a challenge in the field supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "ea7d7958-a48c-4193-b4ac-4d8b79a71d37",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C31",
+      "claim": "A platform was developed for tracking cell state change in a composite cell feature space accessible for multiplex and long-term live cell imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "To address the above challenge when studying EMT dynamics, recently we developed a platform of tracking cell state change in a composite cell feature space that is accessible for multiplex and long-term live cell imaging (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological development from previous work by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "a3fc482a-a5c6-41c4-a4be-4c20c881766a",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C32",
+      "claim": "The platform was applied to study EMT in A549/Vim-RFP cells induced by different concentrations of TGF-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we first apply the platform to study EMT in a human A549 derivative cell line with endogenous vimentin-RFP labeling (ATCC CCL-185EMT, denoted as A549/Vim-RFP in later discussions) induced by different concentrations of TGF-\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental application in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "d386973c-e90f-492f-8cb6-7a3fc91cfd00",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C33",
+      "claim": "An ensemble of recorded multi-dimensional single-cell trajectories was analyzed within the framework of reaction rate theories.",
+      "claim_type": "EXPLICIT",
+      "source": "Then we analyze an ensemble of recorded multi-dimensional single-cell trajectories within the framework of reaction rate theories that have been a focused subject in the context of physics and chemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "e27adadb-d450-4cdd-a7e4-99cadcb3c883",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C34",
+      "claim": "A cell state can be represented by a point in a multi-dimensional space defined by gene expression or other cell properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematically, one can represent a cell state by a point in a multi-dimensional space defined by gene expression (Ye and Sarkar, 2018) or other cell properties (Gordonov et al., 2016; Chang and Marshall, 2019; Kimmel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical representation approach supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "67d6dd94-aad6-4e78-bd94-41a5498b0c9b",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C35",
+      "claim": "Cells have phenotype-specific morphological features that can be monitored with transmission light microscopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Noticing that cells have phenotype-specific morphological features that can be monitored even with transmission light microscopes, recently we developed a framework that defines cell states in a combined morphology and texture feature space (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation that motivated the methodological development.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "57ad711e-81bf-4151-acd1-15fd3e616392",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C36",
+      "claim": "A framework was developed that defines cell states in a combined morphology and texture feature space.",
+      "claim_type": "EXPLICIT",
+      "source": "recently we developed a framework that defines cell states in a combined morphology and texture feature space (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological development from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "d8d74853-93e6-4a84-9b91-b4ea9394a067",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C37",
+      "claim": "The framework allows tracing individual cell trajectories during a CPT process through live-cell imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The framework allows one to trace individual cell trajectories during a CPT process through live-cell imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capability of the developed framework.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "b1155a16-229d-4b2a-ba12-58da2e74488b",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C38",
+      "claim": "Vimentin is a type of intermediate filament protein commonly used as a mesenchymal marker.",
+      "claim_type": "EXPLICIT",
+      "source": "Vimentin is a type of intermediate filament protein commonly used as a mesenchymal marker, and changes its expression and spatial distribution during EMT (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vimentin supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "f483760b-1d5f-4b95-aa86-41eabdee6de1",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C39",
+      "claim": "Vimentin changes its expression and spatial distribution during EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Vimentin is a type of intermediate filament protein commonly used as a mesenchymal marker, and changes its expression and spatial distribution during EMT (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known characteristic of vimentin during EMT, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "c492f54a-27e2-4f50-b7a3-143754db678e",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C40",
+      "claim": "During EMT cells undergo dramatic change of cell morphology accompanying gene expression change.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, during EMT cells undergo dramatic change of cell morphology accompanying gene expression change (Figure 1a; Zhang et al., 2014; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "a9ea2016-efec-4619-a24d-6c7f9bf556c5",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C41",
+      "claim": "A combination of vimentin texture and cell shape features was used to specify a cell state.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we used a combination of vimentin texture and cell shape features to specify a cell state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological choice in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "a6d149c7-b2da-4348-869f-47b1e2a305dd",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C42",
+      "claim": "Time-lapse imaging of A549/Vim-RFP cells was performed with 4 ng/ml TGF-\u03b2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We first performed time-lapse imaging of the EMT process of A549/Vim-RFP induced with 4 ng/ml TGF-\u03b2 (Figure 2a, Materials and methods Wagner and Klein, 2020; Weinreb et al., 2020)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "2d910a68-9564-448d-8e5a-36540a177953",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C43",
+      "claim": "Single-cell segmentation and tracking was performed on the acquired images.",
+      "claim_type": "EXPLICIT",
+      "source": "then performed single-cell segmentation and tracking on the acquired images (Figure 2b, Materials and methods Huang et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the image analysis procedure shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "5ca941f0-f778-46e0-af87-7c415d64e320",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C44",
+      "claim": "Cell body shape was quantified with 296 degrees of freedom using an active shape model.",
+      "claim_type": "EXPLICIT",
+      "source": "which include cell body shape of 296 degrees of freedom (DoF) quantified by an active shape model (Cootes et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quantification method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "e5e71335-b4d6-4845-8fd5-a1960853b109",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C45",
+      "claim": "Texture features of cellular vimentin distribution were quantified by 13 Haralick features.",
+      "claim_type": "EXPLICIT",
+      "source": "and texture features of cellular vimentin distribution quantified by 13 Haralick features (Haralick, 1979; Figure 2c, Materials and methods Huang et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the quantification method with citation and reference to Figure 2c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "2334c1ca-e978-4090-be57-1a36592e02ed",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C46",
+      "claim": "The state of a cell at a given instant is represented as a point in a 309-dimensional composite morphology/texture feature space.",
+      "claim_type": "EXPLICIT",
+      "source": "Then the state of a cell at a given instant is represented as a point in the 309-dimensional composite morphology/texture feature space (Figure 2d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mathematical representation used, shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "93165782-0abf-48f0-912d-1861eeb875d5",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C47",
+      "claim": "The temporal evolution of the cell state forms a continuous trajectory in the feature space.",
+      "claim_type": "EXPLICIT",
+      "source": "and the temporal evolution of the state forms a continuous trajectory in the space subject to further theoretical analyses (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes how cell dynamics are represented, shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "e59d5a2b-5334-4c32-99d4-a1b72050ef95",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C48",
+      "claim": "Before TGF-\u03b2 treatment, a population of cells assume a localized stationary distribution in the 309-dimensional composite space, and most cells are epithelial.",
+      "claim_type": "EXPLICIT",
+      "source": "Before TGF-\u03b2 treatment, a population of cells assume a localized stationary distribution in this 309-dimensional composite space, and most cells are epithelial (Figure 3a, blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "563f87d3-d2bd-480e-a2af-77df9b44e14b",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C49",
+      "claim": "TGF-\u03b2 treatment destabilizes the cell distribution, and the cells relax into a new stationary distribution dominated by mesenchymal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TGF-\u03b2 treatment destabilizes such distribution, and the cells relax into a new stationary distribution dominated by mesenchymal cells (Figure 3a red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "d9700ba7-30b7-42d1-847b-62388d4d7c1a",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C50",
+      "claim": "204 continuous trajectories in the state space were recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded 204 continuous trajectories in the state space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "7f4b0308-da72-4db6-874c-cc103e33524f",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C51",
+      "claim": "A representative trajectory reveals how a cell transits from an epithelial cell with convex polygon shapes and localized intracellular vimentin distribution to the mesenchymal phenotype with elongated spear shapes and dispersive vimentin distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "A representative trajectory shown in Figure 2e (right) (also in Video 1) reveals how a cell transits step-by-step from an epithelial cell with convex polygon shapes and a localized intracellular vimentin distribution, to the mesenchymal phenotype with elongated spear shapes and a dispersive vimentin distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes observations from a representative trajectory shown in Figure 2e and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "6d8e310a-2de2-4d3b-b603-20458cdba757",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C52",
+      "claim": "Rate theory studies how a system escapes from a metastable state, or relaxation from one stationary distribution to a new one.",
+      "claim_type": "EXPLICIT",
+      "source": "Rate theory studies how a system escapes from a metastable state, or relaxation from one stationary distribution to a new one (H\u00e4nggi et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of rate theory supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "427cea58-a0e2-43c5-a9e2-ff495b72d79f",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C53",
+      "claim": "Transition path theory (TPT) is a modern development in rate theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, transition path theory (TPT) is a modern development in the field (Weinan et al., 2005; Rohrdanz et al., 2013; Bolhuis et al., 2002; Weinan and Vanden-Eijnden, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about TPT supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "e0f4dbe6-32e8-4b6d-86b7-8e9cd9671bd6",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C54",
+      "claim": "Within the TPT framework, the state space is divided into regions containing the initial (A) and final (B) attractors, and an intermediate (I) region.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the TPT framework, one divides the state space into regions containing the initial (A) and final (B) attractors, and an intermediate (I) region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the TPT framework approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "a1036153-b505-45e5-8148-61d00ca12cbc",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C55",
+      "claim": "A reactive trajectory is one that originates from region A, and enters region I then B before re-entering region A.",
+      "claim_type": "EXPLICIT",
+      "source": "A reactive trajectory is one that originates from region A, and enters region I then B before re-entering region A (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a definition from TPT illustrated in Figure 3b.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "a4dbfd0e-4e6e-4f3c-92e9-ef806a26a91e",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C56",
+      "claim": "The four-dimensional principal component subspace was divided into epithelial (E), intermediate (I), and mesenchymal (M) regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we divided the four-dimensional principal component subspace into epithelial (E), intermediate (I), and mesenchymal (M) regions (Figure 2e left) (Wang et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodological approach shown in Figure 2e.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "b7a6675c-9d96-416f-9eca-f61704c92616",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C57",
+      "claim": "135 recorded single-cell trajectories form an ensemble of reactive trajectories that connect E and M by day 2.",
+      "claim_type": "EXPLICIT",
+      "source": "With this division of space, we identified a subgroup of 135 recorded single-cell trajectories that form an ensemble of reactive trajectories that connect E and M by day 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the trajectory analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "4a42da4f-a215-47a1-916f-1f0bbce500ad",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C58",
+      "claim": "Self-organizing map (SOM) was used to examine whether EMT proceeds through one or multiple types of paths.",
+      "claim_type": "EXPLICIT",
+      "source": "We first examined whether EMT proceeds through one or multiple types of paths by analyzing the ensemble of reactive trajectories using self-organizing map (SOM) (Materials and methods Rand et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "218d97aa-0d0b-4264-b3d5-a531ea6a5dbc",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C59",
+      "claim": "SOM is an unsupervised artificial neural network that utilizes a neighborhood function to represent the topology structure of input data.",
+      "claim_type": "EXPLICIT",
+      "source": "SOM is an unsupervised artificial neural network that utilizes a neighborhood function to represent the topology structure of input data (Kohonen, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the SOM method supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "6a51da28-a573-4f58-b151-f93a7e746483",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C60",
+      "claim": "The SOM algorithm clusters the recorded cell states into 144 discrete states.",
+      "claim_type": "EXPLICIT",
+      "source": "The algorithm clusters the recorded cell states into 144 discrete states, and represents the EMT process as a Markovian transition process among these states (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the result of applying SOM, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "8f12fc67-9877-4ce1-a2b6-4802650a79f4",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C61",
+      "claim": "Shortest path analysis using the Dijkstra algorithm reveals two groups of paths: vimentin Haralick PC1 varies first, and concerted variation of morphology PC1 and vimentin Haralick PC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortest path analysis using the Dijkstra algorithm (Dijkstra, 1959) over the transition matrix reveals two groups of paths: vimentin Haralick PC1 varies first, and concerted variation of morphology PC1 and vimentin Haralick PC1, with finite probabilities of transition between the two groups (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the shortest path analysis shown in Figure 3c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "fdde52cb-4cca-4c34-964e-4d9f3e1721e7",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C62",
+      "claim": "The shortest path analysis result is consistent with previous trajectory clustering analysis using dynamics time warping (DTW) distance.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with our previous trajectory clustering analysis using dynamics time warping (DTW) distance between reactive trajectories (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current result with previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "660e5281-ceb9-4edb-b644-207e74139969",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C63",
+      "claim": "The contour map of density of reactive trajectories shows two peaks corresponding to the two groups of shortest paths.",
+      "claim_type": "EXPLICIT",
+      "source": "The contour map of \u03c1R shows two peaks corresponding to the two groups of shorted paths in the directed network (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the density analysis shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "0d18ed36-2b87-4571-860d-dff76ef431bb",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C64",
+      "claim": "The peak where vimentin Haralick PC1 varies first is higher than the peak of concerted variation, indicating more reactive trajectories along this path.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak where vimentin Haralick PC1 varies first is higher than the peak of concerted variation, indicating more reactive trajectories along this path.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the density data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "3b41f9f5-9d16-47b5-a573-c58cc301560a",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C65",
+      "claim": "The center of the reaction tube has been used to define a reaction coordinate (RC).",
+      "claim_type": "EXPLICIT",
+      "source": "The center of the tube has been used to define a reaction coordinate (RC), a concept central to rate theories (Figure 4a; Vanden-Eijnden and Venturoli, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a concept from rate theory supported by citation and illustrated in Figure 4a.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "8215cf6a-619b-4551-ae8c-e2644dbe29a0",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C66",
+      "claim": "A RC is a one-dimensional geometric parameter that describes the progression along a continuous reaction path defined in the state space.",
+      "claim_type": "EXPLICIT",
+      "source": "A RC is a one-dimensional geometric parameter (denoted as s in the subsequent discussions) that describes the progression along a continuous reaction path defined in the state space (Rohrdanz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of RC supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "4e46ead8-452b-4059-b594-36a794e1f6e6",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C67",
+      "claim": "A good choice of RC can provide mechanistic insight on how the transition process proceeds.",
+      "claim_type": "EXPLICIT",
+      "source": "A good choice of RC can provide mechanistic insight on how the transition process proceeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of RC in analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "1d2595be-0f21-4821-81e5-334fa4c8b267",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C68",
+      "claim": "A revised finite temperature string method was used to reconstruct the RC for each path with the recorded reactive trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we set to reconstruct the RC for each path with the recorded reactive trajectories using a revised finite temperature string method, which was originally designed for RC reconstruction for theoretical and computational modeling systems (Vanden-Eijnden and Venturoli, 2009; Allen et al., 2005; Dickson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used for RC reconstruction with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "98dd0c40-1778-45f2-846b-495c11148faf",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C69",
+      "claim": "The finite temperature string method approximates the RC by a set of discrete image points that are uniformly distributed along the arc length of the RC.",
+      "claim_type": "EXPLICIT",
+      "source": "The method first approximates the RC by a set of discrete image points that are uniformly distributed along the arc length of the RC, so the multi-dimensional state space can be divided by a 1-D array of Voronoi polyhedra containing individual images, and the data points can be assigned to individual Voronoi cells (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the string method approach illustrated in Figure 4a.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "b25129d6-1eb6-4f84-bffc-c8619e0cb05f",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C70",
+      "claim": "The iteration procedure was modified to minimize both the distance between the ensemble of measured reactive trajectories and the image point within each Voronoi cell, and the overall distance between each individual trajectory and the trial RC.",
+      "claim_type": "EXPLICIT",
+      "source": "Since here we have an ensemble of continuous trajectories, we modified the iteration procedure slightly. Specifically, we minimized both the distance between the ensemble of measured reactive trajectories and the image point within each individual Voronoi cell, as well as the overall distance between each individual trajectory and the trial RC (Materials and methods Chen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological modification made for this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "9c5b3b88-8ec4-46ae-80f1-83bbd3981bb0",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C71",
+      "claim": "The reactive trajectories were grouped based on the DTW distance, then the RCs for each group were identified separately.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we grouped the reactive trajectories based on the DTW distance, then identified the RCs for each group separately following the modified string method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical procedure used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "da4b1a18-4a1b-4ce2-8a05-86e4e15bfa55",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C73",
+      "claim": "The recorded trajectories fluctuate around the RCs and form reaction tubes as expected from the TPT theory.",
+      "claim_type": "EXPLICIT",
+      "source": "The recorded trajectories fluctuate around the RCs and form reaction tubes as expected from the TPT theory (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation that validates the TPT framework, shown in Figure 4c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "fe47d29a-65a0-47f3-83f2-8b7b5699b4e7",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C74",
+      "claim": "Along each RC, the cell shape changes dominantly through elongation and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Along each RC, the cell shape changes dominantly through elongation and growth (Figure 4d & e, left)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the RC analysis shown in Figures 4d and 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "0693f3cc-bc6d-45c4-a0cf-0476bd44370b",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C75",
+      "claim": "Most of the 13 vimentin Haralick features increase or decrease monotonically and continuously over time along each RC.",
+      "claim_type": "EXPLICIT",
+      "source": "and most of the 13 vimentin Haralick features increase or decrease monotonically and continuously over time (Figure 4d & e, right) (Materials and Methods Tian et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the RC analysis shown in Figures 4d and 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "8e5501ba-92b2-4c4e-92f9-f50b48eb41a3",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C76",
+      "claim": "The two RCs first diverge from the E region to follow two distinct paths, then converge within the M region.",
+      "claim_type": "EXPLICIT",
+      "source": "The two RCs first diverge from the E region to follow two distinct paths, then converge within the M region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the geometry of the two RCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "08b8c84c-ff8a-4e25-b240-d189bdb4fc5d",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C77",
+      "claim": "In one group, most of the Haralick feature changes take place before major morphology change.",
+      "claim_type": "EXPLICIT",
+      "source": "In one group (Figure 4d), most of the Haralick feature changes take place before major morphology change.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the RC analysis shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "7cc06940-2dcd-4021-b85a-ec89284f36ab",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C78",
+      "claim": "For the group with concerted dynamics, both cell shape and Haralick features vary gradually along the RC.",
+      "claim_type": "EXPLICIT",
+      "source": "For the group with concerted dynamics (Figure 4e), both cell shape and Haralick features vary gradually along the RC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the RC analysis shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "347df1b5-eadd-4490-8c65-c4fc1192f98b",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C81",
+      "claim": "For a 1-D system even without detailed balance one can define a quasi-scalar potential \u03d5.",
+      "claim_type": "EXPLICIT",
+      "source": "Notice that for a 1-D system even without detailed balance one can define a quasi-scalar potential \u03d5 (Xing, 2010; Xing and Kim, 2011; Risken, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "19628635-f6d4-49e1-9b6c-6399a8828ce7",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C82",
+      "claim": "The Chapman-Kolmogorov Test (CK-test) was performed to confirm that the ansatz of using a memory-less 1-D Langevin equation is a good approximation for the EMT dynamics along a RC.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that the ansatz of using a memory-less 1-D Langevin equation is a good approximation for the EMT dynamics along a RC, we performed the Chapman-Kolmogorov Test (CK-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a validation test performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "041a244d-5c7d-464c-ba6a-88f6863070b7",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C83",
+      "claim": "The CK-test shows that the one-step transition matrix can predict the dynamics on longer time scales, and thus the Markovian assumption is a good zeroth-order approximation of the EMT dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The test shows that the one-step transition matrix can indeed predict the dynamics on longer time scales, and thus the Markovian assumption is a good zeroth-order approximation of the EMT dynamics (Figure 5\u2014figure supplement 1, Materials and Methods Yang et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the CK-test shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "2ba0a1e4-7fa6-4f52-8ca4-2a023b1d9756",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C84",
+      "claim": "The quasi-potentials were reconstructed along the RCs with 1 ng/ml and 4 ng/ml TGF-\u03b2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we treated A549/Vim-RFP cells with 1 ng/ml TGF-\u03b2 and recorded 135 3-day long single-cell trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes additional experiments performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "01d753ab-0fff-4452-a6ea-811a06ff6caa",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C85",
+      "claim": "The quasi-potential with 4 ng/ml TGF-\u03b2 for the Vimentin varies first path shows a plateau around s1 = 8.",
+      "claim_type": "EXPLICIT",
+      "source": "Notice that quasi-potential with 4 ng/ml TGF-\u03b2 for the Vimentin varies first path shows a plateau around s1 = 8 (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the reconstructed quasi-potential shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "1671d85c-6077-4d22-8e9a-bd60fbad347d",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C86",
+      "claim": "The plateau in the quasi-potential is hypothesized to be a remnant of the original epithelial attractor.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that this plateau is a remnant of the original epithelial attractor, and if so we expect to observe a flatter plateau or even a metastable attractor with a lower TGF-\u03b2 concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observed plateau.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "26cfa397-8126-4c6a-81a7-e94fe281ab88",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C87",
+      "claim": "Among the 135 recorded trajectories with 1 ng/ml TGF-\u03b2, 65 reached the M region.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we treated A549/Vim-RFP cells with 1 ng/ml TGF-\u03b2 and recorded 135 3-day long single-cell trajectories. Among the recorded trajectories 65 indeed reached the M region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the 1 ng/ml TGF-\u03b2 experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "28cbb2e4-6756-4d1c-abab-9d2b805d7e3b",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C88",
+      "claim": "The reactive trajectories with 1 ng/ml TGF-\u03b2 also cluster into two groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The reactive trajectories also cluster into two groups (Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the 1 ng/ml TGF-\u03b2 data shown in Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "41432274-b4bd-471b-81f4-632d7beb4bab",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C89",
+      "claim": "The quasi-potential for the path with vimentin varying first has a plateau flatter than that of the 4 ng/ml TGF-\u03b2-treated cells at 1 ng/ml TGF-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the quasi-potential for the path with vimentin varying first has a plateau flatter than that of the 4 ng/ml TGF-\u03b2-treated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of quasi-potentials at different TGF-\u03b2 concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "d4c80e97-98ce-4118-987d-f12b6411234f",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C90",
+      "claim": "The quasi-potential of the concerted variation path does not show flattening at 1 ng/ml TGF-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The quasi-potential of another path, however, does not show such flattening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the quasi-potential comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "5f2ea0ea-d5e2-4117-b42a-5e2007a8cc9a",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C91",
+      "claim": "It is under debate whether EMT has a discrete or continuum spectrum of intermediate states.",
+      "claim_type": "EXPLICIT",
+      "source": "In the EMT field, it is under debate whether EMT has a discrete or continuum spectrum of intermediate states (Yang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about an ongoing debate in the field, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "7abe1414-e41f-429a-b568-c0b98033c8f3",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C92",
+      "claim": "Single-cell transcriptomic studies reveal intermediate states in EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell transcriptomic studies reveal intermediate states (Cook and Vanderhyden, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from cited transcriptomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "47aafdf5-f538-45e1-9ab7-301f64a1fc04",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C93",
+      "claim": "All the quasi-potentials at the two TGF-\u03b2 concentrations reveal destabilization of the epithelial attractor.",
+      "claim_type": "EXPLICIT",
+      "source": "While all the quasi-potentials at the two TGF-\u03b2 concentrations reveal destabilization of the epithelial attractor, they do not have multiple attractors anticipated for discrete EMT states (Figure 5e d\u03d5/ds in Figure 5\u2014figure supplement 5a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the reconstructed quasi-potentials shown in Figure 5e and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "f9b7691c-3776-440f-99b7-075645af3838",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C94",
+      "claim": "The quasi-potentials do not have multiple attractors anticipated for discrete EMT states.",
+      "claim_type": "EXPLICIT",
+      "source": "While all the quasi-potentials at the two TGF-\u03b2 concentrations reveal destabilization of the epithelial attractor, they do not have multiple attractors anticipated for discrete EMT states (Figure 5e d\u03d5/ds in Figure 5\u2014figure supplement 5a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation that argues against discrete EMT states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "84754b1c-ca8f-4999-a5b2-3cd502fdc766",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C95",
+      "claim": "Both quasi-potentials at 1 ng/ml TGF-\u03b2 have the new attractor closer to the epithelial state compared to those at 4 ng/ml TGF-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to those at 4 ng/ml TGF-\u03b2, both quasi-potentials at 1 ng/ml TGF-\u03b2 have the new attractor closer to the epithelial state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of quasi-potentials at different TGF-\u03b2 concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "9480b574-9a5d-4cbd-92fc-8748eb4b787b",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C96",
+      "claim": "Cells with 1 ng/ml TGF-\u03b2 treatment leave the E region and mostly reside around a new attractor in the I region.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of individual trajectories also reveals that cells with 1 ng/ml TGF-\u03b2 treatment leave the E region and mostly reside around a new attractor in the I region (Figure 5\u2014figure supplement 5c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from individual trajectories shown in Figure 5\u2014figure supplement 5c, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "acc1761a-5500-4a42-92b9-ca05f2c4fe45",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C97",
+      "claim": "Some trajectories fluctuate within the attractor and only transiently reach the M region.",
+      "claim_type": "EXPLICIT",
+      "source": "Some trajectories fluctuate within the attractor and only transiently reach the M region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the trajectory analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "0a183a7a-7950-42ed-88f3-6bd517436bdb",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C98",
+      "claim": "Cells reach a new stable phenotype whose degree of mesenchymal features depends on the TGF-\u03b2 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, cells reach a new stable phenotype whose degree of mesenchymal features depends on the TGF-\u03b2 concentration, which is consistent with previous studies on MCF10A cells treated with different concentrations of TGF-\u03b2 (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data that is consistent with cited previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "4ca696f5-f8ee-4da3-8b8a-2598c2564b3b",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C99",
+      "claim": "Fluctuations of single-cell trajectories limit the state resolution in the cell feature space and prevent determining whether the two paths reach one common intermediate state or two distinct ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluctuations of single-cell trajectories limit the state resolution in the cell feature space and prevent us from telling whether the two paths reach one common intermediate state or two distinct ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "c0347b49-6af5-4dc0-aaa4-59a4e68d6a47",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C100",
+      "claim": "The mathematical representation of live cell imaging data allows analysis of single cell trajectories using rate theories for quantitative mechanistic insights.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we further showed that the mathematical representation allows one to analyze the single cell trajectories and study CPT dynamics using rate theories for quantitative mechanistic insights (Figure 5\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the methodological contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "d0ce0235-1bba-4a3b-92de-a76d617a7605",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C101",
+      "claim": "Single cell genomics measurements have revealed that cells move along continuum manifolds.",
+      "claim_type": "EXPLICIT",
+      "source": "Single cell genomics measurements have challenged such views and have revealed that cells move along continuum manifolds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings from genomics studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "ad0ca8e4-2263-40d4-92e2-ee5290826353",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C102",
+      "claim": "The live cell imaging studies support the picture of EMT as a relaxation along a continuum manifold.",
+      "claim_type": "EXPLICIT",
+      "source": "The live cell imaging studies presented here support such a picture by demonstrating EMT as a relaxation along a continuum manifold, which is also supported by single cell RNA-seq studies (McFaline-Figueroa et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study supported by citation to RNA-seq studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "540b8e1e-da42-4dba-b34b-92818b89649f",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C103",
+      "claim": "Live cell trajectories reveal that the EMT trajectories can be clustered as fluctuating around two distinct paths that connect the epithelial and mesenchymal phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the snapshot studies, live cell trajectories reveal that the EMT trajectories can be clustered as fluctuating around two distinct paths that connect the epithelial and mesenchymal phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the live cell trajectory analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "abc7fc86-ac6f-4092-bd71-90866fa2324e",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C104",
+      "claim": "The existence of two types of transition paths suggests that the previously proposed conceptual 1D EMT axis is insufficient for understanding how EMT proceeds.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of two types of transition paths suggest that the previously proposed conceptual 1D EMT axis (Nieto et al., 2016) is insufficient for understanding how EMT proceeds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in relation to previous concepts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "0dc56375-f23a-48d4-9df6-ed8eb93a0f27",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C105",
+      "claim": "The existence of two types of transition paths puts dynamics inferred indirectly from snapshot data questionable.",
+      "claim_type": "EXPLICIT",
+      "source": "and puts dynamics inferred indirectly from snapshot data questionable (McFaline-Figueroa et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of previous inference methods.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "16b7bf5f-4a7e-43ea-ab22-ecb466281952",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C106",
+      "claim": "Identifying an appropriate RC provides mechanistic insights of a transition process in rate theories.",
+      "claim_type": "EXPLICIT",
+      "source": "In rate theories, identifying an appropriate RC provides mechanistic insights of a transition process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of RC in rate theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "ffebb10f-0c27-4a45-a29a-2f026f0849ca",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C107",
+      "claim": "Recognizing collective solvent reorganization as part of the reaction coordinate is a key part of Marcus's electron transfer theory.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, recognizing collective solvent reorganization as part of the reaction coordinate is a key part of Marcus's electron transfer theory (Marcus, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example from chemistry supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "cd02d642-4143-41ab-9f2a-93f41286ec0c",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C108",
+      "claim": "It is questionable to assume that the system dynamics can be well presented by a 1-D RC, as suggested by theoretical analysis on protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, continuous efforts have been made on defining an optimal RC for a complex dynamical system (Li and Ma, 2014; Best and Hummer, 2005; Fukui, 2002), and it is even questionable to assume that the system dynamics can be well presented by a 1-D RC, as suggested by theoretical analysis on protein folding (Udgaonkar, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "e0102a60-ef76-4b75-a495-08712098524a",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C109",
+      "claim": "The analysis shows a breakdown of the basic assumption that system dynamics can be well presented by a 1-D RC.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the analyses presented in this study shows such a breakdown of this basic assumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "ff642232-a4fe-4f5c-bfa7-c7bbdb0ca425",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C110",
+      "claim": "Multiple paths may originate from destabilization of a multi-dimensional epithelial attractor through colliding with multiple saddle points sequentially.",
+      "claim_type": "EXPLICIT",
+      "source": "For TGF-\u03b2 induced EMT in A549 cells, analysis of the trajectories reveals that mathematically multiple paths may originate from destabilization of a multi-dimensional epithelial attractor through colliding with multiple saddle points sequentially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation from the trajectory analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "5fe09dff-197f-4741-a9ef-faedf6594c61",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C111",
+      "claim": "The sequential saddle-node bifurcation mechanism is a plausible one that can explain the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be pointed out that this sequential saddle-node bifurcation mechanism is only a plausible one that can explain the experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautious statement about the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "41fa91ea-ea1b-4cc1-9fcd-9a2c9acdc4f1",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C112",
+      "claim": "Multidimensional systems can show complex bifurcation patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Multidimensional systems can show complex bifurcation patterns (Rand et al., 2021; Kheir Gouda et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "fc672064-764b-4b02-bd55-f20ce4a29c03",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C113",
+      "claim": "The reactive trajectories predominantly assume the concerted-variation path under 1 ng/ml TGF-\u03b2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed the reactive trajectories predominantly assume the concerted-variation path under 1 ng/ml TGF-\u03b2 treatment (Figure 5\u2014figure supplement 4a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the 1 ng/ml TGF-\u03b2 data shown in Figure 5\u2014figure supplement 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "28aa236a-1178-49a0-8881-f508f7bbf892",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C114",
+      "claim": "The vimentin-first path becomes dominant under 4 ng/ml TGF-\u03b2 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "while the vimentin-first path becomes dominant under 4 ng/ml TGF-\u03b2 treatment (Figure 5\u2014figure supplement 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the 4 ng/ml TGF-\u03b2 data shown in Figure 5\u2014figure supplement 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "407a37e6-fc6a-44c0-8357-14ece08380a1",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C115",
+      "claim": "One major limitation of the minimal Langevin equation ansatz is that the dynamics is assumed to be Markovian.",
+      "claim_type": "EXPLICIT",
+      "source": "One major limitation of the minimal Langevin equation ansatz used in this work is that the dynamics is assumed to be Markovian, that is, the temporal evolution of the system depends only on the current but not previous cell state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "a376f5e7-3bf9-4e68-9ec2-5d4ce6f7800a",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C116",
+      "claim": "A cell has a much larger number of degrees of freedom than what can be measured explicitly through live-cell imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "A cell has a much larger number of degrees of freedom than what can be measured explicitly through live-cell imaging, and these implicit degrees of freedom result in possible non-Markovian dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the complexity of cells and limitations of measurement.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "be6d2ced-5c49-425f-8ede-7511185e7d86",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C117",
+      "claim": "The added exogenous TGF-\u03b2 concentration was used as a control parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we used the added exogenous TGF-\u03b2 concentration as a control parameter, as in previous studies (Tian et al., 2013; Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design with citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "a7b26112-ce10-41f4-b2d5-9273e8a83b3d",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C118",
+      "claim": "Cells secrete endogenous TGF-\u03b2 and interact with other cells, so the extracellular microenvironment for individual cells is in general spatially and temporally changing.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells also secrete endogenous TGF-\u03b2, and interact with other cells, so the extracellular microenvironment for individual cells is in general spatially and temporally changing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the complexity of the cellular environment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "e6b5bd00-bbf5-49b9-9587-273d8c318700",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C119",
+      "claim": "A549/VIM-RFP cells were obtained from ATCC CCL-185EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "A549/VIM-RFP cells were obtained from (ATCC CCL-185EMT, RRID:CVCL_LI35), and cells within 5\u201315 generations were used in the studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the cell line source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "c8cf8935-b01e-4c79-afd9-526323cea291",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C120",
+      "claim": "Cells within 5\u201315 generations were used in the studies.",
+      "claim_type": "EXPLICIT",
+      "source": "A549/VIM-RFP cells were obtained from (ATCC CCL-185EMT, RRID:CVCL_LI35), and cells within 5\u201315 generations were used in the studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about cell culture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "3a2f5fcd-686a-4567-8a87-518973687b6a",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C121",
+      "claim": "The cell line was authenticated as A549 cells with short tandem repeat (STR) analysis by University of Arizona Genetics Core (UAGC).",
+      "claim_type": "EXPLICIT",
+      "source": "The cell line was authenticated as A549 cells with short tandem repeat (STR) analysis by University of Arizona Genetics Core (UAGC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quality control measure for the cell line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "1026bb06-263d-4c97-b23a-253b36534445",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C122",
+      "claim": "The result of mycoplasma contamination test was negative.",
+      "claim_type": "EXPLICIT",
+      "source": "The result of mycoplasma contamination test (MycoFluor Mycoplasma Detection Kit Molecular Probes, M-7006) was negative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quality control result for the cell culture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "f81f605d-8050-4049-9fba-ac2591cd733d",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C123",
+      "claim": "For the 4 ng/ml TGF-\u03b2 experiment, cells were imaged every 5 min with the DIC channel and every 10 min with the TRITC channel for 2 days.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 4 ng/ml TGF-\u03b2 (R&D Systems 240-B) experiment, cells were imaged every 5 min with the DIC channel and every 10 min with the TRITC channel for 2 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the imaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "f977fa35-5a3a-48d5-982f-501eb7c445de",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "claim_id": "C124",
+      "claim": "For the 1 ng/ml TGF-\u03b2 experiment, cells were imaged every 5 min with the DIC channel and every 15 min with the TRITC channel for 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 1 ng/ml TGF-\u03b2 experiment, cells were imaged every 5 min with the DIC channel and every 15 min with the TRITC channel for 3 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the imaging protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and applied a live cell imaging platform that represents cell states in a 309-dimensional composite morphology/texture feature space, enabling tracking of single-cell trajectories during TGF-\u03b2 induced EMT in A549/Vim-RFP cells. This platform combines vimentin texture features (13 Haralick features) and cell shape features (296 degrees of freedom from active shape model) to mathematically represent cell states and their temporal evolution as continuous trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C47 and C100 collectively describe a well-documented methodological framework with clear experimental procedures, quantitative feature extraction methods, and mathematical representation. The approach is supported by citations to previous work (C31, C36) and detailed methods (C42-C47). The framework's capability is demonstrated through actual data collection (C42, C50) and analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-cell trajectories of TGF-\u03b2 induced EMT cluster into two distinct groups representing parallel transition paths: one where vimentin Haralick PC1 varies first, and another with concerted variation of morphology PC1 and vimentin Haralick PC1. This was demonstrated through analysis of 204 recorded trajectories (135 reactive trajectories) using self-organizing map (SOM) clustering into 144 discrete states, shortest path analysis via Dijkstra algorithm, and density analysis showing two peaks in the reactive trajectory distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C50-C51, C57-C64, and C103 provide converging evidence from multiple analytical approaches (SOM, shortest path analysis, DTW distance, density analysis) all supporting the existence of two distinct transition paths. The quantitative data (204 total trajectories, 135 reactive, 144 discrete states) and consistency across methods (C62) strengthen this conclusion. Visual evidence is provided in Figures 3c-e.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "a5d4abbd-65dc-4433-aae3-53cd79510581",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Reaction coordinates (RCs) were reconstructed for each of the two transition paths using a revised finite temperature string method adapted for experimental trajectory data. The RCs reveal that along both paths, cell shape changes through elongation and growth, and most vimentin Haralick features vary monotonically. The two RCs diverge from the epithelial region following distinct paths (vimentin-first vs. concerted variation) then converge in the mesenchymal region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C78 describe a methodologically sound approach to RC reconstruction with appropriate modifications for experimental data (C70). The method is well-cited (C68) and validated by showing trajectories fluctuate around RCs forming reaction tubes as expected from TPT theory (C73). The characterization of morphological and molecular changes along each RC is supported by quantitative analysis shown in Figures 4d-e.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Quasi-potentials reconstructed along the reaction coordinates at 1 ng/ml and 4 ng/ml TGF-\u03b2 concentrations reveal destabilization of the epithelial attractor without multiple discrete intermediate attractors. At 1 ng/ml TGF-\u03b2, cells reach a new stable attractor in the intermediate region with a flatter plateau in the vimentin-first path quasi-potential, supporting EMT as relaxation along a continuum manifold rather than discrete state transitions. The degree of mesenchymal features in the new attractor depends on TGF-\u03b2 concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C98 present a coherent picture supported by experimental data at two TGF-\u03b2 concentrations (C84, C87), validation of the Markovian assumption via CK-test (C82-C83), and consistency with previous studies (C98). The absence of multiple attractors (C93-C94) argues against discrete EMT states, while concentration-dependent attractor positions (C95-C98) support a continuum model. The hypothesis about the plateau (C86) is tested and confirmed (C89).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "dc4ba552-c4c4-47bc-a349-fe25a3092551",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors propose that EMT proceeds through sequential saddle-node bifurcations where the epithelial attractor collides with two saddle points sequentially as TGF-\u03b2 concentration increases, generating two parallel paths. This directional bifurcation mechanism ensures transition toward a specific cell type. At 1 ng/ml TGF-\u03b2, the concerted-variation path dominates, while at 4 ng/ml the vimentin-first path becomes dominant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While claims C7, C110, C113-C114 are supported by experimental observations at different TGF-\u03b2 concentrations, the authors explicitly acknowledge this mechanism is \"plausible\" but not definitively proven (C111). The proposed sequential saddle-node bifurcation is inferred from quasi-potential analysis and path dominance patterns, but alternative complex bifurcation patterns are possible in multidimensional systems (C112). Direct experimental evidence of saddle point collisions is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "e5b51dd1-b1ca-42d2-a161-703dda22d9e9",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The existence of two distinct transition paths demonstrates that EMT proceeds as relaxation along a continuum manifold, challenging the previously proposed 1D EMT axis concept and questioning dynamics inferred from snapshot single-cell data. The analysis reveals a breakdown of the assumption that system dynamics can be well represented by a single 1-D reaction coordinate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102, C104-C105, and C109 present interpretations well-supported by the experimental findings of two distinct paths (C6, C103) and are consistent with single-cell RNA-seq studies (C102). The critique of the 1D EMT axis (C104) and snapshot data inference (C105) logically follows from the multi-path observation. The breakdown of 1-D RC assumption (C109) is directly demonstrated by the need for two separate RCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "d927fc38-bde3-4617-9fbf-2558ddf2494b",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Before TGF-\u03b2 treatment, cells assume a localized epithelial distribution that is destabilized by TGF-\u03b2, leading to a new mesenchymal-dominated distribution. The study addresses the debate about discrete vs. continuum intermediate states in EMT, but trajectory fluctuations limit resolution to definitively determine whether the two paths reach one common or two distinct intermediate states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 describe well-documented observations from the data (Figure 3a). Claims C91-C92 accurately represent the field debate. Claim C99 honestly acknowledges a limitation of the analysis due to trajectory fluctuations, which is appropriate scientific caution. The inability to resolve this specific question does not undermine the major findings about parallel paths and continuum dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "fe6e366d-2b32-40e6-a8c7-b956557c681d",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study acknowledges key limitations: the Markovian assumption may not fully capture dynamics due to unmeasured cellular degrees of freedom, and the use of exogenous TGF-\u03b2 concentration as a control parameter does not account for endogenous TGF-\u03b2 secretion and spatiotemporal changes in the extracellular microenvironment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C118 represent honest acknowledgment of methodological limitations. The Markovian limitation (C115-C116) is partially addressed by the CK-test validation (C82-C83), showing it's a reasonable zeroth-order approximation. The control parameter limitation (C117-C118) is acknowledged with appropriate citations to previous work using similar approaches. These limitations are clearly stated and do not invalidate the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "f8b61e15-77eb-4857-92c6-4b3bd7427435",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A549/VIM-RFP cells from ATCC (generations 5-15) were authenticated by STR analysis, tested negative for mycoplasma, and imaged with specified protocols for 4 ng/ml TGF-\u03b2 (2 days, DIC every 5 min, TRITC every 10 min) and 1 ng/ml TGF-\u03b2 (3 days, DIC every 5 min, TRITC every 15 min) experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C119-C124 provide standard methodological details with appropriate quality controls (STR authentication, mycoplasma testing) and clear imaging protocols. These are well-documented experimental procedures that support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "c1a2d35b-f086-4568-acf8-227953d12ad7",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The theoretical framework establishes that stable cell phenotypes correspond to attractors in multi-dimensional state space, cell phenotypic transitions are transitions between attractors, and two basic bifurcation mechanisms (pitchfork and saddle-node) can destabilize attractors. In pitchfork bifurcation, the original attractor becomes unstable with emergence of multiple new attractors, while saddle-node bifurcation directs the system to one specific attractor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C11-C18 present well-established theoretical concepts from dynamical systems theory, supported by appropriate citations (Huang et al. 2005, Rand et al. 2021, Mojtahedi et al. 2016). These provide the necessary theoretical foundation for the experimental work and are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "d394d9ba-9b3f-467d-9487-913174b024f8",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study addresses gaps in the field: direct experimental investigation of bifurcation mechanisms at single-cell level is scarce, snapshot genomics data cannot provide temporal information, live cell imaging is limited to few molecular species, and EMT-specific challenges include unclear intermediate state structure (discrete vs. continuum), path topology (linear vs. parallel), and inability to assess EMT status from few markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19-C30 accurately characterize the state of the field and research gaps, supported by appropriate citations (Mojtahedi et al. 2016, Chen et al. 2012, Yang et al. 2020, McFaline-Figueroa et al. 2019, Nieto et al. 2016). These establish clear motivation for the study and are consistent with the consensus statement from EMT researchers (C24).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "c7cad242-2de5-49d9-aaa1-66a4cb6a485b",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge establishes that EMT is central to development and pathology, cells undergo phenotypic changes in response to stimuli, single-cell techniques have advanced CPT studies, cell states can be represented mathematically in multi-dimensional spaces, cells have phenotype-specific morphological features, and vimentin is a mesenchymal marker that changes expression and distribution during EMT with accompanying dramatic morphological changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C9-C10, C34-C35, C38-C40 present well-established background knowledge appropriately cited (Wagner and Klein 2020, Weinreb et al. 2020, Zhang et al. 2014, 2019, Gordonov et al. 2016, Chang and Marshall 2019, Kimmel et al. 2018). This provides necessary context and justification for the methodological choices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "9010b187-f42b-4083-9ae1-f86d99f5ad93",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study applies established theoretical frameworks from rate theory and transition path theory (TPT), including concepts of reactive trajectories, state space division, self-organizing maps, and reaction coordinates. The importance of appropriate RC selection is emphasized, with examples from chemistry (Marcus electron transfer theory) and recognition that 1-D RC representation may be insufficient for complex systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56, C59, C106-C108, C112 accurately describe established theoretical frameworks with appropriate citations (H\u00e4nggi et al. 1990, Weinan et al. 2005, Rohrdanz et al. 2013, Kohonen 1982, Marcus 1993, Udgaonkar 2008, Rand et al. 2021). These provide the analytical foundation for the study and are correctly applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    },
+    {
+      "id": "632e1eb8-b21a-49f8-90a5-605c997b9e26",
+      "content_id": "1052bec6-2c3b-48fa-bdd2-6416b1d96815",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Single-cell genomics measurements have revealed that cells move along continuum manifolds, challenging previous views of discrete cell phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C101 accurately represents findings from genomics studies and provides context for interpreting the current study's results. This is established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:11:04.756814Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ea7d7958-a48c-4193-b4ac-4d8b79a71d37",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "a3fc482a-a5c6-41c4-a4be-4c20c881766a",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "d386973c-e90f-492f-8cb6-7a3fc91cfd00",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "57ad711e-81bf-4151-acd1-15fd3e616392",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "d8d74853-93e6-4a84-9b91-b4ea9394a067",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "a9ea2016-efec-4619-a24d-6c7f9bf556c5",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "a6d149c7-b2da-4348-869f-47b1e2a305dd",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "2d910a68-9564-448d-8e5a-36540a177953",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "5ca941f0-f778-46e0-af87-7c415d64e320",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "e5e71335-b4d6-4845-8fd5-a1960853b109",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "2334c1ca-e978-4090-be57-1a36592e02ed",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "93165782-0abf-48f0-912d-1861eeb875d5",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "c0347b49-6af5-4dc0-aaa4-59a4e68d6a47",
+      "result_id": "82d8bf2d-cb85-459e-9cde-818f6e8fb646"
+    },
+    {
+      "claim_id": "244d802e-c460-4a12-9721-7d16b8309ab7",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "152b51b4-e285-4204-834c-4a14fbc379ea",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "d9700ba7-30b7-42d1-847b-62388d4d7c1a",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "7f4b0308-da72-4db6-874c-cc103e33524f",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "b7a6675c-9d96-416f-9eca-f61704c92616",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "4a42da4f-a215-47a1-916f-1f0bbce500ad",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "6a51da28-a573-4f58-b151-f93a7e746483",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "8f12fc67-9877-4ce1-a2b6-4802650a79f4",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "fdde52cb-4cca-4c34-964e-4d9f3e1721e7",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "660e5281-ceb9-4edb-b644-207e74139969",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "0d18ed36-2b87-4571-860d-dff76ef431bb",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "540b8e1e-da42-4dba-b34b-92818b89649f",
+      "result_id": "787a9ac4-46e7-4f16-9db4-21b0df3fe92f"
+    },
+    {
+      "claim_id": "3b41f9f5-9d16-47b5-a573-c58cc301560a",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "8215cf6a-619b-4551-ae8c-e2644dbe29a0",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "4e46ead8-452b-4059-b594-36a794e1f6e6",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "1d2595be-0f21-4821-81e5-334fa4c8b267",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "98dd0c40-1778-45f2-846b-495c11148faf",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "b25129d6-1eb6-4f84-bffc-c8619e0cb05f",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "9c5b3b88-8ec4-46ae-80f1-83bbd3981bb0",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "da4b1a18-4a1b-4ce2-8a05-86e4e15bfa55",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "fe47d29a-65a0-47f3-83f2-8b7b5699b4e7",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "0693f3cc-bc6d-45c4-a0cf-0476bd44370b",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "8e5501ba-92b2-4c4e-92f9-f50b48eb41a3",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "08b8c84c-ff8a-4e25-b240-d189bdb4fc5d",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "7cc06940-2dcd-4021-b85a-ec89284f36ab",
+      "result_id": "a5d4abbd-65dc-4433-aae3-53cd79510581"
+    },
+    {
+      "claim_id": "347df1b5-eadd-4490-8c65-c4fc1192f98b",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "19628635-f6d4-49e1-9b6c-6399a8828ce7",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "041a244d-5c7d-464c-ba6a-88f6863070b7",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "2ba0a1e4-7fa6-4f52-8ca4-2a023b1d9756",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "01d753ab-0fff-4452-a6ea-811a06ff6caa",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "1671d85c-6077-4d22-8e9a-bd60fbad347d",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "26cfa397-8126-4c6a-81a7-e94fe281ab88",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "28cbb2e4-6756-4d1c-abab-9d2b805d7e3b",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "41432274-b4bd-471b-81f4-632d7beb4bab",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "d4c80e97-98ce-4118-987d-f12b6411234f",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "47aafdf5-f538-45e1-9ab7-301f64a1fc04",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "f9b7691c-3776-440f-99b7-075645af3838",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "84754b1c-ca8f-4999-a5b2-3cd502fdc766",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "9480b574-9a5d-4cbd-92fc-8748eb4b787b",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "acc1761a-5500-4a42-92b9-ca05f2c4fe45",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "0a183a7a-7950-42ed-88f3-6bd517436bdb",
+      "result_id": "10b1cf4c-7ba2-454c-bf3f-f00356cb4106"
+    },
+    {
+      "claim_id": "79f01e48-5c92-4859-a84d-dbafbea570a3",
+      "result_id": "dc4ba552-c4c4-47bc-a349-fe25a3092551"
+    },
+    {
+      "claim_id": "cbb43cff-6a24-42b3-8262-d93ab20e78ea",
+      "result_id": "dc4ba552-c4c4-47bc-a349-fe25a3092551"
+    },
+    {
+      "claim_id": "ff642232-a4fe-4f5c-bfa7-c7bbdb0ca425",
+      "result_id": "dc4ba552-c4c4-47bc-a349-fe25a3092551"
+    },
+    {
+      "claim_id": "5fe09dff-197f-4741-a9ef-faedf6594c61",
+      "result_id": "dc4ba552-c4c4-47bc-a349-fe25a3092551"
+    },
+    {
+      "claim_id": "fc672064-764b-4b02-bd55-f20ce4a29c03",
+      "result_id": "dc4ba552-c4c4-47bc-a349-fe25a3092551"
+    },
+    {
+      "claim_id": "28aa236a-1178-49a0-8881-f508f7bbf892",
+      "result_id": "dc4ba552-c4c4-47bc-a349-fe25a3092551"
+    },
+    {
+      "claim_id": "ad0ca8e4-2263-40d4-92e2-ee5290826353",
+      "result_id": "e5b51dd1-b1ca-42d2-a161-703dda22d9e9"
+    },
+    {
+      "claim_id": "abc7fc86-ac6f-4092-bd71-90866fa2324e",
+      "result_id": "e5b51dd1-b1ca-42d2-a161-703dda22d9e9"
+    },
+    {
+      "claim_id": "0dc56375-f23a-48d4-9df6-ed8eb93a0f27",
+      "result_id": "e5b51dd1-b1ca-42d2-a161-703dda22d9e9"
+    },
+    {
+      "claim_id": "e0102a60-ef76-4b75-a495-08712098524a",
+      "result_id": "e5b51dd1-b1ca-42d2-a161-703dda22d9e9"
+    },
+    {
+      "claim_id": "e59d5a2b-5334-4c32-99d4-a1b72050ef95",
+      "result_id": "d927fc38-bde3-4617-9fbf-2558ddf2494b"
+    },
+    {
+      "claim_id": "563f87d3-d2bd-480e-a2af-77df9b44e14b",
+      "result_id": "d927fc38-bde3-4617-9fbf-2558ddf2494b"
+    },
+    {
+      "claim_id": "5f2ea0ea-d5e2-4117-b42a-5e2007a8cc9a",
+      "result_id": "d927fc38-bde3-4617-9fbf-2558ddf2494b"
+    },
+    {
+      "claim_id": "7abe1414-e41f-429a-b568-c0b98033c8f3",
+      "result_id": "d927fc38-bde3-4617-9fbf-2558ddf2494b"
+    },
+    {
+      "claim_id": "4ca696f5-f8ee-4da3-8b8a-2598c2564b3b",
+      "result_id": "d927fc38-bde3-4617-9fbf-2558ddf2494b"
+    },
+    {
+      "claim_id": "407a37e6-fc6a-44c0-8357-14ece08380a1",
+      "result_id": "fe6e366d-2b32-40e6-a8c7-b956557c681d"
+    },
+    {
+      "claim_id": "a376f5e7-3bf9-4e68-9ec2-5d4ce6f7800a",
+      "result_id": "fe6e366d-2b32-40e6-a8c7-b956557c681d"
+    },
+    {
+      "claim_id": "be6d2ced-5c49-425f-8ede-7511185e7d86",
+      "result_id": "fe6e366d-2b32-40e6-a8c7-b956557c681d"
+    },
+    {
+      "claim_id": "a7b26112-ce10-41f4-b2d5-9273e8a83b3d",
+      "result_id": "fe6e366d-2b32-40e6-a8c7-b956557c681d"
+    },
+    {
+      "claim_id": "e6b5bd00-bbf5-49b9-9587-273d8c318700",
+      "result_id": "f8b61e15-77eb-4857-92c6-4b3bd7427435"
+    },
+    {
+      "claim_id": "c8cf8935-b01e-4c79-afd9-526323cea291",
+      "result_id": "f8b61e15-77eb-4857-92c6-4b3bd7427435"
+    },
+    {
+      "claim_id": "3a2f5fcd-686a-4567-8a87-518973687b6a",
+      "result_id": "f8b61e15-77eb-4857-92c6-4b3bd7427435"
+    },
+    {
+      "claim_id": "1026bb06-263d-4c97-b23a-253b36534445",
+      "result_id": "f8b61e15-77eb-4857-92c6-4b3bd7427435"
+    },
+    {
+      "claim_id": "f81f605d-8050-4049-9fba-ac2591cd733d",
+      "result_id": "f8b61e15-77eb-4857-92c6-4b3bd7427435"
+    },
+    {
+      "claim_id": "f977fa35-5a3a-48d5-982f-501eb7c445de",
+      "result_id": "f8b61e15-77eb-4857-92c6-4b3bd7427435"
+    },
+    {
+      "claim_id": "d84a0d08-3d31-4188-adf1-699a5beeb2e2",
+      "result_id": "c1a2d35b-f086-4568-acf8-227953d12ad7"
+    },
+    {
+      "claim_id": "42f33b97-b0d3-42cd-b73f-1458e715d51e",
+      "result_id": "c1a2d35b-f086-4568-acf8-227953d12ad7"
+    },
+    {
+      "claim_id": "6b1cc695-6658-48d2-96c7-43982af7865f",
+      "result_id": "c1a2d35b-f086-4568-acf8-227953d12ad7"
+    },
+    {
+      "claim_id": "74c7581c-6c84-4f27-9a0b-69330694af56",
+      "result_id": "c1a2d35b-f086-4568-acf8-227953d12ad7"
+    },
+    {
+      "claim_id": "a5f3af1d-e24b-49a2-8fc1-602c67136fe2",
+      "result_id": "c1a2d35b-f086-4568-acf8-227953d12ad7"
+    },
+    {
+      "claim_id": "cd0743e6-40ae-45de-a76b-caf2ceb4419c",
+      "result_id": "c1a2d35b-f086-4568-acf8-227953d12ad7"
+    },
+    {
+      "claim_id": "efadf1ed-85cf-4a9a-8e12-706c086b0352",
+      "result_id": "c1a2d35b-f086-4568-acf8-227953d12ad7"
+    },
+    {
+      "claim_id": "4e952369-5504-482a-a9cf-4e4f1a8b9612",
+      "result_id": "c1a2d35b-f086-4568-acf8-227953d12ad7"
+    },
+    {
+      "claim_id": "baf6d6f0-8f2b-41f6-8c99-7188ca277ba4",
+      "result_id": "c1a2d35b-f086-4568-acf8-227953d12ad7"
+    },
+    {
+      "claim_id": "35d2f5ea-7618-498e-ab71-4f5050a08243",
+      "result_id": "c1a2d35b-f086-4568-acf8-227953d12ad7"
+    },
+    {
+      "claim_id": "7f5c7b2d-5165-41bc-a4e5-fa35d63ed3af",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "ae0e093e-de3c-486e-81ad-3d8816c6dd06",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "e32f3472-3df7-4c24-9063-85b79d3b0c4a",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "089bc298-5316-46c1-852d-0d498dfbc5b8",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "b06a790c-b94a-430d-b915-dd101feb0d8f",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "2d599d5d-ef30-4fd7-907e-be458d1db851",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "33492cd9-3dc6-4ba4-82f9-c4eaf48b0673",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "c985f920-45ba-4f04-bb36-8c996a5bc306",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "485cd5f4-1f23-4d6b-a377-f38f959c21aa",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "71330e01-6481-4769-ac40-5e1c3f99cf97",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "172d3374-e967-43aa-897d-1700de254317",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "17b1c9cf-908d-4876-9b66-a2e50a61dffe",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "04e2ed5b-5113-42ca-83b3-259eafc0b971",
+      "result_id": "d394d9ba-9b3f-467d-9487-913174b024f8"
+    },
+    {
+      "claim_id": "27fe233a-70c2-46d3-83b3-bce2f637e3e6",
+      "result_id": "c7cad242-2de5-49d9-aaa1-66a4cb6a485b"
+    },
+    {
+      "claim_id": "d22adfef-385a-4561-b8ee-7b79503d7b19",
+      "result_id": "c7cad242-2de5-49d9-aaa1-66a4cb6a485b"
+    },
+    {
+      "claim_id": "69de1a3c-707b-4ff2-ada5-845ac6df8b85",
+      "result_id": "c7cad242-2de5-49d9-aaa1-66a4cb6a485b"
+    },
+    {
+      "claim_id": "e27adadb-d450-4cdd-a7e4-99cadcb3c883",
+      "result_id": "c7cad242-2de5-49d9-aaa1-66a4cb6a485b"
+    },
+    {
+      "claim_id": "67d6dd94-aad6-4e78-bd94-41a5498b0c9b",
+      "result_id": "c7cad242-2de5-49d9-aaa1-66a4cb6a485b"
+    },
+    {
+      "claim_id": "b1155a16-229d-4b2a-ba12-58da2e74488b",
+      "result_id": "c7cad242-2de5-49d9-aaa1-66a4cb6a485b"
+    },
+    {
+      "claim_id": "f483760b-1d5f-4b95-aa86-41eabdee6de1",
+      "result_id": "c7cad242-2de5-49d9-aaa1-66a4cb6a485b"
+    },
+    {
+      "claim_id": "c492f54a-27e2-4f50-b7a3-143754db678e",
+      "result_id": "c7cad242-2de5-49d9-aaa1-66a4cb6a485b"
+    },
+    {
+      "claim_id": "6d8e310a-2de2-4d3b-b603-20458cdba757",
+      "result_id": "9010b187-f42b-4083-9ae1-f86d99f5ad93"
+    },
+    {
+      "claim_id": "427cea58-a0e2-43c5-a9e2-ff495b72d79f",
+      "result_id": "9010b187-f42b-4083-9ae1-f86d99f5ad93"
+    },
+    {
+      "claim_id": "e0f4dbe6-32e8-4b6d-86b7-8e9cd9671bd6",
+      "result_id": "9010b187-f42b-4083-9ae1-f86d99f5ad93"
+    },
+    {
+      "claim_id": "a1036153-b505-45e5-8148-61d00ca12cbc",
+      "result_id": "9010b187-f42b-4083-9ae1-f86d99f5ad93"
+    },
+    {
+      "claim_id": "a4dbfd0e-4e6e-4f3c-92e9-ef806a26a91e",
+      "result_id": "9010b187-f42b-4083-9ae1-f86d99f5ad93"
+    },
+    {
+      "claim_id": "218d97aa-0d0b-4264-b3d5-a531ea6a5dbc",
+      "result_id": "9010b187-f42b-4083-9ae1-f86d99f5ad93"
+    },
+    {
+      "claim_id": "16b7bf5f-4a7e-43ea-ab22-ecb466281952",
+      "result_id": "9010b187-f42b-4083-9ae1-f86d99f5ad93"
+    },
+    {
+      "claim_id": "ffebb10f-0c27-4a45-a29a-2f026f0849ca",
+      "result_id": "9010b187-f42b-4083-9ae1-f86d99f5ad93"
+    },
+    {
+      "claim_id": "cd02d642-4143-41ab-9f2a-93f41286ec0c",
+      "result_id": "9010b187-f42b-4083-9ae1-f86d99f5ad93"
+    },
+    {
+      "claim_id": "41fa91ea-ea1b-4cc1-9fcd-9a2c9acdc4f1",
+      "result_id": "9010b187-f42b-4083-9ae1-f86d99f5ad93"
+    },
+    {
+      "claim_id": "d0ce0235-1bba-4a3b-92de-a76d617a7605",
+      "result_id": "632e1eb8-b21a-49f8-90a5-605c997b9e26"
+    }
+  ],
+  "comparisons": []
+}

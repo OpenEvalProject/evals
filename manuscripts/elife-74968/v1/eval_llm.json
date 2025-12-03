@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The automated quantification pipeline accurately counts neurons in sparse labeling conditions. Manual and automated counts of dopaminergic, serotonergic, and dopa decarboxylase expressing neurons showed high concordance (C45), and automated counting of a densely labeled brp-GAL4 CNS differed from manual count by only 14 neurons (C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 provide strong validation of the automated quantification method through direct comparison with manual counting in both sparse and dense labeling conditions. The minimal discrepancy (14 neurons in ~9400) demonstrates the reliability and accuracy of the computational pipeline for cell counting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C47",
+      "C48"
+    ],
+    "result": "The female third instar larval Drosophila CNS contains 10,312 neurons and 3,860 glia. This represents fewer neurons than most previous predictions and substantially more glia than previously estimated, with glia comprising 37% of the neuronal count rather than the previously estimated 10%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C47-C48 collectively establish precise cell counts for the female larval CNS using validated methodology. The neuron count is based on averaging across three independent GAL4 lines (n=16 total), and the glial count uses repo-GAL4 (n=7). The findings contradict prior estimates (C6) with direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Male third instar larval Drosophila CNS exhibits sexual dimorphism with 9,396 neurons (9.75% fewer than females, p<0.0001) and 4,015 glia (3.86% more than females, p=0.0284). This represents a previously unrecognized sex difference at the larval stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 establish statistically significant sexual dimorphism in both neuron and glial cell numbers. The neuron difference is consistent across all three GAL4 lines tested, and statistical significance is properly demonstrated with appropriate p-values and sample sizes (n=15 for neurons, n=6 for glia in males).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Three synaptic protein GAL4 lines (brp-GAL4, Syt1-GAL4, nSyb-GAL4) label similar but not identical numbers of neurons in both female and male larval CNS. In females, brp-GAL4 labeled significantly more neurons than the other two lines, while in males this difference was only significant compared to Syt1-GAL4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C25-C27 provide quantitative data with appropriate statistical testing showing that while all three lines label functional neurons, brp-GAL4 consistently labels more cells. The statistical comparisons are properly conducted with stated p-values and sample sizes (n=5-6 per line).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C42",
+      "C43"
+    ],
+    "result": "The brp, Syt1, and nSyb GAL4 lines specifically label neurons and not glia or neuroblasts. Complete exclusion from repo-labeled glial cells was demonstrated, and no overlap with Deadpan-expressing neuroblasts was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C42-C43 establish cell-type specificity through independent labeling systems (GAL4/QF2) and marker analysis. The complete exclusion from glial and neuroblast markers provides strong evidence that these lines specifically label differentiated neurons, which is critical for the validity of the neuron counts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Inter-nuclei distance distributions differ between neuronal and glial populations. Glial nuclei exhibit a unimodal distribution while all three neuronal GAL4 lines show bimodal distributions of inter-nuclei distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 describe distinct spatial organization patterns between cell types based on quantitative analysis of nuclear positions. The bimodal vs. unimodal distinction provides additional validation that the neuronal and glial lines label different cell populations with different spatial arrangements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Topological data analysis reveals that sexual dimorphism extends beyond cell numbers to deeper organizational features of CNS structure. A support vector machine using topological features reliably classified sex (only 1.9% false positives), while simpler features like inter-nuclei distance distributions did not produce significant classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 demonstrate that sexual dimorphism involves complex structural differences using sophisticated mathematical analysis. The SVM classification performance (C29) with proper controls (C30) provides strong evidence for subtle, distributed organizational differences beyond simple cell counts. The methodology appears sound with appropriate train/test splits and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Voltage-gated potassium channel family members show divergent expression patterns in the male larval CNS. Sh and Shal are broadly expressed (8,204 and 8,261 neurons, ~87% of total), while Shab and Shaw show restricted expression (3,057 and 1,737 neurons, 32.5% and 18.5% of total), with particularly reduced expression in brain lobes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 establish differential expression patterns across the potassium channel family with appropriate quantification (n=5-11 per line) and statistical testing (p<0.0001 for Sh/Shal vs. total neurons). The spatial analysis (C38) is supported by figure data. This demonstrates the utility of the method for gene expression frequency analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C65"
+    ],
+    "result": "All four voltage-gated potassium channel GAL4 lines are expressed in motor neurons, consistent with prior functional studies, despite their divergent expression patterns elsewhere in the CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C65 validate the GAL4 reporter lines against established knowledge from electrophysiological studies. The motor neuron expression provides important validation that the lines accurately report endogenous gene expression, supporting the reliability of CNS-wide quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The brp, Syt1, and nSyb GAL4 lines show no expression before embryonic stage 16 but display expression in both CNS and peripheral nervous system beginning at stage 17, coinciding with the onset of synaptic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 establish the developmental timing of synaptic protein gene expression with appropriate citation (C49) for when synaptic activity begins. The temporal correlation between gene expression onset and functional synapse formation supports that these lines label functionally active neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The three neuronal GAL4 lines label a large fraction but not all cells in the adult brain, similar to the pattern observed in larval CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 extends the characterization of the GAL4 lines to adult stages, showing consistency in labeling patterns across developmental stages. This supports the interpretation that these lines label functional neurons rather than all neurons, though the claim is primarily descriptive without quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C11"
+    ],
+    "result": "The glial-to-neuron ratio in larval Drosophila CNS is approximately 0.4:1, more similar to ratios in rodents and rabbits than to previous estimates of 0.1:1 in adult Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C11 establish a revised glial-to-neuron ratio based on direct quantification (3,860 glia / 10,312 neurons = 0.37). The comparison to mammalian ratios (C64) is appropriately cited. However, the caveat raised in C54-C55 about developmental timing should be considered when interpreting this ratio.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C38"
+    ],
+    "result": "Shab and Shaw potassium channels have discrete expression patterns in CNS neuron classes beyond motor neurons, potentially conferring unique functional characteristics to specific neuronal populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C38 interpret the restricted expression patterns of Shab and Shaw as functionally significant, with appropriate citation (Chow and Leung, 2020). The experimental data showing limited expression (32.5% and 18.5% of neurons) and reduced brain lobe expression supports this interpretation, though the functional implications remain inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The developed methodology enables robust quantification of cell numbers and positions in intact organs, facilitating sophisticated analysis of cellular identity, diversity, and gene expression characteristics throughout the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 summarize the capabilities demonstrated throughout the manuscript. The validation studies (C45-C46), successful cell-type quantification (C9-C16), spatial analysis (C23-C24, C28-C30), and gene expression frequency measurements (C31-C38) collectively support these methodological claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The high glial-to-neuron ratio observed in third instar larvae may represent glia produced in advance of adult CNS development, and this ratio could potentially decline as adult-specific neurons expand during pupation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55 are explicitly speculative (\"could conceivably,\" \"could potentially\") and represent important caveats about interpreting the glial ratio. The authors appropriately acknowledge this limitation, but no data is provided to test this hypothesis. Additional measurements at pupal or adult stages would be needed to resolve this uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The method can potentially be applied to other intact whole organs beyond the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is explicitly speculative (\"potentially\") about future applications. While the methodology is sound for CNS analysis, no data is provided demonstrating application to other organs. This represents a reasonable extrapolation but remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The CRISPR-generated brp-GAL4 exonic insertion creates a hypomorphic allele when homozygous but was used in heterozygotes to capture Brp protein expression with high fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 describe the genetic strategy used to generate a key reagent. The hypomorphic nature is mentioned as observed (\"data not shown\") and the heterozygous use is a standard approach to avoid phenotypic effects while maintaining reporter expression. The validation through cell counting supports that the heterozygous line functions as intended.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The widely used elav-GAL4 line labels larval neurons but also some immature neurons and potentially some glia, contrasting with the more specific synaptic protein GAL4 lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 explains why elav-GAL4 was not used for quantification, with appropriate citations (Berger et al., 2007) and supporting figure data. This justifies the development of alternative GAL4 lines for more specific functional neuron labeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C83"
+    ],
+    "result": "The imaging and analysis pipeline uses light-sheet microscopy with specific parameters (20\u00d7/1.0 detection objective, five views at 72\u00b0 intervals, 1 \u03bcm z-intervals, 0.317 \u03bcm voxel resolution) and applies volume thresholds (>15 \u03bcm\u00b3) to filter non-specific signals, with samples collected within a narrow developmental window (~2 hours).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C83 describe the technical methodology in detail. These parameters are appropriate for the application and the narrow developmental window (C83) is important for reducing biological variability. The volume threshold (C79) is a reasonable approach to exclude artifacts, though the specific cutoff value is not independently validated.",
+    "result_type": "MINOR"
+  }
+]

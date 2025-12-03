@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior work has discovered arbitrium-based communication systems in temperate bacteriophages, particularly in the SPbeta group infecting Bacillus bacteria. These phages use arbitrium peptide signaling to inform their lysis-lysogeny decision, with higher arbitrium concentrations promoting lysogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 describe established prior work on phage communication systems, all supported by appropriate citations (primarily Erez et al., 2017 and Stokar-Avihail et al., 2019). These claims provide necessary background context and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Bacterial quorum sensing is a well-established form of microbial communication that controls various behaviors including bioluminescence, virulence, cooperative public good production, and antimicrobial toxin production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 describe established knowledge about bacterial quorum sensing, all supported by appropriate citations to foundational work in the field. These provide standard background context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Prior modeling and experimental work has shown that lysogeny can evolve as a survival mechanism, that selection pressures on phage virulence change during epidemics, and that phage-phage interactions (like lysis inhibition and MOI effects) can be adaptations to host-cell density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 accurately summarize prior theoretical and experimental work on phage life-cycle evolution, all supported by appropriate citations. These establish the theoretical foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors developed an ODE model extending prior phage-bacteria models to include arbitrium-like signaling. The model incorporates logistic bacterial growth, phage adsorption, lytic and lysogenic cycles, arbitrium production upon infection, and arbitrium uptake/degradation by bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C52 describe the mathematical model structure and assumptions. The model is clearly specified with equations provided, builds appropriately on prior models (with citations), and makes reasonable simplifying assumptions (e.g., fast lytic cycle, no spontaneous arbitrium decay) that are justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors argue that equilibrium analysis is insufficient for understanding arbitrium communication evolution because at equilibrium the arbitrium concentration becomes constant (defeating its purpose) and susceptible cells are typically depleted (eliminating selection pressure on the lysis-lysogeny decision).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C65 present a logical argument supported by mathematical analysis (C58, C60-C61) and citations to prior work (C60-C64). The reasoning that equilibrium conditions are inappropriate for studying communication evolution is sound and well-justified. The claim that typical parameters lead to susceptible cell depletion is supported by parameter estimates and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C76",
+      "C78"
+    ],
+    "result": "In the absence of arbitrium communication under serial passaging, bet-hedging phages with low constant lysogeny propensity are selected because the phage variant most frequent in the lysogen population (which dominates after susceptible cell depletion) is most represented in the passaged sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 describe simulation results and their mechanistic explanation. The logic is internally consistent with the model structure, supported by Figure 2 and supplementary figures, and the bet-hedging interpretation is reasonable given the dynamics described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Results are robust to changes in the serial passaging protocol - passaging the full system (cells, lysogens, phages) versus only phages yields nearly identical outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 report robustness analysis supported by Figure 2\u2014figure supplement 2. The mechanistic explanation (C76) that equal induction rates prevent lysogens from altering variant frequencies is logically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The duration of the epidemic phase depends on initial phage density and effective burst size - lower values result in longer epidemics before susceptible cell collapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a logical inference from the model dynamics that is consistent with basic epidemic theory and the model structure. This provides mechanistic understanding of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C88",
+      "C91",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "When arbitrium communication is included in the model, communicating phages that switch from lytic to lysogenic strategy based on arbitrium concentration consistently outcompete bet-hedging phages, but only when phages regularly cause outbreaks in substantial pools of susceptible cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C34, C88, C91, C96-C98 describe major simulation results supported by Figures 3A-C. The competitive advantage of communication over bet-hedging is clearly demonstrated (C96-C97), and the requirement for repeated outbreaks (C34) is logically justified and supported by the model analysis. The mechanistic explanation involving arbitrium tracking infection progress (C91) is consistent with the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The model predicts that evolved communicating phages switch from fully lytic to fully lysogenic strategy when approximately half of susceptible cells have been infected. This prediction is supported by analytical approximation (Equation 6) and holds especially well for phages with high effective burst size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C103-C108 present a major quantitative prediction supported by both analytical derivation (Equation 6) and simulation results (Figure 4). The analytical approximation matches simulations well for high burst sizes (C103), with explained deviations for low burst sizes (C104). The mechanistic explanation (C105-C107) is logical and the prediction for natural phages (C108) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C110",
+      "C112",
+      "C113",
+      "C115",
+      "C116",
+      "C139",
+      "C140"
+    ],
+    "result": "Arbitrium communication is remarkably robust to variation in bacterial carrying capacity. Even with high variability (CV up to 0.35), communication strategies are still selected, though with lower response thresholds and bet-hedging at high arbitrium concentrations in highly variable environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C110, C112-C113, C115-C116, C139-C140 describe robustness analysis supported by Figure 5 and supplements. The results show communication persists even under high environmental variability, with adaptive changes in strategy parameters. The mechanistic explanations (C112-C113) are logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Serial passaging is crucial for arbitrium communication evolution because it maintains selection pressure by regularly exposing phages to susceptible cells and creates repeated epidemic dynamics where arbitrium can reliably signal infection progress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C117-C122 explain why the serial passaging setup is necessary for the results. The reasoning is logically sound and supported by the model analysis. The two requirements (regular susceptible cell exposure and epidemic dynamics) are well-justified, with C119-C120 supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors speculate that in natural settings, spatial structure or escape from superinfection immunity through mutation could provide the conditions necessary for communication evolution, though the latter scenario might drive selection for signal specificity changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C130 are explicitly speculative (marked as SPECULATION in evidence_type) about how the model's requirements might be met in nature. While the speculation is reasonable and supported by some citations (C123-C124, C126), these are hypotheses requiring experimental validation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The model predicts that arbitrium production by lysogens has minimal effect under repeated epidemics that deplete susceptible cells, as selection occurs during the brief epidemic window when lysogen density is still low. Lysogen-produced arbitrium would only be effective if lysogens and susceptible cells coexist long-term.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 present a prediction (C133) based on logical inference from the model dynamics (C131-C132). The reasoning is sound and C135 is supported by model results. C136 appropriately acknowledges model limitations by noting conditions not included that might change this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The model predicts phages switch strategies when approximately half of susceptible bacteria are infected. Surprisingly, this prediction holds even when bacterial carrying capacity is highly variable, though highly variable environments favor earlier switching with bet-hedging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 summarize key predictions. C137 restates the main quantitative prediction, C138 notes an apparent requirement, C139 reports the surprising robustness finding (supported by Figure 5), and C140 describes the adaptive response to high variability. All are supported by the modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors acknowledge that little is known about the actual shape of phages' response curve to arbitrium and used a stepwise function in the model, but argue results should be robust to the precise shape as phages will optimize strategy regardless.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C141 accurately states current knowledge limitations. C142 describes the modeling choice. However, C143 is speculation about robustness that lacks direct supporting evidence - no simulations with alternative response curves are presented to verify this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Other phage systems (VP882, \u03bb, T4, E. faecalis phages) show quorum sensing interactions, and mathematical modeling can help understand these regulation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 accurately cite prior work on other phage communication systems. C146 is a reasonable statement about the utility of modeling, though somewhat speculative. These provide broader context for the work.",
+    "result_type": "MINOR"
+  }
+]

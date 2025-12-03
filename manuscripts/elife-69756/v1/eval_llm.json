@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript establishes the biological context that bacteria use diverse toxins (bacteriocins, antibiotics, T6SS, etc.) to compete in dense communities, and that toxin production is often tightly regulated via quorum sensing, nutrient stress, and cell damage responses. Previous theoretical work has identified key factors affecting toxin use including strain frequency, nutrient levels, relatedness, and production costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C5-C18) are well-supported by extensive citations to prior literature and represent established knowledge in the field. They provide appropriate background context for the modeling work and accurately represent the current understanding of bacterial competition and regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The model predicts that constitutive toxin investment increases when toxins are efficient at killing and persist stably in the environment (high benefit-to-cost ratio). Toxin benefit peaks at intermediate nutrient levels: at low nutrients there is insufficient energy for effective toxin production, while at high nutrients cells benefit more from investing in rapid growth. For highly effective toxins, arms races can escalate to population extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 are supported by the ODE modeling results shown in Table 1 and Appendix figures 3-4. The model appropriately captures trade-offs between growth and toxin production, and the predictions are consistent with previous theory (C25). The intermediate nutrient optimum (C29) represents a novel prediction with clear mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "All three types of regulated strategies (nutrient sensing, quorum sensing, and toxin sensing) can evolutionarily invade and replace constitutive toxin production strategies. Regulated strategies succeed by producing high toxin levels only at optimal times, thereby saving energy. Toxin-sensing strategies uniquely both upregulate when attacked and downregulate once competitors are eliminated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C32-C39 are well-supported by invasion analysis results shown in Figure 2. The grid search methodology appropriately identifies parameter combinations allowing stable invasion of all constitutive strategies. The mechanistic explanation (energy savings through temporal regulation) is logical and follows from the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "When facing diverse constitutive competitors, toxin-sensing strategies perform best, achieving 2.5\u00d7 higher fitness than other regulatory strategies (p<0.001). This superiority is robust across parameter ranges and stems from reliable activation when attacked and efficient downregulation after victory. However, for short competition times, this advantage disappears and all three regulatory strategies perform equivalently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 are supported by modeling results in Figure 3 and statistical analysis. The regression analysis appropriately tests the effect of sensing type and competitor diversity. The mechanistic explanation (C43, C47-C48) logically follows from model dynamics. The loss of toxin-sensing advantage in short competitions (C49) provides important boundary conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "When strategies compete against identical strategies, all evolve to upregulate toxin production (finitial < finduced), but with different parameter values. Toxin-sensing strategies evolve the strongest response (finduced=0.73) but remain passive at equilibrium when meeting identical strategies, achieving high biomass similar to 'tit-for-tat' in game theory. This peaceful outcome is unique to toxin-sensing and not observed for nutrient or quorum sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 are supported by genetic algorithm results shown in Figure 4b. The evolved parameter values are clearly reported and the dynamics are shown. The comparison to tit-for-tat (C56) is appropriate given the reciprocal nature of the strategy. The uniqueness of peaceful outcomes to toxin-sensing (C57) is demonstrated by contrasting dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In tournaments where all three regulatory strategies compete together across over two million competitions, toxin-based regulation dominates as the winner. This success is robust across parameter sweeps and initial frequency ranges. Winning strategies are typically aggressive when meeting other strains and only downregulate once opponents are eliminated. For short competitions, the competitive benefit of reciprocity is lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by genetic algorithm tournament results in Figure 4c-f and Appendix figures 8-10. The massive scale of competitions (>2 million) and robustness testing strengthen confidence. The aggressive nature of winning strategies (C62) is clearly shown in Figure 4d-f dynamics. The loss of advantage in short competitions (C63) is consistent with earlier results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C95",
+      "C96",
+      "C97",
+      "C101"
+    ],
+    "result": "The model's main conclusions are that: (1) regulated strategies readily evolve to outcompete constitutive production; (2) toxin-sensing (competition sensing) is particularly successful, especially in long-lived environments; (3) reciprocation in bacteria enables efficient attacks rather than promoting peace, with key benefits being the ability to downregulate toxins after victory and invest energy where most needed. Regulation allows strains to tune behavior optimally across changing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C2-C4, C20-C22, C66, C68-C71, C95-C97, C101) accurately synthesize the modeling results from Figures 2-4. The conclusions logically follow from the demonstrated superiority of regulated strategies, the context-dependent advantage of toxin-sensing, and the mechanistic explanations. The contrast with classical game theory (peaceful outcomes) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The ODE model assumes well-mixed conditions with limited spatial structure, though bacteria do display fine-scale spatial structuring in communities. The model may capture competition at strain interfaces, which is critical for success. Spatial structure could differentially affect sensing strategies, with quorum/nutrient sensing potentially activating first in patch centers where toxin production has least benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C75 acknowledge model limitations regarding spatial structure. While C72-C74 appropriately describe model assumptions and potential applications, C75 is speculative about spatial effects not captured by the model. The discussion is honest about limitations but the actual impact of spatial structure on the results remains uncertain without explicit spatial modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C90"
+    ],
+    "result": "The model predicts that sensing incoming attacks should be widespread in bacteria. Empirical evidence supports this: many bacteria upregulate attacks via stress responses detecting cell damage, including E. coli using SOS response to DNA damage and P. aeruginosa using T6SS detection. Bacteria also use nutrient depletion and quorum sensing to regulate toxins, with the model correctly predicting activation at high quorum or limited nutrients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85, C90 appropriately connect model predictions to empirical evidence through extensive citations. The prediction (C76) logically follows from modeling results. The cited examples (C77-C83) provide strong empirical support for toxin-sensing mechanisms. The agreement between model predictions and observed regulatory directionality (C85) strengthens confidence in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "For short competition times, the three regulatory strategies are largely equivalent because short duration removes the benefit of downregulating toxin production after victory. Under these conditions, evolutionary paths may be determined by regulatory network costs and available systems for co-option. Reciprocation mechanisms are predicted to be particularly valuable in environments where warfare leaves victors unchallenged for long periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by modeling results in Figure 3b and Appendix figure 10. The mechanistic explanation for equivalence (C87) logically follows from the inability to downregulate in short timeframes. C88 is appropriately framed as speculation supported by citations. The prediction about long-term environments (C89) is a reasonable inference from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Some bacteria may not use cell damage to regulate toxins due to 'silent' toxins that evade stress responses, which may be favored to avoid provoking reciprocation. Bacteria also use multiple forms of regulation to integrate information from multiple sources, as exemplified by S. coelicolor regulating antibiotics via both nutrient limitation and envelope stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 provide reasonable explanations for why not all bacteria use toxin-sensing. C91-C92 are appropriately framed as speculation with supporting citations. C93-C94 are well-supported by citations to empirical work. These claims appropriately acknowledge complexity beyond the model's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The findings mirror classical game theory predictions that reciprocal strategies can be effective, but differ in outcome: animal combat theory predicted peace and conflict avoidance (observed in many animal contests), whereas experimental work shows bacteria often engage in deadly conflict.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 appropriately contextualize the work within game theory and contrast bacterial warfare with animal combat. The citations support both the classical predictions (C98-C99) and the bacterial reality (C100). This comparison effectively highlights the novel contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "Bacteria use diverse weaponry under tight regulation, and understanding attack strategies is central to explaining invasion and persistence in communities. The model's prevalence of aggressive strategies is consistent with widespread toxin use and intense competition observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C67 appropriately frame the biological importance and connect model predictions to empirical observations. The consistency between model and experiments (C67) is well-supported by citations. These claims effectively establish the relevance of the work.",
+    "result_type": "MINOR"
+  }
+]

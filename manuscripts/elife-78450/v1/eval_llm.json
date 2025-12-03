@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C4",
+      "C5",
+      "C6",
+      "C35",
+      "C36",
+      "C90",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors successfully reconstituted kinetochore-microtubule interactions in vitro using TIRF microscopy. Kinetochores bind laterally to microtubules, move processively toward the plus end at ~0.56 \u00b5m/min, transition to end-on attachment at the plus end, and then track depolymerizing microtubule ends at ~0.4 \u00b5m/min. Kinetochores remain stably attached throughout these transitions and never detach from microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C29-C36, C90, C96-C100 collectively demonstrate the reconstitution and characterization of kinetochore dynamics on microtubules. The data from TIRF microscopy (Figure 1) provides quantitative measurements of velocities, directional movement, and transition behaviors. The observations are internally consistent and well-documented with multiple kinetochore proteins showing similar behaviors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C45",
+      "C46",
+      "C47",
+      "C93",
+      "C94"
+    ],
+    "result": "Multiple kinetochore proteins from different subcomplexes (including inner kinetochore proteins without known microtubule-binding capabilities) colocalize and move together on microtubules, indicating that intact or nearly intact kinetochore complexes are present in the assay. The lysate preparation preserves physiological protein concentrations and ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41, C45-C47, C93-C94 are supported by dual-color imaging experiments (Figure 2) showing colocalization of kinetochore proteins from different subcomplexes. The observation that inner kinetochore proteins without microtubule-binding capability move on microtubules strongly suggests intact complexes. The inference about physiological concentrations is reasonable given the whole-cell lysate approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C95"
+    ],
+    "result": "Cryo-correlative light microscopy and electron tomography revealed large protein complexes (~100 nm) associated with microtubules that resemble previously characterized kinetochore particles. Electron densities corresponding to Dam1 ring, Ndc80, and MIND subcomplexes were identified, confirming the presence of multi-protein kinetochore particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C95 are supported by cryo-ET data (Figure 3) showing structural features consistent with known kinetochore architecture. The comparison to previously published structures (Gonen et al., 2012) provides validation. However, the identification of specific subcomplexes from electron density is somewhat inferential and could benefit from additional validation methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C71"
+    ],
+    "result": "Kip3 (kinesin-8) is specifically required for plus-end directed kinetochore motility. In kip3\u0394 lysates, only 28% of kinetochores moved (vs 77% in wild-type), with reduced run lengths (0.46 \u00b5m vs 0.73 \u00b5m) and only 5.7% reaching the plus end (vs 28.1% in wild-type). Adding Kip3+ lysate to immobile kinetochores in kip3\u0394 lysate restored motility in 53.7% of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C55-C65, C71 are strongly supported by systematic motor deletion experiments (Figure 4) with quantitative measurements. The rescue experiment (C64-C65) provides compelling evidence that Kip3 acts directly on kinetochores. Statistical significance is reported for key comparisons. The velocity remaining unchanged in kip3\u0394 (C59) is interesting but requires further mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Among yeast kinesins, only Kip3 and Kip2 moved processively on microtubules, but only Kip3 deletion disrupted kinetochore motility. Cin8 and Kip1 bound stochastically without processive movement, and Kar3 was rarely observed. This demonstrates that processive plus-end directed motor activity alone is insufficient for kinetochore movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by dual-color imaging of motors with kinetochores (Figure 5\u2014figure supplement 1a) and deletion experiments (Figure 4). The observation that Kip2 is processive but doesn't support kinetochore movement is important for understanding specificity. However, the lack of Kar3 observation may be due to experimental conditions rather than biological absence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Kip3 did not show persistent colocalization with kinetochores, but brief moments of Kip3 signal running through kinetochore signals were observed. Kip3 moved much faster than kinetochores or microtubule polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by dual-color imaging data (Figure 5). The lack of persistent colocalization despite functional requirement suggests transient interactions. However, the authors acknowledge that high Kip3 density may obscure stable associations, introducing some uncertainty about the interaction mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The Kip3\u0394T-LZ mutant (lacking the tail domain) shows declustered kinetochores in vivo and increased kinetochore velocity (0.76 \u00b5m/min) and run length (1.4 \u00b5m) in vitro, but reduced catastrophe frequency results in only 12.4% of kinetochores reaching the plus end. This demonstrates Kip3's dual function: the motor domain drives kinetochore movement while the tail domain regulates microtubule dynamics to enable kinetochores to reach plus ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C89, C114-C118 are supported by experiments with the Kip3\u0394T-LZ mutant (Figure 5). The in vivo phenotype correlates with in vitro behavior, strengthening the conclusions. The dual function model is well-supported by the observation that kinetochores move faster but reach the plus end less frequently in the mutant. Statistical significance is reported for key measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Kinetochore dynamics observed in metaphase lysates are cell-cycle specific. In S-phase and anaphase lysates, kinetochores are stationary on microtubules and do not induce tip-associated depolymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by experiments using lysates from different cell cycle stages (Figure 1\u2014figure supplement 1). This control demonstrates that the observed dynamics are not artifacts of the lysate system but reflect cell-cycle-regulated behaviors. However, the mechanism underlying this cell-cycle specificity is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The mScarlet-I fluorophore and other red fluorescent proteins tested (mScarlet, TagRFP-T, mRuby2) exhibited blinking and/or rapid bleaching. However, GFP-tagged Ndc80 and Mtw1 never dissociated from microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 describe technical observations about fluorophore behavior that are supported by experimental data and a citation (Klementieva et al., 2017). These observations are important for interpreting the colocalization data but represent methodological details rather than primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "In the tension-less in vitro system, kinetochores do not detach from microtubule plus ends, consistent with in vivo observations that end-bound kinetochores remain attached after S phase and with previous in vitro studies showing stable chromosome-microtubule associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 compare the in vitro observations to prior literature (Akiyoshi et al., 2010; Tanaka et al., 2005b; Koshland et al., 1988). The consistency across systems supports the validity of the reconstitution. However, the authors acknowledge that differences in composition or conditions could account for variations from other studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Reconstituted kinetochores move exclusively toward the plus end in a Kip3-dependent manner, contrasting with in vivo observations of minus-end directed Kar3-dependent movement. The authors propose that yeast may use both mechanisms analogously to mammalian cells, where dynein moves chromosomes toward poles and CENP-E moves them toward the equator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C108 present an interesting hypothesis reconciling apparently contradictory observations. While C104 is well-supported by the experimental data, the proposed dual-mechanism model (C108) is speculative and not directly tested. The comparison to mammalian systems (C106-C107) is based on literature but the functional analogy requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Kinetochores reach the plus end through a combination of directed movement and microtubule catastrophe. The wide distribution of kinetochore velocities with frequent pausing suggests Kip3 affects kinetochore mobility stochastically, possibly through transient binding. This is consistent with Kip3's in vivo colocalization with kinetochores and association with centromeric DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 integrate experimental observations (velocity distributions from Figure 1d-e) with prior literature (Tytell and Sorger, 2006). The stochastic model (C113) is a reasonable interpretation of the data, though direct evidence for transient binding is limited. The consistency with prior in vivo observations strengthens the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "In wild-type cells, kinetochores cluster in two foci, but in kip3\u0394 and kip3\u0394T-LZ cells, kinetochores are declustered along spindle microtubules. The authors hypothesize that laterally bound kinetochores are intermediates toward biorientation, that Kip3 moves them to plus ends during prometaphase, and that the declustered phenotype results from laterally bound kinetochores stalled along spindles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C121 are supported by in vivo imaging (Figure 5a-b) and prior literature. However, the hypotheses in C122-C124 connecting the in vitro observations to the in vivo phenotype are speculative. While plausible, direct evidence that declustered kinetochores represent stalled lateral attachments is not provided. Additional experiments tracking kinetochore attachment states in vivo would be needed to confirm this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors propose that Kip3 facilitates stable kinetochore attachment to microtubule plus ends through two mechanisms: moving kinetochores laterally on microtubules and regulating microtubule plus end dynamics. When kinetochores reach plus ends, they convert to end-on attachments and microtubule disassembly ensues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C91-C92 represent the authors' proposed model integrating their findings. While C92 (the conversion and depolymerization) is directly observed and well-supported, C8-C9 (the dual mechanism) is more inferential. The model is consistent with all experimental observations, particularly the Kip3\u0394T-LZ mutant data, but some mechanistic details remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C76",
+      "C78"
+    ],
+    "result": "Background claims establishing the biological context: kinetochores attach chromosomes to microtubules during mitosis, lateral-to-end-on conversion has been observed across species, various motors including kinesin-8 proteins are involved in kinetochore-microtubule dynamics and chromosome segregation, and proper attachment is essential for genomic integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C28, C76, C78 provide established background knowledge supported by extensive citations to prior literature. These claims set the context for the current work and are well-documented in the field. They are not novel findings of this study but necessary context.",
+    "result_type": "MINOR"
+  }
+]

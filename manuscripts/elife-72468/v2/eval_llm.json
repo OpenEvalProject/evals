@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "NBI-921352 is a potent and selective inhibitor of NaV1.6 channels with an IC50 of 0.051 \u00b5M for human NaV1.6 and 0.058 \u00b5M for mouse NaV1.6. The compound demonstrates high selectivity over other sodium channel isoforms, with selectivity ratios of at least 134-fold for NaV1.6 over NaV1.2, 276-fold over NaV1.7, 756-fold over NaV1.1, and >583-fold over NaV1.3, NaV1.4, and NaV1.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The potency and selectivity claims are well-supported by automated patch-clamp electrophysiology data from multiple biological replicates (N=3) with reported 95% confidence intervals. The data show consistent results across both human and mouse orthologs, and the selectivity ratios are calculated directly from the IC50 measurements. The experimental methods are appropriate and adequately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "NBI-921352 inhibits nine patient-identified SCN8A gain-of-function variants with potencies similar to wild-type NaV1.6, except for the R1617Q variant which shows 6.6-fold reduced potency (IC50 = 0.34 \u00b5M). The reduced potency for R1617Q is consistent with this variant residing in the predicted binding site (domain IV voltage sensor) of NBI-921352.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The variant inhibition data are supported by automated patch-clamp experiments with reported IC50 values and 95% confidence intervals. Eight of nine variants show IC50 values within or close to the wild-type range, while R1617Q shows a clear and statistically significant reduction in potency. The mechanistic interpretation regarding the binding site is reasonable given structural considerations, though it remains an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C70",
+      "C71",
+      "C72",
+      "C142"
+    ],
+    "result": "NBI-921352 is a highly state-dependent inhibitor with >750-fold preference for inactivated channels over rested channels. The compound potently inhibits inactivated NaV1.6 channels (IC50 = 0.051 \u00b5M at -45 mV holding potential) while showing weak inhibition of rested channels (IC50 = 36 \u00b5M at -120 mV holding potential).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The state-dependence is clearly demonstrated by voltage-clamp experiments using different holding potentials to bias channels toward rested or inactivated states. The >750-fold difference in IC50 values between the two conditions provides strong quantitative support. The experimental design appropriately tests the hypothesis, and the results are consistent with the proposed VSD4 binding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "NBI-921352 potently inhibits pathological persistent and resurgent sodium currents from the N1768D variant NaV1.6 channel. The compound inhibits N1768D persistent currents with IC50 = 0.059 \u00b5M and resurgent currents with IC50 = 0.037 \u00b5M, similar to its potency against wild-type inactivated channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inhibition of persistent and resurgent currents is supported by voltage-clamp data using appropriate protocols. The IC50 values are reported with 95% confidence intervals and are consistent with the compound's potency against inactivated wild-type channels. This is therapeutically relevant given that these current types are implicated in SCN8A-related epilepsy pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C126",
+      "C127"
+    ],
+    "result": "NBI-921352 selectively inhibits action potential firing in glutamatergic excitatory pyramidal neurons while sparing fast-spiking inhibitory interneurons. At 0.25 \u00b5M, NBI-921352 significantly reduced firing in pyramidal neurons (p<0.05 for current injections >160 pA) but had no significant effect on interneuron firing. In contrast, carbamazepine (100 \u00b5M) inhibited both neuron types similarly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects on neuron types are supported by current-clamp electrophysiology in brain slices with appropriate statistical analysis (paired t-tests, N=3-4 cells). The selective inhibition of excitatory neurons while sparing inhibitory interneurons is consistent with the compound's NaV1.6 selectivity over NaV1.1. The comparison with carbamazepine provides important context showing the non-selective nature of existing ASMs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Oral NBI-921352 prevents electrically induced seizures in Scn8aN1768D/+ mice in a dose-dependent manner with ED50 = 15 mg/kg, plasma EC50 = 0.037 \u00b5M, and brain EC50 = 0.064 \u00b5M. This demonstrates in vivo efficacy in a genetic model of SCN8A-related epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The efficacy in the Scn8aN1768D/+ mouse model is well-supported by dose-response data with reported ED50 and EC50 values with 95% confidence intervals. The modified 6 Hz seizure assay appropriately differentiates mutant from wild-type mice. Bioanalytical measurements of plasma and brain concentrations strengthen the pharmacokinetic-pharmacodynamic relationship. The model is clinically relevant as it recapitulates the human N1768D variant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "NBI-921352 prevents electrically induced seizures in wild-type mice (DC-MES assay) with ED50 = 23 mg/kg, plasma EC50 = 0.52 \u00b5M, and brain EC50 = 0.20 \u00b5M, demonstrating broader anti-seizure efficacy beyond the SCN8A mutation model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The wild-type mouse DC-MES data are supported by appropriate dose-response experiments with reported ED50 and EC50 values with 95% confidence intervals. The efficacy in wild-type animals suggests broader therapeutic potential beyond SCN8A-related epilepsy, consistent with the role of NaV1.6 in general neuronal excitability. Statistical analysis and bioanalytical measurements support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "NBI-921352 prevents electrically induced seizures in wild-type rats (DC-MES assay) with ED50 = 3.7 mg/kg, plasma EC50 = 0.15 \u00b5M, and brain EC50 = 0.037 \u00b5M, confirming anti-seizure efficacy across multiple species and models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rat DC-MES data provide cross-species validation with appropriate dose-response experiments and reported ED50/EC50 values with 95% confidence intervals. The lower ED50 in rats compared to mice may reflect species differences in pharmacokinetics or pharmacodynamics. The consistency of efficacy across species strengthens confidence in translational potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Repeated dosing of NBI-921352 (twice daily for 6.5 days) showed a trend toward improved efficacy at lower doses compared to single dosing across all three seizure models, though the improvement was not statistically significant when comparing same-dose groups. Drug concentrations did not accumulate with repeated dosing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The repeated dosing data are appropriately analyzed with within-experiment comparisons. While trends toward improved efficacy are noted, the authors correctly report that differences were not statistically significant when comparing single vs. repeated dosing at the same dose level. The lack of drug accumulation is supported by bioanalytical data. The conservative statistical interpretation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "NBI-921352 achieves seizure prevention at lower brain concentrations than carbamazepine, phenytoin, and lacosamide across all three seizure models. Brain EC50 values for NBI-921352 ranged from 0.037-0.20 \u00b5M compared to 2.6-44 \u00b5M for the comparator ASMs, representing 13-690 fold lower concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative efficacy data are supported by parallel experiments using the same assays and bioanalytical methods. The lower brain concentrations required for NBI-921352 efficacy are consistent with its higher potency for NaV1.6 inhibition. The comparison is fair as all compounds were tested in the same models with the same endpoints. This represents a significant potential advantage in terms of therapeutic index.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "NBI-921352 demonstrates superior tolerability compared to carbamazepine, phenytoin, and lacosamide in rats, with a behavioral signs concentration (BSC) to plasma EC50 ratio of 473-fold versus 2.4-5.0 fold for the comparator ASMs. NBI-921352 was well tolerated up to plasma concentrations of 71 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tolerability data are supported by systematic behavioral observations in dose-response studies. The BSC/EC50 ratio provides a quantitative measure of the therapeutic window. The 100-200 fold improvement over existing ASMs is substantial and clinically meaningful. However, the assessment relies on behavioral observations in rodents, and translation to human tolerability requires clinical validation. The blinded experimental design strengthens confidence in the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C135",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Based on structural similarities to NaV1.7-targeted aryl sulfonamides and biophysical behavior, NBI-921352 is proposed to bind to the domain IV voltage sensor domain (VSD4) in the 'up' (activated) state, thereby stabilizing channel inactivation and reducing NaV1.6 currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposed binding mechanism is an inference based on structural similarities and state-dependent behavior, supported by citations to published work on related compounds. While the state-dependence data are consistent with VSD4 binding, direct structural evidence (e.g., co-crystal structure, mutagenesis studies beyond R1617Q) is not provided. The mechanism is plausible and well-reasoned but remains a hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C37",
+      "C38"
+    ],
+    "result": "The rationale for NaV1.6 selectivity is based on differential expression patterns: reducing NaV1.1 current is proconvulsant due to NaV1.1 predominance in inhibitory interneurons, while reducing NaV1.2 and NaV1.6 currents (more highly expressed in excitatory neurons) is anticonvulsant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This rationale is well-supported by extensive citations to published literature establishing the differential expression patterns and functional consequences of inhibiting different NaV isoforms. The brain slice electrophysiology data (C10, C11, C126, C127) provide direct experimental support for this concept with NBI-921352. This represents a sound scientific basis for the selectivity strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C146",
+      "C17",
+      "C18",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "NBI-921352 has completed Phase I clinical trials showing tolerability at plasma concentrations higher than those required for efficacy in preclinical studies, and is entering Phase II trials for SCN8A-DEE and adult focal-onset seizures to evaluate clinical efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clinical development status is stated as factual information about the compound's progression. Phase I tolerability data are mentioned but not detailed in this manuscript. The Phase II trials represent future work that will provide the critical test of whether preclinical efficacy and tolerability translate to human patients. This is appropriately framed as pending validation.",
+    "result_type": "MINOR"
+  }
+]

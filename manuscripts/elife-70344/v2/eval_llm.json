@@ -1,0 +1,466 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors demonstrate that a nucleocytoplasmic pH oscillation is required for transcriptional response to carbon starvation in S. cerevisiae, mediated by the SWI/SNF chromatin remodeling complex. Specifically, the glutamine-rich low-complexity domain (QLC) in the SNF5 subunit, along with histidines within this sequence, is essential for efficient transcriptional reprogramming, establishing pH changes as a second messenger and the SNF5 QLC as a pH sensor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C6-C7 are well-supported by multiple converging lines of evidence including genetic manipulation (SNF5 mutants), single-cell pH measurements, transcriptional analysis (RT-qPCR, RNA-seq), in vitro biochemical assays, and computational simulations. The data consistently show that both pH oscillations and the SNF5 QLC with its histidines are required for proper transcriptional response to carbon starvation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "Single-cell analysis reveals that intracellular pH is highly dynamic during carbon starvation, with cells initially acidifying to pHi ~6.5, then bifurcating into two populations: one recovering to pHi ~7 that induces glucose-repressed genes, and another remaining at pHi ~5.5 that does not induce these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C77-C80, C82 are supported by flow cytometry data using the pHluorin pH sensor and PADH2-mCherry reporter. The single-cell measurements clearly demonstrate pH heterogeneity and the correlation between pH recovery and gene expression. The bimodal distribution is well-documented in Figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Transient acidification followed by recovery to neutral pH is required for expression of glucose-repressed genes. Acidification alone is not sufficient; subsequent neutralization is also necessary. The timing of acidification is critical, as late acidification fails to induce gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C97-C104 are supported by pH manipulation experiments using different extracellular pH conditions and sorbic acid treatment. The data in Figure 3B demonstrate that both acidification and subsequent neutralization are required, and that the timing of these pH changes is critical for gene induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C62",
+      "C64",
+      "C69",
+      "C70",
+      "C71",
+      "C74",
+      "C75"
+    ],
+    "result": "The SNF5 QLC and four embedded histidines are required for rapid induction of glucose-repressed genes upon carbon starvation. Mutation of these histidines severely impairs ADH2 expression, with four histidine mutations being nearly as disruptive as complete QLC deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C62, C64, C69-C71, C74-C75 are supported by RT-qPCR and flow cytometry data comparing WT, \u0394Qsnf5, and HtoAsnf5 strains. The data consistently show that the QLC and histidines are essential for gene induction, with mutation of 4/7 histidines being sufficient to largely abrogate expression (Figure 1D-E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "SNF5 QLC mutants (\u0394Qsnf5 and HtoAsnf5) acidify normally upon carbon starvation but are defective in subsequent pH neutralization and gene expression. At 4 hours, >95% of mutant cells remain acidic without expression, while >60% of WT cells have neutralized and expressed the reporter. Eventually, after 24 hours, mutant cells do neutralize and induce expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86, C88 are supported by time-course flow cytometry data in Figure 2A-C. The data clearly show that mutants can acidify but have delayed pH recovery and gene expression, demonstrating that the SNF5 QLC is required for the rapid dynamics of both processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C153"
+    ],
+    "result": "The intrinsic nucleosome remodeling and ATPase activities of SWI/SNF are robust to pH changes from 6.5 to 7.6, regardless of whether the SNF5 QLC is present or histidines are mutated. This indicates that the SNF5 QLC does not sense pH by modifying intrinsic enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C125-C128, C153 are supported by in vitro FRET-based nucleosome remodeling assays and ATPase assays (Figure 5B-D, Figure 5\u2014figure supplement 2). The data show that WT and mutant complexes have similar activities across the pH range tested, demonstrating that pH sensing does not occur through modulation of intrinsic enzymatic function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Recruitment of SWI/SNF to the Gal4-VP16 transcription factor is pH-sensitive and depends on the SNF5 QLC and histidines within. Within the physiological pH range (6.5-7.6), recruitment increases with pH for WT complexes. \u0394Qsnf5 complexes show constitutively lower recruitment and are pH-insensitive, while HtoAsnf5 complexes are even more defective. The histidines must be present and deprotonated to enable interaction with VP16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C130-C136, C154-C156 are supported by in vitro recruitment assays using FRET-based nucleosome remodeling in the presence of competitor DNA (Figure 5F-H). The data clearly demonstrate pH-dependent recruitment that requires the SNF5 QLC and histidines, providing a mechanism for pH sensing through modulation of transcription factor interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C40",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "All-atom Monte Carlo simulations show that protonation of histidines within the SNF5 QLC causes conformational expansion, with the radius of gyration increasing and the apparent scaling exponent changing from 0.48 to 0.55. This expansion is driven by intramolecular electrostatic repulsions and is abolished when histidines are mutated to alanine. This conformational change may tune the propensity for SWI/SNF to interact with transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C40, C138-C144 are supported by all-atom Monte Carlo simulations (Figure 6D, Figure 6\u2014figure supplement 1). The computational data demonstrate a clear pH-dependent conformational change that depends on histidine protonation. The magnitude of the change is comparable to other functionally important conformational changes in disordered regions, providing a plausible biophysical mechanism for pH sensing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "RNA-seq analysis reveals that mutation of the SNF5 QLC does not strongly affect gene expression in rich media but causes significant differences upon glucose starvation. Four groups of genes show different dependencies on the SNF5 QLC and pH: Group 1 genes (n=42) require both the SNF5 QLC and pH change for induction and are enriched for adaptive processes like fatty acid metabolism and TCA cycle; Group 2 genes (n=64) are inappropriately induced in mutants; Group 3 genes (n=51) require pH but not SNF5 QLC for repression; Group 4 genes (n=16) require SNF5 QLC but not pH for repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C117, C120-C123 are supported by RNA-seq data with three biological replicates per condition (Figure 4). Principal component analysis, hierarchical clustering, and Gene Ontology analysis provide robust evidence for the different gene groups and their dependencies. The statistical analysis (log2 fold change >1, adjusted p-value <0.05) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Computational analysis of proteomes reveals that proline and histidine are enriched (>50-100%-fold) in yeast QLCs, with similar patterns in Dictyostelium and Drosophila. Histidines are 50% more abundant in QLCs than in other low-complexity sequences. The SNF5 N-terminus contains one of the largest QLCs in the yeast proteome and is in the top 3 QLCs for number of histidines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C45-C47 are supported by computational analysis of proteomes (Figure 1B, Figure 1\u2014figure supplement 2-3). The enrichment calculations are clearly described in the methods, and the data consistently show histidine enrichment in QLCs across species. The analysis of SNF5's position among yeast QLCs is quantitative and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Sequence analysis of 20 SNF5 orthologs from Ascomycota shows that every N-terminal region contains at least 18% glutamine (max 43%) and multiple histidine residues, despite poor overall sequence conservation. Phylogenetic analysis suggests the SNF5 QLC was likely gained in the lineage leading to Ascomycota and is not present in most Metazoa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by sequence alignment and phylogenetic analysis (Figure 1\u2014figure supplement 4-5). The conservation of compositional features (glutamine and histidine content) despite poor sequence conservation is well-documented. The phylogenetic inference about QLC origin is appropriately cautious and based on comparative analysis across the tree of life.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C57"
+    ],
+    "result": "Growth assays reveal that \u0394Qsnf5 and HtoAsnf5 strains grow similarly to WT in continuous culture with various carbon sources, but show a strong growth defect when carbon-starved for 24 hours and then switched to a poor carbon source. This phenotype is distinct from complete SNF5 deletion (snf5\u0394), which causes slow growth in all conditions, indicating that the SNF5 QLC is specifically important for recovery from carbon starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C56-C57 are supported by growth assay data (Figure 1\u2014figure supplement 6). The differential phenotypes between \u0394Qsnf5/HtoAsnf5 and snf5\u0394 strains are clearly demonstrated, showing that QLC deletion has a specific effect on starvation recovery rather than general growth. The experiments appropriately test multiple carbon sources and conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Co-immunoprecipitation and Western blot analysis demonstrate that the entire SWI/SNF complex remains intact in both \u0394Qsnf5 and HtoAsnf5 strains, and all SNF5 alleles are expressed at similar levels to wild-type in both glucose and upon carbon starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by co-IP and Western blot data (Figure 1\u2014figure supplement 7). The data show that QLC deletion or histidine mutation does not disrupt complex assembly or protein stability, which is important for interpreting the functional defects as being due to loss of pH-sensing function rather than structural disruption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C95"
+    ],
+    "result": "Chromatin immunoprecipitation experiments show that wild-type SWI/SNF is robustly recruited to the ADH2 promoter upon carbon starvation, but this recruitment is reduced in \u0394Qsnf5 and HtoAsnf5 strains. Recruitment is also reduced when starvation is performed at pHe 7.5, which prevents intracellular acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C95 are supported by ChIP-qPCR data (Figure 1\u2014figure supplement 8). The experiments appropriately use SNF2-TAP tagged strains and show reduced recruitment in both genetic mutants and pH manipulation conditions. However, the ChIP data would be strengthened by additional replicates and statistical analysis, which are not clearly presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C72",
+      "C73",
+      "C87"
+    ],
+    "result": "Comparison of SNF5 alleles reveals a dual role for SNF5 in ADH2 regulation: snf5\u0394 strains fail to completely repress ADH2 in glucose and show partial induction upon starvation, while \u0394Qsnf5 strains maintain tight repression in glucose but completely fail to induce upon starvation. Complete SNF5 deletion leads to less severe phenotypes than \u0394Qsnf5 or HtoAsnf5 alleles, suggesting SNF5 plays both activating and inhibitory roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C68, C72-C73, C87 are supported by RT-qPCR and flow cytometry data (Figure 1D-E, Figure 2\u2014figure supplement 4). The differential phenotypes of different SNF5 alleles are clearly demonstrated and support the dual function model. However, the molecular mechanism underlying the repression function remains unclear and would benefit from further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "PADH2-mCherry expression in WT strains is bimodal after 6 hours of glucose starvation, with about half of cells showing high fluorescence and half showing low fluorescence. This bimodality is strongly dependent on preculture conditions and is most apparent when cells are acutely starved from early log phase without ever exceeding OD 0.3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by flow cytometry data (Figure 1E). The bimodal distribution is clearly visible in the data. The dependence on preculture conditions is noted but not systematically explored, which limits mechanistic understanding. The biological significance of this bimodality is addressed by showing that the uninduced population has lower fitness (C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "FACS-sorted cells that neither recovered neutral pH nor expressed PADH2-mCherry have lower fitness than the inducing population, as indicated by lower proliferation rates on both rich and poor carbon sources and lower tolerance of heat stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by growth and viability assays on FACS-sorted populations (Figure 2\u2014figure supplement 2). The experiments appropriately demonstrate functional consequences of the pH/expression bifurcation. However, the sample size (n=3) is modest, and the mechanism underlying the fitness difference is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Treatment with cycloheximide to block translation prevents pH recovery after carbon starvation, demonstrating that new gene expression is required for pHi recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by pHluorin measurements in the presence of cycloheximide (Figure 2\u2014figure supplement 5). The experiment appropriately demonstrates that pH recovery requires new protein synthesis, establishing a feedback loop between transcription and pH homeostasis. However, the specific genes/proteins responsible for pH recovery are not identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "Cell viability and PADH2-mCherry expression are highly dependent on extracellular pH (pHe). WT cells fail to induce PADH2-mCherry at pHe \u22657 but induce strongly at pHe \u22646.5. The nucleocytoplasm of all strains fails to acidify when the environment is held at pHe \u22657. RT-qPCR shows similar pHe-dependent behavior for endogenous ADH2 transcript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94, C96 are supported by viability assays, flow cytometry, RT-qPCR, and pHluorin measurements at different pHe values (Figure 3A, Figure 3\u2014figure supplement 1-4). The data consistently show that extracellular pH controls intracellular pH, which in turn controls gene expression. The experiments appropriately test a range of pH values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Forcing \u0394Qsnf5 cells to undergo normal pH oscillations by manipulating extracellular pH does not rescue ADH2 expression, indicating that the SNF5 QLC is required for both normal kinetics of transient acidification and for additional steps in ADH2 gene activation beyond pH sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by pH manipulation experiments (Figure 3B, right panel). The data show that even with forced pH oscillations, \u0394Qsnf5 cells fail to induce ADH2, demonstrating that the QLC has functions beyond simply responding to pH changes. However, the nature of these additional functions is not fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Transcription factor enrichment analysis of Group 1 genes identifies CAT8 and ADR1 as top hits. These transcription factors have previously been suggested to recruit SWI/SNF to the ADH2 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are supported by transcription factor enrichment analysis using YEASTRACT (Supplementary file 3) and citation to prior work (Biddick et al., 2008b). The enrichment analysis is appropriate for identifying candidate transcription factors, though direct experimental validation of CAT8/ADR1 involvement in pH-dependent recruitment is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C28",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Sequence analysis reveals that 10/11 subunits of the SWI/SNF complex contain large intrinsically disordered regions, and 4/11 subunits contain glutamine-rich low-complexity sequences (QLCs). SNF5 is over 50% disordered and contains the largest QLC of the complex, which is 42% glutamine and contains seven histidine residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C28, C30-C32 are supported by disorder prediction analysis (Figure 1\u2014figure supplement 1) and sequence analysis. The disorder predictions use metapredict, which is an appropriate tool. The characterization of the SNF5 QLC is quantitative and well-documented. This provides important context for why SNF5 was chosen for detailed study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Recent structural evidence shows that the QLCs of SNF5 and several other SWI/SNF subunits appear to be poised for interaction with transcription factors on DNA immediately downstream of the nucleosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by citation to recent structural work (He et al., 2021) and analysis presented in Figure 5\u2014figure supplement 1. The structural context supports the functional model that QLCs mediate transcription factor interactions. However, this is based on structural inference rather than direct experimental demonstration in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The authors propose a model where low pHi favors release of SWI/SNF from activators bound in glucose conditions, and subsequent partial recovery in pHi allows binding to a different set of activators (e.g., ADR1 and CAT8), recruiting SWI/SNF to genes expressed during starvation. This model is consistent with the requirement for both acidification and neutralization for ADH2 expression. Additional pH-sensing elements likely exist in the transcriptional machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C160 represent a speculative model that is consistent with the data but not directly tested. The model is plausible and integrates multiple observations, but key predictions (e.g., pH-dependent release from glucose-condition activators, pH-dependent binding to ADR1/CAT8) are not experimentally validated. The acknowledgment of additional pH-sensing elements is appropriate given the complexity of the transcriptional response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C43",
+      "C44",
+      "C53",
+      "C58",
+      "C59",
+      "C76",
+      "C90",
+      "C145",
+      "C147",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The manuscript provides extensive background on intracellular pH regulation, the SWI/SNF complex, and glucose-repressed genes, citing prior published work. This includes information about pH variability, pH regulation in yeast, the role of SWI/SNF in gene expression, properties of QLCs and intrinsically disordered regions, and histidine chemistry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21, C24-C27, C29, C43-C44, C53, C58-C59, C76, C90, C145, C147, C150-C152 are background claims supported by appropriate citations to prior published work. These claims provide necessary context for the study and are generally accurate representations of the cited literature. The citations are appropriate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C146",
+      "C148",
+      "C149",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "The discussion synthesizes the findings and places them in broader context, including comparison to prior work, discussion of QLCs in disease and normal biology, evolutionary considerations, and speculation about mechanisms and broader implications. The authors propose that pH-dependent conformational changes in QLCs could be a general mechanism for regulating cell biology in response to pH changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146, C148-C149, C161-C179 are primarily discussion and speculation based on the results. While the synthesis is generally reasonable and well-supported by citations, many of these claims represent interpretations, speculations, or proposals for future work rather than direct findings of the current study. The broader implications about QLCs as general pH sensors (C164, C179) are plausible but not directly tested beyond the SNF5 example.",
+    "result_type": "MINOR"
+  }
+]

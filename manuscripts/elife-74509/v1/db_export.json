@@ -1,0 +1,1617 @@
+{
+  "submission": {
+    "id": "f40154de-1819-4ef7-b515-ba5d630b6098",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:09:48.885154Z",
+    "updated_at": "2025-12-03T12:09:48.885154Z"
+  },
+  "content": [
+    {
+      "id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "submission_id": "f40154de-1819-4ef7-b515-ba5d630b6098",
+      "content_type": "manuscript",
+      "content_text": "# Synthetic reconstruction of the hunchback promoter specifies the role of Bicoid, Zelda and Hunchback in the dynamics of its transcription\n\n## Authors\n\n- Gon\u00e7alo Fernandes<sup>1</sup> ([ORCID: 0000-0001-8352-2581](https://orcid.org/0000-0001-8352-2581))\n- Huy Tran<sup>1</sup> ([ORCID: 0000-0002-9057-060X](https://orcid.org/0000-0002-9057-060X))\n- Maxime Andrieu<sup>1</sup>\n- Youssoupha Diaw<sup>1</sup>\n- Carmina Perez Romero<sup>3</sup>\n- C\u00e9cile Fradin<sup>3</sup>\n- Mathieu Coppey<sup>5</sup> ([ORCID: 0000-0001-8924-3233](https://orcid.org/0000-0001-8924-3233))\n- Aleksandra M Walczak<sup>2</sup> ([ORCID: 0000-0002-2686-5702](https://orcid.org/0000-0002-2686-5702)) \u2020\n- Nathalie Dostatni<sup>1</sup> ([ORCID: 0000-0002-1562-6167](https://orcid.org/0000-0002-1562-6167)) \u2020\n\n### Affiliations\n\n1. Institut Curie, Universit\u00e9 PSL, Sorbonne Universit\u00e9, CNRS, Nuclear Dynamics Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))\n2. Laboratoire de Physique de l\u2019\u00c9cole Normale Sup\u00e9rieure, CNRS, Universit\u00e9 PSL, Sorbonne Universit\u00e9 and Universit\u00e9 de Paris Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))\n3. Department of Biochemistry and Biomedical Sciences, McMaster University Hamilton Canada ([ROR:02fa3aq29](https://ror.org/02fa3aq29))\n4. Department of Physics and Astronomy, McMaster University Hamilton Canada ([ROR:02fa3aq29](https://ror.org/02fa3aq29))\n5. Institut Curie, Universit\u00e9 PSL, Sorbonne Universit\u00e9, CNRS UMR168, Laboratoire Physico Chimie Curie Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))\n\n\u2020 Corresponding author\n\n## Abstract\n\nFor over 40 years, the Bicoid-hunchback (Bcd-hb) system in the fruit fly embryo has been used as a model to study how positional information in morphogen concentration gradients is robustly translated into step-like responses. A body of quantitative comparisons between theory and experiment have since questioned the initial paradigm that the sharp hb transcription pattern emerges solely from diffusive biochemical interactions between the Bicoid transcription factor and the gene promoter region. Several alternative mechanisms have been proposed, such as additional sources of positional information, positive feedback from Hb proteins or out-of-equilibrium transcription activation. By using the MS2-MCP RNA-tagging system and analysing in real time, the transcription dynamics of synthetic reporters for Bicoid and/or its two partners Zelda and Hunchback, we show that all the early hb expression pattern features and temporal dynamics are compatible with an equilibrium model with a short decay length Bicoid activity gradient as a sole source of positional information. Meanwhile, Bicoid\u2019s partners speed-up the process by different means: Zelda lowers the Bicoid concentration threshold required for transcriptional activation while Hunchback reduces burstiness and increases the polymerase firing rate.\n\n## Introduction\n\nMorphogen gradients are used by various organisms to establish polarity along embryonic axes or within organs. In these systems, positional information stems from the morphogen concentration detected by each cell in the target tissue and mediates the determination of cell identity through the expression of specific sets of target genes. While these processes ensure the reproducibility of developmental patterns and the emergence of properly proportioned individuals, the question of whether the morphogen itself directly contributes to this robustness or whether it requires the involvement of downstream cross-regulatory networks or cell-communication remains largely debated. This question becomes even more pressing with the recent discovery that when studied at the single-cell level, transcription is frequently observed to be an extremely noisy process, hardly suggestive of such precise control.\n\nTo understand how reproducible transcription patterns can robustly emerge from subtle differences of morphogen concentration, we study the Bicoid (Bcd) morphogen system which initiates pattern formation along the antero-posterior (AP) axis in the young fruit fly embryo (Driever and N\u00fcsslein-Volhard, 1988). The Bcd gradient was shown to be steadily established at the onset of transcription, one hour after egg laying, in the form of an exponential AP gradient with a \u03bbdecay length measured in the range of 16\u201325% egg-length (EL) (Abu-Arish et al., 2010; Durrieu et al., 2018; Houchmandzadeh et al., 2002; Liu et al., 2013). Fluorescent correlation spectroscopy measurements (Abu-Arish et al., 2010) and single molecule tracking of GFP-tagged Bcd proteins (Mir et al., 2018) revealed that a fraction of the Bcd proteins has a fast diffusion coefficient sufficient to explain the establishment of the gradient in such a short time by the synthesis-diffusion-degradation model (Abu-Arish et al., 2010; Fradin, 2017). This was further supported with the use of a tandem fluorescent timer as a protein age sensor (Durrieu et al., 2018). Of note, the establishment of the Bcd gradient is not only rapid but also extremely precise in space with only 10% variability among embryos (Gregor et al., 2007b) and the gradient is linearly correlated to the amount of bcd mRNA maternally provided and the number of functional bcd alleles in the females (Liu et al., 2013; Petkova et al., 2014).\n\nThe Bcd protein binds DNA through its homeodomain (Hanes and Brent, 1989; Treisman et al., 1989) and activates the expression of a large number of target genes carrying Bcd binding sites (BS). Among the Bcd target genes, hunchback (hb) is expressed in a large domain spanning the whole anterior half of the embryo (Driever et al., 1989). hb expression begins when the first hints of transcription are detected in the embryo, i.e. at nuclear cycle 8 (Porcher et al., 2010). About one hour later (i.e. at nuclear cycle 14), the expression domain of hb is delimited by a posterior boundary, which is both precisely positioned along the AP axis and very steep suggesting that very subtle differences in Bcd concentration in two nearby nuclei at the boundary are already precisely measured to give rise to very different transcriptional responses (Crauk and Dostatni, 2005; Gregor et al., 2007a; Houchmandzadeh et al., 2002). Detailed analysis of hb expression by RNA FISH also indicated that transcription at the hb locus is extremely dynamic in time: it is detected during the successive S-phases but not during the intervening mitoses, which punctuate this period of development.\n\nTo gain insights into the dynamics of hb early expression with a higher temporal resolution, the MS2-MCP approach for fluorescent tagging of RNA (Ferraro et al., 2016) was adapted to living fruit fly embryos (Lucas et al., 2013; Garcia et al., 2013). This provided an hb-P2 MS2-reporter expressed anteriorly in a domain with a boundary of the same steepness and positioning precision as the endogenous hb (Lucas et al., 2018). Of note, despite, this highly reproducible measurement of positional information (position and steepness of the boundary) on the scale of the embryo, at the single locus level, the variability in the total mRNA production (\u03b4mRNA/mRNA) over an entire nuclear cycle for loci at the boundary was of 150 %, i.e. one locus can produce 2.5 X more mRNA than another locus (Desponds et al., 2016). This high variability (noise) was consistent with smFISH data measuring the variability of hb mRNA amounts in nuclei (Little et al., 2013). It reflects a stochastic transcription process in neighboring nuclei which nevertheless all make the precise decision to turn ON hb during the cycle.\n\nThe transcription dynamics of the hb-P2 MS2-reporter indicated that its steep boundary is established at each nuclear cycle 11\u201313 within 180 s and therefore suggested that accurate measurements of Bcd concentration were made much more rapidly than anticipated (Lucas et al., 2018). Consistently, inactivating Bcd by optogenetics in the embryo indicated that the hb transcription exhibited a very fast sensitivity to Bcd activity (Huang et al., 2017). Modeling was used to recapitulate the observed dynamics assuming cooperative binding of Bcd proteins to the six known BS sites of the hb-P2 promoter and rate limiting concentrations of Bcd at the boundary (Tran et al., 2018a). The model was able to recapitulate the fast temporal dynamics of the boundary establishment but could not reproduce its observed steepness which, given the 20% EL decay length of the Bcd protein gradient measured with immuno-staining (Houchmandzadeh et al., 2002), corresponds to a Hill coefficient of ~7, difficult to achieve without invoking the need for additional energy expenditure (Estrada et al., 2016). As expected, the performance of the model was higher when increasing the number of Bcd BS above six with a minimum of 9 Bcd BS required to fit the experimental data with a boundary of the appropriate steepness. This indicated that either the hb-P2 promoter contained more than 6 Bcd BS or that additional mechanisms were required to account for the steepness of the boundary.\n\nWhile quantitative models based on equilibrium binding of transcription factors to DNA shed lights on segmentation in Drosophila (Segal et al., 2008) or on the Bcd system (Estrada et al., 2016; Tran et al., 2018a), their impact remained limited by the lack of a quantitative experimental systems for validation. Here, we combined the MS2 quantitative probing system with a synthetic approach to decipher the functioning of Bcd in the transcription process at the mechanistic level. We built Bcd-only reporters with specific numbers of Bcd BS as well as reporters with 6 Bcd BS in combination with BS for the two known maternal Bcd co-factors binding to the hb-P2 promoter, namely the Hb protein itself (Porcher et al., 2010; Simpson-Brose et al., 1994) and the Zelda (Zld) pioneer transcription factor (Hannon et al., 2017; Xu et al., 2014). We show that 6 Bcd BS are not sufficient to recapitulate the hb-P2 expression dynamics while a reporter with only 9 Bcd BS recapitulates most of its spatial features, except a slightly lower steepness of its expression boundary and a longer period to reach steady state. To account for the bursty behavior of Bcd-only reporters in excess of Bcd, we fitted our data to a model involving a first step of Bcd binding/unbinding to the BS array and a second step where the bound Bcd molecules activate transcription. Synthetic reporters combining Bcd BS with either Hb or Zld BS indicated that both Hb and Zld sites reduce the time to reach steady state and increase expression by different means: Zld sites contribute to the first step of the model by drastically lowering the Bcd concentration thresholds required for activation while Hb sites act in the second step by reducing Bcd-induced burstiness and increasing the polymerase firing rates. Importantly, in embryos maternally expressing one (1 X) vs two (2 X) bcd functional copies, the boundary shift of the Bcd-only synthetic reporter with 9 Bcd BS was small enough to set the Bcd system within the limits of an equilibrium model. Lastly, the shift observed for the hb-P2 reporter in 1 X vs 2 X bcd backgrounds was the same as for the synthetic reporters further supporting that the Bcd gradient is the main source of positional information for the early expression of hb.\n\n## Results\n\n### Nine Bicoid binding sites alone recapitulate most features of the hb-P2 pattern\n\nWe first investigated the transcription dynamics of Bcd-only MS2 reporters carrying exclusively 6, 9, or 12 strong Bcd binding sites (BS) (Hanes and Brent, 1989; Treisman et al., 1989) upstream of an hsp70 minimal promoter (Figure 1A and Supplementary file 1), all inserted at the same genomic location (see Materials and methods and Figure 1\u2014figure supplement 1). Videos were recorded (see Videos 1\u20133) and analyzed from nuclear cycle 11 (nc11) to 13 (nc13) but we focused on nc13 data, which are statistically stronger given the higher number of nuclei analyzed. Unless otherwise specified, most conclusions were also valid for nc11 and nc12. Given that the insertion of a BAC spanning the whole endogenous hb locus with all its Bcd-dependent enhancers did not affect the regulation of the wild-type gene (Lucas et al., 2018), it is unlikely that there will be competition for Bcd binding between the endogenous hb and these synthetic reporters.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74509/elife-74509-fig1-v1.jpg)\n\n**Figure 1.:** (A) Arrangement of the binding sites for Bcd (yellow), Hb (purple), and Zld (blue) upstream of the TATA box (red) and the TSS (broken arrow) of each reporter. (B) The MS2 reporters express the iRFP coding sequence followed by the sequence of the 24 MS2 stem loops. In the hb-P2 reporter, the hb-P2 promoter, 5\u2019UTR sequence of the endogenous hb and its intron are placed just upstream of the iRFP sequence. In the synthetic reporters, the minimal promoter of the hsp70 gene was used. Of note, replacing the minimal promoter of hsp70 in B6 by the hb minimal promoter leads to a reporter with lower activity (Figure 1\u2014figure supplement 1), (F\u2013G). (C) Kymographs of mean fraction of active loci (colormap on the right) as a function of time (Y axis in s) and nuclei position along the AP axis (X axis in %EL) at nc13. (D) Along the AP axis (%EL), mean time of first spot appearance T0 (s) with shaded standard error of the mean and calculated only for loci with observed expression. (E) Cumulative distribution function of T0 (s) in the anterior (20% \u00b1 2.5 %EL). (F) Boundary position (%EL) of fraction of nuclei with MS2 signal along AP axis, with shaded 95% confidence interval, as a function of time. The dash vertical lines represent the time to reach the final decision boundary position ( \u00b1 2 %EL). (G) Fraction of nuclei with any MS2 signal, averaged over n embryos, with shaded standard error of the mean, along the AP axis (%EL), at nc13. (H) Boundary position and width were extracted by fitting the patterns fraction of expressing nuclei, (G) with a sigmoid function. Bar plots with 95% confidence interval for boundary position and width as the gray region placed symmetrically around the boundary position. Average values and confidence intervals are indicated in the adjacent table. (D\u2013H) reporter data are distinguished by color: hb-P2 (orange, n = 5 embryos), B6 (yellow, n = 5 embryos), B9 (cyan, n = 6 embryos), and B12 (green, n = 4 embryos).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74509/elife-74509-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** inserted at the vk33 site on the 3rd chromosome and randomly in the 2nd chromosome and 3rd chromosome (Lucas et al., 2018). (A) Kymographs representing the fraction of nuclei with active MS2 loci (represented as by the colormap) as a function of time and nuclei position along the AP axis. The white dashed horizontal lines represent mitoses between nuclear cycles. (B) Fraction of nuclei with any MS2 expression in nc13, averaged over multiple embryos, with shaded error of the mean as a function of nuclei position along AP axis (%EL). (C) Bar plots with 95% confidence interval for the expression boundary position for MS2 reporters, based on the fraction of expressing loci (panel B). For each reporter, also shown is the boundary width as the gray region placed symmetrically around the boundary position. (D) Time evolution of the fraction of active MS2 loci near the anterior pole (from 15% to 25%EL) in nc11, nc12, and nc13. (E) Time evolution of the MS2 locus intensity per nucleus at the anterior pole (from 15% to 25%EL) in nc11, nc12, and nc13. In panels B, E, and D, data is shown for the hb-P2 reporter inserted at the vk33 site (blue, n = 5 embryos), randomly in the 2nd chromosome (red, n = 3) and in the 3rd chromosome (green, n = 6). (F) Fraction of nuclei with MS2 expression, averaged over multiple embryos, with shaded standard error of the mean, during nc13 along the AP axis (%EL). (G) Fraction of MS2 loci active time at steady state, averaged over multiple embryos, with shaded standard error of the mean, during nc13 along the AP axis (%EL). In panel F and G, data shown for B6 reporters with TATA box of HSBG promoter (solid orange) and of hb-P2 promoter (dashed red).\n\n![Video 1.](https://cdn.elifesciences.org/articles/74509/elife-74509-video1.mp4.jpg)\n\n**Video 1.:** The videos have two channels: MCP-GFP channel (green) for monitoring the dynamics of nascent mRNA production and His-RFP (red) for nuclei detection. The capture frame is from 15% to 65% of embryo length. The anterior pole is on the left side of the frame. Position along the AP axis is indicated by white vertical bars positioned every 10% EL with the tallest one corresponding to 50% EL.\n\n![Video 2.](https://cdn.elifesciences.org/articles/74509/elife-74509-video2.mp4.jpg)\n\n**Video 2.:** The videos have two channels: MCP-GFP channel (green) for monitoring the dynamics of nascent mRNA production and His-RFP (red) for nuclei detection. The capture frame is from 18% to 65% of embryo length. The anterior pole is on the left side of the frame. Position along the AP axis is indicated by white vertical bars positioned every 10% EL with the tallest one corresponding to 50% EL.\n\n![Video 3.](https://cdn.elifesciences.org/articles/74509/elife-74509-video3.mp4.jpg)\n\n**Video 3.:** The videos have two channels: MCP-GFP channel (green) for monitoring the dynamics of nascent mRNA production and His-RFP (red) for nuclei detection. The capture frame is from 20% to 70% of embryo length. The anterior pole is on the left side of the frame. Position along the AP axis is indicated by white vertical bars positioned every 10% EL with the tallest one corresponding to 50% EL.\n\nThe expression of the B6 (6 Bcd BS), B9 (9 Bcd BS), and B12 (12 Bcd BS) reporters harbored similar features as expression of the hb-P2 reporter (Lucas et al., 2018), which carries the ~300 bp of the hb-P2 promoter and the hb intron (Figure 1B, Supplementary file 1, Video 4): during the cycle, transcription was first initiated in the anterior with the expression boundary moving rapidly toward the posterior to reach a stable position into nc13 (Figure 1C). For all synthetic reporters, the earliest time when transcription was detected following mitosis (averaged over nuclei at the same position, see also Materials and methods), $T_{0}$ , showed a dependence on position along the AP axis (Figure 1D), as observed for hb-P2 (Lucas et al., 2018). Thus, Bcd concentration is a rate-limiting factor for the expression of all reporters. As indicated by the distributions of onset time $T_{0}$ in the anterior (~20 %EL), the first transcription initiation time at high Bcd concentration were not statistically different (P-values > 0.5) for all synthetic reporters (B6, B9, or B12) and hb-P2 (Figure 1E). This contrasts to the middle of the axis where the absolute number of Bcd molecules has been evaluated to be around 700 (Gregor et al., 2007a) and where the Bcd protein is thus likely to be limiting: transcription dynamics of the various reporters was quite diverse (Figure 1F) and the time it took for the hb-P2 reporter to reach the final decision to position its boundary (converging time, Supplementary file 2) was only 225 \u00b1 25 s while it took about twice as much time for B6 (425 \u00b1 25 s) or B9 (475 \u00b1 25 s) and slightly less for B12 (325 \u00b1 25 s).\n\n![Video 4.](https://cdn.elifesciences.org/articles/74509/elife-74509-video4.mp4.jpg)\n\n**Video 4.:** The videos have two channels: MCP-GFP channel (green) for monitoring the dynamics of nascent mRNA production and His-RFP (red) for nuclei detection. The capture frame is from 15% to 70% of embryo length. The anterior pole is on the left side of the frame. Position along the AP axis is indicated by white vertical bars positioned every 10% EL with the tallest one corresponding to 50% EL.\n\nFor all reporters, the fraction of nuclei with MS2 signal during the cycle exhibited a sigmoid-like pattern along the AP axis reaching 100% in the anterior and 0% in the posterior (Figure 1G). We fitted these patterns with sigmoid functions of position along the AP axis and extracted (see Materials and methods) quantitative values for the position and width of the expression boundary (Figure 1H). Increasing the number of Bcd BS from 6 to 9, shifted the expression boundary toward the posterior and decreased the width of the boundary (Figure 1H), whereas increasing the number of Bcd sites from 9 to 12 did not significantly change the boundary position nor the boundary width. Of note, B9, B12, and hb-P2 expression boundaries were at almost identical positions while the width of the hb-P2 boundary was smaller than the width of the B9 or the B12 boundaries (Figure 1H).\n\nThus, even though 6 Bcd BS have been described in the hb-P2 promoter, having only 6 Bcd BS alone in a synthetic reporter is not sufficient to recapitulate the hb pattern. Increasing this number up to nine is sufficient to recapitulate almost all spatial features of the hb-P2 pattern except for the steepness of the expression boundary. Of note, the Bcd-only reporters take much longer than the hb-P2 reporter to reach the final decision for boundary positioning suggesting that binding of additional transcription factors in the hb-P2 promoter likely contribute to speeding-up the process.\n\n### Bicoid-dependent transcription is bursty at steady state even in excess of Bicoid\n\nTo study the kinetics of transcription induced by Bcd, we compared the dynamics of transcription of the hb-P2 and the Bcd-only reporters at steady state (in the time window of 600\u2013800 s). From the time trace of MS2 activity in each nucleus, the fluctuation of the transcription process (burstiness, Figure 2\u2014figure supplement 1) at a given position along the AP axis was featured by $P_{Spot}$ , the average fraction of the cycle length during which fluorescent spots were observed (Figure 2A). In the anterior (~20 %EL), $P_{Spot}$ increased when increasing the number of Bcd BS in synthetic reporters from 6 to 9, with $P_{Spot}B6$ = 0.47 \u00b1 0.02 and $P_{Spot}B9$ = 0.80 \u00b1 0.07. $P_{Spot}$ (hb-P2) = 0.84 \u00b1 0.008 was as high as for B9 or B12 ($P_{Spot}B12$ = 0.76 \u00b1 0.07). These values were all smaller than the fraction of expressing nuclei ( ~ 1, Figure 1G). This indicated bursty transcription activity in individual nuclei for all reporters, as confirmed by their individual MS2 traces in this region. Interestingly, $P_{Spot}$ for all Bcd-only reporters reach a plateau in the anterior where the Bcd concentration is in excess (Figure 2A and Figure 2\u2014figure supplement 1). As in this region the Bcd BS on those reporters are likely to be always occupied by Bcd molecules, the burstiness observed is not caused by the binding/unbinding of Bcd to the BS array but by downstream processes. Meanwhile, the mean intensity of the MS2 signals ($\\mu_{I}$) in the anterior region did not vary significantly (all p-value of KS test >0.07) between reporters (Figure 2B), suggesting that the number of bound Bcd molecules does not regulate the RNAP firing rate within transcription bursts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74509/elife-74509-fig2-v1.jpg)\n\n**Figure 2.:** (A) Fraction of loci active time ($P_{Spot}$) at steady state (time window of 600\u2013800 s into nc13), averaged over n embryos, as a function of nuclei position along AP axis (%EL). (B) Mean fluorescent intensity ($\\mu_{I}$) with standard error of active MS2 loci detected in the anterior region ( ~ 20% \u00b1 2.5% EL) at steady state. In (A-B) reporter data are distinguished by color: hb-P2 (orange, n = 5 embryos), B6 (yellow, n = 5 embryos), B9 (cyan, n = 6 embryos), and B12 (green, n = 4 embryos). (C) Model of Bicoid binding and unbinding to an array of $N$ identical binding sites: nuclear Bcd molecules can bind independently to individual binding sites at rate $k_{b}$. The binding array state is denoted by $S_{i}$ where i is the number of bound sites. The forward rate constants $k_{i}$ are the binding rates of Bcd to the free remaining sites of $S_{i-1}$ : $k_{i}=N-i+1k_{b}$. The backward rate constants $k_{-i}$ are the unbinding rates of bound Bcd from $S_{i}$. (D) Transcription dynamics is modeled as a bursty two-state ON/OFF model with the switching rate constants $k_{ON}S_{i}$ and $k_{OFF}$. The switching rate $k_{ON}S_{i}$ depends on i the number of bound Bcd molecules. Transcription is not activated with fewer than $K$ bound Bcd ($k_{ON}(S_{i<K})=0$). Only during the ON state can RNAPs arrive and initiate transcription at rate constant $\u03c1_{RNAP}$. (E\u2013G) Fraction of active loci at steady state obtained experimentally for B6 (E, solid yellow), B9 (F, solid cyan), B12 (G, solid green) compared to the fraction of active loci at steady state from the best fitting models (dashed black) for corresponding BS numbers N=6 for B6 (E), $N$=9 for B9 (F) or N =12 for B12 (G). In these models, the free parameters are the unbinding rate constant ($k_{-i}$), the promoter switching rates with $K$ bound Bcd molecules ($k_{ON}S_{K}$ and $k_{OFF}$). $K$ is set to 3. The switching ON rates at higher bound states are set $k_{ON}(S_{i>K})=k_{ON}(S_{K})(\\frac{i}{k})$, given the synergistic activation of transcription by bound Bcd (see Supplementary file 5). The binding rate constant $k_{b}$ is determined by assuming that Bcd binding is diffusion limited (Appendix 2).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74509/elife-74509-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Example of a fluorescent intensity trace as a function of time for the B6 reporter in a nucleus in the anterior region (~20 %EL). (B) Image of the nucleus which exhibited the trace observed in panel A with hisAV-mRFP (red, top) and the MS2-GFP (green, bottom). Active transcription can be detected as a bright spot in the green channel (white arrowheads). The white dashed circle corresponds to the estimated nuclear envelope. (C) Kymographs of MS2-GFP intensity traces at the hb-P2 and the synthetic B6, B9, B12, H6B6, and Z2B6 reporters in the anterior region (~20% \u00b1 2.5 %EL). For each construct, 20 traces are shown as horizontal bars with the intensity described by the color heatmap (right). Of note, the heatmap scale is shared by hb-P2, B6, B9, B12, and Z2B6 while it is twice higher for H6B6.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74509/elife-74509-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Each column corresponds to a fitting configuration with the number indicating the degree of freedom from the fitted B6 model for each group of kinetic parameters. A value of 0 indicates that the value of the kinetic parameter is imposed from the fitted model of B6 pattern (Figure 2E). Parameters include the Bcd binding rate constant $k_{b}$ , the minimal number of bound Bcd for transcription activation $K$, the promoter switching rate when bound by $K$ Bcd molecules $k_{ON}S_{K}$ and $k_{OFF}$ , and the unbinding rate constants of Bcd from the BS array $k_{-i}$ (see Appendix 2). The switching ON rates at higher bound states are set to $k_{ON}(S_{i>K})=k_{ON}(S_{K})(iK)$, given the synergistic activation of transcription by bound Bcd (see Appendix 3). For each fitting configuration and reporter are shown the patterns from the data (solid black) and from the fitted model (dashed color). On the y axis: fraction of loci active time at steady state (from 0 to 1). On the x axis: position along the AP axis (from \u201330 to 20%EL). The quality of the model fit to the data (visually determined) is indicated by the color of the dashed curves as follow: good (green), moderate (orange) and red (bad).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74509/elife-74509-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Context: When the binding sites are occupied by i Bcd molecules, the promoter can switch between two transcriptional states ON and OFF. The activation rate $k_{ON}(S_{i})$, not the deactivation rate, depends on the binding state $S_{i}$ and how it interacts with the promoter (see schemes in panel B, C and D). (B) Independent activation: Bound Bcd molecules (orange balls) can independently activate transcription at rate $k_{a}$. Activation can be enabled with even a single bound Bcd: $k_{ON}(S_{1})=k_{a}.$ The activation rate with binding state $S_{i}$ is proportional to the number of bound Bcd: $k_{ON}(S_{i})/k_{ON}(S_{1})=i.$ (C-D) Formation of a stable activating \u201cK-mer\u201d: Bound Bcd molecules (orange balls) can randomly form protein complexes (cyan balls) containing $K$ molecules (hence called \u201cK-mers\u201d), which can activate transcription at rate. There is no activation of transcription with less than K bound Bcd $(k_{ON}(S_{i<K})=0)$. In panel C, The \u201cK-mer\u201d is constantly formed and degraded at rates $\\gamma_{f}$ and $\\gamma_{b}$ respectively. Assuming that these rates are fast enough (so that the formation and degradation of \u2018K-mers\u2019 are always in equilibrium) and that $\\gamma_{b}<<\\gamma_{f}$, the fold change in the activation rate is given by the number of ways to choose a subset of K molecules from i bound Bcd: $\\frac{k_{ON}(S_{i})}{k_{ON}(S_{K})}=(iK)=\\frac{i!}{K!(i\u2212K)!}.$ In panel D, the protein complex is stable once formed $(\\gamma_{b}=0)$. Assuming a negligible formation time when enough Bcd is bound $(1/\\gamma_{f}\u22480)$, the activation rate is always constant $k_{ON}(S_{i\\geqK})=k_{a}$.\n\n### A model to recapitulate expression dynamics from Bicoid-only synthetic reporters\n\nTo explain the observed dynamics of the expression patterns (Figure 1C) and bursty transcription in regions with excess Bcd (Figure 2A and Figure 2\u2014figure supplement 1), we built a model for transcription regulation of the Bcd-only synthetic reporters (Figure 2, C-D). In this model, regulation occurs in two steps: first, nuclear Bcd molecules can bind to and unbind from the Bcd BS on the promoter (Figure 2C) and second, bound Bcd molecules can activate transcription (Figure 2D). We assumed a static Bcd gradient, i.e. the Bcd concentration at a given position is constant over time. This was motivated by previous works on the dynamics of the intranuclear Bcd gradient using fluorescent-tagged Bcd at least during nc13 of our interest (Abu-Arish et al., 2010; Gregor et al., 2007b).\n\nIn step 1 (Figure 2C), the binding and unbinding of Bcd to an array of $N$ identical Bcd BS were modeled explicitly, as in Estrada et al., 2016; Tran et al., 2018a. In our model, the binding state was denoted by $S_{i}$ , with i the number of bound Bcd molecules ($i\\leqN$). The binding rate constants $k_{i}$ depend on the number of free BS ($N-i+1$) and the Bcd search rate for a single BS $k_{b}$. The unbinding rate constants $k_{-i}$ were varied to account for various degrees of Bcd-DNA complex stability and binding cooperativity. In step 2 (Figure 2D), we expanded this model to account for the burstiness in transcription uncoupled with Bcd binding/unbinding (Figure 2A). The promoter dynamics was modeled as a two-state model, ON and OFF, to account for the observed bursts of transcription with a moderate time scale between 10 s and 100 s (Bothma et al., 2014; Desponds et al., 2016; Lammers et al., 2020). The turning ON rate $k_{ON}S_{i}$ was modulated by i the number of bound Bcd molecules. When the BS arrays had less than $K$ Bcd molecules ($K\\geq0$), transcription could not be activated ($k_{ON}(S_{i<K})=0$). To account for the uncoupling between the burstiness of transcription and the Bcd binding and unbinding, the turning OFF rate $k_{OFF}$ did not depend on the Bcd BS state. When the promoter is ON, RNAP could initiate transcription and be fired at rate $\u03c1_{RNAP}$. At any given time $t$ and nuclei position $x$ along the AP axis, it was possible to calculate the probability for the promoter to be in the ON state (see Materials and methods and Appendix 1).\n\nIn this model, each kinetic parameter could be tuned independently to control the measured transcription dynamics features: Bcd binding rate constants ($k_{i}$ , $k_{b}$) controlled the pattern boundary position, Bcd unbinding rate constants ($k_{-i}$) controlled the pattern steepness (Estrada et al., 2016; Tran et al., 2018a), the activation/deactivation rates ($k_{ON}$ , $k_{OFF}$) controlled the fraction of active loci during steady state ($P_{Spot}$), and the RNAP firing rate ($\u03c1_{RNAP}$) controlled the mean loci intensity ($\\mu_{I}$). To identify which processes were dependent on the number of Bcd BS, we first identified the parameters for the best fit of the model with the B6 data (Figure 2E and Appendix 2). Then, we allowed each of these parameters to vary, either alone or in combination, to fit the B9 (Figure 2F and Figure 2\u2014figure supplement 2) and B12 data (Figure 2G and Figure 2\u2014figure supplement 2). As they have more Bcd BS than B6, the fitting of the B9 and B12 data to the model also generated new parameters to account for higher Bcd-bound states (i.e. $k_{ON}S_{N}$ for N > 6). These simulations indicated that very good fits could be obtained for B9 and B12 by allowing only 3 of the $k_{-i}$ parameters to vary ($k_{-1}$ , $k_{-2}$ & $k_{-6}$) (Figure 2\u2014figure supplement 2) while the other parameters remained those identified for B6.\n\nGiven that the expression patterns of hb-P2 and all Bcd-only reporters reached a plateau in the anterior where Bcd concentration is likely in excess, we compared the activation rates $k_{ON}(S_{N})$ of the promoter when $N$ = 6, 9 or 12 Bcd BS were occupied. Assuming that the number of bound Bcd proteins did not affect the switch OFF rate $k_{OFF}$ , we found a fold change of ~4.5 between $k_{ON}(S_{9})$ and $k_{ON}(S_{6})$. This fold change is three times greater than the ratio of the Bcd BS numbers between B9 and B6. In contrast, there is almost no impact of adding three more sites when comparing B9 to B12 (even though it is the increase of ~1.33 times in the number of BS). This shows that the readout is not linear in the number of Bcd BS but that there is cooperativity/synergy between individual bound Bcd TF in the B9. Evidence for synergistic effects between several bound Bcd molecules is detailed in Appendix 3 and Figure 2\u2014figure supplement 3.\n\n### Hunchback reduces the burstiness of Bicoid-dependent transcription\n\nDespite the same number of Bcd BS in the B6 and hb-P2 reporters, their expression pattern and dynamics were very different (Figures 1 and 2A and Figure 2\u2014figure supplement 1). To determine whether this difference could be explained by the presence of BS for other TFs in the hb-P2 promoter, we used our synthetic approach to decipher the impact on the various features highlighted in our model when adding to the reporters BS for the two major partners of Bcd, Hb, and Zld also present in the hb-P2 promoter (Figure 3A). As our goal was to determine to which mechanistic step of our model each of these TF contributed, we purposefully started by adding BS in numbers that are much higher than in the hb-P2 promoter.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74509/elife-74509-fig3-v1.jpg)\n\n**Figure 3.:** (A) Arrangement of the binding sites for Bcd (yellow), Hb (purple), and Zld (blue) upstream of the TATA box (red) and the TSS (broken arrow) of each reporter. (B) Kymographs of mean fraction of active loci (colormap on the right) as a function of time (Y axis in s) and nuclei position along the AP axis (X axis in %EL) at nc13. (C) Mean time of first spot appearance T0 (s) along the AP axis with shaded standard error of the mean and calculated only for loci with observed expression. (D) Cumulative distribution function of T0 (s) at the anterior (20% \u00b1 2.5%EL). (E) Boundary position (as %EL) of fraction of nuclei with MS2 signal along AP axis, with shaded 95% confidence interval, as a function of time. The dash vertical curves represent the time to reach the final decision boundary position ( \u00b1 2 %EL). (F) Fraction of nuclei with any MS2 signal along the AP axis (%EL) with shaded standard error of the mean. (G) Boundary position and width were extracted by fitting the patterns fraction of expressing nuclei, (F) with a sigmoid function. Bar plots with 95% confidence interval for boundary position and width as the grey region placed symmetrically around the boundary position. Average values and confidence intervals are indicated in the adjacent table. (H) Fraction of loci active time ($P_{Spot}$) at steady state (time window of 600\u2013800 s into nc13) as a function of nuclei position along AP axis. (I) Mean intensity ($\\mu_{I}$) with standard error of active fluorescent loci detected in the anterior region (~20% \u00b1 2.5% EL) at steady state. (C\u2013I) reporter data are distinguished by color: hb-P2 (orange, n = 5 embryos), B6 (yellow, n = 5 embryos), H6B6 (purple, n = 7 embryos), and Z2B6 (blue, n = 3 embryos).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74509/elife-74509-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A) Kymographs representing the fraction of nuclei with active MS2 loci (represented by the colormap) as a function of time and nuclei position along the AP axis. The white dashed horizontal lines represent mitoses between nuclear cycles. (B\u2013D) Comparison of B6 (orange) and Z2B6 (blue) patterns based on the fraction of loci active time, averaged over multiple embryos, with shaded standard error of the mean, in different time windows: (B) 450 s-550s into nc12, (C) 450 s-550s into nc13 and (D) 700 s-800s into nc13.\n\nWe first analyzed the impact of combining the Bcd BS with Hb BS. A H6 reporter containing only 6 Hb BS did not exhibit any MS2 signal from nc11 to nc13 (not shown). This indicated that the Hb protein alone, even with an abundance of Hb sites, could not activate transcription on its own. When combining 6 Hb BS with the 6 Bcd BS of B6 (henceforth named the H6B6 reporter, Figure 3A, Video 5), expression was detected in a similar domain to that of the B6 reporter, albeit with much higher fraction of active loci at any given time during the cycle (Figure 3B, middle panel). Across the embryo AP axis, the mean onset time of transcription after mitosis $T_{0}$ with the H6B6 reporter was not changed (p-values > 0.5) when compared to B6 (Figure 3C) and in the anterior region (excess of Bcd), the cumulative distribution of onset time $T_{0}$ was the same (Figure 3D). Interestingly, at their respective boundary positions where the Bcd concentration is limiting, the presence of Hb BS reduced to 325 \u00b1 25 s the time required for the synthetic H6B6 reporter to reach the final decision to position its boundary (purple dashed line in Figure 3E and converging time, Supplementary file 2) when it was 425 \u00b1 25 s for B6 (yellow dashed line in Figure 3E and converging time, Supplementary file 2). For H6B6, the fraction of nuclei with MS2 signal during the cycle exhibited a sigmoid-like pattern (Figure 3F) with, when compared to B6, a boundary slightly (only one nucleus length) shifted toward the posterior and a width reduced by half (Figure 3G). The kinetics of transcription regulation by the Hb protein was inferred from the fraction of the loci\u2019s active time ($P_{Spot}$) at steady state. In the anterior region, this fraction was always near saturation for the H6B6 reporter (~0.95\u20131) (Figure 3H and Figure 2\u2014figure supplement 1), with very few nuclei exhibiting bursty expression. This non-bursty behavior of the H6B6 reporter contrasts with the highly bursty expression of B6 reporter (Figure 2\u2014figure supplement 1). Meanwhile, in the anterior region, the mean fluorescence intensity of active H6B6 loci was at least twice higher than that of all synthetic Bcd-only reporters (Figure 3I).\n\n![Video 5.](https://cdn.elifesciences.org/articles/74509/elife-74509-video5.mp4.jpg)\n\n**Video 5.:** The videos have two channels: MCP-GFP channel (green) for monitoring the dynamics of nascent mRNA production and His-RFP (red) for nuclei detection. The capture frame is from 18% to 65% of embryo length. The anterior pole is on the left side of the frame. Position along the AP axis is indicated by white vertical bars positioned every 10% EL with the tallest one corresponding to 50% EL.\n\nTo model H6B6 activity, the same formalism, as applied to B9 and B12 reporters, was used starting from the parameter values imposed from the fitted model of B6 and then varying those parameters, either alone or in combination, to fit the H6B6 data. The simulations indicated that a moderate fit to the data was obtained when varying only the $k_{ON}$ and $k_{OFF}$ parameters while varying in addition the 3 of the $k_{-i}$ parameters ($k_{-1}$ , $k_{-2}$ & $k_{-6}$) allowed very good fitting of the model to the data (Figure 2\u2014figure supplement 2).\n\nAltogether, this suggests that Hb binding to the promoter accelerates the measurement of positional information by Bcd by improving both the unbinding kinetics of Bcd to its BS, which is consistent with the half reduction of the boundary steepness (Figure 3G) and the kinetics of activation/deactivation transcription rates, consistent with reduced burstiness (Figure 3H and Figure 2\u2014figure supplement 1).\n\n### Zelda lowers the Bcd threshold required for expression\n\nAs the hb-P2 promoter also contains Zld BS, we used our synthetic approach to investigate the role of Zld in the Bcd system. As a reporter with only 6 Zld BS (Z6) was strongly expressed along the whole AP axis (Figure 3\u2014figure supplement 1), we had to reduce the number of Zld BS in our synthetic approach to analyze Zld effect. A Z2 reporter containing only 2 Zld BS did not exhibit any MS2 signal (not shown). The Z2B6 reporter (Video 6), combining 2 Zld BS with 6 Bcd BS (Figure 3A), exhibited a very different expression pattern when compared to B6 (Figure 3B, right panel). This expression pattern also varied with the nuclear cycles likely because of drastic changes in Zld transcriptional activity (Figure 3\u2014figure supplement 1) rather than changes in the local concentration (Dufourt et al., 2018). For simplicity, we focused here on nc13. The onset time $T_{0}$ of the Z2B6 reporter was similar in the anterior to those of the B6, H6B6 and hb-P2 reporters (Figure 3, C-D) but unlike B6, H6B6 and hb-P2 it did not vary along the AP axis (Figure 3C). This suggests that Zld binding can accelerate Bcd-dependent transcription when Bcd is rate-limiting but has no effect when Bcd is in excess (Figure 3C). As observed with H6B6, the presence of Zld BS reduced to 300 \u00b1 25 s the time required for the synthetic Z2B6 reporter to reach the final decision to position its boundary (blue dashed line in Figure 3E and converging time, Supplementary file 2) when it was 425 \u00b1 25 s for B6 (yellow dashed line in Figure 3E and converging time, Supplementary file 2).\n\n![Video 6.](https://cdn.elifesciences.org/articles/74509/elife-74509-video6.mp4.jpg)\n\n**Video 6.:** The videos have two channels: MCP-GFP channel (green) for monitoring the dynamics of nascent mRNA production and His-RFP (red) for nuclei detection. The capture frame is from 20% to 70% of embryo length. The anterior pole is on the left side of the frame. Position along the AP axis is indicated by white vertical bars positioned every 10% EL with the tallest one corresponding to 50% EL.\n\nThe most striking feature of the Z2B6 reporter was the drastic posterior shift of its expression boundary by ~17.5 %EL when compared to B6 (Figure 3, C-D). It indicates that the threshold of Bcd concentration required for activation is lowered when two Zld BS are present in the promoter together with 6 Bcd BS. Added to this, the pattern boundary width (Figure 3G) and in the anterior, both the active loci fraction $P_{Spot}$ (Figure 3H and Figure 2\u2014figure supplement 1) and the loci intensity $\\mu_{I}$ (Figure 3I), were very similar for the Z2B6 and B6 reporters. Therefore, we hypothesize that adding 2 Zld sites can accelerate and facilitate Bcd binding when Bcd is rate-limiting (i.e. increasing $k_{b}$ or $k_{i}$) without affecting the remaining parameters ($k_{-i}$ , $k_{ON}$ , $k_{OFF}$ , $\u03c1_{RNAP}$). Consistent with this hypothesis, simulations for best fitting of the model to the data, starting from the parameters imposed by B6, indicate that a very good fit of the model to the Z2B6 data is obtained when only varying the Bcd binding rate $k_{b}$ (Figure 2\u2014figure supplement 2).\n\nAltogether, this suggests that Zld binding to the promoter accelerates the measurement of positional information by Bcd by facilitating Bcd binding when it is rate-limiting through an increase of the Bcd binding rate kb, without affecting the kinetics of activation/deactivation transcription rates.\n\n### A Bicoid-activity gradient with a short decay length\n\nSince our synthetic Bcd-only reporters exclusively respond to Bcd, their expression boundary is exclusively dependent on specific thresholds of Bcd concentration, and this property was used to evaluate quantitatively the Bcd-activity gradient. For this, we reduced the amount of the Bcd protein by half in embryos from females, which were heterozygous for a CRISPR-induced deletion of the bcd gene (\u0394 bcd) (see Materials and methods). As the amount of Bcd protein is produced from each bcd allele independently of any other allele in the genome (Liu et al., 2013) and as changing the genetic dosage of bcd in the female leads to proportional changes in both mRNA and protein number in the embryo (Petkova et al., 2014), we assumed that embryos from wild-type females (2 X) express quantitatively twice as much Bcd proteins as embryos from \u0394bcd/ + females (1 X). In such Bcd-2X and Bcd-1X embryos, we compared the fraction of expressing nuclei along the AP axis as modeled at the top of Figure 4A. Data were obtained for B6 (Figure 4B) and B9 (Figure 4C). In addition, since Zld activity and concentration is homogeneous along the AP axis and likely independent of Bcd (as it is exclusively maternal), we also analyzed Z2B6 (Figure 4D) which provided useful information on how positional readout plays out at more posterior positions. For simplicity, we denoted $f_{2X}(x)$ the expression pattern in Bcd-2X embryos and $f_{1X}x$ the expression pattern in Bcd-1X embryos, with $x$ being the nuclei position along the AP axis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74509/elife-74509-fig4-v1.jpg)\n\n**Figure 4.:** (A) Modeling the pattern shifts between Bcd-2X and Bcd-1X embryos. Top: The Bcd concentration gradient along the AP axis with its exponential decay length \u03bb. At the anterior pole, Bcd concentration is $c_{A}$ in Bcd-2X embryos (solid green line) and $c_{A}/2$ in Bcd-1X embryos (solid yellow line). The distance between any two nuclei columns in Bcd-2X and Bcd-1X that have the same Bcd concentration (blue horizontal arrow) is given by $-\\lambda ln2$. Middle: along the AP axis, expression pattern of a Bcd-dependent reporter in Bcd-2X embryos ($f_{2X}(x)$, solid green line) and in Bcd-1X embryos ($f_{1X}(x)$ solid yellow line). $\u0394(x)$ : the shift in position (blue horizontal arrows) from a nuclei column in Bcd-2X embryos at position $x$ to one at Bcd-1X embryos with the same expression level, such that $f_{2X}x=f_{1X}(x-\u0394x)$. Bottom: Cartoon of log-probability map of the shift $\u0394x$ based on the expression patterns in Bcd-2X and Bcd-1X (i.e. $f_{1X}(x)$ and $f_{2X}(x)$). Its value $log\u2061p(\u0394(x))$ is represented on the grey scale. The blue vertical arrows denoting the shift correspond to the horizontal arrows with similar shade observed in the middle panel. If the Bcd gradient is the only source of positional information for the expression patterns, then the best fit value of $\u0394(x)$ given the probability map is $\u0394~=-\\lambdaln2$ (horizontal blue dashed line). (B\u2013D and F) Expression patterns of B6 (B), B9 (C), Z2B6 (D) and hb-P2 (F) reporters in embryos from wild-type (Bcd-2X, solid green lines with shaded errors) and \u0394bcd/+ (Bcd-1X, solid yellow lines with shaded errors) females. In each panel, the numbers of embryos for each construct and condition are also shown. Prediction of Bcd-1X patterns from the Bcd-2X patterns assuming a fitted constant shift (values in panel G) are shown as dashed black lines. (E) Log-probability map ($log p(\u0394x)$) of the shift $\u0394x$ (in %EL) at a given nuclei position in Bcd-2X embryos ($x$, in %EL), extracted from combined B6, B9, and Z2B6 reporters\u2019 data. The horizontal cyan dashed line represents the best fit value $\u0394~$ = 10.5 %EL from the log-probability map. (G) Comparison of the shift, with 95% confidence interval, in nuclei position from wild-type embryos to embryos from \u0394bcd/ + females (left bars) and from wild-type embryos to embryos from bcdE1/ + females (right bars) fitted individually to B6, B9, Z2B6 and hb-P2 reporters\u2019 data.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74509/elife-74509-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** A) Boundary position of fraction of expressing nuclei along AP axis as a function time in nc12 (red) and nc13 (purple), shown for hb-P2 and synthetic reporters, shown with 95% confidence interval. The hb-P2 reporter reach position of expression boundary very rapidly therefore, the position of the boundary is the same at nc12 and nc13 for the hb-P2 reporter even though nc12 is very short. In contrast, positions of the Bcd-only reporters are different at the end of nc12 and nc13. This also true for H6B6 and Z2B6. (B) Expression patterns of hb-P2 and synthetic reporters in embryos from wild-type (Bcd-2X, solid green lines with shaded errors) and bcdE1/+ (solid yellow lines with shaded errors) females. Projection of bcdE1/ + pattern (black dashed) from the Bcd-2X pattern assuming a fitted constant shift $\u0394~$ = 9.0% \u00b1 0.5 %EL for hb-P2 (n2x = 5 embryos, nbcdE1/+ = 4 embryos), $\u0394~$ = 8.5% \u00b1 1.0 %EL for B6 (n2x = 5, nbcdE1/+ = 4), $\u0394~$ = 8.0% \u00b1 0.5 %EL for B9 (n2x = 6, nbcdE1/+ = 6), $\u0394~$ = 7.0% \u00b1 0.5 %EL for B12 (n2x = 4, nbcdE1/+ = 6), $\u0394~$ = 7.0% \u00b1 0.5 %EL for H6B6 (n2x = 7, nbcdE1/+ = 5), $\u0394~$ = 7.5% \u00b1 1.0 %EL for Z2B6 (n2x = 3, nbcdE1/+ = 5). (C) Comparison of the best fitted shift constant from Bcd-2X to bcdE1/ + flies for hb-P2 and synthetic reporters.\n\nTo quantify the effects of perturbing the Bcd gradient, we first extracted from the experimental data the shift in position $\u0394(x)$ between two nuclei columns with the same expression distribution in Bcd-2X embryos ($f_{2X}(x)$) and in Bcd-1X embryos ($f_{1X}(x\u2212\u0394(x))$), such that $f_{2X}x=f_{1X}(x-\u0394(x))$ (modeled in Figure 4A, middle panel). As all the expression patterns are noisy, we calculated the probability distribution of seeing a given shift $P(\u0394(x)|x)$ for each given position $x$ from our data and used a grey-scale log-probability map as a function of $x$ and $\u0394$ to present our results. An example of the log-probability map for the shift expected if the Bcd concentration was reduced by half at each position is shown at the bottom of Figure 4A. As expected, the prediction of $\u0394(x)$ should be most reliable in the boundary region (see Materials and methods and Appendix 4). From the combined log-probability map of the shift $\u0394(x)$ obtained from expression data of B6 (Figure 4B), B9 (Figure 4C) and Z2B6 (Figure 4D) reporters in Bcd-2X vs Bcd-1X embryos, we observed that the shift was very consistent in the zone between B6 and Z2B6\u2019s boundary regions (30% EL to 60% EL) (Figure 4E). Thus, it can be described by a constant value $\u0394x=\u0394~$ , indicating that the Bcd activity gradient measured in this zone was exponential. From the data, the best fit value of $\u0394~$ was found to be 10.5% \u00b1 1.0%EL (cyan dashed line in Figure 4D). Of note, the shift obtained at nc13 was larger than the shift obtained at nc12. However, the short length of nc12 (shorter than the time required for the Bcd-only reporters to reach steady state) likely introduces a bias in those measurements (Figure 4\u2014figure supplement 1). Since the synthetic reporters, B6, B9 and Z2B6, are expected to position their boundary in Bcd-2X vs Bcd-1X embryos at the same threshold of active Bcd concentration , the effective gradient highlighted by our analysis is exponential with an effective decay length $\\lambda_{eff}$ = $|\u0394~|/ln2$ = 15% \u00b1 1.4 %EL. We used the decay length for this effective gradient in the model to account for the pattern dynamics of B6, B9 and Z2B6 in Bcd-2X embryos and predict its pattern in Bcd-1X embryos. The predicted patterns from the model (black dashed curves) match well with the data (yellow curves) (Figure 4B\u2013D). Lastly, the comparison of hb-P2 patterns in Bcd-2X vs Bcd-1X embryos indicated a shift of 11.0% \u00b1 0.5%EL of the expression boundary (Figure 4F). As this value was indistinguishable from the shift $|\u0394~|$ obtained with data of the synthetic reporters above (Figure 4, B-D), we concluded that the measurement of positional information by the hb-P2 promoter is based entirely on the effective Bcd gradient with $\\lambda_{eff}$ ~ 15% \u00b1 1.4 %EL and does not involve input from other TF binding to the hb-P2 promoter.\n\nOf note, the shift obtained for the hb-P2 MS2 reporter was significantly larger than the shift of 8% EL described for hb in previous studies using the bcdE1 allele (Houchmandzadeh et al., 2002; Porcher et al., 2010). To understand this discrepancy, we measured the shift in the boundary positions of our hb-P2 and synthetic MS2 reporters in embryos from wild-type vs bcdE1/ + females and confirmed that in this genetic background the shift of boundary position was 8% EL (Figure 4G and Figure 4\u2014figure supplement 1, panel B-C). As the molecular lesion in the bcdE1 allele introduces a premature stop codon downstream of the homeodomain (Struhl et al., 1989), these results suggest that the bcdE1 allele likely allows the expression of a weakly functional truncated protein.\n\n### The hb-P2 pattern steepness can be explained by an equilibrium model of concentration sensing\n\nAssuming that nuclei extract positional information from an effective Bcd gradient with decay length $\\lambda_{eff}$ ~ 15% EL, we reassessed the Hill coefficient (denoted as $H$), which reflects the cooperativity of hb regulation by Bcd (Estrada et al., 2016; Gregor et al., 2007a). For this, we fitted the pattern of expressing nuclei by the hb-P2 reporter (Figure 1D) to a sigmoid function. We transformed the fitted sigmoid function of position to a Hill function describing the transcription regulation function of hb-P2 by the Bcd protein concentration (see Materials and methods). Given the sigmoid function obtained from the data, the inferred Hill coefficient $H$ is proportional to assumed decay length $\\lambda$ (black line in Figure 5A). Taking the observed effective decay length $\\lambda_{eff}$ = 15% EL, we obtain H ~ 5.2. As the hb-P2 promoter contains only six known Bcd BS, the value of $H$ = 5.2 for the Hill coefficient inferred assuming the decay length $\\lambda_{eff}$ ~15% EL is now within the limit of concentration sensing with 6 Bcd BS ($H$ = 6, dashed horizontal line in Figure 5A) while the former value $H$ ~ 6.9 was not achievable without energy expenditure (Estrada et al., 2016) or positive feedback from Hb protein (Lopes et al., 2011).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/74509/elife-74509-fig5-v1.jpg)\n\n**Figure 5.:** Fitting the data with models assuming different values for the Bcd gradient decay length $\\lambda$.(A) Hill coefficient $H$ (see Materials and methods) (solid red) in the steady state window (600 s-800s into nc13 interphase) calculated numerically from the best fitted models. Given that the pattern sharpness $\u03b7=H/\\lambda$ is measured to be 0.34 from the hb-P2 data, the observed Hill coefficient as a function of \u03bb is given by the black line with shaded error. The physical limit of equilibrium sensing model with 6 BS ($H$ = 6, black dashed line). (B) Log-likelihood of the best fitted models (solid red). The dashed line corresponds to the log-likelihood thresholds for a significantly worse fit (p-value = 0.05).\n\nTo verify whether both the dynamics and sharpness of the hb-P2 expression pattern can be sufficiently explained by an equilibrium model of Bcd concentration sensing via $N$=6 Bcd BS, we fitted our model (Figure 2) to the kymograph of transcription dynamics by the hb-P2 reporter (Figure 1C). The effects of Hb and Zld are modeled implicitly by the kinetic rate constants. We varied the decay length $\\lambda$ for the Bcd gradient varying from 10% to 20%EL (model assumptions in Materials and methods). The model assuming $\\lambda$ = $\\lambda_{eff}$ = 15 %EL fitted the data significantly better (p-val <0.05) (Figure 5B) and reproduced a closer Hill coefficient at steady state (Figure 5A) than the model assuming $\\lambda$ = $\\lambda_{detected}$ = 20 %EL.\n\nThus, lowering the decay length of the Bcd gradient to its effective value allows a more reliable fit of the model to the data and places back the Bcd system within the physical limits of an equilibrium model for concentration sensing.\n\n## Discussion\n\nRecently, synthetic approaches have been used to understand how the details of gene regulation emerge from the plethora of binding sites for transcription factors buried in genomes. In developmental systems, these approaches are starting to help us unravel the evolution of gene regulatory modules (reviewed in Crocker and Ilsley, 2017). In many cases, using high-throughput analysis of systematically mutagenized regulatory sequences, expression was measured through synthesis of easily detectable fluorescent proteins (Farley et al., 2016; Gertz et al., 2009; Sharon et al., 2012), RNA sequencing (Melnikov et al., 2012; Patwardhan et al., 2012) or antibody or FISH staining on fixed samples (Erceg et al., 2014; Fuqua et al., 2020). Even though these approaches allowed screening for a high number of mutated sequences with a very high resolution (single nucleotide level), the output measurements remained global and it was hard to capture the temporal dynamics of the transcription process itself. In addition, because effects of single mutations are frequently compensated by redundant sequences, it remained often difficult from these studies to highlight the mechanistic roles of the TF they bind to (Vincent et al., 2016). In this work, we combined the MS2 tagging system, which allows for a detailed measurement of the transcription process dynamics at high temporal resolution, with an orthogonal synthetic approach focusing on a few cis-regulatory elements with the aim of reconstructing from elementary blocks most features of hb regulation by Bcd. The number and placement of TF BS in our MS2 reporters are not identical to those found on the endogenous hb promoter and the number of combinations tested was very limited when compared to the high throughput approaches mentioned above. Nevertheless, this synthetic approach combined with quantitative analyses and modeling sheds light on the mechanistic steps of transcription dynamics (polymerase firing rate, bursting, licensing to be ON/OFF) involving each of the three TFs considered (Bcd, Hb, and Zld). Based on this knowledge from synthetic reporters and the known differences between them, we built an equilibrium model of transcription regulation which agrees with the data from the hb-P2 reporter expression.\n\nExpression from the Bcd-only synthetic reporters indicate that increasing the number of Bcd BS from 6 to 9 shifts the transcription pattern boundary position toward the posterior region. This is expected as an array with more BS will be occupied faster with the required amount of Bcd molecules. Increasing the number of Bcd BS from 6 to 9 also strongly increases the steepness of the boundary indicating that cooperativity of binding, or more explicitly a longer time to unbind as supported by our model fitting, is likely to be at work in this system. In contrast, adding three more BS to the 9 Bcd BS has very limited impact, indicating that either Bcd molecules bound to the more distal BS may be too far from the TSS to efficiently activate transcription or that the system is saturated with a binding site array occupied with 9 Bcd molecules. In the anterior with excess Bcd, the fraction of time when the loci are active at steady state also increases when adding 3 Bcd BS from B6 to B9. By assuming a model of transcription activation by Bcd proteins bound to target sites, the activation rate increases by much greater fold (~4.5 times) than the number of BS (1.5\u20132 times) suggesting a synergistic effect in transcription activation by Bcd.\n\nThe burstiness of the Bcd-only reporters in regions with saturating amounts of Bcd, led us to build a model in two steps. The first step of this model accounts for the binding/unbinding of Bcd molecules to the BS arrays. It is directly related to the positioning and the steepness of the expression boundary and thus to the measurement of positional information. The second step of this model accounts for the dialog between the bound Bcd molecules and the transcription machinery. It is directly related to the fluctuation of the MS2 signals including the number of firing RNAP at a given time (intensity of the signal) and bursting (frequency and length of the signal). Interestingly, while the first step of the process is achieved with an extreme precision (10% EL) (Gregor et al., 2007a; Porcher et al., 2010), the second step reflects the stochastic nature of transcription and is much noisier (Desponds et al., 2016; Little et al., 2013). Our model therefore also helps to understand and reconcile this apparent contradiction in the Bcd system.\n\nAs predicted by our original theoretical model (Lucas et al., 2018), 9 Bcd BS in a synthetic reporter appear sufficient to reproduce experimentally almost entirely the spatial features of the early hb expression pattern i.e. measurements of positional information. This is unexpected as the hb-P2 promoter is supposed to only carry 6 Bcd BS and leaves open the possibility that the number of Bcd BS in the hb promoter might be higher, as suggested previously (Ling et al., 2019; Park et al., 2019). Alternatively, it is also possible that even though containing 9 Bcd BS, the B9 reporter can only be bound simultaneously by less than 9 Bcd molecules. This possibility must be considered if for instance, the binding of a Bcd molecule to one site prevents by the binding of another Bcd molecule to another close by site (direct competition or steric hindrance). Even though we cannot exclude this possibility, we think that it is unlikely for several reasons: (i) some of the Bcd binding sites in the hb-P2 promoter are also very close to each other (see Supplementary file 1) and the design of the synthetic constructs was made by multimerizing a series of 3 Bcd binding sites with a similar spacing as found for the closest sites in the hb-P2 promoter (as shown in Figure 1A and Supplementary file 1); (ii) the binding of Bcd or other homeodomain containing proteins to two BS is generally increased by cooperativity when the sites are close to each other (as close as two base pairs for the paired homeodomain) compared to binding without cooperativity when they are separated by five base pairs or more (Ma et al., 1996; Wilson et al., 1993).\n\nImportantly, even though we don\u2019t really know if the B9 and the hb-P2 promoter contain the same number of effective Bcd BS, the B9 reporter which solely contains Bcd BS recapitulates most spatial features of the hb-P2 reporter, clearly arguing that Bcd on its own brings most of the spatial (positional) information to the process. Interestingly, the B9 reporter is however much slower (2-fold) to reach the final boundary position than the hb-P2 reporter. This suggested that other maternally provided TFs binding to the hb-P2 promoter contribute to fast dynamics of the hb pattern establishment. Among these TFs, we focused on two known maternal partners of Bcd: Hb which acts in synergy with Bcd (Porcher et al., 2010; Simpson-Brose et al., 1994) and Zld, the major regulator of early zygotic transcription in fruit fly (Liang et al., 2008). Interestingly, adding Zld or Hb sites next to the Bcd BS array reduces the time for the pattern to reach steady state and modifies the promoter activity in different ways: binding of Zld facilitates the recruitment of Bcd at low concentration, making transcription more sensitive to Bcd and initiate faster while the binding of Hb affects strongly both the activation/deactivation kinetics of transcription (burstiness) and the RNAP firing rate. Thus, these two partners of Bcd contribute differently to Bcd-dependent transcription. Consistent with an activation process in two steps as proposed in our model, Zld will contribute to the first step favoring the precise and rapid measurements of positional information by Bcd without bringing itself positional information. Meanwhile, Hb will mostly act through the second step by increasing the level of transcription through a reduction of its burstiness and an increase in the polymerase firing rate. Interestingly, both Hb and Zld binding to the Bcd-dependent promoter allow speeding-up the establishment of the boundary, a property that Bcd alone is not able to achieve. Of note, the hb-P2 and Z2B6 reporters contain the same number of BS for Bcd and Zld but they have also very different boundary positions and mean onset time of transcription $T_{0}$ following mitosis when Bcd is limiting. This is likely due to the fact that the two Zld BS in the hb-P2 promoter are not fully functional: one of the Zld BS is a weak BS while the other Zld BS has the sequence of a strong BS but is located too close from the TATA Box (5 bp) to provide full activity (Ling et al., 2019).\n\nZld functions as a pioneer factor by potentiating chromatin accessibility, transcription factor binding and gene expression of the targeted promoter (Foo et al., 2014; Harrison et al., 2011). Zld has recently been shown to bind nucleosomal DNA (McDaniel et al., 2019) and proposed to help establish or maintain cis-regulatory sequences in an open chromatin state ready for transcriptional activation (Eck et al., 2020; Hannon et al., 2017). In addition, Zld is distributed in nuclear hubs or microenvironments of high concentration (Dufourt et al., 2018; Mir et al., 2018). Interestingly, Bcd has been shown to be also distributed in hubs even at low concentration in the posterior of the embryo (Mir et al., 2017). These Bcd hubs are Zld-dependent (Mir et al., 2017) and harbor a high fraction of slow moving Bcd molecules, presumably bound to DNA (Mir et al., 2018). Both properties of Zld, binding to nucleosomal DNA and/or the capacity to form hubs with increased local concentration of TFs can contribute to reducing the time required for the promoter to be occupied by enough Bcd molecules for activation. In contrast to Zld, our knowledge on the mechanistic properties of the Hb protein in the transcription activation process is much more elusive. Hb synergizes with Bcd in the early embryo (Simpson-Brose et al., 1994) and the two TF contribute differently to the response with Bcd providing positional and Hb temporal information to the system (Porcher et al., 2010). Hb also contributes to the determination of neuronal identity later during development (Hirono et al., 2017). Interestingly, Hb is one of the first expressed members of a cascade of temporal TFs essential to determine the temporal identity of embryonic neurons in neural stem cells (neuroblasts) of the ventral nerve cord. In this system, the diversity of neuronal cell-types is determined by the combined activity of TFs specifying the temporal identity of the neuron and spatial patterning TFs, often homeotic proteins, specifying its segmental identity. How spatial and temporal transcription factors mechanistically cooperate for the expression of their target genes in this system is not known. Our work indicates that Hb is not able to activate transcription on its own but that it strongly increases RNAP firing probability and burst length of a locus licensed to be ON. Whether this capacity will be used in the ventral nerve cord and shared with other temporal TFs would be interesting to investigate.\n\nThe Bcd-only synthetic reporters also provided an opportunity to scrutinize the effect of Bcd concentration on the positioning of the expression domain boundaries. This question has been investigated with endogenous hb in the past, always giving a smaller shift than expected given the decay length of 20% EL for the Bcd protein gradient (Bergmann et al., 2007; Liu et al., 2013; Porcher et al., 2010) and arguing against the possibility that positional information in this system could solely be dependent on Bcd concentration. When comparing the transcription patterns of the B9 reporter in Bcd-2X flies and Bcd-1X flies, we detected a shift of ~10.5 \u00b1 1% EL of the boundary position. This shift revealed a gradient of Bcd activity with an exponential decay length of ~15 \u00b1 1.4% EL (~75 \u00b5m), significantly smaller than the value observed directly (20% EL, ~ 100 \u00b5m) with immuno-staining for the Bcd protein gradient (Houchmandzadeh et al., 2002) but closer from the value of 16.4% EL obtained with immuno-staining for Bcd of the Bcd-GFP gradient (Liu et al., 2013). Given the discrepancies of previous studies concerning the measurements of the Bcd protein gradient decay length (see Appendix 5 and Supplementary file 3), our work calls for a better quantification to determine how close the decay length of the Bcd protein gradient is from the decay length of the Bcd activity gradient uncovered here. Our work opens the possibility that the effective decay length of 15% EL corresponds to a population of \u2018active\u2019 or \u2018effective\u2019 Bcd distributed in steeper gradient than the Bcd protein gradient observed by immunodetection which would include all Bcd molecules. Bcd molecules have been shown to be heterogenous in intranuclear motility, age and spatial distributions but to date, we do not know which population of Bcd can access the target gene and activate transcription (Tran et al., 2020). The existence of two (or more) Bicoid populations with different mobilities (Abu-Arish et al., 2010; Fradin, 2017; Mir et al., 2018) obviously raises the question of the underlying gradient for each of them. Also, the dense Bcd hubs persist even in the posterior region where the Bcd concentration is low (Mir et al., 2017). As the total Bcd concentration decreases along the AP axis, these hubs accumulate Bcd with increasing proportion in the posterior, resulting in a steeper gradient of free-diffusing Bcd molecules outside the hubs. At last, the gradient of newly translated Bcd was also found to be steeper than the global gradient (Durrieu et al., 2018). Finally and most importantly, reducing by half the Bcd concentration in the embryo induced a similar shift in the position of the hb-P2 reporter boundary as that of the Bcd-only reporters. This further argues that this gradient of Bcd activity is the principal and direct source of positional information for hb expression.\n\nThe effective Bcd gradient found here rekindles the debate on how a steep hb pattern can be formed in the early nuclear cycles. With the previous value of $\\lambda=20%$ EL for the decay length of the Bcd protein gradient (Houchmandzadeh et al., 2002), the Hill coefficient inferred from the fraction of loci\u2019s active time at steady state $P_{Spot}$ is ~6.9, beyond the theoretical limit of the equilibrium model of Bcd interacting with six target BS of the hb promoter (Estrada et al., 2016; Hopfield, 1974). This led to hypotheses of energy expenditure in Bcd binding and unbinding to the sites (Estrada et al., 2016), out-of-equilibrium transcription activation (Desponds et al., 2020), hb promoters containing more than 6 Bcd sites (Lucas et al., 2018; Park et al., 2019) or additional sources of positional information (Tran et al., 2018a) to overcome this limit. The effective decay length $\\lambda_{eff}$ ~15% EL, found here with a Bcd-only reporter but also hb-P2, corresponds to a Hill coefficient of ~5.2, just below the physical limit of an equilibrium model of concentration sensing with 6 Bcd BS alone. Of note, a smaller decay length also means that the effective Bcd concentration decreases faster along the AP axis. In the Berg & Purcell limit (Berg and Purcell, 1977), the time length to achieve the measurement error of 10% at hb-P2 expression boundary with $\\lambda$=15% EL is ~2.1 times longer than with $\\lambda$=20% EL (see Appendix 6 where we show the same argument holds regardless of estimated parameter values). This points again to the trade-off between reproducibility and steepness of the hb expression pattern, as described in Tran et al., 2018a and reinforces the importance of Hb and Zelda in speeding-up the process.\n\n## Materials and methods\n\n### Drosophila stocks\n\nEmbryos were obtained from crosses between males carrying MS2 reporters and females carrying the maternally expressed MCP-NoNLS-eGFP (Garcia et al., 2013) and His2Av-mRFP (Bloomington # 23561) transgenes both on the second chromosome. Embryos with reduced activity of Bcd were obtained from females which were in addition heterozygotes for the bcd\u0394 molecular null allele or for the bcdE1 allele (bcd6). Unless otherwise specified, all MS2 reporters were inserted at the vk33 docking site (Bloomington # 9750) via \u03c6C31-mediated integration system (Venken et al., 2006) by BestGene. The site of insertion was chosen because the transcription dynamics of the original hb-P2 reporter (Lucas et al., 2018) inserted at this site was indistinguishable from the transcription dynamics of two randomly inserted siblings (Figure 1\u2014figure supplement 1, panels A-C). All fly stocks were maintained at 25\u00b0C.\n\n### MS2 reporters\n\nThe hb-P2 MS2 reporter was obtained by cloning the 745 bp (300 bp upstream of the transcription start site to 445 bp downstream, including the hb intron) located just upstream start codon of Hunchback protein (Drosophila melanogaster) from the previously used hb-MS2\u0394Zelda reporter (Lucas et al., 2018) into the attB-P[acman]-CmR-BW plasmid. The synthetic MS2 reporters were created by replacing the hb region in hb-P2 MS2 by the hsp70Bb promoter and the synthetic sequences containing specific combinations of binding sites. GGGATTA was used as a Bcd binding site, CAGGTAG as a Zld binding site and TCAAAAAATAT or TCAAAAAACTAT as Hb binding sites. The sequences of these promoters are given in the Supplementary file 1.\n\n### Generation of the \u0394bcd mutant by CRISPR\n\nThe \u0394bcd molecular null allele was generated by CRISPR/Cas9 genome editing using the scarless strategy described in Gratz et al., 2015. gRNA sequences were designed to induce Cas-9-dependent double strand DNA hydrolysis 460 pb upstream of the bcd gene TATA box and 890 bp downstream of the Bcd stop codon. For this, double stranded oligonucleotides (sequences available in Supplementary file 1: Oligo for 5\u2019 cut Fw, Oligo for 5\u2019 cut Rv, Oligo for 3\u2019 cut Fw, Oligo for 3\u2019 cut Rv) were inserted into the Bbs-1 restriction site of pCFD3-dU6_3gRNA vector (Port et al., 2014). The two homology arms flanking the cleavage sites were amplified from genomic DNA by PCR using the NEB Q5 high fidelity enzyme and specific oligonucleotides (sequences available in Supplementary file 1: Bcdnull_5 HR_fw, Bcdnull_5 HR_rv, Bcdnull_3 HR_fw, Bcdnull_3 HR_rv). The scarless-DsRed sequence was amplified with Q5 from the pHD-ScarlessDsRed vector using specific oligonucleotides (sequences available in Supplementary file 1: Bcdnull_DsRed_fw, Bcdnull_DsRed_rv). The three PCR amplified fragments were mixed in equimolar ratio with the 2835 bp SapI-AarI fragment of pHD-ScarlessDsRed for Gibson assembly using the NEBuilder system. Injections and recombinant selection based on DsRed expression in the eye were performed by BestGene. For transformants, sequences at the junctions between deletion break point and the inserted dsRed marker were amplified by PCR and verified by sequencing.\n\n### Live embryo imaging\n\nSample preparation and live imaging of transcription was performed as in Perez-Romero et al., 2018. Briefly, embryos were collected 30 min after egg laying, dechorionated by hand and mounted on coverslips covered in heptane-dissolved glue and immersed in 10 S Voltatef oil (VWR). All embryos were imaged between nc10 and nc14 at stable temperature (25 \u00b0C) on a LSM780 confocal microscope equipped with a 40 x (1.4 NA Plan-Apochromat) oil immersion objective. For each embryo, a stack of images is acquired (0.197 \u00b5m pixel size, 8 bit per pixel, 0.55\u00b5s pixel dwell time, confocal pinhole diameter of 92 \u00b5m, 0.75 \u00b5m distance between consecutive images in the stack, ~1200 \u00d7 400 pixels image size). GFP and RFP proteins were imaged with 488 nm and 561 nm lasers, respectively, with appropriate power output. Embryo size and position of the imaged portion is calculated through imaging and measurement of a tiled image of the sagittal plane of the embryo.\n\n### Data extraction\n\nData extraction from MS2 Videos was performed as in Lucas et al., 2018 using the LiveFly toolbox (Tran et al., 2018b). In brief, nuclei were segmented in a semi-automatic manner based on His2Av-mRFP channel. The active MS2 loci detection was performed in 3D using a thresholding method. The pixel values at the detected loci location were then fitted with a gaussian kernel to obtain the MS2 loci intensity. The expression data containing each nucleus\u2019 position along AP axis and MS2 loci intensity trace over time was exported.\n\nFrom each time trace in individual nuclei at nc13 (see an example in panel A of Figure 2\u2014figure supplement 1), we extracted three features: the detection of MS2 expression during the nuclear interphase (taking only 0 or 1 as values), $T_{0}$ the onset time of transcription detection following mitosis and $P_{Spot}$ the probability of detecting a spot during the steady state window. When calculating $T_{0}$ , to account for the mitotic waves (i.e. nuclei at the anterior poles may divide first leading to uneven timings of chromatin decompaction or reentrance of Bcd into the nuclei along the AP axis) (Vergassola et al., 2018), we first defined the \u2018birth moment\u2019 of each nucleus as the time when the segregation from its sibling after mitosis is complete (see (Lucas et al., 2018) for the detailed procedure). The intensity trace in each nucleus was then trimmed so as it starts at its respective nucleus\u2019 birth time and $T_{0}$ measured as the time of the first MS2 spot appearance in regard to this birth time. The steady state window for $P_{Spot}$ was defined to be 600\u2013800 s into nc13 due to a transient \u2018surge\u2019 in transcription activity with the hb-P2 reporter inserted in the vk33 (Figure 1\u2014figure supplement 1).\n\n### Quantifying pattern sharpness, boundary width and Hill coefficient\n\nTo quantify the sharpness of the transcription patterns of MS2 reporters, we fit the patterns along the AP axis to a sigmoid function:\n\n$$\nf_{Sigmoid}x=f_{max}\\frac{e^{-x\u03b7}}{e^{-x\u03b7}+e^{-x_{0}\u03b7}}\n$$\n\nIn Equation 1, $x$ is the position of the nuclei. $f_{max}$ is the maximum expression level at the anterior pole ($f_{max}=f_{Sigmoid}(x=-\u221e)$). $x_{0}$ is the expression boundary position ($f_{Sigmoid}(x_{0})=f_{max}/2$). $\u03b7$ is the scaling coefficient of the AP axis. $\u03b7$ also corresponds to the pattern sharpness as it is the derivative of the sigmoid function at the boundary position divided by $f_{max}$.\n\nFrom the fitted pattern, we define the boundary width as the distance between two nuclei columns with $f_{Sigmoid}x$ of 5% and 95% of maximum expression level $f_{max}$.\n\n$$\nBoundarywidth=2ln\u2061(\\frac{0.95}{0.05})/\u03b7=5.59/\u03b7.\n$$\n\nWe assume an exponential Bcd gradient with the decay length $\\lambda$ ($Bcd=c_{0}e^{-x/\\lambda }$), where $c_{0}$ is Bcd concentration at $x$=0. We replace $x=-\\lambda log\u2061([Bcd]/c_{0})$ and find the gene expression pattern from the promoter:\n\n$$\nf_{regulation}([Bcd])=f_{max}\\frac{e^{\u2212\\lambda.log([Bcd]/c_{0})\u03b7}}{e^{\u2212\\lambda.log([Bcd]/c_{0})\u03b7}+e^{\u2212x_{0}\u03b7}}=f_{max}\\frac{(\\frac{[Bcd]}{c_{0}})^{\\lambda\u03b7}}{(\\frac{[Bcd]}{c_{0}})^{\\lambda\u03b7}+e^{\u2212x_{0}\u03b7}}=f_{max}\\frac{[Bcd]^{\\lambda\u03b7}}{[Bcd]^{\\lambda\u03b7}+c_{0}^{\\lambda\u03b7}e^{\u2212x_{0}\u03b7}}\n$$\n\nOne should note that in Equation 3 the Hill function with the Hill coefficient $H$ depends on both the pattern sharpness $\u03b7$ and the decay length of the Bcd gradient $\\lambda$:\n\n$$\nH=\\lambda\u03b7\n$$\n\nIn Equation 4, the pattern sharpness $\u03b7$ can be extracted directly from the MS2 Videos. Therefore, the assumptions on the decay length $\\lambda$ will determine the inferred Hill coefficient $H$ and consequently the requirements of Bcd binding cooperativity and energy expenditure to achieve such coefficients (Estrada et al., 2016; Tran et al., 2018a).\n\n### Simulating the model of transcription regulation by Bcd\n\nFor a model of transcription regulation with $N$ Bcd binding sites, the system can be in 2xN +2 states, that consists of ($N$ + 1) binding array states ($S_{0}$ to $S_{N}$) and two transcriptional states ($ON$ and $OFF$), as described in detail in the Appendix 1.\n\n### Calculating the shift in pattern along AP Axis\n\nWe quantify the shift of the MS2 expression patterns along the AP axis from Bcd-2x to Bcd-1x flies in terms of the probability distribution of the shift $\u0394(x)$ from position $x$ position $P_{R|X}(R|X=x)$ given by:\n\n$$\nP_{\u0394(x)}\u0394x=P_{R|X}R=x+\u0394x\n$$\n\nGiven this probability distribution $P_{\u0394x}(\u0394)$ as a function of $x$, we can find a constant value of the shift $\u0394x=\u0394~$ that best describes the observed shift for all positions $x$ within $\u03f5X$:\n\n$$\n\u0394~=arg\u2061max\u0394\u2061\\int_{\u03f5X}^{}p\u0394x=\u0394dx,\n$$\n\nas described in detail in the Appendix 4.\n\n### Fitting the models of transcription regulation by Bcd\n\nWe fit the models of Bcd binding/unbinding to binding sites and activation of transcription, each with a different value of the Bcd gradient decay length $\\lambda$, to the transcription dynamics by the synthetic reporters (Figure 2 and Figure 2\u2014figure supplement 2) and hb-P2 reporter (Figure 5) as described in detail in the Appendix 2.\n",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "2c3948cf-8d42-4323-8dfc-7abc9ff79024",
+      "submission_id": "f40154de-1819-4ef7-b515-ba5d630b6098",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sandeep Krishna, https://ror.org/03gf8rp76 National Centre for Biological Sciences\u00ad\u2010Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74509.sa0](https://doi.org/10.7554/eLife.74509.sa0)\n\nIn this paper, the authors use synthetic transcriptional enhancers to probe the roles of three transcription factors, Bicoid, Hunchback and Zelda, in specifying the production of a sharp, accurately placed gene expression boundary in early fruit fly embryos. They find that Bicoid, which is expressed in an anterior-posterior gradient, is sufficient on its own to generate a boundary in the same location as a wild-type fly, but combinatorial regulation by Hunchback and Zelda is needed to ensure the boundary forms quickly enough. They further combine their experimental observations with modeling to conclude that Bicoid exists in active and inactive forms, and that an equilibrium model captures the relevant behaviors, implying energy expenditure during the binding of transcription factors to DNA or RNA polymerase is theoretically unnecessary.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sandeep Krishna, https://ror.org/03gf8rp76 National Centre for Biological Sciences\u00ad\u2010Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74509.sa1](https://doi.org/10.7554/eLife.74509.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Synthetic deconstruction of hunchback regulation by Bicoid\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Timothy Saunders (Reviewer #1); Justin Crocker (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. While all the reviewers found the study interesting, they also unanimously agree that more data and clarifications are required to substantiate the claims of the manuscript. Please do address all the major comments in the reviews below in your revision.\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 My major concern regards the conclusions for the final section on the activity gradient. In the Introduction it is stated: \"[the Bcd gradient has] an exponential AP gradient with a decay length of ~ 20% egg\u2010length (EL)\". While this was the initial estimate (Houchmandzadeh et al., Nature 2002), later measurements by the Gregor lab (see Supplementary Material of Liu et al., PNAS 2013) found that \"The mean length constant was reduced to 16.5 {plus minus} 0.7%EL after corrections for EGFP maturation\". The original measurements by Houchmandzadeh et al. had issues with background control, that also led to the longer measured decay length. In later work, Durrieu et al., MSB 2018, found a similar scale for the decay length to Liu et al. Looking at Figure 5, a value of 16.5%EL for the decay length is fully consistent with the activity and protein gradients for Bcd being similar. So, either (1) the authors need to provide convincing evidence that, for some reason, in their specific lines the Bcd gradient is longer than expected; or (2) they need to alter the conclusions of the final sections. Indeed, the evidence to me is interesting as it shows that the activity gradient and protein gradient actually are similar (e.g. 15% EL activity vs 16.5% EL protein) which is not, as the authors highlight, a priori obvious. Now, this small shift may well be significant statistically and it is a worthy point in its own right. However, the strength of the conclusions clearly do not match the known gradient and should be substantially toned down.\n\nRelated to the above, the abstract, intro and discussion all need parts to be rewritten to reflect more accurately the data interpretation. Given the current evidence presented in the manuscript, all conclusions on the activity gradient relative to the protein gradient are incorrect.\n\n\u2013 While the videos are nice, it would be very helpful to show some of the actual data in the figures. Clearly annotated time points would significantly enhance the readability of the first section. The heatmaps are insufficient. This is also true for Figure 2A \u2013 show some real data to highlight the burstiness point.\n\n\u2013 The axis scales are not helpful. I'm assuming that \"0% EL\" is meant to be the hb boundary. This is not defined in legend of figure 1, indeed there i simply says distance along embryo axis. Put 0% at one of the poles. This is convention and I see no reason to define 0% at a (somewhat arbitrary) position in the centre of the embryo. Please keep to standard nomenclature unless a very compelling reason. I think this also leads to confusion. E.g. line 242 states that the expression boundary is at 17.5% EL (Figure 3C), yet the results in this figure only extend to 10%EL. Please clarify.\n\n\u2013 All of the experiments are performed in a background with the hb gene present. Does this impact on the readout, as the synthetic lines are essentially competing with the wild-type genes. What controls were done to account for this?\n\n\u2013 Further, the activity of the synthetic reporters depend on the location of insertion. Erceg et al. PLoS Genetics 2014 showed that the same synthetic enhancer can have different readout depending on its genomic location. I'm aware that the authors use a landing site that appears to replicate similar hb kinetics, but did they try random insertion or other landing site? In short, how robust are their results to the specific local genome site? This should have been tested, especially given the boldly written conclusions from the work.\n\n\u2013 Related to the above, it's also not obvious that readout is linear \u2013 i.e. as more binding sites are added, there could be cooperativity between binding domains. This may have been accounted for in the model but it is not clear to me how.\n\n\u2013 It would be good in the Introduction/Discussion to give a broader perspective on the advantages and disadvantages of the synthetic approach to study gene regulation. The intro only discusses Tran et al., Yet, there is a strong history of using this approach, which has also helped to reveal some of the approaches shortcoming. E.g. Gertz et al., Nature 2009 and Sharon et al., Nature Biotechnology 2012. Again, I may have missed, but from my reading I cannot see any critical analysis of the pros/cons of the synthetic approach in development. This is necessary for a broad journal such as eLife so that readers are given clearer context.\n\nReviewer #3 (Recommendations for the authors):I think the authors should acknowledge more explicitly that Hb in the endogenous system acts in an autoregulatory fashion, which it does not do in the synthetic construct. This is relevant to two of the conclusions in particular:\n\n1) I agree that Hb's effects on bursting would increase patterning speed. However, in the B6+Hb BS construct an additional contribution to patterning dynamics could come from the fact that the endogenous Hb boundary is itself dynamic and forms faster than B6 alone. Unless we know how the reporter construct would act with autoregulation orthogonal to Hb, we can't say for sure whether adding Hb BS to B6 gives B6 access to higher concentrations of activator in the anterior than would be expected at the same time point in the endogenous autoregulatory loop.\n\n2) In lines 329-330 the authors state that \"the effects of Zld and Hb are modeled implicitly by the kinetic rate constants\". Is this valid? The Hb boundary is dynamic during the relevant time window, and because Hb in hb-p2 is autoregulatory even time-varying kinetic rates fixed to a measured dynamic trajectory for Hb concentration wouldn't be valid for modeling/drawing conclusions about the endogenous network.\n\nI find the logscale visualization in Figure 4 unnecessarily involved when the reader simply needs to know the approximate size of the boundary shift. I would move the plots to the supplement.\n",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "63e0f770-b86f-4f69-91d1-b39f73a58c55",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C1",
+      "claim": "The Bicoid-hunchback (Bcd-hb) system in the fruit fly embryo has been used as a model to study how positional information in morphogen concentration gradients is robustly translated into step-like responses for over 40 years.",
+      "claim_type": "EXPLICIT",
+      "source": "For over 40 years, the Bicoid-hunchback (Bcd-hb) system in the fruit fly embryo has been used as a model to study how positional information in morphogen concentration gradients is robustly translated into step-like responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the historical use of the Bcd-hb system as a research model, drawing on established scientific practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "f5df4e4b-10a5-44bb-b1a5-f670a34f95a8",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C2",
+      "claim": "All the early hb expression pattern features and temporal dynamics are compatible with an equilibrium model with a short decay length Bicoid activity gradient as a sole source of positional information.",
+      "claim_type": "EXPLICIT",
+      "source": "By using the MS2-MCP RNA-tagging system and analysing in real time, the transcription dynamics of synthetic reporters for Bicoid and/or its two partners Zelda and Hunchback, we show that all the early hb expression pattern features and temporal dynamics are compatible with an equilibrium model with a short decay length Bicoid activity gradient as a sole source of positional information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from MS2-MCP RNA-tagging system analysis of synthetic reporters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "f4560cec-c49e-4d1c-8ab2-158375eaa537",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C3",
+      "claim": "Zelda lowers the Bicoid concentration threshold required for transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, Bicoid's partners speed-up the process by different means: Zelda lowers the Bicoid concentration threshold required for transcriptional activation while Hunchback reduces burstiness and increases the polymerase firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations from synthetic reporter analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "1ebb46f8-6449-4bd0-b16a-ac9b3076513b",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C4",
+      "claim": "Hunchback reduces burstiness and increases the polymerase firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, Bicoid's partners speed-up the process by different means: Zelda lowers the Bicoid concentration threshold required for transcriptional activation while Hunchback reduces burstiness and increases the polymerase firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations from synthetic reporter analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "d6f1ca42-070e-47de-9956-ef830b7b5c90",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C5",
+      "claim": "The Bcd gradient was shown to be steadily established at the onset of transcription, one hour after egg laying, in the form of an exponential AP gradient with a \u03bbdecay length measured in the range of 16\u201325% egg-length (EL).",
+      "claim_type": "EXPLICIT",
+      "source": "The Bcd gradient was shown to be steadily established at the onset of transcription, one hour after egg laying, in the form of an exponential AP gradient with a \u03bbdecay length measured in the range of 16\u201325% egg-length (EL) (Abu-Arish et al., 2010; Durrieu et al., 2018; Houchmandzadeh et al., 2002; Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies that measured the Bcd gradient.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "ee828c4c-590e-4ab8-abf6-650f74478fa2",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C6",
+      "claim": "Fluorescent correlation spectroscopy measurements and single molecule tracking of GFP-tagged Bcd proteins revealed that a fraction of the Bcd proteins has a fast diffusion coefficient sufficient to explain the establishment of the gradient in such a short time by the synthesis-diffusion-degradation model.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent correlation spectroscopy measurements (Abu-Arish et al., 2010) and single molecule tracking of GFP-tagged Bcd proteins (Mir et al., 2018) revealed that a fraction of the Bcd proteins has a fast diffusion coefficient sufficient to explain the establishment of the gradient in such a short time by the synthesis-diffusion-degradation model (Abu-Arish et al., 2010; Fradin, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies using fluorescent correlation spectroscopy and single molecule tracking.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "c6f93e19-d8f0-4a64-a8f3-684612707fa7",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C7",
+      "claim": "The establishment of the Bcd gradient is extremely precise in space with only 10% variability among embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the establishment of the Bcd gradient is not only rapid but also extremely precise in space with only 10% variability among embryos (Gregor et al., 2007b) and the gradient is linearly correlated to the amount of bcd mRNA maternally provided and the number of functional bcd alleles in the females (Liu et al., 2013; Petkova et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Gregor et al., 2007b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "28c3b29b-4a6e-4463-a34e-47734c7e3bd6",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C8",
+      "claim": "The Bcd gradient is linearly correlated to the amount of bcd mRNA maternally provided and the number of functional bcd alleles in the females.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the establishment of the Bcd gradient is not only rapid but also extremely precise in space with only 10% variability among embryos (Gregor et al., 2007b) and the gradient is linearly correlated to the amount of bcd mRNA maternally provided and the number of functional bcd alleles in the females (Liu et al., 2013; Petkova et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Liu et al., 2013 and Petkova et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "9fca8a87-831e-43c9-8b56-0aa7068a8ace",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C9",
+      "claim": "The Bcd protein binds DNA through its homeodomain.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bcd protein binds DNA through its homeodomain (Hanes and Brent, 1989; Treisman et al., 1989) and activates the expression of a large number of target genes carrying Bcd binding sites (BS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hanes and Brent, 1989 and Treisman et al., 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "27988159-bf87-4cb2-a0e7-c61f08303421",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C10",
+      "claim": "Among the Bcd target genes, hunchback (hb) is expressed in a large domain spanning the whole anterior half of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the Bcd target genes, hunchback (hb) is expressed in a large domain spanning the whole anterior half of the embryo (Driever et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Driever et al., 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "ad63c69d-d511-4840-a238-3b01c5dda046",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C11",
+      "claim": "hb expression begins when the first hints of transcription are detected in the embryo, i.e. at nuclear cycle 8.",
+      "claim_type": "EXPLICIT",
+      "source": "hb expression begins when the first hints of transcription are detected in the embryo, i.e. at nuclear cycle 8 (Porcher et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Porcher et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "6613f2eb-4a71-4519-acc5-b639189d61d0",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C12",
+      "claim": "At nuclear cycle 14, the expression domain of hb is delimited by a posterior boundary, which is both precisely positioned along the AP axis and very steep.",
+      "claim_type": "EXPLICIT",
+      "source": "About one hour later (i.e. at nuclear cycle 14), the expression domain of hb is delimited by a posterior boundary, which is both precisely positioned along the AP axis and very steep suggesting that very subtle differences in Bcd concentration in two nearby nuclei at the boundary are already precisely measured to give rise to very different transcriptional responses (Crauk and Dostatni, 2005; Gregor et al., 2007a; Houchmandzadeh et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Crauk and Dostatni, 2005; Gregor et al., 2007a; Houchmandzadeh et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "48e0250f-dd30-4df1-a479-6aef1c4469df",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C13",
+      "claim": "Transcription at the hb locus is detected during the successive S-phases but not during the intervening mitoses.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed analysis of hb expression by RNA FISH also indicated that transcription at the hb locus is extremely dynamic in time: it is detected during the successive S-phases but not during the intervening mitoses, which punctuate this period of development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on RNA FISH analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "3f7458dc-2832-47b9-b2ca-592f9aa7d47e",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C14",
+      "claim": "The hb-P2 MS2-reporter is expressed anteriorly in a domain with a boundary of the same steepness and positioning precision as the endogenous hb.",
+      "claim_type": "EXPLICIT",
+      "source": "This provided an hb-P2 MS2-reporter expressed anteriorly in a domain with a boundary of the same steepness and positioning precision as the endogenous hb (Lucas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lucas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "86dfca11-685a-4d9d-85ed-71be138e4aeb",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C15",
+      "claim": "At the single locus level, the variability in the total mRNA production (\u03b4mRNA/mRNA) over an entire nuclear cycle for loci at the boundary was of 150%.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, despite, this highly reproducible measurement of positional information (position and steepness of the boundary) on the scale of the embryo, at the single locus level, the variability in the total mRNA production (\u03b4mRNA/mRNA) over an entire nuclear cycle for loci at the boundary was of 150 %, i.e. one locus can produce 2.5 X more mRNA than another locus (Desponds et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Desponds et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "42e806bc-b96a-47a3-91e4-ec83a15abd5c",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C16",
+      "claim": "The high variability in mRNA production reflects a stochastic transcription process in neighboring nuclei which nevertheless all make the precise decision to turn ON hb during the cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This high variability (noise) was consistent with smFISH data measuring the variability of hb mRNA amounts in nuclei (Little et al., 2013). It reflects a stochastic transcription process in neighboring nuclei which nevertheless all make the precise decision to turn ON hb during the cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from variability data and supported by citation to Little et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "81a745f5-d5e4-4b4f-b5e7-80ccaf9a3f98",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C17",
+      "claim": "The transcription dynamics of the hb-P2 MS2-reporter indicated that its steep boundary is established at each nuclear cycle 11\u201313 within 180 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription dynamics of the hb-P2 MS2-reporter indicated that its steep boundary is established at each nuclear cycle 11\u201313 within 180 s and therefore suggested that accurate measurements of Bcd concentration were made much more rapidly than anticipated (Lucas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lucas et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "855fe80f-f5af-4dbe-b63f-0dcecaf55c10",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C18",
+      "claim": "Inactivating Bcd by optogenetics in the embryo indicated that the hb transcription exhibited a very fast sensitivity to Bcd activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, inactivating Bcd by optogenetics in the embryo indicated that the hb transcription exhibited a very fast sensitivity to Bcd activity (Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Huang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "c54a92f7-78fa-444a-b389-8d7e5504726f",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C19",
+      "claim": "A model assuming cooperative binding of Bcd proteins to the six known BS sites of the hb-P2 promoter and rate limiting concentrations of Bcd at the boundary was able to recapitulate the fast temporal dynamics of the boundary establishment but could not reproduce its observed steepness.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling was used to recapitulate the observed dynamics assuming cooperative binding of Bcd proteins to the six known BS sites of the hb-P2 promoter and rate limiting concentrations of Bcd at the boundary (Tran et al., 2018a). The model was able to recapitulate the fast temporal dynamics of the boundary establishment but could not reproduce its observed steepness which, given the 20% EL decay length of the Bcd protein gradient measured with immuno-staining (Houchmandzadeh et al., 2002), corresponds to a Hill coefficient of ~7, difficult to achieve without invoking the need for additional energy expenditure (Estrada et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to modeling studies (Tran et al., 2018a; Estrada et al., 2016) and measurement data (Houchmandzadeh et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "808e21d0-6ab6-4bad-8d87-71647456c49a",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C20",
+      "claim": "The performance of the model was higher when increasing the number of Bcd BS above six with a minimum of 9 Bcd BS required to fit the experimental data with a boundary of the appropriate steepness.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the performance of the model was higher when increasing the number of Bcd BS above six with a minimum of 9 Bcd BS required to fit the experimental data with a boundary of the appropriate steepness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on modeling results and comparison to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "a7ac2c75-05d2-406e-97b3-2b1217b71c1b",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C21",
+      "claim": "Six Bcd BS are not sufficient to recapitulate the hb-P2 expression dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that 6 Bcd BS are not sufficient to recapitulate the hb-P2 expression dynamics while a reporter with only 9 Bcd BS recapitulates most of its spatial features, except a slightly lower steepness of its expression boundary and a longer period to reach steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from synthetic reporters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "004a9283-2904-40de-b4c0-2c04d94033ae",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C22",
+      "claim": "A reporter with only 9 Bcd BS recapitulates most spatial features of hb-P2, except a slightly lower steepness of its expression boundary and a longer period to reach steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that 6 Bcd BS are not sufficient to recapitulate the hb-P2 expression dynamics while a reporter with only 9 Bcd BS recapitulates most of its spatial features, except a slightly lower steepness of its expression boundary and a longer period to reach steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from synthetic reporters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "4caf4c41-7fb8-4c0b-b7ae-9df7b1ca071c",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C23",
+      "claim": "The bursty behavior of Bcd-only reporters in excess of Bcd is accounted for by a model involving a first step of Bcd binding/unbinding to the BS array and a second step where the bound Bcd molecules activate transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for the bursty behavior of Bcd-only reporters in excess of Bcd, we fitted our data to a model involving a first step of Bcd binding/unbinding to the BS array and a second step where the bound Bcd molecules activate transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on model fitting to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "db98d3bd-3574-48f4-a07a-5311f9cb04be",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C24",
+      "claim": "Zld sites contribute to the first step of the model by drastically lowering the Bcd concentration thresholds required for activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic reporters combining Bcd BS with either Hb or Zld BS indicated that both Hb and Zld sites reduce the time to reach steady state and increase expression by different means: Zld sites contribute to the first step of the model by drastically lowering the Bcd concentration thresholds required for activation while Hb sites act in the second step by reducing Bcd-induced burstiness and increasing the polymerase firing rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from synthetic reporters with Zld binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "78923b08-f9ca-4c24-b157-32de7cf371be",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C25",
+      "claim": "Hb sites act in the second step by reducing Bcd-induced burstiness and increasing the polymerase firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Synthetic reporters combining Bcd BS with either Hb or Zld BS indicated that both Hb and Zld sites reduce the time to reach steady state and increase expression by different means: Zld sites contribute to the first step of the model by drastically lowering the Bcd concentration thresholds required for activation while Hb sites act in the second step by reducing Bcd-induced burstiness and increasing the polymerase firing rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from synthetic reporters with Hb binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "afe77e4f-7ee3-4bc5-b079-d138d27f3afd",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C26",
+      "claim": "In embryos maternally expressing one (1 X) vs two (2 X) bcd functional copies, the boundary shift of the Bcd-only synthetic reporter with 9 Bcd BS was small enough to set the Bcd system within the limits of an equilibrium model.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in embryos maternally expressing one (1 X) vs two (2 X) bcd functional copies, the boundary shift of the Bcd-only synthetic reporter with 9 Bcd BS was small enough to set the Bcd system within the limits of an equilibrium model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing 1X and 2X bcd embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "8fa5b647-1cce-4f72-a6e7-99eb3d5d1c57",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C27",
+      "claim": "The shift observed for the hb-P2 reporter in 1 X vs 2 X bcd backgrounds was the same as for the synthetic reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the shift observed for the hb-P2 reporter in 1 X vs 2 X bcd backgrounds was the same as for the synthetic reporters further supporting that the Bcd gradient is the main source of positional information for the early expression of hb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing hb-P2 and synthetic reporters in different bcd backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "c51b0f76-1ff6-4369-8169-5239597a544a",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C28",
+      "claim": "The expression of the B6, B9, and B12 reporters harbored similar features as expression of the hb-P2 reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of the B6 (6 Bcd BS), B9 (9 Bcd BS), and B12 (12 Bcd BS) reporters harbored similar features as expression of the hb-P2 reporter (Lucas et al., 2018), which carries the ~300 bp of the hb-P2 promoter and the hb intron (Figure 1B, Supplementary file 1, Video 4): during the cycle, transcription was first initiated in the anterior with the expression boundary moving rapidly toward the posterior to reach a stable position into nc13 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C and comparison to Lucas et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "c4f2c153-09b3-4101-93ad-3cf9958a395c",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C30",
+      "claim": "Bcd concentration is a rate-limiting factor for the expression of all reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Bcd concentration is a rate-limiting factor for the expression of all reporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that T0 depends on position along the AP axis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "cf68626d-26d2-4a1e-bf90-bdf92862ee9e",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C32",
+      "claim": "The time it took for the hb-P2 reporter to reach the final decision to position its boundary was only 225 \u00b1 25 s.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts to the middle of the axis where the absolute number of Bcd molecules has been evaluated to be around 700 (Gregor et al., 2007a) and where the Bcd protein is thus likely to be limiting: transcription dynamics of the various reporters was quite diverse (Figure 1F) and the time it took for the hb-P2 reporter to reach the final decision to position its boundary (converging time, Supplementary file 2) was only 225 \u00b1 25 s while it took about twice as much time for B6 (425 \u00b1 25 s) or B9 (475 \u00b1 25 s) and slightly less for B12 (325 \u00b1 25 s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F and Supplementary file 2, with citation to Gregor et al., 2007a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "85766196-3af8-410b-a9e1-383104f07fd4",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C33",
+      "claim": "The time it took for B6 to reach the final decision to position its boundary was 425 \u00b1 25 s.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts to the middle of the axis where the absolute number of Bcd molecules has been evaluated to be around 700 (Gregor et al., 2007a) and where the Bcd protein is thus likely to be limiting: transcription dynamics of the various reporters was quite diverse (Figure 1F) and the time it took for the hb-P2 reporter to reach the final decision to position its boundary (converging time, Supplementary file 2) was only 225 \u00b1 25 s while it took about twice as much time for B6 (425 \u00b1 25 s) or B9 (475 \u00b1 25 s) and slightly less for B12 (325 \u00b1 25 s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "99bf6f91-883f-4602-905f-b6a3c568d5fb",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C34",
+      "claim": "The time it took for B9 to reach the final decision to position its boundary was 475 \u00b1 25 s.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts to the middle of the axis where the absolute number of Bcd molecules has been evaluated to be around 700 (Gregor et al., 2007a) and where the Bcd protein is thus likely to be limiting: transcription dynamics of the various reporters was quite diverse (Figure 1F) and the time it took for the hb-P2 reporter to reach the final decision to position its boundary (converging time, Supplementary file 2) was only 225 \u00b1 25 s while it took about twice as much time for B6 (425 \u00b1 25 s) or B9 (475 \u00b1 25 s) and slightly less for B12 (325 \u00b1 25 s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "5e35a391-4713-4101-8ceb-ed9ea41e9832",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C35",
+      "claim": "The time it took for B12 to reach the final decision to position its boundary was 325 \u00b1 25 s.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts to the middle of the axis where the absolute number of Bcd molecules has been evaluated to be around 700 (Gregor et al., 2007a) and where the Bcd protein is thus likely to be limiting: transcription dynamics of the various reporters was quite diverse (Figure 1F) and the time it took for the hb-P2 reporter to reach the final decision to position its boundary (converging time, Supplementary file 2) was only 225 \u00b1 25 s while it took about twice as much time for B6 (425 \u00b1 25 s) or B9 (475 \u00b1 25 s) and slightly less for B12 (325 \u00b1 25 s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "63f8d9c2-0f29-4c01-8a7b-af1c006e70a4",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C36",
+      "claim": "For all reporters, the fraction of nuclei with MS2 signal during the cycle exhibited a sigmoid-like pattern along the AP axis reaching 100% in the anterior and 0% in the posterior.",
+      "claim_type": "EXPLICIT",
+      "source": "For all reporters, the fraction of nuclei with MS2 signal during the cycle exhibited a sigmoid-like pattern along the AP axis reaching 100% in the anterior and 0% in the posterior (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "e3399500-abca-4a65-a634-4afda344fa21",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C37",
+      "claim": "Increasing the number of Bcd BS from 6 to 9 shifted the expression boundary toward the posterior and decreased the width of the boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the number of Bcd BS from 6 to 9, shifted the expression boundary toward the posterior and decreased the width of the boundary (Figure 1H), whereas increasing the number of Bcd sites from 9 to 12 did not significantly change the boundary position nor the boundary width.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "15662ebd-17ac-419b-b944-ca0aea5c8b5f",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C38",
+      "claim": "Increasing the number of Bcd sites from 9 to 12 did not significantly change the boundary position nor the boundary width.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the number of Bcd BS from 6 to 9, shifted the expression boundary toward the posterior and decreased the width of the boundary (Figure 1H), whereas increasing the number of Bcd sites from 9 to 12 did not significantly change the boundary position nor the boundary width.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "695f5c7f-d03b-44bd-95d4-edc4e18928cd",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C39",
+      "claim": "B9, B12, and hb-P2 expression boundaries were at almost identical positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, B9, B12, and hb-P2 expression boundaries were at almost identical positions while the width of the hb-P2 boundary was smaller than the width of the B9 or the B12 boundaries (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "aeafa70c-12cd-461a-a11d-c2f39f92d99a",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C40",
+      "claim": "The width of the hb-P2 boundary was smaller than the width of the B9 or the B12 boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, B9, B12, and hb-P2 expression boundaries were at almost identical positions while the width of the hb-P2 boundary was smaller than the width of the B9 or the B12 boundaries (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "d69420ce-3cb3-49f9-940a-0bd65aaafc6e",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C44",
+      "claim": "The burstiness observed in the anterior is not caused by the binding/unbinding of Bcd to the BS array but by downstream processes.",
+      "claim_type": "EXPLICIT",
+      "source": "As in this region the Bcd BS on those reporters are likely to be always occupied by Bcd molecules, the burstiness observed is not caused by the binding/unbinding of Bcd to the BS array but by downstream processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that burstiness persists even when Bcd is in excess.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "641387ca-a86d-4bb0-b64c-233e85639aed",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C47",
+      "claim": "A H6 reporter containing only 6 Hb BS did not exhibit any MS2 signal from nc11 to nc13.",
+      "claim_type": "EXPLICIT",
+      "source": "A H6 reporter containing only 6 Hb BS did not exhibit any MS2 signal from nc11 to nc13 (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "063dadd4-0c1a-433a-b01c-5a4936e77fd6",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C48",
+      "claim": "The Hb protein alone, even with an abundance of Hb sites, could not activate transcription on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicated that the Hb protein alone, even with an abundance of Hb sites, could not activate transcription on its own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that H6 reporter did not show MS2 signal.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "4e9d831e-f605-4ade-82e7-0b8e35254b5f",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C50",
+      "claim": "The presence of Hb BS reduced to 325 \u00b1 25 s the time required for the synthetic H6B6 reporter to reach the final decision to position its boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, at their respective boundary positions where the Bcd concentration is limiting, the presence of Hb BS reduced to 325 \u00b1 25 s the time required for the synthetic H6B6 reporter to reach the final decision to position its boundary (purple dashed line in Figure 3E and converging time, Supplementary file 2) when it was 425 \u00b1 25 s for B6 (yellow dashed line in Figure 3E and converging time, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "e0b1d639-13c8-419f-8b17-f48c39a7faf3",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C51",
+      "claim": "For H6B6, the boundary was slightly (only one nucleus length) shifted toward the posterior and the width was reduced by half when compared to B6.",
+      "claim_type": "EXPLICIT",
+      "source": "For H6B6, the fraction of nuclei with MS2 signal during the cycle exhibited a sigmoid-like pattern (Figure 3F) with, when compared to B6, a boundary slightly (only one nucleus length) shifted toward the posterior and a width reduced by half (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F and 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "3223c72f-2a14-4946-89eb-c740c7abcd67",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C52",
+      "claim": "In the anterior region, the fraction of loci's active time at steady state was always near saturation for the H6B6 reporter (~0.95\u20131).",
+      "claim_type": "EXPLICIT",
+      "source": "In the anterior region, this fraction was always near saturation for the H6B6 reporter (~0.95\u20131) (Figure 3H and Figure 2\u2014figure supplement 1), with very few nuclei exhibiting bursty expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3H and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "30b73179-c344-47d6-adf4-bd13c5d25338",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C53",
+      "claim": "The non-bursty behavior of the H6B6 reporter contrasts with the highly bursty expression of B6 reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "This non-bursty behavior of the H6B6 reporter contrasts with the highly bursty expression of B6 reporter (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "f354610e-8047-42d6-9930-7e45f7dfb3a8",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C54",
+      "claim": "In the anterior region, the mean fluorescence intensity of active H6B6 loci was at least twice higher than that of all synthetic Bcd-only reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, in the anterior region, the mean fluorescence intensity of active H6B6 loci was at least twice higher than that of all synthetic Bcd-only reporters (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "1d4fe72b-6aa4-40de-9148-8d6175a20a53",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C55",
+      "claim": "Hb binding to the promoter accelerates the measurement of positional information by Bcd by improving both the unbinding kinetics of Bcd to its BS and the kinetics of activation/deactivation transcription rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, this suggests that Hb binding to the promoter accelerates the measurement of positional information by Bcd by improving both the unbinding kinetics of Bcd to its BS, which is consistent with the half reduction of the boundary steepness (Figure 3G) and the kinetics of activation/deactivation transcription rates, consistent with reduced burstiness (Figure 3H and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from experimental observations and model fitting results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "1e11a34b-ee72-44f1-afaa-a55eb3a846d7",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C56",
+      "claim": "A reporter with only 6 Zld BS (Z6) was strongly expressed along the whole AP axis.",
+      "claim_type": "EXPLICIT",
+      "source": "As a reporter with only 6 Zld BS (Z6) was strongly expressed along the whole AP axis (Figure 3\u2014figure supplement 1), we had to reduce the number of Zld BS in our synthetic approach to analyze Zld effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "7f26fdf9-86c7-44dc-9275-311233c91714",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C57",
+      "claim": "A Z2 reporter containing only 2 Zld BS did not exhibit any MS2 signal.",
+      "claim_type": "EXPLICIT",
+      "source": "A Z2 reporter containing only 2 Zld BS did not exhibit any MS2 signal (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "ad2780b4-102d-4262-bf29-5598ede1f126",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C60",
+      "claim": "Zld binding can accelerate Bcd-dependent transcription when Bcd is rate-limiting but has no effect when Bcd is in excess.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Zld binding can accelerate Bcd-dependent transcription when Bcd is rate-limiting but has no effect when Bcd is in excess (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that Z2B6 onset time does not vary along AP axis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "fbf1de70-d27e-41e1-a4b9-aa61cebb25c9",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C61",
+      "claim": "The presence of Zld BS reduced to 300 \u00b1 25 s the time required for the synthetic Z2B6 reporter to reach the final decision to position its boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed with H6B6, the presence of Zld BS reduced to 300 \u00b1 25 s the time required for the synthetic Z2B6 reporter to reach the final decision to position its boundary (blue dashed line in Figure 3E and converging time, Supplementary file 2) when it was 425 \u00b1 25 s for B6 (yellow dashed line in Figure 3E and converging time, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "5b70c98b-c89b-42a5-9b09-5b7bbef47f33",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C62",
+      "claim": "The most striking feature of the Z2B6 reporter was the drastic posterior shift of its expression boundary by ~17.5 %EL when compared to B6.",
+      "claim_type": "EXPLICIT",
+      "source": "The most striking feature of the Z2B6 reporter was the drastic posterior shift of its expression boundary by ~17.5 %EL when compared to B6 (Figure 3, C-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "be78312d-e619-4641-bbf9-d5f1b545c0e6",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C63",
+      "claim": "The threshold of Bcd concentration required for activation is lowered when two Zld BS are present in the promoter together with 6 Bcd BS.",
+      "claim_type": "EXPLICIT",
+      "source": "It indicates that the threshold of Bcd concentration required for activation is lowered when two Zld BS are present in the promoter together with 6 Bcd BS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the posterior shift of Z2B6 boundary.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "868625a5-614f-4f7a-8c2f-8912a7a867fa",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C66",
+      "claim": "Zld binding to the promoter accelerates the measurement of positional information by Bcd by facilitating Bcd binding when it is rate-limiting through an increase of the Bcd binding rate kb, without affecting the kinetics of activation/deactivation transcription rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, this suggests that Zld binding to the promoter accelerates the measurement of positional information by Bcd by facilitating Bcd binding when it is rate-limiting through an increase of the Bcd binding rate kb, without affecting the kinetics of activation/deactivation transcription rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from experimental observations and model fitting results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "9b29f811-96da-4fa4-9f4a-72cb6d7f792b",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C67",
+      "claim": "Embryos from wild-type females (2 X) express quantitatively twice as much Bcd proteins as embryos from \u0394bcd/ + females (1 X).",
+      "claim_type": "EXPLICIT",
+      "source": "As the amount of Bcd protein is produced from each bcd allele independently of any other allele in the genome (Liu et al., 2013) and as changing the genetic dosage of bcd in the female leads to proportional changes in both mRNA and protein number in the embryo (Petkova et al., 2014), we assumed that embryos from wild-type females (2 X) express quantitatively twice as much Bcd proteins as embryos from \u0394bcd/ + females (1 X).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on citations to Liu et al., 2013 and Petkova et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "a2be8199-2f32-46ef-a3f8-ca66a0b967b2",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C70",
+      "claim": "The comparison of hb-P2 patterns in Bcd-2X vs Bcd-1X embryos indicated a shift of 11.0% \u00b1 0.5%EL of the expression boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the comparison of hb-P2 patterns in Bcd-2X vs Bcd-1X embryos indicated a shift of 11.0% \u00b1 0.5%EL of the expression boundary (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "5308c16b-64e8-4a26-9058-d6577981d397",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C72",
+      "claim": "The shift obtained for the hb-P2 MS2 reporter was significantly larger than the shift of 8% EL described for hb in previous studies using the bcdE1 allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the shift obtained for the hb-P2 MS2 reporter was significantly larger than the shift of 8% EL described for hb in previous studies using the bcdE1 allele (Houchmandzadeh et al., 2002; Porcher et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison to previous studies cited (Houchmandzadeh et al., 2002; Porcher et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "8e701e07-fd2e-4243-9902-3384eac1d15b",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C73",
+      "claim": "In embryos from wild-type vs bcdE1/ + females, the shift of boundary position was 8% EL.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand this discrepancy, we measured the shift in the boundary positions of our hb-P2 and synthetic MS2 reporters in embryos from wild-type vs bcdE1/ + females and confirmed that in this genetic background the shift of boundary position was 8% EL (Figure 4G and Figure 4\u2014figure supplement 1, panel B-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4G and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "8aa1a496-4583-498a-a396-26f2ab187fd0",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C74",
+      "claim": "The bcdE1 allele likely allows the expression of a weakly functional truncated protein.",
+      "claim_type": "EXPLICIT",
+      "source": "As the molecular lesion in the bcdE1 allele introduces a premature stop codon downstream of the homeodomain (Struhl et al., 1989), these results suggest that the bcdE1 allele likely allows the expression of a weakly functional truncated protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the discrepancy in shift measurements and citation to Struhl et al., 1989.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "9a8424be-1a6d-4572-a4d3-7d36dd2eb258",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C78",
+      "claim": "Lowering the decay length of the Bcd gradient to its effective value allows a more reliable fit of the model to the data and places back the Bcd system within the physical limits of an equilibrium model for concentration sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, lowering the decay length of the Bcd gradient to its effective value allows a more reliable fit of the model to the data and places back the Bcd system within the physical limits of an equilibrium model for concentration sensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the model fitting results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "a1e83654-29ab-4daa-b582-7c92bd40fe41",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C79",
+      "claim": "Zld functions as a pioneer factor by potentiating chromatin accessibility, transcription factor binding and gene expression of the targeted promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Zld functions as a pioneer factor by potentiating chromatin accessibility, transcription factor binding and gene expression of the targeted promoter (Foo et al., 2014; Harrison et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Foo et al., 2014 and Harrison et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "919a0ee2-f469-4dc4-b490-d856c0e4f9a3",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C80",
+      "claim": "Zld has been shown to bind nucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Zld has recently been shown to bind nucleosomal DNA (McDaniel et al., 2019) and proposed to help establish or maintain cis-regulatory sequences in an open chromatin state ready for transcriptional activation (Eck et al., 2020; Hannon et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to McDaniel et al., 2019, Eck et al., 2020, and Hannon et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "468d6f32-0ac4-4018-91df-63fc70f97295",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C81",
+      "claim": "Zld is distributed in nuclear hubs or microenvironments of high concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Zld is distributed in nuclear hubs or microenvironments of high concentration (Dufourt et al., 2018; Mir et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Dufourt et al., 2018 and Mir et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "021db1ff-dabd-4b9d-89c2-ed18ce170d88",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C82",
+      "claim": "Bcd has been shown to be distributed in hubs even at low concentration in the posterior of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Bcd has been shown to be also distributed in hubs even at low concentration in the posterior of the embryo (Mir et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mir et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "7a73e596-abe8-4317-872e-cb2a6b7a5e1f",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C83",
+      "claim": "Bcd hubs are Zld-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "These Bcd hubs are Zld-dependent (Mir et al., 2017) and harbor a high fraction of slow moving Bcd molecules, presumably bound to DNA (Mir et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mir et al., 2017 and Mir et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "1ea00c79-907d-482a-b4a3-a920d9c70922",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C84",
+      "claim": "Hb synergizes with Bcd in the early embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Zld, our knowledge on the mechanistic properties of the Hb protein in the transcription activation process is much more elusive. Hb synergizes with Bcd in the early embryo (Simpson-Brose et al., 1994) and the two TF contribute differently to the response with Bcd providing positional and Hb temporal information to the system (Porcher et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Simpson-Brose et al., 1994 and Porcher et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "aa606f3b-d82d-48c8-8c1f-e0a3d018512d",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C85",
+      "claim": "Bcd provides positional and Hb temporal information to the system.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Zld, our knowledge on the mechanistic properties of the Hb protein in the transcription activation process is much more elusive. Hb synergizes with Bcd in the early embryo (Simpson-Brose et al., 1994) and the two TF contribute differently to the response with Bcd providing positional and Hb temporal information to the system (Porcher et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Porcher et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "7cec5f1c-9cab-4dbd-9d9c-86c7e83f34e6",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C86",
+      "claim": "Hb contributes to the determination of neuronal identity later during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Hb also contributes to the determination of neuronal identity later during development (Hirono et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hirono et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "400e67f2-c568-4242-bd79-32488d9e19e1",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C87",
+      "claim": "Hb is one of the first expressed members of a cascade of temporal TFs essential to determine the temporal identity of embryonic neurons in neural stem cells (neuroblasts) of the ventral nerve cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Hb is one of the first expressed members of a cascade of temporal TFs essential to determine the temporal identity of embryonic neurons in neural stem cells (neuroblasts) of the ventral nerve cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about Hb function in neuroblasts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "7893e7d9-5aa0-4be0-9da4-b9349a5c4e04",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C88",
+      "claim": "Hb is not able to activate transcription on its own but strongly increases RNAP firing probability and burst length of a locus licensed to be ON.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work indicates that Hb is not able to activate transcription on its own but that it strongly increases RNAP firing probability and burst length of a locus licensed to be ON.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations from this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "6741ac02-b968-47ff-a3a2-006f2393e6e7",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C89",
+      "claim": "When comparing the transcription patterns of the B9 reporter in Bcd-2X flies and Bcd-1X flies, a shift of ~10.5 \u00b1 1% EL of the boundary position was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the transcription patterns of the B9 reporter in Bcd-2X flies and Bcd-1X flies, we detected a shift of ~10.5 \u00b1 1% EL of the boundary position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "314854ba-e94b-41b5-ab76-fd52280211f7",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C90",
+      "claim": "This shift revealed a gradient of Bcd activity with an exponential decay length of ~15 \u00b1 1.4% EL (~75 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "This shift revealed a gradient of Bcd activity with an exponential decay length of ~15 \u00b1 1.4% EL (~75 \u00b5m), significantly smaller than the value observed directly (20% EL, ~ 100 \u00b5m) with immuno-staining for the Bcd protein gradient (Houchmandzadeh et al., 2002) but closer from the value of 16.4% EL obtained with immuno-staining for Bcd of the Bcd-GFP gradient (Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on calculation from experimental data and comparison to previous studies (Houchmandzadeh et al., 2002; Liu et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "89a31cb4-6051-4d01-b6cc-3f4406cb0bb4",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C91",
+      "claim": "The effective decay length of 15% EL may correspond to a population of 'active' or 'effective' Bcd distributed in steeper gradient than the Bcd protein gradient observed by immunodetection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work opens the possibility that the effective decay length of 15% EL corresponds to a population of 'active' or 'effective' Bcd distributed in steeper gradient than the Bcd protein gradient observed by immunodetection which would include all Bcd molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "d2e5f641-c721-4872-a7f3-15527ede52d2",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C92",
+      "claim": "Bcd molecules have been shown to be heterogenous in intranuclear motility, age and spatial distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Bcd molecules have been shown to be heterogenous in intranuclear motility, age and spatial distributions but to date, we do not know which population of Bcd can access the target gene and activate transcription (Tran et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tran et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "a1a9c69c-af3b-4ac7-b5aa-c79bed7de538",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C93",
+      "claim": "The existence of two (or more) Bicoid populations with different mobilities raises the question of the underlying gradient for each of them.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of two (or more) Bicoid populations with different mobilities (Abu-Arish et al., 2010; Fradin, 2017; Mir et al., 2018) obviously raises the question of the underlying gradient for each of them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on citations to studies showing Bcd heterogeneity (Abu-Arish et al., 2010; Fradin, 2017; Mir et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "e9a17be7-5a32-4e9f-8ffe-11a2f834808d",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C94",
+      "claim": "The dense Bcd hubs persist even in the posterior region where the Bcd concentration is low.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the dense Bcd hubs persist even in the posterior region where the Bcd concentration is low (Mir et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mir et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "6ff5d489-5219-4dee-bb8e-ab15ddf4f056",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C95",
+      "claim": "As the total Bcd concentration decreases along the AP axis, the hubs accumulate Bcd with increasing proportion in the posterior, resulting in a steeper gradient of free-diffusing Bcd molecules outside the hubs.",
+      "claim_type": "EXPLICIT",
+      "source": "As the total Bcd concentration decreases along the AP axis, these hubs accumulate Bcd with increasing proportion in the posterior, resulting in a steeper gradient of free-diffusing Bcd molecules outside the hubs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation about Bcd hubs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "ede8f109-bc44-4989-b517-58c63c2fcd9e",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C96",
+      "claim": "The gradient of newly translated Bcd was found to be steeper than the global gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "At last, the gradient of newly translated Bcd was also found to be steeper than the global gradient (Durrieu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Durrieu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "4eab46eb-0c81-4dc0-b9e4-9442aaf578d0",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "claim_id": "C99",
+      "claim": "A smaller decay length means that the effective Bcd concentration decreases faster along the AP axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, a smaller decay length also means that the effective Bcd concentration decreases faster along the AP axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the definition of decay length.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0dc8a123-066d-4d7d-bf17-1694f662a7d4",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on the Bicoid-hunchback (Bcd-hb) system in Drosophila embryos, describing the establishment and properties of the Bcd gradient, its binding to DNA, and the spatiotemporal dynamics of hb expression. These claims establish the historical and biological context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C13 are well-supported by citations to prior work and established knowledge in the field. These claims accurately summarize the state of knowledge about the Bcd gradient, its properties (decay length, precision, correlation with bcd dosage), Bcd's DNA binding through its homeodomain, and hb expression patterns. The citations appear appropriate and the claims are consistent with the developmental biology literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "1b6f95ef-475d-4eac-bbc8-ea5929109d09",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work using the hb-P2 MS2-reporter revealed that despite high reproducibility of boundary positioning at the embryo scale, single-locus mRNA production is highly variable (150% variability), reflecting stochastic transcription. The boundary is established rapidly (within 180s) and hb transcription shows fast sensitivity to Bcd activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 are supported by citations to prior studies (Lucas et al., 2018; Desponds et al., 2016; Little et al., 2013; Huang et al., 2017). These claims accurately represent findings from previous work using MS2 reporters and other techniques to characterize hb transcription dynamics. The apparent paradox of precise boundary positioning despite stochastic transcription is well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "ad6474da-95f3-4c31-a111-9df4e1190e95",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Previous modeling work showed that a model with cooperative Bcd binding to six BS sites could recapitulate fast boundary dynamics but not the observed steepness (Hill coefficient ~7), which would require energy expenditure. Model performance improved with 9 or more Bcd BS, suggesting additional BS or mechanisms are needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 are supported by citations to modeling studies (Tran et al., 2018a; Estrada et al., 2016; Houchmandzadeh et al., 2002). These claims accurately represent the challenge in the field: reconciling the steep hb boundary with equilibrium models of Bcd binding. The modeling predictions motivate the experimental approach taken in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Synthetic reporters with 6, 9, or 12 Bcd binding sites (B6, B9, B12) show that 6 Bcd BS are insufficient to recapitulate hb-P2 dynamics, while 9 Bcd BS recapitulate most spatial features except slightly lower steepness and longer time to steady state. Increasing BS from 6 to 9 shifts the boundary posteriorly and decreases width, while 9 to 12 has minimal effect. B9, B12, and hb-P2 boundaries are at nearly identical positions. Bcd concentration is rate-limiting for all reporters, with convergence times of 225\u00b125s (hb-P2), 425\u00b125s (B6), 475\u00b125s (B9), and 325\u00b125s (B12).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22, C28, C30, C32-C40 are supported by experimental data shown in Figure 1 and Supplementary files. The synthetic reporter approach provides clear evidence that 9 Bcd BS are necessary and largely sufficient to recapitulate hb-P2 spatial features. The quantitative measurements of boundary position, width, and convergence times are well-documented with appropriate statistical measures (error bars, confidence intervals). The sigmoid-like patterns and position-dependent onset times provide strong evidence for Bcd as a rate-limiting factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "d15f848d-9200-4351-ad87-eee58af8d109",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The burstiness observed in the anterior region where Bcd is in excess is not caused by Bcd binding/unbinding to the BS array but by downstream processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is a logical inference from the observation that burstiness persists even when Bcd concentration is saturating (anterior region). This reasoning is sound: if Bcd BS are always occupied, then fluctuations in Bcd binding cannot explain the observed transcriptional bursts. The claim is consistent with the two-step model presented later.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "0ceb65c0-7d0e-41a9-b943-c84c22ee7d43",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A two-step model accounts for Bcd-only reporter behavior: step 1 involves Bcd binding/unbinding to the BS array, and step 2 involves bound Bcd molecules activating transcription. This model explains the bursty behavior observed even in excess Bcd.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 is supported by model fitting to experimental data (Figure 2). The two-step model is well-motivated by the observation of burstiness in excess Bcd (C44) and provides a mechanistic framework for understanding the data. The model fitting results shown in Figure 2E-G and Figure 2\u2014figure supplement 2 demonstrate that this framework can recapitulate the experimental patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "ced40959-0714-4b91-96a7-ebc894082b7d",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Hunchback (Hb) cannot activate transcription alone (H6 reporter shows no signal), but when combined with Bcd BS (H6B6 reporter), Hb reduces burstiness, increases mean fluorescence intensity (~2x higher than Bcd-only reporters), reduces boundary width by half, and decreases convergence time to 325\u00b125s. Hb acts by improving Bcd unbinding kinetics and activation/deactivation transcription rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48, C50-C55 are supported by experimental data shown in Figure 3 and Figure 2\u2014figure supplement 1. The H6 reporter provides a clear negative control showing Hb cannot activate alone. The H6B6 reporter data demonstrate Hb's effects on reducing burstiness (P_Spot ~0.95-1 vs. bursty B6), increasing intensity, and speeding convergence. The mechanistic interpretation (C55) is a reasonable inference from the data and model fitting (Figure 2\u2014figure supplement 2), though it remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "e66e5f4d-8fa2-4794-8760-f158fdb7c5c5",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Zelda (Zld) cannot activate transcription alone with only 2 BS (Z2 reporter shows no signal), but when combined with Bcd BS (Z2B6 reporter), Zld drastically shifts the boundary posteriorly by ~17.5%EL, lowers the Bcd concentration threshold for activation, reduces convergence time to 300\u00b125s, and accelerates Bcd-dependent transcription when Bcd is rate-limiting but has no effect in excess Bcd. Zld acts by facilitating Bcd binding (increasing k_b) without affecting activation/deactivation kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57, C60-C63, C66 are supported by experimental data shown in Figure 3 and Figure 3\u2014figure supplement 1. The Z6 and Z2 reporters provide important controls. The Z2B6 reporter shows a dramatic posterior shift (~17.5%EL), which is the key observation supporting Zld's role in lowering the Bcd threshold. The position-independent onset time T_0 for Z2B6 (Figure 3C) provides strong evidence that Zld accelerates transcription when Bcd is limiting. The mechanistic interpretation (C66) is supported by model fitting (Figure 2\u2014figure supplement 2) showing that varying only k_b provides a good fit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "8507162d-d194-413e-95cd-7bd71ecb1da7",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Synthetic reporters combining Bcd BS with either Hb or Zld BS show that both reduce time to steady state and increase expression by different means: Zld lowers Bcd concentration thresholds (step 1 of the model), while Hb reduces burstiness and increases polymerase firing rates (step 2 of the model).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are well-supported by the combined experimental data from H6B6 and Z2B6 reporters (Figure 3) and model fitting results (Figure 2\u2014figure supplement 2). The distinct mechanisms are clearly demonstrated: Zld causes a large boundary shift (threshold effect) while Hb reduces burstiness and increases intensity. The assignment to different steps of the model is consistent with the data and provides a coherent mechanistic framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "6042fc66-0454-4109-8d5e-fbb506281395",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Comparing embryos with 1X vs 2X bcd dosage reveals a boundary shift of ~10.5\u00b11%EL for B9 reporter, corresponding to an effective Bcd activity gradient with decay length ~15\u00b11.4%EL (~75\u03bcm), significantly shorter than the 20%EL measured by immunostaining. This shift is consistent across synthetic reporters and hb-P2 (11.0\u00b10.5%EL shift), supporting that the Bcd gradient is the main source of positional information and that the system operates within equilibrium model limits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C89-C90, C26-C27, C70 are supported by experimental data shown in Figure 4. The assumption that 1X embryos have half the Bcd of 2X embryos (C67) is well-supported by citations (Liu et al., 2013; Petkova et al., 2014). The boundary shift measurements are quantitative with appropriate error estimates. The calculation of effective decay length from the shift is mathematically sound (shift = \u03bb\u00b7ln2). The consistency of shifts across different reporters (B6, B9, Z2B6, hb-P2) provides strong evidence that Bcd is the primary source of positional information. This is a key finding of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "42cb86c3-5dd8-44e8-9d5e-26423c73abec",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The shift observed for hb-P2 in 1X vs 2X bcd backgrounds (11.0\u00b10.5%EL) is significantly larger than the 8%EL shift previously reported using the bcdE1 allele. Experiments confirm an 8%EL shift with bcdE1/+, suggesting the bcdE1 allele produces a weakly functional truncated protein rather than being a true null.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by experimental data (Figure 4G, Figure 4\u2014figure supplement 1) and comparison to prior studies (Houchmandzadeh et al., 2002; Porcher et al., 2010). The authors appropriately reconcile their findings with previous work by testing the bcdE1 allele directly and confirming the smaller shift. The interpretation that bcdE1 produces a weakly functional protein (C74) is a reasonable inference given the molecular lesion (premature stop after homeodomain, Struhl et al., 1989) and the observed 8% vs 11% shift difference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "22049dd1-e253-4858-a949-5553c1591e74",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Lowering the decay length of the Bcd gradient to its effective value (~15%EL) allows a more reliable fit of the model to the data and places the Bcd system within the physical limits of an equilibrium model for concentration sensing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is supported by model fitting results shown in Figure 5. The model with \u03bb=15%EL fits the data significantly better (p<0.05, Figure 5B) and produces a Hill coefficient (~5.2, Figure 5A) that is within the theoretical limit for 6 Bcd BS (H=6). This is a key conclusion that resolves the long-standing puzzle of how the steep hb boundary can be achieved without invoking energy expenditure or additional mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "8daba4bf-3048-4e84-b59d-201a0140188a",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "All early hb expression pattern features and temporal dynamics are compatible with an equilibrium model with a short decay length Bicoid activity gradient as the sole source of positional information. Zelda lowers the Bicoid concentration threshold required for transcriptional activation while Hunchback reduces burstiness and increases the polymerase firing rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 represent the main conclusions of the paper and are well-supported by the combined evidence from synthetic reporters (C21-C22, C24-C25), dosage experiments (C26-C27, C89-C90), and modeling (C23, C78). The synthetic reporter approach successfully dissects the contributions of Bcd, Zld, and Hb. The effective gradient measurement provides the missing piece to reconcile the steep boundary with equilibrium models. The distinct mechanisms of Zld and Hb are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "5ed755b4-0ff5-4142-a779-7dae0f2f59c4",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work has shown that Zld functions as a pioneer factor potentiating chromatin accessibility and TF binding, binds nucleosomal DNA, and is distributed in nuclear hubs. Bcd is also distributed in Zld-dependent hubs containing slow-moving, DNA-bound Bcd molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83 are supported by appropriate citations to prior work (Foo et al., 2014; Harrison et al., 2011; McDaniel et al., 2019; Eck et al., 2020; Hannon et al., 2017; Dufourt et al., 2018; Mir et al., 2017, 2018). These claims provide mechanistic context for interpreting Zld's effects observed in this study. The citations appear accurate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "0dccf949-698b-4947-9b13-c99ac55fca6c",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work showed that Hb synergizes with Bcd in the early embryo, with Bcd providing positional and Hb temporal information. Hb also functions in neuronal identity determination. The current work indicates Hb cannot activate transcription alone but strongly increases RNAP firing probability and burst length of a locus licensed to be ON.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 are supported by appropriate citations (Simpson-Brose et al., 1994; Porcher et al., 2010; Hirono et al., 2017). Claim C88 is supported by experimental data from this study (H6 and H6B6 reporters). The claims provide important context for Hb's function and connect the findings to broader developmental biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    },
+    {
+      "id": "dd241ddc-512d-4d92-842c-cc42ef3c623d",
+      "content_id": "013e1e9e-d9f7-489f-9025-dea913dad5de",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The effective decay length of 15%EL may correspond to a population of 'active' or 'effective' Bcd distributed in a steeper gradient than the total Bcd protein gradient. Bcd molecules are heterogeneous in motility, age, and spatial distribution. Bcd hubs persist in the posterior, potentially creating a steeper gradient of free-diffusing Bcd outside hubs. Newly translated Bcd also forms a steeper gradient. A smaller decay length means Bcd concentration decreases faster along the AP axis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C91 is explicitly speculative (\"opens the possibility\"). Claims C92-C96 are supported by citations to prior work (Tran et al., 2020; Abu-Arish et al., 2010; Fradin, 2017; Mir et al., 2017, 2018; Durrieu et al., 2018). Claim C99 is a logical inference. However, the connection between Bcd heterogeneity and the effective gradient remains speculative. The authors appropriately present this as a hypothesis rather than a conclusion. Direct measurement of the 'active' Bcd population would be needed to confirm this interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:09:48.885154Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "63e0f770-b86f-4f69-91d1-b39f73a58c55",
+      "result_id": "0dc8a123-066d-4d7d-bf17-1694f662a7d4"
+    },
+    {
+      "claim_id": "d6f1ca42-070e-47de-9956-ef830b7b5c90",
+      "result_id": "0dc8a123-066d-4d7d-bf17-1694f662a7d4"
+    },
+    {
+      "claim_id": "ee828c4c-590e-4ab8-abf6-650f74478fa2",
+      "result_id": "0dc8a123-066d-4d7d-bf17-1694f662a7d4"
+    },
+    {
+      "claim_id": "c6f93e19-d8f0-4a64-a8f3-684612707fa7",
+      "result_id": "0dc8a123-066d-4d7d-bf17-1694f662a7d4"
+    },
+    {
+      "claim_id": "28c3b29b-4a6e-4463-a34e-47734c7e3bd6",
+      "result_id": "0dc8a123-066d-4d7d-bf17-1694f662a7d4"
+    },
+    {
+      "claim_id": "9fca8a87-831e-43c9-8b56-0aa7068a8ace",
+      "result_id": "0dc8a123-066d-4d7d-bf17-1694f662a7d4"
+    },
+    {
+      "claim_id": "27988159-bf87-4cb2-a0e7-c61f08303421",
+      "result_id": "0dc8a123-066d-4d7d-bf17-1694f662a7d4"
+    },
+    {
+      "claim_id": "ad63c69d-d511-4840-a238-3b01c5dda046",
+      "result_id": "0dc8a123-066d-4d7d-bf17-1694f662a7d4"
+    },
+    {
+      "claim_id": "6613f2eb-4a71-4519-acc5-b639189d61d0",
+      "result_id": "0dc8a123-066d-4d7d-bf17-1694f662a7d4"
+    },
+    {
+      "claim_id": "48e0250f-dd30-4df1-a479-6aef1c4469df",
+      "result_id": "0dc8a123-066d-4d7d-bf17-1694f662a7d4"
+    },
+    {
+      "claim_id": "3f7458dc-2832-47b9-b2ca-592f9aa7d47e",
+      "result_id": "1b6f95ef-475d-4eac-bbc8-ea5929109d09"
+    },
+    {
+      "claim_id": "86dfca11-685a-4d9d-85ed-71be138e4aeb",
+      "result_id": "1b6f95ef-475d-4eac-bbc8-ea5929109d09"
+    },
+    {
+      "claim_id": "42e806bc-b96a-47a3-91e4-ec83a15abd5c",
+      "result_id": "1b6f95ef-475d-4eac-bbc8-ea5929109d09"
+    },
+    {
+      "claim_id": "81a745f5-d5e4-4b4f-b5e7-80ccaf9a3f98",
+      "result_id": "1b6f95ef-475d-4eac-bbc8-ea5929109d09"
+    },
+    {
+      "claim_id": "855fe80f-f5af-4dbe-b63f-0dcecaf55c10",
+      "result_id": "1b6f95ef-475d-4eac-bbc8-ea5929109d09"
+    },
+    {
+      "claim_id": "c54a92f7-78fa-444a-b389-8d7e5504726f",
+      "result_id": "ad6474da-95f3-4c31-a111-9df4e1190e95"
+    },
+    {
+      "claim_id": "808e21d0-6ab6-4bad-8d87-71647456c49a",
+      "result_id": "ad6474da-95f3-4c31-a111-9df4e1190e95"
+    },
+    {
+      "claim_id": "a7ac2c75-05d2-406e-97b3-2b1217b71c1b",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "004a9283-2904-40de-b4c0-2c04d94033ae",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "c51b0f76-1ff6-4369-8169-5239597a544a",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "c4f2c153-09b3-4101-93ad-3cf9958a395c",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "cf68626d-26d2-4a1e-bf90-bdf92862ee9e",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "85766196-3af8-410b-a9e1-383104f07fd4",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "99bf6f91-883f-4602-905f-b6a3c568d5fb",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "5e35a391-4713-4101-8ceb-ed9ea41e9832",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "63f8d9c2-0f29-4c01-8a7b-af1c006e70a4",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "e3399500-abca-4a65-a634-4afda344fa21",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "15662ebd-17ac-419b-b944-ca0aea5c8b5f",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "695f5c7f-d03b-44bd-95d4-edc4e18928cd",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "aeafa70c-12cd-461a-a11d-c2f39f92d99a",
+      "result_id": "6a9dfc1d-8117-4f28-9c03-d640561a7a93"
+    },
+    {
+      "claim_id": "d69420ce-3cb3-49f9-940a-0bd65aaafc6e",
+      "result_id": "d15f848d-9200-4351-ad87-eee58af8d109"
+    },
+    {
+      "claim_id": "4caf4c41-7fb8-4c0b-b7ae-9df7b1ca071c",
+      "result_id": "0ceb65c0-7d0e-41a9-b943-c84c22ee7d43"
+    },
+    {
+      "claim_id": "641387ca-a86d-4bb0-b64c-233e85639aed",
+      "result_id": "ced40959-0714-4b91-96a7-ebc894082b7d"
+    },
+    {
+      "claim_id": "063dadd4-0c1a-433a-b01c-5a4936e77fd6",
+      "result_id": "ced40959-0714-4b91-96a7-ebc894082b7d"
+    },
+    {
+      "claim_id": "4e9d831e-f605-4ade-82e7-0b8e35254b5f",
+      "result_id": "ced40959-0714-4b91-96a7-ebc894082b7d"
+    },
+    {
+      "claim_id": "e0b1d639-13c8-419f-8b17-f48c39a7faf3",
+      "result_id": "ced40959-0714-4b91-96a7-ebc894082b7d"
+    },
+    {
+      "claim_id": "3223c72f-2a14-4946-89eb-c740c7abcd67",
+      "result_id": "ced40959-0714-4b91-96a7-ebc894082b7d"
+    },
+    {
+      "claim_id": "30b73179-c344-47d6-adf4-bd13c5d25338",
+      "result_id": "ced40959-0714-4b91-96a7-ebc894082b7d"
+    },
+    {
+      "claim_id": "f354610e-8047-42d6-9930-7e45f7dfb3a8",
+      "result_id": "ced40959-0714-4b91-96a7-ebc894082b7d"
+    },
+    {
+      "claim_id": "1d4fe72b-6aa4-40de-9148-8d6175a20a53",
+      "result_id": "ced40959-0714-4b91-96a7-ebc894082b7d"
+    },
+    {
+      "claim_id": "1e11a34b-ee72-44f1-afaa-a55eb3a846d7",
+      "result_id": "e66e5f4d-8fa2-4794-8760-f158fdb7c5c5"
+    },
+    {
+      "claim_id": "7f26fdf9-86c7-44dc-9275-311233c91714",
+      "result_id": "e66e5f4d-8fa2-4794-8760-f158fdb7c5c5"
+    },
+    {
+      "claim_id": "ad2780b4-102d-4262-bf29-5598ede1f126",
+      "result_id": "e66e5f4d-8fa2-4794-8760-f158fdb7c5c5"
+    },
+    {
+      "claim_id": "fbf1de70-d27e-41e1-a4b9-aa61cebb25c9",
+      "result_id": "e66e5f4d-8fa2-4794-8760-f158fdb7c5c5"
+    },
+    {
+      "claim_id": "5b70c98b-c89b-42a5-9b09-5b7bbef47f33",
+      "result_id": "e66e5f4d-8fa2-4794-8760-f158fdb7c5c5"
+    },
+    {
+      "claim_id": "be78312d-e619-4641-bbf9-d5f1b545c0e6",
+      "result_id": "e66e5f4d-8fa2-4794-8760-f158fdb7c5c5"
+    },
+    {
+      "claim_id": "868625a5-614f-4f7a-8c2f-8912a7a867fa",
+      "result_id": "e66e5f4d-8fa2-4794-8760-f158fdb7c5c5"
+    },
+    {
+      "claim_id": "db98d3bd-3574-48f4-a07a-5311f9cb04be",
+      "result_id": "8507162d-d194-413e-95cd-7bd71ecb1da7"
+    },
+    {
+      "claim_id": "78923b08-f9ca-4c24-b157-32de7cf371be",
+      "result_id": "8507162d-d194-413e-95cd-7bd71ecb1da7"
+    },
+    {
+      "claim_id": "9b29f811-96da-4fa4-9f4a-72cb6d7f792b",
+      "result_id": "6042fc66-0454-4109-8d5e-fbb506281395"
+    },
+    {
+      "claim_id": "6741ac02-b968-47ff-a3a2-006f2393e6e7",
+      "result_id": "6042fc66-0454-4109-8d5e-fbb506281395"
+    },
+    {
+      "claim_id": "314854ba-e94b-41b5-ab76-fd52280211f7",
+      "result_id": "6042fc66-0454-4109-8d5e-fbb506281395"
+    },
+    {
+      "claim_id": "afe77e4f-7ee3-4bc5-b079-d138d27f3afd",
+      "result_id": "6042fc66-0454-4109-8d5e-fbb506281395"
+    },
+    {
+      "claim_id": "8fa5b647-1cce-4f72-a6e7-99eb3d5d1c57",
+      "result_id": "6042fc66-0454-4109-8d5e-fbb506281395"
+    },
+    {
+      "claim_id": "a2be8199-2f32-46ef-a3f8-ca66a0b967b2",
+      "result_id": "6042fc66-0454-4109-8d5e-fbb506281395"
+    },
+    {
+      "claim_id": "5308c16b-64e8-4a26-9058-d6577981d397",
+      "result_id": "42cb86c3-5dd8-44e8-9d5e-26423c73abec"
+    },
+    {
+      "claim_id": "8e701e07-fd2e-4243-9902-3384eac1d15b",
+      "result_id": "42cb86c3-5dd8-44e8-9d5e-26423c73abec"
+    },
+    {
+      "claim_id": "8aa1a496-4583-498a-a396-26f2ab187fd0",
+      "result_id": "42cb86c3-5dd8-44e8-9d5e-26423c73abec"
+    },
+    {
+      "claim_id": "9a8424be-1a6d-4572-a4d3-7d36dd2eb258",
+      "result_id": "22049dd1-e253-4858-a949-5553c1591e74"
+    },
+    {
+      "claim_id": "f5df4e4b-10a5-44bb-b1a5-f670a34f95a8",
+      "result_id": "8daba4bf-3048-4e84-b59d-201a0140188a"
+    },
+    {
+      "claim_id": "f4560cec-c49e-4d1c-8ab2-158375eaa537",
+      "result_id": "8daba4bf-3048-4e84-b59d-201a0140188a"
+    },
+    {
+      "claim_id": "1ebb46f8-6449-4bd0-b16a-ac9b3076513b",
+      "result_id": "8daba4bf-3048-4e84-b59d-201a0140188a"
+    },
+    {
+      "claim_id": "a1e83654-29ab-4daa-b582-7c92bd40fe41",
+      "result_id": "5ed755b4-0ff5-4142-a779-7dae0f2f59c4"
+    },
+    {
+      "claim_id": "919a0ee2-f469-4dc4-b490-d856c0e4f9a3",
+      "result_id": "5ed755b4-0ff5-4142-a779-7dae0f2f59c4"
+    },
+    {
+      "claim_id": "468d6f32-0ac4-4018-91df-63fc70f97295",
+      "result_id": "5ed755b4-0ff5-4142-a779-7dae0f2f59c4"
+    },
+    {
+      "claim_id": "021db1ff-dabd-4b9d-89c2-ed18ce170d88",
+      "result_id": "5ed755b4-0ff5-4142-a779-7dae0f2f59c4"
+    },
+    {
+      "claim_id": "7a73e596-abe8-4317-872e-cb2a6b7a5e1f",
+      "result_id": "5ed755b4-0ff5-4142-a779-7dae0f2f59c4"
+    },
+    {
+      "claim_id": "1ea00c79-907d-482a-b4a3-a920d9c70922",
+      "result_id": "0dccf949-698b-4947-9b13-c99ac55fca6c"
+    },
+    {
+      "claim_id": "aa606f3b-d82d-48c8-8c1f-e0a3d018512d",
+      "result_id": "0dccf949-698b-4947-9b13-c99ac55fca6c"
+    },
+    {
+      "claim_id": "7cec5f1c-9cab-4dbd-9d9c-86c7e83f34e6",
+      "result_id": "0dccf949-698b-4947-9b13-c99ac55fca6c"
+    },
+    {
+      "claim_id": "400e67f2-c568-4242-bd79-32488d9e19e1",
+      "result_id": "0dccf949-698b-4947-9b13-c99ac55fca6c"
+    },
+    {
+      "claim_id": "7893e7d9-5aa0-4be0-9da4-b9349a5c4e04",
+      "result_id": "0dccf949-698b-4947-9b13-c99ac55fca6c"
+    },
+    {
+      "claim_id": "89a31cb4-6051-4d01-b6cc-3f4406cb0bb4",
+      "result_id": "dd241ddc-512d-4d92-842c-cc42ef3c623d"
+    },
+    {
+      "claim_id": "d2e5f641-c721-4872-a7f3-15527ede52d2",
+      "result_id": "dd241ddc-512d-4d92-842c-cc42ef3c623d"
+    },
+    {
+      "claim_id": "a1a9c69c-af3b-4ac7-b5aa-c79bed7de538",
+      "result_id": "dd241ddc-512d-4d92-842c-cc42ef3c623d"
+    },
+    {
+      "claim_id": "e9a17be7-5a32-4e9f-8ffe-11a2f834808d",
+      "result_id": "dd241ddc-512d-4d92-842c-cc42ef3c623d"
+    },
+    {
+      "claim_id": "6ff5d489-5219-4dee-bb8e-ab15ddf4f056",
+      "result_id": "dd241ddc-512d-4d92-842c-cc42ef3c623d"
+    },
+    {
+      "claim_id": "ede8f109-bc44-4989-b517-58c63c2fcd9e",
+      "result_id": "dd241ddc-512d-4d92-842c-cc42ef3c623d"
+    },
+    {
+      "claim_id": "4eab46eb-0c81-4dc0-b9e4-9442aaf578d0",
+      "result_id": "dd241ddc-512d-4d92-842c-cc42ef3c623d"
+    }
+  ],
+  "comparisons": []
+}

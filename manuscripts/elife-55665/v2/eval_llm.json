@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C18",
+      "C60",
+      "C75"
+    ],
+    "result": "A mathematical model predicts that spinal cord regeneration is driven by a signal that recruits ependymal cells within ~830 \u03bcm of the injury during ~85 hours post-amputation. The model successfully fits experimental switchpoint data with parameters N0=196\u00b12 cells, \u03bb=828\u00b130 \u03bcm, and \u03c4=85\u00b112 hours, and quantitatively predicts the time evolution of regenerative outgrowth observed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C14, C18, C60, and C75 collectively demonstrate strong agreement between model predictions and experimental data. The model fitting procedure (C14) uses Approximate Bayesian Computation with appropriate convergence criteria, and the predicted outgrowth kinetics (C18) match in vivo observations. The spatiotemporal parameters are well-constrained and biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C76"
+    ],
+    "result": "AxFUCCI transgenic axolotls experimentally validate the model predictions, confirming the recruitment zone appears between days 3-4 post-amputation with an AP border at -717\u00b1272 \u03bcm (day 4) and -446\u00b1112 \u03bcm (day 5), overlapping within 2 sigma with model-predicted recruitment limits of -782\u00b150 \u03bcm and -710\u00b162 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C76 provide quantitative experimental validation of the model's key predictions using the AxFUCCI system. The statistical analysis (Kolmogorov-Smirnov test) appropriately identifies significant differences between anterior and posterior zones at days 4-5 but not earlier. The overlap within 2 sigma between experimental and predicted values demonstrates good agreement, though the large error bars (\u00b1272 \u03bcm at day 4) indicate substantial variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C51",
+      "C79"
+    ],
+    "result": "AxFUCCI reveals cell cycle synchrony during early spinal cord regeneration, with a 4.5-fold increase in Transition-AxFUCCI cells (G1/S transition) at days 1-2 post-amputation (21\u00b112% and 23\u00b112% vs. baseline 5\u00b14%). EdU incorporation experiments confirm these cells reside at G1/S transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, and C51 provide converging evidence for cell cycle synchrony. The transient burst of Transition-AxFUCCI cells is well-documented (C48), and EdU experiments (C49) appropriately distinguish G1/S from G2/M cells. However, the interpretation of a 4.5-fold increase as 'strong indication' of synchrony (C51) is somewhat subjective, as the baseline variability is high (5\u00b14%) and no formal synchrony index is calculated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C61",
+      "C62"
+    ],
+    "result": "Model simulations predict that S phase shortening alone is sufficient to explain explosive spinal cord outgrowth up to day 4, while both S and G1 phase shortening are necessary to sustain outgrowth from day 5 onwards. G1 shortening alone has minimal impact on initial outgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 describe systematic in silico experiments testing different cell cycle shortening scenarios. The model predictions are internally consistent and mechanistically plausible given the relative durations of S phase (~7.5 days) and G1 phase in the long cell cycle. However, these are computational predictions that would benefit from experimental validation through targeted perturbations of S or G1 phase regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Model simulations predict that blocking cell cycle acceleration reduces spinal cord outgrowth to 694\u00b177 \u03bcm instead of 1127\u00b1103 \u03bcm at day 6, which agrees with experimental outgrowth in Sox2 knockout axolotls where cell cycle acceleration does not occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C20 demonstrate agreement between model predictions and independent experimental data from Sox2 knockout animals (Fei et al., 2014). This provides external validation of the model's predictions. However, the comparison relies on data from a different study with potentially different experimental conditions, and the error bars overlap substantially.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "AxFUCCI faithfully reports cell cycle phases in axolotl cells, discriminating G0/G1 (mVenus only), S/G2 (mCherry only), and G1/S and G2/M transitions (double positive). Validation includes live-cell imaging showing expected fluorescence oscillations, flow cytometry confirming DNA content differences, EdU incorporation in S/G2 cells, and cell type-specific expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 and C33-C36 provide comprehensive validation of the AxFUCCI system through multiple orthogonal approaches. The live-cell imaging (C25), flow cytometry (C26, C33), EdU incorporation (C34), and cell type-specific markers (C35, C36) all converge to support proper functioning of the reporter. Notably, the identification of a second double-positive window at G2/M (C28) distinguishes axolotl FUCCI from other organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "AxFUCCI transgenic animals develop normally, show similar basal cell proliferation to controls, and regenerate tail tissue with kinetics comparable to non-transgenic animals used in previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 demonstrate that the AxFUCCI transgene does not perturb normal development or regeneration. The statistical comparison of basal proliferation (C31, p=0.62) and regeneration kinetics (C32) provide appropriate controls. However, sample sizes are modest (n=3-5 tails), and the comparison to previous studies (C32) involves different cohorts that may have experienced different husbandry conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50"
+    ],
+    "result": "AxFUCCI reveals detailed cell cycle dynamics during regeneration: at amputation, 85\u00b15% of ependymal cells are in G0/G1 and 11\u00b16% in S/G2. Following amputation, cells leave G0/G1 by day 1, transit through G1/S at days 1-2, enter S/G2 from day 3, and undergo mitosis from day 4. S/G2 cells increase significantly from day 3, reaching 50% at days 4-5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C44-C47 provide a comprehensive temporal profile of cell cycle dynamics with appropriate statistical testing (Kruskal-Wallis, Wilcoxon rank sum, one-way ANOVA). The quantifications are based on wholemount imaging with adequate sample sizes (n=4-6 tails, ~100-300 cells each). The progression through cell cycle phases is logical and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Despite different baseline cell cycle conditions between AxFUCCI animals and the model (11\u00b16% vs. ~40% S/G2 cells at day 0), both converge to similar cell cycle distributions by days 4-5 and achieve comparable regenerative outgrowth rates, suggesting axolotls mount a consistent regenerative response despite differences in baseline proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 and C83-C85 document an important observation about robustness of the regenerative response. The quantitative agreement at days 4-5 (C55, C83) and similar outgrowth rates (C84) despite different starting conditions is well-documented. However, the interpretation of 'convergence' (C85) is somewhat speculative, and the mechanistic basis for this convergence is not experimentally tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Model simulations predict that G1-to-S transitions and cell divisions occur more frequently posterior to the recruitment limit, with the pattern validated against experimentally derived recruitment limits at days 4-5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 describe internal validation of the model's spatial predictions. The simulations are consistent with the model's assumptions and provide mechanistic insight into how the recruitment zone manifests. However, these are computational predictions rather than direct experimental observations of G1-to-S transitions in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Model simulations predict that cells near the amputation plane end up at the posterior end of the regenerated spinal cord, clone velocity increases monotonically with AP coordinate, and cells preserve their relative AP position during regeneration, consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 describe model predictions about cell trajectories that agree with previous experimental data (Rost et al., 2016). The clonal analysis provides insight into tissue growth dynamics. However, these are model predictions validated against previous data rather than new experimental observations in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Baseline ependymal cell proliferation differs between the current study (11\u00b16% S/G2) and previous work (~40% S phase), potentially due to reduced feeding frequency during COVID-19 restrictions. The current baseline agrees with independent FUCCI axolotls generated using zebrafish constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 documents a significant difference in baseline conditions, but the proposed explanation (C81) is speculative without direct experimental testing. The agreement with independent FUCCI lines (C82) provides some validation, but differences in husbandry, animal size, or measurement methods could all contribute. The lack of systematic investigation of the cause limits confidence in the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C72",
+      "C74"
+    ],
+    "result": "The study concludes that G1 shortening is necessary to sustain ependymal cell pool expansion during spinal cord regeneration, and that cell cycle regulation (particularly G1 length) is a key mechanism controlling neural stem/progenitor cell output in both development and regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C67, C72, and C74 synthesize findings from the current study with broader literature on cell cycle regulation in neural development. The conclusions about G1 shortening (C66) are supported by the modeling results (C23, C62). However, these are primarily computational predictions rather than direct experimental manipulations of G1 length in the axolotl system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "In axolotl, regenerating ependymal cells shorten S phase during the expansion/outgrowth phase, and the regulation of S phase controls cell output in development and regeneration rather than influencing the mode of cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by previous experimental data (Rodrigo Albors et al., 2015) showing S phase shortening from 179\u00b121 to 88\u00b19 hours. The interpretation about S phase controlling cell output rather than division mode (C71) is a reasonable synthesis of findings across different systems, though it remains somewhat speculative without direct experimental manipulation of S phase length in axolotl.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The recruitment zone size appears similar between 3 cm axolotls (used for model parameterization) and 5.5 cm axolotls (used for AxFUCCI experiments), suggesting the recruitment signal may be scale-invariant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 makes an interesting observation about potential scale-invariance, but the comparison is indirect (model based on 3 cm animals vs. AxFUCCI measurements from 5.5 cm animals) and the error bars are large. The authors acknowledge this could be important for understanding signal identity but do not test it systematically across multiple animal sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "AxMLP (axolotl MARCKS-like protein) is proposed as a candidate molecule for recruiting ependymal cells, based on its secreted nature, upregulation peaking 12-24 hours post-amputation, and timing consistent with the model's predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C89 propose AxMLP as a candidate recruitment signal based on circumstantial evidence from previous work (Sugiura et al., 2016). The timing (C87, C88) is consistent with the model's 85-hour recruitment window, and the secreted nature (C89) could explain long-range effects. However, this remains speculative without direct experimental testing of AxMLP's role in spinal cord regeneration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Previous work established that tail amputation triggers reactivation of a developmental-like program in ependymal cells, characterized by cell cycle acceleration (from 14.2\u00b11.3 to 4.9\u00b10.4 days) and emergence of a high-proliferation zone 4 days post-amputation within 800 \u03bcm of the injury site that shifts posteriorly over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C7-C13 summarize well-established findings from previous work by the authors (Rodrigo Albors et al., 2015; Rost et al., 2016). These provide essential context for the current study and are appropriately cited. The claims accurately represent the prior work and are not contested in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C73"
+    ],
+    "result": "The manuscript contextualizes findings within established knowledge that G1 and S phase regulation controls cell fate and output in neural development, with G1 lengthening associated with neurogenesis and G1 shortening with progenitor expansion in mammalian brain development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C68-C69, and C73 accurately summarize established literature on cell cycle regulation in neural development. The citations are appropriate and the claims correctly represent the cited work. This provides important context for interpreting the axolotl regeneration findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The manuscript discusses alternative mechanisms that could trigger proliferation, including biophysical changes (H+ V-ATPase activation in Xenopus, changes in calcium/sodium/membrane potential in axolotl, mechanical property alterations in zebrafish), though these remain speculative for the axolotl spinal cord regeneration context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C95 appropriately cite relevant work from other regenerative systems but acknowledge these remain speculative for axolotl spinal cord regeneration. The discussion provides useful context for future mechanistic studies but does not constitute evidence for these mechanisms operating in the current system.",
+    "result_type": "MINOR"
+  }
+]

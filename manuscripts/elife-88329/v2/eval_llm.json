@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C119",
+      "C120",
+      "C131",
+      "C132"
+    ],
+    "result": "The PUMA CTS contributes to BH3-mimetic resistance by binding to BCL-XL independent of membranes. In vitro FRET assays with purified proteins demonstrate that full-length PUMA resists displacement by BH3-mimetics (A-1155463 and ABT-263) more effectively than PUMA-d26 in both liposome-containing and solution conditions, indicating the CTS confers resistance through direct binding to BCL-XL rather than through membrane-mediated effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 provide converging in vitro FRET data showing differential displacement of PUMA vs PUMA-d26 from BCL-XL in both membrane and solution conditions. The observation that resistance occurs in solution (C54, C55, C57, C58) strongly supports that the CTS binds BCL-XL directly (C120, C131). The SMAC-mCherry assay (C53) confirms functional activity. The experimental design includes appropriate controls and the data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In live cells, the PUMA CTS contributes to BH3-mimetic resistance for binding to BCL-XL and partially to BCL-2, but not to BCL-W. qF3 measurements show that VPUMA and VPUMA-d26 bind to BCL-XL, BCL-2, and BCL-W with similar Kd values (~6-9 \u03bcM) in the absence of inhibitors. However, A-1331852 dramatically increases the Kd for VPUMA-d26 binding to BCL-XL (~9 to ~37 \u03bcM) while having less effect on full-length VPUMA (~6 to ~13 \u03bcM). For BCL-2, deletion of the CTS alone is insufficient for complete displacement, and no inhibitors displaced VPUMA-d26 from BCL-W.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C74 present a comprehensive qF3 analysis with multiple BH3-mimetics (A-1331852, ABT-263, AZD-4320) across three anti-apoptotic proteins. The data consistently show CTS-dependent resistance for BCL-XL (C60, C61, C70, C74), partial effects for BCL-2 (C63, C64, C65, C72), and no effect for BCL-W (C66, C71). The use of multiple inhibitors and biological replicates (n\u22653) strengthens the conclusions. The apparent Kd values are quantitatively reported with appropriate controls (BH3-4E mutants).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C47",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "PUMA employs a 'double-bolt lock' mechanism to bind anti-apoptotic proteins through both its BH3 motif and CTS. Mutagenesis experiments replacing the PUMA BH3 with the BID BH3 sequence (PUMA(BID-BH3)V) or deleting the CTS (PUMA-d26V) individually reduce but do not eliminate resistance to BH3-mimetics. Only when both the BH3 is replaced with BID-BH3 and the CTS is deleted (PUMA(BID-BH3)-d26V) is resistance to displacement from BCL-XL and BCL-2 abolished, demonstrating that both regions contribute to high-affinity binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide systematic mutagenesis data showing that disrupting either Lock 1 (BH3) or Lock 2 (CTS) individually reduces but does not eliminate resistance, while disrupting both abolishes resistance. This is strong evidence for the double-bolt lock model (C8, C47, C79). The data are shown in Figure 3B with appropriate controls (VtBID, BH3-4E mutants). The inference that both regions contribute to high affinity (C78) is well-supported by the cumulative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C48",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C115"
+    ],
+    "result": "When exogenously expressed, the PUMA CTS directs the protein primarily to the ER rather than mitochondria. Random forest classification of EGFPPUMA-4E images shows 55% ER localization compared to 79% for the ER control EGFPBIK-L61G. Pearson correlation analysis confirms that CPUMA and CPUMA-4E have correlation coefficients of ~0.6 with the ER marker BODIPY FL thapsigargin (similar to CBIK), while correlation with MitoTracker Red is <0.2. The CTS is required for ER localization as CPUMA-d26 shows cytoplasmic distribution. Unexpectedly, PUMAV (Venus at C-terminus) retains ER localization, suggesting the CTS does not span the membrane bilayer like conventional tail-anchors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C90 provide two independent quantitative approaches (random forest classification and Pearson correlation) that converge on ER localization. The data include appropriate positive controls (CBIK, EGFPBIK-L61G) and negative controls (mCerulean3, Venus). The observation that C-terminal Venus fusion retains ER localization (C89) is inconsistent with a transmembrane tail-anchor and supports the inference in C90. Serial deletion analysis (C87, C88) provides additional evidence. This contradicts prior reports claiming mitochondrial localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C123"
+    ],
+    "result": "Residues I175 and P180 within the PUMA CTS are required for both ER localization and BH3-mimetic resistance. Serial deletion analysis shows that VPUMA-d11 retains both properties while VPUMA-d26 loses both. Point mutagenesis reveals that I175E and P180E mutations eliminate both ER localization (Pearson coefficients similar to cytoplasmic controls) and BH3-mimetic resistance (Kd increases and % Resistance values similar to PUMA-d26V). Conservative mutations (I175A, P180A) also eliminate resistance despite I175A showing partial membrane localization, suggesting these residues are critical for both functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C110 present systematic deletion and point mutagenesis data with quantitative measurements of both localization (Pearson correlation) and resistance (Kd values, % Resistance). The data show a clear correlation between loss of these residues and loss of both phenotypes (C105, C110). The observation that I175A partially localizes but still loses resistance (C108, C109) suggests the specific residue identity matters beyond just membrane binding. Multiple independent measurements (qF3, microscopy, FLIM-FRET) support the conclusions. Statistical significance is reported (p-values in Figure 6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C121"
+    ],
+    "result": "Membrane binding is not sufficient for BH3-mimetic resistance. Replacing the PUMA CTS with ER-specific tail-anchors from BIK (VPUMA-d26-ER1) or CB5 (VPUMA-d26-ER2) restores ER localization and pro-apoptotic function but does not restore resistance to BH3-mimetics (ABT-263, A-1331852, AZD-4320). Both fusion proteins bind to CBCL-XL in a BH3-dependent manner but are displaced by all tested inhibitors, demonstrating that the specific sequence of the PUMA CTS, rather than membrane binding per se, is responsible for resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 provide a critical experiment that separates membrane localization from resistance. The ER-targeted mutants localize correctly (C95, Pearson correlation data) and function as sensitizers (C96, C97) but lose resistance (C98). This directly tests and refutes the hypothesis that membrane binding alone confers resistance. The data are shown with multiple BH3-mimetics and include appropriate controls. The inference that specific CTS sequences are required (C52, C100, C121) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C117",
+      "C118"
+    ],
+    "result": "PUMA subcellular localization is dynamic and depends on binding partners. While exogenously expressed PUMA localizes primarily to ER, endogenous PUMA in MCF-7 cells co-localizes more with mitochondria (Pearson ~0.6) than ER (Pearson ~0.4). FLIM-FRET data show that both PUMA and PUMA-d26 bind to BCL-XL at both ER and mitochondria. Treatment with stress-inducing drugs (Thapsigargin, Tunicamycin, Etoposide) increases PUMA correlation with both ER and mitochondria, suggesting localization depends on the abundance and localization of binding partners like BCL-XL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 provide FLIM-FRET data with organelle-specific segmentation showing PUMA binds BCL-XL at both locations. The immunofluorescence data for endogenous PUMA (C92, C117) show preferential mitochondrial localization, contrasting with exogenous expression. The drug treatment experiments (C93) support the dynamic localization model. The inference that binding partners influence localization (C94, C118) is reasonable given BCL-XL is present at both ER and mitochondria. However, the speculation in C118 is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The PUMA BH3 sequence makes unique contacts with BCL-2 that confer partial resistance to BH3-mimetics. PUMA-d26 binding to BCL-2 is more resistant to BCL-2-specific inhibitors than expected, and only when both the BH3 is replaced with BID-BH3 and the CTS is deleted can BH3-mimetics fully inhibit PUMA binding to BCL-2. This suggests the PUMA BH3 sequence has unique binding properties compared to other BH3 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 and C133-C135 show that PUMA-d26 retains partial resistance to BCL-2 inhibitors (ABT-263 has no effect, AZD-4320 only partial effect), which is unexpected if the CTS were the sole determinant of resistance. The requirement for both BH3 replacement and CTS deletion (C135, Figure 3B data) supports unique BH3-BCL-2 contacts (C134). The speculation about designing selective inhibitors (C136) is reasonable but not tested. The data are consistent across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Fusing Venus to the C-terminus of PUMA (PUMAV) increases FRET efficiency with anti-apoptotic proteins compared to N-terminal fusion (VPUMA), suggesting increased proximity between fluorophores. This observation is inconsistent with the PUMA CTS spanning a membrane, as a transmembrane orientation would increase distance between the C-terminal Venus and the anti-apoptotic protein-bound N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 reports increased \u0394\u03c9 (FRET efficiency) for PUMAV vs VPUMA, supported by data in Figure 2\u2014figure supplement 2. The inference that this indicates increased proximity (C67) is reasonable given FRET principles. The conclusion that this is inconsistent with membrane spanning (C68) is logical\u2014if the CTS were transmembrane, the C-terminal Venus would be on the opposite side of the membrane from the BH3-binding site, decreasing FRET. Both PUMAV and PUMA-d26V bind in a BH3-dependent manner (C69), confirming the constructs are functional.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C46",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The PUMA CTS is structurally distinct from the BIM CTS. The PUMA CTS contains multiple prolines (4 in the last 14 amino acids, 6 in the last 30 amino acids) and charged residues with an unusually short hydrophobic span, unlike conventional tail-anchors or the BIM CTS. In BIM, separate regions of the CTS mediate mitochondrial binding and BCL-XL binding, whereas in PUMA these functions appear inseparable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C46, C125, and C126 are supported by sequence analysis and citations. The amino acid composition data (C126) is shown in Figure 5\u2014figure supplement 1. The functional difference between PUMA and BIM CTS organization (C10, C125) is supported by citation to Liu et al., 2019 and the data in this manuscript showing I175 and P180 are required for both localization and resistance (C123). The speculation about structural differences (C127) is reasonable given the unusual composition but not directly tested by structural methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Full-length BCL-2 family proteins have different binding affinities than truncated proteins or peptides. Studies with BIM show that truncated proteins and BH3 peptides bind BCL-XL with micromolar to millimolar affinity, while full-length proteins in the presence of membranes show nanomolar affinity. Both the BH3 region and CTS contribute to full-length BIM function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C111-C113) describe established knowledge from prior work (citations to Kale et al., 2018; Liu et al., 2019; Chi et al., 2020) that provides context for the current study. The claims are supported by the cited literature and by data in Figure 1 of the current manuscript showing similar effects for PUMA. This is background information that motivates the study rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The PUMA CTS is dispensable for binding to BCL-XL in the absence of BH3-mimetics, but the BH3 region is essential. PUMA-d26V binds to CBCL-XL with similar affinity to full-length PUMA in the absence of inhibitors, while disabling the BH3 region (BH3-4E) eliminates binding entirely. This suggests a conformational change upon BH3 binding may increase CTS affinity for anti-apoptotic proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is supported by data in Figure 6C showing similar Kd values for PUMA-d26V and PUMAV in DMSO controls. Claim C129 is supported by Figure 6\u2014figure supplement 1 showing no binding for BH3-4E mutants. The speculation about conformational changes (C130) is reasonable given the data but not directly tested. The inference about CTS binding to a distinct site (C131) is supported by the in vitro data showing resistance in solution (Figure 1). However, the mechanism remains speculative without structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C9",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Background on BCL-2 family proteins, apoptosis, and BH3-mimetics. These claims establish the scientific context including: the role of BCL-2 proteins in apoptosis regulation, the mechanism of MOMP, the classification of BH3-only proteins as activators or sensitizers, the development and clinical use of BH3-mimetics like Venetoclax and Navitoclax, and prior observations that PUMA and BIM resist BH3-mimetic displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C45) represent established scientific knowledge supported by citations to the literature. They provide essential background for understanding the significance of the current work. The claims about PUMA and BIM resistance to BH3-mimetics (C5, C39, C40, C41, C42) are supported by citations to Aranovich et al., 2012 and Liu et al., 2019, which motivate the current investigation. These are not novel findings of this manuscript but rather context from prior work.",
+    "result_type": "MINOR"
+  }
+]

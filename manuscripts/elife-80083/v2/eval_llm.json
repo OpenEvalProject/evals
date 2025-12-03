@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Single-cell RNA sequencing of basal cells from adult murine trachea identified six distinct subpopulations: BC-1 (46.1%), BC-2 (39.7%), Basal-proliferating (2.1%), Basal-secretory (5.8%), Basal-squamous (3.3%), and Basal-mesenchyme-like (3.1%). BC-1 and BC-2 together comprise 85.8% of all basal cells and lack Krt14 expression while expressing canonical basal cell markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scRNA-Seq analysis is well-documented with appropriate quality control metrics (C18), validated lineage markers (C19), and clear cluster identification (C2, C19-C26). The use of Trp63CreERT2 mice ensures comprehensive BC capture (C17), and the proportions are directly quantified from the data. The methodology and results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C62"
+    ],
+    "result": "BC-1 and BC-2 are the most uncommitted basal cell subpopulations, lacking enrichment in differentiation markers compared to other BC clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is supported by the scRNA-Seq data showing that BC-1 and BC-2 lack expression of differentiation markers that characterize the other four BC subpopulations (C23-C26). The inference that they are 'most stem-like' is reasonable given the absence of differentiation markers, though direct stem cell markers are not enriched.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "BC-1 and BC-2 occupy distinct spatial niches in the trachea, with BC-1 markers (TGM2, ISL1) enriched ventrally and BC-2 markers (CD44, CAV1, KRT17) enriched dorsally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial distribution is demonstrated through immunofluorescence imaging (C29, C30) with quantitative validation showing statistically significant differences in fluorescence intensity between ventral and dorsal regions (C31). The data are consistent across multiple markers and provide strong evidence for spatial heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "BC-1 and BC-2 have distinct transcriptional signatures: BC-1 is enriched in drug metabolism, glutathione, and retinol metabolism pathways, while BC-2 is enriched in WNT, TGF\u03b2, and Hedgehog signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "KEGG pathway enrichment analysis clearly demonstrates differential pathway enrichment between BC-1 and BC-2 (C27, C28). The analysis is appropriate for the data type and the results are visualized in Figure 1E. The citations supporting the biological relevance of BC-2 pathways strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Basal-proliferating, Basal-squamous, Basal-mesenchyme-like, and Basal-secretory cells show scattered distribution throughout the airway epithelium without consistent spatial organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunofluorescence analysis (Figure 2\u2014figure supplement 2) demonstrates the scattered distribution of these minor BC subpopulations, contrasting with the organized dorsal-ventral pattern of BC-1 and BC-2. This observation is consistent with their low abundance (14.2% total) and suggests different functional roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C39"
+    ],
+    "result": "BC-1 and BC-2 maintain their distinct phenotypes in culture for at least one week independent of their native microenvironments, with similar self-renewal capacity as measured by KRT5+ cell percentages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunofluorescence and qPCR data (Figure 3A-B) demonstrate maintained differential marker expression after 7 days in culture. The quantification of KRT5+ cells shows no significant difference (p=0.17) between BC-1 and BC-2 organoids (C39), supporting similar self-renewal capacity. This is important evidence for cell-intrinsic differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "BC-2 cells have significantly higher organoid-forming efficiency (10.41\u00b10.009%) compared to BC-1 cells (7.32\u00b10.006%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The organoid-forming efficiency is quantified from 6 independent cultures per group (Figure 3C), showing a statistically significant difference. The methodology is clearly described and the sample size is adequate for this type of functional assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "BC-2 is enriched in transcription factors and pathways associated with squamous differentiation (Klf4, Klf6, Klf13, Barx2, AP1 family members, Hedgehog/TGF\u03b2/WNT pathways, and smoking-related squamous metaplasia signature), but does not express terminal squamous differentiation markers (Krt13, Krt4, Krt6a, Sprr2a3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential expression of squamous-associated transcription factors is shown in Figure 1\u2014figure supplement 4B with appropriate citations (C35). GSEA demonstrates enrichment of squamous metaplasia signatures (C37). Importantly, C38 shows that terminal squamous markers are not among the top 100 differentially expressed genes, distinguishing BC-2 from the Basal-squamous population. This is a key distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "BC-2 organoids show significantly higher KRT13+ cell percentages (13.26\u00b12.86%) compared to BC-1 organoids (2.65\u00b11.08%, p=0.001) after culture condition shift from serum-based to serum-free media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantification is based on immunofluorescence analysis with clear statistical significance (p=0.001). The experimental design appropriately tests the response to environmental perturbation, and the differential response supports the functional distinction between BC-1 and BC-2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "BC-2 shows greater sensitivity to retinoic acid (RA) signaling disruption than BC-1, with BMS493 treatment inducing significantly more KRT13+ cells in BC-2 (13.06\u00b11.72%) compared to BC-1 (5.46\u00b10.85%) at ALI day 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ALI culture experiments with BMS493 treatment are well-controlled with appropriate replicates (n=3 batches, >4 fields per batch). Both immunofluorescence and qPCR data support the differential response (C41-C43). The experimental design directly tests the hypothesis about RA pathway involvement in BC heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Under homeostatic conditions, basal cells do not activate RA signaling, as demonstrated by absence of LacZ signals in BCs of RARE-LacZ reporter mice, while luminal cells show LacZ expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RARE-LacZ reporter data (Figure 4\u2014figure supplement 1) clearly shows LacZ signals in luminal cells but not in BCs co-stained with KRT5 and TRP63 (C44). This is appropriate use of a validated reporter system, and the inference about lack of RA signaling activation in homeostatic BCs is reasonable (C45).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Following tracheal injury (Naphthalene or Polidocanol), the dorsal epithelium shows delayed differentiation and massive KRT13 induction compared to ventral epithelium, with KRT13+ cells comprising 45-53% of dorsal epithelium at 5-7 dpi but declining to 5-10% by 15 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The injury-repair experiments use two independent injury models with appropriate time points and quantification (C46-C52). The differential kinetics of regeneration between dorsal and ventral epithelium are well-documented with immunofluorescence and morphometric analysis. The transient nature of KRT13 induction (C52) is important for understanding the metaplastic response. BC-1 and BC-2 markers are maintained during regeneration (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Differential enrichment of BC-1 and BC-2 markers is established prenatally, with E18.5 embryonic tracheas showing statistically significant ventral-dorsal differences for all markers except CAV1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunofluorescence analysis of E18.5 tracheas demonstrates differential marker expression in pre-BCs (C53), with quantitative validation showing statistical significance for most markers (C54). This establishes that BC heterogeneity is acquired during development, not just in adult tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C69",
+      "C70"
+    ],
+    "result": "BC heterogeneity depends on cartilage niche integrity, as Foxg1Cre; Sox9fl/fl mutants lacking tracheal cartilage show loss of differential BC-1 and BC-2 marker expression between ventral and dorsal regions at E18.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic approach using Sox9 mutants is appropriate for testing the role of the cartilage niche (C55). The loss of differential marker expression in mutants (C56) provides strong evidence for niche-dependent establishment of BC heterogeneity. The speculation about attenuated local signals (C70) is reasonable but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Key features distinguishing BC-1 and BC-2 are conserved in human airways, with differential ventral-dorsal distribution of markers (ISL1, CD44, CAV1, KRT17) maintained in tissue sections and cultures, and human dorsal BCs generating more KRT13+ cells (45.59\u00b13.58%) than ventral BCs (19.67\u00b13.98%) at ALI day 28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The human data demonstrate conservation of spatial heterogeneity through immunofluorescence in tissue sections (C58), cultured cells (C59), and functional ALI assays (C60-C61). The use of adult human donor tissue and multiple time points strengthens the translational relevance. Note that TGM2 is not expressed in human BCs (C57), showing some species differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "BC-1 and BC-2 are the main basal cell populations responsible for epithelial regeneration following severe tracheal injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference is supported by the observation that BC-1 and BC-2 markers are maintained during regeneration in both injury models (C51), and these two populations comprise 85.8% of all BCs. The scattered distribution of other BC subpopulations (C32) further supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Basal cells may produce RA or its precursors for luminal cell differentiation, with BC-1 potentially better equipped for RA production due to enrichment in retinol metabolism genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is largely speculative (C64, C65) based on the presence of RA biosynthetic pathway components in BCs and the RARE-LacZ data showing luminal but not BC activation. While the differential enrichment of retinol metabolism genes in BC-1 is documented (C27), direct evidence of RA production by BCs is lacking. This requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The extensive proliferation and KRT13 expression in dorsal BCs during regeneration occurs at the expense of differentiation and is likely transient in the absence of persistent injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about proliferation at the expense of differentiation (C66) is supported by the observation of high KRT13 and low differentiated cell markers in dorsal epithelium at 5-7 dpi (C47-C50). The transient nature (C67) is demonstrated by the reduction in KRT13+ cells by 15 dpi (C52). This interpretation is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Acquisition of BC heterogeneity is an early developmental event that parallels BC fate specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This hypothesis is tested and supported by the E18.5 embryonic data (C53-C54) showing differential marker expression in pre-BCs. The developmental timing is appropriate as BCs are being specified at this stage, and the Sox9 mutant data (C56) further support the developmental establishment of heterogeneity.",
+    "result_type": "MAJOR"
+  }
+]

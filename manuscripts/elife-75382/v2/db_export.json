@@ -1,0 +1,1852 @@
+{
+  "submission": {
+    "id": "96a4dfa5-69df-46d8-8c20-f700958c3ec5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:35:35.241665Z",
+    "updated_at": "2025-12-03T11:35:35.241665Z"
+  },
+  "content": [
+    {
+      "id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "submission_id": "96a4dfa5-69df-46d8-8c20-f700958c3ec5",
+      "content_type": "manuscript",
+      "content_text": "# Cortical microtubule pulling forces contribute to the union of the parental genomes in the Caenorhabditis elegans zygote\n\n## Authors\n\n- Griselda Velez-Aguilera<sup>1</sup> ([ORCID: 0000-0002-9662-8833](https://orcid.org/0000-0002-9662-8833))\n- Batool Ossareh-Nazari<sup>1</sup>\n- Lucie Van Hove<sup>1</sup>\n- Nicolas Joly<sup>1</sup>\n- Lionel Pintard<sup>1</sup> ([ORCID: 0000-0003-0286-4630](https://orcid.org/0000-0003-0286-4630)) \u2020\n\n### Affiliations\n\n1. Universit\u00e9 Paris cit\u00e9, CNRS, Institut Jacques Monod, F-75013 Paris France ([ROR:02c5gc203](https://ror.org/02c5gc203))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPreviously, we reported that the Polo-like kinase PLK-1 phosphorylates the single Caenorhabditis elegans lamin (LMN-1) to trigger lamina depolymerization during mitosis. We showed that this event is required to form a pronuclear envelope scission event that removes membranes on the juxtaposed oocyte and sperm pronuclear envelopes in the zygote, allowing the parental chromosomes to merge in a single nucleus after segregation (Velez-Aguilera et al., 2020). Here, we show that cortical microtubule pulling forces contribute to pronuclear envelopes scission by promoting mitotic spindle elongation, and conversely, nuclear envelopes remodeling facilitates spindle elongation. We also demonstrate that weakening the pronuclear envelopes via PLK-1-mediated lamina depolymerization, is a prerequisite for the astral microtubule pulling forces to trigger pronuclear membranes scission. Finally, we provide evidence that PLK-1 mainly acts via lamina depolymerization in this process. These observations thus indicate that temporal coordination between lamina depolymerization and mitotic spindle elongation facilitates pronuclear envelopes scission and parental genomes unification.\n\n## Introduction\n\nThe life of sexually reproducing organisms starts with joining two haploid genomes. Parental chromosomes are first replicated in distinct pronuclei, each surrounded by a nuclear envelope, and meet for the first time during the first mitosis. Coordinated disassembly of the pronuclear envelopes is required to promote the reunification of the parental chromosomes in the fertilized zygote, but the underlying mechanisms are incompletely understood.\n\nThe Caenorhabditis elegans zygote provides an attractive model system to investigate the mechanisms by which the maternal and paternal genomes unify at the beginning of life (Oegema and Hyman, 2006; Cohen-Fix and Askjaer, 2017; Pintard and Bowerman, 2019). After fertilization, the oocyte and sperm chromosomes surrounded by a nuclear envelope localize to opposite sides of the zygote. The female pronucleus is located in the anterior, whereas the male pronucleus\u2014and associated centrosomes\u2014is in the posterior. When the two pronuclei meet, they change their shape, flattening out along their juxtaposed sides, eventually aligning along the AP axis of the one-cell embryo (Oegema and Hyman, 2006). The two pronuclei undergo spatially regulated nuclear envelope breakdown (NEBD) to permit chromosome attachment to microtubules and their alignment on the metaphase plate. The mechanisms promoting NEBD and remodeling for the subsequent unification of two parental genomes in the first mitosis of the zygote remain poorly understood and are the focus of this study.\n\nThe nuclear envelope consists of two lipid bilayers: the inner nuclear membrane (INM) and outer nuclear membrane (ONM), separated by the perinuclear space (PNS) (Cohen-Fix and Askjaer, 2017). The ONM is continuous with the endoplasmic reticulum membrane, while the PNS is continuous with the ER lumen. Transport across the two nuclear membranes occurs through the nuclear pore complexes (NPCs), anchored to the membrane via several transmembrane nucleoporins. Underlying the INM, the nuclear lamina provides mechanical integrity to the nucleus. C. elegans encodes a single lamin (LMN-1), closer to vertebrate B-type than A-type lamins (Liu et al., 2000).\n\nIn the C. elegans zygote, mitosis is semi-open, and the nuclear envelope only partially breaks down during spindle assembly (Cohen-Fix and Askjaer, 2017). NPC disassembly and lamina depolymerization starts in the vicinity of the centrosomes and then later on the juxtaposed envelopes located between the parental chromosomes (Lee et al., 2000; Hachet et al., 2012; Velez-Aguilera et al., 2020). Complete removal of the NPCs and the lamina only occurs in early anaphase (Lee et al., 2000; Hachet et al., 2012; Velez-Aguilera et al., 2020). While NPCs disassemble and the lamina depolymerizes, remnant nuclear membranes, which contain INM and ONM proteins, persist between the parental chromosomes during mitosis. Removal of the membranes between the parental chromosomes begins with the formation of a membrane scission event (also called a membrane gap), visible by fluorescent microscopy by labeling INM proteins (e.g., LEM-2) (Audhya et al., 2007). This event occurs concomitantly with the parental chromosomes congressing on the metaphase plate, 10\u201340 s before anaphase onset (Audhya et al., 2007; Rahman et al., 2020), allowing the chromosomes from the two pronuclei to mingle on the metaphase plate and join in a single nucleus after chromosome segregation. How this membrane scission event forms remains poorly understood. Intriguingly, it always appears at an equal distance from the two centrosomes and depends on the proper alignment of the chromosomes on the metaphase plate (Rahman et al., 2015). Consistently, membrane scission is totally prevented in hcp-3CENPA(RNAi) embryos (Rahman et al., 2015) that fail to assemble kinetochores and are defective in chromosome alignment (Oegema et al., 2001).\n\nFormation of this membrane gap also requires depolymerization of the lamina by the mitotic Polo-like kinase PLK-1 (Rahman et al., 2015; Martino et al., 2017; Velez-Aguilera et al., 2020). Accordingly, expression of an LMN-1 version, carrying eight non-phosphorylable alanines replacing serines (hereafter LMN-1 8A), is sufficient to prevent the formation of pronuclear envelopes scission. A failure to form this membranes scission can result in the appearance of embryos with a paired nuclei phenotype (Rahman et al., 2015; Martino et al., 2017; Velez-Aguilera et al., 2020). In these embryos, the two sets of parental chromosomes remain physically separated during mitosis and segregate into two separate DNA masses at each pole of the spindle. In turn, this leads to the formation of two nuclei in each cell of the two-cell embryo (paired nuclei) (Audhya et al., 2007; Bahmanyar et al., 2014; Galy et al., 2008; Rahman et al., 2015; Martino et al., 2017; Velez-Aguilera et al., 2020).\n\nBesides PLK-1-mediated lamina depolymerization, mechanical forces provided by astral microtubules could also contribute to pronuclear envelopes scission by facilitating the removal of the lamina, similar to the situation in human cells (Salina et al., 2002; Beaudouin et al., 2002), but possibly also by promoting mitotic spindle elongation.\n\nHere, we follow-up on our previous work showing that pronuclear envelopes scission is regulated via PLK-1-mediated lamina depolymerization (Velez-Aguilera et al., 2020) by testing whether cortical microtubule pulling forces also contribute to this process. We show that astral microtubule pulling forces contribute to pronuclear membranes scission by facilitating lamina disassembly and promoting mitotic spindle elongation. Our observations thus suggest that temporal coordination between chromosome alignment, lamina depolymerization, and spindle elongation induces pronuclear envelopes scission and the unification of the parental chromosomes after segregation.\n\n## Results and discussion\n\n### Microtubules dynamics during NEBD in the one-cell C. elegans embryo\n\nPrevious work established that NEBD is spatially regulated in the fertilized one-cell C. elegans zygote (Lee et al., 2000; Hachet et al., 2012; Velez-Aguilera et al., 2020), but the exact timing of each event and the contribution of microtubules to this process had not yet been investigated. To address this point, we simultaneously visualized microtubules and nuclear envelope dynamics with a high temporal resolution during NEBD. We used spinning disk confocal microscopy to film one-cell embryos (one image/2 s), expressing fluorescently labeled tubulin (GFP::TBB-2) with either the lamina (mCherry::LMN-1) (Figure 1A, Figure 1\u2014video 1), or the transmembrane nucleoporin NPP-22NDC1 (mCherry::NPP-22NDC1) to visualize nuclear membranes (Figure 1B, Figure 1\u2014video 2). We also filmed embryos expressing GFP::TBB-2 and mCherry-tagged histone (mCherry::Histone) to monitor the configuration of the chromosomes during the different steps of NEBD (Figure 1C, Figure 1\u2014video 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013C) Spinning disk confocal micrographs of embryos expressing wild-type GFP::TBB-2 (shown alone, and in green in the merged images) and (A) mCherry::LMN-1 (shown alone and in magenta in the merged image), or (B) mCherry::NPP-22 (magenta, in the merged image), or (C) mCherry::Histone (magenta, in the merged image). Timings in seconds are relative to anaphase onset (0 s). All panels are at the same magnification. Scale bar, 10 \u03bcm. (D) Steps of pronuclear envelopes breakdown: pronuclei permeabilization, lamina disassembly (at the poles, between pronuclei), and pronuclear envelopes scission event (membrane gap) relative to anaphase onset were scored in multiple embryos (n). The timing of pronuclear envelopes scission was scored in embryos expressing mCherry::NPP-22 (blue dots, n=7) while the timing of lamina disassembly was scored in embryos expressing mCherry::LMN-1 (orange dots, n=8). (E) Graph presenting the surface area occupied by the pronuclei starting 200 s before anaphase onset (0 s) in embryos expressing GFP::TBB-2 and mCherry::LMN-1. ( F) Graph presenting the intercentrosomal distance normalized to embryo length starting 80 s before anaphase onset (0 s) in embryos expressing GFP::TBB-2 and mCherry::LMN-1 or mCherry::NPP-22.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Spinning disk confocal micrographs of embryos expressing GFP::TBB-2 (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image) from pronuclei meeting to membrane permeabilization. The timing of paternal and maternal pronuclei permeabilization is indicated by a blue and pink rectangle, respectively. Time interval every 2 s, relative to anaphase onset (0 s). All panels are at the same magnification. Scale bar, 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Spinning disk confocal micrographs of embryos expressing GFP::TBB-2 (shown alone, and in green in the merged images) and mCherry::LMN-1 (shown alone and in magenta in the merged image). Time interval every 2 s, relative to anaphase onset (0 s). All panels are at the same magnification. Scale bar, 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Spinning disk confocal micrographs of embryos expressing GFP::TBB-2 (shown alone, and in green in the merged images) and mCherry::NPP-22 (shown alone and in magenta in the merged image). Time interval every 2 s, relative to anaphase onset (0 s). All panels are at the same magnification. Scale bar, 10 \u03bcm.\n\nBefore NEBD, 200 s prior to anaphase onset, microtubules were excluded from the pronuclei space, and the pronuclear envelopes appeared flattened along their juxtaposed sides but presented elsewhere a rounded shape, except around centrosomes where the nuclear envelopes were highly curved (90\u00b0 angle) (Figure 1A and B). Later, 160 s before anaphase onset, signs of nuclear envelope deformation were apparent in the vicinity of the centrosomes (Figure 1A, red arrow). At these sites, the pronuclear envelopes appeared deformed toward the centrosomes, with the appearance of protrusions, suggesting that microtubules, emanating from the centrosomes were pulling on the pronuclear envelopes. Pronuclear envelopes permeabilization, measured by the appearance of soluble tubulin in the pronuclei space, was detected around 160 s before anaphase onset, concomitantly with pronuclear membranes deformation near the centrosomes (Figure 1A\u2013D, Figure 1\u2014source data 1). Nuclear envelope permeabilization was systematically detected first in the male pronucleus (Figure 1\u2014figure supplement 1). Soon after membrane permeabilization, the first microtubules started to invade the pronuclei space. As more microtubules invaded the pronuclei space to capture paternal chromosomes, the overall surface of the pronuclei decreased (Figure 1E, Figure 1\u2014source data 1), and the pronuclei adopted a more triangular shape, possibly dictated by microtubules assembling the mitotic spindle in the space confined by the remnants of the pronuclear envelopes (Figure 1B; Hayashi et al., 2012).\n\nSigns of lamina disappearance from the pronuclear envelopes systematically started in the vicinity of centrosomes, 70 s before anaphase onset (Figure 1A and D, Figure 1\u2014figure supplement 2), possibly as a consequence of microtubule pulling at this site, together with the action of the lamin kinase PLK-1, which is enriched at centrosomes (Chase et al., 2000; Budirahardja and G\u00f6nczy, 2008; Nishi et al., 2008; Martino et al., 2017). The lamina progressively disappeared in the vicinity of the centrosomes but persisted between the parental chromosomes. Lamina disassembly between the pronuclei started only 50 s before anaphase onset (Figure 1A and D). At this time point, the lamina network was still detected on the nuclear envelope remnants surrounding the chromosomes (Figure 1A). The membrane scission event between the juxtaposed pronuclei was detected later, around 30 s before anaphase onset (Figure 1B and D, Figure 1\u2014figure supplement 3), consistent with previous observations (Audhya et al., 2007). The membrane scission event appeared immediately after chromosome alignment on the metaphase plate (Figure 1B, red arrowhead, Figure 1\u2014figure supplement 3, Figure 1\u2014source data 1).\n\nStarting 80 s before anaphase onset, the distance between the centrosomes steadily increased as a result of spindle elongation (Figure 1F, Figure 1\u2014source data 1). The beginning of spindle elongation was concomitant with lamina depolymerization but preceded membrane gap formation. Based on these observations, we hypothesized that by pulling on nuclear envelopes and membranes, and by tearing apart the lamina and by elongating the mitotic spindle, astral microtubule pulling forces might contribute to pronuclear envelopes breakdown, and thus to the unification of the parental chromosomes in the early C. elegans embryo.\n\n### Paired nuclei phenotype upon reduction of cortical microtubule pulling forces and partial lamina stabilization\n\nThe paired nuclei phenotype is a visual readout of the failure to properly remove the nuclear envelope between the pronuclei (Audhya et al., 2007; Bahmanyar et al., 2014; Galy et al., 2008; Rahman et al., 2015; Martino et al., 2017; Velez-Aguilera et al., 2020).\n\nTo test whether microtubule pulling forces contribute to pronuclear envelopes breakdown, we examined whether experimental reduction of microtubule-dependent cortical pulling forces could modify the penetrance of the paired nuclei phenotype of embryos expressing the gfp::lmn-1 8A allele (Link et al., 2018; Velez-Aguilera et al., 2020). Because this allele partially stabilizes the lamina, 8% of the embryos expressing GFP::LMN-1 8A present double-paired nuclei at the two-cell stage, and another 9% present a single-paired nuclei cell (Figure 2A, Figure 2\u2014source data 1). To reduce the cortical pulling forces, we used RNAi to partially deplete GPR-1/2, which are part of an evolutionarily conserved complex anchoring the dynein motor to the embryo cortex (Colombo et al., 2003; Gotta et al., 2003; Srinivasan et al., 2003; Figure 2B). Mild depletion of GPR-1/2 in gfp::lmn-1 8A embryos greatly enhanced the percentage of embryos presenting a paired nuclei phenotype, with nearly 54% showing double-paired nuclei and 24% a single-paired nuclei (Figure 2A, Figure 2\u2014source data 1). More severe RNAi-mediated gpr-1/2 inactivation (Materials and methods) further increased the percentage of gfp::lmn-1 8A mutant embryos presenting a double-paired nuclei phenotype to 83% (Figure 2A, Figure 2\u2014source data 1). Similar treatments of the embryos expressing a wild-type (WT) GFP::LMN-1 allele had only little effect with 5% of embryos presenting a double-paired nuclei phenotype and 4% presenting a single-paired nuclei phenotype (Figure 2A, Figure 2\u2014source data 1). Thus, reduction of cortical microtubule pulling forces enhances the paired nuclei phenotype of embryos with a partially stabilized lamina network. These observations indicate that microtubule pulling forces facilitate the union of the parental chromosomes in the one-cell embryo.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig2-v2.jpg)\n\n**Figure 2.:** (A) Percentage of lmn-1\u2206; gfp::lmn-1 and lmn-1\u2206; gfp::lmn-1 8A embryos presenting 0 (green bars), 1 (orange bars), or 2 (red bars) paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi) at 20\u00b0C. The number of embryos of the indicated phenotype (n) is shown in the graph and was collected from more than three independent experiments. (B) Schematics of a one-cell Caenorhabditis elegans embryo in anaphase. The astral pulling forces mediated by the G\u03b1 pathway are schematized in the inset. This pathway, which comprises a complex of G\u03b1 (yellow), GPR-1/2 (blue), and LIN-5 (green), anchors dynein (red) to the cell cortex to generate pulling forces when dynein walks toward microtubule minus ends anchored at the spindle poles. Inactivation of GPR-1/2 (red cross) suppresses the astral pulling forces. (C, D) Spinning disk confocal micrographs of early lmn-1\u2206 mutant embryos expressing (C) wild-type GFP::LMN-1 or (D) GFP::LMN-1 8A (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image) exposed to mock RNAi (ctrl) in the upper panels or gpr-1/2 and klp-7 RNAi in the lower panels. Times are in seconds relative to anaphase onset (0 s). All panels are at the same magnification Scale bar, 10 \u03bcm. (E, F) Quantification of (E) GFP::LMN-1 or (F) GFP::LMN-1 8A fluorescence signal intensity over time from central single focal planes above background at the nuclear envelope in embryos of the indicated genotype during mitosis. Times are in seconds relative to anaphase onset (0 s). The average signal intensity of GFP::LMN-1 and GFP::LMN-1 8A at 120 s before anaphase was defined as 1. The data points on the graphs are the normalized average signal intensity per pixel results \u00b1 SEM for n embryos of the indicated genotypes. Data were collected from three independent experiments.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Spinning disk confocal micrographs of early lmn-1\u2206 mutant embryos expressing GFP::LMN-1 8A (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image) exposed to mock RNAi (ctrl) in the upper panels or mild gpr1/2(RNAi) in the lower panels. Times are in seconds relative to anaphase onset (0 s). All panels are at the same magnification Scale bar, 10 \u03bcm.( B) Quantification of GFP::LMN-1 8A fluorescence signal intensity over time from central single focal planes above background at the nuclear envelope in embryos exposed to mock RNAi (ctrl) or mild gpr1/2(RNAi) during mitosis. The average signal intensity of GFP::LMN-1 8A at 120 s before anaphase was defined as 1. The data points on the graphs are the normalized average signal intensity per pixel results \u00b1 SEM for n embryos of the indicated genotypes. Data were collected from three independent experiments.\n\nTo test if microtubule pulling forces were directly facilitating lamina disassembly, we monitored GFP::LMN-1 WT and 8A levels throughout mitosis in control versus gpr-1/2 (RNAi) embryos, upon partial or severe gpr-1/2 inactivation. gpr-1/2 inactivation had no discernable effect on GFP::LMN-1 WT disassembly (Figure 2C and E, Figure 2\u2014source data 1). Likewise, partial gpr-1/2 inactivation did not significantly stabilize GFP::LMN-1 8A during mitosis (Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 1\u2014source data 1). However, more severe reduction of cortical microtubule pulling forces, using strong RNAi-mediated gpr-1/2 inactivation, did stabilize GFP::LMN-1 8A (Figure 2D and F, Figure 2\u2014source data 1), indicating that microtubule pulling forces contribute to lamina disassembly during mitosis.\n\nTo corroborate these observations, we tested whether excessive microtubule pulling forces would facilitate the removal of GFP::LMN-1 8A. To do so, we inactivated the kinesin-13 family member KLP-7, which results in the assembly of an abnormally high number of astral microtubules and thus increases astral cortical pulling forces (Srayko et al., 2005; Gigant et al., 2017). Loss of klp-7 caused a premature disassembly of GFP::LMN-1 8A during mitosis (Figure 2D and F, Figure 2\u2014source data 1), again arguing that astral microtubule pulling forces contribute to the union of the parental chromosomes, at least in part by pulling at the lamina during mitosis. However, our observation that partial inactivation of gpr-1/2 enhanced the percentage of GFP::LMN-1 8A embryos presenting a paired nuclei phenotype (Figure 2A, Figure 2\u2014source data 1) without further stabilizing the lamina (Figure 2\u2014figure supplement 1, Figure 2\u2014source data 1) suggested that cortical microtubule pulling forces might prevent the formation of the paired nuclei phenotype by additional mechanism(s).\n\n### Reducing or increasing cortical microtubule pulling forces affects the timing of membrane scission between the parental pronuclei\n\nRemoval of the membranes between the parental chromosomes begins with a membrane scission event right before anaphase onset and after the beginning of mitotic spindle elongation (Figure 1D and F). We thus reasoned that by pulling on centrosomes and membranes, and by elongating the mitotic spindle, microtubule pulling forces might mechanically facilitate membrane scission between the parental pronuclei. To investigate this possibility, we used spinning disk confocal microscopy to monitor pronuclear membranes scission upon strong gpr-1/2 inactivation in embryos expressing the INM protein GFP::LEM-2 and mCherry::Histone, allowing simultaneous visualization of pronuclear envelopes and chromosomes (Figure 3A). In control embryos, the membrane scission event between the pronuclei was systematically observed around 30 s before anaphase onset, after chromosomes alignment on the metaphase plate (n=32) (Figure 3B, red arrowhead). However, in a vast majority of gpr-1/2(RNAi) embryos, the membrane scission between the pronuclei was never detected. Of the 30 embryos analyzed, only 4 presented a membrane scission event (13%) (Figure 3B and C, Figure 3\u2014source data 1) and these 4 embryos were also the least affected in spindle elongation (Figure 3D, Figure 3\u2014source data 1), suggesting that spindle elongation contributes to pronuclei membrane scission. Notably, all reforming nuclei were severely misshapen in gpr-1/2(RNAi) embryos, but only a fraction of them presented a double-paired nuclei phenotype at the two-cell stage (Figure 3E, Figure 3\u2014source data 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematics of the approach used to test the effect of a reduction of astral microtubule pulling forces on pronuclear envelopes scission (membrane gap) during mitosis. (B) Spinning disk confocal micrographs of one-cell stage embryos expressing the inner nuclear membrane protein GFP::LEM-2 (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image) exposed to mock RNAi (ctrl) in the upper panels or gpr-1/2(RNAi) in the lower panels. Times are in seconds relative to anaphase onset (0 s). The fraction of embryos that showed the presented phenotype is indicated at the bottom right of each image. All panels are at the same magnification Scale bar, 10 \u03bcm. The orange arrowheads point to the pronuclear envelopes scission event. (C) Percentage of embryos presenting a pronuclear envelopes scission event upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi). (D) Graphs showing the intercentrosomal distance normalized to embryo length in percentage during mitosis upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi). Times are in seconds relative to anaphase onset (0 s). (E) Percentage of embryos presenting zero- (green bars), one- (orange bars), or two- (red bars) paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi). The number of embryos analyzed (n) is indicated on the graph and was collected from three independent experiments.\n\nIf cortical microtubule pulling forces contribute to the formation of the pronuclei membrane scission event by elongating the mitotic spindle, excessive pulling forces might induce a premature membrane scission relative to anaphase onset. To test this hypothesis, we used two complementary approaches to increase astral microtubule pulling forces. We inactivated klp-7 as before, or efa-6 (exchange factor for Arf), which encodes a cortically localized protein that limits the growth of microtubules near the cell cortex of early embryonic cells. Loss of EFA-6 causes excess centrosome separation and displacement toward the cell cortex early in mitosis and subsequently increased rates of spindle elongation (O\u2019Rourke et al., 2010). We inactivated klp-7 or efa-6 in embryos expressing GFP::LEM-2 and mCherry::Histone to monitor pronuclear membranes scission relative to anaphase onset and mitotic spindle length (Figure 4A). While the control embryos underwent membrane scission between the juxtaposed pronuclei 0\u201330 s before anaphase onset, this event occurred systematically earlier in efa-6 and klp-7(RNAi) embryos. In 50% of these embryos, pronuclear membranes scission occurred between 40 and 120 s before anaphase onset (Figure 4B and C, Figure 4\u2014source data 1). Membrane scission occurred earlier in these embryos as a consequence of premature mitotic spindle elongation (Figure 4D, Figure 4\u2014source data 1). By measuring mitotic spindle length at the time of membrane gap formation, we noticed that membranes scission systematically occurred at a similar mitotic spindle length (Figure 4E, Figure 4\u2014source data 1). Taken together, these observations indicate that microtubule pulling forces, by promoting mitotic spindle elongation, contribute to pronuclear membranes scission, possibly by tearing apart the pronuclear membranes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig4-v2.jpg)\n\n**Figure 4.:** (A ) Schematics of the approach to test the effect of excessive astral microtubule pulling forces on pronuclear membranes scission (membrane gap) (1) and mitotic spindle elongation (2). (B) Percentage of embryos presenting the pronuclear membranes scission event at different time intervals relative to anaphase onset (0 s). The number of embryos (n) analyzed is indicated on the graph and was collected from three independent experiments. (C\u2013) Spinning disk confocal micrographs of early embryos expressing mCherry::Histone, GFP::LEM-2 exposed to mock RNAi (ctrl), efa-6(RNAi), or klp-7(RNAi). Times are in seconds relative to anaphase onset (0 s). The red arrowheads indicate pronuclear membranes scission. All panels are at the same magnification Scale bar, 10 \u03bcm. (D) Intercentrosomal distance normalized to embryo length in percentage during mitosis upon exposure to mock RNAi (ctrl), efa-6, or klp-7(RNAi). Times are in seconds relative to anaphase onset (0 s). The graph on the right is a zoom of the first graph focused on the 80 s before anaphase onset (0 s). (E) Box and Whisker plots presenting the intercentrosomal distance normalized to embryo length in percentage at the time of pronuclear membranes gap formation in embryos of the indicated genotypes. n=number of embryos analyzed.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (C) Representative spinning disk confocal micrographs of one-cell stage embryos expressing GFP::LEM-2 (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image) exposed to control, efa-6, or klp-7 RNAi. Embryos presenting pronuclear envelopes scission at each time interval are presented along with the configuration of their chromosomes (misaligned or aligned). n=number of embryos presenting a membrane scission at each time interval over the total number of embryos analyzed (in bold). The fraction of embryos presenting aligned or misaligned chromosomes at the time of pronuclear membranes scission is indicated at the top right of each image. Scale bar, 10 \u03bcm.\n\n### Lamina depolymerization and chromosome alignment are prerequisites for membrane gap formation even in the presence of excessive pulling forces\n\nEmbryos with a stabilized lamina, expressing the non-phosphorylable LMN-1 8A, are systematically defective in pronuclear envelopes scission (Velez-Aguilera et al., 2020). We reasoned that the lamina when stabilized, in addition to constituting a physical barrier between chromosomes, could oppose the pulling forces exerted by astral microtubules and could thus prevent elongation of the mitotic spindle during anaphase. To test this model, we measured mitotic spindle elongation in WT versus lmn-1 8A mutant embryos by measuring the intercentrosomal distance during mitosis. In contrast to WT, the spindle did not elongate to the same extent in lmn-1 8A mutant embryos (Figure 5A, Figure 5\u2014source data 1), indicating that stabilization of the lamina interferes with mitotic spindle elongation and thus that lamina depolymerization facilitates spindle elongation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig5-v2.jpg)\n\n**Figure 5.:** (A) Graphs showing the intercentrosomal distance normalized to embryo length in percentage in wild-type and lmn-1 8A embryos during mitosis. Times are in seconds relative to anaphase onset (0 s). The graph on the right is a zoom of the first graph focused on the 80 s before anaphase onset (0 s). (B) Graphs showing the intercentrosomal distance normalized to embryo length in percentage in lmn-1 8A embryos exposed to mock RNAi (ctrl) or klp-7(RNAi) during mitosis. Times are in seconds relative to anaphase onset (0 s). The graph on the right is a zoom of the first graph focused on the 80 s before anaphase onset (0 s). (C) Spinning disk confocal micrographs of one-cell stage embryos of the indicated genotype expressing the inner nuclear membrane protein GFP::LEM-2 (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image). Times are in seconds relative to anaphase onset (0 s). The fraction of embryos that showed the presented phenotype is indicated at the bottom right of each image. All panels are at the same magnification Scale bar, 10 \u03bcm. The orange arrowheads point to the pronuclear envelopes scission event. (D) Percentage of embryos presenting zero- (green bars), one- (orange bars), or two- (red bars) paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or klp-7(RNAi). The number of embryos analyzed (n) is indicated on the graph and was collected from three independent experiments.\n\nWe then asked whether excessive microtubule pulling forces might rescue pronuclear envelopes scission in embryos defective in lamina depolymerization. To test this hypothesis, we inactivated klp-7 in lmn-1 8A embryos expressing GFP::LEM-2 and mCherry::Histone and monitored the nuclear envelope dynamics and mitotic spindle elongation by spinning disk confocal microscopy. While these treatments rescued mitotic spindle elongation defects of lmn-1 8A embryos (Figure 5B, Figure 5\u2014source data 1), they failed to restore the formation of pronuclear membranes scission and single nucleus embryos at the two-cell stage (Figure 5C and D).\n\nThese observations indicate that even premature and excessive spindle elongation is not sufficient to induce membrane scission when the lamina is stabilized during mitosis.\n\nCollectively, these observations indicate that lamina depolymerization is a prerequisite for pronuclear envelopes scission.\n\nPrevious work has shown that a defect in chromosome alignment on the metaphase plate prevents pronuclear membranes scission (Rahman et al., 2015). In the efa-6 or klp-7(RNAi) embryos with enhanced astral pulling forces, pronuclear membranes scission often occurred before chromosomes were fully aligned on the metaphase plate (Figure 4\u2014figure supplement 1) suggesting that membrane scission between the pronuclei may not require full and complete chromosome alignment on the metaphase plate.\n\nTo further investigate this possibility, we examined whether excessive pulling forces can trigger pronuclear envelopes scission between the pronuclei in the total absence of chromosome alignment. To this end, we inactivated klp-7 and the essential kinetochore protein HCP-3CENPA to prevent chromosome congression on the metaphase plate (Oegema et al., 2001). In these embryos, no membrane scission was detected despite the extensive mitotic spindle elongation (Figure 5C). These observations indicate that chromosome localization in the vicinity of the pronuclear membranes is necessary for pronuclear membranes scission and might dictate the site of membranes scission.\n\n### The essential role of PLK-1 in pronuclear envelopes scission is to promote lamina depolymerization\n\nPLK-1 is critically required for pronuclear envelopes scission (Rahman et al., 2015; Martino et al., 2017). Accordingly, membranes scission is prevented in plk-1ts embryos. We thus investigated the exact role of PLK-1 in pronuclear envelopes scission. We previously showed that LMN-1 is a key PLK-1 target in this process as the sole expression of the non-phosphorylable lmn-1 8A allele is sufficient to prevent pronuclear envelopes scission (Velez-Aguilera et al., 2020). Whether PLK-1 regulates pronuclear envelopes scission by targeting other substrates is currently unclear. For instance, PLK-1 could regulate membrane scission by activating a factor essential for pronuclear envelopes scission. Recent Focused Ion Beam-Scanning Electron Microscopy (FIB-SEM) analysis has revealed that the four membranes of the pronuclei fuse and become two via a novel membrane structure, the three-way sheet junctions (Rahman et al., 2020). These junctions are absent in plk-1ts embryos (Rahman et al., 2020) raising the possibility that PLK-1 could directly regulate their formation.\n\nTo discriminate between these hypotheses, we asked whether partial lmn-1 inactivation by RNAi is sufficient to restore pronuclear envelopes scission in plk-1ts embryos (Figure 6A). If lmn-1 inactivation in plk-1ts does not restore pronuclear envelopes scission, this would argue that PLK-1 has, beyond lamina depolymerization, other roles to promote membrane gap formation. However, if lmn-1 inactivation is sufficient to restore membrane gap formation in plk-1ts, this would suggest that LMN-1 is possibly the only key PLK-1 target in this process, unless partial lmn-1 inactivation indirectly affects an inhibitor of pronuclear envelopes scission.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig6-v2.jpg)\n\n**Figure 6.:** (A) The schematics present the approach used to test whether partial lmn-1 inactivation in plk-1ts embryos expressing GFP::LEM-2 and mCherry::EMR-1 is sufficient to restore membrane gap formation. (B) Spinning disk confocal micrographs of wild-type or plk-1ts early embryos expressing mCherry::EMR-1 and GFP::LEM-2 exposed mock RNAi (ctrl) or lmn-1(RNAi). All panels are at the same magnification. Scale bar, 10 \u03bcm. (C) Percentage of embryos presenting zero- (green bars), one- (orange bars), or two- (red bars) paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or lmn-1(RNAi). The number of embryos analyzed (n) is indicated on the graph and was collected from three independent experiments. (D) Working model: temporal coordination between lamina depolymerization, chromosome alignment, and mitotic spindle elongation is required for pronuclear envelopes scission and parental genomes unification in the early Caenorhabditis elegans embryo.\n\nTo monitor pronuclear envelopes scission in plk-1ts mutant embryos, we constructed a plk-1ts strain co-expressing GFP::LEM-2 and mCherry::EMR-1 (EMERIN), which both localize to the inner nuclear envelope and directly interact with the lamina (Figure 6A). We then used spinning disk confocal microscopy to monitor pronuclear membranes configuration in one-cell embryos. As reported previously, pronuclear envelopes scission between the pronuclei was totally prevented in plk-1ts embryos at restrictive temperature (Rahman et al., 2020; Rahman et al., 2015). However, partial RNAi-mediated lmn-1 inactivation was sufficient to restore pronuclear envelopes scission (Figure 6B). lmn-1 inactivation also suppressed the paired nuclei phenotype of plk-1ts embryos in these conditions (Figure 6C, Figure 6\u2014source data 1), as reported previously (Rahman et al., 2015; Martino et al., 2017). lmn-1 inactivation not only restored membrane scission and the shape of the pronuclei, but also the normal localization of LEM-2 and EMR-1.\n\nIn plk-1ts embryos, pronuclei appeared rounded, likely due to the persisting lamina that provides rigidity to the nuclear membrane. GFP::LEM-2 and mCherry::EMR-1 readily accumulated on the nuclear envelope. lmn-1 inactivation restored the triangular shape of the mitotic spindle and the correct localization of LEM-2 and EMR-1 to the endoplasmic reticulum surrounding the centrosomes (Figure 6A, B and C). We speculate that by fluidifying the pronuclear membranes, lamina depolymerization might facilitate the release of INM proteins back into the peripheral ER surrounding the centrosomes.\n\nCollectively, these observations suggest that LMN-1 might be the only PLK-1 direct target involved in regulating pronuclear membranes scission.\n\nIn conclusion, our study indicates that cortical microtubule pulling forces are required for pronuclear membranes scission but are not sufficient when chromosomes are not aligned on the metaphase plate, or when the lamina persists between the parental chromosomes. Coordination between chromosome alignment, lamina depolymerization, and mitotic spindle elongation is thus required for pronuclear envelopes scission in the early C. elegans embryo (Figure 6D). In addition, our results indicate that a lack of membrane scission does not systematically result in a paired nuclei phenotype. While gpr-1/2 inactivation prevents membrane scission, most reforming nuclei were misshapen but not double paired at the two-cell stage. One possible explanation for this observation is that the lamina disassembles in gpr-1/2(RNAi) embryos, which results in membrane flexibility, and allows integral membrane proteins to redistribute into the peripheral ER. Then, during nuclear envelopes reformation and expansion, the membrane separating the parental chromosomes is weak and eventually dismantles, which may explain why single pronuclei manage to form at the two-cell stage in gpr-1/2(RNAi) embryos. It is noteworthy that in all reported conditions where a correlation between a lack of membrane scission and the paired nuclei phenotype was observed, depolymerization of the lamina was systematically delayed or inhibited (Audhya et al., 2007; Galy et al., 2008; Golden et al., 2009; Bahmanyar et al., 2014; Rahman et al., 2015; Martino et al., 2017; Velez-Aguilera et al., 2020). Persistence of the lamina rigidifies the nuclear membrane, prevents the redistribution of integral membrane proteins into the ER, and counteracts the mitotic spindle elongation, which typically results in a penetrant paired nuclei phenotype.\n\nFinally, our observations that a defective lamina depolymerization interferes with mitotic spindle elongation highlights the role of nuclear envelope remodeling in influencing mitotic spindle length.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>C. elegans N2 Bristol</td>\n      <td>Caenorhabditis Genetics Center(CGC)</td>\n      <td>http://www.cgc.cbs.umn.edu/strain.php?id=10570</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>mCherry::NPP-22npp-22(syb1474)V</td>\n      <td>SunyBiotech</td>\n      <td>PHX1774</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>mCherry::LMN-1; GFP::TBB-2:[mCherry::lmn-1] MosSCI: jfSi68[lmn-1(4 kb 5\u2019UTR)::mCherry::lmn-1gDNA exon four recoded::3\u2019UTR lmn-1 cb-unc-119(+)]II; ojIs1[Ppie-1_gfp::tbb-2]; unc-119(ed3)III</td>\n      <td>Pintard labThis study</td>\n      <td>WLP996</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>mCherry::NPP-22; GFP::TBB-2:ojIs1[Ppie-1_gfp::tbb-2, cb-unc-119(+)]; unc-119(ed3)III; mCherry::npp-22(syb1474)V</td>\n      <td>Pintard labThis study</td>\n      <td>WLP993</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>mCherry::HIS-58; GFP::TBB-2:ojIs1[Ppie-1_gfp::tbb-2]; unc-119(ed3)III; ltIs37[pAA64; Ppie1_mCherry::his-58; unc-119 (+)]IV</td>\n      <td>CGC</td>\n      <td>JCC483</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>GFP::LMN-1; mCherry::Histone:lmn-1(tm1502)I; jfSi68[Plmn-1::gfp cb-unc-119(+)]II; mCherry::his-58 IV</td>\n      <td>Link et al., 2018</td>\n      <td>UV142</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>GFP::LMN-1 8A; mCherry::Histone:lmn-1(tm1502)I;jfSi89[Plmn-1S(21,22,24,32,397,398,403,405)A::gfp cb-unc-119(+)]II; mCherry::his-58 IV</td>\n      <td>Link et al., 2018</td>\n      <td>UV144</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>GFP::LEM-2; mCherry::HIS-58:Itls37 [(pAA64) pie-1p::mCherry::his-58 + unc-119(+)]IV qals3507 [pie-1::GFP::LEM-2 + unc-119(+)]</td>\n      <td>CGC</td>\n      <td>OD83</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>lmn-1 8A; GFP::LEM-2; mCherry::HIS-58:lmn-1S8A S(21,22,24,32,397,398,403, 405)A Itls37 [(pAA64) pie-1p::mCherry::his-58 + unc-119(+)]IV qals3507 [pie-1::GFP::LEM-2 + unc-119(+)]</td>\n      <td>Velez-Aguilera et al., 2020</td>\n      <td>WLP833</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>GFP::LEM-2; mCherry::EMR-1:bqSi210 [lem-2p::lem-2::GFP + unc-119(+)] II; bqSi226 [emr-1p::emr-1::mCherry + unc-119(+)]IV</td>\n      <td>Morales-Mart\u00ednez et al., 2015</td>\n      <td>BN228</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (C. elegans)</td>\n      <td>plk-1(or683ts); GFP::LEM-2; mCherry::EMR-1:bqSi210 [lem-2p::lem-2::GFP+unc-119(+)] II; plk-1(or683ts)III; bqSi226 [emr-1p::emr-1::mCherry + unc-119(+)] IV</td>\n      <td>Pintard lab This study</td>\n      <td>WLP1041</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>OP50</td>\n      <td>CGC</td>\n      <td>http://www.cgc.cbs.umn.edu/strain.php?id=11078</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>HT115(DE3)</td>\n      <td>CGC</td>\n      <td>http://www.cgc.cbs.umn.edu/strain.php?id=11078</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IPTG</td>\n      <td>Euromedex</td>\n      <td>Cat#EU0008-B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pfu</td>\n      <td>Promega</td>\n      <td>Cat#M7741</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DpnI</td>\n      <td>Biolabs</td>\n      <td>Cat#R0176S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>BP Clonase II Enzyme Mix (Gateway cloning)</td>\n      <td>Invitrogen</td>\n      <td>Cat#11789-020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>LR Clonase II Enzyme Mix (Gateway cloning)</td>\n      <td>Invitrogen</td>\n      <td>Cat#11791-020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>L4440 (RNAi Feeding vector)</td>\n      <td>Kamath et al., 2001</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>gpr-1/2 cloned into L4440</td>\n      <td>Kamath et al., 2003</td>\n      <td>Arhinger Library</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>klp-7 cloned into L4440</td>\n      <td>Kamath et al., 2003</td>\n      <td>Arhinger Library</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>efa-6 cloned into L4440</td>\n      <td>Kamath et al., 2003</td>\n      <td>Arhinger Library</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>hcp-3 cloned into L4440</td>\n      <td>Kamath et al., 2003</td>\n      <td>Arhinger Library</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>lmn-1 cloned into L4440</td>\n      <td>Kamath et al., 2003</td>\n      <td>Arhinger Library</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pDESTttTi5605[R4-R3] for MOS insertion on Chromosome II</td>\n      <td>Fr\u00f8kjaer-Jensen et al., 2008</td>\n      <td>pCFJ150Addgene plasmid # 19329</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>MOS transposase Pglh-2::MosTase::glh-2utr</td>\n      <td>Fr\u00f8kjaer-Jensen et al., 2008</td>\n      <td>pJL43.1Addgene plasmid # 19332</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Prab-3::mCherry</td>\n      <td>Fr\u00f8kjaer-Jensen et al., 2008</td>\n      <td>pGH8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Pmyo-2::mCherry::unc-54</td>\n      <td>Fr\u00f8kjaer-Jensen et al., 2008</td>\n      <td>pCFJ90</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plmn-1_gfp::lmn-1_lmn-1 3\u2019UTR in pCFJ150</td>\n      <td>Link et al., 2018</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plmn-1_gfp::lmn-1(S8A) lmn-1 3\u2019UTR in pCFJ150</td>\n      <td>Link et al., 2018</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mCherry::lmn-1 in pCFJ150</td>\n      <td>This study</td>\n      <td>pLP2437</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Forward to amplify 5\u2032 of mCherry</td>\n      <td>This study</td>\n      <td>OLP2570PCR primers</td>\n      <td>CTCTTCAGAAAGCAGCGAGAAAAATGGGAGGTAGGGCCGGCTCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Reverse to amplify 5\u2032 of mCherry</td>\n      <td>This study</td>\n      <td>OLP2571PCR primers</td>\n      <td>CAGAGCCGGCCCTACCTCCCATTTTTCTCGCTGCTTTCTGAAGAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Forward to amplify 3\u2032 of mCherry with linker before LMN-1</td>\n      <td>This study</td>\n      <td>OLP2572PCR primers</td>\n      <td>GGTGGCATGGATGAATTGTATAAGGCAAGTTTGTACAAAAAAGCAGGCTCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>oJD580 Amp_For to amplify fragment of PCFJ150</td>\n      <td>This study</td>\n      <td>OLP870PCR primers</td>\n      <td>ATCGTGGTGTCACGCTCGTCGTTTGGTATGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>oJD581 Amp_Rev to amplify fragment of PCFJ151</td>\n      <td>This study</td>\n      <td>OLP871PCR primers</td>\n      <td>ATACCAAACGACGAGCGTGACACCACGATGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Gibson Forward oligo for MosII LMN-1 construction.</td>\n      <td>This study</td>\n      <td>OLP2267</td>\n      <td>CCTTGTCCGAATCCACCACCCATTCCTCCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Gibson Reverse oligo for MosII LMN-1 construction.</td>\n      <td>This study</td>\n      <td>OLP2266</td>\n      <td>GGAGGAATGGGTGGTGGATTCGGACAAGGAC</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Illustrator CS6</td>\n      <td>Adobe</td>\n      <td>https://www.adobe.com/products/illustrator.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Photoshop CS4</td>\n      <td>Adobe</td>\n      <td>https://www.adobe.com/products/photoshop.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>NIH\u2009Schneider et al., 2012</td>\n      <td>https://imagej.nih.gov/ij/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ZEN</td>\n      <td>Zeiss</td>\n      <td>https://www.zeiss.com/microscopy/int/products/microscope-software/zen.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PRISM</td>\n      <td>Graphpad</td>\n      <td>https://www.graphpad.com/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Metamorph</td>\n      <td>Molecular Devices</td>\n      <td>https://www.metamorph.com/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Imaris</td>\n      <td>Bitplane</td>\n      <td>Microscopy Image Analysis Software - Imaris - Oxford Instruments (oxinst.com)</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Contact for reagent and resource sharing\n\nFurther information and requests for reagents may be directed to and will be fulfilled by the lead contact author L Pintard: lionel.pintard@ijm.fr.\n\n### Experimental model and subject details\n\nC. elegans and bacterial strains used in this study are listed in the Key resources table.\n\n### Method details\n\n#### Molecular biology\n\nThe plasmids and oligonucleotides used in this study are listed in the Key resources table. Gateway cloning was performed according to the manufacturer\u2019s instructions (Invitrogen). All the constructs were verified by DNA sequencing (GATC-Biotech).\n\n#### Nematode strains and RNAi\n\nC. elegans strains were cultured and maintained using standard procedures (Brenner, 1974). NPP-22 N-terminally tagged with mCherry using CRIPR/Cas9 was generated by SunyBiotech (https://www.sunybiotech.com/). The strain expressing LMN-1 N-terminally tagged with mCherry was constructed by mos1-mediated single-copy insertion (mosSCI) (Fr\u00f8kjaer-Jensen et al., 2008). The engineered lmn-1 gene contains a reencoded region in exon 4 essentially as described (Penfield et al., 2018).\n\nRNAi was performed by the feeding method using HT115 bacteria essentially as described (Kamath et al., 2001), except that 2 mM of IPTG was added to the NGM plates and in the bacterial culture just prior seeding the bacteria. As a control, animals were exposed to HT115 bacteria harboring the empty feeding vector L4440 (mock RNAi). RNAi clones were obtained from the Arhinger library (Open Source BioScience) or were constructed.\n\n#### Feeding RNAi was performed as follows\n\nMild gpr-1/2(RNAi) was obtained by feeding L4 animals 14\u201316 hr at 20\u00b0C, whereas strong gpr-1/2(RNAi) was obtained by feeding L1 animals for 72 hr at 20\u00b0C before filming embryos.\n\nFor efa-6 and klp-7 inactivation, L4 animals were fed with bacteria at 15\u00b0C and embryos were filmed at 23\u00b0C.\n\nFor single hcp-3 and klp-7 inactivation or double hcp-3/klp-7 inactivation, L4 larvae were fed for 14\u201316 hr at 15\u00b0C with bacteria producing hcp-3 or klp-7 dsRNA mixed volume to volume with control bacteria, or with bacteria producing hcp-3 and klp-7 dsRNA mixed volume to volume, respectively. The embryos were filmed at 23\u00b0C.\n\nplk-1ts animals were fed with bacteria producing lmn-1 dsRNA at 15\u00b0C from the L1 stage and briefly shifted at 25\u00b0C for 30 min before filming the embryos.\n\n#### Microscopy\n\nFor the analysis of the paired nuclei phenotype in live specimens by differential interference contrast (DIC) microscopy, embryos were obtained by cutting open young adult hermaphrodites using two 21-gauge needles. Embryos were handled individually and mounted on a coverslip in 3 \u03bcl of M9 buffer. The coverslip was placed on a 3% agarose pad. DIC images were acquired by an Axiocam Hamamatsu ICc 1 camera (Hamamatsu Photonics, Bridgewater, NJ) mounted on a Zeiss AxioImager A1 microscope equipped with a Plan Neofluar 100\u00d7/1.3 NA objective (Carl Zeiss AG, Jena, Germany), and the acquisition system was controlled by Axiovision software (Carl Zeiss AG, Jena, Germany). Images were acquired at 10 s intervals.\n\nLive imaging was performed at 23\u00b0C using a spinning disk confocal head (CSU-X1; Yokogawa Corporation of America) mounted on an Axio Observer.Z1 inverted microscope (Zeiss) equipped with 491 and 561 nm lasers (OXXIUS 488 nm 150 mW, OXXIUS Laser 561 nm 150 mW) and sCMOS PRIME 95 camera (Photometrics). Acquisition parameters were controlled by MetaMorph software (Molecular Devices). In all cases ,a 63\u00d7 Plan-Apochromat 63\u00d7/1.4 Oil (Zeiss) lens was used. Images were acquired at 2 s or 10 s intervals. Captured images were processed using ImageJ and Photoshop.\n\n#### Quantification and statistical analysis\n\nThe fluorescence intensity of GFP::LMN-1 and GFP::LMN-1 8A over time was measured from a single central focal plane with the ImageJ software in control and RNAi conditions. The same rectangle was used around the area of interest in each time-lapse acquisition, after background subtraction, the \u2018multi-measure\u2019 plugin was used to display the average signal intensity per pixel in each frame (10 s interval). Anaphase onset was defined as time 0. To allow direct comparison between control and RNAi conditions, the average signal intensity of GFP::LMN-1 or GFP::LMN-1 8A at the NE 120 s before anaphase was arbitrarily defined as 1. The data points on the graphs are the mean of the normalized GFP intensity measurements in control and RNAi conditions for the same defined region of interest (ROI).\n\nThe pronuclei area was measured using ImageJ software by thresholding the ROI defined by mCherry::LMN-1 and measuring the total area at each time point.\n\nThe intercentrosomal distances and embryos lengths were measured using the IMARIS software by manual tracking of the position of the centrosomes and the poles of the embryos, over time. Then, we used the following equation to obtain the corresponding intercentrosomal distance and embryo length at each time point:\n\n$$\nd(x,y)=\\sqrt{(x_{2}\u2212x_{1})^{2}+(y_{2}\u2212y_{1})^{2}}\n$$\n\nwhere the first point (first centrosome or embryo pole) is represented by (x1,y1), and the second point (second centrosome or embryo pole) is represented by (x2,y2). The data obtained were used to graph the ratio between intercentrosomal distance and embryo length (%) to monitor mitotic spindle elongation.\n\nThe results are presented as means \u00b1 SEM. The data presented on the graph Figure 4E were compared by the Mann-Whitney test. All calculations were performed using GraphPad Prism version 6.00 for Mac OS X, GraphPad Software, La Jolla, CA, https://www.graphpad.com/.\n",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "3abd2e9b-72d0-4cf0-9618-30a309483321",
+      "submission_id": "96a4dfa5-69df-46d8-8c20-f700958c3ec5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon Pines, https://ror.org/043jzw605 Institute of Cancer Research United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75382.sa0](https://doi.org/10.7554/eLife.75382.sa0)\n\nThis manuscript shows how the mitotic spindle helps to break apart the nuclear envelopes surrounding the maternal and paternal genomes so that they can be mixed together after fertilisation. This study will be interesting for cell biologists and biophysicists studying nuclear organization and mechanics. The work provides new insights into how pulling forces from the cell cortex influence the dynamics of nuclear rupture during mitosis.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jon Pines, https://ror.org/043jzw605 Institute of Cancer Research United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75382.sa1](https://doi.org/10.7554/eLife.75382.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cortical microtubule pulling forces contribute to the union of the parental genomes in the C. elegans zygote\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Anna Akhmanova as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. In the Introduction, the authors need to explain their focus on scission near the chromosomes. As written, the introduction describes lamina breakdown at the poles (presumably promoted by high levels of PLK-1) and at the site of scission and never explains why the authors focus their analysis on the scission site.\n\n2. In the Introduction, the authors state on page 3, lines 64-65 that \"The breakdown of the juxtaposed pronuclear envelopes of the oocyte and sperm begins with the formation of a membrane scission event\". But the authors earlier point out that the breakdown near centrosomes is the initial event. This was somewhat confusing, although it became clear that the authors are focusing on the second event, which they call scission. The authors should clearly indicate that scission refers only to this second type of dis-assembly and not the first.\n\n3. In reference to Figure 1, the authors refers to microtubules \"pushing or pulling\" on the matrix to promote breakdown, but the image shows a protrusion of the matrix that does not seem consistent with pushing. Do the authors typically protrusions, or a variety of deformations? More detail here would be helpful.\n\n4. In Figure 1, the authors introduce the dis-assembly in control zygotes. The authors should explain if the dis-assembly seen near centrosomes is only visible using the LMN-1 marker and not the NPP-22 marker, and why the scission event is scene only with the NPP-22 marker and not the LMN-1 marker. Indeed, LMN-1 signal remains strong in a bright focus in the middle before the boundary disappears entirely. More information about why different markers are needed to score the two events would be helpful (and again the authors can better explain why they focus on scission and not the earlier step near centrosomes).\n\n5. On page 7, lines 136-137, the authors state the spindle microtubules \"dictate\" the late triangular shape of the pronuclei, but this is an assumption and the authors do not provide any evidence that microtubules in fact are required for this shape.\n\n6. In Figure 3, the authors need to provide more detail on how they quantified the fluorescence intensity. Did they use single focal planes, or maximum projects, or what? This information is not provided in the figure legend or methods. This information should be provided for all quantifications.\n\n7. The authors should make it clear when introducing scission and discussing their results that the exact site of scission is dictated by the chromosomes. This is not mentioned when scission is first described, and it is not clear why scission would occur at such a specific site if stretching by elongation were the only other factor besides PLK-1 activity. The authors should also make it clear if their analysis provides the first evidence that the site of scission appears to be dictated by the organization of chromosomes to the metaphase plate.\n\n8. On page 15, lines 339-340, the authors state that lmn-1 knockdown restored scission without affecting the levels and localization of LEM-2 or EMR-1. But in fact the distributions of both do appear very different in the control and lmn-1(RNAi) images. ERM-1 looks more like LEM-2 after lmn-1 knockdown, with much more ovlap, and both are much more rounded in the controls, with lmn-1 knockdown leading to a more triangular appearance. While this may not change their interpretation, the authors should acknowledge and try to explain these differences.\n\n9. It is unclear whether nuclear membrane scission is a phenomenon controlled by mechanical forces, cell cycle, or both. Some of the experiments in the manuscript suggest mechanical forces control it, but some are not very supportive of this. For example, gpr-1/2 (RNAi) in lmn-1 8A supports the hypothesis that mechanical forces are important for nuclear scission. However, the lack of scission in hcp-3 (RNAi) in lmn-1 WT, where chromosome alignment is prevented, suggests a cell-cycle dependence mechanism. Can the authors elaborate more on this issue?\n\n10. The relation between membrane scission and paired nuclei phenotype is unclear. It seems that paired nuclei phenotype in daughter cells is a direct consequence of lack of membrane scission earlier during first mitosis. The authors showed that in gpr-1/2 (RNAi) in lmn-1 WT, 83% of embryos have no nuclear membrane scission. However, only 5% of gpr-1/2 (RNAi) in lmn-1 WT embryos showed paired nuclei phenotype (Figure 2A). Is this an inconsistency? If not, could the authors explain this in more detail?\n\n11. Similarly, why in klp-7 (RNAi) lmn-1 8A there is paired nuclei phenotype while the membrane scission happens (figure 5D), and in hcp-3 (RNAi) in lmn-1 WT, there is no paired nuclei phenotype, while membrane scission is completely prevented? It seems that one needs more knowledge/explanation about nuclear membrane scission and paired nuclei phenotype to understand these results. The short speculation at the top of page 11 does not seem enough.\n\n12. The authors suggested an interesting mechanism for spindle length regulation in a one-cell stage embryo as a force balance between cortical pulling forces and membrane tension. To my knowledge, the role of the nuclear membrane had not been discussed for spindle length regulation. This could be interesting to highlight in conclusions.\n\n13. The connection between plk-1ts experiments and the cortical pulling forces is not clear. The authors start with the proposal of testing the effect of pulling forces on membrane scission, but by this point in the manuscript, it seems that pulling forces have a secondary effect on scission. By the end, the authors argue that lamina depolymerization, chromosome alignment, and cortical pulling forces are all important for nuclear membrane scission. If so, which one is the primary factor? How are the others comparable to the primary factor?\n",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0d62c117-9723-4cdb-bdc6-e23bdf553434",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C1",
+      "claim": "PLK-1 phosphorylates the single Caenorhabditis elegans lamin (LMN-1) to trigger lamina depolymerization during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we reported that the Polo-like kinase PLK-1 phosphorylates the single Caenorhabditis elegans lamin (LMN-1) to trigger lamina depolymerization during mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Velez-Aguilera et al., 2020) mentioned in the abstract.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "73d6b2ac-d1e6-439e-946c-a7e0b1bbc74a",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C2",
+      "claim": "PLK-1-mediated lamina depolymerization is required to form a pronuclear envelope scission event that removes membranes on the juxtaposed oocyte and sperm pronuclear envelopes in the zygote.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that this event is required to form a pronuclear envelope scission event that removes membranes on the juxtaposed oocyte and sperm pronuclear envelopes in the zygote, allowing the parental chromosomes to merge in a single nucleus after segregation (Velez-Aguilera et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work (Velez-Aguilera et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "4fd6fcf2-2717-4fdc-9bcc-bcf97d7a1de1",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C3",
+      "claim": "Cortical microtubule pulling forces contribute to pronuclear envelopes scission by promoting mitotic spindle elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that cortical microtubule pulling forces contribute to pronuclear envelopes scission by promoting mitotic spindle elongation, and conversely, nuclear envelopes remodeling facilitates spindle elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is presented as a finding of the current study in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "58d5fb9c-800d-4ad9-851e-c14a03e253b1",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C4",
+      "claim": "Nuclear envelopes remodeling facilitates spindle elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that cortical microtubule pulling forces contribute to pronuclear envelopes scission by promoting mitotic spindle elongation, and conversely, nuclear envelopes remodeling facilitates spindle elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is presented as a finding of the current study in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "af361c42-9c7c-44da-bbba-80932187add3",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C5",
+      "claim": "Weakening the pronuclear envelopes via PLK-1-mediated lamina depolymerization is a prerequisite for the astral microtubule pulling forces to trigger pronuclear membranes scission.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrate that weakening the pronuclear envelopes via PLK-1-mediated lamina depolymerization, is a prerequisite for the astral microtubule pulling forces to trigger pronuclear membranes scission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is presented as a finding of the current study in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "c70ccd8a-8de3-43cd-854e-5fb9a3ff65c5",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C6",
+      "claim": "PLK-1 mainly acts via lamina depolymerization in pronuclear envelopes scission.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we provide evidence that PLK-1 mainly acts via lamina depolymerization in this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is presented as a finding of the current study in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "bfffcdea-02fc-466e-9d86-4ba804526e7f",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C7",
+      "claim": "Temporal coordination between lamina depolymerization and mitotic spindle elongation facilitates pronuclear envelopes scission and parental genomes unification.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations thus indicate that temporal coordination between lamina depolymerization and mitotic spindle elongation facilitates pronuclear envelopes scission and parental genomes unification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is presented as a conclusion in the abstract based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "dbb1ca27-7054-4033-b0a8-f118193141a3",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C8",
+      "claim": "The Caenorhabditis elegans zygote provides an attractive model system to investigate the mechanisms by which the maternal and paternal genomes unify at the beginning of life.",
+      "claim_type": "EXPLICIT",
+      "source": "The Caenorhabditis elegans zygote provides an attractive model system to investigate the mechanisms by which the maternal and paternal genomes unify at the beginning of life (Oegema and Hyman, 2006; Cohen-Fix and Askjaer, 2017; Pintard and Bowerman, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "31f0d15c-2052-4e2e-8f6f-165e11e9670c",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C9",
+      "claim": "After fertilization, the oocyte and sperm chromosomes surrounded by a nuclear envelope localize to opposite sides of the zygote.",
+      "claim_type": "EXPLICIT",
+      "source": "After fertilization, the oocyte and sperm chromosomes surrounded by a nuclear envelope localize to opposite sides of the zygote.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes established knowledge about C. elegans zygote biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "feb20f29-45c6-46fd-afae-33c912b6533b",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C10",
+      "claim": "The female pronucleus is located in the anterior, whereas the male pronucleus\u2014and associated centrosomes\u2014is in the posterior.",
+      "claim_type": "EXPLICIT",
+      "source": "The female pronucleus is located in the anterior, whereas the male pronucleus\u2014and associated centrosomes\u2014is in the posterior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes established knowledge about C. elegans zygote biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "4be4f0e7-049c-4660-a48f-aa092fe1e9fa",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C11",
+      "claim": "When the two pronuclei meet, they change their shape, flattening out along their juxtaposed sides, eventually aligning along the AP axis of the one-cell embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "When the two pronuclei meet, they change their shape, flattening out along their juxtaposed sides, eventually aligning along the AP axis of the one-cell embryo (Oegema and Hyman, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "7f180b07-dbc7-4468-897a-66cc0b094a59",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C12",
+      "claim": "C. elegans encodes a single lamin (LMN-1), closer to vertebrate B-type than A-type lamins.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans encodes a single lamin (LMN-1), closer to vertebrate B-type than A-type lamins (Liu et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "0bbbe933-fe34-49b3-b40e-64653c831731",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C13",
+      "claim": "In the C. elegans zygote, mitosis is semi-open, and the nuclear envelope only partially breaks down during spindle assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In the C. elegans zygote, mitosis is semi-open, and the nuclear envelope only partially breaks down during spindle assembly (Cohen-Fix and Askjaer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "3ce8bdc9-0382-4193-82a3-0c4b0a19b8c3",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C14",
+      "claim": "NPC disassembly and lamina depolymerization starts in the vicinity of the centrosomes and then later on the juxtaposed envelopes located between the parental chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "NPC disassembly and lamina depolymerization starts in the vicinity of the centrosomes and then later on the juxtaposed envelopes located between the parental chromosomes (Lee et al., 2000; Hachet et al., 2012; Velez-Aguilera et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "d454cf87-cee2-4ac9-a08d-2bd769850034",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C15",
+      "claim": "Complete removal of the NPCs and the lamina only occurs in early anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Complete removal of the NPCs and the lamina only occurs in early anaphase (Lee et al., 2000; Hachet et al., 2012; Velez-Aguilera et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "5722e32d-3772-4114-83a1-01822c211dda",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C16",
+      "claim": "Removal of the membranes between the parental chromosomes begins with the formation of a membrane scission event (also called a membrane gap), visible by fluorescent microscopy by labeling INM proteins (e.g., LEM-2).",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of the membranes between the parental chromosomes begins with the formation of a membrane scission event (also called a membrane gap), visible by fluorescent microscopy by labeling INM proteins (e.g., LEM-2) (Audhya et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "e0d640e1-ded6-46b9-85a9-76d38a5a9b66",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C17",
+      "claim": "The membrane scission event occurs concomitantly with the parental chromosomes congressing on the metaphase plate, 10\u201340 s before anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "This event occurs concomitantly with the parental chromosomes congressing on the metaphase plate, 10\u201340 s before anaphase onset (Audhya et al., 2007; Rahman et al., 2020), allowing the chromosomes from the two pronuclei to mingle on the metaphase plate and join in a single nucleus after chromosome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "13d677f6-d9af-4e6c-96da-a8927b2ee23c",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C18",
+      "claim": "The membrane scission event always appears at an equal distance from the two centrosomes and depends on the proper alignment of the chromosomes on the metaphase plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, it always appears at an equal distance from the two centrosomes and depends on the proper alignment of the chromosomes on the metaphase plate (Rahman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "2a9ed23c-936d-403e-a416-10f4d6f7ea84",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C19",
+      "claim": "Membrane scission is totally prevented in hcp-3CENPA(RNAi) embryos that fail to assemble kinetochores and are defective in chromosome alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, membrane scission is totally prevented in hcp-3CENPA(RNAi) embryos (Rahman et al., 2015) that fail to assemble kinetochores and are defective in chromosome alignment (Oegema et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "d5ab5b9b-0a5f-40cb-a78d-585bc30c651b",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C20",
+      "claim": "Formation of the membrane gap requires depolymerization of the lamina by the mitotic Polo-like kinase PLK-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of this membrane gap also requires depolymerization of the lamina by the mitotic Polo-like kinase PLK-1 (Rahman et al., 2015; Martino et al., 2017; Velez-Aguilera et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "afd4b5aa-a77b-4d60-b38e-559246d5b0b5",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C21",
+      "claim": "Expression of an LMN-1 version carrying eight non-phosphorylable alanines replacing serines (LMN-1 8A) is sufficient to prevent the formation of pronuclear envelopes scission.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, expression of an LMN-1 version, carrying eight non-phosphorylable alanines replacing serines (hereafter LMN-1 8A), is sufficient to prevent the formation of pronuclear envelopes scission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a finding from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "ee962581-6960-4465-9d8d-7e90442015fe",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C22",
+      "claim": "A failure to form membranes scission can result in the appearance of embryos with a paired nuclei phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "A failure to form this membranes scission can result in the appearance of embryos with a paired nuclei phenotype (Rahman et al., 2015; Martino et al., 2017; Velez-Aguilera et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "c03bb996-7dbd-490f-b46a-f10d68fcda43",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C23",
+      "claim": "In paired nuclei embryos, the two sets of parental chromosomes remain physically separated during mitosis and segregate into two separate DNA masses at each pole of the spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "In these embryos, the two sets of parental chromosomes remain physically separated during mitosis and segregate into two separate DNA masses at each pole of the spindle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the paired nuclei phenotype based on previous observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "69a52c31-15af-4e22-a868-a64a4b48a4c2",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C24",
+      "claim": "Paired nuclei phenotype leads to the formation of two nuclei in each cell of the two-cell embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, this leads to the formation of two nuclei in each cell of the two-cell embryo (paired nuclei) (Audhya et al., 2007; Bahmanyar et al., 2014; Galy et al., 2008; Rahman et al., 2015; Martino et al., 2017; Velez-Aguilera et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "5100cc3a-1426-44fe-b0c4-cff55a5c0518",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C25",
+      "claim": "Pronuclear envelopes permeabilization was detected around 160 s before anaphase onset, concomitantly with pronuclear membranes deformation near the centrosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pronuclear envelopes permeabilization, measured by the appearance of soluble tubulin in the pronuclei space, was detected around 160 s before anaphase onset, concomitantly with pronuclear membranes deformation near the centrosomes (Figure 1A\u2013D, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1A-D and associated source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "60559402-9099-4a79-bb09-e09128ed4005",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C26",
+      "claim": "Nuclear envelope permeabilization was systematically detected first in the male pronucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear envelope permeabilization was systematically detected first in the male pronucleus (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "2adcd1c2-5402-4c11-8271-6b9688b1a8e4",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C27",
+      "claim": "Signs of lamina disappearance from the pronuclear envelopes systematically started in the vicinity of centrosomes, 70 s before anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Signs of lamina disappearance from the pronuclear envelopes systematically started in the vicinity of centrosomes, 70 s before anaphase onset (Figure 1A and D, Figure 1\u2014figure supplement 2), possibly as a consequence of microtubule pulling at this site, together with the action of the lamin kinase PLK-1, which is enriched at centrosomes (Chase et al., 2000; Budirahardja and G\u00f6nczy, 2008; Nishi et al., 2008; Martino et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1A and D, and Figure 1\u2014figure supplement 2, along with citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "2d0ff445-0c64-401c-ac9f-95f29867598e",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C28",
+      "claim": "Lamina disassembly between the pronuclei started only 50 s before anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Lamina disassembly between the pronuclei started only 50 s before anaphase onset (Figure 1A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1A and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "099dbea0-f146-432c-94e0-01da7f3171ef",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C29",
+      "claim": "The membrane scission event between the juxtaposed pronuclei was detected around 30 s before anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane scission event between the juxtaposed pronuclei was detected later, around 30 s before anaphase onset (Figure 1B and D, Figure 1\u2014figure supplement 3), consistent with previous observations (Audhya et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1B and D, Figure 1\u2014figure supplement 3, and citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "f5bd3070-1b89-4129-ae6d-6febc97b1327",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C30",
+      "claim": "The membrane scission event appeared immediately after chromosome alignment on the metaphase plate.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane scission event appeared immediately after chromosome alignment on the metaphase plate (Figure 1B, red arrowhead, Figure 1\u2014figure supplement 3, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1B, Figure 1\u2014figure supplement 3, and Figure 1\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "81bd14db-e873-4b23-a563-c5c8086b7d4b",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C31",
+      "claim": "Starting 80 s before anaphase onset, the distance between the centrosomes steadily increased as a result of spindle elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting 80 s before anaphase onset, the distance between the centrosomes steadily increased as a result of spindle elongation (Figure 1F, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1F and Figure 1\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "b9570bc8-ab93-4ffe-8d30-f8b8c7f03f2e",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C32",
+      "claim": "The beginning of spindle elongation was concomitant with lamina depolymerization but preceded membrane gap formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The beginning of spindle elongation was concomitant with lamina depolymerization but preceded membrane gap formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the timing data presented in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "7a3e4d4e-f58d-4c75-b151-351a75b95146",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C33",
+      "claim": "Mild depletion of GPR-1/2 in gfp::lmn-1 8A embryos greatly enhanced the percentage of embryos presenting a paired nuclei phenotype, with nearly 54% showing double-paired nuclei and 24% a single-paired nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Mild depletion of GPR-1/2 in gfp::lmn-1 8A embryos greatly enhanced the percentage of embryos presenting a paired nuclei phenotype, with nearly 54% showing double-paired nuclei and 24% a single-paired nuclei (Figure 2A, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2A and Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "ff763909-baf6-4e3c-a958-4e1b62d80c38",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C34",
+      "claim": "More severe RNAi-mediated gpr-1/2 inactivation further increased the percentage of gfp::lmn-1 8A mutant embryos presenting a double-paired nuclei phenotype to 83%.",
+      "claim_type": "EXPLICIT",
+      "source": "More severe RNAi-mediated gpr-1/2 inactivation (Materials and methods) further increased the percentage of gfp::lmn-1 8A mutant embryos presenting a double-paired nuclei phenotype to 83% (Figure 2A, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2A and Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "5193008a-394d-4cbd-849b-11c2c53a17fa",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C35",
+      "claim": "Similar gpr-1/2 RNAi treatments of embryos expressing wild-type GFP::LMN-1 had only little effect with 5% of embryos presenting a double-paired nuclei phenotype and 4% presenting a single-paired nuclei phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar treatments of the embryos expressing a wild-type (WT) GFP::LMN-1 allele had only little effect with 5% of embryos presenting a double-paired nuclei phenotype and 4% presenting a single-paired nuclei phenotype (Figure 2A, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2A and Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "bd2687a9-7234-49ba-9fc4-08e6f443b0da",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C36",
+      "claim": "Reduction of cortical microtubule pulling forces enhances the paired nuclei phenotype of embryos with a partially stabilized lamina network.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, reduction of cortical microtubule pulling forces enhances the paired nuclei phenotype of embryos with a partially stabilized lamina network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data on gpr-1/2 RNAi effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "afd8c202-c417-410d-8d12-511559c7d8b4",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C37",
+      "claim": "Microtubule pulling forces facilitate the union of the parental chromosomes in the one-cell embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that microtubule pulling forces facilitate the union of the parental chromosomes in the one-cell embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data on gpr-1/2 RNAi effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "0e300d07-471d-4abe-bd57-d05d13515b4e",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C38",
+      "claim": "gpr-1/2 inactivation had no discernable effect on GFP::LMN-1 WT disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "gpr-1/2 inactivation had no discernable effect on GFP::LMN-1 WT disassembly (Figure 2C and E, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2C and E, and Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "8dd72492-7eda-41d1-bd5f-a96a775001f0",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C39",
+      "claim": "Partial gpr-1/2 inactivation did not significantly stabilize GFP::LMN-1 8A during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, partial gpr-1/2 inactivation did not significantly stabilize GFP::LMN-1 8A during mitosis (Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2\u2014figure supplement 1 and associated source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "1b7f0b28-c142-445e-917d-e7b3123140af",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C40",
+      "claim": "More severe reduction of cortical microtubule pulling forces, using strong RNAi-mediated gpr-1/2 inactivation, stabilized GFP::LMN-1 8A.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more severe reduction of cortical microtubule pulling forces, using strong RNAi-mediated gpr-1/2 inactivation, did stabilize GFP::LMN-1 8A (Figure 2D and F, Figure 2\u2014source data 1), indicating that microtubule pulling forces contribute to lamina disassembly during mitosis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2D and F, and Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "1544d5f9-1f16-4612-b2c9-3dcd1c4c5da9",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C41",
+      "claim": "Microtubule pulling forces contribute to lamina disassembly during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more severe reduction of cortical microtubule pulling forces, using strong RNAi-mediated gpr-1/2 inactivation, did stabilize GFP::LMN-1 8A (Figure 2D and F, Figure 2\u2014source data 1), indicating that microtubule pulling forces contribute to lamina disassembly during mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data on gpr-1/2 RNAi effects on LMN-1 8A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "33dd3b0e-602e-457f-b18a-b2fdc814c29a",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C42",
+      "claim": "Loss of klp-7 caused a premature disassembly of GFP::LMN-1 8A during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of klp-7 caused a premature disassembly of GFP::LMN-1 8A during mitosis (Figure 2D and F, Figure 2\u2014source data 1), again arguing that astral microtubule pulling forces contribute to the union of the parental chromosomes, at least in part by pulling at the lamina during mitosis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2D and F, and Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "6a19fa4a-f142-447a-8382-3c4465235bf1",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C43",
+      "claim": "Astral microtubule pulling forces contribute to the union of the parental chromosomes, at least in part by pulling at the lamina during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of klp-7 caused a premature disassembly of GFP::LMN-1 8A during mitosis (Figure 2D and F, Figure 2\u2014source data 1), again arguing that astral microtubule pulling forces contribute to the union of the parental chromosomes, at least in part by pulling at the lamina during mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data on klp-7 RNAi effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "73bb1bad-aafb-4239-afa7-326b9ac35300",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C44",
+      "claim": "In control embryos, the membrane scission event between the pronuclei was systematically observed around 30 s before anaphase onset, after chromosomes alignment on the metaphase plate.",
+      "claim_type": "EXPLICIT",
+      "source": "In control embryos, the membrane scission event between the pronuclei was systematically observed around 30 s before anaphase onset, after chromosomes alignment on the metaphase plate (n=32) (Figure 3B, red arrowhead).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "770db2fe-0c3b-46b8-8ed4-490454066d2a",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C45",
+      "claim": "In a vast majority of gpr-1/2(RNAi) embryos, the membrane scission between the pronuclei was never detected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a vast majority of gpr-1/2(RNAi) embryos, the membrane scission between the pronuclei was never detected. Of the 30 embryos analyzed, only 4 presented a membrane scission event (13%) (Figure 3B and C, Figure 3\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3B and C, and Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "622708f0-8682-43f9-aa46-3c07a6d4b515",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C46",
+      "claim": "The 4 gpr-1/2(RNAi) embryos that presented a membrane scission event were also the least affected in spindle elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "and these 4 embryos were also the least affected in spindle elongation (Figure 3D, Figure 3\u2014source data 1), suggesting that spindle elongation contributes to pronuclei membrane scission.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3D and Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "2c327285-d864-4163-bf76-11bdc0523d26",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C47",
+      "claim": "Spindle elongation contributes to pronuclei membrane scission.",
+      "claim_type": "EXPLICIT",
+      "source": "and these 4 embryos were also the least affected in spindle elongation (Figure 3D, Figure 3\u2014source data 1), suggesting that spindle elongation contributes to pronuclei membrane scission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the correlation between spindle elongation and membrane scission in gpr-1/2(RNAi) embryos.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "c6171faa-381d-4eb7-9f65-6da7025f134b",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C48",
+      "claim": "All reforming nuclei were severely misshapen in gpr-1/2(RNAi) embryos, but only a fraction of them presented a double-paired nuclei phenotype at the two-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all reforming nuclei were severely misshapen in gpr-1/2(RNAi) embryos, but only a fraction of them presented a double-paired nuclei phenotype at the two-cell stage (Figure 3E, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3E and Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "5b1969bd-a39b-4cca-ab33-c5e7c182a136",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C49",
+      "claim": "In 50% of efa-6 and klp-7(RNAi) embryos, pronuclear membranes scission occurred between 40 and 120 s before anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "While the control embryos underwent membrane scission between the juxtaposed pronuclei 0\u201330 s before anaphase onset, this event occurred systematically earlier in efa-6 and klp-7(RNAi) embryos. In 50% of these embryos, pronuclear membranes scission occurred between 40 and 120 s before anaphase onset (Figure 4B and C, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4B and C, and Figure 4\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "4d41632e-8fd7-4978-b0b5-09eac77022e0",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C50",
+      "claim": "Membrane scission occurred earlier in efa-6 and klp-7(RNAi) embryos as a consequence of premature mitotic spindle elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane scission occurred earlier in these embryos as a consequence of premature mitotic spindle elongation (Figure 4D, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4D and Figure 4\u2014source data 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "41c34fe3-2747-4457-a24d-909394aabfdd",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C51",
+      "claim": "Membranes scission systematically occurred at a similar mitotic spindle length.",
+      "claim_type": "EXPLICIT",
+      "source": "By measuring mitotic spindle length at the time of membrane gap formation, we noticed that membranes scission systematically occurred at a similar mitotic spindle length (Figure 4E, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4E and Figure 4\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "72eed133-a6f5-4333-80f2-49943bab2391",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C52",
+      "claim": "Microtubule pulling forces, by promoting mitotic spindle elongation, contribute to pronuclear membranes scission, possibly by tearing apart the pronuclear membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations indicate that microtubule pulling forces, by promoting mitotic spindle elongation, contribute to pronuclear membranes scission, possibly by tearing apart the pronuclear membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data on efa-6 and klp-7 RNAi effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "8db1c9bb-5e99-4e6e-ac2a-bf0fb666d23c",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C53",
+      "claim": "The spindle did not elongate to the same extent in lmn-1 8A mutant embryos compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to WT, the spindle did not elongate to the same extent in lmn-1 8A mutant embryos (Figure 5A, Figure 5\u2014source data 1), indicating that stabilization of the lamina interferes with mitotic spindle elongation and thus that lamina depolymerization facilitates spindle elongation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 5A and Figure 5\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "ff4ead81-a044-4bec-861c-7bd4da50d3a0",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C54",
+      "claim": "Stabilization of the lamina interferes with mitotic spindle elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to WT, the spindle did not elongate to the same extent in lmn-1 8A mutant embryos (Figure 5A, Figure 5\u2014source data 1), indicating that stabilization of the lamina interferes with mitotic spindle elongation and thus that lamina depolymerization facilitates spindle elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data on lmn-1 8A mutant embryos.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "b90a834e-6e78-4341-9fc4-5d1616ff27bb",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C55",
+      "claim": "Lamina depolymerization facilitates spindle elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to WT, the spindle did not elongate to the same extent in lmn-1 8A mutant embryos (Figure 5A, Figure 5\u2014source data 1), indicating that stabilization of the lamina interferes with mitotic spindle elongation and thus that lamina depolymerization facilitates spindle elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data on lmn-1 8A mutant embryos.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "882dac49-fa83-463a-9fd1-358135d2289f",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C56",
+      "claim": "klp-7 inactivation rescued mitotic spindle elongation defects of lmn-1 8A embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "While these treatments rescued mitotic spindle elongation defects of lmn-1 8A embryos (Figure 5B, Figure 5\u2014source data 1), they failed to restore the formation of pronuclear membranes scission and single nucleus embryos at the two-cell stage (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 5B and Figure 5\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "b6eb82be-54f1-4658-af47-a6414b95a88e",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C57",
+      "claim": "klp-7 inactivation failed to restore the formation of pronuclear membranes scission and single nucleus embryos at the two-cell stage in lmn-1 8A embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "While these treatments rescued mitotic spindle elongation defects of lmn-1 8A embryos (Figure 5B, Figure 5\u2014source data 1), they failed to restore the formation of pronuclear membranes scission and single nucleus embryos at the two-cell stage (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 5C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "d79fa1dc-2970-49f9-bca0-d29208f45a23",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C58",
+      "claim": "Even premature and excessive spindle elongation is not sufficient to induce membrane scission when the lamina is stabilized during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that even premature and excessive spindle elongation is not sufficient to induce membrane scission when the lamina is stabilized during mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data on klp-7 RNAi in lmn-1 8A embryos.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "ecf049db-7263-4096-8990-a4cd51a00987",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C59",
+      "claim": "Lamina depolymerization is a prerequisite for pronuclear envelopes scission.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these observations indicate that lamina depolymerization is a prerequisite for pronuclear envelopes scission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data on lmn-1 8A embryos with klp-7 RNAi.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "76095014-6a7d-4fd5-a156-b52921b2e641",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C60",
+      "claim": "In klp-7 and hcp-3 double RNAi embryos, no membrane scission was detected despite the extensive mitotic spindle elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we inactivated klp-7 and the essential kinetochore protein HCP-3CENPA to prevent chromosome congression on the metaphase plate (Oegema et al., 2001). In these embryos, no membrane scission was detected despite the extensive mitotic spindle elongation (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 5C and citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "ef7717db-f874-4cfe-ac69-75fa26d6f837",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C61",
+      "claim": "Chromosome localization in the vicinity of the pronuclear membranes is necessary for pronuclear membranes scission.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that chromosome localization in the vicinity of the pronuclear membranes is necessary for pronuclear membranes scission and might dictate the site of membranes scission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental data on klp-7 and hcp-3 double RNAi embryos.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "551fc425-0e4d-4a22-bde5-005536dfeeb4",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C62",
+      "claim": "Chromosome localization might dictate the site of membranes scission.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that chromosome localization in the vicinity of the pronuclear membranes is necessary for pronuclear membranes scission and might dictate the site of membranes scission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "92a3c024-f537-48d5-83e0-97fab9862860",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C63",
+      "claim": "Membranes scission is prevented in plk-1ts embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, membranes scission is prevented in plk-1ts embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous observations about plk-1ts embryos.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "574fd959-80da-43d0-aee0-b2ec0feeaa5d",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C64",
+      "claim": "The sole expression of the non-phosphorylable lmn-1 8A allele is sufficient to prevent pronuclear envelopes scission.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that LMN-1 is a key PLK-1 target in this process as the sole expression of the non-phosphorylable lmn-1 8A allele is sufficient to prevent pronuclear envelopes scission (Velez-Aguilera et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "15b2b12f-7992-4d14-9df9-4425c3e7f10c",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C65",
+      "claim": "Three-way sheet junctions are absent in plk-1ts embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent Focused Ion Beam-Scanning Electron Microscopy (FIB-SEM) analysis has revealed that the four membranes of the pronuclei fuse and become two via a novel membrane structure, the three-way sheet junctions (Rahman et al., 2020). These junctions are absent in plk-1ts embryos (Rahman et al., 2020) raising the possibility that PLK-1 could directly regulate their formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "0893b63b-4d81-42bc-8013-626c784d1cfb",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C66",
+      "claim": "Partial RNAi-mediated lmn-1 inactivation was sufficient to restore pronuclear envelopes scission in plk-1ts embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "However, partial RNAi-mediated lmn-1 inactivation was sufficient to restore pronuclear envelopes scission (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "2ee31889-fcb2-4207-a18a-5cedae4f4211",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C67",
+      "claim": "lmn-1 inactivation suppressed the paired nuclei phenotype of plk-1ts embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "lmn-1 inactivation also suppressed the paired nuclei phenotype of plk-1ts embryos in these conditions (Figure 6C, Figure 6\u2014source data 1), as reported previously (Rahman et al., 2015; Martino et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 6C and Figure 6\u2014source data 1, and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "ce43a8fe-b6de-4c41-8fd5-89b62e01e0a8",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C68",
+      "claim": "lmn-1 inactivation restored membrane scission and the shape of the pronuclei, and the normal localization of LEM-2 and EMR-1 in plk-1ts embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "lmn-1 inactivation not only restored membrane scission and the shape of the pronuclei, but also the normal localization of LEM-2 and EMR-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations from the plk-1ts rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "e9032731-2535-47bc-b4ef-10b165a37eb8",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C69",
+      "claim": "LMN-1 might be the only PLK-1 direct target involved in regulating pronuclear membranes scission.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these observations suggest that LMN-1 might be the only PLK-1 direct target involved in regulating pronuclear membranes scission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the plk-1ts rescue experiments with lmn-1 RNAi.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "e37fde6b-24df-4196-a18f-edcdf31df17d",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C70",
+      "claim": "Cortical microtubule pulling forces are required for pronuclear membranes scission but are not sufficient when chromosomes are not aligned on the metaphase plate, or when the lamina persists between the parental chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our study indicates that cortical microtubule pulling forces are required for pronuclear membranes scission but are not sufficient when chromosomes are not aligned on the metaphase plate, or when the lamina persists between the parental chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the overall findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "c14116ad-d076-4439-ab61-1c5fa8b7f84c",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C71",
+      "claim": "Coordination between chromosome alignment, lamina depolymerization, and mitotic spindle elongation is required for pronuclear envelopes scission in the early C. elegans embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Coordination between chromosome alignment, lamina depolymerization, and mitotic spindle elongation is thus required for pronuclear envelopes scission in the early C. elegans embryo (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is a conclusion drawn from the overall findings of the study and is illustrated in Figure 6D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "59f613a9-dde1-420d-aa75-86b4a7ba065c",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C72",
+      "claim": "A lack of membrane scission does not systematically result in a paired nuclei phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our results indicate that a lack of membrane scission does not systematically result in a paired nuclei phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from observations in gpr-1/2(RNAi) embryos.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "70507d86-e820-4c0e-b6fb-6b4a962756fa",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C73",
+      "claim": "While gpr-1/2 inactivation prevents membrane scission, most reforming nuclei were misshapen but not double paired at the two-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "While gpr-1/2 inactivation prevents membrane scission, most reforming nuclei were misshapen but not double paired at the two-cell stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations from gpr-1/2(RNAi) experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "42a4c219-996e-46d4-97c7-6af4f0ff074a",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C74",
+      "claim": "In all reported conditions where a correlation between a lack of membrane scission and the paired nuclei phenotype was observed, depolymerization of the lamina was systematically delayed or inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that in all reported conditions where a correlation between a lack of membrane scission and the paired nuclei phenotype was observed, depolymerization of the lamina was systematically delayed or inhibited (Audhya et al., 2007; Galy et al., 2008; Golden et al., 2009; Bahmanyar et al., 2014; Rahman et al., 2015; Martino et al., 2017; Velez-Aguilera et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "b6525ca0-0899-4d11-8e76-2dc5bdb6a84c",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C75",
+      "claim": "Persistence of the lamina rigidifies the nuclear membrane, prevents the redistribution of integral membrane proteins into the ER, and counteracts the mitotic spindle elongation, which typically results in a penetrant paired nuclei phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Persistence of the lamina rigidifies the nuclear membrane, prevents the redistribution of integral membrane proteins into the ER, and counteracts the mitotic spindle elongation, which typically results in a penetrant paired nuclei phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a mechanistic explanation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "d8aa4f59-6203-4e94-8c90-8bd7ea763fa0",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C76",
+      "claim": "A defective lamina depolymerization interferes with mitotic spindle elongation, highlighting the role of nuclear envelope remodeling in influencing mitotic spindle length.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our observations that a defective lamina depolymerization interferes with mitotic spindle elongation highlights the role of nuclear envelope remodeling in influencing mitotic spindle length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the overall findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "0ac0668d-5b48-4af0-8bc9-0b0aeefea152",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C77",
+      "claim": "Before NEBD, 200 s prior to anaphase onset, microtubules were excluded from the pronuclei space.",
+      "claim_type": "EXPLICIT",
+      "source": "Before NEBD, 200 s prior to anaphase onset, microtubules were excluded from the pronuclei space, and the pronuclear envelopes appeared flattened along their juxtaposed sides but presented elsewhere a rounded shape, except around centrosomes where the nuclear envelopes were highly curved (90\u00b0 angle) (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "68bc47e6-ec17-4b21-bf48-7bc202dd5562",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C78",
+      "claim": "The pronuclear envelopes appeared flattened along their juxtaposed sides but presented elsewhere a rounded shape, except around centrosomes where the nuclear envelopes were highly curved (90\u00b0 angle).",
+      "claim_type": "EXPLICIT",
+      "source": "Before NEBD, 200 s prior to anaphase onset, microtubules were excluded from the pronuclei space, and the pronuclear envelopes appeared flattened along their juxtaposed sides but presented elsewhere a rounded shape, except around centrosomes where the nuclear envelopes were highly curved (90\u00b0 angle) (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "85815efb-be2f-40b8-849b-d2f09f434d0e",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C79",
+      "claim": "160 s before anaphase onset, signs of nuclear envelope deformation were apparent in the vicinity of the centrosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, 160 s before anaphase onset, signs of nuclear envelope deformation were apparent in the vicinity of the centrosomes (Figure 1A, red arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "e2f13596-d087-40ec-8781-1a617de5c07e",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C80",
+      "claim": "The pronuclear envelopes appeared deformed toward the centrosomes, with the appearance of protrusions, suggesting that microtubules, emanating from the centrosomes were pulling on the pronuclear envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "At these sites, the pronuclear envelopes appeared deformed toward the centrosomes, with the appearance of protrusions, suggesting that microtubules, emanating from the centrosomes were pulling on the pronuclear envelopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations and inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "2ca0a9be-48bb-41c9-b62b-131ac06dd230",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C81",
+      "claim": "As more microtubules invaded the pronuclei space to capture paternal chromosomes, the overall surface of the pronuclei decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Soon after membrane permeabilization, the first microtubules started to invade the pronuclei space. As more microtubules invaded the pronuclei space to capture paternal chromosomes, the overall surface of the pronuclei decreased (Figure 1E, Figure 1\u2014source data 1), and the pronuclei adopted a more triangular shape, possibly dictated by microtubules assembling the mitotic spindle in the space confined by the remnants of the pronuclear envelopes (Figure 1B; Hayashi et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1E and Figure 1\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "2934fb90-c9b1-46ae-aa25-580ef8787db6",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C82",
+      "claim": "The pronuclei adopted a more triangular shape, possibly dictated by microtubules assembling the mitotic spindle in the space confined by the remnants of the pronuclear envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "and the pronuclei adopted a more triangular shape, possibly dictated by microtubules assembling the mitotic spindle in the space confined by the remnants of the pronuclear envelopes (Figure 1B; Hayashi et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on observations and inference from the data, with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "029ab76b-6b30-48ac-b351-85668e0715fe",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C83",
+      "claim": "The lamina progressively disappeared in the vicinity of the centrosomes but persisted between the parental chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The lamina progressively disappeared in the vicinity of the centrosomes but persisted between the parental chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "01527e59-d765-491c-9f0e-d4c5c3465593",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C84",
+      "claim": "At 50 s before anaphase onset, the lamina network was still detected on the nuclear envelope remnants surrounding the chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time point, the lamina network was still detected on the nuclear envelope remnants surrounding the chromosomes (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "fe522113-cd2b-4207-bb9a-4628267c921d",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C85",
+      "claim": "By pulling on nuclear envelopes and membranes, and by tearing apart the lamina and by elongating the mitotic spindle, astral microtubule pulling forces might contribute to pronuclear envelopes breakdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations, we hypothesized that by pulling on nuclear envelopes and membranes, and by tearing apart the lamina and by elongating the mitotic spindle, astral microtubule pulling forces might contribute to pronuclear envelopes breakdown, and thus to the unification of the parental chromosomes in the early C. elegans embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a hypothesis based on the observations from the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "83405417-52ed-4d4f-b325-7f1725d3d1a8",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C86",
+      "claim": "The paired nuclei phenotype is a visual readout of the failure to properly remove the nuclear envelope between the pronuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "The paired nuclei phenotype is a visual readout of the failure to properly remove the nuclear envelope between the pronuclei (Audhya et al., 2007; Bahmanyar et al., 2014; Galy et al., 2008; Rahman et al., 2015; Martino et al., 2017; Velez-Aguilera et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "82e3ff18-9c8f-4670-80b3-c4c5c9cb8cff",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C87",
+      "claim": "8% of the embryos expressing GFP::LMN-1 8A present double-paired nuclei at the two-cell stage, and another 9% present a single-paired nuclei cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Because this allele partially stabilizes the lamina, 8% of the embryos expressing GFP::LMN-1 8A present double-paired nuclei at the two-cell stage, and another 9% present a single-paired nuclei cell (Figure 2A, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2A and Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "f129c4fc-6c68-4f21-8c3d-1169f13acc22",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C88",
+      "claim": "Pronuclear membranes scission often occurred before chromosomes were fully aligned on the metaphase plate in efa-6 or klp-7(RNAi) embryos with enhanced astral pulling forces.",
+      "claim_type": "EXPLICIT",
+      "source": "In the efa-6 or klp-7(RNAi) embryos with enhanced astral pulling forces, pronuclear membranes scission often occurred before chromosomes were fully aligned on the metaphase plate (Figure 4\u2014figure supplement 1) suggesting that membrane scission between the pronuclei may not require full and complete chromosome alignment on the metaphase plate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "ba0574a9-0a63-450d-a88a-697aeae15ce1",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C89",
+      "claim": "Membrane scission between the pronuclei may not require full and complete chromosome alignment on the metaphase plate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the efa-6 or klp-7(RNAi) embryos with enhanced astral pulling forces, pronuclear membranes scission often occurred before chromosomes were fully aligned on the metaphase plate (Figure 4\u2014figure supplement 1) suggesting that membrane scission between the pronuclei may not require full and complete chromosome alignment on the metaphase plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from observations in efa-6 or klp-7(RNAi) embryos.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "933c12a3-59cf-4396-88e4-7f3692c0155a",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C90",
+      "claim": "By fluidifying the pronuclear membranes, lamina depolymerization might facilitate the release of INM proteins back into the peripheral ER surrounding the centrosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that by fluidifying the pronuclear membranes, lamina depolymerization might facilitate the release of INM proteins back into the peripheral ER surrounding the centrosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "3a9916cb-b765-4990-8179-c51bce187df7",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C91",
+      "claim": "In gpr-1/2(RNAi) embryos, the lamina disassembles, which results in membrane flexibility, and allows integral membrane proteins to redistribute into the peripheral ER.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this observation is that the lamina disassembles in gpr-1/2(RNAi) embryos, which results in membrane flexibility, and allows integral membrane proteins to redistribute into the peripheral ER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculative explanation for the observations in gpr-1/2(RNAi) embryos.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "44e43f03-aef3-457a-9185-3717e5ad3129",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "claim_id": "C92",
+      "claim": "During nuclear envelopes reformation and expansion in gpr-1/2(RNAi) embryos, the membrane separating the parental chromosomes is weak and eventually dismantles, which may explain why single pronuclei manage to form at the two-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, during nuclear envelopes reformation and expansion, the membrane separating the parental chromosomes is weak and eventually dismantles, which may explain why single pronuclei manage to form at the two-cell stage in gpr-1/2(RNAi) embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculative explanation for the observations in gpr-1/2(RNAi) embryos.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors characterize the temporal sequence of nuclear envelope breakdown (NEBD) events in C. elegans zygotes, showing that pronuclear envelope permeabilization occurs ~160s before anaphase, lamina disassembly begins at centrosomes ~70s before anaphase and between pronuclei ~50s before anaphase, membrane scission occurs ~30s before anaphase after chromosome alignment, and spindle elongation begins ~80s before anaphase concomitant with lamina depolymerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 and C77-C84 provide detailed temporal measurements from live imaging experiments (Figure 1) with quantitative data showing the sequence of NEBD events. The observations are internally consistent and supported by multiple imaging modalities (tubulin, lamina, membrane markers, histones). The temporal resolution (2s intervals) is appropriate for the timescales measured.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "2edb631c-af93-4b69-a891-370f6018e4f3",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Reduction of cortical microtubule pulling forces by gpr-1/2 RNAi enhances the paired nuclei phenotype in embryos expressing the partially stabilized LMN-1 8A mutant (from 17% to 78-83% with mild/severe RNAi), while having minimal effect on wild-type embryos (5-9% paired nuclei), indicating that microtubule pulling forces facilitate parental chromosome union.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 and C87 are supported by quantitative phenotypic data (Figure 2A) showing dose-dependent genetic interaction between gpr-1/2 depletion and lmn-1 8A. The specificity of the effect (strong in 8A mutant, weak in WT) supports the conclusion. Sample sizes appear adequate (n=27-100 embryos per condition) and the phenotype is clearly defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "ddb0f77a-84bf-4451-8d8b-d20d70b2b834",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Strong (but not mild) reduction of cortical microtubule pulling forces by gpr-1/2 RNAi stabilizes the partially phospho-deficient GFP::LMN-1 8A mutant during mitosis, while having no effect on wild-type LMN-1 disassembly, indicating that microtubule pulling forces contribute to lamina disassembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by quantitative fluorescence intensity measurements over time (Figure 2C-F). The dose-dependent effect (mild RNAi has no effect, strong RNAi stabilizes LMN-1 8A) and specificity (no effect on WT) strengthen the conclusion. However, the mechanism by which pulling forces promote lamina disassembly remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "045657ce-5250-4341-b75f-d02323fa3949",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loss of the kinesin-13 KLP-7, which increases astral microtubule pulling forces, causes premature disassembly of GFP::LMN-1 8A during mitosis, supporting that astral microtubule pulling forces contribute to lamina disassembly and parental chromosome union.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by fluorescence intensity data (Figure 2D, F) showing accelerated LMN-1 8A disassembly in klp-7(RNAi). This provides complementary evidence to the gpr-1/2 loss-of-function experiments, strengthening the bidirectional relationship between pulling forces and lamina disassembly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "f4a11cfe-c6ff-4c2d-ae8e-2d355881d910",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Strong gpr-1/2 RNAi prevents membrane scission between pronuclei in 87% of embryos (only 4/30 showed scission), and the four embryos that did show scission were the least affected in spindle elongation, suggesting that spindle elongation contributes to pronuclear membrane scission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by imaging data (Figure 3B-D) showing correlation between spindle elongation defects and membrane scission failure. The observation that the few embryos with scission were least affected in spindle elongation strengthens the causal link. However, the small number of exceptions (4/30) limits statistical power for this correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "cafe664d-8bd1-4800-afda-00ba62e0f30f",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "While gpr-1/2 inactivation prevents membrane scission, most reforming nuclei are misshapen but not double-paired at the two-cell stage, indicating that lack of membrane scission does not systematically result in a paired nuclei phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C72-C73 are supported by phenotypic data (Figure 3E) showing that despite membrane scission failure, only a fraction of gpr-1/2(RNAi) embryos show paired nuclei. This important observation distinguishes membrane scission from the paired nuclei phenotype and is discussed mechanistically in claims C91-C92.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "c000d0fc-ba2f-4069-8bd8-0c20452f1de1",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Increasing astral microtubule pulling forces by efa-6 or klp-7 RNAi causes premature membrane scission (40-120s before anaphase in 50% of embryos vs 0-30s in controls) due to premature spindle elongation, with membrane scission occurring at a consistent spindle length across conditions, indicating that pulling forces promote membrane scission by elongating the spindle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 and C88 are supported by temporal and spindle length measurements (Figure 4B-E). The key observation that membrane scission occurs at similar spindle lengths regardless of timing strongly supports a mechanical model. The premature scission with enhanced pulling forces complements the loss-of-function data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "017b915a-9983-46c8-a0dd-7486c068f8e4",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mitotic spindle does not elongate to the same extent in lmn-1 8A mutant embryos compared to wild-type, indicating that stabilization of the lamina interferes with spindle elongation and that lamina depolymerization facilitates spindle elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by spindle elongation measurements (Figure 5A). This reciprocal relationship (lamina affects spindle, spindle affects lamina) is a key finding. However, the mechanism by which lamina stabilization restricts spindle elongation is not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "e5a04e48-234e-47fd-9f1c-8e060c28d350",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While klp-7 inactivation rescues spindle elongation defects in lmn-1 8A embryos, it fails to restore membrane scission or prevent paired nuclei, indicating that even excessive spindle elongation is insufficient for membrane scission when the lamina is stabilized, and that lamina depolymerization is a prerequisite for pronuclear envelope scission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 are supported by imaging and phenotypic data (Figure 5B-D). This epistasis experiment is critical, demonstrating that lamina depolymerization is necessary even when spindle elongation is restored. The logic is sound and the conclusion well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "dd72d3b4-d382-4a1d-91a5-ed913876bf97",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In klp-7 and hcp-3 double RNAi embryos with extensive spindle elongation but no chromosome alignment, no membrane scission is detected, indicating that chromosome localization near pronuclear membranes is necessary for membrane scission and might dictate the scission site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 are supported by imaging data (Figure 5C) and prior literature (C19). This demonstrates that spindle elongation alone is insufficient and that chromosome positioning is required. Claim C62 is appropriately marked as speculative about the mechanism of site determination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "55c58a3d-60f0-4e4d-8957-8c4253361998",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Partial lmn-1 RNAi is sufficient to restore pronuclear envelope scission, suppress the paired nuclei phenotype, and restore normal membrane protein localization in plk-1ts embryos, suggesting that LMN-1 might be the only PLK-1 direct target involved in regulating pronuclear membrane scission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 are supported by imaging and phenotypic data (Figure 6B-C). The rescue experiment is well-designed and the conclusion is appropriately cautious ('might be'). However, the possibility of indirect effects through partial lmn-1 depletion affecting an inhibitor cannot be completely ruled out, as the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "d99a2e83-c1d6-45f7-ba5f-0b0a7787f7ba",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors conclude that cortical microtubule pulling forces contribute to pronuclear envelope scission by promoting spindle elongation, nuclear envelope remodeling facilitates spindle elongation, PLK-1-mediated lamina depolymerization is a prerequisite for pulling forces to trigger membrane scission, and temporal coordination between chromosome alignment, lamina depolymerization, and spindle elongation is required for pronuclear envelope scission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C7, C70-C71 represent the main conclusions synthesized from the experimental results. These are well-supported by the collective evidence from genetic perturbations, temporal measurements, and epistasis experiments. The model integrates multiple lines of evidence coherently.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "afb42e6c-6b07-4298-bcee-5cec35af661c",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors suggest that membrane scission between pronuclei may not require full and complete chromosome alignment on the metaphase plate, based on observations that scission sometimes occurs before full alignment in efa-6 or klp-7(RNAi) embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is based on observations in Figure 4\u2014figure supplement 1 (C88), but this appears to contradict the requirement for chromosome alignment demonstrated in C60-C61 (hcp-3/klp-7 double RNAi). The distinction between 'full alignment' and 'chromosome localization in vicinity' needs clarification. The claim may reflect a threshold effect rather than independence from alignment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "90ef4dc0-5faf-4ec5-8b66-014bdcf89416",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In all reported conditions where lack of membrane scission correlates with paired nuclei phenotype, lamina depolymerization was delayed or inhibited, and persistence of the lamina rigidifies membranes, prevents membrane protein redistribution, and counteracts spindle elongation, resulting in penetrant paired nuclei.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 synthesize observations from this and prior studies (C74 cites extensive literature). The mechanistic explanation in C75 is logical and consistent with the data, though some aspects (membrane rigidification, protein redistribution) are inferred rather than directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "a541aab6-c6a9-4b40-a4ce-312c1ddf6236",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Defective lamina depolymerization interferes with mitotic spindle elongation, highlighting the role of nuclear envelope remodeling in influencing mitotic spindle length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is supported by the spindle elongation measurements in lmn-1 8A embryos (C53-C55). This reciprocal relationship is an important finding, though the molecular mechanism remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "a9ed9c63-0202-404f-a1bc-dc16a685a90f",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate that astral microtubule pulling forces contribute to pronuclear envelope breakdown by pulling on envelopes, tearing apart lamina, and elongating the spindle, and that lamina depolymerization facilitates INM protein release to peripheral ER, which may explain why single nuclei form in gpr-1/2(RNAi) embryos despite membrane scission failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85, C90-C92 are explicitly speculative (marked as SPECULATION in evidence_type). While these hypotheses are reasonable and consistent with observations, they lack direct experimental support. The proposed mechanism for single nucleus formation in gpr-1/2(RNAi) (C91-C92) is plausible but unproven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    },
+    {
+      "id": "7b20ea18-d17f-44c6-899c-da2449009a06",
+      "content_id": "a2b02700-c403-43ec-ba9d-4910ad86e7cc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors provide background context from prior work establishing the C. elegans zygote as a model system, describing pronuclear positioning, semi-open mitosis, spatially regulated NEBD, membrane scission events, PLK-1's role in lamina depolymerization, and the paired nuclei phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6, C8-C24, C63-C65, C86 are background claims supported by citations to prior literature. These establish the context for the current study and are appropriately referenced. C1-C2 specifically cite the authors' previous work (Velez-Aguilera et al., 2020).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:35:35.241665Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5100cc3a-1426-44fe-b0c4-cff55a5c0518",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "60559402-9099-4a79-bb09-e09128ed4005",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "2adcd1c2-5402-4c11-8271-6b9688b1a8e4",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "2d0ff445-0c64-401c-ac9f-95f29867598e",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "099dbea0-f146-432c-94e0-01da7f3171ef",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "f5bd3070-1b89-4129-ae6d-6febc97b1327",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "81bd14db-e873-4b23-a563-c5c8086b7d4b",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "b9570bc8-ab93-4ffe-8d30-f8b8c7f03f2e",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "0ac0668d-5b48-4af0-8bc9-0b0aeefea152",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "68bc47e6-ec17-4b21-bf48-7bc202dd5562",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "85815efb-be2f-40b8-849b-d2f09f434d0e",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "e2f13596-d087-40ec-8781-1a617de5c07e",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "2ca0a9be-48bb-41c9-b62b-131ac06dd230",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "2934fb90-c9b1-46ae-aa25-580ef8787db6",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "029ab76b-6b30-48ac-b351-85668e0715fe",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "01527e59-d765-491c-9f0e-d4c5c3465593",
+      "result_id": "ef5b24cd-19f6-45b8-9c94-8aa6d26ce73e"
+    },
+    {
+      "claim_id": "7a3e4d4e-f58d-4c75-b151-351a75b95146",
+      "result_id": "2edb631c-af93-4b69-a891-370f6018e4f3"
+    },
+    {
+      "claim_id": "ff763909-baf6-4e3c-a958-4e1b62d80c38",
+      "result_id": "2edb631c-af93-4b69-a891-370f6018e4f3"
+    },
+    {
+      "claim_id": "5193008a-394d-4cbd-849b-11c2c53a17fa",
+      "result_id": "2edb631c-af93-4b69-a891-370f6018e4f3"
+    },
+    {
+      "claim_id": "bd2687a9-7234-49ba-9fc4-08e6f443b0da",
+      "result_id": "2edb631c-af93-4b69-a891-370f6018e4f3"
+    },
+    {
+      "claim_id": "afd8c202-c417-410d-8d12-511559c7d8b4",
+      "result_id": "2edb631c-af93-4b69-a891-370f6018e4f3"
+    },
+    {
+      "claim_id": "82e3ff18-9c8f-4670-80b3-c4c5c9cb8cff",
+      "result_id": "2edb631c-af93-4b69-a891-370f6018e4f3"
+    },
+    {
+      "claim_id": "0e300d07-471d-4abe-bd57-d05d13515b4e",
+      "result_id": "ddb0f77a-84bf-4451-8d8b-d20d70b2b834"
+    },
+    {
+      "claim_id": "8dd72492-7eda-41d1-bd5f-a96a775001f0",
+      "result_id": "ddb0f77a-84bf-4451-8d8b-d20d70b2b834"
+    },
+    {
+      "claim_id": "1b7f0b28-c142-445e-917d-e7b3123140af",
+      "result_id": "ddb0f77a-84bf-4451-8d8b-d20d70b2b834"
+    },
+    {
+      "claim_id": "1544d5f9-1f16-4612-b2c9-3dcd1c4c5da9",
+      "result_id": "ddb0f77a-84bf-4451-8d8b-d20d70b2b834"
+    },
+    {
+      "claim_id": "33dd3b0e-602e-457f-b18a-b2fdc814c29a",
+      "result_id": "045657ce-5250-4341-b75f-d02323fa3949"
+    },
+    {
+      "claim_id": "6a19fa4a-f142-447a-8382-3c4465235bf1",
+      "result_id": "045657ce-5250-4341-b75f-d02323fa3949"
+    },
+    {
+      "claim_id": "73bb1bad-aafb-4239-afa7-326b9ac35300",
+      "result_id": "f4a11cfe-c6ff-4c2d-ae8e-2d355881d910"
+    },
+    {
+      "claim_id": "770db2fe-0c3b-46b8-8ed4-490454066d2a",
+      "result_id": "f4a11cfe-c6ff-4c2d-ae8e-2d355881d910"
+    },
+    {
+      "claim_id": "622708f0-8682-43f9-aa46-3c07a6d4b515",
+      "result_id": "f4a11cfe-c6ff-4c2d-ae8e-2d355881d910"
+    },
+    {
+      "claim_id": "2c327285-d864-4163-bf76-11bdc0523d26",
+      "result_id": "f4a11cfe-c6ff-4c2d-ae8e-2d355881d910"
+    },
+    {
+      "claim_id": "c6171faa-381d-4eb7-9f65-6da7025f134b",
+      "result_id": "cafe664d-8bd1-4800-afda-00ba62e0f30f"
+    },
+    {
+      "claim_id": "59f613a9-dde1-420d-aa75-86b4a7ba065c",
+      "result_id": "cafe664d-8bd1-4800-afda-00ba62e0f30f"
+    },
+    {
+      "claim_id": "70507d86-e820-4c0e-b6fb-6b4a962756fa",
+      "result_id": "cafe664d-8bd1-4800-afda-00ba62e0f30f"
+    },
+    {
+      "claim_id": "5b1969bd-a39b-4cca-ab33-c5e7c182a136",
+      "result_id": "c000d0fc-ba2f-4069-8bd8-0c20452f1de1"
+    },
+    {
+      "claim_id": "4d41632e-8fd7-4978-b0b5-09eac77022e0",
+      "result_id": "c000d0fc-ba2f-4069-8bd8-0c20452f1de1"
+    },
+    {
+      "claim_id": "41c34fe3-2747-4457-a24d-909394aabfdd",
+      "result_id": "c000d0fc-ba2f-4069-8bd8-0c20452f1de1"
+    },
+    {
+      "claim_id": "72eed133-a6f5-4333-80f2-49943bab2391",
+      "result_id": "c000d0fc-ba2f-4069-8bd8-0c20452f1de1"
+    },
+    {
+      "claim_id": "f129c4fc-6c68-4f21-8c3d-1169f13acc22",
+      "result_id": "c000d0fc-ba2f-4069-8bd8-0c20452f1de1"
+    },
+    {
+      "claim_id": "8db1c9bb-5e99-4e6e-ac2a-bf0fb666d23c",
+      "result_id": "017b915a-9983-46c8-a0dd-7486c068f8e4"
+    },
+    {
+      "claim_id": "ff4ead81-a044-4bec-861c-7bd4da50d3a0",
+      "result_id": "017b915a-9983-46c8-a0dd-7486c068f8e4"
+    },
+    {
+      "claim_id": "b90a834e-6e78-4341-9fc4-5d1616ff27bb",
+      "result_id": "017b915a-9983-46c8-a0dd-7486c068f8e4"
+    },
+    {
+      "claim_id": "882dac49-fa83-463a-9fd1-358135d2289f",
+      "result_id": "e5a04e48-234e-47fd-9f1c-8e060c28d350"
+    },
+    {
+      "claim_id": "b6eb82be-54f1-4658-af47-a6414b95a88e",
+      "result_id": "e5a04e48-234e-47fd-9f1c-8e060c28d350"
+    },
+    {
+      "claim_id": "d79fa1dc-2970-49f9-bca0-d29208f45a23",
+      "result_id": "e5a04e48-234e-47fd-9f1c-8e060c28d350"
+    },
+    {
+      "claim_id": "ecf049db-7263-4096-8990-a4cd51a00987",
+      "result_id": "e5a04e48-234e-47fd-9f1c-8e060c28d350"
+    },
+    {
+      "claim_id": "76095014-6a7d-4fd5-a156-b52921b2e641",
+      "result_id": "dd72d3b4-d382-4a1d-91a5-ed913876bf97"
+    },
+    {
+      "claim_id": "ef7717db-f874-4cfe-ac69-75fa26d6f837",
+      "result_id": "dd72d3b4-d382-4a1d-91a5-ed913876bf97"
+    },
+    {
+      "claim_id": "551fc425-0e4d-4a22-bde5-005536dfeeb4",
+      "result_id": "dd72d3b4-d382-4a1d-91a5-ed913876bf97"
+    },
+    {
+      "claim_id": "0893b63b-4d81-42bc-8013-626c784d1cfb",
+      "result_id": "55c58a3d-60f0-4e4d-8957-8c4253361998"
+    },
+    {
+      "claim_id": "2ee31889-fcb2-4207-a18a-5cedae4f4211",
+      "result_id": "55c58a3d-60f0-4e4d-8957-8c4253361998"
+    },
+    {
+      "claim_id": "ce43a8fe-b6de-4c41-8fd5-89b62e01e0a8",
+      "result_id": "55c58a3d-60f0-4e4d-8957-8c4253361998"
+    },
+    {
+      "claim_id": "e9032731-2535-47bc-b4ef-10b165a37eb8",
+      "result_id": "55c58a3d-60f0-4e4d-8957-8c4253361998"
+    },
+    {
+      "claim_id": "4fd6fcf2-2717-4fdc-9bcc-bcf97d7a1de1",
+      "result_id": "d99a2e83-c1d6-45f7-ba5f-0b0a7787f7ba"
+    },
+    {
+      "claim_id": "58d5fb9c-800d-4ad9-851e-c14a03e253b1",
+      "result_id": "d99a2e83-c1d6-45f7-ba5f-0b0a7787f7ba"
+    },
+    {
+      "claim_id": "af361c42-9c7c-44da-bbba-80932187add3",
+      "result_id": "d99a2e83-c1d6-45f7-ba5f-0b0a7787f7ba"
+    },
+    {
+      "claim_id": "bfffcdea-02fc-466e-9d86-4ba804526e7f",
+      "result_id": "d99a2e83-c1d6-45f7-ba5f-0b0a7787f7ba"
+    },
+    {
+      "claim_id": "e37fde6b-24df-4196-a18f-edcdf31df17d",
+      "result_id": "d99a2e83-c1d6-45f7-ba5f-0b0a7787f7ba"
+    },
+    {
+      "claim_id": "c14116ad-d076-4439-ab61-1c5fa8b7f84c",
+      "result_id": "d99a2e83-c1d6-45f7-ba5f-0b0a7787f7ba"
+    },
+    {
+      "claim_id": "ba0574a9-0a63-450d-a88a-697aeae15ce1",
+      "result_id": "afb42e6c-6b07-4298-bcee-5cec35af661c"
+    },
+    {
+      "claim_id": "42a4c219-996e-46d4-97c7-6af4f0ff074a",
+      "result_id": "90ef4dc0-5faf-4ec5-8b66-014bdcf89416"
+    },
+    {
+      "claim_id": "b6525ca0-0899-4d11-8e76-2dc5bdb6a84c",
+      "result_id": "90ef4dc0-5faf-4ec5-8b66-014bdcf89416"
+    },
+    {
+      "claim_id": "d8aa4f59-6203-4e94-8c90-8bd7ea763fa0",
+      "result_id": "a541aab6-c6a9-4b40-a4ce-312c1ddf6236"
+    },
+    {
+      "claim_id": "fe522113-cd2b-4207-bb9a-4628267c921d",
+      "result_id": "a9ed9c63-0202-404f-a1bc-dc16a685a90f"
+    },
+    {
+      "claim_id": "933c12a3-59cf-4396-88e4-7f3692c0155a",
+      "result_id": "a9ed9c63-0202-404f-a1bc-dc16a685a90f"
+    },
+    {
+      "claim_id": "3a9916cb-b765-4990-8179-c51bce187df7",
+      "result_id": "a9ed9c63-0202-404f-a1bc-dc16a685a90f"
+    },
+    {
+      "claim_id": "44e43f03-aef3-457a-9185-3717e5ad3129",
+      "result_id": "a9ed9c63-0202-404f-a1bc-dc16a685a90f"
+    },
+    {
+      "claim_id": "0d62c117-9723-4cdb-bdc6-e23bdf553434",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "73d6b2ac-d1e6-439e-946c-a7e0b1bbc74a",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "c70ccd8a-8de3-43cd-854e-5fb9a3ff65c5",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "dbb1ca27-7054-4033-b0a8-f118193141a3",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "31f0d15c-2052-4e2e-8f6f-165e11e9670c",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "feb20f29-45c6-46fd-afae-33c912b6533b",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "4be4f0e7-049c-4660-a48f-aa092fe1e9fa",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "7f180b07-dbc7-4468-897a-66cc0b094a59",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "0bbbe933-fe34-49b3-b40e-64653c831731",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "3ce8bdc9-0382-4193-82a3-0c4b0a19b8c3",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "d454cf87-cee2-4ac9-a08d-2bd769850034",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "5722e32d-3772-4114-83a1-01822c211dda",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "e0d640e1-ded6-46b9-85a9-76d38a5a9b66",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "13d677f6-d9af-4e6c-96da-a8927b2ee23c",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "2a9ed23c-936d-403e-a416-10f4d6f7ea84",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "d5ab5b9b-0a5f-40cb-a78d-585bc30c651b",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "afd4b5aa-a77b-4d60-b38e-559246d5b0b5",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "ee962581-6960-4465-9d8d-7e90442015fe",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "c03bb996-7dbd-490f-b46a-f10d68fcda43",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "69a52c31-15af-4e22-a868-a64a4b48a4c2",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "92a3c024-f537-48d5-83e0-97fab9862860",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "574fd959-80da-43d0-aee0-b2ec0feeaa5d",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "15b2b12f-7992-4d14-9df9-4425c3e7f10c",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    },
+    {
+      "claim_id": "83405417-52ed-4d4f-b325-7f1725d3d1a8",
+      "result_id": "7b20ea18-d17f-44c6-899c-da2449009a06"
+    }
+  ],
+  "comparisons": []
+}

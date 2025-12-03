@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "PDAC has poor survival outcomes with minimal improvement over 50 years. PDAC accounts for 90% of pancreatic cancer cases, has the lowest survival rate among solid malignancies, with >80% presenting with unresectable tumors, <5% five-year survival, and is predicted to become the second leading cause of cancer death by 2040, primarily due to chemoresistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C18 collectively establish PDAC's poor prognosis through multiple cited sources (Kocher 2023, Bengtsson et al. 2020, Rahib et al. 2021, Neuzillet et al. 2017) and established epidemiological knowledge. The claims are internally consistent and well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C103"
+    ],
+    "result": "PDAC is characterized by hypoxia and elevated extracellular ATP levels. The desmoplastic stroma causes impaired vascularization and hypoxia, leading to cellular stress and ATP release into the tumor microenvironment at concentrations 200-fold higher than normal tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19-C21, C103 are well-supported by multiple citations (Koong et al. 2000, Di Maggio 2016, Forrester and Williams 1977, Pellegatti et al. 2008, Hu et al. 2019). The mechanistic link between hypoxia, cellular stress, and ATP release is established, and the 200-fold elevation is specifically cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The purinergic signaling axis comprises druggable membrane proteins regulating ATP and adenosine, with distinct biological functions. ATP promotes inflammation, growth, and cell movement, while adenosine is anti-inflammatory and immunosuppressive. Clinical trials targeting CD73 and adenosine receptor 2A are ongoing, though one Phase II study was withdrawn due to minimal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C29 are supported by multiple citations and clinical trial identifiers. The characterization of the purinergic axis, its components, and their biological functions are well-documented. The clinical trial information is verifiable through NCT identifiers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C30",
+      "C36",
+      "C37",
+      "C41",
+      "C43",
+      "C44"
+    ],
+    "result": "P2RY2 is the purinergic gene most strongly associated with poor outcomes in PDAC. Bioinformatic analysis of TCGA data shows P2RY2 has the highest hazard ratio (2.99, p=8.5\u00d710\u207b\u2075), strongest correlation with hypoxia scores (log2 ratio >0.5, FDR<0.0001), highest cancer cell-specific expression, and greatest adverse impact on patient survival among purinergic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C30, C36-C37, C41, C43-C44 are supported by comprehensive bioinformatic analyses shown in Figures 1B, 1C, 1D, 1E and supplementary figures. The statistical values are specific and the analyses use appropriate TCGA datasets (n=177). Multiple independent analytical approaches converge on P2RY2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Purinergic genes show distinct expression patterns across PDAC molecular subtypes. Most purinergic genes associate with immunogenic subtypes and immune cells, while genes correlated with worse survival (PANX1, NT5E, ADORA2B, P2RY2) associate with tumor cells and the squamous subtype, which correlates with hypoxia and worse prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C104-C106 are supported by molecular subtyping analyses (Bailey, Collisson, Moffitt classifications) with appropriate citations and data shown in Supplementary file 1 and Figures 1C, 1E. The distinction between immune-associated and tumor-associated purinergic genes is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Hypoxia-associated purinergic genes show tumor-specific expression patterns. Analysis of microdissected PDAC samples (n=60) shows P2RY2, ADORA2B, and NT5E are expressed in tumor epithelial tissue, while PANX1 (involved in ATP release) is expressed in stromal tissue. Hypoxia is associated with worse survival (p=0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C38-C40 are supported by differential expression analysis of GSE93326 data (Maurer et al. 2019) shown in Figure 1D and Figure 1\u2014figure supplement 1B. The tissue-specific localization is clearly demonstrated, and the survival association with hypoxia is statistically significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "P2Y2 expression is elevated in PDAC tumors and predicts poor survival. RNAscope validation (n=3) confirmed P2Y2 mRNA localization to tumor epithelium. TCGA/GTEx analysis (n=179 tumor, n=171 normal) showed significantly higher P2Y2 in tumors (p<0.0001). High P2Y2 expression associated with decreased median survival (67.87 vs 17.27 months).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by RNAscope data (Figure 2A), GEPIA analysis (Figure 2B), and Kaplan-Meier analysis (Figure 2C). The validation uses multiple independent approaches and appropriate sample sizes. The survival difference is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "P2Y2 function in PDAC is linked to integrin signaling and cytoskeletal dynamics. GSEA of TCGA (n=177) and CPTAC (n=140) cohorts identified 'integrin signaling pathway' as the top enriched pathway. ATP (100 \u00b5M) induced cytoskeletal rearrangements in AsPC-1 cells, blocked by P2Y2 antagonist AR-C (5 \u00b5M), with dose-response validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by GSEA analysis (Figure 2D, Figure 2\u2014figure supplement 1C) and Incucyte live-cell imaging (Figure 2E, Figure 2\u2014figure supplement 1D-E). The functional validation with pharmacological inhibition and dose-response studies strengthens the bioinformatic predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "P2Y2 contains a unique RGD motif that mediates integrin interactions. P2Y2 is the only P2Y GPCR with an RGD motif in the first extracellular loop, shown to interact with \u03b1V integrins. Immunofluorescence confirmed colocalization in AsPC-1, BxPC-3, and CAPAN-2 cells, with variable expression patterns in MIA PaCa-2 and PANC-1 cells matching CCLE data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by structural knowledge (Figure 2F), citation to Erb et al. 2001, and IF imaging (Figure 2G, Figure 2\u2014figure supplement 1F-G). The expression patterns across cell lines are consistent with CCLE database, providing orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "P2Y2 is critical for ATP-driven invasion in 3D PDAC spheroid models. Using spheres with 1:2 cancer:stellate cell ratio, ATP and UTP (100 \u00b5M) significantly increased AsPC-1 invasion (p<0.0001, p=0.0013), blocked by AR-C (p=0.0237, p=0.0133). Non-hydrolyzable ATP\u03b3S showed similar effects, implicating ATP directly. PS-1 stellate cells showed negligible P2Y2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C58-C65 are supported by 3D spheroid invasion assays (Figure 3A-C, Figure 3\u2014figure supplement 1A-D) with appropriate statistical analysis (n=3 biological replicates). The use of non-hydrolyzable ATP and verification of stellate cell P2Y2 expression strengthen the mechanistic interpretation. AR-C alone showed no effect, supporting specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Blocking P2Y2-integrin interactions inhibits ATP-driven invasion. The cyclic RGDfV peptide (10 \u00b5M), which binds \u03b1V\u03b23 integrins, significantly reduced ATP-driven invasion in 3D spheroids (p<0.0001) and 2D migration assays. Similar effects were observed in BxPC-3 cells, confirming the behavior is not cell line-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by invasion assays with cRGDfV treatment (Figure 3B-C, Figure 3\u2014figure supplement 1E-H) and appropriate citations (Kapp et al. 2017, Ibuka et al. 2015, Tan et al. 1986). Testing in multiple cell lines and assay formats strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "P2Y2 is essential for ATP-driven invasion through genetic validation. siRNA knockdown of P2Y2 abrogated ATP-driven invasion (p<0.0001). CRISPR-Cas9 knockout (P2Y2CRISPR) showed decreased invasion in both ATP-treated (p<0.0001) and untreated (p=0.0005) conditions. AR-C showed no off-target effects in P2Y2CRISPR cells, confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by siRNA experiments (Figure 3D, Figure 3\u2014figure supplement 1I) and CRISPR knockout studies (Figure 3E-F, Figure 3\u2014figure supplement 1J). The use of both transient knockdown and stable knockout, plus off-target control experiments, provides strong genetic evidence for P2Y2's essential role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The RGD motif of P2Y2 is required for ATP-driven invasion. P2Y2RGE mutant (reduced integrin affinity) failed to rescue invasion in P2Y2CRISPR cells, while P2Y2RGD restored the phenotype (p<0.0001). In PANC-1 cells (low endogenous P2Y2), only P2Y2RGD transfection enabled ATP-driven invasion (p<0.0001), not empty vector or P2Y2RGE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are supported by rescue experiments in P2Y2CRISPR cells (Figure 3G-H) and gain-of-function studies in PANC-1 cells (Figure 3I-J). The use of both loss-of-function rescue and gain-of-function approaches, with RGD vs RGE comparison, provides strong evidence for the RGD motif's requirement. The P2Y2RGE mutant serves as an excellent negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The RGD motif regulates P2Y2 membrane localization upon ATP stimulation. DNA-PAINT super-resolution microscopy showed ATP treatment decreased P2Y2RGD membrane density by 42% (p<0.0001), but not P2Y2RGE (p=0.1570). P2Y2 cluster density decreased in both conditions. In normal AsPC-1 cells, ATP reduced P2Y2 by 68% (p<0.0001), prevented by cRGDfV co-treatment (p>0.9999).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by quantitative DNA-PAINT analysis (Figure 4D-F, Figure 4\u2014figure supplement 1A-B) with appropriate statistical analysis (n=21 ROIs from \u22655 cells per condition). The differential effects of P2Y2RGD vs P2Y2RGE and the cRGDfV rescue provide strong evidence for RGD-dependent regulation. The qPAINT methodology allows single-molecule quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Activated P2Y2 regulates integrin \u03b1V membrane localization in an RGD-dependent manner. ATP stimulation of P2Y2RGD cells increased \u03b1V molecules and clusters at the membrane (p=0.0003), also observed in normal AsPC-1 cells (p=0.0382, p=0.0349). P2Y2RGE cells showed more baseline \u03b1V (p=0.0003, p=0.0024) but no ATP-induced changes (p=0.7086, p=0.1846). Cluster increase was due to increased total \u03b1V proteins (p>0.9999).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by DNA-PAINT quantification (Figure 4G-H, Figure 4\u2014figure supplement 1C-E). The reciprocal relationship between P2Y2 and \u03b1V localization is demonstrated through multiple conditions. The normalization analysis (Figure 4\u2014figure supplement 1E) clarifies that clustering reflects total protein increase rather than altered clustering propensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "P2Y2 and \u03b1V integrins show reciprocal nanoscale interactions. Nearest neighbor distance analysis showed ATP-stimulated P2Y2RGD cells had 103% more \u03b1V proteins <50 nm from P2Y2 (p=0.0143), while P2Y2RGE cells showed 43% decrease (p=0.0101). Similar patterns at 20-100 nm range. P2Y2RGD molecules were closer to each other than P2Y2RGE (p<0.0001, p=0.007). This demonstrates reciprocal regulation of membrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by NND analysis (Figure 4I-L, Figure 4\u2014figure supplement 2). The distance thresholds are justified based on protein dimensions (Figure 4\u2014figure supplement 2A) and validated against randomized controls (Figure 4\u2014figure supplement 2B). The reciprocal interaction is demonstrated through multiple distance ranges and conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "P2Y2-integrin interactions are required for downstream signaling leading to invasion. AsPC-1 cells showed increased FAK and ERK phosphorylation after 15 min ATP stimulation, abrogated by AR-C. Impairing RGD function with cRGDfV or P2Y2RGE mutation decreased p-FAK and p-ERK levels. Targeting the RGD motif impairs receptor signaling and inhibits invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by western blot analysis (Figure 5A-C) showing time-course phosphorylation of FAK and ERK. The pharmacological (AR-C, cRGDfV) and genetic (P2Y2RGE) approaches converge on the same conclusion. The signaling data mechanistically links the P2Y2-integrin interaction to the invasion phenotype observed in earlier experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "P2Y2 has established roles in hypoxia response, metabolism, and invasion across cancers. Purinergic signaling is classically associated with hypoxia and immune function. P2Y2 has been linked to growth, glycolysis, and HIF-1\u03b1 expression in PDAC, with AR-C+gemcitabine combination showing efficacy in xenografts. P2Y2 has been implicated in invasion in prostate, breast, and ovarian cancers, with RGD-integrin binding required for tubule formation in 3D models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102, C107-C115 are supported by multiple citations to prior literature (Di Virgilio et al. 2018, Forrester and Williams 1977, Bruns et al. 1986, Feoktistov et al. 2004, Tak et al. 2016, Kwon et al. 2019, Hu et al. 2019, Ko et al. 2012, Wang et al. 2020, Park et al. 2020, Jin et al. 2014, Li et al. 2015, Mart\u00ednez-Ram\u00edrez et al. 2016, Ibuka et al. 2015). These establish the broader context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "P2Y2-integrin interactions represent an alternative therapeutic strategy. No clinically efficacious P2Y2 antagonists exist due to poor bioavailability and selectivity. The current findings demonstrate P2Y2 can be targeted by blocking integrin interactions. GPCR-integrin crosstalk is involved in many processes, but only one prior study examined spatial distribution using conventional IF, lacking nanoscale resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 are supported by citations (Neumann et al. 2022, Wang et al. 2005, Teoh et al. 2012, Erb et al. 2001, Tulapurkar et al. 2005, Chorna et al. 2007). The therapeutic rationale is logical given the experimental findings. The novelty claim regarding super-resolution imaging is supported by the literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "A speculative model proposes that reducing integrin-P2Y2 RGD binding decreases RGD-triggered integrin endocytosis, reducing recycling and increasing surface integrins. This could occur through receptor internalization, RGE mutation, or cRGDfV treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C123 is explicitly speculative ('We speculate that...') and represents a mechanistic interpretation of the observed data. While the observations (increased surface \u03b1V with reduced P2Y2-integrin binding) are supported, the proposed mechanism of altered integrin recycling is not directly tested. Additional experiments tracking integrin endocytosis and recycling would be needed to validate this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "This study provides the first single-molecule super-resolution analysis of GPCR-integrin dynamics and demonstrates P2Y2-integrin interactions are required for cancer invasion. P2Y2, via its RGD motif, regulates \u03b1V integrin membrane localization to drive ATP-induced PDAC invasion, representing a promising therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 represent the main conclusions of the study. C124 (novelty of super-resolution approach) is supported by literature review. C125 (requirement for invasion) is strongly supported by the genetic, pharmacological, and imaging data. C126 (mechanistic summary) integrates all major findings. C127 (therapeutic potential) is a reasonable inference from the data, though actual therapeutic validation would require additional studies. The claims are well-supported by the comprehensive experimental evidence presented.",
+    "result_type": "MAJOR"
+  }
+]

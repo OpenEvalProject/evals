@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Ten subjects with Addison's disease (median age 50 years, median disease duration 23.5 years) completed the study with only mild adverse events reported and one subject discontinuing before the first intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C112-C114 provide consistent demographic and safety data from the clinical trial. The study population is well-characterized with clear reporting of baseline characteristics and adverse events, supporting the feasibility and safety of the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The crossover study design successfully created two distinct glucocorticoid exposure states: physiological GC exposure (median morning cortisol 298 nmol/L) and GC withdrawal (median morning cortisol 44.4 nmol/L), with no significant effects on blood pressure, body weight, electrolytes, or glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C42 demonstrate successful experimental manipulation with statistically significant differences in cortisol levels (p<0.001) while maintaining metabolic stability. The data from Table 1 and Figure 2 provide strong evidence that the study design achieved its intended contrast in GC exposure without confounding metabolic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C43",
+      "C44"
+    ],
+    "result": "Multi-omic profiling identified 4426 differentially expressed genes in PBMCs, 3520 in adipose tissue, 38 metabolites, and 12 miRNAs associated with GC response (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C48 report differential expression across multiple omic layers. However, the use of uncorrected p-values (p<0.05) without FDR correction for the reported numbers raises concerns about false discovery rates, particularly for metabolites and miRNAs. While FDR-corrected values are mentioned in Table 2, the specific claims reference uncorrected values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "PBMC and adipose tissue transcriptomes showed limited gene-level overlap but were enriched for shared pathways, and GC-responsive genes demonstrated higher connectivity in the human interactome than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by pathway enrichment analysis and permutation testing (10,000 permutations). The observation of shared pathways despite limited gene overlap is biologically plausible and strengthens the mechanistic interpretation of tissue-specific GC responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "A set of 59 genes with predictive value for GC exposure was identified through hypernetwork analysis, including 9 genes differentially expressed in both tissues (6 associated with GC response by gene ontology), and validated in five independent cellular studies (AUC 0.70-0.96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 describe a robust analytical pipeline with internal validation (perfect classification in discovery cohort) and external validation across multiple independent datasets. The validation AUC values (0.70-0.96) and consistency across different cellular systems provide strong support for the predictive gene set.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Integration of multi-omic data identified 11 clusters with enrichment in the interactome network, including DCK as a shared gene with predictive value that showed reduced expression with GC exposure in both tissues, consistent with prior associations between DCK deletion and increased GC sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 demonstrate coherent multi-omic integration with biological validation through literature (C62). The identification of DCK and its directional consistency across tissues and with prior genetic studies provides mechanistic support for the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "miR-122-5p was identified as the only miRNA in higher-order network modules, correlated with cortisol exposure and FKBP5 expression, and showed significant down-regulation with increased GC exposure (p=0.009) in targeted replication, though two subjects did not show this response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 provide convergent evidence from network analysis, correlation studies, and targeted replication. The statistical significance (p=0.009) and mechanistic connection to FKBP5 support the finding, while the honest reporting of non-responders (C68) adds credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "miR-122-5p association with GC exposure was replicated in three independent studies: higher expression in rheumatoid arthritis patients with reduced GC exposure, higher expression in Addison's disease patients versus controls, and increased expression with both low and excessive GC exposure in healthy subjects, while 11 other miRNAs showed no relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C72 report replication across diverse cohorts, but the pattern in healthy subjects (C71) showing increased miR-122-5p with both low AND excessive GC exposure (U-shaped relationship) contradicts the linear down-regulation observed in the discovery cohort (C67). This inconsistency is not adequately explained and raises questions about the nature of the miR-122-5p response to GC exposure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C84",
+      "C90",
+      "C93",
+      "C111"
+    ],
+    "result": "The authors propose that miR-122-5p may serve as a functional link between unphysiological GC exposure and metabolic/cardiovascular disease, and could become a clinically useful biomarker of GC action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81, C84, C90, C93, and C111 are speculative interpretations (marked as SPECULATION/INFERENCE in evidence_type). While the associations are intriguing, the inconsistent dose-response relationship across studies (see C71 vs C67) and lack of mechanistic validation limit confidence in these conclusions. Additional functional studies would be needed to support causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Tyrosine and uracil occupied central positions in the metabolomic hypernetwork, and some metabolomic findings were consistent with previous studies in adrenal insufficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by hypernetwork analysis and comparison with published literature. The consistency with prior metabolomic studies provides external validation for the metabolomic component of the multi-omic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors acknowledge that the small sample size (n=10) is a limitation but argue it was compensated by the crossover design, multi-omic integration, and within-individual comparisons that minimize confounders, though only morning samples during peak cortisol were examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 provide a balanced assessment of study limitations and strengths. The crossover design does partially mitigate small sample size concerns, and the within-subject comparisons reduce inter-individual variability. However, the limitation to morning samples (C101) restricts generalizability to other time points in the circadian cycle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The PBMC-derived interactome network contained genes with previously known GC-dependent NR3C1 binding and was enriched for pathways classically associated with GC action (GC-receptor signaling, NF-\u03baB, metabolic and cell cycle pathways), supporting the specificity of the study design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 demonstrate biological validation through comparison with ENCODE data and gene ontology analysis. The overlap with known GC-responsive genes and pathways provides strong evidence for the biological relevance and specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors justify their integrated multi-omic approach by citing literature showing it provides increased robustness, reduces background noise, and that hypernetwork summaries provide signatures of mechanism useful for assessing function and defining biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C104-C107 are well-supported by appropriate citations to the methodological literature. The rationale for the analytical approach is clearly articulated and grounded in established principles of systems biology and network analysis.",
+    "result_type": "MINOR"
+  }
+]

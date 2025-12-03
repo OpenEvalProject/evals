@@ -1,0 +1,1236 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "In many normative theories of synaptic plasticity, weight updates implicitly depend on the chosen parametrization of the weights.",
+    "claim_type": "EXPLICIT",
+    "source": "In many normative theories of synaptic plasticity, weight updates implicitly depend on the chosen parametrization of the weights.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement from the abstract describing a problem with existing theories.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Synapses which are functionally equivalent in terms of their impact on somatic firing can differ substantially in spine size due to their different positions along the dendritic tree.",
+    "claim_type": "EXPLICIT",
+    "source": "synapses which are functionally equivalent in terms of their impact on somatic firing can differ substantially in spine size due to their different positions along the dendritic tree.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement relates the problem to neuronal morphology, specifically dendritic position affecting spine size.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Classical theories based on Euclidean-gradient descent can easily lead to inconsistencies due to parametrization dependence.",
+    "claim_type": "EXPLICIT",
+    "source": "Classical theories based on Euclidean-gradient descent can easily lead to inconsistencies due to such parametrization dependence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct claim about the limitations of classical gradient descent approaches.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The issues with parametrization dependence are solved in the framework of Riemannian geometry.",
+    "claim_type": "EXPLICIT",
+    "source": "The issues are solved in the framework of Riemannian geometry, in which we propose that plasticity instead follows natural-gradient descent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main theoretical claim of the paper about the solution approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "A synaptic learning rule for spiking neurons based on natural-gradient descent couples functional efficiency with the explanation of several well-documented biological phenomena such as dendritic democracy, multiplicative scaling, and heterosynaptic plasticity.",
+    "claim_type": "EXPLICIT",
+    "source": "Under this hypothesis, we derive a synaptic learning rule for spiking neurons that couples functional efficiency with the explanation of several well-documented biological phenomena such as dendritic democracy, multiplicative scaling, and heterosynaptic plasticity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the derived learning rule and its biological relevance.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Evolution might have come up with its own version of natural-gradient descent in implementing functional synaptic plasticity.",
+    "claim_type": "EXPLICIT",
+    "source": "We therefore suggest that in its search for functional synaptic plasticity, evolution might have come up with its own version of natural-gradient descent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative claim about evolutionary optimization.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The exact physical quantity to which synaptic weights correspond often remains unspecified in computational paradigms.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the exact physical quantity to which these synaptic weights correspond often remains unspecified.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a limitation in existing computational models.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The weight vector will follow a different trajectory during learning depending on whether the somatic or dendritic parametrization of the PSP amplitude was chosen.",
+    "claim_type": "EXPLICIT",
+    "source": "As a consequence, the weight vector will follow a different trajectory during learning depending on whether the somatic or dendritic parametrization of the PSP amplitude was chosen.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the theoretical analysis and Figure 1.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Evolution could have favored a parametrization-dependent learning rule along with one particular parametrization, but this would necessarily imply sub-optimal convergence for all but a narrow set of neuron morphologies and connectome configurations.",
+    "claim_type": "EXPLICIT",
+    "source": "It certainly could be the case that evolution has favored a parametrization-dependent learning rule, along with one particular parametrization over all others, but this would necessarily imply sub-optimal convergence for all but a narrow set of neuron morphologies and connectome configurations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical argument about the implications of parametrization-dependent learning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "An invariant learning rule could improve learning and increase fitness.",
+    "claim_type": "EXPLICIT",
+    "source": "An invariant learning rule on the other hand would not only be mathematically unambiguous and therefore more elegant, but could also improve learning, thus increasing fitness.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the advantages of parametrization-invariant learning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Natural-gradient descent follows the path of steepest descent with respect to a small change in the input-output distribution rather than in the synaptic weights.",
+    "claim_type": "EXPLICIT",
+    "source": "The solution lies in following the path of steepest descent not in relation to a small change in the synaptic weights (Euclidean-gradient descent), but rather with respect to a small change in the input-output distribution (natural-gradient descent).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definition of natural-gradient descent in the context of the paper.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Natural-gradient methods were first proposed in Amari, 1998, with earlier roots in information geometry (Amari, 1987; Amari and Nagaoka, 2000).",
+    "claim_type": "EXPLICIT",
+    "source": "First proposed in Amari, 1998, but with earlier roots in information geometry (Amari, 1987; Amari and Nagaoka, 2000), natural-gradient methods (Yang and Amari, 1998; Rattray and Saad, 1999; Park et al., 2000; Kakade, 2001) have recently been rediscovered in the context of deep learning (Pascanu and Bengio, 2013; Martens, 2014; Ollivier, 2015; Amari et al., 2019; Bernacchia et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a historical claim supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Pascanu and Bengio, 2013 showed that the natural-gradient learning rule is closely related to other machine learning algorithms.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, Pascanu and Bengio, 2013 showed that the natural-gradient learning rule is closely related to other machine learning algorithms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about relationships between algorithms, supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Most applications of natural gradient focus on rate-based networks which are not inherently linked to a statistical manifold and have to be equipped with Gaussian noise or a probabilistic output layer interpretation.",
+    "claim_type": "EXPLICIT",
+    "source": "However, most of the applications focus on rate-based networks which are not inherently linked to a statistical manifold and have to be equipped with Gaussian noise or a probabilistic output layer interpretation in order to allow an application of the natural gradient.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about limitations of existing natural gradient applications.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The stochastic nature of neuronal outputs in-vivo provides a natural setting for plasticity rules based on information geometry.",
+    "claim_type": "EXPLICIT",
+    "source": "The stochastic nature of neuronal outputs in-vivo (see, e.g. Softky and Koch, 1993) provides a natural setting for plasticity rules based on information geometry.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects biological observations to the theoretical framework.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The derived learning rule equips synapses with more functionality compared to classical error learning by enabling them to adjust their learning rate to their respective impact on the neuron's output.",
+    "claim_type": "EXPLICIT",
+    "source": "Our learning rule equips the synapses with more functionality compared to classical error learning by enabling them to adjust their learning rate to their respective impact on the neuron's output.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the properties of the derived learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The natural-gradient learning rule naturally takes into account relevant variables such as the statistics of the afferent input or their respective positions on the dendritic tree.",
+    "claim_type": "EXPLICIT",
+    "source": "It naturally takes into account relevant variables such as the statistics of the afferent input or their respective positions on the dendritic tree.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about what the learning rule accounts for.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Plasticity based on the natural gradient is able to incorporate both homo- and heterosynaptic phenomena into a unified framework.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, and unlike classical error-learning rules, plasticity based on the natural gradient is able to incorporate both homo- and heterosynaptic phenomena into a unified framework.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the scope of the learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Heterosynaptic components of the natural-gradient learning rule can be approximated by quantities accessible at the locus of plasticity.",
+    "claim_type": "EXPLICIT",
+    "source": "While theoretically derived heterosynaptic components of learning rules are notoriously difficult for synapses to implement due to their non-locality, we show that in our learning rule they can be approximated by quantities accessible at the locus of plasticity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the biological implementability of the learning rule.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The combination of features in the natural-gradient learning rule enables faster convergence during supervised learning.",
+    "claim_type": "EXPLICIT",
+    "source": "In line with results from machine learning, the combination of these features also enables faster convergence during supervised learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about learning performance, supported by simulations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The Euclidean-gradient learning rule is a spike-based version of the classical perceptron learning rule (Rosenblatt, 1958), whose multilayer version forms the basis of the error-backpropagation algorithm (Rumelhart et al., 1986).",
+    "claim_type": "EXPLICIT",
+    "source": "which is a spike-based version of the classical perceptron learning rule (Rosenblatt, 1958), whose multilayer version forms the basis of the error-backpropagation algorithm (Rumelhart et al., 1986).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim establishes the relationship between different learning rules.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "A possible biological implementation of the Euclidean-gradient learning rule has been suggested by Urbanczik and Senn, 2014, who demonstrated how a neuron may exploit its morphology to store errors.",
+    "claim_type": "EXPLICIT",
+    "source": "On the single-neuron level, a possible biological implementation has been suggested by Urbanczik and Senn, 2014, who demonstrated how a neuron may exploit its morphology to store errors, an idea that was recently extended to multilayer networks (Sacramento et al., 2017; Haider et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about biological implementation, supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Euclidean-gradient descent cannot account for synaptic weight reparametrization, as caused by the diversity of synaptic loci on the dendritic tree.",
+    "claim_type": "EXPLICIT",
+    "source": "It cannot account for synaptic weight (re)parametrization, as caused, for example, by the diversity of synaptic loci on the dendritic tree.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about a limitation of Euclidean-gradient descent.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "For a local computation of Euclidean gradients using a dendritic parametrization, weight updates decrease with increasing distance towards the soma.",
+    "claim_type": "EXPLICIT",
+    "source": "For a local computation of Euclidean gradients using a dendritic parametrization, weight updates decrease with increasing distance towards the soma (Equation 3), which is likely to harm the convergence speed toward an optimal weight configuration.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the behavior of Euclidean gradients with dendritic parametrization.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The Euclidean-gradient learning rule cannot explain heterosynaptic plasticity, as it is purely presynaptically gated.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, when compared to experimental evidence, this learning rule cannot explain heterosynaptic plasticity, as it is purely presynaptically gated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about a limitation of Euclidean-gradient learning.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Euclidean-gradient descent is well-known to exhibit slow convergence in non-isotropic regions of the cost function (Ruder, 2016).",
+    "claim_type": "EXPLICIT",
+    "source": "In general, Euclidean-gradient descent is well-known to exhibit slow convergence in non-isotropic regions of the cost function (Ruder, 2016), with such non-isotropy frequently arising or being aggravated by an inadequate choice of parametrization (see Ollivier, 2015 and Figure 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about a known limitation of Euclidean-gradient descent.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Natural-gradient descent is, by construction, immune to problems with non-isotropic cost functions and parametrization dependence.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, natural-gradient descent is, by construction, immune to these problems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the advantages of natural-gradient descent.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The homosynaptic plasticity component is directly evoked by the spike trains arriving at the synapse.",
+    "claim_type": "EXPLICIT",
+    "source": "Just as for Euclidean-gradient-based learning, the latter is directly evoked by the spike trains arriving at the synapse. Therefore, the resulting plasticity is homosynaptic, affecting only synapses which receive afferent input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the nature of homosynaptic plasticity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The amplitude of the bias term \u03b3u is determined by the overall input to the neuron rather than the afferent input at the respective synapse.",
+    "claim_type": "EXPLICIT",
+    "source": "The amplitude of this bias does not exclusively depend on the afferent input at the respective synapse, but is rather determined by the overall input to the neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about what determines the bias term.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Connections that are already strong are subject to larger changes compared to weaker ones in the natural-gradient learning rule.",
+    "claim_type": "EXPLICIT",
+    "source": "More specifically, connections that are already strong are subject to larger changes compared to weaker ones.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the behavior of weight-dependent plasticity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Under reasonable assumptions, \u03b3u and \u03b3w can be reduced to simple functions of variables that are fully accessible at the locus of individual synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "However, under reasonable assumptions such as a high number of presynaptic partners and for a large, diverse set of empirically tested scenarios, we have shown that these factors can be reduced to simple functions of variables that are fully accessible at the locus of individual synapses:",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the biological implementability of the learning rule.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Natural-gradient plasticity improves convergence in a supervised learning task involving an anisotropic cost function.",
+    "claim_type": "EXPLICIT",
+    "source": "In the following, we demonstrate that the additional terms introduced in natural-gradient-based plasticity confer important advantages compared to Euclidean-gradient descent, both in terms of of convergence as well as with respect to biological plausibility. More precisely, we show that our plasticity rule improves convergence in a supervised learning task involving an anisotropic cost function, a situation which is notoriously hard to deal with for Euclidean-gradient-based learning rules (Ruder, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the performance of the learning rule, supported by simulations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Non-isotropic cost landscapes can easily be provoked by non-homogeneous input conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Non-isotropic cost landscapes can easily be provoked by non-homogeneous input conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about what causes non-isotropic cost landscapes.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Natural-gradient learning enables faster convergence compared to Euclidean-gradient descent in the tested supervised learning scenario.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, this lead to faster convergence of the natural-gradient plasticity rule compared to Euclidean-gradient descent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulation results in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The faster convergence of natural-gradient plasticity is a robust effect, as evidenced by average learning curves over 1,000 trials.",
+    "claim_type": "EXPLICIT",
+    "source": "The faster convergence of natural-gradient plasticity is a robust effect, as evidenced in Figure 3F by the average learning curves over 1,000 trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the simulation results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The natural-gradient learning rule is parametrization-invariant.",
+    "claim_type": "EXPLICIT",
+    "source": "Since attenuation of PSPs is equivalent to weight reparametrization and our learning rule is, by construction, parametrization-invariant, it naturally compensates for the distance between synapse and soma.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a fundamental claim about the properties of the learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Under the assumption of passive attenuation along the dendritic tree, synaptic changes in distal dendrites are scaled up compared to proximal synapses for functionally equivalent synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "For functionally equivalent synapses (i.e. with identical input statistics), synaptic changes in distal dendrites are scaled up compared to proximal synapses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction of the learning rule under specific assumptions.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The effect of synaptic plasticity on the neuron's output is independent of the synapse location, since dendritic attenuation is precisely counterbalanced by weight update amplification.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, the effect of synaptic plasticity on the neuron's output is independent of the synapse location, since dendritic attenuation is precisely counterbalanced by weight update amplification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the consequence of democratic plasticity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Democratic plasticity is reminiscent of the concept of 'dendritic democracy' (Magee and Cook, 2000).",
+    "claim_type": "EXPLICIT",
+    "source": "Such 'democratic plasticity', which enables distal synapses to contribute just as effectively to changes in the output as proximal synapses, is reminiscent of the concept of 'dendritic democracy' (Magee and Cook, 2000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the theoretical prediction to experimental observations.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Experiments show increased synaptic amplitudes in the distal dendritic tree of multiple cell types, such as rat hippocampal CA1 neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "These experiments show increased synaptic amplitudes in the distal dendritic tree of multiple cell types, such as rat hippocampal CA1 neurons; dendritic democracy has therefore been presumed to serve the purpose of giving distal inputs a 'vote' on the neuronal output.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about experimental observations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The natural-gradient plasticity rule refines the notion of democracy by asserting that learning itself rather than its end result is rescaled in accordance with the neuronal morphology.",
+    "claim_type": "EXPLICIT",
+    "source": "Our plasticity rule refines the notion of democracy by asserting that learning itself rather than its end result is rescaled in accordance with the neuronal morphology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about how the learning rule relates to dendritic democracy.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Experiments show highly diverse PSP amplitudes in neuronal somata (Williams and Stuart, 2002).",
+    "claim_type": "EXPLICIT",
+    "source": "Still, experiments show highly diverse PSP amplitudes in neuronal somata (Williams and Stuart, 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about experimental observations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Democratic plasticity can give rise to dendritic democracy if synapses from multiple afferents that encode the same information are randomly distributed along the dendritic tree.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, if synapses from multiple afferents that encode the same information are randomly distributed along the dendritic tree, then democratic plasticity also predicts dendritic democracy, as the scaling of weight changes implies a similar scaling of the final learned weights.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conditional prediction of the learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The absence of dendritic democracy does not contradict the presence of democratic plasticity, as afferents from different cortical regions might target specific positions on the dendritic tree.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the absence of dendritic democracy does not contradict the presence of democratic plasticity, as afferents from different cortical regions might target specific positions on the dendritic tree (see, e.g., Markram et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the relationship between democratic plasticity and dendritic democracy.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The experimental findings by Froemke et al., 2005, who report an inverse relationship between the amount of plasticity at a synapse and its distance from soma, are consistent with the predictions of the natural-gradient learning rule.",
+    "claim_type": "EXPLICIT",
+    "source": "The experimental findings by Froemke et al., 2005, who report an inverse relationship between the amount of plasticity at a synapse and its distance from soma, are therefore completely consistent with the predictions of our learning rule, since they compared synapses that were not initially functionally equivalent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim reconciles experimental observations with the learning rule.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Dendritic democracy could be achieved without democratic plasticity, but this would be much slower than with natural-gradient learning, especially for distal synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "Note also that dendritic democracy could, in principle, be achieved without democratic plasticity. However, this would be much slower than with natural-gradient learning, especially for distal synapses, as discussed in Sec. 'Natural-gradient plasticity speeds up learning'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the efficiency of democratic plasticity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Natural-gradient learning explicitly scales synaptic updates with the (un)reliability \u2013 more specifically, with the inverse variance \u2013 of their input.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, natural-gradient learning explicitly scales synaptic updates with the (un)reliability \u2013 more specifically, with the inverse variance \u2013 of their input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about how input reliability affects learning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Unreliable input leads to slower learning, with an inverse dependence of synaptic weight changes on the USP variance.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 5 shows how unreliable input leads to slower learning, with an inverse dependence of synaptic weight changes on the USP variance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulations in Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The approximately inverse scaling with the presynaptic firing rate is qualitatively in line with observations from Aitchison and Latham, 2014 and Aitchison et al., 2021.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that this observation also makes intuitive sense from a Bayesian point of view, under which any information needs to be weighted by the reliability of its source. Furthermore, the approximately inverse scaling with the presynaptic firing rate is qualitatively in line with observations from Aitchison and Latham, 2014 and Aitchison et al., 2021, although our interpretation and precise relationship is different.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the learning rule to other work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Natural-gradient learning retains a rescaled version of the homosynaptic contribution but also predicts the presence of two additional plasticity components.",
+    "claim_type": "EXPLICIT",
+    "source": "As discussed above, natural-gradient learning retains a rescaled version of this homosynaptic contribution, but at the same time predicts the presence of two additional plasticity components.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the structure of the natural-gradient learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The additional plasticity components in natural-gradient learning give rise to heterosynaptic weight changes, which adapt synapses to currently non-active afferents given sufficient global input.",
+    "claim_type": "EXPLICIT",
+    "source": "Contrary to homosynaptic plasticity, these components also adapt synapses to currently non-active afferents, given a sufficient level of global input. Due to their lack of input specificity, they give rise to heterosynaptic weight changes, a form of plasticity that has been observed in hippocampus (Chen et al., 2013; Lynch et al., 1977), cerebellum (Ito and Kano, 1982), and neocortex (Chistiakova and Volgushev, 2009), mostly in combination with homosynaptic plasticity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the learning rule to experimental observations.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "A functional interpretation of heterosynaptic plasticity is as a prospective adaptation mechanism for temporarily inactive synapses such that, upon activation, they are already useful for the neuronal output.",
+    "claim_type": "EXPLICIT",
+    "source": "A functional interpretation of heterosynaptic plasticity, to which our learning rule also alludes, is as a prospective adaptation mechanism for temporarily inactive synapses such that, upon activation, they are already useful for the neuronal output.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a functional interpretation of heterosynaptic plasticity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The uniform heterosynaptic term usually opposes the homosynaptic change.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, it usually opposes the homosynaptic change, which we address in more detail below.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the relationship between heterosynaptic and homosynaptic plasticity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The weight-dependent heterosynaptic term corresponds to experimental reports such as Loewenstein et al., 2011, which found in vivo weight changes in the neocortex to be proportional to the spine size.",
+    "claim_type": "EXPLICIT",
+    "source": "This corresponds to experimental reports such as Loewenstein et al., 2011, which found in vivo weight changes in the neocortex to be proportional to the spine size, which itself is correlated with synaptic strength (Asrican et al., 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the learning rule to experimental observations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Spikes transmitted by strong synapses have a larger impact on the weight-dependent heterosynaptic plasticity component compared to spikes arriving via weak synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "Since the latter can be interpreted as a scalar product between the afferent input vector and the synaptic weight vector, it implies that spikes transmitted by strong synapses have a larger impact on this heterosynaptic plasticity component compared to spikes arriving via weak synapses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the behavior of weight-dependent heterosynaptic plasticity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Weaker synapses require more persistent and strong stimulation to induce significant changes and 'override the status quo' of the neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, weaker synapses require more persistent and strong stimulation to induce significant changes and 'override the status quo' of the neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the implications of weight-dependent plasticity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The weight-dependent heterosynaptic mechanism ensures a form of heterosynaptic robustness towards noise.",
+    "claim_type": "EXPLICIT",
+    "source": "Since, following a period of learning, afferents connected via weak synapses can be considered uninformative for the neuron's target output, this mechanism ensures a form of heterosynaptic robustness towards noise.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a functional interpretation of weight-dependent heterosynaptic plasticity.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Stimulated synapses undergo strong potentiation (LTP) for very small initial weights, with the magnitude of weight changes decreasing for larger initial amplitudes until the neuron's output matches its teacher.",
+    "claim_type": "EXPLICIT",
+    "source": "Stimulated synapses (Figure 7B) are seen to undergo strong potentiation (LTP) for very small initial weights; the magnitude of weight changes decreases for larger initial amplitudes until the neuron's output matches its teacher, at which point the sign of the postsynaptic error term flips.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulations in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "For even larger initial weights, potentiation at stimulated synapses turns into depression (LTD), which becomes stronger for higher initial values of the stimulated synapses' weights.",
+    "claim_type": "EXPLICIT",
+    "source": "For even larger initial weights, potentiation at stimulated synapses therefore turns into depression (LTD), which becoms stronger for higher initial values of the stimulated synapses' weights.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulations in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The sign of plasticity at unstimulated synapses switches when the weights become large enough for the error to switch sign.",
+    "claim_type": "EXPLICIT",
+    "source": "As for the homosynaptic case, the sign of plasticity switches when the weights become large enough for the error to switch sign.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulations in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "In the regime where stimulated synapses experienced potentiation, unstimulated synapses are depressed and vice-versa.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, in the regime where stimulated synapses experienced potentiation, unstimulated synapses are depressed and vice-versa.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulations in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Potentiation of stimulated synapses has often been found to be accompanied by depression of unstimulated synapses in experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "This reproduces various experimental observations: on one hand, potentiation of stimulated synapses has often been found to be accompanied by depression of unstimulated synapses (Lynch et al., 1977), such as in the amygdala (Royer and Par\u00e9, 2003) or the visual cortex (Arami et al., 2013);",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the learning rule to experimental observations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "When the postsynaptic error term switches sign, depression at unstimulated synapses transforms into potentiation.",
+    "claim_type": "EXPLICIT",
+    "source": "on the other hand, when the postsynaptic error term switches sign, depression at unstimulated synapses transforms into potentiation (W\u00f6hrl et al., 2007; Royer and Par\u00e9, 2003).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the learning rule to experimental observations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Plasticity at stimulated synapses is unaffected by the initial state of the unstimulated synapses.",
+    "claim_type": "EXPLICIT",
+    "source": "While plasticity at stimulated synapses is unaffected by the initial state of the unstimulated synapses, plasticity at unstimulated synaptic connections depends on both the stimulated and unstimulated weights.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulations in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "For very large weights, heterosynaptic potentiation transforms back into depression, in order to more quickly quench excessive output activity.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, for very large weights (top right corner of Figure 7C), heterosynaptic potentiation transforms back into depression, in order to more quickly quench excessive output activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a functional interpretation supported by simulations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Pairing Hebbian terms with heterosynaptic and homeostatic plasticity is crucial for stability in both supervised and unsupervised learning scenarios.",
+    "claim_type": "EXPLICIT",
+    "source": "This behavior is useful for both supervised and unsupervised learning scenarios (Zenke and Gerstner, 2017), where it was shown that pairing Hebbian terms with heterosynaptic and homeostatic plasticity is crucial for stability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Three plasticity regimes can be distinguished for natural-gradient learning: two where heterosynaptic and homosynaptic plasticity are opposed (O1, O2), and one where they are aligned and lead to depression (S).",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, we can distinguish three plasticity regimes for natural-gradient learning (Figure 7D\u2013G). In two of these regimes, heterosynaptic and homosynaptic plasticity are opposed (O1, O2), whereas in the third, they are aligned and lead to depression (S).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulations in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The two opposing plasticity regimes are separated by the zero-error equilibrium line, at which plasticity switches sign.",
+    "claim_type": "EXPLICIT",
+    "source": "The two opposing regimes are separated by the zero-error equilibrium line, at which plasticity switches sign.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulations in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Physics-inspired arguments from symmetry and invariance can help uncover abstract principles that evolution may have gradually discovered and implemented into our brains.",
+    "claim_type": "EXPLICIT",
+    "source": "Still, physics-inspired arguments from symmetry and invariance can help uncover abstract principles that evolution may have gradually discovered and implemented into our brains.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a philosophical claim about the approach taken in the paper.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Parametrization invariance in the context of learning translates to the fundamental ability of neurons to deal with diversity in their morphology and input-output characteristics.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we have considered parametrization invariance in the context of learning, which, in biological terms, translates to the fundamental ability of neurons to deal with diversity in their morphology and input-output characteristics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the biological interpretation of parametrization invariance.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The biological phenomena predicted by the natural-gradient learning rule can be seen as a means to jointly improve and accelerate error-correcting learning.",
+    "claim_type": "EXPLICIT",
+    "source": "In turn, these biological phenomena can now be seen as a means to jointly improve and accelerate error-correcting learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a functional interpretation of the biological phenomena.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "The natural-gradient plasticity paradigm requires the presence of a global factor that adapts the learning rate to the particular shape of the voltage-to-spike transfer function and to the desired statistics of the output.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to classical error-correcting learning rules, our plasticity paradigm requires the presence of several additional ingredients. First, a global factor adapts the learning rate to the particular shape of the voltage-to-spike transfer function and to the desired statistics of the output, thus addressing the diversity of neuronal response functions observed in vivo (Markram et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about a feature of the natural-gradient learning rule.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The homosynaptic component of the natural-gradient plasticity rule is normalized by the variance of presynaptic inputs, which provides a direct link to Bayesian frameworks of neuronal computation.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, the homosynaptic component of plasticity is normalized by the variance of presynaptic inputs, which provides a direct link to Bayesian frameworks of neuronal computation (Aitchison and Latham, 2014; Jordan et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the learning rule to Bayesian frameworks.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The natural-gradient learning rule contains a uniform heterosynaptic term that opposes homosynaptic changes, downregulating plasticity and acting as a homeostatic mechanism.",
+    "claim_type": "EXPLICIT",
+    "source": "Third, our rule contains a uniform heterosynaptic term that opposes homosynaptic changes, downregulating plasticity and thus acting as a homeostatic mechanism (Chen et al., 2013; Chistiakova et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the learning rule to homeostatic mechanisms.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The natural-gradient learning rule contains a weight-dependent heterosynaptic term that accounts for the shape of the neuron's activation function while increasing its robustness towards noise.",
+    "claim_type": "EXPLICIT",
+    "source": "Fourth, we find a weight-dependent heterosynaptic term that also accounts for the shape of the neuron's activation function, while increasing its robustness towards noise.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about a feature of the natural-gradient learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The natural-gradient-based plasticity correctly accounts for the somato-dendritic reparametrization of synaptic strengths.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, our natural-gradient-based plasticity correctly accounts for the somato-dendritic reparametrization of synaptic strengths.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about a feature of the natural-gradient learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The features of the natural-gradient learning rule enable faster convergence on non-isotropic error landscapes, in line with results for multilayer perceptrons and rate-based deep neural networks.",
+    "claim_type": "EXPLICIT",
+    "source": "These features enable faster convergence on non-isotropic error landscapes, in line with results for multilayer perceptrons (Yang and Amari, 1998; Rattray and Saad, 1999) and rate-based deep neural networks (Pascanu and Bengio, 2013; Ollivier, 2015; Bernacchia et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulations and citations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The natural-gradient learning rule can be formulated as a simple, fully local expression, only requiring information that is available at the locus of plasticity.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, our learning rule can be formulated as a simple, fully local expression, only requiring information that is available at the locus of plasticity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the biological implementability of the learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The natural-gradient learning rule inherits invariance under sufficient statistics from the Fisher information metric.",
+    "claim_type": "EXPLICIT",
+    "source": "We further note an interesting property of our learning rule, which it inherits directly from the Fisher information metric that underlies natural gradient descent, namely invariance under sufficient statistics (Cencov, 1972).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about a mathematical property of the learning rule.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Invariance under sufficient statistics is especially relevant for biological neurons, whose stochastic firing effectively communicates information samples rather than explicit distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "This is especially relevant for biological neurons, whose stochastic firing effectively communicates information samples rather than explicit distributions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the biological relevance of sufficient statistics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Invariance under sufficient statistics singles out the natural-gradient approach from other second-order-like methods as a particularly appealing framework for biological learning.",
+    "claim_type": "EXPLICIT",
+    "source": "This singles out our natural-gradient approach from other second-order-like methods as a particularly appealing framework for biological learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the advantages of the natural-gradient approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The democratic plasticity predicted by the natural-gradient learning rule can give rise to dendritic democracy, as observed by Magee and Cook, 2000.",
+    "claim_type": "EXPLICIT",
+    "source": "Our democratic plasticity can give rise to dendritic democracy, as observed by Magee and Cook, 2000.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the learning rule to experimental observations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The democratic plasticity relates to results by Letzkus et al., 2006 and Sj\u00f6str\u00f6m and H\u00e4usser, 2006 which describe a sign switch of synaptic plasticity between proximal and distal sites.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, it also relates to results by Letzkus et al., 2006 and Sj\u00f6str\u00f6m and H\u00e4usser, 2006 which describe a sign switch of synaptic plasticity between proximal and distal sites that is not easily reconcilable with naive gradient descent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the learning rule to experimental observations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The sign switch of synaptic plasticity between proximal and distal sites could be explained by the attenuation of the output signal (action potential backpropagation).",
+    "claim_type": "EXPLICIT",
+    "source": "As the authors themselves speculate, the most likely reason is the (partial) failure of action potential backpropagation through the dendritic tree. In some sense, this is a mirror problem to the issue we discuss here: while we consider the attenuation of input signals, these experimental findings could be explained by an attenuation of the output signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about a possible explanation for experimental observations.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Heterosynaptic plasticity generally opposes homosynaptic plasticity, which qualitatively matches many experimental findings.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, we find that heterosynaptic plasticity generally opposes homosynaptic plasticity, which qualitatively matches many experimental findings (Lynch et al., 1977; White et al., 1990; Royer and Par\u00e9, 2003; W\u00f6hrl et al., 2007) and can be functionally interpreted as an enhancement of competition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the learning rule to experimental observations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "For very large weights, heterosynaptic plasticity aligns with homosynaptic changes, pushing the synaptic weights back to a sensible range.",
+    "claim_type": "EXPLICIT",
+    "source": "For very large weights, heterosynaptic plasticity aligns with homosynaptic changes, pushing the synaptic weights back to a sensible range (Chistiakova et al., 2015), as shown to be necessary for unsupervised learning (Zenke and Gerstner, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim connects the learning rule to experimental observations and theoretical requirements.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "In supervised learning, the alignment of heterosynaptic and homosynaptic plasticity for large weights helps speed up convergence by keeping the weights in the operating range.",
+    "claim_type": "EXPLICIT",
+    "source": "In supervised learning it helps speed up convergence by keeping the weights in the operating range.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a functional interpretation of the learning rule behavior.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Future experiments should use a Poisson-like, stochastic stimulation of the student neuron to allow quantitative exploration of the relationship between heterosynaptic plasticity and natural gradient learning.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to the mostly deterministic protocols used in the referenced literature, such experiments would require a Poisson-like, stochastic stimulation of the student neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a recommendation for future experiments.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "The natural-gradient learning rule predicts that increasing the variance in presynaptic spike trains should reduce LTP in standard plasticity induction protocols.",
+    "claim_type": "EXPLICIT",
+    "source": "A further prediction that follows from our plasticity rule is the normalization of weight changes by the presynaptic variance. We would thus anticipate that increasing the variance in presynaptic spike trains (through, e.g. temporal correlations) should reduce LTP in standard plasticity induction protocols.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a testable prediction of the learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The natural-gradient learning rule predicts a significant dependence of synaptic plasticity on neuronal response functions and output statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, we expect to observe a significant dependence of synaptic plasticity on neuronal response functions and output statistics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a testable prediction of the learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The natural-gradient learning rule predicts that flatter response functions should correlate with faster learning, in contrast to the inverse correlation predicted by classical learning rules.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, flatter response functions should correlate with faster learning, in contrast to the inverse correlation predicted by classical learning rules derived from Euclidean-gradient descent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a testable prediction that contrasts with classical learning rules.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The natural-gradient learning rule can be directly incorporated as a building block into spike-based frameworks of error backpropagation.",
+    "claim_type": "EXPLICIT",
+    "source": "In principle, our learning rule can be directly incorporated as a building block into spike-based frameworks of error backpropagation such as (Sporea and Gr\u00fcning, 2013; Schiess et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the potential application of the learning rule.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "For spiking networks, the unit-wise natural-gradient approach would reduce global natural-gradient descent to the local rule for single neurons derived in this paper.",
+    "claim_type": "EXPLICIT",
+    "source": "For spiking networks, this would reduce global natural-gradient descent to our local rule for single neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the application of the learning rule to networks.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

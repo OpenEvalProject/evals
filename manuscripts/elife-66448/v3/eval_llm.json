@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C105"
+    ],
+    "result": "The 2016/2017 Washington State mumps outbreak involved 889 confirmed and probable cases, with highest incidence among children aged 10-19 years despite high vaccination rates (91% up-to-date among cases aged 5-19). Marshallese individuals comprised 52% of cases despite representing only 0.3% of the state population, with 93% of Marshallese cases aged 5-19 being up-to-date on vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epidemiological characterization is well-supported by surveillance data presented throughout the manuscript. The claims about case counts, age distribution, vaccination rates, and disproportionate impact on the Marshallese community are consistently documented with specific percentages and incidence rates. The data sources are clearly identified as coming from Washington State Department of Health surveillance systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31"
+    ],
+    "result": "The study sequenced 166 mumps virus genomes: 110 from Washington State and 56 from other US states collected between 2006 and 2018.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is directly stated in multiple sections of the manuscript and represents the core dataset for the genomic analyses. The methods section provides detailed protocols for sample selection, sequencing, and quality control, with sequences deposited in public databases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C63",
+      "C64"
+    ],
+    "result": "Phylogenetic analysis revealed approximately 13 independent introductions of mumps into Washington State (95% HPD: 12-15), primarily from Arkansas. Four Arkansas introductions accounted for 92/110 sequenced cases and led to sustained transmission chains, while non-Arkansas introductions resulted exclusively in non-Marshallese infections with limited onward transmission. The primary outbreak clade was introduced from Arkansas around August 2016, approximately 3.5 months before the first reported case.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogeographic reconstruction using discrete trait models in BEAST is methodologically sound and the results are clearly presented with appropriate uncertainty estimates (HPD intervals). The finding of multiple introductions is supported by phylogenetic evidence shown in Figure 3, and the temporal estimates are consistent with molecular clock analyses. The differential success of Arkansas vs. non-Arkansas introductions is supported by the phylogenetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Most Washington sequences nested within North American genotype G diversity circulating since 2006, but nine Washington sequences were highly divergent (TMRCA ~22 years), with seven clustering with New Zealand viruses suggesting travel-related introductions. Three non-genotype G viruses were also detected (genotypes A, H, and K).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic placement of sequences is well-supported by maximum likelihood and time-resolved phylogenies shown in Figures 2 and supplementary figures. The identification of divergent sequences and their relationship to global diversity is appropriately documented. The inference of travel-related introductions for New Zealand-related sequences is reasonable but appropriately presented as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C113",
+      "C114"
+    ],
+    "result": "SH gene sequences showed insufficient resolution for fine-grained geographic inference, with almost all North American SH genes being identical and forming a single polytomy. The authors recommend that full-genome sequencing would be more useful than CDC-recommended SH-based genotyping for resolving local transmission patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between full-genome and SH-only phylogenies (Figure 2\u2014figure supplement 5) clearly demonstrates the lack of resolution in SH sequences. This finding is consistent with previous studies cited by the authors. The recommendation for full-genome sequencing is a reasonable inference from the data, though it represents a suggestion for future practice rather than a tested result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Using a novel 'basal tip' metric, Marshallese cases were significantly more likely to be upstream in transmission chains than non-Marshallese cases (odds ratio = 3.2, p=0.00725). While 56% of Marshallese tips were ancestral to downstream samples, only 27% of non-Marshallese tips were ancestral. Community membership was a significant determinant of sustained transmission when controlling for vaccination status and age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development and application of the basal/terminal tip metric is methodologically sound and well-justified in the methods section. The logistic regression analysis appropriately controls for potential confounders (vaccination status and age) and reports effect sizes with confidence intervals. The statistical significance is properly assessed with p-values. However, the authors acknowledge that the dataset may be underpowered to fully resolve effects of vaccination and age.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Structured coalescent analysis showed that 84% (74/88) of internal nodes were inferred to circulate within the Marshallese community with high posterior probability (\u22650.95). Transmission was predominantly unidirectional, with 29 estimated transmission events from Marshallese to non-Marshallese groups (95% HPD: 21-37) versus only 6 in the opposite direction (95% HPD: 0-14). The effective population size for non-Marshallese was approximately three times higher than for Marshallese, suggesting higher transmission rates within the Marshallese community.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structured coalescent analyses using BEAST are methodologically rigorous, with appropriate model specifications and multiple independent runs to assess convergence. The results are robust to different migration rate priors (Figure 5\u2014figure supplement 1) and to subsampling to equalize Marshallese and non-Marshallese tips (Figure 5\u2014figure supplement 2). The interpretation of effective population size differences is appropriately cited to Volz 2012 and the directional transmission pattern is strongly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Individuals with different vaccination statuses did not cluster together phylogenetically, suggesting no genetic difference between viruses infecting vaccinated versus unvaccinated individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic distribution of cases by vaccination status (Figure 7) clearly shows dispersion throughout the tree rather than clustering. This observation is straightforward and well-supported by the visual evidence. The inference that there is no genetic difference between viruses in different vaccination groups is reasonable, though the small number of not-up-to-date individuals limits statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C76",
+      "C101"
+    ],
+    "result": "The study concludes that contact networks and social networks are critical determinants of mumps transmission, and can be the primary risk factor for respiratory virus outbreaks even when vaccines are effective and widely used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the convergent evidence from multiple analyses showing sustained transmission within the Marshallese community despite high vaccination rates. The phylogenetic, epidemiological, and structured coalescent analyses all point to the importance of contact structure. However, this represents an inference from the data rather than direct measurement of contact networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C12",
+      "C18",
+      "C41",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors conclude that contact structures and historic disparities may leave populations at increased risk for respiratory virus disease even with effective, widely-used vaccines. They speculate that while waning immunity may promote outbreaks in young adults, outbreaks in younger age groups may be possible in high-contact settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data clearly show high vaccination rates among cases and disproportionate impact on the Marshallese community, the specific role of waning immunity versus contact structure cannot be definitively separated with the available data. The authors appropriately acknowledge this limitation, stating they were unable to evaluate the precise effects of age and vaccination status. The speculation about younger age groups in high-contact settings is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The manuscript provides extensive historical and social context about the Marshallese community, including US nuclear testing (1947-1986), health disparities, exclusion from Medicaid (1996-2020), larger household sizes (average 5.28 vs 2.52 for US), close-knit community structure, poor healthcare access, and hesitancy to seek care. These factors are proposed as potential contributors to increased mumps transmission intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The historical and demographic information is well-documented with appropriate citations to published literature and government sources. The authors appropriately consulted with Marshallese community health advocates to contextualize their findings. However, the specific contribution of each factor to mumps transmission is speculative and not directly measured. The authors appropriately present these as potential explanations rather than proven mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C103"
+    ],
+    "result": "The authors recommend that outbreak dose vaccination for high-risk groups may be especially effective for limiting mumps transmission in future outbreaks, noting that others have reported success with this approach and that CDC currently recommends this strategy. They also note that federal legislation restoring Medicaid access for Marshallese individuals was passed in December 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The recommendation for outbreak dose vaccination is appropriately supported by citations to previous successful implementations and current CDC guidelines. However, this represents a policy recommendation based on the study's findings rather than a tested intervention. The information about Medicaid legislation is factual and properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Mumps genomes accumulate mutations at a rate of 3.75 \u00d7 10\u207b\u2074 substitutions per site per year.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This evolutionary rate estimate is derived from root-to-tip regression analysis shown in Figure 2\u2014figure supplement 1, which is a standard approach for molecular clock estimation. The rate is consistent with previous mumps studies and is used appropriately throughout the phylogenetic analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors address potential sampling bias concerns, noting that Washington uses passive surveillance (which causes underreporting), that Marshallese individuals may be particularly underreported due to lower healthcare-seeking behavior, but that their sampling strategy and use of structured coalescent methods (which are robust to sampling differences) mitigate these concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion of sampling bias is thorough and appropriately cites relevant literature. The authors employed multiple strategies to address bias: uniform sampling across groups, structured coalescent methods shown to be robust to sampling differences, and sensitivity analyses with equal sampling. However, if Marshallese cases were substantially underreported, this would make the observed patterns even stronger, as the authors note.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors conclude that most introductions sparked short transmission chains, suggesting mumps did not transmit efficiently among the general Washington population, possibly due to more diffuse contact patterns. They note that mumps historically causes outbreaks in communities with strong contact patterns and dense housing, and that most 2016 US outbreaks were in university settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation that most introductions led to short chains is well-supported by the phylogenetic data in Figure 3. The comparison to historical outbreak patterns is appropriately cited. However, the explanation involving diffuse contact patterns is speculative and not directly measured. The authors appropriately present this as a hypothesis rather than a proven mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The authors note that SARS-CoV-2 continues to disproportionately impact populations in high-risk settings, including the Marshallese, and that vaccine distribution alone may not be sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by citations to relevant COVID-19 studies (Center et al., 2020; McElfish et al., 2021). However, this represents contextual information about the broader implications of the findings rather than a result of the current study.",
+    "result_type": "MINOR"
+  }
+]

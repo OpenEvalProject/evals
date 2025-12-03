@@ -1,0 +1,1764 @@
+{
+  "submission": {
+    "id": "ed1e4ff4-dccc-4c0c-99c3-c315d1248ba2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:01:47.755180Z",
+    "updated_at": "2025-12-03T06:01:47.755180Z"
+  },
+  "content": [
+    {
+      "id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "submission_id": "ed1e4ff4-dccc-4c0c-99c3-c315d1248ba2",
+      "content_type": "manuscript",
+      "content_text": "# Homo-oligomerization of the human adenosine A2A receptor is driven by the intrinsically disordered C-terminus\n\n## Authors\n\n- Khanh Dinh Quoc Nguyen<sup>1</sup> ([ORCID: 0000-0002-9367-499X](https://orcid.org/0000-0002-9367-499X))\n- Michael Vigers<sup>2</sup>\n- Eric Sefah<sup>3</sup>\n- Susanna Sepp\u00e4l\u00e4<sup>2</sup>\n- Jennifer Paige Hoover<sup>1</sup>\n- Nicole Star Schonenbach<sup>2</sup>\n- Blake Mertz<sup>3</sup>\n- Michelle Ann O'Malley<sup>2</sup> \u2020\n- Songi Han<sup>1</sup> ([ORCID: 0000-0001-6489-6246](https://orcid.org/0000-0001-6489-6246)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry and Biochemistry, University of California, Santa Barbara Santa Barbara United States\n2. Department of Chemical Engineering, University of California, Santa Barbara Santa Barbara United States\n3. C. Eugene Bennett Department of Chemistry, West Virginia University Morgantown United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nG protein-coupled receptors (GPCRs) have long been shown to exist as oligomers with functional properties distinct from those of the monomeric counterparts, but the driving factors of oligomerization remain relatively unexplored. Herein, we focus on the human adenosine A2A receptor (A2AR), a model GPCR that forms oligomers both in vitro and in vivo. Combining experimental and computational approaches, we discover that the intrinsically disordered C-terminus of A2AR drives receptor homo-oligomerization. The formation of A2AR oligomers declines progressively with the shortening of the C-terminus. Multiple interaction types are responsible for A2AR oligomerization, including disulfide linkages, hydrogen bonds, electrostatic interactions, and hydrophobic interactions. These interactions are enhanced by depletion interactions, giving rise to a tunable network of bonds that allow A2AR oligomers to adopt multiple interfaces. This study uncovers the disordered C-terminus as a prominent driving factor for the oligomerization of a GPCR, offering important insight into the effect of C-terminus modification on receptor oligomerization of A2AR and other GPCRs reconstituted in vitro for biophysical studies.\n\n## Introduction\n\nG protein-coupled receptors (GPCRs) have long been studied as monomeric units, but accumulating evidence demonstrates that these receptors can also form homo- and hetero-oligomers with far-reaching functional implications. The properties emerging from these oligomers can be distinct from those of the monomeric protomers in ligand binding (El-Asmar et al., 2005; Casad\u00f3-Anguera et al., 2016; Guitart et al., 2014; Yoshioka et al., 2001), G protein coupling (Crist\u00f3v\u00e3o-Ferreira et al., 2013; Cordom\u00ed et al., 2015; Gonz\u00e1lez-Maeso et al., 2007; Lee et al., 2004; Rashid et al., 2007), downstream signaling (Liu et al., 2016; Hilairet et al., 2003; Rozenfeld and Devi, 2007; Borroto-Escuela et al., 2010), and receptor internalization/desensitization (Ecke et al., 2008; Stanasila et al., 2003; Faklaris et al., 2015). With the vast number of genes identified in the human genome (Takeda et al., 2002), GPCRs are able to form a daunting number of combinations with unprecedented functional consequences. The existence of this intricate network of interactions among GPCRs presents major challenges and opportunities for the development of novel therapeutic approaches\u00a0(Dorsam and Gutkind, 2007; Farran, 2017; Schonenbach et al., 2015; Ferr\u00e9 et al., 2014; Br\u00e4uner-Osborne et al., 2007; George et al., 2002). Hence, it is crucial to identify the driving factors of GPCR oligomerization, such that this process can be more deliberately controlled to facilitate structure-function studies of GPCRs.\n\nGPCR oligomers with multiple interfaces\u00a0(Song et al., 2020; Ghosh et al., 2014; Periole et al., 2012; Fanelli and Felline, 2011; Liu et al., 2012) can give rise to myriad ways by which these complexes can be formed and their functions modulated. In the crystal structure of the turkey \u03b21-adrenergic receptor (\u03b21AR), the receptor appears to dimerize via two different interfaces, one formed via TM4/TM5 (transmembrane domains 4/5) and the other via TM1/TM2/H8 (helix 8) contacts\u00a0(Huang et al., 2013). Similarly, in the crystal structure of the antagonist-bound \u03bc-opioid receptor (\u03bc-OR), the protomers also dimerize via two interfaces; however, only one of them is predicted to induce a steric hindrance that prevents activation of both protomers\u00a0(Manglik et al., 2012), hinting at interface-specific functional consequences. A recent computational study predicted that the adenosine A2A receptor (A2AR) forms homodimers via three different interfaces and that the resulting dimeric architectures can modulate receptor function in different or even opposite ways\u00a0(Fanelli and Felline, 2011). All the above-mentioned interfaces are symmetric, meaning that the two protomers are in face-to-face orientations, hence forming strictly dimers. Asymmetric interfaces, reported in M3 muscarinic receptor\u00a0(Thorsen et al., 2014), rhodopsin\u00a0(Fotiadis et al., 2006; Fotiadis et al., 2003; Liang et al., 2003), and opsin\u00a0(Liang et al., 2003), are in contrast formed with the protomers positioning face-to-back, possibly enabling the association of higher-order oligomers.\n\nNot only do GPCRs adopt multiple oligomeric interfaces, but various studies also suggest that these interfaces may dynamically rearrange to activate receptor function\u00a0(Xue et al., 2015). According to a recent computational study, A2AR oligomers can adopt eight different interfaces that interconvert when the receptor is activated or when there are changes in the local membrane environment\u00a0(Song et al., 2020). Similarly, a recent study that combined experimental and computational data proposed that neurotensin receptor 1 (NTS1R) dimer is formed by \u2018rolling\u2019 interfaces that coexist and interconvert when the receptor is activated\u00a0(Dijkman et al., 2018). Clearly, meaningful functional studies of GPCRs require exploring their dynamic, heterogeneous oligomeric interfaces.\n\nThe variable nature of GPCR oligomeric interfaces suggests that protomers of GPCR oligomers may be connected by tunable interactions. In this study, we explore the role of an intrinsically disordered region (IDR) of a model GPCR that could engage in diverse non-covalent interactions, such as electrostatic interactions, hydrogen bonds, or hydrophobic interactions. These non-covalent interactions are readily tunable by external factors, such as pH, salts, and solutes, and further can be entropically enhanced by depletion interactions\u00a0(Asakura and Oosawa, 1958; Yodh et al., 2001; Marenduzzo et al., 2006), leading to structure formation and assembly\u00a0(Milles et al., 2018; Wicky et al., 2017; Szasz et al., 2011; Goldenberg and Argyle, 2014; Qin and Zhou, 2013; Cino et al., 2012; Soranno et al., 2014; Zosel et al., 2020). In a system where large protein molecules and small solute particles typically coexist in solution, assembly of the protein molecules causes their excluded volumes to overlap and the solvent volume accessible to the non-protein solutes to increase, raising the entropy of the system. The type and concentration of solutes or ions can also remove water from the hydration shell around the proteins, further enhancing entropy-driven protein-protein association in what is known as the hydrophobic effect\u00a0(Tanford, 1980; Tanford, 1978; Pratt and Chandler, 1977; van der Vegt et al., 2017). This phenomenon is applied in the precipitation of proteins upon addition of so-called salting-out ions according to the Hofmeister series\u00a0(Hofmeister, 1888; Hyde et al., 2017; Yang, 2009). The ability of IDRs to readily engage in these non-covalent interactions motivates our focus on the potential role of IDRs in driving GPCR oligomerization.\n\nThe cytosolic carboxy (C-)terminus of GPCRs is usually an IDR\u00a0(Tovo-Rodrigues et al., 2014; Jaakola et al., 2005). Varying in length among different GPCRs, the C-terminus is commonly removed in structural studies of GPCRs to enhance receptor stability and conformational homogeneity. A striking example is A2AR, a model GPCR with a particularly long, 122-residue, C-terminus that is truncated in all published structural biology studies\u00a0(Song et al., 2020; Fanelli and Felline, 2011; Garc\u00eda-Nafr\u00eda et al., 2018; Sun et al., 2017; Lebon et al., 2011; Xu et al., 2011; Dor\u00e9 et al., 2011; Jaakola et al., 2008; Carpenter et al., 2016; Hino et al., 2012). However, evidence is accumulating that such truncations\u2014shown to affect GPCR downstream signaling\u00a0(Koretz et al., 2021; Navarro et al., 2018a; Jain and McGraw, 2020)\u2014may abolish receptor oligomerization\u00a0(Schonenbach et al., 2016; Svetlana and Devi, 1997). A study using immunofluorescence has demonstrated that C-terminally truncated A2AR does not show protein aggregation or clustering on the cell surface, a process readily observed in the wild-type form\u00a0(Burgue\u00f1o et al., 2003). Our recent study employing a tandem three-step chromatography approach uncovered the impact of a single-residue substitution of a C-terminal cysteine, C394S, in reducing the receptor homo-oligomerization in vitro\u00a0(Schonenbach et al., 2016). In the context of heteromerization, mass spectrometry and pull-down experiments have demonstrated that A2AR-D2R dimerization occurs via direct electrostatic interactions between the C-terminus of A2AR and the third intracellular loop of D2R\u00a0(Ciruela et al., 2004). These results all suggest that the C-terminus may participate in A2AR oligomer formation. However, no studies to date have directly and systematically investigated the role of the C-terminus, or any IDRs, in GPCR oligomerization.\n\nThis study focuses on the homo-oligomerization of the human adenosine A2AR, a model GPCR, and seeks to address (i) whether the C-terminus engages in A2AR oligomerization, and if so, (ii) whether the C-terminus forms multiple oligomeric interfaces. We use size-exclusion chromatography (SEC) to assess the oligomerization levels of A2AR variants with strategic C-terminal modifications: mutations of a cysteine residue C394 and a cluster of charged residues 355ERR357, as well as systematic truncations at eight different sites along its length. We complemented our experimental study with an independent molecular dynamics (MD) simulation study of A2AR dimers of five C-terminally truncated A2AR variants designed to mirror the experimental constructs. We furthermore examined the oligomerization level of select C-terminally modified A2AR variants under conditions of varying ionic strength ranging from 0.15 to 0.95 M. To verify whether the A2AR oligomer populations are thermodynamic products, we performed a series of SEC analyses on SEC-separated monomer and dimer/oligomer populations to observe their repopulation into monomer and dimer/oligomer populations. Finally, to test whether the C-termini directly and independently promote A2AR oligomerization, we recombinantly expressed the entire A2AR C-terminal segment sans the transmembrane portion of the receptor and investigated its solubility and assembly properties with increasing ion concentration and temperature. This is the first study designed to uncover the role of the intrinsically disordered C-terminus on the oligomerization of a GPCR.\n\n## Results\n\nThis study systematically investigates the role of the C-terminus on A2AR oligomerization and the nature of the involved interactions through strategic mutations and truncations at the C-terminus as well as modulation of the ionic strength of solvent. All experiments were done at 4\u00b0C unless stated otherwise. The experimental assessment of A2AR oligomerization relies on SEC analysis.\n\n### SEC quantifies A2AR oligomerization\n\nWe performed SEC analysis on a mixture of ligand-active A2AR purified from a custom synthesized antagonist affinity column (Figure 1\u2014figure supplement 1A). Distinct oligomeric species were separated and eluted in the following order: high-molecular-weight (HMW) oligomer, dimer, and monomer (Figure 1 and Figure 1\u2014figure supplement 1B). This peak assignment has been verified with SEC-MALS (multi-angle light scattering) experiments, as detailed in a previous publication\u00a0(Schonenbach et al., 2016). The population of each oligomeric species was quantified as the integral of each Gaussian from a multiple-Gaussian curve fit of the SEC signal. The reported standard errors were calculated from the variance of the fit that do not correspond to experimental errors (see Supplementary file 1 and Figure 1\u2014figure supplement 2 for SEC data corresponding to all A2AR variants in this study). As this study sought to identify the factors that promote A2AR oligomerization, the populations with oligomeric interfaces (i.e., dimer and HMW oligomer) were compared with those without such interfaces (i.e., monomer). Hence, the populations of the HMW oligomer and dimer were expressed relative to the monomer population in arbitrary units as monomer-equivalent concentration ratios, henceforth referred to as population levels (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig1-v2.jpg)\n\n**Figure 1.:** The SEC data is recorded every second as absorbance at 280 nm. The baseline is corrected to ensure uniform fitting and integration across the peaks. The areas under the curve, resulting from a multiple-Gaussian curve fit, express the population of each oligomeric species. The reported standard errors of integration are within a 95% confidence interval and are calculated from the variance of the fit, not experimental errors. The levels of high-molecular-weight oligomer and dimer are expressed relative to the monomeric population in arbitrary units. A representative calculation defining the oligomer levels is given in the box.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative total protein stain (upper panel) and western blot (lower panel) of A2AR-WT during purification.\u00a0Positive ([+] ctrl) and negative ([\u2013] ctrl) controls consist of 5 OD cell lysate of Saccharomyces cerevisiae BJ5464 cells expressing and not expressing A2AR WT, respectively. \u2018IMAC FT\u2019 indicates the flow-through from IMAC step. \u2018XAC inactive\u2019 and \u2018XAC active\u2019 indicate the fractions that do not and do bind to XAC during the ligand-affinity chromatography step. (B) Representative western blot of A2AR-WT during size-exclusion chromatography\u00a0(SEC) separation. The fractions are matched to the distinct oligomeric peaks in the SEC chromatogram. Each lane on the blot is from 0.5 mL fractions eluted from a Superdex 200 10/300 GL (GE Healthcare) column. MagicMark protein ladder (LC5602) is used as the molecular weight standard.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Curve fitting using OriginLab of all A2AR variants used in the main text of this study, listed by the order they appear.\u00a0By default, each oligomeric peak is fitted with one curve using Gaussian distribution and displayed by different color shades, with the high-molecular-weight\u00a0(HMW) oligomer eluted first (dark orange), followed by the dimer (lighter orange), followed by the monomer (lightest orange). However, the HMW oligomer peak in some cases cannot be fitted with one curve and thus is fitted with two curves instead. This discrepancy can be explained by variation in HMW oligomerization order among the variants. The identity of each peak is confirmed with western blotting. The value and error from the curve fitting of each peak are given in Supplementary file 1. (B) Data distribution of all variants used in this study in comparison to five experimental replicates of A2AR-WT. The C-terminally truncated mutants are represented by different shades of green in increasing darkness corresponding to the increased length of the C-terminus, with the lightest shade representing the mutant with the shortest C-terminus (A316\u0394C) and the darkest shade for the mutant with the longest C-terminus (P395\u0394C). The levels of dimer and HMW oligomer are expressed relative to the monomeric population in arbitrary unit, with reported errors calculated from the variance of the fit, not experimental variation. There are significant variations in the dimer and HMW oligomer levels among the WT replicates, stemming from experimental errors. These variations are mitigated when the two parameters are added as the data distribution becomes more uniform. Also, the oligomerization levels of the WT replicates are consistently higher than the mutated and truncated variants.\n\n### C-terminal amino acid residue C394 contributes to A2AR oligomerization\n\nTo investigate whether the C-terminus of A2AR is involved in receptor oligomerization, we first examined the role of residue C394 as a previous study demonstrated that the mutation C394S dramatically reduced A2AR oligomer levels\u00a0(Schonenbach et al., 2016). The C394S mutation was replicated in our experiments, alongside other amino acid substitutions for the cysteine, namely alanine, leucine, methionine, or valine, generating five A2AR-C394X variants. The HMW oligomer and dimer levels of A2AR wild-type (WT) were compared with those of the A2AR-C394X variants. We found that the dimer level of A2AR-WT was significantly higher than that of the A2AR-C394X variants (WT: 1.14; C394X: 0.24\u20130.57; Figure 2A). A similar result, though less pronounced, was observed when the HMW oligomer and dimer levels were considered together (WT: 1.34; C394X: 0.59\u20131.21; Figure 2A). This suggests that residue C394 plays a role in A2AR oligomerization, and even more prominently in A2AR dimerization.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig2-v2.jpg)\n\n**Figure 2.:** (A) The effect of C394X substitutions on A2AR oligomerization. The levels of dimer (dark colors) and high-molecular-weight\u00a0oligomer (light colors) are expressed relative to the monomeric population in arbitrary units, with reported errors calculated from the variance of the fit, not experimental variation. (B) Line densitometry of western blot bands on size-exclusion chromatography\u00a0(SEC)-separated dimeric populations of A2AR-WT and Q372\u0394C with and without 5 mM TCEP. The level of dimer is expressed relative to the monomeric population in arbitrary units similarly to the SEC analysis. MagicMark protein ladder (LC5602) is used as the molecular weight standard.\n\nTo test whether residue C394 stabilizes A2AR dimerization by forming disulfide linkages, we incubated the SEC-separated dimers of A2AR-WT and A2AR-Q372\u0394C with 5 mM of the reducing agent TCEP, followed by SDS-PAGE and western blotting. The population of each species was determined as the area under the densitometric trace. The dimer level was then expressed as monomer-equivalent concentration ratios in a manner similar to that of the SEC experiment described above. Upon incubation with TCEP, the dimer level of the A2AR-WT sample decreased from 1.14 to 0.51 (Figure 2B). This indicates that disulfide bond formation via residue C394 is one possible mechanism for A2AR dimerization. Interestingly, the dimer level of the A2AR-Q372\u0394C sample also decreased from 0.68 to 0.22 (Figure 2B). This suggests that there may exist other inter-A2AR disulfide bonds that do not involve residue C394. Still, in both cases, a clearly visible population of A2AR dimer persists, even after reduction of disulfide bonds via TCEP (Figure 2B), suggesting that there must be additional interfacial sites that help drive A2AR dimer/oligomerization.\n\n### C-terminus truncation systematically reduces A2AR oligomerization\n\nTo determine which interfacial sites in the C-terminus other than the disulfide-bonded cysteines drive A2AR dimer/oligomerization, we carried out systematic truncations at eight sites along the C-terminus (A316, V334, G344, G349, P354, N359, Q372, and P395), generating eight A2AR-\u0394C variants (Figure 3A). The A2AR-A316\u0394C variant corresponds to the removal of the entire disordered C-terminal region and is used in all published structural studies of A2AR (Martynowycz et al., 2020; Song et al., 2020; Garc\u00eda-Nafr\u00eda et al., 2018; Sun et al., 2017; Carpenter et al., 2016; Hino et al., 2012; Xu et al., 2011; Lebon et al., 2011; Dor\u00e9 et al., 2011; Jaakola et al., 2008; Fanelli and Felline, 2011). Using the SEC analysis described earlier (Figure 1), we evaluated the HMW oligomer and dimer levels of the A2AR-\u0394C variants relative to that of the A2AR full-length-wild-type (FL-WT) control. Both the dimer and the total oligomer levels of A2AR decreased progressively with the shortening of the C-terminus, with almost no oligomerization detected upon complete truncation of the C-terminus at site A316 (Figure 3B). This result shows that the C-terminus drives A2AR oligomerization, with multiple potential interaction sites positioned along much of its length.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig3-v2.jpg)\n\n**Figure 3.:** (A) Depiction of where the truncation points are located on the C-terminus, with region 354\u2013359 highlighted (in black) showing critical residues. (B) The levels of dimer and high-molecular-weight\u00a0(HMW) oligomer are expressed relative to the monomeric population as an arbitrary unit and plotted against the residue number of the truncation sites, with reported errors calculated from the variance of the fit, not experimental variation. Region 354\u2013359 is emphasized (in black and gray) due to a drastic change in the dimer and HMW oligomer levels. (C) The dependence of A2AR oligomerization on three consecutive charged residues 355ERR357. The substitution of residues 355ERR357 to 355AAA357 is referred to as the ERR:AAA mutations. The levels of dimer and HMW oligomer are expressed relative to the monomeric population as an arbitrary unit, with reported errors calculated from the variance of the fit, not experimental variation.\n\nInterestingly, there occurred a dramatic decrease in the dimer level between the N359 and P354 truncation sites, from a value of 0.81 to 0.19, respectively (Figure 3B). A similar result, though less pronounced, was observed on the total oligomer level, with a decrease from 1.09 to 0.62 for the N359 and P354 truncation sites, respectively (Figure 3B). Clearly, the C-terminal segment encompassing residues 354\u2013359 (highlighted in black in Figure 3A) is a key constituent of the A2AR oligomeric interface.\n\nSince segment 354\u2013359 contains three consecutive charged residues (355ERR357; Figure 3A), which could be involved in electrostatic interactions, we hypothesized that this 355ERR357 cluster could strengthen inter-protomer A2AR-A2AR association. To test this hypothesis, residues 355ERR357 were substituted by 355AAA357 on A2AR-FL-WT and A2AR-N359\u0394C to generate A2AR-ERR:AAA variants (Figure 3C). We then compared the HMW oligomer and dimer levels of the resulting variants with controls (same A2AR variants but without the ERR:AAA mutations). We found that the ERR:AAA mutations had varied effects on the dimer level: decreasing for A2AR-FL-WT (ctrl: 0.49; ERR:AAA: 0.29) but increasing for A2AR-N359\u0394C (ctrl: 0.33; ERR:AAA: 0.48) (Figure 3C). In contrast, the ERR:AAA mutations reduced the HMW oligomer level of both A2AR-FL-WT (ctrl: 0.88; ERR:AAA: 0.66) and A2AR-N359\u0394C (ctrl: 0.68; ERR:AAA: 0.38) (Figure 3C). Consistently, the ERR:AAA mutation lowered the total oligomer level of both A2AR-FL-WT (ctrl: 1.37; ERR:AAA: 0.94) and A2AR-N359\u0394C (ctrl: 1.01; ERR:AAA: 0.85) (Figure 3C). These results suggest that the charged residues 355ERR357 participate in A2AR oligomerization, with a greater effect in the context of a longer C-terminus and for forming higher-order oligomers. The question then arises as to what types of interactions are formed along the C-terminus that help stabilize A2AR oligomerization.\n\n### C-terminus truncation disrupts complex network of non-bonded interactions necessary for A2AR dimerization\n\nGiven that the structure of A2AR dimers or oligomers is unknown, we next used MD simulations to seek molecular-level insights into the role of the C-terminus in driving A2AR dimerization and to gain an understanding of what types of interactions and sites may be involved in this process. First, to explore A2AR dimeric interface, we performed coarse-grained (CG) MD simulations using the Martini force field (see Materials and methods for details). The Martini force field can access the length and time scales relevant to membrane protein oligomerization, albeit at the expense of atomic-level details. We carried out a series of CGMD simulations on five A2AR-\u0394C variants designed to mirror the experiments by systematic truncation at five sites along the C-terminus (A316, V334, P354, N359, and C394). Our results revealed that A2AR dimers were formed with multiple interfaces, all involving the C-terminus only (Figure 4A). The transmembrane heptahelical bundles were not a part of the dimeric interfaces as they all showed distances greater than the minimum distance criterion of 7 \u00c5 for interacting helices. The vast majority of A2AR dimers were symmetric, with the C-termini of the protomers directly interacting with each other. A smaller fraction of the dimers had asymmetric orientations, with the C-terminus of one protomer interacting with other parts of the other protomer, such as ICL2 (the second intracellular loop) and ICL3 (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig4-v2.jpg)\n\n**Figure 4.:** (A) Dimer configurations from cluster analysis in GROMACS of the 394-residue variant identify two major clusters involving either (1) the C-terminus of one protomer and the C-terminus, ICL2, and ICL3 of the second protomer or (2) the C-terminus of one protomer and ICL2, ICL3, and ECL2 of the second protomer. Spheres: residues forming intermolecular electrostatic contacts. (B) Average number of residues that form electrostatic contacts as a function of sequence length of A2AR. (C) Average number of residues that form hydrogen bonds as a function of sequence length of A2AR. The criteria for designating inter-A2AR contacts as electrostatic interactions or hydrogen bonds are described in detail in Materials and methods.\n\nOur observation of multiple A2AR oligomeric interfaces, which is consistent with previous studies\u00a0(Fanelli and Felline, 2011; Song et al., 2020), suggests that tunable, non-covalent intermolecular interactions may be involved in receptor dimerization. We first dissected two key non-covalent interaction types: electrostatic and hydrogen bonding interactions. Electrostatic interactions were calculated from CGMD simulations, while hydrogen bonds were quantified from atomistic MD simulation as the CG model merges all hydrogens into a CG bead and hence cannot report on hydrogen bonds. This analysis was performed on the symmetric dimers as they constituted the more dominant population. With the least truncated A2AR variant containing the longest C-terminus, A2AR-C394\u0394C, we observed an average of 15.9 electrostatic contacts (Figure 4B) and 26.7 hydrogen bonds (Figure 4C) between the C-termini of the protomers. This result shows that both electrostatic interactions and hydrogen bonds can play important roles in A2AR dimer formation.\n\nUpon further C-terminus truncation, the average number of both electrostatic contacts and hydrogen bonds involving C-terminal residues progressively declined, respectively reaching 5.4 and 6.0 for A2AR-A316\u0394C (in which the disordered region of the C-terminus is removed) (Figure 4B, C). This result is consistent with the experimental result, which demonstrated a progressive decrease of A2AR oligomerization with the shortening of the C-terminus (Figure 3B). Interestingly, upon systematic truncation of the C-terminal segment 335\u2013394, we observed in segment 291\u2013334 a steady decrease in the average number of electrostatic contacts, from 10.4 to 7.4 (Figure 4B). This trend was even more pronounced with hydrogen bonding contacts involving segment 291\u2013334 decreasing drastically from 21.0 to 7.0 as segment 335\u2013394 was gradually removed (Figure 4C). This observation that truncation of a C-terminal segment reduces inter-A2AR contacts elsewhere along the C-terminus indicates that an allosteric mechanism of dimerization exists, in which an extended C-terminus of A2AR stabilizes inter-A2AR interactions near the heptahelical bundles of the dimeric complex. These results demonstrate that A2AR dimers can be formed via multiple interfaces and stabilized by an allosteric network of electrostatic interactions and hydrogen bonds along much of its C-terminus.\n\n### Ionic strength modulates oligomerization of C-terminally truncated A2AR variants\n\nSo far, we have demonstrated that the C-terminus clearly plays a role in forming A2AR oligomeric interfaces. However, it remains unclear what the driving factors of A2AR oligomerization are and whether the oligomeric populations are thermodynamic products. The variable nature of A2AR oligomeric interfaces suggests that the main driving forces must be non-covalent interactions, such as electrostatic interactions and hydrogen bonds. Modulating the solvent ionic strength is an effective method to identify the types of non-covalent interaction(s) at play. Specifically, with increasing ionic strength, electrostatic interactions are weakened (based on Debye\u2013H\u00fcckel theory, most electrostatic bonds at a distance greater than 5 \u00c5 are screened out at an ionic strength of 0.34 M at 4\u00b0C) and depletion interactions are enhanced with salting-out salts, while hydrogen bonds remain relatively impervious. For this reason, we subjected various A2AR variants (FL-WT, FL-ERR:AAA, N359\u0394C, and V334\u0394C) to ionic strength ranging from 0.15 to 0.95 M by adding NaCl (buffer composition shown in Materials and methods). The HMW oligomer and dimer levels of the four A2AR variants were determined and plotted as a function of ionic strengths.\n\nThe low ionic strength of 0.15 M should not affect hydrogen bonds or electrostatic interactions if present. We found that the dimer and total oligomer levels of all four variants were near zero (Figure 5). This is a striking experimental observation: despite being shown to play a role in stabilizing A2AR dimers according to our MD simulations (Figure 4B, C), we can conclude that electrostatic and hydrogen-bonding interactions are not the dominant driving force for A2AR association. The question remains whether depletion interactions could facilitate A2AR oligomerization.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig5-v2.jpg)\n\n**Figure 5.:** The levels of\u00a0(A) dimer and\u00a0(B) high-molecular-weight oligomer\u00a0+\u00a0dimer are expressed relative to the monomeric population as an arbitrary unit and plotted against ionic strength, with reported errors calculated from the variance of the fit, not experimental variation. NaCl concentration is varied to achieve ionic strengths of 0.15, 0.45, and 0.95 M.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Size-exclusion chromatography\u00a0(SEC) chromatograms of the consecutive rounds of SEC performed on A2AR-WT and Q372\u0394C. The first rounds of SEC are to separate the dimer/oligomer population and the monomer population, while the second rounds of SEC are performed on these SEC-separated populations to assess their stability and reversibility. The total oligomer level is expressed relative to the monomeric population in arbitrary units. (B) Energy diagram depicting A2AR oligomerization progress. The monomer needs to overcome an activation barrier (EA), driven by depletion interactions, to form the dimer/oligomer. Once formed, the dimer/oligomer populations are kinetically trapped by disulfide linkages.\n\nAt higher ionic strengths of 0.45 M and 0.95 M, the dimer and total oligomer levels of A2AR-V334\u0394C still remained near zero (Figure 5). In contrast, we observed a progressive and significant increase in the dimer and total oligomer levels of A2AR-FL-WT with increasing ionic strength (Figure 5). This result indicates that\u00a0A2AR oligomerization is driven by depletion interactions enhanced with increasing ionic strength and that these interactions must involve the C-terminal segment after residue V334.\n\nUpon closer examination, we recognize that at the very high ionic strength of 0.95 M the increase in the dimer and total oligomer levels was robust for A2AR-FL-WT, but less pronounced for A2AR-FL-ERR:AAA (Figure 5). Furthermore, this high ionic strength even had an opposite effect on A2AR-N359\u0394C, with both its dimer and total oligomer levels abolished (Figure 5). These results indicate that the charged cluster 355ERR357 and the C-terminal segment after residue N359 promote the depletion interactions to drive A2AR oligomerization. Taken together, we can conclude that A2AR oligomerization is more robust when the C-terminus is fully present and the ionic strength higher, suggesting that depletion interactions via the C-terminus are strong driving factors of A2AR oligomerization.\n\nThe discussion of depletion interactions as driving factors assumes that A2AR dimer/oligomer populations are thermodynamic products at equilibrium with the A2AR monomer population. However, some of the A2AR dimer/oligomer populations may be kinetically stabilized. To address this question, we tested the stability and reversibility of A2AR oligomers by performing a second round of SEC on the monomer and dimer/oligomer populations of the A2AR-WT and Q372\u0394C variants. We found that the SEC-separated monomers repopulate into dimer/oligomer, with the total oligomer level after redistribution comparable with that of the initial samples for both A2AR-WT (initial: 2.87; redistributed: 1.60) and Q372\u0394C (initial: 1.49; redistributed: 1.40) (Figure 5\u2014figure supplement 1A). This observation indicates that A2AR oligomer is a thermodynamic product with a lower free energy compared with that of the monomer (Figure 5\u2014figure supplement 1B). This agrees with the results we have shown in Supplementary file 1 that the oligomer levels of A2AR-WT are consistent among replicates (1.34\u20132.05) and that A2AR oligomerization can be modulated with ionic strengths via depletion interactions (Figure 5).\n\nIn contrast, the SEC-separated dimer/oligomer populations do not repopulate to form monomers (Figure 5\u2014figure supplement 1A). This observation is consistent with a published study of ours on A2AR dimers\u00a0(Schonenbach et al., 2016), indicating that once the oligomers are formed, some are kinetically trapped and thus cannot redistribute into monomers. We believe that disulfide linkages are likely candidates to kinetically stabilize A2AR oligomers, as demonstrated by their redistribution into monomers only in the presence of a reducing agent (Figure 2B).\n\nTaken together, we suggest that A2AR oligomerization is a thermodynamic process (Figure 5\u2014figure supplement 1B), with the free energy of the dimer/oligomers lowered by depletion forces that hence increase their population relative to that of the monomers (there always exists a distribution between the two). Once formed, the redistributed dimer/oligomer populations may be kinetically stabilized by disulfide linkages. The question then arises whether inter-A2AR interactions are primarily a result of the C-termini directly interacting with one another. This question motivated us to carry out a study focused on investigating the behavior of A2AR C-terminus sans the transmembrane domains.\n\n### The isolated A2AR C-terminus is prone to aggregation\n\nTo test whether A2AR oligomerization is driven by direct depletion interactions among the C-termini of the protomers, we assayed the solubility and assembly properties of the stand-alone A2AR C-terminus\u2014an intrinsically disordered peptide\u2014sans the upstream transmembrane regions. Since depletion interactions can be manifested via the hydrophobic effect\u00a0(van der Vegt et al., 2017), we examined whether this effect can also drive the assembly of the A2AR C-terminal peptides.\n\nIt is an active debate whether the hydrophobic effect can be promoted or suppressed by ions with salting-out or salting-in tendency, respectively\u00a0(Thomas and Elcock, 2007; Graziano, 2010; Zangi et al., 2007; Grover and Ryall, 2005). We increased the solvent ionic strength using either sodium (salting-out) or guanidinium (salting-in) ions and assessed the aggregation propensity of the C-terminal peptides using UV-Vis absorption at 450 nm, which indicates the turbidity of the solution. We first observed the behavior of the C-terminus with increasing salting-out NaCl concentrations. At NaCl concentrations below 1 M, the peptide was dominantly soluble, despite showing slight aggregation at NaCl concentrations between 250\u00a0and\u00a0500 mM (Figure 6A). At NaCl concentrations above 1 M, A2AR C-terminal peptides strongly associated into insoluble aggregates (Figure 6A). Consistent with the observations made with the intact receptor (Figure 5), the A2AR C-terminus showed the tendency to progressively associate and eventually precipitate with increasing ionic strengths, suggesting that depletion interactions drive the association and precipitation of the peptides. We next observed the behavior of the C-terminus with increasing concentrations of guanidine hydrochloride (GdnHCl), which contains salting-in cations that do not induce precipitation and instead facilitate the solubilization of proteins\u00a0(Heyda et al., 2017; Baldwin, 1996). Our results demonstrated that the A2AR C-terminus incubated in 4 M GdnHCl showed no aggregation propensity (Figure 6A), validating our expectation that salting-in salts do not enhance depletion interactions. These observations demonstrate that the C-terminal peptide in and of itself, outside the context of the lipid membrane and TM domain, can directly interact with other C-terminal peptides to form self-aggregates in the presence of ions, and presumably solutes, that have salting-out effects.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig6-v2.jpg)\n\n**Figure 6.:** (A) Absorbance at 450 nm of the A2AR C-terminus in solution, with NaCl and GdnHCl concentrations varied to achieve ionic strengths 0\u20134 M. Inset: the solution at ionic strength 4 M achieved with NaCl. The Hofmeister series is provided to show the ability of cations to salt-out (blue) or salt-in (red) proteins. (B) SYPRO orange fluorescence of solutions containing the A2AR C-terminus as the temperature was varied from 20\u00b0C to 70\u00b0C (gray). The change in fluorescence, measured in relative fluorescence unit (RFU), was calculated by taking the first derivative of the fluorescence curve (black).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Hydropathy plot against A2AR residue number showing the hydrophobicity of A2AR C-terminus, scored with ProtScale using method described by Kyte and Doolittle, window size of 3.\u00a0Positive scores represent hydrophobicity and negative scores hydrophilicity.\u00a0(B) The non-polar residues in A2AR C-terminus. (C) Average number of residues that form non-polar contacts as a function of sequence length of A2AR. The criteria for designating inter-A2AR contacts as non-polar interactions are described in detail in Materials and methods.\n\nAttractive hydrophobic interactions among the hydrophobic residues are further enhanced when the water that solvate the protein surface have more favorable interactions with other water molecules, ions, or solutes than with the protein surface, here the truncated C-terminus\u00a0(Larsen et al., 1998; Tsai and Nussinov, 1997; Tsai et al., 1997). We explored the possible contribution of hydrophobic interactions to the aggregation of the C-terminal peptides using both experimental and computational approaches. Using differential scanning fluorimetry (DSF), we gradually increased the temperature to melt the C-terminal peptides, exposing any previously buried hydrophobic residues (Figure 6\u2014figure supplement 1A, B), which then bound to the SYPRO orange fluorophore, resulting in an increase in fluorescence signal. Our results showed that as the temperature increased, a steady rise in fluorescence was observed (Figure 6B), indicating that multiple hydrophobic residues were gradually exposed to the SYPRO dye. However, at approximately 65\u00b0C, the melt peak signal was abruptly quenched (Figure 6B), indicating that the hydrophobic residues were no longer exposed to the dye. This observation suggests that, at 65\u00b0C, enough hydrophobic residues in the C-terminal peptides become exposed such that they collapse on one another (thus expelling the bound dye molecules), resulting in aggregation. This experimental result is further supported by our CGMD computational analysis of C-terminal non-polar contacts found in A2AR symmetrical dimers (Figure 6\u2014figure supplement 1C). Specifically, we observed an average of 60 non-polar contacts for A2AR-C394\u0394C. This number progressively declined upon further C-terminus truncation, reaching 15 for A2AR-A316\u0394C. Clearly, the hydrophobic effect can cause A2AR C-terminal peptides to directly associate. These results demonstrate that A2AR oligomer formation can be driven by depletion interactions among the C-termini of the protomers by non-polar contacts.\n\n## Discussion\n\nThe key finding of this study is that the C-terminus of A2AR, removed in all previously published structural studies, is\u00a0directly responsible for receptor oligomerization. Using a combination of experimental and computational approaches, we demonstrate that the C-terminus stabilizes A2AR oligomers via a combination of disulfide linkages, hydrogen bonds, electrostatic interactions, and hydrophobic interactions. This diverse combination of interactions is greatly enhanced by depletion interactions, forming a network of malleable bonds that drives A2AR oligomerization and gives rise to multiple oligomeric interfaces.\n\nIntermolecular disulfide linkages play a role in A2AR oligomerization, potentially by kinetically trapping the receptor oligomers. Among the seven cysteines that do not form intramolecular disulfide bonds\u00a0(De Filippo et al., 2016; Naranjo et al., 2015; O'Malley et al., 2010), residue C394 is largely involved in stabilizing A2AR oligomers (Figure 2A). Indeed, this cysteine is highly conserved and a C-terminal cysteine is almost always present in A2AR homologs\u00a0(P\u00e1ndy-Szekeres et al., 2018), suggesting that it may serve an important role in vivo. There may also exist inter-A2AR disulfide linkages that do not involve residue C394 at all as the SEC-separated dimer/oligomer populations of A2AR-Q372\u0394C, which lack residue C394, were still resistant to TCEP reduction (Figure 2B) and appear to be kinetically trapped (Figure 5\u2014figure supplement 1). Such disulfide linkages may involve other cysteines in the hydrophobic core of A2AR, namely C281.54, C823.30, C1284.49, C1855.46, C2456.47, or C2546.56. Many examples exist where disulfide linkages help drive GPCR oligomerization, including the CaR-mGluR1 heterodimer\u00a0(Gama et al., 2001), homodimers of mGluR5\u00a0(Romano et al., 1996), M3R\u00a0(Zeng and Wess, 1999), V2R\u00a0(Zhu and Wess, 1998), 5-HT4R\u00a0(Berthouze et al., 2007) and 5-HT1DR\u00a0(Lee et al., 2000), and even higher-order oligomers of D2R\u00a0(Guo et al., 2008). Although unconventional cytoplasmic disulfide bonds have been reported\u00a0(Saaranen and Ruddock, 2013; Locker and Griffiths, 1999), no study has shown how such linkages would be formed in vivo as the cytoplasm lacks the conditions and machinery required for disulfide bond formation\u00a0(Gaut and Hendershot, 1993; Hwang et al., 1992; Helenius et al., 1992; Creighton et al., 1980).\n\nThe electrostatic interactions that stabilize A2AR oligomer formation come from multiple sites along the C-terminus. From a representative snapshot of a A2AR-C394\u0394C dimer from our MD simulations (Figure 7A), we could visualize not only the intermolecular interactions calculated from the CGMD simulations (Figure 4B), but also intramolecular salt bridges. In particular, the 355ERR357 cluster of charged residues lies distal from the dimeric interface but still forms several salt bridges (Figure 7A, inset). This observation is supported by our experimental results showing that substituting this charged cluster with alanines reduces the total A2AR oligomer levels (Figure 3C). However, it is unclear how such salt bridges involving this 355ERR357 cluster are enhanced by depletion interactions (Figure 5) as electrostatic interactions are usually screened out at high ionic strengths. In our MD simulations, we also observed networks of salt bridges along the dimeric interface, for example, between K315 of one monomer and D382 and E384 of the other monomer (Figure 7A, inset). The innate flexibility of the C-terminus could facilitate the formation of such salt bridges, which then help stabilize A2AR dimers.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig7-v2.jpg)\n\n**Figure 7.:** (A) Representative snapshot of A2AR-C394\u0394C dimers shows salt bridge formation between a sample trajectory.\u00a0The insets are closeups of the salt bridges, which can be both intra- and intermolecular. The last inset shows a network of salt bridges with the charged cluster 355ERR357 involved. (B) Helical tilt angles for TM7 helix in A2AR as a function of protein length. Systematic truncations of the C-terminus lead to rearrangement of the heptahelical bundle. The participation of the C-terminus in A2AR dimerization increases the tilting of the TM7 domain, which is in closest proximity to the C-terminus.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66662/elife-66662-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Systematic truncations of the C-terminus lead to rearrangement of the heptahelical bundle, propagated to the entire receptor and is especially pronounced in helices proximal to the C-terminus, that\u00a0is, TM1, TM2, TM7. For almost all TM helices, a noticeable shift in tilt angle occurs upon modeling the full-length (394 residues) variant. This behavior is fundamentally different from the conventional model of G protein-coupled receptor\u00a0(GPCR) activation, in which TM 1, 2, 4, and 7 remain rigid, with TM5 and TM6 undergoing an outward tilt/rotation to enable binding to the cognate G protein. Relaxation of the heptahelical bundle (i.e., an increase in helical tilt) as a function of protein length and dimerization could potentially be critical to our understanding of the activation mechanism of A2AR as past studies have overwhelmingly focused on activation of the monomer.\n\nOur finding that A2AR forms homo-oligomers via multiple interfaces (Figure 4A) agrees with the increasing number of studies reporting multiple and interconverting oligomeric interfaces in A2AR and other GPCRs\u00a0(Song et al., 2020; Ghosh et al., 2014; Periole et al., 2012; Fanelli and Felline, 2011; Liu et al., 2012; Huang et al., 2013; Manglik et al., 2012; Thorsen et al., 2014; Fotiadis et al., 2006; Fotiadis et al., 2003; Liang et al., 2003; Xue et al., 2015; Dijkman et al., 2018). When translated to in vivo situations, GPCR oligomers can also transiently associate and dissociate\u00a0(Kasai et al., 2018; Tabor et al., 2016; M\u00f6ller et al., 2020; Vilardaga et al., 2008). Such conformational changes require that the oligomeric interfaces be formed by interactions that can easily be modulated. This is consistent with our study, which demonstrates that depletion interactions via the intrinsically disordered, malleable C-terminus drive A2AR oligomerization. Because depletion interactions can be readily tuned by environmental factors, such as ionic strength, molecular crowding, and temperature, the formation of GPCR oligomeric complexes could be dynamically modulated in response to environmental cues to regulate receptor function.\n\nNot only did we find multiple A2AR oligomeric interfaces, we also found that these interfaces can be either symmetric or asymmetric. This finding is supported by a growing body of evidence that there exists both symmetric and asymmetric oligomeric interfaces for A2AR\u00a0(Song et al., 2020) and many other GPCRs. Studies using various biochemical and biophysical techniques have shown that heterotetrameric GPCR complexes can be formed by dimers of dimers, including \u03bcOR-\u03b4OR\u00a0(Golebiewska et al., 2011), CXC4R-CC2R\u00a0(Armando et al., 2014), CB1R/D2R\u00a0(Bagher et al., 2017), as well as those involving A2AR, such as A1R-A2AR\u00a0(Navarro et al., 2018a; Navarro et al., 2016) and A2AR-D2R\u00a0(Navarro et al., 2018b). The quaternary structures identified in these studies required specific orientations of each protomer, with the most viable model involving a stagger of homodimers with symmetric interfaces\u00a0(DelaCuesta-Barrutia et al., 2020). On the other hand, since symmetric interfaces limit the degree of receptor association to dimers, the HMW oligomer of A2AR observed in this\u00a0(Song et al., 2020) and other studies\u00a0(Schonenbach et al., 2016; Vidi et al., 2008) can only be formed via asymmetric interfaces. It is indeed tempting to suggest that the formation of the HMW oligomer of A2AR may even arise from combinations of different interfaces. In any case, the wide variation of GPCR oligomerization requires the existence of both symmetric and asymmetric oligomeric interfaces.\n\nThe ultimate question to answer is how oligomerization alters A2AR function. In the case of A2AR, displacement of the transmembrane domains has been demonstrated to be the hallmark of receptor activation\u00a0(Eddy et al., 2018; Su\u0161ac et al., 2018; Prosser et al., 2017; Ye et al., 2016), but no studies have linked receptor oligomerization with the arrangement of the TM bundles in A2AR. Our MD simulations revealed that C-terminus truncation resulted in structural changes in the heptahelical bundles of A2AR dimers. Specifically, as more of the C-terminus was preserved, we observed a progressive increase in the helical tilt of TM7 (Figure 7B). This change in helical tilt occurred for the entire heptahelical bundle, with an increase in tilt for TM1, TM2, TM3, TM5, and TM7, and a decrease in tilt for TM4 and TM6 (Figure 7\u2014figure supplement 1). The longer C-terminus in the full-length A2AR permits greater rearrangements in the transmembrane regions, leading to the observed change in helical tilt. Furthermore, in the cellular context, it has been demonstrated that truncation of the C-terminus significantly reduced receptor association with G\u03b1s and cAMP production in cellular assays\u00a0(Koretz et al., 2021). These results hint at potential conformational changes of A2AR upon oligomerization, necessitating future investigation on functional consequences.\n\nLike all biophysical studies of membrane proteins in non-native environments, a drawback in our study is the question whether the above results, conducted in detergent micelles, can be translated to bilayer or cellular context. It has been demonstrated that the propensity of membrane proteins to associate and oligomerize is greater in lipid bilayers compared to that in detergent micelles\u00a0(Popot and Engelman, 1990). Furthermore, in the cellular context, A2AR has been shown to assemble into homo-oligomers in transfected HEK293 cells\u00a0(Canals et al., 2003) and in Cath.A differentiated neuronal cells\u00a0(Vidi et al., 2008), while C-terminally truncated A2AR shows no protein aggregation or clustering on the cell surface, in contrast with its WT form\u00a0(Burgue\u00f1o et al., 2003). Therefore, we speculate that A2AR oligomerization will be present in the lipid bilayer and cellular environment. Regardless, given that most biophysical structure-function studies of GPCRs are conducted in detergent micelles and other artificial membrane mimetics, it is critical to understand the role of the C-terminus in the oligomerization of A2AR reconstituted in detergent micelles.\n\nC-terminal truncations prior to crystallization and structural studies may be the main reason for the scarcity of GPCR structures featuring oligomers. In that context, this study offers valuable insights and approaches into how the oligomerization of A2AR and potentially of other GPCRs can be tuned by modifying the intrinsically disordered C-terminus and varying salt types and concentrations. The presence of A2AR oligomeric populations with partial C-terminal truncations means that one can now study its oligomerization with less perturbation from the C-terminus. We also present evidence that the multiple C-terminal interactions that drive A2AR oligomerization can be easily modulated by ionic strength and specific salts (Figures 5 and 6). Given that ~75% and ~15% of all class\u00a0A GPCRs possess a C-terminus of >50 and >100 amino acid residues\u00a0(Mirzadegan et al., 2003), respectively, it will be worthwhile to explore the prospect of tuning GPCR oligomerization not only by shortening the C-terminus but also with simpler approaches such as modulating ionic strength and the surrounding salt environment.\n\n### Conclusion\n\nThis study emphasizes for the first time the definite impact of the C-terminus on A2AR oligomerization, which can be extended to include the oligomers formed by other GPCRs with a protracted C-terminus. We have shown that the oligomerization of A2AR is strongly driven by depletion interactions along the C-terminus, further modulating and enhancing the multiple interfaces formed via a combination of hydrogen, electrostatic, hydrophobic, and covalent disulfide interactions. The task remains to link A2AR oligomerization to functional roles of the receptor. From a structural biology standpoint, visualizing the multiple oligomeric interfaces of A2AR in the presence of the full-length C-terminus is key to investigating whether these interfaces give rise to different oligomer functions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pITy (plasmid)</td>\n      <td>Parekh et al., 1996</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>BJ5464</td>\n      <td>Robinson Lab \u2013 Carnegie Mellon University</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21 (DE3)</td>\n      <td>Sigma, St. Louis, MO, USA</td>\n      <td>#CMC0014</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DDM</td>\n      <td>Anatrace, Maumee, OH, USA</td>\n      <td>#D310</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CHAPS</td>\n      <td>Anatrace, Maumee, OH, USA</td>\n      <td>#C216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CHS</td>\n      <td>Anatrace, Maumee, OH, USA</td>\n      <td>#CH210</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Xanthine amine congener</td>\n      <td>Sigma, St. Louis, MO, USA</td>\n      <td>#X103</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Theophylline</td>\n      <td>Sigma, St. Louis, MO, USA</td>\n      <td>#T1633</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Affigel 10 resin</td>\n      <td>BioRad, Hercules, CA, USA</td>\n      <td>#1536099</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Tricorn Superdex 200 10/300 GL column</td>\n      <td>GE Healthcare, Pittsburgh, PA, USA</td>\n      <td>#17-5175-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-A2AR, clone 7F6-G5-A2 (Mouse monoclonal)</td>\n      <td>Millipore, Burlington, MA, USA</td>\n      <td>#05-717</td>\n      <td>(1:500) dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse IgG H&amp;L DyLight 550 (Goat monoclonal)</td>\n      <td>Abcam, Cambridge, MA, USA</td>\n      <td>#ab96880</td>\n      <td>(1:600) dilution</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MODELLER 9.23</td>\n      <td>Eswar et al., 2006</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>martinize.py script</td>\n      <td>de Jong et al., 2013</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ELNeDyn elastic network</td>\n      <td>Periole et al., 2009</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MARTINI coarse-grained force field v2.2</td>\n      <td>Monticelli et al., 2008</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GROMACS 2016</td>\n      <td>Abraham et al., 2015</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>backward.py script</td>\n      <td>Wassenaar et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LINCS</td>\n      <td>Hess et al., 1997</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CHARMM36 and TIP3P force fields</td>\n      <td>Best et al., 2012; Jorgensen et al., 1983</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LOOS</td>\n      <td>Romo and Grossfield, 2009</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>VMD</td>\n      <td>Humphrey et al., 1996</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cloning, gene expression, and protein purification\n\nThe multi-integrating pITy plasmid\u00a0(Parekh et al., 1996), previously used for overexpression of A2AR in Saccharomyces cerevisiae (O'Malley et al., 2009), was employed in this study. pITy contains a Gal1\u201310 promoter for galactose-induced expression, a synthetic pre-pro leader sequence that directs protein trafficking\u00a0(Clements et al., 1991; Parekh et al., 1995), and the yeast alpha terminator. The genes encoding A2AR variants with 10-His C-terminal tag were cloned into pITy downstream of the pre-pro leader sequence using either splice overlapping extension\u00a0(Bryksin and Matsumura, 2010) or USER cloning using X7 polymerase\u00a0(N\u00f8rholm, 2010; Nour-Eldin et al., 2006). The plasmids were then transformed into S. cerevisiae strain BJ5464 (MAT\u03b1 ura3-52 trp1 leu2\u22061 his3\u2206200 pep4::HIS3 prb1\u22061.6R can1 GAL) (provided by the lab of Anne Robinson at Carnegie Mellon University) using the lithium-acetate/PEG method\u00a0(Gietz, 2014). Transformants were selected on YPD G-418 plates (1% yeast extract, 2% peptone, 2% dextrose, 2.0 mg/mL G-418).\n\nReceptor was expressed and purified following the previously described protocol\u00a0(Niebauer and Robinson, 2006). In brief, from freshly streaked YPD plates (1% yeast extract, 2% peptone, 2% dextrose), single colonies were grown in 5 mL YPD cultures overnight at 30\u00b0C. From these 5 mL cultures, 50 mL cultures were grown with a starting OD of 0.5 overnight at 30\u00b0C. To induce expression, yeast cells from these 50 mL cultures were centrifuged at 3000 \u00d7 g to remove YPD before resuspended in YPG medium (1% yeast, 2% peptone, 2% D-galactose) at a starting OD of 0.5. The receptor was expressed for 24 hr overnight at 30\u00b0C with 250 rpm shaking. Cells were pelleted by centrifugation at 3000 \u00d7 g, washed in sterile PBS buffer, and pelleted again before storage at \u201380\u00b0C until purification.\n\nMechanical bead lysis of cells was done, per 250 mL of cell culture, by performing 12 pulses of 60 s intense vortexing (with at least 60 s of rest in between pulses) in 10 mL 0.5 mm zirconia silica beads (BioSpec, Bartlesville, OK, USA; #11079105z), 25 mL of lysis buffer (50 mM sodium phosphate, 300 mM sodium chloride, 10% [v/v] glycerol, pH = 8.0, 2% [w/v] n-dodecyl-\u03b2-D-maltopyranoside [DDM; Anatrace, Maumee, OH, USA; #D310], 1% [w/v] 3-[(3-cholamidopropyl)dimethylammonio]\u22121-propanesulfonate [CHAPS; Anatrace; #C216], and 0.2% [w/v] cholesteryl hemisuccinate [CHS; Anatrace; #CH210] and an appropriate amount of 100\u00d7 Pierce Halt EDTA-free protease inhibitor [Pierce, Rockford, IL, USA; #78439]). Beads were separated using a Kontex column. Unlysed cells were removed by centrifugation at 3220 \u00d7 g for 10 min. Receptor was let solubilized on rotary mixer for 3 hr before cell debris was removed by centrifugation at 10,000 \u00d7 g for 30 min. Solubilized protein was incubated with Ni-NTA resin (Pierce; #88221) overnight. Protein-resin mixture was then washed extensively in purification buffer (50 mM sodium phosphate, 300 mM sodium chloride, 10% [v/v] glycerol, 0.1% [w/v] DDM, 0.1% [w/v] CHAPS and 0.02% [w/v] CHS, pH = 8.0) containing low imidazole concentrations (20\u201350 mM). A2AR was eluted into purification buffer containing 500 mM imidazole. Prior to further chromatographic purification, imidazole was removed using a PD-10 desalting column (GE Healthcare, Pittsburgh, PA, USA; #17085101).\n\nLigand affinity resin was prepared as previously described for purification of active A2AR\u00a0(O'Malley et al., 2007; Wei\u00df and Grisshammer, 2002). In brief, 8 mL of isopropanol-washed Affigel 10 resin (BioRad, Hercules, CA, USA; #1536099) was mixed gently in an Erlenmeyer flask for 20 hr at room temperature with 48 mL of DMSO containing 24 mg of xanthine amine congener (XAC, high-affinity A2AR antagonist, KD = 32 nM; Sigma, St. Louis, MO, USA; #X103). The absorbance at 310 nm of the XAC-DMSO solution before and after the coupling reaction was measured in 10 mM HCl and compared to a standard curve. The amount of resin bound to ligand was estimated to be 5.6 \u03bcM. The coupling reaction was quenched by washing the resin with DMSO, then with Tris-HCl 50 mM (pH = 7.4), then with 20% (v/v) ethanol. The resin was packed into a Tricorn 10/50 column (GE Healthcare) under pressure via a BioRad Duoflow FPLC (BioRad).\n\nFor purification of active A2AR, the column was equilibrated with 4 CV of purification buffer. The IMAC-purified A2AR was desalted and diluted to 5.5 mL before applied to a 5 mL sample loop on the BioRad Duoflow FPLC, from which the sample was loaded onto the column at a rate of 0.1 mL/min. Inactive A2AR was washed from the column by flowing 10 mL of purification buffer at 0.2 mL/min, followed by 16 mL at 0.4 mL/min. Active A2AR was eluted from the column by flowing purification buffer containing 20 mM theophylline (low-affinity A2AR antagonist, KD = 1.6 \u03bcM; Sigma; #T1633). Western blot analysis was performed to determine 4 mL fractions with active A2AR collected with a BioFrac fraction collector (BioRad), which were then concentrated through a 30 kDa MWCO centrifugal filter (Millipore, Billerica, MA, USA; #UFC803096) and desalted to remove excess theophylline. For the experiments where the salt concentrations were varied, the buffer exchange was done also by this last desalting step.\n\n### Size-exclusion chromatography\n\nTo separate oligomeric species of active A2AR, a prepacked Tricorn Superdex 200 10/300 GL column (GE Healthcare; #17-5175-01) connected to a BioRad Duoflow FPLC was equilibrated with 60 mL of running buffer (150 mM sodium chloride except for the ionic strength experiments where NaCl concentration is adjusted to achieve the desired ionic strengths, 50 mM sodium phosphate, 10% [v/v] glycerol, 0.1% [w/v] DDM, 0.1% [w/v] CHAPS, 0.02% [w/v] CHS, pH = 8.0) at a flow rate of 0.2 mL/min. 0.5 mL fractions were collected with a BioFrac fraction collector in 30 mL of running buffer at the same flow rate. The subsequent SEC analysis performed on the SEC-separated oligomeric populations also followed this protocol.\n\n### SEC peak analysis\n\nSEC chromatograms were analyzed using OriginLab using the nonlinear curve fit (Gaussian) function. The area under the curve and the peak width were manually defined in cases where the SNR of the SEC trace were too low. The R2 values reached > 0.96 for most cases. The population of each oligomeric species was expressed as the integral of each Gaussian this curve fit of the SEC signal. The HMW oligomer peak in some cases could not be fitted with one curve and thus was fitted with two curves instead. The reported standard errors were calculated from the variance of the fit and did not correspond to experimental errors. The results are detailed in Figure 1\u2014figure supplement 2 and Supplementary file 1.\n\n### SDS-PAGE and western blotting\n\n10% SDS-PAGE gels were hand-casted in BioRad Criterion empty cassettes (BioRad; #3459902, 3459903). Lysate controls were prepared by lysis of 5 OD cell pellets with 35 \u03bcL of YPER (Fisher Scientific, Waltham, MA, USA; #8990) at RT for 20 min, incubation with 2\u00d7 Laemmli buffer (4% [w/v] SDS, 16% [v/v] glycerol, 0.02% [w/v] bromophenol blue, 167 M Tris, pH 6.8) at 37\u00b0C for 1 hr, and centrifugation at 3000 \u00d7 g for 1 min to pellet cell debris. Protein samples were prepared by incubation with 2\u00d7 Laemmli buffer at 37\u00b0C for 30 min. For all samples, 14 \u03bcL (for 26-well gel) or 20 \u03bcL (for 18-well gel) was loaded per lane, except for 7 \u03bcL of Magic Mark XP Western protein ladder (Thermo Scientific, Waltham, MA, USA; #LC5602) as a standard. Electrophoresis was carried out at 120 V for 100 min. Proteins were transferred to 0.2 \u03bcm nitrocellulose membranes (BioRad; #170-4159) via electroblotting using a BioRad Transblot Turbo, mixed MW protocol. Membranes were blocked in Tris-buffered saline with Tween (TBST; 150 mM sodium chloride, 15.2 mM Tris-HCl, 4.6 mM Tris base, pH = 7.4, 0.1% [v/v] Tween 20 [BioRad; #1706531]) containing 5% (w/v) dry milk, then probed with anti-A2AR antibody, clone 7F6-G5-A2, mouse monoclonal (Millipore, Burlington, MA, USA; #05-717) at 1:500 in TBST with 0.5% (w/v) dry milk. Probing with secondary antibody was done with a fluorescent anti-mouse IgG H&L DyLight 550 antibody (Abcam, Cambridge, MA, USA; #ab96880) at 1:600 in TBST containing 0.5% (w/v) milk.\n\nWestern blot was analyzed with Image Lab 6.1 software (BioRad), with built-in tool to define each sample lane and to generate an intensity profile. Peaks were manually selected and integrated with the measure tool to determine the amount of protein present.\n\n### CGMD simulations\n\nInitial configuration of A2AR was based on the crystal structure of the receptor in the active state (PDB 5G53). Since this structure does not include the entire C-terminus, we resorted to using homology modeling software (i.e., MODELLER 9.23) (Eswar et al., 2006) to predict the structures of the C-terminus. After removing all non-receptor components, the first segment of the C-terminus consisting of residues 291\u2013314 was modeled as a helical segment parallel to the cytoplasmic membrane surface while the rest of the C-terminus was modeled as intrinsically disordered. MODELLER is much more accurate in structural predictions for segments less than 20 residues. This limitation necessitated that we run an equilibrium MD simulation for 2 \u00b5s to obtain a well-equilibrated structure that possesses a more viable starting conformation. To validate our models of all potential variants of A2AR, we calculated the RMSD and RMSF for each respective system. Default protonation states of ionizable residues were used. The resulting structure was converted to MARTINI CG topology using the martinize.py script\u00a0(de Jong et al., 2013). The ELNeDyn elastic network\u00a0(Periole et al., 2009) was used to constrain protein secondary and tertiary structures with a force constant of 500 kJ/mol/nm2 and a cutoff of 1.5 nm. To optimize loop refinement of the model, a single copy was embedded in a 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) bilayer using the insane.py script, solvated with MARTINI polarizable water, neutralized with 0.15 M NaCl, and a short MD (1.5 \u00b5s) run to equilibrate the loop regions. Subsequently, two monomers of the equilibrated A2AR were randomly rotated and placed at the center of a 13 nm \u00d7 13 nm \u00d7 11 nm (xyz) box, 3.5 nm apart, with their principal transmembrane axis aligned parallel to the z axis. The proteins were then embedded in a POPC bilayer using the insane.py script. Sodium and chloride ions were added to neutralize the system and obtain a concentration of 0.15 M NaCl. Total system size was typically in the range of 34,000 CG particles, with a 280:1 lipid:protein ratio. Ten independent copies were generated for each A2AR truncated variant. v2.2 of the MARTINI CG force field\u00a0(Monticelli et al., 2008) was used for the protein and water, and v2.0 was used for POPC. All CG simulations were carried out in GROMACS 2016\u00a0(Abraham et al., 2015) in the NPT ensemble (P = 1 atm, T = 310 K). The Bussi velocity rescaling thermostat was used for temperature control with a coupling constant of \u03c4t = 1.0 ps\u00a0(Bussi et al., 2007), while the Parrinello\u2013Rahman barostat\u00a0(Marton\u00e1k et al., 2003) was used to control the pressure semi-isotropically with a coupling constant of \u03c4t = 12.0 ps and compressibility of 3 \u00d7 10\u20134 bar\u20131. Reaction field electrostatics was used with Coulomb cutoff of 1.1 nm. Non-bonded Lennard\u2013Jones interactions were treated with a cutoff of 1.1 nm. All simulations were run with a 15 fs time\u00a0step, updating neighbor lists every 10 steps. Cubic periodic boundary conditions along the x, y, and z axes were used. Each simulation was run for 8 \u00b5s.\n\n### Atomistic MD simulations\n\nThree snapshots of symmetric dimers of A2AR for each respective truncated variant were randomly selected from the CG simulations as starting structures for backmapping. CG systems were converted to atomistic resolution using the backward.py script\u00a0(Wassenaar et al., 2014). All simulations were run in Gromacs2019 in the NPT ensemble (P = 1 bar, T = 310 K) with all bonds restrained using the LINCS method\u00a0(Hess et al., 1997). The Parrinello\u2013Rahman barostat was used to control the pressure semi-isotropically with a coupling constant of \u03c4t = 1.0 ps and a compressibility of 4.5 \u00d7 10\u20135 bar\u20131, while the Bussi velocity rescaling thermostat was used for temperature control with a coupling constant of \u03c4t = 0.1 ps. Proteins, lipids, and solvents were separately coupled to the thermostat. The CHARMM36 and TIP3P force fields\u00a0(Best et al., 2012; Jorgensen et al., 1983) were used to model all molecular interactions. Periodic boundary conditions were set in the x, y, and z directions. Particle mesh Ewald (PME) electrostatics was used with a cutoff of 1.0 nm. A 2-fs time step was used for all atomistic runs, and each simulation was run for 50 ns.\n\n### Analysis of computational results\n\nAll trajectories were postprocessed using gromacs tools and in-house scripts. We ran a clustering analysis of all dimer frames from the CG simulations using Daura et al.\u2019s clustering algorithm\u00a0(Daura et al., 1999) implemented in GROMACS, with an RMSD cutoff of 1.5 \u212b. An interface was considered dimeric if the minimum center of mass distance between the protomers was less than 5 \u212b. This method uses an RMSD cutoff to group all conformations with the largest number of neighbors into a cluster and eliminates these from the pool, then repeats the process until the pool is empty. We focused our analysis on the most populated cluster from each truncated variant. Electrostatic interactions in the dimer were calculated from CG systems with LOOS\u00a0(Romo and Grossfield, 2009) using a distance cutoff of 5.0 \u212b. Transmembrane helical tilt angles were also calculated in LOOS from CG simulations. Hydrogen bonds were calculated from AA simulations using the hydrogen bonds plugin in VMD\u00a0(Humphrey et al., 1996), with a distance cutoff of 3.5 \u212b and an angle cutoff of 20\u00b0. Only C-terminal residues were included in hydrogen bond analysis. PyMOL\u00a0(The PyMOL Molecular Graphics System, version 2.0, Schr\u00f6dinger, LLC, 2020) was used for molecular visualizations.\n\n### Assessing A2AR oligomerization with increasing ionic strength\n\nNa2HPO4 and NaH2PO4 in the buffer make up an ionic strength of 0.15 M, to which NaCl was added to increase the ionic strength to 0.45 M and furthermore to 0.95 M. The A2AR variants were purified at 0.45 M ionic strength and then exchanged into buffers of different ionic strengths using a PD-10 desalting column prior to subjecting the samples to SEC. The buffer composition is detailed below.\n\n<table>\n  <thead>\n    <tr>\n      <th>Buffers</th>\n      <th>Components</th>\n      <th>Concentration (mM)</th>\n      <th>Ionic strength (mM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">0.15 M ionic strength</td>\n      <td>NaCl</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>NaH2PO4</td>\n      <td>4</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Na2HPO4</td>\n      <td>49</td>\n      <td>146</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">0.45 M ionic strength</td>\n      <td>NaCl</td>\n      <td>300</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>NaH2PO4</td>\n      <td>4</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Na2HPO4</td>\n      <td>49</td>\n      <td>146</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">0.95 M ionic strength</td>\n      <td>NaCl</td>\n      <td>800</td>\n      <td>800</td>\n    </tr>\n    <tr>\n      <td>NaH2PO4</td>\n      <td>4</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Na2HPO4</td>\n      <td>49</td>\n      <td>146</td>\n    </tr>\n  </tbody>\n</table>\n\n### Isolated C-terminus purification\n\nEscherichia coli BL21 (DE3) cells (Sigma; #CMC0014) were transfected with pET28a DNA plasmids containing the desired A2AR sequence with a 6x His tag attached for purification. Cells from glycerol stock were grown in 10 mL luria broth (LB, Sigma Aldrich, L3022) overnight at 37\u00b0C and then used to inoculate 1 L of fresh LB and 10 \u03bcg/mL kanamycin (Fisher Scientific, BP906). Growth of cells was performed at 37\u00b0C, 200 rpm until optical density at \u03bb = 600 nm reached 0.6\u20130.8. Expression was induced by incubation with 1 mM isopropyl-\u03b2-D-thiogalactoside (Fisher Bioreagents, BP175510) for 3 hr.\n\nCells were harvested with centrifugation at 5000 rpm for 30 min. Harvested cells were resuspended in 25 mL Tris-HCl, pH = 7.4, 100 mM NaCl, 0.5 mM DTT, 0.1 mM EDTA with 1 Pierce protease inhibitor tablet (Thermo Scientific, A32965), 1 mM PMSF, 2 mg/mL lysozyme, 20 \u03bcg/mL DNase (Sigma, DN25) and 10 mM MgCl2, and incubated on ice for 30 min. Samples were then incubated at 30\u00b0C for 20 min, then flash frozen and thawed three times in LN2. Samples were then centrifuged at 10,000 rpm for 10 min to remove cell debris. 1 mM PMSF was added again and the resulting supernatant was incubated while rotating for at least 4 hr with Ni-NTA resin. The resin was loaded to a column and washed with 25 mL 20 mM sodium phosphate, pH = 7.0, 1 M NaCl, 20 mM imidazole, 0.5 mM DTT, 100 \u03bcM EDTA. Purified protein was eluted with 15 mL of 20 mM sodium phosphate, pH = 7.0, 0.5 mM DTT, 100 mM NaCl, 300 mM imidazole. The protein was concentrated to a volume of 2.5 mL and was buffer exchanged into 20 mM ammonium acetate buffer, pH = 7.4, 100 mM NaCl using a GE PD-10 desalting column. Purity of sample was confirmed with SDS-PAGE and western blot.\n\n### Aggregation assay to assess A2AR C-terminus assembly\n\nAbsorbance was measured at 450 nm using a Shimadzu UV-1601 spectrophotometer with 120 \u00b5L sample size. Prior to reading, samples were incubated at 40\u00b0C for 5 min. Samples were vigorously pipetted to homogenize any precipitate before absorbance was measured. Protein concentration was 50 \u00b5M in a 20 mM ammonium acetate buffer (pH = 7.4).\n\n### Differential scanning fluorimetry (DSF)\n\nDSF was conducted with a BioRad CFX90 real-time PCR machine. A starting temperature of\u00a020\u00b0C was increased at a rate of 0.5\u00b0C per 30 s to a final temperature of 85\u00b0C. All samples contained 40 \u03bcL of 40 \u00b5M A2AR C-terminus, 9x SYPRO orange (ThermoFisher S6650), 200 mM NaCl, and 20 mM MES. Fluorescence was detected in real\u00a0time at 570 nm. All samples were conducted in triplicate.\n\n### Hydrophobicity and charge profile of C-terminus\n\nThe hydrophobicity profile reported in Figure 6\u2014figure supplement 1 was determined with ProtScale using method described by Kyte and Doolittle, 1982, window size of 3.\n",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "e4cc0b64-a537-404f-b888-d022962d9ae0",
+      "submission_id": "ed1e4ff4-dccc-4c0c-99c3-c315d1248ba2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Heedeok Hong, Michigan State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66662.sa1](https://doi.org/10.7554/eLife.66662.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis is a wonderful study that advances our understanding of GPCR oligomerization and provides new physical insights into GPCR-mediated cellular signaling.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Oligomerization of the Human Adenosine A2A Receptor Is Driven by the Intrinsically Disordered C-Terminus\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Heedeok Hong as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Antonella Di Pizio (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. On the rigor and validity of size-exclusion chromatography (SEC)\n\n(1a) Justifying the peak assignment in the SEC data as monomer, dimer and HMW oligomers (Figure 1 and Figure S1):\n\nWhile the UV signals on the SEC profiles suggest the existence of well-resolved peaks of oligomers, dimers and monomers, the SDS-PAGE and Western blotting results that were carried out in a denaturing environment (SDS) predominantly display monomers in the \"dimer\" and \"HMW\" fractions. An alternative method may be needed to verify the assignment (e.g., crosslinking, an assignment based on the standard curve-i.e., mobility vs MW standard, analytical ultracentrifuge, native gel, etc.).\n\n(1b) Ensuring that oligomer distributions are thermodynamic products:\n\nThe clarification of this point seems necessary to support the conclusion that multiple types of molecular forces serve as \"driving forces\" in oligomerization. Probably, it would be helpful to rerun SEC for the fractions of each major peak (possibly C394X mutants) and investigate the dependence of oligomer distribution on protein and detergent concentrations, the presence of deca-His tag and the length of storage. It would also be important to confirm that \"UV in arbitrary units\" scales with the protein concentration in the fractions.\n\n(1c) Strengthening the rigor of statistical analysis:\n\nReported experimental uncertainties of content of oligomerized receptor fractions are solely based on reproducibility of fits of a single elution profile. It may underestimate experimental error limits. How reproducible are results when chromatographic experiments are repeated using the same protein stock?\n\n2. Verifying the influence of mutation and C-terminal truncation on ligand binding capability.\n\n3. Providing further details and additional analysis of MD simulation.\n\n(3a) More detailed descriptions for initial modeling and its evaluation procedures (please see Reviewer 3's comments). For example, which was(were) template(s) used for the modelling of the initial state and how was the reliability of the model evaluated?\n\n(3b) Please, address reviewers' concerns about how the system equilibration was ensured (simulation sufficiently long or repeated sufficiently with a variation of initial conditions to yield results that are not biased by initial conditions) and report time-dependent RMSDs that can provide the information on the equilibration and dynamics of the system.\n\n(3c) Additional analysis will help further strengthening the conclusion: (i) statistical analysis of properties of interaction sites between neighbored molecules; (ii) the role of protein segments other than the C-terminus for oligomerization; (iii) statistical analysis of intra- and intermolecular \"nonpolar\" contacts to support authors' claim that the hydrophobic interaction is one of the key driving forces in oligomerization.\n\n4. Clarifying the putative disulfide bridge involving C394.\n\nIt would be useful to provide a list of Cys residues that potentially can interact with Cys394 and discuss the validity of authors' claim on the formation of putative disulfide bridge.\n\n5. Addressing additional major scientific concerns from reviewers:\n\n(5a) Is the result obtained in micelles relevant in the lipid bilayer or cellular context?\n\n(5b) What is the basis of claiming the \"cooperativity\" in the C-terminal domain interactions?\n\n6. Please, address reviewers' major concerns that have been brought up (see below) but not listed above.\n\nReviewer #1 (Recommendations for the authors):\n\nI have several suggestions that may help.\n\n1. How relevant is the peak assignment in the SEC data as monomer, dimer and HMW oligomers (Figure 1)?\n\nAlthough the assignment is supported by SDS-PAGE and Western blotting (Figure S1), SDS provides a denaturing environment. As seen in the data (Figure S1), the proteins in the \"dimer\" and \"HMW\" fractions on SEC dominantly migrate as monomers on SDS-PAGE, which indicates that SDS destabilizes oligomers or, if not, each peak contains a significant portion of monomer. An alternative method may be needed to verify the assignment (for example, crosslinking, an assignment based on the standard curve- mobility vs MW standards, analytical ultracentrifuge or native gel).\n\n2. Ensuring that the oligomer distributions are thermodynamic products.\n\nProbably, it might be helpful to rerun SEC with the fractions of each major peak (possibly C394X mutants) and see if the redistribution of oligomeric states occurs.\n\n3. On the contribution of the hydrophobic interactions to oligomerization.\n\n(3a) Since it has been suggested that the hydrophobic effect is one of the key driving forces for oligomerization, it would be informative to (3a-i) show the fraction of nonpolar residues in the C-term tail and (3a-ii) analyze the number of nonpolar contacts during CGMD simulations\n\n(3b) What are the RMSDs of the IDRs during simulation? This analysis will be highly informative with regards to the equilibration of the system, the dynamics of the IDR, and the effect of truncation on the dynamics.\n\nReviewer #2 (Recommendations for the authors):\n\nI am concerned about inconsistencies between UV absorbance and Western Blot analysis of eluted fractions in Figure S1B. While the UV signal suggests existence of well-resolved peaks of oligomers, dimers and monomers, the Western blots show high concentration of monomers underneath the dimer peak. What is the cause for this discrepancy? What are the protein concentration applied to the column and concentrations in the eluted fractions? Does aggregation behavior depend on protein concentration, detergent concentration, temperature, length of storage? Did the protein denature partially on the column? Did the authors repeat experiments on concentrated eluted fractions? Could it be that baseline correction of UV absorbance obscured a broad peak of monomer elution?\n\nThe use of the term \"UV in arbitrary units\" when reporting ratios of protein in oligo-, di- and monomers is ambiguous. Does protein concentration in the fractions scale with integral intensity of UV absorbance traces? If yes, the ratios would faithfully report relative differences in protein content of those fractions.\n\nReported experimental uncertainties of content of oligomerized receptor fractions are solely based on reproducibility of fits of a single elution profile. It yields experimental error limits that are rather low. How reproducible are results when chromatographic experiments are repeated using the same protein stock?\n\nThe authors report evidence for disulfide bond formation between neighbored molecules at C394. The level of disulfide bond formation is known to depend on cofactors including protein concentration, oxygen exposure, pH, the presence of oxidizing or reducing agents, temperature, time, etc. Were those variables controlled?\n\nDoes the deca-His tag influence oligomerization of the protein?\n\nDoes truncation of the receptor influence its function? Did the authors observe differences in ligand binding affinity and G protein activation rates for truncated/mutated receptor? Does protein truncation influence expression yield? Does truncation influence thermal stability of the expressed protein? Are eluted protein fractions obtained by size exclusion chromatography ligand binding- and G protein activation competent?\n\nExperimental results are accompanied by an impressive set of molecular simulations. Were simulations sufficiently long or repeated sufficiently often with variation of initial conditions to yield results that are not biased by initial conditions? Would it be possible to conduct a statistical analysis of properties of interaction sites between neighbored molecules? What is the role of protein segments other than the C-terminus for aggregation?\n\nReviewer #3 (Recommendations for the authors):\n\n1. The putative disulfide bridge involving C394 should be further investigated.\n\n\u2013 In light of the suggested C-terminus/C-terminus interaction in absence of the TM domain, the Cys partner might be in the C-terminus. It would be useful to provide a list of Cys residue that potentially can interact with Cys394 and experimentally validate these hypotheses\n\n\u2013 The discussion in lines 338-391 should be extended accordingly: 'A previous study showed that residue C394 in A2AR dimer is available for nitroxide spin labelling(Schonenbach et al. 2016), suggesting that some of these disulfide bonds may be between 390 residue C394 and another cysteine in the hydrophobic core of A2AR that do not form intramolecular disulfide bonds(De Filippo et al. 2016; Naranjo et al. 2015; O'Malley et al. 2010)'\n\n\u2013 Moreover, in some parts of the manuscript the putative disulfide bridge is ignored, es: Lines 86-87: 'a model GPCR that could engage in diverse non-covalent interactions, such as electrostatic interactions, hydrogen bonds, or hydrophobic interactions. These non covalent interactions are readily tunable by external factors', Lines 291-293: 'The variable 13 291 nature of A2AR oligomeric interfaces suggests that the main driving forces must be non-covalent interactions, such as electrostatic interactions and hydrogen bonds as identified by the above MD simulations'\n\n2. MD simulations\n\nThe C-terminus is not present in any of the A2AR crystal structures and is very long (Lines 104-105: A striking example is A2AR, a model GPCR with a particularly long, 122-residue, C-terminus that is truncated in all published structural biology studies).\n\nThe C-terminus is therefore modelled, however, the only reference to the C-terminus modelling I could find is in Lines 594-595: 'missing residues added using MODELLER 9.23(Eswar et al. 2006)'. Which template(s) was(were) used for the modelling and which is the sequence similarity? The detailed modelling procedure and the computational evaluation should be provided.\n\nResults of the MD are highly dependent of the input model. Moreover, the information about the disulfide bridge is not incorporated in the models but this is an important structural feature to be considered.\n\nAlso, the conclusions about the role of the ERR motif are based on the modelling, but we do not have information to judge the modelling.\n\nLines 409-410: 'This observation is supported by our experimental results showing that substituting this charged cluster with alanines reduces the total A2AR oligomer levels' \u2013 the experimental results suggest the involvement of these residues on the oligomerization process, but do not say a lot about the molecular mechanisms \u2013 localizing these residues far from the interacting surface and the intramolecular interactions are hypotheses based on the modelling.\n\n3. The impact of findings is weakly stated, some related sentences in the paper are very general:\n\n\u2013 Line 38 in the abstract: 'offering important guidance for structure-function studies of A2AR and other GPCRs'\n\n\u2013 Lines 55-56: 'it is crucial to identify the driving factors that govern the oligomerization of GPCRs, such that the properties of GPCR oligomers can be understood'\n\n\u2013 Lines 473-475: 'In that context, this study offers valuable insights and approaches to tune the oligomerization of A2AR and potentially of other GPCRs using its intrinsically disordered C-terminus'\n\n4. I suggest labeling TM residues with BW numbering, so it will be easier to distinguish between TM residues and C-terminus residues in the figures and the text.\n\n5. Title: 'homo-oligomerization' should replace 'oligomerization'\n",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7c1a3db6-620f-420c-b1e9-acd7615ebde8",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C1",
+      "claim": "G protein-coupled receptors (GPCRs) have long been shown to exist as oligomers with functional properties distinct from those of the monomeric counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "G protein-coupled receptors (GPCRs) have long been shown to exist as oligomers with functional properties distinct from those of the monomeric counterparts, but the driving factors of oligomerization remain relatively unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about GPCRs supported by the broader scientific literature, as indicated by the context of the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "d6eabc7c-e872-404f-a226-e7bd62480d69",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C2",
+      "claim": "The intrinsically disordered C-terminus of A2AR drives receptor homo-oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining experimental and computational approaches, we discover that the intrinsically disordered C-terminus of A2AR drives receptor homo-oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental SEC data showing progressive decline in oligomerization with C-terminus truncation (Figure 3B) and MD simulations showing C-terminus involvement in dimeric interfaces (Figure 4A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "1569f31e-12a4-49ff-b6c2-666bfdb454d7",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C3",
+      "claim": "The formation of A2AR oligomers declines progressively with the shortening of the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of A2AR oligomers declines progressively with the shortening of the C-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "c18586f4-c299-48ed-bd5d-5194608cfac3",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C4",
+      "claim": "Multiple interaction types are responsible for A2AR oligomerization, including disulfide linkages, hydrogen bonds, electrostatic interactions, and hydrophobic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple interaction types are responsible for A2AR oligomerization, including disulfide linkages, hydrogen bonds, electrostatic interactions, and hydrophobic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TCEP reduction experiments (Figure 2B), MD simulations showing electrostatic contacts and hydrogen bonds (Figure 4B, C), and DSF experiments showing hydrophobic interactions (Figure 6B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "3592e683-3a50-4656-b915-689a1444c1ba",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C5",
+      "claim": "These interactions are enhanced by depletion interactions, giving rise to a tunable network of bonds that allow A2AR oligomers to adopt multiple interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions are enhanced by depletion interactions, giving rise to a tunable network of bonds that allow A2AR oligomers to adopt multiple interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ionic strength experiments showing increased oligomerization at higher ionic strengths (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "3a9865b2-fe97-4321-b26c-ea3daa4ae18e",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C6",
+      "claim": "GPCR oligomers can have properties distinct from monomeric protomers in ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The properties emerging from these oligomers can be distinct from those of the monomeric protomers in ligand binding (El-Asmar et al., 2005; Casad\u00f3-Anguera et al., 2016; Guitart et al., 2014; Yoshioka et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "6aed1210-551c-46a6-9524-a3a2dfbccb72",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C7",
+      "claim": "GPCR oligomers can have properties distinct from monomeric protomers in G protein coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "The properties emerging from these oligomers can be distinct from those of the monomeric protomers in ligand binding (El-Asmar et al., 2005; Casad\u00f3-Anguera et al., 2016; Guitart et al., 2014; Yoshioka et al., 2001), G protein coupling (Crist\u00f3v\u00e3o-Ferreira et al., 2013; Cordom\u00ed et al., 2015; Gonz\u00e1lez-Maeso et al., 2007; Lee et al., 2004; Rashid et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "807b9445-b12f-4dbe-ad23-f3eb4c7f5b06",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C8",
+      "claim": "GPCR oligomers can have properties distinct from monomeric protomers in downstream signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The properties emerging from these oligomers can be distinct from those of the monomeric protomers in ligand binding (El-Asmar et al., 2005; Casad\u00f3-Anguera et al., 2016; Guitart et al., 2014; Yoshioka et al., 2001), G protein coupling (Crist\u00f3v\u00e3o-Ferreira et al., 2013; Cordom\u00ed et al., 2015; Gonz\u00e1lez-Maeso et al., 2007; Lee et al., 2004; Rashid et al., 2007), downstream signaling (Liu et al., 2016; Hilairet et al., 2003; Rozenfeld and Devi, 2007; Borroto-Escuela et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "87af1203-c678-4d08-8552-38c6d676bd9b",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C9",
+      "claim": "GPCR oligomers can have properties distinct from monomeric protomers in receptor internalization/desensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "The properties emerging from these oligomers can be distinct from those of the monomeric protomers in ligand binding (El-Asmar et al., 2005; Casad\u00f3-Anguera et al., 2016; Guitart et al., 2014; Yoshioka et al., 2001), G protein coupling (Crist\u00f3v\u00e3o-Ferreira et al., 2013; Cordom\u00ed et al., 2015; Gonz\u00e1lez-Maeso et al., 2007; Lee et al., 2004; Rashid et al., 2007), downstream signaling (Liu et al., 2016; Hilairet et al., 2003; Rozenfeld and Devi, 2007; Borroto-Escuela et al., 2010), and receptor internalization/desensitization (Ecke et al., 2008; Stanasila et al., 2003; Faklaris et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "9052ec3f-7294-4703-a202-ab156c326698",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C10",
+      "claim": "GPCR oligomers with multiple interfaces can give rise to myriad ways by which these complexes can be formed and their functions modulated.",
+      "claim_type": "EXPLICIT",
+      "source": "GPCR oligomers with multiple interfaces (Song et al., 2020; Ghosh et al., 2014; Periole et al., 2012; Fanelli and Felline, 2011; Liu et al., 2012) can give rise to myriad ways by which these complexes can be formed and their functions modulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "d1b84ded-5b16-4f8e-a0eb-8523280d4ccc",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C11",
+      "claim": "In the crystal structure of the turkey \u03b21-adrenergic receptor (\u03b21AR), the receptor appears to dimerize via two different interfaces, one formed via TM4/TM5 and the other via TM1/TM2/H8 contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crystal structure of the turkey \u03b21-adrenergic receptor (\u03b21AR), the receptor appears to dimerize via two different interfaces, one formed via TM4/TM5 (transmembrane domains 4/5) and the other via TM1/TM2/H8 (helix 8) contacts (Huang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published crystal structure study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "93e02bf4-d1c9-4d1d-8591-ab6055239719",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C12",
+      "claim": "In the crystal structure of the antagonist-bound \u03bc-opioid receptor (\u03bc-OR), the protomers dimerize via two interfaces, but only one of them is predicted to induce a steric hindrance that prevents activation of both protomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the crystal structure of the antagonist-bound \u03bc-opioid receptor (\u03bc-OR), the protomers also dimerize via two interfaces; however, only one of them is predicted to induce a steric hindrance that prevents activation of both protomers (Manglik et al., 2012), hinting at interface-specific functional consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published crystal structure study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "3e7f1aee-10f8-4bf8-9440-2faaa56b26d8",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C13",
+      "claim": "A computational study predicted that the adenosine A2A receptor (A2AR) forms homodimers via three different interfaces and that the resulting dimeric architectures can modulate receptor function in different or even opposite ways.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent computational study predicted that the adenosine A2A receptor (A2AR) forms homodimers via three different interfaces and that the resulting dimeric architectures can modulate receptor function in different or even opposite ways (Fanelli and Felline, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published computational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "8a557ae3-a6d2-4634-b47b-561022cf2918",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C14",
+      "claim": "Asymmetric interfaces have been reported in M3 muscarinic receptor, rhodopsin, and opsin.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymmetric interfaces, reported in M3 muscarinic receptor (Thorsen et al., 2014), rhodopsin (Fotiadis et al., 2006; Fotiadis et al., 2003; Liang et al., 2003), and opsin (Liang et al., 2003), are in contrast formed with the protomers positioning face-to-back, possibly enabling the association of higher-order oligomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "492f5822-77d8-4c4c-aca6-91366e81fb69",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C15",
+      "claim": "A2AR oligomers can adopt eight different interfaces that interconvert when the receptor is activated or when there are changes in the local membrane environment.",
+      "claim_type": "EXPLICIT",
+      "source": "According to a recent computational study, A2AR oligomers can adopt eight different interfaces that interconvert when the receptor is activated or when there are changes in the local membrane environment (Song et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published computational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "f870587e-6743-4b49-b5b2-08be60683de0",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C16",
+      "claim": "Neurotensin receptor 1 (NTS1R) dimer is formed by 'rolling' interfaces that coexist and interconvert when the receptor is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a recent study that combined experimental and computational data proposed that neurotensin receptor 1 (NTS1R) dimer is formed by 'rolling' interfaces that coexist and interconvert when the receptor is activated (Dijkman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "f5311d8b-dc37-4871-bc9c-067c824f8fb6",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C17",
+      "claim": "The cytosolic carboxy (C-)terminus of GPCRs is usually an IDR.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytosolic carboxy (C-)terminus of GPCRs is usually an IDR (Tovo-Rodrigues et al., 2014; Jaakola et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "81263020-e9c8-4f3e-9d3f-3fe85d44afc4",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C18",
+      "claim": "The C-terminus of GPCRs is commonly removed in structural studies to enhance receptor stability and conformational homogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Varying in length among different GPCRs, the C-terminus is commonly removed in structural studies of GPCRs to enhance receptor stability and conformational homogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about structural biology practices supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "f300767e-807d-48e2-a790-f706a6894969",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C19",
+      "claim": "A2AR has a 122-residue C-terminus that is truncated in all published structural biology studies.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking example is A2AR, a model GPCR with a particularly long, 122-residue, C-terminus that is truncated in all published structural biology studies (Song et al., 2020; Fanelli and Felline, 2011; Garc\u00eda-Nafr\u00eda et al., 2018; Sun et al., 2017; Lebon et al., 2011; Xu et al., 2011; Dor\u00e9 et al., 2011; Jaakola et al., 2008; Carpenter et al., 2016; Hino et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple published structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "b0e18f80-5bc0-4346-ac94-770bc48fd12e",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C20",
+      "claim": "C-terminal truncations of GPCRs have been shown to affect GPCR downstream signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, evidence is accumulating that such truncations\u2014shown to affect GPCR downstream signaling (Koretz et al., 2021; Navarro et al., 2018a; Jain and McGraw, 2020)\u2014may abolish receptor oligomerization (Schonenbach et al., 2016; Svetlana and Devi, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "9b2c30fe-54f5-42d4-bae4-82199f1e56d0",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C21",
+      "claim": "C-terminal truncations may abolish receptor oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, evidence is accumulating that such truncations\u2014shown to affect GPCR downstream signaling (Koretz et al., 2021; Navarro et al., 2018a; Jain and McGraw, 2020)\u2014may abolish receptor oligomerization (Schonenbach et al., 2016; Svetlana and Devi, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "23748d98-3805-44c7-8057-dfa031c668c4",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C22",
+      "claim": "C-terminally truncated A2AR does not show protein aggregation or clustering on the cell surface, a process readily observed in the wild-type form.",
+      "claim_type": "EXPLICIT",
+      "source": "A study using immunofluorescence has demonstrated that C-terminally truncated A2AR does not show protein aggregation or clustering on the cell surface, a process readily observed in the wild-type form (Burgue\u00f1o et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published immunofluorescence study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "c7af0c30-67c0-4317-8d10-c853919c5fde",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C23",
+      "claim": "A single-residue substitution of a C-terminal cysteine, C394S, reduces A2AR homo-oligomerization in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent study employing a tandem three-step chromatography approach uncovered the impact of a single-residue substitution of a C-terminal cysteine, C394S, in reducing the receptor homo-oligomerization in vitro (Schonenbach et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "09415929-9e7b-4d13-9526-5a362252ae41",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C24",
+      "claim": "A2AR-D2R dimerization occurs via direct electrostatic interactions between the C-terminus of A2AR and the third intracellular loop of D2R.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of heteromerization, mass spectrometry and pull-down experiments have demonstrated that A2AR-D2R dimerization occurs via direct electrostatic interactions between the C-terminus of A2AR and the third intracellular loop of D2R (Ciruela et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published mass spectrometry and pull-down study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "8de1f305-4e4f-4823-a7f7-e4fd9d18adb7",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C25",
+      "claim": "SEC analysis separated A2AR into distinct oligomeric species: high-molecular-weight (HMW) oligomer, dimer, and monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct oligomeric species were separated and eluted in the following order: high-molecular-weight (HMW) oligomer, dimer, and monomer (Figure 1 and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC chromatogram data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "8e8ee136-93e8-493d-92e5-734d833de5e8",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C26",
+      "claim": "The peak assignment of A2AR oligomeric species has been verified with SEC-MALS experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "This peak assignment has been verified with SEC-MALS (multi-angle light scattering) experiments, as detailed in a previous publication (Schonenbach et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "476425e8-c123-4b04-8ad0-227d191aa262",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C27",
+      "claim": "The dimer level of A2AR-WT was significantly higher than that of the A2AR-C394X variants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the dimer level of A2AR-WT was significantly higher than that of the A2AR-C394X variants (WT: 1.14; C394X: 0.24\u20130.57; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "84b74a92-be90-4e2c-acaa-298fedd4ac8e",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C28",
+      "claim": "Residue C394 plays a role in A2AR oligomerization, and even more prominently in A2AR dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that residue C394 plays a role in A2AR oligomerization, and even more prominently in A2AR dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the SEC data showing reduced oligomerization in C394X variants (Figure 2A).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "c7a7c661-d1d1-4d2e-8885-68a1270b1a40",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C29",
+      "claim": "Upon incubation with TCEP, the dimer level of the A2AR-WT sample decreased from 1.14 to 0.51.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon incubation with TCEP, the dimer level of the A2AR-WT sample decreased from 1.14 to 0.51 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by western blot densitometry data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "d27f9431-fecc-4a37-b54d-48a92a35ad78",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C30",
+      "claim": "Disulfide bond formation via residue C394 is one possible mechanism for A2AR dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that disulfide bond formation via residue C394 is one possible mechanism for A2AR dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the TCEP reduction experiment showing decreased dimer levels (Figure 2B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "165a55bd-62bb-44da-8b8b-660aa73b264b",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C31",
+      "claim": "The dimer level of the A2AR-Q372\u0394C sample decreased from 0.68 to 0.22 upon incubation with TCEP.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the dimer level of the A2AR-Q372\u0394C sample also decreased from 0.68 to 0.22 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by western blot densitometry data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "10721461-8df6-4a2a-ab54-4c39569c192c",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C32",
+      "claim": "There may exist other inter-A2AR disulfide bonds that do not involve residue C394.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that there may exist other inter-A2AR disulfide bonds that do not involve residue C394.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Q372\u0394C (lacking C394) still shows TCEP-sensitive dimers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "2b05ef70-851a-4240-a5fe-485d84725102",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C33",
+      "claim": "A clearly visible population of A2AR dimer persists even after reduction of disulfide bonds via TCEP.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, in both cases, a clearly visible population of A2AR dimer persists, even after reduction of disulfide bonds via TCEP (Figure 2B), suggesting that there must be additional interfacial sites that help drive A2AR dimer/oligomerization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by western blot data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "8850c87f-df1c-4561-96f8-8a2af7bb212d",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C34",
+      "claim": "There must be additional interfacial sites that help drive A2AR dimer/oligomerization beyond disulfide bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, in both cases, a clearly visible population of A2AR dimer persists, even after reduction of disulfide bonds via TCEP (Figure 2B), suggesting that there must be additional interfacial sites that help drive A2AR dimer/oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the persistence of dimers after TCEP treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "2dfde6e8-31b3-4414-8594-93ca00e6277c",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C35",
+      "claim": "Both the dimer and the total oligomer levels of A2AR decreased progressively with the shortening of the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the dimer and the total oligomer levels of A2AR decreased progressively with the shortening of the C-terminus, with almost no oligomerization detected upon complete truncation of the C-terminus at site A316 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "84f0a59d-8a49-4826-90de-476584b827a5",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C36",
+      "claim": "Almost no oligomerization was detected upon complete truncation of the C-terminus at site A316.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the dimer and the total oligomer levels of A2AR decreased progressively with the shortening of the C-terminus, with almost no oligomerization detected upon complete truncation of the C-terminus at site A316 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "48a870ab-327e-49fd-9260-cabfb7ddecc4",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C37",
+      "claim": "The C-terminus drives A2AR oligomerization, with multiple potential interaction sites positioned along much of its length.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that the C-terminus drives A2AR oligomerization, with multiple potential interaction sites positioned along much of its length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the progressive decrease in oligomerization with systematic C-terminus truncation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "e946a997-6a76-40dc-bc48-b09b8ba2d15b",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C38",
+      "claim": "There occurred a dramatic decrease in the dimer level between the N359 and P354 truncation sites, from a value of 0.81 to 0.19.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there occurred a dramatic decrease in the dimer level between the N359 and P354 truncation sites, from a value of 0.81 to 0.19, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "cb01b404-5939-40da-aacd-7904da6019ea",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C39",
+      "claim": "The C-terminal segment encompassing residues 354\u2013359 is a key constituent of the A2AR oligomeric interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, the C-terminal segment encompassing residues 354\u2013359 (highlighted in black in Figure 3A) is a key constituent of the A2AR oligomeric interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the dramatic decrease in oligomerization when this segment is removed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "e055be07-bec4-4a9f-8524-1dab94104d9d",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C40",
+      "claim": "The ERR:AAA mutations had varied effects on the dimer level: decreasing for A2AR-FL-WT but increasing for A2AR-N359\u0394C.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the ERR:AAA mutations had varied effects on the dimer level: decreasing for A2AR-FL-WT (ctrl: 0.49; ERR:AAA: 0.29) but increasing for A2AR-N359\u0394C (ctrl: 0.33; ERR:AAA: 0.48) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "03ed71a9-c6a9-4a60-8678-1c7991b316d2",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C41",
+      "claim": "The ERR:AAA mutations reduced the HMW oligomer level of both A2AR-FL-WT and A2AR-N359\u0394C.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the ERR:AAA mutations reduced the HMW oligomer level of both A2AR-FL-WT (ctrl: 0.88; ERR:AAA: 0.66) and A2AR-N359\u0394C (ctrl: 0.68; ERR:AAA: 0.38) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "7e0086f7-cc2c-4d2c-b899-7a885672f54f",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C42",
+      "claim": "The charged residues 355ERR357 participate in A2AR oligomerization, with a greater effect in the context of a longer C-terminus and for forming higher-order oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the charged residues 355ERR357 participate in A2AR oligomerization, with a greater effect in the context of a longer C-terminus and for forming higher-order oligomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ERR:AAA mutation experiments showing differential effects on oligomerization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "296cae3b-ac47-407d-b4c8-fe9970b34bd7",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C43",
+      "claim": "A2AR dimers were formed with multiple interfaces, all involving the C-terminus only.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed that A2AR dimers were formed with multiple interfaces, all involving the C-terminus only (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by CGMD simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "6779cf2b-a97c-4058-8cd9-69d1bd13d4f7",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C44",
+      "claim": "The transmembrane heptahelical bundles were not a part of the dimeric interfaces as they all showed distances greater than the minimum distance criterion of 7 \u00c5 for interacting helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The transmembrane heptahelical bundles were not a part of the dimeric interfaces as they all showed distances greater than the minimum distance criterion of 7 \u00c5 for interacting helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by CGMD simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "480df0b8-61c5-427e-a7ce-d311883dd96a",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C45",
+      "claim": "The vast majority of A2AR dimers were symmetric, with the C-termini of the protomers directly interacting with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of A2AR dimers were symmetric, with the C-termini of the protomers directly interacting with each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by CGMD simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "2b3990cd-7930-4500-a2d4-e8b06f6044a9",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C46",
+      "claim": "A smaller fraction of the dimers had asymmetric orientations, with the C-terminus of one protomer interacting with other parts of the other protomer, such as ICL2 and ICL3.",
+      "claim_type": "EXPLICIT",
+      "source": "A smaller fraction of the dimers had asymmetric orientations, with the C-terminus of one protomer interacting with other parts of the other protomer, such as ICL2 (the second intracellular loop) and ICL3 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by CGMD simulation data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "e18f8fb2-fd83-4d3e-b77d-67784961ec16",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C47",
+      "claim": "With the least truncated A2AR variant containing the longest C-terminus, A2AR-C394\u0394C, an average of 15.9 electrostatic contacts were observed between the C-termini of the protomers.",
+      "claim_type": "EXPLICIT",
+      "source": "With the least truncated A2AR variant containing the longest C-terminus, A2AR-C394\u0394C, we observed an average of 15.9 electrostatic contacts (Figure 4B) and 26.7 hydrogen bonds (Figure 4C) between the C-termini of the protomers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by CGMD simulation analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "0a11758a-f5f1-4b25-8924-860386765144",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C48",
+      "claim": "With the least truncated A2AR variant containing the longest C-terminus, A2AR-C394\u0394C, an average of 26.7 hydrogen bonds were observed between the C-termini of the protomers.",
+      "claim_type": "EXPLICIT",
+      "source": "With the least truncated A2AR variant containing the longest C-terminus, A2AR-C394\u0394C, we observed an average of 15.9 electrostatic contacts (Figure 4B) and 26.7 hydrogen bonds (Figure 4C) between the C-termini of the protomers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by atomistic MD simulation analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "a250c431-4643-400b-a159-2e55cd8f27ac",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C49",
+      "claim": "Both electrostatic interactions and hydrogen bonds can play important roles in A2AR dimer formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that both electrostatic interactions and hydrogen bonds can play important roles in A2AR dimer formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the MD simulation data showing numerous electrostatic contacts and hydrogen bonds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "9c56fecc-35bb-4c8a-9b70-53525bb2dec0",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C50",
+      "claim": "Upon further C-terminus truncation, the average number of both electrostatic contacts and hydrogen bonds involving C-terminal residues progressively declined.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon further C-terminus truncation, the average number of both electrostatic contacts and hydrogen bonds involving C-terminal residues progressively declined, respectively reaching 5.4 and 6.0 for A2AR-A316\u0394C (in which the disordered region of the C-terminus is removed) (Figure 4B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by MD simulation analysis shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "01f0a539-07bc-42c6-a8b7-310e75e5088d",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C51",
+      "claim": "Truncation of a C-terminal segment reduces inter-A2AR contacts elsewhere along the C-terminus, indicating that an allosteric mechanism of dimerization exists.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation that truncation of a C-terminal segment reduces inter-A2AR contacts elsewhere along the C-terminus indicates that an allosteric mechanism of dimerization exists, in which an extended C-terminus of A2AR stabilizes inter-A2AR interactions near the heptahelical bundles of the dimeric complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the MD simulation data showing reduced contacts in segment 291-334 upon truncation of segment 335-394.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "71454004-3fb0-4557-a9e6-14790ff10cca",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C52",
+      "claim": "At the low ionic strength of 0.15 M, the dimer and total oligomer levels of all four A2AR variants were near zero.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the dimer and total oligomer levels of all four variants were near zero (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "7d627ec5-7681-4f28-96f7-5ab58ff10d3b",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C53",
+      "claim": "Electrostatic and hydrogen-bonding interactions are not the dominant driving force for A2AR association.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a striking experimental observation: despite being shown to play a role in stabilizing A2AR dimers according to our MD simulations (Figure 4B, C), we can conclude that electrostatic and hydrogen-bonding interactions are not the dominant driving force for A2AR association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the near-zero oligomerization at low ionic strength where these interactions should be intact.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "f3eba1f6-d577-482b-b559-ea1e08970b56",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C54",
+      "claim": "At higher ionic strengths of 0.45 M and 0.95 M, the dimer and total oligomer levels of A2AR-V334\u0394C remained near zero.",
+      "claim_type": "EXPLICIT",
+      "source": "At higher ionic strengths of 0.45 M and 0.95 M, the dimer and total oligomer levels of A2AR-V334\u0394C still remained near zero (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "2dfe2e59-dc5c-4cfb-910c-0972648184cb",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C55",
+      "claim": "A progressive and significant increase in the dimer and total oligomer levels of A2AR-FL-WT was observed with increasing ionic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed a progressive and significant increase in the dimer and total oligomer levels of A2AR-FL-WT with increasing ionic strength (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "75059a0d-af8f-4e66-b514-424e3c206c15",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C56",
+      "claim": "A2AR oligomerization is driven by depletion interactions enhanced with increasing ionic strength and these interactions must involve the C-terminal segment after residue V334.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that A2AR oligomerization is driven by depletion interactions enhanced with increasing ionic strength and that these interactions must involve the C-terminal segment after residue V334.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ionic strength experiments showing increased oligomerization for FL-WT but not V334\u0394C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "3e850e65-e64d-4bf0-8ab0-691c4127f9ed",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C57",
+      "claim": "The charged cluster 355ERR357 and the C-terminal segment after residue N359 promote the depletion interactions to drive A2AR oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the charged cluster 355ERR357 and the C-terminal segment after residue N359 promote the depletion interactions to drive A2AR oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of ionic strength on FL-WT, FL-ERR:AAA, and N359\u0394C variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "509ef6af-dc3e-4408-886f-fddb631bdac3",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C58",
+      "claim": "A2AR oligomerization is more robust when the C-terminus is fully present and the ionic strength higher.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we can conclude that A2AR oligomerization is more robust when the C-terminus is fully present and the ionic strength higher, suggesting that depletion interactions via the C-terminus are strong driving factors of A2AR oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ionic strength experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "ff0359f4-8322-4b07-bed6-abc06d03ff1f",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C59",
+      "claim": "The SEC-separated monomers repopulate into dimer/oligomer, with the total oligomer level after redistribution comparable with that of the initial samples for both A2AR-WT and Q372\u0394C.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the SEC-separated monomers repopulate into dimer/oligomer, with the total oligomer level after redistribution comparable with that of the initial samples for both A2AR-WT (initial: 2.87; redistributed: 1.60) and Q372\u0394C (initial: 1.49; redistributed: 1.40) (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "ceccba9a-0931-444e-847e-8bea832524b2",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C60",
+      "claim": "A2AR oligomer is a thermodynamic product with a lower free energy compared with that of the monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that A2AR oligomer is a thermodynamic product with a lower free energy compared with that of the monomer (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the repopulation of monomers into oligomers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "43f1edd4-a475-4ae4-9dcb-fa17e9fee26b",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C61",
+      "claim": "The SEC-separated dimer/oligomer populations do not repopulate to form monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the SEC-separated dimer/oligomer populations do not repopulate to form monomers (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by SEC experimental data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "b00070a4-dc09-4996-9ba4-f771d29162c7",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C62",
+      "claim": "Once the oligomers are formed, some are kinetically trapped and thus cannot redistribute into monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with a published study of ours on A2AR dimers (Schonenbach et al., 2016), indicating that once the oligomers are formed, some are kinetically trapped and thus cannot redistribute into monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of repopulation of oligomers into monomers and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "c128e014-133d-4457-beca-6b7c3fd96471",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C63",
+      "claim": "Disulfide linkages are likely candidates to kinetically stabilize A2AR oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that disulfide linkages are likely candidates to kinetically stabilize A2AR oligomers, as demonstrated by their redistribution into monomers only in the presence of a reducing agent (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the TCEP reduction experiments and the kinetic trapping observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "187cec8f-f4cf-4d85-ae9d-441616e52688",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C64",
+      "claim": "At NaCl concentrations below 1 M, the A2AR C-terminal peptide was dominantly soluble, despite showing slight aggregation at NaCl concentrations between 250 and 500 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "At NaCl concentrations below 1 M, the peptide was dominantly soluble, despite showing slight aggregation at NaCl concentrations between 250 and 500 mM (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by UV-Vis absorption data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "1f6b85db-acda-4487-abf0-087d495af4ab",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C65",
+      "claim": "At NaCl concentrations above 1 M, A2AR C-terminal peptides strongly associated into insoluble aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "At NaCl concentrations above 1 M, A2AR C-terminal peptides strongly associated into insoluble aggregates (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by UV-Vis absorption data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "b4dd19f5-2f8b-4f51-9743-f422ef57c64f",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C66",
+      "claim": "The A2AR C-terminus showed the tendency to progressively associate and eventually precipitate with increasing ionic strengths, suggesting that depletion interactions drive the association and precipitation of the peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the observations made with the intact receptor (Figure 5), the A2AR C-terminus showed the tendency to progressively associate and eventually precipitate with increasing ionic strengths, suggesting that depletion interactions drive the association and precipitation of the peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the aggregation assay data showing increased aggregation with NaCl.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "2c920091-b9cb-4584-a092-6b13551466d7",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C67",
+      "claim": "The A2AR C-terminus incubated in 4 M GdnHCl showed no aggregation propensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrated that the A2AR C-terminus incubated in 4 M GdnHCl showed no aggregation propensity (Figure 6A), validating our expectation that salting-in salts do not enhance depletion interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by UV-Vis absorption data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "730489a9-0d34-49cf-b65b-579dbf99eda6",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C68",
+      "claim": "The C-terminal peptide in and of itself, outside the context of the lipid membrane and TM domain, can directly interact with other C-terminal peptides to form self-aggregates in the presence of ions that have salting-out effects.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations demonstrate that the C-terminal peptide in and of itself, outside the context of the lipid membrane and TM domain, can directly interact with other C-terminal peptides to form self-aggregates in the presence of ions, and presumably solutes, that have salting-out effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the aggregation assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "458b38d8-2c91-4e33-b53a-e4475764bc2d",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C69",
+      "claim": "As the temperature increased, a steady rise in fluorescence was observed in DSF experiments with the A2AR C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that as the temperature increased, a steady rise in fluorescence was observed (Figure 6B), indicating that multiple hydrophobic residues were gradually exposed to the SYPRO dye.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by DSF data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "8b10075f-5d7e-4eed-8bcb-d1c8653c20b4",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C70",
+      "claim": "At approximately 65\u00b0C, the melt peak signal was abruptly quenched in DSF experiments with the A2AR C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at approximately 65\u00b0C, the melt peak signal was abruptly quenched (Figure 6B), indicating that the hydrophobic residues were no longer exposed to the dye.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by DSF data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "1154f86b-8ef1-4ef9-a7e0-78f0eabf244b",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C71",
+      "claim": "At 65\u00b0C, enough hydrophobic residues in the C-terminal peptides become exposed such that they collapse on one another, resulting in aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that, at 65\u00b0C, enough hydrophobic residues in the C-terminal peptides become exposed such that they collapse on one another (thus expelling the bound dye molecules), resulting in aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the DSF data showing fluorescence quenching.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "40533fd3-d792-47ef-b48a-b6ed402e6db9",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C72",
+      "claim": "An average of 60 non-polar contacts were observed for A2AR-C394\u0394C symmetrical dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observed an average of 60 non-polar contacts for A2AR-C394\u0394C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by CGMD simulation analysis shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "08e9a15a-0507-4623-a0e7-1c4035708d76",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C73",
+      "claim": "The number of non-polar contacts progressively declined upon further C-terminus truncation, reaching 15 for A2AR-A316\u0394C.",
+      "claim_type": "EXPLICIT",
+      "source": "This number progressively declined upon further C-terminus truncation, reaching 15 for A2AR-A316\u0394C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by CGMD simulation analysis shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "e56c1c16-5ea8-475b-987b-04e5a39eb9ac",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C74",
+      "claim": "The hydrophobic effect can cause A2AR C-terminal peptides to directly associate.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, the hydrophobic effect can cause A2AR C-terminal peptides to directly associate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the DSF and MD simulation data showing hydrophobic interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "f2cfff98-c564-4667-9fa2-c48c06714b56",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C75",
+      "claim": "A2AR oligomer formation can be driven by depletion interactions among the C-termini of the protomers by non-polar contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that A2AR oligomer formation can be driven by depletion interactions among the C-termini of the protomers by non-polar contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined DSF, aggregation assay, and MD simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "0687e63d-4634-4654-86f5-67d40d31f3f7",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C76",
+      "claim": "The C-terminus of A2AR, removed in all previously published structural studies, is directly responsible for receptor oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "The key finding of this study is that the C-terminus of A2AR, removed in all previously published structural studies, is directly responsible for receptor oligomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by all experimental and computational data in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "185fc11d-b01d-49e8-8bea-ea03b51fbe81",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C77",
+      "claim": "The C-terminus stabilizes A2AR oligomers via a combination of disulfide linkages, hydrogen bonds, electrostatic interactions, and hydrophobic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a combination of experimental and computational approaches, we demonstrate that the C-terminus stabilizes A2AR oligomers via a combination of disulfide linkages, hydrogen bonds, electrostatic interactions, and hydrophobic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental and computational results throughout the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "4c3deed9-857f-4154-9180-d098ffe036d5",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C78",
+      "claim": "This diverse combination of interactions is greatly enhanced by depletion interactions, forming a network of malleable bonds that drives A2AR oligomerization and gives rise to multiple oligomeric interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "This diverse combination of interactions is greatly enhanced by depletion interactions, forming a network of malleable bonds that drives A2AR oligomerization and gives rise to multiple oligomeric interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ionic strength experiments and MD simulations showing multiple interfaces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "e6e1ae0e-8e41-4bdc-9a48-a557b6b21013",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C79",
+      "claim": "Residue C394 is highly conserved and a C-terminal cysteine is almost always present in A2AR homologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this cysteine is highly conserved and a C-terminal cysteine is almost always present in A2AR homologs (P\u00e1ndy-Szekeres et al., 2018), suggesting that it may serve an important role in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a database or comparative study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "147d12ba-a143-45f4-9a93-8f489f15b3c4",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C80",
+      "claim": "C-terminus truncation resulted in structural changes in the heptahelical bundles of A2AR dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our MD simulations revealed that C-terminus truncation resulted in structural changes in the heptahelical bundles of A2AR dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by MD simulation analysis shown in Figure 7B and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "4f445922-f5b4-46b0-b0b3-121794d41d59",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C81",
+      "claim": "As more of the C-terminus was preserved, a progressive increase in the helical tilt of TM7 was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, as more of the C-terminus was preserved, we observed a progressive increase in the helical tilt of TM7 (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by MD simulation analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "d79e645e-0ae4-4998-b25f-040f7a2a1d74",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C82",
+      "claim": "Truncation of the C-terminus significantly reduced receptor association with G\u03b1s and cAMP production in cellular assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the cellular context, it has been demonstrated that truncation of the C-terminus significantly reduced receptor association with G\u03b1s and cAMP production in cellular assays (Koretz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a published cellular study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "3d4b9185-caa8-43dd-ba2b-eec6b669d703",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C83",
+      "claim": "The propensity of membrane proteins to associate and oligomerize is greater in lipid bilayers compared to that in detergent micelles.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that the propensity of membrane proteins to associate and oligomerize is greater in lipid bilayers compared to that in detergent micelles (Popot and Engelman, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "cd9f0992-457a-415d-b8e4-aa38776c5380",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C84",
+      "claim": "A2AR has been shown to assemble into homo-oligomers in transfected HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the cellular context, A2AR has been shown to assemble into homo-oligomers in transfected HEK293 cells (Canals et al., 2003) and in Cath.A differentiated neuronal cells (Vidi et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published cellular studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "cce4e308-4884-4a2a-bb2c-6cc9a2c6cbec",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C85",
+      "claim": "Approximately 75% of all class A GPCRs possess a C-terminus of >50 amino acid residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that ~75% and ~15% of all class A GPCRs possess a C-terminus of >50 and >100 amino acid residues (Mirzadegan et al., 2003), respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "23a89fe3-b08e-418b-84a3-c4e36e8984a2",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "claim_id": "C86",
+      "claim": "Approximately 15% of all class A GPCRs possess a C-terminus of >100 amino acid residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that ~75% and ~15% of all class A GPCRs possess a C-terminus of >50 and >100 amino acid residues (Mirzadegan et al., 2003), respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5201f7ef-447f-483d-b4e7-ec0ef651a6eb",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The intrinsically disordered C-terminus of A2AR drives receptor homo-oligomerization. Systematic truncation experiments demonstrate that both dimer and total oligomer levels decrease progressively with C-terminus shortening, with almost no oligomerization detected upon complete truncation at site A316.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C35, C36, and C37 are strongly supported by SEC experimental data (Figure 3B) showing a clear progressive decline in oligomerization with systematic C-terminus truncation. The experimental design is rigorous with multiple truncation variants, and the results consistently demonstrate the C-terminus drives oligomerization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "57c2301d-9f83-4e6c-a5ec-ba0d874b7ad1",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Residue C394 contributes to A2AR oligomerization through disulfide bond formation. C394X mutations significantly reduce dimer levels compared to wild-type, and TCEP reduction experiments show that disulfide bonds involving C394 stabilize dimers, though additional non-disulfide interactions also contribute to oligomerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 are well-supported by SEC data (Figure 2A) showing reduced oligomerization in C394X variants and TCEP reduction experiments (Figure 2B) demonstrating disulfide bond involvement. The persistence of dimers after TCEP treatment appropriately leads to the inference of additional interfacial sites beyond disulfide bonds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "710c59cb-4e3e-40e5-a7b3-f4fc766e5ac0",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The C-terminal segment encompassing residues 354-359, particularly the charged cluster 355ERR357, is a key constituent of the A2AR oligomeric interface. ERR:AAA mutations differentially affect oligomerization depending on C-terminus length, with greater effects on higher-order oligomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by SEC data showing a dramatic decrease in dimer levels between N359 and P354 truncation sites (Figure 3B) and ERR:AAA mutation experiments (Figure 3C). The differential effects of ERR:AAA mutations on FL-WT versus N359\u0394C variants provide evidence for context-dependent roles of these residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "79ef5e71-df9e-41a1-af94-dc1f32d7122d",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MD simulations reveal that A2AR dimers form multiple interfaces involving only the C-terminus, with transmembrane bundles not participating in dimeric interfaces. The majority of dimers are symmetric with C-termini directly interacting, stabilized by extensive electrostatic contacts and hydrogen bonds that decline progressively with C-terminus truncation. An allosteric mechanism exists where extended C-terminus stabilizes inter-A2AR interactions near heptahelical bundles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C51 are supported by CGMD and atomistic MD simulation data (Figures 4A-C). The simulations show multiple C-terminus-only interfaces, quantify electrostatic contacts and hydrogen bonds, and demonstrate progressive decline with truncation. However, the allosteric mechanism inference (C51) relies on computational observations that would benefit from experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "8e690ef3-7f33-4780-a14d-837ec5ebe2ad",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A2AR oligomerization is driven by depletion interactions enhanced with increasing ionic strength, involving the C-terminal segment after residue V334. At low ionic strength (0.15 M), oligomerization is near zero for all variants, indicating electrostatic and hydrogen-bonding interactions are not the dominant driving force. Higher ionic strengths progressively increase oligomerization for full-length A2AR but not for V334\u0394C, with the charged cluster 355ERR357 and segment after N359 promoting depletion interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 are well-supported by ionic strength experiments (Figure 5) showing differential effects on various A2AR variants. The near-zero oligomerization at low ionic strength despite intact electrostatic/hydrogen bonding capacity is a key observation supporting depletion interactions as the dominant force. The progressive increase with ionic strength for FL-WT but not truncated variants provides strong evidence for C-terminus involvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "6e5633fc-d8c4-4011-a9fd-4bcee1579133",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A2AR oligomerization is a thermodynamic process where oligomers have lower free energy than monomers, as demonstrated by SEC-separated monomers repopulating into oligomers. However, once formed, some oligomers are kinetically trapped and cannot redistribute into monomers, likely due to disulfide linkages that stabilize oligomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 are supported by SEC repopulation experiments (Figure 5\u2014figure supplement 1A) showing monomers redistribute into oligomers but not vice versa. The thermodynamic interpretation (C60) is appropriately inferred from monomer-to-oligomer repopulation. The kinetic trapping mechanism (C62-C63) is reasonably inferred from the asymmetric redistribution and TCEP reduction data, though direct evidence for disulfide-mediated kinetic trapping could be stronger.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "c1db00f0-3c27-4cac-986b-c699cb96cb87",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The isolated A2AR C-terminus peptide (without transmembrane domains) can directly interact with other C-terminal peptides to form aggregates in the presence of salting-out ions. At NaCl concentrations below 1 M, the peptide is dominantly soluble, but above 1 M it strongly aggregates. In contrast, 4 M GdnHCl (salting-in) shows no aggregation, demonstrating that depletion interactions drive C-terminus association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 are supported by UV-Vis aggregation assay data (Figure 6A) showing concentration-dependent aggregation with NaCl but not GdnHCl. This provides direct evidence that the C-terminus alone can drive association through depletion interactions. The experimental design appropriately tests salting-out versus salting-in effects to distinguish depletion interactions from other mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "5c030e48-296f-47c4-9d84-222ba40f89a2",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Hydrophobic interactions contribute to A2AR C-terminus association. DSF experiments show gradual exposure of hydrophobic residues with increasing temperature, followed by abrupt fluorescence quenching at ~65\u00b0C indicating aggregation. MD simulations reveal extensive non-polar contacts (60 for C394\u0394C) that decline with truncation, demonstrating that hydrophobic effects and depletion interactions drive A2AR oligomer formation through non-polar contacts among C-termini.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C75 are supported by DSF data (Figure 6B) showing temperature-dependent hydrophobic residue exposure and aggregation, and CGMD simulations (Figure 6\u2014figure supplement 1C) quantifying non-polar contacts. The combination of experimental and computational evidence provides strong support for hydrophobic interactions contributing to oligomerization through depletion interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "4ca09e24-63c0-4d94-a156-9e0f363e61a4",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple interaction types stabilize A2AR oligomerization, including disulfide linkages, hydrogen bonds, electrostatic interactions, and hydrophobic interactions. These diverse interactions are enhanced by depletion interactions, forming a network of malleable bonds that drives oligomerization and enables multiple oligomeric interfaces. The C-terminus, removed in all previous structural studies, is directly responsible for receptor oligomerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C76, C77, and C78 represent the main conclusions supported by the comprehensive experimental and computational data throughout the study. The multiple lines of evidence (TCEP reduction, MD simulations, ionic strength experiments, DSF, aggregation assays) converge to support the conclusion that diverse interactions enhanced by depletion forces drive C-terminus-mediated oligomerization with multiple interfaces.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "e5393d39-2bf6-4d79-95f3-55a4d54e1ad8",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "C-terminus truncation results in structural changes in the heptahelical bundles of A2AR dimers, with progressive increase in helical tilt of TM7 as more C-terminus is preserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80 and C81 are supported by MD simulation analysis (Figure 7B and Figure 7\u2014figure supplement 1) showing systematic changes in TM7 tilt angle with C-terminus length. However, these are computational predictions that would benefit from experimental validation. The functional implications of these structural changes remain to be determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "5f73dc81-8bc8-41ab-afa9-85e24b8b02b8",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SEC analysis separates A2AR into distinct oligomeric species (HMW oligomer, dimer, and monomer), with peak assignments verified by SEC-MALS experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C26 describe the methodological foundation for quantifying oligomerization. The SEC separation is clearly shown in Figure 1, and the peak assignment is validated by citation to previous SEC-MALS work. This provides a reliable basis for the oligomerization quantification throughout the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "000ea8e1-d26c-4b63-9ffa-27a79ec068c1",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "GPCR oligomers have been shown to exist with functional properties distinct from monomers in ligand binding, G protein coupling, downstream signaling, and receptor internalization/desensitization. GPCR oligomers with multiple interfaces can give rise to diverse ways these complexes are formed and their functions modulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C6-C10 are background claims supported by extensive citations to published literature. These establish the context and importance of studying GPCR oligomerization but do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "d85723a4-c960-4fcc-ac8d-f7dee1e579fd",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous structural and computational studies have identified multiple oligomeric interfaces in various GPCRs including \u03b21AR, \u03bc-OR, A2AR, M3 muscarinic receptor, rhodopsin, opsin, and NTS1R, with some interfaces being symmetric and others asymmetric, and evidence for dynamic interconversion between interfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 are background claims supported by citations to published crystal structures and computational studies. These provide context for the current study's findings on A2AR oligomerization but do not represent novel results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "0c63d13a-11f4-4136-8a99-d8a4217200c3",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The C-terminus of GPCRs is typically an intrinsically disordered region commonly removed in structural studies. Previous evidence suggests C-terminal truncations affect GPCR signaling and may abolish oligomerization, with specific studies showing effects on A2AR clustering, oligomerization, and heteromerization with D2R.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C24 are background claims supported by citations to published literature and the authors' previous work. These establish the rationale for investigating C-terminus role in oligomerization but do not represent novel findings from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "41beff23-74ab-423f-8411-9d6c2c85e1e2",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Residue C394 is highly conserved and a C-terminal cysteine is almost always present in A2AR homologs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by citation to a database/comparative study. This provides evolutionary context for the importance of C394 but is not a novel finding from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "cbcb77d8-6783-4f10-9d26-759a061ef044",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Truncation of the C-terminus significantly reduced receptor association with G\u03b1s and cAMP production in cellular assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is supported by citation to a published cellular study. This provides functional context for C-terminus importance but is not a finding from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "763f68d3-b248-4f0d-beff-3aa2a79d8c6a",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Membrane proteins show greater propensity to oligomerize in lipid bilayers compared to detergent micelles, and A2AR has been shown to form homo-oligomers in transfected cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83 and C84 are supported by citations to published literature. These address the limitation of studying A2AR in detergent micelles and provide evidence for physiological relevance, but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    },
+    {
+      "id": "884e73d0-8742-4589-9977-c22e16ded4dd",
+      "content_id": "ce3d8076-f4b6-4da5-8e79-5fe31109cfaa",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Approximately 75% of class A GPCRs possess a C-terminus >50 amino acids, and ~15% possess a C-terminus >100 amino acids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85 and C86 are supported by citation to published literature. These provide context for the potential generalizability of findings but are not novel results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:01:47.755180Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d6eabc7c-e872-404f-a226-e7bd62480d69",
+      "result_id": "5201f7ef-447f-483d-b4e7-ec0ef651a6eb"
+    },
+    {
+      "claim_id": "1569f31e-12a4-49ff-b6c2-666bfdb454d7",
+      "result_id": "5201f7ef-447f-483d-b4e7-ec0ef651a6eb"
+    },
+    {
+      "claim_id": "2dfde6e8-31b3-4414-8594-93ca00e6277c",
+      "result_id": "5201f7ef-447f-483d-b4e7-ec0ef651a6eb"
+    },
+    {
+      "claim_id": "84f0a59d-8a49-4826-90de-476584b827a5",
+      "result_id": "5201f7ef-447f-483d-b4e7-ec0ef651a6eb"
+    },
+    {
+      "claim_id": "48a870ab-327e-49fd-9260-cabfb7ddecc4",
+      "result_id": "5201f7ef-447f-483d-b4e7-ec0ef651a6eb"
+    },
+    {
+      "claim_id": "476425e8-c123-4b04-8ad0-227d191aa262",
+      "result_id": "57c2301d-9f83-4e6c-a5ec-ba0d874b7ad1"
+    },
+    {
+      "claim_id": "84b74a92-be90-4e2c-acaa-298fedd4ac8e",
+      "result_id": "57c2301d-9f83-4e6c-a5ec-ba0d874b7ad1"
+    },
+    {
+      "claim_id": "c7a7c661-d1d1-4d2e-8885-68a1270b1a40",
+      "result_id": "57c2301d-9f83-4e6c-a5ec-ba0d874b7ad1"
+    },
+    {
+      "claim_id": "d27f9431-fecc-4a37-b54d-48a92a35ad78",
+      "result_id": "57c2301d-9f83-4e6c-a5ec-ba0d874b7ad1"
+    },
+    {
+      "claim_id": "165a55bd-62bb-44da-8b8b-660aa73b264b",
+      "result_id": "57c2301d-9f83-4e6c-a5ec-ba0d874b7ad1"
+    },
+    {
+      "claim_id": "10721461-8df6-4a2a-ab54-4c39569c192c",
+      "result_id": "57c2301d-9f83-4e6c-a5ec-ba0d874b7ad1"
+    },
+    {
+      "claim_id": "2b05ef70-851a-4240-a5fe-485d84725102",
+      "result_id": "57c2301d-9f83-4e6c-a5ec-ba0d874b7ad1"
+    },
+    {
+      "claim_id": "8850c87f-df1c-4561-96f8-8a2af7bb212d",
+      "result_id": "57c2301d-9f83-4e6c-a5ec-ba0d874b7ad1"
+    },
+    {
+      "claim_id": "e946a997-6a76-40dc-bc48-b09b8ba2d15b",
+      "result_id": "710c59cb-4e3e-40e5-a7b3-f4fc766e5ac0"
+    },
+    {
+      "claim_id": "cb01b404-5939-40da-aacd-7904da6019ea",
+      "result_id": "710c59cb-4e3e-40e5-a7b3-f4fc766e5ac0"
+    },
+    {
+      "claim_id": "e055be07-bec4-4a9f-8524-1dab94104d9d",
+      "result_id": "710c59cb-4e3e-40e5-a7b3-f4fc766e5ac0"
+    },
+    {
+      "claim_id": "03ed71a9-c6a9-4a60-8678-1c7991b316d2",
+      "result_id": "710c59cb-4e3e-40e5-a7b3-f4fc766e5ac0"
+    },
+    {
+      "claim_id": "7e0086f7-cc2c-4d2c-b899-7a885672f54f",
+      "result_id": "710c59cb-4e3e-40e5-a7b3-f4fc766e5ac0"
+    },
+    {
+      "claim_id": "296cae3b-ac47-407d-b4c8-fe9970b34bd7",
+      "result_id": "79ef5e71-df9e-41a1-af94-dc1f32d7122d"
+    },
+    {
+      "claim_id": "6779cf2b-a97c-4058-8cd9-69d1bd13d4f7",
+      "result_id": "79ef5e71-df9e-41a1-af94-dc1f32d7122d"
+    },
+    {
+      "claim_id": "480df0b8-61c5-427e-a7ce-d311883dd96a",
+      "result_id": "79ef5e71-df9e-41a1-af94-dc1f32d7122d"
+    },
+    {
+      "claim_id": "2b3990cd-7930-4500-a2d4-e8b06f6044a9",
+      "result_id": "79ef5e71-df9e-41a1-af94-dc1f32d7122d"
+    },
+    {
+      "claim_id": "e18f8fb2-fd83-4d3e-b77d-67784961ec16",
+      "result_id": "79ef5e71-df9e-41a1-af94-dc1f32d7122d"
+    },
+    {
+      "claim_id": "0a11758a-f5f1-4b25-8924-860386765144",
+      "result_id": "79ef5e71-df9e-41a1-af94-dc1f32d7122d"
+    },
+    {
+      "claim_id": "a250c431-4643-400b-a159-2e55cd8f27ac",
+      "result_id": "79ef5e71-df9e-41a1-af94-dc1f32d7122d"
+    },
+    {
+      "claim_id": "9c56fecc-35bb-4c8a-9b70-53525bb2dec0",
+      "result_id": "79ef5e71-df9e-41a1-af94-dc1f32d7122d"
+    },
+    {
+      "claim_id": "01f0a539-07bc-42c6-a8b7-310e75e5088d",
+      "result_id": "79ef5e71-df9e-41a1-af94-dc1f32d7122d"
+    },
+    {
+      "claim_id": "71454004-3fb0-4557-a9e6-14790ff10cca",
+      "result_id": "8e690ef3-7f33-4780-a14d-837ec5ebe2ad"
+    },
+    {
+      "claim_id": "7d627ec5-7681-4f28-96f7-5ab58ff10d3b",
+      "result_id": "8e690ef3-7f33-4780-a14d-837ec5ebe2ad"
+    },
+    {
+      "claim_id": "f3eba1f6-d577-482b-b559-ea1e08970b56",
+      "result_id": "8e690ef3-7f33-4780-a14d-837ec5ebe2ad"
+    },
+    {
+      "claim_id": "2dfe2e59-dc5c-4cfb-910c-0972648184cb",
+      "result_id": "8e690ef3-7f33-4780-a14d-837ec5ebe2ad"
+    },
+    {
+      "claim_id": "75059a0d-af8f-4e66-b514-424e3c206c15",
+      "result_id": "8e690ef3-7f33-4780-a14d-837ec5ebe2ad"
+    },
+    {
+      "claim_id": "3e850e65-e64d-4bf0-8ab0-691c4127f9ed",
+      "result_id": "8e690ef3-7f33-4780-a14d-837ec5ebe2ad"
+    },
+    {
+      "claim_id": "509ef6af-dc3e-4408-886f-fddb631bdac3",
+      "result_id": "8e690ef3-7f33-4780-a14d-837ec5ebe2ad"
+    },
+    {
+      "claim_id": "ff0359f4-8322-4b07-bed6-abc06d03ff1f",
+      "result_id": "6e5633fc-d8c4-4011-a9fd-4bcee1579133"
+    },
+    {
+      "claim_id": "ceccba9a-0931-444e-847e-8bea832524b2",
+      "result_id": "6e5633fc-d8c4-4011-a9fd-4bcee1579133"
+    },
+    {
+      "claim_id": "43f1edd4-a475-4ae4-9dcb-fa17e9fee26b",
+      "result_id": "6e5633fc-d8c4-4011-a9fd-4bcee1579133"
+    },
+    {
+      "claim_id": "b00070a4-dc09-4996-9ba4-f771d29162c7",
+      "result_id": "6e5633fc-d8c4-4011-a9fd-4bcee1579133"
+    },
+    {
+      "claim_id": "c128e014-133d-4457-beca-6b7c3fd96471",
+      "result_id": "6e5633fc-d8c4-4011-a9fd-4bcee1579133"
+    },
+    {
+      "claim_id": "187cec8f-f4cf-4d85-ae9d-441616e52688",
+      "result_id": "c1db00f0-3c27-4cac-986b-c699cb96cb87"
+    },
+    {
+      "claim_id": "1f6b85db-acda-4487-abf0-087d495af4ab",
+      "result_id": "c1db00f0-3c27-4cac-986b-c699cb96cb87"
+    },
+    {
+      "claim_id": "b4dd19f5-2f8b-4f51-9743-f422ef57c64f",
+      "result_id": "c1db00f0-3c27-4cac-986b-c699cb96cb87"
+    },
+    {
+      "claim_id": "2c920091-b9cb-4584-a092-6b13551466d7",
+      "result_id": "c1db00f0-3c27-4cac-986b-c699cb96cb87"
+    },
+    {
+      "claim_id": "730489a9-0d34-49cf-b65b-579dbf99eda6",
+      "result_id": "c1db00f0-3c27-4cac-986b-c699cb96cb87"
+    },
+    {
+      "claim_id": "458b38d8-2c91-4e33-b53a-e4475764bc2d",
+      "result_id": "5c030e48-296f-47c4-9d84-222ba40f89a2"
+    },
+    {
+      "claim_id": "8b10075f-5d7e-4eed-8bcb-d1c8653c20b4",
+      "result_id": "5c030e48-296f-47c4-9d84-222ba40f89a2"
+    },
+    {
+      "claim_id": "1154f86b-8ef1-4ef9-a7e0-78f0eabf244b",
+      "result_id": "5c030e48-296f-47c4-9d84-222ba40f89a2"
+    },
+    {
+      "claim_id": "40533fd3-d792-47ef-b48a-b6ed402e6db9",
+      "result_id": "5c030e48-296f-47c4-9d84-222ba40f89a2"
+    },
+    {
+      "claim_id": "08e9a15a-0507-4623-a0e7-1c4035708d76",
+      "result_id": "5c030e48-296f-47c4-9d84-222ba40f89a2"
+    },
+    {
+      "claim_id": "e56c1c16-5ea8-475b-987b-04e5a39eb9ac",
+      "result_id": "5c030e48-296f-47c4-9d84-222ba40f89a2"
+    },
+    {
+      "claim_id": "f2cfff98-c564-4667-9fa2-c48c06714b56",
+      "result_id": "5c030e48-296f-47c4-9d84-222ba40f89a2"
+    },
+    {
+      "claim_id": "c18586f4-c299-48ed-bd5d-5194608cfac3",
+      "result_id": "4ca09e24-63c0-4d94-a156-9e0f363e61a4"
+    },
+    {
+      "claim_id": "3592e683-3a50-4656-b915-689a1444c1ba",
+      "result_id": "4ca09e24-63c0-4d94-a156-9e0f363e61a4"
+    },
+    {
+      "claim_id": "0687e63d-4634-4654-86f5-67d40d31f3f7",
+      "result_id": "4ca09e24-63c0-4d94-a156-9e0f363e61a4"
+    },
+    {
+      "claim_id": "185fc11d-b01d-49e8-8bea-ea03b51fbe81",
+      "result_id": "4ca09e24-63c0-4d94-a156-9e0f363e61a4"
+    },
+    {
+      "claim_id": "4c3deed9-857f-4154-9180-d098ffe036d5",
+      "result_id": "4ca09e24-63c0-4d94-a156-9e0f363e61a4"
+    },
+    {
+      "claim_id": "147d12ba-a143-45f4-9a93-8f489f15b3c4",
+      "result_id": "e5393d39-2bf6-4d79-95f3-55a4d54e1ad8"
+    },
+    {
+      "claim_id": "4f445922-f5b4-46b0-b0b3-121794d41d59",
+      "result_id": "e5393d39-2bf6-4d79-95f3-55a4d54e1ad8"
+    },
+    {
+      "claim_id": "8de1f305-4e4f-4823-a7f7-e4fd9d18adb7",
+      "result_id": "5f73dc81-8bc8-41ab-afa9-85e24b8b02b8"
+    },
+    {
+      "claim_id": "8e8ee136-93e8-493d-92e5-734d833de5e8",
+      "result_id": "5f73dc81-8bc8-41ab-afa9-85e24b8b02b8"
+    },
+    {
+      "claim_id": "7c1a3db6-620f-420c-b1e9-acd7615ebde8",
+      "result_id": "000ea8e1-d26c-4b63-9ffa-27a79ec068c1"
+    },
+    {
+      "claim_id": "3a9865b2-fe97-4321-b26c-ea3daa4ae18e",
+      "result_id": "000ea8e1-d26c-4b63-9ffa-27a79ec068c1"
+    },
+    {
+      "claim_id": "6aed1210-551c-46a6-9524-a3a2dfbccb72",
+      "result_id": "000ea8e1-d26c-4b63-9ffa-27a79ec068c1"
+    },
+    {
+      "claim_id": "807b9445-b12f-4dbe-ad23-f3eb4c7f5b06",
+      "result_id": "000ea8e1-d26c-4b63-9ffa-27a79ec068c1"
+    },
+    {
+      "claim_id": "87af1203-c678-4d08-8552-38c6d676bd9b",
+      "result_id": "000ea8e1-d26c-4b63-9ffa-27a79ec068c1"
+    },
+    {
+      "claim_id": "9052ec3f-7294-4703-a202-ab156c326698",
+      "result_id": "000ea8e1-d26c-4b63-9ffa-27a79ec068c1"
+    },
+    {
+      "claim_id": "d1b84ded-5b16-4f8e-a0eb-8523280d4ccc",
+      "result_id": "d85723a4-c960-4fcc-ac8d-f7dee1e579fd"
+    },
+    {
+      "claim_id": "93e02bf4-d1c9-4d1d-8591-ab6055239719",
+      "result_id": "d85723a4-c960-4fcc-ac8d-f7dee1e579fd"
+    },
+    {
+      "claim_id": "3e7f1aee-10f8-4bf8-9440-2faaa56b26d8",
+      "result_id": "d85723a4-c960-4fcc-ac8d-f7dee1e579fd"
+    },
+    {
+      "claim_id": "8a557ae3-a6d2-4634-b47b-561022cf2918",
+      "result_id": "d85723a4-c960-4fcc-ac8d-f7dee1e579fd"
+    },
+    {
+      "claim_id": "492f5822-77d8-4c4c-aca6-91366e81fb69",
+      "result_id": "d85723a4-c960-4fcc-ac8d-f7dee1e579fd"
+    },
+    {
+      "claim_id": "f870587e-6743-4b49-b5b2-08be60683de0",
+      "result_id": "d85723a4-c960-4fcc-ac8d-f7dee1e579fd"
+    },
+    {
+      "claim_id": "f5311d8b-dc37-4871-bc9c-067c824f8fb6",
+      "result_id": "0c63d13a-11f4-4136-8a99-d8a4217200c3"
+    },
+    {
+      "claim_id": "81263020-e9c8-4f3e-9d3f-3fe85d44afc4",
+      "result_id": "0c63d13a-11f4-4136-8a99-d8a4217200c3"
+    },
+    {
+      "claim_id": "f300767e-807d-48e2-a790-f706a6894969",
+      "result_id": "0c63d13a-11f4-4136-8a99-d8a4217200c3"
+    },
+    {
+      "claim_id": "b0e18f80-5bc0-4346-ac94-770bc48fd12e",
+      "result_id": "0c63d13a-11f4-4136-8a99-d8a4217200c3"
+    },
+    {
+      "claim_id": "9b2c30fe-54f5-42d4-bae4-82199f1e56d0",
+      "result_id": "0c63d13a-11f4-4136-8a99-d8a4217200c3"
+    },
+    {
+      "claim_id": "23748d98-3805-44c7-8057-dfa031c668c4",
+      "result_id": "0c63d13a-11f4-4136-8a99-d8a4217200c3"
+    },
+    {
+      "claim_id": "c7af0c30-67c0-4317-8d10-c853919c5fde",
+      "result_id": "0c63d13a-11f4-4136-8a99-d8a4217200c3"
+    },
+    {
+      "claim_id": "09415929-9e7b-4d13-9526-5a362252ae41",
+      "result_id": "0c63d13a-11f4-4136-8a99-d8a4217200c3"
+    },
+    {
+      "claim_id": "e6e1ae0e-8e41-4bdc-9a48-a557b6b21013",
+      "result_id": "41beff23-74ab-423f-8411-9d6c2c85e1e2"
+    },
+    {
+      "claim_id": "d79e645e-0ae4-4998-b25f-040f7a2a1d74",
+      "result_id": "cbcb77d8-6783-4f10-9d26-759a061ef044"
+    },
+    {
+      "claim_id": "3d4b9185-caa8-43dd-ba2b-eec6b669d703",
+      "result_id": "763f68d3-b248-4f0d-beff-3aa2a79d8c6a"
+    },
+    {
+      "claim_id": "cd9f0992-457a-415d-b8e4-aa38776c5380",
+      "result_id": "763f68d3-b248-4f0d-beff-3aa2a79d8c6a"
+    },
+    {
+      "claim_id": "cce4e308-4884-4a2a-bb2c-6cc9a2c6cbec",
+      "result_id": "884e73d0-8742-4589-9977-c22e16ded4dd"
+    },
+    {
+      "claim_id": "23a89fe3-b08e-418b-84a3-c4e36e8984a2",
+      "result_id": "884e73d0-8742-4589-9977-c22e16ded4dd"
+    }
+  ],
+  "comparisons": []
+}

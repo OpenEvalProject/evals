@@ -1,0 +1,1999 @@
+{
+  "submission": {
+    "id": "b108ea30-1d8f-4089-9e06-824d9011d46f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:13:51.575352Z",
+    "updated_at": "2025-12-03T16:13:51.575352Z"
+  },
+  "content": [
+    {
+      "id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "submission_id": "b108ea30-1d8f-4089-9e06-824d9011d46f",
+      "content_type": "manuscript",
+      "content_text": "# Depletion or cleavage of cohesin during anaphase differentially affects chromatin structure and segregation\n\n## Authors\n\n- Jonay Garcia-Luis<sup>1</sup>\n- H\u00e9l\u00e8ne Bordelet<sup>2</sup> ([ORCID: 0000-0002-8190-2326](https://orcid.org/0000-0002-8190-2326))\n- Agn\u00e8s Thierry<sup>2</sup>\n- Romain Koszul<sup>2</sup> ([ORCID: 0000-0002-3086-1173](https://orcid.org/0000-0002-3086-1173)) \u2020\n- Luis Aragon<sup>1</sup> ([ORCID: 0000-0003-0634-6742](https://orcid.org/0000-0003-0634-6742)) \u2020\n\n### Affiliations\n\n1. DNA motors Group, MRC London Institute of Medical Sciences London United Kingdom ([ROR:05p1n6x86](https://ror.org/05p1n6x86))\n2. Institut Pasteur, CNRS UMR 3525, Universit\u00e9 Paris Cit\u00e9, Unit\u00e9 R\u00e9gulation Spatiale des G\u00e9nomes Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))\n\n\u2020 Corresponding author\n\n## Abstract\n\nChromosome segregation requires both the separation of sister chromatids and the sustained condensation of chromatids during anaphase. In yeast cells, cohesin is not only required for sister chromatid cohesion but also plays a major role determining the structure of individual chromatids in metaphase. Separase cleavage is thought to remove all cohesin complexes from chromosomes to initiate anaphase. It is thus not clear how the length and organisation of segregating chromatids is maintained during anaphase in the absence of cohesin. Here, we show that degradation of cohesin at the anaphase onset causes aberrant chromatid segregation. Hi-C analysis on segregating chromatids demonstrates that cohesin depletion causes loss of intrachromatid organisation. Surprisingly, tobacco etch virus (TEV)-mediated cleavage of cohesin does not dramatically disrupt chromatid organisation in anaphase, explaining why bulk segregation is achieved. In addition, we identified a small pool of cohesin complexes bound to telophase chromosomes in wild-type cells and show that they play a role in the organisation of centromeric regions. Our data demonstrates that in yeast cells cohesin function is not over in metaphase, but extends to the anaphase period when chromatids are segregating.\n\n## Introduction\n\nThe establishment and maintenance of sister chromatid cohesion following DNA replication is a requirement for the equal segregation of chromosomes during cell division. Cohesin is a multisubunit protein complex that holds sister chromatids together (Guacci et al., 1997; Michaelis et al., 1997) and promotes condensation of metaphase chromosomes (Guacci et al., 1997). The core proteins of cohesin are a pair of structural maintenance of chromosomes (SMC) proteins, Smc1 and Smc3, and the conserved kleisin factor Mcd1/Scc1. Together they form a tripartite complex that has a rod-shaped structure (B\u00fcrmann et al., 2019). Cohesin complexes also contain the HEAT-repeat proteins Scc3 and Pds5 (Hartman et al., 2000; Losada et al., 2000). In addition to its role in sister chromatid cohesion, studies have shown that cohesin also organises chromosomes through the formation of chromatin loops in interphase nuclei (Rao et al., 2017) and mitotic chromatids (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017). The role of cohesin in nuclear organisation is thought to depend on its ability to extrude DNA loops, an activity that was recently confirmed in vitro with human cohesin (Davidson et al., 2019; Kim et al., 2019).\n\nSeparase cleaves cohesin\u2019s kleisin Mcd1/Rad21/Scc1 subunit (thereafter referred to as Mcd1) in mitosis (Uhlmann et al., 1999). Engineered Mcd1 cleavage in metaphase, using TEV protease expression and TEV recognition sites in Mcd1, triggers bulk separation of the genome (Uhlmann et al., 2000), demonstrating that one of cohesin\u2019s functions is to hold sister chromatids together prior to their separation. Recent work using chromosome capture (Hi-C) techniques has demonstrated that cohesin mediates intrachromosomal loops that are responsible for compacting yeast chromosome arms in metaphase cells, independently of cohesin\u2019s role in sister chromatid cohesion (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017).\n\nIn mammalian cells cohesin is responsible for the organisation of the genome into loops during interphase (Rao et al., 2017). During prophase the bulk of cohesin dissociates from chromosome arms (Sumara et al., 2000), however since sister chromatids remain paired, it is likely that some cohesin complexes are retained on chromosomes. At metaphase, mammalian cohesin is mainly localised to centromeres where it provides cohesion (Sumara et al., 2000), while the related SMC complexes, condensin I and II (CI and CII), take over the role of folding mitotic chromosome arms into loops (Gibcus et al., 2018). CII organises large (200\u2013400 kb) loops, while CI sub-divides these into smaller loops (80 kb) (Gibcus et al., 2018). During interphase CI is excluded from the nucleus and CII, although nuclear, is prevented from acting on chromosomal DNAs by a nuclear protein, Mcph1 (Yamashita et al., 2011). Interestingly, a rapid switch from condensin binding to cohesin binding between anaphase and cytokinesis has been reported (Abramo et al., 2019). However, the function of this chromosome-bound cohesin in telophase cells is currently unknown.\n\nYeast cells lack a CII complex, and CI role in chromosome organisation in mitosis is restricted to the ribosomal gene array (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017). Instead, yeast condensin is involved in the separation of chromosome arms (Leonard et al., 2015) through a role that promotes decatenation of sister chromatids (Baxter et al., 2011; Sen et al., 2016).\n\nThe demonstration that yeast cohesin organises loops on the arms of metaphase chromosomes (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017) together with the limited effect observed for condensin on yeast chromosome condensation (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017) and the cleavage of cohesin by separase at the anaphase onset (Uhlmann et al., 2000) present a conundrum currently unexplained; how is the organisation/compaction of yeast chromatids maintained as they are segregating during anaphase? Here, we have investigated this question. We have studied the organisation of chromosome arms during segregation while we compromised cohesin function using two contrasted experimental approaches: auxin-mediated degradation and TEV-mediated cleavage of Mcd1. We demonstrate that degradation of Mcd1 severely disrupts chromosome structure and consequently the segregation of chromatids in anaphase. We demonstrate that similarly to mammalian cells, a small population of cohesin complexes are present on segregating chromatids during anaphase/telophase and show that they are important for centromere organisation. Together, these findings demonstrate that yeast cohesin has a role on segregating chromatids during anaphase.\n\n## Results\n\n### Degradation of cohesin\u2019s kleisin at the anaphase onset causes mitotic catastrophe\n\nTo study the role of cohesin on chromosome organisation during anaphase, we searched for an approach to induce the rapid removal of cohesin\u2019s kleisin subunit, Mcd1. To this aim, we used an auxin-inducible degron allele of Mcd1 (MCD1-AID) (Nishimura et al., 2009) which allows rapid degradation by poly-ubiquitylation upon exposure to auxin.\n\nTo evaluate the effect of Mcd1 degradation during chromatid segregation, we blocked cells using transcriptional depletion of Cdc20 (an activator of the anaphase-promoting complex). Under this experimental condition, cells are arrested with chromosomes bipolarly attached to mitotic spindles. Removal of cohesin by artificial cleavage of Mcd1 in Cdc20-depleted cells triggers an anaphase-like stage where chromatids segregate to opposite cell poles, despite the fact that cells are biochemically in metaphase (Uhlmann et al., 2000).\n\nIn cdc20-arrested cells, we observed full degradation of Mcd1-aid 30\u201360 min after addition of auxin (Figure 1a), demonstrating the rapid and efficient removal of Mcd1 in this experimental setup. Like TEV-induced anaphases, auxin-mediated degradation of Mcd1 in cdc20-arrested cells precipitates an anaphase-like stage (Figure 1b), however we observed severe disruption of nuclear segregation (Figure 1b), with many nuclei appearing to be stuck in anaphase with elongated nuclear masses for extended periods (Figure 1b\u2013c). To quantify the segregation defects in these cells, we introduced chromosome tags at different genomic locations, and scored the timing and efficiency of their separation. First, we used tags on the arm (tetO::469) and telomere (tetO::558) regions of chromosome 5, a small chromosome in the yeast genome (Figure 1c\u2013d). After 180 min of auxin addition to cdc20-blocked cultures, we observed that 48% of the cells were still stuck in anaphase (Figure 1c), 35% of cells showed correct segregation of arm tags, and 20% showed missegregation (Figure 1c). Segregation errors were even higher for telomeric regions (Figure 1d) and larger chromosomes (Figure 1\u2014figure supplement 1). These results demonstrate that rapid removal of Mcd1 by degradation causes an anaphase-like state with impaired separation of chromatids.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig1-v2.jpg)\n\n**Figure 1.:** (a) Cells containing MCD1 tagged with the auxin degron (MCD1-AID) were arrested in metaphase (Cdc20 arrest). The culture was split in two, one half was treated with DMSO and the other with 6 mM auxin (IAA) to degrade Mcd1. Samples were taken for an anti-Myc immunoblotting to detect Mcd1. (b) Representative images of cells 30\u201390 min after degradation of Mcd1. Cells were analysed for nuclear separation (DAPI stain, red) and chromosome segregation (green fluorescent protein [GFP] dots marking the middle of chromosome V; tet:469, green). (c) Analysis of nuclear and chromosome segregation using DAPI and GFP dots marking the middle of chromosome V (tet:469). Experimental conditions for the timecourse are as described in (a). Each timepoint represents the average of the percentage of three biological replicas of at least 100 cells per timepoint. Error bars show SEM. (d) Analysis of nuclear and chromosome segregation using DAPI and GFP dots marking the telomeric region of chromosome V (tet:558). Experimental conditions for the timecourse are as described in (a). Each timepoint represents the average of the percentage of three biological replicas of at least 100 cells per timepoint. Error bars show SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Cells with MCD1 tagged with the auxin degron (MCD1-AID) and with the centromere of the chromosome IV (tetO::448) marked with green fluorescent protein (GFP) were synchronised in metaphase (Cdc20). The culture was split in two, one of them was treated with DMSO 1% and the other with 1 mM of IAA to degrade Mcd1-AID. Samples were collected at the indicated timepoints and chromosome segregation analysis (top) and immunoblotting to follow Mcd1-aid (bottom) was performed. (b) Cells treated as in (a), but with the subtelomere of chromosome IV (tetO::1513) marked with GFP. Each timepoint represents the percentage of cells at the indicated cell cycle stage. At least 100 cells were quantified for each timepoint.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Schematic of engineered MCD1 with the wild-type separase cleavage site maintained in the position 180 and the separase cleavage position 268 replaced by the tobacco etch virus (TEV) cleavage sequence ENLYFQG (upper panel). Cells were arrested in metaphase (Cdc20 arrest) and induced to express TEV protease. Samples were taken every 30 min for 3 hr for immunoblotting against HA epitope to follow the C-terminus of Mcd1. (b) Nuclear segregation in TEV-induced anaphase. Nuclear segregation was monitored using DAPI staining of cells. Experimental protocol as in (a). (c) Chromosome segregation in TEV-induced anaphase. Chromosome tags inserted in a centromere proximal site (Ura3::tetO) on chromosome V were monitored for segregation. Experimental protocol as in (a). Each timepoint represents the average of the percentage of two biological replicas of at least 100 cells at the indicated cell cycle stage. Error bars represent the SEM.\n\n### TEV-induced cleavage allows bulk genome separation with minor segregation errors\n\nPrevious studies have shown that engineered cleavage of Mcd1 in cdc20 arrests, using TEV protease expression and TEV recognition sites on Mcd1, triggers an anaphase-like division where nuclear masses separate (Uhlmann et al., 2000). We re-evaluated segregation in TEV-induced anaphases using the previously published strain and protocol (Uhlmann et al., 2000). Induction of TEV expression led to cleavage of Mcd1 after 60 min (Figure 1\u2014figure supplement 2) as expected. Bulk nuclear segregation occurred 90\u2013120 min following the induction as it had been previously reported (Uhlmann et al., 2000). Importantly, chromosome tags located on the centromere region of chromosome 5 segregated efficiently (Figure 1\u2014figure supplement 2). Therefore, unlike auxin-mediated degradation of Mcd1, and consistent with previous reports (Uhlmann et al., 2000), TEV cleavage allows nuclear segregation.\n\nWe noticed that in TEV-induced anaphases, the cleaved C-terminal fragment of Mcd1 was fully stable during the entire timecourse (Figure 1\u2014figure supplement 2). The lack of Mcd1 fragment degradation after TEV cleavage stems from the fact that TEV protease cleavage occurs following the glutamine (Q) residue of the TEV recognition site (\u2018ENLYFQ*G\u2019) leaving a glycine (G) amino acid residue at the N-termini (referred to as TEVG), which is not well recognised by the N-rule pathway (Varshavsky, 2011). In contrast, separase cleavage leaves an arginine (R) residue at the N-termini of the cleaved product (\u2018SVEQGR*R\u2019), which is a good substrate for N-end rule degradation (Varshavsky, 2011). Interestingly, Beckouet et al. have shown that following TEV-induced cleavage not only the C-terminal fragment of Mcd1 is stabilised but also the N-terminal (Beckou\u00ebt et al., 2016). This raises the possibility that Mcd1 fragments could remain associated to the Smc core subunits following TEV cleavage. To test whether this is the case, we tagged Smc3 with the V5 epitope and Mcd1 with FLAG and HA tags at the N- and C-terminus, respectively (Figure 2). We performed IPs on synchronised TEV anaphases (Figure 2) to follow whether the cleaved fragments stay associated to the cohesin Smc core. Both N- and C-terminal Mcd1 fragments were immunoprecipitated by Smc3 after TEV cleavage (Figure 2\u2014figure supplement 1). Therefore, the structural integrity of cohesin tripartite complex remains intact after TEV cleavage of its kleisin subunit. Next, we sought to test whether inducing full degradation of Mcd1 fragments after TEV cleavage generates a similar phenotype to that observed in anaphases induced by degradation of Mcd1 (Figure 1c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig2-v2.jpg)\n\n**Figure 2.:** Schematic of engineered cohesin with MCD1 tagged in N-terminus with FLAG, the C-terminus with HA, and with a substitution of the 268 separase cleavage site with the TEV cleavage sequence ENLYFQG. Cells also harboured a copy of Smc3 tagged in C-terminus with V5 (left). Cells were synchronised using a Cdc20 arrest and TEV was induced to cleave Mcd1. Samples were taken every 30 min for 2 hr and Smc3 immunoprecipitated using anti-V5 antibody. We used immunoblotting with anti-FLAG and HA antibodies to detect the cleaved fragments of Mcd1 (right).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Samples were taken after 2 hr of induction of the TEV protease and Smc3-V5 was pulled down using anti-V5 antibody followed by anti-FLAG or HA immunoblotting to detect Mcd1 N-terminus or C-terminus cleaved fragments, respectively. A negative control without V5 tag in Smc3 was included.\n\nTo this aim, we used a TEV recognition site on Mcd1 that was able to yield a C-terminal fragment with a terminal amino acid recognised by the N-end rule pathway. We found this to be the case when we used the TEV recognition site \u2018ENLYFQF\u2019 (referred to as TEVF) (Figure 3a). This site leaves a phenylalanine, rather than a glycine, as the N-terminal amino acid after TEV cleavage. Importantly, N-terminal phenylalanine is a good substrate for N-end rule degradation (Varshavsky, 2011). We used FLAG and HA tags at the N- and C-terminus of Mcd1, respectively, to detect the two products generated by TEV cleavage and compared their stability in Mcd1 proteins containing the classical \u2018ENLYFQG\u2019 (TEVG) or \u2018ENLYFQF\u2019 (TEVF) sites (Figure 3a\u2013b). Cleavage of TEVG generated stable N- and C-terminal fragments as expected (Figure 3b). In contrast, both N- and C-terminal fragments were rapidly degraded after cleavage on TEVF sites (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig3-v2.jpg)\n\n**Figure 3.:** (a) Cells with MCD1 tagged at its N-terminus with FLAG and its C-terminus with HA, and with the 268 separase cleavage site replaced by the TEV recognition site ENLYFQF (TEVF) (top right diagram) were arrested in Cdc20 before TEV induction. Samples were taken every 30 min for 2 hr and immunoblotted against FLAG or HA to detect Mcd1 N-terminus and C-terminus cleaved fragments, respectively (left). Nuclear segregation was monitored during the TEV-induced anaphase with DAPI staining (bottom right graph). Error bars are standard deviations. (b) Cells with MCD1 tagged at its N-terminus with FLAG and its C-terminus with HA, and with the 268 separase cleavage site replaced by the TEV recognition site ENLYFQG (TEVG) (top right diagram) were arrested in Cdc20 before TEV induction. Samples were taken every 30 min for 2 hr and immunoblotted against FLAG or HA to detect Mcd1 N-terminus and C-terminus cleaved fragments, respectively (left). Nuclear segregation was monitored during the TEV-induced anaphase with DAPI staining (bottom right graph). Error bars are standard deviations. (c) Cells carrying MCD1 with the 268 separase cleavage site substituted for either TEV cleavage ENLYFQF (TEVF) or ENLYFQG (TEVG) were treated as in (a and b) and monitored for nuclear and chromosome segregation using DAPI and green fluorescent protein (GFP) dots marking the middle of chromosome V (tet:469). Each timepoint represents the average of the percentage of three biological replicas of at least 100 cells per timepoint. Error bars show SEM.\n\nNext, we compared segregation kinetics in TEV-induced anaphases with TEVG and TEVF cleavage sites. Bulk nuclear separation was observed in both conditions (Figure 3a\u2013b), with most cells showing full segregation after 120 min of TEV induction (>85% in TEVG and >75% in TEVF). However, we noticed minor delays during anaphase progression in cells with TEVF recognition sites (Figure 3a). Next, we compared the fidelity of segregation in TEVG and TEVF anaphases using tetO:469 kb tags inserted in the middle of chromosome 5. As observed previously, cells carrying TEVG recognition sites segregated tags correctly (with <5% missegregation observed) (Figure 3c). In contrast, tag missegregation was observed in 16% of telophases when TEVF recognition sites were present on Mcd1 (Figure 3c). These results demonstrate that degradation of Mcd1 fragments after TEV cleavage affects the fidelity of chromosome segregation but, unlike Mcd1 degradation, does not severely prevent bulk nuclear separation.\n\n### Chromosome looping in segregating chromosomes is disrupted in the absence of cohesin\n\nCohesin mediates intrachromosomal loops in metaphase-arrested chromosomes, providing a structural framework for the compaction of chromosome arms (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017). How chromosomes are organised during yeast anaphase, when individual chromatids are being pulled to the poles, is not well understood. Since the cohesin tripartite complex remains associated after TEV cleavage (Figure 2), we considered the possibility that TEV-cleaved cohesin still plays a role in maintaining the structure of segregating chromatids. To further investigate this, we first performed ChIP analysis of Smc3 during TEV-induced anaphases along chromosome 5 (Figure 4a). We observed that significant levels of chromatin-bound Smc3 remained during initial timepoints (Figure 4a; TEV-induced). In contrast, Smc3 was rapidly lost from chromatin in anaphases induced by auxin-mediated degradation of Mcd1 (Figure 4a; auxin-induced). Having observed that TEV-cleaved cohesin remains chromatin-bound for a significantly longer period than auxin-degraded cohesin (Figure 4a), we decided to use these two conditions to investigate whether the presence of cohesin, albeit cleaved, impacts on the looped organisation of chromosomes as they are pulled to the cell poles. We built Hi-C libraries from timepoints when the bulk of Mcd1 had been either TEV-cleaved or auxin-degraded (Figure 4\u2014figure supplement 1). Importantly, we did not detect full-length Mcd1 in the TEV-cleaved samples collected (Figure 4\u2014figure supplement 1), suggesting that TEV cleavage was complete. Following sequencing, we computed the corresponding normalised genome\u2010wide contact maps for Mcd1-TEV and Mcd1-aid (Figure 4b\u2013c). When we compared the contact maps of individual chromosomes obtained from cells arrested in metaphase using Cdc20 depletion (Figure 4b), to those obtained for Mcd1-TEVG and Mcd1-AID during the induced anaphases, we observed a decrease in intrachromosomal contacts structuration, with a loss of loops (Figure 4b). The contact probability (p) as a function of genomic distances of all chromosome arms showed a reduction of contacts in the 10\u201350 kb range for Mcd1-TEVG and Mcd1-AID samples compared to Cdc20 arrests (Figure 4c, Figure 4\u2014figure supplement 1). Notably, the reduction in Mcd1-AID was significantly more pronounced than in Mcd1-TEVG (Figure 4c, Figure 4\u2014figure supplement 2). These results demonstrate that removal of cohesin from chromatin in Mcd1-AID causes a very pronounced disruption of cohesin-dependent structure (Figure 4b\u2013c) that prevent correct chromosome organisation, and thus explain the catastrophic missegregation observed (Figure 1c\u2013d). In contrast, chromosome organisation is not fully disrupted when TEV-cleaved, but chromatin-bound, Mcd1 (and cohesin) is present (Figure 4c, Figure 4\u2014figure supplement 1), which is likely to maintain a level of structure (albeit reduced) that allows bulk nuclear segregation (Figure 3a\u2013c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig4-v2.jpg)\n\n**Figure 4.:** (a) Chromatin immunoprecipitation analysis (ChIP) of Smc3-V5 binding along chromosome V of cells arrested in metaphase (Cdc20 arrest) containing either MCD1 with the 268 separase cleavage site substituted by the tobacco etch virus (TEV) recognition sequence ENLYFQF (TEVF) or with MCD1-AID. Samples were taken every 30 min for 1 hr after induction of the TEV protease or addition of the auxin IAA respectively and analysed. (b) Cells containing either MCD1-TEVG or MCD1-AID were arrested in Cdc20 metaphase arrest and MCD1 was cleaved or degraded respectively. Samples for HiC analysis were taken (MCD1 TEVG 90 min; MCD1-AID 60 min). Contact maps (bin = 1 kb) of chromosome V from cell populations are shown. Brown to yellow colour scales represent high to low contact frequencies, respectively (log10). A Cdc20 metaphase arrest was also processed as a reference. n=1 (left) and n=2 (middle and right) biological replicates for each condition. (c) Average intrachromosomal arm contact frequency (p) between two loci with respect to their genomic distance (s) along the chromosome, of cell populations treated as in \u2018a\u2019 (left). Derivative of p(s) curve (right).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Samples for WB analysis were taken every 30 min for 2 hr followed by immunoblotting to detect Mcd1. Samples at the timepoints highlighted in red MCD1 TEV-G 90 min cleavage and MCD1-AID 60 min degradation were taken to be processed for Hi-C (top and middle blots). The cell cycle stage of these samples was quantified (bottom left). Representative cell images of each sample are shown (bottom right).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) Contact probability (p(s)) of cells containing either MCD1 TEVG or MCD1-AID synchronised in metaphase (Cdc20) and cleaved for 90 min or degraded for 60 min, respectively. Biological replicas are shown. (b) Contact probability calculated as in (a), but without the 200 kb region surrounding the centromeres.\n\n### Cohesin organises centromeres of telophase-arrested chromosomes\n\nOur results demonstrate that the fidelity of chromosome segregation requires the maintenance of cohesin-dependent looping during anaphase. Next, we investigated whether cohesin complexes are removed in fully segregated chromosomes when they reached the cell poles in telophase. To this aim, we first fused the green fluorescent protein (GFP) to the cohesin subunit Smc3 and imaged its localisation on telophase-arrested cells using the cdc15-2 conditional mutant (Jaspersen et al., 1998; Figure 5a). Smc3-GFP signal was observed on segregated nuclei, with a clear discrete dot present at the cell poles that colocalised with the spindle pole body protein Spc29 (Spc29-RedStar2) (Figure 5a). This indicates that Smc3-GFP might be enriched on centromeric regions of telophase chromosomes. To confirm this possibility, we used calibrated ChIP-seq in cdc15-2-arrested cells (Figure 5b, Figure 5\u2014figure supplement 1) to identify whether centromeric regions and any other potential genomic sites are bound by cohesin\u2019s subunit Mcd1. We performed CHIP analysis using MCD1-6HA in cdc15-2-arrested cells (Figure 5b). To have a visual reference for the normal position of cohesin sites on chromosomes, we used a previously published dataset (Garcia-Luis et al., 2019) for Smc1 localisation on cells arrested in metaphase where cohesin binding is maximal (Figure 5b; SMC1 reference). To ensure that signals detected in telophase arrests were not due to background noise, we subtracted the signal obtained using untagged cells in our analysis (Figure 5b; untagged substracted). The number of Mcd1 binding sites along chromosome arms was very low, with only a few sites exhibiting levels above background (Figure 5b). However, comparison of average MCD1-6HA profiles across CEN sites confirmed that this cohesin subunit is enriched around centromere regions in cdc15-2-arrested chromosomes (Figure 5c, Figure 5\u2014figure supplement 2), thus validating our previous cytological observations (Figure 5a).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig5-v2.jpg)\n\n**Figure 5.:** (a) Cells containing CDC15-AID and the tagged cohesin subunit SMC3-yeGFP were arrested in late anaphase and the green fluorescent protein (GFP) signal at the centromere was calculated as a ratio comparing it to the nuclear background signal. Cells also carried Spc29-RedStar2, a spindle pole body component that was used as spatial reference to determine colocalisation with centromeres. For each timepoint at least 20 cells of two biological replicas were quantified. (b) Enrichment of cohesin along Saccharomyces cerevisiae chromosome 7 measured by calibrated ChIP-seq in cells containing MCD1-6HA arrested in late anaphase (cdc15-2) and untagged cells arrested in telophase (cdc15-2). We used a previously published dataset (GSE118534) for Smc1 binding to metaphase-arrested cells as a reference to illustrate the position of cohesin sites on metaphase chromosomes (top; SMC1 reference). The bottom black lane shows the enrichment of cohesin subunit Mcd1-6HA after subtraction of ChIP-seq signal of the untagged cells arrested in telophase (cdc15-2). CEN7 marks the location of the centromere. (c) Average calibrated ChIP-seq profiles of Mcd1-6HA (telophase arrest, cdc15-2) from the centromere CDEIII region of the 16 yeast chromosomes is shown. Smc1 profile from cells arrested in metaphase is shown as a reference (GSE118534).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Smc1-6HA ChIP-seq profiles of SMC1-6HA wild-type cells synchronised in metaphase, Mcd1-6HA ChIP-seq profiles of cdc15-2 cells synchronised in telophase, and ChIP-seq profiles of untagged cdc15-2 cells synchronised in telophase are shown. The number of reads at each base pair from the centromere CDEIII was averaged over all 16 chromosomes. The profile of each biological repetition is shown.\n\nNext, we sought to test whether centromere-bound cohesin contributes to the organisation of these regions in telophase. We arrested cells using an analogue-sensitive (AS) allele of Cdc15, and inactivated cohesin using the Mcd1-AID and Smc3-AID alleles after telophase arrest had been achieved (Figure 6a). We then built Hi-C libraries from cells arrested in telophase with and without degrading cohesin after the arrest (Figure 6b, Figure 6\u2014figure supplement 1). Comparison of the contact maps revealed changes at centromeric regions in telophase cells depleted for cohesin (Figure 6b). On a large scale (above 200 kb), cohesins favour cis contacts between centromeres and their chromosome arms (Figure 6b and c top). However, this effect is reversed at short distances (<100 kb). Indeed, panels in Figure 6c show that cohesin impedes contacts between centromeres and their ~100 kb flanking regions. These results demonstrate that cohesin complexes influence intrachromatid contacts at centromeres in telophase chromosomes. Moreover, the in trans interaction of CEN sequences was also reduced in cdc15-as cells with depleted cohesin (Figure 6d). Therefore, inactivating cohesin in telophase also reduces centromere clustering of the yeast genome.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig6-v2.jpg)\n\n**Figure 6.:** (a) Degradation of cohesin subunits in telophase-arrested cells using cdc15-as allele. Cdc15-as cells and cdc15-as cells carrying MCD1-AID or MCD1-AID and SMC3-AID were synchronised in late anaphase (cdc15-as) and treated with IAA for 1 hr to deplete Mcd1-AID and Smc3-AID. Samples were taken for HiC and for immunoblotting to follow the degradation of Mcd1 and Smc3. (b) Log2 ratio of contact maps between cdc15-as arrested cells depleted in Mcd1 and cdc15-as arrested wild-type (WT) cells (left). Log2 ratio of contact maps between cdc15-as arrested cells depleted in Mcd1 and Smc3 and cdc15-as arrested WT cells (right). x-axis represents the 16 chromosomes of the yeast genome depicted on top of the matrix. Blue to red colour scales represent the enrichments in contacts in one sample respect to the other (bin = 50 kb). (n=1 biological replicate for each condition). (c) Log2 ratio between cdc15as Mcd1 \u00b1 Scm3 depleted and cdc15as pile-ups of contact maps of the 500 kb (top) and 200 kb (bottom) cis peri-centromeric regions (bin = 5 kb). (d) Log2 ratio between cdc15as Mcd1 \u00b1 Scm3 depleted and cdc15as pile-ups of contact maps of the 100 kb trans peri-centromeric regions (bin = 5 kb).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Contact maps generated from cells synchronised in cdc15-as and cells synchronised in cdc15-as containing MCD1-AID or MCD1-AID and SMC3-AID. Cells were synchronised in late anaphase (cdc15-as) and treated with IAA for 1 hr to deplete Mcd1-AID and Smc3-AID. Samples were taken for HiC and for WB. x- and y-axis represent the 16 chromosomes of the yeast genome, displayed above the maps. Brown to yellow colour scales represent high to low contact frequencies, respectively (log10). (b) Pile-ups of contact maps of the 250 kb (top) or 100 kb (bottom) peri-centromeric regions in cis for cells synchronised in cdc15-as (left), in cdc15as and Mcd1-AID depleted (middle) or in cdc15as and Mcd1-AID and Smc3-AID depleted (right) (bin = 5 kb). (c) Pile-ups of contact maps of the 100 kb peri-centromeric regions in trans for cells synchronised in cdc15-as (left), in cdc15as and Mcd1-AID depleted (middle) or in cdc15as and Mcd1.\n\nCohesin also contributes to the organisation of the ribosomal gene array (rDNA) on chromosome XII during metaphase (Lavoie et al., 2002). We therefore tested whether inactivation of cohesin in telophase-arrested cells had any effects on rDNA structure. To this aim we used an AS allele of cdc15-as and the temperature-sensitive allele of cohesin\u2019s kleisin mcd1-73. We expressed the nucleolar marker Net1 fused to GFP (NET1-yeGFP) in these cells to evaluate rDNA structure. Inactivation of cohesin in telophase arrests caused decondensation of rDNA signals (Figure 7a).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig7-v2.jpg)\n\n**Figure 7.:** (a) Cells containing cdc15-as and NET1-yeGFP with either MCD1 wild-type (WT) or the temperature-sensitive allele mcd1-73 were arrested in telophase (cdc15-as) at 25\u00b0C and then the temperature was shifted to 37\u00b0C for 30 min. Cells were then imaged under the microscope. Representative images of the experiment are shown. White scale bars represent 5 \u03bcm (left). Quantification of the rDNA morphology was scored (upper right). Net1-GFP area marking the rDNA was quantified (lower right). At least 100 cells of two biological replicas were quantified for each condition. (b) Log2 ratio of chromosome XII contact maps between Cdc15 and Cdc15 Mcd1-AID (top) or Cdc15 and Cdc15 Mcd1-AID Smc3-AID (bottom). The yellow arrow points at the contacts made between the CEN12 and the rDNA. (c) Diagram showing a potential model explaining how TEV-cleaved cohesin could maintain the looped organisation of segregating chromatids. TEV cleavage of Mcd1 could be retained in one of the two segregating chromatids maintaining some of the structural functions. In this scenario sister chromatid cohesion would be lost but the loop organisation of individual chromatids would be partially maintained, thus facilitating segregation. (d) Diagram showing a potential model explaining how degradation of cohesin subunit Mcd1 could lead to catastrophic segregation. Mcd1 degradation leads to the destabilisation of cohesin on chromatin. In the absence of cohesin, though cohesion is dissolved (allowing genome separation), the loss of structure on separated chromatids would prevent their segregation and cells would exhibit the anaphase bridges phenotypes observed.\n\nNext, we looked at chromosome XII HiC contact maps of cells arrested in cdc15 and compared it to cells arrested in cdc15 with either Mcd1 or Mcd1 and Smc3 degraded (Figure 7b). In cdc15-arrested cells, condensin-dependent loop bridges the CEN12 and rDNA (Lazar-Stefanita et al., 2017). In cohesin-depleted cdc15-arrested cells, these contacts are also strongly decreased (Figure 7b, yellow arrow), suggesting that cohesin plays a role in the formation of this structure. Furthermore, contacts between pre- and post-rDNA regions are increased when the cohesin complex is disrupted, suggesting that it promotes the isolation of these regions in cdc15-arrested cells (Figure 7b). In conclusion, these results further support an active role for cohesin in the organisation of specific regions of the genome in telophase-arrested cells.\n\n## Discussion\n\nThe role of cohesin complexes in supporting mitotic chromosome architecture in yeast has long been established (Guacci et al., 1997; Michaelis et al., 1997), however, while their prominent role in mediating sister chromatid cohesion has been intensively studied, their contribution to chromosome folding has only recently become topical with the development of Hi-C techniques (Dekker et al., 2013; Schmitt et al., 2016). Here, we set out to explore whether cohesins influence or play a role in chromosome structuration after metaphase.\n\nCohesin is loaded onto chromosomes by the loader complex Scc2/4 (Ciosk et al., 2000) during G1 and becomes cohesive during DNA replication (Uhlmann and Nasmyth, 1998). The cohesive state requires the acetylation of cohesin Smc3 by the Eco1 acetyl transferase to make cohesin refractory to an inhibitory \u2018anti-establishment\u2019 activity dependent on Wapl (Rolef Ben-Shahar et al., 2008; Unal et al., 2008). In yeast, cleavage of one of cohesin subunits, Mcd1/Scc1, by the protease separase (Esp1) prompts anaphase segregation (Uhlmann et al., 1999; Uhlmann et al., 2000). Separase function is highly regulated to prevent its premature activation before every single chromosome has been aligned on the mitotic spindle. Firstly, separase activity is blocked by a bound inhibitor named securin (Pds1) (Ciosk et al., 2000), which is destroyed by ubiquitin-mediated proteolysis once cells are ready to enter anaphase (Cohen-Fix et al., 1996). Secondly, separase-mediated cleavage of Mcd1 is primed by Polo-kinase (Cdc5)-dependent phosphorylation of Mcd1 at serines 175 (S175) and 268 (S268), on the cleavage sites (Alexandru et al., 2001). This double regulation ensures that cohesion is not destroyed before it should be. At the anaphase onset, Mcd1 cleavage by separase is thought to terminate the function of cohesin on yeast chromosomes (Nasmyth, 2001). Interestingly, cohesin\u2019s subunits have been shown to be chromatin-bound during anaphase/telophase (Renshaw et al., 2010; Tanaka et al., 1999), however the functional contribution of this cohesin population has not been studied.\n\n. Mammalian cohesin organises the genome into loops during interphase (Rao et al., 2017) but dissociates from chromosomes in prophase (Sumara et al., 2000), and it is only found at centromeres by the time cells reach metaphase (Sumara et al., 2000). The role of organising loops on mammalian metaphase chromosomes is taken over by CI and CII complexes (Gibcus et al., 2018). During chromosome segregation, CI and CII are believed to maintain the structure of separating chromatids to prevent a \u2018cut\u2019 phenotype, which occurs when insufficiently condensed chromatids are trapped by the cytokinetic furrow. Recent studies demonstrate that condensin and cohesin are mutually exclusive on mammalian chromosomes (Abramo et al., 2019). Interestingly, from anaphase to cytokinesis, chromosome-bound cohesin appears as condensin comes off chromosomes (Abramo et al., 2019). However, chromosome folding in telophase was found to be independent of both condensin and cohesin (Abramo et al., 2019). In yeast, there is a single condensin complex but it does not play a role in the overall organisation of chromosome loops during mitosis (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017), instead it has a very defined function organising the ribosomal gene array on chromosome XII (Lavoie et al., 2002). Since yeast condensin does not contribute to the structural organisation of chromosome arms and cohesin\u2019s function is thought to stop at the anaphase onset, it was unclear how separating chromatids maintain the looped organisation necessary for chromosome compaction and faithful segregation.\n\nHere, we tested the belief that cohesin has no roles after metaphase. Our results demonstrate that, in contrast to the current view, degrading Mcd1 during anaphase leads to catastrophic segregation where many cells arrest with unseparated nuclear masses (Figure 1a\u2013d). This result prompted us to further investigate (i) whether the structure of segregating chromatids is disrupted when Mcd1 is degraded and (ii) whether cleavage of cohesin subunit Mcd1 causes a similar phenotype to its degradation. Hi-C analysis during segregation demonstrated that Mcd1 degradation causes dramatic defects in the 10\u201350 kb range of cis interactions on chromatids, which correspond to cohesin-dependent loop range (Figure 4c). Importantly, despite the exclusion of the pericentromeric regions, contacts between 20 and 200 kb remain more enriched in the Mcd1-TEV condition than in the Mcd1-AID condition suggesting that the cleaved cohesin complex still contributes, directly or indirectly, to the structuration of chromosome arms after metaphase. This data confirms that loops are affected when cohesin is not present on segregating chromatids and offers an explanation for the defective segregation observed under these conditions (Figure 1c\u2013d).\n\nTo study the effect of cohesin cleavage on the efficiency and structure of segregating chromatids, we used the TEV protease system previously established (Uhlmann et al., 2000). Our analysis revealed that unlike Mcd1 degradation, TEV-induced cleavage does not prevent bulk nuclear separation (Figure 3), although it causes some segregation errors (Figure 3c). Importantly, using HiC we could detect the maintenance of cis contacts in the 10\u201350 kb range on chromosomes with TEV-cleaved Mcd1 (Figure 4c), demonstrating that chromatid loops are not fully disrupted and explaining why bulk segregation is still achieved. We ensured that TEV cleavage of Mcd1 proceeded to completion in our samples (Figure 4\u2014figure supplement 1) to prevent that residual Mcd1 (that might escape cleavage) significantly affected the experimental outcome. An important difference between cohesive cohesin and loop extruding complexes lies in the way that these complexes interact with the DNA substrate. While cohesive cohesin topologically embraces DNA (Srinivasan et al., 2018), loop extruding complexes rely on non-topological interactions (Davidson et al., 2019). Therefore, it is likely that cohesin complexes cleaved by TEV are still able to interact non-topologically with the DNA substrate (Figure 7b) and/or can maintain extruded loops. This would explain why TEV cleavage has only a modest effect on the loop extrusion (structural) role of cohesin, while disrupting the cohesive role (that depends on topological association) (Figure 7b). In contrast, auxin-mediated degradation would abolish both topological and non-topological interactions (Figure 7c), which would result in the loss of cohesion but also structure (and compaction) thus generating a situation where unorganised chromatids would fail to efficiently segregate (Figure 7c).\n\nBased on evidence that suggested a role for cohesin during segregation, we sought to investigate whether a small pool of cohesin was retained on chromosomes in telophase. Interestingly, we detected binding to centromeres in this late mitotic stage (Figure 5a and c). Currently, we do not know whether the centromeric pool of cohesin bound in cdc15 cells is protected from separase cleavage, like centromeric cohesin during the first meiotic division, or loaded de novo during telophase. However, this pool of cohesin is actively organising, directly or indirectly, centromeric regions since depletion of cohesin in telophase revealed that bound cohesin during this late mitotic stage influences the structural organisation of pericentromeric regions, as well as promoting interactions between CEN regions of different chromosomes (Figure 6b\u2013d). Further to this role at centromeric regions, we observed condensation defects at the ribosomal gene array on chromosome XII when we inactivated cohesin function in telophase-arrested cells (Figure 7a), demonstrating that the complex also plays a role in the organisation of this genomic site during late mitosis.\n\nInterestingly, the loss of cohesin-dependent structures on chromosome arms, but not centromeric regions, on cdc15-arrested cells is reminiscent of the pattern reported for the inactivation of the cohesin regulator Pds5 (Costantino et al., 2020). Pds5 has been shown to restrict loop expansion (Costantino et al., 2020; Dauban et al., 2020) and therefore Pds5 absence in telophase could potentially explain our observations. In such scenario cohesin complexes loaded on centromeric regions might be able to extrude over long distances.\n\nCurrently, the functions of yeast cohesin during mitosis are thought to include: (i) the pairing of sister chromatids (Guacci et al., 1997; Michaelis et al., 1997), (ii) the bipolar organisation of chromatids as they attach to the mitotic spindles (Tanaka et al., 2000), and (iii) the organisation of metaphase chromosomes into looped domains (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017). Recent work has shown that cohesin is necessary for the maintenance of the structure of the rDNA during metaphase and that this role is executed through the regulation of condensin localisation (Lamothe et al., 2020). Importantly, these cohesin functions occur in metaphase cells and separase cleavage of cohesin at the anaphase onset has generated the perception that cohesin\u2019s roles are finished at the beginning of anaphase. Collectively, our data demonstrates that yeast cohesin plays important roles during segregation, possibly after separase cleavage, maintaining the looped organisation of segregating chromatids and supporting centromere organisation. Therefore, these findings extend the repertoire of cohesin roles on chromosomes, demonstrating that this complex has important post-metaphase functions critical for ensuring faithful genome segregation.\n\n## Methods\n\n### Yeast strain and primers\n\nYeast strains used in this study are listed in Table 1. Epitope tagging of genes were carried out as described in Janke et al., 2004. Primers used in this study are described in Table 2.\n\n**Table 1.**\n Yeast strains used in this study.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>CCG14820</td>\n      <td>CCG4000; MET3-3HA-CDC20:TRP1; ADH1-OsTIR1::URA; MCD1:AID-9Myc:Hph; TetR-GFP::ADE2; TetO:469Kb ChrV:HIS3</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14881</td>\n      <td>CCG4000; MET3-3HA-CDC20:TRP1; ADH1-OsTIR1::URA; MCD1:AID-9Myc:Hph; TetR-GFP::ADE2; TetO:558Kb ChrV:HIS3</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14629</td>\n      <td>CCG4000; MET3-3HA-CDC20:TRP1; ADH1-OsTIR1::URA; MCD1:AID-9Myc:Hph; TetR-GFP::ADE2; TetO:448Kb ChrIV:HIS3</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14635</td>\n      <td>CCG4000; MET3-3HA-CDC20:TRP1; ADH1-OsTIR1::URA; MCD1:AID-9Myc:hph; TetR-GFP::ADE2; TetO:1513Kb ChrIV:HIS3</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>K9027</td>\n      <td>MAT\u03b1; MCD1\u0394:HIS3; MCD1TEV268::LEU2; GAL-NLS-mcy9-TEVprotease-NLS2::TRP1 (10-fold integrant by southern); ura3::3xURA3 tetO112; his3::HIS3 tetR-GFP; MET3-HA3-CDC20::TRP1; ade2-1 can1-100 GAL psi+</td>\n      <td>Uhlmann et al., 2000</td>\n    </tr>\n    <tr>\n      <td>CCG12955</td>\n      <td>CCG12681; SMC3-V5:HPH</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG12356</td>\n      <td>CCG4000; MET3-3HA-CDC20:TRP1, FLAG-MCD1-268TEVF-6HA:LEU2, GAL- TEV-9Myc::URA3; tetR-GFP::ADE2</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG12351</td>\n      <td>CCG4000; MET3-3HA-CDC20:TRP1, FLAG-MCD1-268TEVG-6HA:LEU2, GAL1-TEV-9Myc::URA3; tetR-GFP::ADE2</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14783</td>\n      <td>CCG12351; TetO:469Kb ChrV:HIS3</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14784</td>\n      <td>CCG12356; TetO:469Kb ChrV:HIS3</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14882</td>\n      <td>CCG14635; SMC3-V5:hph</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG12925</td>\n      <td>CCG12682; SMC3-V5:HPH</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG13574</td>\n      <td>CCG4000, MET3-3HA-CDC20:TRP1; pADH1-OsTIR1::URA; TetR-GFP::ADE2</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14635</td>\n      <td>CCG4000; MET3-3HA-CDC20:TRP1; ADH1-OsTIR1::URA; MCD1:AID-9Myc:hph; TetR-GFP::ADE2; TetO:1513Kb ChrIV:HIS3</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14880</td>\n      <td>CCG4000; ADH1-OsTIR1::LEU; CDC15:AID-9Myc:Hph</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14909</td>\n      <td>CCG4000; ADH1-OsTIR1::LEU; CDC15:AID-9Myc:Hph SMC3-yeGFP:Kan</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14910</td>\n      <td>CCG4000; ADH1-OsTIR1::LEU; CDC15:AID-9Myc:Kan; SMC3-yeGFP:Hph; SPC29-RedStar2:Nat</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG1835</td>\n      <td>MATa bar1:hisG ura3-1 trp1-1 leu2-3,112 his3-11 ade2-1 can1-100 GAL+cdc15-2</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14731</td>\n      <td>CCG1835; MCD1-6HA:Hyg</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14758</td>\n      <td>CCG4000; SMC1-6HA:Nat; pADH1-OsTIR1::URA</td>\n      <td>Garcia-Luis et al., 2019.</td>\n    </tr>\n    <tr>\n      <td>CCG14821</td>\n      <td>CCG4000 pADH1-OsTIR1::LEU; cdc15as1:KanMX</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14822</td>\n      <td>CCG14821 MCD1:AID-9Myc:Hph</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>CCG14823</td>\n      <td>CCG14822 SMC3:AID-9Myc:Hph</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Primers used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer number</th>\n      <th>Target</th>\n      <th>Primer</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>4729</td>\n      <td>Chr.V 235.1 (235000)_F</td>\n      <td>GCATGTGGATGTTTTTGGGGT</td>\n    </tr>\n    <tr>\n      <td>4730</td>\n      <td>Chr.V 235.1 (235125)_R</td>\n      <td>GAGACACTAGAGGGGCTATCCT</td>\n    </tr>\n    <tr>\n      <td>4731</td>\n      <td>Chr.V 443.1 (443017)_F</td>\n      <td>TCCACGTAATATTGCGGCCT</td>\n    </tr>\n    <tr>\n      <td>4732</td>\n      <td>Chr.V 443.1 (443151)_R</td>\n      <td>AATGCCAACTCAGCTTTGCG</td>\n    </tr>\n    <tr>\n      <td>4733</td>\n      <td>Chr.V 529.1 (529089)_F</td>\n      <td>ACTGAGAGGGAAGGACGACT</td>\n    </tr>\n    <tr>\n      <td>4734</td>\n      <td>Chr.V 529.1 (529198)_R</td>\n      <td>AATCGGCGTCAGACAAACCT</td>\n    </tr>\n    <tr>\n      <td>4735</td>\n      <td>Chr.V 548.3 (548276)_F</td>\n      <td>GGAAAATAGCCGCCCAAGGA</td>\n    </tr>\n    <tr>\n      <td>4736</td>\n      <td>Chr.V 548.3 (548398)_R</td>\n      <td>TGGCATAACAGACTACAGCAAA</td>\n    </tr>\n    <tr>\n      <td>4737</td>\n      <td>Chr.V 102.7(102733)_F</td>\n      <td>CGCATGCTTTTCTCAGACCTT</td>\n    </tr>\n    <tr>\n      <td>4738</td>\n      <td>Chr.V 102.7(102863)_R</td>\n      <td>TGCGGTACTGAGGGCCAAAT</td>\n    </tr>\n    <tr>\n      <td>4739</td>\n      <td>Chr.V 29.8(29844)_F</td>\n      <td>ATAGTTTGGGTGCTGCTGATT</td>\n    </tr>\n    <tr>\n      <td>4740</td>\n      <td>Chr.V 29.8(29970)_R</td>\n      <td>ACATTTTGCCGCCATACACA</td>\n    </tr>\n    <tr>\n      <td>4557</td>\n      <td>Ch.V_165.8_F</td>\n      <td>CGCGTTGGTCAAGCCTCATA</td>\n    </tr>\n    <tr>\n      <td>4558</td>\n      <td>Ch V_165.8_R</td>\n      <td>CACTACTCGGCTTCTTGCCA</td>\n    </tr>\n    <tr>\n      <td>4563</td>\n      <td>CEN5_152.2_F</td>\n      <td>CAAGCCACTGTTGGCGTTTC</td>\n    </tr>\n    <tr>\n      <td>4564</td>\n      <td>CEN5_152.2_R</td>\n      <td>TTATGTGCGGCTTTGTCAGC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Media, culture conditions, and DNA constructs\n\nTo arrest the cells in G1, \u03b1-factor was added to exponentially growing MATa cultures (OD600=0.5) to a final concentration of 3\u00d710\u20138 M for 3 hr at 25\u00b0C. To arrest cells in G2/M, nocodazole (1.5 mg/mL stock in DMSO 100%) was added to cultures with OD600=0.5 to a final concentration of 0.015 mg/mL for 2.5 hr. To arrest cells in metaphase (Cdc20), cells carrying the CDC20 gene under methionine repressible promoter MET3 (MET3-CDC20) were grown overnight in minimal media lacking methionine. The day after cells were arrested by washing the cells and resuspending them in rich media containing 5 mM methionine for 3 hr. To arrest cells in telophase, Cdc15 was tagged with an auxin degron (CDC15-AID), and IAA was added to the culture at a final concentration of 3 or 1 mM when growing in minimal media.\n\nTo arrest the cells in late telophase using the cdc15-as allele, cells released from an \u03b1-factor arrest were treated with 10 \u03bcM of the ATP analogue 1-NM-PP1 for 1 hr 45 min. Cultures were monitored by microscopy until \u2009\u226590% of cells were arrested. To release cells from G1, the culture was spun (4000 r.p.m., 1 min) and washed in YPD three times. The pellet was then resuspended in YPD containing 0.1 mg/mL pronase. To release cells from nocodazole, the culture was spun (4000 r.p.m., 1 min) and washed in YPD containing 1% DMSO five times. The pellet was then resuspended in YPD. To degrade proteins tagged with AID epitope, a stock of IAA of 0.6 M in ethanol 100% was used.\n\n### Microscopy and statistics\n\nTo monitor cell cycle progression and chromosome segregation, an epifluorescence OLYMPUS IX70 microscope was used fitted with a Lumecor Spectra LED light source, a Hamamatsu Orca Flash 4.0 V2 camera and a \u00d7100/1.35 lens. One mL of cell culture was taken from each timepoint and mixed with glycerol (20% final concentration) to preserve TetO/TetR signal after being frozen at \u201380\u00b0C. For visualisation, cells were centrifuged at 3000 r.p.m. for 2 min and 1 \u03bcL of the pellet was mixed with 1 \u03bcL of DAPI solution (DAPI 4 \u03bcg/mL Triton 1 %) on the microscope slide. For each field 20 Z-focal planes images were captured (0.3 \u03bcm depth between each consecutive image). Images were analysed with Fiji (Schindelin et al., 2012). To quantify the distance between the GFP dots, a Fiji macro was developed to automatically compute the weighted centroid of the dots and measure the three-dimensional distance between them. To visualise Smc3-yeGFP, cells were imaged fresh in a DELTAVISION Elite fluorescence microscope fitted with a Lumecor Spectra LED light source, a Photometrics Coolsnap HQ camera and a \u00d7100/1.4 lens. At least 80 cells were quantified for each timepoint. Smc3-yeGFP signal intensity was calculated as the ratio of signal at the centromeres and the signal of the same area in the nucleus on Z-projection of images taken every 0.2 \u03bcm in 6 \u03bcm.\n\n### Western blot\n\nProtein extraction was done by lysing the cells in a FastPrep FP120 (BIO101) machine with 20% TCA and glass beads. Three repetitions of a 20 s cycle, power setting 5.5. Proteins were precipitated with TCA 7.5% and centrifuging at 15,000 r.p.m. for 10 min at 4\u00b0C. Then, the pellet was resuspended in Laemmli buffer \u00d71.5. Western blots were resolved in 7.5% SDS-PAGE gels. Proteins were transferred to polyvinylidene fluoride membranes using the TE70X semidry blotter system (Hoefer). The antibodies used were anti-HA (Roche, 3F10), anti-Myc (Roche, 9E10), anti-PGK1 (Thermo Fisher Scientific, 459250) anti-V5 (Abcam, ab9116), and anti-FLAG (Invitrogen MA1-142). Blots were incubated with the ECL Prime Western blotting detection reagent (GE Healthcare). Blots were developed by exposure to high-performance chemiluminescence films (Amersham Hyperfilm ECL, GE Healthcare) or in an ImageQuant LAS 4000 mini machine (GE Healthcare).\n\n### Chromatin immunoprecipitation\n\nFor ChIP analysis, cells were grown to OD600\u2009=\u20090.5 and arrested at the required cell cycle stage. A total of 100 OD600 units of Saccharomyces cerevisiae were collected. Cells were fixed for 15 min at 25\u00b0C and quenched with glycine (final concentration 125 mM) for 7 min before cells were harvested by centrifugation at 4000 r.p.m. for 1 min. The cell pellets were washed in PBS and transferred to a screw cap tube and frozen on dry ice. The pellets were stored at \u221280\u00b0C. Pellets were resuspended in 300 \u03bcL of IP buffer (150 mM NaCl, 50 mM Tris-HCl [pH\u20097.5], 5 mM EDTA, NP-40 [0.05% vol/vol], Triton X-100 [1% vol/vol]) containing PMSF (final concentration 1 mM) and complete protease inhibitor cocktail (without EDTA, from Roche). A 500 \u03bcL volume of glass beads was added to the tubes. Cells were broken in a FastPrep FP120 cell disruptor (BIO101) by three repetitions of a 20 s cycle at power setting 5.5. The cell lysate was transferred to a new tube and 100 \u03bcL volume of IP buffer containing PMSF and protease inhibitors was added. The cell lysate was spun down for 10 min at 15,000 r.p.m. at 4\u00b0C. This pellet was resuspended in 1 mL of IP buffer containing PMSF and protease inhibitors, and sonicated for 30 (30\u2009s on, 30 s off) at high power at 4\u00b0C in a Diagenode Bioruptor pico. After sonication samples were spun down for 10 min at 15,000 r.p.m. the supernatant was taken. A 200 \u03bcL volume of the sonicated chromatin was taken as \u2018input\u2019 and 400 \u03bcL was incubated with 40 \u03bcg of anti-V5 antibody (anti-V5 Abcam, ab9116) in a sonicator at low power for 30 min (30 s on, 30 s off). The \u2018input\u2019 DNA was precipitated with 0.3 M sodium acetate and 2.5 volumes of cold ethanol and spun down at 15,000 r.p.m. for 30 min, then the supernatant was removed. The pellet was washed with 70% ethanol and air-dried. After antibody binding, the IP sample was spun down at 13,000 r.p.m. for 5 min and the supernatant was added to 60 \u03bcL of Dynabeads protein G (Invitrogen), previously equilibrated with IP buffer. The samples were then incubated for 2 hr at 4\u00b0C in a rotating wheel and washed five times with IP buffer using a magnetic separator rack. Finally, \u2018input\u2019 samples and IP samples were resuspended in de-crosslinking buffer (TE \u00d71, 1% SDS, 10 \u03bcg\u2009ml\u22121 RNase A, 1 \u2009mg\u2009ml\u22121 proteinase K) and incubated at 65\u00b0C overnight. Samples were purified using a ChIP DNA Clean & Concentrator kit (Zymoresearch) according to the manufacturer\u2019s instructions. Calibrated ChIP-seq were done as described in Garcia-Luis et al., 2019.\n\n### Protein co-immunoprecipitation\n\nOne-hundred and twenty OD600 of asynchronous cells were OD600\u2009=\u20091 were collected and washed in cold water and resuspended in 200 \u03bcL of ice-cold buffer A (50 mM HEPES, 150 mM KCl, 1.5 mM MgCl2, 0.5 mM DTT, and 0.5% Triton X-100 [pH\u20097.5] supplemented with complete protease inhibitor cocktail tablets, Roche). Five-hundred mL of glass beads (425\u2013600 \u03bcm) were added and cells lysed in a FastPrep FP120 cell disruptor (BIO101) by three repetitions of a 20 s cycle at power setting 5.5. Extracts were maintained on ice for 2 min after each cycle. Cell extracts were centrifuged for 10 min at 12,000 r.p.m. at 4\u00b0C and the supernatant incubated with protein G Dynabeads (Invitrogen) bound to anti-Myc antibody (Roche, 9E10) for 2 hr at 4\u00b0C. Finally, beads were washed five times in washing buffer (10 mM Tris-Cl pH\u20097.5, 150 mM NaCl, 0.5% Triton) and unbound from the antibody by incubating at 37\u00b0C for 4 min in SR buffer (2% SDS, 0.125 M Tris-Cl, pH\u20096.8). Immunoprecipitated proteins were mixed with SS buffer (5% saccharose, 0.0125% bromophenol blue) and run in an SDS-PAGE gel.\n\n### Hi-C libraries\n\nCells were fixed with 3% formaldehyde (F8775, Sigma-Aldrich) as detailed in Dauban et al., 2020. Formaldehyde was quenched with 300 mM of glycine at room temperature for 20 min. Hi-C experiments were performed with an Hi-C kit (Arima Genomics) involving a double DpnII+HinfI restriction digestion. Preparation of the samples for paired-end sequencing on an Illumina NextSeq500 (2\u00d735 bp) was done with Collibri ES DNA Library Prep Kit for Illumina Systems (Thermo Fisher Scientific, A38605024).\n\n### Generation and normalisation of contact maps\n\nAlignment of the reads and processing of the contact data was done with Hicstuff using the S288C reference genome (Matthey-Doret et al., 2020). Hicstuff pipeline was launched with the following parameters: aligning with bowtie2, filtering out spurious 3C events and PCR duplicates based on read positions. The \u2018view\u2019 mode of Hicstuff with the ICE function were used to generate normalised contact maps as described in Imakaev et al., 2012. Contact maps were binned at 50 kb for the whole genome or 1 kb for single chromosomes, and 30 kb for single chromosome ratio map.\n\n### Contact probability as a function of the genomic distance p(s)\n\nGenome-wide contact probability as a function of genomic distance pc(s) and its derivative were computed using the \u2018distance law\u2019 function of Hicstuff with the following parameters: removing 100 kb on both sides of the centromeres, averaging the contact data of each chromosome arms, removing the chromosome XII (Matthey-Doret et al., 2020).\n\n### Aggregated of cis and trans centromere contacts\n\nCis-centromere pile-up contact maps are the result of averaged 205 or 505 kb windows centered on the 16 centromere positions (bin: 5 kb) generated with Chromosight in quantify mode (option: --pattern border, --perc-zero=100) (Matthey-Doret et al., 2020). These windows are taken from a balanced and detrended contact map. The detrending corrects for the distance-dependent contact decay due to polymeric behaviour (see Matthey-Doret et al., 2020, for more details). Because the contact map is symmetric and that the cis-centromere pile-up is centered on the diagonal, only half of the average pile-up is presented. Trans-centromere pile-up were similarly generated by Chomosight, but with the option --inter, and centered on the 120 centromere intersections.\n",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "a0bc0e24-3e72-4562-9c39-4e245db13055",
+      "submission_id": "b108ea30-1d8f-4089-9e06-824d9011d46f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andr\u00e9s Aguilera, https://ror.org/03yxnpp24 CABIMER, Universidad de Sevilla Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80147.sa0](https://doi.org/10.7554/eLife.80147.sa0)\n\nPrevious studies suggest that multiple activities of cohesin, essential in mitotic chromosome structure and segregation, are required only prior to the onset of chromosome segregation, but this study in Saccharomyces cerevisiae, using different alleles of the Mcd1 subunit, shows that cohesin plays also a role in anaphase organizing the centromeric regions, providing new evidence that cohesin function is critical during and after the onset of chromosome segregation. The work is of relevance to understanding chromosome biology and cell division.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Andr\u00e9s Aguilera, https://ror.org/03yxnpp24 CABIMER, Universidad de Sevilla Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80147.sa1](https://doi.org/10.7554/eLife.80147.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cohesin contribution to chromatid organisation is critical during chromosome segregation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Figure 6b and c. Why do the authors change tags when measuring chromatin-bound cohesin in metaphase vs telophase? Changing tags would appear to compromise a comparison between metaphase and telophase arrested cells.\n\n2) Figure 7B left. Please explain why you present a log ratio with Cdc15 in the denominator when in all the other panels they present a log ratio of Cdc15 in the numerator the more intuitive ratio (condensed- more contacts /uncondensed \u2013 fewer contacts)? The authors do not mention the large blue squares or flares. More interpretation of the findings of this figure would be helpful.\n\n3) Figure 7B right. This reader's interpretation is that the white squares associated with each chromosome mean that the chromosome-wide contacts in cdc15 arrested cells (compared to G1) are unchanged by inactivation by Mcd1. The flairs in cdc15 arrested cells (compared to G1) seem enhanced. Thus, it seems from their data that extended interactions from the centromere exist in cdc15 arrested cells that are further enhanced by removing most of the cohesin. Please clarify.\n\n4) 7C and 7D. It is not clear what the first three panels of these panels show.\n\n5) Figure 8. The authors should guide the reader through this Hi C in this figure.\n\n6) Figure 8a. Why do the authors switch to using the mcd1-73 in this experiment instead of the MCD1-AID auxin depletion that they used in all the other experiments?\n\nThe reasons for the change in reagents should be described new reagents should be characterized.\n\n7) The first page and half reads like a review and should be deleted.\n\n8) The authors claim that figure 1 shows the degradation of cohesin in anaphase leads to catastrophic segregation. This overstates the experimental results. What they show is the inactivation of cohesin in a metaphase arrested cell causes false anaphase with catastrophic segregation. While consistent with a function during anaphase, they cannot rule out from this experiment that cohesin function in chromosome structure is only required metaphase (where the cells are arrested) and it is revealed by the false anaphase. Thus, the function for cohesin after metaphase is critically dependent upon the Hi-C analysis of cdc15 arrested cells.\n\n9) Mounting evidence from in vivo experiments suggests that loop extrusion may not involve topological entrapment (see Dekker and Michael Peters). The authors provide evidence that this might also be the case in vivo based on the presence of loops in the TEV cleavage experiment. However, this conclusion must be softened to include the following caveat. The pattern of expanded loops observed in cdc15 arrested cells is very reminiscent of Pds5 depleted cells. That pattern appears to reflect a very small amount of chromosome-bound cohesin that persists in the absence of Pds5. Thus, the authors cannot exclude that the loops they observe in cdc15 arrested cells or TEV induced cells are not due to a small amount of cohesin with uncleaved Mcd1. To make this conclusion the authors would have to show that all Mcd1p is cleaved by TEV.\n\n10) The method used to invoke a cdc20 shutoff to arrest cells in metaphase should be explained in Materials and methods.\n\n11) The assays involving various GFP-marked chromosomes should be explained better. When the GFP-marked locus is very close to the centromere, missegregation only happens when the sister chromatids have attached to microtubules of the same spindle poles. In other words, a defect in kinetochore function. When the GFP marked locus is at a CEN distal locus, a missegregation is a combination of kinetochore defects and a failure to condense the chromosome enough to ensure the distal ends can clear the mid-zone of the cells. The missegregation due to condensation defects can be calculated by subtracting the missegregation from CEN proximal marked loci.\n\n12) The assertion that cohesin is generated loops in anaphase to support compaction is a weakly supported aspect of the paper. Figure 5B doesn't show any obvious loop structures in either TEV-induced or auxin-induced anaphase. This could be because loop boundary factors are no longer functional in anaphase, obscuring any looping function. Evidence for residual looping along chromosome arms rests on the P(s) analysis in Figure 5C. This analysis shows increased contact frequency in the Mcd1-TEV relative to Mcd1-AID at lengths from 20kb to 200+kb. This is an analysis of all contacts, including those involving centromeres. Figure 7 shows that cohesin is required for centromere contact with regions all across the chromosome arm with little evidence of cohesin-dependent contacts along chromosome arms. The extensive cohesin-dependent contacts from the centromere could be biasing the analysis of Figure 5C. The P(s) analysis in figure 5C should be re-analyzed excluding contacts containing sequences in the centromeric and pericentromeric regions. This will give a more accurate assessment of potential looping along chromosome arms.\n\n13) In figure 2C a mis-segregation analysis of a CEN5 tetO tag is performed. This tag is not examined in figure 1 so it does not give any relevant information for comparing mis-segregation in depleted Scc1 cells compared to artificially cleaved Scc1 cells. If the authors want to use this data, they should also show the analysis of the CEN5 tetO tag for depleted Scc1 cells.\n\n14) The relevant comparison for comparing Mcd1-TEV relative to Mcd1-AID shown is the relative mis-segregation of the 469tetO tags, shown in figure 1C and figure 4C which have relative mis-segregation rates of <5% mis-segregation and 20% mis-segregation at the end of the experiment. But in figure 4C mis-segregation increases to >10% at 60 minutes before reducing to <5%. How can an apparent reversal of mis-segregation occur in this context?\n\n15) Figure 1c,d, and 2b,c should show the SEM values for the points taken.\n\n16) The authors start with the premise that all arm cohesin is destroyed in animals and plant cells by the prophase removal pathway. This is incorrect. In a normal unperturbed cell cycle, most of the cohesin is removed from chromosome arms but arms remained paired until the onset of anaphase implying that a small fraction of cohesin along the arms persists. Furthermore, substantial amounts of cohesin are reloaded on chromosomes by telophase. The purpose of this cohesin is unknown. The authors' results suggest that the presence of chromosome-bound cohesin post metaphase is conserved in yeast, and therefore is likely a general feature of all mitoses. The function of this chromosome-bound cohesin in telophase in other eukaryotes was unknown. The results from this manuscript provide a potentially important clue.\n\n17) The failure to constrain centromere anchored loops upon inactivation of most cohesin is reminiscent of loops seen in pds5 mutants. The authors should cite this result and incorporate it into a better discussion of condensation in anaphase.\n\n18) The results may also connect with meiosis where a subset of cohesin is protected from separase during meiosis. Authors may think of additional examples and bring it to Discussion.\n\n19) The log ratio of G1 or Cdc15 contacts shows large chromosomal domains (blue squares) and flares (presumably condensation emanating from the centromeres). These types of domains have not been reported in previous analyses of nocodazole cells. They suggest a more and or distinct compacted state in Cdc15 cells. Interestingly this conclusion fits with the FISH of rDNA in cdc15 arrested cells which looks much more like that seen in most other eukaryotes. Authors should extend this in the Discussion.\n",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "93d92677-7aba-4412-b759-555b02d62bae",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C1",
+      "claim": "Cohesin is required for sister chromatid cohesion in yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast cells, cohesin is not only required for sister chromatid cohesion but also plays a major role determining the structure of individual chromatids in metaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about cohesin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "55151727-4446-4879-9a75-cff15121e121",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C2",
+      "claim": "Cohesin plays a major role determining the structure of individual chromatids in metaphase in yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast cells, cohesin is not only required for sister chromatid cohesion but also plays a major role determining the structure of individual chromatids in metaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "da3e8d91-94b0-4c6f-a36d-f4a2546a53ad",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C3",
+      "claim": "Separase cleavage is thought to remove all cohesin complexes from chromosomes to initiate anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Separase cleavage is thought to remove all cohesin complexes from chromosomes to initiate anaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prevailing view in the field that the manuscript challenges.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "2ab4484c-77c7-475f-9801-543960139141",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C4",
+      "claim": "Degradation of cohesin at the anaphase onset causes aberrant chromatid segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that degradation of cohesin at the anaphase onset causes aberrant chromatid segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "d069b559-e30c-49e4-b192-6a61cc567ea5",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C5",
+      "claim": "Cohesin depletion causes loss of intrachromatid organisation during anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Hi-C analysis on segregating chromatids demonstrates that cohesin depletion causes loss of intrachromatid organisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Hi-C data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "ad566643-c8f9-4426-aee9-0494e33b3b04",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C6",
+      "claim": "TEV-mediated cleavage of cohesin does not dramatically disrupt chromatid organisation in anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, tobacco etch virus (TEV)-mediated cleavage of cohesin does not dramatically disrupt chromatid organisation in anaphase, explaining why bulk segregation is achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Hi-C analysis shown in Figure 4 and segregation data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "2c21ca73-9e90-4491-b64a-d81250721f55",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C7",
+      "claim": "A small pool of cohesin complexes is bound to telophase chromosomes in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we identified a small pool of cohesin complexes bound to telophase chromosomes in wild-type cells and show that they play a role in the organisation of centromeric regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data in Figure 5 and microscopy in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "a5b6aa6c-1c6e-422f-9f5c-8ba595b6d6a1",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C8",
+      "claim": "Cohesin complexes bound to telophase chromosomes play a role in the organisation of centromeric regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we identified a small pool of cohesin complexes bound to telophase chromosomes in wild-type cells and show that they play a role in the organisation of centromeric regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Hi-C analysis in Figure 6 showing changes in centromeric organization upon cohesin depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "29c919c5-e7e1-48c7-b9ae-bb255234ed92",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C9",
+      "claim": "In yeast cells cohesin function extends to the anaphase period when chromatids are segregating.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrates that in yeast cells cohesin function is not over in metaphase, but extends to the anaphase period when chromatids are segregating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study supported by multiple experimental approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "8bd3ca62-297e-465c-b5c0-fe901cb3105c",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C10",
+      "claim": "Cohesin holds sister chromatids together.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin is a multisubunit protein complex that holds sister chromatids together (Guacci et al., 1997; Michaelis et al., 1997) and promotes condensation of metaphase chromosomes (Guacci et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Guacci et al., 1997 and Michaelis et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "72e175bb-e2b4-4ac7-a5d2-5042e2e416e9",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C11",
+      "claim": "Cohesin promotes condensation of metaphase chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin is a multisubunit protein complex that holds sister chromatids together (Guacci et al., 1997; Michaelis et al., 1997) and promotes condensation of metaphase chromosomes (Guacci et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guacci et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "bd4deee2-8ea2-470a-80c6-626ca41e40ff",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C12",
+      "claim": "The core proteins of cohesin are Smc1, Smc3, and Mcd1/Scc1.",
+      "claim_type": "EXPLICIT",
+      "source": "The core proteins of cohesin are a pair of structural maintenance of chromosomes (SMC) proteins, Smc1 and Smc3, and the conserved kleisin factor Mcd1/Scc1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cohesin composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "01e7e136-c3e6-4001-9909-f65fe76a8d0b",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C13",
+      "claim": "Cohesin forms a tripartite complex with a rod-shaped structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Together they form a tripartite complex that has a rod-shaped structure (B\u00fcrmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to B\u00fcrmann et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "b484cc9a-7943-477e-9420-b26c42cb89f0",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C14",
+      "claim": "Cohesin complexes contain the HEAT-repeat proteins Scc3 and Pds5.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin complexes also contain the HEAT-repeat proteins Scc3 and Pds5 (Hartman et al., 2000; Losada et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hartman et al., 2000 and Losada et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "10f9cde1-407f-4bf9-b5e0-7f188d4105b2",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C15",
+      "claim": "Cohesin organises chromosomes through the formation of chromatin loops in interphase nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its role in sister chromatid cohesion, studies have shown that cohesin also organises chromosomes through the formation of chromatin loops in interphase nuclei (Rao et al., 2017) and mitotic chromatids (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rao et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "21466bfd-3aa5-47d7-bce2-b152ce919d52",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C16",
+      "claim": "Cohesin organises chromosomes through the formation of chromatin loops in mitotic chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its role in sister chromatid cohesion, studies have shown that cohesin also organises chromosomes through the formation of chromatin loops in interphase nuclei (Rao et al., 2017) and mitotic chromatids (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lazar-Stefanita et al., 2017 and Schalbetter et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "6b7b430e-1571-4388-a5df-aa8b59ff4cb7",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C17",
+      "claim": "The role of cohesin in nuclear organisation is thought to depend on its ability to extrude DNA loops.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of cohesin in nuclear organisation is thought to depend on its ability to extrude DNA loops, an activity that was recently confirmed in vitro with human cohesin (Davidson et al., 2019; Kim et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Davidson et al., 2019 and Kim et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "1d6638d8-3951-41af-8d81-c46cd13e2d16",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C18",
+      "claim": "Separase cleaves cohesin's kleisin Mcd1 subunit in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Separase cleaves cohesin's kleisin Mcd1/Rad21/Scc1 subunit (thereafter referred to as Mcd1) in mitosis (Uhlmann et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Uhlmann et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "abf8e521-35e6-42e3-b6ac-aecaec1b23bc",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C19",
+      "claim": "Engineered Mcd1 cleavage in metaphase using TEV protease triggers bulk separation of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Engineered Mcd1 cleavage in metaphase, using TEV protease expression and TEV recognition sites in Mcd1, triggers bulk separation of the genome (Uhlmann et al., 2000), demonstrating that one of cohesin's functions is to hold sister chromatids together prior to their separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Uhlmann et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "95c4f1a1-7d5d-4b8e-8675-42467eb6544a",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C20",
+      "claim": "Cohesin mediates intrachromosomal loops that are responsible for compacting yeast chromosome arms in metaphase cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work using chromosome capture (Hi-C) techniques has demonstrated that cohesin mediates intrachromosomal loops that are responsible for compacting yeast chromosome arms in metaphase cells, independently of cohesin's role in sister chromatid cohesion (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lazar-Stefanita et al., 2017 and Schalbetter et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "133b67f3-e90e-4f1b-a239-8cc0c29e7775",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C21",
+      "claim": "Cohesin is responsible for the organisation of the genome into loops during interphase in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells cohesin is responsible for the organisation of the genome into loops during interphase (Rao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rao et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "4993f2e2-000a-4195-9a2f-e97a22f9deef",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C22",
+      "claim": "During prophase the bulk of cohesin dissociates from chromosome arms in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During prophase the bulk of cohesin dissociates from chromosome arms (Sumara et al., 2000), however since sister chromatids remain paired, it is likely that some cohesin complexes are retained on chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sumara et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "85a94faf-d7ff-4099-9bf7-b3e4d57ef192",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C23",
+      "claim": "At metaphase, mammalian cohesin is mainly localised to centromeres where it provides cohesion.",
+      "claim_type": "EXPLICIT",
+      "source": "At metaphase, mammalian cohesin is mainly localised to centromeres where it provides cohesion (Sumara et al., 2000), while the related SMC complexes, condensin I and II (CI and CII), take over the role of folding mitotic chromosome arms into loops (Gibcus et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sumara et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "2b06b148-7674-4231-bd9c-56a1aa84250e",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C24",
+      "claim": "Condensin I and II take over the role of folding mitotic chromosome arms into loops in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At metaphase, mammalian cohesin is mainly localised to centromeres where it provides cohesion (Sumara et al., 2000), while the related SMC complexes, condensin I and II (CI and CII), take over the role of folding mitotic chromosome arms into loops (Gibcus et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gibcus et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "ef0ada64-c65b-4d3c-87ae-2b582318c3d1",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C25",
+      "claim": "Condensin II organises large (200\u2013400 kb) loops in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CII organises large (200\u2013400 kb) loops, while CI sub-divides these into smaller loops (80 kb) (Gibcus et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gibcus et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "fdb82b9c-5a82-4f63-b8d7-4d253a91018e",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C26",
+      "claim": "Condensin I sub-divides large loops into smaller loops (80 kb) in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CII organises large (200\u2013400 kb) loops, while CI sub-divides these into smaller loops (80 kb) (Gibcus et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gibcus et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "8ee8aa83-e500-4260-b00b-2d934634090b",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C27",
+      "claim": "During interphase, condensin I is excluded from the nucleus in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During interphase CI is excluded from the nucleus and CII, although nuclear, is prevented from acting on chromosomal DNAs by a nuclear protein, Mcph1 (Yamashita et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yamashita et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "4997948c-b76d-4f7e-a34d-865da50b42b0",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C28",
+      "claim": "During interphase, condensin II is prevented from acting on chromosomal DNAs by Mcph1 in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During interphase CI is excluded from the nucleus and CII, although nuclear, is prevented from acting on chromosomal DNAs by a nuclear protein, Mcph1 (Yamashita et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yamashita et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "22b92c6a-c0ec-47e1-8c20-393033a8dbc2",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C29",
+      "claim": "A rapid switch from condensin binding to cohesin binding between anaphase and cytokinesis has been reported in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a rapid switch from condensin binding to cohesin binding between anaphase and cytokinesis has been reported (Abramo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Abramo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "ff530633-0be1-4801-a43b-ad4a756c67bb",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C30",
+      "claim": "Yeast cells lack a condensin II complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast cells lack a CII complex, and CI role in chromosome organisation in mitosis is restricted to the ribosomal gene array (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about yeast biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "c4969e69-9743-4e20-a549-d85ea587fa39",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C31",
+      "claim": "Condensin I role in chromosome organisation in mitosis is restricted to the ribosomal gene array in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast cells lack a CII complex, and CI role in chromosome organisation in mitosis is restricted to the ribosomal gene array (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lazar-Stefanita et al., 2017 and Schalbetter et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "9a7dbe8a-b1d2-4e4a-8597-ffe7855bf2f9",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C32",
+      "claim": "Yeast condensin is involved in the separation of chromosome arms through a role that promotes decatenation of sister chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, yeast condensin is involved in the separation of chromosome arms (Leonard et al., 2015) through a role that promotes decatenation of sister chromatids (Baxter et al., 2011; Sen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Leonard et al., 2015, Baxter et al., 2011, and Sen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "c38c4dde-b1f3-4e44-b658-ab79733a3576",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C33",
+      "claim": "Full degradation of Mcd1-aid occurs 30\u201360 min after addition of auxin in cdc20-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cdc20-arrested cells, we observed full degradation of Mcd1-aid 30\u201360 min after addition of auxin (Figure 1a), demonstrating the rapid and efficient removal of Mcd1 in this experimental setup.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "1026c326-d3af-4cbf-9fa4-01442213ef92",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C34",
+      "claim": "Auxin-mediated degradation of Mcd1 in cdc20-arrested cells precipitates an anaphase-like stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Like TEV-induced anaphases, auxin-mediated degradation of Mcd1 in cdc20-arrested cells precipitates an anaphase-like stage (Figure 1b), however we observed severe disruption of nuclear segregation (Figure 1b), with many nuclei appearing to be stuck in anaphase with elongated nuclear masses for extended periods (Figure 1b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy data in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "bc37fcf5-34f3-417b-8966-7c44f95f814a",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C35",
+      "claim": "Auxin-mediated degradation of Mcd1 causes severe disruption of nuclear segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Like TEV-induced anaphases, auxin-mediated degradation of Mcd1 in cdc20-arrested cells precipitates an anaphase-like stage (Figure 1b), however we observed severe disruption of nuclear segregation (Figure 1b), with many nuclei appearing to be stuck in anaphase with elongated nuclear masses for extended periods (Figure 1b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy data in Figure 1b-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "ac242f14-a89d-473e-bf11-1c7f1c11b96c",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C36",
+      "claim": "After 180 min of auxin addition to cdc20-blocked cultures, 48% of cells were still stuck in anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "After 180 min of auxin addition to cdc20-blocked cultures, we observed that 48% of the cells were still stuck in anaphase (Figure 1c), 35% of cells showed correct segregation of arm tags, and 20% showed missegregation (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from microscopy data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "9edd9d94-a0ba-4831-96ed-54ff82a38c27",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C37",
+      "claim": "After 180 min of auxin addition to cdc20-blocked cultures, 35% of cells showed correct segregation of arm tags on chromosome 5.",
+      "claim_type": "EXPLICIT",
+      "source": "After 180 min of auxin addition to cdc20-blocked cultures, we observed that 48% of the cells were still stuck in anaphase (Figure 1c), 35% of cells showed correct segregation of arm tags, and 20% showed missegregation (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from microscopy data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "7777caa6-170c-4244-9a5a-56e633585e5c",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C38",
+      "claim": "After 180 min of auxin addition to cdc20-blocked cultures, 20% of cells showed missegregation of arm tags on chromosome 5.",
+      "claim_type": "EXPLICIT",
+      "source": "After 180 min of auxin addition to cdc20-blocked cultures, we observed that 48% of the cells were still stuck in anaphase (Figure 1c), 35% of cells showed correct segregation of arm tags, and 20% showed missegregation (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from microscopy data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "9ba5a1be-0d2c-4414-af48-efa9bca2bd00",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C39",
+      "claim": "Segregation errors were higher for telomeric regions than for arm regions of chromosome 5 after Mcd1 degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Segregation errors were even higher for telomeric regions (Figure 1d) and larger chromosomes (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparison of data in Figure 1c and Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "eaa7cd81-9061-43ad-96ab-56055ae86631",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C40",
+      "claim": "Rapid removal of Mcd1 by degradation causes an anaphase-like state with impaired separation of chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that rapid removal of Mcd1 by degradation causes an anaphase-like state with impaired separation of chromatids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "1c651547-c410-4cbc-88ed-d135a81839a6",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C41",
+      "claim": "Induction of TEV expression led to cleavage of Mcd1 after 60 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of TEV expression led to cleavage of Mcd1 after 60 min (Figure 1\u2014figure supplement 2) as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "fba6d047-02bd-4292-b721-55d290459d6a",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C42",
+      "claim": "Bulk nuclear segregation occurred 90\u2013120 min following TEV induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk nuclear segregation occurred 90\u2013120 min following the induction as it had been previously reported (Uhlmann et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the current study and consistent with previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "2daa25ff-39fd-4fb0-8043-29d8b21805ef",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C43",
+      "claim": "Chromosome tags located on the centromere region of chromosome 5 segregated efficiently in TEV-induced anaphases.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, chromosome tags located on the centromere region of chromosome 5 segregated efficiently (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "1b29fd28-cc2a-490c-a954-d99d1f2715e3",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C44",
+      "claim": "TEV cleavage allows nuclear segregation unlike auxin-mediated degradation of Mcd1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, unlike auxin-mediated degradation of Mcd1, and consistent with previous reports (Uhlmann et al., 2000), TEV cleavage allows nuclear segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the data in Figure 1 and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "c1eff01e-3729-4c32-848b-bb6ec0de5df1",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C45",
+      "claim": "The cleaved C-terminal fragment of Mcd1 was fully stable during the entire timecourse in TEV-induced anaphases.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that in TEV-induced anaphases, the cleaved C-terminal fragment of Mcd1 was fully stable during the entire timecourse (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "4d377b5f-9a84-4223-b92e-95092b14c120",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C46",
+      "claim": "TEV protease cleavage leaves a glycine residue at the N-termini which is not well recognised by the N-rule pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of Mcd1 fragment degradation after TEV cleavage stems from the fact that TEV protease cleavage occurs following the glutamine (Q) residue of the TEV recognition site ('ENLYFQ*G') leaving a glycine (G) amino acid residue at the N-termini (referred to as TEVG), which is not well recognised by the N-rule pathway (Varshavsky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained based on known properties of the N-rule pathway cited from Varshavsky, 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "b8fdd341-556f-4669-a752-57e098888f58",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C47",
+      "claim": "Separase cleavage leaves an arginine residue at the N-termini which is a good substrate for N-end rule degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, separase cleavage leaves an arginine (R) residue at the N-termini of the cleaved product ('SVEQGR*R'), which is a good substrate for N-end rule degradation (Varshavsky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained based on known properties of the N-rule pathway cited from Varshavsky, 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "61ea068e-2611-4334-8675-7170242caec3",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C48",
+      "claim": "Following TEV-induced cleavage, both the N-terminal and C-terminal fragments of Mcd1 are stabilised.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Beckouet et al. have shown that following TEV-induced cleavage not only the C-terminal fragment of Mcd1 is stabilised but also the N-terminal (Beckou\u00ebt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Beckou\u00ebt et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "7154fcb3-5c50-434a-9936-149bece1ed68",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C49",
+      "claim": "Both N- and C-terminal Mcd1 fragments were immunoprecipitated by Smc3 after TEV cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Both N- and C-terminal Mcd1 fragments were immunoprecipitated by Smc3 after TEV cleavage (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by co-immunoprecipitation data in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "5b495220-aa57-409c-b3e7-72159b8ce570",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C50",
+      "claim": "The structural integrity of cohesin tripartite complex remains intact after TEV cleavage of its kleisin subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the structural integrity of cohesin tripartite complex remains intact after TEV cleavage of its kleisin subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the co-immunoprecipitation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "cf4aea7b-04ae-467a-9a4d-2bb92ab63447",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C51",
+      "claim": "The TEV recognition site 'ENLYFQF' (TEVF) leaves a phenylalanine as the N-terminal amino acid after TEV cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found this to be the case when we used the TEV recognition site 'ENLYFQF' (referred to as TEVF) (Figure 3a). This site leaves a phenylalanine, rather than a glycine, as the N-terminal amino acid after TEV cleavage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explained in the text and demonstrated in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "77578b94-eef4-42f9-b465-2c54fd4523a1",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C52",
+      "claim": "N-terminal phenylalanine is a good substrate for N-end rule degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, N-terminal phenylalanine is a good substrate for N-end rule degradation (Varshavsky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Varshavsky, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "25837b2f-b4b1-4de8-a5e0-bf5e5fbac339",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C53",
+      "claim": "Cleavage of TEVG generated stable N- and C-terminal fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Cleavage of TEVG generated stable N- and C-terminal fragments as expected (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "7bc10234-5228-4050-af1b-d7f0edf97c3e",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C54",
+      "claim": "Both N- and C-terminal fragments were rapidly degraded after cleavage on TEVF sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both N- and C-terminal fragments were rapidly degraded after cleavage on TEVF sites (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "49d9de6b-afc6-4e1f-aaa3-ed2e3b5e7b86",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C55",
+      "claim": "Bulk nuclear separation was observed in both TEVG and TEVF conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk nuclear separation was observed in both conditions (Figure 3a\u2013b), with most cells showing full segregation after 120 min of TEV induction (>85% in TEVG and >75% in TEVF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy data in Figure 3a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "285f7474-b44a-4adc-a976-7c14d3a1ac02",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C56",
+      "claim": "More than 85% of cells showed full segregation after 120 min of TEV induction in TEVG condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk nuclear separation was observed in both conditions (Figure 3a\u2013b), with most cells showing full segregation after 120 min of TEV induction (>85% in TEVG and >75% in TEVF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from microscopy data in Figure 3a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "74a7e9f2-eff8-4738-97af-bc3c2a0554c5",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C57",
+      "claim": "More than 75% of cells showed full segregation after 120 min of TEV induction in TEVF condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk nuclear separation was observed in both conditions (Figure 3a\u2013b), with most cells showing full segregation after 120 min of TEV induction (>85% in TEVG and >75% in TEVF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from microscopy data in Figure 3a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "81dd19c6-0e9e-4be8-b0fd-9d3e13bcc08f",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C58",
+      "claim": "Minor delays during anaphase progression were observed in cells with TEVF recognition sites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noticed minor delays during anaphase progression in cells with TEVF recognition sites (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "361205ff-2cf9-4fc3-8ca4-6d51f6e1e459",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C59",
+      "claim": "Cells carrying TEVG recognition sites segregated tags correctly with less than 5% missegregation observed.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed previously, cells carrying TEVG recognition sites segregated tags correctly (with <5% missegregation observed) (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from microscopy data in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "8bc2f7f9-798f-4e53-a457-ee8fd13c7d49",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C60",
+      "claim": "Tag missegregation was observed in 16% of telophases when TEVF recognition sites were present on Mcd1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, tag missegregation was observed in 16% of telophases when TEVF recognition sites were present on Mcd1 (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from microscopy data in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "91ba45da-3ad7-4f60-b3e1-2110d73478c5",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C61",
+      "claim": "Degradation of Mcd1 fragments after TEV cleavage affects the fidelity of chromosome segregation but does not severely prevent bulk nuclear separation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that degradation of Mcd1 fragments after TEV cleavage affects the fidelity of chromosome segregation but, unlike Mcd1 degradation, does not severely prevent bulk nuclear separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "15cd73d6-09cf-4fe0-a5f6-cb419b0ff949",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C62",
+      "claim": "Significant levels of chromatin-bound Smc3 remained during initial timepoints in TEV-induced anaphases.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that significant levels of chromatin-bound Smc3 remained during initial timepoints (Figure 4a; TEV-induced).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by ChIP data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "cf6053f9-c932-4340-8fb7-a33049f398e0",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C63",
+      "claim": "Smc3 was rapidly lost from chromatin in anaphases induced by auxin-mediated degradation of Mcd1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Smc3 was rapidly lost from chromatin in anaphases induced by auxin-mediated degradation of Mcd1 (Figure 4a; auxin-induced).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by ChIP data in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "355718c4-b167-46f4-a03a-0e2eb88adf01",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C64",
+      "claim": "Full-length Mcd1 was not detected in the TEV-cleaved samples collected for Hi-C analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we did not detect full-length Mcd1 in the TEV-cleaved samples collected (Figure 4\u2014figure supplement 1), suggesting that TEV cleavage was complete.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "1470d6d0-84f1-49a5-865f-b52b95d6bc40",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C65",
+      "claim": "A decrease in intrachromosomal contacts structuration with a loss of loops was observed when comparing Cdc20 arrest to Mcd1-TEVG and Mcd1-AID induced anaphases.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the contact maps of individual chromosomes obtained from cells arrested in metaphase using Cdc20 depletion (Figure 4b), to those obtained for Mcd1-TEVG and Mcd1-AID during the induced anaphases, we observed a decrease in intrachromosomal contacts structuration, with a loss of loops (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Hi-C contact maps in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "16ec0ff2-a0a8-40b7-a701-d1b476970fe3",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C66",
+      "claim": "The contact probability as a function of genomic distances showed a reduction of contacts in the 10\u201350 kb range for Mcd1-TEVG and Mcd1-AID samples compared to Cdc20 arrests.",
+      "claim_type": "EXPLICIT",
+      "source": "The contact probability (p) as a function of genomic distances of all chromosome arms showed a reduction of contacts in the 10\u201350 kb range for Mcd1-TEVG and Mcd1-AID samples compared to Cdc20 arrests (Figure 4c, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by distance law analysis in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "a31385c2-9178-45d5-80cd-41414f2ac377",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C67",
+      "claim": "The reduction in contacts in the 10\u201350 kb range was significantly more pronounced in Mcd1-AID than in Mcd1-TEVG.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the reduction in Mcd1-AID was significantly more pronounced than in Mcd1-TEVG (Figure 4c, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparison of distance law curves in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "86b4b723-3d07-4ece-93d4-e2f3a1b53a8b",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C68",
+      "claim": "Removal of cohesin from chromatin in Mcd1-AID causes a very pronounced disruption of cohesin-dependent structure that prevents correct chromosome organisation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that removal of cohesin from chromatin in Mcd1-AID causes a very pronounced disruption of cohesin-dependent structure (Figure 4b\u2013c) that prevent correct chromosome organisation, and thus explain the catastrophic missegregation observed (Figure 1c\u2013d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Hi-C data in Figure 4 and segregation data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "66b48277-9d05-4a1d-84b7-ee1c6b8228ee",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C69",
+      "claim": "Chromosome organisation is not fully disrupted when TEV-cleaved, but chromatin-bound, Mcd1 is present.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, chromosome organisation is not fully disrupted when TEV-cleaved, but chromatin-bound, Mcd1 (and cohesin) is present (Figure 4c, Figure 4\u2014figure supplement 1), which is likely to maintain a level of structure (albeit reduced) that allows bulk nuclear segregation (Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Hi-C data in Figure 4 and segregation data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "73563571-a538-4a85-a388-476e8ba350f9",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C70",
+      "claim": "Smc3-GFP signal was observed on segregated nuclei with a clear discrete dot present at the cell poles that colocalised with the spindle pole body protein Spc29.",
+      "claim_type": "EXPLICIT",
+      "source": "Smc3-GFP signal was observed on segregated nuclei, with a clear discrete dot present at the cell poles that colocalised with the spindle pole body protein Spc29 (Spc29-RedStar2) (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy data in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "86cbe288-2be0-4b2b-98cd-0398922f2de0",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C71",
+      "claim": "Smc3-GFP might be enriched on centromeric regions of telophase chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that Smc3-GFP might be enriched on centromeric regions of telophase chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the colocalisation with spindle pole body marker shown in Figure 5a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "f58b980c-53df-4a32-bf7b-f699150e233e",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C72",
+      "claim": "The number of Mcd1 binding sites along chromosome arms was very low in telophase arrests, with only a few sites exhibiting levels above background.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of Mcd1 binding sites along chromosome arms was very low, with only a few sites exhibiting levels above background (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by ChIP-seq data in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "18f24553-6438-4e46-9a98-e222527615a3",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C73",
+      "claim": "Mcd1 is enriched around centromere regions in cdc15-2-arrested chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, comparison of average MCD1-6HA profiles across CEN sites confirmed that this cohesin subunit is enriched around centromere regions in cdc15-2-arrested chromosomes (Figure 5c, Figure 5\u2014figure supplement 2), thus validating our previous cytological observations (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by ChIP-seq data in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "84bc30cf-c55e-4f64-bac4-b0c46b3cbc95",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C74",
+      "claim": "Inactivation of cohesin in telophase arrests caused decondensation of rDNA signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of cohesin in telophase arrests caused decondensation of rDNA signals (Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by microscopy data in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "1dea9d8d-8980-4e1d-85be-2a9ac4dab8f8",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C75",
+      "claim": "Comparison of the contact maps revealed changes at centromeric regions in telophase cells depleted for cohesin.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the contact maps revealed changes at centromeric regions in telophase cells depleted for cohesin (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Hi-C data in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "44727168-5890-4a35-8783-55d6ebfbe1e0",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C76",
+      "claim": "On a large scale (above 200 kb), cohesins favour cis contacts between centromeres and their chromosome arms in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "On a large scale (above 200 kb), cohesins favour cis contacts between centromeres and their chromosome arms (Figure 6b and c top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Hi-C analysis in Figure 6b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "36fa5172-0061-401f-9282-3f07597bf440",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C77",
+      "claim": "At short distances (<100 kb), cohesin impedes contacts between centromeres and their flanking regions in telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this effect is reversed at short distances (<100 kb). Indeed, panels in Figure 6c show that cohesin impedes contacts between centromeres and their ~100 kb flanking regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Hi-C analysis in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "7d5693d5-d900-42cb-bee6-7d9010a2060f",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C78",
+      "claim": "Cohesin complexes influence intrachromatid contacts at centromeres in telophase chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that cohesin complexes influence intrachromatid contacts at centromeres in telophase chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the Hi-C data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "0c0f2882-70c9-441e-97ce-39df90f81cb3",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C79",
+      "claim": "The in trans interaction of CEN sequences was reduced in cdc15-as cells with depleted cohesin.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the in trans interaction of CEN sequences was also reduced in cdc15-as cells with depleted cohesin (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Hi-C analysis in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "96da1d55-242f-47f5-b58c-6f2b2dd86230",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C80",
+      "claim": "Inactivating cohesin in telophase reduces centromere clustering of the yeast genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, inactivating cohesin in telophase also reduces centromere clustering of the yeast genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the trans-centromere contact data in Figure 6d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "b487df2b-a5e6-4172-ba0d-ca98575656bc",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C81",
+      "claim": "Contacts between CEN12 and the rDNA are decreased when cohesin is depleted in cdc15-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cdc15-arrested cells, condensin-dependent loop bridges the CEN12 and rDNA (Lazar-Stefanita et al., 2017). In cohesin-depleted cdc15-arrested cells, these contacts are also strongly decreased (Figure 7b, yellow arrow), suggesting that cohesin plays a role in the formation of this structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Hi-C data in Figure 7b and comparison to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "aba11926-4881-46cf-9051-b03ebf55d90b",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C82",
+      "claim": "Contacts between pre- and post-rDNA regions are increased when the cohesin complex is disrupted in cdc15-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, contacts between pre- and post-rDNA regions are increased when the cohesin complex is disrupted, suggesting that it promotes the isolation of these regions in cdc15-arrested cells (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by Hi-C data in Figure 7b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "cc676f2d-9afd-4df1-a7e1-fdb66b5d25c7",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C83",
+      "claim": "Cohesin plays an active role in the organisation of specific regions of the genome in telophase-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, these results further support an active role for cohesin in the organisation of specific regions of the genome in telophase-arrested cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Hi-C data in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "0c2b8c79-c23b-4b7b-8c72-7b1ef8c10701",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C84",
+      "claim": "Cohesin is loaded onto chromosomes by the loader complex Scc2/4 during G1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin is loaded onto chromosomes by the loader complex Scc2/4 (Ciosk et al., 2000) during G1 and becomes cohesive during DNA replication (Uhlmann and Nasmyth, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ciosk et al., 2000 and Uhlmann and Nasmyth, 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "10b00959-0cda-471d-877e-b4a73fb4c9be",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C85",
+      "claim": "Cohesin becomes cohesive during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin is loaded onto chromosomes by the loader complex Scc2/4 (Ciosk et al., 2000) during G1 and becomes cohesive during DNA replication (Uhlmann and Nasmyth, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Uhlmann and Nasmyth, 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "0646073b-04a5-434e-9424-6738c99601f4",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C86",
+      "claim": "The cohesive state of cohesin requires the acetylation of Smc3 by the Eco1 acetyl transferase.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohesive state requires the acetylation of cohesin Smc3 by the Eco1 acetyl transferase to make cohesin refractory to an inhibitory 'anti-establishment' activity dependent on Wapl (Rolef Ben-Shahar et al., 2008; Unal et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rolef Ben-Shahar et al., 2008 and Unal et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "5c5a9767-69e2-47c0-9e55-c68d734f2764",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C87",
+      "claim": "Cleavage of Mcd1 by separase prompts anaphase segregation in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, cleavage of one of cohesin subunits, Mcd1/Scc1, by the protease separase (Esp1) prompts anaphase segregation (Uhlmann et al., 1999; Uhlmann et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Uhlmann et al., 1999 and Uhlmann et al., 2000.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "89d4fabc-dbc8-4d7b-87a9-c16afe511e7e",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C88",
+      "claim": "Separase activity is blocked by a bound inhibitor named securin (Pds1).",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, separase activity is blocked by a bound inhibitor named securin (Pds1) (Ciosk et al., 2000), which is destroyed by ubiquitin-mediated proteolysis once cells are ready to enter anaphase (Cohen-Fix et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ciosk et al., 2000 and Cohen-Fix et al., 1996.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "35926a37-c423-4afc-903b-402856ce771a",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C89",
+      "claim": "Securin is destroyed by ubiquitin-mediated proteolysis once cells are ready to enter anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, separase activity is blocked by a bound inhibitor named securin (Pds1) (Ciosk et al., 2000), which is destroyed by ubiquitin-mediated proteolysis once cells are ready to enter anaphase (Cohen-Fix et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cohen-Fix et al., 1996.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "64d0de87-5c53-4f01-a430-2e50dcf939b9",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C90",
+      "claim": "Separase-mediated cleavage of Mcd1 is primed by Polo-kinase (Cdc5)-dependent phosphorylation of Mcd1 at serines 175 and 268.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, separase-mediated cleavage of Mcd1 is primed by Polo-kinase (Cdc5)-dependent phosphorylation of Mcd1 at serines 175 (S175) and 268 (S268), on the cleavage sites (Alexandru et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Alexandru et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "9d159d79-6aa8-437b-906d-34bd86300b02",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C91",
+      "claim": "Mcd1 cleavage by separase is thought to terminate the function of cohesin on yeast chromosomes at the anaphase onset.",
+      "claim_type": "EXPLICIT",
+      "source": "At the anaphase onset, Mcd1 cleavage by separase is thought to terminate the function of cohesin on yeast chromosomes (Nasmyth, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prevailing view that the manuscript challenges, supported by citation to Nasmyth, 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "1a8a44b0-4ca1-4dfe-bc1b-8dc246ab4aad",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C92",
+      "claim": "Cohesin's subunits have been shown to be chromatin-bound during anaphase/telophase.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cohesin's subunits have been shown to be chromatin-bound during anaphase/telophase (Renshaw et al., 2010; Tanaka et al., 1999), however the functional contribution of this cohesin population has not been studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Renshaw et al., 2010 and Tanaka et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "c578fa48-f2e0-4bde-8515-1f6c8b4779dd",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C93",
+      "claim": "Condensin and cohesin are mutually exclusive on mammalian chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies demonstrate that condensin and cohesin are mutually exclusive on mammalian chromosomes (Abramo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Abramo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "b59c8981-78e7-44fb-95be-643109232b72",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C94",
+      "claim": "From anaphase to cytokinesis, chromosome-bound cohesin appears as condensin comes off mammalian chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, from anaphase to cytokinesis, chromosome-bound cohesin appears as condensin comes off chromosomes (Abramo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Abramo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "20d3183a-1d56-430d-903c-2215bdbb3e98",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C95",
+      "claim": "Chromosome folding in telophase was found to be independent of both condensin and cohesin in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, chromosome folding in telophase was found to be independent of both condensin and cohesin (Abramo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Abramo et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "47b3d69b-aefb-4955-a093-80f38bbebeb7",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C96",
+      "claim": "Cohesive cohesin topologically embraces DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "An important difference between cohesive cohesin and loop extruding complexes lies in the way that these complexes interact with the DNA substrate. While cohesive cohesin topologically embraces DNA (Srinivasan et al., 2018), loop extruding complexes rely on non-topological interactions (Davidson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Srinivasan et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "71afba7d-387d-4812-921b-2b78b52b800a",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C97",
+      "claim": "Loop extruding complexes rely on non-topological interactions with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "An important difference between cohesive cohesin and loop extruding complexes lies in the way that these complexes interact with the DNA substrate. While cohesive cohesin topologically embraces DNA (Srinivasan et al., 2018), loop extruding complexes rely on non-topological interactions (Davidson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Davidson et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "61ff60d3-051e-4c4d-aae3-6b6d211e0784",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C98",
+      "claim": "Cohesin complexes cleaved by TEV are likely still able to interact non-topologically with the DNA substrate.",
+      "claim_type": "IMPLICIT",
+      "source": "Therefore, it is likely that cohesin complexes cleaved by TEV are still able to interact non-topologically with the DNA substrate (Figure 7b) and/or can maintain extruded loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that TEV-cleaved cohesin maintains some structural function.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "1f08b6e3-8daf-4009-820d-952d64829cd8",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C99",
+      "claim": "TEV cleavage has only a modest effect on the loop extrusion (structural) role of cohesin while disrupting the cohesive role.",
+      "claim_type": "EXPLICIT",
+      "source": "This would explain why TEV cleavage has only a modest effect on the loop extrusion (structural) role of cohesin, while disrupting the cohesive role (that depends on topological association) (Figure 7b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and theoretical considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "23ab5720-ca38-48d9-9ec6-dc049c10471d",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C100",
+      "claim": "Auxin-mediated degradation would abolish both topological and non-topological interactions of cohesin.",
+      "claim_type": "IMPLICIT",
+      "source": "In contrast, auxin-mediated degradation would abolish both topological and non-topological interactions (Figure 7c), which would result in the loss of cohesion but also structure (and compaction) thus generating a situation where unorganised chromatids would fail to efficiently segregate (Figure 7c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that auxin-mediated degradation causes severe segregation defects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "d93a5e4c-66a9-408e-8c78-8951995f06b2",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C101",
+      "claim": "The loss of cohesin-dependent structures on chromosome arms, but not centromeric regions, on cdc15-arrested cells is reminiscent of the pattern reported for the inactivation of the cohesin regulator Pds5.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the loss of cohesin-dependent structures on chromosome arms, but not centromeric regions, on cdc15-arrested cells is reminiscent of the pattern reported for the inactivation of the cohesin regulator Pds5 (Costantino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous work supported by citation to Costantino et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "633e448f-3311-488a-a350-5c90f4be3862",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C102",
+      "claim": "Pds5 has been shown to restrict loop expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Pds5 has been shown to restrict loop expansion (Costantino et al., 2020; Dauban et al., 2020) and therefore Pds5 absence in telophase could potentially explain our observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Costantino et al., 2020 and Dauban et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "7359ae6b-649d-4607-95f2-76ad0a2fd2d0",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C103",
+      "claim": "Cohesin is necessary for the maintenance of the structure of the rDNA during metaphase through the regulation of condensin localisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has shown that cohesin is necessary for the maintenance of the structure of the rDNA during metaphase and that this role is executed through the regulation of condensin localisation (Lamothe et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lamothe et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "27ea7510-39bb-4dd6-90d2-8a66f92f6bc1",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C104",
+      "claim": "Yeast cohesin plays important roles during segregation, maintaining the looped organisation of segregating chromatids and supporting centromere organisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data demonstrates that yeast cohesin plays important roles during segregation, possibly after separase cleavage, maintaining the looped organisation of segregating chromatids and supporting centromere organisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study supported by multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "6f46ec96-dc14-4508-a478-8184dbf99a7e",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "claim_id": "C105",
+      "claim": "Yeast cohesin has important post-metaphase functions critical for ensuring faithful genome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these findings extend the repertoire of cohesin roles on chromosomes, demonstrating that this complex has important post-metaphase functions critical for ensuring faithful genome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2dd22c71-cda5-4b1c-9882-589744f9d9f5",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Auxin-mediated degradation of Mcd1 in metaphase-arrested cells causes severe disruption of nuclear segregation and chromosome missegregation during anaphase. After 180 min of auxin treatment, 48% of cells remained stuck in anaphase, 35% showed correct segregation, and 20% showed missegregation of chromosome arm tags, with higher error rates for telomeric regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 provide converging experimental evidence from western blots (C33), microscopy (C34-C35), and quantitative analysis (C36-C38) demonstrating that Mcd1 degradation causes catastrophic segregation defects. The data are internally consistent and support the conclusion (C40) that rapid Mcd1 removal impairs chromatid separation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "1d660d85-fe12-4434-9544-d6bb1159cd5c",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TEV-mediated cleavage of Mcd1 allows bulk nuclear segregation unlike auxin-mediated degradation. TEV cleavage occurs after 60 min, bulk segregation occurs 90-120 min later, and centromeric tags segregate efficiently. The cleaved C-terminal fragment remains stable throughout the timecourse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 are supported by western blot and microscopy data (Figure 1\u2014figure supplement 2). The stability of cleaved fragments (C45) and efficient segregation (C43) contrast with the auxin degradation results, providing a key experimental comparison. The conclusion (C44) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "414d3f0f-763f-455e-adb1-22316d6ae641",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TEV cleavage leaves a glycine residue that is not recognized by the N-rule pathway, resulting in stable Mcd1 fragments that remain associated with Smc3. Both N- and C-terminal fragments co-immunoprecipitate with Smc3, indicating the cohesin tripartite complex remains structurally intact after TEV cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by established knowledge about the N-rule pathway (cited from Varshavsky, 2011). Claims C49-C50 are supported by co-IP data (Figure 2), demonstrating that cleaved fragments remain associated with the cohesin core. The mechanistic explanation is consistent with the observed stability of fragments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Engineered TEV cleavage sites that leave phenylalanine (TEVF) instead of glycine (TEVG) result in rapid degradation of both Mcd1 fragments. TEVF cleavage causes minor delays in anaphase progression and 16% missegregation compared to <5% with TEVG, but both allow bulk nuclear separation (>75% TEVF, >85% TEVG after 120 min).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C61 are supported by western blot data (Figure 3a-b) showing differential fragment stability and microscopy data (Figure 3c) quantifying segregation fidelity. The experimental design directly tests the hypothesis that fragment degradation affects segregation. The conclusion (C61) is well-supported by the comparative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "709558c8-3226-40a1-884e-7b65693bbe9f",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Hi-C analysis reveals that TEV-cleaved cohesin remains chromatin-bound and maintains partial chromosome organization during anaphase, while auxin-mediated degradation causes complete loss of chromatin-bound Smc3 and severe disruption of chromosome structure. Contact probability analysis shows reduction in the 10-50 kb range is significantly more pronounced in Mcd1-AID than Mcd1-TEVG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C69 are supported by ChIP data (Figure 4a) and Hi-C analysis (Figure 4b-c). The distance law analysis (C66-C67) provides quantitative evidence for differential structural disruption. The conclusions (C68-C69) logically follow from the data and explain the differential segregation phenotypes observed in earlier experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "0431a08c-b371-4143-961a-e429e49e1ffc",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A small pool of cohesin complexes is bound to telophase chromosomes in wild-type cells, enriched at centromeric regions. Smc3-GFP colocalizes with spindle pole body markers, and calibrated ChIP-seq confirms Mcd1 enrichment around centromeres in cdc15-2-arrested cells, with very low binding along chromosome arms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 are supported by microscopy (Figure 5a) and ChIP-seq data (Figure 5b-c). The convergence of cytological and genomic approaches strengthens the conclusion. The calibrated ChIP-seq with untagged controls (C72) provides appropriate background subtraction, supporting the specificity of centromeric enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "88f0b8f0-8ce0-4239-b972-7e624845eaff",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cohesin complexes bound to telophase chromosomes play a role in organizing centromeric regions. Hi-C analysis shows that at large scales (>200 kb), cohesin favors cis contacts between centromeres and chromosome arms, but at short distances (<100 kb), cohesin impedes contacts between centromeres and flanking regions. Cohesin depletion also reduces trans-centromere interactions and centromere clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C80 are supported by Hi-C data (Figure 6b-d) showing scale-dependent effects of cohesin on centromeric organization. The pile-up analysis of centromeric contacts provides quantitative evidence for both cis and trans effects. The conclusions (C78, C80) are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "add48b85-d7a7-4f21-a648-e8aaa080a063",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cohesin plays an active role in organizing the ribosomal DNA (rDNA) region in telophase-arrested cells. Inactivation of cohesin causes decondensation of rDNA signals, decreases contacts between CEN12 and rDNA, and increases contacts between pre- and post-rDNA regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C81-C82 are supported by microscopy (Figure 7a) and Hi-C data (Figure 7b). The rDNA organization changes are consistent with cohesin's known role at this locus. The conclusion (C83) is supported by the combined evidence from centromeric and rDNA analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "f55ed77b-2ebf-4fee-9359-c65a7aa39e34",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cohesin function extends to the anaphase period when chromatids are segregating in yeast cells. Cohesin maintains the looped organization of segregating chromatids and supports centromere organization, demonstrating important post-metaphase functions critical for faithful genome segregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C104-C105 represent the main conclusions of the study, supported by multiple experimental approaches including auxin degradation, TEV cleavage, Hi-C analysis, and ChIP-seq. The convergence of evidence from different experimental systems strongly supports these overarching conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "c1a9228e-d88b-4759-9e55-6f0e61391941",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose a mechanistic model where cohesive cohesin topologically embraces DNA while loop-extruding complexes rely on non-topological interactions. TEV-cleaved cohesin likely retains non-topological DNA interactions and maintains extruded loops, explaining modest effects on loop extrusion while disrupting cohesion. Auxin-mediated degradation abolishes both interaction types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C97 are supported by citations to prior work. However, claims C98-C100 are inferred mechanistic explanations rather than directly demonstrated. While the model is consistent with the observed data, the non-topological interactions of TEV-cleaved cohesin are not directly tested. Additional experiments would be needed to confirm this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "23c51205-afb3-4875-a5dd-237f3450c2a4",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on cohesin structure, function, and regulation in yeast and mammalian cells, including its roles in sister chromatid cohesion, chromosome condensation, loop formation, and the mechanisms of separase-mediated cleavage. This establishes the context for challenging the prevailing view that cohesin function terminates at anaphase onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C32, C84-C95, C101-C103 are primarily background claims supported by citations to established literature. These claims accurately represent prior knowledge and provide appropriate context for the current study. The citations appear appropriate and the claims are consistent with the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    },
+    {
+      "id": "2e21460f-634e-408a-9d74-2a7d7fa9e2fe",
+      "content_id": "705437ac-c94c-47ec-8cd3-8f12b1d42958",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The prevailing view in the field is that separase cleavage removes all cohesin complexes from chromosomes to initiate anaphase, terminating cohesin function on yeast chromosomes at the anaphase onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C91 accurately represent the prevailing view that the manuscript challenges. This is supported by citation to Nasmyth, 2001 and represents established knowledge in the field. The manuscript's contribution is to challenge and refine this view.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:13:51.575352Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2ab4484c-77c7-475f-9801-543960139141",
+      "result_id": "2dd22c71-cda5-4b1c-9882-589744f9d9f5"
+    },
+    {
+      "claim_id": "c38c4dde-b1f3-4e44-b658-ab79733a3576",
+      "result_id": "2dd22c71-cda5-4b1c-9882-589744f9d9f5"
+    },
+    {
+      "claim_id": "1026c326-d3af-4cbf-9fa4-01442213ef92",
+      "result_id": "2dd22c71-cda5-4b1c-9882-589744f9d9f5"
+    },
+    {
+      "claim_id": "bc37fcf5-34f3-417b-8966-7c44f95f814a",
+      "result_id": "2dd22c71-cda5-4b1c-9882-589744f9d9f5"
+    },
+    {
+      "claim_id": "ac242f14-a89d-473e-bf11-1c7f1c11b96c",
+      "result_id": "2dd22c71-cda5-4b1c-9882-589744f9d9f5"
+    },
+    {
+      "claim_id": "9edd9d94-a0ba-4831-96ed-54ff82a38c27",
+      "result_id": "2dd22c71-cda5-4b1c-9882-589744f9d9f5"
+    },
+    {
+      "claim_id": "7777caa6-170c-4244-9a5a-56e633585e5c",
+      "result_id": "2dd22c71-cda5-4b1c-9882-589744f9d9f5"
+    },
+    {
+      "claim_id": "9ba5a1be-0d2c-4414-af48-efa9bca2bd00",
+      "result_id": "2dd22c71-cda5-4b1c-9882-589744f9d9f5"
+    },
+    {
+      "claim_id": "eaa7cd81-9061-43ad-96ab-56055ae86631",
+      "result_id": "2dd22c71-cda5-4b1c-9882-589744f9d9f5"
+    },
+    {
+      "claim_id": "1c651547-c410-4cbc-88ed-d135a81839a6",
+      "result_id": "1d660d85-fe12-4434-9544-d6bb1159cd5c"
+    },
+    {
+      "claim_id": "fba6d047-02bd-4292-b721-55d290459d6a",
+      "result_id": "1d660d85-fe12-4434-9544-d6bb1159cd5c"
+    },
+    {
+      "claim_id": "2daa25ff-39fd-4fb0-8043-29d8b21805ef",
+      "result_id": "1d660d85-fe12-4434-9544-d6bb1159cd5c"
+    },
+    {
+      "claim_id": "1b29fd28-cc2a-490c-a954-d99d1f2715e3",
+      "result_id": "1d660d85-fe12-4434-9544-d6bb1159cd5c"
+    },
+    {
+      "claim_id": "c1eff01e-3729-4c32-848b-bb6ec0de5df1",
+      "result_id": "1d660d85-fe12-4434-9544-d6bb1159cd5c"
+    },
+    {
+      "claim_id": "4d377b5f-9a84-4223-b92e-95092b14c120",
+      "result_id": "414d3f0f-763f-455e-adb1-22316d6ae641"
+    },
+    {
+      "claim_id": "b8fdd341-556f-4669-a752-57e098888f58",
+      "result_id": "414d3f0f-763f-455e-adb1-22316d6ae641"
+    },
+    {
+      "claim_id": "61ea068e-2611-4334-8675-7170242caec3",
+      "result_id": "414d3f0f-763f-455e-adb1-22316d6ae641"
+    },
+    {
+      "claim_id": "7154fcb3-5c50-434a-9936-149bece1ed68",
+      "result_id": "414d3f0f-763f-455e-adb1-22316d6ae641"
+    },
+    {
+      "claim_id": "5b495220-aa57-409c-b3e7-72159b8ce570",
+      "result_id": "414d3f0f-763f-455e-adb1-22316d6ae641"
+    },
+    {
+      "claim_id": "cf4aea7b-04ae-467a-9a4d-2bb92ab63447",
+      "result_id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9"
+    },
+    {
+      "claim_id": "77578b94-eef4-42f9-b465-2c54fd4523a1",
+      "result_id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9"
+    },
+    {
+      "claim_id": "25837b2f-b4b1-4de8-a5e0-bf5e5fbac339",
+      "result_id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9"
+    },
+    {
+      "claim_id": "7bc10234-5228-4050-af1b-d7f0edf97c3e",
+      "result_id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9"
+    },
+    {
+      "claim_id": "49d9de6b-afc6-4e1f-aaa3-ed2e3b5e7b86",
+      "result_id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9"
+    },
+    {
+      "claim_id": "285f7474-b44a-4adc-a976-7c14d3a1ac02",
+      "result_id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9"
+    },
+    {
+      "claim_id": "74a7e9f2-eff8-4738-97af-bc3c2a0554c5",
+      "result_id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9"
+    },
+    {
+      "claim_id": "81dd19c6-0e9e-4be8-b0fd-9d3e13bcc08f",
+      "result_id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9"
+    },
+    {
+      "claim_id": "361205ff-2cf9-4fc3-8ca4-6d51f6e1e459",
+      "result_id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9"
+    },
+    {
+      "claim_id": "8bc2f7f9-798f-4e53-a457-ee8fd13c7d49",
+      "result_id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9"
+    },
+    {
+      "claim_id": "91ba45da-3ad7-4f60-b3e1-2110d73478c5",
+      "result_id": "fcae3f52-9b65-41ff-898b-0189d1d6dee9"
+    },
+    {
+      "claim_id": "15cd73d6-09cf-4fe0-a5f6-cb419b0ff949",
+      "result_id": "709558c8-3226-40a1-884e-7b65693bbe9f"
+    },
+    {
+      "claim_id": "cf6053f9-c932-4340-8fb7-a33049f398e0",
+      "result_id": "709558c8-3226-40a1-884e-7b65693bbe9f"
+    },
+    {
+      "claim_id": "355718c4-b167-46f4-a03a-0e2eb88adf01",
+      "result_id": "709558c8-3226-40a1-884e-7b65693bbe9f"
+    },
+    {
+      "claim_id": "1470d6d0-84f1-49a5-865f-b52b95d6bc40",
+      "result_id": "709558c8-3226-40a1-884e-7b65693bbe9f"
+    },
+    {
+      "claim_id": "16ec0ff2-a0a8-40b7-a701-d1b476970fe3",
+      "result_id": "709558c8-3226-40a1-884e-7b65693bbe9f"
+    },
+    {
+      "claim_id": "a31385c2-9178-45d5-80cd-41414f2ac377",
+      "result_id": "709558c8-3226-40a1-884e-7b65693bbe9f"
+    },
+    {
+      "claim_id": "86b4b723-3d07-4ece-93d4-e2f3a1b53a8b",
+      "result_id": "709558c8-3226-40a1-884e-7b65693bbe9f"
+    },
+    {
+      "claim_id": "66b48277-9d05-4a1d-84b7-ee1c6b8228ee",
+      "result_id": "709558c8-3226-40a1-884e-7b65693bbe9f"
+    },
+    {
+      "claim_id": "2c21ca73-9e90-4491-b64a-d81250721f55",
+      "result_id": "0431a08c-b371-4143-961a-e429e49e1ffc"
+    },
+    {
+      "claim_id": "73563571-a538-4a85-a388-476e8ba350f9",
+      "result_id": "0431a08c-b371-4143-961a-e429e49e1ffc"
+    },
+    {
+      "claim_id": "86cbe288-2be0-4b2b-98cd-0398922f2de0",
+      "result_id": "0431a08c-b371-4143-961a-e429e49e1ffc"
+    },
+    {
+      "claim_id": "f58b980c-53df-4a32-bf7b-f699150e233e",
+      "result_id": "0431a08c-b371-4143-961a-e429e49e1ffc"
+    },
+    {
+      "claim_id": "18f24553-6438-4e46-9a98-e222527615a3",
+      "result_id": "0431a08c-b371-4143-961a-e429e49e1ffc"
+    },
+    {
+      "claim_id": "a5b6aa6c-1c6e-422f-9f5c-8ba595b6d6a1",
+      "result_id": "88f0b8f0-8ce0-4239-b972-7e624845eaff"
+    },
+    {
+      "claim_id": "1dea9d8d-8980-4e1d-85be-2a9ac4dab8f8",
+      "result_id": "88f0b8f0-8ce0-4239-b972-7e624845eaff"
+    },
+    {
+      "claim_id": "44727168-5890-4a35-8783-55d6ebfbe1e0",
+      "result_id": "88f0b8f0-8ce0-4239-b972-7e624845eaff"
+    },
+    {
+      "claim_id": "36fa5172-0061-401f-9282-3f07597bf440",
+      "result_id": "88f0b8f0-8ce0-4239-b972-7e624845eaff"
+    },
+    {
+      "claim_id": "7d5693d5-d900-42cb-bee6-7d9010a2060f",
+      "result_id": "88f0b8f0-8ce0-4239-b972-7e624845eaff"
+    },
+    {
+      "claim_id": "0c0f2882-70c9-441e-97ce-39df90f81cb3",
+      "result_id": "88f0b8f0-8ce0-4239-b972-7e624845eaff"
+    },
+    {
+      "claim_id": "96da1d55-242f-47f5-b58c-6f2b2dd86230",
+      "result_id": "88f0b8f0-8ce0-4239-b972-7e624845eaff"
+    },
+    {
+      "claim_id": "84bc30cf-c55e-4f64-bac4-b0c46b3cbc95",
+      "result_id": "add48b85-d7a7-4f21-a648-e8aaa080a063"
+    },
+    {
+      "claim_id": "b487df2b-a5e6-4172-ba0d-ca98575656bc",
+      "result_id": "add48b85-d7a7-4f21-a648-e8aaa080a063"
+    },
+    {
+      "claim_id": "aba11926-4881-46cf-9051-b03ebf55d90b",
+      "result_id": "add48b85-d7a7-4f21-a648-e8aaa080a063"
+    },
+    {
+      "claim_id": "cc676f2d-9afd-4df1-a7e1-fdb66b5d25c7",
+      "result_id": "add48b85-d7a7-4f21-a648-e8aaa080a063"
+    },
+    {
+      "claim_id": "29c919c5-e7e1-48c7-b9ae-bb255234ed92",
+      "result_id": "f55ed77b-2ebf-4fee-9359-c65a7aa39e34"
+    },
+    {
+      "claim_id": "27ea7510-39bb-4dd6-90d2-8a66f92f6bc1",
+      "result_id": "f55ed77b-2ebf-4fee-9359-c65a7aa39e34"
+    },
+    {
+      "claim_id": "6f46ec96-dc14-4508-a478-8184dbf99a7e",
+      "result_id": "f55ed77b-2ebf-4fee-9359-c65a7aa39e34"
+    },
+    {
+      "claim_id": "47b3d69b-aefb-4955-a093-80f38bbebeb7",
+      "result_id": "c1a9228e-d88b-4759-9e55-6f0e61391941"
+    },
+    {
+      "claim_id": "71afba7d-387d-4812-921b-2b78b52b800a",
+      "result_id": "c1a9228e-d88b-4759-9e55-6f0e61391941"
+    },
+    {
+      "claim_id": "61ff60d3-051e-4c4d-aae3-6b6d211e0784",
+      "result_id": "c1a9228e-d88b-4759-9e55-6f0e61391941"
+    },
+    {
+      "claim_id": "1f08b6e3-8daf-4009-820d-952d64829cd8",
+      "result_id": "c1a9228e-d88b-4759-9e55-6f0e61391941"
+    },
+    {
+      "claim_id": "23ab5720-ca38-48d9-9ec6-dc049c10471d",
+      "result_id": "c1a9228e-d88b-4759-9e55-6f0e61391941"
+    },
+    {
+      "claim_id": "93d92677-7aba-4412-b759-555b02d62bae",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "55151727-4446-4879-9a75-cff15121e121",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "8bd3ca62-297e-465c-b5c0-fe901cb3105c",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "72e175bb-e2b4-4ac7-a5d2-5042e2e416e9",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "bd4deee2-8ea2-470a-80c6-626ca41e40ff",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "01e7e136-c3e6-4001-9909-f65fe76a8d0b",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "b484cc9a-7943-477e-9420-b26c42cb89f0",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "10f9cde1-407f-4bf9-b5e0-7f188d4105b2",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "21466bfd-3aa5-47d7-bce2-b152ce919d52",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "6b7b430e-1571-4388-a5df-aa8b59ff4cb7",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "1d6638d8-3951-41af-8d81-c46cd13e2d16",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "abf8e521-35e6-42e3-b6ac-aecaec1b23bc",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "95c4f1a1-7d5d-4b8e-8675-42467eb6544a",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "133b67f3-e90e-4f1b-a239-8cc0c29e7775",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "4993f2e2-000a-4195-9a2f-e97a22f9deef",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "85a94faf-d7ff-4099-9bf7-b3e4d57ef192",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "2b06b148-7674-4231-bd9c-56a1aa84250e",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "ef0ada64-c65b-4d3c-87ae-2b582318c3d1",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "fdb82b9c-5a82-4f63-b8d7-4d253a91018e",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "8ee8aa83-e500-4260-b00b-2d934634090b",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "4997948c-b76d-4f7e-a34d-865da50b42b0",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "22b92c6a-c0ec-47e1-8c20-393033a8dbc2",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "ff530633-0be1-4801-a43b-ad4a756c67bb",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "c4969e69-9743-4e20-a549-d85ea587fa39",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "9a7dbe8a-b1d2-4e4a-8597-ffe7855bf2f9",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "0c2b8c79-c23b-4b7b-8c72-7b1ef8c10701",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "10b00959-0cda-471d-877e-b4a73fb4c9be",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "0646073b-04a5-434e-9424-6738c99601f4",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "5c5a9767-69e2-47c0-9e55-c68d734f2764",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "89d4fabc-dbc8-4d7b-87a9-c16afe511e7e",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "35926a37-c423-4afc-903b-402856ce771a",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "64d0de87-5c53-4f01-a430-2e50dcf939b9",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "9d159d79-6aa8-437b-906d-34bd86300b02",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "1a8a44b0-4ca1-4dfe-bc1b-8dc246ab4aad",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "c578fa48-f2e0-4bde-8515-1f6c8b4779dd",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "b59c8981-78e7-44fb-95be-643109232b72",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "20d3183a-1d56-430d-903c-2215bdbb3e98",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "d93a5e4c-66a9-408e-8c78-8951995f06b2",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "633e448f-3311-488a-a350-5c90f4be3862",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "7359ae6b-649d-4607-95f2-76ad0a2fd2d0",
+      "result_id": "23c51205-afb3-4875-a5dd-237f3450c2a4"
+    },
+    {
+      "claim_id": "da3e8d91-94b0-4c6f-a36d-f4a2546a53ad",
+      "result_id": "2e21460f-634e-408a-9d74-2a7d7fa9e2fe"
+    },
+    {
+      "claim_id": "9d159d79-6aa8-437b-906d-34bd86300b02",
+      "result_id": "2e21460f-634e-408a-9d74-2a7d7fa9e2fe"
+    }
+  ],
+  "comparisons": []
+}

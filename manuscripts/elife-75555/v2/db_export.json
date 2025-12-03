@@ -1,0 +1,1600 @@
+{
+  "submission": {
+    "id": "f2172502-7d35-4669-94ae-650cf1451395",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:15:59.028372Z",
+    "updated_at": "2025-12-03T10:15:59.028372Z"
+  },
+  "content": [
+    {
+      "id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "submission_id": "f2172502-7d35-4669-94ae-650cf1451395",
+      "content_type": "manuscript",
+      "content_text": "# Comprehensive interrogation of the ADAR2 deaminase domain for engineering enhanced RNA editing activity and specificity\n\n## Authors\n\n- Dhruva Katrekar<sup>1</sup> ([ORCID: 0000-0002-8028-3244](https://orcid.org/0000-0002-8028-3244))\n- Yichen Xiang<sup>1</sup>\n- Nathan Palmer<sup>2</sup> ([ORCID: 0000-0001-6347-9379](https://orcid.org/0000-0001-6347-9379))\n- Anushka Saha<sup>1</sup>\n- Dario Meluzzi<sup>1</sup>\n- Prashant Mali<sup>1</sup> ([ORCID: 0000-0002-3383-1287](https://orcid.org/0000-0002-3383-1287)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering, University of California San Diego San Diego United States\n2. Division of Biological Sciences, University of California San Diego San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAdenosine deaminases acting on RNA (ADARs) can be repurposed to enable programmable RNA editing, however their exogenous delivery leads to transcriptome-wide off-targeting, and additionally, enzymatic activity on certain RNA motifs, especially those flanked by a 5\u2019 guanosine is very low thus limiting their utility as a transcriptome engineering toolset. Towards addressing these issues, we first performed a novel deep mutational scan of the ADAR2 deaminase domain, directly measuring the impact of every amino acid substitution across 261 residues, on RNA editing. This enabled us to create a domain-wide mutagenesis map while also revealing a novel hyperactive variant with improved enzymatic activity at 5\u2019-GAN-3\u2019 motifs. As overexpression of ADAR enzymes, especially hyperactive variants, can lead to significant transcriptome-wide off-targeting, we next engineered a split-ADAR2 deaminase which resulted in >100-fold more specific RNA editing as compared to full-length deaminase overexpression. Taken together, we anticipate this systematic engineering of the ADAR2 deaminase domain will enable broader utility of the ADAR toolset for RNA biotechnology applications.\n\n## Introduction\n\nAdenosine to inosine (A-to-I) editing is a common post-transcriptional modification in RNA that occurs in a variety of organisms, including humans. This A-to-I deamination of specific adenosines in double-stranded RNA is catalyzed by enzymes called adenosine deaminases acting on RNA (ADARs) (Melcher et al., 1996; Bass and Weintraub, 1988; Peng et al., 2012; Nishikura, 2016; Eggington et al., 2011; Wagner et al., 1989; Bass and Weintraub, 1987; Mannion et al., 2014; Tan et al., 2017; Tomaselli et al., 2015; Levanon et al., 2004; Schoft et al., 2007). Since inosine is structurally similar to guanosine, it is interpreted as a guanosine during the cellular processes of translation and splicing, thereby making ADARs powerful systems for altering protein sequences.\n\nCorrespondingly, adenosine deaminases have been repurposed for site-specific RNA editing by recruiting them to target RNA sequences using engineered ADAR-recruiting RNAs (adRNAs) (Woolf et al., 1995). Recently, several studies have demonstrated the potential of both genetically encodable and chemically modified RNA-guided adenosine deaminases for the correction of point mutations and the repair of premature stop codons both in vitro (Montiel-Gonzalez et al., 2013; Stafforst and Schneider, 2012; Cox et al., 2017; Wettengel et al., 2017; Merkle et al., 2019; Sinnamon et al., 2017; Monteleone et al., 2019; Fukuda et al., 2017; Qu et al., 2019) and in vivo (Katrekar et al., 2019; Sinnamon et al., 2020). These studies have primarily relied on exogenous ADARs which introduce a significant number of transcriptome-wide off-target A-to-I edits (Cox et al., 2017; Katrekar et al., 2019; Vallecillo-Viejo et al., 2018; Vogel et al., 2018). One solution to this problem is the engineering of adRNAs to enable the recruitment of endogenous ADARs. In this regard, we recently showed that using simple long antisense RNA (>60 bp) can suffice to recruit endogenous ADARs and these adRNAs are both genetically encodable and chemically synthesizable (Katrekar et al., 2019); and Merkle and colleagues showed that using engineered chemically synthesized antisense oligonucleotides (Merkle et al., 2019) could also lead to robust RNA editing via endogenous ADAR recruitment. Although this modality allows for highly specific editing, its applicability is restricted to editing adenosines in certain RNA motifs preferred by the native ADARs, and in tissues with high endogenous ADAR activity. Additionally, it cannot be utilized for novel functionalities such as deamination of cytosine to uracil (C-to-U) editing which requires exogenous delivery of ADAR2 variants (Abudayyeh et al., 2019). Thus, engineering a genetically encodable RNA editing tool that efficiently edits RNA with high specificity and activity is essential for enabling broader use of this toolset for biotechnology and therapeutic applications.\n\nIn this regard, the crystal structure of the ADAR2 deaminase domain (ADAR2-DD) (Macbeth et al., 2005; Matthews et al., 2016; Thuy-Boun et al., 2020) and several key biochemical and computational studies (Ohman et al., 2000; Kuttan and Bass, 2012; Daniel et al., 2017; Daniel et al., 2012; Dawson et al., 2004; Wang and Beal, 2016; Roth et al., 2019; Schaffer et al., 2020; Stefl et al., 2010; Riedmann et al., 2008) have laid the foundation for understanding its catalytic mechanism and target preferences, but we still lack comprehensive knowledge of how mutations and fragmentation affect the ability of the ADAR2-DD to edit RNA. To address this, we first carried out a quantitative deep mutational scan (DMS), measuring the effect of every possible single amino acid substitution across 261 residues of the ADAR2-DD, on enzyme function. We utilized the sequence-function map thus generated, to identify novel enhanced variants for A-to-I editing. Additionally, combining information from these sequence-function maps with existing knowledge of the structure and residue conservation scores, we also engineered a genetically encodable split-ADAR2 system that enabled efficient and highly specific RNA editing.\n\n## Results\n\n### DMS of the ADAR2-DD\n\nTo gain comprehensive insight into how mutations affect the ADAR2-DD, we used DMS, a technique that enables simultaneous assessment of the activities of thousands of protein variants (Fowler and Fields, 2014; Araya and Fowler, 2011). Typically, this approach relies on phenotypic selection methods such as cell fitness or fluorescent reporters that result in an enrichment of beneficial variants and a depletion of deleterious variants. However, as RNA editing yields are not precisely quantifiable using surrogate readouts, we focused on directly measuring RNA editing activity in the screens. To do so, we linked genotype to phenotype by placing the RNA editing sites on the same transcript encoding the deaminase variant. These RNA editing sites were chosen within the deaminase domain such that they met two criteria: (1) the sites were outside the 261 residue region where single amino acid substitutions were created for the DMS; and (2) an A-to-I(G) change at these sites resulted in a synonymous alteration at the codon level. By ensuring every cell in the pooled screen received a single library element, we could perform a quantitative DMS of the core 261 amino acids (residues 340\u2013600) of the ADAR2-DD via 4959 (261 \u00d7 19) single amino acid variants, directly measuring the effect of each mutation on A-to-I editing yields (Figure 1a, b, and c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75555/elife-75555-fig1-v2.jpg)\n\n**Figure 1.:** (a) Lentiviral vectors comprising two copies of MS2-adRNA both targeting either a 5\u2019 or a 3\u2019 UAG target site for the DMS were created. For the 5\u2019-GAN-3\u2019 enhancer screen, the MS2-adRNAs targeted a 5\u2019 or 3\u2019 GAC site. The lentiviral vector alco contained a mCherry and hygromycin resistance marker. Libraries of single amino acid variants of the ADAR2-DD were created in a second lentiviral with a puromycin selection marker. For the 5\u2019-GAN-3\u2019 enhancer screen, the corresponding library was created in the hyperactive ADAR2-DD(E488Q) backbone. (b) HEK293FT cells were transduced with the MS2-adRNA lentiviruses at a high multiplicity of infection (MOI) and upon hygromycin selection, a single clone with high mCherry expression was selected. Four independent clonal cell lines were created, harboring MS2-adRNA targeting the 5\u2019 and 3\u2019 UAG and GAC sites. The clonal cell line bearing the MS2-adRNA was then transduced with the lentiviral library of MCP-ADAR2-DD variants at a low MOI to ensure delivery of a single variant per cell. Cells were then selected with puromycin. (c) During the processes of cellular transcription and translation, each cell produces the MS2-adRNA as well as MCP-ADAR2-DD variant. Upon translation in the cell, each MCP-ADAR2-DD variant, in combination with the MS2-adRNA, edits its own transcript creating a synonymous change. Cells were harvested, mRNA isolated and regions of the ADAR2-DD were amplified and sequenced. The fraction of edited reads was then computed for each mutant. (d) Replicate correlation for the ADAR2-DD DMS. The X and Y axes represent the log2 fold change in editing as compared to the ADAR2. (e) Structure of the ADAR2-DD bound to its substrate (PDB 5HP3) with the degree of mutability of each residue as measured by the DMS highlighted. Residues that are highly intolerant to mutations are colored red while residues that are highly mutable are colored yellow. Residues not assayed in this DMS are colored white. (f) Using the library chassis of the DMS, a screen of deaminase domain mutants (in an E488Q background) was performed to mine variants with improved activity against 5\u2019-GAN-3\u2019 RNA motifs. Replicate correlation for the 5\u2019-GAN-3\u2019 enhancer mutant screen. The X and Y axes represent the log2 fold change in editing as compared to the ADAR2. (g) Structure of the ADAR2-DD(E488Q) bound to its substrate (PDB 5ED1) with the N496 residue highlighted in red, the E488Q residue in cyan, the target adenosine in green, the orphaned cytosine in magenta, and the adenosine on the unedited strand that base pairs with the 5\u2019 uracil flanking the target adenosine in orange. (h) The E488Q, N496F double mutant was validated by editing a GAA motif in the GAPDH CDS, a GAG motif in the KRAS CDS and GAC, GAT motifs in the RAB7A 3\u2019 UTR. Values represent mean \u00b1 SEM (n = 3). p-Values were computed using a two-tailed unpaired t-test. All experiments were carried out in HEK293FT cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75555/elife-75555-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Schematic of the ADAR2-DD showing oligonucleotide pools used to create the DMS library along with editing sites and primer binding sites. Oligonucleotide libraries 1, 2, and 3 were assayed for editing at the sites located at the 5\u2019 end while libraries 4, 5, and 6 were assayed for editing at the 3\u2019 end. Libraries 1 and 2 were amplified using primers 5\u2019 seq F and 5\u2019 seq R2, library 3 with 5\u2019 seq F and 5\u2019 seq R, library 4 with 3\u2019 seq F and 3\u2019 seq R and libraries 5 and 6 with 3\u2019 seq F2 and 3\u2019 seq R. (b) Histogram of variant counts from the DMS; 4958 of the 4959 variants were detected with 4931 variants showing >50 reads per replicate. (c) Heatmaps illustrating impact of single amino acid substitutions in residues 340\u2013600 on the ability of the ADAR2-DD to edit a UAG motif. Rectangles are colored according to the scale bar on the right depicting the Z-score. Diagonal bars indicate standard error. The amino acids in the wild-type ADAR2-DD are indicated in the heatmap with a\u2219. Amino acids are indicated on the left and grouped based on type of amino acid: positively charged, negatively charged, polar-neutral, non-polar, aromatic, and unique. The heatmap bars at the top represent amino acid conservation score and surface exposure, respectively.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75555/elife-75555-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) A panel of mutants from the pooled deep mutational scan (DMS) screens were individually validated in an arrayed luciferase assay using a cluc reporter bearing a UAG stop codon. The plots represent log2 fold change as compared to the wild-type ADAR2 for (i) the DMS screen and (ii) the arrayed luciferase assay. Values represent mean \u00b1 SEM for the luciferase assay (n > 2) and mean for the DMS (n = 2). p-Values were computed using Welch\u2019s t-test; 72% of the validated samples were not significantly different from the data obtained in the screen (p > 0.05). Panel (iii) depicts the correlation between the luciferase assay and the DMS. The Pearson correlation between the arrayed validations and the data obtained in the screen was 0.818 while the Spearman (rank) correlation was 0.824. (b) A subset of mutants from panel a were validated by editing UAG sites in the GAPDH and KRAS CDS. Values represent mean (n = 2). All experiments were carried out in HEK293FT cells.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75555/elife-75555-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) The E488Q, N496F double mutant was validated in a luciferase assay using a cluc reporter bearing a UGA stop codon. The plot represents log2 fold change as compared to the ADAR2-DD(E488Q). Values represent mean \u00b1 SEM (n = 6). p-Values were computed using a two-tailed unpaired t-test. (b) Heatmap depicting hyper-editing observed with the N496F, E488Q double mutant corresponding to the RAB7A plot in Figure 1g. The red arrow indicates the target. (c) Editing activity of the E488Q, N496F double mutant against all 16 5\u2019-GAN-3\u2019 motifs was measured relative to the E488Q. Values represent mean (n = 2). All experiments were carried out in HEK293FT cells.\n\nGiven the large size of the deaminase domain at >750 bp, the library of ADAR variants was created using six tiling oligonucleotide pools (Figure 1\u2014figure supplement 1a). These pools were cloned into a lentiviral vector containing a sequence encoding the MS2 coat protein (MCP) and the remainder of the deaminase domain bearing a nuclear export signal (NES) followed by a self-cleaving peptide (P2A) and a puromycin resistance gene (Figure 1a). To ensure read length coverage in next generation sequencing, members of the first three library pools were assayed for editing at the 5\u2019 end of the ADAR2-DD while the remaining members were assayed at the 3\u2019 end (Figure 1c, Figure 1\u2014figure supplement 1a). To minimize assay noise resulting from varying expression of the guide RNA in each cell, two HEK293FT clonal cell lines were created following a high multiplicity of infection (MOI) transduction with lentivirus bearing two copies of MS2-adRNAs targeting either the 5\u2019 or the 3\u2019 UAG sites integrated into them (Figure 1b). The DMS was carried out in cell lines harboring these MS2-adRNAs by transducing them with the corresponding ADAR mutant libraries at a low MOI of 0.2\u20130.4. Two biological replicates were performed in independent plates of cells transduced with the lentiviral libraries. Following lentiviral transduction and puromycin selection, RNA was extracted from the harvested cells and reverse transcribed. Relevant regions of the deaminase domain were amplified from the cDNA and sequenced (Figure 1\u2014figure supplement 1a); 4958 of the 4959 possible variants were successfully detected, of which 4931 elements had over 50 reads in each biological replicate and were included in the subsequent analysis (Figure 1\u2014figure supplement 1b). The deaminase domain transcripts for each variant also contained the associated A-to-I editing yields, which were then quantified for both replicates of the DMS (R2 = 0.687) (Figure 1d).\n\nThe scans revealed both intrinsic domain properties, and also several mutations that enhanced RNA editing (Figure 1e, Figure 1\u2014figure supplement 1c). Specifically: (1) As expected, most mutations in conserved regions 442\u2013460 and 469\u2013495 that bind the RNA duplex near the editing site led to a significant decrease in editing efficiency of the enzyme (Matthews et al., 2016). (2) However, mutating the negatively charged E488 residue, which recognizes the cytosine opposite the flipped adenosine by donating hydrogen bonds, to a positively charged or most polar-neutral amino acids resulted in an improvement in editing efficiency. This is consistent with the previously discovered E488Q mutation which has been shown to improve the catalytic activity of the enzyme (Kuttan and Bass, 2012). (3) Furthermore, most mutations to residues that contact the flipped adenosine (V351, T375, K376, E396, C451, R455) were observed to be detrimental to enzyme function (Matthews et al., 2016). (4) Similarly, the residues of the ADAR2-DD that interact with the zinc ion in the active site and the inositol hexakisphosphate (R400, R401, K519, R522, S531, W523, D392, K483, C451, C516, H394, and E396) were all also extremely intolerant to mutations (Macbeth et al., 2005). (5) Additionally, as expected, surface exposed residues in general readily tolerated mutations as compared to buried residues (Matthews et al., 2016).\n\nTo independently validate the results from the DMS, we individually examined 33 mutants from the DMS whose editing efficiencies ranged from very low to very high as compared to the wild-type ADAR2-DD. The mutants were assayed for their ability to repair a premature amber stop codon (UAG) in the cypridina luciferase (cluc) transcript (Cox et al., 2017). The Pearson correlation between the arrayed validations and the data obtained in the screen was 0.818 while the Spearman (rank) correlation was 0.824 (Figure 1\u2014figure supplement 2a). Additionally, we also validated several of these mutants for their ability to edit UAG motifs in the GAPDH and KRAS CDS (Figure 1\u2014figure supplement 2b). These validations suggest that the trends in RNA editing activity (high vs. low) are well predicted using this novel screening approach and this enabled us to create a mutability map of the ADAR2-DD where residues that tolerate mutations are highlighted in yellow (Figure 1e). Additionally, we compared the efficiency of variants in our ADAR2-DD DMS at editing UAG triplets, to published mutants (Matthews et al., 2016; Thuy-Boun et al., 2020; Kuttan and Bass, 2012) and again observed similar agreement in the trends of activity of most variants, confirming the efficacy of this DMS at accurately indicating whether a mutation is beneficial, neutral, or detrimental for enzymatic activity.\n\n### Enhancing enzyme activity at 5\u2019-GAN-3\u2019 motifs\n\nBuilding on this platform (Figure 1a, b, and c), we next screened for domain variants that improved editing at refractory RNA motifs such as adenosines flanked by a 5\u2019 guanosine (Vogel et al., 2018; Kuttan and Bass, 2012). Toward this, two HEK293FT clonal cell lines were created with two copies of MS2-adRNAs targeting either the 5\u2019 or 3\u2019 GAC sites integrated into them. A screen was carried out in cell lines harboring these MS2-adRNAs by transducing them with the corresponding MCP-ADAR2-DD(E488Q) libraries at a low MOI (0.2\u20130.4), evaluating the potential of 3287 mutants to edit a GAC motif. Similar to above, following lentiviral transduction and selection, RNA was extracted, reverse transcribed, and relevant regions of the deaminase domain amplified, sequenced, and analyzed (R2 = 0.476) (Figure 1f). Via this approach, we discovered a novel mutant E488Q, N496F that enhanced editing at a 5\u2019-GAC-3\u2019 motif. Interestingly, in the ADAR2-DD(E488Q) crystal structure, the N496 residue is in close proximity to the adenosine on the unedited strand that base pairs with the 5\u2019 uracil flanking the target adenosine (Figure 1g; Matthews et al., 2016). We validated this mutant using a cypridina luciferase (cluc) reporter bearing a premature opal stop codon (UGA) and confirmed that the E488Q, N496F double mutant was 3-fold better at restoring luciferase activity as compared to E488Q alone (Figure 1\u2014figure supplement 3a). To further confirm that the E488Q, N496F double mutant could be used to efficiently edit adenosines flanked by a 5\u2019 guanosine, we tested the ability of this mutant to edit GAC, GAT, GAG, and GAA motifs in the endogenous RAB7A (3\u2019 UTR), KRAS (CDS), and GAPDH (CDS) transcripts. We observed that the double mutant E488Q, N496F was 1.1- to 2.1-fold more efficient at editing various 5\u2019-GAN-3\u2019 motifs as compared to the E488Q (Figure 1h, Figure 1\u2014figure supplement 3b and c), confirming the ability of this novel screening format to discover variants with enhanced activity toward refractory RNA motifs. We also confirmed that this new variant was at least as efficient as the E488Q at editing all other motifs, with improved editing also observed at 5\u2019-NAC-3\u2019 motifs (Figure 1\u2014figure supplement 3c).\n\n### Improving specificity via splitting of the ADAR2-DD\n\nIn addition to increasing the on-target activity of ADARs at editing adenosines in non-preferred motifs, another challenge toward unlocking their utility as a RNA editing toolset is that of improving specificity. Due to their intrinsic dsRNA binding activity, overexpression of ADARs leads to promiscuous transcriptome-wide off-targeting, and thus, when relying on exogenous ADARs, it is important to restrict the catalytic activity of the overexpressed enzyme only to the target mRNA. We hypothesized that it might be possible to achieve this by splitting the deaminase domain into two catalytically inactive fragments that come together to form a catalytically active enzyme only at the intended target (Figure 2a). Since we and others have utilized the MCP and Lambda N (\u03bbN) systems to efficiently recruit ADARs, we first decided to utilize these systems to recruit the two split halves, that is, the N- and C-terminal fragments of the ADAR2-DD (Montiel-Gonzalez et al., 2013; Katrekar et al., 2019). Specifically, constructs were created with cloning sites for N-terminal fragments located downstream of the MCP while those for the C-terminal fragments located upstream of the \u03bbN. Chimeric adRNAs were designed to bear a BoxB and an MS2 stem loop along with an antisense domain complementary to the target. Examining the results of the DMS (focusing on sites with high mutability), as well as the crystal structure of the ADAR2-DD (focusing on high solvent accessible surface area), and residue conservation scores across species (focusing on low scores of conservation), we identified 18 putative regions for splitting the protein (Figure 2b; Matthews et al., 2016; Dagliyan et al., 2018). The resulting 18 different split-ADAR2 pairs were assayed for their ability to repair a premature amber stop codon (UAG) in the cypridina luciferase (cluc) transcript in the presence of the recruiting adRNA bearing BoxB and MS2 stem loops (Figure 2c). Of these pairs 9\u201312 showed the best editing efficiency, and notably were all located within residues 465\u2013468 which have low conservation scores across species (Matthews et al., 2016). Interestingly, this region is flanked by highly conserved amino acids (442\u2013460 and 469\u2013495). The split-ADAR2 pair 12 is hereon referred to as ADAR2-DDN and ADAR2-DDC.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75555/elife-75555-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic of the split-ADAR2 engineering approach. (b) Sequence of the ADAR2-DD. The protein was split between residues labelled in red, and a total of 18 pairs were evaluated. (c) The ability of each split pair from (b) to correct a premature stop codon when transfected with a chimeric BoxB-MS2 ADAR-recruiting RNA (adRNA) was assayed via a luciferase assay. The pairs 1\u201318 correspond to the residues in red in (b) in the order in which they appear. The residues in (b) in bold red correspond to pairs 9\u201312. Values represent mean (n = 2). All experiments were carried out in HEK293FT cells.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75555/elife-75555-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) All components of the split-ADAR2 system were tested for their ability to edit RNA via the luciferase assay. Restoration of luciferase activity is observed only when every component is delivered. Values represent mean (n = 2). (b) The importance of orientation of the N- and C-terminal fragments in forming a functional ADAR2 deaminase domain (ADAR2-DD) is assayed via the luciferase assay. Chimeric and non-chimeric ADAR-recruiting RNA (adRNA) are used to recruit the split-ADAR2 pairs. Values represent mean (n = 2). (c) Engineering of humanized split-ADAR2 variant based on pair 12 and assayed of its ability to correct a stop codon in the cluc transcript. Values represent mean (n = 2). All experiments were carried out in HEK293FT cells.\n\nWe also confirmed that every component of the split-ADAR2 system was essential for RNA editing. Specifically, we assayed all components and pairs of components for their ability to edit the RAB7A transcript and also restore luciferase activity. The MCP-ADAR2-DD was included as a control. We observed editing of the RAB7A transcript and restoration of luciferase activity only when every component of the split-ADAR2 system was delivered, confirming that the individual components lacked enzymatic activity (Figure 3a, Figure 2\u2014figure supplement 1a). Additionally, we also confirmed the importance of fragment orientation for the formation of a functional enzyme. Toward this, we swapped the positions of the N- and C-terminal fragments and created ADAR2-DDN-MCP and \u03bbN-ADAR2-DDC in addition to the working MCP-ADAR2-DDN and ADAR2-DDC-\u03bbN pair. We then tested each pair of N- and C-terminal fragments and observed functionality only for the MCP-ADAR2-DDN paired with ADAR2-DDC-\u03bbN (Figure 2\u2014figure supplement 1b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75555/elife-75555-fig3-v2.jpg)\n\n**Figure 3.:** (a) The components of the split-ADAR2 system based on pair 12 were tested for their ability to edit the RAB7A transcript. Editing was observed only when every component was delivered. Values represent mean \u00b1 SEM (n = 3). (b) 2D histograms comparing the transcriptome-wide A-to-G editing yields observed with each construct (y-axis) to the yields observed with the control sample (x-axis). Each histogram represents the same set of reference sites, where read coverage was at least 10 and at least one putative editing event was detected in at least one sample. Bins highlighted in red contain sites with significant changes in A-to-G editing yields when comparing treatment to control sample. Red crosses in each plot indicate the 100 sites with the smallest adjusted p-values. Blue circles indicate the intended target A-site within the RAB7A transcript. (c) The split-ADAR2 system was assayed for editing the KRAS and CKB transcripts. Values represent mean \u00b1 SEM (n = 3). All experiments were carried out in HEK293FT cells.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75555/elife-75555-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Heatmap depicting hyper-editing observed with the split-ADAR2 system corresponding to the plot in Figure 3a. The red arrow indicates the target adenosine. (b) 2D histograms comparing the transcriptome-wide A-to-G editing yields (fraction of edited transcripts) observed with constructs from Figure 3a (y-axis) to the yields observed with the control sample (x-axis). Each histogram represents the same set of 27,587 reference sites, where read coverage was at least 10 and at least one putative editing event was detected in at least one sample. Bins highlighted in red contain sites with significant changes in A-to-G editing yields when comparing treatment to control sample. Red crosses in each plot indicate the 100 sites with the smallest adjusted p-values. Blue circles indicate the intended target A-site within the RAB7A transcript. Large counts in bins near the lower-left corner likely correspond not only to low editing yields in both test and control samples, but also to sequencing errors and alignment errors. Large counts in bins near the upper-right corner of each plot likely correspond to homozygous single nucleotide polymorphisms (SNPs), as well as other differences between the reference genome and the genome of the HEK293FT cell line used in the experiments.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75555/elife-75555-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** 2D histograms comparing the transcriptome-wide A-to-G editing yields observed with each split-ADAR2 construct (y-axis) to the yields observed with the control sample (x-axis). Blue circles indicate the intended target A-site within the RAB7A transcript.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75555/elife-75555-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** 2D histograms comparing the transcriptome-wide A-to-G editing yields observed with each split-ADAR2 construct (y-axis) to the yields observed with the control sample (x-axis). Blue circles indicate the intended target A-site within the KRAS transcript.\n\nSince MCP and \u03bbN are proteins of viral origin we next replaced these with the human TAR binding protein and the stem loop binding protein, respectively, to create a humanized split-ADAR2 system with improved translational relevance (Rauch et al., 2019). In the presence of a chimeric adRNA containing a histone stem loop and a TAR stem loop, we observed restoration of luciferase activity (Figure 2\u2014figure supplement 1c). This also confirmed that the split-ADAR2-DD could indeed be recruited for RNA editing using two independent sets of protein-RNA binding systems.\n\nFinally, we investigated the specificity profiles via analysis of the transcriptome-wide off-target A-to-I(G) editing effected by this system (Figure 3b and Figure 3\u2014figure supplements 1 and 2). Each condition from Figure 3a (where a UAG in the endogenous RAB7A transcript was targeted) was analyzed by RNA-seq. From each sample, we collected 25 million uniquely aligned sequencing read pairs. We then used Fisher\u2019s exact test to quantify significant changes in A-to-G editing yields, relative to untransfected cells, at each reference adenosine site having sufficient read coverage. As expected with hyperactive enzyme variants, the ADAR2-DD(E488Q) showed significantly high off-target editing as compared to the ADAR2-DD (Figure 3b). Notably, by splitting the deaminase domain, we observed a 1000- to 1300-fold reduction in the number of off-targets as compared to the full-length ADAR2-DD or ADAR2-DD(E488Q) (Figure 3b). Excitingly, the specificity profiles of the split-ADAR2 system were comparable to those seen when using endogenous recruitment of ADARs via long antisense RNA (Katrekar et al., 2019).\n\nTo confirm generalizability of the results, we also tested the split-ADAR2 at two additional endogenous loci: an adenosine in the 3\u2019UTR of CKB and an adenosine in the CDS of KRAS, and observed robust editing efficiency of the split-ADAR2 system (Figure 3c). To enable convenient delivery of the split-ADAR2 system, we also created an all-in-one vector bearing a bicistronic ADAR2-DDC-\u03bbN-P2A-MCP-ADAR2-DDN which also enabled higher editing efficiencies across all three loci tested (Figure 3a and c). We also confirmed transcriptome-wide specificity of targeting using the all-in-one vector while targeting RAB7A (Figure 3\u2014figure supplement 2) and also while targeting the KRAS locus (Figure 3\u2014figure supplement 3). A closer look at the off-targets revealed that in case of the split-ADAR2 system, highly edited off-targets were indeed guide RNA sequence dependent. This is in contrast to full-length deaminase domain overexpression where off-targets were predominantly deaminase domain driven (Supplementary file 1). The entire split-ADAR2 system consisting of CMV promoter-driven ADAR2-DDC-\u03bbN-P2A-MCP-ADAR2-DDN and a human U6 promoter-driven BoxB-MS2 adRNA is ~3500 bp in size and can easily be packaged into a single adeno-associated virus (AAV).\n\nLastly, to test if the split-ADAR2 chassis could be expanded to highly active ADAR variants that enable efficient editing of 5\u2019-GAN-3\u2019 motifs as well as those that enable C-to-U editing, we created a split-ADAR2-DD(E488Q, N496F) and a split-RESCUE (RNA Editing for Specific C-to-U Exchange) system (Abudayyeh et al., 2019). We confirmed that the split-ADAR2-DD(E488Q, N496F) was indeed better at editing a GAC motif as compared to the split-ADAR2-DD(E488Q) (Figure 4a). Although the full-length ADAR2-DD(E488Q, N496F) was highly promiscuous, splitting it enabled high transcriptome-wide specificity while targeting a UAG in the RAB7A transcript (Figure 4b, Figure 3\u2014figure supplement 2). Additionally, we noted comparable C-to-U RNA editing levels of the endogenous RAB7A transcript using the split-RESCUE and the full-length MCP-RESCUE (Figure 4c). However, the split-RESCUE system was also highly specific, both in the A-to-I(G) and C-to-U space as compared to the MCP-RESCUE (Figure 4d).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75555/elife-75555-fig4-v2.jpg)\n\n**Figure 4.:** (a) A split-ADAR2-DD(E488Q, N496F) was engineered and used to edit a GAC motif in the RAB7A transcript. Values represent mean \u00b1 SEM (n = 3). (b) 2D histograms comparing the transcriptome-wide A-to-G editing yields observed with full-length and split-ADAR2-DD(E488Q, N496F) constructs. Blue circles indicate the intended target UAG site within the RAB7A transcript. (c) A split-RESCUE was engineered and assayed for cytosine to uracil (C-to-U) editing of the RAB7A transcript. Values represent mean \u00b1 SEM (n = 3), quantified by NGS. (d) 2D histograms comparing the transcriptome-wide A-to-G and C-to-U editing yields observed with full-length and split RESCUE constructs. Blue circles indicate the intended target C site within the RAB7A transcript. All experiments were carried out in HEK293FT cells.\n\n## Discussion\n\nToward addressing two of the fundamental challenges in using ADARs for programmable RNA editing, specifically, (1) poor enzymatic activity on certain RNA motifs such as those flanked by a 5\u2019 guanosine (Vogel et al., 2018; Kuttan and Bass, 2012), and (2) exogenous delivery leading to massive transcriptome-wide off-targeting (Cox et al., 2017; Katrekar et al., 2019; Vallecillo-Viejo et al., 2018; Vogel et al., 2018), we have explored ADAR2 deaminase protein engineering via two distinct approaches. First, we performed a novel DMS, comprehensively assaying all possible single amino acid substitutions of 261 residues of the deaminase domain for their impact on RNA editing yields. We created a sequence-function map of the deaminase domain that complements existing knowledge derived from prior structure and biochemistry-based studies and improves our understanding of the enzyme. This can serve as a map for engineering novel ADAR2 variants with tailored activity for specific applications. For instance, while utilizing the ADAR enzyme to create transcriptomic timestamps, tailored variants might enable capture of information at different time scales (McMahon et al., 2016). Additionally, use of tailored variants might help better understand kinetics of protein-RNA interactions (Rodriques et al., 2021). This novel screening approach also enabled us to identify variants such as the ADAR2-DD(E488Q, N496F) that demonstrated increased activity at 5\u2019-GAN-3\u2019 motifs. Specifically, this mutant was 1.1- to 2.1-fold more efficient at editing adenosines with a 5\u2019 guanosine than the classic hyperactive ADAR2-DD(E488Q) and also maintained similar activity levels against all other motifs. However, like the ADAR2-DD(E488Q), the ADAR2-DD(E488Q, N496F) showed increased bystander editing and transcriptome-wide off-targeting as compared to the ADAR2-DD. While this novel screening approach was useful for creating an average mutagenesis map of the ADAR2-DD and identifying highly active variants, we believe that replicate correlation values were negatively impacted given that the screen was carried out in a lentiviral format. As lentivirus integrates randomly into the cell\u2019s genome, this results in variability in ADAR2-DD transcript levels between different cells.\n\nSecond, we engineered split deaminases, consisting of two inactive enzyme fragments that formed a functional enzyme upon combining at the target site. Due to this requirement of the split-domains to assemble, the efficiency of this system was ~50\u201370% compared to full-length domain overexpression, but the split-ADAR2 tool was highly transcript specific (~1000-fold compared to full-length domain over expression), and notably with off-target profiles similar to those seen via recruitment of endogenous ADARs (Katrekar et al., 2019). We further demonstrated the applicability of these split-deaminases toward editing 5\u2019-GAN-3\u2019 motifs and uracils via creation of a split-ADAR2-DD(E488Q, N496F) and a split-RESCUE, both of which exhibited high transcriptome-wide specificity as compared to their full-length counterparts. In summary, this study enables broader utility of the ADAR toolset for biotechnology and therapeutic applications. Additionally, these approaches could also be applied to the study and engineering of other RNA modifying enzymes (Rosenberg et al., 2011; Liu et al., 2014).\n\n## Materials and methods\n\n### DMS and screen\n\n#### Oligonucleotide pools\n\nTo create the library of single amino acid substitutions in the ADAR2-DD, we ordered an oligonucleotide chip (CustomArray) consisting of six oligonucleotide pools (each 168 bp in length). These pools, in combination, spanned residues 340\u2013600 of the ADAR2-DD. Each of these pools was amplified in a 50 \u03bcl PCR using Kapa HiFi HotStart PCR Mix (Kapa Biosystems), 40 ng of synthesized oligonucleotide as template and pool-specific primers. The six PCR products were purified using the QIAquick PCR Purification Kit (Qiagen) to eliminate byproducts.\n\n#### Creation of vectors for cloning oligonucleotide pools\n\nWe ordered a gene block (IDT) for MCP-ADAR2-DD-NES and used mutagenesis PCR to create the MCP-ADAR2-DD(E488Q)-NES. These fragments were then used as templates to generate six PCR fragments from which deletions of the MCP-ADAR2-DD-NES and the MCP-ADAR2-DD(E488Q)-NES were created. The deleted regions corresponded to the sequence covered by each of the six oligonucleotide pools and were replaced instead with an Esp3I digestion site. To create the plasmid library, we began by mutating the two Esp3I digestion sites in the LentiCRISPR v2 plasmid (gift from Feng Zhang, Addgene #52961) (Sanjana et al., 2014) using PCR mutagenesis followed by Gibson Assembly. Next, we created six cloning vectors for the MCP-ADAR2-DD-NES and MCP-ADAR2-DD(E488Q)-NES, cloning the PCR fragments generated above into the LentiCRISPR v2 vector digested with BamHI and XbaI using Gibson Assembly. All PCRs in this section were carried out using Kapa HiFi HotStart PCR Mix (Kapa Biosystems), 20 ng template and appropriate primers in 20 \u03bcl reactions. All digestions in this section were carried out in 50 \u03bcl reactions for 3 hr at 37\u00b0C using 2 \u03bcg of plasmid and 10 units of enzyme(s). All Gibson Assembly reactions in this section were carried out using 50 ng backbone and 30 ng of insert in a 10 \u03bcl volume and incubated at 50\u00b0C for 1 hr. Digestions and PCRs were purified using the QIAquick PCR Purification Kit (Qiagen).\n\n#### Creation of plasmid library\n\nOnce we had six cloning vectors corresponding to the MCP-ADAR2-DD-NES ready, we digested these with Esp3I. These digestions were carried out in 50 \u03bcl reactions for 6 hr at 37\u00b0C using 2 \u03bcg of plasmid and 10 units of enzyme followed by heat inactivation at 65\u00b0C for 20 min. The digestion reaction was then purified using the QIAquick PCR Purification Kit (Qiagen). This was followed by cloning of the six oligonucleotide pools into their respective cloning vectors via Gibson Assembly using 50 ng of the digested backbone and 10 ng of the purified oligonucleotide PCR products in a 10 \u03bcl reaction, incubated at 50\u00b0C for 80 min. The Gibson Assembly reaction was purified by dialysis and used to electroporate ElectroMAX Stbl4 cells (Thermo Fisher) as per the manufacturer\u2019s instructions. A small fraction (1\u201310 \u00b5l) of cultures was spread on carbenicillin LB plates to calculate the library coverage, and the rest of the cultures were amplified overnight in 150 ml LB medium containing carbenicillin. A library coverage of at least 400\u00d7 was ensured before proceeding. Plasmid libraries were sequenced using the MiSeq (300 bp PE run).\n\n#### Creation of MS2-adRNA vectors\n\nWe began by replacing the Cas9-P2A-Puromycin from the LentiCRISPR v2 with a mCherry-P2A-Hygromycin by digesting the backbone with XbaI and PmeI. We used fusion PCRs to create the mCherry-P2A-Hygromycin-WPRE-3\u2019LTR(Delta U3) insert which was then cloned into the digested backbone via Gibson Assembly. We used PCRs to create a MS2-adRNA-mU6-MS2-adRNA cassette which was cloned into the Esp3I digested backbone via Gibson Assembly. Four vectors with 2\u00d7 MS2-adRNAs were created targeting 5\u2019 and 3\u2019 TAG and GAC. All PCRs in this section were carried out using Kapa HiFi HotStart PCR Mix (Kapa Biosystems) in 20 \u03bcl reactions. All digestions in the section were carried out in 50 \u03bcl reactions for 3 hr at 37\u00b0C using 2 \u03bcg of plasmid and 10 units of enzymes. All Gibson Assembly reactions in this section were carried out using 50 ng backbone and 20\u201340 ng of insert in a 10 \u03bcl volume and incubated at 50\u00b0C for 1 hr. Digestions and PCRs were purified using the QIAquick PCR Purification Kit (Qiagen).\n\n#### Lentivirus production\n\nHEK293FT (Thermo Fisher) cells were maintained in DMEM supplemented with 10% FBS (Thermo Fisher) and 1% Antibiotic-Antimycotic (Thermo Fisher) in an incubator at 37\u00b0C and 5% CO2 atmosphere. These cells were authenticated by STR and tested for mycoplasma contamination by the vendor. To produce lentivirus particles, HEK293FT cells were seeded in 15 cm tissue culture dishes 1 day before transfection and were 60% confluent at the time of transfection. Before transfection, the culture medium was changed to prewarmed DMEM supplemented with 10% FBS. For each 15 cm dish, 36 \u00b5l of Lipofectamine 2000 (Thermo Fisher) was diluted in 1.2 ml OptiMEM (Thermo Fisher). Separately, 3 \u00b5g pMD2.G (gift from Didier Trono, Addgene #12259), 12 \u00b5g of pCMV delta R8.2 (gift from Didier Trono, Addgene #12263), and 9 \u00b5g of lentiviral vector were diluted in 1.2 ml OptiMEM. After incubation for 5 min, the Lipofectamine 2000 mixture and DNA mixture were combined and incubated at room temperature for 30 min. The mixture was then added dropwise to HEK293FT cells. Viral particles were harvested 48 and 72 hr after transfection, further concentrated to a final volume of 500\u20131000 \u00b5l using 100 kDA filters (Millipore), divided into aliquots and frozen at \u221280\u00b0C. Lentivirus was produced individually for all MS2-adRNA vectors and in a pooled format for the libraries. While producing lentivirus, libraries were grouped together as 1 + 2, 3, 4, 5 + 6 so as to facilitate sequencing using the NovaSeq 6000 (250 bp PE run).\n\n#### Creation of a clonal cell line with MS2-adRNA\n\nHEK293FT cells grown in a six-well plate were transduced with lentiviruses (high MOI) carrying 2\u00d7 MS2-adRNA targeting 5\u2019 and 3\u2019 TAG and GAC to create four different cell lines. For transductions, the lentivirus was mixed with DMEM supplemented with 10% FBS (Thermo Fisher) and Polybrene Transfection reagent (Millipore) at a concentration of 5 \u00b5g/ml and added to HEK293FT cells at 40\u201350% confluency. Hygromycin (Thermo Fisher) was added to the media at a concentration of 100 \u00b5g/ml, 48 hr post transduction. Top 1% of mCherry expressing cells for each line were then sorted into a 96-well plate. Three clones of each of the four cell lines were then frozen down.\n\n#### Screen\n\nLentiviral libraries 1 + 2 and 3 were used to transduce clones with the 5\u2019 TAG and GAC MS2-adRNA and libraries 4 and 5 + 6 were used to transduce clones with the 3\u2019 TAG and GAC MS2-adRNA stably integrated. Transductions were carried out in duplicates. The lentiviral libraries were mixed with DMEM supplemented with 10% FBS (Thermo Fisher), Hygromycin (Thermo Fisher) at 100 \u00b5g/ml, Polybrene Transfection reagent (Millipore) at a concentration of 5 \u00b5g/ml and added to the stable clones harboring the MS2-adRNA in a 15 cm dish at 40\u201350% confluency. To ensure most cells received 0 or 1 ADAR2 variant, cells were transduced at a low MOI of 0.2\u20130.4. 24 hr post transfections, cells were passaged 1:4 into a new 15 cm dish and grown in DMEM supplemented with 10% FBS (Thermo Fisher) and Hygromycin (Thermo Fisher) at 100 \u00b5g/ml. Forty-eight hours post transductions, the growth medium was changed to DMEM supplemented with 10% FBS (Thermo Fisher) and Puromycin (Thermo Fisher) at 3 \u00b5g/ml. Seventy-two hours post transduction, fresh growth medium with Puromycin was added to the cells. Ninety-six hours post transductions, the growth media was taken off and cells were washed with PBS and then harvested. Cell pellets were stored at \u201380\u00b0C until RNA extraction. At least 1000\u00d7 coverage was maintained at all steps of the screen.\n\n#### RNA, cDNA, amplifications, indexing\n\nRNA was extracted using the RNeasy mini kit (Qiagen) as per the manufacturer\u2019s instructions. cDNA was synthesized from RNA using the Protoscript II First Strand cDNA synthesis Kit (NEB). To ensure library coverage of 500\u00d7, 5 ng of RNA was converted to cDNA per library element in every sample of the screen. The volume of each cDNA reaction was 90 \u00b5l with 4.5 \u00b5g RNA, 45 \u00b5l of the reaction mix, 9 \u00b5l random primers, and 9 \u00b5l enzyme. Samples were incubated in a thermocycler at 25\u00b0C for 5 min; 42\u00b0C for 80 min; 80\u00b0C for 5 min. The entire volume of the cDNA reaction was used to set up PCRs. The volume of each PCR was 100 \u00b5l with 44 \u00b5l cDNA, 6 \u00b5l primers (10 \u00b5M), and 50 \u00b5l Q5 high fidelity master mix (NEB). The thermocycling parameters were: 98\u00b0C for 30 s; 24\u201328 cycles of 98\u00b0C for 10 s, 62\u00b0C for 15 s, and 72\u00b0C for 35 s; and 72\u00b0C for 2 min. The numbers of cycles were tested to ensure that they fell within the linear phase of amplification. The amplicons were 440\u2013570 bp in length and purified using the QIAquick PCR Purification Kit (Qiagen). To continue maintaining at least 500\u00d7 coverage, at minimum 0.15 ng of the PCR product per library element was used to set up a second PCR adding indices onto the libraries. This was done in 50 \u00b5l reactions using 3 \u00b5l dual index primers (NEB), 135 ng purified PCR product from the previous reaction and 25 \u00b5l Q5 high fidelity master mix (NEB). The thermocycling parameters were: 98\u00b0C for 30 s; 5\u20138 cycles of 98\u00b0C for 10 s, 65\u00b0C for 20 s, 72\u00b0C for 35 s, and 72\u00b0C for 2 min. The numbers of cycles were tested to ensure that they fell within the linear phase of amplification. Amplicons were purified with Agencourt AMPure XP beads (Beckman Coulter) at a 0.8 ratio. The libraries were quantified using the Qubit dsDNA HS assay kit (Thermo Fisher) and pooled together at a concentration of 10 nM for sequencing on a 250 bp PE run on the NovaSeq 6000.\n\n#### Sequencing analysis\n\nRaw fastq reads were aligned to the ADAR2 reference sequence using minimap2 (Li, 2018) in short-read mode with default parameters. For libraries with overlapping paired-end reads, the reads were first combined using FLASH (Mago\u010d and Salzberg, 2011). The aligned reads were then classified into library members using strict filtering, that is, reads were only included if they perfectly matched exactly one library member, aside from the target ADAR editing site. The editing rate at this target site was then quantified for each library member and averaged across two replicates with weights for differential coverage. To analyze the degree to which each library member differed in editing rate from the wild type, we performed a two-proportion Z-test using a pooled sample proportion to calculate the standard error of the sampling distribution, and a two-tailed procedure to calculate p-values. Note that the wild-type rate was restricted to the rate measured within each library, such that each library member was compared only to the wild-type rate measured in the same biological context. Z-scores were calculated as follows, where x is the RNA editing rate and n is the number of counts:\n\n$$\nx_=\\frac{x_{wt}n_{wt}+x_{i}n_{i}}{n_{wt}+n_{i}}\n$$\n\n\n\n$$\nSE=\\sqrt{x_(1\u2212x_)((\\frac{1}{n_{i}})+(\\frac{1}{n_{wt}}))}\n$$\n\n\n\n$$\nZ_{i}=\\frac{x_{i}\u2212x_{wt}}{SE}\n$$\n\nPost library classification and editing quantification heatmap plot-ting was done with modified code from Enrich2 (https://github.com/FowlerLab/Enrich2; Rubin, 2021; Rubin et al., 2017).\n\n#### Cloning individual mutants\n\nWe began by creating a cloning vector with the MCP inserted into the LentiCRISPR v2 vector digested with BamHI and XbaI using Gibson Assembly. This vector was then digested with BamHI to clone the DD mutants. All mutants were created using mutagenesis PCR followed by Gibson Assembly. All PCRs in this section were carried out using Q5 PCR Mix (NEB), 5 ng template and appropriate primers in 20 \u03bcl reactions. All digestions in this section were carried out in 50 \u03bcl reactions for 3 hr at 37\u00b0C using 3 \u03bcg of plasmid and 20 units of enzyme(s). All Gibson Assembly reactions in this section were carried out using 30 ng backbone and 15 ng of insert in a 6 \u03bcl volume and incubated at 50\u00b0C for 1 hr. Digestions and PCRs were purified using the QIAquick PCR Purification Kit (Qiagen).\n\n#### Luciferase assay\n\nAll HEK293FT cells were grown in DMEM supplemented with 10% FBS and 1% Antibiotic-Antimycotic (Thermo Fisher) in an incubator at 37\u00b0C and 5% CO2 atmosphere. All in vitro luciferase experiments for DMS validations were carried out in HEK293FT cells seeded in 96-well plates, at 25\u201330% confluency, using 250 ng total plasmid and 0.5 \u03bcl of commercial transfection reagent Lipofectamine 2000 (Thermo Fisher). Specifically, every well received 100 ng of the Cluc-W85X(TAG) or Cluc-W85X(TGA) reporters, 50 ng of MCP-ADAR2-DD mutants, and 100 ng of the MS2-adRNA plasmids. In cases where less than three plasmids were needed, a balancing plasmid was added to keep the total amount per well as 250 ng. Forty-eight hours post transfections, 20 \u03bcl of supernatant from cells was added to a Costar black 96-well plate (Corning). For the readout, 50 \u03bcl of Cypridina Assay buffer was mixed with 0.5 \u03bcl Vargulin substrate (Thermo Fisher) respectively and added to the 96-well plate in the dark. The luminescence was read within 10 min on Spectramax i3x or iD3 plate readers (Molecular Devices) with the following settings: 5 s mix before read, 5 s integration time, 1 mm read height.\n\n#### RNA editing\n\nRNA editing experiments for targeting 5\u2019-GA-3\u2019 were carried out in HEK 293 FT cells seeded in 24-well plates using 1000 ng total plasmid and 2 \u00b5l of commercial transfection reagent Lipofectamine 2000 (Thermo Fisher). Specifically, every well received 500 ng each of the MCP-ADAR2-DD variant and the adRNA plasmids. Cells were transfected at 25\u201330% confluence and harvested 48 hr post transfection for quantification of editing. RNA from cells was extracted using the RNeasy Mini Kit (Qiagen). cDNA was synthesized from 500 ng RNA using the Protoscript II First Strand cDNA synthesis Kit (NEB). One \u00b5l of cDNA was amplified by PCR with primers that amplify about 200 bp surrounding the sites of interest using OneTaq PCR Mix (NEB). The numbers of cycles were tested to ensure that they fell within the linear phase of amplification. PCR products were purified using a PCR Purification Kit (Qiagen) and sent out for Sanger sequencing. The RNA editing efficiency was quantified using the ratio of peak heights G/(A + G). For a comprehensive analysis of the ADAR2-DD(E488Q, N496F) mutant, several adenosines within the RAB7A 3\u2019UTR and GAPDH CDS were targeted. The editing efficiencies for each of these adenosines were normalized with that of the ADAR2-DD(E488Q) so as to represent all of the 16 motifs on a single heatmap.\n\n### Split-ADAR2\n\n#### Vector design and construction\n\nWe began by digesting the pAAV_hU6_mU6_CMV_GFP with AflII to clone the NES-FLAG-MCP-linker and linker-4x\u03bbN-HA-NES downstream of the CMV promoter which were amplified from the MCP-ADAR2-DD-NLS (Katrekar et al., 2019) and 4x-\u03bbN-cdADAR2 (Montiel-Gonzalez et al., 2013) respectively. AvrII digestion sites were included downstream of the NES-FLAG-MCP-linker and upstream of the linker-4x\u03bbN-HA-NES to facilitate cloning of the split fragments. All split fragments were amplified from the MCP-ADAR2-DD-NLS or MCP-ADAR2-DD(E488Q)-NLS (Katrekar et al., 2019). For each split-ADAR2 pair, the N-terminal DD fragment was cloned downstream of the NES-FLAG-MCP-linker and the C-terminal DD fragment was cloned upstream of the linker-4x\u03bbN-HA-NES using Gibson Assembly. MS2-MS2, MS2-BoxB, BoxB-MS2, and BoxB-BoxB adRNA were created by annealing primers and cloned downstream of the hU6 promoter into the AgeI+ NheI digested pAAV_hU6_mU6_CMV_GFP using Gibson Assembly. All PCRs in this section were carried out using Kapa HiFi HotStart PCR Mix (Kapa Biosystems) in 20 \u03bcl reactions. All digestions in this section were carried out in 50 \u03bcl reactions for 3 hr at 37\u00b0C using 3 \u03bcg of plasmid and 20 units of enzyme(s). All Gibson Assembly reactions in this section were carried out using 40 ng backbone and 5\u201320 ng of insert in a 10 \u03bcl volume and incubated at 50\u00b0C for 1 hr. Digestions and PCRs were purified using the QIAquick PCR Purification Kit (Qiagen).\n\n#### Luciferase assay\n\nAll HEK293FT cells were grown in DMEM supplemented with 10% FBS and 1% Antibiotic-Antimycotic (Thermo Fisher) in an incubator at 37\u00b0C and 5% CO2 atmosphere. All in vitro luciferase experiments for the split-ADAR2 were carried out in HEK293FT cells seeded in 96-well plates, at 25\u201330% confluency, using 400 ng total plasmid and 0.6 \u03bcl of commercial transfection reagent Lipofectamine 2000 (Thermo Fisher). Specifically, every well received 100 ng each of the Cluc-W85X(TAG) reporter, N- and C-terminal ADAR2 fragments and the adRNA plasmids. In cases where less than four plasmids were needed, a balancing plasmid was added to keep the total amount per well as 400 ng. Forty-eight hours post transfections, 20 \u03bcl of supernatant from cells was added to a Costar black 96-well plate (Corning). For the readout, 50 \u03bcl of Cypridina Glow Assay buffer was mixed with 0.5 \u03bcl Vargulin substrate (Thermo Fisher) and added to the 96-well plate in the dark. The luminescence was read within 10 min on Spectramax i3x or iD3 plate readers (Molecular Devices) with the following settings: 5 s mix before read, 5 s integration time, 1 mm read height.\n\n#### RNA editing\n\nAll in vitro RNA editing experiments were carried out in HEK293FT cells seeded in 24-well plates using 1500 ng total plasmid and 2 \u00b5l of commercial transfection reagent Lipofectamine 2000 (Thermo Fisher). Specifically, every well received 500 ng each of the N- and C-terminal ADAR2 fragments and the adRNA plasmids. In cases where less than three plasmids were needed, a balancing plasmid was added to keep the total amount per well as 1500 ng. Cells were transfected at 25\u201330% confluence and harvested 48 hr post transfection for quantification of editing. RNA from cells was extracted using the RNeasy Mini Kit (Qiagen). cDNA was synthesized from 500 ng RNA using the Protoscript II First Strand cDNA synthesis Kit (NEB). One \u00b5l of cDNA was amplified by PCR with primers that amplify about 200 bp surrounding the sites of interest using OneTaq PCR Mix (NEB). The numbers of cycles were tested to ensure that they fell within the linear phase of amplification. PCR products were purified using a PCR Purification Kit (Qiagen) and sent out for Sanger sequencing. The RNA editing efficiency was quantified using the ratio of peak heights G/(A + G). RNA-seq libraries were prepared from 250 ng of RNA, using the NEBNext Poly(A) mRNA magnetic isolation module and NEBNext Ultra RNA Library Prep Kit for Illumina. Samples were pooled and loaded on an Illumina Novaseq 6000 (100 bp paired-end run) to obtain 40\u201345 million reads per sample.\n\n#### Quantification of RNA-seq A-to-G editing\n\nRNA-seq analysis for quantification of transcriptome-wide A-to-G editing was carried out as described in Katrekar et al., 2019.\n",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "86efc1cd-66cd-4bc6-93d3-df996516ab35",
+      "submission_id": "f2172502-7d35-4669-94ae-650cf1451395",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, Case Western Reserve University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75555.sa0](https://doi.org/10.7554/eLife.75555.sa0)\n\nThis manuscript provides a deep mutational scanning of the deaminase domain of human ADAR2 to provide a comprehensive assessment of amino acids that alter editing activity at a specific adenosine flanked by preferred nucleotides (UAG). The results are quite important in terms of impact on precision medicine.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, Case Western Reserve University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75555.sa1](https://doi.org/10.7554/eLife.75555.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Comprehensive interrogation of the ADAR2 deaminase domain for engineering enhanced RNA editing activity and specificity\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Timothy A Whitehead (Reviewer #2); Nina Papavasiliou (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAll three reviewers raised substantive concerns regarding description of the methods and statistical analyses. Given these concerns, we had no choice but to decline the paper, but encourage you to resubmit if and when you can address the points raised by the referees as thoroughly as possible. The issues are particularly concerning since this manuscript was submitted as a research method or tool paper.\n\nReviewer #1:\n\nThe authors aims to enhance efficiency and specificity of RNA engineering mediated by ADAR2 deaminase domain (ADAR2-DD) by three approaches. First, they interrogated the residues in a portion of ADAR2-DD by deep mutational scanning (DMS), providing comprehensive map of residues important for the core region of ADAR2-DD. Second, they identified a novel mutation N496F that increases editing efficiency for a 5'-GA-3' motif. Third, they showed the split ADAR2-DD design with good editing efficiency and specificity. This work provides deeper understanding of ADAR2 deaminase domain as a tool for RNA directed engineering. Although the work presents advances, I have several concerns that the authors need to address in more detailed analysis.\n\n1) The DMS screen described in Figure 1a is not intuitive to understand. Where exactly are the editing sites in the ADAR2-DD? How many sites are there in total? How are the editing sites and mutations identified in the sequencing reads? A better drawing, explanation, figure legend and methods are needed.\n\n2) For the DMS method, since the editing site is in ADAR2-DD itself, when making mutations the structure of the RNA substrate might change, especially the ones near the editing site. Then the effect might not be sole consequence of the protein mutant. If RNA substrate might change in structure, is the DMS result still consistent with the validation result using the cluc assays?\n\n3) In addition to measuring the editing level of targeted sites, can the authors measure off target in the deep sequencing data? This would result in both editing efficiency and editing specificity measurement.\n\n4) ADAR1 is perhaps expressed in the chosen human cells. Would any of the results from the DMS and the validation be complicated by the editing from endogenous ADAR1?\n\n5) It is very interesting that many mutants showed equal or higher activity than the well-known E488Q mutant. What are the efficiency and specificity for these (at least for some representative ones from the validation)?\n\n6) For the N496F mutant, what are the transcriptome wide off-targeting data? What about other non-GA sequences?\n\n7) How was the split ADAR2-DD chosen? Current writing is very simple. It would be useful for the community if the authors provide more details of the reasoning.\n\n8) What is the correlation of the luciferase assay signal to the actual editing level of the transcript? What if comparing all designs (mutations and split-ADAR2-DD) in the same assay so we can see direction comparison of the editing efficiency and specificity? Preferably, using editing level of a target site as a readout to compare all designs and the off-target analysis by RNA-seq.\n\n9) To validate all the findings in this work, it would be desired to show how an engineered ADAR2 DD, in a split fashion, would edit an endogenous substrate with a non-UAG motif (such as GAC). What would be the editing efficiency (% editing level) and the transcriptome-wide specificity?\n\nReviewer #2:\n\nKatrekar and colleagues developed a screen for deaminase acting on RNA (ADAR) and screened most single amino acid substitutions across the catalytically active domain for RNA editing and for activity at 5'-GA-3' motifs. Separately, they developed a split ADAR and evaluated specific and off-target RNA editing using whole transcriptomes. The paper does not read like a coherent story and instead is two separate papers: Figure 1 \u2013 2 involve the screen and evaluation of single clones resulting from the screen, whereas Figure 3-4 involve the split ADAR. The strengths of the paper involve the novelty of the genetic screen and, separately, the development and validation of the split ADAR system. There exist major concerns about the representation of the results from the screen, along with minor suggestions on the split ADAR story.\n\n1. The statistical underpinning of the validity of the screening results are unexplored in the main text and need to be described accurately. The authors split between Z scores (Figure 1), Fold change in DMS relatiive to ADAR2-DD (Figure 2), % edited (in supporting information files and Figure 1d), DMS log2 fold change (SI Figure 2). Each of these screening outputs (if all are included) need to be described in the main text and justified. My personal opinion is that one or at most two metrics can be used in the paper to avoid confusion. I have particular concerns in this section about the following:\n\na. Replicates for the screen. The paper only lists replicates in three places, and in no place was how this replicate performed. How were they performed? Biological replicates? Technical replicates? Different days? These experimental details need to be discussed explicitly.\n\nb. Of concern for the replicates are the relatively low correlation between replicates (R2 = 0.48 by my calculation). The correlation is not discussed at all in the main text \u2013 this data needs to be explicit for the reader to judge for herself the validity of the data presented.\n\nc. The replicate showed in SI Figure 1d has a correlation missing for the worst performing sample (\"wt-X-TAG\") and the meaning for wt-X, wt-Y, etc are not described.\n\nd. The validation performed isogenically involves cherrypicked samples with low variance between them (R2 for the variants described in figure 2b are 0.87) and don't represent a fair comparison. The authors state that \"We observed that a majority of the mutants (85%) followed the same trend in our arrayed validation as seen in the pooled screens\" but the meaning behind the sentence is not clear. What does the same trend mean and how is it calculated? Determine the statistical significance using a t test and show comparisons between isogenic datasets using rank correlation or R2 correlation.\n\ne. Points a-d lead to the following conclusion that the screen, while clever and well implemented, has relatively high error and the data should not be presented as a heat map as the authors present in Figure 1. Deep mutational scanning experiments where data is presented as heat maps typically have R2 values of 0.8 or higher. This data is useful \u2013 the data for conservation at each position should be relatively robust even with the error in the screen reported in the paper. This screen can also be used to identify 'hits'.\n\nReviewer #3:\n\nThe paper by Mali and colleagues is an interesting mix of experiments on ADAR2 functionality: on mutations that increase activity, on a split ADAR2 construct appears to decrease off target effects, and on a split RESCUE construct that is said to also increase the specificity of C to U editing.\n\nThe notion of a split ADAR is certainly novel (brought together by the binding in situ of two elements on the RNA \u2013 an MS2 and boxB element, plus a second pair). However the paper would really benefit from being more explicit on some of the results. For instance, the \"decrease of off target effects\" though apparently significant, would benefit from some nuance \u2013 for example are there commonalities to the off-target targets? (are there RAB7A-specific off-targets vs KRAS specific ones and what would that imply?) In other words how generalizable to other transcripts are these findings?\n\nContinuing with the notion of tradeoffs, are GAC/GAG-focused mutants \"worse\" on other triplets? and which?\n\nFinally, given how little has been published on targeted C to U editing (excepting RESCUE), it is important to treat figure 4d as a little more than an afterthought \u2013 with a comprehensive analysis equivalent to the treatment of A to I editing.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Comprehensive interrogation of the ADAR2 deaminase domain for engineering enhanced RNA editing activity and specificity\" for further consideration by eLife. Your revised article has been evaluated by James Manley (Senior Editor) and Timothy Nilsen (Reviewing Editor).\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nWhile both reviewers were quite positive about your revised paper, they felt that additional textual changes and/or additions as outlined below would further improve the manuscript. Please address these comments as thoroughly as possible.\n\nReviewer #1:\n\nThe manuscript by Mali and colleagues is substantially improved from the earlier version. If I had a single comment to make on the revision (and only because they now have the data to look) is this. Normally, a guide RNA bound to the coding region (as will be the case for the cAg in Rab7a) would be expected to reduce transcript abundance (through RNAi like effects). In view of the data in figure 4a/4b, is this true? if so it would be important to point out, because this is not normally something that would be observed in a \"restore of a stop codon\" situation, but it is something we need to worry about in terms of therapeutic efficiency.\n\nReviewer #2:\n\nThis revised manuscript provides a deep mutational scanning of the deaminase domain of human ADAR2 to provide a comprehensive assessment of amino acids that alter editing activity at a specific adenosine flanked by preferred nucleotides (UAG). The author recover 33 individual mutations that either increase or decrease editing, including several mutations that were previously known to impact editing. The authors perform a second DMS starting with a known hyperactive mutant and seeking to obtain a mutant that has altered preferences for the nearest neighbors of the target adenosine. This second goal is quite important in terms of impact on precision medicine. The last goal of the paper is to develop a split ADAR method of editing target adenosines with the goal of reducing off target adenosines, again an important technological advancement for therapeutic use of ADARs. Overall, the revisions adequately address the concerns about clarity, experimental approaches and statistical analysis.\n\nTwo areas that need to be addressed are listed below.\n\n1. It would be beneficial if the authors specifically identified the novel mutations identified in the deaminase domain determined from the initial DMS experiment on the UAG codon (SI Figure 2). Furthermore, the initial reviews noted that there were several mutations (ex. D419W, D362R, D365R, etc) that exhibit a similar elevated activity as the well-described E488Q hyperactive mutant on the UAG substrate. The authors were asked (by reviewer 1) whether these hyperactive mutants are specific to UAG or also behave similar to E488Q (exhibit increased editing at less preferred codons). This was not addressed in the revised manuscript.\n\n2. The second DMS screen identified only one mutant, N496F, that could significantly enhance editing of a GAC codon. The authors did not recover this mutant in the initial screen, is that due to the lack of N496F affecting editing at UAG codons?\n\nThe abstract describes this mutant as \"greatly increased enzymatic activity at 5' GAN-3' motifs\". This language is overstated both in terms of the activity (which is simply 1.1-2 fold enhanced (Figure 1h)) and with regards to the specific motif. The comprehensive assessment of the specificity of this mutant (requested in the initial review, SI Figure 3c) indicates this mutant has enhanced activity not only for GAN motifs but also CAN motifs, with CAC being the second most edited codon after GAA (and above several other GAN codons).\n\nThe authors should both tone down the language in the abstract and discuss the lack of specificity of the E448Q, N486F mutant, especially in terms of what may occur with off-targets. The authors have already performed the experiment (Figure 3b and Figure 4b) but do not discuss the data in this regard, despite the initial request by Reviewer 1. This is particularly important as the authors stress that finding mutants with altered preference is important for precision medicine, but if these ADAR mutants also increase off-target editing, the findings are less exciting-albeit more rationale for using the split ADAR technology developed.\n\nThe methodology for the comprehensive analysis of editing preferences should be added to the manuscript.\n",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c9642291-62b9-48c7-9896-38aa94dbfdfa",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C1",
+      "claim": "Adenosine to inosine (A-to-I) editing is a common post-transcriptional modification in RNA that occurs in a variety of organisms, including humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Adenosine to inosine (A-to-I) editing is a common post-transcriptional modification in RNA that occurs in a variety of organisms, including humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research and represents established scientific knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "43138797-f193-4212-8dc9-5337ae44585b",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C2",
+      "claim": "A-to-I deamination of specific adenosines in double-stranded RNA is catalyzed by enzymes called adenosine deaminases acting on RNA (ADARs).",
+      "claim_type": "EXPLICIT",
+      "source": "This A-to-I deamination of specific adenosines in double-stranded RNA is catalyzed by enzymes called adenosine deaminases acting on RNA (ADARs) (Melcher et al., 1996; Bass and Weintraub, 1988; Peng et al., 2012; Nishikura, 2016; Eggington et al., 2011; Wagner et al., 1989; Bass and Weintraub, 1987; Mannion et al., 2014; Tan et al., 2017; Tomaselli et al., 2015; Levanon et al., 2004; Schoft et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by extensive citations to prior research establishing the enzymatic mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "f6cb03ff-02e2-4331-8977-86cbf520c167",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C3",
+      "claim": "Inosine is structurally similar to guanosine and is interpreted as guanosine during translation and splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Since inosine is structurally similar to guanosine, it is interpreted as a guanosine during the cellular processes of translation and splicing, thereby making ADARs powerful systems for altering protein sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established biochemical knowledge about inosine structure and cellular interpretation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "ec776dd6-c2a3-4222-a581-15f2f7d65f99",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C4",
+      "claim": "Adenosine deaminases have been repurposed for site-specific RNA editing by recruiting them to target RNA sequences using engineered ADAR-recruiting RNAs (adRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, adenosine deaminases have been repurposed for site-specific RNA editing by recruiting them to target RNA sequences using engineered ADAR-recruiting RNAs (adRNAs) (Woolf et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work demonstrating this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "cf936dbe-2b19-4465-92b1-6d1db30d0271",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C5",
+      "claim": "RNA-guided adenosine deaminases have demonstrated potential for correction of point mutations and repair of premature stop codons both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, several studies have demonstrated the potential of both genetically encodable and chemically modified RNA-guided adenosine deaminases for the correction of point mutations and the repair of premature stop codons both in vitro (Montiel-Gonzalez et al., 2013; Stafforst and Schneider, 2012; Cox et al., 2017; Wettengel et al., 2017; Merkle et al., 2019; Sinnamon et al., 2017; Monteleone et al., 2019; Fukuda et al., 2017; Qu et al., 2019) and in vivo (Katrekar et al., 2019; Sinnamon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research demonstrating these capabilities.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "d8c26ab3-d5e8-49fc-9599-851daccf5f0d",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C6",
+      "claim": "Exogenous ADARs introduce a significant number of transcriptome-wide off-target A-to-I edits.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have primarily relied on exogenous ADARs which introduce a significant number of transcriptome-wide off-target A-to-I edits (Cox et al., 2017; Katrekar et al., 2019; Vallecillo-Viejo et al., 2018; Vogel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research documenting off-target effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "84cb4de3-6537-4866-b330-775ced01de1c",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C7",
+      "claim": "Using simple long antisense RNA (>60 bp) can recruit endogenous ADARs and these adRNAs are both genetically encodable and chemically synthesizable.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, we recently showed that using simple long antisense RNA (>60 bp) can suffice to recruit endogenous ADARs and these adRNAs are both genetically encodable and chemically synthesizable (Katrekar et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "54a1d6c7-b8ef-40bd-963f-52240637d175",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C8",
+      "claim": "Engineered chemically synthesized antisense oligonucleotides can lead to robust RNA editing via endogenous ADAR recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "and Merkle and colleagues showed that using engineered chemically synthesized antisense oligonucleotides (Merkle et al., 2019) could also lead to robust RNA editing via endogenous ADAR recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "35b99b31-8635-44b7-aa04-c796a0070381",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C9",
+      "claim": "Endogenous ADAR recruitment is restricted to editing adenosines in certain RNA motifs preferred by native ADARs and in tissues with high endogenous ADAR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this modality allows for highly specific editing, its applicability is restricted to editing adenosines in certain RNA motifs preferred by the native ADARs, and in tissues with high endogenous ADAR activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference from the properties of endogenous ADARs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "1ac4b42d-cfc2-4e77-8cd1-bc225a4a59bc",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C10",
+      "claim": "Deamination of cytosine to uracil (C-to-U) editing requires exogenous delivery of ADAR2 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it cannot be utilized for novel functionalities such as deamination of cytosine to uracil (C-to-U) editing which requires exogenous delivery of ADAR2 variants (Abudayyeh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "620ace81-a611-4d41-aee5-a1e93b1dbcf6",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C11",
+      "claim": "The crystal structure of the ADAR2 deaminase domain (ADAR2-DD) has been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the crystal structure of the ADAR2 deaminase domain (ADAR2-DD) (Macbeth et al., 2005; Matthews et al., 2016; Thuy-Boun et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "6de421ce-0b9d-43a5-b5e7-deac7fe78434",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C12",
+      "claim": "The study performed a quantitative deep mutational scan (DMS) measuring the effect of every possible single amino acid substitution across 261 residues of the ADAR2-DD on enzyme function.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we first carried out a quantitative deep mutational scan (DMS), measuring the effect of every possible single amino acid substitution across 261 residues of the ADAR2-DD, on enzyme function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "40b35600-870d-4aef-aad7-f725864289a9",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C13",
+      "claim": "The DMS enabled identification of novel enhanced variants for A-to-I editing.",
+      "claim_type": "EXPLICIT",
+      "source": "We utilized the sequence-function map thus generated, to identify novel enhanced variants for A-to-I editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental results from the DMS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "4e35a201-fe62-4a31-b032-70494a29cb84",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C14",
+      "claim": "A genetically encodable split-ADAR2 system was engineered that enabled efficient and highly specific RNA editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, combining information from these sequence-function maps with existing knowledge of the structure and residue conservation scores, we also engineered a genetically encodable split-ADAR2 system that enabled efficient and highly specific RNA editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the engineering approach and outcome demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "a9922537-43e3-4de9-99f6-302bdb1ae491",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C15",
+      "claim": "The DMS library comprised 4959 single amino acid variants (261 \u00d7 19) of the ADAR2-DD core residues 340-600.",
+      "claim_type": "EXPLICIT",
+      "source": "By ensuring every cell in the pooled screen received a single library element, we could perform a quantitative DMS of the core 261 amino acids (residues 340\u2013600) of the ADAR2-DD via 4959 (261 \u00d7 19) single amino acid variants, directly measuring the effect of each mutation on A-to-I editing yields",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the library design used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "4833762c-1bc1-454b-80a2-41477aa7d5ad",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C16",
+      "claim": "4958 of the 4959 possible variants were successfully detected in the DMS.",
+      "claim_type": "EXPLICIT",
+      "source": "4958 of the 4959 possible variants were successfully detected, of which 4931 elements had over 50 reads in each biological replicate and were included in the subsequent analysis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim reports the experimental coverage achieved in the DMS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "ca2d329a-e2d8-45e1-a6f0-6503c0e0fe6c",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C17",
+      "claim": "The DMS replicates showed a correlation of R\u00b2 = 0.687.",
+      "claim_type": "EXPLICIT",
+      "source": "The deaminase domain transcripts for each variant also contained the associated A-to-I editing yields, which were then quantified for both replicates of the DMS (R2 = 0.687)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the replicate correlation data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "e1d39ada-0c65-4cdd-aad0-32b148b4e042",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C18",
+      "claim": "Most mutations in conserved regions 442-460 and 469-495 that bind the RNA duplex near the editing site led to a significant decrease in editing efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, most mutations in conserved regions 442\u2013460 and 469\u2013495 that bind the RNA duplex near the editing site led to a significant decrease in editing efficiency of the enzyme (Matthews et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the DMS data and cited structural information.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "417945b2-a938-4b44-bcb1-f6f2d955df4d",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C19",
+      "claim": "Mutating the E488 residue to a positively charged or most polar-neutral amino acids resulted in an improvement in editing efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "However, mutating the negatively charged E488 residue, which recognizes the cytosine opposite the flipped adenosine by donating hydrogen bonds, to a positively charged or most polar-neutral amino acids resulted in an improvement in editing efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the DMS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "2f7a5538-31b8-4f5c-b2e5-c1b054f075bb",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C20",
+      "claim": "The E488Q mutation has been shown to improve the catalytic activity of the ADAR2 enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the previously discovered E488Q mutation which has been shown to improve the catalytic activity of the enzyme (Kuttan and Bass, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "2f9b96da-b6db-4ea1-9fda-d3a98f5f3579",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C21",
+      "claim": "Most mutations to residues that contact the flipped adenosine (V351, T375, K376, E396, C451, R455) were detrimental to enzyme function.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, most mutations to residues that contact the flipped adenosine (V351, T375, K376, E396, C451, R455) were observed to be detrimental to enzyme function (Matthews et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the DMS data and cited structural information.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "9f267e2a-2e48-4361-ad9c-30e4355ca1f8",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C22",
+      "claim": "Residues of the ADAR2-DD that interact with the zinc ion and inositol hexakisphosphate (R400, R401, K519, R522, S531, W523, D392, K483, C451, C516, H394, and E396) were extremely intolerant to mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the residues of the ADAR2-DD that interact with the zinc ion in the active site and the inositol hexakisphosphate (R400, R401, K519, R522, S531, W523, D392, K483, C451, C516, H394, and E396) were all also extremely intolerant to mutations (Macbeth et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the DMS data and cited structural information.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "74338866-41b3-4dc9-bd72-0a74231a362e",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C23",
+      "claim": "Surface exposed residues in general readily tolerated mutations as compared to buried residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as expected, surface exposed residues in general readily tolerated mutations as compared to buried residues (Matthews et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the DMS data and cited structural information.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "7ff8c8ea-7db2-45d8-b43c-97174e3b292b",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C24",
+      "claim": "The Pearson correlation between the arrayed validations and the DMS data was 0.818.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pearson correlation between the arrayed validations and the data obtained in the screen was 0.818 while the Spearman (rank) correlation was 0.824",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by validation experiments shown in Figure 1\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "9491f0b6-7e32-4c6d-a773-6ab3eca855cc",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C25",
+      "claim": "The Spearman (rank) correlation between the arrayed validations and the DMS data was 0.824.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pearson correlation between the arrayed validations and the data obtained in the screen was 0.818 while the Spearman (rank) correlation was 0.824",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by validation experiments shown in Figure 1\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "651d9117-d56f-4abe-a746-f623804c82fc",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C26",
+      "claim": "A screen was carried out to identify domain variants that improved editing at adenosines flanked by a 5' guanosine.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on this platform (Figure 1a, b, and c), we next screened for domain variants that improved editing at refractory RNA motifs such as adenosines flanked by a 5' guanosine (Vogel et al., 2018; Kuttan and Bass, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "6ef2008c-d45d-4c43-a9d4-666381070c8e",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C27",
+      "claim": "The 5'-GAN-3' enhancer screen evaluated 3287 mutants for their ability to edit a GAC motif.",
+      "claim_type": "EXPLICIT",
+      "source": "A screen was carried out in cell lines harboring these MS2-adRNAs by transducing them with the corresponding MCP-ADAR2-DD(E488Q) libraries at a low MOI (0.2\u20130.4), evaluating the potential of 3287 mutants to edit a GAC motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design and scale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "52a942e7-11db-4a4e-b739-6b432958b987",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C28",
+      "claim": "The 5'-GAN-3' enhancer screen replicates showed a correlation of R\u00b2 = 0.476.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to above, following lentiviral transduction and selection, RNA was extracted, reverse transcribed, and relevant regions of the deaminase domain amplified, sequenced, and analyzed (R2 = 0.476)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the replicate correlation data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "494462a3-7138-4070-9abc-58a6ec5b4d4e",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C29",
+      "claim": "A novel mutant E488Q, N496F was discovered that enhanced editing at a 5'-GAC-3' motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Via this approach, we discovered a novel mutant E488Q, N496F that enhanced editing at a 5'-GAC-3' motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screening data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "1a176ce2-1236-49fa-8403-905208778a04",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C30",
+      "claim": "In the ADAR2-DD(E488Q) crystal structure, the N496 residue is in close proximity to the adenosine on the unedited strand that base pairs with the 5' uracil flanking the target adenosine.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the ADAR2-DD(E488Q) crystal structure, the N496 residue is in close proximity to the adenosine on the unedited strand that base pairs with the 5' uracil flanking the target adenosine (Figure 1g; Matthews et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural information shown in Figure 1g and cited literature.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "458887cf-7ed6-4221-bef0-4d8f074e98c7",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C31",
+      "claim": "The E488Q, N496F double mutant was 3-fold better at restoring luciferase activity compared to E488Q alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated this mutant using a cypridina luciferase (cluc) reporter bearing a premature opal stop codon (UGA) and confirmed that the E488Q, N496F double mutant was 3-fold better at restoring luciferase activity as compared to E488Q alone (Figure 1\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the luciferase assay data shown in Figure 1\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "a73e3633-9300-4c43-82b9-df069cd2fe31",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C32",
+      "claim": "The double mutant E488Q, N496F was 1.1- to 2.1-fold more efficient at editing various 5'-GAN-3' motifs compared to E488Q.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the double mutant E488Q, N496F was 1.1- to 2.1-fold more efficient at editing various 5'-GAN-3' motifs as compared to the E488Q (Figure 1h, Figure 1\u2014figure supplement 3b and c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the editing data shown in Figure 1h and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "e9150235-8586-4394-bec6-050ac7b4de35",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C33",
+      "claim": "The E488Q, N496F variant was at least as efficient as E488Q at editing all other motifs, with improved editing also observed at 5'-NAC-3' motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed that this new variant was at least as efficient as the E488Q at editing all other motifs, with improved editing also observed at 5'-NAC-3' motifs (Figure 1\u2014figure supplement 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the editing data shown in Figure 1\u2014figure supplement 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "0e54419a-8c16-4107-a4ba-8e63b1f9b381",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C34",
+      "claim": "Overexpression of ADARs leads to promiscuous transcriptome-wide off-targeting due to their intrinsic dsRNA binding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their intrinsic dsRNA binding activity, overexpression of ADARs leads to promiscuous transcriptome-wide off-targeting",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the known properties of ADARs and prior observations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "6a4cf0e5-eb27-404a-bcb8-15c1bcf17e8f",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C35",
+      "claim": "Splitting the deaminase domain into two catalytically inactive fragments that come together to form a catalytically active enzyme only at the intended target could improve specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that it might be possible to achieve this by splitting the deaminase domain into two catalytically inactive fragments that come together to form a catalytically active enzyme only at the intended target (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim represents the hypothesis tested in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "b5d0f88a-6570-4455-99e9-e6a008937aad",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C36",
+      "claim": "18 putative regions for splitting the ADAR2-DD were identified based on DMS results, crystal structure, and residue conservation scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the results of the DMS (focusing on sites with high mutability), as well as the crystal structure of the ADAR2-DD (focusing on high solvent accessible surface area), and residue conservation scores across species (focusing on low scores of conservation), we identified 18 putative regions for splitting the protein (Figure 2b; Matthews et al., 2016; Dagliyan et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the rational design approach combining multiple data sources.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "f33ad54e-0bf2-4411-98e4-f3fddd2fbe4f",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C37",
+      "claim": "Split-ADAR2 pairs 9-12 showed the best editing efficiency and were all located within residues 465-468.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these pairs 9\u201312 showed the best editing efficiency, and notably were all located within residues 465\u2013468 which have low conservation scores across species (Matthews et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the luciferase assay data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "2b117ad2-484a-48af-94a4-cc2309134972",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C38",
+      "claim": "Residues 465-468 have low conservation scores across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these pairs 9\u201312 showed the best editing efficiency, and notably were all located within residues 465\u2013468 which have low conservation scores across species (Matthews et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cited conservation analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "2fa684f1-d20c-4bbc-99db-a1579f055d56",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C39",
+      "claim": "The region containing residues 465-468 is flanked by highly conserved amino acids (442-460 and 469-495).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this region is flanked by highly conserved amino acids (442\u2013460 and 469\u2013495).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on conservation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "b9c9ba57-1d34-4172-a6e4-886d4bd9b1c0",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C40",
+      "claim": "Every component of the split-ADAR2 system was essential for RNA editing.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed that every component of the split-ADAR2 system was essential for RNA editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the component testing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "8ddafbd7-08ea-497a-b832-d3bcd690ef39",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C41",
+      "claim": "Editing of the RAB7A transcript and restoration of luciferase activity was observed only when every component of the split-ADAR2 system was delivered.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed editing of the RAB7A transcript and restoration of luciferase activity only when every component of the split-ADAR2 system was delivered, confirming that the individual components lacked enzymatic activity (Figure 3a, Figure 2\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the experimental data shown in Figure 3a and Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "08043192-5acd-448a-9e88-600b5952a2fd",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C42",
+      "claim": "Fragment orientation is important for the formation of a functional split-ADAR2 enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we also confirmed the importance of fragment orientation for the formation of a functional enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the orientation testing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "6093065f-ccae-40e8-8ed6-6c6cbcd81108",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C43",
+      "claim": "Functionality was observed only for the MCP-ADAR2-DDN paired with ADAR2-DDC-\u03bbN.",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested each pair of N- and C-terminal fragments and observed functionality only for the MCP-ADAR2-DDN paired with ADAR2-DDC-\u03bbN (Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the orientation testing data shown in Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "e554d32c-7808-49b4-b2d6-66259b779d30",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C44",
+      "claim": "A humanized split-ADAR2 system was created by replacing MCP and \u03bbN with the human TAR binding protein and stem loop binding protein, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Since MCP and \u03bbN are proteins of viral origin we next replaced these with the human TAR binding protein and the stem loop binding protein, respectively, to create a humanized split-ADAR2 system with improved translational relevance (Rauch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the engineering approach for creating a humanized system.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "7dec656d-1ece-4687-9da5-42b46857e93a",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C45",
+      "claim": "The humanized split-ADAR2 system showed restoration of luciferase activity in the presence of a chimeric adRNA containing a histone stem loop and a TAR stem loop.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of a chimeric adRNA containing a histone stem loop and a TAR stem loop, we observed restoration of luciferase activity (Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the luciferase assay data shown in Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "f932ef5f-b3de-47f9-869b-829dca52cbaf",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C46",
+      "claim": "The ADAR2-DD(E488Q) showed significantly high off-target editing compared to the ADAR2-DD.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected with hyperactive enzyme variants, the ADAR2-DD(E488Q) showed significantly high off-target editing as compared to the ADAR2-DD (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the RNA-seq data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "3c769b23-6fb3-422e-b022-abbfecd2992c",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C47",
+      "claim": "Splitting the deaminase domain resulted in a 1000- to 1300-fold reduction in the number of off-targets compared to the full-length ADAR2-DD or ADAR2-DD(E488Q).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, by splitting the deaminase domain, we observed a 1000- to 1300-fold reduction in the number of off-targets as compared to the full-length ADAR2-DD or ADAR2-DD(E488Q) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the RNA-seq data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "b5aa7400-f1a0-402e-889f-23d96f3cdc2e",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C48",
+      "claim": "The specificity profiles of the split-ADAR2 system were comparable to those seen when using endogenous recruitment of ADARs via long antisense RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitingly, the specificity profiles of the split-ADAR2 system were comparable to those seen when using endogenous recruitment of ADARs via long antisense RNA (Katrekar et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison to prior data from the authors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "96ca53dc-cf06-40f0-b807-c8d830e8b0b2",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C49",
+      "claim": "The split-ADAR2 system showed robust editing efficiency at endogenous loci in CKB and KRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm generalizability of the results, we also tested the split-ADAR2 at two additional endogenous loci: an adenosine in the 3'UTR of CKB and an adenosine in the CDS of KRAS, and observed robust editing efficiency of the split-ADAR2 system (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the editing data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "e36894d4-028e-430b-9c55-479398f6cce1",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C50",
+      "claim": "An all-in-one vector bearing a bicistronic ADAR2-DDC-\u03bbN-P2A-MCP-ADAR2-DDN enabled higher editing efficiencies across all three loci tested.",
+      "claim_type": "EXPLICIT",
+      "source": "To enable convenient delivery of the split-ADAR2 system, we also created an all-in-one vector bearing a bicistronic ADAR2-DDC-\u03bbN-P2A-MCP-ADAR2-DDN which also enabled higher editing efficiencies across all three loci tested (Figure 3a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the editing data shown in Figure 3a and 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "e50479a7-f11d-4751-b693-c348486ab0fa",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C51",
+      "claim": "In the split-ADAR2 system, highly edited off-targets were guide RNA sequence dependent, in contrast to full-length deaminase domain overexpression where off-targets were predominantly deaminase domain driven.",
+      "claim_type": "EXPLICIT",
+      "source": "A closer look at the off-targets revealed that in case of the split-ADAR2 system, highly edited off-targets were indeed guide RNA sequence dependent. This is in contrast to full-length deaminase domain overexpression where off-targets were predominantly deaminase domain driven (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of off-target patterns in the RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "b7de5d1a-6fa2-47f7-ae4c-0c12f47a862d",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C52",
+      "claim": "The entire split-ADAR2 system consisting of CMV promoter-driven ADAR2-DDC-\u03bbN-P2A-MCP-ADAR2-DDN and a human U6 promoter-driven BoxB-MS2 adRNA is ~3500 bp in size.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire split-ADAR2 system consisting of CMV promoter-driven ADAR2-DDC-\u03bbN-P2A-MCP-ADAR2-DDN and a human U6 promoter-driven BoxB-MS2 adRNA is ~3500 bp in size and can easily be packaged into a single adeno-associated virus (AAV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on calculation of the construct size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "ec463c70-d170-4346-8139-56617673a3b4",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C53",
+      "claim": "The split-ADAR2 system can easily be packaged into a single adeno-associated virus (AAV).",
+      "claim_type": "EXPLICIT",
+      "source": "The entire split-ADAR2 system consisting of CMV promoter-driven ADAR2-DDC-\u03bbN-P2A-MCP-ADAR2-DDN and a human U6 promoter-driven BoxB-MS2 adRNA is ~3500 bp in size and can easily be packaged into a single adeno-associated virus (AAV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the construct size and known AAV packaging capacity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "dab8a98c-5d3d-4014-88f9-92ada10dfffa",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C54",
+      "claim": "A split-ADAR2-DD(E488Q, N496F) was created.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, to test if the split-ADAR2 chassis could be expanded to highly active ADAR variants that enable efficient editing of 5'-GAN-3' motifs as well as those that enable C-to-U editing, we created a split-ADAR2-DD(E488Q, N496F) and a split-RESCUE (RNA Editing for Specific C-to-U Exchange) system (Abudayyeh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the engineering of a new variant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "c3618268-5d43-4f03-93dc-f082cd42356d",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C55",
+      "claim": "A split-RESCUE system was created.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, to test if the split-ADAR2 chassis could be expanded to highly active ADAR variants that enable efficient editing of 5'-GAN-3' motifs as well as those that enable C-to-U editing, we created a split-ADAR2-DD(E488Q, N496F) and a split-RESCUE (RNA Editing for Specific C-to-U Exchange) system (Abudayyeh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the engineering of a new variant.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "60f5af03-133b-434a-bf4e-23f27aa53064",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C56",
+      "claim": "The split-ADAR2-DD(E488Q, N496F) was better at editing a GAC motif compared to the split-ADAR2-DD(E488Q).",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the split-ADAR2-DD(E488Q, N496F) was indeed better at editing a GAC motif as compared to the split-ADAR2-DD(E488Q) (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the editing data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "deff4b2c-aae8-4521-a134-335b8a48d0f5",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C57",
+      "claim": "The full-length ADAR2-DD(E488Q, N496F) was highly promiscuous.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the full-length ADAR2-DD(E488Q, N496F) was highly promiscuous, splitting it enabled high transcriptome-wide specificity while targeting a UAG in the RAB7A transcript (Figure 4b, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the RNA-seq data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "9ac8e0f8-492a-41e7-8c4f-006ffdd08748",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C58",
+      "claim": "Splitting the ADAR2-DD(E488Q, N496F) enabled high transcriptome-wide specificity while targeting a UAG in the RAB7A transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the full-length ADAR2-DD(E488Q, N496F) was highly promiscuous, splitting it enabled high transcriptome-wide specificity while targeting a UAG in the RAB7A transcript (Figure 4b, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the RNA-seq data shown in Figure 4b and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "01c65abc-fe2c-4d75-ba49-03fcdb188038",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C59",
+      "claim": "The split-RESCUE system showed comparable C-to-U RNA editing levels of the endogenous RAB7A transcript to the full-length MCP-RESCUE.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we noted comparable C-to-U RNA editing levels of the endogenous RAB7A transcript using the split-RESCUE and the full-length MCP-RESCUE (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the editing data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "10a2a772-e5ec-4e8b-9018-59f7e0df8f0b",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C60",
+      "claim": "The split-RESCUE system was highly specific in both the A-to-I(G) and C-to-U space compared to the MCP-RESCUE.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the split-RESCUE system was also highly specific, both in the A-to-I(G) and C-to-U space as compared to the MCP-RESCUE (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the RNA-seq data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "59577f1c-5162-4e28-985e-6cda4ad0d9bf",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C61",
+      "claim": "The efficiency of the split-ADAR2 system was ~50-70% compared to full-length domain overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to this requirement of the split-domains to assemble, the efficiency of this system was ~50\u201370% compared to full-length domain overexpression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of editing efficiencies between split and full-length systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "e9c726f9-4858-49e0-8c41-f1f9f36f6069",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C62",
+      "claim": "The split-ADAR2 tool was highly transcript specific (~1000-fold compared to full-length domain overexpression).",
+      "claim_type": "EXPLICIT",
+      "source": "but the split-ADAR2 tool was highly transcript specific (~1000-fold compared to full-length domain over expression)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the RNA-seq specificity data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "b587ba6c-6bf9-464f-8ccd-2931f9ddd5a8",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C63",
+      "claim": "The off-target profiles of split-ADAR2 were similar to those seen via recruitment of endogenous ADARs.",
+      "claim_type": "EXPLICIT",
+      "source": "and notably with off-target profiles similar to those seen via recruitment of endogenous ADARs (Katrekar et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison to prior data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "48fc29b7-a7c7-490f-b72b-033978c28f98",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C64",
+      "claim": "Replicate correlation values were negatively impacted because the screen was carried out in a lentiviral format.",
+      "claim_type": "EXPLICIT",
+      "source": "While this novel screening approach was useful for creating an average mutagenesis map of the ADAR2-DD and identifying highly active variants, we believe that replicate correlation values were negatively impacted given that the screen was carried out in a lentiviral format.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the authors' interpretation of the replicate correlation data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "d776dbb9-e133-4834-b4c5-921aa8b62bae",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C65",
+      "claim": "Lentivirus integrates randomly into the cell's genome, resulting in variability in ADAR2-DD transcript levels between different cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As lentivirus integrates randomly into the cell's genome, this results in variability in ADAR2-DD transcript levels between different cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on known properties of lentiviral integration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "d86a006e-8796-4f51-b573-0025c8da0e54",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C66",
+      "claim": "The ADAR2-DD(E488Q, N496F) showed increased bystander editing compared to the ADAR2-DD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, like the ADAR2-DD(E488Q), the ADAR2-DD(E488Q, N496F) showed increased bystander editing and transcriptome-wide off-targeting as compared to the ADAR2-DD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the editing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "4d147887-fab9-4fd9-a2f7-6d95fac91749",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C67",
+      "claim": "The ADAR2-DD(E488Q, N496F) showed increased transcriptome-wide off-targeting compared to the ADAR2-DD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, like the ADAR2-DD(E488Q), the ADAR2-DD(E488Q, N496F) showed increased bystander editing and transcriptome-wide off-targeting as compared to the ADAR2-DD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "ec00d1cd-d883-46d4-9f7a-b9f05bb18782",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C68",
+      "claim": "The DMS library was created using six tiling oligonucleotide pools.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the large size of the deaminase domain at >750 bp, the library of ADAR variants was created using six tiling oligonucleotide pools (Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the library construction method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "93d8693f-0673-40ec-a36a-932403bb66dd",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C69",
+      "claim": "Members of the first three library pools were assayed for editing at the 5' end of the ADAR2-DD while the remaining members were assayed at the 3' end.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure read length coverage in next generation sequencing, members of the first three library pools were assayed for editing at the 5' end of the ADAR2-DD while the remaining members were assayed at the 3' end (Figure 1c, Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the experimental design for sequencing coverage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "a3d1137d-39c4-4b05-b7e0-6f54255c0413",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C70",
+      "claim": "Two HEK293FT clonal cell lines were created following high MOI transduction with lentivirus bearing two copies of MS2-adRNAs targeting either the 5' or the 3' UAG sites.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize assay noise resulting from varying expression of the guide RNA in each cell, two HEK293FT clonal cell lines were created following a high multiplicity of infection (MOI) transduction with lentivirus bearing two copies of MS2-adRNAs targeting either the 5' or the 3' UAG sites integrated into them (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the cell line creation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "ebdee051-0fdf-4b0a-a243-d8e7ac612c37",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C71",
+      "claim": "The DMS was carried out by transducing cell lines harboring MS2-adRNAs with the corresponding ADAR mutant libraries at a low MOI of 0.2-0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "The DMS was carried out in cell lines harboring these MS2-adRNAs by transducing them with the corresponding ADAR mutant libraries at a low MOI of 0.2\u20130.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "66b5b024-2f06-4d52-b890-fad775653dbe",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C72",
+      "claim": "Two biological replicates were performed in independent plates of cells transduced with the lentiviral libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "Two biological replicates were performed in independent plates of cells transduced with the lentiviral libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "8c27dad4-4718-4d07-aee9-6ddda3e1d6f8",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C73",
+      "claim": "4931 elements had over 50 reads in each biological replicate and were included in the subsequent analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "4958 of the 4959 possible variants were successfully detected, of which 4931 elements had over 50 reads in each biological replicate and were included in the subsequent analysis (Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the data filtering criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "431d1c9b-31f2-4f17-924a-c43dc3d743f6",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C74",
+      "claim": "72% of the validated samples were not significantly different from the data obtained in the screen (p > 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "p-Values were computed using Welch's t-test; 72% of the validated samples were not significantly different from the data obtained in the screen (p > 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the validation data shown in Figure 1\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "bde4e3f0-9e33-467d-86e1-6ba1fb732e3c",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C75",
+      "claim": "The study used HEK293FT cells that were authenticated by STR and tested for mycoplasma contamination by the vendor.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells were authenticated by STR and tested for mycoplasma contamination by the vendor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the cell line quality control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "992a04cd-29a8-4369-b572-8abf34116274",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C76",
+      "claim": "At least 1000\u00d7 coverage was maintained at all steps of the screen.",
+      "claim_type": "EXPLICIT",
+      "source": "At least 1000\u00d7 coverage was maintained at all steps of the screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental design parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "f6f7f046-4d58-4347-a533-d940f6340077",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C77",
+      "claim": "RNA-seq samples were collected with 25 million uniquely aligned sequencing read pairs per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "From each sample, we collected 25 million uniquely aligned sequencing read pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the sequencing depth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "6dbb8b71-e834-4fc4-bce1-f337ce8c9135",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "claim_id": "C78",
+      "claim": "Fisher's exact test was used to quantify significant changes in A-to-G editing yields relative to untransfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used Fisher's exact test to quantify significant changes in A-to-G editing yields, relative to untransfected cells, at each reference adenosine site having sufficient read coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the statistical analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A deep mutational scan (DMS) was performed measuring the effect of 4959 single amino acid substitutions across 261 residues (340-600) of the ADAR2 deaminase domain on RNA editing activity. The screen achieved near-complete coverage (4958/4959 variants detected, 4931 with >50 reads) with biological replicates showing R\u00b2 = 0.687 correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17, C68-C73, and C76 collectively describe a well-executed DMS with appropriate experimental design including clonal cell lines to minimize noise (C70), low MOI transduction (C71), biological replicates (C72), adequate coverage (C76), and stringent filtering criteria (C73). The replicate correlation of R\u00b2 = 0.687 (C17) is moderate but reasonable for this type of screen.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "ccd52a24-6f57-4fb9-9610-205827e5a069",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The DMS revealed expected patterns including intolerance of mutations in conserved RNA-binding regions (442-460, 469-495), active site residues, and residues contacting the flipped adenosine, while surface-exposed residues tolerated mutations. The E488 position showed improved activity when mutated to polar or positively charged residues, consistent with prior work. Independent validation of 33 variants showed strong correlation with DMS data (Pearson r = 0.818, Spearman r = 0.824).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 describe DMS findings that align with structural and biochemical knowledge, with appropriate citations to prior work. The validation experiments (C24-C25, C74) demonstrate strong correlation between the pooled screen and arrayed assays, with 72% of variants showing no significant difference (p > 0.05), supporting the reliability of the DMS approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "bdbafd30-8863-4914-8e8f-2c8f5f3b17bb",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A focused screen of 3287 ADAR2-DD(E488Q) variants identified a novel E488Q, N496F double mutant with enhanced activity at 5'-GAN-3' motifs. This variant showed 3-fold improvement in luciferase restoration and 1.1- to 2.1-fold increased editing efficiency at various 5'-GAN-3' motifs compared to E488Q alone, while maintaining activity at other motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 describe a rational screen design targeting a known refractory motif, discovery of a novel variant, structural rationalization (N496 proximity to relevant nucleotide, C30), and validation across multiple assays and endogenous targets. The moderate replicate correlation (R\u00b2 = 0.476, C28) is acknowledged but the key finding is independently validated through multiple orthogonal assays (C31-C33).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "56e48bfd-dc6c-4a47-8e44-2ca77ac3c3c7",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A split-ADAR2 system was engineered by rationally identifying 18 potential split sites using DMS mutability data, crystal structure information, and conservation scores. Split pairs 9-12 (residues 465-468) showed optimal activity, with pair 12 selected for further development. Component essentiality and correct fragment orientation were confirmed experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C43 describe a rational protein engineering approach combining multiple data sources (C36) to identify split sites. The experimental validation demonstrates that all components are essential (C40-C41) and orientation matters (C42-C43). The convergence of multiple split sites within a narrow region (465-468) with low conservation flanked by highly conserved regions (C37-C39) provides strong support for the design rationale.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "9da8a603-4ae3-4486-9a62-8878870035a8",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A humanized split-ADAR2 system was created by replacing viral proteins (MCP and \u03bbN) with human TAR binding protein and stem loop binding protein, which showed functional RNA editing activity with appropriate chimeric guide RNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 demonstrate successful adaptation of the split-ADAR2 system to human-derived components, confirmed by luciferase restoration assays. This addresses translational concerns about using viral proteins and validates the modularity of the split system design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "439560f3-90e7-439f-bdf7-715f67ca3364",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The split-ADAR2 system achieved 1000- to 1300-fold reduction in transcriptome-wide off-target editing compared to full-length ADAR2-DD or ADAR2-DD(E488Q), with specificity profiles comparable to endogenous ADAR recruitment. The system showed robust editing at multiple endogenous loci (RAB7A, CKB, KRAS), with an all-in-one bicistronic vector enabling higher editing efficiencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50, C62-C63 are supported by comprehensive RNA-seq analysis (25 million read pairs per sample, C77) using Fisher's exact test (C78). The dramatic reduction in off-targets is clearly demonstrated in Figure 3b, and generalizability is confirmed across multiple loci. The comparison to endogenous ADAR recruitment (C48, C63) provides important context for the specificity achieved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "b855c106-4cea-44b6-9a45-bcc603a26cae",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Off-target editing patterns differed between split-ADAR2 and full-length systems, with split-ADAR2 showing guide RNA sequence-dependent off-targets while full-length deaminase overexpression showed predominantly deaminase domain-driven off-targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by analysis of off-target patterns in RNA-seq data (Supplementary file 1). This mechanistic insight explains the improved specificity of the split system and suggests that remaining off-targets could be further reduced through guide RNA optimization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "2664a1a4-dd0a-4317-82f5-ef3d7cf91f3d",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The complete split-ADAR2 system (CMV-driven bicistronic construct and U6-driven guide RNA) is approximately 3500 bp and can be packaged into a single AAV vector.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are based on straightforward calculation of construct sizes and comparison to known AAV packaging capacity (~4.7 kb). This represents an important practical advantage for therapeutic delivery, though actual AAV packaging and functionality would require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "fb95a8f3-63f6-405e-9b5a-8d34bb6592ec",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The split-ADAR2 chassis was successfully extended to create split-ADAR2-DD(E488Q, N496F) for enhanced 5'-GAN-3' editing and split-RESCUE for C-to-U editing. Both systems maintained high transcriptome-wide specificity while achieving comparable on-target editing to their full-length counterparts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C60 demonstrate the modularity and broad applicability of the split-ADAR2 approach. RNA-seq data (Figures 4b, 4d) clearly show dramatic reductions in off-targets for both split variants compared to full-length versions, while maintaining on-target activity (C56, C59). This extends the utility of the split approach beyond the original ADAR2-DD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "eea9ca5f-0268-4432-bc94-26e29e51dc05",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The split-ADAR2 system showed approximately 50-70% editing efficiency compared to full-length domain overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by comparison of editing efficiencies across multiple experiments (Figures 3a, 3c, 4a). This trade-off between efficiency and specificity is acknowledged and represents a reasonable compromise given the >1000-fold improvement in specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "1a0e9226-a6eb-4ad3-bc32-492717abb263",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors attribute moderate replicate correlations in the DMS screens to the lentiviral delivery format, which causes random genomic integration and variable transcript expression between cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C65 represent the authors' interpretation of why replicate correlations were moderate (R\u00b2 = 0.687 for DMS, R\u00b2 = 0.476 for GAN screen). While the explanation is plausible based on known lentiviral biology (C65), this remains speculative (C64) as alternative explanations (biological noise, technical variability, stochastic editing) were not systematically tested. The validation data (C24-C25) showing strong correlation suggests the screen still captured meaningful trends.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "9ff242d3-c4b3-4069-9030-6673c688289b",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The ADAR2-DD(E488Q, N496F) double mutant showed increased bystander editing and transcriptome-wide off-targeting compared to wild-type ADAR2-DD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are supported by editing data and RNA-seq analysis. This is expected for hyperactive variants and motivates the need for the split-ADAR2 approach to control specificity while maintaining enhanced activity at difficult motifs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing that A-to-I RNA editing is catalyzed by ADARs, inosine is read as guanosine, ADARs have been repurposed for programmable editing, exogenous ADARs cause off-target effects, endogenous ADAR recruitment has limitations, and ADAR2 structural information is available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 provide well-cited background establishing the scientific context and motivation for the study. These are supported by extensive prior literature and represent accurate summaries of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "2b9398fe-163e-4283-b8d4-eb3dedcdb238",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The DMS enabled identification of novel enhanced variants for A-to-I editing, and a split-ADAR2 system was engineered that enabled efficient and highly specific RNA editing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 represent high-level summary statements of the main findings, which are supported by the detailed experimental results described in other claim groups. These serve as accurate abstractions of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "74224543-3963-4d69-ac6b-d3a0fd85c6c6",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Overexpression of ADARs leads to promiscuous transcriptome-wide off-targeting due to their intrinsic dsRNA binding activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by prior knowledge and observations in this study (C46) and cited literature (C6). This provides the key motivation for developing the split-ADAR2 approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    },
+    {
+      "id": "eff5ee38-7160-4ff7-97f2-2a17339a8a59",
+      "content_id": "2c6fbb27-de48-4612-83c4-8211ae6ca68b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Methodological details: HEK293FT cells were authenticated and tested for mycoplasma; RNA-seq achieved 25 million read pairs per sample; Fisher's exact test was used for statistical analysis of editing yields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C77-C78 describe appropriate quality control measures and analytical methods. These represent good experimental practices that support the reliability of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:15:59.028372Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6de421ce-0b9d-43a5-b5e7-deac7fe78434",
+      "result_id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c"
+    },
+    {
+      "claim_id": "a9922537-43e3-4de9-99f6-302bdb1ae491",
+      "result_id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c"
+    },
+    {
+      "claim_id": "4833762c-1bc1-454b-80a2-41477aa7d5ad",
+      "result_id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c"
+    },
+    {
+      "claim_id": "ca2d329a-e2d8-45e1-a6f0-6503c0e0fe6c",
+      "result_id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c"
+    },
+    {
+      "claim_id": "ec00d1cd-d883-46d4-9f7a-b9f05bb18782",
+      "result_id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c"
+    },
+    {
+      "claim_id": "93d8693f-0673-40ec-a36a-932403bb66dd",
+      "result_id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c"
+    },
+    {
+      "claim_id": "a3d1137d-39c4-4b05-b7e0-6f54255c0413",
+      "result_id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c"
+    },
+    {
+      "claim_id": "ebdee051-0fdf-4b0a-a243-d8e7ac612c37",
+      "result_id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c"
+    },
+    {
+      "claim_id": "66b5b024-2f06-4d52-b890-fad775653dbe",
+      "result_id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c"
+    },
+    {
+      "claim_id": "8c27dad4-4718-4d07-aee9-6ddda3e1d6f8",
+      "result_id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c"
+    },
+    {
+      "claim_id": "992a04cd-29a8-4369-b572-8abf34116274",
+      "result_id": "7486d156-d641-4e4f-a7c5-c3e77d81d63c"
+    },
+    {
+      "claim_id": "e1d39ada-0c65-4cdd-aad0-32b148b4e042",
+      "result_id": "ccd52a24-6f57-4fb9-9610-205827e5a069"
+    },
+    {
+      "claim_id": "417945b2-a938-4b44-bcb1-f6f2d955df4d",
+      "result_id": "ccd52a24-6f57-4fb9-9610-205827e5a069"
+    },
+    {
+      "claim_id": "2f7a5538-31b8-4f5c-b2e5-c1b054f075bb",
+      "result_id": "ccd52a24-6f57-4fb9-9610-205827e5a069"
+    },
+    {
+      "claim_id": "2f9b96da-b6db-4ea1-9fda-d3a98f5f3579",
+      "result_id": "ccd52a24-6f57-4fb9-9610-205827e5a069"
+    },
+    {
+      "claim_id": "9f267e2a-2e48-4361-ad9c-30e4355ca1f8",
+      "result_id": "ccd52a24-6f57-4fb9-9610-205827e5a069"
+    },
+    {
+      "claim_id": "74338866-41b3-4dc9-bd72-0a74231a362e",
+      "result_id": "ccd52a24-6f57-4fb9-9610-205827e5a069"
+    },
+    {
+      "claim_id": "7ff8c8ea-7db2-45d8-b43c-97174e3b292b",
+      "result_id": "ccd52a24-6f57-4fb9-9610-205827e5a069"
+    },
+    {
+      "claim_id": "9491f0b6-7e32-4c6d-a773-6ab3eca855cc",
+      "result_id": "ccd52a24-6f57-4fb9-9610-205827e5a069"
+    },
+    {
+      "claim_id": "431d1c9b-31f2-4f17-924a-c43dc3d743f6",
+      "result_id": "ccd52a24-6f57-4fb9-9610-205827e5a069"
+    },
+    {
+      "claim_id": "651d9117-d56f-4abe-a746-f623804c82fc",
+      "result_id": "bdbafd30-8863-4914-8e8f-2c8f5f3b17bb"
+    },
+    {
+      "claim_id": "6ef2008c-d45d-4c43-a9d4-666381070c8e",
+      "result_id": "bdbafd30-8863-4914-8e8f-2c8f5f3b17bb"
+    },
+    {
+      "claim_id": "52a942e7-11db-4a4e-b739-6b432958b987",
+      "result_id": "bdbafd30-8863-4914-8e8f-2c8f5f3b17bb"
+    },
+    {
+      "claim_id": "494462a3-7138-4070-9abc-58a6ec5b4d4e",
+      "result_id": "bdbafd30-8863-4914-8e8f-2c8f5f3b17bb"
+    },
+    {
+      "claim_id": "1a176ce2-1236-49fa-8403-905208778a04",
+      "result_id": "bdbafd30-8863-4914-8e8f-2c8f5f3b17bb"
+    },
+    {
+      "claim_id": "458887cf-7ed6-4221-bef0-4d8f074e98c7",
+      "result_id": "bdbafd30-8863-4914-8e8f-2c8f5f3b17bb"
+    },
+    {
+      "claim_id": "a73e3633-9300-4c43-82b9-df069cd2fe31",
+      "result_id": "bdbafd30-8863-4914-8e8f-2c8f5f3b17bb"
+    },
+    {
+      "claim_id": "e9150235-8586-4394-bec6-050ac7b4de35",
+      "result_id": "bdbafd30-8863-4914-8e8f-2c8f5f3b17bb"
+    },
+    {
+      "claim_id": "6a4cf0e5-eb27-404a-bcb8-15c1bcf17e8f",
+      "result_id": "56e48bfd-dc6c-4a47-8e44-2ca77ac3c3c7"
+    },
+    {
+      "claim_id": "b5d0f88a-6570-4455-99e9-e6a008937aad",
+      "result_id": "56e48bfd-dc6c-4a47-8e44-2ca77ac3c3c7"
+    },
+    {
+      "claim_id": "f33ad54e-0bf2-4411-98e4-f3fddd2fbe4f",
+      "result_id": "56e48bfd-dc6c-4a47-8e44-2ca77ac3c3c7"
+    },
+    {
+      "claim_id": "2b117ad2-484a-48af-94a4-cc2309134972",
+      "result_id": "56e48bfd-dc6c-4a47-8e44-2ca77ac3c3c7"
+    },
+    {
+      "claim_id": "2fa684f1-d20c-4bbc-99db-a1579f055d56",
+      "result_id": "56e48bfd-dc6c-4a47-8e44-2ca77ac3c3c7"
+    },
+    {
+      "claim_id": "b9c9ba57-1d34-4172-a6e4-886d4bd9b1c0",
+      "result_id": "56e48bfd-dc6c-4a47-8e44-2ca77ac3c3c7"
+    },
+    {
+      "claim_id": "8ddafbd7-08ea-497a-b832-d3bcd690ef39",
+      "result_id": "56e48bfd-dc6c-4a47-8e44-2ca77ac3c3c7"
+    },
+    {
+      "claim_id": "08043192-5acd-448a-9e88-600b5952a2fd",
+      "result_id": "56e48bfd-dc6c-4a47-8e44-2ca77ac3c3c7"
+    },
+    {
+      "claim_id": "6093065f-ccae-40e8-8ed6-6c6cbcd81108",
+      "result_id": "56e48bfd-dc6c-4a47-8e44-2ca77ac3c3c7"
+    },
+    {
+      "claim_id": "e554d32c-7808-49b4-b2d6-66259b779d30",
+      "result_id": "9da8a603-4ae3-4486-9a62-8878870035a8"
+    },
+    {
+      "claim_id": "7dec656d-1ece-4687-9da5-42b46857e93a",
+      "result_id": "9da8a603-4ae3-4486-9a62-8878870035a8"
+    },
+    {
+      "claim_id": "f932ef5f-b3de-47f9-869b-829dca52cbaf",
+      "result_id": "439560f3-90e7-439f-bdf7-715f67ca3364"
+    },
+    {
+      "claim_id": "3c769b23-6fb3-422e-b022-abbfecd2992c",
+      "result_id": "439560f3-90e7-439f-bdf7-715f67ca3364"
+    },
+    {
+      "claim_id": "b5aa7400-f1a0-402e-889f-23d96f3cdc2e",
+      "result_id": "439560f3-90e7-439f-bdf7-715f67ca3364"
+    },
+    {
+      "claim_id": "96ca53dc-cf06-40f0-b807-c8d830e8b0b2",
+      "result_id": "439560f3-90e7-439f-bdf7-715f67ca3364"
+    },
+    {
+      "claim_id": "e36894d4-028e-430b-9c55-479398f6cce1",
+      "result_id": "439560f3-90e7-439f-bdf7-715f67ca3364"
+    },
+    {
+      "claim_id": "e9c726f9-4858-49e0-8c41-f1f9f36f6069",
+      "result_id": "439560f3-90e7-439f-bdf7-715f67ca3364"
+    },
+    {
+      "claim_id": "b587ba6c-6bf9-464f-8ccd-2931f9ddd5a8",
+      "result_id": "439560f3-90e7-439f-bdf7-715f67ca3364"
+    },
+    {
+      "claim_id": "e50479a7-f11d-4751-b693-c348486ab0fa",
+      "result_id": "b855c106-4cea-44b6-9a45-bcc603a26cae"
+    },
+    {
+      "claim_id": "b7de5d1a-6fa2-47f7-ae4c-0c12f47a862d",
+      "result_id": "2664a1a4-dd0a-4317-82f5-ef3d7cf91f3d"
+    },
+    {
+      "claim_id": "ec463c70-d170-4346-8139-56617673a3b4",
+      "result_id": "2664a1a4-dd0a-4317-82f5-ef3d7cf91f3d"
+    },
+    {
+      "claim_id": "dab8a98c-5d3d-4014-88f9-92ada10dfffa",
+      "result_id": "fb95a8f3-63f6-405e-9b5a-8d34bb6592ec"
+    },
+    {
+      "claim_id": "c3618268-5d43-4f03-93dc-f082cd42356d",
+      "result_id": "fb95a8f3-63f6-405e-9b5a-8d34bb6592ec"
+    },
+    {
+      "claim_id": "60f5af03-133b-434a-bf4e-23f27aa53064",
+      "result_id": "fb95a8f3-63f6-405e-9b5a-8d34bb6592ec"
+    },
+    {
+      "claim_id": "deff4b2c-aae8-4521-a134-335b8a48d0f5",
+      "result_id": "fb95a8f3-63f6-405e-9b5a-8d34bb6592ec"
+    },
+    {
+      "claim_id": "9ac8e0f8-492a-41e7-8c4f-006ffdd08748",
+      "result_id": "fb95a8f3-63f6-405e-9b5a-8d34bb6592ec"
+    },
+    {
+      "claim_id": "01c65abc-fe2c-4d75-ba49-03fcdb188038",
+      "result_id": "fb95a8f3-63f6-405e-9b5a-8d34bb6592ec"
+    },
+    {
+      "claim_id": "10a2a772-e5ec-4e8b-9018-59f7e0df8f0b",
+      "result_id": "fb95a8f3-63f6-405e-9b5a-8d34bb6592ec"
+    },
+    {
+      "claim_id": "59577f1c-5162-4e28-985e-6cda4ad0d9bf",
+      "result_id": "eea9ca5f-0268-4432-bc94-26e29e51dc05"
+    },
+    {
+      "claim_id": "48fc29b7-a7c7-490f-b72b-033978c28f98",
+      "result_id": "1a0e9226-a6eb-4ad3-bc32-492717abb263"
+    },
+    {
+      "claim_id": "d776dbb9-e133-4834-b4c5-921aa8b62bae",
+      "result_id": "1a0e9226-a6eb-4ad3-bc32-492717abb263"
+    },
+    {
+      "claim_id": "d86a006e-8796-4f51-b573-0025c8da0e54",
+      "result_id": "9ff242d3-c4b3-4069-9030-6673c688289b"
+    },
+    {
+      "claim_id": "4d147887-fab9-4fd9-a2f7-6d95fac91749",
+      "result_id": "9ff242d3-c4b3-4069-9030-6673c688289b"
+    },
+    {
+      "claim_id": "c9642291-62b9-48c7-9896-38aa94dbfdfa",
+      "result_id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa"
+    },
+    {
+      "claim_id": "43138797-f193-4212-8dc9-5337ae44585b",
+      "result_id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa"
+    },
+    {
+      "claim_id": "f6cb03ff-02e2-4331-8977-86cbf520c167",
+      "result_id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa"
+    },
+    {
+      "claim_id": "ec776dd6-c2a3-4222-a581-15f2f7d65f99",
+      "result_id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa"
+    },
+    {
+      "claim_id": "cf936dbe-2b19-4465-92b1-6d1db30d0271",
+      "result_id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa"
+    },
+    {
+      "claim_id": "d8c26ab3-d5e8-49fc-9599-851daccf5f0d",
+      "result_id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa"
+    },
+    {
+      "claim_id": "84cb4de3-6537-4866-b330-775ced01de1c",
+      "result_id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa"
+    },
+    {
+      "claim_id": "54a1d6c7-b8ef-40bd-963f-52240637d175",
+      "result_id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa"
+    },
+    {
+      "claim_id": "35b99b31-8635-44b7-aa04-c796a0070381",
+      "result_id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa"
+    },
+    {
+      "claim_id": "1ac4b42d-cfc2-4e77-8cd1-bc225a4a59bc",
+      "result_id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa"
+    },
+    {
+      "claim_id": "620ace81-a611-4d41-aee5-a1e93b1dbcf6",
+      "result_id": "b280db88-74c4-4b7d-861d-e9f4a2f4daaa"
+    },
+    {
+      "claim_id": "40b35600-870d-4aef-aad7-f725864289a9",
+      "result_id": "2b9398fe-163e-4283-b8d4-eb3dedcdb238"
+    },
+    {
+      "claim_id": "4e35a201-fe62-4a31-b032-70494a29cb84",
+      "result_id": "2b9398fe-163e-4283-b8d4-eb3dedcdb238"
+    },
+    {
+      "claim_id": "0e54419a-8c16-4107-a4ba-8e63b1f9b381",
+      "result_id": "74224543-3963-4d69-ac6b-d3a0fd85c6c6"
+    },
+    {
+      "claim_id": "bde4e3f0-9e33-467d-86e1-6ba1fb732e3c",
+      "result_id": "eff5ee38-7160-4ff7-97f2-2a17339a8a59"
+    },
+    {
+      "claim_id": "f6f7f046-4d58-4347-a533-d940f6340077",
+      "result_id": "eff5ee38-7160-4ff7-97f2-2a17339a8a59"
+    },
+    {
+      "claim_id": "6dbb8b71-e834-4fc4-bce1-f337ce8c9135",
+      "result_id": "eff5ee38-7160-4ff7-97f2-2a17339a8a59"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1584 @@
+{
+  "submission": {
+    "id": "49c57cf9-08b2-42c2-a237-621ef1f6fb92",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:20:17.521378Z",
+    "updated_at": "2025-12-03T03:20:17.521378Z"
+  },
+  "content": [
+    {
+      "id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "submission_id": "49c57cf9-08b2-42c2-a237-621ef1f6fb92",
+      "content_type": "manuscript",
+      "content_text": "# In vivo proximity labeling identifies cardiomyocyte protein networks during zebrafish heart regeneration\n\n## Authors\n\n- Mira I Pronobis<sup>1</sup> ([ORCID: 0000-0002-9861-6596](https://orcid.org/0000-0002-9861-6596))\n- Susan Zheng<sup>1</sup>\n- Sumeet Pal Singh<sup>3</sup> ([ORCID: 0000-0002-5154-3318](https://orcid.org/0000-0002-5154-3318))\n- Joseph A Goldman<sup>4</sup> ([ORCID: 0000-0002-0800-6189](https://orcid.org/0000-0002-0800-6189))\n- Kenneth D Poss<sup>1</sup> ([ORCID: 0000-0002-6743-5709](https://orcid.org/0000-0002-6743-5709)) \u2020\n\n### Affiliations\n\n1. Department of Cell Biology, Duke University Medical Center Durham United States\n2. Regeneration Next, Duke University Durham United States\n3. IRIBHM, Universit\u00e9 Libre de Bruxelles (ULB) Brussels Belgium\n4. Department of Biological Chemistry and Pharmacology, The Ohio State University Medical Center Columbus United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nStrategies have not been available until recently to uncover interacting protein networks specific to key cell types, their subcellular compartments, and their major regulators during complex in vivo events. Here, we apply BioID2 proximity labeling to capture protein networks acting within cardiomyocytes during a key model of innate heart regeneration in zebrafish. Transgenic zebrafish expressing a promiscuous BirA2 localized to the entire myocardial cell or membrane compartment were generated, each identifying distinct proteomes in adult cardiomyocytes that became altered during regeneration. BioID2 profiling for interactors with ErbB2, a co-receptor for the cardiomyocyte mitogen Nrg1, implicated Rho A as a target of ErbB2 signaling in cardiomyocytes. Blockade of Rho A during heart regeneration, or during cardiogenic stimulation by the mitogenic influences Nrg1, Vegfaa, or vitamin D, disrupted muscle creation. Our findings reveal proximity labeling as a useful resource to interrogate cell proteomes and signaling networks during tissue regeneration in zebrafish.\n\n## Introduction\n\nUnderstanding how and why tissue regeneration occurs is a central objective of developmental biology. Genome-wide transcriptome or chromatin profiling experiments using RNA-seq, scRNA-seq, ATAC-seq, or ChIP-seq approaches have helped to identify novel factors, mechanisms, and concepts that have informed our understanding of regeneration in many tissues, injury contexts, and species (Goldman et al., 2017; Hoang et al., 2020; Johnson et al., 2020). Although key for detecting and inferring changes in gene transcription, chromatin organization, or DNA\u2013protein associations, these strategies are limited in their abilities to identify protein and signaling complexes that carry out changes at the cell and tissue level. Co-immunoprecipitations and affinity-purification mass spectrometry (AP/MS/MS) are well-established techniques to probe protein interactions and networks. Yet, they require tissue dissociation and flow cytometry to acquire cell type-specific interactions, and weak interactions between proteins often escape detection (Perkins et al., 2010).\n\nProximity labeling is a relatively recent technology established to probe protein interactions in specific sub-tissue and subcellular compartments, represented by multiple versions including BioID2, TurboID, and APEX2 (Kim et al., 2016; Branon et al., 2018; Hung et al., 2016). Here,\u00a0engineered ligases that attach biotin to lysine residues are fused with a protein of interest such that, when expressed in cells, proteins in close proximity are indiscriminately biotinylated. The biotinylated proteome is isolated by streptavidin affinity, and proteins are identified by quantitative mass spectrometry. Most studies have applied proximity labeling to in vitro tissue culture systems, whereas many fewer have explored in vivo networks in mice or Drosophila (Spence et al., 2019; Feng et al., 2020; Rudolph et al., 2020; Mannix et al., 2019; Cho et al., 2020). In the latter studies, proximity labeling captured the proteome within interneuron\u2013neuron interactions, within muscle sarcomeres, and in the ring canal of Drosophila oocytes, producing new insights into protein network assemblies and signaling. The principles of proximity labeling should be capable of identifying key protein networks during dynamic cellular processes like embryonic development and tissue regeneration without the need for tissue disruption. Notably, proximity labeling has yet to be applied in central animal models of regeneration such as zebrafish and axolotl salamanders.\n\nUnlike mammals, teleost zebrafish regenerate cardiac muscle after injury with minimal scar formation, based on division of pre-existing cardiomyocytes (Poss et al., 2002; Kikuchi et al., 2010; Jopling et al., 2010). Understanding mechanisms of innate cardiac repair in animals like zebrafish has the potential to define and overcome barriers to cardiac regeneration in humans. Evidence to date indicates that heart regeneration in zebrafish is a relentless process that outcompetes scarring to recover the heart function, rather than a linear series of molecular steps and synchronized cellular progressions. Intrinsic programs in cardiomyocytes and the ability to receive extrinsic proliferative cues are\u00a0prime cardiomyocytes for cell division. Many ligands, receptors, and transcription factors have been shown to be required for heart regeneration (Xiao et al., 2016; Zhao et al., 2019; Dogra et al., 2017; Chablais and Jazwinska, 2012; Wu et al., 2016; Pronobis and Poss, 2020). Three secreted factors, Nrg1, Vegfaa, and vitamin D, have been demonstrated to have instructive mitogenic effects, characterized by the ability to induce cardiomyocyte proliferation in zebrafish in the absence of injury (Gemberling et al., 2015; Karra et al., 2018; Han et al., 2019). Nrg1/ErbB2 signaling can stimulate cardiomyocyte division in adult mice, most notably when ErbB2 is experimentally expressed in the form of a ligand-independent activator (Bersell et al., 2009; D'Uva et al., 2015; Gordon et al., 2009). ErbB2 signaling was recently reported to work in part through regulation of YAP, a transcriptional activator that can impact cytoskeletal remodeling and cell division in cardiomyocytes during cardiac growth or repair in mice (Leach et al., 2017; Aharonov et al., 2020; Heallen et al., 2013; Heallen et al., 2011). In zebrafish, Nrg1/ErbB2 signals in part by promoting glycolysis versus mitochondrial oxidative phosphorylation and reducing Tp53 levels through upregulation of its inhibitor Mdm2 (Shoffner et al., 2020; Honkoop et al., 2019; Fukuda et al., 2019).\n\nSignal transduction mechanisms by which ErbB2 and other mitogenic factors support cardiomyocyte proliferation versus other outcomes could be illuminated by customized proteomic profiling. Proteomic studies of heart regeneration to date have faced challenges, including lack of cell-type specificity and limited detection of changes in poorly represented members of the proteome due to the abundance of sarcomeric proteins (Wang et al., 2013; Ma et al., 2018; Garcia-Puig et al., 2019). Here, we applied a transgenic BioID2 strategy to capture cell-specific proteome changes in cardiomyocytes during heart regeneration in adult zebrafish. We show that BioID2 can be used to track changes in protein levels in whole cardiomyocytes or their membrane compartments during regeneration. We also investigate the proximal proteome of ErbB2 in cardiomyocytes, finding an increase in association with the small GTPase Rho A during regeneration, a protein with activity we find to be essential for injury-induced regeneration and the proliferative response to mitogens. Our findings demonstrate the utility of proximity labeling as a resource to interrogate cell proteomes and signaling networks during tissue regeneration in zebrafish, and they identify a key role of small GTPases in injury-induced cardiogenesis.\n\n## Results and discussion\n\n### BioID2 detects cardiomyocyte proteomes in adult zebrafish\n\nBioID2 employs the promiscuous BirA2, which attaches biotin molecules to the lysines of proteins within an approximate distance of 10 nm (Kim et al., 2016). We reasoned that the lysines of sarcomeric proteins might be less accessible when packed in supermolecular complexes, and therefore less likely to undergo biotinylation. To determine whether BioID2 is functional in cardiomyocytes of adult zebrafish, we generated a transgenic line with a cassette encoding BirA2 fused to GFP and placed downstream of the myosin light chain 7 (cmlc2, or mlc7) promoter (Figure 1A,\u00a0B). BirA2-GFP was readily detected in adult zebrafish cardiac chambers, where it was distributed throughout the cytoplasm and nuclei of adult cardiomyocytes (Figure 1B). To test whether BirA2 expressed in this manner biotinylates the cardiomyocyte proteome, we supplied biotin either in the aquarium water or via intraperitoneal injections over three consecutive days. We found that\u00a0effective protein biotinylation occurred only when biotin was delivered by injection (Figure 1D,\u00a0E, Figure 1\u2014figure supplement 1A\u2013E). Thus, transgenic BioID2 systems can biotinylate proteins in cardiomyocytes of adult zebrafish.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of a zebrafish heart. The heart consists of a ventricle, atrium, and outflow tract. (B) BirA2-GFP is expressed in cardiomyocytes via the cmlc2 promoter. Section of ventricle from cmlc2:birA2-GFP transgenic animal. BirA2 is distributed throughout the cardiomyocytes, including the nucleus. DAPI staining and native GFP signal are shown. (C) BirA2-GFP-CAAX is expressed in cardiomyocytes via the cmlc2 promoter. Section of ventricle from cmlc2:bira2-GFP-CAAX transgenic animal. The CAAX-tag localizes BirA2 to the membranes of cardiomyocytes. (D) Timeline of biotin administration by intraperitoneal injections (IP injections). (E) Western blot analysis of biotinylation activity of BirA2-GFP-expressing ventricles. BirA2 is functional and biotinylates sufficiently after three daily biotin injections. Endogenous biotinylated carboxylase was detected in untreated and biotin-treated hearts. (F) Western blot analysis of BirA2-GFP-CAAX-expressing ventricles. BirA2 is functional and biotinylates sufficiently after three daily injections with biotin. WT: wild\u00a0type. (G) Schematic summary of BioID2 assay on uninjured zebrafish hearts. (H) Over-representation test for cellular components. BioID2 for BirA-GFP-CAAX enriches for membrane-associated proteins. 343 total proteins were gated at a 2.5-fold change when normalized to BirA-GFP. p<0.001, false discovery rate (FDR) < 0.015%. dpt: days post treatment. Scale bar in images, 50 \u03bcm; magnification scale bar: 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013E) Immunofluorescence images of sections of ventricles with native BirA2-GFP signal, stained for DAPI (nuclei). Animals were injected intraperitoneally with biotin for 1, 2, 3, or 4 days. dpt:\u00a0days post treatment. Scale bar: 50 \u00b5m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) BirA2-GFP-CAAX is expressed in cardiomyocytes via the cmlc2 promoter. (B) BirA2-GFP-CAAX is localized to the cell membrane. Membrane staining with wheat germ agglutinin showed colocalization with the BirA2-GFP-CAAX signal. Scale bar: 10 \u00b5m. (C\u2013G) Immunofluorescence images of sections of ventricles with native BirA2-GFP-CAAX signal stained for DAPI. Animals were injected intraperitoneally with biotin for 1, 2, 3, or 4 days. dpt: days post treatment. Scale bar: 50 \u00b5m.\n\nTo test whether BioID2 can detect proteins that are compartmentalized in cardiomyocytes, we generated transgenic zebrafish with BirA2-GFP expected to be localized to membranes via a CAAX motif (Figure 1A,\u00a0C). We found that the majority of BirA2-GFP-CAAX signal associated with the cardiomyocyte plasma membrane in cmlc2:birA2-GFP-CAAX hearts (Figure 1C, Figure 1\u2014figure supplement 2A,\u00a0B). Although BirA2-GFP-CAAX was enriched at membranes, direct staining for biotin revealed signals at membranes and cytosol, suggesting release of labeled proteins from the membrane over the 3-day incubation period (Figure 1D\u2013F, Figure 1\u2014figure supplement 2C\u2013G). To capture the membrane proteome of cardiomyocytes, we conducted the BioID2 assay on adult cmlc2:bira2-GFP or cmlc2:bira2-GFP-CAAX hearts (Figure 1G). Quantitative BioID2 analysis captured 1113 distinct proteins, of which 343 proteins showed a 2.5-fold enrichment in BirA2-CAAX samples when compared to BirA2-GFP samples (Supplementary file 1). The threshold of 2.5-fold has previously been used in in vivo BioID2 studies in mice (Uezu et al., 2016). Gene ontology analysis for cellular components of the 343 proteins revealed enrichment for proteins associated with cellular junctions, plasma membrane, and membrane-bound organelles (Figure 1H). Taken together, our results indicate that in vivo proximity labeling using BioID2 is functional in zebrafish and can profile proteomes of highly specialized cells like cardiomyocytes.\n\n### BioID2 detects proteome changes in cardiomyocytes during heart regeneration\n\nTo capture the changes in the protein network of cardiomyocytes during regeneration, we combined our BirA2 system with a transgenic system to ablate\u00a0~60% of cardiomyocytes through the tamoxifen (4-HT)-inducible expression of a Cre-induced diphtheria toxin A gene (Wang et al., 2011). We injected biotin for 3 days and collected hearts at 14 days post incubation (dpi), followed by purification of the biotinylated proteome (Figure 2A,\u00a0B). Proliferation of cardiomyocytes in this injury model is most prominent around 7 dpi, with regeneration of the myocardium essentially complete by 28 dpi (Figure 2\u2014figure supplement 1A\u2013C). We assessed cmlc2:bira2-GFP hearts in two different conditions, uninjured (treated with 4-HT but no CreER transgene) and 14 dpi. Quantitative mass spectrometry analysis of pooled samples revealed that 208 proteins showed a 1.5-fold or greater change during regeneration when compared to uninjured hearts (Figure 2D, Supplementary file 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic overview of experimental workflow. cmlc2:birA2-GFP or cmlc2:bira2-GFP-CAAX ventricles were collected as uninjured samples or 14 days after induced cardiomyocyte ablation (dpi). (B) Timeline of injury and biotin injections. (C) Venn diagram comparing proteins captured by either the whole-cell BioID2 assay or the membrane BioID2 data set that display at least a 1.5-fold change. (D) Summary of BioID2 analysis of cmlc2:birA2-GFP hearts during regeneration. Left: heat\u00a0map of proteins found in triplicates of quantitative mass spectrometry analysis. 208 proteins displayed a 1.5-fold change during regeneration when compared to uninjured hearts (p<0.05). Of these, most protein levels increase during heart regeneration. Protein level changes in log10 scale. Right: gene ontology analysis of BirA2-GFP BioID2 data set. Over-representation test of biological processes for at least 1.5-fold increased (yellow) and at least 1.5-fold decreased proteins (blue). Fold enrichment is shown, and\u00a0protein number is indicated in red. p<0.001, FDR\u00a0<\u00a00.04%. (E) Summary of BioID2 on cmlc2:bira2-GFP-CAAX hearts. Left: heat\u00a0map of proteins found in triplicates of quantitative mass spectrometry analysis. 173 proteins displayed an at least 1.5-fold change when compared to uninjured hearts (p<0.05). Of these, most proteins decreased at the membrane during heart regeneration. Right: gene ontology analysis of BirA2-GFP-CAAX BioID2 data set. p<0.001, FDR\u00a0<\u00a00.05%. (F) Heat map of proteins that have been identified in the BioID2 whole-cell and membrane data sets and that display opposing changes in levels. Those shown changed at least 1.5-fold, p<0.05. Heat map summarizes fold changes measured in three separate pooled samples. (G) Immunofluorescence against indicated proteins in ventricles. Epb41l5 is localized to the plasma membrane (marked by wheat germ agglutinin [WGA] staining) in uninjured hearts, with cytoplasmic fluorescence signals increasing during regeneration of resected tissue (14 days post amputation\u00a0[dpa]). (H) Seta is poorly detected in uninjured hearts, rising 7 days after resection injury in the epicardium and compact layer of the heart. Seta localizes around the nucleus and colocalizes with the membrane marker WGA. Scale bar in images, 50 \u03bcm; magnification scale bar: 10 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Immunofluorescence images of sections of ventricles of fish expressing BirA2-GFP crossed to the Z-CAT cardiomyocyte ablation model (Wang et al., 2011). Animals were treated with 4-HT to induce expression of diphtheria toxin\u00a0(DTA) toxin. Ventricles were stained for DAPI, actin, and biotin. Scale bar: 50 \u00b5m. (D) Top 10% and bottom 10% of proteins that were captured in the whole-cell BioID2 assay and show the largest changes in levels after injury in BirA2-GFP; Z-CAT fish. Heat map summarizes fold changes measured in three separate pooled samples.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013D) The 14 days\u00a0post incubation\u00a0(dpi) BirA2-GFP BioID2 data\u00a0set (normalized to uninjured, p<0.05) was compared to three RNA-seq data\u00a0sets (Wu et al., 2016; Kang et al., 2016; Ben-Yair et al., 2019) and one ChIP-seq (H3.3) data\u00a0set (Goldman et al., 2017). For RNA-seq data\u00a0sets (A\u2013C), expression levels have been normalized to uninjured controls and genes with differences of significance p<0.05 were considered. (A) RNA-seq data\u00a0set from Kang et al., 2016, where 14 dpi whole hearts were used. 37 genes were identified in both data\u00a0sets, with a correlation coefficient r\u00a0=\u00a00.39. (B) RNA-seq data\u00a0set from Ben-Yair et al., 2019, in which purified gata4-expressing cells were examined for transcriptome changes at 5\u00a0dpa. 75 genes were represented in both data\u00a0sets, with a correlation coefficient r\u00a0=\u00a00.18. (C) RNA-seq data set from Wu et al., 2016, where 7 days post cryoinjury whole hearts (border zone) were used. 160 genes were identified among both data\u00a0sets, with a correlation coefficient r\u00a0=\u00a00.2. (D) ChIP-seq data\u00a0set from Goldman et al., 2017, in which genes with changes in enrichment for a cardiomyocyte-restricted, tagged H3.3 protein at promoters were used in comparison. Promoters were defined as between 5 kb upstream and 2 kb downstream from the gene start site. FDR\u00a0<\u00a00.05 for significant differential sites, and p<0.05. 30\u00a0genes were identified among both data\u00a0sets.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A\u2013C) Immunofluorescence images of sections of ventricles of fish expressing BirA2-GFP-CAAX crossed to the Z-CAT ablation model (Wang et al., 2011). Animals were treated with tamoxifen to induce expression of DTA toxin. Ventricles were stained for DAPI, actin, and biotin. Scale bar: 50 \u00b5m. (D) Top 10% and bottom 10% of proteins that were captured in the whole-cell BioID2 assay and show the largest changes in levels after injury. Heat map summarizes fold changes measured in three separate pooled samples.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Heat map of proteins identified in the BioID2 whole-cell and membrane data\u00a0sets that display opposing changes in levels. Changes 1.5-fold or greater with p<0.05. Log10 scale is used. Heat map summarizes fold changes measured in three separate pooled samples. (B,C) Immunofluorescence for indicated proteins in ventricular sections. (B) Talin 2 levels are low and display a punctate distribution in the uninjured heart. During regeneration, Talin levels rise in the cytoplasm. (C) Seta-positive cells are localized to the compact layer and epicardium in 14 days\u00a0post incubation hearts injured by the Z-CAT ablation model. Scale bars: 50 \u03bcm; magnification scale bar: 10 \u03bcm.\n\nIt is common in proximity labeling assays to normalize levels of the protein of interest to those of a diffuse BirA2-labeled protein. However, this requires a high threshold for protein changes to avoid false positives, diminishing the gating of proteins with subtle fold changes. Normalizing the regenerating heart data\u00a0set of a transgenic strain to the uninjured control of the same strain allowed a low threshold. Gene ontology analysis (over-representation test) for biological processes characterized the proteins with increased levels during regeneration in the whole-cell BioID2 set as involved in wound healing, cardiac development, muscle cell differentiation, and response to wounding, whereas decreased proteins were enriched for metabolites and energy precursors (Figure 2D). The latter category includes the generation of ADP to ATP and oxidative phosphorylation, implying that these processes are dampened during dedifferentiation and proliferation of cardiomyocytes, as suggested by recent publications (Honkoop et al., 2019; Fukuda et al., 2019). The top 10% of increased proteins included ErbB2 and the mTOR signaling protein Rictora (Figure 2\u2014figure supplement 1D), each previously implicated in heart regeneration (Gemberling et al., 2015; Sciarretta et al., 2015). We compared the BioID2 data\u00a0set to published RNA-seq or ChIP-seq data\u00a0sets, which each identified a much greater number of differential products than BioID2 (Goldman et al., 2017; Rudolph et al., 2020; Kang et al., 2016; Ben-Yair et al., 2019). Correlations were generally weak, with the highest being an RNA-seq data\u00a0set from 14 dpi hearts at r\u00a0=\u00a00.39 (Figure 2\u2014figure supplement 2A\u2013D;\u00a0Kang et al., 2016). We suspect that any post-transcriptional regulation incorporated in BioID2 data contributes to these weak correlations. Beyond this, there are several possible technical explanations, including differences in assessed timepoints, injury models, and cell types, and limitations of BioID2 in capturing targets. Regardless, our results indicate that proximity labeling with BirA2 can identify biological processes that are involved in tissue regeneration and proteins that have been reported to regulate cardiac repair.\n\nTo investigate how the membrane proteome changes after heart injury, we examined cmlc2:bira2-GFP-CAAX samples at 14 dpi (Figure 2A,\u00a0B, Figure 2\u2014figure supplement 3A\u2013C). We identified 173 proteins with a 1.5-fold or greater change in membrane-associated proteins during regeneration when normalized to uninjured hearts (Figure 2C,\u00a0E, Supplementary file 3), with the majority of these proteins reducing presence during regeneration. This contrasts with BirA2-GFP samples, which showed more proteins increasing levels during regeneration than those decreasing (Figure 2D vs. Figure 2E). Proteins with reduced membrane levels during regeneration showed over-representation of involvement in transmembrane transport, muscle development, and energy production (electron transport and glycolysis), while proteins increased at the membrane during regeneration were involved in protein complex assembly and organelle organization (Figure 2E). Intracellular restructuring is known to occur in dividing cardiomyocytes (Uribe et al., 2018). Upon comparison of the top and bottom 10% of the membrane profiling data with BirA2-GFP data (Figure 2\u2014figure supplement 3D vs. Figure 2\u2014figure supplement 1D), very few proteins were found in both data\u00a0sets, suggesting specificity of the membrane BioID2 data.\n\nComparison of proteins found in BirA2-GFP and BirA2-GFP-CAAX data\u00a0sets identified 44 shared proteins (Figure 2C). Of these, 16 proteins showed opposing changes in levels at the membrane or in the whole cell (Figure 2F). To visualize dynamism of proteins for which there were available candidate antibodies during regeneration, we assessed some of these proteins by immunofluorescence in a model of regeneration in which\u00a0~20% of the ventricle is resected (Poss et al., 2002). Erythrocyte membrane protein band 4.1 like 5 (Epb41l5) is involved in animal organ development and has been implicated as a positive regulator of Notch signaling, a pathway involved in heart regeneration (Matsuda et al., 2016; Zhao et al., 2014,\u00a0Figure 2F,\u00a0G). Epb41l5 was predominantly localized at the plasma membrane (Figure 2G, arrows) and increased presence throughout cardiomyocytes during regeneration, consistent with the BioID2 data. Talin\u00a02, an adapter protein that couples integrin focal adhesions to the actin cytoskeleton (Figure 2\u2014figure supplement 4A,\u00a0B), displayed low levels in uninjured hearts (Figure 2\u2014figure supplement 4B). Upon injury, Talin\u00a02 levels increased near the wound site as well as in ventricular muscle away from the injury, with a punctate pattern appearing that resembled focal adhesions (Figure 2\u2014figure supplement 4B). These results are consistent with a remodeling of focal adhesions during myocardial stress induction that has been reported for Talin 1 (Manso et al., 2013). To assess BioID2 results implicating proteins that increase levels at the cell membrane during regeneration, we identified antibodies against SET nuclear proto-oncogene a (Seta), which is involved in nucleosome assembly (Figure 2F,\u00a0H, Figure 2\u2014figure supplement 4A,\u00a0C). Seta levels were undetectable in uninjured hearts, yet became prominent in compact muscle and epicardial tissue in injured ventricles (Figure 2H, Figure 2\u2014figure supplement 4C). The Seta signal was perinuclear and colocalized with wheat germ agglutinin (WGA), which indicates that Seta associates in part with the nuclear membrane and endomembranes after heart injury (Figure 2H, arrows, Figure 2\u2014figure supplement 4C). As Seta has been proposed to silence histone acetyltransferase-dependent transcription, its recruitment to nuclear and endomembranes could impact this function (Seo et al., 2001). Taken together, our data indicate that BioID2 can capture changes in the proteomes of cardiomyocytes during heart regeneration, providing a resource for candidate effectors.\n\n### Rho A interacts with ErbB2 during heart regeneration\n\nNrg1 ligand has been reported to bind its receptor ErbB4 on cardiomyocytes, causing heterodimerization of Erbb4 and its co-receptor ErbB2\u00a0(Bersell et al., 2009; Harskamp et al., 2016). To probe the network of ErbB2\u00a0signaling during heart regeneration in zebrafish, we generated the transgenic line cmlc2:erbb2-birA2-HA-P2A-GFP (Figure 3A), with BirA2 fused to the C-terminus of ErbB2. We detected ErbB2-BirA2-HA via western blotting analysis, although we could not visualize it by immunofluorescence (Figure 3\u2014figure supplement 1A). We also detected biotinylation of cardiac proteins in this line in the presence of injected biotin (Figure 3\u2014figure supplement 1A). To assess dynamic ErbB2 networks during heart regeneration, we crossed cmlc2:erbb2-birA2-HA-P2A-GFP with Z-CAT animals to ablate cardiomyocytes as described above and collected ventricles at 14 dpi (Figure 3B, Figure 3\u2014figure supplement 1B\u2013D). Quantitative mass spectrometry analysis identified 667 proteins, of which 108 showed a >1.5-fold change during regeneration when normalized to uninjured control hearts (Supplementary file 4). Using STRING and BioGRID databases, we identified nine known ErbB2 interactors in our data\u00a0set. Three of these proteins showed increased association with ErbB2 during regeneration, whereas two had decreased association (Figure 3C, yellow and blue circles, respectively). Next, we examined the levels of these candidates as reported in published transcriptome and proteome data\u00a0sets (Goldman et al., 2017; Wang et al., 2013; Ma et al., 2018; Kang et al., 2016; Ben-Yair et al., 2019), and found that overall expression levels were not predictive of ErbB2 association (Supplementary file 5). ErbB4, encoded by erbb4a and b paralogs, was not detected in any of the BioID2 data\u00a0sets, which might either indicate that ErbB4 does not associate with ErbB2 in the zebrafish heart, or that their C-terminal regions are not in close proximity, or a limitation in sensitivity of the assays. The strongest detected increase was an association with the Rho GTPase Rho A-b, and pathway analyses indicated enrichment for proteins involved in cytoskeletal regulation by Rho GTPases (Figure 3C,\u00a0D). Rho A activation by ErbB2 has been previously reported to promote pro-metastatic and invasive behavior of human breast cancer\u00a0cells and contribute to mammary adenocarcinoma tumorigenesis (Brantley-Sieders et al., 2008; Worzfeld et al., 2012). Moreover, a recent study implicated Rho A mislocalization with aberrant spindle orientation leading to binucleation, a common feature of mammalian CMs that is thought to inhibit cardiomyocytes\u00a0(CM) proliferation (Leone et al., 2018). To test whether ErbB2-Rho A association is increased during regeneration, we conducted co-immunoprecipitations (Figure 3E). Interestingly, Rho A was pulled down with ErbB2-BirA2-HA in regenerating heart samples, but not from uninjured myocardium, suggesting a context-dependent association (Figure 3E). Due to their high conservation, we were unable to identify which of the Rho A proteins, Rho A-a, Rho A-b, or Rho A-c, increased its association with ErbB2 (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig3-v2.jpg)\n\n**Figure 3.:** (A) ErbB2-BirA2-HA-P2A-GFP is expressed in cardiomyocytes via the cmlc2 promoter. (B) Summary of experiment and timeline. cmlc2:erbb2-birA2-HA-P2A-GFP ventricles were collected as uninjured samples or 14 days after induced cardiomyocyte ablation (dpi). (C) Known direct interactors of ErbB2 that were captured in the ErbB2 BioID2 assay. 108 proteins showed a change >1.5-fold when normalized to uninjured cmlc2:erbb2-birA2-HA-P2A-GFP ventricles. These data were analyzed for known ErbB2 interactors. Colors and size of interactor correspond to fold changes identified during regeneration. Green: no change; blue: levels decrease; yellow: levels increase. Tns1:\u00a0tensin\u00a01 (1.57-fold); Hspb2: heat shock protein beta 2 (\u22122.43-fold); Gapdh: glyceraldehyde 3-phosphate dehydrogenase (p>0.05); Acta1b: actin alpha 1 (p>0.05); Ezrb: ezrin b (p>0.05); Ctnnd1: catenin \u03b41 (\u22124.59-fold); RhoA-b: Rho A-b (13-fold); Scrib: scribble (p>0.05); Anxa2a: annexin A2a (7.31-fold). (D) Over-representation test \u2013 pathway analysis of proteins increased 1.5-fold or more in ErbB2-BirA data set. p<0.001, FDR\u00a0<\u00a00.005%. Fold enrichment is shown, and\u00a0protein number in red. (E) Co-immunoprecipitation of ErbB2-BirA2-HA from uninjured or regenerating cmlc2:erbb2-birA2-HA-P2A-GFP hearts. Rho A association with ErbB2 is increased after injury. Anti-HA antibody was used for ErbB2 detection, and\u00a0troponin T and IgG were used as loading controls. (F) Analysis of known Rho A interactors in BirA2-GFP BioID2 data set. All known direct interactors were found to be increased when normalized to uninjured hearts. Size of circles indicates fold change; proteins are sorted clockwise after fold change from high to low. Scrib:\u00a0scribble (90.9-fold); ErbB2: Erb-b2 receptor tyrosine kinase 2 (52.9-fold); Gna13: guanine nucleotide binding protein alpha 13a (25.8-fold); Rtn4a: reticulon 4a (8.82-fold); ROCK2a: Rho-associated, coiled-coil containing protein kinase 2a (5.05-fold); Ilk: integrin-linked kinase (3.91-fold); Pfn1: profilin 1 (3.25-fold); Arhgap21b: Rho GTPase activating protein 21b (2.65-fold); Wasla: WASP-like actin nucleation promoting factor a (2.5-fold); Lrp5: low-density lipoprotein receptor-related protein 5 (2.21-fold); Ctnnd1: catenin \u03b41 (2.2-fold); Msna: moesin a (1.9-fold). (G) Western blot analysis of ROCK2 levels in uninjured and regenerating hearts. ROCK2 levels are increased during heart regeneration.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Western blot analysis of ErbB2-BirA2-HA assessed for biotin and Human influenza hemagglutinin tag (ammino acids 98-106)\u00a0(HA) in zebrafish expressing cmlc2:erbb2-birA2-HA-P2A-GFP. Troponin T is used as a loading control. (B\u2013D) Immunofluorescence images of sections of ventricles of fish expressing ErbB2-BirA2-HA crossed to the Z-CAT ablation model. Animals were treated with tamoxifen to induce expression of DTA toxin. Ventricle were stained for DAPI, actin, and biotin. Scale bar: 50 \u00b5m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The Rho A antibody immunogen (human Rho A 120aa \u2013 150aa) shows the highest conservation with Rho A-b. aa: amino acids.\n\nAs many direct interactors of Rho A have been identified, we searched our data\u00a0set of whole cardiomyocyte changes at 14 dpi for these proteins. Levels of myocardial Rho A proteins detected by BioID2 were similar in uninjured and regenerating hearts. Yet, all known Rho A interactors detected in our cmlc2:birA2-GFP data set showed elevated levels after injury, including ErbB2 (59.2-fold; Figure 3F). Most of the detected Rho A interactors are involved in cytoskeletal organization such as moesin a, WASP-like actin nucleation promoting factor a, profilin 1, catenin \u03b41, and ROCK2a, or cell adhesion such as scribble and integrin-linked kinase (Figure 3F). The signal transducer Rho GTPase activating protein 21b, the guanine nucleotide binding protein (G protein) alpha 13a, which is involved in the\u00a0formation of heart fields, and reticulon 4a, which plays a role in epithelial mesenchymal transition\u00a0(EMT)\u00a0transition, were also found to be increased after injury in the whole-cell BioID2 data set (Figure 3F,\u00a0Ye et al., 2015; Zhao et al., 2015). Rho A signaling is known to facilitate cytoskeletal changes via Rho-associated protein kinases (ROCK), which have been reported to regulate the DNA binding activity of the cardiogenic transcription factor Gata4 and nuclear localization of SRF in cell culture (Kaarbo et al., 2013; Liu et al., 2003; Yanazume et al., 2002). ROCK2a levels were elevated in our whole-cell BioID2 data\u00a0set, further confirmed by western blotting (Figure 3G), consistent with the idea that ErbB2\u2013Rho A association could impact ROCK2 levels in cardiomyocytes after injury. Thus, BioID2 interrogation of the co-receptor ErbB2 captured the network of ErbB2 during heart regeneration, a potential resource to uncover novel ErbB2-interacting proteins, and revealed increased association of Rho A and ErbB2 in regenerating cardiomyocytes.\n\n### Rho A activity is essential for injury- and mitogen-stimulated cardiomyocyte proliferation\n\nTo evaluate a potential role for Rho A signaling during cardiac repair, we treated zebrafish with the Rho A inhibitor Rhosin for three consecutive days after partial ventricular resection and assessed indicators of cardiomyocyte proliferation (Figure 4A,\u00a0B; Miranda-Rodr\u00edguez et al., 2017). In these experiments, Rhosin reduced the proliferation index by\u00a0~68% (Figure 4C). To test whether regeneration is inhibited or delayed when Rho A signaling is blocked, we generated a transgenic line that enables tamoxifen-inducible expression of a dominant-negative Rho A cassette in cardiomyocytes. (Figure 4F, top panel). In animals expressing a dominant-negative Rho A for 30 days after resection (Figure 4F), injury sites remained deficient in cardiac myofibers, whereas in control hearts had re-established a contiguous wall of muscle (Figure 4F). Proteomic analyses of our whole-cell BioID2 data\u00a0set also implicated the small GTPases Rac1 and Cdc42 in heart regeneration; although protein levels remained unchanged, pathway analyses showed enrichment for signaling by Rho GTPases and its effectors (Figure 4D,\u00a0E). Similar to Rho A, the interactome maps of Rac1b and Cdc42 revealed many known interactors increased in the whole-cell data\u00a0set after injury (Figure 4\u2014figure supplement 1A,\u00a0B). Using inducible dominant-negative gene cassettes in transgenic animals, we found that Rac1 and Cdc42 are similarly required for normal heart regeneration (Figure 4F, middle and bottom panels). We also observed tendencies for lowered cardiomyocyte proliferation in each transgenic background at 7 days after resection of the ventricular apex (Figure 4G). Thus, our data implicate each member of the small GTPase trio \u2013 Rho A, Rac1, and Cdc42 \u2013 in zebrafish heart regeneration.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig4-v2.jpg)\n\n**Figure 4.:** (A) Timeline of experiment for inhibiting Rho A function in 14 dpa hearts. (B) Immunofluorescence images of sections of 14 dpa ventricles vehicle or Rhosin treated and stained for EdU incorporation, an indicator of cardiomyocyte proliferation. Mef2 staining marks cardiomyocyte nuclei. Dashed line, approximate resection plane. Arrowheads, Mef2+/EdU+ cardiomyocytes. (C) Quantification of Mef2/EdU assays. Inhibition of Rho A by Rhosin reduces cardiomyocyte (CM) proliferation. n\u00a0=\u00a05 animals for each condition, two independent experiments. Data show mean \u00b1 SEM. (Mann\u2013Whitney U test). (D) Heat map of indicated proteins from the whole-cell BioID2 data set. Of these, only levels of ROCK2a changed consistently (5.1-fold; p<0.05) during regeneration. (E) Over-representation test of reactome pathways. Signaling and effectors of Rho GTPases were found to be over-represented. Fold enrichment as indicated, and\u00a0protein number in red. p<0.001, FDR\u00a0<\u00a00.02%. (F) Myosin heavy chain\u00a0(MHC) (green) staining ventricles from animals with induced myocardial-specific dominant-negative Rac, Rho, or Cdc42, along with vehicle-treated ventricles, at 30 dpa. Five to eight animals were assessed in each group treated with vehicle, with none of these animals displaying regeneration defects. Four of five ventricles with induced dominant-negative Rac1, and all ventricles with induced dominant-negative Rho A (n\u00a0=\u00a07/7), or Cdc42 (n\u00a0=\u00a09/9), showed obvious areas of missing myocardium. Fisher\u2013Irwin exact test, p<0.05. Dashed line, approximate resection plane. Scale bars, 50 \u00b5m. (G) Quantification of cardiomyocyte proliferation by Mef2/Proliferating cell nuclear antigen\u00a0(PCNA) staining of n\u00a0=\u00a04 animals for each condition. Data show mean \u00b1 SEM. (Mann\u2013Whitney U test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Analysis of known Rac1b interactors in cmlc2:birA2-GFP BioID2 data set. Except for Jupb, all known interactors were found to be increased during heart regeneration. Size of circles indicate fold change. Proteins are sorted clockwise after fold change from high to low. Gna13: guanine nucleotide binding protein alpha 13a (25.8-fold); Gab1: GRB2-associated binding protein 1 (8.34-fold); Ephb2: ephrin receptor B2 (5.72-fold); Pfn1: profilin 1 (3.25-fold); Arhgap21b: Rho GTPase activating protein 21b (2.65-fold); Wasla: WASP-like actin nucleation promoting factor a (2.5-fold); Ctnnd1: catenin \u03b41 (2.2-fold); Ctnna1: catenin \u03b11 (1.68-fold); Flii: flightless I actin remodeling protein (1.72-fold); Jupb: junctional plakoglobin b (\u2212192-fold). (B) Analysis of known Cdc42 interactors in cmlc2:birA2-GFP BioID2 data set. See (A) for fold changes of proteins found also in Rac1b interactome. Mapre1b: microtubule-associated protein EB 1b (200-fold); Anxa2a: annexin A2a (20.5-fold); Tln1: Talin 1 (7.56-fold); ROCK2a: Rho-associated, coiled-coil containing protein kinase 2a (5.05-fold); Ilk: integrin-linked kinase (3.91-fold); Msna: moesin a (1.9-fold).\n\nTo further test whether Rho A function is required for the effects of ErbB2 signaling, we used transgenic fish enabling tamoxifen-inducible overexpression of Nrg1 ligand in cardiomyocytes (Figure 5A;\u00a0Gemberling et al., 2015). Depending on the duration of Nrg1 overexpression, these animals display overt cardiomyocyte hyperplasia and thickening of the ventricular wall (Figure 5C;\u00a0Gemberling et al., 2015). We examined Rho A levels from hearts that ectopically expressed Nrg1 for 14 days, and unlike during ablation-induced heart regeneration where Rho A levels are unchanged, we found an\u00a0~85% increase in total Rho A protein (Figure 5\u2014figure supplement 1A,mB). Consistent with a mitogenic role, three daily injections of zebrafish with Rhosin reduced the cardiomyocyte proliferation index by\u00a0~71% in the presence of ectopic Nrg1 expression (Figure 5B\u2013D). To examine whether Rho A is key for the activity of other cardiomyocyte mitogens, we tested Rho A levels and the effects of its inhibition during tamoxifen-induced myocardial vegfaa overexpression or cardiomyocyte proliferation induced by the vitamin D analog alfacalcidol (Figure 5A,\u00a0B). Western blot analysis revealed that vegfaa-expressing hearts had elevated cardiac Rho A levels, whereas alfacalcidol-treated hearts displayed no significant change (Figure 5\u2014figure supplement 1A,\u00a0B). Inhibition of Rho A by Rhosin reduced cardiomyocyte proliferation by\u00a0~68% and\u00a0~65% during vegfaa overexpression and alfacalcidol treatment, respectively (Figure 5E\u2013H). Thus, our data indicate that Rho A signaling is a major target during heart regeneration, required for normal cardiomyocyte proliferation in response to injury or presence of Nrg1, Vegfaa, or vitamin D.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig5-v2.jpg)\n\n**Figure 5.:** (A) Summary of transgenic animals used in Rho A inhibition experiments. (B) Timeline of experiments for Nrg1-overexpression (OE, blue), Vegfaa-OE (red), and alfacalcidol treatment (orange). (C, E, G) Immunofluorescence images of ventricles stained for Mef2/EdU from animals overexpressing Nrg1 (C) or Vegfaa (E) in cardiomyocytes, or injected with alfacalcidol (G). Hearts were treated with either vehicle or Rhosin. Scale bar, 50 \u03bcm. (D, F, H) Inhibition of Rho A by Rhosin reduces cardiomyocyte (CM) proliferation. Quantification of Mef2/EdU staining. Five to six animals were assessed for each group in two independent experiments. Data show mean \u00b1 SEM (Mann\u2013Whitney U test).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66079/elife-66079-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Western blot analysis of Rho A levels in ventricles of zebrafish with Nrg1-overexpression\u00a0(OE), Vegfaa-OE, or vitamin D receptor activation via alfacalcidol. (B) Quantification of western blot shown in (A). In untreated hearts, Rho A levels were set to 100%. Levels were normalized to loading control GAPDH.\n\nAssessment of published single-cell RNA-seq data revealed detectable rhoaa expression in cardiomyocytes, endothelial cells, fibroblasts, and immune cells, and rhoab expression in cardiomyocytes and endothelial cells during zebrafish heart regeneration (Supplementary file 6; Honkoop et al., 2019). Additionally, published profiles of cardiomyocyte H3.3 occupancy (Goldman et al., 2017), an indicator of active gene expression, indicate an\u00a0approximately\u00a0twofold increase in H3.3 enrichment in rhoaa and rhoab gene bodies during heart regeneration (Supplementary file 6). Generation of RNA-seq data from ventricles of transgenic animals after 7 days of induced myocardial Nrg1 overexpression (see Materials\u00a0and\u00a0methods) revealed that rhoaa levels were weakly elevated (1.6-fold), whereas no changes in rhoab or rhoac were detectable (Supplementary file 6). Thus, rhoaa and rhoab are top candidates for Rho A function in cardiomyocytes, although conditional disruption of the rhoa genes in zebrafish is needed to distinguish which member(s) is key.\n\n### Conclusions\n\nHere, we have applied the proximity labeling technique BioID2 to investigate cell-type-specific proteome changes during a key model for innate tissue regeneration, the renewal of cardiomyocytes upon massive injury to the zebrafish heart. We identified changes specific to cardiomyocytes at the levels of whole-cell, membrane compartment, and the molecular interface of a key pro-regenerative factor ErbB2. Our profiling and functional experiments implicate the GTPase Rho A as mediating the effects of Nrg1 and other mitogens in cardiomyocytes during regeneration and provide a resource for which other candidate regenerative effectors can be assessed. We expect that BioID2 and evolved iterations can be effectively applied in myriad ways to monitor proteome changes during dynamic developmental events like regeneration in many species, tissues, and injury contexts to provide high-resolution insights into essential networks of regeneration.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>BirA2-GFP</td>\n      <td>This paper</td>\n      <td>Tg(cmlc2:birA2-GFP)pd335</td>\n      <td>Transgenic line maintained in K. Poss lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>BirA2-GFP-CAAX</td>\n      <td>This paper</td>\n      <td>Tg(cmlc2:birA2-GFP-CAAX)pd336</td>\n      <td>Transgenic line maintained in K. Poss lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>ErbB2-BirA2-HA-P2A-GFP</td>\n      <td>This paper</td>\n      <td>Tg(erbb2-birA2-HA-P2A-GFP)pd337</td>\n      <td>Transgenic line maintained in K. Poss lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>DN-RhoA</td>\n      <td>This paper</td>\n      <td>Tg(\u03b2actin2:loxp-BFP-STOP-loxp-DN-Rho)pd68</td>\n      <td>Transgenic line no longer maintained</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>DN-Rac1</td>\n      <td>This paper</td>\n      <td>Tg(\u03b2actin2:loxp-BFP-STOP-loxp-DN-Rac1)pd69</td>\n      <td>Transgenic line no longer maintained</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>DN-Cdc42</td>\n      <td>This paper</td>\n      <td>Tg(\u03b2actin2:loxp-BFP-STOP-loxp-DN-Cdc42)pd70</td>\n      <td>Transgenic line no longer maintained</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>CreER</td>\n      <td>Kikuchi et al., 2010</td>\n      <td>Tg(cmlc2:CreER)pd10</td>\n      <td>Transgenic line, K. Poss lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Nrg1</td>\n      <td>Gemberling et al., 2015</td>\n      <td>Tg(actb2:loxp-TagBFP-STOP-loxp-nrg1)pd107</td>\n      <td>Transgenic line, K. Poss lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Vegfaa</td>\n      <td>Karra et al., 2018</td>\n      <td>Tg(actb2:loxP-TagBFP-loxp-vegfaa)pd262</td>\n      <td>Transgenic line, K. Poss lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>CM ablation</td>\n      <td>Wang et al., 2011</td>\n      <td>Tg(actb2:loxp-mCherry-loxp-DipTox)pd36</td>\n      <td>Z-CAT cardiac myocyte ablation model, K. Poss lab</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mef2 (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#: ab197070</td>\n      <td>IF: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rho A (rabbit polyclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Cat#: 26C4</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-epb41L5 (rabbit polyclonal)</td>\n      <td>Proteintech</td>\n      <td>Cat#: RPL39</td>\n      <td>IF: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Talin 2 (rabbit polyclonal)</td>\n      <td>Boster Biological Technology</td>\n      <td>Cat#: PB9961</td>\n      <td>IF: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Seta (rabbit polyclonal)</td>\n      <td>Antibodies online</td>\n      <td>Cat#: ABIN2786762</td>\n      <td>IF: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ROCK2 (rabbit polyclonal)</td>\n      <td>Bioss Antibodies</td>\n      <td>Cat#: BS-1205R</td>\n      <td>IF: 1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#: ab9110</td>\n      <td>IF: 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CT3 (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>Cat#: CT3</td>\n      <td>IF: 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PCNA (mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>Cat#: P8825</td>\n      <td>IF: 1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MHC (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>Cat#: F59-S</td>\n      <td>IF: 1:200</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Rhosin</td>\n      <td>Calbiochem</td>\n      <td>Cat#:\u00a0555460</td>\n      <td>250 \u03bcM in 10 \u03bcl IP injections</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biotin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: B4501</td>\n      <td>0.5 mM in 10 \u03bcl IP injections</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EDU</td>\n      <td>Life Technology</td>\n      <td>Cat#: A10044</td>\n      <td>100 nM in 10 \u03bcl IP injections</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Alfacalcidol</td>\n      <td>Selleck Chemicals</td>\n      <td>Cat#: S1466</td>\n      <td>200 \u03bcM in 10 \u03bcl IP injections</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>BirA2-GFP</td>\n      <td>This paper</td>\n      <td>cmlc2:birA2-GFP</td>\n      <td>Plasmid used to generate transgenic line</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>BirA2-GFP-CAAX</td>\n      <td>This paper</td>\n      <td>cmlc2:birA2-GFP-CAAX</td>\n      <td>Plasmid used to generate transgenic line</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>ErbB2-BirA2-HA-P2A-GFP</td>\n      <td>This paper</td>\n      <td>cmlc2:erbb2-birA2-HA-P2A-GFP</td>\n      <td>Plasmid used to generate transgenic line</td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish\n\nWild-type or transgenic zebrafish of the hybrid EK/AB strain at 3\u20138 months of age were used for all experiments. All transgenic strains were analyzed as hemizygotes. Published transgenic strains used in this study were cmlc2:CreER (Tg(cmlc2:CreER)pd10) (Kikuchi et al., 2010), used with \u03b2-act2:BSnrg1 (Gemberling et al., 2015), \u03b2-act2:BSvegfaa (Karra et al., 2018), or \u03b2-actin2:loxp-mCherry-STOP-loxp-DTA (Wang et al., 2011). Tamoxifen treatment to deplete cardiomyocytes was performed as described previously (Wang et al., 2011) by incubating cmlc2:CreER; \u03b2actin2:loxp-mCherry-STOP-loxp-DTA (Z-CAT) animals in 0.7 \u03bcM tamoxifen (Sigma-Aldrich, St. Louis, MO) for 16 hr. Nrg1 and Vegfaa expression were induced as described by incubating adult cmlc2:CreER; \u03b2-act2:BSNrg1 or cmlc2:CreER; \u03b2-act2:BSVegfaa animals, respectively, in 5 \u03bcM tamoxifen for 24 hr. For expression of DN-Rho A, DN-Rac1 and DN-Cdc42, and Cre-negative animals were bathed in 5 \u03bcM 4-HT for 24 hr. For treatment with Rho A inhibitor, 5 \u03bcM of a 250 \u03bcm Rhosin (Miranda-Rodr\u00edguez et al., 2017) solution were injected on three consecutive days prior to harvest. Clutch mates were treated with vehicle. EdU injections were performed as described (Shoffner et al., 2020). Procedures involving animals were approved by the Institutional Animal Care and Use Committee at Duke University, Protocol number A005-21-01.\n\nGeneration of transgenic zebrafish birA2 (a gift from Scott Soderling) was subcloned into the cmlc2\u00a0vector (Kikuchi et al., 2010) into BamHI/NheI sites to generate cmlc2:birA2. To generate cmlc2:birA2-GFP, an EGFP cassette was subcloned downstream of BirA2 using NheI/EcoRI sites. A CAAX-tag was inserted into the EcoRI site to generate cmlc2:birA2-GFP-CAAX. erbb2 cDNA was amplified with the following primers (forward 5\u2032-GCCACCATGGAGGCGGACAGAAGTTT-3\u2032; reverse 5\u2032-TCAGGTGTACTCCTTGTGGCCG-3\u2032) and then subcloned into cmlc2-birA2 vector using the BsiWI/NruI sites. HA-P2A-GFP was then inserted into cmlc2:erbb2-birA2 by using NheI/XhoI sites to generate cmlc2:erbb2-birA2-HA-P2A-GFP. Mouse GFP-DN-Rho A (forward 5\u2032-ACCGCCATGGTGAGCAAGGGCGAAGAG-3\u2032, reverse 5\u2032- TCTGGTTGCCTTGTCTTGTGA-3\u2032), GFP-DN-Rac1 (forward 5\u2032-ACCGCCATGGTGAGCAAGGGCGAAGAG-3\u2032; reverse 5\u2032- GAAGAGAAAATGCCTGCTGTTGTAA-3\u2032), and GFP-DN-Cdc42 (forward 5\u2032-ACCGCCATGGTGAGCAAGGGCGAAGAG-3\u2032; reverse 5\u2032-CAACCCAAAAGGAAGTGCTGTATATTCTAA-3\u2032) were a gift from Scott Soderling and were each cloned into \u03b2actin2:loxp-dsRed-STOP-loxp vector (Yanazume et al., 2002) by using the AgeI/NotI sites. Each of these constructs was co-injected with I-Sce-I enzyme mix into one-cell-stage embryos. One founder of each construct was isolated, although they were not maintained as stable lines. The full names of the transgenic lines are as follows: Tg(cmlc2:birA2-GFP)pd335, Tg(cmlc2:birA2-GFP-CAAX)pd336, Tg(erbb2-birA2-HA-P2A-GFP)pd337, Tg(\u03b2actin2:loxp-BFP-STOP-loxp-DN-Rho)pd68, Tg(\u03b2actin2:loxp-BFP-STOP-loxp-DN-Rac)1pd69, and Tg(\u03b2actin2:loxp-BFP-STOP-loxp-DN-Cdc42)pd70.\n\n### BioID2 assay and quantitative mass spectrometry analysis\n\nTwenty hearts from adult zebrafish 3\u20138 months old were pooled for each sample, and triplicates were used for each condition. Prior to isolation of hearts, 10 \u03bcl of a 500 \u03bcM biotin/PBS solution was intraperitoneally (IP) injected into adult zebrafish on three consecutive days. Ventricle and outflow tract but not atrium were extracted, rinsed in cold PBS, and collected in ice-cold RIPA buffer. Using an Eppendorf tube pestle, hearts were lysed by 50 strokes, then flash frozen in EtOH/dry ice, incubated on ice for 15 min, and then again homogenized with 50 strokes of an Eppendorf tube pestle. Lysates were then centrifuged at 21,000 rpm for 20 min at 4\u00b0C. The supernatant was transferred to a new tube. Meanwhile, NeutrAvidin beads were pre-washed in keratin-free conditions in a laminar flow hood. 25\u201350 \u03bcl of bead slurry were pipetted into a low-protein-binding tube and spun down for 30 s at 2000 rpm at\u00a0room temperature (RT). Supernatant was removed with a 30 g needle attached to 1 ml syringe. Beads were washed five times with 500 ml RIPA buffer. Next, washed beads were resuspended in 100 \u03bcl RIPA buffer and added to each sample. Each tube was sealed with parafilm and incubated overnight with rotation in 4\u00b0C cold room. The next day, samples were centrifuged for 1 min at 3000 \u00d7 g at 4\u00b0C to pellet beads, and the supernatant was removed using a 30 g needle. 500 \u03bcl 2% SDS in 50 mM ammonium bicarbonate in MS-grade water was added to the bead pellet, and the mixture was transferred into a low-protein-binding tube. Beads were then washed (Goldman et al., 2017) twice with 500 \u03bcl 0.5% SDS in 50 mM ammonium bicarbonate (Hoang et al., 2020), twice with 1% Triton X-100/1% deoxycholate/25 mM LiCl in 50 mM ammonium bicarbonate (Johnson et al., 2020), twice with 0.5\u00a0M NaCl in 50 mM ammonium bicarbonate, and two times with 50 mM ammonium bicarbonate solution. For each wash step, 500 \u03bcl wash solution was used and samples were rocked for 10 min at RT. Samples were then centrifuged at 2000\u00a0\u00d7 g for 30 s at RT, and the supernatant was removed with a 30 g injection needle. To elute the biotinylated proteome, an elution buffer containing 2% SDS, 10% glycerol, 5% \u03b2-mercaptoethanol, and\u00a062.5 mM Tris pH 6.8 (NO bromophenol blue) in MS-grade water was prepared and biotin was added freshly to a final concentration of 2.5 mM. 50 \u03bcl elution buffer was added to the washed beads. Samples were boiled for 5 min at 95\u00b0C on a heat block. During the elution, samples were slowly vortexed three times. Next, samples were centrifuged for 30 s at 2000 \u00d7\u00a0g at RT, and the supernatant was carefully removed using a new 30 g needle attached to a 1 ml syringe and transferred to a new low-protein-binding tube. Samples were stored at \u221280\u00b0C until delivery to the Duke Proteomics and Metabolomics Shared Resource.\n\nSamples were reduced with 10 mM dithiolthreitol for 30 min at 80\u00b0C and alkylated with 20 mM iodoacetamide for 30 min at RT. Next, they were supplemented with 15 \u03bcl of 20% SDS in 50 mM TEAB, a final concentration of 1.2% phosphoric acid, and 555 \u03bcl of S-Trap (Protifi) binding buffer (90% MeOH/100 mM TEAB). Proteins were trapped on the S-Trap, digested using 20 ng/\u03bcl sequencing grade trypsin (Promega) for 1 hr at 47C, and eluted using 50 mM TEAB, followed by 0.2% formic acid\u00a0(FA), and lastly using 50% ACN/0.2% FA. All samples were then lyophilized and resuspended in 12 \u03bcl 1%\u00a0Trifluoroacetic acid\u00a0(TFA)/2% acetonitrile containing 12.5 fmol/\u03bcl yeast alcohol dehydrogenase (ADH_YEAST). From each sample, 3 \u03bcl was removed to create a QC Pool sample, which was run periodically throughout the acquisition period. Quantitative LC/MS/MS was performed on 3 \u03bcl of each sample using a nanoAcquity UPLC system (Waters Corp.) coupled to a Thermo Fusion Lumos high-resolution accurate mass tandem mass spectrometer (Thermo) via a nanoelectrospray ionization source. Briefly, the sample was first trapped on a Symmetry C18 20 mm\u00a0\u00d7\u00a0180 \u03bcm trapping column (5 \u03bcl/min at 99.9/0.1 v/v water/acetonitrile), after which the analytical separation was performed using a 1.8 \u03bcm Acquity HSS T3 C18 75 \u03bcm\u00a0\u00d7\u00a0250 mm column (Waters Corp.) with a 90 min linear gradient of 5\u201330% acetonitrile with 0.1% formic acid at a flow rate of 400 nl/min with a column temperature of 55\u00b0C. Data collection on the Fusion Lumos mass spectrometer was performed in a data-dependent acquisition mode of acquisition with an r\u00a0=\u00a0120,000,000 (at m/z 200) full MS scan from m/z 375\u20131500 and a target Automatic Gain Control\u00a0(AGC)\u00a0value of 2e5 ions with a 2 s cycle time. Ion trap MS/MS scans were acquired with a Rapid scan rate, 100 ms max injection time, and a target AGC value of 5e3 ions. A 20 s dynamic exclusion was employed to increase depth of coverage. The total analysis cycle time for each sample injection was approximately 2 hr.\n\nFollowing UPLC-MS/MS analyses, data were imported into Proteome Discoverer 2.2 (Thermo Scientific Inc), and analyses were aligned based on the accurate mass and retention time of detected ions (\u2018features\u2019) using Minora Feature Detector algorithm in Proteome Discoverer. Relative peptide abundance was calculated based on area under the curve of the selected ion chromatograms of the aligned features across all runs. The MS/MS data was searched against the TrEMBL D. rerio database (downloaded in May 2018) with additional proteins, including yeast ADH1, bovine serum albumin\u00a0(BSA), as well as an equal number of reversed-sequence (\u2018decoys\u2019) false discovery rate determination. Mascot Distiller and Mascot Server (v 2.5, Matrix Sciences) were utilized to produce fragment ion spectra and perform the database searches. Database search parameters included fixed modification on Cys (carbamidomethyl) and variable modifications on Meth (oxidation) and Asn and Gln (deamidation). Peptide Validator and Protein FDR Validator nodes in Proteome Discoverer were used to annotate the data at a maximum 1% protein false discovery rate.\n\nRelative peptide abundance of triplicates was averaged for each protein, and proteins were confirmed as positive with p<0.05. As biotinylation of proteins depends on lysine availability at the contact site, proteins with one unique peptide were included in the data if relative abundance fit the outlined criteria above. Injured hearts were normalized to uninjured hearts, and a fold change of 1.5-fold was used as a threshold for protein\u00a0level change. For the membrane proteome, uninjured BirA2-GFP-CAAX-expressing hearts were normalized to BirA2-GFP hearts, and proteins with a 2.5-fold change were considered to be membrane-specific.\n\nCytoscape was used to create interactome maps. BioGRID and Scaffold were used to search for interactors of ErbB2, Rho A, Rac1b, and Cdc42. Panther gene list analysis was used for over-representation tests in cellular components, signaling pathways and reactome analysis of the BioID2 data sets.\n\nBioID2 raw MS proteomics data sets have been deposited to MassIVE with the data identifier MSV000087028 and are also summarized in Supplementary files 7 and 8.\n\n### RNA-seq\n\nHearts were removed and placed in Hanks Buffered Saline Solution supplemented with 20 U/ml heparin. Outflow tracts and atria were removed, and ventricles were pulled apart with tweezers to remove blood from the lumen. Washed ventricles were then placed in 1 ml Trizol and processed to recover RNA. Further enrichment for mRNA was performed by polyA isolation, and mRNA was processed into RNA-seq libraries for sequencing on an Illumina Hi-Seq 2000. RNA-seq data was deposited at GEO with the data identifier GSE168371.\n\n### Immunofluorescence and imaging\n\nPrimary and secondary antibody staining was performed as described (Kikuchi et al., 2011). Mef2/PCNA staining has been previously described (Kikuchi et al., 2010). EdU/Mef2 staining of unfixed sections of ventricles was performed as follows: fish were injected intraperitoneally with 10 mM EdU on three consecutive days prior to harvest. For tissue preparation, hearts were removed from animals and placed into ice-cold 30% sucrose/PBS, before mounting. Hearts were flash-frozen in EtOH/dry Ice and stored in \u221280\u00b0C. Cryosections were performed to generate 10-\u03bcm-thick sections, and slides were air-dried for 30 min and then stored at \u221220\u00b0C.\u00a0For EdU/Mef2 staining, slides were incubated on a slide warmer for 10 min and then fixed in 3.7% formaldehyde/PBS at RT for 15 min. Next, slides were washed three times 5 min in PBS. EdU staining was performed by mixing 600 \u03bcl 1M Tris pH 8.5, 6 \u03bcl 1< CuSO4, 6 \u03bcl 10 mM azide, and 600 \u03bcl 0.5 M ascorbic acid (made fresh). Slides were incubated for 30 min at RT. Next, washes were performed in 2% Triton-X-100/PBS four\u00a0times each 5 min at RT, and slides were blocked for 1 hr at RT in 2% Triton-X-100/PBS, 5% goat serum, and 1%\u00a0BSA. Primary antibody anti-Mef2 (Abcam, ab197070) was incubated 1:100 in 2% Triton-X-100/PBS and 5% goat serum overnight at 4\u00b0C. The next day, slides were washed in 2% Triton-X-100/PBS four times each for 5 min at RT and stained with the secondary antibody for 2 hr at RT. Lastly. four 5 min washes in 2% Triton-X-100/PBS were performed, and slides were mounted in Vectashield hard set DAPI reagent.\n\nA Zeiss 700 confocal microscope was used to image slides. For EdU/Mef2 and Mef2/PCNA staining, images were acquired of the three largest sections from each ventricle. Mef2+ and Mef2+/EdU+ or Mef2+/PCNA+ cells were counted manually using Fij (ImageJ) in a muscle strip 100 \u03bcm wide along the ventricular periphery or injury border zone. Values from the sections were averaged to compute a proliferative index for each animal. Four animals were sampled for each condition.\n\n### Biochemical analysis\n\nCo-immunoprecipitations of Erbb2-HA in whole zebrafish hearts were performed as follows. Hearts from 20 cmlc2:erbb2-birA2-HA-P2A-GFP; cmlc2:CreER; \u03b2actin2:loxp-mCherry-STOP-loxp-DTA animals treated with tamoxifen, or from 20 controls without cmlc2:CreER, were extracted 14 days after treatment. Ventricle and outflow tract was isolated, rinsed in cold PBS, and collected in ice-cold RIPA buffer. Using an Eppendorf tube pestle, hearts were lysed by 50 strokes, flash-frozen in EtOH/dry ice, incubated on ice for 15 min, and then again homogenized with 50 stokes of an Eppendorf tube pestle. Lysates were then centrifuged at 21,000 rpm for 20 min at 4\u00b0C, and the supernatant was transferred to a new tube. 50 \u03bcl were saved as an input control and kept on ice during the entire Co-IP protocol. Heart lysates were first pre-cleared with 20 \u03bcl of packed protein A beads (Sigma) per lysate on a rocker or tumbler at 4\u00b0C overnight. The next day, 1 \u03bcl of the anti-HA antibody (1 \u03bcl IgG rabbit for control) was incubated with 20 \u03bcl of protein A beads for 1 hr on a rocker or tumbler at 4\u00b0C. Next, antibody-bead mix was added to the pre-cleared heart lysates and incubated for 2 hr at on a rocker or tumbler at 4\u00b0C. Samples were three times washed with 500 \u03bcl lysis and spun down at 800 rpm for 1 min at 4\u00b0C. After the last wash, 50 \u03bcl of lysis buffer was added to the samples, and samples were boiled with Laemmli buffer and \u03b2-mercaptoethanol at 95\u00b0C for 10 min. Samples were stored at \u221220\u00b0C before western blot analysis.\n\nFor whole heart lysates, the first part of the Co-IP protocol was followed until lysates were centrifuged at 21,000 rpm for 20 min at 4\u00b0C. The supernatant was isolated, and a Bradford assay (BioRad) was performed to determine protein concentration. Then, samples were boiled with Laemmli buffer and \u03b2-mercaptoethanol at 95\u00b0C for 10 min. 25 \u03bcg protein from each whole heart sample was used in western blot analysis.\n\n### Antibodies and reagents\n\nPrimary antibodies used in this study: anti-Mef2 (Abcam, ab197070, 1:100), anti-Rho A (Santa Cruz, 26C4,1:1000), anti-epb41L5 (RPL39, Proteintech, 1:100), anti-Talin 2 (Boster Biological Technology, PB9961, 1:100), anti-Seta (Antibodies online, ABIN2786762, 1:100), anti-ROCK2 (Bioss Antibodies, BS-1205R, 1:500), anti-HA (Abcam, ab9110, 1:1000), anti-CT3 (DSHB, 1:200), anti-PCNA (1:200, Sigma, P8825), anti-Mef2 antibody used in PCNA/Mef2 staining (gift from Jingli Cao) and anti-MHC (DSHB, F59-S, 1:200). Secondary antibodies were Alexa Fluor 488 goat anti-rabbit IgG (H + L) (Thermo Fisher Scientific, 1:200), Alexa Fluor 547 goat anti-mouse IgG (H + L) (Thermo Fisher Scientific, 1:200), EdU probes (Thermo Fisher Scientific, E10187), HRP goat anti-mouse IgG (Thermo Fisher Scientific, 31430, 1:50,000), HRP goat anti-rabbit IgG (Thermo Fisher Scientific, 65\u20136120, 1:50,000), and HRP goat streptavidin IgG (Pierce, 21130, 1:5000). Reagents used in this study were biotin (Sigma-Aldrich, B4501, 0.5 mM), Rhosin (Calbiochem, 555460), alfacalcidol (Selleck Chemicals, S1466, 200 \u03bcM), EdU (Life Technology, A10044), protein A sepharose beads (Sigma-Aldrich, P3391), NeutrAvidin Resin (Piere, Thermo Fisher Scientific 29202), and WGA Alexa Fluor 633 conjugate (Invitrogen, W21404, 1:100).\n",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "421588e3-dcec-41a7-aa92-9858d61a6ecf",
+      "submission_id": "49c57cf9-08b2-42c2-a237-621ef1f6fb92",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lilianna Solnica-Krezel, Washington University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66079.sa1](https://doi.org/10.7554/eLife.66079.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript reports the application of proximity labeling approaches in zebrafish to a specific cell type or its membrane compartment to identify changes in proteome and protein interaction networks during heart regeneration. Using a transgenic approach to express the promiscuous Bir2 biotin ligase in whole cardiomyocytes, their membrane compartment, or fused to the regeneration regulator ErbB2 in zebrafish, the authors define cardiomyocyte-specific proteome changes and protein interactions during heart regeneration. They functionally validate a role of the identified ErbB2-RhoA interaction in regulation of cell proliferation during heart regeneration. The reported methods and data sets will be of interest to those interested in applying proximity labeling techniques to study proteome dynamics and protein interactions in vivo in specific cell types and tissues.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"in vivo proximity labeling identifies cardiomyocyte protein networks during zebrafish heart regeneration\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Lilianna Solnica-Krezel as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Didier Stainier as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ryan Gray (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe manuscript reports the application of proximity labeling approaches in zebrafish to a specific cell type or its membrane compartment to identify changes in proteome and protein interaction networks during heart regeneration. Using a transgenic approach to express the promiscuous Bir2 biotin ligase in whole cardiomyocytes, their membrane compartment, or fused to the regeneration regulator ErbB2 in zebrafish, the authors define cardiomyocyte-specific proteome changes and protein interactions during heart regeneration. They functionally validate a role of the identified ErbB2-RhoA interaction in regulation of cell proliferation during heart regeneration. Overall, the data are properly controlled and analysis of datasets are rigorously analyzed in comparison with previous progress for understanding the transcriptional responses during cardiac regeneration. The reported methods and data sets will be of interest to those interested in applying proximity labeling techniques to study proteome dynamics and protein interactions in vivo in specific cell types and tissues.\n\nEssential Revisions:\n\n1. Page 6 \" Quantitative BioID2 analysis captured 1113 unique proteins, of which 343 proteins showed a 2.5-fold enrichment in BirA2-CAAX samples when compared to BirA2-GFP samples \". What do the authors mean as 1113 unique proteins, clearly they overlapped with those detected by BirA2-GFP. Please clarify.\n\n2. Figure 2\u2014figure supplement 1, D panel legend \u2013 do different lines show data from three separate experiments?\n\n3. For the proteins that showed increased ErbB2 association during regeneration, it would be important to examine how their level of expression at RNA and protein level (if tools are available) changes during regeneration.\n\n4. The authors conclude that the strongest association was with Rho Ab; can the authors comment on specificity of the antibodies used in IP experiments in Figure 3E? Can they distinguish between different RhoAs in zebrafish?\n\n5. As the authors are using pretty blunt reagents to inhibit RhoAa function (Rhosin and DN-RhoA), which of the genes encoding RhoA is affected is unclear. It will be important to assess whether other rhoa genes (rhoaa, rhoac) are expressed in cardiomyocytes? Is their expression altered during regeneration and in transgenics expressing Nrg1. Given the ease of genome editing, this part of the manuscript would be significantly strengthened by experiments assessing heart regeneration in rhoAa mutant fish, or the authors have to have to include these caveats in their interpretations and conclusions.\n\n6. How was cardiomyocyte proliferation during regeneration affected in the transgenic DN-RhoA fish?\n",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b5151d9b-23cf-49d5-a452-b77bb62300cf",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C1",
+      "claim": "BioID2 proximity labeling employs the promiscuous BirA2, which attaches biotin molecules to the lysines of proteins within an approximate distance of 10 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "BioID2 employs the promiscuous BirA2, which attaches biotin molecules to the lysines of proteins within an approximate distance of 10 nm (Kim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kim et al., 2016, which is the source describing the BioID2 technology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "0f150e4f-9cf9-433c-829b-a79838ba5267",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C2",
+      "claim": "Transgenic zebrafish expressing BirA2-GFP under the cmlc2 promoter show BirA2-GFP distributed throughout the cytoplasm and nuclei of adult cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "BirA2-GFP was readily detected in adult zebrafish cardiac chambers, where it was distributed throughout the cytoplasm and nuclei of adult cardiomyocytes (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by direct observation described in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "5d0af499-a9e5-4459-a71d-35d53257ed13",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C3",
+      "claim": "Effective protein biotinylation in zebrafish cardiomyocytes occurred only when biotin was delivered by intraperitoneal injection, not by aquarium water.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that effective protein biotinylation occurred only when biotin was delivered by injection (Figure 1D, E, Figure 1\u2014figure supplement 1A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D, E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "5a6019ac-c6df-405b-a8bd-99192b899df1",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C4",
+      "claim": "BirA2-GFP-CAAX localizes to the membranes of cardiomyocytes in transgenic zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of BirA2-GFP-CAAX signal associated with the cardiomyocyte plasma membrane in cmlc2:birA2-GFP-CAAX hearts (Figure 1C, Figure 1\u2014figure supplement 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations shown in Figure 1C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "1d75b917-ce46-4272-8055-47c968d1c1d8",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C5",
+      "claim": "Quantitative BioID2 analysis captured 1113 distinct proteins in adult zebrafish cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative BioID2 analysis captured 1113 distinct proteins, of which 343 proteins showed a 2.5-fold enrichment in BirA2-CAAX samples when compared to BirA2-GFP samples (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative mass spectrometry data reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "10553df4-747e-4806-bf02-2671a8e075aa",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C6",
+      "claim": "343 proteins showed a 2.5-fold enrichment in BirA2-CAAX samples compared to BirA2-GFP samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative BioID2 analysis captured 1113 distinct proteins, of which 343 proteins showed a 2.5-fold enrichment in BirA2-CAAX samples when compared to BirA2-GFP samples (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative mass spectrometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "23902ae8-b48d-4deb-9a0c-06ed74d64510",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C7",
+      "claim": "Gene ontology analysis of the 343 proteins enriched in BirA2-CAAX samples revealed enrichment for proteins associated with cellular junctions, plasma membrane, and membrane-bound organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology analysis for cellular components of the 343 proteins revealed enrichment for proteins associated with cellular junctions, plasma membrane, and membrane-bound organelles (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology analysis results shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "1114ae66-5e99-4c93-bb6a-89acc6451cd2",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C8",
+      "claim": "In vivo proximity labeling using BioID2 is functional in zebrafish and can profile proteomes of highly specialized cells like cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that in vivo proximity labeling using BioID2 is functional in zebrafish and can profile proteomes of highly specialized cells like cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "718d1065-9428-4f01-b364-24c99b9e6e9b",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C9",
+      "claim": "Proliferation of cardiomyocytes in the tamoxifen-inducible diphtheria toxin A ablation model is most prominent around 7 days post incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferation of cardiomyocytes in this injury model is most prominent around 7 dpi, with regeneration of the myocardium essentially complete by 28 dpi (Figure 2\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "8a314a2c-4319-45a5-bf68-c9c7672ec1b9",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C10",
+      "claim": "Regeneration of the myocardium is essentially complete by 28 days post incubation in the cardiomyocyte ablation model.",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferation of cardiomyocytes in this injury model is most prominent around 7 dpi, with regeneration of the myocardium essentially complete by 28 dpi (Figure 2\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "3a208d6b-f0b3-462e-aec5-bf379aa7d822",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C11",
+      "claim": "208 proteins showed a 1.5-fold or greater change during regeneration when compared to uninjured hearts in cmlc2:bira2-GFP hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative mass spectrometry analysis of pooled samples revealed that 208 proteins showed a 1.5-fold or greater change during regeneration when compared to uninjured hearts (Figure 2D, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "3faa08f1-9c08-4297-8288-6742559e636a",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C12",
+      "claim": "Most proteins with changed levels during regeneration in the whole-cell BioID2 assay increased rather than decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, most protein levels increase during heart regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the heat map analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "31889532-af62-488f-9db2-58835d93f13a",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C13",
+      "claim": "Proteins with increased levels during regeneration in the whole-cell BioID2 set are involved in wound healing, cardiac development, muscle cell differentiation, and response to wounding.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology analysis (over-representation test) for biological processes characterized the proteins with increased levels during regeneration in the whole-cell BioID2 set as involved in wound healing, cardiac development, muscle cell differentiation, and response to wounding, whereas decreased proteins were enriched for metabolites and energy precursors (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology analysis results shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "5c39163f-9883-4738-a638-c349738c2d44",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C14",
+      "claim": "Proteins with decreased levels during regeneration in the whole-cell BioID2 set were enriched for metabolites and energy precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology analysis (over-representation test) for biological processes characterized the proteins with increased levels during regeneration in the whole-cell BioID2 set as involved in wound healing, cardiac development, muscle cell differentiation, and response to wounding, whereas decreased proteins were enriched for metabolites and energy precursors (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology analysis results shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "5fbb77e7-fb31-4277-8a40-95e5aa870118",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C15",
+      "claim": "The top 10% of increased proteins in the whole-cell BioID2 assay included ErbB2 and the mTOR signaling protein Rictora.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 10% of increased proteins included ErbB2 and the mTOR signaling protein Rictora (Figure 2\u2014figure supplement 1D), each previously implicated in heart regeneration (Gemberling et al., 2015; Sciarretta et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 1D and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "e0048302-7a63-4da8-94fe-26300847a1f9",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C16",
+      "claim": "ErbB2 and Rictora have been previously implicated in heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 10% of increased proteins included ErbB2 and the mTOR signaling protein Rictora (Figure 2\u2014figure supplement 1D), each previously implicated in heart regeneration (Gemberling et al., 2015; Sciarretta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gemberling et al., 2015 and Sciarretta et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "3fe6ef3f-d4ff-496d-a21c-85034efaeb75",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C17",
+      "claim": "173 proteins showed a 1.5-fold or greater change in membrane-associated proteins during regeneration in cmlc2:bira2-GFP-CAAX samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 173 proteins with a 1.5-fold or greater change in membrane-associated proteins during regeneration when normalized to uninjured hearts (Figure 2C, E, Supplementary file 3), with the majority of these proteins reducing presence during regeneration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "4270102f-9729-49af-ba54-19cdfc17fac4",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C18",
+      "claim": "The majority of proteins with changed levels in the membrane BioID2 assay reduced presence during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 173 proteins with a 1.5-fold or greater change in membrane-associated proteins during regeneration when normalized to uninjured hearts (Figure 2C, E, Supplementary file 3), with the majority of these proteins reducing presence during regeneration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative mass spectrometry data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "06bbd99e-c181-4641-a4c3-a0194b4ca349",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C19",
+      "claim": "Proteins with reduced membrane levels during regeneration showed over-representation of involvement in transmembrane transport, muscle development, and energy production.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins with reduced membrane levels during regeneration showed over-representation of involvement in transmembrane transport, muscle development, and energy production (electron transport and glycolysis), while proteins increased at the membrane during regeneration were involved in protein complex assembly and organelle organization (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology analysis results shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "b1686bcb-af2d-43b6-b69f-3e26c54445b4",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C20",
+      "claim": "Proteins increased at the membrane during regeneration were involved in protein complex assembly and organelle organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins with reduced membrane levels during regeneration showed over-representation of involvement in transmembrane transport, muscle development, and energy production (electron transport and glycolysis), while proteins increased at the membrane during regeneration were involved in protein complex assembly and organelle organization (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology analysis results shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "b251d78a-b02a-4bd7-93af-28e721cf5cb2",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C21",
+      "claim": "44 proteins were shared between BirA2-GFP and BirA2-GFP-CAAX data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of proteins found in BirA2-GFP and BirA2-GFP-CAAX data sets identified 44 shared proteins (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of the two data sets shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "40972897-b095-4fe0-bd77-794f67d53906",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C22",
+      "claim": "16 proteins showed opposing changes in levels at the membrane or in the whole cell among the 44 shared proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 16 proteins showed opposing changes in levels at the membrane or in the whole cell (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "4ee0321b-70c3-4c95-8257-c7007536657e",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C23",
+      "claim": "Epb41l5 was predominantly localized at the plasma membrane in uninjured hearts and increased presence throughout cardiomyocytes during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Epb41l5 was predominantly localized at the plasma membrane (Figure 2G, arrows) and increased presence throughout cardiomyocytes during regeneration, consistent with the BioID2 data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "7e43db22-69f7-451c-b01f-d8b0db9fa6c5",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C24",
+      "claim": "Epb41l5 is involved in animal organ development and has been implicated as a positive regulator of Notch signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Erythrocyte membrane protein band 4.1 like 5 (Epb41l5) is involved in animal organ development and has been implicated as a positive regulator of Notch signaling, a pathway involved in heart regeneration (Matsuda et al., 2016; Zhao et al., 2014, Figure 2F, G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Matsuda et al., 2016 and Zhao et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "4003e494-8856-4ec9-9d2e-86311d7556b1",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C25",
+      "claim": "Notch signaling is a pathway involved in heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Erythrocyte membrane protein band 4.1 like 5 (Epb41l5) is involved in animal organ development and has been implicated as a positive regulator of Notch signaling, a pathway involved in heart regeneration (Matsuda et al., 2016; Zhao et al., 2014, Figure 2F, G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Matsuda et al., 2016 and Zhao et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "3082d704-d1e6-4592-9489-06e8a6a20517",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C26",
+      "claim": "Talin 2 is an adapter protein that couples integrin focal adhesions to the actin cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "Talin 2, an adapter protein that couples integrin focal adhesions to the actin cytoskeleton (Figure 2\u2014figure supplement 4A, B), displayed low levels in uninjured hearts (Figure 2\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on established knowledge about Talin 2 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "6895d12b-711b-4f77-a35a-a0b08d5faf51",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C27",
+      "claim": "Talin 2 displayed low levels in uninjured hearts and increased levels near the wound site and in ventricular muscle away from the injury upon injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Talin 2, an adapter protein that couples integrin focal adhesions to the actin cytoskeleton (Figure 2\u2014figure supplement 4A, B), displayed low levels in uninjured hearts (Figure 2\u2014figure supplement 4B). Upon injury, Talin 2 levels increased near the wound site as well as in ventricular muscle away from the injury, with a punctate pattern appearing that resembled focal adhesions (Figure 2\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 2\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "d0fd17ab-5436-4552-be96-a55d270e6d83",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C28",
+      "claim": "Seta levels were undetectable in uninjured hearts and became prominent in compact muscle and epicardial tissue in injured ventricles.",
+      "claim_type": "EXPLICIT",
+      "source": "Seta levels were undetectable in uninjured hearts, yet became prominent in compact muscle and epicardial tissue in injured ventricles (Figure 2H, Figure 2\u2014figure supplement 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 2H and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "f60531c4-362c-4472-91d7-de1b16bbb40a",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C29",
+      "claim": "Seta signal was perinuclear and colocalized with wheat germ agglutinin, indicating that Seta associates in part with the nuclear membrane and endomembranes after heart injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The Seta signal was perinuclear and colocalized with wheat germ agglutinin (WGA), which indicates that Seta associates in part with the nuclear membrane and endomembranes after heart injury (Figure 2H, arrows, Figure 2\u2014figure supplement 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data showing colocalization with WGA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "0fae3e47-748b-489a-9818-58ff6c804345",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C30",
+      "claim": "Seta has been proposed to silence histone acetyltransferase-dependent transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "As Seta has been proposed to silence histone acetyltransferase-dependent transcription, its recruitment to nuclear and endomembranes could impact this function (Seo et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Seo et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "0d36a21a-ea7a-4c67-84ac-22a70f185139",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C31",
+      "claim": "BioID2 can capture changes in the proteomes of cardiomyocytes during heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data indicate that BioID2 can capture changes in the proteomes of cardiomyocytes during heart regeneration, providing a resource for candidate effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "d942dce5-b6f4-4c60-8961-984cac10192b",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C32",
+      "claim": "Nrg1 ligand binds its receptor ErbB4 on cardiomyocytes, causing heterodimerization of Erbb4 and its co-receptor ErbB2.",
+      "claim_type": "EXPLICIT",
+      "source": "Nrg1 ligand has been reported to bind its receptor ErbB4 on cardiomyocytes, causing heterodimerization of Erbb4 and its co-receptor ErbB2 (Bersell et al., 2009; Harskamp et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bersell et al., 2009 and Harskamp et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "8f34eb85-9259-4214-b19c-f9f561cd054e",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C33",
+      "claim": "Quantitative mass spectrometry analysis of ErbB2-BirA2-HA hearts identified 667 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative mass spectrometry analysis identified 667 proteins, of which 108 showed a >1.5-fold change during regeneration when normalized to uninjured control hearts (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "c9ebe6a6-a58c-4fad-b23a-9cb1e7541233",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C34",
+      "claim": "108 proteins showed a >1.5-fold change during regeneration in the ErbB2-BirA2-HA data set when normalized to uninjured control hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative mass spectrometry analysis identified 667 proteins, of which 108 showed a >1.5-fold change during regeneration when normalized to uninjured control hearts (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "9917c794-3022-487f-b9ba-7f56ac878f72",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C35",
+      "claim": "Nine known ErbB2 interactors were identified in the ErbB2-BirA2-HA BioID2 data set.",
+      "claim_type": "EXPLICIT",
+      "source": "Using STRING and BioGRID databases, we identified nine known ErbB2 interactors in our data set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by database searches of the BioID2 data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "2e654a4c-2c2a-4a91-aa49-92b63671e7b1",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C36",
+      "claim": "Three known ErbB2 interactors showed increased association with ErbB2 during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of these proteins showed increased association with ErbB2 during regeneration, whereas two had decreased association (Figure 3C, yellow and blue circles, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "52ae9851-c14c-49fe-8e4d-b49141b1bb5b",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C37",
+      "claim": "Two known ErbB2 interactors had decreased association with ErbB2 during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of these proteins showed increased association with ErbB2 during regeneration, whereas two had decreased association (Figure 3C, yellow and blue circles, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "8f3143f0-fdbd-4efd-90c0-554aa1daf79f",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C38",
+      "claim": "Overall expression levels of ErbB2 interactors were not predictive of ErbB2 association.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined the levels of these candidates as reported in published transcriptome and proteome data sets (Goldman et al., 2017; Wang et al., 2013; Ma et al., 2018; Kang et al., 2016; Ben-Yair et al., 2019), and found that overall expression levels were not predictive of ErbB2 association (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with published transcriptome and proteome data sets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "efbb7500-f5a8-49ea-b556-d9aca049e297",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C39",
+      "claim": "The strongest detected increase in ErbB2 association was with the Rho GTPase Rho A-b.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest detected increase was an association with the Rho GTPase Rho A-b, and pathway analyses indicated enrichment for proteins involved in cytoskeletal regulation by Rho GTPases (Figure 3C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by BioID2 data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "f7f90560-f05c-4a6d-b3d3-9e2536bc49de",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C40",
+      "claim": "Pathway analyses of the ErbB2-BirA2-HA data set indicated enrichment for proteins involved in cytoskeletal regulation by Rho GTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest detected increase was an association with the Rho GTPase Rho A-b, and pathway analyses indicated enrichment for proteins involved in cytoskeletal regulation by Rho GTPases (Figure 3C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pathway analysis results shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "124abc16-5a18-41b6-b1b1-d3411796ff6e",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C41",
+      "claim": "Rho A activation by ErbB2 has been previously reported to promote pro-metastatic and invasive behavior of human breast cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Rho A activation by ErbB2 has been previously reported to promote pro-metastatic and invasive behavior of human breast cancer cells and contribute to mammary adenocarcinoma tumorigenesis (Brantley-Sieders et al., 2008; Worzfeld et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Brantley-Sieders et al., 2008 and Worzfeld et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "3656bb15-a642-42ae-b099-e1deedac1fee",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C42",
+      "claim": "Rho A activation by ErbB2 has been previously reported to contribute to mammary adenocarcinoma tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Rho A activation by ErbB2 has been previously reported to promote pro-metastatic and invasive behavior of human breast cancer cells and contribute to mammary adenocarcinoma tumorigenesis (Brantley-Sieders et al., 2008; Worzfeld et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Brantley-Sieders et al., 2008 and Worzfeld et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "62ce52a9-72d4-47b7-9ccc-a3eea308b05e",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C43",
+      "claim": "A recent study implicated Rho A mislocalization with aberrant spindle orientation leading to binucleation, a common feature of mammalian cardiomyocytes that is thought to inhibit cardiomyocyte proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a recent study implicated Rho A mislocalization with aberrant spindle orientation leading to binucleation, a common feature of mammalian CMs that is thought to inhibit cardiomyocytes (CM) proliferation (Leone et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Leone et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "8c597140-4f8c-4c55-8c5d-20c09c4dada4",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C44",
+      "claim": "Rho A was pulled down with ErbB2-BirA2-HA in regenerating heart samples, but not from uninjured myocardium.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Rho A was pulled down with ErbB2-BirA2-HA in regenerating heart samples, but not from uninjured myocardium, suggesting a context-dependent association (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "2a68618c-a020-4f4a-ac7d-16e72977906b",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C45",
+      "claim": "ErbB2-Rho A association is context-dependent, increasing during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Rho A was pulled down with ErbB2-BirA2-HA in regenerating heart samples, but not from uninjured myocardium, suggesting a context-dependent association (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the co-immunoprecipitation results showing differential association in regenerating vs. uninjured hearts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "3f1d0b31-b0ed-405c-871e-c5962ef72173",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C46",
+      "claim": "All known Rho A interactors detected in the cmlc2:birA2-GFP data set showed elevated levels after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, all known Rho A interactors detected in our cmlc2:birA2-GFP data set showed elevated levels after injury, including ErbB2 (59.2-fold; Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "d7a48d44-c72d-4b38-bade-a8d4eafa0cb9",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C47",
+      "claim": "ErbB2 levels increased 59.2-fold after injury in the cmlc2:birA2-GFP data set.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, all known Rho A interactors detected in our cmlc2:birA2-GFP data set showed elevated levels after injury, including ErbB2 (59.2-fold; Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "60f16b10-6c77-4bd7-8e57-64345e5092ad",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C48",
+      "claim": "ROCK2a levels were elevated in the whole-cell BioID2 data set during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "ROCK2a levels were elevated in our whole-cell BioID2 data set, further confirmed by western blotting (Figure 3G), consistent with the idea that ErbB2\u2013Rho A association could impact ROCK2 levels in cardiomyocytes after injury.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by BioID2 data and western blot analysis shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "88d589bb-0595-45f3-a1c3-3e476f37fcdb",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C49",
+      "claim": "Rho A signaling is known to facilitate cytoskeletal changes via Rho-associated protein kinases (ROCK).",
+      "claim_type": "EXPLICIT",
+      "source": "Rho A signaling is known to facilitate cytoskeletal changes via Rho-associated protein kinases (ROCK), which have been reported to regulate the DNA binding activity of the cardiogenic transcription factor Gata4 and nuclear localization of SRF in cell culture (Kaarbo et al., 2013; Liu et al., 2003; Yanazume et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kaarbo et al., 2013, Liu et al., 2003, and Yanazume et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "fbf3c2eb-38a3-450b-b9a7-c9fbb5231df8",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C50",
+      "claim": "ROCK has been reported to regulate the DNA binding activity of the cardiogenic transcription factor Gata4 in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Rho A signaling is known to facilitate cytoskeletal changes via Rho-associated protein kinases (ROCK), which have been reported to regulate the DNA binding activity of the cardiogenic transcription factor Gata4 and nuclear localization of SRF in cell culture (Kaarbo et al., 2013; Liu et al., 2003; Yanazume et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kaarbo et al., 2013, Liu et al., 2003, and Yanazume et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "3d9a2b52-b67f-4f64-8f69-bb5a12e6bc8f",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C51",
+      "claim": "ROCK has been reported to regulate nuclear localization of SRF in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Rho A signaling is known to facilitate cytoskeletal changes via Rho-associated protein kinases (ROCK), which have been reported to regulate the DNA binding activity of the cardiogenic transcription factor Gata4 and nuclear localization of SRF in cell culture (Kaarbo et al., 2013; Liu et al., 2003; Yanazume et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kaarbo et al., 2013, Liu et al., 2003, and Yanazume et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "f3498f8d-7b80-4d99-b7da-03baadbb7f60",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C52",
+      "claim": "Treatment with the Rho A inhibitor Rhosin reduced the cardiomyocyte proliferation index by approximately 68% after partial ventricular resection.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, Rhosin reduced the proliferation index by ~68% (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "3ff28fd4-3325-4b51-8a44-280a9163645f",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C53",
+      "claim": "Animals expressing a dominant-negative Rho A for 30 days after resection had injury sites that remained deficient in cardiac myofibers, whereas control hearts had re-established a contiguous wall of muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals expressing a dominant-negative Rho A for 30 days after resection (Figure 4F), injury sites remained deficient in cardiac myofibers, whereas in control hearts had re-established a contiguous wall of muscle (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "ded1fce4-a27e-4932-875c-b087b03109b6",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C54",
+      "claim": "Rac1 and Cdc42 are similarly required for normal heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Using inducible dominant-negative gene cassettes in transgenic animals, we found that Rac1 and Cdc42 are similarly required for normal heart regeneration (Figure 4F, middle and bottom panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "98231ebd-237d-425c-a56d-c9cda4ee38b5",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C55",
+      "claim": "Rho A, Rac1, and Cdc42 are each implicated in zebrafish heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data implicate each member of the small GTPase trio \u2013 Rho A, Rac1, and Cdc42 \u2013 in zebrafish heart regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "b3a210c3-3a95-44dc-af45-a58946ac9c60",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C56",
+      "claim": "Hearts that ectopically expressed Nrg1 for 14 days showed an approximately 85% increase in total Rho A protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined Rho A levels from hearts that ectopically expressed Nrg1 for 14 days, and unlike during ablation-induced heart regeneration where Rho A levels are unchanged, we found an ~85% increase in total Rho A protein (Figure 5\u2014figure supplement 1A,mB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 5\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "55cda3bb-cb3d-4d4b-8a5f-e411daf7f5e4",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C57",
+      "claim": "During ablation-induced heart regeneration, Rho A levels are unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined Rho A levels from hearts that ectopically expressed Nrg1 for 14 days, and unlike during ablation-induced heart regeneration where Rho A levels are unchanged, we found an ~85% increase in total Rho A protein (Figure 5\u2014figure supplement 1A,mB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "fc8dcfdb-334a-426a-86a7-c57b030a5644",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C58",
+      "claim": "Three daily injections of zebrafish with Rhosin reduced the cardiomyocyte proliferation index by approximately 71% in the presence of ectopic Nrg1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a mitogenic role, three daily injections of zebrafish with Rhosin reduced the cardiomyocyte proliferation index by ~71% in the presence of ectopic Nrg1 expression (Figure 5B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "6881c364-40dc-4c85-bfd4-eec839e44af1",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C59",
+      "claim": "Vegfaa-expressing hearts had elevated cardiac Rho A levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis revealed that vegfaa-expressing hearts had elevated cardiac Rho A levels, whereas alfacalcidol-treated hearts displayed no significant change (Figure 5\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 5\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "41afaffb-17ab-4698-a6d7-55cf95052eaf",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C60",
+      "claim": "Alfacalcidol-treated hearts displayed no significant change in Rho A levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis revealed that vegfaa-expressing hearts had elevated cardiac Rho A levels, whereas alfacalcidol-treated hearts displayed no significant change (Figure 5\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 5\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "71ffb106-3c44-4bee-99d4-9ba88fc855ce",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C61",
+      "claim": "Inhibition of Rho A by Rhosin reduced cardiomyocyte proliferation by approximately 68% during vegfaa overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of Rho A by Rhosin reduced cardiomyocyte proliferation by ~68% and ~65% during vegfaa overexpression and alfacalcidol treatment, respectively (Figure 5E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5E\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "2d1bef70-a3ef-48a1-9e5e-cfa64c4e6784",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C62",
+      "claim": "Inhibition of Rho A by Rhosin reduced cardiomyocyte proliferation by approximately 65% during alfacalcidol treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of Rho A by Rhosin reduced cardiomyocyte proliferation by ~68% and ~65% during vegfaa overexpression and alfacalcidol treatment, respectively (Figure 5E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5E\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "aef83600-9793-4220-955f-a28f811dbdd5",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C63",
+      "claim": "Rho A signaling is a major target during heart regeneration, required for normal cardiomyocyte proliferation in response to injury or presence of Nrg1, Vegfaa, or vitamin D.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data indicate that Rho A signaling is a major target during heart regeneration, required for normal cardiomyocyte proliferation in response to injury or presence of Nrg1, Vegfaa, or vitamin D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "fd0cc255-879e-4270-9938-56fc67402e37",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C64",
+      "claim": "Published single-cell RNA-seq data revealed detectable rhoaa expression in cardiomyocytes, endothelial cells, fibroblasts, and immune cells during zebrafish heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessment of published single-cell RNA-seq data revealed detectable rhoaa expression in cardiomyocytes, endothelial cells, fibroblasts, and immune cells, and rhoab expression in cardiomyocytes and endothelial cells during zebrafish heart regeneration (Supplementary file 6; Honkoop et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of published single-cell RNA-seq data from Honkoop et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "06ec4859-e479-442e-b47e-841b29ddea8d",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C65",
+      "claim": "Published single-cell RNA-seq data revealed detectable rhoab expression in cardiomyocytes and endothelial cells during zebrafish heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessment of published single-cell RNA-seq data revealed detectable rhoaa expression in cardiomyocytes, endothelial cells, fibroblasts, and immune cells, and rhoab expression in cardiomyocytes and endothelial cells during zebrafish heart regeneration (Supplementary file 6; Honkoop et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of published single-cell RNA-seq data from Honkoop et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "059591a8-0d67-4597-9f8d-d9bc2d94e755",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C66",
+      "claim": "Published profiles of cardiomyocyte H3.3 occupancy indicate an approximately twofold increase in H3.3 enrichment in rhoaa and rhoab gene bodies during heart regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, published profiles of cardiomyocyte H3.3 occupancy (Goldman et al., 2017), an indicator of active gene expression, indicate an approximately twofold increase in H3.3 enrichment in rhoaa and rhoab gene bodies during heart regeneration (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of published H3.3 occupancy data from Goldman et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "cb3e51ac-3af5-4340-bcb7-47b89e12522f",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C67",
+      "claim": "RNA-seq data from ventricles after 7 days of induced myocardial Nrg1 overexpression revealed that rhoaa levels were weakly elevated (1.6-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of RNA-seq data from ventricles of transgenic animals after 7 days of induced myocardial Nrg1 overexpression (see Materials and methods) revealed that rhoaa levels were weakly elevated (1.6-fold), whereas no changes in rhoab or rhoac were detectable (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data generated in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "98180261-569d-40ad-9d53-d08741023ffc",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C68",
+      "claim": "RNA-seq data from ventricles after 7 days of induced myocardial Nrg1 overexpression revealed no changes in rhoab or rhoac levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of RNA-seq data from ventricles of transgenic animals after 7 days of induced myocardial Nrg1 overexpression (see Materials and methods) revealed that rhoaa levels were weakly elevated (1.6-fold), whereas no changes in rhoab or rhoac were detectable (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data generated in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "93fa76e0-f289-4b60-95c7-defb8c28d004",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C69",
+      "claim": "rhoaa and rhoab are top candidates for Rho A function in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, rhoaa and rhoab are top candidates for Rho A function in cardiomyocytes, although conditional disruption of the rhoa genes in zebrafish is needed to distinguish which member(s) is key.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the expression data and functional studies presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "91e193a0-961d-4fe9-a808-25deefb272e8",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C70",
+      "claim": "BioID2 profiling for interactors with ErbB2 implicated Rho A as a target of ErbB2 signaling in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "BioID2 profiling for interactors with ErbB2, a co-receptor for the cardiomyocyte mitogen Nrg1, implicated Rho A as a target of ErbB2 signaling in cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the BioID2 data showing increased association between ErbB2 and Rho A during regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "635fa705-c36e-4b9b-8c45-9b1afb553532",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C71",
+      "claim": "Blockade of Rho A during heart regeneration disrupted muscle creation.",
+      "claim_type": "EXPLICIT",
+      "source": "Blockade of Rho A during heart regeneration, or during cardiogenic stimulation by the mitogenic influences Nrg1, Vegfaa, or vitamin D, disrupted muscle creation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing impaired regeneration with Rho A inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "67b956e7-4ffb-40b6-a1b8-f23ad36c06fb",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C72",
+      "claim": "Blockade of Rho A during cardiogenic stimulation by Nrg1, Vegfaa, or vitamin D disrupted muscle creation.",
+      "claim_type": "EXPLICIT",
+      "source": "Blockade of Rho A during heart regeneration, or during cardiogenic stimulation by the mitogenic influences Nrg1, Vegfaa, or vitamin D, disrupted muscle creation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing reduced cardiomyocyte proliferation with Rho A inhibition during mitogen treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "7d606185-1e52-4c39-974a-94e4785d0e1f",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C73",
+      "claim": "Proximity labeling is a useful resource to interrogate cell proteomes and signaling networks during tissue regeneration in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings reveal proximity labeling as a useful resource to interrogate cell proteomes and signaling networks during tissue regeneration in zebrafish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the successful application of BioID2 in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "edf281c5-ce7f-425f-a6a7-309c74ba022f",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C74",
+      "claim": "Zebrafish regenerate cardiac muscle after injury with minimal scar formation, based on division of pre-existing cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike mammals, teleost zebrafish regenerate cardiac muscle after injury with minimal scar formation, based on division of pre-existing cardiomyocytes (Poss et al., 2002; Kikuchi et al., 2010; Jopling et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Poss et al., 2002, Kikuchi et al., 2010, and Jopling et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "9e504049-8888-4062-b618-219882d95992",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C75",
+      "claim": "Heart regeneration in zebrafish is a relentless process that outcompetes scarring to recover heart function.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence to date indicates that heart regeneration in zebrafish is a relentless process that outcompetes scarring to recover the heart function, rather than a linear series of molecular steps and synchronized cellular progressions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on accumulated evidence about zebrafish heart regeneration.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "04e2256b-df9b-43f9-93aa-e5204b46b2a8",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C76",
+      "claim": "Three secreted factors, Nrg1, Vegfaa, and vitamin D, have been demonstrated to have instructive mitogenic effects on cardiomyocytes in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Three secreted factors, Nrg1, Vegfaa, and vitamin D, have been demonstrated to have instructive mitogenic effects, characterized by the ability to induce cardiomyocyte proliferation in zebrafish in the absence of injury (Gemberling et al., 2015; Karra et al., 2018; Han et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gemberling et al., 2015, Karra et al., 2018, and Han et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "c895f86b-c637-4b75-bc20-3208274dbe0a",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C77",
+      "claim": "Nrg1, Vegfaa, and vitamin D can induce cardiomyocyte proliferation in zebrafish in the absence of injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Three secreted factors, Nrg1, Vegfaa, and vitamin D, have been demonstrated to have instructive mitogenic effects, characterized by the ability to induce cardiomyocyte proliferation in zebrafish in the absence of injury (Gemberling et al., 2015; Karra et al., 2018; Han et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gemberling et al., 2015, Karra et al., 2018, and Han et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "c6116fbe-639f-4151-83fb-65fd45977806",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C78",
+      "claim": "Nrg1/ErbB2 signaling can stimulate cardiomyocyte division in adult mice, most notably when ErbB2 is experimentally expressed in the form of a ligand-independent activator.",
+      "claim_type": "EXPLICIT",
+      "source": "Nrg1/ErbB2 signaling can stimulate cardiomyocyte division in adult mice, most notably when ErbB2 is experimentally expressed in the form of a ligand-independent activator (Bersell et al., 2009; D'Uva et al., 2015; Gordon et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bersell et al., 2009, D'Uva et al., 2015, and Gordon et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "085cf53b-1219-40f5-9d9f-d9882b0f0741",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C79",
+      "claim": "ErbB2 signaling was recently reported to work in part through regulation of YAP in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "ErbB2 signaling was recently reported to work in part through regulation of YAP, a transcriptional activator that can impact cytoskeletal remodeling and cell division in cardiomyocytes during cardiac growth or repair in mice (Leach et al., 2017; Aharonov et al., 2020; Heallen et al., 2013; Heallen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Leach et al., 2017, Aharonov et al., 2020, Heallen et al., 2013, and Heallen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "f95378e2-0d67-460b-ad0b-9dea663b3768",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C80",
+      "claim": "In zebrafish, Nrg1/ErbB2 signals in part by promoting glycolysis versus mitochondrial oxidative phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, Nrg1/ErbB2 signals in part by promoting glycolysis versus mitochondrial oxidative phosphorylation and reducing Tp53 levels through upregulation of its inhibitor Mdm2 (Shoffner et al., 2020; Honkoop et al., 2019; Fukuda et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Shoffner et al., 2020, Honkoop et al., 2019, and Fukuda et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "ca72fce9-27c7-442d-8044-ba39f66f3b90",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C81",
+      "claim": "In zebrafish, Nrg1/ErbB2 signals in part by reducing Tp53 levels through upregulation of its inhibitor Mdm2.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, Nrg1/ErbB2 signals in part by promoting glycolysis versus mitochondrial oxidative phosphorylation and reducing Tp53 levels through upregulation of its inhibitor Mdm2 (Shoffner et al., 2020; Honkoop et al., 2019; Fukuda et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Shoffner et al., 2020, Honkoop et al., 2019, and Fukuda et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "666b5e3d-a807-4e50-95df-964414996ca7",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "claim_id": "C82",
+      "claim": "BioID2 and evolved iterations can be effectively applied to monitor proteome changes during dynamic developmental events like regeneration in many species, tissues, and injury contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that BioID2 and evolved iterations can be effectively applied in myriad ways to monitor proteome changes during dynamic developmental events like regeneration in many species, tissues, and injury contexts to provide high-resolution insights into essential networks of regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative statement about future applications based on the current study's success.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "713561a5-eee4-4d06-babf-cba01a96e8a9",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BioID2 proximity labeling is functional in adult zebrafish cardiomyocytes and can distinguish whole-cell from membrane-specific proteomes. The authors generated transgenic zebrafish expressing BirA2-GFP or BirA2-GFP-CAAX under the cmlc2 promoter, demonstrating that biotin delivery by intraperitoneal injection enables effective biotinylation. Quantitative mass spectrometry identified 1113 proteins, with 343 showing membrane enrichment and appropriate gene ontology profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 collectively demonstrate successful implementation of BioID2 in zebrafish. The localization data (C2, C4), functional biotinylation assays (C3), quantitative proteomics (C5, C6), and gene ontology validation (C7) provide converging evidence. The use of established BioID2 technology (C1) and appropriate controls strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "11c56aea-5b73-4b49-bf2f-05dbe89a2f73",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "BioID2 captures dynamic proteome changes in cardiomyocytes during heart regeneration following cardiomyocyte ablation. At 14 days post-injury, 208 proteins showed \u22651.5-fold changes, with most increasing. Increased proteins are enriched for wound healing and cardiac development processes, while decreased proteins relate to energy metabolism. The approach identified known regeneration factors like ErbB2 and Rictora.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C16 and C31 demonstrate that BioID2 successfully captures regeneration-associated proteome changes. The quantitative mass spectrometry data (C11), directional changes (C12), gene ontology analyses (C13, C14), and identification of known factors (C15, C16) provide strong support. The temporal characterization (C9, C10) establishes the regeneration context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "3ac07993-964b-447a-98e5-aa4fb7c7b31e",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Membrane-specific BioID2 profiling reveals distinct proteome dynamics during regeneration, with 173 proteins showing \u22651.5-fold changes (mostly decreases). Proteins with opposing changes between whole-cell and membrane compartments were identified, including Epb41l5, Talin 2, and Seta, which were validated by immunofluorescence showing dynamic relocalization patterns during regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23, C27-C29 demonstrate compartment-specific proteome profiling. The quantitative data (C17, C18), gene ontology analyses (C19, C20), comparative analysis (C21, C22), and immunofluorescence validation (C23, C27, C28, C29) provide strong converging evidence for dynamic protein relocalization during regeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "445e7423-2f56-440f-b5e4-088ddda6fa76",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "BioID2 profiling of ErbB2 identifies Rho A as a context-dependent interactor during heart regeneration. Among 667 proteins captured, 108 changed during regeneration, including 9 known ErbB2 interactors. Rho A-b showed the strongest increase in association with ErbB2, confirmed by co-immunoprecipitation showing ErbB2-Rho A interaction only in regenerating hearts. Pathway analysis revealed enrichment for Rho GTPase cytoskeletal regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40, C44-C45, and C70 establish ErbB2-Rho A interaction during regeneration. The quantitative BioID2 data (C33-C37, C39), pathway analysis (C40), orthogonal validation by co-IP (C44), and context-dependency (C45) provide strong support. The observation that expression levels don't predict association (C38) adds mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "b55638b1-8563-4052-9997-eccd58be1efb",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Known Rho A interactors show elevated levels during regeneration in the whole-cell BioID2 dataset, including ErbB2 (59.2-fold increase) and ROCK2a. These proteins are involved in cytoskeletal regulation, and ROCK has been reported to regulate cardiogenic transcription factors Gata4 and SRF in cell culture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 demonstrate coordinated upregulation of the Rho A signaling network. The quantitative data (C46, C47), western blot validation (C48), and literature support for ROCK function (C49-C51) provide strong evidence. However, the mechanistic links to Gata4/SRF are from cell culture studies, limiting direct applicability to zebrafish regeneration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "3067eeec-8fbf-4f31-853c-9237708da79d",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Rho A, Rac1, and Cdc42 are each required for zebrafish heart regeneration. Pharmacological inhibition of Rho A with Rhosin reduced cardiomyocyte proliferation by ~68% after ventricular resection. Dominant-negative approaches for all three GTPases resulted in persistent muscle deficiency at 30 days post-resection, demonstrating essential roles in regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 and C71 provide strong functional evidence through both pharmacological (C52) and genetic (C53, C54) approaches. The quantitative proliferation data (C52), histological assessment (C53, C54), and convergent results across three related GTPases (C55) strongly support essential roles in regeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "cbca118c-c7e2-4b53-8dfb-8cccaab94e13",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Rho A signaling is required for cardiomyocyte proliferation induced by three different mitogens: Nrg1, Vegfaa, and vitamin D. Rhosin treatment reduced proliferation by 65-71% across all three mitogenic stimuli. Rho A protein levels increased with Nrg1 (~85%) and Vegfaa overexpression but not with vitamin D treatment or during ablation-induced regeneration, indicating context-dependent regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 and C72 demonstrate broad requirement for Rho A across multiple mitogenic pathways. The western blot data (C56, C57, C59, C60), quantitative proliferation assays (C58, C61, C62), and consistent effects across different stimuli (C63, C72) provide strong support. The differential protein level changes suggest Rho A acts through both expression-dependent and -independent mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "0af6362d-a95a-42a0-8ca3-304983fc725b",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of published single-cell RNA-seq and H3.3 ChIP-seq data, along with new RNA-seq from Nrg1-overexpressing hearts, identifies rhoaa and rhoab as top candidates for Rho A function in cardiomyocytes. Both genes show detectable expression in cardiomyocytes, ~2-fold increased H3.3 enrichment during regeneration, and rhoaa shows weak elevation (1.6-fold) with Nrg1 overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 integrate multiple genomic datasets to identify candidate Rho A genes. The single-cell RNA-seq (C64, C65), H3.3 occupancy (C66), and new RNA-seq data (C67, C68) converge on rhoaa and rhoab. However, the authors appropriately note (C69) that conditional gene disruption is needed for definitive identification, acknowledging the limitation of correlative expression data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "923affe4-dbe6-48d9-b7ce-0cd6a44e4cc6",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Literature context establishes that identified proteins have known roles in relevant biological processes. Epb41l5 regulates Notch signaling involved in heart regeneration; Talin 2 couples focal adhesions to cytoskeleton; Seta may silence histone acetyltransferase-dependent transcription; and Rho A activation by ErbB2 has been implicated in cancer cell behavior and cardiomyocyte binucleation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26, C30, and C41-C43 provide literature context for identified proteins. All claims are supported by appropriate citations. These contextual claims help interpret the BioID2 findings but represent prior knowledge rather than new experimental results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    },
+    {
+      "id": "9fe950d7-d881-4274-bb6c-bee35a01f9f8",
+      "content_id": "039ba0b0-420e-407d-b002-4144149d35cf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study demonstrates proximity labeling as a useful resource for interrogating cell proteomes during tissue regeneration in zebrafish. Background context establishes that zebrafish regenerate cardiac muscle through cardiomyocyte division, that Nrg1/Vegfaa/vitamin D are instructive mitogens, and that ErbB2 signaling involves multiple downstream pathways. The authors propose broad future applicability of BioID2 approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C82 provide study conclusions and background context. The conclusion about BioID2 utility (C73) is well-supported by the experimental results. Background claims (C74-C81) are appropriately cited. The forward-looking claim (C82) is speculative but reasonable given the demonstrated success, though it represents expectation rather than demonstrated fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:20:17.521378Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b5151d9b-23cf-49d5-a452-b77bb62300cf",
+      "result_id": "713561a5-eee4-4d06-babf-cba01a96e8a9"
+    },
+    {
+      "claim_id": "0f150e4f-9cf9-433c-829b-a79838ba5267",
+      "result_id": "713561a5-eee4-4d06-babf-cba01a96e8a9"
+    },
+    {
+      "claim_id": "5d0af499-a9e5-4459-a71d-35d53257ed13",
+      "result_id": "713561a5-eee4-4d06-babf-cba01a96e8a9"
+    },
+    {
+      "claim_id": "5a6019ac-c6df-405b-a8bd-99192b899df1",
+      "result_id": "713561a5-eee4-4d06-babf-cba01a96e8a9"
+    },
+    {
+      "claim_id": "1d75b917-ce46-4272-8055-47c968d1c1d8",
+      "result_id": "713561a5-eee4-4d06-babf-cba01a96e8a9"
+    },
+    {
+      "claim_id": "10553df4-747e-4806-bf02-2671a8e075aa",
+      "result_id": "713561a5-eee4-4d06-babf-cba01a96e8a9"
+    },
+    {
+      "claim_id": "23902ae8-b48d-4deb-9a0c-06ed74d64510",
+      "result_id": "713561a5-eee4-4d06-babf-cba01a96e8a9"
+    },
+    {
+      "claim_id": "1114ae66-5e99-4c93-bb6a-89acc6451cd2",
+      "result_id": "713561a5-eee4-4d06-babf-cba01a96e8a9"
+    },
+    {
+      "claim_id": "718d1065-9428-4f01-b364-24c99b9e6e9b",
+      "result_id": "11c56aea-5b73-4b49-bf2f-05dbe89a2f73"
+    },
+    {
+      "claim_id": "8a314a2c-4319-45a5-bf68-c9c7672ec1b9",
+      "result_id": "11c56aea-5b73-4b49-bf2f-05dbe89a2f73"
+    },
+    {
+      "claim_id": "3a208d6b-f0b3-462e-aec5-bf379aa7d822",
+      "result_id": "11c56aea-5b73-4b49-bf2f-05dbe89a2f73"
+    },
+    {
+      "claim_id": "3faa08f1-9c08-4297-8288-6742559e636a",
+      "result_id": "11c56aea-5b73-4b49-bf2f-05dbe89a2f73"
+    },
+    {
+      "claim_id": "31889532-af62-488f-9db2-58835d93f13a",
+      "result_id": "11c56aea-5b73-4b49-bf2f-05dbe89a2f73"
+    },
+    {
+      "claim_id": "5c39163f-9883-4738-a638-c349738c2d44",
+      "result_id": "11c56aea-5b73-4b49-bf2f-05dbe89a2f73"
+    },
+    {
+      "claim_id": "5fbb77e7-fb31-4277-8a40-95e5aa870118",
+      "result_id": "11c56aea-5b73-4b49-bf2f-05dbe89a2f73"
+    },
+    {
+      "claim_id": "e0048302-7a63-4da8-94fe-26300847a1f9",
+      "result_id": "11c56aea-5b73-4b49-bf2f-05dbe89a2f73"
+    },
+    {
+      "claim_id": "0d36a21a-ea7a-4c67-84ac-22a70f185139",
+      "result_id": "11c56aea-5b73-4b49-bf2f-05dbe89a2f73"
+    },
+    {
+      "claim_id": "3fe6ef3f-d4ff-496d-a21c-85034efaeb75",
+      "result_id": "3ac07993-964b-447a-98e5-aa4fb7c7b31e"
+    },
+    {
+      "claim_id": "4270102f-9729-49af-ba54-19cdfc17fac4",
+      "result_id": "3ac07993-964b-447a-98e5-aa4fb7c7b31e"
+    },
+    {
+      "claim_id": "06bbd99e-c181-4641-a4c3-a0194b4ca349",
+      "result_id": "3ac07993-964b-447a-98e5-aa4fb7c7b31e"
+    },
+    {
+      "claim_id": "b1686bcb-af2d-43b6-b69f-3e26c54445b4",
+      "result_id": "3ac07993-964b-447a-98e5-aa4fb7c7b31e"
+    },
+    {
+      "claim_id": "b251d78a-b02a-4bd7-93af-28e721cf5cb2",
+      "result_id": "3ac07993-964b-447a-98e5-aa4fb7c7b31e"
+    },
+    {
+      "claim_id": "40972897-b095-4fe0-bd77-794f67d53906",
+      "result_id": "3ac07993-964b-447a-98e5-aa4fb7c7b31e"
+    },
+    {
+      "claim_id": "4ee0321b-70c3-4c95-8257-c7007536657e",
+      "result_id": "3ac07993-964b-447a-98e5-aa4fb7c7b31e"
+    },
+    {
+      "claim_id": "6895d12b-711b-4f77-a35a-a0b08d5faf51",
+      "result_id": "3ac07993-964b-447a-98e5-aa4fb7c7b31e"
+    },
+    {
+      "claim_id": "d0fd17ab-5436-4552-be96-a55d270e6d83",
+      "result_id": "3ac07993-964b-447a-98e5-aa4fb7c7b31e"
+    },
+    {
+      "claim_id": "f60531c4-362c-4472-91d7-de1b16bbb40a",
+      "result_id": "3ac07993-964b-447a-98e5-aa4fb7c7b31e"
+    },
+    {
+      "claim_id": "d942dce5-b6f4-4c60-8961-984cac10192b",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "8f34eb85-9259-4214-b19c-f9f561cd054e",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "c9ebe6a6-a58c-4fad-b23a-9cb1e7541233",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "9917c794-3022-487f-b9ba-7f56ac878f72",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "2e654a4c-2c2a-4a91-aa49-92b63671e7b1",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "52ae9851-c14c-49fe-8e4d-b49141b1bb5b",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "8f3143f0-fdbd-4efd-90c0-554aa1daf79f",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "efbb7500-f5a8-49ea-b556-d9aca049e297",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "f7f90560-f05c-4a6d-b3d3-9e2536bc49de",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "8c597140-4f8c-4c55-8c5d-20c09c4dada4",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "2a68618c-a020-4f4a-ac7d-16e72977906b",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "91e193a0-961d-4fe9-a808-25deefb272e8",
+      "result_id": "445e7423-2f56-440f-b5e4-088ddda6fa76"
+    },
+    {
+      "claim_id": "3f1d0b31-b0ed-405c-871e-c5962ef72173",
+      "result_id": "b55638b1-8563-4052-9997-eccd58be1efb"
+    },
+    {
+      "claim_id": "d7a48d44-c72d-4b38-bade-a8d4eafa0cb9",
+      "result_id": "b55638b1-8563-4052-9997-eccd58be1efb"
+    },
+    {
+      "claim_id": "60f16b10-6c77-4bd7-8e57-64345e5092ad",
+      "result_id": "b55638b1-8563-4052-9997-eccd58be1efb"
+    },
+    {
+      "claim_id": "88d589bb-0595-45f3-a1c3-3e476f37fcdb",
+      "result_id": "b55638b1-8563-4052-9997-eccd58be1efb"
+    },
+    {
+      "claim_id": "fbf3c2eb-38a3-450b-b9a7-c9fbb5231df8",
+      "result_id": "b55638b1-8563-4052-9997-eccd58be1efb"
+    },
+    {
+      "claim_id": "3d9a2b52-b67f-4f64-8f69-bb5a12e6bc8f",
+      "result_id": "b55638b1-8563-4052-9997-eccd58be1efb"
+    },
+    {
+      "claim_id": "f3498f8d-7b80-4d99-b7da-03baadbb7f60",
+      "result_id": "3067eeec-8fbf-4f31-853c-9237708da79d"
+    },
+    {
+      "claim_id": "3ff28fd4-3325-4b51-8a44-280a9163645f",
+      "result_id": "3067eeec-8fbf-4f31-853c-9237708da79d"
+    },
+    {
+      "claim_id": "ded1fce4-a27e-4932-875c-b087b03109b6",
+      "result_id": "3067eeec-8fbf-4f31-853c-9237708da79d"
+    },
+    {
+      "claim_id": "98231ebd-237d-425c-a56d-c9cda4ee38b5",
+      "result_id": "3067eeec-8fbf-4f31-853c-9237708da79d"
+    },
+    {
+      "claim_id": "635fa705-c36e-4b9b-8c45-9b1afb553532",
+      "result_id": "3067eeec-8fbf-4f31-853c-9237708da79d"
+    },
+    {
+      "claim_id": "b3a210c3-3a95-44dc-af45-a58946ac9c60",
+      "result_id": "cbca118c-c7e2-4b53-8dfb-8cccaab94e13"
+    },
+    {
+      "claim_id": "55cda3bb-cb3d-4d4b-8a5f-e411daf7f5e4",
+      "result_id": "cbca118c-c7e2-4b53-8dfb-8cccaab94e13"
+    },
+    {
+      "claim_id": "fc8dcfdb-334a-426a-86a7-c57b030a5644",
+      "result_id": "cbca118c-c7e2-4b53-8dfb-8cccaab94e13"
+    },
+    {
+      "claim_id": "6881c364-40dc-4c85-bfd4-eec839e44af1",
+      "result_id": "cbca118c-c7e2-4b53-8dfb-8cccaab94e13"
+    },
+    {
+      "claim_id": "41afaffb-17ab-4698-a6d7-55cf95052eaf",
+      "result_id": "cbca118c-c7e2-4b53-8dfb-8cccaab94e13"
+    },
+    {
+      "claim_id": "71ffb106-3c44-4bee-99d4-9ba88fc855ce",
+      "result_id": "cbca118c-c7e2-4b53-8dfb-8cccaab94e13"
+    },
+    {
+      "claim_id": "2d1bef70-a3ef-48a1-9e5e-cfa64c4e6784",
+      "result_id": "cbca118c-c7e2-4b53-8dfb-8cccaab94e13"
+    },
+    {
+      "claim_id": "aef83600-9793-4220-955f-a28f811dbdd5",
+      "result_id": "cbca118c-c7e2-4b53-8dfb-8cccaab94e13"
+    },
+    {
+      "claim_id": "67b956e7-4ffb-40b6-a1b8-f23ad36c06fb",
+      "result_id": "cbca118c-c7e2-4b53-8dfb-8cccaab94e13"
+    },
+    {
+      "claim_id": "fd0cc255-879e-4270-9938-56fc67402e37",
+      "result_id": "0af6362d-a95a-42a0-8ca3-304983fc725b"
+    },
+    {
+      "claim_id": "06ec4859-e479-442e-b47e-841b29ddea8d",
+      "result_id": "0af6362d-a95a-42a0-8ca3-304983fc725b"
+    },
+    {
+      "claim_id": "059591a8-0d67-4597-9f8d-d9bc2d94e755",
+      "result_id": "0af6362d-a95a-42a0-8ca3-304983fc725b"
+    },
+    {
+      "claim_id": "cb3e51ac-3af5-4340-bcb7-47b89e12522f",
+      "result_id": "0af6362d-a95a-42a0-8ca3-304983fc725b"
+    },
+    {
+      "claim_id": "98180261-569d-40ad-9d53-d08741023ffc",
+      "result_id": "0af6362d-a95a-42a0-8ca3-304983fc725b"
+    },
+    {
+      "claim_id": "93fa76e0-f289-4b60-95c7-defb8c28d004",
+      "result_id": "0af6362d-a95a-42a0-8ca3-304983fc725b"
+    },
+    {
+      "claim_id": "7e43db22-69f7-451c-b01f-d8b0db9fa6c5",
+      "result_id": "923affe4-dbe6-48d9-b7ce-0cd6a44e4cc6"
+    },
+    {
+      "claim_id": "4003e494-8856-4ec9-9d2e-86311d7556b1",
+      "result_id": "923affe4-dbe6-48d9-b7ce-0cd6a44e4cc6"
+    },
+    {
+      "claim_id": "3082d704-d1e6-4592-9489-06e8a6a20517",
+      "result_id": "923affe4-dbe6-48d9-b7ce-0cd6a44e4cc6"
+    },
+    {
+      "claim_id": "0fae3e47-748b-489a-9818-58ff6c804345",
+      "result_id": "923affe4-dbe6-48d9-b7ce-0cd6a44e4cc6"
+    },
+    {
+      "claim_id": "124abc16-5a18-41b6-b1b1-d3411796ff6e",
+      "result_id": "923affe4-dbe6-48d9-b7ce-0cd6a44e4cc6"
+    },
+    {
+      "claim_id": "3656bb15-a642-42ae-b099-e1deedac1fee",
+      "result_id": "923affe4-dbe6-48d9-b7ce-0cd6a44e4cc6"
+    },
+    {
+      "claim_id": "62ce52a9-72d4-47b7-9ccc-a3eea308b05e",
+      "result_id": "923affe4-dbe6-48d9-b7ce-0cd6a44e4cc6"
+    },
+    {
+      "claim_id": "7d606185-1e52-4c39-974a-94e4785d0e1f",
+      "result_id": "9fe950d7-d881-4274-bb6c-bee35a01f9f8"
+    },
+    {
+      "claim_id": "edf281c5-ce7f-425f-a6a7-309c74ba022f",
+      "result_id": "9fe950d7-d881-4274-bb6c-bee35a01f9f8"
+    },
+    {
+      "claim_id": "9e504049-8888-4062-b618-219882d95992",
+      "result_id": "9fe950d7-d881-4274-bb6c-bee35a01f9f8"
+    },
+    {
+      "claim_id": "04e2256b-df9b-43f9-93aa-e5204b46b2a8",
+      "result_id": "9fe950d7-d881-4274-bb6c-bee35a01f9f8"
+    },
+    {
+      "claim_id": "c895f86b-c637-4b75-bc20-3208274dbe0a",
+      "result_id": "9fe950d7-d881-4274-bb6c-bee35a01f9f8"
+    },
+    {
+      "claim_id": "c6116fbe-639f-4151-83fb-65fd45977806",
+      "result_id": "9fe950d7-d881-4274-bb6c-bee35a01f9f8"
+    },
+    {
+      "claim_id": "085cf53b-1219-40f5-9d9f-d9882b0f0741",
+      "result_id": "9fe950d7-d881-4274-bb6c-bee35a01f9f8"
+    },
+    {
+      "claim_id": "f95378e2-0d67-460b-ad0b-9dea663b3768",
+      "result_id": "9fe950d7-d881-4274-bb6c-bee35a01f9f8"
+    },
+    {
+      "claim_id": "ca72fce9-27c7-442d-8044-ba39f66f3b90",
+      "result_id": "9fe950d7-d881-4274-bb6c-bee35a01f9f8"
+    },
+    {
+      "claim_id": "666b5e3d-a807-4e50-95df-964414996ca7",
+      "result_id": "9fe950d7-d881-4274-bb6c-bee35a01f9f8"
+    }
+  ],
+  "comparisons": []
+}

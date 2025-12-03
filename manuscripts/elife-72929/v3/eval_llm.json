@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Lead-OR is an open-source software platform implemented as a 3D Slicer extension that integrates stereotactic planning, neuroimaging, microelectrode recordings, and high-resolution atlas data for DBS surgery visualization. The system uses coordinate transformations to align imaging, frame, and atlas spaces, incorporates automated normalization with manual refinement via the novel WarpDrive tool, and supports real-time visualization of up to five trajectories with the Ben-Gun configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C14, C42-C53, C116-C118 collectively describe the implementation, technical architecture, and capabilities of Lead-OR. The methods are clearly documented with appropriate citations to underlying tools (3D Slicer, ANTs, Lead-DBS). The automated normalization approach is validated by cited prior work (C50, C51), and the novel WarpDrive refinement method addresses known limitations in subcortical registration (C52). The technical implementation details are internally consistent and sufficiently detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C54",
+      "C55",
+      "C56",
+      "C17",
+      "C18",
+      "C19",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Lead-OR provides real-time integration with the NeuroOmega system via C++ SDK to stream microelectrode position and electrophysiological recordings, processing them to extract NRMS and spike cluster features that are visualized spatially along trajectories. Feature computation takes a few seconds depending on hardware, with NRMS normalized to the first five stable steps and visualized as tubes with varying radius and color, while spike clusters meeting quality criteria (\u2265100 spikes, <10% ISI <3ms, SNR \u22651.5) are represented as spatial fiducials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C17-C19, C54-C61 describe the real-time electrophysiology processing pipeline with clear methodological details. The NRMS computation cites an established method (C17), and spike sorting uses the validated WaveClus pipeline (C18) with reasonable quality control criteria (C19). The assumption of single-unit activity (C60) is explicitly stated and justified. The computational performance (C56) is appropriately qualified as hardware-dependent. The visualization approaches are clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The tool was validated using a retrospective cohort of 52 DBS patients undergoing STN-DBS surgery with 2-5 microelectrodes in Ben-Gun configuration, recording from 10mm above to 4mm below target. After excluding 4 patients for poor imaging quality, 16 for poor electrophysiology, and 8 additional hemispheres, the final analyzed cohort consisted of 32 patients (56 hemispheres) with 236 trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C25, C69-C76 describe the patient cohort and surgical procedures with clear inclusion/exclusion criteria. The sample size reduction from 52 to 32 patients is transparently reported with reasons (imaging quality, electrophysiology quality). The surgical protocols are standard for DBS procedures and adequately described. The quality control criteria for excluding segments (artifacts, <4s duration) are reasonable. The final sample of 236 trajectories from 32 patients provides sufficient data for group analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C90"
+    ],
+    "result": "Group analysis of 236 trajectories showed that recorded NRMS activity from inside the imaging-defined STN was significantly higher than recordings from outside (p<0.01, Wilcoxon signed-rank test with FDR correction). The cluster density volume showed 95% overlap with the STN region at a 50% cluster density threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, C90 present the primary validation results with appropriate statistical testing. The comparison between top 20% and bottom 20% of trajectories sorted by distance to STN is a reasonable approach. The use of nonparametric Wilcoxon signed-rank test is appropriate for this data, and FDR correction for multiple comparisons is properly applied (C90). The 95% overlap at 50% threshold (C28) provides quantitative support for correspondence between imaging and electrophysiology. The results are supported by Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Brain shift was quantified using postoperative CT-based correction via Lead-DBS pipeline, with the median displacement taken as the imaging-based brain shift estimate for each trajectory. An electrophysiology-based brain shift estimate was derived by cross-correlating NRMS and STN distance signals along trajectories, with the lag at maximum cross-correlation serving as the shift indicator. Trajectories were sorted by cross-correlation and split, with high-lag defined as >1 SD above mean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C77-C89 describe a novel approach to estimate brain shift using both imaging and electrophysiology. The imaging-based method using postoperative CT is standard and well-cited (C26). The electrophysiology-based approach using cross-correlation is methodologically sound, though novel. The data processing steps (inverse tangent transformation C85, cross-correlation C86, trajectory sorting C87-C89) are clearly described. The approach is internally consistent and represents a reasonable attempt to infer brain shift from intraoperative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Brain shift analysis demonstrated that some discrepancies between imaging and electrophysiology are associated with brain shift occurrence. The cross-correlation-derived features may be used as indicators to quantify discrepancies between MER and imaging data in real-time settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C35 present interpretations of the brain shift analysis. While C34 states that brain shift analysis 'demonstrated' associations, the evidence is correlational and the causal relationship is inferred rather than directly proven. C35 proposes a potential application ('may be used') which is speculative and acknowledged as requiring future validation. The claims are reasonable interpretations but lack the definitive validation needed for full support. Figure 5\u2014figure supplement 1 shows significant differences (p=0.0076) and correlation (R=0.40, p=0.016) supporting some association, but the moderate correlation suggests other factors also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C80",
+      "C81"
+    ],
+    "result": "Most clinical active contact coordinates from follow-up visits (3-44 months post-surgery) lie inside the STN and coincide with high-activity regions depicted by microelectrode recordings. Active contacts were reconstructed using Lead-DBS pipeline and projected to nearest trajectory points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C80-C81 describe the relationship between clinically effective stimulation sites and MER activity. The follow-up period (3-44 months) is adequate for assessing clinical outcomes. The electrode reconstruction method using Lead-DBS is established. The qualitative observation that most active contacts lie within STN and high-activity regions (C31) is supported by Figure 5\u2014figure supplement 3, though this is descriptive rather than statistically tested. The projection to nearest trajectory is a reasonable approximation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "The stimulation module estimates volume of tissue activated using the simplified Dembek et al. 2017 method and visualizes fiber tractography using normative atlas-based fibers when patient-specific dMRI is unavailable. This module is exploratory and requires further validation studies to titrate parameters and validate on larger cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20, C62-C65, C67 describe the stimulation visualization module. The VTA estimation method is cited (C20) but simplified. The use of normative fibers (C64-C65) is reasonable when patient-specific data is unavailable, with cited advantages. However, C67 explicitly states this is 'exploratory' and 'lacking' validation data, requiring 'further studies.' The authors appropriately acknowledge this limitation. The module demonstrates feasibility but lacks the validation needed for confident clinical application. Only a single case example is shown (Figure 6).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The agreement between imaging and electrophysiology data is not 100%, with activity observed outside imaging-defined STN boundaries and vice versa. Data collection was retrospective with inconsistent recording durations and step distances, though signal quality was sufficient for expert-based clinical decision-making. The main aim was to demonstrate tool feasibility rather than investigate specific neuroscientific questions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C95-C97 acknowledge important limitations. The imperfect correspondence between modalities (C33) is honestly reported and expected given brain shift and other factors. The retrospective data limitations (C95) are clearly stated. The justification that signal quality was sufficient for clinical use (C96) provides important context. The clarification of study aims (C97) appropriately frames the work as a feasibility demonstration rather than definitive neuroscientific investigation. These limitations are appropriately acknowledged and do not undermine the primary contribution of the tool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C91",
+      "C92",
+      "C93",
+      "C103",
+      "C104"
+    ],
+    "result": "Lead-OR is not approved by regulatory authorities and is intended for purely research-driven purposes under IRB approval. The tool should be seen as a satellite application to augment existing intraoperative electrophysiology software by projecting recorded signals to anatomical space, running in parallel rather than replacing existing tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C91-C93, C103-C104 clearly state the regulatory status and intended use of the tool. The authors are appropriately transparent that the tool lacks regulatory approval (C32, C103) and is restricted to IRB-approved research (C104). The positioning as a complementary 'satellite application' (C91-C93) rather than replacement for existing clinical tools is reasonable and clearly communicated. This framing appropriately manages expectations and potential risks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C94"
+    ],
+    "result": "Optimal registration accuracy requires multispectral preoperative images with specialized sequences optimized for basal ganglia. Anesthesia and wakefulness impact recordable neurophysiological activity patterns. Cardioballistic artifacts and gradual tissue displacement causing spike amplitude attenuation are recognized problems in spike-sorting algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C38, C94 describe known limitations and technical considerations. The recommendation for specialized imaging sequences (C36) is appropriately cited. The acknowledgment of anesthesia effects (C38) is important for interpreting electrophysiology data. The recognition of spike-sorting challenges (C94) demonstrates awareness of technical limitations. These are well-established issues in the field and appropriately acknowledged as considerations for the methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The introduction contextualizes Lead-OR within existing DBS surgical practice and prior work, noting that roughly every fifth patient's surgical plan is altered based on electrophysiology at the authors' center, brain shift can cause nonlinear displacement, and modern imaging and reconstruction methods have become increasingly precise for DBS targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C105-C115 provide background context with appropriate citations. The institutional experience (C4) is qualified as specific to their center with similar reports from others. The brain shift phenomenon (C5) and its monitoring challenges are well-cited. The review of prior work on imaging methods (C108-C111), atlas resources (C113-C115), and navigated surgery (C107) appropriately positions the current work. The HaGuide system regulatory status (C6) is explicitly stated. These contextual claims are well-supported by citations and provide appropriate background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Future developments include upcoming ultra-high-resolution atlas resources (BigBrain at 1 \u00b5m resolution, normative connectome at 760 \u00b5m resolution) and planned integrations with additional planning and recording systems beyond the currently supported Brainlab Elements and NeuroOmega platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C119-C121 describe future developments and planned extensions. The citations of upcoming atlas resources (C39-C40) are appropriately referenced. The statements about planned future integrations (C119-C121) are clearly framed as intentions rather than current capabilities. These forward-looking statements are reasonable given the open-source nature of the project and do not overstate current functionality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "All processed data and code are made openly available in deidentified form via GitHub. Raw patient data cannot be publicly shared due to privacy regulations but can be made available upon reasonable request after establishing a data-sharing agreement. The study was approved by the local ethics committee (EA2/145/21) and did not require explicit patient consent per local and NIH guidelines for retrospective deidentified data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 describe data availability and ethics compliance. The open sharing of processed data and code (C98) supports reproducibility. The restrictions on raw data (C99-C100) are appropriate given privacy regulations. The ethics approval (C101) and justification for waived consent (C102) follow standard practices for retrospective studies with deidentified data. These statements are consistent with responsible data sharing practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The Ben-Gun configuration features posterolateral and anteromedial trajectories 2 mm apart from the central trajectory. Subcortical nuclei are warped to patient space via manually refined normalization. An automatic preprocessing pipeline using NORA platform is implemented at the authors' center but is center-specific and not discussed in detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 provide technical details from figure captions and methods. The Ben-Gun geometry (C122) is standard and clearly described. The atlas warping approach (C123) is consistent with the main methods. The automated preprocessing pipeline (C124-C126) is appropriately noted as center-specific and not central to the main contribution. These descriptive claims are straightforward and supported by the figures.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "C. elegans exhibit two persistent foraging states - roaming and dwelling - that last tens of minutes with abrupt transitions. These states are regulated by opposing neuromodulators: serotonin (5-HT) acting through MOD-1 stabilizes dwelling, while PDF neuropeptides acting through PDFR-1 drive roaming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are all supported by citations to prior work (Ben Arous et al., 2009; Fujiwara et al., 2002; Flavell et al., 2013; etc.). This represents established background knowledge from the field that provides the foundation for the current study. The claims are internally consistent and well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Circuit-wide calcium imaging revealed that 9 of 10 recorded neurons exhibited activity changes during roaming-dwelling transitions. Forward-active neurons (AVB, AIY, RIB) and the reversal-active neuron AVA showed reduced activity during dwelling, while the serotonergic neuron NSM was more active during dwelling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 are supported by data in Figures 1D-E and supplementary figures. The observations are consistent with prior literature on these neurons' roles in locomotion control. The imaging data clearly shows state-dependent activity patterns across the recorded neurons, providing direct experimental evidence for the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Principal component analysis revealed that the top two PCs explained 44% of variance in neural activity. PC1 encoded movement direction (forward vs. reverse) with contributions from locomotion neurons, while PC2 encoded speed and foraging state with strong positive contribution from NSM and negative contributions from locomotion neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 are supported by PCA analysis shown in Figures 1F-G and Figure 1\u2014figure supplement 7. The analysis appropriately identifies the main modes of circuit dynamics and their behavioral correlates. The loadings and projections are clearly presented and interpretable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Statistical models successfully predicted behavior from neural activity: a nonlinear regression model predicted velocity with high accuracy, and a logistic regression model achieved >95% accuracy in predicting roaming/dwelling states using all 10 neurons, with above-baseline accuracy using only NSM or roaming-active neurons (AIY, RIB, AVB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by data in Figures 1H-I. The high prediction accuracies demonstrate that neural activity in this circuit is sufficient to predict behavioral states. However, the methods section lacks details on cross-validation procedures and potential overfitting controls, which would strengthen confidence in the generalizability of these models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "NSM activity was specifically associated with dwelling states: it increased during dwelling compared to roaming, was not correlated with speed within roaming or with movement direction, preceded dwelling onset by ~23 seconds, and the duration of NSM activity bouts correlated with dwelling state duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are supported by data in Figures 2A-D. The temporal relationship between NSM activation and dwelling onset is clearly demonstrated. The correlation between NSM bout duration and dwelling duration (C29) provides strong evidence for NSM's role in maintaining dwelling states. The 23-second latency is precisely quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Optogenetic stimulation of NSM inhibited roaming-active neurons (AVB, AIY, RIB) and decreased animal speed, effects that were largely abolished in mod-1 mutants lacking the 5-HT-gated chloride channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by data in Figure 2G and Figure 2\u2014figure supplement 1C, along with citations to prior work. The optogenetic experiments demonstrate causal effects of NSM activation, and the mod-1 dependence confirms the mechanism involves serotonin signaling through this receptor. The use of low ATR concentration to avoid background activation is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Mutants disrupting 5-HT signaling (tph-1, mod-1) showed decreased dwelling time, attenuated association between NSM activity and reduced speed, dramatically shortened NSM activity bouts, and decreased fraction of time NSM was active, indicating that 5-HT signaling is required to sustain NSM activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by data in Figures 3A-E and supplementary figures. The genetic perturbations provide strong evidence for 5-HT's role in sustaining NSM activity. The surprising finding that NSM activity itself requires 5-HT signaling (C34-C36) is well-documented with quantitative data on bout durations and activity fractions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Optogenetic activation of mod-1-expressing neurons inhibited NSM activity, demonstrating that the serotonergic NSM neuron promotes its own activity via mutual inhibition with neurons expressing the inhibitory 5-HT receptor MOD-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by data in Figure 3F-G. The optogenetic experiment directly demonstrates that mod-1-expressing neurons can inhibit NSM. Combined with the genetic data showing NSM requires 5-HT signaling, this supports the mutual inhibition model. However, the polysynaptic or neuromodulatory nature of this inhibition (noted in text) means the circuit mechanism is not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In wild-type animals, NSM and AVB exhibited mutually exclusive activity patterns, which was strongly disrupted in pdfr-1 mutants where the neurons were frequently co-active. pdfr-1 animals moved at intermediate speeds between typical roaming and dwelling speeds, indicating PDF signaling is required for mutual exclusivity between NSM and roaming-active neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by data in Figures 4C-D and supplementary figures. The disruption of mutual exclusivity in pdfr-1 mutants is clearly demonstrated. The intermediate speed phenotype (C42) is well-documented in Figure 4\u2014figure supplement 5A-B. Multiple normalization methods confirmed the co-activity phenotype (Figure 4\u2014figure supplement 4), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "NSM activity bouts were more persistent in pdfr-1 mutants than wild-type. Constitutive activation of PDFR-1 signaling strongly inhibited NSM activity, and optogenetic activation of pdf-1-expressing neurons acutely inhibited NSM, demonstrating that PDF signaling is necessary and sufficient to keep NSM inactive during roaming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by data in Figures 4B, 4E-G and supplementary figures. The genetic and optogenetic experiments provide complementary evidence for PDF's role in suppressing NSM. The gain-of-function experiment with hyperactive ACY-1(P260S) (C46) provides particularly strong evidence for sufficiency. The conclusion of necessity and sufficiency (C48) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "tph-1;pdfr-1 double mutants resembled pdfr-1 single mutants in NSM activity persistence, NSM-AVB co-activation probability, and intermediate speed locomotion, suggesting pdfr-1 functions downstream of tph-1 to control NSM activity and locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by epistasis analysis data in Figures 4C-F and Figure 4\u2014figure supplement 5A-B. The double mutant phenotype resembling the pdfr-1 single mutant is consistent with pdfr-1 acting downstream. However, epistasis analysis can be complex to interpret, and alternative models (e.g., parallel pathways with PDF being more critical) could potentially explain the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Optogenetic activation of mod-1-expressing neurons triggered high-speed locomotion in wild-type animals but failed to do so in pdfr-1 mutants, indicating that pdfr-1-expressing neurons act downstream of mod-1-expressing neurons to promote roaming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by data in Figure 4H-I. The optogenetic epistasis experiment complements the genetic epistasis analysis and supports the proposed circuit architecture. The failure of mod-1 neuron activation to induce roaming in pdfr-1 mutants is clear evidence for the downstream relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The mutually inhibitory interaction between NSM and neurons expressing MOD-1 and PDFR-1 receptors is necessary to stabilize the opposing neural activity and behavioral patterns underlying roaming and dwelling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 synthesizes findings from multiple experiments (Figures 2-4). The genetic and optogenetic perturbations consistently show that disrupting either side of the mutual inhibition destabilizes the circuit states. The persistence changes in mutants and the mutual exclusivity disruption provide strong support for this circuit architecture model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A CNN classifier achieved >70% accuracy in predicting NSM activation from preceding neural activity. The classifier identified AIA, RIB, and AVA as key predictive neurons, with increased AIA activity and decreased RIB/AVA activity predicting NSM activation. Networks trained on only these three neurons performed nearly as well as those using all neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are supported by CNN analysis in Figure 5 and supplementary figures. The machine learning approach appropriately identifies predictive features. The feature ablation experiments (C59-C60) provide strong evidence for the importance of AIA, RIB, and AVA. However, the methods section could provide more details on preventing overfitting and ensuring generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "During roaming, AIA activity was positively correlated with forward-active neurons (RIB) and negatively with reversal-active neurons (AVA). Within 30s of NSM activation, AIA increased further while RIB/AVA decreased. As animals entered dwelling, RIB/AVA declined sharply while AIA became correlated with NSM, indicating AIA co-varies with different neurons depending on behavioral state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by data in Figure 5C-G. The state-dependent correlation structure is clearly demonstrated through multiple analyses. The temporal dynamics around state transitions are well-characterized. This provides important context for understanding how AIA integrates into the circuit differently during roaming versus dwelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Optogenetic activation of AIA had state-dependent effects: roaming animals showed rapid, transient speed decrease, while dwelling animals showed gradual speed increase. This indicates AIA activation can trigger roaming-to-dwelling transitions within seconds and promote roaming entry after tens of seconds of continued activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by data in Figure 6A-B. The bidirectional effects of AIA activation depending on initial state are clearly demonstrated. The different timescales (seconds for dwelling entry, tens of seconds for roaming entry) are well-documented. This is a key finding showing AIA's dual role in the circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In tph-1 mutants, AIA activation failed to induce rapid dwelling entry from roaming and increased roaming probability from dwelling. In pdfr-1 mutants, AIA activation failed to promote roaming from dwelling. This suggests AIA promotes dwelling via 5-HT signaling and promotes roaming via PDF signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by data in Figure 6A-B. The genetic dissection of AIA's effects clearly demonstrates differential requirements for the two neuromodulatory systems. The interpretation that AIA has parallel outputs to both systems (C73) is well-supported by the complementary defects in the two mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "AIA activation at lower light intensities primarily elicited roaming-to-dwelling transitions, while higher intensities elicited dwelling-to-roaming transitions. Because these responses depend on different neuromodulatory systems and can be elicited independently, AIA likely provides independent outputs to the PDF and 5-HT systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by data in Figure 6C-D. The intensity-dependent effects provide additional evidence for dual outputs. However, the interpretation of 'independent outputs' (C75) is somewhat speculative - intensity-dependent recruitment of different downstream pathways could also reflect graded activation of a common output mechanism. The claim is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Based on the C. elegans connectome, AIA receives ~80% of its synaptic inputs from chemosensory neurons. Previous work showed AIA is activated by increases in attractive food odorants and promotes forward runs when animals detect odor increases in the absence of food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by connectome data (Cook et al., 2019; White et al., 1986) shown in Figure 6\u2014figure supplement 1 and citations to prior functional studies (Larsch et al., 2015; Dobosiewicz et al., 2019). This provides important context for AIA's role as a sensory processing neuron that could link odor detection to state transitions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In a patch foraging assay with a food odor gradient, wild-type animals exhibited directed motion toward dense food, spent more time roaming, and preferentially switched to dwelling when their heading deviated from the food patch. Chemosensation-defective tax-4 mutants failed to show elevated roaming or couple state transitions to movement direction, indicating dynamic odor concentration changes influence roaming-dwelling transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by data in Figure 7A-D and supplementary figures. The patch foraging assay provides an ecologically relevant context for studying state transitions. The tax-4 mutant control (C83) demonstrates the sensory dependence of the observed behaviors. The inference about odor concentration changes (C82) is reasonable given the heading direction effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "AIA-silenced animals showed decreased roaming in the patch foraging assay and did not selectively enter dwelling when movement direction deviated from the food patch, indicating AIA is necessary for elevated roaming in odor gradients and for coupling movement direction with roaming-to-dwelling transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by data in Figure 7E and Figure 7\u2014figure supplement 1B. The AIA silencing experiments demonstrate AIA's necessity for the sensory-dependent modulation of foraging states. The loss of directional coupling of state transitions is particularly important for understanding AIA's role in sensory-guided behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "In the patch foraging assay, pdfr-1 mutants failed to increase roaming but retained some coupling of state transitions to movement direction, while tph-1 mutants showed increased roaming but lost directional coupling of state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by data in Figure 7\u2014figure supplement 1C-D. The differential effects of the two mutants provide insight into the distinct roles of PDF and 5-HT signaling in AIA's control of foraging states. The dissociation between roaming levels and directional coupling is informative about the circuit mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "In uniform food environments, AIA-silenced animals showed significantly decreased dwelling time, suggesting AIA functions to promote dwelling in constant sensory environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by data in Figure 7F. The decreased dwelling in uniform environments contrasts with AIA's role in promoting roaming in odor gradients, supporting the context-dependent function of AIA. However, the interpretation (C90) could be strengthened with additional controls or mechanistic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "AIA can promote either roaming or dwelling, depending on the overall sensory environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 synthesizes findings from the patch foraging and uniform food experiments (Figures 7E-F). The contrasting effects of AIA silencing in different sensory contexts (promoting roaming in gradients, promoting dwelling in uniform environments) support this conclusion. This is a key finding about sensory context-dependent circuit function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study reveals a circuit architecture where mutual inhibition between NSM and 5-HT/PDF target neurons promotes stability and mutual exclusivity of roaming and dwelling states, while AIA sends parallel outputs to both neuromodulatory systems and biases the network toward different states in different sensory contexts, allowing persistent yet flexible behavioral states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 represent the main conclusions synthesizing all findings. The mutual inhibition mechanism (C92) is well-supported by the genetic and optogenetic experiments. AIA's parallel outputs (C93) are supported by the differential effects in tph-1 and pdfr-1 mutants and intensity-dependent optogenetic responses. The overall circuit architecture (C94) is a reasonable synthesis of the data, though some mechanistic details remain to be fully resolved.",
+    "result_type": "MAJOR"
+  }
+]

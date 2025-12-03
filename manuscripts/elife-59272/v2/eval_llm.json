@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript provides background on thalamic structure and function, describing the thalamus as a forebrain structure composed primarily of excitatory thalamocortical neurons organized into >30 nuclei, with functions ranging from sensory relay to cognitive processes, and local circuits dominated by GABAergic interneurons rather than excitatory-excitatory connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are all supported by citations to published literature and represent established knowledge about thalamic anatomy and function. These are background claims that set the context for the study rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript reviews prior work showing that interneuron numbers and distribution vary widely across species, with interneurons restricted to visual thalamus in smaller-brained mammals (~6% of neurons) but present throughout the thalamus in primates (~30%), suggesting evolutionary significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 are supported by citations to comparative neuroanatomy studies across reptiles, birds, and mammals. These establish the comparative context and motivation for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript reviews prior work on thalamic interneuron origins, including the authors' previous finding that mouse LGd interneurons derive from an En1+Gata2+Otx2+Sox14+ midbrain lineage, and human studies suggesting ganglionic eminence origins for MD and pulvinar interneurons, while noting that cortical interneuron classes show conserved subpallial origins across vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 are supported by citations to published work, including the authors' previous study (C15) and comparative studies of cortical interneuron origins (C18-C20). These provide the rationale for investigating thalamic interneuron ontogeny but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript establishes Sox14 as a marker for thalamic interneurons, noting that all LGd interneurons express Sox14, that the Sox14GFP/+ mouse line is a useful tool, that public databases confirm a Sox14+ transcriptional cluster corresponding to LGd interneurons, and that Sox14 is expressed in inhibitory lineages outside the telencephalon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are supported by citations to the authors' previous work (C21-C22), public database analysis (C23), and published studies of Sox14 expression (C24). These establish the molecular tools and rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Using automated counting of GFP+ cells in P21 Sox14GFP/+ mice via two-photon tomography, the authors identified 6,588\u00b1811 Sox14+ cells across TC nuclei, with distribution skewed toward sensory nuclei and first-order regions, most abundant in LGd (1,234\u00b182) and LP (411\u00b1110), with sparse cells in limbic nuclei (MD, LD, PF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by quantitative data from automated cell counting validated against prior stereological studies (C25 matches published LGd counts). The distribution pattern is clearly documented in figures and represents a comprehensive mapping of Sox14+ interneurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In P14 Sox14GFP/+ mice, all GFP+ cells co-expressed Gad1 (100%) and represented virtually all GABAergic cells in FO sensory nuclei (\u226598%), but unexpectedly 22.1\u00b14.0% of total GABAergic cells were GFP-Gad1+, spatially non-overlapping with Sox14+ cells and enriched in rostral TC territory, particularly MD (29.6\u00b14.5%) and LD (19.4\u00b13.1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by quantitative immunohistochemistry and in situ hybridization data from three P14 brains. The identification of a Sox14-negative GABAergic population is a key finding, though sample size is modest (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Spatial analysis using nearest neighbor distances and k-means clustering demonstrated that Sox14+Gad1+ and Sox14-Gad1+ interneurons occupy two distinct spatial clusters (silhouette score optimal at k=2), with Sox14- cells located more rostrally and medially, containing 94.9\u00b11.4% of Sox14+ cells and 81.0\u00b10.3% of Sox14- cells respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by quantitative spatial analysis with appropriate statistical tests (Kolmogorov-Smirnov, p<1.4\u00d710\u207b\u00b3\u2070) and machine learning clustering. The analysis provides strong evidence for spatial segregation of the two interneuron classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In neonatal marmoset thalamus, fluorescent ISH revealed widespread SOX14+GAD1+ interneurons across all major TC nuclei (90.2\u00b10.9% of GAD1+ cells), absent from prethalamic structures but present in SubG, with exceptions in MD (28.7\u00b16.7% SOX14-GAD1+) and LD (52.3\u00b12.8% SOX14-GAD1+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by quantitative fluorescent ISH data from three marmoset brains. The finding of abundant SOX14+ interneurons in primates is significant, though the sample size is limited (n=3) and the analysis is restricted to selected nuclei.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In Sox14 knockout mice, there was a >90% reduction in GFP+ interneurons across LGd, LP, VP, PO, and MG (90.5\u00b11.5%, p=2.7\u00d710\u207b\u2074), while Sox14-Gad1+ cell numbers and distribution were unchanged (p=0.4 and p>0.05 respectively), indicating two distinct developmental GABAergic lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by quantitative data with appropriate statistical tests (t-test, chi-squared) from three brains per genotype. The differential requirement for Sox14 provides strong genetic evidence for distinct lineages, though the inference about developmental segregation (C50) requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Using En1Cre fate mapping, the authors demonstrated that En1+ cells (midbrain-derived) were present in LGd, LP, VP, PO, and MG where they co-expressed GABA, with distribution equivalent to Sox14+ interneurons (p>0.05), leading to the conclusion that Sox14+ interneurons derive from the midbrain while Sox14- cells do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by fate mapping data with appropriate statistical comparison (chi-squared test). The En1 lineage tracing provides strong evidence for midbrain origin of Sox14+ interneurons, though the negative inference about Sox14- cells (C55) is based on absence of labeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Developmental analysis of En1Cre;Rosa26lsl-GFP mice showed no GFP+ cells in thalamus at E16.5, with progressive increase from E17.5 to P2.5 in LGd, LP, and VP following a similar timeline, with simultaneous appearance in LGd and VP suggesting distinct migratory routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by quantitative developmental time course data validated against published studies (C56, C58). The inference about distinct routes (C61) is reasonable based on simultaneous appearance in spatially separated nuclei, though direct evidence of migration paths is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Leading process orientation analysis revealed that midbrain-derived interneurons migrate in a caudo-rostral and dorso-ventral direction at the population level, but with dominant medio-lateral orientation in LGd/LP versus latero-medial in VP, suggesting two distinct migratory streams splitting between visual and somatosensory nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by quantitative analysis of leading process orientation shown in heat maps and polar histograms. The analysis provides evidence for distinct migratory streams, though the inference (C65) is based on population-level data and individual cell tracking was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors identified Pvalb as a marker for Sox14- interneurons, showing that Sox14 and Pvalb have non-overlapping expression in DropViz data, that Pvalb+ cells in TC regions co-express GABA (93.9%) but not En1 or Sox14 reporters, and that Pvalb expression is not conserved across rodents and primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 are supported by analysis of public databases (C66), citations to published work (C67-C68, C71), and quantitative immunohistochemistry data (C69, C72-C74). The definition of Sox14- cells as Pvalb+ (C75) is reasonable but based on limited sample sizes (n=2-4 brains).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Using Dlx5/6Cre fate mapping, the authors showed that virtually all TC Pvalb+ cells are Dlx5 lineage (99.71\u00b10.29%), with majority co-expressing GABA (93.6\u00b13.7%), and distribution closely recapitulating Sox14-Gad1+ cells (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by quantitative fate mapping data from three brains with appropriate statistical comparison. The high percentage of Pvalb+ cells in the Dlx5 lineage provides strong evidence for forebrain origin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Further fate mapping showed that the vast majority of Pvalb+ cells derive from Foxd1+ progenitors (85.56\u00b12.1%) and virtually all co-express GABA (96.43\u00b11.63%), while none belonged to Nkx2.1+ or Lhx6+ lineages, excluding hypothalamus and ganglionic eminences and identifying the prethalamus as the source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 are supported by quantitative fate mapping data from multiple Cre lines (n=3-5 brains per line). The systematic exclusion of alternative sources through negative results (C81, C83) is appropriate, though the conclusion about prethalamic origin (C86) relies on process of elimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study reveals previously unappreciated complexity of mouse thalamic interneurons, demonstrating their presence across modalities and hierarchical levels including limbic structures, with two broad classes defined by origin in En1+ midbrain or Dlx5+Foxd1+Nkx2.1-Lhx6- forebrain, with the midbrain-derived class overwhelmingly more abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are summary statements supported by the collective data from the study. The identification of two ontogenetically distinct interneuron classes with differential abundance represents a major advance in understanding thalamic interneuron organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The midbrain-derived interneurons depend on Sox14, a gene previously implicated in LGd interneuron differentiation and known as a postmitotic marker for GABAergic neurogenesis in the brainstem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by the Sox14 knockout data (C47) and citations to published studies. The dependence on Sox14 is demonstrated by the >90% reduction in the knockout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors speculate that the midbrain ontogenetic programme may be the dominant source of thalamic interneurons in larger-brained mammals, supported by SOX14+GAD1+ interneurons in marmoset, consistency with recent reports in macaque and human showing SOX14 differentiates interneuron subclasses with SOX14- cells being DLX1-6+, and developmental expression patterns in human brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 combine speculation (C93) with supporting evidence from marmoset data (C42-C45), citations to recent primate studies (C94-C95), and human developmental atlas data (C97). The speculation is reasonable but requires additional validation in other species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors cite comparative evidence from chick/quail grafting experiments showing midbrain cells can populate diencephalic nuclei, lineage tracing showing clonally related cells in diencephalon and mesencephalon, and similarity to opossum interneuron distribution where interneurons occupy the lateral LP subdivision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 are supported by citations to published comparative studies. These provide evolutionary context for the findings but are not novel results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In both mouse and marmoset, Sox14-Gad1+ interneurons have drastically more restricted distribution, enriched in HO nuclei including MD and LD, with the mouse class also found in sensory-related LP and PO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by the distribution data from both species (C36, C45). The conservation of enrichment in MD and LD across species is notable, though the distributions are not identical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "A dual midbrain and forebrain ontogeny emerges as the conserved mammalian blueprint for thalamic interneuron organization, with the midbrain-derived class contributing the largest proportion and the forebrain-derived class enriched in selected HO nuclei, though in mouse these are spatially segregated while in marmoset the midbrain-derived class is more broadly distributed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 are summary statements supported by the collective data from mouse and marmoset. The identification of a conserved dual ontogeny with species-specific differences represents a major conceptual advance, though the marmoset data is more limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The authors note that the forebrain-derived human lineage previously described is thought to be an evolutionary innovation migrating from ganglionic eminences along transient structures not present in rodents/non-human primates, and propose that mouse/marmoset Sox14-Gad1+ interneurons are specified in Nkx2.1-Lhx6-Dlx5+Foxd1+ prethalamus rather than subpallium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by citation to published human studies (C110) and the fate mapping data excluding subpallial sources (C76-C86). The prethalamic specification model (C111) is well-supported by the systematic fate mapping experiments.",
+    "result_type": "MAJOR"
+  }
+]

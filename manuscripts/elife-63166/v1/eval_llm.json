@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The authors designed and implemented a novel Pavlovian procedure with three conditions (value-increase, value-decrease, value-fixed) in which visual cues indicated liquid reward values that gradually changed or remained static. The experimental design included appropriate controls, fixed timing parameters, and behavioral validation through a choice task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is well-documented with clear methodological details (C21-C38, C130-C154). The choice task validation (C39-C40) demonstrates that monkeys correctly predicted reward values based on visual cues, supporting the validity of the experimental paradigm. Appropriate controls and ethical approvals are documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Monkeys correctly predicted reward values according to the size of the green area in the visual cue, as demonstrated by their choice behavior showing significantly higher selection rates for stimuli with larger green areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral validation is supported by statistical analysis (C39: p<10^-13 for both monkeys, Wilcoxon signed-rank test) showing that choice rate significantly correlated with value difference. This provides strong evidence that monkeys understood the cue-reward relationship, validating the experimental paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C7",
+      "C9",
+      "C126"
+    ],
+    "result": "A subset of dopamine neurons (19/99 for value-increase, 15/99 for value-decrease) exhibited tonic changes in firing rate that tracked gradually changing reward values, with neurons showing either tonic increases during value increases or tonic decreases during value decreases, but rarely both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding is supported by statistically significant population-level effects (C49: p=0.029; C53: p=0.01) and individual neuron analyses (C48, C52). The lack of correlation between tonic increases and decreases (C56: r=0.048, p=0.64) indicates distinct neural populations. However, only 19-34% of neurons showed these effects, raising questions about the generality of the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The tonic activity changes were not artifacts of recording contamination or spike loss, as demonstrated by consistent spike waveform characteristics and stable baseline firing rates across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple control analyses support this conclusion: spike width analysis showed no significant differences between tonic and phasic time windows (C58-C59, p>0.12), and baseline firing rates were stable across conditions (C61-C62, p>0.50). These controls effectively rule out technical artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Tonic activity changes were consistent both between blocks and within blocks of trials, indicating stable neural responses throughout recording sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consistency analyses (C65-C68) show no significant differences in regression slopes between first and latter blocks or between first and latter halves of blocks (all p>0.05). This demonstrates the reliability and stability of the observed tonic activity patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The tonic increase in dopamine neuron activity during value-increase trials was not driven by reward uncertainty, as neurons did not show tonic increases when reward value was uncertain in the value-fixed condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The control analysis (C71-C72) shows no significant tonic activity in the uncertain reward condition (p=0.20), effectively ruling out uncertainty as the driver of tonic activity. This strengthens the interpretation that tonic activity specifically tracks changing reward values rather than uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The tonic changes in dopamine neuron activity were not caused by licking behavior, as neurons did not show clear activity modulation around licking onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The licking-aligned analysis (C76-C77) shows no clear modulation of neural activity around licking events, ruling out this potential confound. However, licking was only monitored for 68/99 neurons (C135), which is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The tonic changes in dopamine neuron activity were not caused by eye movements, as neurons did not show clear activity modulation around saccade onset and showed minimal correlation between firing rate and vertical gaze position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The saccade-aligned analysis (C80) and correlation analysis (C81) show no clear relationship between neural activity and eye movements, with only one time bin showing significant correlation (p=0.011). This effectively rules out eye movements as a confound, though one significant bin warrants caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Dopamine neurons exhibited phasic activity changes when reward values stopped changing, with activity decreases when value increases stopped and activity increases when value decreases stopped. The magnitude of these phasic responses correlated with the final reward value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phasic responses are well-documented with strong statistical support (C88: p=1.97\u00d710^-5; C89: p=7.66\u00d710^-8). The interpretation that stopping value increases is 'undesirable' and stopping value decreases is 'desirable' (C86-C87) is reasonable but somewhat speculative, as it relies on inference about subjective valence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Tonic activity tracking changing reward values occurred independently of phasic activity representing static reward values, as there were no significant correlations between tonic and phasic activity measures across neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple correlation analyses (C91-C95) consistently show no significant relationships between tonic and phasic activities (all p>0.42, |r|<0.09). This independence is a key finding suggesting distinct neural mechanisms for tracking dynamic versus static reward values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The same dopamine neurons tended to exhibit both cue-aligned phasic activity in the value-fixed condition and stop-aligned phasic activity in the value-increase/decrease conditions, as shown by significant correlations between these response types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlations between different phasic activities are statistically significant (C98: r=0.48, p=5.6\u00d710^-7; C99: r=0.29, p=0.003), indicating that neurons showing conventional phasic responses also show phasic responses to value changes stopping. This suggests a unified phasic signaling mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C10",
+      "C127"
+    ],
+    "result": "Tonic activity tracking changing reward values was produced more strongly by non-burst spikes than burst spikes, while conventional phasic activity was produced exclusively by burst spikes. Non-burst firing showed significantly higher rates than burst firing during initial and middle periods of value increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The burst/non-burst analysis is well-executed with appropriate statistical tests (C105: bootstrap test with 1000 repetitions, p<0.018 for initial and middle periods). The finding that phasic activity is exclusively burst-driven (C106-C107) while tonic activity is predominantly non-burst-driven (C103-C105) is a key mechanistic insight. However, the claim 'more largely' is somewhat vague.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The interpretation of whether tonic dopamine activity represents state values or reward prediction errors remains ambiguous, though the independence of tonic and phasic activities suggests tonic activity may not represent reward prediction errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The authors appropriately acknowledge the limitation that their experimental design cannot distinguish between state values and reward prediction errors (C113). The argument based on independence from phasic activity (C114) is suggestive but not definitive. This represents an important limitation requiring future work (C129).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Alternative explanations for tonic activity (visual motion of the green area or temporal proximity to reward) were ruled out based on prior literature and the opposite modulations observed in value-increase versus value-decrease conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reasoning is sound: prior work (C118) showed no tonic responses to motion, and the opposite modulations in conditions with similar temporal dynamics (C120) argue against time-to-reward as the driver. However, these are indirect arguments rather than direct experimental tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors establish the theoretical motivation that phasic dopamine activity, while important for reward processing, is insufficient for continuously tracking rapidly changing reward values due to its sporadic and brief nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents a well-reasoned theoretical argument based on established knowledge (C1-C2, C13-C18) and logical inference (C4, C6, C20). The characterization of phasic activity as sporadic with ~200ms duration (C19) is consistent with the literature. This provides strong motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors propose that tonic dopamine activity may regulate motivational vigor in changing environments, consistent with incentive salience theory, though this remains speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly speculative (C124-C125 use 'seems' and 'might'), representing a theoretical proposal rather than a tested hypothesis. While the proposal is reasonable and grounded in existing theory (C123), it requires experimental validation. The authors appropriately present this as speculation rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C128"
+    ],
+    "result": "The findings suggest that dopamine neurons change their firing mode to effectively signal reward values in different situations, expanding current knowledge about dopamine signaling flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is supported by the demonstration of distinct tonic and phasic firing modes serving different functions (tracking changing vs. static values). However, the claim about 'changing their firing mode' implies active switching that wasn't directly demonstrated - the study shows different neurons or different contexts, not necessarily the same neurons switching modes.",
+    "result_type": "MAJOR"
+  }
+]

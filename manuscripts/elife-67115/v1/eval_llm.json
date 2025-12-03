@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Alpaca immunization with hASIC1a-expressing cells followed by phage display library construction and multi-stage panning yielded nanobodies specific to hASIC1a. The library contained ~10^9 clones, and screening identified multiple nanobody groups with varying binding properties, including surface-binding (C1-4-5, D10, H10) and intracellular epitope-binding nanobodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 describe a comprehensive nanobody generation workflow with appropriate experimental controls and validation. The immunization schedule, library construction, multi-stage panning strategy, ELISA screening, sequencing analysis, and immunofluorescence validation provide converging evidence for successful nanobody isolation. The phylogenetic analysis and functional characterization support the identification of distinct nanobody groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C86"
+    ],
+    "result": "Nb.C1 prevents aggregation and stabilizes hASIC1a during purification. When added to crude membranes prior to solubilization, the hASIC1a-Nb.C1 complex was pure and monodispersed by SEC, contrasting with aggregation observed for hASIC1a alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C86 are supported by SEC data showing monodispersed complex versus aggregated protein alone, and gel electrophoresis confirming 1:1 stoichiometry. This represents a key methodological advance addressing known challenges with hASIC1a purification. The comparison with and without Nb.C1 provides appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C47"
+    ],
+    "result": "Cryo-EM structure of hASIC1a-Nb.C1 complex at pH 7.4 was determined at 2.9 \u00c5 resolution. The structure shows hASIC1a as a trimer with closed pore, expanded acidic pocket, and three Nbs bound to the thumb domain at the \u03b14-helix and extended loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C39-C44, and C47 are supported by cryo-EM data with appropriate resolution estimation (FSC=0.143), model building, and refinement statistics (Table 1). The structural features are consistent with prior ASIC structures and the resolution is sufficient for the interpretations made. The observation of weak density in the lower pore is appropriately qualified as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C89"
+    ],
+    "result": "Nb.C1 binds specifically to hASIC1a through interactions with unique residues D298 and L299 in the extended loop of the thumb domain. These two amino acids are absent in cASIC1 and other ASIC isoforms, explaining the high specificity of Nb.C1 for hASIC1a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 and C89 are supported by structural analysis showing specific interactions (D296-Y108, D298-R35/R105, R317-F58) and mutagenesis experiments demonstrating that deletion of DL eliminates Nb.C1 binding. The lack of binding to other ASIC isoforms lacking these residues provides strong evidence for the specificity mechanism. The structural and functional data converge to support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Nb.C1 binding does not alter hASIC1a functional properties (current magnitude, desensitization rate, pH50a, pH50ssd). This lack of functional effect is attributed to Nb.C1 not interacting with the \u03b15-helix, which is critical for channel gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C102-C104 are supported by comprehensive electrophysiological measurements showing no significant changes in multiple functional parameters. The structural explanation (lack of \u03b15 interaction) is consistent with prior knowledge about ASIC gating mechanisms and is supported by structural comparison showing minimal perturbation of \u03b15. This is an important validation that the nanobody is suitable as a structural tool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The DL motif (D298-L299) affects pH dependence of hASIC1a. Deletion of DL from hASIC1a shifts pH50ssd from 7.11\u00b10.02 to 7.18\u00b10.02, while insertion into cASIC1 shifts pH50ssd from 7.45\u00b10.01 to 7.38\u00b10.01.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by electrophysiological measurements with appropriate statistical analysis (t-test p<0.01). The reciprocal effects of deletion and insertion provide strong evidence for the functional role of the DL motif. The small but significant shifts are consistent with the motif's location and the citation to prior work (C59) provides additional context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C107"
+    ],
+    "result": "Nb.C1 binding site overlaps with MitTx \u03b1-subunit and Mambalgin-1 binding sites based on structural superimposition. The overlap is primarily due to steric hindrance from the bulky Nb scaffold rather than direct competition for identical binding residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C62-C64, C66-C67, and C107 are supported by structural superimposition analysis showing spatial overlap and predicted steric clashes. The distinction between direct binding site overlap and steric hindrance is appropriately made. However, the claim about Mambalgin-1 overlap would benefit from experimental validation beyond structural prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C65"
+    ],
+    "result": "Nb.C1 and PcTx1 bind at distinct, well-separated sites on hASIC1a, allowing simultaneous binding without mutual interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C65 are supported by structural superimposition analysis showing spatial separation of binding sites. This is a critical finding that enables the fusion protein strategy described later. The structural analysis is appropriate for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Nb.C1 antagonizes MitTx binding to hASIC1a. Pretreatment with Nb.C1 significantly reduced MitTx-induced currents in oocytes expressing hASIC1a, consistent with competitive interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C68-C70 are supported by electrophysiological measurements showing reduced MitTx-induced currents after Nb.C1 pretreatment. The functional data validate the structural prediction of binding site overlap. Statistical significance is indicated (p<0.001 in Figure 5C), supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Fusion of Nb.C1 with PcTx1 markedly enhances toxin potency. The fusion protein achieves 84-87% inhibition persisting >30 min (vs. rapid recovery with PcTx1 alone) and remains bound >4 hr on live cells. The rigid linker fusion showed slower recovery (\u03c4off=882s) than flexible linker (\u03c4off=355s) or PcTx1 alone (\u03c4off=220s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C76-C83, C85, C94-C96 are supported by multiple lines of evidence: immunofluorescence showing membrane binding, time-course imaging showing prolonged binding (>4hr), electrophysiology showing enhanced inhibition and slower recovery, and SPR measurements providing binding kinetics. The comparison of flexible vs. rigid linkers and controls with PcTx1 alone provide appropriate experimental design. The partial recovery attributed to fusion protein cleavage (C84) is speculative but supported by gel analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The extended loop in the hASIC1a-Nb.C1 structure is better resolved than in the prior hASIC1a structure (Sun et al., 2020), likely due to stabilization by Nb.C1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by comparison of cryo-EM maps showing improved density for the loop region. The speculation about stabilization mechanism is reasonable given the direct binding of Nb.C1 to this region. This demonstrates a practical benefit of the nanobody for structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C98"
+    ],
+    "result": "Nb.C1 has potential therapeutic applications as an antidote to coral snake venom (MitTx), and the Nb.C1-PcTx1 fusion could be used for pain suppression or neuroprotection with improved specificity and reduced off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 and C98 are speculative about future therapeutic applications. While the functional data (MitTx antagonism, enhanced PcTx1 potency) provide proof-of-concept, no in vivo studies are presented. The practical advantages of nanobodies (C92) are general knowledge, but specific therapeutic efficacy remains to be demonstrated. These represent reasonable hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C97"
+    ],
+    "result": "The nanobody approach has potential for obtaining additional hASIC1a structures in different conformations and for optimizing fusion protein linkers to improve therapeutic efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87 and C97 are speculative about future applications. While the current success (2.9\u00c5 structure, functional fusion protein) provides proof-of-concept, these represent proposed future work rather than demonstrated results. The speculation is reasonable but should not be considered established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C45",
+      "C46",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C88",
+      "C100",
+      "C101",
+      "C105",
+      "C106"
+    ],
+    "result": "Background information on ASICs, their structure, function, and interactions with toxins (PcTx1, Mambalgin-1, MitTx) is established from prior literature and general knowledge in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C25, C45-C46, C71-C74, C88, C100-C101, C105-C106 represent background knowledge supported by appropriate citations to prior literature. These provide necessary context for the current work and are appropriately referenced. No evaluation of novel findings is needed for these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C84"
+    ],
+    "result": "Hypotheses about therapeutic advantages and mechanisms of partial recovery from fusion protein inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 is a hypothesis about therapeutic applications without supporting data. Claim C84 speculates about cleavage causing partial recovery, which is supported by gel analysis showing some cleavage but remains somewhat speculative about the quantitative contribution. These represent reasonable interpretations but require further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Nb.C1 does not interact with \u03b15-helix while toxins do, and these interactions change \u03b15 conformation in toxin-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by structural analysis comparing Nb.C1 binding with toxin binding sites. This observation is consistent with the functional data showing Nb.C1 does not alter channel properties and provides mechanistic insight into the differential effects.",
+    "result_type": "MINOR"
+  }
+]

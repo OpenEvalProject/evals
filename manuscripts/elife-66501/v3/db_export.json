@@ -1,0 +1,2158 @@
+{
+  "submission": {
+    "id": "b2b080ec-5180-479a-97c4-9e318d69ddc6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:08:06.490874Z",
+    "updated_at": "2025-12-03T05:08:06.490874Z"
+  },
+  "content": [
+    {
+      "id": "9ee51036-d410-447d-840c-c033a239764b",
+      "submission_id": "b2b080ec-5180-479a-97c4-9e318d69ddc6",
+      "content_type": "manuscript",
+      "content_text": "# Ubiquitination and degradation of NF90 by Tim-3 inhibits antiviral innate immunity\n\n## Authors\n\n- Shuaijie Dou<sup>1</sup>\n- Guoxian Li<sup>1</sup>\n- Ge Li<sup>1</sup>\n- Chunmei Hou<sup>1</sup>\n- Yang Zheng<sup>4</sup>\n- Lili Tang<sup>1</sup>\n- Yang Gao<sup>1</sup>\n- Rongliang Mo<sup>1</sup>\n- Yuxiang Li<sup>1</sup>\n- Renxi Wang<sup>1</sup> \u2020\n- Beifen Shen<sup>1</sup>\n- Jun Zhang<sup>3</sup> \u2020\n- Gencheng Han<sup>1</sup> ([ORCID: 0000-0003-1408-878X](https://orcid.org/0000-0003-1408-878X)) \u2020\n\n### Affiliations\n\n1. Beijing Institute of Basic Medical Sciences Beijing China\n2. Anhui Medical University Hefei China\n3. Institute of Immunology, Medical School of Henan University Kaifeng China\n4. Department of Oncology, First Hospital of Jilin University Changchun China\n5. Beijing Institute of Brain Disorders, Laboratory of Brain Disorders, Ministry of Science and Technology, Collaborative Innovation Center for Brain Disorders, Capital Medical University Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nNuclear factor 90 (NF90) is a novel virus sensor that serves to initiate antiviral innate immunity by triggering stress granule (SG) formation. However, the regulation of the NF90-SG pathway remains largely unclear. We found that Tim-3, an immune checkpoint inhibitor, promotes the ubiquitination and degradation of NF90 and inhibits NF90-SG-mediated antiviral immunity. Vesicular stomatitis virus (VSV) infection induces the up-regulation and activation of Tim-3 in macrophages, which in turn recruit the E3 ubiquitin ligase TRIM47 to the zinc finger domain of NF90 and initiate a proteasome-dependent degradation via K48-linked ubiquitination at Lys297. Targeted inactivation of Tim-3 enhances the NF90 downstream SG formation by selectively increasing the phosphorylation of protein kinase R and eukaryotic translation initiation factor 2\u03b1, the expression of SG markers G3BP1 and TIA-1, and protecting mice from VSV challenge. These findings provide insights into the crosstalk between Tim-3 and other receptors in antiviral innate immunity and its related clinical significance.\n\n## Introduction\n\nInnate immunity is the first line of host defense against viral infection. Pattern recognition receptors (PRRs), including Toll-like receptors (TLRs) and RIG-I-like receptors (RLRs), are main sensors in defending virus infection\u00a0(Chen et al., 2013). PRR-mediated downstream signaling pathways initiating an anti-viral innate immune response is the classic anti-virus infection model\u00a0(Barbalat et al., 2011; McFadden et al., 2017). Recently, studies have found that nuclear factor 90 (NF90), which is encoded by interleukin enhancer-binding factor-3, is a critical sensor for invading viruses\u00a0(Li et al., 2016; Shabman et al., 2011; Wang et al., 2009; Wen et al., 2014; Pfeifer et al., 2008). NF90 is an evolutionarily conserved member of the double-stranded RNA\u00a0(dsRNA)-binding protein family and is abundantly expressed in various mammalian cells\u00a0(Pati\u00f1o et al., 2015; Masuda et al., 2013). As an important antiviral pathway, NF90 recognizes virus dsRNA and triggers the formation of stress granules (SGs), which are composed of cytoplasmic particles including ribonucleoproteins, RNA-binding proteins, and translation initiation factors\u00a0(Shi et al., 2007). Unfortunately, a growing number of virus families modulate SG formation and function to maximize replication efficiency\u00a0(White and Lloyd, 2012). Therefore, an understanding of the precise regulation mechanisms of NF90-SG signaling for efficient viral clearance without harmful immunopathology is needed.\n\nUpon sensing virus, NF90 induces the phosphorylation of dsRNA-activated protein kinase R (PKR)\u00a0(Li et al., 2016; Wen et al., 2014). Then SGs form following PKR-mediated phosphorylation and activation of the eukaryotic translation initiation factor 2\u03b1 (eIF2\u03b1), which induces the expression of G3BP1\u00a0(Tsai et al., 2017) (Ras-GAP SH3-binding protein-1) and TIA-1 (T-cell intracellular antigen-1), two key markers in SGs. The activated eIF2\u03b1 co-operates with other components of SGs to block virus mRNA translation. Despite acting as an important virus sensor and trigger of SG formation, how NF90 is regulated remains largely unknown.\n\nTim-3, encoded by the hepatitis A virus cellular receptor two gene (Havcr2), is an immune checkpoint inhibitor that was first identified in activated T cells. Later, Tim-3 was also found to be expressed in innate immune cells, such as dendritic cells and macrophages\u00a0(Han et al., 2013). Establishment of Tim-3 as an exhaustion marker in immune cells of both tumors and infectious diseases makes Tim-3 an attractive target for immunotherapy similar to PD-1\u00a0(Huang et al., 2015), CTLA-4\u00a0(Stamper et al., 2001), and Siglec-G (Rangachari et al., 2012). Recently, a report showed that increased Tim-3 expression on immune cells in patients with coronavirus disease (COVID-19) is associated with an exhaustion phenotype\u00a0(Diao et al., 2020). However, Tim-3 does not have an inhibitory motif within its tail\u00a0(van de Weyer et al., 2006), and the mechanism by which Tim-3 mediates inhibitory signaling remains largely unclear. Huang et al., 2015\u00a0showed that CEACAM1 is a heterophilic ligand of Tim-3 and is required for Tim-3 to mediate T cell inhibition and that Bat-3 acts as a safety catch, which blocks Tim-3-mediated inhibitory signals in T cells\u00a0(Rangachari et al., 2012). Potentiating anti-infection immunity by inducing innate immune responses is a promising area of infection therapy. However, little is known about Tim-3 signaling in innate immune cells.\n\nUbiquitination is one of the most versatile posttranslational modifications and is indispensable for antiviral infection\u00a0(Heaton et al., 2016). Increasing evidences suggest that ubiquitination plays important roles in various cellular processes, including cell proliferation and antiviral innate signaling. Posttranslational modification of many signaling molecules, including TRAF3/6 (Chen et al., 2015), RIG-I\u00a0(Chen et al., 2013), MAVS\u00a0(Liu et al., 2017), TBK1\u00a0(Song et al., 2016a), IRF3/7 (Yu and Hayward, 2010; Wang et al., 2015), and NLRP3\u00a0(Song et al., 2016b), involved in TLR, RLR, and NLR pathways by different types of ubiquitination plays key roles in the regulation of antiviral innate immunity. However, whether NF90, a molecule containing a ubiquitin-binding domain (domain associated with zinc fingers, DZF), undergoes ubiquitination remains unclear.\n\nHere we found that Tim-3 was involved in innate immunity against vesicular stomatitis virus\u00a0(VSV) by promoting the proteasomal degradation of NF90 via the tripartite motif-containing protein 47 (TRIM47)-mediated conjugation of K48-linked ubiquitin. To the best of our knowledge, it is the first time demonstrating ubiquitination as a new posttranslational modification mechanism of NF90. Our findings shed a new light on the Tim-3-mediated immune tolerance during infection.\n\n## Results\n\n### Tim-3 interacts with and inhibits NF90\n\nTo test whether Tim-3 is involved in the innate immunity against viruses, we challenged macrophages with VSV, an RNA virus widely used for investigating anti-viral immunity in both mouse and human models (Chen et al., 2013). Shortly after VSV challenge, the expression of Tim-3 was upregulated in macrophages (Figure 1A\u00a0and\u00a0B). The phosphorylation of Tim-3, which accounts for the Tim-3 signaling\u00a0(van de Weyer et al., 2006), was also tested. There was a time-dependent enhancement of Tim-3 phosphorylation in HEK293T cells transfected with Tim-3 and challenged with VSV (Figure 1C). Tim-3 was encoded by Havcr2, which was inactivated to generate Tim-3 knockout (Tim-3KO) mice\u00a0(Figure 1\u2014figure supplement 1). To evaluate the role of VSV-activated Tim-3 in host antiviral innate immune response, macrophages from Tim-3KO mice and from wild-type (WT) mice\u00a0and the macrophage cell line RAW264.7 with a knockdown of Tim-3 (si-Tim-3) were challenged with VSV. Both knockout and knockdown of\u00a0Tim-3 in macrophages led to a\u00a0decreased VSV load (Figure 1D\u00a0and\u00a0E). These findings suggest a negative regulatory role of Tim-3 in anti-viral innate immunity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig1-v3.jpg)\n\n**Figure 1.:** (A) Peritoneal macrophages were isolated from wild-type (WT)\u00a0mice and infected with vesicular stomatitis virus (VSV) for the indicated hours. Then the Tim-3 mRNA expression was examined by quantitative reverse transcription PCR\u00a0(qPCR). (B) Peritoneal macrophages were isolated from WT and Tim-3 gene (Havcr2) knockout (Tim-3KO) mice\u00a0and were infected with VSV for the\u00a0indicated times. Then the expression of Tim-3 was analyzed by western blot analysis. (C) VSV infection induces tyrosine phosphorylation of Tim-3. HA-Tim-3 plasmid was transfected into HEK293T cells for 24 hr, and the cells were infected with VSV for the indicated hours. Cell lysates were immunoprecipitated with Human influenza hemagglutinin(HA) antibody and analyzed by immunoblotting for the indicated proteins. (D and E) Peritoneal macrophages obtained from WT and Tim-3KO mice and RAW264.74 macrophages silenced of Tim-3 (si-Tim-3) and RAW264.7 macrophages (si-NC) were challenged by VSV for 6 hr, and\u00a0then the\u00a0cells were harvested for VSV load analysis by 50%\u00a0tissue cell infectious dose\u00a0(TCID50) assay. The results shown in all panels were performed three times. *p<0.05, **p<0.01.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Mating protocol. (B and C) Mice tails were cut and DNA was extracted. Flox gene (B) and Cre gene (C) segments were PCR amplified and determined by electrophoresis. (D) Genotype examination to select the mice expressing both the Tim-3-flox and EIIa-Cre genes. (E)\u00a0Western blot analysis of Tim-3 expression in peritoneal macrophages from wild-type\u00a0(WT) and Tim-3KO mice. The results shown in panels (B\u2013D) were performed three times.\n\nTo find the possible mechanisms of Tim-3-mediated anti-viral immunity, we used Tim-3 pulldown and mass spectrometry to identify the proteins interacting with Tim-3. Among the candidates, NF90, an RNA-binding protein involved in anti-infection and anti-tumor immunity, received the highest score and the highest number of matched peptides (Figure 2\u2014figure supplement 1). To confirm the interaction between Tim-3 and NF90, HEK293T cells were co-transfected with NF90 and Tim-3 and\u00a0immunoprecipitation was\u00a0conducted\u00a0targeting either Tim-3 (Figure 2A) or NF90 (Figure 2B); all confirmed the interaction between Tim-3 and NF90. The interaction sites of Tim-3 interacting with NF90 were subsequently examined. The results showed that 4Y/F mutants of Tim-3 (Y265F, Y272F, Y280F, Y281F) weakened the binding of Tim-3 with NF90, while deletion of the intracellular domain of Tim-3 (\u25b3IC) resulted in the loss of binding activity of Tim-3 with NF90 (Figure 2C\u00a0and\u00a0D). These data showed that Tim-3 interacts with NF90 through its intracellular domain, in which Y265, Y272, Y280, and Y281 play an important role. We finally evaluated the effects of Tim-3 on NF90 expression. In HEK293T cells transfected with Tim-3 or in macrophages from Tim-3 transgenic (Tim-3-TG)\u00a0mice, the overexpression of Tim-3 decreased the expression of NF90 (Figure 2E). These results show that Tim-3 interacts with and inhibits NF90.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig2-v3.jpg)\n\n**Figure 2.:** (A and B) Protein complex of Tim-3 and NF90 overexpressed in cells. HEK293T cells were transfected with plasmids encoding HA-Tim-3, Flag-NF90, and Myc-Tim-3 for 24 hr, immunoprecipitated with HA or Flag antibody, respectively, and detected by western blot for the indicated antibodies. (C and D) Interaction of Tim-3 intracellular domain with NF90. Schematic structure of Tim-3 and the derivatives used are shown (C). Whole-cell lysis of HEK293T cells transfected with Flag-Tim-3 (WT), Flag-Tim-3 (Del), Flag-Tim-3 (4YF), and V5-NF90 was used for immunoprecipitation and immunoblotting, as indicated (D). (E) Immunoblot analysis of NF90. HEK293T cells were transfected with Tim-3 plasmid for 24 hr, and lysates were detected for NF90 expression by western blot (left). Peritoneal macrophages from wild-type\u00a0(WT) and Tim-3-TG mice were lysed and NF90 protein was detected by western blot (right). The results shown in panels\u00a0(A, B, D,\u00a0and E) were performed three times.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A and B) Co-immunoprecipitation and mass spectrometry for screening of proteins interacting with Tim-3.\u00a0Tim-3-WT were transfected into HEK293T cells for 24 hr, cell lysates were immunoprecipitated with antibody to Tim-3, and precipitates were separated by 10% sodium dodecyl sulphate-polyacrylamide gel electrophoresis (SDS/PAGE) and visualized by silver staining. Differential bands were subjected to trypsin digestion and liquid chromatography-tandem mass spectrometry\u00a0(LC-MS/MS) analysis (B, arrows). (C) NF90 (ILF3), a new protein, associates with Tim-3. 11 peptides derived from a 95-\u00a0to\u00a0130-kD protein ladder matched with amino acid sequence of the NF90 protein (defined by Mascot score). The results shown in all panels were performed three times. All the matched peptides can be found using the following link: file:///Users/hangencheng/Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/60a5a94034905dff41ba3805bd9c0182/Message/MessageTemp/6c186828c1bcceb1559f238406f1ac30/File/110.htm.\n\n### Tim-3 promotes the ubiquitination of NF90 at the DZF domain\n\nUbiquitination is one of the most versatile posttranslational modifications and is indispensable for antiviral immunity. However, whether NF90 undergoes proteasomal degradation is totally unknown. To find the mechanisms by which Tim-3 inhibits NF90 expression, we tested whether NF90 undergoes ubiquitination and if so, whether Tim-3 is involved. Macrophages isolated from WT and Tim-3-TG mice\u00a0were challenged by VSV for 4 hr and the ubiquitination of NF90 was examined. Interestingly, the total ubiquitination and the k48-linked ubiquitination of NF90 were significantly increased in macrophages from Tim-3-TG mice compared to those from WT mice (Figure 3A and Figure 3\u2014figure supplement 1). When NF90, K48-Ub, or Tim-3 was transfected into HEK293T cells, NF90 underwent K48-linked ubiquitination, which can be enhanced by co-transfected Tim-3 (Figure 3B). The results suggested that Tim-3 may inhibit NF90 by enhancing the K48-linked ubiquitination and degradation of NF90. We then explored the domain of NF90 for ubiquitination using constructions encoding the DZF domain, full-length NF90 or NF90 lacking\u00a0the DZF domain (\u25b3DZF) (Figure 3C) and found that the DZF domain of NF90 was dominantly ubiquitinated (Figure 3D). Finally, when the plasmid of Tim-3 was co-transfected with different NF90 constructs, the data revealed that Tim-3 specially enhanced the ubiquitination of DZF (Figure 3E). The reason why the DZF-only construct is strongly ubiquitinated compared to the full-length construct of NF90 may lie in the conformational hindrance in NF90 at a steady state, which needs to be demonstrated in the future. These results demonstrated that NF90 can be ubiquitinated at the DZF domain, and the process can be enhanced by Tim-3, suggesting that Tim-3 may suppress NF90 by promoting its ubiquitination and degradation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig3-v3.jpg)\n\n**Figure 3.:** (A) Tim-3 enhances the ubiquitination of NF90 in macrophages in response to vesicular stomatitis virus (VSV) challenges.\u00a0Peritoneal macrophages in wild-type\u00a0(WT) and Tim-3-TG mice were infected with VSV for 4 hr and cells were treated with MG132 (20 ug/ml) for 6 hr before harvesting protein lysates, followed by western blot analysis of the total\u00a0Ub and K48-linked Ub of NF90 immunoprecipitated with antibody to ILF3 (NF90). (B) Tim-3 promotes the ubiquitination of NF90. HEK293T cells were transfected with plasmids encoding Flag-NF90 or HA-Ub-K48, Tim-3-Myc for 24 hr, treated with MG132 (20 ug/ml) for 6 hr, immunoprecipitated with Flag antibody, and then detected by western blot for the indicated antibodies. (C) Schematic structure of NF90 and the derivatives used are shown. (D\u2013E) Tim-3 promotes the K48-Ub modification of NF90 at the DZF domain. HEK293T cells were transfected with the indicated plasmids for 24 hr and treated with MG132 (20 ug/ml) for 6 hr. The cells were then lysed, immunoprecipitated with Flag antibody, and detected by western blot using the indicated antibodies. Three independent experiments were conducted for all panels.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The cells were lysed, immunoprecipitated with NF90 (ILF3) antibody, and detected by western blot using the indicated antibodies.\n\n### Involvement of TRIM47 in Tim-3-mediated degradation of NF90\n\nTo find the possible E3 ligase accounting for Tim-3-mediated NF90 ubiquitination, NF90-interacting proteins were investigated by immunoprecipitating NF90 and then performing mass spectrometry. Among the NF90-interacting protein candidates, we identified three proteins with potential E3 ligase activities. TRIM47 had the highest Mascot scores and the highest number of matched peptides (Figure 4A). Knockdown of TRIM47 with specific small interfering RNA(siRNA) (si-TRIM47) in macrophages increased the half-life of endogenous NF90 protein during VSV infection (Figure 4\u2014figure supplement 1). To confirm whether TRIM47 promotes the proteasomal degradation of NF90, we transfected HEK293T cells with ubiquitin, NF90, and an increasing dose of TRIM47. TRIM47 induced degradation of NF90 in a dose-dependent manner, which can be blockaded in the presence of MG132, indicating a proteasome-dependent degradation (Figure 4B). In addition, when Tim-3 was co-transfected, it dose-dependently enhanced TRIM47-mediated degradation of NF90 (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig4-v3.jpg)\n\n**Figure 4.:** (A) E3 ligases identified by mass spectrometry for top peptide hits (defined by Mascot score) associated with NF90 ubiquitination.\u00a0(B) TRIM47 promotes NF90 degradation in a proteasome-dependent manner. Plasmids encoding Flag-NF90, HA-ubiquitin, along with increasing amounts of V5-TRIM47 (0.5, 1.0, and 2.0 ug), were transfected into HEK293T cells for 24 hr, cells were treated with and without MG132 (20 ug /ml), respectively, followed by western blot to examine the NF90 protein level. (C) Tim-3 accelerates TRIM47-mediated NF90 degradation in a dose-dependent manner. HEK293T cells were transfected with plasmids encoding Flag-NF90, HA-ubiquitin, and V5-TRIM47 and an increasing dose of plasmid encoding Red-Tim-3 (0.5, 1.0, and 2 ug) for 24 hr. The protein level of NF90 was examined in cells. (D and E) Tim-3 upregulates TRIM47 in protein levels. TRIM47 protein levels were analyzed by immunoblotting in lysates from wild-type\u00a0(WT) or Tim-3KO and WT or Tim-3-TG macrophages infected with vesicular stomatitis virus (VSV) for the indicated time. (F) Tim-3 facilitates K63-linked ubiquitination mediated by TRIM47. Plasmids encoding HA-Ub-K63, V5-TRIM47, and Flag-Tim-3 were transfected into HEK293T cells. Cells were treated with MG132 (20 ug/ml) for 6 hr, and cell lysates were immunoprecipitated with Flag antibody and detected by western blot for K48-Ub levels. Three independent experiments were conducted for all panels.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Quantitative reverse transcription PCR\u00a0(qPCR) analysis of TRIM47 mRNA expression in RAW264.7 macrophages 48 hr after transfection with TRIM47 siRNA. (B) Western blot analysis of the protein degradation of NF90 in RAW264.7 macrophages 48 hr after transfection with control siRNA or TRIM47 siRNA pre-infected for 2 hr with vesicular stomatitis virus\u00a0(VSV) before\u00a0cycloheximide (CHX) (10 \u03bcg/ml) treatment for indicated hours. At least three independent experiments were conducted for all panels.\n\nWe then explored the possible interaction between Tim-3 and TRIM47. VSV challenge led to decreased TRIM47 expression in Tim-3KO cells compared with that in WT cells (Figure 4D) and increased TRIM47 expression in Tim-3 transgenic mice-derived macrophages compared with that in control cells (Figure 4E). These results showed that Tim-3 promotes the expression of TRIM47 in the presence of virus. The possible mechanism by which Tim-3 enhances TRIM47 expression was primarily investigated. We examined whether TRIM47 undergoes ubiquitination when Tim-3 is overexpressed, as TRIM25, an E3 ligase with a structure similar to TRIM47, undergoes ubiquitination during viral infection\u00a0(Nisole et al., 2005; Pauli et al., 2014). Interestingly, when the genes encoding TRIM47, Tim-3, and Ub-K63 were co-transfected into HEK293T cells, TRIM47 underwent ubiquitination, and Tim-3 enhanced this progress (Figure 4F). However, the relationship between Tim-3-enhanced TRIM47 expression and Tim-3-enhanced TRIM47 ubiquitination remains to be determined. These results showed the involvement of TRIM47 in Tim-3-mediated degradation of NF90.\n\n### Tim-3 recruits TRIM47 to the DZF domain of NF90 and Lys297 within DZF is a critical site for TRIM47-mediated K48-linked ubiquitination of NF90\n\nTo find whether Tim-3 and TRIM47 interact with each other to act on NF90, we first examined the interactions among Tim-3, TRIM47, and NF90. Different Tim-3 constructs (Figure 5A) or different NF90 constructs (Figure 5B) were co-transfected with TRIM47 into HEK293T cells. The immunoprecipitation assay showed that TRIM47 interacts with the intracellular domain of Tim-3 and with the DZF domain of NF90. These data suggest that Tim-3 recruits TRIM47 to the DZF domain via its intracellular domain while forming a complex of TRIM47 and NF90.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig5-v3.jpg)\n\n**Figure 5.:** (A and B) The intracellular domain of Tim-3 and the DZF domain of NF90 interact with TRIM47 respectively. HEK293T cells were transfected with the indicated plasmids for 24 hr and treated with MG132 (20 ug/ml) for 6 hr. The cells were then lysed, immunoprecipitated with Tim-3 or Flag antibody, and detected by western blot using the indicated antibodies. (C) Tim-3 promotes NF90 degradation mediated by E3 ligase TRIM47. HEK293T cells were transfected with plasmids encoding HA-Ub-K48, V5-TRIM47, Flag-NF90, and Red-Tim-3, and treated with MG132 (20 ug/ml) for 6 hr. Cell lysates were then immunoprecipitated with Flag antibody and analyzed by western blot using the indicated antibodies. (D) Residue K297 of NF90 is the major site of TRIM47-mediated K48-linked ubiquitination. Flag-NF90-DZF (WT) or KR mutants, HA-Ub-K48 and V5-TRIM47, were transfected into HEK293T cells for 24 hr. Cells were then treated with MG132 (20\u00a0ug/ml) for 6 hr. Cell lysates were analyzed by western blot for K48-linked ubiquitination of NF90. (E) Residue K297 is the decisive site in TRIM47-mediated degradation of NF90. Plasmids encoding Flag-NF90-DZF (WT) or K297R mutants, PDsRed-Tim-3, HA-Ub-K48, and V5-TRIM47, were transfected into HEK293T cells, and cell lysates were examined by western blot for the indicated proteins. Three independent experiments were conducted for all panels.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Co-immunoprecipitation analysis of the polyubiquitination of NF90-DZF (WT) and its mutants in HEK293T cells transfected with plasmids encoding HA\u2013ubiquitin (K48). Data are representative of three independent experiments.\n\nTo confirm that Tim-3 co-operates with TRIM47 to enhance the ubiquitination and degradation of NF90, we co-transfected Tim-3, TRIM47, and ubiquitin into HEK293T cells and examined the effects of TRIM47 and Tim-3 on the ubiquitination of NF90. Overexpression of TRIM47 promotes the ubiquitination of NF90, and this process was enhanced when Tim-3 was co-transfected (Figure 5C). Next, we examined the ubiquitin modification site within the DZF domain of NF90 by site mutation. NF90 contains 18 lysine residues in its DZF domain. Immunoprecipitation analysis revealed that TRIM47 enhanced the ubiquitination of wild-type DZF and DZF with the K100R, K117/119R, K127R, K143R, K158R, and K224R, but not K297R, mutants in HEK293T cells (Figure 5\u2014figure supplement 1). We further demonstrated that only mutations of arginine at K297R completely blocked the TRIM47-mediated ubiquitination and degradation of NF90 via a K48-mediated linkage (Figure 5D). In addition, when co-transfected K48-Ub, Tim-3, wild-type NF90, DZF domain, or DZF K297R with increased doses of TRIM47, we found that TRIM47 dose-dependently induced the degradation of NF90 DZF domain but not of DZF K297R (Figure 5E). Taken together, these data suggest that K297 is the critical residue for the ubiquitination of NF90-DZF targeted by TRIM47.\n\n### Tim-3 deficiency enhances the formation of SGs and protects mice from VSV infection\n\nFinally, the significance of Tim-3 in the inhibition of NF90 was investigated. As NF90 triggers the formation of SGs, we first examined whether Tim-3 regulates the downstream of NF90-SG pathway. Peritoneal macrophages were isolated from WT and Tim-3KO mice, and following VSV challenge for 2\u20138 hr, the expression of NF90 and the phosphorylation of PKR, eIF2\u03b1, as well as the phosphorylation of other signaling cascades including ERK and P38, were examined. The data in Figure 6A show that the expression of NF90 and the phosphorylation of eIF2\u03b1 and PKR were dramatically increased in macrophages from Tim-3KO mice compared with those in cells from WT mice. There was no difference in p38 and ERK phosphorylation between Tim-3KO and WT cells. Meanwhile, the expression of G3BP1 and TIA-1, two markers of SGs, was also examined in above macrophages using immunofluorescence. The results in Figure 6B\u00a0and\u00a0C show that Tim-3 knockout significantly increased the expression of G3BP1 and TIA-1 at the\u00a0protein level in macrophages following VSV challenges in vitro, demonstrating that Tim-3 inhibits the formation of SGs. To test the effects of Tim-3 inhibition on NF90-SG pathway in vivo, a VSV infection model was established in mice. We found that the expression of SG markers, G3BP1 and TIA-1, and VSV replication were significantly changed in spleen, lung, and peritoneal macrophages from Tim-3KO mice than those in WT mice (Figure 7A\u2013I). Also, lethal VSV infections led to an increased survival rate in Tim-3KO mice compared to WT\u00a0mice (Figure 7J) and a less severe tissue inflammation (Figure 7K). These data showed that Tim-3 deficiency enhances the formation of SGs in vivo and protects mice from VSV. Finally, we also examined whether the silencing of TRIM47 affects the assembly of SGs and the anti-viral immunity of macrophages. The data showed that silencing of TRIM47 with specific siRNA in RAW264.7 led to increased G3BP1 and TIA-1 expression and a\u00a0decreased viral load following VSV infection (Figure 6\u2014figure supplement 1), further confirming that TRIM47 acts as an up-stream regulator of the NF90-SG antiviral pathway.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig6-v3.jpg)\n\n**Figure 6.:** (A) Lysates from wild-type\u00a0(WT) and Tim-3 gene (Havcr2) knockout\u00a0(Tim-3KO) peritoneal macrophages infected with vesicular stomatitis virus\u00a0(VSV) were analyzed by immunoblotting for the indicated proteins.\u00a0(B and C) Peritoneal macrophages isolated for WT or Tim-3KO mice were infected with or without VSV for 6 hr, and then the cells were immunostained with the indicated antibodies and analyzed by fluorescence microscopy. Three independent experiments were conducted for all panels.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** TRIM47 was silenced in RAW264.7 macrophages as in Figure 2\u2014figure supplement 1. (A and B) Quantitative reverse transcription PCR\u00a0(qPCR) analysis of TIA-1 and G3BP1 expression in RAW264.7 macrophages or in RAW264.7 macrophages silenced of TRIM47. (C) TRIM47 promotes vesicular stomatitis virus (VSV) production. qPCR analysis of VSV mRNA expression in 48 hr after transfection with control siRNA or TRIM47 siRNA, infected with VSV. The results shown are representative of three independent experiments.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig7-v3.jpg)\n\n**Figure 7.:** (A, B, D, E, G, and H) Detection of mRNA transcription of G3BP1 and TIA-1 in organs and peritoneal macrophages by quantitative reverse transcription PCR\u00a0(qPCR) after wild-type\u00a0(WT) and Tim-3KO mice (n\u00a0=\u00a05 per group) were intraperitoneally injected with vesicular stomatitis virus (VSV) for 24 hr. (C, F, and I) qPCR analysis of VSV loads in organs and peritoneal macrophages after WT and Tim-3KO mice (n\u00a0=\u00a05 per group) were intraperitoneally injected with VSV for 24 hr. (J) WT and Tim-3KO mice (~7 weeks\u00a0old) were intraperitoneally injected with VSV (1\u00a0\u00d7\u00a0108 pfu/g) (n\u00a0=\u00a010 per group) followed by recording survival of both groups. p<0.01. (K) The lung tissues from WT and Tim-3KO mice (C, F, and I) were stained with hematoxylin and eosin, and their pathology analyzed in response to VSV. The results shown are representative of three independent experiments. *p<0.05; **p<0.01.\n\nThe mechanisms by which Tim-3 promotes the TRIM47-mediated ubiquitination and proteasomal degradation of NF90 in viral immune evasion are summarized in Figure 8. Upon VSV infection, Tim-3 is activated and upregulated. The activation of Tim-3 in turn recruited the E3 ubiquitin ligase TRIM47 to the zinc finger domain of NF90 and initiated the proteasome-dependent degradation of NF90 via K48-linked ubiquitination at Lys297. The negative regulation of NF90 by Tim-3 blocked the virus triggered and NF90-SG-mediated antiviral immunity and finally led to virus immune evasion.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/66501/elife-66501-fig8-v3.jpg)\n\n**Figure 8.:** Upon vesicular stomatitis virus (VSV) infection, Tim-3 is activated and upregulated. The activation of Tim-3 in turn recruited the E3 ubiquitin ligase TRIM47 to the zinc finger domain of NF90 and initiated a proteasome-dependent degradation of NF90 via K48-linked ubiquitination at Lys297. The negative regulation of NF90 by Tim-3 blocked the RNA virus and triggered\u00a0NF90-SG-mediated antiviral immunity and finally led to virus immune evasion.\n\n## Discussion\n\nViruses have developed many different strategies of immune evasion, for example, by downregulating or degrading virus sensors. The mechanisms by which these receptors are regulated are widely investigated in hopes of developing effective treatments. NF90 was found to play an important role in host innate immunity against various virus infections. However, the regulation of NF90 under physiopathological conditions remains largely unclear. Here we have\u00a0identified a novel negative regulation mechanism of NF90, which could be employed by VSV to evade the immune attack. The VSV-activated Tim-3 in turn promotes the ubiquitination and degradation of NF90 and subsequently inhibits the formation and antiviral activity of downstream SGs. To the\u00a0best of\u00a0our\u00a0knowledge, this is the first report showing that NF90 undergoes ubiquitination and also the critical domain (DZF) and critical site (Lys297) of NF90 for Tim-3- and E3 ligase TRIM47-mediated ubiquitination and degradation.\n\nNF90, like the classical PRRs, is considered a novel virus sensor, exerting an important role in host innate immunity against various viral infections, especially negative-sense single-stranded RNA viruses\u00a0(Li et al., 2016; Wang et al., 2009; Wen et al., 2014). One report showed that NF90 is required for an efficient response against VSV infection\u00a0(Pfeifer et al., 2008), but the underlying mechanism\u00a0has not been clarified. Other reports have\u00a0shown that NF90 interacted with the VP35 protein of Ebola virus (EBOV)\u00a0and inhibited EBOV infection through impairing the function of the EBOV transcription/replication complex\u00a0(Shabman et al., 2011). Knockdown of NF90 in indicated cells dramatically promotes EBOV and influenza virus replication, while overexpression of NF90 inhibits or impacts replication of these viruses\u00a0(Li et al., 2016; Shabman et al., 2011; Wang et al., 2009). When the signaling cascades were investigated, SGs, not the interferon pathway, served as the downstream signaling cascade of the NF90 antiviral pathway (Shabman et al., 2011; Pfeifer et al., 2008). NF90 promotes\u00a0(Meunier et al., 2014) the assemblage of SG and synergizes with other proteins to exert antiviral immunity\u00a0(Wen et al., 2014). These reports support our findings that NF90 inhibits VSV replication via SGs and further demonstrate the critical role of the NF90-SG signaling pathway during an antiviral immune response.\n\nTim-3 is an immune checkpoint inhibitor that was initially found to be expressed on activated Th1 cells by binding with its ligand Gal-9\u00a0(Chou et al., 2009; Dardalhon et al., 2010).\u00a0Tim-3 induces apoptosis and T cell tolerance\u00a0(Nakayama et al., 2009; Sarraj et al., 2014). Most investigations focus on the roles of Tim-3 in maintaining T cell exhaustion in immune disorders, tumors, or infectious diseases, which means that this checkpoint inhibitor could be abused. Recently, our works and other published data have\u00a0focused on the roles of Tim-3 in maintaining the homeostasis of innate immune cells and have\u00a0demonstrated that the dysregulated Tim-3 on innate immune cells also contributes to the immune evasion of many tumors or pathogens\u00a0(Diao et al., 2020; Jiang et al., 2016). Innate immune cells have now attracted much attention for developing new therapeutic strategies against infectious or tumor diseases, in which innate immune cell-expressed immune checkpoint inhibitors are potential targets (Han et al., 2013). Here we have\u00a0found that Tim-3 suppresses the macrophage-mediated antiviral immune response, suggesting that it is a potent therapeutic target for re-boosting innate immunity against viruses. However, as Tim-3 does not possess an obviously classical Immunoreceptor Tyrosine-based Inhibition Motif (ITIM)motif compared with other immune-checkpoint receptors, such as PD-1, CTLA-4\u00a0(St\u00e5lhammar et al., 2019), and Siglec-G\u00a0(Chen et al., 2013), the mechanism by which Tim-3 mediates inhibitory signals remains unclear. Huang et al., 2015 showed that Tim-3 induces T cell exhaustion via Human leucocyte antigen B associated transcript (BAT) and using CEACAM1 as a coreceptor, and our findings have\u00a0shown that Tim-3 promotes tumor-prone macrophage polarization by binding to and suppressing the phosphorylation and nuclear translocation of STAT1\u00a0(Jiang et al., 2016) Further, Tim-3 inhibits TLR4-mediated macrophage activation during sepsis by suppressing NF-kB activation\u00a0(Yang et al., 2013). How Tim-3 works during anti-viral innate immunity remains unclear. The intracellular tail of Tim-3 contains a highly conserved tyrosine-containing src homology 2 (SH2)-binding motif, and tyrosine residues within this motif can be phosphorylated, which is critical for Tim-3 signaling in T cells\u00a0(Chen et al., 2013). In this study, we have\u00a0identified an increased tyrosine phosphorylation of Tim-3 in macrophages following VSV infection. We have\u00a0also demonstrated that deletion of Tim-3 tail or mutation of the conserved tyrosines, including Tyr265, Tyr272, Tyr280, and Try281, within Tim-3 tail significantly attenuated the interaction between Tim-3 and NF90. These data demonstrated a new mechanism by which Tim-3 transduces inhibitory signal in anti-viral innate immune responses.\n\nUbiquitination is one of the most versatile posttranslational modifications for substrates and is indispensable for antiviral infection\u00a0(Callis, 2014). However, whether NF90 undergoes ubiquitination is totally unknown. Structurally, NF90 possesses a DZF in the N-terminal region, which is a symbol of ubiquitination for substrates\u00a0(Ji et al., 2018). Here we have\u00a0verified our hypothesis and demonstrated that NF90 can be ubiquitinated, a process that is enhanced by Tim-3 in macrophages following VSV infection. As speculated, Tim-3 mainly promotes the ubiquitination of the DZF domain of NF90. To the\u00a0best of\u00a0our\u00a0knowledge, this is the first report demonstrating that NF90 undergoes ubiquitination. Further, we have\u00a0also found that Lys297, a highly conserved residue among different isoforms of NF90, plays a critical role in the K-48-linked ubiquitination of NF90.\n\nWhen the candidates accounting for NF90 ubiquitination were examined, we focused on TRIM47 as it got the highest scores and the highest number of matched peptides among NF90-interacting proteins, and structurally, TRIM47 contains a RING finger domain in the N-terminus, which may contribute to ubiquitin modification\u00a0(Ji et al., 2018). In addition, TRIM family proteins play important roles in many biological processes, such as cell cycle regulation and viral response\u00a0(Wang et al., 2015). As discussed above, the conserved tyrosines within the Tim-3 tail could form an SH2 (SRC homology 2)-binding domain\u00a0(Rangachari et al., 2012; van de Weyer et al., 2006; Jiang et al., 2016; Lee et al., 2011). We posit that Tim-3 may recruit TRIM47 using its SH2-binding domain as the tyrosines are phosphorylated following VSV infection. A recent report showing that Siglec-G triggers downstream signaling by recruiting SHP-2\u00a0(Chen et al., 2013) supports this hypothesis. Here we have\u00a0demonstrated that TRIM47 dose-dependently promotes the proteasome-dependent degradation of NF90 (Figure 4B). However, to the best of our knowledge, no well-defined ligase-dead TRIM47 construct(s) has been reported so far. The mechanisms by which TRIM47 promotes NF90 degradation remain to be determined in the future. Interestingly, our data showed that Tim-3 enhances the expression and ubiquitination of TRIM47. This is also the first report showing the ubiquitination modification of TRIM47. However, the mechanisms of Tim-3-enhanced TRIM47 ubiquitination and whether the enhanced ubiquitination of TRIM47 by Tim-3 accounts for the increased TRIM47 expression remain to be determined.\n\nIn summary, we have verified that Tim-3 is specifically upregulated following VSV infection and inhibits NF90 signaling pathway in macrophages. Intracellularly, Tim-3 promotes TRIM47-mediated ubiquitination and degradation of NF90. In VSV-infected models, Tim-3 signaling inhibits the formation and the activity of the NF90 downstream SGs. To the best of our knowledge, this is the first report demonstrating the ubiquitination modification of NF90. These findings provide a novel mechanism of Tim-3-mediated infection tolerance, which has implications in antiviral applications.\n\n## Materials and methods\n\n### Mice\n\nThe Tim-3-TG mice were produced and fed as described previously\u00a0(Jiang et al., 2016). The Havcr2f/f (Tim-3KO)\u00a0mice (C57BL/6) used in this study were generated in the Transgenic Core Facility of Cyagen Biosciences Inc, Guangzhou, China. EIIa-cre mice carry a cre transgene under the control of the adenovirus EIIa promoter that targets expression of Cre recombinase to the early mouse embryo and are useful for the\u00a0germline deletion of Loxp-flanked genes. EIIa-cre knock-in mice (C57BL/6) were a gift from Dr. Haitao Wu (Institute of Beijing Institute of Basic Medical Sciences, Beijing, China). Tim-3KO (Havcr2f/f EIIacre/+) mice (C57BL/6) were generated by mating Tim-3-flox with EIIa-cre mice, and the genotype of Tim-3KO mice (Havcr2) was detected with a primer set as mHavcr2-Forward: 5\u2019-CCAATTGGGTTCTACTATAAAGCCTTG-3\u2019, mHavcr2-Reverse1: 5\u2019-AAGTTGAGAGTTCTGGGATTACAGG-3\u2019, and mHavcr2-Reverse2: 5\u2019-ATACTTGCTTCAGTGGCTCGCGA-3\u2019 (Figure 1\u2014figure supplement 1). Wild-type C57BL/6 mice and the aforementioned Tim-3-TG and Tim-3KO mice were bred in specific pathogen-free conditions. The protocol was approved by the Ethics Committee of Animal Experiments of the Beijing Institute of Brain Science (IACUC-DWZX-2018\u2013645). All efforts were made to minimize suffering. Major procedures were blinded.\n\n### Cells and reagents\n\nThe RAW264.7 and HEK293T cell lines (ATCC) were maintained in Dulbecco's modified Eagle's medium (Gibco) supplemented with 10% fetal bovine serum (Gibco). The identity of cell lines has been authenticated using short tandem repeat(STR) profiling and no mycoplasma contamination was found. Peritoneal macrophages were prepared as described\u00a0(Wang et al., 2016). For stable transfection\u00a0of NC shRNA or Tim-3 shRNA, RAW264.7 macrophages were transfected with Lipofectamine 2000 reagents (Invitrogen; 11668019) and then selected with 1000 ng/ml G418 (Invitrogen; 10131027), which were purchased from Invitrogen. VSV was obtained and cultivated as described\u00a0(Chen et al., 2013; Jiang et al., 2016). MG132 was purchased from Selleckchem (S2619) and used at a final concentration of 20 \u03bcM.\n\n### Plasmids and antibodies\n\nThe flag-tagged full-length NF90, NF90 mutation plasmids (NF90-DZF and NF90-\u0394DZF), V5-tagged full-length NF90, as well as HA-tagged ubiquitin, were constructed into pcDNA3.1 (+)-Flag and pcDNA3.1 (+)-V5 eukaryotic expression vectors, respectively. Recombinant vectors encoding WT or mutant human-specific Tim-3 were constructed by PCR-based amplification of complementary DNA\u00a0(cDNA) from human U937 cells and then subcloned into the pcDNA3.1 (+) eukaryotic expression vector, with Flag, Myc, and HA tags, respectively. Full-length NF90-GFP and full-length Tim-3-RFP fluorescence plasmids were cloned into PEGFP1-N1 and PDsRed1-N1 eukaryotic expression vectors, respectively. TRIM47 full-length for V5-tag plasmids were constructed into the pcDNA3.1 (+)-V5 eukaryotic expression vector. Antibodies to Tim-3 (D3M9R, mouse-specific), Tim-3 (D5D5R, human-specific), eIF2\u03b1 (D7D3), p-eIF2\u03b1 (D9G8), Ub-K48 (D9D5), P38 (8690), p-P38 (9215), ERK (4348), and p-ERK (8544) were obtained from Cell Signaling Technology. An antibody to p-PKR (GTX32348) was purchased from GeneTex. Antibodies to \u03b2-actin, anti-Flag-Tag (CW0287), anti-HA-Tag (CW0092), anti-V5-Tag (CW0094), and anti-RFP (CW0253) were from purchased from CWBIO (China). Antibodies to anti-V5-Tag (ab9116) and anti-HA-Tag (ab9110) for immunoprecipitation were obtained from Abcam. Antibodies to anti-Flag-Tag (F1804) for immunoprecipitation were obtained from Sigma. Antibodies to Ub (ab7780), ILF3/(NF90) (ab92355), PKR (ab184257), G3BP (ab181150), and TIA-1 (ab140595) were obtained from Abcam. The antibody to TRIM47 (BC017299) was obtained from Thermo (PA5-50892), and the antibody to Tim-3 (A2516) for western blot was obtained from Abclonal.\n\n### Western blot analysis\n\nWestern blots were performed as described previously\u00a0(Yang et al., 2013). Briefly, cells were lysed with lysis buffer (1% Triton X-100, 20 mM Tris-HCl, pH 8.0, 250 mM NaCl, 3 mM ethylenediaminetetraacetic acid\u00a0(EDTA), pH 8.0), 3 mM ethylene glycol tetraacetic acid\u00a0(pH 8.0) with the pH adjusted to 7.6, and complete protease inhibitor cocktail (Roche; pH 7.5) on ice for 30 min. Lysates were eluted by boiling for\u00a010 min with 5\u00d7 sample buffer (100 mM Tris-HCl, pH 6.8, 2% sodium\u00a0dodecyl sulfate\u00a0(SDS), 10% glycerol, 0.1% bromophenol blue, 1% \u03b2-mercaptoethanol) and were separated by 10% sodium dodecyl sulphate\u2013polyacrylamide gel electrophoresis (SDS/PAGE), followed by examination of expression levels of the indicated proteins: phospho-eIF2\u03b1, eIF2\u03b1, phospho-PKR, PKR, total protein of NF90, and the levels of phospho-ERK and phospho-p38. \u03b2-actin served as an internal control.\n\n### Viral load\n\nRAW264.7 cell supernatants were collected 3 or 6 hr after VSV infection. Serial tenfold dilutions of the\u00a0supernatant were added to HEK293T cell monolayers in 96-well plates and they were incubated for 72 hr at 37\u00b0C. Endpoints of cytopathic effect were observed, and 50% tissue cell infectious dose (TCID50) was determined using the Reed-Muench method.\n\n### Co-immunoprecipitation\n\nCells were collected 24 hr after transfection and lysed in lysis buffer (1% NP-40, 20 mM Tris-HCl, 150 mM NaCl, 5 mM EDTA, 1 mM Na3VO4, 0.25% sodium deoxycholic acid, and complete protease inhibitor cocktail (Roche), pH 7.5) on ice for 30 min. After centrifugation for 15 min at 12,000 r (11800\u00a0\u00d7\u00a0g), 4\u00b0C, the supernatants were collected and incubated with Protein A/G Sepharose beads (SC-2003; Santa Cruz) coupled to specific antibodies overnight at 4\u00b0C. The next day, beads were washed three times with high-salt wash buffer (1% Triton\u00a0X-100, 20 mM Tris-HCl, 500 mM NaCl, 10% glycerol, 2 mM EDTA, 1 mM Na3VO4, and complete protease inhibitor cocktail (Roche), pH 7.5) and\u00a0another three times with low-salt wash buffer (1% Triton\u00a0X-100, 20 mM Tris-HCl, 150 mM NaCl, 10% glycerol, 2 mM EDTA, 1 mM Na3VO4, and complete protease inhibitor cocktail (Roche), pH 7.5). Lysates were eluted by boiling for\u00a010 min with 5\u00d7 sample buffer (as indicated). Precipitates were fractionated by SDS/PAGE with appropriate concentrations and western blot was performed as described above.\n\n### Ubiquitination assays\n\nFor analysis of the ubiquitination of NF90 in HEK293T cells, plasmids encoding Flag-NF90 and\u00a0HA-Ub-K48 were transfected into HEK293T cells for 24 hr and were treated with MG132 (20 \u03bcM) for 6 hr before harvesting. Cells were lysed with immunoprecipitation lysis buffer (1% NP-40, 20 mM Tris-HCl, 150 mM NaCl, 5 mM EDTA, 1 mM Na3VO4, 0.5% sodium deoxycholic acid, and complete protease inhibitor cocktail (Roche), pH 7.5), and then the whole-cell lysates were immunoprecipitated with an antibody to Flag tag (F1804), followed by analysis of ubiquitination of NF90 with an antibody to HA tag. Precipitates were fractionated by SDS/PAGE with appropriate concentrations (as indicated).\n\n### Pathology and survival assays\n\nFor\u00a0survival assays,\u00a0~6-week-old WT and Tim-3KO mice were given intraperitoneal injection with VSV (1 \u00d7 108 pfu/g) (n\u00a0=\u00a09 per group). To detect the pathology of WT and Tim-3KO mice in response to VSV, the hematoxylin and eosin staining of lung sections was examined 24 hr after infecting.\n\n### Mass spectrometry\n\nPlasmids encoding full-length Tim-3 were transfected into HEK293T cells for 24 hr and cell lysates were immunoprecipitated with an antibody to Tim-3 (D5D5R #45208). Mass spectrometry was used to identify Tim-3-interacting proteins.\n\n### qPCR and RNAi knockdown\n\nGene expression was analyzed by three-step quantitative reverse transcription PCR\u00a0(qPCR). Total RNA was extracted from mouse macrophages using TRI reagent (Sigma). Following the manufacturer\u2019s instructions, RNA was reverse-transcribed in a 20 \u03bcl reaction volume (42\u00b0C, 30 min; 95\u00b0C, 5 min) using a QuantiTect Reverse Transcription Kit (Qiagen, Valencia, CA). cDNA was then amplified using a SYBR Green I Master mix (Roche, Basel, Switzerland) and a Light Cycler 480 PCR system (Roche). All tests were carried out in duplicate reaction mixtures in 96-well plates. The relative expression of the gene of interest was determined using the 2\u2013\u0394\u0394Ct method, with 18S ribosomal mRNA (18S) as the internal control. The primers used for qPCR are listed in Figure 1\u2014figure supplement 1.\n\n### Immunofluorescence microscopy\n\nPeritoneal macrophage cells grown on specific confocal dishes were infected with VSV for 6 hr. Thereafter, the cells were fixed in 4% paraformaldehyde, permeabilized with 1\u00d7 Tris-buffered saline with Tween 20 (TBST) with 0.5% Triton X-100 for 10 min, then incubated in blocking buffer (1\u00d7 TBST with 3% bovine serum albumin), and then incubated with primary antibodies overnight at 4\u00b0C. The cells were washed three times with 1\u00d7 TBST and incubated with secondary antibodies conjugated to Alexa Fluor 594 for 2 hr at room temperature (ZSGB-BIO\uff0cChina) and washed again three times with 1\u00d7 TBST. Nuclei were stained with 4\u2032,6-diamidino-2-phenylindole\u00a0(SouthernBiotech; 0100\u201320) for 10 min, and then the dishes were visualized with a C1-si confocal fluorescence microscope (Nikon Instruments, Tokyo, Japan). The overlap coefficient, area/diameter of SG dots, and line intensity were calculated with Image-Pro Plus Software (Media Cybernetics, Rockville, MD,).\n\n### Statistical analysis\n\nThe significance of difference between groups was determined by two-tailed Student\u2019s t-test and two-way analysis of variance test. For the mouse survival study, Kaplan\u2013Meier survival curves were generated and analyzed for statistical significance with GraphPad Prism 6.0. p-values <0.05 were considered statistically significant.\n",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "e2ba1524-8c5d-443a-97d6-7f62037db1e0",
+      "submission_id": "b2b080ec-5180-479a-97c4-9e318d69ddc6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John W Schoggins, University of Texas Southwestern Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66501.sa1](https://doi.org/10.7554/eLife.66501.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nStress granules are a critical component in the defense against certain viruses. The mechanisms regulating stress granules induced but the NF90 pathway are not well defined. Here, the authors use biochemical, cell-based, and in vivo approaches to make the novel discovery that the immune checkpoint inhibitor Tim3 functions as a negative regulator of NF90-mediated antiviral responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Ubiquitination and degradation of NF90 by Tim-3 inhibits antiviral innate immunity\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Satyajit Rath as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nReviewers request additional experimentation to substantiate Tim3-mediated effects on SG formation, along the lines of comment #4 from Reviewer #1 and comment #6 from Reviewer #2. The remaining comments can be addressed either experimentally or through additional discussion of caveats and limitations in Discussion. Please provide a detailed response of how all points from both reviewers has been considered.\n\nReviewer #1:\n\nIn this study, the authors sought to uncover mechanism regulating NF90-induced antiviral pathways. They initially discovered that the checkpoint protein Tim3 was both induced upon viral infection and that loss of Tim3 is protective against the infection. Mechanistically, the authors used biochemical and cell-based approaches to discover that Tim3 binds NF90 and promotes its degradation via ubiquitination mediated by the E3 ligase TRIM47. The authors further assess the functional consequence of Tim3-mediated inhibition of NF90. As NF90 has known roles in stress granule formation, the authors demonstrated that loss of Tim3 expression is associated with increased NF90, which correlated with increased phosphorylation of PKR and eIF2a and induction of stress granule markers. To demonstrate biological relevance, the authors reveal that mice lacking Tim3 are more resistant to VSV infection.\n\nStrengths include diverse experimental approaches, including in vivo work, to identify and characterize the TIM3-TRIM47-NF90 axis. Weaknesses include lack of a few key experiments that will help support what is already a strong study. The impact of the work is fundamental new insight into the pathways regulating an important mechanism of viral control.\n\n1. What are the effects of Tim3 on VSV titers? RNA is not always a reliable surrogate for infectious virus production.\n\n2. In Figure 3D, why does the full-length protein not appear to be ubiquitinated while the DZF only construct is strongly ubiquitinated?\n\n3. For the TRIM47 experiments, can the authors generate a ligase-dead TRIM47 to firmly conclude that it is the E3 ligase activity of this protein, and not some other cellular interactor that mediates NF90 degradation. Additionally, can the authors discuss why K63-Ub was examined in the context of TRIM47 as opposed to K48, etc? The details of this specific choice were not clearly outlined in the text.\n\n4. In both the cell culture models and the in vivo studies, direct visualization of stress granules by immunofluorescence in Tim3+ and Tim- cells/mice would be more compelling that SG RNA marker induction, as it's not clear what threshold of mRNA is needed to actually form the SGs. Since the authors are making the claim that the viral phenotypes are mediated via by Tim3-dependent effects on NF90-induced SG formation, some demonstration of SG formation in the cell/tissue would provide stronger evidence for the mechanism.\n\nReviewer #2:\n\nIn the present manuscript, the authors provide data on a cross-talk between the immune checkpoint molecule Tim-3 in macrophages and the viral sensor NF90 in the context of VSV infection. In particular, they demonstrate (by using cell lines and primary cells) that VSV infection leads to increased expression and activation of Tim-3, Tim-3 interacts with NF90 via its cytoplasmic tail and enhances NF90 ubiquitination by recruitment of TRIM47.Subsequently, NF90 is degraded and VSV replication is increased. Thus, Tim-3 can mediate viral escape in VSV infection. With this, the authors provide a novel viral escape mechanism involving the previously described immune checkpoint molecule Tim-3 and NF90 in macrophages. Although the authors thoroughly identified key players within this viral escape pathway future studies are required to comprehensively resolve subsequent steps within this pathway. The manuscript is well written and structured and the data appear reliable.\n\nSpecific suggestions to the authors:\n\n1. Figure 1: Quantification of the Tim-3 protein expression (either by densitometric WB analysis or flow cytometry) as well as a prolonged time-course analyzing the expression (mRNA and protein) in the same experimental system (RAW264.7 versus primary macrophages) would clarify the kinetics and strength of Tim-3 regulation by VSV. This will add insights into the potential of NF90 regulation by Tim-3 during VSV infection.\n\n2. Line 138: The described data of NF90 ubiquitination in primary mouse macrophages should be provided and not just stated \"data not shown\".\n\n3. Please indicate the exact number of independent experiments that were performed for each data set.\n\n4. Line 602: Typo F instead of E.\n\n5. Figure 6: The data showing the effects on SGs would be substantiated by confirmation of the differential expression of G3BP-1 and TIA-1 on protein level.\n",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5ba3b28e-0095-4c08-9b20-8f8c324cd93a",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C1",
+      "claim": "Nuclear factor 90 (NF90) is a novel virus sensor that serves to initiate antiviral innate immunity by triggering stress granule (SG) formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear factor 90 (NF90) is a novel virus sensor that serves to initiate antiviral innate immunity by triggering stress granule (SG) formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work establishing NF90's role as a virus sensor and SG trigger.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "743d7814-c88f-4565-bfde-78f8d81c9c68",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C2",
+      "claim": "Tim-3 promotes the ubiquitination and degradation of NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Tim-3, an immune checkpoint inhibitor, promotes the ubiquitination and degradation of NF90 and inhibits NF90-SG-mediated antiviral immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing Tim-3-mediated ubiquitination and degradation of NF90.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "809bf39d-627b-4091-accf-96caab525294",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C3",
+      "claim": "Tim-3 inhibits NF90-SG-mediated antiviral immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Tim-3, an immune checkpoint inhibitor, promotes the ubiquitination and degradation of NF90 and inhibits NF90-SG-mediated antiviral immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing decreased viral loads and enhanced SG formation in Tim-3 knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "81121ac8-688e-4b03-8cdd-2ddcf58c0cb2",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C4",
+      "claim": "Vesicular stomatitis virus (VSV) infection induces the up-regulation and activation of Tim-3 in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Vesicular stomatitis virus (VSV) infection induces the up-regulation and activation of Tim-3 in macrophages, which in turn recruit the E3 ubiquitin ligase TRIM47 to the zinc finger domain of NF90 and initiate a proteasome-dependent degradation via K48-linked ubiquitination at Lys297.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A, B, and C demonstrating increased Tim-3 expression and phosphorylation after VSV infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "7b5ce86a-bb9b-4536-996c-7029d89a963c",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C5",
+      "claim": "Tim-3 recruits the E3 ubiquitin ligase TRIM47 to the zinc finger domain of NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "Vesicular stomatitis virus (VSV) infection induces the up-regulation and activation of Tim-3 in macrophages, which in turn recruit the E3 ubiquitin ligase TRIM47 to the zinc finger domain of NF90 and initiate a proteasome-dependent degradation via K48-linked ubiquitination at Lys297.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by co-immunoprecipitation experiments showing interactions between Tim-3, TRIM47, and the DZF domain of NF90.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "838c5d94-bcbf-4efd-a90b-3d3e6eb4e0e5",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C6",
+      "claim": "Tim-3 initiates proteasome-dependent degradation of NF90 via K48-linked ubiquitination at Lys297.",
+      "claim_type": "EXPLICIT",
+      "source": "Vesicular stomatitis virus (VSV) infection induces the up-regulation and activation of Tim-3 in macrophages, which in turn recruit the E3 ubiquitin ligase TRIM47 to the zinc finger domain of NF90 and initiate a proteasome-dependent degradation via K48-linked ubiquitination at Lys297.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ubiquitination assays and site-directed mutagenesis experiments showing K48-linked ubiquitination at Lys297.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "393267a3-1d73-4d0d-9085-4ae362e79ead",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C7",
+      "claim": "Targeted inactivation of Tim-3 enhances NF90 downstream SG formation by selectively increasing the phosphorylation of protein kinase R and eukaryotic translation initiation factor 2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted inactivation of Tim-3 enhances the NF90 downstream SG formation by selectively increasing the phosphorylation of protein kinase R and eukaryotic translation initiation factor 2\u03b1, the expression of SG markers G3BP1 and TIA-1, and protecting mice from VSV challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data in Figure 6A showing increased phosphorylation of PKR and eIF2\u03b1 in Tim-3KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "3bdd7880-4138-42bb-aaf4-890099a73082",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C8",
+      "claim": "Targeted inactivation of Tim-3 increases the expression of SG markers G3BP1 and TIA-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted inactivation of Tim-3 enhances the NF90 downstream SG formation by selectively increasing the phosphorylation of protein kinase R and eukaryotic translation initiation factor 2\u03b1, the expression of SG markers G3BP1 and TIA-1, and protecting mice from VSV challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunofluorescence data in Figure 6B and C showing increased G3BP1 and TIA-1 expression in Tim-3KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "2cb488c0-a0d7-40aa-ab41-fd17a3c8f830",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C9",
+      "claim": "Targeted inactivation of Tim-3 protects mice from VSV challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted inactivation of Tim-3 enhances the NF90 downstream SG formation by selectively increasing the phosphorylation of protein kinase R and eukaryotic translation initiation factor 2\u03b1, the expression of SG markers G3BP1 and TIA-1, and protecting mice from VSV challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by survival data in Figure 7J showing increased survival of Tim-3KO mice after VSV infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "f6789dba-6092-401b-b702-757bdf717267",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C10",
+      "claim": "Pattern recognition receptors (PRRs), including Toll-like receptors (TLRs) and RIG-I-like receptors (RLRs), are main sensors in defending virus infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Pattern recognition receptors (PRRs), including Toll-like receptors (TLRs) and RIG-I-like receptors (RLRs), are main sensors in defending virus infection (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "8d4c0c95-df34-44be-9dc9-aaf17ec51cc1",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C11",
+      "claim": "PRR-mediated downstream signaling pathways initiating an anti-viral innate immune response is the classic anti-virus infection model.",
+      "claim_type": "EXPLICIT",
+      "source": "PRR-mediated downstream signaling pathways initiating an anti-viral innate immune response is the classic anti-virus infection model (Barbalat et al., 2011; McFadden et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Barbalat et al., 2011 and McFadden et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "3ef3de3b-4809-4ed3-8afa-caab3a2c93ac",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C12",
+      "claim": "NF90 is encoded by interleukin enhancer-binding factor-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, studies have found that nuclear factor 90 (NF90), which is encoded by interleukin enhancer-binding factor-3, is a critical sensor for invading viruses (Li et al., 2016; Shabman et al., 2011; Wang et al., 2009; Wen et al., 2014; Pfeifer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "78cb5b99-ec16-446e-a9cc-51ad062d13f1",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C13",
+      "claim": "NF90 is a critical sensor for invading viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, studies have found that nuclear factor 90 (NF90), which is encoded by interleukin enhancer-binding factor-3, is a critical sensor for invading viruses (Li et al., 2016; Shabman et al., 2011; Wang et al., 2009; Wen et al., 2014; Pfeifer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Li et al., 2016; Shabman et al., 2011; Wang et al., 2009; Wen et al., 2014; Pfeifer et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "be5e99f1-f1d3-4d14-9662-375f71f590a1",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C14",
+      "claim": "NF90 is an evolutionarily conserved member of the double-stranded RNA (dsRNA)-binding protein family.",
+      "claim_type": "EXPLICIT",
+      "source": "NF90 is an evolutionarily conserved member of the double-stranded RNA (dsRNA)-binding protein family and is abundantly expressed in various mammalian cells (Pati\u00f1o et al., 2015; Masuda et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pati\u00f1o et al., 2015 and Masuda et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "57e447b3-3be7-4ba3-8a96-9420c3496d62",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C15",
+      "claim": "NF90 is abundantly expressed in various mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "NF90 is an evolutionarily conserved member of the double-stranded RNA (dsRNA)-binding protein family and is abundantly expressed in various mammalian cells (Pati\u00f1o et al., 2015; Masuda et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pati\u00f1o et al., 2015 and Masuda et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "4882bd1c-56a7-4430-82f2-d1b5ea28a162",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C16",
+      "claim": "NF90 recognizes virus dsRNA and triggers the formation of stress granules (SGs).",
+      "claim_type": "EXPLICIT",
+      "source": "As an important antiviral pathway, NF90 recognizes virus dsRNA and triggers the formation of stress granules (SGs), which are composed of cytoplasmic particles including ribonucleoproteins, RNA-binding proteins, and translation initiation factors (Shi et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Shi et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "17ee61b3-6b99-4720-954c-3dce1bd7539b",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C17",
+      "claim": "Stress granules are composed of cytoplasmic particles including ribonucleoproteins, RNA-binding proteins, and translation initiation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "As an important antiviral pathway, NF90 recognizes virus dsRNA and triggers the formation of stress granules (SGs), which are composed of cytoplasmic particles including ribonucleoproteins, RNA-binding proteins, and translation initiation factors (Shi et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Shi et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "ac0cd9eb-6fe4-4e8d-865f-b078a38b3bbe",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C18",
+      "claim": "A growing number of virus families modulate SG formation and function to maximize replication efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, a growing number of virus families modulate SG formation and function to maximize replication efficiency (White and Lloyd, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to White and Lloyd, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "0699e92b-a1c7-484b-a40a-6694e13e9205",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C19",
+      "claim": "Upon sensing virus, NF90 induces the phosphorylation of dsRNA-activated protein kinase R (PKR).",
+      "claim_type": "EXPLICIT",
+      "source": "Upon sensing virus, NF90 induces the phosphorylation of dsRNA-activated protein kinase R (PKR) (Li et al., 2016; Wen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Li et al., 2016 and Wen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "d11b57ab-b2bb-4580-8f15-f8d700897fd7",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C20",
+      "claim": "SGs form following PKR-mediated phosphorylation and activation of the eukaryotic translation initiation factor 2\u03b1 (eIF2\u03b1).",
+      "claim_type": "EXPLICIT",
+      "source": "Then SGs form following PKR-mediated phosphorylation and activation of the eukaryotic translation initiation factor 2\u03b1 (eIF2\u03b1), which induces the expression of G3BP1 (Tsai et al., 2017) (Ras-GAP SH3-binding protein-1) and TIA-1 (T-cell intracellular antigen-1), two key markers in SGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tsai et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "0e9fbd23-ee9a-4ab1-ba18-870260ad8838",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C21",
+      "claim": "Phosphorylation and activation of eIF2\u03b1 induces the expression of G3BP1 and TIA-1, two key markers in SGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Then SGs form following PKR-mediated phosphorylation and activation of the eukaryotic translation initiation factor 2\u03b1 (eIF2\u03b1), which induces the expression of G3BP1 (Tsai et al., 2017) (Ras-GAP SH3-binding protein-1) and TIA-1 (T-cell intracellular antigen-1), two key markers in SGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tsai et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "9b5e39eb-ffdd-48b6-a910-f1d31c9ea715",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C22",
+      "claim": "The activated eIF2\u03b1 co-operates with other components of SGs to block virus mRNA translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The activated eIF2\u03b1 co-operates with other components of SGs to block virus mRNA translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge of SG function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "19b56296-4c3e-4fa5-b477-7c008a51b1a7",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C23",
+      "claim": "Tim-3 is encoded by the hepatitis A virus cellular receptor two gene (Havcr2).",
+      "claim_type": "EXPLICIT",
+      "source": "Tim-3, encoded by the hepatitis A virus cellular receptor two gene (Havcr2), is an immune checkpoint inhibitor that was first identified in activated T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Tim-3.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "012f9bbd-f236-4f2c-8feb-4e6163d79b63",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C24",
+      "claim": "Tim-3 is an immune checkpoint inhibitor that was first identified in activated T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Tim-3, encoded by the hepatitis A virus cellular receptor two gene (Havcr2), is an immune checkpoint inhibitor that was first identified in activated T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Tim-3.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "ac93a623-6f50-468d-bf2b-234eb743fa05",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C25",
+      "claim": "Tim-3 is expressed in innate immune cells, such as dendritic cells and macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, Tim-3 was also found to be expressed in innate immune cells, such as dendritic cells and macrophages (Han et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Han et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "71b22041-95fa-491f-8872-4c8b3b16022e",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C26",
+      "claim": "Tim-3 is an exhaustion marker in immune cells of both tumors and infectious diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Establishment of Tim-3 as an exhaustion marker in immune cells of both tumors and infectious diseases makes Tim-3 an attractive target for immunotherapy similar to PD-1 (Huang et al., 2015), CTLA-4 (Stamper et al., 2001), and Siglec-G (Rangachari et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Huang et al., 2015; Stamper et al., 2001; and Rangachari et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "1a90aa6e-6178-40da-a415-411dce63612c",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C27",
+      "claim": "Increased Tim-3 expression on immune cells in patients with coronavirus disease (COVID-19) is associated with an exhaustion phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a report showed that increased Tim-3 expression on immune cells in patients with coronavirus disease (COVID-19) is associated with an exhaustion phenotype (Diao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Diao et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "1fe088d2-bd0f-42df-a524-30ad239158ce",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C28",
+      "claim": "Tim-3 does not have an inhibitory motif within its tail.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Tim-3 does not have an inhibitory motif within its tail (van de Weyer et al., 2006), and the mechanism by which Tim-3 mediates inhibitory signaling remains largely unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to van de Weyer et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "19e38c3b-d762-4a26-a341-c7c947875ae4",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C29",
+      "claim": "CEACAM1 is a heterophilic ligand of Tim-3 and is required for Tim-3 to mediate T cell inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Huang et al., 2015 showed that CEACAM1 is a heterophilic ligand of Tim-3 and is required for Tim-3 to mediate T cell inhibition and that Bat-3 acts as a safety catch, which blocks Tim-3-mediated inhibitory signals in T cells (Rangachari et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Huang et al., 2015 and Rangachari et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "dd0bae7c-9092-4dd5-b544-269373537525",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C30",
+      "claim": "Bat-3 acts as a safety catch, which blocks Tim-3-mediated inhibitory signals in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Huang et al., 2015 showed that CEACAM1 is a heterophilic ligand of Tim-3 and is required for Tim-3 to mediate T cell inhibition and that Bat-3 acts as a safety catch, which blocks Tim-3-mediated inhibitory signals in T cells (Rangachari et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Huang et al., 2015 and Rangachari et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "8c080397-e0e2-4505-9ccf-832f323ec43d",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C31",
+      "claim": "Ubiquitination is one of the most versatile posttranslational modifications and is indispensable for antiviral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitination is one of the most versatile posttranslational modifications and is indispensable for antiviral infection (Heaton et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Heaton et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "b35463c4-7379-437f-a311-f1d1fc2b21c8",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C32",
+      "claim": "Ubiquitination plays important roles in various cellular processes, including cell proliferation and antiviral innate signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing evidences suggest that ubiquitination plays important roles in various cellular processes, including cell proliferation and antiviral innate signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ubiquitination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "32164d55-e836-427e-a9d1-e7c6f14b158a",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C33",
+      "claim": "Posttranslational modification of TRAF3/6, RIG-I, MAVS, TBK1, IRF3/7, and NLRP3 by different types of ubiquitination plays key roles in the regulation of antiviral innate immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Posttranslational modification of many signaling molecules, including TRAF3/6 (Chen et al., 2015), RIG-I (Chen et al., 2013), MAVS (Liu et al., 2017), TBK1 (Song et al., 2016a), IRF3/7 (Yu and Hayward, 2010; Wang et al., 2015), and NLRP3 (Song et al., 2016b), involved in TLR, RLR, and NLR pathways by different types of ubiquitination plays key roles in the regulation of antiviral innate immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chen et al., 2015; Chen et al., 2013; Liu et al., 2017; Song et al., 2016a; Yu and Hayward, 2010; Wang et al., 2015; and Song et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "a4cd92c3-1c4b-4901-83ad-70332edc6501",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C34",
+      "claim": "NF90 contains a ubiquitin-binding domain (domain associated with zinc fingers, DZF).",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether NF90, a molecule containing a ubiquitin-binding domain (domain associated with zinc fingers, DZF), undergoes ubiquitination remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural characteristic of NF90.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "aa2a8325-f453-4446-98af-1f911da9387f",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C35",
+      "claim": "Tim-3 was involved in innate immunity against vesicular stomatitis virus (VSV) by promoting the proteasomal degradation of NF90 via the tripartite motif-containing protein 47 (TRIM47)-mediated conjugation of K48-linked ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we found that Tim-3 was involved in innate immunity against vesicular stomatitis virus (VSV) by promoting the proteasomal degradation of NF90 via the tripartite motif-containing protein 47 (TRIM47)-mediated conjugation of K48-linked ubiquitin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "bc87a81d-95e2-4d2c-afaf-66139576b321",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C36",
+      "claim": "This is the first time demonstrating ubiquitination as a new posttranslational modification mechanism of NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, it is the first time demonstrating ubiquitination as a new posttranslational modification mechanism of NF90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "e34da41d-bc0d-4eea-9172-a8bbae8af713",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C37",
+      "claim": "VSV infection induces the up-regulation of Tim-3 in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly after VSV challenge, the expression of Tim-3 was upregulated in macrophages (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR and western blot data shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "9178c960-1df1-434f-b1ad-5676778396b7",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C38",
+      "claim": "VSV infection induces time-dependent enhancement of Tim-3 phosphorylation in HEK293T cells transfected with Tim-3.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a time-dependent enhancement of Tim-3 phosphorylation in HEK293T cells transfected with Tim-3 and challenged with VSV (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation and western blot data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "824ecdd1-c8cb-46a0-a024-3531a8b222be",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C39",
+      "claim": "Knockout of Tim-3 in macrophages leads to decreased VSV load.",
+      "claim_type": "EXPLICIT",
+      "source": "Both knockout and knockdown of Tim-3 in macrophages led to a decreased VSV load (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TCID50 assay data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "ce3228a0-e81c-48dd-ad9c-7466e9d84ca6",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C40",
+      "claim": "Knockdown of Tim-3 in macrophages leads to decreased VSV load.",
+      "claim_type": "EXPLICIT",
+      "source": "Both knockout and knockdown of Tim-3 in macrophages led to a decreased VSV load (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TCID50 assay data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "3c5b8876-785b-4f03-8868-6b155fdc00f6",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C41",
+      "claim": "Tim-3 has a negative regulatory role in anti-viral innate immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest a negative regulatory role of Tim-3 in anti-viral innate immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing decreased viral loads in Tim-3 knockout/knockdown cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "9be491d2-e138-4215-9a04-c8e77953c429",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C42",
+      "claim": "NF90 received the highest score and the highest number of matched peptides among Tim-3-interacting protein candidates identified by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the candidates, NF90, an RNA-binding protein involved in anti-infection and anti-tumor immunity, received the highest score and the highest number of matched peptides (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "8cf3e4ae-456b-48fa-8406-5cb266dd3f51",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C43",
+      "claim": "Tim-3 interacts with NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm the interaction between Tim-3 and NF90, HEK293T cells were co-transfected with NF90 and Tim-3 and immunoprecipitation was conducted targeting either Tim-3 (Figure 2A) or NF90 (Figure 2B); all confirmed the interaction between Tim-3 and NF90.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by co-immunoprecipitation data shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "f82f8b4c-954b-4d34-88b5-e6b53ef5a0c1",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C44",
+      "claim": "4Y/F mutants of Tim-3 (Y265F, Y272F, Y280F, Y281F) weaken the binding of Tim-3 with NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that 4Y/F mutants of Tim-3 (Y265F, Y272F, Y280F, Y281F) weakened the binding of Tim-3 with NF90, while deletion of the intracellular domain of Tim-3 (\u25b3IC) resulted in the loss of binding activity of Tim-3 with NF90 (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "a0e30903-9244-4179-b0ce-2469e9261d22",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C45",
+      "claim": "Deletion of the intracellular domain of Tim-3 (\u25b3IC) results in the loss of binding activity of Tim-3 with NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that 4Y/F mutants of Tim-3 (Y265F, Y272F, Y280F, Y281F) weakened the binding of Tim-3 with NF90, while deletion of the intracellular domain of Tim-3 (\u25b3IC) resulted in the loss of binding activity of Tim-3 with NF90 (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "7b6dd688-7e44-4acd-adf5-20bfd4cb3b4a",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C46",
+      "claim": "Tim-3 interacts with NF90 through its intracellular domain, in which Y265, Y272, Y280, and Y281 play an important role.",
+      "claim_type": "EXPLICIT",
+      "source": "These data showed that Tim-3 interacts with NF90 through its intracellular domain, in which Y265, Y272, Y280, and Y281 play an important role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the mutagenesis data showing weakened binding with Y/F mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "a1ae9a13-1bda-414a-9abd-037e38de95ee",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C47",
+      "claim": "Overexpression of Tim-3 decreases the expression of NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "In HEK293T cells transfected with Tim-3 or in macrophages from Tim-3 transgenic (Tim-3-TG) mice, the overexpression of Tim-3 decreased the expression of NF90 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "42b45866-a0f1-4f1d-b7a2-6e136ad80bf5",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C48",
+      "claim": "The total ubiquitination of NF90 is significantly increased in macrophages from Tim-3-TG mice compared to those from WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the total ubiquitination and the k48-linked ubiquitination of NF90 were significantly increased in macrophages from Tim-3-TG mice compared to those from WT mice (Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation and western blot data shown in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "9e61db9b-462b-4b81-8fcc-32a1619b23d8",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C49",
+      "claim": "The K48-linked ubiquitination of NF90 is significantly increased in macrophages from Tim-3-TG mice compared to those from WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the total ubiquitination and the k48-linked ubiquitination of NF90 were significantly increased in macrophages from Tim-3-TG mice compared to those from WT mice (Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation and western blot data shown in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "c7fd1000-23a0-4770-b33a-b2c3e5ee564d",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C50",
+      "claim": "NF90 undergoes K48-linked ubiquitination, which can be enhanced by co-transfected Tim-3.",
+      "claim_type": "EXPLICIT",
+      "source": "When NF90, K48-Ub, or Tim-3 was transfected into HEK293T cells, NF90 underwent K48-linked ubiquitination, which can be enhanced by co-transfected Tim-3 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation and western blot data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "2f236155-4100-4beb-8bc2-6619acbf99f9",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C51",
+      "claim": "The DZF domain of NF90 is dominantly ubiquitinated.",
+      "claim_type": "EXPLICIT",
+      "source": "We then explored the domain of NF90 for ubiquitination using constructions encoding the DZF domain, full-length NF90 or NF90 lacking the DZF domain (\u25b3DZF) (Figure 3C) and found that the DZF domain of NF90 was dominantly ubiquitinated (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation and western blot data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "5428c2bb-2fad-4f77-9230-a8385dbb0ade",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C52",
+      "claim": "Tim-3 specially enhances the ubiquitination of the DZF domain of NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, when the plasmid of Tim-3 was co-transfected with different NF90 constructs, the data revealed that Tim-3 specially enhanced the ubiquitination of DZF (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation and western blot data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "cc962152-ffdc-49b7-992e-45ac4ce2e83c",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C53",
+      "claim": "NF90 can be ubiquitinated at the DZF domain, and the process can be enhanced by Tim-3.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated that NF90 can be ubiquitinated at the DZF domain, and the process can be enhanced by Tim-3, suggesting that Tim-3 may suppress NF90 by promoting its ubiquitination and degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing enhanced ubiquitination of the DZF domain in the presence of Tim-3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "5e436f91-a21a-45ff-a9d4-e02dbd018343",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C54",
+      "claim": "TRIM47 had the highest Mascot scores and the highest number of matched peptides among NF90-interacting protein candidates with potential E3 ligase activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the NF90-interacting protein candidates, we identified three proteins with potential E3 ligase activities. TRIM47 had the highest Mascot scores and the highest number of matched peptides (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "1e42e44d-cc50-43b4-87a0-588a65743a6a",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C55",
+      "claim": "Knockdown of TRIM47 with specific siRNA in macrophages increases the half-life of endogenous NF90 protein during VSV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of TRIM47 with specific small interfering RNA(siRNA) (si-TRIM47) in macrophages increased the half-life of endogenous NF90 protein during VSV infection (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "7f8eb30f-6162-4c98-aefa-00058e7085be",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C56",
+      "claim": "TRIM47 induces degradation of NF90 in a dose-dependent manner, which can be blockaded in the presence of MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM47 induced degradation of NF90 in a dose-dependent manner, which can be blockaded in the presence of MG132, indicating a proteasome-dependent degradation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "b3e1d86a-153b-437f-ab05-fd6e5371b74e",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C57",
+      "claim": "Tim-3 dose-dependently enhances TRIM47-mediated degradation of NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, when Tim-3 was co-transfected, it dose-dependently enhanced TRIM47-mediated degradation of NF90 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "84acc519-8680-4c93-a53b-3a5513b71cbe",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C58",
+      "claim": "VSV challenge leads to decreased TRIM47 expression in Tim-3KO cells compared with that in WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "VSV challenge led to decreased TRIM47 expression in Tim-3KO cells compared with that in WT cells (Figure 4D) and increased TRIM47 expression in Tim-3 transgenic mice-derived macrophages compared with that in control cells (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "c615e1b2-d304-43ff-904d-bd6ec34d619e",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C59",
+      "claim": "VSV challenge leads to increased TRIM47 expression in Tim-3 transgenic mice-derived macrophages compared with that in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "VSV challenge led to decreased TRIM47 expression in Tim-3KO cells compared with that in WT cells (Figure 4D) and increased TRIM47 expression in Tim-3 transgenic mice-derived macrophages compared with that in control cells (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "fb85351d-0a8b-4e98-89d0-addd29ce612b",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C60",
+      "claim": "Tim-3 promotes the expression of TRIM47 in the presence of virus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results showed that Tim-3 promotes the expression of TRIM47 in the presence of virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the data showing differential TRIM47 expression in Tim-3KO and Tim-3-TG cells after VSV infection.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "f5fda3a2-94a8-4fc2-ae69-d274078fe042",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C61",
+      "claim": "TRIM47 undergoes ubiquitination when Tim-3 is overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when the genes encoding TRIM47, Tim-3, and Ub-K63 were co-transfected into HEK293T cells, TRIM47 underwent ubiquitination, and Tim-3 enhanced this progress (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation and western blot data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "993adecf-86b1-47b5-87e4-32588450dd1b",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C62",
+      "claim": "Tim-3 enhances the ubiquitination of TRIM47.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when the genes encoding TRIM47, Tim-3, and Ub-K63 were co-transfected into HEK293T cells, TRIM47 underwent ubiquitination, and Tim-3 enhanced this progress (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation and western blot data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "6a6e679d-bad3-41d5-b2ca-a3bb31bb894b",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C63",
+      "claim": "TRIM47 interacts with the intracellular domain of Tim-3.",
+      "claim_type": "EXPLICIT",
+      "source": "The immunoprecipitation assay showed that TRIM47 interacts with the intracellular domain of Tim-3 and with the DZF domain of NF90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunoprecipitation data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "33c340be-ce81-40aa-8e2a-4b54639c16fa",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C64",
+      "claim": "TRIM47 interacts with the DZF domain of NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "The immunoprecipitation assay showed that TRIM47 interacts with the intracellular domain of Tim-3 and with the DZF domain of NF90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunoprecipitation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "744da98f-60bc-4ce3-856c-2203993baf4c",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C65",
+      "claim": "Tim-3 recruits TRIM47 to the DZF domain via its intracellular domain while forming a complex of TRIM47 and NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that Tim-3 recruits TRIM47 to the DZF domain via its intracellular domain while forming a complex of TRIM47 and NF90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the interaction data showing Tim-3 binds to both TRIM47 and NF90.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "d22aaeac-847b-48ec-ae6e-9d2865079232",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C66",
+      "claim": "Overexpression of TRIM47 promotes the ubiquitination of NF90, and this process is enhanced when Tim-3 is co-transfected.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of TRIM47 promotes the ubiquitination of NF90, and this process was enhanced when Tim-3 was co-transfected (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation and western blot data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "871611c2-f0f8-46cf-8f91-60661a1ea73f",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C67",
+      "claim": "K297 is the critical residue for the ubiquitination of NF90-DZF targeted by TRIM47.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that K297 is the critical residue for the ubiquitination of NF90-DZF targeted by TRIM47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by site-directed mutagenesis data showing that K297R mutation blocks ubiquitination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "7d4953cf-14d2-478a-aa5d-2bafc001f1ac",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C68",
+      "claim": "Only mutations of arginine at K297R completely blocked the TRIM47-mediated ubiquitination and degradation of NF90 via a K48-mediated linkage.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrated that only mutations of arginine at K297R completely blocked the TRIM47-mediated ubiquitination and degradation of NF90 via a K48-mediated linkage (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoprecipitation and western blot data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "07d7b253-41ba-4d4a-a3d7-7fd46b1df948",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C69",
+      "claim": "TRIM47 dose-dependently induces the degradation of NF90 DZF domain but not of DZF K297R.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, when co-transfected K48-Ub, Tim-3, wild-type NF90, DZF domain, or DZF K297R with increased doses of TRIM47, we found that TRIM47 dose-dependently induced the degradation of NF90 DZF domain but not of DZF K297R (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "34c02589-ebbf-4669-8fe4-82b094551488",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C70",
+      "claim": "The expression of NF90 and the phosphorylation of eIF2\u03b1 and PKR are dramatically increased in macrophages from Tim-3KO mice compared with those in cells from WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The data in Figure 6A show that the expression of NF90 and the phosphorylation of eIF2\u03b1 and PKR were dramatically increased in macrophages from Tim-3KO mice compared with those in cells from WT mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "096c7796-3e17-4f47-a81d-708310caf950",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C71",
+      "claim": "There is no difference in p38 and ERK phosphorylation between Tim-3KO and WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference in p38 and ERK phosphorylation between Tim-3KO and WT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "8768fdaa-546f-4828-9ecc-0273d160bb34",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C72",
+      "claim": "Tim-3 knockout significantly increases the expression of G3BP1 and TIA-1 at the protein level in macrophages following VSV challenges in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The results in Figure 6B and C show that Tim-3 knockout significantly increased the expression of G3BP1 and TIA-1 at the protein level in macrophages following VSV challenges in vitro, demonstrating that Tim-3 inhibits the formation of SGs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "be2e1ef2-84c5-4496-be59-8f8801463981",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C73",
+      "claim": "Tim-3 inhibits the formation of SGs.",
+      "claim_type": "EXPLICIT",
+      "source": "The results in Figure 6B and C show that Tim-3 knockout significantly increased the expression of G3BP1 and TIA-1 at the protein level in macrophages following VSV challenges in vitro, demonstrating that Tim-3 inhibits the formation of SGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the data showing increased SG markers in Tim-3KO cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "1037018b-0a9d-42e8-9f85-750c4d9c4f95",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C74",
+      "claim": "The expression of SG markers, G3BP1 and TIA-1, and VSV replication are significantly changed in spleen, lung, and peritoneal macrophages from Tim-3KO mice compared to those in WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the expression of SG markers, G3BP1 and TIA-1, and VSV replication were significantly changed in spleen, lung, and peritoneal macrophages from Tim-3KO mice than those in WT mice (Figure 7A\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 7A-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "82787870-7391-4e1e-aac0-da46da70b551",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C75",
+      "claim": "Lethal VSV infections lead to an increased survival rate in Tim-3KO mice compared to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, lethal VSV infections led to an increased survival rate in Tim-3KO mice compared to WT mice (Figure 7J) and a less severe tissue inflammation (Figure 7K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival data shown in Figure 7J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "33351349-bb2b-400a-8ac5-709d66f3e5db",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C76",
+      "claim": "Lethal VSV infections lead to less severe tissue inflammation in Tim-3KO mice compared to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, lethal VSV infections led to an increased survival rate in Tim-3KO mice compared to WT mice (Figure 7J) and a less severe tissue inflammation (Figure 7K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histopathology data shown in Figure 7K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "de6bbd1c-0d51-4f94-ae20-b0cc9b20a589",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C77",
+      "claim": "Tim-3 deficiency enhances the formation of SGs in vivo and protects mice from VSV.",
+      "claim_type": "EXPLICIT",
+      "source": "These data showed that Tim-3 deficiency enhances the formation of SGs in vivo and protects mice from VSV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the in vivo data showing increased SG markers and improved survival in Tim-3KO mice.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "c55ac27e-0b1c-49ab-baff-013afda08ae3",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C78",
+      "claim": "Silencing of TRIM47 with specific siRNA in RAW264.7 leads to increased G3BP1 and TIA-1 expression and a decreased viral load following VSV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The data showed that silencing of TRIM47 with specific siRNA in RAW264.7 led to increased G3BP1 and TIA-1 expression and a decreased viral load following VSV infection (Figure 6\u2014figure supplement 1), further confirming that TRIM47 acts as an up-stream regulator of the NF90-SG antiviral pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "d45c5490-0c87-4e03-9402-5ef3b1c48104",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C79",
+      "claim": "TRIM47 acts as an up-stream regulator of the NF90-SG antiviral pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The data showed that silencing of TRIM47 with specific siRNA in RAW264.7 led to increased G3BP1 and TIA-1 expression and a decreased viral load following VSV infection (Figure 6\u2014figure supplement 1), further confirming that TRIM47 acts as an up-stream regulator of the NF90-SG antiviral pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the data showing that TRIM47 knockdown increases SG markers and decreases viral load.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "f421dc70-462f-45c6-b4d5-4289c89784e3",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C80",
+      "claim": "Tim-3 is specifically upregulated following VSV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have verified that Tim-3 is specifically upregulated following VSV infection and inhibits NF90 signaling pathway in macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Figure 1A and B showing increased Tim-3 expression after VSV infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "a0672d42-7e8c-4620-a808-d6928e8e9e86",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C81",
+      "claim": "Tim-3 inhibits NF90 signaling pathway in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have verified that Tim-3 is specifically upregulated following VSV infection and inhibits NF90 signaling pathway in macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data showing decreased NF90 expression and activity in the presence of Tim-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "0f41db5d-ed62-48b5-9a0b-83ccb9892d48",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C82",
+      "claim": "Tim-3 promotes TRIM47-mediated ubiquitination and degradation of NF90 intracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellularly, Tim-3 promotes TRIM47-mediated ubiquitination and degradation of NF90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ubiquitination assays and degradation experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "389faad0-a522-4a93-b79c-b47f96b33058",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C83",
+      "claim": "Tim-3 signaling inhibits the formation and the activity of the NF90 downstream SGs in VSV-infected models.",
+      "claim_type": "EXPLICIT",
+      "source": "In VSV-infected models, Tim-3 signaling inhibits the formation and the activity of the NF90 downstream SGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data showing decreased SG markers in the presence of Tim-3 and increased SG markers in Tim-3KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "3f5b5467-e16c-45d5-ae37-4986895cdfb5",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C84",
+      "claim": "This is the first report demonstrating the ubiquitination modification of NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, this is the first report demonstrating the ubiquitination modification of NF90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "8aa3f139-3f08-43dc-85dc-fb0c595baee0",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C85",
+      "claim": "VSV is an RNA virus widely used for investigating anti-viral immunity in both mouse and human models.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether Tim-3 is involved in the innate immunity against viruses, we challenged macrophages with VSV, an RNA virus widely used for investigating anti-viral immunity in both mouse and human models (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "f788c4c6-76c9-409c-8645-44f139a6f16a",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C86",
+      "claim": "NF90 is required for an efficient response against VSV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "One report showed that NF90 is required for an efficient response against VSV infection (Pfeifer et al., 2008), but the underlying mechanism has not been clarified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pfeifer et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "0714d0f6-86be-452b-8bfa-4ad976112b35",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C87",
+      "claim": "NF90 interacts with the VP35 protein of Ebola virus (EBOV) and inhibits EBOV infection through impairing the function of the EBOV transcription/replication complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Other reports have shown that NF90 interacted with the VP35 protein of Ebola virus (EBOV) and inhibited EBOV infection through impairing the function of the EBOV transcription/replication complex (Shabman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Shabman et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "56bba6b4-fe92-4848-96c9-822c9d8f44b9",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C88",
+      "claim": "Knockdown of NF90 in indicated cells dramatically promotes EBOV and influenza virus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of NF90 in indicated cells dramatically promotes EBOV and influenza virus replication, while overexpression of NF90 inhibits or impacts replication of these viruses (Li et al., 2016; Shabman et al., 2011; Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Li et al., 2016; Shabman et al., 2011; and Wang et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "ec07bb10-8e38-4596-8d39-5bde0b64cf76",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C89",
+      "claim": "Overexpression of NF90 inhibits or impacts replication of EBOV and influenza viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of NF90 in indicated cells dramatically promotes EBOV and influenza virus replication, while overexpression of NF90 inhibits or impacts replication of these viruses (Li et al., 2016; Shabman et al., 2011; Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Li et al., 2016; Shabman et al., 2011; and Wang et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "e634f568-cbee-4143-a9a2-e284b35fdb37",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C90",
+      "claim": "SGs, not the interferon pathway, serve as the downstream signaling cascade of the NF90 antiviral pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "When the signaling cascades were investigated, SGs, not the interferon pathway, served as the downstream signaling cascade of the NF90 antiviral pathway (Shabman et al., 2011; Pfeifer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Shabman et al., 2011 and Pfeifer et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "1fc7f468-1468-4aba-83c0-3fd5cb3df694",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C91",
+      "claim": "NF90 promotes the assemblage of SG and synergizes with other proteins to exert antiviral immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "NF90 promotes (Meunier et al., 2014) the assemblage of SG and synergizes with other proteins to exert antiviral immunity (Wen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Meunier et al., 2014 and Wen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "17afeb43-5b77-420a-8b57-07fba878703b",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C92",
+      "claim": "Tim-3 induces apoptosis and T cell tolerance by binding with its ligand Gal-9.",
+      "claim_type": "EXPLICIT",
+      "source": "Tim-3 is an immune checkpoint inhibitor that was initially found to be expressed on activated Th1 cells by binding with its ligand Gal-9 (Chou et al., 2009; Dardalhon et al., 2010). Tim-3 induces apoptosis and T cell tolerance (Nakayama et al., 2009; Sarraj et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chou et al., 2009; Dardalhon et al., 2010; Nakayama et al., 2009; and Sarraj et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "fc767543-d2b4-4a6b-9dda-cd65dd529a15",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C93",
+      "claim": "Dysregulated Tim-3 on innate immune cells contributes to the immune evasion of many tumors or pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, our works and other published data have focused on the roles of Tim-3 in maintaining the homeostasis of innate immune cells and have demonstrated that the dysregulated Tim-3 on innate immune cells also contributes to the immune evasion of many tumors or pathogens (Diao et al., 2020; Jiang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Diao et al., 2020 and Jiang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "9e463257-1925-4784-ba4d-7a5ed9441b5c",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C94",
+      "claim": "Tim-3 suppresses the macrophage-mediated antiviral immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have found that Tim-3 suppresses the macrophage-mediated antiviral immune response, suggesting that it is a potent therapeutic target for re-boosting innate immunity against viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing decreased viral loads in Tim-3 knockout macrophages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "bf5b7e18-1fd5-4bd4-bec4-b07b34eaff07",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C95",
+      "claim": "Tim-3 is a potent therapeutic target for re-boosting innate immunity against viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have found that Tim-3 suppresses the macrophage-mediated antiviral immune response, suggesting that it is a potent therapeutic target for re-boosting innate immunity against viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "12852950-28b2-4874-a0ca-f14ea2975ba0",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C96",
+      "claim": "The intracellular tail of Tim-3 contains a highly conserved tyrosine-containing src homology 2 (SH2)-binding motif.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular tail of Tim-3 contains a highly conserved tyrosine-containing src homology 2 (SH2)-binding motif, and tyrosine residues within this motif can be phosphorylated, which is critical for Tim-3 signaling in T cells (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "22e0483c-fd71-430d-b9d6-02917f840dc3",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C97",
+      "claim": "Tyrosine residues within the SH2-binding motif of Tim-3 can be phosphorylated, which is critical for Tim-3 signaling in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular tail of Tim-3 contains a highly conserved tyrosine-containing src homology 2 (SH2)-binding motif, and tyrosine residues within this motif can be phosphorylated, which is critical for Tim-3 signaling in T cells (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "722a8816-a25e-451b-9c87-51fe8b34dac5",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C98",
+      "claim": "Deletion of Tim-3 tail or mutation of the conserved tyrosines, including Tyr265, Tyr272, Tyr280, and Try281, within Tim-3 tail significantly attenuates the interaction between Tim-3 and NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also demonstrated that deletion of Tim-3 tail or mutation of the conserved tyrosines, including Tyr265, Tyr272, Tyr280, and Try281, within Tim-3 tail significantly attenuated the interaction between Tim-3 and NF90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by co-immunoprecipitation data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "4beffcd1-e5c8-41d5-a116-b2baa937de0f",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C99",
+      "claim": "NF90 possesses a DZF in the N-terminal region, which is a symbol of ubiquitination for substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Structurally, NF90 possesses a DZF in the N-terminal region, which is a symbol of ubiquitination for substrates (Ji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ji et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "aa39e85f-7612-4a8f-b9dc-3d9ed0d1e4ac",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C100",
+      "claim": "Lys297 is a highly conserved residue among different isoforms of NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we have also found that Lys297, a highly conserved residue among different isoforms of NF90, plays a critical role in the K-48-linked ubiquitination of NF90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation about NF90.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "43937f03-6d02-4619-a628-0769b17b9923",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C101",
+      "claim": "Lys297 plays a critical role in the K-48-linked ubiquitination of NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we have also found that Lys297, a highly conserved residue among different isoforms of NF90, plays a critical role in the K-48-linked ubiquitination of NF90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by site-directed mutagenesis data showing that K297R mutation blocks ubiquitination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "93c30d81-13b6-439e-b126-09b8089878ca",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C102",
+      "claim": "TRIM47 contains a RING finger domain in the N-terminus, which may contribute to ubiquitin modification.",
+      "claim_type": "EXPLICIT",
+      "source": "When the candidates accounting for NF90 ubiquitination were examined, we focused on TRIM47 as it got the highest scores and the highest number of matched peptides among NF90-interacting proteins, and structurally, TRIM47 contains a RING finger domain in the N-terminus, which may contribute to ubiquitin modification (Ji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ji et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "d362f6f4-8f3d-4385-86e8-2629692b1c7a",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C103",
+      "claim": "TRIM family proteins play important roles in many biological processes, such as cell cycle regulation and viral response.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, TRIM family proteins play important roles in many biological processes, such as cell cycle regulation and viral response (Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "5dd158cf-055f-4293-b31f-e28cf9f0f6fb",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C104",
+      "claim": "Tim-3 may recruit TRIM47 using its SH2-binding domain as the tyrosines are phosphorylated following VSV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We posit that Tim-3 may recruit TRIM47 using its SH2-binding domain as the tyrosines are phosphorylated following VSV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the structural features of Tim-3 and the observed phosphorylation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "64683bfd-6fba-480e-a7bf-fba757a72ce7",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C105",
+      "claim": "Siglec-G triggers downstream signaling by recruiting SHP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent report showing that Siglec-G triggers downstream signaling by recruiting SHP-2 (Chen et al., 2013) supports this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "90622dd7-0253-44dd-ba64-536426ce2b8f",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C106",
+      "claim": "TRIM47 dose-dependently promotes the proteasome-dependent degradation of NF90.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have demonstrated that TRIM47 dose-dependently promotes the proteasome-dependent degradation of NF90 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "7dd81325-9f0b-4760-a451-0ee06f098bae",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C107",
+      "claim": "Tim-3 enhances the expression and ubiquitination of TRIM47.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our data showed that Tim-3 enhances the expression and ubiquitination of TRIM47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot and immunoprecipitation data shown in Figure 4D, E, and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "0671d926-b8a7-4add-84bf-f44a6c3b1302",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C108",
+      "claim": "This is the first report showing the ubiquitination modification of TRIM47.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also the first report showing the ubiquitination modification of TRIM47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "81df508c-26b5-408b-aa91-4dadd12092a0",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C109",
+      "claim": "Tim-3 promotes tumor-prone macrophage polarization by binding to and suppressing the phosphorylation and nuclear translocation of STAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Huang et al., 2015 showed that Tim-3 induces T cell exhaustion via Human leucocyte antigen B associated transcript (BAT) and using CEACAM1 as a coreceptor, and our findings have shown that Tim-3 promotes tumor-prone macrophage polarization by binding to and suppressing the phosphorylation and nuclear translocation of STAT1 (Jiang et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jiang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "075a72eb-9557-4638-a443-d27feb87f24c",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "claim_id": "C110",
+      "claim": "Tim-3 inhibits TLR4-mediated macrophage activation during sepsis by suppressing NF-kB activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, Tim-3 inhibits TLR4-mediated macrophage activation during sepsis by suppressing NF-kB activation (Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "812274fb-55eb-4fa0-9081-ff25c81ba497",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "VSV infection induces upregulation and activation of Tim-3 in macrophages. The authors show increased Tim-3 mRNA and protein expression (C4, C37, C80) and time-dependent phosphorylation of Tim-3 (C38) following VSV challenge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C37, C38, and C80 are supported by qPCR data (Figure 1A), western blot data (Figure 1B), and immunoprecipitation data (Figure 1C) showing increased Tim-3 expression and phosphorylation after VSV infection. The data are consistent across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "75b9a769-0194-43b8-8705-1c7fbebc585f",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Tim-3 has a negative regulatory role in antiviral innate immunity. Knockout or knockdown of Tim-3 in macrophages leads to decreased VSV load (C39, C40), suggesting Tim-3 suppresses macrophage-mediated antiviral responses (C41, C3, C94).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C40, and C41 are supported by TCID50 assay data (Figure 1D, E) showing decreased viral loads in Tim-3 knockout and knockdown cells. This provides direct evidence for Tim-3's negative regulatory role in antiviral immunity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "d1928ddf-3b61-4d30-960a-afc088a285af",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Tim-3 interacts with NF90 through its intracellular domain, with tyrosine residues Y265, Y272, Y280, and Y281 playing important roles. This interaction leads to decreased NF90 expression when Tim-3 is overexpressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 are supported by mass spectrometry data (Figure 2\u2014figure supplement 1), co-immunoprecipitation experiments (Figure 2A, B), mutagenesis studies (Figure 2C, D), and western blot data (Figure 2E). The convergence of multiple experimental approaches provides strong evidence for the Tim-3-NF90 interaction and its functional consequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "52ef1498-3860-4c1d-92a6-f9e2303f84e8",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Tim-3 promotes K48-linked ubiquitination of NF90, specifically at the DZF domain. Overexpression of Tim-3 increases both total and K48-linked ubiquitination of NF90, leading to its degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C48-C53, and C82 are supported by immunoprecipitation and western blot data (Figures 3A-E) showing increased ubiquitination of NF90 in Tim-3-TG cells and enhanced ubiquitination of the DZF domain in the presence of Tim-3. The use of domain deletion constructs and MG132 proteasome inhibitor strengthens the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "76356e9b-eb83-4730-88ec-9a45be67a9b5",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TRIM47 is the E3 ubiquitin ligase that mediates NF90 degradation, and Tim-3 enhances this process. TRIM47 induces proteasome-dependent degradation of NF90 in a dose-dependent manner, which is further enhanced by Tim-3 co-expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57, C5, and C106 are supported by mass spectrometry data (Figure 4A), protein half-life experiments (Figure 4\u2014figure supplement 1), and western blot data showing dose-dependent degradation (Figures 4B, C). The use of MG132 confirms proteasome-dependent degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "13617c8b-7381-49bb-9466-bdb69eeb427e",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Tim-3 promotes TRIM47 expression and ubiquitination in the presence of virus. VSV challenge leads to differential TRIM47 expression in Tim-3KO versus Tim-3-TG cells, and Tim-3 enhances K63-linked ubiquitination of TRIM47.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 and C107 are supported by western blot data (Figures 4D, E) and immunoprecipitation data (Figure 4F) showing differential TRIM47 expression and enhanced ubiquitination in the presence of Tim-3. However, the relationship between TRIM47 ubiquitination and expression levels remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "6cd29f69-587e-4e56-83d1-6f4a19971b38",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Tim-3 recruits TRIM47 to the DZF domain of NF90 via its intracellular domain, forming a ternary complex. TRIM47 interacts with both the intracellular domain of Tim-3 and the DZF domain of NF90.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 are supported by immunoprecipitation data (Figures 5A, B) showing interactions between TRIM47 and both Tim-3 and NF90. The use of domain deletion constructs provides evidence for the specific interaction sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "c17e2336-ed6c-497d-85a4-31f7614e0776",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "K297 is the critical residue for K48-linked ubiquitination of NF90 by TRIM47. Mutation of K297 to arginine completely blocks TRIM47-mediated ubiquitination and degradation of NF90.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C66-C69, and C101 are supported by site-directed mutagenesis experiments (Figures 5D, E, Figure 5\u2014figure supplement 1) showing that K297R mutation blocks ubiquitination and degradation. The systematic testing of multiple lysine residues strengthens the conclusion that K297 is the critical site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "0ea35a2f-4295-47f7-bdbf-55e2c3105ede",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Tim-3 deficiency enhances NF90-mediated signaling by increasing phosphorylation of PKR and eIF2\u03b1. Tim-3 knockout leads to increased NF90 expression and phosphorylation of PKR and eIF2\u03b1, but does not affect p38 or ERK phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C70, and C71 are supported by western blot data (Figure 6A) showing increased NF90 expression and PKR/eIF2\u03b1 phosphorylation in Tim-3KO cells, with no changes in p38 or ERK phosphorylation. This demonstrates specificity of Tim-3's effect on the NF90-SG pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "a405e884-4bae-467d-953a-309bfb3b58ac",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Tim-3 inhibits stress granule formation. Tim-3 knockout significantly increases expression of SG markers G3BP1 and TIA-1 in macrophages following VSV challenge, demonstrating that Tim-3 inhibits SG formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C72, C73, and C83 are supported by immunofluorescence data (Figures 6B, C) showing increased G3BP1 and TIA-1 expression in Tim-3KO cells after VSV infection. The visual evidence clearly demonstrates enhanced SG formation in the absence of Tim-3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "d28db95b-62ee-47f2-9921-09c9f152d056",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Tim-3 deficiency enhances SG formation in vivo and protects mice from VSV infection. Tim-3KO mice show increased expression of SG markers in multiple tissues, increased survival rates, and reduced tissue inflammation following lethal VSV challenge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 and C9 are supported by qPCR data (Figures 7A-I), survival data (Figure 7J), and histopathology (Figure 7K). The in vivo data across multiple tissues and the survival benefit provide strong evidence for the physiological relevance of Tim-3's role in antiviral immunity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "49e43650-6d3f-46d6-b82f-eb3d4caad220",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TRIM47 acts as an upstream regulator of the NF90-SG antiviral pathway. Silencing TRIM47 leads to increased SG marker expression and decreased viral load following VSV infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78 and C79 are supported by qPCR data (Figure 6\u2014figure supplement 1) showing increased G3BP1 and TIA-1 expression and decreased VSV load after TRIM47 knockdown. This provides additional evidence for TRIM47's role in the Tim-3-NF90 pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "570b5523-8936-4384-b28b-4858257a3255",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This is the first report demonstrating ubiquitination as a posttranslational modification mechanism of NF90 and TRIM47.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36, C84, and C108 assert novelty but cannot be fully verified without comprehensive literature review. While the authors provide evidence for NF90 and TRIM47 ubiquitination, the claim of being 'first' requires verification against the entire published literature, which is beyond the scope of the presented data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "48f6a3bf-ee1f-4529-95e0-31dd07f05550",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Tim-3 is a potential therapeutic target for re-boosting innate immunity against viruses, possibly through recruitment of TRIM47 via its SH2-binding domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95 and C104 are speculative and not directly tested. While the data show Tim-3's role in suppressing antiviral immunity, therapeutic potential requires additional validation including specificity, off-target effects, and efficacy in relevant disease models. The mechanism of TRIM47 recruitment is hypothesized but not experimentally demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing the roles of PRRs, NF90, Tim-3, ubiquitination, and related signaling pathways in antiviral immunity based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C10-C34, C85-C93, C96-C97, C99, C102-C103, C105, C109-C110) are supported by citations to prior work and represent established knowledge in the field. They provide necessary context for the current study but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "5f1ce795-7b0b-40f8-9236-2c2adfd0a58b",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Summary claim: Tim-3 is involved in innate immunity against VSV by promoting proteasomal degradation of NF90 via TRIM47-mediated K48-linked ubiquitination, thereby inhibiting the NF90 signaling pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C81 represent the overall conclusion of the study and are supported by the collective evidence from all experimental results. The mechanistic pathway from Tim-3 activation through TRIM47 recruitment to NF90 degradation and SG inhibition is well-documented across multiple figures and experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    },
+    {
+      "id": "f4bef3d4-831a-4d66-b320-cfb8ed775fa2",
+      "content_id": "9ee51036-d410-447d-840c-c033a239764b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Structural and functional characterization of Tim-3 and NF90 domains. The Tim-3 tail contains conserved tyrosines that are important for NF90 interaction, and K297 is a conserved residue in NF90.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98 and C100 are supported by mutagenesis data (Figure 2C, D) and structural knowledge. The functional importance of specific tyrosine residues in Tim-3 and the conservation of K297 in NF90 are experimentally demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:08:06.490874Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "81121ac8-688e-4b03-8cdd-2ddcf58c0cb2",
+      "result_id": "812274fb-55eb-4fa0-9081-ff25c81ba497"
+    },
+    {
+      "claim_id": "e34da41d-bc0d-4eea-9172-a8bbae8af713",
+      "result_id": "812274fb-55eb-4fa0-9081-ff25c81ba497"
+    },
+    {
+      "claim_id": "9178c960-1df1-434f-b1ad-5676778396b7",
+      "result_id": "812274fb-55eb-4fa0-9081-ff25c81ba497"
+    },
+    {
+      "claim_id": "f421dc70-462f-45c6-b4d5-4289c89784e3",
+      "result_id": "812274fb-55eb-4fa0-9081-ff25c81ba497"
+    },
+    {
+      "claim_id": "824ecdd1-c8cb-46a0-a024-3531a8b222be",
+      "result_id": "75b9a769-0194-43b8-8705-1c7fbebc585f"
+    },
+    {
+      "claim_id": "ce3228a0-e81c-48dd-ad9c-7466e9d84ca6",
+      "result_id": "75b9a769-0194-43b8-8705-1c7fbebc585f"
+    },
+    {
+      "claim_id": "3c5b8876-785b-4f03-8868-6b155fdc00f6",
+      "result_id": "75b9a769-0194-43b8-8705-1c7fbebc585f"
+    },
+    {
+      "claim_id": "809bf39d-627b-4091-accf-96caab525294",
+      "result_id": "75b9a769-0194-43b8-8705-1c7fbebc585f"
+    },
+    {
+      "claim_id": "9e463257-1925-4784-ba4d-7a5ed9441b5c",
+      "result_id": "75b9a769-0194-43b8-8705-1c7fbebc585f"
+    },
+    {
+      "claim_id": "9be491d2-e138-4215-9a04-c8e77953c429",
+      "result_id": "d1928ddf-3b61-4d30-960a-afc088a285af"
+    },
+    {
+      "claim_id": "8cf3e4ae-456b-48fa-8406-5cb266dd3f51",
+      "result_id": "d1928ddf-3b61-4d30-960a-afc088a285af"
+    },
+    {
+      "claim_id": "f82f8b4c-954b-4d34-88b5-e6b53ef5a0c1",
+      "result_id": "d1928ddf-3b61-4d30-960a-afc088a285af"
+    },
+    {
+      "claim_id": "a0e30903-9244-4179-b0ce-2469e9261d22",
+      "result_id": "d1928ddf-3b61-4d30-960a-afc088a285af"
+    },
+    {
+      "claim_id": "7b6dd688-7e44-4acd-adf5-20bfd4cb3b4a",
+      "result_id": "d1928ddf-3b61-4d30-960a-afc088a285af"
+    },
+    {
+      "claim_id": "a1ae9a13-1bda-414a-9abd-037e38de95ee",
+      "result_id": "d1928ddf-3b61-4d30-960a-afc088a285af"
+    },
+    {
+      "claim_id": "743d7814-c88f-4565-bfde-78f8d81c9c68",
+      "result_id": "52ef1498-3860-4c1d-92a6-f9e2303f84e8"
+    },
+    {
+      "claim_id": "42b45866-a0f1-4f1d-b7a2-6e136ad80bf5",
+      "result_id": "52ef1498-3860-4c1d-92a6-f9e2303f84e8"
+    },
+    {
+      "claim_id": "9e61db9b-462b-4b81-8fcc-32a1619b23d8",
+      "result_id": "52ef1498-3860-4c1d-92a6-f9e2303f84e8"
+    },
+    {
+      "claim_id": "c7fd1000-23a0-4770-b33a-b2c3e5ee564d",
+      "result_id": "52ef1498-3860-4c1d-92a6-f9e2303f84e8"
+    },
+    {
+      "claim_id": "2f236155-4100-4beb-8bc2-6619acbf99f9",
+      "result_id": "52ef1498-3860-4c1d-92a6-f9e2303f84e8"
+    },
+    {
+      "claim_id": "5428c2bb-2fad-4f77-9230-a8385dbb0ade",
+      "result_id": "52ef1498-3860-4c1d-92a6-f9e2303f84e8"
+    },
+    {
+      "claim_id": "cc962152-ffdc-49b7-992e-45ac4ce2e83c",
+      "result_id": "52ef1498-3860-4c1d-92a6-f9e2303f84e8"
+    },
+    {
+      "claim_id": "0f41db5d-ed62-48b5-9a0b-83ccb9892d48",
+      "result_id": "52ef1498-3860-4c1d-92a6-f9e2303f84e8"
+    },
+    {
+      "claim_id": "5e436f91-a21a-45ff-a9d4-e02dbd018343",
+      "result_id": "76356e9b-eb83-4730-88ec-9a45be67a9b5"
+    },
+    {
+      "claim_id": "1e42e44d-cc50-43b4-87a0-588a65743a6a",
+      "result_id": "76356e9b-eb83-4730-88ec-9a45be67a9b5"
+    },
+    {
+      "claim_id": "7f8eb30f-6162-4c98-aefa-00058e7085be",
+      "result_id": "76356e9b-eb83-4730-88ec-9a45be67a9b5"
+    },
+    {
+      "claim_id": "b3e1d86a-153b-437f-ab05-fd6e5371b74e",
+      "result_id": "76356e9b-eb83-4730-88ec-9a45be67a9b5"
+    },
+    {
+      "claim_id": "7b5ce86a-bb9b-4536-996c-7029d89a963c",
+      "result_id": "76356e9b-eb83-4730-88ec-9a45be67a9b5"
+    },
+    {
+      "claim_id": "90622dd7-0253-44dd-ba64-536426ce2b8f",
+      "result_id": "76356e9b-eb83-4730-88ec-9a45be67a9b5"
+    },
+    {
+      "claim_id": "84acc519-8680-4c93-a53b-3a5513b71cbe",
+      "result_id": "13617c8b-7381-49bb-9466-bdb69eeb427e"
+    },
+    {
+      "claim_id": "c615e1b2-d304-43ff-904d-bd6ec34d619e",
+      "result_id": "13617c8b-7381-49bb-9466-bdb69eeb427e"
+    },
+    {
+      "claim_id": "fb85351d-0a8b-4e98-89d0-addd29ce612b",
+      "result_id": "13617c8b-7381-49bb-9466-bdb69eeb427e"
+    },
+    {
+      "claim_id": "f5fda3a2-94a8-4fc2-ae69-d274078fe042",
+      "result_id": "13617c8b-7381-49bb-9466-bdb69eeb427e"
+    },
+    {
+      "claim_id": "993adecf-86b1-47b5-87e4-32588450dd1b",
+      "result_id": "13617c8b-7381-49bb-9466-bdb69eeb427e"
+    },
+    {
+      "claim_id": "7dd81325-9f0b-4760-a451-0ee06f098bae",
+      "result_id": "13617c8b-7381-49bb-9466-bdb69eeb427e"
+    },
+    {
+      "claim_id": "6a6e679d-bad3-41d5-b2ca-a3bb31bb894b",
+      "result_id": "6cd29f69-587e-4e56-83d1-6f4a19971b38"
+    },
+    {
+      "claim_id": "33c340be-ce81-40aa-8e2a-4b54639c16fa",
+      "result_id": "6cd29f69-587e-4e56-83d1-6f4a19971b38"
+    },
+    {
+      "claim_id": "744da98f-60bc-4ce3-856c-2203993baf4c",
+      "result_id": "6cd29f69-587e-4e56-83d1-6f4a19971b38"
+    },
+    {
+      "claim_id": "838c5d94-bcbf-4efd-a90b-3d3e6eb4e0e5",
+      "result_id": "c17e2336-ed6c-497d-85a4-31f7614e0776"
+    },
+    {
+      "claim_id": "d22aaeac-847b-48ec-ae6e-9d2865079232",
+      "result_id": "c17e2336-ed6c-497d-85a4-31f7614e0776"
+    },
+    {
+      "claim_id": "871611c2-f0f8-46cf-8f91-60661a1ea73f",
+      "result_id": "c17e2336-ed6c-497d-85a4-31f7614e0776"
+    },
+    {
+      "claim_id": "7d4953cf-14d2-478a-aa5d-2bafc001f1ac",
+      "result_id": "c17e2336-ed6c-497d-85a4-31f7614e0776"
+    },
+    {
+      "claim_id": "07d7b253-41ba-4d4a-a3d7-7fd46b1df948",
+      "result_id": "c17e2336-ed6c-497d-85a4-31f7614e0776"
+    },
+    {
+      "claim_id": "43937f03-6d02-4619-a628-0769b17b9923",
+      "result_id": "c17e2336-ed6c-497d-85a4-31f7614e0776"
+    },
+    {
+      "claim_id": "393267a3-1d73-4d0d-9085-4ae362e79ead",
+      "result_id": "0ea35a2f-4295-47f7-bdbf-55e2c3105ede"
+    },
+    {
+      "claim_id": "34c02589-ebbf-4669-8fe4-82b094551488",
+      "result_id": "0ea35a2f-4295-47f7-bdbf-55e2c3105ede"
+    },
+    {
+      "claim_id": "096c7796-3e17-4f47-a81d-708310caf950",
+      "result_id": "0ea35a2f-4295-47f7-bdbf-55e2c3105ede"
+    },
+    {
+      "claim_id": "3bdd7880-4138-42bb-aaf4-890099a73082",
+      "result_id": "a405e884-4bae-467d-953a-309bfb3b58ac"
+    },
+    {
+      "claim_id": "8768fdaa-546f-4828-9ecc-0273d160bb34",
+      "result_id": "a405e884-4bae-467d-953a-309bfb3b58ac"
+    },
+    {
+      "claim_id": "be2e1ef2-84c5-4496-be59-8f8801463981",
+      "result_id": "a405e884-4bae-467d-953a-309bfb3b58ac"
+    },
+    {
+      "claim_id": "389faad0-a522-4a93-b79c-b47f96b33058",
+      "result_id": "a405e884-4bae-467d-953a-309bfb3b58ac"
+    },
+    {
+      "claim_id": "1037018b-0a9d-42e8-9f85-750c4d9c4f95",
+      "result_id": "d28db95b-62ee-47f2-9921-09c9f152d056"
+    },
+    {
+      "claim_id": "82787870-7391-4e1e-aac0-da46da70b551",
+      "result_id": "d28db95b-62ee-47f2-9921-09c9f152d056"
+    },
+    {
+      "claim_id": "33351349-bb2b-400a-8ac5-709d66f3e5db",
+      "result_id": "d28db95b-62ee-47f2-9921-09c9f152d056"
+    },
+    {
+      "claim_id": "2cb488c0-a0d7-40aa-ab41-fd17a3c8f830",
+      "result_id": "d28db95b-62ee-47f2-9921-09c9f152d056"
+    },
+    {
+      "claim_id": "de6bbd1c-0d51-4f94-ae20-b0cc9b20a589",
+      "result_id": "d28db95b-62ee-47f2-9921-09c9f152d056"
+    },
+    {
+      "claim_id": "c55ac27e-0b1c-49ab-baff-013afda08ae3",
+      "result_id": "49e43650-6d3f-46d6-b82f-eb3d4caad220"
+    },
+    {
+      "claim_id": "d45c5490-0c87-4e03-9402-5ef3b1c48104",
+      "result_id": "49e43650-6d3f-46d6-b82f-eb3d4caad220"
+    },
+    {
+      "claim_id": "bc87a81d-95e2-4d2c-afaf-66139576b321",
+      "result_id": "570b5523-8936-4384-b28b-4858257a3255"
+    },
+    {
+      "claim_id": "3f5b5467-e16c-45d5-ae37-4986895cdfb5",
+      "result_id": "570b5523-8936-4384-b28b-4858257a3255"
+    },
+    {
+      "claim_id": "0671d926-b8a7-4add-84bf-f44a6c3b1302",
+      "result_id": "570b5523-8936-4384-b28b-4858257a3255"
+    },
+    {
+      "claim_id": "bf5b7e18-1fd5-4bd4-bec4-b07b34eaff07",
+      "result_id": "48f6a3bf-ee1f-4529-95e0-31dd07f05550"
+    },
+    {
+      "claim_id": "5dd158cf-055f-4293-b31f-e28cf9f0f6fb",
+      "result_id": "48f6a3bf-ee1f-4529-95e0-31dd07f05550"
+    },
+    {
+      "claim_id": "5ba3b28e-0095-4c08-9b20-8f8c324cd93a",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "f6789dba-6092-401b-b702-757bdf717267",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "8d4c0c95-df34-44be-9dc9-aaf17ec51cc1",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "3ef3de3b-4809-4ed3-8afa-caab3a2c93ac",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "78cb5b99-ec16-446e-a9cc-51ad062d13f1",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "be5e99f1-f1d3-4d14-9662-375f71f590a1",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "57e447b3-3be7-4ba3-8a96-9420c3496d62",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "4882bd1c-56a7-4430-82f2-d1b5ea28a162",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "17ee61b3-6b99-4720-954c-3dce1bd7539b",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "ac0cd9eb-6fe4-4e8d-865f-b078a38b3bbe",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "0699e92b-a1c7-484b-a40a-6694e13e9205",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "d11b57ab-b2bb-4580-8f15-f8d700897fd7",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "0e9fbd23-ee9a-4ab1-ba18-870260ad8838",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "9b5e39eb-ffdd-48b6-a910-f1d31c9ea715",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "19b56296-4c3e-4fa5-b477-7c008a51b1a7",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "012f9bbd-f236-4f2c-8feb-4e6163d79b63",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "ac93a623-6f50-468d-bf2b-234eb743fa05",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "71b22041-95fa-491f-8872-4c8b3b16022e",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "1a90aa6e-6178-40da-a415-411dce63612c",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "1fe088d2-bd0f-42df-a524-30ad239158ce",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "19e38c3b-d762-4a26-a341-c7c947875ae4",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "dd0bae7c-9092-4dd5-b544-269373537525",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "8c080397-e0e2-4505-9ccf-832f323ec43d",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "b35463c4-7379-437f-a311-f1d1fc2b21c8",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "32164d55-e836-427e-a9d1-e7c6f14b158a",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "a4cd92c3-1c4b-4901-83ad-70332edc6501",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "8aa3f139-3f08-43dc-85dc-fb0c595baee0",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "f788c4c6-76c9-409c-8645-44f139a6f16a",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "0714d0f6-86be-452b-8bfa-4ad976112b35",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "56bba6b4-fe92-4848-96c9-822c9d8f44b9",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "ec07bb10-8e38-4596-8d39-5bde0b64cf76",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "e634f568-cbee-4143-a9a2-e284b35fdb37",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "1fc7f468-1468-4aba-83c0-3fd5cb3df694",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "17afeb43-5b77-420a-8b57-07fba878703b",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "fc767543-d2b4-4a6b-9dda-cd65dd529a15",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "12852950-28b2-4874-a0ca-f14ea2975ba0",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "22e0483c-fd71-430d-b9d6-02917f840dc3",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "4beffcd1-e5c8-41d5-a116-b2baa937de0f",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "93c30d81-13b6-439e-b126-09b8089878ca",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "d362f6f4-8f3d-4385-86e8-2629692b1c7a",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "64683bfd-6fba-480e-a7bf-fba757a72ce7",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "81df508c-26b5-408b-aa91-4dadd12092a0",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "075a72eb-9557-4638-a443-d27feb87f24c",
+      "result_id": "b8d2fc56-b176-4cc1-a6e1-8678ccd4796b"
+    },
+    {
+      "claim_id": "aa2a8325-f453-4446-98af-1f911da9387f",
+      "result_id": "5f1ce795-7b0b-40f8-9236-2c2adfd0a58b"
+    },
+    {
+      "claim_id": "a0672d42-7e8c-4620-a808-d6928e8e9e86",
+      "result_id": "5f1ce795-7b0b-40f8-9236-2c2adfd0a58b"
+    },
+    {
+      "claim_id": "722a8816-a25e-451b-9c87-51fe8b34dac5",
+      "result_id": "f4bef3d4-831a-4d66-b320-cfb8ed775fa2"
+    },
+    {
+      "claim_id": "aa39e85f-7612-4a8f-b9dc-3d9ed0d1e4ac",
+      "result_id": "f4bef3d4-831a-4d66-b320-cfb8ed775fa2"
+    }
+  ],
+  "comparisons": []
+}

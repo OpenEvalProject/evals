@@ -1,0 +1,2044 @@
+{
+  "submission": {
+    "id": "14fa1776-459b-41ff-a38b-5997f9988144",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:55:53.001448Z",
+    "updated_at": "2025-12-03T02:55:53.001448Z"
+  },
+  "content": [
+    {
+      "id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "submission_id": "14fa1776-459b-41ff-a38b-5997f9988144",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis for human TRPC5 channel inhibition by two distinct inhibitors\n\n## Authors\n\n- Kangcheng Song<sup>1</sup> ([ORCID: 0000-0001-7932-2202](https://orcid.org/0000-0001-7932-2202))\n- Miao Wei<sup>1</sup> ([ORCID: 0000-0002-6304-4778](https://orcid.org/0000-0002-6304-4778))\n- Wenjun Guo<sup>1</sup>\n- Li Quan<sup>1</sup>\n- Yunlu Kang<sup>1</sup>\n- Jing-Xiang Wu<sup>1</sup> ([ORCID: 0000-0001-9851-0065](https://orcid.org/0000-0001-9851-0065))\n- Lei Chen<sup>1</sup> ([ORCID: 0000-0002-7619-8311](https://orcid.org/0000-0002-7619-8311)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Membrane Biology, College of Future Technology, Institute of Molecular Medicine, Beijing Key Laboratory of Cardiometabolic Molecular Medicine, Peking University Beijing China\n2. Peking-Tsinghua Center for Life Sciences, Peking University Beijing China\n3. Academy for Advanced Interdisciplinary Studies, Peking University Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nTRPC5 channel is a nonselective cation channel that participates in diverse physiological processes. TRPC5 inhibitors show promise in the treatment of anxiety disorder, depression, and kidney disease. However, the binding sites and inhibitory mechanism of TRPC5 inhibitors remain elusive. Here, we present the cryo-EM structures of human TRPC5 in complex with two distinct inhibitors, namely clemizole and HC-070, to the resolution of 2.7 \u00c5. The structures reveal that clemizole binds inside the voltage sensor-like domain of each subunit. In contrast, HC-070 is wedged between adjacent subunits and replaces the glycerol group of a putative diacylglycerol molecule near the extracellular side. Moreover, we found mutations in the inhibitor binding pockets altered the potency of inhibitors. These structures suggest that both clemizole and HC-070 exert the inhibitory functions by stabilizing the ion channel in a nonconductive closed state. These results pave the way for further design and optimization of inhibitors targeting human TRPC5.\n\n## Introduction\n\nThe mammalian transient receptor potential canonical (TRPC) channels are Ca2+-permeable nonselective cation channels that belong to the transient receptor potential (TRP) channel superfamily (Clapham, 2003). Among all the subfamilies of TRP channels, TRPC channels share the closest homology to the Drosophila TRP channel, the first TRP channel cloned (Montell and Rubin, 1989). The TRPC subfamily is formed by seven channels in mammals, TRPC1-TRPC7, while TRPC2 is a pseudogene in human. According to the primary amino acid sequences, TRPC channels can be divided into TRPC1, TRPC2, TRPC3/6/7, and TRPC4/5 subgroups (Montell et al., 2002). Among them, TRPC5 is mainly expressed in the brain and to a lesser extent in the liver, kidney, testis, and pancreas (Philipp et al., 1998; Sossey-Alaoui et al., 1999; Uhl\u00e9n et al., 2015). It can form homotetrameric channels or heterotetrameric channels with TRPC4 and/or TRPC1 (Chung et al., 2007; Chung et al., 2006). TRPC5 activation leads to the depolarization of cell membrane and an increase of intracellular Ca2+ level ([Ca2+]i). TRPC5 mediates diverse physiological processes and is implicated in many disease conditions in human such as fear, anxiety, depression, and progressive kidney disease (Riccio et al., 2009; Schaldecker et al., 2013).\n\nTRPC5 channel is regulated by several physiological mechanisms, including cell surface receptors, calcium stores, redox status, and calcium. TRPC5 can be activated by receptor-activated Gq/11-PLC pathway upon the dissociation of Na+/H+ exchanger regulatory factor and activation of IP3 receptors (Kanki et al., 2001; Schaefer et al., 2000; Storch et al., 2017), or through the Gi/o pathway (Jeon et al., 2012). By interacting with STIM1, TRPC5 functions as a store-operated channel (Asanov et al., 2015; Zeng et al., 2004). Extracellular application of reduced thioredoxin or reducing agents enhances TRPC5 activity (Xu et al., 2008). TRPC5 is also regulated by [Ca2+]i in a concentration-dependent bell-shaped manner (Blair et al., 2009; Gross et al., 2009; Ordaz et al., 2005; Zeng et al., 2004), and extracellular Ca2+ ([Ca2+]o) at concentration higher than 5 mM robustly activates TRPC5 (Schaefer et al., 2000; Zeng et al., 2004).\n\nSeveral available pharmacological tool compounds permit the identification of TRPC5 as putative drug targets for several diseases in human (Minard et al., 2018; Sharma and Hopkins, 2019; Wang et al., 2020). (-)-Englerin A (EA), a natural product obtained from Phyllanthus engleri, can selectively activate TRPC4/5 and therefore inhibit tumor growth (Akbulut et al., 2015; Carson et al., 2015), suggesting activation of TRPC4/5 might be a strategy to cure certain types of cancer. Moreover, TRPC5 inhibitors showed promising results for the treatment of central nervous system diseases and focal segmental glomerulosclerosis in animal models (Just et al., 2018; Yang et al., 2015; Zhou et al., 2017). A TRPC4/5 inhibitor developed by Hydra and Boehringer Ingelheim is currently in clinical trial for the treatment of anxiety disorder and depression (Wulff et al., 2019). Another TRPC5 inhibitor GFB-887 developed by Goldfinch Bio is in phase 1 clinical trial for the treatment of kidney disease (NCT number: NCT03970122).\n\nAmong TRPC5 inhibitors, clemizole (CMZ) and HC-070 represent two distinct classes in terms of chemical structures. CMZ is a benzimidazole-derived H1 antagonist that can inhibit TRPC5. M084 and AC1903 are also TRPC5 inhibitors that belong to the CMZ class (Richter et al., 2014; Zhou et al., 2017; Zhu et al., 2015). In contrast, HC-070 is a methylxanthine derivative that inhibits TRPC4/5 with high potency (Just et al., 2018). TRPC5 inhibitor Pico145 (HC-608) and activator AM237 belong to this class (Just et al., 2018; Minard et al., 2019). The distinct sizes, shapes, and chemical characteristics between CMZ and HC-070 type inhibitors suggest that\u00a0they bind human TRPC5 (hTRPC5) at different sites. However, these sites remain enigmatic due to the lack of reliable structural information, which greatly impedes further structure-based compound optimizations. To understand the binding and inhibitory mechanism of these two types of inhibitors, we embarked on structural studies of hTRPC5 in complex with CMZ or HC-070.\n\n## Results\n\n### Structure of hTRPC5 in apo state and in complex with inhibitors\n\nWe show that\u00a0extracellular calcium and EA can robustly elevate intracellular calcium concentration through hTRPC5 channel activation (Figure 1\u2014figure supplement 1A\u2013C), as reported previously (Just et al., 2018; Schaefer et al., 2000; Zeng et al., 2004). Moreover, CMZ and HC-070 effectively inhibited the extracellular calcium-induced intracellular calcium increase in a dose-dependent manner (Figure 1A\u2013B). To reveal the binding sites of EA, CMZ, and HC-070 on hTRPC5, we expressed hTRPC5 in HEK293F cells for structural studies. It is previously reported that the C-terminal truncation of mTRPC increased expression level and retained its pharmacology profile (Duan et al., 2019). Similarly, we found the C-terminal truncation of hTRPC5 yielded a construct (hTRPC51-764) that can be activated by EA and extracellular calcium and can be inhibited by HC-070 and CMZ (Figure 1\u2014figure supplement 1A\u2013C). This construct showed a higher expression level of the tetrameric channel in comparison with the full-length wild-type (WT)\u00a0hTRPC5 (Figure 1\u2014figure supplement 1D). Therefore, we used hTRPC51-764 protein for structural studies. Tetrameric hTRPC51-764 channel was purified in detergent micelles (Figure 1\u2014figure supplement 1E\u2013F). To obtain the EA-bound, CMZ-bound, and the HC-070-bound TRPC5 structures, we added EA, CMZ, or HC-070 to the protein for cryo-EM sample preparation. For the cryo-EM sample in\u00a0the presence of EA, we obtained a reconstruction at the resolution of 3.0 \u00c5 (Figure 1\u2014figure supplements 2\u20133, Table 1). Unfortunately, we could not locate the density of EA, indicating EA was not bound on the protein, probably due to reduced affinity of EA toward purified TRPC5 protein in the current condition. Therefore, we refer this structure as the \u2018apo\u2019 state of hTRPC5, which closely resembles previously published \u2018apo\u2019 mouse TRPC5 structure (PDB ID: 6AEI) (Duan et al., 2019) with root-mean-square deviation (RMSD) of 1.844 \u00c5. In addition, we obtained maps of hTRPC5 in CMZ-bound state and HC-070-bound state to the resolution of 2.7 and 2.7 \u00c5, respectively (Figure 1, Figure 1\u2014figure supplements 4\u20137, Table 1), which unambiguously revealed the ligand densities of CMZ and HC-070 described as below (Figure 1\u2014figure supplement 5E\u2013F, Figure 1\u2014figure supplement 7E\u2013F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig1-v2.jpg)\n\n**Figure 1.:** (A, B) Inhibitory effect of clemizole\u00a0(CMZ) (A) and HC-070 (B) on the extracellular calcium-induced intracellular calcium increase of cells with wild-type hTRPC5 over-expression measured by FLIPR calcium assay (data are shown as means \u00b1 standard error, n\u00a0=\u00a03 independent experiments). (C, D) Cryo-EM density maps of CMZ-bound hTRPC5 shown in side view (C) and top view (D). Subunits A, B, C, and D are colored in purple, light blue, orange, and gray, respectively. Lipids are colored in gold. The approximate boundary of the cell membrane is indicated by gray lines. TMD, transmembrane domain; ICD, intracellular cytosolic domain. (E) Ribbon diagram of a single subunit with secondary structure elements represented in different colors. ARD, ankyrin repeats domain; LHD, linker-helix domain; CH1, C-terminal helix 1; CH2, C-terminal helix 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C) Representative intracellular calcium signal of AD293 cells transfected with hTRPC5(1-764) evoked by 256 nM EA (A) or 14 mM extracellular calcium (B, C), and inhibited by different concentrations of HC-070 (B) or clemizole (CMZ) (C), measured by FLIPR calcium assay. Arrow 1 denotes the time point for application of buffer alone or buffer with inhibitors; arrow 2 denotes the time point for application of the activators. (D) Fluorescence size exclusion chromatography profile of full-length hTRPC5 and hTRPC5(1-764). (E) Representative size\u00a0exclusion chromatography of hTRPC5(1-764) purified in glycol-diosgenin\u00a0(GDN) micelles. (F) SDS-PAGE gel of hTRPC5(1-764) eluted from size\u00a0exclusion chromatography. The position of TRPC5 is labeled. Fractions that were pooled for cryo-EM analysis are denoted by asterisks.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative raw micrograph recorded on K2 Summit camera. (B) Representative 2D class averages of apo hTRPC5. (C) Flowchart for cryo-EM data processing of apo hTRPC5. (D) Fourier shell correlation (FSC) curves of the two independently refined maps for unmasked (blue line, 3.9 \u00c5) and corrected (purple line, 3 \u00c5). Resolution estimation was based on the criterion of FSC 0.143 cut-off. (E) Angular distribution of clemizole (CMZ)-bound hTRPC5. This is a standard output from cryoSPARC. (F) FSC curve of the refined model versus EM map.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A\u2013C) Cryo-EM map of apo hTRPC5 colored by local resolution, shown in top view (A), side view (B), and cross-section (C). The position of cross-section is shown as a dashed line in (A). (D) Cryo-EM density map (contoured at 4.1 \u03c3, gray mesh) with atomic models superimposed.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Representative raw micrograph recorded on K2 Summit camera. (B) Representative 2D class averages of CMZ-bound hTRPC5. (C) Flowchart for cryo-EM data processing of CMZ-bound hTRPC5. (D) Fourier shell correlation (FSC) curves of the two independently refined maps for unmasked (blue line, 3.5 \u00c5) and corrected (purple line, 2.7 \u00c5). Resolution estimation was based on the criterion of FSC 0.143 cut-off. (E) Angular distribution of CMZ-bound hTRPC5. This is a standard output from cryoSPARC. (F) FSC curve of the refined model versus EM map.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A\u2013C) Cryo-EM map of CMZ-bound hTRPC5 colored by local resolution, shown in top view (A), side view (B), and cross-section (C). The position of cross-section is shown as a dashed line in (A). (D) Cryo-EM density map (contoured at 3.8 \u03c3, gray mesh) with atomic models superimposed. (E) Cryo-EM density of CMZ shown in different views (contoured at 3.7 \u03c3). (F) Cryo-EM densities of CMZ-binding pocket in CMZ-bound hTRPC5 map (contoured at 4.6 \u03c3). (G, H) Cryo-EM densities in HC-070-bound hTRPC5 and apo hTRPC5 maps corresponding to the CMZ-binding pocket contoured at the same \u03c3 as in (F).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A) Representative raw micrograph recorded on K2 Summit camera. (B) Representative 2D class averages of HC-070-bound hTRPC5. (C) Flowchart for cryo-EM data processing of HC-070-bound hTRPC5. (D) Fourier shell correlation (FSC) curves of the two independently refined maps for unmasked (blue line, 3.4 \u00c5) and corrected (purple line, 2.7 \u00c5). Resolution estimation was based on the criterion of FSC 0.143 cut-off. (E) Angular distribution of HC-070-bound hTRPC5. This is a standard output from cryoSPARC. (F) FSC curve of the refined model versus EM map.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** (A\u2013C) Cryo-EM map of HC-070-bound hTRPC5 colored by local resolution, shown in top view (A), side view (B), and cross-section (C). The position of cross-section is shown as dashed line in (A). (D) Cryo-EM density map (contoured at 3 \u03c3, gray mesh) with atomic model superimposed. (E\u2013F) Cryo-EM density map of HC-070 shown in different views contoured at 3 and 7 \u03c3, respectively. (G\u2013J) Cryo-EM densities of HC-070-binding pocket in (G) HC-070-bound, (H) clemizole (CMZ)-bound, (I) apo, and (J) Pico145-bound hTRPC5 maps, contoured at 3.8 \u03c3.\n\n**Table 1.**\n Cryo-EM data collection, refinement, and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"3\">PDB ID EMDB ID</th>\n      <th rowspan=\"3\">CMZ-bound hTRPC5 7D4P EMD-30575</th>\n      <th rowspan=\"3\">HC-070-bound hTRPC5 7D4Q EMD-30576</th>\n      <th>apo_hTRPC5</th>\n    </tr>\n    <tr>\n      <th>7E4T</th>\n    </tr>\n    <tr>\n      <th>EMD-30987</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection and processing</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>130,000\u00d7</td>\n      <td>165,000\u00d7</td>\n      <td>130,000\u00d7</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n      <td>300</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e-/\u00c52)</td>\n      <td>50</td>\n      <td>50</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>\u22121.5 to \u22122.0</td>\n      <td>\u22121.5 to \u22122.0</td>\n      <td>\u22121.5 to \u22122.0</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.045</td>\n      <td>0.821</td>\n      <td>1.045</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>C4</td>\n      <td>C4</td>\n      <td>C4</td>\n    </tr>\n    <tr>\n      <td>Initial particle images (no.)</td>\n      <td>354,312</td>\n      <td>274,189</td>\n      <td>64,918</td>\n    </tr>\n    <tr>\n      <td>Final particle images (no.)</td>\n      <td>90,357</td>\n      <td>114,211</td>\n      <td>29,156</td>\n    </tr>\n    <tr>\n      <td>Map resolution (\u00c5) Fourier shell correlation threshold</td>\n      <td>2.7 0.143</td>\n      <td>2.7 0.143</td>\n      <td>3.0 0.143</td>\n    </tr>\n    <tr>\n      <td>Map resolution range (\u00c5)</td>\n      <td>250\u20132.7</td>\n      <td>250\u20132.7</td>\n      <td>250\u20133.0</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Initial model used (PDB code)</td>\n      <td>5Z96</td>\n      <td>5Z96</td>\n      <td>5Z96</td>\n    </tr>\n    <tr>\n      <td>Model resolution (\u00c5) Fourier shell correlation threshold</td>\n      <td>2.7 0.143</td>\n      <td>2.7 0.143</td>\n      <td>3.0 0.143</td>\n    </tr>\n    <tr>\n      <td>Model resolution range (\u00c5)</td>\n      <td>250\u20132.7</td>\n      <td>250\u20132.7</td>\n      <td>250\u20133.0</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B factor (\u00c52)</td>\n      <td>\u2212119.0</td>\n      <td>\u2212118.1</td>\n      <td>\u2212119.0</td>\n    </tr>\n    <tr>\n      <td>Model composition</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Nonhydrogen atoms Protein residues Ligands</td>\n      <td>22,472 2680 28</td>\n      <td>22,388 2672 24</td>\n      <td>22,276 2656 24</td>\n    </tr>\n    <tr>\n      <td>B factors (\u00c52)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein ligand</td>\n      <td>95.86 91.34</td>\n      <td>120.29 124.44</td>\n      <td>140.20 133.98</td>\n    </tr>\n    <tr>\n      <td>Root-mean-square\u00a0deviations</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5) Bond angles (\u00b0)</td>\n      <td>0.004 0.914</td>\n      <td>0.004 0.918</td>\n      <td>0.004 0.906</td>\n    </tr>\n    <tr>\n      <td>Validation</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Validation MolProbity score Clashscore Poor rotamers (%)</td>\n      <td>1.21 4.33 0.67</td>\n      <td>1.32 5.80 0.67</td>\n      <td>1.30 5.52 1.01</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%) Allowed (%) Disallowed (%)</td>\n      <td>98.78 1.22 0.00</td>\n      <td>98.63 1.37 0.00</td>\n      <td>98.93 1.07 0.00</td>\n    </tr>\n  </tbody>\n</table>\n\nThe overall architecture of inhibitor-bound hTRPC5 is similar to apo state, occupying 100 \u00c5\u00a0\u00d7100 \u00c5 \u00d7 130 \u00c5 in three-dimensional (3D)\u00a0space (Figure 1C\u2013D). The fourfold symmetric channel has two-layer architecture, composed of the intracellular cytosolic domain (ICD) layer and the transmembrane domain (TMD) layer (Figure 1C\u2013D). In ICD layer, the N-terminal ankyrin repeats domain (ARD) is below the linker-helix domain (LHD) region (Figure 1E). The TRP helix mediates interactions with TMD. The C-terminal helix 1 (CH1) and the C-terminal helix 2 (CH2) fold back to interact with LHD and ARD (Figure 1E). In TMD layer, the pre-S1 elbow, the voltage sensor-like domain (VSLD, S1-S4), and the pore domain (S5-S6) assemble in a domain-swapped fashion. Densities of several putative lipid molecules were readily observed in the TMD layer, most of which are in the grooves between VSLD and the pore domains (Figure 1C\u2013D).\n\n### The CMZ-binding site\n\nBy comparing the cryo-EM maps of hTRPC5 in complex with CMZ with both the apo state and HC-070-bound state, we found a nonprotein density within a pocket surrounded by S1-S4 and TRP re-entrant loop of VSLD in the CMZ-bound state (Figure 2A\u2013B, Figure 1\u2014figure supplement 5E\u2013H). Moreover, the size and shape of this density match CMZ, suggesting this density represents CMZ. Several residues in hTRPC5 are close to CMZ molecule (Figure 2C), including Y374 on S1, F414, G417 and E418 on S2, D439, M442, N443 and Y446 on S3, R492, S495 and L496 on S4, and P659 on TRP re-entrant loop (Figure 2C\u2013D). Among them, F414 forms a \u03c0-\u03c0 stacking interaction with the chlorophenyl ring of CMZ. Side chains of Y374, M442, Y446, and P659 show hydrophobic interactions with CMZ. Residues surrounding the CMZ-binding site are highly conserved between TRPC4 and TRPC5, in agreement with their similar selectivity for CMZ type inhibitors (Figure 2\u2014figure supplement 1). To understand the function of CMZ interacting residues and the TRPC subtype selectivity of CMZ, we mutated CMZ interacting residues into alanines or the counterparts of TRPC3/6/7. Although all of the mutants showed surface expression (Figure 2\u2014figure supplement 2F\u2013G), some of them had much lower response to 14 mM extracellular calcium compared to WT channel (Figure 2\u2014figure supplement 2A). We only analyze mutants which showed more than half of WT\u2019s response to 14 mM extracellular Ca2+. We found mutations of F414M and S495A did not change the potency of CMZ much (Figure 2E, Table 2), while N443L decrease the potency (Figure 2E, Table 2), suggesting N443 is one of the structural determinants of TRPC subtype selectivity for CMZ inhibition. Although N443 is not involved in polar interactions with CMZ, but it is in close proximity to CMZ and probably has Van der Waals interactions with CMZ. Replacement of N443 with Leu might alter these interactions. These results collectively confirmed this is the CMZ-binding site which carries the inhibitory function against hTRPC5.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig2-v2.jpg)\n\n**Figure 2.:** (A) Densities of CMZ and nearby residues. The map is contoured at 5.0 \u03c3 (gray mesh). CMZ and hTRPC5 are shown as sticks, colored in sky blue and purple, respectively. (B) Overview of the CMZ-binding site in hTRPC5. The dashed region denotes the binding pocket of CMZ. (C) Close-up view of the CMZ-binding site. CMZ is shown as transparent surface superimposed with sticks. Side chains of residues that interact with CMZ are shown as sticks. A cation near CMZ is shown as a magenta sphere. (D) Cartoon representation of the interactions between CMZ and hTRPC5. S1-S4 of subunit A are represented as purple ovals. Residues that interact with CMZ are labeled inside the ovals. (E) Inhibitory effect of CMZ on various hTRPC5 mutants, measured by FLIPR calcium assay (data are shown as means \u00b1 standard error, n\u00a0=\u00a03 independent experiments).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Conserved residues are colored in gray. Secondary structures are indicated as cylinders (\u03b1 helices) and lines (loops). Unmodeled residues are indicated as dashed line. Residues of clemizole (CMZ)-binding site, HC-070-binding site, voltage sensor-like domain (VSLD\u2019s) cation-binding site, and zinc-binding site in CTD are indicated with blue boxes, black boxes, red boxes, and purple boxes, respectively.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The activation of hTRPC5 mutants by 14 mM Ca2+ were normalized to wild-type channel (data are shown as means \u00b1 standard error, n\u00a0=\u00a03 independent experiments). (B\u2013E) The dose-response curve of hTRPC5 mutants by extracellular Ca2+ were normalized to wild-type channel (data are shown as means \u00b1 standard error, n\u00a0=\u00a03 independent experiments). (F\u2013G) Surface expression levels of wild-type and hTRPC5 mutants by western blot. The biotinylated protein was detected by anti-TRPC5 antibody in (F) and anti-N-cadherin antibody in (G).\n\n**Table 2.**\n The potency of clemizole (CMZ) on various human TRPC5 (hTRPC5) constructs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">TRPC5 constructs</th>\n      <th colspan=\"3\">CMZ</th>\n    </tr>\n    <tr>\n      <th>LogIC50*</th>\n      <th>Hill\u00a0slope</th>\n      <th>IC50\u00a0(\u03bcM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>hTRPC5 WT</td>\n      <td>0.49\u00a0\u00b1\u00a00.08</td>\n      <td>\u22122.52</td>\n      <td>3.07</td>\n    </tr>\n    <tr>\n      <td>Mutations in CMZ-binding pocket</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>F414M</td>\n      <td>0.33\u00a0\u00b1\u00a00.06</td>\n      <td>\u22121.45</td>\n      <td>2.15</td>\n    </tr>\n    <tr>\n      <td>N443L</td>\n      <td>1.02\u00a0\u00b1\u00a00.15</td>\n      <td>\u22122.42</td>\n      <td>10.43</td>\n    </tr>\n    <tr>\n      <td>S495A</td>\n      <td>0.48\u00a0\u00b1\u00a00.15</td>\n      <td>\u22121.21</td>\n      <td>3.03</td>\n    </tr>\n  </tbody>\n</table>\n\n_* Data were expressed as logIC50 \u00b1 SEM, n\u00a0=\u00a03._\n\n### The HC-070-binding site\n\nA nonprotein density surrounded by the S5, pore helix from one subunit, and S6 of the adjacent subunit was observed in the presence of HC-070, compared with the apo state and CMZ-bound state (Figure 3A\u2013B, and Figure 1\u2014figure supplement 7G\u2013I). Furthermore, the size and shape of this density perfectly match those of HC-070, indicating this density represents HC-070 compound. HC-070 is a clover-shaped molecule with a hydroxypropyl tail, a chlorophenyl ring, and a chlorophenoxy ring, all of which extend out from the central methylxanthine core. hTRPC5 makes extensive interactions with HC-070 (Figure 3C\u2013D). The side chain of F576 on pore helix forms \u03c0-\u03c0 stacking interaction with the methylxanthine core of HC-070. R557 on the loop linking S5 and pore helix (linker), Q573 and W577 on pore helix form polar contacts with the hydroxypropyl tail of HC-070. F599, A602, and T603 on S6 from the adjacent subunit also stabilize the hydroxypropyl tail. F569 and L572 interact hydrophobically with the chlorophenyl ring of HC-070 (Figure 3C and D). The chlorophenoxy branch is close to C525, which might account for its weaker density and higher flexibility compared to other part of HC-070 (Figure 1\u2014figure supplement 7F). Residues involved in HC-070 binding are absolutely conserved between hTRPC4 and hTRPC5 but not in TRPC3/6/7 (Figure 2\u2014figure supplement 1), in agreement with the fact that HC-070 selectively inhibits TRPC4/5 with high potency compared with TRPC3/6/7 (Just et al., 2018). To understand the contribution of hTRPC5 residues on the inhibitory effect of HC-070, we mutated HC-070 interacting residues into alanines and only analyze mutants with more than 50% of WT\u2019s response to 14 mM extracellular Ca2+ (Figure 2\u2014figure supplement 2A). We found that\u00a0C525A does not change the potency of HC-070 much (Figure 3E, Table 3), while R557A, F569A, L572A, Q573A, F599A, and T603A show decreased potency (Figure 3E\u2013F, Table 3). Notably, Q573A dramatically decreased HC-070 potency (Figure 3F, Table 3), emphasizing the essential role of the hydrogen bond between Q573 and hydroxypropyl group of HC-070. We also mutated F599 of hTRPC5 into the Asn (N in TRPC3/6) and found that\u00a0F599N increased the IC50 more dramatically than F599A did, probably because F599N mutation perturbs the local hydrophobic environment of the HC-070-binding site and indirectly affects ligand binding (Figure 3F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig3-v2.jpg)\n\n**Figure 3.:** (A) Densities within the HC-070-binding site. The map is contoured at 3 \u03c3 (gray mesh). HC-070 and hTRPC5 are shown in sticks, with HC-070 colored in gray. Subunits A and B are colored in purple and light blue, respectively. (B) Overview of the HC-070-binding site in hTRPC5. The dashed region marks the binding pocket of HC-070. (C) Close-up view of the HC-070-binding site. HC-070 is shown as transparent surface superimposed with stick\u00a0model. Side chains of residues that interact with HC-070 are shown as sticks. (D) Cartoon representation of the interactions between HC-070 and hTRPC5. S5 of subunit A and S6 of subunit B are represented as purple and light blue ovals, respectively. Residues that interact with HC-070 are labeled inside the ovals. (E, F) Inhibitory effect of HC-070 on various hTRPC5 mutants, measured by FLIPR calcium assay (data are shown as means \u00b1 standard error, n\u00a0=\u00a03 independent experiments).\n\n**Table 3.**\n The potency of HC-070 on various human TRPC5 (hTRPC5) constructs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">TRPC5 constructs</th>\n      <th colspan=\"3\">HC-070</th>\n    </tr>\n    <tr>\n      <th>LogIC50*</th>\n      <th>Hill slope</th>\n      <th>IC50 (nM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>hTRPC5 WT</td>\n      <td>2.31\u00a0\u00b1\u00a00.10</td>\n      <td>\u22121.52</td>\n      <td>204.3</td>\n    </tr>\n    <tr>\n      <td>Mutations in HC-070-binding pocket</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>C525A</td>\n      <td>2.16\u00a0\u00b1\u00a00.15</td>\n      <td>\u22121.03</td>\n      <td>145.8</td>\n    </tr>\n    <tr>\n      <td>R557A</td>\n      <td>2.52\u00a0\u00b1\u00a00.07</td>\n      <td>\u22121.45</td>\n      <td>329.7</td>\n    </tr>\n    <tr>\n      <td>F569A</td>\n      <td>2.86\u00a0\u00b1\u00a00.15</td>\n      <td>\u22121.21</td>\n      <td colspan=\"2\">727.4</td>\n    </tr>\n    <tr>\n      <td>L572A</td>\n      <td>2.74\u00a0\u00b1\u00a00.17</td>\n      <td>\u22121.58</td>\n      <td>552.7</td>\n    </tr>\n    <tr>\n      <td>Q573A</td>\n      <td>3.10\u00a0\u00b1\u00a00.61</td>\n      <td>\u22121.75</td>\n      <td>&gt;1000</td>\n    </tr>\n    <tr>\n      <td>F599A</td>\n      <td>2.67\u00a0\u00b1\u00a00.29</td>\n      <td>\u22121.09</td>\n      <td>467.9</td>\n    </tr>\n    <tr>\n      <td>F599N</td>\n      <td>3.57\u00a0\u00b1\u00a01.55</td>\n      <td>\u22120.86</td>\n      <td>&gt;1000</td>\n    </tr>\n    <tr>\n      <td>T603A</td>\n      <td>2.68\u00a0\u00b1\u00a00.16</td>\n      <td>\u22121.20</td>\n      <td>472.7</td>\n    </tr>\n    <tr>\n      <td>T607A</td>\n      <td>2.43\u00a0\u00b1\u00a00.12</td>\n      <td>\u22123.13</td>\n      <td>268.4</td>\n    </tr>\n  </tbody>\n</table>\n\n_* Data were expressed as logIC50 \u00b1 SEM, n\u00a0=\u00a03._\n\n### Ion conduction pore and cation-binding sites\n\nIn TMD, pore helices, pore loops, and S6 of four protomers form the transmembrane pathway for ion permeation. Calculated pore profiles showed that the constriction is formed by the side chains of I621, N625, and Q629, which represents the lower gate of hTRPC5 (Figure 4A\u2013B). The smallest radius at this gate is below 1 \u00c5, indicating the channel is in a nonconductive closed state (Figure 4B). This is in agreement with the inhibitory function of CMZ and HC-070. A putative cation density inside VSLD, surrounded by E418 and E421 on S2 and N436, D439 on S3, was observed in both CMZ and HC-070 maps (Figure 4C). Strikingly, this putative cation is in close proximity to CMZ in CMZ-bound hTRPC5 (Figure 2C). Similar cation density was previously observed in mTRPC4 and mTRPC5 and identified as activating calcium in TRPM2, TRPM4, and TRPM8 (Autzen et al., 2018; Duan et al., 2019; Duan et al., 2018; Huang et al., 2018; Yin et al., 2019). We generate the E418Q-E421Q-D439N triple mutant (Duan et al., 2019) to abolish the cation-binding capability of this site and found the channel cannot be activated by extracellular calcium anymore (Figure 2\u2014figure supplement 2E, Figure 4\u2014figure supplement 1B), suggesting the essential role of this site for calcium activation. Since icilin activates TRPM8 in a Ca2+-dependent manner and binds to a topologically equivalent site as CMZ (Yin et al., 2019), we carried out electrophysiology experiment and used 1 mM EGTA and 1 mM EDTA to chelate intracellular Ca2+ to explore whether Ca2+ is required for CMZ inhibition of TRPC5. We found that\u00a0CMZ could inhibit EA-elicited currents in this condition (Figure 4\u2014figure supplement 1C), suggesting CMZ exerts its function independent of high intracellular Ca2+.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig4-v2.jpg)\n\n**Figure 4.:** (A) Side view of the pore region of nonconductive hTRPC5 (clemizole\u00a0[CMZ]-bound). Subunits A and C are shown as ribbon and colored the same as in Figure 1. Subunits B and D are omitted for clarity. Ion conduction pathway along the pore is shown as dots with key residues labeled, calculated by HOLE. Purple, green, and red dots define pore radii of\u00a0>2.8, 1.4\u20132.8, and\u00a0<1.4 \u00c5, respectively. (B) Calculated pore radii of CMZ-bound hTRPC5, HC070-bound hTRPC5, and apo hTRPC5 are shown vertically. (C) Close-up view of the putative cation-binding site in transmembrane domain (TMD). Densities of the cation and the related residues are contoured at 4.6 \u03c3 and shown as gray mesh. The side chains of the residues that interact with the cation are shown as sticks. (D) Close-up view of the putative zinc-binding site in hTRPC5. Densities of the zinc ion and interacting residues are contoured at 4.3 \u03c3 and shown as gray mesh. (E) Other modeled nonprotein densities in TMD in CMZ-bound hTRPC5 are shown as sticks and colored the same as in Figure 1. (F) Close-up view of the putative diacylglycerol\u00a0(DAG)-binding sites in hTRPC5. Densities of the DAG and interacting residues are contoured at 5 \u03c3 and shown as gray mesh. Residues that interact with DAG were labeled.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013B) Representative intracellular calcium signal of AD293 cells transfected with wild-type or hTRPC5 mutant evoked by 256 nM EA (A) or 14 mM extracellular calcium (B), measured by FLIPR calcium assay. (C) Macroscopic currents of hTRPC5 recorded in whole-cell mode in calcium-free condition.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Comparison of experimental density map of diacylglycerol\u00a0(DAG) (gray) (contoured at 3.2 \u03c3) and simulated density map of lysophospholipid (yellow). Please note, the density for electron-dense phosphate head group is absent in the cryo-EM maps obtained experimentally. (B\u2013D) Close-up views of lipid 1 (B), lipid 2 (C), and cholesteryl hemisuccinate\u00a0(CHS) (D) binding sites. Subunits A and B are colored in purple and light blue, respectively. Residues that interact with lipids are shown as sticks. Insets show cryo-EM densities of these lipids, contoured at 2.3, 3.1, and 3.1 \u03c3, respectively.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) The HPLC chromatography of DAG (18:1-18:1) under the MRM transition 638.6\u00a0->\u00a0339.3 from buffer (left), and human TRPC5 (hTRPC5) sample (right). (B) MS/MS spectrum of lipid extractants from hTRPC5 sample. (C) Potential MS/MS fragmentation pattern of DAG,\u00a0using\u00a01,2-DAG as\u00a0an\u00a0example.\n\nIn ICD, there is another extra density found in the ankyrin repeat 4 (AR4)-linker helix (LH1) region (Figure 4D). The ion is coordinated by the side chains of H178 and C182 on the AR4-LH1 loop and C184 and C187 on the LH1 helix (Figure 4D). Based on the chemical environments for ion coordination, this is likely to be an HC3-type zinc-binding site, as observed previously in a bacteria glucokinase (Miyazono et al., 2012). Because the zinc ions were from an endogenous source and co-purified with hTRPC5, we speculate that\u00a0this is a high affinity zinc- binding site that constitutively chelates zinc. The residues coordinating the putative zinc ion are highly conserved in TRPC ion channels (Figure 2\u2014figure supplement 1), and mutation of C176A-C178A-C181A does not affect calcium activation or EA activation (Figure 2\u2014figure supplement 2E, Figure 4\u2014figure supplement 1A\u2013B), suggesting\u00a0that this zinc-binding site might play other regulatory or structural roles, instead of ion channel gating.\n\n### The lipid-binding sites\n\nIn the 2.7 \u00c5 cryo-EM maps of hTRPC5 in complex with CMZ, we observed several putative lipid molecules in the TMD (Figure 1C\u2013D, Figure 4E). One lipid is located near the S5 and pore helix from one subunit and S6 from the adjacent subunit in the CMZ-bound hTRPC5. Its density highly resembles diacylglycerol (DAG) molecule which shows two acryl tails, but without phosphate group or headgroup of typical phospholipids (Figure 4F, Figure 4\u2014figure supplement 2A). In agreement with our structural observation, further HPLC-MS experiments revealed that\u00a0the purified protein sample contained markedly higher level of DAG in comparison with the purification buffer control (Figure 4\u2014figure supplement 3). Therefore, we tentatively assign this density as the DAG. The free hydroxyl group of this DAG molecule forms polar contacts with Q573 (Figure 4F). Its two hydrophobic tails interact with several hydrophobic residues: L528, Y524 on S5; F576, W577, and V579 on the pore helix; L617 on S6; and V610, I611, and L616 on S6 from adjacent subunit. We speculate that\u00a0the DAG molecules observed here were carried over from host cells throughout purification procedure, because similar densities were also reported previously in the cryo-EM map of mTRPC4 and mTRPC5 (Duan et al., 2019; Duan et al., 2018). Unexpectedly, in the map of HC-070-bound hTRPC5, we found that\u00a0the binding site of glycerol group of DAG was occupied by HC-070, while the binding site of two DAG tails was still filled by lipid-like densities (Figure 1\u2014figure supplement 7G), indicating the binding of the glycerol group of DAG and HC-070 are mutually exclusive. We observed additional lipids densities in both CMZ-bound hTRPC5 and HC-070-bound hTRPC5 maps. Lipid 1 localizes in the inner leaflet and is bound by S3, S4, and S5 from one subunit and S5, S6 from adjacent subunit (Figure 4E, Figure 4\u2014figure supplement 2B). Lipid 2 is in the outer leaflet of the membrane and bound by S3 and S4 (Figure 4E, Figure 4\u2014figure supplement 2C). There is one putative cholesteryl hemisuccinate (CHS) molecule which is sandwiched by S1, S4 from one subunit and S5 from adjacent subunit (Figure 4E, Figure 4\u2014figure supplement 2D). Densities similar to the putative CHS were observed previously in corresponding positions in TRPM4 and TRPCs (Autzen et al., 2018; Duan et al., 2019; Duan et al., 2018; Tang et al., 2018). It is previously reported that this putative CHS-binding site is important for the activation of mTRPC5 (Duan et al., 2019).\n\n### Structure comparison of hTRPC5 structures at different states\n\nThe overall structures of hTRPC5 at different states are highly similar, with RMSD of 1.456 \u00c5 between CMZ-bound hTRPC5 and apo state; 0.926 \u00c5 between HC-070-bound hTRPC5 and apo state, although there is a little structural variation in details (Figure 5). In the TMD, the bottom of S3 segment and the S2-S3 linker in HC-070-bound structure have small conformational change compared to the apo hTRPC5 (Figure 5B), which may be due to the HC-070 binding.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig5-v2.jpg)\n\n**Figure 5.:** (A) The overall conformational difference in TMD between these three structures. All the structures are shown as cartoon, with apo hTRPC5 colored in gray, CMZ-bound hTRPC5 in purple, and HC-070-bound hTRPC5 in light blue. (B) Close-up view of the structure variations of bottom of S3 segment and the S2-S3 linker between HC-070-bound and apo hTRPC5\u00a0structures.\n\n## Discussion\n\nTRPC channels, especially TRPC5 and TRPC6, are putative drug targets. Recently, two distinct inhibitor-binding sites were identified in the hTRPC6 channel (Bai et al., 2020; Tang et al., 2018). During the editorial process of this work, inhibitor binding sites were also identified in TRPC4 (Vinayagam et al., 2020) and TRPC5 (Wright et al., 2020). Together with the sites identified in this study, we classify them into three groups, namely inhibitor-binding pocket (IBP) A-C (Figure 6, Figure 6\u2014figure supplement 1). IBP-A inside the VSLD is accessible from the intracellular side (Figure 6A). Inhibitors that bind IBP-A, such as CMZ and GFB-8438, need to penetrate the plasma membrane first before reaching their binding site in VSLD. CMZ, M084, and AC1903 are benzimidazole derivatives which can inhibit TRPC5 with IC50 values at 1.0\u20131.3, 8.2, and 14.7 \u03bcM, respectively (Richter et al., 2014; Zhou et al., 2017; Zhu et al., 2015). Their similar chemical structures suggest that\u00a0they probably share a common binding site at IBP-A (Figure 6\u2014figure supplement 2A\u2013C). CMZ is 10- and 26-fold more potent against TRPC5 than TRPC3/6 and TRPC7, respectively (Richter et al., 2014). Among the CMZ interacting residues, E418, D439, M442, R492 are identical between TRPC4/5 and TRPC3/6/7, whereas residue Y374 in TRPC5 is Phe, F414 is Met, N443 is Leu, Y446 is Phe, S495 is Tyr, and L496 is Met in TRPC3/6/7 (Figure 2\u2014figure supplement 1). We found that\u00a0F414M mutation in hTRPC5 does not change the potency of CMZ, while N443L decreases its potency (Figure 2E, Table 2), highlighting the importance of N443 on CMZ selectivity. GFB-8438, GFB-9289, and GFB-8749 are piperazinone/pyridazinone derivatives that inhibit TRPC4 and TRPC5 channels. Structure of zebrafish TRPC4 in complex with these inhibitors showed\u00a0that they also bind inside VSLD (Vinayagam et al., 2020). GFB-8438 interacts with H369, Y646, L495, Y373, S488, M441, N442, F413, and R491 of zebrafish TRPC4 which are equivalent to H370, Y650, L496, Y374, S489, M442, N443, F414, and R492 in hTRPC5 (Vinayagam et al., 2020). Therefore, both CMZ and GFB-8438 share a common set of interacting residues on hTRPC5 including L496, Y374, M442, N443, and R492. More importantly, both CMZ and GFB-8438 have several nonoverlapping interacting residues on hTRPC5, suggesting\u00a0that structure-based hybridization of CMZ and GFB-8438 might exploit more interacting residues on hTRPC5 and thus enhance the inhibitor potency and selectivity. Although VSLD has lost the voltage sensing function, it plays an important structural and functional role in TRP channels. Based on the gating model of TRPV1, channel activation is associated with relative movements between VSLD and pore (Cao et al., 2013; Gao et al., 2016) and thus, stabilization of VSLD in an inactive conformation might be a common scheme to inhibit channel opening. Indeed, AM-1473, a potent antagonist of hTRPC6, was found to bind at IBP-A in hTRPC6 as well (Bai et al., 2020). Moreover, IBP-A is the AMTB and TC-I 2014-binding sites in TRPM8 (Diver et al., 2019), 2-APB-binding site in TRPV6 (Singh et al., 2018;\u00a0Figure 6\u2014figure supplement 1A). The studies suggest that\u00a0VSLD of TRP channels is a hotspot for drug discovery.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig6-v2.jpg)\n\n**Figure 6.:** (A) Clemizole (CMZ)-binding pocket in human TRPC5 (hTRPC5) is shown in side view and bottom view. The TRPC5 structure is shown as cylinder with CMZ compound shown as spheres and colored in sky blue. Each subunit of TRPC5 is colored the same as\u00a0in Figure 1. (B\u2013C) HC-070-binding pocket in hTRPC5 structure and BTDM-binding pocket in TRPC6 structure are shown in side view and bottom view. HC-070 is shown as spheres and colored in gray. The densities of BTDM are shown as red mesh.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Different ligands bind in IBP-A of TRPC4, TRPC5, TRPC6, TRPM8, and TRPV6. One subunit of different transient receptor potential canonicals (TRPCs) is shown as cartoon and colored in purple. Different ligands are shown as sticks and in various colors. (B) Different ligands bind in IBP-B of TRPCs. One subunit and the adjacent subunit are colored in purple and light blue, respectively. (C) Different ligands bind in IBP-C of TRPC6 and TRPV1. The density of BTDM is shown as red mesh and other modeled ligands are shown as sticks.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63429/elife-63429-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A\u2013C) Benzimidazole derivatives inhibitors: clemizole (CMZ) (A), M084 (B), and AC1903 (C). (D\u2013F) Piperazinone/pyridazinone derivatives inhibitors: GFB-8438 (D), GFB-8749 (E), and GFB-9289 (F). (G\u2013I) Xanthine derivatives ligands: inhibitors HC-070 (G), Pico145 (H), and activator AM237 (I).\n\nIBP-B located in the pore domain is sandwiched at the subunit interface (Figure 6B). HC-070 binds at IBP-B which is close to the extracellular side. Strikingly, IBP-B is partially occupied by the glycerol group of DAG molecule in the map of CMZ-bound hTRPC5 or apo hTRPC5 (Figure 1\u2014figure supplement 7G\u2013I). Previous studies showed that\u00a0some mutations in this lipid-binding site in mTRPC5, such as F576A and W577A double mutations, render mTRPC5 unresponsive to EA stimulation (Duan et al., 2019). This lipid-binding site also plays an\u00a0important role in the gating of DAG-activated hTRPC3/6 channels. Mutation of W680 to alanine in hTRPC6, corresponding to W577A in hTRPC5, abolished OAG activation of hTRPC6 (Bai et al., 2020). Mutations of glycine residues in hTRPC6/3, corresponding to G606 in hTRPC5, blunted PLC-mediated activation of TRPC6/3, altered responses to DAGs of TRPC3, and also changed the pattern of photoactivation of TRPC6/3 by a photo-switchable DAG analogue, OptoDArG (Lichtenegger et al., 2018). Mutation of this glycine residue into alanine in TRPC3 removed channel desensitization upon PLC activation and increased efficacy of GSK1702934A by maintaining the long-open state (Svobodova et al., 2019). E672A, F675A, W680A, N702A, Y705A, and V706A mutants of TRPC6 (corresponding to F569, L572, W577, F599, A602, and T603 in hTRPC5) maintained normal membrane surface expression but completely abolished the response to OAG (Bai et al., 2020). These data concertedly suggest that\u00a0the DAG- binding pocket observed here in hTRPC5 is also structurally conserved in TRPC3/6 and is essential for TRPC3/6 channel activation by DAG and its analogues, such as OAG. Pharmacological compounds binding at IBP-B might affect TRPC channel gating either by acting on TRPC directly or by perturbing the normal function of DAG. Here, we observed that\u00a0the binding of HC-070 at this site replaces the glycerol group of DAG, stabilizes hTRPC5 in a closed state, and thus inhibits channel opening. The residues involved in HC-070 binding are absolutely identical between hTRPC5 and hTRPC4, but they share only 20% similarities between TRPC4/5 and TRPC3/6/7 (Figure 2\u2014figure supplement 1), which explains the high selectivity of HC-070 for TRPC4/5 over TRPC3/6/7 (Just et al., 2018). In addition, HC-070 shows inhibitory effect on heterotetrameric hTRPC1: C5 and hTRPC1: C4 with relatively lower potency compared to homotetrameric hTRPC4/5 (Just et al., 2018), probably because of the lower sequence identity between TRPC4/5 and TRPC1 (46% according to the sequence alignment) (Figure 2\u2014figure supplement 1). Indeed, through mutagenesis, we found that\u00a0many residues participating in interactions between HC-070 and hTRPC5 are sensitive to alanine mutations (Figure 3E\u2013F). It is reported that Pico145, an HC-070 analogue, is more potent against hTRPC4/5 than HC-070 (Just et al., 2018), possibly due to the substitution of chloride with trifluoromethoxy group on the chlorophenoxy ring of HC-070 (Figure 6\u2014figure supplement 2G\u2013H). Indeed, recent structure study showed that\u00a0Pico145 binds to hTRPC5 channel using a similar pose as HC-070, except the chlorophenoxy ring with a trifluoromethoxy group on it inserts into a cavity surrounded by L521, Y524, F576, and V610 of hTRPC5 (Figure 1\u2014figure supplement 7J;\u00a0Wright et al., 2020). Another HC-070 analogue, AM237, is a TRPC5 activator with EC50 around 15\u201320 nM (Minard et al., 2019), and AM237 activates homomeric hTRPC5 channel instead of the heterotetrameric TRPC1: C5 channel (Minard et al., 2019), suggesting that AM237 also binds at IBP-B which is at the interface between adjacent subunits. Compared with Pico145, AM237 has an additional chloride atom on the phenoxy ring (Figure 6\u2014figure supplement 2I), which makes the phenoxy group larger and this chloride atom might be in clash with L521 of hTRPC5. Therefore, AM237 might activate hTRPC5 by pushing L521 on S5 using its chloride-phenoxy group (Wright et al., 2020). Consistent with our results of HC-070-binding site mutants, mutations in IBP-B, including Q573T, F576A, and W577A, decrease the potency of AM237 on hTRPC5 (Wright et al., 2020). Recently, it is reported that an hTRPC6 agonist AM-0883 binds at IBP-B as well (Figure 6\u2014figure supplement 1B;\u00a0Bai et al., 2020). The identification of DAG lipid, TRPC inhibitor, and TRPC activator binding at IBP-B suggests that\u00a0it is a common modulatory ligand-binding site in TRPC channels.\n\nIBP-C is between VSLD and pore domain, formed by S3, S4, S4-S5 linker from one subunit and S5-S6 from the adjacent subunit (Figure 6C). BTDM, a high affinity inhibitor of hTRPC6, binds at IBP-C (Figure 6C, Figure 6\u2014figure supplement 1C;\u00a0Tang et al., 2018). When BTDM is not supplied, IBP-C is occupied by a putative phospholipid (Bai et al., 2020). In TRPC4/5, mutations of G503/G504 to serine on S4-S5 linker lead to constitutive activation of the channels (Beck et al., 2013). In addition, vanilloid agonist resiniferatoxin (RTX), vanilloid antagonist capsazepine, and an endogenous phosphatidylinositol bind at IBP-C on TRPV1 (Figure 6\u2014figure supplement 1C;\u00a0Cao et al., 2013; Gao et al., 2016). These data together suggest that\u00a0IBP-C is important for the gating of both TRPC and TRPV channels.\n\nIn summary, our structures of hTRPC5 reported here have uncovered the binding pockets for two distinct classes of inhibitors in high-resolution details. Moreover, the structures suggest that\u00a0these inhibitors inhibit the hTRPC5 channel by stabilizing it in an apo-like closed state. Further structural comparisons with previously reported TRPC channel structures have revealed three common IBPs in TRPC channels. Our studies paved the way for further mechanistic investigations and structure-based drug development.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>hTRPC5</td>\n      <td>This paper</td>\n      <td>NCBI Reference sequence: NM_012471</td>\n      <td>Provided by Dr. Xiaolin Zhang, Dizal Pharmaceutical Company</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>hTRPC5</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Subcloned into a pBM Bacmam vector with N-terminal GFP-MBP tag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>hTRPC5</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Subcloned into a pCDNA3.1 vector with no tag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>hTRPC51-764</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Subcloned into a pBM Bacmam vector with N-terminal GFP-MBP tag</td>\n    </tr>\n    <tr>\n      <td>Cell line (FreeStyle 293 F)</td>\n      <td>FreeStyle 293 F</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>R79007</td>\n      <td>RRID:CVCL_D603</td>\n    </tr>\n    <tr>\n      <td>Cell line (AD-293)</td>\n      <td>AD-293</td>\n      <td>Agilent</td>\n      <td>240085</td>\n      <td>RRID:CVCL_9804</td>\n    </tr>\n    <tr>\n      <td>Cell line (Sf9)</td>\n      <td>Sf9</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>12659017</td>\n      <td>RRID:CVCL_0549</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TRPC5 (rabbit polyclonal)</td>\n      <td>Proteintech</td>\n      <td>25890\u20131-AP</td>\n      <td>1:1000 RRID:AB_2880285</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-N-Cadherin (rabbit polyclonal)</td>\n      <td>Proteintech</td>\n      <td>22018\u20131-AP</td>\n      <td>1:3000 RRID:AB_2813891</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Clemizole</td>\n      <td>CAYMAN</td>\n      <td>17695</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>HC-070</td>\n      <td>MedChemExpress (MCE)</td>\n      <td>31244</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(-)-Englerin A</td>\n      <td>PanReac AppliChem</td>\n      <td>A8907</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gctf_v1.18</td>\n      <td>Zhang, 2016 PMID:26592709</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gautomatch v0.56</td>\n      <td>K. Zhang, MRC LMB (https://www2.mrc-lmb.cam.ac.uk/research/locally-developed-software/zhang-software/)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION-3.0</td>\n      <td>Zivanov et al., 2018 PMID:30412051</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX 1.18.1\u20133865</td>\n      <td>Adams et al., 2010 PMID:20124702</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HOLE2 v2.2.005</td>\n      <td>Smart et al., 1996 PMID:9195488</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryoSPARC v3.1</td>\n      <td>Punjani et al., 2017 PMID:28165473</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chimera-1.13</td>\n      <td>Pettersen et al., 2004 PMID:15264254</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Rhod-2/AM</td>\n      <td>AAT Bioquest</td>\n      <td>21062</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nSf9 cells (from Thermo Fisher Scientific) were cultured in Sf-900 III SFM medium (Gibco) at 27\u00b0C. HEK 293 F cells (from Thermo Fisher Scientific) grown in Free Style 293 medium + 1% FBS at 37\u00b0C were transfected for electrophysiology and FSEC. HEK 293 F cells grown in SMM-293TI medium + 1% FBS at 37\u00b0C were used for baculovirus infection and protein purification. AD293 cells (from Agilent) were cultured in basic DMEM (Gibco) + 10% FBS medium at 37\u00b0C for FLIPR calcium assay and surface expression level detection. All these cell lines were free of mycoplasma contamination detected by MycoBlue Mycoplasma Detector assay (Vazyme, D101-02), but their identities were not further authenticated.\n\n### FSEC\n\nThe cDNA of hTRPC5 and related mutants were cloned into a homemade BacMam vector with N-terminal GFP-MBP tag (Li et al., 2017). The expression levels of various hTRPC5 constructs were screened by FSEC (Kawate and Gouaux, 2006). Expression constructs were transfected into HEK293F cells using PEI. 40 hr post-transfection, cells were harvested by centrifuge at 5000 rpm for 5 min. Then the cells were solubilized by 1% (w/v) LMNG, 0.1% (w/v) CHS in TBS buffer (20 mM Tris-HCl, pH 8.0 at 4\u00b0C, and 150 mM NaCl) with 1 \u00b5g/ml aprotinin, 1 \u00b5g/ml leupeptin, 1 \u00b5g/ml pepstatin for 30 min at 4\u00b0C. Supernatants were collected after centrifuge at 40,000 rpm for 30 min and were loaded onto Superose-6 Increase (GE Healthcare) for FSEC analysis.\n\n### Whole cell recording\n\nTo detect the inhibition of CMZ on TRPC5, we used EA to activate hTRPC5 in whole cell recordings; 800 ng of nontagged full-length hTRPC5 in pCDNA3.1 vector and 200 ng of home-made GFP-MBP vector were co-transfected into HEK293F cell. 40 hr post-transfection, the cells were plated on cover glass for recording. For the whole cell recording, the bath solution contains 140 NaCl, 5 CsCl, 10 EGTA, 1 MgCl2, 10 glucose, and 10 HEPES (pH\u00a0=\u00a07.4, adjusted by NaOH) in mM and the pipette solution was 110 CsMe, 25 CsCl, 2 MgCl2, 1 EDTA, 1 EGTA, and 30 HEPES (pH\u00a0=\u00a07.4 adjusted by CsOH) in mM to keep low calcium condition for the recording; 200 nM EA in bath solution was used for channel activation and 50 \u03bcM CMZ was used for channel inhibition. Patch electrodes were pulled by a horizontal microelectrode puller (P-1000, Sutter Instrument Co) to a tip resistance of 2.0\u20134.0 M\u03a9 for recording. The TRPC5 currents were recorded in gap-free mode at holding potential of \u221260 mV through an Axopatch 200B amplifier (Axon Instruments). Data was further analyzed by pCLAMP 10.4 software. We observed similar results for three cells and one representative trace was shown.\n\n### FLIPR calcium assay\n\nAD293 cells cultured on 10 cm dish (grown in Dulbecco's modified Eagle's medium + 10% FBS + 13.9 \u03bcg/ml streptomycin + 6.7 \u03bcg/ml penicillin, 37\u00b0C) at 90-100% confluence were digested with trypsin-EDTA (0.25%) (Gibco) and suspended with 5 ml culture medium for each 10 cm dish. Then the suspended cell culture was further diluted for 5.4- to 7-fold with culture medium and seeded onto black well, clear bottom, poly-D-lysine-coated 96-well plate (Costar) and cultured overnight. We use full-length nontagged hTRPC5 construct for FLIPR assay unless indicated otherwise. hTRPC5 plasmids were transfected into AD293 cells (60-80% confluence) with PEI. 30\u201340 hr post-transfection, culture medium was discarded and cells were incubated with 50 \u03bcl per well of 4 \u03bcM Rhod-2/AM (AAT Bioquest) in TARODES\u2019s buffer (10 mM HEPES, 150 mM NaCl, 4 mM KCl, 2 mM MgCl2, 2 mM CaCl2, 11 mM glucose, pH 7.4) supplemented with 0.02% Pluronic F-127 (Sigma) for 5 min in dark at room temperature. Then dye was removed and replaced with 50 \u03bcl of TARODE\u2019s buffer per well. The application of compounds and detection of intracellular calcium elevation were performed using FLIPR-TETRA (Molecular Devices) at room temperature (25\u201327\u00b0C). Fluorescence signals were read with excitation/emission at 510\u2013545/565\u2013625 nm.\n\nFor dose-response activation curves of WT and mutants by extracellular Ca2+, baseline fluorescence of the plate was measured for 30 s, followed by addition of 50 \u03bcl of TARODE\u2019s buffer containing a series of concentration of Ca2+. Final concentrations for extracellular Ca2+ were 2, 6.148, 8.222, 11.333, 16, 23, 33.5, and 49.25 mM. The normalized signal was calculated as follows: For each well, the average value of fluorescence from 0 to 20 s was considered as the \u2018start fluorescence\u2019; the average of fluorescence from 309 to 328 s was considered as the \u2018end fluorescence\u2019. The value of \u2018end fluorescence\u2019 minus \u2018start fluorescence\u2019 was considered as \u2018signal value\u2019 for each well. The \u2018signal value\u2019 of each construct activated by each concentration of Ca2+ was divided by that of WT activated by 49.25 mM Ca2+, resulted in \u2018% WT\u2019.\n\nFor the inhibition curves, baseline fluorescence of the plate was measured for 30 s, followed by addition of 50 \u03bcl of buffer A (TARODE\u2019s buffer containing a series of concentration of CMZ or HC-070). Fluorescence was measured for another 210 s, followed by addition of 50 \u03bcl of buffer B (TARODE\u2019s buffer containing additional high calcium and a series of concentration of CMZ or HC-070). Then fluorescence was measured for 300 s.\n\nBuffer A contains 2\u00d7 concentration of working concentration of inhibitor. As for CMZ, it was serially diluted to concentrations of: 205,\u00a0102.5, 51.25, 25.625,\u00a012.8, 6.4, 3.2, 1.6, 0.8, 0.4 \u03bcM. As for HC-070, it was serially diluted to concentrations of: 4000, 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.81 nM. Buffer B is TARODE\u2019s buffer containing additional 36 mM Ca2+ and a series of working concentration of inhibitor (102.5, 51.25, 25.625,\u00a012.8, 6.4, 3.2, 1.6, 0.8, 0.4, 0.2 \u03bcM for CMZ and 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.81, 3.9 nM for HC-070, respectively). Final concentration of calcium for activation was 14 mM. The concentration series of CMZ was 102.5, 51.25, 25.625,\u00a012.8, 6.4, 3.2, 1.6, 0.8, 0.4, 0.2 \u03bcM. The concentration series of HC-070 was 2000, 1000, 500, 250, 125, 62.5, 31.25, 15.625, 7.81, 3.9 nM. For each construct, there were two controls: for control-Max, buffer A was replaced by TARODE\u2019s buffer; for control-Min, both buffer A and buffer B were replaced by TARODE\u2019s buffer.\n\nTo calculate the normalized signal values for inhibition experiments, the averaged fluorescence value from 210 to 230 s of each well was considered as the \u2018start fluorescence\u2019; the average of fluorescence value of last 20 time points was considered as the \u2018end fluorescence\u2019. The value of \u2018end fluorescence\u2019 minus \u2018start fluorescence\u2019 was considered as \u2018signal value\u2019 for each well. The \u2018signal value\u2019 of each well was subtracted by \u2018signal value\u2019 of control-Min, resulting in a value considered as \u2018response value\u2019. The \u2018response value\u2019 of each well was divided by \u2018response value\u2019 of control-Max to obtain an \u2018internal normalized response\u2019. The \u2018internal normalized responses\u2019 were further multiplied by X% (X%: \u2018response value\u2019 of each construct activated by 14 mM Ca2+ divided by that of WT, as\u00a0shown in Figure 2\u2014figure supplement 2A), resulting in a value considered as \u2018normalized RFU (% WT)\u2019. IC50 was obtained by fitting the data of \u2018% WT\u2019 into function: Y=Bottom + (Top-Bottom)/(1+10(LogIC50-X)*HillSlope).\n\nThree independent experiments were performed on different days (biological replicates), with each experiment containing three replicates (technique replicates).\n\n### Surface biotinylation and western blot\n\nThirty-six\u00a0hours post-transfection, cells transfected with full-length nontagged TRPC5 plasmids in six-well plate were washed with PBS (pH\u00a0=\u00a08) for three times. Then 500 \u03bcl of 1.5 mM Sulfo-NHS-LC-biotin (APExBIO) in PBS (pH\u00a0=\u00a08) was added to each well and incubated at room temperature for 1 hr. Then the Sulfo-NHS-LC-biotin solution was discarded, followed by addition of ice-cold TBS +10 mM glycine (pH\u00a0=\u00a08) to terminate the reaction. Then the cells were washed with TBS and then lysed with TBS+1% MNG for 40 min on ice, followed by centrifugation at 16,125\u00d7g for 20 min. Supernatants were incubated with streptavidin-agarose beads (SIGMA) for 2 hr at 4\u00b0C, followed by centrifugation at 1000\u00d7g to remove flow-through. Beads were washed with lysis buffer for four times, followed by elution with elution buffer (50 mM Tris pH 7.5, 150 mM NaCl, 3 mM biotin, 100 mM dithiothreitol [DTT], 2% SDS) at room temperature or 85\u00b0C for 7 min. The eluates were separated on 10% gradient SDS-PAGE gel and N-cadherin was detected by western blot using antibodies against N-cadherin (1:3000) (Proteintech) as an internal control to normalize loading volumes of the samples. Then TRPC5 protein was detected using antibodies against TRPC5 (1:1000) (Proteintech).\n\n### Protein expression and purification\n\nThe BacMam expression system was used for large-scale expression of hTRPC51-764 as previously reported (Tang et al., 2018). Briefly, hTRPC51-764 was subcloned into a home-made BacMam vector with N-terminal GFP-MBP tag. The Bacmid was then generated by transforming this construct into DH10Bac Escherichia coli cells. Baculovirus was harvested about 7 days post-transfection of bacmid into Sf9 cells cultured in Sf-900 III SFM medium (Gibco) at 27 \u00b0C. P2 baculovirus was produced using Bac-to-Bac system. P2 virus was added to HEK293F cells at a ratio of 1:12.5 (v/v) when the cells were grown to a density of 2.0\u00a0\u00d7\u00a0106/ml in SMM 293T-I medium (Sino Biological Inc) supplemented with 1% FBS under 5% CO2 in a shaker at 130 rpm at 37\u00b0C. After virus infection for 12 hr, 10 mM sodium butyrate was added and temperature was lowered to 30\u00b0C. Cells were harvested 48 hr post-infection and washed twice using TBS buffer. Cell pellets were collected and stored at \u221280\u00b0C for further purification.\n\nCell pellets were resuspended in TBS buffer supplemented with 1% (w/v) LMNG, 0.1% (w/v) CHS, 1 mM DTT, 1 mM phenylmethanesulfonylfluoride, and protease inhibitors, including 1 \u00b5g/ml aprotinin, 1 \u00b5g/ml leupeptin, 1 \u00b5g/ml pepstatin. The mixture was incubated at 4\u00b0C for 1 hr. After ultracentrifugation at 40,000 rpm for 1 hr in Ti45 rotor (Beckman), the supernatant was loaded onto 7 ml MBP resin. The resin was rinsed with wash buffer 1 (wash buffer 2 + 1 mM ATP + 10 mM MgCl2) and wash buffer 2 (TBS + 40 \u03bcM glycol-diosgenin [GDN] + 0.005 mg/ml SPLE + 1 mM DTT) subsequently. Proteins were eluted with 80 mM maltose in wash buffer 2. The eluate was concentrated using a 100 kDa cut-off concentrator (Millipore) after digestion with H3C protease at 4\u00b0C overnight. hTRPC5 protein was further purified by size exclusion chromatography (Superose-6\u00a0Increase) in buffer containing TBS, 40 \u03bcM GDN, 0.005 mg/ml SPLE, and 1 mM tris(2-carboxyethyl) phosphine. The peak fractions corresponding to tetrameric TRPC5 channel were collected and concentrated to A280\u00a0=\u00a01.0 with estimated concentration of 0.7 mg/ml for cryo-EM sample preparation.\n\n### Cryo-EM sample preparation and data collection\n\nPurified protein was first mixed with 100 \u03bcM Ca2+ and then mixed with 500 \u03bcM CMZ or 50 \u03bcM HC-070, respectively. The sample with EA was prepared in two batches. In the first batch, protein added with 100 \u03bcM Ca2+ was incubated with 6.5 \u03bcM EA for 30 min before concentration. In the second batch, 0.12 \u03bcl of 5 mM EA in 50% DMSO was added to 6 \u03bcl concentrated protein in the presence of 5 mM Ca2+. We did not observe obvious difference in final cryo-EM reconstructions between the two EA samples. Therefore, we combined data collected from these two batches into the EA dataset. After incubation with ligands for 30 min on ice, the mixtures were ultracentrifugated at 25,000 rpm for 30 min in TLA55 rotor (Beckman) and the supernatants were used for cryo-EM sample preparation. Aliquots of 2.5 \u03bcl mixture were placed on graphene oxide\u00a0grids as previously reported (Phulera et al., 2018). Grids were blotted at 100% humidity and flash-frozen in liquid ethane cooled by liquid nitrogen using Vitrobot Mark I (FEI). Grids were then transferred to a Titan Krios (FEI) electron microscope that was equipped with a Gatan GIF Quantum energy filter and operated at 300 kV accelerating voltage. Image stacks were recorded on a Gatan K2 Summit direct detector in super-resolution counting mode using SerialEM at a nominal magnification of 165,000\u00d7 (HC-070-bound, calibrated pixel size of 0.821 \u00c5/pixel) or 130,000\u00d7 (CMZ-bound and apo state, calibrated pixel size of 1.045 \u00c5/pixel), with a defocus ranging from \u22121.5 to \u22122.0 \u03bcm. Each stack of 32 frames was exposed for 7.1 s, with a total dose about 50 e-/ \u00c5 2 and a dose rate of 8 e- per pixel per second on detector.\n\n### Image processing\n\nAll of the datasets were processed with similar workflow. The collected image stacks were motion-corrected by MotionCor2 (Zheng et al., 2017). After motion correction, good micrographs were manually selected, then GCTF (Zhang, 2016) was used for CTF estimation. Particles were auto-picked using Gautomatch (kindly provided by Kai Zhang) based on the projection of hTRPC6 map (EMDB: EMD-6856), respectively. After one-round or two-rounds of\u00a0reference-free two-dimensional (2D) classification, particles in classes with good features were selected for 3D classification with previous hTRPC6 map (EMDB: EMD-6856) low-pass filtered to 18 \u00c5 as the initial model using RELION-3.0 (Zivanov et al., 2018) with C1 symmetry. After 3D classification, particles in good classes with clearly visible \u03b1-helices in TMD were selected for further homogeneous refinements in cryoSPARC (Punjani et al., 2017) using C4 symmetry, because we found that\u00a0refinement in cryoSPARC gave better Fourier shell correlations\u00a0(FSCs) and maps for TRPC5 datasets. Reported resolutions are based on the gold-standard FSC 0.143 criterion after correction of masking effect (Chen et al., 2013). The map was sharpened with a B factor determined by cryoSPARC automatically.\n\n### Model building, refinement, and validation\n\nThe previously reported TRPC4 (PDB: 5Z96) was used as the starting model and docked into the HC-070-bound or CMZ-bound hTRPC5 maps in Chimera (Pettersen et al., 2004), respectively. The fitted model was manually adjusted in COOT (Emsley et al., 2010), keeping the side chains of conserved residues and substituting nonconserved residues based on the sequence alignment between mTRPC5 and hTRPC5. The ligands models were generated using elbow module (Moriarty et al., 2009) in PHENIX (Adams et al., 2010). The ligands and phospholipids were manually docked into densities and refined using COOT. The models were further refined against the corresponding maps with PHENIX (Adams et al., 2010).\n\n### Quantification and statistical analysis\n\nThe local resolution map was calculated using cryoSPARC. The pore radius was calculated using HOLE (Smart et al., 1996). The inhibition curves were calculated using GraphPad Prism 8. RMSD was calculated using PyMOL in all-atom mode.\n\n### Identification of DAG molecule in hTRPC5 protein sample by LC-MS analysis\n\nTo prepare samples for LC\u2013MS analysis, 20 \u03bcl of purified hTRPC5 (7 \u03bcM) in the wash buffer 1 (20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 40 \u03bcM GDN, 0.005 mg/ml SPLE, and 1 mM DTT) was added into 400 \u03bcl isopropanol, vortexed and extracted by ultrasonication for 1 min. After centrifugation at 14,000 rpm for 10 min at 4\u00b0C, the supernatant was transferred into vial for further LC\u2013MS analysis.\n\nUPLC (Waters ACQUITY I-Class system) coupled with tandem ESI-Triple quadrupole mass spectrometry (Waters Xevo TQ-S Micro) was used to analyze 2 \u03bcl lipid extractants. An ACQUITY UPLC BEH Amide column (1.7 \u03bcm, 2.1 mm\u00a0\u00d7\u00a0100 mm, Waters) was used on a HILIC mode for the separation of the lipid classes. The mobile phase of solvent A (10 mM ammonium acetate in 95:5 acetonitrile/water) and solvent B (10 mM ammonium acetate in 50:50 acetonitrile/water) was at a flow rate of 0.6 ml/min. The UPLC elution gradient was 0.1-20.0% B for 2 min, then 20-80% B for 3 min followed by 3 min re-equilibration. The eluted lipids were directly introduced into the mass spectrometer with a desolvation temperature of 500\u2009\u00b0C and a capillary voltage of 2.8 kV under positive ESI mode, and the source temperature was set at 120\u00b0C. The analytes were monitored under full-scan mode with mass ranging from m/z 100 to 600, combined with a daughter scan from m/z 50 to 650 for fragmentor of 638.6(m/z), with a collision energy of 20 V. An MRM transition for DAG (18:1-18:1) quantitative detection was set as 638.6\u00a0to\u00a0>339.3, with a core voltage of 50 V, and collision energy of 20 V Masslynx 4.0 was used to acquire and screen MS and MS/MS data. Notably, the available HPLC-MS results suggest markedly higher concentration of DAG molecule than purification buffer, but we cannot distinguish 1,2-DAG from its regioisomer 1,3-DAG with current available data. However, we found 1,2-DAG fits the electron density better, therefore, we modeled the electron density as 1,2-DAG molecule.\n",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "1857c707-a77d-49dd-8617-392fa6905982",
+      "submission_id": "14fa1776-459b-41ff-a38b-5997f9988144",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Randy B Stockbridge, University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63429.sa1](https://doi.org/10.7554/eLife.63429.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe TRPC5 channels are pharmaceutical targets for diverse pathologies, including anxiety, depression and kidney disease. The current manuscript presents structures of the human TRPC5 channel in complex with two different, mechanistically distinct inhibitors, clemizole and HC-070. The structural work in this manuscript is well-executed, with high quality maps and clear density for the inhibitors. Structural observations are coupled with extensive mutagenesis experiments to dissect the contributions of binding site residues to channel inhibition and to identify the molecular determinants of inhibitor selectivity for TRPC5 over closely related TRP channels. This work provides important mechanistic insight into the pharmaceutical modulation of TRPC5.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural basis for human TRPC5 channel inhibition by two distinct inhibitors\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Randy B Stockbridge as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Erhu Cao (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nIn this article Song et al. present structures of the human TRPC5 channel in complex with inhibitors clemizole and HC-070 at 2.7 \u00c5 resolution. The authors identify the inhibitor binding sites and conduct site-directed mutagenesis studies in order to dissect the contribution of binding site residues to channel inhibition and to identify the molecular determinants of inhibitor selectivity for TRPC5 vs. TRPC3/6/7.\n\nThe structural work in this manuscript is generally well-executed, with high quality maps and clear density for the drugs. The authors perform extensive mutagenesis to identify positions that alter the IC50 of the drugs. However, the reviewers were disappointed that in many cases, intriguing findings were not followed up with experiments or analysis to lead to mechanistic insights. In addition, the drug binding sites are in regions of the protein that are more generally involved in channel gating. Thus, basic electrophysiological characterization of the mutants with altered IC50s is an important control to establish whether the effects of these mutations are, in fact, primarily on the affinity of inhibitor binding.\n\nEssential revisions:\n\n1) It is essential to understand whether the mutants that alter inhibition also affect channel function. This would be an important control, as mutating the residues could result in a shift in gating kinetics and/or surface expression that might be reflected as a change in IC50. For example, in the Discussion, the authors point out that residues from inhibitor binding pocket B contribute to channel gating. This underscores the importance of characterizing the mutant behavior to distinguish the effects of mutations on gating kinetics vs. inhibitor binding. In addition, Duan et al., 2019, found that mutations to residue F576 altered channel function. The authors mutate a number of residues in this region (L572, Q573, F576\u2026) and find shifts in IC50 compared with wild type. However, without electrophysiological characterization of these mutants it is difficult to pin the shift in IC50 to a change in affinity for the inhibitor alone.\n\n2) Likewise, it is important to understand whether intracellular Ca2+ is required for DMZ inhibition of TRPC5 since Icilin activates TRPM8 in a Ca2+-dependent manner and binds to a topologically equivalent site as CMZ.\n\n3) It's not clear why the dose-response curves are plateau at values higher than 100%. In addition, from the Materials and methods, it looks like the Hill coefficient was allowed to vary in fitting the does response curves. Fits will improve if the number of parameters are increased, but if there is no mechanistic rationale, then this should not be done.\n\n4) A number of interesting structural observations are made, but not translated into mechanistic insight. For example, N443, L496, and S495 do not appear to directly interact with CLZ, but affect the IC50. For the mutant L528A, HC-070 activates the channel in a dose-dependent manner. What is the mechanistic insight to be gained from these observations? The Zn2+ binding site is an important structural finding. Understanding its role in channel regulation would strengthen this manuscript.\n\n5) Comparison to the apo mTRPC5 structure are made, but (as the authors acknowledge) hard to interpret since the homologue and membrane mimetic are different. It is not clear that the subtle changes shown in Figure 5 will affect the pore configuration. If it is technically feasible, the authors should solve a structure of apo hTRP5 in the same membrane mimetic as the drug-bound structures to allow for a direct comparison.\n\n6) The resolution of the two maps is excellent but the atomic models could be improved. The clash score for both is rather high and both models contain a rather high number of poor rotamers. This should be an easy fix given the high resolution of the maps.\n\n7) This manuscript would be more useful to the field if the Discussion was restructured to make a more detailed comparison with the many TRPC inhibitor bound structures (and published functional data). Such a Discussion would enhance the mechanistic insights that could be taken from these structures.\n",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2cb39ed9-2eca-414c-ac7e-06fc032af320",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C1",
+      "claim": "TRPC5 channel is a nonselective cation channel that participates in diverse physiological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC5 channel is a nonselective cation channel that participates in diverse physiological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about TRPC5 function, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "b8700160-19b4-482e-a45e-267f462588d8",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C2",
+      "claim": "TRPC5 inhibitors show promise in the treatment of anxiety disorder, depression, and kidney disease.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC5 inhibitors show promise in the treatment of anxiety disorder, depression, and kidney disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research on TRPC5 inhibitors in disease models, as referenced throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "ccd8da5a-b290-4c1c-8d7f-1bbd35ea5cad",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C3",
+      "claim": "The cryo-EM structure of human TRPC5 in complex with clemizole was determined to 2.7 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the cryo-EM structures of human TRPC5 in complex with two distinct inhibitors, namely clemizole and HC-070, to the resolution of 2.7 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution is directly stated in the abstract and supported by data in Table 1 and Figure 1\u2014figure supplements 4-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "bf0d1283-c20e-42b5-8b1d-e3a070bb7f9d",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C4",
+      "claim": "The cryo-EM structure of human TRPC5 in complex with HC-070 was determined to 2.7 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the cryo-EM structures of human TRPC5 in complex with two distinct inhibitors, namely clemizole and HC-070, to the resolution of 2.7 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution is directly stated in the abstract and supported by data in Table 1 and Figure 1\u2014figure supplements 6-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "c1a0ff41-8cfb-4ce0-a833-ba342f4e6e22",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C5",
+      "claim": "Clemizole binds inside the voltage sensor-like domain of each subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures reveal that clemizole binds inside the voltage sensor-like domain of each subunit.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density maps shown in Figure 2 and Figure 1\u2014figure supplement 5E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "6ddf7a9e-9250-44a5-a486-addfb38ce52e",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C6",
+      "claim": "HC-070 is wedged between adjacent subunits and replaces the glycerol group of a putative diacylglycerol molecule near the extracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, HC-070 is wedged between adjacent subunits and replaces the glycerol group of a putative diacylglycerol molecule near the extracellular side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density maps shown in Figure 3 and Figure 1\u2014figure supplement 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "b70709b8-62a5-4398-9b6b-0be308571e92",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C7",
+      "claim": "Mutations in the inhibitor binding pockets altered the potency of inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found mutations in the inhibitor binding pockets altered the potency of inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by functional assay data shown in Figures 2E, 3E-F, and Tables 2-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "e073978d-4366-46b3-9621-dc5593b9ffee",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C8",
+      "claim": "Both clemizole and HC-070 exert inhibitory functions by stabilizing the ion channel in a nonconductive closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures suggest that both clemizole and HC-070 exert the inhibitory functions by stabilizing the ion channel in a nonconductive closed state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural analysis showing the pore is closed (Figure 4A-B) and both inhibitors are bound.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "8c7ae083-c9c4-401b-95d1-f41b0ec9c207",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C9",
+      "claim": "The mammalian TRPC channels are Ca2+-permeable nonselective cation channels that belong to the TRP channel superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian transient receptor potential canonical (TRPC) channels are Ca2+-permeable nonselective cation channels that belong to the transient receptor potential (TRP) channel superfamily (Clapham, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Clapham, 2003.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "b9abc665-86ff-45fa-b54a-dec5d94fba2b",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C10",
+      "claim": "TRPC channels share the closest homology to the Drosophila TRP channel among all TRP subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all the subfamilies of TRP channels, TRPC channels share the closest homology to the Drosophila TRP channel, the first TRP channel cloned (Montell and Rubin, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Montell and Rubin, 1989.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "60aaef83-9920-48ee-aabb-15294ccb5ac1",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C11",
+      "claim": "TRPC2 is a pseudogene in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The TRPC subfamily is formed by seven channels in mammals, TRPC1-TRPC7, while TRPC2 is a pseudogene in human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "71fac464-51ab-49c9-bc4d-c32e1a4500df",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C12",
+      "claim": "TRPC channels can be divided into TRPC1, TRPC2, TRPC3/6/7, and TRPC4/5 subgroups based on primary amino acid sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the primary amino acid sequences, TRPC channels can be divided into TRPC1, TRPC2, TRPC3/6/7, and TRPC4/5 subgroups (Montell et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is supported by citation to Montell et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "501aedc1-08b5-4d18-a7c9-7501def2eb84",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C13",
+      "claim": "TRPC5 is mainly expressed in the brain and to a lesser extent in the liver, kidney, testis, and pancreas.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, TRPC5 is mainly expressed in the brain and to a lesser extent in the liver, kidney, testis, and pancreas (Philipp et al., 1998; Sossey-Alaoui et al., 1999; Uhl\u00e9n et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This expression pattern is supported by citations to Philipp et al., 1998; Sossey-Alaoui et al., 1999; Uhl\u00e9n et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "bdb04cb4-9f95-42dd-89f5-90b3912d682d",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C14",
+      "claim": "TRPC5 can form homotetrameric channels or heterotetrameric channels with TRPC4 and/or TRPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "It can form homotetrameric channels or heterotetrameric channels with TRPC4 and/or TRPC1 (Chung et al., 2007; Chung et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chung et al., 2007; Chung et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "910d090a-9ec3-4203-9807-091e264c7306",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C15",
+      "claim": "TRPC5 activation leads to the depolarization of cell membrane and an increase of intracellular Ca2+ level.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC5 activation leads to the depolarization of cell membrane and an increase of intracellular Ca2+ level ([Ca2+]i).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TRPC5 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "5bfcbc08-ede8-4085-bf33-0f3945cd1e27",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C16",
+      "claim": "TRPC5 is implicated in fear, anxiety, depression, and progressive kidney disease in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC5 mediates diverse physiological processes and is implicated in many disease conditions in human such as fear, anxiety, depression, and progressive kidney disease (Riccio et al., 2009; Schaldecker et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Riccio et al., 2009; Schaldecker et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "ce82c6b1-225b-4e0d-ad8b-9e145038a39d",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C17",
+      "claim": "TRPC5 can be activated by receptor-activated Gq/11-PLC pathway upon the dissociation of Na+/H+ exchanger regulatory factor and activation of IP3 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC5 can be activated by receptor-activated Gq/11-PLC pathway upon the dissociation of Na+/H+ exchanger regulatory factor and activation of IP3 receptors (Kanki et al., 2001; Schaefer et al., 2000; Storch et al., 2017), or through the Gi/o pathway (Jeon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kanki et al., 2001; Schaefer et al., 2000; Storch et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "48d93c83-a8ea-441d-956f-fa12b0d7755b",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C18",
+      "claim": "TRPC5 can be activated through the Gi/o pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC5 can be activated by receptor-activated Gq/11-PLC pathway upon the dissociation of Na+/H+ exchanger regulatory factor and activation of IP3 receptors (Kanki et al., 2001; Schaefer et al., 2000; Storch et al., 2017), or through the Gi/o pathway (Jeon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jeon et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "c3060685-3324-43c8-9e6d-dd13e56b6828",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C19",
+      "claim": "TRPC5 functions as a store-operated channel by interacting with STIM1.",
+      "claim_type": "EXPLICIT",
+      "source": "By interacting with STIM1, TRPC5 functions as a store-operated channel (Asanov et al., 2015; Zeng et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Asanov et al., 2015; Zeng et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "7a685833-345b-4ceb-841f-762629ab3097",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C20",
+      "claim": "Extracellular application of reduced thioredoxin or reducing agents enhances TRPC5 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular application of reduced thioredoxin or reducing agents enhances TRPC5 activity (Xu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xu et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "1052be60-891b-4944-a790-13432bc4aba1",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C21",
+      "claim": "TRPC5 is regulated by intracellular Ca2+ in a concentration-dependent bell-shaped manner.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC5 is also regulated by [Ca2+]i in a concentration-dependent bell-shaped manner (Blair et al., 2009; Gross et al., 2009; Ordaz et al., 2005; Zeng et al., 2004), and extracellular Ca2+ ([Ca2+]o) at concentration higher than 5 mM robustly activates TRPC5 (Schaefer et al., 2000; Zeng et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Blair et al., 2009; Gross et al., 2009; Ordaz et al., 2005; Zeng et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "c46970f2-37c1-4e68-8af5-31f4e09abcc8",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C22",
+      "claim": "Extracellular Ca2+ at concentration higher than 5 mM robustly activates TRPC5.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC5 is also regulated by [Ca2+]i in a concentration-dependent bell-shaped manner (Blair et al., 2009; Gross et al., 2009; Ordaz et al., 2005; Zeng et al., 2004), and extracellular Ca2+ ([Ca2+]o) at concentration higher than 5 mM robustly activates TRPC5 (Schaefer et al., 2000; Zeng et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schaefer et al., 2000; Zeng et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "a3f6bdb2-510e-4484-bd9b-8be1a10677e1",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C23",
+      "claim": "(-)-Englerin A can selectively activate TRPC4/5 and inhibit tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "(-)-Englerin A (EA), a natural product obtained from Phyllanthus engleri, can selectively activate TRPC4/5 and therefore inhibit tumor growth (Akbulut et al., 2015; Carson et al., 2015), suggesting activation of TRPC4/5 might be a strategy to cure certain types of cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Akbulut et al., 2015; Carson et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "c585fa5c-3901-4cf0-a5da-fb8ba0c18ff3",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C24",
+      "claim": "TRPC5 inhibitors showed promising results for the treatment of central nervous system diseases and focal segmental glomerulosclerosis in animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TRPC5 inhibitors showed promising results for the treatment of central nervous system diseases and focal segmental glomerulosclerosis in animal models (Just et al., 2018; Yang et al., 2015; Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Just et al., 2018; Yang et al., 2015; Zhou et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "b88d6918-9ab0-4e1d-a532-5b56945b0d28",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C25",
+      "claim": "A TRPC4/5 inhibitor developed by Hydra and Boehringer Ingelheim is currently in clinical trial for the treatment of anxiety disorder and depression.",
+      "claim_type": "EXPLICIT",
+      "source": "A TRPC4/5 inhibitor developed by Hydra and Boehringer Ingelheim is currently in clinical trial for the treatment of anxiety disorder and depression (Wulff et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wulff et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "a704e185-ae51-44e8-900b-8433f206e12e",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C26",
+      "claim": "TRPC5 inhibitor GFB-887 developed by Goldfinch Bio is in phase 1 clinical trial for the treatment of kidney disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Another TRPC5 inhibitor GFB-887 developed by Goldfinch Bio is in phase 1 clinical trial for the treatment of kidney disease (NCT number: NCT03970122).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to a clinical trial number.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "7d7a227d-fb5c-443f-8bf7-5bf8e8c388e0",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C27",
+      "claim": "Clemizole is a benzimidazole-derived H1 antagonist that can inhibit TRPC5.",
+      "claim_type": "EXPLICIT",
+      "source": "CMZ is a benzimidazole-derived H1 antagonist that can inhibit TRPC5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about clemizole.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "b6a990e4-72d7-4fcb-9512-98435657b87e",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C28",
+      "claim": "M084 and AC1903 are TRPC5 inhibitors that belong to the clemizole class.",
+      "claim_type": "EXPLICIT",
+      "source": "M084 and AC1903 are also TRPC5 inhibitors that belong to the CMZ class (Richter et al., 2014; Zhou et al., 2017; Zhu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Richter et al., 2014; Zhou et al., 2017; Zhu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "5375fe29-a4e0-4f76-a9fd-49cb48c26e47",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C29",
+      "claim": "HC-070 is a methylxanthine derivative that inhibits TRPC4/5 with high potency.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, HC-070 is a methylxanthine derivative that inhibits TRPC4/5 with high potency (Just et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Just et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "5fcb75d1-d17f-4bf3-98d4-32a761373f8f",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C30",
+      "claim": "TRPC5 inhibitor Pico145 (HC-608) and activator AM237 belong to the HC-070 class.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPC5 inhibitor Pico145 (HC-608) and activator AM237 belong to this class (Just et al., 2018; Minard et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Just et al., 2018; Minard et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "75d9ecf5-674a-4a53-8c5a-aa95b6cd44b5",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C31",
+      "claim": "Extracellular calcium and EA can robustly elevate intracellular calcium concentration through hTRPC5 channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that extracellular calcium and EA can robustly elevate intracellular calcium concentration through hTRPC5 channel activation (Figure 1\u2014figure supplement 1A\u2013C), as reported previously (Just et al., 2018; Schaefer et al., 2000; Zeng et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 1\u2014figure supplement 1A\u2013C and citations to Just et al., 2018; Schaefer et al., 2000; Zeng et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "a85962b6-9b0d-4074-9335-87641ea9f4b6",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C32",
+      "claim": "CMZ and HC-070 effectively inhibited the extracellular calcium-induced intracellular calcium increase in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, CMZ and HC-070 effectively inhibited the extracellular calcium-induced intracellular calcium increase in a dose-dependent manner (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in the dose-response curves in Figure 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "87de63f4-6335-48f0-8d0d-4bf4d605ae52",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C33",
+      "claim": "C-terminal truncation of mTRPC increased expression level and retained its pharmacology profile.",
+      "claim_type": "EXPLICIT",
+      "source": "It is previously reported that the C-terminal truncation of mTRPC increased expression level and retained its pharmacology profile (Duan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Duan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "8cf35fb4-c622-4547-a703-410473a0147d",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C34",
+      "claim": "The C-terminal truncation construct hTRPC51-764 can be activated by EA and extracellular calcium and can be inhibited by HC-070 and CMZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found the C-terminal truncation of hTRPC5 yielded a construct (hTRPC51-764) that can be activated by EA and extracellular calcium and can be inhibited by HC-070 and CMZ (Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional data shown in Figure 1\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "be333673-a938-4909-91ad-52d560ef8e41",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C35",
+      "claim": "The hTRPC51-764 construct showed a higher expression level of the tetrameric channel compared to full-length wild-type hTRPC5.",
+      "claim_type": "EXPLICIT",
+      "source": "This construct showed a higher expression level of the tetrameric channel in comparison with the full-length wild-type (WT) hTRPC5 (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FSEC data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "1fb08ea1-8c36-4de0-944c-034eba5ab1f8",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C36",
+      "claim": "The apo state hTRPC5 structure was obtained at 3.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "For the cryo-EM sample in the presence of EA, we obtained a reconstruction at the resolution of 3.0 \u00c5 (Figure 1\u2014figure supplements 2\u20133, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Table 1 and Figure 1\u2014figure supplements 2\u20133.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "d2650480-4b8c-404e-a6a8-702df8da24de",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C37",
+      "claim": "EA was not bound to the protein in the apo structure, probably due to reduced affinity of EA toward purified TRPC5 protein in the current condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, we could not locate the density of EA, indicating EA was not bound on the protein, probably due to reduced affinity of EA toward purified TRPC5 protein in the current condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of EA density in the cryo-EM map.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "dbdf0130-8748-4903-b40e-7c86c60f63a0",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C38",
+      "claim": "The apo state hTRPC5 structure closely resembles previously published apo mouse TRPC5 structure (PDB ID: 6AEI) with RMSD of 1.844 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we refer this structure as the 'apo' state of hTRPC5, which closely resembles previously published 'apo' mouse TRPC5 structure (PDB ID: 6AEI) (Duan et al., 2019) with root-mean-square deviation (RMSD) of 1.844 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison and RMSD calculation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "f85a1107-70b6-4579-b815-499e06e11d76",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C39",
+      "claim": "The overall architecture of inhibitor-bound hTRPC5 occupies 100 \u00c5 \u00d7 100 \u00c5 \u00d7 130 \u00c5 in three-dimensional space.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall architecture of inhibitor-bound hTRPC5 is similar to apo state, occupying 100 \u00c5 \u00d7100 \u00c5 \u00d7 130 \u00c5 in three-dimensional (3D) space (Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from the cryo-EM structure shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "ec9756bc-098b-4f4c-b909-d51167134e2c",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C40",
+      "claim": "The hTRPC5 channel has a fourfold symmetric architecture with two-layer structure composed of the intracellular cytosolic domain layer and the transmembrane domain layer.",
+      "claim_type": "EXPLICIT",
+      "source": "The fourfold symmetric channel has two-layer architecture, composed of the intracellular cytosolic domain (ICD) layer and the transmembrane domain (TMD) layer (Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM structure shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "0fffe9d6-80ce-4150-9137-4b2faec26c4d",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C41",
+      "claim": "F414 forms a \u03c0-\u03c0 stacking interaction with the chlorophenyl ring of CMZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, F414 forms a \u03c0-\u03c0 stacking interaction with the chlorophenyl ring of CMZ.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interaction is observed in the high-resolution structure shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "6467be6c-a90b-4775-be83-f07d36ad29e6",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C42",
+      "claim": "Side chains of Y374, M442, Y446, and P659 show hydrophobic interactions with CMZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Side chains of Y374, M442, Y446, and P659 show hydrophobic interactions with CMZ.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These interactions are observed in the high-resolution structure shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "e5f8434c-03a4-4087-ae65-d1298869c078",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C43",
+      "claim": "Residues surrounding the CMZ-binding site are highly conserved between TRPC4 and TRPC5.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues surrounding the CMZ-binding site are highly conserved between TRPC4 and TRPC5, in agreement with their similar selectivity for CMZ type inhibitors (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by sequence alignment in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "8e5753fa-ebc9-4522-8c36-9e625adb298a",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C44",
+      "claim": "F414M and S495A mutations did not change the potency of CMZ much.",
+      "claim_type": "EXPLICIT",
+      "source": "We found mutations of F414M and S495A did not change the potency of CMZ much (Figure 2E, Table 2), while N443L decrease the potency (Figure 2E, Table 2), suggesting N443 is one of the structural determinants of TRPC subtype selectivity for CMZ inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional assay data shown in Figure 2E and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "1da6bf2a-3edf-44ec-a6fa-ace18ecd2dd5",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C45",
+      "claim": "N443L mutation decreases the potency of CMZ.",
+      "claim_type": "EXPLICIT",
+      "source": "We found mutations of F414M and S495A did not change the potency of CMZ much (Figure 2E, Table 2), while N443L decrease the potency (Figure 2E, Table 2), suggesting N443 is one of the structural determinants of TRPC subtype selectivity for CMZ inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional assay data shown in Figure 2E and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "2f237af6-c318-483c-b7ed-183b24e7a75b",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C46",
+      "claim": "N443 is one of the structural determinants of TRPC subtype selectivity for CMZ inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We found mutations of F414M and S495A did not change the potency of CMZ much (Figure 2E, Table 2), while N443L decrease the potency (Figure 2E, Table 2), suggesting N443 is one of the structural determinants of TRPC subtype selectivity for CMZ inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutagenesis data showing N443L decreases CMZ potency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "c607a50e-406a-48b0-9a73-598b1fd6b775",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C47",
+      "claim": "F576 on pore helix forms \u03c0-\u03c0 stacking interaction with the methylxanthine core of HC-070.",
+      "claim_type": "EXPLICIT",
+      "source": "The side chain of F576 on pore helix forms \u03c0-\u03c0 stacking interaction with the methylxanthine core of HC-070.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interaction is observed in the high-resolution structure shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "113d985b-8589-4037-b6ed-aad6a292a2a5",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C48",
+      "claim": "R557, Q573, and W577 form polar contacts with the hydroxypropyl tail of HC-070.",
+      "claim_type": "EXPLICIT",
+      "source": "R557 on the loop linking S5 and pore helix (linker), Q573 and W577 on pore helix form polar contacts with the hydroxypropyl tail of HC-070.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These interactions are observed in the high-resolution structure shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "c79c799e-3889-44e7-a0ce-9cf2252ed3bd",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C49",
+      "claim": "F599, A602, and T603 on S6 from the adjacent subunit stabilize the hydroxypropyl tail of HC-070.",
+      "claim_type": "EXPLICIT",
+      "source": "F599, A602, and T603 on S6 from the adjacent subunit also stabilize the hydroxypropyl tail.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These interactions are observed in the high-resolution structure shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "22253d3b-5797-45cd-afc5-33e8adcc6e92",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C50",
+      "claim": "F569 and L572 interact hydrophobically with the chlorophenyl ring of HC-070.",
+      "claim_type": "EXPLICIT",
+      "source": "F569 and L572 interact hydrophobically with the chlorophenyl ring of HC-070 (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These interactions are observed in the high-resolution structure shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "194bda4d-4369-4169-85c9-a3b5d6573611",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C51",
+      "claim": "Residues involved in HC-070 binding are absolutely conserved between hTRPC4 and hTRPC5 but not in TRPC3/6/7.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues involved in HC-070 binding are absolutely conserved between hTRPC4 and hTRPC5 but not in TRPC3/6/7 (Figure 2\u2014figure supplement 1), in agreement with the fact that HC-070 selectively inhibits TRPC4/5 with high potency compared with TRPC3/6/7 (Just et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by sequence alignment in Figure 2\u2014figure supplement 1 and supported by citation to Just et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "9e5bed72-25b1-4583-bc54-54ab0becf6b9",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C52",
+      "claim": "C525A mutation does not change the potency of HC-070 much.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that C525A does not change the potency of HC-070 much (Figure 3E, Table 3), while R557A, F569A, L572A, Q573A, F599A, and T603A show decreased potency (Figure 3E\u2013F, Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional assay data shown in Figure 3E and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "430d6a77-a716-4353-b8d3-5da3b61980de",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C53",
+      "claim": "R557A, F569A, L572A, Q573A, F599A, and T603A mutations show decreased potency for HC-070.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that C525A does not change the potency of HC-070 much (Figure 3E, Table 3), while R557A, F569A, L572A, Q573A, F599A, and T603A show decreased potency (Figure 3E\u2013F, Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional assay data shown in Figure 3E-F and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "bde5bfdf-670c-4b58-b3f7-b85d1b861635",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C54",
+      "claim": "Q573A mutation dramatically decreased HC-070 potency, emphasizing the essential role of the hydrogen bond between Q573 and hydroxypropyl group of HC-070.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Q573A dramatically decreased HC-070 potency (Figure 3F, Table 3), emphasizing the essential role of the hydrogen bond between Q573 and hydroxypropyl group of HC-070.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional assay data shown in Figure 3F and Table 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "aa710610-8ad5-4b63-b949-23d4db815451",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C55",
+      "claim": "F599N mutation increased the IC50 more dramatically than F599A mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also mutated F599 of hTRPC5 into the Asn (N in TRPC3/6) and found that F599N increased the IC50 more dramatically than F599A did, probably because F599N mutation perturbs the local hydrophobic environment of the HC-070-binding site and indirectly affects ligand binding (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional assay data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "2d4c3b4b-834c-4e23-9cc4-3538fd6b7b3b",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C56",
+      "claim": "The constriction of the ion conduction pore is formed by the side chains of I621, N625, and Q629, which represents the lower gate of hTRPC5.",
+      "claim_type": "EXPLICIT",
+      "source": "Calculated pore profiles showed that the constriction is formed by the side chains of I621, N625, and Q629, which represents the lower gate of hTRPC5 (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by pore radius calculation shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "e4583755-d70a-4ae7-b7f9-bd29a93ebdca",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C57",
+      "claim": "The smallest radius at the lower gate is below 1 \u00c5, indicating the channel is in a nonconductive closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "The smallest radius at this gate is below 1 \u00c5, indicating the channel is in a nonconductive closed state (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by pore radius calculation shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "dcf99578-7a1e-428b-a34a-bdb6622d7443",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C58",
+      "claim": "A putative cation density inside VSLD, surrounded by E418, E421, N436, and D439, was observed in both CMZ and HC-070 maps.",
+      "claim_type": "EXPLICIT",
+      "source": "A putative cation density inside VSLD, surrounded by E418 and E421 on S2 and N436, D439 on S3, was observed in both CMZ and HC-070 maps (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density maps shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "8409bb85-deac-4567-9d3e-7b57ccb66179",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C59",
+      "claim": "The E418Q-E421Q-D439N triple mutant channel cannot be activated by extracellular calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "We generate the E418Q-E421Q-D439N triple mutant (Duan et al., 2019) to abolish the cation-binding capability of this site and found the channel cannot be activated by extracellular calcium anymore (Figure 2\u2014figure supplement 2E, Figure 4\u2014figure supplement 1B), suggesting the essential role of this site for calcium activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional assay data shown in Figure 2\u2014figure supplement 2E and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "c6573e33-1d6f-4a1e-a644-5b3a144fbd94",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C60",
+      "claim": "The cation-binding site in VSLD is essential for calcium activation of TRPC5.",
+      "claim_type": "EXPLICIT",
+      "source": "We generate the E418Q-E421Q-D439N triple mutant (Duan et al., 2019) to abolish the cation-binding capability of this site and found the channel cannot be activated by extracellular calcium anymore (Figure 2\u2014figure supplement 2E, Figure 4\u2014figure supplement 1B), suggesting the essential role of this site for calcium activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutagenesis data showing loss of calcium activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "7af6f30e-8fa9-4abd-b153-1420f23fc667",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C61",
+      "claim": "CMZ can inhibit EA-elicited currents in the presence of 1 mM EGTA and 1 mM EDTA to chelate intracellular Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CMZ could inhibit EA-elicited currents in this condition (Figure 4\u2014figure supplement 1C), suggesting CMZ exerts its function independent of high intracellular Ca2+.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "6a15d685-9262-4052-b4fa-fbbc35903b18",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C62",
+      "claim": "CMZ exerts its function independent of high intracellular Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CMZ could inhibit EA-elicited currents in this condition (Figure 4\u2014figure supplement 1C), suggesting CMZ exerts its function independent of high intracellular Ca2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the electrophysiology experiment showing CMZ inhibition in low calcium conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "015ad7ab-074a-4c9b-89dc-6b728d23ef56",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C63",
+      "claim": "There is a zinc-binding site in the ankyrin repeat 4 (AR4)-linker helix (LH1) region coordinated by H178, C182, C184, and C187.",
+      "claim_type": "EXPLICIT",
+      "source": "In ICD, there is another extra density found in the ankyrin repeat 4 (AR4)-linker helix (LH1) region (Figure 4D). The ion is coordinated by the side chains of H178 and C182 on the AR4-LH1 loop and C184 and C187 on the LH1 helix (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density map shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "ae272e38-da91-4088-800f-2fb080f296ec",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C64",
+      "claim": "The zinc-binding site is likely an HC3-type zinc-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the chemical environments for ion coordination, this is likely to be an HC3-type zinc-binding site, as observed previously in a bacteria glucokinase (Miyazono et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the coordination geometry and supported by citation to Miyazono et al., 2012.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "ed901d85-7bf9-4446-b83a-631bf0508871",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C65",
+      "claim": "The residues coordinating the putative zinc ion are highly conserved in TRPC ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The residues coordinating the putative zinc ion are highly conserved in TRPC ion channels (Figure 2\u2014figure supplement 1), and mutation of C176A-C178A-C181A does not affect calcium activation or EA activation (Figure 2\u2014figure supplement 2E, Figure 4\u2014figure supplement 1A\u2013B), suggesting that this zinc-binding site might play other regulatory or structural roles, instead of ion channel gating.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by sequence alignment in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "77d637f7-e547-45b0-a771-cdf24dc27114",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C66",
+      "claim": "Mutation of C176A-C178A-C181A does not affect calcium activation or EA activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The residues coordinating the putative zinc ion are highly conserved in TRPC ion channels (Figure 2\u2014figure supplement 1), and mutation of C176A-C178A-C181A does not affect calcium activation or EA activation (Figure 2\u2014figure supplement 2E, Figure 4\u2014figure supplement 1A\u2013B), suggesting that this zinc-binding site might play other regulatory or structural roles, instead of ion channel gating.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional assay data shown in Figure 2\u2014figure supplement 2E and Figure 4\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "bc80cc8d-c3af-4e15-b24e-fcf1b7cb880d",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C67",
+      "claim": "The zinc-binding site might play regulatory or structural roles, instead of ion channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "The residues coordinating the putative zinc ion are highly conserved in TRPC ion channels (Figure 2\u2014figure supplement 1), and mutation of C176A-C178A-C181A does not affect calcium activation or EA activation (Figure 2\u2014figure supplement 2E, Figure 4\u2014figure supplement 1A\u2013B), suggesting that this zinc-binding site might play other regulatory or structural roles, instead of ion channel gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the lack of functional effect of mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "edcb9c66-44b1-43e3-83c0-f209e585ad1b",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C68",
+      "claim": "A lipid molecule resembling diacylglycerol (DAG) was observed near the S5, pore helix, and S6 in the CMZ-bound hTRPC5 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "One lipid is located near the S5 and pore helix from one subunit and S6 from the adjacent subunit in the CMZ-bound hTRPC5. Its density highly resembles diacylglycerol (DAG) molecule which shows two acryl tails, but without phosphate group or headgroup of typical phospholipids (Figure 4F, Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density map shown in Figure 4F and Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "c00993f9-4a2e-4ac7-89e3-a057e2eaa10e",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C69",
+      "claim": "HPLC-MS experiments revealed that the purified protein sample contained markedly higher level of DAG compared to the purification buffer control.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our structural observation, further HPLC-MS experiments revealed that the purified protein sample contained markedly higher level of DAG in comparison with the purification buffer control (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HPLC-MS data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "903746f6-2595-4e47-88d3-e5b702d667a6",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C70",
+      "claim": "The free hydroxyl group of DAG forms polar contacts with Q573.",
+      "claim_type": "EXPLICIT",
+      "source": "The free hydroxyl group of this DAG molecule forms polar contacts with Q573 (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interaction is observed in the high-resolution structure shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "ba9eb6bc-1155-4579-8ef5-8a114976534f",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C71",
+      "claim": "The two hydrophobic tails of DAG interact with L528, Y524, F576, W577, V579, L617, V610, I611, and L616.",
+      "claim_type": "EXPLICIT",
+      "source": "Its two hydrophobic tails interact with several hydrophobic residues: L528, Y524 on S5; F576, W577, and V579 on the pore helix; L617 on S6; and V610, I611, and L616 on S6 from adjacent subunit.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These interactions are observed in the high-resolution structure shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "d06ef231-dc8d-490a-90c9-34f53fbc32cf",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C72",
+      "claim": "In the HC-070-bound hTRPC5 map, the binding site of glycerol group of DAG was occupied by HC-070, while the binding site of two DAG tails was still filled by lipid-like densities.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, in the map of HC-070-bound hTRPC5, we found that the binding site of glycerol group of DAG was occupied by HC-070, while the binding site of two DAG tails was still filled by lipid-like densities (Figure 1\u2014figure supplement 7G), indicating the binding of the glycerol group of DAG and HC-070 are mutually exclusive.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the cryo-EM density map shown in Figure 1\u2014figure supplement 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "40537c49-2805-4a31-a8c7-2774f36c24e1",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C73",
+      "claim": "The binding of the glycerol group of DAG and HC-070 are mutually exclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, in the map of HC-070-bound hTRPC5, we found that the binding site of glycerol group of DAG was occupied by HC-070, while the binding site of two DAG tails was still filled by lipid-like densities (Figure 1\u2014figure supplement 7G), indicating the binding of the glycerol group of DAG and HC-070 are mutually exclusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observation that HC-070 occupies the DAG glycerol binding site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "e8fbe948-fd80-426c-9a74-7376476cb359",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C74",
+      "claim": "The overall structures of hTRPC5 at different states are highly similar, with RMSD of 1.456 \u00c5 between CMZ-bound hTRPC5 and apo state.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structures of hTRPC5 at different states are highly similar, with RMSD of 1.456 \u00c5 between CMZ-bound hTRPC5 and apo state; 0.926 \u00c5 between HC-070-bound hTRPC5 and apo state, although there is a little structural variation in details (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison and RMSD calculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "5db34d9e-fc9d-4aad-a7ad-b2ac4fc83bbd",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C75",
+      "claim": "The RMSD between HC-070-bound hTRPC5 and apo state is 0.926 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structures of hTRPC5 at different states are highly similar, with RMSD of 1.456 \u00c5 between CMZ-bound hTRPC5 and apo state; 0.926 \u00c5 between HC-070-bound hTRPC5 and apo state, although there is a little structural variation in details (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison and RMSD calculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "b9def429-21f6-4769-abaa-e22726b692d5",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C76",
+      "claim": "The bottom of S3 segment and the S2-S3 linker in HC-070-bound structure have small conformational change compared to the apo hTRPC5.",
+      "claim_type": "EXPLICIT",
+      "source": "In the TMD, the bottom of S3 segment and the S2-S3 linker in HC-070-bound structure have small conformational change compared to the apo hTRPC5 (Figure 5B), which may be due to the HC-070 binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by structural comparison shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "f4df9699-f87b-49fb-982f-650f14418ea3",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C77",
+      "claim": "Inhibitors that bind IBP-A need to penetrate the plasma membrane first before reaching their binding site in VSLD.",
+      "claim_type": "EXPLICIT",
+      "source": "IBP-A inside the VSLD is accessible from the intracellular side (Figure 6A). Inhibitors that bind IBP-A, such as CMZ and GFB-8438, need to penetrate the plasma membrane first before reaching their binding site in VSLD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural location of IBP-A shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "5b63bc67-f52e-4453-be92-a74130de31f1",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C78",
+      "claim": "CMZ, M084, and AC1903 are benzimidazole derivatives which can inhibit TRPC5 with IC50 values at 1.0\u20131.3, 8.2, and 14.7 \u03bcM, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "CMZ, M084, and AC1903 are benzimidazole derivatives which can inhibit TRPC5 with IC50 values at 1.0\u20131.3, 8.2, and 14.7 \u03bcM, respectively (Richter et al., 2014; Zhou et al., 2017; Zhu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Richter et al., 2014; Zhou et al., 2017; Zhu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "5d01caf5-663b-44ce-9e1e-e9ee7ff8eadb",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C79",
+      "claim": "CMZ, M084, and AC1903 probably share a common binding site at IBP-A due to their similar chemical structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Their similar chemical structures suggest that they probably share a common binding site at IBP-A (Figure 6\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural similarity of these compounds shown in Figure 6\u2014figure supplement 2A\u2013C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "c9ec140f-3070-4b1e-9a2b-447ce8988f1f",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C80",
+      "claim": "CMZ is 10- and 26-fold more potent against TRPC5 than TRPC3/6 and TRPC7, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "CMZ is 10- and 26-fold more potent against TRPC5 than TRPC3/6 and TRPC7, respectively (Richter et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Richter et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "110fe9c1-c5b7-4957-a41c-d3cd395dc55b",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C81",
+      "claim": "Both CMZ and GFB-8438 share a common set of interacting residues on hTRPC5 including L496, Y374, M442, N443, and R492.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, both CMZ and GFB-8438 share a common set of interacting residues on hTRPC5 including L496, Y374, M442, N443, and R492.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of the binding sites of CMZ and GFB-8438.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "75ffee8d-01c0-4659-a1f9-03ebed2bdee1",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C82",
+      "claim": "Structure-based hybridization of CMZ and GFB-8438 might exploit more interacting residues on hTRPC5 and thus enhance the inhibitor potency and selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, both CMZ and GFB-8438 have several nonoverlapping interacting residues on hTRPC5, suggesting that structure-based hybridization of CMZ and GFB-8438 might exploit more interacting residues on hTRPC5 and thus enhance the inhibitor potency and selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "dda59f90-2efa-4113-bf31-b3b823123a4a",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C83",
+      "claim": "Stabilization of VSLD in an inactive conformation might be a common scheme to inhibit TRP channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the gating model of TRPV1, channel activation is associated with relative movements between VSLD and pore (Cao et al., 2013; Gao et al., 2016) and thus, stabilization of VSLD in an inactive conformation might be a common scheme to inhibit channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the gating model of TRPV1 and supported by citations to Cao et al., 2013; Gao et al., 2016.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "0b998790-957c-4cbd-827d-60e8ca98b4d5",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C84",
+      "claim": "AM-1473, a potent antagonist of hTRPC6, binds at IBP-A in hTRPC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, AM-1473, a potent antagonist of hTRPC6, was found to bind at IBP-A in hTRPC6 as well (Bai et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bai et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "55bbaa82-e6a3-49ef-8853-f643d6b9885d",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C85",
+      "claim": "IBP-A is the AMTB and TC-I 2014-binding sites in TRPM8.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, IBP-A is the AMTB and TC-I 2014-binding sites in TRPM8 (Diver et al., 2019), 2-APB-binding site in TRPV6 (Singh et al., 2018; Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Diver et al., 2019 and Singh et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "f5117394-fb8b-4fe4-9366-55bdcad51c60",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C86",
+      "claim": "IBP-A is the 2-APB-binding site in TRPV6.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, IBP-A is the AMTB and TC-I 2014-binding sites in TRPM8 (Diver et al., 2019), 2-APB-binding site in TRPV6 (Singh et al., 2018; Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Singh et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "e95378a8-ae27-4b63-b753-9db42014b006",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C87",
+      "claim": "VSLD of TRP channels is a hotspot for drug discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "The studies suggest that VSLD of TRP channels is a hotspot for drug discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that multiple inhibitors bind at IBP-A in VSLD across different TRP channels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "b4512771-3cf0-4c47-91cf-737dab6788fd",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C88",
+      "claim": "The DAG-binding pocket observed in hTRPC5 is structurally conserved in TRPC3/6 and is essential for TRPC3/6 channel activation by DAG and its analogues.",
+      "claim_type": "EXPLICIT",
+      "source": "These data concertedly suggest that the DAG- binding pocket observed here in hTRPC5 is also structurally conserved in TRPC3/6 and is essential for TRPC3/6 channel activation by DAG and its analogues, such as OAG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from mutagenesis studies in TRPC3/6 cited in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "4c8e5661-e972-420e-af42-416121f1f396",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C89",
+      "claim": "Pharmacological compounds binding at IBP-B might affect TRPC channel gating either by acting on TRPC directly or by perturbing the normal function of DAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological compounds binding at IBP-B might affect TRPC channel gating either by acting on TRPC directly or by perturbing the normal function of DAG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observation that IBP-B overlaps with the DAG binding site.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "f9f39879-0cd7-49b3-b875-f68c98ad5e30",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C90",
+      "claim": "The binding of HC-070 at IBP-B replaces the glycerol group of DAG, stabilizes hTRPC5 in a closed state, and thus inhibits channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observed that the binding of HC-070 at this site replaces the glycerol group of DAG, stabilizes hTRPC5 in a closed state, and thus inhibits channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observation that HC-070 occupies the DAG glycerol binding site and the channel is in a closed state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "ea6f57cc-da63-4b31-b5b5-67b6f3e6b96f",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C91",
+      "claim": "The residues involved in HC-070 binding are absolutely identical between hTRPC5 and hTRPC4.",
+      "claim_type": "EXPLICIT",
+      "source": "The residues involved in HC-070 binding are absolutely identical between hTRPC5 and hTRPC4, but they share only 20% similarities between TRPC4/5 and TRPC3/6/7 (Figure 2\u2014figure supplement 1), which explains the high selectivity of HC-070 for TRPC4/5 over TRPC3/6/7 (Just et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by sequence alignment in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "88d299e0-cd98-4db2-b610-311d939f1f6e",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C92",
+      "claim": "HC-070 shows inhibitory effect on heterotetrameric hTRPC1:C5 and hTRPC1:C4 with relatively lower potency compared to homotetrameric hTRPC4/5.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HC-070 shows inhibitory effect on heterotetrameric hTRPC1: C5 and hTRPC1: C4 with relatively lower potency compared to homotetrameric hTRPC4/5 (Just et al., 2018), probably because of the lower sequence identity between TRPC4/5 and TRPC1 (46% according to the sequence alignment) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Just et al., 2018 and sequence alignment in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "51d51177-6032-4298-8938-20e1bc87f76e",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C93",
+      "claim": "Pico145 is more potent against hTRPC4/5 than HC-070, possibly due to the substitution of chloride with trifluoromethoxy group on the chlorophenoxy ring.",
+      "claim_type": "EXPLICIT",
+      "source": "It is reported that Pico145, an HC-070 analogue, is more potent against hTRPC4/5 than HC-070 (Just et al., 2018), possibly due to the substitution of chloride with trifluoromethoxy group on the chlorophenoxy ring of HC-070 (Figure 6\u2014figure supplement 2G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Just et al., 2018 and structural comparison shown in Figure 6\u2014figure supplement 2G\u2013H.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "24b03e92-a8ea-41c3-acda-cc7ee609d2da",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C94",
+      "claim": "Pico145 binds to hTRPC5 channel using a similar pose as HC-070, except the chlorophenoxy ring with a trifluoromethoxy group inserts into a cavity surrounded by L521, Y524, F576, and V610.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent structure study showed that Pico145 binds to hTRPC5 channel using a similar pose as HC-070, except the chlorophenoxy ring with a trifluoromethoxy group on it inserts into a cavity surrounded by L521, Y524, F576, and V610 of hTRPC5 (Figure 1\u2014figure supplement 7J; Wright et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Wright et al., 2020 and structural comparison shown in Figure 1\u2014figure supplement 7J.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "cfe2baf4-f14b-47fc-9752-461917d0c555",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C95",
+      "claim": "AM237 is a TRPC5 activator with EC50 around 15\u201320 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Another HC-070 analogue, AM237, is a TRPC5 activator with EC50 around 15\u201320 nM (Minard et al., 2019), and AM237 activates homomeric hTRPC5 channel instead of the heterotetrameric TRPC1: C5 channel (Minard et al., 2019), suggesting that AM237 also binds at IBP-B which is at the interface between adjacent subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Minard et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "17061961-6c9c-4956-abb5-a905b1b6c9c6",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C96",
+      "claim": "AM237 activates homomeric hTRPC5 channel instead of the heterotetrameric TRPC1:C5 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Another HC-070 analogue, AM237, is a TRPC5 activator with EC50 around 15\u201320 nM (Minard et al., 2019), and AM237 activates homomeric hTRPC5 channel instead of the heterotetrameric TRPC1: C5 channel (Minard et al., 2019), suggesting that AM237 also binds at IBP-B which is at the interface between adjacent subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Minard et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "61c62bcc-74cd-4fa5-9812-8490ab022b65",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C97",
+      "claim": "AM237 binds at IBP-B which is at the interface between adjacent subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Another HC-070 analogue, AM237, is a TRPC5 activator with EC50 around 15\u201320 nM (Minard et al., 2019), and AM237 activates homomeric hTRPC5 channel instead of the heterotetrameric TRPC1: C5 channel (Minard et al., 2019), suggesting that AM237 also binds at IBP-B which is at the interface between adjacent subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the selectivity of AM237 for homomeric channels.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "04a177ba-4b56-4858-add3-9f5929734f57",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C98",
+      "claim": "AM237 might activate hTRPC5 by pushing L521 on S5 using its chloride-phenoxy group.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with Pico145, AM237 has an additional chloride atom on the phenoxy ring (Figure 6\u2014figure supplement 2I), which makes the phenoxy group larger and this chloride atom might be in clash with L521 of hTRPC5. Therefore, AM237 might activate hTRPC5 by pushing L521 on S5 using its chloride-phenoxy group (Wright et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on structural comparison and supported by citation to Wright et al., 2020.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "765f347a-3c2a-40c8-b1ba-c6770a031617",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C99",
+      "claim": "Mutations in IBP-B, including Q573T, F576A, and W577A, decrease the potency of AM237 on hTRPC5.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our results of HC-070-binding site mutants, mutations in IBP-B, including Q573T, F576A, and W577A, decrease the potency of AM237 on hTRPC5 (Wright et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wright et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "d712b58a-8fee-43dd-8a92-5a5fd11fb891",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C100",
+      "claim": "An hTRPC6 agonist AM-0883 binds at IBP-B.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it is reported that an hTRPC6 agonist AM-0883 binds at IBP-B as well (Figure 6\u2014figure supplement 1B; Bai et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Bai et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "bf987402-fb6d-4db8-bdfc-5c98b9f3dfb1",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C101",
+      "claim": "IBP-B is a common modulatory ligand-binding site in TRPC channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of DAG lipid, TRPC inhibitor, and TRPC activator binding at IBP-B suggests that it is a common modulatory ligand-binding site in TRPC channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that multiple ligands bind at IBP-B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "75fc8c90-359a-408e-9541-a49c021eb756",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C102",
+      "claim": "BTDM, a high affinity inhibitor of hTRPC6, binds at IBP-C.",
+      "claim_type": "EXPLICIT",
+      "source": "BTDM, a high affinity inhibitor of hTRPC6, binds at IBP-C (Figure 6C, Figure 6\u2014figure supplement 1C; Tang et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Tang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "3dbfd3bf-2dc3-4770-92d7-40641023f15a",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C103",
+      "claim": "When BTDM is not supplied, IBP-C is occupied by a putative phospholipid.",
+      "claim_type": "EXPLICIT",
+      "source": "When BTDM is not supplied, IBP-C is occupied by a putative phospholipid (Bai et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bai et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "614199a4-b762-4ad8-a810-2b22d9d041e7",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C104",
+      "claim": "Mutations of G503/G504 to serine on S4-S5 linker in TRPC4/5 lead to constitutive activation of the channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In TRPC4/5, mutations of G503/G504 to serine on S4-S5 linker lead to constitutive activation of the channels (Beck et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Beck et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "0c59cff6-472b-4ad3-b1ff-4d94af7c47f8",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C105",
+      "claim": "Vanilloid agonist resiniferatoxin (RTX), vanilloid antagonist capsazepine, and an endogenous phosphatidylinositol bind at IBP-C on TRPV1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, vanilloid agonist resiniferatoxin (RTX), vanilloid antagonist capsazepine, and an endogenous phosphatidylinositol bind at IBP-C on TRPV1 (Figure 6\u2014figure supplement 1C; Cao et al., 2013; Gao et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Cao et al., 2013; Gao et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "717a4563-c1d6-4b76-b3a6-b08f5d7a6c00",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "claim_id": "C106",
+      "claim": "IBP-C is important for the gating of both TRPC and TRPV channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These data together suggest that IBP-C is important for the gating of both TRPC and TRPV channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that multiple ligands affecting channel gating bind at IBP-C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "High-resolution cryo-EM structures of human TRPC5 in complex with clemizole (2.7 \u00c5) and HC-070 (2.7 \u00c5) were determined, revealing clemizole binds within the voltage sensor-like domain while HC-070 is wedged between adjacent subunits. A C-terminal truncation construct (hTRPC51-764) was used that retained pharmacological properties and showed improved expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6, C32, C34-C36, C38-C40 are well-supported by cryo-EM data (Table 1, Figures 1-3), functional assays (Figure 1A-B, Figure 1\u2014figure supplement 1), and FSEC analysis (Figure 1\u2014figure supplement 1D). The resolutions are clearly documented, ligand densities are observed in maps, and the truncation construct is functionally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "5392ddc2-8a1a-41f1-9a08-1c2030ede510",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Clemizole binds in the voltage sensor-like domain through specific interactions including \u03c0-\u03c0 stacking with F414 and hydrophobic contacts with Y374, M442, Y446, and P659. Mutagenesis revealed N443L decreases clemizole potency, identifying N443 as a determinant of TRPC subtype selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 are supported by high-resolution structural data (Figure 2C-D), sequence conservation analysis (Figure 2\u2014figure supplement 1), and functional mutagenesis (Figure 2E, Table 2). The structural interactions are directly observed at 2.7 \u00c5 resolution, and the functional effects of mutations are quantified with IC50 values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "0fe2c89b-2de3-4106-8ec9-106605febc79",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "HC-070 binds at the interface between adjacent subunits through extensive interactions including \u03c0-\u03c0 stacking with F576, polar contacts with R557, Q573, and W577, and hydrophobic interactions with F569 and L572. Mutagenesis confirmed the importance of these residues, with Q573A dramatically decreasing HC-070 potency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C55 are well-supported by structural data (Figure 3C-D), sequence conservation (Figure 2\u2014figure supplement 1), and comprehensive mutagenesis (Figure 3E-F, Table 3). The structural interactions are clearly resolved, and functional validation demonstrates the critical role of Q573 and other residues in HC-070 binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "1a882b97-f471-4685-89fc-08d079652878",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both clemizole and HC-070 stabilize TRPC5 in a closed, nonconductive state with the lower gate constricted to below 1 \u00c5 radius. The overall structures in different states are highly similar (RMSD 0.926-1.456 \u00c5), with only minor conformational changes observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57, C8, C74-C76 are supported by pore radius calculations (Figure 4A-B), structural comparisons (Figure 5), and RMSD measurements. The closed state is consistent with the inhibitory function of both compounds, though the mechanism is inferred from structural observations rather than direct functional measurements of channel conductance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "4d4458c2-0832-43b4-8143-fab6648188b5",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A putative cation-binding site in the voltage sensor-like domain, coordinated by E418, E421, N436, and D439, is essential for calcium activation. The E418Q-E421Q-D439N triple mutant abolishes calcium activation, while clemizole inhibition is independent of high intracellular calcium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are supported by cryo-EM density (Figure 4C), mutagenesis data (Figure 2\u2014figure supplement 2E, Figure 4\u2014figure supplement 1B), and electrophysiology (Figure 4\u2014figure supplement 1C). The cation density is observed in maps, and the functional importance is demonstrated by loss-of-function mutations. The calcium-independence of clemizole is experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "f22762af-107d-43bd-a1a5-a491d7b82f54",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A diacylglycerol (DAG) molecule was identified near S5, pore helix, and S6, forming polar contacts with Q573 and hydrophobic interactions with multiple residues. HC-070 binding displaces the glycerol group of DAG, indicating mutually exclusive binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 are supported by cryo-EM density (Figure 4F, Figure 4\u2014figure supplement 2A), HPLC-MS analysis (Figure 4\u2014figure supplement 3), and structural comparison (Figure 1\u2014figure supplement 7G). The DAG identification is validated by mass spectrometry, and the mutually exclusive binding with HC-070 is directly observed in the structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "cb32b77b-2e2b-44e6-80d1-2f7e2f3f16a2",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A putative zinc-binding site in the AR4-LH1 region is coordinated by H178, C182, C184, and C187. Mutations of zinc-coordinating residues do not affect calcium or EA activation, suggesting a structural or regulatory role rather than involvement in channel gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 are supported by cryo-EM density (Figure 4D), sequence conservation (Figure 2\u2014figure supplement 1), and mutagenesis (Figure 2\u2014figure supplement 2E, Figure 4\u2014figure supplement 1A-B). The zinc site is structurally identified, and the lack of functional effect from mutations supports the proposed non-gating role, though the actual function remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Inhibitor-binding pocket A (IBP-A) in the voltage sensor-like domain is a common binding site for clemizole, GFB-8438, and other inhibitors across TRPC channels. This site is also conserved in other TRP channels (TRPM8, TRPV6, TRPC6), suggesting VSLD is a hotspot for drug discovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C87 are supported by structural data from this study and cited literature (Vinayagam et al., 2020; Bai et al., 2020; Diver et al., 2019; Singh et al., 2018). The structural location of IBP-A is clearly defined, and the conservation across TRP channels is documented. The drug discovery potential is a reasonable inference from the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Inhibitor-binding pocket B (IBP-B) at the subunit interface overlaps with the DAG-binding site and is a common modulatory site for inhibitors (HC-070, Pico145) and activators (AM237, AM-0883) in TRPC channels. HC-070 inhibits by replacing the DAG glycerol group and stabilizing the closed state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C101 are supported by structural data (Figures 3, 4F, 6B), cited literature (Wright et al., 2020; Minard et al., 2019; Bai et al., 2020), and mutagenesis studies in TRPC3/6. The DAG-binding site conservation and its role in channel activation are well-documented in cited work. The mechanism of HC-070 inhibition is directly observed structurally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "c50f5d58-12a6-4752-85a8-0d0153c09beb",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Inhibitor-binding pocket C (IBP-C) between VSLD and pore domain binds BTDM in TRPC6 and vanilloid ligands in TRPV1. This site is important for gating in both TRPC and TRPV channels, as evidenced by constitutive activation mutations in TRPC4/5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C106 are supported by cited structural studies (Tang et al., 2018; Bai et al., 2020; Cao et al., 2013; Gao et al., 2016; Beck et al., 2013). The location and functional importance of IBP-C are well-documented in the literature. However, this study does not provide direct experimental evidence for IBP-C, relying entirely on prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "85bc6814-58ab-4d91-9194-6dadcadbdcc3",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TRPC5 is a Ca2+-permeable nonselective cation channel belonging to the TRPC subfamily, which shares closest homology to Drosophila TRP. TRPC5 is mainly expressed in brain and can form homotetrameric or heterotetrameric channels with TRPC4/1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C15 are established knowledge supported by multiple citations (Clapham, 2003; Montell and Rubin, 1989; Montell et al., 2002; Philipp et al., 1998; Sossey-Alaoui et al., 1999; Uhl\u00e9n et al., 2015; Chung et al., 2007; Chung et al., 2006). These are well-accepted facts in the field and provide appropriate background context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TRPC5 is implicated in anxiety, depression, and kidney disease, with inhibitors showing promise in preclinical and clinical studies. TRPC5 can be activated through multiple pathways including Gq/11-PLC, Gi/o, store-operated mechanisms, and extracellular calcium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C16-C26 are supported by extensive citations to prior work (Riccio et al., 2009; Schaldecker et al., 2013; Kanki et al., 2001; Schaefer et al., 2000; Storch et al., 2017; Jeon et al., 2012; Asanov et al., 2015; Zeng et al., 2004; Xu et al., 2008; Blair et al., 2009; Gross et al., 2009; Ordaz et al., 2005; Akbulut et al., 2015; Carson et al., 2015; Just et al., 2018; Yang et al., 2015; Zhou et al., 2017; Wulff et al., 2019). These provide important context for the therapeutic relevance of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "c0806789-b06a-468d-97d9-ee7e026c64f3",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Clemizole and HC-070 represent two distinct classes of TRPC5 inhibitors with different chemical structures. M084 and AC1903 belong to the clemizole class, while Pico145 and AM237 belong to the HC-070 class.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by citations (Richter et al., 2014; Zhou et al., 2017; Zhu et al., 2015; Just et al., 2018; Minard et al., 2019) and provide important context for understanding the two inhibitor classes studied. This classification is well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    },
+    {
+      "id": "905f9db4-0d9a-4e44-97a8-699ca753e21b",
+      "content_id": "fe50d5a7-3285-4df4-b11b-20bdd8505123",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The apo structure was obtained from samples prepared with englerin A (EA), but EA density was not observed in the map, likely due to reduced affinity under purification conditions. This structure resembles the previously published mouse TRPC5 apo structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31, C33, C37 describe the failed attempt to obtain an EA-bound structure. While the functional data (Figure 1\u2014figure supplement 1A-C) confirms EA activates the channel, the absence of EA density in the structure is acknowledged. The explanation for EA's absence is speculative. The comparison to mouse TRPC5 (C38) provides validation, but the inability to capture EA binding limits mechanistic insights.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:53.001448Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ccd8da5a-b290-4c1c-8d7f-1bbd35ea5cad",
+      "result_id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877"
+    },
+    {
+      "claim_id": "bf0d1283-c20e-42b5-8b1d-e3a070bb7f9d",
+      "result_id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877"
+    },
+    {
+      "claim_id": "c1a0ff41-8cfb-4ce0-a833-ba342f4e6e22",
+      "result_id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877"
+    },
+    {
+      "claim_id": "6ddf7a9e-9250-44a5-a486-addfb38ce52e",
+      "result_id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877"
+    },
+    {
+      "claim_id": "a85962b6-9b0d-4074-9335-87641ea9f4b6",
+      "result_id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877"
+    },
+    {
+      "claim_id": "8cf35fb4-c622-4547-a703-410473a0147d",
+      "result_id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877"
+    },
+    {
+      "claim_id": "be333673-a938-4909-91ad-52d560ef8e41",
+      "result_id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877"
+    },
+    {
+      "claim_id": "1fb08ea1-8c36-4de0-944c-034eba5ab1f8",
+      "result_id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877"
+    },
+    {
+      "claim_id": "dbdf0130-8748-4903-b40e-7c86c60f63a0",
+      "result_id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877"
+    },
+    {
+      "claim_id": "f85a1107-70b6-4579-b815-499e06e11d76",
+      "result_id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877"
+    },
+    {
+      "claim_id": "ec9756bc-098b-4f4c-b909-d51167134e2c",
+      "result_id": "1fe8f3d2-446d-4b92-8699-088d2ddd8877"
+    },
+    {
+      "claim_id": "0fffe9d6-80ce-4150-9137-4b2faec26c4d",
+      "result_id": "5392ddc2-8a1a-41f1-9a08-1c2030ede510"
+    },
+    {
+      "claim_id": "6467be6c-a90b-4775-be83-f07d36ad29e6",
+      "result_id": "5392ddc2-8a1a-41f1-9a08-1c2030ede510"
+    },
+    {
+      "claim_id": "e5f8434c-03a4-4087-ae65-d1298869c078",
+      "result_id": "5392ddc2-8a1a-41f1-9a08-1c2030ede510"
+    },
+    {
+      "claim_id": "8e5753fa-ebc9-4522-8c36-9e625adb298a",
+      "result_id": "5392ddc2-8a1a-41f1-9a08-1c2030ede510"
+    },
+    {
+      "claim_id": "1da6bf2a-3edf-44ec-a6fa-ace18ecd2dd5",
+      "result_id": "5392ddc2-8a1a-41f1-9a08-1c2030ede510"
+    },
+    {
+      "claim_id": "2f237af6-c318-483c-b7ed-183b24e7a75b",
+      "result_id": "5392ddc2-8a1a-41f1-9a08-1c2030ede510"
+    },
+    {
+      "claim_id": "c607a50e-406a-48b0-9a73-598b1fd6b775",
+      "result_id": "0fe2c89b-2de3-4106-8ec9-106605febc79"
+    },
+    {
+      "claim_id": "113d985b-8589-4037-b6ed-aad6a292a2a5",
+      "result_id": "0fe2c89b-2de3-4106-8ec9-106605febc79"
+    },
+    {
+      "claim_id": "c79c799e-3889-44e7-a0ce-9cf2252ed3bd",
+      "result_id": "0fe2c89b-2de3-4106-8ec9-106605febc79"
+    },
+    {
+      "claim_id": "22253d3b-5797-45cd-afc5-33e8adcc6e92",
+      "result_id": "0fe2c89b-2de3-4106-8ec9-106605febc79"
+    },
+    {
+      "claim_id": "194bda4d-4369-4169-85c9-a3b5d6573611",
+      "result_id": "0fe2c89b-2de3-4106-8ec9-106605febc79"
+    },
+    {
+      "claim_id": "9e5bed72-25b1-4583-bc54-54ab0becf6b9",
+      "result_id": "0fe2c89b-2de3-4106-8ec9-106605febc79"
+    },
+    {
+      "claim_id": "430d6a77-a716-4353-b8d3-5da3b61980de",
+      "result_id": "0fe2c89b-2de3-4106-8ec9-106605febc79"
+    },
+    {
+      "claim_id": "bde5bfdf-670c-4b58-b3f7-b85d1b861635",
+      "result_id": "0fe2c89b-2de3-4106-8ec9-106605febc79"
+    },
+    {
+      "claim_id": "aa710610-8ad5-4b63-b949-23d4db815451",
+      "result_id": "0fe2c89b-2de3-4106-8ec9-106605febc79"
+    },
+    {
+      "claim_id": "2d4c3b4b-834c-4e23-9cc4-3538fd6b7b3b",
+      "result_id": "1a882b97-f471-4685-89fc-08d079652878"
+    },
+    {
+      "claim_id": "e4583755-d70a-4ae7-b7f9-bd29a93ebdca",
+      "result_id": "1a882b97-f471-4685-89fc-08d079652878"
+    },
+    {
+      "claim_id": "e073978d-4366-46b3-9621-dc5593b9ffee",
+      "result_id": "1a882b97-f471-4685-89fc-08d079652878"
+    },
+    {
+      "claim_id": "e8fbe948-fd80-426c-9a74-7376476cb359",
+      "result_id": "1a882b97-f471-4685-89fc-08d079652878"
+    },
+    {
+      "claim_id": "5db34d9e-fc9d-4aad-a7ad-b2ac4fc83bbd",
+      "result_id": "1a882b97-f471-4685-89fc-08d079652878"
+    },
+    {
+      "claim_id": "b9def429-21f6-4769-abaa-e22726b692d5",
+      "result_id": "1a882b97-f471-4685-89fc-08d079652878"
+    },
+    {
+      "claim_id": "dcf99578-7a1e-428b-a34a-bdb6622d7443",
+      "result_id": "4d4458c2-0832-43b4-8143-fab6648188b5"
+    },
+    {
+      "claim_id": "8409bb85-deac-4567-9d3e-7b57ccb66179",
+      "result_id": "4d4458c2-0832-43b4-8143-fab6648188b5"
+    },
+    {
+      "claim_id": "c6573e33-1d6f-4a1e-a644-5b3a144fbd94",
+      "result_id": "4d4458c2-0832-43b4-8143-fab6648188b5"
+    },
+    {
+      "claim_id": "7af6f30e-8fa9-4abd-b153-1420f23fc667",
+      "result_id": "4d4458c2-0832-43b4-8143-fab6648188b5"
+    },
+    {
+      "claim_id": "6a15d685-9262-4052-b4fa-fbbc35903b18",
+      "result_id": "4d4458c2-0832-43b4-8143-fab6648188b5"
+    },
+    {
+      "claim_id": "edcb9c66-44b1-43e3-83c0-f209e585ad1b",
+      "result_id": "f22762af-107d-43bd-a1a5-a491d7b82f54"
+    },
+    {
+      "claim_id": "c00993f9-4a2e-4ac7-89e3-a057e2eaa10e",
+      "result_id": "f22762af-107d-43bd-a1a5-a491d7b82f54"
+    },
+    {
+      "claim_id": "903746f6-2595-4e47-88d3-e5b702d667a6",
+      "result_id": "f22762af-107d-43bd-a1a5-a491d7b82f54"
+    },
+    {
+      "claim_id": "ba9eb6bc-1155-4579-8ef5-8a114976534f",
+      "result_id": "f22762af-107d-43bd-a1a5-a491d7b82f54"
+    },
+    {
+      "claim_id": "d06ef231-dc8d-490a-90c9-34f53fbc32cf",
+      "result_id": "f22762af-107d-43bd-a1a5-a491d7b82f54"
+    },
+    {
+      "claim_id": "40537c49-2805-4a31-a8c7-2774f36c24e1",
+      "result_id": "f22762af-107d-43bd-a1a5-a491d7b82f54"
+    },
+    {
+      "claim_id": "015ad7ab-074a-4c9b-89dc-6b728d23ef56",
+      "result_id": "cb32b77b-2e2b-44e6-80d1-2f7e2f3f16a2"
+    },
+    {
+      "claim_id": "ae272e38-da91-4088-800f-2fb080f296ec",
+      "result_id": "cb32b77b-2e2b-44e6-80d1-2f7e2f3f16a2"
+    },
+    {
+      "claim_id": "ed901d85-7bf9-4446-b83a-631bf0508871",
+      "result_id": "cb32b77b-2e2b-44e6-80d1-2f7e2f3f16a2"
+    },
+    {
+      "claim_id": "77d637f7-e547-45b0-a771-cdf24dc27114",
+      "result_id": "cb32b77b-2e2b-44e6-80d1-2f7e2f3f16a2"
+    },
+    {
+      "claim_id": "bc80cc8d-c3af-4e15-b24e-fcf1b7cb880d",
+      "result_id": "cb32b77b-2e2b-44e6-80d1-2f7e2f3f16a2"
+    },
+    {
+      "claim_id": "f4df9699-f87b-49fb-982f-650f14418ea3",
+      "result_id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d"
+    },
+    {
+      "claim_id": "5b63bc67-f52e-4453-be92-a74130de31f1",
+      "result_id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d"
+    },
+    {
+      "claim_id": "5d01caf5-663b-44ce-9e1e-e9ee7ff8eadb",
+      "result_id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d"
+    },
+    {
+      "claim_id": "c9ec140f-3070-4b1e-9a2b-447ce8988f1f",
+      "result_id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d"
+    },
+    {
+      "claim_id": "110fe9c1-c5b7-4957-a41c-d3cd395dc55b",
+      "result_id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d"
+    },
+    {
+      "claim_id": "75ffee8d-01c0-4659-a1f9-03ebed2bdee1",
+      "result_id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d"
+    },
+    {
+      "claim_id": "dda59f90-2efa-4113-bf31-b3b823123a4a",
+      "result_id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d"
+    },
+    {
+      "claim_id": "0b998790-957c-4cbd-827d-60e8ca98b4d5",
+      "result_id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d"
+    },
+    {
+      "claim_id": "55bbaa82-e6a3-49ef-8853-f643d6b9885d",
+      "result_id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d"
+    },
+    {
+      "claim_id": "f5117394-fb8b-4fe4-9366-55bdcad51c60",
+      "result_id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d"
+    },
+    {
+      "claim_id": "e95378a8-ae27-4b63-b753-9db42014b006",
+      "result_id": "a1407804-cfe1-4d7e-85c0-0820bf9de68d"
+    },
+    {
+      "claim_id": "b4512771-3cf0-4c47-91cf-737dab6788fd",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "4c8e5661-e972-420e-af42-416121f1f396",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "f9f39879-0cd7-49b3-b875-f68c98ad5e30",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "ea6f57cc-da63-4b31-b5b5-67b6f3e6b96f",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "88d299e0-cd98-4db2-b610-311d939f1f6e",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "51d51177-6032-4298-8938-20e1bc87f76e",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "24b03e92-a8ea-41c3-acda-cc7ee609d2da",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "cfe2baf4-f14b-47fc-9752-461917d0c555",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "17061961-6c9c-4956-abb5-a905b1b6c9c6",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "61c62bcc-74cd-4fa5-9812-8490ab022b65",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "04a177ba-4b56-4858-add3-9f5929734f57",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "765f347a-3c2a-40c8-b1ba-c6770a031617",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "d712b58a-8fee-43dd-8a92-5a5fd11fb891",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "bf987402-fb6d-4db8-bdfc-5c98b9f3dfb1",
+      "result_id": "40158b1a-77f0-4d5d-94c1-9ae6becf9e19"
+    },
+    {
+      "claim_id": "75fc8c90-359a-408e-9541-a49c021eb756",
+      "result_id": "c50f5d58-12a6-4752-85a8-0d0153c09beb"
+    },
+    {
+      "claim_id": "3dbfd3bf-2dc3-4770-92d7-40641023f15a",
+      "result_id": "c50f5d58-12a6-4752-85a8-0d0153c09beb"
+    },
+    {
+      "claim_id": "614199a4-b762-4ad8-a810-2b22d9d041e7",
+      "result_id": "c50f5d58-12a6-4752-85a8-0d0153c09beb"
+    },
+    {
+      "claim_id": "0c59cff6-472b-4ad3-b1ff-4d94af7c47f8",
+      "result_id": "c50f5d58-12a6-4752-85a8-0d0153c09beb"
+    },
+    {
+      "claim_id": "717a4563-c1d6-4b76-b3a6-b08f5d7a6c00",
+      "result_id": "c50f5d58-12a6-4752-85a8-0d0153c09beb"
+    },
+    {
+      "claim_id": "2cb39ed9-2eca-414c-ac7e-06fc032af320",
+      "result_id": "85bc6814-58ab-4d91-9194-6dadcadbdcc3"
+    },
+    {
+      "claim_id": "8c7ae083-c9c4-401b-95d1-f41b0ec9c207",
+      "result_id": "85bc6814-58ab-4d91-9194-6dadcadbdcc3"
+    },
+    {
+      "claim_id": "b9abc665-86ff-45fa-b54a-dec5d94fba2b",
+      "result_id": "85bc6814-58ab-4d91-9194-6dadcadbdcc3"
+    },
+    {
+      "claim_id": "60aaef83-9920-48ee-aabb-15294ccb5ac1",
+      "result_id": "85bc6814-58ab-4d91-9194-6dadcadbdcc3"
+    },
+    {
+      "claim_id": "71fac464-51ab-49c9-bc4d-c32e1a4500df",
+      "result_id": "85bc6814-58ab-4d91-9194-6dadcadbdcc3"
+    },
+    {
+      "claim_id": "501aedc1-08b5-4d18-a7c9-7501def2eb84",
+      "result_id": "85bc6814-58ab-4d91-9194-6dadcadbdcc3"
+    },
+    {
+      "claim_id": "bdb04cb4-9f95-42dd-89f5-90b3912d682d",
+      "result_id": "85bc6814-58ab-4d91-9194-6dadcadbdcc3"
+    },
+    {
+      "claim_id": "910d090a-9ec3-4203-9807-091e264c7306",
+      "result_id": "85bc6814-58ab-4d91-9194-6dadcadbdcc3"
+    },
+    {
+      "claim_id": "b8700160-19b4-482e-a45e-267f462588d8",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "5bfcbc08-ede8-4085-bf33-0f3945cd1e27",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "ce82c6b1-225b-4e0d-ad8b-9e145038a39d",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "48d93c83-a8ea-441d-956f-fa12b0d7755b",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "c3060685-3324-43c8-9e6d-dd13e56b6828",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "7a685833-345b-4ceb-841f-762629ab3097",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "1052be60-891b-4944-a790-13432bc4aba1",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "c46970f2-37c1-4e68-8af5-31f4e09abcc8",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "a3f6bdb2-510e-4484-bd9b-8be1a10677e1",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "c585fa5c-3901-4cf0-a5da-fb8ba0c18ff3",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "b88d6918-9ab0-4e1d-a532-5b56945b0d28",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "a704e185-ae51-44e8-900b-8433f206e12e",
+      "result_id": "ba7b70c7-f9ed-40e6-ab8f-6c4753665791"
+    },
+    {
+      "claim_id": "7d7a227d-fb5c-443f-8bf7-5bf8e8c388e0",
+      "result_id": "c0806789-b06a-468d-97d9-ee7e026c64f3"
+    },
+    {
+      "claim_id": "b6a990e4-72d7-4fcb-9512-98435657b87e",
+      "result_id": "c0806789-b06a-468d-97d9-ee7e026c64f3"
+    },
+    {
+      "claim_id": "5375fe29-a4e0-4f76-a9fd-49cb48c26e47",
+      "result_id": "c0806789-b06a-468d-97d9-ee7e026c64f3"
+    },
+    {
+      "claim_id": "5fcb75d1-d17f-4bf3-98d4-32a761373f8f",
+      "result_id": "c0806789-b06a-468d-97d9-ee7e026c64f3"
+    },
+    {
+      "claim_id": "75d9ecf5-674a-4a53-8c5a-aa95b6cd44b5",
+      "result_id": "905f9db4-0d9a-4e44-97a8-699ca753e21b"
+    },
+    {
+      "claim_id": "87de63f4-6335-48f0-8d0d-4bf4d605ae52",
+      "result_id": "905f9db4-0d9a-4e44-97a8-699ca753e21b"
+    },
+    {
+      "claim_id": "d2650480-4b8c-404e-a6a8-702df8da24de",
+      "result_id": "905f9db4-0d9a-4e44-97a8-699ca753e21b"
+    }
+  ],
+  "comparisons": []
+}

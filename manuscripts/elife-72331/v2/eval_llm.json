@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Deep CNNs trained with co-registered multi-contrast MRI and auto-fluorescence (AF) histological data can predict AF staining intensity from MRI signals with high accuracy (R\u00b2=0.71, AUC>0.94 for 60-subject training), demonstrating enhanced specificity compared to conventional MRI markers. The network primarily relies on multi-contrast MR signals rather than spatial patterns within patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C34 provide strong quantitative evidence (R\u00b2=0.71, AUC>0.94) supported by Figure 1D-F. Claims C36-C38 demonstrate through t-SNE analysis and modified patch experiments that the network learns voxel-level relationships. The convergence of visual, quantitative, and mechanistic evidence strongly supports this core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Transfer learning from MRH-AF to predict neurofilament (NF) and myelin basic protein (MBP) staining produces virtual histology maps with closer visual congruence to reference histology than conventional MRI markers (FA, MTR, DR), with strong correlations (R\u00b2=0.61/0.73) and improved ROC performance. The networks adaptively weight different MRI contrasts based on regional tissue properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 provide visual and quantitative evidence from Figure 3A-C showing superior performance. Claims C54-C59 demonstrate region-specific behavior with appropriate statistical support (p<0.005, Figure 3G). The transfer learning approach is well-justified given limited histological training data (C48-C49). Multiple lines of evidence converge to support enhanced specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C21",
+      "C22",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Perturbation analysis reveals that individual MRI contrasts contribute differentially to network predictions, with T2 and MT images showing highest contributions. Using only the top 38 of 67 MR images (57% imaging time) maintains comparable quality and diagnostic power (AUC=0.937 vs 0.940).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by systematic perturbation experiments shown in Figure 2C-F with appropriate quantitative metrics (RMSE, SSIM, ROC). The cumulative contribution analysis (C45) provides clear evidence for optimization potential. Statistical comparisons confirm no significant loss in performance with reduced inputs, validating the practical application of this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "MRH-MBP applied to dysmyelinating shiverer mouse brains (not included in training) generates maps resembling MBP histology with slightly stronger correlation (R\u00b2=0.91 vs 0.81) and small improvement in specificity compared to MTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 demonstrate generalization to pathological conditions with appropriate controls (n=5/5). Figure 4A-D provides visual and quantitative support. However, the improvement over MTR is modest (R\u00b2=0.91 vs 0.81), and C89 acknowledges this doesn't validate performance on more complex pathologies. The result is supported but with recognized limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "MRH-Nissl network utilizing OGSE and PGSE diffusion MRI data generates maps with good agreement to Nissl staining, showing higher sensitivity/specificity than PGSE alone. PGSE and OGSE contribute equally, and the method successfully identifies heterotopia in sas4-/-p53-/- mutant brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by Figure 5A-E with appropriate ROC analysis and contribution measurements. C69 demonstrates application to pathological tissue. The equal contribution of PGSE and OGSE (C68) is clearly shown in Figure 5E. This extends the method to a different histological target with consistent methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study used 6 ex vivo C57BL/6 mouse brains with 67 3D MRI images each, co-registered with 100 AF datasets from Allen Mouse Brain Connectivity Atlas. A 30-residual-block CNN (MRH-AF) was trained using 40,000 3\u00d73 patches, with mismatches between MRI and AF mostly within 1-2 voxels. The 3\u00d73 patch size accommodates residual registration errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 describe the experimental design with specific numbers and methods. C27 is quantitatively supported by Figure 1\u2014figure supplement 1B (70% within 1 pixel, 95% within 2 pixels). C30 is validated by Figure 1\u2014figure supplement 1F-H. The methodology is clearly documented with appropriate sample sizes for proof-of-concept.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Network performance depends on sufficient training data (declining with <1 subject) and architecture depth (30 vs 10 residual blocks). Using 67 raw MRI images outperforms 5 MRI parameter maps (T2, MTR, FA, MD, MK), and deep learning outperforms polynomial fitting, suggesting raw data contains information not captured by standard parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C39-C41 are supported by systematic comparisons in Figures 1D-F and 2A-B with appropriate metrics (RMSE, SSIM, AUC). C42 is a reasonable inference from the observation that 5 parameters produce inferior results. The comparisons are fair and demonstrate the value of the deep learning approach over simpler alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The virtual histology resolution is limited by input MRI resolution (~100 \u03bcm/voxel). The approach has potential applications in mouse disease models but cannot be directly applied to human MRI due to tissue and protocol differences. The co-registered dataset provides a testbed for evaluating new MRI contrasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C72 is supported by Figure 3\u2014figure supplement 4 showing resolution analysis. However, C73-C78 are largely speculative claims about potential applications (evidence_type: SPECULATION). While the limitations (C74) are appropriately acknowledged, the practical utility claims lack experimental validation. These represent reasonable expectations but not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The training dataset characteristics (adult myelinated mouse brains) influence network behavior, with the axon-prediction network placing substantial weight on myelin-sensitive contrasts. Future improvements would require broader training data including unmyelinated brains and diverse pathological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C85-C86 describe and interpret the training data characteristics with support from contribution analysis. C87-C89 are reasonable speculations about how different training data would affect performance, appropriately framed as future work. C89 explicitly acknowledges the limitation that shiverer results don't validate performance on complex pathologies. The self-critical assessment is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The MRH networks use a 64-layer CNN architecture with 30 residual blocks (64 neurons each, 3\u00d73 filters, ReLU activation, skip connections) implemented in MATLAB. Training used stochastic gradient descent (momentum=0.9, initial learning rate=0.1, batch size=128) with early stopping. Transfer learning for NF/MBP used reduced learning rate (0.0001) and fine-tuned only the last 3 layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C122 provide detailed methodological specifications that are internally consistent and follow standard deep learning practices. The architecture choices (residual blocks, skip connections) are appropriate for the task. Training procedures include proper validation and early stopping. Transfer learning approach is standard and well-justified. Sufficient detail is provided for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Ex vivo MRI was performed on perfusion-fixed mouse brains using a 7T scanner with 67 3D images (T2, MT, diffusion) at 0.06mm isotropic resolution after interpolation. Total imaging time was ~12 hours per specimen. Images were registered to Allen Reference Atlas using LDDMM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 describe standard experimental procedures with appropriate institutional approvals, specific technical parameters, and established registration methods (LDDMM with citations). The methods are clearly documented and follow accepted practices in the field. Sample preparation and imaging protocols are appropriate for the study objectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Contribution analysis used perturbation method (adding Rician noise to individual inputs) to measure sensitivity. Simulated mismatches used Gaussian displacement fields (Chi distribution, 2 DOF) matching observed registration errors. Statistical testing used unpaired t-tests (p<0.05) in Prism, with bar graphs showing mean\u00b1SD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 describe analysis methods with appropriate citations (Olden et al., 2004). The perturbation approach is valid for assessing input importance. Simulated mismatch analysis appropriately matches observed error distributions (C131: 70% within 1 pixel). Statistical methods (C128-C130) are standard and appropriate for the comparisons made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "MRI provides non-invasive brain imaging with versatile contrasts but inferring histopathological information remains challenging due to lack of direct links between MRI signals and cellular structures, limiting diagnostic value and creating uncertainty in determining pathological events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C10 represent established knowledge about MRI capabilities and limitations, supported by citation to Lerch et al., 2017. These are accurate characterizations of the field's challenges that motivate the study. The claims are well-established and provide appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Multi-modal MRI promises enhanced specificity by combining contrasts (MT, T2, diffusion) targeting different aspects of cellular structures, but progress is hindered by lack of realistic tissue models and validation data. Deep learning offers advantages as a data-driven approach not limited by specific models, with 3D MRI providing ample training instances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 accurately describe the state of the field with appropriate citations (Mangeat et al., 2015; Cercignani and Bouyagoub, 2018). C15-C18 present the study's hypothesis and rationale, supported by citations to deep learning applications (Christiansen et al., 2018; Leynes et al., 2018; Ounkomol et al., 2018). The motivation is well-grounded in prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Using MRI parameters as network inputs offers broader applicability without specific protocols, though with reduced accuracy. Future improvements could include advanced network architectures, interpretability methods (deep Taylor decomposition, Grad-CAM), and translation to in vivo/clinical applications, though deep learning cannot replace physics understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C43 and C95-C97 mix demonstrated results (C96 supported by Figure 2) with speculations about future improvements. C90-C92 appropriately cite relevant methods but don't demonstrate their application. C93-C94 acknowledge real limitations. These represent reasonable future directions but are largely speculative rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Previous work on MRI-histology relationships includes new contrasts, tissue models, statistical methods, and registration techniques, but co-registered data and realistic models remain scarce. Perfect co-registration is challenging due to tissue deformation, though serial two-photon tomography and tissue clearing may help. Remaining mismatches can be accommodated by appropriate patch sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 accurately characterize prior work with appropriate citations. C79-C81 describe known challenges and existing solutions with citation support (Kuan et al., 2015). C82 is speculative but appropriately framed. C83 is supported by Figure 1\u2014figure supplement 1 and citation to Rivenson et al., 2019. The literature review and technical challenges are accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "NF and MBP are commonly used markers for axons and myelin. Due to limited histological images, transfer learning was adopted, fixing most MRH-AF layers while training the last 3 layers. Histological images from Allen Brain Atlas were preprocessed to remove artifacts and normalize ventricle intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C47 represents established knowledge. C48-C49 describe the transfer learning approach with citation support (Weiss et al., 2016), which is appropriate given data limitations. C106-C109 describe data preprocessing steps that are reasonable and documented in Figure 3\u2014figure supplement 1. The methodological choices are justified and clearly explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "70% of pixel displacements between MRI and histology are within one pixel (0.0625 mm) and 95% within two pixels (0.125 mm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C131 provides specific quantitative measurements of registration accuracy supported by Figure 1\u2014figure supplement 1B showing the distribution analysis. This validates the quality of co-registration and justifies the 3\u00d73 patch size choice. The measurement is direct and well-documented.",
+    "result_type": "MINOR"
+  }
+]

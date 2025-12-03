@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Three independent point mutations in IHF genes (ihfA and ihfB) were isolated in F. perrara, all located in DNA-binding regions. Two mutations (Pro82Lys in ihfB and Pro83Lys in ihfA) were identical but in different subunits, and a third mutation (Lys38Ser in ihfA) was also identified. Homology modeling suggests these mutations impact DNA-binding properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26, C28, C29, and C30 are well-supported by genome sequencing data and homology modeling (Figure 1C, 1D). The independent isolation of three mutations in DNA-binding regions of IHF provides strong evidence for their functional significance. The structural analysis using homology modeling adds credibility to the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C63"
+    ],
+    "result": "IHF mutants abolished production of an aryl polyene (APE) metabolite responsible for the yellow colony morphotype of F. perrara. The wt produces yellow colonies while ihfA* mutants produce white colonies. HPLC-MS and NMR analyses identified the APE structure (m/z 323.1647), which was present in wt but only at trace amounts in ihfA*.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C25, C34-C40, and C63 are strongly supported by multiple lines of evidence including visual observation (Figure 1A, 1B), HPLC-MS data (Figure 2B, 2C), NMR spectroscopy (Figure 2D and supplements), and comparison with E. coli CFT073 (Figure 2\u2014supplement 11). The \u0394apeA-R mutant also produced white colonies, confirming the APE pathway's role in pigmentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C66"
+    ],
+    "result": "The ihfA* mutant shows a severe colonization defect in microbiota-free bees. At day 10 post-colonization, wt induced scab in 80% of bees with median CFU of 9.56\u00d710^6, while ihfA* showed no scab phenotype and 50% of bees had undetectable colonization (<500 CFU). Time-course experiments showed delayed colonization dynamics for ihfA*, reaching only ~10^5 CFU by day 22 compared to 10^7 for wt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41-C48, and C66 are well-supported by CFU quantification (Figure 3C, 3D), visual scab assessment (Figure 3A, 3B), and qPCR data (Figure 3\u2014supplement 1). Statistical analyses (Wilcoxon rank-sum tests with p<0.0001) confirm significant differences. Multiple independent experiments and time points strengthen the conclusions. Sample sizes are adequate (n=18-36 per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "RNAseq analysis revealed that IHF affects expression of 358 genes (237 upregulated, 121 downregulated in wt vs ihfA*). Upregulated genes include potential colonization factors: T6SS components, colibactin biosynthesis, Flp pili, APE biosynthesis, and RTX toxin. COG categories for secretion, extracellular structures, and secondary metabolite biosynthesis were significantly enriched. 64% of upregulated genes were F. perrara-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C49-C55 are supported by comprehensive RNAseq data (Figure 4) with appropriate statistical thresholds (log2-fold change >|2|, p<0.05, FDR<5%). The enrichment analysis using Fisher's exact test (BH-adjusted p<0.01) is appropriate. The consistency between RNAseq results and metabolite data (APE production) provides validation. The high proportion of F. perrara-specific genes among upregulated genes is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In vivo RNAseq at days 5 and 10 post-colonization showed differential expression of 260 and 298 genes respectively compared to in vitro growth. COG category 'Carbohydrate transport and metabolism' was enriched at both timepoints. Most T6SS, APE biosynthesis, pilus, and iron uptake genes were expressed in vivo at similar levels to in vitro, though Clb genes showed lower expression in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by in vivo RNAseq data (Figure 5) with appropriate statistical analysis (quasi-likelihood F-test, p<0.05, FDR<5%). The TPM comparisons across conditions provide quantitative validation. The finding that IHF-regulated genes are expressed in vivo is important for establishing their relevance to colonization. Four biological replicates per condition strengthen the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Six gene-deletion mutants of IHF-regulated genes showed distinct colonization phenotypes. \u0394hcp1 colonized like wt and induced scab (15/20 bees). \u0394clbB showed ~2-fold reduced colonization but induced scab (19/20 bees). \u0394hcp2 and \u0394hcp1/\u0394hcp2 reached similar levels as \u0394clbB but never induced scab. \u0394apeA-R showed variable colonization. \u0394pilE had the strongest defect with only 5/20 bees showing detectable colonization and no scab.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C65, C67-C73 are well-supported by CFU data (Figure 6A), FISH microscopy (Figure 6B), and electron microscopy (Figure 6\u2014supplement 3C). Statistical analyses (Wilcoxon rank-sum tests) confirm significant differences. The dissociation between colonization levels and scab phenotype for \u0394hcp2 mutants is particularly interesting and well-documented. Sample sizes (n=18-20 per strain) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "FISH microscopy showed that wt, \u0394hcp1, \u0394hcp2, \u0394hcp1/\u0394hcp2, \u0394clbB, and \u0394apeA-R all colonized the pylorus region forming dense biofilms in crypts. ihfA* and \u0394pilE showed no bacteria in analyzed sections. Dark scab material was observed for \u0394clbB, \u0394hcp1, and \u0394apeA-R but not for \u0394hcp2 and \u0394hcp1/\u0394hcp2, despite similar colonization patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by FISH microscopy data (Figure 6B, Figure 6\u2014supplements 6 and 7). The spatial localization data confirms that the inability of \u0394hcp2 mutants to induce scab is not due to altered gut localization. The consistency between FISH observations and CFU/visual scab assessments strengthens the conclusions. However, only one gut per genotype was analyzed by FISH, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In the presence of BeeComm_002 (13-strain synthetic community), five strains showed no significant colonization changes. However, \u0394hcp2 showed 7-fold decreased colonization (p=0.002), while \u0394hcp1/hcp2 (p=0.029) and \u0394apeA-R (p=0.004) failed to colonize most bees. Wt colonized independently of BeeComm_002 presence (p=0.899).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by qPCR quantification (Figure 7) with appropriate statistical analyses (Wilcoxon rank-sum tests). The differential effects of community presence on different mutants provide important insights into colonization mechanisms. Two independent experiments strengthen the findings. However, the experimental design favored F. perrara (13-fold more abundant than individual community members), which the authors acknowledge as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "T6SS-2 mutants (\u0394hcp2 and \u0394hcp1/\u0394hcp2) colonized at high levels but did not induce scab phenotype, suggesting an unexpected role in bacteria-host interaction. While T6SS typically function in interbacterial warfare, some effectors can target eukaryotic cells. The effector repertoires differ between bee gut symbionts, suggesting F. perrara T6SS-2 effectors may target the host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C95-C99 present an interesting observation (\u0394hcp2 mutants colonize but don't induce scab) supported by data in Figure 6. However, the mechanistic explanation remains speculative (C99). While the authors cite literature showing T6SS can target eukaryotic cells (C97), direct evidence that F. perrara T6SS-2 targets the host is lacking. The hypothesis is reasonable but requires additional experiments (e.g., identifying specific effectors, testing their activity on host cells) to be considered supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The ihfA* mutant formed larger colonies than wt on mTYG agar but showed no significant difference in liquid culture growth (p=0.097). However, ihfA* cells were slightly longer than wt cells (Kolmogorov-Smirnov test p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by visual observations (Figure 1A, 1B), growth curve data (Figure 1\u2014supplement 2A), and microscopy measurements (Figure 1\u2014supplement 2B, 2C). The statistical analyses are appropriate (permutation test for growth curves, Kolmogorov-Smirnov test for cell length). The lack of significant difference in liquid culture (p=0.097) is borderline and could be considered marginally non-significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Among 121 downregulated genes in wt vs ihfA*, only COG category O ('Posttranslational modification, protein turnover, chaperones') was statistically enriched (Fisher's exact test, BH-adjusted p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by RNAseq data and enrichment analysis (Figure 4\u2014source data 2). The statistical approach is appropriate. However, the biological significance of this enrichment is not explored in detail, making this a descriptive finding rather than a mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Both \u0394hcp1/\u0394hcp2 and \u0394pilE strains had lower CFU counts than wt when OD600 was corresponded to CFU counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by data in Figure 6\u2014supplement 4. This is a technical observation about the relationship between OD600 and CFU for different strains, which is important for experimental design but not a primary biological finding. Statistical analysis using a linear model with negative binomial distribution is appropriate for count data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The \u0394pilE mutant had the strongest colonization defect, likely because pili mediate adhesion to the host epithelium, allowing F. perrara to persist and replicate in the pylorus/ileum region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by colonization data (Figure 6A) and electron microscopy confirming absence of pili (Figure 6\u2014supplement 3C). The interpretation that pili mediate adhesion is reasonable based on established knowledge about pili function in other bacteria. However, direct adhesion assays were not performed, making the mechanistic explanation somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Aryl polyenes can protect bacteria from reactive oxygen species produced by insects as part of the host immune response. Time-course experiments showed bacterial numbers were much lower than the inoculum in early colonization, suggesting a population bottleneck.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by citations to previous literature. Claim C88 is supported by time-course data (Figure 3D) showing low bacterial numbers in the first few days post-inoculation. The inference about a population bottleneck is reasonable but the role of APE in protecting against oxidative stress during this bottleneck is speculative and not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Deletion of clbB (essential for colibactin biosynthesis) did not affect scab development and had only weak impact on colonization (~2-fold reduction). While colibactin induces DNA damage in eukaryotic cells (shown previously in E. coli and F. perrara), it is not responsible for the scab phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by colonization and scab data for \u0394clbB (Figure 6A). The conclusion that colibactin is not causing the scab phenotype is well-supported by the observation that \u0394clbB induces scab in 19/20 bees despite lacking functional colibactin biosynthesis. This contradicts the initial hypothesis but is a clear result. Claims C90-C91 about colibactin's genotoxic activity are supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Bees with <10^6 bacteria typically do not develop visible scab at day 10 post-colonization, suggesting a threshold is needed. However, not all bees with high colonization levels developed scab, indicating high loads are necessary but not sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by observations across multiple experiments (Figures 3, 6, 7). The pattern is consistent: low colonization rarely produces scab, but high colonization doesn't always produce scab (especially for \u0394hcp2 mutants). This is an important observation about the relationship between bacterial load and phenotype, though the mechanistic basis remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Both \u0394hcp2 and \u0394hcp1/hcp2 mutants showed increased colonization defects in the presence of BeeComm_002, raising the hypothesis that T6SS-2 is important for F. perrara to interact with other gut symbionts (Snodgrassella and Gilliamella). The experimental design favored F. perrara (13-fold more abundant than individual community members).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 is supported by data in Figure 7. However, claim C101 is speculative - while the data suggest T6SS-2 is important in the presence of other bacteria, the specific interaction partners and mechanisms are not identified. Claim C102 acknowledges an important experimental limitation that could affect interpretation. Additional experiments with more balanced inocula or specific pairwise interactions would be needed to support the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In vivo RNAseq showed upregulation of metabolic genes for tryptophan biosynthesis, sugar transport, and iron uptake during gut colonization. This is consistent with findings in S. alvi. F. perrara specifically upregulates only the tryptophan biosynthesis pathway, suggesting specific demand for this amino acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by in vivo RNAseq data (Figure 5). The comparison with S. alvi (C104) is supported by citation. The observation that only tryptophan biosynthesis is upregulated (not other amino acid pathways) is interesting and well-documented, though the biological reason for this specificity is not explored experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "IHF is important for regulating host colonization factors, but whether IHF directly regulates the identified genes remains unclear. In other bacteria (V. fluvialis, D. zeae), IHF directly regulates T6SS and virulence factors. In F. perrara, transcriptional regulators BasR and DksA were downregulated in wt vs ihfA*, suggesting indirect regulation may occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by the overall findings of the study. Claims C107-C108 are supported by citations showing IHF can directly regulate similar genes in other bacteria. Claims C109-C110 are supported by RNAseq data (Figure 4) showing BasR and DksA downregulation. The acknowledgment that direct vs. indirect regulation is unclear is appropriate - this would require additional experiments (e.g., ChIP-seq, promoter binding assays) to resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Important gut colonization factors of F. perrara were identified and shown to be regulated by IHF. The wide occurrence of these genes in host-associated bacteria suggests similar roles in other environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is a summary statement well-supported by the overall findings of the manuscript. Claim C112 is more speculative - while the genes are indeed widespread, their functional roles in other bacteria would need to be tested experimentally. This is presented as a hypothesis for future work rather than a definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C27"
+    ],
+    "result": "Background information about F. perrara and honey bee gut microbiota: F. perrara is a widely distributed proteobacterium that colonizes the hindgut pylorus of honey bees and causes melanization (scab phenotype). The bee gut microbiota is relatively simple (8-10 genera) with distinct spatial niches. F. perrara's genome contains genomic islands including colibactin, T6SS, and pili genes. IHF is a conserved DNA-binding protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10, C12-C22, and C27 are background information supported by citations to previous literature. These establish the context for the current study. Claim C11 (IHF may regulate colonization in other symbionts) is speculative but reasonable based on IHF conservation. These are primarily literature-based claims rather than novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

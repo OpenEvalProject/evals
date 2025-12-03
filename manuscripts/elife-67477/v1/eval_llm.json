@@ -1,0 +1,121 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C71",
+      "C72"
+    ],
+    "result": "Inhibitory TMS over the right FEF causally affects value-based decision making by reducing the effect of gaze dwell time on choice and increasing reaction times, specifically in high-value trials. This demonstrates a causal role for the right FEF in attention-based value modulation during choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C71-C72 are well-supported by converging evidence from behavioral analyses showing differential effects in high vs. low OV conditions. The experimental design with vertex TMS control, adequate sample size (n=45), and statistical significance (p<0.001 for key interactions) provide strong causal evidence. The specificity to high-value trials supports the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C40",
+      "C41"
+    ],
+    "result": "FEF TMS had minimal effects on basic gaze patterns. Subjects showed a strong leftward first-fixation bias (69.3%), but first fixations were at chance for selecting the higher-rated item (50.2%), and FEF TMS did not significantly alter dwell times compared to vertex TMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C40, and C41 are supported by statistical tests with appropriate controls. The finding that TMS did not affect dwell times (all p>0.2) is important for ruling out confounds, though the leftward bias interaction with OV (p=0.008) suggests some subtle gaze effects that were appropriately accounted for in subsequent modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The difference in dwell-time effects on choice between low and high OV conditions was eliminated in FEF-TMS subjects, suggesting disruption of the multiplicative effect of gaze on value processing. The vertex group showed stronger dwell-time effects in high vs. low OV (\u03b2=0.622, p<0.001), but this difference was eliminated by FEF TMS (interaction \u03b2=-0.709, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is strongly supported by the logistic regression analysis with appropriate statistical power and highly significant interaction effects. The elimination of the OV difference specifically in the FEF group provides compelling evidence for the multiplicative mechanism, though the authors acknowledge this is correlational evidence that requires computational modeling for mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Kolmogorov-Smirnov tests revealed no RT distribution differences between TMS groups for low-OV trials (D=0.022, p=0.71) but significant differences for high-OV trials (D=0.064, p=0.005). Both groups showed significant RT differences between high and low OV, though numerically larger in the vertex group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C51 present K-S test results that support the main hypothesis, but the authors explicitly note these tests don't account for repeated measures, limiting their interpretability. The mixed-effects regression showed only marginal significance (p=0.15) for the TMS\u00d7OV interaction on RT, making this evidence suggestive but not definitive. Additional hierarchical modeling would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Hierarchical diffusion modeling revealed that FEF TMS specifically increased the gaze discount parameter \u03b8 (vertex: 0.744, FEF: 0.902, p=0.007 at subject level) without affecting threshold separation, non-decision time, or additive gaze effects. This indicates FEF TMS specifically disrupted multiplicative value discounting during evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 are well-supported by rigorous Bayesian hierarchical modeling using HDDM with appropriate convergence diagnostics (Gelman-Rubin r-hat<1.1). The selective effect on \u03b8 while other parameters remained unchanged provides strong mechanistic evidence. However, the group-level \u03b8 difference was only marginal (p=0.89), though subject-level analysis was significant (p=0.007), suggesting some uncertainty in the population-level effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66",
+      "C67"
+    ],
+    "result": "The FEF group showed counteracting spatial biases: a leftward starting-point bias (z=0.506 vs 0.491, p=0.001) and a rightward drift-rate bias (\u03b2\u2080=-0.018 vs 0.017, p=0.001). These opposite-direction biases do not produce net behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by significant statistical tests from the HDDM analysis. The interpretation that these biases cancel out (C67) is logical given they affect choice probability in opposite directions, though this remains somewhat speculative. The authors appropriately note these findings are difficult to fully explain and may warrant further investigation, suggesting honest uncertainty about the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "FEF TMS reduces the effect of gaze on choice in high-value trials even when accounting for observed gaze patterns and spatial biases, indicating effects on value discounting independent of effects on gaze patterns themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 represent well-justified conclusions from the comprehensive modeling approach that explicitly accounted for gaze patterns, spatial biases, and other confounds. The convergence of behavioral and computational evidence, along with robustness checks (splitting by gaze bias, trial number effects), strongly supports this interpretation of mechanism-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C73"
+    ],
+    "result": "The findings provide neural validation for the aDDM's central assumption that overt attention amplifies subjective values multiplicatively, leading to larger effects on choice for higher-valued items. The value-dependent effects of FEF TMS validate the multiplicative nature of the aDDM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C73 are supported by the convergence of behavioral and computational evidence showing value-dependent (multiplicative) rather than value-independent (additive) effects. The experimental design specifically tested this prediction by contrasting high and low OV conditions, and results consistently supported the multiplicative mechanism. However, this validates one specific model prediction rather than the entire aDDM framework.",
+    "result_type": "MAJOR"
+  }
+]

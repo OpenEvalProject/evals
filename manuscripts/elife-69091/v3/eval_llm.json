@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Cell-surface binding assays using flow cytometry demonstrated that RBD binds to ACE2-expressing HEK293 cells with a Kd of approximately 50 nM. Confocal microscopy confirmed co-localization of fluorescently labeled RBD with ACE2-mCherry on the cell surface, validating the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by confocal microscopy (Figure 1F) and flow cytometry data (Figures 1G-H) showing consistent Kd values of ~50 nM from both saturation and competition binding assays. The methodological approach is appropriate for measuring cell-surface binding affinity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Competition binding assays revealed that the N501Y mutation is the key residue change responsible for increased binding affinity to cell-surface ACE2, showing a fourfold greater affinity than wild-type RBD. The triple mutant (N501Y/K417N/E484K) showed affinity similar to wild-type, as K417N decreased binding while E484K contributed less than N501Y, with effects canceling out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C93-C96 are supported by competition binding data (Figure 1H) showing N501Y has the strongest effect on binding affinity. The interpretation that K417N and E484K effects cancel each other is a reasonable inference from the data showing RBDTriple has similar affinity to wild-type despite containing N501Y.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Surface plasmon resonance (SPR) measurements demonstrated that RBDN501Y and RBDTriple exhibit a 10-fold increase in affinity for ACE2 compared to wild-type RBD, resulting from a significantly lower off-rate (koff) and slightly higher on-rate (kon). Single-point mutants K417N and E484K had less impact on binding than N501Y.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are well-supported by SPR data (Figure 2, Figure 2\u2014figure supplement 1) showing quantitative kinetic parameters. The 10-fold affinity increase is clearly demonstrated with appropriate fitting to a 1:1 binding model. The conclusion that N501Y is primarily responsible for slowing dissociation is supported by comparative kinetics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "AFM-SMFS measurements quantified binding probability and unbinding forces for RBD-ACE2 interactions on living cells. RBDN501Y (14% binding probability, 57\u00b118 pN) and RBDTriple (11.2%, 56\u00b112 pN) showed higher binding probability and unbinding force than wild-type RBD (3.3%, 49\u00b111 pN). Single mutants K417N (40\u00b111 pN) and E484K (41\u00b111 pN) showed weaker unbinding forces than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C63 are supported by extensive AFM-SMFS data (Figure 3, supplementary figures) with large sample sizes (n=312-894 events). The measurements include appropriate controls (untransfected cells showing 1.7% interaction). The statistical differences between mutants and wild-type are clear, though the absolute force differences are modest (~10 pN, ~15% increase).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "AFM-SMFS data fitted to the Bell-Evans model revealed that the koff values for RBDN501Y (0.030\u00b10.017 s\u207b\u00b9) and RBDTriple (0.035\u00b10.024 s\u207b\u00b9) are approximately 2-3 fold slower than wild-type RBD (0.075\u00b10.048 s\u207b\u00b9), indicating more stable complexes for the mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by AFM-SMFS kinetics analysis (Figure 3F, Figure 3\u2014figure supplement 4) using the Bell-Evans model. The koff values are derived from loading rate-dependent force measurements at multiple pulling speeds. The error bars are substantial but the trend is clear and consistent with SPR data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Steered molecular dynamics (SMD) simulations revealed that the N501Y mutation introduces additional \u03c0-\u03c0 interactions with Y41 and \u03c0-cation interactions with K353 in ACE2. This results in elevated unbinding forces for RBDN501Y (499\u00b167 pN) and RBDTriple (521\u00b165 pN) compared to wild-type RBD (427\u00b158 pN). Distance measurements during pulling confirmed that Y501 maintains interactions with Y41 and K353 longer during dissociation than N501 in wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C82 are supported by SMD simulation data (Figure 4) with n=20 simulations per condition and statistically significant differences (p<0.001). The simulations provide molecular-level mechanistic insights explaining the experimental observations. However, the pulling speed (5 \u00c5/ns = 0.5 m/s) is much faster than experimental speeds (5 \u00b5m/s), which is acknowledged but limits quantitative comparison of absolute force values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C84",
+      "C85",
+      "C103",
+      "C116"
+    ],
+    "result": "Integrating cell-surface binding assays, SPR, AFM-SMFS, and molecular dynamics simulations, the study demonstrates that the N501Y mutation is the most significant contributor to enhanced RBD-ACE2 binding among the three mutations examined. The mutation results in 5-10 fold higher affinity through faster association, slower dissociation, increased binding probability, and higher unbinding force, mediated by additional \u03c0-\u03c0 and \u03c0-cation interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C84-C85, C103, and C116 represent the main conclusions supported by convergent evidence from multiple complementary techniques. The 5-10 fold affinity increase is consistently observed across SPR (10-fold) and cell-based assays (4-fold). The mechanistic explanation from simulations is consistent with experimental observations. This represents a well-supported major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C104",
+      "C105",
+      "C106",
+      "C119"
+    ],
+    "result": "The authors conclude that the reinforced RBD-ACE2 interaction from the N501Y mutation plays an essential role in higher transmission rates of SARS-CoV-2 variants, potentially by lowering the effective virion concentration required for cell entry and enabling tighter binding that facilitates membrane fusion. They further suggest this will make current vaccines less effective against N501Y-containing variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C104-C106, and C119 represent speculative inferences about transmission and vaccine effectiveness based on the binding data. While the enhanced binding affinity is well-demonstrated, the causal link to increased transmission is not directly tested. The relationship between binding affinity and infectivity/transmission is complex and involves many factors beyond RBD-ACE2 binding strength. The vaccine effectiveness claim (C119) is particularly speculative without direct neutralization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors discuss methodological differences between SPR (isolated proteins) and cell-based assays (AFM-SMFS, flow cytometry), noting that the more complex cell surface may account for relatively weaker binding observed at the cellular level. They provide evidence that ACE2 was not pulled from the membrane during AFM measurements based on force magnitudes (~50 pN vs ~100 pN for membrane extraction) and consistency with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 provide appropriate methodological discussion and controls. The comparison with membrane extraction forces (C91) and previous studies (C89, C92) supports the interpretation that specific RBD-ACE2 unbinding was measured rather than membrane protein extraction. The speculation about non-specific interactions (C87) is reasonable given the control data showing ~5% binding to untransfected cells (C88).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C100",
+      "C102",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The manuscript provides background information on SARS-CoV-2 variants, including that B.1.1.7, B.1.351, and P.1 variants share the N501Y mutation and appear more infectious, with specific detection dates and geographic origins. The alpha variant became the most common lineage in the US by June 2020, and other variants (delta, epsilon, kappa) emerged during manuscript revision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C30-C33, C100, C102, C107-C109 represent established epidemiological and genomic knowledge about SARS-CoV-2 variants, supported by appropriate citations. These provide necessary context for the study but are not original findings. Note: C107 contains a likely error (June 2020 should be 2021 for alpha variant dominance in US).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors cite recent data suggesting FDA-authorized mRNA vaccines maintain high neutralization against B.1.1.7 but lower neutralization against B.1.351, and that some neutralizing antibodies in clinical trials lost efficacy against B.1.351. They infer that mutations K417N and E484K may contribute to antibody escape and that higher antibody titers or higher-affinity antibodies are needed to compete with RBDN501Y-ACE2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C36 cite external data without providing primary evidence in this manuscript. Claims C117-C118 are reasonable inferences based on the binding data and cited literature, but the manuscript does not directly test antibody neutralization or epitope recognition. The connection between enhanced RBD-ACE2 binding and antibody requirements is logical but not experimentally validated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors recommend that future RBD mutations should be under surveillance, noting that SARS-CoV-2 is rapidly evolving and other RBD mutations might increase ACE2 binding similarly to N501Y. They suggest future dangerous mutations causing higher transmission are possible and that continued surveillance and evaluation of mutated strains is necessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C110-C113 represent reasonable recommendations and speculation based on the findings. The recommendation for surveillance (C8, C113) is a logical public health implication of the results. The speculation about future mutations (C110, C112) is appropriately cautious and acknowledges uncertainty. These are appropriate forward-looking statements rather than testable claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C37",
+      "C49",
+      "C50",
+      "C51",
+      "C64",
+      "C65",
+      "C83",
+      "C99",
+      "C111",
+      "C114",
+      "C115"
+    ],
+    "result": "The manuscript provides extensive background on coronavirus biology, including SARS-CoV-1 and MERS-CoV epidemiology, coronavirus classification, spike protein structure and function, viral entry mechanisms, and AFM-SMFS methodology. This establishes the scientific context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C29, C37, C49-C51, C64-C65, C83, C99, C111, C114-C115 represent established scientific knowledge appropriately cited from the literature. These provide necessary background and methodological context but are not original findings of this study. The information is accurate and well-referenced.",
+    "result_type": "MINOR"
+  }
+]

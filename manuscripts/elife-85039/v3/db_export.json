@@ -1,0 +1,1272 @@
+{
+  "submission": {
+    "id": "a2d373b8-62f6-456d-b76d-59bb2d60a669",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:38:29.221020Z",
+    "updated_at": "2025-12-03T20:38:29.221020Z"
+  },
+  "content": [
+    {
+      "id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "submission_id": "a2d373b8-62f6-456d-b76d-59bb2d60a669",
+      "content_type": "manuscript",
+      "content_text": "# Molecular basis of ligand-dependent Nurr1-RXR\u03b1 activation\n\n## Authors\n\n- Xiaoyu Yu<sup>1</sup> ([ORCID: 0000-0003-0549-9560](https://orcid.org/0000-0003-0549-9560))\n- Jinsai Shang<sup>2</sup>\n- Douglas J Kojetin<sup>2</sup> ([ORCID: 0000-0001-8058-6168](https://orcid.org/0000-0001-8058-6168)) \u2020\n\n### Affiliations\n\n1. Skaggs Graduate School of Chemical and Biological Sciences at Scripps Research Jupiter United States\n2. Department of Integrative Structural and Computational Biology, Scripps Research and UF Scripps Biomedical Research Jupiter United States\n3. Department of Molecular Medicine, Scripps Research and UF Scripps Biomedical Research Jupiter United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSmall molecule compounds that activate transcription of Nurr1-retinoid X receptor alpha (RXR\u03b1) (NR4A2-NR2B1) nuclear receptor heterodimers are implicated in the treatment of neurodegenerative disorders, but function through poorly understood mechanisms. Here, we show that RXR\u03b1 ligands activate Nurr1-RXR\u03b1 through a mechanism that involves ligand-binding domain (LBD) heterodimer protein-protein interaction (PPI) inhibition, a paradigm distinct from classical pharmacological mechanisms of ligand-dependent nuclear receptor modulation. NMR spectroscopy, PPI, and cellular transcription assays show that Nurr1-RXR\u03b1 transcriptional activation by RXR\u03b1 ligands is not correlated with classical RXR\u03b1 agonism but instead correlated with weakening Nurr1-RXR\u03b1 LBD heterodimer affinity and heterodimer dissociation. Our data inform a model by which pharmacologically distinct RXR\u03b1 ligands (RXR\u03b1 homodimer agonists and Nurr1-RXR\u03b1 heterodimer selective agonists that function as RXR\u03b1 homodimer antagonists) operate as allosteric PPI inhibitors that release a transcriptionally active Nurr1 monomer from a repressive Nurr1-RXR\u03b1 heterodimeric complex. These findings provide a molecular blueprint for ligand activation of Nurr1 transcription via small molecule targeting of Nurr1-RXR\u03b1.\n\n## Introduction\n\nNurr1 (nuclear receptor related 1 protein; NR4A2) is a nuclear receptor (NR) transcription factor that is essential for the development, regulation, and maintenance of several important aspects of mammalian brain development and homeostasis. Nurr1 is critical in the development of dopaminergic neurons that are critical for control of movement that degenerates in Parkinson\u2019s disease (PD) (Decressac et al., 2013; Jiang et al., 2005; Zetterstr\u00f6m et al., 1997). Recent studies show that Nurr1 is an important factor in the regulation of neuroinflammation and accumulation of amyloid beta that occurs in the pathogenesis of Alzheimer\u2019s disease (AD) (Jeon et al., 2020; Moon et al., 2019). These and other studies implicate small molecule activation of Nurr1 as a potential therapeutic strategy in aging-associated neurodegenerative and dementia disorders characterized by a loss of neuron function (Moutinho et al., 2019).\n\nAlthough NRs are considered to be ligand-dependent transcription factors, targeting Nurr1 activity with small molecule compounds has remained challenging. Nurr1 contains the conserved NR domain architecture (Weikum et al., 2018) including an N-terminal activation function-1 (AF-1) domain, a central DNA-binding domain (DBD), and a C-terminal ligand-binding domain (LBD). The classical model of ligand-induced NR transcriptional activation occurs via ligand binding to an orthosteric pocket located in the internal core of the LBD, which stabilizes the activation function-2 (AF-2 surface) in an active conformation resulting in high affinity coactivation interaction to the NR and recruitment of coactivator complexes resulting in chromatin remodeling and increased gene expression. However, crystal structures have revealed properties of Nurr1 LBD that suggest it may function in an atypical ligand-independent manner. The structures show no classical orthosteric ligand-binding pocket volume as well as a reversed \u2018charge clamp\u2019 AF-2 surface that prevents the LBD from interacting with typical NR transcriptional coregulator proteins (Wang et al., 2003). However, solution-state structural studies indicate the Nurr1 LBD is dynamic and can likely expand to bind endogenous ligands (de Vera et al., 2019). Although endogenous and synthetic ligands have been reported to bind and/or regulate Nurr1 activity (Bruning et al., 2019; de Vera et al., 2016; Kim et al., 2015; Rajan et al., 2020; Willems and Merk, 2022), some reported Nurr1 ligands function independent of binding to its LBD (Munoz-Tello et al., 2020). These and other observations have directed efforts to discover small molecule modulators of Nurr1 activity through other mechanisms.\n\nAn alternative way to modulate Nurr1 transcription activity is through ligands that target its NR heterodimer-binding partner, retinoid X receptor alpha (RXR\u03b1; NR2B1). Heterodimerizaton with RXR\u03b1 represses Nurr1 transcription on monomeric DNA response elements called NBREs (Aarnisalo et al., 2002; Forman et al., 1995) that are present in the promoter regions of genes that regulate dopaminergic signaling including tyrosine hydroxylase (Iwawaki et al., 2000; Kim et al., 2003). The observation that classical pharmacological RXR\u03b1 agonists enhance Nurr1-RXR\u03b1 transcription on NBREs (Aarnisalo et al., 2002; Forman et al., 1995; Perlmann and Jansson, 1995; Wallen-Mackenzie et al., 2003) inspired the discovery of RXR\u03b1-binding ligands that display biased activation of Nurr1-RXR\u03b1 heterodimers over other NR-RXR\u03b1 heterodimers or RXR\u03b1 homodimers (Giner et al., 2015; Morita et al., 2005; Scheepstra et al., 2017; Spathis et al., 2017; Sund\u00e9n et al., 2016). However, it remains poorly understood how classical RXR\u03b1 ligands (pharmacological agonists and antagonists) and Nurr1-RXR\u03b1 selective agonists impact the structure and function of Nurr1-RXR\u03b1.\n\nHere, we tested a set of RXR\u03b1 ligands in structure-function assays to determine their mechanism of action in regulating Nurr1-RXR\u03b1 transcriptional activity. Unexpectedly, our studies show that ligand activation of Nurr1-RXR\u03b1 transcription is not associated with classical pharmacological RXR\u03b1 agonism, which is defined by a ligand-induced increase in coactivator binding to the RXR\u03b1 LBD resulting in transcriptional activation. Instead, our data support a model whereby Nurr1-RXR\u03b1 activating ligands weaken Nurr1-RXR\u03b1 LBD heterodimer affinity via an allosteric protein-protein interaction (PPI) inhibition mechanism and release a transcriptionally active Nurr1 monomer from the repressive Nurr1-RXR\u03b1 heterodimer.\n\n## Results\n\n### RXR\u03b1 LBD is sufficient for repression of Nurr1 transcription\n\nTo confirm the published observation that RXR\u03b1 represses Nurr1 transcription (Aarnisalo et al., 2002; Forman et al., 1995), we performed a transcriptional reporter assay where SK-N-BE(2) neuronal cells were transfected with a full-length Nurr1 expression plasmid, with or without full-length or domain-truncation RXR\u03b1 expression plasmids, along with a 3xNBRE-luciferase plasmid containing three copies of the monomeric NBRE DNA-binding response element sequence upstream of luciferase gene (Figure 1a). Cotransfected RXR\u03b1 expression plasmid repressed Nurr1 transcription, and RXR\u03b1 truncation constructs show that the RXR\u03b1 LBD is both necessary and sufficient for repression of Nurr1 transcription (Figure 1b). A slight decrease in Nurr1 transcription is observed with the \u0394LBD construct though the effect is not statistically significant. These findings implicate an LBD-driven PPI mechanism with a negligible or minor role for the RXR\u03b1 DBD, which is consistent with published studies that showed full-length RXR\u03b1 does not bind to monomeric NBRE sequences via the RXR\u03b1 DBD, but does interact with Nurr1 that is bound to NBRE DNA sequences via a PPI (Sacchetti et al., 2002). Furthermore, RXR ligands can activate transcription of a Gal4 DBD-Nurr1 LBD fusion protein, but not a Gal4 DBD-Nurr1 LBD mutant (Nurr1dim) that cannot heterodimerize with RXR\u03b1 (Aarnisalo et al., 2002; Wallen-Mackenzie et al., 2003), which further implicates the RXR\u03b1 LBD in repression of Nurr1 LBD-mediated transcription.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig1-v3.jpg)\n\n**Figure 1.:** (a) General scheme of the cellular transcriptional reporter assay. (b) 3xNBRE-luciferase assay performed in SK-N-BE(2)-C cells; see Figure 1\u2014source data 1 for data plotted. Data are normalized to empty vector control (n=9 replicates), shown as a box and whiskers plot with boundaries of the box representing the 25th percentile and the 75th percentile, and representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using the Brown-Forsythe and Welch multiple comparisons test of the FL Nurr1 + RXR\u03b1 constructs conditions relative to FL Nurr1 control condition.\n\n### RXR\u03b1 ligands display graded Nurr1-RXR\u03b1 transcriptional activation\n\nWe assembled a set of 14 commercially available RXR\u03b1-binding ligands (Figure 2) described in the literature as pharmacological RXR\u03b1 agonists and antagonists; a mixed activity PPAR\u03b3-RXR selective modulator (LG100754) that antagonizes RXR homodimers but agonizes PPAR-RXR and RAR-RXR heterodimers (Lala et al., 1996) and two RXR\u03b1-binding compounds (BRF110 and HX600) described as selective agonists of Nurr1-RXR\u03b1 heterodimers (Morita et al., 2005; Spathis et al., 2017). To determine how the ligands influence Nurr1-RXR\u03b1 transcription, we performed a transcriptional reporter assay where SK-N-BE(2) neuronal cells were transfected with full-length Nurr1 and RXR\u03b1 expression plasmids and the 3xNBRE-luc plasmid then treated with compound or DMSO control (Figure 3a). Compounds reported as RXR\u03b1 agonists increase Nurr1-RXR\u03b1 transcription (Figure 3b), and among the most efficacious agonist ligands includes endogenous metabolite 9-cis-retinoic acid (9cRA) and bexarotene, the latter of which was reported to display biased activation of Nurr1-RXR heterodimers over RXR homodimers (McFarland et al., 2013). RXR\u03b1 antagonists showed relatively no change or slightly decreased transcription of Nurr1-RXR\u03b1. The two Nurr1-RXR\u03b1 selective agonists, BRF110 and HX600, displayed the highest activity of all compounds tested. Taken together, the transcriptional reporter data obtained indicates this RXR\u03b1 ligand set influences Nurr1-RXR\u03b1 transcription via a graded activation mechanism.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig2-v3.jpg)\n\n**Figure 2.:** Grouped by pharmacological phenotype, the set includes ligands that classically activate (agonists) or block (antagonists) activation of RXR\u03b1 homodimers; a mixed activity modulator (LG100754) that antagonizes RXR\u03b1 homodimers and activates PPAR\u03b3-RXR\u03b1 and RAR-RXR\u03b1 heterodimers; and two selective activators of Nurr1-RXR\u03b1 heterodimers (BRF110 and HX600).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig3-v3.jpg)\n\n**Figure 3.:** (a) General scheme of the Nurr1-RXR\u03b1/3xNBRE-luciferase cellular transcriptional reporter assay. (b) Nurr1-RXR\u03b1/3xBNRE-luciferase transcriptional reporter assay performed in SK-N-BE(2)-C cells treated with RXR\u03b1 ligand (1 \u00b5M) or DMSO (dotted line); see Figure 3\u2014source data 1 for data plotted. Data are normalized to DMSO (n=9 replicates), represent the mean \u00b1 s.d., and representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using the Brown-Forsythe and Welch multiple comparisons test relative to DMSO control treated condition.\n\n### Nurr1-RXR\u03b1 activation is not correlated with pharmacological RXR\u03b1 agonism\n\nAgonist binding to the NR LBD stabilizes an active conformation that facilitates coactivator protein interaction at the AF-2 surface via a \u2018charge clamp\u2019 mechanism (Savkur and Burris, 2004) that is important for binding LXXLL-containing motifs present within coactivator proteins resulting in an increase in transcription (Kojetin and Burris, 2013). The Nurr1 LBD does not interact with canonical coregulator proteins because it contains a reversed \u2018charge clamp\u2019 in its AF-2 surface (Wang et al., 2003), implicating ligand-dependent coactivator interaction with RXR\u03b1 in the mechanism of Nurr1-RXR\u03b1 activation.\n\nTo determine if there is a correlation between Nurr1-RXR\u03b1 transcriptional agonism and increased coactivator recruitment to RXR\u03b1 that results in transcriptional activation within the RXR\u03b1 ligand set, we performed a time-resolved fluorescence resonance energy transfer (TR-FRET) biochemical assay (Figure 4a) to assess how the compounds affect interaction between the RXR\u03b1 LBD and a coregulator peptide derived from a cognate coactivator protein PGC-1\u03b1 (Delerive et al., 2002; Figure 4b). We also performed a transcriptional reporter assay to determine if there is a correlation between RXR\u03b1 homodimer-mediated transcription (Figure 4c) and Nurr1-RXR\u03b1 transcription for the RXR\u03b1 ligand set. We cotransfected HEK293T cells with a full-length RXR\u03b1 expression plasmid along with a plasmid containing three copies of the dimeric RXR DNA-binding response element sequence upstream of luciferase gene (3xDR1-luc) then treated the cells with RXR\u03b1 ligand or DMSO control (Figure 4d). In this analysis, we did not include two RXR\u03b1 ligands, danthron and rhein, which are colored and cause interference in TR-FRET experiments.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig4-v3.jpg)\n\n**Figure 4.:** (a) General scheme of the RXR\u03b1 ligand-binding domain (LBD) time-resolved fluorescence resonance energy transfer (TR-FRET) coactivator peptide interaction assay. (b) TR-FRET ratio measured in the presence of DMSO (dotted line) or compound (2\u20134 \u00b5M); see Figure 4\u2014source data 1 for data plotted. Data are normalized to DMSO control (n=3 biological replicates), represent the mean \u00b1 s.d., representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using ordinary one-way ANOVA tests for multiple comparisons with Dunnett corrections relative to DMSO control treated condition. (c) General scheme of the RXR\u03b1/3xDR1-luciferase cellular transcriptional reporter assay. (d) RXR\u03b1/3xDR1-luciferase transcriptional reporter assay performed in HEK293T cells treated with compound (1 \u00b5M) or DMSO control (dotted line); see Figure 4\u2014source data 2 for data plotted. Data normalized to DMSO (n=6 replicates), represent the mean \u00b1 s.d., and representative of two or more independent experiments. Statistical testing was performed and p-values were calculated using the Brown-Forsythe and Welch multiple comparisons test relative to DMSO control treated condition. (e) Correlation plot of RXR\u03b1 LBD TR-FRET data vs. Nurr1-RXR\u03b1 cellular transcription data. (f) Correlation plot of RXR\u03b1 transcriptional reporter data vs. Nurr1-RXR\u03b1 cellular transcription data. (g) Correlation plot of RXR\u03b1 transcriptional reporter data vs. RXR\u03b1 LBD TR-FRET data. Pearson (rp) and Spearman (rs) correlation coefficients and statistical significance testing are reported above the correlation plots.\n\nWe previously showed that ligands displaying graded pharmacological PPAR\u03b3 agonism show a strong correlation between coactivator peptide recruitment to the LBD in a TR-FRET biochemical assay and cellular transcription of full-length PPAR\u03b3 (Shang et al., 2019). However, no significant correlation was observed between coactivator peptide recruitment to the RXR\u03b1 LBD and Nurr1-RXR\u03b1 transcription for the RXR\u03b1 ligand set (Figure 4e). Furthermore, no significant correlation is observed between RXR\u03b1 homodimer transcription and Nurr1-RXR\u03b1 transcription (Figure 4f). In contrast, a strong correlation is observed between RXR\u03b1 LBD TR-FRET data and full-length RXR\u03b1 transcription (Figure 4g) where ligands that increase PGC-1\u03b1 coactivator peptide interaction to the RXR\u03b1 LBD activate transcription of full-length RXR\u03b1 in cells, similar to what we observed for PPAR\u03b3 agonists with graded agonist transcriptional activity (Shang et al., 2019).\n\nThe two selective Nurr1-RXR\u03b1 activating compounds, BRF110 and HX600, function as a pharmacological antagonist and weak/partial graded agonist in the RXR\u03b1 homodimer TR-FRET and transcriptional reporter assay, respectively. These findings suggest that the mechanism by which the RXR\u03b1 ligand set influences Nurr1-RXR\u03b1 transcription may occur independent of coregulator recruitment to the RXR\u03b1 LBD and RXR\u03b1-mediated transcription\u2014indicating that ligand-dependent RXR\u03b1 homodimer modulation and Nurr1-RXR\u03b1 heterodimer modulation may function through distinct mechanisms.\n\n### Nurr1-RXR\u03b1 activation is correlated with weakening LBD heterodimer affinity\n\nAlthough ligand binding to NRs typically influences coregulator interaction to the AF-2 surface in the LBD, studies have reported that ligand binding can also weaken or strengthen NR LBD homodimerization and heterodimerization and confer selectivity (Kilu et al., 2021; Powell and Xu, 2008; Reh\u00f3 et al., 2020; Tamrazi et al., 2002). To determine how the RXR\u03b1 ligand set influences Nurr1-RXR\u03b1 LBD heterodimerization affinity, we performed isothermal titration calorimetry (ITC) studies where we titrated Nurr1 LBD into apo/ligand-free or ligand-bound RXR\u03b1 LBD (Figure 5a) and fitted the data to a homodimer competition model that incorporates apo-RXR\u03b1 LBD homodimerization affinity (see Materials and methods) and dissociation of RXR\u03b1 LBD homodimers to obtain Nurr1-RXR\u03b1 LBD heterodimerization affinity (Table 1 and Figure 5b). One limitation of this ITC data analysis is the assumption that the RXR\u03b1 LBD homodimer affinity is the same for apo RXR\u03b1 LBD and the various ligand-bound states. Determining ligand-bound RXR\u03b1 LBD homodimer KD values using ITC via the dimer dissociation dilution (McPhail and Cooper, 1997) would likely be confounded by ligand dissociation. It is also possible that RXR\u03b1 ligands could change RXR\u03b1 LBD homodimer affinity, or potentially change the RXR\u03b1 LBD dimer equilibrium toward a tetrameric form where the Nurr1 LBD ITC titration could include a component that dissociates a ligand-bound RXR\u03b1 LBD homotetramer (Chen et al., 1998; Gampe et al., 2000; Zhang et al., 2011a). Despite these limitations, a significant correlation between Nurr1-RXR\u03b1 LBD heterodimerization affinity and Nurr1-RXR\u03b1 transcription where RXR\u03b1 ligands that weaken heterodimerization affinity show higher Nurr1-RXR\u03b1 transcription (Figure 5c).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig5-v3.jpg)\n\n**Figure 5.:** (a) General scheme of the Nurr1-RXR\u03b1 LBD isothermal titration calorimetry (ITC) experiment. (b) Nurr1-RXR\u03b1 LBD heterodimer affinities (log M) in the presence of DMSO (dotted line) or compound determined from the fit of the ITC data (n=2 replicates, except n=1 for IRX4204 and PA452) and represent the mean \u00b1 s.d.; see Table 1 and Figure 5\u2014source data 1 for data plotted. Statistical testing was performed and p-values were calculated using ordinary one-way ANOVA relative to DMSO control treated condition. (c) Correlation plot of ITC determined Nurr1-RXR\u03b1 LBD heterodimer KD log M values vs. Nurr1-RXR\u03b1 cellular transcription data. (d) Correlation plot of ITC determined Nurr1-RXR\u03b1 LBD heterodimer KD log M values vs. fitted binding enthalpy (\u0394H, which is the \u0394HAB component of the homodimer competition model; see Materials and methods section for details). (e) Correlation plot of ITC determined Nurr1-RXR\u03b1 LBD heterodimer KD log M values vs. calculated binding entropy (T\u0394S). Pearson (rp) and Spearman (rs) correlation coefficients and statistical significance testing are reported above the correlation plot.\n\n**Table 1.**\n Fitted and calculated isothermal titration calorimetry (ITC) Nurr1-RXR\u03b1 binding affinity and thermodynamic parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Ligand</th>\n      <th colspan=\"5\">log KD (M)</th>\n      <th colspan=\"6\">\u0394H (kcal/mol)</th>\n      <th colspan=\"6\">T\u0394S (kcal/mol)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Average</td>\n      <td>s.d.</td>\n      <td>n</td>\n      <td colspan=\"3\">Replicates</td>\n      <td>Average</td>\n      <td>s.d.</td>\n      <td>n</td>\n      <td colspan=\"3\">Replicates</td>\n      <td>Average</td>\n      <td>s.d.</td>\n      <td>n</td>\n      <td colspan=\"2\">Replicates</td>\n    </tr>\n    <tr>\n      <td>DMSO</td>\n      <td>\u20135.335</td>\n      <td>0.118</td>\n      <td>2</td>\n      <td>\u20135.418</td>\n      <td colspan=\"2\">\u20135.252</td>\n      <td>2.900</td>\n      <td>0.240</td>\n      <td>2</td>\n      <td>3.070</td>\n      <td colspan=\"2\">2.730</td>\n      <td>10.179</td>\n      <td>0.401</td>\n      <td>2</td>\n      <td>10.462</td>\n      <td>9.895</td>\n    </tr>\n    <tr>\n      <td>BRF110</td>\n      <td>\u20134.376</td>\n      <td>0.020</td>\n      <td>2</td>\n      <td>\u20134.390</td>\n      <td colspan=\"2\">\u20134.362</td>\n      <td>5.365</td>\n      <td>0.361</td>\n      <td>2</td>\n      <td>5.110</td>\n      <td colspan=\"2\">5.620</td>\n      <td>11.335</td>\n      <td>0.334</td>\n      <td>2</td>\n      <td>11.099</td>\n      <td>11.571</td>\n    </tr>\n    <tr>\n      <td>HX600</td>\n      <td>\u20134.662</td>\n      <td>0.028</td>\n      <td>2</td>\n      <td>\u20134.681</td>\n      <td colspan=\"2\">\u20134.642</td>\n      <td>7.695</td>\n      <td>4.320</td>\n      <td>2</td>\n      <td>4.640</td>\n      <td colspan=\"2\">10.750</td>\n      <td>14.054</td>\n      <td>4.283</td>\n      <td>2</td>\n      <td>11.026</td>\n      <td>17.083</td>\n    </tr>\n    <tr>\n      <td>9cRA</td>\n      <td>\u20135.026</td>\n      <td>0.060</td>\n      <td>2</td>\n      <td>\u20134.984</td>\n      <td colspan=\"2\">\u20135.068</td>\n      <td>5.110</td>\n      <td>0.962</td>\n      <td>2</td>\n      <td>5.790</td>\n      <td colspan=\"2\">4.430</td>\n      <td>13.539</td>\n      <td>3.105</td>\n      <td>2</td>\n      <td>12.589</td>\n      <td>11.344</td>\n    </tr>\n    <tr>\n      <td>Bexarotene</td>\n      <td>\u20134.619</td>\n      <td>0.044</td>\n      <td>2</td>\n      <td>\u20134.588</td>\n      <td colspan=\"2\">\u20134.650</td>\n      <td>5.555</td>\n      <td>1.336</td>\n      <td>2</td>\n      <td>4.610</td>\n      <td colspan=\"2\">6.500</td>\n      <td>11.857</td>\n      <td>1.396</td>\n      <td>2</td>\n      <td>10.870</td>\n      <td>12.844</td>\n    </tr>\n    <tr>\n      <td>LG100268</td>\n      <td>\u20135.044</td>\n      <td>0.106</td>\n      <td>2</td>\n      <td>\u20135.119</td>\n      <td colspan=\"2\">\u20134.969</td>\n      <td>5.135</td>\n      <td>0.148</td>\n      <td>2</td>\n      <td>5.240</td>\n      <td colspan=\"2\">5.030</td>\n      <td>12.017</td>\n      <td>0.294</td>\n      <td>2</td>\n      <td>12.224</td>\n      <td>11.809</td>\n    </tr>\n    <tr>\n      <td>CD3254</td>\n      <td>\u20134.860</td>\n      <td>0.099</td>\n      <td>2</td>\n      <td>\u20134.930</td>\n      <td colspan=\"2\">\u20134.790</td>\n      <td>4.865</td>\n      <td>0.389</td>\n      <td>2</td>\n      <td>5.140</td>\n      <td colspan=\"2\">4.590</td>\n      <td>11.495</td>\n      <td>0.524</td>\n      <td>2</td>\n      <td>11.866</td>\n      <td>11.125</td>\n    </tr>\n    <tr>\n      <td>SR11237</td>\n      <td>\u20135.053</td>\n      <td>0.047</td>\n      <td>2</td>\n      <td>\u20135.087</td>\n      <td colspan=\"2\">\u20135.020</td>\n      <td>4.940</td>\n      <td>0.962</td>\n      <td>2</td>\n      <td>5.620</td>\n      <td colspan=\"2\">4.260</td>\n      <td>11.834</td>\n      <td>1.026</td>\n      <td>2</td>\n      <td>12.560</td>\n      <td>11.109</td>\n    </tr>\n    <tr>\n      <td>UVI3003</td>\n      <td>\u20134.565</td>\n      <td>0.021</td>\n      <td>2</td>\n      <td>\u20134.580</td>\n      <td colspan=\"2\">\u20134.550</td>\n      <td>6.125</td>\n      <td>2.638</td>\n      <td>2</td>\n      <td>7.990</td>\n      <td colspan=\"2\">4.260</td>\n      <td>12.353</td>\n      <td>2.666</td>\n      <td>2</td>\n      <td>14.238</td>\n      <td>10.467</td>\n    </tr>\n    <tr>\n      <td>LG100754</td>\n      <td>\u20135.222</td>\n      <td>0.026</td>\n      <td>2</td>\n      <td>\u20135.204</td>\n      <td colspan=\"2\">\u20135.240</td>\n      <td>4.270</td>\n      <td>0.226</td>\n      <td>2</td>\n      <td>4.110</td>\n      <td colspan=\"2\">4.430</td>\n      <td>11.394</td>\n      <td>0.261</td>\n      <td>2</td>\n      <td>11.209</td>\n      <td>11.579</td>\n    </tr>\n    <tr>\n      <td>IRX4204</td>\n      <td>\u20134.673</td>\n      <td>0.000</td>\n      <td>1</td>\n      <td>\u20134.673</td>\n      <td colspan=\"2\"></td>\n      <td>8.460</td>\n      <td>0.000</td>\n      <td>1</td>\n      <td>8.460</td>\n      <td colspan=\"2\"></td>\n      <td>14.835</td>\n      <td>0.000</td>\n      <td>1</td>\n      <td>14.835</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rhein</td>\n      <td>\u20135.554</td>\n      <td>0.077</td>\n      <td>2</td>\n      <td>\u20135.499</td>\n      <td colspan=\"2\">\u20135.609</td>\n      <td>2.780</td>\n      <td>0.396</td>\n      <td>2</td>\n      <td>3.060</td>\n      <td colspan=\"2\">2.500</td>\n      <td>10.357</td>\n      <td>0.290</td>\n      <td>2</td>\n      <td>10.563</td>\n      <td>10.152</td>\n    </tr>\n    <tr>\n      <td>HX531</td>\n      <td>\u20136.132</td>\n      <td>0.133</td>\n      <td>2</td>\n      <td>\u20136.226</td>\n      <td colspan=\"2\">\u20136.038</td>\n      <td>2.205</td>\n      <td>0.021</td>\n      <td>2</td>\n      <td>2.190</td>\n      <td colspan=\"2\">2.220</td>\n      <td>10.571</td>\n      <td>0.160</td>\n      <td>2</td>\n      <td>10.684</td>\n      <td>10.457</td>\n    </tr>\n    <tr>\n      <td>Danthron</td>\n      <td>\u20135.524</td>\n      <td>0.043</td>\n      <td>2</td>\n      <td>\u20135.494</td>\n      <td colspan=\"2\">\u20135.554</td>\n      <td>2.920</td>\n      <td>0.170</td>\n      <td>2</td>\n      <td>3.040</td>\n      <td colspan=\"2\">2.800</td>\n      <td>10.456</td>\n      <td>0.111</td>\n      <td>2</td>\n      <td>10.535</td>\n      <td>10.378</td>\n    </tr>\n    <tr>\n      <td>PA452</td>\n      <td>\u20135.417</td>\n      <td>0.000</td>\n      <td>1</td>\n      <td>\u20135.417</td>\n      <td colspan=\"2\"></td>\n      <td>4.120</td>\n      <td>0.000</td>\n      <td>1</td>\n      <td>4.120</td>\n      <td colspan=\"2\"></td>\n      <td>11.510</td>\n      <td>0.000</td>\n      <td>1</td>\n      <td>11.510</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nTo gain additional insight into the thermodynamic mechanism of ligand-induced Nurr1-RXR\u03b1 LBD heterodimer dissociation, we analyzed the thermodynamic parameters from the fitted ITC data (Table 1). The change in binding enthalpy (\u0394H) upon heterodimerization generally shows an endothermic (positive) profile for all conditions, whereas the change in entropy (T\u0394S) component shows a favorable (positive) profile for all conditions. Correlation analysis reveals a more significant correlation between the Nurr1-RXR\u03b1 LBD heterodimerization binding affinity and the \u0394H binding component (Figure 5d) compared to the \u0394S binding component (Figure 5e). Moreover, compounds that decrease Nurr1-RXR\u03b1 LBD heterodimer binding affinity show an increasing (less favorable) \u0394H component and an increasing (more favorable) \u0394S component.\n\n### Nurr1-RXR\u03b1 activation is correlated with dissociation of Nurr1 LBD monomer\n\nTo obtain structural insight into the consequence of ligand-induced weakening of Nurr1-RXR\u03b1 LBD heterodimer and the relationship to transcriptional activation of Nurr1-RXR\u03b1, we performed protein NMR structural footprinting analysis. We collected 2D [1H,15N]-TROSY-HSQC NMR data of 15N-labeled Nurr1 LBD in the monomer form or heterodimerized with RXR\u03b1 LBD. Among the well-resolved Nurr1 LBD peaks in the 2D NMR data that show clear and discernible shifts going from monomeric Nurr1 LBD to the Nurr1-RXR\u03b1 LBD heterodimer (Figure 6\u2014figure supplement 1) include the NMR peak for Thr411 (Figure 6a). Addition of compounds that activate Nurr1-RXR\u03b1 transcription and weaken Nurr1-RXR\u03b1 LBD heterodimer affinity result in the appearance of two Thr411 NMR peaks with chemical shift values corresponding to the heterodimer and Nurr1 monomer populations. In contrast, compounds that display little to no effect on Nurr1-RXR\u03b1 transcription and do not significantly alter Nurr1-RXR\u03b1 LBD heterodimer affinity show either a single NMR peak corresponding to the heterodimer population or a lower Nurr1 monomer population on average. These data indicate that Nurr1-RXR\u03b1 activating ligands perturb the Nurr1-RXR\u03b1 LBD heterodimer conformational ensemble toward a monomeric Nurr1 LBD population in slow exchange on the NMR time scale.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig6-v3.jpg)\n\n**Figure 6.:** (a) 2D [1H,15N]-TROSY HSQC data of 15N-labeled Nurr1 LBD heterodimerized with unlabeled RXR\u03b1 LBD in the presence of RXR\u03b1 ligands focused on the NMR peak of Thr411. The upper inset shows an overlay of 15N-labeled Nurr1 LBD monomer (200 \u00b5M) vs. 15N-labeled Nurr1 LBD-unlabeled RXR\u03b1 LBD heterodimer (1:2 molar ratio) to demonstrate the shift of the Thr411 peak between monomer (m) and heterodimer (hd) forms; see Figure 6\u2014figure supplement 1 for full spectral overlays. (b) Simulated 1H NMR lineshape analysis of Nurr1 LBD residue Thr411 showing the influence of ligand-induced weakening of Nurr1-RXR\u03b1 LBD heterodimerization affinity; see Figure 6\u2014source code 1 for calculation input files. (c) NMR estimated Nurr1 LBD monomer populations from the 2D NMR data (n=2 replicates, except n=1 for IRX4204 and PA452) and lines above the replicate values represent the mean \u00b1 s.d.; see Figure 6\u2014source data 1 for data plotted. Statistical testing was performed and p-values were calculated using ordinary one-way ANOVA relative to apo/DMSO control treated condition. (d) Correlation plot of Nurr1-RXR\u03b1 cellular transcription data vs. NMR estimated Nurr1 LBD monomer populations. (e) Correlation plot of ITC determined Nurr1-RXR\u03b1 LBD heterodimer KD log M values vs. NMR estimated Nurr1 LBD monomer populations. Pearson (rp) and Spearman (rs) correlation coefficients and statistical significance testing are reported above the correlation plots. (f) Analytical size exclusion chromatography (SEC) analysis of Nurr1-RXR\u03b1 in the presence of RXR\u03b1 ligands (solid colored lines) relative to Nurr1 LBD monomer (dotted black line) and Nurr1-RXR\u03b1 LBD heterodimer (solid black line); see Figure 6\u2014figure supplement 2 for all SEC data organized by ligand.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig6-figsupp1-v3.jpg)\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig6-figsupp2-v3.jpg)\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig6-figsupp3-v3.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Fractions corresponding to the indicated regions of the SEC chromatography are annotated, as well as the locations of the Nurr1 LBD and RXR\u03b1 LBD. The bands annotated with ** correspond to a degraded RXR\u03b1 LBD population that formed when these SEC samples were stored at 4\u00b0C for an extended period of time prior to SDS-PAGE analysis. See Figure 6\u2014figure supplement 3\u2014source data 1for raw unedited gel with and without annotation.\n\nTo gain additional insight into how ligand-dependent changes in Nurr1-RXR\u03b1 LBD heterodimerization affinity influences the NMR data, we performed NMR lineshape simulations. Simulated 1D spectra of the 1HN dimension of the Thr411 NMR peaks were calculated using a binding model that accounts for an RXR\u03b1 LBD homodimer component that dissociates into monomers that are capable of binding Nurr1 LBD (see Materials and methods for details). The simulations show that weakening Nurr1-RXR\u03b1 LBD heterodimerization affinity, for example upon binding an RXR\u03b1 ligand, shifts the equilibrium from the Nurr1-RXR\u03b1 LBD heterodimeric (hd) population to Nurr1 LBD monomer (m) population (Figure 6b), consistent with our experimentally collected 2D NMR data.\n\nWe calculated the relative population of monomeric Nurr1 LBD dissociated from the Nurr1-RXR\u03b1 LBD heterodimer by measuring the peak intensity of the monomeric (m) and heterodimer (hd) 2D NMR peaks for Thr411 from two replicate measurements using different batches of protein (Figure 6c). One limitation of this NMR analysis is that the monomeric and heterodimeric NMR peak intensities may over- or underestimate the relative population sizes given that NMR peak lineshapes of the individual monomeric and heterodimer states (molecular sizes effects), and the rate of chemical exchange between these states, can also affect peak lineshapes as well as binding kinetics and affinity. Despite this limitation, a significant correlation is observed between NMR-observed Nurr1 LBD monomeric populations and Nurr1-RXR\u03b1 transcription (Figure 6d) and ITC-determined Nurr1-RXR\u03b1 LBD heterodimerization affinity (Figure 6e), indicating a role for dissociation of monomeric Nurr1 LBD from Nurr1-RXR\u03b1 LBD heterodimer in the mechanism of action of the RXR\u03b1 ligand set. Notably, one of the replicate NMR measurements shows a more significant correlation to Nurr1-RXR\u03b1 transcription, which may have at least two origins: errors in concentration between two different batches of protein used in the replicate measurements, and two ligands were not included in one of the replicate measurements\u2014excluding these ligands from the analysis of replicate #2 measurements improves the correlation with rp = 0.77 (p=0.0021) and rs = 0.75 (p=0.0042).\n\nTo corroborate our ligand-dependent heterodimer dissociation findings, we performed size exclusion chromatography (SEC) experiments to determine how the compounds influence the oligomeric state of the Nurr1-RXR\u03b1 LBD heterodimer (Figure 6g and Figure 6\u2014figure supplement 2). The Nurr1-RXR\u03b1 selective agonist, BRF110, shows the largest effect in dissociating a Nurr1 LBD monomer species in the SEC and NMR studies and is overall the most efficacious compound in activating Nurr1-RXR\u03b1 transcription. The other Nurr1-RXR\u03b1 selective compound, HX600, and the classical RXR\u03b1 agonists dissociate a Nurr1 LBD monomer species although to a lower degree compared to BRF110. Most pharmacological RXR\u03b1 antagonists we studied do not dissociate a Nurr1 LBD monomer species except for UVI3003, which displays a unique SEC profile that includes a monomeric Nurr1 LBD species and at least two species with a larger hydrodynamic radius (Figure 6\u2014figure supplement 2). One higher order species is consistent with the SEC profile of an RXR\u03b1 LBD homodimer or Nurr1-RXR\u03b1 LBD heterodimer, and another with a larger hydrodynamic radius that is more compact than RXR\u03b1 homotetramer, suggesting it may be a UVI3003-bound RXR\u03b1 LBD dimer population. Notably, our structure-function profiling data indicate UVI3003 functions similar to the Nurr1-RXR\u03b1 selective ligands (BRF110 and HX600) in that it activates Nurr1-RXR\u03b1 transcription while antagonizing RXR\u03b1 homodimers.\n\nThe SEC data provide insight into the potential allosteric mechanism(s) by which compounds in the RXR\u03b1 ligand set influence Nurr1-RXR\u03b1 heterodimerzation and transcription via effects on RXR\u03b1 LBD. In the absence of ligand, RXR\u03b1 exists as a mixture of homodimers and homotetramers (Kersten et al., 1995a), which can be stabilized as dimers upon agonist binding (Kersten et al., 1995b) or tetramers upon antagonist binding (Zhang et al., 2011b). In our SEC data, the most efficacious compounds not only free a Nurr1 LBD monomeric population, but also increase a higher order species with an elution volume consistent with a RXR\u03b1 LBD homotetramer population. SDS-PAGE analysis confirms this observation and reveals that the higher order species observed when BRF110 is added to Nurr1-RXR\u03b1 LBD heterodimers contains RXR\u03b1 LBD only (Figure 6\u2014figure supplement 3). Furthermore, these compounds change the appearance of species in the SEC data with elution properties similar to Nurr1-RXR\u03b1 heterodimer and RXR\u03b1 homodimers, suggesting that they may change the homodimer/heterodimer complex conformation and/or species equilibrium. Thus, the allosteric mechanism may involve ligand-induced stabilization of RXR\u03b1 oligomeric species that inhibit or are less favorable for Nurr1 heterodimerization.\n\n### PCA reveals data features associated with Nurr1-RXR\u03b1 agonism\n\nFinally, we performed principal component analysis (PCA) using all the experimental data collected as input to determine the data features most associated with transcriptional activation of the 3xNBRE-luciferase reporter by Nurr1-RXR\u03b1 in an unbiased manner (Figure 7a). Two of the ligands, danthron and rhein, were not included in the analysis because we did not have RXR\u03b1 LBD TR-FRET and RXR\u03b1 homodimer transcriptional reporter data (vide infra). Approximately 90% of the variance in the data can be explained by the two PCs (Figure 7b). Several features are notable in the plot of the PCA scores and loadings, the latter of which represent correlation between the experimental data and PCs. The ligands cluster in groups consistent with their known pharmacological phenotypes. The loadings show that Nurr1-RXR\u03b1 transcription, ITC-determined Nurr1-RXR\u03b1 heterodimer affinity, and NMR-determined Nurr1 monomeric populations are clustered together and clustered along with the Nurr1-RXR\u03b1 selective ligands, meaning these features of the data are positively correlated with ligand-dependent Nurr1-RXR\u03b1 heterodimer dissociation. In contrast, RXR\u03b1 LBD TR-FRET coactivator interaction and RXR\u03b1 LBD homodimer transcription is positively correlated with classical RXR\u03b1 agonists, whereas RXR\u03b1 antagonists are found opposite to this loading trajectory. Furthermore, the loading projections show that the features of classical RXR\u03b1 agonism and selective Nurr1-RXR\u03b1 agonism are uncorrelated since the loadings trajectories associated with these features, and their associated ligand clusters, form a perpendicular (~90\u00b0) angle.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig7-v3.jpg)\n\n**Figure 7.:** (a) 2D biplot containing the loadings and PC scores of the first two PCs. PC scores of the ligands are colored according to pharmacological activity (see legend) whereas the loadings (experimental variables) are colored light blue. (b) A proportion of variance plot revealing the amount of variance described by each PC individually and cumulatively.\n\n## Discussion\n\nAlthough Nurr1 is a promising drug target for aging-associated neurodegenerative disorders, uncertainty in the druggability of its LBD has motivated research into alternative approaches to influence Nurr1 transcription. Nurr1-RXR\u03b1 heterodimer activation via RXR\u03b1-binding ligands has emerged as a promising modality to develop neuroprotective therapeutic agents or adjuvants to other therapies. Several RXR\u03b1 ligands that increase Nurr1-RXR\u03b1 activation have progressed to clinical trials of PD and AD including bexarotene and IRX4204 (McFarland et al., 2013; Wang et al., 2016). Understanding how these and other Nurr1-RXR\u03b1 activating ligands function on the molecular level may provide a blueprint to develop more efficacious and potent compounds.\n\nClassical pharmacological modulation of NR transcription by agonists, antagonists, or inverse agonists that activate, block, or repress transcription typically function by enhancing coactivator protein interaction, blocking coregulator interaction, or enhancing corepressor interaction, respectively (Gronemeyer et al., 2004). Our studies demonstrate that Nurr1-RXR\u03b1 activation occurs through an LBD PPI inhibition heterodimer dissociation mechanism that is distinct from the classical pharmacological properties of NRs ligands. This activation mechanism explains why pharmacological RXR\u03b1 agonists (e.g. bexarotene and IRX4204) and Nurr1-RXR\u03b1 selective compounds that function as pharmacological RXR\u03b1 antagonists (e.g. BRF110 and HX600) both activate Nurr1-RXR\u03b1 transcription. Although the LBD heterodimer dissociation mechanism is atypical, several studies have reported that pharmacological NR ligands can influence dimer formation in addition to their classical pharmacological properties in regulating coregulator protein interaction (Kilu et al., 2021; Powell and Xu, 2008; Reh\u00f3 et al., 2020; Tamrazi et al., 2002). Our Nurr1-RXR\u03b1 LBD heterodimer dissociation findings add to the repertoire of functional ligand targeting mechanisms of NRs that include classical pharmacological ligands, ligand-modulated posttranslational modification (Choi et al., 2011), PROTAC degrader molecules (Flanagan and Neklesa, 2019), and ligand-modulated NR phase separation/biomolecular condensates that include covalent targeting of the disordered N-terminal AF-1 domain (Basu et al., 2022; Xie et al., 2022).\n\nOur data in support of a Nurr1-RXR\u03b1 LBD heterodimer dissociation activation mechanism along with other published studies inform a model for activation of Nurr1-RXR\u03b1 transcription by RXR\u03b1 ligands (Figure 8). Nurr1 displays high transcriptional activity on monomeric NBRE sites as a monomer, and RXR\u03b1 heterodimerization represses Nurr1 activity (Aarnisalo et al., 2002; Forman et al., 1995). RXR\u03b1 does not bind to NBRE sequences but does interact with Nurr1 bound to NBRE DNA sequences via a protein-protein tethering interaction (Sacchetti et al., 2002) and recruits corepressor proteins that are released upon binding RXR\u03b1 ligand (Lammi et al., 2008). Our RXR\u03b1 truncation studies indicate that RXR\u03b1 represses Nurr1 transcription through an RXR\u03b1 LBD-dependent mechanism, pinpointing the Nurr1 and RXR\u03b1 LBDs as the likely mode of tethering. Pharmacological agonists of RXR\u03b1, which stabilize an active RXR\u03b1 LBD conformation (De Lera et al., 2007), as well as Nurr1-RXR\u03b1 selective compounds (Morita et al., 2005; Spathis et al., 2017) that function as pharmacological antagonists of RXR\u03b1, dissociate tethered Nurr1-RXR\u03b1 heterodimers leaving a monomeric Nurr1 bound to monomeric NBRE sites that has higher transcriptional activity than Nurr1-RXR\u03b1.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/85039/elife-85039-fig8-v3.jpg)\n\nIn contrast to the ligand-induced heterodimer dissociation activation mechanism, ligands that stabilize/strengthen Nurr1-RXR\u03b1 heterodimerization or do not significantly affect Nurr1-RXR\u03b1 dissociation\u2014such as the RXR\u03b1 antagonists in our study\u2014may show more complex regulatory mechanisms. In addition to influencing Nurr1-RXR\u03b1 interaction, antagonist ligands bound to RXR\u03b1, which is itself tethered to Nurr1 on NBRE genomic elements, could influence transcription of NBRE-driven gene transcription via classical pharmacological modulation mechanisms. RXR\u03b1-bound ligands will influence the conformation of and coregulator protein binding affinity to the RXR\u03b1 AF-2 surface, which will in turn regulate recruitment of coregulator (coactivator or corepressor) proteins via interaction with the RXR\u03b1 AF-2 surface.\n\nIn summary, our study shows that RXR\u03b1 ligands can function as allosteric PPI inhibitors that bind to the canonical orthosteric ligand-binding pocket within the RXR\u03b1 LBD and influence and Nurr1-mediated transcription via Nurr1-RXR\u03b1 heterodimer dissociation. Our findings provide a molecular understanding into the mechanism of action of Nurr1-RXR\u03b1 activation that may influence the design and development of new compounds with therapeutic efficacy in PD, AD, and other aging-associated neurodegenerative disorders.\n\n## Materials and methods\n\n### Ligands, plasmids, and other reagents\n\nAll ligands were obtained from commercial vendors including Cayman Chemicals, Sigma, Axon Medchem, MedChemExpress, or Tocris Bioscience; BRF110 (CAS 2095489-35-1), HX600 (CAS 172705-89-4), 9cRA (CAS 5300-03-8), Bexarotene (CAS 153559-49-0), LG100268 (CAS 153559-76-3), CD3254 (CAS 196961-43-0), SR11237 (CAS 146670-40-8), UVI3003 (CAS 847239-17-2), LG100754 (CAS 180713-37-5), IRX4204 (CAS 220619-73-8), Rhein (CAS 478-43-3), HX531 (CAS 188844-34-0), Danthron (CAS 117-10-2), and PA452 (CAS 457657-34-0). FITC-labeled LXXLL-containing peptide derived from human PGC-1\u03b1 (137-155; EAEEPSLLKKLLLAPANTQ) was synthesized by LifeTein with an N-terminal FITC label and an amidated C-terminus for stability. Bacterial expression plasmids included human Nurr1 (NR4A2) LBD (residues 353\u2013598) (de Vera et al., 2016) and human RXR\u03b1 (NR2B1) LBD (residues 223\u2013462) (Kojetin et al., 2015) that were inserted into a pET45b(+) plasmid (Novagen) as a TEV-cleavable N-terminal hexahistidine(6xHis)-tag fusion protein. Luciferase reporter plasmids included a 3xNBRE-luciferase plasmid containing three copies of the NGFI-B response element corresponding to the monomeric binding site for Nurr1 de Vera et al., 2016; Wilson et al., 1991; and a 3xDR1-luciferase containing three copies of the optimal direct repeat 1 (DR1) binding site for RXR\u03b1 (Hughes et al., 2014; Subauste et al., 1994). Mammalian expression plasmids included full-length human Nurr1 (residues 1\u2013598) in pcDNA3.1 plasmid (de Vera et al., 2016) and full-length human RXR\u03b1 (residues 1\u2013462) in pCMV-Sport6 plasmid (Zhang et al., 2011c). To clone the RXR\u03b1 \u0394LBD construct (residues 1\u2013226), site directed mutagenesis and PCR was used to insert a stop codon before the start of the LBD using the full-length RXR\u03b1 expression plasmid the following primers: forward primer, CAGCAGCGCCTAAGAGGACATG; reverse primer, CATGTCCTCTTAGGCGCTGCTG. To clone the \u0394NTD RXR\u03b1 construct (residues 127\u2013462), site directed mutagenesis and PCR was used to add a XhoI cut site and an ATG before at the end of the NTD using the following primers: forward primer, CCACCCCTCGAGAAACATGG; reverse primer, CCATGTTTCTCGAGGGGTGG\u2014then restriction enzymes (XhoI and HindIII) were used to cut out the \u0394NTD construct (DBD-hinge-LBD) for insertion using T4 ligase into pcDNA3.1 empty vector that had been linearized with XhoI and HindIII. To clone the RXR\u03b1 LBD construct (200\u2013462), Xhol was used to cut pcDNA3.1 and subsequently Gibson assembly was used to clone the LBD into the linearized vector using the gBlock sequence provided in Supplementary file 1.\n\n### Cell lines for mammalian cell culture\n\nAll cells were obtained from and authenticated by ATCC and determined to be mycoplasma free. HEK293T (#CRL-11268) and SK-N-BE(2)-C (#CRL-2268) cells were cultured according to ATCC guidelines at low passage number (less than 10 passages; typically passages 2\u20134). HEK293T cells were grown at 37\u00b0C and 5% CO2 in DEME (Gibco) supplemented with 10% fetal bovine serum (Gibco) and 100 units/mL of penicillin, 100 \u03bcg/mL of streptomycin, and 0.292 mg/mL of glutamine (Gibco) until 90\u201395% confluence in T-75 flasks prior to subculture or use. SK-N-BE(2)-C were grown at 37\u00b0C and 5% CO2 in a media containing 1:1 mixture of EMEM (ATCC) and F12 medium (Gibco) supplemented with 10% fetal bovine serum (Gibco) until 90\u201395% confluence in T-75 flasks prior to subculture or use.\n\n### Protein expression and purification\n\nProteins were expressed in Escherichia coli BL21(DE3) cells in autoinduction ZY media (without NMR isotopes) or M9 minimal media (using 15NH4Cl for NMR isotopic labeling). For autoinduction expression, cells were grown for 5 hr at 37\u00b0C, then 18 hr at 22\u00b0C, then centrifuged for harvesting. For M9 expression, cells were grown at 37\u00b0C and induced with 1.0 mM isopropyl \u03b2-D-thiogalactoside at OD (600 nm) of 0.6, grown for an additional 18 hr at 22\u00b0C, and then centrifuged for harvesting. Cell pellets were lysed using sonication and proteins were purified using Ni-NTA affinity chromatography and gel filtration/SEC. TEV protease was used to cleave the 6xHis-tag for all experiments except protein used for TR-FRET. The purified proteins were verified by SDS-PAGE, then stored in a buffer consisting of 20 mM potassium phosphate (pH 7.4), 50 mM potassium chloride, and 0.5 mM EDTA. All studies that used RXR\u03b1 LBD protein used pooled SEC fractions for the apo-homodimeric form except for analytical SEC of the apo-tetrameric form.\n\n### Transcriptional reporter assays\n\nSK-N-BE(2)-C cells were seeded in 9.5 cm2 cell culture well (Corning) at 0.5 million for transfection using Lipofectamine 2000 (Thermo Fisher Scientific) and Opti-MEM with an empty vector control or full-length Nurr1 expression plasmid (1 \u03bcg), with or without full-length or different RXR\u03b1 truncation constructs (1 \u03bcg), and 3xNBRE-luc (1 \u03bcg). HEK293T cells were seeded in 9.5 cm2 cell culture well (Corning) at 0.5 million for transfection using Lipofectamine 2000 (Thermo Fisher Scientific) and Opti-MEM with empty vector control or full-length RXR\u03b1 expression plasmid (1 \u03bcg), and 3xDR1-luc (1 \u03bcg). After incubation for 16\u201320 hr, cells were transferred to white 384-well cell culture plates (Thermo Fisher Scientific) at 0.5 million cells/mL in 20 \u03bcL total volume/well. After a 4 hr incubation, cells were treated with 20 \u03bcL of vehicle control (DMSO) or 1 \u03bcM ligand. After a final 16\u201320 hr incubation, cells were harvested with 20 \u03bcL Britelite Plus (PerkinElmer), and luminescence was measured on a BioTek Synergy Neo multimode plate reader. The luminescence readouts were normalized to cells transfected with the empty vector (truncation construct assay) or cells treated with DMSO (assays with or without ligand treatment). Data were plotted using GraphPad Prism. In Figure 1b, statistical testing was performed and p-values were calculated in GraphPad Prism using the Brown-Forsythe and Welch multiple comparisons test (does not assume equal s.d. values among compared conditions) relative to full-length Nurr1 condition. In Figures 3b and 4d, statistical testing was performed and p-values were calculated in GraphPad Prism using the Brown-Forsythe and Welch multiple comparisons test (does not assume equal s.d. values among compared conditions) relative to DMSO control treated condition. Data are representative of two or more independent experiments (n=6 or 9 biological replicates).\n\n### TR-FRET coactivator interaction assay\n\nAssays were performed in 384-well black plates (Greiner) using 22.5 \u03bcL final well volume. Each well contained 4 nM 6xHis-RXR\u03b1 LBD, 1 nM LanthaScreen Elite Tb-anti-His antibody (Thermo Fisher #PV5895), and 400 nM FITC-labeled PGC1\u03b1 peptide in a buffer containing 20 mM potassium phosphate (pH 7.4), 50 mM KCl, 5 mM TCEP, and 0.005% Tween 20. Ligand stocks were prepared via serial dilution in DMSO and added to wells (10 \u00b5M final concentration) in triplicate. The plates were read using BioTek Synergy Neo multimode plate reader after incubation at 4\u00b0C for at least 2 hr. The Tb donor was excited at 340 nm, and its emission was measured at 495 nm; the emission of the acceptor FITC was measured at 520 nm. Data were plotted using GraphPad Prism as TR-FRET ratio (measurement at 520 nm/measurement at 495 nm) at a fixed ligand concentration (2\u20134 \u00b5M depending on the starting compound stock concentration). In Figure 4b, statistical testing was performed and p-values were calculated in GraphPad Prism using the Brown-Forsythe and Welch multiple comparisons test (does not assume equal s.d. values among compared conditions) relative to the DMSO control treated condition. Data are representative of two or more independent experiments (n=3 biological replicates) except for one RXR\u03b1 ligand (IRX4204) where only one experiment (n=3 biological replicates) was performed.\n\n### Isothermal titration calorimetry\n\nExperiments were performed using a MicroCal iTC200. All experiments were solvent-matched and contained 0.25% DMSO (ligand vehicle) final concentration. RXR\u03b1 LBD homodimerization affinity was measured using a dimer dissociation dilution method (McPhail and Cooper, 1997) by titrating 1 mM RXR\u03b1 LBD from the syringe into the ITC buffer in the sample cell at 25\u00b0C with a 60 s delay between the 2 \u03bcL injections using a mixing speed of 1200 rpm for a total of 20 injections. Data were fitted using the dissociation model in MicroCal Origin 6.0 (MicroCal User Manual, section 7.6). RXR\u03b1 LBD homodimer affinity (KD) and enthalpy were determined to be 16.3 \u00b5M and \u201313.10 kcal/mol, respectively; this information was used in analysis of the interactions between Nurr1 LBD and ligand-bound RXR\u03b1 LBD to approximate the dissociation step required for Nurr1 LBD to heterodimerize with RXR\u03b1 LBD. ITC experiments of Nurr1 LBD to RXR\u03b1 LBD (apo or ligand-bound) was performed by titrating Nurr1 LBD to RXR\u03b1 LBD in a 10:1 ratio (500 or 1000 \u03bcM, and 50 or 100 \u00b5M, respectively) incubated with two equivalent of vehicle (DMSO) or ligand, and the run was performed using the same experimental design. Experiments were performed at 25\u00b0C in duplicate, except for two RXR\u03b1 ligands (IRX4204 and PA452) where only one experiment was performed; and one experimental replicate for HX600 was performed at 15\u00b0C, which gave a similar KD value to the data collected at 25\u00b0C. NITPIC software (Keller et al., 2012) was used to calculate baselines, integrate curves, prepare experimental data for fitting in SEDPHAT (Brautigam et al., 2016), which was used to obtain binding affinities and thermodynamic parameter measurements using a homodimer competition model (A + B + C <-> AB + C <-> AC + B; competing B and C for A, where A and C is RXR\u03b1 LBD monomer and B is Nurr1 LBD monomer). Final figures were exported using GUSSI (Brautigam, 2015). In Figure 5b, statistical testing was performed and p-values were calculated in GraphPad Prism using ordinary one-way ANOVA relative to DMSO control treated condition.\n\n### NMR spectroscopy\n\nTwo-dimensional [1H,15N]-TROSY-HSQC NMR experiments were performed at 298 K on a Bruker 700 MHz NMR instrument equipped with a QCI cryoprobe. Samples were prepared in a buffer containing 20 mM potassium phosphate (pH 7.4), 50 mM potassium chloride, 0.5 mM EDTA, and 10% D2O. Experiments were collected using 200 \u03bcM 15N-labeled Nurr1 LBD with or without two molar equivalents of unlabeled RXR\u03b1 LBD in the absence or presence of RXR\u03b1 ligands. Data were processed and analyzed using NMRFx (Norris et al., 2016) using published NMR chemical shift assignments for the Nurr1 LBD (Michiels et al., 2010) that we validated and used previously (de Vera et al., 2019; Munoz-Tello et al., 2020). Relative Nurr1 LBD monomer populations were estimated by the relative peak intensities of the monomeric (Imonomer) and heterodimer (Iheterodimer) species using the following equation:\n\n$$\nI_{monomer_population}=\\frac{I_{monomer}}{I_{monomer}+I_{heterodimer}}\n$$\n\nNMR peak intensity errors for the monomeric (Emonomer) and heterodimeric (Eheterodimer) states were calculated in NMRFx and propagated in the Imonomer_population calculation using the following equation:\n\n$$\nE_{monomer_population}=\\sqrt{(\\frac{I_{monomer}}{(I_{heterodimer}+I_{monomer})2})+(\u2212\\frac{I_{heterodimer}}{(I_{monomer}+I_{heterodimer})2})}\n$$\n\nTwo replicates per condition were performed, except for two RXR\u03b1 ligands (IRX4204 and PA452) where only one experiment was performed; average and s.d. calculations of the replicate Imonomer_population and Emonomer_population were performed in GraphPad Prism. In Figure 6c, statistical testing was performed and p-values were calculated in GraphPad Prism using ordinary one-way ANOVA relative to apo/DMSO control treated condition. We distinguished the two replicate measurements in the analysis, which were performed using different protein and ligand stock solutions, because one batch of samples (replicate 1) showed a more significant correlation to transcription than the other batch of samples.\n\n### NMR lineshape simulations\n\nNMR lineshape analysis was performed using NMR LineShapeKin version 4 (Kovrigin, 2012) and MATLAB R2022a via NMRbox (Maciejewski et al., 2017). 1D NMR lineshapes for Nurr1 LBD residue T411 (1HN dimension), with or without two molar equivalents of RXR\u03b1 LBD, were simulated using the U_L2 model (ligand binding to a receptor competing with ligand dimerization) where the ligand (RXR\u03b1 LBD) exists as a homodimer that is dissociated into monomers upon binding to the receptor (15N-labeled Nurr1 LBD). Simulations were performed using several experimentally defined parameters: ITC-determined apo-RXR\u03b1 LBD homodimer affinity (16 \u00b5M); difference in chemical shift in hertz (150 Hz) between the monomer and heterodimer NMR peaks for T411 measured in 2D [1H,15N]-TROSY HSQC NMR data (w0 for R = \u2013150 Hz; w0 for RL = 0 Hz); a receptor concentration of 200 \u00b5M (Rtotal = 2e-3); and ligand added at \u00b12 molar equivalents (LRratio = 1e-3 and 2.0); and relative relaxation rates for the monomer and heterodimer estimated to give peak full width half height (FWHH) line widths in 2D [1H,15N]-TROSY HSQC NMR data (for R, FWHH = 20, R2=10; for RL, FWHH = 40, R2=20 Hz); otherwise default parameters were used.\n\n### Analytical SEC\n\nTo prepare Nurr1-RXR\u03b1 LBD heterodimer for analytical SEC analysis, purified Nurr1 LBD and RXR\u03b1 LBD (each 700 \u03bcM in 2.5 mL) were incubated together at 4\u00b0C in their storage buffer containing 20 mM potassium phosphate (pH 7.4), 50 mM potassium chloride, and 0.5 mM EDTA for 16 hr, injected (5 mL total) into HiLoad 16/600 Superdex 75 pg (Cytiva) connected to an AKTA FPLC system (GE Healthcare Life Science). Gel filtration was performed using the same buffer to purify Nurr1-RXR\u03b1 LBD heterodimer for analysis, collecting 2 mL fraction to isolate heterodimer population into 15 samples of 0.5 mL (at a protein concentration of 300 \u03bcM) for analytical gel filtration. Additionally, purified Nurr1 LBD and RXR\u03b1 LBD (pooled gel filtration fractions consisting of the homodimeric and homotetrameric species) were also used. Samples containing RXR\u03b1 LBD (homodimer or heterodimer with Nurr1 LBD) were incubated with two molar equivalents of each ligand for 16 hr at 4\u00b0C before injection onto Superdex 75 Increase 10/300 GL (Cytiva) connected to the same AKTA FPLC system. The UV chromatograms were exported in CSV format and plotted using an in-house Jupyter notebook Python script using matplotlib and seaborn packages.\n\n### Correlation and other statistical analyses\n\nCorrelation plots were performed using GraphPad Prism to calculate Pearson (rp) and Spearman (rs) correlation coefficients and two-tailed p-values between two experimental measurements per plot. Statistical testing of control to variable conditions was performed using one-way ANOVA testing as detailed above. PCA was performed in GraphPad Prism; all experimentally determined data were used as variables (method = standardize, PCs selected based on parallel analysis at the 95% percentile level with 1000 simulations). p-Value statistical significance shorthand conforms to GraphPad Prism standards: n.s., p>0.05; *, p\u22640.05; **, p\u22640.01; ***, p\u22640.001; and ****, p\u22640.0001.\n",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "b2e889db-1384-40c3-98a4-c376bfbe6af6",
+      "submission_id": "a2d373b8-62f6-456d-b76d-59bb2d60a669",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85039.sa0](https://doi.org/10.7554/eLife.85039.sa0)\n\nThis is a fundamental study of the activation process of Nurr1, an orphan nuclear receptor that may be a significant target for the treatment of neurodegenerative disorders. Nurr1 functions as a monomer, but may also heterodimerize with RXR\u03b1 which represses Nurr1 transcriptional activation. The authors provide compelling evidence for Nurr1 activation through ligand-induced dissociation of an inactive Nurr1-RXR\u03b1 heterodimer. These data will be important for biochemists and cell biologists working on regulatory / activation mechanisms of nuclear hormone receptors.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, https://ror.org/04cvxnb49 Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85039.sa1](https://doi.org/10.7554/eLife.85039.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Molecular basis of ligand-dependent Nurr1-RXR\u03b1 activation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Volker D\u00f6tsch as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Sean W Fanning (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The RXR\u0251 antagonist HX531 has little to no effect on Nurr1-RXR\u0251 reporter activity like the other RXR\u0251 antagonists Rhein and Danthron (Figure 3b) but appears to selectively induce a >5-fold enhancement in the apparent affinity of LBD heterodimerization (Figure 5b) that seems inconsistent with the proposed model. The authors address a potential caveat with their analysis of the ITC data on lines 68-77 of page 4 but don't comment on any specific ligands or data. As a result, the correlation analyses presented in Figure 5c-d, although largely compelling, may be oversimplified. This is also true in Figure 6, where the correlation between reporter activity and Nurr1 monomerization assessed by NMR (Figure 6c) is much weaker than that with the ITC data (Figure 6e). Can the authors comment on the overall rigor and suitability of this simple correlative approach to justify these apparent discrepancies?\n\n2) Related: In the correlation studies the authors include danthron and rhein as compounds in the Nurr1/RXR assay but not in the RXR PPI and RXR CTF assay. It is not clear if they are included in the correlation graphs in Figure 4 either; however, if they are excluded there should be a reason indicated. How do these compounds behave in the other assays?\n\n3) Can the authors clarify how many independent times ITC data were collected for each ligand? The legend for Figure 5 states n = 1, but the methods state that at least two independent experiments were done. If so, the KD values in Figures 5 and 6 should reflect all of the data unless this is justified explicitly.\n\n4) Related: Asterisks are used to indicate significance but the p-values assigned to them are not discussed in the figure legends nor in the methods. Also, in Figure 5b, error bars are not shown for the Kd values, and significance isn't shown between treatments. Adding in this statistical analysis would help judge whether dimerization differences are meaningful between ligands.\n\n5) Since ITC is being used, information on changes to the heats, Gibbs free energy, enthalpy, and entropy should be available. Some discussion on whether changes to the observed binding affinities are ethically or entropically driven would be of interest to the biothermodynamics community.\n\n6) Is there a way to estimate the error of measuring Nurr1 monomer populations by NMR in Figure 6a, b, c, and e? This could also be useful in making correlations in Figure 6.\n\n7) Response at 1 \u03bcM was shown but no dose-response studies were performed to show differences in potency. These could be potentially correlated with the later studies to see if there's a relationship between transcriptional activities and dimerization affinity. Are such dose-response curves available?\n\n8) Binding studies were only done for RXRalpha and the coregulator peptide. It would have been interesting to learn if the coregulator peptide binds the RXR-Nurr1 heterodimer. Comments?\n\n9) HX531 appears to significantly enhance heterodimerization, is there any speculation as to why this is?\n\n10) Should state in the cell culture section whether STR profiling was done to confirm cell line identity during the study, similar to mycoplasma testing.\n\n11) In Figure 1, one of the key constructs (the \u03b4 LBD) shows high variability in its activity. Although it is not statistically different than the FL-Nurr1 control the variability that ranges from the FL-Nurr1 control to the FL-Nurr1/Fl-RARa group. Clearly, the LBD is playing a role, but my concern is that it might not be quite so clean. Is it possible that there is a contribution from the RXR DBD in this assay?\n\n12) On page 4 line 43 the authors state,\"\u2026the two selective Nurr1-RXRa activating compounds BRF110 and HX600 function as pharmacological RXRa antagonists in these assays \u2013 a clear example that pharmacological RXRa modulation of Nurr-1/RXRa modulation is distinct\". It isn't clear what assays the authors are referring to where these two compounds behaved as antagonists. This paragraph is prior to the presentation of the heterodimer assay where heterodimer formation is inhibited and in the previously presented assays these compounds were either activators (Nurr1/RXR), inactive (RXR coactivator PPI), or inactive/weak activators (RXR). Please clarify.\n\nReviewer #1 (Recommendations for the authors):\n\nThe RXR\u0251 antagonist HX531 has little to no effect on Nurr1-RXR\u0251 reporter activity like the other RXR\u0251 antagonists Rhein and Danthron (Figure 3b) but appears to selectively induce a >5-fold enhancement in the apparent affinity of LBD heterodimerization (Figure 5b) that seems inconsistent with the proposed model. The authors address a potential caveat with their analysis of the ITC data on lines 68-77 of page 4 but don't comment on any specific ligands or data. As a result, the correlation analyses presented in Figure 5c-d, although largely compelling, may be oversimplified. This is also true in Figure 6, where the correlation between reporter activity and Nurr1 monomerization assessed by NMR (Figure 6c) is much weaker than that with the ITC data (Figure 6e). Can the authors comment on the overall rigor and suitability of this simple correlative approach to justify these apparent discrepancies? I don't think more work necessarily needs to be done, but perhaps a more explicit description of caveats and possible implications for their model would be helpful.\n\nCan the authors clarify how many independent times ITC data were collected for each ligand? The legend for Figure 5 states n = 1, but the methods state that at least two independent experiments were done. If so, the KD values in Figures 5 and 6 should reflect all of the data unless this is justified explicitly.\n\nIs there a way to estimate the error of measuring Nurr1 monomer populations by NMR in Figure 6a, b, c, and e? This could also be useful in making correlations in Figure 6.\n\nReviewer #2 (Recommendations for the authors):\n\nCongratulations on a compelling and high-impact study. I have a few recommendations that I believe will enhance the significance of this study.\n\nIntroduction\n\nThere's a typo in the first sentence of paragraph 2.\n\n* are used for significance but the p-values assigned to them are not discussed in the figure legends nor in the methods that I could find.\n\nResults\n\nThe second section discussing RXR ligands and Nurr1 transcriptional activity.\n\n\u2013 Response at 1 \u03bcM was shown but no dose-response studies were performed to show differences in potency. These could be potentially correlated with the later studies to see if there's a relationship between transcriptional activities and dimerization affinity.\n\nThird section looking at RXR coregulator binding.\n\n\u2013 Binding studies were only done for RXRalpha and the coregulator peptide. It would have been interesting to learn if the coregulator peptide binds the RXR-Nurr1 heterodimer.\n\nFourth section using ITC to study heterodimerization.\n\nIn figure 5b, error bars are not shown for the Kd values, and significance isn't shown between treatments. Adding in this statistical analysis would help judge whether dimerization differences are meaningful between ligands.\n\n\u2013 HX531 appears to significantly enhance heterodimerization, is there any speculation as to why this is?\n\n\u2013 Since ITC is being used, you should have information on changes to the heats, Gibbs free energy, enthalpy, and entropy. Some discussion on whether changes to the observed binding affinities are enthalpically or entropically driven would be of interest to the biothermodynamics community.\n\nMaterials and methods\n\nShould state in the cell culture section whether STR profiling was done to confirm cell line identity during your study, similar with mycoplasma testing.\n\nOverall: Are there any inferences for this allostery that could be made based on existing RXRalpha co-crystal structures? An analysis of RXR allostery at the end could point to the mechanism of Nurr1 specificity. This would be a very interesting future study.\n\nReviewer #3 (Recommendations for the authors):\n\nIn Figure 1, one of the key constructs (the \u03b4 LBD) shows high variability in its activity. Although it is not statistically different than the FL-Nurr1 control the variability that ranges from the FL-Nurr1 control to the FL-Nurr1/Fl-RARa group. Clearly, the LBD is playing a role, but my concern is that it might not be quite so clean. Is it possible that there is a contribution from the RXR DBD in this assay? Otherwise, what do the authors believe causes this variability in this particular group?\n\nIn the correlation studies the authors include danthron and rhein as compounds in the Nurr1/RXR assay but not in the RXR PPI and RXR CTF assay. It is not clear if they are included in the correlation graphs in Figure 4 either; however, if they are excluded there should be a reason indicated. How do these compounds behave in the other assays?\n\nOn page 4 line 43 the authors state,\"\u2026the two selective Nurr1-RXRa activating compounds BRF110 and HX600 function as pharmacological RXRa antagonists in these assays \u2013 a clear example that pharmacological RXRa modulation of Nurr-1/RXRa modulation is distinct\". It isn't clear to me what assays the authors are referring to where these two compounds behaved as antagonists. This paragraph is prior to the presentation of the heterodimer assay where heterodimer formation is inhibited and in the previously presented assays these compounds were either activators (Nurr1/RXR), inactive (RXR coactivator PPI), or inactive/weak activators (RXR).\n",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3d48f698-75f5-4436-900c-90d12f808f6c",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C1",
+      "claim": "Small molecule compounds that activate transcription of Nurr1-retinoid X receptor alpha (RXR\u03b1) (NR4A2-NR2B1) nuclear receptor heterodimers are implicated in the treatment of neurodegenerative disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Small molecule compounds that activate transcription of Nurr1-retinoid X receptor alpha (RXR\u03b1) (NR4A2-NR2B1) nuclear receptor heterodimers are implicated in the treatment of neurodegenerative disorders, but function through poorly understood mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the broader literature context and established knowledge in the field regarding therapeutic implications.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "97aacb26-d22c-4a6a-9069-4a20e107b1cc",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C2",
+      "claim": "RXR\u03b1 ligands activate Nurr1-RXR\u03b1 through a mechanism that involves ligand-binding domain (LBD) heterodimer protein-protein interaction (PPI) inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that RXR\u03b1 ligands activate Nurr1-RXR\u03b1 through a mechanism that involves ligand-binding domain (LBD) heterodimer protein-protein interaction (PPI) inhibition, a paradigm distinct from classical pharmacological mechanisms of ligand-dependent nuclear receptor modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript including NMR spectroscopy, PPI, and cellular transcription assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "efee1866-f126-4541-9ff0-8b76d90a892e",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C3",
+      "claim": "Nurr1-RXR\u03b1 transcriptional activation by RXR\u03b1 ligands is not correlated with classical RXR\u03b1 agonism.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR spectroscopy, PPI, and cellular transcription assays show that Nurr1-RXR\u03b1 transcriptional activation by RXR\u03b1 ligands is not correlated with classical RXR\u03b1 agonism but instead correlated with weakening Nurr1-RXR\u03b1 LBD heterodimer affinity and heterodimer dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis of TR-FRET, transcriptional reporter, and other experimental data showing lack of correlation between classical RXR\u03b1 agonism and Nurr1-RXR\u03b1 activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "e070714b-e48b-4dad-ba1a-6ffb36902db9",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C4",
+      "claim": "Nurr1-RXR\u03b1 transcriptional activation by RXR\u03b1 ligands is correlated with weakening Nurr1-RXR\u03b1 LBD heterodimer affinity and heterodimer dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR spectroscopy, PPI, and cellular transcription assays show that Nurr1-RXR\u03b1 transcriptional activation by RXR\u03b1 ligands is not correlated with classical RXR\u03b1 agonism but instead correlated with weakening Nurr1-RXR\u03b1 LBD heterodimer affinity and heterodimer dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC measurements of heterodimer affinity, NMR data showing monomer populations, and correlation with transcriptional activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "d1435af9-100a-4b73-9384-14d21e063bc5",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C5",
+      "claim": "Pharmacologically distinct RXR\u03b1 ligands (RXR\u03b1 homodimer agonists and Nurr1-RXR\u03b1 heterodimer selective agonists that function as RXR\u03b1 homodimer antagonists) operate as allosteric PPI inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data inform a model by which pharmacologically distinct RXR\u03b1 ligands (RXR\u03b1 homodimer agonists and Nurr1-RXR\u03b1 heterodimer selective agonists that function as RXR\u03b1 homodimer antagonists) operate as allosteric PPI inhibitors that release a transcriptionally active Nurr1 monomer from a repressive Nurr1-RXR\u03b1 heterodimeric complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the integration of multiple experimental approaches showing ligand-dependent heterodimer dissociation and transcriptional activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "b4241261-592a-40d9-8d19-f1ea0ff7bd03",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C6",
+      "claim": "RXR\u03b1 ligands release a transcriptionally active Nurr1 monomer from a repressive Nurr1-RXR\u03b1 heterodimeric complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data inform a model by which pharmacologically distinct RXR\u03b1 ligands (RXR\u03b1 homodimer agonists and Nurr1-RXR\u03b1 heterodimer selective agonists that function as RXR\u03b1 homodimer antagonists) operate as allosteric PPI inhibitors that release a transcriptionally active Nurr1 monomer from a repressive Nurr1-RXR\u03b1 heterodimeric complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NMR data showing monomer release, SEC data showing dissociation, and transcriptional reporter data showing increased activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "0e1372ec-d2d2-422c-951d-72fb3dbf7fff",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C7",
+      "claim": "Nurr1 is essential for the development, regulation, and maintenance of several important aspects of mammalian brain development and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Nurr1 (nuclear receptor related 1 protein; NR4A2) is a nuclear receptor (NR) transcription factor that is essential for the development, regulation, and maintenance of several important aspects of mammalian brain development and homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge in the field and citations to prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "d295983a-33a6-45e5-8325-e315c3221550",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C8",
+      "claim": "Nurr1 is critical in the development of dopaminergic neurons that are critical for control of movement that degenerates in Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Nurr1 is critical in the development of dopaminergic neurons that are critical for control of movement that degenerates in Parkinson's disease (PD) (Decressac et al., 2013; Jiang et al., 2005; Zetterstr\u00f6m et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "3acbd724-62ab-4b68-9d30-7083474e4054",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C9",
+      "claim": "Nurr1 is an important factor in the regulation of neuroinflammation and accumulation of amyloid beta that occurs in the pathogenesis of Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies show that Nurr1 is an important factor in the regulation of neuroinflammation and accumulation of amyloid beta that occurs in the pathogenesis of Alzheimer's disease (AD) (Jeon et al., 2020; Moon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "48e2d755-b926-478b-a5c2-2a359b7a00ab",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C10",
+      "claim": "Small molecule activation of Nurr1 is implicated as a potential therapeutic strategy in aging-associated neurodegenerative and dementia disorders characterized by a loss of neuron function.",
+      "claim_type": "EXPLICIT",
+      "source": "These and other studies implicate small molecule activation of Nurr1 as a potential therapeutic strategy in aging-associated neurodegenerative and dementia disorders characterized by a loss of neuron function (Moutinho et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and inference from the cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "70a05e12-67b9-44d4-9e0f-f6f3f1b99283",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C11",
+      "claim": "Nurr1 contains the conserved NR domain architecture including an N-terminal activation function-1 (AF-1) domain, a central DNA-binding domain (DBD), and a C-terminal ligand-binding domain (LBD).",
+      "claim_type": "EXPLICIT",
+      "source": "Nurr1 contains the conserved NR domain architecture (Weikum et al., 2018) including an N-terminal activation function-1 (AF-1) domain, a central DNA-binding domain (DBD), and a C-terminal ligand-binding domain (LBD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature describing nuclear receptor architecture.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "cd0e5c5c-a86b-46da-b2d2-e2f69bb9a74d",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C12",
+      "claim": "Crystal structures of Nurr1 LBD show no classical orthosteric ligand-binding pocket volume.",
+      "claim_type": "EXPLICIT",
+      "source": "However, crystal structures have revealed properties of Nurr1 LBD that suggest it may function in an atypical ligand-independent manner. The structures show no classical orthosteric ligand-binding pocket volume as well as a reversed 'charge clamp' AF-2 surface that prevents the LBD from interacting with typical NR transcriptional coregulator proteins (Wang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to crystal structure studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "01dd66bc-85f5-44fc-bb68-ddf1f62d2ecb",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C13",
+      "claim": "Nurr1 LBD has a reversed 'charge clamp' AF-2 surface that prevents the LBD from interacting with typical NR transcriptional coregulator proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures show no classical orthosteric ligand-binding pocket volume as well as a reversed 'charge clamp' AF-2 surface that prevents the LBD from interacting with typical NR transcriptional coregulator proteins (Wang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to crystal structure studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "c02c83e0-e356-4a47-b407-db046d3e785b",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C14",
+      "claim": "Solution-state structural studies indicate the Nurr1 LBD is dynamic and can likely expand to bind endogenous ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "However, solution-state structural studies indicate the Nurr1 LBD is dynamic and can likely expand to bind endogenous ligands (de Vera et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior NMR structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "a427a3c0-bd72-410c-877c-18f79f6c095e",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C15",
+      "claim": "Some reported Nurr1 ligands function independent of binding to its LBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Although endogenous and synthetic ligands have been reported to bind and/or regulate Nurr1 activity (Bruning et al., 2019; de Vera et al., 2016; Kim et al., 2015; Rajan et al., 2020; Willems and Merk, 2022), some reported Nurr1 ligands function independent of binding to its LBD (Munoz-Tello et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "49d57319-5000-4966-986a-124329aa719a",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C16",
+      "claim": "Heterodimerization with RXR\u03b1 represses Nurr1 transcription on monomeric DNA response elements called NBREs.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterodimerizaton with RXR\u03b1 represses Nurr1 transcription on monomeric DNA response elements called NBREs (Aarnisalo et al., 2002; Forman et al., 1995) that are present in the promoter regions of genes that regulate dopaminergic signaling including tyrosine hydroxylase (Iwawaki et al., 2000; Kim et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "b7d8d66f-9a5c-447b-8471-9b6c6837c84a",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C17",
+      "claim": "NBREs are present in the promoter regions of genes that regulate dopaminergic signaling including tyrosine hydroxylase.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterodimerizaton with RXR\u03b1 represses Nurr1 transcription on monomeric DNA response elements called NBREs (Aarnisalo et al., 2002; Forman et al., 1995) that are present in the promoter regions of genes that regulate dopaminergic signaling including tyrosine hydroxylase (Iwawaki et al., 2000; Kim et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "057ce3a1-6483-4e10-ae78-28fc6f85e89a",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C18",
+      "claim": "Classical pharmacological RXR\u03b1 agonists enhance Nurr1-RXR\u03b1 transcription on NBREs.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that classical pharmacological RXR\u03b1 agonists enhance Nurr1-RXR\u03b1 transcription on NBREs (Aarnisalo et al., 2002; Forman et al., 1995; Perlmann and Jansson, 1995; Wallen-Mackenzie et al., 2003) inspired the discovery of RXR\u03b1-binding ligands that display biased activation of Nurr1-RXR\u03b1 heterodimers over other NR-RXR\u03b1 heterodimers or RXR\u03b1 homodimers (Giner et al., 2015; Morita et al., 2005; Scheepstra et al., 2017; Spathis et al., 2017; Sund\u00e9n et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "6f23d0ce-bd5e-4b99-b5a6-6d9244ceb580",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C19",
+      "claim": "RXR\u03b1-binding ligands have been discovered that display biased activation of Nurr1-RXR\u03b1 heterodimers over other NR-RXR\u03b1 heterodimers or RXR\u03b1 homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that classical pharmacological RXR\u03b1 agonists enhance Nurr1-RXR\u03b1 transcription on NBREs (Aarnisalo et al., 2002; Forman et al., 1995; Perlmann and Jansson, 1995; Wallen-Mackenzie et al., 2003) inspired the discovery of RXR\u03b1-binding ligands that display biased activation of Nurr1-RXR\u03b1 heterodimers over other NR-RXR\u03b1 heterodimers or RXR\u03b1 homodimers (Giner et al., 2015; Morita et al., 2005; Scheepstra et al., 2017; Spathis et al., 2017; Sund\u00e9n et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "f4912298-6596-4bc9-8e19-503d6573934e",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C20",
+      "claim": "The RXR\u03b1 LBD is both necessary and sufficient for repression of Nurr1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Cotransfected RXR\u03b1 expression plasmid repressed Nurr1 transcription, and RXR\u03b1 truncation constructs show that the RXR\u03b1 LBD is both necessary and sufficient for repression of Nurr1 transcription (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from transcriptional reporter assays with RXR\u03b1 truncation constructs shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "0f8746a0-49ec-4c79-86d7-329c310ff296",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C21",
+      "claim": "Full-length RXR\u03b1 does not bind to monomeric NBRE sequences via the RXR\u03b1 DBD.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings implicate an LBD-driven PPI mechanism with a negligible or minor role for the RXR\u03b1 DBD, which is consistent with published studies that showed full-length RXR\u03b1 does not bind to monomeric NBRE sequences via the RXR\u03b1 DBD, but does interact with Nurr1 that is bound to NBRE DNA sequences via a PPI (Sacchetti et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies and consistency with the authors' experimental findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "4138390f-b801-4d78-877d-d96b0e86a34b",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C22",
+      "claim": "RXR\u03b1 interacts with Nurr1 that is bound to NBRE DNA sequences via a protein-protein interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings implicate an LBD-driven PPI mechanism with a negligible or minor role for the RXR\u03b1 DBD, which is consistent with published studies that showed full-length RXR\u03b1 does not bind to monomeric NBRE sequences via the RXR\u03b1 DBD, but does interact with Nurr1 that is bound to NBRE DNA sequences via a PPI (Sacchetti et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "71de1489-445f-430f-9a7f-7ca365ebcfa7",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C23",
+      "claim": "RXR ligands can activate transcription of a Gal4 DBD-Nurr1 LBD fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, RXR ligands can activate transcription of a Gal4 DBD-Nurr1 LBD fusion protein, but not a Gal4 DBD-Nurr1 LBD mutant (Nurr1dim) that cannot heterodimerize with RXR\u03b1 (Aarnisalo et al., 2002; Wallen-Mackenzie et al., 2003), which further implicates the RXR\u03b1 LBD in repression of Nurr1 LBD-mediated transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "f6c724ec-81f6-44c7-bdc7-7c7bf8e00811",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C24",
+      "claim": "RXR ligands cannot activate transcription of a Gal4 DBD-Nurr1 LBD mutant (Nurr1dim) that cannot heterodimerize with RXR\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, RXR ligands can activate transcription of a Gal4 DBD-Nurr1 LBD fusion protein, but not a Gal4 DBD-Nurr1 LBD mutant (Nurr1dim) that cannot heterodimerize with RXR\u03b1 (Aarnisalo et al., 2002; Wallen-Mackenzie et al., 2003), which further implicates the RXR\u03b1 LBD in repression of Nurr1 LBD-mediated transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "6cb5eb49-db60-4ba9-bf4c-b3f3da88ee14",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C25",
+      "claim": "Compounds reported as RXR\u03b1 agonists increase Nurr1-RXR\u03b1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds reported as RXR\u03b1 agonists increase Nurr1-RXR\u03b1 transcription (Figure 3b), and among the most efficacious agonist ligands includes endogenous metabolite 9-cis-retinoic acid (9cRA) and bexarotene, the latter of which was reported to display biased activation of Nurr1-RXR heterodimers over RXR homodimers (McFarland et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3b from transcriptional reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "5237c77c-7709-4dfe-815a-7800d558c9e9",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C26",
+      "claim": "9-cis-retinoic acid (9cRA) is among the most efficacious agonist ligands for Nurr1-RXR\u03b1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds reported as RXR\u03b1 agonists increase Nurr1-RXR\u03b1 transcription (Figure 3b), and among the most efficacious agonist ligands includes endogenous metabolite 9-cis-retinoic acid (9cRA) and bexarotene, the latter of which was reported to display biased activation of Nurr1-RXR heterodimers over RXR homodimers (McFarland et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "a06401a6-0195-401f-8676-71b7a77c6656",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C27",
+      "claim": "Bexarotene is among the most efficacious agonist ligands for Nurr1-RXR\u03b1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds reported as RXR\u03b1 agonists increase Nurr1-RXR\u03b1 transcription (Figure 3b), and among the most efficacious agonist ligands includes endogenous metabolite 9-cis-retinoic acid (9cRA) and bexarotene, the latter of which was reported to display biased activation of Nurr1-RXR heterodimers over RXR homodimers (McFarland et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3b and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "b4545aff-0100-4e38-afce-bea9f3376348",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C28",
+      "claim": "Bexarotene displays biased activation of Nurr1-RXR heterodimers over RXR homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds reported as RXR\u03b1 agonists increase Nurr1-RXR\u03b1 transcription (Figure 3b), and among the most efficacious agonist ligands includes endogenous metabolite 9-cis-retinoic acid (9cRA) and bexarotene, the latter of which was reported to display biased activation of Nurr1-RXR heterodimers over RXR homodimers (McFarland et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "4663e99a-b34d-458e-aeee-c432d924037c",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C29",
+      "claim": "RXR\u03b1 antagonists showed relatively no change or slightly decreased transcription of Nurr1-RXR\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "RXR\u03b1 antagonists showed relatively no change or slightly decreased transcription of Nurr1-RXR\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from transcriptional reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "a65790b0-6fa7-4399-9d8e-12377d490280",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C30",
+      "claim": "BRF110 and HX600 displayed the highest activity of all compounds tested in activating Nurr1-RXR\u03b1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The two Nurr1-RXR\u03b1 selective agonists, BRF110 and HX600, displayed the highest activity of all compounds tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from transcriptional reporter assays shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "8975dd0d-47ca-4c44-8017-87ec6bfc3317",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C31",
+      "claim": "No significant correlation was observed between coactivator peptide recruitment to the RXR\u03b1 LBD and Nurr1-RXR\u03b1 transcription for the RXR\u03b1 ligand set.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no significant correlation was observed between coactivator peptide recruitment to the RXR\u03b1 LBD and Nurr1-RXR\u03b1 transcription for the RXR\u03b1 ligand set (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of TR-FRET and transcriptional reporter data shown in Figure 4e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "5c2d0ced-da12-4bc7-ae12-40dc40326fe7",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C32",
+      "claim": "No significant correlation is observed between RXR\u03b1 homodimer transcription and Nurr1-RXR\u03b1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, no significant correlation is observed between RXR\u03b1 homodimer transcription and Nurr1-RXR\u03b1 transcription (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 4f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "76bd2b4b-26a0-4977-a7b9-80fc3ee7ff91",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C33",
+      "claim": "A strong correlation is observed between RXR\u03b1 LBD TR-FRET data and full-length RXR\u03b1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a strong correlation is observed between RXR\u03b1 LBD TR-FRET data and full-length RXR\u03b1 transcription (Figure 4g) where ligands that increase PGC-1\u03b1 coactivator peptide interaction to the RXR\u03b1 LBD activate transcription of full-length RXR\u03b1 in cells, similar to what we observed for PPAR\u03b3 agonists with graded agonist transcriptional activity (Shang et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 4g and comparison to prior published work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "f3733a48-a06f-40ee-bcf7-b92ee380c636",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C34",
+      "claim": "BRF110 functions as a pharmacological antagonist in the RXR\u03b1 homodimer TR-FRET assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The two selective Nurr1-RXR\u03b1 activating compounds, BRF110 and HX600, function as a pharmacological antagonist and weak/partial graded agonist in the RXR\u03b1 homodimer TR-FRET and transcriptional reporter assay, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental TR-FRET data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "ec710490-4559-490b-8a07-0455ee656a99",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C35",
+      "claim": "HX600 functions as a weak/partial graded agonist in the RXR\u03b1 homodimer TR-FRET and transcriptional reporter assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The two selective Nurr1-RXR\u03b1 activating compounds, BRF110 and HX600, function as a pharmacological antagonist and weak/partial graded agonist in the RXR\u03b1 homodimer TR-FRET and transcriptional reporter assay, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental TR-FRET and transcriptional reporter data shown in Figures 4b and 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "ba5173ee-a732-45f5-954b-e6b8a787c125",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C36",
+      "claim": "Ligand-dependent RXR\u03b1 homodimer modulation and Nurr1-RXR\u03b1 heterodimer modulation may function through distinct mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the mechanism by which the RXR\u03b1 ligand set influences Nurr1-RXR\u03b1 transcription may occur independent of coregulator recruitment to the RXR\u03b1 LBD and RXR\u03b1-mediated transcription\u2014indicating that ligand-dependent RXR\u03b1 homodimer modulation and Nurr1-RXR\u03b1 heterodimer modulation may function through distinct mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the lack of correlation between RXR\u03b1 homodimer activity and Nurr1-RXR\u03b1 heterodimer activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "4ad4bc8f-02db-4df8-9bec-5f019cef9816",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C37",
+      "claim": "A significant correlation exists between Nurr1-RXR\u03b1 LBD heterodimerization affinity and Nurr1-RXR\u03b1 transcription where RXR\u03b1 ligands that weaken heterodimerization affinity show higher Nurr1-RXR\u03b1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these limitations, a significant correlation between Nurr1-RXR\u03b1 LBD heterodimerization affinity and Nurr1-RXR\u03b1 transcription where RXR\u03b1 ligands that weaken heterodimerization affinity show higher Nurr1-RXR\u03b1 transcription (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of ITC-determined heterodimer affinity and transcriptional reporter data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "3de2a85d-2821-4b97-a239-72b0cbf435f6",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C38",
+      "claim": "Compounds that decrease Nurr1-RXR\u03b1 LBD heterodimer binding affinity show an increasing (less favorable) \u0394H component and an increasing (more favorable) \u0394S component.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, compounds that decrease Nurr1-RXR\u03b1 LBD heterodimer binding affinity show an increasing (less favorable) \u0394H component and an increasing (more favorable) \u0394S component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by thermodynamic analysis of ITC data shown in Table 1 and Figures 5d and 5e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "40ee8286-dc0a-4430-b4f5-9b6f6f1c9faa",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C39",
+      "claim": "Nurr1-RXR\u03b1 activating ligands perturb the Nurr1-RXR\u03b1 LBD heterodimer conformational ensemble toward a monomeric Nurr1 LBD population in slow exchange on the NMR time scale.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Nurr1-RXR\u03b1 activating ligands perturb the Nurr1-RXR\u03b1 LBD heterodimer conformational ensemble toward a monomeric Nurr1 LBD population in slow exchange on the NMR time scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by 2D NMR data showing appearance of monomer peaks upon ligand addition as shown in Figure 6a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "8a4883dd-925f-4752-ae92-79e2805b146d",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C40",
+      "claim": "A significant correlation is observed between NMR-observed Nurr1 LBD monomeric populations and Nurr1-RXR\u03b1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this limitation, a significant correlation is observed between NMR-observed Nurr1 LBD monomeric populations and Nurr1-RXR\u03b1 transcription (Figure 6d) and ITC-determined Nurr1-RXR\u03b1 LBD heterodimerization affinity (Figure 6e), indicating a role for dissociation of monomeric Nurr1 LBD from Nurr1-RXR\u03b1 LBD heterodimer in the mechanism of action of the RXR\u03b1 ligand set.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 6d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "13d4e58d-134d-4e42-9be4-afc1cd3307ad",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C41",
+      "claim": "A significant correlation is observed between NMR-observed Nurr1 LBD monomeric populations and ITC-determined Nurr1-RXR\u03b1 LBD heterodimerization affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this limitation, a significant correlation is observed between NMR-observed Nurr1 LBD monomeric populations and Nurr1-RXR\u03b1 transcription (Figure 6d) and ITC-determined Nurr1-RXR\u03b1 LBD heterodimerization affinity (Figure 6e), indicating a role for dissociation of monomeric Nurr1 LBD from Nurr1-RXR\u03b1 LBD heterodimer in the mechanism of action of the RXR\u03b1 ligand set.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 6e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "be71bfbd-95b0-4a80-aef3-17fceff0957a",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C42",
+      "claim": "BRF110 shows the largest effect in dissociating a Nurr1 LBD monomer species in the SEC and NMR studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nurr1-RXR\u03b1 selective agonist, BRF110, shows the largest effect in dissociating a Nurr1 LBD monomer species in the SEC and NMR studies and is overall the most efficacious compound in activating Nurr1-RXR\u03b1 transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SEC data shown in Figure 6f and NMR data shown in Figure 6a and 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "b5f9ac58-0052-4e18-98c7-3e24168c2c8a",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C43",
+      "claim": "BRF110 is overall the most efficacious compound in activating Nurr1-RXR\u03b1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nurr1-RXR\u03b1 selective agonist, BRF110, shows the largest effect in dissociating a Nurr1 LBD monomer species in the SEC and NMR studies and is overall the most efficacious compound in activating Nurr1-RXR\u03b1 transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by transcriptional reporter data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "a86a29a4-45d5-4d64-82ba-60bc7659462f",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C44",
+      "claim": "Most pharmacological RXR\u03b1 antagonists do not dissociate a Nurr1 LBD monomer species except for UVI3003.",
+      "claim_type": "EXPLICIT",
+      "source": "Most pharmacological RXR\u03b1 antagonists we studied do not dissociate a Nurr1 LBD monomer species except for UVI3003, which displays a unique SEC profile that includes a monomeric Nurr1 LBD species and at least two species with a larger hydrodynamic radius (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SEC data shown in Figure 6f and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "f9a3b266-eac3-4bee-804d-d4892643fbf8",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C45",
+      "claim": "UVI3003 functions similar to the Nurr1-RXR\u03b1 selective ligands (BRF110 and HX600) in that it activates Nurr1-RXR\u03b1 transcription while antagonizing RXR\u03b1 homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our structure-function profiling data indicate UVI3003 functions similar to the Nurr1-RXR\u03b1 selective ligands (BRF110 and HX600) in that it activates Nurr1-RXR\u03b1 transcription while antagonizing RXR\u03b1 homodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by integration of transcriptional reporter and TR-FRET data for UVI3003.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "8137fb7a-693d-426f-99fc-68ba096be9a0",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C46",
+      "claim": "In the absence of ligand, RXR\u03b1 exists as a mixture of homodimers and homotetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ligand, RXR\u03b1 exists as a mixture of homodimers and homotetramers (Kersten et al., 1995a), which can be stabilized as dimers upon agonist binding (Kersten et al., 1995b) or tetramers upon antagonist binding (Zhang et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "027cb2fc-ff10-40aa-b3e8-5d531e391806",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C47",
+      "claim": "RXR\u03b1 can be stabilized as dimers upon agonist binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ligand, RXR\u03b1 exists as a mixture of homodimers and homotetramers (Kersten et al., 1995a), which can be stabilized as dimers upon agonist binding (Kersten et al., 1995b) or tetramers upon antagonist binding (Zhang et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "f8b383d4-2246-4f84-aa69-9d78e0466706",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C48",
+      "claim": "RXR\u03b1 can be stabilized as tetramers upon antagonist binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ligand, RXR\u03b1 exists as a mixture of homodimers and homotetramers (Kersten et al., 1995a), which can be stabilized as dimers upon agonist binding (Kersten et al., 1995b) or tetramers upon antagonist binding (Zhang et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "d08610e7-017b-479f-bb00-ac3a6537579d",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C49",
+      "claim": "The most efficacious compounds not only free a Nurr1 LBD monomeric population, but also increase a higher order species with an elution volume consistent with a RXR\u03b1 LBD homotetramer population.",
+      "claim_type": "EXPLICIT",
+      "source": "In our SEC data, the most efficacious compounds not only free a Nurr1 LBD monomeric population, but also increase a higher order species with an elution volume consistent with a RXR\u03b1 LBD homotetramer population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SEC data shown in Figure 6f and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "4b2c3f4e-2e8b-48a6-89e3-fa122a440d24",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C50",
+      "claim": "The higher order species observed when BRF110 is added to Nurr1-RXR\u03b1 LBD heterodimers contains RXR\u03b1 LBD only.",
+      "claim_type": "EXPLICIT",
+      "source": "SDS-PAGE analysis confirms this observation and reveals that the higher order species observed when BRF110 is added to Nurr1-RXR\u03b1 LBD heterodimers contains RXR\u03b1 LBD only (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SDS-PAGE analysis shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "beff0242-59bc-4f34-be2f-cbdd8a927397",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C51",
+      "claim": "Approximately 90% of the variance in the data can be explained by the two principal components in PCA analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 90% of the variance in the data can be explained by the two PCs (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCA analysis shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "bd3dd650-faeb-4a6b-8683-1e7f316d7a50",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C52",
+      "claim": "Nurr1-RXR\u03b1 transcription, ITC-determined Nurr1-RXR\u03b1 heterodimer affinity, and NMR-determined Nurr1 monomeric populations are positively correlated with ligand-dependent Nurr1-RXR\u03b1 heterodimer dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "The loadings show that Nurr1-RXR\u03b1 transcription, ITC-determined Nurr1-RXR\u03b1 heterodimer affinity, and NMR-determined Nurr1 monomeric populations are clustered together and clustered along with the Nurr1-RXR\u03b1 selective ligands, meaning these features of the data are positively correlated with ligand-dependent Nurr1-RXR\u03b1 heterodimer dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by PCA analysis shown in Figure 7a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "95966ba2-056c-4cdf-88b3-8dad4c61246f",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C53",
+      "claim": "The features of classical RXR\u03b1 agonism and selective Nurr1-RXR\u03b1 agonism are uncorrelated.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the loading projections show that the features of classical RXR\u03b1 agonism and selective Nurr1-RXR\u03b1 agonism are uncorrelated since the loadings trajectories associated with these features, and their associated ligand clusters, form a perpendicular (~90\u00b0) angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from PCA analysis shown in Figure 7a where perpendicular loading trajectories indicate lack of correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "458af060-594e-4ed1-a9e6-150c73f7388e",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C54",
+      "claim": "Bexarotene and IRX4204 have progressed to clinical trials of PD and AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Several RXR\u03b1 ligands that increase Nurr1-RXR\u03b1 activation have progressed to clinical trials of PD and AD including bexarotene and IRX4204 (McFarland et al., 2013; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "29fdc873-0ea7-41cc-90e7-132aa4a36ea0",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C55",
+      "claim": "Nurr1-RXR\u03b1 activation occurs through an LBD PPI inhibition heterodimer dissociation mechanism that is distinct from the classical pharmacological properties of NRs ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies demonstrate that Nurr1-RXR\u03b1 activation occurs through an LBD PPI inhibition heterodimer dissociation mechanism that is distinct from the classical pharmacological properties of NRs ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the integration of multiple experimental approaches presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "c8ed2348-73b3-46d0-9e64-ccee3490bdc8",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C56",
+      "claim": "The LBD heterodimer dissociation mechanism explains why pharmacological RXR\u03b1 agonists (e.g. bexarotene and IRX4204) and Nurr1-RXR\u03b1 selective compounds that function as pharmacological RXR\u03b1 antagonists (e.g. BRF110 and HX600) both activate Nurr1-RXR\u03b1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation mechanism explains why pharmacological RXR\u03b1 agonists (e.g. bexarotene and IRX4204) and Nurr1-RXR\u03b1 selective compounds that function as pharmacological RXR\u03b1 antagonists (e.g. BRF110 and HX600) both activate Nurr1-RXR\u03b1 transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing both types of compounds activate Nurr1-RXR\u03b1 via heterodimer dissociation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "2b54a7d4-34a2-41e5-85be-720156c6fd98",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C57",
+      "claim": "Nurr1 displays high transcriptional activity on monomeric NBRE sites as a monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Nurr1 displays high transcriptional activity on monomeric NBRE sites as a monomer, and RXR\u03b1 heterodimerization represses Nurr1 activity (Aarnisalo et al., 2002; Forman et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "be01500d-7e0c-43a9-9de0-0d145aa7d88a",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C58",
+      "claim": "RXR\u03b1 does not bind to NBRE sequences but does interact with Nurr1 bound to NBRE DNA sequences via a protein-protein tethering interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "RXR\u03b1 does not bind to NBRE sequences but does interact with Nurr1 bound to NBRE DNA sequences via a protein-protein tethering interaction (Sacchetti et al., 2002) and recruits corepressor proteins that are released upon binding RXR\u03b1 ligand (Lammi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "b4aa8b96-59d9-46b7-a7ca-6d0f929a62e7",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C59",
+      "claim": "RXR\u03b1 recruits corepressor proteins that are released upon binding RXR\u03b1 ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "RXR\u03b1 does not bind to NBRE sequences but does interact with Nurr1 bound to NBRE DNA sequences via a protein-protein tethering interaction (Sacchetti et al., 2002) and recruits corepressor proteins that are released upon binding RXR\u03b1 ligand (Lammi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "7a3b008c-e534-4546-9706-7ebe4b097c43",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C60",
+      "claim": "Pharmacological agonists of RXR\u03b1 stabilize an active RXR\u03b1 LBD conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological agonists of RXR\u03b1, which stabilize an active RXR\u03b1 LBD conformation (De Lera et al., 2007), as well as Nurr1-RXR\u03b1 selective compounds (Morita et al., 2005; Spathis et al., 2017) that function as pharmacological antagonists of RXR\u03b1, dissociate tethered Nurr1-RXR\u03b1 heterodimers leaving a monomeric Nurr1 bound to monomeric NBRE sites that has higher transcriptional activity than Nurr1-RXR\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "29bc3afb-2b08-4d02-bb11-610c99eda5db",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C61",
+      "claim": "Pharmacological agonists of RXR\u03b1 and Nurr1-RXR\u03b1 selective compounds that function as pharmacological antagonists of RXR\u03b1 dissociate tethered Nurr1-RXR\u03b1 heterodimers leaving a monomeric Nurr1 bound to monomeric NBRE sites that has higher transcriptional activity than Nurr1-RXR\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological agonists of RXR\u03b1, which stabilize an active RXR\u03b1 LBD conformation (De Lera et al., 2007), as well as Nurr1-RXR\u03b1 selective compounds (Morita et al., 2005; Spathis et al., 2017) that function as pharmacological antagonists of RXR\u03b1, dissociate tethered Nurr1-RXR\u03b1 heterodimers leaving a monomeric Nurr1 bound to monomeric NBRE sites that has higher transcriptional activity than Nurr1-RXR\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by integration of experimental data and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "5731a91e-c4bf-44da-b45c-7cdd9ea7cf22",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "claim_id": "C62",
+      "claim": "RXR\u03b1 ligands can function as allosteric PPI inhibitors that bind to the canonical orthosteric ligand-binding pocket within the RXR\u03b1 LBD and influence Nurr1-mediated transcription via Nurr1-RXR\u03b1 heterodimer dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our study shows that RXR\u03b1 ligands can function as allosteric PPI inhibitors that bind to the canonical orthosteric ligand-binding pocket within the RXR\u03b1 LBD and influence and Nurr1-mediated transcription via Nurr1-RXR\u03b1 heterodimer dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the integration of all experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fb5cb603-c9a7-481b-ae2c-5a36c1b06c1e",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Nurr1 is essential for brain development and homeostasis, particularly in dopaminergic neuron development relevant to Parkinson's disease and neuroinflammation in Alzheimer's disease. Small molecule activation of Nurr1 is implicated as a therapeutic strategy for neurodegenerative disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 are well-supported by citations to established literature. C1 provides appropriate context for the therapeutic rationale. These background claims establish the biological and clinical significance of Nurr1 as a drug target.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "2f33841d-d3fc-417a-a4bf-3e441e055f26",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nurr1 contains conserved nuclear receptor domain architecture but has atypical structural features including no classical ligand-binding pocket and a reversed charge clamp that prevents typical coregulator interactions. Some reported Nurr1 ligands function independent of LBD binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by citations to prior structural and functional studies (C11-C15). The structural characterization provides important context for understanding why alternative mechanisms of Nurr1 activation are being explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "1635ae16-8d63-4623-80ea-7e6911018d11",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RXR\u03b1 heterodimerization represses Nurr1 transcription on monomeric NBRE DNA response elements present in dopaminergic signaling genes. Classical RXR\u03b1 agonists and selective Nurr1-RXR\u03b1 ligands have been discovered that enhance Nurr1-RXR\u03b1 transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 are well-supported by citations to prior literature establishing the repressive role of RXR\u03b1 heterodimerization and the discovery of activating ligands. This provides essential background for the current mechanistic studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "aaaf077e-e789-42f3-ab8f-a6319bc0f93d",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The RXR\u03b1 LBD is necessary and sufficient for repression of Nurr1 transcription. RXR\u03b1 interacts with DNA-bound Nurr1 via protein-protein interaction rather than direct DNA binding, and this interaction is required for ligand-dependent activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C20 is supported by experimental truncation data in Figure 1b showing statistical significance. C21-C24 are supported by citations to prior studies and consistency with the authors' findings. The domain mapping provides important mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "6dbd9f6b-d83c-40f2-a0e0-f9c2872b8b5e",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RXR\u03b1 ligands display graded transcriptional activation of Nurr1-RXR\u03b1. Classical agonists including 9cRA and bexarotene increase transcription, antagonists show minimal effect, and selective agonists BRF110 and HX600 show the highest activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 are supported by transcriptional reporter data in Figure 3b with appropriate statistical testing. The graded response across different ligand classes is clearly demonstrated and provides the foundation for subsequent mechanistic studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "dc8912a4-492d-495e-b77b-7f0dcfd3e3d3",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Nurr1-RXR\u03b1 transcriptional activation is not correlated with classical RXR\u03b1 agonism (coactivator recruitment or RXR\u03b1 homodimer transcription). BRF110 and HX600 function as RXR\u03b1 antagonists/weak agonists while strongly activating Nurr1-RXR\u03b1, suggesting distinct mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 show lack of correlation with appropriate statistical analysis (Figure 4e-f), while C33 shows expected correlation for RXR\u03b1 homodimers (Figure 4g). C34-C35 are supported by TR-FRET and transcriptional data. The correlation analyses appropriately use both Pearson and Spearman coefficients and provide strong evidence for distinct mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "46e2b7ee-2848-4f97-ab9e-3537afa98605",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RXR\u03b1 ligands that weaken Nurr1-RXR\u03b1 LBD heterodimer affinity show higher transcriptional activation. Compounds that decrease heterodimer affinity show less favorable enthalpy and more favorable entropy components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C37 is supported by significant correlation between ITC-determined affinity and transcription (Figure 5c). C38 is supported by thermodynamic analysis in Table 1 and Figures 5d-e. However, the authors acknowledge limitations in the ITC analysis regarding assumptions about ligand-bound RXR\u03b1 homodimer affinity, which introduces some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "3ce9bd42-adab-48e1-ba57-80ceb4e9c250",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Nurr1-RXR\u03b1 activating ligands shift the heterodimer conformational ensemble toward monomeric Nurr1 LBD in slow exchange. NMR-observed monomer populations correlate with both transcriptional activation and weakened heterodimer affinity. BRF110 shows the largest dissociation effect and highest transcriptional efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by 2D NMR data (Figure 6a) and correlation analyses (Figures 6d-e) showing significant correlations. C42-C43 are supported by SEC and NMR data. The authors acknowledge limitations in quantifying populations from NMR peak intensities, but the correlations remain significant. One replicate shows stronger correlation, which the authors appropriately note.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "30420e4d-d58b-4efd-a9ae-e1e83fb8d1c3",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Most RXR\u03b1 antagonists do not dissociate Nurr1 monomer except UVI3003, which activates Nurr1-RXR\u03b1 while antagonizing RXR\u03b1 homodimers. Efficacious compounds increase both Nurr1 monomer and RXR\u03b1 homotetramer populations, with the higher order species containing only RXR\u03b1 LBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by SEC data (Figure 6f, supplement 2) and integration of transcriptional/TR-FRET data. C46-C48 are supported by citations. C49-C50 are supported by SEC and SDS-PAGE data (Figure 6 supplement 3). The identification of RXR\u03b1 oligomeric species provides mechanistic insight into the allosteric mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "dd6088d0-777a-4723-a613-111851a4e412",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PCA analysis shows that ~90% of variance is explained by two principal components. Nurr1-RXR\u03b1 transcription, heterodimer affinity, and NMR monomer populations cluster together and are positively correlated with heterodimer dissociation. Classical RXR\u03b1 agonism and selective Nurr1-RXR\u03b1 agonism are uncorrelated (perpendicular loading trajectories).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by PCA analysis in Figure 7. The analysis appropriately integrates multiple experimental measurements and provides unbiased confirmation of the distinct mechanisms. The perpendicular loading trajectories provide strong evidence for lack of correlation between classical and selective agonism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "3f25ed1c-65df-44d4-bc6b-a020462e7b73",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RXR\u03b1 ligands activate Nurr1-RXR\u03b1 through an LBD heterodimer PPI inhibition mechanism distinct from classical nuclear receptor pharmacology. Both RXR\u03b1 agonists and Nurr1-RXR\u03b1 selective compounds (which are RXR\u03b1 antagonists) function as allosteric PPI inhibitors that release transcriptionally active Nurr1 monomer from repressive heterodimeric complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These central claims (C2-C6, C55-C56, C62) integrate findings from multiple experimental approaches (NMR, ITC, TR-FRET, transcriptional assays, SEC) showing convergent evidence for the heterodimer dissociation mechanism. The lack of correlation with classical agonism (C3, C31-C32) combined with correlation with heterodimer weakening (C4, C37) and monomer release (C40-C41) strongly support this novel mechanism. The PCA analysis (C52-C53) provides unbiased confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    },
+    {
+      "id": "7ccfe8ee-f47b-4c0d-bd2f-43003fcb3e0a",
+      "content_id": "f6f6757a-a353-4f10-a954-b36684fd181d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The proposed model integrates current findings with prior literature: Nurr1 monomer has high transcriptional activity on NBREs, RXR\u03b1 tethers to DNA-bound Nurr1 and recruits corepressors, and both classical RXR\u03b1 agonists and Nurr1-RXR\u03b1 selective compounds dissociate the heterodimer to release active Nurr1 monomer. Bexarotene and IRX4204 have progressed to clinical trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 appropriately integrate the current experimental findings with well-cited prior literature to construct a mechanistic model. C54 provides clinical context. The model is consistent with all experimental observations and resolves the paradox of how both agonists and antagonists activate Nurr1-RXR\u03b1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:38:29.221020Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3d48f698-75f5-4436-900c-90d12f808f6c",
+      "result_id": "fb5cb603-c9a7-481b-ae2c-5a36c1b06c1e"
+    },
+    {
+      "claim_id": "0e1372ec-d2d2-422c-951d-72fb3dbf7fff",
+      "result_id": "fb5cb603-c9a7-481b-ae2c-5a36c1b06c1e"
+    },
+    {
+      "claim_id": "d295983a-33a6-45e5-8325-e315c3221550",
+      "result_id": "fb5cb603-c9a7-481b-ae2c-5a36c1b06c1e"
+    },
+    {
+      "claim_id": "3acbd724-62ab-4b68-9d30-7083474e4054",
+      "result_id": "fb5cb603-c9a7-481b-ae2c-5a36c1b06c1e"
+    },
+    {
+      "claim_id": "48e2d755-b926-478b-a5c2-2a359b7a00ab",
+      "result_id": "fb5cb603-c9a7-481b-ae2c-5a36c1b06c1e"
+    },
+    {
+      "claim_id": "70a05e12-67b9-44d4-9e0f-f6f3f1b99283",
+      "result_id": "2f33841d-d3fc-417a-a4bf-3e441e055f26"
+    },
+    {
+      "claim_id": "cd0e5c5c-a86b-46da-b2d2-e2f69bb9a74d",
+      "result_id": "2f33841d-d3fc-417a-a4bf-3e441e055f26"
+    },
+    {
+      "claim_id": "01dd66bc-85f5-44fc-bb68-ddf1f62d2ecb",
+      "result_id": "2f33841d-d3fc-417a-a4bf-3e441e055f26"
+    },
+    {
+      "claim_id": "c02c83e0-e356-4a47-b407-db046d3e785b",
+      "result_id": "2f33841d-d3fc-417a-a4bf-3e441e055f26"
+    },
+    {
+      "claim_id": "a427a3c0-bd72-410c-877c-18f79f6c095e",
+      "result_id": "2f33841d-d3fc-417a-a4bf-3e441e055f26"
+    },
+    {
+      "claim_id": "49d57319-5000-4966-986a-124329aa719a",
+      "result_id": "1635ae16-8d63-4623-80ea-7e6911018d11"
+    },
+    {
+      "claim_id": "b7d8d66f-9a5c-447b-8471-9b6c6837c84a",
+      "result_id": "1635ae16-8d63-4623-80ea-7e6911018d11"
+    },
+    {
+      "claim_id": "057ce3a1-6483-4e10-ae78-28fc6f85e89a",
+      "result_id": "1635ae16-8d63-4623-80ea-7e6911018d11"
+    },
+    {
+      "claim_id": "6f23d0ce-bd5e-4b99-b5a6-6d9244ceb580",
+      "result_id": "1635ae16-8d63-4623-80ea-7e6911018d11"
+    },
+    {
+      "claim_id": "f4912298-6596-4bc9-8e19-503d6573934e",
+      "result_id": "aaaf077e-e789-42f3-ab8f-a6319bc0f93d"
+    },
+    {
+      "claim_id": "0f8746a0-49ec-4c79-86d7-329c310ff296",
+      "result_id": "aaaf077e-e789-42f3-ab8f-a6319bc0f93d"
+    },
+    {
+      "claim_id": "4138390f-b801-4d78-877d-d96b0e86a34b",
+      "result_id": "aaaf077e-e789-42f3-ab8f-a6319bc0f93d"
+    },
+    {
+      "claim_id": "71de1489-445f-430f-9a7f-7ca365ebcfa7",
+      "result_id": "aaaf077e-e789-42f3-ab8f-a6319bc0f93d"
+    },
+    {
+      "claim_id": "f6c724ec-81f6-44c7-bdc7-7c7bf8e00811",
+      "result_id": "aaaf077e-e789-42f3-ab8f-a6319bc0f93d"
+    },
+    {
+      "claim_id": "6cb5eb49-db60-4ba9-bf4c-b3f3da88ee14",
+      "result_id": "6dbd9f6b-d83c-40f2-a0e0-f9c2872b8b5e"
+    },
+    {
+      "claim_id": "5237c77c-7709-4dfe-815a-7800d558c9e9",
+      "result_id": "6dbd9f6b-d83c-40f2-a0e0-f9c2872b8b5e"
+    },
+    {
+      "claim_id": "a06401a6-0195-401f-8676-71b7a77c6656",
+      "result_id": "6dbd9f6b-d83c-40f2-a0e0-f9c2872b8b5e"
+    },
+    {
+      "claim_id": "b4545aff-0100-4e38-afce-bea9f3376348",
+      "result_id": "6dbd9f6b-d83c-40f2-a0e0-f9c2872b8b5e"
+    },
+    {
+      "claim_id": "4663e99a-b34d-458e-aeee-c432d924037c",
+      "result_id": "6dbd9f6b-d83c-40f2-a0e0-f9c2872b8b5e"
+    },
+    {
+      "claim_id": "a65790b0-6fa7-4399-9d8e-12377d490280",
+      "result_id": "6dbd9f6b-d83c-40f2-a0e0-f9c2872b8b5e"
+    },
+    {
+      "claim_id": "8975dd0d-47ca-4c44-8017-87ec6bfc3317",
+      "result_id": "dc8912a4-492d-495e-b77b-7f0dcfd3e3d3"
+    },
+    {
+      "claim_id": "5c2d0ced-da12-4bc7-ae12-40dc40326fe7",
+      "result_id": "dc8912a4-492d-495e-b77b-7f0dcfd3e3d3"
+    },
+    {
+      "claim_id": "76bd2b4b-26a0-4977-a7b9-80fc3ee7ff91",
+      "result_id": "dc8912a4-492d-495e-b77b-7f0dcfd3e3d3"
+    },
+    {
+      "claim_id": "f3733a48-a06f-40ee-bcf7-b92ee380c636",
+      "result_id": "dc8912a4-492d-495e-b77b-7f0dcfd3e3d3"
+    },
+    {
+      "claim_id": "ec710490-4559-490b-8a07-0455ee656a99",
+      "result_id": "dc8912a4-492d-495e-b77b-7f0dcfd3e3d3"
+    },
+    {
+      "claim_id": "ba5173ee-a732-45f5-954b-e6b8a787c125",
+      "result_id": "dc8912a4-492d-495e-b77b-7f0dcfd3e3d3"
+    },
+    {
+      "claim_id": "4ad4bc8f-02db-4df8-9bec-5f019cef9816",
+      "result_id": "46e2b7ee-2848-4f97-ab9e-3537afa98605"
+    },
+    {
+      "claim_id": "3de2a85d-2821-4b97-a239-72b0cbf435f6",
+      "result_id": "46e2b7ee-2848-4f97-ab9e-3537afa98605"
+    },
+    {
+      "claim_id": "40ee8286-dc0a-4430-b4f5-9b6f6f1c9faa",
+      "result_id": "3ce9bd42-adab-48e1-ba57-80ceb4e9c250"
+    },
+    {
+      "claim_id": "8a4883dd-925f-4752-ae92-79e2805b146d",
+      "result_id": "3ce9bd42-adab-48e1-ba57-80ceb4e9c250"
+    },
+    {
+      "claim_id": "13d4e58d-134d-4e42-9be4-afc1cd3307ad",
+      "result_id": "3ce9bd42-adab-48e1-ba57-80ceb4e9c250"
+    },
+    {
+      "claim_id": "be71bfbd-95b0-4a80-aef3-17fceff0957a",
+      "result_id": "3ce9bd42-adab-48e1-ba57-80ceb4e9c250"
+    },
+    {
+      "claim_id": "b5f9ac58-0052-4e18-98c7-3e24168c2c8a",
+      "result_id": "3ce9bd42-adab-48e1-ba57-80ceb4e9c250"
+    },
+    {
+      "claim_id": "a86a29a4-45d5-4d64-82ba-60bc7659462f",
+      "result_id": "30420e4d-d58b-4efd-a9ae-e1e83fb8d1c3"
+    },
+    {
+      "claim_id": "f9a3b266-eac3-4bee-804d-d4892643fbf8",
+      "result_id": "30420e4d-d58b-4efd-a9ae-e1e83fb8d1c3"
+    },
+    {
+      "claim_id": "8137fb7a-693d-426f-99fc-68ba096be9a0",
+      "result_id": "30420e4d-d58b-4efd-a9ae-e1e83fb8d1c3"
+    },
+    {
+      "claim_id": "027cb2fc-ff10-40aa-b3e8-5d531e391806",
+      "result_id": "30420e4d-d58b-4efd-a9ae-e1e83fb8d1c3"
+    },
+    {
+      "claim_id": "f8b383d4-2246-4f84-aa69-9d78e0466706",
+      "result_id": "30420e4d-d58b-4efd-a9ae-e1e83fb8d1c3"
+    },
+    {
+      "claim_id": "d08610e7-017b-479f-bb00-ac3a6537579d",
+      "result_id": "30420e4d-d58b-4efd-a9ae-e1e83fb8d1c3"
+    },
+    {
+      "claim_id": "4b2c3f4e-2e8b-48a6-89e3-fa122a440d24",
+      "result_id": "30420e4d-d58b-4efd-a9ae-e1e83fb8d1c3"
+    },
+    {
+      "claim_id": "beff0242-59bc-4f34-be2f-cbdd8a927397",
+      "result_id": "dd6088d0-777a-4723-a613-111851a4e412"
+    },
+    {
+      "claim_id": "bd3dd650-faeb-4a6b-8683-1e7f316d7a50",
+      "result_id": "dd6088d0-777a-4723-a613-111851a4e412"
+    },
+    {
+      "claim_id": "95966ba2-056c-4cdf-88b3-8dad4c61246f",
+      "result_id": "dd6088d0-777a-4723-a613-111851a4e412"
+    },
+    {
+      "claim_id": "97aacb26-d22c-4a6a-9069-4a20e107b1cc",
+      "result_id": "3f25ed1c-65df-44d4-bc6b-a020462e7b73"
+    },
+    {
+      "claim_id": "efee1866-f126-4541-9ff0-8b76d90a892e",
+      "result_id": "3f25ed1c-65df-44d4-bc6b-a020462e7b73"
+    },
+    {
+      "claim_id": "e070714b-e48b-4dad-ba1a-6ffb36902db9",
+      "result_id": "3f25ed1c-65df-44d4-bc6b-a020462e7b73"
+    },
+    {
+      "claim_id": "d1435af9-100a-4b73-9384-14d21e063bc5",
+      "result_id": "3f25ed1c-65df-44d4-bc6b-a020462e7b73"
+    },
+    {
+      "claim_id": "b4241261-592a-40d9-8d19-f1ea0ff7bd03",
+      "result_id": "3f25ed1c-65df-44d4-bc6b-a020462e7b73"
+    },
+    {
+      "claim_id": "29fdc873-0ea7-41cc-90e7-132aa4a36ea0",
+      "result_id": "3f25ed1c-65df-44d4-bc6b-a020462e7b73"
+    },
+    {
+      "claim_id": "c8ed2348-73b3-46d0-9e64-ccee3490bdc8",
+      "result_id": "3f25ed1c-65df-44d4-bc6b-a020462e7b73"
+    },
+    {
+      "claim_id": "5731a91e-c4bf-44da-b45c-7cdd9ea7cf22",
+      "result_id": "3f25ed1c-65df-44d4-bc6b-a020462e7b73"
+    },
+    {
+      "claim_id": "458af060-594e-4ed1-a9e6-150c73f7388e",
+      "result_id": "7ccfe8ee-f47b-4c0d-bd2f-43003fcb3e0a"
+    },
+    {
+      "claim_id": "2b54a7d4-34a2-41e5-85be-720156c6fd98",
+      "result_id": "7ccfe8ee-f47b-4c0d-bd2f-43003fcb3e0a"
+    },
+    {
+      "claim_id": "be01500d-7e0c-43a9-9de0-0d145aa7d88a",
+      "result_id": "7ccfe8ee-f47b-4c0d-bd2f-43003fcb3e0a"
+    },
+    {
+      "claim_id": "b4aa8b96-59d9-46b7-a7ca-6d0f929a62e7",
+      "result_id": "7ccfe8ee-f47b-4c0d-bd2f-43003fcb3e0a"
+    },
+    {
+      "claim_id": "7a3b008c-e534-4546-9706-7ebe4b097c43",
+      "result_id": "7ccfe8ee-f47b-4c0d-bd2f-43003fcb3e0a"
+    },
+    {
+      "claim_id": "29bc3afb-2b08-4d02-bb11-610c99eda5db",
+      "result_id": "7ccfe8ee-f47b-4c0d-bd2f-43003fcb3e0a"
+    }
+  ],
+  "comparisons": []
+}

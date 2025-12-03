@@ -1,0 +1,2006 @@
+{
+  "submission": {
+    "id": "97fbe377-f4fd-49f3-ba73-ccdf926ce6f4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:58:26.923822Z",
+    "updated_at": "2025-12-03T15:58:26.923822Z"
+  },
+  "content": [
+    {
+      "id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "submission_id": "97fbe377-f4fd-49f3-ba73-ccdf926ce6f4",
+      "content_type": "manuscript",
+      "content_text": "# Self-organized canals enable long-range directed material transport in bacterial communities\n\n## Authors\n\n- Ye Li<sup>1</sup>\n- Shiqi Liu<sup>1</sup>\n- Yingdan Zhang<sup>2</sup>\n- Zi Jing Seng<sup>3</sup>\n- Haoran Xu<sup>1</sup> ([ORCID: 0000-0001-9613-297X](https://orcid.org/0000-0001-9613-297X))\n- Liang Yang<sup>2</sup> \u2020\n- Yilin Wu<sup>1</sup> ([ORCID: 0000-0002-0392-2137](https://orcid.org/0000-0002-0392-2137)) \u2020\n\n### Affiliations\n\n1. Department of Physics and Shenzhen Research Institute, The Chinese University of Hong Kong Hong Kong China ([ROR:00t33hh48](https://ror.org/00t33hh48))\n2. School of Medicine, Southern University of Science and Technology Shenzhen China ([ROR:049tv2d57](https://ror.org/049tv2d57))\n3. Singapore Center for Environmental Life Science Engineering, Nanyang Technological University Singapore Singapore ([ROR:02e7b5302](https://ror.org/02e7b5302))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLong-range material transport is essential to maintain the physiological functions of multicellular organisms such as animals and plants. By contrast, material transport in bacteria is often short-ranged and limited by diffusion. Here, we report a unique form of actively regulated long-range directed material transport in structured bacterial communities. Using Pseudomonas aeruginosa colonies as a model system, we discover that a large-scale and temporally evolving open-channel system spontaneously develops in the colony via shear-induced banding. Fluid flows in the open channels support high-speed (up to 450 \u00b5m/s) transport of cells and outer membrane vesicles over centimeters, and help to eradicate colonies of a competing species Staphylococcus aureus. The open channels are reminiscent of human-made canals for cargo transport, and the channel flows are driven by interfacial tension mediated by cell-secreted biosurfactants. The spatial-temporal dynamics of fluid flows in the open channels are qualitatively described by flow profile measurement and mathematical modeling. Our findings demonstrate that mechanochemical coupling between interfacial force and biosurfactant kinetics can coordinate large-scale material transport in primitive life forms, suggesting a new principle to engineer self-organized microbial communities.\n\n## Introduction\n\nLong-range directed material transport is essential to maintain the physiological functions of multicellular organisms; it helps an organism to transport nutrients, metabolic wastes, and signaling molecules, translocate differentiated sub-populations through the body, and maintain pH or temperature homeostasis. Long-range directed transport in multicellular qorganisms is primarily driven by pressure-induced advection and coordinated cilia beating. For example, hydraulic pressure due to active pumping drives the circulation of body fluid in blood and lymph vessel systems of animals (Scallan et al., 2016); transpiration and capillary pressure passively drive the water transport through vascular tissues of plants (Sack and Holbrook, 2006) and cilia beating of epithelial cells drives the cerebrospinal fluid flow in brain ventricles (Faubel et al., 2016) as well as mucus flow in the respiratory tract (Huang and Choma, 2015).\n\nLike in animals and plants, any form of long-range directed material transport would undoubtedly bring profound effect to the development, structure, and stress response of bacterial communities. Establishing autonomous long-range material transport will be of particular importance to maintain and control the physiology of engineered functional living materials consisting of large-scale synthetic microbial consortia (Chen et al., 2015b; Rodrigo-Navarro et al., 2021). However, material transport in bacterial world is often short-ranged and limited by diffusion (either passive diffusion due to thermal energy or active diffusion due to self-propulsion of motile cells; Wu and Libchaber, 2000). At the single-cell level, diffusion governs nutrient uptake and sets a fundamental limit on the size of bacterial cells (Berg, 1993; Nelson, 2003; Schulz and Jorgensen, 2001). In bacterial communities, diffusion has been assumed to dominate material transport (Lavrentovich et al., 2013; Pirt, 1967; Shao et al., 2017); long-range directed material transport is deemed unusual, despite the notion that bacterial communities resemble multicellular organisms in many aspects such as coordinated metabolism, communication, and division of labor (Lee et al., 2017; Parsek and Greenberg, 2005; Shapiro, 1998; van Gestel et al., 2015).\n\nIntriguingly, a few examples of long-range directed transport in bacterial communities were reported in recent years. Among these examples, it was shown that long-range flows were driven by flagellar motility in sediment biofilms (Fenchel and Glud, 1998; Petroff and Libchaber, 2014) and in bacterial colonies (Wu et al., 2011; Xu et al., 2019), with a typical flow speed comparable to the swimming speed of individual cells; directed transport can also be driven by passive forces such as osmosis and evaporation-induced pressure gradient (Wilking et al., 2013; Wu and Berg, 2012), with a speed of ~0.1\u201310 \u00b5m/s. Nonetheless, these forms of directed material transport all appear to lack autonomous regulation at the community level; the transport is either passive (Wilking et al., 2013; Wu and Berg, 2012) or driven by locally interacting cells (Fenchel and Glud, 1998; Petroff and Libchaber, 2014; Wu et al., 2011; Xu et al., 2019). Intra-colony channel structures have been identified in a few bacterial species (Davey et al., 2003; Drury et al., 1993; Rooney et al., 2020; Stoodley et al., 1994; Xu et al., 2019); these channel structures have a typical persistence length of a few micron to tens of microns, thus not able to support directed transport beyond millimeter scale.\n\nIn general, active or autonomous long-range directed transport would require a spatially or temporally regulated source of driving force. For bacterial communities, interfacial tension may potentially offer such a driving force because many bacterial species synthesize biosurfactants (i.e., surface active agents that reduce interfacial energy or surface tension Chandler, 1987) in a tightly regulated manner (Ron and Rosenberg, 2001). Here, we report a unique form of active long-range directed transport in structured bacterial communities enabled by spatial-temporal control of interfacial force. Using Pseudomonas aeruginosa colonies as a model system (Ramos et al., 2010), we discovered that large-scale, time-evolving open channels spontaneously emerge in the colony; these centimeter-long channels with a free surface are referred to as \u2018bacterial canals.\u2019 Fluid flows in the bacterial canals support high-speed (up to 450 \u00b5m/s) transport of cells and outer membrane vesicles (OMVs) over centimeters and help to eradicate colonies of a competing species Staphylococcus aureus. The canal flows are driven by surface tension gradient mediated by the P. aeruginosa-produced biofurfactant rhamnolipids, and the canals presumably emerge via a complex-fluid phenomenon known as shear-induced banding (Divoux et al., 2016; Olmsted, 2008). Overall, our findings demonstrate that mechanochemical coupling between interfacial force and biosurfactant kinetics can coordinate large-scale material transport in primitive life forms, suggesting a new principle to design macroscopic patterns and functions of synthetic microbial communities (Brenner et al., 2008; Chen et al., 2015a; Kong et al., 2018; Luo et al., 2021; Miano et al., 2020).\n\n## Results\n\n### P. aeruginosa colonies establish large-scale open channels supporting directed fluid transport\n\nWe cultured P. aeruginosa PA14 colonies on M9DCAA agar plates (\u2018Methods\u2019). In the colonies of wildtype and pilB-knockout mutant (PA14 \u0394pilB; denoted as non-piliated mutant), we were intrigued to observe rapid cellular flows streaming through the interior of the colonies, while there was little collective directed motion on both sides of the streams (Video 1). The streams were tens of microns in width and up to millimeters in length, but their courses were highly unstable presumably due to continuous disruption by cellular motion driven by flagellar motility. On the other hand, for PA14 mutants without flagellar motility, namely, PA14 flgK::Tn5 \u0394pilA (with both flagellar motility and type IV pilus-mediated motility disabled; denoted by \u2018non-motile P. aeruginosa\u2019) (Beaussart et al., 2014) and PA14 flgK::Tn5 (without flagellar motility but with functional type IV pilus-mediated motility; denoted by \u2018piliated P. aeruginosa\u2019) (Lee et al., 2011; \u2018Methods\u2019), we observed by naked eyes that the colonies of both strains presented many low-cell-density valleys extending from colony center to the edge over centimeters with high directional persistence (Figure 1A\u2013D). Under the microscope, we found that these remarkable, centimeter-long valleys were fluid-filled, free-surface channels (i.e., open channels) ~5\u201310 \u00b5m in height and tens to several hundred \u00b5m in width, in which cells carried by the fluid flow streamed rapidly at speeds up to hundreds of \u00b5m/s in coherent directions (Figure 1E, Appendix 1\u2014figure 1A, Figure 1\u2014video 1). The fluid flow in channels on average went towards the colony edge and stopped abruptly at the very end (i.e., the tip) of a channel, disappearing into the dense layer of cells near the edge (Appendix 1\u2014figure 1B). The fluid flow was sensitive to water content in the air environment, and it was easily disrupted by decrease of humidity. Cells translocating along the channels eventually settled in near the colony edge and they may contribute to colony expansion; however, channel formation does not necessarily coincide with colony expansion (e.g., see \u2018Discussion\u2019). Nearby channels could merge with each other while individual channels could split, resulting in a large-scale channel network across the entire colony (Figure 1B and D). These large-scale open channels have a free upper surface, and therefore, they are distinct from the pipe-like closed channels or conduits previously reported in bacterial colonies (Drury et al., 1993; Rooney et al., 2020; Stoodley et al., 1994; Xu et al., 2019). The open channels we found here are reminiscent of human-made canals for cargo transport, so we refer to these open channels as \u2018bacterial canals.\u2019\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79780/elife-79780-fig1-v2.jpg)\n\n**Figure 1.:** (A) Colony morphology of non-motile P. aeruginosa (PA14 flgK::Tn5 \u0394pilA). The arrow indicates the position where the image in panel (E) was taken. (B) Sketch of the open channels in panel (A) for better visualization. (C) Colony morphology of piliated P. aeruginosa (PA14 flgK::Tn5). (D) Sketch of the open channels in panel (C) for better visualization. Scale bars in A\u2013D, 1 cm. (E) Phase-contrast microscopy image of an open channel with cellular flows in a non-motile P. aeruginosa (PA14 flgK::Tn5 \u0394pilA) colony, taken at the location indicated by the arrow in panel (A). Arrows indicate flow direction. Scale bar, 100 \u03bcm. Cellular flows in the open channel are better visualized in Figure 1\u2014video 1 because the contrast between the open channel and other regions is low in still images. (F) Time-lapse image sequence showing the development of open channels in branching colonies of piliated P. aeruginosa (PA14 flgK::Tn5). Scale bar, 1 cm. Also see Figure 1\u2014video 2.\n\n![Video 1.](https://cdn.elifesciences.org/articles/79780/elife-79780-video1.mp4.jpg)\n\n**Video 1.:** Cells are motile outside the stream.\n\nMicroscopically, the bacterial canals observed in non-motile (PA14 flgK::Tn5 \u0394pilA) and piliated (PA14 flgK::Tn5) P. aeruginosa colonies are similar to the unstable streams observed in wildtype P. aeruginosa (PA14) and non-piliated mutant (PA14 \u0394pilB) colonies, but the former have more stable courses and are thus able to support sustained long-range directed fluid transport. For this reason, and to exclude any potential contribution of flagellar motility to material transport (Wu et al., 2011; Xu et al., 2019), we focused on bacterial canals in this study. When the amount of surface water on agar plates was reduced by extended drying (\u2018Methods\u2019), the piliated P. aeruginosa (PA14 flgK::Tn5) colonies displayed a unique branching morphology presumably driven by fingering instability in the presence of surface tension gradient in the colony (Trinschek et al., 2018; Troian et al., 1989; Figure 1F). Interestingly each branch was highly directed and hosted a single canal that ran through the entire branch (Figure 1F, Figure 1\u2014video 2; Appendix 1\u2014figure 1C). The emergence of canals in such branching colonies occurred robustly at ~8 hr (at 30\u00b0C) or ~15 hr (at room temperature) after inoculation. Since canals in the branching colonies advanced in a predictable manner without merging, hereinafter we systematically characterized canal development and manipulated this process using branching colonies of piliated P. aeruginosa (PA14 flgk::Tn5).\n\n### Canal development requires rhamnolipids and is driven by surface tension gradient\n\nP. aeruginosa produces the well-characterized biofurfactant (i.e. surface active agents that reduce interfacial energy or surface tension; Chandler, 1987) rhamnolipids (Lang and Wullbrandt, 1999; M\u00fcller et al., 2012). Since canal development does not require cell motility, we hypothesized that surface tension gradient (i.e., Marangoni stress; Davey et al., 2003) mediated by rhamnolipids provided the driving force for fluid transport in canals; note that the canal flows cannot be driven by osmotic pressure because osmolarity gradients of cell products (hence the resultant osmotic flows) must be directing toward the colony center. As in situ measurement of rhamnolipid concentration or surface tension within colonies and canals is challenging, to examine our hypothesis, we chose to knock out rhlA gene (encoding a rhamnosyltransferase essential for the production of rhamnolipids; Ochsner et al., 1994) in pilated P. aeruginosa (\u2018Methods\u2019). We found that this rhamnolipid-deficient mutant (PA14 flgK::Tn5 \u0394rhlA) was unable to develop canals (Figure 2A); also the colony showed no sign of any mesoscale flows under the microscope. Next, to show that Marangoni stress could drive canal formation, we established artificial surface tension gradient in colonies by injecting an exogenous source of rhamnolipids via a programmable syringe pump (\u2018Methods\u2019), and it restored canal formation in colonies of the rhamnolipid-deficient mutant (Figure 2B). We note that the artificial surface tension gradient also promoted colony expansion (Figure 2B), but again canal formation does not necessarily coincide with colony expansion (see \u2018Discussion\u2019). On the other hand, to examine whether canal formation involves agar degradation due to any potential agarase or hydrolase activities, we measured the height profile of the colony and agar with laser scanning confocal microscopy (\u2018Methods\u2019). We found that while the colony thickness above agar had an abrupt drop near canals, the height of agar under canals and other regions of the colony was uniform and there was no sign of agar degradation (Appendix 1\u2014figure 2). Taken together, these results show that canal development requires rhamnolipids but not agar degradation, and they provide strong evidence that fluid flows in canals are driven by rhamnolipids-mediated surface tension gradient.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79780/elife-79780-fig2-v2.jpg)\n\n**Figure 2.:** (A) Image of a representative colony of the rhamnolipid-deficient mutant (PA14 flgK::Tn5 \u0394rhlA) after 20 hr growth. The colony failed to develop canals and microscopic flows. (B) Surface tension gradient established by 1 hr injection of exogenous rhamnolipids at the colony center following 20 hr growth (schematics shown as left panel; \u2018Methods\u2019) restored the formation of canals (right panel). Scale bars in (A, B), 1 cm. (C) Fluorescence image sequences showing promoter activity of rhamnolipid synthesis at the early stage of canal development. The images were taken at the center of representative canal-forming P. aeruginosa colonies (PA14 flgK::Tn5) grown at room temperature. The upper row shows GFP(ASV) fluorescence from the rhamnolipid synthesis reporter PrhlA-gfp(ASV) (\u2018Methods\u2019), and the lower row shows red fluorescence of the membrane dye FM 4-64, which serves as a proxy of cell number in the colony. Scale bar, 1 mm. (D) Temporal dynamics of rhamnolipid synthesis level measured by the fluorescence of PrhlA-gfp(ASV) reporter during canal development. Solid and dashed lines represent the overall fluorescence count of the rhamnolipid synthesis reporter and the FM 4-64 dye, respectively (\u2018Methods\u2019). The colony started to expand at T = ~10 hr, and the expansion caused a slight drop of overall FM 4-64 fluorescence count during T = ~10\u201312 hr. Three replicate experiments were performed, and they showed the same temporal dynamics.\n\nWhen we applied a counteracting surface tension gradient directing toward the colony center by placing an agar patch containing surfactant Tween 20 (50 mg/mL, surface tension ~4 \u00d7 10-2 N/m) ~1 cm in front of a colony branch, fluid flows in the canal gradually ceased and the canal (but not the colony branch) slowly retracted (Video 2; \u2018Methods\u2019), suggesting that the driving force of canal flows is comparable in magnitude to that provided by a surface tension gradient of ~ 103 mN\u00b7m\u20132. Moreover, using a previously developed fluorescence reporter PrhlA-gfp(ASV) for rhamnolipids synthesis (Yang et al., 2009) GFP-ASV is a short-lived derivative of GFP and its fluorescence intensity reflects the current rate of biosynthesis (Andersen et al., 1998; \u2018Methods\u2019), we found that the rhlA promoter activity was azimuthally symmetric in early-stage colonies and the overall PrhlA-gfp(ASV) fluorescence increased monotonically until canals emerged (Figure 2C and D). The result shows that rhamnolipids in the colony center were continuously synthesized, thus generating a radial gradient of surface tension.\n\n![Video 2.](https://cdn.elifesciences.org/articles/79780/elife-79780-video2.mp4.jpg)\n\n**Video 2.:** An agar patch infused with surfactant Tween 20 (50 mg/mL) was placed at ~1 cm in front of a colony branch of piliated P. aeruginosa (PA14 flgK::Tn5); see \u2018Methods\u2019. As shown in the video, immediately following this operation, fluid flows in the canal gradually ceased and the canal slowly retracted. Time label shows the elapsed time from placing the agar patch (mm:ss).\n\n### Flow profiles reveal shear-induced banding and surface tension distribution during canal development\n\nThe temporal dynamics of fluorescence reporter PrhlA-gfp(ASV) described in Figure 2D indicated continuous accumulation of rhamnolipids in the colony center, which would generate a radial surface tension gradient with azimuthal symmetry at the initial stage of canal development. It is then intriguing why rapid flows only emerge in certain regions of the colony (i.e., in canals), even though at the initial stage of canal development every part of the colony at the same distance to the colony center should experience similar Marangoni stress; for instance, canals had already emerged while the colony was still nearly symmetric at T = 15 hr in Figure 2C. Flow speed measurement by particle image velocimetry (PIV) analysis (\u2018Methods\u2019) in colonies before canals became visible to naked eyes revealed that the flow speed profile in regions with homogeneous cell density distribution displayed flow regimes with distinct shear rates (Figure 3A and B, Figure 3\u2014video 1; \u2018Methods\u2019). The course of those high-shear-rate domains were initially unstable (Figure 3C, 0\u201324 min) and similar to the unstable streams observed in wildtype P. aeruginosa (PA14) and non-piliated mutant (PA14 \u0394pilB) colonies; as time went by, fluid flows in the high shear domains carried away cells in nearby areas, and the course got widened and gradually became fixed canals (Figure 3C, 32\u201356 min, Figure 3\u2014video 2). The presence of distinct flow regimes under presumably uniform shear stress (Figure 3A and B) and the instability of flow courses (Figure 3C) are hallmarks of shear-induced banding, a phenomenon often seen in complex fluids (Divoux et al., 2016; Olmsted, 2008; Ovarlez et al., 2009). These results suggest that canals emerge via the onset of shear-induced banding in the colony fluids (see more in \u2018Discussion\u2019).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79780/elife-79780-fig3-v2.jpg)\n\n**Figure 3.:** (A) Collective velocity field of cells in a region with homogeneous cell density distribution prior to canal formation. The collective velocity field was measured by particle image velocimetry (PIV) analysis on phase-contrast image sequence and averaged over a time window of 4 s (\u2018Methods\u2019). Arrows in left panel and colormap in right panel represent collective velocity direction and magnitude, respectively. The velocity direction field in left panel is superimposed onto the phase-contrast image of this region. Both panels share the same scale bar (100 \u00b5m). Also see Figure 3\u2014video 1. (B) Probability distributions of phase-contrast image intensity (upper panel) and flow speed (lower panel) associated with panel (A). Unimodal distribution of phase-contrast intensity indicates a homogeneous distribution of cell density. The bimodal distribution of flow speeds shows the occurrence of a high-speed flow regime. (C) Image sequence showing the course of a developing canal in a colony. Cells in the colony hosted the GFP-reporter plasmid expressing PrhlA-gfp(ASV) and the colony was imaged by fluorescence microscopy (\u2018Methods\u2019). The course of the canal (across the center of each image) had lower cell density due to flushing by rapid flows and thus appeared darker than other areas. The red trace in each image starting from T = 8 min indicates the course of the canal in the previous image (8 min earlier). Scale bar, 125 \u00b5m. Also see Figure 3\u2014video 2. (D) The fluorescence image of a canal in a P. aeruginosa colony seeded with ~1% GFP-expressing cells. The image was taken at a distance of ~12.5 mm from the tip of a canal. Colored traces show the trajectories of 38 fluorescent cells being transported in the canal, which were recorded during 0.5 s exposure time of a single image frame. Scale bar, 100 \u03bcm. Different colors serve to distinguish trajectories of different cells. (E) Peak flow speed at different locations of canals. The horizontal axis indicates the distance from the canal tips to the measuring position. Horizontal error bars indicate the uncertainty of canal position measurement (1 mm). Vertical error bars indicate the full range of peak speeds measured from >20 cell trajectories. Data from independent experiments are presented in different colors.\n\nAfter the onset of canals, due to the coupling of rhamnolipid transport, cellular transport and quorum-sensing (QS) (Mukherjee and Bassler, 2019) regulation of rhamnolipid synthesis (Lang and Wullbrandt, 1999; M\u00fcller et al., 2012), rhamnolipid distribution or surface tension along the canals may vary in space and time, giving rise to a complex and dynamic profile of surface tension gradient that drives fluid flows in canals. To characterize the spatial distribution of surface tension gradient, we sought to measure the flow speed profile in canals because flow speed is linearly proportional to Marangoni stress. PIV analysis as performed in Figure 3A can only yield the spatially averaged collective speed, so we switched to local velocity measurement with fluid tracers. In order to avoid perturbing canal flows by introducing external fluid tracers, we took advantage of the fact that some cells being transported along the canals were well isolated from others and these isolated cells could be used as natural fluid tracers. We seeded the colony with a small proportion of GFP(ASV)-expressing cells (PA14 flgK::Tn5 PlasB-gfp(ASV); \u2018Methods\u2019), and measured the flow speed in canals by tracking the movement of these fluorescent cells. The speed of cells being transported by canals were too fast to resolve cellular positions in a single-image frame, so we computed the time-averaged speed of cells based on the long-exposure-time trajectories of cells in order to reduce the error in speed measurement (Figure 3D; \u2018Methods\u2019). The speed of these cells varied significantly along a canal cross section; it peaked near the canal center and was attenuated near the canal boundaries. We found that the time-averaged peak cell speed near the center of canals was ~200 \u00b5m/s (with transient speeds up to 450 \u00b5m/s) (Figure 3D), higher than other reported forms of bacterial long-range directed transport (Fenchel and Glud, 1998; Petroff and Libchaber, 2014; Wilking et al., 2013; Wu et al., 2011; Xu et al., 2019) and most forms of active bacterial motility (Mitchell and Kogure, 2006). Note that the type IV pilus-mediated motility did not contribute to the movement of these isolated cells being transported in canals since type IV pilus-mediated motility requires surface attachment and the resultant speed is only a few \u00b5m/s (Tal\u00e0 et al., 2019), so the movement of cells indeed followed fluid motion in canals. We further measured the peak flow speed at different locations of canals. As shown by the plateau in Figure 3E, we found a high-flow-speed region spanning ~20 mm from the canal tip toward the colony center, and the flow speed diminished further toward the colony center. This result reveals the spatial distribution of Marangoni stress and suggests that the surface tension near the colony center has decreased to a steady-state level, presumably due to the saturated concentrations of rhamnolipids there.\n\n### Spatial-temporal dynamics of fluid transport in canals\n\nMeasuring the speed profile as shown in Figure 3E along a typical ~3-cm-long canal is challenging; it requires scanning over at least ~10 locations, with each location taking ~5 min and the entire measurement taking >~1 hr (\u2018Methods\u2019). The trade-off between the large spatial scale of canals (centimeters) and the microscopic nature of speed-profile measurement makes it even more difficult to measure the temporal evolution of canal flows in experiment, so we resorted to mathematical modeling for understanding the spatial-temporal dynamics of canal flows. First of all, we used finite-element simulation of Navier\u2013Stokes equation in a simplified canal geometry (Figure 4A; \u2018Methods\u2019) to estimate that the Marangoni stress in canals was on the order of ~1000 mN\u00b7m\u20132 in order to support a peak flow speed of ~400 \u00b5m/s. This magnitude roughly corresponds to the surface tension gradient established between a saturated source of rhamnolipids (surface tension ~30 mN/m; Appendix 1\u2014figure 3) and a surfactant-free region (surface tension ~70 mN/m; Appendix 1\u2014figure 3) over a distance of ~4 cm, which is consistent with the notion that the colony center has saturated concentrations of rhamnolipids as revealed in Figure 3E.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79780/elife-79780-fig4-v2.jpg)\n\n**Figure 4.:** (A) Hydrodynamic simulation of fluid transport in a simplified canal geometry. The cross-sectional profile of the canal was modeled as a half ellipse with the major and minor axis being 150 \u03bcm and 10 \u03bcm, respectively. Note that the vertical and horizontal length scales are different. Red arrows indicate the direction of surface tension gradient $\\nabla\\gamma$. Black arrows and colormap show the surface and the bulk flow speed profiles, respectively, generated by a surface tension gradient of $1000 mN\u2219m^{-2}$ imposed at the canal\u2019s upper surface (liquid\u2013air boundary). (B) Schematic showing the key processes involved in the establishment of surface tension gradient in canals. Major constituents of the colony are represented by symbols of different colors: surfactant molecules, orange dots; QS molecule, blue dots; cells, green rods. The key processes are labeled by numbers: \u20181,\u2019 transport of bacteria and biosurfactant at the liquid\u2013air interface driven by surface tension gradient $\\nabla\\gamma$; \u20182,\u2019 biosurfactant exchange between the liquid\u2013air interface and the bulk phase; \u20183,\u2019 growth of bacteria and the production of biosurfactant under QS regulation; \u20184,\u2019 diffusion of biosurfactant, QS molecules, and nutrient. Arrows indicate the direction of material transport. (C) Schematic showing the coupling of the key processes described in panel (A) and in main text. See Appendix 1 for details. (D, E) Spatio-temporal dynamics of surface-associated surfactant concentration $\u0393$ and surface tension gradient $\\nabla\\gamma$ obtained by numerical simulations of the mathematical model, as shown in panels (D) and (E), respectively. Also see Appendix 1\u2014figure 4 for the numerical result of the spatial-temporal evolution of other quantities in the model.\n\nWe then built a model to describe the mechanochemical coupling between interfacial force and biosurfactant kinetics, which involve the transport processes of colony constituents (including rhamnolipids, cell mass, QS molecules and nutrients) and QS regulation of rhamnolipid synthesis (Figure 4B and C; Appendix 1). Surface tension $(\\gamma)$ is a function of surface density $(\u0393)$ of rhamnolipids at the liquid\u2013air interface:\n\n$$\n\\gamma(\u0393)=\u03a0_{max}exp(\u2212A\u0393^{2}/\u0393_{c}^{2})+\\gamma_{\u221e}\n$$\n\nwhere $\\gamma_{\u221e}$ is the surface tension of saturated rhamnolipid solution (at concentration >> CMC) measured by the pendant drop assay (de Gennes et al., 2003; Appendix 1\u2014figure 3), $\u03a0_{max}$ is the difference in surface tension between pure water and the saturated rhamnolipid solution (corresponding to the maximal amount of surface tension decrease due to rhamnolipids), $\u0393_{c}$ is a characteristic surface density of rhamnolipids, and $A$ is a parameter relating bulk rhamnolipid concentration to its steady-state surface density (Appendix 1). The parameters $\\gamma_{\u221e}$ , $\u03a0_{max}$ in Equation 1 were obtained by fitting the experimental measurement of the surface tension of rhamnolipid solutions (Appendix 1\u2014figure 3; Appendix 1). We introduced dimensionless surface density ( $\u0393_{n}$) and bulk concentration of biosurfactant ( $c_{n}$) as $\u0393_{n}=\u0393/\u0393_{c}$ and $c_{n}=c/c_{s}$, which are coupled through the following equations:\n\n$$\n\\frac{\\partialc_{n}}{\\partialt}=\\nabla\u22c5(D_{c}\\nablac_{n})\u2212(kc_{n}\u2212kA\u0393_{n}^{2})+\\frac{N}{K_{N}+N}\\alpha_{R}\u03c1\\frac{B^{m}}{K_{B}^{m}+B^{m}}\n$$\n\n\n\n$$\n\\frac{\\partial\u0393_{n}}{\\partialt}=\\nabla\u22c5(D_{\u0393}\\nabla\u0393_{n})\u2212\\nabla\u22c5[\u03b7_{\u0393}\u0393_{n}\\nabla\\gamma(\u0393_{n})]+(kc_{n}\u2212kA\u0393_{n}^{2})\n$$\n\nEquation 2 describes the variation of $c_{n}$ due to three processes, namely, biosurfactant diffusion, biosurfactant exchange between the liquid\u2013air interface and the bulk phase, and biosurfactant production. The biosurfactant exchange between the two phases is a key element in the model (Appendix 1); it was considered in the analysis of Marangoni flows induced by depositing surfactants into a liquid (Hanyak et al., 2012; Roch\u00e9 et al., 2014) but rarely in previous studies of the role of surface tension during colony development. The biosurfactant production rate is controlled by nutrient concentration ($N$), bacterial density ($\u03c1$), and QS signal (auto-inducer) concentration ($B$) (Cao et al., 2016); $N$, $B$, and $\u03c1$ follow another set of differential equations (Appendix 1). Similarly, Equation 3 describes the variation of $\u0393_{n}$ due to biosurfactant diffusion, advective transport of biosurfactant by fluid flows, as well as biosurfactant exchange between the liquid\u2013air interface and the bulk phase; the advective transport term arises because biosurfactant molecules associated with the liquid\u2013air interface are carried along by fluid flows driven by the surface tension gradient $\\nabla\\gamma$ (de Gennes et al., 2003). In Equation 1 and Equation 2, $D_{\u0393}$ , $D_{c}$ , $\u03b7_{\u0393}$ , $k$, $K_{N}$ , $\\alpha_{R}$ , $K_{B}$ , and $m$ are constant parameters. The details of model equations and parameters are described in Appendix 1 and Appendix 1\u2014table 2.\n\nAs shown by the numerical simulation results based on the model, the distribution of interface-associated surfactant displayed a saturated region near the colony center (Figure 4D) (corresponding to the region with minimal surface tension in Appendix 1\u2014figure 4A), followed by a biphasic decrease toward the spreading front of the colony (corresponding to the increase of surface tension in Appendix 1\u2014figure 4A). The resultant surface tension gradient (and therefore flow speed) was nearly zero near the colony center, which agrees with the experimental result (Figure 3E); further away from the center, it displayed a pronounced plateau (i.e., ranging from the peak to knee of each curve at specific time points, corresponding to the region with rapid canal flows) with modest inclination (Figure 4E). These results are in qualitative agreement with the measured flow speed profile in canals (Figure 3E), justifying our model and supporting the notion that canal flows are driven by rhamnolipids-mediated surface tension gradient; note that the modest slope from peak to knee shown in each curve of Figure 4E was not apparent in Figure 3E, as it could have been obscured by the large variation of flow speeds measured in experiments or by the low temporal resolution of measurement (scanning over the entire canal takes >~1 hr, during which time the true flow speed profile must have shifted and the spatial variation would be smoothed out to certain extent). More importantly, our simulation results were able to reveal that the entire plateau moves away from colony center at a speed of ~1 mm/hr, with the width increasing gradually from ~20 mm to ~30 mm in 15 hr while the height decreasing by ~20% (Figure 4E). Consequently, the high-speed directed flows at a specific location in the canal can persist for ~20\u201330 hr. Taken together, these modeling results provide a qualitative picture how a colony maintains high-speed directed transport along canals for an extended range both in space and time.\n\n### Directed fluid flows transport outer membrane vesicles and help to eradicate competitor colonies\n\nFinally, we examined whether the canals have other physiological functions besides helping cellular populations to translocate over long distances. P. aeruginosa produces OMVs to deliver pathogenic factors, antimicrobial compounds, intercellular signals, and public goods that either dissolve poorly or are prone to rapid dilution in the extracellular milieu (Bomberger et al., 2009; Mashburn and Whiteley, 2005; Schwechheimer and Kuehn, 2015). OMVs are slow in diffusion because their sizes are highly heterogeneous ranging from several tens to hundreds of nanometers. To examine whether directed fluid flows in canals can facilitate long-range transport of OMVs produced by P. aeruginosa, we isolated OMVs from bacterial culture by centrifugation, labeled them fluorescently, and loaded the OMV dispersion into a canal by microinjection (\u2018Methods\u2019). We found that these OMVs, having a mean size of ~150 nm (Appendix 1\u2014figure 5), were transported along the canal over centimeter distances (Figure 5A\u2013C) with a peak speed of >200 \u03bcm/s (Figure 5\u2014video 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79780/elife-79780-fig5-v2.jpg)\n\n**Figure 5.:** (A) Phase-contrast image of a canal overlaid with the fluorescence image of OMVs (in red). The cross sign marks the location of microinjecting OMV dispersion. The loaded OMVs were transported downstream along the canal and accumulated near the tip. Scale bar, 1 mm. (B) Enlarged view of the OMV fluorescence image at the red dashed box in panel (A). Scale bar, 500 \u03bcm. (C) Colored traces show the trajectories of fluorescently labeled OMVs during 1 s exposure time. Scale bar, 100 \u03bcm. Also see Figure 5\u2014video 1. (D) Image sequence showing the eradication of an S. aureus colony (GFP-labeled, enclosed by the solid line) that was irrigated by P. aeruginosa canal flows. A nearby S. aureus colony (enclosed by the dashed line) came into contact with the P. aeruginosa colony but did not encounter canal flows. In each panel the fluorescence image of S. aureus colonies is superimposed onto the phase-contrast image. Also see Figure 5\u2014video 2. (E) Temporal dynamics of S. aureus colony biomass after encountering P. aeruginosa PA14 colonies under different conditions. To compare with the effect of potential material transport by flagellar motility (Wu et al., 2011; Xu et al., 2019), curves labeled as \u2018wildtype swarm\u2019 and \u2018non-piliated swarm\u2019 were shown for S. aureus colonies encountering wildtype P. aeruginosa (with both flagellar and type IV pilus motilities) and non-piliated P. aeruginosa (PA14 \u0394pilB; with flagellar motility alone), respectively (see Appendix 1\u2014figure 6 for details; \u2018Methods\u2019). At least three replicates were performed for each condition.\n\nP. aeruginosa is a primary member of poly-species microbial communities found in lung infections of cystic fibrosis (CF) patients, and it may engage in competitive interactions with other species such as S. aureus (Chew et al., 2018). To examine the potential function of canal flows on interspecies competition, we co-cultured colonies of piliated P. aeruginosa (PA14 flgK::Tn5) and S. aureus on agar plates (\u2018Methods\u2019). We used S. aureus cells harboring a plasmid with constitutive GFP expression (Toledo-Arana et al., 2005), so that the cell mass in S. aureus colonies can be quantified by GFP fluorescence during the interaction with P. aeruginosa (\u2018Methods\u2019). We found that S. aureus colonies irrigated by canal flows were quickly eradicated (Figure 5D, Figure 5\u2014video 2; Appendix 1\u2014figure 6), with <2% of the initial cell mass remaining after 60 min of contact with canal flows (Figure 5E, curve labeled as \u2018irrigated\u2019). By contrast, S. aureus colonies that were in contact with P. aeruginosa colony but did not encounter canal flows retained ~40% of the initial cell mass after 60 min of contact (Figure 5E, curve labeled as \u2018non-irrigated\u2019). These results demonstrated that fluid flows in canals help to eradicate competing bacterial species. We suggest that canal flows may increase the flux of P. aeruginosa-produced antimicrobial substances, such as quinolines encapsulated in OMVs with antibacterial activities against Gram-positive bacteria (Mashburn and Whiteley, 2005) and toxic compounds carried by rhamnolipid micelles (Gdaniec et al., 2022), and therefore enhance the efficiency of inhibiting competing bacterial species. It should be noted that P. aeruginosa produces a variety of anti-staphylococcal compounds such as quinolines, pyocyanin, and LasA protease (Hotterbeekx et al., 2017). While hydrophobic substances such as quinolines are poorly diffusible within the colony, those hydrophilic substances dissolvable in water readily diffuse within the agar substrate and their concentration in canals will fade out in a fraction of a second. In both cases, the anti-staphylococcal substances cannot directly benefit from canal transport, unless they are adsorbed to or encapsulated by larger particles that are slow in diffusion, such as OMVs and surfactant micelles ranging from tens to hundreds of nm in size. Therefore, the rapid eradication of S. aureus colonies was most likely due to substances encapsulated in OMVs (Mashburn and Whiteley, 2005) and rhamnolipid micelles (Gdaniec et al., 2022) that were transported by canals.\n\n## Discussion\n\nWe have discovered that P. aeruginosa colonies develop a large-scale and temporally evolving free-surface open-channel system, which supports high-speed (up to 450 \u00b5m/s) material transport over centimeters. The open channels, or \u2018bacterial canals,\u2019 are presumably driven by rhamnolipid-mediated surface tension gradient. The spatial-temporal dynamics of fluid flows in bacterial canals are revealed by flow profile measurement and mathematical modeling that involves mechanochemical coupling between interfacial force and biosurfactant kinetics. Our findings present a conceptual advance regarding the potential role of biosurfactant-empowered Marangoni stress: it can act as a spatiotemporally regulated driving force for active long-range directed material transport within structured bacterial communities.\n\nMany bacterial species isolated to date synthesize biosurfactants (Ron and Rosenberg, 2001). In surface-associated bacterial communities where interfaces are prevalent (OToole and Wong, 2016; Persat et al., 2015), the inhomogeneous synthesis of biosurfactants often result in surface tension gradients (Marangoni stress). With the advance of synthetic biology, mechanochemical coupling between interfacial force and biosurfactant kinetics (including the synthesis, diffusion, and transport) could become a new strategy to design self-organization and sensory functions in synthetic microbial communities (Brenner et al., 2008; Chen et al., 2015a; Kong et al., 2018; Miano et al., 2020). For instance, canal transport driven by Marangoni stress can be engineered to help translocate cellular populations and slowly diffusing chemical substances over long distances, shaping the population structure and mediating stress response of synthetic bacterial communities; the mechanism could also be exploited to transport drugs and chemical effectors loaded in vesicles in order to control the communication and behavior of synthetic bacterial communities.\n\nCan canal transport be found in natural or clinical settings? Imaging of P. aeruginosa aggregation patterns in situ in sputum samples from CF patients did not reveal canal-like structures (DePas et al., 2016), suggesting that canal formation may not occur in such conditions. Indeed, wildtype P. aeruginosa colonies displayed rapid streams within the colony but the streams did not turn into stable and persistent canals (Video 1). The instability was presumably caused by continuous displacement of cells driven by flagellar motility. Flagellar motility weakens cell\u2013cell adhesion and disrupts the course of high-shear flow regimes, thus preventing the high-shear flow regimes from further developing into more stable courses or canals. Although P. aeruginosa cells tend to downregulate flagellar motility in the airways of patients with CF (Luzar et al., 1985; Mahenthiralingam et al., 1994; Wolfgang et al., 2004), the residual flagellar motility could still impede the full development of canals. We note that another flagellated and biosurfactant-producing bacteria Serratia marcescens is able to develop canal-like structures during swarming (Appendix 1\u2014figure 7), but such structures are only found at the center of the colony where most cells appear to be sessile. Taken together, observing canal formation in natural and clinical settings may require species-dependent or very specific conditions.\n\nMarangoni stress was previously suggested to contribute to the expansion of bacterial colonies (Angelini et al., 2009; Du et al., 2012; Fauvart et al., 2012; Rhodeland et al., 2020; Trinschek et al., 2018). In this connection, we emphasize the difference between directed material transport within bacterial colonies and colony expansion. Colony expansion normally does not lead to directed transport of materials within the colony. For example, during swarming of wildtype P. aeruginosa facilitated by Marangoni stress, the colony expansion speed was ~1 \u00b5m/s (Fauvart et al., 2012), which is one order of magnitude slower than individual cells\u2019 random motion (tens of \u00b5m/s), and consequently, a cell or a passive tracer placed in the colony is expected to undergo diffusive motion with a small drift (Zuo and Wu, 2020) rather than directed transport. Moreover, as demonstrated in this study, directed material transport within a colony does not necessarily coincide with colony expansion (e.g., see Appendix 1\u2014figure 1\u2014video 2), and the speed of the two processes could differ by orders of magnitude (~200 \u00b5m/s versus ~2 mm/hr). Nonetheless, our work provides a new ingredient (i.e., long-range material transport driven by interfacial mechanics) that will complement existing models such as fingering instability (Trinschek et al., 2018) and colony-growth optimization (Luo et al., 2021) to explain and control pattern formation in expanding P. aeruginosa colonies.\n\nFinally, the presence of distinct flow regimes and the instability of flow courses at the early stage of canal development (Figure 3A and B) suggest that canals emerge via the onset of shear-induced banding in the colony fluids. This notion points to a novel biological function of shear-induced banding that often occurs in complex fluids such as polymer solutions, surfactant micellar solutions, and colloidal suspensions (Divoux et al., 2016; Olmsted, 2008; Ovarlez et al., 2009). To further examine the conditions of shear banding in colony fluids, we measured the flow profiles of bacteria\u2013rhamnolipids mixtures resembling the colony constituents in PDMS microfluidic channels subject to uniform shear stress. Under controlled flow conditions in PDMS microfluidic channels, we found that the cross-sectional flow velocity profile of a mixture of dense bacterial suspension (~1.35 \u00d7 1010 cells/mL) and concentrated rhamnolipids at 10 mg/mL, ~100 times critical miceller concentration (CMC) (Zhao et al., 2018) was highly asymmetric and signaled shear banding (Appendix 1\u2014figure 8A), whereas the flow velocity profile of pure cell suspension at the same density or of a mixture of rhamnolipids (10 mg/mL) and dense 1.1 \u00b5m microsphere suspension (~1.9 \u00d7 1010 particles/mL) was closer to the parabolic profile characteristic of Newtonian fluids (Appendix 1\u2014figure 8B and C). This result suggests that the onset of shear banding in P. aeruginosa colonies preceding canal formation requires the interaction between cells and rhamnolipids (most likely in the form of micelles). The detailed biophysical mechanism of this requirement warrants further investigation as a unique rheological behavior of bacterial active matter (Guo et al., 2018; Liu et al., 2021; Martinez et al., 2020).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>Wildtype PA14</td>\n      <td>Roberto Kolter, Harvard University (Lee et al., 2011)</td>\n      <td>ZK3436</td>\n      <td>Having both flagellar and type IV pilus motilities</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (P. aeruginosa)</td>\n      <td>Piliated P. aeruginosa PA14</td>\n      <td>Roberto Kolter, Harvard University (Lee et al., 2011)</td>\n      <td>ZK3367</td>\n      <td>Without flagellar motility but retaining type IV pilus motility</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (P. aeruginosa)</td>\n      <td>Non-piliated P. aeruginosa PA14</td>\n      <td>Roberto Kolter, Harvard University (Lee et al., 2011)</td>\n      <td>ZK3351</td>\n      <td>Without type IV pilus motility but retaining flagellar motility</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (P. aeruginosa)</td>\n      <td>Non-motile P. aeruginosa PA14</td>\n      <td>George A. O\u2019Toole, Dartmouth College (Beaussart et al., 2014)</td>\n      <td>SMC6589</td>\n      <td>Without either flagellar or type IV pilus motility</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (P. aeruginosa)</td>\n      <td>P. aeruginosa deficient in rhamnolipid production \u0394rhlA</td>\n      <td>This paper</td>\n      <td>PA14 flgK::Tn5 \u0394rhlA</td>\n      <td>Deficient in rhamnolipid production</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Staphylococcus aureus)</td>\n      <td>Staphylococcus aureus clinical strain that expresses GFP constitutively</td>\n      <td>Toledo-Arana et al., 2005</td>\n      <td></td>\n      <td>Isolate 15981 harboring a plasmid pSB2019-gfp expresses GFP constitutively</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Serratia marcescens)</td>\n      <td>Serratia marcescens</td>\n      <td>ATCC</td>\n      <td>ATCC 274</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>1-rhlA_UpF</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>agctcggtacccgggGGGTGATTTCCTACGGGGTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>2-rhlA_UpR</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CTTCGCAGGTCAAGGGTTCACCGCATTTCACACCTCCCAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>3-rhlA_DownF</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TTGGGAGGTGTGAAATGCGGTGAACCCTTGACCTGCGAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>4-rhlA_DownR</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>cgacggccagtgccaCCGTACTTCTCGTGAGCGAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>rhlA_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GACAAGTGGATTCGCCGCA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>rhlA_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TTGAACTTGGGGTGTACCGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>rhlAGENE_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GGTCAATCACCTGGTCTCCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>rhlAGENE_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCTGATGGTTGCTGGCTTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Pk18-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGCTTCCGGCTCGTATGTTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Pk18-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCGAAAGGGGGATGTGCTG</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmid pMHRA</td>\n      <td>Yang et al., 2009</td>\n      <td>Plasmid</td>\n      <td>Contains an RlhR-regulated PrhlA-gfp(ASV) fusion inserted into the vector pMH391</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Q5 High-Fidelity DNA Polymerase</td>\n      <td>NEB, USA</td>\n      <td>Cat# M0515</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Gibson Assembly Master Mix</td>\n      <td>NEB, USA</td>\n      <td>Cat# E2611</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Taq Polymerase</td>\n      <td>Thermo Fisher, USA</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Bacterial strains and plasmids\n\n#### Bacterial strains\n\nThe following strains were used: wildtype P. aeruginosa PA14 (having both flagellar and type IV pilus motilities), piliated P. aeruginosa (PA14 flgK::Tn5; without flagellar motility but retaining type IV pilus motility), and non-piliated P. aeruginosa (PA14 \u0394pilB; without type IV pilus motility but retaining flagellar motility), gifts from Roberto Kolter, Harvard University (Lee et al., 2011); non-motile P. aeruginosa (PA14 flgK::Tn5 \u0394pilA; without either flagellar or type IV pilus motility) (Beaussart et al., 2014), a gift from George A. O\u2019Toole, Dartmouth College; P. aeruginosa deficient in rhamnolipid production (PA14 flgK::Tn5 \u0394rhlA; see details of strain construction below); S. aureus clinical strain isolate 15981 harboring a plasmid pSB2019-gfp that expresses GFP constitutively (Toledo-Arana et al., 2005); S. marcescens ATCC 274. Single-colony isolates were grown overnight (~13\u201314 hr) in 10 mL culture tubes (unless otherwise stated) with shaking in LB medium (1% Bacto tryptone, 0.5% yeast extract, 0.5% NaCl) at 30\u00b0C to stationary phase. Overnight cultures were used for inoculating colonies on agar plates.\n\n#### Strain construction\n\nPrimers used are listed in Appendix 1\u2014table 1. To construct the rhamnolipid-deficient strain P. aeruginosa PA14 flgK::Tn5 \u0394rhlA, upstream of the rhlA gene were amplified with 1-rhlA_UpF and 2-rhlA_UpR primers. Downstream of rhlA gene are amplified with 3-rhlA_DownF and 4-rhlA_DownR primers. The sequences of rhlA were obtained from Pseudomonas genome database (http://www.pseudomonas.com/). The PCR amplification was performed with Q5 High-Fidelity DNA Polymerase (NEB, USA). Using Gibson Assembly Master Mix (NEB), the two purified flanking PCR fragments (Promega, USA) were assembled with BamHI and HindIII-digested PK18 (Gmr) suicide vector. 10 \u00b5L of the assembled products was transformed to Escherichia coli DH5a competent cell by heat shock. Transformants were selected on 60 \u00b5g/mL Gm-infused LB Lennox agar plates and the insert size was verified by PCR with Pk18-F and Pk18-R primers using Taq Polymerase (Thermo Fisher, USA). A triparental mating was performed with PA14 flgK::Tn5 to generate PA14 flgK::Tn5 \u0394rhlA gene deletion, through conjugation together with the aid of RK600 helper plasmid strain. ABTC agar containing 10% sucrose was used for SacB-based counterselection. Mutants were confirmed by rhlA_F and rhlA_R primers with PAO1 gDNA as a control. rhlAGENE_F and rhlAGENE_R primers were used to check for the presence of rhlA gene with PAO1 gDNA as a control.\n\n#### Plasmids\n\nThe rhamnolipid synthesis reporter plasmid pMHRA contains an RlhR-regulated PrhlA-gfp(ASV) fusion inserted into the vector pMH391 (Yang et al., 2009). rhlA encodes a rhamnosyltransferase essential for the production of rhamnolipid under the control of rhl QS system (Ochsner et al., 1994), and is thus a good indicator of rhl activity (Yang et al., 2009). GFP-ASV is a short-lived derivative of GFP, which degrades with a half-life <1 hr and is rapidly cleared from cells, thus its fluorescence intensity reflects the current rate of biosynthesis (Andersen et al., 1998). For flow speed measurement in canals, the plasmid pMHLB containing a translational fusion of the PlasB-gfp(ASV) was used (Hentzer et al., 2002); lasB encodes a virulence factor elastase under the control of LasR (Hentzer et al., 2002) and is homogeneously expressed in the colony with sufficiently bright fluorescence suitable for our tracking method. The plasmids were introduced into PA14 flgK::Tn5 by electroporation. The transformants were selected on LB 1.5% agar plates supplemented with gentamicin (50 \u00b5g/mL). These plasmids have high copy numbers, so we did not need to add any antibiotics into culture environment to prevent plasmid loss.\n\n### Preparation of agar plates for colony growth\n\nP. aeruginosa colonies were grown on 0.5% Difco Bacto agar plates infused with M9DCAA medium (Tremblay and D\u00e9ziel, 2010) (20 mM NH4Cl, 12 mM Na2HPO4, 22 mM KH2PO4, 8.6 mM NaCl, 1 mM MgSO4, 1 mM CaCl2, 11 mM dextrose, and 0.5% [wt/vol] casamino acids [BD Bacto, Cat# 223050]). We varied the agar concentration and found that canals develop robustly over a relatively wide range of agar concentration between 0.5% and 1.0% wt/vol (Appendix 1\u2014figure 9). Above 1.0%, canals were not observed presumably because the cells have difficulty to extract sufficient water to maintain an open-surface liquid film on the agar surface, which is the same underlying reason why most bacteria cannot swarm on agar above 1.0% as swarming also requires maintaining open-surface liquid films (Kearns, 2010). As Ca2+ cannot coexist stably with many ions, this medium was prepared and stored in two components: (1) 10\u00d7 nutrient solution without CaCl2, sterilized and stored at room temperature; (2) agar infused with CaCl2 at 1 $\\frac{1}{9}$ times of the desired concentrations, sterilized and stored in 100 mL aliquots. Before use, the component (2) was melted completely in a microwave oven and cooled to ~60\u00b0C. For each plate, 18 mL molten component (2) was mixed with 2 mL component (1) and the mixture was poured to a polystyrene petri dish (90 mm diameter, 15 mm height). To quantify cell mass in the colony, the membrane dye FM 4\u201364 (Thermo Fisher Scientific) was added into the agar plates at a final concentration of 1 \u03bcg/mL. The plate was swirled gently to ensure surface flatness, and then cooled for 10 min without a lid inside a large Plexiglas (PMMA) box, followed by further drying under laminar airflow for 5 min or 20 min (to culture branching colonies). 1 \u00b5L overnight culture was used to inoculate colonies at the center of each plate, and the plates were incubated at specified temperatures and >~95% relative humidity; lowering the humidity will lower the probability of canal formation. The colonies expanded at a steady-state speed of ~2 mm/hr at 30\u00b0C. The emergence of canals in branching colonies of piliated P. aeruginosa (PA14 flgK::Tn5) occurred robustly at ~8 hr (at 30\u00b0C) or ~15 hr (at room temperature) after inoculation. In experiments co-culturing P. aeruginosa and S. aureus, half of casamino acids in the M9DCAA medium described above was replaced by peptone at a final concentration of 0.25% (wt/vol) in order to support growth of S. aureus; this medium was referred to as M9DCAAP. The M9DCAAP plates were prepared following the same procedures as described above and incubated at 30\u00b0C and >~95% relative humidity.\n\n### Imaging colonies and canals\n\nThe macroscale dynamics of P. aeruginosa colony or canal development was monitored and measured in a custom-built imaging incubator made of PMMA (l \u00d7 d \u00d7 h, 1 \u00d7 1 \u00d7 1.2 m). The agar plates were sealed with parafilm before incubation in order to maintain saturated humidity. The temperature of the incubator was maintained at 30\u00b0C with a heater controlled by feedback circuits. The inner walls of the incubator were covered with black cloth and the plate was illuminated by an LED strip lining at the bottom part of the side walls. The images of colonies or canals were photographed by a digital single-lens reflex camera (DSLR; Canon 700d) every 5 min during incubation (24 mm for whole plate view or 60 mm for zoomed-in view, aperture f/8, exposure time 1/5 s). The time-lapse imaging and LED illumination were triggered by a custom-programmed microcontroller (Arduino). Phase-contrast microscopy imaging of canal development was performed on an inverted microscope (Nikon TI-E) via a \u00d710 dark phase objective (N.A. 0.25) or a \u00d74 dark phase objective (N.A. 0.13). Recordings were made with an sCMOS camera (Andor Zyla 4.2 PLUS USB 3.0; Andor Technology) or the DSLR camera (Canon 700d; triggered by a custom-programmed Arduino microcontroller).\n\n### Height profile measurement of the colony and agar with laser scanning confocal microscopy\n\nMolten M9DCAA 0.6% agar was mixed with 0.5-\u00b5m-diameter fluorescent microsphere (FluoSpheres carboxylate-modified, ex/em: 580 nm /605 nm; Thermo Fisher F8812) at a final microsphere number density of 3.1 \u00d7 1011 particles/mL (~1000-fold dilution of the microsphere solution). 20 mL of the agar-microsphere mixture was poured into a 60 mm diameter Petri dish. After the agar solidified, the plate was dried under laminar flow without the lid for 30 min. 1 \u00b5L overnight culture of P. aeruginosa PA14 flgK::Tn5 harboring the pMHLB plasmid (with PlasB-gfp(ASV), as described above) was inoculated into the center of the agar plate. The plate was then sealed by parafilm and incubated in a 30\u00b0C incubator without humidity control for ~24 hr before observation. The 3D structures of the agar and the bacterial colony near canals were imaged with a Leica SP8 laser scanning confocal microscope via a \u00d710 objective (N.A. 0.30). Green fluorescence acquired from cells in the colony (excitation: 476 nm; emission: 480\u2013550 nm) and red fluorescence from the microspheres homogeneously dispersed in agar (excitation: 562 nm; emission: 588\u2013658 nm) provided spatial information of the colony and the agar, respectively. The thickness of optical section was set as 12.85 \u00b5m. A total of 71 frames at different vertical positions with an interval of 4.28 \u00b5m were scanned to acquire the 3D structures. To compute the height profiles of the colony and the agar, we first obtained the 2D cross-sectional fluorescence intensity distributions in both green and red channels by averaging the 3D fluorescence image over the thickness of the optical section. We then binarized the 2D fluorescence intensity distributions in both channels to determine the boundaries of the colony and the agar, thus obtaining the thickness of the colony and the height profile the agar underneath the colony.\n\n### Establishing exogenous surface tension gradients\n\nRhamnolipid solution (10 mg/mL) was injected into the colony center of the rhamnolipid-deficient mutant P. aeruginosa PA14 flgK::Tn5 \u0394rhlA, in order to create a surface tension gradient pointing radially outward. To inject exogenous rhamnolipid solutions into the colony, 1 \u00b5L of PA14 flgK::Tn5 \u0394rhlA overnight culture was inoculated at the center of an M9DCAA agar plate, and the plate was incubated for 20 hr at room temperature and >~95% relative humidity. Then the lid was replaced by one with a drilled hole, and 10 mg/mL rhamnolipid solution (rhamnolipids 90%, in solid form, AGAE Technologies; dissolved in M9DCAA medium) loaded in a 100 \u03bcL glass microsyringe (W-018107, Shanghai Gauge) was pumped into the center of the colony at the rate of 5 \u03bcL/hr by a syringe pump (Fussion 200, Chemyx) via a PTFE tube (inner diameter 0.3 mm) that passed through the hole in the lid. The chosen rhamnolipid concentration 10 mg/mL, ~100 times CMC (Zhao et al., 2018) was on the order of maximal rhamnolipid concentration that can be produced by P. aeruginosa (Soares Dos Santos et al., 2016). The end of the PTFE tube barely touched the upper surface of the colony surface. Images of the colony were taken with a DSLR camera (Canon 700d).\n\nTo apply a counteracting surface tension gradient directing toward the colony center, we placed an agar patch containing surfactant Tween 20 (50 mg/mL) in front of a colony branch. To prepare the surfactant-infused agar patches, we supplemented the surfactant Tween 20 (Sigma) to molten M9DCAA 3% agar at a final concentration 50 mg/mL, poured 10 mL of this agar into 90 mm Petri dishes, and cut out 10 mm \u00d7 5 mm rectangular patches after the agar solidified. We placed a piece of the surfactant-infused agar patch at ~1 cm in front of a branch of a P. aeruginosa PA14 flgK::Tn5 colony that had grown for 20 hr at 30\u00b0C. Immediately following the placement of the agar patch, the agar plate was transferred to the stage of an inverted microscope (Nikon Ti-E) and the colony branch was observed via a \u00d74 dark phase objective (N.A. 0.13). Image recordings were made with an sCMOS camera (Andor Zyla 4.2 PLUS USB 3.0; Andor Technology). Control experiments followed the same procedures, except that Tween 20 solution was replaced by M9DCAA medium when preparing the agar patch.\n\n### Fluorescence imaging of rhamnolipid synthesis reporter and data processing\n\nWe measured the synthesis level of rhamnolipids during the early stage of canal development using a fluorescence reporter PrhlA-gfp(ASV) for the promoter activity of rhlA gene as described above. 1 \u00b5L of the overnight culture of P. aeruginosa PA14 flgK::Tn5 hosting the plasmid PrhlA-gfp(ASV) was inoculated at the center of an M9DCAA agar plate, and the plate was incubated in a sealed glass box with four beakers (each containing 5 mL DI water) at the corners to maintain saturated humidity. The glass box was then transferred to the motorized stage (HLD117, PRIOR Scientific Instruments) on an inverted microscope (Nikon Ti-E) for imaging at room temperature. Multichannel fluorescent images were acquired with a \u00d74 objective (N.A. 0.13) and an FITC/Texas Red dual-band filter set (excitation: 468/34 nm and 553/24 nm; emission: 512/23 nm and 630/91 nm; dichroic: 493 to ~530 nm and 574 to ~700 nm; Semrock, Cat# GFP/DsRed-A-000) with the excitation light provided by a high-power LED light source (X-Cite XLED1, Excelitas Technologies Corp.). For excitation of GFP, BDX LED lamp module (450\u2013495 nm) was turned on and the exposure time was set as 500 ms. For FM 4-64 excitation, GYX module (540\u2013600 nm) was turned on and the exposure time was set as 5 s. The imaging protocol was executed by a custom-programmed microcontroller (Arduino) through the software NIS Element AR (v. 4.51, Nikon). Images were recorded with an sCMOS camera (Andor Zyla 4.2 PLUS USB 3.0; Andor Technology).\n\nThe overall fluorescence count of PrhlA-gfp(ASV) reporter and FM 4-64 at the colony center was computed by integrating the fluorescence intensity over the entire inoculum region. For each image stack, the image with the lowest overall fluorescence count was chosen as the background and subtracted from the rest of images in the stack. Different colonies may have different lag times due to slight variation of inoculum size across experiments, but their growth dynamics after the lag time is highly conserved.\n\n### Measurement of shear banding\n\nTo observe shear banding in colonies, P. aeruginosa PA14 flgK::Tn5 hosting the plasmid PrhlA-gfp(ASV) was inoculated as described above. To observe shear banding in PDMS microfluidic channels, P. aeruginosa PA14 flgK::Tn5 was grown in 250 mL glass flasks with shaking in LB medium (1% Bacto tryptone, 0.5% yeast extract, 0.5% NaCl) at 30\u00b0C to a cell density ~2.1 \u00d7 109 cells/mL, and the culture was concentrated to ~2.1 \u00d7 1010 cells/mL and resuspended in M9DCAA medium before use. PDMS chips with microfluidic channel was fabricated by standard soft lithography technique (Whitesides et al., 2001) and sealed to cleaned glass coverslip. The cross section of microfluidic channels was rectangular, 1.1 mm in width, 200 \u00b5m in height, and 4 cm in length. Fluids (~200 \u00b5L) were loaded into a glass syringe and pumped into the microfluidic channels by the syringe pump (Chemyx Fusion 200, Two-channel Syringe Pump Model 07200) via a polytetrafluoroethylene (PTFE) tube (inner diameter 0.41 mm, outer diameter 0.92 mm). Before loading the fluids of interest, fresh M9DCAA medium was preloaded into the channel. For experiments with cell-rhamnolipid mixtures, the concentrated bacterial culture (~2.1 \u00d7 1010 cells/mL resuspended in M9DCAA medium) was mixed with rhamnolipid stock solution (100 mg/mL) at 9:1 ratio (final concentration of rhamnolipids: 10 mg/mL, ~100 times CMC; final cell density: ~1.9 \u00d7 1010 cells/mL) and injected into the microfluidic channel for observation. For experiments with microsphere-rhamnolipid mixtures, microsphere dispersion (Polybead sulfate, 1.1 \u00b5m diameter, Polyscience Inc) was mixed with rhamnolipid (final concentration of rhamnolipids: 10 mg/mL; final number density of microspheres: ~1.9 \u00d7 1010 particles/mL). The flow rate was maintained constant during observation, ranging from 3 \u00b5L/min to 5 \u00b5L/min.\n\nThe observations were performed on an inverted phase-contrast microscope (Nikon TI-E). Shear banding in colonies was observed with a \u00d720 objective (N.A. 0.45, w.d. 8.2\u20136.9 mm; Nikon, MRH48230) and experiments in PDMS microfluidic channels was imaged with a \u00d710 objective (N. A. 0.25, w.d. 6.2 mm; Nikon). Videos were recorded with an sCMOS camera (Andor Zyla 4.2 PLUS USB 3.0; Andor Technology) at 50 fps. Velocity field was computed by performing PIV analysis on phase-contrast microscopy image sequences using an open-source package MatPIV 1.6.1 written by J. Kristian Sveen (https://www.mn.uio.no/math/english/people/aca/jks/matpiv/). For each pair of consecutive images, the interrogation-window size started at 41.6 \u03bcm \u00d7 41.6 \u03bcm and ended at 10.4 \u03bcm \u00d7 10.4 \u03bcm after four iterations. The grid size of the resulting velocity field was 5.2 \u03bcm \u00d7 5.2 \u03bcm.\n\n### Measurement of flow speed in canals\n\nIn order to avoid perturbing canal flows by introducing external fluid tracers, we used fluorescent cells being transported by canal flows as natural fluid tracers. Note that the type IV pilus motility did not contribute to the movement of these cells since type IV pilus motility requires surface attachment and the resultant speed is only a few \u00b5m/s (Tal\u00e0 et al., 2019). The overnight culture of P. aeruginosa PA14 flgK::Tn5 harboring the pMHLB plasmid (with PlasB-gfp(ASV), as described above), whose GFP(ASV) expression was sufficiently bright and uniform along canals for tracking purposes, was mixed with the overnight culture of PA14 flgK::Tn5 at a ratio of 1:100. 1 \u00b5L of this mixture was inoculated at the center of an M9DCAA agar plate, and the plate was incubated for 20 hr at 30\u00b0C and >~95% relative humidity. The fluorescent bacteria were imaged on an upright microscope (ECLIPSE Ni-E; Nikon) via a \u00d740 objective (N.A. 0.75) and an FITC filter cube (excitation: 482/35 nm; emission: 536/40 nm; dichroic: 506-nm-long pass filter; FITC-3540C-000, Semrock Inc), with the excitation light provided by a mercury precentered fiber illuminator (Intensilight, Nikon), and recordings were made with an sCMOS camera (Andor Neo 5.5; Andor Technology).\n\nDue to the ultrahigh speed (up to hundreds \u00b5m/s) of cells, resolving the position of tracers (cells) frame by frame requires a very short exposure time (<~10 ms) per frame, but such a short exposure time could not yield sufficient photon count to distinguish cells from the background. To overcome this difficulty, we recorded cell trajectories during a long exposure time (0.5~5 s) (Figure 3D) and computed the average speed of cells during the exposure time. This way allowed us to reduce the error in speed measurement due the ultrafast movement of cells. Fifty such recordings were made at each position of the canal to yield sufficient number of cell trajectories. All recordings at a specific position were completed within 5 min from placing the agar plate on microscope stage in order to minimize the effect of evaporation. The images were imported into MATLAB (R2014b, The MathWorks; Natick, MA). For each trajectory, five points (including the two ends) were selected manually using datacursormode function in MATLAB user interface. The selected points were fitted by quadratic spline interpolation (splineinterp function in MATLAB Curve Fitting Toolbox). The length of the fitted curve was taken as the length of the trajectory, and the average speed of the cell was then calculated as the trajectory length divided by the exposure time. In each measurement, the position of field of view relative to the canal tip was determined by moving the motorized stage of the microscope, with an uncertainty of ~1 mm.\n\n### Numerical simulation of flows in a simplified 3D canal geometry\n\nTo estimate the magnitude of surface tension gradient driving flows in canals, we performed a finite-element simulation of Navier\u2013Stokes equation in a simplified 3D canal geometry using the software COMSOL Multiphysics (COMSOL, Stockholm, Sweden) (Figure 4A). The 3D simulation domain of the modeled canal was a liquid column with a length of 200 \u03bcm and a half-ellipse cross-sectional profile (the major and minor axis being 150 \u03bcm and 10 \u03bcm, respectively). We assumed a free-slip boundary condition at the upper interface of the domain (liquid\u2013air interface) and non-slip boundary condition at the lower boundary (liquid\u2013solid interface). A surface tension gradient was loaded at the liquid\u2013air interface, while the pressure at both ends of the simulation domain was set as zero. The fluid viscosity was set as 0.012 Pa \u00b7 s, according to a rheological measurement of P. aeruginosa colony extracts (Fauvart et al., 2012). The simulation was performed with a fine finite-element mesh. Final results of stationary solution of Navier\u2013Stokes equation in the simulation domain were imported into MATLAB for data processing. The surface and the bulk flow speed profiles were obtained by averaging the flow speed in regions >50 \u03bcm away from both ends.\n\n### Isolation, staining, and imaging of OMVs\n\nTo examine whether directed fluid flows in canals can facilitate long-range transport of OMVs produced by P. aeruginosa, we isolated OMVs from bacterial culture by centrifugation, labeled them fluorescently, and loaded the OMV dispersion into canals by microinjection. We isolated and stained P. aeruginosa OMVs using the following procedures. 200 mL of PA14 flgK::Tn5 overnight culture grown in M9DCAA medium was centrifuged at 5000 \u00d7 g for 5 min in 50 mL centrifuge tubes. The pellet and the supernatant (containing OMVs) were collected and stored separately. The supernatant was forced to pass through a 0.45 \u03bcm syringe filter, yielding a raw OMV dispersion with all particulate matter greater than 0.45 \u03bcm in size removed. The raw OMV dispersion was further purified and concentrated by centrifugation at 3000 \u00d7 g for 5 min in centrifugal devices with a cut-off molecular weight of 100 kDa (Microsep, Pall Corporation), yielding ~500 \u03bcL final OMV dispersion in phosphate-buffered saline (PBS; pH = 7.0). The obtained OMV dispersion was then transferred to a glass test tube for fluorescent staining with the membrane dye FM 1-43FX (Cat# F35355; Thermo Fisher Scientific). 5 \u03bcL of FM 1-43FX stock solution (1 mg/mL in DMSO) was added to the test tube and staining was allowed to proceed for 1 hr in a shaker (30\u00b0C and 180 rpm). To remove unreacted dyes, the volume of OMV dispersion in test tube was adjusted to 5.5 mL with PBS, and ~1/3 of the stored bacterial pellet was added to the test tube in order to absorb the unreacted dyes; the test tube was replaced in the shaker (30\u00b0C and 180 rpm) and incubated for 5 min, followed by centrifugation at 3000 \u00d7 g for 5 min. The supernatant (containing fluorescently labeled OMVs) was again adjusted to a volume of ~5.5 mL with PBS and the procedures described above were repeated until using up the stored cell pellet. The resulting supernatant was forced to pass through a 0.45 \u03bcm syringe filter to remove cells, and then was purified and concentrated by centrifugation with the 100 kDa centrifugal devices as described above, yielding ~200 \u03bcL fluorescently labeled OMV dispersion in PBS. The size distribution of OMVs isolated this way was characterized by a particle sizer (NanoSight LM10, Malvern Instruments). The OMVs had a size ranging from ~30 nm to ~600 nm, with a mean size of ~150 nm (Appendix 1\u2014figure 5).\n\nMicroinjection of OMVs into canals was performed using an XYZ micromanipulator (M-562-XYZ, Newport Corporation) and a 100 \u00b5L microsyringe with a glass micropipette (20 \u03bcm in diameter, fabricated by hand-pulling a 0.5 mm glass capillary tube) attached to it. The setup was installed by the side of the stage of an inverted microscope (Nikon Ti-E), where the Petri dish was placed. Prior to microinjection, fluorescently labeled OMV dispersion as described above was loaded into the microsyringe, and the lid of the Petri dish was removed. Under the microscope via a \u00d74 dark phase objective (N.A. 0.13), the glass micropipette was positioned to be just above the center of a canal at ~15 mm from the canal tip, and approximately 200 nL of OMV dispersion was dispensed to the canal by pushing the microsyringe. Immediately following the microinjection, the lid of Petri dished was replaced, and the transport of OMVs in the canal was imaged using a \u00d710 objective (N.A. 0.25) and a TRITC filter set (excitation: 535/50 nm; emission: 610/75 nm; dichroic: 565 nm long pass filter; Semrock) with the excitation light provided by a mercury precentered fiber illuminator (Intensilight, Nikon). Recordings were made with an sCMOS camera (Andor Zyla 4.2) with an exposure time of 0.1 s (for taking real-time videos as shown in Figure 5\u2014video 1) or 1 s (for acquiring OMV trajectories as shown in Figure 5C). The final distribution of dispensed OMVs along the canal as shown in Figure 5A and B was imaged via a \u00d74 objective (N.A. 0.13) with an exposure time of 1 s and the images at different locations were stitched by the software NIS Elements AR.\n\n### Interaction between S. aureus and P. aeruginosa colonies\n\nWe used S. aureus cells harboring a plasmid with constitutive GFP expression (Toledo-Arana et al., 2005), so that the cell mass in S. aureus colonies can be quantified by GFP fluorescence during the interaction with P. aeruginosa. Overnight cultures of S. aureus and P. aeruginosa PA14 were inoculated at different sides of an M9DCAAP agar plate. After incubating at 30\u00b0C for ~20 hr, the P. aeruginosa colony branches were approaching S. aureus colonies, and then we moved the plate onto the stage of an inverted microscope (Nikon Ti-E) for imaging. Phase-contrast images were acquired with a \u00d74 phase-contrast objective (N.A. 0.13). Fluorescence images were acquired with a \u00d710 objective (N.A. 0.25) and a FITC filter set (excitation: 482/35 nm; emission: 536/40 nm; dichroic: 506 nm long pass filter; Semrock), with the excitation light provided by an LED light source (X-Cite XLED1, Excelitas Technologies Corp.). To compute fluorescence count in the images, the background (acquired at a region with no cells) was first subtracted from the fluorescent images. To correct for the inhomogeneity of excitation illumination, the illumination intensity field was acquired by taking fluorescence images of an ~100 \u00b5m thick 0.55% agar pad infused with 10 \u03bcg/ml calcein (C0875, Sigma-Aldrich) that was placed on agar surface under the same imaging setup, and then the background-subtracted fluorescence images was divided by the illumination intensity field. The agar pad was made by solidifying molten agar between two cover glasses. S. aureus colony biomass was measured by the total background-corrected fluorescence count in the area originally occupied by the colony prior to contact with P. aeruginosa.\n",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "7b358221-bf13-4966-abe7-b4504c5d930b",
+      "submission_id": "97fbe377-f4fd-49f3-ba73-ccdf926ce6f4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sigal Ben-Yehuda, https://ror.org/03qxff017 Hebrew University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79780.sa0](https://doi.org/10.7554/eLife.79780.sa0)\n\nCongratulations on a very nice study. We see the discovery of the formation of large self-organized canals within bacterial colonies as a fascinating phenomenon. Furthermore, your thorough analysis describing the capacity of bacteria to employ these canals for rapid long-distance intercellular transportation has major implications for our understanding of bacterial cooperation. We are delighted to have the opportunity to present your fundamental findings to the scientific community.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sigal Ben-Yehuda, https://ror.org/03qxff017 Hebrew University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79780.sa1](https://doi.org/10.7554/eLife.79780.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Self-organized canals enable long range directed material transport in bacterial communities\" for consideration by eLife. We apologize for the delayed response. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Please highlight the shortage of using flagellum mutants and compare your findings with that of P. aeruginosa cells imaged in situ, as indicated by Reviewer #1.\n\n2. Please consider focusing more on the physics of the system and its potential for synthetic systems in the Introduction and Discussion, rather than on multicellularity.\n",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "68d9e0be-7d4a-41d4-86d9-05da41295be2",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C1",
+      "claim": "Long-range material transport is essential to maintain the physiological functions of multicellular organisms such as animals and plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-range material transport is essential to maintain the physiological functions of multicellular organisms such as animals and plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about multicellular organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "3073030d-b3c7-4b38-8e02-7fa65c9e07b6",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C2",
+      "claim": "Material transport in bacteria is often short-ranged and limited by diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, material transport in bacteria is often short-ranged and limited by diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific understanding of bacterial material transport.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "78eb470a-a208-4ea2-82e9-e65a2259a433",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C3",
+      "claim": "A large-scale and temporally evolving open-channel system spontaneously develops in Pseudomonas aeruginosa colonies via shear-induced banding.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Pseudomonas aeruginosa colonies as a model system, we discover that a large-scale and temporally evolving open-channel system spontaneously develops in the colony via shear-induced banding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental observations and data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "c2cfef42-10fa-4869-8d37-ffcd1dafaae2",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C4",
+      "claim": "Fluid flows in the open channels support high-speed transport of cells and outer membrane vesicles up to 450 \u00b5m/s over centimeters.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluid flows in the open channels support high-speed (up to 450 \u00b5m/s) transport of cells and outer membrane vesicles over centimeters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by direct experimental measurements of flow speeds in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "90362b40-abd7-48d3-9b3d-ef7556efb816",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C5",
+      "claim": "The open channels help to eradicate colonies of a competing species Staphylococcus aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluid flows in the open channels support high-speed (up to 450 \u00b5m/s) transport of cells and outer membrane vesicles over centimeters, and help to eradicate colonies of a competing species Staphylococcus aureus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from co-culture experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "5af777a0-92b2-40b9-bdb0-93d0b2f98ef5",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C6",
+      "claim": "The channel flows are driven by interfacial tension mediated by cell-secreted biosurfactants.",
+      "claim_type": "EXPLICIT",
+      "source": "the channel flows are driven by interfacial tension mediated by cell-secreted biosurfactants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental manipulations with rhamnolipids and mathematical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "2e391519-3498-4eb7-8334-75b18d3ae1d4",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C7",
+      "claim": "Mechanochemical coupling between interfacial force and biosurfactant kinetics can coordinate large-scale material transport in primitive life forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that mechanochemical coupling between interfacial force and biosurfactant kinetics can coordinate large-scale material transport in primitive life forms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "9fc8974d-edaa-423e-8cf8-d792b2084db3",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C8",
+      "claim": "Hydraulic pressure due to active pumping drives the circulation of body fluid in blood and lymph vessel systems of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, hydraulic pressure due to active pumping drives the circulation of body fluid in blood and lymph vessel systems of animals (Scallan et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "2908bc74-f8f3-475a-accf-5838b26076aa",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C9",
+      "claim": "Transpiration and capillary pressure passively drive the water transport through vascular tissues of plants.",
+      "claim_type": "EXPLICIT",
+      "source": "transpiration and capillary pressure passively drive the water transport through vascular tissues of plants (Sack and Holbrook, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "3795489c-9075-48cd-9e1e-d03037a0c90b",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C10",
+      "claim": "Cilia beating of epithelial cells drives the cerebrospinal fluid flow in brain ventricles.",
+      "claim_type": "EXPLICIT",
+      "source": "cilia beating of epithelial cells drives the cerebrospinal fluid flow in brain ventricles (Faubel et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "d4d8399e-5c94-43d5-aff5-0ff557401022",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C11",
+      "claim": "Cilia beating of epithelial cells drives mucus flow in the respiratory tract.",
+      "claim_type": "EXPLICIT",
+      "source": "cilia beating of epithelial cells drives the cerebrospinal fluid flow in brain ventricles (Faubel et al., 2016) as well as mucus flow in the respiratory tract (Huang and Choma, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "14ddfb90-be02-41f7-aced-3e2ab581373e",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C12",
+      "claim": "At the single-cell level, diffusion governs nutrient uptake and sets a fundamental limit on the size of bacterial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the single-cell level, diffusion governs nutrient uptake and sets a fundamental limit on the size of bacterial cells (Berg, 1993; Nelson, 2003; Schulz and Jorgensen, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "f9321ba7-08d9-4859-872c-faffaaae210e",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C13",
+      "claim": "Diffusion has been assumed to dominate material transport in bacterial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacterial communities, diffusion has been assumed to dominate material transport (Lavrentovich et al., 2013; Pirt, 1967; Shao et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "a234fbc5-1af3-418c-ac7e-2a601d87a07f",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C14",
+      "claim": "Long-range directed material transport is deemed unusual in bacterial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "long-range directed material transport is deemed unusual, despite the notion that bacterial communities resemble multicellular organisms in many aspects such as coordinated metabolism, communication, and division of labor (Lee et al., 2017; Parsek and Greenberg, 2005; Shapiro, 1998; van Gestel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "c10ad4d3-3530-46af-b5f2-63f0e51a9903",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C15",
+      "claim": "Long-range flows were driven by flagellar motility in sediment biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these examples, it was shown that long-range flows were driven by flagellar motility in sediment biofilms (Fenchel and Glud, 1998; Petroff and Libchaber, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "34d80081-2063-4a1c-9300-31ae629db96b",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C16",
+      "claim": "Long-range flows were driven by flagellar motility in bacterial colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "it was shown that long-range flows were driven by flagellar motility in sediment biofilms (Fenchel and Glud, 1998; Petroff and Libchaber, 2014) and in bacterial colonies (Wu et al., 2011; Xu et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "dec2befc-df69-4d09-a1e6-b18bc99bea40",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C17",
+      "claim": "Directed transport can be driven by passive forces such as osmosis and evaporation-induced pressure gradient with a speed of ~0.1\u201310 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "directed transport can also be driven by passive forces such as osmosis and evaporation-induced pressure gradient (Wilking et al., 2013; Wu and Berg, 2012), with a speed of ~0.1\u201310 \u00b5m/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "94a88441-15e9-4b79-8422-ec2ccdb198f3",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C18",
+      "claim": "Intra-colony channel structures have been identified in a few bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "Intra-colony channel structures have been identified in a few bacterial species (Davey et al., 2003; Drury et al., 1993; Rooney et al., 2020; Stoodley et al., 1994; Xu et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "b21d1229-acdb-4950-941a-97e1577dcfce",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C19",
+      "claim": "Previously identified channel structures have a typical persistence length of a few micron to tens of microns, thus not able to support directed transport beyond millimeter scale.",
+      "claim_type": "EXPLICIT",
+      "source": "these channel structures have a typical persistence length of a few micron to tens of microns, thus not able to support directed transport beyond millimeter scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to prior work and logical inference about transport capabilities.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "de6cd273-716b-44f7-bb13-4538fc4d4fb7",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C20",
+      "claim": "Many bacterial species synthesize biosurfactants in a tightly regulated manner.",
+      "claim_type": "EXPLICIT",
+      "source": "For bacterial communities, interfacial tension may potentially offer such a driving force because many bacterial species synthesize biosurfactants (i.e., surface active agents that reduce interfacial energy or surface tension Chandler, 1987) in a tightly regulated manner (Ron and Rosenberg, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "9c91120b-4d1b-4791-a8bc-7983e987072b",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C21",
+      "claim": "Colonies of wildtype and pilB-knockout mutant P. aeruginosa displayed rapid cellular flows streaming through the interior of the colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In the colonies of wildtype and pilB-knockout mutant (PA14 \u0394pilB; denoted as non-piliated mutant), we were intrigued to observe rapid cellular flows streaming through the interior of the colonies, while there was little collective directed motion on both sides of the streams (Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "f804f86c-98c4-4de6-ba35-cdc20bef7b3d",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C22",
+      "claim": "The streams in wildtype and pilB-knockout mutant colonies were tens of microns in width and up to millimeters in length.",
+      "claim_type": "EXPLICIT",
+      "source": "The streams were tens of microns in width and up to millimeters in length",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "9468aa29-b295-48af-ad11-475cde5db1df",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C23",
+      "claim": "The courses of streams in wildtype and pilB-knockout mutant colonies were highly unstable presumably due to continuous disruption by cellular motion driven by flagellar motility.",
+      "claim_type": "EXPLICIT",
+      "source": "but their courses were highly unstable presumably due to continuous disruption by cellular motion driven by flagellar motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation with a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "584505ef-377b-4b4b-a305-fc1afa1a05a9",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C24",
+      "claim": "Non-motile and piliated P. aeruginosa colonies presented many low-cell-density valleys extending from colony center to the edge over centimeters with high directional persistence.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, for PA14 mutants without flagellar motility, namely, PA14 flgK::Tn5 \u0394pilA (with both flagellar motility and type IV pilus-mediated motility disabled; denoted by 'non-motile P. aeruginosa') (Beaussart et al., 2014) and PA14 flgK::Tn5 (without flagellar motility but with functional type IV pilus-mediated motility; denoted by 'piliated P. aeruginosa') (Lee et al., 2011; 'Methods'), we observed by naked eyes that the colonies of both strains presented many low-cell-density valleys extending from colony center to the edge over centimeters with high directional persistence (Figure 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "652a0730-552a-4df3-88a1-333c75b5b4e0",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C25",
+      "claim": "The centimeter-long valleys in non-motile and piliated P. aeruginosa colonies were fluid-filled, free-surface channels ~5\u201310 \u00b5m in height and tens to several hundred \u00b5m in width.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the microscope, we found that these remarkable, centimeter-long valleys were fluid-filled, free-surface channels (i.e., open channels) ~5\u201310 \u00b5m in height and tens to several hundred \u00b5m in width",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "c4b85912-e9f1-463a-a746-4f50f87c2311",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C26",
+      "claim": "Cells carried by the fluid flow in canals streamed rapidly at speeds up to hundreds of \u00b5m/s in coherent directions.",
+      "claim_type": "EXPLICIT",
+      "source": "in which cells carried by the fluid flow streamed rapidly at speeds up to hundreds of \u00b5m/s in coherent directions (Figure 1E, Appendix 1\u2014figure 1A, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from experimental observations shown in figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "6038e1f4-26b6-4b7a-baf1-4eb631390b9d",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C27",
+      "claim": "The fluid flow in channels on average went towards the colony edge and stopped abruptly at the very end of a channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluid flow in channels on average went towards the colony edge and stopped abruptly at the very end (i.e., the tip) of a channel, disappearing into the dense layer of cells near the edge (Appendix 1\u2014figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "2f6f783c-0afa-4947-8f6f-548ee721f81e",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C28",
+      "claim": "The fluid flow in canals was sensitive to water content in the air environment and was easily disrupted by decrease of humidity.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluid flow was sensitive to water content in the air environment, and it was easily disrupted by decrease of humidity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "b6865182-587d-4296-bc97-104bc6a9ffd9",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C29",
+      "claim": "Nearby channels could merge with each other while individual channels could split, resulting in a large-scale channel network across the entire colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearby channels could merge with each other while individual channels could split, resulting in a large-scale channel network across the entire colony (Figure 1B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "65b5c390-add8-4b15-a7dd-5bdd464c3731",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C30",
+      "claim": "The large-scale open channels have a free upper surface and are distinct from the pipe-like closed channels or conduits previously reported in bacterial colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "These large-scale open channels have a free upper surface, and therefore, they are distinct from the pipe-like closed channels or conduits previously reported in bacterial colonies (Drury et al., 1993; Rooney et al., 2020; Stoodley et al., 1994; Xu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior work supported by citations and experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "8a5e22a8-1dc4-4b03-aa25-6827a2c0122a",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C31",
+      "claim": "When the amount of surface water on agar plates was reduced by extended drying, piliated P. aeruginosa colonies displayed a unique branching morphology presumably driven by fingering instability.",
+      "claim_type": "EXPLICIT",
+      "source": "When the amount of surface water on agar plates was reduced by extended drying ('Methods'), the piliated P. aeruginosa (PA14 flgK::Tn5) colonies displayed a unique branching morphology presumably driven by fingering instability in the presence of surface tension gradient in the colony (Trinschek et al., 2018; Troian et al., 1989; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation with a speculative explanation supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "8105b8bc-9a45-4a27-8326-cda6658c5e5d",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C32",
+      "claim": "Each branch in branching colonies hosted a single canal that ran through the entire branch.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly each branch was highly directed and hosted a single canal that ran through the entire branch (Figure 1F, Figure 1\u2014video 2; Appendix 1\u2014figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from experiments shown in figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "1b4fe724-d944-4269-bc7e-1fc5e8b9148e",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C33",
+      "claim": "The emergence of canals in branching colonies occurred robustly at ~8 hr at 30\u00b0C or ~15 hr at room temperature after inoculation.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of canals in such branching colonies occurred robustly at ~8 hr (at 30\u00b0C) or ~15 hr (at room temperature) after inoculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "30c065cc-994d-463c-b022-b29d5b4034f2",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C34",
+      "claim": "The rhamnolipid-deficient mutant PA14 flgK::Tn5 \u0394rhlA was unable to develop canals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this rhamnolipid-deficient mutant (PA14 flgK::Tn5 \u0394rhlA) was unable to develop canals (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from experiments with a genetic mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "3b5ce263-56b6-446a-9c30-7bc262ead39b",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C35",
+      "claim": "The rhamnolipid-deficient mutant colony showed no sign of any mesoscale flows under the microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "also the colony showed no sign of any mesoscale flows under the microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "8fb54fc7-b735-44e0-8ef7-b60cb9dbbff2",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C36",
+      "claim": "Artificial surface tension gradient established by injecting exogenous rhamnolipids restored canal formation in colonies of the rhamnolipid-deficient mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, to show that Marangoni stress could drive canal formation, we established artificial surface tension gradient in colonies by injecting an exogenous source of rhamnolipids via a programmable syringe pump ('Methods'), and it restored canal formation in colonies of the rhamnolipid-deficient mutant (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result demonstrating causation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "e07a5d08-f5c5-4a23-8043-6c523ed6b292",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C37",
+      "claim": "The height of agar under canals and other regions of the colony was uniform and there was no sign of agar degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that while the colony thickness above agar had an abrupt drop near canals, the height of agar under canals and other regions of the colony was uniform and there was no sign of agar degradation (Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from laser scanning confocal microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "8681ab23-c71a-4447-a987-d68b7ede9fad",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C38",
+      "claim": "Canal development requires rhamnolipids but not agar degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that canal development requires rhamnolipids but not agar degradation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "a11c5a6b-2d3c-4cd8-9b41-15f2ea716953",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C39",
+      "claim": "Fluid flows in canals are driven by rhamnolipids-mediated surface tension gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "and they provide strong evidence that fluid flows in canals are driven by rhamnolipids-mediated surface tension gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "cb064959-d472-48ef-b011-7ce5628e85a0",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C40",
+      "claim": "When a counteracting surface tension gradient was applied by placing an agar patch containing surfactant Tween 20 in front of a colony branch, fluid flows in the canal gradually ceased and the canal slowly retracted.",
+      "claim_type": "EXPLICIT",
+      "source": "When we applied a counteracting surface tension gradient directing toward the colony center by placing an agar patch containing surfactant Tween 20 (50 mg/mL, surface tension ~4 \u00d7 10-2 N/m) ~1 cm in front of a colony branch, fluid flows in the canal gradually ceased and the canal (but not the colony branch) slowly retracted (Video 2; 'Methods')",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result shown in a video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "34558eaa-73d5-4a39-925d-e587b4a83413",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C41",
+      "claim": "The driving force of canal flows is comparable in magnitude to that provided by a surface tension gradient of ~ 103 mN\u00b7m\u20132.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the driving force of canal flows is comparable in magnitude to that provided by a surface tension gradient of ~ 103 mN\u00b7m\u20132.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental result with Tween 20.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "c8639ff8-d6d4-4554-841c-16d67d6dcd9c",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C42",
+      "claim": "The rhlA promoter activity was azimuthally symmetric in early-stage colonies and the overall PrhlA-gfp(ASV) fluorescence increased monotonically until canals emerged.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that the rhlA promoter activity was azimuthally symmetric in early-stage colonies and the overall PrhlA-gfp(ASV) fluorescence increased monotonically until canals emerged (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from fluorescence reporter experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "a8548961-0366-44a1-b60f-b4a38ec3e315",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C43",
+      "claim": "Rhamnolipids in the colony center were continuously synthesized, thus generating a radial gradient of surface tension.",
+      "claim_type": "EXPLICIT",
+      "source": "The result shows that rhamnolipids in the colony center were continuously synthesized, thus generating a radial gradient of surface tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the fluorescence reporter data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "5c018fe6-5957-4e24-aaf6-5e92a025bd18",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C44",
+      "claim": "The flow speed profile in regions with homogeneous cell density distribution displayed flow regimes with distinct shear rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow speed measurement by particle image velocimetry (PIV) analysis ('Methods') in colonies before canals became visible to naked eyes revealed that the flow speed profile in regions with homogeneous cell density distribution displayed flow regimes with distinct shear rates (Figure 3A and B, Figure 3\u2014video 1; 'Methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from PIV analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "1e868acc-6efc-4b7f-86fc-0de4621cf7b6",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C45",
+      "claim": "As time went by, fluid flows in the high shear domains carried away cells in nearby areas, and the course got widened and gradually became fixed canals.",
+      "claim_type": "EXPLICIT",
+      "source": "as time went by, fluid flows in the high shear domains carried away cells in nearby areas, and the course got widened and gradually became fixed canals (Figure 3C, 32\u201356 min, Figure 3\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from time-lapse imaging shown in figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "5d9d8585-2892-4769-b1c0-f6c8d5df71ca",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C46",
+      "claim": "The presence of distinct flow regimes under presumably uniform shear stress and the instability of flow courses are hallmarks of shear-induced banding.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of distinct flow regimes under presumably uniform shear stress (Figure 3A and B) and the instability of flow courses (Figure 3C) are hallmarks of shear-induced banding, a phenomenon often seen in complex fluids (Divoux et al., 2016; Olmsted, 2008; Ovarlez et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of experimental observations supported by citations to prior work on complex fluids.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "5065a322-7b1f-4004-be73-3e623454ef3e",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C47",
+      "claim": "Canals emerge via the onset of shear-induced banding in the colony fluids.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that canals emerge via the onset of shear-induced banding in the colony fluids (see more in 'Discussion').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental observations and comparison with complex fluid behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "12d1772f-30cf-4d5c-8194-05300b91adf8",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C48",
+      "claim": "The time-averaged peak cell speed near the center of canals was ~200 \u00b5m/s with transient speeds up to 450 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the time-averaged peak cell speed near the center of canals was ~200 \u00b5m/s (with transient speeds up to 450 \u00b5m/s) (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from cell tracking experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "8ccd5c8f-ee67-4723-aeb5-a0140d4be753",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C49",
+      "claim": "The peak flow speed in canals was higher than other reported forms of bacterial long-range directed transport and most forms of active bacterial motility.",
+      "claim_type": "EXPLICIT",
+      "source": "higher than other reported forms of bacterial long-range directed transport (Fenchel and Glud, 1998; Petroff and Libchaber, 2014; Wilking et al., 2013; Wu et al., 2011; Xu et al., 2019) and most forms of active bacterial motility (Mitchell and Kogure, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with prior work supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "9d6d6350-26f8-4d97-812b-32cc625ba51f",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C50",
+      "claim": "There was a high-flow-speed region spanning ~20 mm from the canal tip toward the colony center, and the flow speed diminished further toward the colony center.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by the plateau in Figure 3E, we found a high-flow-speed region spanning ~20 mm from the canal tip toward the colony center, and the flow speed diminished further toward the colony center.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from flow speed profiling shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "91b2305e-6cf5-4a16-84e4-2db8afb5a40f",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C51",
+      "claim": "The surface tension near the colony center has decreased to a steady-state level, presumably due to the saturated concentrations of rhamnolipids there.",
+      "claim_type": "EXPLICIT",
+      "source": "This result reveals the spatial distribution of Marangoni stress and suggests that the surface tension near the colony center has decreased to a steady-state level, presumably due to the saturated concentrations of rhamnolipids there.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the flow speed measurements with a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "f0bac428-8f45-4eaa-9b67-a9b0ae185d43",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C52",
+      "claim": "The Marangoni stress in canals was on the order of ~1000 mN\u00b7m\u20132 in order to support a peak flow speed of ~400 \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "First of all, we used finite-element simulation of Navier\u2013Stokes equation in a simplified canal geometry (Figure 4A; 'Methods') to estimate that the Marangoni stress in canals was on the order of ~1000 mN\u00b7m\u20132 in order to support a peak flow speed of ~400 \u00b5m/s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate from numerical simulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "0f20527b-d187-4ca6-8544-86efc286d1c7",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C53",
+      "claim": "The magnitude of Marangoni stress roughly corresponds to the surface tension gradient established between a saturated source of rhamnolipids and a surfactant-free region over a distance of ~4 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "This magnitude roughly corresponds to the surface tension gradient established between a saturated source of rhamnolipids (surface tension ~30 mN/m; Appendix 1\u2014figure 3) and a surfactant-free region (surface tension ~70 mN/m; Appendix 1\u2014figure 3) over a distance of ~4 cm",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculation based on measured surface tension values and geometric considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "266e0e4a-dc7b-45f7-82cb-6a75493a01ec",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C54",
+      "claim": "The distribution of interface-associated surfactant displayed a saturated region near the colony center followed by a biphasic decrease toward the spreading front of the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by the numerical simulation results based on the model, the distribution of interface-associated surfactant displayed a saturated region near the colony center (Figure 4D) (corresponding to the region with minimal surface tension in Appendix 1\u2014figure 4A), followed by a biphasic decrease toward the spreading front of the colony (corresponding to the increase of surface tension in Appendix 1\u2014figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from mathematical modeling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "c3439067-a47e-42ba-ba64-5e9c377cab03",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C55",
+      "claim": "The resultant surface tension gradient was nearly zero near the colony center, which agrees with the experimental result.",
+      "claim_type": "EXPLICIT",
+      "source": "The resultant surface tension gradient (and therefore flow speed) was nearly zero near the colony center, which agrees with the experimental result (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between modeling results and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "fbe0f04f-a461-415b-a0e4-d4a196f6d925",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C56",
+      "claim": "The surface tension gradient displayed a pronounced plateau with modest inclination, which is in qualitative agreement with the measured flow speed profile in canals.",
+      "claim_type": "EXPLICIT",
+      "source": "further away from the center, it displayed a pronounced plateau (i.e., ranging from the peak to knee of each curve at specific time points, corresponding to the region with rapid canal flows) with modest inclination (Figure 4E). These results are in qualitative agreement with the measured flow speed profile in canals (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between modeling results and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "7fe077a8-6c50-45be-a443-f7965de29ab8",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C57",
+      "claim": "The entire plateau of surface tension gradient moves away from colony center at a speed of ~1 mm/hr, with the width increasing gradually from ~20 mm to ~30 mm in 15 hr while the height decreasing by ~20%.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, our simulation results were able to reveal that the entire plateau moves away from colony center at a speed of ~1 mm/hr, with the width increasing gradually from ~20 mm to ~30 mm in 15 hr while the height decreasing by ~20% (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from mathematical modeling shown in figures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "9aee312f-af63-4367-a425-b8021a018a8d",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C58",
+      "claim": "The high-speed directed flows at a specific location in the canal can persist for ~20\u201330 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the high-speed directed flows at a specific location in the canal can persist for ~20\u201330 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "ea8eada4-f68a-46bd-9a90-16083365bb8d",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C59",
+      "claim": "Fluorescently labeled OMVs with a mean size of ~150 nm were transported along the canal over centimeter distances with a peak speed of >200 \u03bcm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these OMVs, having a mean size of ~150 nm (Appendix 1\u2014figure 5), were transported along the canal over centimeter distances (Figure 5A\u2013C) with a peak speed of >200 \u03bcm/s (Figure 5\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from OMV tracking experiments shown in figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "b5478cbf-426e-4f12-acf3-a018b07fac73",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C60",
+      "claim": "S. aureus colonies irrigated by canal flows were quickly eradicated, with <2% of the initial cell mass remaining after 60 min of contact with canal flows.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that S. aureus colonies irrigated by canal flows were quickly eradicated (Figure 5D, Figure 5\u2014video 2; Appendix 1\u2014figure 6), with <2% of the initial cell mass remaining after 60 min of contact with canal flows (Figure 5E, curve labeled as 'irrigated').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from co-culture experiments shown in figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "e4ea8111-3749-4c5d-9bd4-032c8d0a8c61",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C61",
+      "claim": "S. aureus colonies that were in contact with P. aeruginosa colony but did not encounter canal flows retained ~40% of the initial cell mass after 60 min of contact.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, S. aureus colonies that were in contact with P. aeruginosa colony but did not encounter canal flows retained ~40% of the initial cell mass after 60 min of contact (Figure 5E, curve labeled as 'non-irrigated').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result from co-culture experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "0438876f-cc27-4eb7-8f94-09f89a34ff7e",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C62",
+      "claim": "Fluid flows in canals help to eradicate competing bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated that fluid flows in canals help to eradicate competing bacterial species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the co-culture experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "21864664-8ee8-4136-9512-ca4f2bf0bc88",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C63",
+      "claim": "Canal flows may increase the flux of P. aeruginosa-produced antimicrobial substances and therefore enhance the efficiency of inhibiting competing bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that canal flows may increase the flux of P. aeruginosa-produced antimicrobial substances, such as quinolines encapsulated in OMVs with antibacterial activities against Gram-positive bacteria (Mashburn and Whiteley, 2005) and toxic compounds carried by rhamnolipid micelles (Gdaniec et al., 2022), and therefore enhance the efficiency of inhibiting competing bacterial species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citations to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "b0ff6776-4701-4c22-8e36-c29c07757b04",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C64",
+      "claim": "The rapid eradication of S. aureus colonies was most likely due to substances encapsulated in OMVs and rhamnolipid micelles that were transported by canals.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the rapid eradication of S. aureus colonies was most likely due to substances encapsulated in OMVs (Mashburn and Whiteley, 2005) and rhamnolipid micelles (Gdaniec et al., 2022) that were transported by canals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from experimental results and prior knowledge supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "cfea711e-5029-44f5-a06c-3f1a694b3afd",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C65",
+      "claim": "Wildtype P. aeruginosa colonies displayed rapid streams within the colony but the streams did not turn into stable and persistent canals.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, wildtype P. aeruginosa colonies displayed rapid streams within the colony but the streams did not turn into stable and persistent canals (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from experiments shown in a video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "7187370f-8807-4272-b324-f625cfecf947",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C66",
+      "claim": "Flagellar motility weakens cell\u2013cell adhesion and disrupts the course of high-shear flow regimes, thus preventing the high-shear flow regimes from further developing into more stable courses or canals.",
+      "claim_type": "EXPLICIT",
+      "source": "Flagellar motility weakens cell\u2013cell adhesion and disrupts the course of high-shear flow regimes, thus preventing the high-shear flow regimes from further developing into more stable courses or canals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed instability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "e158bfb8-198b-4fa0-8ce0-aa8bb09595cd",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C67",
+      "claim": "P. aeruginosa cells tend to downregulate flagellar motility in the airways of patients with CF.",
+      "claim_type": "EXPLICIT",
+      "source": "Although P. aeruginosa cells tend to downregulate flagellar motility in the airways of patients with CF (Luzar et al., 1985; Mahenthiralingam et al., 1994; Wolfgang et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "42d93348-8c74-4d76-9410-5f2f07cd7242",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C68",
+      "claim": "Serratia marcescens is able to develop canal-like structures during swarming, but such structures are only found at the center of the colony where most cells appear to be sessile.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that another flagellated and biosurfactant-producing bacteria Serratia marcescens is able to develop canal-like structures during swarming (Appendix 1\u2014figure 7), but such structures are only found at the center of the colony where most cells appear to be sessile.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experiments shown in appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "ce8303cd-5551-418e-a61c-574567ca9d09",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C69",
+      "claim": "Colony expansion normally does not lead to directed transport of materials within the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Colony expansion normally does not lead to directed transport of materials within the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on understanding of colony dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "4abe94c4-8203-4cf7-ad78-4c23f7ebb2d8",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C70",
+      "claim": "During swarming of wildtype P. aeruginosa facilitated by Marangoni stress, the colony expansion speed was ~1 \u00b5m/s, which is one order of magnitude slower than individual cells' random motion.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, during swarming of wildtype P. aeruginosa facilitated by Marangoni stress, the colony expansion speed was ~1 \u00b5m/s (Fauvart et al., 2012), which is one order of magnitude slower than individual cells' random motion (tens of \u00b5m/s)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work and comparison with known cell motility speeds.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "50d6a7ba-9dca-4d52-bf0e-156a98ae5ca9",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C71",
+      "claim": "Directed material transport within a colony does not necessarily coincide with colony expansion, and the speed of the two processes could differ by orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as demonstrated in this study, directed material transport within a colony does not necessarily coincide with colony expansion (e.g., see Appendix 1\u2014figure 1\u2014video 2), and the speed of the two processes could differ by orders of magnitude (~200 \u00b5m/s versus ~2 mm/hr).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from experimental observations shown in videos.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "daf3dbbd-6cfa-4eed-ab24-5274eef73358",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C72",
+      "claim": "The cross-sectional flow velocity profile of a mixture of dense bacterial suspension and concentrated rhamnolipids was highly asymmetric and signaled shear banding.",
+      "claim_type": "EXPLICIT",
+      "source": "Under controlled flow conditions in PDMS microfluidic channels, we found that the cross-sectional flow velocity profile of a mixture of dense bacterial suspension (~1.35 \u00d7 1010 cells/mL) and concentrated rhamnolipids at 10 mg/mL, ~100 times critical miceller concentration (CMC) (Zhao et al., 2018) was highly asymmetric and signaled shear banding (Appendix 1\u2014figure 8A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from microfluidic experiments shown in appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "b1150c9d-c3d7-4b66-86f9-c86ffce86362",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C73",
+      "claim": "The flow velocity profile of pure cell suspension or of a mixture of rhamnolipids and dense microsphere suspension was closer to the parabolic profile characteristic of Newtonian fluids.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the flow velocity profile of pure cell suspension at the same density or of a mixture of rhamnolipids (10 mg/mL) and dense 1.1 \u00b5m microsphere suspension (~1.9 \u00d7 1010 particles/mL) was closer to the parabolic profile characteristic of Newtonian fluids (Appendix 1\u2014figure 8B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from microfluidic experiments shown in appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "33fe43a8-c6ce-475d-a4e0-58625700a925",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C74",
+      "claim": "The onset of shear banding in P. aeruginosa colonies preceding canal formation requires the interaction between cells and rhamnolipids.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the onset of shear banding in P. aeruginosa colonies preceding canal formation requires the interaction between cells and rhamnolipids (most likely in the form of micelles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the microfluidic experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "4018abbc-85db-42fe-80da-d0a03a0dc57c",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C75",
+      "claim": "Marangoni stress was previously suggested to contribute to the expansion of bacterial colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Marangoni stress was previously suggested to contribute to the expansion of bacterial colonies (Angelini et al., 2009; Du et al., 2012; Fauvart et al., 2012; Rhodeland et al., 2020; Trinschek et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "224b24f1-d9a8-411d-ac43-7ed6e74ad914",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C76",
+      "claim": "Canals develop robustly over a relatively wide range of agar concentration between 0.5% and 1.0% wt/vol.",
+      "claim_type": "EXPLICIT",
+      "source": "We varied the agar concentration and found that canals develop robustly over a relatively wide range of agar concentration between 0.5% and 1.0% wt/vol (Appendix 1\u2014figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental result shown in appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "55939ed6-ec98-478f-9e8f-fab5c0acf415",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C77",
+      "claim": "Above 1.0% agar concentration, canals were not observed presumably because the cells have difficulty to extract sufficient water to maintain an open-surface liquid film on the agar surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Above 1.0%, canals were not observed presumably because the cells have difficulty to extract sufficient water to maintain an open-surface liquid film on the agar surface, which is the same underlying reason why most bacteria cannot swarm on agar above 1.0% as swarming also requires maintaining open-surface liquid films (Kearns, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by a citation to prior work on swarming.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "a60e8de9-d27a-487d-ac98-700f4fe73a0c",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C78",
+      "claim": "The bacterial canals are reminiscent of human-made canals for cargo transport.",
+      "claim_type": "EXPLICIT",
+      "source": "The open channels we found here are reminiscent of human-made canals for cargo transport, so we refer to these open channels as 'bacterial canals.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy drawn by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "21b2ee55-68d5-463d-85cc-e1c74e41b3d3",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C79",
+      "claim": "P. aeruginosa produces outer membrane vesicles to deliver pathogenic factors, antimicrobial compounds, intercellular signals, and public goods.",
+      "claim_type": "EXPLICIT",
+      "source": "P. aeruginosa produces OMVs to deliver pathogenic factors, antimicrobial compounds, intercellular signals, and public goods that either dissolve poorly or are prone to rapid dilution in the extracellular milieu (Bomberger et al., 2009; Mashburn and Whiteley, 2005; Schwechheimer and Kuehn, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "db860b90-5089-45dc-bb58-c7f47aa73740",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C80",
+      "claim": "OMVs are slow in diffusion because their sizes are highly heterogeneous ranging from several tens to hundreds of nanometers.",
+      "claim_type": "EXPLICIT",
+      "source": "OMVs are slow in diffusion because their sizes are highly heterogeneous ranging from several tens to hundreds of nanometers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of diffusion and particle size.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "ec5fabb4-027e-4982-9df3-e725d80aacfb",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C81",
+      "claim": "Imaging of P. aeruginosa aggregation patterns in situ in sputum samples from CF patients did not reveal canal-like structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging of P. aeruginosa aggregation patterns in situ in sputum samples from CF patients did not reveal canal-like structures (DePas et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "b5d3c572-d999-4272-99b6-fdbee9c00c12",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C82",
+      "claim": "Canal formation may not occur in sputum samples from CF patients.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that canal formation may not occur in such conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cited observation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "73fa69b6-ff95-4685-aad9-b4f7b692ea3e",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C83",
+      "claim": "The instability of streams in wildtype colonies was presumably caused by continuous displacement of cells driven by flagellar motility.",
+      "claim_type": "EXPLICIT",
+      "source": "The instability was presumably caused by continuous displacement of cells driven by flagellar motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed phenomenon.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "18256854-22e7-4bec-b6c2-015a30f213f7",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C84",
+      "claim": "Cells translocating along the channels eventually settled in near the colony edge and they may contribute to colony expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells translocating along the channels eventually settled in near the colony edge and they may contribute to colony expansion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation with a speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "7ec6a7dc-1e5e-457e-999a-211fecacf118",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C85",
+      "claim": "Channel formation does not necessarily coincide with colony expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "however, channel formation does not necessarily coincide with colony expansion (e.g., see 'Discussion').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding with reference to further discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "ea8288c6-8a95-45a8-ad2b-12e434c67edd",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C86",
+      "claim": "The colonies expanded at a steady-state speed of ~2 mm/hr at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The colonies expanded at a steady-state speed of ~2 mm/hr at 30\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "3406dd20-af2f-40c1-a44a-5777c3ad34db",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C87",
+      "claim": "The artificial surface tension gradient also promoted colony expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the artificial surface tension gradient also promoted colony expansion (Figure 2B), but again canal formation does not necessarily coincide with colony expansion (see 'Discussion').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experiments shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "52c3c964-bb97-4465-b476-d7ec30faee09",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C88",
+      "claim": "The type IV pilus-mediated motility did not contribute to the movement of isolated cells being transported in canals since type IV pilus-mediated motility requires surface attachment and the resultant speed is only a few \u00b5m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the type IV pilus-mediated motility did not contribute to the movement of these isolated cells being transported in canals since type IV pilus-mediated motility requires surface attachment and the resultant speed is only a few \u00b5m/s (Tal\u00e0 et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known properties of type IV pilus motility supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "d5761f2a-1e75-4f63-b7c8-e906c6e91cfe",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C89",
+      "claim": "The movement of isolated cells in canals followed fluid motion in canals.",
+      "claim_type": "EXPLICIT",
+      "source": "so the movement of cells indeed followed fluid motion in canals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of cell movement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "aacc980a-e0c3-48cd-85fd-7b0ac0b7a6bf",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C90",
+      "claim": "P. aeruginosa is a primary member of poly-species microbial communities found in lung infections of cystic fibrosis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "P. aeruginosa is a primary member of poly-species microbial communities found in lung infections of cystic fibrosis (CF) patients, and it may engage in competitive interactions with other species such as S. aureus (Chew et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "5a42d8a9-bbb7-40f7-b6ae-c8053620f7a1",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C91",
+      "claim": "P. aeruginosa may engage in competitive interactions with S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "and it may engage in competitive interactions with other species such as S. aureus (Chew et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "48b26a8b-d873-4939-951d-3b832be8d062",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C92",
+      "claim": "P. aeruginosa produces a variety of anti-staphylococcal compounds such as quinolines, pyocyanin, and LasA protease.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that P. aeruginosa produces a variety of anti-staphylococcal compounds such as quinolines, pyocyanin, and LasA protease (Hotterbeekx et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "268a8cbf-fbe4-4c61-a224-d8e9d10768ea",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C93",
+      "claim": "Hydrophobic substances such as quinolines are poorly diffusible within the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "While hydrophobic substances such as quinolines are poorly diffusible within the colony",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of diffusion of hydrophobic substances.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "2226c097-02f0-455c-986b-68c713a070ca",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "claim_id": "C94",
+      "claim": "Hydrophilic anti-staphylococcal substances dissolvable in water readily diffuse within the agar substrate and their concentration in canals will fade out in a fraction of a second.",
+      "claim_type": "EXPLICIT",
+      "source": "those hydrophilic substances dissolvable in water readily diffuse within the agar substrate and their concentration in canals will fade out in a fraction of a second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of diffusion and an inference about timescales.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4ab9deb4-9f9d-4a52-9608-327e06b73152",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge contrasting long-range material transport in multicellular organisms with short-range, diffusion-limited transport in bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 represent well-established scientific knowledge about material transport in multicellular organisms versus bacteria. These are appropriately cited background statements that set up the novelty of the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "d6829269-c9a4-42c3-93fc-b338f01b247a",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "P. aeruginosa colonies develop large-scale, centimeter-long open channels (bacterial canals) that are 5-10 \u03bcm in height and tens to hundreds of \u03bcm in width, supporting high-speed fluid flows up to hundreds of \u03bcm/s. These channels form networks across colonies and are distinct from previously reported closed channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24-C26, C29-C30, and C32 are well-supported by direct microscopy observations, measurements, and figures showing the canal structures. The characterization includes dimensions, flow speeds, network topology, and comparison with prior work. The experimental evidence is robust and reproducible across multiple strains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "6fb0b893-db00-4f68-8460-f56a6ebffe44",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Canal development requires rhamnolipids but not agar degradation, and fluid flows in canals are driven by rhamnolipid-mediated surface tension gradients. This is demonstrated through genetic knockout experiments, rescue with exogenous rhamnolipids, and confocal microscopy showing no agar degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are strongly supported by multiple complementary experiments: the rhamnolipid-deficient mutant fails to form canals (C34-C35), exogenous rhamnolipids restore canal formation (C36), and confocal microscopy rules out agar degradation (C37). The conclusion that rhamnolipid-mediated surface tension drives canal flows (C38-C39) is well-justified by this evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "33ee6bbb-db84-462b-922b-6b23b15bdff5",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The driving force of canal flows is comparable to a surface tension gradient of ~10\u00b3 mN\u00b7m\u207b\u00b2, as demonstrated by counteracting the flows with an external surfactant source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by a direct experimental manipulation where Tween 20 application caused canal retraction. The inference about the magnitude of driving force (C41) is reasonable based on the known surface tension of Tween 20 and the observed effect, though it represents an order-of-magnitude estimate rather than a precise measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "28d9f530-d2d7-444b-88c9-a16a387936aa",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Rhamnolipid synthesis, measured by fluorescence reporter, is azimuthally symmetric in early colonies and increases monotonically until canal emergence, generating a radial surface tension gradient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by fluorescence reporter data (Figure 2C-D). The measurement of promoter activity (C42) is direct experimental data, while the inference about radial surface tension gradient (C43) is reasonable given the continuous synthesis pattern. However, the study does not directly measure surface tension distribution in situ.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "4e539454-ee2a-4a14-9110-d44196d30f27",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Canals emerge via shear-induced banding, as evidenced by distinct flow regimes under uniform shear stress and unstable flow courses that gradually stabilize into fixed canals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by PIV analysis showing distinct shear rate regimes (C44) and time-lapse imaging of canal development (C45). The interpretation as shear-induced banding (C46-C47) is justified by comparison with complex fluid behavior and supported by citations. Additional microfluidic experiments (C72-C74) provide further support for this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "1489f5ee-0cf4-4c03-8acc-b36ce517620f",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Peak flow speeds in canals reach ~200 \u03bcm/s (with transients up to 450 \u03bcm/s), higher than other reported bacterial transport mechanisms. High-speed flow persists over ~20 mm from canal tips toward colony centers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 are supported by cell tracking measurements using fluorescent tracers. The methodology accounts for the ultrafast speeds by using long-exposure trajectories. The comparison with prior work (C49) is appropriately cited. The spatial flow profile (C50) is measured across multiple locations, though with acknowledged temporal resolution limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "2cb27461-c37d-4575-a61d-a0bbc1f8663b",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mathematical modeling coupled with finite-element simulation estimates Marangoni stress at ~1000 mN\u00b7m\u207b\u00b2 and predicts spatiotemporal dynamics of surface tension gradients that qualitatively agree with experimental flow profiles. The model predicts high-speed flows persist for 20-30 hours at specific locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 are supported by computational modeling that integrates biosurfactant kinetics, transport, and interfacial mechanics. The model predictions (C54-C57) show qualitative agreement with experimental data (C55-C56), though quantitative validation is limited. The model provides mechanistic insight but relies on several parameters that may not be independently validated. The temporal predictions (C57-C58) are model outputs without direct experimental verification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "08bf7f7c-d342-489a-a45b-4b45004edf43",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Fluorescently labeled outer membrane vesicles (OMVs) with mean size ~150 nm are transported along canals over centimeter distances at peak speeds >200 \u03bcm/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by direct experimental tracking of fluorescently labeled OMVs. The OMV size distribution was characterized by particle sizing, and transport was visualized by fluorescence microscopy. This demonstrates functional cargo transport capability of the canal system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "babd38c7-9c87-4fba-94d6-03a61ffd1ec8",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Canal flows help eradicate competing S. aureus colonies, with <2% cell mass remaining after 60 min when irrigated by canals versus ~40% for non-irrigated colonies. This is likely due to enhanced delivery of antimicrobial substances in OMVs and rhamnolipid micelles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are strongly supported by quantitative co-culture experiments with appropriate controls. The mechanistic explanation (C63-C64) is speculative but reasonable given prior knowledge about P. aeruginosa antimicrobial compounds. The study does not directly test whether blocking OMV or micelle transport abolishes the competitive advantage, which would strengthen the mechanistic claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "fe4f24cf-c670-4b39-8d94-8ff8b5c578a7",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Wildtype P. aeruginosa colonies display rapid streams that are unstable and do not develop into persistent canals, presumably because flagellar motility disrupts flow courses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 and C65 are supported by direct observations. The explanation involving flagellar motility (C23, C66) is speculative but reasonable given that non-motile mutants form stable canals. However, the mechanism by which flagellar motility prevents canal stabilization is not directly tested (e.g., through controlled motility inhibition experiments).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "da908416-4135-4267-beb1-c43dd56927ec",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Under reduced surface water conditions, piliated P. aeruginosa colonies display branching morphology with single canals running through each branch, emerging robustly at ~8 hr (30\u00b0C) or ~15 hr (room temperature).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C33 are supported by experimental observations. The branching morphology is attributed to fingering instability (C31) with appropriate citations, though this remains somewhat speculative. The timing of canal emergence (C33) is a reproducible experimental observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "93ca5351-37b4-4937-ae75-8da102f6d085",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Microfluidic experiments show that mixtures of bacterial cells and rhamnolipids exhibit asymmetric flow profiles indicating shear banding, while pure cell suspensions or rhamnolipid-microsphere mixtures show Newtonian-like profiles. This suggests cell-rhamnolipid interaction is required for shear banding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by controlled microfluidic experiments with appropriate controls. The experiments demonstrate that both cells and rhamnolipids are necessary for shear banding behavior. However, the microfluidic conditions may not fully replicate the complex environment within colonies, and the mechanism of cell-rhamnolipid interaction remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "7c857e52-f43b-44db-8eaf-ed8f69cc77d0",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Canals develop robustly over agar concentrations of 0.5-1.0% wt/vol but not above 1.0%, presumably due to insufficient water extraction at higher agar concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is supported by systematic variation of agar concentration. The explanation for the upper limit (C77) is speculative but reasonable by analogy to swarming motility requirements. Direct measurement of water availability or surface film thickness would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "f0a6e143-2e79-4ad0-af71-4106e7ee712b",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Directed material transport within colonies does not necessarily coincide with colony expansion, with transport speeds (~200 \u03bcm/s) differing by orders of magnitude from expansion speeds (~2 mm/hr or ~0.5 \u03bcm/s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 and C85-C87 are supported by experimental observations and comparison with cited literature. The distinction between transport and expansion is important for understanding canal function. The measurements of expansion speed (C86) and the observation that artificial surface tension gradients promote expansion (C87) are direct experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "c942f85b-eecf-4fdf-9a2a-bff4d629b297",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Type IV pilus motility does not contribute to cell movement in canals; cells follow fluid motion as passive tracers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 are supported by logical inference based on known properties of type IV pilus motility (requires surface attachment, produces speeds of only a few \u03bcm/s) compared to observed transport speeds (hundreds of \u03bcm/s). The use of piliated strains as tracers is appropriate given this reasoning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on material transport mechanisms in multicellular organisms and bacteria, including prior examples of long-range flows in bacterial systems and the role of biosurfactants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C20 represent appropriately cited background knowledge from prior literature. These establish the context for the novelty of the current findings. The citations appear appropriate and the characterization of prior work is accurate based on the references provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "6070985d-2053-4087-9548-72fdee53d2d0",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Canal formation may not occur in CF patient airways where P. aeruginosa downregulates flagellar motility, and canal-like structures in S. marcescens are limited to sessile colony centers. Prior imaging of P. aeruginosa in CF sputum did not reveal canals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 and C81-C82 appropriately cite prior work and make reasonable inferences about the conditions under which canals may or may not form in natural settings. These represent honest assessment of the limitations and context-dependence of the findings. However, these remain speculative without direct testing in relevant environments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "b7cae046-8677-420e-8fd9-51e7295ec5b8",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "P. aeruginosa is found in CF lung infections where it may compete with S. aureus. P. aeruginosa produces various anti-staphylococcal compounds, but hydrophobic compounds diffuse poorly while hydrophilic compounds rapidly dissipate in aqueous environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C94 represent appropriately cited background knowledge (C90-C92) and reasonable inferences about diffusion properties (C93-C94). These support the rationale for why canal transport of encapsulated antimicrobials would be advantageous. The diffusion arguments are based on established physical principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "c992fa20-d65a-45bd-b08b-fb8e8821b7d2",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Canal flows proceed toward colony edges and stop at channel tips, and are sensitive to humidity changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by direct experimental observations. These represent important characterization of canal flow properties, though they are relatively straightforward observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "9b1c97fa-b160-46ef-afb8-1bd9ff84a413",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background on Marangoni stress in bacterial colonies, the analogy to human-made canals, and OMV properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C79-C80 represent appropriately cited background knowledge. Claim C78 is an analogy drawn by the authors to aid conceptual understanding. These are minor contextual points.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "7872efb0-7a2b-40b2-866f-5ad38e7a8737",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The study's main conclusions: canals support high-speed transport of cells and OMVs, help eradicate competitors, are driven by biosurfactant-mediated interfacial tension, and demonstrate mechanochemical coupling for coordinating large-scale transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 represent the main conclusions of the study, which are well-supported by the collective experimental and modeling evidence detailed in other result groups. These synthesize the major findings into broader conclusions about the biological significance and mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "e8ec0c9f-108b-4fc1-a30e-e124bb8899c1",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Surface tension near colony centers reaches steady-state levels, presumably due to saturated rhamnolipid concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is an inference from flow speed measurements showing diminished speeds near colony centers. The explanation is reasonable but remains speculative without direct measurement of rhamnolipid concentrations or surface tension in situ. The inference is consistent with the modeling results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "848d2482-d365-4353-8159-3a16484ca27b",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Proposed mechanism: canal flows increase flux of antimicrobial substances in OMVs and rhamnolipid micelles, enhancing competitive inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 is explicitly speculative (\"we suggest\") and supported by citations to prior work on antimicrobial compounds. While reasonable, this mechanism is not directly tested. Experiments blocking OMV production or measuring antimicrobial compound delivery would be needed to validate this hypothesis. The claim appropriately acknowledges its speculative nature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    },
+    {
+      "id": "b6e88b5a-2458-4dbd-8290-af32b2a2ea07",
+      "content_id": "848ed4fb-172c-4707-a777-a001ddc01b01",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Proposed mechanism: flagellar motility disrupts canal formation by weakening cell-cell adhesion and disrupting high-shear flow regimes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66 and C83 are explicitly speculative explanations for why wildtype colonies don't form stable canals. While consistent with observations, the specific mechanism (weakening cell-cell adhesion) is not directly tested. Experiments measuring adhesion forces or using controlled motility inhibition would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:58:26.923822Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "68d9e0be-7d4a-41d4-86d9-05da41295be2",
+      "result_id": "4ab9deb4-9f9d-4a52-9608-327e06b73152"
+    },
+    {
+      "claim_id": "3073030d-b3c7-4b38-8e02-7fa65c9e07b6",
+      "result_id": "4ab9deb4-9f9d-4a52-9608-327e06b73152"
+    },
+    {
+      "claim_id": "78eb470a-a208-4ea2-82e9-e65a2259a433",
+      "result_id": "d6829269-c9a4-42c3-93fc-b338f01b247a"
+    },
+    {
+      "claim_id": "584505ef-377b-4b4b-a305-fc1afa1a05a9",
+      "result_id": "d6829269-c9a4-42c3-93fc-b338f01b247a"
+    },
+    {
+      "claim_id": "652a0730-552a-4df3-88a1-333c75b5b4e0",
+      "result_id": "d6829269-c9a4-42c3-93fc-b338f01b247a"
+    },
+    {
+      "claim_id": "c4b85912-e9f1-463a-a746-4f50f87c2311",
+      "result_id": "d6829269-c9a4-42c3-93fc-b338f01b247a"
+    },
+    {
+      "claim_id": "b6865182-587d-4296-bc97-104bc6a9ffd9",
+      "result_id": "d6829269-c9a4-42c3-93fc-b338f01b247a"
+    },
+    {
+      "claim_id": "65b5c390-add8-4b15-a7dd-5bdd464c3731",
+      "result_id": "d6829269-c9a4-42c3-93fc-b338f01b247a"
+    },
+    {
+      "claim_id": "8105b8bc-9a45-4a27-8326-cda6658c5e5d",
+      "result_id": "d6829269-c9a4-42c3-93fc-b338f01b247a"
+    },
+    {
+      "claim_id": "30c065cc-994d-463c-b022-b29d5b4034f2",
+      "result_id": "6fb0b893-db00-4f68-8460-f56a6ebffe44"
+    },
+    {
+      "claim_id": "3b5ce263-56b6-446a-9c30-7bc262ead39b",
+      "result_id": "6fb0b893-db00-4f68-8460-f56a6ebffe44"
+    },
+    {
+      "claim_id": "8fb54fc7-b735-44e0-8ef7-b60cb9dbbff2",
+      "result_id": "6fb0b893-db00-4f68-8460-f56a6ebffe44"
+    },
+    {
+      "claim_id": "e07a5d08-f5c5-4a23-8043-6c523ed6b292",
+      "result_id": "6fb0b893-db00-4f68-8460-f56a6ebffe44"
+    },
+    {
+      "claim_id": "8681ab23-c71a-4447-a987-d68b7ede9fad",
+      "result_id": "6fb0b893-db00-4f68-8460-f56a6ebffe44"
+    },
+    {
+      "claim_id": "a11c5a6b-2d3c-4cd8-9b41-15f2ea716953",
+      "result_id": "6fb0b893-db00-4f68-8460-f56a6ebffe44"
+    },
+    {
+      "claim_id": "cb064959-d472-48ef-b011-7ce5628e85a0",
+      "result_id": "33ee6bbb-db84-462b-922b-6b23b15bdff5"
+    },
+    {
+      "claim_id": "34558eaa-73d5-4a39-925d-e587b4a83413",
+      "result_id": "33ee6bbb-db84-462b-922b-6b23b15bdff5"
+    },
+    {
+      "claim_id": "c8639ff8-d6d4-4554-841c-16d67d6dcd9c",
+      "result_id": "28d9f530-d2d7-444b-88c9-a16a387936aa"
+    },
+    {
+      "claim_id": "a8548961-0366-44a1-b60f-b4a38ec3e315",
+      "result_id": "28d9f530-d2d7-444b-88c9-a16a387936aa"
+    },
+    {
+      "claim_id": "5c018fe6-5957-4e24-aaf6-5e92a025bd18",
+      "result_id": "4e539454-ee2a-4a14-9110-d44196d30f27"
+    },
+    {
+      "claim_id": "1e868acc-6efc-4b7f-86fc-0de4621cf7b6",
+      "result_id": "4e539454-ee2a-4a14-9110-d44196d30f27"
+    },
+    {
+      "claim_id": "5d9d8585-2892-4769-b1c0-f6c8d5df71ca",
+      "result_id": "4e539454-ee2a-4a14-9110-d44196d30f27"
+    },
+    {
+      "claim_id": "5065a322-7b1f-4004-be73-3e623454ef3e",
+      "result_id": "4e539454-ee2a-4a14-9110-d44196d30f27"
+    },
+    {
+      "claim_id": "12d1772f-30cf-4d5c-8194-05300b91adf8",
+      "result_id": "1489f5ee-0cf4-4c03-8acc-b36ce517620f"
+    },
+    {
+      "claim_id": "8ccd5c8f-ee67-4723-aeb5-a0140d4be753",
+      "result_id": "1489f5ee-0cf4-4c03-8acc-b36ce517620f"
+    },
+    {
+      "claim_id": "9d6d6350-26f8-4d97-812b-32cc625ba51f",
+      "result_id": "1489f5ee-0cf4-4c03-8acc-b36ce517620f"
+    },
+    {
+      "claim_id": "f0bac428-8f45-4eaa-9b67-a9b0ae185d43",
+      "result_id": "2cb27461-c37d-4575-a61d-a0bbc1f8663b"
+    },
+    {
+      "claim_id": "0f20527b-d187-4ca6-8544-86efc286d1c7",
+      "result_id": "2cb27461-c37d-4575-a61d-a0bbc1f8663b"
+    },
+    {
+      "claim_id": "266e0e4a-dc7b-45f7-82cb-6a75493a01ec",
+      "result_id": "2cb27461-c37d-4575-a61d-a0bbc1f8663b"
+    },
+    {
+      "claim_id": "c3439067-a47e-42ba-ba64-5e9c377cab03",
+      "result_id": "2cb27461-c37d-4575-a61d-a0bbc1f8663b"
+    },
+    {
+      "claim_id": "fbe0f04f-a461-415b-a0e4-d4a196f6d925",
+      "result_id": "2cb27461-c37d-4575-a61d-a0bbc1f8663b"
+    },
+    {
+      "claim_id": "7fe077a8-6c50-45be-a443-f7965de29ab8",
+      "result_id": "2cb27461-c37d-4575-a61d-a0bbc1f8663b"
+    },
+    {
+      "claim_id": "9aee312f-af63-4367-a425-b8021a018a8d",
+      "result_id": "2cb27461-c37d-4575-a61d-a0bbc1f8663b"
+    },
+    {
+      "claim_id": "ea8eada4-f68a-46bd-9a90-16083365bb8d",
+      "result_id": "08bf7f7c-d342-489a-a45b-4b45004edf43"
+    },
+    {
+      "claim_id": "b5478cbf-426e-4f12-acf3-a018b07fac73",
+      "result_id": "babd38c7-9c87-4fba-94d6-03a61ffd1ec8"
+    },
+    {
+      "claim_id": "e4ea8111-3749-4c5d-9bd4-032c8d0a8c61",
+      "result_id": "babd38c7-9c87-4fba-94d6-03a61ffd1ec8"
+    },
+    {
+      "claim_id": "0438876f-cc27-4eb7-8f94-09f89a34ff7e",
+      "result_id": "babd38c7-9c87-4fba-94d6-03a61ffd1ec8"
+    },
+    {
+      "claim_id": "21864664-8ee8-4136-9512-ca4f2bf0bc88",
+      "result_id": "babd38c7-9c87-4fba-94d6-03a61ffd1ec8"
+    },
+    {
+      "claim_id": "b0ff6776-4701-4c22-8e36-c29c07757b04",
+      "result_id": "babd38c7-9c87-4fba-94d6-03a61ffd1ec8"
+    },
+    {
+      "claim_id": "9c91120b-4d1b-4791-a8bc-7983e987072b",
+      "result_id": "fe4f24cf-c670-4b39-8d94-8ff8b5c578a7"
+    },
+    {
+      "claim_id": "f804f86c-98c4-4de6-ba35-cdc20bef7b3d",
+      "result_id": "fe4f24cf-c670-4b39-8d94-8ff8b5c578a7"
+    },
+    {
+      "claim_id": "9468aa29-b295-48af-ad11-475cde5db1df",
+      "result_id": "fe4f24cf-c670-4b39-8d94-8ff8b5c578a7"
+    },
+    {
+      "claim_id": "cfea711e-5029-44f5-a06c-3f1a694b3afd",
+      "result_id": "fe4f24cf-c670-4b39-8d94-8ff8b5c578a7"
+    },
+    {
+      "claim_id": "7187370f-8807-4272-b324-f625cfecf947",
+      "result_id": "fe4f24cf-c670-4b39-8d94-8ff8b5c578a7"
+    },
+    {
+      "claim_id": "8a5e22a8-1dc4-4b03-aa25-6827a2c0122a",
+      "result_id": "da908416-4135-4267-beb1-c43dd56927ec"
+    },
+    {
+      "claim_id": "1b4fe724-d944-4269-bc7e-1fc5e8b9148e",
+      "result_id": "da908416-4135-4267-beb1-c43dd56927ec"
+    },
+    {
+      "claim_id": "daf3dbbd-6cfa-4eed-ab24-5274eef73358",
+      "result_id": "93ca5351-37b4-4937-ae75-8da102f6d085"
+    },
+    {
+      "claim_id": "b1150c9d-c3d7-4b66-86f9-c86ffce86362",
+      "result_id": "93ca5351-37b4-4937-ae75-8da102f6d085"
+    },
+    {
+      "claim_id": "33fe43a8-c6ce-475d-a4e0-58625700a925",
+      "result_id": "93ca5351-37b4-4937-ae75-8da102f6d085"
+    },
+    {
+      "claim_id": "224b24f1-d9a8-411d-ac43-7ed6e74ad914",
+      "result_id": "7c857e52-f43b-44db-8eaf-ed8f69cc77d0"
+    },
+    {
+      "claim_id": "55939ed6-ec98-478f-9e8f-fab5c0acf415",
+      "result_id": "7c857e52-f43b-44db-8eaf-ed8f69cc77d0"
+    },
+    {
+      "claim_id": "ce8303cd-5551-418e-a61c-574567ca9d09",
+      "result_id": "f0a6e143-2e79-4ad0-af71-4106e7ee712b"
+    },
+    {
+      "claim_id": "4abe94c4-8203-4cf7-ad78-4c23f7ebb2d8",
+      "result_id": "f0a6e143-2e79-4ad0-af71-4106e7ee712b"
+    },
+    {
+      "claim_id": "50d6a7ba-9dca-4d52-bf0e-156a98ae5ca9",
+      "result_id": "f0a6e143-2e79-4ad0-af71-4106e7ee712b"
+    },
+    {
+      "claim_id": "18256854-22e7-4bec-b6c2-015a30f213f7",
+      "result_id": "f0a6e143-2e79-4ad0-af71-4106e7ee712b"
+    },
+    {
+      "claim_id": "7ec6a7dc-1e5e-457e-999a-211fecacf118",
+      "result_id": "f0a6e143-2e79-4ad0-af71-4106e7ee712b"
+    },
+    {
+      "claim_id": "ea8288c6-8a95-45a8-ad2b-12e434c67edd",
+      "result_id": "f0a6e143-2e79-4ad0-af71-4106e7ee712b"
+    },
+    {
+      "claim_id": "3406dd20-af2f-40c1-a44a-5777c3ad34db",
+      "result_id": "f0a6e143-2e79-4ad0-af71-4106e7ee712b"
+    },
+    {
+      "claim_id": "52c3c964-bb97-4465-b476-d7ec30faee09",
+      "result_id": "c942f85b-eecf-4fdf-9a2a-bff4d629b297"
+    },
+    {
+      "claim_id": "d5761f2a-1e75-4f63-b7c8-e906c6e91cfe",
+      "result_id": "c942f85b-eecf-4fdf-9a2a-bff4d629b297"
+    },
+    {
+      "claim_id": "9fc8974d-edaa-423e-8cf8-d792b2084db3",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "2908bc74-f8f3-475a-accf-5838b26076aa",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "3795489c-9075-48cd-9e1e-d03037a0c90b",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "d4d8399e-5c94-43d5-aff5-0ff557401022",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "14ddfb90-be02-41f7-aced-3e2ab581373e",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "f9321ba7-08d9-4859-872c-faffaaae210e",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "a234fbc5-1af3-418c-ac7e-2a601d87a07f",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "c10ad4d3-3530-46af-b5f2-63f0e51a9903",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "34d80081-2063-4a1c-9300-31ae629db96b",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "dec2befc-df69-4d09-a1e6-b18bc99bea40",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "94a88441-15e9-4b79-8422-ec2ccdb198f3",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "b21d1229-acdb-4950-941a-97e1577dcfce",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "de6cd273-716b-44f7-bb13-4538fc4d4fb7",
+      "result_id": "9d22fdb8-6419-4f78-b14c-9c6b2c07d9fa"
+    },
+    {
+      "claim_id": "e158bfb8-198b-4fa0-8ce0-aa8bb09595cd",
+      "result_id": "6070985d-2053-4087-9548-72fdee53d2d0"
+    },
+    {
+      "claim_id": "42d93348-8c74-4d76-9410-5f2f07cd7242",
+      "result_id": "6070985d-2053-4087-9548-72fdee53d2d0"
+    },
+    {
+      "claim_id": "ec5fabb4-027e-4982-9df3-e725d80aacfb",
+      "result_id": "6070985d-2053-4087-9548-72fdee53d2d0"
+    },
+    {
+      "claim_id": "b5d3c572-d999-4272-99b6-fdbee9c00c12",
+      "result_id": "6070985d-2053-4087-9548-72fdee53d2d0"
+    },
+    {
+      "claim_id": "aacc980a-e0c3-48cd-85fd-7b0ac0b7a6bf",
+      "result_id": "b7cae046-8677-420e-8fd9-51e7295ec5b8"
+    },
+    {
+      "claim_id": "5a42d8a9-bbb7-40f7-b6ae-c8053620f7a1",
+      "result_id": "b7cae046-8677-420e-8fd9-51e7295ec5b8"
+    },
+    {
+      "claim_id": "48b26a8b-d873-4939-951d-3b832be8d062",
+      "result_id": "b7cae046-8677-420e-8fd9-51e7295ec5b8"
+    },
+    {
+      "claim_id": "268a8cbf-fbe4-4c61-a224-d8e9d10768ea",
+      "result_id": "b7cae046-8677-420e-8fd9-51e7295ec5b8"
+    },
+    {
+      "claim_id": "2226c097-02f0-455c-986b-68c713a070ca",
+      "result_id": "b7cae046-8677-420e-8fd9-51e7295ec5b8"
+    },
+    {
+      "claim_id": "6038e1f4-26b6-4b7a-baf1-4eb631390b9d",
+      "result_id": "c992fa20-d65a-45bd-b08b-fb8e8821b7d2"
+    },
+    {
+      "claim_id": "2f6f783c-0afa-4947-8f6f-548ee721f81e",
+      "result_id": "c992fa20-d65a-45bd-b08b-fb8e8821b7d2"
+    },
+    {
+      "claim_id": "4018abbc-85db-42fe-80da-d0a03a0dc57c",
+      "result_id": "9b1c97fa-b160-46ef-afb8-1bd9ff84a413"
+    },
+    {
+      "claim_id": "a60e8de9-d27a-487d-ac98-700f4fe73a0c",
+      "result_id": "9b1c97fa-b160-46ef-afb8-1bd9ff84a413"
+    },
+    {
+      "claim_id": "21b2ee55-68d5-463d-85cc-e1c74e41b3d3",
+      "result_id": "9b1c97fa-b160-46ef-afb8-1bd9ff84a413"
+    },
+    {
+      "claim_id": "db860b90-5089-45dc-bb58-c7f47aa73740",
+      "result_id": "9b1c97fa-b160-46ef-afb8-1bd9ff84a413"
+    },
+    {
+      "claim_id": "c2cfef42-10fa-4869-8d37-ffcd1dafaae2",
+      "result_id": "7872efb0-7a2b-40b2-866f-5ad38e7a8737"
+    },
+    {
+      "claim_id": "90362b40-abd7-48d3-9b3d-ef7556efb816",
+      "result_id": "7872efb0-7a2b-40b2-866f-5ad38e7a8737"
+    },
+    {
+      "claim_id": "5af777a0-92b2-40b9-bdb0-93d0b2f98ef5",
+      "result_id": "7872efb0-7a2b-40b2-866f-5ad38e7a8737"
+    },
+    {
+      "claim_id": "2e391519-3498-4eb7-8334-75b18d3ae1d4",
+      "result_id": "7872efb0-7a2b-40b2-866f-5ad38e7a8737"
+    },
+    {
+      "claim_id": "91b2305e-6cf5-4a16-84e4-2db8afb5a40f",
+      "result_id": "e8ec0c9f-108b-4fc1-a30e-e124bb8899c1"
+    },
+    {
+      "claim_id": "21864664-8ee8-4136-9512-ca4f2bf0bc88",
+      "result_id": "848d2482-d365-4353-8159-3a16484ca27b"
+    },
+    {
+      "claim_id": "7187370f-8807-4272-b324-f625cfecf947",
+      "result_id": "b6e88b5a-2458-4dbd-8290-af32b2a2ea07"
+    },
+    {
+      "claim_id": "73fa69b6-ff95-4685-aad9-b4f7b692ea3e",
+      "result_id": "b6e88b5a-2458-4dbd-8290-af32b2a2ea07"
+    }
+  ],
+  "comparisons": []
+}

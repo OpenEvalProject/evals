@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C38",
+      "C101",
+      "C111",
+      "C129",
+      "C158",
+      "C159"
+    ],
+    "result": "A hierarchical model with birth-death processes operating out of equilibrium quantitatively reproduces the quasi-universal characteristics of binocular rivalry, including Levelt's propositions (counterintuitive input dependence), the scaling property (stereotypical distribution shape), and positive sequential correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C38, C101, C111, C129 are supported by experimental data shown in Figures 3-4 demonstrating quantitative agreement between model predictions and observations across 5\u00d75 contrast combinations. The model was fitted with 3-4 effective degrees of freedom (C100, C161) to explain ~14 degrees of freedom in the data, indicating strong explanatory power beyond simple curve fitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C39",
+      "C109",
+      "C143",
+      "C144",
+      "C149",
+      "C150",
+      "C153",
+      "C154",
+      "C187",
+      "C188"
+    ],
+    "result": "The model predicts previously unreported features of serial dependencies in perceptual alternations, specifically that sequential correlations increase with image contrast and that reversal sequences exhibit 'burstiness' (extended episodes of consistently long or short dominance periods), predictions confirmed by experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C149, C150, C153, C154, C187, C188 describe novel predictions that were not fitted but emerged from the model and were subsequently confirmed experimentally (Figure 6). This represents strong evidence as the predictions were made a priori rather than post-hoc, demonstrating genuine predictive power of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C52",
+      "C59",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The model architecture consists of pools of bistable variables ('local attractors') that accumulate evidence at one hierarchical level, while coupled elements compete for dominance at another level, with feedback suppression from dominant hypotheses to supporting evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C34-C36, C52 describe the core model architecture, which is theoretically justified (C68-C70 with citations to Bayesian inference literature) and implemented in simulations (C59, Figures 1-2). The architecture is biophysically plausible based on spiking network implementations (C41-C42, C162-C165).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C119",
+      "C122",
+      "C124",
+      "C128",
+      "C184"
+    ],
+    "result": "The model mechanistically explains Levelt's propositions I-III through opponent dynamics: feedback suppression causes dominant evidence to habituate while non-dominant evidence recovers, with dominance durations depending hyperbolically on the distance between asymptotic activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C122, C124, C128, C184 provide a mechanistic explanation for the counterintuitive input dependencies (Levelt I-III) through the interaction of feedback suppression and evidence dynamics (Figure 2). The explanation is internally consistent with the model architecture and quantitatively reproduces experimental observations (Figure 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C134",
+      "C185"
+    ],
+    "result": "The 'scaling property' (invariance of distribution shape across different mean durations) emerges from the Poisson-like variability of birth-death processes, where accumulation and dispersion rates vary proportionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132, C134, C185 explain the scaling property through the mathematical properties of birth-death processes. This is supported by theoretical arguments in the Appendix and quantitative reproduction of gamma-like distributions with consistent shape parameters across contrast conditions (Figure 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C142",
+      "C144",
+      "C146",
+      "C186"
+    ],
+    "result": "Serial dependencies arise from stochastic fluctuations in mean evidence activity that modulate reversal thresholds, with autocorrelation times that increase with image contrast and span multiple dominance periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142, C144, C146, C186 explain the mechanism of serial dependencies through fluctuations in mean evidence activity (Figure 6a-b). The explanation is supported by model simulations showing how these fluctuations create episodes of consistently long or short dominance periods, matching experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C33",
+      "C86",
+      "C177"
+    ],
+    "result": "The out-of-equilibrium dynamics satisfies normative constraints of continuous decision-making in volatile environments, where optimal change detection requires exponentially growing bias against evidence for the most likely hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C33, C86, C177 argue for normative justification based on optimal inference theory (citing Veliz-Cuba et al., 2016). However, the manuscript does not provide formal mathematical proof that the proposed mechanism is optimal or demonstrate quantitatively that it satisfies specific optimality criteria. The normative justification remains largely conceptual.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "Alternative models based on selective adaptation predict negative correlations between same dominance periods, contrary to observations, demonstrating a key advantage of the feedback suppression mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C156 are supported by simulations of an alternative adaptation-based model (Laing and Chow, 2002) shown in Figure 6d, which predicts negative lag-2 correlations contrary to experimental observations. This provides comparative evidence for the superiority of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C161"
+    ],
+    "result": "Model fitting revealed high parameter redundancy, with only 3-4 effective degrees of freedom among 11 parameters needed to reproduce ~14 degrees of freedom in experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100, C161 describe the fitting procedure results, showing that the parameter space forms a low-dimensional manifold. This analysis supports the claim that the model captures fundamental dynamical principles rather than overfitting, though the specific method for estimating effective degrees of freedom is not fully detailed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C160",
+      "C24",
+      "C32"
+    ],
+    "result": "The proposed mechanism has considerably higher explanatory power than previous models, reconciling 'dynamical' and 'sampling' approaches to multistable perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160, C24, C32 are supported by comprehensive reproduction of multiple experimental features (Levelt's propositions, scaling property, serial dependencies) that previous models failed to capture simultaneously (C28-C31). The comparison is substantiated by citations to limitations of prior models and quantitative model-experiment agreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C237",
+      "C238"
+    ],
+    "result": "The proposed mechanism is biophysically plausible, with bistable variables accurately reducing the population dynamics of metastable networks of spiking neurons, and interactions resulting in divisive normalization consistent with cortical models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C165, C237-C238 are supported by spiking network simulations (Figure 1b, C41-C42) and citations to mean-field theory and cortical normalization literature. The reduction from spiking networks to bistable variables is validated by previous work (Cao et al., 2016, cited in C238).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C256"
+    ],
+    "result": "The mechanism may be general across all multistable phenomena in visual, auditory, and tactile perception, potentially forming a general part of sensory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C168, C256 propose broad generalization based on universal features of multistable phenomena (C1-C2, C19). However, the manuscript only tests binocular rivalry experimentally. Extension to other modalities remains speculative without additional empirical validation, though the hypothesis is plausible given cited similarities across modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C249",
+      "C250",
+      "C251"
+    ],
+    "result": "The model's predictions are consistent with neurophysiological observations: activity at higher cortical levels (inferotemporal/prefrontal cortex) varies in phase with perception (decision activity), while intermediate levels (V4) vary in quarter-phase (evidence activity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C249-C251 interpret existing neurophysiological data (C243-C248) in terms of the model's hierarchical structure. The interpretation is consistent with cited empirical observations showing phase relationships between neural activity and perceptual appearance at different cortical levels, and with evidence for attractor dynamics in V4 (C251).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C96"
+    ],
+    "result": "Six practiced observers participated in binocular rivalry experiments with five contrast levels (6.25-100%), providing reversal sequences for 5\u00d75 contrast combinations with ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C96 describe the experimental methods. The sample size (n=6) is modest but typical for psychophysical studies of binocular rivalry. Ethical procedures are documented. The experimental design systematically varies contrast to test model predictions across conditions.",
+    "result_type": "MINOR"
+  }
+]

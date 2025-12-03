@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The RAP system uses a parabolic reflector and objective lenses positioned at focal distances above samples, with LED arrays sequentially illuminating samples to generate images captured by a single camera at the reflector's focal point. The system achieves sub-millisecond exposure times and can rapidly switch between samples without moving parts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C14, C18-C26 collectively describe the core optical design and hardware implementation of the RAP system. The design is well-documented with specific component details (C18-C20), optical configuration (C21-C22), and performance characteristics (C23). Figure 1A provides visual confirmation of the system architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The RAP system enables near-simultaneous imaging of multiple samples with sub-millisecond switching times, with frame rates limited only by camera speed or data storage capacity. The system can trade off number of samples for frame rate (e.g., 50 dishes at 10 fps or 2 dishes at 250 fps with a 500 fps camera).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C15-C17, C27-C29 describe the temporal performance of the RAP system. The sub-millisecond switching claim (C3) is supported by the fast LED switching capability (C15, C20). The frame rate trade-off examples (C28-C29) are mathematically consistent and demonstrated in Figure 1B. However, the specific 500 fps camera examples are theoretical calculations rather than empirically demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42",
+      "C43",
+      "C118",
+      "C119"
+    ],
+    "result": "The RAP design mitigates off-axis aberrations through transillumination and collimation, resulting in mostly collimated light being refocused by the parabolic mirror. Images undergo geometric transformations (stretch and magnification variation) that can be corrected through post-processing using equations derived from geometric optics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C35-C38, C41-C43, C118-C119 describe the optical principles and image correction methods. The aberration mitigation strategy (C33) is explained theoretically. The geometric transformations are mathematically described with equations provided in the text. Validation using a 200 \u03bcm pitch grid (C118-C119) confirms the correction model works in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C91",
+      "C95",
+      "C96",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C128"
+    ],
+    "result": "The RAP system successfully imaged four cardiac monolayer preparations in parallel at 40 fps per dish, tracking motion through intensity changes and generating activation maps showing conduction velocity and wave direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55, C91, C95-C96, C103-C106, C128 describe the cardiac imaging demonstration. The experimental setup is well-documented (C95-C96), the imaging parameters are specified (C52), and the analysis methods are cited (C53, C103, C105). Figure 2A-C provides visual evidence of the results including temporal dynamics and activation maps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C91",
+      "C94",
+      "C128"
+    ],
+    "result": "The RAP system imaged C. elegans in four dishes at 15 fps over 5 minutes, with motion paths extractable using open-source software packages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C91, C94, C128 describe the C. elegans imaging demonstration. The experimental conditions are specified (C91, C94), imaging parameters are stated (C56), and Figure 2D-F shows the results including motion tracking. The claim about extracting motion paths using open-source software (C57) is demonstrated but the specific software is not validated in this work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C92",
+      "C93",
+      "C129"
+    ],
+    "result": "The RAP system validated its utility for high-throughput screening by measuring motion differences between wild-type and nuo-6(qm200) C. elegans mutants in a 96-well plate, detecting significant differences (p=0.01) in approximately 67 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65, C92-C93, C129 describe the validation experiment. The experimental design is clearly specified (C60-C61), statistical analysis is provided (C129), and results are consistent with published data (C64). Figure 3B shows the quantitative comparison. The motion quantification method (C61) is indirect but appropriate for the system's capabilities. The time calculation (C65) is mathematically correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C126",
+      "C127"
+    ],
+    "result": "A limitation of the RAP system is difficulty focusing individual wells when imaging many samples, with images noticeably blurred in about half of 76 wells. This can be partially mitigated by chromatic focal shifting using different LED colors (981 \u03bcm shift from red to blue), though at the cost of reduced frame rate or sample number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C69-C72, C126-C127 honestly describe system limitations and mitigation strategies. The focusing limitation (C66, C69) is clearly stated with quantitative assessment. The chromatic focal shift solution (C70-C71) is supported by both experimental observation (Figure 3C, Video 2) and optical simulations (C126-C127). The trade-offs of the mitigation strategy (C72) are appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "Comparison to conventional on-axis imaging showed that RAP system resolution degradation from off-axis aberrations is relatively modest for small axial distances (<40 mm), with estimated lateral PSF widths varying from 13.4 to 21.6 microns over the full range of axial distances in the 96-well experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122, C124-C125 describe optical performance characterization. The comparison method is appropriate (C120), qualitative assessment is shown in Figure 1\u2014figure supplement 2 (C121), and quantitative PSF analysis is provided (C122, C124). The performance degradation with axial distance (C125) is documented in Table 3. However, the comparison is qualitative for the USAF chart and the PSF estimation relies on a computational model rather than direct measurement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C10",
+      "C11",
+      "C50",
+      "C51",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The RAP system addresses a key limitation of conventional microscopy by enabling continuous long-duration recordings from spatially separated samples, which is particularly important for dynamic experiments like cardiac tissue imaging where rhythms evolve over hours/days but display fast transitions requiring continuous measurement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C10-C11, C50-C51, C78-C82 articulate the motivation and application niche for RAP. The limitation of conventional systems (C10-C11, C51) is well-established. The cardiac tissue example (C79-C80) is supported by citations. The claim that RAP enables what conventional systems cannot (C4, C82) is supported by the demonstrated capabilities, though the absolute statement may be overstated as some specialized systems might achieve similar goals through different means.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Conventional multi-sample imaging modalities require sample or system movement (which is mechanically complex and slow) or use wide-field approaches (which have poor light collection efficiency and resolution).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 characterize limitations of conventional approaches. These are supported by citations (C5-C7) and represent generally accepted knowledge in the field (C8-C9). However, the characterizations are somewhat broad and may not apply equally to all conventional systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Parabolic mirrors offer high NA and large field of view but introduce off-axis aberrations that have limited their use to niche applications requiring compromises like restricting imaging to the focal region with stage scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 provide background on parabolic mirrors in imaging. These are supported by citations to prior work (C31-C32) and represent established knowledge. This contextualizes why the RAP approach is novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Cardiac monolayer preparations and C. elegans are important model systems for studying arrhythmogenesis and aging/biological clocks respectively, with applications in personalized medicine screening and neuroprotective compound screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 provide biological context for the applications. These are well-supported by citations to prior work and represent established knowledge in the field. This justifies the choice of model systems for demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Despite innovative high-throughput screening approaches, methods accommodating typical biological workflows depend on automated conventional microscopes. While RAP could use high-NA optics, this would require independently actuatable objectives, limiting well numbers. RAP can speed up low-magnification tasks by parallel imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 discuss the context and positioning of RAP relative to other approaches. The characterization of the field (C73-C74) is supported by citations. The discussion of RAP's potential and limitations (C76-C77) is appropriately speculative and acknowledges trade-offs. The comparison to automated microscopes (C75) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C117"
+    ],
+    "result": "The NA of RAP configurations (0.04 and 0.124) are comparable to conventional 1\u00d7 microscope objectives and stereo macroscopes, with resolution similar to conventional microscopes at these magnifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86, C88, C117 compare RAP optical performance to conventional systems. The NA values are stated in Table 1 (C83-C84) and comparisons to commercial systems are provided with specific examples (C85-C86). The resolution comparison (C88) is supported by the optical characterization data. This appropriately contextualizes RAP performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Configuration 1 costs approximately $1,750 and Configuration 2 costs approximately $3,250.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 provide cost information stated in Table 2. These are straightforward factual claims about the prototype costs. The low cost is a notable advantage of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102"
+    ],
+    "result": "The optical setup uses a 220 mm diameter, 100 mm focal length parabolic reflector mounted 300 mm above a breadboard, with the camera at the focal point and samples 50 mm above LED arrays. Images are cropped and rescaled for presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99, C101-C102 provide detailed hardware specifications. These are straightforward descriptions of the experimental setup with specific measurements and component details. The image processing (C102) is standard practice for presentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The imaging system's maximum data capture rate is limited by camera frame rate and disk write speed (150 MB/s), resulting in a 120 fps base rate for the 1280\u00d71024 camera. C. elegans motion can be adequately quantified at 15 fps, allowing 8 parallel wells. Faster storage would increase throughput.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 describe practical performance limitations. The calculations are mathematically correct (C109) and the frame rate requirements are stated based on experience (C110). The disk speed limitation (C108) is a practical constraint. The suggestion for improvement (C111) is reasonable speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "RAP has been validated in low-magnification, bright-field settings with relaxed constraints. The design aims to maximize parallel sample imaging using inexpensive components with minimal footprint. Low-magnification optics are not a defining property of RAP, as the objective lens choice is not limited by the parabolic mirror.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 appropriately scope the validation and discuss design philosophy. The acknowledgment of validation scope (C112) is honest. The design goals (C113-C114) are clearly stated. The clarification that RAP is not inherently limited to low magnification (C115-C116) is important for understanding the technology's potential, though high-magnification implementations are not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "The illumination by a partially spatially coherent source produces greyscale images, with intensity changes being the measurement of interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 describes the imaging modality with citation support. This is a straightforward characterization of the image formation mechanism appropriate for the bright-field approach used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "A high-magnification RAP system would likely require a mechanism for finely adjusting objective heights to maintain focus due to reduced depth of field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is speculative about future high-magnification implementations. While the reasoning is sound (reduced depth of field at high magnification requires better focus control), this is not demonstrated or validated. The claim is appropriately hedged with 'likely would require.'",
+    "result_type": "MINOR"
+  }
+]

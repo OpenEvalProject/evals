@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C31",
+      "C33",
+      "C22",
+      "C25",
+      "C28"
+    ],
+    "result": "Light-controlled aster formation is demonstrated for the first time with kinesin-5 (Kif11) and kinesin-14 (Ncd), in addition to kinesin-1 (K401). All three motors form asters upon illumination with excitation diameters ranging from 50 to 600 \u03bcm, with measured speeds of ~600 nm/s (K401), ~115 nm/s (Ncd236), and ~70 nm/s (Kif11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C31, and C33 are directly supported by experimental data in Figure 1B and Figure 1\u2014figure supplement 2. Motor speeds (C22, C25, C28) are measured by gliding assays (C105, C106) and reported in Table 1. This represents a novel technical achievement extending prior work with K401 to two additional motor types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C37",
+      "C38",
+      "C36"
+    ],
+    "result": "Aster size depends on the motor used and increases with excitation diameter. K401 forms the largest asters, Ncd forms the smallest, and Kif11 produces intermediate-sized asters (except at 50 \u03bcm excitation). This trend correlates with motor processivity, with the number of microtubules limiting aster size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35, and C37 are directly supported by quantitative data in Figure 1D showing aster size measurements across motors and excitation diameters. The correlation with processivity (C38) is a reasonable inference from known motor properties. The microtubule limitation hypothesis (C36) is supported by prior work (Ross et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "The dynamics of aster formation roughly scale with motor speeds, with K401 forming asters quickest, followed by Ncd236, then Kif11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C34 is a qualitative observation without quantitative measurements or statistical analysis. While the observation is plausible given the measured motor speeds, no kinetic data or formation time measurements are provided to support this claim rigorously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C43",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C52",
+      "C71"
+    ],
+    "result": "A minimal model predicts motor distributions in steady-state asters based on microtubule distributions and motor-specific effective parameters (Kd and \u03bb0). The model fits experimental data well across all three motor types, capturing features like inflection points in microtubule profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C52 show good model fits to experimental data (Figure 2D, 2E, Figure 2\u2014figure supplement 1). The model assumptions (C43, C46) are validated by FRAP experiments (C47, Appendix 1\u2014figure 4). The model's ability to capture specific profile features (C49) represents an improvement over prior models. Overall conclusion C71 is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C69",
+      "C70"
+    ],
+    "result": "The inferred effective speed parameter \u03bb0 for K401 is much higher than expected from single-motor properties, potentially due to motor stalling at microtubule ends and jamming in dense aster regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66 and C69 are explicitly labeled as speculation and hypotheses. While C70 cites literature support for K401 pausing behavior, the quantitative contribution of stalling and jamming to the observed discrepancy remains unvalidated. The ~25-fold discrepancy between inferred and estimated \u03bb0 is acknowledged but not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The unexpectedly low inferred Kd for Ncd motors may be explained by collective effects increasing processivity, as observed in prior studies of clustered kinesin-14 motors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C58 and C59 cite literature showing increased processivity for clustered kinesin-14 motors, this explanation for the low Ncd Kd values remains speculative. No direct experimental evidence is provided in the current work to demonstrate that Ncd tetramers exhibit enhanced processivity in these asters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Microtubule distributions are generally broader than motor distributions, with the relative width being fairly constant among asters and largest for Ncd motors, consistent with model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is directly observable in Figure 2D and Figure 2\u2014figure supplement 1. Claim C73 is supported by analysis of experimental data and agreement with model predictions. This represents a testable prediction of the model that is confirmed experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C15",
+      "C76",
+      "C77",
+      "C79",
+      "C84",
+      "C92"
+    ],
+    "result": "Network contraction rates in quasi-one-dimensional experiments scale linearly with single-motor speed. Contraction speed increases linearly with distance from the network center, suggesting a telescoping model where the network consists of connected contractile units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C79 are directly supported by experimental data in Figure 3b and 3c. The linear relationship between merger speed and separation, with slopes matching motor speed ratios, provides strong quantitative support. The telescoping model interpretation (C77, C84) is a reasonable inference consistent with prior actomyosin studies (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Only initial contraction rates (~100 s) are measured, during which the network behaves as an elastic material since motor unbinding timescales (~400 s for two optogenetic pairs) are longer than the measurement period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 clearly states the experimental limitation. The elastic material assumption (C86) is justified by comparing measurement timescale to unbinding timescales. The 20 s unbinding time (C87) is literature-supported, and the 400 s calculation (C88) follows from statistical reasoning about independent binding events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Processivity is hypothesized to be the key control variable for aster size, with higher-order effects like motor cooperativity playing important roles, as evidenced by discrepancies between inferred and expected single-molecule parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is explicitly labeled as a hypothesis. While C90 cites prior work suggesting processivity affects aster formation, and C91 notes parameter discrepancies suggesting higher-order effects, no mechanistic model or direct experimental validation of the processivity hypothesis is provided. This remains an important open question requiring future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C11"
+    ],
+    "result": "The optogenetic system uses light-dimerizable proteins (iLid and micro) fused to kinesin motors. In darkness, motor dimers walk along microtubules without organizing them; upon light activation, dimers couple to form tetramers that crosslink microtubules. The optogenetic bond lasts ~20 s before reverting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 describe the experimental system design, illustrated in Figure 1A. Claim C19 is supported by literature citation (Guntas et al., 2015). This system description is consistent with prior work (C10, C12) and provides the foundation for all experiments in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Aster centers are very dense with motors and microtubules and appear disordered by fluorescence microscopy. Pol-Scope imaging shows bright, aligned arms but a dark center, interpreted as a disordered core possibly due to steric hindrance at high microtubule density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by experimental observations from fluorescence and Pol-Scope imaging (Appendix 1\u2014figure 3). The steric hindrance explanation (C111) is reasonable speculation. This justifies excluding the core region from the radial symmetry model (C43).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C47"
+    ],
+    "result": "FRAP experiments demonstrate that steady-state asters have little to no net radial movement of microtubules, with slow angular motion, validating the steady-state assumption in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112 and C47 are directly supported by FRAP experimental data shown in Appendix 1\u2014figure 4. This validates a key modeling assumption (C46) that microtubules have no average radial movement at steady state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "For small excitation diameters, aster size can exceed the illumination region, likely due to motor diffusion recruiting background microtubules. For larger diameters, microtubules concentrate in the aster, creating a depleted region. Aster outer radius is defined as where microtubule fluorescence is twice background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is an observation from Figure 1\u2014figure supplement 2. The diffusion explanation (C114) is reasonable speculation. Claim C115 is an experimental observation. The size definition (C116) is a methodological choice that agrees with visual inspection (Figure 1\u2014figure supplement 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C102",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Motor constructs were cloned and expressed in SF9 cells, microtubules were polymerized with GMP-CPP, experiments were conducted using custom microscopy with pattern projection controlled by Micro-Manager, and motor speeds were measured by gliding assays with custom Python tracking code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C93-C106) describe standard molecular biology, biochemistry, and microscopy methods. The methods are sufficiently detailed and cite appropriate sources (e.g., Addgene plasmids, Micro-Manager software). These are routine techniques appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "By varying motor and microtubule concentrations, it is possible to form multiple smaller asters within the illumination region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by experimental observations in Figure 1\u2014figure supplement 1, showing examples of different aster formation patterns. However, the authors note this phenomenon warrants further investigation, indicating it is not fully characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The findings are in agreement with telescoping models of contraction from actomyosin network studies, suggesting this may be a common mechanism across cytoskeletal networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 appropriately cites relevant literature (Thoresen et al., 2011; Linsmeier et al., 2016; Schuppler et al., 2016) and makes a reasonable inference about common mechanisms. This contextualizes the current findings within the broader field.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1540 @@
+{
+  "submission": {
+    "id": "c8615e83-8a4d-4900-8211-b1bf347cc927",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:58:12.322616Z",
+    "updated_at": "2025-12-03T08:58:12.322616Z"
+  },
+  "content": [
+    {
+      "id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "submission_id": "c8615e83-8a4d-4900-8211-b1bf347cc927",
+      "content_type": "manuscript",
+      "content_text": "# Modulation of pulsatile GnRH dynamics across the ovarian cycle via changes in the network excitability and basal activity of the arcuate kisspeptin network\n\n## Authors\n\n- Margaritis Voliotis<sup>1</sup> ([ORCID: 0000-0001-6488-7198](https://orcid.org/0000-0001-6488-7198)) \u2020\n- Xiao Feng Li<sup>2</sup>\n- Ross Alexander De Burgh<sup>2</sup>\n- Geffen Lass<sup>2</sup>\n- Deyana Ivanova<sup>2</sup>\n- Caitlin McIntyre<sup>2</sup>\n- Kevin O'Byrne<sup>2</sup>\n- Krasimira Tsaneva-Atanasova<sup>1</sup> ([ORCID: 0000-0002-6294-7051](https://orcid.org/0000-0002-6294-7051))\n\n### Affiliations\n\n1. Department of Mathematics and Living Systems Institute, College of Engineering, Mathematics and Physical Sciences, University of Exeter Exeter United Kingdom\n2. Department of Women and Children\u2019s Health, School of Life Course Sciences, King\u2019s College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nPulsatile GnRH release is essential for normal reproductive function. Kisspeptin secreting neurons found in the arcuate nucleus, known as KNDy neurons for co-expressing neurokinin B, and dynorphin, drive pulsatile GnRH release. Furthermore, gonadal steroids regulate GnRH pulsatile dynamics across the ovarian cycle by altering KNDy neurons' signalling properties. However, the precise mechanism of regulation remains mostly unknown. To better understand these mechanisms, we start by perturbing the KNDy system at different stages of the estrous cycle using optogenetics. We find that optogenetic stimulation of KNDy neurons stimulates pulsatile GnRH/LH secretion in estrous mice but inhibits it in diestrous mice. These in vivo results in combination with mathematical modelling suggest that the transition between estrus and diestrus is underpinned by well-orchestrated changes in neuropeptide signalling and in the excitability of the KNDy population controlled via glutamate signalling. Guided by model predictions, we show that blocking glutamate signalling in diestrous animals inhibits LH pulses, and that optic stimulation of the KNDy population mitigates this inhibition. In estrous mice, disruption of glutamate signalling inhibits pulses generated via sustained low-frequency optic stimulation of the KNDy population, supporting the idea that the level of network excitability is critical for pulse generation. Our results reconcile previous puzzling findings regarding the estradiol-dependent effect that several neuromodulators have on the GnRH pulse generator dynamics. Therefore, we anticipate our model to be a cornerstone for a more quantitative understanding of the pathways via which gonadal steroids regulate GnRH pulse generator dynamics. Finally, our results could inform useful repurposing of drugs targeting the glutamate system in reproductive therapy.\n\n## Introduction\n\nThe dynamics of gonadotropin-releasing hormone (GnRH) secretion is critical for reproductive health. In female animals, GnRH secretion is tightly regulated across the ovarian cycle. Pulsatile secretion dominates most of the cycle, with frequency and amplitude modulated by the ovarian steroid feedback. Positive feedback from increasing estradiol levels triggers a preovulatory surge of GnRH/LH secretion (Christian and Moenter, 2010). Furthermore, there is ample evidence that ARC kisspeptin neurons are prime mediators of the ovarian steroid feedback on the pulsatile dynamics of GnRH/LH secretion (McQuillan et al., 2019), although the mechanisms remain unclear.\n\nIn vitro studies have shown that gonadal steroids have a dramatic effect on the electrophysiology of ARC kisspeptin neurons. For instance, spontaneous firing activity of ARC kisspeptin neurons from castrated mice appears elevated compared to intact animals (Ruka et al., 2016) and estradiol replacement attenuates ARC kisspeptin neuron activity in gonadectomised animals (Ruka et al., 2016; Wang et al., 2018). More recently, fibre photometry data from female mice show that the ARC kisspeptin neuronal population (KNDy network) pulses at a relatively constant frequency throughout the ovarian cycle apart from the estrous phase where the frequency is dramatically reduced (McQuillan et al., 2019). This slowdown of LH frequency is thought to be a direct consequence of the increasing progesterone levels associated with ovulation (McQuillan et al., 2019), although studies using the rhesus monkey show that raising pre-ovulatory estrogen levels are also important (O\u2019Byrne et al., 1991). Studies in sheep indicate the inhibitory effects of progesterone are mediated through increased dynorphin signalling (Goodman et al., 2011; Moore et al., 2018); however, this is less clear in mice where ovarian steroids have a negative effect on Dyn mRNA levels (Navarro et al., 2009).\n\nPerplexing is also the differential effect of various neuromodulators on LH secretion depending on the gonadal steroid background. For instance, N-methyl-D-aspartate (NMDA) robustly inhibits LH pulses in the ovariectomised monkey, whereas in the presence of estradiol this effect is reversed, and NMDA stimulates LH secretion (Reyes et al., 1990; Reyes et al., 1991). Similar reversal of action on LH dynamics depending on the underlying ovarian steroid milieu has been also documented for other neurotransmitter and neuropeptides in other species (Kalra and Kalra, 1983; Brann and Mahesh, 1992; Arias et al., 1993; Bonavera et al., 1994; Scorticati et al., 2004) and highlights the complex mechanisms underlying the modulation the GnRH pulse generator by gonadal steroids.\n\nHere, using mathematical modelling along with optogenetic stimulation of ARC kisspeptin neurons, we embark to understand how the dynamics of the pulse generator are modulated across the ovarian cycle. Our mathematical model suggests that the level of excitability within the ARC kisspeptin network\u2014the propensity of kisspeptin neurons to signal and activate each other\u2014is one of the key parameters modulated in different stages of the cycle by gonadal steroids. Previous studies have shown that ARC kisspeptin neurons synapse on each other (Yip et al., 2015; Qiu et al., 2016) and are glutamatergic (Cravo et al., 2011; Qiu et al., 2011; Kelly et al., 2013; Nestor et al., 2016; Qiu et al., 2016; Wang et al., 2018). Based on these findings, we hypothesise that population excitability should be enabled primarily via glutamate signalling. We test our predictions in vivo and show that glutamatergic transmission is an important factor for the pulsatile behaviour of the KNDy network.\n\n## Results\n\n### The dynamic response of the KNDy network to sustained, low-frequency optic stimulation is estrous cycle dependent\n\nUsing optogenetics we perturbed the KNDy network to test whether and how sex steroids modulate the system\u2019s dynamical response. ARC kisspeptin-expressing neurons were transduced with a Cre-dependent adeno-associated virus (AAV9-EF1-dflox-hChR2-(H134R)-mCherryWPRE-hGH) to express ChR2 (Figure 1; see Materials and methods) and were optogenetically stimulated at the estrous and the diestrous phase of the cycle, measuring LH pulse frequency as a readout. Sustained, low-frequency optic stimulation was used to emulate elevated basal activity in ARC kisspeptin neurons or persistent stimulatory signals to the KNDy population from other neuronal populations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71252/elife-71252-fig1-v2.jpg)\n\n**Figure 1.:** Coronal section showing red mCherry fluorescence positive neurons in the ARC which indicates ChR2 receptor expressing kisspeptin neurones, following unilateral injection of AAV9.EF1.dflox.hChR2(H134R)-mCherry.WPRE.hGH into the ARC of Kiss-Cre mouse. Note the absence of mCherry fluorescence in the other side of ARC.3 V, Third ventricle.\n\nIn estrous mice, we find that sustained optogenetic stimulation of ARC kisspeptin neurons at 5 Hz immediately triggers robust LH pulses at a frequency of 2.10 \u00b1 0.24 pulses/hour (Figure 2A and C & E), which is in agreement with our previous findings (Voliotis et al., 2019) and highlights how pulsatile dynamics can emerge as a population phenomenon without the need of a pulsatile activation signal (Strogatz, 2018). In diestrous mice, on the other hand, optogenetic stimulation of ARC kisspeptin neurons at 5 Hz has a subtle slowdown effect on LH pulse frequency over the 1.5 hr stimulation period (Figure 2\u2014figure supplement 1). To investigate this response in greater detail, we revised our experimental protocol, removing the control period and extending the stimulation period to 2.5 hr. With the extended protocol we measure 0.64 \u00b1 0.09 and 0.40 \u00b1 0.13 LH pulses/hr under sustained optic stimulation at 5 and 15 Hz, respectively; these frequencies are significantly lower than the LH pulse frequency we observe in control animals, which receive no optic stimulation (Figure 2B, D, F). We note that we observe normal LH pulse frequencies in WT animals receiving sustained optic stimulation for 2.5 hr (Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71252/elife-71252-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) Representative examples showing LH secretion in response to no stimulation (grey bar) or sustained blue light (473 nm, 5 ms pulse width, black bar) activation of kisspeptin neurons at 5 Hz in estrous (C) and diestrous (D) mice. (E) Summary showing mean \u00b1 SEM LH pulse frequency over the 60 min control period (white bars) and over the subsequent stimulation period (black bar) in estrous mice. (F) Summary showing mean \u00b1 SEM LH pulse frequency in the control (grey bar) and stimulated (black bars) diestrous mice. *Denote LH pulses. #p < 0.05 vs control; \u2020p < 0.05 vs pre-stimulation; n = 5\u20136 per group.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71252/elife-71252-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Representative examples showing LH secretion in diestrous Kiss-Cre mice over a 60 min control period followed by a 90 min period of sustained blue light (473 nm, 5 ms pulse width, black bar) activation of kisspeptin neurons at 5 Hz. There is a tendency for LH pulses to slow down during the activation period: (A) 0.05 vs 0.222 pulses/h (slow down); (B), 0.03 vs 0.03 pulses/h (no change); and (C) 0.03 vs 0.222 pulse/h (slow down). To investigate the possibility of an effect in more depth, we revised the protocol by removing the control period and extending stimulating to 150 min (see Figure 1 in main text). *Denote LH pulses.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71252/elife-71252-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013B) Representative examples showing normal LH secretion in diestrous WT animals under sustained blue light (473 nm, 5 ms pulse width, black bar) activation of kisspeptin neurons at 5 Hz. *Denote LH pulses.\n\nOur data illustrate how natural variation of ovarian steroids across the ovarian cycle leads to qualitative changes in the dynamical response of ARC kisspeptin neurons to optical stimulation. These changes are most probably driven by the effect that gonadal steroids have on the intrinsic electrophysiological properties of ARC kisspeptin neurons (Ruka et al., 2016) and the neuromodulator signalling capacity within the KNDy network (Vanacker et al., 2017).\n\n### A mathematical model predicts key mechanisms modulating the behaviour of the KNDy pulse generator across the estrous cycle\n\nInterrogating the KNDy network at different stages of the estous cycle via optic stimulation and measuring the effect on LH pulse frequency allows use of our mathematical model (Voliotis et al., 2019) to understand how key system parameters change under gonadal steroid control. The model describes the dynamical behaviour of ARC kisspeptin neurons using three dynamical variables: representing the levels of Dyn, NKB and neuronal activity (Figure 3A). Furthermore, rather than focusing on the biophyscal details of regulation, the model postulates that gonadal steroids could potentially modulate the behaviour of the KNDy system across the cycle via acting on four system-level parameters: (i) level of Dyn signalling, (ii) level of NKB signalling, (iii) network excitability (i.e. propensity of neurons in the population to transmit signals to one another), and (iv) basal neuronal activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71252/elife-71252-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic illustration of the coarse-grained model of the ARC KNDy population. The model comprises three dynamical variables representing the average levels of Dyn and NKB secreted by the population, and its average firing activity. We hypothesise that four key parameters modulate the behaviour of the system across the ovarian cycle: (i) Dyn signalling strength; (ii) NKB signalling strength; (iii) network excitability; and (iv) basal neuronal activity. Estimates for the four parameters in estrus and diestrus are inferred from LH pulse frequency data in estrus and diestrus animals; with or without 5 Hz optic stimulation (Figure 2E&F) (B) System response to low frequency stimulation during estrus and diestrus, using the maximum a-posteriori estimate of the parameter values inferred from the frequency data. (C) Analysis of parameter changes across the cycle. For each of the four parameter $(\\theta^{i};i=1,2,3,4)$, the diestrus-to-estrus change is defined as the log-ratio between the corresponding parameter values, that is, $log_{10}(\\theta_{estrus}^{i}/\\theta_{diestrus}^{i}).$ Normalised covariance (correlation) matrix of parameter changes reveals negative correlation between changes in NKB signalling strength and network excitability, and positive correlation between Dyn signalling strength and both NKB signalling. Eigen-parameters are visualised as pie charts. The eigen-parameter explaining the least of the variance in the posterior distribution corresponds to the stiffest parameter combination to which the system is most sensitive.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71252/elife-71252-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The behaviour of the model depends upon four parameters: (i) Dyn signalling strength; (ii) NKB signalling strength; (iii) network excitability and (iv) basal neuronal activity. For each of the four parameter ($\\theta^{i};i=1,2,3,4$), we quantify the diestrus-to-estrus change as the log-ratio between the corresponding parameters, that is, $log_{10}\\frac{\\theta_{estrus}^{i}}{\\theta_{diestrus}^{i}}$, and we infer them from frequency of LH pulses using Approximate Bayesian Computation based on sequential Monte Carlo (see main text).\n\nEmploying Bayesian inference techniques (see Materials and methods), we sample values for these four parameters, which allow the model to replicate the mean LH frequency we observe experimentally in estrus and diestrus mice with and without 5 Hz optic stimulation (Figure 2E&F). Inspection of the dynamical behaviour of the model, using the identified diestrous parameter values, reveals that in response to optic stimulation in diestrus pulsatile dynamics could die out gradually (i.e. there is a transient period before activity shuts down; see Figure 3B for an illustrative example), which is confirmed by the delayed inhibition of LH pulses we observed experimentally in diestrous mice.\n\nNext, we focus on how the four key parameters change between diestrus and estrus. We measure the change in each parameter using the log-ratio of its estrous to diestrous value and calculate the covariance matrix of these log-ratios from our set of inferred parameter values. We find a positive (linear) correlation between changes in Dyn and NKB signalling strength, and negative (linear) correlation between changes in NKB signalling strength and network excitability (Figure 3C). That is, the model predicts that NKB signalling strength and network excitability are characterised by opposite (in direction) correlations during the transition from diestrus to estrus (one decreasing the other increasing; we note the model predicts that both combinations are possible), whereas NKB and Dyn signalling remain correlated in the same direction (ether increasing or decreasing; we note the model predicts that both combinations are possible). Finally, we apply Principal Component Analysis to study the sensitivity of the system with respect to changes in the four parameters (see Materials and methods). We calculate the principal components in dataset with the inferred parameter changes. Principal components explaining small portions of the variance in the dataset (i.e. principal component with the smallest eigenvalue) correspond to parameter combinations to which the system dynamics are most sensitive (stiff parameter combinations). These combinations are the most critical in terms of regulation as small deviations in how these parameters co-vary result in significant shifts in the system\u2019s dynamics. Interestingly, the principal component capturing the smallest share of the variance is comprised of the parameters controlling NKB signalling, Dyn signalling and network excitability in approximately equal portions, and therefore the model predicts that co-ordinated changes in these three parameters should be critical for the observed changes in system dynamics between diestrus and estrus. Interestingly, the second smallest principal component is largely determined by change in the basal activity parameter, suggesting that basal activity is another independent handle for modulating the system\u2019s dynamics. Taken together our theoretical findings suggest that co-ordinated changes in KNDy signalling as well as changes in KNDy basal activity may be crucial pathways of regulation across the reproductive cycle.\n\n### Disrupting glutamatergic transmission in the KNDy population blocks lh pulses\n\nSince KNDy neurons are primarily glutamatergic (Cravo et al., 2011; Nestor et al., 2016; Qiu et al., 2016; Qiu et al., 2018) and synapse to one another (Yip et al., 2015; Qiu et al., 2016), we hypothesise that glutamate transmission should directly affect the levels of excitability within the KNDy network. Hence, we disrupt signalling via glutamate receptors to explore in vivo how network excitability affects the ability of the system to generate and sustain LH pulses across the estous cycle.\n\nFirst, using Kiss-Cre estrous mice we test whether glutamatergic transmission is necessary for the optogenetic induction of LH pulses. We drive the ARC kisspeptin population using sustained, low-frequency optic stimulation (5 Hz) in the presence of the combined NMDA and AMPA receptor antagonists (AP5 and CNQX, respectively). We find that blocking signalling via glutamate receptors inhibits the capacity of optic stimulation to generate and sustain pulsatile LH secretion (Figure 4A, B, D). This is in agreement with the model prediction that network excitability (ability of KNDy neurons to communicate and synchronise) is critical for sustained pulse generation. The combined AP5 and CNQX in the absence of optic stimulation had no effect (Figure 4C, F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71252/elife-71252-fig4-v2.jpg)\n\n**Figure 4.:** Representative examples showing LH secretion in estrous mice in response to optic stimulation (5 Hz blue light, 473 nm, 5 ms pulse width) (A) and optic stimulation combined with the NMDA + AMPA receptor antagonist (bolus ICV injection [12 nmol AP5 +5 nmol CNQX] over 5 min, followed by a continuous infusion [20 nmol AP5 and 10 nmol CNQX] for the remaining 90 min) treatment (B). NMDA + AMPA receptor antagonist alone had no effect (C). (D) Summary showing mean \u00b1 SEM LH pulse frequency over the 60 min non-stimulatory period (white bars) and over the subsequent 90 min stimulation period or appropriate non-stimulatory period in presence of. NMDA + AMPA receptor antagonist alone (black bar) in diestrous mice. *Denote LH pulses. \u2020p < 0.05 vs pre-stimulation. #p < 0.05 compared to antagonist treatment groups; n = 5\u20136 per group.\n\nNext, we test whether glutamatergic transmission is critical for the endogenous LH pulses observed in diestrus. Treatment of diestrous mice with the combined NMDA and AMPA receptor antagonists resulted in a significant reduction of LH pulse frequency from 2.50 \u00b1 0.29\u20130.45 \u00b1 0.15 pulses/hour (Figure 5B & D), confirming that the glutamatergic transmission is indeed critical for sustained pulsatility. Moreover, combining NMDA and AMPA receptor antagonist treatment with low frequency optic stimulation (5 Hz) partially restored LH pulsatility to 1.58 \u00b1 0.17 pulses/hour (Figure 5C & D), suggesting low glutamatergic transmission within the KNDy population or from upstream neuronal populations could be offset by other exogenous inputs or elevated basal activity. This finding is in agreement with the model prediction that basal activity and signalling between KNDy neurons are independent pathways of modulating the system\u2019s dynamical behaviour.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71252/elife-71252-fig5-v2.jpg)\n\n**Figure 5.:** Representative examples showing pulsatile LH secretion in response to ICV administration of aCSF as control (A), treatment with NMDA + AMPA receptor antagonists (AP5+ CNQX: bolus ICV injection [12 nmol AP5 +5 nmol CNQX] over 5 min, followed by a continuous infusion [20 nmol AP5 and 10 nmol CNQX] for the remaining 90 min) (B) and combined NMDA/AMPA receptor antagonist treatment and sustained optic stimulation (blue light 473 nm, 5 ms pulse width) at 5 Hz (C). (D) Summary showing mean \u00b1 SEM LH pulse frequency over the 60 min non-stimulatory period (white bars) and over the subsequent 90 min stimulation period in control mice (grey bar) and mice receiving treatment (black bar). *Denote LH pulses. \u2020p < 0.05 vs pre-stimulation. #p < 0.05 compared to 5 Hz stimulation plus antagonist treatment and aCSF control groups; n = 5\u20136 per group.\n\n## Discussion\n\nUsing optogenetics, we perturbed the GnRH pulse generator at different stages of the ovarian cycle aiming to understand how gonadal steroids modulate key properties of the system. Previous studies have shown how the pulsatile activity generated by the kisspeptin neuronal network is modulated across the estrous cycle (Han et al., 2015; McQuillan et al., 2019). Our data show that the stage of the cycle also has a profound effect on the dynamical response of the kisspeptin population to sustained, low-frequency optic stimulation. Such stimulation triggers acceleration of LH pulses during estrus and deceleration during diestrus. Previously, our mathematical model of the KNDy network has predicted an upper and a lower bifurcation point that determine the system\u2019s range of pulsatile behaviour as the system is driven externally (Voliotis et al., 2019). Our data suggest that the gonadal state plays a critical role in shifting these bifurcation points by modulating key parameters of the system. In particular, during estrous the system is positioned below the lower bifurcation point and optogenetic stimulation of ARC kisspeptin neurons at 5 Hz moves the system across the lower bifurcation point leading to the sudden emergence of pulsatile behaviour. In contrast, during diestrus the system is within the pulsatile regime and optogenetic stimulation of ARC kisspeptin neurons at frequencies greater than 5 Hz moves the system across the upper bifurcation point and its dynamics relax progressively from pulsatile to quiescent. Our data therefore highlight the critical role of gonadal steroids in modulating the dynamical response of the KNDy network to small changes in basal activity of ARC kisspeptin neurons or in how the population processes external perturbations and afferent inputs.\n\nUsing our mathematical model of the system, we gained insight into possible mechanisms via which gonadal steroids modulate the dynamic behaviour of the GnRH pulse generator. Based on the differential effect that optic stimulation had on LH pulse frequency in estrous versus diestrous animals, the model predicted that network excitability is an important parameter, which is actively regulated throughout the ovarian cycle. Importantly, KNDy network excitability is most probably co-regulated with parameters controlling the strength of Dyn and NKB signalling as the system transitions between the different phases of the ovarian cycle. In particular, our analysis predicts (i) a strong negative correlation between changes in NKB signalling strength and changes in network excitability, and (ii) a strong positive correlation in changes between NKB and Dyn signalling. We propose that these regulatory relationships ensure robust control of LH frequency over the estrous cycle (Figure 6, Figure 6\u2014figure supplement 1). For example, the positive correlation in the regulation of NKB and Dyn signalling enables robust transition between pulsatile and quiescent dynamics, in contrast to negative correlation that would make the system far more sensitive to the magnitude of the change, that is, changes that are too small or too large could fail to trigger LH pulses (see Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/71252/elife-71252-fig6-v2.jpg)\n\n**Figure 6.:** Two-parameter (NKB signalling and network excitability) bifurcation diagram showing the region in the parameter space for which the system exhibits pulsatile dynamics (grey area). Two points (denoted by A and B) illustrate how an increase in NKB signalling or network excitability could have a differential effect on the dynamics of the system. For point A an increase in network excitability or NKB signalling could lead to an increase in the frequency and width of pulses. However, for point B a similar increase leads to pulse inhibition and steady state system dynamics. Furthermore, a negative correlation in how NKB signalling and network excitability co-vary (i.e. aligned with the direction of the pulsatile regime) make the system dynamics less sensitive to small perturbations and enable more robust control over the cyle.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71252/elife-71252-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Positive correlation in the regulation of these two parameters (see positive co-regulation arrows) allows robust control over the system\u2019s dynamics, that is, large enough changes (regardless their actual magnitude) will move the system from the quiescent into the pulsatile regime. Negative correlation in the regulation of the two parameters (see negative co-regulation arrows) makes system dynamics more sensitive to the magnitude of the change (arrow length), for example, large changes can fail to trigger LH pulses.\n\nRecent transcriptomic data have revealed that treatment of ovariectomised mice with estradiol reduces expression of NKB and Dyn in KNDy neurons, but increases expression of glutamate transporters (vGlut2; leading to increased glutamate neurotransmission and neuronal excitability in the population) (Qiu et al., 2018). These findings are in line with the regulatory relationships predicted by the model and support the hypotheses that (i) correlated changes in the NKB and Dyn signalling strength should be reflected mainly in the expression levels of the two neuropeptides and consequently in their release availability, and (ii) a key mechanism for regulating network excitability could be through the expression of glutamate transporters. In normally cycling animals, these changes should be driven by the combined action of sex steroids. For example, although postovulatory increase in progesterone is linked to deceleration of LH pulses in the luteal-phase, this inhibitory effect of progesterone is conditional on prior exposure to high estradiol levels (Skinner et al., 1998) Moreover, data from the rhesus monkey support that estradiol and progesterone could play distinct roles in the deceleration of LH pulses from mid-cycle and throughout the luteal-phase (O\u2019Byrne et al., 1991). Our model provides a novel, systems-level understanding of how the genomic changes in the KNDy population link to the dynamic behaviour of the pulse generator. Further experiments will be needed to validate model prediction and link cyclic changes in the sex steroid milieu to genomic pathways dynamically regulating the pulse generator.\n\nThe effect of cycle stage on the LH response to sustained optogenetic stimulation is reminiscent of the well documented effect that gonadal steroids have on LH response to various excitatory neurotransmitters and neuropeptides (e.g. NMDA). For instance, investigations in the female monkey revealed an unexplained inhibition of LH in OVX animals following treatment with NMDA, in contrast with the excitatory action of NMDA on LH secretion in the presence of ovarian steroids (Reyes et al., 1990; Reyes et al., 1991). Similar reversal of action on LH dynamics depending on the underlying ovarian steroid milieu has been documented for various other neurotransmitters and NKB receptor agonists (Kalra and Kalra, 1983; Scorticati et al., 2004). Our mathematical model supports that ovarian steroids change key parameters of the KNDy network, which control the dynamic behaviour of the system and its response to perturbations. As an illustration, Figure 6 shows how the dynamic behaviour of the model depends on network excitability and NKB signalling. Since these parameters are governed by gonadal steroids (Qiu et al., 2018; Wang et al., 2018), it is expected that the underlying steroid milieu will also modulate the effect of perturbations on the dynamics of the system. For instance, the effect of stimulating NKB signalling (e.g. via administration of NK3 receptor agonists) or network excitability (e.g. via NMDA administration) could result in inhibition of the pulse generator if the system is already located closer to the right boundary of the pulsatile dynamics region (e.g. point B in Figure 6). Such points correspond to states with high pulse generator activity similar to pulse generator dynamics observed in many animal models after gonadectomy (Reyes et al., 1990; Kinsey-Jones et al., 2012). In contrast, similar perturbations but from a different point in the parameter space, lying closer to the left edge of the pulsatile region (e.g. point A in Figure 6), could result in stimulation of the pulse generator (higher frequency). This illustrative example also highlights that the effect of gonadal steroids on the response of the pulse generator to perturbations is continuous rather than binary, that is, the behaviour of the pulse generator is modulated by the actual continuous levels of gonadal steroids rather than their mere presence of absence. Therefore, the underlying steroid levels could explain seemingly incompatible findings regarding the effect of NKB receptor agonism on LH secretion: ranging from stimulation (Navarro et al., 2011) or inhibition (Sandoval-Guzm\u00e1n and Rance, 2004; Kinsey-Jones et al., 2012) to no effects (Navarro et al., 2009) in rodents.\n\nBased on our model predictions regarding the importance of network excitability, we set out to uncover the role of this parameter on the dynamic response of the network in vivo. We hypothesised that network excitability should depend, partly at least, on the levels of glutamate signalling as ARC kisspeptin neurons are known to be interconnected (Yip et al., 2015; Qiu et al., 2016) and communicate via glutamate (Cravo et al., 2011; Qiu et al., 2011; Nestor et al., 2016; Qiu et al., 2016). Further evidence that estradiol regulates KNDy neuronal excitability (Qiu et al., 2018) and that cycle stage regulates spontaneous glutamatergic activity of KNDy neurons (Wang and Moenter, 2020) supports the model prediction that network excitability is a critical network property regulated by gonadal steroids. Therefore, to further test this prediction in vivo, we used glutamate receptor (NMDA and AMPA) antagonists to inhibit excitability in the KNDy network. In diestrus animals blocking glutamate receptors (NMDA and AMPA) inhibited LH pulses that were then rescued via low frequency optogenetic stimulation of kisspeptin neurons. Furthermore, in estrus animals, NMDA and AMPA receptor antagonism inhibited the induction of LH pulses via optic stimulation. These experimental findings highlight the complex fine-balanced mechanisms underlying pulse generation by the KNDy network. In particular, limited network excitability within the KNDy population blocks LH pulsatility but this can be mitigated by elevated basal neuronal activity. Similarly, increased basal neuronal activity can induce pulse generation but this effect can be negated by decreased excitability within the neuronal population. There is a caveat, however, as the glutamate receptor antagonists were given by intracerebroventricular injection, and this raises the possibility of having interferred with additional glutamatergic transmission from afferent populations. To the best of our knowledge, there is no evidence of such afferent populations in rodents, although supporting evidence can be found the sheep literature (Merkley et al., 2015). Nevertheless, the possibility of having blocked exogenous glutamatergic inputs does not invalidate our findings, but further supports a key model prediction that basal activation of KNDy neurons (either intrinsic or exogenous) is a critical pathway for modulating the dynamics of the pulse generator. Overall, our model predicts that pulse generation is an emergent property of the KNDy network depending both on single neuron properties such as basal activity and exogeneous activation but also on how the neurons signal and communicate with each other. Our results support this idea, highlighting the critical role of inter-neuronal communication in enabling the population to pulse in synchrony.\n\n## Materials and methods\n\n### Animals\n\nAdult Kiss-Cre heterozygous transgenic female mice aged between 8 and 14 weeks, 25\u201330 g, were used for experiments (Yeo et al., 2016). Breeding pairs were obtained from the Department of Physiology, Development and Neuroscience, University of Cambridge, UK and mated in house at King\u2019s College London. Genotyping was performed using a multiplex PCR protocol for detection of heterozygosity for the Kiss-Cre or wild-type allele as previously described (Lass et al., 2020). Only mice with normal estrous cycles were used. Daily vaginal smears were performed for the detection of the estrous and diestrous stages of the ovarian cycle. Mice were singularly housed and provided with food (standard maintenance diet; Special Dietary Services, Wittam, UK) and water ad libitum while being kept under a 12:12 hr light/dark cycle (lights on 0700 h) at 23\u00b0C \u00b1 2\u00b0C. All animal procedures performed were approved by the Animal Welfare and Ethical Review Body Committee at King\u2019s College London and conducted in accordance with the UK Home Office Regulations.\n\n### Surgical procedures\n\nStereotaxic injection of AAV9-EF1-dflox-hChR2-(H134R)-mCherry-WPRE-hGH (4.35 \u00d7 1013 GC/ml; Penn Vector Core; University of Pennsylvania, PA, USA) for targeted expression of channelrhodopsin (ChR2) in ARC kisspeptin neurons was done under aseptic conditions. The mice were anaesthetised using ketamine (Vetalar, 100 mg/kg, i.p.; Pfizer, New York City, NY, USA) and xylazine (Rompun, 10 mg/kg, i.p.; Bayer, Leverkusen, Germany). Kiss-Cre female mice (n = 12) or wilt-type (n = 3) were secured in a Kopf Instruments motorised stereotaxic frame (Kopf Instruments, Tujunga, CA, USA) and surgical procedures on the brain were performed using a Robot Stereotaxy system (Neurostar, Tubingen, Germany). Stereotaxic injection coordinates used to target the ARC were obtained from the mouse brain atlas of Paxinos and Franklin, 2004 (0.25 mm lateral, 1.94 mm posterior to bregma and at a depth of 5.8 mm). A skin incision was made and a small hole was drilled in the skull above the location of the ARC. A 2 \u03bcl Hamilton micro-syringe (Esslab, Essex, UK) was attached to the robot stereotaxy and used to inject 0.3 \u03bcl of the AAV-construct into the ARC, unilaterally, at a rate of 100 nl/min. After the injection, the needle was left in position for 5 min and then slowly lifted over 1 min. The same coordinates as the injection site were then used to insert a fibre-optic cannula (200 \u03bcm, 0.39 NA, 1.25 mm ceramic ferrule; Thorlabs, LTD, Ely, UK); however, a depth of 5.78 mm was reached to ensure the fibre-optic cannula was situated immediately above the injection site. Additionally, an intracerebroventricular (ICV) fluid guide cannulae (26 gauge; Plastics One) targeting the lateral ventricle (coordinates: 1.1 mm lateral, 1.0 mm posterior to bregma and at a depth of 3.0 mm) was chronically implanted. Dental cement (Superbond C&B kit Prestige Dental Products, Bradford UK) was used to fix the cannulae in place and the skin incision was sutured. A one week recovery period was given post-surgery. After this period, the mice were handled daily to acclimatise them to the tail-tip blood sampling procedure (Steyn et al., 2013). Mice were left for 4 weeks to achieve effective opsin expression before experimentation.\n\n### Validation of AAV injection site and fibre optic and ICV cannula position\n\nOnce experiments were completed, mice were given a lethal dose of ketamine and transcardially perfused for 5 min with heparinised saline, followed by 10 min of ice-cold 4 % paraformaldehyde (PFA) in phosphate buffer, pH 7.4, for 15 min using a pump (Minipuls; Gilson). Brains were collected immediately and post fixed at 4 \u00b0C in 15 % sucrose in 4 % PFA and left to sink. They were then transferred to 30 % sucrose in PBS until they sank. The brains were then snap-frozen on dry ice and stored at \u201380 \u00b0C. Using a cryostat, every third coronal brain section (30 \u00b5m) was collected between \u20131.34 mm and \u20132.70 mm from bregma and sections were mounted on microscope slides, left to air-dry and cover slipped with ProLong Antifade mounting medium (Molecular Probes, Inc, OR, USA). Verification and evaluation of the injection site was performed using an Axioskop 2 Plus microscope equipped with axiovision 4.7 (Zeiss). One of 12 Kiss-Cre mice failed to show mCherry fluorescence in the ARC and was excluded from the analysis.\n\n### Experimental design and blood sampling for LH measurement\n\nFor measurement of LH pulsatility during optogenetic stimulation, the tip of the mouse\u2019s tail was removed with a sterile scalpel for tail-tip blood sampling (Czieselsky et al., 2016). The chronically implanted fibre-optic cannula was attached to a multimode fibre-optic rotary joint patch cables (Thorlabs) via a ceramic mating sleeve. This allows for freedom of movement and blue light delivery (473 nm wavelength) using a Grass SD9B stimulator controlled DPSS laser (Laserglow Technologies) during optogenetic stimulation.\n\nThe experimental protocol involved an hour long acclimatisation period, followed by 2.5 hr of blood sampling, where 5 \u03bcl of blood was collected every 5 min. For estrous and diestrous mice, optic stimulation was initiated after 1 hr of control blood sampling and was sustained for 1.5 hr. Optic stimulation was delivered as 5 ms pulses of light at 5 Hz with the laser intensity measured at the tip of the fibre-optic patch cable set to 5 mW (Voliotis et al., 2019). Additionally, in separate experiments, diestrous mice were optically stimulated at five or 15 Hz for 2.5 hr, that is entire blood sampling period. Control mice (in estrus or diestrus) received no optic stimulation. Wild-type mice (estrus and disetrus) received 5 Hz optic stimulation to verify that our optic stimulation protocol had no undesirable effects on LH secretion.\n\nNeuropharmacological manipulation of glutamatergic signalling was performed using a combination of NMDA (AP5, Tocris, Abingdon, UK) and AMPA (CNQX, Alpha Aesar, Heysham, UK) receptor antagonist treatment with or without simultaneous optogenetic stimulation. The animals were prepared for optogenetic experimentation as described above with additional preparation of the ICV injection cannula. Immediately after connection of the fire-optic cannula, the ICV injection cannula with extension tubing, preloaded with drug solution (AP5 and CNQX dissolved in artificial CSF) or artificial CSF alone as control, was inserted into the guide cannula. The extension tubing, reaching outside of the cage, was connected to a 10 \u03bcl Hamilton syringe mounted in an automated pump (Harvard Apparatus) to allow for remote micro-infusion without disturbing the animals during experimentation. After a 55 min control blood sampling period, as described above, and 5 min before the onset of optic stimulation, a bolus ICV injection of drug solution (12 nmol AP5 and 5 nmol CNQX in 2.3 \u03bcl) was given over 5 min, followed by a continuous infusion (20 nmol AP5 and 10 nmol CNQX in 5.6 \u03bcl) for the remaining 90 min of experimentation. Artificial CSF controls, with or without optic stimulation, received the same ICV fluid regime. When no optic stimulation was applied the same ICV administration and blood sampling regimen described was applied. Stimulation and non-stimulation protocols were implemented in random order for Kiss-Cre mice.\n\nThe blood samples were snap-frozen on dry ice and stored at \u201380 \u00b0C until processed. In-house LH enzyme-linked immunosorbent assay (LH ELISA) similar to that described by Steyn et al. was used for processing of the mouse blood samples (Steyn et al., 2013). The mouse LH standard (AFP- 5,306 A; NIDDK-NHPP) was purchased from Harbor-UCLA along with the primary antibody (polyclonal antibody, rabbit LH antiserum, AFP240580Rb; NIDDK-NHPP). The secondary antibody (donkey anti-rabbit IgG polyclonal antibody [horseradish peroxidase]; NA934) was from VWR International. Validation of the LH ELISA was done in accordance with the procedure described in Steyn et al., 2013 derived from protocols defined by the International Union of Pure and Applied Chemistry. Serially diluted mLH standard replicates were used to determine the linear detection range. Nonlinear regression analysis was performed using serially diluted mLH standards of known concentration to create a standard curve for interpolating the LH concentration in whole blood samples, as described previously (Voliotis et al., 2019). The assay sensitivity was 0.031 ng/mL, with intra- and inter-assay coefficients of variation of 4.6% and 10.2%, respectively.\n\n### LH pulse detection and statistical analysis\n\nDynpeak algorithm was used for the detection of LH pulses (Vidal et al., 2012). The differential effect of optogenetic stimulation on LH pulsatility in estrus and diestrus was determined by looking at the frequency of LH pulses. For mice in estrus and for the neuropharmacological experiments, the mean \u00b1 SEM of LH pulses per hour were compared between the 60 min pre-stimulation/drug delivery control period and subsequent 90 min stimulation period. For mice in diestrus, the mean \u00b1 SEM of LH pulses per hour were compared between controls, 5 Hz and 15 Hz treatment groups, as optic stimulation was applied from the beginning of blood sample period. No optic stimulation was applied to control animals, however the same time points were compared. The frequency of LH pulses in the 90 min optic stimulation/drug delivery period was also compared between treatment groups. Mann-Whitney Rank Sum test was used to access LH frequency differences between groups and determine statistical significance (p < 0.05). LH data publicly available from http://doi.org/doi:10.18742/RDM01-750.\n\n### Mathematical model of the KNDy network\n\nWe used a modified version of our previously published mathematical model of the KNDy network (Voliotis et al., 2019). The model offers a high-level overview of the system, wrapping many biophysical details into a coarse grain description for the sake of simplicity and brevity. Importantly such a parsimonious model fits best to the high-level, holistic in vivo approach we use to study the system. Briefly, the model describes the ARC kisspeptin population in terms of three variables: $D$ , the average concentration of Dyn secreted by the population; $N\u00b4$ , the average concentration of NKB secreted by the population; and $v\u00b4$ , the average firing activity of the population, measured in spikes/min. The variables obey the following set of coupled ordinary differential equations (ODEs):\n\n$$\n\\frac{dD}{dt}=f_{D}(v)\u2212d_{D}D;\n$$\n\n\n\n$$\n\\frac{dN}{dt}=f_{N}(v,D)\u2212d_{N}N;\n$$\n\n\n\n$$\n\\frac{dv}{dt}=f_{v}(v,N)\u2212d_{v}v.\n$$\n\nParameters $d_{D}$ , $d_{N}$ and $d_{v}$ control the characteristic timescale of each variable. The model describes Dyn and NKB secretion as independent processes based on the observation that Dyn and NKB are packaged in separate vesicles (Murakawa et al., 2016). The secretion rates of the two neuropeptides are given by:\n\n$$\nf_{D}v\u00b4=k_{D}\\frac{v\u00b4^{2}}{v\u00b4^{2}+K_{v}^{2}};\n$$\n\n\n\n$$\nf_{N}v\u00b4,D\u00b4=k_{N}\\frac{v\u00b4^{2}}{v\u00b4^{2}+K_{v}^{2}}\\frac{K_{D}^{2}}{D\u00b4^{2}+K_{D}^{2}}.\n$$\n\nIn the equations above neuronal activity ($v\u00b4$) stimulates secretion of both neuropeptides, and Dyn represses NKB secretion. The maximum secretion rate for the two neuropeptides is controlled by parameters $k_{D}$ and $k_{N}$ and we refer to these parameters as the strength of Dyn and NKB singalling respectively. Furthermore, we assume that distinct modes of Dyn and NKB regulation (e.g. in terms of their synthesis and depletion rate, intracellular transport, packaging dynamics) are reflected in their secretion rate and therefore model Dyn and NKB regulation throughout the estrous cycle as changes of parameters $k_{D}$ and $k_{N}$ . The effector levels at which saturation occurs are controlled via parameters $K_{v}$ and $K_{D}.$ Here, we are interested in investigating the effect of network excitability on the dynamics therefore we modify the equation for the neuronal activity, $v\u00b4$ , by setting:\n\n$$\nf_{v}(v\u00b4,N\u00b4)=v_{0}\\frac{1\u2212exp(\u2212I)}{1+exp(\u2212I)};I=\u2212log\\frac{1\u2212b}{1+b}+k_{v}(e+\\frac{N^{2}}{N^{2}+K_{N}^{2}})v\u00b4.\n$$\n\nHere, we have introduced parameter $k_{v}$ capturing the intrinsic network excitability, that relates to the strength of the synaptic connections between KNDy neurons that are essential for synchronising neural activity and enabling pulse generation. We note that this parameter will be directly affected by any neuromodulator (including Glutamate) that affects KNDy activity as well as by processes that affect KNDy neurons\u2019 synaptic density. Furthermore, parameter $b$ controls the basal neuronal activitation of the population, which could stem from synaptic noise or afferent inputs (extrinsic to the network). We assume that both $k_{v}$ and $b$ are regulated throughout the estrous cycle. Finally, $v_{0}$ is the maximum rate at which the firing rate increases in response to synaptic inputs $I$. Note the stimulatory effect of NKB (which is secreted at the presynaptic terminal) on neuronal activity (Qiu et al., 2016). The full list of model parameters is given in Table 1.\n\n**Table 1.**\n Model parameters values.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>No</th>\n      <th>Parameter</th>\n      <th>Description</th>\n      <th>Value</th>\n      <th>Ref.</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>dD</td>\n      <td>Dyn degradation rate</td>\n      <td>0.25 min\u20131</td>\n      <td>Voliotis et al., 2019</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>dN</td>\n      <td>NKB degradation rate</td>\n      <td>0.25 min\u20131</td>\n      <td>Voliotis et al., 2019</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>dv</td>\n      <td>Firing rate reset rate</td>\n      <td>10 min\u20131</td>\n      <td>Qiu et al., 2016</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>kD</td>\n      <td>Dyn singalling strength</td>\n      <td>inferred</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>kN</td>\n      <td>NKB signalling strength</td>\n      <td>inferred</td>\n      <td>Ruka et al., 2016</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>kv</td>\n      <td>Network excitability</td>\n      <td>inferred</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>v0</td>\n      <td>Maximum rate of neuronal activity increase</td>\n      <td>30000 spikes min\u20132</td>\n      <td>Qiu et al., 2016</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>KD</td>\n      <td>Dyn IC50</td>\n      <td>0.3 nM</td>\n      <td>Yasuda et al., 1993</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>KN</td>\n      <td>NKB EC50</td>\n      <td>32 nM</td>\n      <td>Seabrook et al., 1995</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>Kv</td>\n      <td>Firing rate for half-maximal NKB and Dyn secretion</td>\n      <td>1200 spikes min\u20131</td>\n      <td>Dutton and Dyball, 1979</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>b</td>\n      <td>Basal activity</td>\n      <td>inferred</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>e</td>\n      <td>NKB-independent contribution to network excitability</td>\n      <td>inferred</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Parameter inference\n\nWe used Approximate Bayesian Computation (ABC) based on sequential Monte Carlo (SMC) (Toni et al., 2009) to infer four key model parameters (Dyn signaling strength, $k_{D}$ ; NKB signalling strength, $k_{N}$ ; network excitability $k_{v}$ ; and basal activity, $b$) in the estrous and diestrous phase of the ovarian cycle. For inference we used the average LH inter-pulse interval observed in four different settings: estrous animals without optic stimulation ($I_{E}$) and with 5 Hz optic stimulation ($I_{E+5Hz}$); diestrus animals without optic stimulation ($I_{D}$) and with 5 Hz optic stimulation ($I_{D+5Hz}$). Model simulations were generated in Matlab using function ode45 under the four different settings for 6000 min and by calculating the frequencies after discarding the initial 1000 min. The following discrepancy function was used to compare simulated, $D^{}=(I_{E}^{\u2217},I_{E+5Hz}^{\u2217},I_{D}^{\u2217},I_{D+5Hz}^{\u2217})$ , and experimental, $D=I_{E},I_{E+5Hz},I_{D},I_{D+5z}$ , data:\n\n$$\nd(D,D^{\u2217})=\\sumi=14|D_{i}\u2212D_{i}^{\u2217}|\n$$\n\nFurthermore, for the ABC SMC algorithm the size of the particle population was set to 500 and the algorithm was run for $T=4$ populations with corresponding tolerance levels $\\epsilon_{i}=54-2i,i=0,\u2026,26$. Log-uniform prior distributions were used to explore the behaviour of the model under wide parameter ranges: $log_{10}\u2061(k_{D})\u223cUniform(\u22123,3)$ ; $log_{10}(k_{N})\u223cUniform(\u22123,3)$ ; $log_{10}(k_{v})\u223cUniform(\u22123,3)$ ; and $log_{10}\u2061(b)\u00a0\u223cUniform(\u22123,0)$ . All remaining parameters were fixed to values found in the literature (see Table 1). For each parameter, an independent log10-normal perturbation kernel with variance 0.05 was used. Matlab code can be found at https://git.exeter.ac.uk/mv286/kndy-parameter-inference (Voliotis, 2021, copy archived at swh:1:rev:f5585f5f09d62a2569d21def31dc779774bc2476)\n\n### Sensitivity and principal component analysis\n\nWe used principal component analysis to study the sensitivity of the system with respect to changes in the four inferred parameters (Toni et al., 2009). We calculate the principal components in the dataset (sampled posterior distribution) of the inferred parameter changes. Principal component analysis produces a set of linearly uncorrelated eigen-parameters explaining the variance of the inferred changes (in the sampled posterior distribution.) These eigen-parameters are linear weighted combinations of the initial parameters. The eigen-parameter explaining the least of the variance in the posterior distribution corresponds to the stiffest parameter combination. That is small deviations from the inferred way these parameters co-vary would lead to changes in the model behaviour that make it incompatible with the data.\n",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "170db960-8b35-4156-b729-9bad30755575",
+      "submission_id": "c8615e83-8a4d-4900-8211-b1bf347cc927",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Margaret M McCarthy, University of Maryland School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71252.sa0](https://doi.org/10.7554/eLife.71252.sa0)\n\nSuccessful reproduction requires luteinizing hormone that is secreted from the pituitary gland in pulses which vary over the female reproductive cycle. The pulses arise by patterned secretion of a hypothalamic 'releasing factor', the secretion of which is itself governed by a population of hypothalamic neurons that express the neuropeptide kisspeptin. The paper by Voliotis et al. combines novel experimental evidence from transgenic mice with an elegant mathematical model to analyze how the kisspeptin neurons generate the varying pulsatile patterns. Testing this model in a way that will either confirm or refute it, may prove challenging.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Margaret M McCarthy, University of Maryland School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71252.sa1](https://doi.org/10.7554/eLife.71252.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Modulation of pulsatile GnRH dynamics across the ovarian cycle: the role of glutamatergic transmission in the arcuate kisspeptin network\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Catherine Dulac as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Robert Goodman (Reviewer #1); Gareth Leng (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Given the model is based on somewhat loosely define \"neuronal excitability\" there is a question as to whether the model is truly testable.\n\n2) Much of your findings are based on the role of glutamate and yet the effects of glutamate do not appear to be included in the model\n\n3) Please clarify whether the effects of NKB and dynorphin in this study are consistent with or in conflict with versus previous publications by yourself and others..\n\nReviewer #1 (Recommendations for the authors):\n\nThe original model (J Neurosci 39: 9738, 2019) described by this group incorporated dynorphin as a negative feedback signal onto NKB, a characteristic that is no longer depicted in the model proposed in Figure 3 of this manuscript. Has the model changed in this regard?\n\nL178-79: Inclusion of the minimal detectable concentration of LH would be helpful\n\nL 189-192: Since pulse frequency is not a continuous variable, non-parametric statistics are more appropriate\n\nL 276-281 and 316-320: Although one should always be careful about interpreting individual pulse patterns, the response to 5Hz stimulation on diestrus appears to be more robust in Figure 2 that in Supplemental Figure 2. Perhaps more importantly, the pulse patterns in two of the three mice in the supplemental figure are not consistent with pattern produced by the model (Figure 3B).\n\nL 503-504: There are data in sheep for glutamatergic inputs to KNDy neurons from non-KNDy afferents that are as numerous (luteal phase) or more numerous (LH surge) than glutamatergic input from KNDy neurons (Merkley et al., J Neuroendo 27: 624, 2015).\n\nReviewer #2 (Recommendations for the authors):\n\nIt is hard to see how this role of glutamate might be incorporated in this style of model. In the model auto-excitation is modelled by the excitatory action of neurokinin, so perhaps another variable to represent activity-dependent glutamate signaling might be added with very different dynamics, but I don't know that it is necessarily worth complicating the model in quite that way. Perhaps this is something that merits careful discussion.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your revised article \"Modulation of pulsatile GnRH dynamics across the ovarian cycle via changes in the network excitability and basal activity of the arcuate kisspeptin network\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Catherine Dulac as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Robert Goodman (Reviewer #1); Gareth Leng (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nOne of the reviewers has asked for a few additional points for clarification and some speculation by you on the mechanism of altered neurotransmission which might aid in formulating tests of your model.\n\n1) The model is explained much more clearly \u2013 but there are a few further simplifications that might be made. For example n1,n2, n3 and n4 are all just Hill coefficients and are all = 2; so what seem to be four parameters are just a single constant. Kv,1=Kv,2 \u2013 replace with a single parameter? It's just a bit harder than it need be to work out exactly what the model structure is.\n\n2) The manuscript would be improved if the authors were to say whether they think that what they call changes in signaling strength reflect changes in vesicle content, vesicle availability for release, mechanisms coupling activity to vesicle release, receptor availability or post-receptor signaling. I am left uncertain what experiments might be proposed to really test this model (ie potentially refute it), but if any of these were specified then designing a critical test would be simpler.\n",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "49d419d9-e046-487b-b489-a7bb3a23192d",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C1",
+      "claim": "Pulsatile GnRH release is essential for normal reproductive function.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulsatile GnRH release is essential for normal reproductive function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data provided in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "59d858ae-3ee2-4e96-8b40-d8c18c23bc64",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C2",
+      "claim": "Kisspeptin secreting neurons found in the arcuate nucleus are known as KNDy neurons for co-expressing neurokinin B and dynorphin.",
+      "claim_type": "EXPLICIT",
+      "source": "Kisspeptin secreting neurons found in the arcuate nucleus, known as KNDy neurons for co-expressing neurokinin B, and dynorphin, drive pulsatile GnRH release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "7c7504d3-2be9-452a-9ad3-87adb306249b",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C3",
+      "claim": "KNDy neurons drive pulsatile GnRH release.",
+      "claim_type": "EXPLICIT",
+      "source": "Kisspeptin secreting neurons found in the arcuate nucleus, known as KNDy neurons for co-expressing neurokinin B, and dynorphin, drive pulsatile GnRH release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "8f60425c-0903-41eb-97c3-fa7cc3a0657f",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C4",
+      "claim": "Gonadal steroids regulate GnRH pulsatile dynamics across the ovarian cycle by altering KNDy neurons' signalling properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, gonadal steroids regulate GnRH pulsatile dynamics across the ovarian cycle by altering KNDy neurons' signalling properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "41096c8a-70a1-4415-b5a1-79269e260844",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C5",
+      "claim": "Optogenetic stimulation of KNDy neurons stimulates pulsatile GnRH/LH secretion in estrous mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that optogenetic stimulation of KNDy neurons stimulates pulsatile GnRH/LH secretion in estrous mice but inhibits it in diestrous mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the optogenetic experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "8b2b89ba-5167-4c28-9d56-6409b793fc04",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C6",
+      "claim": "Optogenetic stimulation of KNDy neurons inhibits pulsatile GnRH/LH secretion in diestrous mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that optogenetic stimulation of KNDy neurons stimulates pulsatile GnRH/LH secretion in estrous mice but inhibits it in diestrous mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the optogenetic experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "aa7294e9-66df-4e15-b9a6-4d477b0344ad",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C7",
+      "claim": "The transition between estrus and diestrus is underpinned by well-orchestrated changes in neuropeptide signalling and in the excitability of the KNDy population controlled via glutamate signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "These in vivo results in combination with mathematical modelling suggest that the transition between estrus and diestrus is underpinned by well-orchestrated changes in neuropeptide signalling and in the excitability of the KNDy population controlled via glutamate signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from combining in vivo experimental results with mathematical modeling predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "8fba0019-e78e-45c7-b791-f101f1c196a0",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C8",
+      "claim": "Blocking glutamate signalling in diestrous animals inhibits LH pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "Guided by model predictions, we show that blocking glutamate signalling in diestrous animals inhibits LH pulses, and that optic stimulation of the KNDy population mitigates this inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the neuropharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "604f2c20-fe85-4d2e-b65e-61d9c60bb278",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C9",
+      "claim": "Optic stimulation of the KNDy population mitigates the inhibition of LH pulses caused by blocking glutamate signalling in diestrous animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Guided by model predictions, we show that blocking glutamate signalling in diestrous animals inhibits LH pulses, and that optic stimulation of the KNDy population mitigates this inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the neuropharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "4a08a9bd-762b-4fe6-b38b-a3ddb68735ba",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C10",
+      "claim": "In estrous mice, disruption of glutamate signalling inhibits pulses generated via sustained low-frequency optic stimulation of the KNDy population.",
+      "claim_type": "EXPLICIT",
+      "source": "In estrous mice, disruption of glutamate signalling inhibits pulses generated via sustained low-frequency optic stimulation of the KNDy population, supporting the idea that the level of network excitability is critical for pulse generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the neuropharmacological experiments in estrous mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "1647aa68-2250-447c-a33b-18167fb12984",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C11",
+      "claim": "The level of network excitability is critical for pulse generation.",
+      "claim_type": "EXPLICIT",
+      "source": "In estrous mice, disruption of glutamate signalling inhibits pulses generated via sustained low-frequency optic stimulation of the KNDy population, supporting the idea that the level of network excitability is critical for pulse generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing that disrupting glutamate signaling inhibits pulse generation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "358c5fe4-56a5-4c15-b347-9ffe48590b2e",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C12",
+      "claim": "GnRH secretion is tightly regulated across the ovarian cycle in female animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In female animals, GnRH secretion is tightly regulated across the ovarian cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "ce4a8310-39f7-4954-8d4c-30c5e270b1e1",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C13",
+      "claim": "Pulsatile secretion dominates most of the ovarian cycle, with frequency and amplitude modulated by the ovarian steroid feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulsatile secretion dominates most of the cycle, with frequency and amplitude modulated by the ovarian steroid feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "29916b74-da73-4fcd-9f48-793da5120b8a",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C14",
+      "claim": "Positive feedback from increasing estradiol levels triggers a preovulatory surge of GnRH/LH secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive feedback from increasing estradiol levels triggers a preovulatory surge of GnRH/LH secretion (Christian and Moenter, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Christian and Moenter, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "3486cb4a-9de5-49d4-82b1-898191d19415",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C15",
+      "claim": "ARC kisspeptin neurons are prime mediators of the ovarian steroid feedback on the pulsatile dynamics of GnRH/LH secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there is ample evidence that ARC kisspeptin neurons are prime mediators of the ovarian steroid feedback on the pulsatile dynamics of GnRH/LH secretion (McQuillan et al., 2019), although the mechanisms remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to McQuillan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "ce945660-c958-4eb0-9acc-7406136af704",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C16",
+      "claim": "Spontaneous firing activity of ARC kisspeptin neurons from castrated mice appears elevated compared to intact animals.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, spontaneous firing activity of ARC kisspeptin neurons from castrated mice appears elevated compared to intact animals (Ruka et al., 2016) and estradiol replacement attenuates ARC kisspeptin neuron activity in gonadectomised animals (Ruka et al., 2016; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ruka et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "53a13f43-b660-40af-af71-5a250acb293e",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C17",
+      "claim": "Estradiol replacement attenuates ARC kisspeptin neuron activity in gonadectomised animals.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, spontaneous firing activity of ARC kisspeptin neurons from castrated mice appears elevated compared to intact animals (Ruka et al., 2016) and estradiol replacement attenuates ARC kisspeptin neuron activity in gonadectomised animals (Ruka et al., 2016; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ruka et al., 2016 and Wang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "6f0716a6-7339-446f-92ba-537e19def2fe",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C18",
+      "claim": "The ARC kisspeptin neuronal population (KNDy network) pulses at a relatively constant frequency throughout the ovarian cycle apart from the estrous phase where the frequency is dramatically reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, fibre photometry data from female mice show that the ARC kisspeptin neuronal population (KNDy network) pulses at a relatively constant frequency throughout the ovarian cycle apart from the estrous phase where the frequency is dramatically reduced (McQuillan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to McQuillan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "4ea7bcdd-0fcc-4810-bf1a-b57afedbe9e5",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C19",
+      "claim": "The slowdown of LH frequency during estrous is thought to be a direct consequence of the increasing progesterone levels associated with ovulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This slowdown of LH frequency is thought to be a direct consequence of the increasing progesterone levels associated with ovulation (McQuillan et al., 2019), although studies using the rhesus monkey show that raising pre-ovulatory estrogen levels are also important (O'Byrne et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to McQuillan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "f5ac7895-b0d9-4a98-a488-419c4155ff11",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C20",
+      "claim": "Studies using the rhesus monkey show that raising pre-ovulatory estrogen levels are important for the slowdown of LH frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "This slowdown of LH frequency is thought to be a direct consequence of the increasing progesterone levels associated with ovulation (McQuillan et al., 2019), although studies using the rhesus monkey show that raising pre-ovulatory estrogen levels are also important (O'Byrne et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to O'Byrne et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "30b4af22-ceac-4534-9f99-c4f1420439da",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C21",
+      "claim": "Studies in sheep indicate the inhibitory effects of progesterone are mediated through increased dynorphin signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in sheep indicate the inhibitory effects of progesterone are mediated through increased dynorphin signalling (Goodman et al., 2011; Moore et al., 2018); however, this is less clear in mice where ovarian steroids have a negative effect on Dyn mRNA levels (Navarro et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Goodman et al., 2011 and Moore et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "bd5bc8ea-b683-47c7-9b2c-14039d504c64",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C22",
+      "claim": "In mice, ovarian steroids have a negative effect on Dyn mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in sheep indicate the inhibitory effects of progesterone are mediated through increased dynorphin signalling (Goodman et al., 2011; Moore et al., 2018); however, this is less clear in mice where ovarian steroids have a negative effect on Dyn mRNA levels (Navarro et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Navarro et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "7c1d6ec4-9e64-454e-af80-04a00c3a710d",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C23",
+      "claim": "N-methyl-D-aspartate (NMDA) robustly inhibits LH pulses in the ovariectomised monkey.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, N-methyl-D-aspartate (NMDA) robustly inhibits LH pulses in the ovariectomised monkey, whereas in the presence of estradiol this effect is reversed, and NMDA stimulates LH secretion (Reyes et al., 1990; Reyes et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Reyes et al., 1990 and Reyes et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "eeee0456-592f-4bc5-82bd-18587661f2b4",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C24",
+      "claim": "In the presence of estradiol, NMDA stimulates LH secretion in ovariectomised monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, N-methyl-D-aspartate (NMDA) robustly inhibits LH pulses in the ovariectomised monkey, whereas in the presence of estradiol this effect is reversed, and NMDA stimulates LH secretion (Reyes et al., 1990; Reyes et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Reyes et al., 1990 and Reyes et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "76afc68e-fc1c-44aa-b03a-d67cea324218",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C25",
+      "claim": "ARC kisspeptin neurons synapse on each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that ARC kisspeptin neurons synapse on each other (Yip et al., 2015; Qiu et al., 2016) and are glutamatergic (Cravo et al., 2011; Qiu et al., 2011; Kelly et al., 2013; Nestor et al., 2016; Qiu et al., 2016; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yip et al., 2015 and Qiu et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "47b27c00-0f7e-43b6-8c7c-02d337510bb4",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C26",
+      "claim": "ARC kisspeptin neurons are glutamatergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that ARC kisspeptin neurons synapse on each other (Yip et al., 2015; Qiu et al., 2016) and are glutamatergic (Cravo et al., 2011; Qiu et al., 2011; Kelly et al., 2013; Nestor et al., 2016; Qiu et al., 2016; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cravo et al., 2011; Qiu et al., 2011; Kelly et al., 2013; Nestor et al., 2016; Qiu et al., 2016; Wang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "28e64bdf-3931-4133-b4bc-2b57197e700c",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C27",
+      "claim": "Population excitability should be enabled primarily via glutamate signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we hypothesise that population excitability should be enabled primarily via glutamate signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on prior findings about glutamatergic nature of KNDy neurons and their synaptic connections.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "1af1a647-260e-4408-926e-43052a8fb03f",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C28",
+      "claim": "In estrous mice, sustained optogenetic stimulation of ARC kisspeptin neurons at 5 Hz immediately triggers robust LH pulses at a frequency of 2.10 \u00b1 0.24 pulses/hour.",
+      "claim_type": "EXPLICIT",
+      "source": "In estrous mice, we find that sustained optogenetic stimulation of ARC kisspeptin neurons at 5 Hz immediately triggers robust LH pulses at a frequency of 2.10 \u00b1 0.24 pulses/hour (Figure 2A and C & E), which is in agreement with our previous findings (Voliotis et al., 2019) and highlights how pulsatile dynamics can emerge as a population phenomenon without the need of a pulsatile activation signal (Strogatz, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "e952a5ac-d9ce-43d6-b187-32c06954e7c0",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C29",
+      "claim": "Pulsatile dynamics can emerge as a population phenomenon without the need of a pulsatile activation signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In estrous mice, we find that sustained optogenetic stimulation of ARC kisspeptin neurons at 5 Hz immediately triggers robust LH pulses at a frequency of 2.10 \u00b1 0.24 pulses/hour (Figure 2A and C & E), which is in agreement with our previous findings (Voliotis et al., 2019) and highlights how pulsatile dynamics can emerge as a population phenomenon without the need of a pulsatile activation signal (Strogatz, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observation and supported by citations to Voliotis et al., 2019 and Strogatz, 2018.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "d2d6ef32-68df-4e7f-aa30-b01767a9acfc",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C30",
+      "claim": "In diestrous mice, optogenetic stimulation of ARC kisspeptin neurons at 5 Hz has a subtle slowdown effect on LH pulse frequency over the 1.5 hr stimulation period.",
+      "claim_type": "EXPLICIT",
+      "source": "In diestrous mice, on the other hand, optogenetic stimulation of ARC kisspeptin neurons at 5 Hz has a subtle slowdown effect on LH pulse frequency over the 1.5 hr stimulation period (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "bbaff75d-bc9e-4ac1-b5b4-e6a09ab5e0f9",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C31",
+      "claim": "In diestrous mice with extended optic stimulation protocol, 5 Hz stimulation results in 0.64 \u00b1 0.09 LH pulses/hr.",
+      "claim_type": "EXPLICIT",
+      "source": "With the extended protocol we measure 0.64 \u00b1 0.09 and 0.40 \u00b1 0.13 LH pulses/hr under sustained optic stimulation at 5 and 15 Hz, respectively; these frequencies are significantly lower than the LH pulse frequency we observe in control animals, which receive no optic stimulation (Figure 2B, D, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "a0a36f06-aaeb-4ac6-ad0b-80a8d4c38236",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C32",
+      "claim": "In diestrous mice with extended optic stimulation protocol, 15 Hz stimulation results in 0.40 \u00b1 0.13 LH pulses/hr.",
+      "claim_type": "EXPLICIT",
+      "source": "With the extended protocol we measure 0.64 \u00b1 0.09 and 0.40 \u00b1 0.13 LH pulses/hr under sustained optic stimulation at 5 and 15 Hz, respectively; these frequencies are significantly lower than the LH pulse frequency we observe in control animals, which receive no optic stimulation (Figure 2B, D, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "1d2af9db-29bc-4585-aa25-702ceac72ba8",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C33",
+      "claim": "LH pulse frequencies under 5 Hz and 15 Hz optic stimulation in diestrous mice are significantly lower than in control animals receiving no optic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "With the extended protocol we measure 0.64 \u00b1 0.09 and 0.40 \u00b1 0.13 LH pulses/hr under sustained optic stimulation at 5 and 15 Hz, respectively; these frequencies are significantly lower than the LH pulse frequency we observe in control animals, which receive no optic stimulation (Figure 2B, D, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "ea611b77-7cb1-4025-967c-e45adeda8aee",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C34",
+      "claim": "Normal LH pulse frequencies are observed in WT animals receiving sustained optic stimulation for 2.5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that we observe normal LH pulse frequencies in WT animals receiving sustained optic stimulation for 2.5 hr (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment finding supported by data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "b04edc42-8088-4dc4-8513-a10b847459f9",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C35",
+      "claim": "Natural variation of ovarian steroids across the ovarian cycle leads to qualitative changes in the dynamical response of ARC kisspeptin neurons to optical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data illustrate how natural variation of ovarian steroids across the ovarian cycle leads to qualitative changes in the dynamical response of ARC kisspeptin neurons to optical stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing differential responses to optogenetic stimulation in estrous vs diestrous mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "5ba84f44-7f40-47c8-9ba9-fafc1ef37d23",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C36",
+      "claim": "Changes in dynamical response are most probably driven by the effect that gonadal steroids have on the intrinsic electrophysiological properties of ARC kisspeptin neurons and the neuromodulator signalling capacity within the KNDy network.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes are most probably driven by the effect that gonadal steroids have on the intrinsic electrophysiological properties of ARC kisspeptin neurons (Ruka et al., 2016) and the neuromodulator signalling capacity within the KNDy network (Vanacker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations and supported by citations to Ruka et al., 2016 and Vanacker et al., 2017.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "e43b77c9-522c-4741-8efa-53802c87bcc8",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C37",
+      "claim": "The model predicts that network excitability is an important parameter which is actively regulated throughout the ovarian cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the differential effect that optic stimulation had on LH pulse frequency in estrous versus diestrous animals, the model predicted that network excitability is an important parameter, which is actively regulated throughout the ovarian cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model based on fitting to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "1721b83e-1074-4b89-a0a0-66190d3bebeb",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C38",
+      "claim": "KNDy network excitability is most probably co-regulated with parameters controlling the strength of Dyn and NKB signalling as the system transitions between the different phases of the ovarian cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, KNDy network excitability is most probably co-regulated with parameters controlling the strength of Dyn and NKB signalling as the system transitions between the different phases of the ovarian cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mathematical model analysis showing correlations between parameter changes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "bb003eba-8bd1-4fea-b1bb-d6e5593efabc",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C39",
+      "claim": "The model predicts a strong negative correlation between changes in NKB signalling strength and changes in network excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our analysis predicts (i) a strong negative correlation between changes in NKB signalling strength and changes in network excitability, and (ii) a strong positive correlation in changes between NKB and Dyn signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model analysis shown in Figure 3C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "1b1c0356-44b7-4e1c-9839-76dc8cda654a",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C40",
+      "claim": "The model predicts a strong positive correlation in changes between NKB and Dyn signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our analysis predicts (i) a strong negative correlation between changes in NKB signalling strength and changes in network excitability, and (ii) a strong positive correlation in changes between NKB and Dyn signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model analysis shown in Figure 3C.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "ce664d88-c3c2-4704-9099-d5ea2fa64055",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C41",
+      "claim": "Treatment of ovariectomised mice with estradiol reduces expression of NKB and Dyn in KNDy neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent transcriptomic data have revealed that treatment of ovariectomised mice with estradiol reduces expression of NKB and Dyn in KNDy neurons, but increases expression of glutamate transporters (vGlut2; leading to increased glutamate neurotransmission and neuronal excitability in the population) (Qiu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Qiu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "255dffdb-f515-4977-b309-2fac3c10a70b",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C42",
+      "claim": "Treatment of ovariectomised mice with estradiol increases expression of glutamate transporters (vGlut2), leading to increased glutamate neurotransmission and neuronal excitability in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent transcriptomic data have revealed that treatment of ovariectomised mice with estradiol reduces expression of NKB and Dyn in KNDy neurons, but increases expression of glutamate transporters (vGlut2; leading to increased glutamate neurotransmission and neuronal excitability in the population) (Qiu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Qiu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "c213415e-148c-4b92-a6b3-b6e5eee55ebc",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C43",
+      "claim": "Correlated changes in the NKB and Dyn signalling strength should be reflected mainly in the expression levels of the two neuropeptides and consequently in their release availability.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in line with the regulatory relationships predicted by the model and support the hypotheses that (i) correlated changes in the NKB and Dyn signalling strength should be reflected mainly in the expression levels of the two neuropeptides and consequently in their release availability, and (ii) a key mechanism for regulating network excitability could be through the expression of glutamate transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from combining model predictions with transcriptomic data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "c7c78058-8547-4622-a142-4964914a6243",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C44",
+      "claim": "A key mechanism for regulating network excitability could be through the expression of glutamate transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in line with the regulatory relationships predicted by the model and support the hypotheses that (i) correlated changes in the NKB and Dyn signalling strength should be reflected mainly in the expression levels of the two neuropeptides and consequently in their release availability, and (ii) a key mechanism for regulating network excitability could be through the expression of glutamate transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from combining model predictions with transcriptomic data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "a3599b97-fcbb-4426-9255-3d303d2f3a3a",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C45",
+      "claim": "Postovulatory increase in progesterone is linked to deceleration of LH pulses in the luteal-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, although postovulatory increase in progesterone is linked to deceleration of LH pulses in the luteal-phase, this inhibitory effect of progesterone is conditional on prior exposure to high estradiol levels (Skinner et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Skinner et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "13ba5454-aee4-4b1a-a2a7-0d6b424251f9",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C46",
+      "claim": "The inhibitory effect of progesterone on LH pulses is conditional on prior exposure to high estradiol levels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, although postovulatory increase in progesterone is linked to deceleration of LH pulses in the luteal-phase, this inhibitory effect of progesterone is conditional on prior exposure to high estradiol levels (Skinner et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Skinner et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "9adadee0-3db1-4ba4-9aba-a9fabfa5c6df",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C47",
+      "claim": "Data from the rhesus monkey support that estradiol and progesterone could play distinct roles in the deceleration of LH pulses from mid-cycle and throughout the luteal-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, data from the rhesus monkey support that estradiol and progesterone could play distinct roles in the deceleration of LH pulses from mid-cycle and throughout the luteal-phase (O'Byrne et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to O'Byrne et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "485240ce-00fd-43d0-852f-48bab743acd4",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C48",
+      "claim": "Ovarian steroids change key parameters of the KNDy network, which control the dynamic behaviour of the system and its response to perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mathematical model supports that ovarian steroids change key parameters of the KNDy network, which control the dynamic behaviour of the system and its response to perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mathematical modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "5587d512-3a07-4433-bd60-be9ae9b59e39",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C49",
+      "claim": "The effect of gonadal steroids on the response of the pulse generator to perturbations is continuous rather than binary.",
+      "claim_type": "EXPLICIT",
+      "source": "This illustrative example also highlights that the effect of gonadal steroids on the response of the pulse generator to perturbations is continuous rather than binary, that is, the behaviour of the pulse generator is modulated by the actual continuous levels of gonadal steroids rather than their mere presence of absence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mathematical model analysis shown in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "eff3153f-b6bd-4c1f-95fe-5a18ddaf1724",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C50",
+      "claim": "Estradiol regulates KNDy neuronal excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Further evidence that estradiol regulates KNDy neuronal excitability (Qiu et al., 2018) and that cycle stage regulates spontaneous glutamatergic activity of KNDy neurons (Wang and Moenter, 2020) supports the model prediction that network excitability is a critical network property regulated by gonadal steroids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Qiu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "7827a84c-09a1-469c-b297-3e1a5bee3697",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C51",
+      "claim": "Cycle stage regulates spontaneous glutamatergic activity of KNDy neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Further evidence that estradiol regulates KNDy neuronal excitability (Qiu et al., 2018) and that cycle stage regulates spontaneous glutamatergic activity of KNDy neurons (Wang and Moenter, 2020) supports the model prediction that network excitability is a critical network property regulated by gonadal steroids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang and Moenter, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "55daf8cf-f80b-4b05-8e0b-7f95e96df477",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C52",
+      "claim": "In diestrus animals, blocking glutamate receptors (NMDA and AMPA) inhibited LH pulses that were then rescued via low frequency optogenetic stimulation of kisspeptin neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In diestrus animals blocking glutamate receptors (NMDA and AMPA) inhibited LH pulses that were then rescued via low frequency optogenetic stimulation of kisspeptin neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the neuropharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "7e49f338-f3d4-4344-9e31-cf624b41e497",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C53",
+      "claim": "In estrus animals, NMDA and AMPA receptor antagonism inhibited the induction of LH pulses via optic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in estrus animals, NMDA and AMPA receptor antagonism inhibited the induction of LH pulses via optic stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding from the neuropharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "65073f91-ad5a-44a2-bf76-ef1425a9a23e",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C54",
+      "claim": "Limited network excitability within the KNDy population blocks LH pulsatility but this can be mitigated by elevated basal neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These experimental findings highlight the complex fine-balanced mechanisms underlying pulse generation by the KNDy network. In particular, limited network excitability within the KNDy population blocks LH pulsatility but this can be mitigated by elevated basal neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings showing that optogenetic stimulation can rescue LH pulses when glutamate signaling is blocked.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "51fccbc0-13c3-4423-ad4f-85dac66bf274",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C55",
+      "claim": "Increased basal neuronal activity can induce pulse generation but this effect can be negated by decreased excitability within the neuronal population.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, increased basal neuronal activity can induce pulse generation but this effect can be negated by decreased excitability within the neuronal population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings showing that blocking glutamate receptors prevents optogenetically-induced LH pulses in estrous mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "25eef94e-7954-45bc-a571-adabe9f15bba",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C56",
+      "claim": "Pulse generation is an emergent property of the KNDy network depending both on single neuron properties such as basal activity and exogeneous activation but also on how the neurons signal and communicate with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our model predicts that pulse generation is an emergent property of the KNDy network depending both on single neuron properties such as basal activity and exogeneous activation but also on how the neurons signal and communicate with each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the mathematical model supported by experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "bb857ed5-db6e-4bf0-83dc-cded2204bb6f",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C57",
+      "claim": "Inter-neuronal communication plays a critical role in enabling the population to pulse in synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support this idea, highlighting the critical role of inter-neuronal communication in enabling the population to pulse in synchrony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing the importance of glutamatergic signaling for pulse generation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "d461a62f-6ee3-4fa0-9e1c-3f1c195618a6",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C58",
+      "claim": "Treatment of diestrous mice with the combined NMDA and AMPA receptor antagonists resulted in a significant reduction of LH pulse frequency from 2.50 \u00b1 0.29 to 0.45 \u00b1 0.15 pulses/hour.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of diestrous mice with the combined NMDA and AMPA receptor antagonists resulted in a significant reduction of LH pulse frequency from 2.50 \u00b1 0.29\u20130.45 \u00b1 0.15 pulses/hour (Figure 5B & D), confirming that the glutamatergic transmission is indeed critical for sustained pulsatility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "905ded94-330d-49af-96dc-97c289ed18c0",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C59",
+      "claim": "Combining NMDA and AMPA receptor antagonist treatment with low frequency optic stimulation (5 Hz) partially restored LH pulsatility to 1.58 \u00b1 0.17 pulses/hour in diestrous mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, combining NMDA and AMPA receptor antagonist treatment with low frequency optic stimulation (5 Hz) partially restored LH pulsatility to 1.58 \u00b1 0.17 pulses/hour (Figure 5C & D), suggesting low glutamatergic transmission within the KNDy population or from upstream neuronal populations could be offset by other exogenous inputs or elevated basal activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "94066dc7-886c-4bb7-aa98-8ff6beeaeeb9",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C60",
+      "claim": "Low glutamatergic transmission within the KNDy population or from upstream neuronal populations could be offset by other exogenous inputs or elevated basal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, combining NMDA and AMPA receptor antagonist treatment with low frequency optic stimulation (5 Hz) partially restored LH pulsatility to 1.58 \u00b1 0.17 pulses/hour (Figure 5C & D), suggesting low glutamatergic transmission within the KNDy population or from upstream neuronal populations could be offset by other exogenous inputs or elevated basal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental finding that optogenetic stimulation can partially rescue LH pulsatility when glutamate receptors are blocked.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "a39dc339-4c46-4881-bc04-fbc2d2118772",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C61",
+      "claim": "Basal activity and signalling between KNDy neurons are independent pathways of modulating the system's dynamical behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is in agreement with the model prediction that basal activity and signalling between KNDy neurons are independent pathways of modulating the system's dynamical behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental finding that optogenetic stimulation can partially rescue LH pulsatility when glutamate receptors are blocked, consistent with model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "98f168eb-e9a7-491c-8c20-7c52a904446b",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C62",
+      "claim": "Blocking signalling via glutamate receptors inhibits the capacity of optic stimulation to generate and sustain pulsatile LH secretion in estrous mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that blocking signalling via glutamate receptors inhibits the capacity of optic stimulation to generate and sustain pulsatile LH secretion (Figure 4A, B, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "afafbe77-b796-48cc-89ca-2fceeff685b7",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C63",
+      "claim": "The combined AP5 and CNQX in the absence of optic stimulation had no effect on LH secretion in estrous mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined AP5 and CNQX in the absence of optic stimulation had no effect (Figure 4C, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment finding supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "7e5c1e84-62bf-4c76-bd07-886156dc10e6",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C64",
+      "claim": "The model describes Dyn and NKB secretion as independent processes based on the observation that Dyn and NKB are packaged in separate vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The model describes Dyn and NKB secretion as independent processes based on the observation that Dyn and NKB are packaged in separate vesicles (Murakawa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption supported by a citation to Murakawa et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "a4dee778-e02f-42eb-947b-995d09588805",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C65",
+      "claim": "Dyn and NKB are packaged in separate vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The model describes Dyn and NKB secretion as independent processes based on the observation that Dyn and NKB are packaged in separate vesicles (Murakawa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Murakawa et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "a2c544e0-5ec5-4119-ace2-c459af130f9c",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C66",
+      "claim": "The model predicts an upper and a lower bifurcation point that determine the system's range of pulsatile behaviour as the system is driven externally.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, our mathematical model of the KNDy network has predicted an upper and a lower bifurcation point that determine the system's range of pulsatile behaviour as the system is driven externally (Voliotis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from a previously published mathematical model, supported by a citation to Voliotis et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "885cac2e-00e1-470b-8ee4-9cf62d75622d",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C67",
+      "claim": "During estrous, the system is positioned below the lower bifurcation point and optogenetic stimulation of ARC kisspeptin neurons at 5 Hz moves the system across the lower bifurcation point leading to the sudden emergence of pulsatile behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, during estrous the system is positioned below the lower bifurcation point and optogenetic stimulation of ARC kisspeptin neurons at 5 Hz moves the system across the lower bifurcation point leading to the sudden emergence of pulsatile behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from combining the experimental observations with the mathematical model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "d85cc870-770a-484d-b456-ace8dc4b7f29",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C68",
+      "claim": "During diestrus, the system is within the pulsatile regime and optogenetic stimulation of ARC kisspeptin neurons at frequencies greater than 5 Hz moves the system across the upper bifurcation point and its dynamics relax progressively from pulsatile to quiescent.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, during diestrus the system is within the pulsatile regime and optogenetic stimulation of ARC kisspeptin neurons at frequencies greater than 5 Hz moves the system across the upper bifurcation point and its dynamics relax progressively from pulsatile to quiescent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from combining the experimental observations with the mathematical model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "94b0c7ac-2053-4790-8334-d6f0cf3d798a",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C69",
+      "claim": "The gonadal state plays a critical role in shifting bifurcation points by modulating key parameters of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that the gonadal state plays a critical role in shifting these bifurcation points by modulating key parameters of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing differential responses to optogenetic stimulation in different cycle stages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "94b2e4eb-2698-468f-988e-7b00f5294a31",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C70",
+      "claim": "The principal component explaining the least of the variance is comprised of the parameters controlling NKB signalling, Dyn signalling and network excitability in approximately equal portions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the principal component capturing the smallest share of the variance is comprised of the parameters controlling NKB signalling, Dyn signalling and network excitability in approximately equal portions, and therefore the model predicts that co-ordinated changes in these three parameters should be critical for the observed changes in system dynamics between diestrus and estrus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the principal component analysis of the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "76392738-9f2f-4185-bebe-a14e1159758b",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C71",
+      "claim": "Co-ordinated changes in NKB signalling, Dyn signalling and network excitability should be critical for the observed changes in system dynamics between diestrus and estrus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the principal component capturing the smallest share of the variance is comprised of the parameters controlling NKB signalling, Dyn signalling and network excitability in approximately equal portions, and therefore the model predicts that co-ordinated changes in these three parameters should be critical for the observed changes in system dynamics between diestrus and estrus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the principal component analysis of the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "fecb4280-7448-4682-8eff-9d7a4a078a32",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C72",
+      "claim": "The second smallest principal component is largely determined by change in the basal activity parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the second smallest principal component is largely determined by change in the basal activity parameter, suggesting that basal activity is another independent handle for modulating the system's dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the principal component analysis of the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "3ec90410-d669-4b75-8ad7-b3ae37bbbc3c",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C73",
+      "claim": "Basal activity is an independent handle for modulating the system's dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the second smallest principal component is largely determined by change in the basal activity parameter, suggesting that basal activity is another independent handle for modulating the system's dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the principal component analysis of the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "8da0c8df-86cb-4093-bbe6-a26eb53e8912",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C74",
+      "claim": "Co-ordinated changes in KNDy signalling as well as changes in KNDy basal activity may be crucial pathways of regulation across the reproductive cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together our theoretical findings suggest that co-ordinated changes in KNDy signalling as well as changes in KNDy basal activity may be crucial pathways of regulation across the reproductive cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mathematical model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "83f14a51-3fa9-47c3-a46b-967096472588",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C75",
+      "claim": "In response to optic stimulation in diestrus, pulsatile dynamics could die out gradually (i.e. there is a transient period before activity shuts down).",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the dynamical behaviour of the model, using the identified diestrous parameter values, reveals that in response to optic stimulation in diestrus pulsatile dynamics could die out gradually (i.e. there is a transient period before activity shuts down; see Figure 3B for an illustrative example), which is confirmed by the delayed inhibition of LH pulses we observed experimentally in diestrous mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the mathematical model that is confirmed by experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "927a072f-46a6-44f9-bdc0-b641c7ded1bf",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C76",
+      "claim": "The delayed inhibition of LH pulses observed experimentally in diestrous mice confirms the model prediction of gradual die-out of pulsatile dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the dynamical behaviour of the model, using the identified diestrous parameter values, reveals that in response to optic stimulation in diestrus pulsatile dynamics could die out gradually (i.e. there is a transient period before activity shuts down; see Figure 3B for an illustrative example), which is confirmed by the delayed inhibition of LH pulses we observed experimentally in diestrous mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation that confirms a model prediction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "658c56f2-79f2-4a4e-b94a-c67215089a74",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C77",
+      "claim": "The positive correlation in the regulation of NKB and Dyn signalling enables robust transition between pulsatile and quiescent dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the positive correlation in the regulation of NKB and Dyn signalling enables robust transition between pulsatile and quiescent dynamics, in contrast to negative correlation that would make the system far more sensitive to the magnitude of the change, that is, changes that are too small or too large could fail to trigger LH pulses (see Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mathematical model analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "a431323c-dc84-4104-8693-99a382b6ce98",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "claim_id": "C78",
+      "claim": "Negative correlation in the regulation of NKB and Dyn signalling would make the system far more sensitive to the magnitude of the change.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the positive correlation in the regulation of NKB and Dyn signalling enables robust transition between pulsatile and quiescent dynamics, in contrast to negative correlation that would make the system far more sensitive to the magnitude of the change, that is, changes that are too small or too large could fail to trigger LH pulses (see Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mathematical model analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "11de6e21-6d91-4864-9e74-eade08870285",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of KNDy neurons has opposite effects on LH pulse frequency depending on estrous cycle stage: stimulation at 5 Hz triggers robust LH pulses (2.10 \u00b1 0.24 pulses/hour) in estrous mice but inhibits pulsatility in diestrous mice (0.64 \u00b1 0.09 pulses/hour at 5 Hz and 0.40 \u00b1 0.13 pulses/hour at 15 Hz). This demonstrates that ovarian steroids qualitatively change the dynamical response of the KNDy network to external perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C28, C30-C35 provide converging experimental evidence from optogenetic experiments with appropriate controls (C34) showing cycle-dependent responses. The data include quantitative measurements with error estimates and statistical comparisons, supported by Figures 2 and supplements. The conclusion about qualitative changes in dynamical response (C35) is well-supported by the differential effects observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "fea71ff5-a2b4-4ba4-acd4-57afc69e71d4",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mathematical modeling predicts that network excitability is actively regulated throughout the ovarian cycle and is co-regulated with NKB and Dyn signaling strength. The model predicts negative correlation between NKB signaling and network excitability, positive correlation between NKB and Dyn signaling, and identifies basal activity as an independent regulatory pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 and C70-C74 describe model predictions derived from Bayesian parameter inference using experimental LH frequency data. The principal component analysis provides quantitative support for the predicted parameter correlations. However, these remain model predictions requiring experimental validation, though they are mathematically sound given the model structure and data constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "025afb12-b089-4d85-b480-664bebb9c4cf",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Blocking glutamate receptors (NMDA and AMPA) in diestrous mice significantly reduces LH pulse frequency from 2.50 \u00b1 0.29 to 0.45 \u00b1 0.15 pulses/hour, and this inhibition is partially rescued by 5 Hz optogenetic stimulation (to 1.58 \u00b1 0.17 pulses/hour). This demonstrates that glutamatergic transmission is critical for endogenous pulsatility and that basal activity can compensate for reduced network excitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C52, C58-C61 present pharmacological experiments with quantitative data and appropriate controls. The partial rescue by optogenetic stimulation (C59) provides strong evidence for independent pathways of basal activity and network excitability (C61), consistent with model predictions. Statistical significance is reported and the experimental design is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "1056d7ed-8a64-4ae0-adf7-3672d6c6b742",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In estrous mice, blocking glutamate receptors (NMDA and AMPA) prevents optogenetically-induced LH pulses, while antagonist treatment alone has no effect on basal LH secretion. This demonstrates that glutamatergic transmission is necessary for optogenetically-driven pulse generation in the low-excitability estrous state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C53, C62-C63 describe pharmacological experiments in estrous mice with appropriate controls (C63). The data show that glutamate receptor blockade prevents optogenetically-induced pulses, supporting the role of network excitability. However, the authors acknowledge a caveat that ICV injection may affect additional glutamatergic inputs beyond the KNDy network.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "06a95af2-ba02-43e6-b2e1-3806ee771b2a",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The transition between estrus and diestrus involves coordinated changes in neuropeptide signaling and network excitability controlled via glutamate signaling. Network excitability is critical for pulse generation, with glutamate transporters proposed as a key regulatory mechanism. Pulse generation emerges as a network property depending on both single neuron properties and inter-neuronal communication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C11, C27, C44, C54-C57 integrate experimental findings with model predictions. The experimental data on glutamate receptor blockade (previous results) combined with mathematical modeling provide strong support. The hypothesis about glutamate transporters (C44) is supported by cited transcriptomic data (C42) showing estradiol increases vGlut2 expression, though direct experimental validation in this study is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "282e5eb1-463f-44e9-bc8d-dcd6acc9e506",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The mathematical model explains cycle-dependent responses to optogenetic stimulation through bifurcation dynamics: in estrous, the system is below the lower bifurcation point and stimulation triggers pulsatility; in diestrous, the system is within the pulsatile regime and high-frequency stimulation moves it across the upper bifurcation point, causing gradual pulse inhibition. Gonadal steroids shift these bifurcation points by modulating key system parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69, C75-C76 provide a mechanistic interpretation of experimental observations using bifurcation theory. The model prediction of gradual die-out in diestrus (C75) is confirmed by experimental observations (C76, C30). This represents a coherent theoretical framework consistent with the data, though the bifurcation structure itself is inferred from the model rather than directly measured.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "74d750ca-ecee-4de3-8737-8c98f6f846a0",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Published transcriptomic data show that estradiol treatment in ovariectomized mice reduces NKB and Dyn expression while increasing glutamate transporter (vGlut2) expression. This supports the model prediction that correlated changes in NKB/Dyn signaling and network excitability regulation occur through neuropeptide expression levels and glutamate transporter expression, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 cite published transcriptomic data (Qiu et al., 2018) that align with model predictions. While the transcriptomic data are from prior work rather than this study, the consistency between independent data and model predictions strengthens both. However, the mechanistic link (C43) remains a hypothesis requiring direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "2722b35b-f100-48fb-a62a-c5f59c67675c",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mathematical model predicts that ovarian steroids modulate key parameters controlling system dynamics and response to perturbations in a continuous rather than binary manner. Positive correlation in NKB/Dyn regulation enables robust transitions between pulsatile and quiescent states, while negative correlation would increase sensitivity to parameter change magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49, C77-C78 describe model predictions about regulatory robustness. The bifurcation analysis (Figure 6 and supplement) provides theoretical support for these claims. The continuous nature of steroid effects (C49) is a reasonable inference from the model structure, though experimental validation across a range of steroid levels would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "a57e0b79-11e8-4689-b42f-7da686fc0182",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background knowledge establishing that pulsatile GnRH release is essential for reproduction, that KNDy neurons drive pulsatile GnRH release, and that gonadal steroids regulate GnRH dynamics by altering KNDy neuron signaling properties. ARC kisspeptin neurons are prime mediators of ovarian steroid feedback on GnRH/LH pulsatility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C12-C15 represent established background knowledge supported by appropriate citations. These provide the scientific context for the current work but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior literature establishes that gonadal steroids affect KNDy neuron electrophysiology, that the KNDy network pulses at reduced frequency during estrous, that progesterone and estrogen contribute to LH frequency changes, and that ARC kisspeptin neurons are glutamatergic and synapse on each other. The effects of NMDA and mechanisms of progesterone action show species differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C26 cite relevant prior literature establishing key background facts. The citations appear appropriate and the claims accurately represent the cited work. These establish the foundation for the current study's hypotheses but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "f373bb69-baac-4654-ba78-0dc47ade94c4",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Pulsatile dynamics can emerge as a population phenomenon without pulsatile input signals. Changes in dynamical response are driven by gonadal steroid effects on KNDy neuron electrophysiology and neuromodulator signaling. Prior work shows estradiol regulates KNDy excitability, cycle stage regulates glutamatergic activity, and progesterone effects depend on prior estradiol exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C36, C45-C47, C50-C51 combine experimental observations with cited literature. The emergence of pulsatility from sustained stimulation (C29) is directly demonstrated and supported by prior work. The mechanistic interpretations (C36) are reasonable inferences supported by appropriate citations, though direct causal demonstration would require additional experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    },
+    {
+      "id": "817d6490-1a4b-4559-9f0b-91c6ae73608a",
+      "content_id": "c58790a3-d928-46af-8e79-e1243fb113ca",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The mathematical model treats Dyn and NKB secretion as independent processes based on their packaging in separate vesicles. A previously published version of this model predicted upper and lower bifurcation points determining the range of pulsatile behavior under external drive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 describe modeling assumptions and prior model predictions. The assumption about independent Dyn/NKB secretion (C64-C65) is supported by cited evidence (Murakawa et al., 2016). The bifurcation prediction (C66) references prior published work (Voliotis et al., 2019), making this established rather than novel.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:12.322616Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "41096c8a-70a1-4415-b5a1-79269e260844",
+      "result_id": "11de6e21-6d91-4864-9e74-eade08870285"
+    },
+    {
+      "claim_id": "8b2b89ba-5167-4c28-9d56-6409b793fc04",
+      "result_id": "11de6e21-6d91-4864-9e74-eade08870285"
+    },
+    {
+      "claim_id": "1af1a647-260e-4408-926e-43052a8fb03f",
+      "result_id": "11de6e21-6d91-4864-9e74-eade08870285"
+    },
+    {
+      "claim_id": "d2d6ef32-68df-4e7f-aa30-b01767a9acfc",
+      "result_id": "11de6e21-6d91-4864-9e74-eade08870285"
+    },
+    {
+      "claim_id": "bbaff75d-bc9e-4ac1-b5b4-e6a09ab5e0f9",
+      "result_id": "11de6e21-6d91-4864-9e74-eade08870285"
+    },
+    {
+      "claim_id": "a0a36f06-aaeb-4ac6-ad0b-80a8d4c38236",
+      "result_id": "11de6e21-6d91-4864-9e74-eade08870285"
+    },
+    {
+      "claim_id": "1d2af9db-29bc-4585-aa25-702ceac72ba8",
+      "result_id": "11de6e21-6d91-4864-9e74-eade08870285"
+    },
+    {
+      "claim_id": "ea611b77-7cb1-4025-967c-e45adeda8aee",
+      "result_id": "11de6e21-6d91-4864-9e74-eade08870285"
+    },
+    {
+      "claim_id": "b04edc42-8088-4dc4-8513-a10b847459f9",
+      "result_id": "11de6e21-6d91-4864-9e74-eade08870285"
+    },
+    {
+      "claim_id": "e43b77c9-522c-4741-8efa-53802c87bcc8",
+      "result_id": "fea71ff5-a2b4-4ba4-acd4-57afc69e71d4"
+    },
+    {
+      "claim_id": "1721b83e-1074-4b89-a0a0-66190d3bebeb",
+      "result_id": "fea71ff5-a2b4-4ba4-acd4-57afc69e71d4"
+    },
+    {
+      "claim_id": "bb003eba-8bd1-4fea-b1bb-d6e5593efabc",
+      "result_id": "fea71ff5-a2b4-4ba4-acd4-57afc69e71d4"
+    },
+    {
+      "claim_id": "1b1c0356-44b7-4e1c-9839-76dc8cda654a",
+      "result_id": "fea71ff5-a2b4-4ba4-acd4-57afc69e71d4"
+    },
+    {
+      "claim_id": "94b2e4eb-2698-468f-988e-7b00f5294a31",
+      "result_id": "fea71ff5-a2b4-4ba4-acd4-57afc69e71d4"
+    },
+    {
+      "claim_id": "76392738-9f2f-4185-bebe-a14e1159758b",
+      "result_id": "fea71ff5-a2b4-4ba4-acd4-57afc69e71d4"
+    },
+    {
+      "claim_id": "fecb4280-7448-4682-8eff-9d7a4a078a32",
+      "result_id": "fea71ff5-a2b4-4ba4-acd4-57afc69e71d4"
+    },
+    {
+      "claim_id": "3ec90410-d669-4b75-8ad7-b3ae37bbbc3c",
+      "result_id": "fea71ff5-a2b4-4ba4-acd4-57afc69e71d4"
+    },
+    {
+      "claim_id": "8da0c8df-86cb-4093-bbe6-a26eb53e8912",
+      "result_id": "fea71ff5-a2b4-4ba4-acd4-57afc69e71d4"
+    },
+    {
+      "claim_id": "8fba0019-e78e-45c7-b791-f101f1c196a0",
+      "result_id": "025afb12-b089-4d85-b480-664bebb9c4cf"
+    },
+    {
+      "claim_id": "55daf8cf-f80b-4b05-8e0b-7f95e96df477",
+      "result_id": "025afb12-b089-4d85-b480-664bebb9c4cf"
+    },
+    {
+      "claim_id": "d461a62f-6ee3-4fa0-9e1c-3f1c195618a6",
+      "result_id": "025afb12-b089-4d85-b480-664bebb9c4cf"
+    },
+    {
+      "claim_id": "905ded94-330d-49af-96dc-97c289ed18c0",
+      "result_id": "025afb12-b089-4d85-b480-664bebb9c4cf"
+    },
+    {
+      "claim_id": "94066dc7-886c-4bb7-aa98-8ff6beeaeeb9",
+      "result_id": "025afb12-b089-4d85-b480-664bebb9c4cf"
+    },
+    {
+      "claim_id": "a39dc339-4c46-4881-bc04-fbc2d2118772",
+      "result_id": "025afb12-b089-4d85-b480-664bebb9c4cf"
+    },
+    {
+      "claim_id": "4a08a9bd-762b-4fe6-b38b-a3ddb68735ba",
+      "result_id": "1056d7ed-8a64-4ae0-adf7-3672d6c6b742"
+    },
+    {
+      "claim_id": "7e49f338-f3d4-4344-9e31-cf624b41e497",
+      "result_id": "1056d7ed-8a64-4ae0-adf7-3672d6c6b742"
+    },
+    {
+      "claim_id": "98f168eb-e9a7-491c-8c20-7c52a904446b",
+      "result_id": "1056d7ed-8a64-4ae0-adf7-3672d6c6b742"
+    },
+    {
+      "claim_id": "afafbe77-b796-48cc-89ca-2fceeff685b7",
+      "result_id": "1056d7ed-8a64-4ae0-adf7-3672d6c6b742"
+    },
+    {
+      "claim_id": "aa7294e9-66df-4e15-b9a6-4d477b0344ad",
+      "result_id": "06a95af2-ba02-43e6-b2e1-3806ee771b2a"
+    },
+    {
+      "claim_id": "1647aa68-2250-447c-a33b-18167fb12984",
+      "result_id": "06a95af2-ba02-43e6-b2e1-3806ee771b2a"
+    },
+    {
+      "claim_id": "28e64bdf-3931-4133-b4bc-2b57197e700c",
+      "result_id": "06a95af2-ba02-43e6-b2e1-3806ee771b2a"
+    },
+    {
+      "claim_id": "c7c78058-8547-4622-a142-4964914a6243",
+      "result_id": "06a95af2-ba02-43e6-b2e1-3806ee771b2a"
+    },
+    {
+      "claim_id": "65073f91-ad5a-44a2-bf76-ef1425a9a23e",
+      "result_id": "06a95af2-ba02-43e6-b2e1-3806ee771b2a"
+    },
+    {
+      "claim_id": "51fccbc0-13c3-4423-ad4f-85dac66bf274",
+      "result_id": "06a95af2-ba02-43e6-b2e1-3806ee771b2a"
+    },
+    {
+      "claim_id": "25eef94e-7954-45bc-a571-adabe9f15bba",
+      "result_id": "06a95af2-ba02-43e6-b2e1-3806ee771b2a"
+    },
+    {
+      "claim_id": "bb857ed5-db6e-4bf0-83dc-cded2204bb6f",
+      "result_id": "06a95af2-ba02-43e6-b2e1-3806ee771b2a"
+    },
+    {
+      "claim_id": "885cac2e-00e1-470b-8ee4-9cf62d75622d",
+      "result_id": "282e5eb1-463f-44e9-bc8d-dcd6acc9e506"
+    },
+    {
+      "claim_id": "d85cc870-770a-484d-b456-ace8dc4b7f29",
+      "result_id": "282e5eb1-463f-44e9-bc8d-dcd6acc9e506"
+    },
+    {
+      "claim_id": "94b0c7ac-2053-4790-8334-d6f0cf3d798a",
+      "result_id": "282e5eb1-463f-44e9-bc8d-dcd6acc9e506"
+    },
+    {
+      "claim_id": "83f14a51-3fa9-47c3-a46b-967096472588",
+      "result_id": "282e5eb1-463f-44e9-bc8d-dcd6acc9e506"
+    },
+    {
+      "claim_id": "927a072f-46a6-44f9-bdc0-b641c7ded1bf",
+      "result_id": "282e5eb1-463f-44e9-bc8d-dcd6acc9e506"
+    },
+    {
+      "claim_id": "ce664d88-c3c2-4704-9099-d5ea2fa64055",
+      "result_id": "74d750ca-ecee-4de3-8737-8c98f6f846a0"
+    },
+    {
+      "claim_id": "255dffdb-f515-4977-b309-2fac3c10a70b",
+      "result_id": "74d750ca-ecee-4de3-8737-8c98f6f846a0"
+    },
+    {
+      "claim_id": "c213415e-148c-4b92-a6b3-b6e5eee55ebc",
+      "result_id": "74d750ca-ecee-4de3-8737-8c98f6f846a0"
+    },
+    {
+      "claim_id": "485240ce-00fd-43d0-852f-48bab743acd4",
+      "result_id": "2722b35b-f100-48fb-a62a-c5f59c67675c"
+    },
+    {
+      "claim_id": "5587d512-3a07-4433-bd60-be9ae9b59e39",
+      "result_id": "2722b35b-f100-48fb-a62a-c5f59c67675c"
+    },
+    {
+      "claim_id": "658c56f2-79f2-4a4e-b94a-c67215089a74",
+      "result_id": "2722b35b-f100-48fb-a62a-c5f59c67675c"
+    },
+    {
+      "claim_id": "a431323c-dc84-4104-8693-99a382b6ce98",
+      "result_id": "2722b35b-f100-48fb-a62a-c5f59c67675c"
+    },
+    {
+      "claim_id": "49d419d9-e046-487b-b489-a7bb3a23192d",
+      "result_id": "a57e0b79-11e8-4689-b42f-7da686fc0182"
+    },
+    {
+      "claim_id": "59d858ae-3ee2-4e96-8b40-d8c18c23bc64",
+      "result_id": "a57e0b79-11e8-4689-b42f-7da686fc0182"
+    },
+    {
+      "claim_id": "7c7504d3-2be9-452a-9ad3-87adb306249b",
+      "result_id": "a57e0b79-11e8-4689-b42f-7da686fc0182"
+    },
+    {
+      "claim_id": "8f60425c-0903-41eb-97c3-fa7cc3a0657f",
+      "result_id": "a57e0b79-11e8-4689-b42f-7da686fc0182"
+    },
+    {
+      "claim_id": "358c5fe4-56a5-4c15-b347-9ffe48590b2e",
+      "result_id": "a57e0b79-11e8-4689-b42f-7da686fc0182"
+    },
+    {
+      "claim_id": "ce4a8310-39f7-4954-8d4c-30c5e270b1e1",
+      "result_id": "a57e0b79-11e8-4689-b42f-7da686fc0182"
+    },
+    {
+      "claim_id": "29916b74-da73-4fcd-9f48-793da5120b8a",
+      "result_id": "a57e0b79-11e8-4689-b42f-7da686fc0182"
+    },
+    {
+      "claim_id": "3486cb4a-9de5-49d4-82b1-898191d19415",
+      "result_id": "a57e0b79-11e8-4689-b42f-7da686fc0182"
+    },
+    {
+      "claim_id": "ce945660-c958-4eb0-9acc-7406136af704",
+      "result_id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790"
+    },
+    {
+      "claim_id": "53a13f43-b660-40af-af71-5a250acb293e",
+      "result_id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790"
+    },
+    {
+      "claim_id": "6f0716a6-7339-446f-92ba-537e19def2fe",
+      "result_id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790"
+    },
+    {
+      "claim_id": "4ea7bcdd-0fcc-4810-bf1a-b57afedbe9e5",
+      "result_id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790"
+    },
+    {
+      "claim_id": "f5ac7895-b0d9-4a98-a488-419c4155ff11",
+      "result_id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790"
+    },
+    {
+      "claim_id": "30b4af22-ceac-4534-9f99-c4f1420439da",
+      "result_id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790"
+    },
+    {
+      "claim_id": "bd5bc8ea-b683-47c7-9b2c-14039d504c64",
+      "result_id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790"
+    },
+    {
+      "claim_id": "7c1d6ec4-9e64-454e-af80-04a00c3a710d",
+      "result_id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790"
+    },
+    {
+      "claim_id": "eeee0456-592f-4bc5-82bd-18587661f2b4",
+      "result_id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790"
+    },
+    {
+      "claim_id": "76afc68e-fc1c-44aa-b03a-d67cea324218",
+      "result_id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790"
+    },
+    {
+      "claim_id": "47b27c00-0f7e-43b6-8c7c-02d337510bb4",
+      "result_id": "19a9aa6f-88fc-4349-8bc4-9b13c418a790"
+    },
+    {
+      "claim_id": "e952a5ac-d9ce-43d6-b187-32c06954e7c0",
+      "result_id": "f373bb69-baac-4654-ba78-0dc47ade94c4"
+    },
+    {
+      "claim_id": "5ba84f44-7f40-47c8-9ba9-fafc1ef37d23",
+      "result_id": "f373bb69-baac-4654-ba78-0dc47ade94c4"
+    },
+    {
+      "claim_id": "a3599b97-fcbb-4426-9255-3d303d2f3a3a",
+      "result_id": "f373bb69-baac-4654-ba78-0dc47ade94c4"
+    },
+    {
+      "claim_id": "13ba5454-aee4-4b1a-a2a7-0d6b424251f9",
+      "result_id": "f373bb69-baac-4654-ba78-0dc47ade94c4"
+    },
+    {
+      "claim_id": "9adadee0-3db1-4ba4-9aba-a9fabfa5c6df",
+      "result_id": "f373bb69-baac-4654-ba78-0dc47ade94c4"
+    },
+    {
+      "claim_id": "eff3153f-b6bd-4c1f-95fe-5a18ddaf1724",
+      "result_id": "f373bb69-baac-4654-ba78-0dc47ade94c4"
+    },
+    {
+      "claim_id": "7827a84c-09a1-469c-b297-3e1a5bee3697",
+      "result_id": "f373bb69-baac-4654-ba78-0dc47ade94c4"
+    },
+    {
+      "claim_id": "7e5c1e84-62bf-4c76-bd07-886156dc10e6",
+      "result_id": "817d6490-1a4b-4559-9f0b-91c6ae73608a"
+    },
+    {
+      "claim_id": "a4dee778-e02f-42eb-947b-995d09588805",
+      "result_id": "817d6490-1a4b-4559-9f0b-91c6ae73608a"
+    },
+    {
+      "claim_id": "a2c544e0-5ec5-4119-ace2-c459af130f9c",
+      "result_id": "817d6490-1a4b-4559-9f0b-91c6ae73608a"
+    }
+  ],
+  "comparisons": []
+}

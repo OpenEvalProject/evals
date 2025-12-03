@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Binary encoding of gene expression data (TPM \u22652.0 = expressed) reduced noise and grouped species by phylogenetic relatedness, whereas raw TPM values produced random groupings in multidimensional scaling analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 describe the dataset and methodological approach for reducing technical noise. The binary encoding successfully grouped species phylogenetically (C23, Figure 1\u2014figure supplement 1B) while raw TPM values did not (C22, Figure 1\u2014figure supplement 1A), demonstrating effective noise reduction. The TPM \u22652.0 threshold is justified in Box 1 (referenced in C21).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Phylogenetic analysis of endometrial gene expression revealed short internal branches and long terminal branches, indicating species-specific divergence, with catarrhine primates forming a distinct cluster from other eutherians.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are directly supported by Figure 1A-B showing the phylogenetic tree structure and MDS clustering. The observation of short internal vs. long terminal branches (C24) and the distinct catarrhine primate cluster (C25) are clearly visible in the figures and represent valid interpretations of the phylogenetic patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "923 genes gained endometrial expression in the human lineage (BPP \u22650.80) and are enriched in immune system pathways, signaling processes (including serotonin and cAMP signaling), and disease ontologies related to pregnancy complications and autoimmune diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 describe a major finding supported by ancestral reconstruction analysis (C26) and overrepresentation analysis (C27-C30, Figure 2). The enrichment patterns are statistically significant (FDR \u22640.10) and the connection to autoimmune disease and preterm birth (C31) is supported by citation. The data and statistical approaches appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "771 genes lost endometrial expression in the human lineage (BPP \u22650.80) and are enriched in pathways related to pregnancy complications, including preterm birth and selenoamino acid metabolism previously implicated in preterm birth by GWAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 describe gene expression losses with statistical support (C32-C33) and enrichment analysis (C34-C35, Figure 2). The connection to GWAS findings on selenoamino acid metabolism and preterm birth (C36) is appropriately cited. The analysis parallels that for gained genes and appears methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Genes that gained or lost expression in the primate stem lineage showed no enrichment for immune system or pregnancy-related terms, contrasting with human lineage changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 provides important evolutionary context by showing that immune/pregnancy enrichment is specific to the human lineage rather than a general primate feature. This is based on the same enrichment analysis methods applied to a different phylogenetic node, strengthening the specificity of the human lineage findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Human recruited genes are predominantly enriched in endometrial stromal lineage cells, including perivascular cells and five distinct decidual stromal cell populations that branch into two lineages during differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by single-cell RNA-Seq analysis (Figure 3B) and pseudotime trajectory analysis (Figure 4A-B). The enrichment analysis uses appropriate statistical methods (Fisher's exact test, FDR correction) and the identification of distinct cell populations and lineages is based on established single-cell analysis approaches (Seurat, Monocle2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "HTR2B independently evolved endometrial expression at least seven times including in humans, is expressed almost exclusively in decidual stromal cells (particularly lineage 1 DSCs), is the only serotonin receptor expressed in human ESFs/DSCs at TPM \u22652, and shows dynamic expression during decidualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 characterize HTR2B expression patterns using multiple complementary datasets: ancestral reconstruction (C41, Figure 5A), single-cell RNA-Seq (C42-C43, C47-C48, Figure 5B-D), bulk RNA-Seq (C44-C45), and multispecies comparison (C46, Figure 5C). The convergent evolution finding (C41) is particularly notable and well-supported by phylogenetic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "194 genes are differentially expressed between HTR2B+ and HTR2B\u2212 decidual stromal cells, enriched in pathways related to IGF transport, complement cascades, decidualization, and disease ontologies including preterm birth and pregnancy complications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by differential expression analysis (Figure 5E) and enrichment analysis (Figure 5F). The bimodal test for differential expression between HTR2B+ and HTR2B\u2212 cells is appropriate for single-cell data, and the enrichment patterns provide functional context for HTR2B's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "HTR2B is highly expressed in ESFs, downregulated during decidualization by cAMP/progesterone, has active chromatin marks and transcription factor binding sites in DSCs, and is upregulated by knockdown of PGR, FOXO1, and GATA2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 integrate multiple genomic datasets: RNA-Seq (C51, Figure 6A), ChIP-Seq and FAIRE-Seq (C52-C53, Figure 6B), HiChIP (C54), and siRNA knockdown experiments (C55, Figure 6C). The regulatory logic is consistent: transcription factors that promote decidualization repress HTR2B. The use of published datasets is appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "HTR2B is differentially regulated throughout the menstrual cycle and pregnancy, reaching lowest expression at term, and is expressed in DSCs during the window of implantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by gene expression data across menstrual cycle phases (Figure 6D) and gestation (Figure 6E), plus immunofluorescent staining (Figure 6\u2014figure supplement 2). The temporal dynamics are consistent with a role in pregnancy establishment and maintenance, with downregulation at term potentially relevant to parturition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Serotonin treatment activates the SRE reporter in DSCs at 1000 \u03bcM and the CRE reporter in ESFs at 1000 \u03bcM and in DSCs at 50, 200, and 1000 \u03bcM, demonstrating functional serotonin signaling in endometrial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by luciferase reporter assays with appropriate statistical analysis (permutation t-tests, confidence intervals, Figure 6F and Figure 6\u2014figure supplement 3). The dose-response patterns and pathway-specific activation provide functional evidence for serotonin signaling. However, the physiological relevance of the high serotonin concentrations used (50-1000 \u03bcM) is not discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "PDCD1LG2 is expressed by multiple cell types at the maternal-fetal interface (DCs, macrophages, ESFs, DSCs, trophoblasts) but only in 3-5% of DSCs and 66% of cytotrophoblasts, is highly expressed in human but not other species' ESFs, and is highly expressed in uterine tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by single-cell RNA-Seq (Figure 7B-C), multispecies RNA-Seq (Figure 7D), and GTEx data (Figure 7\u2014figure supplement 1). The sparse expression pattern in DSCs (C63) is notable and suggests a specialized subpopulation. The human-specific high expression (C64) is consistent with recent evolutionary recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The PDCD1LG2 locus has active chromatin marks and transcription factor binding sites, makes long-range chromatin interactions, is downregulated by cAMP/progesterone treatment, and is differentially regulated by PGR (upregulation upon knockdown) and FOXO1 (downregulation upon knockdown).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 integrate ChIP-Seq (C65, Figure 7E), HiChIP (C66), RNA-Seq (C67, Figure 7F-G), and siRNA knockdown data (C68-C69, Figure 7G). The regulatory patterns are consistent with transcriptional control during decidualization, though the opposite effects of PGR and FOXO1 knockdown suggest complex regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "PDCD1LG2 introns contain SNPs previously associated with gestational duration and number of lifetime pregnancies by GWAS, albeit with marginal p-values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is based on GWAS data (Figure 7E) but the authors acknowledge the p-values are marginal. Without knowing the specific p-values or effect sizes, it's difficult to assess the strength of this genetic association. The claim is appropriately hedged ('implicating') but the evidence is weak.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "CORIN is exclusively expressed by endometrial stromal lineage cells, dramatically upregulated in DSCs by cAMP/progesterone treatment, and highly expressed in uterine tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by single-cell RNA-Seq (Figure 8B-C), bulk RNA-Seq (Figure 8D), and GTEx data (Figure 8\u2014figure supplement 1). The exclusive expression in stromal lineage cells and dramatic upregulation during decidualization are clearly demonstrated and consistent with a specialized role in pregnancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The CORIN locus has active chromatin marks, makes long-range chromatin interactions to transcription factor binding sites, and is downregulated by knockdown of PGR, NR2F2, and GATA2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by ATAC-Seq, DNase-Seq, ChIP-Seq (C75, Figure 8E), HiChIP (C76), and siRNA knockdown experiments (C77, Figure 8F). The regulatory pattern shows that decidualization-promoting transcription factors activate CORIN, consistent with its upregulation during decidualization (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The endometrial stromal cell lineage has been repeatedly targeted by evolutionary changes related to pregnancy, including in the Eutherian stem lineage and human lineage, and may play a dominant role in adverse pregnancy outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 synthesize the enrichment findings (C38) with evolutionary context from citations (C79-C80). The inference that stromal cells are important for pregnancy evolution (C78, C80) is well-supported. However, the claim about adverse pregnancy outcomes (C81) is more speculative, based on enrichment patterns rather than direct evidence of causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Serotonin affects RAS/MAPK and cAMP/PKA signaling pathways essential for decidualization; the placenta produces serotonin throughout gestation with highest levels near term; monoamine oxidase inhibitors can induce abortion; SSRIs are associated with preterm birth; and 5-HIAA inhibits RAS/MAPK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by the reporter assays (C58-C60). Claims C83-C88 are all supported by citations to previous research and provide important context for interpreting HTR2B's potential role in pregnancy. However, these are primarily literature-based claims rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "PD-1 is an immune checkpoint receptor with two ligands (PD-L1 and PD-L2); PD-L2 has fourfold higher affinity for PD-1, is restricted to professional APCs, and this higher affinity emerged in the Eutherian stem lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are all supported by citations to previous research and represent established knowledge about the PD-1/PD-L2 system. These provide essential background for interpreting PDCD1LG2's role but are not new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "A subpopulation of human DSCs have co-opted immune regulatory functions of professional APCs, potentially augmented in the human lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C94 is an inference based on PDCD1LG2 expression in DSCs (C61-C63) and its known immune function (C89-C92). While the expression data are solid, the functional claim about 'co-opting' APC functions is speculative without direct evidence of immune regulatory activity by PDCD1LG2+ DSCs. The sparse expression (3-5% of DSCs, C63) also raises questions about the magnitude of this effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "CORIN-mediated ANP production promotes spiral artery remodeling and trophoblast invasion; co-option of CORIN into endometrial expression may have contributed to deep trophoblast invasion in humans/great apes; CORIN expression is lower in preeclampsia, suggesting its co-option may predispose humans to preeclampsia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is supported by citations. Claims C96 and C98 are speculative inferences ('may have contributed,' 'may predispose') based on CORIN's function and expression patterns. While C97 (lower expression in preeclampsia) is cited, the causal logic in C98 is unclear: if CORIN promotes healthy placentation, its recruitment should be protective, not predisposing to disease. The evolutionary-disease connection requires more mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Evolutionary changes in female reproductive anatomy and physiology underlie pregnancy evolution and diversification in mammals, with specific derived traits in eutherians, catarrhine primates, and humans, and likely contribute to adverse pregnancy outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C19 provide evolutionary and biological context, all supported by citations to previous research. These establish the conceptual framework for the study but are not new findings. They represent established knowledge in evolutionary biology and reproductive physiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Gene expression changes in the human endometrium during pregnancy are associated with human-specific traits and pathologies, with hundreds of genes gaining or losing endometrial expression in the human lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 represent the central thesis and primary finding of the study. C4 is directly supported by ancestral reconstruction (923 gained, 771 lost, C26, C32). C3 is supported by the enrichment analyses showing associations with pregnancy pathologies (C27-C30, C33-C35). This is the main contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "HTR2B, PDCD1LG2, and CORIN may contribute to human-specific maternal-fetal communication, immunotolerance, and vascular remodeling/placental invasion, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 summarize the functional implications for the three highlighted genes. These are appropriately hedged ('may contribute') and supported by the detailed characterization of each gene's expression patterns, regulation, and functional context. However, direct functional validation in pregnancy contexts is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "CORIN is a serine protease that promotes uterine spiral artery remodeling and trophoblast invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by citations to previous research establishing CORIN's function. This is established knowledge providing context for the evolutionary findings, not a new result from this study.",
+    "result_type": "MINOR"
+  }
+]

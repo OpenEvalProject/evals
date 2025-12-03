@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors developed an ABC-SMC approach to estimate posterior distributions of fitness costs (hs) for LOF mutations in 18,282 genes using exome data from 55,855 individuals, incorporating Wright-Fisher simulations with a modified demographic model and gene-specific mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 describe a coherent methodological framework with explicit data sources, simulation approaches, and modeling assumptions. The methods are validated against neutral polymorphism data and DNM rates (Appendix figures), and the ABC-SMC approach is verified through simulations (Appendix 1-figure 4). The extension to X-linked genes appropriately accounts for sex-specific mutation and selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Fitness costs for autosomal gene LOF are typically above 1% (median MAP estimate 0.018, mean 0.058), with substantial uncertainty in individual gene estimates. Accounting for posterior uncertainty, 48% of genes are estimated to be highly constrained (hs > 1%), compared to 26% under the prior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C41-C43, C46-C49 present consistent estimates of fitness costs with appropriate quantification of uncertainty. The authors correctly note that point estimates suggest higher constraint than probability-weighted estimates, and compare results to prior expectations. The substantial credible intervals (C46) are appropriately acknowledged as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "X-linked genes show higher fitness costs than autosomal genes: 73% of non-PAR X genes are under strong selection (vs. 48% autosomal), with X genes with Y homologs showing even higher constraint (93%) than other X-linked genes, and both showing higher constraint than PAR genes (14%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C50-C55 present a coherent pattern of constraint across chromosomal compartments with statistical support (p-values provided). The extension of the model to account for sex-specific mutation rates and hemizygosity in males (C35) provides appropriate theoretical justification. The unexpected finding for X genes with Y homologs (C53-C54) is appropriately flagged and discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The higher constraint on X-linked genes with Y homologs may reflect selection for sex-specific function rather than dosage compensation being the primary driver of X-linked constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 presents a speculative interpretation of the unexpected finding in C53-C54. While the observation is supported by data, the mechanistic interpretation relies on cited speculation from prior work rather than direct evidence in this study. Alternative explanations are not systematically evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "More than 56% of all possible autosomal LOF mutations have estimated hs > 1%, and 20% have hs \u2265 10%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 derive the distribution of fitness effects (DFE) by weighting gene-level posteriors by mutational opportunities, which is methodologically sound given the assumption that all LOF mutations within a gene have the same effect (C39). The results are shown in Figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The DFE of de novo LOF mutations in unascertained cohorts (hospital newborns, unaffected siblings, spermatogonial stem cells) matches the DFE of all possible mutations, suggesting that embryonic lethal LOF mutations contribute relatively little to the overall DFE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 present a logical test of the model: if DNMs in unascertained samples match the predicted DFE, this validates the approach and suggests minimal contribution from embryonic lethals. The data support this (Figures 2B-D), though sample sizes are limited as acknowledged. The inference about embryonic lethality (C63) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Approximately 1 in 14 people are born with a de novo LOF mutation, and roughly 1 in 71 carry a highly deleterious de novo LOF (hs > 10%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 combine empirical mutation rate data (C64, from Goldmann et al. 2016) with the estimated DFE (C57-C58) to calculate population-level burdens. The calculations are straightforward and appropriately referenced, though they exclude embryonic lethal mutations as noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In the UK Biobank, 6.5% of LOF variants have hs > 10%, implying at least 1 in 15 people carry a highly deleterious inherited LOF. That unaffected individuals carry such variants suggests either variable penetrance or subclinical fitness reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 analyze segregating variants in a relatively healthy population cohort. The observation that highly deleterious variants are present in unaffected individuals (C69) is well-supported by data (Appendix 1-figure 9A). The interpretation (C70) appropriately presents two plausible explanations without claiming to distinguish between them.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The DFE of segregating variants is shifted toward lower hs values compared to de novo mutations, with mean hs increasing at lower allele frequencies. Simulations show highly deleterious mutations (hs = 10%) persist for a median of only 3 generations, while hs = 1% mutations persist ~60 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 present a coherent picture of how selection shapes the frequency spectrum, consistent with population genetic theory (C74). The empirical observations (C71-C73, Figure 3A-B) match theoretical expectations, and the simulation results (C75-C76, Figure 3C) provide quantitative estimates of allele ages under different selection strengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Probands with severe diseases show clear enrichment for highly deleterious mutations (hs > 10%) compared to population expectations. For example, 50% of LOF mutations in developmental disorders have hs > 10% vs. 20% expected. Significant enrichment is observed for five of six diseases examined (all except Tourette's/OCD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C77-C81 demonstrate the key application of the fitness estimates to disease genetics. The enrichment is statistically significant (p-values provided) and consistent across multiple severe early-onset diseases (Figure 4A-F). The lack of enrichment for Tourette's/OCD (C79) is appropriately noted and may reflect disease architecture or ascertainment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Highly deleterious mutations identified in disease cohorts are also found in self-reported healthy UK Biobank individuals, suggesting incomplete penetrance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by data in Appendix 1-figure 9B and is consistent with the earlier observation in C69-C70. This finding is important for understanding the relationship between evolutionary fitness and clinical penetrance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The degree of enrichment for highly deleterious mutations varies by disease and correlates with age of onset. For developmental disorders, a DNM with hs > 10% has ~60% probability of being causal. Earlier-onset diseases show higher enrichment and higher probability of causality for highly deleterious mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C83-C87 extend the disease analysis to show systematic variation across conditions. The correlation with age of onset (C6, C85, C87) is supported by Figure 4 and Appendix 1-table 1. The calculation of causality probability (C86) is methodologically sound, deriving from the enrichment ratio. The interpretation regarding genetic architecture (C84) is reasonable though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Genes with recurrent LOF mutations in disease cohorts, or shared between different disease cohorts, show higher enrichment for highly deleterious mutations, suggesting these mutations are more likely to be causal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 present empirical observations (Figure 4G-I) showing increased enrichment in recurrently hit genes and genes shared across diseases. The interpretation (C89) is well-supported. Claims C91-C92 offer speculative mechanistic explanations that are plausible but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Case-control studies show only small enrichment of highly deleterious variants compared to pedigree studies, because controls also harbor such variants (~6.5%) and most variants compared are inherited rather than de novo. Study design substantially influences the DFE of discovered mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C93-C96 explain why case-control designs show weaker signals than pedigree studies. The explanation is well-supported by the earlier findings on segregating variants (C67, C72-C73) and is consistent with the data (Appendix 1-figure 11). This represents an important methodological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "For developmental disorders, the DFE of de novo LOF mutations is similar between affected males and females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by Figure 5A-B showing overlapping DFEs for males and females in the DDD cohort. This contrasts with the findings for autism (next result) and is an important negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "For autism, the DFE varies markedly by cohort composition and sex. Simplex families show more deleterious mutations than multiplex families. In simplex cohorts, affected females carry significantly more deleterious mutations than males (p << 10^-5), with highly deleterious mutations 1.2-1.5\u00d7 more likely to be causal in females. This sex difference is not observed in multiplex families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C98-C104 present a complex but well-supported pattern of variation in autism genetics. The simplex vs. multiplex difference (C99-C100) is consistent with genetic architecture expectations. The sex difference in simplex families (C101-C102) is statistically robust (Figure 5C-H) and consistent with the 'female protective effect' hypothesis (C103), though alternative explanations are appropriately noted. The absence of sex differences in multiplex families (C104) is intriguing but the interpretation is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "For schizophrenia, there is little sex difference in DFE, but cases with family history show less deleterious DNMs than sporadic cases. Cohort characteristics substantially influence the severity of variants discovered and their utility for understanding disease pathophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 extend the analysis to schizophrenia and draw general conclusions about study design. The observations are supported by Appendix 1-figure 13. The general conclusion (C107-C108) is well-justified by the accumulated evidence across diseases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The estimated selection coefficients show good agreement with prior work (Weghorn et al. 2019) in gene rankings (Spearman \u03c1 = 0.82) but somewhat less congruence in point estimates (R = 0.72), likely due to differences in sample size and methodological details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide important validation by comparison to prior work. The high rank correlation suggests the method captures relative constraint well, while the lower correlation in point estimates is appropriately explained by methodological differences (smaller sample, discretized grid in prior work).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "285 genes were excluded from analysis because they showed LOF frequencies unusually high under neutrality, likely due to model misspecification (incorrect mutation rates, balancing selection) or annotation errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 describe appropriate quality control. The exclusion criterion (LOF frequency in top 10% under neutrality) is conservative. The proposed explanations (C110-C111) are reasonable and supported by citations, though the true causes cannot be definitively determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior work has established that causal LOF variants for Mendelian and complex diseases are enriched in mutation-intolerant genes as measured by pLI and LOEUF, and these measures are widely used for variant classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C19 accurately summarize prior literature with appropriate citations. These claims establish the motivation and context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C32",
+      "C74"
+    ],
+    "result": "The theoretical framework underlying mutation intolerance measures is based on population genetic principles of mutation-selection balance, where deleterious alleles are maintained at lower frequencies, and the depletion of LOF variants reflects the fitness cost in heterozygotes (hs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C20-C29, C32, C74 accurately describe established population genetic theory with appropriate citations. These provide the theoretical foundation for the empirical work and are correctly applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "pLI classifies genes based on depletion of LOF variants relative to reference gene sets, while LOEUF uses the upper 95% confidence limit of a Poisson distribution as a continuous score.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 accurately describe the methodologies of pLI and LOEUF as reported in the cited references. This provides important context for how the current approach differs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Prior studies estimated hs for autosomal genes from ~30,000 individuals, initially using a deterministic approximation that neglects drift and demography, then incorporating demographic history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 accurately summarize prior methodological work with appropriate citations and critique. This establishes how the current work builds on and improves upon previous approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Given environmental changes and variable penetrance of disease mutations, the relationship between evolutionary fitness costs and present-day disease risk is unclear a priori.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 appropriately frames the central question of the paper with supporting citations. The uncertainty is well-motivated and the paper's empirical findings (C4-C9, C77-C108) address this question.",
+    "result_type": "MINOR"
+  }
+]

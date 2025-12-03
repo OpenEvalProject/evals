@@ -1,0 +1,416 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The study systematically compiled and analyzed fungal mi/milRNA annotations from 60 publications, covering 53 studies with sRNA-seq data across 41 fungal species (1727 loci total), with most data publicly available and spanning primarily Ascomycetes and Basidiomycetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C49-C54 provide consistent, complementary data about the scope and methodology of the literature review. The numbers are specific and verifiable from the supplementary materials referenced (Figure 1B-C, Supplementary files 1-2), and the phylogenetic distribution is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The quality of published mi/milRNA annotations is highly variable, with only about half providing complete precursor coordinates or sequences, less than half having biological replicates (considered vital for annotation), and a minority providing genetic or functional validation evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are directly supported by the assessment shown in Figure 1B and 1D. The proportions are clearly documented and the citation to established guidelines (C57, Axtell and Meyers 2018) provides context for the importance of replication. This represents a critical evaluation of the field's annotation quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A hairpin recovery pipeline was developed and validated to recover genomic coordinates for loci lacking complete annotation (~one-third of loci), achieving reasonable accuracy in predicting genomic locality and recapitulating known hairpins, though ~20% of published loci failed minimum validity criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe the recovery pipeline methodology and validation. The pipeline's precision and sensitivity are documented in Figure 1\u2014figure supplement 2A-B, and the failure rate is clearly stated. The validation against known hairpins provides confidence in the approach, though the 20% failure rate indicates significant issues with original annotations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Independent re-analysis of sRNA-seq data revealed that for a large proportion of published loci, the reported mature sequence was not the most-abundant sequence, and numerous loci had no reads aligning to the reported sequence or no aligned reads at all.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are directly supported by Figure 2A and Supplementary file 4. This is a critical finding showing fundamental problems with published annotations. The re-analysis used publicly available data and standard alignment methods, making the results verifiable and concerning for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "When applying established miRNA criteria from plants and animals, fungal mi/milRNAs frequently fail key requirements, performing similarly to low-confidence miRBase annotations. Using three basic criteria (expression >0.5 RPM, >80% strandedness, valid duplex), nearly half of fungal loci passed in at least one library, performing considerably worse than high-confidence plant/animal miRNAs but better than low-confidence annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 present a systematic comparison using control datasets (Arabidopsis and Drosophila miRNAs from miRBase). The criteria are clearly defined in Supplementary file 6, and results are shown in Figure 2B-C and Figure 2\u2014figure supplement 1. The comparison to high- and low-confidence miRNAs provides important context for interpreting fungal loci quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "From 1727 initial loci, 394 (22.8%) passed all confirmation criteria in at least one library, 272 (15.7%) passed in two or more libraries (confirmed and replicated), and only 15 (0.9%) met the stricter plant miRNA criteria (ShortStack and Axtell-2018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 provide specific quantitative results directly stated in the text and shown in Figure 2D and Supplementary file 4. The percentages are precise and the distinction between confirmation levels is clear. The very low number meeting strict plant criteria (15 loci, 0.9%) is particularly notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Most fungal mi/milRNA hairpins did not match structural RNAs in Rfam, but some highly repetitive sequences like bba-milR4 from Beauveria bassiana matched the nearly universal U6 snRNA and were found in hundreds of loci across animals and plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by Figure 3A and Figure 3\u2014figure supplement 1. The Rfam search methodology is described in Methods, and the specific example of bba-milR4 matching U6 snRNA demonstrates a clear case of misannotation. This highlights the importance of checking for structural RNA contamination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Genomic context analysis revealed that many confirmed fungal mi/milRNAs arise from protein-coding gene regions (including coding sequences), which is rare in plants and animals. Very few were intronic (unlike animal mirtrons), except in Cryptococcus neoformans. Confirmed loci showed lower TE intersection rates, and 401 loci were truly intergenic (no TE, PCG, or Rfam overlap).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by Figure 3B-D and the genomic adjacency analysis described in Methods. The comparison to Drosophila controls (C81) provides important context. The finding that many loci derive from coding sequences is concerning and well-documented, though the authors appropriately note this as likely indicating incorrect annotations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Conservation analysis using HMMER identified limited sequence conservation in fungal mi/milRNAs, primarily restricted to closely related species with only three cross-class examples. The most conserved locus, milR22 from Cordyceps militaris, was found in 15 Sordariomycetes with similar expression profiles. Fungal conservation is much lower than in plants, though animal miRNAs also show lower conservation than plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 describe the conservation analysis with specific results shown in Figure 4A-B. The HMMER methodology with defined cutoffs (>0.4 bits/bp) is described in Methods. The milR22 example provides concrete evidence of genuine conservation with expression validation in multiple species. The comparison to plant and animal conservation patterns provides important evolutionary context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "A four-tier classification system identified 155 high-quality loci (tiers 1-2) from 16 fungal species, with Rhizoctonia solani most represented. These top-tier loci have sRNA sizes similar to plants/animals (20-24 nt), hairpin lengths more similar to animals than plants, minimal inter-duplex lengths (<20 nt), but lower dicing specificity (MAS comprises lower proportion of reads) compared to plant/animal miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 describe the tier classification results shown in Figure 5 and Figure 1\u2014figure supplement 3. The structural characteristics are quantitatively documented in Figure 5C-E with appropriate comparisons to plant and animal controls. The lower dicing specificity (C98) is a notable difference that may indicate biological differences or annotation quality issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Less than half of reported fungal mi/milRNA loci passed basic hairpin discovery standards, with many failing minimal criteria even using their own sequencing data. Many fungal mi/milRNAs have qualities similar to low-confidence miRNAs, and only a small number passed strict plant/animal miRNA rule sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C99-C102 summarize the overall quality assessment findings. These are supported by the comprehensive re-analysis presented in Figures 2-3 and comparisons to miRBase controls. The conclusion that many loci are low-quality is well-supported by multiple lines of evidence (expression, strandedness, structural validity, comparison to controls).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C103",
+      "C96"
+    ],
+    "result": "Fungal mi/milRNA structural characteristics are more similar to animal miRNAs than plant miRNAs in terms of size and hairpin length, with very short hairpins having little to no terminal loop structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C103, and C96 consistently describe the structural similarity to animal miRNAs, supported by Figure 5C-D. The quantitative comparison of hairpin lengths and sRNA sizes to both plant and animal controls provides clear evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Fungi have an average of only two DCR homologs per species that are thought to be partially redundant, yet produce a wide range of sRNA sizes. The results point to low specificity in fungal mi/milRNA dicing, though this may also indicate clade-specific DCR neofunctionalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 combine cited knowledge about fungal DCR proteins (C107-C108, supported by Choi et al. 2014 and Lee et al. 2010) with the study's findings on dicing specificity (C109, Figure 5E). The inference about low specificity is reasonable given the data, though the authors appropriately note alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Three high-tier mi/milRNAs had strong confirmed targeting evidence: cci-milR-24 from Coprinopsis cinerea regulating developmental genes, and Fol-milR1/milR-87 from Fusarium oxysporum (likely paralogous) with both trans-species (targeting tomato resistance gene SlyFRG4) and endogenous (targeting fungal glycosyl hydrolase) roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 describe specific examples with strong experimental validation from cited publications (Lau et al. 2020, Ji et al. 2021, Li et al. 2022). These represent the best-validated functional mi/milRNAs in the dataset and demonstrate both endogenous and trans-kingdom regulatory roles. The inference that Fol-milR1 and milR-87 are paralogous (C114) is reasonable given they produce the same MAS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Nearly all top-tier fungal mi/milRNAs are highly lineage-specific. Given that most analyzed species are pathogens, this could relate to host adaptation or trans-species sRNA function, as suggested by the most conserved locus (milR22) being from an insect pathogen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C118 combine the conservation findings (C116, supported by Figure 4) with speculation about pathogen adaptation (C117-C118). While the observation of lineage-specificity is well-supported, the connection to pathogenesis is speculative. The fact that most species are pathogens (C117) is verifiable from Supplementary file 2, but the causal link to low conservation requires more evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C79",
+      "C119"
+    ],
+    "result": "Fungal mi/milRNAs were frequently associated with protein-coding genes, with many loci arising from coding sequences, which is very rare in plants and animals and likely indicates incorrect annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C79, and C119 consistently describe the genomic association with PCGs, supported by Figure 3B. The comparison to plant and animal controls (where CDS-derived miRNAs are rare, C36) provides important context. The authors appropriately interpret this as likely indicating annotation errors rather than genuine biological phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C86",
+      "C87"
+    ],
+    "result": "The compiled genomic analyses identified 25 mi/milRNA loci conserved in multiple species, with homologs primarily found only in closely related species and only three examples of cross-class conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C86, and C87 describe the conservation results. While C13 states 25 conserved loci, the detailed analysis (C86-C87, Figure 4A) shows limited conservation with strict cutoffs. The number 25 may refer to loci with any conservation evidence, while the broader analysis shows conservation is generally limited to close relatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C93",
+      "C123"
+    ],
+    "result": "The study identified more than 150 loci with high-quality annotations (tiers 1-2), representing around 10% of the initial 1727 loci, provided as a community resource with complete validation and annotation details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C93, and C123 consistently report the high-quality loci count. C93 specifies 155 loci in tiers 1-2 from Figure 5B, which aligns with C14's \"more than 150\" and C123's \"around 10%\" (155/1727 = 9.0%). The provision as a community resource is documented in the supplementary files and source data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background claims establish that RNA interference is an ancient eukaryotic mechanism with small RNAs (20-24 nt) as functional elements, processed by Dicer from dsRNA sources (RDR-derived or hairpin structures), with miRNAs having central roles in gene expression control in plants and animals through distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 represent established knowledge about RNAi, sRNAs, and miRNAs, supported by multiple citations to the literature. These provide essential background context for the study but are not novel findings. The claims are consistent with current understanding of RNAi biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background on fungal mi/milRNAs: first identified in Neurospora crassa with DCR/AGO processing, over 60 publications have reported fungal mi/milRNAs (often in pathogenesis context), some proposed for trans-kingdom regulation, but most lack clear evidence for causative roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 provide background on fungal mi/milRNA research, supported by citations (Lee et al. 2010, Choi et al. 2014, Xu et al. 2020, etc.). C41 about 60 publications is verified by the study's literature search (C49). C44's assessment that most lack clear evidence is supported by the literature review and citation to Pinz\u00f3n et al. 2017.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Background on miRNA annotation: sRNA-seq technology has increased data availability, many annotation tools exist (mostly based on plant/animal miRNA characteristics), but systematic assessment of fungal mi/milRNA characteristics and annotation confidence has been lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 provide context for why this study was needed. C45-C47 describe the state of annotation tools (supported by citations), while C48 identifies the gap this study addresses. This gap assessment is reasonable given the literature review conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Relatively little is known about mi/milRNA features in fungi, mostly due to a lack of established criteria for their annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 represent the authors' assessment of the field based on their literature review. This is supported by the findings of variable annotation quality (C55-C58) and lack of systematic assessment (C48). The inference about lack of criteria being the cause is reasonable given the evidence presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Phylogenetic comparisons show fungal Dicer proteins differ vastly from plants and animals. Animals have a two-step dicing mechanism (DCR and Drosha), but no evidence points to such compartmentalization in fungi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 provide evolutionary context for interpreting the structural findings. C104-C105 are supported by citations (Bollmann et al. 2016, Axtell et al. 2011), while C106 is an inference based on literature review. This helps explain why fungal mi/milRNAs might differ from plant/animal miRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Fungi have a higher average count of AGO genes across important clades, and targeting for mi/milRNAs in Neurospora crassa appears to tolerate some degree of mismatching, though patterning requirements are unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 provide context about fungal AGO diversity and targeting mechanisms, supported by citations (Choi et al. 2014, Lee et al. 2010). This background is relevant for understanding potential mi/milRNA functions but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Some evidence suggests miRNAs may be derived from rRNAs, and RDR-derived sRNAs are more frequently associated with rRNAs (including fungal qiRNAs). Some evidence points to milRNAs in Neurospora crassa that might span portions of tRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 discuss alternative sources of sRNAs, supported by citations (Lambert et al. 2019, Lee et al. 2009, Yang et al. 2013). This provides context for why some loci might overlap with structural RNAs, though the authors appropriately note these should be treated with caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Overall, fungal mi/milRNAs are similar in many ways to those of animals and plants, though it varies in aspects of sRNA length, hairpin length, and mode of action, with unclear relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 provides a summary conclusion that fungal mi/milRNAs show mixed characteristics. This is supported by the various structural analyses (C95-C96 showing similarity to animals in hairpin length, C11 showing similarity in size). The acknowledgment of uncertainty about relationships is appropriate given the data.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1708 @@
+{
+  "submission": {
+    "id": "cda9efa6-e116-4cd5-ac69-bd19b2b40d11",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:18:39.490392Z",
+    "updated_at": "2025-12-03T14:18:39.490392Z"
+  },
+  "content": [
+    {
+      "id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "submission_id": "cda9efa6-e116-4cd5-ac69-bd19b2b40d11",
+      "content_type": "manuscript",
+      "content_text": "# Using adopted individuals to partition indirect maternal genetic effects into prenatal and postnatal effects on offspring phenotypes\n\n## Authors\n\n- Liang-Dar Hwang<sup>1</sup> ([ORCID: 0000-0002-5535-2199](https://orcid.org/0000-0002-5535-2199))\n- Gunn-Helen Moen<sup>1</sup>\n- David M Evans<sup>1</sup> ([ORCID: 0000-0003-0663-4621](https://orcid.org/0000-0003-0663-4621)) \u2020\n\n### Affiliations\n\n1. Institute for Molecular Bioscience, The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))\n2. The University of Queensland Diamantina Institute, The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))\n3. Institute for Clinical Medicine, Faculty of Medicine, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))\n4. K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, Norwegian University of Science and Technology Trondheim Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))\n5. Population Health Science, Bristol Medical School, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))\n6. MRC Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMaternal genetic effects can be defined as the effect of a mother\u2019s genotype on the phenotype of her offspring, independent of the offspring\u2019s genotype. Maternal genetic effects can act via the intrauterine environment during pregnancy and/or via the postnatal environment. In this manuscript, we present a simple extension to the basic adoption design that uses structural equation modelling (SEM) to partition maternal genetic effects into prenatal and postnatal effects. We examine the power, utility and type I error rate of our model using simulations and asymptotic power calculations. We apply our model to polygenic scores of educational attainment and birth weight associated variants, in up to 5,178 adopted singletons, 943 trios, 2687 mother-offspring pairs, 712 father-offspring pairs and 347,980 singletons from the UK Biobank. Our results show the expected pattern of maternal genetic effects on offspring birth weight, but unexpectedly large prenatal maternal genetic effects on offspring educational attainment. Sensitivity and simulation analyses suggest this result may be at least partially due to adopted individuals in the UK Biobank being raised by their biological relatives. We show that accurate modelling of these sorts of cryptic relationships is sufficient to bring type I error rate under control and produce asymptotically unbiased estimates of prenatal and postnatal maternal genetic effects. We conclude that there would be considerable value in following up adopted individuals in the UK Biobank to determine whether they were raised by their biological relatives, and if so, to precisely ascertain the nature of these relationships. These adopted individuals could then be incorporated into informative statistical genetics models like the one described in our manuscript to further elucidate the genetic architecture of complex traits and diseases.\n\n## Introduction\n\nMaternal genetic effects can be defined as the causal influence of maternal genotypes on offspring phenotypes over and above that which results from the transmission of genes from mothers to their offspring (Wolf and Wade, 2009). Over the last few years there has been a resurgence of interest in identifying and quantifying maternal genetic effects on offspring phenotypes, both from the perspective of variance component estimation (Balbona et al., 2021; Bates et al., 2018; Eaves et al., 2014; Eilertsen et al., 2021; Kim et al., 2021; Kong et al., 2018; Qiao et al., 2020; Tubbs et al., 2020) and estimating the causal effect of specific maternal environmental exposures on offspring outcomes through Mendelian randomization based approaches (Evans et al., 2019; Lawlor et al., 2017; Moen et al., 2020; Tyrrell et al., 2016; Warrington et al., 2019; Zhang et al., 2015). Indeed, following the advent of transgenerational genome-wide association studies, maternal genetic effects are beginning to be identified at individual genetic loci (Warrington et al., 2019; Beaumont et al., 2018), a trend that is set to continue as the sample sizes of such studies increase further. Given the increasing number of variants identified in GWAS that exhibit robust maternal genetic effects, a natural question to ask is whether these loci exert their effects on offspring phenotypes through intrauterine mechanisms, the postnatal environment, or both. Indeed, resolving maternal effects into prenatal and postnatal sources of variation could be a valuable first step in eventually elucidating the underlying mechanisms behind these associations (Armstrong-Carter et al., 2020), directing investigators to where they should focus their attention, and in the case of disease-related phenotypes, yielding potentially important information regarding the optimal timing of interventions. For example, the demonstration of maternal prenatal effects on offspring IQ/educational attainment, suggest that if the mediating factors that were responsible could be identified, then improvements in the prenatal care of mothers and their unborn babies targeting these factors, could yield useful increases in offspring IQ/educational attainment.\n\nIn this manuscript, we develop a simple method for partitioning maternal genetic effects into prenatal and postnatal components that leverages information provided by adopted individuals. We assume that an adopted individual\u2019s phenotype is influenced by prenatal intrauterine factors as proxied by their biological mother\u2019s genome, and postnatal influences as proxied by their adoptive mother\u2019s and father\u2019s genomes. In contrast, we assume that the phenotype of individuals who have not been adopted are influenced by prenatal intrauterine factors resulting from their biological mother\u2019s genome, and postnatal factors as proxied by their biological mother\u2019s and father\u2019s genomes. This model leads to different expectations for the covariance between an individual\u2019s phenotype and their own and their relatives\u2019 genotypes depending on whether they have been adopted or not.\n\nOne of the challenges in applying this kind of framework to real life situations is the paucity of cohorts containing large numbers of adoptive families (Horn, 1983; Rhea et al., 2013; Scarr and Weinberg, 1983). Restricted numbers of adoptive families will consequently limit the statistical power to partition maternal genetic effects- particularly at single genetic variants which tend to have very small effect sizes. It is important to realize, however, that adopted \u2018singletons\u2019 (i.e. adopted individuals whose adoptive and biological parents have not been included in the study) provide important information on partitioning maternal genetic effects into prenatal and postnatal contributions regardless of whether information on their parents has been gathered. The intuition behind this surprising fact is that the covariance between an adopted individual\u2019s genotype and phenotype is a function of prenatal (but not postnatal) maternal genetic effects (Figure 1, G5 to G7). In contrast, the covariance between a non-adopted individual and their own phenotype includes contributions from prenatal and postnatal genetic effects (Figure 1, G1 to G4). Thus, the difference between the genotype-phenotype covariance in adopted and non-adopted singleton individuals provides important information on the likely size of postnatal genetic effects. This is potentially important given that >7000 individuals in the UK Biobank study (Sudlow et al., 2015) report being adopted, and hence this publicly available dataset may represent a powerful resource for identifying prenatal maternal effects and partitioning maternal genetic effects into prenatal and postnatal sources of variation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73671/elife-73671-fig1-v2.jpg)\n\n**Figure 1.:** Causal relationships are represented by one headed arrows. Two headed arrows represents correlational relationships. Observed variables and latent variables are shown in squares and circles, respectively. Zm represents biological mother\u2019s genotype which influences offspring phenotype (Y) via prenatal (\u03b3m) and postnatal (\u03b2m) pathways. Zp represents the biological father\u2019s genotype which only influences offspring phenotype postnatally (\u03b2p). Zo represents offspring genotype which influences offspring phenotype (\u03b2o) and is correlated \u00bd with the genotypes of its biological parents. Zm_b represents the genotype of a biological mother whose child was adopted and therefore only influences her child\u2019s phenotype through prenatal pathways (\u03b3m). Zm_a represents the adoptive mother\u2019s genotype which only influences her adopted offspring\u2019s phenotype via postnatal pathways (\u03b2m). Zp_b represents the genotype of a biological father whose child was adopted and therefore has no influence on the adopted offspring phenotype. Zp_a represents the adoptive father\u2019s genotype which influences his adopted offspring postnatally (\u03b2p). \u03c1 represents the covariance between parental genotypes, as a result of e.g. assortative mating (it is assumed that this covariance is the same in biological parents and adoptive parents). The total variance of genotypes in the parental generation is set to \u03a6. \u01901 and \u01902 represent residual error terms for the biological and adopted offspring phenotypes respectively that we assume have different variances.\n\nIn this manuscript, we introduce a new structural equation model (SEM) to estimate prenatal and postnatal maternal genetic effects on offspring phenotypes. The SEM framework allows us to model the contributions from missing individuals as latent variables, facilitating the inclusion of information from adopted singleton individuals whose adoptive and/or biological parents are not available for analysis. We estimate the asymptotic power of our model to partition maternal genetic effects into prenatal and postnatal components and confirm these results by simulation. We code our routines into a freely available R shiny app web utility that researchers can use to perform their own power calculations. Finally, we apply our methods to birth weight and educational attainment data in the UK Biobank- two phenotypes known to be affected by maternal genetic effects. We investigate the effect of inadvertently including adopted singleton individuals whose adoptive parents are genetically related to them in our model, adjust our model to correct for this misspecification and quantify the effect of this adjustment on type 1 error rates and power. We discuss the implications of model misspecification for using the UK Biobank resource in this context in future studies more broadly.\n\n## Materials and methods\n\n### Model description\n\nWe consider seven different family structures (Figure 1) which we model using SEM (although we note that the SEM framework is flexible enough to include many other sorts of family structures as well). The different family structures we consider are: Biological parent-offspring trios (G1), biological mother-offspring pairs (G2), biological father-offspring pairs (G3), singleton individuals (who were raised by their biological parents) (G4), adopted singleton individuals (who were raised by their adoptive parents) (G5), adoptive mother-adopted child pairs (G6), and biological mother-adopted child pairs (G7). For each of these different family structures, we model missing parental genotypes (whether biological or adoptive) as latent variables.\n\nLet the variables Zm, Zp and Zo represent maternal, paternal and offspring genotypes. Likewise, let Zm_b and Zp_b denote the genotypes of the biological mother and father of an adopted individual respectively, and let Zm_a and Zp_a represent the genotypes of the adoptive mother and father of the adopted individual. These variables may be observed (i.e. the square boxes in Figure 1) or unobserved latent variables (i.e. the circles in Figure 1). They may represent polygenic risk scores (PRS) consisting of multiple genetic variants, or single genetic variants if the study is of sufficient size to reliably demonstrate genetic effects at individual loci. The model includes path coefficient terms for maternal genetic effects (\u03b3m, \u03d0m), paternal genetic effects (\u03d0p) and offspring genetic effects (\u03d0o) on the offspring phenotype (Y). We are specifically interested in partitioning maternal genetic effects into prenatal (\u03b3m) and postnatal genetic effects (\u03d0m) and we assume that the effect of the prenatal maternal genetic effect and postnatal maternal genetic effect on the offspring phenotype is additive (i.e. \u03b3m + \u03d0m). We assume in the case of biological families (i.e. G1 to G4 in Figure 1), that biological mothers exert prenatal and postnatal genetic effects on their offspring. In contrast, in the case of adopted individuals (i.e. G5 to G7 in Figure 1), we assume that prenatal maternal effects from the biological mother and postnatal maternal genetic effects from the adoptive mother contribute to variation in the offspring phenotype. We assume that biological fathers exert only postnatal genetic effects on their offspring (biological families only), and adoptive fathers exert only postnatal genetic effects on their adopted offspring.\n\nWe estimate the genotypic variance (\u03a6) of each individual and assume that it is the same in mothers, fathers, their children, and across both biological and adopted individuals under random mating (although the requirement for equal variances across individuals can be relaxed if necessary). We account for possible covariance between maternal and paternal genotypes (e.g. through assortative mating) by estimating the covariance path \u03c1. This is equivalent to modelling one round of assortative mating in the parental generation and has the effect of inflating the total genotypic variance in the offspring generation from \u03a6 under random mating to \u03a6 + \u00bd\u03c1. Finally, to accommodate the possibility that adopted individuals may have different phenotypic variances to individuals raised by their biological relatives, we permit the variance of residual sources of variation to differ across adopted and biological family structures (Cheesman et al., 2020).\n\nWe caution that for all the parameters in the model to be identified, different constellations of relatives must be sampled from G1-G7. For example, to partition maternal genetic effects into prenatal and postnatal components, information from adopted individuals must be available. In fact, even adopted \u2018singletons\u2019, for whom there is no genotype information from their parents (i.e. biological or adoptive parents), contribute important information for the partitioning of maternal genetic effects, since the covariance between their own genetic score and phenotype is a function of offspring genetic effects and prenatal maternal effects, but not postnatal maternal effects (Figure 1). This contrasts with the situation in non-adopted individuals whose genotype-phenotype covariance is a function of all three sources of variation (plus postnatal paternal genetic effects). Thus, the difference between the genotype-phenotype covariance in adopted and non-adopted individuals provides important information on the size of postnatal maternal genetic effects. Indeed, the inclusion of adopted singleton individuals in our model is sufficient for identification as long as there are at least some (biological) parent-offspring trios (or alternatively both biological mother-child and biological father-child pairs) available. Whilst the presence of adopted individuals\u2019 parents (biological or adoptive) is not a necessary condition for partitioning maternal effects into prenatal and postnatal components, the inclusion of such pairs is advantageous in terms of statistical power as we show below. We include an example R script that fits the sort of SEM described in this article that users can modify to apply to their own data (see Source Code File).\n\n### Asymptotic power calculations\n\nWe used OpenMx (Boker et al., 2011; Neale et al., 2016) to calculate the asymptotic power to partition maternal genetic effects into prenatal and postnatal maternal genetic effects. Asymptotic covariance matrices were generated assuming certain underlying values for the parameters of the model depicted in Figure 1. The full model was then fitted to the covariance matrices to confirm a perfect fit to the data and to check that the parameter values were correctly estimated. Secondly, a reduced model where the parameter(s) of interest was constrained to zero was fitted to the same covariance matrices. We examined the effect of constraining the prenatal maternal genetic effect or postnatal maternal genetic effect to zero. The difference in minus twice the log-likelihood chi-square between the full and reduced models is equal to the non-centrality parameter of the test for association, with the degrees of freedom equal to the difference in the number of free parameters between the models. Power was then calculated as the area under the curve of a non-central chi-square distribution to the right of the significance threshold of interest:\n\n$$\nPower=\\int_{X_{\\alpha}^{\u20322}(v,0)}^{\u221e}dX^{\u20322}(v,\u03c2),\n$$\n\nwhere $X_{\\alpha}^{`2}(v,0)$ is the quantile of the 100 * (1-\u03b1) percentage point of the central \u03c72 distribution with $v$ degrees of freedom, and $\u03c2$ is the non-centrality parameter (Moen et al., 2019).\n\nAs we were interested in whether there might be enough adopted individuals in the UK Biobank for the informative partitioning of maternal genetic effects into prenatal and postnatal sources of variation, we first calculated power (\u03b1=0.05) using sample sizes roughly similar to the number of European individuals in the resource who reported their educational attainment (i.e. 1000 parent-offspring trios, 4000 mother-offspring pairs, 1800 father-offspring pairs, 300,000 singletons who were raised by their biological parents, 6000 adopted individuals and 50 biological mother-adopted offspring duos- see below). We investigated the effect of different combinations of prenatal maternal genetic effects, postnatal maternal genetic effects, postnatal paternal genetic effects and offspring genetic effects (i.e. $\\gamma$m or \u03d0m = 0, 0.05, 0.1, 0.3 and 0.5). We also examined the effect of modifying the covariance between parental genotypes (with \u03c1 ranging between 0 and 0.2 times the genotypic variance in the parental generation). Finally, we were curious as to the effect of increasing the number of the different family structures on statistical power, and in particular, on whether including increasing numbers of more attainable/accessible biological relatives (i.e. biological trios, pairs, and singletons [G1 \u2013 G4]) could increase power to partition maternal genetic effects for a fixed number of adopted individuals. We also investigated the effect of varying the sample size of adopted individuals (G5), adoptive mother-adopted offspring duos (G6), and biological mother-adopted offspring duos (G7) on power. We used our calculator to determine 80% power (\u03b1=0.05).\n\n### Data simulations\n\nIn order to confirm our asymptotic calculations, we simulated a series of datasets of the same size and with the same underlying parameters as in the asymptotic power calculations. Each condition was simulated 1000 times and power was calculated as the number of simulations in which the effect of interest was detected (p<0.05) divided by 1000.\n\n### Online web utility\n\nWe developed a freely available, online power calculator that allows investigators to explore the power to detect prenatal and postnatal maternal genetic effects using our SEM in their own studies (https://evansgroup.di.uq.edu.au/ADOPTED). Our power calculator is built using the R shiny app (https://shiny.rstudio.com/) running the R studio software (RStudioTeam, 2015) and the OpenMx package (Boker et al., 2011; Neale et al., 2016) in the background.\n\n### Application to UK biobank data\n\nWe applied our model to self-reported birth weight and educational attainment data from the UK Biobank resource. The UK Biobank study was approved by the UK National Health Service National Research Ethics Service. Written consent was obtained from both the participants and their parents (for subjects younger than 18 years old). This study was approved by the Human Research Ethics Committee at the University of Queensland (approval number: 2019002705). We only included individuals of European ancestry, determined by: (i) projecting their genetic principal components onto the 1,000 Genome sample and then K-means clustering or (ii) those who self-reported ethnic background of either \u2018British\u2019, \u2018Irish\u2019, \u2018Irish\u2019, \u2018White\u2019, or \u2018Any other white background\u2019. Family relationships were determined by the pairwise kinship estimated across the whole UK Biobank sample using the software KING (Manichaikul et al., 2010). Adoption status was determined based on response to the question \u201cWere you adopted as a child?\u201d. One from each pair of Individuals showing genome-wide genetic similarity greater than third degree relatives was removed from the dataset. We chose exclusions so as to maximize the number of families from adopted singletons (G5), followed by trios (G1), mother-offspring duos (G2), and then father-offspring duos (G3).\n\nBirth weight is a phenotype that is known to be affected by the maternal genome (Warrington et al., 2019), but should only be influenced by prenatal and not postnatal maternal genetic effects. We only included individuals whose birth weight was between 2.5 kg and 4.5 kg in analyses. These included 731 biological trios, 2014 biological mother-offspring pairs, 485 biological father-offspring pairs, 168,522 singletons raised by their biological parents, 1084 singleton individuals who reported being adopted, and 16 biological mother-adopted offspring pairs. We calculated each individual\u2019s weighted PRS (i.e. sums of the birth weight-increasing allele weighted by the effect size) and unweighted PRS (i.e. counts of the birth weight increasing allele) for birth weight using 20 SNPs known to influence birth weight via maternal pathways with p<5 x 10\u20138 from a recent GWAS of birth weight (Warrington et al., 2019). See Supplementary file 1 for a list of SNPs used to construct PRS of birth weight. We regressed birth weight on year of birth, sex and the first five genetic principal components and used the residuals in the analysis.\n\nWe then applied our model to educational attainment in UK Biobank participants of European ancestry. We calculated years of education, as a proxy of educational attainment, based on response to the question \u201cWhich of the following qualifications do you have?\u201d: College or university degree = 20 years; Vocational Qualification (NVQ), Higher National Diploma (HNC), or equivalent = 19 years; other professional qualification = 15 years; A level/AS level or equivalent = 13 years; O level/General Certificate of Secondary Education (GCSE) or equivalent = 10 years; Certificate of Secondary Education (CSE) or equivalent = 10 years; none of the above = 7 years of education. We regressed years of education on year of birth, sex and the first five genetic principal components and used the residuals in the analysis. The final dataset included 943 biological parent-offspring trios, 2687 biological mother-offspring pairs, 712 biological father-offspring pairs, 347,980 singletons from biological families, 5178 adopted singletons and 39 biological mother-adopted offspring pairs. We calculated weighted PRS (i.e. sums of the educational attainment increasing allele and weighted by the effect size) and unweighted PRS (i.e. counts of the educational attainment increasing allele) using 1267 SNPs from the current largest GWAS of educational attainment (Lee et al., 2018). We included only genome-wide significant SNPs in the construction of these scores because the most recent GWAS meta-analysis of educational attainment by Lee et al., 2018 included UK Biobank individuals (Lee et al., 2018). We were concerned that sample overlap would inflate estimates of the association between the PRS and educational attainment (and any inflation would be most severe for the hundreds of thousands of SNPs that did not reach genome-wide significance) and in turn bias parameter estimates from our model. For this reason, we also performed a sensitivity analysis using a second set of PRS of educational attainment using 72 SNPs from a GWAS of non-UK Biobank individuals (Okbay et al., 2016). See Supplementary file 2 for a list of SNPs used to construct these PRS.\n\nThe UK Biobank contains only very limited information regarding the adoption status of individuals (i.e. only whether they report being adopted or not). We were concerned about the possibility that some individuals in UK Biobank might have been adopted by their biological relatives in which case our model in Figure 1 would be misspecified. We therefore also conducted a sensitivity analysis by excluding adopted individuals with known breastfeeding information (on the reasoning that these individuals might be more likely to be fostered by a biologically related individual) and repeating the educational attainment analyses. This reduced the number of adopted \u2018singleton\u2019 individuals in the analysis to 2,867.\n\n### Investigating the effect of model misspecification\n\nWe were concerned about the effect that misclassifying adopted \u201csingleton\u201d individuals as unrelated to their adoptive parents (i.e. when in reality they were raised by their biological relatives) might have on type I error rates and estimates of prenatal and postnatal maternal genetic effects generated by our model. We therefore simulated data under four scenarios: (i) adopted singletons where 0%, 20%, 40%, 60%, or 80% had adoptive mothers who were siblings or cousins of their biological mothers, (ii) adopted singletons where 0%, 20%, 40%, 60%, or 80% had adoptive mother who were siblings or cousins of biological fathers, (iii) adopted singletons where 0%, 20%, 40%, 60%, or 80% had adoptive fathers who were siblings or cousins of biological fathers, and (vi) adopted singletons where 0%, 20%, 40%, 60%, or 80% had adoptive fathers who were siblings or cousins of biological mothers. We assumed that sample sizes and the number of individuals in the other groups were the same as in our asymptotic power calculations.\n\nWe further investigated type 1 error rates and estimates of prenatal and postnatal maternal genetic effects after correctly modelling the relationship between biological and adoptive parents. We created four additional family structures (G8 to G11, Appendix 1\u2014figure 1) considering the above four scenarios by adding a covariance path (r) between the genotypes of adoptive and biological parents. The covariance between the genotypes of adoptive and biological parents was fixed to r=0.5 \u0445 \u03a6 when the adoptive parent was a sibling of the biological parent and r=0.125 \u0445 \u03a6 when they were cousins.\n\n## Results\n\n### Power calculations\n\nThe power to detect prenatal maternal genetic effects increased with increasing size of postnatal maternal genetic effects, paternal genetic effects, and offspring genetic effects (Figure 2). A similar pattern was observed when we quantified the power to detect postnatal maternal genetic effects. Our calculations indicate that a study with a sample size and structure similar to the UK Biobank would have ~80% power (\u03b1=0.05) to detect prenatal maternal and postnatal maternal genetic effects that account for 1.5% and 0.9% of the variance in the offspring phenotype, respectively (calculated as $\\gamma$m2 and \u03d0m2 assuming all the other genetic effects are null and zero correlation between parental genotypes). The power to detect prenatal and postnatal maternal genetic effects also increased slightly with increasing covariance between maternal and paternal genotypes (Appendix 1\u2014figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73671/elife-73671-fig2-v2.jpg)\n\n**Figure 2.:** Effect sizes are parameterized using the path coefficients \u03b2 and \u03b3. Power was calculated assuming sample sizes approximating the number of white European individuals in the UK Biobank with educational attainment data (i.e. 1000 biological trios, 4000 biological mother-offspring pairs, 1800 biological father-offspring pairs, 300,000 singletons, 6000 adopted individuals, and 50 biological mother-adopted offspring pairs and a covariance of 0 (\u03c1) between maternal and paternal genotypes).\n\nThe power to detect prenatal and postnatal maternal genetic effects increased with the number of adopted singleton individuals, and more dramatically when the number of adoptive mother-adopted offspring pairs and/or biological mother-adopted offspring pairs increased (Figure 3). Power to detect prenatal maternal genetic effects increased most rapidly with increasing numbers of biological-mother adopted child pairs (G7), whereas the power to detect postnatal maternal genetic effects increased most strongly with increasing numbers of was provided by adoptive mother-adopted child pairs (G6). This makes sense intuitively, since adoptive mother-adopted child pairs (G6) provide a direct estimate of the postnatal maternal genetic effect (\u03d0m), whereas biological mother-adopted child pairs provide a direct estimate of the prenatal maternal genetic effect ($\\gamma$m). Likewise, adopted singleton individuals do not provide direct estimates of either prenatal or postnatal maternal genetic effects, and therefore contribute proportionally less in terms of statistical power than adoptive mother-adopted child or biological mother-adopted child pairs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73671/elife-73671-fig3-v2.jpg)\n\n**Figure 3.:** Path coefficients representing postnatal or prenatal maternal genetic effects, paternal genetic effects (\u03b2p) and offspring genetic effects (\u03b2o) were fixed to 0.1. The covariance between maternal and paternal genotypes was fixed to 0.\n\nInterestingly, the power to detect prenatal and postnatal maternal genetic effects also increased with the number of biological families in the analysis (G1 to G4) (Figure 3); however, this increase asymptoted with maximal possible power depending primarily on the number of adopted individuals in the analysis. This result suggests that power to partition maternal genetic effects can be optimized through having large numbers of biological relatives in the analysis, but cannot be increased beyond a level that depends on the number of adopted individuals in the analysis (G5 to G7) and may be less than 100%. Results from simulations showed good concordance with asymptotic power calculations and appropriate type I error rates (Supplementary file 3, Supplementary file 4).\n\n### Analyses in the UK Biobank\n\nPRS for birth weight exhibited significant evidence of prenatal maternal genetic effects, offspring genetic effects (in the opposite direction), and no significant evidence for postnatal maternal or paternal genetic effects (Table 1). This pattern of results is expected since (a) birth weight is known to be affected by both maternal and fetal genetic effects, (b) maternal and offspring genetic effects on birth weight for many of the SNPs were in opposite directions, (c) conditional estimates of maternal and offspring genetic effects are negatively correlated, (d) in the present study SNPs comprising the PRS were selected for their strong maternal effects on offspring birth weight, and (e) birth weight is a perinatal phenotype and so by definition cannot be influenced by postnatal maternal (or paternal) genetic effects (Warrington et al., 2019; Beaumont et al., 2018; Warrington et al., 2018).\n\n**Table 1.**\n Modelling results of birth weight in the UK Biobank.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"3\">Unweighed PRS</th>\n      <th colspan=\"3\">Weighted PRS</th>\n    </tr>\n    <tr>\n      <th>Estimate</th>\n      <th>Std Error</th>\n      <th>P-value</th>\n      <th>Estimate</th>\n      <th>Std Error</th>\n      <th>P-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Offspring effect</td>\n      <td>\u20130.008</td>\n      <td>0.004</td>\n      <td>0.058</td>\n      <td>\u20130.173</td>\n      <td>0.115</td>\n      <td>0.132</td>\n    </tr>\n    <tr>\n      <td>Prenatal maternal effect</td>\n      <td>0.035</td>\n      <td>0.013</td>\n      <td>0.006</td>\n      <td>0.893</td>\n      <td>0.383</td>\n      <td>0.020</td>\n    </tr>\n    <tr>\n      <td>Postnatal maternal effect</td>\n      <td>\u20130.017</td>\n      <td>0.011</td>\n      <td>0.130</td>\n      <td>\u20130.419</td>\n      <td>0.335</td>\n      <td>0.211</td>\n    </tr>\n    <tr>\n      <td>Postnatal paternal effect</td>\n      <td>0.003</td>\n      <td>0.005</td>\n      <td>0.588</td>\n      <td>0.048</td>\n      <td>0.151</td>\n      <td>0.751</td>\n    </tr>\n  </tbody>\n</table>\n\n_PRS: polygenic risk score constructed using 20 SNPs showing maternal effects on birth weight from Warrington et al., 2019; Std Error: standard error._\n\nIn the case of offspring educational attainment, our analyses showed evidence for a prenatal maternal genetic effect, a paternal genetic effect, and an offspring genetic effect (Table 2, Supplementary file 5). The absence of a significant positive postnatal maternal genetic effect on offspring educational attainment was surprising given that maternal genetic effects should be mediated through maternal educational attainment, and therefore should mostly involve postnatal pathways (although it is possible that some of the relationship between maternal genotype and offspring educational attainment could be mediated through prenatal effects- e.g. less educated mothers consuming more alcohol during pregnancy which then has adverse effects on offspring cognitive development and educational attainment etc), and previous studies have shown that the effect of paternal and maternal PRS on educational attainment are roughly similar (Wang et al., 2021) that is suggesting the absence of prenatal maternal genetic effects. We were concerned that the cause of this surprising result might be because of model misspecification- specifically, adopted children being raised by adoptive parents who are biologically related to them.\n\n**Table 2.**\n Modelling results of educational attainment in the UK Biobank.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"3\"></th>\n      <th colspan=\"6\">Full sample</th>\n    </tr>\n    <tr>\n      <th colspan=\"3\">Unweighted PRS</th>\n      <th colspan=\"3\">Weighted PRS</th>\n    </tr>\n    <tr>\n      <th>Estimate</th>\n      <th>Std Error</th>\n      <th>p-value</th>\n      <th>Estimate</th>\n      <th>Std Error</th>\n      <th>p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Offspring effect</td>\n      <td>0.026</td>\n      <td>0.005</td>\n      <td>3.18 \u00d7 10 -7</td>\n      <td>2.474</td>\n      <td>0.485</td>\n      <td>3.40 \u00d7 10 -7</td>\n    </tr>\n    <tr>\n      <td>Prenatal maternal effect</td>\n      <td>0.027</td>\n      <td>0.011</td>\n      <td>0.013</td>\n      <td>1.722</td>\n      <td>0.703</td>\n      <td>0.014</td>\n    </tr>\n    <tr>\n      <td>Postnatal maternal effect</td>\n      <td>\u20130.006</td>\n      <td>0.008</td>\n      <td>0.484</td>\n      <td>\u20130.288</td>\n      <td>0.514</td>\n      <td>0.575</td>\n    </tr>\n    <tr>\n      <td>Postnatal paternal effect</td>\n      <td>0.018</td>\n      <td>0.007</td>\n      <td>0.006</td>\n      <td>1.233</td>\n      <td>0.678</td>\n      <td>0.069</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\"></td>\n      <td colspan=\"6\">Excluding adopted individuals with breastfeeding information</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Unweighted PRS</td>\n      <td colspan=\"3\">Weighted PRS</td>\n    </tr>\n    <tr>\n      <td>Estimate</td>\n      <td>Std Error</td>\n      <td>p-value</td>\n      <td>Estimate</td>\n      <td>Std Error</td>\n      <td>p-value</td>\n    </tr>\n    <tr>\n      <td>Offspring effect</td>\n      <td>0.025</td>\n      <td>0.005</td>\n      <td>5.52 \u00d7 10\u20137</td>\n      <td>2.441</td>\n      <td>0.372</td>\n      <td>5.15 \u00d7 10\u201311</td>\n    </tr>\n    <tr>\n      <td>Prenatal maternal effect</td>\n      <td>0.017</td>\n      <td>0.012</td>\n      <td>0.140</td>\n      <td>0.909</td>\n      <td>0.705</td>\n      <td>0.197</td>\n    </tr>\n    <tr>\n      <td>Postnatal maternal effect</td>\n      <td>0.004</td>\n      <td>0.009</td>\n      <td>0.682</td>\n      <td>0.549</td>\n      <td>0.595</td>\n      <td>0.357</td>\n    </tr>\n    <tr>\n      <td>Postnatal paternal effect</td>\n      <td>0.019</td>\n      <td>0.007</td>\n      <td>0.005</td>\n      <td>1.273</td>\n      <td>0.552</td>\n      <td>0.021</td>\n    </tr>\n  </tbody>\n</table>\n\n_PRS: polygenic risk score constructed using 1,267 SNPs from Lee et al., 2018; Std Error: standard error._\n\nWe therefore performed sensitivity analyses where we excluded adopted individuals who reported breastfeeding information (i.e. on the hypothesis that knowing if they were breast fed or not is information that an adopted individual could only know if they were adopted by a relative). The results of these analyses showed that estimates of the prenatal maternal genetic effect reduced in size and became non-significant. Whilst the postnatal maternal effect remained non-significant, the direction of effect changed from negative to positive. Sensitivity analyses using PRS constructed using the 72 genome-wide significant SNPs from the Okbay et al., 2016 GWAS were underpowered but showed similar directions of effect Okbay et al., 2016.\n\n### Simulations where adoptive parents are related to biological parents\n\nOur simulations showed that the presence of adoptive parents who were genetically related to their adopted offspring could in some cases increase the type 1 error rate to detect prenatal maternal genetic effects and bias estimates of prenatal and postnatal maternal genetic effects when these relationships were not accurately modelled in the SEM (Appendix 1\u2014figure 3, Appendix 1\u2014figure 4, Appendix 1\u2014figure 5, Appendix 1\u2014figure 6). In general, the effect of including unmodelled related adoptive and biological parents in the SEM depended on whether the adoptive mother or adoptive father was related to the biological parents (i.e. it did not matter whether the adoptive parents were related to the biological mother or father) and the degree of relatedness (i.e. closer relationships had the potential to produce greater bias and type I error rates).\n\nIn the case of adoptive mothers being genetically related to biological parents (Appendix 1\u2014figure 3, Appendix 1\u2014figure 4), the presence of postnatal genetic effects (i.e. $\\beta_{m}$ not equal to 0) was sufficient to bias estimates of the prenatal maternal genetic effect ($\\gamma_{m}$) and increase type I error rates. In general, when $\\beta_{m}$ was not equal to zero, then estimates of $\\gamma_{m}$ were biased towards the true total maternal genetic effect (i.e. $\\gamma_{m}+\\beta_{m}$), and estimates of $\\beta_{m}$ were biased towards zero. The reason for this can be seen intuitively by examining the path models for the G8 and G9 family structures in Appendix 1\u2014figure 1 where the presence of biologically related adoptive mothers leads to an unmodelled covariance path between offspring genotype and phenotype (i.e. $\\frac{1}{2}r\\times\\beta_{m}$). Note that the expected covariance implied by this path is the same in the case of adoptive mothers who are related to their adopted offsprings\u2019 biological mothers (G8 in Appendix 1\u2014figure 1), and adoptive mothers who are related to their adopted offsprings\u2019 biological fathers (G9 in Appendix 1\u2014figure 1)- implying that failure to model relatedness in both groups should produce the same consequences in terms of bias and type I error. When $\\beta_{m}$ is not zero, this unmodelled path alters the expected covariance between offspring genotype and phenotype in adopted singleton individuals. In this situation, the model will incorrectly attribute the altered covariance to prenatal maternal genetic effects (i.e. since the $\\frac{1}{2}r\\times\\beta_{m}$ path is not explicitly modelled), and since estimates of the total maternal genetic effect remain unbiased (data not shown), will bias estimates of the postnatal maternal genetic effect towards zero. It follows that results will not be biased when  $\\beta_{m}$ = 0 and the magnitude of any bias will decrease as r approaches zero (i.e. with decreasing genetic relationship between adoptive mothers and the biological parents).\n\nLikewise, our simulations showed that the presence of paternal genetic effects (i.e. $\\beta_{p}$ not equal to 0) was sufficient to bias estimates of the prenatal maternal genetic effect ($\\gamma_{m}$) and increase type I error rates when unmodelled adoptive fathers who were genetically related to adopted children\u2019s biological parents were included in the analysis (Appendix 1\u2014figure 5, Appendix 1\u2014figure 6). Inspection of the G10 and G11 family structures in Appendix 1\u2014figure 1 shows that biologically related adoptive fathers leads to an extra unmodelled covariance path between offspring genotype and phenotype (i.e. $\\frac{1}{2}r\\times\\beta_{p}$), and that this path is the same for both adoptive fathers related to biological fathers (G10 in Appendix 1\u2014figure 1) and adoptive fathers related to biological mothers (G11 in Appendix 1\u2014figure 1) (again implying that failure to model relatedness in both groups should have the same consequences). It also shows that there should be no bias/inflation of type I error rates in the absence of paternal genetic effects, which is consistent with the results from our simulations. However, if $\\beta_{p}$ is not zero, then this will affect the covariance between (adopted) offspring genotype and phenotype, and changes may be falsely ascribed to prenatal maternal genetic effects. In this situation, estimates of the prenatal maternal genetic effect ($\\gamma^_{m}$) will be biased towards the sum of the true prenatal maternal genetic effect plus the true paternal genetic effect ($\\gamma_{m}+\\beta_{p}$), and estimates of the postnatal maternal genetic effect ($\\beta^_{m}$) will be biased towards the difference between the true total maternal genetic effect ($\\gamma_{m}+\\beta_{m}$) minus the estimated prenatal maternal genetic effect ($\\gamma^_{m}$).\n\nIn general, the presence of unmodelled relationships between biological and adoptive parents did not bias estimates of offspring genetic or paternal genetic effects (results not shown). This makes sense since offspring and paternal genetic effects are estimated directly from the covariance between observed genotypes and phenotypes (i.e. the covariance between observed offspring genotype and offspring phenotype, and the covariance between observed paternal genotype and offspring phenotype, respectively), whereas the estimation of prenatal and postnatal maternal genetic effects have to be inferred indirectly using latent (not directly observed) genotypes and the difference in the covariance between offspring genotype and phenotype in biological and adoptive families.\n\nWhen we correctly modelled the relationship between biological and adoptive parents\u2019 genotypes, there was no inflation in type 1 error rates and effect estimates were unbiased (Appendix 1\u2014figure 7, Appendix 1\u2014figure 8, Appendix 1\u2014figure 9, Appendix 1\u2014figure 10). However, correct modelling and inclusion of these individuals in the SEM produced complicated effects on the power to detect true effects relative to if the same number of adopted individuals with biologically unrelated adoptive parents had been included in the model (see Appendix 1\u2014figure 11 where 0% on the x-axis corresponds to this situation). For the simulations we examined, power to detect prenatal and postnatal maternal genetic effects decreased when adopted singletons whose adoptive mothers were related to their biological parents were included (and modelled correctly) in the analysis. This makes sense intuitively in that correct modelling of these mothers requires a covariance path between adoptive mother\u2019s genotype and the relevant biological parent\u2019s genotype (G8, G9). The presence of this path decreases the difference between the expected covariance between an adopted offspring\u2019s genotype and phenotype (G8, G9), and the expected covariance between offspring genotype and phenotype from a non-adoptive family (G4)- hence lowering the power of the model to discriminate between maternal prenatal and postnatal genetic effects.\n\nIn contrast, power to detect prenatal and postnatal maternal genetic effects increased when adopted singletons whose adoptive fathers were related to their biological parents were included (and modelled correctly) in the analysis. In order to understand this result intuitively, it is useful to consider the case where the offspring trait is affected by concordant prenatal and postnatal maternal genetic effects (i.e. $\\gamma_{m}$ > 0 and $\\beta_{m}$ > 0), but not by paternal ($\\beta_{p}$ = 0) or offspring genetic effects ($\\beta_{o}$ = 0). Under the full model, adopted singletons (G5) and adopted singletons whose adoptive father is a genetic relative (G10, G11) produce identical expected covariance matrices and so lead to identical model fits and parameter estimates. However, under the reduced model where $\\gamma_{m}$ is fixed to zero, the only path that accounts for the covariance between offspring genotype and phenotype is the offspring genetic effect ($\\beta_{o}$). Thus in order for this covariance to be modelled accurately, the reduced model will produce positive estimates for the offspring genetic effect ($\\beta_{o}$). Simultaneously, to ensure that the covariance between the observed paternal genotype and offspring phenotype remains close to zero in parent-offspring trios and father-offspring pairs (i.e. G1 and G3), the model will produce negative estimates of the paternal genetic effect ($\\beta_{p}$). This process presents more of a challenge when modelling adopted singleton individuals whose adoptive fathers are related to their biological parents (i.e. G10, G11) where the paternal genetic effect impacts both the expected covariance between parental genotype and offspring phenotype, and the expected covariance between offspring genotype and phenotype (i.e. because of the presence of the fixed covariance path r). The consequence is that the reduced model doesn\u2019t fit the data as well and increased power to detect association. Similar thought experiments can be used to provide intuition for the other results in Appendix 1\u2014figure 11.\n\n## Discussion\n\nGenetic studies of adopted individuals have a venerable history in the field of behavior genetics (Leahy, 1935; Richardson, 1913). Traditionally, adoption studies were used to determine the relative importance of genes and the environment on trait variability- the basic idea being that similarity between adopted individuals and their biological parents reflects the effect of genes, whereas the similarity between adopted individuals and their adoptive parents reflects the effect of shared environmental influences. Indeed, large studies of adopted individuals played a valuable role in resolving the \u2018Nature vs Nurture\u2019 debate of last century, complementing similar findings from twin studies and other pedigree-based designs (Horn, 1983; Rhea et al., 2013; Scarr and Weinberg, 1983).\n\nIn this manuscript, we developed a new statistical model that uses the information provided by adopted individuals to partition maternal genetic effects into prenatal and postnatal influences on offspring phenotypes. Our method uses SEM to model the expected covariance between genotypes and phenotypes in adopted and non-adopted individuals. We have specifically designed our method to capitalize on the large number of adopted \u2018singleton\u2019 individuals present in large-scale population-based resources like the UK Biobank, exploiting the fact that the expected covariance between offspring genotype and phenotype differs between adopted and non-adopted individuals as a function of postnatal maternal genetic (and other) effects. Whilst our method does not provide explicit mechanistic insight into the reason for the existence of maternal genetic effects (merely a simple partitioning into prenatal and postnatal components, and estimation as to the relative importance of each), follow up studies could help elucidate these mechanisms by for example examining the association between maternal PRS and different prenatal and postnatal maternal phenotypes, and performing mediation and Mendelian randomization analyses (Evans et al., 2019; Armstrong-Carter et al., 2020).\n\nWe are not the first to note that information from adopted individuals could be used to provide valuable information on the effect of the prenatal environment on offspring traits (Loehlin, 2016; Demange et al., 2020). We are the first, however, to our knowledge to develop a model that specifically quantifies prenatal and postnatal maternal genetic effects on offspring phenotypes. Recently, (Domingue and Fletcher, 2020) constructed a PRS to proxy educational attainment using maternal genotypes, and tested the strength of the association between the risk score and offspring educational attainment in children from biological and adoptive families separately (Domingue and Fletcher, 2020). The authors showed that the positive association between the score and educational attainment was stronger in children from biological than adoptive families. Our method differs from Dominique and Fletcher in a number of important respects. First, the focus in their study was on demonstrating indirect parental effects on offspring phenotypes, whereas the focus in our manuscript is specifically on partitioning maternal genetic effects into prenatal and postnatal effects. Second, our method provides point estimates and tests of the significance of prenatal and postnatal maternal genetic effects. Lastly, the method used in Dominique and Fletcher requires both adopted and biological parent-child trios (or alternatively mother-offspring pairs). In contrast, our method at a minimum requires biological parent-child trios (or both biological mother-offspring pairs and biological father-offspring pairs) and adopted singletons only to estimate prenatal and postnatal maternal genetic effects on offspring phenotypes. The inclusion of adoptive mother-adopted offspring pairs and/or biological mother-adopted offspring pairs increases power to partition maternal genetic effects dramatically, but is not a strict requirement of our method if adopted singletons are available.\n\nWe are also not the first to have used adopted individuals in the UK Biobank to estimate the contribution of indirect genetic effects to phenotypic variability. (Cheesman et al., 2020) contrasted adopted and non-adopted individuals in the UK Biobank to investigate evidence for indirect genetic effects on educational attainment and the existence of gene-environment correlation (Cheesman et al., 2020). The authors found that a genome-wide PRS for educational attainment was more strongly associated with educational attainment in non-adopted compared to adopted individuals consistent with the existence of indirect genetic effects on educational attainment. Likewise, G-REML estimates of SNP heritability were also lower in adopted individuals compared to non-adopted individuals (potentially due to the absence/lower amount of passive gene-environment correlation in adopted individuals).\n\nIn a previous study of cognitive and non-cognitive effects on educational attainment (Demange et al., 2020), used three different sorts of study design to estimate the contribution of indirect genetic effects on educational attainment (Demange et al., 2020). They estimated indirect genetic effects by comparing between family and within family genetic effects in sibling pairs (Fulker et al., 1999), by estimating the effect of non-transmitted parental alleles on offspring phenotype in parent-offspring trios, and by computing the difference in PRS associations between adopted and non-adopted individuals. In general, the authors found that estimates of indirect effects using the adoption study design were lower than those produced by the other two models. They interpreted this as being a consequence of the adoption study methodology not capturing the impact of prenatal maternal genetic effects (and also potentially being more robust to assortative mating and population stratification) in contrast to the two other study designs. The present study explicitly capitalizes on differences between adopted and non-adopted individuals in their pattern of genotype-trait covariances to estimate the relative size of prenatal and postnatal maternal genetic effects and to provide formal statistical tests for their presence. Indeed, both (Demange et al., 2020) and our findings are consistent with the existence of prenatal effects on educational attainment (although we believe that at least part of this finding is an artefact and due to unmodelled biological relationships between some adopted children and their adoptive parents in the UK Biobank).\n\nOur power calculations show that in principle the number of adopted individuals in the UK Biobank is unlikely to be sufficient to resolve effects at individual genetic loci but may be large enough to detect evidence for prenatal/postnatal maternal genetic effects in the case of PRS. It is worth noting that, whilst primarily a function of the number of adoptive families in the analysis, the power to partition maternal genetic effects was also influenced by the number of biological families analysed. Intuitively, this is because the other family structures contribute to more precise estimation of for example paternal genetic effects, which in turn provides information on the total size of the maternal genetic component. This observation is important, because the number of adopted individuals in an analysis is likely to be severely constrained, whereas power can sometimes be improved (at least up to a threshold determined by the total number of adoptive families/individuals in the analysis) by increasing the sample size of other relative types that may be easier to ascertain. Regardless, the most efficient way to increase the power to detect prenatal and/or postnatal maternal genetic effects is to genotype adoptive mother-adopted child pairs and/or biological mother-adopted child pairs.\n\nOur empirical analyses in the UK Biobank showed the expected pattern of maternal genetic effects on offspring birth weight (i.e. strong evidence for prenatal but not postnatal maternal genetic effects) but not on offspring educational attainment. Parental educational attainment is known to causally affect offspring educational attainment (Bates et al., 2018; Kong et al., 2018; Hwang et al., 2020). Whilst it is possible, even probable, that some loci may affect offspring educational attainment through prenatal maternal pathways, it is not credible that such mechanisms would lead to larger effect sizes than those from postnatal pathways, or that fathers would exhibit strong evidence of postnatal effects but not mothers. Rather we hypothesize it is possible that our model could have been misspecified in that substantial numbers of adopted individuals in the UK Biobank may have in fact been raised by their biological relatives. This can be thought of as (unintentional) reintroduction of passive gene-environment correlation into the study. In other words, adopted children are brought up by their genetic relatives, who in turn provide the environment in which they are raised. This induces a correlation between adopted individuals\u2019 PRS and their environment. Sensitivity analyses that excluded adopted individuals with known breastfeeding information suggested that including adopted individuals who were raised by genetically related adoptive mothers may lead to inflated prenatal maternal genetic effect estimates. Our simulations with adoptive parents who were siblings or cousins of the biological parents further confirmed that unmodelled relatedness can increase evidence for prenatal maternal genetic effects at the expense of postnatal effects, particularly when paternal genetic and postnatal maternal effects are present, as would be the case with educational attainment (this contrasts with birth weight where we do not expect any paternal or postnatal genetic effects and for which we obtained sensible results). Ideally, one would have detailed information on any genetic relationship between adoptive and biological parents and model these relationships in the SEM (see below).\n\nOur model relies on several strong assumptions, some of which are shown explicitly in Figure 1 and others which are not (see Supplementary file 6 for a summary of some of the major assumptions/limitations of our model). Those assumptions explicitly encoded in Figure 1 include that the total maternal genetic effect can be decomposed into the sum of prenatal and postnatal components, that genetic effects are homogenous across biological and adoptive families, the absence of genotype x environment interaction, the absence of gene-environment correlation (including evocative gene-environment correlation and correlation between the prenatal maternal environment and maternal PRS), any correlation between the genetic scores in spouses is the same in biological and adoptive families, and that fathers do not exert prenatal effects on offspring traits. Assumptions that are not explicitly shown in Figure 1 include that adopted (and adoptive) individuals are not systematically different from other individuals, adopted individuals are placed randomly within the population (including with individuals not genetically related to themselves), that adoption happened soon after birth and that the adopted individuals were raised in one adoptive family, and adopted individuals do not maintain contact with their biological parents. We also ignore any complexities due to for example single mothers raising offspring independently of their fathers etc.\n\nWhilst we expect some of these assumptions to hold (i.e. it is reasonable to expect the absence of substantial prenatal paternal genetic effects for many traits), we expect that others will show varying degrees of violation with differing consequences for the parameter estimates obtained under the misspecified model. For example, it is well appreciated that adopted individuals and adoptive families may differ in several respects to the general population. For example, some studies have reported that adoptive families are better educated and have higher socio-economic status than the population average (Kendler et al., 2015). We argue that violation of this assumption is likely to exert more serious consequences on traditional adoption studies which model the phenotypic correlation between biological, adopted relatives. In contrast, in our design it is more important that genetic effect sizes are homogenous across adopted and non-adopted individuals (i.e. no genotype by environment interaction), and at least currently, there is limited evidence for large genotype by environment interactions at individual genetic loci. Our model also allows for differences in the residual variance across biological and adoptive families (Cheesman et al., 2020). This may be important if for example, adopted children are selectively placed in a reduced range of environments compared to their non-adopted counterparts.\n\nWe argue that of greater consequence for the validity of our model is that any genetic relationship between adoptive and biological parents is accurately modelled and included in the SEM. Through simulation, we have shown that the consequences of model misspecification depend upon which biological and adoptive parents are related, the nature of this relationship, and the proportion of adopted individuals in the sample who have had their relationship misspecified. Our simulations also showed that correctly modelling this relationship returns asymptotically unbiased effect estimates and correct type I error rates. Clearly, knowing these cryptic relationships in the UK Biobank would allow us to properly model them and better estimate prenatal and postnatal maternal genetic effects using this resource. We emphasize that accurately modelling these relationships does not require that actual genotypes for adoptive and/or biological parents be obtained (although this would be advantageous in terms of statistical power) as our SEM allows us to model these relationships in terms of latent variables. Indeed, as large-scale resources like the UK Biobank become more common, we expect that the number of adopted individuals who have GWAS will also increase, and consequently models like the one espoused in this manuscript will become increasingly useful. High quality phenotypic information on these adopted individuals and their adoptive parents including whether they share any biological relationship will be critical to making the most of these resources.\n\nWe have also not modelled the complex effects of assortative mating in our SEM other than including covariance terms between maternal and paternal genotypes and assuming equal genetic variances in parents and their offspring under random mating (i.e. this is equivalent to assuming one round of assortative mating in the parental generation). Positive assortment induces a number of complications when attempting to decompose the offspring phenotypic variance into its constituent sources of variation, including increasing homozygosity and the genetic variance at loci for the trait undergoing assortment relative to that expected under Hardy-Weinberg equilibrium, and inducing correlations between assorting loci across the rest of the genome both within and between individuals in the same family. Spousal correlations for phenotypes (educational attainment: r=0.285; birth weight: r=0.076) and PRS (educational attainment: r=0.117; birth weight: r=0.068) in complete parent-offspring trios in the UK Biobank suggest that assortative mating is likely present for educational attainment, and potentially to a lesser degree for (phenotypes correlated with) birth weight. Recent work by Balbona et al., 2021 and Kim et al., 2021 have shown how PRS of transmitted and non-transmitted alleles in parent-offspring trios can be used to estimate direct and indirect genetic effects on offspring phenotype and the variation attributable to the environmental influence of parents on offspring under phenotypic assortment (Balbona et al., 2021; Kim et al., 2021). It is possible that our basic model could be extended in a similar fashion to incorporate the effect of assortment and estimate some of these effects also.\n\nAlso relevant to this discussion is a series of data simulations performed by Demange et al., 2020 who found that estimates of indirect genetic effects obtained in adoption designs (i.e. which estimate the size of indirect genetic effects by taking the difference between a PRS-trait association in adopted individuals and a PRS-trait association in non-adopted individuals) were less biased by assortative mating and population stratification than estimates of indirect genetic effects obtained in biologically related parent-offspring trio designs (i.e. where estimates of indirect genetic effects are obtained by regressing offspring phenotype on parental genotype conditional on offspring genotype). In the case of population stratification, the intuition behind this observation is that the contaminating effects of substructure are present in both adopted and non-adopted individuals. This contamination cancels out when the PRS-trait association in adopted individuals is subtracted from the PRS-trait association in non-adopted individuals. However, this is not the case in parent-offspring trios, where estimates of indirect genetic effects remain contaminated.\n\nIn the context of our SEM, we expect that unmodelled population stratification will bias estimates of maternal prenatal and postnatal effects away from the null since population stratification will increase the covariance between maternal genotype and offspring phenotype, as well as the covariance between offspring genotype and phenotype in adopted and non-adopted individuals. Because we have limited our empirical analyses to individuals of white European ancestry and residualized the phenotypes for the first five genetic principal components prior to analysis in the SEM, any influence due to population stratification is likely to have been minor in our empirical analyses in the UK Biobank. The influence of assortative mating on our model is more difficult to predict, but our limited exploration of this issue by simulation (data not shown) suggests that the effect of assortative mating on parameter estimates from our SEM is likely to be minor.\n\nFinally, it has not been lost on us, that our framework may provide a basis for correcting Mendelian randomization (MR) studies of intrauterine/early life environmental exposures for some of the contaminating effects of horizontal genetic pleiotropy (Figure 4). The presence of latent horizontal pleiotropy is one of the major threats to the validity of causal inference from MR studies (Hemani et al., 2018). As we have shown, the inclusion of adopted individuals alongside biological families in genetic studies permits the partitioning of maternal genetic effects into prenatal and postnatal components. Consequently, if the focus of an MR study is on estimating the causal effect of a prenatal maternal exposure on an offspring outcome, the covariance between adoptive mother\u2019s genotype and offspring (outcome) phenotype should provide an estimate of genetic effects due to postnatal horizontal genetic pleiotropy. These estimates could then be included in an MR model to correct causal estimates for the effect of postnatal pleiotropy (Figure 4). It is important to realize, however, that this procedure will not correct for the effect of prenatal/early life horizontal pleiotropy as these paths will be present in both biological and adopted individuals and so this approach is not a panacea for dealing with latent pleiotropy in MR studies.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73671/elife-73671-fig4-v2.jpg)\n\n**Figure 4.:** Maternal genotype proxies a perinatal exposure of interest and is used as an instrumental variable to estimate the causal effect of the perinatal exposure on the offspring outcome. The pathway of interest is represented by the blue arrows where the SNP influences the outcome prenatally through the perinatal exposure of interest. In this sort of design, it is important to control for spurious pathways through the offspring genome since offspring genotype will be correlated \u00bd with maternal genotype. Maternal genotype could also influence the offspring phenotype via other pleiotropic paths through the intrauterine environment (red arrow) or through the postnatal environment (dashed arrows). The inclusion of adopted individuals into the research design may be useful in controlling for the effect of horizontal pleiotropic influences through the postnatal environment. Intuitively this is because adoptive mother\u2019s genotype provides an estimate of the relationship between maternal genotype and offspring outcome through postnatal pathways only. This estimate could be included in statistical models of the relationship between maternal genotype and offspring outcome to help correct for the effect of horizontal pleiotropy.\n\nIn conclusion, we present a simple extension to the basic adoption design that includes measured genotypes and enables partitioning of maternal genetic effects into prenatal and postnatal sources of variation. We show in principle that adopted singleton individuals in the UK Biobank combined with biologically related parent-offspring trios and pairs is sufficient to partition maternal genetic effects into prenatal and postnatal sources of variation. However, power calculations suggest that such a partitioning would currently only be realistic for PRS explaining substantial proportions of the variance in offspring phenotype, and that much larger numbers of individuals would be required to achieve such a partitioning at individual loci. In addition, failure to correctly model cryptic relationships between adoptive and biological parents may produce biased estimates of maternal genetic effects and increased type I error rates. Accurate modelling of cryptic relationships is sufficient to bring type I error rate under control and produce unbiased effect estimates. We suggest that there is a possibility that many individuals in the UK Biobank who report being adopted could have been raised by their biological relatives. We conclude that there would be considerable value in following up adopted individuals in the UK Biobank to determine whether they were raised by biological relatives, and if so, to precisely ascertain the nature of the relationship. These adopted individuals could then be used in informative statistical genetics models like the one described in the present manuscript to further elucidate the genetic architecture of complex traits and diseases.\n\n### Code availability\n\nR code for performing the analyses described in this manuscript is available in the Source Code File.\n",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "8c1b97bf-1923-4caa-8ef3-7d109d0afae0",
+      "submission_id": "cda9efa6-e116-4cd5-ac69-bd19b2b40d11",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- George H Perry, https://ror.org/04p491231 Pennsylvania State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73671.sa0](https://doi.org/10.7554/eLife.73671.sa0)\n\nThe authors propose an innovative and sound method to leverage the adoption of a design for disentangling prenatal and postnatal genetic effects. This work will be of interest to scientists interested in the intergenerational transmission of phenotypes through genetic pathways.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- George H Perry, https://ror.org/04p491231 Pennsylvania State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73671.sa1](https://doi.org/10.7554/eLife.73671.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Using adopted individuals to partition indirect maternal genetic effects into prenatal and postnatal effects on offspring phenotypes\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by George Perry as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Stephane Paquin (Reviewer #2).\n\nThe Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe reviewers of your paper were positive about your work, but also identified several limitations that are not properly accounted in the current version of the paper. Alongside the critiques the reviews are so constructive that reasonable paths forward on each of the points raised below \u2013 primarily with thorough textual changes only \u2013 should be readily apparent.\n\nReviewer #1 (Recommendations for the authors):\n\nGWAS data used for polygenic scores\n\nThe decision to include only genome-wide significant SNPs was not justified. Please could the authors fill the readers in on this? Especially for EA, a highly polygenic trait, why not include all SNPs? It is also not clear why they performed the sensitivity analysis with the less powered Okbay GWAS \u2013 perhaps this could be put in the Supplementary Information. Can the authors comment on how their results are affected by pre- and post-natal IGEs being captured by the original GWAS used to construct polygenic scores (discussed in Fletcher et al., 2021)?\n\nPositioning among prior work\n\nThe authors could spell out more for readers their answer to the 'big picture' question of why it is useful to distinguish pre- and post-natal maternal effects, instead of just saying it's a natural question (see Introduction). Also in the introduction, it does not seem accurate to say that partitioning variation could yield mechanistic insights. Although the current contribution is very valuable, don't we need different kinds of designs and measures to understand mechanisms? In this regard, the authors should discuss the merits of their study compared to that of Armstrong-Carter et al. That study does not offer a principled way to separate pre- and post-natal effects, but it does try to work out which kinds of maternal phenotypes are involved in so-called pre-natal genetic nurture effects captured by EA PGS.\n\nThe authors should also engage more with other studies to clarify the novel aspects of their contribution. They describe in the Discussion the Domingue and Fletcher (2020) paper, but more relevant is Cheesman et al's., (2020) study design using the nonadopted-adopted polygenic score comparison in UKBB to estimate post-natal parental indirect genetic effects. Demange et al., (2021) estimated pre-natal parental indirect genetic effects by comparing estimates from adoption and sibling designs (sib-based estimates contain pre- and post-natal effects, but adoption only contain the latter). Although this was for a non-cognitive skills polygenic score and not EA or BW, it is worth discussing their approach and comparing against their estimates. The Demange et al., approach means that estimates of pre-natal maternal genetic effects may also include assortative mating and population stratification. There is a general paragraph on AM in the Discussion, but how do the authors think that AM and popstrat will load in their model? Recent evidence from UKBB suggests that it is important to consider the role of population stratification particularly when studying EA (Young et al., 2020).\n\nMisc.\n\nIt is neat to have a negative control phenotype for post-natal genetic effects (birthweight). Can the authors try out a negative control for pre-natal genetic effects too? If the maternal pre-natal effect were significant for something paternal substance use, this would bolster the idea that relatedness among adoptees and their adoptive parents causes inflation of this estimate.\n\nThe use of breastfeeding data to identify those who were not adopted by relatives is smart. It would be worth checking how selected this sample is for some key traits (birthweight, EA). Also, could more information be leveraged to increase accuracy? Many participants just don't know the answer to that question, could have remembered incorrectly, and wetnurses (i.e., breastfeeding by non-relatives) also used to be common. Adoptions in later cohorts might have become more 'organized' (happening earlier in life and involving non-relatives). Perhaps it's worth cutting out some of the older adoptees? The authors could also try limiting the sample further to those who also report their birthweight.\n\nWas a relatedness cut-off used to ensure that each family was independent?\n\nThe authors could cite Wang et al., (2021) when saying that it is unfeasible for paternal genetic effects to be so much bigger than maternal effects \u2013 this meta-analysis found equal effects of paternal and maternal EA PGS on offspring educational outcomes.\n\nReferences\n\nArmstrong-Carter E, Trejo S, Hill LJ, Crossley KL, Mason D, Domingue BW. The earliest origins of genetic nurture: The prenatal environment mediates the association between maternal genetics and child development. Psychological science. 2020 Jul;31(7):781-91.\n\nCheesman R, Hunjan A, Coleman JR, Ahmadzadeh Y, Plomin R, McAdams TA, Eley TC, Breen G. Comparison of adopted and nonadopted individuals reveals gene-environment interplay for education in the UK Biobank. Psychological science. 2020 May;31(5):582-91.\n\nDemange PA, Hottenga JJ, Abdellaoui A, Eilertsen EM, Malanchini M, Domingue BW, de Zeeuw EL, Rimfeld K, Eley TC, Boomsma DI, van Bergen E. Estimating effects of parents' cognitive and non-cognitive skills on offspring education using polygenic scores. bioRxiv. 2021 Jan 1:2020-09.\n\nFletcher J, Wu Y, Li T, Lu Q. Interpreting polygenic score effects in sibling analysis. bioRxiv. 2021 Jan 1.\n\nWang B, Baldwin JR, Schoeler T, Cheesman R, Barkhuizen W, Dudbridge F, Bann D, Morris TT, Pingault JB. Robust genetic nurture effects on education: A systematic review and meta-analysis based on 38,654 families across 8 cohorts. The American Journal of Human Genetics. 2021 Aug 19.\n\nYoung AI, Nehzati SM, Lee C, Benonisdottir S, Cesarini D, Benjamin DJ, Turley P, Kong A. Mendelian imputation of parental genotypes for genome-wide estimation of direct and indirect genetic effects. BioRxiv. 2020 Jan 1.\n\nReviewer #2 (Recommendations for the authors):\n\nI have no other specific recommendations. I think the approach and code provided are sound. I would mostly appreciate that the authors consider adding more details on the limitations (and possible extensions) of their approach regarding gene-environment interplay (both gene-environment moderation and gene-environment correlation).\n",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1d99bc11-1d61-4118-95aa-21d90a888ac2",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C1",
+      "claim": "Maternal genetic effects can be defined as the effect of a mother's genotype on the phenotype of her offspring, independent of the offspring's genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal genetic effects can be defined as the effect of a mother's genotype on the phenotype of her offspring, independent of the offspring's genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement that establishes the meaning of maternal genetic effects for the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "09ceb591-8fb4-4f80-ab71-414e62bcb4fc",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C2",
+      "claim": "Maternal genetic effects can act via the intrauterine environment during pregnancy and/or via the postnatal environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal genetic effects can act via the intrauterine environment during pregnancy and/or via the postnatal environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the pathways through which maternal genetic effects operate, drawing on established understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "e60c095c-6d03-4137-b6ba-5179f5e2e844",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C3",
+      "claim": "The manuscript presents a structural equation modelling (SEM) extension to the basic adoption design that partitions maternal genetic effects into prenatal and postnatal effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In this manuscript, we present a simple extension to the basic adoption design that uses structural equation modelling (SEM) to partition maternal genetic effects into prenatal and postnatal effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the methodological contribution of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "3756e6d9-3aeb-483e-84d2-443baff078c0",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C4",
+      "claim": "The model was applied to polygenic scores of educational attainment and birth weight associated variants in up to 5,178 adopted singletons, 943 trios, 2687 mother-offspring pairs, 712 father-offspring pairs and 347,980 singletons from the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "We apply our model to polygenic scores of educational attainment and birth weight associated variants, in up to 5,178 adopted singletons, 943 trios, 2687 mother-offspring pairs, 712 father-offspring pairs and 347,980 singletons from the UK Biobank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the empirical application of the model with specific sample sizes from UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "fda5ef8f-c485-49ee-8c6f-1069e790417b",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C5",
+      "claim": "The results show the expected pattern of maternal genetic effects on offspring birth weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show the expected pattern of maternal genetic effects on offspring birth weight, but unexpectedly large prenatal maternal genetic effects on offspring educational attainment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of empirical findings from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "c56cda49-0f3b-4723-b4d6-4aed3cbe2efc",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C6",
+      "claim": "The results show unexpectedly large prenatal maternal genetic effects on offspring educational attainment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show the expected pattern of maternal genetic effects on offspring birth weight, but unexpectedly large prenatal maternal genetic effects on offspring educational attainment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of empirical findings that contradicts expectations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "5765533a-6f34-4b51-bea1-4fcbea356d08",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C7",
+      "claim": "Sensitivity and simulation analyses suggest the unexpected result for educational attainment may be at least partially due to adopted individuals in the UK Biobank being raised by their biological relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity and simulation analyses suggest this result may be at least partially due to adopted individuals in the UK Biobank being raised by their biological relatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on additional analyses (sensitivity and simulation) performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "fb7d7aa5-bb69-48e3-85cd-a36c0668a427",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C8",
+      "claim": "Accurate modelling of cryptic relationships is sufficient to bring type I error rate under control and produce asymptotically unbiased estimates of prenatal and postnatal maternal genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that accurate modelling of these sorts of cryptic relationships is sufficient to bring type I error rate under control and produce asymptotically unbiased estimates of prenatal and postnatal maternal genetic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on simulation studies described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "a0264c3e-a2a4-42aa-b5b1-f602cfa98645",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C9",
+      "claim": "Over the last few years there has been a resurgence of interest in identifying and quantifying maternal genetic effects on offspring phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the last few years there has been a resurgence of interest in identifying and quantifying maternal genetic effects on offspring phenotypes, both from the perspective of variance component estimation (Balbona et al., 2021; Bates et al., 2018; Eaves et al., 2014; Eilertsen et al., 2021; Kim et al., 2021; Kong et al., 2018; Qiao et al., 2020; Tubbs et al., 2020) and estimating the causal effect of specific maternal environmental exposures on offspring outcomes through Mendelian randomization based approaches (Evans et al., 2019; Lawlor et al., 2017; Moen et al., 2020; Tyrrell et al., 2016; Warrington et al., 2019; Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "7a845e6c-dae0-42f9-b747-41c4f3203696",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C10",
+      "claim": "Following the advent of transgenerational genome-wide association studies, maternal genetic effects are beginning to be identified at individual genetic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, following the advent of transgenerational genome-wide association studies, maternal genetic effects are beginning to be identified at individual genetic loci (Warrington et al., 2019; Beaumont et al., 2018), a trend that is set to continue as the sample sizes of such studies increase further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to specific GWAS studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "4e9110c0-6178-4402-85a4-7823504aef77",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C11",
+      "claim": "Resolving maternal effects into prenatal and postnatal sources of variation could be a valuable first step in eventually elucidating the underlying mechanisms behind these associations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, resolving maternal effects into prenatal and postnatal sources of variation could be a valuable first step in eventually elucidating the underlying mechanisms behind these associations (Armstrong-Carter et al., 2020), directing investigators to where they should focus their attention, and in the case of disease-related phenotypes, yielding potentially important information regarding the optimal timing of interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential value of the approach, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "d9053921-c77b-4052-a223-ecbe112057a1",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C12",
+      "claim": "An adopted individual's phenotype is influenced by prenatal intrauterine factors as proxied by their biological mother's genome, and postnatal influences as proxied by their adoptive mother's and father's genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that an adopted individual's phenotype is influenced by prenatal intrauterine factors as proxied by their biological mother's genome, and postnatal influences as proxied by their adoptive mother's and father's genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental assumption of the model described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "e4a50929-a24f-4813-96eb-12320b404f21",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C13",
+      "claim": "The phenotype of individuals who have not been adopted are influenced by prenatal intrauterine factors resulting from their biological mother's genome, and postnatal factors as proxied by their biological mother's and father's genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we assume that the phenotype of individuals who have not been adopted are influenced by prenatal intrauterine factors resulting from their biological mother's genome, and postnatal factors as proxied by their biological mother's and father's genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental assumption of the model for non-adopted individuals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "fc25b30f-c5b6-4ea3-bb42-d52e566cf7a4",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C14",
+      "claim": "More than 7000 individuals in the UK Biobank study report being adopted.",
+      "claim_type": "EXPLICIT",
+      "source": "This is potentially important given that >7000 individuals in the UK Biobank study (Sudlow et al., 2015) report being adopted, and hence this publicly available dataset may represent a powerful resource for identifying prenatal maternal effects and partitioning maternal genetic effects into prenatal and postnatal sources of variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the UK Biobank dataset, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "5e41d87d-35bf-41d0-9170-dd78aa693965",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C15",
+      "claim": "The covariance between an adopted individual's genotype and phenotype is a function of prenatal (but not postnatal) maternal genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The intuition behind this surprising fact is that the covariance between an adopted individual's genotype and phenotype is a function of prenatal (but not postnatal) maternal genetic effects (Figure 1, G5 to G7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical claim about the model structure, illustrated in Figure 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "24fa6888-0cc8-4d06-88b1-cc9bf240e44a",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C16",
+      "claim": "The covariance between a non-adopted individual and their own phenotype includes contributions from prenatal and postnatal genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the covariance between a non-adopted individual and their own phenotype includes contributions from prenatal and postnatal genetic effects (Figure 1, G1 to G4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical claim about the model structure for non-adopted individuals, illustrated in Figure 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "c8b3bbf5-ac72-4445-84b1-561811dea1dd",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C17",
+      "claim": "The difference between the genotype-phenotype covariance in adopted and non-adopted singleton individuals provides important information on the likely size of postnatal genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the difference between the genotype-phenotype covariance in adopted and non-adopted singleton individuals provides important information on the likely size of postnatal genetic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "ff85aac3-3a13-468e-aa85-ab1318983bdb",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C18",
+      "claim": "The power to detect prenatal maternal genetic effects increased with increasing size of postnatal maternal genetic effects, paternal genetic effects, and offspring genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The power to detect prenatal maternal genetic effects increased with increasing size of postnatal maternal genetic effects, paternal genetic effects, and offspring genetic effects (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from power calculations, illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "05bf1a89-1976-443e-b277-466909da0b5b",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C21",
+      "claim": "The power to detect prenatal and postnatal maternal genetic effects increased with the number of adopted singleton individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The power to detect prenatal and postnatal maternal genetic effects increased with the number of adopted singleton individuals, and more dramatically when the number of adoptive mother-adopted offspring pairs and/or biological mother-adopted offspring pairs increased (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from power calculations, illustrated in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "ed9aece0-0893-4a9f-8c56-a8b34f9e54bc",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C22",
+      "claim": "Power to detect prenatal maternal genetic effects increased most rapidly with increasing numbers of biological-mother adopted child pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Power to detect prenatal maternal genetic effects increased most rapidly with increasing numbers of biological-mother adopted child pairs (G7), whereas the power to detect postnatal maternal genetic effects increased most strongly with increasing numbers of was provided by adoptive mother-adopted child pairs (G6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from power calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "75bfec29-d581-4e5d-90f3-6fc0ce0babd1",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C23",
+      "claim": "The power to detect postnatal maternal genetic effects increased most strongly with increasing numbers of adoptive mother-adopted child pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Power to detect prenatal maternal genetic effects increased most rapidly with increasing numbers of biological-mother adopted child pairs (G7), whereas the power to detect postnatal maternal genetic effects increased most strongly with increasing numbers of was provided by adoptive mother-adopted child pairs (G6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from power calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "6b2fe3d9-cb44-4b61-aa41-134af0639afd",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C24",
+      "claim": "The power to detect prenatal and postnatal maternal genetic effects also increased with the number of biological families in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the power to detect prenatal and postnatal maternal genetic effects also increased with the number of biological families in the analysis (G1 to G4) (Figure 3); however, this increase asymptoted with maximal possible power depending primarily on the number of adopted individuals in the analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from power calculations, illustrated in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "a7631917-17e8-4f76-9a76-b16ec6cdae02",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C25",
+      "claim": "Results from simulations showed good concordance with asymptotic power calculations and appropriate type I error rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from simulations showed good concordance with asymptotic power calculations and appropriate type I error rates (Supplementary file 3, Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation finding from simulation studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "ca03733f-b418-4088-8ee7-ab01cbf44dc7",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C26",
+      "claim": "PRS for birth weight exhibited significant evidence of prenatal maternal genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "PRS for birth weight exhibited significant evidence of prenatal maternal genetic effects, offspring genetic effects (in the opposite direction), and no significant evidence for postnatal maternal or paternal genetic effects (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an empirical finding from UK Biobank analysis, shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "ff40685d-4fbe-4fc7-bc24-ab1e54d105cd",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C27",
+      "claim": "PRS for birth weight exhibited significant evidence of offspring genetic effects in the opposite direction to maternal effects.",
+      "claim_type": "EXPLICIT",
+      "source": "PRS for birth weight exhibited significant evidence of prenatal maternal genetic effects, offspring genetic effects (in the opposite direction), and no significant evidence for postnatal maternal or paternal genetic effects (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an empirical finding from UK Biobank analysis, shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "b3106264-d4ce-449d-8f3f-7a16f60e1fe6",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C28",
+      "claim": "PRS for birth weight showed no significant evidence for postnatal maternal or paternal genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "PRS for birth weight exhibited significant evidence of prenatal maternal genetic effects, offspring genetic effects (in the opposite direction), and no significant evidence for postnatal maternal or paternal genetic effects (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an empirical finding from UK Biobank analysis, shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "9a53c00e-cdd6-42b2-a93f-f569b044a45f",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C29",
+      "claim": "Birth weight is known to be affected by both maternal and fetal genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of results is expected since (a) birth weight is known to be affected by both maternal and fetal genetic effects, (b) maternal and offspring genetic effects on birth weight for many of the SNPs were in opposite directions, (c) conditional estimates of maternal and offspring genetic effects are negatively correlated, (d) in the present study SNPs comprising the PRS were selected for their strong maternal effects on offspring birth weight, and (e) birth weight is a perinatal phenotype and so by definition cannot be influenced by postnatal maternal (or paternal) genetic effects (Warrington et al., 2019; Beaumont et al., 2018; Warrington et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "b6c2a24c-3319-4c6e-b63e-3f1236aeacc4",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C30",
+      "claim": "Birth weight is a perinatal phenotype and so by definition cannot be influenced by postnatal maternal or paternal genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of results is expected since (a) birth weight is known to be affected by both maternal and fetal genetic effects, (b) maternal and offspring genetic effects on birth weight for many of the SNPs were in opposite directions, (c) conditional estimates of maternal and offspring genetic effects are negatively correlated, (d) in the present study SNPs comprising the PRS were selected for their strong maternal effects on offspring birth weight, and (e) birth weight is a perinatal phenotype and so by definition cannot be influenced by postnatal maternal (or paternal) genetic effects (Warrington et al., 2019; Beaumont et al., 2018; Warrington et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical statement about the nature of birth weight as a phenotype, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "3474dd18-21dc-4019-b0e7-2e515e535d28",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C31",
+      "claim": "Analyses of offspring educational attainment showed evidence for a prenatal maternal genetic effect, a paternal genetic effect, and an offspring genetic effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of offspring educational attainment, our analyses showed evidence for a prenatal maternal genetic effect, a paternal genetic effect, and an offspring genetic effect (Table 2, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an empirical finding from UK Biobank analysis, shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "6b59b7fe-e0f7-4c2e-a441-6e6c1f341870",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C32",
+      "claim": "The absence of a significant positive postnatal maternal genetic effect on offspring educational attainment was surprising.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of a significant positive postnatal maternal genetic effect on offspring educational attainment was surprising given that maternal genetic effects should be mediated through maternal educational attainment, and therefore should mostly involve postnatal pathways (although it is possible that some of the relationship between maternal genotype and offspring educational attainment could be mediated through prenatal effects- e.g. less educated mothers consuming more alcohol during pregnancy which then has adverse effects on offspring cognitive development and educational attainment etc), and previous studies have shown that the effect of paternal and maternal PRS on educational attainment are roughly similar (Wang et al., 2021) that is suggesting the absence of prenatal maternal genetic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the empirical findings in the context of prior expectations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "74840ecf-2265-4425-a9e7-eaace3958e4c",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C33",
+      "claim": "Previous studies have shown that the effect of paternal and maternal PRS on educational attainment are roughly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of a significant positive postnatal maternal genetic effect on offspring educational attainment was surprising given that maternal genetic effects should be mediated through maternal educational attainment, and therefore should mostly involve postnatal pathways (although it is possible that some of the relationship between maternal genotype and offspring educational attainment could be mediated through prenatal effects- e.g. less educated mothers consuming more alcohol during pregnancy which then has adverse effects on offspring cognitive development and educational attainment etc), and previous studies have shown that the effect of paternal and maternal PRS on educational attainment are roughly similar (Wang et al., 2021) that is suggesting the absence of prenatal maternal genetic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "82b58910-503f-4ef2-ba5b-61f2597a16b3",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C34",
+      "claim": "When adopted individuals with breastfeeding information were excluded, estimates of the prenatal maternal genetic effect on educational attainment reduced in size and became non-significant.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of these analyses showed that estimates of the prenatal maternal genetic effect reduced in size and became non-significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from sensitivity analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "d798b0ba-10ad-434b-93b7-31008e6b8e41",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C35",
+      "claim": "The presence of adoptive parents who were genetically related to their adopted offspring could increase the type 1 error rate to detect prenatal maternal genetic effects and bias estimates when these relationships were not accurately modelled in the SEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations showed that the presence of adoptive parents who were genetically related to their adopted offspring could in some cases increase the type 1 error rate to detect prenatal maternal genetic effects and bias estimates of prenatal and postnatal maternal genetic effects when these relationships were not accurately modelled in the SEM (Appendix 1\u2014figure 3, Appendix 1\u2014figure 4, Appendix 1\u2014figure 5, Appendix 1\u2014figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulation studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "fcb07949-a199-4821-b232-c933474a7d61",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C36",
+      "claim": "When the relationship between biological and adoptive parents' genotypes was correctly modelled, there was no inflation in type 1 error rates and effect estimates were unbiased.",
+      "claim_type": "EXPLICIT",
+      "source": "When we correctly modelled the relationship between biological and adoptive parents' genotypes, there was no inflation in type 1 error rates and effect estimates were unbiased (Appendix 1\u2014figure 7, Appendix 1\u2014figure 8, Appendix 1\u2014figure 9, Appendix 1\u2014figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulation studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "264b661f-0fc6-4b3a-85ca-7403c4e4a239",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C37",
+      "claim": "Genetic studies of adopted individuals have a venerable history in the field of behavior genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic studies of adopted individuals have a venerable history in the field of behavior genetics (Leahy, 1935; Richardson, 1913).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by historical citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "b4d4863e-aefd-45a9-b2c2-aba515a3d75a",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C38",
+      "claim": "Large studies of adopted individuals played a valuable role in resolving the 'Nature vs Nurture' debate of last century.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, large studies of adopted individuals played a valuable role in resolving the 'Nature vs Nurture' debate of last century, complementing similar findings from twin studies and other pedigree-based designs (Horn, 1983; Rhea et al., 2013; Scarr and Weinberg, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to adoption studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "4fbfab89-a4f3-4161-b57b-40375d396091",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C39",
+      "claim": "The method provides point estimates and tests of the significance of prenatal and postnatal maternal genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our method provides point estimates and tests of the significance of prenatal and postnatal maternal genetic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological capabilities of the approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "1f22ccc6-38c1-465e-8468-e323b28fe027",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C40",
+      "claim": "Cheesman et al., 2020 found that a genome-wide PRS for educational attainment was more strongly associated with educational attainment in non-adopted compared to adopted individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors found that a genome-wide PRS for educational attainment was more strongly associated with educational attainment in non-adopted compared to adopted individuals consistent with the existence of indirect genetic effects on educational attainment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "6784dbdf-ae9d-439c-9817-567fade609ad",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C41",
+      "claim": "G-REML estimates of SNP heritability were lower in adopted individuals compared to non-adopted individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, G-REML estimates of SNP heritability were also lower in adopted individuals compared to non-adopted individuals (potentially due to the absence/lower amount of passive gene-environment correlation in adopted individuals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from Cheesman et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "be3327e5-e0b9-46d8-bf22-b6dc8d05fad9",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C42",
+      "claim": "Demange et al., 2020 found that estimates of indirect effects using the adoption study design were lower than those produced by sibling-based and trio-based models.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the authors found that estimates of indirect effects using the adoption study design were lower than those produced by the other two models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "2def5e45-1e30-4b1b-bf8f-0445f2aeedb8",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C43",
+      "claim": "The number of adopted individuals in the UK Biobank is unlikely to be sufficient to resolve effects at individual genetic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Our power calculations show that in principle the number of adopted individuals in the UK Biobank is unlikely to be sufficient to resolve effects at individual genetic loci but may be large enough to detect evidence for prenatal/postnatal maternal genetic effects in the case of PRS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from power calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "f91aebff-a461-4e4f-88f6-cf017e569f49",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C44",
+      "claim": "The number of adopted individuals in the UK Biobank may be large enough to detect evidence for prenatal/postnatal maternal genetic effects in the case of PRS.",
+      "claim_type": "EXPLICIT",
+      "source": "Our power calculations show that in principle the number of adopted individuals in the UK Biobank is unlikely to be sufficient to resolve effects at individual genetic loci but may be large enough to detect evidence for prenatal/postnatal maternal genetic effects in the case of PRS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from power calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "7f31058d-58fd-44a0-a080-17d1f397e42f",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C45",
+      "claim": "The most efficient way to increase the power to detect prenatal and/or postnatal maternal genetic effects is to genotype adoptive mother-adopted child pairs and/or biological mother-adopted child pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, the most efficient way to increase the power to detect prenatal and/or postnatal maternal genetic effects is to genotype adoptive mother-adopted child pairs and/or biological mother-adopted child pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from power calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "9b2a6094-6b72-430f-a046-1dd8f5d385c0",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C46",
+      "claim": "Parental educational attainment is known to causally affect offspring educational attainment.",
+      "claim_type": "EXPLICIT",
+      "source": "Parental educational attainment is known to causally affect offspring educational attainment (Bates et al., 2018; Kong et al., 2018; Hwang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "93170683-367c-4996-916f-6ac2121ef8e4",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C47",
+      "claim": "It is not credible that prenatal mechanisms would lead to larger effect sizes than postnatal pathways for educational attainment.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst it is possible, even probable, that some loci may affect offspring educational attainment through prenatal maternal pathways, it is not credible that such mechanisms would lead to larger effect sizes than those from postnatal pathways, or that fathers would exhibit strong evidence of postnatal effects but not mothers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the nature of educational attainment.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "924aac51-cab7-4477-818d-d2f56145dfb7",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C48",
+      "claim": "Substantial numbers of adopted individuals in the UK Biobank may have been raised by their biological relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather we hypothesize it is possible that our model could have been misspecified in that substantial numbers of adopted individuals in the UK Biobank may have in fact been raised by their biological relatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain unexpected findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "42baf904-1206-441a-9661-4695a6de5f9a",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C49",
+      "claim": "Sensitivity analyses that excluded adopted individuals with known breastfeeding information suggested that including adopted individuals who were raised by genetically related adoptive mothers may lead to inflated prenatal maternal genetic effect estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity analyses that excluded adopted individuals with known breastfeeding information suggested that including adopted individuals who were raised by genetically related adoptive mothers may lead to inflated prenatal maternal genetic effect estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from sensitivity analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "dd411468-ba04-4762-8d21-0b10cdae208b",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C50",
+      "claim": "Some studies have reported that adoptive families are better educated and have higher socio-economic status than the population average.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, some studies have reported that adoptive families are better educated and have higher socio-economic status than the population average (Kendler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "0975e2c4-b13f-4793-b81d-8fd46b6b6df8",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C51",
+      "claim": "There is limited evidence for large genotype by environment interactions at individual genetic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in our design it is more important that genetic effect sizes are homogenous across adopted and non-adopted individuals (i.e. no genotype by environment interaction), and at least currently, there is limited evidence for large genotype by environment interactions at individual genetic loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of evidence in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "341833cf-5383-4433-9f0c-ef228af94581",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C52",
+      "claim": "Accurately modelling cryptic relationships does not require that actual genotypes for adoptive and/or biological parents be obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "We emphasize that accurately modelling these relationships does not require that actual genotypes for adoptive and/or biological parents be obtained (although this would be advantageous in terms of statistical power) as our SEM allows us to model these relationships in terms of latent variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of the SEM approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "eb03e26f-72ec-4421-b1e6-2d33528a2c1b",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C53",
+      "claim": "Spousal correlations for educational attainment phenotype in complete parent-offspring trios in the UK Biobank is r=0.285.",
+      "claim_type": "EXPLICIT",
+      "source": "Spousal correlations for phenotypes (educational attainment: r=0.285; birth weight: r=0.076) and PRS (educational attainment: r=0.117; birth weight: r=0.068) in complete parent-offspring trios in the UK Biobank suggest that assortative mating is likely present for educational attainment, and potentially to a lesser degree for (phenotypes correlated with) birth weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical observation from UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "55c49ac4-edfe-48d0-bbf2-dbc5acfe3a7f",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C54",
+      "claim": "Spousal correlations for birth weight phenotype in complete parent-offspring trios in the UK Biobank is r=0.076.",
+      "claim_type": "EXPLICIT",
+      "source": "Spousal correlations for phenotypes (educational attainment: r=0.285; birth weight: r=0.076) and PRS (educational attainment: r=0.117; birth weight: r=0.068) in complete parent-offspring trios in the UK Biobank suggest that assortative mating is likely present for educational attainment, and potentially to a lesser degree for (phenotypes correlated with) birth weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical observation from UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "895caf1a-c9f7-4ee9-ac8c-ed24c6d2b009",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C55",
+      "claim": "Spousal correlations for educational attainment PRS in complete parent-offspring trios in the UK Biobank is r=0.117.",
+      "claim_type": "EXPLICIT",
+      "source": "Spousal correlations for phenotypes (educational attainment: r=0.285; birth weight: r=0.076) and PRS (educational attainment: r=0.117; birth weight: r=0.068) in complete parent-offspring trios in the UK Biobank suggest that assortative mating is likely present for educational attainment, and potentially to a lesser degree for (phenotypes correlated with) birth weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical observation from UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "ae8104d8-755f-4966-aa02-e90cacd8f8f2",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C56",
+      "claim": "Spousal correlations for birth weight PRS in complete parent-offspring trios in the UK Biobank is r=0.068.",
+      "claim_type": "EXPLICIT",
+      "source": "Spousal correlations for phenotypes (educational attainment: r=0.285; birth weight: r=0.076) and PRS (educational attainment: r=0.117; birth weight: r=0.068) in complete parent-offspring trios in the UK Biobank suggest that assortative mating is likely present for educational attainment, and potentially to a lesser degree for (phenotypes correlated with) birth weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an empirical observation from UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "4c9d572c-5afa-4bb9-8c13-97f573f3e278",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C57",
+      "claim": "Assortative mating is likely present for educational attainment in the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "Spousal correlations for phenotypes (educational attainment: r=0.285; birth weight: r=0.076) and PRS (educational attainment: r=0.117; birth weight: r=0.068) in complete parent-offspring trios in the UK Biobank suggest that assortative mating is likely present for educational attainment, and potentially to a lesser degree for (phenotypes correlated with) birth weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed spousal correlations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "1e3e2940-a964-4836-be71-6137e91070e8",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C58",
+      "claim": "The presence of latent horizontal pleiotropy is one of the major threats to the validity of causal inference from MR studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of latent horizontal pleiotropy is one of the major threats to the validity of causal inference from MR studies (Hemani et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "8567bfcc-f170-4ec7-adcb-17c9476c5879",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C59",
+      "claim": "The covariance between adoptive mother's genotype and offspring phenotype should provide an estimate of genetic effects due to postnatal horizontal genetic pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, if the focus of an MR study is on estimating the causal effect of a prenatal maternal exposure on an offspring outcome, the covariance between adoptive mother's genotype and offspring (outcome) phenotype should provide an estimate of genetic effects due to postnatal horizontal genetic pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about how the model could be applied to MR studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "16342189-2fa7-406e-8833-28e01363e69b",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C60",
+      "claim": "The approach will not correct for the effect of prenatal/early life horizontal pleiotropy in MR studies.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to realize, however, that this procedure will not correct for the effect of prenatal/early life horizontal pleiotropy as these paths will be present in both biological and adopted individuals and so this approach is not a panacea for dealing with latent pleiotropy in MR studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the proposed approach for MR studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "d9f0716c-0bdb-4cae-abf4-8e6f683d03e1",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C61",
+      "claim": "There would be considerable value in following up adopted individuals in the UK Biobank to determine whether they were raised by biological relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that there would be considerable value in following up adopted individuals in the UK Biobank to determine whether they were raised by biological relatives, and if so, to precisely ascertain the nature of the relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "cbb3cbcc-e352-4131-a52c-dff23407ae46",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C62",
+      "claim": "The UK Biobank study was approved by the UK National Health Service National Research Ethics Service.",
+      "claim_type": "EXPLICIT",
+      "source": "The UK Biobank study was approved by the UK National Health Service National Research Ethics Service.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "dc2599f7-d1d9-4a19-b9ee-32df75b13a97",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C63",
+      "claim": "This study was approved by the Human Research Ethics Committee at the University of Queensland (approval number: 2019002705).",
+      "claim_type": "EXPLICIT",
+      "source": "This study was approved by the Human Research Ethics Committee at the University of Queensland (approval number: 2019002705).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "f953760e-1368-478a-baf2-5d31fe7ea3cb",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C64",
+      "claim": "Only individuals of European ancestry were included in the UK Biobank analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "We only included individuals of European ancestry, determined by: (i) projecting their genetic principal components onto the 1,000 Genome sample and then K-means clustering or (ii) those who self-reported ethnic background of either 'British', 'Irish', 'Irish', 'White', or 'Any other white background'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "7f7409fd-b7ab-4ddc-8349-7892c4900dbd",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C65",
+      "claim": "Family relationships in the UK Biobank were determined using the software KING.",
+      "claim_type": "EXPLICIT",
+      "source": "Family relationships were determined by the pairwise kinship estimated across the whole UK Biobank sample using the software KING (Manichaikul et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "8225569f-f483-4ede-abf0-2a5e724b01e7",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C66",
+      "claim": "The birth weight analysis included 731 biological trios, 2014 biological mother-offspring pairs, 485 biological father-offspring pairs, 168,522 singletons raised by their biological parents, 1084 singleton individuals who reported being adopted, and 16 biological mother-adopted offspring pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "These included 731 biological trios, 2014 biological mother-offspring pairs, 485 biological father-offspring pairs, 168,522 singletons raised by their biological parents, 1084 singleton individuals who reported being adopted, and 16 biological mother-adopted offspring pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample composition for the birth weight analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "1b09ce21-31ae-4dbc-84b1-b68ac112f3e7",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C67",
+      "claim": "20 SNPs known to influence birth weight via maternal pathways with p<5 x 10\u20138 were used to construct PRS for birth weight.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated each individual's weighted PRS (i.e. sums of the birth weight-increasing allele weighted by the effect size) and unweighted PRS (i.e. counts of the birth weight increasing allele) for birth weight using 20 SNPs known to influence birth weight via maternal pathways with p<5 x 10\u20138 from a recent GWAS of birth weight (Warrington et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the PRS construction methodology, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "0c09e3b5-af2d-42a7-b9df-cfc87869ef12",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C68",
+      "claim": "The educational attainment analysis included 943 biological parent-offspring trios, 2687 biological mother-offspring pairs, 712 biological father-offspring pairs, 347,980 singletons from biological families, 5178 adopted singletons and 39 biological mother-adopted offspring pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The final dataset included 943 biological parent-offspring trios, 2687 biological mother-offspring pairs, 712 biological father-offspring pairs, 347,980 singletons from biological families, 5178 adopted singletons and 39 biological mother-adopted offspring pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample composition for the educational attainment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "2ce5ee19-d0e6-4cb9-8c12-623364399dc5",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C69",
+      "claim": "1267 SNPs from the current largest GWAS of educational attainment were used to construct PRS for educational attainment.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated weighted PRS (i.e. sums of the educational attainment increasing allele and weighted by the effect size) and unweighted PRS (i.e. counts of the educational attainment increasing allele) using 1267 SNPs from the current largest GWAS of educational attainment (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the PRS construction methodology, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "de2af648-cef6-4401-b9e5-e68e85fec885",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C70",
+      "claim": "Only genome-wide significant SNPs were included in the construction of educational attainment PRS because the most recent GWAS meta-analysis included UK Biobank individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We included only genome-wide significant SNPs in the construction of these scores because the most recent GWAS meta-analysis of educational attainment by Lee et al., 2018 included UK Biobank individuals (Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the methodological choice to avoid sample overlap bias.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "f7f0b69d-cded-45d2-b05c-996bc3352342",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C71",
+      "claim": "A sensitivity analysis was performed using a second set of PRS of educational attainment using 72 SNPs from a GWAS of non-UK Biobank individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, we also performed a sensitivity analysis using a second set of PRS of educational attainment using 72 SNPs from a GWAS of non-UK Biobank individuals (Okbay et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a sensitivity analysis performed, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "ebc08d40-655d-41bf-8a72-3c991a872453",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C72",
+      "claim": "Excluding adopted individuals with known breastfeeding information reduced the number of adopted 'singleton' individuals in the educational attainment analysis to 2,867.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduced the number of adopted 'singleton' individuals in the analysis to 2,867.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the effect of the sensitivity analysis on sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "2fd167cd-b398-4a5e-872d-dc63e9e72038",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C73",
+      "claim": "The model assumes that the effect of the prenatal maternal genetic effect and postnatal maternal genetic effect on the offspring phenotype is additive.",
+      "claim_type": "EXPLICIT",
+      "source": "We are specifically interested in partitioning maternal genetic effects into prenatal (\u03b3m) and postnatal genetic effects (\u03d0m) and we assume that the effect of the prenatal maternal genetic effect and postnatal maternal genetic effect on the offspring phenotype is additive (i.e. \u03b3m + \u03d0m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental assumption of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "f9cd1063-4a69-49ba-a942-5dcc0d7f72ea",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C74",
+      "claim": "The model assumes that biological fathers exert only postnatal genetic effects on their offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that biological fathers exert only postnatal genetic effects on their offspring (biological families only), and adoptive fathers exert only postnatal genetic effects on their adopted offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental assumption of the model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "c48d7aec-de33-4717-88bd-84801056cdc9",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C75",
+      "claim": "The model assumes that adoptive fathers exert only postnatal genetic effects on their adopted offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that biological fathers exert only postnatal genetic effects on their offspring (biological families only), and adoptive fathers exert only postnatal genetic effects on their adopted offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental assumption of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "de460cc9-6849-44a3-b9fe-78d753990264",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C76",
+      "claim": "The model permits the variance of residual sources of variation to differ across adopted and biological family structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to accommodate the possibility that adopted individuals may have different phenotypic variances to individuals raised by their biological relatives, we permit the variance of residual sources of variation to differ across adopted and biological family structures (Cheesman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a feature of the model design, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "1564bab8-c77b-4b34-89e9-2d241fc43177",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C77",
+      "claim": "For all the parameters in the model to be identified, different constellations of relatives must be sampled from G1-G7.",
+      "claim_type": "EXPLICIT",
+      "source": "We caution that for all the parameters in the model to be identified, different constellations of relatives must be sampled from G1-G7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the requirements for model identifiability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "bb54e7b6-d889-4993-b69c-6cead5a52a21",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C78",
+      "claim": "To partition maternal genetic effects into prenatal and postnatal components, information from adopted individuals must be available.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, to partition maternal genetic effects into prenatal and postnatal components, information from adopted individuals must be available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the requirements for partitioning maternal genetic effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "fc003e21-22c9-40e7-8361-0003b929b856",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C79",
+      "claim": "The inclusion of adopted singleton individuals in the model is sufficient for identification as long as there are at least some biological parent-offspring trios or both biological mother-child and biological father-child pairs available.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the inclusion of adopted singleton individuals in our model is sufficient for identification as long as there are at least some (biological) parent-offspring trios (or alternatively both biological mother-child and biological father-child pairs) available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the minimum requirements for model identification.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "546f6626-bf01-4669-9703-1975d6d4a543",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C80",
+      "claim": "The presence of adopted individuals' parents (biological or adoptive) is not a necessary condition for partitioning maternal effects into prenatal and postnatal components.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the presence of adopted individuals' parents (biological or adoptive) is not a necessary condition for partitioning maternal effects into prenatal and postnatal components, the inclusion of such pairs is advantageous in terms of statistical power as we show below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about model requirements and power.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "f2a5c42b-a1c8-4c72-bf06-0ec2a33d33c2",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C81",
+      "claim": "The inclusion of adopted individuals' parents is advantageous in terms of statistical power.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst the presence of adopted individuals' parents (biological or adoptive) is not a necessary condition for partitioning maternal effects into prenatal and postnatal components, the inclusion of such pairs is advantageous in terms of statistical power as we show below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about statistical power, supported by results shown later.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "25936c28-f4d6-40ba-9f22-c8c61ca4c131",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C82",
+      "claim": "OpenMx was used to calculate the asymptotic power to partition maternal genetic effects into prenatal and postnatal maternal genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We used OpenMx (Boker et al., 2011; Neale et al., 2016) to calculate the asymptotic power to partition maternal genetic effects into prenatal and postnatal maternal genetic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the software used for power calculations, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "b0385260-b5f3-47f1-be31-21206a7b92e8",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C83",
+      "claim": "A freely available online power calculator was developed that allows investigators to explore the power to detect prenatal and postnatal maternal genetic effects using the SEM.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a freely available, online power calculator that allows investigators to explore the power to detect prenatal and postnatal maternal genetic effects using our SEM in their own studies (https://evansgroup.di.uq.edu.au/ADOPTED).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a tool developed as part of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "5a8e1726-9526-4fdb-9802-822edb912479",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C84",
+      "claim": "The power calculator is built using the R shiny app running the R studio software and the OpenMx package.",
+      "claim_type": "EXPLICIT",
+      "source": "Our power calculator is built using the R shiny app (https://shiny.rstudio.com/) running the R studio software (RStudioTeam, 2015) and the OpenMx package (Boker et al., 2011; Neale et al., 2016) in the background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the technical implementation of the power calculator.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "52197bbf-b171-4b4d-9379-b4e027fcecec",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C85",
+      "claim": "Adopted singleton individuals provide important information on partitioning maternal genetic effects regardless of whether information on their parents has been gathered.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to realize, however, that adopted 'singletons' (i.e. adopted individuals whose adoptive and biological parents have not been included in the study) provide important information on partitioning maternal genetic effects into prenatal and postnatal contributions regardless of whether information on their parents has been gathered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key insight about the value of adopted singleton data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "f8b0a788-e620-4837-80e1-7a8f66b7b40a",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C86",
+      "claim": "The effect of inadvertently including adopted singleton individuals whose adoptive parents are genetically related to them was investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigate the effect of inadvertently including adopted singleton individuals whose adoptive parents are genetically related to them in our model, adjust our model to correct for this misspecification and quantify the effect of this adjustment on type 1 error rates and power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "6ccfb407-8de3-4349-88af-b34ef49b585e",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C87",
+      "claim": "The model was adjusted to correct for misspecification due to cryptic relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigate the effect of inadvertently including adopted singleton individuals whose adoptive parents are genetically related to them in our model, adjust our model to correct for this misspecification and quantify the effect of this adjustment on type 1 error rates and power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of methodological adjustments made.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "0bf27303-ef85-489d-b50e-518123afc119",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "claim_id": "C88",
+      "claim": "The effect of model misspecification on type 1 error rates and power was quantified.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigate the effect of inadvertently including adopted singleton individuals whose adoptive parents are genetically related to them in our model, adjust our model to correct for this misspecification and quantify the effect of this adjustment on type 1 error rates and power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "79a2965a-1908-41a5-b914-c613dee33ee2",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a structural equation modeling (SEM) approach to partition maternal genetic effects into prenatal and postnatal components using adoption designs. The model assumes adopted individuals' phenotypes are influenced by prenatal effects from biological mothers and postnatal effects from adoptive parents, while non-adopted individuals experience both prenatal and postnatal effects from biological parents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C12-C13 establish the conceptual framework and model assumptions. The definitional claims (C1-C2) are standard in the field, and the methodological contribution (C3) is clearly stated with explicit model assumptions (C12-C13) that are logically consistent with the adoption design framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "cd403258-6f98-4355-af2e-024a8cb790eb",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The model exploits differences in genotype-phenotype covariances between adopted and non-adopted individuals to identify prenatal versus postnatal maternal genetic effects. Adopted singletons provide information on prenatal effects only, while non-adopted individuals' covariances reflect both prenatal and postnatal effects, enabling partitioning even without parental genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 and C73-C81, C85 describe the theoretical basis and identification strategy of the model. The logic is sound: the differential covariance structure between adopted and non-adopted individuals provides identifying information. The mathematical framework appears internally consistent, though empirical validation depends on model assumptions holding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "65cfee43-e6bf-4151-946e-5db00c2ab4be",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Power calculations demonstrate that detection of prenatal and postnatal maternal genetic effects increases with larger effect sizes of other genetic components and with sample size, particularly when adoptive/biological mother-adopted child pairs are included. Simulations validated the asymptotic power calculations with appropriate Type I error rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C21-C25 present power calculation results supported by Figures 2-3, with C25 confirming validation through simulation. The power calculator development (C82-C84) provides a practical tool. The findings are internally consistent and appropriately validated, though real-world performance depends on assumption validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "bb48b8d4-b149-4db4-8f0f-c8e8ae32acf4",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Power calculations indicate that UK Biobank's adopted individuals are insufficient for detecting effects at individual loci but may be adequate for polygenic risk scores (PRS). The most efficient strategy to increase power is genotyping adoptive/biological mother-adopted child pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 present practical conclusions from the power analyses. These are reasonable inferences from the power calculations (C18, C21-C24) and are appropriately qualified as applying to PRS rather than individual variants. The recommendations are logically derived from the power analysis results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "de2ff135-1491-4c0d-8437-1f170291f4e7",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Application to UK Biobank birth weight data (N=172,852) showed significant prenatal maternal genetic effects and opposite-direction offspring genetic effects, with no significant postnatal maternal or paternal effects. This pattern aligns with expectations since birth weight is a perinatal phenotype that cannot be influenced by postnatal factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 report empirical findings from Table 1, with C29-C30 providing biological context. The results are consistent with prior knowledge about birth weight genetics and serve as a positive control. Sample sizes (C66) are adequate, and the PRS construction (C67) is appropriately described. This validates the method's ability to detect expected patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "ff9cf842-0d2e-4224-9b47-2300567fc509",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Application to UK Biobank educational attainment data (N=357,500) showed significant prenatal maternal, paternal, and offspring genetic effects, but surprisingly no significant positive postnatal maternal effects. This contradicts expectations since parental education causally affects offspring education primarily through postnatal pathways, and prior studies show similar maternal and paternal PRS effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C33, C46-C47 identify an unexpected finding that the authors themselves acknowledge as surprising and likely artifactual. While the statistical results (C31) are clearly reported, the biological implausibility (C47) and contradiction with prior work (C33) suggest model misspecification rather than a genuine biological finding. The methodological details (C68-C71) are appropriate, but the result's validity is questionable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "db02ad6a-4978-40b1-9972-e55870661c1e",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sensitivity analyses excluding adopted individuals with breastfeeding information reduced the prenatal maternal genetic effect on educational attainment to non-significance, suggesting that adopted individuals raised by biological relatives may have inflated the original estimates. This supports the hypothesis that model misspecification due to cryptic relatedness explains the unexpected educational attainment findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C49 report sensitivity analysis results that attenuate the unexpected finding, supporting the misspecification hypothesis (C48). The use of breastfeeding information as a proxy for biological relatedness (C72) is reasonable though indirect. This provides important evidence that the unexpected educational attainment results may be artifactual, though direct confirmation of relatedness would be preferable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "8586c5d4-5215-4383-9cbe-f7a841db9ce2",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Simulations demonstrated that unmodeled genetic relationships between adoptive and biological parents can inflate Type I error rates and bias estimates of prenatal and postnatal maternal genetic effects. However, correctly modeling these cryptic relationships eliminates bias and controls Type I error.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 present simulation results examining model misspecification, with C86-C88 describing the investigation. The simulations appropriately test the consequences of assumption violations and demonstrate that the model can be corrected if relationships are known. This is critical for interpreting the UK Biobank results and provides a path forward.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "03ea8f1d-b526-423a-849c-b7361cb29ad2",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors conclude that accurate modeling of cryptic relationships is sufficient to produce unbiased estimates and recommend following up UK Biobank adopted individuals to determine if they were raised by biological relatives. The SEM framework can model these relationships as latent variables without requiring actual parental genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C8 summarizes the key methodological finding from simulations (C35-C36), C52 describes a practical advantage of the SEM approach, and C61 provides a concrete recommendation. These conclusions are well-supported by the simulation results and represent appropriate next steps for utilizing UK Biobank data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "afaa1c35-614b-40df-8eac-c03c802b6a83",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Spousal correlations in UK Biobank trios indicate assortative mating for educational attainment (phenotype r=0.285, PRS r=0.117) and to a lesser degree for birth weight (phenotype r=0.076, PRS r=0.068).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 report empirical correlations from UK Biobank data. These are straightforward descriptive statistics that inform model assumptions about assortative mating. The values are plausible and the inference about assortative mating (C57) is reasonable, though the model does not fully account for the complexities of assortative mating beyond simple parental covariance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "6de2c88c-1a4e-422c-9f9f-817da1da77bb",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript situates the work within the historical context of adoption studies in behavioral genetics and the recent resurgence of interest in maternal genetic effects, noting that partitioning these effects could help elucidate mechanisms and inform intervention timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11, C37-C38 provide appropriate background context supported by citations. These establish the motivation and significance of the work within the broader field. The historical perspective and potential applications are appropriately framed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "48434f24-0dd2-46ab-ab55-cef6cdf99739",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The method provides point estimates and significance tests for prenatal and postnatal maternal genetic effects, distinguishing it from prior adoption-based approaches. Previous studies by Cheesman et al. and Demange et al. found evidence for indirect genetic effects using UK Biobank adoptees, with adoption designs generally producing lower estimates than trio-based methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 describes a methodological advantage, while C40-C42 accurately summarize relevant prior work. These comparisons appropriately position the current method relative to existing approaches and are supported by proper citations. The distinctions drawn are meaningful and accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "edc92fc1-d792-446a-9b12-d3cc3007b10c",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors discuss model assumptions and limitations, noting that adoptive families may differ from the general population, that there is limited evidence for large genotype-by-environment interactions at individual loci, and that the approach could potentially help address horizontal pleiotropy in Mendelian randomization studies of prenatal exposures, though it cannot correct for prenatal/early-life pleiotropy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 acknowledge assumption violations with appropriate citations, while C58-C60 discuss potential applications to MR studies with appropriate caveats. These represent thoughtful consideration of limitations and extensions. The discussion is balanced and appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    },
+    {
+      "id": "7ff2e782-2ae9-4c96-9103-8f75ad26b1d4",
+      "content_id": "9478aa07-d4ad-4d0a-a049-ce1543dc7427",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study utilized UK Biobank data containing >7000 self-reported adopted individuals, restricting analyses to European ancestry individuals. Ethical approvals were obtained from relevant committees, and family relationships were determined using KING software.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C62-C65 describe the data source, sample characteristics, and methodological details. These are factual statements about the study design appropriately supported by citations (C14, C65) and standard for genetic epidemiology studies. The restriction to European ancestry is noted but not critically evaluated for its implications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:18:39.490392Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1d99bc11-1d61-4118-95aa-21d90a888ac2",
+      "result_id": "79a2965a-1908-41a5-b914-c613dee33ee2"
+    },
+    {
+      "claim_id": "09ceb591-8fb4-4f80-ab71-414e62bcb4fc",
+      "result_id": "79a2965a-1908-41a5-b914-c613dee33ee2"
+    },
+    {
+      "claim_id": "e60c095c-6d03-4137-b6ba-5179f5e2e844",
+      "result_id": "79a2965a-1908-41a5-b914-c613dee33ee2"
+    },
+    {
+      "claim_id": "d9053921-c77b-4052-a223-ecbe112057a1",
+      "result_id": "79a2965a-1908-41a5-b914-c613dee33ee2"
+    },
+    {
+      "claim_id": "e4a50929-a24f-4813-96eb-12320b404f21",
+      "result_id": "79a2965a-1908-41a5-b914-c613dee33ee2"
+    },
+    {
+      "claim_id": "5e41d87d-35bf-41d0-9170-dd78aa693965",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "24fa6888-0cc8-4d06-88b1-cc9bf240e44a",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "c8b3bbf5-ac72-4445-84b1-561811dea1dd",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "2fd167cd-b398-4a5e-872d-dc63e9e72038",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "f9cd1063-4a69-49ba-a942-5dcc0d7f72ea",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "c48d7aec-de33-4717-88bd-84801056cdc9",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "de460cc9-6849-44a3-b9fe-78d753990264",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "1564bab8-c77b-4b34-89e9-2d241fc43177",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "bb54e7b6-d889-4993-b69c-6cead5a52a21",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "fc003e21-22c9-40e7-8361-0003b929b856",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "546f6626-bf01-4669-9703-1975d6d4a543",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "f2a5c42b-a1c8-4c72-bf06-0ec2a33d33c2",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "52197bbf-b171-4b4d-9379-b4e027fcecec",
+      "result_id": "cd403258-6f98-4355-af2e-024a8cb790eb"
+    },
+    {
+      "claim_id": "ff85aac3-3a13-468e-aa85-ab1318983bdb",
+      "result_id": "65cfee43-e6bf-4151-946e-5db00c2ab4be"
+    },
+    {
+      "claim_id": "05bf1a89-1976-443e-b277-466909da0b5b",
+      "result_id": "65cfee43-e6bf-4151-946e-5db00c2ab4be"
+    },
+    {
+      "claim_id": "ed9aece0-0893-4a9f-8c56-a8b34f9e54bc",
+      "result_id": "65cfee43-e6bf-4151-946e-5db00c2ab4be"
+    },
+    {
+      "claim_id": "75bfec29-d581-4e5d-90f3-6fc0ce0babd1",
+      "result_id": "65cfee43-e6bf-4151-946e-5db00c2ab4be"
+    },
+    {
+      "claim_id": "6b2fe3d9-cb44-4b61-aa41-134af0639afd",
+      "result_id": "65cfee43-e6bf-4151-946e-5db00c2ab4be"
+    },
+    {
+      "claim_id": "a7631917-17e8-4f76-9a76-b16ec6cdae02",
+      "result_id": "65cfee43-e6bf-4151-946e-5db00c2ab4be"
+    },
+    {
+      "claim_id": "25936c28-f4d6-40ba-9f22-c8c61ca4c131",
+      "result_id": "65cfee43-e6bf-4151-946e-5db00c2ab4be"
+    },
+    {
+      "claim_id": "b0385260-b5f3-47f1-be31-21206a7b92e8",
+      "result_id": "65cfee43-e6bf-4151-946e-5db00c2ab4be"
+    },
+    {
+      "claim_id": "5a8e1726-9526-4fdb-9802-822edb912479",
+      "result_id": "65cfee43-e6bf-4151-946e-5db00c2ab4be"
+    },
+    {
+      "claim_id": "2def5e45-1e30-4b1b-bf8f-0445f2aeedb8",
+      "result_id": "bb48b8d4-b149-4db4-8f0f-c8e8ae32acf4"
+    },
+    {
+      "claim_id": "f91aebff-a461-4e4f-88f6-cf017e569f49",
+      "result_id": "bb48b8d4-b149-4db4-8f0f-c8e8ae32acf4"
+    },
+    {
+      "claim_id": "7f31058d-58fd-44a0-a080-17d1f397e42f",
+      "result_id": "bb48b8d4-b149-4db4-8f0f-c8e8ae32acf4"
+    },
+    {
+      "claim_id": "3756e6d9-3aeb-483e-84d2-443baff078c0",
+      "result_id": "de2ff135-1491-4c0d-8437-1f170291f4e7"
+    },
+    {
+      "claim_id": "ca03733f-b418-4088-8ee7-ab01cbf44dc7",
+      "result_id": "de2ff135-1491-4c0d-8437-1f170291f4e7"
+    },
+    {
+      "claim_id": "ff40685d-4fbe-4fc7-bc24-ab1e54d105cd",
+      "result_id": "de2ff135-1491-4c0d-8437-1f170291f4e7"
+    },
+    {
+      "claim_id": "b3106264-d4ce-449d-8f3f-7a16f60e1fe6",
+      "result_id": "de2ff135-1491-4c0d-8437-1f170291f4e7"
+    },
+    {
+      "claim_id": "9a53c00e-cdd6-42b2-a93f-f569b044a45f",
+      "result_id": "de2ff135-1491-4c0d-8437-1f170291f4e7"
+    },
+    {
+      "claim_id": "b6c2a24c-3319-4c6e-b63e-3f1236aeacc4",
+      "result_id": "de2ff135-1491-4c0d-8437-1f170291f4e7"
+    },
+    {
+      "claim_id": "8225569f-f483-4ede-abf0-2a5e724b01e7",
+      "result_id": "de2ff135-1491-4c0d-8437-1f170291f4e7"
+    },
+    {
+      "claim_id": "1b09ce21-31ae-4dbc-84b1-b68ac112f3e7",
+      "result_id": "de2ff135-1491-4c0d-8437-1f170291f4e7"
+    },
+    {
+      "claim_id": "3756e6d9-3aeb-483e-84d2-443baff078c0",
+      "result_id": "ff9cf842-0d2e-4224-9b47-2300567fc509"
+    },
+    {
+      "claim_id": "3474dd18-21dc-4019-b0e7-2e515e535d28",
+      "result_id": "ff9cf842-0d2e-4224-9b47-2300567fc509"
+    },
+    {
+      "claim_id": "6b59b7fe-e0f7-4c2e-a441-6e6c1f341870",
+      "result_id": "ff9cf842-0d2e-4224-9b47-2300567fc509"
+    },
+    {
+      "claim_id": "74840ecf-2265-4425-a9e7-eaace3958e4c",
+      "result_id": "ff9cf842-0d2e-4224-9b47-2300567fc509"
+    },
+    {
+      "claim_id": "9b2a6094-6b72-430f-a046-1dd8f5d385c0",
+      "result_id": "ff9cf842-0d2e-4224-9b47-2300567fc509"
+    },
+    {
+      "claim_id": "93170683-367c-4996-916f-6ac2121ef8e4",
+      "result_id": "ff9cf842-0d2e-4224-9b47-2300567fc509"
+    },
+    {
+      "claim_id": "0c09e3b5-af2d-42a7-b9df-cfc87869ef12",
+      "result_id": "ff9cf842-0d2e-4224-9b47-2300567fc509"
+    },
+    {
+      "claim_id": "2ce5ee19-d0e6-4cb9-8c12-623364399dc5",
+      "result_id": "ff9cf842-0d2e-4224-9b47-2300567fc509"
+    },
+    {
+      "claim_id": "de2af648-cef6-4401-b9e5-e68e85fec885",
+      "result_id": "ff9cf842-0d2e-4224-9b47-2300567fc509"
+    },
+    {
+      "claim_id": "f7f0b69d-cded-45d2-b05c-996bc3352342",
+      "result_id": "ff9cf842-0d2e-4224-9b47-2300567fc509"
+    },
+    {
+      "claim_id": "c56cda49-0f3b-4723-b4d6-4aed3cbe2efc",
+      "result_id": "db02ad6a-4978-40b1-9972-e55870661c1e"
+    },
+    {
+      "claim_id": "5765533a-6f34-4b51-bea1-4fcbea356d08",
+      "result_id": "db02ad6a-4978-40b1-9972-e55870661c1e"
+    },
+    {
+      "claim_id": "82b58910-503f-4ef2-ba5b-61f2597a16b3",
+      "result_id": "db02ad6a-4978-40b1-9972-e55870661c1e"
+    },
+    {
+      "claim_id": "924aac51-cab7-4477-818d-d2f56145dfb7",
+      "result_id": "db02ad6a-4978-40b1-9972-e55870661c1e"
+    },
+    {
+      "claim_id": "42baf904-1206-441a-9661-4695a6de5f9a",
+      "result_id": "db02ad6a-4978-40b1-9972-e55870661c1e"
+    },
+    {
+      "claim_id": "ebc08d40-655d-41bf-8a72-3c991a872453",
+      "result_id": "db02ad6a-4978-40b1-9972-e55870661c1e"
+    },
+    {
+      "claim_id": "d798b0ba-10ad-434b-93b7-31008e6b8e41",
+      "result_id": "8586c5d4-5215-4383-9cbe-f7a841db9ce2"
+    },
+    {
+      "claim_id": "fcb07949-a199-4821-b232-c933474a7d61",
+      "result_id": "8586c5d4-5215-4383-9cbe-f7a841db9ce2"
+    },
+    {
+      "claim_id": "f8b0a788-e620-4837-80e1-7a8f66b7b40a",
+      "result_id": "8586c5d4-5215-4383-9cbe-f7a841db9ce2"
+    },
+    {
+      "claim_id": "6ccfb407-8de3-4349-88af-b34ef49b585e",
+      "result_id": "8586c5d4-5215-4383-9cbe-f7a841db9ce2"
+    },
+    {
+      "claim_id": "0bf27303-ef85-489d-b50e-518123afc119",
+      "result_id": "8586c5d4-5215-4383-9cbe-f7a841db9ce2"
+    },
+    {
+      "claim_id": "fb7d7aa5-bb69-48e3-85cd-a36c0668a427",
+      "result_id": "03ea8f1d-b526-423a-849c-b7361cb29ad2"
+    },
+    {
+      "claim_id": "341833cf-5383-4433-9f0c-ef228af94581",
+      "result_id": "03ea8f1d-b526-423a-849c-b7361cb29ad2"
+    },
+    {
+      "claim_id": "d9f0716c-0bdb-4cae-abf4-8e6f683d03e1",
+      "result_id": "03ea8f1d-b526-423a-849c-b7361cb29ad2"
+    },
+    {
+      "claim_id": "eb03e26f-72ec-4421-b1e6-2d33528a2c1b",
+      "result_id": "afaa1c35-614b-40df-8eac-c03c802b6a83"
+    },
+    {
+      "claim_id": "55c49ac4-edfe-48d0-bbf2-dbc5acfe3a7f",
+      "result_id": "afaa1c35-614b-40df-8eac-c03c802b6a83"
+    },
+    {
+      "claim_id": "895caf1a-c9f7-4ee9-ac8c-ed24c6d2b009",
+      "result_id": "afaa1c35-614b-40df-8eac-c03c802b6a83"
+    },
+    {
+      "claim_id": "ae8104d8-755f-4966-aa02-e90cacd8f8f2",
+      "result_id": "afaa1c35-614b-40df-8eac-c03c802b6a83"
+    },
+    {
+      "claim_id": "4c9d572c-5afa-4bb9-8c13-97f573f3e278",
+      "result_id": "afaa1c35-614b-40df-8eac-c03c802b6a83"
+    },
+    {
+      "claim_id": "a0264c3e-a2a4-42aa-b5b1-f602cfa98645",
+      "result_id": "6de2c88c-1a4e-422c-9f9f-817da1da77bb"
+    },
+    {
+      "claim_id": "7a845e6c-dae0-42f9-b747-41c4f3203696",
+      "result_id": "6de2c88c-1a4e-422c-9f9f-817da1da77bb"
+    },
+    {
+      "claim_id": "4e9110c0-6178-4402-85a4-7823504aef77",
+      "result_id": "6de2c88c-1a4e-422c-9f9f-817da1da77bb"
+    },
+    {
+      "claim_id": "264b661f-0fc6-4b3a-85ca-7403c4e4a239",
+      "result_id": "6de2c88c-1a4e-422c-9f9f-817da1da77bb"
+    },
+    {
+      "claim_id": "b4d4863e-aefd-45a9-b2c2-aba515a3d75a",
+      "result_id": "6de2c88c-1a4e-422c-9f9f-817da1da77bb"
+    },
+    {
+      "claim_id": "4fbfab89-a4f3-4161-b57b-40375d396091",
+      "result_id": "48434f24-0dd2-46ab-ab55-cef6cdf99739"
+    },
+    {
+      "claim_id": "1f22ccc6-38c1-465e-8468-e323b28fe027",
+      "result_id": "48434f24-0dd2-46ab-ab55-cef6cdf99739"
+    },
+    {
+      "claim_id": "6784dbdf-ae9d-439c-9817-567fade609ad",
+      "result_id": "48434f24-0dd2-46ab-ab55-cef6cdf99739"
+    },
+    {
+      "claim_id": "be3327e5-e0b9-46d8-bf22-b6dc8d05fad9",
+      "result_id": "48434f24-0dd2-46ab-ab55-cef6cdf99739"
+    },
+    {
+      "claim_id": "dd411468-ba04-4762-8d21-0b10cdae208b",
+      "result_id": "edc92fc1-d792-446a-9b12-d3cc3007b10c"
+    },
+    {
+      "claim_id": "0975e2c4-b13f-4793-b81d-8fd46b6b6df8",
+      "result_id": "edc92fc1-d792-446a-9b12-d3cc3007b10c"
+    },
+    {
+      "claim_id": "1e3e2940-a964-4836-be71-6137e91070e8",
+      "result_id": "edc92fc1-d792-446a-9b12-d3cc3007b10c"
+    },
+    {
+      "claim_id": "8567bfcc-f170-4ec7-adcb-17c9476c5879",
+      "result_id": "edc92fc1-d792-446a-9b12-d3cc3007b10c"
+    },
+    {
+      "claim_id": "16342189-2fa7-406e-8833-28e01363e69b",
+      "result_id": "edc92fc1-d792-446a-9b12-d3cc3007b10c"
+    },
+    {
+      "claim_id": "fc25b30f-c5b6-4ea3-bb42-d52e566cf7a4",
+      "result_id": "7ff2e782-2ae9-4c96-9103-8f75ad26b1d4"
+    },
+    {
+      "claim_id": "cbb3cbcc-e352-4131-a52c-dff23407ae46",
+      "result_id": "7ff2e782-2ae9-4c96-9103-8f75ad26b1d4"
+    },
+    {
+      "claim_id": "dc2599f7-d1d9-4a19-b9ee-32df75b13a97",
+      "result_id": "7ff2e782-2ae9-4c96-9103-8f75ad26b1d4"
+    },
+    {
+      "claim_id": "f953760e-1368-478a-baf2-5d31fe7ea3cb",
+      "result_id": "7ff2e782-2ae9-4c96-9103-8f75ad26b1d4"
+    },
+    {
+      "claim_id": "7f7409fd-b7ab-4ddc-8349-7892c4900dbd",
+      "result_id": "7ff2e782-2ae9-4c96-9103-8f75ad26b1d4"
+    }
+  ],
+  "comparisons": []
+}

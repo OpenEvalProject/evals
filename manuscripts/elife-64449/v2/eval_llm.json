@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C8"
+    ],
+    "result": "The authors performed longitudinal two-photon multiplane calcium imaging in layer 2/3 visual cortex of awake mice expressing GCaMP6s (n=4) or GCaMP6f (n=2) for up to 46 days. They recorded spontaneous and visually evoked activity in three 5-minute sessions per day, tracking the same neurons across days using multiplane imaging and maximum intensity projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C17, C23-C35) are internally consistent and provide sufficient detail about the experimental design. The use of multiplane imaging with maximum intensity projection is appropriate for tracking neurons longitudinally, and the quality control criteria (PSNR >18 dB) is explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Pilot experiments showed that the accumulated number of active neurons reached a plateau after a few minutes, justifying the use of 5-minute recording intervals to capture the majority of active neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe pilot data that informed the methodological choice of 5-minute recording sessions. This is supported by reference to Figure 1\u2014figure supplement 1A, though the exact plateau dynamics are not quantitatively specified in the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42"
+    ],
+    "result": "The number of active neurons decreased significantly from days 1-10 to days 43-46 (from ~83-85 to 51\u00b110 neurons, p<0.05), likely due to decreased imaging quality as evidenced by increased percentage of discarded neurons with poor PSNR (24\u00b11% to 37\u00b14%, p=0.034).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C41-C42 present quantitative data with statistical support showing decreased neuron counts over time. The inference that imaging quality degradation caused this decrease (C42) is reasonable given the PSNR data (C41), though other factors like actual cell loss cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Z-displacement was similar across days (<4 \u00b5m) while mice running speed tended to increase across days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 report control measurements with appropriate references to supplementary figures. These findings help rule out z-displacement as a major confound for the decreased neuron counts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The percentage of time individual neurons were active remained constant at ~15.5% across all days for both spontaneous and evoked activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 reports stable single-neuron activity levels over time with reference to Figure 1I. This finding supports the homeostatic activity hypothesis discussed later and provides important context for interpreting ensemble stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "Less than 50% of neurons remained active between any two imaging sessions, with only 42\u00b12% (spontaneous) and 37\u00b14% (evoked) remaining active even 5 minutes later on day 1. This proportion decreased significantly on days 10 and 43-46, though 17\u00b17 to 22\u00b18 neurons remained active at 43-46 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C44-C47, and C49 present a major finding about neuronal activity dynamics with quantitative data and statistical support (Figure 1K). The low percentage of common neurons even within the same day is surprising and well-documented. However, the interpretation that neurons are 'dynamically changing' (C49) could alternatively reflect detection limitations or true silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Common neurons that remained active across days had stable locomotion correlation and tuning properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by data in supplementary figures and citations to prior work (Ranson 2017, Jeon et al. 2018). This finding is important for validating that tracked neurons maintain their functional properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C50",
+      "C107"
+    ],
+    "result": "Neuronal ensembles were identified using functional connectivity based on significant coactivity between neuron pairs. An average of 4.57\u00b10.14 (spontaneous) and 4.63\u00b10.14 (evoked) ensembles were detected per session, with functional connections independent of neuronal activity levels (R=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C50, and C107 describe the ensemble detection methodology and results. The approach using surrogate data to establish significance thresholds is rigorous. The independence of functional connectivity from activity level (C107) is an important control showing the method doesn't simply detect highly active neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "More than 50% of ensembles were stable across days (defined as maintaining \u226550% of neurons, Jaccard similarity \u22651/3). On day 1, 54\u00b13% of spontaneous and 72\u00b14% of evoked ensembles were stable, with ~50% remaining stable at days 43-46. Evoked ensembles were initially more stable but converged with spontaneous ensembles by days 43-46.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C51-C54 present the main stability findings with clear quantitative data and an explicit definition of stability (C51). The speculation about stimulus adaptation (C55) is reasonable but not directly tested. The choice of Jaccard similarity threshold (1/3) is justified in supplementary analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "Stable ensembles could not be explained by chance, as shuffled data yielded significantly fewer stable ensembles (0.8\u00b10.1 vs 2.8\u00b10.1, p=1\u00d710\u207b\u2076\u2076) and shorter activation times (14.4\u00b11.3s vs 75.1\u00b12.7s, p=2\u00d710\u207b\u2075\u2077), indicating ensembles are true functional circuit elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 and C60 present critical control analyses with highly significant p-values. The shuffling procedure appropriately disrupts temporal structure while preserving activity levels, providing strong evidence against the null hypothesis that ensembles are statistical artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Stable ensembles maintained unchanged correlation with locomotion and tuning across days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by data in supplementary figures showing stable functional properties of ensembles over time, complementing the structural stability findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Stable and transient ensembles had similar numbers of neurons and network density, but stable ensembles had significantly higher robustness (defined as the product of ensemble duration and activity similarity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 compare stable and transient ensembles with reference to Figures 3D-F. The finding that structural properties are similar but robustness differs is important for understanding what distinguishes stable ensembles. The robustness metric is clearly defined in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Approximately 50% of neurons belonged to only one stable ensemble ('single' neurons), while less than 20% belonged to multiple ensembles ('shared' neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 characterize ensemble membership patterns with reference to Figure 4E. This finding suggests relatively sparse overlap between ensembles, which is important for understanding ensemble organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C67",
+      "C68",
+      "C69",
+      "C82"
+    ],
+    "result": "Approximately 68% of neurons in stable ensembles remained active across weeks ('stable' neurons), while <40% were lost and replaced by similar proportions of new neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C67-C69, and C82 present a key finding about ensemble composition dynamics with quantitative data from Figure 4F. The ~68% stability is consistent across multiple claims and represents a major result about the balance between stability and flexibility in ensemble membership.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C22",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Stable neurons within ensembles had significantly higher functional connection density (0.71\u00b10.01) compared to lost neurons (0.35\u00b10.02, p=7\u00d710\u207b\u2075\u2075), suggesting that strong functional connectivity predicts lasting stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C22, C70-C72 present a mechanistic finding linking functional connectivity to neuron stability with highly significant statistics. The inference that connectivity predicts stability (C71-C72) is reasonable given the data, though causality cannot be definitively established from correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "No relevant differences in long-term stability were found between spontaneous and visually evoked activity. Ensembles active during spontaneous activity were also active during evoked activity and vice versa, with >60% of spontaneous ensemble neurons tuned to visual stimuli in subsequent weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 report the surprising finding of similar stability between spontaneous and evoked conditions, with supporting data in supplementary figures. The interpretation that sensory stimuli reactivate existing ensembles (C78) is consistent with prior work (Miller et al. 2014) but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Long-term ensemble stability was detectable using different analysis methods and in independent datasets (Allen Brain Institute, Churchland Lab), with similar results between GCaMP6s and GCaMP6f mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 report validation analyses across methods and datasets, strengthening confidence in the main findings. The consistency across different calcium indicators and datasets is important for generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C9",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Stable ensembles can last for weeks (up to 46 days) with some rotation of neuronal components, anchored by core neurons. These ensembles could in principle serve as substrates for long-lasting representations of perceptual states or memories, though stability may be underestimated due to snapshot sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C9, and C94-C97 synthesize the main findings into broader conclusions. The data support that ensembles can last weeks, though the functional interpretation (C9) remains speculative. The acknowledgment of potential underestimation (C96) is appropriate given the sampling limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Despite variable single-neuron responses during repeated stimulation, cortical circuits maintained homeostatic activity levels over weeks. The transient silencing of neurons could represent a neuronal correlate of dropout in deep neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 about homeostatic activity is supported by Figure 1I and citations, but C80-C81 involve more speculative interpretations. The connection to deep learning dropout (C81) is interesting but not directly tested and relies heavily on analogy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The consistent preservation of ~68% of neurons within ensembles does not support representational drift at the single-neuron level. Ensembles may function to maintain stable functional states amid homeostatic replacement of individual neuronal elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 present interpretations about representational drift and ensemble function. While the data show stable ensemble membership, the interpretation that this contradicts representational drift (C83) depends on how drift is defined. The functional speculation (C84) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Ensemble stability could be based on dendritic spine stability, with weak connectivity of flexible neurons mediated by small transient spines and strong connectivity of stable neurons maintained by large persistent spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 present mechanistic speculation about spine dynamics underlying ensemble stability. While supported by citations to spine imaging studies, these claims are not directly tested in the current study and remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Core neurons could function as 'anchor' cells maintaining stable representations and as pattern completion cells capable of triggering ensembles. Their stronger functional connectivity may be mediated by synaptic plasticity and underlie memory representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 present speculative functional interpretations of core neurons. While the existence of core neurons with strong connectivity is well-supported, their proposed functions as anchor cells and pattern completion cells are not directly tested and remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Stable ensembles could represent long-term memories while transient ensembles could illustrate emergence of new memories or degradation of existing ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C104 present speculative interpretations about memory function. While prior work (cited in C102) links ensembles to perceptual states and memories, the specific proposal that stable vs. transient ensembles correspond to long-term vs. emerging/degrading memories is not tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study did not image GABAergic interneurons (at least 28 types exist). PV interneurons could stabilize circuits while SOM/VIP interneurons could modulate pyramidal neuron gain. PV interneurons undergo faster homeostasis and are more stable than pyramidal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 acknowledge a limitation (C88) and discuss interneuron roles based on prior literature (C89-C93). The limitation is appropriately stated, and the discussion of interneuron functions is supported by citations, though these claims about interneurons are not tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establish that neuronal ensembles are coactive groups thought to underlie neural representations, have been found in visual cortex, can be optogenetically manipulated to produce behavioral effects, and that while single-cell tuning is stable, representational drift occurs. There is a lack of multineuronal longitudinal studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C16 present background knowledge supported by extensive citations. These establish the context and motivation for the study. The gap in multineuronal longitudinal studies (C16) appropriately motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Prior studies show single-neuron tuning is stable for up to 2 weeks and selectivity is enhanced after learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 cite prior literature to provide context for the current findings. These are appropriately referenced and help frame the discussion.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The Extended model incorporates six structural features of bacterial promoters not present in the Standard model: cumulative binding, spacer length flexibility, occlusive unproductive binding, occlusive binding on reverse complement, dinucleotide interactions, and clearance rate. These features enable prediction of constitutive gene expression levels from any sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 describe the six structural features incorporated into the Extended model, with experimental and computational support shown in Figures 1 and 2. C1 states the main result that the model predicts expression from any sequence, supported by the experimental validation across multiple datasets. C14 appropriately notes a limitation (UP element not included). The structural features are well-defined and experimentally justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Three structural features (cumulative binding, occlusive unproductive binding, and occlusive binding on reverse complement) were experimentally verified, though verification of reverse complement binding was inconclusive. Despite inconclusive experimental results, including reverse complement binding significantly improved model predictability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C15 states that experimental verification was performed for three features, shown in Figure 2. C16 acknowledges that reverse complement binding verification was inconclusive (only 2 of 4 promoter sets showed expected behavior). C17 justifies inclusion based on improved predictability (Figure 2D). The authors appropriately acknowledge experimental limitations while providing computational justification for model inclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Three mutant libraries were created and characterized: PR (>12,000 mutants, 12% mutation rate), PL (shares homology with PR, 9% mutation rate), and 36N (completely random 36bp sequences). Sort-seq experiments measured expression levels, with ~10% of random 36bp sequences showing measurable expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe the PR library construction and methodology, C28-C30 describe PL and 36N libraries, and C31 reports the key finding that ~10% of random sequences express. All claims are supported by detailed methods and Figure 1\u2014figure supplement 1. The experimental design is sound with appropriate controls and replication. The data splitting (60/20/20) for training/validation/evaluation is appropriate for model development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The Extended model parameters were inferred from the PR library and showed strong correlation with previous energy matrices (r\u00b2=0.72). Both Standard and Extended models reproduced the PR evaluation set with high accuracy, with the Extended model significantly outperforming the Standard model. Key findings include quadratic spacer penalty, 11 positions outside canonical elements affecting binding, and the importance of occlusive unproductive binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C22-C24 report model performance metrics supported by Figure 3. C25-C27 describe specific mechanistic insights from model parameters shown in Figure 1C and Figure 2D. The correlation with previous work (C22) validates the approach. The improvement of Extended over Standard model is quantified and statistically supported. The mechanistic insights are derived from well-fitted parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The Extended model dramatically improved predictions of gene expression from random sequences compared to the Standard model, achieving r\u00b2~0.8 (2.8-fold mean error across 1000-fold expression range) when fitted on all three libraries. Each structural feature significantly improved predictability, with spacer length flexibility contributing most.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C32-C34 describe the improved performance on random sequences (Figure 3), C35-C36 quantify individual feature contributions (Figure 2D), and C37-C38 report final model performance. The dramatic improvement on the 36N library (random sequences) is the key validation that the model generalizes beyond local mutational neighborhoods. The quantitative performance metrics are clearly stated and supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The Standard model assumes only a single RNAP binding position governs promoter activity, and its low cross-predictability is often attributed to context dependence. The Extended model's ability to account for multiple binding configurations explains away this context dependence and leads to improved predictability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C40-C41 describe the Standard model's assumptions and limitations with citation support. C42-C43 explain how the Extended model addresses these limitations through cumulative binding. This is a key conceptual advance supported by the comparative performance data in Figure 3. The explanation of context dependence as arising from multiple binding sites is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The Extended model was tested on three published datasets (Johns et al., Hossain et al., Urtecho et al.) and generally outperformed both the Standard model and previously published models, though it underperformed a machine learning approach on the Urtecho dataset due to that dataset's modular design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C44-C46 report quantitative performance comparisons on three independent datasets (Figure 3\u2014figure supplement 1). C47-C48 appropriately acknowledge a limitation where the Extended model underperformed on modular promoters due to component interactions not captured by the model. The cross-dataset validation strengthens confidence in model generalizability, and the authors appropriately note where their mechanistic model has limitations compared to machine learning approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The binding energies and structural features in the Extended model are important quantitative determinants of promoter function, sufficient for predicting expression from random sequences, but the model fails to capture variation arising from interactions between promoter features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C49 draws a well-supported inference from the model's cross-dataset performance. C50 appropriately acknowledges a limitation observed in the Urtecho dataset. This balanced assessment of model capabilities and limitations is supported by the empirical results across multiple datasets. The authors clearly distinguish what the model can and cannot predict.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C51",
+      "C31"
+    ],
+    "result": "Approximately 10-20% of random sequences lead to measurable expression. The Extended model predicts ~20% of random 115bp sequences have measurable expression (vs ~8% for Standard model), consistent with ~10% observed experimentally in the 36N library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C2 states the main finding in the abstract, C51 provides the computational prediction for 115bp sequences, and C31 reports the experimental observation for 36bp sequences. The consistency between computational predictions and experimental observations (Figure 4A, Figure 1\u2014figure supplement 1F) supports this result. The range (10-20%) appropriately reflects the difference between sequence lengths tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C52",
+      "C53"
+    ],
+    "result": "Approximately 80% of non-expressing sequences are one mutation away from a functional promoter. For ~82% of non-expressing random sequences, at least one point mutation leads to measurable expression, with >1.5% of all possible point mutations converting non-expressing sequences to functional promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C3 states the main finding, C52 provides the computational prediction with experimental verification (Figure 4B, Figure 2\u2014figure supplement 2A), and C53 quantifies the mutation rate (Figure 4C). The experimental verification of 18/20 promoter pairs (Figure 2\u2014figure supplement 2A) strongly supports the computational prediction. This demonstrates the pervasiveness of promoter sequences in random DNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The Extended model predicts more rapid promoter evolution than the Standard model, with the difference becoming more pronounced for shorter mutating sequences. Under certain conditions, the rate increase is several orders of magnitude, arising from the enlarged number of possible productive binding configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C54-C55 describe the evolutionary simulation results (Figure 4D, Figure 4\u2014figure supplement 1), C56-C57 quantify the speedup, and C58 explains the mechanism (Figure 4\u2014figure supplement 2). The evolutionary simulations use an appropriate Strong-Selection-Weak-Mutation model. The mechanistic explanation linking increased evolutionary rate to cumulative binding at low expression levels is well-supported. The authors appropriately note their estimates are conservative lower bounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Selection acts against \u03c370-RNAP binding sites not only within genes but also in inter-genic, promoter-containing regions. This negative selection is observed even in experimentally determined \u03c370 promoters (p<10\u207b\u2074\u2070 across all inter-genic regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C4 states the main finding, C59-C60 report selection in both genic and inter-genic regions, C61-C62 extend this to known promoters. The genome-wide analysis (Figure 4E, Figure 4\u2014figure supplement 3) provides strong statistical support (p<10\u207b\u2074\u2070). The finding is validated using two independent methods (random synthetic genome and shuffled energy matrices). This is a surprising and important evolutionary finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Promoters evolve more rapidly than previously thought, with the increase in evolutionary rate being orders of magnitude faster in the Extended vs Standard model. This implies that promoter emergence is not the limiting step in gene regulatory evolution. The speedup likely arises from expanded evolutionary paths created by flexible spacer length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C5-C6 state the main conclusions, C76-C77 provide the evolutionary modeling results, and C78 offers a mechanistic hypothesis. The evolutionary simulations (Figure 4D) quantitatively support the increased rate. C5 is a logical inference from the finding that promoters readily emerge from random sequences. C78 is appropriately labeled as a hypothesis for future research. The connection between mechanistic features and evolutionary dynamics is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Selection against too many binding sites in promoters could arise from competition between \u03c370-RNAP and other transcription factors, or from costs of having multiple weaker vs fewer stronger binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C63 offers speculative explanations for the observed selection against binding sites. While the selection itself is well-documented (C60-C62), the mechanistic explanations are not tested experimentally. The authors appropriately present these as possibilities rather than established mechanisms. Additional experiments would be needed to distinguish between these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Accounting for structural features of promoters improved predictions of gene expression from any DNA sequence by extending thermodynamic modeling to low expression levels and beyond local neighborhoods. The Extended model enabled better understanding of promoter mechanisms like cumulative binding, and could be further improved by integrating additional mechanisms or extending to regulated promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C67-C68 summarize the main achievements supported throughout the manuscript. C69-C70 appropriately suggest future directions with citation support. The improvement in predictions is well-documented across multiple datasets. The mechanistic insights (e.g., cumulative binding at low expression, Figure 4\u2014figure supplement 2) are supported by the model structure and data. The suggestions for future work are reasonable extensions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The flexibility of \u03c370-RNAP binding ensures proximity of any DNA sequence to a constitutive promoter, permitting easier evolutionary tuning of expression levels and allowing \u03c370-RNAP to function as a global regulator. Selection can sustain transcription factor specificity while maintaining expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C71 is an inference from the model's ability to predict expression from random sequences (Figure 3). C72-C73 extend this to evolutionary and regulatory implications with citation support. These are reasonable inferences from the demonstrated pervasiveness of promoter sequences, though they represent interpretations rather than direct experimental tests. The logic connecting mechanistic findings to evolutionary implications is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The ease of evolving constitutive promoters has been experimentally hinted at but remained theoretically puzzling, with previous work (Tu\u011frul et al.) failing to identify factors that would increase predicted evolution speed to match experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C74-C75 accurately summarize prior work with appropriate citations. This sets up the motivation for the current study's evolutionary modeling. The characterization of the gap between theory and experiment in prior work is accurate and provides important context for the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "We lack a quantitative link between most cellular processes and DNA sequence, including a way to decode promoters by mapping sequences to expression levels. This mapping is fundamental for understanding gene regulatory networks and their evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C64-C66 describe the broader context and motivation for the study with appropriate citations. These claims accurately characterize the state of the field and the importance of the problem being addressed. They provide important framing for why the Extended model represents a significant advance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Biophysical models that accurately capture mechanisms of biological function offer a robust method for addressing key questions in biology and evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C79 is a general conclusion supported by the success of the Extended model in both predicting expression and enabling evolutionary insights. The study demonstrates this principle by showing how mechanistic understanding (the six structural features) enables both better predictions and new evolutionary insights. This is an appropriate high-level conclusion from the work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1626 @@
+{
+  "submission": {
+    "id": "8f3bd13e-7187-4346-8b93-c38017ae5f43",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:14:25.329597Z",
+    "updated_at": "2025-12-03T20:14:25.329597Z"
+  },
+  "content": [
+    {
+      "id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "submission_id": "8f3bd13e-7187-4346-8b93-c38017ae5f43",
+      "content_type": "manuscript",
+      "content_text": "# Firing patterns of ventral hippocampal neurons predict the exploration of anxiogenic locations\n\n## Authors\n\n- Hugo Malagon-Vina<sup>1</sup> ([ORCID: 0000-0001-5029-8464](https://orcid.org/0000-0001-5029-8464)) \u2020\n- St\u00e9phane Ciocchi<sup>1</sup> \u2020\n- Thomas Klausberger<sup>1</sup> ([ORCID: 0000-0001-7269-3158](https://orcid.org/0000-0001-7269-3158)) \u2020\n\n### Affiliations\n\n1. Division of Cognitive Neurobiology, Center for Brain Research, Medical University of Vienna Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))\n2. Laboratory of Systems Neuroscience, Department of Physiology, University of Bern Bern Switzerland ([ROR:02k7v4d05](https://ror.org/02k7v4d05))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ventral hippocampus (vH) plays a crucial role in anxiety-related behaviour and vH neurons increase their firing when animals explore anxiogenic environments. However, if and how such neuronal activity induces or restricts the exploration of an anxiogenic location remains unexplained. Here, we developed a novel behavioural paradigm to motivate rats to explore an anxiogenic area. Male rats ran along an elevated linear maze with protective sidewalls, which were subsequently removed in parts of the track to introduce an anxiogenic location. We recorded neuronal action potentials during task performance and found that vH neurons exhibited remapping of activity, overrepresenting anxiogenic locations. Direction-dependent firing was homogenised by the anxiogenic experience. We further showed that the activity of vH neurons predicted the extent of exploration of the anxiogenic location. Our data suggest that anxiety-related firing does not solely depend on the exploration of anxiogenic environments, but also on intentions to explore them.\n\n## Introduction\n\nIn the Epistulae Morales ad Lucilium, Seneca wrote: \u201cThere are more things, Lucilius, likely to frighten us than there are to crush us; we suffer more often in imagination than in reality\u201d. This sentence, from one of the key figures of the school of stoicism, describes inner fear within our imagination in the absence of a direct fear-provoking stimulus. Nowadays, even though anxiety and fear correspond to the same theoretical construct in some literature, anxiety differentiates from the latter based on the potential nature of the threat in the absence of an imminent harmful stimulus (Calhoon and Tye, 2015; Davis et al., 2010; Steimer, 2002). Anxiety disorders are becoming more commonly reported: 12-month prevalence estimates on mental disorders show that at least 14% of people in the European Union suffer from anxiety disorders (Wittchen et al., 2011), and around 31% of people in the United States have experienced some type of anxiety disorders in their lifetime (Kessler et al., 1994). Different brain areas play a role in the underlying circuitry of anxiety (Sandford et al., 2000). Stimulations in the brainstem, more precisely in the periaqueductal grey matter or the locus coerulus are specifically involved in the symptomatology of anxiety (Graeff et al., 1993; Redmond and Huang, 1979). Some studies have also shown how the amygdala plays a role in humans suffering from anxiety disorders (Birbaumer et al., 1998; Davidson et al., 1999) or in animal models with generalised fear responses associated with anxiety (Gr\u00fcndemann et al., 2019; Tovote et al., 2015; Wolff et al., 2014). Also, by using the elevated plus maze (EPM) as an anxiety task (Pellow et al., 1985), Tye and colleagues induced anxiolytic effects by targeting projections from the basolateral amygdala (BA) to the central nucleus of the amygdala (Tye et al., 2011). Additional structures are involved in anxiety and include the bed nucleus of the stria terminalis, whose subdivisions are differentially involved in anxiety responses (Duvarci et al., 2009; Kim et al., 2013), and the medial prefrontal cortex (mPFC), which has also been directly linked to anxiety processing in both humans (Rauch et al., 1997) and rodents (Park et al., 2016; Shah and Treit, 2003).\n\nLast but not least, the ventral hippocampus (vH) plays a critical role in anxiety behaviour. Lesions in the vH induce anxiolysis during the exploration of elevated open arenas (e.g. EPM) (Jimenez et al., 2018; Kjelstrup et al., 2002; Padilla-Coreano et al., 2016), or generally in tasks associated with approach-avoidance conflicts (Schumacher et al., 2018). Neurons recorded in the vH showed increased firing in locations with elevated anxiety (Ciocchi et al., 2015; Jimenez et al., 2018). Likewise, projections neurons from and to the vH exhibit anxiety-related activity: amygdala projections to the vH are specifically shaping anxiety-related behaviour during the exploration of an EPM (Felix-Ortiz and Tye, 2014; Pi et al., 2020). Similarly, the reciprocal connection (from vH to BA) is involved in the expression of context-dependent fear memories (Kim and Cho, 2020). Furthermore, information related to anxiety in the vH is directly routed to the mPFC (Ciocchi et al., 2015), and synchronised activity in this monosynaptically connected long-range circuit (Adhikari et al., 2010; Adhikari et al., 2011) is essential for the expression of anxiety behaviour. Motivated by the critical role of the dorsal hippocampus (dH) region in the encoding of spatial information (O\u2019Keefe, 1976; O\u2019Keefe and Nadel, 2011), several studies focusing on the vH have described its involvement in spatial coding (Jung et al., 1994; Poucet et al., 1994). Yet, probably due to its anatomical location and the difficulties to record action potentials of single-unit activity in the vH, the individual neuronal dynamics associated with the changes between anxiogenic and non-anxiogenic states during spatial navigation remain poorly understood.\n\nTo study the neuronal dynamics associated with anxiety behaviour in the vH, we simultaneously recorded the activity of individual neurons during the exploration of the EPM, as well as during the exploration of a novel behavioural paradigm, the elevated linear maze (ELM). During the same recording session, we modified the ELM from a non-anxiogenic to an anxiogenic configuration, while recording the activity of the same individual vH neurons. This enabled the investigation of the neuronal dynamics within the vH underlying different anxiety states. We specifically examined the remapping of neuronal activity at the single neuron and population level as animals transitioned from a non-anxiogenic configuration to an anxiogenic one. Collectively, the results of this study show that the neuronal activity in the vH does not simply reflect anxiogenic locations but that it is dynamically modulated by the experience and expectation of anxiety during spatial navigation.\n\n## Results\n\n### The firing activity of vH neurons is dynamically modulated during EPM exploration\n\nRats (n=6) freely explored an EPM consisting of two opposite arms with protective sidewalls (closed arms) and two opposite arms without sidewalls (open arms) (Figure 1A). The rats exhibited strong anxiety-related behaviour by spending most of the time in the closed arms, avoiding the more anxiogenic open arms and the centre (Figure 1A, bottom; closed vs open, p=9.5615e-10; closed vs centre, p=9.5657e-10; one-way ANOVA, Tukey-Kramer for multiple comparisons). While rats explored the EPM, we recorded neuronal activity in the vH with tetrodes (Figure 1B and Figure 1\u2014figure supplement 1A) and isolated individual spikes from different single neurons (n=98). We identified vH neurons with previously described activity patterns (Ciocchi et al., 2015), exhibiting preferential firing in the open arms, closed arms, or centre of the EPM (Figure 1C). To understand the effect of the open areas on the neuronal activity, we defined six possible trajectories taken by animals during EPM exploration (from one closed arm to any other arm). After linearising the trajectories (see Materials and methods), we organised the activity of the recorded neurons based on the spatial location of their peak (i.e. maximal) firing activity (Figure 1D). We observed that the peak firing activities of individual neurons spanned the entire maze even though the exploration of open arms was minimal. When plotting the peak firing density across the maze (normalised by the total number of neurons possibly firing in a spatial bin) the activity of vH neurons was concentrated around the centre of the maze when shuttling from one closed arm to the other one (Figure 1E, top, stars indicate bins with significant higher density; bootstrapping; see also Figure 1\u2014figure supplement 1B). In some trajectories, a similar effect is observed when animals shuttled from one closed arm to an open one (Figure 1E, bottom, starts indicate bins with significant higher density; bootstrapping; see also Figure 1\u2014figure supplement 1B). Even though the reduced number of entries to the open arms and exploration of open areas prevents a powerful statistic calculation, the observed effects imply that open areas are relevant for the neuronal activity of the vH.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig1-v1.jpg)\n\n**Figure 1.:** (A) Top, picture of the EPM. Bottom, the percentage of the time spent in different areas by the rats (n=6) during the exploration of the EPM. The time spent in closed arms is significantly higher than in the open arms and the centre (p=9.5615e-10, p=9.5657e-10, respectively. One-way ANOVA, Tukey-Kramer for multiple comparisons, n=16 sessions). (B) Location of tetrodes in the ventral hippocampus are indicated by red dots in three consecutive coronal sections (n\u2009=\u200947, number of rats \u2009=\u20098, one additional rat, for which histological location could not be confirmed, was included based on: insertion coordinates, oscillatory LFP profile, and similarity of neuronal activity). (C) Firing rate of six individual neurons during the exploration of the EPM. Full black lines denote a closed arm while the dotted lines indicate an open arm. Note three different anxiety-related activity patterns: increased firing in the open arms (left) or in the closed arms (centre) or in the centre (right). (D) Z-transformed firing rates (colour-coded) of ventral hippocampal neurons during the exploration of the EPM, separated by trajectories and sorted by the spatial location of their peak firing activity. Dotted lines indicated the centre area. (E) Top, density plot of the peak firing activity location for all neurons recorded during the journeys from a closed arm to the other during EPM exploration. Stars indicate the bins with significant higher density, calculated by bootstrapping (see Materials and methods). Note the increased number of peak activity at the centre (i.e. the only open area for these trajectories). Bottom, same as on the top, but for the trajectories between a closed arm and an open arm. The dotted lines denote the beginning and end of the centre area.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Nissl-stained sections of four different brains showing the tetrode tracks. Red arrows indicate the tip end and electric lesion (see Materials and methods). (B) Density plots of peak firing from Figure 1E but separated by trajectory. Dotted lines represent beginning and end of the central area. Stars represent bins with significant higher density determined by bootstrapping (see Materials and methods). Shuffled distribution (median to 95th percentile) is shaded in grey.\n\nHowever, these results suffer from important limitations: First, the extremely low and sporadic exploration of the open arms does not provide robust data sampling to test hypotheses regarding the neuronal computations associated with the exploration of an anxiogenic location. Second, the non-anxiogenic and the anxiogenic areas of the EPM are constantly present. This means that the characterisation of the anxiety states experienced by animals is not trivial as these may feel continuously anxious not solely in open spaces but also when considering to visit an open arm, while being in the closed arms of the EPM. In order to discriminate between neuronal activity related to spatial exploration from anxiety-related exploration and to motivate the exploration of anxiogenic areas for quantitative evaluation of the associated neuronal activity, we developed a novel behavioural paradigm to better control the transitions between anxiety states and the extent of exploration of anxiogenic areas.\n\n### Removal of protective sidewalls along an ELM induces anxiety behaviour\n\nWe developed an ELM, which consisted of an elevated linear track with removable protective sidewalls. This allowed to have sidewalls either all along the entire ELM, called closed-closed (CC) configuration, or to have the sidewalls removed from half of the track, called closed-open (CO) configuration (Figure 2A). The rapid removal of the sidewalls enabled the alternation between a non-anxiogenic and an anxiogenic configuration within the same maze and in a single recording session. To control for neuronal activity-associated differences between two dissimilar areas in the linear maze exploration, while maintaining non-anxiogenic locations, we modified temporarily the visual appearance of sidewalls and floor texture in one half of the track, creating a new and enriched environment, without being anxiogenic. This configuration was termed closed-texture (CT) configuration (Figure 2B). Rats (n=6) were motivated to fully explore the ELM, by shuttling from one end of the track to the other one over numerous trials, to receive food rewards (Figure 2C and Figure 2\u2014figure supplement 1A, B). To assess whether the removal of sidewalls induces behavioural readouts of anxiety similar to those of the EPM, we calculated the percentage of time spent on each of the arms for each configuration (Figure 2D). No differences were observed in the time spent by rats on the different arms during non-anxiogenic explorations (CC, CT). On the contrary, a significant difference was found in the configuration with sidewalls removed (CO exploration, p=1.45e-05, Wilcoxon signed-rank). The time spent in the centre area (11.5 cm around the middle of the track) was also longer during CO exploration compared to CC or CT explorations (Figure 2E, p=2e-05 and p=0.034 against CC and CT, respectively, one-way ANOVA, Turkey-Kramer for multiple comparisons), suggesting of hesitations to enter this open area of the maze.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig2-v1.jpg)\n\n**Figure 2.:** (A). ELM configurations with sidewalls along the entire track (closed-closed [CC], both arms closed, left), and with sidewalls removed for half of the track (closed-open [CO], called one arm closed \u2013 one arm open, right). Note the presence of a non-changing arm, while the other arm changes from a closed to an open configuration. R, indicates locations of food reward. (B) ELM configuration with both arms closed, but the floor texture and visual cues on inner-walls are changed in one of the arms (CT, closed and texture arm). (C) Linearised trajectories of a rat running in the three different ELM configurations during a single behavioural session. The grey line denotes the centre of the linear maze and the division between the two arms. (D) Time spent in both the non-changing and the changing arm in each configuration. Significant differences in the time spent appeared solely in the CO configuration (p=1.45e-05, Wilcoxon signed-rank, n=14 sessions). (E) More time spent in the central zone (defined as 11.5 cm around centre of the track) in the CO configuration in comparison to the CC and CT configurations (p=2e-05 and p=0.034, respectively, one-way ANOVA, Tukey-Kramer for multiple comparisons, n=14 sessions).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Boxplots of the number of trials per session for each configuration. (B) Boxplots of the number of rewarded (Rew., green) or not rewarded trials (N.Rew., white) per session for each configuration. Red lines are the medians, red dots the outliers.\n\nOverall, the removal of sidewalls along the ELM-induced anxiety behaviour that evolved during single behavioural sessions according to the anxiety content of each maze configuration.\n\n### Overrepresentation and remapping of vH activity during anxiety\n\nWe recorded a total of 133 neurons with tetrodes in the vH (Figure 1B and Figure 1\u2014figure supplement 1A), while the rats were exposed to the different configurations of the ELM. When the activity of individual neurons was sorted according to the spatial location of their peak firing activity, we observed that it spanned over the entire extent of the ELM for the three different configurations (Figure 3A and Figure 3\u2014figure supplement 1). It is important to note that most of the neurons do not have a spatially restricted activity similar to a typical place cell in the dorsal CA1 hippocampus, but still they exhibit a peak of activity associated to a spatial bin (Figure 3A and Figure 3\u2014figure supplement 1C). During the CO exploration, the distribution of peak firing activity was skewed towards the open area. We assessed the proportion of vH neurons with peak firing activity located on the different halves of the ELM during CC exploration. We found no differences in the proportion of peak firing activity located in each half of the CC configuration, even for the closed half that was going to be opened in the CO configuration (Figure 3B, left). Then, when one half was opened, a remapping of the neuronal activity was induced towards the anxiogenic location. We observed a higher proportion of peak firing activities located on the open arm (Figure 3B left, p=0.0121, chi-square test). We also compared the proportions of neurons that will \u2018Change to open\u2019 in contrast to the ones that will \u2018Change to closed\u2019. \u2018Change to open\u2019 are neurons that, during CC configuration, had their peak firing located in the arm, which was to remain closed upon sidewall removal. After the removal, their peak firing activity was remapped to the open arm of the CO. \u2018Change to closed\u2019 are their counterpart neurons, meaning that during the CC configuration, their peak firing was located in the arm to be opened upon sidewall removal. After the removal, their peak firing activity was remapped to the closed arm of the CO. The difference in proportions between these two subpopulations was significant (Figure 3B, right, p=0.0066, chi-square test). Figure 3C shows the peak activity transition of every single recorded neuron before (CC) and after (CO) removing the sidewalls in half of the maze. Importantly, no differences were found for the location and location changes of peak firing activity during the exploration of the CT configuration using a novel texture and visual cues in the closed arm (Figure 3D), suggesting that dynamic remapping of vH activity is contingent to the experience of anxiety rather than to a stimulus-enriched environment or novelty.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig3-v1.jpg)\n\n**Figure 3.:** (A) Z-transformed firing rates (colour coded) of ventral hippocampal neurons during the exploration of the elevated linear maze (ELM) and sorted by the spatial location of their peak firing activity for the three configurations: closed-closed (CC) (left); closed-open (CO) (centre); closed-texture (CT) (right). The order of neurons is sorted for each configuration independently. Dotted lines indicated the centre of the maze. Note that firing rates of neurons remain mostly in the middle ranges (green colour), which is different from classical place cells of the dorsal hippocampus. There is an increased number of neurons with peak firing activity in the open arm. (B) Left, comparisons of the percentage of neurons with peak firing activity located in the different arms of the CC and CO configurations of ELM. Note the significant differences of the proportion of neurons with peak firing activity in the open arm (p=0.0119, chi-squared test, total n=133). Right, upon removal of the sidewalls, a larger proportion of neurons change the location of their peak firing activity from a previously closed to a currently opened arm (p=0.0066, chi-square test, total n=59). (C) Changes of the spatial location of the peak firing activity for individual neurons between different configurations. Each arrow denotes the remapping of the location of the peak firing activity between the CC (base of the arrow) and the CO configurations (arrowhead). The red line indicates the centre of the linear maze. Note that the peak firing activity of the neurons shifted towards the open arm when changing from the CC to CO configuration. (D) Same analysis as in (B) for the CT configuration. CC2 is a configuration with sidewalls along the entire track (fully closed) explored right before the presentation of the CT configuration. No significant differences were observed. (E) Left, comparisons of the percentage of neurons with peak firing activity (after correction of the speed influence in the spiking activity by using the residuals of the generalised linear model [GLM]) located in the different arms of the CC and CO configurations of ELM (p=0.019, chi-squared test, total n=133). Right, upon removal of the sidewalls, a larger proportion of neurons change the location of their peak firing activity (after correction of the speed influence in the spiking activity) from a previously closed to a currently opened arm (p=0.0189, chi-square test, total n=59). (F) Same analysis as in (E) for the CT configuration. CC2 is a configuration with sidewalls along the entire track (fully closed) explored right before the presentation of the CT configuration. No significant differences were found.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Activity of two individual vCA1 hippocampal neurons during the ELM exploration. For each neuron: top, configurations, closed-closed (CC) (shown by a rectangle with full lines) and a closed-open (CO) (shown by a rectangle with half full and half dashed lines). Middle, mean neuronal activity averaged during the entire exploration (see Materials and methods). Bottom, same as the middle, but for the activity corrected by the animal\u2019s speed (see Materials and methods). The p-values on each panel denote the significance associated with the linear regression between the neuronal activity and the animal\u2019s speed. (B) Same as in (A) but with an additional panel for the closed-texture (CT) exploration (half full, half yellow). (C) Data from Figure 3A are replotted here without z-scoring. Firing rates (colour coded to a maximum of 10 Hz) of ventral hippocampal neurons during the exploration of the ELM and sorted by the spatial location of their peak firing activity for the three configurations: CC (left); CO (centre); CT (right). The order of neurons is sorted for each configuration independently. Dotted lines indicated the centre of the maze. Black arrows indicate three individual neurons with a spatial peak, but the rest of the firing is still elevated. Grey arrows indicate two individual neurons per configuration with firing rates during the exploration of the ELM constantly above 10 Hz, therefore saturating to the maximum colour (red).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Left, histogram of the correlation between the averaged spike shapes of the first third and last third of the recording. Note that 100% of the neurons showed higher correlation than 0.98, implying that the spike shape is not changing between the start and the end of a recording. Right, histogram of the spike-amplitude\u2019s change (%) between the averaged spike shapes of the first third and the last third of the recording. Note that more than 90% of the neurons show an amplitude change between \u20130.5% and 0.5% from the amplitude at the start. (B) Differentiation of putative pyramidal cells (yellow) and putative interneuron (blue), taking into account firing rate and the spike width (though-to-peak latency; see Materials and methods). Each dot indicates a neuron. Three neurons represented by grey dots were not classified. Red square shows the averaged spike of two individual neurons.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Same comparisons as in Figure 3B and C but only taking into account putative pyramidal cells. No significant differences were observed for the distribution of peak firing rates when expected range is random (50%\u201350%). If distributions in the closed-close (CC) exploration are considered the expected range in the closed-open (CO) exploration, then the amount of putative pyramidal neurons with peak firing activity in the open arm was significant (p=0.044, chi-squared test). (B) Same comparisons as in Figure 3B and C but only taking into account putative interneurons. Upon removal of the sidewalls, the amount of putative interneurons with peak firing activity in the open arm was significant for the CO exploration (p=0.04, chi-squared test). If distributions in the CC and CC2 explorations were considered as the expected range in the CO and closed-texture (CT) explorations, respectively, then the amount of putative interneurons with peak firing activity in the open arm was significant for the CO exploration (p=0.014, chi-squared test) as well as for the CT exploration (p=0.001, chi-squared test). (C). Same comparison as in Figure 3B and C but after removing all sharp-wave ripple (SWR)-associated spikes (see Materials and methods). Similar to Figure 3, the proportion of neurons with peak firing activity in the open arm was significant (p=0.0461, chi-squared test) as well as the proportion of neurons that changed the location of their peak firing activity upon removal of the sidewalls, from a previously closed to an opened arm (p=0.047, chi-square test). Significances were preserved when the expected range for the chi-squared test was not defined as 50%\u201350% of the population but rather the range on the CC exploration. For information about the tests with different expected ranges, see Materials and methods.\n\nMovement changes, mostly related to the running speed of the animal, could have been responsible for the neuronal activity changes observed during the exploration of the open arm. Speed-related modulation of hippocampal activity has been widely shown in the dorsal hippocampal region (Czurk\u00f3 et al., 1999; McNaughton et al., 1983; Wiener et al., 1989). Using generalised linear models (GLMs), we aimed to capture the influence of the animal\u2019s instantaneous speed on the location-dependent activity for each cell (see Materials and methods). We found that the spiking activity of 49 neurons out of 133 (36.84%) was significantly modulated by the speed of the animal during the exploration of the CC configuration. Also, as expected, a higher number of neurons (72 out of 133, 54.14%) were significantly modulated by running speed during the exploration of the CO, in agreement with the speed changes related to the experience of an anxiogenic area. Next, we used the residuals of the GLM as an approximation of the neuronal spike-associated activity, corrected by the influence of the speed. Repeating the same analysis as in Figure 3B and D we found that a significant proportion of vH neurons changed the location of their peak firing activities from the closed area to the open area after sidewall removal (Figure 3E), in addition to no significant differences when exploring the CT configuration (Figure 3F). These results suggest that even though there is a modulation by the speed of the animal, there is also a prominent influence of the anxiogenic location in the neuronal activity irrespective of running speed.\n\nAs the population of cortical neurons is composed of pyramidal cells and interneurons, we aimed to sort the recorded neurons according to their putative identity by examining the spike shape and the firing rate of the individual neurons (Csicsvari et al., 1998; Forro et al., 2022; Sirota et al., 2008). Due to the stability of the spike shapes during the time of the recording (Figure 3\u2014figure supplement 2A, B), we divided the recorded neurons in putative pyramidal cells (n=80, 60.15%) and putative interneurons (n=24, 18.05%) by using a threshold for the though-to-peak latency and the firing rate (put. pyramidal cells >0.3 ms and <20 Hz, respectively; and put. interneurons \u22640.3 ms and \u226510 Hz, respectively. Figure 3\u2014figure supplement 2B, see Materials and methods). Twenty-nine neurons (21.80%) were not classified as either. Similar tendencies in the open arm-associated activity were observed for both, putative pyramidal cells and putative interneurons (Figure 3\u2014figure supplement 3A, B).\n\nNeuronal activity in the hippocampus is strongly affected by the emergence of sharp-wave ripples (SWR) (Buzs\u00e1ki et al., 1992; Csicsvari et al., 1999; Ylinen et al., 1995). To control for this effect, we removed all SWR-associated spikes from the analysis, which resulted still in the same tendencies regarding open arm-associated activity (Figure 3\u2014figure supplement 3C).\n\nCollectively, these data indicate the dynamical recruitment of vH neurons when swapping between a non-anxiogenic (CC) to an anxiogenic configuration (CO), generating not solely a remapping of activity but also an overrepresentation of the anxiogenic area. As these effects were not detected during a novel but non-anxiogenic experience, we concluded that they might be attributed to anxiety processing during open-arm exploration rather than to a changed environment or novelty perception per se.\n\n### Spatial properties of vH neurons affected by anxiogenic area\n\nObserving the activity plots of vH neurons (Figure 3A), neuronal activity appeared to be spatially broader during CO exploration, suggesting that the anxiogenic area in the CO configuration selectively affected the spatial features of vH neurons. To investigate how CO exploration changed different spatial properties of neuronal activity, we calculated each neuron\u2019s spatial information, sparsity and coherence for each ELM configuration (Skaggs et al., 1996; Figure 4\u2014figure supplement 1A, see Materials and methods). Specifically, we compared these three properties for neurons with peak firing rate located in the open arm of the CO configuration; we called these \u2018peak in open\u2019 (PiO) neurons. Reciprocally, neurons whose peak activity was located in the closed part of the CO configuration, were called \u2018peak in closed\u2019 (PiC) neurons. Interestingly, both PiO and PiC neurons showed similar properties: their spatial information diminished when going from a CC to a CO configuration (p=1.66e-05 for PiO and p=0.0074 for PiC, Wilcoxon signed-rank test), while their sparsity and coherence increased (p=6.86e-05 and p=1.88e-05 respectively for PiO; p=9.68e-04 and p=2.86e-04 for PiC, Wilcoxon signed-rank test). Such effects were not observed for neurons during changes from CC2 to CT configurations (Figure 4A and B). However, PiO spatial properties tended to be diminished compared to PiC neurons for both spatial information (p=0.0130, Wilcoxon rank-sum test) and sparsity (p=0.0311, Wilcoxon rank-sum test) (Figure 4C). Concerning neurons that remapped from the closed arm in CC to the opened arm in the CO configuration, these neurons showed significantly lower spatial information and significantly higher sparsity (p=0.0029 and p=0.0016, respectively, Wilcoxon rank-sum test) already in the CC configuration, prior to the CO configuration, with respect to the other neurons that did not remap (Figure 4\u2014figure supplement 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig4-v1.jpg)\n\n**Figure 4.:** (A) Top, paired comparison of the spatial properties for PiO (firing peak in open area of the closed-open [CO] configuration) neurons between their activity in the closed-closed (CC) and the CO configurations. Spatial information (p=1.66e-05, Wilcoxon signed-rank test, n=81), sparsity (p=6.86e-05, Wilcoxon signed-rank, n=81), and coherence (p=1.88e-05, Wilcoxon signed-rank, n=81) were significantly different. Blue lines indicate an increase in the score while orange lines indicate a decrease. Bottom, paired comparison of the spatial properties for PiT (firing peak in the texture area of the closed-texture [CT] configuration) neurons between their activity in the CC2 and the CT configurations. No significant difference in spatial information, sparsity, or coherence was observed (n=38). (B) Paired comparison of the spatial properties for PiC (firing peak in closed area of the CO configuration) neurons between their activity in the CC and the CO configurations. Spatial information (p=0.0074, Wilcoxon signed-rank test, n=52), sparsity (p=9.68e-04, Wilcoxon signed-rank test, n=52), and coherence (p=2.86e-04, Wilcoxon signed-rank test, n=52) were significantly different. (C) Comparison of spatial information, sparsity, and coherence during CO configuration between PiC and PiO neurons. Significant differences are observed in spatial information (p=0.0130, Wilcoxon rank-sum test) and sparsity (p=0.0311, Wilcoxon rank-sum test).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Histograms of the spatial properties of neurons for different configurations (top: spatial information, middle: sparsity, bottom: coherence). (B) Top panels, spatial properties comparison (spatial information, sparsity, and coherence) between neurons that change peak firing from the non-changing closed arm in the closed-closed (CC) exploration, towards the open arm in the closed-open (CO) exploration (R2O) and neurons that do not change peak firing location (NR2O). Significant differences were found in spatial information (p=0.0029, Wilcoxon rank-sum test, R2O: n=40 and NR2O: n=93) and sparsity (p=0.0016, Wilcoxon rank-sum test, R2O: n=40 and NR2O: n=93). Bottom panels, same as the top, but for neurons that changed peak firing from the non-changing closed arm in the CC2 exploration, towards the texture arm in the closed-texture (CT) exploration (R2T) and neurons that do not change peak firing location (NR2T). No significant differences were found. (C) Paired comparison of the neurons\u2019 firing rates between CC to CO configurations, and CC2 to CT configurations. No significant differences were found. (D) Histogram of remapping score (see Materials and methods) of neuronal firing rates between CC-CO (black) and CC2-CT (dotted black). Remapping score was higher between CC2-CT in comparison to CC-CO configuration change (p=0.0358, Wilcoxon rank-sum test, CC to CO: n=133, CC2 to CT: n=62).\n\nIn addition to the spatial properties and general activity remapping, rate remapping represents another factor which indicates modulation by a new environment or stimulus (Kaefer et al., 2019; Latuske et al., 2017; Leutgeb et al., 2005). Even though the overall firing rates were not significantly different between different configurations (Figure 4\u2014figure supplement 1C), we calculated the remapping score (see Materials and methods) for each neuron between the CC and CO configuration and between the CC2 and CT configuration. The CC2-CT remapping score was significantly higher than the CC-CO (p=0.0358, Wilcoxon rank-sum test, Figure 4\u2014figure supplement 1D).\n\nAltogether, the results are in line with the experience of an anxiogenic environment (CO) and a non-anxiogenic but new environment (CT) being perceived. This seems to be supported by the observation that the spatial representation of all neurons responding to the anxiogenic area in the CO configuration was reduced (lower spatial information and higher sparsity) upon the removal of the walls, with this effect more pronounced for those neurons whose activity reached their maximum in the open area of the anxiogenic environment.\n\n### The direction-dependent activity of vH neurons becomes homogenised following the introduction of an anxiogenic location\n\nHippocampal place cells have been reported to exhibit direction-specific spatial modulation of activity as animals run along a linear maze (McNaughton et al., 1983; Muller et al., 1994; Royer et al., 2010). This raises the question as to whether the activity of vH neurons, recruited by areas with increased anxiety content, are also modulated by the direction of the journey along a linear track. When monitoring the activity of individual vH neurons recorded during the exploration of the CC configuration (Figure 5A), we expectedly observed a profound direction-dependent difference. However, this direction-dependent neuronal firing of the same vH neurons became homogenised, meaning that it was very similar in both directions, once the sidewalls were removed and the rats were exploring the CO configuration. To quantify this phenomenon, we use the Spearman correlation as a measurement of place field similarity (PFS) of a neuron between its activity while the animal moved in one direction vs the other direction. The PFS value obtained from the correlation will grant an accurate approximation of the similarity between the neuronal activity of both directions. As expected, the PFS index of animals exploring the CC configuration was significantly different from the PFS index of animals exploring the CO configuration (Figure 5B, left, p=7.53e-09, Wilcoxon rank-sum test). Based on the values of the PFS indices (median PFSCC = \u20130.0539, median PFSCO = 0.5091), we inferred that the significant difference between the PFS distributions is due to a similar neuronal activity in both directions during the exploration of the CO configuration.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig5-v1.jpg)\n\n**Figure 5.:** (A) Neuronal activity of individual ventral hippocampus (vH) neurons while animals explored the elevated linear maze (ELM) in both the closed-closed (CC) and the closed-open (CO) configuration. Blue lines denote when animals headed towards the arm that will be open (in the case of the CC configuration) or is open (in the case of the CO configuration). Red lines denote when animals returned from this arm. Correlation values (Spearman correlation) indicate the similarity between the neuronal activities of both trajectories. (B) Histograms of the firing rate maps similarity index (place field similarity [PFS], see Materials and methods) for the activities of single neurons calculated in the two possible directions on the ELM (left to right and right to left). Left, PFS index is higher during the CO configuration (cyan) compared to the CC (black) configuration (p=7.53e-09, Wilcoxon rank-sum test, CC: n=128 and CO: 133). Right, PFS index is not significantly different during the closed-texture (CT) configuration (dotted cyan) compared to the CC2 (dotted black) configuration (CC2: n=60 and CT: n=75). (C) Cumulative distributions of the PFS indexes for the CC, CO, CT, and CC2 configurations. Note that during the CO configuration the PFS index of neurons is significantly higher compared to the other configurations (vs CC, p=7.53e-09; vs CT, p=4.6e-05; and vs CC2 p=1.68e-07; Wilcoxon rank-sum test). (D) Histograms of the firing rate maps similarity index (PFS, see Materials and methods) for the activities of single neurons (after correction of the speed influence in the spiking activity) calculated in the two possible directions on the ELM (left to right and right to left). Left, PFS index is higher during the CO configuration (cyan) compared to the CC (black) configuration (p=6.43e-10, Wilcoxon rank-sum test). Right, PFS index is not significantly different during the CT configuration (dotted cyan) compared to the CC2 (dotted black) configuration. (E) Cumulative distribution of the PFS indexes in (D) for the CC, CO, CT, and CC2 configurations. Note that during the CO configuration the PFS index of neurons is significantly higher compared to the other configurations (vs CC, p=6.43e-10; vs CT, p=3.06e-06; and vs CC2 p=4.32e-06; Wilcoxon rank-sum test).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Same comparisons as in Figure 5B and C but only for putative pyramidal neurons. Place field similarity (PFS) index was higher during the closed-open (CO) configuration (cyan) compared to the closed-closed (CC) (black) configuration (p=8.079e-07, Wilcoxon rank-sum test, CC: n=77 and CO: n=80). During the CO configuration, the PFS index of putative pyramidal neurons was significantly higher compared to other configurations (vs CC, p=8.079e-07; vs CT [closed-texture], p=9.37e-05; and vs CC2, p=2.69e-05; Wilcoxon rank-sum test). (B) Same comparisons as in Figure 5B and C but only for putative interneurons. PFS index was higher during the CO configuration (cyan) compared to the CC (black) configuration (p=5.7408e-04, Wilcoxon rank-sum test, n=24). During the CO configuration, the PFS index of putative interneurons was significantly higher compared to other configurations (vs CC, p=5.7408e-04; vs CT, p=0.048; and vs CC2, p=0.0048; Wilcoxon rank-sum test). (C) Same comparisons as in Figure 5B and C but for the neuronal activity after removal of all sharp-wave ripple (SWR)-associated spikes. PFS index was higher during the CO configuration (cyan) compared to the CC (black) configuration (p=3.66e-06, Wilcoxon rank-sum test). During the CO configuration the PFS index of putative pyramidal neurons was significantly higher compared to other configurations (vs CC, p=3.66e-06; vs CT, p=0.021; and vs CCT2 p=7.177e-04; Wilcoxon rank-sum test).\n\nTo corroborate that such a phenomenon was not due to the novelty of the arm, we calculated the PFS indexes of the neuronal activity during the exploration of a novel arm (CT), instead of an anxiogenic location (i.e. CO configuration). The PFS indexes between the exploration of the CC configuration prior to the CT (called CC2) and the PFS indexes during the CT configuration were not significantly different (Figure 5B, right, median PFSCC2=\u20130.1279, median PFSCT = 0.0922). In general, all the PFS values during the exploration of CC, CC2, and CT were significantly lower than during the exploration of the CO configuration, as seen in the cumulative distribution plots of the PFS (Figure 5C, CO vs CC, p=7.53e-09; vs CT, p=4.6e-05; and vs CC2, p=1.68e-07; Wilcoxon rank-sum test). The same tendencies were seen after obtaining the neuronal spike-associated activity controlled by the speed of the animal (Figure 5D and E), as described previously and in the Materials and methods, as well as for putative pyramidal cells, putative interneurons, and, in general, neuronal activity after the removal of SWR-associated activity (Figure 5\u2014figure supplement 1A, B, C).\n\nIn conclusion, even though there was direction-dependent neuronal activity in the vH during the exploration of a non-anxiogenic linear maze, this spatial dependency was reduced when animals encountered an anxiogenic location, and the spiking activity of the neurons tended to be homogenised independently of the direction of the animal.\n\n### The activity of vH neurons predicts the extent of exploration of an anxiogenic location\n\nWe have shown that neurons of the vH change their activity patterns during the experience of anxiety. The described changes on neuronal activity were mainly related to the exploration of the open area. Next, we asked if neuronal activity during the exploration of the closed arm during a CO configuration was influenced by the upcoming anxiety states. Observation of behavioural readouts (Figure 2) seemed to indicate a hesitation to enter the opened arm in the CO configuration, and after entering, there not always a full commitment to explore it to the end. Therefore, we asked whether neuronal firing in the closed area might be predictive of the extent of an upcoming exploration in the anxiogenic area. To do so, we divided spatial explorations into two groups depending on how far animals explored the open arm during a particular trial: proximal and distal exploration trials were defined using an individual threshold for each session ($Threshold= \\frac{Furthest spatial bin-Nearest spatial bin}{2}$) (Figure 6A). We then tested if the neuronal activity before entering the open arm was informative of how far animals would venture into the open arm (proximal or distal explorations). We trained a support vector machine (SVM) using the neuronal activity for each possible neuronal pair in the closed arms and each recording day (see Materials and methods). Using a wrapper-like method, we then selected the neuronal pair with the highest performance on correctly predicting the extent of exploration for single trials on a given recording day (Figure 6B and Figure 6\u2014figure supplement 1A for raster plots). Since the distribution of distal and proximal trials was not equal (50%\u201350%), we then determined if the performance of the optimal pair in a given recording day was significant by shuffling the trial IDs 1000 times and re-calculating the performance on a newly trained SVM. A recording day was labelled as successfully predicted if the performance of the optimal neuronal pair was higher than the 95% percentile of the shuffled distribution. Classification performance for three sessions are shown in Figure 6C, where the red coloured dots imply an incorrect classification. The summary of the performance of the classifiers for all sessions is shown in Figure 6D, where the boxplots represent the performance of each of the 1000 shuffles but with the optimal performance of the session subtracted (grey line at 0 denotes the optimal performance and the boxplots the \u2018differential to the optimal\u2019 shuffled ones). We found that during individual recording sessions, the performance of the SVM was above chance levels (95th percentile) in 9 out of 12 sessions. Also, the performance of any pair was higher than the performance of the best pair\u2019s shuffled data, with few expected exceptions (Figure 6\u2014figure supplement 2A). Because the area before entering the open arm of the CO configuration seemed to be a behaviourally important location, it might be possible that we were capturing the speed-related neuronal activity (due to a speed difference between trials in which the rat would visit the end of the arm, or would return early). However, we observed that the animals\u2019 speed before entering the open arm was not different between proximal or distal run endpoints, except for one session (Figure 6\u2014figure supplement 1B). In addition, correct prediction of several sessions using the SVM classifier was achieved for controls in which speed or SWR-associated activity was corrected and also when restricting the pairs to be either only putative pyramidal cell pairs, or putative interneuron pairs (Figure 6\u2014figure supplement 2B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig6-v1.jpg)\n\n**Figure 6.:** (A) For two behavioural sessions, the furthest spatial bin visited on each trial is plotted. The dotted line indicates the spatial bin set as a criterion to define two different types of trajectories: proximal (blue dots) and distal (magenta dots) exploration. (B) For the two behavioural sessions in (A), the single-unit activity of two co-recorded neurons during the run on the closed arm are shown. The dotted line in the panel indicates the result of support vector machine (SVM) plane for the separation of both, distal and proximal, categories (see Materials and methods). Firing rate is given as the z-score scaled by the SVM (see Materials and methods). (C) Predictions of the SVM for three additional individual sessions. The blue line shows the furthest spatial bin reached during specific trials. The dotted line indicates the middle of the exploration of the open arm and divides the trials into proximal (left) and distal (right) explorations (used for the SVM classifier). Dots at the right of each plot show the trial by trial accuracy of the SVM classifier (see Materials and methods). Full dots show trials with distal explorations while circles show trials with proximal explorations. Red colour implies inaccurate prediction of the SVM classifier for that specific trial. (D) Normalised distributions of the SVM classifier performance (observed data \u2013 shuffled data) for each of the 12 sessions used. For each session, the neuronal pair with the best SVM performance was subtracted from the performance of the same pair with shuffled distal and proximal explorations (1000 shuffles). Therefore, the grey line at 0 marks the SVM classifier performance on the observed data and the boxplots show the differential performance of each of the shuffled iterations. Not significant (n.s.); significant (*, lower than 0.05). Boxplots show median (red line), 25th and 75th percentile.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Raster plots of the spike activity in time for the neuronal pairs in Figure 6A. Each tick indicates a spike. Each row shows a trial during which the animal goes from the closed towards the opened arm. Red dotted line denotes the moment when the animal crossed the midline. Translucid boxes at the right of the red line were labelled as proximal (blue) or distal (magenta) exploration. (B) Boxplots of the animal\u00b4s speed, in every session used for the support vector machine (SVM) analyses, calculated in the same area as the one used for the firing rates of the SVM (closed arm from the moment the animal heads towards the open area). Blue indicates proximal and magenta distal exploration. The p values are stated for each plot; green letters denote significant differences. Note that the first plot is for all the trials in all the sessions pulled together and the rest are for individual sessions.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83012/elife-83012-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Expanded plot as in Figure 6D. Black boxes indicate the shuffled SVM performance minus the actual performance of the best neuronal pair in the session. Red boxes show the distribution of the performances of all the other neuronal pairs in the same session for the observed data (all other pairs \u2013 best pair). (B) Same plot as in Figure 6D but for four different contingencies of the neuronal activity (speed controlled activity, activity after removal of sharp-wave ripple (SWR)-related spikes, only pairs of putative pyramidal neurons or putative interneurons). Note the good performance of the SVM during all these conditions across (A) and (B).\n\nThese analyses indicate that the neuronal representation of the anxiogenic location was not only dynamically modulated by the momentary experience of anxiety, but already existed in the closed arm, possibly reflecting the intention to venture into the open arm. This implies that neuronal activity within the vH can predict upcoming anxiogenic situations, even when animals are still located in a safer environment without a direct exposure to an anxiety-inducing location.\n\n## Discussion\n\nTo investigate the neuronal dynamics governing anxiety behaviour in the vH, we recorded the activity of individual neurons while rats explored anxiogenic locations. In addition to the classical EPM, we used a novel ELM, which allowed us to rapidly change the anxiety content of the maze to expose rats to non-anxiogenic or anxiogenic configurations. We found that the neuronal activity of the vH exhibited a uniform spatial representation in the non-anxiogenic configuration of the ELM and that vH neurons displayed direction-dependent spatial firing when shuttling from one end of the ELM to another. When the anxiogenic location was introduced by removing the protective sidewalls from half of the track, the peak firing activity remapped towards the newly introduced anxiogenic location, the spatial properties of the neuronal activity diminished, and direction-dependent firing was homogenised. Of important note, neuronal activity in the closed arm of the ELM predicted the extent of the upcoming exploration in the open arm even before rats entered into the open anxiogenic location.\n\nMuch of the anxiety research in freely moving rodents has been relying on the EPM. Using the EPM, it has been shown that: amygdala projections to the vH control the expression of anxiety (Felix-Ortiz and Tye, 2014; Pi et al., 2020); there is an anxiety-associated neuronal activity in the vH routed to the mPFC Ciocchi et al., 2015; and that the vH-prefrontal pathway is critical for anxiety behaviour (Adhikari et al., 2010; Adhikari et al., 2011; Ciocchi et al., 2015). The first part of this manuscript focuses on the activity of neurons recorded in the vH during the exploration of an EPM. We divided the exploration of the EPM into different trajectories. We observed a localised increase in the density of peak firing activity when rats crossed the centre in all the different C-C or C-O trajectories (Figure 1E). This might be explained by the fact that not only the open arms of an EPM are anxiogenic, but also the centre zone (Mendes-Gomes et al., 2011). Unfortunately, it proved difficult to analyse these effects quantitatively, because rats explored the open arms only minimally and sporadically, consistent with the anxiogenic nature of the EPM paradigm.\n\nTo overcome this problem, we introduced a novel ELM on which rats were motivated to shuttle from one extremity to the other to receive rewards. The ELM had three different configurations: non-anxiogenic (CC configuration); anxiogenic (CO configuration); and a configuration with new texture and visual cues (CT). Configurations could be quickly switched within a session. At the behavioural level, we observed anxiety-related behaviour during ELM exploration comparable to the ones during EPM exploration (Figure 2D and E). However, the main advantage of the ELM was the possibility to record the neuronal activity of the same vH neurons while rapidly modifying ELM configurations and motivating rats to spend more time in the anxiogenic location. After animals transited from a non-anxiogenic to an anxiogenic configuration, we observed a significant increment in peak firing activities predominately located in the open area. We attributed this recruitment or remapping of the neuronal activity to the anxiogenic location. The neuronal mechanisms during spatial remapping remain largely elusive. Global remapping is a phenomenon observed in the dH when animals move from one environment to a different one (Leutgeb et al., 2005). One could argue that the simple removal of the walls is changing the environment of the ELM and therefore animals could perceive the open arm as a completely novel environment, inducing global remapping. Nevertheless, remapping of neuronal activity in a new environment is expected to be random and independent of a previously explored environment (Gauthier and Tank, 2018; Leutgeb et al., 2005; Schlesiger et al., 2018), even when emotional contexts are introduced (Moita et al., 2004). However, the remapping of neuronal activity observed in vH neurons is not arbitrary as it is most prominent in the anxiogenic location, contrary to a uniformly distributed peak activity in case of a random remapping (Figure 3B). Nonetheless, the opening of walls per se, independent of the anxiogenic experience, could cause changes in vH neuronal activity. Previous work has shown that novel environments elicit the activation of vH neurons to a similar extent as an aversive stimulus (Graham et al., 2021). To show that the remapping of neuronal activity relies on anxiety, we changed the ELM from a CC to CT configuration during the same recording session. In the CT configuration, the previously open location changed to a novel one with a different floor texture and visual patterns in the inner part of the walls, but with protective sidewalls kept all along the track (Figure 2B). As anticipated, these changes equally induced a remapping of neuronal activity in the vH. Yet, in this case, the remapping was distributed over the length of the maze and the novel area did not show an increased number of peak firing activity (Figure 3C). Overrepresentation of behaviourally relevant locations or episodes is not novel in the hippocampal research field. It has been previously demonstrated that hippocampal place cells fire preferentially at reward locations during goal-directed tasks (Dupret et al., 2010; Hok et al., 2007; Hollup et al., 2001; Jin and Lee, 2021) and global remapping is observed in the intermediate hippocampus due to motivational changes (Jin and Lee, 2021). Several experiments have tackled the role of dH neurons in fear conditioning and other aversive tasks, resulting in similar activity patterns to the ones found in this research. Dorsal hippocampal place cells were shown to remap or partially remap in the presence of an aversive stimulus (Kong et al., 2021; Moita et al., 2004; Wu et al., 2017), or remap towards areas of aversive stimuli or threats (Schuette et al., 2020; Wang et al., 2012; Wang et al., 2015), by increasing their activation (Wu et al., 2017) or by synchrony with or reactivation of a subset of basal and BA neurons (Girardeau et al., 2017; Kong et al., 2021). Interestingly, the non-aversive stimulus, presented in the same context as the aversive ones, did not induce remapping in dorsal hippocampal neurons (Moita et al., 2004; Wang et al., 2015), a similar effect to our observations in vH neurons.\n\nFurthermore, the vH is strongly associated with anxiety, and the anxiogenic location represents a highly salient environment for vH-dependent computations (Bannerman et al., 2014). This is supported by our finding that neurons of the vH overrepresent the anxiogenic area. Interestingly, in addition to the global remapping, we also found differences in the rate remapping between the CC-CO and the CC2-CT conformation changes. Rate remapping was significantly more robust in the novel context than in the anxiogenic one, in line with the literature suggesting that novelty induces rate remapping in hippocampal neurons (Kaefer et al., 2019; Leutgeb et al., 2005; Renn\u00f3-Costa et al., 2010). Regarding spatial properties of the hippocampal neurons, conflicting effects have been observed with aversive stimuli in the dH. In some cases, spatial information was not significantly different between non-aversive and aversive conditions, but the variance was significantly greater Wu et al., 2017; in other cases, spatial information was higher in non-aversive compared to aversive contexts Wang et al., 2015; while others report either an increase in place field size (Moita et al., 2004) or a decrease (Schuette et al., 2020). One paper reports various changes in the activity of vH neurons when mice are confronted with an aversive odour stimulus. They report a decrease in place field size, remapping of the activity and increase of the firing rate in the presence of the aversive odour (Keinath et al., 2014). Similarly, we also observe remapping of neuronal activity in aversive conditions and, in fact, a tendency, yet no significance, of the neurons to increase their firing rate in the CO configuration compared to the CC (Figure 4\u2014figure supplement 1C). However, in our study, the activity of the neurons in vH increases its coverage, while in Keinath et al., it is reduced (smaller place fields). In the Keinath et al. study, the aversive stimulus was presented on a small area while in our case the source of the anxiogenic stimulus cannot be pinpoint to a specific part of the open arm, which might have contributed to the different observations. In our experiments, the spatial properties of the neurons in the anxiogenic area of the CO configuration are reduced (lower spatial information and higher sparsity) compared to the CC configuration (Figure 4). Overall, all these elements further strengthen the role of vH in the emotional processing of information.\n\nAnother relevant observation relates to the directional firing of vH neurons. In the non-anxiogenic configuration of the ELM, the spatial activity of single vH neurons varied depending on the direction of exploration. Similar observations have been made in both the dH (McNaughton et al., 1983) and vH (Royer et al., 2010) for linear mazes, suggesting of a common principle underlying spatial information along the dorso-ventral axis of the hippocampus. With respect to the vH, Royer et al. hypothesised that the differential activity between inbound and outbound trajectories might be caused by the reward delivered at the end of the arm implying some reward-associated value coding. In contrast to Royer et al., we placed rewards at both extremities of the ELM. Although this does not invalidate the view of Royer et al., in our study, the direction-dependent firing was homogenised in the anxiogenic configuration of the ELM, with vH neurons exhibiting similar firing independently of the direction of exploration in the open arm (Figure 5). We attribute the homogenisation of the direction-dependent firing in single vH neurons to the relevance of the anxiogenic location for vH-dependent computations. One cannot rule out that the homogenisation is also a product of the noticeable change in the maze configuration, implying that the closed and open arm are easier to discern for the animal. Therefore, in both directions, the animal receives similar visual inputs and, therefore, activity homogenises. However, our control experiments, in which we introduced a new, but non-anxiogenic environment to the ELM (Figure 5C), also resulted in a clear differentiation of both parts of the ELM in both directions of travel. Still, we failed to observe a homogenisation of the activities.\n\nFurthermore, the modulation of the neuronal activity in the anxiogenic location was not exclusively observed while the rats explored the open area. The CO configuration of the ELM contained protective walls in half of the maze, while the other half was entirely open. The neuronal population activity was a good predictor of the extent of the exploration of the open location, even when rats explored the closed arm before entering to the open location. Indeed, the neuronal activity in the closed arm, of neuronal pairs, was sufficient to infer whether rats would perform proximal or distal explorations of the open arm (Figure 6). Anxiety-related modulation of vH neuronal activity in both the closed and the open locations implies that not only a direct experience of anxiety enhances neuronal activity in the vH, but also its anticipation without a direct confrontation to an anxiety-inducing situation.\n\nOverall, we provided evidence that the neuronal dynamics within the vH are subjected to the experience of anxiety. When an anxiogenic situation was encountered, vH neurons, first, over-represented this location (Figure 3). Second, spatial properties of the neurons, with their main activity in the anxiogenic area, were reduced (Figure 4). Third, vH neuronal activity was tuned to the anxiogenic environment, impairing previous direction-dependent neuronal activity manifesting in the absence of anxiety (Figure 5). Fourth, the neuronal activity of vH neurons reflected and predicted the exploration of an anxiogenic location (Figure 6). Collectively, these results expand our view of vH function by highlighting dynamic and predictive computations during anxiety.\n\n## Materials and methods\n\n### Experimental subjects\n\nIn total, nine long Evans rats from Charles River Laboratories (male, 250\u2013600 \u2009g), were kept in 12 hr light cycles during behavioural experiments (performed during the light cycle). All experimental procedures were performed under an approved licence (66.009/0281-WF/V/3b/2015) of the Austrian Ministry of Science and the Medical University of Vienna.\n\n### Surgery and microdrive implantation\n\nUsing isoflurane, animals were anaesthetised (induction 4%, maintenance 1\u20132%; oxygen flow 2 l/min) and fixed to a stereotaxic frame. The body temperature was controlled using a heating pad. Iodine solution was applied to disinfect the surgery site and eye cream was used to protect the eyes. Local anaesthetic (xylocain 2%) was used before the incision. Saline solution was injected subcutaneously every 2 hr, to avoid dehydration. Seven stainless steel screws were anchored into the skull to improve the stability of the construct, and two of the screws were placed above the cerebellum as references for the electrophysiological recordings. Next, based on the rat brain atlas (Paxinos and Watson, 2007), a craniotomy was performed above the vH area (from bregma:\u2009\u20134.8 mm anterior, 4.5 mm lateral, right hemisphere). After removal of the dura mater, an array of 12 independently movable, gold-plated (100\u2013500 \u2009k\u03a9) wire tetrodes (13 \u00b5m insulated tungsten wires, California Fine Wire, Grover Beach, CA) mounted in a custom-made microdrive (Miba Machine Shop, IST Austria) were implanted (dorso-ventral: \u20136.5 mm). Paraffin wax was then applied around the tetrode array, and the lower part of the microdrive was cemented (Refobacin Bone Cement) to the scalp. At the end, the surgery site was sutured, and systemic analgesia (metacam 2 mg/ml, 0.5 ml/kg) was given. Animals were allowed at least 7 days of recovery time.\n\n### Histology\n\nTo confirm the position of the recording sites, rats were deeply anaesthetised with urethane and lesions were made at the tip of the tetrodes using a 30 \u00b5A unipolar current for 5\u201310 s (Stimulus Isolator, World Precision Instruments). Then, rats were perfused with saline followed by 20 min fixation with 4% paraformaldehyde, 15% (vol/vol) saturated picric acid and 0.05% glutaraldehyde in 0.1 M phosphate buffer. Serial coronal sections were cut at 70 or 100 \u00b5m with a vibratome (Leica). Sections containing a lesion were Nissl-stained. One rat, for which histological data could not be confirmed, was included based on: insertion coordinates, oscillatory LFP profile, and similarity of neuronal activity.\n\n### Mazes description and behaviour\n\nThe EPM consisted of two closed (with protective sidewalls) and two open (without sidewalls) arms. The dimensions of the arms were 9\u00d750 cm, the walls in the closed arms were 40 cm high, and the EPM was elevated 70 cm above the floor. Rats were placed on the EPM facing the open arm distal to the experimenter. Sessions lasted 5\u20138 min and were done at 200 lux of room light intensity (Walf and Frye, 2007). In total six animals (SC61, SC63, SC65, SC66, SC67, SC68) were used for the EPM. Some data of these animals are also used in another independent publication (Forro et al., 2022).\n\nThe ELM consisted of a linear track of 120 cm length and 8 cm in width. The maze was elevated by 105 cm above the ground. A reward was given at both endpoints (two 20 mg sugar pellets). Three possible configurations were presented during the EPM exploration: A CC configuration, consisting of four black panels acting as sidewalls which covered the entire length of the track and prevented the animal from experiencing the height; a CO configuration which consisted of two black panels acting as walls covering one half of the maze and leaving the other half completely open, resulting in an anxiogenic area; and a third configuration was called CT which consisted of four black panels acting as walls covering the entire length of the maze. The difference with the CC configuration was that in half of the maze (the half which was open in the CO configuration) coloured geometrical figures were added to the sidewalls as new visual patterns and the texture of the floor were changed. The ELM sessions were composed by the presentation of the CO and CT configurations, each preceded by a CC configuration. Depending on the motivation of animals to explore, CC and CT configurations lasted 5\u201315 min while CO configurations lasted between 5 and 20 min. When a CC configuration was preceding a CT configuration, we refer to the configuration as CC2.\n\nBefore animals were ready for a recording session, we habituated them to the CC configuration until they exhibited consistent shuttles between one end and the other (experimenter consideration). The animals did not experience CO and CT before recordings.\n\nIn total, 14 sessions were recorded from six rats in the ELM (SC65, SC67, SC68, SC70, HM15, HM16). CC or CC2 always preceded a CO or CT exploration, respectively. Configurations were distributed per animal in the following way: SC65, one session (CC, CO); SC67, two sessions (CC, CO); SC68, three sessions (CC, CO); SC70, three sessions (CC, CO); HM15: three sessions (CC, CO, CC2, CT); HM16: two sessions (CC, CO, CC2, CT). In three sessions, CT preceded CO, and in two others, CO preceded CT.\n\nFigure 2\u2014figure supplement 1A, B shows the boxplots for the number of trials, rewarded trials, and no-rewarded trials for each configuration. A trial was included as the trajectory from where an animal left a reward zone and crossed the middle. Only trials in which an animal went from one end to the other were rewarded. A repeated visit to the same reward zone from where the animal departed was not rewarded. However, if the animal crossed the middle before returning, it was counted as two directional trials: one trial in one direction (used in the distal to proximal exploration analyses in Figure 6), and from the point of return, one trial in the other direction (used for the homogenisation analyses of Figure 5).\n\nTracking of the rats\u2019 movement was monitored by triangulating the signal from three LEDs (red, blue, green) placed on the implanted headstage and recorded at 50 frames per second by an overhead video camera (Sony).\n\n### In vivo electrophysiology\n\nEither an Axona headstage (HS-132A, 2\u2009\u00d7\u200932 channels, Axona Ltd) or Intan headstage (2\u00d7 RHD32-channel headstage) were used to pre-amplify the extracellular electric signals from the tetrodes. For the Axona headstages, output signals were amplified 1000\u00d7\u2009via a 64-channel amplifier and then digitised continuously with a sampling rate of 24 \u2009kHz at 16-bit resolution, using a 64-channel analogue-to-digital converter computer card (Axona Ltd). For the Intan headstages, signals were acquired with the RHD32 channel headstage and directly sent to the Intan 512ch/1024ch recording controller. Single-unit offline detection was performed by thresholding the digitally filtered signal (0.8\u20135 \u2009kHz) over five standard deviations (SD) from the root mean square in 0.2 ms sliding windows. For each single unit, 32 data points (1.33 ms) were sampled. A principal component analysis was implemented to extract the first three components of each spike waveform for each tetrode channel (Csicsvari et al., 1998).\n\nSpike waveforms from individual neurons were detected using the KlustaKwik automatic clustering software (Kadir et al., 2014). Using the Klusters software (Hazan et al., 2006), single units were isolated manually by verifying the waveform shape, waveform amplitude across tetrode\u2019s channels, temporal autocorrelation (to assess the refractory period of a single unit) and cross-correlation (to assess a common refractory period across single units). The stability of single units was confirmed by examining spike features over time. The position of tetrodes was reset after each recording day. The following number of neurons were recorded for each animal: SC65, 2 neurons; SC67, 17 neurons; SC68, 31 neurons; SC70, 7 neurons; HM15, 44 neurons; and HM16, 32 neurons.\n\n### Spike-shape classification of putative pyramidal cells and putative interneurons\n\nThe putative identity of the recorded hippocampal neurons has been assessed by examining the spike shape and the firing rate of the individual neurons (Csicsvari et al., 1998; Forro et al., 2022; Sirota et al., 2008). We averaged all the spikes of a clustered unit to obtain a spike shape of each neuron. We calculated the latency between the trough and the following peak (hyperpolarisation period) and the firing rate of each neuron (see Figure 3\u2014figure supplement 2B). We sorted putative pyramidal cells with a trough-to-peak latency higher than 0.3 ms and firing rate lower than 20 Hz. Putative interneurons were defined as units with a trough-to-peak latency lower than 0.3 ms and firing rate higher or equal to 10 Hz. Several neurons did not fall into any of these two categories. They were included in the main analyses, but not when differentiating putative pyramidal cells and putative interneurons.\n\n### SWR detection\n\nSWR were detected in a semi-automatic matter from the local field potential of the tetrode with the highest ripple amplitude. We filtered the signal between 130 and 230 Hz and calculated the root mean square amplitude in 10 ms sliding windows. We calculated the mean and SD of all points in the trace. We set the threshold for ripple detection at 5 SD above the mean. The beginning and end of an SWR were marked in the 1 SD crossing (from the mean). A visual inspection excluded some detected SWR as artefacts; sometimes, boundaries were adjusted.\n\n### Firing rate maps and trajectory linearisation\n\nTo compute firing rate maps found in Figure 1, bins of 10\u00d710 cm2 were created. For each bin, the total number of spikes was divided by the rat\u2019s occupancy (in seconds): the firing rate maps were smoothed by convolving them into two dimensions with a Gaussian low-pass filter. For the EPM, by using the geometry of the maze, the centre and the arms were defined. Trajectories were then found by demarcating the consecutive tracked positions going from the furthest point reached on the arm, to the furthest point reached on the next visited arm. To linearise this position, each two-dimensional point (x, y) was projected to the directional vector describing the arm to which that point belongs. Each projection was made by using the following equation:\n\n$$\nProjection= \\frac{P_{x,y}.D_{arm}}{D_{arm}}\n$$\n\nwhere Px,y is the position to be projected, Darm is the directional vector of the corresponding arm, and ||D|| denotes the norm of the vector D. Each trajectory was composed of three parts: starting arm, centre, and ending arm. For the starting and ending arm, the activity was calculated over the space by dividing the total number of spikes on each linear bin (5 cm) over the occupancy (in seconds) on that particular bin. However, due to the different possible trajectories that the animal can follow in the centre, the activity there was divided into five fixed time bins. Then, the linear firing rate maps (activity in the starting, centre, and ending arm) were smoothed by convolving them with a 1D Gaussian function. Linear firing rate maps on the ELM were calculated by dividing the space into bins (2.5 cm each) and for each bin, the corresponding spikes of each neuron were summed and divided by the occupancy (in seconds).\n\n### Spatial properties\n\nThree different spatial properties were calculated (spatial information, sparsity, and coherence) based on Alme et al., 2014; Muller and Kubie, 1989; Skaggs et al., 1996; Zhang et al., 2014.\n\nThe spatial information measured how much information about the spatial location of the animal is contained within the activity of a cell (bits/spike):\n\n$$\n\\sumi=1Np_{i}\\frac{\\lambda_{i}}{\\lambda}log_{2}\\frac{\\lambda_{i}}{\\lambda}\n$$\n\nwhere:\n\nThe sparsity (also called coverage) measured the compactness of the place field.\n\n$$\nSparsity=\\frac{\\sump_{i}\\lambda_{i}^{2}}{\\sump_{i}\\lambda_{i}^{2}}\n$$\n\nThe variables of the equation are the same as for spatial information.\n\nCoherence measures the extent to which the firing rate in a bin is predicted by the rates of the neighbouring bins. It can be related to how \u2018organised\u2019 the firing rate appears.\n\n$$\nZ=0.5 ln\\frac{1+R}{1-R}\n$$\n\nwhere R is the correlation between the raw spike activity and the smoothed spike activity on the ELM.\n\n### Place field similarity\n\nThe PFS was calculated by using the Spearman correlation between the z-scored linear firing rate map of a neuron while the animal is moving in one direction and the z-scored linear firing rate map of the same neuron while the animal is moving in the other direction.\n\n### General linear model and neuronal spike activity relation to speed\n\nWe modelled the spike activity of each neuron (for different ELM configurations) by using the instantaneous running speed of the animal at each moment: $Spk_{t}=\\beta_{0}+\\beta_{1}S_{t}$, where Spk is the number of spikes at a given time t and S is the instantaneous running speed at the same time t. Residuals of the model were used as the spike-associated activity of the neurons, controlled by the speed of the animal. Due to the correction, the firing rate of some bins might be negative when calculated. However, this does not affect the data analyses using z-score values.\n\n### SVM classifier and neuronal selection\n\nThe exploration of the open arm on the ELM was divided into either proximal exploration or distal exploration using a threshold per session ($Threshold= \\frac{Furthest spatial bin-Nearest spatial bin}{2}$). An SVM classifier with a linear kernel was used to determine if the extent of the exploration of a given trial (proximal or distal exploration) was possible. We calculated the firing rates of the neurons prior to the entrance to the open area in the CO configuration (from the moment the animal was heading towards the open arm, until the spatial bin before reaching the centre). Using this firing rate, in a \u2018one-leave out cross-validation\u2019 fashion, the identity of each trial was predicted by training the classifier with the neuronal activity of all the other trials. Using a wrapper-like method (Kohavi and John, 1997), we iteratively check the performance of the SVM for all possible combinations of neuronal pairs for each session. The neuronal pair that gave the highest performance was then assumed to be optimal.\n\nDue to the fact that the distal and proximal trial distributions were not even, in order to determine if a given performance value was in fact better than random, we shuffle 1000 times the trial IDs (distal or proximal) and repeated the classification. Only performance values above the 95% percentile of the shuffle distribution were considered as successful.\n\nThe z-score activity in the examples of Figure 6B were \u2018scaled\u2019. This scaling is a parameter of the linear SVM that divides all the elements of the predictor matrix. Values of the predictors were then modified by this scale.\n\nTwo recording sessions were excluded due to either a low number of co-recorded cells (n<3) or insufficient exploration of the maze.\n\n### Density of peak firing rates and bootstrapping\n\nThe density of the firing rate peaks on each of the six possible paths of the EPM exploration was calculated by summing the number of peaks in the same bin divided by the number of neurons with any activity in that bin. For example, if bin 10 has 20 peaks and 100 neurons are active in that bin, the density is 0.2; on the contrary, if bin 20 has 5 peaks but only 10 neurons are active in that bin, the density would be 0.5.\n\nTo determine the significance of the density distribution, we used a bootstrapping/shuffle method. Bootstrapping for Figure 1E was achieved by randomly reassigning the peak activity for each neuronal spatial map (average activity in the session) to any visited bin. A new density plot with the randomly assigned data was calculated. This procedure was performed 1000 times, and we applied a one-tailed test with a 95% confidence interval of the shuffled distribution. The grey area in Figure 1\u2014figure supplement 1B shows the area between the median and the 95% percentile of the shuffled distribution.\n\n### Statistical analyses\n\nAll calculations were made in MATLAB (Mathworks, version R2015b and R2019b) and statistical analyses were performed with MATLAB and Microsoft Excel. All the statistical tests used in this manuscript were non-parametric unless stated otherwise. Raw data was visualised and visually evaluated with Neuroscope (http://neurosuite.sourceforge.net/information.html).\n\nOne-way ANOVA with Tukey-Kramer for multiple comparison was used for the time spent on each of the EPM and ELM areas (Figure 1A, Figure 2E). Two-sided Wilcoxon signed-rank test was used for: time spent in changing and non-changing arms (Figure 2D); spatial properties (Figure 4A and B); and firing rates in different ELM configuration (Figure 4\u2014figure supplement 1C). Chi-squared test was used for: proportions of peak firing activities (Figure 3B, D, E and F and Figure 3\u2014figure supplement 3A, B, C). Because the chi-squared test depends on what is consider the expected proportion, it was done in two different ways. In the figures, the significant values are presented assuming a 50%\u201350% chance. We also tested the proportions of the peak locations in the CO and CT configurations, by assuming the expected distributions as the distribution obtained in the CC configuration. Significances in the Figure 3 were the same in both assumptions. Changes in the significance levels are reported in the figure legend of the Figure 3\u2014figure supplement 3. Two-sided Wilcoxon rank-sum test was used for Figure 4C, Figure 4\u2014figure supplement 1B, D; comparing the PFS index distributions (Figure 5B, C, D and E and Figure 5\u2014figure supplement 1A, B, C); and to compare the animal speeds in Figure 6\u2014figure supplement 1B.\n\nAnalyses of CC and CO have an n=133, while analyses of CC2 and CT have an n=75. Both numbers correspond to the recorded neurons in the vH. Time spent measurements were done per session: EPM sessions (n=16), ELM sessions (n=14), control sessions of CC2 and CT (n=5).\n\nTo corroborate that the results were not driven by the data of a particular rat, we checked, separately per animal, the distributions of spatial information, sparsity, coherence, directional correlation of the neuronal activity, and the distributions of neuronal peak firing locations for the CC and the CO configurations. No significant differences arose between different animals, except for the correlation values for the CC configuration in rat SC68, in comparison with other two animals. We confirmed that even after removing the data of SC68 from the data set, all the reported results of the research were still maintained.\n\n### Lead contact\n\nFurther information and requests may be directed to the Lead Contact, Thomas Klausberger (thomas.klausberger@meduniwien.ac.at).\n",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "81f91122-7479-47d3-815f-5fb953a47b50",
+      "submission_id": "8f3bd13e-7187-4346-8b93-c38017ae5f43",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Laura L Colgin, https://ror.org/00hj54h04 University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83012.sa0](https://doi.org/10.7554/eLife.83012.sa0)\n\nThis paper is expected to be of interest to systems neuroscientists in the fields of emotion, hippocampal function, and anxiety-related behavior. The authors performed recordings in the ventral hippocampus and show that (1) place fields become concentrated near the open areas of a maze, (2) direction-dependent coding decreases in these open areas, and (3) ventral hippocampal population activity in the closed area can be used to predict how mice explore the open area in the immediate future. These valuable findings provide convincing support for the potential role of the ventral hippocampus in the exploration of anxiety-provoking environments.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Laura L Colgin, https://ror.org/00hj54h04 University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83012.sa1](https://doi.org/10.7554/eLife.83012.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Firing patterns of ventral hippocampal neurons predict the exploration of anxiogenic locations\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Laura Colgin as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Inah Lee (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Necessary neural analyses are missing from the paper. For example, basic analyses of single cell properties are lacking.\n\n2) Previous dorsal hippocampal studies related to processing anxiety and fear need to be discussed more deeply to put the new findings within the proper context.\n\n3) Behavioral data are not described and analyzed sufficiently. As it stands, it is unclear whether neural effects are due to differences in behavior.\n\n4) Putative principal cells and interneurons should be analyzed separately, and it should be clear how cell types were subdivided.\n\n5) Some details about methods are missing. For example, how were spikes during sharp wave-ripples removed?\n\n6) Histological verification should be shown.\n\nPlease see individual reviews below for details and specific recommendations.\n\nReviewer #1 (Recommendations for the authors):\n\nThe primary finding of this study is that it was possible to predict the extent of exploration of the anxiogenic area by using the neural activities of the ventral hippocampus (vHP) before the rat enters such an area (i.e., the open arm) (Figure 5). However, the authors did not provide detailed neural and behavioral data to support their arguments. First of all, to verify the electrophysiological data, they need to report the basic firing properties of single-cell activities and the representative histological photomicrographs showing the electrode tips to verify whether the electrodes were indeed targeted the pyramidal cell layers in the vHP (e.g., the overall distribution of the spike width and mean firing rate during CC, CO, CT condition, raw spiking samples to show cell's recording stability, brain sections with thionin staining, etc.). In addition, the authors need to clarify how pyramidal neurons and interneurons were distinguished from each other (e.g., using the mean firing rate and spike width?), and how they removed sharp-wave ripple-associated spikes (e.g., using a speed filter?). Second, before providing results of principal component analysis (PCA) and support vector machine (SVM), they need to verify that the mean firing rate before entering the open arm was positively or negatively correlated with the exploration types (i.e., proximal and distal exploration). Such correlation analysis may make the results of PCA and SVM more substantial.\n\nNext, the current version of the manuscript lacks detailed behavioral data (e.g., velocity and position differences between proximal and distal exploration trials before entering the open arm), which may raise the alternative hypothesis that the difference in the neural activities between proximal and distal exploration could result from behavioral differences, not the prediction signals in the vHP. For example, in the proximal exploration trials, rats could be more hesitant and stayed longer near the boundary before entering the open arm than in the distal exploration trials. In contrast, in the distal exploration trials, rats might run toward the rewards in the open arm without hesitation. In that case, it is possible that the difference in neural activities between the exploration types could mainly reflect the difference in animal speed or how long they stayed near the boundary, not necessarily reflecting the animal's intention to explore the anxiogenic area. To address these concerns, the authors need to report detailed behavioral and neural data with respect to the issue. For example, they may need to provide a peri-event time histogram of the animal's velocity and position and spikes in relation to the time of entering the open arm. Alternatively, as they used spike-associated activity controlled by speed via the general linear model (GLM) in Figure 3F-3G and 4D-4E, they may apply this model to this analysis in Figure 5 to control the speed factor, etc, to name a few.\n\nAlso, it is unclear which neural firing data were used for the PCA and SVM analyses. The authors said \"firing rate of each neuron prior to the open arm ~ (line 478)\", but it is confusing which moment they indicated by 'prior.' They need to quantitatively define 'prior' (e.g., activities within seconds before entering the open arm or activities within 10cm from the boundary between the open and closed arm). If position or velocity was different depending on the exploration type, it could be that different place cells might be recruited during the \"firing rate prior to the open arm,\" which might result in distinct neural activities between proximal and distal exploration trials. In addition, they need to report how PCs in proximal and distal exploration were quantitatively separated between two exploration types in the entire session, not only for two sessions (Figure 5A).\n\nIn SVM analysis, the authors did not show raw data to demonstrate that the neural activities in proximal and distal exploration trials were properly distinguished through the hyperplane of SVM (Figure 5B). Thus, it is impossible to assess the validity of SVM analysis. The authors need to provide the graph whose x and y axes are associated with the neuronal activities and demonstrate that the hyperplane properly distinguished proximal and distal exploration trials. Moreover, they iteratively computed the performance of the SVM for all possible combinations of neurons and chose the combination that gave the highest performance for further analysis (Figure 5B \u2013 5C). This may result in an overestimation of the results. For example, even if most combinations had low performance, it would be considered a high-performance session if there was only one combination of higher performance. Thus, the authors need to provide the results of all combinations. Also, it seems more appropriate to infer performance using the ensemble data rather than based on a combination of two cells.\n\nReviewer #2 (Recommendations for the authors):\n\nRelated suggestions/comments to the Public Review Weakness points:\n\nRelated suggestion to W1.\n\nIt would be helpful if the authors could make a clear comparison between the dorsal and ventral hippocampus with regard to anxiety responses and highlight what aspects are unique to the vH anxiety driven cells.\n\nRelated suggestion to W2.\n\nIt would be helpful for readers to know which subpopulation of cells in vH function as the basis for dynamical remapping of anxiety information.\n\nAdditionally, it would be helpful to have a table describing how many neurons were recorded from each animal and from what subregions. In Figure 1B, many red dots are missing the cell layer of the vH, especially in the third panel and readers may wonder where the neural data was actually recorded from.\n\nOther specific points:\n\nIn line 251\n\nNo PCA descriptions in the Methods section.\n\nIn lines 399-403\n\nIn total, how many sessions did each animal perform per day?\n\nError bars are missing in Figure 3B, 3F.\n\nIn Figure 4A\n\nThe representative 'homogenized' cells # 41 and 110 are confusing as the firing rates in closed area (spatial bins up to 10) seem also 'homogenized'. One would expect to see the cells that are only 'homogenized' in the open area (spatial bins between 10-20), no?\n\nIn Figure 5A\n\nWhat does \"n=11\" and \"n=3\" indicate here, animals, trials, or neurons?\n\nIn lines 511 and 512\n\nWhile there are descriptions \"Figure S1A, B\" and \"Figure S1C, D\", there are no supplemental figures provided with the manuscript.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The authors should include in their discussion the results from Wang et al., 2012 and Wang et al., 2015 (PMID: 26085635 and PMID: 23136419). The authors also should discuss Kong et al., 2021 (PMID: 34533133) and Schuette et al., 2021 (PMID: 32958567). Kong found more remapping near the threat, while Schuette found a concentration of place field centers near the threat and a decrease in place field size near the threat. These results were different because they done with dorsal hippocampal cells and different types of threats, but these data must be discussed to put the new findings within the proper context.\n\n2. The authors show that after the cc to co transition there are more cells with peak firing rates in the open area. Prior to the transition, is there any difference between the cells that moved their peak firing rate location to the open area compared to the ones that did not move? Are there differences in prior firing rate, field size, spatial information during cc that predict the cell's remapping in co?\n\n3. Comparing the cells that lost directionality and the ones that did not, was there any difference in these cells after or during the transition? Are there differences in prior firing rate, field size, spatial information during cc that predict the cell's loss of directionality in co?\n\n4. In Figure 3d why do the authors use 'peak location' instead of place field center? What would the data look like with place field center plotted instead?\n\n5. Did the data change in any way across the multiple sessions of recordings? Did the results about coverage, directionality and concentration of peak locations in the open area change across the multiple sessions?\n\n6. Please show the main effects separated by animal sex.\n\n7. Provide examples of real histology photos instead of diagrams.\n\n8. Add experimental details showing for each animal how many sessions in ELM were obtained, how many trials and across how many days.\n\n9. I am having trouble understanding what is plotted in Figure 5c. The legend says \"Box plots show median, 25th and 75th percentile\". But it is the median of what? What is plotted? Is it possible to plot these data in some other way?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Firing patterns of ventral hippocampal neurons predict the exploration of anxiogenic locations\" for further consideration by eLife. Your revised article has been evaluated by Laura Colgin (Senior Editor) and Reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nPlease see the remaining issues noted by Reviewers #1 and 3 below.\n\nSummary:\n\nThis paper is expected to be of interest to systems neuroscientists in the fields of emotion, hippocampal function, and anxiety-related behavior. The authors performed recordings in the ventral hippocampus and show that (1) place fields become concentrated near the open areas of a maze, (2) direction-dependent coding decreases in these open areas, and (3) ventral hippocampal population activity in the closed area can be used to predict how mice explore the open area in the immediate future. These valuable findings provide convincing support for the potential role of the ventral hippocampus in the exploration of anxiety-provoking environments.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors have addressed most of my concerns. However, there are still some concerns that may need to be addressed (see below).\n\n\u2013 (Figure 3A) The authors nicely illustrated single-cell examples in Figure 3 (and figure supplement 1A and 1B) to show broader place fields in the ventral hippocampus. However, when examining the individual cases, I am concerned that the z-transformed population rate maps in Figure 3A may give the reader the wrong impression that most cells in the ventral hippocampus have focal place fields. Furthermore, inhibitory interneurons in the hippocampus also have their preferred firing locations where their firing rates are higher than others (Ego-Stengel and Wilson, 2007, Hippocampus). As the current study didn't differentially analyze putative pyramidal cells and interneurons, it might be difficult to distinguish between activities in pyramidal neurons and interneurons when using the z-transformed rate maps. Therefore, it seems inappropriate to show the population activities using a z-transformed population rate map.\n\n\u2013 (Figure 6 \u2014figure supplement 1B) The authors used the averaged speed in the arena spanning 15 cm before crossing the open area to argue that there was no behavioral difference between proximal and distal exploration. However, 15 cm is an arbitrarily determined value, and I wonder if it can serve as a representative measurement to compare animal behavior between proximal and distal trials. This is mainly because they calculated firing rates for SVM analysis from the moment heading towards the open area, not the 15cm before crossing the boundary between closed and open areas. Thus, it might be much more appropriate to compare the speed from the moment heading toward the open area to the end of the closed area.\n\n\u2013 Additionally, the authors should include statistical testing in Figure 6 \u2014figure supplement 1B. Based on my observations, the speed of future proximal exploration seems significantly lower than that of future distal exploration in session 5. Along with the results of each session, it might be necessary to pool the data from all sessions and perform statistical testing in order to argue that there was no speed difference between proximal and distal exploration.\n\n\u2013 (Discussion) Keinath and colleagues (Hippocampus, 2014) argued that cells in the mouse ventral hippocampus showed more spatially selective firing patterns when aversive odor (i.e., predator's urine) was introduced in the open arena. This result contradicts the current manuscript because adding an anxiety factor seemed to decrease spatial firing characteristics in the current study as opposed to the results of Keinath et al. (2014). If the authors explain the potential factors of why there was a contradiction between Keinath and colleagues and the current study, it will be helpful to understand the importance of the ventral hippocampus in emotional information processing. Additionally, if the authors explain why the firing fields became larger but not smaller in anxiogenic space in processing emotional processing, it can give readers a clue about how the ventral hippocampus is involved in processing emotional information.\n\nReviewer #2 (Recommendations for the authors):\n\nAfter carefully evaluating the revised manuscript and the authors' response to my previous comments, I am pleased to report that I am satisfied with the changes made by the authors. The authors have addressed all the concerns and/or issues raised in my previous review and have made significant improvements to the manuscript.\n\nThe revised manuscript, with the additional supplemental materials, now presents a clear and concise argument, and the additional data analysis, especially on the single unit analyses and presentation has been significantly strengthened.\n\nThe author has also provided additional information (incl. Data Availability) and clarification where necessary, which has improved the quality of the manuscript.\n\nOverall, I recommend that the revised manuscript is now suitable for publication in eLife.\n\nReviewer #3 (Recommendations for the authors):If the authors used only male mice this fact must be stated in the abstract.\n",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c8999276-d6aa-4a2f-81de-a8fdf059faad",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C1",
+      "claim": "The ventral hippocampus (vH) plays a crucial role in anxiety-related behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "The ventral hippocampus (vH) plays a crucial role in anxiety-related behaviour and vH neurons increase their firing when animals explore anxiogenic environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that is supported by the experimental findings presented in the manuscript and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "f945be13-2954-4531-8b2f-a0ac90e339d5",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C2",
+      "claim": "vH neurons increase their firing when animals explore anxiogenic environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The ventral hippocampus (vH) plays a crucial role in anxiety-related behaviour and vH neurons increase their firing when animals explore anxiogenic environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in the manuscript showing increased neuronal activity in anxiogenic locations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "5d8dfca3-0061-4e48-88df-a13745830314",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C3",
+      "claim": "vH neurons exhibited remapping of activity, overrepresenting anxiogenic locations.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded neuronal action potentials during task performance and found that vH neurons exhibited remapping of activity, overrepresenting anxiogenic locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "71833ba7-a1cc-4815-9e42-0d0ab50395ef",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C4",
+      "claim": "Direction-dependent firing was homogenised by the anxiogenic experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Direction-dependent firing was homogenised by the anxiogenic experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "8f83ed63-8cda-44c2-87f2-4aa4481191d4",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C5",
+      "claim": "The activity of vH neurons predicted the extent of exploration of the anxiogenic location.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that the activity of vH neurons predicted the extent of exploration of the anxiogenic location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the SVM classifier analysis presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "c810fb68-2c60-40e5-baba-ce91ddc8a8ce",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C6",
+      "claim": "Anxiety-related firing does not solely depend on the exploration of anxiogenic environments, but also on intentions to explore them.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that anxiety-related firing does not solely depend on the exploration of anxiogenic environments, but also on intentions to explore them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data showing that neuronal activity in closed arms predicts future exploration of open arms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "54712719-ff2c-4458-92ea-2052b28a7d42",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C7",
+      "claim": "At least 14% of people in the European Union suffer from anxiety disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "12-month prevalence estimates on mental disorders show that at least 14% of people in the European Union suffer from anxiety disorders (Wittchen et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wittchen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "750b2e32-e0b0-43fd-be76-21e5cdf6e530",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C8",
+      "claim": "Around 31% of people in the United States have experienced some type of anxiety disorders in their lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "around 31% of people in the United States have experienced some type of anxiety disorders in their lifetime (Kessler et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kessler et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "c0057c64-8c11-4815-a67b-dbc969584b1f",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C9",
+      "claim": "Lesions in the vH induce anxiolysis during the exploration of elevated open arenas.",
+      "claim_type": "EXPLICIT",
+      "source": "Lesions in the vH induce anxiolysis during the exploration of elevated open arenas (e.g. EPM) (Jimenez et al., 2018; Kjelstrup et al., 2002; Padilla-Coreano et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "44982705-dbe2-4a1f-98c1-1239e4ba7b44",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C10",
+      "claim": "Neurons recorded in the vH showed increased firing in locations with elevated anxiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons recorded in the vH showed increased firing in locations with elevated anxiety (Ciocchi et al., 2015; Jimenez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "a9f994eb-bf25-4e59-bbe5-46b43ced2f36",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C11",
+      "claim": "Amygdala projections to the vH are specifically shaping anxiety-related behaviour during the exploration of an EPM.",
+      "claim_type": "EXPLICIT",
+      "source": "amygdala projections to the vH are specifically shaping anxiety-related behaviour during the exploration of an EPM (Felix-Ortiz and Tye, 2014; Pi et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Felix-Ortiz and Tye, 2014 and Pi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "bf6163f6-cb7a-4caa-8ca5-0e3eb2d64511",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C12",
+      "claim": "The reciprocal connection from vH to BA is involved in the expression of context-dependent fear memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the reciprocal connection (from vH to BA) is involved in the expression of context-dependent fear memories (Kim and Cho, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kim and Cho, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "95f1b8f3-e83d-4c51-b0fc-e6f759f6b2ff",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C13",
+      "claim": "Information related to anxiety in the vH is directly routed to the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, information related to anxiety in the vH is directly routed to the mPFC (Ciocchi et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ciocchi et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "d0bf149f-321b-4259-ba15-e857704286b2",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C14",
+      "claim": "Synchronised activity in the vH-mPFC monosynaptically connected long-range circuit is essential for the expression of anxiety behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "and synchronised activity in this monosynaptically connected long-range circuit (Adhikari et al., 2010; Adhikari et al., 2011) is essential for the expression of anxiety behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Adhikari et al., 2010 and 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "19e35ea7-00fa-467a-99af-eab0cc177748",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C15",
+      "claim": "Rats spent significantly more time in closed arms compared to open arms during EPM exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "The time spent in closed arms is significantly higher than in the open arms and the centre (p=9.5615e-10, p=9.5657e-10, respectively. One-way ANOVA, Tukey-Kramer for multiple comparisons, n=16 sessions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "e8d5cce7-a8b6-4864-8efe-f4dc23d8c835",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C16",
+      "claim": "A total of 98 individual neurons were isolated from vH recordings during EPM exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "While rats explored the EPM, we recorded neuronal activity in the vH with tetrodes (Figure 1B and Figure 1\u2014figure supplement 1A) and isolated individual spikes from different single neurons (n=98).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the number of neurons recorded.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "a1133ab5-eec0-434f-a47d-41d7bafcb6c6",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C17",
+      "claim": "vH neurons exhibited preferential firing in the open arms, closed arms, or centre of the EPM.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified vH neurons with previously described activity patterns (Ciocchi et al., 2015), exhibiting preferential firing in the open arms, closed arms, or centre of the EPM (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C and a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "01103670-3671-443e-a089-d9eea569575e",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C18",
+      "claim": "The peak firing activities of individual neurons spanned the entire maze even though the exploration of open arms was minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the peak firing activities of individual neurons spanned the entire maze even though the exploration of open arms was minimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "da906c72-94dd-41a2-a492-504b518af25b",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C19",
+      "claim": "The activity of vH neurons was concentrated around the centre of the maze when shuttling from one closed arm to the other one.",
+      "claim_type": "EXPLICIT",
+      "source": "When plotting the peak firing density across the maze (normalised by the total number of neurons possibly firing in a spatial bin) the activity of vH neurons was concentrated around the centre of the maze when shuttling from one closed arm to the other one (Figure 1E, top, stars indicate bins with significant higher density; bootstrapping; see also Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by density analysis shown in Figure 1E with statistical significance determined by bootstrapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "a611652c-2a64-4f1e-b1d9-3eb68144014b",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C20",
+      "claim": "Open areas are relevant for the neuronal activity of the vH.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the reduced number of entries to the open arms and exploration of open areas prevents a powerful statistic calculation, the observed effects imply that open areas are relevant for the neuronal activity of the vH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed concentration of peak firing activity in open areas.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "af942d0c-6b83-4005-8d04-e3118a4bb42a",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C21",
+      "claim": "The removal of sidewalls along the ELM induced anxiety behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the removal of sidewalls along the ELM-induced anxiety behaviour that evolved during single behavioural sessions according to the anxiety content of each maze configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data showing differences in time spent in different arms during CO configuration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "ee42f372-186e-40e6-8105-7a328b5f15bb",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C22",
+      "claim": "Rats spent significantly more time in the non-changing arm compared to the changing arm during CO configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "a significant difference was found in the configuration with sidewalls removed (CO exploration, p=1.45e-05, Wilcoxon signed-rank)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of behavioral data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "9549135c-0ebd-430b-9f11-4b0cecc9fc1b",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C23",
+      "claim": "The time spent in the centre area was longer during CO exploration compared to CC or CT explorations.",
+      "claim_type": "EXPLICIT",
+      "source": "The time spent in the centre area (11.5 cm around the middle of the track) was also longer during CO exploration compared to CC or CT explorations (Figure 2E, p=2e-05 and p=0.034 against CC and CT, respectively, one-way ANOVA, Turkey-Kramer for multiple comparisons)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "35f66f8f-f644-423f-8c27-70c3ac610255",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C24",
+      "claim": "A total of 133 neurons were recorded with tetrodes in the vH during ELM exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded a total of 133 neurons with tetrodes in the vH (Figure 1B and Figure 1\u2014figure supplement 1A), while the rats were exposed to the different configurations of the ELM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the number of neurons recorded.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "75cad358-bf8c-4332-8799-3751cf155d0b",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C25",
+      "claim": "During CO exploration, the distribution of peak firing activity was skewed towards the open area.",
+      "claim_type": "EXPLICIT",
+      "source": "During the CO exploration, the distribution of peak firing activity was skewed towards the open area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "95cd7550-ac78-4e20-a3f8-8cd99eb70771",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C26",
+      "claim": "A higher proportion of peak firing activities was located on the open arm during CO configuration compared to CC configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, when one half was opened, a remapping of the neuronal activity was induced towards the anxiogenic location. We observed a higher proportion of peak firing activities located on the open arm (Figure 3B left, p=0.0121, chi-square test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "7bb17812-d688-4482-98e3-47b86b7b1416",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C27",
+      "claim": "A larger proportion of neurons changed the location of their peak firing activity from a previously closed to a currently opened arm upon sidewall removal.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in proportions between these two subpopulations was significant (Figure 3B, right, p=0.0066, chi-square test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "80f766bf-2481-465c-a7d4-d6403739966a",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C28",
+      "claim": "No differences were found for the location and location changes of peak firing activity during the exploration of the CT configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no differences were found for the location and location changes of peak firing activity during the exploration of the CT configuration using a novel texture and visual cues in the closed arm (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "dfa4b4df-ce77-47b5-b50a-80939840c18a",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C29",
+      "claim": "Dynamic remapping of vH activity is contingent to the experience of anxiety rather than to a stimulus-enriched environment or novelty.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that dynamic remapping of vH activity is contingent to the experience of anxiety rather than to a stimulus-enriched environment or novelty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison between CO and CT configurations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "6a19cb11-c726-4205-955c-099e6e3aea99",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C30",
+      "claim": "The spiking activity of 49 neurons out of 133 (36.84%) was significantly modulated by the speed of the animal during the exploration of the CC configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the spiking activity of 49 neurons out of 133 (36.84%) was significantly modulated by the speed of the animal during the exploration of the CC configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on GLM analysis of the relationship between neuronal activity and running speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "21aa41fe-681c-4f0c-a770-23c4da3bd530",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C31",
+      "claim": "72 out of 133 neurons (54.14%) were significantly modulated by running speed during the exploration of the CO configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, as expected, a higher number of neurons (72 out of 133, 54.14%) were significantly modulated by running speed during the exploration of the CO, in agreement with the speed changes related to the experience of an anxiogenic area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on GLM analysis and is consistent with behavioral changes in the anxiogenic condition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "9dd8ccca-bc4c-4096-a186-469c68801198",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C32",
+      "claim": "Even after correcting for speed influence, a significant proportion of vH neurons changed the location of their peak firing activities from the closed area to the open area after sidewall removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeating the same analysis as in Figure 3B and D we found that a significant proportion of vH neurons changed the location of their peak firing activities from the closed area to the open area after sidewall removal (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis using GLM residuals shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "b8307318-cb3e-4584-9a0a-bc266291f0bf",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C33",
+      "claim": "There is a prominent influence of the anxiogenic location in the neuronal activity irrespective of running speed.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that even though there is a modulation by the speed of the animal, there is also a prominent influence of the anxiogenic location in the neuronal activity irrespective of running speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the analysis of speed-corrected neuronal activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "b2c5f243-ec1f-4513-9eb4-1d7799b30db4",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C34",
+      "claim": "80 neurons (60.15%) were classified as putative pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "we divided the recorded neurons in putative pyramidal cells (n=80, 60.15%) and putative interneurons (n=24, 18.05%) by using a threshold for the though-to-peak latency and the firing rate (put. pyramidal cells >0.3 ms and <20 Hz, respectively; and put. interneurons \u22640.3 ms and \u226510 Hz, respectively. Figure 3\u2014figure supplement 2B, see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spike shape and firing rate analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "b375dc14-50a3-4e0a-9b1f-0a4445f2a97f",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C35",
+      "claim": "24 neurons (18.05%) were classified as putative interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "we divided the recorded neurons in putative pyramidal cells (n=80, 60.15%) and putative interneurons (n=24, 18.05%) by using a threshold for the though-to-peak latency and the firing rate (put. pyramidal cells >0.3 ms and <20 Hz, respectively; and put. interneurons \u22640.3 ms and \u226510 Hz, respectively. Figure 3\u2014figure supplement 2B, see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spike shape and firing rate analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "047c0f73-c84c-4539-88f6-c7e09e209f86",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C36",
+      "claim": "Similar tendencies in the open arm-associated activity were observed for both putative pyramidal cells and putative interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar tendencies in the open arm-associated activity were observed for both, putative pyramidal cells and putative interneurons (Figure 3\u2014figure supplement 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 3A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "775c36bf-484f-455b-b964-036c110c5c0c",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C37",
+      "claim": "After removing all SWR-associated spikes, the same tendencies regarding open arm-associated activity were maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "To control for this effect, we removed all SWR-associated spikes from the analysis, which resulted still in the same tendencies regarding open arm-associated activity (Figure 3\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "abbf76d3-7b74-462a-a898-332f41479b9d",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C38",
+      "claim": "Both PiO and PiC neurons showed diminished spatial information when going from CC to CO configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both PiO and PiC neurons showed similar properties: their spatial information diminished when going from a CC to a CO configuration (p=1.66e-05 for PiO and p=0.0074 for PiC, Wilcoxon signed-rank test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "f4abadfe-c12a-4fc9-a4d4-f8c1288e1197",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C39",
+      "claim": "Both PiO and PiC neurons showed increased sparsity when going from CC to CO configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "while their sparsity and coherence increased (p=6.86e-05 and p=1.88e-05 respectively for PiO; p=9.68e-04 and p=2.86e-04 for PiC, Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "1ac5ecdd-2f5d-4793-8ece-f4e19a389fcf",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C40",
+      "claim": "Both PiO and PiC neurons showed increased coherence when going from CC to CO configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "while their sparsity and coherence increased (p=6.86e-05 and p=1.88e-05 respectively for PiO; p=9.68e-04 and p=2.86e-04 for PiC, Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "611da212-c0a7-4441-8c5f-90a311e3076b",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C41",
+      "claim": "PiO spatial properties tended to be diminished compared to PiC neurons for both spatial information and sparsity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, PiO spatial properties tended to be diminished compared to PiC neurons for both spatial information (p=0.0130, Wilcoxon rank-sum test) and sparsity (p=0.0311, Wilcoxon rank-sum test) (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "79b66416-a800-4810-915d-825cac146575",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C42",
+      "claim": "Neurons that remapped from the closed arm in CC to the opened arm in CO showed significantly lower spatial information already in the CC configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Concerning neurons that remapped from the closed arm in CC to the opened arm in the CO configuration, these neurons showed significantly lower spatial information and significantly higher sparsity (p=0.0029 and p=0.0016, respectively, Wilcoxon rank-sum test) already in the CC configuration, prior to the CO configuration, with respect to the other neurons that did not remap (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "4231eb17-535e-4aa1-8bb5-39649eeb38d6",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C43",
+      "claim": "The CC2-CT remapping score was significantly higher than the CC-CO remapping score.",
+      "claim_type": "EXPLICIT",
+      "source": "The CC2-CT remapping score was significantly higher than the CC-CO (p=0.0358, Wilcoxon rank-sum test, Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "9c85d294-18ff-4e55-89d9-adebb0cea672",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C44",
+      "claim": "vH neurons exhibited direction-dependent difference in neuronal firing during CC configuration exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "When monitoring the activity of individual vH neurons recorded during the exploration of the CC configuration (Figure 5A), we expectedly observed a profound direction-dependent difference.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "124aec07-77e8-4897-97e4-98a1ceaa2c56",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C45",
+      "claim": "Direction-dependent neuronal firing of vH neurons became homogenised once the sidewalls were removed and rats explored the CO configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this direction-dependent neuronal firing of the same vH neurons became homogenised, meaning that it was very similar in both directions, once the sidewalls were removed and the rats were exploring the CO configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 5A and statistical analysis in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "3e9958a6-7038-421e-a338-292acb8c9faa",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C46",
+      "claim": "The PFS index of animals exploring the CC configuration was significantly different from the PFS index of animals exploring the CO configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the PFS index of animals exploring the CC configuration was significantly different from the PFS index of animals exploring the CO configuration (Figure 5B, left, p=7.53e-09, Wilcoxon rank-sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "cdb64785-5625-4a5a-bb1f-2970d9d2578a",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C47",
+      "claim": "The PFS indexes between the exploration of the CC2 configuration and the CT configuration were not significantly different.",
+      "claim_type": "EXPLICIT",
+      "source": "The PFS indexes between the exploration of the CC configuration prior to the CT (called CC2) and the PFS indexes during the CT configuration were not significantly different (Figure 5B, right, median PFSCC2=\u20130.1279, median PFSCT = 0.0922).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "df0f1f54-b922-4631-ab0e-850a39ec7af7",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C48",
+      "claim": "All the PFS values during the exploration of CC, CC2, and CT were significantly lower than during the exploration of the CO configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, all the PFS values during the exploration of CC, CC2, and CT were significantly lower than during the exploration of the CO configuration, as seen in the cumulative distribution plots of the PFS (Figure 5C, CO vs CC, p=7.53e-09; vs CT, p=4.6e-05; and vs CC2, p=1.68e-07; Wilcoxon rank-sum test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "c741e423-a498-4ffa-83b9-2c6879de26a2",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C49",
+      "claim": "The performance of the SVM was above chance levels (95th percentile) in 9 out of 12 sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that during individual recording sessions, the performance of the SVM was above chance levels (95th percentile) in 9 out of 12 sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the SVM classification analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "e4fc301a-1319-43cb-ad63-e16e5585fd82",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C50",
+      "claim": "The animals' speed before entering the open arm was not different between proximal or distal run endpoints, except for one session.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed that the animals' speed before entering the open arm was not different between proximal or distal run endpoints, except for one session (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "4af71ea8-318f-44ba-86cc-41c6c109e2b7",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C51",
+      "claim": "Correct prediction of several sessions using the SVM classifier was achieved for controls in which speed or SWR-associated activity was corrected.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, correct prediction of several sessions using the SVM classifier was achieved for controls in which speed or SWR-associated activity was corrected and also when restricting the pairs to be either only putative pyramidal cell pairs, or putative interneuron pairs (Figure 6\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "2793f27f-0f14-4745-bd70-494349a31dfd",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C52",
+      "claim": "The neuronal population activity was a good predictor of the extent of the exploration of the open location, even when rats explored the closed arm before entering to the open location.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuronal population activity was a good predictor of the extent of the exploration of the open location, even when rats explored the closed arm before entering to the open location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the SVM classification analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "d6ed1308-25f5-46d1-a048-526bcc2233a3",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C53",
+      "claim": "The neuronal activity in the closed arm, of neuronal pairs, was sufficient to infer whether rats would perform proximal or distal explorations of the open arm.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the neuronal activity in the closed arm, of neuronal pairs, was sufficient to infer whether rats would perform proximal or distal explorations of the open arm (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the SVM classification analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "29287e6e-ee6d-425e-8c92-8db8b724ca52",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C54",
+      "claim": "Not only a direct experience of anxiety enhances neuronal activity in the vH, but also its anticipation without a direct confrontation to an anxiety-inducing situation.",
+      "claim_type": "EXPLICIT",
+      "source": "Anxiety-related modulation of vH neuronal activity in both the closed and the open locations implies that not only a direct experience of anxiety enhances neuronal activity in the vH, but also its anticipation without a direct confrontation to an anxiety-inducing situation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding that neuronal activity in closed arms predicts future exploration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "2c96179c-5fe7-49de-bba9-c4c069585529",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C55",
+      "claim": "Nine long Evans rats from Charles River Laboratories (male, 250\u2013600 g) were used in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, nine long Evans rats from Charles River Laboratories (male, 250\u2013600  g), were kept in 12 hr light cycles during behavioural experiments (performed during the light cycle).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental subjects used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "7fa908f7-044c-4a74-9f62-65d3c14116da",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C56",
+      "claim": "All experimental procedures were performed under an approved licence (66.009/0281-WF/V/3b/2015) of the Austrian Ministry of Science and the Medical University of Vienna.",
+      "claim_type": "EXPLICIT",
+      "source": "All experimental procedures were performed under an approved licence (66.009/0281-WF/V/3b/2015) of the Austrian Ministry of Science and the Medical University of Vienna.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "1ac806ea-26dd-458f-9233-7301ac5970de",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C57",
+      "claim": "An array of 12 independently movable, gold-plated (100\u2013500 k\u03a9) wire tetrodes were implanted in the vH.",
+      "claim_type": "EXPLICIT",
+      "source": "After removal of the dura mater, an array of 12 independently movable, gold-plated (100\u2013500  k\u03a9) wire tetrodes (13 \u00b5m insulated tungsten wires, California Fine Wire, Grover Beach, CA) mounted in a custom-made microdrive (Miba Machine Shop, IST Austria) were implanted (dorso-ventral: \u20136.5 mm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the recording methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "b7cc8335-7acd-4773-b369-6dbc7d5576a3",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C58",
+      "claim": "The EPM consisted of two closed and two open arms with dimensions of 9\u00d750 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "The EPM consisted of two closed (with protective sidewalls) and two open (without sidewalls) arms. The dimensions of the arms were 9\u00d750 cm, the walls in the closed arms were 40 cm high, and the EPM was elevated 70 cm above the floor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental apparatus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "bacc8617-4935-4a93-87a1-6018234c665a",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C59",
+      "claim": "The ELM consisted of a linear track of 120 cm length and 8 cm in width, elevated by 105 cm above the ground.",
+      "claim_type": "EXPLICIT",
+      "source": "The ELM consisted of a linear track of 120 cm length and 8 cm in width. The maze was elevated by 105 cm above the ground.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental apparatus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "2f0a775e-290e-4b3d-83a5-937d11847cac",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C60",
+      "claim": "A reward of two 20 mg sugar pellets was given at both endpoints of the ELM.",
+      "claim_type": "EXPLICIT",
+      "source": "A reward was given at both endpoints (two 20 mg sugar pellets).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "a157a54d-8bfd-4b0f-9312-7a24d30b859d",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C61",
+      "claim": "In total, 14 sessions were recorded from six rats in the ELM.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 14 sessions were recorded from six rats in the ELM (SC65, SC67, SC68, SC70, HM15, HM16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "5e884523-e7c3-47d9-acfa-1a34517a8e0f",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C62",
+      "claim": "100% of the neurons showed higher correlation than 0.98 between the averaged spike shapes of the first third and last third of the recording.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that 100% of the neurons showed higher correlation than 0.98, implying that the spike shape is not changing between the start and the end of a recording.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "54771726-eb4b-4a10-a0cf-ab522e459cc4",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C63",
+      "claim": "More than 90% of the neurons show an amplitude change between \u20130.5% and 0.5% from the amplitude at the start.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that more than 90% of the neurons show an amplitude change between \u20130.5% and 0.5% from the amplitude at the start.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "6170c793-977e-4699-b262-1327a291032d",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C64",
+      "claim": "Hippocampal place cells have been reported to exhibit direction-specific spatial modulation of activity as animals run along a linear maze.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal place cells have been reported to exhibit direction-specific spatial modulation of activity as animals run along a linear maze (McNaughton et al., 1983; Muller et al., 1994; Royer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "0440bc4c-9aea-4b6f-b092-00d85f73ed3f",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C65",
+      "claim": "The dorsal hippocampus (dH) region is critical for the encoding of spatial information.",
+      "claim_type": "EXPLICIT",
+      "source": "Motivated by the critical role of the dorsal hippocampus (dH) region in the encoding of spatial information (O'Keefe, 1976; O'Keefe and Nadel, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to O'Keefe, 1976 and O'Keefe and Nadel, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "487a2b60-883a-40c7-a6a1-c9abc968d945",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C66",
+      "claim": "Global remapping is a phenomenon observed in the dH when animals move from one environment to a different one.",
+      "claim_type": "EXPLICIT",
+      "source": "Global remapping is a phenomenon observed in the dH when animals move from one environment to a different one (Leutgeb et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Leutgeb et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "5d3fc3b1-3880-4815-8f1f-44da3fa199dd",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C67",
+      "claim": "Remapping of neuronal activity in a new environment is expected to be random and independent of a previously explored environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, remapping of neuronal activity in a new environment is expected to be random and independent of a previously explored environment (Gauthier and Tank, 2018; Leutgeb et al., 2005; Schlesiger et al., 2018), even when emotional contexts are introduced (Moita et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "d3d27c8e-21ad-4978-aaef-cb05a6e6e2e8",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C68",
+      "claim": "Novel environments elicit the activation of vH neurons to a similar extent as an aversive stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that novel environments elicit the activation of vH neurons to a similar extent as an aversive stimulus (Graham et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Graham et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "df3f6845-58c4-448d-8e71-9e0811d7d44a",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C69",
+      "claim": "Hippocampal place cells fire preferentially at reward locations during goal-directed tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously demonstrated that hippocampal place cells fire preferentially at reward locations during goal-directed tasks (Dupret et al., 2010; Hok et al., 2007; Hollup et al., 2001; Jin and Lee, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "1eb6e3d6-5938-4444-9f64-2220792e9694",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C70",
+      "claim": "Global remapping is observed in the intermediate hippocampus due to motivational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "and global remapping is observed in the intermediate hippocampus due to motivational changes (Jin and Lee, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jin and Lee, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "467d3b70-a6ed-45a1-8e30-aa4f01d2ea7d",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C71",
+      "claim": "Dorsal hippocampal place cells remap or partially remap in the presence of an aversive stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Dorsal hippocampal place cells were shown to remap or partially remap in the presence of an aversive stimulus (Kong et al., 2021; Moita et al., 2004; Wu et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "9448b46b-8cfe-45da-87ba-b6d14941c359",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C72",
+      "claim": "Dorsal hippocampal place cells remap towards areas of aversive stimuli or threats.",
+      "claim_type": "EXPLICIT",
+      "source": "or remap towards areas of aversive stimuli or threats (Schuette et al., 2020; Wang et al., 2012; Wang et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "89d441f8-bc3c-4ca4-83f3-0843c14ce2a2",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C73",
+      "claim": "A subset of basal and BA neurons synchronize with or reactivate dorsal hippocampal neurons during aversive experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "by synchrony with or reactivation of a subset of basal and BA neurons (Girardeau et al., 2017; Kong et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Girardeau et al., 2017 and Kong et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "ee9cf524-e455-4a8b-aafc-e4d55428d7e2",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C74",
+      "claim": "Non-aversive stimuli presented in the same context as aversive ones did not induce remapping in dorsal hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the non-aversive stimulus, presented in the same context as the aversive ones, did not induce remapping in dorsal hippocampal neurons (Moita et al., 2004; Wang et al., 2015), a similar effect to our observations in vH neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Moita et al., 2004 and Wang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "b7a2640d-5681-4a64-9f95-109234ebe15c",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C75",
+      "claim": "The vH is strongly associated with anxiety, and the anxiogenic location represents a highly salient environment for vH-dependent computations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the vH is strongly associated with anxiety, and the anxiogenic location represents a highly salient environment for vH-dependent computations (Bannerman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bannerman et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "2580bca7-070f-45bf-a05b-4c9804a94457",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C76",
+      "claim": "Novelty induces rate remapping in hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Rate remapping was significantly more robust in the novel context than in the anxiogenic one, in line with the literature suggesting that novelty induces rate remapping in hippocampal neurons (Kaefer et al., 2019; Leutgeb et al., 2005; Renn\u00f3-Costa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "704fb47c-fc61-4c9f-9f16-5e40bd81512f",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C77",
+      "claim": "The neuronal dynamics within the vH are subjected to the experience of anxiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we provided evidence that the neuronal dynamics within the vH are subjected to the experience of anxiety.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "a12fe270-ed68-457f-8085-b4c3cadb0490",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C78",
+      "claim": "When an anxiogenic situation was encountered, vH neurons over-represented this location.",
+      "claim_type": "EXPLICIT",
+      "source": "When an anxiogenic situation was encountered, vH neurons, first, over-represented this location (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "1285df8c-af1a-4542-b1a3-6ecc73413ccf",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C79",
+      "claim": "Spatial properties of neurons with their main activity in the anxiogenic area were reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, spatial properties of the neurons, with their main activity in the anxiogenic area, were reduced (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "ddef6456-09ce-477c-9ce8-7d2acaa7b5b9",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C80",
+      "claim": "vH neuronal activity was tuned to the anxiogenic environment, impairing previous direction-dependent neuronal activity manifesting in the absence of anxiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, vH neuronal activity was tuned to the anxiogenic environment, impairing previous direction-dependent neuronal activity manifesting in the absence of anxiety (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "e73b05dd-de6e-4221-95b6-faebe81ba472",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C81",
+      "claim": "The neuronal activity of vH neurons reflected and predicted the exploration of an anxiogenic location.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, the neuronal activity of vH neurons reflected and predicted the exploration of an anxiogenic location (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "35addb1f-6c02-40a3-9a87-524974b7aabd",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "claim_id": "C82",
+      "claim": "These results expand our view of vH function by highlighting dynamic and predictive computations during anxiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results expand our view of vH function by highlighting dynamic and predictive computations during anxiety.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement interpreting the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "12b0484e-6bc4-4c60-aaf1-dda583f1b472",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "During EPM exploration, rats exhibited anxiety-related behavior by spending significantly more time in closed arms than open arms (C15). Recording 98 vH neurons (C16), the authors observed preferential firing in different EPM regions (C17), with peak firing activities spanning the entire maze despite minimal open arm exploration (C18). Peak firing density was concentrated around the center when shuttling between closed arms (C19), suggesting open areas are relevant for vH neuronal activity (C20).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 provide converging evidence from behavioral data (C15) and neuronal recordings (C16-C19) that vH neurons respond to anxiogenic locations in the EPM. The statistical analysis (C15, C19) and density plots support the conclusion (C20), though the authors acknowledge limited statistical power due to minimal open arm exploration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "d47bd292-b85b-4ba1-b507-218582a9bded",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed a novel ELM paradigm where removal of sidewalls induced anxiety behavior. Rats spent significantly more time in the non-changing (closed) arm compared to the changing (open) arm during CO configuration (C22), and more time in the center area during CO compared to CC or CT configurations (C23). A total of 133 neurons were recorded from six rats across 14 sessions (C24, C61).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 demonstrate that the ELM successfully induces anxiety-related behavior with appropriate statistical support (C22: p=1.45e-05; C23: p=2e-05 and p=0.034). The methodological details (C59-C61) provide adequate experimental context. The behavioral readouts are consistent with anxiety responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "ff118b1c-54a3-49b5-8b83-c110e259ab52",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "vH neurons exhibited remapping of activity that overrepresented anxiogenic locations. During CO exploration, peak firing activity was skewed toward the open area (C25), with a higher proportion of neurons showing peak activity in the open arm compared to CC (C26, p=0.0121). A larger proportion of neurons changed their peak firing from closed to open arms upon sidewall removal (C27, p=0.0066). No such differences were found during CT configuration (C28), suggesting remapping is contingent on anxiety rather than novelty or environmental enrichment (C29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25-C29, and C78 provide strong evidence for anxiety-specific remapping through statistical comparisons between CO and CT configurations. The control experiment (CT configuration, C28) effectively rules out novelty as an explanation. The chi-square tests provide appropriate statistical support, though the authors acknowledge in supplementary data that expected ranges affect significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "03aff609-cc29-4e63-8d54-b53b2297ac6d",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using GLM analysis, the authors found that 36.84% of neurons were significantly modulated by running speed during CC exploration (C30), increasing to 54.14% during CO exploration (C31). Even after correcting for speed influence using GLM residuals, a significant proportion of neurons still changed peak firing location from closed to open areas (C32), suggesting a prominent influence of anxiogenic location independent of running speed (C33).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 demonstrate appropriate control for a major confound (running speed). The GLM approach is methodologically sound, and the persistence of remapping effects after speed correction (C32) supports the interpretation that anxiety, not just speed changes, drives the observed neuronal dynamics (C33).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "f6e6002b-ddca-4695-8e27-4d99c33414c1",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neurons were classified as putative pyramidal cells (60.15%, n=80) or putative interneurons (18.05%, n=24) based on spike shape and firing rate (C34, C35). Similar tendencies in open arm-associated activity were observed for both cell types (C36), and these tendencies were maintained after removing SWR-associated spikes (C37).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 demonstrate that the main findings are not driven by a specific cell type or by SWR-related activity. The classification criteria (trough-to-peak latency and firing rate) are standard in the field. The consistency across cell types and after SWR removal strengthens the main conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "ba70f5b8-9ca7-49fd-8e4e-4081fe5d229f",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Spatial properties of vH neurons were affected by anxiogenic areas. Both PiO and PiC neurons showed diminished spatial information (C38), increased sparsity (C39), and increased coherence (C40) when transitioning from CC to CO configuration. PiO neurons had more diminished spatial properties compared to PiC neurons (C41). Neurons that remapped to the open arm already showed lower spatial information and higher sparsity in the CC configuration (C42). The CC2-CT remapping score was significantly higher than CC-CO (C43, p=0.0358).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 and C79 provide comprehensive analysis of spatial properties with appropriate statistical tests (Wilcoxon signed-rank and rank-sum tests). The finding that remapping neurons already had different properties in CC (C42) is particularly interesting. The comparison of remapping scores (C43) supports the distinction between anxiety-related and novelty-related remapping.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "62261ecf-3728-4eb8-b7f2-ee2af20dd6bc",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Direction-dependent firing of vH neurons was homogenized by anxiogenic experience. Neurons exhibited direction-dependent firing during CC exploration (C44), but this became homogenized during CO exploration (C45). The PFS index was significantly different between CC and CO configurations (C46, p=7.53e-09), but not between CC2 and CT configurations (C47). All PFS values during CC, CC2, and CT were significantly lower than during CO (C48).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C44-C48, and C80 demonstrate a novel finding about direction-dependent firing with strong statistical support. The control comparison with CT configuration (C47) effectively rules out novelty as an explanation. The PFS metric appropriately quantifies directional similarity, and the results are consistent across multiple comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "90cf4857-e7bb-4acf-94fc-cbd0296b34f4",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The activity of vH neurons predicted the extent of exploration of anxiogenic locations. Using SVM classification on neuronal pairs, the authors achieved above-chance prediction (95th percentile) in 9 out of 12 sessions (C49). Animal speed before entering the open arm was not different between proximal and distal explorations except in one session (C50). Successful prediction was maintained after controlling for speed and SWR activity, and when restricting to specific cell types (C51). Neuronal activity in the closed arm was sufficient to predict whether rats would perform proximal or distal explorations of the open arm (C53).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C49-C53, and C81 provide strong evidence for predictive coding in vH neurons. The SVM approach is appropriate, with proper cross-validation and shuffling controls. The control analyses (C50, C51) address potential confounds. However, the success rate (9/12 sessions) suggests some variability, and the wrapper-like method for selecting optimal neuronal pairs could potentially lead to overfitting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "4a7e87b8-91fd-4025-995a-35899a5cd374",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Anxiety-related firing does not solely depend on exploration of anxiogenic environments, but also on intentions to explore them. The finding that neuronal activity in closed arms predicts future exploration of open arms suggests that anxiety-related activity reflects both direct experience and anticipation of anxiety-inducing situations (C54).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C54 represent an important interpretive conclusion supported by the predictive coding results (C49-C53). The inference is logical: if neuronal activity in safe (closed) areas predicts future anxiogenic exploration, this suggests anticipatory processing. However, this remains an inference rather than a directly demonstrated mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "6d146779-b715-4ebe-a7c4-7af628be83fb",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Spike shape stability was confirmed across recordings. 100% of neurons showed correlation >0.98 between spike shapes from the first and last third of recordings (C62), and >90% showed amplitude changes between -0.5% and 0.5% (C63).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62 and C63 provide important quality control data demonstrating stable single-unit recordings throughout sessions. This supports the validity of comparing neuronal activity across different maze configurations within the same session.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "673fe024-f40d-4d85-9c4a-a927483c9429",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Nine male Long Evans rats (250-600g) were used with appropriate ethical approval (C55, C56). Recordings were performed using 12 independently movable tetrodes implanted in vH (C57). The EPM consisted of two closed and two open arms (9\u00d750 cm), elevated 70 cm above the floor (C58).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 provide standard methodological details that are clearly stated and appropriate for the experiments. Ethical approval is documented (C56).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "8c867a50-5446-455d-adad-aa3e96c5d1c6",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The ventral hippocampus plays a crucial role in anxiety-related behavior (C1), with vH neurons increasing firing in anxiogenic environments (C2). The authors conclude that neuronal dynamics within vH are subjected to anxiety experience (C77), expanding understanding of vH function by highlighting dynamic and predictive computations during anxiety (C82).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C77, and C82 represent the overarching conclusions of the study. C1 and C2 are supported by both the current data and extensive prior literature. C77 and C82 are well-supported summary statements that accurately reflect the experimental findings, though C82 represents an interpretive claim about the significance of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    },
+    {
+      "id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283",
+      "content_id": "a6e7b8d3-7dda-4fd3-80e8-358cef6175c1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction provides extensive background on anxiety disorders, hippocampal function, and prior research on vH and anxiety. Claims include prevalence of anxiety disorders (C7, C8), effects of vH lesions (C9), prior observations of anxiety-related firing in vH (C10), circuit-level mechanisms (C11-C14), and comparisons with dorsal hippocampus function (C64-C76).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C14 and C64-C76 are all supported by appropriate citations to prior literature. These provide necessary context for the current study. The citations appear accurate and relevant, though the actual content of cited papers was not verified in this review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:14:25.329597Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "19e35ea7-00fa-467a-99af-eab0cc177748",
+      "result_id": "12b0484e-6bc4-4c60-aaf1-dda583f1b472"
+    },
+    {
+      "claim_id": "e8d5cce7-a8b6-4864-8efe-f4dc23d8c835",
+      "result_id": "12b0484e-6bc4-4c60-aaf1-dda583f1b472"
+    },
+    {
+      "claim_id": "a1133ab5-eec0-434f-a47d-41d7bafcb6c6",
+      "result_id": "12b0484e-6bc4-4c60-aaf1-dda583f1b472"
+    },
+    {
+      "claim_id": "01103670-3671-443e-a089-d9eea569575e",
+      "result_id": "12b0484e-6bc4-4c60-aaf1-dda583f1b472"
+    },
+    {
+      "claim_id": "da906c72-94dd-41a2-a492-504b518af25b",
+      "result_id": "12b0484e-6bc4-4c60-aaf1-dda583f1b472"
+    },
+    {
+      "claim_id": "a611652c-2a64-4f1e-b1d9-3eb68144014b",
+      "result_id": "12b0484e-6bc4-4c60-aaf1-dda583f1b472"
+    },
+    {
+      "claim_id": "af942d0c-6b83-4005-8d04-e3118a4bb42a",
+      "result_id": "d47bd292-b85b-4ba1-b507-218582a9bded"
+    },
+    {
+      "claim_id": "ee42f372-186e-40e6-8105-7a328b5f15bb",
+      "result_id": "d47bd292-b85b-4ba1-b507-218582a9bded"
+    },
+    {
+      "claim_id": "9549135c-0ebd-430b-9f11-4b0cecc9fc1b",
+      "result_id": "d47bd292-b85b-4ba1-b507-218582a9bded"
+    },
+    {
+      "claim_id": "35f66f8f-f644-423f-8c27-70c3ac610255",
+      "result_id": "d47bd292-b85b-4ba1-b507-218582a9bded"
+    },
+    {
+      "claim_id": "bacc8617-4935-4a93-87a1-6018234c665a",
+      "result_id": "d47bd292-b85b-4ba1-b507-218582a9bded"
+    },
+    {
+      "claim_id": "2f0a775e-290e-4b3d-83a5-937d11847cac",
+      "result_id": "d47bd292-b85b-4ba1-b507-218582a9bded"
+    },
+    {
+      "claim_id": "a157a54d-8bfd-4b0f-9312-7a24d30b859d",
+      "result_id": "d47bd292-b85b-4ba1-b507-218582a9bded"
+    },
+    {
+      "claim_id": "5d8dfca3-0061-4e48-88df-a13745830314",
+      "result_id": "ff118b1c-54a3-49b5-8b83-c110e259ab52"
+    },
+    {
+      "claim_id": "75cad358-bf8c-4332-8799-3751cf155d0b",
+      "result_id": "ff118b1c-54a3-49b5-8b83-c110e259ab52"
+    },
+    {
+      "claim_id": "95cd7550-ac78-4e20-a3f8-8cd99eb70771",
+      "result_id": "ff118b1c-54a3-49b5-8b83-c110e259ab52"
+    },
+    {
+      "claim_id": "7bb17812-d688-4482-98e3-47b86b7b1416",
+      "result_id": "ff118b1c-54a3-49b5-8b83-c110e259ab52"
+    },
+    {
+      "claim_id": "80f766bf-2481-465c-a7d4-d6403739966a",
+      "result_id": "ff118b1c-54a3-49b5-8b83-c110e259ab52"
+    },
+    {
+      "claim_id": "dfa4b4df-ce77-47b5-b50a-80939840c18a",
+      "result_id": "ff118b1c-54a3-49b5-8b83-c110e259ab52"
+    },
+    {
+      "claim_id": "a12fe270-ed68-457f-8085-b4c3cadb0490",
+      "result_id": "ff118b1c-54a3-49b5-8b83-c110e259ab52"
+    },
+    {
+      "claim_id": "6a19cb11-c726-4205-955c-099e6e3aea99",
+      "result_id": "03aff609-cc29-4e63-8d54-b53b2297ac6d"
+    },
+    {
+      "claim_id": "21aa41fe-681c-4f0c-a770-23c4da3bd530",
+      "result_id": "03aff609-cc29-4e63-8d54-b53b2297ac6d"
+    },
+    {
+      "claim_id": "9dd8ccca-bc4c-4096-a186-469c68801198",
+      "result_id": "03aff609-cc29-4e63-8d54-b53b2297ac6d"
+    },
+    {
+      "claim_id": "b8307318-cb3e-4584-9a0a-bc266291f0bf",
+      "result_id": "03aff609-cc29-4e63-8d54-b53b2297ac6d"
+    },
+    {
+      "claim_id": "b2c5f243-ec1f-4513-9eb4-1d7799b30db4",
+      "result_id": "f6e6002b-ddca-4695-8e27-4d99c33414c1"
+    },
+    {
+      "claim_id": "b375dc14-50a3-4e0a-9b1f-0a4445f2a97f",
+      "result_id": "f6e6002b-ddca-4695-8e27-4d99c33414c1"
+    },
+    {
+      "claim_id": "047c0f73-c84c-4539-88f6-c7e09e209f86",
+      "result_id": "f6e6002b-ddca-4695-8e27-4d99c33414c1"
+    },
+    {
+      "claim_id": "775c36bf-484f-455b-b964-036c110c5c0c",
+      "result_id": "f6e6002b-ddca-4695-8e27-4d99c33414c1"
+    },
+    {
+      "claim_id": "abbf76d3-7b74-462a-a898-332f41479b9d",
+      "result_id": "ba70f5b8-9ca7-49fd-8e4e-4081fe5d229f"
+    },
+    {
+      "claim_id": "f4abadfe-c12a-4fc9-a4d4-f8c1288e1197",
+      "result_id": "ba70f5b8-9ca7-49fd-8e4e-4081fe5d229f"
+    },
+    {
+      "claim_id": "1ac5ecdd-2f5d-4793-8ece-f4e19a389fcf",
+      "result_id": "ba70f5b8-9ca7-49fd-8e4e-4081fe5d229f"
+    },
+    {
+      "claim_id": "611da212-c0a7-4441-8c5f-90a311e3076b",
+      "result_id": "ba70f5b8-9ca7-49fd-8e4e-4081fe5d229f"
+    },
+    {
+      "claim_id": "79b66416-a800-4810-915d-825cac146575",
+      "result_id": "ba70f5b8-9ca7-49fd-8e4e-4081fe5d229f"
+    },
+    {
+      "claim_id": "4231eb17-535e-4aa1-8bb5-39649eeb38d6",
+      "result_id": "ba70f5b8-9ca7-49fd-8e4e-4081fe5d229f"
+    },
+    {
+      "claim_id": "1285df8c-af1a-4542-b1a3-6ecc73413ccf",
+      "result_id": "ba70f5b8-9ca7-49fd-8e4e-4081fe5d229f"
+    },
+    {
+      "claim_id": "71833ba7-a1cc-4815-9e42-0d0ab50395ef",
+      "result_id": "62261ecf-3728-4eb8-b7f2-ee2af20dd6bc"
+    },
+    {
+      "claim_id": "9c85d294-18ff-4e55-89d9-adebb0cea672",
+      "result_id": "62261ecf-3728-4eb8-b7f2-ee2af20dd6bc"
+    },
+    {
+      "claim_id": "124aec07-77e8-4897-97e4-98a1ceaa2c56",
+      "result_id": "62261ecf-3728-4eb8-b7f2-ee2af20dd6bc"
+    },
+    {
+      "claim_id": "3e9958a6-7038-421e-a338-292acb8c9faa",
+      "result_id": "62261ecf-3728-4eb8-b7f2-ee2af20dd6bc"
+    },
+    {
+      "claim_id": "cdb64785-5625-4a5a-bb1f-2970d9d2578a",
+      "result_id": "62261ecf-3728-4eb8-b7f2-ee2af20dd6bc"
+    },
+    {
+      "claim_id": "df0f1f54-b922-4631-ab0e-850a39ec7af7",
+      "result_id": "62261ecf-3728-4eb8-b7f2-ee2af20dd6bc"
+    },
+    {
+      "claim_id": "ddef6456-09ce-477c-9ce8-7d2acaa7b5b9",
+      "result_id": "62261ecf-3728-4eb8-b7f2-ee2af20dd6bc"
+    },
+    {
+      "claim_id": "8f83ed63-8cda-44c2-87f2-4aa4481191d4",
+      "result_id": "90cf4857-e7bb-4acf-94fc-cbd0296b34f4"
+    },
+    {
+      "claim_id": "c741e423-a498-4ffa-83b9-2c6879de26a2",
+      "result_id": "90cf4857-e7bb-4acf-94fc-cbd0296b34f4"
+    },
+    {
+      "claim_id": "e4fc301a-1319-43cb-ad63-e16e5585fd82",
+      "result_id": "90cf4857-e7bb-4acf-94fc-cbd0296b34f4"
+    },
+    {
+      "claim_id": "4af71ea8-318f-44ba-86cc-41c6c109e2b7",
+      "result_id": "90cf4857-e7bb-4acf-94fc-cbd0296b34f4"
+    },
+    {
+      "claim_id": "2793f27f-0f14-4745-bd70-494349a31dfd",
+      "result_id": "90cf4857-e7bb-4acf-94fc-cbd0296b34f4"
+    },
+    {
+      "claim_id": "d6ed1308-25f5-46d1-a048-526bcc2233a3",
+      "result_id": "90cf4857-e7bb-4acf-94fc-cbd0296b34f4"
+    },
+    {
+      "claim_id": "e73b05dd-de6e-4221-95b6-faebe81ba472",
+      "result_id": "90cf4857-e7bb-4acf-94fc-cbd0296b34f4"
+    },
+    {
+      "claim_id": "c810fb68-2c60-40e5-baba-ce91ddc8a8ce",
+      "result_id": "4a7e87b8-91fd-4025-995a-35899a5cd374"
+    },
+    {
+      "claim_id": "29287e6e-ee6d-425e-8c92-8db8b724ca52",
+      "result_id": "4a7e87b8-91fd-4025-995a-35899a5cd374"
+    },
+    {
+      "claim_id": "5e884523-e7c3-47d9-acfa-1a34517a8e0f",
+      "result_id": "6d146779-b715-4ebe-a7c4-7af628be83fb"
+    },
+    {
+      "claim_id": "54771726-eb4b-4a10-a0cf-ab522e459cc4",
+      "result_id": "6d146779-b715-4ebe-a7c4-7af628be83fb"
+    },
+    {
+      "claim_id": "2c96179c-5fe7-49de-bba9-c4c069585529",
+      "result_id": "673fe024-f40d-4d85-9c4a-a927483c9429"
+    },
+    {
+      "claim_id": "7fa908f7-044c-4a74-9f62-65d3c14116da",
+      "result_id": "673fe024-f40d-4d85-9c4a-a927483c9429"
+    },
+    {
+      "claim_id": "1ac806ea-26dd-458f-9233-7301ac5970de",
+      "result_id": "673fe024-f40d-4d85-9c4a-a927483c9429"
+    },
+    {
+      "claim_id": "b7cc8335-7acd-4773-b369-6dbc7d5576a3",
+      "result_id": "673fe024-f40d-4d85-9c4a-a927483c9429"
+    },
+    {
+      "claim_id": "c8999276-d6aa-4a2f-81de-a8fdf059faad",
+      "result_id": "8c867a50-5446-455d-adad-aa3e96c5d1c6"
+    },
+    {
+      "claim_id": "f945be13-2954-4531-8b2f-a0ac90e339d5",
+      "result_id": "8c867a50-5446-455d-adad-aa3e96c5d1c6"
+    },
+    {
+      "claim_id": "704fb47c-fc61-4c9f-9f16-5e40bd81512f",
+      "result_id": "8c867a50-5446-455d-adad-aa3e96c5d1c6"
+    },
+    {
+      "claim_id": "35addb1f-6c02-40a3-9a87-524974b7aabd",
+      "result_id": "8c867a50-5446-455d-adad-aa3e96c5d1c6"
+    },
+    {
+      "claim_id": "54712719-ff2c-4458-92ea-2052b28a7d42",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "750b2e32-e0b0-43fd-be76-21e5cdf6e530",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "c0057c64-8c11-4815-a67b-dbc969584b1f",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "44982705-dbe2-4a1f-98c1-1239e4ba7b44",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "a9f994eb-bf25-4e59-bbe5-46b43ced2f36",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "bf6163f6-cb7a-4caa-8ca5-0e3eb2d64511",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "95f1b8f3-e83d-4c51-b0fc-e6f759f6b2ff",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "d0bf149f-321b-4259-ba15-e857704286b2",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "6170c793-977e-4699-b262-1327a291032d",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "0440bc4c-9aea-4b6f-b092-00d85f73ed3f",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "487a2b60-883a-40c7-a6a1-c9abc968d945",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "5d3fc3b1-3880-4815-8f1f-44da3fa199dd",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "d3d27c8e-21ad-4978-aaef-cb05a6e6e2e8",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "df3f6845-58c4-448d-8e71-9e0811d7d44a",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "1eb6e3d6-5938-4444-9f64-2220792e9694",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "467d3b70-a6ed-45a1-8e30-aa4f01d2ea7d",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "9448b46b-8cfe-45da-87ba-b6d14941c359",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "89d441f8-bc3c-4ca4-83f3-0843c14ce2a2",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "ee9cf524-e455-4a8b-aafc-e4d55428d7e2",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "b7a2640d-5681-4a64-9f95-109234ebe15c",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    },
+    {
+      "claim_id": "2580bca7-070f-45bf-a05b-4c9804a94457",
+      "result_id": "f3e39f37-fe70-4e4a-9b0a-4fee42abd283"
+    }
+  ],
+  "comparisons": []
+}

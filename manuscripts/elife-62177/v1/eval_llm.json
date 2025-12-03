@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C37"
+    ],
+    "result": "The authors introduce a mathematical model where a single parameter called social fluidity (\u03c6) controls the rate of social mixing within groups. Large values of \u03c6 correspond to gregarious behavior with evenly distributed social effort, while small values signify persistent bonds with disproportionate social effort. Social fluidity is independent of the distributions of strength or degree and the timescale of interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C37 collectively establish the social fluidity parameter and its interpretation. The mathematical model (Equations 1-4) provides a rigorous foundation, and the independence from absolute values (C37) is demonstrated through the model's construction based on relationships rather than absolute values. The conceptual framework is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C45",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Social fluidity was estimated for 57 human and animal social systems using empirical data. Aggressive interactions showed the highest social fluidity (rarely repeated interactions), while grooming and social bonding showed the lowest (frequent repeated interactions). Humans showed variable social fluidity depending on environment. Social fluidity did not scale with network size or number of observations per individual.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C38-C41, C45, C47-C49 are supported by Figure 2 and Figure 2\u2014figure supplement 2, which show empirical estimates across diverse systems. Statistical tests (Spearman correlations, p-values) support the lack of scaling with network size and observations. The bootstrap confidence intervals provide uncertainty quantification. The data processing methods are described in Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Social fluidity correlates with both mean degree (density of social ties) and variability in edge weights, although these two quantities do not correlate with each other. Social fluidity seamlessly combines these two independent aspects of social behavior into one quantity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by reported Spearman correlations (r\u00b2=0.21 for mean degree, r\u00b2=0.46 for weight variability, both p<0.001) and the lack of correlation between mean degree and weight variability (r\u00b2=0.01, p=0.54). This demonstrates that \u03c6 captures two orthogonal dimensions of social structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C128"
+    ],
+    "result": "The authors derived an analytical expression relating social fluidity to the basic reproductive number (R\u2080) of infectious disease. For species with stable social bonds (low \u03c6), the model describes frequency-dependent transmission sensitive to social fluidity changes. As social fluidity increases, systems become increasingly density-dependent. The model provides an integrated framework unifying density-dependent and frequency-dependent transmission paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C11, and C128 are supported by the mathematical derivation (Equations 5-6) and Figure 3, which shows how R\u2080^\u03c6 varies with population size N for different \u03c6 values. The theoretical framework demonstrates the continuous transition from frequency-dependence (low \u03c6) to density-dependence (high \u03c6), providing mathematical rigor to the unification claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C120"
+    ],
+    "result": "Social fluidity is a stronger predictor of disease outcomes than group size and connectivity. The social fluidity-derived reproductive number (R\u2080^Est) showed the highest correlation with simulated disease outcomes (r=0.91), outperforming excess degree (r=0.64), mean degree (r=0.53), and network size (r=0.47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C72, C75-C78, and C120 are supported by Table 1 showing Pearson correlations between network metrics and simulated R\u2080^Sim(g=1). The disease simulations (C72) provide empirical validation. Statistical significance (p<0.01) is reported for key correlations. The calibration approach (controlling for contact frequency) strengthens the comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Indicators of disease risk derived solely from degree distribution are unreliable; edge weights must be considered. Networks with higher mean edge weight have lower basic reproductive numbers because repeated interactions between the same individuals do not provide additional transmission opportunities for most directly transmitted microparasites (which are not dose-dependent).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by citations (Smieszek et al., 2009; Stehl\u00e9 et al., 2011b) and the simulation results showing negative correlation between mean edge weight and R\u2080 (Table 1). The logical reasoning about repeated interactions being redundant for transmission is sound for non-dose-dependent pathogens. However, the generalization about \"most\" microparasites (C85) could benefit from more specific evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Aggressive interactions show the highest social fluidity, possibly indicating a learning effect where individuals avoid further aggression after encounters. Bond-strengthening interactions (grooming in monkeys, food-sharing in bats) show the lowest fluidity. Food-sharing ants are more fluid than bats despite similar interaction types, reflecting their eusocial nature and lack of need to reinforce kin bonds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by Figure 2 data and appropriate citations (Parker 1974; Seyfarth and Cheney 1984; Carter and Wilkinson 2013; H\u00f6lldobler and Wilson 2009). The interpretations are reasonable given the empirical patterns. The learning effect explanation (C102) is appropriately qualified as \"possible\" rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C94"
+    ],
+    "result": "Transmission events occur mostly within modules of the seed node, with weaker social ties facilitating transmission to other modules. Prediction accuracy at generation g=2 is negatively correlated with mean clustering coefficient, consistent with accelerated susceptible depletion in clustered networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C94 are supported by simulation results and citation to Sah et al. 2017. The negative correlation with clustering is explained by known network epidemic dynamics (Miller 2009; Smieszek et al. 2009). The model's reduced accuracy at g=2 in clustered networks is acknowledged as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "While social fluidity can be affected by observation window length (as degree scales with observation period), the model's focus on how degree scales with number of observations rather than absolute values makes results relatively robust against this variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by citation (Perra et al. 2012) and Figure 2\u2014figure supplement 1, which demonstrates robustness when using only 50% of interactions. The relative approach (scaling relationships) rather than absolute values provides methodological strength against temporal sampling bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Unlike typical assumptions that observed interactions persist over time, the social fluidity model assumes only the distribution of edge weights remains constant, not individual interactions. This assumption is consistent with growing evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by citations (Perreault 2010 for typical assumptions; Miritello et al. 2013 and Centellegher et al. 2017 for supporting evidence). This represents a departure from standard network modeling assumptions with empirical justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The model does not account for variation in transmission capability across interaction types (which depends on pathogen transmission mode and infectious dose) or heterogeneous transmission probabilities within groups (e.g., contact duration effects). Contact duration was not explicitly included because this information was only available for a fraction of datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 appropriately acknowledge model limitations. The citation to Stehl\u00e9 et al. 2011b supports the importance of contact duration. The data availability constraint (Barrat et al. 2014) justifies the modeling choice. These are honest limitations that do not undermine the main results but indicate areas for future improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Computational methods used standard Python libraries (networkx, scipy, sklearn). All scripts, data, and documentation are available on GitHub. Only freely available downloadable data sources were used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 describe computational methods and data availability. The use of standard libraries and public data repositories supports reproducibility. The GitHub repository (with archived version) provides transparency. These are methodological details that support the overall work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Data processing methods included defining interactions as consecutive contact intervals (\u22652 intervals for humans to exclude transient contacts), selecting specific time windows for different species, and excluding certain datasets from disease simulations when inappropriate. Disease simulations used random seed selection, exponential infectious periods, probability-based transmission, and dataset looping to avoid temporal bias. Parameters were calibrated to normalize for contact rate variation between networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C149 describe data processing and simulation methods in detail. The methods are clearly specified with appropriate citations (e.g., Gernat et al. 2018). The exclusion criteria (C142) and calibration approach (C149) are justified. The looping mechanism (C147-C148) addresses temporal boundary effects. These methodological choices are reasonable and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims establish that group-living animals distribute social effort disproportionately, interacting more with close companions while maintaining weaker bonds with others. Social interaction can transmit disease, with transmission traditionally modeled as either density-dependent or frequency-dependent. However, real diseases are difficult to categorize, and the relationship between group social structure and disease transmission scaling remains unclear due to limited empirical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C25 provide background context supported by appropriate citations (Krause and Ruxton 2002; Hinde 1976; Altizer et al. 2003; de Jong et al. 1995; Hopkins et al. 2020; Silk et al. 2017; Patterson and Ruckstuhl 2013; Lehmann et al. 2007; Silk 2007; Sueur et al. 2011; Dakin and Ryder 2020; Karsai et al. 2014; Cross et al. 2013; Smith et al. 2009). These establish the motivation and knowledge gaps addressed by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C71"
+    ],
+    "result": "The disease model assumes exponential recovery with rate \u03b3 and accounts for heterogeneous social connectivity, recognizing that infected individuals tend to be those with more social partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C71 describe standard epidemiological modeling assumptions. The exponential recovery assumption is common in SIR-type models. The heterogeneity consideration (C71) is supported by citation to Anderson et al. 1986 and is addressed through the excess degree formulation in Equation 7.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C82"
+    ],
+    "result": "Calibrating \u03b2 to keep R\u2080^\u221e constant eliminates the effect of contact frequency, allowing comparison of other network characteristics. Under this calibration, higher mean edge weight does not necessarily imply higher transmission probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C82 describe the parameter calibration strategy (Equation 8) that normalizes for contact rate variation. This methodological choice is justified and allows isolation of structural effects from frequency effects. The consequence (C82) logically follows from the calibration approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The authors propose social fluidity as a measure quantifying social mixing within populations, reducing multiple social network factors (size, connectivity, contact heterogeneity, frequency) to a single quantity enabling cross-system comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 summarize the main methodological contribution. The reduction to a single parameter is achieved through the mathematical model (Equations 1-4) and validated through empirical application to 57 networks. This represents a significant conceptual and methodological advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Disproportionate distribution of social effort has been observed in human telecommunication but quantification in animal systems has been limited by data constraints. While heterogeneous interaction frequencies are common in epidemiological models, the results highlight the importance of including variability in individual social effort allocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 contextualize the work within existing literature. Citations support observations in human systems (Mac Carron et al. 2016; Saram\u00e4ki et al. 2014; Gon\u00e7alves et al. 2011; Tamarit et al. 2018), limitations in animal studies (Di Bitetti 2000), and current modeling approaches (Rocha and Blondel 2013; Colman et al. 2018). The conclusion (C109) appropriately follows from the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The discrepancy in epidemic risk between conference and school settings (despite similar size and connectivity) comes from lower frequency of repeated contacts in conferences. Interactions between infectious individuals and previously infected individuals are redundant for transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 provide a concrete example illustrating the model's predictive power. The conference (R\u2080^Est=1.60, \u03c6=0.66) vs. school (R\u2080^Est=1.39, \u03c6=0.40) comparison demonstrates how social fluidity captures transmission risk beyond simple network metrics. The redundancy principle (C123) is fundamental to the model's logic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C127",
+      "C129",
+      "C130"
+    ],
+    "result": "The relationship between mixing and disease risk scaling with group size corroborates past work on transmission scaling with contact heterogeneity. Many empirical studies support transmission functions between density-dependence and frequency-dependence paradigms. The modeling approaches can inform transmission relationships in future disease studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127, C129-C130 contextualize findings within existing literature (Begon et al. 2002; Ferrari et al. 2011; Smith et al. 2009; Cross et al. 2013; Borremans et al. 2017; Hopkins et al. 2020). The claim about future applicability (C130) is appropriately qualified as potential rather than demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The negative correlation between modularity and \u03c6 is expected because individuals are loyal to those within modules while maintaining weaker connections with the remaining network. In all but one network, mean edge weight within modules exceeds that between modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 describe the relationship between social fluidity and network modularity. The empirical observation (C60) supports the interpretation (C59). This is consistent with the model's framework where low fluidity corresponds to persistent bonds, which naturally creates modular structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C119"
+    ],
+    "result": "If study duration allows substantial group structure development, edge formation/dissolution models may be preferred. There is potential to improve model applicability as more high-resolution data becomes available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115 and C119 appropriately discuss model limitations and future directions. These are reasonable caveats about model applicability and honest acknowledgments of data constraints. They do not undermine the current results but provide guidance for future work.",
+    "result_type": "MINOR"
+  }
+]

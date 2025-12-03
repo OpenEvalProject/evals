@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C51"
+    ],
+    "result": "Within-trial time field width increases linearly with delay after accounting for across-trial variability. The hierarchical Bayesian model isolated within-trial time field width (\u03c3w) from across-trial variability (\u03c3t), revealing that \u03c3w increases linearly with time field peak location M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C51 are strongly supported by regression analysis showing a significant linear relationship (p=0.01, R\u00b2adj=0.24) between within-trial time field width and peak time, with no significant quadratic term. Bayesian analysis confirmed the linear model as best-fitting (BF_M=9.756). This finding was robust across alternative model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C52"
+    ],
+    "result": "Time cell peaks are distributed according to a power-law with exponent \u03b1\u22481, indicating logarithmic compression. The posterior distribution of \u03b1 was centered at 0.92 (95% CI: [0.73, 1.11]), with 54% of posterior density between 0.9 and 1.1, conclusively rejecting uniform distribution (\u03b1=0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38, C39, and C52 are well-supported by hierarchical Bayesian analysis. The posterior distribution excludes \u03b1=0 by approximately five standard deviations, strongly arguing against uniform distribution. The tight clustering around \u03b1=1 provides quantitative evidence for logarithmic compression, consistent with visual inspection of the cumulative distribution function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C50"
+    ],
+    "result": "The neural temporal representation in rodent hippocampus obeys a neural Weber-Fechner Law. This conclusion integrates findings that (1) within-trial time field width increases linearly with delay and (2) time cell peaks follow a power-law distribution with \u03b1\u22481.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 represents the main conclusion, supported by convergent evidence from C5/C51 (linear width increase) and C6/C52 (power-law distribution with \u03b1\u22481). The hierarchical Bayesian approach (C50) simultaneously estimated parameters at trial, cell, and population levels, providing rigorous quantitative support for both predictions of logarithmic compression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C53"
+    ],
+    "result": "Time field location varies substantially across trials, with some variability attributable to behavioral events at trial onset. The model revealed high trial-to-trial variability in time field location, and for some cells this correlated with timing of treadmill entry events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, and C53 are supported by hierarchical Bayesian model estimates showing median \u03c3t=0.69s, with \u03c3t>\u03c3w for 93/131 cells. Bayesian t-tests confirmed significant positive correlations between time field peaks and treadmill entry timing for rats 2, 3, and 4 (BF\u2081\u2080>100 or >3), though not rat 1 (BF\u2081\u2080=0.64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Temporal compression is not an artifact of behavioral changes during the delay. Behavioral variability decreased after 2s, yet both early (<2s) and late (>2s) time cell groups showed evidence of temporal compression when analyzed separately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 address a critical confound. Behavioral data showed decreased variability after 2s, yet subgroup analysis of early (n=63) and late (n=68) time cells both showed linear width increases with delay (BF\u2081\u2080>100 and 2.5 respectively) and non-uniform distributions (KS test p<0.001 for both groups).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "The Main Model (Gaussian time fields, location shift across trials, power-law population distribution) provided the best quantitative description of the data compared to alternative models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by WAIC values in Table 1, where the Main Model (WAIC=1.4e+18) substantially outperformed alternative models including Log-normal Time Field (4.8e+19), Alternative Trial Vary (6.3e+27), Exponential Compression (5.2e+26), and Weibull Compression (1.7e+25) models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Rats performed a delayed-matching task with 70-80% accuracy, showing minimal behavioral variability after 2s of delay. From 625 CA1 units, 159 were classified as time cells, with 131 robust time cells used for hierarchical Bayesian analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 describe experimental procedures and data collection. The task design, behavioral performance, and cell selection criteria are clearly documented. The proportion of time cells (159/625=25.4%) is consistent with prior studies (C26). Quality control criteria (>20 trials, peak within delay bounds) are appropriate for hierarchical modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "Methods section describes experimental subjects (4 male Long-Evans rats), apparatus (circular track with treadmill), training procedures, surgical procedures, recording equipment (96-channel Plexon system), spike sorting criteria, and Bayesian model fitting procedures (8 MCMC chains with rStan).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 provide methodological details that are clearly documented and follow standard practices in the field. Ethical approval (C89), equipment specifications (C90, C93), quality control criteria (C94: Isolation Rating>40, L-Ratio<0.001), and computational methods (C96: 8 chains, 4800 warmup, 200 post-warmup samples) are appropriately detailed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C8"
+    ],
+    "result": "The Weber-Fechner law describes logarithmic relationships between perceived and physical sensory input across multiple psychological domains including perception, numerosity, and time perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C8 accurately describe established psychological principles supported by appropriate citations (Fechner 1860, Moore 2012, Feigenson et al. 2004, Gallistel & Gelman 2000, Rakitin et al. 1998, Gibbon et al. 1984). These are well-established findings in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Hippocampal time cells fire sequentially during delays, with different cells having time fields at different delays up to tens of seconds. Time cell sequences allow reconstruction of event timing, though accuracy decreases with elapsed time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C12, C13, and C14 accurately summarize established properties of time cells supported by appropriate citations to foundational work (Pastalkova et al. 2008, MacDonald et al. 2011, Mau et al. 2018, Taxidis et al. 2020, Cruzado et al. 2020, Kraus et al. 2013).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C15",
+      "C16"
+    ],
+    "result": "Logarithmic compression is observed in visual cortex (distance from fovea) and parietal cortex (numerosity coding), with receptive field size increasing linearly and cell density decreasing inversely with the compressed dimension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C15, and C16 accurately describe established findings in visual and numerical neuroscience, supported by appropriate citations (Schwartz 1980, Van Essen et al. 1984, Glezer 1965, Nieder & Miller 2003, Dumoulin & Wandell 2008, Gattass et al. 1981, Daniel & Whitteridge 1961, Hubel & Wiesel 1974).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55"
+    ],
+    "result": "Prior studies have shown temporal compression in time cells across multiple brain regions and species, with fewer cells firing late in delays and wider time fields at longer delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54, and C55 accurately summarize prior literature on temporal compression in hippocampus and other regions (striatum, MEC, mPFC, caudate, DLPFC, lPFC) across rodents and primates, supported by extensive citations (Kraus et al. 2013, Mau et al. 2018, Taxidis et al. 2020, Mello et al. 2015, and others).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Graded heterogeneity of time constants has been observed in entorhinal cortex and cerebellum, with cells showing diverse decay/ramp rates spanning milliseconds to minutes. Slowly-inactivating currents may provide a biological mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 accurately summarize findings on temporal heterogeneity in EC and cerebellum, supported by appropriate citations (Tsao et al. 2018, Bright et al. 2020, Dannenberg et al. 2019, Egorov et al. 2002, Tiganj et al. 2015, Liu et al. 2019, Guo et al. 2021). C59 appropriately frames slowly-inactivating currents as a candidate mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Spatial representations in hippocampus and entorhinal cortex show compression analogous to temporal compression. Place fields cluster near landmarks with higher density and narrower fields closer to landmarks. Grid cells show discrete spatial frequency clusters with constant ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 accurately describe spatial coding properties supported by appropriate citations (Bjerknes et al. 2018, Sheehan et al. 2021, Harland et al. 2021, Stensola et al. 2012, Wei et al. 2015). The analogy between spatial and temporal compression is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "Logarithmic compression provides scale-covariance, enabling scale-invariant perception and generalization. This property has been demonstrated in behavioral studies, computational models, and may optimize information coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 describe theoretical and computational implications of logarithmic compression, supported by appropriate citations (Mello et al. 2015, Jacques et al. 2022, Rahman et al. 2020, Jansson & Lindeberg 2022, Shankar & Howard 2013, Hsu & Marzen 2020). C67 correctly states the mathematical uniqueness of logarithmic functions for scale-covariance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Episodic memory shows contiguity effects across time scales from seconds to months. Time cells may implement spatiotemporal context, and logarithmic compression with scale-covariance could enable scale-invariant memory retrieval through attractor dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 accurately describe contiguity effects in human memory across diverse time scales (Kahana 1996, Howard & Kahana 1999, Unsworth 2008, Cortis Mack et al. 2017, Uitvlugt & Healey 2019) and propose theoretical connections to time cells. C81-C83 appropriately frame these as theoretical proposals rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Logarithmic temporal representations may extend beyond the timescale of time cell sequences (>8s) to autobiographical memory over weeks to decades, potentially through representational drift or other mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C87 propose extensions of logarithmic compression to longer timescales based on fMRI pattern similarity (Nielson et al. 2015) and behavioral studies (Arzy et al. 2009, Peer et al. 2015). However, C84 acknowledges difficulty imagining time cells persisting for hours/days, and C87 frames representational drift as a 'possible candidate.' These remain speculative connections requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "The authors raise the methodological concern that increased time field width could be an averaging artifact due to across-trial variability in receptive field location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 identifies a critical methodological concern that motivated the hierarchical Bayesian approach. This concern is legitimate and was appropriately addressed by separately estimating within-trial width (\u03c3w) and across-trial variability (\u03c3t), demonstrating that linear width increase persists after controlling for trial averaging effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Unipolar brush cells in cerebellum form logarithmically-compressed temporal basis functions according to Guo et al. 2021.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 accurately cites prior work (Guo et al. 2021) on cerebellar temporal coding. This provides relevant context for logarithmic compression in other brain regions, though the slice preparation differs substantially from the in vivo hippocampal recordings in the current study.",
+    "result_type": "MINOR"
+  }
+]

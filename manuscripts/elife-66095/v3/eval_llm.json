@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Lung cancer is a major cause of cancer mortality worldwide, with limited treatment options. While targeted therapies and immunotherapies exist, they benefit only subsets of patients, leaving the majority without effective treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 establish the clinical context through well-cited epidemiological data and treatment landscape. These are background claims supported by appropriate citations to established literature and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "LKB1/STK11 is a bona fide tumor suppressor gene frequently inactivated in NSCLC (up to 30% of lung adenocarcinomas). LKB1 deficiency is associated with therapy resistance and poor outcomes, creating an urgent need for new therapeutic strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C22 provide well-established background on LKB1 as a tumor suppressor, supported by appropriate citations. The characterization of LKB1 deficiency, its prevalence, mechanisms of inactivation, and association with therapy resistance are all supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "LKB1 activates AMPK family members including SIKs, but AMPK loss reduces rather than promotes lung cancer growth, indicating AMPK does not mediate LKB1 tumor suppression. Instead, LKB1 deficiency leads to aberrant CRTC-CREB activation and upregulation of cAMP/CREB target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 establish the mechanistic background linking LKB1 to CRTC-CREB signaling. The distinction between AMPK and SIK functions is supported by cited literature (C25-C26), and the connection to CRTC activation is supported by the authors' previous work (C27-C29).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The CRTC family (CRTC1-3) are transcriptional co-activators regulated by SIK-mediated phosphorylation. LKB1 deficiency impairs SIK activity, leading to CRTC dephosphorylation, nuclear translocation, and CREB activation. SIKs mediate the major tumor suppressive effects of LKB1 in NSCLC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 establish the mechanistic framework for CRTC regulation by LKB1-SIK signaling. These are well-supported by appropriate citations to established literature (C30-C34, C36, C38) and logical inference from established mechanisms (C35, C37).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "All three CRTC genes are expressed at varying levels in lung cancer cells, with CRTC2 and CRTC3 showing higher expression than CRTC1. CRTC protein levels do not correlate tightly with mRNA levels. CRTC1 and CRTC2 show predominantly dephosphorylated forms in LKB1-null cells, while CRTC3 shows distinct regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are directly supported by experimental data shown in Figure 1A-B. The RT-qPCR and western blot data clearly demonstrate the expression patterns and post-translational modifications described. The inference about CRTC3's distinct regulation (C42) is reasonable based on the migration pattern data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CRTCs are predominantly phosphorylated and cytoplasmic in LKB1-expressing cells, but dephosphorylated and nuclear in LKB1-null cells. Reintroduction of LKB1 to LKB1-null cells restores CRTC phosphorylation and cytoplasmic localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by phosphatase treatment experiments (Figure 1\u2014figure supplement 1A), subcellular fractionation (Figure 1\u2014figure supplement 1B), and LKB1 reintroduction experiments (Figure 1\u2014figure supplement 2). The data consistently demonstrate LKB1-dependent regulation of CRTC phosphorylation and localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Individual CRTC knockout cells show partial reduction in CREB target gene expression and only mild effects on cell proliferation, survival, and anchorage-independent growth. Upregulation of CRTC1 in CRTC2/3 knockouts suggests functional compensation, indicating that general inhibition of all CRTCs is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C94-C97 are supported by CRISPR/Cas9 knockout data (Figure 2). The western blots show compensatory upregulation of CRTC1 (C94), and functional assays demonstrate only mild phenotypes with individual knockouts (C50). The conclusion about functional redundancy (C51, C97) is a reasonable inference from these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The dnCRTC construct (CRTC1-CBD-nls-GFP) localizes to the nucleus and suppresses CRTC-mediated activation of CREB-dependent transcription in luciferase reporter assays, functioning as a dominant negative mutant capable of blocking all three CRTCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by fluorescence microscopy (Figure 3B), western blot (Figure 3C), and luciferase reporter assays (Figure 3D). The data demonstrate nuclear localization, expected protein size, and functional inhibition of CRTC-mediated transcription. The conclusion that dnCRTC functions as a pan-inhibitor (C55) is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "dnCRTC physically associates with CREB on CRE-containing gene promoters (LINC00473, NR4A2) and blocks recruitment of endogenous CRTC proteins, as demonstrated by ChIP assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by ChIP experiments (Figure 3E-G). Western blot of ChIP complexes shows CREB co-precipitation with dnCRTC (C56), ChIP-qPCR shows enrichment on target promoters (C57), and reduced endogenous CRTC binding (C58). The mechanistic conclusion (C59) is well-supported by these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "dnCRTC expression alters expression of 274 genes (160 downregulated, 114 upregulated), including known LKB1/CREB target genes. These changes are specific to LKB1-null cells and the target genes are elevated in human TCGA lung cancers with LKB1 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by microarray data (Figure 4B-C, Supplementary file 1a), RT-qPCR validation (Figure 4D, Figure 4\u2014figure supplement 1), and TCGA analysis (Figure 4\u2014figure supplement 3). The specificity to LKB1-null cells (C62) and association with LKB1 mutations in human tumors (C64) strengthen the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "CREB and cAMP are upstream regulators of dnCRTC-regulated genes. Approximately 62% of dnCRTC-DEGs contain CRE sites, and ~35% show CREB and CRTC2 binding near their transcription start sites by ChIP-seq analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by Ingenuity Pathway Analysis (Figure 4E), bioinformatics analysis of CRE sites (C66), and integration with published ChIP-seq data (Figure 4F, C67-C68). The multi-layered evidence linking dnCRTC effects to CREB-mediated transcription is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Several oncogenic gene signatures (Shh, RB/E2F1, NFE2L2, PDGF, KRAS) show negative enrichment in dnCRTC-expressing cells by GSEA analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by GSEA analysis (Supplementary file 1b). This provides additional context for the biological impact of dnCRTC expression, though the mechanistic connection to CRTC-CREB signaling is not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In competition assays, dnCRTC-expressing LKB1-null cells (A549, H157) are progressively depleted over 24 days, while LKB1-positive cells (H322, H522) are unaffected, indicating that CRTC activation is critical for LKB1-null cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by competition assay data (Figure 5A). The progressive depletion of dnCRTC-expressing cells specifically in LKB1-null lines provides strong evidence for selective dependence on CRTC-CREB signaling. The conclusion about CRTC activation being critical (C73) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "dnCRTC expression significantly inhibits cell growth, colony formation, and anchorage-independent growth in LKB1-null cells (A549, H157, mouse mLSCCLP) but not in LKB1-positive cells (H322, H522) or normal lung epithelial cells (BEAS-2B).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by multiple functional assays (Figure 5C-E, Figure 5\u2014figure supplement 1). The specificity to LKB1-null cells across human and mouse lines, with no effect on normal cells, provides strong evidence for selective therapeutic potential. The conclusion (C78) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In subcutaneous xenograft models, dnCRTC expression reduces tumor growth rate, size, weight, and Ki-67 proliferation. Residual tumors show markedly reduced dnCRTC expression, suggesting they derive from cells with low/no dnCRTC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by xenograft data (Figure 6). Tumor measurements, bioluminescence, and Ki-67 IHC (C79-C80) demonstrate growth inhibition. Western blot analysis of excised tumors (Figure 6\u2014figure supplement 1) supports the interpretation that residual tumors lack dnCRTC expression (C81-C82), though this is somewhat circular reasoning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "In orthotopic xenograft models, dnCRTC expression reduces lung tumor burden, surface nodules, and tumor area, demonstrating that CRTC-CREB activation is essential for LKB1-null lung cancer growth and colonization in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by orthotopic xenograft data (Figure 7). Bioluminescence, fluorescence imaging, and histology consistently show reduced tumor burden. The conclusion that CRTC-CREB activation is essential (C85) is well-supported by the combined in vitro and in vivo data, though the term 'essential' may be slightly overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "CRTC activation plays an essential role in LKB1-deficient lung cancer cell growth, and targeting the CRTC-CREB interaction is a potential effective strategy for treating LKB1-inactivated lung cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is well-supported by the comprehensive in vitro and in vivo data. However, C87 is somewhat speculative\u2014while the data support the concept, actual therapeutic development and clinical validation are not demonstrated. The conclusion is reasonable but represents a proposal for future work rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Prior work established that CRTC1-MAML2 fusions activate CREB-dependent transcription in MEC, LKB1 deficiency activates CRTC-CREB target genes, SIKs mediate LKB1 tumor suppression, and CRTC2 promotes LKB1-deficient NSCLC growth, supporting a model where LKB1-SIK alterations drive constitutive CRTC-CREB activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 summarize prior work from the authors and others, appropriately cited. These provide important context for the current study. Claim C93 is an inference synthesizing the prior work into a mechanistic model, which is reasonable given the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "SIK1 is a cAMP-CREB transcriptional target upregulated in LKB1-null cells. Its downregulation by dnCRTC is specific to LKB1-null cells and unlikely to have functional consequences since SIK1 kinase is impaired in these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by citations (C98) and RT-qPCR data (Figure 4\u2014figure supplement 1, C99). The interpretation that SIK1 downregulation lacks functional consequences is reasonable given that SIK1 requires LKB1 for activity, though this creates a potential feedback loop that could be explored further.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Blocking CRTC-CREB complex assembly to inhibit multiple target genes simultaneously may prevent resistance. Peptides or peptide-like molecules targeting the CRTC-CREB interface could potentially inhibit lung cancer growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 are speculative proposals for future therapeutic development. While the logic is reasonable based on the study's findings, no actual peptide inhibitors or resistance studies are presented. These represent hypotheses for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Crystal structures have revealed that CRTC CBD interacts with CREB bZIP domain, forming a 2:2 complex on CRE-containing DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by appropriate citations to structural studies. This provides important structural context for understanding the CRTC-CREB interaction and the rationale for the dnCRTC design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "This study provides direct proof for a critical role of CRTC-CREB activation in maintaining malignant phenotypes of LKB1-inactive lung cancers and reveals targeting the CRTC-CREB interface as a novel, promising therapeutic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is well-supported by the comprehensive experimental evidence. Claim C106 is partially speculative\u2014while the study demonstrates the importance of CRTC-CREB signaling and shows proof-of-concept with dnCRTC, actual therapeutic development is not demonstrated. The conclusion is reasonable but represents a proposal based on the findings.",
+    "result_type": "MAJOR"
+  }
+]

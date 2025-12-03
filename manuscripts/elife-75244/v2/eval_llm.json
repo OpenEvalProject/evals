@@ -1,0 +1,676 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The study profiled liver DNA methylation in 339 mice (321 females, 18 males) from 45 BXD family members, aged 5.6-33.4 months, maintained on control diet (CD) or high-fat diet (HFD), with tissues collected at ~6-month intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C44-C47 provide consistent and detailed description of the study design and sample composition. The sample sizes, age ranges, diet assignments, and tissue collection protocols are clearly documented and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C62"
+    ],
+    "result": "The study used the HorvathMammalMethylChip40 pan-mammalian microarray platform, which surveys over 37K CpGs conserved across mammals, with ~28K CpGs validated for mouse genome analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C34, C62 describe the microarray platform with consistent technical specifications. The platform is properly cited (Arneson et al., 2022) and the number of CpGs used for analysis is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Three pairs of epigenetic clocks (pan-tissue and liver-specific) were developed: general DNAmAge, developmental (dev.DNAmAge), and interventional (int.DNAmAge) clocks. All clocks showed good age prediction (average r=0.89), though interventional clocks had higher prediction error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54, C56-C59 provide detailed methodology and performance metrics for the epigenetic clocks. The training approach (excluding BXDs), correlation coefficients, and prediction errors are clearly documented in Table 1 and text, with appropriate citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C63",
+      "C64",
+      "C65",
+      "C60",
+      "C61"
+    ],
+    "result": "Methylome-wide entropy increases with chronological age, with age explaining 6% (CD) to 28% (HFD) of entropy variance. All DNAmAge estimates showed significant positive correlations with entropy (r=0.29-0.47, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C60-C61, C63-C65 report consistent findings on entropy-age relationships with specific correlation coefficients and variance explained. The results are supported by citations to prior work (Hannum et al., 2013; Szir\u00e1ki et al., 2018) and presented in Table 1 and Figure 1c.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C116",
+      "C117",
+      "C192"
+    ],
+    "result": "High-fat diet (HFD) was associated with higher epigenetic age acceleration (EAA) for four of six clocks, with the liver interventional clock showing the strongest effect (CD: -0.04 years, HFD: +0.11 years). HFD augmented age-dependent methylation gains at specific CpGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C67-C72, C116-C117, C192 consistently demonstrate HFD effects on EAA and methylation patterns. The results are quantified in Table 2 and visualized in Figures 1a and 2h, showing specific effect sizes and statistical significance. However, the effect becomes inconsistent when adjusting for body weight (C194), suggesting mediation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C196",
+      "C197"
+    ],
+    "result": "Body weight showed strong associations with EAA across multiple time points. Baseline weight (BW0), weight change (deltaBW), and final weight (BWF) all positively correlated with EAA, with effects more pronounced in HFD mice. Even 1 day of HFD exposure showed significant weight-EAA correlations (r=0.45-0.58, p\u22640.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C85, C196-C197 provide comprehensive longitudinal weight data with specific correlation coefficients and p-values. The results are documented in Table 2 and Figures 1e-f, showing consistent positive associations across different weight measures and time points. The early manifestation of weight effects (C197) is supported by the 48-case subset analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Male mice showed significant age acceleration across all clocks, particularly strong for developmental and pan-tissue interventional EAA. This sex effect was independent of higher body weight in males, but no sex difference was observed in methylome entropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 report sex differences with appropriate statistical controls. The analysis used four BXD genotypes with both sexes, and the independence from body weight was verified by adjustment (Supplementary file 4a). However, the small male sample size (n=18) limits generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Multivariable analysis of 278 cases with metabolic data showed entropy strongly predicted EAA (explaining 17% of liver int.EAA variance after covariate adjustment). Cholesterol had modest positive associations with interventional clocks, while fasted glucose showed no significant effect. Body weight emerged as the most prominent EAA predictor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 describe comprehensive multivariable modeling with specific variance explained (R\u00b2) and p-values. The results are visualized in Figure 1h-i and supported by alternative analyses using BW0 instead of BWF. The inference about diet mediation (C98) is reasonable given the pattern of results, though causal language should be tempered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "EAA measures showed weak inverse correlations with strain longevity from a parallel cohort, with only pan-tissue general and liver interventional clocks reaching significance (explaining ~3% of lifespan variance). Correlations weakened when stratified by diet, and methylome-wide entropy was unrelated to longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 appropriately characterize weak associations between EAA and lifespan. The use of parallel cohort data (C234) is acknowledged as a limitation (C233, C235). The modest effect sizes (~3% variance explained) and loss of significance with diet stratification are clearly reported, though the biological interpretation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Epigenome-wide association study (EWAS) of 27,966 CpGs identified 6,553 age-associated CpGs (age-DMCs), 733 weight-DMCs, 321 diet-DMCs, and 236 lifespan-DMCs at Bonferroni p\u22640.05. Age was the most influential variable, with extensive overlap among DMC categories indicating multifactorial regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 report EWAS results with appropriate multiple testing correction (Bonferroni p\u22640.05). The number of significant CpGs for each variable is clearly stated, and the multifactorial nature is demonstrated by Venn diagram overlap (Figure 2e). The inclusion of PC1 as covariate addresses potential batch effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C118"
+    ],
+    "result": "Among age-DMCs, 77% gained methylation (age-gain), which tended to occur in regions with low baseline methylation, while age-loss CpGs were in highly methylated regions. CpGs gaining methylation with age showed lower methylation in longer-lived strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115, C118 describe consistent patterns of age-related methylation changes supported by Figure 2f and 2j. The observations are concordant with prior studies (Sandoval-Sierra et al., 2020; Szir\u00e1ki et al., 2018; Slieker et al., 2016), providing validation. The relationship with lifespan (C118) is visualized in contour density plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Functional enrichment analysis revealed age-gain CpGs were enriched in transcription factors, developmental regulators, and metabolic pathways (HNF1/HNF3B). Weight- and diet-DMCs converged on growth factor signaling (PDGF, EGFR, ErbB) and mTOR pathways. Lifespan-associated CpGs showed enrichment in lipid metabolism and telomere maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 report functional enrichment results with reference to Supplementary file 8. The convergence on common pathways (growth factor signaling, metabolism) across different DMC categories is biologically plausible and consistent with aging biology. However, enrichment p-values and specific gene counts are not provided in the main text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Genomic annotation analysis showed age-gain CpGs were enriched in promoters, 5'UTRs, polycomb-associated heterochromatin (Hc-P), and bivalent promoters (Pr-Bi). Diet- and weight-DMCs were enriched in exons, 3'UTRs, transcription sites, and distal enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 describe chromatin state enrichment patterns using neonatal mouse liver ChromHMM annotations. The results are consistent with prior reports (C125 cites Sandoval-Sierra et al., 2020; Szir\u00e1ki et al., 2018) and visualized in Figure 2\u2014figure supplement 1. The distinct enrichment patterns for different DMC categories suggest functional specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Analysis of methylation variance by chromatin state revealed age effects showed inverse linear relationship with mean methylation (r=-0.63, p=0.009), while diet and weight effects showed U-shaped relationships with significant quadratic terms. Lifespan effects showed no relationship with mean methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 report statistical relationships between chromatin state methylation levels and effect sizes, with specific correlation coefficients and R\u00b2 values. The different patterns (linear for age, U-shaped for diet/weight, no relationship for lifespan) are visualized in Figure 2\u2014figure supplement 1c-e and suggest distinct regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "EAA traits showed moderate heritability (average h\u00b2=0.50) and high strain-level correlations between diets, indicating robust genetic effects. Methylome-wide entropy had lower heritability (~0.30) and no strain-level correlation between diets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 report heritability estimates and strain-level correlations from Table 2. The methodology is cited (Ashbrook et al., 2021) and the contrast between EAA (diet-robust genetic effects) and entropy (diet-specific effects) is clearly demonstrated. However, heritability estimates can be sensitive to the specific BXD strains included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "QTL mapping using GEMMA identified two significant loci: Eaa11 on Chr11 (90-99 Mb, peak ~93 Mb, p=3.5E-06) associated with pan-tissue int.EAA (DD genotype higher), and Eaa19 on Chr19 (35-45 Mb, peak 38-42 Mb, p=9E-07) associated with liver int.EAA (BB genotype higher).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 report QTL mapping results with specific genomic locations, p-values, LOD scores, and genotype effects. The methodology (GEMMA with kinship correction) is appropriate for the BXD family structure and properly cited (Zhou and Stephens, 2014). Results are visualized in Figure 4a-b with genotype-stratified means shown in insets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "QTL mapping for methylome-wide entropy found no genome-wide significant loci, but a modest peak on Chr19 overlapping liver int.EAA QTL, though located more distally (~47.5 Mb, p=0.0005). BB genotype showed higher entropy at this locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 appropriately characterize the entropy QTL results as suggestive rather than significant. The spatial separation from the EAA QTL peak (C146) suggests potentially distinct regulatory elements, though both may influence related processes. The modest p-value (0.0005) does not meet genome-wide significance thresholds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Multitrait analysis combining six EAA measures confirmed Chr11 (Eaa11: 90-99 Mb) and Chr19 (Eaa19: 35-48 Mb, broadened to include entropy peaks) as consensus QTLs, with a potential additional peak on Chr3 (~54 Mb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 describe appropriate multitrait analysis methodology (Fisher's p-value combination, cited to Peirce et al., 2007) to identify consistent QTLs across clock types. The broadening of Eaa19 interval to encompass entropy peaks (C152) is reasonable given the overlapping signals, though this increases the number of candidate genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Marker-specific analyses showed Eaa11 (DA0014408.4) associated with most EAA traits (DD genotype higher, primarily in CD mice, stronger for pan-tissue clocks), while Eaa19 (rs48062674) associated with all EAA traits (BB genotype higher in both diets). Neither marker significantly associated with observed lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C159 report marker-specific associations with appropriate diet adjustment and genotype stratification (Table 3, Figure 4\u2014figure supplement 1b-c). The diet-specific effect at Eaa11 (C155) and lack of lifespan association (C159) are clearly stated. However, the lack of lifespan association may reflect the use of parallel cohort data rather than true biological independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Analysis of longitudinal body weight data showed DD genotype at Eaa11 had slightly higher weight in older CD mice (12-18 months) but no significant association in mixed-effects model (p=0.07). BB genotype at Eaa19 showed higher weight by 6 months and significant influence on weight trajectory (p=7.6E-07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C164 integrate QTL and longitudinal phenotype data using appropriate mixed-effects modeling (Table 3, Figure 5). The contrast between Eaa11 (marginal weight effect) and Eaa19 (significant weight trajectory effect) is clearly demonstrated. The larger sample size for weight data (n=2112 for Eaa11, n=1852 for Eaa19) provides good statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Candidate gene analysis identified 24 genes in Eaa11 (including Stxbp4, Erbb2, Grb7) and 81 in Eaa19 (including cytochrome P450 cluster, Chuk, Pcgf6, Elovl3). Human GWAS annotations highlighted STXBP4, NKX2-3, and CUTC as associated with epigenetic aging, and MYO-CYP26A1 with longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C170 describe systematic candidate gene prioritization using coding variants and cis-eQTLs (Supplementary file 11), followed by syntenic region analysis and GWAS annotation retrieval. The cross-species validation strengthens candidate prioritization, though the large number of candidates (24 in Eaa11, 81 in Eaa19) reflects the challenge of fine-mapping in gene-dense regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C238",
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244"
+    ],
+    "result": "STXBP4 emerged as a high-priority Eaa11 candidate based on replicated human GWAS associations with epigenetic aging and age of menarche. In BXDs, Stxbp4 contains noncoding variants, a missense mutation (rs3668623), and cis-eQTL regulation. The gene functions in insulin signaling and has oncogenic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C238-C244 provide strong cross-species convergence for STXBP4, with multiple human GWAS citations (Gibson, 2019; Lu et al., 2018; McCartney et al., 2021; Kichaev et al., 2019; Perry et al., 2014) and functional characterization (Holman, 1999; Michailidou et al., 2017; Rokudai et al., 2018). The presence of both coding and regulatory variants in BXDs supports potential functional impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C245",
+      "C246",
+      "C247",
+      "C248",
+      "C249",
+      "C250",
+      "C251",
+      "C252"
+    ],
+    "result": "Eaa11 corresponds to human 17q12-21, containing additional oncogenic genes ERBB2/HER2, GRB7, and BRCA1 (though Brca1 is distal in mouse). Erbb2 contains a missense variant (rs29390172), Grb7 has cis-eQTL regulation, and Nr1d1 is another candidate. Co-activation of Erbb2, Grb7, and Nr1d1 has been linked to cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C245-C252 describe the syntenic relationship and additional candidates in Eaa11, with appropriate citations for oncogenic associations (Albertsen et al., 1994; Kauraniemi and Kallioniemi, 2006; Tanaka et al., 1997). The exclusion of Brca1 due to distal location (C247) is reasonable, though it segregates for missense variants. The convergence on oncogenic pathways is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C253",
+      "C254",
+      "C255",
+      "C256",
+      "C257",
+      "C258",
+      "C259",
+      "C260",
+      "C261",
+      "C262",
+      "C263",
+      "C264"
+    ],
+    "result": "Eaa19 showed consistent association with all EAA clocks and body weight gains. The locus contains cytochrome P450 cluster (proximal, EAA peak), and Pcgf6/Elovl3 (distal, entropy peak). Human orthologs NKX2-3 and CUTC associate with epigenetic aging, CYP26A1-MYOF with longevity, and CHUK (mTORC2 regulator) with age at menopause.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C253-C264 describe the complex Eaa19 locus with spatial separation of EAA and entropy peaks. Cross-species validation is strong with multiple human GWAS citations (McCartney et al., 2021; Yashin et al., 2018; de Vries et al., 2019; Richardson et al., 2020; Kichaev et al., 2019; Xu et al., 2013). The convergence on metabolic pathways (cytochrome P450, lipid metabolism, mTOR signaling) is biologically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Transcriptome analysis (n=153 with RNA-seq) identified top 2000 mRNA correlates of EAA. Negative correlates (fewer in number) were enriched in oxidation-reduction and mitochondrial genes. Positive correlates were enriched in mitosis and immune response. Pan-tissue clock showed enrichment in liver-specific pathways (steroid metabolism, cytochrome P450), including Eaa19 candidates (Cyp2c29, Cyp2c37). Results were robust to diet stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C180 describe comprehensive transcriptome-wide correlation analysis with functional enrichment (Supplementary file 12). The asymmetry in positive vs. negative correlates is clearly documented. The enrichment in liver-specific pathways for pan-tissue clock and connection to Eaa19 candidates strengthens the QTL findings. Robustness to diet stratification (C180) validates the associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Proteome analysis (n=164 liver, n=53 adipose) identified APOE as the top protein correlate of EAA in both liver and adipose tissues (higher APOE associated with higher EAA). Liver proteome showed enrichment in oxidation-reduction, steroid metabolism, and phospholipid efflux pathways. Adipose proteome showed consistent metabolic enrichment but cytochrome P450 genes were no longer enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C191 report multi-tissue proteome analysis with convergent findings on APOE (Figure 6b-c, e-f). The tissue-specific differences (cytochrome P450 enrichment in liver but not adipose, C190) are biologically plausible. The connection to human GWAS (C278: APOE as strongest hit for phenoAge/bioAge) provides strong cross-species validation. However, adipose sample size (n=53) is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C232",
+      "C236"
+    ],
+    "result": "Entropy analysis revealed that progression to disorder at age-gain CpGs predicted genotype-dependent life expectancy, with longer-lived BXD strains showing lower entropy at a given age. Entropy of age-gain CpGs was increased by HFD and showed slightly stronger correlation with lifespan than EAA. Entropy of age-loss CpGs was related to body weight (both BW0 and BWF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C214-C218, C232, C236 describe entropy-lifespan relationships with specific correlations and variance explained (Figure 3). The distinction between age-gain (lifespan-associated, HFD-sensitive) and age-loss (weight-associated) entropy is well-supported. However, the correlation with lifespan is modest (6% variance explained, C93) and uses parallel cohort data, limiting causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Two genetic loci modulate epigenetic age acceleration: Chr11 (Eaa11) encompassing Erbb2/Her2 oncogenic region, and Chr19 (Eaa19) containing cytochrome P450 cluster. Both loci harbor genes associated with EAA in humans, including STXBP4, NKX2-3, and CUTC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 summarize the main QTL findings with appropriate characterization of genomic regions and cross-species validation. The convergence of mouse QTL mapping and human GWAS provides strong evidence for conserved genetic architecture of epigenetic aging. However, the gene-dense nature of both loci means causal genes remain to be definitively identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C11",
+      "C268",
+      "C269",
+      "C270",
+      "C271",
+      "C290",
+      "C291"
+    ],
+    "result": "Multi-omic analyses (transcriptome and proteome) revealed correlations with oxidation-reduction, metabolic, and immune response pathways. Metabolic profile and body weight are closely related to epigenetic aging and methylome entropy. Convergent evidence indicates genes involved in metabolism and energy balance contribute to age-dependent methylome restructuring underlying epigenetic clocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C268-C271, C290-C291 synthesize findings across multiple analytical approaches (EWAS, QTL, transcriptome, proteome). The convergence on metabolic pathways is consistent across analyses and supported by prior literature (C271 cites Liu et al., 2020; Kuo et al., 2021; Slieker et al., 2016). However, the causal directionality (C291) remains inferential rather than experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C98"
+    ],
+    "result": "The effect of diet on EAA is mediated by changes in weight and metabolic traits. When final body weight (BWF) was included in regression, the diet effect became inconsistent, suggesting diet acts through physiological changes rather than directly on methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C195, C98 describe mediation analysis results with appropriate statistical modeling. The loss of diet effect when adjusting for BWF (C194) supports mediation, and this is consistent with human obesity studies (C193 cites Horvath et al., 2014; Nevalainen et al., 2017). However, formal mediation analysis with causal inference methods would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "Different clock types capture distinct aspects of biological aging. Interventional clocks (built from fewer CpGs) deviated most from chronological age, associated with BWF and cholesterol, showed highest entropy correlation, and strongest inverse correlation with longevity. Developmental clocks showed stronger association with baseline weight. Pan-tissue general clock captured multiple aging aspects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C210 provide thoughtful interpretation of clock degeneracy and differential performance. The observations are well-supported by data (Tables 1-2, multiple figures) and appropriately cited to prior work on clock characteristics (Thompson et al., 2018; Liu et al., 2020; Zhang et al., 2019). The interpretation that different clocks capture modifiable vs. baseline characteristics (C209) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213",
+      "C219",
+      "C220"
+    ],
+    "result": "Entropy increases with age, representing erosion of organized hypo/hypermethylated landscape toward hemi-methylated state. The rate of noise accumulation varies between individuals, with resilience/susceptibility modulated by diet and genetic factors. This increase in disorder at conserved CpGs could have important functional consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C212, C219-C220 provide appropriate theoretical framework for entropy changes, well-cited to prior work (Hannum et al., 2013; Szir\u00e1ki et al., 2018; Kerepesi et al., 2022; Hayflick, 2007). The inference about individual variation and genetic/dietary modulation (C219-C220) is supported by the heritability and diet association data. However, the functional consequences (C213) remain speculative without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228"
+    ],
+    "result": "Inverse correlation between entropy and fasted glucose was unexpected, as strains with shorter lifespan tend to have higher glucose. This may reflect that higher glucose after overnight fast associates with more ordered methylome, potentially through metabolites (SAM, NAD+, ATP) serving as cofactors for epigenome-shaping enzymes. Overall, higher metabolic state associates with higher entropy, EAA, and potentially lower lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C221-C228 acknowledge an unexpected finding (C221) and provide speculative interpretation (C224 explicitly states speculation). The theoretical framework about metabolites as cofactors (C225-C226, citing Donohoe and Bultman, 2012) is sound, but the specific interpretation of glucose-entropy relationship is not well-supported. The overall conclusion (C228) may be oversimplified given the complex glucose-entropy relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C229",
+      "C230",
+      "C231",
+      "C233",
+      "C234",
+      "C235",
+      "C237"
+    ],
+    "result": "BXD life expectancy is highly genotype-dependent (16-28 months range). EAA showed expected inverse correlation with lifespan but effect was modest, possibly due to use of parallel cohort data rather than same individuals. Nonetheless, genotypes with higher life expectancy have lower entropy and lower methylation at age-gain CpGs, suggesting genetic modulation of methylome properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C229-C231, C233-C235, C237 appropriately acknowledge limitations in lifespan analysis (parallel cohort, C233-C235) while reporting consistent directional effects. The modest effect sizes are clearly stated (C231: ~3% variance explained). The inference about genetic modulation (C237) is reasonable given heritability data and strain-level differences, though direct genetic manipulation would be needed for causal confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C265",
+      "C266",
+      "C267",
+      "C279",
+      "C281",
+      "C282",
+      "C283"
+    ],
+    "result": "Both Eaa11 and Eaa19 exemplify challenges of gene-dense QTL regions. Cytochrome P450 genes in Eaa19 are strong candidates as both positional candidates and expression correlates, though tight clustering and cis-eQTLs may result in co-expression due to linkage disequilibrium. Identifying causal genes requires fine-scaled functional genomic dissection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C265-C267, C279, C281-C283 provide appropriate acknowledgment of limitations in fine-mapping gene-dense regions, with citations to relevant methodological discussions (Gallagher and Chen-Plotkin, 2018; Lappalainen, 2015). The caveat about cytochrome P450 co-expression (C281-C282, citing Mozhui et al., 2008) is important for interpretation. The call for functional validation (C267, C283) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C272",
+      "C273",
+      "C274",
+      "C275",
+      "C276"
+    ],
+    "result": "Tissue-specific enrichment patterns suggest EAA derivatives emphasize pathways relevant to the tissue used for clock training and DNAmAge estimation. Liver clocks highlighted liver-specific metabolism (cytochrome P450), while adipose proteome showed consistent metabolic enrichment but loss of cytochrome P450 prominence. Neural tissue clocks relate more to neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C272-C276 provide thoughtful interpretation of tissue-specific patterns with appropriate citations (C273: Shireby, 2020; Grodstein et al., 2021 for neural clocks). The observation of tissue-specific enrichment (liver: cytochrome P450; adipose: general metabolism) is well-supported by data (C274-C276). This interpretation helps explain why different clock types may capture different aspects of aging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C277",
+      "C278"
+    ],
+    "result": "At the proteome level, several phospholipid efflux genes (APOC1, APOA2, APOC3, APOA1, APOA4, APOE) are positive correlates of EAA. A recent human study identified APOE locus as the strongest GWAS hit for biological age acceleration (phenoAge and bioAge).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C277-C278 report convergent findings on apolipoprotein associations with strong cross-species validation (C278 cites Kuo et al., 2021). The identification of multiple apolipoproteins (C277) and APOE as top correlate in both liver and adipose (C183-C184, C191) provides robust evidence. The human GWAS validation (C278) strengthens the biological relevance of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C284",
+      "C285",
+      "C286",
+      "C287"
+    ],
+    "result": "A potential consensus QTL on Chr3 (~54 Mb) was detected, near genes associated with human epigenetic aging (IFT80, TRIM59, KPNA4). However, the QTL is dispersed across a large interval and peak markers do not exactly overlap human GWAS hits, suggesting this locus may be important but requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C284-C287 appropriately characterize the Chr3 QTL as suggestive rather than definitive. The human GWAS associations (C285, citing Gibson, 2019; McCartney et al., 2021) provide some support, but the lack of precise overlap (C286) and dispersed signal weaken confidence. The statement that it \"presents a potentially important region\" (C287) is appropriately cautious.",
+    "result_type": "MINOR"
+  }
+]

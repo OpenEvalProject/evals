@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C163",
+      "C174"
+    ],
+    "result": "The study analyzed retrospective CPET data from 4,424 male endurance athletes (3,330 runners, 1,094 cyclists) collected 2013-2021, with rigorous inclusion/exclusion criteria requiring maximal effort (\u22656 of 7 criteria including RER\u22651.10, VO2 plateau, etc.). The cohort was randomly divided into derivation (60%), testing (20%), and validation (20%) groups. Women were excluded due to insufficient sample size for adequate statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C53, C163, C174 provide comprehensive methodological details about participant selection, ethical approval, and data partitioning. The inclusion/exclusion criteria are clearly defined with specific thresholds. Figure 1 (C163) visually documents the selection process showing 6,439 initial participants reduced to 4,424 after applying criteria. The limitation regarding female exclusion (C51, C148) is transparently acknowledged with appropriate justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CPET protocols were standardized using calibrated equipment (Cosmed Quark CPET, three units 2013-2021) in controlled laboratory conditions (20-22\u00b0C, 40-60% humidity). Running tests used graded treadmill protocol (7-12 km/h start, +1 km/h every 2 min, 1% incline); cycling tests used graded ergometer protocol (60-150W start, +20-30W every 2 min). AT and RCP were determined using established ventilatory criteria, with power/speed values calculated as functions of time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C75 provide detailed, reproducible methodology for CPET protocols. Equipment specifications, calibration procedures, environmental controls, and physiological threshold determination criteria are clearly documented with appropriate citations (Beaver et al., 1986; Kuipers et al., 1985). The use of three different CPET units over 8 years (C59) introduces potential instrument variability, but regular calibration (C58, C62) mitigates this concern. The graded protocol with time-adjusted calculations (C70) is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Runners (n=3,330) were 36.2\u00b18.5 years, BMI 23.9\u00b12.4 kg/m\u00b2, VO2max 53.8\u00b16.7 mL/min/kg. Cyclists (n=1,094) were 37.3\u00b19.1 years, BMI 24.3\u00b12.6 kg/m\u00b2, VO2max 51.7\u00b18.0 mL/min/kg. VO2max values were consistent across derivation, testing, and validation cohorts within each sport. Significant differences (p<0.05) existed between runners and cyclists in BMI (all cohorts), age (derivation cohort), and all baseline parameters (testing cohort).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10, C80-C85, C171-C173 report descriptive statistics with 95% confidence intervals for anthropometric and performance variables. The consistency of VO2max across derivation/testing/validation cohorts (C98) supports successful randomization. Significant inter-sport differences (C171-C173) are expected given different biomechanical demands. Sample sizes are large (n=666-1,998 per group), providing adequate statistical power. Data presentation is clear and complete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "In runners, rVO2AT represented 71.6\u00b15.1% of rVO2max and rVO2RCP represented 87.8\u00b13.2% of rVO2max, consistent across all cohorts. In cyclists, rVO2AT represented 63.7\u00b15.2% of rVO2max and rVO2RCP represented 85.0\u00b14.2% of rVO2max. No significant differences existed between derivation/testing/validation cohorts within sports (p>0.05), but all threshold-to-maximum percentages differed significantly between runners and cyclists (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C99 report threshold-to-maximum ratios with appropriate statistical comparisons. The consistency across cohorts (C98) validates the randomization procedure. Sport-specific differences (C99) are physiologically plausible given different muscle recruitment patterns and metabolic demands. The data demonstrate that AT and RCP occur at predictable percentages of VO2max, supporting their use as predictors. Statistical testing is appropriate and clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C175"
+    ],
+    "result": "Variable selection used three-step random forest procedures (R package VSURF): (1) eliminating irrelevant variables, (2) selecting all response-related variables for interpretation, (3) eliminating redundancy for prediction. This machine learning approach identified the most significant predictors for inclusion in regression models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79, C175 describe a rigorous, established variable selection methodology with appropriate citations (Genuer et al., 2016, 2017). The three-step approach balances interpretability and prediction accuracy. However, the manuscript does not report which specific variables were selected at each step or provide variable importance rankings, limiting reproducibility. The random forest approach is appropriate for high-dimensional data but introduces stochasticity\u2014no mention of random seed setting for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C118",
+      "C119",
+      "C169"
+    ],
+    "result": "Prediction models achieved R\u00b2=0.775-0.913 for submaximal exercise equations (AT, RCP, AT+RCP) and R\u00b2=0.35-0.43 for somatic-only equations. For cyclists: RCP model performed best (R\u00b2=0.913, RMSE=2.03, MAE=1.64 mL/min/kg). For runners: AT and AT+RCP models performed best (R\u00b2=0.899, RMSE=2.0, MAE=1.58 mL/min/kg). VO2 at AT/RCP were most important exercise predictors; body mass and body fat were most important somatic predictors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16, C100-C106, C118-C119, C169 report model performance metrics consistently across derivation and validation cohorts. The high R\u00b2 values (0.775-0.913) for submaximal models with low error (RMSE 2.0-3.6, MAE 1.58-2.74 mL/min/kg) demonstrate strong predictive accuracy. The poor performance of somatic-only models (R\u00b2=0.35-0.43) is expected given VO2max's dependence on cardiorespiratory function. Figure 2 (C169) visually confirms the reported statistics. Model performance is similar between derivation and validation, indicating good generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C107",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C161",
+      "C170"
+    ],
+    "result": "Internal validation demonstrated high accuracy and replicability: models performing best/worst in derivation also performed best/worst in validation. RMSE ranged 1.94-6.11 mL/min/kg and MAE ranged 1.46-4.74 mL/min/kg, significantly lower than previously published models (7-9 mL/min/kg). Bland-Altman plots showed good agreement between observed and predicted VO2max with minimal systematic bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C107, C140-C144, C161, C170 demonstrate successful internal validation. The consistency between derivation and validation performance (C107) indicates models are not overfitted. Comparison to prior literature (C142: Petek et al., 2022; Malek et al., 2004) provides context showing substantial improvement. Figure 3 Bland-Altman plots (C170) visually confirm minimal bias and acceptable limits of agreement. However, this is INTERNAL validation only\u2014external validation on independent cohorts is needed to confirm generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C127",
+      "C128",
+      "C155",
+      "C157"
+    ],
+    "result": "The formulae allow precise VO2max estimation from submaximal exercise performance, with higher accuracy when using submaximal predictors compared to somatic variables alone. Results indicate VO2max can be accurately predicted without maximal effort parameters, confirming submaximal CPET as a valuable fitness assessment tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C127-C128, C155, C157 are supported by the high R\u00b2 values (0.775-0.913) and low prediction errors for submaximal models. The contrast with poor somatic-only model performance (R\u00b2=0.35-0.43) demonstrates the importance of exercise variables. However, the claim of 'precise' estimation (C18, C155) may be overstated\u2014MAE of 1.58-2.74 mL/min/kg represents ~3-5% error, which is good but not 'precise' in absolute terms. The practical utility depends on the application context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C122",
+      "C137",
+      "C138",
+      "C139",
+      "C159"
+    ],
+    "result": "The main factors contributing to VO2max were submaximal variables VO2AT and VO2RCP, plus running speed (runners) or pedaling power (cyclists). Body fat and fat-free mass had significant impacts on most equations. Increased body fat percentage was associated with decreased VO2, particularly important in the somatic equation, consistent with the negative impact of adipose tissue on endurance performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122, C137-C139, C159 identify key predictors with appropriate physiological rationale and citations (Billat & Koralsztein, 1996; Shete et al., 2014; Schwartz et al., 1991). The importance of VO2AT/RCP is expected given their strong correlation with VO2max. Body composition effects are well-established. However, the manuscript does not provide variable importance metrics or standardized coefficients to quantify relative contributions, limiting interpretation of 'most important' claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C150",
+      "C151",
+      "C162"
+    ],
+    "result": "The models are applicable for sport and clinical settings as valuable supplementary methods for fitness practitioners to adjust individualized training recommendations, establish competition pacing strategies, and optimize training regimens targeting key VO2max contributors (VO2AT, VO2RCP, body fat).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19-C20, C150-C151, C162 make broad applicability claims without supporting evidence. The models were derived from male endurance athletes only (C51, C148-C149), limiting generalizability to other populations (women, non-athletes, clinical patients). No data demonstrate actual clinical utility, training optimization, or performance improvement. These are speculative applications requiring prospective validation studies. The 'clinical settling' claim (C19) is particularly unsupported given the healthy athletic population studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C156"
+    ],
+    "result": "The study's main advantages are: (1) unified CPET protocol on a large cohort (6,439 athletes) with varied fitness levels, enabling comprehensive predictor evaluation and enhancing data quality/transferability; (2) equations derived for commonly used treadmill and cycle ergometer modalities. This addresses limitations of prior studies using narrow, specialized athletic cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111, C156 accurately identify study strengths. The large sample size (n=6,439 initially, n=4,424 final) with standardized protocols is a major advantage over prior work. The citation to Paap & Takken (2014) appropriately contextualizes the limitation of narrow cohorts in existing literature. However, the cohort is still restricted to male endurance athletes, limiting 'transferability' claims. The 'varied fitness levels' assertion is supported by the wide VO2max range (SD ~7-8 mL/min/kg) but not quantified in terms of performance categories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C120"
+    ],
+    "result": "The derived models are more accurate than widely described methods in literature. Prior indirect VO2max assessment methods (e.g., Astrand-Ryhming: r=0.63-0.85, SEE>0.5 L/min; standard error 4.2-7.7%) had limited utility for tracking training-induced changes. Wearables provide population-level accuracy but need improvement for individual predictions. The current models (R\u00b2=0.775-0.913) substantially improve upon these benchmarks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117, C120 provide appropriate literature context with citations (Klusiewicz et al., 2016; Grant et al., 1995; Legge & Banister, 1986; Molina-Garcia et al., 2022; Paap & Takken, 2014; Wiecha et al., 2023). The comparison demonstrates clear improvement over historical methods. However, the comparison is somewhat unfair\u2014the Astrand-Ryhming test uses only HR and workload, while the current models use multiple CPET variables. Direct comparison to other multi-variable CPET prediction models would be more appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "VO2 is a universal, interchangeable measurement of endurance that combines respiratory, circulatory, and muscular system function. Results suggest VO2 indicates both endurance and critical vital signs: higher VO2max correlates with better fitness and lower all-cause mortality. Somatic variables alone (body fat, weight, age) are insufficient for optimal VO2max prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121, C123-C126 are well-supported by appropriate citations (Bassett & Howley, 2000; Albouaini et al., 2007; Blair et al., 1989; Kaminsky et al., 2015). The poor performance of somatic-only models (R\u00b2=0.35-0.43) empirically demonstrates insufficiency of anthropometric variables alone. However, these are primarily literature-based claims rather than novel findings from the current study. The study confirms but does not establish these relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C35",
+      "C129",
+      "C130",
+      "C133",
+      "C134"
+    ],
+    "result": "Maximal effort testing is not always recommended or possible due to: (1) athlete factors (competition proximity, injury history, training disruption, limited frequency 2-3\u00d7/year); (2) patient factors (health restraints, cardiac risk, cardiovascular conditions). Submaximal testing is more applicable for physicians and fitness professionals, as maximal exertion increases adverse outcome risk in individuals with moderate-to-high cardiovascular disease possibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29, C35, C129-C130, C133-C134 provide appropriate rationale for submaximal testing with relevant citations (Guazzi et al., 2012, 2016; Sassi et al., 2006; Coutts et al., 2007; Lamberts et al., 2011; Noonan & Dean, 2000). These are established concepts in exercise physiology and sports medicine. However, the current study population consisted entirely of healthy athletes who completed maximal tests\u2014the models were not actually validated in populations unable to perform maximal testing, limiting direct applicability to the clinical scenarios described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C135",
+      "C136"
+    ],
+    "result": "Pseudo-random binary sequencing enables cardiorespiratory kinetics assessment within selected workload ranges and appears as a feasible approach for submaximal CPET. Previous studies show submaximal variables are significant performance predictors. Ensuring high repeatability through submaximal prediction methods is crucial for monitoring endurance changes in sports and medical diagnostics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132, C135-C136 discuss alternative submaximal testing approaches with appropriate citations (Hoffmann et al., 2022; Koschate et al., 2016; Snowden et al., 2010; Albouaini et al., 2007; Mann et al., 2013; Noonan & Dean, 2000). However, these claims are tangential to the main study\u2014pseudo-random binary sequencing was not used or compared in this research. The discussion of repeatability (C136) is important but not directly assessed in the study (no test-retest reliability data provided).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Study limitations include: (1) 2-minute step protocol may differ from longer steps but should not significantly impact results; longer intervals may improve AT/RCP accuracy but have negligible VO2max impact; (2) restriction to males due to insufficient female sample size\u2014equations should be applied with caution in women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 appropriately acknowledge limitations. The protocol limitation (C145-C147) is minor and appropriately contextualized with citation (Muscat et al., 2015). The sex limitation (C148-C149) is a major constraint transparently reported and justified (C51). However, the study does not quantify how much caution is needed for female application\u2014no sensitivity analysis or female subsample validation is provided. The limitation discussion could be more comprehensive (e.g., no mention of race/ethnicity, training status variability, or external validation needs).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "Various application areas for prediction models have been postulated in literature: submaximal/maximal efforts, simulating starting distance, at rest. Clinical implications include cardiology diagnostics for heart disease in athletes, where VO2max reduction may occur despite maintained parameters like RER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C153 discuss potential applications with citations (Zhou et al., 1997; Guazzi et al., 2016; L\u00f6llgen & Leyk, 2018) but provide no evidence these applications are valid for the current models. The cardiac disease detection claim (C153) is particularly speculative\u2014the study excluded participants with medical conditions (C52) and provides no data on diagnostic accuracy for pathology. These are hypothetical applications requiring dedicated validation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background context: VO2max is an important fitness measure and critical vital sign used in sport performance, clinical diagnostics, and health assessment. GXT/CPET is the standard assessment method with broad applications. However, there is a lack of large studies on athletic populations for VO2max prediction using submaximal variables. Recent technological developments and machine learning approaches offer opportunities for more precise, accessible prediction methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C21-C25, C30-C44 provide comprehensive literature review establishing study rationale. All claims are appropriately supported by citations to relevant literature. The gap identification (C3, C41) justifies the study. The discussion of ML/AI methods (C42-C44) contextualizes the analytical approach. This is standard background material that accurately represents the field. However, some claims are somewhat redundant (e.g., multiple claims about VO2max importance).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C176"
+    ],
+    "result": "The study applied TRIPOD (Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis) guidelines for prediction model development and validation. Models were derived and internally validated using multiple linear regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C176 indicate adherence to reporting standards (Collins et al., 2015) and use of appropriate statistical methods (MLR). TRIPOD compliance enhances methodological transparency and reproducibility. However, the manuscript does not provide the actual TRIPOD checklist (referenced as Supplementary Material 1) for verification. MLR is appropriate for continuous outcome prediction, though the manuscript does not report checking MLR assumptions (linearity, homoscedasticity, normality of residuals, multicollinearity) beyond the mentioned Ramsey RESET, Chow, and Durbin-Watson tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C154",
+      "C160"
+    ],
+    "result": "The study provided new prediction models for VO2max, including a novel model based only on somatic parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154, C160 accurately summarize the study's main contribution. The models are 'new' in the sense of being derived from this specific large cohort with modern ML variable selection. The somatic-only model (C160) is novel but has limited practical utility given poor performance (R\u00b2=0.35-0.43). The claim of novelty should be tempered\u2014the general approach of predicting VO2max from submaximal CPET variables is well-established; the contribution is refinement and validation in a large athletic cohort.",
+    "result_type": "MAJOR"
+  }
+]

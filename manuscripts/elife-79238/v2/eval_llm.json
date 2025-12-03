@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Previous PCA-LMM comparisons in the literature have yielded mixed results with several methodological limitations. These limitations include inconsistent use of real versus simulated data, lack of power evaluations in many studies, and failure to systematically vary the number of PCs. The literature review (Table 1) shows that while no studies find PCA decisively outperforming LMM, many report comparable performance or favor LMM, with patterns differing between quantitative and case-control traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C24-C32 are well-supported by the systematic literature review presented in Table 1, which documents 17 previous studies and their methodological characteristics. The authors provide specific counts (e.g., 6/17 studies lacking power evaluation, only 4 varying PC numbers) that can be verified from the table. The characterization of mixed results and methodological gaps is substantiated by the tabulated data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C60",
+      "C142",
+      "C146"
+    ],
+    "result": "LMM without PCs consistently outperforms PCA across multiple datasets and simulation scenarios, with the largest performance advantages observed in family simulations and real human datasets with FES traits. The authors recommend adopting LMM over PCA for genetic association studies in general, while acknowledging PCA's continued utility for other population genetics applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C60, C142, and C146 represent the main conclusions of the study and are strongly supported by comprehensive empirical evidence across Tables 3, 5, 6 and Figures 3-8. Statistical significance is established using Wilcoxon tests with Bonferroni correction. The recommendation is appropriately qualified, acknowledging PCA's value in other contexts (C145) while advocating for limiting its use specifically in association testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "Poor PCA performance in real human datasets is primarily driven by numerous distant relatives rather than close relatives. Analysis of local kinship distributions (Figure 6) reveals that while all real datasets contain some highly related pairs above the 4th degree threshold, these are vastly outnumbered by more distantly related pairs. Removing 4th degree relatives (5-10% of samples) had negligible effect on PCA performance (Figure 7, Table 4), confirming that distant relatedness is the key factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C88-C91, C94-C95, C122, C124-C125 are well-supported by the local kinship analysis (Figure 6) and the 4th degree relative removal experiment (Figure 7, Table 4). The KING-robust estimator provides quantitative evidence of relatedness structure, and the before/after comparison demonstrates that removing close relatives does not substantially improve PCA performance. This provides strong evidence for the distant relative hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C128"
+    ],
+    "result": "PCA performs well in low-dimensional population structures (admixture simulations without families, subpopulation tree simulations) but poorly when family structure is present. The subpopulation tree simulations, which match real data in subpopulation structure but exclude family relatedness by design, do not recapitulate the large LMM advantage observed in real data. This demonstrates that high-dimensional family relatedness, rather than complex subpopulation structure alone, is the key challenge for PCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C115-C119, and C128 are supported by comparing performance across simulation types (Figures 3-5, Tables 3, 5). The tree simulations provide a controlled comparison that isolates the effect of family structure. However, claim C118 involves speculation about why tree simulations are low-dimensional ('few long branches'), which is not directly tested. The overall conclusion about family relatedness being the key factor is well-supported by the pattern of results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C120"
+    ],
+    "result": "Kinship matrix rank estimates using the Tracy-Widom test do not fully predict which datasets PCA performs well on. While the family simulation has the greatest estimated rank and real datasets have higher estimates than their tree simulation counterparts, the rank estimates do not clearly separate real datasets (poor PCA performance) from tree simulations (good PCA performance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83, C86-C87, and C120 are supported by the eigenvalue analysis in Figure 6\u2014figure supplement 1. The authors acknowledge that rank estimates are 'slightly underestimated' (C80) and show that while some patterns exist (C81-C82), the separation needed to predict PCA performance is absent (C83, C87). This negative result is important for understanding why simple dimensionality measures are insufficient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C109",
+      "C111"
+    ],
+    "result": "In the presence of environment effects correlated with genetics, LMM with PCs shows only marginal improvement over LMM without PCs. Direct modeling using true geographic/ethnic group labels substantially outperforms both PCA and LMM with PCs (Figure 8, Table 6). However, LMM with labels often shows poorer calibration, possibly due to modeling numerous labels as fixed rather than random effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C101-C102, C104-C106, C109, and C111 are supported by the environment simulation results (Figure 8, Table 6). The 'LMM lab.' approach with true labels shows substantially higher AUC_PR values, though with calibration issues. The marginal benefit of adding PCs to LMM is documented with statistical tests. However, the explanation for poor calibration (C104) is speculative ('may be since'), and the recommendation to use labels 'whenever possible' (C106) requires additional validation beyond these simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "LMM and PCA are closely related models because PCs are eigenvectors of the same kinship matrix used to parameterize the LMM random effects, making their combined use redundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by established mathematical relationships between PCA and LMM (citations to Astle and Balding 2009; Janss et al. 2012; others) and the authors' own derivation in the Materials and Methods showing how PCA can be derived from LMM under low-rank assumptions. This theoretical understanding is consistent with the empirical finding that adding PCs to LMM provides minimal benefit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "PCA is robust to using large numbers of PCs (far beyond optimal) in most scenarios, with the exception being small sample sizes where only small numbers of PCs perform well. LMM with large numbers of PCs shows conservative p-values, which may be a limitation of the score test used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 are supported by the performance curves across varying r (Figures 3-5) showing relatively flat performance for PCA at high r values, except in the small simulation (Figure 3B). The observation about LMM conservativeness (C131) is supported by negative SRMSD_p values at high r. The explanation as a score test limitation is reasonable but not definitively tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The study employs three main simulation frameworks: admixture simulations (large n=1000, small n=100), a family simulation with 20-generation pedigrees and assortative mating, and subpopulation tree simulations fit to real data. Traits are simulated using two models: FES (fixed effect sizes inverse to allele frequency, matching disease traits) and RC (random coefficients independent of frequency, representing neutral traits).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 describe the simulation design and are supported by the detailed Methods section and Table 2. The simulation parameters are clearly specified, and the rationale for each design choice is provided with appropriate citations (e.g., C37-C38 citing evidence for inverse frequency-effect size relationships). These are methodological descriptions that can be verified from the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C65",
+      "C66",
+      "C69"
+    ],
+    "result": "The three real human datasets have complementary characteristics: Human Origins has the greatest diversity and number of subpopulations; HGDP has the fewest individuals but more loci and low-frequency variants than Human Origins; 1000 Genomes has the fewest subpopulations but largest number of individuals per subpopulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C65-C66, and C69 are straightforward descriptions of dataset characteristics that are documented in Table 2 and can be verified from the original data sources. These factual descriptions of the datasets are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Previous studies found PCA better calibrated than LMM for unusually differentiated markers, but this result is not replicated in the current evaluations on real human data. The authors suggest that the strong LMM advantage for family relatedness likely outweighs any potential PCA benefit for differentiated markers in real data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 is supported by citations to previous work. However, C113 is problematic because the current study did not specifically test for unusually differentiated markers\u2014the real datasets were filtered for LD and MAF, and no specific analysis of highly differentiated loci is presented. Claim C114 is speculation ('probably outweighs') rather than a tested hypothesis. The authors cannot definitively claim non-replication without specifically testing the scenario described in prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C136",
+      "C143"
+    ],
+    "result": "Distant relatives are expected to be numerous in any large human dataset, and the study's conclusions are not expected to change with larger sample sizes because cryptic family relatedness will continue to be abundant or increase in abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C136, and C143 are supported by citations to population genetics literature (Henn et al. 2012; Shchur and Nielsen 2018; Loh et al. 2018) documenting the prevalence of distant relatives. However, C136 and C143 involve extrapolation beyond the tested sample sizes (n\u22643000), which is acknowledged as speculation. The reasoning is sound but represents a prediction rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "The study's simulated genotypes lack LD and real datasets were filtered to remove LD, representing an ideal situation where LD effects have been successfully adjusted. In this setting, LMM outperforms PCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 accurately describe the study design (LD filtering documented in Methods) and appropriately qualify the conclusions. The authors acknowledge this as a limitation and correctly note that their results apply to the scenario where LD has been addressed. This is an important caveat for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C144"
+    ],
+    "result": "Several important topics are identified for future work: scalable LMM implementations for biobank-scale data exist but were not tested here; BOLT-LMM shows runtime rather than power benefits from including PCs; rare variants may have more pronounced structure than common variants; case-control traits show different patterns than quantitative traits; and polygenic models may benefit from using LMM instead of PCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 and C144 are appropriately cited to relevant literature and clearly identified as topics for future work or limitations of the current study. These represent honest acknowledgment of scope limitations and reasonable suggestions for follow-up research. C144 is explicitly framed as speculation ('may enjoy gains') based on the current findings.",
+    "result_type": "MINOR"
+  }
+]

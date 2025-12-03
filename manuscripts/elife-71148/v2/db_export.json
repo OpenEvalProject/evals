@@ -1,0 +1,1900 @@
+{
+  "submission": {
+    "id": "75235a97-39ea-4804-872d-d7c01a7b3983",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:52:56.807710Z",
+    "updated_at": "2025-12-03T08:52:56.807710Z"
+  },
+  "content": [
+    {
+      "id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "submission_id": "75235a97-39ea-4804-872d-d7c01a7b3983",
+      "content_type": "manuscript",
+      "content_text": "# Live imaging reveals the cellular events downstream of SARM1 activation\n\n## Authors\n\n- Kwang Woo Ko<sup>1</sup>\n- Laura Devault<sup>1</sup>\n- Yo Sasaki<sup>2</sup> ([ORCID: 0000-0003-0024-0031](https://orcid.org/0000-0003-0024-0031))\n- Jeffrey Milbrandt<sup>3</sup> \u2020\n- Aaron DiAntonio<sup>4</sup> ([ORCID: 0000-0002-7262-0968](https://orcid.org/0000-0002-7262-0968)) \u2020\n\n### Affiliations\n\n1. Washington University School of Medicine St Louis United States\n2. Genetics, Washington University School of Medicine St Louis United States\n3. Genetics, Hope Center for Neurological Disorders, Washington University School of Medicine St Louis United States\n4. Developmental Biology, Needleman Center for Neurometabolism and Axonal Therapeutics, Washington University School of Medicine St Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSARM1 is an inducible NAD+ hydrolase that triggers axon loss and neuronal cell death in the injured and diseased nervous system. While SARM1 activation and enzyme function are well defined, the cellular events downstream of SARM1 activity but prior to axonal demise are much less well understood. Defects in calcium, mitochondria, ATP, and membrane homeostasis occur in injured axons, but the relationships among these events have been difficult to disentangle because prior studies analyzed large collections of axons in which cellular events occur asynchronously. Here, we used live imaging of mouse sensory neurons with single axon resolution to investigate the cellular events downstream of SARM1 activity. Our studies support a model in which SARM1 NADase activity leads to an ordered sequence of events from loss of cellular ATP, to defects in mitochondrial movement and depolarization, followed by calcium influx, externalization of phosphatidylserine, and loss of membrane permeability prior to catastrophic axonal self-destruction.\n\n## Introduction\n\nSARM1 is the central executioner of pathological axon degeneration, an early feature of many neurodegenerative diseases (Figley and DiAntonio, 2020; Krauss et al., 2020). SARM1 is the founding member of the TIR-domain family of NAD+ hydrolases (Essuman et al., 2018; Essuman et al., 2017), and a metabolic sensor activated by disrupted NAD+ homeostasis (Figley et al., 2021; Gilley et al., 2015; Sasaki et al., 2016). Activation of the SARM1 NADase depletes cellular NAD+ and initiates a metabolic crisis that ultimately leads to axon degeneration and/or neuronal cell death (Essuman et al., 2017; Gerdts et al., 2015). SARM1 is a compelling target for therapeutic intervention, as loss of SARM1 is profoundly protective in animal models of multiple neurodegenerative diseases including nerve injury, peripheral neuropathies, traumatic brain injury, glaucoma, retinitis pigmentosa, and Leber congenital amaurosis (Geisler et al., 2016; Gerdts et al., 2013; Henninger et al., 2016; Ko et al., 2020; Osterloh et al., 2012; Ozaki et al., 2020; Sasaki et al., 2020b; Turkiew et al., 2017). Moreover, as an enzyme, SARM1 is a druggable target, and both small molecule inhibitors and gene therapeutics effectively block axon degeneration (Bosanac et al., 2021; Geisler et al., 2019; Hughes et al., 2021). Recently, there has been tremendous progress in dissecting the structure of SARM1 (Bratkowski et al., 2020; Jiang et al., 2020; Sporny et al., 2020), the mechanism by which SARM1 is autoinhibited in healthy neurons (Shen et al., 2021) and activated in diseased neurons (Figley et al., 2021), and its role as an NAD+ hydrolase (Essuman et al., 2017; Horsefield et al., 2019; Zhao et al., 2019). However, the events downstream of NAD+ loss but prior to catastrophic axon fragmentation are much less well understood.\n\nSARM1 and its NADase activity are essential for injury-induced axon degeneration, and the SARM1 enzyme is activated within 1\u20132 hr after injury in cultured DRG neurons (Sasaki et al., 2020a). Axonal fragmentation occurs much later in this system, with axons fragmenting approximately 4\u20136 hr after injury. Numerous molecular and cellular events occur in the time between SARM1 activation and axon loss, including calcium influx, mitochondrial stalling and depolarization, loss of ATP, and disrupted membrane integrity. We reasoned that temporally ordering these events would give insights into causal relationships among these degenerative mechanisms. Unfortunately, studies in bulk culture are not appropriate for assessing the temporal sequence because axon loss is asynchronous, and so this effort requires live imaging. Prior live imaging studies have demonstrated that hours after injury there is a large influx of calcium that precedes axonal fragmentation, and blocking this late calcium entry with EGTA inhibits axon fragmentation (Adalbert et al., 2012; Loreto et al., 2015; Vargas et al., 2015; Wang et al., 2000; Yong et al., 2020). However, no comprehensive live imaging analysis of the cellular and molecular events underlying axon degeneration has been reported.\n\nHere, we explore the cellular events that occur in injured axons following SARM1 activation. First, we investigate whether changes to mitochondria and calcium require SARM1 NADase activity, as prior studies used a complete knockout and so left open the possibility of NADase-independent functions. Indeed, such an NADase-independent function was recently described in Drosophila for organelle stalling after injury (Hsu et al., 2021). Next, we revisit the role of both intracellular and extracellular calcium in axon degeneration. We confirm that blocking extracellular calcium influx blocks axon fragmentation (Vargas et al., 2015; Villegas et al., 2014; Wang et al., 2000; Witte et al., 2019); however, these apparently morphologically intact axons are not metabolically active, as mitochondria are immobile and depolarized. We then develop a live imaging approach in cultured DRG neurons with single axon resolution and assess dynamic changes to calcium, mitochondria, ATP, and the plasma membrane. Our findings describe an ordered series of events in which (1) ATP is lost, (2) mitochondria stop moving and subsequently depolarize, (3) extracellular calcium enters the axons, (4) phosphatidylserine is exposed on the outer leaflet of the plasma membrane, and (5) the membrane loses integrity. This work identifies a stereotyped cascade of dysfunction following SARM1 activation, and highlights ATP loss as the likely key intermediate between NAD+ cleavage and widespread dysfunction in injured axons.\n\n## Results\n\n### SARM1 NADase activity promotes mitochondrial stalling and calcium influx in injured axons\n\nSARM1 is an injury-activated NAD+ hydrolase, and this enzymatic activity is required for injury-induced axon degeneration (Essuman et al., 2017). However, it is unclear whether all SARM1-dependent processes require this enzymatic function. Recently, Hsu et al. working in Drosophila demonstrated that injury-dependent organelle stalling can be SARM1-dependent but NADase-independent (Hsu et al., 2021). Previously, Loreto et al presented the even more surprising finding that injury-dependent mitochondrial stalling in superior cervical ganglion axons did not depend on SARM1, although loss of mitochondrial potential did depend on SARM1 (Loreto et al., 2015). Here, we test the applicability of these findings to mammalian sensory neurons, assessing mitochondrial movement in cultured mouse dorsal root ganglion (DRG) neurons and assaying the requirement for SARM1 NADase activity. This is of particular interest because SARM1 is a mitochondrial associated protein and so alternate mechanisms of action are plausible. We cultured DRG neurons from SARM1 knockout (KO) embryos and used lentivirus to express either GFP, SARM1, or catalytically inactive SARM1(E642A) together with MitoDsRed (MitoDR) in order to track mitochondria. After 7 days, axons were severed and mitochondrial movement was imaged 0, 2, and 4 hr after injury. In SARM1 KO neurons expressing GFP, mitochondrial movement was unchanged 4 hr after injury. In contrast, the number of motile mitochondria declines precipitously between 2 and 4 hr after injury in SARM1 KO axons re-expressing SARM1. Catalytically inactive SARM1(E642A) is expressed at similar levels to wild-type (WT) SARM1 (Figure 1\u2014figure supplement 1), but did not result in loss of mobile mitochondria after injury (Figure 1A and B). Hence, the loss of mitochondrial mobility in injured axons is not only SARM1-dependent, but also SARM1 NADase-dependent. Injury-induced loss of mitochondrial potential is also SARM1-dependent (Geisler et al., 2019), and so here we investigated whether or not this effect also requires a functional SARM1 NADase. The mitochondrial potential is the driving force for ATP production and can be measured with the fluorescent dye TMRM (tetramethylrhodamine methyl ester). As with mitochondrial dynamics, expression of WT SARM1, but not SARM1(E642A), leads to a dramatic loss of mitochondrial membrane potential after injury (Figure 2C and D). The finding that SARM1 NADase activity is required for loss of mitochondrial membrane potential suggests that the SARM1-induced decline in cytosolic NAD+ levels either directly or indirectly influences bioenergetics inside the mitochondria.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative kymograph of injured SARM1 KO axons expressing either GFP, SARM1, or SARM1.E642A (E642A). For imaging mitochondria movement, MitoDsRed lentivirus was transduced in all experimental conditions. Live cell imaging was performed at different times (0, 2, or 4 hr) after axon injury. Scale bar = 20 \u00b5m (B) Quantification of mobile mitochondria for the neurons in (A). Data represent the mean \u00b1 SEM; n = 5 ~ 13 axons for each condition; one-way ANOVA with post hoc Tukey test, F(11,99) = 12.28, p < 0.0001; NS, not significant; *, p < 0.05; **, p < 0.01 and ***, p < 0.001 (C) Representative images of mitochondrial potential imaged with 50 nM TMRM fluorescent dye in SARM1 KO axons expressing either of GFP, SARM1, or SARM1.E642A. Live-cell imaging was performed at the indicated times (0, 4, or 24 hr) after axon injury. Scale bar = 30 \u00b5m (D) Quantification of TMRM intensity from the experiment in (C). Injured SARM1 KO axons expressing the enzymatically disabled SARM1 mutant (E642A) maintained TMRM signal without significant loss. Data represent the mean \u00b1 SEM; n = 5 ~ 6 embryos for each condition; one-way ANOVA with post hoc Tukey test, F(4,23) = 53.11, p < 0.0001; NS, not significant; *, p < 0.05; **, p < 0.01 and ***, p < 0.001 (E) Representative images of calcium influx imaged with 1 \u00b5M Fluo-4 fluorescent dye in SARM1 KO axons expressing either of GFP, SARM1, or SARM1.E642A. Live-cell imaging was performed at different times (0, or 4 hr) after axon injury. Scale bar = 30 \u00b5m (F) Quantification of Fluo-4 intensity from the experiment in (E). Injured SARM1 KO axons expressing the enzymatically disabled SARM1 mutant (E642A) completely prevent calcium influx. Data represent the mean \u00b1 SEM; n = 5 ~ 8 embryos for each condition; one-way ANOVA with post hoc Tukey test, F(3,22) = 23.05, p < 0.0001; NS, not significant; *, p < 0.05; **, p < 0.01 and ***, p < 0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig1-figsupp1-v2.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig2-v2.jpg)\n\n**Figure 2.:** (A) Pre-incubation of MPTP inhibitor (1, 10, or 100 \u00b5M CsA) did not significantly prevent the degeneration of wild-type axons after axon injury. Axon degeneration is defined as a degeneration index >0.4 (dashed line). n = 3 embryos for each condition. (B) (Left) Representative images of calcium influx acquired with 1 \u00b5M Fluo-4 dye. Scale bar = 30 \u00b5m (Right) The degree of calcium influx in CsA pre-incubated injured axons is not significantly different from DMSO pre-incubated injured axons. Fold increment of injured axons at 4 hr after axotomy is calculated from uninjured axons. Data represent the mean \u00b1 SEM; n = 5 embryos for each condition; two-tailed unpaired t test, p = 0.39; NS, not significant; *, p < 0.05; **, p < 0.01 and ***, p < 0.001 (C) Internal calcium chelator (pre-incubation with 10 \u00b5M BAPTA) did not delay axon degeneration after axonal injury. n = 3 embryos for each condition. Data represent the mean \u00b1 SEM; Axon degeneration is defined as a degeneration index >0.4 (dashed line). (D) (Top) Experimental design. Extracellular calcium chelator, 3 mM ETGA, was included in the culture medium at different time points (2 ~ 48 hr vs 0 ~ 2 hr vs 0 ~ 48 hr). For addition of EGTA from 0 ~ 2 hr, culture medium was replaced at 2 hr. (Bottom, left) Representative bright-field images of axons. (E) Quantification of axon degeneration for the experiment in (D). Although there are axonal swellings (red triangle) in the presence of EGTA, injured axons remain intact when the EGTA is present 2 hr after axotomy. n = 3 embryos for each condition. Data represent the mean \u00b1 SEM; Axon degeneration is defined as a degeneration index >0.4 (dashed line). (F) Representative images of mitochondria potential (TMRM fluorescent dye) and axon morphology (GFP lentivirus) in uncut axons and cut axons \u00b1EGTA. Scale bar = 100 \u00b5m (G) Quantification of the TMRM staining for the experiment in (F). EGTA incubation in injured axons does not maintain mitochondrial hyperpolarization. Data represent the mean \u00b1 SEM; n = 6 ~ 7 embryos for each condition; one-way ANOVA with post hoc Tukey test, F(2,16) = 98.27, p < 0.0001; NS, not significant; *, p < 0.05; **, p < 0.01 and ***, p < 0.001 (H) Representative kymograph of uncut and cut axons \u00b1EGTA as indicated. (I) Quantification of total number of mitochondria (left) and mobile mitochondria (right) for the experiment in (H). Data represent the mean \u00b1 SEM; n = 8 ~ 12 axons for each condition; one-way ANOVA with post hoc Tukey test, for mobile mitochondria F(3,24) = 16.34, p < 0.0001; for number of mitochondria, F(3,34) = 0.8787, p = 0.46; NS, not significant; *, p < 0.05; **, p < 0.01 and ***, p < 0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** However, it is toxic to mitochondria.\n\nIn addition to mitochondrial dysfunction, calcium homeostasis is also disrupted in injured axons, with a large influx of calcium hours after injury (Adalbert et al., 2012; George et al., 1995; Ma et al., 2013; Wang et al., 2000; Yang et al., 2013). Here, we test if this calcium influx requires SARM1 enzymatic activity. We used Fluo-4, a calcium-sensitive fluorescent dye, to assess axonal calcium four hours after injury, the time point by which mitochondrial mobility and potential are disrupted. Axons show no calcium rise in SARM1 KO neurons expressing either GFP or SARM1(E642A), but have a significant increase in calcium when expressing WT SARM1 (Figure 1E and F). Hence, the loss of calcium homeostasis in injured axons also requires SARM1 NADase activity. Taken together, these findings support the view that SARM1 enzyme activity is essential for not only axon degeneration (Essuman et al., 2017), but also for the major proximate events that occur in injured mammalian axons.\n\n### Manipulating either intracellular or extracellular calcium is ineffective in preserving injured axons\n\nHaving demonstrated that calcium influx into injured axons requires SARM1 NADase activity, we next explored the role of calcium influx in axonal demise. Prior studies argued that calcium release through the mitochondrial permeability transition pore (MPTP) (Barrientos et al., 2011; Villegas et al., 2014) or extracellular calcium influx (Vargas et al., 2015; Wang et al., 2000; Witte et al., 2019; Yong et al., 2020) are key drivers of axon degeneration. To test whether the MPTP has a role in axon degeneration, we incubated embryonic DRGs neurons with the MPTP inhibitor (Cyclosporin A, CsA), axotomized, and assessed the progression of axon degeneration and the rise in intracellular calcium. In contrast to prior findings, we observed no delay in the timing of axon degeneration with CsA treatment (Figure 2A). We also assayed the increase in intracellular calcium after injury and again found no significant effect of CsA (Figure 2B). To further explore the role of intracellular calcium, we incubated DRG neurons with 10 \u00b5M BAPTA to chelate intracellular calcium for 30 min prior to axotomy. This treatment had no influence on the progression of axon degeneration (Figure 2C), and was also unable to fully buffer the influx of extracellular calcium that occurs hours after injury (Figure 2\u2014figure supplement 1). These results indicate that internal calcium is not a major determinant of injury-induced axon degeneration in this system; however, it may play a role in scenarios where SARM1 is less potently activated (Li et al., 2021).\n\nWhile we found no clear role for intracellular calcium, there are numerous studies highlighting the importance of extracellular calcium for injury-induced axon degeneration (Gerdts et al., 2011; Mishra et al., 2013; Ribas et al., 2017; Vargas et al., 2015; Wang et al., 2000; Yang et al., 2013). As such, we explored the impact of chelating extracellular calcium on the progression of axon degeneration. In agreement with prior studies, we find that pre-incubation with 3 mM EGTA potently blocked injury-induced calcium influx and maintained morphologically intact axons for up to 48 hr after axotomy (Figure 2D and E; Figure 2\u2014figure supplement 1). To explore when the influx of extracellular calcium is required, we treated with EGTA at the time of axotomy and then performed washout after 2 hr, or added the EGTA 2 hr after axotomy. The presence of EGTA from 0 to 2 hr after axotomy had no impact on the timing of axon fragmentation, while addition of EGTA 2 hr post-axotomy was as protective as treatment at the time of axotomy (Figure 2D and E). Hence, late influx of extracellular calcium is critical for axon degeneration in DRG axons, a finding consistent with previous reports (Vargas et al., 2015; Witte et al., 2019).\n\nWhile these results are consistent with prior work highlighting the importance of extracellular calcium for axon degeneration, we did observe that severed axons developed prominent axonal swellings following extracellular calcium chelation (Figure 2D, red arrowheads). Moreover, previous work showed that SARM1 is activated within two hours after injury and leads to NAD+ depletion and metabolic catastrophe (Sasaki et al., 2020a), raising the question of whether blocking the later influx of calcium maintains axons in a healthy state. To investigate this question, we assessed mitochondrial membrane potential and mobility in injured axons treated with EGTA. We find that mitochondria potential is lost by four hours post-axotomy whether or not EGTA is present (Figure 2F and G). Similarly, EGTA treatment fails to maintain mitochondrial mobility after axotomy (Figure 2H and I). Indeed, treatment with EGTA halts mitochondrial movement and disrupts mitochondrial depolarization (Figure 2\u2014figure supplement 1) after 4 hr even in the absence of injury, demonstrating that chelating extracellular calcium is not an effective method to maintain healthy axons, and instead disrupts normal axonal physiology. These findings are in contrast to loss of SARM1, which maintains both mitochondrial potential and mobility after axotomy (Figure 1). Taken together, these findings suggest that prior studies showing protection of axons by blocking the large calcium influx that occurs prior to degeneration were likely maintaining axonal structure but not axonal physiology, and suggest that the key role for calcium influx may be to trigger fragmentation of metabolically non-functional axons.\n\n### Live single axon imaging defines the temporal relationship between calcium influx and axonal fragmentation\n\nTo quantitatively assess the relationship between this late influx of calcium and axonal fragmentation, we developed a live imaging system with single axon resolution (Figure 3\u2014figure supplement 1). This allows us to assess temporal relationships of the asynchronous axon degeneration process that is not possible in mass cultures. We used lentivirus to co-express GCaMP6 and mRuby3 in cultured DRG neurons to monitor calcium influx and axon morphology simultaneously. After 7 days in culture, when both proteins were strongly expressed, we performed axotomy by focusing laser light on a 1 \u00d7 1 \u00b5m region containing a single axon (Figure 3A). Images of the distal axon were repeatedly acquired until the injured axon degenerated. Figure 3B and Video 1 show the progression of calcium influx and axon degeneration for a single axon, features that are representative of all the injured axons analyzed. Immediately after axotomy, a first peak of calcium bidirectionally propagates along the axon from the injury site (white triangle). This elevated intracellular calcium is rapidly cleared, demonstrating that calcium homeostasis functions normally at this time, and is consistent with prior work and the findings in Figure 2E that the initial influx of calcium does not contribute to axon fragmentation (Adalbert et al., 2012; Loreto et al., 2015; Vargas et al., 2015). After nearly 4 hours, there is a large second influx of calcium that precedes any obvious change in axonal morphology. Soon thereafter, the axon thins and small swellings appear, then the axon swellings enlarge, and finally the axon fragments (Figure 3B and C). From analysis of 22 single axons, we found that the time to the appearance of the second calcium peak varied dramatically, from less than four hours to nearly 10 hr after axotomy (Figure 3D). However, once the second peak of calcium appeared, the axon fragmented soon thereafter. The correlation between the initiation of the second peak of calcium and axon degeneration was very strong (Figure 3D), with degeneration occurring ~100 min after initiation of calcium influx. In contrast, neither the duration nor intensity of the second calcium peak was well correlated with the timing of axon degeneration (Figure 3E and F). The very tight correlation between the initiation of the second influx of calcium and axonal fragmentation is consistent with the hypothesis that this calcium triggers the final disintegration of the axon.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic diagram of laser axotomy in cultured embryonic DRG neurons. GCaMP6 and mRuby3 were expressed to observe calcium fluctuations and axonal morphology. (B) Snapshots of an injured wild-type axon. Also see Video 1. Progression of axon degeneration is described at the bottom of the schematic. Note that there is both an early and late phase of calcium influx. The first peak of calcium occurs at the injury site (white triangle) before calcium levels return to normal. The second calcium peak persists until the axon degenerates. Scale bar = 100 \u00b5m (C) Representative analysis of a single injured axon. The calcium response (left y-axis) and measure of axon continuity (right y-axis) for a single axon is plotted over time after axonal injury. Note the two distinct calcium peaks.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig3-figsupp1-v2.jpg)\n\n![Video 1.](https://cdn.elifesciences.org/articles/71148/elife-71148-video1.mp4.jpg)\n\n### Mitochondrial dysfunction precedes calcium influx in injured axons\n\nWith a method established for live imaging of single axons, we next explored the temporal relationship between calcium influx and mitochondrial stalling and loss of potential. Calcium influx is a potent mechanism for stopping mitochondria (Wang and Schwarz, 2009), and so we predicted that calcium influx would occur before mitochondrial stalling. We used lentivirus to express MitoDR and GCaMP6 in DRG neurons and performed laser axotomy. We imaged mitochondrial movement with MitoDR every 5 s for 300 s followed by calcium measurements. Images from MitoDR and GCaMP6 were acquired until mitochondria stopped, at which point only GCaMP6 imaging continued until its level increased more than twofold (Figure 4A). As shown in Figure 4A and in contrast to expectations, mitochondrial movement stops before the influx of calcium. Analysis of this single axon shows that fewer mitochondria are moving 3 hr after axotomy (Figure 4B), and that all mitochondrial are stalled by 4.4 hr after injury (Figure 4B, inset). At this point, the GCaMP6 signal is unchanged from baseline, but begins to rise soon thereafter. Quantitative analysis of single injured axons demonstrates that loss of mitochondrial mobility precedes calcium influx in each case, and this occurs ~25 min after mitochondria stop (Figure 4B and C). Hence, loss of mitochondrial mobility in injured axons cannot be due to calcium influx.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig4-v2.jpg)\n\n**Figure 4.:** (A) (Top) Experimental design for observing calcium influx (GCaMP6) and mitochondria movement (MitoDR) after axon injury. MitoDR images were acquired every 5 s (for 300 s, 60 frames) followed by GCaMP6 imaging. Once the mitochondria in that axon stopped, GCaMP6 images were then acquired once/minute. (Bottom) Representative images of GCaMP6 and kymograph at the indicated times. Note that mitochondria stop prior to calcium influx. Scale bar = 30 \u00b5m (B) (Top) Single axon analysis after injury. The percentage of mobile mitochondria (red, left y-axis) and the fold change in calcium (green, right y-axis) for a single axon were plotted over time after axonal injury. (Bottom) Inset from graph highlights that mitochondria stop moving before calcium levels rise. (C) Group data from single axons show that the time difference (\u2206T) between cessation of mitochondrial mobility and calcium influx, defined as a twofold increase from baseline, is ~0.42 \u00b1 0.02 hr, indicating that mitochondria stop before calcium influx in injured axons. The gray line (\u2206T = 0) shows expected results if mitochondria stopped and calcium influx occurred simultaneously. n = 9 axons. (D) (Top) Experimental design to observe calcium influx (GCaMP6) and loss of mitochondrial potential (TMRM) after axonal injury. GCaMP6 and TMRM were imaged every 10 min until axon fragmentation. (Bottom) Representative images shown at the indicated times. The TMRM signal declines by 2.83 hr after axonal injury, while calcium influx does not occur until 3.0 hr after injury. Scale bar = 30 \u00b5m (E) (Left) Analysis of the single axon in D. The ratio of TMRM signal from baseline (left y-axis) and the fold increment of calcium (right y-axis) were plotted over time after axonal injury. (Right) The enlarged insight highlights the point at which there is a dramatic change in the mitochondria potential (brighter red dot) and calcium levels brighter green dot. Note that the change in TMRM from baseline precedes the change in calcium. This was observed in 5 out of 7 axons, while in 2 out of 7 axons the change occurred in the same 10 min imaging bout.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (Left) Differentiation of TMRM and GCaMP6 measurements in Figure 4E. The differentiation is defined as the percentage change from the previous measurement. The percentage change (y-axis) of both mitochondrial potential and calcium influx is shown over time after axon injury. (Right) This graph highlights the time window when the calcium level (brighter green dot) increases at least twofold and the mitochondria potential (brighter red dot) are maximally changed.\n\nNext, we addressed the relationship between loss of mitochondrial potential and calcium influx. Calcium overload can induce loss of mitochondrial potential (Abramov et al., 2007)\u2014if this occurs in injured axons, then we expect calcium influx to precede mitochondrial depolarization. We expressed GCaMP6 in DRG neurons, incubated the neurons with TMRM to assess mitochondrial potential, and imaged single axons in both channels every ten minutes until axons degenerated (Figure 4D). This imaging frequency was chosen to avoid photobleaching. The images and analysis from a single axon (Figure 4D and E) demonstrate that the fluorescent intensity of TMRM is fairly stable at baseline, then has an initial drastic drop (dark red dot in Figure 4E) followed by a steady decline (Figure 4E and F, red dots). In contrast, calcium has an abrupt rise (dark green dot), quickly reaching a higher steady-state level (Figure 4E and F, green dots). In the example shown, the abrupt drop in mitochondrial potential occurs one frame prior to the large increase in calcium. To assess this across axons, we identified the time at which the TMRM and GCaMP6 signal showed the largest frame-to-frame variation (Figure 4F and G and Figure 4\u2014figure supplement 1). We found that the drastic drop of TMRM intensity occurs one frame prior to the large increase in calcium in five out of seven axons (71.43%), while these changes occurred during the same frame in two out of seven axons. The images are taken ten minutes apart, and so these data indicate that in injured axons mitochondria begin depolarizing prior to the calcium influx (Figure 4G). Moreover, these data, in conjunction with the analysis of mitochondrial mobility and calcium influx above, demonstrate a sequence of events in which first mitochondria stop, then begin losing their potential, and after that calcium enters the axon which subsequently degenerates.\n\n### ATP loss precedes mitochondrial stalling\n\nCalcium influx cannot explain the loss of mitochondrial mobility, so we considered other potential mechanisms. Once the SARM1 NADase is activated, ATP is lost soon thereafter (Gerdts et al., 2015) because NAD+ is required for ATP synthesis via both glycolysis and oxidative phosphorylation. The loss of ATP in injured distal axons is fully SARM1 dependent (Figure 5\u2014figure supplement 2). Mitochondria are transported by ATP-dependent molecular motors, and so we hypothesized that loss of ATP may cause loss of mitochondrial mobility. To assess this hypothesis, we explored the relationship between ATP loss and mitochondrial stalling. We used lentivirus to express PercevalHR, a sensor of relative ATP levels (Tantama et al., 2013), and MitoDR in DRG neurons and performed laser axotomy. For the validation of PercevalHR in axons, we applied CCCP (Carbonyl Cyanide m-chlorophenyl hydrazone) to DRG neurons expressing PercevalHR. Using HPLC to measure axonal metabolites, we previously demonstrated that a 2 hr treatment with 50 \u03bcM CCCP lowers ATP by ~60 % in DRG axons (Summers et al., 2014). The same CCCP treatment leads to an ~70 % drop in the fluorescence level of PercevalHR (Figure 5\u2014figure supplement 1), demonstrating that PercevalHR gives a reasonable estimate of changing ATP levels in axons. Upon injury, we found that ATP loss and loss of mitochondrial mobility temporally overlap, and so it was not possible to define a window after which one process was complete and the other had yet to start, as we did with calcium and mitochondrial dynamics above. Instead, we quantitatively assessed the relationship between the degree of ATP loss as defined by loss of the PercevalHR signal and the fraction of mitochondria that stop moving in injured axons. Based on ATP measurements from bulk injured axons, we knew that most ATP loss occurred between 3 and 4 hr after injury (Figure 5\u2014figure supplement 2). Therefore, we imaged baseline mitochondrial mobility and relative ATP levels before injury, and then re-imaged the PercevalHR every 5 min for 3.5 hr after single axon injury. We then calculated the percent change in PercevalHR intensity from baseline. Immediately after the final imaging of PercevalHR at 3.5 hr, we imaged mitochondrial mobility by acquiring images every 5 s for 300 s and calculated the percent drop in the fraction of motile mitochondria compared to baseline (Figure 5A and B). In every axon, the percent drop in the ATP sensor was larger than the percent drop in the fraction of mobile mitochondria (Figure 5B left), and there was a strong correlation between the extent of ATP loss and mitochondrial stalling (Figure 5B right; R2 = 0.61, n = 9). We continued to measure mitochondrial mobility from 3.5 hr after injury until mitochondrial movement ended. We found a strong inverse correlation between the extent of ATP loss at 3.5 hr and the remaining time until the complete loss of mitochondrial mobility (Figure 5C; R2 = 0.76, n = 9). In other words, the extent of ATP loss by 3.5 hr after injury is a strong predictor of when mitochondrial will ultimately stop moving in an injured axon. All these results are consistent with the model that ATP loss causes loss of mitochondrial mobility. We did not repeat these results in SARM1 KO axons because we have already demonstrated that both ATP loss and loss of mitochondrial mobility are fully SARM1 dependent (Figure 5\u2014figure supplement 2 and Figure 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig5-v2.jpg)\n\n**Figure 5.:** (A) (Left) Experimental design for imaging changes to ATP (PercevalHR) and mitochondrial movement (MitoDR) after axonal injury. Prior to axotomy, baseline PercevalHR intensity and mitochondrial movement were measured. PercevalHR was imaged every 5 min until 3.5 hr after axonal injury, while mitochondria were imaged every 5 min starting 3.5 hr after axotomy until movement ceased. (Right) Representative images for PercevallHR and kymographs of moving mitochondria at the indicated times. Scale bar = 30 \u00b5m (B) (Left) Percentage decline from baseline at 3.5 hr post-axotomy for PercevalHR intensity and for the fraction of motile mitochondria. Lines connect data for individual cells. (Right) Linear regression plot of group data. n = 9 axons. (C) The percentage decline of PercevalHR intensity at 3.5 hr after axonal injury is plotted against the subsequent time until mitochondria stop moving for that axon. Linear regression plot of group data. n = 9 axons.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (Left) Representative images of either DMSO or 50 \u00b5m CCCP treated DIV7 axons at baseline and 2 hr after treatment. Lentivirus of PercevalHR was transduced at DIV2 (Right). Fluorescent signal of PercevalHR was normalized to baseline for each condition. n = 4 embryos.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig5-figsupp2-v2.jpg)\n\n### Calcium is required for loss of membrane integrity during axon fragmentation\n\nHaving shown that calcium influx is a late event in the axon degeneration process, we assessed the temporal relationship between calcium influx and two other late events, loss of membrane lipid asymmetry and loss of membrane integrity (Yong et al., 2020). In healthy membranes, phosphatidylserine is preferentially found in the inner leaflet of the plasma membrane. In cells undergoing apoptosis and in degenerating axons, phosphatidylserine is exposed on the outer leaflet where it serves as an \u2018eat-me\u2019 signal to phagocytic cells (Sapar et al., 2018; Segawa and Nagata, 2015; Shacham-Silverberg et al., 2018; Wakatsuki and Araki, 2017). To assess the temporal relationship among calcium influx, loss of membrane asymmetry, and axon fragmentation, we expressed GCaMP6 and mRuby3 in DRG neurons, laser axotomized, and incubated with Alex Fluor 647-conjugated Annexin-V, which binds extracellular phosphatidylserine (Sievers et al., 2003). In the example shown, calcium rises first, followed by staining with Annexin-V, and soon thereafter the mRuby3 signal declines indicative of axon fragmentation (Figure 6A). Indeed, in all cells analyzed calcium influx preceded phosphatidylserine exposure, and occurred ~0.51 \u00b1 0.04 (hr) prior to Annexin-V staining (Figure 6B). Calcium can inhibit the ATP-dependent flippase that maintains phosphatidylserine on the inner leaflet (Bitbol et al., 1987; Soupene, 2008), and so the influx of calcium and/or the decline in ATP likely triggers the loss of membrane asymmetry during axon degeneration. We wished to test the role of calcium by blocking influx with EGTA; however, this experiment is not possible because Annexin-V binding to phosphatidylserine requires extracellular calcium.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig6-v2.jpg)\n\n**Figure 6.:** (A) (Left) Snapshots of representative live axon images for GCaMP6, mRuby3, and Alex647-conjugated Annexin-V at baseline, and 4.78 and 6.28 hr after axotomy. (Right) Representative single axon analysis. Y-axis (left) is plotted by the fold increase of fluorescent intensity (F / F base) of either GCaMP6 (green color dots) or Annexin-V (cyan color dots) from the baseline after axon injury. Axon integrity (y-axis, right) is calculated by the relative mRuby3 intensity from the baseline. Note that calcium influx precedes Annexin-V exposure in an injured axon. Scale bar = 50 \u00b5m (B) After axotomy, the time until calcium influx is plotted vs the time until the rise in Annexin-V. Dashed line (\u2206T = 0) represents the values if phosphatidylserine exposure (Annexin-V staining) and calcium influx occurred simultaneously. Calcium influx precedes phosphatidylserine exposure by an average of 0.51 \u00b1 0.04 hr. n = 10 axons. (C) (Top) Representative images of intact, swollen, and fragmented axons during the process of axon degeneration. The axonal morphology is labeled with GFP that was transduced through GFP-lentivirus. Texas Red conjugated Dextran-3kDa was pre-incubated 30 min prior to image acquisition. Note that Dextran-3kDa is only observed in the fragmented axons, not in swollen axons. Scale bar = 10 \u00b5m (D) Representative images of GFP-expressing axotomized wild-type and SARM1 KO axons. The membrane impermeable Dextran-3k enters injured wild-type axons, but after injury is excluded from both EGTA-treated wild-type axons and SARM1 KO axons (GFP labels axons). Scale bar = 100 \u00b5m (E) Group data. Quantification of dextran-3k staining intensity in the indicated genotypes and times. Data represent the mean \u00b1 SEM; n = 6 embryos for each condition; one-way ANOVA with post hoc Tukey test, F(6,35) = 46.16, p < 0.0001; NS, not significant; *, p < 0.05; **, p < 0.01 and ***, p < 0.001.\n\nNext, we assessed the relationship among SARM1, calcium influx, and the loss of membrane integrity in injured axons. To assess membrane integrity, we applied fluorescently labeled macromolecules (3 kDa dextran) to neurons expressing cytosolic GFP. In uninjured neurons, cytosolic GFP fills the axon while the dextran is excluded (Figure 6C). After injury, axon swelling is apparent, and mitochondrial localize to these swellings (Figure 7\u2014figure supplement 1). The swellings retain GFP and still exclude dextran. Later, discrete puncta of dextran appear in axonal fragments, and such fragments contain no visible GFP. We interpret this as axon swellings that burst, releasing soluble GFP and allowing entry to the high-molecular-weight dextran (Figure 6C). Next, we compared dextran uptake in injured axons from wild type and SARM1 KO neurons, as well as wild-type neurons treated with EGTA. By 4 hr after axotomy of wild-type neurons, dextran is present throughout the axons, indicative of a loss of membrane integrity. In axotomized SARM1 KO neurons, dextran is excluded from axons for at least 48 hr. Interestingly, when wild-type neurons are incubated with EGTA, injured axons still swell (arrowheads, Figure 6D), but dextran is excluded (Figure 6D and E). Therefore, we conclude that calcium is necessary for the loss of membrane integrity and the morphological transition from axonal swelling to fragmentation.\n\n## Discussion\n\nIn injured axons, the molecular function of SARM1 is well understood, but the ensuing molecular and cellular changes leading to axonal demise are much more poorly defined. SARM1 NADase activity is critical for the ultimate demise of injured axons (Essuman et al., 2017), and here, we show that this enzymatic activity is also required for intermediate phenotypes such as disrupted mitochondrial and calcium homeostasis. To explore the events that occur after NAD+ cleavage, we used live imaging with single axon resolution to investigate dynamic changes to ATP, mitochondria, calcium, and membranes. The data describe an ordered series of events beginning with loss of ATP, and followed by mitochondrial dysfunction, calcium influx, exposure of phosphatidylserine and loss of membrane permeability ultimately resulting in catastrophic axon fragmentation.\n\nIn this study, we used live imaging of single axons to monitor structural and physiological changes during axon degeneration. While the absolute timing of cellular events varied dramatically from axon to axon, the relative timing was quite consistent. Hence, this method allowed us to order cellular events, which is not possible when averaging responses from many axons that are responding asynchronously. Our findings in conjunction with prior studies lead to a simple model of axon degeneration (Figure 7). Following activation of SARM1, NAD+ is cleaved and its levels drop rapidly. Upon robust NAD+ depletion, both glycolysis and oxidative phosphorylation will be impaired, and so ATP production will decline. This loss of ATP will impact molecular motors, leading to the observed halting of mitochondria. Soon after mitochondria halt, they lose their membrane potential. Since this occurs before calcium increases, this cannot be due to calcium overload. Instead, the loss of NAD+ and ATP likely disrupts mitochondrial homeostasis. We next observed influx of extracellular calcium. The loss of ATP is a likely culprit, as ionic pumps require ATP and their loss will lead to disrupted calcium extrusion, membrane depolarization, and calcium influx. Many prior studies have attempted to define the source of calcium influx (George et al., 1995; Gerdts et al., 2011; Stys, 2005; Villegas et al., 2014; Yang et al., 2013), and have provided evidence for many candidates including voltage-gated ion channels, ion pumps, and ion exchangers in both intracellular organelles and the plasma membrane. We speculate that many candidates participate because the loss of ATP disrupts many aspects of calcium homeostasis. Here, we have only focused on the large influx of calcium that occurs soon before degeneration. Our study does not speak to the potential role of smaller fluctuations in calcium that may occur earlier in the process. After this large influx of calcium, the subsequent exposure of phosphatidylserine to the outer leaflet of the membrane is likely due to the failure of lipid flippases to maintain asymmetry. Since these flippases are ATP-dependent and can be inhibited by calcium (Bitbol et al., 1987; Pomorski and Menon, 2006; Soupene, 2008), loss of ATP and calcium influx may both contribute to the externalization of phosphatidylserine. The ultimate loss of membrane integrity, however, requires influx of extracellular calcium, as EGTA blocks fragmentation of injured axons. Such axons have extensive swellings and completely dysfunctional mitochondria. While calcium influx has long been assumed to the be the essential final step in axon loss, our findings suggest instead that calcium influx is merely leading to the morphological destruction of axons that are already physiologically dead. Instead, our findings highlight ATP loss as the likely point of no return for an injured axon, disrupting mitochondrial, calcium, and membrane homeostasis and thereby triggering axonal demise.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig7-v2.jpg)\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71148/elife-71148-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (Top) Representative images of injured (a) and uninjured (b) axons labeled with GFP and MitoDR. (Bottom) Pixel intensity of each axon is plotted. Note that most axonal swellings overlap with mitochondria (Asterisks).\n\n## Materials and methods\n\n### Animals\n\nAll procedures were performed in accordance with guidelines mandated in the National Institutes of Health Guide for the Care and Use of Laboratory Animals and approved by the Washington University School of Medicine in St. Louis Institutional Animal Care and Use committee. CD1 mice (gestation day 11.5) for sensory neuron cultures were purchased from Charles River Laboratories, and SARM1KO mice were developed using homologous recombination in embryonic stem cells to delete exons 1 and 2, were backcrossed into a C57 background, and were a gift from M. Colonna at Washington University in St. Louis (Szretter et al., 2009). All neurons in this study were derived from a mix of male and female embryos at embryonic day 13.5 or 14.5.\n\n### Western blot analysis\n\nLysate buffers (60 mM Tri-HCl, pH 6.8; 50 % glycerol; 2 % SDS; 0.1 % bromophenol blue) contain protease cocktail (cOmplete, mini, EDTA-free protease inhibitor; 1183617001, Millipore Sigma) and phosphatase inhibitor cocktail (P0044, Millipore Sigma). The lysates were precleared of debris by centrifugation at 10,000 g in a refrigerated microcentrifuge for 10 min. Supernatants were mixed with 5 % 2-mercaptoethanol (Millipore Sigma) and then boiled for 10 min. Antibodies used: Rabbit anti--Tubulin III (1:4000, Millipore Sigma); HRP conjugated anti-rabbit antibody (1:10,000, #111-035-045, Jackson ImmunoResearch); Rabbit-anti-SARM1 (1:1000, #13022, Cell signaling) and (1:5000); mouse anti-GFP (1:1000, #2955 S, Cell signaling); HRP-conjugated anti-mouse antibody (1:5000, 115-035-003, Jackson ImmunoResearch).\n\n### TMRM / Fluo-4\n\nA total of 50 nM TMRM (T668, Thermo Fisher Scientific) and 1 \u00b5M Fluo-4 (F14201, Thermo Fisher Scientific) were pre-incubated for 30 min prior to image acquisition. When Fluo-4 was incubated more than 2 hr, we found that the intensity of Fluo-4 suddenly increased even in the absence of injury, and then axons degenerated. So, we only used Fluo-4 to check the current status of calcium and finished the imaging session within 1 hr.\n\n### Lentivirus construction/production\n\nFUGW-PercevalHR (Addgene #49083) GCaMP6 and mRuby3 (Ko et al., 2020), human SARM1.WT and human SARM1.E642A (Essuman et al., 2017) and MitoDsRed (Summers et al., 2014) were transfected into HEK 293 cells for lentivirus production. Briefly, the cells were seeded at 70~80 % confluency per 35 mm well the day before transfection. The constructs (1.2 \u00b5g) were cotransfected with vesicular stomatitis virus G (600 ng) and pSPAX2 (800 ng) using FuGENE 6 (Promega). The lentiviral supernatants were collected 2 days after transfection, and then the cleared supernatant was concentrated with Lenti-X Concentrator (Clontech) to a final concentration of 1 ~ 10 x 107 particles / ml. Lentivirus transduction efficiency was monitored with tagged fluorophore and western blot analysis and is routinely ~100 % in DRG neurons.\n\n### DRG neurons culture/experimental timeline\n\nAll plates for DRG cultures are coated with 0.1 mg/ml poly-D-lysine (Millipore Sigma) followed by laminin (3 \u00b5g/ml; Invitrogen). CD1 mouse and SARM1 KO DRG neurons were dissected from a mix of male and female embryos at embryonic day 13.5 or 14.5. They were incubated with 0.05 % trypsin containing 0.05 % EDTA at 37 \u00b0C for 20 min and then washed three times with DRG growth medium (neurobasal media from Gibco) containing 2 % B27 (Invtrogen), 50 ng/ml nerve growth factor (Harlan Laboratories), 1 \u00b5M 5-fluoro-2\u2019-deoxyuridine (Millipore Sigma), 1 \u00b5M uridine (Millipore Sigma), and penicillin/ streptomycin (Thermo Fisher Scientific). The cell density of these suspensions was adjusted to ~7 x 106 cells/ml. Two\u00b5l suspensions were placed in 24-well plates (Corning) for western blots and axon degeneration assays, Chamber slides (Nunc Lab-Tek, Thermo Fisher Scientific) were used for immunocytochemistry and FluoroDish (FD35-100, World Precision Instruments) were used for live single axon imaging. Lentivirus was transduced at one or 2 days in vitro (DIV). At DIV 7, assays for axon degeneration and/ or live axon imaging were performed.\n\n### DRG neuron culture for single axon imaging\n\nFor single axon imaging, conventional 2 \u00b5l suspensions (~7 x 106 DRG cells / ml) lead to extensive overlap of DRG axons making it difficult to distinguish individual axons. Moreover, DRG neurons did not survive well in low-density culture (~7 x 104 cell / ml). To circumvent these problems, we plated two different densities of DRG neurons in one Fluorodish (Figure 3\u2014figure supplement 1). Briefly, 2 \u00b5l suspensions (~7 x 106 cells/ml) were plated on one side of FluoroDish, and then 2 \u00b5l suspensions (~7 x 104 cells/ml) were thinly spread with a pipette tip on the other side of FluoroDish. This method provides the robust health of a high-density culture with the capacity to identify and image single axons.\n\n### Live single axon imaging\n\nDRG neurons were cultured in a glass bottom FluoroDish, enabling use of an immersion oil objective for calcium (GCaMP6), mitochondrial movement (MitoDR) and potential (TMRM), ATP (PercevalHR), and axon morphology (GFP or mRuby3). At DIV 2, lentivirus was transduced to cultured DRG neurons. Chemical dyes such as Annexin-V (#A23204, Thermo Fisher Scientific) and 3 kDa Dextran-Texas Red (#D3328, Thermo Fisher Scientific) were applied according to product instructions. Chamlide TC (Live Cell Instrument, South Korea) was used to maintain 37 \u00b0C temperature, 100 ml/min 5 % CO2 /95 % airflow rate. A Leica DMI4000B microscope under confocal setting using 20 x oil immersion objective (NA 0.6) and Leica DFC7000 T 2.8 MP color microscope camera at RT was used under the control of the Leica Application Suite X software platform to acquire and analyze images. Optical sectioning and laser settings were kept constant across all image data acquisition sessions.\n\n### Laser axotomy\n\nUsing a standard confocal microscope equipped with a 405 nm laser, a UV ablation method was utilized to selectively induce axonal injury of cultured DRG neurons in real-time (Figure 3A). To effectively induce laser axotomy of culture DRG neurons, a glass bottom ( < 0.17 mm) culture dish such as FluoroDish is necessary. 405 nm laser with 100 % intensity was used to induce laser axotomy with the FRAP (Fluorescence recovery after photobleaching) wizard in Leica application Suite X software. The injury site should be carefully chosen around the middle between the soma and axon terminal. If the injury site is close to soma, cell body death was often observed. If the injury site is too close to the distal axon then the immediate retraction of the injured axon results in too little residual axon for imaging.\n\n### Mitochondria movement / kymograph analysis\n\nFor consecutive real-time imaging capture of mitochondria, images of MitoDR were recorded at 5 s intervals for a total of 60 frames by 558 (ex) / 583 (em)-nm laser at the designated time before and after laser axotomy. The mitochondria are considered mobile if the net displacement is more than 5 \u00b5m. Otherwise, they are defined as stationary.\n\n### Axonal ATP measurement\n\nFor axonal metabolite measurement, axons and cell bodies were separated with microsurgical blade at 0\u20136 hours before metabolite collection. Culture plates were placed on ice and the culture medium was replaced with ice cold saline and then cell bodies were removed using a pipette. Saline was removed and replaced with 160 \u00b5L ice cold 50 % MeOH in water. After 5 min incubation, the solutions were transferred to microcentrifuge tubes containing 50 \u00b5l chloroform, shaken vigorously, and centrifuged at 20,000 x g for 15 min at 4 \u00b0C. The clear aqueous phase (140 \u00b5l) was transferred into a microfuge tube and lyophilized under vacuum. Lyophilized samples were reconstituted with 5 mM ammonium formate (15 \u00b5l), centrifuged (20,000 x g, 10 min, 4 \u00b0C), and 10 \u00b5l clear supernatants were analyzed with LC-MS/MS. Samples were injected into a C18 reverse phase column (Atlantis T3, 2.1 \u00d7 150 mm, 3 \u00b5m; Waters) using HPLC (Agilent 1290 LC) at a flow rate of 0.15 ml/min with 5 mM ammonium formate as mobile phase A and 100 % methanol as mobile phase B. Metabolites were eluted with gradients of 0\u201310 min, 0\u201370% B; 10\u201315 min, 70 % B; 16\u201320 min, 0 % B. The metabolites were detected with a triple quad mass spectrometer (Agilent 6,470 MassHunter; Agilent) under positive ESI multiple reaction monitoring using parameters for ATP (508 > 136, fragmentation (F) = 130 V, collision (C) = 30 eV, and cell acceleration (CA) = 4 V). Serial dilutions of standards for ATP in 5 mM ammonium formate were used for calibration. Metabolites were quantified by MassHunter quantitative analysis tool (Agilent) with standard curves and normalized by the axonal protein.\n\n### Data acquisition and analysis\n\n#### Sample size (n)\n\nIn the figure legend, it is noted that sample size (n) means the number of axons or embryos. In single axon studies, only one axon of individual DRG neuron was imaged and analyzed (other branches of the same DRG neurons were not used). Otherwise, axons of cultured DRG neurons from individual embryo were imaged at least three times, and then averaged for the analysis.\n\n#### Axon degeneration\n\nAxon degeneration is quantified based on axon morphology as the axon degeneration index (DI) using an ImageJ-based javascript (Sasaki et al., 2009). Axons should have less than 0.2 DI at baseline, otherwise, they were not used for the experiment. We define axon degeneration as an axon DI > 0.4.\n\n#### Calcium influx\n\nThe relative intensity of GCaMP6 from baseline was calculated as a measure of calcium influx. Given the interval of 5 ~ 10 min between images, the intensity change of GCaMP6 is variable. We routinely observed that the fluorescent intensity of GCaMP6 fluctuated ~10 % between image frames (Figure 4\u2014figure supplement 1). While it is unclear whether or not these small fluctuations are functional, we did not see any corresponding changes in mitochondrial function, ATP or axon integrity. This study focuses on the major changes in calcium influx that occur prior to degeneration, and so we defined a twofold increase or greater of GCaMP6 intensity from the baseline as calcium influx.\n\n#### Axon continuity\n\nThe intensity of mRuby3 was used to monitor the intactness of axons. Because mRuby3 is a cytosolic protein, as the integrity and thickness of axonal membrane is narrowed and lost, the intensity of mRuby3 decreases. So, we defined more than 50 % intensity reduction of mRuby3 signal as the beginning of axon degeneration. When axonal fragmentation is observed, it is defined as a degenerated axon regardless of mRuby3 intensity.\n\n#### TMRM\n\nAfter single axon injury, the intensity of TMRM were measured every 10 min (Figure 4). We found that there was a less 10 % fluctuation of fluorescent intensity between image frames. We calculated the percentage change of fluorescent intensity from the previous image (Diff_TMRM in Figure 4\u2014figure supplement 1), and then defined a more than 30 % reduction as a significant loss of mitochondrial membrane potential.\n\n#### ATP sensor\n\nPercevalHR was used in this study for measuring ATP fluctuation after axotomy. First, it was validated in Figure 5\u2014figure supplement 1. Briefly, baseline PercevalHR signal in single axons was imaged. After laser axotomy, the fluorescent images were taken every 5 min for 3.5 hr. Later, each image frame was normalized to the baseline level for data analysis.\n\nD-F. Grouped analysis from single axons for the (D) initiation, (E) duration, and (F) intensity of the 2nd peak of calcium compared to the time at which each axon fragments. The initiation of the second calcium peak occurs ~1.4 hr before and is strongly correlated with axon fragmentation, while the duration of the second peak is weakly correlated and the intensity of the second peak is not correlated with axon fragmentation. n = 22 axons.\n\nThe model depicts the ordered series of events that occur in an injured axon following SARM1 activation. These begin with NAD+ loss, followed by ATP decline, loss of mitochondrial mobility, loss of mitochondrial polarization, influx of calcium, externalization of phosphatidylserine to the outer leaflet of the plasma membrane, and finally fragmentation of the axon allowing for influx of large molecular weight dextrans. Mitochondria localize to axonal swellings (see Figure 7\u2014figure supplement 1).\n\nWestern blot analysis demonstrates that the lentiviral mediated expression of SARM1.WT and SARM1.E642A is very similar.\n\nA)Treatment with 3 mM EGTA for 4 hr decreased mitochondrial membrane potential. TMRM staining in untreated and treated neurons after 4 hr. B). Statistical analysis of TMRM intensity using a t-test revealed a decrease in TMRM intensity (p = 0.0242, t = 2.579 df = 12, n = 7 embryos). C) Application of 3 mM EGTA and 10 \u00b5M BAPTA influence Calcium influx after axotomy. D) Pretreatment with 3 mM EGTA or 10 \u00b5M BAPTA decreases Calcium influx. Statistical analysis using a one-way ANOVA (F (2,15) = 19.04, p < 0.0001, n = 6 embryos) and Sidak\u2019s multiple comparison testing finds a decrease in calcium influx upon 3 mM EGTA (t = 6.109, p < 0.0001) or 10 \u00b5M BAPTA (t = 3.806, p = 0.0034) treatment.\n\nFor single axon imaging, 2 \u00b5l high-density cell suspensions (~7 x 106 cells / ml) were plated on the one side of a FluoroDish and 2 \u00b5l low-density cell suspensions (~7 x 104 cells / ml) were thinly spread on the opposite side. The high-density culture was required for maintenance of neurons in the low-density culture, and the low-density culture enabled imaging of single axons.\n\nAxonal ATP was measured via LC-MS/MS at 0, 2, 4, and 6 hr post axotomy of cultured DRG neurons. Relative axonal ATP levels against 0 hr post axotomy were plotted for each genotype. Statistical analysis was performed by two-way ANOVA with Tukey multiple comparison (n = 12 derived from three independent cultures). F(1,88) = 79, p = 7.2 \u00d7 10\u201314 between wild type (wt) and SARM1 knockout (SARM1 KO). *p < 1 \u00d7 10\u20135 denotes a significant difference compared with WT at indicated time after axotomy.\n\nTotal 45 s video. (0 ~ 20 s) Brief demonstration of experimental design for single axon imaging. (21 ~ 45 s) Example of Figure 3. Briefly, image the baseline activity at distal axon, followed by axon injury with a 405 nm laser (blue square). Note that there is an increase of GCaMP6 intensity at the injury site, which is the first peak of calcium. Massive calcium influx enters the injured distal axon and then later axon starts degenerate. Image acquisition of both GCaMP6 and mRuby3 continues until the axon degenerates.\n",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "d7302054-2456-40e8-82de-8951965ee8bd",
+      "submission_id": "75235a97-39ea-4804-872d-d7c01a7b3983",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Graeme W Davis, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71148.sa0](https://doi.org/10.7554/eLife.71148.sa0)\n\nThe authors have responded to all essential criticisms, supporting the elucidation of a sequence of cellular events that reside downstream of SARM1 activation.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Graeme W Davis, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71148.sa1](https://doi.org/10.7554/eLife.71148.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Live Imaging Reveals the Cellular Events Downstream of SARM1 Activation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Suzanne Pfeffer as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. A central point of argument in this paper concerns the relative changes in calcium influx and how these changes, when they occur, influence the sequence of events leading to mitochondria stalling, lipid exposure and axon catastrophe. The authors appropriately acknowledge that there have been a few studies assessing this issue in vivo and in vitro. But, given this, any apparent differences with the published literature should be resolved, likely with a higher level of imaging that approaches the timescale on which cell biological signaling occurs. This likely means addressing the calcium signals that occur on cell biologically relevant time scales of milliseconds to minutes. In this paper, calcium imaging is based on static images taken at intervals of minutes to hours in most cases. This seems the case for Fluo-4 in Figure one, and also for GCamp6 data. The authors argue that their data differs from published information about the timing and importance of calcium influx. But, it is more than likely that they are missing the most important calcium signaling events. The authors have not attempted to imaging signaling dynamics of calcium on fast time scales. And, when using GCamp6, it is likely that they are missing even potential slow changes in basal calcium in all but the most extreme cases. The authors are referred to : Lock et al., 2015 in which it is demonstrated that GCamp6 cannot resolve shifts in baseline calcium or calcium transients seen with other, faster, calcium indicators. The importance of this topic is emphasized by a central conclusion made by the authors on lines 283 and 284, \"Calcium influx cannot explain the loss of mitochondrial mobility, so we considered other potential mechanisms\". The authors may argue that degeneration occurs over a time frame of hours and this precludes fast calcium imaging. However, I see no reason that they authors could not resort to intermittent high-speed sampling of calcium signaling. This might require intermittent sampling over different time windows in different cells to cover the entire 4hr time between axon cut and degeneration.\n\n2. The authors have focused on metabolic activity of axons by measuring mitochondria voltage and ATP levels. Given that the authors are working in cell culture, shouldn't they take advantage of this system to directly image membrane voltage and assess the integrity of the axonal membrane voltage? This would be a direct assessment of axonal health and an advance beyond what has already by pursued in other systems. It is understood that this would be a novel excursion for the authors, but this would add a new dimension not previously documented and could help define the source of changes in axonal calcium.\n\n3. How do the authors define mitochondrial mobility? They show the total number of mitochondria that are moving in a given area, but do not specify if they are moving anterogradely or retrogradely, nor the fraction of mitochondria that are moving versus stationary. Mitochondrial movement varies widely between axon type, culture condition, and even time in culture. This speaks to whether comparing other events like mitochondrial membrane depolarization or ATP drop to mitochondrial mobility changes is a valid measure.\n\n4. The authors use the PercevalHR genetically encoded reporter to compare the percentage drop in ATP with the percentage drop of motile mitochondria (see comment #3 above), but do not calibrate this sensor. In their previous work (Summers et al. 2020, Mol. Neurobiol.) they show that inhibition of glycolysis or oxphos can both cause a ~70% reduction in total ATP levels in these neurons in the absence of overt degeneration. That these axons have an ATP 'buffer' speaks to the need to define the relative range of ATP changes that Perceval is sensitive to in axons using pharmacological methods.\n\n5. Left uncited are two highly relevant studies showing calcium influx prior to membrane rupture in injured axons (Yong..Deppmann, Sci.Rep 2020), and terminal exposure of phosphatidylserine on the surface of injured axons (Shacham-Silverberg\u2026Yaron, Cell Death Disease, 2018). Indeed, the Results section should also provide more detail regarding published work from Vargas, Villegas, and Witte, currently cited. By doing a more precise job, the authors can precisely state the nature of their advance and make this clear to the reader.\n\n6. Figure 2: To directly assess the effects of BAPTA/EGTA on axonal calcium levels it would be helpful to conduct the Fluo-4 experiments with BAPTA and EGTA treatments to show how efficient they are in suppressing calcium rise. More discussion of the different results from EGTA and BAPTA treatments would also be helpful. If EGTA blocks axon degeneration by reducing calcium influx (and therefore intracellular calcium), why does BAPTA has no effect at all, given it chelates elevated intracellular calcium too.\n\n7. It would also help to include a Sarm1 KO dataset in for the ATP/mito analysis in Figure 5. Also, more information should be provided about how this sensor was imaged and analyzed--was the ration of fluoresence measured?\n\n8. The authors should define \"n\" in all figure legends \u2013 as written it is unclear whether n represents individual axons, separate cultures, etc.Reviewer #1:\n\nThis paper addresses the sequence of cellular events that occurs downstream of axon severing and prior to axonal destruction. The authors emphasize the power of their in vitro assay system in which they can optically injure single axons and follow the consequences over time. The authors image ATP use, calcium levels, mitochondria mobility, mitochondria health (voltage) and membrane lipid content. Based on their imaging data, they propose a sequence of cell biological events leading to axonal destruction.\n\nReviewer #2:\n\nLoss of Sarm1 strongly protects injured axons from metabolic collapse and morphological fragmentation. The finding that Sarm1 is an injury-induced NADase has led to a working model in the field that Sarm1 drives down NAD levels, resulting in ATP loss followed by axon fragmentation. Ko, Milbrandt, and DiAntonio seek to define and order the cellular events between Sarm1 activation and axon fragmentation and to determine which require the NADase function of Sarm1. This latter point becomes more important in light of recent work by Marc Freeman's group showing an NADase-independent role for Sarm1 in 'bystander' un-injured neurons.\n\nThe premise of this work is that many of the terminal events in Wallerian degeneration have been identified in other studies (drop in ATP, pausing of mitochondrial movement, mitochondrial membrane depolarization, calcium influx, and phosphatidylserine exposure), but that their relative order has not been established in a single experimental system. The authors rightly point out that a clear ordering of the events in Wallerian degeneration is critical, and the live imaging approach that they develop is well-suited to answer the questions they pose.\n\nThe most pressing issue is whether the findings in this study are sufficiently novel as a stand-alone study. As the authors point out, the majority of their findings have been published in other studies, and in some cases have been ordered with respect to each other. As an example, injury-induced calcium influx has been shown to immediately precede axon fragmentation, which is itself caused by calcium-dependent calpains (Vargas\u2026Sagasti, 2015; Yang\u2026Tessier-Lavigne, 2013; both studies are cited in this manuscript).Reviewer #3:\n\nThis study investigates cellular events downstream of axotomy and SARM1 activation that leads to degeneration with single axon resolution. The authors find that SARM1 NADase activity leads to an ordered sequence of events beginning with loss of ATP, followed by mitochondrial dysfunction, calcium influx, externalization of phosphatidylserine and ending with loss of membrane integrity. Importantly, the findings highlight ATP loss as the point of no return for axotomized axons.\n",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "479464ee-9932-41df-b077-00d2f054213e",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C1",
+      "claim": "SARM1 is an inducible NAD+ hydrolase that triggers axon loss and neuronal cell death in the injured and diseased nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "SARM1 is an inducible NAD+ hydrolase that triggers axon loss and neuronal cell death in the injured and diseased nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that draws on established knowledge about SARM1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "332a2b26-9f99-4e2c-96dc-b5fea6fc367c",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C2",
+      "claim": "SARM1 activation and enzyme function are well defined.",
+      "claim_type": "EXPLICIT",
+      "source": "While SARM1 activation and enzyme function are well defined, the cellular events downstream of SARM1 activity but prior to axonal demise are much less well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "480cac20-a436-4c5a-8480-9e655b4811df",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C3",
+      "claim": "The cellular events downstream of SARM1 activity but prior to axonal demise are much less well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "While SARM1 activation and enzyme function are well defined, the cellular events downstream of SARM1 activity but prior to axonal demise are much less well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in current knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "2ba4743a-3de4-431e-b596-45dfd49594c3",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C4",
+      "claim": "Defects in calcium, mitochondria, ATP, and membrane homeostasis occur in injured axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in calcium, mitochondria, ATP, and membrane homeostasis occur in injured axons, but the relationships among these events have been difficult to disentangle because prior studies analyzed large collections of axons in which cellular events occur asynchronously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes prior findings in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "1828ae9c-e354-4263-bd8b-234bbf21c9e2",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C5",
+      "claim": "Prior studies analyzed large collections of axons in which cellular events occur asynchronously, making relationships among events difficult to disentangle.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in calcium, mitochondria, ATP, and membrane homeostasis occur in injured axons, but the relationships among these events have been difficult to disentangle because prior studies analyzed large collections of axons in which cellular events occur asynchronously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a methodological limitation of prior work.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "18bf224c-f15a-4c69-b6fd-6aa6210db5d3",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C6",
+      "claim": "SARM1 NADase activity leads to an ordered sequence of events from loss of cellular ATP, to defects in mitochondrial movement and depolarization, followed by calcium influx, externalization of phosphatidylserine, and loss of membrane permeability prior to catastrophic axonal self-destruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies support a model in which SARM1 NADase activity leads to an ordered sequence of events from loss of cellular ATP, to defects in mitochondrial movement and depolarization, followed by calcium influx, externalization of phosphatidylserine, and loss of membrane permeability prior to catastrophic axonal self-destruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by live imaging data presented in multiple figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "3b4698b5-11a6-4ee1-a0fe-b213461f2179",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C7",
+      "claim": "SARM1 is the central executioner of pathological axon degeneration, an early feature of many neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "SARM1 is the central executioner of pathological axon degeneration, an early feature of many neurodegenerative diseases (Figley and DiAntonio, 2020; Krauss et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "f4a005de-392e-4b9d-92a1-ef6d30ed9644",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C8",
+      "claim": "SARM1 is the founding member of the TIR-domain family of NAD+ hydrolases.",
+      "claim_type": "EXPLICIT",
+      "source": "SARM1 is the founding member of the TIR-domain family of NAD+ hydrolases (Essuman et al., 2018; Essuman et al., 2017), and a metabolic sensor activated by disrupted NAD+ homeostasis (Figley et al., 2021; Gilley et al., 2015; Sasaki et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "320c557a-5f68-459e-a582-5a9249d67f3e",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C9",
+      "claim": "SARM1 is a metabolic sensor activated by disrupted NAD+ homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "SARM1 is the founding member of the TIR-domain family of NAD+ hydrolases (Essuman et al., 2018; Essuman et al., 2017), and a metabolic sensor activated by disrupted NAD+ homeostasis (Figley et al., 2021; Gilley et al., 2015; Sasaki et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "86cc8413-ab10-4a90-896e-f9d6e1e75886",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C10",
+      "claim": "Activation of the SARM1 NADase depletes cellular NAD+ and initiates a metabolic crisis that ultimately leads to axon degeneration and/or neuronal cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the SARM1 NADase depletes cellular NAD+ and initiates a metabolic crisis that ultimately leads to axon degeneration and/or neuronal cell death (Essuman et al., 2017; Gerdts et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "4c6627cd-8aea-4ada-b2aa-b60cbd14269b",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C11",
+      "claim": "Loss of SARM1 is profoundly protective in animal models of multiple neurodegenerative diseases including nerve injury, peripheral neuropathies, traumatic brain injury, glaucoma, retinitis pigmentosa, and Leber congenital amaurosis.",
+      "claim_type": "EXPLICIT",
+      "source": "SARM1 is a compelling target for therapeutic intervention, as loss of SARM1 is profoundly protective in animal models of multiple neurodegenerative diseases including nerve injury, peripheral neuropathies, traumatic brain injury, glaucoma, retinitis pigmentosa, and Leber congenital amaurosis (Geisler et al., 2016; Gerdts et al., 2013; Henninger et al., 2016; Ko et al., 2020; Osterloh et al., 2012; Ozaki et al., 2020; Sasaki et al., 2020b; Turkiew et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "237d94db-e63b-40e1-bebc-8c1cbac64022",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C12",
+      "claim": "SARM1 is a druggable target as an enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as an enzyme, SARM1 is a druggable target, and both small molecule inhibitors and gene therapeutics effectively block axon degeneration (Bosanac et al., 2021; Geisler et al., 2019; Hughes et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "8c9a5fee-a499-47f0-b6f6-9c97e615b448",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C13",
+      "claim": "Both small molecule inhibitors and gene therapeutics effectively block axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as an enzyme, SARM1 is a druggable target, and both small molecule inhibitors and gene therapeutics effectively block axon degeneration (Bosanac et al., 2021; Geisler et al., 2019; Hughes et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "2d3d7dba-8537-4cfe-b526-325176c72b5a",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C14",
+      "claim": "SARM1 NADase activity is essential for injury-induced axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "SARM1 and its NADase activity are essential for injury-induced axon degeneration, and the SARM1 enzyme is activated within 1\u20132 hr after injury in cultured DRG neurons (Sasaki et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "850804fb-ae4c-4dca-a4ba-76ca35d4385a",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C15",
+      "claim": "The SARM1 enzyme is activated within 1\u20132 hr after injury in cultured DRG neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "SARM1 and its NADase activity are essential for injury-induced axon degeneration, and the SARM1 enzyme is activated within 1\u20132 hr after injury in cultured DRG neurons (Sasaki et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "32ac4bc1-96e8-4802-8ccf-f29009038e9a",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C16",
+      "claim": "Axonal fragmentation occurs approximately 4\u20136 hr after injury in cultured DRG neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Axonal fragmentation occurs much later in this system, with axons fragmenting approximately 4\u20136 hr after injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a temporal observation in the experimental system.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "8f470d44-b4f2-4979-a483-327e650922fc",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C17",
+      "claim": "Numerous molecular and cellular events occur in the time between SARM1 activation and axon loss, including calcium influx, mitochondrial stalling and depolarization, loss of ATP, and disrupted membrane integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous molecular and cellular events occur in the time between SARM1 activation and axon loss, including calcium influx, mitochondrial stalling and depolarization, loss of ATP, and disrupted membrane integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes known events that occur during axon degeneration.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "bdd4c596-6d4d-4230-9f32-352185230892",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C18",
+      "claim": "Hours after injury there is a large influx of calcium that precedes axonal fragmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior live imaging studies have demonstrated that hours after injury there is a large influx of calcium that precedes axonal fragmentation, and blocking this late calcium entry with EGTA inhibits axon fragmentation (Adalbert et al., 2012; Loreto et al., 2015; Vargas et al., 2015; Wang et al., 2000; Yong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "2a27bac4-9380-4cec-9f06-744f531edc88",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C19",
+      "claim": "Blocking late calcium entry with EGTA inhibits axon fragmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior live imaging studies have demonstrated that hours after injury there is a large influx of calcium that precedes axonal fragmentation, and blocking this late calcium entry with EGTA inhibits axon fragmentation (Adalbert et al., 2012; Loreto et al., 2015; Vargas et al., 2015; Wang et al., 2000; Yong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "cf4ce653-9b6b-4c4b-8200-1c4555437fb7",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C20",
+      "claim": "Loss of mitochondrial mobility in injured axons is SARM1-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In SARM1 KO neurons expressing GFP, mitochondrial movement was unchanged 4 hr after injury. In contrast, the number of motile mitochondria declines precipitously between 2 and 4 hr after injury in SARM1 KO axons re-expressing SARM1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing SARM1 KO neurons expressing GFP vs SARM1, shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "0aa3fa19-3cae-4dca-9437-0855b6cc01c0",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C21",
+      "claim": "Loss of mitochondrial mobility in injured axons requires SARM1 NADase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Catalytically inactive SARM1(E642A) is expressed at similar levels to wild-type (WT) SARM1 (Figure 1\u2014figure supplement 1), but did not result in loss of mobile mitochondria after injury (Figure 1A and B). Hence, the loss of mitochondrial mobility in injured axons is not only SARM1-dependent, but also SARM1 NADase-dependent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the lack of effect of catalytically inactive SARM1(E642A) on mitochondrial mobility, shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "916082c7-2ed8-4dbb-88da-0ba78685b023",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C22",
+      "claim": "Injury-induced loss of mitochondrial potential is SARM1-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Injury-induced loss of mitochondrial potential is also SARM1-dependent (Geisler et al., 2019), and so here we investigated whether or not this effect also requires a functional SARM1 NADase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "5a23568e-095c-4344-aa2e-82196e0e13a1",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C23",
+      "claim": "Loss of mitochondrial membrane potential after injury requires SARM1 NADase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As with mitochondrial dynamics, expression of WT SARM1, but not SARM1(E642A), leads to a dramatic loss of mitochondrial membrane potential after injury (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing effects of WT SARM1 vs SARM1(E642A) on TMRM staining, shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "3ebfa22a-c384-4416-a70a-ba6ac23d1f09",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C24",
+      "claim": "The SARM1-induced decline in cytosolic NAD+ levels either directly or indirectly influences bioenergetics inside the mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that SARM1 NADase activity is required for loss of mitochondrial membrane potential suggests that the SARM1-induced decline in cytosolic NAD+ levels either directly or indirectly influences bioenergetics inside the mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the requirement of NADase activity for mitochondrial depolarization.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "d7501e24-e581-448d-a876-e282cbae7ab4",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C25",
+      "claim": "Calcium influx into injured axons requires SARM1 NADase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Axons show no calcium rise in SARM1 KO neurons expressing either GFP or SARM1(E642A), but have a significant increase in calcium when expressing WT SARM1 (Figure 1E and F). Hence, the loss of calcium homeostasis in injured axons also requires SARM1 NADase activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing calcium influx (Fluo-4 staining) in SARM1 KO neurons expressing GFP, WT SARM1, or SARM1(E642A), shown in Figure 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "b562acf5-2262-4c99-a00a-236f279ea3f3",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C26",
+      "claim": "SARM1 enzyme activity is essential for not only axon degeneration but also for the major proximate events that occur in injured mammalian axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings support the view that SARM1 enzyme activity is essential for not only axon degeneration (Essuman et al., 2017), but also for the major proximate events that occur in injured mammalian axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data showing NADase-dependence of mitochondrial and calcium changes, combined with prior citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "ab0fcbb8-e28d-4f6d-b08b-0dfb6ea3093e",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C27",
+      "claim": "Pre-incubation with the MPTP inhibitor Cyclosporin A (CsA) does not delay the timing of axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to prior findings, we observed no delay in the timing of axon degeneration with CsA treatment (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by axon degeneration assays with CsA treatment shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "3f528650-8e73-4d26-87e0-6b9673454df1",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C28",
+      "claim": "CsA treatment has no significant effect on the increase in intracellular calcium after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assayed the increase in intracellular calcium after injury and again found no significant effect of CsA (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by calcium measurements with CsA treatment shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "86fbe6b5-fb50-4980-ac87-fedbb105a5c5",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C29",
+      "claim": "Incubation with 10 \u00b5M BAPTA to chelate intracellular calcium has no influence on the progression of axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "To further explore the role of intracellular calcium, we incubated DRG neurons with 10 \u00b5M BAPTA to chelate intracellular calcium for 30 min prior to axotomy. This treatment had no influence on the progression of axon degeneration (Figure 2C), and was also unable to fully buffer the influx of extracellular calcium that occurs hours after injury (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by axon degeneration assays with BAPTA treatment shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "a9b92f14-db80-431e-b73a-80215cfbf842",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C30",
+      "claim": "Internal calcium is not a major determinant of injury-induced axon degeneration in this system.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that internal calcium is not a major determinant of injury-induced axon degeneration in this system; however, it may play a role in scenarios where SARM1 is less potently activated (Li et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the lack of effect of intracellular calcium chelation on axon degeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "8bf8f1ca-25cd-4220-ba61-1d75e3a059c9",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C31",
+      "claim": "Pre-incubation with 3 mM EGTA potently blocked injury-induced calcium influx and maintained morphologically intact axons for up to 48 hr after axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with prior studies, we find that pre-incubation with 3 mM EGTA potently blocked injury-induced calcium influx and maintained morphologically intact axons for up to 48 hr after axotomy (Figure 2D and E; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments with EGTA treatment shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "63e90ad9-1b88-4cad-b0e5-8109cfd889b0",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C32",
+      "claim": "The presence of EGTA from 0 to 2 hr after axotomy has no impact on the timing of axon fragmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of EGTA from 0 to 2 hr after axotomy had no impact on the timing of axon fragmentation, while addition of EGTA 2 hr post-axotomy was as protective as treatment at the time of axotomy (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by time-course experiments with EGTA shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "f230de71-648b-4201-9960-0bda7067393e",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C33",
+      "claim": "Addition of EGTA 2 hr post-axotomy is as protective as treatment at the time of axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of EGTA from 0 to 2 hr after axotomy had no impact on the timing of axon fragmentation, while addition of EGTA 2 hr post-axotomy was as protective as treatment at the time of axotomy (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by time-course experiments with EGTA shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "2c527331-724b-4cfe-ad77-693e16d8aa4e",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C34",
+      "claim": "Late influx of extracellular calcium is critical for axon degeneration in DRG axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, late influx of extracellular calcium is critical for axon degeneration in DRG axons, a finding consistent with previous reports (Vargas et al., 2015; Witte et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the EGTA timing experiments, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "8248adeb-65f1-4bb2-a2ec-4c8eb349a5fd",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C35",
+      "claim": "Severed axons develop prominent axonal swellings following extracellular calcium chelation.",
+      "claim_type": "EXPLICIT",
+      "source": "While these results are consistent with prior work highlighting the importance of extracellular calcium for axon degeneration, we did observe that severed axons developed prominent axonal swellings following extracellular calcium chelation (Figure 2D, red arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the EGTA experiments shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "641e47cd-c84b-48ce-9d56-cda6fd6cd68c",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C36",
+      "claim": "Mitochondria potential is lost by four hours post-axotomy whether or not EGTA is present.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that mitochondria potential is lost by four hours post-axotomy whether or not EGTA is present (Figure 2F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by TMRM staining in axons with and without EGTA shown in Figure 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "5dc8d3f0-5efe-4ec8-829d-49cad920b1bf",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C37",
+      "claim": "EGTA treatment fails to maintain mitochondrial mobility after axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, EGTA treatment fails to maintain mitochondrial mobility after axotomy (Figure 2H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by mitochondrial movement assays with EGTA shown in Figure 2H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "2ee55bba-92d8-4848-8b33-907a2694444e",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C38",
+      "claim": "Treatment with EGTA halts mitochondrial movement and disrupts mitochondrial depolarization after 4 hr even in the absence of injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, treatment with EGTA halts mitochondrial movement and disrupts mitochondrial depolarization (Figure 2\u2014figure supplement 1) after 4 hr even in the absence of injury, demonstrating that chelating extracellular calcium is not an effective method to maintain healthy axons, and instead disrupts normal axonal physiology.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments on uninjured axons treated with EGTA shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "c827d77b-7c74-446c-9f94-83ef8c4c64e2",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C41",
+      "claim": "Immediately after axotomy, a first peak of calcium bidirectionally propagates along the axon from the injury site.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediately after axotomy, a first peak of calcium bidirectionally propagates along the axon from the injury site (white triangle). This elevated intracellular calcium is rapidly cleared, demonstrating that calcium homeostasis functions normally at this time, and is consistent with prior work and the findings in Figure 2E that the initial influx of calcium does not contribute to axon fragmentation (Adalbert et al., 2012; Loreto et al., 2015; Vargas et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by live imaging of calcium with GCaMP6 shown in Figure 3B and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "734f351d-266a-4306-870b-206d28c6e82c",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C42",
+      "claim": "The elevated intracellular calcium after initial injury is rapidly cleared, demonstrating that calcium homeostasis functions normally at this time.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediately after axotomy, a first peak of calcium bidirectionally propagates along the axon from the injury site (white triangle). This elevated intracellular calcium is rapidly cleared, demonstrating that calcium homeostasis functions normally at this time, and is consistent with prior work and the findings in Figure 2E that the initial influx of calcium does not contribute to axon fragmentation (Adalbert et al., 2012; Loreto et al., 2015; Vargas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that the first calcium peak is rapidly cleared.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "9fd727ea-223d-4455-82ff-98b2dc73c1e8",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C43",
+      "claim": "The initial influx of calcium does not contribute to axon fragmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "This elevated intracellular calcium is rapidly cleared, demonstrating that calcium homeostasis functions normally at this time, and is consistent with prior work and the findings in Figure 2E that the initial influx of calcium does not contribute to axon fragmentation (Adalbert et al., 2012; Loreto et al., 2015; Vargas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work and data in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "df4813cb-534e-4b1c-8e38-3909ebb3b79a",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C44",
+      "claim": "After nearly 4 hours, there is a large second influx of calcium that precedes any obvious change in axonal morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "After nearly 4 hours, there is a large second influx of calcium that precedes any obvious change in axonal morphology. Soon thereafter, the axon thins and small swellings appear, then the axon swellings enlarge, and finally the axon fragments (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by live imaging shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "d939dc8e-8aa6-4f3d-b48d-2da8efc71c3b",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C45",
+      "claim": "The time to the appearance of the second calcium peak varies dramatically, from less than four hours to nearly 10 hr after axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "From analysis of 22 single axons, we found that the time to the appearance of the second calcium peak varied dramatically, from less than four hours to nearly 10 hr after axotomy (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by analysis of 22 single axons shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "c01918fb-9a16-4ab3-a2af-5c06b156810e",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C46",
+      "claim": "Once the second peak of calcium appears, the axon fragments soon thereafter, with degeneration occurring ~100 min after initiation of calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "However, once the second peak of calcium appeared, the axon fragmented soon thereafter. The correlation between the initiation of the second peak of calcium and axon degeneration was very strong (Figure 3D), with degeneration occurring ~100 min after initiation of calcium influx.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by analysis of 22 single axons shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "73e79109-36f5-4198-9436-2dee20602386",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C47",
+      "claim": "Neither the duration nor intensity of the second calcium peak is well correlated with the timing of axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, neither the duration nor intensity of the second calcium peak was well correlated with the timing of axon degeneration (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by correlation analysis shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "44cb1089-9df3-440d-af68-8b333808cf36",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C48",
+      "claim": "The very tight correlation between the initiation of the second influx of calcium and axonal fragmentation is consistent with the hypothesis that this calcium triggers the final disintegration of the axon.",
+      "claim_type": "EXPLICIT",
+      "source": "The very tight correlation between the initiation of the second influx of calcium and axonal fragmentation is consistent with the hypothesis that this calcium triggers the final disintegration of the axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the strong temporal correlation observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "5268115c-a158-4f4a-86c7-c68abcc54f18",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C49",
+      "claim": "Mitochondrial movement stops before the influx of calcium in injured axons.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4A and in contrast to expectations, mitochondrial movement stops before the influx of calcium. Analysis of this single axon shows that fewer mitochondria are moving 3 hr after axotomy (Figure 4B), and that all mitochondrial are stalled by 4.4 hr after injury (Figure 4B, inset). At this point, the GCaMP6 signal is unchanged from baseline, but begins to rise soon thereafter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simultaneous imaging of mitochondrial movement and calcium shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "87f88c87-c641-4391-86a5-0fc7f11ec781",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C50",
+      "claim": "Loss of mitochondrial mobility precedes calcium influx by ~25 min in injured axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis of single injured axons demonstrates that loss of mitochondrial mobility precedes calcium influx in each case, and this occurs ~25 min after mitochondria stop (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis of single axons shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "8b4b98e3-b5e3-4352-9ce3-9549616fd878",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C51",
+      "claim": "Loss of mitochondrial mobility in injured axons cannot be due to calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, loss of mitochondrial mobility in injured axons cannot be due to calcium influx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that mitochondria stop before calcium influx.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "3106ef6d-7531-4458-936c-921698ace718",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C52",
+      "claim": "The drastic drop in mitochondrial potential occurs prior to the large increase in calcium in injured axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the example shown, the abrupt drop in mitochondrial potential occurs one frame prior to the large increase in calcium. To assess this across axons, we identified the time at which the TMRM and GCaMP6 signal showed the largest frame-to-frame variation (Figure 4F and G and Figure 4\u2014figure supplement 1). We found that the drastic drop of TMRM intensity occurs one frame prior to the large increase in calcium in five out of seven axons (71.43%), while these changes occurred during the same frame in two out of seven axons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simultaneous imaging of mitochondrial potential (TMRM) and calcium (GCaMP6) shown in Figure 4D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "1e51e8e7-b291-42d3-af7b-679ca470a896",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C53",
+      "claim": "In injured axons mitochondria begin depolarizing prior to the calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "The images are taken ten minutes apart, and so these data indicate that in injured axons mitochondria begin depolarizing prior to the calcium influx (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the timing analysis of TMRM and GCaMP6 signals shown in Figure 4G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "7e87fed5-092d-4195-bbe0-40102ecc1d76",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C54",
+      "claim": "The data demonstrate a sequence of events in which first mitochondria stop, then begin losing their potential, and after that calcium enters the axon which subsequently degenerates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these data, in conjunction with the analysis of mitochondrial mobility and calcium influx above, demonstrate a sequence of events in which first mitochondria stop, then begin losing their potential, and after that calcium enters the axon which subsequently degenerates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined temporal analyses of mitochondrial mobility, potential, and calcium.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "0cf83c24-f520-4387-bf5c-5277b310fbe8",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C55",
+      "claim": "The loss of ATP in injured distal axons is fully SARM1 dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of ATP in injured distal axons is fully SARM1 dependent (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ATP measurements in wild-type vs SARM1 KO axons shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "f2960ca6-0994-423a-83cd-1f34c91851fd",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C56",
+      "claim": "PercevalHR gives a reasonable estimate of changing ATP levels in axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Using HPLC to measure axonal metabolites, we previously demonstrated that a 2 hr treatment with 50 \u03bcM CCCP lowers ATP by ~60 % in DRG axons (Summers et al., 2014). The same CCCP treatment leads to an ~70 % drop in the fluorescence level of PercevalHR (Figure 5\u2014figure supplement 1), demonstrating that PercevalHR gives a reasonable estimate of changing ATP levels in axons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing CCCP effects on ATP (measured by HPLC) and PercevalHR fluorescence, shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "07530835-c57d-4de2-9bc6-2f23e0aff1bb",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C57",
+      "claim": "In every axon, the percent drop in the ATP sensor is larger than the percent drop in the fraction of mobile mitochondria at 3.5 hr after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "In every axon, the percent drop in the ATP sensor was larger than the percent drop in the fraction of mobile mitochondria (Figure 5B left), and there was a strong correlation between the extent of ATP loss and mitochondrial stalling (Figure 5B right; R2 = 0.61, n = 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by paired analysis of ATP and mitochondrial mobility shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "35070ef9-8f80-4d03-8501-19bf804b3b06",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C58",
+      "claim": "There is a strong correlation between the extent of ATP loss and mitochondrial stalling (R2 = 0.61).",
+      "claim_type": "EXPLICIT",
+      "source": "In every axon, the percent drop in the ATP sensor was larger than the percent drop in the fraction of mobile mitochondria (Figure 5B left), and there was a strong correlation between the extent of ATP loss and mitochondrial stalling (Figure 5B right; R2 = 0.61, n = 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by correlation analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "b49025e9-299c-4c3b-8094-995de87b2fe3",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C60",
+      "claim": "The extent of ATP loss by 3.5 hr after injury is a strong predictor of when mitochondrial will ultimately stop moving in an injured axon.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the extent of ATP loss by 3.5 hr after injury is a strong predictor of when mitochondrial will ultimately stop moving in an injured axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the strong correlation between ATP loss and time to mitochondrial stalling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "b7b57373-8279-4068-ad05-509fa386ada4",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C61",
+      "claim": "All results are consistent with the model that ATP loss causes loss of mitochondrial mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "All these results are consistent with the model that ATP loss causes loss of mitochondrial mobility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the temporal and correlative relationships between ATP loss and mitochondrial stalling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "2b214eba-3040-4a46-9a5a-caa6531dd4c7",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C62",
+      "claim": "Calcium influx precedes phosphatidylserine exposure in injured axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the example shown, calcium rises first, followed by staining with Annexin-V, and soon thereafter the mRuby3 signal declines indicative of axon fragmentation (Figure 6A). Indeed, in all cells analyzed calcium influx preceded phosphatidylserine exposure, and occurred ~0.51 \u00b1 0.04 (hr) prior to Annexin-V staining (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simultaneous imaging of calcium (GCaMP6) and phosphatidylserine exposure (Annexin-V) shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "1f049a88-7823-4086-ac52-c1c6000a1a65",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C63",
+      "claim": "Calcium influx occurs ~0.51 \u00b1 0.04 hr prior to Annexin-V staining in injured axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in all cells analyzed calcium influx preceded phosphatidylserine exposure, and occurred ~0.51 \u00b1 0.04 (hr) prior to Annexin-V staining (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis of timing shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "d3aa5758-4a5d-4ce2-93c5-357705afd1f0",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C64",
+      "claim": "The influx of calcium and/or the decline in ATP likely triggers the loss of membrane asymmetry during axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium can inhibit the ATP-dependent flippase that maintains phosphatidylserine on the inner leaflet (Bitbol et al., 1987; Soupene, 2008), and so the influx of calcium and/or the decline in ATP likely triggers the loss of membrane asymmetry during axon degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known mechanisms of flippase inhibition and the observed temporal relationships.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "18a1782d-6171-4032-b5ef-0126d51cbe35",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C65",
+      "claim": "Dextran-3kDa is only observed in fragmented axons, not in swollen axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In uninjured neurons, cytosolic GFP fills the axon while the dextran is excluded (Figure 6C). After injury, axon swelling is apparent, and mitochondrial localize to these swellings (Figure 7\u2014figure supplement 1). The swellings retain GFP and still exclude dextran. Later, discrete puncta of dextran appear in axonal fragments, and such fragments contain no visible GFP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging of GFP and dextran shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "290de54e-dca0-40f1-9425-e32aaf8c9e72",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C66",
+      "claim": "Axon swellings burst, releasing soluble GFP and allowing entry to the high-molecular-weight dextran.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret this as axon swellings that burst, releasing soluble GFP and allowing entry to the high-molecular-weight dextran (Figure 6C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observation that dextran appears in fragments that lack GFP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "86edefe9-ce62-4177-8283-fc8ddb115cec",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C67",
+      "claim": "By 4 hr after axotomy of wild-type neurons, dextran is present throughout the axons, indicative of a loss of membrane integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "By 4 hr after axotomy of wild-type neurons, dextran is present throughout the axons, indicative of a loss of membrane integrity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dextran uptake experiments shown in Figure 6D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "2c80194a-3c56-4b57-8e8f-d8ac55e571a3",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C68",
+      "claim": "In axotomized SARM1 KO neurons, dextran is excluded from axons for at least 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In axotomized SARM1 KO neurons, dextran is excluded from axons for at least 48 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dextran uptake experiments shown in Figure 6D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "44d0cbd1-c101-4f8f-b36d-b7022c82b98d",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C69",
+      "claim": "When wild-type neurons are incubated with EGTA, injured axons still swell but dextran is excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when wild-type neurons are incubated with EGTA, injured axons still swell (arrowheads, Figure 6D), but dextran is excluded (Figure 6D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dextran uptake experiments with EGTA shown in Figure 6D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "2bd1da9a-0b60-4dbf-a7e6-2d3c76a8c27d",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C70",
+      "claim": "Calcium is necessary for the loss of membrane integrity and the morphological transition from axonal swelling to fragmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that calcium is necessary for the loss of membrane integrity and the morphological transition from axonal swelling to fragmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that EGTA blocks dextran entry and fragmentation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "2d73be9e-e27a-46ae-913e-fc1ebd8424d4",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C71",
+      "claim": "Following activation of SARM1, NAD+ is cleaved and its levels drop rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Following activation of SARM1, NAD+ is cleaved and its levels drop rapidly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the model presented in the Discussion, based on prior knowledge and the current study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "d4fe6dc5-6f98-4127-af82-7aa20baaaa3a",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C72",
+      "claim": "Upon robust NAD+ depletion, both glycolysis and oxidative phosphorylation will be impaired, and so ATP production will decline.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon robust NAD+ depletion, both glycolysis and oxidative phosphorylation will be impaired, and so ATP production will decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known role of NAD+ in metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "8cc63c7a-d2de-4539-b2a4-f4bfa03d9f62",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C73",
+      "claim": "Loss of ATP impacts molecular motors, leading to the observed halting of mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "This loss of ATP will impact molecular motors, leading to the observed halting of mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known ATP-dependence of molecular motors and the observed correlation between ATP loss and mitochondrial stalling.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "ab02618b-1426-4085-94db-3bb46f7699b7",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C74",
+      "claim": "The loss of NAD+ and ATP likely disrupts mitochondrial homeostasis, leading to loss of membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Soon after mitochondria halt, they lose their membrane potential. Since this occurs before calcium increases, this cannot be due to calcium overload. Instead, the loss of NAD+ and ATP likely disrupts mitochondrial homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the temporal sequence and known metabolic requirements of mitochondria.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "4fe5622c-71d3-4d83-89ae-e563b4676feb",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C75",
+      "claim": "The loss of ATP is a likely culprit for calcium influx, as ionic pumps require ATP and their loss will lead to disrupted calcium extrusion, membrane depolarization, and calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "We next observed influx of extracellular calcium. The loss of ATP is a likely culprit, as ionic pumps require ATP and their loss will lead to disrupted calcium extrusion, membrane depolarization, and calcium influx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known ATP-dependence of ion pumps and the observed temporal sequence.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "00c33eb8-0c95-4a18-8329-fdf2c527bb89",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C76",
+      "claim": "Loss of ATP and calcium influx may both contribute to the externalization of phosphatidylserine.",
+      "claim_type": "EXPLICIT",
+      "source": "After this large influx of calcium, the subsequent exposure of phosphatidylserine to the outer leaflet of the membrane is likely due to the failure of lipid flippases to maintain asymmetry. Since these flippases are ATP-dependent and can be inhibited by calcium (Bitbol et al., 1987; Pomorski and Menon, 2006; Soupene, 2008), loss of ATP and calcium influx may both contribute to the externalization of phosphatidylserine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known mechanisms of flippase regulation and the observed temporal relationships.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "a0dfdfa1-b3b2-4659-a1e8-88870dc7fc5f",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C77",
+      "claim": "The ultimate loss of membrane integrity requires influx of extracellular calcium, as EGTA blocks fragmentation of injured axons.",
+      "claim_type": "EXPLICIT",
+      "source": "The ultimate loss of membrane integrity, however, requires influx of extracellular calcium, as EGTA blocks fragmentation of injured axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the EGTA experiments showing blocked fragmentation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "30a2c1d2-9310-4eb6-a868-f1c8d45c937e",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C78",
+      "claim": "Calcium influx is merely leading to the morphological destruction of axons that are already physiologically dead.",
+      "claim_type": "EXPLICIT",
+      "source": "While calcium influx has long been assumed to the be the essential final step in axon loss, our findings suggest instead that calcium influx is merely leading to the morphological destruction of axons that are already physiologically dead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that EGTA-treated axons maintain structure but have dysfunctional mitochondria.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "8cb741b8-a2f7-4a37-98e0-e3402193796e",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C79",
+      "claim": "ATP loss is the likely point of no return for an injured axon, disrupting mitochondrial, calcium, and membrane homeostasis and thereby triggering axonal demise.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our findings highlight ATP loss as the likely point of no return for an injured axon, disrupting mitochondrial, calcium, and membrane homeostasis and thereby triggering axonal demise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the temporal sequence of events and the observation that ATP loss precedes all other dysfunctions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "13010ee2-2611-4635-9aea-ef555e122050",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C80",
+      "claim": "Mitochondria are transported by ATP-dependent molecular motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria are transported by ATP-dependent molecular motors, and so we hypothesized that loss of ATP may cause loss of mitochondrial mobility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mitochondrial transport mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "9787046d-3601-4227-a5b0-0ec3a3442221",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C81",
+      "claim": "Catalytically inactive SARM1(E642A) is expressed at similar levels to wild-type SARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Catalytically inactive SARM1(E642A) is expressed at similar levels to wild-type (WT) SARM1 (Figure 1\u2014figure supplement 1), but did not result in loss of mobile mitochondria after injury (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Western blot analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "50c5d92c-1e64-462c-9a1f-d3bddbd6939f",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C82",
+      "claim": "Most ATP loss occurs between 3 and 4 hr after injury in bulk injured axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on ATP measurements from bulk injured axons, we knew that most ATP loss occurred between 3 and 4 hr after injury (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by ATP measurements shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "7a9c9468-c6a8-47fa-96e2-09a7fd1d6e31",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C83",
+      "claim": "Phosphatidylserine is preferentially found in the inner leaflet of the plasma membrane in healthy membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "In healthy membranes, phosphatidylserine is preferentially found in the inner leaflet of the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about membrane lipid asymmetry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "86b7f3bd-21ab-47ff-ae99-831863c1b3df",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C84",
+      "claim": "In cells undergoing apoptosis and in degenerating axons, phosphatidylserine is exposed on the outer leaflet where it serves as an 'eat-me' signal to phagocytic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells undergoing apoptosis and in degenerating axons, phosphatidylserine is exposed on the outer leaflet where it serves as an 'eat-me' signal to phagocytic cells (Sapar et al., 2018; Segawa and Nagata, 2015; Shacham-Silverberg et al., 2018; Wakatsuki and Araki, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "199bd418-0075-4f51-8ca3-0f8015a15c2d",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C85",
+      "claim": "Calcium can inhibit the ATP-dependent flippase that maintains phosphatidylserine on the inner leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium can inhibit the ATP-dependent flippase that maintains phosphatidylserine on the inner leaflet (Bitbol et al., 1987; Soupene, 2008), and so the influx of calcium and/or the decline in ATP likely triggers the loss of membrane asymmetry during axon degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "09d63fd5-6b92-40d3-97d8-363c312f5db1",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C86",
+      "claim": "Most axonal swellings overlap with mitochondria in injured axons.",
+      "claim_type": "EXPLICIT",
+      "source": "After injury, axon swelling is apparent, and mitochondrial localize to these swellings (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging of GFP and MitoDR shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "a450ff0f-d132-46be-975e-7cfa65f992a5",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C87",
+      "claim": "A 2 hr treatment with 50 \u03bcM CCCP lowers ATP by ~60% in DRG axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Using HPLC to measure axonal metabolites, we previously demonstrated that a 2 hr treatment with 50 \u03bcM CCCP lowers ATP by ~60 % in DRG axons (Summers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "f0149deb-e236-4e6f-a68a-eccfc82f328f",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C88",
+      "claim": "Treatment with 50 \u03bcM CCCP for 2 hr leads to an ~70% drop in the fluorescence level of PercevalHR.",
+      "claim_type": "EXPLICIT",
+      "source": "The same CCCP treatment leads to an ~70 % drop in the fluorescence level of PercevalHR (Figure 5\u2014figure supplement 1), demonstrating that PercevalHR gives a reasonable estimate of changing ATP levels in axons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by PercevalHR imaging with CCCP treatment shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "da66fc4b-f064-488f-9963-86fd503fb70f",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C89",
+      "claim": "The absolute timing of cellular events varies dramatically from axon to axon during degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we used live imaging of single axons to monitor structural and physiological changes during axon degeneration. While the absolute timing of cellular events varied dramatically from axon to axon, the relative timing was quite consistent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the single axon imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "27b1a159-dc92-45ab-8128-8ba3ac288215",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C90",
+      "claim": "The relative timing of cellular events during axon degeneration is quite consistent across axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we used live imaging of single axons to monitor structural and physiological changes during axon degeneration. While the absolute timing of cellular events varied dramatically from axon to axon, the relative timing was quite consistent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the single axon imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "e868b4fb-4131-4599-b921-d924af3deac6",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C91",
+      "claim": "Live imaging of single axons allows ordering of cellular events, which is not possible when averaging responses from many axons that are responding asynchronously.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, this method allowed us to order cellular events, which is not possible when averaging responses from many axons that are responding asynchronously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological conclusion about the advantages of single axon imaging.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "52af4872-c846-4cca-8421-d0cba616c9d3",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C92",
+      "claim": "SARM1 is a mitochondrial associated protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This is of particular interest because SARM1 is a mitochondrial associated protein and so alternate mechanisms of action are plausible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about SARM1 localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "1912e7fe-d868-4032-accd-54bce17b604c",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C93",
+      "claim": "An NADase-independent function of SARM1 was recently described in Drosophila for organelle stalling after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, such an NADase-independent function was recently described in Drosophila for organelle stalling after injury (Hsu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "ced208db-b14c-4dff-934e-a5305862e3af",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C94",
+      "claim": "Loreto et al. found that injury-dependent mitochondrial stalling in superior cervical ganglion axons did not depend on SARM1, although loss of mitochondrial potential did depend on SARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, Loreto et al presented the even more surprising finding that injury-dependent mitochondrial stalling in superior cervical ganglion axons did not depend on SARM1, although loss of mitochondrial potential did depend on SARM1 (Loreto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "eedc0abd-1e40-4f61-9811-7f4ceebe3672",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C95",
+      "claim": "Hsu et al. demonstrated that injury-dependent organelle stalling can be SARM1-dependent but NADase-independent in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Hsu et al. working in Drosophila demonstrated that injury-dependent organelle stalling can be SARM1-dependent but NADase-independent (Hsu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "5e26e0a1-0ff1-4d54-99a9-c4a51ebbba24",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C96",
+      "claim": "Treatment with 3 mM EGTA for 4 hr decreases mitochondrial membrane potential in uninjured axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, treatment with EGTA halts mitochondrial movement and disrupts mitochondrial depolarization (Figure 2\u2014figure supplement 1) after 4 hr even in the absence of injury, demonstrating that chelating extracellular calcium is not an effective method to maintain healthy axons, and instead disrupts normal axonal physiology.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "a3566a0e-d4b7-43d7-9662-d720e008c578",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "claim_id": "C97",
+      "claim": "Pretreatment with 3 mM EGTA or 10 \u00b5M BAPTA decreases calcium influx after axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of 3 mM EGTA and 10 \u00b5M BAPTA influence Calcium influx after axotomy. D) Pretreatment with 3 mM EGTA or 10 \u00b5M BAPTA decreases Calcium influx. Statistical analysis using a one-way ANOVA (F (2,15) = 19.04, p < 0.0001, n = 6 embryos) and Sidak's multiple comparison testing finds a decrease in calcium influx upon 3 mM EGTA (t = 6.109, p < 0.0001) or 10 \u00b5M BAPTA (t = 3.806, p = 0.0034) treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d0733247-c3a1-4c38-bf4a-058849b0dc13",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background knowledge about SARM1 as a NAD+ hydrolase that executes axon degeneration in neurodegenerative diseases, is activated within 1-2 hours after injury, and represents a therapeutic target. These claims summarize the established state of the field based on prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 are well-supported by extensive citations to prior literature. These background claims accurately represent the current understanding of SARM1 function, activation, and therapeutic potential. The claims are appropriately attributed to prior work and provide necessary context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "2621ecb7-dc7e-4eac-bda6-1a082325accf",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior studies have identified defects in calcium, mitochondria, ATP, and membrane homeostasis in injured axons, but the asynchronous nature of bulk axon cultures has made it difficult to determine the temporal relationships among these events. The manuscript identifies this as a key gap that motivates the single-axon imaging approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C16-C19 accurately describe limitations of prior work and establish the rationale for the current study. The claims are supported by appropriate citations and correctly identify that temporal ordering of events has been challenging with bulk culture approaches. This provides strong justification for the methodological innovation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "9173950c-54d9-413f-892f-31d07efc5041",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Loss of mitochondrial mobility, mitochondrial membrane potential, and calcium influx in injured axons all require SARM1 NADase activity, as demonstrated by comparing wild-type SARM1 to catalytically inactive SARM1(E642A) in SARM1 KO neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C23, C25-C26, and C81 are well-supported by data in Figure 1. The use of catalytically inactive SARM1(E642A) as a control is appropriate, expression levels are verified by Western blot (Figure 1\u2014figure supplement 1), and the experiments demonstrate NADase-dependence for all three phenotypes. The statistical analyses are appropriate with sufficient replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "790a1bfd-51a4-4bb3-b874-0ea8287578a1",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The SARM1-induced decline in cytosolic NAD+ levels either directly or indirectly influences mitochondrial bioenergetics, as evidenced by the requirement of NADase activity for loss of mitochondrial membrane potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C24 are supported by the data showing NADase-dependence of mitochondrial depolarization (Figure 1C-D) combined with prior knowledge (C22 cites Geisler et al., 2019). The inference that NAD+ depletion affects mitochondrial bioenergetics is reasonable given the known role of NAD+ in mitochondrial metabolism, though the mechanism (direct vs. indirect) remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "59a96b4b-f566-472d-968b-43c27e85e531",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neither MPTP inhibition with Cyclosporin A nor intracellular calcium chelation with BAPTA prevents axon degeneration or significantly affects calcium dynamics after injury, indicating that intracellular calcium is not a major determinant of injury-induced axon degeneration in this system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by data in Figure 2A-C and Figure 2\u2014figure supplement 1. The experiments appropriately test the role of intracellular calcium using two different approaches (MPTP inhibition and direct calcium chelation). The conclusion that intracellular calcium is not a major determinant is justified by the lack of effect on degeneration timing, though the caveat about SARM1 activation strength (C30) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "98d9540b-2e17-407f-8e1c-e4fa58c2ed0b",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Extracellular calcium chelation with EGTA blocks axon fragmentation when applied 2 hours or more after injury, but not when applied only during the first 2 hours, demonstrating that late influx of extracellular calcium is critical for axon degeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are well-supported by the EGTA timing experiments in Figure 2D-E. The experimental design appropriately tests the temporal requirement for extracellular calcium by varying the timing of EGTA application. The conclusion that late calcium influx is critical is supported by the data and consistent with prior literature (cited in C34).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "199726a8-c19b-401a-981d-adff48c71ca8",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "EGTA-treated injured axons develop prominent swellings and lose both mitochondrial potential and mobility despite maintaining morphological integrity. EGTA also disrupts mitochondrial function in uninjured axons, indicating it does not maintain healthy axonal physiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 and C96 are supported by data in Figure 2D, F-I and Figure 2\u2014figure supplement 1. The observation that EGTA blocks fragmentation but not mitochondrial dysfunction is critical for interpreting the role of calcium. The finding that EGTA is toxic to uninjured axons (C38, C96) is an important control that challenges the interpretation of EGTA protection as maintaining healthy axons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "05860057-e149-4753-bd40-92980ea4e0d3",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Single-axon live imaging reveals two distinct calcium peaks after injury: an initial bidirectional wave that is rapidly cleared, and a second large influx occurring 4-10 hours after injury that is tightly correlated with axon fragmentation (~100 min later). The absolute timing varies dramatically between axons, but the relative timing is consistent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48 and C89-C91 are well-supported by single-axon imaging data in Figure 3 and Video 1. The analysis of 22 single axons provides sufficient statistical power. The strong correlation between second calcium peak initiation and fragmentation (Figure 3D) contrasts with weak correlations for duration and intensity (Figure 3E-F), supporting the interpretation that calcium influx timing is critical. The methodological innovation of single-axon imaging is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "52dbcebf-2661-4f9e-80a3-5d71245d3460",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mitochondrial movement stops approximately 25 minutes before calcium influx in injured axons, demonstrating that loss of mitochondrial mobility cannot be due to calcium influx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 are supported by simultaneous imaging of mitochondrial movement and calcium in single axons (Figure 4A-C). The temporal analysis clearly shows mitochondria stop before calcium rises in all analyzed axons (n=9). The conclusion that calcium does not cause mitochondrial stalling is logically sound based on this temporal ordering.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "46d0caa6-30cf-4323-8031-db4dde98a9be",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mitochondrial depolarization begins prior to calcium influx in injured axons, establishing a temporal sequence where mitochondria first stop moving, then begin losing potential, and finally calcium enters the axon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by simultaneous imaging of mitochondrial potential (TMRM) and calcium (GCaMP6) in Figure 4D-G. The analysis shows that in 5/7 axons the TMRM drop precedes calcium rise by one frame (10 min), with the remaining 2/7 occurring in the same frame. While the temporal resolution is limited (10 min intervals), the data support the conclusion that mitochondrial depolarization precedes or is coincident with calcium influx.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "7aef503c-634e-4ad9-8ebe-3501118721e5",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ATP loss in injured axons is fully SARM1-dependent, and the PercevalHR sensor provides a reasonable estimate of ATP changes in axons, as validated by comparison with HPLC measurements of CCCP-treated axons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56, C82, C87-C88 are supported by data in Figure 5\u2014figure supplement 1 and 2. The validation of PercevalHR against HPLC measurements (C87-C88) is appropriate, showing ~60% ATP loss by HPLC corresponds to ~70% PercevalHR drop. The SARM1-dependence of ATP loss (C55) is clearly demonstrated. This establishes PercevalHR as a suitable tool for the subsequent single-axon ATP measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "4fe3e08b-dd92-4ad9-9001-ef19d10cdb2d",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ATP loss precedes and correlates with mitochondrial stalling in injured axons. At 3.5 hours post-injury, ATP loss is always greater than the loss of mitochondrial mobility, and the extent of ATP loss strongly predicts when mitochondria will stop (R\u00b2=0.76), consistent with ATP depletion causing loss of ATP-dependent mitochondrial motors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58, C60-C61, C73, and C80 are supported by single-axon imaging data in Figure 5. The paired analysis showing ATP loss exceeds mitochondrial stalling at 3.5 hr (C57) and the strong correlation between ATP loss and time to mitochondrial stopping (R\u00b2=0.76, C60) provide compelling evidence. The inference that ATP loss causes mitochondrial stalling via effects on molecular motors (C61, C73) is reasonable given established knowledge (C80) and the temporal/correlative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "8857d125-5724-47a4-b2d4-be490ce418f1",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Calcium influx precedes phosphatidylserine externalization by approximately 0.51 hours in injured axons. The loss of membrane asymmetry is likely triggered by calcium and/or ATP loss inhibiting ATP-dependent flippases that maintain phosphatidylserine on the inner leaflet.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by simultaneous imaging of calcium and Annexin-V in Figure 6A-B (n=10 axons). The temporal relationship is clearly established. The mechanistic inference (C64) is reasonable given established knowledge about flippase regulation by calcium and ATP (C83-C85, supported by citations). However, the mechanism cannot be directly tested due to the calcium requirement for Annexin-V binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "c89ff2aa-c22a-4281-984c-77fd48babc40",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Loss of membrane integrity, as measured by dextran uptake, occurs only in fragmented axons and requires calcium influx. EGTA blocks dextran entry and prevents the morphological transition from swelling to fragmentation, demonstrating that calcium is necessary for membrane integrity loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 and C77 are supported by dextran uptake experiments in Figure 6C-E. The observation that dextran appears only in fragments (C65) and the interpretation of bursting swellings (C66) are reasonable. The EGTA experiments clearly show that calcium is required for membrane permeabilization (C69-C70), as EGTA-treated axons exclude dextran despite swelling. The conclusion is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "6881b9f8-761a-47bc-b404-8305591eaed9",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study supports a model where SARM1 NADase activity leads to an ordered sequence: NAD+ depletion \u2192 ATP loss \u2192 mitochondrial dysfunction \u2192 calcium influx \u2192 phosphatidylserine externalization \u2192 membrane permeabilization \u2192 fragmentation. ATP loss is identified as the likely point of no return, with calcium influx merely triggering morphological destruction of physiologically dead axons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C71-C79 represent the main conclusions and mechanistic model. The ordered sequence is well-supported by the temporal analyses from single-axon imaging. The inference that ATP loss is the point of no return (C79) is supported by the observation that EGTA blocks fragmentation but not mitochondrial dysfunction. The mechanistic links (C72, C74-C76) are reasonable inferences based on established biochemistry, though direct causal testing is limited. The reinterpretation of calcium's role (C78) is a significant conceptual advance supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "3730c6bc-68a5-418b-8e62-bb2f5043b343",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Most axonal swellings overlap with mitochondria in injured axons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 is supported by imaging data in Figure 7\u2014figure supplement 1 showing colocalization of mitochondria (MitoDR) with axonal swellings (GFP). This observation is consistent with mitochondrial stalling preceding swelling formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "78aed1a7-ca87-4eff-b020-813c10fed049",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior work in Drosophila and mammalian superior cervical ganglion neurons has suggested NADase-independent or SARM1-independent mechanisms for mitochondrial stalling, motivating the current investigation of whether mammalian DRG neurons show NADase-dependent mitochondrial phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C95 accurately summarize prior work (supported by citations to Hsu et al., 2021 and Loreto et al., 2015) that raised questions about the universality of NADase-dependent mechanisms. This provides appropriate context for why the authors tested NADase-dependence in their system. The current study's findings (C20-C21, C23, C25) resolve this question for mammalian DRG neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    },
+    {
+      "id": "7e2e01eb-2758-4876-87dd-df5be57238a0",
+      "content_id": "b3407b50-d42b-45bd-9142-ab6d8dd5a170",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Pretreatment with 3 mM EGTA or 10 \u00b5M BAPTA decreases calcium influx after axotomy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 is supported by data in Figure 2\u2014figure supplement 1 showing statistically significant decreases in calcium influx with both EGTA and BAPTA treatment (one-way ANOVA with post-hoc testing, n=6 embryos). This confirms that both chelators can reduce calcium influx, though only EGTA blocks fragmentation (likely due to differences in extracellular vs. intracellular chelation).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:56.807710Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "479464ee-9932-41df-b077-00d2f054213e",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "332a2b26-9f99-4e2c-96dc-b5fea6fc367c",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "480cac20-a436-4c5a-8480-9e655b4811df",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "3b4698b5-11a6-4ee1-a0fe-b213461f2179",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "f4a005de-392e-4b9d-92a1-ef6d30ed9644",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "320c557a-5f68-459e-a582-5a9249d67f3e",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "86cc8413-ab10-4a90-896e-f9d6e1e75886",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "4c6627cd-8aea-4ada-b2aa-b60cbd14269b",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "237d94db-e63b-40e1-bebc-8c1cbac64022",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "8c9a5fee-a499-47f0-b6f6-9c97e615b448",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "2d3d7dba-8537-4cfe-b526-325176c72b5a",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "850804fb-ae4c-4dca-a4ba-76ca35d4385a",
+      "result_id": "d0733247-c3a1-4c38-bf4a-058849b0dc13"
+    },
+    {
+      "claim_id": "2ba4743a-3de4-431e-b596-45dfd49594c3",
+      "result_id": "2621ecb7-dc7e-4eac-bda6-1a082325accf"
+    },
+    {
+      "claim_id": "1828ae9c-e354-4263-bd8b-234bbf21c9e2",
+      "result_id": "2621ecb7-dc7e-4eac-bda6-1a082325accf"
+    },
+    {
+      "claim_id": "32ac4bc1-96e8-4802-8ccf-f29009038e9a",
+      "result_id": "2621ecb7-dc7e-4eac-bda6-1a082325accf"
+    },
+    {
+      "claim_id": "8f470d44-b4f2-4979-a483-327e650922fc",
+      "result_id": "2621ecb7-dc7e-4eac-bda6-1a082325accf"
+    },
+    {
+      "claim_id": "bdd4c596-6d4d-4230-9f32-352185230892",
+      "result_id": "2621ecb7-dc7e-4eac-bda6-1a082325accf"
+    },
+    {
+      "claim_id": "2a27bac4-9380-4cec-9f06-744f531edc88",
+      "result_id": "2621ecb7-dc7e-4eac-bda6-1a082325accf"
+    },
+    {
+      "claim_id": "cf4ce653-9b6b-4c4b-8200-1c4555437fb7",
+      "result_id": "9173950c-54d9-413f-892f-31d07efc5041"
+    },
+    {
+      "claim_id": "0aa3fa19-3cae-4dca-9437-0855b6cc01c0",
+      "result_id": "9173950c-54d9-413f-892f-31d07efc5041"
+    },
+    {
+      "claim_id": "5a23568e-095c-4344-aa2e-82196e0e13a1",
+      "result_id": "9173950c-54d9-413f-892f-31d07efc5041"
+    },
+    {
+      "claim_id": "d7501e24-e581-448d-a876-e282cbae7ab4",
+      "result_id": "9173950c-54d9-413f-892f-31d07efc5041"
+    },
+    {
+      "claim_id": "b562acf5-2262-4c99-a00a-236f279ea3f3",
+      "result_id": "9173950c-54d9-413f-892f-31d07efc5041"
+    },
+    {
+      "claim_id": "9787046d-3601-4227-a5b0-0ec3a3442221",
+      "result_id": "9173950c-54d9-413f-892f-31d07efc5041"
+    },
+    {
+      "claim_id": "916082c7-2ed8-4dbb-88da-0ba78685b023",
+      "result_id": "790a1bfd-51a4-4bb3-b874-0ea8287578a1"
+    },
+    {
+      "claim_id": "3ebfa22a-c384-4416-a70a-ba6ac23d1f09",
+      "result_id": "790a1bfd-51a4-4bb3-b874-0ea8287578a1"
+    },
+    {
+      "claim_id": "ab0fcbb8-e28d-4f6d-b08b-0dfb6ea3093e",
+      "result_id": "59a96b4b-f566-472d-968b-43c27e85e531"
+    },
+    {
+      "claim_id": "3f528650-8e73-4d26-87e0-6b9673454df1",
+      "result_id": "59a96b4b-f566-472d-968b-43c27e85e531"
+    },
+    {
+      "claim_id": "86fbe6b5-fb50-4980-ac87-fedbb105a5c5",
+      "result_id": "59a96b4b-f566-472d-968b-43c27e85e531"
+    },
+    {
+      "claim_id": "a9b92f14-db80-431e-b73a-80215cfbf842",
+      "result_id": "59a96b4b-f566-472d-968b-43c27e85e531"
+    },
+    {
+      "claim_id": "8bf8f1ca-25cd-4220-ba61-1d75e3a059c9",
+      "result_id": "98d9540b-2e17-407f-8e1c-e4fa58c2ed0b"
+    },
+    {
+      "claim_id": "63e90ad9-1b88-4cad-b0e5-8109cfd889b0",
+      "result_id": "98d9540b-2e17-407f-8e1c-e4fa58c2ed0b"
+    },
+    {
+      "claim_id": "f230de71-648b-4201-9960-0bda7067393e",
+      "result_id": "98d9540b-2e17-407f-8e1c-e4fa58c2ed0b"
+    },
+    {
+      "claim_id": "2c527331-724b-4cfe-ad77-693e16d8aa4e",
+      "result_id": "98d9540b-2e17-407f-8e1c-e4fa58c2ed0b"
+    },
+    {
+      "claim_id": "8248adeb-65f1-4bb2-a2ec-4c8eb349a5fd",
+      "result_id": "199726a8-c19b-401a-981d-adff48c71ca8"
+    },
+    {
+      "claim_id": "641e47cd-c84b-48ce-9d56-cda6fd6cd68c",
+      "result_id": "199726a8-c19b-401a-981d-adff48c71ca8"
+    },
+    {
+      "claim_id": "5dc8d3f0-5efe-4ec8-829d-49cad920b1bf",
+      "result_id": "199726a8-c19b-401a-981d-adff48c71ca8"
+    },
+    {
+      "claim_id": "2ee55bba-92d8-4848-8b33-907a2694444e",
+      "result_id": "199726a8-c19b-401a-981d-adff48c71ca8"
+    },
+    {
+      "claim_id": "5e26e0a1-0ff1-4d54-99a9-c4a51ebbba24",
+      "result_id": "199726a8-c19b-401a-981d-adff48c71ca8"
+    },
+    {
+      "claim_id": "c827d77b-7c74-446c-9f94-83ef8c4c64e2",
+      "result_id": "05860057-e149-4753-bd40-92980ea4e0d3"
+    },
+    {
+      "claim_id": "734f351d-266a-4306-870b-206d28c6e82c",
+      "result_id": "05860057-e149-4753-bd40-92980ea4e0d3"
+    },
+    {
+      "claim_id": "9fd727ea-223d-4455-82ff-98b2dc73c1e8",
+      "result_id": "05860057-e149-4753-bd40-92980ea4e0d3"
+    },
+    {
+      "claim_id": "df4813cb-534e-4b1c-8e38-3909ebb3b79a",
+      "result_id": "05860057-e149-4753-bd40-92980ea4e0d3"
+    },
+    {
+      "claim_id": "d939dc8e-8aa6-4f3d-b48d-2da8efc71c3b",
+      "result_id": "05860057-e149-4753-bd40-92980ea4e0d3"
+    },
+    {
+      "claim_id": "c01918fb-9a16-4ab3-a2af-5c06b156810e",
+      "result_id": "05860057-e149-4753-bd40-92980ea4e0d3"
+    },
+    {
+      "claim_id": "73e79109-36f5-4198-9436-2dee20602386",
+      "result_id": "05860057-e149-4753-bd40-92980ea4e0d3"
+    },
+    {
+      "claim_id": "44cb1089-9df3-440d-af68-8b333808cf36",
+      "result_id": "05860057-e149-4753-bd40-92980ea4e0d3"
+    },
+    {
+      "claim_id": "da66fc4b-f064-488f-9963-86fd503fb70f",
+      "result_id": "05860057-e149-4753-bd40-92980ea4e0d3"
+    },
+    {
+      "claim_id": "27b1a159-dc92-45ab-8128-8ba3ac288215",
+      "result_id": "05860057-e149-4753-bd40-92980ea4e0d3"
+    },
+    {
+      "claim_id": "e868b4fb-4131-4599-b921-d924af3deac6",
+      "result_id": "05860057-e149-4753-bd40-92980ea4e0d3"
+    },
+    {
+      "claim_id": "5268115c-a158-4f4a-86c7-c68abcc54f18",
+      "result_id": "52dbcebf-2661-4f9e-80a3-5d71245d3460"
+    },
+    {
+      "claim_id": "87f88c87-c641-4391-86a5-0fc7f11ec781",
+      "result_id": "52dbcebf-2661-4f9e-80a3-5d71245d3460"
+    },
+    {
+      "claim_id": "8b4b98e3-b5e3-4352-9ce3-9549616fd878",
+      "result_id": "52dbcebf-2661-4f9e-80a3-5d71245d3460"
+    },
+    {
+      "claim_id": "3106ef6d-7531-4458-936c-921698ace718",
+      "result_id": "46d0caa6-30cf-4323-8031-db4dde98a9be"
+    },
+    {
+      "claim_id": "1e51e8e7-b291-42d3-af7b-679ca470a896",
+      "result_id": "46d0caa6-30cf-4323-8031-db4dde98a9be"
+    },
+    {
+      "claim_id": "7e87fed5-092d-4195-bbe0-40102ecc1d76",
+      "result_id": "46d0caa6-30cf-4323-8031-db4dde98a9be"
+    },
+    {
+      "claim_id": "0cf83c24-f520-4387-bf5c-5277b310fbe8",
+      "result_id": "7aef503c-634e-4ad9-8ebe-3501118721e5"
+    },
+    {
+      "claim_id": "f2960ca6-0994-423a-83cd-1f34c91851fd",
+      "result_id": "7aef503c-634e-4ad9-8ebe-3501118721e5"
+    },
+    {
+      "claim_id": "50c5d92c-1e64-462c-9a1f-d3bddbd6939f",
+      "result_id": "7aef503c-634e-4ad9-8ebe-3501118721e5"
+    },
+    {
+      "claim_id": "a450ff0f-d132-46be-975e-7cfa65f992a5",
+      "result_id": "7aef503c-634e-4ad9-8ebe-3501118721e5"
+    },
+    {
+      "claim_id": "f0149deb-e236-4e6f-a68a-eccfc82f328f",
+      "result_id": "7aef503c-634e-4ad9-8ebe-3501118721e5"
+    },
+    {
+      "claim_id": "07530835-c57d-4de2-9bc6-2f23e0aff1bb",
+      "result_id": "4fe3e08b-dd92-4ad9-9001-ef19d10cdb2d"
+    },
+    {
+      "claim_id": "35070ef9-8f80-4d03-8501-19bf804b3b06",
+      "result_id": "4fe3e08b-dd92-4ad9-9001-ef19d10cdb2d"
+    },
+    {
+      "claim_id": "b49025e9-299c-4c3b-8094-995de87b2fe3",
+      "result_id": "4fe3e08b-dd92-4ad9-9001-ef19d10cdb2d"
+    },
+    {
+      "claim_id": "b7b57373-8279-4068-ad05-509fa386ada4",
+      "result_id": "4fe3e08b-dd92-4ad9-9001-ef19d10cdb2d"
+    },
+    {
+      "claim_id": "8cc63c7a-d2de-4539-b2a4-f4bfa03d9f62",
+      "result_id": "4fe3e08b-dd92-4ad9-9001-ef19d10cdb2d"
+    },
+    {
+      "claim_id": "13010ee2-2611-4635-9aea-ef555e122050",
+      "result_id": "4fe3e08b-dd92-4ad9-9001-ef19d10cdb2d"
+    },
+    {
+      "claim_id": "2b214eba-3040-4a46-9a5a-caa6531dd4c7",
+      "result_id": "8857d125-5724-47a4-b2d4-be490ce418f1"
+    },
+    {
+      "claim_id": "1f049a88-7823-4086-ac52-c1c6000a1a65",
+      "result_id": "8857d125-5724-47a4-b2d4-be490ce418f1"
+    },
+    {
+      "claim_id": "d3aa5758-4a5d-4ce2-93c5-357705afd1f0",
+      "result_id": "8857d125-5724-47a4-b2d4-be490ce418f1"
+    },
+    {
+      "claim_id": "7a9c9468-c6a8-47fa-96e2-09a7fd1d6e31",
+      "result_id": "8857d125-5724-47a4-b2d4-be490ce418f1"
+    },
+    {
+      "claim_id": "86b7f3bd-21ab-47ff-ae99-831863c1b3df",
+      "result_id": "8857d125-5724-47a4-b2d4-be490ce418f1"
+    },
+    {
+      "claim_id": "199bd418-0075-4f51-8ca3-0f8015a15c2d",
+      "result_id": "8857d125-5724-47a4-b2d4-be490ce418f1"
+    },
+    {
+      "claim_id": "18a1782d-6171-4032-b5ef-0126d51cbe35",
+      "result_id": "c89ff2aa-c22a-4281-984c-77fd48babc40"
+    },
+    {
+      "claim_id": "290de54e-dca0-40f1-9425-e32aaf8c9e72",
+      "result_id": "c89ff2aa-c22a-4281-984c-77fd48babc40"
+    },
+    {
+      "claim_id": "86edefe9-ce62-4177-8283-fc8ddb115cec",
+      "result_id": "c89ff2aa-c22a-4281-984c-77fd48babc40"
+    },
+    {
+      "claim_id": "2c80194a-3c56-4b57-8e8f-d8ac55e571a3",
+      "result_id": "c89ff2aa-c22a-4281-984c-77fd48babc40"
+    },
+    {
+      "claim_id": "44d0cbd1-c101-4f8f-b36d-b7022c82b98d",
+      "result_id": "c89ff2aa-c22a-4281-984c-77fd48babc40"
+    },
+    {
+      "claim_id": "2bd1da9a-0b60-4dbf-a7e6-2d3c76a8c27d",
+      "result_id": "c89ff2aa-c22a-4281-984c-77fd48babc40"
+    },
+    {
+      "claim_id": "a0dfdfa1-b3b2-4659-a1e8-88870dc7fc5f",
+      "result_id": "c89ff2aa-c22a-4281-984c-77fd48babc40"
+    },
+    {
+      "claim_id": "18bf224c-f15a-4c69-b6fd-6aa6210db5d3",
+      "result_id": "6881b9f8-761a-47bc-b404-8305591eaed9"
+    },
+    {
+      "claim_id": "2d73be9e-e27a-46ae-913e-fc1ebd8424d4",
+      "result_id": "6881b9f8-761a-47bc-b404-8305591eaed9"
+    },
+    {
+      "claim_id": "d4fe6dc5-6f98-4127-af82-7aa20baaaa3a",
+      "result_id": "6881b9f8-761a-47bc-b404-8305591eaed9"
+    },
+    {
+      "claim_id": "ab02618b-1426-4085-94db-3bb46f7699b7",
+      "result_id": "6881b9f8-761a-47bc-b404-8305591eaed9"
+    },
+    {
+      "claim_id": "4fe5622c-71d3-4d83-89ae-e563b4676feb",
+      "result_id": "6881b9f8-761a-47bc-b404-8305591eaed9"
+    },
+    {
+      "claim_id": "00c33eb8-0c95-4a18-8329-fdf2c527bb89",
+      "result_id": "6881b9f8-761a-47bc-b404-8305591eaed9"
+    },
+    {
+      "claim_id": "30a2c1d2-9310-4eb6-a868-f1c8d45c937e",
+      "result_id": "6881b9f8-761a-47bc-b404-8305591eaed9"
+    },
+    {
+      "claim_id": "8cb741b8-a2f7-4a37-98e0-e3402193796e",
+      "result_id": "6881b9f8-761a-47bc-b404-8305591eaed9"
+    },
+    {
+      "claim_id": "09d63fd5-6b92-40d3-97d8-363c312f5db1",
+      "result_id": "3730c6bc-68a5-418b-8e62-bb2f5043b343"
+    },
+    {
+      "claim_id": "52af4872-c846-4cca-8421-d0cba616c9d3",
+      "result_id": "78aed1a7-ca87-4eff-b020-813c10fed049"
+    },
+    {
+      "claim_id": "1912e7fe-d868-4032-accd-54bce17b604c",
+      "result_id": "78aed1a7-ca87-4eff-b020-813c10fed049"
+    },
+    {
+      "claim_id": "ced208db-b14c-4dff-934e-a5305862e3af",
+      "result_id": "78aed1a7-ca87-4eff-b020-813c10fed049"
+    },
+    {
+      "claim_id": "eedc0abd-1e40-4f61-9811-7f4ceebe3672",
+      "result_id": "78aed1a7-ca87-4eff-b020-813c10fed049"
+    },
+    {
+      "claim_id": "a3566a0e-d4b7-43d7-9662-d720e008c578",
+      "result_id": "7e2e01eb-2758-4876-87dd-df5be57238a0"
+    }
+  ],
+  "comparisons": []
+}

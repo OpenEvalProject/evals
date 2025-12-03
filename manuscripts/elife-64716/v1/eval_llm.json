@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9"
+    ],
+    "result": "Polygenic embryo screening (PES) has been commercially available since 2019 despite limited comprehensive modeling of expected outcomes. Prior studies by companies offering PES suggested clinical utility but examined limited scenarios, primarily sibling pairs discordant for illness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, and C9 are well-supported by citations to prior work (Treff et al., 2019a; Lello et al., 2020). These claims accurately characterize the state of the field and provide appropriate context for the current study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C45"
+    ],
+    "result": "The high-risk exclusion (HRE) strategy, which excludes only embryos with very high PRS (e.g., top 2%), achieves minimal risk reduction because the overwhelming majority of affected individuals do not have extreme scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14, and C45 are supported by theoretical modeling (Figure 2), simulations with real genomes (Figure 6), and citations to prior literature. The theoretical predictions match empirical results for both schizophrenia and Crohn's disease, demonstrating consistency across methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C44"
+    ],
+    "result": "The lowest-risk prioritization (LRP) strategy, which selects the embryo with the lowest PRS, achieves substantial relative risk reductions (up to ~45-50% with n=5 embryos). Risk reduction increases with more embryos but with diminishing returns after n=5, and drops steeply below n=5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18, C19, C20, and C44 are strongly supported by theoretical modeling (Figure 2), Monte Carlo simulations, and validation with real genomes from schizophrenia and Crohn's disease cohorts (Figure 6). The consistency across multiple analytical approaches strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C25"
+    ],
+    "result": "Selection strategy is a strong determinant of PES utility, with LRP consistently outperforming HRE across all parameter combinations examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C25 represent a central finding demonstrated through comprehensive comparative analysis across multiple figures (Figures 2, 3, 6). The superiority of LRP over HRE is both theoretically predicted and empirically validated, making this a robust conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "Under HRE, relative risk reduction increases with parental PRS (especially when excluding only high-scoring embryos), while under LRP, relative risk reduction somewhat declines with increasing parental PRS. Parental disease status has relatively little impact on expected RRR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C26 are supported by theoretical analysis and simulations shown in Figure 3 and Figure 3\u2014figure supplement 1. The findings follow logically from the model assumptions and are consistent with the definitions of the strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "While relative risk reductions can be substantial, absolute risk reductions depend heavily on disease prevalence. For rare diseases like schizophrenia (K=1%), a 52% RRR translates to only ~0.5 percentage points absolute reduction, whereas for common diseases like type 2 diabetes (K>20%), the absolute reduction exceeds 8 percentage points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C31, C32, and C34 are supported by model predictions and calculations shown in Figure 3\u2014figure supplement 2. The mathematical relationship between relative and absolute risk reduction is correctly applied, and the examples illustrate the clinical importance of considering both metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C38",
+      "C79"
+    ],
+    "result": "The per-couple relative risk reduction (pcRRR) is relatively narrowly distributed around its mean and depends only weakly on average parental PRS. Population-averaged RRRs are not driven by a small proportion of couples, and pcRRR depends only on the average of maternal and paternal PRSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C37, C38, and C79 are supported by theoretical analysis and shown in Figure 4. The narrow distribution of pcRRR across couples is demonstrated empirically, and the mathematical derivation showing dependence only on average parental PRS is provided in the Appendix.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "When selecting for one disease, negatively correlated diseases show increased risk. For typical negative correlations (\u03c1=-0.1), risk increases are small (3.5-6%), but for strong negative correlations (\u03c1=-0.3), increases can reach 11-22% depending on prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, C41, and C42 are supported by simulations (Figure 5) and citations to LDHub data. The analysis appropriately considers pleiotropic effects, though it is limited to pairwise disease correlations and does not address multi-disease screening comprehensively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C65",
+      "C66"
+    ],
+    "result": "Analytical predictions closely match empirical risk reductions from simulations using real genomes from schizophrenia (~900 cases, ~1600 controls) and Crohn's disease (~150 cases, ~100 controls) case-control studies, with slight overestimation of RRR under LRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C65, and C66 are supported by the validation analysis shown in Figure 6. The close agreement between theory and simulations based on real genomes strengthens confidence in the model, though the slight overestimation under LRP is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "A gain of ~2.5 IQ points from selecting the highest-scoring embryo can prevent 33.5% of cases with IQ<70, illustrating how small shifts in quantitative traits can produce large reductions in dichotomous disease risk near thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C22 are supported by prior work (C21) and mathematical calculation based on normal distribution assumptions (C22). This example effectively illustrates the relationship between quantitative trait changes and dichotomous disease risk, though it relies on the assumption of a sharp threshold at IQ=70.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The liability threshold model (LTM) is consistent with family-based transmission and GWAS data. Complex diseases are highly polygenic, with at least ~350 independently associated loci for most traits, reaching ~10,000 or more for cognitive and psychiatric phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C48, and C49 are supported by multiple citations to established literature. These claims provide appropriate justification for the modeling approach, though the authors acknowledge the LTM may not apply to oligogenic or monogenic disorders.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C29",
+      "C30",
+      "C33"
+    ],
+    "result": "Common-variant SNP heritability is at most ~30% for highly heritable diseases like schizophrenia and celiac disease. Schizophrenia has prevalence \u22641% and current PRS explain ~8% of liability variance. Type 2 diabetes has prevalence >20% in the US.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C29, C30, and C33 are supported by appropriate citations to recent GWAS and epidemiological studies. These parameter values are used throughout the modeling and represent reasonable estimates based on current literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "PRS accuracy may be reduced in real-world settings due to population stratification, assortative mating, indirect parental effects, and genetic nurture. However, within-family disease risk prediction shows modest accuracy reduction, and within-sibling GWAS yield similar results to unrelated-GWAS for most physiological traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, C55, C56, C57, and C58 are supported by citations to recent literature. The authors appropriately acknowledge limitations of their model while noting that empirical evidence suggests these effects may be modest for disease prediction, though more substantial for cognitive/behavioral traits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "IVF success rates decline with maternal age, particularly after age 40, with <4% live birth rates for women >42. Evidence on trophectoderm biopsy safety is mixed: some studies show no adverse effects on implantation or child development, while others report associations with pregnancy complications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, C61, C62, and C63 are supported by citations to clinical literature. The authors appropriately present both sides of the evidence on biopsy safety, acknowledging uncertainty in this area. These claims provide important clinical context for interpreting the theoretical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Prior work by the authors showed that PES for quantitative traits has limited utility in most realistic scenarios, with score accuracy being more important than embryo number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 are supported by citation to the authors' prior work (Karavani et al., 2019). These claims provide appropriate context for the current study's focus on dichotomous disease outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Model assumptions regarding weak parental correlation for genetic disease risk and weak family-specific environmental effects for complex diseases are justified by prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 are supported by citations. These assumptions are reasonable for the modeling approach, though the authors acknowledge they represent simplifications of reality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Current clinical practice includes ranking embryos by morphology and using PRS to identify high-risk adults. However, PRSs have low sensitivity, making high-risk exclusion strategies relatively ineffective for reducing population disease burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C70, C71, C72, and C73 are supported by multiple citations to clinical and epidemiological literature. These claims provide important context for understanding why HRE strategies show limited effectiveness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Under the liability threshold model, most affected individuals are concentrated near the disease threshold, so even small reductions in liability can move many individuals below the threshold, explaining why LRP is effective for dichotomous traits despite small effects on quantitative traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C75 represent logical inferences from the properties of the liability threshold model, supported by the authors' theoretical framework and consistent with the empirical results. This provides important mechanistic insight into the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "In the first PES case report, the couple chose not to implant any embryo despite availability of normal-risk embryos, illustrating potential communication challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by citation to the case report (Treff et al., 2019a). This example illustrates practical challenges in implementing PES, though it is based on a single case.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C54",
+      "C77",
+      "C78"
+    ],
+    "result": "The study defines key terms: genetic nurture refers to trait-modifying environmental effects from parental genotypes; absolute risk reduction (ARR) is K-P(disease); per-couple relative risk reduction (pcRRR) is RRR conditional on couple PRSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C77, and C78 provide definitions that are standard (C54, C77) or newly introduced by the authors (C78). These definitions are clearly stated and consistently applied throughout the manuscript.",
+    "result_type": "MINOR"
+  }
+]

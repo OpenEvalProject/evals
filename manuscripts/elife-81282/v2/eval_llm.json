@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Thalamic task-evoked activity exhibits low-dimensional organization. PCA analysis revealed that the top 3 components explain 50% (MDTB) and 36% (N&N) of variance across tasks, and 10 components explain up to 57-73% of variance at the single-subject level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 provide converging evidence from group-level and single-subject PCA analyses across two independent datasets. The variance explained values are clearly reported with supporting figures, and the findings replicate across datasets and analysis levels, demonstrating robust low-dimensional organization of thalamic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Specific thalamic regions exhibit task hub properties with broad functional participation. The anterior, medial, and medio-posterior thalamus show strong task hub properties that spatially correspond with functional connectivity hubs, though with moderate cross-dataset consistency (r=0.36 for task hubs, r=0.55 for FC hubs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C22, C24, C26 demonstrate task hub identification with statistical support (p<0.001). However, C23 reveals modest spatial correlation between datasets (r=0.36), and C55, C73 show dataset-specific discrepancies in posterior thalamus. The moderate replication raises questions about the generalizability and robustness of specific hub locations, though the general principle of anterior-medial hub organization appears consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C48"
+    ],
+    "result": "Thalamic task hubs are coupled with frontoparietal associative cortices. Task hubs show significant spatial correspondence with FC hubs and strongest coupling with frontal and parietal cortical regions including lateral frontal, insula, dorsal medial prefrontal, and intraparietal cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C25, C48 provide consistent evidence across datasets showing spatial correspondence between task and FC hubs (p<0.001) and specific coupling patterns with frontoparietal regions (r=0.46 cross-dataset correlation). The convergence of task-based and connectivity-based measures strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C76",
+      "C77"
+    ],
+    "result": "Thalamic activity predicts cortical task activity patterns better than other brain regions. The thalamocortical activity flow model achieved normalized prediction accuracy of 0.5 (MDTB) and 0.62 (N&N), accounting for up to 38% of variance in cortical task-evoked activity, and outperformed models based on cortical, hippocampal, and striatal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31, C76-C77 provide comprehensive model comparison with appropriate noise ceiling normalization and statistical testing. The thalamocortical model significantly outperformed null models (p<0.001 for MDTB) and comparison brain regions (p=0.008-0.021). However, C30 notes one exception where the N&N model did not outperform the averaged pattern model (p=0.17), slightly tempering the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Virtual lesions to thalamic task hubs impair cortical activity prediction. Removing voxels with strong task hub properties systematically decreased prediction accuracy, with significant negative associations between hub percentile rank and prediction reduction (MDTB: b=-0.43, p<0.001; N&N: b=-0.1, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 demonstrate systematic virtual lesion effects with appropriate statistical modeling (regression analysis) and spatial localization. The dose-response relationship between hub strength and prediction impairment, replicated across both datasets, provides strong computational evidence for the functional importance of task hubs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Human lesion data partially support virtual lesion findings. Patients with multi-domain impairments (MM group, n=12) had lesions that overlapped with regions showing larger virtual lesion effects in the N&N dataset (p<0.001) but not MDTB (p=0.065), with no difference in lesion volumes between patient groups (p=0.39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C38 provide empirical lesion validation, but C38 reveals inconsistent results across datasets (significant for N&N but not MDTB). The small sample size (n=20 patients, 12 MM, 8 SM) and lack of replication in MDTB limit confidence. C37 appropriately controls for lesion volume, but the mixed findings suggest the relationship between lesion location and behavioral impairment may be more complex than the virtual lesion model predicts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Two multi-task fMRI datasets were analyzed with appropriate preprocessing. The MDTB dataset included 21 subjects performing 25 tasks, and the N&N dataset included 6 subjects performing 103 tasks, both preprocessed with fMRIPrep 20.1.1 with motion censoring (FD>0.2mm) and subject exclusion criteria (>40% censored data).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C57-C61 clearly describe the datasets and preprocessing pipeline. The use of standardized preprocessing (fMRIPrep) and explicit motion correction criteria are appropriate. However, the substantial difference in sample sizes (21 vs 6 subjects) and task numbers (25 vs 103) may contribute to cross-dataset inconsistencies observed elsewhere.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Task-evoked activity was successfully removed from functional connectivity estimates. GLM residuals were used for FC calculation, and validation showed weak correlations between task regressors and timeseries (mean r\u224810^-10), indicating minimal bias from task-evoked responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 describe an important methodological control with empirical validation. The extremely weak correlations (r\u224810^-10) provide strong evidence that task-evoked activity was successfully removed, addressing a potential confound in activity flow modeling. This strengthens the validity of the FC-based predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Patient lesion study methods are described. Twenty patients with focal thalamic stroke lesions were assessed with standardized neuropsychological tests, with scores converted to age-adjusted z-scores and impairment defined as z<-1.645, leading to classification into multi-domain (MM, n=12) and single-domain (SM, n=8) groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 provide clear description of patient selection, assessment methods, normalization procedures, and classification criteria. The use of standardized tests and age-adjusted norms is appropriate. However, the threshold for impairment (z<-1.645, ~95th percentile) and the criterion for multi-domain classification (>2 domains) are somewhat arbitrary and not statistically justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Two thalamic atlases were used to characterize task hub spatial distribution. The Morel atlas based on cytoarchitecture and a functional network atlas assigning voxels to seven cortical networks were employed to map task hub estimates across thalamic subdivisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 describe the anatomical characterization approach using complementary atlases. The use of both cytoarchitectonic (Morel) and functional (network-based) parcellations provides converging anatomical perspectives, though the network atlas assignment of thalamic voxels based on cortical networks involves assumptions about thalamocortical correspondence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior work established that thalamic network hubs are associated with multi-domain behavioral impairments and that the thalamus contains representations of cortical functional networks. These findings from previous studies (Hwang et al., 2017, 2021) provide the foundation for the current investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, C14 accurately cite prior work from the same research group and others. These citations establish the motivation and context for the current study. The claims are appropriately attributed to previous publications rather than presented as novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior research has established low-dimensional organization of cortical activity and the existence of multi-task cortical hubs. Dimensionality reduction reveals fewer variables than total data dimensions explain large variance, and frontoparietal regions participate broadly across tasks with diverse connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 accurately summarize established findings from the literature with appropriate citations. These background claims provide context for extending similar analyses to the thalamus. C10 appropriately notes the interpretive/theoretical nature of the low-dimensional organization reflecting elementary information processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C27",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Anatomical knowledge about thalamocortical connectivity is cited. Every cortical region receives projections from multiple thalamic nuclei, the thalamus mediates subcortical influences on cortex, consists of matrix and core cell types with different projection patterns, and receives inputs from multiple subcortical structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C27, C44-C46 accurately cite established neuroanatomical knowledge with appropriate references. These anatomical facts provide the structural basis for the functional hypotheses tested in the study. The claims are well-supported by classical and contemporary neuroanatomical literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C47",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Theoretical interpretations and speculations about thalamocortical function are proposed. The authors suggest the thalamus may regulate cortical activity patterns, influence selection/gain control, adjust inter-regional communication, and control task representations, drawing on prior studies and rodent models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C41, C47, C49-C51 mix supported citations (C41-C43, C47, C50) with explicit speculation (C40) and inference (C39, C51). While C40 is appropriately labeled as speculation, C51 extrapolates from rodent findings to human thalamocortical function without direct evidence. These interpretive claims go beyond what the data directly demonstrate and represent hypotheses rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Study limitations are acknowledged. The activity flow model cannot establish directionality of thalamic influence on cortical activity, brain systems likely operate via recurrent connectivity, and including all brain regions could improve model performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 appropriately acknowledge important limitations of the modeling approach. C52 correctly notes the correlational nature of the activity flow method, C53 recognizes the likely recurrent nature of thalamocortical interactions, and C54 cites prior work showing whole-brain models perform better. These are honest assessments of methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Dataset discrepancies in posterior thalamus task hub properties are noted as a limitation. The posterior thalamus showed strong task hub properties in MDTB but not N&N, potentially due to task differences or increased noise in N&N given fewer observations per task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 honestly report an important inconsistency between datasets. C55 states the empirical finding, while C56 offers speculation about causes. The acknowledgment of this limitation is appropriate, though it raises questions about which findings are robust versus dataset-specific. The speculation about noise (C56) is reasonable but untested.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The pathogenic L138F mutation causes constitutive Orai1 channel activation through steric clash with T92 on TM1. Large amino acid substitutions (Phe, Tyr) at L138 evoke gain-of-function channels, while small substitutions cause loss-of-function. L138 shows the highest number of TM1 contacts among TM2 residues (133 contacts), and the GOF phenotype depends on side-chain size and benzene ring presence rather than hydrophobicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C31-C50 provide converging experimental evidence from electrophysiology, structural analysis, and systematic mutagenesis. The atomic packing analysis (C38), rescue experiments with T92G (C53), and comprehensive L138 mutagenesis screen (C40-C47) strongly support the steric clash mechanism. FRET data (C48) and 2-APB activation (C49) rule out misfolding artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "T92 is the primary interaction partner for L138 in mediating the GOF phenotype. Rescue experiments show that T92G/L138F double mutant reverses constitutive activity, while A94G/L138F does not. Reciprocally, T92F produces constitutive channels that are rescued by L138G. The T92F/L138G double mutant restores STIM1-mediated gating, demonstrating that steric contacts at the L138-T92 interface are essential for proper channel gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C62 present systematic rescue experiments with clear reciprocal effects. The double mutant rescue experiments (C53, C59, C61) provide strong evidence for direct L138-T92 interaction. The structural proximity data (C51) and functional validation (C54) support the conclusions. The logic is internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Large amino acid substitutions at T92 (L/M/F/Y/W) produce highly active constitutively open channels with current densities of 25-35 pA/pF, substantially larger than L138 mutants (3-5 pA/pF). Small polar substitutions (G/A/S/C) retain store-operated behavior. The larger currents from T92 mutations compared to L138 mutations may result from the smaller endogenous Thr (140 \u00c5\u00b2) versus Leu (170 \u00c5\u00b2), creating greater steric clash.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 provide systematic mutagenesis data showing clear size-dependence of GOF phenotype at T92. The quantitative current measurements (C65, C68) are well-documented. The hypothesis about differential effects based on endogenous residue size (C69) is reasonable speculation supported by the data. Charged substitutions causing LOF (C70) parallels L138 findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C95",
+      "C96"
+    ],
+    "result": "L138F and T92W mutants exhibit rapid Ca\u00b2\u207a-dependent inactivation (CDI) in the absence of STIM1, contradicting the prevailing view that STIM1 is required for CDI. The inactivation shows divalent ion-dependence, voltage-dependence, and kinetics (\u03c4fast = 11\u00b11ms, \u03c4slow = 134\u00b116ms) comparable to WT Orai1 CDI. CDI extent correlates with side-chain size at these positions. This persists in STIM1/STIM2 knockout cells and is abolished by the E106D mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C73-C84, C95-C96 provide strong experimental evidence for STIM1-independent CDI. The kinetic analysis (C78-C79), knockout cell experiments (C95), and E106D control (C96) are rigorous. The correlation with side-chain size (C80-C82) strengthens the mechanistic link. This is a major finding that challenges established dogma (C3, C27-C28) with solid experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "T92W and L138F mutants show aberrant Ca\u00b2\u207a sensitivity for CDI with reversed buffer dependence compared to WT channels. T92W shows highest CDI in BAPTA (fast chelator) rather than EGTA (slow chelator). Analysis indicates the Ca\u00b2\u207a-sensitivity of inactivation is substantively increased in T92W, such that channels inactivate at lower [Ca\u00b2\u207a]i (~1.3 \u00b5M in BAPTA at -60mV) compared to WT (~5.6 \u00b5M in EGTA at -120mV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C88-C94, C99-C101 present systematic buffer manipulation experiments with clear quantitative analysis. The diffusion modeling (C99) provides mechanistic insight into the altered Ca\u00b2\u207a sensitivity. The reversed buffer dependence (C94) is well-documented across multiple conditions. The interpretation is logical though the diffusion model makes assumptions about channel parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Recovery from CDI in T92W channels is promoted by depolarizing pulses to +100mV that terminate Ca\u00b2\u207a influx. In EGTA, depolarization to +100mV results in enhanced current in the second hyperpolarizing pulse, with recovery inversely dependent on extracellular Ca\u00b2\u207a concentration. This indicates T92W channels accumulate in inactivated states at the holding potential in EGTA due to higher submembrane [Ca\u00b2\u207a]i.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 present paired-pulse experiments with clear Ca\u00b2\u207a-dependent effects. The interpretation (C105-C106) is consistent with the enhanced Ca\u00b2\u207a sensitivity model. The L138F control (C107) showing different behavior is appropriately explained by lower current density. The experimental design is sound and conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The Orai1 C-terminus contributes to CDI of T92W channels. Deletion of residues 267-301 reduces CDI extent from ~50% to ~25% at -100mV without affecting constitutive activity. The residual inactivation indicates additional regions outside the C-terminus also contribute to CDI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C109-C112 provide clear experimental evidence from C-terminal deletion mutants. The partial reduction in CDI (C110) without loss of constitutive activity (C109) is well-documented. The inference about additional CDI determinants (C112) is reasonable given incomplete CDI loss. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "N-terminal mutations show complex effects on T92W CDI. N-terminal truncation (\u03942-85) and K85E abolish T92W currents, indicating general requirement for gating. However, Y80A/E, W76E, and R83E mutations that eliminate WT Orai1 CDI paradoxically accelerate and enhance T92W CDI, revealing complexity in how these residues control inactivation and arguing against a simple inactivation gate model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115, C119-C122 present systematic N-terminal mutagenesis with unexpected results. The paradoxical enhancement of CDI by mutations that abolish WT CDI (C120-C121) is well-documented and challenges simple models. The conclusion (C122) appropriately acknowledges complexity. The data are rigorous though interpretation remains incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "STIM1 normalizes the aberrant Ca\u00b2\u207a sensitivity of T92W CDI. Co-expression with STIM1 reverses the buffer dependence, restoring robust CDI in EGTA and reducing it in BAPTA, making T92W behavior essentially identical to WT Orai1+STIM1. This normalization extends to the Y80E/T92W double mutant and is reminiscent of STIM1's normalization of Ca\u00b2\u207a selectivity in other GOF mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C123-C130 provide clear experimental evidence for STIM1's modulatory role. The complete reversal of buffer dependence (C126) is well-documented. The comparison to Ca\u00b2\u207a selectivity normalization (C130) provides useful context. The data strongly support STIM1's role in tuning CDI Ca\u00b2\u207a sensitivity rather than being absolutely required for CDI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The L138-T92 motif shows inverse size-dependence compared to H134 for channel activation. While large substitutions at L138/T92 cause GOF, small substitutions at H134 cause GOF. H134 and L138 are positioned one helical turn apart on opposite sides of TM1. A model is proposed where these residues function as pivot points for a 'brace' stabilizing the pore helix, with STIM1-mediated gating involving TM1 tilting and rotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C137 present an interesting comparative analysis (C132) supported by prior work (C133). However, the proposed gating model (C135-C137) is explicitly speculative (C136 states 'Although speculative'). While the structural positioning (C134) is factual, the mechanistic model lacks direct experimental validation in this study. The model is plausible but requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "A recent MD simulation study of the dOrai L210F mutation (equivalent to L138F) found the introduced Phe side-chain is stabilized in a clockwise rotated state, associated with counter-clockwise rotation of TM1, increased pore waters, and inner pore dilation consistent with channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 accurately cite prior MD simulation work (Zhang et al., 2021) that supports the proposed gating mechanism. This is appropriate use of published literature to contextualize the current findings. The claims are properly attributed to the cited study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors propose that CDI occurs independently of STIM1 with the Ca\u00b2\u207a binding site likely within Orai1 (possibly C-terminus), and that STIM1 functions to tune CDI Ca\u00b2\u207a-sensitivity. L138-T92 mutations may stabilize the inner pore in a conformation permissive for Ca\u00b2\u207a-driven inactivation, while other GOF mutations activate the gate without achieving this conformation, suggesting activation and inactivation determinants differ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 present reasonable conclusions from the experimental data. The STIM1-independence of CDI (C140) is well-supported by knockout experiments (C95). The tuning function (C141) is supported by normalization data (C127-C129). The proposed model (C142-C143) is speculative but consistent with all observations. The inference about different determinants (C144) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The increased Ca\u00b2\u207a sensitivity of T92W and L138F CDI likely explains their high INa/ICa ratios (inactivation relieved in Na\u207a). The presence of CDI in L138F may explain why this mutation causes milder clinical symptoms (tubular aggregate myopathy without hypocalcemia) compared to other GOF mutations, possibly by partially blunting steady-state open probability and constitutive Ca\u00b2\u207a entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 present reasonable inferences connecting the CDI findings to observed phenotypes. The explanation for high INa/ICa ratio (C145) is logical. The clinical correlation (C146) appropriately cites prior studies and offers a plausible mechanism. The speculation about blunted open probability (C147) is reasonable though not directly tested. These are appropriate interpretations of the data's implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background claims establishing the known properties of CRAC channels, including STIM1-dependent activation, channel structure, CDI characteristics, and disease associations. These include the prevailing view that STIM1 is essential for CDI, which is challenged by the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C29 accurately represent established knowledge from the literature, properly cited throughout. These provide essential context for evaluating the novelty of the current findings. The claims about STIM1 requirement for CDI (C3, C26-C28) represent the prevailing view that is challenged by this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C85",
+      "C86",
+      "C87",
+      "C98",
+      "C102",
+      "C108",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Background claims about CDI mechanisms, buffer properties, and prior mutagenesis studies. These include the differential effects of BAPTA vs EGTA on CDI, the estimated Ca\u00b2\u207a sensor distance from the pore (~3nm), and prior identification of N-terminal and C-terminal residues involved in CDI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C85-C87, C98, C102, C108, C116-C118 accurately cite established knowledge about CDI mechanisms and buffer properties. These provide essential methodological and conceptual framework for interpreting the current experiments. All claims are properly attributed to prior literature.",
+    "result_type": "MINOR"
+  }
+]

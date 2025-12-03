@@ -1,0 +1,1659 @@
+{
+  "submission": {
+    "id": "1d71a82d-fa1c-40d7-b8fb-85c2b5192f91",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:23:28.858959Z",
+    "updated_at": "2025-12-03T02:23:28.858959Z"
+  },
+  "content": [
+    {
+      "id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "submission_id": "1d71a82d-fa1c-40d7-b8fb-85c2b5192f91",
+      "content_type": "manuscript",
+      "content_text": "# In vivo proteomic mapping through GFP-directed proximity-dependent biotin labelling in zebrafish\n\n## Authors\n\n- Zherui Xiong<sup>1</sup> ([ORCID: 0000-0002-5038-5629](https://orcid.org/0000-0002-5038-5629))\n- Harriet P Lo<sup>1</sup>\n- Kerrie-Ann McMahon<sup>1</sup>\n- Nick Martel<sup>1</sup>\n- Alun Jones<sup>1</sup>\n- Michelle M Hill<sup>2</sup> ([ORCID: 0000-0003-1134-0951](https://orcid.org/0000-0003-1134-0951))\n- Robert G Parton<sup>1</sup> ([ORCID: 0000-0002-7494-5248](https://orcid.org/0000-0002-7494-5248)) \u2020\n- Thomas E Hall<sup>1</sup> ([ORCID: 0000-0002-7718-7614](https://orcid.org/0000-0002-7718-7614)) \u2020\n\n### Affiliations\n\n1. Institute for Molecular Bioscience, The University of Queensland Brisbane Australia\n2. QIMR Berghofer Medical Research Institute Herston Australia\n3. Centre for Microscopy and Microanalysis, The University of Queensland Brisbane Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nProtein interaction networks are crucial for complex cellular processes. However, the elucidation of protein interactions occurring within highly specialised cells and tissues is challenging. Here, we describe the development, and application, of a new method for proximity-dependent biotin labelling in whole zebrafish. Using a conditionally stabilised GFP-binding nanobody to target a biotin ligase to GFP-labelled proteins of interest, we show tissue-specific proteomic profiling using existing GFP-tagged transgenic zebrafish lines. We demonstrate the applicability of this approach, termed BLITZ (Biotin Labelling In Tagged Zebrafish), in diverse cell types such as neurons and vascular endothelial cells. We applied this methodology to identify interactors of caveolar coat protein, cavins, in skeletal muscle. Using this system, we defined specific interaction networks within in vivo muscle cells for the closely related but functionally distinct Cavin4 and Cavin1 proteins.\n\n## Introduction\n\nThe understanding of the biological functions of a protein requires detailed knowledge of the molecules with which it interacts. However, robust elucidation of interacting proteins, including not only strong direct protein-protein interactions, but also weak, transient or indirect interactions is challenging. Proximity-dependent biotin labelling (BioID) using genetically engineered biotin ligases has emerged as a novel approach for studying protein-protein interactions and the subcellular proteome in living cells (Roux et al., 2012; Kim et al., 2016; Branon et al., 2018; Ramanathan et al., 2018). When fused to a protein of interest (POI) and expressed in cells, the promiscuous biotin ligases covalently attach biotin to all proteins within a 10 nm radius, which can be subsequently isolated by streptavidin purification and identified by mass spectrometry. Compared with traditional affinity purification with protein-specific antibodies or affinity purification tags, the BioID method has the advantage of being able to capture weak and transient interactions. In addition, unlike conventional methods such as affinity purification, where stringent extraction conditions may disrupt protein-protein interactions, the BioID method does not require proteins to be isolated in their native state. Therefore, harsh protein extraction and stringent wash conditions can be applied, which can improve solubilisation of membrane proteins and reduce false positives (Varnait\u0117 and MacNeill, 2016; Gingras et al., 2019).\n\nThe BioID method has been widely applied in cell biology to study protein-protein interactions in cultured cells, providing valuable information for building protein interaction networks. However, the reductionist in vitro applications described to date, while powerful in their own right, lack the complexity and context to address phenomena that can only be modelled in vivo, for example the differentiation of specialised cell types such as those found in muscle, the nervous system, and vasculature. The most recent generation of biotin ligases has been applied in vivo in invertebrate models; flies (Drosophila melanogaster) and worms (Caenorhabditis elegans) as well as plants (Arabidopsis and Nicotiana benthamiana) (Branon et al., 2018; Mair et al., 2019; Zhang et al., 2019). Until now, however, the applicability of BioID has been limited by the necessity to genetically tag each POI directly with a biotin ligase and generate transgenic organisms. Here, we describe a more versatile approach to the in vivo application of BioID in a vertebrate model organism, the zebrafish. Instead of directly fusing the biotin ligase to a POI, we developed a modular system for GFP-directed proteomic mapping by combining BioID with a GFP-binding nanobody (Hamers-Casterman et al., 1993; Rothbauer et al., 2008; Tang et al., 2015; Ariotti et al., 2015a). This system couples the power of the BioID system with the ability to use existing GFP-tagged transgenic zebrafish lines for proteomic mapping between different tissues and/or different proteins. We demonstrate the application of this system in screening for proteins associated with the caveolar cast proteins, Cavin1 and Cavin4, in differentiated skeletal muscle which has, to date, been difficult to achieve in culture. These analyses reveal proteins and pathways that are both overlapping and specific to Cavin1 and Cavin4.\n\n## Results\n\n### Proximity biotinylation in live zebrafish embryos\n\nWe first tested the ability of a number of biotin ligases to catalyse protein biotinylation in live zebrafish embryos. Initial attempts using BirA* or BioID2 biotin ligases in vivo in zebrafish were unsuccessful and resulted in no detectable biotinylation in zebrafish embryos as assessed by streptavidin western blotting (Figure 1\u2014figure supplement 1). In recent years, the new bioID biotin ligases, BASU, TurboID, and miniTurbo, have been developed and showed greatly improved catalytic efficiency and enhanced proximity labelling in cultured cells (Branon et al., 2018; Ramanathan et al., 2018). We therefore tested their ability to catalyse protein biotinylation in live zebrafish embryos. Untagged, cytoplasmically localised biotin ligases were transiently expressed in zebrafish embryos by RNA injection, and the level of protein biotinylation was assessed using streptavidin immunoblot analysis (experimental regimen illustrated in Figure 1A;\u00a0Ramanathan et al., 2018; Branon et al., 2018). The biotin ligases were fused to an EGFP tag for selection of transgene expressing embryos, and a Myc tag for detection by western blot. At 24 hr post injection, the GFP-positive embryos were dechorionated before incubation in biotin-supplemented media for a further 18 hr (Figure 1A). Total protein extracts from fish embryos were then subjected to SDS-PAGE and streptavidin immunoblotting (Figure 1B). TurboID injected embryos exhibited the strongest biotinylation of endogenous proteins among the three new biotin ligases with 500 \u03bcM biotin incubation. Of note, BASU and miniTurbo were expressed at a lower level than TurboID despite equal amount of RNA injection. While we did not explore the underlying reasons for this, greater instability of miniTurbo has been reported previously and other biotin ligases have shown poor expression in cell cultures (May et al., 2020; Branon et al., 2018). Therefore, we chose TurboID for all subsequent experiments. Note the two prominent bands consistently detected around 70 and 135 kDa in all samples likely represent endogenously biotinylated proteins (Housley et al., 2014; Ahmed et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64631/elife-64631-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic overview of the workflow. The BASU/TurboID/MiniTurbo was transiently expressed in zebrafish embryos by RNA injection. Chorion-removed fish embryos with green fluorescence were selected for incubation in biotin supplemented embryo media for 18 hr. After biotin incubation, embryos were analysed by western blotting and immunofluorescence. (B) The streptavidin-HRP blot showing biotinylated proteins in two dpf zebrafish embryos expressing eGFP-tagged BASU, TurboID, and miniTurbo. Fish embryos were incubated in biotin concentrations of 50 or 500 \u03bcM biotin for 18 hr before embryo solubilisation and Western blot analysis. Actin immunoblot (IB:Actin) serves as a loading control; the anti-Myc immunoblot (IB:Myc) reflects the protein level of each biotin ligases; each sample is a pool of 30 embryos. (C) Representative images of NeutrAvidin staining of biotinylated proteins in 2 dpf zebrafish embryo transiently expressing TurboID-eGFP. Fish muscle and yolk were outlined with dashed lines. White arrows indicate muscle fibres expressing TurboID-eGFP. n\u00a0=\u00a06. Scale bar denotes 100 \u00b5m (D and E) Dependency of TurboID activity on biotin concentration and incubation time. Zebrafish embryos transiently expressing TurboID-eGFP were incubated with embryo media containing 0 to 750 \u03bcM biotin for 18 hr (D) or incubated with 500 \u03bcM biotin for 0 to 18 hr (E) before protein extraction and immunoblot analysis with streptavidin-HRP, anti-Actin and anti-Myc antibodies; each sample is a pool of 30 embryos. For immunoblots showing the biotinylation of BioID and BioID2 in zebrafish embryos see Figure 1\u2014figure supplement 1. For biotin tolerance of zebrafish embryos see Figure 1\u2014figure supplement 2. For original western blot images see Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64631/elife-64631-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Streptavidin-HRP blot showing biotinylated proteins in BioID (BirA*) transgenic zebrafish embryos. Zebrafish embryos were incubated with 50 \u00b5M biotin for 18 hr prior to protein extraction and western blotting. (B, C and D) Streptavidin-HRP blots showing biotinylated proteins in zebrafish embryos with (B) increased biotin concentration, (C) increased biotin incubation time and (D) addition of DMSO. (E and F) Streptavidin-HRP blots showing biotinylated proteins in BioID2 transgenic zebrafish embryos under (E) standard incubation temperature (28\u00b0C) and (F) elevated temperature (32.5\u00b0C) during biotin incubation. Each sample is a pool of 30 embryos at 3 dpf. The two prominent protein bands present in all samples were endogenous biotinylated proteins.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64631/elife-64631-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The fish embryos were incubated with biotin solution at indicated concentration from 1 to 5 dpf. Fifty WT embryos were used for each treatment group. Dead embryos were removed and counted each day. The statistics were performed using Log-rank (Mantel-Cox) test; ns denotes not significant. (B) representative images showing the fish embryo morphology at 3 dpf with or without biotin (600 \u00b5M) incubation.\n\nTo visualise TurboID-catalysed biotinylation in situ, TurboID-expressing embryos were stained with NeutrAvidin-DyLight 550 after biotin incubation (Figure 1C). The mosaic expression of TurboID-GFP in the muscle fibres, as well as expression in the yolk, corresponded with strong NeutrAvidin staining. The mRNA injections frequently gave rise to differing levels of expression between individual muscle cells within the same animal. Therefore, muscle fibres with little or no TurboID-GFP expression served as an internal negative control.\n\nBiotin concentration and incubation time are two crucial factors that affect biotin ligase efficiency in cultured cells (Roux et al., 2012; Kim et al., 2016; Branon et al., 2018; Ramanathan et al., 2018). To achieve the most effective experimental conditions for TurboID application in zebrafish, we sought to optimise these parameters. From our initial experiments with BirA*, we knew that zebrafish embryos are able to tolerate a biotin concentration as high as 800 \u03bcM with no obvious morphological abnormalities (Figure 1\u2014figure supplement 2). To determine the optimal biotin concentration for TurboID in zebrafish, TurboID-expressing embryos were incubated in embryo medium containing biotin concentration ranging from 0 to 750 \u03bcM for 18 hr, followed by lysis and streptavidin immunoblotting. Weak labelling could be seen with 50 \u03bcM biotin, increasing through 250 \u03bcM, with the strongest labelling at concentration of 500 and 750 \u03bcM (Figure 1D). Unlike its application in cultured cells and yeast (Branon et al., 2018), TurboID did not produce detectable exogenous biotinylation without the addition of biotin (Figure 1D). This provides the opportunity for temporal resolution by addition of exogenous biotin at specific developmental stages. Unexpectedly, the anti-Myc immunoblot showed that a higher biotin concentration resulted in more TurboID in the total protein extracts (Figure 1D). Concomitantly, the addition of exogenous biotin did not change the level of endogenous biotinylated proteins in the WT embryos (Figure 1D).\n\nIn mammalian cell culture, a 10-min biotin incubation with TurboID is sufficient to visualise biotinylated proteins by immunoblotting and to perform analysis of different organellar proteomes (Branon et al., 2018). However, we did not observe rapid biotinylation in zebrafish within the first 2 hr of biotin incubation (Figure 1E). TurboID-induced biotin labelling was only weakly detected after 4\u20136 hr incubation and adequate biotinylation was only detected after overnight incubation (18 hr).\n\n### In vivo proximity biotinylation targeted to a specific subcellular region or a protein of interest\n\nNext, we tested the spatial resolution of TurboID-catalysed biotinylation in zebrafish when TurboID was targeted to a specific subcellular region and to a POI. We tagged TurboID with a nuclear localisation signal (NLS), a plasma membrane localisation motif (CaaX), the transmembrane protein CD44b and the muscle T-tubule enriched membrane protein Cavin4b (Figure 2A). After biotin treatment, the TurboID fusion proteins produced a biotinylation pattern corresponding to the appropriate subcellular location of targeting sequences/proteins in zebrafish embryos (Figure 2B). The spatial resolution of the biotin labelling was remarkable as even the T-tubule structure, which is difficult to resolve in fixed embryos, was clearly visible by NeutrAvidin staining in the embryos expressing Cavin4b-TurboID. Furthermore, the biotinylated protein derived from each TurboID construct gave rise to a unique barcode of protein bands on the streptavidin blot, indicative of proteins specific to each corresponding subcellular compartment (Figure 2C). These results demonstrated that TurboID was able to specifically label a selective subpopulation of endogenous proteins when targeted to a specific subcellular region or protein in zebrafish embryos. Moreover, the TurboID-biotinylated proteins were recoverable from crude fish lysates by affinity purification with streptavidin-conjugated beads (Figure 2D), ready for downstream applications such as identification by mass spectrometry.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64631/elife-64631-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of eGFP-, NLS-, CaaX-, CD44b-, and Cavin4b-tagged TurboID constructs for mRNA injection in zebrafish embryos. TurboID-eGFP was used as a positive control. (B) Representative images showing the distribution of biotinylated proteins in two dpf zebrafish embryos transiently expressing different TurboID constructs. Negative control fish were injected with eGFP only. Fish embryos were fixed and permeabilised before NeutrAvidin-DyLight staining for biotin and DAPI staining to indicate nuclei. Regions within the white box were magnified and shown in the gray scale for NeutrAvidin and DAPI staining in the right panel; n\u00a0=\u00a03. Scale bar represents 50 \u00b5m. (C) Streptavidin-HRP blots showing the \u2018protein barcode\u2019 produced by biotinylated proteins in fish embryo transiently expressing different TurboID constructs. Actin immunoblot served as a loading control. Each sample is a pool of 30 embryos. (D) SYPRO Ruby protein stain showing proteins isolated by streptavidin-pulldown. Approximately three hundred embryos transiently expressing each TurboID constructs were subjected to streptavidin-pulldown after biotin incubation and embryo lysis. For original western blot/gel images see Figure 2\u2014source data 1.\n\nOverall, TurboID showed robust biotin labelling with high spatial resolution in zebrafish embryos. These properties rendered it suitable for pursuing in vivo proteomic analyses.\n\n### Conditionally stabilised GFP-binding protein (dGBP) is able to target GFP-tagged proteins in zebrafish\n\nAlthough we were able to achieve proximity-dependent biotin labelling in zebrafish embryos transiently expressing TurboID by mRNA injection, this method requires the direct injection of a large number of newly fertilised embryos in order to obtain sufficient protein for subsequent mass spectrometry sequencing. It is a labour-intensive exercise when potentially analysing multiple POIs, and new genetic constructs must be generated for each POI. In addition, the protein expressed from mRNA injected at the one-cell stage becomes progressively depleted and is present only in trace amounts beyond 3 days post fertilisation. As such, this methodology is limited to early stage embryos. To circumvent these issues, we envisaged a modular system that would utilise the many existing stable zebrafish lines which express GFP-tagged proteins. Previously, we demonstrated that a GFP-binding peptide (GBP; a 14 kDa nanobody) is able to target a peroxidase (APEX2) to GFP-tagged POIs in both cell culture and zebrafish systems (Ariotti et al., 2015b), and can be used for ultrastructural localisation. Based on these findings, we reasoned that genetically fusing TurboID with GBP would target the TurboID-GBP fusion protein to GFP-labelled POIs and/or subcellular compartments in zebrafish, enabling GFP-directed proximity biotinylation in vivo. Furthermore, generation of a stable zebrafish line expressing TurboID-GBP would allow delivery of the transgene by a simple genetic cross, circumventing the need for microinjection and enabling continued expression beyond the embryonic stages.\n\nAs proof-of-principle, we fused a red fluorescent protein (mRuby2) with the GBP nanobody and transiently expressed it in a transgenic fish line already expressing Cavin1a-Clover. Clover is a GFP derivative recognised by GBP (Shaner et al., 2013), and Cavin1a is an ortholog of caveolae-associated protein one in zebrafish (Lo et al., 2015). When expressed at low levels, mRuby2-GBP showed clear colocalisation with Cavin1a-Clover at the plasma membrane in the mRuby2-positive muscle cells (Figure 3A). However, when mRuby-GBP was expressed at higher levels, red fluorescence was observed in the cytoplasm in addition to the plasma membrane, likely due to the saturation of binding between GBP and GFP. This observation raised concerns about the potential of non-specific labelling from unbound TurboID-GBP under these conditions. As a solution, we substituted the GBP with a conditionally stabilised GFP-nanobody (destabilised GBP or \u2018dGBP\u2019) that is rapidly degraded unless the GFP-binding site is occupied (Tang et al., 2016; Ariotti et al., 2018a). Using this approach, we observed tight association of mRuby2-dGBP and Cavin1a-Clover in all muscle cells regardless of expression level (Figure 3B). We reasoned that a system utilising the conditionally stabilised nanobody would be less likely to result in non-specific biotin labelling within target cells in vivo. Furthermore, use of the conditionally stabilised GBP gives potential for modularity, since tissue or cell type specific biotinylation will only occur in cells expressing both GFP-POI and TurboID-dGBP fusion proteins.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64631/elife-64631-fig3-v2.jpg)\n\n**Figure 3.:** (A and B) Representative images showing the colocalisation between Cavin1a-Clover and mRuby2-GBP/dGBP in live zebrafish embryos. Cavin1a-Clover zebrafish embryos transiently expressing mRuby2-tagged GBP (A) or dGBP (B). Injected embryos were imaged at three dpf. The approximate amount of injected RNA was indicated in the mRuby2 images. Line scan (indicated by the blue line) shows the fluorescent intensity of Clover and mRuby2 across the sarcolemma of mRuby2-positive muscle cells. Scale bar denotes 10 \u00b5m in both (A) and (B).\n\n### Development of BLITZ; biotin labelling in tagged zebrafish\n\nWe next generated a number of fish lines expressing TurboID-dGBP under the ubiquitous beta actin 2 (actb2) promoter (Casadei et al., 2011). To facilitate selection of appropriate transgenic integrations, we added a cytoplasmic red fluorescent protein, mKate2, as a visible reporter upstream of TurboID-dGBP linked by a P2A sequence (Donnelly et al., 2001; Kim et al., 2011). The P2A sequence is a short ribosome-skipping sequence which separates the upstream mKate2 from downstream TurboID-dGBP, reducing the potential interference from the fluorescent protein. The expression of transgene is stable in our zebrafish lines and demonstrates Mendelian inheritance over four generations, indicating a stable single transgenic integration.\n\nWe first tested whether these zebrafish lines were able to catalyse specific biotinylation in tissues expressing GFP. The TurboID-dGBP fish were outcrossed with transgenic lines expressing cytoplasmic GFP in the vasculature (kdrl:EGFP) (Beis et al., 2005) and the motor neurons (MotoN:EGFP) (Punnamoottil et al., 2015;\u00a0Figure 4A). Biotinylated proteins were examined in three dpf embryos after overnight biotin incubation. In embryos co-expressing ubiquitous TurboID-dGBP and tissue-specific GFP, TurboID-catalysed biotinylation was detected in the intersegmental vessels and the spinal cord motor neurons in the kdrl:EGFP and MotoN:EGFP lines, respectively (Figure 4A). These results demonstrate that our TurboID-dGBP system can produce biotinylation with tissue specificity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64631/elife-64631-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative images of TurboID-dGBP catalysing GFP-dependent biotinylation in transgenic zebrafish embryos at 3 dpf. The TurboID-dGBP line was crossed with different GFP-tagged zebrafish lines: Cavin1a-Clover (plasma membrane), Cavin4a-Clover (sarcolemma and T-tubules), kdrl:eGFP (vasculature), and MotoN:eGFP (motor neurons). After biotin incubation, embryos were fixed, permeabilised, and stained with NeutrAvidin to visualise the biotinylated protein. mKate2 is a fluorescent indicator for expression of TurboID-dGBP. Controls were carried out by using siblings from the same clutch without GFP expression (TurboID only) and siblings without TurboID expression (Cavin1a-Clover only), as well as omitting biotin incubation. The scale bar denotes 40 \u00b5m; n\u00a0=\u00a03. (B) Western blot analysis showing the biotinylated proteins in 3 dpf zebrafish embryos from TurboID-dGBP outcrossing with Cavin1a-Clover line. Each sample is a pool of 30 embryos. (C) Western blot analysis of fish lysates and streptavidin pulldown with embryos from TurboID-dGBP line outcrossing with Cavin1a-Clover line. Each pulldown sample is a pool of 200 embryos. For confocal images comparing the biotin labelling specificity in zebrafish embryos with different expression level of TurboID-dGBP see Figure 4\u2014figure supplement 1. For table summarising proteins identified in control embryos expressing only TurboID-dGBP, see Supplementary file 3. For original western blot images see Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64631/elife-64631-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative images showing biotinylated proteins in zebrafish embryos from outcrossing Cavin1a-Clover with different TurboID-dGBP lines. The number of \u2018+' denotes the expression level of TurboID as reflected by mKate2 fluorescent reporter. The scale bar represents 20 \u00b5m.\n\nTo test the biotinylation on a subcellular level, the TurboID-dGBP fish were outcrossed with Cavin1a-Clover and Cavin4a-Clover transgenic fish lines expressing Cavin1a-Clover and Cavin4a-Clover under the control of the muscle specific actin promoter, actc1b. Cavin1a and Cavin4a are orthologues of human CAVIN1 and CAVIN4, which are caveola-associated proteins involved in caveolar formation. With the same procedures, we observed clear colocalisation between biotinylated proteins and Clover-tagged cavins in muscle fibres, at the sarcolemma and T-tubules, suggesting our TurboID-dGBP system can produce proximity-dependent biotinylation with subcellular resolution. Without biotin treatment or without the expression of GFP, there was no detectable biotinylation effected by TurboID. Notably, the specificity of GFP-directed biotinylation was not compromised in fish lines expressing higher levels of TurboID-dGBP (Figure 4\u2014figure supplement 1).\n\nWe next visualised the proteins biotinylated by TurboID-dGBP on streptavidin blots (Figure 4B). The two prominent bands representing endogenously biotinylated proteins were again observed in embryos carrying both TurboID-dGBP and Cavin1a-clover; omitting the biotin supplement resulted in no exogenous biotinylation. Intriguingly, in the absence of Cavin1a-Clover, a weak biotinylation was still observed in the embryos carrying only the TurboID-dGBP transgene, despite the level of TurboID-dGBP being undetectable on anti-Myc immunoblot. This background labelling is likely caused by TurboID-dGBP en route to proteasomal degradation. Subsequent MS analysis revealed these background proteins are mainly endogenous biotinylated proteins, nuclear proteins, cytoskeletal proteins and yolk proteins (Supplementary file 3). Using streptavidin affinity pulldown, biotinylated proteins were isolated from total fish lysates and endogenous Cavin4b, a known Cavin1 interactor (Bastiani et al., 2009), was detected in the streptavidin pulldown in addition to Cavin1a-GFP and TurboID-dGBP (Figure 4C). Note that a trace of TurboID-dGBP was detected in the streptavidin pulldown in the absence of GFP target with long exposure, which accounts for the weak background biotinylation in embryos expressing only TurboID-dGBP.\n\n### A comprehensive cavin-associated proteome in skeletal muscle generated by TurboID-dGBP\n\nFinally, we employed our TurboID-dGBP system to map the proteomes associated with Cavin1 and 4 in zebrafish skeletal muscle. We crossed the TurboID-dGBP fish with fish lines stably expressing Cavin1a-Clover, Cavin4a-Clover, and Cavin4b-Clover in muscle. TurboID-dGBP and cavin-Clover co-expressing embryos were selected at 2 dpf for subsequent biotin labelling and the biotinylated proteins were analysed by liquid chromatography coupled to tandem mass spectrometry (nanoHPLC/MS MS/MS). The sibling embryos inheriting only the TurboID transgene were used as a background control (experimental regimen illustrated Figure 5A). After subtracting background proteins and common containments, 26, 22, and 25 proteins were identified in the Cavin1a, Cavin4a, and Cavin4b samples, respectively (Figure 5B and C, Supplementary file 1 \u2013 Tables 1-3). Among the proteins identified, the majority of proteins are associated with the plasma membrane, consistent with the membrane localisation of cavins (Figure 5D, Supplementary file 1 - Table 4). Endogenous cavins were consistently detected in all samples, suggesting that the GFP-tag, as well as the binding of TurboID-dGBP, did not interfere with the oligomerisation of the cavins. Dystrophin (DMD), a protein associated with caveolae was identified uniquely in the Cavin1a sample (Song et al., 1996; Doyle et al., 2000). An ortholog of Pacsin3 (zgc:91999), a caveola-associated protein required for muscle caveolar formation (Seemann et al., 2017), was also detected uniquely in the Cavin4b sample. These known interactors were undetectable in all control samples, demonstrating the high accuracy of the BLITZ system. Note that, Caveolin1 (Uniprot accession: Q6YLH8) and Caveolin (isoform unassigned; Uniprot accession: A1L1S3) were detected in the Cavin1a sample based on two high confidence peptides (HLNDDVVK and VWVYSGIGFESAR) that were not present in the controls (Supplementary file 2) but were not classified as significant hits based on the 1% global FDR analysis. This may reflect the poor accessibility of caveolins, as a large proportion of caveolins are buried in the plasma membrane (Ariotti et al., 2015a). Individual hits and general properties of putative interacting proteins are further discussed below.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64631/elife-64631-fig5-v2.jpg)\n\n**Figure 5.:** (A) A schematic overview of applying TurboID-dGBP fish to identify cavin-associated proteins. The TurboID-dGBP zebrafish was crossed with Clover-tagged cavin fish lines. The embryos carrying both transgenes were selected for subsequent biotin incubation and biotin affinity purification coupled MS sequencing. Identified proteins were refined by subtracting proteins identified in control embryos expressing only TurboID-dGBP. (B) Venn diagram showing the overlap of identified proteins in Cavin1a, Cavin4a, and Cavin4b samples. (C) Heatmap showing relative abundance of identified proteins based on normalised MS2Count in Cavin1a, Cavin4a, and Cavin4b proteomes. (D) Bar graph showing the distribution of proteins at subcellular level. The cellular component information was curated from Uniport database and literature. For table summarising all identified and enriched proteins, see Supplementary file 1 \u2013 Tables 1-3. For table annotating all identified and enriched protein with subcellular localisation and functions, see Supplementary file 1 \u2013 Table 4. For table showing all identified peptides in Cavin1a sample and sibling control sample see Supplementary file 2 \u2013 Tables 1-2. For protein identification report generated by ProteinPilot, see Figure 5\u2014source datas 1\u20136.\n\n## Discussion\n\n### Advantages of BLITZ in proteomic mapping\n\nIn this study, we have developed BLITZ (Biotin Labelling In Tagged Zebrafish): a modular system for in vivo proteomic mapping (Figure 6). This system utilises the advantages of BioID at capturing weak or transient interactions in living cells, but extends its application to an in vivo setting, enabling interactome investigation at specific developmental stages under physiological conditions, and potentially in disease models. The system also has several advantages over conventional BioID methods for studying the proteome and interactome.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64631/elife-64631-fig6-v2.jpg)\n\n**Figure 6.:** The TurboID-dGBP lines can be crossed with existing GFP-tagged lines. In the embryos carrying both transgenes, the binding between dGBP and GFP stabilise TurboID-dGBP, which leads to proximity biotinylation around the GFP-tagged POIs. The unbound TurboID-dGBP will be rapidly degraded by the ubiquitin proteasome system, which minimises non-specific labelling when dGBP-GFP binding saturates, as well as achieving tissue specificity by averting labelling in cells/tissues that do not express GFP. The biotin-labelled proteins can be isolated by biotin affinity purification and identified by MS analysis.\n\nFirstly, BLITZ does not require extensive molecular biology steps to produce numerous expression constructs, or laborious embryonic manipulation. It instead relies on simple crossing of a TurboID-dGBP line with an existing GFP-tagged fish line of choice; a plethora of such lines currently exist in stock centres globally and, with the advent of nuclease directed genome editing, this number is rapidly increasing. Secondly, BLITZ enables cell- and tissue-specific proteomic studies, since the stability of TurboID-dGBP is dependent on its binding to GFP targets. Non-specific biotin labelling in tissues that do not express GFP-tagged constructs is avoided. Thirdly, our TurboID-dGBP system has the potential to be used with knock-in fish lines carrying a GFP fusion protein at the endogenous locus of a POI. This will enable the application of BioID to study proteomic associations with endogenous proteins, which, to our knowledge, has not been achieved by conventional BioID methods. Finally, the modularity of the BLITZ system could be advantageous for use in established tissue culture systems using existing GFP expression vectors or/and knock-in cell lines, as well as extended to other organisms.\n\nThe use of the BLITZ system also comes with some caveats. Unlike the traditional BioID approach using a direct fusion of the biotin ligase with the bait protein, our system targets TurboID to the POI through the binding of dGBP nanobody to GFP. In this case, the indirect binding increases the physical distance between biotin ligase and the POI, which could potentially enlarge the effective labelling radius and include more non-interacting neighbouring proteins. However, we have previously shown that the use of a GFP-directed nanobody to target a genetically encoded peroxidase (APEX2) for protein localisation does not appear to compromise the fidelity of labelling: APEX2 staining was rarely observed beyond 25 nm from the site of POI (Ariotti et al., 2015a). It is also possible that the binding of the biotin ligase-nanobody with the GFP-tagged POI could perturb the localisation of the POI, either by masking interacting surfaces or simply due to the larger size of a complex. For this reason, we routinely examine the distribution of the GFP-tagged POI both with and without biotin ligase-dGBP expression as well as the distribution of biotinylated proteins using fluorescent neutravidin staining. Since our in vivo system is based on the simple crossing of heterozygous transgenic lines, every new clutch contains offspring with every possible combination of alleles, and the appropriate internal controls can be sorted by fluorescence. As BLITZ uses biotin as a label, the method (like most BioID methods) is problematic for the identification of interactors that are endogenously biotinylated, such as carboxylases. In addition, as all BioID methods will label proteins within a small number of nanometres, non-interacting proteins could be detected simply due to close proximity. Thus, subsequent validation using other independent approaches such as biomolecular fluorescence complementation and affinity pulldown is essential to distinguish bona\u00a0fide interactors from non-interacting neighbouring proteins.\n\n### Application of BLITZ to the identification of cavin-association networks in muscle\n\nCavin family proteins are key components of the caveolar coat complex associated with the inner leaflet of the plasma membrane. Cavin1 is present in all tissues and is essential for caveolar formation and function. Cavin2, 3, and 4 show more restricted tissue distributions with Cavin4 being specific to skeletal and cardiac muscle (reviewed in Parton et al., 2018). In the zebrafish, Cavin1 and 4 are each duplicated such that four loci exist; Cavin1a/b and Cavin4a/b. Cavin1a and b show spatially distinct expression patterns with Cavin1b being largely restricted to the developing notochord whereas Cavin1a, 4a, and 4b are all highly expressed in skeletal muscle (Hill et al., 2008; Lo et al., 2015; Housley et al., 2016). In this study we used the BLITZ system to identify putative interactors for all three skeletal muscle cavins, and identified sets of putative interactors both unique and common to all three proteins.\n\nThe majority of proteins identified for all cavin proteomes were muscle-enriched factors and plasma membrane proteins. We also saw a specific enrichment of known caveola-associated proteins consistent with initial expectations. Interestingly, the cavin proteomes also contained a disproportionate number of nuclear proteins, such as Gnl3, Naca, and Lbr. In cultured cells, cavins have been shown to be released from the plasma membrane in response to external stimuli (such as mechanical stress) and are able to bind intracellular targets in variety of subcellular locations to regulate processes such as ribosomal RNA transcription and apoptosis (Liu and Pilch, 2016; McMahon et al., 2019). In addition, in the absence of Cavin1, in knockout mouse muscle, Cavin4 has been shown to localise predominantly to the nucleus rather than the sarcolemma (Lo et al., 2015).\n\nWhat processes might Cavin1 and Cavin4 be regulating? We know that loss of Cavin1 causes lipodystrophy and muscular dystrophy in humans. Patient and animal muscle shows hypertrophied muscle fibres (Hayashi et al., 2009; Rajab et al., 2010; Ding et al., 2017). Cavin4 mutations have been described in dilated cardiomyopathy patients and there is evidence that Cavin4 recruits ERK in cardiomyocytes (Rodriguez et al., 2011; Ogata et al., 2014). Thus, there is supporting data for the positive regulation of hypertrophy in skeletal muscle fibres by Cavin1, and in cardiomyocytes by Cavin4. The cavin proteome showed an enrichment of protein kinases, such as calcium/calmodulin-dependent protein kinase II (CaMKII). CaMKII regulates Ca2+ signalling and plays an important role in the development of cardiac hypertrophy through the ERK signalling pathway (Illario et al., 2003; Cipolletta et al., 2010; Cipolletta et al., 2015). The activation of CaMKII can be induced by exercise in skeletal muscle, with the activation level proportional to the intensity of exercise (Rose et al., 2006).\n\nIn this study, BLITZ revealed several putative cavin interactors that have also been shown to be involved in cardiomyopathies and/or skeletal myopathies, including the membrane protein Dystrophin (Deconinck and Dan, 2007), the triad-associated proteins Bin1 (Nicot et al., 2007), Cypher/ZASP (Selcen and Engel, 2005), and SPEG (Agrawal et al., 2014). Genetic ablation of zebrafish Cavin4b causes aberrant T-tubules in skeletal muscle (Housley et al., 2016). It is possible that Cavin4 may be involved in T-tubule formation through interaction with triad associated proteins, such as Bin1.\n\nOverall, our BLITZ system enables the in vivo identification of protein interactors in a cell- and tissue-specific manner, with high precision. We demonstrated the applicability of this approach in diverse cell types including neurons and vascular endothelial cells and applied the BLITZ system to identify factors associated with cavin family proteins in differentiated skeletal muscle. BLITZ provides a versatile and valuable tool for proteomic discovery using the zebrafish model, but also has the potential for application in other in vivo contexts that to date have been challenging or intractable.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (E. coli- modified)</td>\n      <td>BirA*</td>\n      <td>Roux et al., 2012; DOI: 10.1083/jcb.201112098</td>\n      <td></td>\n      <td>R118G mutant of WT BirA</td>\n    </tr>\n    <tr>\n      <td>Gene (Bacillus subtilis - modified)</td>\n      <td>BASU</td>\n      <td>Ramanathan et al., 2018; DOI: 10.1038/NMETH.4601</td>\n      <td></td>\n      <td>R124G, E323S, G325R mutation and N-terminus deletion of WT biotin ligase from B. subtilis</td>\n    </tr>\n    <tr>\n      <td>Gene (Aquifex aeolicus - modified)</td>\n      <td>BioID2</td>\n      <td>Kim et al., 2016; DOI: 10.1091/mbc.E15-12-0844</td>\n      <td></td>\n      <td>R40G mutation of WT biotin ligase from A. aeolicus</td>\n    </tr>\n    <tr>\n      <td>Gene (E. coli- modified)</td>\n      <td>miniTurbo</td>\n      <td>Branon et al., 2018; DOI: 10.1038/nbt.4201</td>\n      <td></td>\n      <td>13 point mutations and N-terminal deletion of WT BriA</td>\n    </tr>\n    <tr>\n      <td>Gene (E. coli- modified)</td>\n      <td>TurboID</td>\n      <td>Branon et al., 2018; DOI: 10.1038/nbt.4201</td>\n      <td></td>\n      <td>15 point mutations of WT BirA</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>TAB</td>\n      <td>University of Queensland (UQ) Biological Resources Aquatics</td>\n      <td></td>\n      <td>Wild-type (TAB), an AB/TU line generated in UQBR Aquatics (UQ Biological Resources)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>TurboID-dGBP</td>\n      <td>Generated in this paper</td>\n      <td></td>\n      <td>Tg(actb2:mKate2-P2A-TurboID-dGBP)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>Cavin1a-Clover</td>\n      <td>Generated in this paper</td>\n      <td></td>\n      <td>Tg(actc1b:Cavin1a-Clover)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>Cavin4a-Clover</td>\n      <td>Generated in this paper</td>\n      <td></td>\n      <td>Tg(actc1b:Cavin4a-Clover)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>Cavin4b-Clover</td>\n      <td>Generated in this paper</td>\n      <td></td>\n      <td>Tg(actc1b:Cavin4b-Clover)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>Kdrl:GFP</td>\n      <td>(Beis et al., 2005); DOI: 10.1242/dev.01970</td>\n      <td></td>\n      <td>Tg(kdrl:EGFP)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Danio rerio)</td>\n      <td>MotoN:GFP</td>\n      <td>(Punnamoottil et al., 2015); DOI: 10.1002/dvg.22852</td>\n      <td></td>\n      <td>Tg(miR218:EGFP)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>actb2:mKate2-P2A-TurboID-dGBP</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163857</td>\n      <td>Construct for generating stable transgenic fish line; see Materials and methods for line generation</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>actc1b:Cavin1a-Clover</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163852</td>\n      <td>Construct for generating stable transgenic fish line; see Materials and methods for line generation</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>actc1b:Cavin4a-Clover</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163853</td>\n      <td>Construct for generating stable transgenic fish line; see Materials and methods for line generation</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>actc1b:Cavin4b-Clover</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163854</td>\n      <td>Construct for generating stable transgenic fish line; see Materials and methods for line generation</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>pT3TS-BASU-EGFP</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163845</td>\n      <td>Construct for in vitro RNA synthesis and RNA injection</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>pT3TS-TurboID-EGFP</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163846</td>\n      <td>Construct for in vitro RNA synthesis and RNA injection</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>pT3TS-miniTurbo-EGFP</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163847</td>\n      <td>Construct for in vitro RNA synthesis and RNA injection</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>pT3TS-TurboID-CaaX</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163848</td>\n      <td>Construct for in vitro RNA synthesis and RNA injection</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>pT3TS-nls-TurboID</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163849</td>\n      <td>Construct for in vitro RNA synthesis and RNA injection</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>pT3TS-CD44b-TurboID</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163850</td>\n      <td>Construct for in vitro RNA synthesis and RNA injection</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>pT3TS-Cavin4b-TurboID</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163851</td>\n      <td>Construct for in vitro RNA synthesis and RNA injection</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>actc1b:mRuby2-GBP</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163856</td>\n      <td>Construct for transient expression in zebrafish</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>actc1b:mRuby2-dGBP</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 163855</td>\n      <td>Construct for transient expression in zebrafish</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Myc (Mouse monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>2276S</td>\n      <td>(1:2000) dilution with 5% skim milk in PBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Actin (Mouse monoclonal)</td>\n      <td>EMD Millipore</td>\n      <td>MAB1501</td>\n      <td>(1:5000) dilution with 5% skim milk in PBST</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Cavin4b (Rabbit polyclonal)</td>\n      <td>Boster Biological Technology</td>\n      <td>DZ33949</td>\n      <td>Customised antibody against zebrafish Cavin4b; (1:1000) dilution with 3% skim milk in PBST</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p5E-actb2</td>\n      <td>Kwan et al., 2007; DOI: 10.1002/dvdy.21343</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p5E-actc1b</td>\n      <td>Ariotti et al., 2018b; DOI: 10.1242/dev.034561</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pME-BASU-NS</td>\n      <td>generated in this paper</td>\n      <td>Addgene: 166565</td>\n      <td>Gateway Entry clone contains BASU without a stop codon; see Materials and methods for cloning and Addgene for vector map</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pME-TurboID-NS</td>\n      <td>generated in this paper</td>\n      <td>Addgene: 166566</td>\n      <td>Gateway Entry clone contains TurboID without a stop codon; see Materials and methods for cloning and Addgene for vector map</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pME-nls</td>\n      <td>Ariotti et al., 2018a; DOI: 10.1371/journal.pbio.2005473</td>\n      <td>Addgene: 108882</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pME-CD44b</td>\n      <td>Hall et al., 2020 DOI: 10.1038/s41467-020-17486-w</td>\n      <td>Addgene: 109576</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pME-miniTurbo-NS</td>\n      <td>generated in this paper</td>\n      <td>Addgene: 166567</td>\n      <td>Gateway Entry clone contains miniTurbo without a stop codon; see Materials and methods for cloning and Addgene for vector map</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pME-Cavin1a</td>\n      <td>Hall et al., 2020; DOI: 10.1038/s41467-020-17486-w</td>\n      <td>Addgene: 126927</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pME-Cavin4a</td>\n      <td>Hall et al., 2020; DOI: 10.1038/s41467-020-17486-w</td>\n      <td>Addgene: 109562</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pME-Cavin4b</td>\n      <td>Hall et al., 2020; DOI: 10.1038/s41467-020-17486-w</td>\n      <td>Addgene: 109563</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pME-mKate2-P2A-TurboID-NS</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 166568</td>\n      <td>Gateway Entry clone contains mKate2-P2A-TurboID without a stop codon; see Materials and methods for cloning and Addgene for vector map</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pME-mRuby2-NS</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 166569</td>\n      <td>Gateway Entry clone contains mRuby2 without a stop codon; see Materials and methods for cloning and Addgene for vector map</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p3E-TurboID</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 166570</td>\n      <td>Gateway Entry clone contains TurboID with a stop codon; see Materials and methods for cloning and Addgene for vector map</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p3E-Clover</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 126572</td>\n      <td>Gateway Entry clone contains Clover with a stop codon; see Materials and methods for cloning and Addgene for vector map</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p3E-EGFP</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 126573</td>\n      <td>Gateway Entry clone contains EGFP with a stop codon; see Materials and methods for cloning and Addgene for vector map</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p3E-csGBP (dGBP)</td>\n      <td>Ariotti et al., 2018a; DOI: 10.1371/journal.pbio.2005473</td>\n      <td>Addgene: 108891</td>\n      <td>Gateway Entry clone contains csGBP with a stop codon; see Materials\u00a0and methods for cloning and Addgene for vector map</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p3E-GBP</td>\n      <td>Ariotti et al., 2015a; DOI: 10.1016/j.devcel.2015.10.016</td>\n      <td>Addgene: 67672</td>\n      <td>Gateway Entry clone contains GBP with a stop codon; see Materials and methods for cloning and Addgene for vector map</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p3E-CaaX (tH)</td>\n      <td>Hall et al., 2020; DOI: 10.1038/s41467-020-17486-w</td>\n      <td>Addgene: 109539</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pT3TS-DEST</td>\n      <td>Generated in this paper</td>\n      <td>Addgene: 166571</td>\n      <td>Gateway Destination vector contains T3 and T7 promoters for in vitro RNA synthesis; see Materials and methods for cloning and Addgene for vector map</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Streptavidin-HRP</td>\n      <td>Abcam</td>\n      <td>Ab7403</td>\n      <td>(1:5000) dilution with 5% BSA in PBST</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Proteinase K</td>\n      <td>Invitrogen</td>\n      <td>25530015</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Pronase</td>\n      <td>Roche</td>\n      <td>10165921001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Trypsin/Lys-C Mix, Mass Spec Grade</td>\n      <td>Promega</td>\n      <td>V5073</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Pierce BCA protein assay kit</td>\n      <td>Thermo Scientific</td>\n      <td>23225</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Clarity Western ECL Substrate</td>\n      <td>Bio-Rad</td>\n      <td>1705061</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>InstantBlue</td>\n      <td>Expedeon</td>\n      <td>ISB1L-1L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SYPRO Ruby Protein Gel Stain</td>\n      <td>Invitrogen</td>\n      <td>S12000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Biotin</td>\n      <td>Sigma-Aldrich</td>\n      <td>B4639-1G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phenol Red</td>\n      <td>Sigma-Aldrich</td>\n      <td>P0290-100ML</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NeutrAvidin-DyLight 405</td>\n      <td>Invitrogen</td>\n      <td>22831</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NeutrAvidin-DyLight 550</td>\n      <td>Invitrogen</td>\n      <td>84606</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium deoxycholate</td>\n      <td>Sigma-Aldrich</td>\n      <td>D6750-10G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NP-40</td>\n      <td>Sigma-Aldrich</td>\n      <td>18896\u201350 ML</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EDTA</td>\n      <td>Astral Scientific</td>\n      <td>BIOEB0185-500G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Complete Protease Inhibitor Cocktail</td>\n      <td>Sigma-Aldrich</td>\n      <td>11836145001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Paraformaldehyde</td>\n      <td>Sigma-Aldrich</td>\n      <td>P6148-500G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PBS tablets</td>\n      <td>Medicago</td>\n      <td>09-8912-100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Triton-X100</td>\n      <td>Sigma-Aldrich</td>\n      <td>T9284-500ML</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tween 20</td>\n      <td>Sigma-Aldrich</td>\n      <td>P1379-500ML</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI</td>\n      <td>Sigma-Aldrich</td>\n      <td>D9542-5MG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bolt LDS sample buffer (4X)</td>\n      <td>Invitrogen</td>\n      <td>B0008</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dynabeads MyOne Streptavidin C1</td>\n      <td>Invitrogen</td>\n      <td>65001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Agarose, low gelling temperature</td>\n      <td>Sigma-Aldrich</td>\n      <td>A9414-100G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ProteinPilot</td>\n      <td>SCIEX</td>\n      <td></td>\n      <td>Version 5.0.1</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Analyst TF</td>\n      <td>SCIEX</td>\n      <td></td>\n      <td>Version 1.7</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Excel</td>\n      <td>Microsoft</td>\n      <td></td>\n      <td>Version 16.45</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism8</td>\n      <td>GraphPad</td>\n      <td></td>\n      <td>Version 8.0.2</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>ImageJ</td>\n      <td></td>\n      <td>Version 2.0.0-rc-69/1.52 p</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Illustrator</td>\n      <td>Adobe</td>\n      <td></td>\n      <td>Version 23.1.1</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>PD-10 desalting column</td>\n      <td>GE Healthcare</td>\n      <td>17-0851-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>LoBind tube</td>\n      <td>Eppendorf</td>\n      <td>022431048</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Blot 4\u201312% Bis-Tris Plus precast gels</td>\n      <td>Invitrogen</td>\n      <td>NW04120BOX</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish husbandry\n\nZebrafish were raised and maintained according to institutional guidelines (Techniplast recirculating system, 14 hr light/10 hr dark cycle, University of Queensland, UQ). Adults (90 dpf above) were housed in 3 or 8 L tanks with flow at 28.5\u00b0C and embryos up to five dpf were housed in 8 cm Petri dishes in standard E3 media (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2,\u00a0and MgSO4) at 28\u00b0C (incubated in the dark) (Westerfield, 2007). All experiments were approved by the University of Queensland Animal Ethics Committee. The following zebrafish strains were used in this study: wild-type (TAB), an AB/TU line generated in UQBR Aquatics (UQ Biological Resources), Tg(actc1b:cavin1a-Clover), Tg(actc1b:cavin4a-Clover), Tg(actc1b:Cavin4b-Clover), Tg(actb2:mKate2-P2A-TurboID-dGBP), Tg(kdrl:eGFP) and Tg(MotoN:GFP). The developmental stages of zebrafish used in experiments are prior to specific sex determination. All zebrafish used in experiment were healthy, not involved in previous procedures and drug or test naive.\n\n### DNA constructs and transgenic fish lines\n\nThe protein sequence of TurboID and MiniTurbo was constructed according to Branon et al., 2018 while the protein sequence of BASU was designed according to Ramanathan et al., 2018. The coding sequences of TurboID, MiniTurbo, and BASU were ordered from IDT as gene fragment with codon optimised for zebrafish expression (https://sg.idtdna.com). The expression of biotin ligases was driven by a ubiquitous promoter of actb2 (Higashijima et al., 1997; Casadei et al., 2011). A red fluorescent reporter, mKate2, was indirectly linked into the N-terminus of biotin ligase through a self-cleaving P2A sequence (Shcherbo et al., 2009; Kim et al., 2011). Promoter, fluorescent report and biotin ligase were cloned into destination vector using Gateway cloning system. All fish lines were generated by using Tol2kit system according to established methods (Kawakami, 2004; Kwan et al., 2007). In brief, plasmid constructs for generating transgenic lines were co-injected with tol2 mRNA into one-cell-stage WT zebrafish embryos (Nusslein-Volhard and Dahm, 2002). Injected F0s were raised and screened for founders producing positive F1s with Mendelian frequencies, indicative of single genomic integration. Positive F1s grown to reproductive age were used for our experiments. Stable lines were maintained as heterozygotes. All stable lines used are given in the Key Resource Table.\n\n### Transient expression by DNA/RNA microinjection\n\nDNA plasmid and RNA transcript for injection were diluted to final concentration of 30 ng/\u00b5l and 200 ng/\u00b5l, respectively, with addition of Phenol Red (Sigma-Aldrich) as injection tracer. A bolus of approximately 1/5 of the total cell diameter was injected into each embryo. For DNA injection, the bolus was injected into the cell of embryos at single cell stage (5\u201325 min-post-fertilisation). For RNA injection, the bolus was injected into the yolk of the embryos up until two-cell stage. The RNA transcript was synthesised by mMESSAGE mMACHINE T3 (Invitrogen) according to manufacturer\u2019s instruction. The RNA transcripts were tagged with poly(A) tail using Poly(A) Tailing Kit (Invitrogen) to extend the stability of mRNA in zebrafish embryos.\n\n### In vivo biotin labelling\n\nEmbryos at indicated developmental stage were incubated in the E3 media supplemented with 500 \u03bcM biotin for 18 hr to initiate biotinylation in vivo. For embryos before hatching, a dechorionation step was carried out by using Pronase (Roche, 100 \u03bcg/ml in E3 media for 40 min at 28\u00b0C) prior to the biotin incubation. After biotin incubation, embryos were washed for 40 min with two changes of standard E3 media to remove unincorporated biotin before subsequent immunostaining or protein extraction.\n\n### Zebrafish embryos protein extraction\n\nFish embryos after in vivo biotin labelling were deyolked by mechanical disruption through a 200 \u00b5l pipette tips in calcium-free Ringer\u2019s solution followed by two changes of solution at 4\u00b0C. The deyolked embryos was lysed by brief sonication in RIPA buffer (50 mM Tris-HCl, pH 7.5; 150 mM NaCl; 1% NP-40; 0.1% SDS; 5 mM EDTA; 0.5% Na-deoxycholate,) with freshly added cOmplele Protease Inhibitor. Lysates were further solubilised at 4\u00b0C with rotation for 30 min. Insoluble material was removed by centrifugation at 14,000 \u00d7g for 10 min at 4\u00b0C, and supernatant were collected for BCA protein assay determining protein concentration. For western blot analysis, 25 fish embryos per group were used for protein extraction, whilst, for streptavidin affinity purification, approximately 350 embryos were used for each group.\n\n### Western blotting\n\nWestern blot analysis was performed largely as described previously Lo et al., 2015. Briefly, zebrafish samples from protein extraction were mixed with NuPAGE LDS sample buffer (4X) and 10 mM DTT. Protein samples were analysed by Western blotting with following antibodies: mouse anti-Myc (dilution 1:2000), mouse anti-Actin (dilution 1:5000), rabbit anti-Cavin4b (dilution 1:2000), anti-mouse and anti-rabbit HRP-conjugated antibodies (dilution 1:5000), streptavidin-HRP (dilution 1:5000). ECL blotting reagent was used to visualise HRP and chemiluminescent signal was detected using the ChemiDoc MP system (BioRad) as per the manufacture\u2019s instruction.\n\n### Streptavidin beads pulldowns\n\nFresh embryo protein extracts (4 mg in 2.5 ml RIPA buffer) was passed through PD-10 desalting column (GE Healthcare) to remove excess free biotin using the gravity protocol according to manufacturer\u2019s instruction. Protein extracts were then mixed with Dynabeads MyOne Streptavidin C1 (Invitrogen) from 200 \u00b5l bead slurry that were pre-washed with RIPA buffer, and incubated on a rotor wheel at 4\u00b0C overnight (16 hr). The next day, the beads were separated from the protein extracts on a magnetic rack and transferred to a new 2 ml LoBind tube (Eppendorf). The beads were washed with 1 ml of each following solution: twice with RIPA buffer, once with 2% SDS in 50 mM Tris-HCl pH7.5, once with 2 M urea in 10 mM Tris-HCl pH8.0 and twice again in RIPA buffer without cOmplete Protease Inhibitor. Washed beads were boiled in 60 \u00b5l of 2X Blot LDS sample buffer (4X diluted to 2X with RIPA buffer) containing 2 mM biotin and 20 mM DTT at 95\u00b0C for 10 min with 10 s vortex after first 5 min boiling. Five ul \u00b5of the pulldown samples was used for immunoblots, whereas the 50 \u00b5l of the samples were used for SDS-PAGE with SYPRO Ruby (Invitrogen) or InstantBlue protein gel stain.\n\n### Immunostaining and confocal microscopy\n\nFish embryos after in vivo biotin labelling were fixed in 4% paraformaldehyde (PFA) overnight at 4\u00b0C. After fixation, embryos were permeabilised by proteinase K (10 \u00b5g/ml, 10 min for embryos at 2 dpf, or 15 min for embryos at 3 dpf), and fixed again with 4% PFA for 15 min. Embryos were washes with PBS-Tween 20 (0.1%) and blocked in PBS with 0.3% Triton X-100% and 4% BSA for 3 hr at room temperature. Staining was performed in blocking buffer with NeutrAvidin-DyLight (1:500 dilution) overnight at 4\u00b0C followed by four washes with PBS 0.3% Trition X-100. For nuclear staining, embryos were stained with DAPI for 10 min followed by three washes with PBS 0.3% Trition X-100.\n\nConfocal imaging was performed on Zeiss 710 meta upright confocal microscopes. Zebrafish embryos were mounted in 1% low melting point agarose in embryos media (Westerfield, 2007) on a standard 8 cm petri dish. Objectives used were Zeiss water immersion x40 N/A 1.0 (catalogue number 420762). For live embryo imaging, embryos were anaesthetised in 2.5 mM tricaine prior to imaging.\n\n### Sample preparation for mass spectrometry\n\nFor in-gel digestion, the streptavidin pulldown samples were separated by SDS-PAGE on a 4\u201312% precast gel (Blot Bis-Tris Plus, Invitrogen) and then stained with InstantBlue (Expedeon). The whole lane was excised from the gel and future cut into approximate 3 \u00d7 1\u00d72 mm3 slices (L x W x H) and each slice were placed into a separate LoBind tubes (Eppendorf) for destaining. The gels were destained by adding 500 \u00b5l of 100 mM ammonium bicarbonate/acetonitrile (1:1, vol/vol) and incubated with occasional vortexing for 30 min. The ammonium bicarbonate/acetonitrile buffer was removed, and the gel pieces dried for 15 min by the addition of 200 \u00b5l of acetonitrile. The acetonitrile was removed and another 200 \u00b5l aliquot was added and left for 15\u201330 min. The acetonitrile was removed in preparation for trypsin digestion.\n\nAfter destain, the gel pieces were covered with 200 \u00b5l of 20 ng/\u00b5l of sequence grade trypsin/Lys-C (Promega) in 50 mM ammonium bicarbonate pH8 buffer. The gel pieces were left for 1 hr and if required a further 100 \u00b5l of trypsin/Lys-C solution was added to cover the gel pieces. The samples were placed in an incubator at 37\u00b0C overnight. The trypsin solution was transferred from each sample and placed in a clean Eppendorf tube. Of 5% formic acid/acetonitrile (3:1, vol/vol), 200\u00a0\u00b5l\u00a0was added to each tube and incubated for 15 min at room temperature in a shaker. The supernatant was placed into the pre-cleaned Eppendorf tubes, together with the trypsin solution for each sample and dried down in a vacuum centrifuge.\n\nFor HPLC/MS MS/MS analysis, 12 \u00b5l of 1.0% (vol/vol) trifluoroacetic acid in water was added to the tube, which was vortexed and incubated for 2 min in the sonication bath and then centrifuged for 1 min at 6700 xg (10,000 rpm) and finally, transferred to an autosampler vial for analysis.\n\n### Lipid chromatography and mass spectrometry\n\nThe tryptic peptide extracts were analysed by nanoHPLC/MS MS/MS on an Eksigent ekspert nanoLC 400 system (SCIEX) coupled to a Triple TOF 6600 mass spectrometer (SCIEX) equipped with PicoView nanoflow (New Objective) ion source. Five \u00b5l of each extract was injected onto a 5 mm x 300 \u00b5m, C18 3 \u00b5m trap column (SGE, Australia) for 5 min at 10 \u00b5l/min. The trapped tryptic peptide extracts were then washed onto the analytical 75 \u00b5m x 150 mm ChromXP C18 CL 3 \u00b5m column (SCIEX) at 400 nl/min and a column temperature of 45\u00b0C. Linear gradients of 2\u201340% solvent B over 60 min at 400 nl/min flowrate, followed by a steeper gradient from 40% to 90% solvent B in 5 min, then 90% solvent B for 5 min, were used for peptide elution. The gradient was then returned to 2% solvent B for equilibration prior to the next sample injection. Solvent A consisted of 0.1% formic acid in water and solvent B contained 0.1% formic acid in acetonitrile. The ionspray voltage was set to 2600V, declustering potential (DP) 80V, curtain gas flow 30, nebuliser gas 1 (GS1) 30, interface heater at 150\u00b0C. The mass spectrometer acquired 50 ms full scan TOF-MS data followed by up to 30 100 ms full scan product ion data, with a rolling collision energy, in an Information-Dependant Acquisition, IDA, mode for protein identification and peptide library production. Full scan TOFMS data was acquired over the mass range 350\u20131800 and for product ion ms/ms 100\u20131500. Ions observed in the TOF-MS scan exceeding a threshold of 200 counts and a charge state of +two to +five were set to trigger the acquisition of product ion, ms/ms spectra of the resultant 30 most intense ions.\n\n### MS data analysis and GO annotation\n\nData was acquired and processed using Analyst TF 1.7 software (SCIEX). Protein identification was carried out using ProteinPilot software v5.0 (SCIEX) with Paragon database search algorithm. MS/MS spectra were searched against the zebrafish proteome in the UniProt database (2019 version, containing 46847 proteins and 28365 common contaminants). The search parameter was set to through with False Discovery Rate (FDR) analysis. A non-linear fitting method was used to determine both a global and a local FDR from the decoy database search (Tang et al., 2008). The cut-off for identified proteins was set to 1% global FDR. Endogenous biotinylated proteins, common contaminants and background proteins (generated from TurboID-dGBP control embryos) were subtracted from the cavin proteomes. The MS2Count was calculated for each identified protein by summing the MS2Count of all peptides belonging to that protein. The MS2Count for each protein was used to generate heatmaps for semiquantitative comparison across cavin interactome.\n\nThe GO annotation for our identified proteins was carried out using DAVID 6.8 (Huang et al., 2009b; Huang et al., 2009a). For zebrafish proteins without annotation information, manually annotation was performed by searching their human or mouse homologs.\n",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "04c45aa7-bde7-4995-87f0-7ba856d1d5b7",
+      "submission_id": "1d71a82d-fa1c-40d7-b8fb-85c2b5192f91",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lilianna Solnica-Krezel, Washington University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64631.sa1](https://doi.org/10.7554/eLife.64631.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper reports an important new advance in mapping protein-protein proximity networks, and as such will be of interest to scientists across biological disciplines. In this modular system, a conditionally stabilized GFP-binding nanobody expressed as a transgene can be combined with other zebrafish transgenic lines expressing GFP-tagged proteins of interest to achieve biotin-dependent proteomic profiling. The data show convincingly in vivo labeling and identification of proximal proteins within a living organism. This work significantly expands experimental toolbox for defining protein interaction networks in zebrafish and beyond.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"in vivo proteomic mapping through GFP-directed proximity-dependent biotin labelling in zebrafish\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Lilianna Solnica-Krezel as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard White as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ben M Major (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nEssential revisions:\n\nThis is a very well written manuscript detailing an important technical advance for the protein-protein interaction community. The goal of the study was to develop the BLITZ method, which was accomplished and is now established. Comments and questions of minor or technical impact are as follows:\n\nThe authors conclude that \"TurboID exhibited the strongest biotinylation of endogenous proteins among the three new biotin ligases\" when transiently expressed in early zebrafish embryos (Figure 1B). However, Figure 1B also shows that by western blotting, TurboID was expressed at higher levels. Were biotinylation results normalized to the ligase expression levels?\n\nRandomly transgenes inserted into the zebrafish genome can be silenced in consecutive generations. Can the authors comment whether TurboID-dGBP protein expression remains stable over generations? Have attempts been made to insert the TurboID-dGBP under the control of endogenous, possibly tissue-specific promoters. Some background biotinylation has been observed even with dGBP, and tissue specific expression would help reduce it.\n\nIn Figure 4A, it is unclear why Cavlin1a-Clover shows co-localization with NeutrAvidin in the third row from the top but not in the second row from the bottom. The authors suggest that the biotinylation seen by Western blot in Figure 4B in the absence of Cavlin1a is driven by dGBP en route to the proteasome. Given the importance of this control from an in vivo setting, further definition and understanding of this signal and how it impacts true positive discovery is needed.\n\nOverall, the statistical analysis of significance for the scored proximal proteins is weak and lacks a more robust and field standard approach. Specifically, a nice set of control transgenic lines have been developed, but have not been processed by MS and are thus not used in scoring. Data processing describes a normalization step to endogenously expressed carboxylases. Do these carboxylases change in abundance across different bait proteins? The MS acquisition parameters are lacking from the Materials and methods section.\n\nThe endogenously biotinylated protein they used in their analysis was propionyl-CoA carboxiylase subunit alpha, a mitochondrial protein. Given that this is a proximity label, it might be good to add some additional controls used in their analyses, for protein specificity that are not restricted to mitochondria. If they compare the mass spec identified profile of NLS-TurboID, cytoplasmic TurboID GFP and CaaX TurboID GFP to the Caveolins. Some more statements of the restrictions of biotinylation as a proximity/location label would be appreciated in the Discussion.\n\nThe experiments describing the use of the TurboID-dGBP system to map proteins associated with Cavin9 and 4 in zebrafish muscle are very informative. With this experiment showing the potential of the method, it would be important to validate some of the newly identified potential interactors.\n\nOnly weak biotin labeling was detected after 4-6 h incubation of zebrafish embryos with biotin, and adequate labeling required 18 h incubation. Is this related to low permeability of zebrafish embryos to biotin? Has injection of biotin into embryos been attempted? This would not address later stages of development, but could be beneficial during embryogenesis.\n",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ba55cd66-d85f-47ef-ab75-749bd6bc5833",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C1",
+      "claim": "BirA* and BioID2 biotin ligases resulted in no detectable biotinylation in zebrafish embryos as assessed by streptavidin western blotting.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial attempts using BirA* or BioID2 biotin ligases in vivo in zebrafish were unsuccessful and resulted in no detectable biotinylation in zebrafish embryos as assessed by streptavidin western blotting (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "803156a3-f795-40dc-b714-ea29e05b93a7",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C2",
+      "claim": "BASU, TurboID, and miniTurbo showed greatly improved catalytic efficiency and enhanced proximity labelling in cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, the new bioID biotin ligases, BASU, TurboID, and miniTurbo, have been developed and showed greatly improved catalytic efficiency and enhanced proximity labelling in cultured cells (Branon et al., 2018; Ramanathan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Branon et al., 2018; Ramanathan et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "34454b52-2a2e-4823-b487-75f0d601c27a",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C3",
+      "claim": "TurboID injected embryos exhibited the strongest biotinylation of endogenous proteins among the three new biotin ligases with 500 \u03bcM biotin incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "TurboID injected embryos exhibited the strongest biotinylation of endogenous proteins among the three new biotin ligases with 500 \u03bcM biotin incubation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B comparing BASU, TurboID, and miniTurbo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "0fc571be-510f-41d4-8461-244361a68eac",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C4",
+      "claim": "BASU and miniTurbo were expressed at a lower level than TurboID despite equal amount of RNA injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, BASU and miniTurbo were expressed at a lower level than TurboID despite equal amount of RNA injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation from western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "689415e0-0007-4a09-b051-46ec1ecf6d68",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C5",
+      "claim": "Greater instability of miniTurbo has been reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not explore the underlying reasons for this, greater instability of miniTurbo has been reported previously and other biotin ligases have shown poor expression in cell cultures (May et al., 2020; Branon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (May et al., 2020; Branon et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "b1ad803b-80c0-421a-8b72-d9ef0a32f5af",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C6",
+      "claim": "Two prominent bands consistently detected around 70 and 135 kDa in all samples likely represent endogenously biotinylated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Note the two prominent bands consistently detected around 70 and 135 kDa in all samples likely represent endogenously biotinylated proteins (Housley et al., 2014; Ahmed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation and citations to published literature (Housley et al., 2014; Ahmed et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "7611afca-16c4-4a47-a845-e86b1b16dd3d",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C7",
+      "claim": "Zebrafish embryos are able to tolerate a biotin concentration as high as 800 \u03bcM with no obvious morphological abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "From our initial experiments with BirA*, we knew that zebrafish embryos are able to tolerate a biotin concentration as high as 800 \u03bcM with no obvious morphological abnormalities (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "6392a889-4896-4ac6-8358-bfd7f449ed3b",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C8",
+      "claim": "Weak labelling could be seen with 50 \u03bcM biotin, increasing through 250 \u03bcM, with the strongest labelling at concentration of 500 and 750 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Weak labelling could be seen with 50 \u03bcM biotin, increasing through 250 \u03bcM, with the strongest labelling at concentration of 500 and 750 \u03bcM (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "79d1123c-60f9-443b-b5f4-70aa04c47238",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C9",
+      "claim": "TurboID did not produce detectable exogenous biotinylation without the addition of biotin.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike its application in cultured cells and yeast (Branon et al., 2018), TurboID did not produce detectable exogenous biotinylation without the addition of biotin (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D and comparison with published literature (Branon et al., 2018).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "7c506fde-bef4-4ce7-b00f-ddd082a55be8",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C10",
+      "claim": "A higher biotin concentration resulted in more TurboID in the total protein extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the anti-Myc immunoblot showed that a higher biotin concentration resulted in more TurboID in the total protein extracts (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "963ad437-44f6-4009-9d38-3a4fa870c53b",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C11",
+      "claim": "The addition of exogenous biotin did not change the level of endogenous biotinylated proteins in the WT embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, the addition of exogenous biotin did not change the level of endogenous biotinylated proteins in the WT embryos (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "c76aeaa1-3550-4cec-9b84-86bbf4e75d6e",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C12",
+      "claim": "A 10-min biotin incubation with TurboID is sufficient to visualise biotinylated proteins by immunoblotting and to perform analysis of different organellar proteomes in mammalian cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cell culture, a 10-min biotin incubation with TurboID is sufficient to visualise biotinylated proteins by immunoblotting and to perform analysis of different organellar proteomes (Branon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Branon et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "60659edd-5fc3-408d-a68f-db35df553a68",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C13",
+      "claim": "Rapid biotinylation in zebrafish was not observed within the first 2 hr of biotin incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe rapid biotinylation in zebrafish within the first 2 hr of biotin incubation (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "46a8d5d2-dfcf-4df8-a032-57b970cf9d24",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C14",
+      "claim": "TurboID-induced biotin labelling was only weakly detected after 4\u20136 hr incubation and adequate biotinylation was only detected after overnight incubation (18 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "TurboID-induced biotin labelling was only weakly detected after 4\u20136 hr incubation and adequate biotinylation was only detected after overnight incubation (18 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from time-course experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "e7b6e618-a33e-467f-9e88-fe1332e99b97",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C15",
+      "claim": "TurboID fusion proteins produced a biotinylation pattern corresponding to the appropriate subcellular location of targeting sequences/proteins in zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "After biotin treatment, the TurboID fusion proteins produced a biotinylation pattern corresponding to the appropriate subcellular location of targeting sequences/proteins in zebrafish embryos (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "dfdf52b2-0a5b-40ad-836b-063d4c0ee4e7",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C16",
+      "claim": "The T-tubule structure was clearly visible by NeutrAvidin staining in the embryos expressing Cavin4b-TurboID.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial resolution of the biotin labelling was remarkable as even the T-tubule structure, which is difficult to resolve in fixed embryos, was clearly visible by NeutrAvidin staining in the embryos expressing Cavin4b-TurboID.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation from immunostaining data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "d77b0f78-f53f-4819-83a8-c7b844a16985",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C17",
+      "claim": "The biotinylated protein derived from each TurboID construct gave rise to a unique barcode of protein bands on the streptavidin blot, indicative of proteins specific to each corresponding subcellular compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the biotinylated protein derived from each TurboID construct gave rise to a unique barcode of protein bands on the streptavidin blot, indicative of proteins specific to each corresponding subcellular compartment (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "8441372d-b303-42a7-8235-cc94458f62f3",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C18",
+      "claim": "TurboID was able to specifically label a selective subpopulation of endogenous proteins when targeted to a specific subcellular region or protein in zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated that TurboID was able to specifically label a selective subpopulation of endogenous proteins when targeted to a specific subcellular region or protein in zebrafish embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing specific biotinylation patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "fb30154b-23f4-42b9-8f1b-4419452d2175",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C19",
+      "claim": "The TurboID-biotinylated proteins were recoverable from crude fish lysates by affinity purification with streptavidin-conjugated beads.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the TurboID-biotinylated proteins were recoverable from crude fish lysates by affinity purification with streptavidin-conjugated beads (Figure 2D), ready for downstream applications such as identification by mass spectrometry.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "bd7ad77e-476b-4396-94d7-bdfdde85a456",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C20",
+      "claim": "A GFP-binding peptide (GBP; a 14 kDa nanobody) is able to target a peroxidase (APEX2) to GFP-tagged POIs in both cell culture and zebrafish systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we demonstrated that a GFP-binding peptide (GBP; a 14 kDa nanobody) is able to target a peroxidase (APEX2) to GFP-tagged POIs in both cell culture and zebrafish systems (Ariotti et al., 2015b), and can be used for ultrastructural localisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Ariotti et al., 2015b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "f1a9ee51-243f-4e0d-9351-74c36318f3cf",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C21",
+      "claim": "When expressed at low levels, mRuby2-GBP showed clear colocalisation with Cavin1a-Clover at the plasma membrane in the mRuby2-positive muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed at low levels, mRuby2-GBP showed clear colocalisation with Cavin1a-Clover at the plasma membrane in the mRuby2-positive muscle cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "ef82f822-799f-419e-bee0-a8172f1186d6",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C22",
+      "claim": "When mRuby-GBP was expressed at higher levels, red fluorescence was observed in the cytoplasm in addition to the plasma membrane, likely due to the saturation of binding between GBP and GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when mRuby-GBP was expressed at higher levels, red fluorescence was observed in the cytoplasm in addition to the plasma membrane, likely due to the saturation of binding between GBP and GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation and inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "52b56971-1c8f-4faf-be45-0e35324976f8",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C23",
+      "claim": "A conditionally stabilised GFP-nanobody (destabilised GBP or 'dGBP') is rapidly degraded unless the GFP-binding site is occupied.",
+      "claim_type": "EXPLICIT",
+      "source": "As a solution, we substituted the GBP with a conditionally stabilised GFP-nanobody (destabilised GBP or 'dGBP') that is rapidly degraded unless the GFP-binding site is occupied (Tang et al., 2016; Ariotti et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Tang et al., 2016; Ariotti et al., 2018a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "75ce3f3b-c166-4788-b7f5-de1087155a9a",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C24",
+      "claim": "Tight association of mRuby2-dGBP and Cavin1a-Clover was observed in all muscle cells regardless of expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we observed tight association of mRuby2-dGBP and Cavin1a-Clover in all muscle cells regardless of expression level (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "1e8febc6-5f77-4829-835c-1465bd82b4ab",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C25",
+      "claim": "In embryos co-expressing ubiquitous TurboID-dGBP and tissue-specific GFP, TurboID-catalysed biotinylation was detected in the intersegmental vessels and the spinal cord motor neurons in the kdrl:EGFP and MotoN:EGFP lines, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryos co-expressing ubiquitous TurboID-dGBP and tissue-specific GFP, TurboID-catalysed biotinylation was detected in the intersegmental vessels and the spinal cord motor neurons in the kdrl:EGFP and MotoN:EGFP lines, respectively (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "fd1df52f-5240-40e1-a8d2-c6866d32d08b",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C26",
+      "claim": "The TurboID-dGBP system can produce biotinylation with tissue specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that our TurboID-dGBP system can produce biotinylation with tissue specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing tissue-specific biotinylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "c7a86633-dae9-4753-a469-f68877ebe4c5",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C27",
+      "claim": "Clear colocalisation between biotinylated proteins and Clover-tagged cavins was observed in muscle fibres, at the sarcolemma and T-tubules.",
+      "claim_type": "EXPLICIT",
+      "source": "With the same procedures, we observed clear colocalisation between biotinylated proteins and Clover-tagged cavins in muscle fibres, at the sarcolemma and T-tubules, suggesting our TurboID-dGBP system can produce proximity-dependent biotinylation with subcellular resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation from immunostaining data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "faea5560-d525-4207-a59d-36f081d4377e",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C28",
+      "claim": "Without biotin treatment or without the expression of GFP, there was no detectable biotinylation effected by TurboID.",
+      "claim_type": "EXPLICIT",
+      "source": "Without biotin treatment or without the expression of GFP, there was no detectable biotinylation effected by TurboID.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "1942fa68-1698-404e-aefc-10a72afc7ec1",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C29",
+      "claim": "The specificity of GFP-directed biotinylation was not compromised in fish lines expressing higher levels of TurboID-dGBP.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the specificity of GFP-directed biotinylation was not compromised in fish lines expressing higher levels of TurboID-dGBP (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "ca245a02-4e07-425a-8bd6-524af8269ac3",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C30",
+      "claim": "In the absence of Cavin1a-Clover, a weak biotinylation was still observed in the embryos carrying only the TurboID-dGBP transgene, despite the level of TurboID-dGBP being undetectable on anti-Myc immunoblot.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, in the absence of Cavin1a-Clover, a weak biotinylation was still observed in the embryos carrying only the TurboID-dGBP transgene, despite the level of TurboID-dGBP being undetectable on anti-Myc immunoblot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observation from western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "97ee0ec9-3a00-437d-9321-843f64561fe5",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C31",
+      "claim": "Background labelling is likely caused by TurboID-dGBP en route to proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "This background labelling is likely caused by TurboID-dGBP en route to proteasomal degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observation of weak background biotinylation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "47696b88-c06b-4ca0-a22d-bab1cb433e76",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C32",
+      "claim": "MS analysis revealed background proteins are mainly endogenous biotinylated proteins, nuclear proteins, cytoskeletal proteins and yolk proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent MS analysis revealed these background proteins are mainly endogenous biotinylated proteins, nuclear proteins, cytoskeletal proteins and yolk proteins (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "d46ecf7e-9752-40f8-b4fa-9bc57aa98e29",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C33",
+      "claim": "Endogenous Cavin4b, a known Cavin1 interactor, was detected in the streptavidin pulldown in addition to Cavin1a-GFP and TurboID-dGBP.",
+      "claim_type": "EXPLICIT",
+      "source": "Using streptavidin affinity pulldown, biotinylated proteins were isolated from total fish lysates and endogenous Cavin4b, a known Cavin1 interactor (Bastiani et al., 2009), was detected in the streptavidin pulldown in addition to Cavin1a-GFP and TurboID-dGBP (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C and citation to published literature (Bastiani et al., 2009).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "e0d0683b-4a23-448c-bb7b-5659119322c5",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C34",
+      "claim": "26, 22, and 25 proteins were identified in the Cavin1a, Cavin4a, and Cavin4b samples, respectively, after subtracting background proteins and common containments.",
+      "claim_type": "EXPLICIT",
+      "source": "After subtracting background proteins and common containments, 26, 22, and 25 proteins were identified in the Cavin1a, Cavin4a, and Cavin4b samples, respectively (Figure 5B and C, Supplementary file 1 \u2013 Tables 1-3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry data shown in Figure 5B and C and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "acf9212b-9251-4d76-addc-4bb8de9eecd6",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C35",
+      "claim": "The majority of proteins identified are associated with the plasma membrane, consistent with the membrane localisation of cavins.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the proteins identified, the majority of proteins are associated with the plasma membrane, consistent with the membrane localisation of cavins (Figure 5D, Supplementary file 1 - Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry data and GO annotation shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "2c3ef658-d760-4e61-ad16-0a839522c7c3",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C36",
+      "claim": "Endogenous cavins were consistently detected in all samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous cavins were consistently detected in all samples, suggesting that the GFP-tag, as well as the binding of TurboID-dGBP, did not interfere with the oligomerisation of the cavins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data and inference about protein function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "d1f785d6-7beb-487f-97cb-02f9efc588ea",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C37",
+      "claim": "Dystrophin (DMD), a protein associated with caveolae, was identified uniquely in the Cavin1a sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Dystrophin (DMD), a protein associated with caveolae was identified uniquely in the Cavin1a sample (Song et al., 1996; Doyle et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data and citations to published literature (Song et al., 1996; Doyle et al., 2000).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "2fbea18c-425f-478e-a0e6-787d174efa8d",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C38",
+      "claim": "An ortholog of Pacsin3 (zgc:91999), a caveola-associated protein required for muscle caveolar formation, was detected uniquely in the Cavin4b sample.",
+      "claim_type": "EXPLICIT",
+      "source": "An ortholog of Pacsin3 (zgc:91999), a caveola-associated protein required for muscle caveolar formation (Seemann et al., 2017), was also detected uniquely in the Cavin4b sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data and citation to published literature (Seemann et al., 2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "72bbdc40-9027-47ee-99f5-4cd601830252",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C39",
+      "claim": "Known interactors were undetectable in all control samples, demonstrating the high accuracy of the BLITZ system.",
+      "claim_type": "EXPLICIT",
+      "source": "These known interactors were undetectable in all control samples, demonstrating the high accuracy of the BLITZ system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing specific detection of known interactors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "9c168506-bd38-4ab2-9d11-d0e6e82570d4",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C40",
+      "claim": "Caveolin1 and Caveolin (isoform unassigned) were detected in the Cavin1a sample based on two high confidence peptides but were not classified as significant hits based on the 1% global FDR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that, Caveolin1 (Uniprot accession: Q6YLH8) and Caveolin (isoform unassigned; Uniprot accession: A1L1S3) were detected in the Cavin1a sample based on two high confidence peptides (HLNDDVVK and VWVYSGIGFESAR) that were not present in the controls (Supplementary file 2) but were not classified as significant hits based on the 1% global FDR analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "f0d08f9a-c9b0-47b0-b9c9-fcabd1da79a2",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C41",
+      "claim": "The poor accessibility of caveolins may reflect that a large proportion of caveolins are buried in the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect the poor accessibility of caveolins, as a large proportion of caveolins are buried in the plasma membrane (Ariotti et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observation and citation to published literature (Ariotti et al., 2015a).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "d40b26d4-5971-4303-8ae9-43b5bb3bf59d",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C42",
+      "claim": "BLITZ does not require extensive molecular biology steps to produce numerous expression constructs, or laborious embryonic manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, BLITZ does not require extensive molecular biology steps to produce numerous expression constructs, or laborious embryonic manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the design and implementation of the BLITZ system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "e1966551-b21c-417c-b8ac-a7a76b4d5699",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C43",
+      "claim": "BLITZ relies on simple crossing of a TurboID-dGBP line with an existing GFP-tagged fish line of choice.",
+      "claim_type": "EXPLICIT",
+      "source": "It instead relies on simple crossing of a TurboID-dGBP line with an existing GFP-tagged fish line of choice; a plethora of such lines currently exist in stock centres globally and, with the advent of nuclease directed genome editing, this number is rapidly increasing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the design and implementation of the BLITZ system and knowledge of available resources.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "2fe82b5a-b08d-48ce-be11-0a0d0e189791",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C44",
+      "claim": "BLITZ enables cell- and tissue-specific proteomic studies, since the stability of TurboID-dGBP is dependent on its binding to GFP targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, BLITZ enables cell- and tissue-specific proteomic studies, since the stability of TurboID-dGBP is dependent on its binding to GFP targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the design principle of the BLITZ system using conditionally stabilised dGBP.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "98b50f6f-ce35-4251-8117-648f147720df",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C45",
+      "claim": "Non-specific biotin labelling in tissues that do not express GFP-tagged constructs is avoided in BLITZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-specific biotin labelling in tissues that do not express GFP-tagged constructs is avoided.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the design principle of the BLITZ system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "3d254c6b-2893-4baf-806f-9217bc8e7053",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C46",
+      "claim": "The TurboID-dGBP system has the potential to be used with knock-in fish lines carrying a GFP fusion protein at the endogenous locus of a POI.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, our TurboID-dGBP system has the potential to be used with knock-in fish lines carrying a GFP fusion protein at the endogenous locus of a POI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential future applications of the BLITZ system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "4ec7e937-404e-4b12-aa56-5ffca078359c",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C47",
+      "claim": "BLITZ will enable the application of BioID to study proteomic associations with endogenous proteins, which has not been achieved by conventional BioID methods.",
+      "claim_type": "EXPLICIT",
+      "source": "This will enable the application of BioID to study proteomic associations with endogenous proteins, which, to our knowledge, has not been achieved by conventional BioID methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential future applications and compares with existing methods.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "06b2b826-b8d4-409d-bf0b-1e42dcd67a21",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C48",
+      "claim": "The modularity of the BLITZ system could be advantageous for use in established tissue culture systems using existing GFP expression vectors or/and knock-in cell lines, as well as extended to other organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the modularity of the BLITZ system could be advantageous for use in established tissue culture systems using existing GFP expression vectors or/and knock-in cell lines, as well as extended to other organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential future applications of the BLITZ system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "2fe91951-de09-4f58-9ec8-1fc7e74fc74b",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C49",
+      "claim": "The indirect binding in BLITZ increases the physical distance between biotin ligase and the POI, which could potentially enlarge the effective labelling radius and include more non-interacting neighbouring proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the traditional BioID approach using a direct fusion of the biotin ligase with the bait protein, our system targets TurboID to the POI through the binding of dGBP nanobody to GFP. In this case, the indirect binding increases the physical distance between biotin ligase and the POI, which could potentially enlarge the effective labelling radius and include more non-interacting neighbouring proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the design of the BLITZ system and potential consequences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "631b0021-a903-474e-a095-414ff29441bd",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C50",
+      "claim": "The use of a GFP-directed nanobody to target APEX2 for protein localisation does not appear to compromise the fidelity of labelling: APEX2 staining was rarely observed beyond 25 nm from the site of POI.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we have previously shown that the use of a GFP-directed nanobody to target a genetically encoded peroxidase (APEX2) for protein localisation does not appear to compromise the fidelity of labelling: APEX2 staining was rarely observed beyond 25 nm from the site of POI (Ariotti et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Ariotti et al., 2015a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "2065551c-98d9-49b8-a7a0-f2f61eeac729",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C51",
+      "claim": "The binding of the biotin ligase-nanobody with the GFP-tagged POI could perturb the localisation of the POI, either by masking interacting surfaces or simply due to the larger size of a complex.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that the binding of the biotin ligase-nanobody with the GFP-tagged POI could perturb the localisation of the POI, either by masking interacting surfaces or simply due to the larger size of a complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential limitations of the BLITZ system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "ed099f89-1b20-470b-8913-427e18de1144",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C52",
+      "claim": "BLITZ is problematic for the identification of interactors that are endogenously biotinylated, such as carboxylases.",
+      "claim_type": "EXPLICIT",
+      "source": "As BLITZ uses biotin as a label, the method (like most BioID methods) is problematic for the identification of interactors that are endogenously biotinylated, such as carboxylases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of the limitations of biotin-based labeling methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "4d9bac3e-8962-418d-a41d-a1b7678b34cd",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C53",
+      "claim": "All BioID methods will label proteins within a small number of nanometres, so non-interacting proteins could be detected simply due to close proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, as all BioID methods will label proteins within a small number of nanometres, non-interacting proteins could be detected simply due to close proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of how BioID methods work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "f091e076-632f-47b4-b29b-9c0f2ce567b1",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C54",
+      "claim": "Subsequent validation using other independent approaches such as biomolecular fluorescence complementation and affinity pulldown is essential to distinguish bona fide interactors from non-interacting neighbouring proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, subsequent validation using other independent approaches such as biomolecular fluorescence complementation and affinity pulldown is essential to distinguish bona fide interactors from non-interacting neighbouring proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of best practices for validating protein-protein interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "48e69f35-8f10-4f05-b47a-26883cbc9e4e",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C55",
+      "claim": "Cavin family proteins are key components of the caveolar coat complex associated with the inner leaflet of the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Cavin family proteins are key components of the caveolar coat complex associated with the inner leaflet of the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about cavin proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "9e72e5e7-e3e6-4e7b-9c7c-881b77f8d31a",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C56",
+      "claim": "Cavin1 is present in all tissues and is essential for caveolar formation and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Cavin1 is present in all tissues and is essential for caveolar formation and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about Cavin1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "0330b525-2453-4295-938b-5d068f74e00f",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C57",
+      "claim": "Cavin2, 3, and 4 show more restricted tissue distributions with Cavin4 being specific to skeletal and cardiac muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Cavin2, 3, and 4 show more restricted tissue distributions with Cavin4 being specific to skeletal and cardiac muscle (reviewed in Parton et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a review article (Parton et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "932b2b91-2f06-4d22-bfce-49bd062c84a9",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C58",
+      "claim": "In the zebrafish, Cavin1 and 4 are each duplicated such that four loci exist; Cavin1a/b and Cavin4a/b.",
+      "claim_type": "EXPLICIT",
+      "source": "In the zebrafish, Cavin1 and 4 are each duplicated such that four loci exist; Cavin1a/b and Cavin4a/b.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of zebrafish genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "d39e6e68-0af5-43b7-94df-b5b973699e54",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C59",
+      "claim": "Cavin1a and b show spatially distinct expression patterns with Cavin1b being largely restricted to the developing notochord whereas Cavin1a, 4a, and 4b are all highly expressed in skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Cavin1a and b show spatially distinct expression patterns with Cavin1b being largely restricted to the developing notochord whereas Cavin1a, 4a, and 4b are all highly expressed in skeletal muscle (Hill et al., 2008; Lo et al., 2015; Housley et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Hill et al., 2008; Lo et al., 2015; Housley et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "80382c8b-813c-476b-aa34-80c442b0ce91",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C60",
+      "claim": "The majority of proteins identified for all cavin proteomes were muscle-enriched factors and plasma membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of proteins identified for all cavin proteomes were muscle-enriched factors and plasma membrane proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "0e18f458-90ce-4f1b-ba42-97e837156f93",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C61",
+      "claim": "A specific enrichment of known caveola-associated proteins was observed consistent with initial expectations.",
+      "claim_type": "EXPLICIT",
+      "source": "We also saw a specific enrichment of known caveola-associated proteins consistent with initial expectations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "ae2f05de-6a35-448e-8226-7082a46bb19b",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C62",
+      "claim": "The cavin proteomes contained a disproportionate number of nuclear proteins, such as Gnl3, Naca, and Lbr.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the cavin proteomes also contained a disproportionate number of nuclear proteins, such as Gnl3, Naca, and Lbr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "04498314-21ef-48c8-966a-366f3c2b8077",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C63",
+      "claim": "In cultured cells, cavins have been shown to be released from the plasma membrane in response to external stimuli (such as mechanical stress) and are able to bind intracellular targets in variety of subcellular locations to regulate processes such as ribosomal RNA transcription and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured cells, cavins have been shown to be released from the plasma membrane in response to external stimuli (such as mechanical stress) and are able to bind intracellular targets in variety of subcellular locations to regulate processes such as ribosomal RNA transcription and apoptosis (Liu and Pilch, 2016; McMahon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Liu and Pilch, 2016; McMahon et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "9262ca22-c11a-4c61-a08d-c396229c48bc",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C64",
+      "claim": "In the absence of Cavin1, in knockout mouse muscle, Cavin4 has been shown to localise predominantly to the nucleus rather than the sarcolemma.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in the absence of Cavin1, in knockout mouse muscle, Cavin4 has been shown to localise predominantly to the nucleus rather than the sarcolemma (Lo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Lo et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "b4e5ddc2-de4c-4cde-84c2-059f10483c41",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C65",
+      "claim": "Loss of Cavin1 causes lipodystrophy and muscular dystrophy in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "We know that loss of Cavin1 causes lipodystrophy and muscular dystrophy in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about Cavin1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "4e405dda-6f17-48d5-acdb-027fc6affe4b",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C66",
+      "claim": "Patient and animal muscle shows hypertrophied muscle fibres in Cavin1 deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient and animal muscle shows hypertrophied muscle fibres (Hayashi et al., 2009; Rajab et al., 2010; Ding et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Hayashi et al., 2009; Rajab et al., 2010; Ding et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "8c5d99cb-38cf-46d5-b436-a79077e18068",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C67",
+      "claim": "Cavin4 mutations have been described in dilated cardiomyopathy patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Cavin4 mutations have been described in dilated cardiomyopathy patients and there is evidence that Cavin4 recruits ERK in cardiomyocytes (Rodriguez et al., 2011; Ogata et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Rodriguez et al., 2011; Ogata et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "4afb0a8d-96f2-4eaf-9884-f597edde3d08",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C68",
+      "claim": "There is evidence that Cavin4 recruits ERK in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cavin4 mutations have been described in dilated cardiomyopathy patients and there is evidence that Cavin4 recruits ERK in cardiomyocytes (Rodriguez et al., 2011; Ogata et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Rodriguez et al., 2011; Ogata et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "3d7bc23c-2c85-4a21-8025-3e2be6ccbcd6",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C69",
+      "claim": "There is supporting data for the positive regulation of hypertrophy in skeletal muscle fibres by Cavin1, and in cardiomyocytes by Cavin4.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is supporting data for the positive regulation of hypertrophy in skeletal muscle fibres by Cavin1, and in cardiomyocytes by Cavin4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the cited literature about Cavin1 and Cavin4 functions.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "1e58df2f-0d4e-41f8-b180-6b2c30eedc03",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C70",
+      "claim": "The cavin proteome showed an enrichment of protein kinases, such as calcium/calmodulin-dependent protein kinase II (CaMKII).",
+      "claim_type": "EXPLICIT",
+      "source": "The cavin proteome showed an enrichment of protein kinases, such as calcium/calmodulin-dependent protein kinase II (CaMKII).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "acc0e5d5-8f8d-43d4-9244-844cffb12f55",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C71",
+      "claim": "CaMKII regulates Ca2+ signalling and plays an important role in the development of cardiac hypertrophy through the ERK signalling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII regulates Ca2+ signalling and plays an important role in the development of cardiac hypertrophy through the ERK signalling pathway (Illario et al., 2003; Cipolletta et al., 2010; Cipolletta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Illario et al., 2003; Cipolletta et al., 2010; Cipolletta et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "9b385574-6143-4ef1-ace1-cc7396022a17",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C72",
+      "claim": "The activation of CaMKII can be induced by exercise in skeletal muscle, with the activation level proportional to the intensity of exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of CaMKII can be induced by exercise in skeletal muscle, with the activation level proportional to the intensity of exercise (Rose et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Rose et al., 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "dbe7e179-39c3-4707-b046-e40d90ff0891",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C73",
+      "claim": "BLITZ revealed several putative cavin interactors that have also been shown to be involved in cardiomyopathies and/or skeletal myopathies, including the membrane protein Dystrophin, the triad-associated proteins Bin1, Cypher/ZASP, and SPEG.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, BLITZ revealed several putative cavin interactors that have also been shown to be involved in cardiomyopathies and/or skeletal myopathies, including the membrane protein Dystrophin (Deconinck and Dan, 2007), the triad-associated proteins Bin1 (Nicot et al., 2007), Cypher/ZASP (Selcen and Engel, 2005), and SPEG (Agrawal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data and citations to published literature (Deconinck and Dan, 2007; Nicot et al., 2007; Selcen and Engel, 2005; Agrawal et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "7d45ddf8-8ae6-49d5-a47d-58aba40948b8",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C74",
+      "claim": "Genetic ablation of zebrafish Cavin4b causes aberrant T-tubules in skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic ablation of zebrafish Cavin4b causes aberrant T-tubules in skeletal muscle (Housley et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Housley et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "2c361dcc-bfe8-4d11-a4e2-aa2a4694539c",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C75",
+      "claim": "It is possible that Cavin4 may be involved in T-tubule formation through interaction with triad associated proteins, such as Bin1.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that Cavin4 may be involved in T-tubule formation through interaction with triad associated proteins, such as Bin1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative based on the identified interactions and known functions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "44234aba-fad8-40a6-845b-d0a3b1643690",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C76",
+      "claim": "The BLITZ system enables the in vivo identification of protein interactors in a cell- and tissue-specific manner, with high precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our BLITZ system enables the in vivo identification of protein interactors in a cell- and tissue-specific manner, with high precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results demonstrating the capabilities of BLITZ.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "b3dc998b-87ac-4d42-a3a2-27eba8ffee9f",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C77",
+      "claim": "The applicability of BLITZ was demonstrated in diverse cell types including neurons and vascular endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated the applicability of this approach in diverse cell types including neurons and vascular endothelial cells and applied the BLITZ system to identify factors associated with cavin family proteins in differentiated skeletal muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing biotinylation in different cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "bb46b189-a3db-4eab-9dfc-e103888161d8",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C78",
+      "claim": "BLITZ provides a versatile and valuable tool for proteomic discovery using the zebrafish model.",
+      "claim_type": "EXPLICIT",
+      "source": "BLITZ provides a versatile and valuable tool for proteomic discovery using the zebrafish model, but also has the potential for application in other in vivo contexts that to date have been challenging or intractable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the demonstrated capabilities and potential applications of BLITZ.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "7ad416e3-1260-460c-8d56-d23c7d489095",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "claim_id": "C79",
+      "claim": "BLITZ has the potential for application in other in vivo contexts that to date have been challenging or intractable.",
+      "claim_type": "EXPLICIT",
+      "source": "BLITZ provides a versatile and valuable tool for proteomic discovery using the zebrafish model, but also has the potential for application in other in vivo contexts that to date have been challenging or intractable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential future applications of BLITZ.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "54a21358-d401-447d-b88b-1bae079d1062",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TurboID was identified as the most effective biotin ligase for zebrafish embryos among BASU, TurboID, and miniTurbo, with TurboID showing the strongest biotinylation at 500 \u03bcM biotin. BirA* and BioID2 failed to produce detectable biotinylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 collectively demonstrate that TurboID outperforms other biotin ligases tested in zebrafish. The experimental data (C1, C3, C4) is supported by western blots and comparisons, while literature citations (C2, C5) provide context for the improved catalytic efficiency of newer ligases and known stability issues with miniTurbo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "8c8ad51d-ecac-4177-9834-520b82edb816",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TurboID activity in zebrafish embryos is biotin concentration-dependent, with optimal labeling at 500-750 \u03bcM biotin. Unlike in cultured cells, TurboID requires exogenous biotin addition and shows increased protein stability at higher biotin concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 are well-supported by experimental data showing dose-response relationships and controls. The observations about endogenous biotinylated proteins (C6, C11), biotin tolerance (C7), optimal concentrations (C8), and the unexpected stabilization effect (C10) are all backed by western blot data and appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "03ab0b99-82b2-4e29-b8c6-090f131419d2",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TurboID-catalyzed biotinylation in zebrafish requires significantly longer incubation times (18 hours) compared to mammalian cell culture (10 minutes), with weak labeling detected only after 4-6 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 establish a clear temporal requirement for TurboID activity in zebrafish that differs substantially from cell culture systems. The comparison to published literature (C12) and time-course experimental data (C13, C14) provide strong support for this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "f21caf96-627d-4f32-9c2c-be7b64fe2279",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TurboID demonstrates high spatial resolution when targeted to specific subcellular compartments or proteins in zebrafish, producing unique biotinylation patterns corresponding to subcellular localization, including fine structures like T-tubules. Biotinylated proteins are recoverable by streptavidin affinity purification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 collectively demonstrate the spatial specificity and utility of TurboID in zebrafish. The immunostaining data (C15, C16), western blot patterns (C17), and successful protein recovery (C19) provide strong experimental support. The remarkable resolution of T-tubule structures (C16) is particularly compelling evidence of spatial precision.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "13b1f01c-a873-408e-97bb-965b1a99982e",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A conditionally stabilized GFP-binding nanobody (dGBP) successfully targets proteins to GFP-tagged proteins of interest in zebrafish muscle cells, showing tight association regardless of expression level, unlike the standard GBP which shows cytoplasmic localization at high expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 establish the superiority of dGBP over standard GBP for targeting applications. The prior work with APEX2 (C20), experimental observations of GBP saturation (C21, C22), and the solution using dGBP (C23, C24) are all well-supported by imaging data and appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "67168ac1-fd4e-42dc-93f2-2cc7545dcfd8",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The TurboID-dGBP system produces tissue-specific and subcellular-specific biotinylation in zebrafish when crossed with GFP-expressing lines, with specificity maintained even at high TurboID-dGBP expression levels and appropriate negative controls showing no labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 demonstrate the specificity and versatility of the BLITZ system. The tissue-specific labeling in different cell types (C25, C26), subcellular resolution (C27), proper controls (C28), and maintained specificity at varying expression levels (C29) are all supported by immunostaining and imaging data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "c30febc8-5fc2-4cad-86d2-0b85302feb80",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Background biotinylation occurs in embryos expressing only TurboID-dGBP without GFP target, likely due to TurboID-dGBP en route to proteasomal degradation, with MS analysis identifying these background proteins as endogenous biotinylated proteins, nuclear proteins, cytoskeletal proteins, and yolk proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 identify and characterize a limitation of the system. The observation of weak background labeling (C30), mechanistic explanation (C31), and MS characterization (C32) provide a complete picture of this background signal and its sources, which is important for proper interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "aafa5e45-ba77-4613-8043-2d8a66ee8d02",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "BLITZ successfully identified cavin-associated proteins in zebrafish skeletal muscle, detecting 26, 22, and 25 proteins for Cavin1a, Cavin4a, and Cavin4b respectively, including known interactors like Cavin4b, Dystrophin, and Pacsin3, with high specificity as demonstrated by absence in controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 demonstrate successful application of BLITZ to identify protein interactors. The MS data (C34, C35), detection of known interactors (C33, C37, C38), consistent detection of endogenous cavins (C36), and absence in controls (C39) provide strong validation of the method's accuracy and utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "b3f01185-3e24-4c7a-afb0-6aaa45257ae0",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Caveolin1 and Caveolin were detected in the Cavin1a sample based on high-confidence peptides not present in controls, but did not meet the 1% global FDR threshold, possibly due to poor accessibility from membrane burial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C41 describe a borderline result where peptides were detected but did not meet statistical significance thresholds. While the mechanistic explanation for poor detection (C41) is reasonable and cited, the failure to meet FDR cutoffs means this cannot be considered a definitive identification, making the result uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "7b550056-d591-477e-9630-a2a1079502d3",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "BLITZ offers methodological advantages over conventional BioID by requiring only simple genetic crosses with existing GFP-tagged lines, enabling tissue-specific studies through conditional stabilization of TurboID-dGBP, and avoiding non-specific labeling in non-target tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 describe the practical advantages of the BLITZ system. These are well-supported by the experimental design, the demonstrated tissue specificity (shown in earlier claims), and the logical consequences of using conditionally stabilized dGBP. The claims are based on both demonstrated capabilities and sound reasoning about the system's design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "4bedf31e-08ee-454a-8e5f-8aa337f68149",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "BLITZ has potential applications with knock-in fish lines expressing endogenous GFP-tagged proteins, in tissue culture systems, and in other organisms, which would enable proteomic studies of endogenous proteins not achievable with conventional BioID.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46-C48 are speculative about future applications that have not been experimentally demonstrated in this work. While the reasoning is sound and the potential is plausible based on the demonstrated capabilities, these remain hypothetical applications requiring future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "28d46264-ce78-4ec7-9817-de580415f5d2",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The indirect binding of TurboID to POI through dGBP-GFP interaction could potentially increase labeling radius and include non-interacting neighbors, though prior work with APEX2 suggests labeling remains within 25 nm. The binding could also perturb POI localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C51 discuss potential limitations of the system. While C50 provides some reassurance from prior work with APEX2, the concerns about increased labeling radius (C49) and perturbation of localization (C51) are speculative. The authors acknowledge these as caveats but do not provide direct experimental evidence addressing them in the current system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "b4dccf89-0f17-4226-8e1e-6d46a1fdba92",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "BLITZ shares limitations common to BioID methods, including difficulty identifying endogenously biotinylated proteins and potential detection of non-interacting proximal proteins, necessitating validation with independent approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 accurately describe known limitations of biotin-based proximity labeling methods. These are well-established in the field and represent general knowledge about BioID approaches. The recommendation for validation (C54) is a standard best practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "e9c8928e-374a-44c1-bb13-30f3d9990b13",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cavin family proteins are caveolar coat components with Cavin1 being ubiquitous and essential, while Cavin2-4 show restricted tissue distributions. In zebrafish, Cavin1 and Cavin4 are duplicated, with distinct expression patterns where Cavin1a, 4a, and 4b are highly expressed in skeletal muscle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 provide background information about cavin proteins that is well-supported by established literature and citations. This contextualizes the choice of cavins as targets for demonstrating BLITZ capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "3a562372-5376-44da-a4ea-9073d8b8d6c3",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cavin proteomes identified by BLITZ were enriched for muscle factors and plasma membrane proteins, including known caveola-associated proteins, but also contained nuclear proteins. Literature supports that cavins can be released from membranes and bind intracellular targets, and Cavin4 localizes to the nucleus in Cavin1 knockout muscle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 describe the composition of identified cavin proteomes and provide biological context. The MS data (C60-C62) is supported by the experimental results, while the literature citations (C63-C64) provide plausible explanations for the unexpected nuclear protein enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "c65be445-be4d-42ad-8b9f-92e242719bff",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Loss of Cavin1 causes lipodystrophy and muscular dystrophy with hypertrophied muscle fibers in humans and animals. Cavin4 mutations are associated with dilated cardiomyopathy and Cavin4 recruits ERK in cardiomyocytes, supporting roles for Cavin1 and Cavin4 in regulating hypertrophy in skeletal muscle and cardiomyocytes respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 provide disease context for cavin proteins based on established literature. The citations support the clinical phenotypes and molecular mechanisms described, providing biological significance for the identified protein interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "f49adc98-0cd7-4cc6-acb0-af5368a07bd4",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The cavin proteome showed enrichment of protein kinases including CaMKII, which regulates Ca2+ signaling and cardiac hypertrophy through ERK signaling, and can be activated by exercise in skeletal muscle in proportion to exercise intensity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 identify CaMKII in the cavin proteome (C70, supported by MS data) and provide biological context through literature citations (C71-C72) that connect CaMKII to hypertrophy regulation, supporting the biological relevance of the identified interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "8497ae41-387d-4c3d-8080-e2d1cda9ee68",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "BLITZ identified putative cavin interactors involved in cardiomyopathies and skeletal myopathies including Dystrophin, Bin1, Cypher/ZASP, and SPEG. Given that Cavin4b ablation causes aberrant T-tubules, Cavin4 may be involved in T-tubule formation through interaction with triad-associated proteins like Bin1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 are well-supported by MS data and literature citations establishing disease relevance of identified proteins. Claim C75 is speculative but represents a reasonable hypothesis based on the identified interactions and known Cavin4b function, appropriately presented as a possibility rather than a conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    },
+    {
+      "id": "be75badb-daf5-43c9-a54f-7b03fc299820",
+      "content_id": "e87c807d-4842-477d-a09d-f56774a5bfca",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The BLITZ system enables in vivo identification of protein interactors with cell- and tissue-specificity and high precision, demonstrated in diverse cell types including neurons, vascular endothelial cells, and skeletal muscle. BLITZ provides a versatile tool for proteomic discovery in zebrafish with potential for application in other challenging in vivo contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 summarize the demonstrated capabilities of BLITZ, well-supported by the collective experimental evidence throughout the manuscript. Claim C79 about potential applications in other contexts is somewhat speculative but reasonable given the demonstrated versatility. Overall, the claims appropriately summarize the work's achievements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:28.858959Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ba55cd66-d85f-47ef-ab75-749bd6bc5833",
+      "result_id": "54a21358-d401-447d-b88b-1bae079d1062"
+    },
+    {
+      "claim_id": "803156a3-f795-40dc-b714-ea29e05b93a7",
+      "result_id": "54a21358-d401-447d-b88b-1bae079d1062"
+    },
+    {
+      "claim_id": "34454b52-2a2e-4823-b487-75f0d601c27a",
+      "result_id": "54a21358-d401-447d-b88b-1bae079d1062"
+    },
+    {
+      "claim_id": "0fc571be-510f-41d4-8461-244361a68eac",
+      "result_id": "54a21358-d401-447d-b88b-1bae079d1062"
+    },
+    {
+      "claim_id": "689415e0-0007-4a09-b051-46ec1ecf6d68",
+      "result_id": "54a21358-d401-447d-b88b-1bae079d1062"
+    },
+    {
+      "claim_id": "b1ad803b-80c0-421a-8b72-d9ef0a32f5af",
+      "result_id": "8c8ad51d-ecac-4177-9834-520b82edb816"
+    },
+    {
+      "claim_id": "7611afca-16c4-4a47-a845-e86b1b16dd3d",
+      "result_id": "8c8ad51d-ecac-4177-9834-520b82edb816"
+    },
+    {
+      "claim_id": "6392a889-4896-4ac6-8358-bfd7f449ed3b",
+      "result_id": "8c8ad51d-ecac-4177-9834-520b82edb816"
+    },
+    {
+      "claim_id": "79d1123c-60f9-443b-b5f4-70aa04c47238",
+      "result_id": "8c8ad51d-ecac-4177-9834-520b82edb816"
+    },
+    {
+      "claim_id": "7c506fde-bef4-4ce7-b00f-ddd082a55be8",
+      "result_id": "8c8ad51d-ecac-4177-9834-520b82edb816"
+    },
+    {
+      "claim_id": "963ad437-44f6-4009-9d38-3a4fa870c53b",
+      "result_id": "8c8ad51d-ecac-4177-9834-520b82edb816"
+    },
+    {
+      "claim_id": "c76aeaa1-3550-4cec-9b84-86bbf4e75d6e",
+      "result_id": "03ab0b99-82b2-4e29-b8c6-090f131419d2"
+    },
+    {
+      "claim_id": "60659edd-5fc3-408d-a68f-db35df553a68",
+      "result_id": "03ab0b99-82b2-4e29-b8c6-090f131419d2"
+    },
+    {
+      "claim_id": "46a8d5d2-dfcf-4df8-a032-57b970cf9d24",
+      "result_id": "03ab0b99-82b2-4e29-b8c6-090f131419d2"
+    },
+    {
+      "claim_id": "e7b6e618-a33e-467f-9e88-fe1332e99b97",
+      "result_id": "f21caf96-627d-4f32-9c2c-be7b64fe2279"
+    },
+    {
+      "claim_id": "dfdf52b2-0a5b-40ad-836b-063d4c0ee4e7",
+      "result_id": "f21caf96-627d-4f32-9c2c-be7b64fe2279"
+    },
+    {
+      "claim_id": "d77b0f78-f53f-4819-83a8-c7b844a16985",
+      "result_id": "f21caf96-627d-4f32-9c2c-be7b64fe2279"
+    },
+    {
+      "claim_id": "8441372d-b303-42a7-8235-cc94458f62f3",
+      "result_id": "f21caf96-627d-4f32-9c2c-be7b64fe2279"
+    },
+    {
+      "claim_id": "fb30154b-23f4-42b9-8f1b-4419452d2175",
+      "result_id": "f21caf96-627d-4f32-9c2c-be7b64fe2279"
+    },
+    {
+      "claim_id": "bd7ad77e-476b-4396-94d7-bdfdde85a456",
+      "result_id": "13b1f01c-a873-408e-97bb-965b1a99982e"
+    },
+    {
+      "claim_id": "f1a9ee51-243f-4e0d-9351-74c36318f3cf",
+      "result_id": "13b1f01c-a873-408e-97bb-965b1a99982e"
+    },
+    {
+      "claim_id": "ef82f822-799f-419e-bee0-a8172f1186d6",
+      "result_id": "13b1f01c-a873-408e-97bb-965b1a99982e"
+    },
+    {
+      "claim_id": "52b56971-1c8f-4faf-be45-0e35324976f8",
+      "result_id": "13b1f01c-a873-408e-97bb-965b1a99982e"
+    },
+    {
+      "claim_id": "75ce3f3b-c166-4788-b7f5-de1087155a9a",
+      "result_id": "13b1f01c-a873-408e-97bb-965b1a99982e"
+    },
+    {
+      "claim_id": "1e8febc6-5f77-4829-835c-1465bd82b4ab",
+      "result_id": "67168ac1-fd4e-42dc-93f2-2cc7545dcfd8"
+    },
+    {
+      "claim_id": "fd1df52f-5240-40e1-a8d2-c6866d32d08b",
+      "result_id": "67168ac1-fd4e-42dc-93f2-2cc7545dcfd8"
+    },
+    {
+      "claim_id": "c7a86633-dae9-4753-a469-f68877ebe4c5",
+      "result_id": "67168ac1-fd4e-42dc-93f2-2cc7545dcfd8"
+    },
+    {
+      "claim_id": "faea5560-d525-4207-a59d-36f081d4377e",
+      "result_id": "67168ac1-fd4e-42dc-93f2-2cc7545dcfd8"
+    },
+    {
+      "claim_id": "1942fa68-1698-404e-aefc-10a72afc7ec1",
+      "result_id": "67168ac1-fd4e-42dc-93f2-2cc7545dcfd8"
+    },
+    {
+      "claim_id": "ca245a02-4e07-425a-8bd6-524af8269ac3",
+      "result_id": "c30febc8-5fc2-4cad-86d2-0b85302feb80"
+    },
+    {
+      "claim_id": "97ee0ec9-3a00-437d-9321-843f64561fe5",
+      "result_id": "c30febc8-5fc2-4cad-86d2-0b85302feb80"
+    },
+    {
+      "claim_id": "47696b88-c06b-4ca0-a22d-bab1cb433e76",
+      "result_id": "c30febc8-5fc2-4cad-86d2-0b85302feb80"
+    },
+    {
+      "claim_id": "d46ecf7e-9752-40f8-b4fa-9bc57aa98e29",
+      "result_id": "aafa5e45-ba77-4613-8043-2d8a66ee8d02"
+    },
+    {
+      "claim_id": "e0d0683b-4a23-448c-bb7b-5659119322c5",
+      "result_id": "aafa5e45-ba77-4613-8043-2d8a66ee8d02"
+    },
+    {
+      "claim_id": "acf9212b-9251-4d76-addc-4bb8de9eecd6",
+      "result_id": "aafa5e45-ba77-4613-8043-2d8a66ee8d02"
+    },
+    {
+      "claim_id": "2c3ef658-d760-4e61-ad16-0a839522c7c3",
+      "result_id": "aafa5e45-ba77-4613-8043-2d8a66ee8d02"
+    },
+    {
+      "claim_id": "d1f785d6-7beb-487f-97cb-02f9efc588ea",
+      "result_id": "aafa5e45-ba77-4613-8043-2d8a66ee8d02"
+    },
+    {
+      "claim_id": "2fbea18c-425f-478e-a0e6-787d174efa8d",
+      "result_id": "aafa5e45-ba77-4613-8043-2d8a66ee8d02"
+    },
+    {
+      "claim_id": "72bbdc40-9027-47ee-99f5-4cd601830252",
+      "result_id": "aafa5e45-ba77-4613-8043-2d8a66ee8d02"
+    },
+    {
+      "claim_id": "9c168506-bd38-4ab2-9d11-d0e6e82570d4",
+      "result_id": "b3f01185-3e24-4c7a-afb0-6aaa45257ae0"
+    },
+    {
+      "claim_id": "f0d08f9a-c9b0-47b0-b9c9-fcabd1da79a2",
+      "result_id": "b3f01185-3e24-4c7a-afb0-6aaa45257ae0"
+    },
+    {
+      "claim_id": "d40b26d4-5971-4303-8ae9-43b5bb3bf59d",
+      "result_id": "7b550056-d591-477e-9630-a2a1079502d3"
+    },
+    {
+      "claim_id": "e1966551-b21c-417c-b8ac-a7a76b4d5699",
+      "result_id": "7b550056-d591-477e-9630-a2a1079502d3"
+    },
+    {
+      "claim_id": "2fe82b5a-b08d-48ce-be11-0a0d0e189791",
+      "result_id": "7b550056-d591-477e-9630-a2a1079502d3"
+    },
+    {
+      "claim_id": "98b50f6f-ce35-4251-8117-648f147720df",
+      "result_id": "7b550056-d591-477e-9630-a2a1079502d3"
+    },
+    {
+      "claim_id": "3d254c6b-2893-4baf-806f-9217bc8e7053",
+      "result_id": "4bedf31e-08ee-454a-8e5f-8aa337f68149"
+    },
+    {
+      "claim_id": "4ec7e937-404e-4b12-aa56-5ffca078359c",
+      "result_id": "4bedf31e-08ee-454a-8e5f-8aa337f68149"
+    },
+    {
+      "claim_id": "06b2b826-b8d4-409d-bf0b-1e42dcd67a21",
+      "result_id": "4bedf31e-08ee-454a-8e5f-8aa337f68149"
+    },
+    {
+      "claim_id": "2fe91951-de09-4f58-9ec8-1fc7e74fc74b",
+      "result_id": "28d46264-ce78-4ec7-9817-de580415f5d2"
+    },
+    {
+      "claim_id": "631b0021-a903-474e-a095-414ff29441bd",
+      "result_id": "28d46264-ce78-4ec7-9817-de580415f5d2"
+    },
+    {
+      "claim_id": "2065551c-98d9-49b8-a7a0-f2f61eeac729",
+      "result_id": "28d46264-ce78-4ec7-9817-de580415f5d2"
+    },
+    {
+      "claim_id": "ed099f89-1b20-470b-8913-427e18de1144",
+      "result_id": "b4dccf89-0f17-4226-8e1e-6d46a1fdba92"
+    },
+    {
+      "claim_id": "4d9bac3e-8962-418d-a41d-a1b7678b34cd",
+      "result_id": "b4dccf89-0f17-4226-8e1e-6d46a1fdba92"
+    },
+    {
+      "claim_id": "f091e076-632f-47b4-b29b-9c0f2ce567b1",
+      "result_id": "b4dccf89-0f17-4226-8e1e-6d46a1fdba92"
+    },
+    {
+      "claim_id": "48e69f35-8f10-4f05-b47a-26883cbc9e4e",
+      "result_id": "e9c8928e-374a-44c1-bb13-30f3d9990b13"
+    },
+    {
+      "claim_id": "9e72e5e7-e3e6-4e7b-9c7c-881b77f8d31a",
+      "result_id": "e9c8928e-374a-44c1-bb13-30f3d9990b13"
+    },
+    {
+      "claim_id": "0330b525-2453-4295-938b-5d068f74e00f",
+      "result_id": "e9c8928e-374a-44c1-bb13-30f3d9990b13"
+    },
+    {
+      "claim_id": "932b2b91-2f06-4d22-bfce-49bd062c84a9",
+      "result_id": "e9c8928e-374a-44c1-bb13-30f3d9990b13"
+    },
+    {
+      "claim_id": "d39e6e68-0af5-43b7-94df-b5b973699e54",
+      "result_id": "e9c8928e-374a-44c1-bb13-30f3d9990b13"
+    },
+    {
+      "claim_id": "80382c8b-813c-476b-aa34-80c442b0ce91",
+      "result_id": "3a562372-5376-44da-a4ea-9073d8b8d6c3"
+    },
+    {
+      "claim_id": "0e18f458-90ce-4f1b-ba42-97e837156f93",
+      "result_id": "3a562372-5376-44da-a4ea-9073d8b8d6c3"
+    },
+    {
+      "claim_id": "ae2f05de-6a35-448e-8226-7082a46bb19b",
+      "result_id": "3a562372-5376-44da-a4ea-9073d8b8d6c3"
+    },
+    {
+      "claim_id": "04498314-21ef-48c8-966a-366f3c2b8077",
+      "result_id": "3a562372-5376-44da-a4ea-9073d8b8d6c3"
+    },
+    {
+      "claim_id": "9262ca22-c11a-4c61-a08d-c396229c48bc",
+      "result_id": "3a562372-5376-44da-a4ea-9073d8b8d6c3"
+    },
+    {
+      "claim_id": "b4e5ddc2-de4c-4cde-84c2-059f10483c41",
+      "result_id": "c65be445-be4d-42ad-8b9f-92e242719bff"
+    },
+    {
+      "claim_id": "4e405dda-6f17-48d5-acdb-027fc6affe4b",
+      "result_id": "c65be445-be4d-42ad-8b9f-92e242719bff"
+    },
+    {
+      "claim_id": "8c5d99cb-38cf-46d5-b436-a79077e18068",
+      "result_id": "c65be445-be4d-42ad-8b9f-92e242719bff"
+    },
+    {
+      "claim_id": "4afb0a8d-96f2-4eaf-9884-f597edde3d08",
+      "result_id": "c65be445-be4d-42ad-8b9f-92e242719bff"
+    },
+    {
+      "claim_id": "3d7bc23c-2c85-4a21-8025-3e2be6ccbcd6",
+      "result_id": "c65be445-be4d-42ad-8b9f-92e242719bff"
+    },
+    {
+      "claim_id": "1e58df2f-0d4e-41f8-b180-6b2c30eedc03",
+      "result_id": "f49adc98-0cd7-4cc6-acb0-af5368a07bd4"
+    },
+    {
+      "claim_id": "acc0e5d5-8f8d-43d4-9244-844cffb12f55",
+      "result_id": "f49adc98-0cd7-4cc6-acb0-af5368a07bd4"
+    },
+    {
+      "claim_id": "9b385574-6143-4ef1-ace1-cc7396022a17",
+      "result_id": "f49adc98-0cd7-4cc6-acb0-af5368a07bd4"
+    },
+    {
+      "claim_id": "dbe7e179-39c3-4707-b046-e40d90ff0891",
+      "result_id": "8497ae41-387d-4c3d-8080-e2d1cda9ee68"
+    },
+    {
+      "claim_id": "7d45ddf8-8ae6-49d5-a47d-58aba40948b8",
+      "result_id": "8497ae41-387d-4c3d-8080-e2d1cda9ee68"
+    },
+    {
+      "claim_id": "2c361dcc-bfe8-4d11-a4e2-aa2a4694539c",
+      "result_id": "8497ae41-387d-4c3d-8080-e2d1cda9ee68"
+    },
+    {
+      "claim_id": "44234aba-fad8-40a6-845b-d0a3b1643690",
+      "result_id": "be75badb-daf5-43c9-a54f-7b03fc299820"
+    },
+    {
+      "claim_id": "b3dc998b-87ac-4d42-a3a2-27eba8ffee9f",
+      "result_id": "be75badb-daf5-43c9-a54f-7b03fc299820"
+    },
+    {
+      "claim_id": "bb46b189-a3db-4eab-9dfc-e103888161d8",
+      "result_id": "be75badb-daf5-43c9-a54f-7b03fc299820"
+    },
+    {
+      "claim_id": "7ad416e3-1260-460c-8d56-d23c7d489095",
+      "result_id": "be75badb-daf5-43c9-a54f-7b03fc299820"
+    }
+  ],
+  "comparisons": []
+}

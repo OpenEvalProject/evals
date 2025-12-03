@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Mice use vision to accurately estimate distance and execute jumps across variable gaps. Mice successfully jumped to platforms at all tested distances (10-22 cm) with only minor effects of gap distance on success rate, and the distance jumped scaled with gap distance. Mice did not jump in the dark, and the gap was too large for whisker-based somatosensation, indicating reliance on vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20-C25 provide converging evidence that mice use vision for distance estimation. The behavioral data (N=3580 trials, 8 mice) show successful jumping across distances with appropriate scaling (ANOVA F=12.845, p=1.17e-8), and the dark condition control (C24) confirms visual dependence. The experimental design appropriately excludes somatosensory cues (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Monocular eyelid suture did not impair distance estimation performance. Mice with monocular vision performed equally well as binocular mice across all platform sizes and gap distances, with similar success rates, distance jumped scaling, and landing precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-C34 demonstrate that stereopsis is not required for this task. Statistical analyses (N=1613 monocular trials, 8 mice) show no significant differences in success rates (ANOVA p=0.752), distance jumped (ANOVA F=5.623, p=1.68e-4 showing appropriate scaling), or landing precision between binocular and monocular conditions. This is a well-controlled comparison within subjects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Under monocular conditions, mice altered their behavioral strategy by increasing movement frequency, spending more time in the decision period, moving greater distances, and changing head pitch angle. These changes are consistent with a shift from stereopsis to monocular cues requiring temporal integration such as motion or position parallax.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C50 provide detailed behavioral evidence for strategy changes under monocular vision. The increased decision time (2.48\u00b10.27s vs 5.56\u00b11.31s, p=0.008), movement distance (14.65\u00b11.27cm vs 28.73\u00b15.01cm, p=0.016), movement frequency (ANOVA F=16.633, p=7.58e-5), and head pitch changes (p=0.008) are statistically significant and mechanistically consistent with temporal integration strategies. The inverse correlation between pitch change and movement frequency (p=0.047) suggests individual variation in strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C101",
+      "C102",
+      "C103",
+      "C107"
+    ],
+    "result": "Eye movements compensate for head movements to stabilize gaze during the decision period, consistent with vestibulo-ocular reflex. Mice do not increase binocular overlap (vergence) before jumping, and can perform the task with head-mounted hardware.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62, C101-C103, C107 demonstrate compensatory eye movements with strong correlations between head pitch and eye movements (R\u00b2=0.51-0.70). The finding that vergence changes are explained by head pitch changes (both p<0.0005) supports the conclusion that mice do not actively converge their eyes. The successful task performance with ~3g hardware validates the approach for future neural recording studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Optogenetic suppression of binocular zone V1 impairs distance estimation performance in mice with intact binocular vision. PV-ChR2 mice showed reduced success rates, altered landing positions, and decreased head pitch during suppression, while control mice showed no effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C63-C72 demonstrate V1 involvement in binocular distance estimation. The optogenetic manipulation (N=911 trials PV-ChR2, N=948 control, 4 mice each) shows significant performance decrements (success F=15.252, p=3.35e-4) with appropriate controls showing no laser effects. The changes in head pitch (p=0.004) parallel those seen in monocular occlusion, suggesting compensatory strategies. However, the incomplete suppression (~1mm\u00b3 of ~5mm\u00b3 V1) limits interpretation of necessity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Binocular zone V1 suppression does not affect performance in mice with monocular vision, suggesting that peripheral visual field (monocular zone V1) is engaged when using monocular cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 show a dissociation between binocular and monocular vision conditions. The lack of effect of binocular V1 suppression in monocular animals (all p>0.1) contrasts with the impairment in binocular animals, supporting the inference that different V1 regions are engaged depending on available visual cues. This anatomical-functional correspondence strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Monocular zone V1 suppression in monocular animals reduces success rates by increasing abort trials, with compensatory changes in head position (pitch and yaw variability) but no change in landing position on successful trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 demonstrate monocular V1 involvement in monocular distance estimation. The increased abort rate (F=4.663, p=0.039) without increased failures suggests mice recognize impairment and avoid attempting jumps. The head position changes (pitch p=0.002, yaw SD p=0.018) are consistent with attempting to use unaffected visual field regions. However, different platform geometry in this cohort limits direct comparison to other conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C83",
+      "C84"
+    ],
+    "result": "The correspondence between anatomical locus of V1 suppression (binocular vs monocular zones) and ocular condition (binocular vs monocular vision) supports a role for V1 in both binocular and monocular cue-mediated distance estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C83-C84 synthesize the optogenetic results showing that V1 is required for distance estimation under both binocular and monocular conditions, with retinotopically appropriate regions engaged depending on available cues. The pattern of results across conditions (binocular V1 suppression affects binocular but not monocular animals; monocular V1 suppression affects monocular animals) provides strong evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "This study provides the first demonstration that mice can use monocular depth cues besides stereopsis, potentially including motion parallax and position parallax. The behavioral changes under monocular conditions are consistent with temporal integration strategies, though the specific cues used remain to be definitively determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C91, C96-C99 make important interpretive claims about the nature of monocular cues used. While C89 is supported (first demonstration in mice), C91 and C96 are explicitly speculative about which specific monocular cues (motion vs position parallax) are used. The increased vertical head movements and temporal integration are consistent with these cues but do not definitively prove their use. Causal manipulations (e.g., closed-loop platform movement) would be needed to distinguish between motion and position parallax.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "This jumping task is distinct from gap-crossing tasks and other stereopsis-focused paradigms, allowing investigation of monocular depth cues in mice. The findings are consistent with previous work in gerbils showing binocular vision is not required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 appropriately contextualize the task relative to prior work. The distinction from whisker-based gap-crossing (C86) is supported by the experimental design. The consistency with gerbil studies (C88, Ellard et al., 1984) and distinction from recent mouse stereopsis tasks (C87, Boone et al., 2021) are appropriately cited and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Unlike previous studies in gerbils and rats, this study did not find a relationship between head movement frequency and gap distance. There was an inverse relationship between changes in movement frequency and head angle across animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 accurately report differences from prior work and within-study correlations. The lack of distance-dependent movement frequency (C93) is clearly stated as differing from prior rodent studies (C92), with appropriate speculation about species or task differences (C94). The inverse correlation between frequency and angle changes (C95) is supported by data (Spearman p=0.047).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The results are consistent with previous lesion studies showing occipital cortex is required for distance estimation in rodents, while superior colliculus and preoptic area are not. Most prior work on jumping has focused on defensive contexts rather than navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 appropriately cite and contextualize prior work. The consistency with Ellard et al. 1986 lesion studies (C108-C109) is accurate. The characterization of jumping literature (C110-C111) is appropriately cited and provides useful context for the novelty of this navigational jumping paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript provides appropriate background on active vision, depth perception, limitations of head-fixed paradigms, and the need for naturalistic behavioral paradigms in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C17 accurately represent established knowledge about sensory-motor coupling (C6), limitations of reductionist paradigms (C7-C8, C15), depth cues (C9-C14), and the state of mouse vision research (C16-C17). These are appropriately cited and provide necessary context for the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C51",
+      "C52",
+      "C53",
+      "C104",
+      "C105",
+      "C106",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The manuscript appropriately cites and contextualizes prior work on rodent jumping behavior, eye movements, natural behavior, and embodied perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C51-C53, C104-C106, C112-C116 accurately represent cited prior work on rodent depth perception, eye movements in rodents, natural behavior frameworks, and embodied perception. These provide appropriate scientific context and are correctly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Training took 1-2 weeks with all mice successfully learning the task. Behavior was quantified using DeepLabCut markerless pose estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 describe methodological details that are straightforward and well-documented. The training timeline (C117) is clearly stated, and the use of DeepLabCut (C118) is appropriately cited (Mathis et al., 2018) and is a standard approach for behavioral tracking.",
+    "result_type": "MINOR"
+  }
+]

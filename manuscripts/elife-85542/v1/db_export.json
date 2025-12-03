@@ -1,0 +1,2206 @@
+{
+  "submission": {
+    "id": "dcdaa2e8-e341-4e3f-982a-29dcd94ea8ad",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:27:18.471869Z",
+    "updated_at": "2025-12-03T20:27:18.471869Z"
+  },
+  "content": [
+    {
+      "id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "submission_id": "dcdaa2e8-e341-4e3f-982a-29dcd94ea8ad",
+      "content_type": "manuscript",
+      "content_text": "# Pooled genome-wide CRISPR activation screening for rapamycin resistance genes in Drosophila cells\n\n## Authors\n\n- Baolong Xia<sup>1</sup> ([ORCID: 0000-0003-2536-0267](https://orcid.org/0000-0003-2536-0267))\n- Raghuvir Viswanatha<sup>1</sup> ([ORCID: 0000-0002-9457-6953](https://orcid.org/0000-0002-9457-6953))\n- Yanhui Hu<sup>1</sup>\n- Stephanie E Mohr<sup>1</sup> ([ORCID: 0000-0001-9639-7708](https://orcid.org/0000-0001-9639-7708))\n- Norbert Perrimon<sup>1</sup> ([ORCID: 0000-0001-7542-472X](https://orcid.org/0000-0001-7542-472X)) \u2020\n\n### Affiliations\n\n1. Department of Genetics, Blavatnik Institute, Harvard Medical School Boston United States\n2. Drosophila RNAi Screening Center, Harvard Medical School Boston United States\n3. Howard Hughes Medical Institute Boston United States ([ROR:006w34k90](https://ror.org/006w34k90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLoss-of-function and gain-of-function genetic perturbations provide valuable insights into gene function. In Drosophila cells, while genome-wide loss-of-function screens have been extensively used to reveal mechanisms of a variety of biological processes, approaches for performing genome-wide gain-of-function screens are still lacking. Here, we describe a pooled CRISPR activation (CRISPRa) screening platform in Drosophila cells and apply this method to both focused and genome-wide screens to identify rapamycin resistance genes. The screens identified three genes as novel rapamycin resistance genes: a member of the SLC16 family of monocarboxylate transporters (CG8468), a member of the lipocalin protein family (CG5399), and a zinc finger C2H2 transcription factor (CG9932). Mechanistically, we demonstrate that CG5399 overexpression activates the RTK-Akt-mTOR signaling pathway and that activation of insulin receptor (InR) by CG5399 requires cholesterol and clathrin-coated pits at the cell membrane. This study establishes a novel platform for functional genetic studies in Drosophila cells.\n\n## Introduction\n\nAlthough Drosophila is one of the most intensively studied organisms, about half of Drosophila protein-coding genes still lack functional characterization (Ewen-Campen et al., 2017). Genome-scale loss-of-function (LOF) and gain-of-function (GOF) genetic perturbations facilitate functional genomic studies. In Drosophila, genome-wide LOF screens using RNA interference or CRISPR-Cas9 have helped elucidate the mechanisms of a variety of biological processes (Boutros et al., 2004; Bj\u00f6rklund et al., 2006; D\u2019Ambrosio and Vale, 2010; Bard et al., 2006; Guo et al., 2008; Hao et al., 2008; Song et al., 2022; Viswanatha et al., 2018). However, genome-wide GOF screens have not been feasible, largely due to a lack of the reagents for genome-scale GOF perturbation. Current state-of-the-art for Drosophila GOF studies utilizes cDNA library overexpression (Stapleton et al., 2002; Yu et al., 2011), which only covers a subset of the genome and underrepresents genes with long open reading frames (ORFs).\n\nCRISPRa is a complementary approach for GOF studies. Nuclease-dead Cas9 (dCas9) is fused with different transcriptional activators and targeted to the promoter region by single-guide RNAs (sgRNAs) to facilitate transcription at endogenous loci. Synergistic activation mediator (SAM) complex is one of the most efficient CRISPRa systems (Konermann et al., 2015; Chavez et al., 2016). With the SAM system, synthetic transcriptional activators dCas9-VP64 and MCP-p65-HSF1 are recruited to the promoter region of endogenous genes by MS2 hairpin-containing sgRNAs. Genome-scale perturbation with CRISPRa can be achieved by synthesizing a genome-wide sgRNA library, bypassing the need to generate a genome-wide ORF library. CRISPR-based GOF approaches have been used for genome-wide genetic screens in mammalian cells (Konermann et al., 2015; Rodr\u00edguez et al., 2022; Zhu et al., 2022; Sofer et al., 2022; Zhang et al., 2022), but the feasibility has not yet been tested in Drosophila cells.\n\nTo address this gap, we developed a pooled genome-wide CRISPRa screening platform in Drosophila cells using the SAM complex. To demonstrate the feasibility of this platform, we performed focused and genome-wide CRISPRa screens and identified novel candidates conferring rapamycin resistance. Next, we focused on one of the top candidates, a member of the lipocalin protein family (CG5399), and demonstrate that it positively regulates the Receptor Tyrosine Kinase (RTK)-Akt-mTOR signaling pathway by regulating cholesterol and clathrin-coated pits at the cell membrane.\n\n## Results\n\n### Inducible CRISPRa using the SAM complex in Drosophila S2R+ cells\n\nTo establish CRISPRa in Drosophila cells in an inducible manner, the synthetic transcriptional activators of the SAM complex (dCas9-VP64 and MCP-p65-HSF1) were placed under a metallothionein promoter, which can be induced in the presence of copper ions. VP64, p65, and HSF1 are transcriptional activators while the MS2 coat protein (MCP) recognizes and binds to MS2 hairpins present in the sgRNAs, recruiting the fused transcriptional activators to gene promoters targeted by sgRNAs. In addition, the MS2 hairpin-containing sgRNA was expressed from a separate plasmid under the control of the U6 promoter (Figure 1A). To determine whether this system can mediate transcriptional activation in Drosophila cells, plasmids with sgRNAs targeting the promoter regions of Jon25Biii or Sdr were transfected into Drosophila S2R+ cells stably expressing the metallothionein promoter-driven SAM complex. Without copper induction, sgRNAs moderately activated the target genes, likely due to leaky expression of the SAM complex from the metallothionein promoter. In the presence of copper, sgRNAs robustly upregulated the target genes (Figure 1B), showing that the SAM complex is able to mediate gene activation in Drosophila S2R+ cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85542/elife-85542-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the SAM complex for inducible transcriptional activation. dCas9-VP64 and MCP-p65-HSF1 were driven by an inducible metallothionein promoter. dCas9-VP64 and MCP-p65-HSF1 were expressed as T2A-containing bicistronic transcript. single-guide RNA (sgRNA) was expressed from pLib8 plasmid, which contains an attB flanking GFP-T2A-PuroR cassette for attP sites recombination. (B) Fold activation of Jon25Biii and Sdr expression measured by qPCR. Three biological replicates are shown as individual circles. (C) Fold activation of CG9877 and CG13538 expression measured by qPCR. Three biological replicates are shown as individual circles. t-test, *p<0.05; **p<0.01; ***p<0.001; ns, not significant.\n\nThe SAM complex modulates gene expression by recruiting transcriptional activators to gene promoters at endogenous genomic loci. In the Drosophila genome, 32% of genes form divergent gene pairs with transcriptional start sites (TSS) <1 kb apart (Yang and Yu, 2009). Thus, we next assessed the potential for collateral activation by the SAM complex of the closely spaced promoters. CG9877 and CG13538 are a divergent gene pair with transcriptional start sites 908 bp apart, thus this gene pair is a good test case for assessing collateral activation. sgRNAs were designed within a region 300 bp upstream of the TSS of CG9877 and ~600 bp away from the TSS of CG13538. The sgRNAs specifically activated CG9877, but not CG13538 (Figure 1C), suggesting that the SAM complex activates the target gene without affecting nearby genes at least in some divergent gene pairs.\n\n### Pooled CRISPRa screening with a focused library\n\nNext, we used the SAM complex to perform a pooled CRISPRa screen. Unlike in mammalian cells, lentivirus vectors are extremely inefficient in Drosophila cells. To overcome this limitation, we previously established a pooled library delivery method based on site-specific recombination following plasmid transfection of Drosophila cells (Viswanatha et al., 2018). In this method, attB sites flanking sgRNAs are integrated into attP sites flanking landing cassette in the presence of phiC31 integrase. We used the S2R+ PT5 cell line in which the attP cassette is inserted into the Clic locus (Neum\u00fcller et al., 2012). To establish pooled library cells for CRISPRa screens, we first generated SAM cells that stably expressed the metallothionein promoter-driven SAM complex. Then, using phiC31-mediated cassette exchange, we integrated a pooled guide RNA library into the landing cassette (Figure 2\u2014figure supplement 1A).\n\nTo test the pooled screen approach, we performed a CRISPRa screen to identify rapamycin resistance genes. Rapamycin is an allosteric inhibitor of the kinase mTOR, a key regulator of cell growth and proliferation. Rapamycin inhibits Drosophila S2R+ cell proliferation in a dose-dependent manner. Cell proliferation was partially inhibited by rapamycin at 0.1 nM and almost completely inhibited at 1 nM (Figure 2\u2014figure supplement 1B). To identify a suitable rapamycin treatment condition for a pooled CRISPRa screen, we performed a pilot-focused screen with different rapamycin concentrations and treatment durations. The focused library consists of 6335 sgRNAs targeting the promoter regions of 652 genes, which include genes involved in the mTOR signaling pathway as well as candidates from our previous CRISPR knockout screen (Viswanatha et al., 2018). Pooled library cells were subjected to passaging in 0.1 nM, 1 nM rapamycin, or DMSO (vehicle) containing culture medium in parallel for 15 days or 30 days. After treatment, we examined sgRNA abundance in each condition by next-generation sequencing. First, we identified genes affecting cell fitness by comparing the final population after passaging in DMSO with the initial population. Scyl and Cyp12a4 are significantly depleted (false-discovery rate (FDR)<0.05) after passaging in DMSO for 15 days and 30 days (Figure 2\u2014figure supplement 1C and D), suggesting that overexpression of scyl or Cyp12a4 affects cell fitness. Consistent with this, scyl is known to inhibit cell proliferation and act as a cell death activator (Reiling and Hafen, 2004; Corradetti et al., 2005; Scuderi et al., 2006). These results demonstrate that pooled CRISPRa screen can be used to identify genes affecting cell fitness.\n\nWe next identified rapamycin resistance genes by comparing the rapamycin-treated population with the DMSO-treated population, reasoning that sgRNAs that lead to activation of rapamycin resistance genes would be enriched after treatment due to a growth advantage in the presence of rapamycin. The focused screen revealed that one candidate, CG8468, was significantly enriched (FDR<0.05) in the population treated with 1 nM rapamycin. Moreover, with prolonged treatment, CG8468 was further enriched as we observed a higher fold-change value at day 30 than at day 15 (Figure 2\u2014figure supplement 1E and F). However, no gene was significantly enriched in the 0.1 nM rapamycin treatment condition, probably because cells have a higher proliferation rate at 0.1 nM rapamycin concentration compared to 1 nM. Taken together, these data demonstrate that pooled CRISPRa screen using the SAM complex is feasible in Drosophila cells.\n\n### Genome-wide pooled CRISPRa screen\n\nNext, we sought to screen for rapamycin resistance genes at the genome-wide scale. A previous study showed that multiplexed sgRNAs performed better than single sgRNAs for CRISPRi and CRISPRa (Replogle et al., 2020). Thus, we designed a dual-sgRNA library in which each vector expressed two distinct sgRNAs targeting the promoter region of the same gene within 500 bp upstream of the TSS (Figure 2\u2014figure supplement 2A). The library consists of 84,143 vectors targeting the promoter regions of 13,293 protein-coding genes and 2332 non-coding genes. The dual-sgRNA library was constructed using a three-step pooled cloning strategy (Figure 2\u2014figure supplement 2B and Methods). After library construction, we checked the quality of the dual-sgRNA library by deep sequencing, which revealed that ~98.5% of designed vectors were present in the final library. The difference in representation between the 10th percentile of the final library (19 reads) and the 90th percentile (292 reads) was 15.5-fold (Figure 2\u2014figure supplement 2C). The integrity and distribution of our dual-sgRNA library are comparable to other published genome-wide libraries (Sanjana et al., 2014), indicating the high quality of the library.\n\nTo establish the pooled library cells, we integrated the genome-wide dual-sgRNA library into SAM cells by phiC31-mediated cassette exchange. The pooled library cells were then passaged in 1 nM rapamycin or DMSO-containing medium for 3 weeks. The abundance of dual-sgRNA vectors in the initial and final cell populations following rapamycin or DMSO treatment was analyzed by next-generation sequencing (Figure 2A). First, we identified genes affecting cell fitness by comparing the final population after passaging in DMSO for 3 weeks with the initial population. Consistent with the results of the focused screen, scyl is also significantly depleted (FDR<0.05) in the genome-wide screen dataset. In addition to the scyl, the screen also identified other genes known to be involved in the suppression of cell proliferation (Figure 2\u2014figure supplement 3A and Table 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85542/elife-85542-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of CRISPR activation screen (See methods). (B) Two replicates of genome-wide CRISPR activation screen. Data were analyzed by MAGeCK-RRA, a smaller RRA score indicates a stronger selection effect. Each circle represents a gene. Circle size corresponds to the significance (p value) of enrichment. Significantly enriched genes (false-discovery rate (FDR)<0.05) are colored. (C) Fold activation of CG8468 expression measured by qPCR. Three biological replicates are shown as individual circles. (D) Counts of sgCG8468 vectors from the genome-wide screen. Each dot represents a vector. Vectors targeting intergenic regions are shown in blue. Vectors targeting CG8468 are shown in red and annotated as V1-V6. (E) sgCG8468-expressing cell proliferation in cell mixture following 1 nM rapamycin or DMSO treatment. GFP proportion was measured by flow cytometry. Three biological replicates are shown as individual circles. (F) Fold activation of CG5399 expression measured by qPCR. Three biological replicates are shown as individual circles. (G) Counts of sgCG5399 vectors from the genome-wide screen. Each dot represents a vector. Vectors targeting intergenic regions are shown in blue. Vectors targeting CG5399 are shown in red and annotated as V1-V6. (H) sgCG5399-expressing cell proliferation in cell mixture following 1 nM rapamycin or DMSO treatment. GFP proportion was measured by flow cytometry. Three biological replicates are shown as individual circles. (I) Fold activation of CG9932 expression measured by qPCR. Three biological replicates are shown as individual circles. (J) Counts of sgCG9932 vectors from the genome-wide screen. Each dot represents a vector. Vectors targeting intergenic regions are shown in blue. Vectors targeting CG9932 are shown in red and annotated as V1-V6. (K) sgCG9932-expressing cell proliferation in cell mixture following 1 nM rapamycin or DMSO treatment. GFP proportion was measured by flow cytometry. Three biological replicates are shown as individual circles. t-test, *p<0.05; **p<0.01; ***p<0.001; ns, not significant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85542/elife-85542-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic of pooled library cells generation. Synergistic activation mediator (SAM) complex was inserted into attP sites containing S2R+ cells to generate SAM cells. The pooled attB sites flanking single-guide RNA (sgRNA) library was integrated into attP sites by phiC31-mediated recombination to generate pooled library cells. (B) Cell proliferation of S2R+ cells with rapamycin treatment at different concentrations. Cell proliferation was measured by Cell titer Glo. Six replicates are shown as individual circles. (C) Pooled focused library screen with DMSO treatment for 15 days and 30 days. Data were analyzed by MAGeCK. Each dot represents a gene. Genes with significant differences (false-discovery rate (FDR)<0.05) are highlighted. (D) Counts of sgRNAs targeting scyl or Cyp12a4 in the initial population and final population after proliferation for 30 days in DMSO. Each dot represents a sgRNA. sgRNAs targeting scyl or Cyp12a4 are highlighted. (E) Pooled-focused library screens with 0.1 nM and 1 nM rapamycin treatment for 15 days and 30 days. Data were analyzed by MAGeCK. Each dot represents a gene. Gene with a significant difference (FDR<0.05) is highlighted. (F) Counts of sgRNAs targeting CG8468 in the DMSO-treated population and rapamycin-treated population. Each dot represents a sgRNA. sgRNAs targeting CG8468 are highlighted.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/85542/elife-85542-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Schematic of dual-sgRNA library design. Two different sgRNAs targeting the same gene promoter region within 500 bp upstream of the transcriptional start site (TSS). Two sgRNAs were driven by separate U6 promoters. The attB sites flanking sgRNA sequence was integrated into attP sites flanking landing cassette by recombination-mediated cassette exchange (RMCE). (B) Schematic of genome-wide dual-sgRNA library construction by three-steps pooled cloning strategy. The oligo library containing Bbs1 and BsmB1 flanking sgRNA seed sequences was synthesized. The first library was constructed by inserting PCR products amplified from the oligo library. The second library was constructed by inserting the scaffold of the first sgRNA and the promoter of the second sgRNA using BsmB1 digestion and T4 ligation. The final library was constructed by inserting the sgRNA cassette into the destination vector using Bbs1 digestion and T4 ligation. (C) Histogram of sgRNA representation of the constructed dual-sgRNA library. Insert: Cumulative distribution of sgRNA sequencing reads. 10th and 90th percentiles are indicated by dash lines.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/85542/elife-85542-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Genome-wide cell fitness screen. Each dot represents a gene. Significantly depleted genes (false-discovery rate (FDR)<0.05) after proliferation in DMSO for 3 weeks are highlighted. (B) Counts of sgCG8468 vectors in genome-wide rapamycin screen. Each dot represents a vector. Vectors targeting the intergenic regions are shown in blue. Vectors targeting the candidates are shown in red and annotated as V1-V6. (C) Counts of sgCG5399 vectors in genome-wide rapamycin screen. (D) Counts of sgCG9932 vectors in genome-wide rapamycin screen.\n\n**Table 1.**\n Significantly depleted genes in genome-wide fitness screen.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Human ortholog</th>\n      <th>Known gene affecting cell fitness</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>zld</td>\n      <td>ZNF485</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Eaat1</td>\n      <td>SLC1A3</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CR44587</td>\n      <td>-</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Lis-1/Ptp52F*</td>\n      <td>PAFAH1B1/Ptprb</td>\n      <td>LIS-1-overexpressing mitotic cells show a variety of spindle defects</td>\n      <td>PMID: 10722879</td>\n    </tr>\n    <tr>\n      <td>scyl</td>\n      <td>DDIT4</td>\n      <td>Scyl inhibits cell growth by regulating the Tor pathway</td>\n      <td>PMID: 15545626</td>\n    </tr>\n    <tr>\n      <td>\u03b1Tub85E</td>\n      <td>TUBA1A</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Poxm</td>\n      <td>Pax9</td>\n      <td>PAX9 overexpression inhibits cancer cell proliferation</td>\n      <td>PMID: 35628401</td>\n    </tr>\n    <tr>\n      <td>Dll</td>\n      <td>DLX6</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>LKRSDH</td>\n      <td>AASS</td>\n      <td>Overexpression of Aass suppresses cancer cell proliferation</td>\n      <td>PMID: 31601242</td>\n    </tr>\n    <tr>\n      <td>scro</td>\n      <td>NKX2-1</td>\n      <td>NKX2-1 suppresses lung cancer progression by dampening ERK activity</td>\n      <td>PMID: 34689179</td>\n    </tr>\n    <tr>\n      <td>CG3168</td>\n      <td>SV2A</td>\n      <td>Overexpression of SV2A inhibits the PI3K signaling pathway</td>\n      <td>PMID: 34277597</td>\n    </tr>\n    <tr>\n      <td>CG2930</td>\n      <td>SLC15A1</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*Lis-1 and Ptp52F form divergent gene pair ~500 bp apart._\n\nBy comparing the rapamycin-treated population with the DMSO-treated population, we identified rapamycin resistance genes. Pka-C3 and Cdc25 were among the top 50 ranked genes identified in both replicates of the genome-wide screen (Table 2). Pka-C3 encodes the catalytic subunit of PKA, and overexpression of the catalytic subunit of PKA or activation of the PKA pathway is known to confer resistance to rapamycin (Cutler et al., 2001; Zurita-Martinez and Cardenas, 2005; Schmelzle et al., 2004). Cdc25 is a tyrosine phosphatase gene that regulates cell cycle progression. Previous studies have indicated that the level of Cdc25 expression is positively correlated with rapamycin resistance in cancer cells (Reikvam et al., 2014; Chen et al., 2009).\n\n**Table 2.**\n Overlapping genes of top-ranked 50 hits from two genome-wide screen replicates.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Rank (Rep 1, Rep 2)</th>\n      <th>Gene</th>\n      <th>Human ortholog</th>\n      <th>Function</th>\n      <th>Known rapamycin resistance gene</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1, 1</td>\n      <td>CG8468</td>\n      <td>SLC16A8</td>\n      <td>monocarboxylate transporter</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2, 3</td>\n      <td>CG5399</td>\n      <td>APOD/LCN2</td>\n      <td>lipocalin</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>5, 2</td>\n      <td>CG9932</td>\n      <td>ZFN462/REST</td>\n      <td>transcription factor</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>4, 10</td>\n      <td>CG34459</td>\n      <td>/</td>\n      <td>unknown</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>22, 13</td>\n      <td>Pka-C3</td>\n      <td>PRKX</td>\n      <td>catalytic subunit of PKA</td>\n      <td>PMID: 15643061, 14673167, 11739804</td>\n    </tr>\n    <tr>\n      <td>41, 8</td>\n      <td>Ps</td>\n      <td>NOVA1</td>\n      <td>RNA splicing</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>43, 45</td>\n      <td>CDC25</td>\n      <td>CDC25A/CDC25B</td>\n      <td>tyrosine phosphatase</td>\n      <td>PMID: 24383842, 19276368</td>\n    </tr>\n  </tbody>\n</table>\n\nIn addition to the known rapamycin resistance genes, novel candidates were also identified in the CRISPRa screen. In particular, three genes, CG8468, CG5399, and CG9932, were significantly enriched (FDR<0.05) in both replicates (Figure 2B). CG8468 is a member of the SLC16 family of monocarboxylate transporters. CG5399 encodes a member of the lipocalin protein family, members of which have been implicated in lipid binding and transport. CG9932 encodes a zinc finger C2H2 transcription factor. Interestingly, CG8468 was also the top hit from our focused library screen, indicating the consistency of the pooled CRISPRa screen approach in Drosophila cells (note that the other two genes were not included in the focused library).\n\n### Validation of the novel rapamycin resistance genes\n\nTo validate that the novel hits from the CRISPRa screen could indeed confer resistance to rapamycin, we first cloned all dual-sgRNA vectors targeting CG8468, CG5399, or CG9932 that were present in the genome-wide library and established individual stable SAM cell lines for each vector. The target activation efficiency of each vector was evaluated in individual cell lines by qPCR. The dual-sgRNA vectors showed variable activation efficiency, probably due to the complex transcriptional regulation of the target genes or different sgRNA binding efficiencies (Figure 2C, F and I). Interestingly, the enrichment of each dual-sgRNA vector in the screen was highly correlated with its target activation efficiency, as only the vectors that efficiently activate target genes were enriched in the rapamycin-treated samples (Figure 2D, G and J and Figure 2\u2014figure supplement 3B\u2013D). Collectively, these results confirm that the sgRNA vectors enriched in the screen were able to upregulate the target genes.\n\nTo validate that overexpression of the hits confers a growth advantage in the presence of rapamycin, we mixed wild-type SAM cells (GFP negative) and individual dual-sgRNA vector expressing cell lines (GFP positive), then monitored the proportion of GFP-positive cells in the mixed cell populations following 1 nM rapamycin or DMSO treatment for 2 weeks. We reasoned that if a dual-sgRNA vector confers resistance to rapamycin, cells with the vector will proliferate more than wild-type SAM cells in the presence of rapamycin, leading to a higher proportion of GFP-positive cells in the rapamycin-treated sample as compared to the DMSO-treated sample. As expected, we only observed higher proportions of GFP for vectors that efficiently activate target genes, but not for inefficient vectors or an empty vector (Figure 2E, H and K). These results confirmed that overexpression of the hits from the genome-wide screen conferred resistance to rapamycin.\n\n### RTK-Akt-mTOR signaling activation by CG5399 overexpression\n\nTo characterize the mechanism of rapamycin resistance, we first examined the mTOR activity in SAM cell lines with dual-sgRNA vectors activating the target genes. As ribosomal protein S6 is phosphorylated by S6K, which is a downstream target of mTOR, the phosphorylation status of S6 can serve as a readout for mTOR activity. In the presence of rapamycin, S6 phosphorylation was strongly inhibited in wild-type SAM cells and empty vector-expressing SAM cells. In contrast, compared to control cells, the phospho-S6 levels were dramatically elevated in CG5399-overexpressing cells (Figure 3A). Interestingly, we did not observe higher phospho-S6 levels in CG8468-overexpressing cells, suggesting that CG8468 acts downstream of mTOR or in a parallel pathway. CG9932-overexpressing cells also displayed higher phospho-S6 levels, possibly reflecting a previous observation that overexpression of the human ortholog of CG9932, REST, activates Akt, which acts upstream of S6 (Dobson et al., 2019).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85542/elife-85542-fig3-v1.jpg)\n\n**Figure 3.:** (A) Phospho-S6 levels in cells expressing dual-sgRNA vectors in the presence of 1 nM rapamycin. Western blot signals are quantitatively analyzed by ImageJ. Three biological replicates are shown as individual circles. (B) Phospho-S6 levels in cells expressing sgCG5399 vectors without rapamycin treatment. Western blot signals are quantitatively analyzed by ImageJ. Four biological replicates are shown as individual circles. (C) Phospho-Akt and Phospho-S6 in CG5399-overexpressing cells following CG5399 knockdown. Two nonoverlapping double-stranded RNAs (dsRNAs) targeting CG5399 were used. (D) Phospho-Akt and Phospho-S6 in CG5399-overexpressing cells following insulin receptor (InR) knockdown. Two nonoverlapping dsRNAs targeting InR were used. (E) Phospho-InR, phospho-Akt, and phospho-S6 in sgCG5399-expressing synergistic activation mediator (SAM) cells. (F) Phospho-InR, phospho-Akt, and phospho-S6 in CG5399 ORF-overexpressing S2R+ cells using UAS-Gal4. t-test, **<0.01; ***p<0.001; ns, not significant.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85542/elife-85542-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Phospho-Akt in CG5399-overexpressing cells following Pi3K92E knockdown. Two nonoverlapping double-stranded RNAs (dsRNAs) targeting Pi3K92E were used. (B) Phospho-Akt and phospho-S6 in CG5399-overexpressing cells following PDGF/VEGF receptor (Pvr) knockdown. Two nonoverlapping dsRNAs targeting Pvr were used. (C) Phospho-InR and phospho-Akt in CG5399-overexpressing cells following serum starvation for 2 hr.\n\nThe increase of phospho-S6 levels in CG5399-overexpressing cells in the presence of rapamycin might be explained by different mechanisms: (1) CG5399 might alter the pharmacokinetics of rapamycin, decreasing cellular rapamycin concentrations; (2) CG5399 might competitively bind to rapamycin, releasing mTOR from inhibition; (3) CG5399 might be a positive regulator of mTOR signaling. To distinguish among these possibilities, phospho-S6 was assessed in CG5399-overexpressing cells without rapamycin treatment. Compared with wild-type SAM cells and empty vector-expressing SAM cells, higher phospho-S6 levels were observed in CG5399-overexpressing cells (Figure 3B), indicating that CG5399 is a positive regulator of mTOR. Moreover, in addition to higher phopho-S6 levels, an increase in phospho-Akt was also observed in CG5399-overexpressing cells. Furthermore, knocking down CG5399 mRNA levels using either of two nonoverlapping double-stranded RNAs (dsRNAs) in CG5399-overexpressing cells totally abolished the increase of phospho-Akt and phospho-S6 (Figure 3C), excluding the possibility that an off-target effect of the sgRNAs explains these observations.\n\nAkt is phosphorylated by PI3K when receptor tyrosine kinases (RTKs) are activated. To test whether PI3K is involved in Akt activation by CG5399 overexpression, we used two nonoverlapping dsRNAs to deplete the catalytic subunit of PI3K, Pi3K92E, in CG5399-overexpressing cells. Knockdown of Pi3K92E abolished Akt activation by CG5399 overexpression, suggesting that CG5399 activates Akt-mTOR through PI3K (Figure 3\u2014figure supplement 1A). As Akt is regulated by both insulin receptor (InR) and PDGF/VEGF receptor (Pvr) (Sopko et al., 2015), we examined whether InR and Pvr are involved in CG5399 function. Two nonoverlapping dsRNAs targeting InR or Pvr were transfected into CG5399-overexpressing cells. Knockdown of InR or Pvr inhibited upregulation of phospho-Akt and phospho-S6 induced by CG5399 overexpression (Figure 3D, Figure 3\u2014figure supplement 1B), suggesting that CG5399 activates Akt-mTOR via InR and Pvr. As expected, higher phospho-InR levels were also observed in CG5399-overexpressing cells (Figure 3E) in a normal medium without insulin stimulation. Finally, the activation of InR-Akt-mTOR signaling in S2R+ cells was also observed with CG5399 ORF overexpression by co-transfecting pUAS-CG5399 and pActin-Gal4 vectors (Figure 3F), further excluding the possibility that off-targets of sgRNAs contribute to the phenotype. Taken together, these data demonstrate that CG5399 overexpression activates RTK-Akt-mTOR signaling in a normal medium without insulin stimulation.\n\nInsulin receptors form covalent homodimers at the cell surface. Upon insulin binding, the ectodomain of InR changes from the inverted U-shape structure to the T-shape structure, facilitating the proximity and autophosphorylation of the cytoplasmic kinase domains (Gutmann et al., 2018; Scapin et al., 2018). Drosophila cells are cultured in Schneider medium supplemented with 10% FBS (fetal bovine serum). The Schneider medium only consists of amino acids and inorganic salts while FBS is a biological product that might contain a trace amount of insulin and insulin-like growth factors (Tu et al., 2018). As we observed that CG5399 overexpression activates the InR in a normal medium without insulin stimulation, we removed FBS from the culture medium to further exclude the effect of insulin and insulin-like growth factors in FBS. Increase of phospho-InR and phospho-Akt in CG5399-overexpressing cells could still be observed after serum starvation for 2 hr (Figure 3\u2014figure supplement 1C), suggesting InR activation by CG5399 overexpression does not require insulin.\n\n### InR regulation by CG5399 requires cholesterol and clathrin-coated pits\n\nInR is embedded in the lipid bilayer environment of the cell membrane. Given that CG5399 encodes a member of the lipocalin protein family, members of which have been implicated in the binding and transport of lipid molecules, we hypothesized that CG5399 might regulate InR by remodeling lipid components at the cell membrane. Structure prediction of CG5399 by AlphaFold revealed a highly conserved barrel structure formed by eight beta-sheets as a putative ligand pocket (Figure 4\u2014figure supplement 1A), similar to the crystal structures of lipocalins in other species (Breustedt et al., 2005; Lakshmi et al., 2015). Molecular docking simulation indicated that cholesterol can be inserted into the barrel structure of CG5399 (Figure 4\u2014figure supplement 1B), suggesting that cholesterol might be a substrate of CG5399.\n\nTo test whether cholesterol is relevant to CG5399 function, we used methyl-beta-cyclodextrin (M\u03b2CD) to deplete cholesterol from cell membranes in CG5399-overexpressing cells. M\u03b2CD is a heptasaccharide with a high affinity to cholesterol and has been widely used to manipulate membrane cholesterol content (Zidovetzki and Levitan, 2007). M\u03b2CD treatment eliminated the increase of phospho-InR, phospho-Akt, and phospho-S6 in a dose-dependent manner in CG5399-overexpressing cells (Figure 4A), indicating that activation of InR-Akt-mTOR by CG5399 overexpression requires cholesterol at the membrane. Moreover, supplementation of cholesterol into the cell membrane can rescue the decrease of phospho-Akt induced by M\u03b2CD treatment in CG5399-overexpressing cells, excluding the possibility that an off-target effect of M\u03b2CD contributes to the observed effect (Figure 4\u2014figure supplement 1C). To test the possibility that M\u03b2CD treatment affected the normal function of InR, S2R+ cells were stimulated with insulin following M\u03b2CD treatment. No difference in insulin response was observed in M\u03b2CD treated and untreated cells (Figure 4\u2014figure supplement 1D), suggesting that M\u03b2CD treatment does not affect InR function. Moreover, direct supplementation of cholesterol to the cell membrane activated InR-Akt-mTOR signaling in wild-type S2R+ cells (Figure 4B), indicating that an increase in the level of cholesterol at the cell membrane was able to activate InR.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85542/elife-85542-fig4-v1.jpg)\n\n**Figure 4.:** (A) Phospho-InR, phospho-Akt, and phospho-S6 in CG5399-overexpressing cells treated with methyl-beta-cyclodextrin (M\u03b2CD) at different concentrations. (B) Phospho-InR, phospho-Akt, and phospho-S6 in S2R+ cells with cholesterol supplementation. Two different cholesterol products from Sigma (C3045 for Lane 3 and C2044 for Lane 4) were used. (C) Phospho-Akt in CG5399-overexpressing cells following Flo1, Flo2, or Chc knockdown. Two nonoverlapping double-stranded RNAs (dsRNAs) targeting each gene were used. (D) Phospho-InR in CG5399-overexpressing cells following Chc knockdown. Two nonoverlapping dsRNAs targeting each gene were used. (E) Phospho-InR in S2R+ cells with cholesterol supplementation following clathrin heavy chain (Chc) knockdown. Two nonoverlapping dsRNAs targeting each gene were used.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/85542/elife-85542-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Structure prediction of CG5399 by AlphaFold. Different side views are shown. (B) Interaction between CG5399 and cholesterol by molecular docking. Cholesterol is predicted to be inserted into the barrel structure of CG5399 in two different configurations. (C) Phospho-Akt in CG5399-overexpressing cells supplemented with cholesterol following methyl-beta-cyclodextrin (M\u03b2CD) treatment. (D) Phospho-InR, phospho-Akt in S2R+ cells stimulated with insulin following M\u03b2CD treatment. Different insulin concentrations and treatment durations were tested. (E) Schematic model of InR-Akt-mTOR activation in CG5399 overexpressing cells.\n\nCell membranes form distinct microdomains, such as caveolin-coated caveolae, flotillin-coated microdomains, and clathrin-coated pits. Cholesterol is required for the formation of different microdomains (Lu and Fairn, 2018). To distinguish which microdomain was involved in the CG5399 function, we knocked down flotillins and clathrins in CG5399-overexpressing cells using dsRNAs. Knockdown of flotillin genes (Flo1 and Flo2) did not affect phospho-Akt, whereas the increase of phospho-InR and phospho-Akt normally observed in CG5399-overexpression cells was dampened by knockdown of clathrin heavy chain (Chc) (Figure 4C and D). Moreover, InR activation by cholesterol supplementation was also eliminated by Chc knockdown (Figure 4E). Taken together, these results suggest that InR-Akt-mTOR signaling activation by CG5399 overexpression requires cholesterol and clathrin-coated pits at the cell membrane.\n\n## Discussion\n\nAlthough genome-wide LOF screens in Drosophila cells have helped elucidate the mechanism of a variety of biological processes, genome-wide GOF screens have not been feasible in this organism. To address this gap, we generated a genome-wide dual-sgRNA library that covers both protein-coding genes and non-coding genes. This library also captures transcriptional complexity by targeting alternative promoters of the same gene, making it suitable for screens in different contexts in the future. Moreover, in this library, each gene is targeted by 4\u20136 dual-sgRNA vectors, which helps overcome the inefficient activation by some sgRNAs to some extent. Indeed, we observed that some dual-sgRNA vectors failed to activate the target genes (Figure 2F and I), possibly due to steric hindrance by pre-existing proteins in the promoter regions, or due to different sgRNA binding efficiency, which might be optimized by applying machine learning to large screen datasets in the future. In our method, the synthetic transcriptional activators of the SAM complex (dCas9-VP64 and MCP-p65-HSF1) are driven by the metallothionein promoter. Due to the leaky expression of this promoter, we observed moderate gene activation without copper induction. Availability of a tighter controlled promoter may be required for more sensitive screens. As the Drosophila genome is relatively compact, one concern for CRISPRa is the collateral activation of adjacent genes. Previous work has shown that sgRNAs targeting areas beyond \u2013600 bp from the TSS in Drosophila lose efficiency (Mao et al., 2020), which may alleviate the concern of collateral activation when the sgRNAs target sites are over 600 bp away from the TSS of neighboring genes. In some cases, sgRNAs are designed within both promoters of closely spaced divergent genes. If the hits from the screen form closely spaced divergent gene pairs, e.g., Lis-1 and Ptp52F in the cell fitness screen (Table 1), more experiments will be required to identify which one contributes to the phenotype. Currently, in our CRISPRa system, spCas9 requires NGG as a protospacer-adjacent motif (PAM) sequence, which limits sgRNA design in the small region upstream of TSS, especially for closely spaced genes. Next-generation CRISPRa system could use PAMless Cas9 variants (Walton et al., 2020) to remove the PAM constraint for sgRNA design, allowing the construction of libraries with more sgRNAs per gene.\n\nOur genome-wide genetic screen identified some known rapamycin resistance genes and novel candidates. Overexpression of CG5399, which encodes a lipocalin family protein, confers resistance to rapamycin and activates RTK-Akt-mTOR signaling. The activation of InR by CG5399 requires cholesterol and clathrin-coated pits at the cell membrane (Figure 4\u2014figure supplement 1E). CG5399 is predicted to have a transmembrane helix at the C-terminus by PredictProtein and be located on the cell membrane by DeepLoc. As InR is embedded in the cell membrane and the rearrangement of InR transmembrane domain is crucial for tyrosine kinase domain activation, changing the lipid environment is a reasonable possible mechanism for the regulation of InR activation (Gutmann et al., 2018; Scapin et al., 2018). A recent study showed that lipid exchange to form ordered domains at cell membranes induces InR autophosphorylation (Suresh et al., 2021). In our experiment, we observed higher InR activity in CG5399-overexpressing cells without insulin stimulation, suggesting that InR activation can be regulated by the lipid environment. The clinical relevance of this InR activation mechanism needs to be further investigated.\n\nIn conclusion, we have established a genome-wide CRISPRa platform in Drosophila cells and identified novel rapamycin resistance genes using a genome-wide CRISPRa screen platform. This platform can be applied broadly to help elucidate the cellular mechanisms of a variety of biological processes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>CG8468</td>\n      <td>FlyBase</td>\n      <td>FLYB:FBgn0033913</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>CG5399</td>\n      <td>FlyBase</td>\n      <td>FLYB:FBgn0038353</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Drosophila melanogaster)</td>\n      <td>CG9932</td>\n      <td>FlyBase</td>\n      <td>FLYB:FBgn0262160</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (D. melanogaster)</td>\n      <td>S2R+</td>\n      <td>DRSC</td>\n      <td>FLYB:FBtc0000150</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (D. melanogaster)</td>\n      <td>PT5</td>\n      <td>DRSC</td>\n      <td>FLYB:FBtc0000229</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>E.cloni10GF\u2019 Electrocompetent Cells</td>\n      <td>Biosearch Technologies</td>\n      <td>60061\u20132</td>\n      <td>sgRNA library construction</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>One Shot TOP10 Chemically Competent E. coli</td>\n      <td>Invitrogen</td>\n      <td>C404010</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Recombinant Anti-Insulin Receptor (phospho Y1185) antibody (Rabbit monoclonal)</td>\n      <td>Abcam</td>\n      <td>ab62321</td>\n      <td>1:1000 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Phospho-Akt (Ser473) (D9E) XP antibody (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>4060</td>\n      <td>1:1000 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Akt Rabbit Antibody (Rabbit polyclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>9272</td>\n      <td>1:1000 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>StarBright Blue 700 Goat Anti-Rabbit IgG</td>\n      <td>Bio-Rad</td>\n      <td>12004161</td>\n      <td>1:2500 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>StarBright Blue 520 Goat Anti-Rabbit IgG</td>\n      <td>Bio-Rad</td>\n      <td>12005869</td>\n      <td>1:2500 for WB</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>hFAB Rhodamine Anti-Actin Primary Antibody (synthesized, monoclonal)</td>\n      <td>Bio-Rad</td>\n      <td>12004163</td>\n      <td>1:2500 for WB</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pMK33-SAM plasmid</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Can be obtained from DRSC</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLib8 plasmid</td>\n      <td>This paper</td>\n      <td></td>\n      <td>U6:3-MS2 sgRNA cassette, can be obtained from DRSC</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBS130 plasmid</td>\n      <td>Addgene</td>\n      <td>26290</td>\n      <td>PhiC31 integrase</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pUAS-CG5399 plasmid</td>\n      <td>This paper</td>\n      <td></td>\n      <td>CG5399 ORF vector, cassette, can be obtained from DRSC</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Effectene Transfection Reagent</td>\n      <td>Qiagen</td>\n      <td>301425</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CellTiter-Glo Luminescent Cell Viability Assay</td>\n      <td>Promega</td>\n      <td>G7570</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNeasy Mini Kit</td>\n      <td>Qiagen</td>\n      <td>74104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>iScript cDNA Synthesis Kit</td>\n      <td>Bio-Rad</td>\n      <td>1708890</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MEGAscript T7 Transcription Kit</td>\n      <td>Invitrogen</td>\n      <td>AM1334</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Methyl-\u03b2-cyclodextrin</td>\n      <td>Sigma-Aldrich</td>\n      <td>C4555</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cholesterol</td>\n      <td>Sigma-Aldrich</td>\n      <td>C3045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cholesterol</td>\n      <td>Sigma-Aldrich</td>\n      <td>C2044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 7</td>\n      <td>GraphPad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo</td>\n      <td>FlowJo</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Vectors\n\nThe pMK33-SAM plasmid was generated by transferring the SAM sequence from the flySAM vector (Jia et al., 2018) into the pMK33 plasmid. MS2 hairpin containing sgRNA was expressed from the pLib8 plasmid. pLib8 is derived from pLib6.4 (Viswanatha et al., 2018) by replacing the U6:2-sgRNA cassette to the U6:3-MS2 sgRNA cassette. The PhiC31 integrase expressing pBS130 plasmid was obtained from Addgene (#26290). The full length of CG5399 was cloned from the cDNA of S2R+ cells and inserted into the pWalium10 vector (DGRC, 1470) to construct the pUAS-CG5399 vector. sgRNA sequences used in this study are listed in Supplementary file 1.\n\n### Antibodies\n\nPhospho-InR antibody (Abcam, #ab62321), Phospho-Akt antibody (Cell signaling, # 4060), Akt antibody (Cell signaling, #9272) were used in this study. Phospho-S6 antibody is a kind gift of Kim and Choi, 2019.\n\n### Cell culture, transfection, and proliferation assay\n\nDrosophila cells were cultured with Schneider medium (Gibco) supplemented with 10% heat-inactivated FBS (Gibco) at 25\u00b0C (Viswanatha et al., 2018) unless otherwise indicated. The wild-type S2R+ cell line and the attP sites containing S2R+ derivative PT5 cell line were obtained from the Drosophila RNAi Screening Center. The DRSC copy of S2R+ was authenticated by the Drosophila Genomics Resource Center (DGRC), as part of their development of a transposable element-based authentication protocol for Drosophila cell lines (Mariyappa et al., 2022). The presence of the recombination cassette was confirmed by observation of mCherry fluorescence and the successful introduction of sgRNAs via recombination-mediated cassette exchange. Mycoplasma contamination is not an issue for Drosophila cell lines; throughout the study, we monitored and confirmed through careful observation that media and cells were not infected by bacteria or fungi. The cell lines used in this study are not from the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee. PT5 cells were transfected with pMK33-SAM plasmid using Effectene (QIAGEN) according to the manufacturer\u2019s protocol. Briefly, 3 \u00d7 106 Drosophila cells were seeded into one well of a six-well plate before transfection. 400 ng plasmids were diluted into Buffer EC to a final volume of 100 \u03bcL and mixed with 3.2 \u03bcL enhancer by vortexing to form a DNA-enhancer mixture. 10 \u03bcL Effectene transfection reagents were added into the DNA-enhancer mixture and mixed by vortexing. After incubating at room temperature for 15 min to allow transfection complex formation, the solution was added drop-wise onto Drosophila cells. Transfected cells were passaged in a culture medium containing 200 \u03bcg/mL Hygromycin B (Millipore) for 1 month to generate the stable SAM cell line. To induce SAM complex expression, a culture medium containing 100 \u03bcM CuSO4 (Sigma) was used. Cell proliferation under different rapamycin concentrations was tested using CellTiter Glo assay (Promega) according to the manufacturer\u2019s protocol. 1 \u00d7 104 Drosophila cells were seeded into each well of a 96-well plate. Rapamycin-containing culture medium was added into each well to make the final concentration from 10\u20134 nM to 10 nM. After culturing for 4 days, a volume of CellTiter Glo reagent was added into each well before cells reached confluence. The luminescence signal was measured by Plate Reader (Molecular Devices).\n\n### Pooled library design and construction\n\nFor the focused sgRNA library, sgRNAs were designed within 500 bp upstream of the transcriptional start site (TSS) for each gene. Ten different sgRNAs were selected for each gene unless fewer sgRNA binding sites were found within the window. Constructing the focused library was performed as previously described (Viswanatha et al., 2018). Briefly, Bbs1 sites flanking sgRNA spacer sequences were synthesized as single-stranded DNA oligos (Agilent). DNA oligos were amplified by PCR using Phusion Polymerase (New England Biolabs). Bbs1 restriction enzyme (New England Biolabs) was used to digest amplicon and pLib8 plasmid. The resulting 24-mer fragment was purified from the Bbs1 digested amplicon by running a 20% TBE polyacrylamide gel (Thermo). The purified fragment and plasmid were ligated using T4 ligase (New England Biolabs). The ligation products were transferred into Ecloni 10GF\u2019 electrocompetent cells (Lucigen) using Gene Pulser Xcell Electroporation Systems (Bio-Rad). Transformed bacteria were spread on LB-carbenicillin agar plates. After overnight culture, the bacteria colonies were collected from plates by scraping and amplified in an LB medium with ampicillin.\n\nFor the genome-wide dual-sgRNA library, sgRNAs were designed within 500 bp upstream of TSS for each gene. sgRNAs were chosen to make six dual-sgRNA combinations for each gene unless fewer sgRNA binding sites were found. To construct the dual-sgRNA library, Bbs1, and BsmB1 sites flanking two sgRNA spacer sequences were synthesized in a custom array as single-stranded DNA oligos (Agilent). DNA oligos were amplified by PCR using Phusion Polymerase (New England Biolabs). DNA amplicons were ligated to Zero Blunt vector (Thermo) using T4 ligase to generate the first library. An amplicon containing the scaffold sequence for the first sgRNA and U6:2 promoter sequence for the second sgRNA was inserted into the BsmB1 site to generate the second library. The second library and pLib8 vector were digested with Bbs1. The resulting sgRNA cassettes from the digested second library were ligated with Bbs1 digested pLib8 vector to generate the final library using T4 ligase. Each library was transferred into Ecloni 10GF\u2019 electrocompetent cells by electroporation. Transformed bacteria were spread on LB-carbenicillin agar plates. Bacteria colonies were calculated by serial dilution. Each library needs to reach at least 10 times diversity to maintain the integrity of the library.\n\n### Pooled screening, library sequencing, and data analysis\n\nThe library was co-transfected with the same amount of phiC31 plasmid into SAM cells at 3 \u00d7 106 cells/well of a six-well plate using Effectene. The total cell number used for transfection was calculated to ensure over 1000 cells/sgRNA to maintain the integrity of the library. The transfected cells were passaged in a culture medium containing 5 \u03bcg/mL puromycin for 3 weeks to select the sgRNA-integrated cells. The resulting pooled library cells were split into two populations and passaged in rapamycin or DMSO-containing medium supplemented with 100 \u03bcM CuSO4 for indicated days. After treatment, the genomic DNA was extracted from the final cell population and the sgRNAs sequences were amplified by PCR. As each Drosophila cell contains ~0.6 pg DNA, the amount of genomic DNA used as a PCR template was calculated to ensure over 1000 cells/sgRNA to maintain the diversity. The library for next-generation sequencing was constructed by adding Illumina adaptors to sgRNA amplicons by PCR. The final PCR products had the following sequence: P5-read1-(N)n-(B)6-sgRNA-P7 (where N stands for any nucleotide, n stands for a variable length of nucleotide from 1 to 10, and (B)6 stands for six nucleotides sample barcode). PCR primers used for NGS library construction are listed in Supplementary file 2. The library was sequenced using the NextSeq500 1 \u00d7 75 SE platform (Illumina) in HMS Biopolymers Facility. The sequencing data were de-multiplexed using TagDust. Screen hits were identified using MAGeCK-RRA by comparing the treatment and the control according to the previous report (Li et al., 2014).\n\n### RNA extraction, reverse transcription, and qPCR\n\nRNA was extracted from Drosophila cells using RNA Mini Kit (QIAGEN) according to the manufacturer\u2019s protocol. Total RNA was reverse transcribed into cDNA using the iScript cDNA Synthesis Kit (Bio-Rad). qPCR was done with SYBR Green Master Mix (Bio-Rad). The housekeeping gene rp49 was used as the reference gene for qPCR. qPCR primers used in this study are listed in Supplementary file 2. The statistical analysis was performed using the GraphPad Prism 7 software. t-tests were performed to test the significance of gene expression data. *p<0.05; **p<0.01; ***p<0.001; ns, not significant.\n\n### GFP proportion analysis by flow cytometry\n\nCells were transferred into 5 mL FACS tubes (Falcon 352235) and analyzed with a BD LSR II Flow Cytometer in the Department of Immunology Flow Cytometry Facility, Harvard Medical School. Wild-type cells (GFP negative cells) and an empty vector expressing cells (GFP positive cells) were used as a negative and positive control to set the gate in Alexa Fluor 488 channel, respectively. With this gate, the GFP proportion in wild-type cells is 0.031%, and in an empty vector expressing cells is 96.7%. Three biological replicates for each condition were tested. The flow cytometry files were analyzed by FlowJo. The statistical analysis was performed using the GraphPad Prism 7 software. t-tests were performed to test the significance of GFP proportion data. *p<0.05; **p<0.01; ***p<0.001; ns, not significant.\n\n### dsRNA synthesis and transfection\n\ndsRNAs were designed by the Drosophila RNAi Screening Center. dsRNA templates were amplified from genomic DNA using primers with T7 promoter sequence TAATACGACTCACTATAGGG at 5' end. dsRNAs were synthesized from the resulting amplicons using MEGAscript T7 Transcription Kit (Invitrogen). dsRNAs were purified with RNeasy Mini Kit (QIAGEN) before transfection. dsRNA sequences used in this study are listed in Supplementary file 3. 10 \u03bcg dsRNA were transfected into 3 \u00d7 106 Drosophila cells using Effectene (QIAGEN).\n\n### Cholesterol depletion and supplementation\n\nFor cholesterol depletion, methyl-beta-cyclodextrin (sigma) was dissolved in serum-free Schneider medium at the indicated concentration. Cells were incubated with M\u03b2CD containing serum-free medium for 1 hr before testing. For cholesterol supplementation, cholesterol (sigma) was dissolved in ethanol. Dissolved cholesterol was added into M\u03b2CD containing serum-free Schneider medium to form cholesterol/M\u03b2CD complex. Cells were incubated with cholesterol/M\u03b2CD complex containing serum-free Schneider medium for 1 hr before testing.\n",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "5992b6e4-8e2e-4dcb-9ae0-3348a9356d11",
+      "submission_id": "dcdaa2e8-e341-4e3f-982a-29dcd94ea8ad",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, https://ror.org/03ht1xw27 National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85542.sa0](https://doi.org/10.7554/eLife.85542.sa0)\n\nThis work is well-structured, with clear objectives and experiments. The authors successfully demonstrated genome-wide gene activation which overcame previous failed attempts to replicate gene activation that worked well in mammalian systems. The study is detailed and relevant for the application of CRISPRa in understanding the function of candidate genes.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, https://ror.org/03ht1xw27 National Centre for Biological Sciences, Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85542.sa1](https://doi.org/10.7554/eLife.85542.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Pooled genome-wide CRISPR activation screening for rapamycin resistance genes in Drosophila cells\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Raghu Padinjat (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. As you can see, the suggestions for revision are readily addressable. We look forward to receiving a revised manuscript speedily.\n\nEssential revisions:\n\nWhile we strongly recommend this manuscript for publication some corrections and revisions are listed.\n\n1. The authors used attP cells to integrate sgRNA, and it would be useful to know the copy number of attP sites per cell and whether the cells are homogeneous. If this information is available, it should be added to the manuscript.\n\n2. Due to the inherent nature of the metallothionein promoter, the authors observed significant leaky activation. While this may not be an issue while studying the rapamycin pathway, it could be problematic when studying sensitive signaling processes. Therefore, a clear disclaimer should be added to the discussion.\n\n3. The manuscript demonstrates that CRISPRa is specific and does not activate neighboring genes with just a single example. However, it is possible that insulator sequences protect neighboring gene activation in this case. Therefore, the authors should either show more examples to demonstrate this convincingly or explicitly state this in the discussion.\n\n4. It would be helpful to know the abundance of gRNA in the library compared to the hits identified in the screen. Was there a greater probability of a target showing up as positive in the screen when its abundance is overrepresented in the library?\n\n5. The authors may want to speculate as to why Cyp12a4 did not come up on the second screen.\n\n6. It would be useful to know whether p-Akt was checked in CG9932 knockdown and why it was excluded from the experiment.\n\n7. The experiments to suggest insulin-independent activation of InR by CG5399 require more conclusive experiments. Serum starvation is not sufficient to conclusively state this, and the authors should discuss this limitation.\n\n8. The discussion lacks clarity and focus, particularly in the second paragraph. Instead, the authors could focus on the tools generated in the article and compare and discuss similar tools available in other model systems. They could also speculate on how such a tool in a Drosophila model will serve in new research questions.\n\n9. Although the work seems more focused on generating a fly tool for CRISPRa, there are some nice discoveries of new functions for some of the fly genes. This could be better illustrated with a model showing signaling pathways and highlighting the gene functions identified in this study. It would be helpful to include an overall description of the InK-AktmTOR pathway with only major signaling cascade molecules for understanding.\n\n10. It is recommended to expand abbreviations at their first mention. For example, the full form of InR should be included in Line 51.\n\n11. It would be helpful to briefly explain the role of each component of the SAM complex- VP64, MS2, p65, and HSF1 for a better understanding of the use of the SAM complex.\n\n12. In Line 100 and in a few parts of the same section, it is unclear what \"cell fitness\" indicates. It would be useful to specify whether it refers to cell viability, proliferation rate, or cell functionality and what parameters were measured to assess fitness.\n\n13. In Line 124, the authors should state the rationale for including non-coding genes in the study with respect to rapamycin resistance. Were any non-coding targets identified in the screen?\n\n14. The details of the software used for statistical analysis are missing. The details of FACS, its gating, and control parameters could be added.\n\n15. In general, the legends for the figures could be better explained in detail. Eg: Appropriate statistical explanations for * needed wherever mentioned in figures. Abbreviations in plasmid constructs needed better explanations.\n\n16. Authors have taken a number of measures to maintain the integrity of the CRISPRa library, including multiple gRNA targets per gene, 1000 cells per gRNA, and deep sequencing. However, do the authors have an idea of what percentage of the gRNA vectors are functional? Looking at the data they show for the 3 candidate genes, at least half of them are not functional, which could be either because of gRNA location or efficiency. Considering this to be an average situation, there might be a large number of genes for which all gRNAs might not function at all. We understand this might be a caveat for all such studies, but an estimate of some kind in discussion might be useful for anyone who might want to use these resources.\n\n17. As the authors mention that ~32% of genes in Drosophila have transcription start sites <1kb apart, off-targeting (neighboring genes getting activated in addition to the intended gene) will be an issue. To address this, the authors describe one example of genes where although the genes TSS are within one kb of each other, the sgRNA specifically activated only one gene and not the other. However, since following this, authors have generated genome-wide resources keeping 500bp upstream as their benchmark, a large percentage of these 32% genes might have off-targets. It would be useful to know the estimates of off-targeting for such a resource. In addition, have authors looked at the transcripts of genes close to the specific genes they have studied? CG9932 is in close proximity to (although not within the 1 kb range) a few genes including mTOR.\n",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3ae009ec-10ed-4cfe-91f9-cc2ce77a571b",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C1",
+      "claim": "About half of Drosophila protein-coding genes still lack functional characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Drosophila is one of the most intensively studied organisms, about half of Drosophila protein-coding genes still lack functional characterization (Ewen-Campen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ewen-Campen et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "c4df86e2-1f9d-470c-8ba7-b25d7f593421",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C2",
+      "claim": "Genome-wide loss-of-function screens using RNA interference or CRISPR-Cas9 have helped elucidate the mechanisms of a variety of biological processes in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, genome-wide LOF screens using RNA interference or CRISPR-Cas9 have helped elucidate the mechanisms of a variety of biological processes (Boutros et al., 2004; Bj\u00f6rklund et al., 2006; D'Ambrosio and Vale, 2010; Bard et al., 2006; Guo et al., 2008; Hao et al., 2008; Song et al., 2022; Viswanatha et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "88a8302a-ce42-405d-8dd2-1f6f3fc6ab1e",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C3",
+      "claim": "Genome-wide gain-of-function screens have not been feasible in Drosophila, largely due to a lack of reagents for genome-scale GOF perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genome-wide GOF screens have not been feasible, largely due to a lack of the reagents for genome-scale GOF perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of the field based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "a103895a-7b26-4074-a3d0-1705322d6408",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C4",
+      "claim": "Current state-of-the-art for Drosophila GOF studies utilizes cDNA library overexpression, which only covers a subset of the genome and underrepresents genes with long open reading frames.",
+      "claim_type": "EXPLICIT",
+      "source": "Current state-of-the-art for Drosophila GOF studies utilizes cDNA library overexpression (Stapleton et al., 2002; Yu et al., 2011), which only covers a subset of the genome and underrepresents genes with long open reading frames (ORFs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and established knowledge about cDNA library limitations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "ed529b2c-53c5-42d1-a20a-6e8372d3f565",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C5",
+      "claim": "Nuclease-dead Cas9 (dCas9) fused with transcriptional activators and targeted to the promoter region by sgRNAs can facilitate transcription at endogenous loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclease-dead Cas9 (dCas9) is fused with different transcriptional activators and targeted to the promoter region by single-guide RNAs (sgRNAs) to facilitate transcription at endogenous loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of established CRISPRa mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "013de1b5-7584-484e-abb7-25c1463689c6",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C6",
+      "claim": "Synergistic activation mediator (SAM) complex is one of the most efficient CRISPRa systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Synergistic activation mediator (SAM) complex is one of the most efficient CRISPRa systems (Konermann et al., 2015; Chavez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "13946ba3-cebf-4ce2-9003-827a5a81f9d5",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C7",
+      "claim": "CRISPR-based GOF approaches have been used for genome-wide genetic screens in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-based GOF approaches have been used for genome-wide genetic screens in mammalian cells (Konermann et al., 2015; Rodr\u00edguez et al., 2022; Zhu et al., 2022; Sofer et al., 2022; Zhang et al., 2022), but the feasibility has not yet been tested in Drosophila cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "f7c87d18-efb6-4f62-8d41-d15303e7843d",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C8",
+      "claim": "The feasibility of CRISPR-based GOF approaches has not yet been tested in Drosophila cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR-based GOF approaches have been used for genome-wide genetic screens in mammalian cells (Konermann et al., 2015; Rodr\u00edguez et al., 2022; Zhu et al., 2022; Sofer et al., 2022; Zhang et al., 2022), but the feasibility has not yet been tested in Drosophila cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of the field at the time of the study",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "8f310e24-1fe4-43ab-b977-4acf4668fa8d",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C9",
+      "claim": "A pooled genome-wide CRISPRa screening platform was developed in Drosophila cells using the SAM complex.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this gap, we developed a pooled genome-wide CRISPRa screening platform in Drosophila cells using the SAM complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary finding of the study describing the development of the platform",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "8bb8d5e3-eb51-4d1a-be13-e73de4985b23",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C10",
+      "claim": "Focused and genome-wide CRISPRa screens identified novel candidates conferring rapamycin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate the feasibility of this platform, we performed focused and genome-wide CRISPRa screens and identified novel candidates conferring rapamycin resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary finding from the screen experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "89053c2a-d390-4e32-8550-bf9da23f44f6",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C11",
+      "claim": "CG5399 overexpression activates the RTK-Akt-mTOR signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, we demonstrate that CG5399 overexpression activates the RTK-Akt-mTOR signaling pathway and that activation of insulin receptor (InR) by CG5399 requires cholesterol and clathrin-coated pits at the cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary mechanistic finding supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "aab9bab5-db83-4324-ac69-1f23b84be512",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C12",
+      "claim": "Activation of insulin receptor (InR) by CG5399 requires cholesterol and clathrin-coated pits at the cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, we demonstrate that CG5399 overexpression activates the RTK-Akt-mTOR signaling pathway and that activation of insulin receptor (InR) by CG5399 requires cholesterol and clathrin-coated pits at the cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary mechanistic finding supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "5da02d27-80e7-404a-931d-e5e6ccf7ae80",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C13",
+      "claim": "The SAM complex can mediate transcriptional activation in Drosophila S2R+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of copper, sgRNAs robustly upregulated the target genes (Figure 1B), showing that the SAM complex is able to mediate gene activation in Drosophila S2R+ cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "5649bbad-ec03-4c72-82ac-0867dd7de6f3",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C14",
+      "claim": "Without copper induction, sgRNAs moderately activated the target genes, likely due to leaky expression of the SAM complex from the metallothionein promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Without copper induction, sgRNAs moderately activated the target genes, likely due to leaky expression of the SAM complex from the metallothionein promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from experimental data with speculative explanation",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "4019b026-4fb1-4c81-843c-be25a8ce4d27",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C15",
+      "claim": "In the presence of copper, sgRNAs robustly upregulated the target genes Jon25Biii and Sdr.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of copper, sgRNAs robustly upregulated the target genes (Figure 1B), showing that the SAM complex is able to mediate gene activation in Drosophila S2R+ cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "337c9322-68ab-42f9-be20-f7c2245a95da",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C16",
+      "claim": "32% of genes in the Drosophila genome form divergent gene pairs with transcriptional start sites <1 kb apart.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Drosophila genome, 32% of genes form divergent gene pairs with transcriptional start sites (TSS) <1 kb apart (Yang and Yu, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yang and Yu, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "83a85eea-a279-4448-bc15-43b743988dd6",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C17",
+      "claim": "CG9877 and CG13538 are a divergent gene pair with transcriptional start sites 908 bp apart.",
+      "claim_type": "EXPLICIT",
+      "source": "CG9877 and CG13538 are a divergent gene pair with transcriptional start sites 908 bp apart, thus this gene pair is a good test case for assessing collateral activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Factual statement about gene pair characteristics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "e3e048ec-0295-4d59-8f31-12b167dbcaee",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C18",
+      "claim": "sgRNAs designed within a region 300 bp upstream of the TSS of CG9877 specifically activated CG9877, but not CG13538.",
+      "claim_type": "EXPLICIT",
+      "source": "sgRNAs were designed within a region 300 bp upstream of the TSS of CG9877 and ~600 bp away from the TSS of CG13538. The sgRNAs specifically activated CG9877, but not CG13538 (Figure 1C), suggesting that the SAM complex activates the target gene without affecting nearby genes at least in some divergent gene pairs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "815d7681-9b79-43dd-b5b0-6f0ae807e718",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C19",
+      "claim": "The SAM complex activates the target gene without affecting nearby genes at least in some divergent gene pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The sgRNAs specifically activated CG9877, but not CG13538 (Figure 1C), suggesting that the SAM complex activates the target gene without affecting nearby genes at least in some divergent gene pairs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "89093473-6b80-4d55-9604-dcc4e92f4b55",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C20",
+      "claim": "Lentivirus vectors are extremely inefficient in Drosophila cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike in mammalian cells, lentivirus vectors are extremely inefficient in Drosophila cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "a3f3ac88-78b5-47fb-a808-fc796bb1337f",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C21",
+      "claim": "A pooled library delivery method based on site-specific recombination following plasmid transfection of Drosophila cells was previously established.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this limitation, we previously established a pooled library delivery method based on site-specific recombination following plasmid transfection of Drosophila cells (Viswanatha et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Viswanatha et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "1b23b8a4-e99e-469a-ae65-f342abdff60a",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C22",
+      "claim": "Rapamycin is an allosteric inhibitor of the kinase mTOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin is an allosteric inhibitor of the kinase mTOR, a key regulator of cell growth and proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "0104148f-c674-4892-b6e2-d893418570fe",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C23",
+      "claim": "mTOR is a key regulator of cell growth and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin is an allosteric inhibitor of the kinase mTOR, a key regulator of cell growth and proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "1a975d45-798c-4279-8f7f-4850c0739b91",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C24",
+      "claim": "Rapamycin inhibits Drosophila S2R+ cell proliferation in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin inhibits Drosophila S2R+ cell proliferation in a dose-dependent manner. Cell proliferation was partially inhibited by rapamycin at 0.1 nM and almost completely inhibited at 1 nM (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "8fcd86de-52a9-4edd-85bd-e1ab5bcfd94b",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C25",
+      "claim": "Cell proliferation was partially inhibited by rapamycin at 0.1 nM and almost completely inhibited at 1 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell proliferation was partially inhibited by rapamycin at 0.1 nM and almost completely inhibited at 1 nM (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "5b9e68ad-126a-4357-875f-5019036801ff",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C26",
+      "claim": "The focused library consists of 6335 sgRNAs targeting the promoter regions of 652 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The focused library consists of 6335 sgRNAs targeting the promoter regions of 652 genes, which include genes involved in the mTOR signaling pathway as well as candidates from our previous CRISPR knockout screen (Viswanatha et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the library design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "b3475464-dcaa-4b27-9b09-474924858bba",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C27",
+      "claim": "Scyl and Cyp12a4 are significantly depleted (FDR<0.05) after passaging in DMSO for 15 days and 30 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Scyl and Cyp12a4 are significantly depleted (false-discovery rate (FDR)<0.05) after passaging in DMSO for 15 days and 30 days (Figure 2\u2014figure supplement 1C and D), suggesting that overexpression of scyl or Cyp12a4 affects cell fitness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "777e7ed0-e3dd-4bc4-aa09-a5add29850da",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C28",
+      "claim": "Overexpression of scyl or Cyp12a4 affects cell fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Scyl and Cyp12a4 are significantly depleted (false-discovery rate (FDR)<0.05) after passaging in DMSO for 15 days and 30 days (Figure 2\u2014figure supplement 1C and D), suggesting that overexpression of scyl or Cyp12a4 affects cell fitness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental data shown in Figure 2\u2014figure supplement 1C and D",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "45690a3e-b72b-4871-bf82-97d1a963022b",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C29",
+      "claim": "scyl is known to inhibit cell proliferation and act as a cell death activator.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, scyl is known to inhibit cell proliferation and act as a cell death activator (Reiling and Hafen, 2004; Corradetti et al., 2005; Scuderi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "106fd1dc-05e3-4957-9995-f0b71b100f33",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C30",
+      "claim": "Pooled CRISPRa screen can be used to identify genes affecting cell fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that pooled CRISPRa screen can be used to identify genes affecting cell fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "788d2fea-64fe-4270-a364-96fd63e546f9",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C31",
+      "claim": "CG8468 was significantly enriched (FDR<0.05) in the population treated with 1 nM rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "The focused screen revealed that one candidate, CG8468, was significantly enriched (FDR<0.05) in the population treated with 1 nM rapamycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the focused screen",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "055bac49-7c18-42da-90b4-4c907cc26d62",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C32",
+      "claim": "With prolonged treatment, CG8468 was further enriched as observed by a higher fold-change value at day 30 than at day 15.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, with prolonged treatment, CG8468 was further enriched as we observed a higher fold-change value at day 30 than at day 15 (Figure 2\u2014figure supplement 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "143b86b2-29da-4bc5-bf91-ff4ff3265eca",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C33",
+      "claim": "No gene was significantly enriched in the 0.1 nM rapamycin treatment condition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no gene was significantly enriched in the 0.1 nM rapamycin treatment condition, probably because cells have a higher proliferation rate at 0.1 nM rapamycin concentration compared to 1 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from experimental data with speculative explanation",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "f536425b-3254-40e1-b639-28738ae6671a",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C34",
+      "claim": "Pooled CRISPRa screen using the SAM complex is feasible in Drosophila cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate that pooled CRISPRa screen using the SAM complex is feasible in Drosophila cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "b4745637-2da3-4cd0-84d2-ebb077f79d77",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C35",
+      "claim": "Multiplexed sgRNAs performed better than single sgRNAs for CRISPRi and CRISPRa.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study showed that multiplexed sgRNAs performed better than single sgRNAs for CRISPRi and CRISPRa (Replogle et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Replogle et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "34081ddc-9fa1-48a5-9e28-4c007dfbabd6",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C36",
+      "claim": "The dual-sgRNA library consists of 84,143 vectors targeting the promoter regions of 13,293 protein-coding genes and 2332 non-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The library consists of 84,143 vectors targeting the promoter regions of 13,293 protein-coding genes and 2332 non-coding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the library design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "1a2484cd-db9b-4247-8b10-0a99bc364d97",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C37",
+      "claim": "~98.5% of designed vectors were present in the final library.",
+      "claim_type": "EXPLICIT",
+      "source": "After library construction, we checked the quality of the dual-sgRNA library by deep sequencing, which revealed that ~98.5% of designed vectors were present in the final library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequencing data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "ac810f01-64e1-4e80-89f4-a6aca8fb4338",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C38",
+      "claim": "The difference in representation between the 10th percentile of the final library (19 reads) and the 90th percentile (292 reads) was 15.5-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in representation between the 10th percentile of the final library (19 reads) and the 90th percentile (292 reads) was 15.5-fold (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequencing data shown in Figure 2\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "91583315-c5a2-443d-ad33-9f0b47be47dc",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C39",
+      "claim": "The integrity and distribution of the dual-sgRNA library are comparable to other published genome-wide libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "The integrity and distribution of our dual-sgRNA library are comparable to other published genome-wide libraries (Sanjana et al., 2014), indicating the high quality of the library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with published data from Sanjana et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "b6ed8481-428e-45a2-ba75-169e5f0609e7",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C40",
+      "claim": "scyl is significantly depleted (FDR<0.05) in the genome-wide screen dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results of the focused screen, scyl is also significantly depleted (FDR<0.05) in the genome-wide screen dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the genome-wide screen",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "fbab63d9-2dcc-4abb-a9b5-6dcfe4870b23",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C41",
+      "claim": "The genome-wide screen identified genes known to be involved in the suppression of cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the scyl, the screen also identified other genes known to be involved in the suppression of cell proliferation (Figure 2\u2014figure supplement 3A and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 3A and Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "9f9aaf4d-89a4-4660-b872-60cf8d3ca0cc",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C42",
+      "claim": "Pka-C3 and Cdc25 were among the top 50 ranked genes identified in both replicates of the genome-wide screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Pka-C3 and Cdc25 were among the top 50 ranked genes identified in both replicates of the genome-wide screen (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "1e905d70-dc8c-48e7-8a4a-611566d1b276",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C43",
+      "claim": "Pka-C3 encodes the catalytic subunit of PKA.",
+      "claim_type": "EXPLICIT",
+      "source": "Pka-C3 encodes the catalytic subunit of PKA, and overexpression of the catalytic subunit of PKA or activation of the PKA pathway is known to confer resistance to rapamycin (Cutler et al., 2001; Zurita-Martinez and Cardenas, 2005; Schmelzle et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "373e7eb3-e05d-431e-9d18-5044e8fa1b6a",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C44",
+      "claim": "Overexpression of the catalytic subunit of PKA or activation of the PKA pathway is known to confer resistance to rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Pka-C3 encodes the catalytic subunit of PKA, and overexpression of the catalytic subunit of PKA or activation of the PKA pathway is known to confer resistance to rapamycin (Cutler et al., 2001; Zurita-Martinez and Cardenas, 2005; Schmelzle et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "a79848da-3cc9-461f-9c96-4703816f6398",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C45",
+      "claim": "Cdc25 is a tyrosine phosphatase gene that regulates cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdc25 is a tyrosine phosphatase gene that regulates cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "8dc568c3-3576-459a-bb31-13529883dc68",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C46",
+      "claim": "The level of Cdc25 expression is positively correlated with rapamycin resistance in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have indicated that the level of Cdc25 expression is positively correlated with rapamycin resistance in cancer cells (Reikvam et al., 2014; Chen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "0a3d7c74-eed7-4275-a42d-f9d20a69ecbe",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C47",
+      "claim": "Three genes, CG8468, CG5399, and CG9932, were significantly enriched (FDR<0.05) in both replicates of the genome-wide screen.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, three genes, CG8468, CG5399, and CG9932, were significantly enriched (FDR<0.05) in both replicates (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "d73724a3-57d6-4a3a-85c8-6597998a39fa",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C48",
+      "claim": "CG8468 is a member of the SLC16 family of monocarboxylate transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "CG8468 is a member of the SLC16 family of monocarboxylate transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on gene annotation and established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "dfb5c781-2455-4d01-8550-291842f23430",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C49",
+      "claim": "CG5399 encodes a member of the lipocalin protein family, members of which have been implicated in lipid binding and transport.",
+      "claim_type": "EXPLICIT",
+      "source": "CG5399 encodes a member of the lipocalin protein family, members of which have been implicated in lipid binding and transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on gene annotation and established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "d1997ce1-93ae-4aa9-bfdd-9cfd77904eb8",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C50",
+      "claim": "CG9932 encodes a zinc finger C2H2 transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "CG9932 encodes a zinc finger C2H2 transcription factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on gene annotation and established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "e1d301e8-e451-4a29-b138-c7e8d2794995",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C51",
+      "claim": "CG8468 was the top hit from the focused library screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CG8468 was also the top hit from our focused library screen, indicating the consistency of the pooled CRISPRa screen approach in Drosophila cells (note that the other two genes were not included in the focused library).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the focused screen",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "eb919ab5-b192-4436-a8a1-ddd2a61277e4",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C52",
+      "claim": "CG5399 and CG9932 were not included in the focused library.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CG8468 was also the top hit from our focused library screen, indicating the consistency of the pooled CRISPRa screen approach in Drosophila cells (note that the other two genes were not included in the focused library).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the library design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "6d8fa721-88fb-4fa6-b739-8e3fcce816a9",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C53",
+      "claim": "The dual-sgRNA vectors showed variable activation efficiency, probably due to the complex transcriptional regulation of the target genes or different sgRNA binding efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "The dual-sgRNA vectors showed variable activation efficiency, probably due to the complex transcriptional regulation of the target genes or different sgRNA binding efficiencies (Figure 2C, F and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from experimental data with speculative explanation",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "e19d0c90-9e09-48dd-ac53-a1347de26b08",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C54",
+      "claim": "The enrichment of each dual-sgRNA vector in the screen was highly correlated with its target activation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the enrichment of each dual-sgRNA vector in the screen was highly correlated with its target activation efficiency, as only the vectors that efficiently activate target genes were enriched in the rapamycin-treated samples (Figure 2D, G and J and Figure 2\u2014figure supplement 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in multiple figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "8e8d3d75-d4aa-4bc1-8802-8d14f56f8317",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C55",
+      "claim": "Only the vectors that efficiently activate target genes were enriched in the rapamycin-treated samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the enrichment of each dual-sgRNA vector in the screen was highly correlated with its target activation efficiency, as only the vectors that efficiently activate target genes were enriched in the rapamycin-treated samples (Figure 2D, G and J and Figure 2\u2014figure supplement 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in multiple figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "2a1f2bb2-019a-43e8-8382-cede1d888b14",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C56",
+      "claim": "Higher proportions of GFP were observed only for vectors that efficiently activate target genes, but not for inefficient vectors or an empty vector.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we only observed higher proportions of GFP for vectors that efficiently activate target genes, but not for inefficient vectors or an empty vector (Figure 2E, H and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2E, H and K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "a822e33a-762a-4049-be07-78eca759fda9",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C57",
+      "claim": "Overexpression of the hits from the genome-wide screen conferred resistance to rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirmed that overexpression of the hits from the genome-wide screen conferred resistance to rapamycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "7c44c3c5-af0b-4aa3-a291-e4fb6aa42733",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C58",
+      "claim": "Ribosomal protein S6 is phosphorylated by S6K, which is a downstream target of mTOR.",
+      "claim_type": "EXPLICIT",
+      "source": "As ribosomal protein S6 is phosphorylated by S6K, which is a downstream target of mTOR, the phosphorylation status of S6 can serve as a readout for mTOR activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "9e771a74-c89a-48c1-bdb2-247ae0288653",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C59",
+      "claim": "The phosphorylation status of S6 can serve as a readout for mTOR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As ribosomal protein S6 is phosphorylated by S6K, which is a downstream target of mTOR, the phosphorylation status of S6 can serve as a readout for mTOR activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "0700c816-bb51-478f-91aa-b6faa669e204",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C60",
+      "claim": "In the presence of rapamycin, S6 phosphorylation was strongly inhibited in wild-type SAM cells and empty vector-expressing SAM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of rapamycin, S6 phosphorylation was strongly inhibited in wild-type SAM cells and empty vector-expressing SAM cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "5d646045-3556-4d3b-9a36-f522aa1a188a",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C61",
+      "claim": "Compared to control cells, the phospho-S6 levels were dramatically elevated in CG5399-overexpressing cells in the presence of rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, compared to control cells, the phospho-S6 levels were dramatically elevated in CG5399-overexpressing cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "33d07343-8bd1-4e52-b8b2-2ac0b0828558",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C62",
+      "claim": "Higher phospho-S6 levels were not observed in CG8468-overexpressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we did not observe higher phospho-S6 levels in CG8468-overexpressing cells, suggesting that CG8468 acts downstream of mTOR or in a parallel pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from experimental data with inference",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "3833dc72-32f5-49fe-ae47-4fc9287b6509",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C63",
+      "claim": "CG8468 acts downstream of mTOR or in a parallel pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we did not observe higher phospho-S6 levels in CG8468-overexpressing cells, suggesting that CG8468 acts downstream of mTOR or in a parallel pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "356ce99a-2381-4aba-ade0-26921d14db54",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C64",
+      "claim": "CG9932-overexpressing cells displayed higher phospho-S6 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "CG9932-overexpressing cells also displayed higher phospho-S6 levels, possibly reflecting a previous observation that overexpression of the human ortholog of CG9932, REST, activates Akt, which acts upstream of S6 (Dobson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with citation to related work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "1669964a-bd9d-4123-b5cc-80095ea899e0",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C65",
+      "claim": "Overexpression of the human ortholog of CG9932, REST, activates Akt, which acts upstream of S6.",
+      "claim_type": "EXPLICIT",
+      "source": "CG9932-overexpressing cells also displayed higher phospho-S6 levels, possibly reflecting a previous observation that overexpression of the human ortholog of CG9932, REST, activates Akt, which acts upstream of S6 (Dobson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dobson et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "0376e270-fa7a-4b04-9952-27d94871eedf",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C66",
+      "claim": "Higher phospho-S6 levels were observed in CG5399-overexpressing cells without rapamycin treatment compared with wild-type SAM cells and empty vector-expressing SAM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with wild-type SAM cells and empty vector-expressing SAM cells, higher phospho-S6 levels were observed in CG5399-overexpressing cells (Figure 3B), indicating that CG5399 is a positive regulator of mTOR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "8cb2da19-30dd-4381-b6e5-534046fae75e",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C67",
+      "claim": "CG5399 is a positive regulator of mTOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with wild-type SAM cells and empty vector-expressing SAM cells, higher phospho-S6 levels were observed in CG5399-overexpressing cells (Figure 3B), indicating that CG5399 is a positive regulator of mTOR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "d58f4628-afc5-4c4c-bd95-ec32b17926c2",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C68",
+      "claim": "An increase in phospho-Akt was observed in CG5399-overexpressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in addition to higher phopho-S6 levels, an increase in phospho-Akt was also observed in CG5399-overexpressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "41717f98-0497-4d3f-b970-7b68f1043a80",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C69",
+      "claim": "Knocking down CG5399 mRNA levels using either of two nonoverlapping dsRNAs in CG5399-overexpressing cells totally abolished the increase of phospho-Akt and phospho-S6.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, knocking down CG5399 mRNA levels using either of two nonoverlapping double-stranded RNAs (dsRNAs) in CG5399-overexpressing cells totally abolished the increase of phospho-Akt and phospho-S6 (Figure 3C), excluding the possibility that an off-target effect of the sgRNAs explains these observations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "6368342c-3897-4776-a8af-9417157c62a2",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C70",
+      "claim": "Akt is phosphorylated by PI3K when receptor tyrosine kinases (RTKs) are activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt is phosphorylated by PI3K when receptor tyrosine kinases (RTKs) are activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "bd5328cf-f7c1-4c6b-b633-9cb76b4b52f8",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C71",
+      "claim": "Knockdown of Pi3K92E abolished Akt activation by CG5399 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Pi3K92E abolished Akt activation by CG5399 overexpression, suggesting that CG5399 activates Akt-mTOR through PI3K (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "411d3b8d-1f94-464c-bfda-466f15728791",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C72",
+      "claim": "CG5399 activates Akt-mTOR through PI3K.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Pi3K92E abolished Akt activation by CG5399 overexpression, suggesting that CG5399 activates Akt-mTOR through PI3K (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental data shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "707d2808-5fe4-46d9-bacf-d550fb313cf3",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C73",
+      "claim": "Akt is regulated by both insulin receptor (InR) and PDGF/VEGF receptor (Pvr).",
+      "claim_type": "EXPLICIT",
+      "source": "As Akt is regulated by both insulin receptor (InR) and PDGF/VEGF receptor (Pvr) (Sopko et al., 2015), we examined whether InR and Pvr are involved in CG5399 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sopko et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "7301bb8f-f6cf-4476-99f9-7aae21cb0b7a",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C74",
+      "claim": "Knockdown of InR or Pvr inhibited upregulation of phospho-Akt and phospho-S6 induced by CG5399 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of InR or Pvr inhibited upregulation of phospho-Akt and phospho-S6 induced by CG5399 overexpression (Figure 3D, Figure 3\u2014figure supplement 1B), suggesting that CG5399 activates Akt-mTOR via InR and Pvr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D and Figure 3\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "1d709ee1-49ad-406c-a830-05347931a97c",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C75",
+      "claim": "CG5399 activates Akt-mTOR via InR and Pvr.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of InR or Pvr inhibited upregulation of phospho-Akt and phospho-S6 induced by CG5399 overexpression (Figure 3D, Figure 3\u2014figure supplement 1B), suggesting that CG5399 activates Akt-mTOR via InR and Pvr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental data shown in Figure 3D and Figure 3\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "8658b2a6-13ab-4227-8be8-3e05b639e4ef",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C76",
+      "claim": "Higher phospho-InR levels were observed in CG5399-overexpressing cells in a normal medium without insulin stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, higher phospho-InR levels were also observed in CG5399-overexpressing cells (Figure 3E) in a normal medium without insulin stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "300d6a4b-5625-4425-a354-368a8d2253cf",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C77",
+      "claim": "The activation of InR-Akt-mTOR signaling in S2R+ cells was observed with CG5399 ORF overexpression by co-transfecting pUAS-CG5399 and pActin-Gal4 vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the activation of InR-Akt-mTOR signaling in S2R+ cells was also observed with CG5399 ORF overexpression by co-transfecting pUAS-CG5399 and pActin-Gal4 vectors (Figure 3F), further excluding the possibility that off-targets of sgRNAs contribute to the phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "b983afa9-094a-4406-b8d2-ae2213370950",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C78",
+      "claim": "CG5399 overexpression activates RTK-Akt-mTOR signaling in a normal medium without insulin stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate that CG5399 overexpression activates RTK-Akt-mTOR signaling in a normal medium without insulin stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "37b4ea19-37f5-427b-b93a-21ef1f0fd43e",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C79",
+      "claim": "Insulin receptors form covalent homodimers at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Insulin receptors form covalent homodimers at the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "77eff276-7b13-434d-be4e-f8753956c2ee",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C80",
+      "claim": "Upon insulin binding, the ectodomain of InR changes from the inverted U-shape structure to the T-shape structure, facilitating the proximity and autophosphorylation of the cytoplasmic kinase domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon insulin binding, the ectodomain of InR changes from the inverted U-shape structure to the T-shape structure, facilitating the proximity and autophosphorylation of the cytoplasmic kinase domains (Gutmann et al., 2018; Scapin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "7f81bb00-995b-4f48-ac62-01d0c7ccdaaa",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C81",
+      "claim": "FBS is a biological product that might contain a trace amount of insulin and insulin-like growth factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The Schneider medium only consists of amino acids and inorganic salts while FBS is a biological product that might contain a trace amount of insulin and insulin-like growth factors (Tu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "81ef02c9-4c04-4e3e-9ad2-99f39908c81f",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C82",
+      "claim": "Increase of phospho-InR and phospho-Akt in CG5399-overexpressing cells could still be observed after serum starvation for 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Increase of phospho-InR and phospho-Akt in CG5399-overexpressing cells could still be observed after serum starvation for 2 hr (Figure 3\u2014figure supplement 1C), suggesting InR activation by CG5399 overexpression does not require insulin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "0e680682-e45e-4874-8132-db0e84d76ab2",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C83",
+      "claim": "InR activation by CG5399 overexpression does not require insulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Increase of phospho-InR and phospho-Akt in CG5399-overexpressing cells could still be observed after serum starvation for 2 hr (Figure 3\u2014figure supplement 1C), suggesting InR activation by CG5399 overexpression does not require insulin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental data shown in Figure 3\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "a87808f6-6d49-4ad9-a387-f0a7d4115ef7",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C84",
+      "claim": "Structure prediction of CG5399 by AlphaFold revealed a highly conserved barrel structure formed by eight beta-sheets as a putative ligand pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure prediction of CG5399 by AlphaFold revealed a highly conserved barrel structure formed by eight beta-sheets as a putative ligand pocket (Figure 4\u2014figure supplement 1A), similar to the crystal structures of lipocalins in other species (Breustedt et al., 2005; Lakshmi et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational prediction shown in Figure 4\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "14be1468-305b-43b2-87a4-728962882e51",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C85",
+      "claim": "The barrel structure of CG5399 is similar to the crystal structures of lipocalins in other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure prediction of CG5399 by AlphaFold revealed a highly conserved barrel structure formed by eight beta-sheets as a putative ligand pocket (Figure 4\u2014figure supplement 1A), similar to the crystal structures of lipocalins in other species (Breustedt et al., 2005; Lakshmi et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison with published structures from Breustedt et al., 2005 and Lakshmi et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "b59bcca8-bdec-4ff0-ae1f-7e17f83e1882",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C86",
+      "claim": "Molecular docking simulation indicated that cholesterol can be inserted into the barrel structure of CG5399.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular docking simulation indicated that cholesterol can be inserted into the barrel structure of CG5399 (Figure 4\u2014figure supplement 1B), suggesting that cholesterol might be a substrate of CG5399.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational docking simulation shown in Figure 4\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "55c3ff44-cd7b-4663-a6c9-b2f3912698eb",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C87",
+      "claim": "Cholesterol might be a substrate of CG5399.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular docking simulation indicated that cholesterol can be inserted into the barrel structure of CG5399 (Figure 4\u2014figure supplement 1B), suggesting that cholesterol might be a substrate of CG5399.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from computational docking simulation shown in Figure 4\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "ba4d4ef5-e61d-4d1a-9d02-b2202662e81e",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C88",
+      "claim": "Methyl-beta-cyclodextrin (M\u03b2CD) is a heptasaccharide with a high affinity to cholesterol and has been widely used to manipulate membrane cholesterol content.",
+      "claim_type": "EXPLICIT",
+      "source": "M\u03b2CD is a heptasaccharide with a high affinity to cholesterol and has been widely used to manipulate membrane cholesterol content (Zidovetzki and Levitan, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zidovetzki and Levitan, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "87ec45eb-be59-4de5-a3e4-962ca06f60ea",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C89",
+      "claim": "M\u03b2CD treatment eliminated the increase of phospho-InR, phospho-Akt, and phospho-S6 in a dose-dependent manner in CG5399-overexpressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "M\u03b2CD treatment eliminated the increase of phospho-InR, phospho-Akt, and phospho-S6 in a dose-dependent manner in CG5399-overexpressing cells (Figure 4A), indicating that activation of InR-Akt-mTOR by CG5399 overexpression requires cholesterol at the membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "59924833-e293-4633-90f3-6eb52ab108d2",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C90",
+      "claim": "Activation of InR-Akt-mTOR by CG5399 overexpression requires cholesterol at the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "M\u03b2CD treatment eliminated the increase of phospho-InR, phospho-Akt, and phospho-S6 in a dose-dependent manner in CG5399-overexpressing cells (Figure 4A), indicating that activation of InR-Akt-mTOR by CG5399 overexpression requires cholesterol at the membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "e32028ca-27c6-47b3-a265-da2e4824bd1e",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C91",
+      "claim": "Supplementation of cholesterol into the cell membrane can rescue the decrease of phospho-Akt induced by M\u03b2CD treatment in CG5399-overexpressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, supplementation of cholesterol into the cell membrane can rescue the decrease of phospho-Akt induced by M\u03b2CD treatment in CG5399-overexpressing cells, excluding the possibility that an off-target effect of M\u03b2CD contributes to the observed effect (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "5cb4d46e-2401-447b-b124-3984cdd10b57",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C92",
+      "claim": "No difference in insulin response was observed in M\u03b2CD treated and untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "No difference in insulin response was observed in M\u03b2CD treated and untreated cells (Figure 4\u2014figure supplement 1D), suggesting that M\u03b2CD treatment does not affect InR function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "a07ca325-24a1-4d03-b406-30043697ca7a",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C93",
+      "claim": "M\u03b2CD treatment does not affect InR function.",
+      "claim_type": "EXPLICIT",
+      "source": "No difference in insulin response was observed in M\u03b2CD treated and untreated cells (Figure 4\u2014figure supplement 1D), suggesting that M\u03b2CD treatment does not affect InR function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental data shown in Figure 4\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "c9235387-d476-425b-8191-04c334024d0c",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C94",
+      "claim": "Direct supplementation of cholesterol to the cell membrane activated InR-Akt-mTOR signaling in wild-type S2R+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, direct supplementation of cholesterol to the cell membrane activated InR-Akt-mTOR signaling in wild-type S2R+ cells (Figure 4B), indicating that an increase in the level of cholesterol at the cell membrane was able to activate InR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "34e4d558-2ee1-45a9-b055-3c78ad390aec",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C95",
+      "claim": "An increase in the level of cholesterol at the cell membrane was able to activate InR.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, direct supplementation of cholesterol to the cell membrane activated InR-Akt-mTOR signaling in wild-type S2R+ cells (Figure 4B), indicating that an increase in the level of cholesterol at the cell membrane was able to activate InR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "b83009da-3b5f-4e89-b4b4-6f561420c4fd",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C96",
+      "claim": "Cholesterol is required for the formation of different microdomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Cholesterol is required for the formation of different microdomains (Lu and Fairn, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lu and Fairn, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "5c636f85-fe72-4b75-b33b-e38fa54a205e",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C97",
+      "claim": "Knockdown of flotillin genes (Flo1 and Flo2) did not affect phospho-Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of flotillin genes (Flo1 and Flo2) did not affect phospho-Akt, whereas the increase of phospho-InR and phospho-Akt normally observed in CG5399-overexpression cells was dampened by knockdown of clathrin heavy chain (Chc) (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "7a4ce2ca-cb94-4a17-97e1-ea5b4741e6a5",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C98",
+      "claim": "The increase of phospho-InR and phospho-Akt normally observed in CG5399-overexpression cells was dampened by knockdown of clathrin heavy chain (Chc).",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of flotillin genes (Flo1 and Flo2) did not affect phospho-Akt, whereas the increase of phospho-InR and phospho-Akt normally observed in CG5399-overexpression cells was dampened by knockdown of clathrin heavy chain (Chc) (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "3bc2ccee-edd6-4986-8a48-2cdf9275dd2b",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C99",
+      "claim": "InR activation by cholesterol supplementation was eliminated by Chc knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, InR activation by cholesterol supplementation was also eliminated by Chc knockdown (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "afd7c6df-e9be-458d-bff3-bb5ef563ec24",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C100",
+      "claim": "InR-Akt-mTOR signaling activation by CG5399 overexpression requires cholesterol and clathrin-coated pits at the cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that InR-Akt-mTOR signaling activation by CG5399 overexpression requires cholesterol and clathrin-coated pits at the cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "cb80128b-3c4b-4356-8bc2-48789171eabb",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C101",
+      "claim": "The genome-wide dual-sgRNA library captures transcriptional complexity by targeting alternative promoters of the same gene.",
+      "claim_type": "EXPLICIT",
+      "source": "This library also captures transcriptional complexity by targeting alternative promoters of the same gene, making it suitable for screens in different contexts in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the library design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "597a2687-a0df-4528-80d3-73909e4c7c33",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C102",
+      "claim": "In the genome-wide library, each gene is targeted by 4\u20136 dual-sgRNA vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in this library, each gene is targeted by 4\u20136 dual-sgRNA vectors, which helps overcome the inefficient activation by some sgRNAs to some extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the library design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "9eb24b4b-24af-4154-b100-56407477077b",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C103",
+      "claim": "Some dual-sgRNA vectors failed to activate the target genes, possibly due to steric hindrance by pre-existing proteins in the promoter regions, or due to different sgRNA binding efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that some dual-sgRNA vectors failed to activate the target genes (Figure 2F and I), possibly due to steric hindrance by pre-existing proteins in the promoter regions, or due to different sgRNA binding efficiency, which might be optimized by applying machine learning to large screen datasets in the future.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from experimental data with speculative explanation",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "056381a2-a5f5-4f07-b6ea-079dc7b23b8d",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C104",
+      "claim": "Due to the leaky expression of the metallothionein promoter, moderate gene activation was observed without copper induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the leaky expression of this promoter, we observed moderate gene activation without copper induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "a2c05ace-dd9d-4f24-bb89-dd610a007712",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C105",
+      "claim": "sgRNAs targeting areas beyond \u2013600 bp from the TSS in Drosophila lose efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that sgRNAs targeting areas beyond \u2013600 bp from the TSS in Drosophila lose efficiency (Mao et al., 2020), which may alleviate the concern of collateral activation when the sgRNAs target sites are over 600 bp away from the TSS of neighboring genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mao et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "c06dce53-a42e-43e0-bd79-cc2d75e340f8",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C106",
+      "claim": "InR is embedded in the cell membrane and the rearrangement of InR transmembrane domain is crucial for tyrosine kinase domain activation.",
+      "claim_type": "EXPLICIT",
+      "source": "As InR is embedded in the cell membrane and the rearrangement of InR transmembrane domain is crucial for tyrosine kinase domain activation, changing the lipid environment is a reasonable possible mechanism for the regulation of InR activation (Gutmann et al., 2018; Scapin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "78c937d3-0b56-47b6-9747-a636b8238069",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C107",
+      "claim": "Lipid exchange to form ordered domains at cell membranes induces InR autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that lipid exchange to form ordered domains at cell membranes induces InR autophosphorylation (Suresh et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Suresh et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "c7a2d811-fe7c-4715-b39b-b9a37a7793ea",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C108",
+      "claim": "Higher InR activity was observed in CG5399-overexpressing cells without insulin stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiment, we observed higher InR activity in CG5399-overexpressing cells without insulin stimulation, suggesting that InR activation can be regulated by the lipid environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "82a361d5-219e-461e-ac2c-543696009c9f",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C109",
+      "claim": "InR activation can be regulated by the lipid environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiment, we observed higher InR activity in CG5399-overexpressing cells without insulin stimulation, suggesting that InR activation can be regulated by the lipid environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "b83a0806-7674-47fc-97b1-d308e409fd32",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C110",
+      "claim": "CG8468, CG5399, and CG9932 are novel rapamycin resistance genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The screens identified three genes as novel rapamycin resistance genes: a member of the SLC16 family of monocarboxylate transporters (CG8468), a member of the lipocalin protein family (CG5399), and a zinc finger C2H2 transcription factor (CG9932).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Primary finding from the screen experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "2e885d9d-f89f-441f-b0bc-515a5502a114",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C111",
+      "claim": "CG5399 is predicted to have a transmembrane helix at the C-terminus by PredictProtein.",
+      "claim_type": "EXPLICIT",
+      "source": "CG5399 is predicted to have a transmembrane helix at the C-terminus by PredictProtein and be located on the cell membrane by DeepLoc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational prediction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "7a03fb45-73af-4996-9fa4-eb3ee4bf5ff8",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "claim_id": "C112",
+      "claim": "CG5399 is predicted to be located on the cell membrane by DeepLoc.",
+      "claim_type": "EXPLICIT",
+      "source": "CG5399 is predicted to have a transmembrane helix at the C-terminus by PredictProtein and be located on the cell membrane by DeepLoc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational prediction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "64fb3ba8-fe7a-438a-9038-058dd822b90e",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The SAM complex mediates transcriptional activation in Drosophila S2R+ cells in a copper-inducible manner, with robust upregulation of target genes (Jon25Biii, Sdr, CG9877) in the presence of copper and moderate activation without copper due to leaky promoter expression. The system shows specificity, activating CG9877 without affecting the nearby divergent gene CG13538.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 and C18 provide direct experimental evidence from qPCR and Figure 1B-C showing robust gene activation with copper and specificity for target genes. Claim C14 provides a reasonable explanation for leaky expression. Claim C19 appropriately qualifies the specificity finding to 'at least in some divergent gene pairs.' The experimental design includes appropriate controls (empty vector, no copper conditions).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "e30c947d-e1bc-4fd8-a380-c2a0b5cb47c8",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A focused CRISPRa screen with 6335 sgRNAs targeting 652 genes identified genes affecting cell fitness (scyl, Cyp12a4 depleted) and rapamycin resistance (CG8468 enriched at 1 nM rapamycin), demonstrating the feasibility of pooled CRISPRa screening in Drosophila cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C31-32 provide statistical evidence (FDR<0.05) for specific hits with appropriate controls (DMSO vs rapamycin, time course). Claim C29 validates the scyl finding against prior literature. The lack of hits at 0.1 nM (C33) is explained by biological reasoning. However, the focused screen only identified one rapamycin resistance gene, which is a limited result for demonstrating broad feasibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "fa034287-528b-4acd-b04f-626ee0b315f7",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A genome-wide dual-sgRNA library was constructed containing 84,143 vectors targeting 13,293 protein-coding genes and 2332 non-coding genes, with high quality metrics (98.5% representation, 15.5-fold difference between 10th and 90th percentiles) comparable to published libraries. The library design includes 4-6 dual-sgRNA vectors per gene and targets alternative promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 provide quantitative metrics for library quality with appropriate comparison to published standards (Sanjana et al., 2014). The library design features (C35, C101-C102) are clearly described. The quality metrics indicate good library construction, though the 15.5-fold representation difference is substantial and could affect screen sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "809ce306-6871-49e6-a1ef-ef4fb5288350",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The genome-wide CRISPRa screen identified known rapamycin resistance genes (Pka-C3, Cdc25) and three novel candidates (CG8468, CG5399, CG9932) that were significantly enriched (FDR<0.05) in both replicates. The screen also identified genes affecting cell fitness, including scyl, consistent with the focused screen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 show reproducibility across replicates with statistical significance (FDR<0.05). Claims C43-C46 validate the screen by identifying known rapamycin resistance genes with literature support. Claims C47-C51 identify novel candidates with appropriate statistical thresholds and consistency between focused and genome-wide screens (CG8468). The identification of both known and novel genes supports screen validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "b4911231-f0e7-4999-915c-5fee55929dcb",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Validation experiments confirmed that dual-sgRNA vectors showed variable activation efficiency, with enrichment in the screen highly correlated with target activation efficiency. Only vectors that efficiently activated target genes conferred rapamycin resistance in competition assays, as measured by GFP proportion changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 provide experimental validation through multiple approaches (qPCR for activation, NGS for enrichment, flow cytometry for competition assays) with appropriate controls (empty vector, inefficient vectors). The correlation between activation efficiency and enrichment (C54) strengthens confidence in the screen results. However, C53 provides only speculative explanations for variable efficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "94d3cbda-4053-4d24-91a1-d514f81a38ac",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CG5399 overexpression dramatically elevated phospho-S6 levels in the presence of rapamycin compared to controls, while CG8468 did not show this effect. CG9932 overexpression also increased phospho-S6 levels, consistent with its human ortholog REST activating Akt.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 provide direct experimental evidence with appropriate controls (wild-type SAM cells, empty vector). The differential effects on phospho-S6 (C61 vs C62) help distinguish mechanisms. However, C63 is speculative about CG8468's mechanism, and C64-C65 rely on analogy to a human ortholog which may not be directly applicable to Drosophila.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "b852c3eb-f49e-4955-a470-bcc7fc91b400",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CG5399 overexpression activates the RTK-Akt-mTOR signaling pathway in normal medium without insulin stimulation, acting through PI3K and requiring both InR and Pvr. This was demonstrated by elevated phospho-S6, phospho-Akt, and phospho-InR levels, with knockdown experiments confirming specificity and pathway dependencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C78 provide comprehensive mechanistic evidence through multiple complementary approaches: overexpression (C66-C68, C76), knockdown validation (C69, C71, C74), and ORF overexpression (C77). The pathway is systematically dissected from receptors (InR, Pvr) through PI3K to Akt and mTOR. Controls include multiple independent dsRNAs and different overexpression methods. The evidence converges on a coherent mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "808f3a2d-b56d-43b3-94e2-63808dbe7c6e",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "InR activation by CG5399 overexpression does not require insulin, as demonstrated by persistent phospho-InR and phospho-Akt elevation after serum starvation for 2 hours, despite potential trace insulin in FBS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 provides direct experimental evidence with serum starvation. Claims C79-C81 provide appropriate biological context about InR structure and potential confounders (insulin in FBS). However, 2 hours of serum starvation may not be sufficient to completely deplete all insulin/IGF signaling, and the experiment could be strengthened with longer starvation or insulin receptor blocking antibodies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "26dcad34-14ea-4535-bf64-618dbc6ea1bf",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Computational analysis revealed that CG5399 has a conserved lipocalin barrel structure formed by eight beta-sheets, similar to lipocalins in other species. Molecular docking simulation indicated cholesterol can insert into this structure, suggesting cholesterol as a potential substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C86 provide computational predictions (AlphaFold structure, molecular docking) but lack experimental validation. While the structural similarity to known lipocalins (C85) is supported by citations, the cholesterol binding prediction (C86-C87) is purely computational. Molecular docking can produce false positives, and the claim that cholesterol 'might be a substrate' (C87) is appropriately qualified as speculative but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "102a7d60-5aff-4e17-b43e-6d299d668a6d",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Activation of InR-Akt-mTOR signaling by CG5399 overexpression requires cholesterol at the membrane, as demonstrated by dose-dependent elimination of phospho-InR/Akt/S6 with M\u03b2CD treatment, rescue by cholesterol supplementation, and direct activation of the pathway by cholesterol supplementation in wild-type cells. M\u03b2CD treatment does not affect normal InR function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C95 provide strong experimental evidence through multiple complementary approaches: cholesterol depletion (C89), rescue experiments (C91), direct supplementation (C94), and controls for M\u03b2CD specificity (C92-C93). The dose-dependent effect (C89) and bidirectional manipulation (depletion and supplementation) strengthen the conclusion. However, M\u03b2CD can have off-target effects beyond cholesterol depletion, and the insulin response test (C92) may not fully exclude all potential off-target effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "857fffeb-42ab-48e6-a28b-7173fa862b4f",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "InR-Akt-mTOR signaling activation by CG5399 overexpression requires clathrin-coated pits but not flotillin-coated microdomains at the cell membrane. Knockdown of clathrin heavy chain (Chc) dampened the increase in phospho-InR and phospho-Akt in CG5399-overexpressing cells and eliminated InR activation by cholesterol supplementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C99 provide experimental evidence distinguishing between different membrane microdomains through selective knockdown experiments. The requirement for clathrin but not flotillin (C97-C98) is clearly demonstrated. Claim C99 shows that cholesterol-mediated activation also requires clathrin, linking the two mechanisms. However, the experiments use only knockdown approaches; pharmacological inhibitors of clathrin-mediated endocytosis could provide additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "324f12f3-2568-4b0e-91cf-0eef30cc1070",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Some dual-sgRNA vectors failed to activate target genes, possibly due to steric hindrance or different sgRNA binding efficiency. The metallothionein promoter showed leaky expression causing moderate gene activation without copper induction. Previous work showed sgRNAs lose efficiency beyond -600 bp from the TSS in Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C103 acknowledges an important limitation with observational evidence but only speculative explanations. Claim C104 is directly observed in the data. Claim C105 is supported by citation to prior work (Mao et al., 2020). These are honest assessments of system limitations that affect interpretation of negative results and potential for collateral activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "816e764f-d33e-420e-9434-7201ca493abd",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "InR activation can be regulated by the lipid environment, as higher InR activity was observed in CG5399-overexpressing cells without insulin stimulation. This is consistent with prior work showing that InR transmembrane domain rearrangement is crucial for activation and that lipid exchange to form ordered domains induces InR autophosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 provide appropriate literature context for the mechanism. Claim C108 provides the experimental observation. Claim C109 is a reasonable inference connecting the experimental data to the mechanistic framework. However, the study does not directly demonstrate lipid domain formation or InR transmembrane domain rearrangement, relying instead on inference from prior work in other systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "97f97309-af90-4ea8-9106-a847be18e51a",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CG5399 is predicted to have a transmembrane helix at the C-terminus and be located on the cell membrane based on computational predictions by PredictProtein and DeepLoc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C111-C112 are purely computational predictions without experimental validation. While these predictions are consistent with the proposed mechanism, they lack experimental confirmation through techniques such as membrane fractionation, immunofluorescence, or protease protection assays. Computational predictions of transmembrane domains and localization can have significant error rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "76a1bc2f-345d-427c-b130-a8118cd9eb90",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "About half of Drosophila genes lack functional characterization. While genome-wide LOF screens have been extensively used in Drosophila, genome-wide GOF screens have not been feasible due to lack of reagents. Current cDNA library approaches only cover a subset of the genome. CRISPRa using the SAM complex has been used for genome-wide screens in mammalian cells but not tested in Drosophila cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide appropriate background context supported by multiple citations to establish the gap in the field. These claims accurately represent the state of knowledge and justify the need for the current study. The claims are primarily descriptive of prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "5ba83776-2ca8-4589-9a08-5522e69451b3",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Lentivirus vectors are extremely inefficient in Drosophila cells, necessitating alternative library delivery methods. A pooled library delivery method based on site-specific recombination was previously established. Rapamycin is an allosteric mTOR inhibitor that inhibits Drosophila S2R+ cell proliferation in a dose-dependent manner, with partial inhibition at 0.1 nM and almost complete inhibition at 1 nM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 provide established background knowledge with appropriate citations. Claims C24-C25 provide experimental characterization of the screening conditions with dose-response data (Figure 2\u2014figure supplement 1B). This establishes the biological basis for the screen design and choice of rapamycin concentrations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "2067ab47-f490-495b-b13b-0e8954cce7fe",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In the Drosophila genome, 32% of genes form divergent gene pairs with transcriptional start sites <1 kb apart. CG9877 and CG13538 form such a pair with TSSs 908 bp apart.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C16 is supported by citation to Yang and Yu, 2009. Claim C17 is a factual statement about a specific gene pair used as a test case. These claims provide important context for evaluating the specificity of the CRISPRa system and potential for collateral activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    },
+    {
+      "id": "151a0293-8f68-4982-8255-5dc22f2228d5",
+      "content_id": "f9f2a7b5-53b6-45b4-aa18-1dda0b377032",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "CG8468 is a member of the SLC16 family of monocarboxylate transporters, CG5399 encodes a lipocalin protein family member implicated in lipid binding and transport, and CG9932 encodes a zinc finger C2H2 transcription factor. CG5399 and CG9932 were not included in the focused library.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 provide gene annotations based on established knowledge. Claim C52 is a factual statement about library design. These are descriptive claims that provide context for interpreting the screen results and explain why some hits were only found in the genome-wide screen.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:27:18.471869Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8f310e24-1fe4-43ab-b977-4acf4668fa8d",
+      "result_id": "64fb3ba8-fe7a-438a-9038-058dd822b90e"
+    },
+    {
+      "claim_id": "5da02d27-80e7-404a-931d-e5e6ccf7ae80",
+      "result_id": "64fb3ba8-fe7a-438a-9038-058dd822b90e"
+    },
+    {
+      "claim_id": "5649bbad-ec03-4c72-82ac-0867dd7de6f3",
+      "result_id": "64fb3ba8-fe7a-438a-9038-058dd822b90e"
+    },
+    {
+      "claim_id": "4019b026-4fb1-4c81-843c-be25a8ce4d27",
+      "result_id": "64fb3ba8-fe7a-438a-9038-058dd822b90e"
+    },
+    {
+      "claim_id": "e3e048ec-0295-4d59-8f31-12b167dbcaee",
+      "result_id": "64fb3ba8-fe7a-438a-9038-058dd822b90e"
+    },
+    {
+      "claim_id": "815d7681-9b79-43dd-b5b0-6f0ae807e718",
+      "result_id": "64fb3ba8-fe7a-438a-9038-058dd822b90e"
+    },
+    {
+      "claim_id": "5b9e68ad-126a-4357-875f-5019036801ff",
+      "result_id": "e30c947d-e1bc-4fd8-a380-c2a0b5cb47c8"
+    },
+    {
+      "claim_id": "b3475464-dcaa-4b27-9b09-474924858bba",
+      "result_id": "e30c947d-e1bc-4fd8-a380-c2a0b5cb47c8"
+    },
+    {
+      "claim_id": "777e7ed0-e3dd-4bc4-aa09-a5add29850da",
+      "result_id": "e30c947d-e1bc-4fd8-a380-c2a0b5cb47c8"
+    },
+    {
+      "claim_id": "45690a3e-b72b-4871-bf82-97d1a963022b",
+      "result_id": "e30c947d-e1bc-4fd8-a380-c2a0b5cb47c8"
+    },
+    {
+      "claim_id": "106fd1dc-05e3-4957-9995-f0b71b100f33",
+      "result_id": "e30c947d-e1bc-4fd8-a380-c2a0b5cb47c8"
+    },
+    {
+      "claim_id": "788d2fea-64fe-4270-a364-96fd63e546f9",
+      "result_id": "e30c947d-e1bc-4fd8-a380-c2a0b5cb47c8"
+    },
+    {
+      "claim_id": "055bac49-7c18-42da-90b4-4c907cc26d62",
+      "result_id": "e30c947d-e1bc-4fd8-a380-c2a0b5cb47c8"
+    },
+    {
+      "claim_id": "143b86b2-29da-4bc5-bf91-ff4ff3265eca",
+      "result_id": "e30c947d-e1bc-4fd8-a380-c2a0b5cb47c8"
+    },
+    {
+      "claim_id": "f536425b-3254-40e1-b639-28738ae6671a",
+      "result_id": "e30c947d-e1bc-4fd8-a380-c2a0b5cb47c8"
+    },
+    {
+      "claim_id": "b4745637-2da3-4cd0-84d2-ebb077f79d77",
+      "result_id": "fa034287-528b-4acd-b04f-626ee0b315f7"
+    },
+    {
+      "claim_id": "34081ddc-9fa1-48a5-9e28-4c007dfbabd6",
+      "result_id": "fa034287-528b-4acd-b04f-626ee0b315f7"
+    },
+    {
+      "claim_id": "1a2484cd-db9b-4247-8b10-0a99bc364d97",
+      "result_id": "fa034287-528b-4acd-b04f-626ee0b315f7"
+    },
+    {
+      "claim_id": "ac810f01-64e1-4e80-89f4-a6aca8fb4338",
+      "result_id": "fa034287-528b-4acd-b04f-626ee0b315f7"
+    },
+    {
+      "claim_id": "91583315-c5a2-443d-ad33-9f0b47be47dc",
+      "result_id": "fa034287-528b-4acd-b04f-626ee0b315f7"
+    },
+    {
+      "claim_id": "cb80128b-3c4b-4356-8bc2-48789171eabb",
+      "result_id": "fa034287-528b-4acd-b04f-626ee0b315f7"
+    },
+    {
+      "claim_id": "597a2687-a0df-4528-80d3-73909e4c7c33",
+      "result_id": "fa034287-528b-4acd-b04f-626ee0b315f7"
+    },
+    {
+      "claim_id": "b6ed8481-428e-45a2-ba75-169e5f0609e7",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "fbab63d9-2dcc-4abb-a9b5-6dcfe4870b23",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "9f9aaf4d-89a4-4660-b872-60cf8d3ca0cc",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "1e905d70-dc8c-48e7-8a4a-611566d1b276",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "373e7eb3-e05d-431e-9d18-5044e8fa1b6a",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "a79848da-3cc9-461f-9c96-4703816f6398",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "8dc568c3-3576-459a-bb31-13529883dc68",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "0a3d7c74-eed7-4275-a42d-f9d20a69ecbe",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "d73724a3-57d6-4a3a-85c8-6597998a39fa",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "dfb5c781-2455-4d01-8550-291842f23430",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "d1997ce1-93ae-4aa9-bfdd-9cfd77904eb8",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "e1d301e8-e451-4a29-b138-c7e8d2794995",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "b83a0806-7674-47fc-97b1-d308e409fd32",
+      "result_id": "809ce306-6871-49e6-a1ef-ef4fb5288350"
+    },
+    {
+      "claim_id": "6d8fa721-88fb-4fa6-b739-8e3fcce816a9",
+      "result_id": "b4911231-f0e7-4999-915c-5fee55929dcb"
+    },
+    {
+      "claim_id": "e19d0c90-9e09-48dd-ac53-a1347de26b08",
+      "result_id": "b4911231-f0e7-4999-915c-5fee55929dcb"
+    },
+    {
+      "claim_id": "8e8d3d75-d4aa-4bc1-8802-8d14f56f8317",
+      "result_id": "b4911231-f0e7-4999-915c-5fee55929dcb"
+    },
+    {
+      "claim_id": "2a1f2bb2-019a-43e8-8382-cede1d888b14",
+      "result_id": "b4911231-f0e7-4999-915c-5fee55929dcb"
+    },
+    {
+      "claim_id": "a822e33a-762a-4049-be07-78eca759fda9",
+      "result_id": "b4911231-f0e7-4999-915c-5fee55929dcb"
+    },
+    {
+      "claim_id": "7c44c3c5-af0b-4aa3-a291-e4fb6aa42733",
+      "result_id": "94d3cbda-4053-4d24-91a1-d514f81a38ac"
+    },
+    {
+      "claim_id": "9e771a74-c89a-48c1-bdb2-247ae0288653",
+      "result_id": "94d3cbda-4053-4d24-91a1-d514f81a38ac"
+    },
+    {
+      "claim_id": "0700c816-bb51-478f-91aa-b6faa669e204",
+      "result_id": "94d3cbda-4053-4d24-91a1-d514f81a38ac"
+    },
+    {
+      "claim_id": "5d646045-3556-4d3b-9a36-f522aa1a188a",
+      "result_id": "94d3cbda-4053-4d24-91a1-d514f81a38ac"
+    },
+    {
+      "claim_id": "33d07343-8bd1-4e52-b8b2-2ac0b0828558",
+      "result_id": "94d3cbda-4053-4d24-91a1-d514f81a38ac"
+    },
+    {
+      "claim_id": "3833dc72-32f5-49fe-ae47-4fc9287b6509",
+      "result_id": "94d3cbda-4053-4d24-91a1-d514f81a38ac"
+    },
+    {
+      "claim_id": "356ce99a-2381-4aba-ade0-26921d14db54",
+      "result_id": "94d3cbda-4053-4d24-91a1-d514f81a38ac"
+    },
+    {
+      "claim_id": "1669964a-bd9d-4123-b5cc-80095ea899e0",
+      "result_id": "94d3cbda-4053-4d24-91a1-d514f81a38ac"
+    },
+    {
+      "claim_id": "0376e270-fa7a-4b04-9952-27d94871eedf",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "8cb2da19-30dd-4381-b6e5-534046fae75e",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "d58f4628-afc5-4c4c-bd95-ec32b17926c2",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "41717f98-0497-4d3f-b970-7b68f1043a80",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "6368342c-3897-4776-a8af-9417157c62a2",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "bd5328cf-f7c1-4c6b-b633-9cb76b4b52f8",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "411d3b8d-1f94-464c-bfda-466f15728791",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "707d2808-5fe4-46d9-bacf-d550fb313cf3",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "7301bb8f-f6cf-4476-99f9-7aae21cb0b7a",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "1d709ee1-49ad-406c-a830-05347931a97c",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "8658b2a6-13ab-4227-8be8-3e05b639e4ef",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "300d6a4b-5625-4425-a354-368a8d2253cf",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "b983afa9-094a-4406-b8d2-ae2213370950",
+      "result_id": "b852c3eb-f49e-4955-a470-bcc7fc91b400"
+    },
+    {
+      "claim_id": "37b4ea19-37f5-427b-b93a-21ef1f0fd43e",
+      "result_id": "808f3a2d-b56d-43b3-94e2-63808dbe7c6e"
+    },
+    {
+      "claim_id": "77eff276-7b13-434d-be4e-f8753956c2ee",
+      "result_id": "808f3a2d-b56d-43b3-94e2-63808dbe7c6e"
+    },
+    {
+      "claim_id": "7f81bb00-995b-4f48-ac62-01d0c7ccdaaa",
+      "result_id": "808f3a2d-b56d-43b3-94e2-63808dbe7c6e"
+    },
+    {
+      "claim_id": "81ef02c9-4c04-4e3e-9ad2-99f39908c81f",
+      "result_id": "808f3a2d-b56d-43b3-94e2-63808dbe7c6e"
+    },
+    {
+      "claim_id": "0e680682-e45e-4874-8132-db0e84d76ab2",
+      "result_id": "808f3a2d-b56d-43b3-94e2-63808dbe7c6e"
+    },
+    {
+      "claim_id": "a87808f6-6d49-4ad9-a387-f0a7d4115ef7",
+      "result_id": "26dcad34-14ea-4535-bf64-618dbc6ea1bf"
+    },
+    {
+      "claim_id": "14be1468-305b-43b2-87a4-728962882e51",
+      "result_id": "26dcad34-14ea-4535-bf64-618dbc6ea1bf"
+    },
+    {
+      "claim_id": "b59bcca8-bdec-4ff0-ae1f-7e17f83e1882",
+      "result_id": "26dcad34-14ea-4535-bf64-618dbc6ea1bf"
+    },
+    {
+      "claim_id": "55c3ff44-cd7b-4663-a6c9-b2f3912698eb",
+      "result_id": "26dcad34-14ea-4535-bf64-618dbc6ea1bf"
+    },
+    {
+      "claim_id": "ba4d4ef5-e61d-4d1a-9d02-b2202662e81e",
+      "result_id": "102a7d60-5aff-4e17-b43e-6d299d668a6d"
+    },
+    {
+      "claim_id": "87ec45eb-be59-4de5-a3e4-962ca06f60ea",
+      "result_id": "102a7d60-5aff-4e17-b43e-6d299d668a6d"
+    },
+    {
+      "claim_id": "59924833-e293-4633-90f3-6eb52ab108d2",
+      "result_id": "102a7d60-5aff-4e17-b43e-6d299d668a6d"
+    },
+    {
+      "claim_id": "e32028ca-27c6-47b3-a265-da2e4824bd1e",
+      "result_id": "102a7d60-5aff-4e17-b43e-6d299d668a6d"
+    },
+    {
+      "claim_id": "5cb4d46e-2401-447b-b124-3984cdd10b57",
+      "result_id": "102a7d60-5aff-4e17-b43e-6d299d668a6d"
+    },
+    {
+      "claim_id": "a07ca325-24a1-4d03-b406-30043697ca7a",
+      "result_id": "102a7d60-5aff-4e17-b43e-6d299d668a6d"
+    },
+    {
+      "claim_id": "c9235387-d476-425b-8191-04c334024d0c",
+      "result_id": "102a7d60-5aff-4e17-b43e-6d299d668a6d"
+    },
+    {
+      "claim_id": "34e4d558-2ee1-45a9-b055-3c78ad390aec",
+      "result_id": "102a7d60-5aff-4e17-b43e-6d299d668a6d"
+    },
+    {
+      "claim_id": "b83009da-3b5f-4e89-b4b4-6f561420c4fd",
+      "result_id": "857fffeb-42ab-48e6-a28b-7173fa862b4f"
+    },
+    {
+      "claim_id": "5c636f85-fe72-4b75-b33b-e38fa54a205e",
+      "result_id": "857fffeb-42ab-48e6-a28b-7173fa862b4f"
+    },
+    {
+      "claim_id": "7a4ce2ca-cb94-4a17-97e1-ea5b4741e6a5",
+      "result_id": "857fffeb-42ab-48e6-a28b-7173fa862b4f"
+    },
+    {
+      "claim_id": "3bc2ccee-edd6-4986-8a48-2cdf9275dd2b",
+      "result_id": "857fffeb-42ab-48e6-a28b-7173fa862b4f"
+    },
+    {
+      "claim_id": "afd7c6df-e9be-458d-bff3-bb5ef563ec24",
+      "result_id": "857fffeb-42ab-48e6-a28b-7173fa862b4f"
+    },
+    {
+      "claim_id": "9eb24b4b-24af-4154-b100-56407477077b",
+      "result_id": "324f12f3-2568-4b0e-91cf-0eef30cc1070"
+    },
+    {
+      "claim_id": "056381a2-a5f5-4f07-b6ea-079dc7b23b8d",
+      "result_id": "324f12f3-2568-4b0e-91cf-0eef30cc1070"
+    },
+    {
+      "claim_id": "a2c05ace-dd9d-4f24-bb89-dd610a007712",
+      "result_id": "324f12f3-2568-4b0e-91cf-0eef30cc1070"
+    },
+    {
+      "claim_id": "c06dce53-a42e-43e0-bd79-cc2d75e340f8",
+      "result_id": "816e764f-d33e-420e-9434-7201ca493abd"
+    },
+    {
+      "claim_id": "78c937d3-0b56-47b6-9747-a636b8238069",
+      "result_id": "816e764f-d33e-420e-9434-7201ca493abd"
+    },
+    {
+      "claim_id": "c7a2d811-fe7c-4715-b39b-b9a37a7793ea",
+      "result_id": "816e764f-d33e-420e-9434-7201ca493abd"
+    },
+    {
+      "claim_id": "82a361d5-219e-461e-ac2c-543696009c9f",
+      "result_id": "816e764f-d33e-420e-9434-7201ca493abd"
+    },
+    {
+      "claim_id": "2e885d9d-f89f-441f-b0bc-515a5502a114",
+      "result_id": "97f97309-af90-4ea8-9106-a847be18e51a"
+    },
+    {
+      "claim_id": "7a03fb45-73af-4996-9fa4-eb3ee4bf5ff8",
+      "result_id": "97f97309-af90-4ea8-9106-a847be18e51a"
+    },
+    {
+      "claim_id": "3ae009ec-10ed-4cfe-91f9-cc2ce77a571b",
+      "result_id": "76a1bc2f-345d-427c-b130-a8118cd9eb90"
+    },
+    {
+      "claim_id": "c4df86e2-1f9d-470c-8ba7-b25d7f593421",
+      "result_id": "76a1bc2f-345d-427c-b130-a8118cd9eb90"
+    },
+    {
+      "claim_id": "88a8302a-ce42-405d-8dd2-1f6f3fc6ab1e",
+      "result_id": "76a1bc2f-345d-427c-b130-a8118cd9eb90"
+    },
+    {
+      "claim_id": "a103895a-7b26-4074-a3d0-1705322d6408",
+      "result_id": "76a1bc2f-345d-427c-b130-a8118cd9eb90"
+    },
+    {
+      "claim_id": "ed529b2c-53c5-42d1-a20a-6e8372d3f565",
+      "result_id": "76a1bc2f-345d-427c-b130-a8118cd9eb90"
+    },
+    {
+      "claim_id": "013de1b5-7584-484e-abb7-25c1463689c6",
+      "result_id": "76a1bc2f-345d-427c-b130-a8118cd9eb90"
+    },
+    {
+      "claim_id": "13946ba3-cebf-4ce2-9003-827a5a81f9d5",
+      "result_id": "76a1bc2f-345d-427c-b130-a8118cd9eb90"
+    },
+    {
+      "claim_id": "f7c87d18-efb6-4f62-8d41-d15303e7843d",
+      "result_id": "76a1bc2f-345d-427c-b130-a8118cd9eb90"
+    },
+    {
+      "claim_id": "89093473-6b80-4d55-9604-dcc4e92f4b55",
+      "result_id": "5ba83776-2ca8-4589-9a08-5522e69451b3"
+    },
+    {
+      "claim_id": "a3f3ac88-78b5-47fb-a808-fc796bb1337f",
+      "result_id": "5ba83776-2ca8-4589-9a08-5522e69451b3"
+    },
+    {
+      "claim_id": "1b23b8a4-e99e-469a-ae65-f342abdff60a",
+      "result_id": "5ba83776-2ca8-4589-9a08-5522e69451b3"
+    },
+    {
+      "claim_id": "0104148f-c674-4892-b6e2-d893418570fe",
+      "result_id": "5ba83776-2ca8-4589-9a08-5522e69451b3"
+    },
+    {
+      "claim_id": "1a975d45-798c-4279-8f7f-4850c0739b91",
+      "result_id": "5ba83776-2ca8-4589-9a08-5522e69451b3"
+    },
+    {
+      "claim_id": "8fcd86de-52a9-4edd-85bd-e1ab5bcfd94b",
+      "result_id": "5ba83776-2ca8-4589-9a08-5522e69451b3"
+    },
+    {
+      "claim_id": "337c9322-68ab-42f9-be20-f7c2245a95da",
+      "result_id": "2067ab47-f490-495b-b13b-0e8954cce7fe"
+    },
+    {
+      "claim_id": "83a85eea-a279-4448-bc15-43b743988dd6",
+      "result_id": "2067ab47-f490-495b-b13b-0e8954cce7fe"
+    },
+    {
+      "claim_id": "d73724a3-57d6-4a3a-85c8-6597998a39fa",
+      "result_id": "151a0293-8f68-4982-8255-5dc22f2228d5"
+    },
+    {
+      "claim_id": "dfb5c781-2455-4d01-8550-291842f23430",
+      "result_id": "151a0293-8f68-4982-8255-5dc22f2228d5"
+    },
+    {
+      "claim_id": "d1997ce1-93ae-4aa9-bfdd-9cfd77904eb8",
+      "result_id": "151a0293-8f68-4982-8255-5dc22f2228d5"
+    },
+    {
+      "claim_id": "eb919ab5-b192-4436-a8a1-ddd2a61277e4",
+      "result_id": "151a0293-8f68-4982-8255-5dc22f2228d5"
+    }
+  ],
+  "comparisons": []
+}

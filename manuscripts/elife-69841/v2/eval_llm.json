@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Ring attractor models for angular path integration have strong experimental support, but require precisely tuned connectivity whose developmental origin is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the background context for the study. C1 cites established experimental support for ring attractor models, C2 states the theoretical requirement for precise tuning, and C3 identifies the knowledge gap. These are well-supported by citations to prior literature and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C54",
+      "C59"
+    ],
+    "result": "A biologically plausible learning rule based on associating allothetic and idiothetic inputs in compartmentalized HD neurons can develop a path integration network with connectivity similar to the Drosophila central complex that achieves accurate gain-1 path integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C34-C36, C40-C43, C54, and C59 describe the core model and its main results. The model is supported by simulation data (Figures 2-3), comparison with experimental connectivity patterns (C6, C42), and demonstration of accurate path integration (C5, C43, Figure 2C). The learning rule is inspired by prior work on pyramidal neurons (C37-C39) and is demonstrated to be locally implementable. The convergence of learning (Figure 3D) and similarity to biological connectivity (Figure 3C) provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "The mature learned network operates as a quasi-continuous attractor and reproduces key experimental findings including optogenetic stimulation experiments in flies and gain remapping in rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C81-C90 demonstrate that the model reproduces experimental phenomena. The optogenetic stimulation results (C8, C81-C86, Figure 2D) match experiments from Kim et al., 2017, showing both smooth transitions and jumps depending on distance. The quasi-continuous attractor property (C7, C90) is demonstrated by the network's ability to maintain bumps at discrete locations (C89, Figure 2D). Gain remapping (C9) is shown in Figure 4. These results are well-supported by simulation data and comparisons to cited experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The trained network maintains a unique activity bump that tracks heading in both light and darkness, with path integration performance exceeding that of flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C75 describe the network's path integration performance. The presence of a stable bump (C64-C66) and accurate tracking in light (C67) and darkness (C68) are demonstrated in Figure 2A. The quantification of PI errors (C71-C72, Figure 2B) and comparison to fly performance (C73-C75) are supported by simulation data from 1000 trials. The model's superior performance (correlation ~1 vs. 0.3-0.95 in flies) is acknowledged and discussed as representing an idealized scenario.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model exhibits impaired path integration for small angular velocities, matching experimental observations in flies, due to competing goals of maintaining bump stability and movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 describe a specific prediction/feature of the model. The impairment for small velocities (Figure 2C) is explained mechanistically (C78) and matches fly behavior (C79, citing Seelig and Jayaraman, 2015). The network size dependence (C80) provides additional insight. This result is well-supported by simulation data and experimental comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The learned connectivity exhibits local excitation with surrounding inhibition in recurrent connections, and directionally selective excitation/inhibition in HR-to-HD connections, matching experimental observations and enabling path integration across a wide velocity range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C107 describe the learned weight structure. The emergence of surrounding inhibition (C98, C100, Figure 3C) and directionally selective HR connectivity (C102-C104, Figure 3C) are demonstrated in simulations and compared to experimental findings (Turner-Evans et al., 2020). The functional interpretations (C105-C106) are supported by ablation experiments (C107, Figure 3\u2014figure supplement 1) showing impaired high-velocity integration when wide projections are removed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C111",
+      "C113",
+      "C114"
+    ],
+    "result": "Learning converges with residual errors only at bump edges, with early connectivity shaped by Hebbian co-activation reflecting visual input autocorrelation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C113-C114 describe learning dynamics. The localization of final errors to bump edges (C111, Figure 3\u2014figure supplement 2A) is demonstrated. The interpretation of early learning dynamics (C113-C114) as Hebbian imprinting of visual input structure is a reasonable inference from the model's learning rule and is supported by the weight development shown in Figure 3E-F.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "Adding noise to learned connectivity produces performance degradation and side bias similar to biological systems, with different animals expected to show variable bias patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C123 explore the effects of noisy connectivity. The impairment for small velocities (C117, Figure 3\u2014figure supplement 3E), faster error growth, and side bias (C120, Figure 3\u2014figure supplement 3D) are demonstrated in simulations. The mechanistic explanations (C119, C121) are reasonable inferences. The prediction about inter-animal variability (C123) follows logically from the model results, though it remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C133",
+      "C135"
+    ],
+    "result": "The network can rapidly adapt to new path integration gains through synaptic rewiring, with excellent performance for gains between 0.25 and 4.5, by modulating recurrent and HR-to-HD connection strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C135 describe gain adaptation experiments. The rapid convergence to new gains (C126-C127, Figure 4A), excellent performance across a range of gains (C128, C133, Figure 4B and Figure 4\u2014figure supplement 1A), and the pattern of weight changes (C130-C131, Figure 4C-D) are all supported by simulation data. The explanation for high-velocity limitations (C129) is reasonable. This reproduces rodent experiments (Jayakumar et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C45"
+    ],
+    "result": "The model predicts that path integration requires self-supervised learning during development, including plasticity in young animals, and proposes a general framework applicable to non-ring architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C11 and C45 are predictions and theoretical proposals. While the model demonstrates that learning can achieve path integration (supporting the plausibility of C10), the necessity of developmental learning in biological systems remains untested. The prediction of plasticity in young flies (C45) is testable but unverified. The generalizability to non-ring architectures (C11) is a theoretical claim without direct demonstration in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C57",
+      "C58"
+    ],
+    "result": "The model architecture comprises HD cells in a ring and HR cells in two wings with specific connectivity patterns, receiving visual and velocity inputs, with initial 1-to-1 HD-to-HR wiring that can be relaxed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52, C57-C58 describe the model architecture. These are design choices supported by the Drosophila anatomy (Figure 1A) and experimental findings (C48, C52 cite relevant papers). The claim that initial wiring constraints can be relaxed (C58) is supported by Appendix 3 simulations. This is methodological description rather than a scientific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C63"
+    ],
+    "result": "The learning rule is inspired by mammalian pyramidal neuron mechanisms where compartmentalized inputs undergo dendritic gating, and is consistent with predictive plasticity observed in Drosophila conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C63 establish the biological plausibility of the learning rule. The inspiration from pyramidal neurons (C37) and the experimental findings on compartmentalized inputs and dendritic gating (C38-C39) are supported by citations (Larkum, 2013; Urbanczik and Senn, 2014; Doron et al., 2020). The consistency with Drosophila conditioning experiments (C63, citing Zhao et al., 2021) provides additional support for the type of plasticity used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on spatial navigation, path integration, head direction systems, and ring attractor networks establishes the scientific context and identifies gaps in understanding how precise connectivity develops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C33 provide background information and literature review. These claims are well-supported by extensive citations to established work in the field. They accurately represent prior knowledge about spatial navigation (C12-C15), head direction systems (C16-C26), theoretical models (C19-C21, C27-C28), experimental findings in flies (C22-C26, C32) and rodents (C30-C31), and identify knowledge gaps (C29, C33). This is standard background material.",
+    "result_type": "MINOR"
+  }
+]

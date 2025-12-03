@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The study used MEG to record gamma oscillations in 30 human participants viewing equiluminant color stimuli with equalized cone contrasts in DKL space. Source-localized analysis revealed that color-induced gamma responses localized to early visual cortex with a peak in V1, demonstrating that color gamma responses can be studied non-invasively in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C38-C42 collectively describe the experimental design and primary localization finding. The methods are clearly described (equiluminant stimuli, DKL space, n=30, MEG recording), and the localization to V1 is supported by source-level analysis with appropriate citations to beamforming methods. This is a core methodological and technical validation result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C11",
+      "C12",
+      "C43",
+      "C44",
+      "C81",
+      "C82",
+      "C96"
+    ],
+    "result": "When red and green stimuli were equalized for L-M cone contrast in DKL space, induced gamma power in V1 did not differ between the two colors. Statistical analysis including Bayes factor (BF01=7.0) supports the absence of a red bias when cone contrast is properly controlled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C11-C12, C43-C44, C81-C82, and C96 converge on the primary finding that contradicts previous reports of red bias. The statistical support is strong (t-test p=0.89, BF01=7.0), and the experimental design explicitly controlled for the confound identified in prior work. This directly addresses the study's main hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C45",
+      "C83",
+      "C84",
+      "C85",
+      "C97"
+    ],
+    "result": "Blue stimuli on the S-cone axis induced very weak gamma responses (2.2% increase), significantly smaller event-related fields, and poorer change-detection performance compared to other colors, particularly yellow stimuli (15.4% gamma increase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C45, C83-C85, and C97 describe converging evidence for weak S-cone responses across multiple measures (gamma power, ERF amplitude, behavioral performance). Statistical support is provided (t(29)=4.02, p<0.001), and the pattern is consistent across neural and behavioral metrics. This represents a robust secondary finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C100",
+      "C101"
+    ],
+    "result": "After regressing out N70 ERF slope and amplitude to control for input drive differences, the gamma power difference between red and green stimuli remained non-significant (BF01=3.00), while the blue-yellow difference was diminished though not eliminated, suggesting that weaker S-cone input drive may partially explain the asymmetry on the S-(L+M) axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 and C100-C101 describe a control analysis attempting to account for input drive differences. While the L-M axis result is strengthened (BF01=3.00), the S-(L+M) axis result becomes non-significant (p=0.88) after correction, making the interpretation speculative (C87, C101 are marked as speculation). The analysis is appropriate but the conclusion about S-cone input drive remains tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C99"
+    ],
+    "result": "Across color hues, higher change-detection performance correlated with stronger N70 ERF amplitude (67-93 ms, rmax=0.43, p<0.03) and stronger induced gamma power (34-53 Hz ranges). N70 amplitude and gamma power were also correlated with each other (r=-0.38, p<4\u00d710\u207b\u2076), specifically in the gamma band and N70 time window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 and C99 describe correlational relationships between behavioral performance, ERF, and gamma power. Statistical support is provided with appropriate multiple comparison corrections (tmax correction). The specificity to gamma band and N70 component (C91) strengthens the interpretation. These correlations support the link between input drive and gamma power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Participants achieved ~85% accuracy on the change-detection task as intended by the staircase procedure. However, detection thresholds varied significantly across hues (F(7,203)=82.18, p<3\u00d710\u207b\u00b9\u2076), with blue stimuli requiring exceptionally high contrast changes (71%) compared to other colors (20-37%). Reaction times also differed across hues (F(7,203)=9.26, p<7\u00d710\u207b\u00b9\u2070), being fastest for red (509 ms) and slowest for green-yellow (562 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 describe behavioral results with strong statistical support. The staircase successfully achieved target accuracy, and the hue-dependent differences in thresholds and reaction times are well-documented with appropriate statistics. The blue outlier is particularly notable and consistent with the neural findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Both grating and color stimuli induced clear V1 ERFs with an N70 component (57-94 ms) that differed significantly across stimuli (F(3.48,101.04)=30.32, p<3\u00d710\u207b\u00b9\u2075). The N70 was stronger for gratings than colors and strongest for red/green-yellow colors but weakest for blue. N70 slope was significantly shallower for blue compared to other hues, demonstrating approximately equalized stimulus drive across all hues except blue. N70 peak latency was significantly delayed for blue stimuli (88.6 ms) compared to red (77.9 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C65 describe comprehensive ERF characterization with robust statistical support. The N70 component is well-characterized across amplitude, slope, and latency measures. The finding that stimulus drive was equalized except for blue (C62) is critical for interpreting the gamma results. Multiple pairwise comparisons with Holm correction strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Color and grating stimuli induced significant narrowband gamma power increases in early visual cortex, strongest in V1-V4. Color stimuli induced 19% gamma power increases while gratings induced 100% increases (tdifference(29)=8.32, p<4\u00d710\u207b\u2079). Ninety-seven percent of participants showed significant gamma peaks for at least one color and the grating. Notably, 90% of participants showed a second higher gamma peak (~80-100 Hz) for color stimuli, but only 13% showed this for gratings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 describe the basic gamma response characteristics with strong statistical support and high prevalence across participants. The differential presence of a second peak for colors vs. gratings (C72-C73) is a novel observation. Source localization to V1-V4 is well-documented. These findings establish the basic phenomenon under investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C105",
+      "C106"
+    ],
+    "result": "For color stimuli, the frequently observed second gamma peak (80-100 Hz) showed no linear relationship with the first peak frequency (r=0.06, p=0.58), indicating it was unlikely to be a harmonic. This second peak was rare for grating stimuli, suggesting differences in underlying circuits or dynamics between chromatic and achromatic processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 and C105-C106 describe the characterization of the second gamma peak with appropriate statistical testing. The lack of correlation rules out the harmonic hypothesis. However, the mechanistic interpretation about different circuits (C106, C152) remains speculative. The observation itself is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The lower gamma peak frequency differed significantly between grating (51.6 Hz) and color stimuli (45.9 Hz, p<3\u00d710\u207b\u00b3), and these frequencies were correlated across participants (r=0.64, p<3\u00d710\u207b\u2074). However, gamma peak frequencies did not differ significantly between different color pairs (all pHolm>0.36), indicating roughly equalized input drive across colors. The higher gamma peak (~96-97 Hz) showed no differences between grating and colors or across different colors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe gamma peak frequency characteristics with appropriate statistical support. The lack of frequency differences across colors (C78) supports the interpretation of equalized input drive (C79), which is critical for the main conclusions. The correlation between grating and color peak frequencies (C77) suggests common mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The ratio of color change-detection performance between red and green (L/M = 1.48, CI95%=[1.33,1.66]) was consistent with known perceptual variability in L/M luminance contributions (1.5-2.3). However, these behavioral L/M ratios were not correlated with ERF N70 amplitude ratios (\u03c1=0.09, p=0.65, BF01=3.99) or gamma power ratios (\u03c1=-0.17, p=0.38, BF01=3.04) across participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 describe an important control analysis testing whether perceptual variability affects the neural measures. The lack of correlation (with Bayes factors supporting the null) strengthens the conclusion that the neural equalization of red/green responses is not confounded by individual differences in perceptual equiluminance. This is a critical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Off-axis colors along the lime-magenta (green-yellow/red-blue) axis showed stronger gamma power and ERF N70 responses compared to the orange-cyan (red-yellow/green-blue) axis. This is consistent with previous fMRI findings and psychophysical proposals of a cortical color channel along the lime-magenta axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe an observation about off-axis colors with support from prior literature. However, the current study's data supporting this claim (C102) is not quantified with statistics in the provided text. The consistency with prior work (C103-C104) provides convergent validity, but the strength of evidence from the current data alone is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The induced gamma power source-localized as a continuous source over early visual cortex with a peak in V1. However, the data cannot differentiate between a strong V1 source with spatial smearing versus multiple sources in V1-V4 with monotonous power decreases from V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 acknowledge an important limitation of the source localization method. This is an appropriate and honest assessment of what can and cannot be concluded from MEG source localization. The limitation does not undermine the main findings but appropriately qualifies the spatial interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Recruiting 30 participants allowed population-level generalization beyond small primate samples. MEG signals are sensitive to synchronized activity and influenced by dipole location/orientation, not representing total V1 activity. With careful head stabilization, MEG spatial resolution can reach 0.45-7 mm. The similarity between MEG V1 ERFs and macaque intracortical V1 ERPs suggests MEG captures underlying V1 voltage signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 discuss methodological considerations and advantages of the MEG approach. The sample size advantage (C109) is valid for population generalization. The discussion of MEG limitations (C110-C113) is appropriate and well-cited. The spatial resolution claim (C114) and validation against macaque data (C115) are supported by citations. These are important methodological points.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Prior work established that color surfaces induce gamma oscillations in primate V1, with particularly strong responses reported for red stimuli. However, previous studies often did not control for precortical color processing and V1 input strength. The DKL color space, based on LGN cone contrast axes (L+M, L-M, S-(L+M)), provides a framework for equalizing input drive. Individual variability in cone sensitivity necessitates larger sample sizes for population-level conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 establish the background and rationale for the study. These are well-supported by extensive citations to prior literature. The identification of the confound in prior work (C3-C4) is the key motivation. The DKL framework (C30-C32) is established knowledge. The rationale for sample size (C36-C37) is sound. This provides essential context but is not a result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Review of previous studies shows that most reports of stronger gamma for red stimuli did not control for cone contrast. When cone contrast was controlled in macaque V1 studies, the red-green difference either decreased or disappeared. Similar end-spectral biases have been observed in other V1 activation measures (glucose uptake, intrinsic imaging, calcium imaging), likely due to maximal cone contrasts in the stimulus presentation systems used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C136 provide a comprehensive review of prior literature, identifying the pattern that cone contrast control eliminates or reduces the red bias. This is well-supported by multiple citations and provides critical context for interpreting the current findings. The synthesis across different measurement modalities (C137-C138) strengthens the argument. This is scholarly review, not original data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The asymmetry on the S-(L+M) axis may be driven by underlying physiology: S-cones are sparser, slower, noisier, and have higher thresholds than L/M-cones. S-(L+M)-sensitive neurons are sparser in LGN and V1, reside in different cortical layers, and respond later. Despite more numerous S+ inputs to V1, ERPs/ERFs show weaker and delayed responses. The results suggest cortical gamma is more closely related to ERP/ERF processes than to input numerosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C149 synthesize known physiology (C139-C147, well-cited) with the current findings (C148-C149) to explain the S-cone asymmetry. The physiological basis is well-established in prior literature. The interpretation linking gamma to ERF rather than input numerosity (C149) is supported by the correlation data (C88-C91) and the regression analysis (C100). This is a well-reasoned mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Color-induced gamma responses in V1 match LGN-to-V1 input strength in three aspects: (1) equal gamma for equal L-M cone contrast stimuli, (2) diminished gamma for S-cone stimuli with weaker LGN input, and (3) correlation between N70 amplitude and gamma power. These findings suggest common principles for chromatic and achromatic gamma generation, though the second gamma peak for colors suggests some differences. Previous reports of color specificity may be explained by the positive relationship between feedforward input strength and gamma power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C154 synthesize the main findings into a coherent mechanistic framework. The three-point summary (C153) accurately captures the key results. The interpretation of common principles (C151) is supported by the data, though the caveat about differences (C152) is appropriately speculative. The explanation of prior findings (C154) is a reasonable inference but remains somewhat speculative. This is a strong integrative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The study recruited 30 participants (18 female, age 18-36, mean 26) from the general public based on MEG field standards. Five additional subjects were excluded for equipment malfunctions or excessive movement (>5 mm). The study was approved by the ethics committee of Goethe University Frankfurt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C159 describe basic methodological details about participants and ethics approval. These are straightforward factual statements about the study design. The sample size justification (C155) is appropriate for the field. The exclusion criteria (C158) are reasonable and clearly stated. This is standard methodological reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C98"
+    ],
+    "result": "In summary, uniform colored stimuli induced gamma oscillations measurable in MEG, confirming prior work. The asymmetry on the S-(L+M) axis was evident in smaller N70 ERF amplitudes and worse change-detection performance for blue stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C98 are summary statements that accurately reflect the findings described in other claim groups. C95 confirms the basic phenomenon (supported by C66-C73, C95), and C98 summarizes the S-cone findings (supported by C8-C10, C58-C59, C49). These are valid summary statements of well-supported results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors determined a cryo-EM structure of human TMEM87A in lipid nanodiscs at 4.7 \u00c5 nominal resolution, with 395 of 555 residues modeled. The structure shows good agreement with AlphaFold2 predictions (r.m.s.d. 1.8 \u00c5), though N-terminal, C-terminal, and some loop regions remain unresolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C42-C51 collectively describe the structure determination process with appropriate experimental details, resolution metrics, and limitations clearly stated. The cryo-EM data quality, model building approach, and comparison to computational predictions are well-documented in Figures 1 and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "TMEM87A consists of an extracellular GOLD domain (beta-sandwich with seven beta strands) atop a seven-transmembrane helix domain. Two disulfide bonds are present: C74-C128 connecting extracellular loops and C89-C431 linking the GOLD domain to the 7TM domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C52-C57 describe the overall architecture and specific structural features directly observed in the experimental structure (Figure 1). The disulfide bonds and domain organization are clearly resolved in the cryo-EM map, though C57's speculation about constraining movement is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C96",
+      "C97",
+      "C98",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "TMEM87A contains a large funnel-shaped cavity (~8,637 \u00c5\u00b3) within the 7TM domain that is open to the extracellular side and exposed to the membrane through a slot between H5 and H6. Density consistent with a bound phospholipid is observed, though this assignment is acknowledged as speculative given the resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C96-C98, C102-C105 describe a key structural feature supported by the experimental data (Figure 5). The cavity volume calculation and lipid density observation are appropriately qualified given the 4.7 \u00c5 resolution. The authors appropriately acknowledge uncertainty in the lipid assignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73"
+    ],
+    "result": "The TMEM87A transmembrane domain shows structural similarity to 7TM proteins and GPCRs, but helix 8 adopts a distinct position that would sterically clash with G-protein or arrestin binding. TMEM87A also lacks canonical GPCR motifs, suggesting it may not function as a conventional GPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C70, C73 are well-supported by structural comparisons (Figure 2). The Dali search results, structural overlays with GPCRs, and conservation analysis provide strong evidence. The inference about incompatibility with G-protein signaling is reasonable based on the helix 8 position and lack of canonical motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C111"
+    ],
+    "result": "Purified TMEM87A reconstituted into proteoliposomes showed no basal or mechanically activated ion channel activity, in contrast to the TRAAK control. This is consistent with the structure showing a cavity sealed to the cytoplasmic side, unlike typical ion conduction pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63, C111 are supported by electrophysiology experiments (Figure 2\u2014figure supplement 2) with appropriate positive controls. The functional data align with structural observations. However, the authors appropriately note that channel activity under other conditions or in complex with other proteins cannot be excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The extracellular domain of TMEM87A adopts a GOLD domain fold, structurally similar to p24 proteins that function as cargo receptors in the secretory pathway. This suggests a structural basis for TMEM87A's proposed role in protein transport, though differences in loop regions may indicate different cargo specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 are supported by Dali searches and structural comparisons (Figure 3). The identification of the GOLD domain is well-established through computational and visual analysis. The inference about protein transport function is reasonable given the known roles of p24 proteins, though cargo specificity remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C13",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Structural comparison against the AlphaFold2-predicted human proteome identified four previously unrecognized TMEM87A homologs (GPR180, TMEM145, TMEM181, WLS) sharing the GOLD-7TM domain architecture. The authors propose naming this expanded family GOST (GOLD domain seven-transmembrane helix) proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C13, C82-C84 describe a novel bioinformatic finding supported by Dali searches and structural comparisons (Figure 3). The r.m.s.d. values (1.85-3.87 \u00c5) indicate genuine structural homology. The expansion of the protein family and proposed nomenclature are reasonable based on the structural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "TMEM87A shares key structural features with WLS including similar transmembrane domain organization, electrostatic surface patterns, cavity exposure to the membrane through an H5-H6 slot, and conserved residues lining the internal cavity. However, WLS has a larger cavity (~12,350 \u00c5\u00b3) with H4/H5 shifted ~13 \u00c5 to accommodate Wnt binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C91-C95, C106-C109 are well-supported by detailed structural comparisons (Figures 4-5). The measurements, electrostatic analysis, and conservation mapping provide strong evidence for structural similarity. The differences in cavity size and helix positioning are clearly documented and rationalized in the context of WLS-Wnt binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C110",
+      "C112",
+      "C117",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors propose that TMEM87A and other GOST proteins could function as trafficking chaperones for membrane-associated cargo through a mechanism analogous to WLS-Wnt binding, with the GOLD domain binding soluble regions and the 7TM cavity binding lipidated regions. Potential cargo includes Wnts and other lipidated secreted proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16, C110, C112, C117, C124-C126 present a speculative mechanistic model based on structural similarity to WLS. While the structural parallels are well-established, direct experimental evidence for cargo binding or transport function is lacking. The proposal is reasonable but requires validation through binding studies, functional assays, and cargo identification experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "No definitive molecular evidence of G-protein signaling has been reported for any GOST family member, and predicted structures of other GOST proteins show similar steric incompatibilities with G-protein/arrestin binding as TMEM87A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 are supported by literature review and analysis of predicted structures. The lack of G-protein signaling evidence is appropriately documented through citations, and the structural incompatibility inference is reasonable based on helix 8 positioning across the family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "A TMEM87B point mutation (N456D) implicated in 2q13 deletion syndrome maps to the TM7-helix 8 junction in TMEM87A (N465), suggesting helix 8 is functionally important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 appropriately map a disease-associated mutation to the TMEM87A structure and make a reasonable inference about functional importance. The structural context supports the interpretation, though direct functional validation of this specific residue would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The AlphaFold2-predicted WLS structure shows a smaller cavity than experimental WLS-Wnt structures, suggesting the apo-WLS cavity could dilate to accommodate Wnt binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 make a reasonable inference based on comparison of predicted and experimental structures (Figure 3\u2014figure supplement 2). The observation of cavity size differences is well-documented, and the dilation hypothesis is appropriately presented as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C113",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The introduction and discussion provide comprehensive background on TMEM87 proteins and related GOST family members, including their proposed functions in protein trafficking, mechanosensation, and development, as well as implications in disease. This contextualizes the structural work within the broader literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C17-C41, C85-C90, C113, C118-C123 summarize prior work through appropriate citations. These background claims establish the rationale for the structural study and provide context for interpreting the results. The citations appear accurate and comprehensive.",
+    "result_type": "MINOR"
+  }
+]

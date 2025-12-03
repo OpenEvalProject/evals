@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Stress applied at the F1 generation, but not F2, resets exogenous dsRNA-derived heritable silencing in a transgenerational manner. This defines a critical period at F1 during which heritable responses remain plastic and modifiable by external perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 collectively demonstrate that stress at F1 (both L1 and adult stages) resets heritable silencing across multiple generations (F1-F5), while stress at F2 has no effect. The experimental data (Figures 1, 1-supplement 3-5) with statistical support (q<0.0001) and prior work (C26-C27) converge to establish a critical F1 window for modulating inheritance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Stress resets endogenous siRNA- and piRNA-mediated silencing within the same generation, but these responses re-establish in unstressed progeny due to genomic encoding of primary small RNAs, revealing fundamental differences between exogenous and endogenous small RNA memory programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 show that all three stressors reset endo-siRNA and piRNA silencing in stressed worms (q<0.0007, Figure 2), but unlike exogenous responses, these re-establish in F2 because primary endo-siRNAs/piRNAs are genome-encoded (C31). The mechanistic explanation (C32) and conclusion (C33) are well-supported by the contrasting behaviors observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Stress itself, not environmental change per se, drives resetting of heritable small RNA responses. Continuous mild stress weakens inheritance while transfer from stress to non-stress strengthens it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 demonstrate through controlled experiments (Figure 3A) that only stress exposure\u2014not shifts between conditions\u2014causes resetting (q<0.0001). The complementary findings that continuous stress weakens (C35) and stress-to-control transfer strengthens (C36) inheritance provide strong evidence for stress-specific rather than change-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Pre-exposure to stress (before RNAi initiation) reduces subsequent heritable responses, suggesting stress inheritance can compete with other transgenerational responses or affect small RNA machinery transgenerationally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 show that stress applied 1-3 generations before RNAi initiation produces similar resetting as post-initiation stress (Figure 3B). While the mechanistic interpretation (C39) is somewhat speculative (competition vs. machinery effects), the experimental observation is clear and statistically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Stress induces genome-wide reduction in endogenous small RNA levels in directly exposed worms, but different stressors produce distinct heritable effects: starvation causes sustained reduction, heat stress causes rebound elevation in F2, and osmotic stress shows no consistent heritable changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by small RNA-seq data (Figure 4B) across multiple biological replicates. The stress-specific patterns in progeny (C41-C44) are clearly documented, though the lack of consistent osmotic effects (C44) may reflect biological variability or the intergenerational (vs transgenerational) nature of osmotic responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "281 genes targeted by stress-affected small RNAs show enrichment for stress-related functions. 72% of these show downregulated small RNAs enriched for HRDE-1 and Mutator-dependent pathways, which are critical for transgenerational inheritance and small RNA amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 present comprehensive small RNA-seq analysis (FDR<0.1, Figure 4C-E) identifying specific gene targets and pathway enrichments. The functional enrichment (C46-C47), quantitative breakdown (C48), and pathway-specific enrichments (C49, C53) are well-documented. The biological context from prior work (C50-C52) strengthens interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Small RNAs showing elevated levels after stress (28% of targets) are almost exclusively CSR-1-dependent endo-siRNAs that promote rather than silence gene expression. Few genes show consistent heritable changes across all stress types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by small RNA-seq analysis showing 96% of upregulated targets are CSR-1-bound (p=2.9e-48, Figure 4E) and that CSR-1 promotes expression (C55). The limited heritable changes (only 10 genes, C56) are clearly stated with appropriate caveats about stress-type specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Stress induces widespread transcriptional suppression of small RNA machinery components across all stress types, including multiple Argonaute genes (hrde-1, rde-1, ergo-1, nrde-3, wago-1, alg-2), Mutator genes, and other epigenetic factors required for small RNA synthesis, amplification, and inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 present mRNA-seq analysis showing 73 epigenetic genes downregulated (FDR<0.1, fold-enrichment=2.4, p<0.00001). Specific genes (C58, C60) are identified with functional context from prior work (C59, C61). The conclusion (C62) appropriately synthesizes these findings as a coordinated suppression mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The p38 MAPK pathway (sek-1, pmk-1, kgb-1) and SKN-1/Nrf2 transcription factor are specifically required for stress-induced resetting of RNAi inheritance. Stress pathway mutants show altered RNAi inheritance even without stress, indicating interconnection between stress regulation and small RNA inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 present systematic mutant analysis (Figures 5A-C, supplements 1-2) showing 8/11 stress mutants have altered inheritance baselines (C63-C64) and that MAPK/SKN-1 mutants specifically cannot reset (C65, C73). Controls confirm equal GFP expression (C67). The distinction between resetting ability and inheritance capacity (C71-C72) is well-documented, though HSF-1's role interpretation (C69) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Neuronal expression of sek-1 is sufficient to restore stress-induced resetting for most stresses (effect sizes 0.27-0.59), while intestinal rescue only restores osmotic stress resetting (effect size 0.41). This suggests tissue-specific regulation, with osmotic stress uniquely acting through intestine consistent with its intergenerational (not transgenerational) nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 present tissue-specific rescue experiments (Figure 5D) with appropriate effect size reporting (Cliff's Delta) given large sample size (N=3193). The neuronal sufficiency (C74) is well-supported, though intestinal results (C75) are complicated by generally low silencing. The osmotic stress distinction (C76-C77) provides biological context for differential tissue requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "SKN-1 regulates expression of multiple epigenetic and small RNA factors. Genes showing SKN-1-dependent stress repression are enriched for epigenetic factors (35/599 genes, q<0.001), including nrde-3, rrf-3, rde-8, and nyn-2. SKN-1 binding sites are found in promoters of rrf-3 and met-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 integrate mRNA-seq analysis of skn-1 knockdown with motif analysis. The enrichment statistics (C81) and specific gene identification (C82-C83) are well-documented. However, C79 and C84 are somewhat speculative about direct regulation\u2014the evidence shows correlation and binding site presence but not direct functional validation of SKN-1-mediated regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "MET-2 (H3K9 methyltransferase) is essential for stress-induced resetting of heritable RNAi. Stress-affected small RNA targets are enriched for genes misregulated in met-2 mutants (FDR=2.1e-05) and show elevated H3K9me2. met-2 expression is downregulated by all stress types, and met-2 mutants are completely resistant to stress-induced resetting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 integrate prior knowledge (C99-C100), bioinformatic analysis (C101-C102), expression data (C103), and experimental validation (C104-C105, Figure 6B, supplement 1B). The convergent evidence from multiple approaches strongly supports MET-2's role in executing resetting, though the precise mechanism remains to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Stress resets transgenerationally transmitted small RNAs through p38 MAPK pathway, SKN-1 transcription factor, and MET-2 H3K9 methyltransferase, causing genome-wide reduction in multiple distinct small RNA species including those regulating stress-related genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are summary statements synthesizing the major findings. These are well-supported by the comprehensive experimental data presented throughout (small RNA-seq, mutant analysis, mRNA-seq). The claims appropriately integrate the mechanistic (C86-C87) and molecular (C88-C89) findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C94"
+    ],
+    "result": "Stress-induced resetting of heritable small RNAs could be adaptive in changing environments by increasing phenotypic plasticity or revealing hidden genetic variability through relief of small RNA-mediated buffering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C91, and C94 are explicitly speculative statements about potential adaptive significance. While the speculation is reasonable given the data, no direct evidence for adaptive value, increased variability, or fitness consequences is provided. These remain hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Non-DNA-based inheritance may be involved in human disorders, but conservation of worm mechanisms in mammals is unclear. If conserved, understanding resetting pathways could aid disease prevention or treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C109 discuss translational implications but acknowledge major uncertainties. C107 is supported by citations but remains correlative. C108 explicitly states mechanisms are unclear in mammals. C109 is conditional speculation. These appropriately frame potential significance while acknowledging the large gap between C. elegans findings and human applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Human imprinting disorders and widespread diseases may be influenced by non-genetic inheritance of parental information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 provide background context supported by multiple citations. These establish the broader significance of studying non-genetic inheritance mechanisms, though they represent prior work rather than findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "C. elegans has well-characterized mechanisms for transgenerational small RNA inheritance involving specific Argonaute proteins, RdRPs, germ granules, and chromatin regulators that respond to environmental challenges and are actively regulated across generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C13 provide comprehensive background on small RNA inheritance mechanisms in C. elegans, all supported by multiple citations to prior work. These establish the foundation for understanding the current study's findings but represent established knowledge rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Heritable RNAi responses in C. elegans typically last 3-5 generations but vary among individuals and mutants. MET-2 is required for termination, and inheritance can be extended by various manipulations. Unregulated accumulation leads to sterility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 provide essential background on RNAi inheritance dynamics and regulation, supported by citations to prior work including authors' own studies. These establish the experimental system and biological context but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Small RNAs in C. elegans distinguish self from non-self, regulate germline gene expression, and can buffer developmental variation. Neuronal small RNAs and olfactory memory can be heritable, with stress responses coordinated by the nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C95-C98 provide relevant background from prior work (all citation-supported) that contextualizes the discussion of mechanisms and potential functions. These support the interpretation of findings but are not results of this study.",
+    "result_type": "MINOR"
+  }
+]

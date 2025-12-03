@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "HT-SELEX was applied to 371 putative TFs in P. aeruginosa PAO1, generating 199 PWM models describing the DNA-binding specificities of 182 TFs with high reproducibility across technical replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C17-C23 collectively describe the HT-SELEX experimental design, execution, and output. The methodology is clearly described, the success rate (49%) is quantified, and reproducibility is demonstrated through 12 independent replicates showing virtually identical binding specificities. The data are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Network analysis of PWM similarity revealed 104 clusters of DNA sequence preferences, with 133 PWM models from 116 TFs forming 38 interconnected subnetworks and 66 isolated subnetworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe the network analysis results using SSTAT similarity scoring. The clustering analysis is methodologically sound and the numbers are internally consistent (38 interconnected + 66 isolated = 104 total clusters). The analysis appropriately characterizes the diversity of TF binding specificities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Most TFs (179/199, 90%) bind DNA as homodimers, predominantly in head-to-head orientation, with motif lengths ranging from 9-28 bp (mode 16 bp). Head-to-tail binding is enriched in the OmpR family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 characterize the binding modes and motif properties. The quantitative data are clearly presented with appropriate proportions and the head-to-tail enrichment in OmpR family is supported by citation C34. The comparison to ChIP-derived motifs (C27) provides reasonable explanation for observed differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Genome-wide scanning identified 33,709 significant TFBSs (p<1.0e-5) that were highly enriched (>11-fold, p<2.2e-16) in intergenic regions, with 57% located in only 10% of the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C39 describe the genome-wide prediction of TF binding sites with appropriate statistical thresholds and enrichment analysis. The negative binomial test for intergenic enrichment is appropriate, and the concentration of binding sites is well-quantified. The p-value threshold choice is justified in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "EMSA validated 62 pairs of HT-SELEX motif-predicted TF-DNA interactions, including binding modes and various monomer spacings and orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 reports experimental validation of predicted binding sites. The EMSA validation is shown in multiple supplementary figures and provides orthogonal confirmation of the HT-SELEX predictions. The validation includes diverse binding modes, strengthening confidence in the predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C72",
+      "C73"
+    ],
+    "result": "51 TFs were significantly associated with nine virulence-associated pathways (FDR<0.05), including 32 previously uncharacterized TFs, with some TFs involved in multiple pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C72-C73 describe the pathway enrichment analysis using hypergeometric testing with appropriate multiple testing correction (FDR<0.05). The identification of 32 novel TFs represents a major advance. The statistical approach is sound and the multi-pathway involvement is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "PA0225 (ErfA) is a novel regulator of biofilm production that binds the pelABCDEFG promoter, with deletion reducing pelA transcription to one-third of wild-type levels and significantly decreasing biofilm formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50, C81-C83 provide comprehensive evidence for PA0225 as a biofilm regulator through EMSA validation (C48), RT-qPCR showing transcriptional effects (C47), complementation experiments (C48, C50), and crystal violet biofilm assays (C49-C50). The experimental design includes appropriate controls and complementation, supporting the regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "49 TFs were predicted to regulate quorum sensing genes with >100 TF-target relationships, including novel regulators PA2497 (regulating qslA) validated by deletion and complementation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C87-C96 describe the QS regulatory network with experimental validation. The prediction of co-binding by multiple TFs (C92, C95-C96) is validated by EMSA for at least 6 TFs. The functional validation of PA2497 through deletion and complementation (C52-C53) provides strong evidence for the predicted regulatory relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C97"
+    ],
+    "result": "PA1413 regulates phzH (phenazine synthesis), with deletion significantly reducing phzH transcription and complementation restoring expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C97 describe the regulatory relationship between PA1413 and phzH with experimental validation through deletion and complementation. The experimental design is appropriate and the phenazine synthesis pathway is well-established (C97 citation), providing context for the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "37 TFs regulate T6SS genes (24 previously uncharacterized), with up to 10 TFs binding the amrZ promoter. Binding of PhoB, PA1315, PA3249, and PA0535 to T6SS promoters was validated by EMSA and/or ChIP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59, C98-C104 describe the T6SS regulatory network with multiple lines of validation. The convergence of HT-SELEX predictions, ChIP-seq data (C57), and EMSA validation (C57-C59) for multiple TFs provides strong support. The identification of 10 TFs binding amrZ (C56) suggests complex regulatory cascades.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "37 TFs regulate motility genes, including 10 highly involved regulators. The network shares regulators with biofilm production (FleQ, AlgB, AmrZ) but also includes distinct TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C105-C108 describe the motility regulatory network. The prediction of FleQ binding to flhA is supported by independent literature (C107), and the identification of shared and distinct regulators with biofilm production is biologically coherent. The quantification of 10 highly involved regulators is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C109",
+      "C110"
+    ],
+    "result": "TFs were predicted to regulate antibiotic resistance (18 TFs, 11 novel), siderophores (16 novel TFs), T3SS (26 TFs, 17 novel), ROS (17 TFs, 11 novel), and SR/persistence (11 TFs, 8 novel). PhoB binding to antibiotic resistance gene promoters was validated by ChIP-seq and EMSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63, C109-C110 describe regulatory networks for five additional virulence pathways. The validation of PhoB binding by both ChIP-seq and EMSA (C60) provides strong support for at least some predictions. The identification of numerous novel TFs across pathways represents a significant resource, though most lack experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Some TFs, including PhoB/amrZ and PA0048, are implicated in multiple virulence pathways, suggesting inter-pathway connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 identify multi-pathway regulators. The evidence for PhoB and amrZ involvement across pathways is supported by multiple validated binding sites throughout the manuscript. PA0048 targets in multiple pathways are predicted but less extensively validated. The concept of inter-pathway connectivity is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "GO enrichment analysis revealed functional associations for 69 TFs (38%) across 21 categories. Over 80% of targets for TFs enriched in 'transcription regulator activity' were themselves TFs, suggesting interconnected regulatory networks. Novel functions were suggested for 46 uncharacterized TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C111-C116 describe GO enrichment analysis results. The finding that 80% of TF targets are themselves TFs (C44, C112) is based on analysis of 20 randomly selected TFs and supports the concept of hierarchical regulatory networks. The functional predictions for uncharacterized TFs (C113-C116) are hypothesis-generating but appropriately presented as potential associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Transposon mutant validation of 54 biofilm-associated TFs confirmed that depletion of known regulators (AmrZ, FleQ, PA0191) significantly affected biofilm formation, though most mutants showed no overt phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C86 describe transposon mutant validation with mixed results. While known regulators showed expected phenotypes (C85), most mutants did not (C86). The authors attribute this to polar effects of transposon insertion, which is plausible but limits the validation. The lack of phenotypes for many predicted regulators raises questions about false positive predictions or experimental limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study generated 199 PWM models covering nearly 50% of P. aeruginosa TFs. TF binding specificity determines genomic binding locations and gene regulation, with dimer formation depending on DNA sequence and showing specific orientation/spacing preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 summarize the study's scope and provide mechanistic context. The 50% coverage (C66) is a major achievement. The mechanistic principles (C67-C68) are well-established and appropriately cited. The specific example of PhoB binding mode (C69) is validated by independent ChIP-seq data, and the general principle of dimeric binding (C70) is supported by multiple citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "TF-binding specificity is conserved across species, with P. aeruginosa PhoB showing high similarity to C. crescentus PhoB, and orthologous TFs from different strains displaying similar binding specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 describe evolutionary conservation of TF binding specificity. The comparison to C. crescentus PhoB (C117) and the general principle of conservation (C118) are both supported by appropriate citations. This provides additional validation for the HT-SELEX-derived motifs and suggests broader applicability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "P. aeruginosa causes significant morbidity and mortality (>2 million infections, ~90,000 deaths annually). Virulence regulation is controlled by TFs, but less than 5% of ~400 predicted TFs have characterized DNA-binding specificities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C16 provide background context. The clinical significance (C8-C10) is cited to a 1983 reference (Cross et al.), which may be outdated for current infection/mortality statistics. The general principles about TF function (C11-C13) are well-established. The gap in TF characterization (C14-C16) motivates the study, though the exact percentages depend on the cited reference (Huang et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Biofilm production involves exopolysaccharides including Pel and Psl. Multiple TFs (AmrZ, FleQ, PA5293, PA4547) co-bind the psl operon, with AmrZ and FleQ binding validated by ChIP-seq and previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 describe biofilm biology and regulatory mechanisms. The biofilm composition (C74-C75) and known regulators (C76) are well-cited. The co-binding of multiple TFs to psl (C77) is predicted, with AmrZ binding validated by strong ChIP-seq peak at the predicted site (C79) and FleQ binding supported by previous studies (C80, C82). This demonstrates the quality of predictions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C17",
+      "C38",
+      "C39",
+      "C40",
+      "C98"
+    ],
+    "result": "The authors developed a method to test large numbers of drug combinations in a single cell culture sample by exploiting randomness in drug uptake and creating transient drug gradients through point injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C17, C38-C40, and C98 collectively establish the core methodological innovation. The experimental data in Figures 2-3 demonstrate that point injection creates broader drug concentration ranges compared to homogeneous delivery, and multiple experimental systems (dyes, siRNA, chemotherapy drugs) validate the approach's feasibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "A conjugation-free drug barcoding method was developed where pre-mixed drug and fluorescent dye are co-delivered locally, maintaining high correlation (>0.8) due to identical initial dispersion by forced advection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 and C46-C48 describe the conjugation-free approach, with experimental validation in Figures 3-4 showing correlation coefficients >0.8 for co-delivered pairs. The physical basis (forced advection creating identical initial concentration profiles) is sound and demonstrated empirically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C57",
+      "C58",
+      "C59",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "siRNA combinations targeting GFP mRNA demonstrate both antagonistic and additive/synergistic interactions depending on target site overlap and siRNA complementarity, as shown by QD-conjugated delivery experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C73 describe the siRNA experimental system and results shown in Figures 6-7. The data demonstrate that msiRNA1 acts as an antagonist at high concentrations (C71-C72) while non-overlapping siRNA1 and siRNA2 show additive/synergistic effects (C73). The experimental design is appropriate and results are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C81",
+      "C82",
+      "C84",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Chemotherapy drug combinations (cisplatin, cyclophosphamide, docetaxel, 5-fluorouracil) were tested in HeLa cells, revealing complex non-monotonic pharmacodynamics suggesting drug-drug interactions and cell cycle effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C94 describe chemotherapy experiments shown in Figures 8-10. The inactivated cisplatin control behaves as expected (C92), while CP and TXT show complex dynamics (C93-C94). The experimental design includes appropriate controls and the complexity of results is acknowledged rather than over-interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "A segmentation-free coarse-grained image analysis method was developed that partitions images into tiles (~50\u00d750 microns) and averages fluorescence intensities, enabling analysis of confluent cell cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C195-C198 describe the coarse-grained analysis approach. This method is applied throughout the manuscript and addresses a practical limitation of single-cell segmentation in confluent cultures. The approach is justified by the spatial averaging of drug gradients over mesoscopic regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A benchmark system using diester dyes (CellTracker/CellTrace) as model drugs demonstrated that point injection greatly increases the range of drug uptake compared to homogeneous delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C45 describe the benchmark dye system shown in Figures 2-3. This serves as proof-of-concept for the stochastic mixing approach. The dyes are well-characterized reagents with known retention properties, making them appropriate for method validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C37"
+    ],
+    "result": "The method requires only standard laboratory equipment (no robotics or microfluidics), dramatically reduces resource needs, and provides continuous variation of drug concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C36-C37 describe practical advantages of the method. The experimental procedures confirm use of standard confocal microscopy and simple point injection. The efficiency gain is inherent in testing multiple combinations per sample rather than requiring separate samples for each condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The method assumes drugs and labels are retained by cells without redistribution after washing, which holds for siRNA/nanoparticles and CellTracker dyes but may not generalize to all drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 acknowledge a key assumption and limitation. The authors appropriately recognize this applies to their specific reagents but may not hold generally. Multiple washing steps were performed to mitigate short-term leakage effects. This represents honest assessment of method limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Optimal stochastic mixing is achieved in suspension cells where physical mixing is possible, while adherent cells rely solely on forced advection which is more challenging to control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 compare suspension versus adherent cell implementations. The authors acknowledge that adherent cells present greater challenges and require further optimization. This honest assessment of method limitations is appropriate, though it suggests the method is not yet fully mature for adherent cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Extrinsic factors drive sample variability more than intrinsic cell variability in most experimental systems, as inferred from the Law of Large Numbers given typical cell numbers (~10\u2074) versus replicates (~3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11-C14 present a theoretical argument based on the Law of Large Numbers. While the mathematical reasoning is sound, this conclusion is stated as belief ('we believe') without direct experimental validation. The argument assumes intrinsic noise averages out with large cell numbers, but this depends on the specific sources of variability and may not hold universally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Theoretical predictions suggest additive interactions at low siRNA concentrations and concentration/location-dependent interactions at high concentrations, including potential antagonism from binding competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C66 present theoretical predictions about siRNA interactions. While these predictions are tested experimentally (C71-C73), the theoretical framework is somewhat speculative. The predictions are reasonable based on binding kinetics principles, but alternative mechanisms (e.g., RISC competition, C74-C76) complicate interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C114",
+      "C115"
+    ],
+    "result": "The method is claimed to be generalizable to broader applications including in vivo use, signaling molecules, and stem cell tracking, though these require optimization of injection parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 and C114-C115 speculate about future applications without experimental validation. While the versatility demonstrated with dyes, siRNA, and chemotherapy drugs suggests broad applicability, extension to in vivo systems or other perturbations remains unproven. These are reasonable speculations but require substantial additional work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The manuscript focuses on measurement methodology rather than data interpretation, acknowledging that further work is needed to develop methods for identifying optimal drug combinations from high-dimensional data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 appropriately scope the manuscript's contribution. The authors acknowledge they demonstrate data collection capability but do not provide comprehensive analytical frameworks for optimization. This honest assessment prevents over-claiming while recognizing important future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "The number of possible drug combinations grows exponentially with drugs and dosages, with three drugs at ten concentrations yielding 10\u00b3 combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C5 states 10\u00b3 combinations for three drugs at ten concentrations, but this is mathematically incorrect. The correct number is 10\u00b3 = 1000 if considering all ordered combinations, but the claim appears to confuse this with 10\u00d710\u00d710. More importantly, the claim doesn't account for the fact that many combinations may be redundant or that the actual combinatorial space depends on whether order matters and whether zero concentration is included.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Normalization methods for drug concentration estimation in cell debris and predictions about temporal dynamics of drug concentrations in surviving versus dead cells are based on assumptions about fluorescent dye distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C91 describe analytical assumptions for chemotherapy experiments. C86 assumes normalization holds for cell fragments without validation. C89-C91 make predictions about population dynamics that depend on drugs acting independently, which may not hold given the complex dynamics observed (C93-C94). These assumptions require more rigorous validation.",
+    "result_type": "MINOR"
+  }
+]

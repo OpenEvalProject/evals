@@ -1,0 +1,2035 @@
+{
+  "submission": {
+    "id": "92679b65-bdec-4d87-b201-fff549701b67",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:55:11.936596Z",
+    "updated_at": "2025-12-03T02:55:11.936596Z"
+  },
+  "content": [
+    {
+      "id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "submission_id": "92679b65-bdec-4d87-b201-fff549701b67",
+      "content_type": "manuscript",
+      "content_text": "# Distinct neural mechanisms underlie subjective and objective recollection and guide memory-based decision making\n\n## Authors\n\n- Yana Fandakova<sup>1</sup> ([ORCID: 0000-0003-3747-0359](https://orcid.org/0000-0003-3747-0359)) \u2020\n- Elliott G Johnson<sup>2</sup>\n- Simona Ghetti<sup>3</sup> ([ORCID: 0000-0001-8282-0616](https://orcid.org/0000-0001-8282-0616)) \u2020\n\n### Affiliations\n\n1. Center for Lifespan Psychology, Max Planck Institute for Human Development Berlin Germany\n2. Human Development Graduate Group & Center for Mind and Brain, University of California at Davis Davis United States\n3. Department of Psychology & Center for Mind and Brain, University of California at Davis Davis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAccurate memories are often associated with vivid experiences of recollection. However, the neural mechanisms underlying subjective recollection and their unique role in decision making beyond accuracy have received limited attention. We dissociated subjective recollection from accuracy during a forced-choice task. Distractors corresponded either to non-studied exemplars of the targets (A-A\u2019 condition) or to non-studied exemplars of different studied items (A-B\u2019 condition). The A-A\u2019 condition resulted in higher accuracy and greater activation in the superior parietal lobe, whereas the A-B\u2019 condition resulted in higher subjective recollection and greater activation in the precuneus and retrosplenial regions, indicating a dissociation between objective and subjective memory. Activation in insular, cingulate, and lateral prefrontal regions was also associated with subjective recollection; however, during a subsequent decision phase, activation in these same regions was greater for discarded than for selected responses in anticipation of a social reward, underscoring their role in evaluating memory evidence flexibly based on current goals.\n\n## Introduction\n\nThe ability to remember past events in vivid detail is central to our experience owing to our proclivity to reflect or reminisce about our personal pasts. Recollection refers to the retrieval process yielding memories that capture the richness of our past, including such aspects as where, when, or with whom we experienced an event (Yonelinas, 2002). This process is often accompanied by the subjective feeling of vivid remembering, a sense of mental reliving the event (Tulving, 1985). At the neural level, recollection is associated with a network of brain regions including the medial temporal lobes, particularly the hippocampus and the parahippocampal gyrus, the retrosplenial/posterior cingulate cortex\u00a0(PCC) and the precuneus, and\u00a0the medial prefrontal cortex (PFC)\u00a0and\u00a0the angular gyrus (Rugg and Vilberg, 2013).\n\nThe subjective sense of vivid recollection is typically positively\u00a0correlated with the accuracy of recollected details (Moscovitch et al., 2016). This subjective experience, therefore, represents a reliable cue for the degree to which a memory can be trusted to guide decision making. However, the investigation of the neural mechanisms supporting the subjective experience of recollection has received relatively little attention. This may be due to the noted strong correlation between accuracy and subjective experience, resulting in a convergence of these aspects within the dominant theories of recollection (e.g., Bastin et al., 2019; Yonelinas, 2002). Indeed, the neural network underlying recollection has been reliably identified across studies that require participants either to reflect on their subjective experience (Daselaar et al., 2006; Vilberg and Rugg, 2007) or to retrieve specific memory details (Dobbins et al., 2002; Mitchell and Johnson, 2009). However, accurate detail retrieval, or objective recollection, does not necessarily align with the subjective experience of recollection.\n\nBehavioral dissociations between accuracy and subjective recollection suggest that subjective assessments carry unique information that signal the diagnostic value of current mnemonic evidence. For example, after studying objects, faces, or parts of scenes, adults are more likely to correctly identify a studied item in a two alternative forced-choice (2AFC) task if the distractor corresponds to a non-studied exemplar of the target or a different section of the same scene (i.e., A-A\u2019 condition) than if the distractor corresponds to a non-studied exemplar of a different studied item (i.e., A-B\u2019 condition) (Dobbins et al., 1998; Heathcote et al., 2009; Hembacher and Ghetti, 2017; Tulving, 1981). However, participants are consistently less likely to claim subjective recollection in the A-A\u2019 condition, likely because it forces them to identify the most diagnostic feature from the comparison between the two perceptually similar probes. Despite gaining in memory accuracy, individuals may therefore recognize the challenge of identifying a diagnostic feature or may base their subjective recollection judgment only on that feature rather than on the entire experience (Dobbins et al., 1998; Hembacher and Ghetti, 2017). We refer to this reliance on specific details as \u2018specific retrieval\u2019 because it encourages participants to claim recollection only when they remember specific, highly diagnostic details. In contrast, the A-B\u2019 condition encourages a more global assessment of the identity of the presented probes. That is, in this condition, the presentation of the two dissimilar probes discourages identification of the most diagnostic features. Instead, it encourages participants to assess their retrieval of the probe as a whole, resulting in more errors, but also in a stronger sense of subjective recollection.\n\nIn the present study, we used this type of paradigm (Figure 1) to probe differences in the neural substrates of subjective recollection not confounded by memory accuracy. To confirm that the A-A\u2019 condition was associated with greater evidence accumulation as to be expected if recollection is based on remembering specific, highly diagnostic details, we modeled responses in the two experimental conditions using drift diffusion models (Ratcliff, 1978). We hypothesized that greater emphasis on diagnostic features in the A-A\u2019 condition would be manifested in greater evidence accumulation relative to the A-B\u2019 condition.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62520/elife-62520-fig1-v1.jpg)\n\n**Figure 1.:** (A) During encoding, participants incidentally encoded pictures of objects while making indoor-outdoor judgments with a jittered interstimulus interval (500\u20136500 ms). (B) During retrieval, participants completed a two alternative forced\u00a0choice (2AFC) recognition test in which a studied target was presented either\u00a0along with a distractor that was perceptually similar to the target (i.e., A-A\u2019 condition) or along with a distractor that was perceptually similar to another studied item (i.e., A-B\u2019 condition). Participants chose between a remember (R), very familiar (VF), or somewhat familiar (SF) judgment with the hand corresponding to the position of the image they recognized as the target. Target and distractor positions were randomized across trials. After a jittered fixation period (500\u20136500 ms) following the\u00a0memory phase, the two alternatives were presented again and participants were asked to select their memory to be counted toward their final score by pressing the button corresponding to the treasure chest or to discard the item by pressing the button corresponding to the trash can (i.e., decision phase). The position of the treasure chest and trash can buttons were randomized across trials.\n\nAs for neural correlates, previous research offers a starting point for distinguishing subjective and objective recollection. Regions of the posterior parietal cortex (PPC) have been associated with retrieval of accurate details (Wagner et al., 2005) as well as with subjective recollection (Chua et al., 2006; Simons et al., 2010). Previous studies also hint at the possibility that subjective and objective recollection associated with the PPC are not always aligned. For example, patients with PPC damage have been shown to display equivalent source memory to matched controls,\u00a0but considerably lower levels of subjective recollection (Davidson et al., 2008Hower et al., 2014). A separate line of research in aging populations has also identified dissociations between subjective and objective recollection. During a recognition memory task, Duarte and colleagues (Duarte et al., 2008) asked younger and older participants to indicate their subjective recollection, followed by a judgment about the temporal or spatial context in which items were studied. High-performing older adults showed similar levels of subjective recollection to younger adults but lower levels of objective recollection. This may be due to older adults retrieving comparable amounts of contextual details that were not diagnostic of the required source judgment, but that may have sufficed to induce a subjective feeling of recollection, similar to procedures encouraging retrieval of the target probe as a whole. Similarly, Mark and Rugg, 1998 tested both subjective (remember-know procedure) and objective (source memory test) recollection in younger and older adults. While older adults displayed significantly lower objective memory, there were no age differences in subjective recollection. Even though these behavioral dissociations have been identified in some populations, mapping subjective and objective recollection to the corresponding neural circuits has been difficult due to the typically high correlation between the two. Corroborating previous research, we expected the functional dissociations between objective and subjective recollection to map onto regional differences in the PPC.\n\nFunctional dissociations between the ventral/medial and dorsal/lateral PPC have proved informative to distinguish objective and subjective aspects of retrieval (Cabeza et al., 2008; Vilberg and Rugg, 2007; Wagner et al., 2005). In a direct comparison of subjective (remember-know procedure) and objective recollection (source memory test), Frithsen and Miller, 2014 showed enhanced activation in the angular gyrus in association with subjective recollection. Further dissociating the precision of memory retrieval from memory vividness, Richter et al., 2016 reported that activation in the angular gyrus was associated with objective memory precision, whereas activation in the precuneus was associated with subjective memory vividness. Of particular relevance, Favila and colleagues (Favila et al., 2018) examined differences between ventral and dorsal PPC with respect to how the representation of object features in these regions is influenced by retrieval goals. Participants were presented with stimuli that varied across color and object category, but these features were tested separately, allowing evaluation of the degree to which PPC regions carried information about goal-relevant vs. goal-irrelevant feature information. The results demonstrated that memory goals biased feature representation toward relevant information in dorsal PPC but not in ventral PPC. Based on these reported dissociations, we expected a dissociation between dorsal PPC and precuneus activation. We predicted enhanced dorsal PPC activation in the A-A\u2019 relative to the A-B\u2019 condition because the former encourages identification of more precise, diagnostic features. This would corroborate previous research showing that this region is under stronger influence from top-down control and retrieval goals (Cabeza et al., 2008). In contrast, we predicted enhanced ventral PPC activation, including the angular gyrus and/or the precuneus, in the A-B\u2019 condition because this condition triggers a more global assessment of the test probes, resulting in greater subjective recollection (Hembacher and Ghetti, 2017).\n\nSubjective assessments of recollection are metacognitive acts (Koriat and Goldsmith, 1996) and as such can be expected to be recapitulated in regions associated with metacognitive monitoring and evaluation (Vaccaro and Fleming, 2018). Metacognitive assessments of decision confidence, which represent retrospective metacognitive monitoring, have been associated with activation in dorsal anterior cingulate cortex (dACC) and anterior insula supporting performance or error monitoring (Fandakova et al., 2018), and with activation in lateral PFC to support the evaluation of retrieved content in the context of current task demands (Bang and Fleming, 2018). Interestingly, a behavioral study found that participants were more likely to bet on their responses in the A-B\u2019 condition in anticipation of a social reward (Hembacher and Ghetti, 2017), suggesting that cues utilized to support subjective recollection are more heavily factored in subsequent decision making than cues associated with accurate response selection. Thus, we set to examine the neural mechanisms that connect subjective recollection with decision making. We hypothesized that when participants are asked to select a memory, this decision would reflect their assessment of how well they had performed on a given trial in the context of the specific task goal, such as obtaining a higher performance score (Koriat and Goldsmith, 1996). Thus, we expected neural activation in regions associated with metacognitive monitoring (i.e., anterior insula and dACC) and evaluation (i.e., lateral PFC) to be aligned to participants\u2019 selection decisions at the time of making those decisions. Taken\u00a0together, we expected that our task would engage fronto-parietal regions, with parietal regions tracking the dissociation between objective and subjective recollection during the memory phase, and insular, cingulate, and lateral PFC regions tracking goal-relevant dimensions of the task associated with subsequent decision making.\n\n## Results\n\n### Behavioral results\n\n#### Dissociation between memory accuracy and subjective recollection\n\nWe examined differences in memory accuracy and subjective recollection as a function of experimental condition. First, we used mixed-effects logistic regressions to predict accuracy as a function of experimental condition. Consistent with previous studies, memory accuracy was higher in the A-A\u2019 than in the A-B\u2019 condition, estimated difference (Est.)\u00a0=\u00a00.38, SE\u00a0=\u00a00.05, p<0.0001 (Figure 2A). Next, we examined whether the probability for a remember judgment (as opposed to a familiar judgment) differed as a function of experimental condition, accuracy, and their interaction. As predicted, there was an effect of experimental condition, Est.\u00a0=\u00a01.35, SE\u00a0=\u00a00.11, p<0.0001, with a higher rate of remember responses in the A-B\u2019 than in the A-A\u2019 condition. The interaction between experimental condition and accuracy was also significant, Est.\u00a0=\u00a0\u22120.64, SE\u00a0=\u00a00.13, p<0.0001, suggesting that although remember judgments were overall more likely in the A-B\u2019 condition, the difference as compared with the A-A\u2019 condition was more pronounced for incorrect responses (Figure 2B). This interaction was found above and beyond the expected main effect of accuracy showing that remember responses were overall more likely for accurate than for inaccurate responses, Est.\u00a0=\u00a00.96, SE\u00a0=\u00a00.10, p<0.0001 (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62520/elife-62520-fig2-v1.jpg)\n\n**Figure 2.:** (A) Accuracy across experimental conditions. There were more correct responses in the A-A\u2019 condition. (B) Proportion of remember judgments out of all correct and incorrect responses across experimental conditions. Participants more often claimed subjective recollection in the A-B\u2019 condition both for accurate and inaccurate responses. (C) Proportion of memory responses that participants selected to count toward their final score split as a function of experimental condition, accuracy, and subjective judgment. For correct responses, there were no condition differences in selection rates for remember responses, but participants\u2019 tendency to select familiar responses increased in the A-B\u2019 condition. Error bars around condition means represent standard error of the mean. For plots of estimated logistic regression functions, see Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62520/elife-62520-fig2-figsupp1-v1.jpg)\n\nTogether, these results indicate that memory accuracy and subjective recollection were behaviorally dissociated across experimental conditions: Accuracy was higher in the A-A\u2019 condition, but subjective recollection was more frequent in the A-B\u2019 condition.\n\n#### Decision making aligns with subjective recollection\n\nNext, we sought to confirm that subjective recollection drives the decision to select responses toward participants\u2019 final score. Mixed-effect logistic regressions were used to predict the probability of selecting a memory as a function of experimental condition (A-A\u2019 vs. A-B\u2019), subjective rating (remember vs. familiar), memory accuracy, and their interactions. Participants were more likely to select an answer to count toward their final score in the A-B\u2019 than in the A-A\u2019 condition, Est.\u00a0=\u00a00.72, SE\u00a0=\u00a00.12, p<0.0001, above and beyond the greater tendency to select memories associated with remember relative to familiar judgments, Est.\u00a0=\u00a01.64, SE\u00a0=\u00a00.20, p<0.0001, and with accurate compared to inaccurate responses, Est.\u00a0=\u00a01.02, SE\u00a0=\u00a00.09, p<0.0001. Critically, we also observed a three-way interaction between condition, rating, and accuracy, Est.\u00a0=\u00a0\u22120.78, SE\u00a0=\u00a00.30, p=0.02 (Figure 2C).\n\nFor correct responses, selecting a response was more likely in the A-B\u2019 than in the A-A\u2019 condition, Est.\u00a0=\u00a00.45, SE\u00a0=\u00a00.08, p<0.0001, and more frequent for remember than for familiar judgments, Est.\u00a0=\u00a02.69, SE\u00a0=\u00a00.14, p<0.0001. There was also a significant condition by subjective judgment interaction, Est.\u00a0=\u00a0\u22120.64, SE\u00a0=\u00a00.18, p=0.0004, such that selection rates were similar for remember ratings between conditions, but participants extended their tendency to select A-B\u2019 trials even to some familiar judgments.\n\nFor incorrect responses, selection rates were again higher in the A-B\u2019 than in the A-A\u2019 condition, Est.\u00a0=\u00a00.74, SE\u00a0=\u00a00.12, p<0.0001 and more frequent for remember than for familiar judgments, Est.\u00a0=\u00a01.56, SE\u00a0=\u00a00.20, p<0.0001; the interaction between subjective judgment and experimental condition was not significant, Est.\u00a0=\u00a00.08, SE\u00a0=\u00a00.24, p=0.73 (Figure 1C). Together, these results indicate that participants were more likely to select an answer toward their final score in the A-B\u2019 than in the A-A\u2019 condition, particularly in association with remember responses. For accurate responses, participants also showed a higher likelihood to select familiar responses in the A-B\u2019 condition.\n\n#### Faster evidence accumulation occurs in the A-A\u2019 condition\n\nIf highly similar lure items in the A-A\u2019 condition induce participants to engage in examination of specific diagnostic features, then the A-A\u2019 condition should be associated with a higher rate of evidence accumulation compared to the A-B\u2019 condition. We thus used drift diffusion models (Ratcliff, 1978) to compare drift rates and threshold separation between conditions. An ANOVA with condition (A-A\u2019 vs. A-B\u2019) as a within-subject factor revealed significant differences in drift rate, F(1,28) = 15.48, p=0.002, \u03b7p2 =\u00a00.36, with higher drift rate estimates in the A-A\u2019 condition, M\u00a0=\u00a02.06, SD\u00a0=\u00a00.62, than in the A-B\u2019 condition, M\u00a0=\u00a01.22, SD\u00a0=\u00a00.61. Threshold separation, reflecting how cautious participants were in their memory choice, did not differ between conditions, F(1,28) = 3.59, p=0.07, \u03b7p2 =\u00a00.11 (A-A\u2019: M\u00a0=\u00a02.42, SD\u00a0=\u00a00.25; A-B\u2019: M\u00a0=\u00a02.51, SD\u00a0=\u00a00.21). Together, evidence accumulation followed the pattern found for accuracy differences between conditions, such that participants showed faster evidence accumulation in the A-A\u2019 than in the A-B\u2019 condition, consistent with the idea that the A-A\u2019 condition promotes specific\u00a0retrieval of more diagnostic features.\n\n### Neuroimaging results: memory phase\n\n#### Activations in parietal regions dissociate subjective and objective recollection\n\nWe performed whole-brain analyses to examine differences between the A-A\u2019 and A-B\u2019 conditions during the memory phase. Here, we were particularly interested in PPC regions, in which we expected a dissociation aligned to condition with stronger engagement of dorsal PPC in the A-A\u2019 condition,\u00a0but\u00a0stronger engagement of medial/ventral parietal regions in the A-B\u2019 condition. Consistent with our expectations, the contrast A-A\u2019 > A-B\u2019 revealed greater activation in a cluster encompassing the right superior parietal lobe (SPL) and the supramarginal gyrus (Figure 3A). Instead, the contrast A-B\u2019 > A-A\u2019 revealed greater activation in the bilateral retrosplenial cortex, PCC, and the precuneus (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62520/elife-62520-fig3-v1.jpg)\n\n**Figure 3.:** (A) Results of a whole-brain comparison between experimental conditions. (B) Differences between remember and familiar judgments across conditions in parietal areas identified in A. (C) Differences between remember and familiar judgments across conditions for regions identified in A that have been implicated in metacognitive monitoring and appraisal. Error bars around condition means represent standard error of the mean. R SPL = right superior parietal lobe; PCC = posterior cingulate cortex, dACC = dorsal anterior cingulate; R DLPFC = right dorsolateral prefrontal cortex.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/62520/elife-62520-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Left angular gyrus showed enhanced activation in both experimental conditions.\n\nGiven that behavioral rates of subjective recollection differed between experimental conditions, we next sought to evaluate whether activation in these parietal clusters varied as a function of subjective assessments, namely remember vs. familiar judgments. To this end, we conducted a mixed ANOVA on the parameter estimates with condition (A-A\u2019 vs. A-B\u2019) and subjective judgment (remember vs. familiar) as within-subject factors. Given that the regions of interest\u00a0(ROIs) were identified as showing a main effect of condition, we focused only on the main effect of subjective judgment and the interaction between condition and subjective judgment here. In the SPL, which showed higher activation in the A-A\u2019 condition, there were neither differences between remember and familiar judgments, F(1,28) = 0.03, p=0.86, \u03b7p2 =\u00a00.001, nor an interaction between subjective judgment and experimental condition, F(1,28) = 0.60, p=0.45, \u03b7p2 =\u00a00.021 (Figure 3B). In contrast, in the PCC/precuneus cluster, which showed higher activation in the A-B\u2019 condition, activation was enhanced for remember relative to familiar judgments across both experimental conditions, F(1,28) = 30.54, p<0.001, padj\u00a0<\u00a00.001, \u03b7p2 =\u00a00.52 (Figure 3B). We observed no significant interaction between subjective judgment and experimental condition in this region, F(1,28) = 0.02, p=0.90, padj\u00a0=\u00a00.90, \u03b7p2 =\u00a00.001. Additional analyses comparing remember to familiar judgments in each experimental condition demonstrated that the left angular gyrus showed greater activation for remember than for familiar judgments across both experimental conditions (see Figure 3\u2014figure supplement 1).\n\nTaken together, there was a clear dissociation between experimental conditions in the parietal cortex. The SPL showed greater engagement in the A-A\u2019 condition, presumably reflecting the increased scrutiny promoted by this condition. In contrast, the PCC/precuneus was more strongly engaged in the A-B\u2019 condition, and consistent with behavioral trends, showed greater activation for subjective recollection.\n\n#### Frontal and cingulo-opercular regions track dimensions that are relevant for decision making\n\nThe contrast between A-B\u2019 and A-A\u2019 also revealed increased activation in the bilateral anterior insula, the dACC, and the right dorsolateral PFC (dlPFC) (Figure 3A), regions that have been implicated in retrospective metacognitive assessments. To examine the role of these regions in subjective judgments, we again conducted a mixed ANOVA on the parameter estimates with condition (A-A\u2019 vs. A-B\u2019) and subjective judgment (remember vs. familiar) as within-subject factors. The bilateral anterior insula showed enhanced activation for remember relative to familiar judgments across conditions, F(1,28) = 73.43, p<0.001, \u03b7p2 =\u00a00.72. This main effect was accompanied by an interaction with experimental condition, F(1,28) = 6.19, p=0.02, padj\u00a0=\u00a00.057, \u03b7p2 =\u00a00.18 (Figure 3C). Post\u00a0hoc tests indicated that although anterior insula activation was similar across conditions for remember judgments, t(28) = 0.12, p=0.91, it was enhanced in the A-B\u2019 condition for familiar judgments, t(28) = 3.18, p=0.004. In addition, the cluster encompassing the dACC and dlPFC showed more pronounced engagement in remember than in familiar judgments across both experimental conditions, F(1,28) = 29.49, p<0.001, padj\u00a0<0.001, \u03b7p2 =\u00a00.51, but no interaction with condition, F(1,28) = 0.900, p=0.35, padj\u00a0=\u00a00.53, \u03b7p2 =\u00a00.03 (Figure 3C).\n\nTaken together, these results suggest that anterior insular, cingulate, and dlPFC regions track subjective recollection, in line with their role in metacognitive assessments, and in line with the tendency to select memories to submit for performance ranking among remembered answers. At the same time, these regions were enhanced in the A-B\u2019 condition suggesting that these areas may be ideally suited to carry over metacognitive information about subjective assessments associated with different contexts to the decision phase.\n\n#### Hippocampal activations respond to memory accuracy\n\nWe tested whether activation in an anatomical mask of the bilateral hippocampus varied by experimental condition (A-A\u2019 vs. A-B\u2019) and accuracy (correct vs. incorrect). The results revealed a main effect of accuracy, F(1,28) = 6.39, p=0.02, \u03b7p2 =\u00a00.19, with enhanced activation for correct responses. There was also a main effect of condition, F(1,28) = 9.17, p=0.01, \u03b7p2 =\u00a00.25 with enhanced activation in the A-B\u2019 condition. We found no evidence for an accuracy-by-experimental condition interaction, F(1,28) = 0.04, p=0.85, \u03b7p2 =\u00a00.001, suggesting similar retrieval success effects across experimental conditions in the hippocampus.\n\n### Neuroimaging results: decision phase\n\n#### Frontal and cingulo-opercular regions track betting decisions\n\nTo assess whether patterns of activation during memory retrieval persisted during decision making, we took several complementary approaches. First, we examined decision-related activation in the parietal regions that differentiated between conditions during the preceding memory phase. Thus, we performed mixed ANOVAs with condition (A-A\u2019 vs. A-B\u2019), decision (select vs. discard), and their interaction. In the SPL, which showed enhanced activation in the A-A\u2019 condition during the memory phase, we again observed enhanced activation for the A-A\u2019 compared to the A-B\u2019 condition during the decision phase, F(1,28) = 9.29, p=0.01, \u03b7p2 =\u00a00.25. SPL activation was not modulated by the decision to select or discard the memory, F(1,28) = 0.99, p=0.33, \u03b7p2 =\u00a00.03, and the interaction between condition and betting decision was not significant, F(1,28) = 0.30, p=0.59, \u03b7p2 =\u00a00.01 (Figure 4A). In the PCC/precuneus cluster, which showed enhanced activation in the A-B\u2019 condition during the memory phase, we observed a trend for a main effect of condition with greater engagement in the A-A\u2019 condition, F(1,28) = 5.190, p=0.031, padj\u00a0=\u00a00.09, \u03b7p2 =\u00a00.156, no significant main effect of decision to select or discard a response, F(1,28) = 1.62, p=0.21, padj\u00a0=\u00a00.21, \u03b7p2 =\u00a00.06, and no decision by experimental condition interaction, F(1,28) = 0.011, p=0.92, padj\u00a0=\u00a00.92, \u03b7p2 =\u00a00.00 (Figure 4A). Thus, these analyses did not reveal any decision-based modulation in the parietal regions identified during the memory phase.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62520/elife-62520-fig4-v1.jpg)\n\n**Figure 4.:** (A) Differences between select and discard decisions across conditions in the PPC areas identified during the memory phase. (B) Differences between select and discard decisions across conditions for the regions identified during the memory phase that have been implicated in metacognitive monitoring and appraisal. (C) Results of a whole-brain comparison comparing select and discard decisions. Error bars around condition means represent standard error of the mean. R SPL = right superior parietal lobe; PCC = posterior cingulate cortex, dACC = dorsal anterior cingulate; R DLPFC = right dorsolateral prefrontal cortex.\n\nSecond, data analysis during the memory phase also revealed increased activation in the bilateral anterior insula and a cluster including dACC and dlPFC regions, which are consistently implicated in monitoring and control of memory retrieval. These regions showed enhanced activation in the A-B\u2019 condition relative to the A-A\u2019 condition with varying engagement as a function of subjective assessment. They are therefore excellent candidates to carry over metacognitive information about subjective assessments from the memory to the decision phase. Thus, we expected activation in these regions to be modulated by decisions to select or discard responses. In line with this expectation, in the bilateral anterior insula, there was a main effect of decision, F(1,28) = 4.81, p=0.04, padj\u00a0=\u00a00.06, \u03b7p2 =\u00a00.15, along with a decision-by-confidence interaction, F(1,28) = 5.88, p=0.02, padj\u00a0=\u00a00.03, \u03b7p2 =\u00a00.17 (Figure 4B). There was no main effect of experimental condition, F(1,28) = 0.02, p=0.90, padj\u00a0=\u00a00.90, \u03b7p2 =\u00a00.001. A similar pattern emerged in the cluster encompassing right dACC and dlPFC, with a main effect of decision to select, F(1,28) = 8.65, p=0.01, padj\u00a0=\u00a00.03, \u03b7p2 =\u00a00.236, as well as an experimental condition by decision interaction, F(1,28) = 6.09, p=0.02, padj\u00a0=\u00a00.03, \u03b7p2 =\u00a00.18 (Figure 4B). Again, there was no main effect of experimental condition, F(1,28) = 0.07, p=0.79, padj\u00a0=\u00a00.90, \u03b7p2 =\u00a00.003. Across all areas, activation was enhanced for decisions to discard a response, especially in the A-B\u2019 condition (Figure 4B). Thus, although these regions were identified through our experimental manipulation in the memory phase, the effect of the experimental manipulation was no longer dominant during the decision phase, whereas the effect of decision to select or discard emerged.\n\nFinally, we sought to identify regions that were sensitive to memory decisions, by comparing activation for decisions to select or discard a memory using whole-brain analysis. In analogy to the ROI results above, frontal regions showed enhanced activation for the decision to discard a memory, including bilateral middle frontal gyrus extending into the bilateral frontal pole, and the right angular gyrus (Figure 4C). In contrast, the decision to select a response was associated with increased activation in ventral temporal areas and posterior hippocampus (Figure 4C).\n\nTaken together, parietal regions that dissociated between subjective and objective recollection as a function of our experimental manipulation during the memory phase demonstrated overall condition differences during decision making. In contrast, the anterior insula, dACC, and dlPFC showed distinct activation profiles during the memory phase and the decision phase, such that their activation was enhanced when participants discarded a response, especially in the A-B\u2019 condition.\n\n## Discussion\n\nThe goal of the present study was to examine the neural basis underlying subjective recollection and subsequent decision making. To this end, we used an experimental paradigm that allowed us to dissociate subjective recollection from memory accuracy. When participants encountered a target studied item along with a perceptually similar (and semantically identical) lure, their memory accuracy was higher, but their subjective recollection was lower (A-A\u2019 condition) compared to when participants encountered a target studied item along with a lure that was similar to another studied item (A-B\u2019 condition). At the neural level, we observed a dissociation within the PPC during the memory phase of the experiment. Specifically, the A-A\u2019 condition was associated with enhanced activation in the right SPL across both remember and familiar responses. In contrast, the A-B\u2019 condition was associated with enhanced activation in the bilateral precuneus and retrosplenial cortex, which also showed overall greater engagement during remember than during familiar responses in both experimental conditions. Together, these findings suggest that when the retrieval context favors identifying more precise diagnostic features, the resulting higher accuracy is associated with dorsal PPC at the expense of subjective recollection. In contrast, activation in the precuneus and retrosplenial cortex tracks the experience of subjective recollection, which is promoted in a retrieval context that favors global retrieval.\n\nThe PPC has a long-established role in memory retrieval (Wagner et al., 2005), but its precise role is a matter of ongoing debate (Cabeza et al., 2008; Gilmore et al., 2015). It has been implicated as one of the core recollection regions (Gilmore et al., 2015; Rugg and Vilberg, 2013) as well as in the subjective experience of recollection (Simons et al., 2010). However, subjective recollection and the retrieval of accurate details usually go hand in hand, making it difficult to isolate the unique neural underpinnings of the phenomenological experience that lies at the\u00a0heart of episodic memory. At the same time, there is evidence that subjective and objective memory measures can be dissociated (e.g., Harlow and Yonelinas, 2016). For example, older adults give similar or even higher judgments of subjective recollection compared to younger adults, yet they show considerable deficits in measures of objective recollection (Addis et al., 2011; Duarte et al., 2008; Folville et al., 2020; Mark and Rugg, 1998). Dissociations between subjective and objective memory measures are also observed in neuropsychiatric disorders, such as schizophrenia (Huron et al., 1995). At the neural level, a meta-analysis comparing regions implicated in subjective vs. objective recollection\u00a0Spaniol et al., 2009 found that prefrontal areas showed greater engagement in objective\u00a0recollection, whereas parietal, hippocampal, and parahippocampal areas were more strongly associated with subjective recollection. However, objective and subjective recollections were highly correlated in most of these studies, precluding clear conclusions regarding the neural underpinnings of subjective recollection.\n\nThe experimental dissociation between SPL and precuneus/retrosplenial cortex during the memory phase is in line with the attention-to-memory framework (Cabeza et al., 2008) and with recent evidence implicating precuneus in memory vividness (Richter et al., 2016). The A-A\u2019 condition is more likely to encourage the identification of the most diagnostic features from the comparison between the two similar probes (Dobbins et al., 1998). Consistent with this, we found that the A-A\u2019 condition was associated with higher rates of evidence accumulation. Together, our behavioral and neural results converge to suggest that the SPL plays an important role in supporting diagnostic processing during retrieval. These findings are in line with the established role of the SPL in the dorsal attention network (Corbetta and Shulman, 2002) and corroborate a recent suggestion that this region supports higher memory accuracy via its role in perceptual search and attention to probes during retrieval (Sestieri et al., 2017).\n\nThe precuneus showed a different activation profile in our task. In line with previous evidence of the involvement of this area in subjective recollection (Richter et al., 2016), it showed greater activation for remember relative to familiar responses across conditions. Of note, the present results additionally showed overall greater activation in the precuneus in the A-B\u2019 condition, suggesting that this region is modulated by the current retrieval context and can be promoted when a\u00a0more global assessment of the probe is encouraged. The precuneus has been implicated consistently in autobiographical retrieval (McDermott et al., 2009) and may be one of the distinguishing features of individuals with superior memory (Mazzoni et al., 2019). A recent study compared retrieval of recently studied events and autobiographical events (Chen et al., 2017) and found that while memory for recently learned scenes was associated with activation of the posterior middle intraparietal sulcus, autobiographical memories involving scenes engaged the retrosplenial cortex and the precuneus. Autobiographical retrieval was also more likely to evoke subjective recollection, similar to our A-B\u2019 condition. This idea is in accordance with the suggestion that the diagnostic value of the recollective experience varies depending on retrieval context (Dobbins et al., 1998). In line with our behavioral findings, our neural findings reveal a dissociation across parietal regions, with SPL activation tracking the\u00a0retrieval of diagnostic features in the A-A\u2019 condition, and precuneus activation tracking the subjective experience of recollection. Our results are consistent with clinical studies implicating ventral PPC in subjective recollection. One study showed that two patients with inferior parietal lesions (extending into the precuneus in one of the two) exhibited similar levels of recognition memory as did controls but were less likely to report high confidence for correctly recognized items (Hower et al., 2014). Similarly, Simons et al., 2010 showed that patients with bilateral parietal lesions performed as well as matched controls on source memory but exhibited reduced confidence in their source judgments, again linking PPC lesions to impairments in the experience of rich and vivid episodic details typically associated with recollection judgments. Finally, Ciaramelli and colleagues (2017) showed that subjective recollection experiences in healthy controls were marked by multi-featural context retrieval, that is, participants remembered both the position and the color of items that they recognized as old. In contrast, subjective recollections in PPC patients were less likely to involve multi-featural retrieval, indicating a misalignment between subjective and objective recollection following PPC damage. These results may be interpreted in a number of ways. On the one hand, patients may truly experience reduced richness and vividness of remembered details, due perhaps to problems with mental imagery. On the other hand, it is also possible that patients\u2019 deficits are related to difficulties with metacognitive evaluation of memory evidence. By dissociating subjective and objective recollection experimentally and requiring memory selections in anticipation of a social reward, the present study reveals the close interplay between the subjective experience of recollection and metacognitive monitoring, and their role for subsequent decision making.\n\nThe present results also contribute to a growing body of literature examining the contributions of PPC to different aspects of episodic recollection. Using multivoxel pattern analysis, Kuhl and Chun, 2014 showed that the angular gyrus is not only involved in vivid recollections but also carries information about the stimulus category and event-specific information. Notably, these effects were reduced or absent in the SPL, in line with a dissociation between these regions. Angular gyrus activation has also been reported during false memory, that is, when participants experience novel items as studied (McDermott et al., 2017), reinforcing the idea that this area is associated with the processing of the subjective feeling of remembering. Accordingly, a recent account of the role of the angular gyrus in episodic memory suggested that it is involved in contextual integration (Ramanan et al., 2018). More specifically, this account suggests that sensory-perceptual and emotionally salient features are integrated in the angular gyrus and form the basis for the subjective experience of vivid recollection. In line with this account and previous studies, the left angular gyrus showed enhanced activation for remember judgments across both experimental conditions. However, we found that increased subjective recollection in the A-B\u2019 condition was associated with the precuneus instead. Previous studies in which accurate detail retrieval and subjective recollection were examined separately also found these two aspects of episodic memory to be associated with the angular gyrus and the precuneus, respectively (Richter et al., 2016). Of note, in our study, the precuneus showed an overall higher activation in the A-B\u2019 condition and also differentiated remember from familiar responses in the A-A\u2019 condition. Overall, the present results suggest that the precuneus may be involved in enhancing the salience of retrieved memories in line with its role in mental imagery (Cavanna and Trimble, 2006).\n\nAs compared to the A-A\u2019 condition, the A-B\u2019 condition also triggered the\u00a0overall greater activation in the bilateral anterior insula, dACC, and right dlPFC regions during the memory phase. In addition, these regions were more active for remember judgments across both experimental conditions. These results fit well with previous meta-analyses that have implicated the anterior insula in association with the salience of the retrieved output (Kim, 2010). Specifically, the anterior insula may signal salient information during retrieval in light of concurrent goals (Craig, 2009; Fandakova et al., 2018). From this perspective, we speculate that the enhanced anterior insular activation in the A-B\u2019 condition (and in other tasks emphasizing judgments of subjective recollection) reflects the fact that the most goal-salient aspect of the task is to identify which items are subjectively recollected.\n\nIn separate literature on metacognition, the anterior insula as well as the dACC have been implicated in retrospective metacognitive monitoring (Fleck et al., 2006; Morales et al., 2018). Furthermore, lateral PFC regions have been implicated in the evaluation of retrieval outputs in context of current goals and demands (Chua et al., 2006; Fandakova et al., 2014; Kim and Cabeza, 2009), and in making decisions based on retrieved output (Fandakova et al., 2018). For example, Fandakova et al., 2018 showed that the anterior insula and dACC were activated both when participants inaccurately remembered the context in which an object was encountered as well as when they decided to withhold their reports of memory for item\u2013context associations, whereas the anterior PFC was uniquely engaged when participants withheld an answer. The increased engagement of these regions during retrieval in the A-B\u2019 condition is consistent with the idea that this condition poses greater demands on retrospective metacognitive monitoring and control due to a greater tendency to claim recollection despite less mnemonic evidence.\n\nFurthermore, according to metacognitive frameworks, decisions and actions based on memory result from a metacognitive appraisal process (Koriat and Goldsmith, 1996). Thus, the activation profiles of these brain regions, which varied both as function of experimental condition and as function of subjective judgment, are particularly well suited to carry over information about retrieval output from the memory to the decision phase. Consistent with the idea that retrospective metacognitive monitoring processes mediate the effects of subjective recollection on subsequent decision making, the ROIs in the bilateral anterior insula, dACC, and dlPFC found during the memory phase showed enhanced activation when participants decided to discard a response, especially in the A-B\u2019 condition. Thus, it is clear that these regions do not respond to simple variations in memory strength, be it objective or subjective. If this were the case, we would have expected increased activation for remember responses during the memory phase and increased activation of selected memories during the decision phase. Instead, during the memory phase, these regions tracked whether memories were claimed to be recollected, given the relevance of subjective recollection for the upcoming decision. During decisions, however, they were engaged more in eliminating the memories that should not be submitted to count toward participants' final score, the socially motivated reward used in the present study. These results were further supported by the direct comparison of select and discard responses during decision making, which confirmed that lateral PFC is involved in decisions to discard a memory.\n\nIt should be noted that while participants were instructed to select about half of their responses, they placed more than 50% of their answers into the treasure chest, possibly leading to greater demands on monitoring and control to overcome this tendency and to discard a response. Together, these results suggest that when subjective recollection is salient and important for current goals, activation in the anterior insula will signal this during memory retrieval and, together with dACC and lateral PFC, will recapitulate this signal when the output of memory retrieval is evaluated as the basis for decision making.\n\nThis study is limited in that it does not include a direct manipulation of decision demands or relevance of specific task features for decision making. Recent research has underscored contributions of mechanisms signaling decision value (e.g., Vaidya and Badre, 2020) or supporting adaptive changes in decision criteria as the task progresses (e.g., Scimeca et al., 2016), but these factors are not accounted for in the present research. Future studies manipulating incentive structures are needed to better understand the modulatory effects of metacognitive processes for decision making based on memory. We additionally note that the order of the memory and decision phases was not counterbalanced in the present experiment to preserve a naturalistic course of events, such that people render memory responses first and then make decisions about them. However, the manipulation of the order in future research would elucidate the potential effect of committing to a memory decision on subjective evaluations given demonstrated effects of choice on subsequent retention (e.g., Murty et al., 2019). It should also be noted that decision making in the present study was supported via a social motivation, namely the motivation to do well and/or avoid embarrassment due to poor performance. More research is needed to extend the effects of subjective recollection to decision making with financial incentives or other forms of decisions. However, the literature suggests that social and monetary rewards recruit similar neural circuits (Ruff and Fehr, 2014). Moreover, as the present study focused on retrospective metacognitive judgments, future research should also elucidate the degree to which prospective metacognitive judgments, such as judgments of learning, play a similar role for future decision making.\n\nFinally, we found comparable retrieval success effects in the hippocampus between the A-A\u2019 and the A-B\u2019 conditions. These results are consistent with a previous study by Richter et al., 2016 who found that hippocampus activation distinguished between successful vs. unsuccessful retrieval but did not vary with memory precision or subjective vividness. These results tentatively suggest that while hippocampus plays a key role for episodic memory, it is not the main driver of the subjective experience of recollection and is less dependent on the specific context in which retrieval takes place.\n\nTaken together, the present study investigated the neural basis of subjective and objective recollection using an experimental paradigm to dissociate these naturally intertwined aspects of episodic memory. Our results highlight the critical role of distinct PPC\u00a0regions in supporting memory accuracy via the identification of diagnostic feature information associated\u00a0with the SPL.\u00a0In contrast, activation in the retrosplenia cortex and the precuneus was associated with subjective recollection when participants\u00a0retrieved\u00a0item-relevant information\u00a0and\u00a0they did not have to compare opposing mnemonic signals regarding their diagnostic value. In line with the nature of subjective recollection judgments as metacognitive assessments that guide upcoming decision making, insular, cingulate, and lateral frontal regions signal saliency of the retrieved information at retrieval. This will then be carried over to later decision stages where these task-relevant signals are recapitulated and evaluated in the context of concurrent goals. These results provide insights into the neural mechanisms supporting our phenomenological experience of remembering and its assessment in context of our goals. Our findings also open up vistas toward a better understanding of how these mechanisms develop across the life\u00a0span.\n\n## Materials and methods\n\n### Participants\n\nThirty healthy right-handed volunteers (18\u201325 years, M\u00a0=\u00a021.0, SD\u00a0=\u00a01.7, 15 females) with no history of or current neurological or psychiatric illness participated in the study after signing informed consent approved by the Institutional Review Board of the University of California, Davis (protocol #217322). One additional participant took part in the experiment but was excluded from further analyses due to an incidental finding. The sample size was determined based on the moderate effect sizes for the dissociation between objective and subjective memory measures observed in each of the four behavioral experiments included in Hembacher and Ghetti, 2017 and corresponds to the largest sample employed in those behavioral experiments. One participant failed to comply with instructions, resulting in a final sample of 29 participants included in the present analyses.\n\n### Stimuli\n\nStimuli included pairs of 342 color images of familiar everyday objects. These stimuli depicted very similar but distinct versions of the same object selected from Yassa et al., 2011 and from the nternet.\n\n### Experimental design\n\nDuring the encoding task, participants were presented with 342 unique items across three runs (114 items per run). The selection of the individual item from each pair for encoding, allocation of the item to a specific block, and the order of block presentation were randomized across participants. Participants viewed each object for 1500 ms while performing an indoor\u2013outdoor judgment. The placement of the response options (left and right index fingers) was randomized across participants. A jittered fixation cross (500\u20136500 ms) was presented after every image. Encoding runs were performed in the scanner but were not analyzed for the present research questions.\n\nThe retrieval task included a total of 228 2AFC recognition trials distributed across three runs with 76 trials per run. In the 2AFC recognition task, two images, a target and a lure, were presented to the left and right of the center of the screen for 3000 ms. The placement of the target was randomized across trials so that it was equally likely to occur on the left or the right for each participant. In each run, there were a total of 38 A-A\u2019 trials in which the lure depicted a different version of the same object (Figure 1B) and 38 A-B\u2019 trials in which the lure depicted a different version of a studied object that was not concurrently presented on the screen (and was not used as a target in other trials). Thus, all lures resembled studied items, but the target was sometimes presented beside a perceptually similar and familiar lure in the A-A\u2019 condition, and it was sometimes presented next to a perceptually dissimilar but familiar lure in the A-B\u2019 condition. The studied versions of the stimuli used as lures in the A-B\u2019 condition were not included as targets, resulting in two-thirds of all studied items, or 228 trials, that were tested as targets. Targets and lure assignments to conditions were randomized across participants.\n\nThe retrieval task included a memory phase and a decision phase (Figure 1B). During the memory phase, participants were instructed to select the target image by using their left hand if they thought it was the image on the left and their right hand if they thought it was the image on the right. On each side, they could select \u2018remember\u2019 (R) if they vividly recollected the image from the encoding phase with specific details (index finger), \u2018very familiar\u2019 (VF) if they knew they had previously seen the item but could not recall specific details about its presentation (middle finger), or \u2018somewhat familiar\u2019 (SF) if the image was familiar but to a lesser degree (ring finger). Participants were asked to use all response options (see Appendix for exact instructions to participants). After the retrieval phase, a jittered period of 500\u20136500 ms (in 2000 ms steps) preceded the decision phase. For longer jitters of 2500, 4500, and 6500 ms duration (ca. 50% of all trials), a number was presented on the screen every 2000 ms and participants had to press the corresponding number. This active baseline was included to prevent participants from actively thinking about their previously submitted memory response during jittering, while being undemanding enough to avoid forgetting of the preceding answer or interference with the subsequent decision phase.\n\nDuring the decision phase, the two images appeared again at the same locations as during retrieval in the memory phase. Participants were asked to decide whether they wanted to select their response and count it toward their final score. A picture of a treasure chest and a trash can were placed on the left and right sides in the lower half of the screen. If they decided to select their memory, participants were asked to press the button corresponding to the treasure chest, and if they chose to discard their answer they were to press the button corresponding to the trash can (see Appendix for exact instructions to participants). The position of the treasure chest and the trash can on the screen was counterbalanced across participants. The duration of the decision phase was 1500 ms, followed by a jittered fixation period of 500\u20136500 ms. Participants used their pinkies to respond, thereby preventing any motor response overlap across all responses and phases of the experiment. Participants were instructed to select about 50% of the trials. To motivate participants, they were told that their final score would be ranked in comparison to all other students who had participated in the study, and their ranking would be displayed on the screen at the end of the task in the presence of the experimenter. We did not mention anything about subjective judgments or make any connections between participants\u2019 decision to select a response and their subjective judgment during the memory phase. Thus, participants believed that their score was calculated based purely on the objective memory accuracy of the items selected to be placed in the treasure chest. At the end of the task, participants were debriefed that the ranking did not exist.\n\n### Behavioral analyses\n\nAll analyses were conducted in R (R Development Core Team, 2020) using RStudio (Team R Studio, 2020). ANOVAs were performed using the ezANOVA function in the package ez (Lawrence, 2016). We used mixed-effects models to examine the effects of experimental condition on accuracy, subjective recollection, and decision making. Models were implemented using the lme4 package (Bates et al., 2014). Mixed-effects logistic regressions were fit to single-trial data, with intercepts varying by participant. P-values were derived using lmerTest via Satterthwaite\u2019s degrees of freedom (DOF)\u00a0method (Kuznetsova et al., 2017).\u00a0Data were visualized using raincloud plots (Allen et al., 2019) implemented in the ggplot package (Wickham, 2016). To examine condition differences in evidence accumulation, we utilized drift diffusion models. The software fast-dm (Voss et al., 2015) was used to estimate the three parameters: drift rate (v), threshold separation (a), and non-decision time parameter (t0). The starting point bias was set to 0.5 (i.e., in the middle between the two thresholds); all other parameters were set to 0. We estimated v and a separately for each individual's A-A\u2019 and A-B\u2019 conditions, and t0 was estimated to be equal across conditions.\n\n### fMRI acquisition\n\nImages were acquired on Siemens magnetom Skyra 3T scanner (Siemens Medical AG, Erlangen, Germany) using a 32-channel head coil. Each block of the 2AFC recognition test was scanned using a gradient EPI sequence (TR\u00a0=\u00a01500 ms; TE\u00a0=\u00a024.2 ms; FOV\u00a0=\u00a0216\u00d7216\u00d7138; voxel size\u00a0=\u00a03 mm isotropic). A high-resolution MPRAGE scan was obtained for co-registration of the functional images (TR\u00a0=\u00a02500 ms; TE\u00a0=\u00a03.23 ms; TI\u00a0=\u00a01100 ms; flip angle\u00a0=\u00a07 deg; FOV\u00a0=\u00a0226\u00d7226\u00d7180; voxel size\u00a0=\u00a00.7 mm isotropic).\n\n### fMRI data processing\n\nPreprocessing was performed using FEAT in FSL 6.0.1 (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki, Woolrich et al., 2004). The first four scans of each run were discarded to account for field inhomogeneities. Preprocessing included non-brain tissue removal, slice time and motion correction, and spatial smoothing using an 8 mm full-width half-maximum Gaussian filter. A prewhitening technique was used to account for the intrinsic temporal autocorrelation of BOLD imaging. Low-frequency artifacts were removed by applying a high-pass temporal filter (Gaussian-weighted straight-line fitting, sigma\u00a0=\u00a050 s).\u00a0Registration to each participant\u2019s structural image\u00a0using a boundary-based registration algorithm (Greve and Fischl, 2009) and to the MNI template (12 DOF) was carried out using FLIRT (Jenkinson and Smith, 2001).\n\nFirst, to examine differences associated with the A-A\u2019 and the A-B\u2019 conditions, individual time series were modeled separately for the memory and decision phases of each trial with regressors for each condition (GLM1). Second, to examine differences between conditions specifically associated with remember and familiar responses, we modeled individual time series with separate regressors for remember and familiar responses (collapsing across VF and SF responses) in each condition (i.e.,\u00a0A-A\u2019 remember, A-A\u2019 familiar, A-B\u2019 remember, A-B\u2019 familiar) and during each of the memory and decision phases (GLM2). Finally, to investigate the neural signatures associated with decision making based on states of subjective recollection, in GLM3 we modeled individual time series with separate regressors for choosing to select an answer or to discard it (A-A\u2019 select, A-A\u2019 discard, A-B\u2019 select, A-B\u2019 discard) during each of the memory and decision phases.\n\nRegressors in each model were generated by convolving the impulse function related to the onsets of events of interest with a double-gamma hemodynamic response function and were modeled with the response time of each individual trial. Motion correction parameters estimated from the realignment procedure were entered as covariates of no interest in all GLMs. In each GLM, contrast images were computed for each run per subject, spatially normalized, transformed into MNI standard space and submitted to a within-subject fixed-effects analysis across runs. Higher-level analysis across subjects was carried out using a mixed-effects model in FSL (FLAME, Woolrich et al., 2004). Whole-brain images were thresholded at Z\u00a0>\u00a03.1, cluster-corrected at p<0.05. ROI analyses were corrected for multiple comparisons within a contrast using a false discovery rate correction (labeled padj).\n",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "f377e980-f666-4bb3-96e3-b4fa997aa30e",
+      "submission_id": "92679b65-bdec-4d87-b201-fff549701b67",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Muireann Irish, University of Sydney Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62520.sa1](https://doi.org/10.7554/eLife.62520.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis is an interesting and timely study exploring the relationship between objective and subjective indices of recollection to provide novel insights into the mechanisms underlying memory-guided decision-making. Using an innovative experimental paradigm comprising a memory phase and decision phase, the authors provide an elegant behavioural dissociation between two conditions; A-A' condition in which the diagnostic features of stimuli are prioritised thus promoting higher levels of objective accuracy, versus the A-B' condition in which a global appraisal of the target stimulus instantiates a stronger sense of subjective recollection. Results suggest that participants' behaviour is derived from subjective global appraisal, rather than fine-grained consideration of objective features.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Distinct Neural Mechanisms Underlie Subjective and Objective Recollection and Guide Memory-based Decision Making\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by Timothy Behrens as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis fMRI study of young healthy adults explores potential dissociations between subjective recollection and objective episodic memory accuracy within the posterior parietal cortex and PFC. Using a 2AFC object-memory task, the authors reveal clear behavioural dissociations between two conditions; A-A' condition in which the diagnostic features of stimuli are prioritised thus promoting higher levels of objective accuracy, versus the A-B' condition in which a global appraisal of the target stimulus instantiates a stronger sense of subjective recollection. The study further explores metacognitive appraisals of this process, by having participants make judgements about keeping or discarding recollection trials towards an overall score. Taken together, the behavioural and neural dissociations are interesting and timely, and this study should make a useful contribution to the literature.\n\nEssential revisions:\n\n1) The authors need to provide a much more thorough overview of the extant literature. For example, several studies exist that have already examined this dissociation, some cited here (Richter et al., 2016), others not cited or discussed in this way (Duarte, Henson, Graham, Cerebral Cortex 2008; Mark and Rugg, 1998) as well as PPC lesion studies (Davidson et al., Neuropsychologia 2008; Hower et al., Neuropsychologia 2014; Simons et al., 2010; Ciaramelli et al., Cortex 2017). The authors need to clearly articulate how their study builds on and extends previous work, as well as delineating precisely the novel contribution that their study makes.\n\n2) Related to the above point, a substantial body of work exploring the contribution of posterior parietal regions to episodic recollection has not been discussed (e.g. Kuhl and Chun, J.Neuroscience 2014; Favila et al., J. Neuroscience 2018; Frithsen and Miller., Neuropsychologia 2014; Ramanan S. et al., The Neuroscientist, 2018). It would be important to integrate this prior work to appreciate how the current results fit within the broader memory literature.\n\n3) It is not clear how the distinction between subjective and objective recollection maps on to the distinction made between \"local\" and \"global\" processing. The authors should clearly explain what they mean by \"global assessment\" (provide a definition) and why exactly this process might give rise to a stronger sense of subjective recollection (e.g. as proposed in the Introduction). Similarly, the authors should clarify why this \"global assessment\" would also come alongside a situation where \"salient retrieval output will be more likely to serve as a basis for response\".\n\n4) While it is acceptable to have an active baseline to reduce the probability of negative BOLD memory effects, due to greater activity at rest, it seems highly unlikely that the baseline task (\"press a number\") would prevent participants from remembering their previous memory decision just a few seconds earlier. Given that the decision phase task asks participants to keep or trash their prior memory decision, it is not clear how this would be an effective distractor task, as subjects knew they needed to make this decision based on their first memory choice. Furthermore, it is stated in the decision phase results that the authors wanted to determine if patterns of activity in the memory phase persisted in the decision phase, which of course, many did. While the decision phase may provide some behavioural support for the authors' predictions about the two task conditions, it is not clear what the decision vs. memory phase neural comparison is intended to show. Presumably, the authors could compare BOLD responses during the memory phase for select and discard trials and see similar results, though peaks and significance values may vary somewhat.\n\n5) The precise instructions and conditions of the decision phase of the experiment warrant further explanation. Under what circumstances would a participant \u201ctrash\u201d their responses? What were the specific instructions provided to participants? Were participants instructed explicitly on how their score was calculated? Did they think their score simply reflected the correct versus incorrect retrievals? It is not clear from the manuscript whether participants thought their score was calculated based purely on objective retrieval accuracy or whether it also related to their \"remember vs. very familiar vs. somewhat familiar\" judgements. This is a subtle point but one with serious implications for the interpretation of the behavioural and neural data.\n\n6) Related to the neural predictions on the decision phase, there is no discussion of the differences between retrospective and prospective metacognitive monitoring within the PFC (e.g. Fleming and Dolan, Phil. Trans. Royal Society. 2012). Metacognitive monitoring is treated as a unitary construct here.\n\n7) Please detail how the sample size was determined \u2013 was a power analysis conducted? Was this sample a convenience sample or determined based on available resources? What was the stopping rule for data collection? Additionally, was the study pre-registered? Which hypotheses and tests were a-priori, and which were conducted after the data had been examined? Ideally, this should be specified throughout.\n\n8) Further details are required regarding the data analysis strategy. For example, for the mixed-effects modelling approach, was there a reason why only intercepts were allowed to vary by participant but not random slopes? There are good theoretical and empirical reasons to expect that the coefficients for the key effects would also vary by participant, not only the intercepts. Some justification of the modelling decisions is warranted here.\n\n9) Similarly, the reader would benefit from more detail about where the reported results are drawn from \u2013 in the mixed effects framework, for instance, where are the p values derived? Did you use a package like \"lmerTest\" with Satterthwaite's method, or did you do some kind of model selection (comparing between models with/ without focal variables)? As far as I know, lme4 does not, by default, provide p-values.\n\n10) The plots lack the overlaid raw data, making inferences difficult. The authors should overlay the raw datapoints on top of the bar charts so that readers can see for themselves what the distributions look like. Similarly, there are no plotted logistic regression functions, meaning the plots for the behavioural data do not match up with the analytical tools used for the inferential statistics and reported in text \u2013 perhaps this needs at least to be explained in the figure legend?\n\n11) A point worthy of discussion is the possibility that the motivation to do well on this task may not necessarily be financial, but could have been socially driven, in that participants' scores were displayed. Thus, motivation to perform well may not reflect \"reward\" as per previous incentive-compatible confidence studies, but potentially both social reward and punishment (e.g. embarrassment at poor performance). Aspects of the Abstract and Discussion should be re-phrased because the decision task was not incentivized with tangible rewards \u2013 instead, it could also contain the motivation to avoid a penalty like embarrassment.\n\n12) I would like to see some consideration of the laterality of the parietal regions that were recruited during the memory phase, given that it was the right supramarginal gyrus that emerged in the analyses. For example, I was surprised that the angular gyrus did not emerge as a key region during the memory phase and I wonder if the authors could comment on the lack of AG involvement in the current study (e.g. see work by Preston Thakral; Siddharth Ramanan, Heidi Bonnici). It would help the reader to place some of these findings in context and comment on how the paradigms etc. potentially give rise to these differences across studies.\n",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "642e5a28-b851-4c33-ba1a-26af4a1223db",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C1",
+      "claim": "Recollection refers to the retrieval process yielding memories that capture the richness of our past, including such aspects as where, when, or with whom we experienced an event.",
+      "claim_type": "EXPLICIT",
+      "source": "Recollection refers to the retrieval process yielding memories that capture the richness of our past, including such aspects as where, when, or with whom we experienced an event (Yonelinas, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yonelinas, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "7c16d4e2-bffa-4dc6-858f-acc03b87b898",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C2",
+      "claim": "Recollection is often accompanied by the subjective feeling of vivid remembering, a sense of mental reliving the event.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is often accompanied by the subjective feeling of vivid remembering, a sense of mental reliving the event (Tulving, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tulving, 1985",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "c8353cfe-5b78-4c41-b6c0-a07a5dc05b85",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C3",
+      "claim": "At the neural level, recollection is associated with a network of brain regions including the medial temporal lobes, particularly the hippocampus and the parahippocampal gyrus, the retrosplenial/posterior cingulate cortex (PCC) and the precuneus, and the medial prefrontal cortex (PFC) and the angular gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "At the neural level, recollection is associated with a network of brain regions including the medial temporal lobes, particularly the hippocampus and the parahippocampal gyrus, the retrosplenial/posterior cingulate cortex (PCC) and the precuneus, and the medial prefrontal cortex (PFC) and the angular gyrus (Rugg and Vilberg, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rugg and Vilberg, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "cf1a35e6-91b8-40b3-8e37-e2457cf6fee1",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C4",
+      "claim": "The subjective sense of vivid recollection is typically positively correlated with the accuracy of recollected details.",
+      "claim_type": "EXPLICIT",
+      "source": "The subjective sense of vivid recollection is typically positively correlated with the accuracy of recollected details (Moscovitch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moscovitch et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "3c01e536-b2b2-4bef-8a3a-f969976f5d22",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C5",
+      "claim": "The neural network underlying recollection has been reliably identified across studies that require participants either to reflect on their subjective experience or to retrieve specific memory details.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the neural network underlying recollection has been reliably identified across studies that require participants either to reflect on their subjective experience (Daselaar et al., 2006; Vilberg and Rugg, 2007) or to retrieve specific memory details (Dobbins et al., 2002; Mitchell and Johnson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "3b591e8f-a026-4c75-ab49-2bfaa15c8e55",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C6",
+      "claim": "Adults are more likely to correctly identify a studied item in a two alternative forced-choice (2AFC) task if the distractor corresponds to a non-studied exemplar of the target or a different section of the same scene (i.e., A-A' condition) than if the distractor corresponds to a non-studied exemplar of a different studied item (i.e., A-B' condition).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, after studying objects, faces, or parts of scenes, adults are more likely to correctly identify a studied item in a two alternative forced-choice (2AFC) task if the distractor corresponds to a non-studied exemplar of the target or a different section of the same scene (i.e., A-A' condition) than if the distractor corresponds to a non-studied exemplar of a different studied item (i.e., A-B' condition) (Dobbins et al., 1998; Heathcote et al., 2009; Hembacher and Ghetti, 2017; Tulving, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "991b846b-166a-43b9-828a-748d6018bd16",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C7",
+      "claim": "Participants are consistently less likely to claim subjective recollection in the A-A' condition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, participants are consistently less likely to claim subjective recollection in the A-A' condition, likely because it forces them to identify the most diagnostic feature from the comparison between the two perceptually similar probes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the experimental paradigm and cited behavioral patterns",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "3e20d9f1-b9a2-4569-9a0c-a7150984f633",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C8",
+      "claim": "In the A-A' condition, individuals may recognize the challenge of identifying a diagnostic feature or may base their subjective recollection judgment only on that feature rather than on the entire experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite gaining in memory accuracy, individuals may therefore recognize the challenge of identifying a diagnostic feature or may base their subjective recollection judgment only on that feature rather than on the entire experience (Dobbins et al., 1998; Hembacher and Ghetti, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dobbins et al., 1998 and Hembacher and Ghetti, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "596e0829-7380-44db-8e13-68b7a7c6e06d",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C9",
+      "claim": "Memory accuracy was higher in the A-A' than in the A-B' condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, memory accuracy was higher in the A-A' than in the A-B' condition, estimated difference (Est.) = 0.38, SE = 0.05, p<0.0001 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data and shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "cf03c1a3-264a-4712-be7a-a83790999f8a",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C10",
+      "claim": "There was a higher rate of remember responses in the A-B' than in the A-A' condition.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, there was an effect of experimental condition, Est. = 1.35, SE = 0.11, p<0.0001, with a higher rate of remember responses in the A-B' than in the A-A' condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "74a77b50-e84c-4db5-8613-04f906be232a",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C11",
+      "claim": "The interaction between experimental condition and accuracy was significant, suggesting that although remember judgments were overall more likely in the A-B' condition, the difference as compared with the A-A' condition was more pronounced for incorrect responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between experimental condition and accuracy was also significant, Est. = \u22120.64, SE = 0.13, p<0.0001, suggesting that although remember judgments were overall more likely in the A-B' condition, the difference as compared with the A-A' condition was more pronounced for incorrect responses (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data and shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "7677c4c2-a3ce-4189-8207-61a5fb7102b4",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C12",
+      "claim": "Remember responses were overall more likely for accurate than for inaccurate responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction was found above and beyond the expected main effect of accuracy showing that remember responses were overall more likely for accurate than for inaccurate responses, Est. = 0.96, SE = 0.10, p<0.0001 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data and shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "deca4c88-dbe7-4cca-b70a-758b0bda20fe",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C13",
+      "claim": "Participants were more likely to select an answer to count toward their final score in the A-B' than in the A-A' condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were more likely to select an answer to count toward their final score in the A-B' than in the A-A' condition, Est. = 0.72, SE = 0.12, p<0.0001, above and beyond the greater tendency to select memories associated with remember relative to familiar judgments, Est. = 1.64, SE = 0.20, p<0.0001, and with accurate compared to inaccurate responses, Est. = 1.02, SE = 0.09, p<0.0001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "88bebbbb-2d15-458e-95d6-5aba828364a6",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C14",
+      "claim": "A three-way interaction was observed between condition, rating, and accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, we also observed a three-way interaction between condition, rating, and accuracy, Est. = \u22120.78, SE = 0.30, p=0.02 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of experimental data and shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "2a4247fc-bf97-464a-9f51-49f21fe31f87",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C15",
+      "claim": "For correct responses, selecting a response was more likely in the A-B' than in the A-A' condition.",
+      "claim_type": "EXPLICIT",
+      "source": "For correct responses, selecting a response was more likely in the A-B' than in the A-A' condition, Est. = 0.45, SE = 0.08, p<0.0001, and more frequent for remember than for familiar judgments, Est. = 2.69, SE = 0.14, p<0.0001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "bcbf591d-9b9f-4e0e-93b2-6d1ba6dc4957",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C16",
+      "claim": "There was a significant condition by subjective judgment interaction for correct responses, such that selection rates were similar for remember ratings between conditions, but participants extended their tendency to select A-B' trials even to some familiar judgments.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also a significant condition by subjective judgment interaction, Est. = \u22120.64, SE = 0.18, p=0.0004, such that selection rates were similar for remember ratings between conditions, but participants extended their tendency to select A-B' trials even to some familiar judgments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "af4edfba-782a-495a-9c33-0fdf4a800254",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C17",
+      "claim": "Participants showed higher drift rate estimates in the A-A' condition than in the A-B' condition.",
+      "claim_type": "EXPLICIT",
+      "source": "An ANOVA with condition (A-A' vs. A-B') as a within-subject factor revealed significant differences in drift rate, F(1,28) = 15.48, p=0.002, \u03b7p2 = 0.36, with higher drift rate estimates in the A-A' condition, M = 2.06, SD = 0.62, than in the A-B' condition, M = 1.22, SD = 0.61.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of drift diffusion model parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "e8617b66-4075-4bad-abb7-946646198f0c",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C18",
+      "claim": "Threshold separation did not differ between conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Threshold separation, reflecting how cautious participants were in their memory choice, did not differ between conditions, F(1,28) = 3.59, p=0.07, \u03b7p2 = 0.11 (A-A': M = 2.42, SD = 0.25; A-B': M = 2.51, SD = 0.21).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of drift diffusion model parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "4eda3ca4-e9a7-4c6f-ba8d-1c17857daf02",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C19",
+      "claim": "Participants showed faster evidence accumulation in the A-A' than in the A-B' condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, evidence accumulation followed the pattern found for accuracy differences between conditions, such that participants showed faster evidence accumulation in the A-A' than in the A-B' condition, consistent with the idea that the A-A' condition promotes specific retrieval of more diagnostic features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on drift diffusion model results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "d4ef194d-05f0-4a76-9bd3-6648d90c6c3d",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C20",
+      "claim": "The contrast A-A' > A-B' revealed greater activation in a cluster encompassing the right superior parietal lobe (SPL) and the supramarginal gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our expectations, the contrast A-A' > A-B' revealed greater activation in a cluster encompassing the right superior parietal lobe (SPL) and the supramarginal gyrus (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fMRI data analysis and shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "406eff41-9a5e-4c93-a719-3d1cf8744462",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C21",
+      "claim": "The contrast A-B' > A-A' revealed greater activation in the bilateral retrosplenial cortex, PCC, and the precuneus.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the contrast A-B' > A-A' revealed greater activation in the bilateral retrosplenial cortex, PCC, and the precuneus (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fMRI data analysis and shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "4bd67d84-ed34-4fb0-b56e-56cbf8cdae6a",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C22",
+      "claim": "In the SPL, there were neither differences between remember and familiar judgments, nor an interaction between subjective judgment and experimental condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SPL, which showed higher activation in the A-A' condition, there were neither differences between remember and familiar judgments, F(1,28) = 0.03, p=0.86, \u03b7p2 = 0.001, nor an interaction between subjective judgment and experimental condition, F(1,28) = 0.60, p=0.45, \u03b7p2 = 0.021 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of fMRI data and shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "1e2cccc0-2132-43ab-a3c2-5f06fbafdf51",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C23",
+      "claim": "In the PCC/precuneus cluster, activation was enhanced for remember relative to familiar judgments across both experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the PCC/precuneus cluster, which showed higher activation in the A-B' condition, activation was enhanced for remember relative to familiar judgments across both experimental conditions, F(1,28) = 30.54, p<0.001, padj < 0.001, \u03b7p2 = 0.52 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of fMRI data and shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "79b25bd1-4ba4-48dd-9c49-2b68de6a387f",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C24",
+      "claim": "There was no significant interaction between subjective judgment and experimental condition in the PCC/precuneus region.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no significant interaction between subjective judgment and experimental condition in this region, F(1,28) = 0.02, p=0.90, padj = 0.90, \u03b7p2 = 0.001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "77a52267-4beb-4e9e-9a2b-fafde77adde6",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C25",
+      "claim": "The left angular gyrus showed greater activation for remember than for familiar judgments across both experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional analyses comparing remember to familiar judgments in each experimental condition demonstrated that the left angular gyrus showed greater activation for remember than for familiar judgments across both experimental conditions (see Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of fMRI data and shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "42441528-d8f7-4d82-b7d8-1dc17411e3b0",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C26",
+      "claim": "The contrast between A-B' and A-A' revealed increased activation in the bilateral anterior insula, the dACC, and the right dorsolateral PFC (dlPFC).",
+      "claim_type": "EXPLICIT",
+      "source": "The contrast between A-B' and A-A' also revealed increased activation in the bilateral anterior insula, the dACC, and the right dorsolateral PFC (dlPFC) (Figure 3A), regions that have been implicated in retrospective metacognitive assessments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fMRI data analysis and shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "536ed5fe-b59b-44b6-b38f-bfd909dbc39f",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C27",
+      "claim": "The bilateral anterior insula showed enhanced activation for remember relative to familiar judgments across conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The bilateral anterior insula showed enhanced activation for remember relative to familiar judgments across conditions, F(1,28) = 73.43, p<0.001, \u03b7p2 = 0.72.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "a8946c5c-385c-4472-a871-e4037f550b10",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C28",
+      "claim": "The bilateral anterior insula showed an interaction between subjective judgment and experimental condition.",
+      "claim_type": "EXPLICIT",
+      "source": "This main effect was accompanied by an interaction with experimental condition, F(1,28) = 6.19, p=0.02, padj = 0.057, \u03b7p2 = 0.18 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of fMRI data and shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "e88e2e2c-3e76-454e-91fd-a9c5f1bbec69",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C29",
+      "claim": "Anterior insula activation was similar across conditions for remember judgments, but was enhanced in the A-B' condition for familiar judgments.",
+      "claim_type": "EXPLICIT",
+      "source": "Post hoc tests indicated that although anterior insula activation was similar across conditions for remember judgments, t(28) = 0.12, p=0.91, it was enhanced in the A-B' condition for familiar judgments, t(28) = 3.18, p=0.004.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "8757a06c-84e6-4e84-b182-2232d30c8bf9",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C30",
+      "claim": "The cluster encompassing the dACC and dlPFC showed more pronounced engagement in remember than in familiar judgments across both experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the cluster encompassing the dACC and dlPFC showed more pronounced engagement in remember than in familiar judgments across both experimental conditions, F(1,28) = 29.49, p<0.001, padj <0.001, \u03b7p2 = 0.51, but no interaction with condition, F(1,28) = 0.900, p=0.35, padj = 0.53, \u03b7p2 = 0.03 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of fMRI data and shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "aba928d6-8d6b-4715-abfd-5ae8a6772720",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C31",
+      "claim": "Hippocampal activation showed a main effect of accuracy, with enhanced activation for correct responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed a main effect of accuracy, F(1,28) = 6.39, p=0.02, \u03b7p2 = 0.19, with enhanced activation for correct responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data from hippocampal ROI",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "696bab82-734f-4c84-a670-7a642417b6db",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C32",
+      "claim": "Hippocampal activation showed a main effect of condition with enhanced activation in the A-B' condition.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also a main effect of condition, F(1,28) = 9.17, p=0.01, \u03b7p2 = 0.25 with enhanced activation in the A-B' condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data from hippocampal ROI",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "6c00268c-fa62-4697-9458-720165769462",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C33",
+      "claim": "There was no evidence for an accuracy-by-experimental condition interaction in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence for an accuracy-by-experimental condition interaction, F(1,28) = 0.04, p=0.85, \u03b7p2 = 0.001, suggesting similar retrieval success effects across experimental conditions in the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data from hippocampal ROI",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "534b62f7-1b1f-46d1-920f-7e6ec64caf4d",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C34",
+      "claim": "In the SPL, enhanced activation was observed for the A-A' compared to the A-B' condition during the decision phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SPL, which showed enhanced activation in the A-A' condition during the memory phase, we again observed enhanced activation for the A-A' compared to the A-B' condition during the decision phase, F(1,28) = 9.29, p=0.01, \u03b7p2 = 0.25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data during decision phase",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "aa1d4e94-223a-4b6b-8044-ba09de4469c4",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C35",
+      "claim": "SPL activation was not modulated by the decision to select or discard the memory.",
+      "claim_type": "EXPLICIT",
+      "source": "SPL activation was not modulated by the decision to select or discard the memory, F(1,28) = 0.99, p=0.33, \u03b7p2 = 0.03, and the interaction between condition and betting decision was not significant, F(1,28) = 0.30, p=0.59, \u03b7p2 = 0.01 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of fMRI data during decision phase and shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "d78e6111-66fd-47f1-9a7f-ec863c142054",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C36",
+      "claim": "In the PCC/precuneus cluster, there was a trend for a main effect of condition with greater engagement in the A-A' condition during the decision phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PCC/precuneus cluster, which showed enhanced activation in the A-B' condition during the memory phase, we observed a trend for a main effect of condition with greater engagement in the A-A' condition, F(1,28) = 5.190, p=0.031, padj = 0.09, \u03b7p2 = 0.156, no significant main effect of decision to select or discard a response, F(1,28) = 1.62, p=0.21, padj = 0.21, \u03b7p2 = 0.06, and no decision by experimental condition interaction, F(1,28) = 0.011, p=0.92, padj = 0.92, \u03b7p2 = 0.00 (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of fMRI data during decision phase and shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "34b19267-3dd9-40a5-b013-08a5174a0c83",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C37",
+      "claim": "In the bilateral anterior insula, there was a main effect of decision during the decision phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this expectation, in the bilateral anterior insula, there was a main effect of decision, F(1,28) = 4.81, p=0.04, padj = 0.06, \u03b7p2 = 0.15, along with a decision-by-confidence interaction, F(1,28) = 5.88, p=0.02, padj = 0.03, \u03b7p2 = 0.17 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of fMRI data during decision phase and shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "fb32f115-7083-408a-b609-2421af0cd60d",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C38",
+      "claim": "In the bilateral anterior insula, there was no main effect of experimental condition during the decision phase.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no main effect of experimental condition, F(1,28) = 0.02, p=0.90, padj = 0.90, \u03b7p2 = 0.001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data during decision phase",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "a93b1025-8a3e-4028-af75-ec52a446d01d",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C39",
+      "claim": "In the cluster encompassing right dACC and dlPFC, there was a main effect of decision to select during the decision phase.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar pattern emerged in the cluster encompassing right dACC and dlPFC, with a main effect of decision to select, F(1,28) = 8.65, p=0.01, padj = 0.03, \u03b7p2 = 0.236, as well as an experimental condition by decision interaction, F(1,28) = 6.09, p=0.02, padj = 0.03, \u03b7p2 = 0.18 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of fMRI data during decision phase and shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "ae3d16d7-d493-4505-8086-e7aae7b74e42",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C40",
+      "claim": "In the cluster encompassing right dACC and dlPFC, there was no main effect of experimental condition during the decision phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, there was no main effect of experimental condition, F(1,28) = 0.07, p=0.79, padj = 0.90, \u03b7p2 = 0.003.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data during decision phase",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "a48b2dbf-fea4-46f0-b73f-f5588c89e71a",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C41",
+      "claim": "Across all areas, activation was enhanced for decisions to discard a response, especially in the A-B' condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all areas, activation was enhanced for decisions to discard a response, especially in the A-B' condition (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of fMRI data during decision phase and shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "84d9611e-7833-4b39-9a68-5df1f406b952",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C42",
+      "claim": "Frontal regions showed enhanced activation for the decision to discard a memory, including bilateral middle frontal gyrus extending into the bilateral frontal pole, and the right angular gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "In analogy to the ROI results above, frontal regions showed enhanced activation for the decision to discard a memory, including bilateral middle frontal gyrus extending into the bilateral frontal pole, and the right angular gyrus (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by whole-brain fMRI analysis during decision phase and shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "ba7dc31f-bf8a-459b-812b-a6b124db77ec",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C43",
+      "claim": "The decision to select a response was associated with increased activation in ventral temporal areas and posterior hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the decision to select a response was associated with increased activation in ventral temporal areas and posterior hippocampus (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by whole-brain fMRI analysis during decision phase and shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "57344721-1e8d-409f-b690-361bb635ee23",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C44",
+      "claim": "When participants encountered a target studied item along with a perceptually similar lure, their memory accuracy was higher, but their subjective recollection was lower (A-A' condition) compared to when participants encountered a target studied item along with a lure that was similar to another studied item (A-B' condition).",
+      "claim_type": "EXPLICIT",
+      "source": "When participants encountered a target studied item along with a perceptually similar (and semantically identical) lure, their memory accuracy was higher, but their subjective recollection was lower (A-A' condition) compared to when participants encountered a target studied item along with a lure that was similar to another studied item (A-B' condition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of behavioral findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "f30232d9-5db7-4da9-8761-f2e0454e3500",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C45",
+      "claim": "The A-A' condition was associated with enhanced activation in the right SPL across both remember and familiar responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the A-A' condition was associated with enhanced activation in the right SPL across both remember and familiar responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of fMRI findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "4e91ea00-22d0-41c8-b211-42f5a93620a4",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C46",
+      "claim": "The A-B' condition was associated with enhanced activation in the bilateral precuneus and retrosplenial cortex, which also showed overall greater engagement during remember than during familiar responses in both experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the A-B' condition was associated with enhanced activation in the bilateral precuneus and retrosplenial cortex, which also showed overall greater engagement during remember than during familiar responses in both experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of fMRI findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "5122fe07-c74d-4bb7-b9a9-bfbeda4512fc",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C47",
+      "claim": "When the retrieval context favors identifying more precise diagnostic features, the resulting higher accuracy is associated with dorsal PPC at the expense of subjective recollection.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest that when the retrieval context favors identifying more precise diagnostic features, the resulting higher accuracy is associated with dorsal PPC at the expense of subjective recollection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the pattern of fMRI and behavioral results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "35f9084a-39a8-4721-8cc5-53305407a0ff",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C48",
+      "claim": "Activation in the precuneus and retrosplenial cortex tracks the experience of subjective recollection, which is promoted in a retrieval context that favors global retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, activation in the precuneus and retrosplenial cortex tracks the experience of subjective recollection, which is promoted in a retrieval context that favors global retrieval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the pattern of fMRI and behavioral results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "a8e0374c-76d1-49f7-8bf6-9cce1715cb88",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C49",
+      "claim": "Regions of the posterior parietal cortex (PPC) have been associated with retrieval of accurate details as well as with subjective recollection.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions of the posterior parietal cortex (PPC) have been associated with retrieval of accurate details (Wagner et al., 2005) as well as with subjective recollection (Chua et al., 2006; Simons et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "93f5f88d-09d1-43d6-91d1-b854c6b06895",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C51",
+      "claim": "High-performing older adults showed similar levels of subjective recollection to younger adults but lower levels of objective recollection.",
+      "claim_type": "EXPLICIT",
+      "source": "High-performing older adults showed similar levels of subjective recollection to younger adults but lower levels of objective recollection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Duarte et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "0a4148d2-bbe8-4c8f-ae7a-6ff5d9f3b8f3",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C52",
+      "claim": "While older adults displayed significantly lower objective memory, there were no age differences in subjective recollection.",
+      "claim_type": "EXPLICIT",
+      "source": "While older adults displayed significantly lower objective memory, there were no age differences in subjective recollection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mark and Rugg, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "e6540efb-ddce-49ca-887a-2eacbe221237",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C53",
+      "claim": "Frithsen and Miller, 2014 showed enhanced activation in the angular gyrus in association with subjective recollection.",
+      "claim_type": "EXPLICIT",
+      "source": "In a direct comparison of subjective (remember-know procedure) and objective recollection (source memory test), Frithsen and Miller, 2014 showed enhanced activation in the angular gyrus in association with subjective recollection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Frithsen and Miller, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "4756f6ad-9996-40de-9c94-974956e30603",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C54",
+      "claim": "Richter et al., 2016 reported that activation in the angular gyrus was associated with objective memory precision, whereas activation in the precuneus was associated with subjective memory vividness.",
+      "claim_type": "EXPLICIT",
+      "source": "Further dissociating the precision of memory retrieval from memory vividness, Richter et al., 2016 reported that activation in the angular gyrus was associated with objective memory precision, whereas activation in the precuneus was associated with subjective memory vividness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Richter et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "edc24e97-05a8-44d7-88f2-ede5d43a9a5b",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C55",
+      "claim": "Memory goals biased feature representation toward relevant information in dorsal PPC but not in ventral PPC.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrated that memory goals biased feature representation toward relevant information in dorsal PPC but not in ventral PPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Favila et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "31230fac-3295-404d-abe6-fd840bf8600c",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C56",
+      "claim": "Metacognitive assessments of decision confidence have been associated with activation in dorsal anterior cingulate cortex (dACC) and anterior insula supporting performance or error monitoring.",
+      "claim_type": "EXPLICIT",
+      "source": "Metacognitive assessments of decision confidence, which represent retrospective metacognitive monitoring, have been associated with activation in dorsal anterior cingulate cortex (dACC) and anterior insula supporting performance or error monitoring (Fandakova et al., 2018), and with activation in lateral PFC to support the evaluation of retrieved content in the context of current task demands (Bang and Fleming, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fandakova et al., 2018 and Bang and Fleming, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "efacef58-8a89-4018-bd84-b7162a1fb037",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C57",
+      "claim": "Participants were more likely to bet on their responses in the A-B' condition in anticipation of a social reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a behavioral study found that participants were more likely to bet on their responses in the A-B' condition in anticipation of a social reward (Hembacher and Ghetti, 2017), suggesting that cues utilized to support subjective recollection are more heavily factored in subsequent decision making than cues associated with accurate response selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hembacher and Ghetti, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "6562b62a-8861-4ad8-9fc8-67f9ac58ee26",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C58",
+      "claim": "The A-A' condition was associated with higher rates of evidence accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we found that the A-A' condition was associated with higher rates of evidence accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by drift diffusion model analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "589fa77b-c64f-4166-a71d-e9054bb28add",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C59",
+      "claim": "The SPL plays an important role in supporting diagnostic processing during retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our behavioral and neural results converge to suggest that the SPL plays an important role in supporting diagnostic processing during retrieval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on combined behavioral and fMRI results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "91cb68a4-159a-41d8-8125-4758f0e8d206",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C60",
+      "claim": "The SPL has an established role in the dorsal attention network.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in line with the established role of the SPL in the dorsal attention network (Corbetta and Shulman, 2002) and corroborate a recent suggestion that this region supports higher memory accuracy via its role in perceptual search and attention to probes during retrieval (Sestieri et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Corbetta and Shulman, 2002 and Sestieri et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "77335742-1a9e-4b00-9c44-98a240754bc3",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C61",
+      "claim": "The precuneus has been implicated consistently in autobiographical retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "The precuneus has been implicated consistently in autobiographical retrieval (McDermott et al., 2009) and may be one of the distinguishing features of individuals with superior memory (Mazzoni et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McDermott et al., 2009 and Mazzoni et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "94e5c3ad-1210-4ed4-a3cc-bab6f2031ed9",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C62",
+      "claim": "Memory for recently learned scenes was associated with activation of the posterior middle intraparietal sulcus, while autobiographical memories involving scenes engaged the retrosplenial cortex and the precuneus.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study compared retrieval of recently studied events and autobiographical events (Chen et al., 2017) and found that while memory for recently learned scenes was associated with activation of the posterior middle intraparietal sulcus, autobiographical memories involving scenes engaged the retrosplenial cortex and the precuneus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "b58ac096-88c9-49ba-9378-b4d85c23e404",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C63",
+      "claim": "The anterior insula may signal salient information during retrieval in light of concurrent goals.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the anterior insula may signal salient information during retrieval in light of concurrent goals (Craig, 2009; Fandakova et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Craig, 2009 and Fandakova et al., 2018",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "670162a0-4a49-4b47-9d14-b653151c7dfc",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C64",
+      "claim": "The anterior insula and dACC have been implicated in retrospective metacognitive monitoring.",
+      "claim_type": "EXPLICIT",
+      "source": "In separate literature on metacognition, the anterior insula as well as the dACC have been implicated in retrospective metacognitive monitoring (Fleck et al., 2006; Morales et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fleck et al., 2006 and Morales et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "852e2342-f085-4dbd-b80e-174cf9c997a3",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C65",
+      "claim": "Lateral PFC regions have been implicated in the evaluation of retrieval outputs in context of current goals and demands.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, lateral PFC regions have been implicated in the evaluation of retrieval outputs in context of current goals and demands (Chua et al., 2006; Fandakova et al., 2014; Kim and Cabeza, 2009), and in making decisions based on retrieved output (Fandakova et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "7c7031b9-ea6e-4574-8be0-b949928b3b88",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C66",
+      "claim": "Fandakova et al., 2018 showed that the anterior insula and dACC were activated both when participants inaccurately remembered the context in which an object was encountered as well as when they decided to withhold their reports of memory for item\u2013context associations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Fandakova et al., 2018 showed that the anterior insula and dACC were activated both when participants inaccurately remembered the context in which an object was encountered as well as when they decided to withhold their reports of memory for item\u2013context associations, whereas the anterior PFC was uniquely engaged when participants withheld an answer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fandakova et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "a6ef75d2-a300-4fc7-8122-05418cc88a4b",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C67",
+      "claim": "Hippocampus activation distinguished between successful vs. unsuccessful retrieval but did not vary with memory precision or subjective vividness.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with a previous study by Richter et al., 2016 who found that hippocampus activation distinguished between successful vs. unsuccessful retrieval but did not vary with memory precision or subjective vividness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Richter et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "553598d0-6172-44f2-ab86-45cf93c825c4",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C68",
+      "claim": "While hippocampus plays a key role for episodic memory, it is not the main driver of the subjective experience of recollection and is less dependent on the specific context in which retrieval takes place.",
+      "claim_type": "EXPLICIT",
+      "source": "These results tentatively suggest that while hippocampus plays a key role for episodic memory, it is not the main driver of the subjective experience of recollection and is less dependent on the specific context in which retrieval takes place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on hippocampal findings in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "f8f199d6-82b7-4855-b94e-0d39df6dca0b",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C69",
+      "claim": "Activation in the retrosplenia cortex and the precuneus was associated with subjective recollection when participants retrieved item-relevant information and they did not have to compare opposing mnemonic signals regarding their diagnostic value.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, activation in the retrosplenia cortex and the precuneus was associated with subjective recollection when participants retrieved item-relevant information and they did not have to compare opposing mnemonic signals regarding their diagnostic value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary and interpretation of fMRI findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "967f281a-cfed-4603-87f6-c20cab22b061",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C70",
+      "claim": "Insular, cingulate, and lateral frontal regions signal saliency of the retrieved information at retrieval, which will then be carried over to later decision stages where these task-relevant signals are recapitulated and evaluated in the context of concurrent goals.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the nature of subjective recollection judgments as metacognitive assessments that guide upcoming decision making, insular, cingulate, and lateral frontal regions signal saliency of the retrieved information at retrieval. This will then be carried over to later decision stages where these task-relevant signals are recapitulated and evaluated in the context of concurrent goals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary and interpretation of fMRI findings across memory and decision phases",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "ed52a683-e152-41df-9ae7-220cc4a36c1c",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C71",
+      "claim": "Thirty healthy right-handed volunteers (18\u201325 years, M = 21.0, SD = 1.7, 15 females) with no history of or current neurological or psychiatric illness participated in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty healthy right-handed volunteers (18\u201325 years, M = 21.0, SD = 1.7, 15 females) with no history of or current neurological or psychiatric illness participated in the study after signing informed consent approved by the Institutional Review Board of the University of California, Davis (protocol #217322).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study participants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "616fcdad-f60b-427b-b1dd-e69997bcd01a",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C72",
+      "claim": "One additional participant took part in the experiment but was excluded from further analyses due to an incidental finding.",
+      "claim_type": "EXPLICIT",
+      "source": "One additional participant took part in the experiment but was excluded from further analyses due to an incidental finding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of participant exclusion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "90dbbc06-2fb3-4de1-81d2-1164e81a29a9",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C73",
+      "claim": "One participant failed to comply with instructions, resulting in a final sample of 29 participants included in the present analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "One participant failed to comply with instructions, resulting in a final sample of 29 participants included in the present analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of participant exclusion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "3066f550-3638-441f-96f0-39969374de78",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C74",
+      "claim": "Stimuli included pairs of 342 color images of familiar everyday objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli included pairs of 342 color images of familiar everyday objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental stimuli",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "8b7d769c-84cb-4904-9f86-94cac1824ef8",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C75",
+      "claim": "During the encoding task, participants were presented with 342 unique items across three runs (114 items per run).",
+      "claim_type": "EXPLICIT",
+      "source": "During the encoding task, participants were presented with 342 unique items across three runs (114 items per run).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "aed7d28f-e379-4c40-a434-727d59017b92",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C76",
+      "claim": "Participants viewed each object for 1500 ms while performing an indoor\u2013outdoor judgment.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants viewed each object for 1500 ms while performing an indoor\u2013outdoor judgment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "b31566be-15b6-4252-8952-b315e5a5df8b",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C77",
+      "claim": "The retrieval task included a total of 228 2AFC recognition trials distributed across three runs with 76 trials per run.",
+      "claim_type": "EXPLICIT",
+      "source": "The retrieval task included a total of 228 2AFC recognition trials distributed across three runs with 76 trials per run.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "7750c7aa-82e0-4959-971f-3ca8edc80f91",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C78",
+      "claim": "In each run, there were a total of 38 A-A' trials in which the lure depicted a different version of the same object and 38 A-B' trials in which the lure depicted a different version of a studied object that was not concurrently presented on the screen.",
+      "claim_type": "EXPLICIT",
+      "source": "In each run, there were a total of 38 A-A' trials in which the lure depicted a different version of the same object (Figure 1B) and 38 A-B' trials in which the lure depicted a different version of a studied object that was not concurrently presented on the screen (and was not used as a target in other trials).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental procedure shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "c1fa6a9b-7952-4df3-87af-9e2e8b3ca1de",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C79",
+      "claim": "Participants were instructed to select about 50% of the trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were instructed to select about 50% of the trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental instructions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "aa32d19d-4808-434d-a6b8-0c05be1b2413",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C80",
+      "claim": "Participants were told that their final score would be ranked in comparison to all other students who had participated in the study, and their ranking would be displayed on the screen at the end of the task in the presence of the experimenter.",
+      "claim_type": "EXPLICIT",
+      "source": "To motivate participants, they were told that their final score would be ranked in comparison to all other students who had participated in the study, and their ranking would be displayed on the screen at the end of the task in the presence of the experimenter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental motivation procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "9fffd040-b8d7-4a95-afb6-22e03defb90c",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C81",
+      "claim": "At the end of the task, participants were debriefed that the ranking did not exist.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of the task, participants were debriefed that the ranking did not exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental debriefing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "49cbbc88-915f-4adc-9ad3-482c6c80e128",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C82",
+      "claim": "Images were acquired on Siemens magnetom Skyra 3T scanner using a 32-channel head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were acquired on Siemens magnetom Skyra 3T scanner (Siemens Medical AG, Erlangen, Germany) using a 32-channel head coil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI acquisition parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "575ab9d5-353c-478b-a888-61357105dd7d",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C83",
+      "claim": "Preprocessing was performed using FEAT in FSL 6.0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Preprocessing was performed using FEAT in FSL 6.0.1 (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki, Woolrich et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of fMRI preprocessing methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "c9dae75b-fc3f-49b9-81d3-b5b546f31110",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C84",
+      "claim": "Whole-brain images were thresholded at Z > 3.1, cluster-corrected at p<0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-brain images were thresholded at Z > 3.1, cluster-corrected at p<0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of statistical thresholding for fMRI analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "ebcfddf3-b129-41ef-a541-9e3063a4bd65",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C85",
+      "claim": "The sample size was determined based on the moderate effect sizes for the dissociation between objective and subjective memory measures observed in each of the four behavioral experiments included in Hembacher and Ghetti, 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample size was determined based on the moderate effect sizes for the dissociation between objective and subjective memory measures observed in each of the four behavioral experiments included in Hembacher and Ghetti, 2017 and corresponds to the largest sample employed in those behavioral experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of sample size determination",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "c3806d37-4ebc-4437-af05-9821bd3cdf10",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C86",
+      "claim": "Participants placed more than 50% of their answers into the treasure chest, possibly leading to greater demands on monitoring and control to overcome this tendency and to discard a response.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that while participants were instructed to select about half of their responses, they placed more than 50% of their answers into the treasure chest, possibly leading to greater demands on monitoring and control to overcome this tendency and to discard a response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from experimental data with speculative interpretation",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "e1558838-387f-40ab-9fb1-8bff71562fd6",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C87",
+      "claim": "When subjective recollection is salient and important for current goals, activation in the anterior insula will signal this during memory retrieval and, together with dACC and lateral PFC, will recapitulate this signal when the output of memory retrieval is evaluated as the basis for decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that when subjective recollection is salient and important for current goals, activation in the anterior insula will signal this during memory retrieval and, together with dACC and lateral PFC, will recapitulate this signal when the output of memory retrieval is evaluated as the basis for decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on pattern of fMRI results across memory and decision phases",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "ebb0363a-2745-4219-abc4-e591c98f1499",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C88",
+      "claim": "Social and monetary rewards recruit similar neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the literature suggests that social and monetary rewards recruit similar neural circuits (Ruff and Fehr, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ruff and Fehr, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "ae680d5a-456c-413b-8450-7dc855639c91",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C89",
+      "claim": "The present study highlights the critical role of distinct PPC regions in supporting memory accuracy via the identification of diagnostic feature information associated with the SPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results highlight the critical role of distinct PPC regions in supporting memory accuracy via the identification of diagnostic feature information associated with the SPL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "fd89742a-f5a8-46de-aace-267001da1e3b",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C90",
+      "claim": "The A-A' condition encourages participants to claim recollection only when they remember specific, highly diagnostic details.",
+      "claim_type": "EXPLICIT",
+      "source": "We refer to this reliance on specific details as 'specific retrieval' because it encourages participants to claim recollection only when they remember specific, highly diagnostic details.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conceptual definition based on experimental manipulation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "fbbf5ce2-f486-4a3d-acba-1c9fc61ec581",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C91",
+      "claim": "The A-B' condition encourages a more global assessment of the identity of the presented probes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the A-B' condition encourages a more global assessment of the identity of the presented probes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conceptual definition based on experimental manipulation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "b40b9771-ee74-410b-aecb-0987b0c4ef76",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C92",
+      "claim": "The presentation of the two dissimilar probes in the A-B' condition discourages identification of the most diagnostic features and instead encourages participants to assess their retrieval of the probe as a whole, resulting in more errors, but also in a stronger sense of subjective recollection.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, in this condition, the presentation of the two dissimilar probes discourages identification of the most diagnostic features. Instead, it encourages participants to assess their retrieval of the probe as a whole, resulting in more errors, but also in a stronger sense of subjective recollection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conceptual explanation based on experimental manipulation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "b3ddf443-f54b-4a8d-bb94-2d307c326f71",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C93",
+      "claim": "Greater emphasis on diagnostic features in the A-A' condition would be manifested in greater evidence accumulation relative to the A-B' condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that greater emphasis on diagnostic features in the A-A' condition would be manifested in greater evidence accumulation relative to the A-B' condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis stated in the manuscript",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "2d65a055-0e46-49f8-b170-3a188a0773fd",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C94",
+      "claim": "Enhanced dorsal PPC activation was expected in the A-A' relative to the A-B' condition because the former encourages identification of more precise, diagnostic features.",
+      "claim_type": "EXPLICIT",
+      "source": "We predicted enhanced dorsal PPC activation in the A-A' relative to the A-B' condition because the former encourages identification of more precise, diagnostic features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis stated in the manuscript",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "6bc387b7-1ac9-4d66-92f6-8d9ec34e2fe9",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C95",
+      "claim": "Enhanced ventral PPC activation, including the angular gyrus and/or the precuneus, was expected in the A-B' condition because this condition triggers a more global assessment of the test probes, resulting in greater subjective recollection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we predicted enhanced ventral PPC activation, including the angular gyrus and/or the precuneus, in the A-B' condition because this condition triggers a more global assessment of the test probes, resulting in greater subjective recollection (Hembacher and Ghetti, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis stated in the manuscript with supporting citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "c5a79b35-1535-4cc2-8069-53d8834c6ead",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C96",
+      "claim": "When participants are asked to select a memory, this decision would reflect their assessment of how well they had performed on a given trial in the context of the specific task goal, such as obtaining a higher performance score.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that when participants are asked to select a memory, this decision would reflect their assessment of how well they had performed on a given trial in the context of the specific task goal, such as obtaining a higher performance score (Koriat and Goldsmith, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis stated in the manuscript with supporting citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "9c9e0597-4543-4077-aba5-9367c5fb129c",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C97",
+      "claim": "Neural activation in regions associated with metacognitive monitoring (i.e., anterior insula and dACC) and evaluation (i.e., lateral PFC) was expected to be aligned to participants' selection decisions at the time of making those decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we expected neural activation in regions associated with metacognitive monitoring (i.e., anterior insula and dACC) and evaluation (i.e., lateral PFC) to be aligned to participants' selection decisions at the time of making those decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis stated in the manuscript",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "49386dc4-0834-4feb-a412-399846315a69",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "claim_id": "C98",
+      "claim": "The task would engage fronto-parietal regions, with parietal regions tracking the dissociation between objective and subjective recollection during the memory phase, and insular, cingulate, and lateral PFC regions tracking goal-relevant dimensions of the task associated with subsequent decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we expected that our task would engage fronto-parietal regions, with parietal regions tracking the dissociation between objective and subjective recollection during the memory phase, and insular, cingulate, and lateral PFC regions tracking goal-relevant dimensions of the task associated with subsequent decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis stated in the manuscript",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ea4b6c12-f464-468e-8d50-b07d9bb05455",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The A-A' condition (perceptually similar lure) resulted in higher memory accuracy but lower subjective recollection compared to the A-B' condition (dissimilar lure). This behavioral dissociation was statistically significant, with remember judgments more frequent in A-B' trials, particularly for incorrect responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 and C44 provide converging statistical evidence (p<0.0001) from mixed-effects logistic regressions showing the dissociation between objective accuracy and subjective recollection across conditions. The interaction effects and main effects are appropriately tested and reported with effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "113d51cb-f1c8-410d-9f4a-4ecbd4015d23",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Participants were more likely to select responses for their final score in the A-B' condition, especially for remember judgments. A three-way interaction showed that while selection rates were similar for remember responses across conditions, participants extended their selection tendency to familiar judgments in the A-B' condition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 present a coherent pattern of decision-making behavior supported by appropriate statistical tests (mixed-effects logistic regression with significant three-way interaction, p=0.02). The post-hoc analyses appropriately decompose the interaction effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "9acc3ff9-0e63-449f-919a-834509f9cd4d",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Drift diffusion modeling revealed faster evidence accumulation (higher drift rate) in the A-A' condition compared to A-B', with no difference in threshold separation between conditions. This supports the interpretation that the A-A' condition promotes retrieval of diagnostic features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 and C58 are supported by appropriate drift diffusion model analysis with significant ANOVA results (F(1,28)=15.48, p=0.002, \u03b7p\u00b2=0.36). The interpretation linking drift rate to diagnostic feature retrieval is reasonable given the experimental manipulation, though somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "1b227df3-265d-408f-864e-263a299096e5",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "During memory retrieval, the A-A' condition showed enhanced activation in right superior parietal lobe (SPL) that did not vary with subjective judgments, while the A-B' condition showed enhanced activation in PCC/precuneus. The SPL activation is interpreted as supporting diagnostic processing during retrieval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22, C45, C47, and C59 present a clear neural dissociation supported by whole-brain fMRI analysis (cluster-corrected p<0.05) and ROI analyses. The lack of subjective judgment effects in SPL (F(1,28)=0.03, p=0.86) contrasts appropriately with PCC/precuneus findings. The interpretation is well-grounded in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "2dc3fd54-47db-434c-86a3-22c6e694b259",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The PCC/precuneus cluster showed enhanced activation in the A-B' condition and greater activation for remember versus familiar judgments across both conditions (F(1,28)=30.54, p<0.001). This pattern is interpreted as tracking subjective recollection promoted by global retrieval context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25, C46, C48, and C69 are well-supported by ROI analyses with strong statistical effects. The precuneus showed both condition-specific and subjective judgment effects, providing converging evidence for its role in subjective recollection. The interpretation is consistent with cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "c8d9eb76-c01d-4477-8b29-bd87d75370cc",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The bilateral anterior insula, dACC, and right dlPFC showed enhanced activation in the A-B' condition and for remember judgments. The anterior insula showed an interaction where activation was similar across conditions for remember judgments but enhanced in A-B' for familiar judgments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 present coherent fMRI findings with appropriate statistical tests. The anterior insula interaction (F(1,28)=6.19, p=0.02) is supported by post-hoc tests. However, the padj=0.057 for the interaction suggests marginal significance after correction, which should be noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "a9e3e5eb-c6bf-42c3-bdff-c88f8d9a1204",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Hippocampal activation showed main effects of accuracy and condition (enhanced in A-B'), but no accuracy-by-condition interaction. This is interpreted as suggesting the hippocampus is not the main driver of subjective recollection and is less dependent on retrieval context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C33 present appropriate ROI analyses of hippocampus, but the interpretation in C68 is speculative ('tentatively suggest'). The lack of interaction could have multiple interpretations, and the claim that hippocampus is 'not the main driver' of subjective recollection requires more direct evidence. The reliance on one cited study (C67) for support is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "a751817e-e95b-4898-b9f2-81754f17cdcf",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "During the decision phase, SPL showed enhanced activation in A-A' condition but was not modulated by select/discard decisions. PCC/precuneus showed a trend for greater engagement in A-A' during decision phase with no decision effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 appropriately analyze decision phase activation in parietal ROIs identified during memory phase. The SPL finding is clear (F(1,28)=9.29, p=0.01), while the PCC/precuneus effect is appropriately described as a trend (p=0.031, padj=0.09). The lack of decision effects is properly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "38703421-9063-4f1a-b90a-62ab9d6ed4b4",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "During the decision phase, anterior insula and dACC/dlPFC regions showed enhanced activation for decisions to discard responses, especially in the A-B' condition. These regions showed decision effects but no main effect of experimental condition during this phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 and C87 present a coherent pattern where metacognitive monitoring regions shift from condition-dependent activation during memory to decision-dependent activation. Statistical support is adequate, though some p-values are marginal after correction (padj=0.06 for anterior insula main effect).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "ed621b9e-d90c-428e-967e-7882e4b1f8de",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Whole-brain analysis of the decision phase revealed that discarding responses was associated with enhanced activation in bilateral middle frontal gyrus, frontal pole, and right angular gyrus, while selecting responses was associated with increased activation in ventral temporal areas and posterior hippocampus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by whole-brain analysis (cluster-corrected p<0.05) and provide complementary evidence to the ROI analyses. The findings are clearly presented in Figure 4C.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "df79c6e9-ec7a-4c43-8282-7a1fcd01fcf0",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Insular, cingulate, and lateral frontal regions signal saliency of retrieved information during memory retrieval, which is then carried over to decision stages where these signals are recapitulated and evaluated in the context of concurrent goals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 synthesizes findings from memory and decision phases showing how metacognitive regions track task-relevant information across phases. This interpretation is well-supported by the pattern of results in C26-C30 and C37-C41, though it represents a higher-level inference about information flow.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "f20a3b10-698d-4b8f-9746-88352de35b9c",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establish that recollection involves retrieval of rich contextual details with subjective vividness, is associated with a specific neural network, and typically shows positive correlation between subjective experience and accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 appropriately cite established literature (Yonelinas 2002, Tulving 1985, Rugg & Vilberg 2013, etc.) to establish the theoretical background. These are standard characterizations of recollection in the memory literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "ca119e13-5f6e-4b17-b3ba-d9dc151fe36b",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior research shows that adults have higher accuracy in A-A' versus A-B' conditions but are less likely to claim subjective recollection in A-A', possibly because they base judgments on specific diagnostic features rather than the entire experience.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 appropriately cite multiple prior studies (Dobbins et al. 1998, Hembacher & Ghetti 2017, etc.) establishing the behavioral dissociation that motivates the current study. The interpretation in C7-C8 is supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "63ede565-2bc5-4296-9b4d-714c4f77ebf3",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior literature shows that PPC regions are associated with both accurate detail retrieval and subjective recollection, with some evidence for dissociations between dorsal and ventral PPC in supporting objective versus subjective aspects of memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 appropriately cite relevant prior work establishing the theoretical framework for expecting PPC dissociations. The citations to patient studies, aging studies, and neuroimaging studies provide converging evidence for the possibility of dissociating objective and subjective recollection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "536147e1-9530-4ac1-85f9-06f8fb08b0cb",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior research has implicated anterior insula, dACC, and lateral PFC in metacognitive monitoring and evaluation, with evidence that these regions track decision confidence and support evaluation of retrieved content in context of task goals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C66 appropriately cite literature on metacognition and decision-making to establish the theoretical framework for expecting these regions to link subjective recollection with decision-making. The citations are relevant and appropriately characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "6c99e60e-43a5-45e2-94ea-f89a8e99769b",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior literature establishes that SPL has a role in the dorsal attention network and supports memory accuracy via perceptual search, while precuneus is implicated in autobiographical retrieval and may distinguish individuals with superior memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 appropriately cite relevant literature (Corbetta & Shulman 2002, McDermott et al. 2009, Chen et al. 2017) to support the interpretation of the current findings. The citations are accurately characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study included 29 participants (after exclusions) who completed an encoding task with 342 objects and a retrieval task with 228 2AFC trials split between A-A' and A-B' conditions, with a decision phase where participants selected responses for a purported social ranking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C81 provide clear methodological details about participants, stimuli, and procedures. The experimental design is well-described and appropriate for testing the hypotheses. The use of deception (social ranking) with debriefing is ethically appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "3e6c4296-b529-4901-b94c-4489d1a59443",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "fMRI data were acquired on a 3T Siemens scanner, preprocessed using FSL 6.0.1, and analyzed using cluster-corrected thresholding (Z>3.1, p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 provide standard fMRI acquisition and analysis parameters. The methods are appropriate and clearly described, though some details about preprocessing steps could be more complete.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "be2ffc94-26b3-46dd-a286-84d53a72ab8b",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Sample size was determined based on moderate effect sizes from four prior behavioral experiments in Hembacher & Ghetti 2017.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 provides justification for sample size based on prior work. However, no formal power analysis is reported, and n=29 may be modest for detecting some fMRI effects, particularly interactions. The approach is reasonable but not optimal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "14939ce3-7ee0-4779-add6-f1a9dc8881f2",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Participants selected more than 50% of responses despite instructions to select about half, possibly leading to greater demands on monitoring and control to discard responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 reports an observation about participant behavior with a speculative interpretation. The observation is factual, but the interpretation about increased monitoring demands is plausible but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "8b4ff4ea-0551-4031-988f-da41684eb369",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Social and monetary rewards recruit similar neural circuits according to prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 cites Ruff & Fehr 2014 to justify the use of social reward in the study. This is a reasonable citation, though the generalization may be somewhat broad given the complexity of reward processing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "c892d72f-6ca9-4729-9e80-1c7975f85bd2",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The study highlights the critical role of distinct PPC regions in supporting memory accuracy via identification of diagnostic feature information associated with SPL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is a summary statement supported by the convergence of behavioral (C17-C19) and neural (C20-C22) findings. This represents an appropriate synthesis of the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "824400cc-ff5c-467f-bf50-c491bb9edf16",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The A-A' condition is conceptualized as encouraging 'specific retrieval' based on diagnostic details, while A-B' encourages 'global retrieval' assessing probes as a whole.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 provide conceptual definitions of the experimental manipulations. These definitions are reasonable given the task structure and are supported by the behavioral and neural dissociations observed, though they represent theoretical interpretations rather than direct measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    },
+    {
+      "id": "b090493d-7c1b-4e2b-801e-378247116d2d",
+      "content_id": "29f81f7c-60d8-4ab2-957d-4323a1630995",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The study hypothesized that A-A' would show greater evidence accumulation and dorsal PPC activation, A-B' would show greater ventral PPC activation and subjective recollection, and metacognitive regions would track selection decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C98 clearly state the a priori hypotheses of the study. These hypotheses are well-grounded in prior literature and were largely confirmed by the results, supporting the validity of the theoretical framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:55:11.936596Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "596e0829-7380-44db-8e13-68b7a7c6e06d",
+      "result_id": "ea4b6c12-f464-468e-8d50-b07d9bb05455"
+    },
+    {
+      "claim_id": "cf03c1a3-264a-4712-be7a-a83790999f8a",
+      "result_id": "ea4b6c12-f464-468e-8d50-b07d9bb05455"
+    },
+    {
+      "claim_id": "74a77b50-e84c-4db5-8613-04f906be232a",
+      "result_id": "ea4b6c12-f464-468e-8d50-b07d9bb05455"
+    },
+    {
+      "claim_id": "7677c4c2-a3ce-4189-8207-61a5fb7102b4",
+      "result_id": "ea4b6c12-f464-468e-8d50-b07d9bb05455"
+    },
+    {
+      "claim_id": "57344721-1e8d-409f-b690-361bb635ee23",
+      "result_id": "ea4b6c12-f464-468e-8d50-b07d9bb05455"
+    },
+    {
+      "claim_id": "deca4c88-dbe7-4cca-b70a-758b0bda20fe",
+      "result_id": "113d51cb-f1c8-410d-9f4a-4ecbd4015d23"
+    },
+    {
+      "claim_id": "88bebbbb-2d15-458e-95d6-5aba828364a6",
+      "result_id": "113d51cb-f1c8-410d-9f4a-4ecbd4015d23"
+    },
+    {
+      "claim_id": "2a4247fc-bf97-464a-9f51-49f21fe31f87",
+      "result_id": "113d51cb-f1c8-410d-9f4a-4ecbd4015d23"
+    },
+    {
+      "claim_id": "bcbf591d-9b9f-4e0e-93b2-6d1ba6dc4957",
+      "result_id": "113d51cb-f1c8-410d-9f4a-4ecbd4015d23"
+    },
+    {
+      "claim_id": "af4edfba-782a-495a-9c33-0fdf4a800254",
+      "result_id": "9acc3ff9-0e63-449f-919a-834509f9cd4d"
+    },
+    {
+      "claim_id": "e8617b66-4075-4bad-abb7-946646198f0c",
+      "result_id": "9acc3ff9-0e63-449f-919a-834509f9cd4d"
+    },
+    {
+      "claim_id": "4eda3ca4-e9a7-4c6f-ba8d-1c17857daf02",
+      "result_id": "9acc3ff9-0e63-449f-919a-834509f9cd4d"
+    },
+    {
+      "claim_id": "6562b62a-8861-4ad8-9fc8-67f9ac58ee26",
+      "result_id": "9acc3ff9-0e63-449f-919a-834509f9cd4d"
+    },
+    {
+      "claim_id": "d4ef194d-05f0-4a76-9bd3-6648d90c6c3d",
+      "result_id": "1b227df3-265d-408f-864e-263a299096e5"
+    },
+    {
+      "claim_id": "406eff41-9a5e-4c93-a719-3d1cf8744462",
+      "result_id": "1b227df3-265d-408f-864e-263a299096e5"
+    },
+    {
+      "claim_id": "4bd67d84-ed34-4fb0-b56e-56cbf8cdae6a",
+      "result_id": "1b227df3-265d-408f-864e-263a299096e5"
+    },
+    {
+      "claim_id": "f30232d9-5db7-4da9-8761-f2e0454e3500",
+      "result_id": "1b227df3-265d-408f-864e-263a299096e5"
+    },
+    {
+      "claim_id": "5122fe07-c74d-4bb7-b9a9-bfbeda4512fc",
+      "result_id": "1b227df3-265d-408f-864e-263a299096e5"
+    },
+    {
+      "claim_id": "589fa77b-c64f-4166-a71d-e9054bb28add",
+      "result_id": "1b227df3-265d-408f-864e-263a299096e5"
+    },
+    {
+      "claim_id": "1e2cccc0-2132-43ab-a3c2-5f06fbafdf51",
+      "result_id": "2dc3fd54-47db-434c-86a3-22c6e694b259"
+    },
+    {
+      "claim_id": "79b25bd1-4ba4-48dd-9c49-2b68de6a387f",
+      "result_id": "2dc3fd54-47db-434c-86a3-22c6e694b259"
+    },
+    {
+      "claim_id": "77a52267-4beb-4e9e-9a2b-fafde77adde6",
+      "result_id": "2dc3fd54-47db-434c-86a3-22c6e694b259"
+    },
+    {
+      "claim_id": "4e91ea00-22d0-41c8-b211-42f5a93620a4",
+      "result_id": "2dc3fd54-47db-434c-86a3-22c6e694b259"
+    },
+    {
+      "claim_id": "35f9084a-39a8-4721-8cc5-53305407a0ff",
+      "result_id": "2dc3fd54-47db-434c-86a3-22c6e694b259"
+    },
+    {
+      "claim_id": "f8f199d6-82b7-4855-b94e-0d39df6dca0b",
+      "result_id": "2dc3fd54-47db-434c-86a3-22c6e694b259"
+    },
+    {
+      "claim_id": "42441528-d8f7-4d82-b7d8-1dc17411e3b0",
+      "result_id": "c8d9eb76-c01d-4477-8b29-bd87d75370cc"
+    },
+    {
+      "claim_id": "536ed5fe-b59b-44b6-b38f-bfd909dbc39f",
+      "result_id": "c8d9eb76-c01d-4477-8b29-bd87d75370cc"
+    },
+    {
+      "claim_id": "a8946c5c-385c-4472-a871-e4037f550b10",
+      "result_id": "c8d9eb76-c01d-4477-8b29-bd87d75370cc"
+    },
+    {
+      "claim_id": "e88e2e2c-3e76-454e-91fd-a9c5f1bbec69",
+      "result_id": "c8d9eb76-c01d-4477-8b29-bd87d75370cc"
+    },
+    {
+      "claim_id": "8757a06c-84e6-4e84-b182-2232d30c8bf9",
+      "result_id": "c8d9eb76-c01d-4477-8b29-bd87d75370cc"
+    },
+    {
+      "claim_id": "aba928d6-8d6b-4715-abfd-5ae8a6772720",
+      "result_id": "a9e3e5eb-c6bf-42c3-bdff-c88f8d9a1204"
+    },
+    {
+      "claim_id": "696bab82-734f-4c84-a670-7a642417b6db",
+      "result_id": "a9e3e5eb-c6bf-42c3-bdff-c88f8d9a1204"
+    },
+    {
+      "claim_id": "6c00268c-fa62-4697-9458-720165769462",
+      "result_id": "a9e3e5eb-c6bf-42c3-bdff-c88f8d9a1204"
+    },
+    {
+      "claim_id": "a6ef75d2-a300-4fc7-8122-05418cc88a4b",
+      "result_id": "a9e3e5eb-c6bf-42c3-bdff-c88f8d9a1204"
+    },
+    {
+      "claim_id": "553598d0-6172-44f2-ab86-45cf93c825c4",
+      "result_id": "a9e3e5eb-c6bf-42c3-bdff-c88f8d9a1204"
+    },
+    {
+      "claim_id": "534b62f7-1b1f-46d1-920f-7e6ec64caf4d",
+      "result_id": "a751817e-e95b-4898-b9f2-81754f17cdcf"
+    },
+    {
+      "claim_id": "aa1d4e94-223a-4b6b-8044-ba09de4469c4",
+      "result_id": "a751817e-e95b-4898-b9f2-81754f17cdcf"
+    },
+    {
+      "claim_id": "d78e6111-66fd-47f1-9a7f-ec863c142054",
+      "result_id": "a751817e-e95b-4898-b9f2-81754f17cdcf"
+    },
+    {
+      "claim_id": "34b19267-3dd9-40a5-b013-08a5174a0c83",
+      "result_id": "38703421-9063-4f1a-b90a-62ab9d6ed4b4"
+    },
+    {
+      "claim_id": "fb32f115-7083-408a-b609-2421af0cd60d",
+      "result_id": "38703421-9063-4f1a-b90a-62ab9d6ed4b4"
+    },
+    {
+      "claim_id": "a93b1025-8a3e-4028-af75-ec52a446d01d",
+      "result_id": "38703421-9063-4f1a-b90a-62ab9d6ed4b4"
+    },
+    {
+      "claim_id": "ae3d16d7-d493-4505-8086-e7aae7b74e42",
+      "result_id": "38703421-9063-4f1a-b90a-62ab9d6ed4b4"
+    },
+    {
+      "claim_id": "a48b2dbf-fea4-46f0-b73f-f5588c89e71a",
+      "result_id": "38703421-9063-4f1a-b90a-62ab9d6ed4b4"
+    },
+    {
+      "claim_id": "e1558838-387f-40ab-9fb1-8bff71562fd6",
+      "result_id": "38703421-9063-4f1a-b90a-62ab9d6ed4b4"
+    },
+    {
+      "claim_id": "84d9611e-7833-4b39-9a68-5df1f406b952",
+      "result_id": "ed621b9e-d90c-428e-967e-7882e4b1f8de"
+    },
+    {
+      "claim_id": "ba7dc31f-bf8a-459b-812b-a6b124db77ec",
+      "result_id": "ed621b9e-d90c-428e-967e-7882e4b1f8de"
+    },
+    {
+      "claim_id": "967f281a-cfed-4603-87f6-c20cab22b061",
+      "result_id": "df79c6e9-ec7a-4c43-8282-7a1fcd01fcf0"
+    },
+    {
+      "claim_id": "642e5a28-b851-4c33-ba1a-26af4a1223db",
+      "result_id": "f20a3b10-698d-4b8f-9746-88352de35b9c"
+    },
+    {
+      "claim_id": "7c16d4e2-bffa-4dc6-858f-acc03b87b898",
+      "result_id": "f20a3b10-698d-4b8f-9746-88352de35b9c"
+    },
+    {
+      "claim_id": "c8353cfe-5b78-4c41-b6c0-a07a5dc05b85",
+      "result_id": "f20a3b10-698d-4b8f-9746-88352de35b9c"
+    },
+    {
+      "claim_id": "cf1a35e6-91b8-40b3-8e37-e2457cf6fee1",
+      "result_id": "f20a3b10-698d-4b8f-9746-88352de35b9c"
+    },
+    {
+      "claim_id": "3c01e536-b2b2-4bef-8a3a-f969976f5d22",
+      "result_id": "f20a3b10-698d-4b8f-9746-88352de35b9c"
+    },
+    {
+      "claim_id": "3b591e8f-a026-4c75-ab49-2bfaa15c8e55",
+      "result_id": "ca119e13-5f6e-4b17-b3ba-d9dc151fe36b"
+    },
+    {
+      "claim_id": "991b846b-166a-43b9-828a-748d6018bd16",
+      "result_id": "ca119e13-5f6e-4b17-b3ba-d9dc151fe36b"
+    },
+    {
+      "claim_id": "3e20d9f1-b9a2-4569-9a0c-a7150984f633",
+      "result_id": "ca119e13-5f6e-4b17-b3ba-d9dc151fe36b"
+    },
+    {
+      "claim_id": "a8e0374c-76d1-49f7-8bf6-9cce1715cb88",
+      "result_id": "63ede565-2bc5-4296-9b4d-714c4f77ebf3"
+    },
+    {
+      "claim_id": "93f5f88d-09d1-43d6-91d1-b854c6b06895",
+      "result_id": "63ede565-2bc5-4296-9b4d-714c4f77ebf3"
+    },
+    {
+      "claim_id": "0a4148d2-bbe8-4c8f-ae7a-6ff5d9f3b8f3",
+      "result_id": "63ede565-2bc5-4296-9b4d-714c4f77ebf3"
+    },
+    {
+      "claim_id": "e6540efb-ddce-49ca-887a-2eacbe221237",
+      "result_id": "63ede565-2bc5-4296-9b4d-714c4f77ebf3"
+    },
+    {
+      "claim_id": "4756f6ad-9996-40de-9c94-974956e30603",
+      "result_id": "63ede565-2bc5-4296-9b4d-714c4f77ebf3"
+    },
+    {
+      "claim_id": "edc24e97-05a8-44d7-88f2-ede5d43a9a5b",
+      "result_id": "63ede565-2bc5-4296-9b4d-714c4f77ebf3"
+    },
+    {
+      "claim_id": "31230fac-3295-404d-abe6-fd840bf8600c",
+      "result_id": "536147e1-9530-4ac1-85f9-06f8fb08b0cb"
+    },
+    {
+      "claim_id": "efacef58-8a89-4018-bd84-b7162a1fb037",
+      "result_id": "536147e1-9530-4ac1-85f9-06f8fb08b0cb"
+    },
+    {
+      "claim_id": "b58ac096-88c9-49ba-9378-b4d85c23e404",
+      "result_id": "536147e1-9530-4ac1-85f9-06f8fb08b0cb"
+    },
+    {
+      "claim_id": "670162a0-4a49-4b47-9d14-b653151c7dfc",
+      "result_id": "536147e1-9530-4ac1-85f9-06f8fb08b0cb"
+    },
+    {
+      "claim_id": "852e2342-f085-4dbd-b80e-174cf9c997a3",
+      "result_id": "536147e1-9530-4ac1-85f9-06f8fb08b0cb"
+    },
+    {
+      "claim_id": "7c7031b9-ea6e-4574-8be0-b949928b3b88",
+      "result_id": "536147e1-9530-4ac1-85f9-06f8fb08b0cb"
+    },
+    {
+      "claim_id": "91cb68a4-159a-41d8-8125-4758f0e8d206",
+      "result_id": "6c99e60e-43a5-45e2-94ea-f89a8e99769b"
+    },
+    {
+      "claim_id": "77335742-1a9e-4b00-9c44-98a240754bc3",
+      "result_id": "6c99e60e-43a5-45e2-94ea-f89a8e99769b"
+    },
+    {
+      "claim_id": "94e5c3ad-1210-4ed4-a3cc-bab6f2031ed9",
+      "result_id": "6c99e60e-43a5-45e2-94ea-f89a8e99769b"
+    },
+    {
+      "claim_id": "ed52a683-e152-41df-9ae7-220cc4a36c1c",
+      "result_id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42"
+    },
+    {
+      "claim_id": "616fcdad-f60b-427b-b1dd-e69997bcd01a",
+      "result_id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42"
+    },
+    {
+      "claim_id": "90dbbc06-2fb3-4de1-81d2-1164e81a29a9",
+      "result_id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42"
+    },
+    {
+      "claim_id": "3066f550-3638-441f-96f0-39969374de78",
+      "result_id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42"
+    },
+    {
+      "claim_id": "8b7d769c-84cb-4904-9f86-94cac1824ef8",
+      "result_id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42"
+    },
+    {
+      "claim_id": "aed7d28f-e379-4c40-a434-727d59017b92",
+      "result_id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42"
+    },
+    {
+      "claim_id": "b31566be-15b6-4252-8952-b315e5a5df8b",
+      "result_id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42"
+    },
+    {
+      "claim_id": "7750c7aa-82e0-4959-971f-3ca8edc80f91",
+      "result_id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42"
+    },
+    {
+      "claim_id": "c1fa6a9b-7952-4df3-87af-9e2e8b3ca1de",
+      "result_id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42"
+    },
+    {
+      "claim_id": "aa32d19d-4808-434d-a6b8-0c05be1b2413",
+      "result_id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42"
+    },
+    {
+      "claim_id": "9fffd040-b8d7-4a95-afb6-22e03defb90c",
+      "result_id": "df9f3223-fabc-4ffd-8d48-b0e1e4842f42"
+    },
+    {
+      "claim_id": "49cbbc88-915f-4adc-9ad3-482c6c80e128",
+      "result_id": "3e6c4296-b529-4901-b94c-4489d1a59443"
+    },
+    {
+      "claim_id": "575ab9d5-353c-478b-a888-61357105dd7d",
+      "result_id": "3e6c4296-b529-4901-b94c-4489d1a59443"
+    },
+    {
+      "claim_id": "c9dae75b-fc3f-49b9-81d3-b5b546f31110",
+      "result_id": "3e6c4296-b529-4901-b94c-4489d1a59443"
+    },
+    {
+      "claim_id": "ebcfddf3-b129-41ef-a541-9e3063a4bd65",
+      "result_id": "be2ffc94-26b3-46dd-a286-84d53a72ab8b"
+    },
+    {
+      "claim_id": "c3806d37-4ebc-4437-af05-9821bd3cdf10",
+      "result_id": "14939ce3-7ee0-4779-add6-f1a9dc8881f2"
+    },
+    {
+      "claim_id": "ebb0363a-2745-4219-abc4-e591c98f1499",
+      "result_id": "8b4ff4ea-0551-4031-988f-da41684eb369"
+    },
+    {
+      "claim_id": "ae680d5a-456c-413b-8450-7dc855639c91",
+      "result_id": "c892d72f-6ca9-4729-9e80-1c7975f85bd2"
+    },
+    {
+      "claim_id": "fd89742a-f5a8-46de-aace-267001da1e3b",
+      "result_id": "824400cc-ff5c-467f-bf50-c491bb9edf16"
+    },
+    {
+      "claim_id": "fbbf5ce2-f486-4a3d-acba-1c9fc61ec581",
+      "result_id": "824400cc-ff5c-467f-bf50-c491bb9edf16"
+    },
+    {
+      "claim_id": "b40b9771-ee74-410b-aecb-0987b0c4ef76",
+      "result_id": "824400cc-ff5c-467f-bf50-c491bb9edf16"
+    },
+    {
+      "claim_id": "b3ddf443-f54b-4a8d-bb94-2d307c326f71",
+      "result_id": "b090493d-7c1b-4e2b-801e-378247116d2d"
+    },
+    {
+      "claim_id": "2d65a055-0e46-49f8-b170-3a188a0773fd",
+      "result_id": "b090493d-7c1b-4e2b-801e-378247116d2d"
+    },
+    {
+      "claim_id": "6bc387b7-1ac9-4d66-92f6-8d9ec34e2fe9",
+      "result_id": "b090493d-7c1b-4e2b-801e-378247116d2d"
+    },
+    {
+      "claim_id": "c5a79b35-1535-4cc2-8069-53d8834c6ead",
+      "result_id": "b090493d-7c1b-4e2b-801e-378247116d2d"
+    },
+    {
+      "claim_id": "9c9e0597-4543-4077-aba5-9367c5fb129c",
+      "result_id": "b090493d-7c1b-4e2b-801e-378247116d2d"
+    },
+    {
+      "claim_id": "49386dc4-0834-4feb-a412-399846315a69",
+      "result_id": "b090493d-7c1b-4e2b-801e-378247116d2d"
+    }
+  ],
+  "comparisons": []
+}

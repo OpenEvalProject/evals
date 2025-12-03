@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Grb2 binds to membrane-bound Btk through the proline-rich linker of Btk. The proline-rich linker is necessary and sufficient for Grb2 recruitment to supported-lipid bilayers, as demonstrated by TIRF microscopy experiments showing that Grb2 is recruited when full-length Btk or the isolated proline-rich linker are tethered to membranes, but not when constructs lacking this linker are used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C37, C43-C47 are well-supported by experimental data in Figure 2B showing specific recruitment of fluorescently labeled Grb2 to bilayers containing full-length Btk or the isolated proline-rich linker, but not to constructs lacking this region. The reversibility experiment (C43, Figure 2C) confirms the interaction is specific and not due to aggregation. The use of His-tagged constructs to control for PH-TH module effects strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C80",
+      "C82",
+      "C92",
+      "C97",
+      "C98"
+    ],
+    "result": "Grb2 substantially enhances Btk kinase activity, but only in the presence of PIP3-containing membranes. Western blot analysis shows that Grb2 addition increases Btk autophosphorylation and phosphorylation of a PLC\u03b32-peptide substrate by 5-6 fold when PIP3 vesicles are present, but has no effect in the absence of PIP3. The enhancement accelerates phosphorylation kinetics, with 5-minute timepoints in the presence of Grb2 reaching levels equivalent to 20 minutes without Grb2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C48-C51, C80, C82, C92, C97-C98 are strongly supported by western blot data in Figures 3A-D showing concentration-dependent and time-dependent enhancement of phosphorylation only when both Grb2 and PIP3 are present. The requirement for PIP3 is clearly demonstrated by the absence of signal without vesicles. Mass spectrometry confirmation of phosphorylation sites (C52, Figure 3 supplements 4-5) validates the specificity of the kinase activity measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C39",
+      "C61",
+      "C62"
+    ],
+    "result": "All three domains of Grb2 (both SH3 domains and the SH2 domain) are required for maximal stimulation of Btk activity, with the N-terminal SH3 domain being most important. The SH2 domain's phosphotyrosine-binding ability is not required for Btk activation, as the R86K mutant (which cannot bind phosphotyrosine) stimulates Btk activity to the same extent as wild-type Grb2, suggesting the SH2 domain remains available to bind scaffold proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C39, C54-C58, C61-C62 are supported by systematic domain deletion analysis in Figure 4A showing that removal of any Grb2 domain substantially reduces PLC\u03b32-peptide phosphorylation, and that constructs containing the N-terminal SH3 domain are more effective than those with only the C-terminal SH3. The R86K mutant data (C55-C56) directly demonstrates that phosphotyrosine binding is not required for Btk activation, supporting the inference that the SH2 domain is available for scaffold binding (C40, C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Grb2 recruits Btk to LAT signaling clusters on reconstituted membranes. Single-molecule tracking shows that Btk diffusion is progressively slowed by addition of Grb2 alone and further slowed when LAT undergoes phase transition with Grb2 and SOS-PRR. Btk does not bind SOS-PRR directly, indicating recruitment occurs through Grb2 binding to both Btk (via SH3 domains) and phosphorylated LAT (via SH2 domain).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C71-C72, C75-C79 are supported by step-size distribution analysis in Figure 5B showing progressive restriction of Btk mobility under different conditions, and by colocalization imaging in Figure 5C. The control experiment showing Btk does not bind SOS-PRR directly (C77, Figure 5 supplement 1) rules out alternative mechanisms and supports the proposed bridging function of Grb2. The use of LAT as a model for the B-cell scaffold SLP65/BLNK is reasonable given their structural similarity (C113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C41",
+      "C90",
+      "C99"
+    ],
+    "result": "PIP3-mediated dimerization does not fully activate Btk; instead, Btk adopts an autoinhibited state at the membrane that is released by Grb2. The authors propose a mechanism whereby Grb2 binds the proline-rich linker and subsequently displaces the Btk SH3 domain by binding the SH2-kinase linker, releasing autoinhibition. This represents a new level of regulation integrating Btk localization with activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9 are supported by the observation that Grb2 substantially enhances activity even when PIP3 is present (Figure 3), indicating PIP3 alone is insufficient for full activation. However, the proposed mechanism (C41, C90) is speculative, based on analogy to HIV Nef activation of Src-family kinases (C91) rather than direct structural or biochemical evidence. The model in Figure 6 illustrates this speculation but does not constitute experimental validation. Additional structural or mutational studies would be needed to confirm the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C88",
+      "C110",
+      "C111"
+    ],
+    "result": "Grb2 does not affect Btk dimerization or membrane affinity. Single-molecule tracking shows that Btk diffusion coefficients and dwell times are unchanged by Grb2 presence across a range of Btk concentrations. The concentration-dependent decrease in diffusion coefficient is consistent with PH-TH module dimerization observed previously, confirming full-length Btk behaves like the isolated PH-TH module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67, C88, C110-C111 are supported by systematic single-molecule tracking data in Figure 4B and supplements showing no change in the fastest diffusion component or dwell times with Grb2 addition. The consistency with previous PH-TH module data (C65, C112) validates the approach. However, the authors acknowledge potential limitations in sensitivity (C89), and the three-component diffusion fitting adds complexity. The conclusion that Grb2 does not promote Btk dimerization contradicts the potential role of Grb2 dimers (C60, C84), creating some internal tension in the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "Grb2 dimerization may be important for Btk activation. The Y160E mutation, which reduces Grb2 dimerization capacity, shows reduced ability to stimulate Btk activity. The requirement for all three Grb2 domains and the crystal structure showing Grb2 dimers support this hypothesis, though the mechanism remains unclear since Grb2 does not appear to promote Btk dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is supported by experimental data in Figure 4A showing reduced activity with the Y160E mutant. However, the interpretation that this reflects a requirement for Grb2 dimerization (C60) is tentative, as acknowledged by the authors. The supporting structural evidence (C85) and domain requirement (C84) are consistent with but do not prove the dimerization hypothesis. The apparent contradiction with the lack of effect on Btk dimerization (C88) is noted but not resolved (C89). Additional Grb2 mutants and direct dimerization measurements would be needed to definitively establish this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Mass spectrometry confirms that Btk phosphorylates both Tyr 753 and Tyr 759 within the PLC\u03b32 peptide substrate, as well as a tyrosine residue at the C-terminus of the GFP tag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are directly supported by MS/MS spectra in Figure 3 supplements 4-5 showing phosphorylation at the expected sites. This validates the western blot measurements of kinase activity and confirms substrate specificity. The phosphorylation of the GFP tyrosine is an off-target effect but does not undermine the main conclusions about PLC\u03b32 phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C63",
+      "C68",
+      "C69",
+      "C70",
+      "C93",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C113"
+    ],
+    "result": "Background and context claims about Btk structure, B-cell signaling pathways, Grb2 function, and prior work on Btk-Grb2 interactions. These include established knowledge about protein domain architecture, signaling cascades, and previous findings from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C10-C36, C63, C68-C70, C93, C100-C104, C113) are appropriately supported by citations to established literature and represent accurate descriptions of prior knowledge. They provide necessary context for interpreting the current findings but do not constitute novel results from this study. The citations appear appropriate and the descriptions are consistent with established understanding of these systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The requirement for PIP3 ensures Btk activation remains responsive to BCR stimulation, and enhanced PLC\u03b32 phosphorylation by the Grb2-Btk interaction could increase active PLC\u03b32 at the membrane, impacting downstream signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C94-C96 are reasonable inferences from the experimental data showing PIP3 requirement (Figure 3) and enhanced PLC\u03b32 phosphorylation (Figure 3C-D). These represent logical extensions of the findings to cellular context, though they are not directly tested in cells. The inferences are well-supported by the in vitro data and established knowledge of BCR signaling (C10-C12), but would benefit from validation in cellular systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C73",
+      "C74"
+    ],
+    "result": "The Grb2-Btk interaction can integrate Btk localization with activation. Two possible mechanisms for Grb2-mediated slowing of Btk diffusion are proposed: simultaneous binding to Btk and LAT, or Grb2-induced formation of small LAT condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 is a reasonable inference from the combined activation and recruitment data, but C73-C74 present alternative speculative mechanisms for the observed diffusion changes without distinguishing between them. The step-size distribution data (Figure 5B) show the effect but do not definitively establish the mechanism. Additional experiments (e.g., using Grb2 mutants that cannot bind LAT, or higher-resolution imaging to detect small condensates) would be needed to distinguish these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C91"
+    ],
+    "result": "Mechanistic inferences about Grb2 function: the SH2 domain remains free to interact with scaffold proteins when bound to Btk, and the proposed activation mechanism is based on analogy to HIV Nef activation of Src-family kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 is a reasonable inference from the R86K data (C55-C56) but is not directly demonstrated. Claim C91 explicitly acknowledges the speculative nature of the proposed mechanism based on analogy to a different system. While the analogy is plausible given structural similarities between Btk and Src-family kinases (C14), it remains unproven without direct structural or biochemical evidence of the proposed Grb2-mediated displacement of the Btk SH3 domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Methodological predictions and observations related to single-molecule tracking experiments, including expected effects of dimerization on diffusion, site selection for fluorescent labeling, and concentration-dependent surface density changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are logical predictions based on established biophysical principles (supported by C104). Claims C107-C109 are methodological details about the labeling strategy and experimental observations that are internally consistent and well-documented. The choice of Thr 403 for AzF incorporation is justified by its surface-exposed location, and the observed concentration-dependent recruitment is expected behavior.",
+    "result_type": "MINOR"
+  }
+]

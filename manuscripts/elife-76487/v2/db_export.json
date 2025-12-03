@@ -1,0 +1,2041 @@
+{
+  "submission": {
+    "id": "2e1c03f2-917a-4ad2-b85e-e526f118baec",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:45:17.730408Z",
+    "updated_at": "2025-12-03T14:45:17.730408Z"
+  },
+  "content": [
+    {
+      "id": "294931dc-950d-400e-ae79-6977801ea976",
+      "submission_id": "2e1c03f2-917a-4ad2-b85e-e526f118baec",
+      "content_type": "manuscript",
+      "content_text": "# Estimating the potential to prevent locally acquired HIV infections in a UNAIDS Fast-Track City, Amsterdam\n\n## Authors\n\n- Alexandra Blenkinsop<sup>1</sup> ([ORCID: 0000-0002-2328-8671](https://orcid.org/0000-0002-2328-8671)) \u2020\n- M\u00e9lodie Monod<sup>1</sup>\n- Ard van Sighem<sup>3</sup> ([ORCID: 0000-0002-6656-0516](https://orcid.org/0000-0002-6656-0516))\n- Nikos Pantazis<sup>4</sup>\n- Daniela Bezemer<sup>3</sup>\n- Eline Op de Coul<sup>5</sup>\n- Thijs van de Laar<sup>6</sup>\n- Christophe Fraser<sup>8</sup>\n- Maria Prins<sup>9</sup>\n- Peter Reiss<sup>2</sup>\n- Godelieve J de Bree<sup>2</sup>\n- Oliver Ratmann<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Mathematics, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n2. Amsterdam Institute for Global Health and Development Amsterdam Netherlands ([ROR:037n2rm85](https://ror.org/037n2rm85))\n3. Stichting HIV Monitoring Amsterdam Netherlands ([ROR:02w6k4f12](https://ror.org/02w6k4f12))\n4. Department of Hygiene, Epidemiology and Medical Statistics, University of Athens Athens Greece ([ROR:04gnjpq42](https://ror.org/04gnjpq42))\n5. Center for Infectious Diseases Prevention and Control, National Institute for Public Health and the Environment (RIVM) Bilthoven Netherlands ([ROR:01cesdt21](https://ror.org/01cesdt21))\n6. Department of Donor Medicine Research, Sanquin Amsterdam Netherlands ([ROR:01fm2fv39](https://ror.org/01fm2fv39))\n7. Department of Medical Microbiology, Onze Lieve Vrouwe Gasthuis Amsterdam Netherlands ([ROR:01d02sf11](https://ror.org/01d02sf11))\n8. Big Data Institute, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n9. Academic Medical Center Amsterdam Netherlands ([ROR:03t4gr691](https://ror.org/03t4gr691))\n10. Department of Global Health, Amsterdam University Medical Centers Amsterdam Netherlands ([ROR:05grdyy37](https://ror.org/05grdyy37))\n11. Division of Infectious Diseases, Department of Internal Medicine, Amsterdam Infection and Immunity Institute Amsterdam Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:More than 300 cities including the city of Amsterdam in the Netherlands have joined the UNAIDS Fast-Track Cities initiative, committing to accelerate their HIV response and end the AIDS epidemic in cities by 2030. To support this commitment, we aimed to estimate the number and proportion of Amsterdam HIV infections that originated within the city, from Amsterdam residents. We also aimed to estimate the proportion of recent HIV infections during the 5-year period 2014\u20132018 in Amsterdam that remained undiagnosed.Methods:We located diagnosed HIV infections in Amsterdam using postcode data (PC4) at time of registration in the ATHENA observational HIV cohort, and used HIV sequence data to reconstruct phylogeographically distinct, partially observed Amsterdam transmission chains. Individual-level infection times were estimated from biomarker data, and used to date the phylogenetically observed transmission chains as well as to estimate undiagnosed proportions among recent infections. A Bayesian Negative Binomial branching process model was used to estimate the number, size, and growth of the unobserved Amsterdam transmission chains from the partially observed phylogenetic data.Results:Between 1 January 2014 and 1 May 2019, there were 846 HIV diagnoses in Amsterdam residents, of whom 516 (61%) were estimated to have been infected in 2014\u20132018. The rate of new Amsterdam diagnoses since 2014 (104 per 100,000) remained higher than the national rates excluding Amsterdam (24 per 100,000), and in this sense Amsterdam remained a HIV hotspot in the Netherlands. An estimated 14% [12\u201316%] of infections in Amsterdan MSM in 2014\u20132018 remained undiagnosed by 1 May 2019, and 41% [35\u201348%] in Amsterdam heterosexuals, with variation by region of birth. An estimated 67% [60\u201374%] of Amsterdam MSM infections in 2014\u20132018 had an Amsterdam resident as source, and 56% [41\u201370%] in Amsterdam heterosexuals, with heterogeneity by region of birth. Of the locally acquired infections, an estimated 43% [37\u201349%] were in foreign-born MSM, 41% [35\u201347%] in Dutch-born MSM, 10% [6\u201318%] in foreign-born heterosexuals, and 5% [2\u20139%] in Dutch-born heterosexuals. We estimate the majority of Amsterdam MSM infections in 2014\u20132018 originated in transmission chains that pre-existed by 2014.Conclusions:This combined phylogenetic, epidemiologic, and modelling analysis in the UNAIDS Fast-Track City Amsterdam indicates that there remains considerable potential to prevent HIV infections among Amsterdam residents through city-level interventions. The burden of locally acquired infection remains concentrated in MSM, and both Dutch-born and foreign-born MSM would likely benefit most from intensified city-level interventions.Funding:This study received funding as part of the H-TEAM initiative from Aidsfonds (project number P29701). The H-TEAM initiative is being supported by Aidsfonds (grant number: 2013169, P29701, P60803), Stichting Amsterdam Dinner Foundation, Bristol-Myers Squibb International Corp. (study number: AI424-541), Gilead Sciences Europe Ltd (grant number: PA-HIV-PREP-16-0024), Gilead Sciences (protocol numbers: CO-NL-276-4222, CO-US-276-1712, CO-NL-985-6195), and M.A.C AIDS Fund.\n\n## Introduction\n\nHuman immunodeficiency virus (HIV) is concentrated in metropolitan areas (Joint United Nations Programme on HIV/AIDS, 2014). In response, as of March 2021 over 300 cities have joined the Fast-Track Cities initiative (www.fast-trackcities.org) by signing the Paris Declaration, committing to end the AIDS epidemic by 2030, by addressing disparities in access to basic health and social services, social justice and economic opportunities (UNAIDS, 2019). Several of these fast-track cities have successfully developed strategies which best address the needs of the local epidemic, including London\u2019s HIV Prevention Programme and early ART initiation, and New York\u2019s Status Neutral Prevention and Treatment Cycle (Public Health England, 2018; Myers et al., 2018). A central milestone in this agenda is to characterise the number of HIV infections that are acquired from sources within cities and are thus preventable through local interventions, as well as to identify the primary risk groups with infections from local sources.\n\nIn the Netherlands, Amsterdam is the city with the greatest HIV burden nationally, reflecting in part large communities of MSM and foreign-born individuals. Amsterdam has a long history of a collaborative HIV approach in combating the epidemic and joined the UNAIDS Fast-Track Cities initiative on 1 December 2014. City-level HIV responses were galvanised in the HIV Transmission Elimination Amsterdam project (H-Team) that same year (de Bree et al., 2019). The H-Team fast-track response, amongst others, focussed on outreach activities, encouraging repeat testing every 3\u20136 months to identify acute and early HIV infection, followed by immediate initiation of combination antiretroviral therapy (c-ART) in newly diagnosed patients, and roll-out of pre-exposure prophylaxis (PreP) in populations at increased risk of HIV infection (den Daas et al., 2018; Bartelsman et al., 2017; Hoornenborg et al., 2019; Dijkstra et al., 2019). Prior to the COVID-19 pandemic, the number of annual HIV diagnoses in Amsterdam residents has consistently declined from ~300 new city-level HIV diagnoses in 2010 to ~120 in 2018, primarily in Dutch-born and foreign-born MSM. Given these achievements, it is now unclear how many of the remaining new infections are locally acquired and could thus still be locally averted. Late diagnoses remain common and are a particular concern in this effort, both for individual health and the risk that unnoticed transmission chains pose to public health.\n\nHere, we build on Amsterdam\u2019s combined case and genomic surveillance data to reconstruct transmission chains at city level, defined as a single introduction of HIV into Amsterdam residents, followed by a direct infection chain among Amsterdam residents (Figure 1). We exploit clinical patient data to estimate times of HIV infection at individual level, which provides crucial temporal information for interpreting the observed transmission chains. This allows us to estimate the extent of undiagnosed infections at the forefront of the cities\u2019 transmission chains, among infections that are estimated to have occured since Amsterdam joined the Fast-Track Cities network in 2014. We then characterise the growth and origins of Amsterdam transmission chains in 2014\u20132018, and quantify in particular the proportion of Amsterdam infections in this time period that had an Amsterdam resident as source, and could have been locally averted.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76487/elife-76487-fig1-v2.jpg)\n\n**Figure 1.:** Input data includes patient baseline data at registration, clinical biomarker data and viral sequence data. Biomarker data is used to estimate infection times, the proportion of undiagnosed infections, and thus the total population size of people living with HIV. HIV sequence data is used to reconstruct phylogenetic trees. Groups of Amsterdam residents with distinct virus are determined phylogeographically with phyloscanner, and without considering genetic distances or bootstrap support. Each such group of Amsterdam residents with distinct virus is interpreted as the partially observed part of a distinct transmission chain among Amsterdam residents, and analysed in calendar time based on the infection times estimated from individual biomarker data, as well as clinical data on viral suppression. The partial observations are used to infer the number, size and growth of the actual transmission chains among Amsterdam residents, and derive key epidemic quantities of interest.\n\n## Materials and methods\n\n### Demographic and clinical cohort data comprising city-level infections\n\nData were obtained from the prospective ATHENA cohort of all people living with HIV (PLHIV) in care in the Netherlands, including patient demographics and longitudinal CD4, HIV viral load, viral sequence, and treatment data (see Appendix 1, Section 2) (Boender et al., 2018). Sequencing methods are described previously (Bezemer et al., 2004). Cohort data are near complete in the sense that 2% of individuals opted out of participating in the ATHENA study, and 5.2% of individuals who entered ATHENA were lost to follow-up (Boender et al., 2018; Sighem et al., 2020). We geolocated diagnosed infections to Amsterdam based on patients\u2019 postcode of residence at time of first registration in ATHENA or the most recent registration update, which includes PLHIV that changed residence to Amsterdam at a registration update (4%), PLHIV that changed residence to another Dutch municipality after first registration (4%), and PLHIV that were consistently resident in Amsterdam (92%).\n\nParticipants were stratified by region of birth: MSM (The Netherlands; Western Europe, North America, Oceania; Eastern and Central Europe; South America and the Caribbean; Other), and heterosexual individuals (The Netherlands; South America and the Caribbean; Sub-Saharan Africa; Other), resulting in 9 risk groups in total. Throughout, we denote transmission group (Amsterdam MSM or heterosexuals) by $t$, and geographic region of birth by $r$.\n\nWe here focus on city-level transmission chains growing in the period from 1 January 2014 to 31 December 2018, which for brevity we refer to as 2014\u20132018. Available demographic, clinical, and viral sequence data were obtained for HIV diagnoses in Amsterdam from the ATHENA database version closed on 1 May 2019.\n\n### Estimating HIV infection dates and undiagnosed infections\n\nUsing longitudinal viral load and CD4 count data and further demographic and clinical information, we estimated time from infection to diagnosis for all HIV diagnosed patients with a Bayesian approach (Pantazis et al., 2019). Briefly, data from the CASCADE collaboration on 19,788 observed HIV seroconverters were used to parameterize a bivariate normal linear model of the joint time evolution of HIV viral load and CD4 cell count decline since time of infection in the context of additional covariates (sex, region of origin, mode of infection, age at time of diagnosis). Then we used the trained model to estimate infection times from longitudinal biomarker data for Amsterdam patients, with an average of four viral load observations and six CD4 cell count observations per patient. We next reconstructed characteristic time-to-diagnosis distributions for each of the nine Amsterdam risk groups (MSM/heterosexual, and region of birth) with a Bayesian hierarchical model from the individual-level estimates, modelling the individual-level estimates with a Weibull distribution. To avoid censoring of infection-to-diagnosis times, we focused analyses on the subset of infections in 2010\u20132012 which were diagnosed by 1 May 2019 since most infections in this window would have been diagnosed by the close of study, and assume as supported by mathematical models that time-to-diagnosis did not change substantially in 2010\u20132019 (Sighem, 2017; Sighem et al., 2017). The model was implemented with Stan version 2.21 (Carpenter et al., 2017). Full details are provided in Appendix 1, Section 3.\n\nWe then calculated the proportion of infections in each year $y=2014,...,2018$ in each of the 9 Amsterdam risk groups that were not diagnosed by database closure (which we denote by $\\delta_{try }$) from the fitted model. To adjust for trends in incidence over time, the annual estimates were weighted by the estimated number of HIV infections in each year among Amsterdam MSM and heterosexual individuals without stratifiction by inmigrant status, according to the European Centre for Disease Control and Prevention (ECDC) HIV modelling tool for Amsterdam, version 1.3.0 (Stockholm: European Centre for Disease Prevention and Control, 2017) through weights,\n\n$$\n\\omega_{ty}= \\frac{N_{ty}^{Inf-ECDC}}{\\sumz\\inYN_{tz}^{Inf-ECDC} }\n$$\n\nwhere y=2014,...,2018 and $N_{ty}^{Inf-ECDC}$ are the estimated total number of infections in year $y$ in Amsterdam MSM or heterosexuals. We then obtained an overall estimate of the proportion of undiagnosed infections in 2014\u20132018, $\\delta_{tr}$ , by applying these weights to the yearly proportions through\n\n$$\n\\delta_{tr }=\\sumy\\inY\\omega_{ty }\\delta_{try }\n$$\n\nRecognizing the limitations in applying weights that do not account for differences by place of birth, we used in sensitivity analyses as weights the observed trends in the number of annual HIV diagnoses in the corresponding Amsterdam risk group. The total number of Amsterdam infections in 2014\u20132018 including the undiagnosed (which we denote by $N_{tr}^{Inf}$) was next estimated by dividing the number of diagnosed Amsterdam infections in 2014\u20132018 (which we denote by $N_{tr}^{D}$) with the estimated proportion of diagnosed individuals,\n\n$$\nN_{tr}^{Inf}=\\frac{N_{tr}^{D} }{1-\\delta_{tr }}\n$$\n\n### Phylogenetic reconstruction of transmission chains among Amsterdam residents\n\nTo reconstruct distinct HIV transmission chains among Amsterdam residents, we used the first available partial HIV-1 polymerase (pol) sequence from Amsterdam PLHIV, Dutch PLHIV from outside Amsterdam, and ~82,000 pol sequences from non-Dutch PLHIV. The non-Dutch viral sequences were retrieved from the Los Alamos HIV-1 sequence database subject to a length of at least 1300 in the pol gene on March 2, 2020 (www.hiv.lanl.gov). The basic local alignment search tool (BLAST v2.10.0) was used to select the top 20 closest background sequences to any Dutch sequence (Altschul et al., 1990). All sequences were subtyped using Comet v2.3 (Struck et al., 2014). Sequences with an uncertain subtype classification using Comet were analysed with Rega v3.0 (Pineda-Pe\u00f1a et al., 2013). Any remaining sequences for which a subtype could not be resolved were discarded from further analysis (n=122). Subtype-specific alignments were generated with Virulign (Libin et al., 2019) (Appendix 1 Section 4.1) and sequences from other subtypes were added as outgroup for the purpose of phylogenetic rooting. The final alignments were trimmed to positions 2253\u20133870 in the reference genome HXB2 (Ratner et al., 1985).\n\nSubtype-specific HIV phylogenetic trees were generated for alignments with at least 50 Amsterdam sequences (subtypes and recombinant forms B, 01AE, 02AG, C, D, G, A1 or 06 cpx) using FastTree v2.1.8 (Price et al., 2010) rooted at the outgroup, and the outgroup taxa were then pruned from the phylogeny. Next, we attributed to all viral lineages in the phylogenies a \u2018state\u2019 label that included information on the transmission risk group (MSM, heterosexual, other) and location with phyloscanner version 1.8.0 (Wymant et al., 2018); see Bezemer et al., 2022 for details. Locations were classified into Amsterdam (for ATHENA patients with an Amsterdam postcode at time of registration or a registration update), the Netherlands (for other ATHENA patients), and the 9 world regions Africa, Western Europe, Eastern Europe and Central Asia, North America, Latin America and the Caribbean, Dutch Caribbean and Suriname, Middle East and North Africa, South and South-East Asia and Oceania (for non-Dutch sequences).\n\nIn the labelled phylogeny, the lineage labels jump backwards in time, for example from Amsterdam MSM associated with a lineage ending in a tip observed in Amsterdam MSM to Western Europe. Thus, we can group lineages according to the same label between jumps, and we follow Wymant et al., 2018 in referring to these groups as phyloscanner subgraphs. We assumed that we have sufficient background sequences such that no additional background sequences would further separate transmission chains among Amsterdam residents into more distinct chains. A subtle but important related point is that with the available location data at time of registration or a registration update, we are only able to phylogenetically reconstruct transmission chains by residence status rather than the location at which transmission actually occurred. For example, two Amsterdam residents appear in the same phyloscanner subgraph if they infected each other during a short-term visit in another Dutch, European or global location, if they were both infected from a common source during such a short-term visit and the source remained unsampled, if they infected each other before they began their residence in Amsterdam, or after they moved to another Dutch municipality. Diagnosed Amsterdam patients in the same subgraph were then interpreted as belonging to the same transmission chain, and the estimated state of the root of the subgraph was interpreted as the geographical origin of the transmission chain. Throughout, we refer to the subgraphs also as the phylogenetically observed (parts of) transmission chains. Using this approach, we note that unlike most phylogenetic clustering analyses (Burns et al., 2017), every infected patient with a sequence is included in one subgraph, and all partially observed transmission chains of size one are included in the analysis to ensure that the entire distribution of observed transmission chains is represented in the analysis (Bezemer et al., 2022). To capture phylogenetic uncertainty, phylogenetic analyses were repeated on 100 bootstrap replicates drawn from each subtype alignment, and transmission chains were enumerated across these replicate analyses.\n\nWe classified phylogenetically reconstructed transmission chains by the infection dates that we estimated from each patient\u2019s diagnosis date, risk group, age, CD4 trajectory and viral load trajectory. Chains were classified as \u2018pre-existing\u2019 if at least one of its members had a posterior median infection date before 2014, and as \u2018emerging\u2019 if all members had a posterior median infection date after January 1, 2014.\n\n### Virally unsuppressed transmission chains\n\nFor all pre-existing chains, we determined the number of infectious individuals at the start of 2014 from viral load data. Specifically, we defined patients as suppressed by 2014 if their last viral load measurement before 2014 was below 100 copies/ml, and count for each pre-existing chain its suppressed and unsuppressed members by 2014.\n\n### Estimating the growth of city-level transmission chains\n\nBecause of the large number of late presenters and incomplete sequence coverage in diagnosed patients, the phylogenetically observed transmission chains are incomplete and statistical models were required to estimate the growth and origins of Amsterdam transmission chains. We here extended the Bayesian branching process model of Bezemer et al., 2022 to estimate the growth of pre-existing transmission chains. Specifically, given $m=1,...,M$ index cases of a chain that pre-existed, the final size distribution of stuttering transmission chains is under a Negative Binomial branching process model given by\n\n$$\nc(i|\\mum,\u03d5m)=\\frac{m}{m+i}NegBin(i|\\mum,\u03d5m)\n$$\n\nwhere NegBin is the Negative Binomial distribution characterised by mean $\\mum$ and dispersion parameter $\u03d5m$, $i=0,1,2,...$ is the number of new cases, and \u03bc < 1. Incomplete sampling of new cases can be accommodated via\n\n$$\nc_{obs}(i|m,\\mu,\u03d5,\u03c1)=\\sum_{k=1}^{\u221e}Bin(i|k,p)c(k|m,\\mu,\u03c1)=\\sum_{k=1}^{\u221e}Bin(i|k,\u03c1)\\frac{m}{m+k}NegBin(k|\\mum,\u03d5m),\n$$\n\nwhere $\u03c1$ denotes the probability that a new case in 2014\u20132018 is diagnosed and has a viral sequence sampled by database closure. In the model, the index cases are assumed to be infectious and defined by the number of unsuppressed members by 2014 in a pre-existing chain, adjusted for the sampling probability of such members. We further capped the infinite sum in (3) in the model, recognizing that the summands rapidly tend to zero. The corresponding equation for emergent transmission chains (since 2014 as defined above) is similar,\n\n$$\nc~_{obs}(n|m=1,\\mu,\u03d5,\u03c1)=\\frac{\\sumz=n\u221eBin(n|z,\u03c1)\\frac{1}{z}NegBin(z\u22121|\\mu,\u03d5)}{1\u2212\\sumz=n\u221e((1\u2212\u03c1)^{z}\\frac{1}{z}NegBin(z\u22121|\\mu,\u03d5))\u00a0}\n$$\n\nwhere $n=1,2,...$ are the total number of observed cases in an emerging chain. We then denote with $x_{s}$ and $x\u223c_{s}$ respectively the observed growth distributions for the phylogenetically observed, pre-existing and emergent transmission chains in the phylogeny of subtype/ recombinant form, and for either Amsterdam MSM or heterosexuals, which we denote by $s$. Here, $x_{s}$ is a matrix with rows indicating the number of index cases and columns indicating the number of new cases, and $x\u223c_{s}$ is a row vector with rows indicating the total number of cases in emerging chains. For ease of reading, we suppress the subscripts where possible from now on. The likelihood then comprises the growth distributions of emerging chains, pre-existing chains that continued to grow, and pre-existing chains with unsuppressed members that did not grow, with the following log-likelihood,\n\n$$\nl(x,x~|\\mu,\u03d5,\u03c1)=\\sum_{m=1}^{M}\\sum_{i=0}^{I}x_{mi}logc_{obs}(i|m,\\mu,\u03d5,\u03c1)+\\sum_{n=1}^{N}x~_{n}logc~_{obs}(n|m=1,\\mu,\u03d5,\u03c1),\n$$\n\nwhere $M$ is the largest number of index cases observed across the chains after adjusting for sampling, $I$ is the largest number of new cases observed in pre-existing chains and $N$ is the largest number of new cases observed in emergent chains, including the first case. Pre-existing chains for which all members were suppressed by 2014 and which did not grow were not included, because these chains had no unsuppressed index case. Due to small counts, we grouped the observed growth distributions for the phylogenetically observed transmission chains for non-B subtypes together before fitting the model. We fitted the branching process model under a Bayesian framework with Stan version 2.21 to the observed growth distributions among MSM, borrowing information across subtypes B and non-B, and similarly for heterosexuals. The primary output of the model are posterior predictive distributions on the number, size and growth of the actual transmission chains among Amsterdam residents, both for MSM and heterosexuals, and by viral subtype. This includes emerging chains that were entirely unsampled. Full details are provided in Appendix 1, Section 6.\n\n### Derived statistical estimates\n\nGiven estimates of the number and growth of both pre-existing and emergent transmission chains, it is straightforward to derive estimates of the proportion of HIV infections among Amsterdam residents in 2014\u20132018 that had an Amsterdam resident as source (which we denote by $\\gamma$ and refer to as the proportion of locally acquired infections). This is because all infections originating from an individual living in Amsterdam had a local source, except the index cases in the emerging chains that were introduced from outside of Amsterdam. Ignoring population subgroups for the derivation, we have\n\n$$\n\\gamma=\\frac{N^{I} - \\alpha N^{C}}{N^{I}},\n$$\n\nwhere $N^{I}$ is the estimated number of new infections between 2014 and 2018 in Amsterdam residents, $N^{C}$ is the estimated number of transmission chains which emerged between 2014 and 2018 and $\\alpha$ is the estimated proportion of emergent transmission chains with an Amsterdam origin. Since each transmission chain has one index case, $\\alpha N^{C}$ is the estimated number of infections with non-Amsterdam origin, and $N^{I}\u2212\\alphaN^{C}$ is the estimated number of infections that had an Amsterdam resident as a source.\n\nUsing Equation 8, we were able to obtain estimates (8) for Amsterdam MSM residents and Amsterdam heterosexual residents, and for each phylogeny, that is stratified further by each of the major subtypes and recombinant forms (which we denote by $\\gamma_{s }$). To obtain estimates stratified by the nine Amsterdam risk groups of interest (where $t$ denotes transmission group MSM or heterosexual and $r$ denotes geographic region of birth), we calculated weighted averages of the $\\gamma_{ts }$ across chains and subtypes, with the weight determined as the proportion of the infected individuals in transmission group $t$ (i.e. either MSM or heterosexuals) from region of birth $r$ that are infected with subtype/recombinant form s. Specifically,\n\n$$\n\\gamma_{tr}=\\sum_{s\u03f5S}v_{tsr}\\gamma_{ts},\n$$\n\nwhere the proportions $\u03bd_{tsr}$ are for brevity defined in Appendix 1 Section 7. We interpret $\\gamma_{tr }$ as the proportion of Amsterdam infections in transmission risk group $t$, from geographic region $r$, that have the potential to be preventable through local interventions.\n\n### Ethics\n\nAs from 2002 ATHENA is managed by Stichting HIV Monitoring, the institution appointed by the Dutch Ministry of Public health, Welfare and Sport for the monitoring of people living with HIV in the Netherlands. People entering HIV care receive written material about participation in the ATHENA cohort and are informed by their treating physician on the purpose of data collection, thereafter they can consent verbally or elect to opt-out. Data are pseudonymised before being provided to investigators and may be used for scientific purposes. A designated data protection officer safeguards compliance with the European General Data Protection Regulation (Boender et al., 2018).\n\n## Results\n\n### Substantial declines in HIV diagnoses and infections in Amsterdam\n\nBetween 1 January 2014 and 1 May 2019, there were 846 HIV diagnoses in Amsterdam residents who self-identified as MSM (75%) or heterosexual (20%). Of the remaining diagnoses, 1 (<1%) was among injecting drug users (IDU), 12 (1%) were through other modes of transmission and 30 (3%) had an unknown mode of transmission. A total of 275 (33%) of the diagnoses in MSM and heterosexuals presented with a CD4 count below 350, with late presentation being higher among heterosexuals. All diagnosed patients had biomarker data available to estimate time to diagnosis, and 516 of 846 (61%) were estimated to have been infected between 2014 and 2018 based on the posterior median infection time estimate (Table 1). In the preceding 5-year period 2009\u20132013, there were 1436 HIV diagnoses in Amsterdam and a similar proportion of these presented late (567, 39%). There were 1128 diagnoses with estimated infection in 2009\u20132013, suggesting a substantial reduction in infections in 2014\u20132018. Yet, the rate of new Amsterdam diagnoses since 2014 (104 per 100,000) remained higher than the national rates excluding Amsterdam (24 per 100,000), and in this sense Amsterdam remains a HIV hotspot in the Netherlands.\n\n**Table 1.**\n HIV infections among Amsterdam residents in 2014-2018.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Risk group</th>\n      <th>Observed HIV diagnoses in Amsterdam residents in 2014-May 2019(n)</th>\n      <th>Observed HIV diagnoses in Amsterdam residents in 2014-May 2019 with CD4 &lt;350(n)</th>\n      <th>Observed HIV diagnoses in Amsterdam residents, estimated to have been infected in 2014\u20132018(n)</th>\n      <th>Estimated undiagnosed HIV infections in Amsterdam residents until May 2019(%)</th>\n      <th>Estimated HIV infections in Amsterdam residents in 2014\u20132018(n)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total</td>\n      <td>846</td>\n      <td>275</td>\n      <td>516</td>\n      <td>19% [17\u201321%]</td>\n      <td>636 [620-656]</td>\n    </tr>\n    <tr>\n      <td>MSM (all)</td>\n      <td>671</td>\n      <td>192</td>\n      <td>446</td>\n      <td>14% [12\u201316%]</td>\n      <td>516 [506-529]</td>\n    </tr>\n    <tr>\n      <td>MSM (Dutch-born)</td>\n      <td>298</td>\n      <td>103</td>\n      <td>190</td>\n      <td>11% [9\u201313%]</td>\n      <td>214 [209-219]</td>\n    </tr>\n    <tr>\n      <td>MSM (Born in W. Europe, N. America and Oceania)</td>\n      <td>100</td>\n      <td>12</td>\n      <td>80</td>\n      <td>9% [6\u201314%]</td>\n      <td>88 [85-93]</td>\n    </tr>\n    <tr>\n      <td>MSM (Born in E. and C. Europe)</td>\n      <td>51</td>\n      <td>8</td>\n      <td>32</td>\n      <td>16% [11\u201324%]</td>\n      <td>38 [36-42]</td>\n    </tr>\n    <tr>\n      <td>MSM (Born in S. America and the Caribbean)</td>\n      <td>124</td>\n      <td>38</td>\n      <td>83</td>\n      <td>17% [13\u201322%]</td>\n      <td>100 [95-107]</td>\n    </tr>\n    <tr>\n      <td>MSM (Born in any other country)</td>\n      <td>98</td>\n      <td>31</td>\n      <td>61</td>\n      <td>20% [14\u201327%]</td>\n      <td>76 [71-83]</td>\n    </tr>\n    <tr>\n      <td>Heterosexuals (all)</td>\n      <td>175</td>\n      <td>83</td>\n      <td>70</td>\n      <td>41% [35\u201348%]</td>\n      <td>119 [107-135]</td>\n    </tr>\n    <tr>\n      <td>Heterosexuals (Dutch-born)</td>\n      <td>51</td>\n      <td>19</td>\n      <td>23</td>\n      <td>30% [21\u201344%]</td>\n      <td>33 [29-41]</td>\n    </tr>\n    <tr>\n      <td>Heterosexuals (Born in Sub-Saharan Africa)</td>\n      <td>67</td>\n      <td>36</td>\n      <td>17</td>\n      <td>57% [47\u201367%]</td>\n      <td>40 [32-51]</td>\n    </tr>\n    <tr>\n      <td>Heterosexuals (Born in S. America and the Caribbean)</td>\n      <td>37</td>\n      <td>18</td>\n      <td>21</td>\n      <td>28% [19\u201342%]</td>\n      <td>29 [26-36]</td>\n    </tr>\n    <tr>\n      <td>Heterosexuals (Born in any other country)</td>\n      <td>20</td>\n      <td>10</td>\n      <td>9</td>\n      <td>40% [25\u201357%]</td>\n      <td>15 [12-21]</td>\n    </tr>\n  </tbody>\n</table>\n\n_Posterior estimated median time from infection to diagnosis [95% CI]._\n\n### Nine of ten Amsterdam diagnoses and infections are in MSM\n\nA total of 190 (37%) Amsterdam diagnoses with estimated infection in 2014\u20132018 were in Dutch-born MSM, 256 (50%) in foreign-born MSM, 23 (4%) in Dutch-born men and women identifying as heterosexuals, and 47 (9%) in foreign-born heterosexuals. Thus, the large majority of Amsterdam diagnoses with infection dates between 2014 and 2018 were in foreign-born and Dutch-born MSM, and an important question that we address below is if these diagnoses also likely had an Amsterdam source.\n\nOverall, we find the individual-level time-to-diagnosis estimates varied substantially within each of the 9 Amsterdam risk groups shown in Table 1 (see also Appendix 1\u2014figures 1 and 2). The posterior median time-to-diagnosis estimates among individuals were 14 months longer in heterosexuals than in MSM, 9 months longer in Dutch-born heterosexuals than Dutch-born MSM, and 19 months longer in foreign-born heterosexuals than foreign-born MSM (Appendix 1\u2014figure 3). These substantial diagnosis delays continue to undermine the long-term prognosis of infected individuals and transmission prevention efforts.\n\n### High proportion of infections since 2014 that remained undiagnosed by May 2019\n\nLocal estimates of the continuum of care indicate that Amsterdam has surpassed the 95-95-95 targets, with an estimated 5% of all people in Amsterdam living with HIV that remained undiagnosed by the end of 2019 (Sighem et al., 2020; UNAIDS, 2019). Based on the time-to-diagnosis estimates in our cohort, we can focus here at the forefront of ongoing transmission chains and quantify the proportion of recent Amsterdam infections in 2014\u20132018 that remained undiagnosed by 1 May 2019. Figure 2 shows that the estimated undiagnosed proportions are considerably higher when we focus on infections acquired since 2014. Accounting for declining diagnosis and infection trends (see Materials and methods), an estimated 14% [12\u201316%] of infections in Amsterdan MSM in 2014\u20132018 remained undiagnosed, and 41% [35\u201348%] in Amsterdam heterosexuals (Table 1). The highest proportion of undiagnosed Amsterdam infections in 2014\u20132018 are in heterosexuals born in Sub-Saharan Africa, with 57% [47\u201367%].\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76487/elife-76487-fig2-v2.jpg)\n\n**Figure 2.:** Posterior median estimates are shown as bars and 95% credible intervals as error bars. Estimates generated from time-to-diagnosis estimates for 535 MSM and 97 heterosexuals.\n\nWhile the bivariate model of biomarker data that underpins the individual-level time-to-diagnosis estimates has been validated (Pantazis et al., 2019), our estimates of the proportion of undiagnosed infections in 2014\u20132018 depend further on the trends in the number of infections in each year as shown in Equation 2. The main analysis is based on trends in HIV infections in Amsterdam MSM and heterosexuals that were estimated with the ECDC HIV Modelling Tool for Amsterdam. The ECDC estimates account for late diagnoses, but aggregate over region of birth. Recognizing this limitation, in sensitivity analyses we used instead trends in directly observed Amsterdam diagnoses, which apply to each Amsterdam risk group but do not account for confounding due to late diagnoses. In the sensitivity analysis, we estimate that 14% [13\u201317%] of infections in Amsterdam MSM in 2014\u20132018 remained undiagnosed, and 34% [28\u201341%] in Amsterdam heterosexuals. Further details are presented in Appendix 1, Section 3.3\u20133.5.\n\n### More than 1800 distinct transmission chains among Amsterdam residents\n\nWe next adopted viral phylogenetic methods to understand how the diagnosed Amsterdam infections since 2014 are distributed across Amsterdam\u2019s HIV transmission networks. A total 378 of the 516 (73%) individuals had a pol sequence available, of whom 341 were of the major subtypes or recombinant forms that are circulating in Amsterdam (B, 01AE, 02AG, C, D, G, A1 and 06 cpx). 37 individuals were excluded from further analysis as their subtype identification was inconclusive, or they were associated with other subtypes or recombinant forms with fewer than 50 sequences in Amsterdam. Appendix 1\u2014table 1 summarises the characteristics of the study population, and those with a sequence available. We reconstructed viral phylogenies using the HIV sequence data from these individuals combined with viral sequences from 3647 Amsterdam diagnoses with estimated infection prior to 2014, 6087 diagnosed individuals from the Netherlands outside Amsterdam, and 14,222 viral sequences from outside the Netherlands that were genetically closest to those circulating in the Netherlands (Appendix 1\u2014figures 4\u201325). Key statistics based on the bootstrap analysis are reported in Appendix 1\u2014Tables 2 and 3.\n\nWe identified across the major HIV-1 subtypes and circulating recombinant forms 1829 distinct viral phylogenetic subgraphs that comprised at least one diagnosed Amsterdam infection prior to 2014, which we refer to as the phylogenetically observed pre-existing transmission chains (Figure 3 and Appendix 1\u2014figure 26). There were 1253 pre-existing chains in MSM, of which 949 (76%) had all members virally suppressed as of 2014, and of those 906 (95%) had no new member in 2014\u20132018. The remaining 5% of subgraphs likely grew from unsuppressed index individuals that did not have an HIV sequence sampled. In heterosexuals, there were 576 pre-existing chains, of which 401 (70%) had all members virally suppressed as of 2014, and of those 391 (98%) had no new member in 2014\u20132018. The proportion of unsuppressed subgraphs in Amsterdam heterosexuals was indeed statistically significantly lower than in Amsterdam MSM, but not strongly so (p-value 0.02, one-sided chi-square test). To summarise, transmission appears to have stopped since 2014 in almost all phylogenetically observed pre-existing chains that had all their observed members suppressed by 2014.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76487/elife-76487-fig3-v2.jpg)\n\n**Figure 3.:** (A) All chains. Horizontal lines connect individuals in reconstructed transmission chains in Amsterdam by chains which had no new case since 2014, and those which continued to grow or emerged, among MSM (top) and heterosexuals (bottom), in order of last diagnosis per chain. (B) Subset of chains in which at least one individual was estimated to have been infected since 2014. Data are presented as in subfigure A.\n\n### Growth of the phylogenetically observed parts of city-level transmission chains\n\nConsidering growth, 89 (7%) of the 1253 phylogenetically observed pre-existing chains in Amsterdam MSM had at least one new member diagnosed in 2014\u20132018, and 114 chains emerged (Table 2 and Figure 3). In Amsterdam heterosexuals, 15 (3%) of the 576 phylogenetically observed pre-existing chains had at least one new member diagnosed in 2014\u20132018, and 26 chains emerged. The emerging chains thus outnumbered the growing pre-existing chains in both Amsterdam MSM and heterosexuals. However, the observed phylogenetic data are challenging to interpret directly because larger proportions of recent infections remain undiagnosed, approximately half of diagnosed individuals did not have a sequence sampled, and small chains are more likely to remain entirely unobserved (see Materials and methods).\n\n**Table 2.**\n Growth distribution of transmission chains among Amsterdam residents in 2014\u20132018.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th colspan=\"4\">Observed*</th>\n      <th colspan=\"4\">Predicted\u2020</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">Pre-existing chains</td>\n      <td colspan=\"2\">Emerging chains</td>\n      <td colspan=\"2\">Pre-existing chains</td>\n      <td colspan=\"2\">Emerging chains</td>\n    </tr>\n    <tr>\n      <td>Transmission group</td>\n      <td>New cases</td>\n      <td>(N)</td>\n      <td>(%)</td>\n      <td>(N)</td>\n      <td>(%)</td>\n      <td>(N)</td>\n      <td>(%)</td>\n      <td>(N)</td>\n      <td>(%)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"10\">Amsterdam MSM</td>\n      <td>0</td>\n      <td>220</td>\n      <td>71.2%</td>\n      <td>-</td>\n      <td>-</td>\n      <td>198 [175-221]</td>\n      <td>64.1% [56.6\u201371.5%]</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>59</td>\n      <td>19.1%</td>\n      <td>94</td>\n      <td>82.5%</td>\n      <td>52 [37-69]</td>\n      <td>16.8% [12.0\u201322.3%]</td>\n      <td>137 [118-158]</td>\n      <td>79.7% [72.3\u201386.1%]</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>15</td>\n      <td>4.9%</td>\n      <td>11</td>\n      <td>9.6%</td>\n      <td>23 [14-35]</td>\n      <td>7.4% [4.5\u201311.3%]</td>\n      <td>19 [11-30]</td>\n      <td>11.2% [6.3\u201317.0%]</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>6</td>\n      <td>1.9%</td>\n      <td>7</td>\n      <td>6.1%</td>\n      <td>13 [6-20]</td>\n      <td>4.2% [1.9\u20136.5%]</td>\n      <td>7 [2-13]</td>\n      <td>4.1% [1.2\u20137.6%]</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>3</td>\n      <td>1.0%</td>\n      <td>2</td>\n      <td>1.8%</td>\n      <td>7 [3-14]</td>\n      <td>2.3% [1.0\u20134.5%]</td>\n      <td>3 [0\u20138]</td>\n      <td>1.8% [0.0\u20134.3%]</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>2</td>\n      <td>0.6%</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>4 [1-10]</td>\n      <td>1.3% [0.3\u20133.2%]</td>\n      <td>2 [0\u20135]</td>\n      <td>1.1% [0.0\u20132.9%]</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>3 [0\u20137]</td>\n      <td>1.0% [0.0\u20132.3%]</td>\n      <td>1 [0\u20134]</td>\n      <td>0.6% [0.0\u20132.1%]</td>\n    </tr>\n    <tr>\n      <td>7+</td>\n      <td>4</td>\n      <td>1.3%</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>7 [2-14]</td>\n      <td>2.3% [0.6\u20134.5%]</td>\n      <td>2 [0\u20136]</td>\n      <td>1.1% [0.0\u20133.2%]</td>\n    </tr>\n    <tr>\n      <td>Total that grew</td>\n      <td>89</td>\n      <td></td>\n      <td>114</td>\n      <td></td>\n      <td>111 [88-134]</td>\n      <td></td>\n      <td>172 [154-195]</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>309</td>\n      <td></td>\n      <td>114</td>\n      <td></td>\n      <td>309 [309-309]</td>\n      <td></td>\n      <td>172 [154-195]</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"10\">Amsterdam heterosexual</td>\n      <td>0</td>\n      <td>150</td>\n      <td>90.9%</td>\n      <td>-</td>\n      <td>-</td>\n      <td>138 [123-150]</td>\n      <td>83.6% [74.5\u201390.9%]</td>\n      <td>-</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>13</td>\n      <td>7.9%</td>\n      <td>25</td>\n      <td>96.2%</td>\n      <td>17 [9-28]</td>\n      <td>10.3% [5.5\u201317.0%]</td>\n      <td>50 [35-72]</td>\n      <td>86.4% [74.1\u201395.6%]</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>2</td>\n      <td>1.2%</td>\n      <td>1</td>\n      <td>3.8%</td>\n      <td>5 [1-11]</td>\n      <td>3.0% [0.6\u20136.7%]</td>\n      <td>5 [1-12]</td>\n      <td>9.3% [2.0\u201319.0%]</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>2 [0\u20136]</td>\n      <td>1.2% [0.0\u20133.6%]</td>\n      <td>1 [0\u20135]</td>\n      <td>2.0% [0.0\u20137.8%]</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>1 [0\u20133]</td>\n      <td>0.6% [0.0\u20131.8%]</td>\n      <td>0 [0\u20132]</td>\n      <td>0.0% [0.0\u20134.3%]</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>0 [0\u20132]</td>\n      <td>0.0% [0.0\u20131.2%]</td>\n      <td>0 [0\u20132]</td>\n      <td>0.0% [0.0\u20132.6%]</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>0 [0\u20132]</td>\n      <td>0.0% [0.0\u20131.2%]</td>\n      <td>0 [0\u20131]</td>\n      <td>0.0% [0.0\u20132.0%]</td>\n    </tr>\n    <tr>\n      <td>7+</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>0</td>\n      <td>0.0%</td>\n      <td>0 [0\u20133]</td>\n      <td>0.0% [0.0\u20131.8%]</td>\n      <td>0 [0\u20131]</td>\n      <td>0.0% [0.0\u20132.0%]</td>\n    </tr>\n    <tr>\n      <td>Total that grew</td>\n      <td>15</td>\n      <td></td>\n      <td>26</td>\n      <td></td>\n      <td>27 [15-42]</td>\n      <td></td>\n      <td>58 [42-83]</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>165</td>\n      <td></td>\n      <td>26</td>\n      <td></td>\n      <td>165 [165-165]</td>\n      <td></td>\n      <td>58 [42-83]</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*Parts of the actual Amsterdam transmission chains were observed in viral phylogenies of the major subtypes and circulating recombinant forms (B, 01AE, 02AG, C, D, G, A1 or 06 cpx).\u2020Predicted based on the Bayesian branching process growth model and accounting for undiagnosed and unsampled individuals._\n\n### Emerging transmission chains outnumber pre-existing, growing transmission chains\n\nWe next used a Bayesian branching process growth model to predict the size and growth of the actual transmission chains (see Materials and methods and Appendix 1, Section 6). Model fit to the observed growth distributions was very good (Appendix 1\u2014figure 27). We estimate that there are substantially more emerging chains in Amsterdam since 2014 than phylogenetically observed, 172 [154-195] in MSM and 58 [42-83] in heterosexuals, reflecting that emergent chains have a high probability to be entirely unobserved when growth is below the epidemic reproduction threshold of one (Table 2). Thus, the estimated actual, emerging chains outnumber the growing pre-existing chains in both Amsterdam MSM and heterosexuals more strongly than the phylogenetic data suggest.\n\nIn terms of proportions, an estimated 61% [55\u201367%] of the growing chains among Amsterdam MSM were emerging, and 69% [56\u201381%] of the growing chains among Amsterdam heterosexuals. We estimate further that 47% [39\u201355%] of the estimated infections among Amsterdam MSM in 2014\u20132018 were in emerging chains, and 61% [45\u201377%] of the estimated infections among Amsterdam heterosexuals (Table 3). Thus, on average the pre-existing chains contributed more new cases in 2014\u20132018 to Amsterdam infections than the emerging chains.\n\n**Table 3.**\n Distribution of Amsterdam infections since 2014 in pre-existing and emerging transmission chains.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"5\">Observed*</th>\n      <th colspan=\"5\">Predicted\u2020</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Total</td>\n      <td colspan=\"2\">In pre-existing chains</td>\n      <td colspan=\"2\">In emerging chains</td>\n      <td>Total</td>\n      <td colspan=\"2\">In pre-existing chains</td>\n      <td colspan=\"2\">In emerging chains</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>(N)</td>\n      <td>(N)</td>\n      <td>(%)</td>\n      <td>(N)</td>\n      <td>(%)</td>\n      <td>(N)</td>\n      <td>(N)</td>\n      <td>(%)</td>\n      <td>(N)</td>\n      <td>(%)</td>\n    </tr>\n    <tr>\n      <td>MSM (Dutch)</td>\n      <td>145</td>\n      <td>86</td>\n      <td>59.30%</td>\n      <td>59</td>\n      <td>40.70%</td>\n      <td>254 [202-318]</td>\n      <td>136 [95-188]</td>\n      <td>53.6% [44.1\u201362.4%]</td>\n      <td>117 [93-147]</td>\n      <td>46.4% [37.6\u201355.9%]</td>\n    </tr>\n    <tr>\n      <td>MSM (W. Europe, N. America, Oceania)</td>\n      <td>40</td>\n      <td>25</td>\n      <td>62.50%</td>\n      <td>15</td>\n      <td>37.50%</td>\n      <td>68 [49-91]</td>\n      <td>37 [23-56]</td>\n      <td>54.8% [40.5\u201368.1%]</td>\n      <td>31 [20-43]</td>\n      <td>45.2% [31.9\u201359.5%]</td>\n    </tr>\n    <tr>\n      <td>MSM (E. &amp; C. Europe)</td>\n      <td>17</td>\n      <td>9</td>\n      <td>52.90%</td>\n      <td>8</td>\n      <td>47.10%</td>\n      <td>29 [18-42]</td>\n      <td>15 [8-25]</td>\n      <td>53.6% [34.2\u201372.7%]</td>\n      <td>13 [7-21]</td>\n      <td>46.4% [27.3\u201365.8%]</td>\n    </tr>\n    <tr>\n      <td>MSM (S. America &amp; Caribbean)</td>\n      <td>53</td>\n      <td>24</td>\n      <td>45.30%</td>\n      <td>29</td>\n      <td>54.70%</td>\n      <td>95 [72-126]</td>\n      <td>50 [33-74]</td>\n      <td>52.8% [40.3\u201364.8%]</td>\n      <td>45 [31-61]</td>\n      <td>47.2% [35.2\u201359.7%]</td>\n    </tr>\n    <tr>\n      <td>MSM (Other)</td>\n      <td>42</td>\n      <td>14</td>\n      <td>33.30%</td>\n      <td>28</td>\n      <td>66.70%</td>\n      <td>76 [55-103]</td>\n      <td>37 [22-57]</td>\n      <td>48.4% [34.4\u201361.7%]</td>\n      <td>39 [26-56]</td>\n      <td>51.6% [38.3\u201365.6%]</td>\n    </tr>\n    <tr>\n      <td>MSM (All)</td>\n      <td>297</td>\n      <td>158</td>\n      <td>53.20%</td>\n      <td>139</td>\n      <td>46.80%</td>\n      <td>523 [427-647]</td>\n      <td>276 [200-377]</td>\n      <td>52.8% [44.6\u201360.7%]</td>\n      <td>246 [206-300]</td>\n      <td>47.2% [39.3\u201355.4%]</td>\n    </tr>\n    <tr>\n      <td>Heterosexual (Dutch)</td>\n      <td>14</td>\n      <td>2</td>\n      <td>14.30%</td>\n      <td>12</td>\n      <td>85.70%</td>\n      <td>38 [23-59]</td>\n      <td>14 [5-29]</td>\n      <td>37.8% [17.5\u201358.9%]</td>\n      <td>23 [13-38]</td>\n      <td>62.2% [41.1\u201382.5%]</td>\n    </tr>\n    <tr>\n      <td>Heterosexual (Sub-Saharan Africa)</td>\n      <td>11</td>\n      <td>4</td>\n      <td>36.40%</td>\n      <td>7</td>\n      <td>63.60%</td>\n      <td>30 [17-51]</td>\n      <td>10 [3-24]</td>\n      <td>34.3% [11.3\u201358.6%]</td>\n      <td>20 [11-34]</td>\n      <td>65.7% [41.4\u201388.7%]</td>\n    </tr>\n    <tr>\n      <td>Heterosexual (S. America &amp; Caribbean)</td>\n      <td>14</td>\n      <td>8</td>\n      <td>57.10%</td>\n      <td>6</td>\n      <td>42.90%</td>\n      <td>35 [20-58]</td>\n      <td>14 [5-33]</td>\n      <td>42.9% [18.6\u201365.8%]</td>\n      <td>19 [10-34]</td>\n      <td>57.1% [34.2\u201381.4%]</td>\n    </tr>\n    <tr>\n      <td>Heterosexual (Other)</td>\n      <td>5</td>\n      <td>3</td>\n      <td>60.0%</td>\n      <td>2</td>\n      <td>40.0%</td>\n      <td>13 [6-23]</td>\n      <td>5 [1-12]</td>\n      <td>39.1% [9.1\u201370.0%]</td>\n      <td>8 [3-15]</td>\n      <td>60.9% [30.0\u201390.9%]</td>\n    </tr>\n    <tr>\n      <td>Heterosexual (All)</td>\n      <td>44</td>\n      <td>17</td>\n      <td>38.60%</td>\n      <td>27</td>\n      <td>61.40%</td>\n      <td>117 [80-173]</td>\n      <td>45 [22-83]</td>\n      <td>38.7% [22.6\u201354.9%]</td>\n      <td>71 [49-105]</td>\n      <td>61.3% [45.1\u201377.4%]</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Parts of the actual Amsterdam transmission chains were observed in viral phylogenies of the major subtypes and circulating recombinant forms (B, 01AE, 02AG, C, D, G, A1 or 06 cpx).\u2020Predicted based on the Bayesian branching process growth model and accounting for undiagnosed and unsampled individuals._\n\n### Proportion of locally preventable infections\n\nFrom the emerging transmission chains, we can directly estimate the proportion of Amsterdam infections since 2014 that had an Amsterdam source (see Materials and methods). We interpret these infections as locally preventable, because they are within the reach of the HIV prevention efforts in Amsterdam. In Amsterdam MSM, an estimated 67% [60\u201374%] of infections in 2014\u20132018 were locally preventable, with little variation by region of birth (Figure 4, proportions next to error bars). In Amsterdam heterosexuals, an estimated 56% [41\u201370%] of infections in 2014\u20132018 were locally preventable, with more variation by region of birth, though we caution that the underlying sample sizes were small.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76487/elife-76487-fig4-v2.jpg)\n\n**Figure 4.:** Posterior median estimates of proportion (%) of preventable infections shown above bars. Estimates generated from 203 phylogenetic subgraphs among Amsterdam MSM, containing 297 individuals, and 41 subgraphs among Amsterdam heterosexuals, containing 44 individuals.\n\nWe next multiplied the proportions of locally preventable infections with the estimated number of infections in 2014\u20132018 in each of the 9 Amsterdam risk groups to obtain estimates of the absolute number of locally preventable infections in Amsterdam in 2014\u20132018 in each risk group (Figure 4, y-axis). Of the estimated 415 [316-542] locally preventable Amsterdam infections in 2014\u20132018, an estimated 178 [129-243] (43% [37\u201349%]) were in foreign-born MSM, 171 [124-231] (41% [35\u201347%]) in Dutch-born MSM, 45 [24-82] (10% [6\u201318%]) in foreign-born heterosexuals, and 21 [10-39] (5% [2\u20139%]) in Dutch-born heterosexuals.\n\n## Discussion\n\nMore than 300 cities have by the end of 2021 signed the Fast-Track Cities Paris Declaration and committed to end the AIDS epidemic by 2030, addressing disparities in access to basic health and social services, social justice and economic opportunities. The city of Amsterdam reached the UNAIDS Fast-track Cities 95-95-95 targets before the onset of the COVID-19 pandemic, and has seen a decade of declines in city-level HIV diagnoses. Here, we characterised the number, size and growth of HIV transmission chains among Amsterdam residents, and quantified the further potential of preventing HIV infection at city level. It is important to recognize that through the analyses conducted here, the exact location of infection events cannot be identified. Rather, the available location data enable us to identify groups of Amsterdam residents with phylogenetically distinct HIV, which are the inferential basis for estimating the number, size, and growth of the actual unobserved transmission chains among Amsterdam residents. Regardless of the exact infection location, Amsterdam residents live in Amsterdam, and are thus within reach of Amsterdam public health and local prevention interventions.\n\nWe can structure our insights in four themes. First, when focusing on the denominator of recent infections that are estimated to have occurred in the 5-year period 2014\u20132018, the proportions of individuals that remained undiagnosed by early 2019 were high and variable, between 9% and 20% in (self-identified) Amsterdam MSM risk groups, and between 28% and 57% in Amsterdam heterosexual risk groups. These results underscore that strategies aimed at raising awareness of HIV infection, providing easy access to checking symptoms of early HIV infection, encouraging frequent testing, PrEP provision, addressing fears of a positive test and reducing stigma are vital to break the forefront of ongoing HIV transmission chains (https://hebikhiv.nl/en/; Dijkstra et al., 2017; Heijman et al., 2009; Burns et al., 2017; Myers et al., 2018). The estimated times to diagnosis document substantial disparities across risk groups in entering HIV care in Amsterdam, and separate efforts have characterised individuals with late diagnoses (Op de Coul et al., 2016; Bil et al., 2019; Slurink et al., 2021). We explored the impact of assumptions on incidence trends to the undiagnosed estimates and found some sensitivities (Appendix 1, Section 3.3), although estimates were all very similar as long as the assumed incidence trends reflected available data. Further sensitivity analyses are reported in Appendix 1 Section 3.4\u20133.5. We further validated the time-to-diagnosis estimates by comparing the estimated proportion of recent HIV infections (\u22646 months) with those estimated in an independent study in Amsterdam using avidity assays (Slurink et al., 2021), and found them to be similar (Appendix 1\u2014figure 28). The main limitation of our biomarker approach is thus that at present we cannot account for time trends in time-to-diagnosis.\n\nSecond, we documented the growth of Amsterdam HIV transmission chains in which all phylogenetically observed members were virally suppressed by 2014. We find that regardless of risk group, almost all such virally suppressed chains did not grow in the sense that no new infections were phylogenetically observed. These results are unsurprising and mirror the established relationship that treatment for HIV infection, which results in undetectable viral load equals untransmittable virus (Rodger et al., 2019).\n\nThird, we initially speculated that with a decade of declining HIV diagnoses in Amsterdam, those infections that still occur might be concentrated in newly seeded, emerging transmission chains. It is challenging to interpret the directly observed data because high proportions of individuals remain undiagnosed and/or are not sequenced, and emerging chains are more likely to be completely undetected. We thus used statistical growth models accounting for unsampled cases, and we estimate in contrast to our initial speculations that 53% of new Amsterdam MSM infections in 2014\u20132018 grew from chains that existed prior to 2014, and 39% of new Amsterdam heterosexual infections. Following up and tracing back from known transmission chains is easier than discovering emerging chains, and so the many new infections that originate in existing chains have particularly high prevention potential (Oster et al., 2018; Little et al., 2021; Dennis et al., 2021).\n\nFourth, we quantified the locally preventable infections among Amsterdam residents in 2014\u20132018, defined as the infections in Amsterdam residents in 2014\u20132018 who are estimated to have as source another Amsterdam resident. Using the virus\u2019 genetic code as an objective marker into infection events, we estimate that regardless of declining diagnoses and incidence, the majority of infections in Amsterdam residents in 2014\u20132018 remained locally preventable in all risk groups investigated. The statistical strength of evidence into this finding was strong for Amsterdam MSM (all 95% credible intervals for the proportion of locally preventable infections were above 50%), but more moderate for Amsterdam heterosexuals (wider credible intervals including 50%), reflecting that relatively few infections in Amsterdam heterosexuals in 2014\u20132018 were observed with a viral sequence by early 2019 due to frequent late diagnosis and incomplete viral sequencing. These findings are consistent with data from clinic surveys in migrants across Europe (Alvarez-Del Arco et al., 2017), which indicated similar levels of in-country HIV acquisition post migration of 51% in heterosexual women and 58% in heterosexual men.\n\nIn summary, our data from 2014 to 2018 indicates considerable potential to prevent HIV infections among Amsterdam residents through city-level interventions, even in the context of substantial improvements in curbing the number of diagnoses and infections in Amsterdam over the past 10 years. Within the similarities in demographics, HIV burden, access to care, and prevention approaches between Amsterdam and many cities in Western Europe and worldwide, our conclusions are relevant to the wider UNAIDS Fast-Track cities, and provide evidence-based support for locally targeted combination HIV prevention interventions in metropolitan areas. COVID-19 has severely disrupted prevention messaging, testing and PrEP services and early pathways to care, making innovative and targeted HIV prevention approaches all the more important.\n",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "f088d888-36a4-487d-ae88-034c92b0470b",
+      "submission_id": "2e1c03f2-917a-4ad2-b85e-e526f118baec",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joshua T Schiffer, https://ror.org/007ps6h72 Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76487.sa0](https://doi.org/10.7554/eLife.76487.sa0)\n\nCongratulations on this impressive paper which combines clinical biomarker data, patient specific data and viral genetics data to estimate the proportion of HIV infections occurring within key subgroups of the population in Amsterdam. The work is methodologically impressive and also may be of high utility for understanding the spread of HIV and other viral infections through the population.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Joshua T Schiffer, https://ror.org/007ps6h72 Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76487.sa1](https://doi.org/10.7554/eLife.76487.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Estimating the potential to prevent locally acquired HIV infections in a UNAIDS Fast\u2013Track City, Amsterdam\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and David Serwadda as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: David A Rasmussen (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nPlease clarify certain assumptions about the model regarding the source of local infections, as described mostly by reviewer 2 and a bit by the other 2 reviewers\n\nReviewer #1 (Recommendations for the authors):\n\nThis manuscript describes an analysis of the transmission dynamics of HIV\u20131 in Amsterdam in the context of a rapid scale\u2013up of prevention measures. Rather than relying on a single source of information, it integrates both virus sequence diversity (by phylogenetic analysis) and statistical modelling to derive estimates of the numbers of unsampled infections and to use clinical biomarkers to estimate dates of infection.\n\nSpecifically, the authors reconstructed phylogenetic trees relating large numbers of HIV\u20131 sequences collected in Amsterdam, outside Amsterdam, and from around the world. The distribution of risk groups and locations was extrapolated by maximum parsimony from the observed sequences at the tips of the tree down towards their common ancestors, and clusters associated with local transmission within Amsterdam were extracted. This process was repeated for 100 replicate trees, which is an important step for accommodating the uncertainty in reconstructing phylogenetic trees.\n\nThe authors used a Bayesian method to fit a hierarchical model of the time elapsed between HIV infection and diagnosis (\"age\" of infection), as predicted by viral load and CD4 measurements, and stratify the model by risk group and location. The resulting estimated dates of infection provide an important context to interpreting the transmission clusters extracted from the phylogenetic trees \u2013 many studies have endeavoured to obtain similar information.\n\nThe presence of undiagnosed infections that are epidemiologically related to clusters in the study was estimated by fitting a branching process model to the clusters augmented with estimated infection dates. This is a very noteworthy aspect of the analysis, especially because the failure to observe undiagnosed infections is a significant issue that makes it difficult to interpret HIV\u20131 clusters derived from the comparative analysis of sequence variation. In this case, clusters of recently diagnosed individuals who were infected for a long period of time, as indicated by clinical biomarkers, implies a larger number of unsampled infections related to that particular group.\n\nThe authors report that, despite the success of scaling up prevention measures in Amsterdam at limiting the onward transmission of HIV\u20131, there remains a substantial undiagnosed population associated with a disproportionately greater number of recent infections, and that this largely affects foreign\u2013born men who have sex with men. These methodological advances and unique data resources distinguish this study from an abundant literature on HIV\u20131 transmission clusters. Most of my comments, provided as recommendations for the authors, about the manuscript concern language and the presentation of results.\n\n\u2013 Page 2, \"(HIV) is concentrated in metropolitan areas, [\u2026] representing 26% of the global HIV burden\" \u2013 minor point, it would be easier to interpret this statistic if it were accompanied with a rough estimate of what share of the global population is contained in metropolitan areas\n\n\u2013 Page 2, is there a URL or reference for the UNAIDS fast\u2013track Cities initiative?\n\n\u2013 Page 3, \"among infections that are estimated to have occurred since 2014\" \u2013 is the significance of this cutoff year associated with the fast track initiative? It would be helpful to spell this out for the reader.\n\n\u2013 Page 4, I have heard of the Weibull distribution but not the Weibull likelihood \u2013 please clarify.\n\n\u2013 Page 4, \"we used the first available partial HIV\u20131 polymerase (pol) sequence\" \u2013 please provide HXB2 nucleotide coordinates\n\n\u2013 Page 4, \"retrieved from the Los Alamos HIV\u20131 sequence database\" \u2013 the LANL database requests authors to provide the URL (https://www.hiv.lanl.gov)\n\n\u2013 Page 4, \"All sequences were subtyped using Comet and Rega.\" Please provide version numbers and briefly explain how discordant subtype assignments were resolved between these two algorithms. (I found the explanation in the supplementary material and it's not that much longer \u2013 why not explain it in main text?)\n\n\u2013 Page 4, did you use a double\u2013precision version of FastTree?\n\n\u2013 Page 4, I have a problem with the term \"phylogenetic subgraphs\". A subgraph is a subset of nodes in the network that is not necessarily a single connected component, whereas the authors are presumably referring to either subtrees (all descendants from an internal node), or subset trees (a contiguous subset of descendants from an internal node). In the HIV molecular epidemiology literature, we would refer to these as subtrees.\n\n\u2013 Page 4, \"Diagnosed Amsterdam patients in the same subgraph are interpreted as belonging to the same transmission chain\" \u2013 this interpretation is not very accurate \u2013 while individuals in a distinct subtree are more epidemiologically related, they are not necessarily in the same \"transmission chain\" and it is misleading to make this association. The conventional terminology would be \"transmission cluster\".\n\n\u2013 Page 4, \"the estimated state of the root of the subgraph is interpreted as the origin of the transmission chain\" \u2013 this ancestral state reconstruction is going to be quite uncertain in many cases \u2013 was this uncertainty propagated from the replicate bootstrap trees? \u2013 it would also be good to emphasize that \"origin\" refers to location and risk group, and not a single individual\n\n\u2013 Figure 1, please check this figure for color accessibility \u2013 also the use of thin (low weight) font and narrow lines in the tree may make the figure difficult to read for the vision impaired\n\n\u2013 Figure 3, I don't understand why there is so much unused space at the top half of the lower plots \u2013 I surmise that the authors intend to preserve the y\u2013axis scales between the top and bottom plots for each of A and B columns, but why not truncate the lower plots? I also think the \"zoom in\" plots have limited utility and could be moved to supplementary material. Otherwise the plots are a rather effective visualization method.\n\n\u2013 Page 12, please provide some details on the branching process model, since it plays an important role in this analysis \u2013 although it is well described in supplementary material, it would be helpful to give a little more info in the main text\n\n\u2013 Figure 4, for what it's worth, these palettes render well in black and white\n\n\u2013 Page 15, \"the proportion of undiagnosed individual individuals infected with HIV are\" \u2013 singular or plural?\n\n\u2013 Code availability \u2013 this GitHub repository appears to be set to private \u2013 please make this available for peer review\n\n\u2013 Figures S4\u2013S14 \u2013 I'm not a fan of radial layouts for displaying phylogenies with node annotations \u2013 also, are these trees rooted? this layout method implies that they are, but I did not see any methodological description for rooting trees. Also, these appear to be vectorized images \u2013 it's actually more efficient to use a rasterized format like PNG or TIFF for large annotated trees because you're otherwise storing information about an excessive number of objects to draw.\n\n\u2013 Figure S4, what's circulating recombinant form A1? do you mean subtype A1?\n\n\u2013 Equation S12, please use or something similar to prevent the MSM and HSX superscripts from being rendered in math mode\n\n\u2013 Please explain how the pairs plots (Figures S18, S19) were used to assess convergence of the Hamiltonian Monte Carlo chain samples. The figure legends don't provide any information.\n\nReviewer #2 (Recommendations for the authors):\n\nWhile Amsterdam has done a tremendous job identifying and treating HIV infections and a large proportion of the HIV infected population is in care, the authors results highlight that there are often still substantial delays in diagnosis and that as many as 20% of individuals infected between 2014\u20132018 remained undiagnosed by the end of 2018. These results have important implications for HIV prevention strategies and policy: long\u2013term goals aimed at diagnosing or treating a certain fraction of the overall infected population may need to be reconsidered in a more dynamic context focused on the delays between infection and diagnosis/treatment.\n\nOverall, the study design is strong and the statistical methods used to estimate the time to diagnosis and the proportion of undiagnosed infections are sound.\n\nHowever, it's not clear to me what assumptions are being made to estimate the proportion of new infections arising locally from individuals living in Amsterdam. It seems there may be several latent assumptions here, namely (1) there are no unobserved transmission events in the transmission chains between individuals living in/outside of Amsterdam (2) sampling more extensively outside of Amsterdam would not break apart the observed transmission chains into a larger number of smaller chains (with more external introductions from outside of Amsterdam). It seems to me these assumptions could bias the estimated proportion of new infections arising locally, and therefore the \"preventable fraction\", upwards. At the very least I think it would be helpful to be more transparent about the assumptions behind the estimator given in eq. 2.\n\nPg. 5 \"predicted actual transmission chains\" \u2013 not clear what is meant by this.\n\nPg. 6 \"N_C is the estimated number of transmission chains which emerged between 2014\u20132018\" \u2013\u2013 is N_C the estimated number of transmission chains or rather the estimated number of individuals in those transmission chains? It seems like it would need to be the later to make N_C directly comparable to N_I.\n\nReviewer #3 (Recommendations for the authors):\n\nThe paper uses various sources of data to identify when and among whom new HIV transmissions are occurring in Amsterdam. The models use multiple data inputs and the conclusions are of high public health importance. The results appear to be largely supported by the analyses. The multidisciplinary approach could be of use for tracking infectious diseases in other settings.\n\nA few areas of the paper could use clarification as described below\n\n\u2013 I am a bit confused by the term upwards bias in time to diagnosis estimates. Please be specific in what is meant by this phrase.\n\n\u2013 The data in the 2nd and 3rd to last columns in Table 1 would be easier to digest in a histogram.\n\n\u2013 Tables 2 and 3 would also be easier to digest in graphical form.\n\n\u2013 Please provide 1\u20132 sentences summarizing the Bayesian methods in Pantazis et al. in the Methods.\n\n\u2013 Please justify the assumption that time to diagnosis did not change substantially over 2010\u20132019. It seems like that with lower true incidence, in theory a higher proportion of diagnoses could occur during later stages of infection.\n\n\u2013 Please more precisely define \"uninterrupted state label\".\n\n\u2013 Why were other subtypes or recombinants excluded?\n\n\u2013 The blue and turquoise in Figure 3 are difficult to discriminate.\n\n\u2013 Discussion: What is the ECDC model? Please specify.\n",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5df2cd36-f041-439d-8848-546e524498b0",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C1",
+      "claim": "More than 300 cities including Amsterdam have joined the UNAIDS Fast-Track Cities initiative.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 300 cities including the city of Amsterdam in the Netherlands have joined the UNAIDS Fast-Track Cities initiative, committing to accelerate their HIV response and end the AIDS epidemic in cities by 2030.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this fact about the number of cities in the initiative.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "89a89f95-71d1-46c7-8589-cca6a0909978",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C2",
+      "claim": "Between 1 January 2014 and 1 May 2019, there were 846 HIV diagnoses in Amsterdam residents.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 1 January 2014 and 1 May 2019, there were 846 HIV diagnoses in Amsterdam residents, of whom 516 (61%) were estimated to have been infected in 2014\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the ATHENA cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "65252779-e9e4-46aa-b55b-c10fe126f38b",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C3",
+      "claim": "516 (61%) of the 846 Amsterdam HIV diagnoses were estimated to have been infected in 2014\u20132018.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 1 January 2014 and 1 May 2019, there were 846 HIV diagnoses in Amsterdam residents, of whom 516 (61%) were estimated to have been infected in 2014\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from biomarker-based estimation of infection times.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "b9062d55-bbcb-4ceb-872e-82170bdb74c6",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C4",
+      "claim": "The rate of new Amsterdam diagnoses since 2014 (104 per 100,000) remained higher than the national rates excluding Amsterdam (24 per 100,000).",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the rate of new Amsterdam diagnoses since 2014 (104 per 100,000) remained higher than the national rates excluding Amsterdam (24 per 100,000), and in this sense Amsterdam remains a HIV hotspot in the Netherlands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of observed diagnosis rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "dbb99e14-e308-4d47-829a-9f4c889d45ac",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C5",
+      "claim": "Amsterdam remains a HIV hotspot in the Netherlands.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the rate of new Amsterdam diagnoses since 2014 (104 per 100,000) remained higher than the national rates excluding Amsterdam (24 per 100,000), and in this sense Amsterdam remains a HIV hotspot in the Netherlands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the higher diagnosis rate in Amsterdam compared to the rest of the Netherlands.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "ab82f9bd-de0d-4b85-a731-6438a8a7fb3b",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C6",
+      "claim": "An estimated 14% [12\u201316%] of infections in Amsterdam MSM in 2014\u20132018 remained undiagnosed by 1 May 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "An estimated 14% [12\u201316%] of infections in Amsterdan MSM in 2014\u20132018 remained undiagnosed by 1 May 2019, and 41% [35\u201348%] in Amsterdam heterosexuals, with variation by region of birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from biomarker data and time-to-diagnosis modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "785b1984-2b97-4afd-9e87-08c25ca48b50",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C7",
+      "claim": "An estimated 41% [35\u201348%] of infections in Amsterdam heterosexuals in 2014\u20132018 remained undiagnosed by 1 May 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "An estimated 14% [12\u201316%] of infections in Amsterdan MSM in 2014\u20132018 remained undiagnosed by 1 May 2019, and 41% [35\u201348%] in Amsterdam heterosexuals, with variation by region of birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from biomarker data and time-to-diagnosis modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "9cf3d09c-4107-44dc-807e-e22b7535cae0",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C8",
+      "claim": "An estimated 67% [60\u201374%] of Amsterdam MSM infections in 2014\u20132018 had an Amsterdam resident as source.",
+      "claim_type": "EXPLICIT",
+      "source": "An estimated 67% [60\u201374%] of Amsterdam MSM infections in 2014\u20132018 had an Amsterdam resident as source, and 56% [41\u201370%] in Amsterdam heterosexuals, with heterogeneity by region of birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from phylogenetic analysis and branching process modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "fcc636f7-06b2-4469-adc3-7baf66a3534c",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C9",
+      "claim": "An estimated 56% [41\u201370%] of Amsterdam heterosexual infections in 2014\u20132018 had an Amsterdam resident as source.",
+      "claim_type": "EXPLICIT",
+      "source": "An estimated 67% [60\u201374%] of Amsterdam MSM infections in 2014\u20132018 had an Amsterdam resident as source, and 56% [41\u201370%] in Amsterdam heterosexuals, with heterogeneity by region of birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from phylogenetic analysis and branching process modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "c0c23bf2-cf4d-409e-b54c-2d6b698b65bc",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C10",
+      "claim": "An estimated 43% [37\u201349%] of locally acquired infections were in foreign-born MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the locally acquired infections, an estimated 43% [37\u201349%] were in foreign-born MSM, 41% [35\u201347%] in Dutch-born MSM, 10% [6\u201318%] in foreign-born heterosexuals, and 5% [2\u20139%] in Dutch-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from combining phylogenetic estimates with demographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "06fc056b-bc82-4baa-b85e-3179c8e6421d",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C11",
+      "claim": "An estimated 41% [35\u201347%] of locally acquired infections were in Dutch-born MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the locally acquired infections, an estimated 43% [37\u201349%] were in foreign-born MSM, 41% [35\u201347%] in Dutch-born MSM, 10% [6\u201318%] in foreign-born heterosexuals, and 5% [2\u20139%] in Dutch-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from combining phylogenetic estimates with demographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "5bb2775c-0f4e-4ab6-829e-a3a7c4775e7b",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C12",
+      "claim": "An estimated 10% [6\u201318%] of locally acquired infections were in foreign-born heterosexuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the locally acquired infections, an estimated 43% [37\u201349%] were in foreign-born MSM, 41% [35\u201347%] in Dutch-born MSM, 10% [6\u201318%] in foreign-born heterosexuals, and 5% [2\u20139%] in Dutch-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from combining phylogenetic estimates with demographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "565a6b09-bb65-47ee-b1e9-f8ac67330c7a",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C13",
+      "claim": "An estimated 5% [2\u20139%] of locally acquired infections were in Dutch-born heterosexuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the locally acquired infections, an estimated 43% [37\u201349%] were in foreign-born MSM, 41% [35\u201347%] in Dutch-born MSM, 10% [6\u201318%] in foreign-born heterosexuals, and 5% [2\u20139%] in Dutch-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from combining phylogenetic estimates with demographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "f86530e2-f2e9-47a4-a9a9-3cc600cd63ce",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C14",
+      "claim": "The majority of Amsterdam MSM infections in 2014\u20132018 originated in transmission chains that pre-existed by 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate the majority of Amsterdam MSM infections in 2014\u20132018 originated in transmission chains that pre-existed by 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from phylogenetic reconstruction and branching process modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "faaf507d-ab11-4085-bf04-4797d4d91be5",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C15",
+      "claim": "HIV is concentrated in metropolitan areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Human immunodeficiency virus (HIV) is concentrated in metropolitan areas (Joint United Nations Programme on HIV/AIDS, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to UNAIDS.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "5f2cf0e4-29db-48cd-9afb-3dbc19b95399",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C16",
+      "claim": "As of March 2021 over 300 cities have joined the Fast-Track Cities initiative.",
+      "claim_type": "EXPLICIT",
+      "source": "In response, as of March 2021 over 300 cities have joined the Fast-Track Cities initiative (www.fast-trackcities.org) by signing the Paris Declaration, committing to end the AIDS epidemic by 2030, by addressing disparities in access to basic health and social services, social justice and economic opportunities (UNAIDS, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact with reference to the Fast-Track Cities website and UNAIDS.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "e2acce1f-cdf4-40c7-ab42-18992664bda1",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C17",
+      "claim": "Amsterdam is the city with the greatest HIV burden nationally in the Netherlands.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Netherlands, Amsterdam is the city with the greatest HIV burden nationally, reflecting in part large communities of MSM and foreign-born individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about Amsterdam's HIV epidemiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "f5538a63-d024-4894-bba8-f885428e651e",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C18",
+      "claim": "Amsterdam joined the UNAIDS Fast-Track Cities initiative on 1 December 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Amsterdam has a long history of a collaborative HIV approach in combating the epidemic and joined the UNAIDS Fast-Track Cities initiative on 1 December 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific historical fact about Amsterdam's participation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "77c709b0-f8fb-4181-8a46-174de0759cdc",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C19",
+      "claim": "The HIV Transmission Elimination Amsterdam project (H-Team) was initiated in 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "City-level HIV responses were galvanised in the HIV Transmission Elimination Amsterdam project (H-Team) that same year (de Bree et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to de Bree et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "43ad4b6c-b760-486c-a3b2-cc026b7114d6",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C20",
+      "claim": "The H-Team fast-track response focused on outreach activities, encouraging repeat testing every 3\u20136 months to identify acute and early HIV infection, followed by immediate initiation of combination antiretroviral therapy (c-ART) in newly diagnosed patients, and roll-out of pre-exposure prophylaxis (PreP) in populations at increased risk of HIV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The H-Team fast-track response, amongst others, focussed on outreach activities, encouraging repeat testing every 3\u20136 months to identify acute and early HIV infection, followed by immediate initiation of combination antiretroviral therapy (c-ART) in newly diagnosed patients, and roll-out of pre-exposure prophylaxis (PreP) in populations at increased risk of HIV infection (den Daas et al., 2018; Bartelsman et al., 2017; Hoornenborg et al., 2019; Dijkstra et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations describing the H-Team interventions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "947c651e-2343-4b57-8e6c-374ed65321c4",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C21",
+      "claim": "The number of annual HIV diagnoses in Amsterdam residents has consistently declined from ~300 new city-level HIV diagnoses in 2010 to ~120 in 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to the COVID-19 pandemic, the number of annual HIV diagnoses in Amsterdam residents has consistently declined from ~300 new city-level HIV diagnoses in 2010 to ~120 in 2018, primarily in Dutch-born and foreign-born MSM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from surveillance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "164cde39-5aa6-4958-86f1-ae69c060b707",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C22",
+      "claim": "The decline in HIV diagnoses in Amsterdam was primarily in Dutch-born and foreign-born MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to the COVID-19 pandemic, the number of annual HIV diagnoses in Amsterdam residents has consistently declined from ~300 new city-level HIV diagnoses in 2010 to ~120 in 2018, primarily in Dutch-born and foreign-born MSM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from surveillance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "542bbcd3-9f94-4c98-b5d2-c055a64146f5",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C23",
+      "claim": "Late diagnoses remain common in Amsterdam.",
+      "claim_type": "EXPLICIT",
+      "source": "Late diagnoses remain common and are a particular concern in this effort, both for individual health and the risk that unnoticed transmission chains pose to public health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "51a41ca1-08ed-4a15-bcca-58e6e3c13ba1",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C24",
+      "claim": "Data were obtained from the prospective ATHENA cohort of all people living with HIV (PLHIV) in care in the Netherlands.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were obtained from the prospective ATHENA cohort of all people living with HIV (PLHIV) in care in the Netherlands, including patient demographics and longitudinal CD4, HIV viral load, viral sequence, and treatment data (see Appendix 1, Section 2) (Boender et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "dd616638-928c-4a0b-988b-db9dc1fca4b8",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C25",
+      "claim": "2% of individuals opted out of participating in the ATHENA study.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohort data are near complete in the sense that 2% of individuals opted out of participating in the ATHENA study, and 5.2% of individuals who entered ATHENA were lost to follow-up (Boender et al., 2018; Sighem et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reported statistic about the cohort with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "7758ffec-17e2-4f2d-81f3-d48cc5a77b2c",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C26",
+      "claim": "5.2% of individuals who entered ATHENA were lost to follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohort data are near complete in the sense that 2% of individuals opted out of participating in the ATHENA study, and 5.2% of individuals who entered ATHENA were lost to follow-up (Boender et al., 2018; Sighem et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reported statistic about the cohort with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "837b30d3-897b-4242-b081-1c989835c79a",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C27",
+      "claim": "Diagnosed infections were geolocated to Amsterdam based on patients' postcode of residence at time of first registration in ATHENA or the most recent registration update.",
+      "claim_type": "EXPLICIT",
+      "source": "We geolocated diagnosed infections to Amsterdam based on patients' postcode of residence at time of first registration in ATHENA or the most recent registration update, which includes PLHIV that changed residence to Amsterdam at a registration update (4%), PLHIV that changed residence to another Dutch municipality after first registration (4%), and PLHIV that were consistently resident in Amsterdam (92%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for geolocation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "c0466556-314a-4b3c-b78b-78a43143b1d6",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C28",
+      "claim": "4% of PLHIV changed residence to Amsterdam at a registration update.",
+      "claim_type": "EXPLICIT",
+      "source": "We geolocated diagnosed infections to Amsterdam based on patients' postcode of residence at time of first registration in ATHENA or the most recent registration update, which includes PLHIV that changed residence to Amsterdam at a registration update (4%), PLHIV that changed residence to another Dutch municipality after first registration (4%), and PLHIV that were consistently resident in Amsterdam (92%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reported statistic from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "c77c2001-26cb-498b-b71c-fe5e3ea63063",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C29",
+      "claim": "4% of PLHIV changed residence to another Dutch municipality after first registration.",
+      "claim_type": "EXPLICIT",
+      "source": "We geolocated diagnosed infections to Amsterdam based on patients' postcode of residence at time of first registration in ATHENA or the most recent registration update, which includes PLHIV that changed residence to Amsterdam at a registration update (4%), PLHIV that changed residence to another Dutch municipality after first registration (4%), and PLHIV that were consistently resident in Amsterdam (92%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reported statistic from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "3390c78c-2a11-4ba0-ab74-ffc84b32cc99",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C30",
+      "claim": "92% of PLHIV were consistently resident in Amsterdam.",
+      "claim_type": "EXPLICIT",
+      "source": "We geolocated diagnosed infections to Amsterdam based on patients' postcode of residence at time of first registration in ATHENA or the most recent registration update, which includes PLHIV that changed residence to Amsterdam at a registration update (4%), PLHIV that changed residence to another Dutch municipality after first registration (4%), and PLHIV that were consistently resident in Amsterdam (92%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reported statistic from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "c3b9973e-4cc6-4689-abd3-180f9d4e9dd8",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C31",
+      "claim": "Time from infection to diagnosis was estimated for all HIV diagnosed patients using a Bayesian approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Using longitudinal viral load and CD4 count data and further demographic and clinical information, we estimated time from infection to diagnosis for all HIV diagnosed patients with a Bayesian approach (Pantazis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "495203d3-1b91-4afe-9bca-0cef1b6e50fd",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C32",
+      "claim": "Data from the CASCADE collaboration on 19,788 observed HIV seroconverters were used to parameterize a bivariate normal linear model.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, data from the CASCADE collaboration on 19,788 observed HIV seroconverters were used to parameterize a bivariate normal linear model of the joint time evolution of HIV viral load and CD4 cell count decline since time of infection in the context of additional covariates (sex, region of origin, mode of infection, age at time of diagnosis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used for model parameterization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "534b3f1e-7bdc-4d9b-91c2-2e45289f6893",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C33",
+      "claim": "Amsterdam patients had an average of four viral load observations and six CD4 cell count observations per patient.",
+      "claim_type": "EXPLICIT",
+      "source": "Then we used the trained model to estimate infection times from longitudinal biomarker data for Amsterdam patients, with an average of four viral load observations and six CD4 cell count observations per patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reported statistic about the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "3eecd9ec-fe8c-4f67-8c4f-e66765a6e370",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C34",
+      "claim": "A total of 275 (33%) of the diagnoses in MSM and heterosexuals presented with a CD4 count below 350.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 275 (33%) of the diagnoses in MSM and heterosexuals presented with a CD4 count below 350, with late presentation being higher among heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "1f8452ea-0758-4124-b3d5-74c2ea2a49d6",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C35",
+      "claim": "Late presentation was higher among heterosexuals than MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 275 (33%) of the diagnoses in MSM and heterosexuals presented with a CD4 count below 350, with late presentation being higher among heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "ead0b09d-441d-49fd-b488-6c24b2ea8f70",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C36",
+      "claim": "All diagnosed patients had biomarker data available to estimate time to diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "All diagnosed patients had biomarker data available to estimate time to diagnosis, and 516 of 846 (61%) were estimated to have been infected between 2014 and 2018 based on the posterior median infection time estimate (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the completeness of the biomarker data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "af0de297-5fd1-4797-ba94-86ae58a19a03",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C37",
+      "claim": "In the preceding 5-year period 2009\u20132013, there were 1436 HIV diagnoses in Amsterdam.",
+      "claim_type": "EXPLICIT",
+      "source": "In the preceding 5-year period 2009\u20132013, there were 1436 HIV diagnoses in Amsterdam and a similar proportion of these presented late (567, 39%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "4a0b4e39-b1e2-4df4-a938-3da4c0553ce9",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C38",
+      "claim": "567 (39%) of the 1436 diagnoses in 2009-2013 presented late.",
+      "claim_type": "EXPLICIT",
+      "source": "In the preceding 5-year period 2009\u20132013, there were 1436 HIV diagnoses in Amsterdam and a similar proportion of these presented late (567, 39%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "4f7cf8c2-e306-40ed-b8b4-489ae8b1d96b",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C39",
+      "claim": "There were 1128 diagnoses with estimated infection in 2009\u20132013.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 1128 diagnoses with estimated infection in 2009\u20132013, suggesting a substantial reduction in infections in 2014\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the infection time estimation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "511c431a-a44d-48c7-95dc-c3f5245df02e",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C40",
+      "claim": "There was a substantial reduction in infections in 2014\u20132018 compared to 2009-2013.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 1128 diagnoses with estimated infection in 2009\u20132013, suggesting a substantial reduction in infections in 2014\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing infection estimates across time periods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "f281e979-7659-49cc-bfb9-67659bda4e4c",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C41",
+      "claim": "190 (37%) Amsterdam diagnoses with estimated infection in 2014\u20132018 were in Dutch-born MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 190 (37%) Amsterdam diagnoses with estimated infection in 2014\u20132018 were in Dutch-born MSM, 256 (50%) in foreign-born MSM, 23 (4%) in Dutch-born men and women identifying as heterosexuals, and 47 (9%) in foreign-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "678dd886-7ca1-4789-9a2d-61e554db22bb",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C42",
+      "claim": "256 (50%) Amsterdam diagnoses with estimated infection in 2014\u20132018 were in foreign-born MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 190 (37%) Amsterdam diagnoses with estimated infection in 2014\u20132018 were in Dutch-born MSM, 256 (50%) in foreign-born MSM, 23 (4%) in Dutch-born men and women identifying as heterosexuals, and 47 (9%) in foreign-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "128e8dd2-5170-4ec3-bf26-88b55509b2c1",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C43",
+      "claim": "23 (4%) Amsterdam diagnoses with estimated infection in 2014\u20132018 were in Dutch-born heterosexuals.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 190 (37%) Amsterdam diagnoses with estimated infection in 2014\u20132018 were in Dutch-born MSM, 256 (50%) in foreign-born MSM, 23 (4%) in Dutch-born men and women identifying as heterosexuals, and 47 (9%) in foreign-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "41f2521d-7c8f-4f88-a5da-45bb31a7568d",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C44",
+      "claim": "47 (9%) Amsterdam diagnoses with estimated infection in 2014\u20132018 were in foreign-born heterosexuals.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 190 (37%) Amsterdam diagnoses with estimated infection in 2014\u20132018 were in Dutch-born MSM, 256 (50%) in foreign-born MSM, 23 (4%) in Dutch-born men and women identifying as heterosexuals, and 47 (9%) in foreign-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "6d8445af-95d1-41b8-92fb-f6597ec8039b",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C45",
+      "claim": "The large majority of Amsterdam diagnoses with infection dates between 2014 and 2018 were in foreign-born and Dutch-born MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the large majority of Amsterdam diagnoses with infection dates between 2014 and 2018 were in foreign-born and Dutch-born MSM, and an important question that we address below is if these diagnoses also likely had an Amsterdam source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proportions reported.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "d8ac276f-43ef-4117-a674-292ca0afd7a3",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C46",
+      "claim": "The posterior median time-to-diagnosis estimates among individuals were 14 months longer in heterosexuals than in MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "The posterior median time-to-diagnosis estimates among individuals were 14 months longer in heterosexuals than in MSM, 9 months longer in Dutch-born heterosexuals than Dutch-born MSM, and 19 months longer in foreign-born heterosexuals than foreign-born MSM (Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the time-to-diagnosis estimation model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "610cfb93-c7c2-4b5a-8042-e5e66abd3eb5",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C47",
+      "claim": "The posterior median time-to-diagnosis estimates were 9 months longer in Dutch-born heterosexuals than Dutch-born MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "The posterior median time-to-diagnosis estimates among individuals were 14 months longer in heterosexuals than in MSM, 9 months longer in Dutch-born heterosexuals than Dutch-born MSM, and 19 months longer in foreign-born heterosexuals than foreign-born MSM (Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the time-to-diagnosis estimation model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "7bf60236-f517-4877-9f4d-d4a6428a7704",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C48",
+      "claim": "The posterior median time-to-diagnosis estimates were 19 months longer in foreign-born heterosexuals than foreign-born MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "The posterior median time-to-diagnosis estimates among individuals were 14 months longer in heterosexuals than in MSM, 9 months longer in Dutch-born heterosexuals than Dutch-born MSM, and 19 months longer in foreign-born heterosexuals than foreign-born MSM (Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the time-to-diagnosis estimation model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "718092b6-3820-4eed-ba3c-c82e6a981692",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C49",
+      "claim": "Local estimates indicate that Amsterdam has surpassed the 95-95-95 targets, with an estimated 5% of all people in Amsterdam living with HIV that remained undiagnosed by the end of 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Local estimates of the continuum of care indicate that Amsterdam has surpassed the 95-95-95 targets, with an estimated 5% of all people in Amsterdam living with HIV that remained undiagnosed by the end of 2019 (Sighem et al., 2020; UNAIDS, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sighem et al., 2020 and UNAIDS, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "a3a27a94-19b9-4d95-bf71-afc57aca874b",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C50",
+      "claim": "The highest proportion of undiagnosed Amsterdam infections in 2014\u20132018 are in heterosexuals born in Sub-Saharan Africa, with 57% [47\u201367%].",
+      "claim_type": "EXPLICIT",
+      "source": "The highest proportion of undiagnosed Amsterdam infections in 2014\u20132018 are in heterosexuals born in Sub-Saharan Africa, with 57% [47\u201367%].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the time-to-diagnosis estimation model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "fb8a6a42-0c7f-436e-8114-758c96007c89",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C51",
+      "claim": "A total 378 of the 516 (73%) individuals had a pol sequence available.",
+      "claim_type": "EXPLICIT",
+      "source": "A total 378 of the 516 (73%) individuals had a pol sequence available, of whom 341 were of the major subtypes or recombinant forms that are circulating in Amsterdam (B, 01AE, 02AG, C, D, G, A1 and 06 cpx).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "669494b0-01d6-459a-8d12-ca7dbba5bc8d",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C52",
+      "claim": "341 individuals were of the major subtypes or recombinant forms that are circulating in Amsterdam (B, 01AE, 02AG, C, D, G, A1 and 06 cpx).",
+      "claim_type": "EXPLICIT",
+      "source": "A total 378 of the 516 (73%) individuals had a pol sequence available, of whom 341 were of the major subtypes or recombinant forms that are circulating in Amsterdam (B, 01AE, 02AG, C, D, G, A1 and 06 cpx).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the sequence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "ecf7d81b-0884-4a2d-b8a9-475c4c318d15",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C53",
+      "claim": "37 individuals were excluded from further analysis as their subtype identification was inconclusive, or they were associated with other subtypes or recombinant forms with fewer than 50 sequences in Amsterdam.",
+      "claim_type": "EXPLICIT",
+      "source": "37 individuals were excluded from further analysis as their subtype identification was inconclusive, or they were associated with other subtypes or recombinant forms with fewer than 50 sequences in Amsterdam.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria for the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "eb27fecc-4d00-4e32-a904-5898f9af031a",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C54",
+      "claim": "1829 distinct viral phylogenetic subgraphs were identified that comprised at least one diagnosed Amsterdam infection prior to 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified across the major HIV-1 subtypes and circulating recombinant forms 1829 distinct viral phylogenetic subgraphs that comprised at least one diagnosed Amsterdam infection prior to 2014, which we refer to as the phylogenetically observed pre-existing transmission chains (Figure 3 and Appendix 1\u2014figure 26).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "f1dee580-92d2-4a19-89d6-f069bfbecbdb",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C55",
+      "claim": "There were 1253 pre-existing chains in MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 1253 pre-existing chains in MSM, of which 949 (76%) had all members virally suppressed as of 2014, and of those 906 (95%) had no new member in 2014\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "1ec3f944-7d71-4a3a-aa33-0289aecb11d5",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C56",
+      "claim": "949 (76%) of the 1253 pre-existing chains in MSM had all members virally suppressed as of 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 1253 pre-existing chains in MSM, of which 949 (76%) had all members virally suppressed as of 2014, and of those 906 (95%) had no new member in 2014\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from combining phylogenetic and viral load data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "08c30f3c-23ce-42df-9abf-31edb7d3f9c2",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C57",
+      "claim": "906 (95%) of the 949 suppressed pre-existing chains in MSM had no new member in 2014\u20132018.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 1253 pre-existing chains in MSM, of which 949 (76%) had all members virally suppressed as of 2014, and of those 906 (95%) had no new member in 2014\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from combining phylogenetic and viral load data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "f19454a4-a854-428d-a49b-cd4728afd8d6",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C58",
+      "claim": "There were 576 pre-existing chains in heterosexuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In heterosexuals, there were 576 pre-existing chains, of which 401 (70%) had all members virally suppressed as of 2014, and of those 391 (98%) had no new member in 2014\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "d0aaafc2-0296-48aa-8796-d1c4ef0b54d6",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C59",
+      "claim": "401 (70%) of the 576 pre-existing chains in heterosexuals had all members virally suppressed as of 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "In heterosexuals, there were 576 pre-existing chains, of which 401 (70%) had all members virally suppressed as of 2014, and of those 391 (98%) had no new member in 2014\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from combining phylogenetic and viral load data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "83d3ac1d-675d-4936-a8df-ff609174202a",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C60",
+      "claim": "391 (98%) of the 401 suppressed pre-existing chains in heterosexuals had no new member in 2014\u20132018.",
+      "claim_type": "EXPLICIT",
+      "source": "In heterosexuals, there were 576 pre-existing chains, of which 401 (70%) had all members virally suppressed as of 2014, and of those 391 (98%) had no new member in 2014\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from combining phylogenetic and viral load data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "1d870aa8-1f09-4bc7-9faf-fe4c415fa63d",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C61",
+      "claim": "The proportion of unsuppressed subgraphs in Amsterdam heterosexuals was statistically significantly lower than in Amsterdam MSM (p-value 0.02, one-sided chi-square test).",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of unsuppressed subgraphs in Amsterdam heterosexuals was indeed statistically significantly lower than in Amsterdam MSM, but not strongly so (p-value 0.02, one-sided chi-square test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from statistical testing of the phylogenetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "faa161e7-46e9-4e50-9e79-23ba9a0b59ed",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C62",
+      "claim": "Transmission appears to have stopped since 2014 in almost all phylogenetically observed pre-existing chains that had all their observed members suppressed by 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarise, transmission appears to have stopped since 2014 in almost all phylogenetically observed pre-existing chains that had all their observed members suppressed by 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that suppressed chains rarely grew.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "c02f9537-75c5-41a8-a2d3-a8419e816083",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C63",
+      "claim": "89 (7%) of the 1253 phylogenetically observed pre-existing chains in Amsterdam MSM had at least one new member diagnosed in 2014\u20132018.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering growth, 89 (7%) of the 1253 phylogenetically observed pre-existing chains in Amsterdam MSM had at least one new member diagnosed in 2014\u20132018, and 114 chains emerged (Table 2 and Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "26212e98-0adb-496a-a6fb-80e6c048aee0",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C64",
+      "claim": "114 chains emerged in Amsterdam MSM in 2014-2018.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering growth, 89 (7%) of the 1253 phylogenetically observed pre-existing chains in Amsterdam MSM had at least one new member diagnosed in 2014\u20132018, and 114 chains emerged (Table 2 and Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "b7d6b88a-ea35-4b0d-a4bd-b9b8636827c9",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C65",
+      "claim": "15 (3%) of the 576 phylogenetically observed pre-existing chains in Amsterdam heterosexuals had at least one new member diagnosed in 2014\u20132018.",
+      "claim_type": "EXPLICIT",
+      "source": "In Amsterdam heterosexuals, 15 (3%) of the 576 phylogenetically observed pre-existing chains had at least one new member diagnosed in 2014\u20132018, and 26 chains emerged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "80963f66-06e9-44bc-b49b-afa96f853252",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C66",
+      "claim": "26 chains emerged in Amsterdam heterosexuals in 2014-2018.",
+      "claim_type": "EXPLICIT",
+      "source": "In Amsterdam heterosexuals, 15 (3%) of the 576 phylogenetically observed pre-existing chains had at least one new member diagnosed in 2014\u20132018, and 26 chains emerged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "3fa4c50f-6467-4aed-92cf-fc3d1b2d4e5e",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C68",
+      "claim": "An estimated 172 [154-195] emerging chains exist in Amsterdam MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that there are substantially more emerging chains in Amsterdam since 2014 than phylogenetically observed, 172 [154-195] in MSM and 58 [42-83] in heterosexuals, reflecting that emergent chains have a high probability to be entirely unobserved when growth is below the epidemic reproduction threshold of one (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from the branching process model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "0af6c6c2-bece-4e7d-aa1b-c3015a7d728b",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C69",
+      "claim": "An estimated 58 [42-83] emerging chains exist in Amsterdam heterosexuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that there are substantially more emerging chains in Amsterdam since 2014 than phylogenetically observed, 172 [154-195] in MSM and 58 [42-83] in heterosexuals, reflecting that emergent chains have a high probability to be entirely unobserved when growth is below the epidemic reproduction threshold of one (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from the branching process model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "fbb52283-abfe-4315-a27f-709716ae6293",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C70",
+      "claim": "Emergent chains have a high probability to be entirely unobserved when growth is below the epidemic reproduction threshold of one.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that there are substantially more emerging chains in Amsterdam since 2014 than phylogenetically observed, 172 [154-195] in MSM and 58 [42-83] in heterosexuals, reflecting that emergent chains have a high probability to be entirely unobserved when growth is below the epidemic reproduction threshold of one (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical property of branching processes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "9ace1943-ee58-4154-ba43-157e55656962",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C71",
+      "claim": "An estimated 61% [55\u201367%] of the growing chains among Amsterdam MSM were emerging.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of proportions, an estimated 61% [55\u201367%] of the growing chains among Amsterdam MSM were emerging, and 69% [56\u201381%] of the growing chains among Amsterdam heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from the branching process model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "89cec55b-6629-4b14-8eed-90687aa3e8af",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C72",
+      "claim": "An estimated 69% [56\u201381%] of the growing chains among Amsterdam heterosexuals were emerging.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of proportions, an estimated 61% [55\u201367%] of the growing chains among Amsterdam MSM were emerging, and 69% [56\u201381%] of the growing chains among Amsterdam heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from the branching process model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "db85b3b1-a81a-49e0-af7a-5df7139c0929",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C73",
+      "claim": "An estimated 47% [39\u201355%] of the estimated infections among Amsterdam MSM in 2014\u20132018 were in emerging chains.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate further that 47% [39\u201355%] of the estimated infections among Amsterdam MSM in 2014\u20132018 were in emerging chains, and 61% [45\u201377%] of the estimated infections among Amsterdam heterosexuals (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from the branching process model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "d183cdf5-0f1c-4c07-9db7-d849ccde6079",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C74",
+      "claim": "An estimated 61% [45\u201377%] of the estimated infections among Amsterdam heterosexuals in 2014-2018 were in emerging chains.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate further that 47% [39\u201355%] of the estimated infections among Amsterdam MSM in 2014\u20132018 were in emerging chains, and 61% [45\u201377%] of the estimated infections among Amsterdam heterosexuals (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from the branching process model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "af8d6cae-e6a3-4bde-933c-4720ada8b718",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C75",
+      "claim": "On average the pre-existing chains contributed more new cases in 2014\u20132018 to Amsterdam infections than the emerging chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, on average the pre-existing chains contributed more new cases in 2014\u20132018 to Amsterdam infections than the emerging chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proportions of infections in pre-existing vs emerging chains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "0fb393c9-ec4e-433c-b5b1-f1045cd1eede",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C76",
+      "claim": "Of the estimated 415 [316-542] locally preventable Amsterdam infections in 2014\u20132018, an estimated 178 [129-243] (43% [37\u201349%]) were in foreign-born MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the estimated 415 [316-542] locally preventable Amsterdam infections in 2014\u20132018, an estimated 178 [129-243] (43% [37\u201349%]) were in foreign-born MSM, 171 [124-231] (41% [35\u201347%]) in Dutch-born MSM, 45 [24-82] (10% [6\u201318%]) in foreign-born heterosexuals, and 21 [10-39] (5% [2\u20139%]) in Dutch-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated by combining phylogenetic estimates with demographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "fa9cf67f-8d7a-4c08-94ff-c5b337be4e3c",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C77",
+      "claim": "Of the estimated 415 [316-542] locally preventable Amsterdam infections in 2014\u20132018, an estimated 171 [124-231] (41% [35\u201347%]) were in Dutch-born MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the estimated 415 [316-542] locally preventable Amsterdam infections in 2014\u20132018, an estimated 178 [129-243] (43% [37\u201349%]) were in foreign-born MSM, 171 [124-231] (41% [35\u201347%]) in Dutch-born MSM, 45 [24-82] (10% [6\u201318%]) in foreign-born heterosexuals, and 21 [10-39] (5% [2\u20139%]) in Dutch-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated by combining phylogenetic estimates with demographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "b9d27ede-6a06-4eb5-ab23-d97d219aedeb",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C78",
+      "claim": "Of the estimated 415 [316-542] locally preventable Amsterdam infections in 2014\u20132018, an estimated 45 [24-82] (10% [6\u201318%]) were in foreign-born heterosexuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the estimated 415 [316-542] locally preventable Amsterdam infections in 2014\u20132018, an estimated 178 [129-243] (43% [37\u201349%]) were in foreign-born MSM, 171 [124-231] (41% [35\u201347%]) in Dutch-born MSM, 45 [24-82] (10% [6\u201318%]) in foreign-born heterosexuals, and 21 [10-39] (5% [2\u20139%]) in Dutch-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated by combining phylogenetic estimates with demographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "5e1284a2-6c93-42cf-aa07-114d1b37c1c9",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C79",
+      "claim": "Of the estimated 415 [316-542] locally preventable Amsterdam infections in 2014\u20132018, an estimated 21 [10-39] (5% [2\u20139%]) were in Dutch-born heterosexuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the estimated 415 [316-542] locally preventable Amsterdam infections in 2014\u20132018, an estimated 178 [129-243] (43% [37\u201349%]) were in foreign-born MSM, 171 [124-231] (41% [35\u201347%]) in Dutch-born MSM, 45 [24-82] (10% [6\u201318%]) in foreign-born heterosexuals, and 21 [10-39] (5% [2\u20139%]) in Dutch-born heterosexuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated by combining phylogenetic estimates with demographic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "05cbce27-4b55-48fa-8bad-4816ac1cbe22",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C80",
+      "claim": "Amsterdam reached the UNAIDS Fast-track Cities 95-95-95 targets before the onset of the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The city of Amsterdam reached the UNAIDS Fast-track Cities 95-95-95 targets before the onset of the COVID-19 pandemic, and has seen a decade of declines in city-level HIV diagnoses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about Amsterdam's HIV response.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "c10e6f0e-11b5-4d3d-8ed0-573ce63b046e",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C81",
+      "claim": "Amsterdam has seen a decade of declines in city-level HIV diagnoses.",
+      "claim_type": "EXPLICIT",
+      "source": "The city of Amsterdam reached the UNAIDS Fast-track Cities 95-95-95 targets before the onset of the COVID-19 pandemic, and has seen a decade of declines in city-level HIV diagnoses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about Amsterdam's HIV response.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "556f1ef2-014f-44f2-812b-492f2dc7a1e9",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C82",
+      "claim": "The proportions of individuals that remained undiagnosed by early 2019 were between 9% and 20% in Amsterdam MSM risk groups.",
+      "claim_type": "EXPLICIT",
+      "source": "First, when focusing on the denominator of recent infections that are estimated to have occurred in the 5-year period 2014\u20132018, the proportions of individuals that remained undiagnosed by early 2019 were high and variable, between 9% and 20% in (self-identified) Amsterdam MSM risk groups, and between 28% and 57% in Amsterdam heterosexual risk groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the time-to-diagnosis estimation model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "b81b48b3-c39b-44e7-887c-82e6093b56bc",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C83",
+      "claim": "The proportions of individuals that remained undiagnosed by early 2019 were between 28% and 57% in Amsterdam heterosexual risk groups.",
+      "claim_type": "EXPLICIT",
+      "source": "First, when focusing on the denominator of recent infections that are estimated to have occurred in the 5-year period 2014\u20132018, the proportions of individuals that remained undiagnosed by early 2019 were high and variable, between 9% and 20% in (self-identified) Amsterdam MSM risk groups, and between 28% and 57% in Amsterdam heterosexual risk groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the time-to-diagnosis estimation model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "b9a39448-0ed4-423f-971c-577daaf4fe61",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C84",
+      "claim": "Treatment for HIV infection, which results in undetectable viral load equals untransmittable virus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are unsurprising and mirror the established relationship that treatment for HIV infection, which results in undetectable viral load equals untransmittable virus (Rodger et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Rodger et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "ecc0258f-c24b-460f-a54f-14d216c86dcc",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C85",
+      "claim": "53% of new Amsterdam MSM infections in 2014\u20132018 grew from chains that existed prior to 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus used statistical growth models accounting for unsampled cases, and we estimate in contrast to our initial speculations that 53% of new Amsterdam MSM infections in 2014\u20132018 grew from chains that existed prior to 2014, and 39% of new Amsterdam heterosexual infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from the branching process model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "5a671a2c-b14d-4dd4-81f3-0e3e808b60a2",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C86",
+      "claim": "39% of new Amsterdam heterosexual infections in 2014-2018 grew from chains that existed prior to 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus used statistical growth models accounting for unsampled cases, and we estimate in contrast to our initial speculations that 53% of new Amsterdam MSM infections in 2014\u20132018 grew from chains that existed prior to 2014, and 39% of new Amsterdam heterosexual infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from the branching process model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "8fc8b324-e6c1-4657-b5e0-d85d708863de",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C87",
+      "claim": "The majority of infections in Amsterdam residents in 2014\u20132018 remained locally preventable in all risk groups investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the virus' genetic code as an objective marker into infection events, we estimate that regardless of declining diagnoses and incidence, the majority of infections in Amsterdam residents in 2014\u20132018 remained locally preventable in all risk groups investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from phylogenetic analysis and branching process modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "57c6745d-1b9f-4801-8bf9-c30f86e8a7d5",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C88",
+      "claim": "The statistical strength of evidence into the finding that the majority of infections remained locally preventable was strong for Amsterdam MSM (all 95% credible intervals for the proportion of locally preventable infections were above 50%).",
+      "claim_type": "EXPLICIT",
+      "source": "The statistical strength of evidence into this finding was strong for Amsterdam MSM (all 95% credible intervals for the proportion of locally preventable infections were above 50%), but more moderate for Amsterdam heterosexuals (wider credible intervals including 50%), reflecting that relatively few infections in Amsterdam heterosexuals in 2014\u20132018 were observed with a viral sequence by early 2019 due to frequent late diagnosis and incomplete viral sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the statistical evidence from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "0becdc71-fc32-4e5d-b0c9-5b5728bea589",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C89",
+      "claim": "The statistical strength of evidence was more moderate for Amsterdam heterosexuals (wider credible intervals including 50%).",
+      "claim_type": "EXPLICIT",
+      "source": "The statistical strength of evidence into this finding was strong for Amsterdam MSM (all 95% credible intervals for the proportion of locally preventable infections were above 50%), but more moderate for Amsterdam heterosexuals (wider credible intervals including 50%), reflecting that relatively few infections in Amsterdam heterosexuals in 2014\u20132018 were observed with a viral sequence by early 2019 due to frequent late diagnosis and incomplete viral sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the statistical evidence from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "bd63b123-a5bd-48f5-8a4b-16f476602ba8",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C90",
+      "claim": "Relatively few infections in Amsterdam heterosexuals in 2014\u20132018 were observed with a viral sequence by early 2019 due to frequent late diagnosis and incomplete viral sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "The statistical strength of evidence into this finding was strong for Amsterdam MSM (all 95% credible intervals for the proportion of locally preventable infections were above 50%), but more moderate for Amsterdam heterosexuals (wider credible intervals including 50%), reflecting that relatively few infections in Amsterdam heterosexuals in 2014\u20132018 were observed with a viral sequence by early 2019 due to frequent late diagnosis and incomplete viral sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "fb494ede-5e27-4148-81d3-2ca4b1206b88",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C91",
+      "claim": "Data from clinic surveys in migrants across Europe indicated similar levels of in-country HIV acquisition post migration of 51% in heterosexual women and 58% in heterosexual men.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with data from clinic surveys in migrants across Europe (Alvarez-Del Arco et al., 2017), which indicated similar levels of in-country HIV acquisition post migration of 51% in heterosexual women and 58% in heterosexual men.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Alvarez-Del Arco et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "595c564f-e59b-48b3-bd7e-d5eecdc6e7a1",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C92",
+      "claim": "There remains considerable potential to prevent HIV infections among Amsterdam residents through city-level interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our data from 2014 to 2018 indicates considerable potential to prevent HIV infections among Amsterdam residents through city-level interventions, even in the context of substantial improvements in curbing the number of diagnoses and infections in Amsterdam over the past 10 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from all the analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "fe7d33c2-1653-49b2-8ec4-fcc8993d8be9",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C93",
+      "claim": "COVID-19 has severely disrupted prevention messaging, testing and PrEP services and early pathways to care.",
+      "claim_type": "EXPLICIT",
+      "source": "COVID-19 has severely disrupted prevention messaging, testing and PrEP services and early pathways to care, making innovative and targeted HIV prevention approaches all the more important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known impact of COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "f5549560-db18-44e2-8a5e-6d9195986248",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C94",
+      "claim": "75% of the 846 HIV diagnoses in Amsterdam residents between 1 January 2014 and 1 May 2019 self-identified as MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 1 January 2014 and 1 May 2019, there were 846 HIV diagnoses in Amsterdam residents who self-identified as MSM (75%) or heterosexual (20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "959af3f5-7170-401f-bd01-e0935edf61c2",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C95",
+      "claim": "20% of the 846 HIV diagnoses in Amsterdam residents between 1 January 2014 and 1 May 2019 self-identified as heterosexual.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 1 January 2014 and 1 May 2019, there were 846 HIV diagnoses in Amsterdam residents who self-identified as MSM (75%) or heterosexual (20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "5de6a3d8-b6ae-4850-b4f9-c0e2a9f0a3e5",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C96",
+      "claim": "1 (<1%) of the 846 diagnoses was among injecting drug users (IDU).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the remaining diagnoses, 1 (<1%) was among injecting drug users (IDU), 12 (1%) were through other modes of transmission and 30 (3%) had an unknown mode of transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "ae2dbed6-d1e5-4f8f-9b2f-dfd0af8eae73",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C97",
+      "claim": "12 (1%) of the 846 diagnoses were through other modes of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the remaining diagnoses, 1 (<1%) was among injecting drug users (IDU), 12 (1%) were through other modes of transmission and 30 (3%) had an unknown mode of transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "8c056804-8649-40e6-a6a0-3b35f739ba22",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C98",
+      "claim": "30 (3%) of the 846 diagnoses had an unknown mode of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the remaining diagnoses, 1 (<1%) was among injecting drug users (IDU), 12 (1%) were through other modes of transmission and 30 (3%) had an unknown mode of transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "6cc2f7ac-94ea-47ff-a1fc-c8ba84f10cd8",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C99",
+      "claim": "Both Dutch-born and foreign-born MSM would likely benefit most from intensified city-level interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "The burden of locally acquired infection remains concentrated in MSM, and both Dutch-born and foreign-born MSM would likely benefit most from intensified city-level interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the distribution of locally preventable infections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "2cd9fe71-41a3-4bdb-9d8b-e8fc6d3321c8",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "claim_id": "C100",
+      "claim": "The burden of locally acquired infection remains concentrated in MSM.",
+      "claim_type": "EXPLICIT",
+      "source": "The burden of locally acquired infection remains concentrated in MSM, and both Dutch-born and foreign-born MSM would likely benefit most from intensified city-level interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the distribution of locally preventable infections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "115b9489-405f-4ca3-ac8c-50dcb1df5464",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Between January 2014 and May 2019, there were 846 HIV diagnoses in Amsterdam residents, with 516 (61%) estimated to have been infected in 2014\u20132018. The majority (75%) self-identified as MSM, 20% as heterosexual, with small numbers in other transmission categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C36, C94-C98 provide consistent descriptive statistics from the ATHENA cohort data. The numbers are directly observed (diagnoses) or estimated using validated biomarker methods (infection times). The data completeness is high and the proportions across risk groups sum appropriately.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "81b8cdbd-7bba-40bc-986d-10b5c68380e6",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Amsterdam experienced substantial declines in HIV diagnoses from ~300 in 2010 to ~120 in 2018, primarily among MSM. Despite this decline, Amsterdam's diagnosis rate (104 per 100,000) remained higher than the rest of the Netherlands (24 per 100,000), maintaining its status as a national HIV hotspot. Estimated infections declined from 1128 in 2009\u20132013 to 516 in 2014\u20132018.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C21, C22, C37-C40 document temporal trends in diagnoses and estimated infections using surveillance data and biomarker-based infection time estimates. The comparison between Amsterdam and national rates is straightforward and the substantial reduction in infections is supported by the data. The inference that Amsterdam remains a hotspot is justified by the rate differential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "6561554d-be5c-477b-a1c3-10d3663b9266",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Among infections estimated to have occurred in 2014\u20132018, an estimated 14% [12\u201316%] of MSM infections and 41% [35\u201348%] of heterosexual infections remained undiagnosed by May 2019. Undiagnosed proportions varied by region of birth, with the highest proportion (57% [47\u201367%]) among heterosexuals born in Sub-Saharan Africa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C50, C82, C83 report undiagnosed proportions derived from time-to-diagnosis modeling using validated Bayesian methods (C31-C33). The estimates account for declining incidence trends using ECDC modeling tool weights. Sensitivity analyses using alternative weighting schemes yielded similar results (mentioned in text). The credible intervals are appropriately reported and the variation by risk group is consistent with known disparities in testing behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "0978168e-d5b4-468e-aa9b-fdde39b4e718",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Late presentation (CD4 <350) occurred in 33% of diagnoses, with higher rates among heterosexuals than MSM. Time-to-diagnosis was substantially longer in heterosexuals (14 months longer overall, 9 months for Dutch-born, 19 months for foreign-born) compared to MSM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C35, C46-C48 document disparities in time-to-diagnosis using direct observations (CD4 counts) and Bayesian estimates from biomarker data. The differences are clinically meaningful and consistent with known patterns of healthcare access and testing behavior. The posterior median estimates are appropriately derived from the hierarchical model described in C31-C33.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "3341900e-5d07-43af-a78e-3f798a062788",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Among the 516 Amsterdam diagnoses with estimated infection in 2014\u20132018, 87% were in MSM (37% Dutch-born, 50% foreign-born) and 13% were in heterosexuals (4% Dutch-born, 9% foreign-born).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 provide demographic breakdowns of diagnosed infections. The proportions are directly observed from cohort data and sum correctly (190+256+23+47=516). The inference in C45 that the majority were in MSM is mathematically supported by the proportions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "ba1083b7-357c-4a51-9ce3-ec259321e1c5",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Data were obtained from the ATHENA cohort, which has near-complete coverage with only 2% opt-out and 5.2% lost to follow-up. Infections were geolocated to Amsterdam based on postcode at registration or most recent update, with 92% consistently resident, 4% moving to Amsterdam, and 4% moving away.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30 describe the data source and methodology. The ATHENA cohort is well-established and cited appropriately (C24). The completeness statistics (C25-C26) and geolocation approach (C27-C30) are clearly described. The proportions for residence patterns sum to 100% and the methodology is transparent about potential biases from residence changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "b4cab73b-032e-44da-b304-de8599f74337",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Time from infection to diagnosis was estimated using a Bayesian approach trained on 19,788 HIV seroconverters from the CASCADE collaboration, modeling joint evolution of viral load and CD4 counts. Amsterdam patients had an average of 4 viral load and 6 CD4 observations per patient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 describe the infection time estimation methodology with appropriate citation to Pantazis et al., 2019. The use of external training data (CASCADE) and application to Amsterdam patients with longitudinal biomarkers is methodologically sound. The average number of observations per patient is sufficient for reliable estimation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "53371257-732f-43eb-8bac-b3a942cd1091",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Of the 516 individuals with estimated infection in 2014\u20132018, 378 (73%) had pol sequences available, with 341 belonging to major circulating subtypes. Phylogenetic analysis identified 1829 distinct transmission chains (subgraphs) that included at least one Amsterdam infection prior to 2014.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 describe sequence availability and phylogenetic reconstruction. The sequence coverage (73%) is reasonable given the study period and clinical practices. The exclusion criteria (C53) are appropriate for phylogenetic analysis. The identification of 1829 pre-existing chains (C54) is derived from phyloscanner analysis of subtype-specific trees with appropriate background sequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "eb73bc8a-15de-4ae0-8751-de8fdab7e446",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Among pre-existing transmission chains, 76% of MSM chains and 70% of heterosexual chains had all members virally suppressed by 2014. Of these suppressed chains, 95% (MSM) and 98% (heterosexual) showed no growth in 2014\u20132018. The difference in suppression rates was statistically significant (p=0.02) but modest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C62 document the relationship between viral suppression and transmission chain growth. The proportions are derived from combining phylogenetic data with viral load measurements. The statistical test (C61) is appropriate (chi-square) and the interpretation (C62) that suppressed chains rarely grow is strongly supported by the data and consistent with U=U (undetectable=untransmittable) principles cited in C84.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "a0ff231f-e1f0-465f-89ee-606c2f80cba9",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Among phylogenetically observed chains, 89 (7%) of 1253 pre-existing MSM chains and 15 (3%) of 576 pre-existing heterosexual chains grew in 2014\u20132018. Additionally, 114 new MSM chains and 26 new heterosexual chains emerged during this period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 report directly observed phylogenetic data on chain growth. The numbers are consistent with the total chains reported in C55 and C58. The observation that emerging chains outnumber growing pre-existing chains is straightforward from the data, though the authors appropriately note these are incomplete observations requiring statistical modeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "810acda5-8ab8-454f-b0fb-67ca3724c734",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Statistical modeling accounting for unobserved chains estimated 172 [154-195] emerging MSM chains and 58 [42-83] emerging heterosexual chains, substantially more than phylogenetically observed. An estimated 61% [55\u201367%] of growing MSM chains and 69% [56\u201381%] of growing heterosexual chains were emerging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 report results from the Bayesian branching process model described in the methods. The model appropriately accounts for incomplete sampling and the theoretical property (C70) that small chains are likely unobserved when R<1 is well-established. The credible intervals are appropriately wide, reflecting uncertainty in unobserved chains. Model fit was reported as very good (Appendix reference).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "4bb42904-b8ed-479f-9549-d76384990941",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "An estimated 47% [39\u201355%] of MSM infections and 61% [45\u201377%] of heterosexual infections in 2014\u20132018 occurred in emerging chains, with the remainder in pre-existing chains. Overall, 53% of MSM infections and 39% of heterosexual infections grew from chains that existed prior to 2014.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75, C85-C86 report the distribution of infections across chain types from the branching process model. The proportions are internally consistent (emerging + pre-existing = 100%). The finding that pre-existing chains contributed more infections on average (C75) follows logically from the proportions. The credible intervals appropriately reflect uncertainty, particularly for heterosexuals with smaller sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "a5c9a5a5-9a49-4be1-b541-d399ea51029e",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "An estimated 67% [60\u201374%] of MSM infections and 56% [41\u201370%] of heterosexual infections in 2014\u20132018 had an Amsterdam resident as source (locally preventable). Evidence was strong for MSM (all credible intervals >50%) but more moderate for heterosexuals (wider intervals including 50%), reflecting lower sequence availability due to late diagnosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C87-C90 report the primary outcome on locally preventable infections. The estimates are derived from the branching process model by subtracting introduced chains from total infections (Equation 8). The assessment of statistical strength (C88-C89) appropriately considers credible interval width and position. The explanation for weaker evidence in heterosexuals (C90) is supported by the sequence availability data (C51) and late presentation rates (C34-C35).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "b9df404e-0527-4058-aad4-a86be0579eca",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Of an estimated 415 [316-542] locally preventable infections in 2014\u20132018, 43% [37\u201349%] were in foreign-born MSM, 41% [35\u201347%] in Dutch-born MSM, 10% [6\u201318%] in foreign-born heterosexuals, and 5% [2\u20139%] in Dutch-born heterosexuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13, C76-C79 report the distribution of locally preventable infections by risk group. These are derived by combining the proportion of locally preventable infections (C8-C9) with the estimated total infections by risk group (Table 1) using the weighting approach described in Equation 9. The proportions sum correctly and the credible intervals appropriately reflect propagated uncertainty from multiple estimation steps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "fbfdb70f-01ae-4212-9926-db38955198d0",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The majority of Amsterdam MSM infections in 2014\u20132018 originated in transmission chains that pre-existed by 2014.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is directly supported by C85, which estimates 53% of MSM infections grew from pre-existing chains. This is a key finding that contradicts the authors' initial speculation that new infections would be concentrated in emerging chains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "74b14c10-21b1-4f89-8b83-bfd67edfe961",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Amsterdam reached the UNAIDS 95-95-95 targets before the COVID-19 pandemic, with an estimated 5% of all PLHIV remaining undiagnosed by end of 2019. The city has experienced a decade of declining HIV diagnoses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C80-C81 provide context about Amsterdam's HIV response achievements. C49 is supported by appropriate citations (Sighem et al., 2020; UNAIDS, 2019). The 5% undiagnosed estimate refers to all PLHIV (not just recent infections), which is distinct from and lower than the 14-41% undiagnosed among recent infections (C6-C7). The decade of declining diagnoses (C81) is supported by surveillance data (C21).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "6d15aac1-843e-4bcc-861d-dd40f3793632",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The burden of locally acquired infection remains concentrated in MSM, with both Dutch-born and foreign-born MSM likely to benefit most from intensified city-level interventions. There remains considerable potential to prevent HIV infections among Amsterdam residents through city-level interventions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100, C92 represent the main conclusions. They are supported by the distribution of locally preventable infections showing 84% (43%+41%) in MSM (C10-C11, C76-C77). The conclusion of considerable prevention potential (C92) is justified by the finding that the majority of infections were locally preventable (C87) despite declining incidence. These are appropriate inferences from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "4c75bfbc-afb6-433b-bd03-2e76df37c054",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "More than 300 cities have joined the UNAIDS Fast-Track Cities initiative. HIV is concentrated in metropolitan areas, and Amsterdam is the city with the greatest HIV burden in the Netherlands. Amsterdam joined the initiative on December 1, 2014, and launched the H-Team project focusing on outreach, frequent testing, immediate ART, and PrEP rollout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C15-C20 provide background context with appropriate citations. The number of cities (C1, C16) is stated as fact with reference to UNAIDS and the Fast-Track Cities website. Amsterdam's HIV burden (C17) and the H-Team interventions (C19-C20) are supported by multiple citations. These are well-established facts providing necessary context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "8951ca60-8a89-424f-935f-6d3367ff71a8",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Late diagnoses remain common in Amsterdam.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 is supported by the data showing 33% late presentation (C34) and substantial proportions of recent infections remaining undiagnosed (C6-C7). This is a straightforward observation from the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "f9785f05-b2c4-4fd7-995f-40f09530700e",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Treatment for HIV infection resulting in undetectable viral load equals untransmittable virus (U=U).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 states the established U=U principle with appropriate citation to Rodger et al., 2019. This is well-established scientific knowledge used to interpret the finding that suppressed chains rarely grow (C62).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "ad0fdbdf-87d7-4a36-a53a-687dab5b9daf",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Data from clinic surveys in migrants across Europe indicated 51% in-country HIV acquisition in heterosexual women and 58% in heterosexual men post-migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 cites external data (Alvarez-Del Arco et al., 2017) showing similar proportions of in-country acquisition as found in this study. This provides external validation for the findings on locally preventable infections in heterosexuals. The citation is appropriate and the comparison is relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    },
+    {
+      "id": "058c9dd3-fd96-487b-9304-bdcc63c8bbd1",
+      "content_id": "294931dc-950d-400e-ae79-6977801ea976",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "COVID-19 has severely disrupted prevention messaging, testing, PrEP services, and early pathways to care.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 states a well-known impact of the COVID-19 pandemic on HIV services. While no specific citation is provided, this is widely documented and provides relevant context for the importance of the findings. This is general knowledge about pandemic impacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:45:17.730408Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "89a89f95-71d1-46c7-8589-cca6a0909978",
+      "result_id": "115b9489-405f-4ca3-ac8c-50dcb1df5464"
+    },
+    {
+      "claim_id": "65252779-e9e4-46aa-b55b-c10fe126f38b",
+      "result_id": "115b9489-405f-4ca3-ac8c-50dcb1df5464"
+    },
+    {
+      "claim_id": "ead0b09d-441d-49fd-b488-6c24b2ea8f70",
+      "result_id": "115b9489-405f-4ca3-ac8c-50dcb1df5464"
+    },
+    {
+      "claim_id": "f5549560-db18-44e2-8a5e-6d9195986248",
+      "result_id": "115b9489-405f-4ca3-ac8c-50dcb1df5464"
+    },
+    {
+      "claim_id": "959af3f5-7170-401f-bd01-e0935edf61c2",
+      "result_id": "115b9489-405f-4ca3-ac8c-50dcb1df5464"
+    },
+    {
+      "claim_id": "5de6a3d8-b6ae-4850-b4f9-c0e2a9f0a3e5",
+      "result_id": "115b9489-405f-4ca3-ac8c-50dcb1df5464"
+    },
+    {
+      "claim_id": "ae2dbed6-d1e5-4f8f-9b2f-dfd0af8eae73",
+      "result_id": "115b9489-405f-4ca3-ac8c-50dcb1df5464"
+    },
+    {
+      "claim_id": "8c056804-8649-40e6-a6a0-3b35f739ba22",
+      "result_id": "115b9489-405f-4ca3-ac8c-50dcb1df5464"
+    },
+    {
+      "claim_id": "b9062d55-bbcb-4ceb-872e-82170bdb74c6",
+      "result_id": "81b8cdbd-7bba-40bc-986d-10b5c68380e6"
+    },
+    {
+      "claim_id": "dbb99e14-e308-4d47-829a-9f4c889d45ac",
+      "result_id": "81b8cdbd-7bba-40bc-986d-10b5c68380e6"
+    },
+    {
+      "claim_id": "947c651e-2343-4b57-8e6c-374ed65321c4",
+      "result_id": "81b8cdbd-7bba-40bc-986d-10b5c68380e6"
+    },
+    {
+      "claim_id": "164cde39-5aa6-4958-86f1-ae69c060b707",
+      "result_id": "81b8cdbd-7bba-40bc-986d-10b5c68380e6"
+    },
+    {
+      "claim_id": "af0de297-5fd1-4797-ba94-86ae58a19a03",
+      "result_id": "81b8cdbd-7bba-40bc-986d-10b5c68380e6"
+    },
+    {
+      "claim_id": "4a0b4e39-b1e2-4df4-a938-3da4c0553ce9",
+      "result_id": "81b8cdbd-7bba-40bc-986d-10b5c68380e6"
+    },
+    {
+      "claim_id": "4f7cf8c2-e306-40ed-b8b4-489ae8b1d96b",
+      "result_id": "81b8cdbd-7bba-40bc-986d-10b5c68380e6"
+    },
+    {
+      "claim_id": "511c431a-a44d-48c7-95dc-c3f5245df02e",
+      "result_id": "81b8cdbd-7bba-40bc-986d-10b5c68380e6"
+    },
+    {
+      "claim_id": "ab82f9bd-de0d-4b85-a731-6438a8a7fb3b",
+      "result_id": "6561554d-be5c-477b-a1c3-10d3663b9266"
+    },
+    {
+      "claim_id": "785b1984-2b97-4afd-9e87-08c25ca48b50",
+      "result_id": "6561554d-be5c-477b-a1c3-10d3663b9266"
+    },
+    {
+      "claim_id": "a3a27a94-19b9-4d95-bf71-afc57aca874b",
+      "result_id": "6561554d-be5c-477b-a1c3-10d3663b9266"
+    },
+    {
+      "claim_id": "556f1ef2-014f-44f2-812b-492f2dc7a1e9",
+      "result_id": "6561554d-be5c-477b-a1c3-10d3663b9266"
+    },
+    {
+      "claim_id": "b81b48b3-c39b-44e7-887c-82e6093b56bc",
+      "result_id": "6561554d-be5c-477b-a1c3-10d3663b9266"
+    },
+    {
+      "claim_id": "3eecd9ec-fe8c-4f67-8c4f-e66765a6e370",
+      "result_id": "0978168e-d5b4-468e-aa9b-fdde39b4e718"
+    },
+    {
+      "claim_id": "1f8452ea-0758-4124-b3d5-74c2ea2a49d6",
+      "result_id": "0978168e-d5b4-468e-aa9b-fdde39b4e718"
+    },
+    {
+      "claim_id": "d8ac276f-43ef-4117-a674-292ca0afd7a3",
+      "result_id": "0978168e-d5b4-468e-aa9b-fdde39b4e718"
+    },
+    {
+      "claim_id": "610cfb93-c7c2-4b5a-8042-e5e66abd3eb5",
+      "result_id": "0978168e-d5b4-468e-aa9b-fdde39b4e718"
+    },
+    {
+      "claim_id": "7bf60236-f517-4877-9f4d-d4a6428a7704",
+      "result_id": "0978168e-d5b4-468e-aa9b-fdde39b4e718"
+    },
+    {
+      "claim_id": "f281e979-7659-49cc-bfb9-67659bda4e4c",
+      "result_id": "3341900e-5d07-43af-a78e-3f798a062788"
+    },
+    {
+      "claim_id": "678dd886-7ca1-4789-9a2d-61e554db22bb",
+      "result_id": "3341900e-5d07-43af-a78e-3f798a062788"
+    },
+    {
+      "claim_id": "128e8dd2-5170-4ec3-bf26-88b55509b2c1",
+      "result_id": "3341900e-5d07-43af-a78e-3f798a062788"
+    },
+    {
+      "claim_id": "41f2521d-7c8f-4f88-a5da-45bb31a7568d",
+      "result_id": "3341900e-5d07-43af-a78e-3f798a062788"
+    },
+    {
+      "claim_id": "6d8445af-95d1-41b8-92fb-f6597ec8039b",
+      "result_id": "3341900e-5d07-43af-a78e-3f798a062788"
+    },
+    {
+      "claim_id": "51a41ca1-08ed-4a15-bcca-58e6e3c13ba1",
+      "result_id": "ba1083b7-357c-4a51-9ce3-ec259321e1c5"
+    },
+    {
+      "claim_id": "dd616638-928c-4a0b-988b-db9dc1fca4b8",
+      "result_id": "ba1083b7-357c-4a51-9ce3-ec259321e1c5"
+    },
+    {
+      "claim_id": "7758ffec-17e2-4f2d-81f3-d48cc5a77b2c",
+      "result_id": "ba1083b7-357c-4a51-9ce3-ec259321e1c5"
+    },
+    {
+      "claim_id": "837b30d3-897b-4242-b081-1c989835c79a",
+      "result_id": "ba1083b7-357c-4a51-9ce3-ec259321e1c5"
+    },
+    {
+      "claim_id": "c0466556-314a-4b3c-b78b-78a43143b1d6",
+      "result_id": "ba1083b7-357c-4a51-9ce3-ec259321e1c5"
+    },
+    {
+      "claim_id": "c77c2001-26cb-498b-b71c-fe5e3ea63063",
+      "result_id": "ba1083b7-357c-4a51-9ce3-ec259321e1c5"
+    },
+    {
+      "claim_id": "3390c78c-2a11-4ba0-ab74-ffc84b32cc99",
+      "result_id": "ba1083b7-357c-4a51-9ce3-ec259321e1c5"
+    },
+    {
+      "claim_id": "c3b9973e-4cc6-4689-abd3-180f9d4e9dd8",
+      "result_id": "b4cab73b-032e-44da-b304-de8599f74337"
+    },
+    {
+      "claim_id": "495203d3-1b91-4afe-9bca-0cef1b6e50fd",
+      "result_id": "b4cab73b-032e-44da-b304-de8599f74337"
+    },
+    {
+      "claim_id": "534b3f1e-7bdc-4d9b-91c2-2e45289f6893",
+      "result_id": "b4cab73b-032e-44da-b304-de8599f74337"
+    },
+    {
+      "claim_id": "fb8a6a42-0c7f-436e-8114-758c96007c89",
+      "result_id": "53371257-732f-43eb-8bac-b3a942cd1091"
+    },
+    {
+      "claim_id": "669494b0-01d6-459a-8d12-ca7dbba5bc8d",
+      "result_id": "53371257-732f-43eb-8bac-b3a942cd1091"
+    },
+    {
+      "claim_id": "ecf7d81b-0884-4a2d-b8a9-475c4c318d15",
+      "result_id": "53371257-732f-43eb-8bac-b3a942cd1091"
+    },
+    {
+      "claim_id": "eb27fecc-4d00-4e32-a904-5898f9af031a",
+      "result_id": "53371257-732f-43eb-8bac-b3a942cd1091"
+    },
+    {
+      "claim_id": "f1dee580-92d2-4a19-89d6-f069bfbecbdb",
+      "result_id": "eb73bc8a-15de-4ae0-8751-de8fdab7e446"
+    },
+    {
+      "claim_id": "1ec3f944-7d71-4a3a-aa33-0289aecb11d5",
+      "result_id": "eb73bc8a-15de-4ae0-8751-de8fdab7e446"
+    },
+    {
+      "claim_id": "08c30f3c-23ce-42df-9abf-31edb7d3f9c2",
+      "result_id": "eb73bc8a-15de-4ae0-8751-de8fdab7e446"
+    },
+    {
+      "claim_id": "f19454a4-a854-428d-a49b-cd4728afd8d6",
+      "result_id": "eb73bc8a-15de-4ae0-8751-de8fdab7e446"
+    },
+    {
+      "claim_id": "d0aaafc2-0296-48aa-8796-d1c4ef0b54d6",
+      "result_id": "eb73bc8a-15de-4ae0-8751-de8fdab7e446"
+    },
+    {
+      "claim_id": "83d3ac1d-675d-4936-a8df-ff609174202a",
+      "result_id": "eb73bc8a-15de-4ae0-8751-de8fdab7e446"
+    },
+    {
+      "claim_id": "1d870aa8-1f09-4bc7-9faf-fe4c415fa63d",
+      "result_id": "eb73bc8a-15de-4ae0-8751-de8fdab7e446"
+    },
+    {
+      "claim_id": "faa161e7-46e9-4e50-9e79-23ba9a0b59ed",
+      "result_id": "eb73bc8a-15de-4ae0-8751-de8fdab7e446"
+    },
+    {
+      "claim_id": "c02f9537-75c5-41a8-a2d3-a8419e816083",
+      "result_id": "a0ff231f-e1f0-465f-89ee-606c2f80cba9"
+    },
+    {
+      "claim_id": "26212e98-0adb-496a-a6fb-80e6c048aee0",
+      "result_id": "a0ff231f-e1f0-465f-89ee-606c2f80cba9"
+    },
+    {
+      "claim_id": "b7d6b88a-ea35-4b0d-a4bd-b9b8636827c9",
+      "result_id": "a0ff231f-e1f0-465f-89ee-606c2f80cba9"
+    },
+    {
+      "claim_id": "80963f66-06e9-44bc-b49b-afa96f853252",
+      "result_id": "a0ff231f-e1f0-465f-89ee-606c2f80cba9"
+    },
+    {
+      "claim_id": "3fa4c50f-6467-4aed-92cf-fc3d1b2d4e5e",
+      "result_id": "810acda5-8ab8-454f-b0fb-67ca3724c734"
+    },
+    {
+      "claim_id": "0af6c6c2-bece-4e7d-aa1b-c3015a7d728b",
+      "result_id": "810acda5-8ab8-454f-b0fb-67ca3724c734"
+    },
+    {
+      "claim_id": "fbb52283-abfe-4315-a27f-709716ae6293",
+      "result_id": "810acda5-8ab8-454f-b0fb-67ca3724c734"
+    },
+    {
+      "claim_id": "9ace1943-ee58-4154-ba43-157e55656962",
+      "result_id": "810acda5-8ab8-454f-b0fb-67ca3724c734"
+    },
+    {
+      "claim_id": "89cec55b-6629-4b14-8eed-90687aa3e8af",
+      "result_id": "810acda5-8ab8-454f-b0fb-67ca3724c734"
+    },
+    {
+      "claim_id": "db85b3b1-a81a-49e0-af7a-5df7139c0929",
+      "result_id": "4bb42904-b8ed-479f-9549-d76384990941"
+    },
+    {
+      "claim_id": "d183cdf5-0f1c-4c07-9db7-d849ccde6079",
+      "result_id": "4bb42904-b8ed-479f-9549-d76384990941"
+    },
+    {
+      "claim_id": "af8d6cae-e6a3-4bde-933c-4720ada8b718",
+      "result_id": "4bb42904-b8ed-479f-9549-d76384990941"
+    },
+    {
+      "claim_id": "ecc0258f-c24b-460f-a54f-14d216c86dcc",
+      "result_id": "4bb42904-b8ed-479f-9549-d76384990941"
+    },
+    {
+      "claim_id": "5a671a2c-b14d-4dd4-81f3-0e3e808b60a2",
+      "result_id": "4bb42904-b8ed-479f-9549-d76384990941"
+    },
+    {
+      "claim_id": "9cf3d09c-4107-44dc-807e-e22b7535cae0",
+      "result_id": "a5c9a5a5-9a49-4be1-b541-d399ea51029e"
+    },
+    {
+      "claim_id": "fcc636f7-06b2-4469-adc3-7baf66a3534c",
+      "result_id": "a5c9a5a5-9a49-4be1-b541-d399ea51029e"
+    },
+    {
+      "claim_id": "8fc8b324-e6c1-4657-b5e0-d85d708863de",
+      "result_id": "a5c9a5a5-9a49-4be1-b541-d399ea51029e"
+    },
+    {
+      "claim_id": "57c6745d-1b9f-4801-8bf9-c30f86e8a7d5",
+      "result_id": "a5c9a5a5-9a49-4be1-b541-d399ea51029e"
+    },
+    {
+      "claim_id": "0becdc71-fc32-4e5d-b0c9-5b5728bea589",
+      "result_id": "a5c9a5a5-9a49-4be1-b541-d399ea51029e"
+    },
+    {
+      "claim_id": "bd63b123-a5bd-48f5-8a4b-16f476602ba8",
+      "result_id": "a5c9a5a5-9a49-4be1-b541-d399ea51029e"
+    },
+    {
+      "claim_id": "c0c23bf2-cf4d-409e-b54c-2d6b698b65bc",
+      "result_id": "b9df404e-0527-4058-aad4-a86be0579eca"
+    },
+    {
+      "claim_id": "06fc056b-bc82-4baa-b85e-3179c8e6421d",
+      "result_id": "b9df404e-0527-4058-aad4-a86be0579eca"
+    },
+    {
+      "claim_id": "5bb2775c-0f4e-4ab6-829e-a3a7c4775e7b",
+      "result_id": "b9df404e-0527-4058-aad4-a86be0579eca"
+    },
+    {
+      "claim_id": "565a6b09-bb65-47ee-b1e9-f8ac67330c7a",
+      "result_id": "b9df404e-0527-4058-aad4-a86be0579eca"
+    },
+    {
+      "claim_id": "0fb393c9-ec4e-433c-b5b1-f1045cd1eede",
+      "result_id": "b9df404e-0527-4058-aad4-a86be0579eca"
+    },
+    {
+      "claim_id": "fa9cf67f-8d7a-4c08-94ff-c5b337be4e3c",
+      "result_id": "b9df404e-0527-4058-aad4-a86be0579eca"
+    },
+    {
+      "claim_id": "b9d27ede-6a06-4eb5-ab23-d97d219aedeb",
+      "result_id": "b9df404e-0527-4058-aad4-a86be0579eca"
+    },
+    {
+      "claim_id": "5e1284a2-6c93-42cf-aa07-114d1b37c1c9",
+      "result_id": "b9df404e-0527-4058-aad4-a86be0579eca"
+    },
+    {
+      "claim_id": "f86530e2-f2e9-47a4-a9a9-3cc600cd63ce",
+      "result_id": "fbfdb70f-01ae-4212-9926-db38955198d0"
+    },
+    {
+      "claim_id": "718092b6-3820-4eed-ba3c-c82e6a981692",
+      "result_id": "74b14c10-21b1-4f89-8b83-bfd67edfe961"
+    },
+    {
+      "claim_id": "05cbce27-4b55-48fa-8bad-4816ac1cbe22",
+      "result_id": "74b14c10-21b1-4f89-8b83-bfd67edfe961"
+    },
+    {
+      "claim_id": "c10e6f0e-11b5-4d3d-8ed0-573ce63b046e",
+      "result_id": "74b14c10-21b1-4f89-8b83-bfd67edfe961"
+    },
+    {
+      "claim_id": "6cc2f7ac-94ea-47ff-a1fc-c8ba84f10cd8",
+      "result_id": "6d15aac1-843e-4bcc-861d-dd40f3793632"
+    },
+    {
+      "claim_id": "2cd9fe71-41a3-4bdb-9d8b-e8fc6d3321c8",
+      "result_id": "6d15aac1-843e-4bcc-861d-dd40f3793632"
+    },
+    {
+      "claim_id": "595c564f-e59b-48b3-bd7e-d5eecdc6e7a1",
+      "result_id": "6d15aac1-843e-4bcc-861d-dd40f3793632"
+    },
+    {
+      "claim_id": "5df2cd36-f041-439d-8848-546e524498b0",
+      "result_id": "4c75bfbc-afb6-433b-bd03-2e76df37c054"
+    },
+    {
+      "claim_id": "faaf507d-ab11-4085-bf04-4797d4d91be5",
+      "result_id": "4c75bfbc-afb6-433b-bd03-2e76df37c054"
+    },
+    {
+      "claim_id": "5f2cf0e4-29db-48cd-9afb-3dbc19b95399",
+      "result_id": "4c75bfbc-afb6-433b-bd03-2e76df37c054"
+    },
+    {
+      "claim_id": "e2acce1f-cdf4-40c7-ab42-18992664bda1",
+      "result_id": "4c75bfbc-afb6-433b-bd03-2e76df37c054"
+    },
+    {
+      "claim_id": "f5538a63-d024-4894-bba8-f885428e651e",
+      "result_id": "4c75bfbc-afb6-433b-bd03-2e76df37c054"
+    },
+    {
+      "claim_id": "77c709b0-f8fb-4181-8a46-174de0759cdc",
+      "result_id": "4c75bfbc-afb6-433b-bd03-2e76df37c054"
+    },
+    {
+      "claim_id": "43ad4b6c-b760-486c-a3b2-cc026b7114d6",
+      "result_id": "4c75bfbc-afb6-433b-bd03-2e76df37c054"
+    },
+    {
+      "claim_id": "542bbcd3-9f94-4c98-b5d2-c055a64146f5",
+      "result_id": "8951ca60-8a89-424f-935f-6d3367ff71a8"
+    },
+    {
+      "claim_id": "b9a39448-0ed4-423f-971c-577daaf4fe61",
+      "result_id": "f9785f05-b2c4-4fd7-995f-40f09530700e"
+    },
+    {
+      "claim_id": "fb494ede-5e27-4148-81d3-2ca4b1206b88",
+      "result_id": "ad0fdbdf-87d7-4a36-a53a-687dab5b9daf"
+    },
+    {
+      "claim_id": "fe7d33c2-1653-49b2-8ec4-fcc8993d8be9",
+      "result_id": "058c9dd3-fd96-487b-9304-bdcc63c8bbd1"
+    }
+  ],
+  "comparisons": []
+}

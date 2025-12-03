@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C16",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C52",
+      "C59",
+      "C125",
+      "C126",
+      "C127",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Nanopore sequencing enables high-resolution genome-wide methylation phasing and imprinting detection using parent-offspring trios. The study phased 95% of the human methylome (26.5M CpGs) across 12 lymphoblastoid cell lines using publicly available nanopore data and trio information, achieving higher resolution than previous bisulfite sequencing approaches and enabling detection in single samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C46, C59 provide consistent quantitative evidence that 95% of the methylome was phased across samples and ~90% in individual samples. Claims C51-C52 validate nanopore methylation calling against WGBS (r=0.89). Claims C126-C127 demonstrate advantages over previous methods, with 14 novel DMRs lacking phased CpGs in prior studies. The methodological claims are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "The study detected 94% (64/68) of well-characterized imprinted DMRs and identified 200 allelic DMRs total, of which 99 were novel. Using differential methylation analysis with stringent criteria (p<0.001, |\u0394methylation|>0.20, detected in \u22654 cell lines per haplotype), 101 detected DMRs overlapped with 103 previously reported DMRs with consistent parent-of-origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C48, C58 consistently report 94% detection rate for well-characterized DMRs. Claims C55-C57 provide clear quantitative breakdown of detected DMRs (200 total, 101 overlapping with known, 99 novel). The statistical criteria are explicitly stated (C55) and the classification methodology is described (C54). Single-sample detection rates (C60: ~73%) demonstrate robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C47",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C71"
+    ],
+    "result": "42 novel imprinted DMRs were identified and validated using WGBS data from 60 tissue datasets and 119 blood samples. Of these, 16 were classified as germline and 26 as somatic DMRs, with 74% showing maternal methylation. 91% of well-characterized DMRs showed partial methylation in WGBS validation data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 establish the core finding of 42 novel DMRs with WGBS validation. Claims C61-C62 describe the validation dataset (60 tissues, 119 blood samples) and show 91% of known DMRs validated. Claim C71 provides germline/somatic classification. Claim C63 reports parental bias consistent with prior studies. The validation approach using partial methylation (~50%) as a criterion is methodologically sound for imprinted regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C49",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C138",
+      "C139"
+    ],
+    "result": "17 of the novel DMRs (40.5% of 42) showed evidence of conservation across mammals. Analysis of WGBS data from mouse, rhesus macaque, and chimpanzee revealed that 81 previously reported and 17 novel DMRs displayed partial methylation in at least one mammalian species. In mouse, 33 DMR orthologs were partially methylated, with 88% also showing partial methylation in primates, and DMRs generally preserved their germline/somatic identity across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C49 consistently report 17 conserved novel DMRs (~40%). Claims C84-C87 provide detailed quantitative breakdown across species (81 known + 17 novel showing conservation; 33 in mouse with 88% also in primates). Claims C88-C90 address conservation of DMR classification with appropriate caveats about exceptions. The evolutionary interpretation (C139) is reasonable given the data. However, the conservation analysis relies on partial methylation detection in WGBS data, which may have sensitivity limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Novel DMRs exhibited substantial inter-individual variation in imprinted methylation, ranging from 1.2% to 73.5% of individuals showing partial methylation (mean 23.6% \u00b1 19.2%). DMRs detected in multiple studies showed greater consistency (41.2% \u00b1 33%) than those detected in single studies (10.6% \u00b1 15.4%), suggesting polymorphic imprinting explains non-overlapping DMRs across studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 provide consistent quantitative data on inter-individual variation with specific examples. Claim C68 identifies outlier individuals with generalized imprinting disruption, supported by citation to prior work. Claims C69-C70 make a logical inference about polymorphic imprinting explaining study differences, supported by the quantitative comparison. However, the inference (C70) would benefit from additional genetic or mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C129",
+      "C130"
+    ],
+    "result": "44% of novel germline DMRs and 49% of reported germline DMRs were bound by ZFP57 and/or ZNF445, with 89% having ZFP57 peaks. 88% of gDMRs with ZFP57 peaks contained the 5\u2032-TGCCGC-3\u2032 motif, and the number of motifs showed significant positive correlation with methylation consistency across individuals (Pearson=0.54, p=3.6e-07), suggesting motif redundancy increases ZFP57 recruitment and tolerance to sequence variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 provide clear quantitative data on ZFP57/ZNF445 binding at gDMRs. Claims C76-C78 establish motif presence and correlation with methylation consistency using appropriate statistical testing. Claim C75 makes a reasonable inference about ZFP57's importance. However, claims C79 and C130 about mechanism (motif redundancy increasing recruitment and tolerance) are speculative inferences not directly tested experimentally. The correlation supports the hypothesis but doesn't prove causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "47 previously reported and 16 novel DMRs showed significant allelic H3K4me3 marks, with 37 reported and 7 novel DMRs displaying opposite allelic states between H3K4me3 and methylation. Germline DMRs showed greater enrichment (63%) for allelic H3K4me3 compared to somatic DMRs (48%), consistent with H3K4me3's protective role against DNA methylation at germline ICRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide quantitative ChIP-seq results with clear statistical criteria (Fisher's combined p<0.05, \u226580% reads on one allele). The differential enrichment between gDMRs and sDMRs (C82) is well-documented. Claim C83 appropriately cites established knowledge about H3K4me3's protective role. The opposite allelic states (C81) provide strong evidence for the functional relationship between H3K4me3 and methylation at imprinted loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study detected seven parent-of-origin methylation bias blocks (35-65 kb) at known imprinted clusters, including a ~200 kb paternal block at PWS/AS encompassing SNORD116. These blocks showed hypermethylation on the expressed allele with mutually exclusive H3K36me3 and H3K27me3 marks. Unlike typical imprinted DMRs showing ~50% methylation in WGBS, these blocks showed subtle differential methylation on both alleles, explaining why 40 nanopore-detected DMRs were not confirmed in WGBS data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C103-C105 establish the detection of seven methylation bias blocks with specific size ranges and locations. Claims C14-C15 describe the histone modification patterns. Claims C106-C111 provide a logical mechanistic explanation for why these regions weren't detected in WGBS data, based on the difference between complete monoallelic methylation (~50% aggregate) versus subtle bias on both alleles. This demonstrates nanopore's advantage for detecting subtle allele-specific differences. The explanation is internally consistent and well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "At the seven parent-of-origin methylation-biased blocks, the expressed allele demonstrated hypermethylation linked to allelic expression, with mutually exclusive H3K36me3 (on hypermethylated allele) and H3K27me3 (on hypomethylated allele) patterns. All seven blocks showed multiple significant H3K36me3 bins, while H3K27me3 was detected in 4-6 blocks depending on sample. This pattern suggests the methylation bias is mediated by transcription and histone marks at gene bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 establish the mechanistic link between transcription, H3K36me3, and gene body methylation (supported by citations). Claims C114-C117 describe the observed patterns at the bias blocks. Claims C118-C119 cite established knowledge about mutual exclusivity. Claims C120-C123 provide quantitative ChIP-seq evidence for the histone mark patterns. Claim C124 makes a reasonable mechanistic inference. The evidence converges to support the conclusion, though the mechanism is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C142",
+      "C143"
+    ],
+    "result": "15 novel DMRs (6 germline, 9 somatic) mapped near (<1.03 Mb) known imprinted genes. Five novel DMRs at ZNF714, PAX8-AS1, ACTL10, and SYCE1 promoters showed inverse relationships between methylation origin and expression, suggesting they could be ICRs directly suppressing the respective alleles. Novel somatic DMRs near imprinted genes were mostly paternal, while novel germline DMRs were all maternal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92, C96 provide clear quantitative data on DMR proximity and parental origin patterns. Claims C93-C94 describe specific findings at ZNF714 and PAX8-AS1 promoters. However, claims C95, C99, C102, C143 about DMRs being ICRs and directly suppressing alleles are speculative inferences (marked as SPECULATION in evidence_type) not experimentally validated. Claims C98, C101 cite supporting evidence from prior studies. While the genomic locations and methylation-expression relationships are well-documented, the functional claims require experimental validation (e.g., deletion studies, reporter assays).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Novel maternal germline DMRs were detected at PTCHD3 promoter and FANCC intron 1, confirming and extending previous observations. The PTCHD3 DMR may directly suppress the maternal allele, while the FANCC DMR overlaps a CTCF-binding site, suggesting a mechanism where paternal allele suppression occurs via CTCF binding while maternal methylation inhibits CTCF binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C151 establish prior observations and current findings with appropriate citations. Claim C154 documents the CTCF-binding site overlap. Claims C155-C156 cite established knowledge about CTCF function. However, claims C152-C153, C157 about these DMRs being ICRs and the proposed mechanisms are speculative inferences (marked as SPECULATION/INFERENCE) without experimental validation. The CTCF mechanism is plausible given the genomic features and cited precedents, but requires functional testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study could not phase 5% of the human methylome, with 75% of unphased CpGs mapping to ENCODE blacklist regions with low mappability. Future improvements in base calling and variant calling from nanopore reads could enable complete genome-wide methylome phasing using nanopore-detected SNVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 clearly document the study's limitations with quantitative data and mechanistic explanation (lack of SNVs in low-mappability regions). Claim C133 is a reasonable speculation about future improvements based on the identified limitation. The limitation is honestly reported and well-characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The novel DMRs represent a substantial expansion of known imprinting regions that may aid future research in genetic medicine and oncology. The subtle parental methylation bias may be used to express important regulatory genes in imprinted clusters with higher fidelity, as exemplified by KCNQ1OT1 and GNAS-AS1 antisense transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C134 makes a reasonable summary statement about the significance of findings. However, claim C135 about clinical applications is speculative without validation. Claims C136-C137 propose a functional explanation for methylation bias blocks, with C137 providing specific examples of antisense RNAs. While the hypothesis is plausible and supported by the example, it remains speculative (marked as SPECULATION) without experimental validation of the proposed function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Several genes with novel imprinted DMRs have established disease associations: ZNF714 with non-syndromic cleft lip, PAX8-AS1 with thyroid disorders, and SYCE1/ACTL10 with other human diseases, suggesting potential clinical value for these imprinted DMRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 cite established knowledge about disease associations for these genes. Claim C148 makes a reasonable speculation about clinical value based on the combination of novel imprinting findings and known disease associations. While the clinical utility is not demonstrated, the connection between imprinting at disease-associated genes and potential clinical relevance is logical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C17"
+    ],
+    "result": "Background knowledge about imprinting mechanisms, DNA methylation, and limitations of previous methodological approaches. Imprinting is controlled by parent-of-origin DMRs (germline and somatic), involves various mechanisms (CTCF, lncRNAs), and is implicated in genetic disorders and cancer. Previous approaches using karyotypic abnormalities had limitations, and the Zink et al. 2018 study using Icelandic pedigrees could only phase 84% of the methylome due to short reads and was limited to a single population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish background knowledge and context, supported by appropriate citations (C1-C2, C18-C34, C40-C41) or represent logical assessments of prior work (C35-C39, C42). The characterization of previous studies' limitations (C37-C42) is fair and well-documented, providing justification for the current study's approach. This background appropriately frames the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C140",
+      "C141"
+    ],
+    "result": "The study found partial methylation in mouse orthologs of two DMRs from Court et al. 2014 (MEG8/Rian and Htr5a) that were previously reported as not conserved or not examined in mouse, suggesting re-evaluation of conservation conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 appropriately cite prior work and present contradictory findings with explanation. The detection of partial methylation in mouse orthologs challenges previous conclusions about lack of conservation. The explanation that Court et al. examined a different region for Htr5a is specific and verifiable. This represents a valid correction/extension of prior findings.",
+    "result_type": "MINOR"
+  }
+]

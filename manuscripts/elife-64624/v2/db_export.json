@@ -1,0 +1,2484 @@
+{
+  "submission": {
+    "id": "c790c01b-f6be-4fc1-b849-7f21963ae3ef",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:36:58.206755Z",
+    "updated_at": "2025-12-03T01:36:58.206755Z"
+  },
+  "content": [
+    {
+      "id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "submission_id": "c790c01b-f6be-4fc1-b849-7f21963ae3ef",
+      "content_type": "manuscript",
+      "content_text": "# ARL3 activation requires the co-GEF BART and effector-mediated turnover\n\n## Authors\n\n- Yasmin ElMaghloob<sup>1</sup> ([ORCID: 0000-0002-5613-0678](https://orcid.org/0000-0002-5613-0678))\n- Bego\u00f1a Sot<sup>2</sup>\n- Michael J McIlwraith<sup>1</sup>\n- Esther Garcia<sup>1</sup>\n- Tamas Yelland<sup>1</sup>\n- Shehab Ismail<sup>1</sup> ([ORCID: 0000-0002-4150-1077](https://orcid.org/0000-0002-4150-1077)) \u2020\n\n### Affiliations\n\n1. CRUK- Beatson Institute Glasgow United Kingdom\n2. Fundaci\u00f3n IMDEA-Nanociencia, Campus de Cantoblanco Madrid Spain\n3. Unidad Asociada de Nanobiotecnolog\u0131\u0301a (CNB-CSIC e IMDEA Nanociencia), Campus de Cantoblanco Madrid Spain\n4. Institute of Cancer Sciences, University of Glasgow Glasgow United Kingdom\n5. Department of Chemistry, KU Leuven, Celestijnenlaan Heverlee Belgium\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ADP-ribosylation factor-like 3 (ARL3) is a ciliopathy G-protein which regulates the ciliary trafficking of several lipid-modified proteins. ARL3 is activated by its guanine exchange factor (GEF) ARL13B via an unresolved mechanism. BART is described as an ARL3 effector which has also been implicated in ciliopathies, although the role of its ARL3 interaction is unknown. Here, we show that, at physiological GTP:GDP levels, human ARL3GDP is weakly activated by ARL13B. However, BART interacts with nucleotide-free ARL3 and, in concert with ARL13B, efficiently activates ARL3. In addition, BART binds ARL3GTP and inhibits GTP dissociation, thereby stabilising the active G-protein; the binding of ARL3 effectors then releases BART. Finally, using live cell imaging, we show that BART accesses the primary cilium and colocalises with ARL13B. We propose a model wherein BART functions as a bona fide co-GEF for ARL3 and maintains the active ARL3GTP, until it is recycled by ARL3 effectors.\n\n## Introduction\n\nSeveral ADP-ribosylation factor-like (ARF-like) proteins, such as ARL3 and ARL6, have been found to play important roles in ciliary biogenesis and homeostasis. Defects in these proteins can therefore result in various ciliopathies as ciliary formation and/or composition becomes compromised (Alkanderi et al., 2018).\n\nARL3, and its homologue ARL2, bind the phosphodiesterase six subunit \u03b4 (PDE\u03b4) and the uncoordinated paralogues UNC119A and UNC119B. PDE\u03b4 and the UNC119 paralogues bind to and are involved in the trafficking of prenylated and myristoylated proteins, respectively. Due to their functional and structural similarities to RHO GDP-dissociation inhibitors (GDIs), they have been named GDI-like solubilising factors (Chandra et al., 2012). ARL3 acts as a release factor for these proteins, and is therefore crucial for the trafficking of their lipid-modified cargo (Ismail, 2017). In addition, the binder of ARL2 (BART) has been previously identified as an effector of ARL2 and ARL3 (Sharer and Kahn, 1999; Veltel et al., 2008). Although its functions remain unclear, BART has been implicated in the ciliopathic disorder retinitis pigmentosa, indicating a role in primary cilia (Davidson et al., 2013).\n\nAs with other GTPases, the activity of ARL proteins is fine-tuned by the action of guanine nucleotide exchange factors (GEFs) and GTPase-activating proteins (GAPs); these accelerate nucleotide exchange and GTP hydrolysis, respectively, thereby modulating G-protein activity. The regulation of ARL3 is critical for ciliary function, as both its reported GEF, ARL13B (Alkanderi et al., 2018; Gotthardt et al., 2015), and GAP, RP2 (Schwahn et al., 1998; Veltel et al., 2008), have been implicated in ciliopathies. However, the ARL13B mechanism of action is not fully understood. While it fits the profile of the ARL3GEF owing to its ciliary localisation, and in vitro GEF activity, the reported ARL3-ARL13B complex structure has not elucidated the interactions between the GEF and the ARL3 nucleotide-binding site (Gotthardt et al., 2015), necessary for nucleotide exchange.\n\nHere, we report and describe the human ARL3GEF as a two-component factor comprising ARL13B and BART, both proteins being able to bind nucleotide-free ARL3 and co-localise to the primary cilium. Although the individual proteins failed to efficiently exchange ARL3GDP to ARL3GTP, together, BART and ARL13B were able to completely exchange ARL3 at an accelerated rate of over 500-fold compared to the intrinsic exchange rate. In addition to binding to the nucleotide-free ARL3, BART binds to ARL3GTP and inhibits GTP dissociation. We show that ARL3 effectors displace BART from the BART-ARL3 complex. Thus, we propose a model in which: BART functions as a co-GEF activating ARL3 together with ARL13B; BART then maintains ARL3 in the GTP-bound active form, thereby circumventing the ARL3 preference for GDP, until it is displaced and recycled by ARL3 effectors.\n\n## Results and discussion\n\n### ARL3 is weakly activated by ARL13B under physiological GTP:GDP levels\n\nGEFs generally reduce the binding affinities of small G-proteins to nucleotides, thereby allowing the fast replacement of the bound GDP with GTP, which is more abundant in cells. GEFs are known not to favour the binding to, and hence dissociation of, one nucleotide-bound form of their cognate GTPase over another (Goody, 2014). The physiological concentration of GTP is approximately 10 times that of GDP, although this ratio can vary depending on the cell type and status (Traut, 1994). For a G-protein with similar binding affinities to GDP and GTP, a 10-fold excess of GTP should result in 90% loading of GTP at equilibrium, assuming no GTP hydrolysis. However, in the case of ARL3, it is reported that the ARL3-binding affinity for GDP is 50 times that of the GTP analogue GppNHp (0.06 nM and 3 nM, respectively [Veltel et al., 2008]). This difference in affinity would nullify the 10-fold excess in GTP and would result in a majority of GDP-loaded ARL3 at equilibrium even in the presence of GEFs. ARL13B has been previously identified as a GEF for ARL3, although the mechanism has not been fully elucidated (Gotthardt et al., 2015). We hence set out to investigate the GEF activity of ARL13B using GDP and GTP nucleotides.\n\nTo investigate the binding of ARL3 to GTP versus GDP in the presence of ARL13B and at physiological GDP:GTP concentrations, we incubated GDP-loaded ARL3 with recombinant ARL13B18-278, the minimum active ARL13B construct (Gotthardt et al., 2015) and nucleotide mixtures of fluorescently-labelled GDP (mantGDP) and 10-fold excess unlabelled GDP, GTP, or GppNHp (Figure 1A). The binding of mantGDP to ARL3 was monitored using fluorescence polarisation measurements. As expected, excess unlabelled GDP was able to compete with mantGDP and the binding of mantGDP was almost\u00a0fully inhibited. However, even in the presence of ARL13B and physiological ratios of unlabelled GTP or GppNHp to GDP, the majority of ARL3 was bound to GDP (Figure 1A). We conclude that, in the presence of ARL13B and under physiological relative concentrations of GTP:GDP, ARL3 is weakly activated at equilibrium and the majority of ARL3 (>50%) is loaded with GDP.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64624/elife-64624-fig1-v2.jpg)\n\n**Figure 1.:** (A) 2 \u03bcM mantGDP was mixed with 2 \u03bcM ARL3GDP, 2 \u03bcM ARL13B18-278, and 40 \u03bcM unlabelled nucleotide (GDP, GTP, or GppNHp, as indicated). Fluorescence polarisation was measured following the addition of mantGDP to monitor the formation of ARL3mantGDP over time until the stabilisation of the measurements. The experiment was repeated three times and the average maximum polarisation obtained for each nucleotide is shown relative to that obtained with no excess unlabelled nucleotides added to the reaction. (B) Fluorescence polarisation measurements were used to monitor the nucleotide exchange of 2 \u03bcM ARL3mantGDP in the presence of 150 \u03bcM GppNHp (turquoise squares). The exchange was also observed with the addition of 10 \u03bcM ARL13B18-278 in the presence of 150 \u03bcM GDP (blue squares) and 150 \u03bcM GppNHp (black crosses). Excess unlabelled nucleotides were added to initiate the reaction and the measurements immediately started. The data was fitted using GraFit, and the corresponding exchange rates are listed to the left of the key.\n\nThe fraction of ARL3 bound to mantGDP is in line with the lower affinity of ARL3 to GTP or GppNHp compared to GDP. The binding of mantGDP in the presence of GTP (53% compared to that in absence of unlabelled nucleotides) is relatively less than that in the presence of GppNHp (83.7% compared to that in absence of unlabelled nucleotides) which reflects a mildly higher affinity of GTP toward ARL3 compared to its analogue GppNHp (Figure 1A). However, this difference in affinity between GTP and GppNHp may be due to the hydrolysis of GTP or the contamination of the GTP solution with GDP, which is common in commercial GTP preparations. Therefore, to further investigate the rate and extent of dissociation of GDP, we used excess unlabelled GDP or GppNHp in ARL3mantGDP exchange (Figure 1B). Under the conditions used, ARL13B was able to accelerate the dissociation of GDP approximately 8.5-times in the presence of unlabelled GDP and 25-times in the presence of GppNHp compared to the intrinsic rate with GDP alone. This is consistent with the higher activity of ARL13B in the presence of GTP compared to GDP (Gotthardt et al., 2015). GppNHp, as expected, was not able to completely displace GDP despite being in 75-fold excess (Figure 1B).\n\nWe therefore conclude that, under physiological GTP:GDP concentrations and our experimental settings, ARL3 is weakly activated by ARL13B.\n\n### Lipid membranes do not release the ARL3 hasp\n\nARF subfamily proteins are characterised by the presence of an interswitch toggle and an N- terminal extension, usually an amphipathic helix (Pasqualato et al., 2002). The interswitch toggle is located between switch I and switch II and undergoes a nucleotide-dependent movement, which, in the GDP-bound state, allows the retraction of the N-terminal extension on the surface of the protein. In the presence of membranes and upon binding to GTP, the interswitch toggle displaces the retracted N-terminus (Antonny et al., 1997; Goldberg, 1998). However, the displacement of the amphipathic helix is not possible in the absence of membranes; the helix therefore acts as a hasp, locking ARFs in the GDP-bound form. In line with this, ARFGEFs are not functional in the absence of membranes (B\u00e9raud-Dufour et al., 1999). Comparing the structures of GTP- and GDP-bound ARL3 shows that it undergoes similar conformational changes as in ARF proteins (Figure 2A). We thus wanted to investigate if the ARL3 amphipathic helix acts as a hasp to slow down GDP dissociation, and if this effect can be counteracted by the presence of membranes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64624/elife-64624-fig2-v2.jpg)\n\n**Figure 2.:** (A) Structure superimposition of the N-terminal helices and the interswitch regions of ARL3GTP (green, PDB: 4ZI2) and ARL3GDP (grey, PDB: 1FZQ) shown in cartoon form. The conformational shift of the interswitch \u03b2-hairpin is indicated by the dashed black arrow. (B) Nucleotide exchange was monitored for 2 \u03bcM N-terminally truncated ARL3mantGDP (ARL3\u0394N) mixed with 150 \u03bcM GppNHp in the presence (solid blue) and absence (dotted green) of 20 \u03bcM ARL13B18-278. Polarisation was measured after the addition of excess GppNHp. (C) Liposome-binding assay in which 2 \u03bcM GppNHp- and GDP-loaded ARL3 (top and bottom, respectively) was incubated with increasing concentrations of liposomes (200 nm; DOPC:DOPG:DPPC:DPPG:cholesterol). Following ultracentrifugation, samples of the pellet (P) and supernatant (S) were run on SDS-PAGE gels. %ARL3 relative to total was quantified for each band. Cosedimentation with 1 mM liposomes was carried out twice with similar results; a representative image of the get is shown here. (D) Relative fluorescence polarisation measurements of 2 \u03bcM ARL3mantGDP and 150 \u03bcM GppNHp in the absence (dotted green) and presence of 1 mM (solid red) and 3 mM (solid blue) liposomes(200 nm; DOPC:DOPG:DPPC:DPPG:cholesterol). Excess GppNHp was added to initiate the reaction and the measurements immediately started. (E) The same experiment as (B) was repeated with a mixture of 2 \u03bcM full-length ARL3, 150 \u03bcM GppNHp, and 3 mM liposomes (200 nm; DOPC:DOPG:DPPC:DPPG:cholesterol) in the presence (solid blue) and absence (dotted green) of 20 \u03bcM ARL13B18-278. (F) 2 \u03bcM untagged ARL3mantGDP was mixed with 150 \u03bcM GppNHp, and fluorescence polarisation was measured in the absence (dotted green) and presence (blue) of 20 \u03bcM ARL13B. Nucleotide exchange was also monitored (red) in the presence of 20 \u03bcM ARL13B18-278 and 3 mM of Ni-NTA liposomes (200 nm; DOGS-NTA:DOPC:DOPG:DPPC:DPPG:cholesterol). Excess GppNHp was added to initiate all reactions. (G) Liposome-binding assay where 2 \u03bcM ARL3GDP was mixed with 150 \u03bcM GppNHp and 20 \u03bcM 12xHis-ARL13B18-278 in the presence and absence of 3 mM Ni-NTA liposomes (200 nm; DOGS-NTA:DOPC:DOPG:DPPC:DPPG:cholesterol). Following ultracentrifugation, samples of the pellet (P) and supernatant (S) were run on SDS-PAGE gels, along with a sample of 12xHis-ARL13B18-278 for reference. Dashed lines indicate lanes cut for presentation.\n\nTo test the impact of the N-terminal amphipathic on the nucleotide exchange, we used N-terminally truncated ARL317-182 (ARL3\u0394N). In contrast to the full-length protein, ARL3\u0394N undergoes significant nucleotide exchange upon the addition of ARL13B (Figure 2B). This supports the notion of the ARL3 amphipathic helix acting as a hasp, which inhibits ARL13B-mediated nucleotide exchange.\n\nARL3 differs from ARF proteins in the reported lack of myristoylation of its N-terminus, which implies weak affinity to membranes (Fansa and Wittinghofer, 2016). Attempts to carry out in vitro N-myristoyl transferase 1 (NMT1)-catalysed myristoylation of ARL3 (Stephen et al., 2018) also did not result in any detected myristoylated N-terminal ARL3 fragments as analysed by mass spectrometry. We thus tested the binding of ARL3 to liposomes previously shown to interact with ARL3 (Kapoor et al., 2015; Lokaj et al., 2015). Both GDP- and GppNHp-bound ARL3 show weak binding, with ARL3GppNHp being stronger (Figure 2C), which is most likely due to the better availability of the N-terminal helix in the GTP-bound conformation. While our experiments show that the ARL3 N-terminal helix cannot drive stable lipid binding, the lipid environment may induce conformational changes in the former, allowing the nucleotide exchange to occur.\n\nWe therefore tested whether the presence of liposomes can release the N-terminal helix and so affect the rate of ARL3 nucleotide exchange. The dissociation of mantGDP from ARL3 was monitored in the presence of 1 mM and 3 mM liposomes in the absence and presence of ARL13B18-278. Under the experimental conditions used, however, nucleotide exchange was not enhanced (Figure 2D and E).\n\nARL13B itself is palmitoylated in cells (Cevik et al., 2010), and its interaction with lipid membranes as well as ARL3 may result in an increased local concentration of the latter on the membrane surface, driving ARL3 N-terminal interaction with lipids and enhancing the dissociation of bound GDP. Palmitoylated ARL13B is difficult to obtain due to its insolubility in aqueous solutions, and the chemical lability of the palmitoyl thioester linkage. Instead, to simulate the ARL13B membrane interaction, we used nickel-chelating liposomes with His-tagged ARL13B18-278 and monitored the nucleotide exchange of untagged ARL3mantGDP (Figure 2F). Dissociation of ARL3-bound mantGDP is similar in the presence and absence of Ni-chelating liposomes, despite the strong liposomal binding of His-tagged ARL13B18-278 (Figure 2G). Overall, under our experimental settings, ARL3 nucleotide exchange in all liposome reactions was much less compared to that of ARL3\u0394N(Figure 2B), indicating that the liposomes used failed to release the N-terminal helix.\n\nARL13B-mediated nucleotide exchange of the full-length ARL3 may therefore require another non-lipid component to the reaction, which is likely to involve the release of the ARL3 N-terminus.\n\n### BART is a co-GEF for ARL13B-mediated ARL3 nucleotide exchange\n\nWe reasoned that the release of the ARL3 amphipathic helix may be carried out by one of its interactors. This protein would be involved in the guanine nucleotide exchange reaction and therefore must be able to bind to nucleotide-free ARL3 (Cherfils and Chardin, 1999). We thus investigated the ability of ARL3 interactors to bind to the GTPase in various nucleotide states. We performed pull-down assays using BART and GDI-like solubilising factors (represented by UNC119A); UNC119A shows strong specificity toward ARL3GppNHp as expected for an effector. Surprisingly, BART showed weak but consistent binding to nucleotide-free ARL3 (1:10 compared to ARL3GppNHp binding), identifying it as a potential GEF candidate (Figure 3A). This is further supported by the reported structure of the ARL3 homologue ARL2-GTP in complex with BART which shows BART-ARL2 N-terminal helix interaction (Zhang et al., 2009). Similar interactions were reported for the structure of ARL3 in complex with the related protein BART-like 1 (BARTL1) (Lokaj et al., 2015).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64624/elife-64624-fig3-v2.jpg)\n\n**Figure 3.:** (A) GST-tagged BART and UNC119A were used to pull down ARL3 (bound to GDP or GppNHp, as indicated) in the presence and absence of alkaline phosphatase (AP). Samples of the elutes and inputs were run on SDS-PAGE gels and visualised using Coomassie blue. Pulled down ARL3 was further confirmed by immunoblotting using anti-ARL3 antibodies (red), and was quantified relative to the respective GST-BART or GST-UNC119A bands (right). The pull-downs were repeated three times; a representative image of the obtained gels and western blots is shown here. (B) 2 \u03bcM ARL3mantGDP was mixed with 10 \u03bcM ARL13B18-278 and 150 \u03bcM GDP or GppNHp, and the nucleotide exchange was monitored in the presence and absence of 20 \u03bcM BART, as indicated. The first 1000s of the measurement following nucleotide addition are shown in greater detail. The data was fitted using GraFit, and the corresponding exchange rates are listed to the left of the key. (C) 2 \u03bcM ARL3mantGDP was mixed with 150 \u03bcM GppNHp, and subsequent nucleotide exchange was monitored with the addition of 20 \u03bcM ARL13B18-278 and increasing amounts of BART, as indicated. All reactions were initiated by the addition of excess GppNHp.The data was fitted using GraFit, and the corresponding exchange rates are listed (right). (D) 2 \u03bcM ARL3mantGDP was mixed with 150 \u03bcM GppNHp and 10 \u03bcM ARL13B18-278 and fluorescence polarisation was monitored over time in the absence (grey) and presence of 10 \u03bcM UNC119A (red), PDE\u03b4 (yellow), or BART (blue). (E) Superimposition of crystal structures of ARL3 (green, with switch regions, interswitch \u03b2-hairpin, and the N-terminal helix in light red, red, and dark green, respectively) in complex with ARL13B (grey, PDB: 5DI3), and BART (blue, PDB: 3DOE). As shown in the magnified area denoted by the black squares, only BART can bind both the N-terminal helix and the switch regions. (F) Nucleotide exchange of 2 \u03bcM ARL3\u0394NmantGDP was monitored in the presence of 150 \u03bcM GppNHp (black circles), with the addition of 0.2 \u03bcM ARL13B18-278 (turquoise circles), and with the addition of 0.2 \u03bcM ARL13B18-278 and 20 \u03bcM BART (red circles). The data was fitted using GraFit, and the corresponding exchange rates are listed.\n\nWe therefore wanted to test the effect of BART on ARL3 activation; the addition of BART to the ARL13B-mediated reaction is twofold: a significant amount of mantGDP is displaced, and the ARL3 nucleotide exchange rate is markedly increased (Figure 3B). Titrating in BART to the ARL13B-mediated reaction resulted in a maximum increase of over 500-fold that of the intrinsic rate of GDP dissociation (Figure 3C).\n\nTo investigate whether this effect occurs due to BART binding to ARL3GTP or to the nucleotide-free form (Figure 3A), the GEF assay was repeated using ARL3mantGDP and excess unlabelled GDP. BART was able to accelerate the nucleotide exchange approximately 70-fold (Figure 3B), supporting that BART has bona\u00a0fide GEF activity together with ARL13B, thereby acting as a \u2018co-GEF\u2019. Furthermore, the addition of ARL3 effectors UNC119A and PDE\u03b4 to the ARL13B-mediated reaction failed to enhance the nucleotide exchange of ARL3mantGDP, despite their high affinity to ARL3GTP (Figure 3D). Superimposition of the ARL13B-ARL3 structure with that modelled for the ARL3-BART complex reveals no steric clashes and that a ternary complex is structurally feasible (Figure 3E).\n\nIn addition to the autoinhibition exerted by the N-terminal helix, ARL3GDP, similar to ARF proteins, is further inhibited by the interswitch \u03b2-hairpin, which adopts a conformation that blocks GTP binding (Greasley et al., 1995). GTP binding requires a conformational shift of the interswitch \u03b2-hairpin which then occupies the pocket vacated by the N-terminal helix (Nawrotek et al., 2016; Figure 2A). These changes must be mediated by the GEF for ARL3 activation to occur. In the reported ARL13B-ARL3 crystal structure, ARL13B does not interact with the ARL3 N-terminal helix or the interswitch region. A comparison of the reported crystal structures of ARL3 in complex with its identified interactors (Hillig et al., 2000; Ismail et al., 2012; Hanzal-Bayer, 2002; Gotthardt et al., 2015) shows that BART is the only ARL3 interactor that can interact with both the N-terminal helix and switches including the interswitch region (Figure 3E). Furthermore, BART shows stronger binding to the GTP-loaded and nucleotide-free ARL3 compared to the GDP-bound form (Figure 3A). We speculated if BART can stabilise the conformational shift of the interswitch region to favour the dissociation of the bound GDP and allowing the binding of GTP.\n\nThe presence of BART is able to accelerate and increase the nucleotide exchange of ARL3mantGDP with unlabelled GDP, excluding the necessity of binding to the product, ARL3GTP, to accelerate the dissociation of the bound GDP (Figure 3B). To test the involvement of the BART interactions with the switches and the interswitch regions, BART was added to ARL13B-mediated nucleotide exchange of ARL3\u0394NmantGDP. Despite the absence of the helix, BART is still able to accelerate the exchange, although a similar amount of ARL3\u0394N is exchanged compared with ARL13B alone (Figure 3F). Therefore, BART carries out this novel mode of action as a co-GEF in the ARL13B-mediated reaction by releasing the two layers of autoinhibition.\n\n### ARL3 effectors facilitate BART turnover\n\nThe high affinity of BART to ARL3GTP gives rise to the possibility of product inhibition of the former. Indeed, under multiple turnover conditions, where limiting concentrations of BART were added to the ARL13B-mediated reaction, this becomes evident. The presence of excess GppNHp resulted in rapid quenching of the reaction and a small amount of exchange, as the initial production of ARL3GTP leads to the formation of a complex with BART that inhibits the turnover of the reaction. On the other hand, presence of excess GDP did not result in the same inhibition, which is to be expected as BART would have low affinity to the produced ARL3GDP, and therefore no inhibition occurs (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64624/elife-64624-fig4-v2.jpg)\n\n**Figure 4.:** (A) Nucleotide exchange of ARL3 was assayed in a multiple turnover experiment with a limiting addition of BART. Fluorescence polarisation was measured following nucleotide addition for a mixture of 20 \u03bcM ARL3mantGDP, 20 \u03bcM ARL13B, and 1 \u03bcM BART in the presence of either 150 \u03bcM GppNHp (red) or 150 \u03bcM GDP (blue). (B) Fluorescence polarisation was measured for a mixture of 5 \u03bcM ARL3mantGDP, 100 \u03bcM GppNHp, and 1 \u03bcM ARL13B18-278 (grey). The measurements were repeated in the presence of 5 \u03bcM UNC119A (yellow), 2 \u03bcM BART (blue), or a mixture of UNC119A and BART at the aforementioned concentrations (orange). All reactions were initiated by the addition of GppNHp. (C) SPR sensorgrams of ARL3GppNHp (640 nM) bound to immobilised GST-BART undergoing nine washing steps (black arrows) with either running buffer (red), or with 2 \u03bcM PDE\u03b4 (blue). The data was fitted to a single exponential equation using GraFit, and the fitted curves are shown on the right, along with the corresponding rate constants.\n\nAs other ARL3 effectors such as UNC119A and PDE\u03b4 also exhibit a comparably high affinity to ARL3GTP (Veltel et al., 2008), we hypothesised that product inhibition of BART can be relieved by the presence of ARL3 effectors which would displace BART from the ARL3GTP-bound complex. The addition of UNC119A in equal concentrations as ARL3 to a GEF assay with limiting amounts of ARL13B and BART resulted in greater ARL3 exchange compared to that obtained in the absence of UNC119A. This enhancement of the exchange was only observed when all three proteins, GEF, co-GEF, and effector, were added, confirming that UNC119A displaces BART from the ARL3-BART complex (Figure 4B).\n\nBART interacts with ARL3 via the switches and the N-terminal helix simultaneously (Figure 3E). It was shown that both interactions are essential for high-affinity interaction of BART with the ARL3 homologue ARL2 (Zhang et al., 2009). This raises the possibility of an avidity effect of the two binding sites. In this case, the inhibition of one binding/interacting site should increase the dissociation rate of BART from ARL3 due to loss of avidity. Since effectors should only compete for the switches, we wanted to test if their binding can accelerate the release, and therefore the recycling, of BART. We investigated the displacement of ARL3GppNHp from immobilised BART using surface plasmon resonance (SPR); as UNC119A exhibited unspecific binding to the used chip, the homologue PDE\u03b4 was used instead. Surprisingly, ARL3 was displaced twofold faster with the addition of the ARL3 effector PDE\u03b4 supporting the possibility that, ARL3 effectors not only displace BART from ARL3-BART but also accelerate its recycling (Figure 4C).\n\n### BART accesses the primary cilium and co-localises with ARL13B\n\nBART has been reported to localise to the connecting cilia of mouse photoreceptors and has been implicated in ciliopathic disease (Davidson et al., 2013). However,\u00a0given the exclusive ciliary localisation of ARL13B (Caspary et al., 2007), BART would need to have access to the ciliary compartment to act as a co-GEF in ARL3 nucleotide exchange. Indeed, live cell imaging of ciliated NIH/3T3 and RPE cells shows that BART can access the cilia and co-localise with ARL13B (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64624/elife-64624-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative images of live NIH/3T3 (top) and RPE (bottom) cells transfected with pEGFP-C1(BART) and pmKate2-N(ARL13B) and serum starved for 24 hr. The images are maximum projections of three optical slices. Transfections and subsequent imaging was carried out at least two times. Scale bars, 5 \u03bcm; white arrows indicate cilia. (B) Fluorescence polarisation measurements of 2 \u03bcM ARL3mantGppNHp, 150 \u03bcM GppNHp, and 20 \u03bcM ARL13B18-278 in the absence (grey) and presence (orange) of 10 \u03bcM BART. GppNHp was added last to both reactions before starting measurements. (C) 2 \u03bcM ARL2mantGppNHp was mixed with 150 \u03bcM GDP, and the resultant nucleotide exchange following GDP addition was monitored in the absence (dotted green) and presence (blue) of 10 \u03bcM BART.\n\nBART binds to ARL3GTP and inhibits the dissociation of the otherwise relatively fast dissociating GTP (Figure 5B). ARL2 is a homologue of ARL3 that binds to GTP or GDP with relatively weak affinities (Veltel et al., 2008). Due to the weak binding affinities and the fast dissociation of the bound nucleotide, it has been proposed that ARL2 does not need a GEF and undergoes rapid nucleotide exchange on its own (Fansa and Wittinghofer, 2016). However, BART is able to bind to ARL2GTP and inhibit the dissociation of GTP (Figure 5C). We therefore propose that BART can maintain an active pool of ARL3GTP and ARL2GTP in the cell.\n\n## Discussion\n\nGenerally, GEFs generally accelerate the dissociation of nucleotides bound to their cognate G-proteins. GTP and GDP then compete for the nucleotide-free G-protein. In cells, where GTP is more abundant than GDP (10-fold), and in the presence of GEFs the product will be predominantly GTP-loaded and GEFs are adequate to activate their cognate G-proteins (Traut, 1994; Goody, 2014). Nevertheless, this scenario is only valid assuming that the G-protein of interest has equal or similar binding affinities to GTP and GDP. Here we show that, for ARL3 where the binding affinities for GTP and GDP differ significantly (Veltel et al., 2008), ARL13B is not able to efficiently activate it. Our study underscores the importance of taking into consideration the binding affinities of small G-proteins to GTP and GDP while investigating their mechanism of activation. We argue that using non-equivalent nucleotides in their physiological relative GTP:GDP concentrations in standard GEF assays is crucial to fully characterise and understand the mechanisms of activation.\n\nGTP binding of ARF and ARL proteins requires the release of the autoinhibition exerted by the N-terminal helix and the conformation of the interswitch region. For ARF proteins, this hurdle is circumvented by the binding of the myristoylated helix to membranes (Nawrotek et al., 2016). As previously discussed, differences in ARL lipidation mean that the activation of ARL proteins requires a different solution.\n\nOur model provides a potential answer to the question of how ARL3 nucleotide exchange can take place in the absence of a myristoyl membrane anchor and weak membrane binding. We propose that BART acts in place of lipid membranes in this process, masking the N-terminal amphipathic helix from unfavourable exposure to the aqueous surroundings, both during and after nucleotide exchange, as well as stabilising the interswitch region in the GTP conformation. The formation of a high-affinity BART-ARL3GTP complex following the reaction maintains this unfavourable conformation in solution until the binding of ARL3 effectors (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64624/elife-64624-fig6-v2.jpg)\n\nGDP-bound ARL3 (light green box) adopts a conformation in which the N-terminal amphipathic helix (red solid line) is masked from the surroundings by a hydrophobic pocket on the surface of the protein. In addition, the interswitch \u03b2-hairpin conformation (light green sold line) clashes with effector binding. In the primary cilium, the binding of BART and ARL13B (anchored to the membrane via palmitoyl moieties, blue solid lines) facilitates the formation of nucleotide-free ARL3 (grey box); the conformational changes in the N-terminal helix and interswitch regions are stabilised by their interactions with BART. The binding of GTP to ARL3 (dark green box) is favoured in the BART-ARL3 complex due to the masking of the exposed N-terminal helix and the stabilisation of the interswitch \u03b2-hairpin GTP conformation (dark green solid lines). This high-affinity BART-ARL3 complex maintains the active ARL3 in the aqueous environment, until the displacement of ARL3GTP by effectors such as UNC119 or PDE\u03b4 (brown box), releasing BART to further catalyse the ARL13B-mediated nucleotide exchange.\n\nBART and ARL13B are not known to be part of a stable multimeric complex, unlike, for example, TRAPP complexes which acts as RAB GEFs in yeast (Sacher et al., 1998; Sacher et al., 2001). We therefore propose the term co-GEF to describe the novel mode of action of BART in ARL13B-mediated activation of ARL3.\n\nThe ARL3 N-terminal helix was also shown to play a significant role in ARL3 function acting as a \u2018pocket opener\u2019 for UNC119A (Ismail et al., 2012); a simultaneous interaction with membranes and UNC119A would not be possible. Indeed, in the structure of ARL3-UNC119A, the N-terminal helix is not exposed to the solution and instead is found retracted on the surface of the protein. All these observations call into question the interaction of ARL3-GTP with cellular membranes. We expect that if ARL3-GTP interacts with membranes the interactions would be very transient and difficult to detect using conventional imaging approaches. Alternatively, ARL3 may form stronger interactions with specific membrane domains in the cell.\n\nThe finding of the co-GEF BART may provide clues to other unanswered questions of ARL GTPase activation. One such case is IFT27, which was proposed to be an ARL6GEF based on cell studies and binding to nucleotide-free ARL6. Nevertheless, IFT27 did not show GEF activity in vitro (Liew et al., 2014), which raises the possibility of the requirement of a co-GEF as in the case of ARL3.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21(DE3)CodonPlus (DE3)-RIL</td>\n      <td>Agilent Technologies</td>\n      <td>230245</td>\n      <td>Electrocompetent cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>hTERT-RPE (immortalised retinal pigmented epithelial cells; female)</td>\n      <td>ATCC</td>\n      <td>CRL-4000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>NIH/3T3 (embryonic fibroblasts)</td>\n      <td>ATCC</td>\n      <td>CRL-1658</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ARL3 (rabbit, polyclonal)</td>\n      <td>Proteintech</td>\n      <td>10961\u20131-AP</td>\n      <td>WB (3:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IRDye 680RD anti-rabbit IgG (donkey)</td>\n      <td>Li-Cor</td>\n      <td>926\u201368073</td>\n      <td>WB(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET20b(12-His-ARL13B18-278)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>N-term. His-tagged ARL13B18-278 for bacterial expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET20b(ARL317-182)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>C-term. His-tagged ARL3\u0394N for bacterial expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET20b(ARL3)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>C-term. His-tagged ARL3 for bacterial expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET20b(ARL3-thrombin-His-tag)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Untagged ARL3 for bacterial expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET20b(BART)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>C-term. His-tagged BART for bacterial expression; E. coli codon-optimised sequence</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEX-4T-1(BART)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>N-term. GST-tagged BART for bacterial expression; E. coli codon-optimised</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGEX-4T-1(UNC119A)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>N-term. GST-tagged UNC119A for bacterial expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET20b(UNC119A)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>C-term. His-tagged UNC119A for bacterial expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET20b(PDE\u03b4)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>C-term. His-tagged PDE\u03b4 for bacterial expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGFP-C1(BART)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>N-term. GFP-tagged full-length BART for mammalian expression</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pmKate2-N(ARL13B)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>C-term. mKate2-tagged full-length ARL13B for mammalian expression</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Thrombin</td>\n      <td>Sigma</td>\n      <td>T4648</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>GST capture kit</td>\n      <td>Cytiva</td>\n      <td>BR100223</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>mantGDP</td>\n      <td>BioLog Life Science Institute</td>\n      <td>M041-05</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>mantGppNHp</td>\n      <td>Jena Bioscience</td>\n      <td>NU-207</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GppNHp</td>\n      <td>Jena Bioscience</td>\n      <td>NU-401</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GTP</td>\n      <td>Sigma</td>\n      <td>G8877</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GDP</td>\n      <td>Sigma</td>\n      <td>G7127</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraFit</td>\n      <td>Erathicus software</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_Sources of all other chemicals/reagents used are listed in the relevant sections below._\n\n### Cloning, expression, and purification of proteins\n\nFull-length ARL3 and N-terminally truncated ARL317-182 (ARL3\u0394N) were cloned into pET20b (Novagen) with C-terminal 6-His tags; site-directed mutagenesis was used to insert a thrombin site upstream of the His-tag in the full-length ARL3 construct. ARL13B18-278 was cloned into pET20b with an N-terminal 12-His tag. Full-length BART was codon-optimised (Integrated DNA Technologies) and cloned into pET20b with a C-terminal 12-His tag, as well as pGEX-4T-1 (GE Healthcare) with an N-terminal GST-tag. Full-length UNC119A and PDE\u03b4 were also cloned into pET20; UNC119A was also cloned into pGEX-4T-1. pET28(NMT1) was a gift from Jim Brannigan; NMT1 was purified as previously described (Padovani et al., 2013).\n\nAll proteins were expressed in BL21-CodonPlus (DE3)-RIL competent cells (Agilent Technologies) at 16\u00b0C following induction with 250 \u03bcM Isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG).\n\nARL3 proteins were purified as previously described (K\u00fchnel et al., 2006). ARL13B18-278 was purified using a similar method with the addition of 20% glycerol to all buffers. ARL3 digestion to remove the His-tag was carried out overnight at 4\u00b0C in elution buffer in the presence of 11 U/mL thrombin (Sigma) and 2 mM CaCl2.\n\nCells expressing BART, UNC119A or PDE\u03b4 were lysed in a buffer comprising 25 mM Tris (pH 7.5), 300 mM NaCl, and 2 mM \u03b2-mercaptoethanol. His-tagged and GST-tagged proteins were purified using HisTrap HP and GSTrap HP columns (GE Healthcare), respectively. Proteins were then further purified using size exclusion chromatography and stored in a buffer containing 25 mM Tris (pH 7.5), 150 mM NaCl, and 2 mM DTT. For purification of BART, 5% glycerol was added to all buffers.\n\n### Antibodies and western blots\n\nAnti-ARL3 polyclonal antibody (Proteintech, 10961\u20131-AP) was used along with IRDye 680RD Donkey anti-Rabbit IgG secondary antibody (Li-Cor, 926\u201368073). Western blots were scanned using a Li-Cor Odyssey CLX imaging system.\n\n### Nucleotide exchange\n\nA total of 400 \u00b5M ARL3 was mixed with 2 mM GppNHp (Jena Bioscience Gmbh) and 69 U alkaline phosphatase (Roche), or with 2 mM GDP and 50 mM EDTA. For loading with mant-labelled GDP (BioLog Life Science) or GppNHp (Jena Bioscience Gmbh), ARL3 was mixed with the appropriate nucleotide at a ratio of 1:2 in the presence of 50 mM EDTA. All reactions were incubated overnight at 19\u00b0C. Reactions containing EDTA were stopped by the addition of 100 mM MgCl2. Excess unbound unlabelled or labelled nucleotides were removed using a Superdex 200 Increase column or a PD-10 de-salting column (GE Healthcare), respectively.\n\n### Myristoylation\n\nMyristoylation of ARL3 was carried out in vitro using recombinant N-myristoyl transferase 1 (NMT1) and myristoyl-Coenzyme A (Sigma, M4414) as previously described (Padovani et al., 2013).\n\n### Pull-down assays\n\nPull-down assays were typically done using 30 \u00b5g of GST-tagged BART and 30 \u00b5g ARL3 in a buffer containing 25 mM Tris (pH 7.5), 200 mM NaCl, and 2 mM DTT. Reactions were incubated for 30 min before addition to glutathione sepharose 4 FF beads (GE Healthcare, 17-5132-01) and incubated for a further 30 min. Beads were washed five times in buffer and proteins were then eluted by incubating the beads in buffer containing 20 mM glutathione for 10 min (Fisher Scientific, 11483074). All incubation steps were done at room temperature. The eluted proteins were run on SDS-PAGE and visualised using Coomassie blue.\n\n### Fluorescence polarisation-based GEF assays\n\nGEF reactions were performed in 25 mM Tris (pH 7.5), 150 mM NaCl, 5 mM MgCl2 and 2 mM DTT at room temperature. Fluorescence polarisation was measured using a Spark multimode microplate reader (Tecan) with excitation and emission wavelengths set at 366 nm and 450 nm, respectively. Typically, 2 \u00b5M ARL3mantGDP was mixed with 150 \u00b5M GppNHp and 20 \u00b5M ARL13B in the presence and absence of 20 \u00b5M BART (or as indicated in figure legends) and subsequent changes in fluorescence polarisation were monitored over time. Data analysis was carried out using GraFit (Erathicus Software).\n\n### Preparation of large unilamellar vesicles (LUVs)\n\n1,2-Dioleoyl-sn-glycero-3-phosphocholine (DOPC), 1,2-dipalmitoyl-sn-glycero-3-phosphocholine (DPPC), 1,2-dioleoyl-sn-glycero-3-[phospho-rac-(3-lysyl(1-glycerol))] (DOPG), 1,2-dipalmitoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (DPPG) and 1,2-dioleoyl-sn-glycero-3-{[N-5-amino-1- (carboxylpentyl)iminodiacetic acid]succinyl} (nickel salt) (DOGS-NTA-Ni2+) were purchased from Avanti Polar Lipids. Cholesterol was purchased from Sigma Aldrich.\n\n10:5:45:5:20 molar ratio of DOPC:DOPG:DPPC:DPPG:Cholesterol or 10:10:5:45:5:20 molar ratio of DOGS-NTA:DOPC:DOPG:DPPC:DPPG:Cholesterol lipid mixtures in chloroform were dried under N2 stream and rehydrated in a buffer containing 5 mM MgCl2, 150 mM NaCl, and 25 mM Tris\u22c5HCl (pH 7.5). The suspension was then subjected to ten cycles of freezing and thawing (at 65\u00b0C) and passed 20 times through a 200 nm filter (Whatman), using the Avanti Mini-Extruder (Avanti Polar Lipids), at 65\u00b0C.\n\n### Cosedimentation assays\n\n2 \u03bcM GppNHp- and GDP-loaded ARL3 was incubated with increasing concentrations of DOPC:DOPG:DPPC:DPPG:cholesterol liposomes for 30 min at room temperature in a buffer containing 20 mM Tris (pH 7.5), 150 mM NaCl, 5 mM MgCl2 and 2 mM DTT. Samples were then spun at 125\u00a0\u00d7\u00a0103\u00a0\u00d7 g at 10\u00b0C for 1.5 hr in a TLA-100 rotor (Beckman Coulter). The supernatants were then transferred to new tubes and the pellets resuspended in the aforementioned buffer to an equivalent volume as the supernatants. Equal sample volumes of all pellets and supernatants were analysed by SDS-PAGE.\n\n### Surface plasmon resonance (SPR)\n\nSPR experiments were carried out on a Biacore 8K system (Cytiva) using a CM5 sensor chip (Cytiva), along with a GST capture kit (Cytiva) following manufacturer instructions. The system was maintained at 25\u00b0C, with a flow rate of 30 \u03bcL/min. GST or GST-BART was immobilised on the chip, giving a response of about 100 units. 640 nM ARL3GppNHp was then injected for 120 s, followed by nine injections of buffer (20 mM Tris (pH 7.5), 150 mM NaCl, 5 mM MgCl2, 0.02% triton X-100, and 2 mM DTT) or 2 \u03bcM PDE\u03b4. The sensor chip was regenerated between cycles with two 30 s injections of 100 mM glycine (pH 2.0) followed by a wash step. The data was analysed using GraFit (Erathicus Software), in which exponential decay was fitted to a single exponential equation with an offset.\n\n### Cell line culture, transfection, and live-cell imaging\n\nNIH/3T3 and RPE cells (both lines newly purchased from ATCC and certified as mycoplasma-free) were grown in DMEM and DMEM:F12 media (Thermo Fisher Scientific), respectively, at 37\u00b0C and 5% CO2. Culture media was supplemented with 10% fetal bovine serum, 1% penicillin-streptomycin, and 2 mM L-glutamine (ThermoFisher Scientific). A total of 2 \u00d7 105 cells were seeded in six-well plates and grown to 75% confluency prior to transfection with lipofectamine 2000 reagent (ThermoFisher Scientific). Cells were then incubated for another 24 hr and transferred to eight well ibiTreated \u03bc-Slides (Ibidi) with 2\u00a0\u00d7\u00a0105 cells/chamber. Following adhesion, cells were washed with PBS and serum starved in 0.5% serum-media until imaging 24 hr later.\n\nFluorescence microscopy was performed using an LSM 880 (Zeiss) fitted with a Plan-Apochromat 63x/1.4NA oil DIC M27, with the samples being placed in a temperature-controlled chamber set at 37\u00b0C and 5% CO2. Three 1 \u03bcm optical sections with a 0.5 \u03bcm interval were taken of the primary cilium, using ARL13B-mKate2 as a marker, and maximally projected.\n",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "57a58f02-4744-4003-8ba7-3bc83ac69073",
+      "submission_id": "c790c01b-f6be-4fc1-b849-7f21963ae3ef",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64624.sa1](https://doi.org/10.7554/eLife.64624.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nArl3 is an important G-protein functioning in ciliary targeting of lipidated cargoes. Arl3 exists in an inactive-GDP loaded form and an active GTP-loaded form. It was previously shown that Arl13B, a ciliary membrane associated protein, is the GEF for Arl3 required for its activation. The authors provide important insights into Arl3 activation by showing that the protein BART acts as a co-GEF that together with Arl13B mediates the efficient activation of Arl3. This represents a significant advance in our understanding of the cycle of Arl3-mediated ciliary delivery of lipid-modified cargo proteins.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"ARL3 activation requires the co-GEF BART and effector-mediated turnover\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Suzanne Pfeffer as the Senior and Reviewing Editor. The reviewers (in alphabetical order) were: Christopher Fromme, Aymelt Itzen and Esben Lorentzen.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nSmall GTPases are general regulators of intracellular signaling. The small GTPase Arl3 is thought to regulate signaling processes in cilia. Like other small GTPases, Arl3 is inactive when bound to GDP and active when binding to GTP. Guanine nucleotide exchange factors (GEFs) are required to exchange the tightly bound GDP for GTP. In this work, the authors aim to characterize the role of the protein BART in the nucleotide exchange reaction. Based on fluorescence polarization experiments that monitor the release of fluorescently labeled GDP from a complex with Arl3, the activity of BART is characterized. The authors find that full GEF-activity is achieved only in the presence of the previously reported Arl3-GEF Arl13B. The authors conclude that BART acts as a co-GEF operating in concert with Arl13B.\n\nThe reviewers are experts and suggested a number of experiments to improve the quality of the story as follows.\n\nEssential revisions:\n\nAs described in detail below, the authors should provide more quantitation: they should determine reaction rates and also provide statistics for replicates. Important will be to use a single nucleotide for the measurements as chemically distinct nucleotides will have different affinities (see below).\n\nThey should improve Figure 1 by providing more experiments, including GDP/GDP exchange and also the EDTA exchange reactions.\n\nThey should improve Figure 3 by also testing reduced concentration of Arl13.\n\nThey should improve the Discussion.\n\nHere are more Specific comments to guide your next steps:\n\n1) The authors often make (semi)quantitative statements based on their fluorescence curves and nucleotide release assays, yet they do not provide definite numbers that could be obtained from fitting the results (e.g. Figure 1A and B). This should be performed in order to make the effects of the experiments comparable to each other. In fact, I am not sure that there is an actual difference in nucleotide release rates in Figure 1A and B: The degree of exchange is certainly different for mantGDP and mantGppNHp and this can be explained by the different affinities since GDP binds ~50x more tightly to Arl3 than GppNHp. However, looking at the time it takes for the reactions to reach a plateau, they appear to do so at similar rates. A quantification and the use of equivalent nucleotides would be important to reliably estimate the effects.\n\n2) The Discussion should include a section describing the mechanism of action of other small GTPase GEFs with respect to the dependence on co-GEFs. In particular, the authors should discriminate between the definition of GEFs composed of several subunits and co-GEFs. What is the definition of a co-GEF? Is BART the first example of a co-GEF?\n\n3) If they authors are trying to reproduce physiological GTP/GDP ratios, they should make sure that also unlabeled GDP is available in the buffer at its approximate physiological concentration.\n\n4) I am concerned about the use of non-equivalent nucleotides in the nucleotide-release assays. E.g., in Figure 1A the authors displace mant-GDP with GppNHp. Given that the affinities for GDP and GTP/GppNHp differ by a factor of ~50, equivalent nucleotides should be used for the displacement (e.g. displacing mant-GDP with GDP). Otherwise, the degree of exchange may be dependent on the relative affinities of GDP and GTP for the GTPase. Furthermore, full exchange/displacement should be indicated for every experiment (e.g. by adding EDTA and thus accelerating exchange).\n\n5) Introduction: Describe lipidation of Arl. Explain what the physiological function of GDI is.\n\n6) Introduction: \"In addition, the binder of ARL2 (BART) has been previously identified as an effector of ARL2 and ARL3\": Please provide reference for this claim.\n\n7) Results: \"The addition of recombinant ARL13B18-278\u2026\": Please explain why this construct has been used for the experiments. It is mentioned here for the first time. Provide reference to this construct if applicable.\n\n8) Results \"GEFs are known not to favour the binding to, and hence dissociation of, one nucleotide-bound form of their cognate GTPase over another.\" Please provide reference for this claim.\n\n9) Results: \"Palmitoylated ARL13B is difficult to obtain due to its instability\": Please explain in which sense Arl13B is unstable.\n\n10) Results: \"The addition of recombinant ARL13B18-278 to GDP-loaded ARL3 in the presence of up to 250-fold\u2026\" Please indicate properly when mant-nucleotides have been used for monitoring exchange reactions. In this instance, the use of mant-nucleotides is not indicated explicitly.\n\n11) Figure 2A: The quality of the depiction should be improved. In particular, the mix in ribbon (zig-zag loops) and cartoon representation is difficult to grasp. Also, light green and green depictions do not sufficiently discriminate the structures from each other.\n\n12) Figure 2C: Statistical errors and test of statistical significance should be included.\n\n13) Figure 3A: The input should be shown in order to evaluate potential changes of the proteins in the course of the experiment. It appears as if Arl3 is not pure, is this true? Furthermore, there is an additional band in the sample GDP+Alk. Phosphatase with GST-BART that disappears in the other lanes. Why is this? I also think that bar diagrams from such experiments should contain error bars. From the Coomassie-stained gel, there appears to be almost no difference in the intensities of Arl3 (if Arl3 is the band with lowest Mw), yet there are large differences in the WB. How can the authors explain this observation?\n\n14) Figure 3B: There appears to be a discrepancy with the figure legend since the figure mentions GppNHp but the text refers to GDP.\n\n15) Figure 3C-H: Why have the experiments been conducted at differing BART and Arl13B concentrations? In my opinion, the concentrations should be kept comparable as much as possible (except for titrations, of course). Otherwise, the observed differences cannot be compared directly.\n\n16) Figure 5 appears to contain data. As such, it should not be part of the Discussion but part of the Results section.\n\n17) Discussion: \"Due to the weak binding affinities and the fast dissociation of the bound nucleotide, it has been proposed that ARL2 does not need a GEF and undergoes rapid nucleotide exchange on its own.\": Please provide reference for this claim.\n\n18) There should be no \"data not shown\" in the manuscript.\n\nReviewer #2:\n\nIt would be nice to see some experimental evidence for the Arl3-Arl13B-BART complex modeled in Figure 3G. Alternatively, the authors could design point mutations to disrupt the ARL3-BART interaction and show an effect using their GEF assay.\n\nReviewer #3:\n\n1) A full understanding of the \"physiological\" nucleotide dependence of the exchange experiments shown in Figure 1 would include two additional comparisons:\n\nA) The experiment in Figure 1A should be repeated to show what happens if unlabeled GDP is added at time 0, as this addresses the question of whether GDP can efficiently replace mantGDP. Judging by the result shown in Figure 3E, GDP is not able to efficiently replace mantGDP. This result should be discussed in the first part of the Results section to more clearly explain that the kinetic observations of nucleotide preference are due to an inability of Arl13 to stimulate release GDP. Otherwise, the impression given from the results in Figure 1 is that GDP might be able to displace either mantGDP or mantGMP-PNP in the presence of Arl13.\n\nB) For some GTPases, GMP-PNP does not bind nearly as well as GTP. The unlabeled GMP-PNP experiments in Figure 1 should therefore be repeated using unlabeled GTP.\n\n2) In Figure 3, the GEF experiments are described as \"multiple turnover\" because BART is 1/20th the concentration of Arl3. However, Arl13 is equimolar to Arl3. Are similar results obtained when Arl13 is also used at the 1/20th concentration? This will provide even more context for understanding how Arl13 and BART function together as GEF and \"co-GEF\".\n",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "91b1efd9-9bce-4dc8-a90b-268535d91ac7",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C1",
+      "claim": "ARL3 is a ciliopathy G-protein which regulates the ciliary trafficking of several lipid-modified proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The ADP-ribosylation factor-like 3 (ARL3) is a ciliopathy G-protein which regulates the ciliary trafficking of several lipid-modified proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known fact about ARL3's function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "488ef300-8f22-4d53-b792-768c560575db",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C2",
+      "claim": "ARL3 is activated by its guanine exchange factor (GEF) ARL13B via an unresolved mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "ARL3 is activated by its guanine exchange factor (GEF) ARL13B via an unresolved mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement acknowledges existing knowledge while noting the mechanism is not fully understood.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "a8a713c1-d3ac-426f-94b7-a9c718ca00da",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C3",
+      "claim": "BART is described as an ARL3 effector which has also been implicated in ciliopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "BART is described as an ARL3 effector which has also been implicated in ciliopathies, although the role of its ARL3 interaction is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior literature describing BART as an effector.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "7bfcc012-9ee9-48e9-8966-7578593b07f3",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C4",
+      "claim": "At physiological GTP:GDP levels, human ARL3GDP is weakly activated by ARL13B.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that, at physiological GTP:GDP levels, human ARL3GDP is weakly activated by ARL13B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "9c9df524-7474-4384-aba3-dfcbbbc254dc",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C5",
+      "claim": "BART interacts with nucleotide-free ARL3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, BART interacts with nucleotide-free ARL3 and, in concert with ARL13B, efficiently activates ARL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pull-down assays shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "9ca31c13-658b-49b4-8b1e-35745984f3da",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C6",
+      "claim": "BART, in concert with ARL13B, efficiently activates ARL3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, BART interacts with nucleotide-free ARL3 and, in concert with ARL13B, efficiently activates ARL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by nucleotide exchange assays in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "9352e8ae-70c6-445d-bc18-c12ac6a10185",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C7",
+      "claim": "BART binds ARL3GTP and inhibits GTP dissociation, thereby stabilising the active G-protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, BART binds ARL3GTP and inhibits GTP dissociation, thereby stabilising the active G-protein; the binding of ARL3 effectors then releases BART.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence polarisation data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "327e724f-ed6e-4b0e-8332-a97c887bde6b",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C8",
+      "claim": "The binding of ARL3 effectors releases BART from ARL3GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, BART binds ARL3GTP and inhibits GTP dissociation, thereby stabilising the active G-protein; the binding of ARL3 effectors then releases BART.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SPR experiments in Figure 4C and nucleotide exchange assays in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "64d3dfed-2209-48c9-aaec-3cf0061c9a32",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C9",
+      "claim": "BART accesses the primary cilium and colocalises with ARL13B.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, using live cell imaging, we show that BART accesses the primary cilium and colocalises with ARL13B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by live cell imaging data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "5ba4aa36-60fd-4169-8d8d-c96d782b8e88",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C10",
+      "claim": "BART functions as a bona fide co-GEF for ARL3.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose a model wherein BART functions as a bona fide co-GEF for ARL3 and maintains the active ARL3GTP, until it is recycled by ARL3 effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by multiple experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "95e15a99-e14f-423b-9e00-b0da29824b44",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C11",
+      "claim": "BART maintains the active ARL3GTP until it is recycled by ARL3 effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose a model wherein BART functions as a bona fide co-GEF for ARL3 and maintains the active ARL3GTP, until it is recycled by ARL3 effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing BART stabilizes ARL3GTP and is displaced by effectors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "d10d8f6f-3cbd-4209-b181-480eaf59c1a7",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C12",
+      "claim": "Several ADP-ribosylation factor-like (ARF-like) proteins, such as ARL3 and ARL6, play important roles in ciliary biogenesis and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Several ADP-ribosylation factor-like (ARF-like) proteins, such as ARL3 and ARL6, have been found to play important roles in ciliary biogenesis and homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "e240edd8-430a-4959-9ec3-8bf787b98ba0",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C13",
+      "claim": "Defects in ARL3 and ARL6 can result in various ciliopathies as ciliary formation and/or composition becomes compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in these proteins can therefore result in various ciliopathies as ciliary formation and/or composition becomes compromised (Alkanderi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Alkanderi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "d02ed6b9-0203-4bc3-b31f-ec2090bfae66",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C14",
+      "claim": "ARL3 and its homologue ARL2 bind the phosphodiesterase six subunit \u03b4 (PDE\u03b4) and the uncoordinated paralogues UNC119A and UNC119B.",
+      "claim_type": "EXPLICIT",
+      "source": "ARL3, and its homologue ARL2, bind the phosphodiesterase six subunit \u03b4 (PDE\u03b4) and the uncoordinated paralogues UNC119A and UNC119B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "82cbbc22-8beb-489c-9e0a-d5de2bb85653",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C15",
+      "claim": "PDE\u03b4 and the UNC119 paralogues bind to and are involved in the trafficking of prenylated and myristoylated proteins, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "PDE\u03b4 and the UNC119 paralogues bind to and are involved in the trafficking of prenylated and myristoylated proteins, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "c626e00a-6e3a-43ce-8ab5-d2c57aeabddb",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C16",
+      "claim": "PDE\u03b4 and UNC119 paralogues have been named GDI-like solubilising factors due to their functional and structural similarities to RHO GDP-dissociation inhibitors (GDIs).",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their functional and structural similarities to RHO GDP-dissociation inhibitors (GDIs), they have been named GDI-like solubilising factors (Chandra et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chandra et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "ace39710-16c1-4856-818b-0ac48d4708d0",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C17",
+      "claim": "ARL3 acts as a release factor for PDE\u03b4 and UNC119 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "ARL3 acts as a release factor for these proteins, and is therefore crucial for the trafficking of their lipid-modified cargo (Ismail, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ismail, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "377f7be8-4141-4316-bd85-7c80e9e6cf94",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C18",
+      "claim": "ARL3 is crucial for the trafficking of lipid-modified cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "ARL3 acts as a release factor for these proteins, and is therefore crucial for the trafficking of their lipid-modified cargo (Ismail, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ismail, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "9c5d3a4a-4ff7-4578-adec-f2d9cc145fd5",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C19",
+      "claim": "BART has been previously identified as an effector of ARL2 and ARL3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the binder of ARL2 (BART) has been previously identified as an effector of ARL2 and ARL3 (Sharer and Kahn, 1999; Veltel et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sharer and Kahn, 1999 and Veltel et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "19697853-7183-4eb9-9229-62184fedb10c",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C20",
+      "claim": "BART has been implicated in the ciliopathic disorder retinitis pigmentosa, indicating a role in primary cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Although its functions remain unclear, BART has been implicated in the ciliopathic disorder retinitis pigmentosa, indicating a role in primary cilia (Davidson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Davidson et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "53681389-0e87-4859-964b-e51d8e67137c",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C21",
+      "claim": "The activity of ARL proteins is fine-tuned by the action of guanine nucleotide exchange factors (GEFs) and GTPase-activating proteins (GAPs).",
+      "claim_type": "EXPLICIT",
+      "source": "As with other GTPases, the activity of ARL proteins is fine-tuned by the action of guanine nucleotide exchange factors (GEFs) and GTPase-activating proteins (GAPs); these accelerate nucleotide exchange and GTP hydrolysis, respectively, thereby modulating G-protein activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about GTPase regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "e9bd0555-b277-4af9-8e65-0f38acc798cb",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C22",
+      "claim": "GEFs accelerate nucleotide exchange and GAPs accelerate GTP hydrolysis, thereby modulating G-protein activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As with other GTPases, the activity of ARL proteins is fine-tuned by the action of guanine nucleotide exchange factors (GEFs) and GTPase-activating proteins (GAPs); these accelerate nucleotide exchange and GTP hydrolysis, respectively, thereby modulating G-protein activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about GTPase regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "8771d80d-b832-4dbc-82d9-b45252d23bae",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C23",
+      "claim": "The regulation of ARL3 is critical for ciliary function.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation of ARL3 is critical for ciliary function, as both its reported GEF, ARL13B (Alkanderi et al., 2018; Gotthardt et al., 2015), and GAP, RP2 (Schwahn et al., 1998; Veltel et al., 2008), have been implicated in ciliopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations linking ARL3 regulators to ciliopathies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "0b2a08b5-cb47-473f-b7b9-e330df2b4fac",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C24",
+      "claim": "ARL13B is the reported GEF for ARL3.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation of ARL3 is critical for ciliary function, as both its reported GEF, ARL13B (Alkanderi et al., 2018; Gotthardt et al., 2015), and GAP, RP2 (Schwahn et al., 1998; Veltel et al., 2008), have been implicated in ciliopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Alkanderi et al., 2018 and Gotthardt et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "ce8e1bb6-d502-49c5-8e29-4b8614222bbd",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C25",
+      "claim": "RP2 is the reported GAP for ARL3.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation of ARL3 is critical for ciliary function, as both its reported GEF, ARL13B (Alkanderi et al., 2018; Gotthardt et al., 2015), and GAP, RP2 (Schwahn et al., 1998; Veltel et al., 2008), have been implicated in ciliopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schwahn et al., 1998 and Veltel et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "5bb4b452-1399-4874-b6d5-d39807761903",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C26",
+      "claim": "Both ARL13B and RP2 have been implicated in ciliopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation of ARL3 is critical for ciliary function, as both its reported GEF, ARL13B (Alkanderi et al., 2018; Gotthardt et al., 2015), and GAP, RP2 (Schwahn et al., 1998; Veltel et al., 2008), have been implicated in ciliopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "66a21090-1818-4111-a58b-b791b62c4249",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C27",
+      "claim": "The ARL13B mechanism of action is not fully understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ARL13B mechanism of action is not fully understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "c158153d-5a25-41dd-999a-7508592fd9d9",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C28",
+      "claim": "The reported ARL3-ARL13B complex structure has not elucidated the interactions between the GEF and the ARL3 nucleotide-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "While it fits the profile of the ARL3GEF owing to its ciliary localisation, and in vitro GEF activity, the reported ARL3-ARL13B complex structure has not elucidated the interactions between the GEF and the ARL3 nucleotide-binding site (Gotthardt et al., 2015), necessary for nucleotide exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gotthardt et al., 2015 and represents a gap in understanding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "659ff9f3-538a-4a14-aa43-fbd3d1e37147",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C29",
+      "claim": "Human ARL3GEF is a two-component factor comprising ARL13B and BART.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report and describe the human ARL3GEF as a two-component factor comprising ARL13B and BART, both proteins being able to bind nucleotide-free ARL3 and co-localise to the primary cilium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by multiple experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "7ec0c2b2-6097-4cbd-9ca0-7026be777cbe",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C30",
+      "claim": "Both ARL13B and BART are able to bind nucleotide-free ARL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report and describe the human ARL3GEF as a two-component factor comprising ARL13B and BART, both proteins being able to bind nucleotide-free ARL3 and co-localise to the primary cilium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pull-down assays in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "6ad4c917-6f6c-4a09-a9d0-d82dc6d9a95c",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C31",
+      "claim": "ARL13B and BART co-localise to the primary cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report and describe the human ARL3GEF as a two-component factor comprising ARL13B and BART, both proteins being able to bind nucleotide-free ARL3 and co-localise to the primary cilium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by live cell imaging in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "b3837a7a-a30b-410a-91e2-a87f1ca49668",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C32",
+      "claim": "Individual proteins ARL13B and BART failed to efficiently exchange ARL3GDP to ARL3GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the individual proteins failed to efficiently exchange ARL3GDP to ARL3GTP, together, BART and ARL13B were able to completely exchange ARL3 at an accelerated rate of over 500-fold compared to the intrinsic exchange rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by nucleotide exchange assays in Figures 1B and 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "fcac44fb-1df3-4d15-88ab-d7fe3fb9e4c8",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C33",
+      "claim": "Together, BART and ARL13B were able to completely exchange ARL3 at an accelerated rate of over 500-fold compared to the intrinsic exchange rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the individual proteins failed to efficiently exchange ARL3GDP to ARL3GTP, together, BART and ARL13B were able to completely exchange ARL3 at an accelerated rate of over 500-fold compared to the intrinsic exchange rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by nucleotide exchange assays in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "8e18bf7c-6ab2-4226-b12c-2bed4c58e6c6",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C34",
+      "claim": "BART binds to ARL3GTP and inhibits GTP dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to binding to the nucleotide-free ARL3, BART binds to ARL3GTP and inhibits GTP dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence polarisation data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "ee89a045-2d5a-43af-897a-f3a7046d2fb8",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C35",
+      "claim": "ARL3 effectors displace BART from the BART-ARL3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that ARL3 effectors displace BART from the BART-ARL3 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SPR data in Figure 4C and nucleotide exchange assays in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "9d74de4c-eae4-49f3-bf6c-01397d3c81ec",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C36",
+      "claim": "GEFs generally reduce the binding affinities of small G-proteins to nucleotides, thereby allowing the fast replacement of the bound GDP with GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "GEFs generally reduce the binding affinities of small G-proteins to nucleotides, thereby allowing the fast replacement of the bound GDP with GTP, which is more abundant in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about GEF mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "9fa0f2cc-9c15-4e92-a2dc-caabd2d6c84b",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C37",
+      "claim": "GTP is more abundant than GDP in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GEFs generally reduce the binding affinities of small G-proteins to nucleotides, thereby allowing the fast replacement of the bound GDP with GTP, which is more abundant in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cellular nucleotide concentrations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "db1ad3f3-ded2-4d0a-8965-85dbbdedf5ea",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C38",
+      "claim": "GEFs are known not to favour the binding to, and hence dissociation of, one nucleotide-bound form of their cognate GTPase over another.",
+      "claim_type": "EXPLICIT",
+      "source": "GEFs are known not to favour the binding to, and hence dissociation of, one nucleotide-bound form of their cognate GTPase over another (Goody, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Goody, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "f4613216-e757-4cf0-bd19-6dd521f515ed",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C39",
+      "claim": "The physiological concentration of GTP is approximately 10 times that of GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "The physiological concentration of GTP is approximately 10 times that of GDP, although this ratio can vary depending on the cell type and status (Traut, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Traut, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "66dd0c1d-7316-47e7-b719-86952c25fb21",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C40",
+      "claim": "The GTP:GDP ratio can vary depending on the cell type and status.",
+      "claim_type": "EXPLICIT",
+      "source": "The physiological concentration of GTP is approximately 10 times that of GDP, although this ratio can vary depending on the cell type and status (Traut, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Traut, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "fd8275a9-537d-415e-a2a8-7456a45073e1",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C41",
+      "claim": "For a G-protein with similar binding affinities to GDP and GTP, a 10-fold excess of GTP should result in 90% loading of GTP at equilibrium, assuming no GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For a G-protein with similar binding affinities to GDP and GTP, a 10-fold excess of GTP should result in 90% loading of GTP at equilibrium, assuming no GTP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical calculation based on equilibrium principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "b03ed503-8ac0-4b08-bdf8-2a797a60472a",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C42",
+      "claim": "The ARL3-binding affinity for GDP is 50 times that of the GTP analogue GppNHp (0.06 nM and 3 nM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the case of ARL3, it is reported that the ARL3-binding affinity for GDP is 50 times that of the GTP analogue GppNHp (0.06 nM and 3 nM, respectively [Veltel et al., 2008]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Veltel et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "23cedaa7-48f0-4c1b-8be9-d8ad677a59a6",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C43",
+      "claim": "The difference in affinity between GDP and GppNHp would nullify the 10-fold excess in GTP and would result in a majority of GDP-loaded ARL3 at equilibrium even in the presence of GEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in affinity would nullify the 10-fold excess in GTP and would result in a majority of GDP-loaded ARL3 at equilibrium even in the presence of GEFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the reported binding affinities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "54b61169-f618-4151-a7d9-c450aeb921f6",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C44",
+      "claim": "In the presence of ARL13B and under physiological relative concentrations of GTP:GDP, ARL3 is weakly activated at equilibrium and the majority of ARL3 (>50%) is loaded with GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, in the presence of ARL13B and under physiological relative concentrations of GTP:GDP, ARL3 is weakly activated at equilibrium and the majority of ARL3 (>50%) is loaded with GDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by fluorescence polarisation data in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "b224b31d-1064-4fee-9955-c7eaa339c78a",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C45",
+      "claim": "ARL13B was able to accelerate the dissociation of GDP approximately 8.5-times in the presence of unlabelled GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the conditions used, ARL13B was able to accelerate the dissociation of GDP approximately 8.5-times in the presence of unlabelled GDP and 25-times in the presence of GppNHp compared to the intrinsic rate with GDP alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "96028607-0508-4f90-bcaa-b7bcc6398510",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C46",
+      "claim": "ARL13B was able to accelerate the dissociation of GDP 25-times in the presence of GppNHp compared to the intrinsic rate with GDP alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the conditions used, ARL13B was able to accelerate the dissociation of GDP approximately 8.5-times in the presence of unlabelled GDP and 25-times in the presence of GppNHp compared to the intrinsic rate with GDP alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "b212f4c3-82a2-4bf8-8c14-369fd73d9351",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C47",
+      "claim": "The higher activity of ARL13B in the presence of GTP compared to GDP is consistent with previous reports.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the higher activity of ARL13B in the presence of GTP compared to GDP (Gotthardt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gotthardt et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "b528b84c-c0e9-4158-a104-cce60ad1579a",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C48",
+      "claim": "GppNHp was not able to completely displace GDP despite being in 75-fold excess.",
+      "claim_type": "EXPLICIT",
+      "source": "GppNHp, as expected, was not able to completely displace GDP despite being in 75-fold excess (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "5e696373-8612-48f0-98c9-6d43d87fd267",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C49",
+      "claim": "ARF subfamily proteins are characterised by the presence of an interswitch toggle and an N-terminal extension, usually an amphipathic helix.",
+      "claim_type": "EXPLICIT",
+      "source": "ARF subfamily proteins are characterised by the presence of an interswitch toggle and an N- terminal extension, usually an amphipathic helix (Pasqualato et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pasqualato et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "1692e81a-502f-473f-b5bb-daf8999d8193",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C50",
+      "claim": "The interswitch toggle is located between switch I and switch II and undergoes a nucleotide-dependent movement.",
+      "claim_type": "EXPLICIT",
+      "source": "The interswitch toggle is located between switch I and switch II and undergoes a nucleotide-dependent movement, which, in the GDP-bound state, allows the retraction of the N-terminal extension on the surface of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about ARF protein structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "72cab022-d7d0-4a30-9c0e-2ef9ebf3a26f",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C51",
+      "claim": "In the GDP-bound state, the interswitch toggle allows the retraction of the N-terminal extension on the surface of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The interswitch toggle is located between switch I and switch II and undergoes a nucleotide-dependent movement, which, in the GDP-bound state, allows the retraction of the N-terminal extension on the surface of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about ARF protein structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "2e08f447-4574-478b-8f2d-f1567abd592e",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C52",
+      "claim": "In the presence of membranes and upon binding to GTP, the interswitch toggle displaces the retracted N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of membranes and upon binding to GTP, the interswitch toggle displaces the retracted N-terminus (Antonny et al., 1997; Goldberg, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Antonny et al., 1997 and Goldberg, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "1aa4798d-873f-4c16-bf59-740318c88792",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C53",
+      "claim": "The displacement of the amphipathic helix is not possible in the absence of membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the displacement of the amphipathic helix is not possible in the absence of membranes; the helix therefore acts as a hasp, locking ARFs in the GDP-bound form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about ARF protein regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "f8711776-cc1c-47f5-bacd-19576552c5cc",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C54",
+      "claim": "The N-terminal helix acts as a hasp, locking ARFs in the GDP-bound form.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the displacement of the amphipathic helix is not possible in the absence of membranes; the helix therefore acts as a hasp, locking ARFs in the GDP-bound form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about ARF protein regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "0f04a1e2-4e19-4282-a576-fc11586716b9",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C55",
+      "claim": "ARFGEFs are not functional in the absence of membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, ARFGEFs are not functional in the absence of membranes (B\u00e9raud-Dufour et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to B\u00e9raud-Dufour et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "4f9db591-d48c-42d1-8bb8-707f1a31e24a",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C56",
+      "claim": "Comparing the structures of GTP- and GDP-bound ARL3 shows that it undergoes similar conformational changes as in ARF proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the structures of GTP- and GDP-bound ARL3 shows that it undergoes similar conformational changes as in ARF proteins (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "4d91feb5-3acb-4456-9fc6-503ceea214f9",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C57",
+      "claim": "In contrast to the full-length protein, ARL3\u0394N undergoes significant nucleotide exchange upon the addition of ARL13B.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the full-length protein, ARL3\u0394N undergoes significant nucleotide exchange upon the addition of ARL13B (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "5fc261ce-d0dc-4c62-b361-07cb9f852e79",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C58",
+      "claim": "The ARL3 amphipathic helix acts as a hasp, which inhibits ARL13B-mediated nucleotide exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the notion of the ARL3 amphipathic helix acting as a hasp, which inhibits ARL13B-mediated nucleotide exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of full-length and truncated ARL3 nucleotide exchange rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "1c7787e9-824d-4ecd-89d4-d41ae50af546",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C59",
+      "claim": "ARL3 differs from ARF proteins in the reported lack of myristoylation of its N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "ARL3 differs from ARF proteins in the reported lack of myristoylation of its N-terminus, which implies weak affinity to membranes (Fansa and Wittinghofer, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fansa and Wittinghofer, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "72763063-788f-41c6-980c-f614886e7ee6",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C60",
+      "claim": "The lack of myristoylation of ARL3 N-terminus implies weak affinity to membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "ARL3 differs from ARF proteins in the reported lack of myristoylation of its N-terminus, which implies weak affinity to membranes (Fansa and Wittinghofer, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of myristoylation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "bf5fd6cf-0a6c-4e1c-aac0-dbfd45614334",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C61",
+      "claim": "Attempts to carry out in vitro N-myristoyl transferase 1 (NMT1)-catalysed myristoylation of ARL3 did not result in any detected myristoylated N-terminal ARL3 fragments as analysed by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Attempts to carry out in vitro N-myristoyl transferase 1 (NMT1)-catalysed myristoylation of ARL3 (Stephen et al., 2018) also did not result in any detected myristoylated N-terminal ARL3 fragments as analysed by mass spectrometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "a796c9f4-fca9-48f7-8d0b-dea28e9d959f",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C62",
+      "claim": "Both GDP- and GppNHp-bound ARL3 show weak binding to liposomes, with ARL3GppNHp being stronger.",
+      "claim_type": "EXPLICIT",
+      "source": "Both GDP- and GppNHp-bound ARL3 show weak binding, with ARL3GppNHp being stronger (Figure 2C), which is most likely due to the better availability of the N-terminal helix in the GTP-bound conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by liposome-binding assay data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "930baf11-6805-4b93-8d85-d53aeab496a5",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C63",
+      "claim": "The stronger binding of ARL3GppNHp to liposomes is most likely due to the better availability of the N-terminal helix in the GTP-bound conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both GDP- and GppNHp-bound ARL3 show weak binding, with ARL3GppNHp being stronger (Figure 2C), which is most likely due to the better availability of the N-terminal helix in the GTP-bound conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "b497ead3-0d03-46f7-a799-00d4c7402608",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C64",
+      "claim": "Under the experimental conditions used, nucleotide exchange was not enhanced by the presence of liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the experimental conditions used, however, nucleotide exchange was not enhanced (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figures 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "66dfe40c-d499-454d-a12f-1d9536902ec5",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C65",
+      "claim": "ARL13B itself is palmitoylated in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ARL13B itself is palmitoylated in cells (Cevik et al., 2010), and its interaction with lipid membranes as well as ARL3 may result in an increased local concentration of the latter on the membrane surface, driving ARL3 N-terminal interaction with lipids and enhancing the dissociation of bound GDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cevik et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "ff042b50-9a0e-4d95-b261-347cfedf80af",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C66",
+      "claim": "Dissociation of ARL3-bound mantGDP is similar in the presence and absence of Ni-chelating liposomes, despite the strong liposomal binding of His-tagged ARL13B18-278.",
+      "claim_type": "EXPLICIT",
+      "source": "Dissociation of ARL3-bound mantGDP is similar in the presence and absence of Ni-chelating liposomes, despite the strong liposomal binding of His-tagged ARL13B18-278 (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide exchange and liposome-binding data in Figures 2F and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "251671d7-b1e0-412f-b96d-2d43d18c028a",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C67",
+      "claim": "Under experimental settings, ARL3 nucleotide exchange in all liposome reactions was much less compared to that of ARL3\u0394N, indicating that the liposomes used failed to release the N-terminal helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, under our experimental settings, ARL3 nucleotide exchange in all liposome reactions was much less compared to that of ARL3\u0394N(Figure 2B), indicating that the liposomes used failed to release the N-terminal helix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on comparison of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "f6b44346-8772-44f2-a0b9-976eb98ca8eb",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C68",
+      "claim": "ARL13B-mediated nucleotide exchange of the full-length ARL3 may require another non-lipid component to the reaction, which is likely to involve the release of the ARL3 N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "ARL13B-mediated nucleotide exchange of the full-length ARL3 may therefore require another non-lipid component to the reaction, which is likely to involve the release of the ARL3 N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "0ac319ad-96e7-445a-8d22-27c985a77474",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C69",
+      "claim": "The release of the ARL3 amphipathic helix may be carried out by one of its interactors.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that the release of the ARL3 amphipathic helix may be carried out by one of its interactors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "ae5bcc2d-53c1-4ca0-afed-4312b56f737e",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C70",
+      "claim": "A protein involved in guanine nucleotide exchange must be able to bind to nucleotide-free ARL3.",
+      "claim_type": "EXPLICIT",
+      "source": "This protein would be involved in the guanine nucleotide exchange reaction and therefore must be able to bind to nucleotide-free ARL3 (Cherfils and Chardin, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cherfils and Chardin, 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "333e281c-8bab-43d1-8f78-4ac3e8152056",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C71",
+      "claim": "UNC119A shows strong specificity toward ARL3GppNHp as expected for an effector.",
+      "claim_type": "EXPLICIT",
+      "source": "UNC119A shows strong specificity toward ARL3GppNHp as expected for an effector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pull-down assay data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "c4ca0970-12d2-499b-ad1e-a90cfaa74003",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C72",
+      "claim": "BART showed weak but consistent binding to nucleotide-free ARL3 (1:10 compared to ARL3GppNHp binding), identifying it as a potential GEF candidate.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, BART showed weak but consistent binding to nucleotide-free ARL3 (1:10 compared to ARL3GppNHp binding), identifying it as a potential GEF candidate (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pull-down assay data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "bd25f34c-3f3d-4663-9d49-5d6199ccc6bb",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C73",
+      "claim": "The reported structure of the ARL3 homologue ARL2-GTP in complex with BART shows BART-ARL2 N-terminal helix interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "This is further supported by the reported structure of the ARL3 homologue ARL2-GTP in complex with BART which shows BART-ARL2 N-terminal helix interaction (Zhang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "713f117e-e83d-46ef-8dec-ff5cc88929f2",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C74",
+      "claim": "Similar interactions were reported for the structure of ARL3 in complex with the related protein BART-like 1 (BARTL1).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar interactions were reported for the structure of ARL3 in complex with the related protein BART-like 1 (BARTL1) (Lokaj et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lokaj et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "2cc99dbd-8cf8-4252-8b62-821556ba16d1",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C75",
+      "claim": "The addition of BART to the ARL13B-mediated reaction results in a significant amount of mantGDP being displaced.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore wanted to test the effect of BART on ARL3 activation; the addition of BART to the ARL13B-mediated reaction is twofold: a significant amount of mantGDP is displaced, and the ARL3 nucleotide exchange rate is markedly increased (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "66fd4d48-c148-4e5d-9bd9-f2c1e337cd43",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C76",
+      "claim": "The addition of BART to the ARL13B-mediated reaction results in the ARL3 nucleotide exchange rate being markedly increased.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore wanted to test the effect of BART on ARL3 activation; the addition of BART to the ARL13B-mediated reaction is twofold: a significant amount of mantGDP is displaced, and the ARL3 nucleotide exchange rate is markedly increased (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "290e6c3b-df05-46eb-9a6f-a2cbaba7ad4a",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C77",
+      "claim": "Titrating in BART to the ARL13B-mediated reaction resulted in a maximum increase of over 500-fold that of the intrinsic rate of GDP dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Titrating in BART to the ARL13B-mediated reaction resulted in a maximum increase of over 500-fold that of the intrinsic rate of GDP dissociation (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "c74243d7-11b3-42c6-9aac-4da65c803a34",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C78",
+      "claim": "BART was able to accelerate the nucleotide exchange approximately 70-fold using ARL3mantGDP and excess unlabelled GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether this effect occurs due to BART binding to ARL3GTP or to the nucleotide-free form (Figure 3A), the GEF assay was repeated using ARL3mantGDP and excess unlabelled GDP. BART was able to accelerate the nucleotide exchange approximately 70-fold (Figure 3B), supporting that BART has bona fide GEF activity together with ARL13B, thereby acting as a 'co-GEF'.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "ae844d47-d2bc-4224-b512-7b17bddde9e1",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C79",
+      "claim": "BART has bona fide GEF activity together with ARL13B, thereby acting as a 'co-GEF'.",
+      "claim_type": "EXPLICIT",
+      "source": "BART was able to accelerate the nucleotide exchange approximately 70-fold (Figure 3B), supporting that BART has bona fide GEF activity together with ARL13B, thereby acting as a 'co-GEF'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the nucleotide exchange data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "59f39e09-f1e4-4ffe-a96f-90788c68ec5f",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C80",
+      "claim": "The addition of ARL3 effectors UNC119A and PDE\u03b4 to the ARL13B-mediated reaction failed to enhance the nucleotide exchange of ARL3mantGDP, despite their high affinity to ARL3GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the addition of ARL3 effectors UNC119A and PDE\u03b4 to the ARL13B-mediated reaction failed to enhance the nucleotide exchange of ARL3mantGDP, despite their high affinity to ARL3GTP (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "be7fb66c-a2b2-4e11-91e8-89bb3475b515",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C81",
+      "claim": "Superimposition of the ARL13B-ARL3 structure with that modelled for the ARL3-BART complex reveals no steric clashes and that a ternary complex is structurally feasible.",
+      "claim_type": "EXPLICIT",
+      "source": "Superimposition of the ARL13B-ARL3 structure with that modelled for the ARL3-BART complex reveals no steric clashes and that a ternary complex is structurally feasible (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "b7b41430-6684-4d4c-b845-3f29fbe21297",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C82",
+      "claim": "ARL3GDP, similar to ARF proteins, is inhibited by the interswitch \u03b2-hairpin, which adopts a conformation that blocks GTP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the autoinhibition exerted by the N-terminal helix, ARL3GDP, similar to ARF proteins, is further inhibited by the interswitch \u03b2-hairpin, which adopts a conformation that blocks GTP binding (Greasley et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Greasley et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "31a803c4-7c0e-45d2-8ced-cd5e6bb07cbf",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C83",
+      "claim": "GTP binding requires a conformational shift of the interswitch \u03b2-hairpin which then occupies the pocket vacated by the N-terminal helix.",
+      "claim_type": "EXPLICIT",
+      "source": "GTP binding requires a conformational shift of the interswitch \u03b2-hairpin which then occupies the pocket vacated by the N-terminal helix (Nawrotek et al., 2016; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Nawrotek et al., 2016 and structural data in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "57c14a3c-2e36-4d24-9969-4fdb22ba2519",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C84",
+      "claim": "These conformational changes must be mediated by the GEF for ARL3 activation to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes must be mediated by the GEF for ARL3 activation to occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on GEF mechanism knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "11b6f6fc-7dc3-4470-a27a-b5e709da524a",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C85",
+      "claim": "In the reported ARL13B-ARL3 crystal structure, ARL13B does not interact with the ARL3 N-terminal helix or the interswitch region.",
+      "claim_type": "EXPLICIT",
+      "source": "In the reported ARL13B-ARL3 crystal structure, ARL13B does not interact with the ARL3 N-terminal helix or the interswitch region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the reported crystal structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "e8f1f4fa-b4c1-4ea7-8c5f-99b6197ff2a2",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C86",
+      "claim": "BART is the only ARL3 interactor that can interact with both the N-terminal helix and switches including the interswitch region.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the reported crystal structures of ARL3 in complex with its identified interactors (Hillig et al., 2000; Ismail et al., 2012; Hanzal-Bayer, 2002; Gotthardt et al., 2015) shows that BART is the only ARL3 interactor that can interact with both the N-terminal helix and switches including the interswitch region (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of multiple crystal structures and shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "88240137-22cc-43fb-9a2e-bf1d68c4a4fd",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C87",
+      "claim": "BART shows stronger binding to the GTP-loaded and nucleotide-free ARL3 compared to the GDP-bound form.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, BART shows stronger binding to the GTP-loaded and nucleotide-free ARL3 compared to the GDP-bound form (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pull-down assay data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "5b7b0b75-7744-430a-89da-cd982cfb63b9",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C88",
+      "claim": "The presence of BART is able to accelerate and increase the nucleotide exchange of ARL3mantGDP with unlabelled GDP, excluding the necessity of binding to the product, ARL3GTP, to accelerate the dissociation of the bound GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of BART is able to accelerate and increase the nucleotide exchange of ARL3mantGDP with unlabelled GDP, excluding the necessity of binding to the product, ARL3GTP, to accelerate the dissociation of the bound GDP (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "a2b6bbb9-9efe-4e23-9e7d-dc11b008c072",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C89",
+      "claim": "Despite the absence of the helix, BART is still able to accelerate the exchange of ARL3\u0394N, although a similar amount of ARL3\u0394N is exchanged compared with ARL13B alone.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the involvement of the BART interactions with the switches and the interswitch regions, BART was added to ARL13B-mediated nucleotide exchange of ARL3\u0394NmantGDP. Despite the absence of the helix, BART is still able to accelerate the exchange, although a similar amount of ARL3\u0394N is exchanged compared with ARL13B alone (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "52f39d15-d739-4c46-a560-fbb7a06b77da",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C90",
+      "claim": "BART carries out a novel mode of action as a co-GEF in the ARL13B-mediated reaction by releasing the two layers of autoinhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, BART carries out this novel mode of action as a co-GEF in the ARL13B-mediated reaction by releasing the two layers of autoinhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "e44dda97-e235-43d6-ba9f-7e47f1fddecf",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C91",
+      "claim": "The high affinity of BART to ARL3GTP gives rise to the possibility of product inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The high affinity of BART to ARL3GTP gives rise to the possibility of product inhibition of the former.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed high affinity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "e688f102-fae6-4f63-bc56-5ebdc7ee34e9",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C92",
+      "claim": "Under multiple turnover conditions with limiting concentrations of BART, the presence of excess GppNHp resulted in rapid quenching of the reaction and a small amount of exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, under multiple turnover conditions, where limiting concentrations of BART were added to the ARL13B-mediated reaction, this becomes evident. The presence of excess GppNHp resulted in rapid quenching of the reaction and a small amount of exchange, as the initial production of ARL3GTP leads to the formation of a complex with BART that inhibits the turnover of the reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple turnover experiment data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "41335179-c6d6-4b1d-bb3c-4a1ad47748a3",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C93",
+      "claim": "The initial production of ARL3GTP leads to the formation of a complex with BART that inhibits the turnover of the reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of excess GppNHp resulted in rapid quenching of the reaction and a small amount of exchange, as the initial production of ARL3GTP leads to the formation of a complex with BART that inhibits the turnover of the reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the multiple turnover experiment data in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "cc8bf22a-b081-4cc3-9bb7-46498f4565f0",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C94",
+      "claim": "Presence of excess GDP did not result in the same inhibition, which is to be expected as BART would have low affinity to the produced ARL3GDP, and therefore no inhibition occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, presence of excess GDP did not result in the same inhibition, which is to be expected as BART would have low affinity to the produced ARL3GDP, and therefore no inhibition occurs (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple turnover experiment data in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "6152e039-77d3-4186-abbb-ae1497129389",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C95",
+      "claim": "Other ARL3 effectors such as UNC119A and PDE\u03b4 also exhibit a comparably high affinity to ARL3GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "As other ARL3 effectors such as UNC119A and PDE\u03b4 also exhibit a comparably high affinity to ARL3GTP (Veltel et al., 2008), we hypothesised that product inhibition of BART can be relieved by the presence of ARL3 effectors which would displace BART from the ARL3GTP-bound complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Veltel et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "51522950-8bd5-4852-b424-981fe10d4504",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C96",
+      "claim": "Product inhibition of BART can be relieved by the presence of ARL3 effectors which would displace BART from the ARL3GTP-bound complex.",
+      "claim_type": "EXPLICIT",
+      "source": "As other ARL3 effectors such as UNC119A and PDE\u03b4 also exhibit a comparably high affinity to ARL3GTP (Veltel et al., 2008), we hypothesised that product inhibition of BART can be relieved by the presence of ARL3 effectors which would displace BART from the ARL3GTP-bound complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "59b6af25-07d2-4660-a7e1-4fd520356f90",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C97",
+      "claim": "The addition of UNC119A in equal concentrations as ARL3 to a GEF assay with limiting amounts of ARL13B and BART resulted in greater ARL3 exchange compared to that obtained in the absence of UNC119A.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of UNC119A in equal concentrations as ARL3 to a GEF assay with limiting amounts of ARL13B and BART resulted in greater ARL3 exchange compared to that obtained in the absence of UNC119A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "0ceee400-d1ae-4b78-918a-c127a262d33b",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C98",
+      "claim": "The enhancement of the exchange by UNC119A was only observed when all three proteins, GEF, co-GEF, and effector, were added, confirming that UNC119A displaces BART from the ARL3-BART complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This enhancement of the exchange was only observed when all three proteins, GEF, co-GEF, and effector, were added, confirming that UNC119A displaces BART from the ARL3-BART complex (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide exchange data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "7dc73259-11b7-4137-a562-a4d7d7d48018",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C99",
+      "claim": "BART interacts with ARL3 via the switches and the N-terminal helix simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "BART interacts with ARL3 via the switches and the N-terminal helix simultaneously (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "d58d5fb5-e0bb-4dd9-9ec3-603c2f1745e9",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C100",
+      "claim": "Both interactions are essential for high-affinity interaction of BART with the ARL3 homologue ARL2.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that both interactions are essential for high-affinity interaction of BART with the ARL3 homologue ARL2 (Zhang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "bf7cf390-7a0f-4122-9b77-5ae49e55d369",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C101",
+      "claim": "The inhibition of one binding/interacting site should increase the dissociation rate of BART from ARL3 due to loss of avidity.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the possibility of an avidity effect of the two binding sites. In this case, the inhibition of one binding/interacting site should increase the dissociation rate of BART from ARL3 due to loss of avidity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the concept of avidity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "d1427a87-01ec-4920-a320-6f732e54540e",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C102",
+      "claim": "ARL3 was displaced twofold faster with the addition of the ARL3 effector PDE\u03b4.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, ARL3 was displaced twofold faster with the addition of the ARL3 effector PDE\u03b4 supporting the possibility that, ARL3 effectors not only displace BART from ARL3-BART but also accelerate its recycling (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SPR data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "d0cedaff-396c-4ade-baf6-12b7e4db5121",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C103",
+      "claim": "ARL3 effectors not only displace BART from ARL3-BART but also accelerate its recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, ARL3 was displaced twofold faster with the addition of the ARL3 effector PDE\u03b4 supporting the possibility that, ARL3 effectors not only displace BART from ARL3-BART but also accelerate its recycling (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SPR data in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "a1b00623-a2a0-4b3a-a195-fbb95bd4e8b6",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C104",
+      "claim": "BART has been reported to localise to the connecting cilia of mouse photoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "BART has been reported to localise to the connecting cilia of mouse photoreceptors and has been implicated in ciliopathic disease (Davidson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Davidson et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "e272a11c-dd4d-47e4-809a-c655669ce598",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C105",
+      "claim": "Given the exclusive ciliary localisation of ARL13B, BART would need to have access to the ciliary compartment to act as a co-GEF in ARL3 nucleotide exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the exclusive ciliary localisation of ARL13B (Caspary et al., 2007), BART would need to have access to the ciliary compartment to act as a co-GEF in ARL3 nucleotide exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the proposed co-GEF model and citation to Caspary et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "0b4161f7-7a16-40c2-84ed-a909f274a150",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C106",
+      "claim": "Live cell imaging of ciliated NIH/3T3 and RPE cells shows that BART can access the cilia and co-localise with ARL13B.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, live cell imaging of ciliated NIH/3T3 and RPE cells shows that BART can access the cilia and co-localise with ARL13B (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by live cell imaging data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "6f774dac-14c2-4c70-b35c-043ef81d9840",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C107",
+      "claim": "BART binds to ARL3GTP and inhibits the dissociation of the otherwise relatively fast dissociating GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "BART binds to ARL3GTP and inhibits the dissociation of the otherwise relatively fast dissociating GTP (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence polarisation data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "ed145ae0-7328-4c22-9e16-794aca610267",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C108",
+      "claim": "ARL2 is a homologue of ARL3 that binds to GTP or GDP with relatively weak affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "ARL2 is a homologue of ARL3 that binds to GTP or GDP with relatively weak affinities (Veltel et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Veltel et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "4a44f104-a239-4445-b81b-edb45f993bb5",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C109",
+      "claim": "Due to the weak binding affinities and the fast dissociation of the bound nucleotide, it has been proposed that ARL2 does not need a GEF and undergoes rapid nucleotide exchange on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the weak binding affinities and the fast dissociation of the bound nucleotide, it has been proposed that ARL2 does not need a GEF and undergoes rapid nucleotide exchange on its own (Fansa and Wittinghofer, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fansa and Wittinghofer, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "416e63f1-fcd2-47d0-ac90-1aa5ac5bef60",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C110",
+      "claim": "BART is able to bind to ARL2GTP and inhibit the dissociation of GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, BART is able to bind to ARL2GTP and inhibit the dissociation of GTP (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence polarisation data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "6b9ebbf6-26d5-424a-9424-e4b13088cacb",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C111",
+      "claim": "BART can maintain an active pool of ARL3GTP and ARL2GTP in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that BART can maintain an active pool of ARL3GTP and ARL2GTP in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "8153a82a-4df4-417e-afdb-2386ccc5726f",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C112",
+      "claim": "In cells, where GTP is more abundant than GDP (10-fold), and in the presence of GEFs the product will be predominantly GTP-loaded and GEFs are adequate to activate their cognate G-proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, where GTP is more abundant than GDP (10-fold), and in the presence of GEFs the product will be predominantly GTP-loaded and GEFs are adequate to activate their cognate G-proteins (Traut, 1994; Goody, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Traut, 1994 and Goody, 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "0d1d3986-3cd4-4299-9884-4f1687735210",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C113",
+      "claim": "This scenario is only valid assuming that the G-protein of interest has equal or similar binding affinities to GTP and GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, this scenario is only valid assuming that the G-protein of interest has equal or similar binding affinities to GTP and GDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the conditions for typical GEF function.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "b9cc5889-0025-4097-b754-03cc4f173cd8",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C114",
+      "claim": "For ARL3 where the binding affinities for GTP and GDP differ significantly, ARL13B is not able to efficiently activate it.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that, for ARL3 where the binding affinities for GTP and GDP differ significantly (Veltel et al., 2008), ARL13B is not able to efficiently activate it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "08d02a45-466f-470c-8d4f-493c08354e56",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C115",
+      "claim": "Using non-equivalent nucleotides in their physiological relative GTP:GDP concentrations in standard GEF assays is crucial to fully characterise and understand the mechanisms of activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that using non-equivalent nucleotides in their physiological relative GTP:GDP concentrations in standard GEF assays is crucial to fully characterise and understand the mechanisms of activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "77e1f513-30a4-4f8e-b69a-29bad1ba5143",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C116",
+      "claim": "GTP binding of ARF and ARL proteins requires the release of the autoinhibition exerted by the N-terminal helix and the conformation of the interswitch region.",
+      "claim_type": "EXPLICIT",
+      "source": "GTP binding of ARF and ARL proteins requires the release of the autoinhibition exerted by the N-terminal helix and the conformation of the interswitch region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about ARF/ARL protein activation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "8d6ad6a0-0660-4a02-82e8-69bb3079f168",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C117",
+      "claim": "For ARF proteins, the hurdle of autoinhibition is circumvented by the binding of the myristoylated helix to membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "For ARF proteins, this hurdle is circumvented by the binding of the myristoylated helix to membranes (Nawrotek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Nawrotek et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "f234a02c-d77e-45fb-8d86-add9006e1038",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C118",
+      "claim": "Differences in ARL lipidation mean that the activation of ARL proteins requires a different solution.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously discussed, differences in ARL lipidation mean that the activation of ARL proteins requires a different solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differences between ARF and ARL proteins.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "845aebc0-d80e-483e-ae6c-3c50e99aa228",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C119",
+      "claim": "BART acts in place of lipid membranes in the ARL3 activation process, masking the N-terminal amphipathic helix from unfavourable exposure to the aqueous surroundings.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model provides a potential answer to the question of how ARL3 nucleotide exchange can take place in the absence of a myristoyl membrane anchor and weak membrane binding. We propose that BART acts in place of lipid membranes in this process, masking the N-terminal amphipathic helix from unfavourable exposure to the aqueous surroundings, both during and after nucleotide exchange, as well as stabilising the interswitch region in the GTP conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "99e0aed2-2920-423b-b238-2a3793e53241",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C120",
+      "claim": "BART stabilises the interswitch region in the GTP conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that BART acts in place of lipid membranes in this process, masking the N-terminal amphipathic helix from unfavourable exposure to the aqueous surroundings, both during and after nucleotide exchange, as well as stabilising the interswitch region in the GTP conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "3fa9fef2-3eb6-4e72-b55b-0f20c983868c",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C121",
+      "claim": "The formation of a high-affinity BART-ARL3GTP complex following the reaction maintains this unfavourable conformation in solution until the binding of ARL3 effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of a high-affinity BART-ARL3GTP complex following the reaction maintains this unfavourable conformation in solution until the binding of ARL3 effectors (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the proposed model illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "80c13a32-453a-4f0b-9fc5-2a83fc720d20",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C122",
+      "claim": "BART and ARL13B are not known to be part of a stable multimeric complex.",
+      "claim_type": "EXPLICIT",
+      "source": "BART and ARL13B are not known to be part of a stable multimeric complex, unlike, for example, TRAPP complexes which acts as RAB GEFs in yeast (Sacher et al., 1998; Sacher et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge with citations to TRAPP complexes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "fd046a3a-5f54-4eba-86e0-b7389bcd7f48",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C123",
+      "claim": "TRAPP complexes act as RAB GEFs in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "BART and ARL13B are not known to be part of a stable multimeric complex, unlike, for example, TRAPP complexes which acts as RAB GEFs in yeast (Sacher et al., 1998; Sacher et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sacher et al., 1998 and Sacher et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "f80b3c26-e3ce-4c03-a564-5cafed3982d7",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C124",
+      "claim": "The term co-GEF describes the novel mode of action of BART in ARL13B-mediated activation of ARL3.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose the term co-GEF to describe the novel mode of action of BART in ARL13B-mediated activation of ARL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed terminology based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "9f9abe67-f42d-40e2-a013-bff2697363f3",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C125",
+      "claim": "The ARL3 N-terminal helix plays a significant role in ARL3 function acting as a 'pocket opener' for UNC119A.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARL3 N-terminal helix was also shown to play a significant role in ARL3 function acting as a 'pocket opener' for UNC119A (Ismail et al., 2012); a simultaneous interaction with membranes and UNC119A would not be possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ismail et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "81d12289-c87a-47d7-a4ae-851a014430c9",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C126",
+      "claim": "A simultaneous interaction with membranes and UNC119A would not be possible.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARL3 N-terminal helix was also shown to play a significant role in ARL3 function acting as a 'pocket opener' for UNC119A (Ismail et al., 2012); a simultaneous interaction with membranes and UNC119A would not be possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "905aead6-d1ad-4a5d-8728-f400c21f01d4",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C127",
+      "claim": "In the structure of ARL3-UNC119A, the N-terminal helix is not exposed to the solution and instead is found retracted on the surface of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the structure of ARL3-UNC119A, the N-terminal helix is not exposed to the solution and instead is found retracted on the surface of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the ARL3-UNC119A complex.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "af7c5c64-da9e-4fb7-9f8d-2db8b1ba110c",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C128",
+      "claim": "If ARL3-GTP interacts with membranes the interactions would be very transient and difficult to detect using conventional imaging approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that if ARL3-GTP interacts with membranes the interactions would be very transient and difficult to detect using conventional imaging approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "79aeeb23-58b6-42d0-8bfb-5d47da6d9c84",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C129",
+      "claim": "ARL3 may form stronger interactions with specific membrane domains in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, ARL3 may form stronger interactions with specific membrane domains in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about alternative possibilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "e9d426fe-d98b-4198-af0a-6e31e039ef9a",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C130",
+      "claim": "IFT27 was proposed to be an ARL6GEF based on cell studies and binding to nucleotide-free ARL6.",
+      "claim_type": "EXPLICIT",
+      "source": "One such case is IFT27, which was proposed to be an ARL6GEF based on cell studies and binding to nucleotide-free ARL6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior research on IFT27.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "6f8bf543-5a8d-4d53-ada3-73f17af91bcb",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C131",
+      "claim": "IFT27 did not show GEF activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, IFT27 did not show GEF activity in vitro (Liew et al., 2014), which raises the possibility of the requirement of a co-GEF as in the case of ARL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liew et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "5da6ff65-e432-482f-b5c9-d1afe05f6415",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "claim_id": "C132",
+      "claim": "The lack of in vitro GEF activity of IFT27 raises the possibility of the requirement of a co-GEF as in the case of ARL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, IFT27 did not show GEF activity in vitro (Liew et al., 2014), which raises the possibility of the requirement of a co-GEF as in the case of ARL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings of the current study.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6e0e7f4a-33a4-4ba0-9370-ef489ceeb205",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "At physiological GTP:GDP ratios (10:1), ARL13B alone weakly activates ARL3, with the majority of ARL3 remaining GDP-bound at equilibrium. ARL13B accelerates GDP dissociation only 8.5-fold with excess GDP and 25-fold with excess GppNHp, and GppNHp cannot fully displace GDP even at 75-fold excess.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C32, C44-C46, C48, and C114 are directly supported by fluorescence polarization data in Figure 1A-B showing weak ARL3 activation by ARL13B alone under physiological nucleotide ratios. The quantitative rate measurements and equilibrium binding data provide strong experimental evidence for this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "9039caff-61a3-4df7-a2c9-b66daa249b30",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ARL3 has a 50-fold higher binding affinity for GDP (0.06 nM) compared to GppNHp (3 nM), which nullifies the physiological 10-fold GTP:GDP ratio and explains why ARL3 remains predominantly GDP-bound even in the presence of GEFs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 cites prior work (Veltel et al., 2008) for the binding affinity values, while C43 is a logical inference from these values. Claims C39-C41 provide the physiological context. The reasoning is sound and consistent with the experimental observations in Figure 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "50c85f61-b4ea-420c-976d-48d671a7837a",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The N-terminal amphipathic helix of ARL3 acts as an autoinhibitory 'hasp' that prevents nucleotide exchange. N-terminally truncated ARL3\u0394N undergoes significant nucleotide exchange with ARL13B, while full-length ARL3 does not, and structural comparison shows ARL3 undergoes similar conformational changes to ARF proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are directly supported by nucleotide exchange data comparing full-length and truncated ARL3 in Figure 2B. Claim C56 is supported by structural analysis in Figure 2A. The data clearly demonstrate the inhibitory role of the N-terminal helix.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "1df8261e-6c76-4299-b398-e912186365eb",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ARL3 is not myristoylated in vitro and shows only weak binding to liposomes. Liposomes do not enhance ARL13B-mediated nucleotide exchange of ARL3, indicating that membrane binding does not release the N-terminal helix autoinhibition under the experimental conditions tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62, C64, C66-C67 are supported by experimental data in Figures 2C-G including myristoylation attempts, liposome binding assays, and nucleotide exchange experiments with various liposome compositions. The negative results are clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "7b679192-d7fb-4419-baf9-7235cca4715d",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BART binds to nucleotide-free ARL3 with weak but consistent affinity (approximately 1:10 compared to ARL3GppNHp binding), identifying it as a potential GEF component.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C30, and C72 are directly supported by pull-down assay data in Figure 3A showing BART binding to nucleotide-free ARL3. The quantification shows weak but reproducible binding, distinguishing BART from typical effectors like UNC119A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "fb3ac14c-1c40-4710-bc06-752c54b74746",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "BART and ARL13B together efficiently activate ARL3, achieving over 500-fold acceleration of GDP dissociation compared to the intrinsic rate. BART alone with ARL13B accelerates exchange approximately 70-fold even with excess GDP, demonstrating bona fide co-GEF activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C33, C75-C79 are strongly supported by nucleotide exchange assays in Figures 3B-C showing dramatic rate enhancement when both BART and ARL13B are present. The quantitative measurements and controls (GDP vs GppNHp) provide robust evidence for the co-GEF mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "8290d8d1-620b-414f-b145-34fad354a69a",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "BART functions as a co-GEF by releasing two layers of ARL3 autoinhibition: the N-terminal helix and the interswitch \u03b2-hairpin. BART is the only ARL3 interactor that can simultaneously bind both the N-terminal helix and the switch regions, and it accelerates exchange even of ARL3\u0394N lacking the helix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C86, C89-C90 are supported by structural analysis in Figure 3E comparing multiple ARL3 complexes, and by nucleotide exchange data in Figure 3F showing BART effects on ARL3\u0394N. The mechanistic model is well-supported by the data, though the precise molecular details remain to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "4f93f7c3-b86e-4561-af0d-46f9b4e3d410",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "BART binds to ARL3GTP and inhibits GTP dissociation, thereby stabilizing the active G-protein state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C34, and C107 are directly supported by fluorescence polarization data in Figure 5B showing that BART prevents dissociation of the otherwise rapidly dissociating GTP from ARL3. The data clearly demonstrate BART's role in stabilizing ARL3GTP.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "bd2096b4-de64-4495-8505-e7750296973b",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ARL3 effectors (UNC119A and PDE\u03b4) displace BART from the ARL3GTP-BART complex and accelerate BART recycling. Addition of UNC119A to limiting GEF/co-GEF reactions enhances ARL3 exchange, and PDE\u03b4 accelerates ARL3 displacement from immobilized BART by twofold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C35, C97-C98, C102-C103 are supported by nucleotide exchange data in Figure 4B and SPR data in Figure 4C. The experiments demonstrate that effectors not only compete with BART but actively accelerate the recycling process, supporting the proposed catalytic cycle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "5412be0e-4848-4fe6-b041-34bce163c682",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Under multiple turnover conditions with limiting BART, excess GppNHp causes rapid reaction quenching due to product inhibition by the ARL3GTP-BART complex, while excess GDP does not cause the same inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 are supported by multiple turnover experiment data in Figure 4A. The differential effects of GDP vs GppNHp clearly demonstrate product inhibition by the ARL3GTP-BART complex, consistent with BART's high affinity for ARL3GTP.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "38f076e6-30ff-4149-bc9d-1a9b8bec0a14",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "BART accesses the primary cilium and colocalizes with ARL13B in both NIH/3T3 and RPE cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C31, and C106 are directly supported by live cell imaging data in Figure 5A showing clear colocalization of fluorescently tagged BART and ARL13B in cilia. The imaging was performed in two different cell types, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "53d1389d-6886-4759-b022-7f6547347f50",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose a model wherein BART functions as a bona fide co-GEF for ARL3, maintaining active ARL3GTP by masking the N-terminal helix and stabilizing the interswitch region until ARL3 is recycled by effectors. This represents a novel two-component GEF system comprising ARL13B and BART.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C29, C111, C119-C121 represent the integrated model supported by multiple lines of evidence: nucleotide exchange kinetics, structural analysis, binding studies, and cellular localization. While the model is well-supported, some mechanistic details (e.g., precise order of events, ternary complex structure) remain to be fully validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "664f4571-a758-477f-8307-a23738453365",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "BART binds to ARL2GTP and inhibits GTP dissociation, suggesting BART can maintain an active pool of both ARL3GTP and ARL2GTP in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C111 are supported by fluorescence polarization data in Figure 5C showing BART inhibits GTP dissociation from ARL2. This extends the findings from ARL3 to its homolog ARL2, though the physiological significance requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "d3132f0d-dc7f-4f48-92c4-23079c3b23ff",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Structural superimposition reveals no steric clashes between ARL13B-ARL3 and ARL3-BART complexes, indicating a ternary complex is structurally feasible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by structural modeling shown in Figure 3E. While the modeling suggests feasibility, direct experimental evidence of a ternary complex (e.g., co-immunoprecipitation, crystal structure) would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "de7cfa4d-6428-4933-8c05-35f7ad506b55",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors argue that using physiological GTP:GDP ratios in GEF assays is crucial for fully characterizing activation mechanisms, particularly for G-proteins with non-equivalent nucleotide binding affinities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C115 is a methodological recommendation well-supported by the study's findings. The data clearly show that standard GEF assays using only GTP analogs would miss the weak activation of ARL3 by ARL13B alone, highlighting the importance of this approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "7c3960d5-9e29-407b-8445-8521d64d937c",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context: ARL3 is a ciliopathy G-protein regulating ciliary trafficking; it is activated by ARL13B via an unresolved mechanism; BART is an ARL3 effector implicated in ciliopathies; and both the GEF (ARL13B) and GAP (RP2) for ARL3 are linked to ciliopathies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C12-C28 are background knowledge claims supported by appropriate citations to prior literature. These establish the context and motivation for the study but do not represent new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "8f28dff4-7698-42bb-85f9-38f7421f949e",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "General mechanistic principles of GEF function, nucleotide ratios in cells, and ARF/ARL protein structure and regulation, drawn from established literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41, C49-C55, C82-C84, C112-C113, C116-C117 represent established knowledge about GTPase regulation and ARF/ARL protein mechanisms, appropriately cited from the literature. These provide the conceptual framework for interpreting the new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "a2e5c67e-5677-4235-932c-cf153b4a6db7",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Speculative claims and hypotheses: ARL3 activation may require a non-lipid component; the N-terminal helix release may be carried out by an interactor; effectors may relieve BART product inhibition; ARL3-membrane interactions may be transient; and IFT27 may require a co-GEF like ARL3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69, C96, C128-C129, C132 are explicitly speculative or represent hypotheses for future investigation. While reasonable based on the data, they lack direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    },
+    {
+      "id": "04e01f48-c7bb-49e2-94f8-e231418c730a",
+      "content_id": "86bdd6a6-faaa-41f9-8761-cfc17b77ea65",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Supporting structural and functional information from prior studies: ARL2-BART and ARL3-BARTL1 structures show N-terminal helix interactions; BART localizes to photoreceptor cilia; BART-ARL2 requires both binding sites for high affinity; and the ARL3 N-terminal helix acts as a 'pocket opener' for UNC119A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74, C100, C104, C122-C123, C125 cite prior structural and functional studies that support the current work's interpretations. These are appropriately referenced and provide important context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:36:58.206755Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7bfcc012-9ee9-48e9-8966-7578593b07f3",
+      "result_id": "6e0e7f4a-33a4-4ba0-9370-ef489ceeb205"
+    },
+    {
+      "claim_id": "b3837a7a-a30b-410a-91e2-a87f1ca49668",
+      "result_id": "6e0e7f4a-33a4-4ba0-9370-ef489ceeb205"
+    },
+    {
+      "claim_id": "54b61169-f618-4151-a7d9-c450aeb921f6",
+      "result_id": "6e0e7f4a-33a4-4ba0-9370-ef489ceeb205"
+    },
+    {
+      "claim_id": "b224b31d-1064-4fee-9955-c7eaa339c78a",
+      "result_id": "6e0e7f4a-33a4-4ba0-9370-ef489ceeb205"
+    },
+    {
+      "claim_id": "96028607-0508-4f90-bcaa-b7bcc6398510",
+      "result_id": "6e0e7f4a-33a4-4ba0-9370-ef489ceeb205"
+    },
+    {
+      "claim_id": "b528b84c-c0e9-4158-a104-cce60ad1579a",
+      "result_id": "6e0e7f4a-33a4-4ba0-9370-ef489ceeb205"
+    },
+    {
+      "claim_id": "b9cc5889-0025-4097-b754-03cc4f173cd8",
+      "result_id": "6e0e7f4a-33a4-4ba0-9370-ef489ceeb205"
+    },
+    {
+      "claim_id": "b03ed503-8ac0-4b08-bdf8-2a797a60472a",
+      "result_id": "9039caff-61a3-4df7-a2c9-b66daa249b30"
+    },
+    {
+      "claim_id": "23cedaa7-48f0-4c1b-8be9-d8ad677a59a6",
+      "result_id": "9039caff-61a3-4df7-a2c9-b66daa249b30"
+    },
+    {
+      "claim_id": "f4613216-e757-4cf0-bd19-6dd521f515ed",
+      "result_id": "9039caff-61a3-4df7-a2c9-b66daa249b30"
+    },
+    {
+      "claim_id": "66dd0c1d-7316-47e7-b719-86952c25fb21",
+      "result_id": "9039caff-61a3-4df7-a2c9-b66daa249b30"
+    },
+    {
+      "claim_id": "fd8275a9-537d-415e-a2a8-7456a45073e1",
+      "result_id": "9039caff-61a3-4df7-a2c9-b66daa249b30"
+    },
+    {
+      "claim_id": "4d91feb5-3acb-4456-9fc6-503ceea214f9",
+      "result_id": "50c85f61-b4ea-420c-976d-48d671a7837a"
+    },
+    {
+      "claim_id": "5fc261ce-d0dc-4c62-b361-07cb9f852e79",
+      "result_id": "50c85f61-b4ea-420c-976d-48d671a7837a"
+    },
+    {
+      "claim_id": "4f9db591-d48c-42d1-8bb8-707f1a31e24a",
+      "result_id": "50c85f61-b4ea-420c-976d-48d671a7837a"
+    },
+    {
+      "claim_id": "bf5fd6cf-0a6c-4e1c-aac0-dbfd45614334",
+      "result_id": "1df8261e-6c76-4299-b398-e912186365eb"
+    },
+    {
+      "claim_id": "a796c9f4-fca9-48f7-8d0b-dea28e9d959f",
+      "result_id": "1df8261e-6c76-4299-b398-e912186365eb"
+    },
+    {
+      "claim_id": "b497ead3-0d03-46f7-a799-00d4c7402608",
+      "result_id": "1df8261e-6c76-4299-b398-e912186365eb"
+    },
+    {
+      "claim_id": "ff042b50-9a0e-4d95-b261-347cfedf80af",
+      "result_id": "1df8261e-6c76-4299-b398-e912186365eb"
+    },
+    {
+      "claim_id": "251671d7-b1e0-412f-b96d-2d43d18c028a",
+      "result_id": "1df8261e-6c76-4299-b398-e912186365eb"
+    },
+    {
+      "claim_id": "9c9df524-7474-4384-aba3-dfcbbbc254dc",
+      "result_id": "7b679192-d7fb-4419-baf9-7235cca4715d"
+    },
+    {
+      "claim_id": "7ec0c2b2-6097-4cbd-9ca0-7026be777cbe",
+      "result_id": "7b679192-d7fb-4419-baf9-7235cca4715d"
+    },
+    {
+      "claim_id": "c4ca0970-12d2-499b-ad1e-a90cfaa74003",
+      "result_id": "7b679192-d7fb-4419-baf9-7235cca4715d"
+    },
+    {
+      "claim_id": "9ca31c13-658b-49b4-8b1e-35745984f3da",
+      "result_id": "fb3ac14c-1c40-4710-bc06-752c54b74746"
+    },
+    {
+      "claim_id": "fcac44fb-1df3-4d15-88ab-d7fe3fb9e4c8",
+      "result_id": "fb3ac14c-1c40-4710-bc06-752c54b74746"
+    },
+    {
+      "claim_id": "2cc99dbd-8cf8-4252-8b62-821556ba16d1",
+      "result_id": "fb3ac14c-1c40-4710-bc06-752c54b74746"
+    },
+    {
+      "claim_id": "66fd4d48-c148-4e5d-9bd9-f2c1e337cd43",
+      "result_id": "fb3ac14c-1c40-4710-bc06-752c54b74746"
+    },
+    {
+      "claim_id": "290e6c3b-df05-46eb-9a6f-a2cbaba7ad4a",
+      "result_id": "fb3ac14c-1c40-4710-bc06-752c54b74746"
+    },
+    {
+      "claim_id": "c74243d7-11b3-42c6-9aac-4da65c803a34",
+      "result_id": "fb3ac14c-1c40-4710-bc06-752c54b74746"
+    },
+    {
+      "claim_id": "ae844d47-d2bc-4224-b512-7b17bddde9e1",
+      "result_id": "fb3ac14c-1c40-4710-bc06-752c54b74746"
+    },
+    {
+      "claim_id": "59f39e09-f1e4-4ffe-a96f-90788c68ec5f",
+      "result_id": "8290d8d1-620b-414f-b145-34fad354a69a"
+    },
+    {
+      "claim_id": "e8f1f4fa-b4c1-4ea7-8c5f-99b6197ff2a2",
+      "result_id": "8290d8d1-620b-414f-b145-34fad354a69a"
+    },
+    {
+      "claim_id": "a2b6bbb9-9efe-4e23-9e7d-dc11b008c072",
+      "result_id": "8290d8d1-620b-414f-b145-34fad354a69a"
+    },
+    {
+      "claim_id": "52f39d15-d739-4c46-a560-fbb7a06b77da",
+      "result_id": "8290d8d1-620b-414f-b145-34fad354a69a"
+    },
+    {
+      "claim_id": "9352e8ae-70c6-445d-bc18-c12ac6a10185",
+      "result_id": "4f93f7c3-b86e-4561-af0d-46f9b4e3d410"
+    },
+    {
+      "claim_id": "8e18bf7c-6ab2-4226-b12c-2bed4c58e6c6",
+      "result_id": "4f93f7c3-b86e-4561-af0d-46f9b4e3d410"
+    },
+    {
+      "claim_id": "6f774dac-14c2-4c70-b35c-043ef81d9840",
+      "result_id": "4f93f7c3-b86e-4561-af0d-46f9b4e3d410"
+    },
+    {
+      "claim_id": "327e724f-ed6e-4b0e-8332-a97c887bde6b",
+      "result_id": "bd2096b4-de64-4495-8505-e7750296973b"
+    },
+    {
+      "claim_id": "ee89a045-2d5a-43af-897a-f3a7046d2fb8",
+      "result_id": "bd2096b4-de64-4495-8505-e7750296973b"
+    },
+    {
+      "claim_id": "59b6af25-07d2-4660-a7e1-4fd520356f90",
+      "result_id": "bd2096b4-de64-4495-8505-e7750296973b"
+    },
+    {
+      "claim_id": "0ceee400-d1ae-4b78-918a-c127a262d33b",
+      "result_id": "bd2096b4-de64-4495-8505-e7750296973b"
+    },
+    {
+      "claim_id": "d1427a87-01ec-4920-a320-6f732e54540e",
+      "result_id": "bd2096b4-de64-4495-8505-e7750296973b"
+    },
+    {
+      "claim_id": "d0cedaff-396c-4ade-baf6-12b7e4db5121",
+      "result_id": "bd2096b4-de64-4495-8505-e7750296973b"
+    },
+    {
+      "claim_id": "e688f102-fae6-4f63-bc56-5ebdc7ee34e9",
+      "result_id": "5412be0e-4848-4fe6-b041-34bce163c682"
+    },
+    {
+      "claim_id": "41335179-c6d6-4b1d-bb3c-4a1ad47748a3",
+      "result_id": "5412be0e-4848-4fe6-b041-34bce163c682"
+    },
+    {
+      "claim_id": "cc8bf22a-b081-4cc3-9bb7-46498f4565f0",
+      "result_id": "5412be0e-4848-4fe6-b041-34bce163c682"
+    },
+    {
+      "claim_id": "64d3dfed-2209-48c9-aaec-3cf0061c9a32",
+      "result_id": "38f076e6-30ff-4149-bc9d-1a9b8bec0a14"
+    },
+    {
+      "claim_id": "6ad4c917-6f6c-4a09-a9d0-d82dc6d9a95c",
+      "result_id": "38f076e6-30ff-4149-bc9d-1a9b8bec0a14"
+    },
+    {
+      "claim_id": "0b4161f7-7a16-40c2-84ed-a909f274a150",
+      "result_id": "38f076e6-30ff-4149-bc9d-1a9b8bec0a14"
+    },
+    {
+      "claim_id": "5ba4aa36-60fd-4169-8d8d-c96d782b8e88",
+      "result_id": "53d1389d-6886-4759-b022-7f6547347f50"
+    },
+    {
+      "claim_id": "95e15a99-e14f-423b-9e00-b0da29824b44",
+      "result_id": "53d1389d-6886-4759-b022-7f6547347f50"
+    },
+    {
+      "claim_id": "659ff9f3-538a-4a14-aa43-fbd3d1e37147",
+      "result_id": "53d1389d-6886-4759-b022-7f6547347f50"
+    },
+    {
+      "claim_id": "6b9ebbf6-26d5-424a-9424-e4b13088cacb",
+      "result_id": "53d1389d-6886-4759-b022-7f6547347f50"
+    },
+    {
+      "claim_id": "845aebc0-d80e-483e-ae6c-3c50e99aa228",
+      "result_id": "53d1389d-6886-4759-b022-7f6547347f50"
+    },
+    {
+      "claim_id": "99e0aed2-2920-423b-b238-2a3793e53241",
+      "result_id": "53d1389d-6886-4759-b022-7f6547347f50"
+    },
+    {
+      "claim_id": "3fa9fef2-3eb6-4e72-b55b-0f20c983868c",
+      "result_id": "53d1389d-6886-4759-b022-7f6547347f50"
+    },
+    {
+      "claim_id": "416e63f1-fcd2-47d0-ac90-1aa5ac5bef60",
+      "result_id": "664f4571-a758-477f-8307-a23738453365"
+    },
+    {
+      "claim_id": "6b9ebbf6-26d5-424a-9424-e4b13088cacb",
+      "result_id": "664f4571-a758-477f-8307-a23738453365"
+    },
+    {
+      "claim_id": "be7fb66c-a2b2-4e11-91e8-89bb3475b515",
+      "result_id": "d3132f0d-dc7f-4f48-92c4-23079c3b23ff"
+    },
+    {
+      "claim_id": "08d02a45-466f-470c-8d4f-493c08354e56",
+      "result_id": "de7cfa4d-6428-4933-8c05-35f7ad506b55"
+    },
+    {
+      "claim_id": "91b1efd9-9bce-4dc8-a90b-268535d91ac7",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "488ef300-8f22-4d53-b792-768c560575db",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "a8a713c1-d3ac-426f-94b7-a9c718ca00da",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "d10d8f6f-3cbd-4209-b181-480eaf59c1a7",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "e240edd8-430a-4959-9ec3-8bf787b98ba0",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "d02ed6b9-0203-4bc3-b31f-ec2090bfae66",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "82cbbc22-8beb-489c-9e0a-d5de2bb85653",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "c626e00a-6e3a-43ce-8ab5-d2c57aeabddb",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "ace39710-16c1-4856-818b-0ac48d4708d0",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "377f7be8-4141-4316-bd85-7c80e9e6cf94",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "9c5d3a4a-4ff7-4578-adec-f2d9cc145fd5",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "19697853-7183-4eb9-9229-62184fedb10c",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "53681389-0e87-4859-964b-e51d8e67137c",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "e9bd0555-b277-4af9-8e65-0f38acc798cb",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "8771d80d-b832-4dbc-82d9-b45252d23bae",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "0b2a08b5-cb47-473f-b7b9-e330df2b4fac",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "ce8e1bb6-d502-49c5-8e29-4b8614222bbd",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "5bb4b452-1399-4874-b6d5-d39807761903",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "66a21090-1818-4111-a58b-b791b62c4249",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "c158153d-5a25-41dd-999a-7508592fd9d9",
+      "result_id": "7c3960d5-9e29-407b-8445-8521d64d937c"
+    },
+    {
+      "claim_id": "9d74de4c-eae4-49f3-bf6c-01397d3c81ec",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "9fa0f2cc-9c15-4e92-a2dc-caabd2d6c84b",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "db1ad3f3-ded2-4d0a-8965-85dbbdedf5ea",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "f4613216-e757-4cf0-bd19-6dd521f515ed",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "66dd0c1d-7316-47e7-b719-86952c25fb21",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "fd8275a9-537d-415e-a2a8-7456a45073e1",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "5e696373-8612-48f0-98c9-6d43d87fd267",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "1692e81a-502f-473f-b5bb-daf8999d8193",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "72cab022-d7d0-4a30-9c0e-2ef9ebf3a26f",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "2e08f447-4574-478b-8f2d-f1567abd592e",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "1aa4798d-873f-4c16-bf59-740318c88792",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "f8711776-cc1c-47f5-bacd-19576552c5cc",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "0f04a1e2-4e19-4282-a576-fc11586716b9",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "b7b41430-6684-4d4c-b845-3f29fbe21297",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "31a803c4-7c0e-45d2-8ced-cd5e6bb07cbf",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "57c14a3c-2e36-4d24-9969-4fdb22ba2519",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "8153a82a-4df4-417e-afdb-2386ccc5726f",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "0d1d3986-3cd4-4299-9884-4f1687735210",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "77e1f513-30a4-4f8e-b69a-29bad1ba5143",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "8d6ad6a0-0660-4a02-82e8-69bb3079f168",
+      "result_id": "8f28dff4-7698-42bb-85f9-38f7421f949e"
+    },
+    {
+      "claim_id": "f6b44346-8772-44f2-a0b9-976eb98ca8eb",
+      "result_id": "a2e5c67e-5677-4235-932c-cf153b4a6db7"
+    },
+    {
+      "claim_id": "0ac319ad-96e7-445a-8d22-27c985a77474",
+      "result_id": "a2e5c67e-5677-4235-932c-cf153b4a6db7"
+    },
+    {
+      "claim_id": "51522950-8bd5-4852-b424-981fe10d4504",
+      "result_id": "a2e5c67e-5677-4235-932c-cf153b4a6db7"
+    },
+    {
+      "claim_id": "af7c5c64-da9e-4fb7-9f8d-2db8b1ba110c",
+      "result_id": "a2e5c67e-5677-4235-932c-cf153b4a6db7"
+    },
+    {
+      "claim_id": "79aeeb23-58b6-42d0-8bfb-5d47da6d9c84",
+      "result_id": "a2e5c67e-5677-4235-932c-cf153b4a6db7"
+    },
+    {
+      "claim_id": "5da6ff65-e432-482f-b5c9-d1afe05f6415",
+      "result_id": "a2e5c67e-5677-4235-932c-cf153b4a6db7"
+    },
+    {
+      "claim_id": "bd25f34c-3f3d-4663-9d49-5d6199ccc6bb",
+      "result_id": "04e01f48-c7bb-49e2-94f8-e231418c730a"
+    },
+    {
+      "claim_id": "713f117e-e83d-46ef-8dec-ff5cc88929f2",
+      "result_id": "04e01f48-c7bb-49e2-94f8-e231418c730a"
+    },
+    {
+      "claim_id": "d58d5fb5-e0bb-4dd9-9ec3-603c2f1745e9",
+      "result_id": "04e01f48-c7bb-49e2-94f8-e231418c730a"
+    },
+    {
+      "claim_id": "a1b00623-a2a0-4b3a-a195-fbb95bd4e8b6",
+      "result_id": "04e01f48-c7bb-49e2-94f8-e231418c730a"
+    },
+    {
+      "claim_id": "80c13a32-453a-4f0b-9fc5-2a83fc720d20",
+      "result_id": "04e01f48-c7bb-49e2-94f8-e231418c730a"
+    },
+    {
+      "claim_id": "fd046a3a-5f54-4eba-86e0-b7389bcd7f48",
+      "result_id": "04e01f48-c7bb-49e2-94f8-e231418c730a"
+    },
+    {
+      "claim_id": "9f9abe67-f42d-40e2-a013-bff2697363f3",
+      "result_id": "04e01f48-c7bb-49e2-94f8-e231418c730a"
+    }
+  ],
+  "comparisons": []
+}

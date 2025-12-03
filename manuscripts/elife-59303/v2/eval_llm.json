@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript establishes the biological context and motivation for developing AHARIBO by reviewing the current understanding of lncRNAs and limitations of existing methods. Claims describe that lncRNAs are abundant cytoplasmic transcripts with diverse functions including ribosome interaction, peptide encoding, and ribosome sponging, but that existing RIBO-seq and proteomics approaches cannot adequately distinguish these functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are primarily background knowledge supported by appropriate citations to published literature (C2-C4, C10-C11, C13-C22, C24, C66-C68). The assessment of methodological limitations (C23, C25, C69) represents reasonable inference from the cited literature. Together, these claims establish a well-supported rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C75",
+      "C81"
+    ],
+    "result": "AHARIBO is a novel method that simultaneously isolates translationally active ribosomes, associated RNAs, and nascent peptides by incorporating the non-canonical amino acid AHA into nascent peptides, enabling parallel RNA-seq, ribosome profiling, and proteomics analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The method description is supported by detailed experimental protocols and validation data throughout the manuscript (C26-C30, C75). Multiple complementary experiments demonstrate that AHARIBO successfully captures active ribosomes and associated components (C31-C39, C58-C60). The claim that AHARIBO is comprehensive and reliable (C81) is supported by the convergent evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Optimization experiments established that 30 minutes is the optimal AHA incubation time and that sBlock outperforms cycloheximide in stabilizing nascent peptides on ribosomes, with approximately 50% higher anchoring efficiency compared to untreated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These optimization claims are directly supported by experimental data shown in Figure 1 and supplementary figures (C31-C34). The comparison between CHX and sBlock is quantified and statistically evaluated. The 30-minute incubation time is justified by data on AHA incorporation and RNA recovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "LC-MS analysis and gene ontology analysis confirmed that AHARIBO-rC efficiently enriches for ribosomal proteins from both large and small subunits and translation-related proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment of ribosomal proteins is demonstrated by LC-MS data (C35) and validated by GO analysis showing enrichment of translation-related terms (C36). These complementary analyses provide strong evidence for the specificity of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "AHARIBO-rC captures RNA in a translation-dependent manner, as demonstrated by reduced RNA capture when translation is inhibited by puromycin, heat shock, or arsenite treatment, and by efficient capture of ectopically expressed translated constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The translation-dependence is demonstrated through multiple complementary approaches: reduction in RNA capture upon translation inhibition (C37-C38) and selective capture of methionine-containing translated constructs (C39). The TUG1-BOAT validation experiment provides particularly strong evidence with ~50-fold enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "AHARIBO-nP successfully captures de novo synthesized proteins during mESC neuronal differentiation, identifying 573 differentially expressed proteins enriched for neurogenesis and cytoskeleton organization, with significantly higher protein turnover compared to pSILAC, demonstrating its ability to monitor nascent polypeptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomics results are well-supported by multiple lines of evidence: identification of differentially expressed proteins (C40, C42-C44), appropriate GO enrichment (C45), and higher turnover in AHARIBO-nP compared to pSILAC (C46-C47). The 74% overlap with pSILAC (C43) provides validation while the higher turnover demonstrates capture of nascent peptides specifically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "AHARIBO-rC captures transcripts encoding polypeptides across a wide range of lengths and shows comparable efficiency to global translatome for low-abundance transcripts, but captures abundant transcripts in differentiated neurons with much higher efficiency than standard methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by systematic analysis across protein lengths (C48) and abundance thresholds (C49-C50). The differential performance for abundant versus low-abundance transcripts is clearly demonstrated in Figure 3B and supplementary data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "AHARIBO-rC RNA shows better correlation with proteome changes than global translatome, with fewer uncoupled genes and higher correlation with protein turnover (Pearson's r = 0.75 for AHARIBO-rC vs r = 0.27 for global translatome).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The superior correlation of AHARIBO-rC with proteome is demonstrated by quantitative correlation analysis (C52-C53) and shown in Figure 3C and supplementary figures. The substantial difference in Pearson correlation coefficients (0.75 vs 0.27) provides strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "AHARIBO-rC identified 687 lncRNA genes in mESCs with ~400 differentially expressed during neuronal differentiation, including known neuronal development lncRNAs (Pantr1, Lhx1os), and showed stronger enrichment of ribosome footprints compared to global translatome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lncRNA identification is supported by RNA-seq data (C54-C55), validated by identification of known neuronal lncRNAs (C56), and confirmed by comparison with published ribosome profiling data showing stronger enrichment (C57). The convergent evidence from multiple approaches supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "AHARIBO RIBO-seq shows expected characteristics of ribosome profiling (enrichment in coding sequences, high correlation with standard RIBO-seq, codon periodicity) and identified 125 putative translated lncRNAs common across multiple methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The technical validation of AHARIBO RIBO-seq is well-supported by multiple quality metrics (C58-C60) shown in Figure 4 supplement 2. The identification of 125 common lncRNAs (C61) through intersection of multiple methods provides high-confidence candidates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mass spectrometry analysis identified a 47 amino acid micropeptide (Mm47) from a lncRNA at high confidence, which was independently validated as a functional peptide involved in innate immunity, along with peptides from several other lncRNAs showing corresponding ribosome footprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of Mm47 is supported by MS data (C64) and validated by independent publication (C65, citing Bhatta et al., 2020). The detection of peptides from multiple lncRNAs with corresponding ribosome footprints (C63) provides additional support. The independent validation is particularly strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Using AHARIBO in mESCs during neuronal differentiation successfully isolated ribosome-protected RNA fragments, translated RNAs, and de novo synthesized peptides, identifying mRNAs under active translation and distinguishing lncRNAs acting as ribosome sponges from those encoding micropeptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims are supported by the comprehensive experimental data presented throughout the manuscript. The isolation of multiple components (C7) is demonstrated by RNA-seq, RIBO-seq, and proteomics data. The identification and distinction of different lncRNA types (C9, C70-C73) is supported by the integration of multiple AHARIBO approaches and validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The manuscript acknowledges methodological limitations including the requirement for methionine starvation which may alter cellular physiology, challenges in LC-MS verification of lncRNA peptides, and potential background signal contributions that need consideration in analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These limitations are appropriately acknowledged and supported by citations (C76-C77) and experimental observations (C74, C79-C80). The discussion of methionine starvation effects (C78) is a reasonable inference. Acknowledging limitations strengthens rather than weakens the overall conclusions.",
+    "result_type": "MINOR"
+  }
+]

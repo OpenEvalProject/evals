@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5"
+    ],
+    "result": "RNA::TEG-modified dsDNA donors increase HDR efficiency and potency in HEK293T cells using the TLR assay. At 1.2 pmol, RNA::TEG donors achieved 52% GFP+ cells compared to 25% for unmodified donors at 1.6 pmol, representing approximately 4-fold increased potency. Various 5'-modifications (2'OMe-RNA, TEG, RNA::TEG) all boosted HDR while reducing NHEJ events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C5 are well-supported by dose-response data from the TLR assay shown in Figure 1B-E. The quantitative measurements are specific, include appropriate replicates (n\u22653), and demonstrate both increased maximal efficacy and potency. The reduction in NHEJ (mCherry+) cells accompanying increased HDR provides additional mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "PNA oligonucleotides linked to nuclear localization signal peptide, when annealed to RNA::TEG-modified donors, did not enhance HDR efficiency beyond RNA::TEG modification alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by experimental data in Figure 1\u2014figure supplement 1A-D showing that PNA::NLS addition was well-tolerated but provided no additional benefit. This negative result is appropriately reported and helps define the limitations of the modification strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The length of ethylene glycol moieties (3, 6, or 12 repeats) and the number of modified ends (single vs. double) affect HDR efficiency differently depending on whether RNA is present. TEG length variation (3-12 repeats) supported similar HDR levels with or without 2'OMe-RNA. Double-end TEG modification yielded slightly better results than single-end, but RNA::TEG showed similar efficiency with single or double modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by experimental data in Figure 1F-G. The findings reveal structure-activity relationships for the modifications, though the mechanistic basis for why RNA::TEG behaves differently from TEG alone regarding single vs. double modification is not explained. The data are clear but the biological interpretation remains incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "TEG and RNA::TEG modifications increase HDR efficiency at multiple endogenous loci across different mammalian cell types. In HEK293T cells, modifications increased eGFP integration 2-fold (TOMM20), 3-fold (GAPDH), and 5-fold (SEC61B). In harder-to-edit cells, RNA::TEG increased HDR 2.3-fold in HFF cells (TOMM20) and 6-fold in CHO cells (Gapdh).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are well-supported by eGFP integration data across multiple loci and cell types (Figure 2B-F). The consistency across different genomic contexts and cell types strengthens the conclusion. Statistical significance is demonstrated (p<0.0001 in most cases, n\u22653). The variation in fold-improvement across loci (2-6 fold) suggests locus-specific factors may influence efficacy, which is acknowledged in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "At the EMX1 locus in HEK293T cells, RNA::TEG-modified donors showed dose-dependent increases in precise editing compared to unmodified donors, with 2-fold improvement at lower doses (1.2-2.4 pmol) that narrowed to 16% difference at high doses (5 pmol: 72.8% vs 89.5%). TEG modification alone showed no benefit at this locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by deep sequencing data (Figure 2H). The dose-dependent convergence of modified and unmodified donor performance at high concentrations is an important observation suggesting saturation effects. The lack of benefit from TEG alone at EMX1 contrasts with other loci, indicating locus-specific or assay-specific effects. The data are robust with appropriate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "RNA::TEG modification of long (800 nt) ssDNA donors significantly increased HDR efficiency and potency in the TLR assay. The modified donor reached maximal HDR of 22.5% GFP+ cells at 6-8 pmol and was >4-fold more potent than unmodified donor (achieving 16% GFP+ at ~2 pmol vs 8 pmol for unmodified).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by dose-response data in Figure 3A and Figure 3\u2014figure supplement 1A. The demonstration that 5'-modifications improve long ssDNA donors extends the findings beyond dsDNA. The potency calculation is clearly defined and supported by the data. This represents an important extension of the modification strategy to a different donor format.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "For short (66 nt) ssODN donors in K562 cells, RNA::TEG modification increased potency 10-fold but did not increase maximal HDR efficiency. Both modified and unmodified donors achieved similar maximal HDR levels (47.5-52.8% BFP+ cells), but modified donors required 10-fold less material.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by dose-response data from the GFP-to-BFP assay (Figure 3B). This finding reveals an important distinction between long and short donors: modifications increase both potency and maximal efficacy for long donors, but only potency for short donors. This observation is mechanistically important and is appropriately discussed in the context of different dose-limiting factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "3'-terminal modifications with 2'OMe-RNA, RNA::TEG, or TEG did not enhance HDR and blocked the enhancement provided by 5'-modifications, while phosphorothioate linkages at either terminus had no effect. These findings suggest that an available 3'-OH is required for the HDR improvement mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are supported by experimental data in Figure 3C and Figure 3\u2014figure supplement 2. The antagonistic effect of 3'-modifications is a critical mechanistic finding that constrains models for how 5'-modifications work. The inference that 3'-OH availability is required (C25) is logical given the data, though the exact mechanism remains speculative. The PS linkage control is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In C. elegans germline editing, TEG and RNA::TEG-modified donors approximately doubled the number of GFP+ progeny per injected animal and dramatically increased editing efficiency in both Roller and non-Roller cohorts. Modified donors produced >50% GFP+ non-Rollers and 49-57% GFP+ Rollers (vs 12.6% for unmodified at eft-3). All GFP+ animals transmitted edits to the next generation, with modified donors frequently yielding >100 independent edited F1 progeny per injected hermaphrodite.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are well-supported by C. elegans germline editing data (Figure 4B-G, Figure 4\u2014figure supplement 1). The dramatic improvements in the Roller cohort (previously shown to have lower editing efficiency) are particularly striking. Germline transmission data confirm that edits are heritable. The achievement of >100 independent edited progeny per injection represents a substantial practical improvement. Sample sizes are adequate (n\u22654 broods per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "In zebrafish zygotes targeting the Hey2 locus, RNA::TEG-modified donors increased precise editing frequency 11-fold (4.4% vs 0.4% for unmodified), while TEG modification alone failed to enhance editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by high-throughput sequencing data from zebrafish injections (Figure 5A). The 11-fold improvement with RNA::TEG is substantial and statistically significant. The failure of TEG alone in zebrafish (unlike in C. elegans) suggests organism-specific or cell-type-specific differences in how modifications function, which is discussed. Total editing levels (indels) were comparable across conditions (Figure 5\u2014figure supplement 1), indicating the improvement is specific to HDR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In mouse zygote editing at the Tyr locus, RNA::TEG-modified donors more than doubled the frequency of pigmented F0 founders (37.9% vs 17.4%) and dramatically increased the proportion with uniform pigmentation (92% vs 62.5%), suggesting editing occurs during early zygotic divisions. Pigmented F0 mice transmitted the corrected allele to F1 progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by phenotypic analysis and genotyping data (Figure 5B-D, Figure 5\u2014figure supplement 2). The increased uniformity of pigmentation is a particularly important observation suggesting earlier editing, which has practical implications for reducing mosaicism. Germline transmission confirms functionality of the edits. Sample sizes are adequate (n=46 for unmodified, n=66 for modified).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "At the mouse Sox2 locus, RNA::TEG-modified donors increased precise V5 tag insertion >5-fold (33.3% vs 5.7% of F0 animals). All tested V5-positive founders (1/1 unmodified, 6/6 modified) transmitted the Sox2::V5 allele to F1 progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by genotyping and germline transmission data (Figure 5E, Figure 5\u2014figure supplement 3). The >5-fold improvement is substantial and consistent with results at the Tyr locus. The 100% germline transmission rate from tested founders is encouraging, though the sample size for unmodified (n=1) is very small. Overall sample sizes are adequate (n=35 unmodified, n=24 modified F0 animals).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Unmodified dsDNA donors rapidly form concatemers after nucleofection into HEK293T cells (within 1 hr, up to 10 copies by 3 hr, peaking at 12 hr). TEG-modified DNA showed marked delay and reduction in concatemer formation, with dimers/trimers forming gradually over 12-24 hr at much lower levels. At late timepoints (24-72 hr), a greater fraction of TEG-modified monomers persisted compared to unmodified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by Southern blot analysis over a 72-hour timecourse (Figure 6B). The temporal resolution and quantitative nature of the data clearly demonstrate suppression of concatemerization by TEG modification. This provides direct mechanistic evidence for how modifications improve HDR. The experimental design appropriately accounts for cell proliferation by loading different amounts of DNA at later timepoints. The inference that TEG suppresses concatemer formation (C46) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "GUIDE-seq analysis showed that TEG-modified DNA produced 19-fold fewer genome-wide integration reads than unmodified DNA. At the on-target ARHGEF9 locus and top 6 off-target sites, TEG-modified DNA insertions were reduced 6-15 fold. These data suggest TEG modifications suppress direct ligation of donors both to each other and to chromosomal DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by GUIDE-seq data (Figure 6C-D). The dramatic reduction in chromosomal integration of modified donors provides strong evidence that modifications suppress NHEJ-mediated insertion. This mechanistic insight, combined with the concatemerization data, supports the model that modifications work by blocking ligation reactions. The data are from two biological replicates, which is adequate for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In mammalian cells, 5'-modifications (TEG or RNA::TEG) improved HDR efficacy and increased donor potency for both ssDNA and dsDNA donors of varying lengths. Modifications suppressed concatemer formation and reduced random integration at DSBs. Long donors showed 2-5 fold increased maximal efficacy without changing the plateau concentration, while short donors showed increased potency but no increase in maximal efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 represent summary statements of the mammalian cell work, synthesizing results from multiple experiments. These are well-supported by the collective data from Figures 1-3 and 6. The distinction between effects on long vs. short donors (C53-C54) is an important observation that is clearly supported by the dose-response data and is mechanistically discussed in terms of different dose-limiting factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The authors propose that dose-limiting toxicity of ssODNs may be driven by total number of free DNA ends per cell, while longer molecules may encounter toxicity driven by total DNA mass. Supporting this, unmodified long dsDNA donors plateau at ~4-fold more mass but ~10-fold lower molar amounts than ssODNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 represent speculative mechanistic reasoning to explain differential effects of modifications on long vs. short donors. While C56 is supported by comparison of dose-response data, C55 is explicitly speculative (\"could be driven by\"). The hypothesis is plausible and consistent with the data, but lacks direct experimental validation. Additional experiments measuring toxicity endpoints would be needed to test this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "RNA::TEG-modified donors significantly increased precision editing in three animal models (C. elegans, zebrafish, mice), achieving high HDR efficiencies that approached those previously reported for ssODN donors. Precise insertions were obtained with relatively short homology arms (<90 bp in mouse) at low concentrations (1 ng/\u00b5l).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 summarize the in vivo editing results across three organisms. These are well-supported by the collective data from Figures 4-5 and appropriately cite previous work for comparison (Dokshin et al., 2018; Kan et al., 2017; Quadros et al., 2017). The achievement of high efficiency with short homology arms is practically important as it makes dsDNA donors more comparable to ssODNs in terms of synthesis requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors propose that 5'-modifications increase donor efficacy by suppressing non-homologous end-joining reactions. Suppression of concatemer formation could increase effective molar amounts of donor available for precise repair, and suppression of direct ligation to chromosomal DNA could further increase precision repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C64, and C65 represent mechanistic inferences based on the Southern blot and GUIDE-seq data. While these are inferences rather than direct demonstrations, they are well-supported by the experimental evidence showing reduced concatemerization (C41-C46) and reduced chromosomal integration (C47-C49). The mechanistic model is logical and consistent with all observations, though alternative mechanisms cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Single-end modification was nearly as effective as double-end modification. The authors propose this could be because single-end modification limits concatenation to dimers and prevents circularization that might enable further HDR-mediated concatenation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by experimental data (Figure 1G), while C67-C68 represent logical inferences about structural consequences. The observation that single-end modification is nearly as effective as double-end is important for practical applications (reducing synthesis costs). The mechanistic explanations (C67-C68) are plausible but somewhat speculative, particularly the circularization hypothesis (C68) which lacks direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "A free unmodified 3'-end was required for efficient HDR. The authors propose that by suppressing ligation, 5'-modifications maintain available 3'-ends, perhaps to prime repair synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is well-supported by experimental data showing that 3'-modifications block HDR enhancement (C22-C23). Claim C70 represents mechanistic inference that is logical given the data, though the specific role of the 3'-end (\"perhaps to prime repair synthesis\") remains speculative. The requirement for a free 3'-OH is an important constraint on the mechanism and has practical implications for donor design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Previous studies with fluorescent/amine modifications and PS linkages used much higher donor concentrations than optimal for the modifications described here. In the current study, PS linkages did not improve HDR at doses where RNA::TEG and TEG modifications were most efficacious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 appropriately contextualize the current work relative to previous studies (Lee et al., 2017; Renaud et al., 2016). The comparison of experimental conditions (C73) is valid and important for understanding why results might differ. The finding that PS linkages don't improve HDR at optimal doses for TEG modifications (C74) is supported by data in Figure 3\u2014figure supplement 2 and helps distinguish the mechanism of TEG modifications from nuclease protection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Three recent studies explored related modifications: biotin-PEG in medaka improved HDR and favored single-copy insertion, PEG10 with 6-carbon linker boosted GFP insertions in vertebrate cells at similar concentrations, and biotin::PEG or ssDNA::PEG suppressed NHEJ-mediated insertions in non-transformed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 accurately cite and describe three related studies (Gutierrez-Triana et al., 2018; Yu et al., 2020; Canaj, 2019). The authors appropriately acknowledge that their work was in preparation when these studies appeared and note the similarities in findings. This contextualization is important for understanding the current work's contribution and relationship to concurrent developments in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Previous work showed that melting and cooling long dsDNA donors improved HDR efficacy in C. elegans by an order of magnitude. Preliminary unpublished findings suggest melting an 800 bp donor did not improve HDR in human cells, but further studies are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is supported by citation to previous work (Ghanta and Mello, 2020). Claim C80 is based on unpublished preliminary data (\"data not shown\") and is explicitly acknowledged as requiring further study. While it's appropriate to mention this in the discussion, the lack of shown data and preliminary nature means this result cannot be evaluated as supported. The authors appropriately qualify the claim and call for additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors acknowledge they don't know why TEG and RNA::TEG performed similarly in C. elegans while RNA::TEG was superior in zebrafish and human cells. They speculate that TEG alone may suffice in meiotic cells actively engaged in recombination, while RNA::TEG may provide additional nuclease protection needed in mitotic cells with less active HDR machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 appropriately acknowledges an unexplained observation in the data. Claims C82-C83 are explicitly speculative attempts to explain this difference based on meiotic vs. mitotic context. While the speculation is reasonable, it lacks experimental support. The difference between C. elegans (meiotic germline) and other systems (mitotic cells) is a plausible explanation, but would require additional experiments to test, such as comparing modifications in mitotic vs. meiotic contexts within the same organism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C85",
+      "C88"
+    ],
+    "result": "Linear dsDNA molecules delivered into animal cells or embryos are known to form extensive concatemers through homology-mediated and ligation-dependent mechanisms. This has been demonstrated in multiple systems including C. elegans, zebrafish, and mouse, where DNA can form extrachromosomal arrays that may integrate into the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C85, and C88 are based on citations to established literature (Perucho et al., 1980; Folger et al., 1982; Mello et al., 1991; Forbes et al., 1983; Stuart et al., 1988; Lacy et al., 1983; Costantini and Lacy, 1981; Stinchcomb et al., 1985). These represent well-established prior knowledge that provides important context for understanding why the current modifications are beneficial. The citations appear appropriate and the claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "HDR is frequently less efficient with longer dsDNA donors compared to short ssODN donors, though the reasons are not fully understood. Maximizing precision genome editing requires understanding cellular responses to both DSBs and exogenous donors, which are influenced by cell-intrinsic and cell-extrinsic factors that affect the relative efficiency of HDR vs. NHEJ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 represent general knowledge and motivation for the study, supported by citations to relevant literature. These claims appropriately frame the problem being addressed and are consistent with the current understanding in the genome editing field. The acknowledgment that mechanisms are not fully understood (C91) appropriately motivates the mechanistic investigations in the paper.",
+    "result_type": "MINOR"
+  }
+]

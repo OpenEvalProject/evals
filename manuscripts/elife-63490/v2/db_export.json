@@ -1,0 +1,1433 @@
+{
+  "submission": {
+    "id": "46149c28-c22d-4e7e-afa3-6c5ff0c22c4a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:01:59.684127Z",
+    "updated_at": "2025-12-03T10:01:59.684127Z"
+  },
+  "content": [
+    {
+      "id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "submission_id": "46149c28-c22d-4e7e-afa3-6c5ff0c22c4a",
+      "content_type": "manuscript",
+      "content_text": "# Context-dependent relationships between locus coeruleus firing patterns and coordinated neural activity in the anterior cingulate cortex\n\n## Authors\n\n- Siddhartha Joshi<sup>1</sup> ([ORCID: 0000-0002-0529-9430](https://orcid.org/0000-0002-0529-9430)) \u2020\n- Joshua I Gold<sup>1</sup> ([ORCID: 0000-0002-6018-0483](https://orcid.org/0000-0002-6018-0483))\n\n### Affiliations\n\n1. Department of Neuroscience, University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAscending neuromodulatory projections from the locus coeruleus (LC) affect cortical neural networks via the release of norepinephrine (NE). However, the exact nature of these neuromodulatory effects on neural activity patterns in vivo is not well understood. Here, we show that in awake monkeys, LC activation is associated with changes in coordinated activity patterns in the anterior cingulate cortex (ACC). These relationships, which are largely independent of changes in firing rates of individual ACC neurons, depend on the type of LC activation: ACC pairwise correlations tend to be reduced when ongoing (baseline) LC activity increases but enhanced when external events evoke transient LC responses. Both relationships covary with pupil changes that reflect LC activation and arousal. These results suggest that modulations of information processing that reflect changes in coordinated activity patterns in cortical networks can result partly from ongoing, context-dependent, arousal-related changes in activation of the LC-NE system.\n\n## Introduction\n\nChanges in brain state are associated with different levels of arousal, attention, motivation, surprise, and other factors that can affect the activity patterns of large populations of cortical neurons (McAdams and Maunsell, 1999; Purcell et al., 2012; Chang et al., 2012; Falkner et al., 2013; Downer et al., 2015; Ecker et al., 2016; Thiele et al., 2016). These changes are thought to result, in part, from the widespread release of neuromodulators (Aoki et al., 1987; Devauges and Sara, 1990; Schultz et al., 1993; Dalley et al., 2001; Bouret and Sara, 2005; Aston-Jones and Cohen, 2005; McGaughy et al., 2008; Salamone et al., 2009; Pinto et al., 2013; Varazzani et al., 2015; Khani and Rainer, 2016; Minces et al., 2017). Different neuromodulatory systems have different anatomical and physiological properties (Kupfermann, 1979; Aoki et al., 1987; Xiang et al., 1998; Flores-Hernandez et al., 2000; Fern\u00e1ndez-Pastor and Meana, 2002; Ding and Perkel, 2002; Salgado et al., 2011; Herrero et al., 2013; Sugihara et al., 2016; Doyle and Meeks, 2017) that are thought to support their different roles in neural information processing (Abbott and Dayan, 1999; Nirenberg and Latham, 2003; Averbeck et al., 2006; Silver, 2010; Beck et al., 2011; Moreno-Bote et al., 2014; Kanitscheider et al., 2015; Lin et al., 2015; Rodenkirch et al., 2019). One prominent example is the locus coeruleus (LC)-norepinephrine (NE) system, whose diffuse projections throughout the brain, close relationship to the sleep-wake cycle, and relationship to electroencephalography (EEG) and pupillometry have led to several theories of its role in arousal-related modulations of cortical activity and function (Aston-Jones and Cohen, 2005; Aston-Jones and Bloom, 1981; Nieuwenhuis et al., 2011; Gilzenrat et al., 2010; Einh\u00e4user et al., 2010; Murphy et al., 2011; Murphy et al., 2014; Joshi et al., 2016; Joshi and Gold, 2020). However, only a small number of studies have shown direct relationships between (artificial) LC activity and cortical activity in vivo (e.g., Devilbiss and Waterhouse, 2011), limiting our understanding of the exact nature of these relationships.\n\nOur aim was to test if and how endogenous, ongoing activity and sensory-driven, evoked responses in the LC relate to changes in neural activity patterns in the anterior cingulate cortex (ACC) of the primate brain. We targeted the ACC because it has strong reciprocal connectivity, both structural and functional, with the LC (Lewis et al., 1979; Morrison et al., 1979; Porrino and Goldman-Rakic, 1982; Jones and Olpe, 1984; Fern\u00e1ndez-Pastor et al., 2005; Gompf et al., 2010; Chandler and Waterhouse, 2012; Chandler et al., 2013; Tervo et al., 2014; K\u00f6hler et al., 2016; De Gee et al., 2017; Koga et al., 2020). Moreover, ACC neural activity can encode computations that underlie adaptive, goal-directed behaviors, including those that are also associated with indirect measures of LC-linked arousal, such as changes in pupil size and the P300 component of the event-related potential (ERP; Shima and Tanji, 1998; Gehring and Willoughby, 2002; Holroyd and Coles, 2002; Critchley et al., 2005; Matsumoto et al., 2007; Hayden et al., 2011; Shenhav et al., 2013; Ebitz and Platt, 2015; Sarafyazd and Jazayeri, 2019). Thus, interactions between LC and ACC neural activity patterns are likely to have broad behavioral relevance.\n\nWe recorded neural activity simultaneously in LC and ACC (Figure 1) and measured the pupil size of alert monkeys under two behavioral conditions: (1) performing a fixation task and (2) performing a fixation task with randomly presented sounds. Both of these conditions have been associated with variations in arousal that covary with pupil size and can affect cognition and behavior (Aston-Jones and Bloom, 1981; Nieuwenhuis et al., 2011; Einh\u00e4user et al., 2010; Gilzenrat et al., 2010; Murphy et al., 2011; Murphy et al., 2014; Varazzani et al., 2015; Joshi et al., 2016). Conditioned on the firing (or lack of firing) of LC neurons, we measured activity patterns of individual neurons and coordinated activity between pairs of neurons in ACC, both of which govern the information processing capacities of neural networks (Britten et al., 1992; Parker and Newsome, 1998; Cohen and Kohn, 2011; Moreno-Bote et al., 2014; Lin et al., 2015; Kohn et al., 2016). We were particularly interested in the timescales over which these features of neural activity in LC and ACC are related, which can provide insights into putative underlying mechanisms. For example, neuromodulatory effects of the LC-NE system on ACC might be expected to have a relatively long time course compared with the time course of typical synaptic events that are mediated by faster, glutamatergic neurotransmission (Feldman RS et al., 1997; McCormick and Prince, 1988; Wang and McCormick, 1993; Schmidt et al., 2013; Timmons et al., 2004). Below we show that such relatively long timescale relationships are evident between LC and ACC neural activity patterns, in particular changes in coordinated activity between pairs of ACC neurons that tend to decrease or increase in relation to spontaneous or evoked LC spikes, respectively.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig1-v2.jpg)\n\n**Figure 1.:** (A) Approximately sagittal MRI section showing targeted recording locations in the anterior cingulate cortex (ACC) (areas 32, 24b, and 24c) and locus coeruleus (LC) for monkey Ci (right), with the SC and IC shown for reference. For recording locations in monkeys, Oz, Sp, and Ci (left hemisphere), see Kalwani et al., 2014; Joshi et al., 2016. (B) Schematic of a coronal section showing structures typically encountered along electrode tracts to LC (adapted from Paxinos et al., 2008; Plate 90, Interaural 0.3; bregma 21.60).\n\n## Results\n\nWe analyzed neural activity from simultaneously measured sites in the LC (n = 84 single units, including 78 simultaneously recorded pairs from 35 sites in monkey Sp; 84/80/31 in monkey Ci) and ACC (372/4336/35 in monkey Sp; 275/2875/31 in monkey Ci) and from LC-only recordings (71/12/73 in monkey Ci and 36/8/34 in monkey Oz) while the monkeys maintained fixation on a visual spot. Our analyses focused on whether and how mean spiking activity and individual and pairwise neuronal variability measured in one brain region (ACC or LC) related to neuronal activity in the other brain region (LC or ACC, respectively). To understand the temporal dynamics of these potential relationships, we systematically tested for effects across a broad range of time windows. These windows ranged in duration from 100 ms, which is often used to study neural synchrony, to 1 s, which is consistent with typical timescales of slow neuromodulatory influences (Feldman RS et al., 1997; McCormick and Prince, 1988; Wang and McCormick, 1993; Schmidt et al., 2013; Timmons et al., 2004; Doiron et al., 2016). Because LC and ACC are connected reciprocally, we tested for relationships in both directions. Reliable relationships in either direction are included in the main figures, and the remaining results are shown in figure supplements.\n\n### Single-neuron activity during passive fixation\n\nDuring passive fixation, LC neurons were weakly active, with no spikes measured on more than a third of all trials and otherwise a median (interquartile range [IQR]) firing rate of 1.8 [0.9\u20133.6] sp/s measured during 1.1 s of stable fixation (Figure 2A). For each session, we divided trials into six groups based on the given LC neuron\u2019s firing rate: trials with firing rate = 0 (LCzero), 1, 2, 3, and \u22654 sp/s formed five groups, and all trials with firing rate >0 formed a sixth group (LCnon-zero). We then assessed ACC neural activity measured at the same time, conditioned on the LC group.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig2-v2.jpg)\n\n**Figure 2.:** (A) LC single-unit firing rate distribution measured in 1.1 s windows starting 1 s after the onset of stable fixation from all trials and recording sessions. The magenta and black bars indicate the proportion of trials with 0 and >0 LC spikes, respectively. The diamond and horizontal bar indicate median and interquartile range (IQR), respectively, from trials with \u22651 spike. (B\u2013D) ACC single-unit spike count (B), variance of the spike count (C), and Fano factor (variance/mean; D) from trials in which the simultaneously measured LC unit spiked as indicated in the legend in (B). ACC spikes were counted in five equally spaced bins ranging from 200 ms to 1 s. Symbols and error bars are the median and bootstrapped 95% confidence interval of the distribution of values computed per ACC unit, pooling the data across all units recorded from both monkeys. (E\u2013G) Difference between each value from panels (A\u2013C), respectively, measured between the LC > 0 condition and the LC = 0 condition. Bars and error bars are the median and bootstrapped 95% confidence interval of the distribution of values computed per ACC unit. Filled bars and symbols above indicate p < 0.05 for sign-rank tests for H0: median difference between LCzero and LCnon-zero conditions = 0 tested: (1) separately for each monkey (filled bars) and (2) using data combined from both monkeys (*none found).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Relationship between difference in Fano factor and difference in spike count; Spearman\u2019s rho = 0.27, p = 2.6 \u00d7 10-17. (B) Relationship between difference in Fano factor and difference in variance of spike count; Spearman\u2019s rho = 0.85, p < 0.00001.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) ACC single-unit firing rate distribution measured in 1.1 s windows starting 1 s after the onset of stable fixation from all trials and recording sessions. The circle and diamond symbols and lines indicate the median and interquartile range (IQR) of trials defined as \u2018low\u2019 and \u2018high\u2019 ACC spike counts (median split per session), respectively. (B\u2013D) LC single-unit (B) spike count, (C) variance of spike count, and (D) Fano factor (variance/mean) from trials in which the simultaneously measured ACC activity (mean firing rate of all single units) was low or high as indicated by the markers defined in (B). LC spikes were counted in five equally spaced bins ranging from 200 ms to 1 s. Symbols and error bars are median and bootstrapped 95% confidence intervals of the values computed by pooling the data across all units recorded from both monkeys. (E\u2013G) Difference between each value from panels (B\u2013D), respectively, measured between the ACChigh condition and the ACClow condition. Bars and error bars are the median and bootstrapped 95% confidence interval of the distribution of values computed per LC unit. Filled bars and symbols above indicate p < 0.05 for sign-rank tests for: (1) H0: median difference between ACClow and ACChigh conditions tested separately for each monkey = 0 (filled bars) and (2) H0: median difference between ACClow and ACChigh conditions tested using data combined from both monkeys = 0 (*none found).\n\nThe mean and variance of ACC spike counts, along with their Fano factor (the ratio of variance over mean), increased steadily as a function of the duration of the counting window. These trends showed an apparent, small relationship with simultaneously measured LC spiking activity, such that the mean, variance, and Fano factor measured in the ACC were, on average, slightly higher for LCzero versus LCnon-zero trials (Figure 2B\u2013D). However, these relationships were not statistically reliable when considering data from both monkeys combined together and only in one case (Figure 2G) when considering data separately for each monkey (sign-rank test for H0: median difference between LCzero and LCnon-zero conditions computed per ACC unit, or ANOVA test for an effect of LC firing rate group, p > 0.05 in all cases; Figure 2B\u2013G). Across ACC units, differences in Fano factor for LCzero versus LCnon-zero trials were associated strongly with differences in spike-count variance and more weakly with differences in spike counts (Figure 2\u2014figure supplement 1).\n\nIn addition, the mean, variance, and Fano factor of LC spike counts also increased steadily as a function of the duration of the counting window. However, none of these trends showed a statistically significant relationship to simultaneously measured ACC spiking activity (sign-rank test and ANOVA, p > 0.05 in all cases; Figure 2\u2014figure supplement 2).\n\n### Coordinated activity during passive fixation\n\nDuring passive fixation, pairs of neurons in ACC had coordinated spiking activity that varied considerably in sign and magnitude across pairs but also, as has been reported previously, depended systematically on the size of the time window used to count spikes (de la Rocha et al., 2007). Specifically, pairwise spike-count correlations (rsc) in ACC had median [IQR] values of 0.03 [\u20130.01 0.07] using 200 ms counting windows and systematically increased and became more variable across pairs with larger counting windows up to 1 s (0.05 [\u20130.03 0.14]; ANOVA test for effect of window size, p = 0.0243).\n\nThese ACC spike-count correlations also depended on the spiking activity of LC neurons measured at the same time. Specifically, the correlations were largest when (1) they were measured using relatively large time windows; (2) for ACC pairs that exhibited relatively large, positive correlations independent of LC firing; and (3) when the simultaneously recorded LC neuron was not active (Figures 3 and 4). For the example ACC pair illustrated in Figure 3A\u2013C, rsc was near zero when computed using relatively small time windows and then increased steadily with increasing bin sizes. The magnitude of these increases in rsc with bin size was larger on trials in which the simultaneously measured LC neuron was not spiking versus spiking (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig3-v2.jpg)\n\n**Figure 3.:** (A) ACC spikes counted in a 200 ms-wide bin. (B) ACC spikes counted in a 1000 ms-wide bin. In (A) and (B), square/diamond markers indicate data from trials in which the simultaneously recorded LC unit had zero/non-zero firing rates. Thin/thick lines are linear fits to these data points, respectively. (C) Spike-count correlation (rsc) for the example ACC pair shown in (A) and (B) as a function of bin size, computed separately for trials in which the simultaneously recorded LC unit had zero/non-zero firing rates, as indicated in (A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) ACC rsc plotted as a function of bin size for each LC spike condition indicated in the legend in (A). The three panels separate data by ACC pairs with rsc values that, without reference to LC firing and for each bin size, were in the lower (A), middle (B), or upper (C) tercile from all recorded ACC pairs. Symbols and error bars are median and bootstrapped 95% confidence intervals across the given set of ACC pairs. (D\u2013F) Difference in ACC rsc between the LCnon-zero condition and the LCzero condition, computed for each ACC pair and plotted separately for the terciles in (A\u2013C), respectively. Bars and error bars are median and bootstrapped 95% confidence intervals across the given set of ACC pairs. Filled bars and symbols indicate p < 0.05 for sign-rank tests for H0: median difference between LCzero and LCnon-zero conditions = 0 tested: (1) separately for each monkey (filled bars) and (2) using data combined from both monkeys (*).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Shuffled ACC rsc data conditioned on LC spiking, separated into terciles (panels, as labeled) of LC-independent values, plotted as in Figure 4A\u2013C. Bootstrapped 95% confidence intervals are plotted as vertical lines (same ordinate scaling as Figure 4; bars and lines too small for visibility in most cases). (B) Probability of obtaining a statistically reliable difference in ACCrsc on LCzero versus LCnon-zero trials (sign-rank test, p < 0.05) in the given number of adjacent time bins tested. The time bins are 200, 400, 600, 800, and 1000 ms, as in (A), tested separately for each of the three terciles. Bars are for shuffled data, markers above bars are for the real (i.e., unshuffled) data, calculated separately for each monkey (shading). Thus, the probability of 0.4 for monkey Sp (light symbol), bin size = 1, corresponds to the 6/15 single bins from Figure 4D\u2013F for which we rejected the null hypothesis that the mean difference = 0. Note that the probability of finding effects in up to three adjacent time bins from the real data was substantially higher than would be expected by chance (i.e., as predicted from the shuffled data).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) For each simultaneously recorded pair of ACC units and single LC unit, the difference in ACC rsc computed from LCnon-zero versus LCzero trials (ordinate) is plotted versus the difference in the mean spike rate of the two ACC units computed from LCnon-zero versus LCzero trials (abscissa). Spearman\u2019s rho = 0.02, p = 0.45. (B) Same as (A) but with the ACC pair Fano factor on the abscissa. Spearman\u2019s rho = 0.05, p = 0.01.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013C) LC rsc plotted as a function of bin size separately for trials in which the simultaneously recorded ACC unit had a relatively low or high firing rate, as indicated in (A). The three panels separate data by LC pairs with rsc values that, without reference to ACC firing and for each bin size, were in the lower (A), middle (B), or upper (C) tercile from all recorded LC pairs. Symbols and error bars are median and bootstrapped 95% confidence intervals across the given set of ACC pairs. (D\u2013F) Difference in LC rsc between ACClow versus ACChigh conditions, relative to the ACC low condition, computed for each LC pair and plotted separately for the terciles in (A\u2013C), respectively. Bars and error bars are median and bootstrapped 95% confidence intervals across the given set of LC pairs. Filled bars and symbols indicate p < 0.05 for sign-rank tests for H0: median difference between ACClow and ACChigh conditions = 0 tested: (1) separately for each monkey (filled bars) and (2) using data combined from both monkeys (*none found).\n\nThe population of ACC pairs exhibited similar trends, with rsc values tending to be smaller on LCnon-zero versus LCzero trials, particularly for larger time windows and for ACC pairs with non-negative LC-independent rsc values. To visualize these effects, we first divided ACC pairs into terciles, according to their LC-independent rsc values (Figure 4). Under these conditions, ACC rsc values from the upper two terciles of LC-independent rsc values were reduced by up to ~50% when computed on trials with at least one or more LC spike versus trials with no LC spikes (Figure 4D\u2013F). The magnitude of these reductions was not related in a consistent manner to the magnitude of LCnon-zero activity (ANOVA test for group effect of LC firing rates > 0). These relationships were not evident on shuffled trials, supporting the idea that the trial-by-trial relationships that we identified were not spurious reflections of the spiking statistics of each region considered separately (Figure 4\u2014figure supplement 1). Furthermore, these LC-linked differences in ACC rsc values did not result simply from changes in ACC neuron firing rates because the two measures were unrelated (Figure 4\u2014figure supplement 2A). We found a weak but statistically reliable relationship between LC-linked changes in ACC rsc and changes in ACC Fano factor (Figure 4\u2014figure supplement 2B).\n\nIn contrast, spike-count correlations (rsc) from simultaneously measured pairs of LC neurons did not depend systematically on concurrently measured ACC activity. In general, ACC-independent LC rsc values were roughly similar to LC-independent ACC rsc values, increasing steadily and becoming more variable as a function of the counting-window size; for example, median [IQR] values were 0.02 [0 0.09] for 200 ms windows and 0.06 [\u20130.02 0.19] for 1 s windows. However, these values did not show reliable differences when compared on trials with high versus low ACC firing, analyzed in the same way as the LC-linked ACC rsc values (Figure 4\u2014figure supplement 3). Moreover, the distributions of these ACC-linked LC rsc values did not appear to come from the same (shifted) distribution as the LC-linked ACC rsc values for all five time bins (Kolmogorov\u2013Smirnov test for H0: both sets of values come from the same distribution, p < 0.0189 in all five cases). Thus, differences in single-unit LC activity were associated with differences in coordinated activity patterns of pairs of neurons in ACC, but differences in single-unit ACC activity were not associated with differences in coordinated activity patterns of pairs of neurons in LC.\n\n### Relationship between pupil diameter, LC spiking, and ACC coordinated activity during passive fixation\n\nTo further examine relationships between coordinated activity in ACC and activation of LC-linked arousal systems, we examined both relative to changes in pupil diameter. During passive fixation, there is a quasi-periodic fluctuation of the pupil (Lowenstein and Loewenfeld, 1969; Pong and Fuchs, 2000; Joshi et al., 2016). Consistent with our previous findings (Joshi et al., 2016), the timing of LC spiking was related to the phase of these ongoing pupil fluctuations, such that LC spiking tended to be higher preceding dilation versus constriction. These modulations showed a systematic precession with dilation phase that corresponded to a delay of ~270 ms from the maximum modulation of LC activity to the relevant pupil change (Figure 5A; median of intercepts from linear regression of per-time-bin peaks of individual LC PETHs; bootstrapped 95% confidence interval from regression for each LC neuron = [177\u2013353 ms]; for examples of pupil cycles and measurement epochs, see Figure 5\u2014figure supplements 1 and 2, respectively).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig5-v2.jpg)\n\n**Figure 5.:** (A) Mean LC spike rate (colormap, in sp/s z-scored per unit) computed in 500 ms-wide bins aligned to the time of occurrence of each pupil phase. For each complete pupil cycle, phase is defined with respect to the maximum rate of dilation (0\u00b0), the maximum size (90\u00b0), the maximum rate of constriction (180\u00b0), and the minimum size (270\u00b0; see Figure 6\u2014figure supplement 1). Thus, the color shown at time = t (abscissa), phase = p (ordinate) corresponds to the mean spiking rate from all LC neurons that occurred in a 500 ms-wide bin centered at t ms relative to the time of pupil phase p. Diagonal structure with a slope of ~\u20130.3 deg/ms implies a consistent relationship between LC firing and pupil phase for the given range of temporal offsets and pupil fluctuations, or hippus, that have a period of ~600 ms (Joshi et al., 2016). (B) ACC rsc aligned to pupil phase, computed as in (A). In both panels, data are combined from all sessions for visualization. Lines are plotted using the median regression coefficients from statistically reliable linear fits (H0: slope = 0, p < 0.05) to the maxima of phase-aligned LC spiking computed per unit (A; median [IQR] slope = \u22120.33 [\u20130.48\u20130.22] deg/ms) and minima of the phase-aligned ACC rsc computed per ACC pair (B; slope = \u22120.41 [\u20130.54\u20130.25] deg/ms).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Example pupil traces from individual trials (rows) showing principal phases (left; 0\u00b0, 90\u00b0, 180\u00b0, and 270\u00b0) and intermediate sampled points (right) used in the pupil analyses shown in Figure 6.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Schematic of a pupil trace from a single trial showing principal phases (left; 0\u00b0, 90\u00b0, 180\u00b0, and 270\u00b0). One analyzed cycle is shown in bold with the time for phase = 90\u00b0 indicated as t90. Locus coeruleus (LC) and anterior cingulate cortex (ACC) spikes were counted in 500 ms bins in a 1.5 s window (indicated by the horizontal line above) and used to calculate the LC PETH and ACC rsc relative to this phase (and similarly for all phases between 0\u00b0 and 360\u00b0, in 15\u00b0 steps).\n\nCombined with our current findings that pairwise correlations in ACC tended to be smaller when LC is active during passive fixation, these results predicted that pairwise correlations in ACC should also vary systematically with the phase of ongoing fluctuations in pupil diameter. We found such a relationship between pupil phase and ACC rsc values. Specifically, over a wide range of pupil phase, decreases in ACC rsc followed increases in LC spiking (the fitted line in panel B is shifted to the right relative to the fitted line in A; note also that increases in ACC rsc, seen as the bright yellow band in the lower-left corner of panel B, occurred even earlier and are examined in more detail in Figure 9). These modulations showed a systematic progression with pupil phase over roughly the same time frame as LC firing, implying that modulations of both LC firing and ACC rsc had relatively fixed temporal relationships to pupil fluctuations and therefore to each other, as well (Figure 5B; Wilcoxon rank-sum test for H0: equal LC PETH and ACC rsc slopes, p = 0.23).\n\n### Single-neuron activity in response to startling events\n\nWe further examined relationships between LC and ACC neural activity in the context of external events that can cause a startle response. We showed previously that a brief, loud sound played on randomly selected fixation trials (\u2018beep trials\u2019) can elicit a transient pupil dilation as well as transient responses from individual LC neurons (Joshi et al., 2016; evoked responses from an example LC neuron are shown in Figure 6A, and the LC population average from three monkeys is shown in Figure 6B). The beep stimulus also elicited a consistent, albeit weaker, response in the ACC (evoked responses from an example ACC neuron are shown in Figure 6D, and the ACC population average from two monkeys is shown in Figure 6E). The averaged ACC response included a slight excitation and then inhibition relative to baseline within 200 ms of stimulus presentation. Although we found some individual cases with a biphasic response (e.g., Figure 6D), the average response likely resulted from the range of heterogeneous responses of individual ACC neurons (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig6-v2.jpg)\n\n**Figure 6.:** (A) Example LC unit spike raster and PSTH relative to beep onset. (B) LC population average response. (C) Fano factor as a function of time relative to beep onset, calculated in 200 ms windows. (D\u2013F) ACC responses relative to beep onset plotted as in (A\u2013C). Lines and ribbons in (B), (C), (E), and (F) indicate mean \u00b1 sem (standard error of the mean) across all trials for all monkeys.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Average PSTHs aligned to beep onset from all units recorded from monkey Sp (A) and monkey Ci (B).\n\nThe startle events also caused transient reductions in the trial-to-trial variability (measured as the Fano factor) of spiking activity of individual neurons in both LC and ACC, with a slightly more sustained effect in the ACC (Figure 6C and F). This reduction in neuronal variability following the onset of a stimulus, also referred to as quenching, has been reported previously for neurons in a range of other cortical regions and for a range of task conditions (Churchland et al., 2010).\n\n### Coordinated activity in response to startling events\n\nIn the ACC, we found no evidence that the startling sound caused systematic changes in coordinated activity when measured independently of the LC response. Specifically, spike-count correlations were highly variable across ACC neuron pairs, with no statistically reliable, systematic differences when compared before versus after the beep (comparing ACC rsc before versus after beep for spikes measured in 1 s bins; Mann\u2013Whitney U-test, p > 0.05 for both monkeys).\n\nIn contrast, we found systematic relationships between the beep-induced changes in coordinated activity in the ACC and the simultaneously measured LC response. Specifically, LC neurons did not show a characteristic transient response on every presentation of a startle stimulus: the median fraction of trials with a response that included a transient increase and then decrease in spiking activity was 54% for monkey Sp and 43% for monkey Ci (Figure 7\u2014figure supplement 1). Therefore, we tested if and how arousal-linked changes in ACC correlated activity depended on whether or not the simultaneously recorded LC neuron responded transiently to the startling sound. Specifically, we computed ACC rsc in time bins of different sizes, separately for 1 s preceding and 1 s following the sound. ACC rsc tended to be larger after versus before the beep stimulus, but only for the subset of trials in which the beep also elicited the characteristic LC response (Figure 6A and B), for both monkeys (Figure 7A). These modulations did not reflect simply transient differences in LC firing rates but rather specific differences between the presence and absence of the stimulus-evoked LC response (Figure 7B). These modulations of ACC pairwise correlations also did not reflect LC-driven differences in the stimulus-driven quenching of response variability in ACC, which was similar on trials with and without LC-evoked responses (Figure 7\u2014figure supplement 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig7-v2.jpg)\n\n**Figure 7.:** (A) Beep-related difference in ACC rsc for trials in which LC had a transient response relative to trials in which LC had no transient response, plotted as a function of the bin size used to count spikes in ACC. Circles and vertical lines are median and bootstrapped 95% confidence estimates across the given set of ACC pairs. (B) Data from \u2018fake-beep trials\u2019 (trials with no beep but sorted according to whether or not there was a transient increase in LC spiking comparable in magnitude to the beep-evoked response), plotted as in (A). In both panels, asterisks indicate Mann\u2013Whitney U-test for H0: median difference in ACC rsc (after relative to before the beep or \u2018fake-beep\u2019) between the two groups (LC-evoked and no-evoked) is different for the given time bin, p < 0.05 for both monkeys\u2019 data pooled together; filled circles indicate sign-rank test for H0: ACC rsc differences (after relative to before the beep) within each group is different from zero, p < 0.05 for both monkeys\u2019 data pooled together.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Histograms showing the proportion of LC neurons from monkeys Sp (A) and Ci (B) that exhibited a characteristic transient response followed by suppression for the given proportion of beep trials. Arrows indicate median values.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Beep-related difference in ACC Fano factor for trials in which LC had an evoked response relative to trials in which LC had no evoked response, plotted as a function of the bin size used to count spikes in ACC. Circles and vertical lines are median and bootstrapped 95% confidence estimates across the given set of ACC neurons. (B) Data from \u2018fake-beep trials\u2019 (trials with no beep but sorted according to whether or not there was a transient increase in LC spiking comparable in magnitude to the beep-evoked response), plotted as in (A). In both panels, Mann\u2013Whitney U-test for H0: median difference in ACC Fano factor (after relative to before the beep or \u2018fake-beep\u2019) between the two groups (LC-evoked and not evoked) is different for the given time bin size, p < 0.05 for both monkeys\u2019 data pooled together (*none found); filled circles indicate sign-rank test for H0: ACC Fano factor differences (after relative to before the beep) within each group is different from zero, p < 0.05 for both monkeys\u2019 data pooled together.\n\n### Relationship between pupil diameter, LC spiking, and ACC coordinated activity in response to startling events\n\nWe showed previously that the magnitude of beep-evoked LC responses is correlated positively with the size of the simultaneously evoked change in pupil diameter (Joshi et al., 2016). We reproduced those results in our current data set (Figure 8\u2014figure supplement 1). We extended those results by showing that these pupil-LC relationships also relate systematically to beep-evoked changes in ACC rsc. Specifically, we measured beep-evoked changes in ACC rsc separately for trials grouped by LC and pupil responses, focusing on how large or small pupil responses related to the evoked-LC versus no-evoked-LC differences in ACC rsc shown in Figure 7. In general, the beep-evoked changes in ACC rsc that required an LC-evoked response were larger on trials in which the evoked LC response was accompanied by a large versus small pupil dilation (Figure 8A). These effects were not evident when considering baseline, not evoked, pupil size (Figure 8B).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig8-v2.jpg)\n\n**Figure 8.:** (A) Difference in ACC rsc computed after versus before the beep plotted as a function of bin size for trials groups based on evoked LC spiking and evoked pupil dilations (groups as indicated in the legend in B). (B) Difference in ACC rsc computed after versus before the beep plotted as a function of bin size for trials groups based on evoked LC and baseline pupil size. Circles and vertical lines are median and bootstrapped 95% confidence estimates across the given set of ACC pairs. In both panels, asterisks indicate Mann\u2013Whitney U-test for H0: median difference in ACC rsc (after relative to before the beep) is different for trials with (LC-evoked) versus without (LC not evoked) a transient LC response for the given bin size, p < 0.05 for both monkeys\u2019 data pooled together; filled circles indicate sign-rank test for H0: ACC rsc differences (after relative to before the beep) within each group is different from zero, p < 0.05 for both monkeys\u2019 data pooled together. An ANOVA with groups (black and gray symbols as indicated in B), bin size, and pupil measure (baseline or evoked) as factors showed reliable effects of group and the interaction between group and pupil measure.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Distribution of correlation coefficients describing unit-specific relationships between the size of the pupil response and the size of the evoked LC response to beep presentation for monkeys Sp (A) and Ci (B). Arrows indicate median values (sign-rank test for H0: median = 0, p < 0.001 in both cases).\n\n### Relative timing of neural activity patterns in LC and ACC\n\nTo better understand the relative timing of firing patterns (both individual neuron firing rate changes and paired-neuron rsc changes) in LC and ACC, we measured their time courses relative to two external events with well-defined timing: onset of stable fixation on no-beep trials and onset of the sound on beep trials (Figure 9). For no-beep trials, LC firing rates increased after the fixation point turned on and before stable fixation was acquired (Figure 9A). This epoch also included elevated ACC rsc (particularly when the simultaneously recorded LC neuron was not active, consistent with the results shown in Figure 4) that preceded the elevation in LC firing (Figure 9B, gray lines). Both LC firing and ACC rsc tended to stabilize after stable fixation was attained. These results are consistent with the possibility that LC activation prior to fixation onset drives (or at least coincides with) a lasting decrease in ACC rsc during the remainder of the trial.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/63490/elife-63490-fig9-v2.jpg)\n\n**Figure 9.:** No-beep trials: (A) LC firing rate aligned to the start of stable fixation. Solid and dotted lines are mean and bootstrapped 95% confidence estimates across the set of LC neurons. (B) Mean and 95% confidence estimates of ACC rsc computed across trials in time bins aligned to the start of stable fixation, separated into trials on which the simultaneously measured LC neuron did not (LC = 0) or did (LC > 0) fire an action potential. Beep trials (C\u2013F). Panels as in (A) and (B), except with LC firing and ACC rsc now aligned to the time of the beep and separated into trials with (C, D) or without (E, F) an LC response to the beep. Red portions of lines indicate Mann\u2013Whitney U-test for H0: per bin value is different from pre-beep baseline, p < 0.05 for both monkeys\u2019 data pooled together. Gray shaded areas in (C\u2013F) indicate epochs in which statistical comparisons were made for trials with (LC-evoked) versus without (LC not evoked) an LC transient response; gold shaded areas indicate epochs in which ACC rsc slopes were compared. For trials, see text.\n\nFollowing a beep, there was a different pattern of relationships between LC firing and ACC rsc. Specifically, we divided trials that did (Figure 9C and D) or did not (Figure 9E and F) have a beep-evoked LC response (like in Figures 7 and 8). In general, the beep caused a transient increase in ACC rsc, and this increase tended to occur more rapidly on trials with (Figure 9D, gold shaded area) versus without (Figure 9F, gold shaded area) a concomitant LC response (Mann\u2013Whitney U-test, for H0: the linear rate of increase of ACC rsc in this period was larger when LC neuron did versus did not respond, p = 0.0297). Note that the LC transient response (Figure 9C) peaked at the beginning of the epoch in which the ACC rsc started to increase, which is consistent with the idea that the LC-evoked response drives (or at least coincides with) a faster rate of ACC rsc increase (steeper slope in the gold region in Figure 9D compared with F). The evoked LC response was also associated with a more reliable and larger increase in ACC rsc later in the trial (compare Figure 9D and F; Mann\u2013Whitney U-test for H0: ACC rsc 500\u20131000 ms after the beep was the same on trials with versus without a beep-evoked LC response, p = 0.0350 for both monkeys\u2019 data pooled together) but was not associated with differences in ACC rsc in the time just before the beep (i.e., ACC rsc did not anticipate whether or not the beep would evoke an LC response; Mann\u2013Whitney U-test for H0: ACC rsc \u2013500\u20130 ms before the beep was the same on trials with versus without a beep-evoked LC response, p = 0.0693 for both monkeys\u2019 data pooled together).\n\n## Discussion\n\nWe measured relationships between pupil-linked activation of the LC-NE system and changes in cortical neural activity patterns. Previously, we showed that changes in pupil size during passive, near fixation and when driven by external startling events covary with the timing of spiking activity in LC and parts of brainstem and cortex, including the ACC (Joshi et al., 2016). Other studies have shown that pupil size and other indirect measures of LC activation can also correspond to changes in coordinated activity in sensory cortex under certain conditions (Reimer et al., 2014; Reimer et al., 2016; Vinck et al., 2015; McGinley et al., 2015). These previous studies did not explore the relationships between ongoing versus evoked LC activation (or NE release) and concurrent changes in both coordinated cortical activity and pupil size. We extended those findings, including one study that elicited changes in coordinated activity in cortex via manipulation of LC activity (Devilbiss and Waterhouse, 2011), by showing that LC neuronal activity is reliably associated with changes in correlated spiking activity (spike-count correlations, or rsc) between pairs of neurons in ACC. We further showed that these LC-linked changes in ACC rsc depend on the nature of the LC activation. During passive fixation and in the absence of controlled external inputs, ongoing LC firing was associated with a reduction in ACC rsc. In contrast, startling sounds drove transient increases in LC firing that were associated with an increase in ACC rsc. Under both conditions, LC and pupil-linked changes in ACC rsc were most pronounced over relatively long time windows (>500 ms) that are consistent with neuromodulatory timescales and thus might involve the effects of LC-mediated NE release in the ACC (Feldman RS et al., 1997; McCormick and Prince, 1988; Wang and McCormick, 1993; Schmidt et al., 2013; Timmons et al., 2004).\n\nThe context dependence of these effects implies that spontaneous versus sensory-evoked activation of the LC-NE system can have different effects on coordinated patterns of activity in cortical networks. These effects seem likely to involve the different LC firing patterns under these conditions, which for sensory-evoked activity include not just a large, transient increase in spike rate but also a reduction in spike-count variability and heterogenous relationships to pupil-linked changes in arousal (Joshi et al., 2016). In principle, different temporal patterns of NE release could mediate a range of synaptic effects via distinct NE receptor subtypes with different affinities and different spatial distributions in different parts of the brain (Aoki et al., 1987; Nicholas et al., 1993; Arnsten et al., 1998; Arnsten, 2000; Berridge et al., 2012; Berridge and Spencer, 2016). These synaptic effects can influence both excitatory and inhibitory neurons as well as astrocytes, resulting in changes in network dynamics in thalamus, cortex, and elsewhere (Segal and Bloom, 1976; Dillier et al., 1978; Waterhouse et al., 1980; McCormick and Prince, 1988; Wang and McCormick, 1993; McLean and Waterhouse, 1994; Fern\u00e1ndez-Pastor and Meana, 2002; Salgado et al., 2011; Salgado et al., 2016; Paukert et al., 2014; Guan et al., 2015; Schiemann et al., 2015; Sherpa et al., 2016; Garcia-Junco-Clemente et al., 2019; Aston-Jones and Cohen, 2005; Ohshima et al., 2017; Rodenkirch et al., 2019). Exactly how these diverse mechanisms support context-dependent changes in coordinated activity patterns merits further study, perhaps by selectively controlling the magnitude and timing of NE release in cortex while assessing changes in coordinated activity and using biophysically inspired models to test hypotheses about the underlying mechanisms (de la Rocha et al., 2007; Doiron et al., 2016).\n\nIn contrast to the relationships that we identified between LC activation and coordinated ACC activity patterns, we did not find similarly reliable relationships between the spiking activity of individual neurons measured simultaneously in each of the two brain regions. For example, we found slight increases and decreases in mean firing rates and a marked reduction in the trial-to-trial variability of firing rates of individual units in the ACC in response to external stimuli, as has been reported previously for other cortical regions (Churchland et al., 2010). However, these changes in single-unit ACC responses were not related reliably to properties of the concurrently measured LC response that we could measure and thus may involve mechanisms other than the LC-NE system. These findings do not appear to be consistent with previous work showing improvements in signal-to-noise ratios in cortex in response to LC-NE activation or during states of higher versus lower global arousal (Kolta et al., 1987; McLean and Waterhouse, 1994; Lee et al., 2018; Lombardo et al., 2018). This difference could reflect differences in the specific neurons that we targeted in ACC, the different task conditions we tested relative to previous studies, analyses based on ongoing versus evoked LC activity, or some combination of these factors, and merits further study.\n\nWhat might be the function of LC- and arousal-linked changes in ACC correlations? In general, correlations in spiking activity can be useful or detrimental depending on a number of factors, many of which remain unexplored, particularly outside of sensory cortex (Averbeck et al., 2006; Cohen and Kohn, 2011; Kohn et al., 2016). For example, an increase in correlations is considered a possible mechanism for connecting neural populations over a range of spatial and temporal scales (Gray et al., 1989; Singer, 1999; Riehle et al., 1997). Some computational schemes can benefit from increases in correlated variability (Abbott and Dayan, 1999; Singer and Gray, 1995; Gray, 1999; Kohn et al., 2016; Valente et al., 2021). However, an increase in correlations can also negatively impact the information coding capacity of a large neural population, particularly over longer integration windows (Zohary et al., 1994; Bair et al., 2001; Averbeck et al., 2006; Renart et al., 2010; but also see Nirenberg and Latham, 2003 Moreno-Bote et al., 2014, for alternative interpretations). Global states such as arousal and attention (traditionally linked with LC-NE and cholinergic systems, respectively) can modulate cortical correlations (Cohen and Maunsell, 2009; Mitchell et al., 2009; Herrero et al., 2013; Schmidt et al., 2013). Some work has also suggested that correlations induced by common inputs must be actively decorrelated by the action of local recurrent excitation and inhibition to preserve information fidelity (Ecker et al., 2010; Renart et al., 2010).\n\nOur results suggest that both increases and decreases in coordinated neural activity patterns in cortex may be under context-dependent, moment-by-moment control of the LC-NE system. Event-driven transient activation of LC could help to synchronize populations of cortical neurons by shifting them to a more correlated state. Conversely, during nonevoked, ongoing (event-independent) firing, the NE release could enhance information processing and signal-to-noise ratios by reducing cortical correlations. Further work is needed to identify if and how NE-mediated changes in network dynamics subserve these functions, particularly in the context of goal-directed behaviors that involve multiple brain regions, including LC and ACC, as well as other neuromodulator systems (Hayden et al., 2011; Varazzani et al., 2015; Ebitz and Platt, 2015; Alamia et al., 2019).\n\n## Materials and methods\n\nThree adult male rhesus monkeys (Macaca mulatta) were used for this study (monkeys Oz, Ci, and Sp). All training, surgery, and experimental procedures were performed in accordance with the NIH\u2019s Guide for the Care of Use of Laboratory Animals and were approved by the University of Pennsylvania Institutional Animal Care and Use Committee (protocol 806027). The behavioral task and pupillometry recording and analysis techniques were identical to those we used previously (Joshi et al., 2016). Briefly, fixation trials were of variable length (1\u20135 s, uniformly distributed). The monkey was rewarded with a drop of water or diluted Kool-Aid for maintaining fixation until the end of the trial. On a subset of randomly chosen trials (~25%), after 1\u20131.5 s of fixation a sound (1 kHz, 0.5 s) was played over a speaker in the experimental booth (\u2018beep trials\u2019). The monkey was required to maintain fixation through the presentation of the sound, until the fixation point was turned off.\n\n### Electrophysiology\n\nEach monkey was implanted with a recording cylinder that provided access to LC+ (the LC and adjacent, NE-containing subcoeruleus nucleus; Sharma et al., 2010; Paxinos et al., 2008; Kalwani et al., 2014), inferior colliculus (IC), and superior colliculus (SC). The detailed methodology for targeting and surgically implanting the recording cylinder and then targeting, identifying, and confirming recording sites in these three brain regions is described in detail elsewhere (Kalwani et al., 2014; Joshi et al., 2016). Briefly, the LC was targeted initially using custom (Kalwani et al., 2009) and/or commercial software (Brainsight). Tracks were then refined using electrophysiological recordings and microstimulation in brain regions dorsal to LC. Neurons in the intermediate layers of SC (SCi) exhibited spatial tuning on a visually guided saccade task and could elicit saccades via electrical microstimulation (Robinson, 1972; Sparks and Nelson, 1987). IC units exhibited clear responses to auditory stimuli. Activity in the trigeminal mesencephalic tract (me5), located immediately dorsal to the LC, showed distinct activity related to orofacial movements such as sipping. LC+ units had relatively long action potential waveforms, were sensitive to arousing external stimuli (e.g., door knocking), and decreased firing when the monkey was drowsy (e.g., eyelids drooped; Aston-Jones et al., 1994; Bouret and Sara, 2004; Bouret and Richmond, 2009). Nonoptimal tracks also helped with mapping; for example, a more medial track could miss me5 but lead to the trochlear decussation with characteristic ramp-and-hold activity related to downward saccades. Likewise, tracks that encountered IC but not SCi were likely too lateral and often missed me5 and LC. Sites were verified using MRI and assessing the effects of systemic injection of clonidine on LC+ responses in monkeys Oz and Ci and by histology with electrolytic lesions and electrode-tract reconstruction in monkey Oz (Kalwani et al., 2014). Recording and microstimulation in these brainstem-targeting tracks were conducted using custom-made electrodes (made from quartz-coated platinum-tungsten stock wire from Thomas Recording) and a Multichannel Acquisition Processor (Plexon, Inc).\n\nACC cylinders were placed at Horsley\u2013Clarke coordinates 33 mm anterior-posterior (AP), 8 mm lateral (L), in the left hemisphere for monkey Sp and in the right hemisphere for monkey Ci. For ACC recordings, we targeted the dorsal bank of the anterior cingulate sulcus, ~4\u20136 mm below the cortical surface. ACC tracks were planned and refined using MRI and Brainsight software, as well as by listening for characteristic patterns of white and gray matter during recordings in an initial series of mapping experiments. Recordings were conducted using either custom-made single electrodes or multicontact linear electrode arrays (8- and 16-channel V-probe, Plexon).\n\nFor each brain region, we recorded and analyzed data from all stable, well-isolated units that we encountered. Neural recordings were filtered between 100 Hz and 8 kHz for spikes (Plexon MAP). Spikes were sorted offline (Plexon offline sorter). Electrical microstimulation in SCi consisted of biphasic (negative-positive) pulses, 0.3 ms long, 100 ms in duration, and delivered at 300 Hz via a Grass S-88 stimulator through a pair of constant-current stimulus isolation units (Grass SIU6) that were linked together to generate the biphasic pulse.\n\n### Data analysis\n\nFor each recorded neuron, we considered spiking activity only during stable fixation, defined as a 1.1 s window that began 1 s after attaining fixation in which the monkey\u2019s gaze remained within a square window 0.2\u00b0 per side centered on the fixation point. To assess ACC spiking activity patterns conditioned on LC activation, we divided trials within each session based on whether the single LC neuron from which recordings were being made either did (LCnon-zero) or did not (LCzero) produce at least one action potential during stable fixation. We also divided session trials into four additional groups of trials in which the LC neuron fired 1, 2, 3, and \u22654 spikes.\n\nWe used 10 bin sizes ranging from 100 ms to 1 s, spaced logarithmically, to count spikes. The mean spike count, variance of spike counts, and the Fano factor (the ratio of the variance to the mean of spike counts) for each neuron were calculated across trials for each bin size. Pairwise spike-count correlations (rsc) were calculated for each bin size as follows. First, trial spike counts from each neuron in the pair were z-scored, and trials on which the response of either neuron was >3 standard deviations different from its mean were removed to avoid effects of outlier responses (Kohn and Smith, 2005; Smith and Kohn, 2008). Then, the MATLAB function corrcoef was used to obtain the Pearson correlation coefficient. Shuffled estimates were made by calculating rsc from pairs of neurons with spike-count vectors generated from randomly selected trials for each neuron.\n\nACC rsc values were calculated for all trials for each pair of well-isolated neurons, independently of spiking in LC and also separately for trials divided into groups depending on spiking in LC (LCzero and the five LC > 0 groups). The LC-independent rsc values collected from all pairs and measured using ACC spikes counted using each time bin were divided into terciles that corresponded broadly to pairs that were negatively correlated (tercile 1), uncorrelated (tercile 2), or positively correlated (tercile 3). This analysis allowed us to assess whether changes in rsc in one region associated with spiking in the other region depended on the pairs being correlated to begin with or not.\n\n### Data Availability Statement\n\nData and Matlab code for all figures in this manuscript are available at here copy archived at swh:1:rev:22b8c94380c057201fb1fcc56c6037b70c56021c; Joshi and Gold, 2021.\n",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "ca692bc6-4b16-4029-afe0-73b8764ce814",
+      "submission_id": "46149c28-c22d-4e7e-afa3-6c5ff0c22c4a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Erin L Rich, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63490.sa0](https://doi.org/10.7554/eLife.63490.sa0)\n\nThis is a timely and important study that systematically assesses the relationships between neuronal activity in the locus coeruleus (LC) and the anterior cingulate cortex (ACC) in non-human primates. The LC is a major source of cortical norepinephrine that has reciprocal connectivity with the ACC, and the authors have convincingly shown that LC spiking is associated with changes in ACC spike correlations. Further, these changes have consistent phase relationships with pupil size. This is a rare data set that is technically challenging to acquire, and the results are an important advance toward understanding a circuit that is likely to play a role in regulating brain states such as arousal or attention.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Erin L Rich, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63490.sa1](https://doi.org/10.7554/eLife.63490.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Relationships between Locus Coeruleus Firing Patterns and Coordinated Neural Activity in the Anterior Cingulate Cortex\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tirin Moore as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Tobias H Donner (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below primarily address clarity and presentation.\n\nSummary:\n\nThis is a monkey neurophysiology study into the neuronal basis of arousal in the primate brain. The authors systematically assess the relationship between neuronal activity in an important neuromodulatory center of the brainstem, the locus coeruleus (LC), and a reciprocally connected cortical region, the anterior cingulate cortex (ACC). LC is a major source of cortical norepinephrine (NE), so LC spikes may predict momentary changes in cortical NE. Pupil size, also measured here, is sometimes used as a peripheral index of NE levels in the cortex, though this is also correlated with a variety of other factors, including other neuromodulators. The authors have three main conclusions. First, spikes in LC neurons predicted a decrease in the Fano factor in ACC and a decrease in the pair-wise correlations (rsc) between highly correlated ACC neurons. Second, both LC spikes and ACC rsc appeared to have a consistent phase relationship with pupil size, with the troughs in ACC rsc lagging LC spikes. Third, LC spikes predicted changes in the relationship between surprising stimuli and ACC rsc, as well as the relationship between the pupil response to surprising stimuli and ACC rsc. The authors also mention that these changes are independent of the relationship of LC activity and ACC firing rates.\n\nOverall, the reviewers felt that this is a timely and important study, particularly because the LC-ACC circuit is under-characterized in primates. The major strengths of the study include the rarity of the data set, the technical sophistication of the analyses, and the investigation of LC-ACC relationships across multiple timescales. However, it was felt that revisions are needed to make some points convincingly, and in other cases the inherent limitations in the analyses should be more thoroughly acknowledged. The specific comments on these points are outlined below.\n\nEssential revisions:\n\n1. The analyses in this study do not directly assess causality or directionality of the interactions reported. This was noted my multiple reviewers, with specific points in the comments below. In addition to these points, in light of the difficulty in claiming causality or directionality from recording data, and it was agreed that there should be a general restructuring of the interpretation to reflect this limitation.\n\na. While the data are very interesting and compelling in their current form. I think that some limitations of the current analyses should be acknowledged. Specifically, the analyses do not allow for inferences about the directionality of effects. So, it remains open if the changes of LC firing rate cause the changes in spike-count correlations in ACC (as seems likely), or vice-versa; or if a third variable causes the effects in both brain regions? Even without causal manipulations, inferences of this kind could be based on an assessment of the temporal relationships of changes in the local signal properties. It could also be based on statistical assessments (e.g. using multivariate autoregressive modeling) of \"Granger causality\".\n\nb. Related to \"Single-neuron activity during passive fixation\"/Figure 2. I'm curious to understand the direction of this effect \u2013 does variance in ACC predict spike counts in LC or do spikes in LC predict variance in ACC? Is it possible to look at spike-evoked Fano factor in the ACC (i.e. before and after an LC spike)? Figure 6 is described as implying that these LC spikes and ACC rsc are temporally related, but this is only analyzed as mediated by the relationship between each and pupil size, but this temporal relationship appears not to be investigated directly (\"relatively fixed temporal relationships to pupil fluctuations and therefore to each other\").\n\nc. The authors do nice internal controls testing not only LC-ACC effects, but also ACC-LC effects. They describe that LC-ACC are significant, while the ACC-LC effects are less reliable. This is important for their claims but also as a validation of the analyses. Did the authors formally compare whether there are significant differences between ACC-LC and LC-ACC effects? Showing that ACC-LC is not significant does not address this per se. Slopes (Figure 5) can definitely be tested for LC-ACC vs ACC-LC. (e.g., is the slope more negative in one versus the other).\n\nd. Figure 6A, in the legend is described as evidence that LC spikes have a consistent phase relationship with pupil fluctuations that have a period of 600 ms. In the text, this result is taken as evidence that LC peaks 270 ms in advance of the \"relevant pupil change\" (I'm not entirely clear what pupil phase is being referenced by this phrase). Are these different interpretations? Do LC spikes have a fixed relationship to one component of the pupil fluctuations (like dilation or the cresting at peak size) or are they entrained to the oscillation? Also, it would be good to cite Pong and Fuchs 2000 J Neurophysiol in addition to Joshi, 2016 as evidence for hippus in the monkey at this 1.67 Hz frequency.\n\ne. Related, in Figure 6B, it looks (to my eye) like ACC rsc is also peaking in advance of the trough highlighted in this figure. This would suggest an alternative model, where high rsc in ACC predicts spontaneous LC spiking, and then lower rsc in ACC. This alternative might more in line with Alla Karpova's work that focuses on the effects of ACC on LC activity, rather than the LC-ACC relationship that is the focus of this paper.\n\n2. A major caution in interpreting these results is that the paper performs a lot of multiple comparisons in nested bins, and it is not clear that the multiple comparison problem is appropriately controlled for. Many effects appear obvious in the plots suggesting that the three major results would survive correction (i.e. Figure 2G), but for some of the latter analyses it is not clear that effects would survive correction. This problem is complicated by the fact that the tests are strongly interdependent, so it's not clear that a simple correction would be sufficient. It may be more appropriate to conduct permutation tests, or directly ask how independent variables alter how the dependent variable scales with bin sizes.\n\n3. There was some confusion surrounding the motivation for the study as stated in the Introduction. Specifically, the tonic/phasic dichotomy is mentioned in the introduction, but it appears that this was not directly investigated in the rest of the manuscript. Moreover, it was noted that this dichotomy may not be so clear-cut. There may be some overlap with the ideas of ongoing/evoked activity, as in the Aston-Jones and Cohen (2005) framework, however the links between these perspectives are not explored. Reviewers recommend either describing in more detail how the tonic/phasic perspectives motivated the study, or removing this from the introduction and better explaining why one might be curious about the relationship between LC spikes and ACC activity. In the same vein, it would also be helpful to motivate the specific analyses that were performed. Later analyses were well motivated, but the rationale behind the first few were less clear.\n\n4. The authors claim that the firing rate changes in ACC are not reliably related to LC activity, yet the effects appear significant when monkeys are combined? As the authors know, short times scale firing rate correlations (and cross correlations) even in anatomically connected areas are very hard to detect but nonetheless could be real. I think the authors need to take these effects into account to make a convincing case that the other effects they focus on cannot be explained by small population level shifts in rate (or also particularly in fano factor which is highly relevant to population level correlations). I believe this is in their data but it should be fleshed out and the above points should be discussed.\n\n5. Two conceptual points were raised that should be addressed in the discussion or elsewhere:\n\na. It is reported that LC phasic activity related to bottom up salient cues (e.g. \"surprise\" or \"startle\") increases correlations in ACC, so does this mean the ACC is able to encode less information during surprising events as would be predicted by most theories of correlated activity and information coding in cortex? This has interesting implications for ACC functions, if true.\n\nb. The current literature on LC is very preliminary and theoretic. Precisely, while strong assumptions exist about what it encodes, we don't know if it encodes RPEs, surprises, intense sensory events, higher order RPEs (e.g. some belief state violation related signal), etc. It looks like it is likely complex, however the present task is very simple and may miss important nuances in the LC-ACC network. It is important to point this out and explicitly indicate early in the paper that the procedure is meant to \"elicit\" LC firing states, rather than test what Lc encodes.\n\n6. It was concluded that LC activity has a context-dependent effect on ACC rsc, increasing it during passive viewing, but not changing it with LC activity is evoked by a surprising event. However, this conclusion is based on comparing post-stimulus ACC rsc to the pre-stimulus baseline, which does not rule out the alternative interpretation that ACC activity before a surprising event predicts the likelihood of an LC spike. To elaborate, it seems like there is largely a change in the pre-beep, baseline ACC rsc in this data. This would imply that elevated ACC rsc before beep trials predicts no phasic response in LC. If so, the decrease in ACC rsc after LC might be a simple homeostatic effect (i.e. due to the tendency to return to baseline), rather than a context-dependent effect of LC spikes on ACC rsc. Did the authors consider this alternative model? Further, the paper does not show that the pattern of ACC rsc after a surprising beep is any different following an LC spike than it is in the absence of an LC spike.\n\n7. In Figure 8, it's not clear if the effects are due to the fact that beep-evoked changes are happening over longer time scales or if they're happening at different latencies relative to the beep (i.e. the longer bin sizes are ambiguous here). The latter seems most likely, given that there's no change in the peak of the quenching with LC spikes, but it would be helpful to clarify this point.\n",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "51793cbf-3eb6-42f5-927a-5797336002b6",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C1",
+      "claim": "Ascending neuromodulatory projections from the locus coeruleus (LC) affect cortical neural networks via the release of norepinephrine (NE).",
+      "claim_type": "EXPLICIT",
+      "source": "Ascending neuromodulatory projections from the locus coeruleus (LC) affect cortical neural networks via the release of norepinephrine (NE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in neuroscience supported by the broader scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "4f0b8163-a13f-42f4-971e-427509d9e8bc",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C2",
+      "claim": "In awake monkeys, LC activation is associated with changes in coordinated activity patterns in the anterior cingulate cortex (ACC).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that in awake monkeys, LC activation is associated with changes in coordinated activity patterns in the anterior cingulate cortex (ACC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "5412aec9-237d-433e-a39e-cbe76ee942fc",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C3",
+      "claim": "The relationships between LC activation and ACC coordinated activity patterns are largely independent of changes in firing rates of individual ACC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These relationships, which are largely independent of changes in firing rates of individual ACC neurons, depend on the type of LC activation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing no reliable relationships between LC and ACC single-neuron firing rates (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "c15c63ac-81b5-4ec0-9c9e-8062a23f1eca",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C4",
+      "claim": "ACC pairwise correlations tend to be reduced when ongoing (baseline) LC activity increases.",
+      "claim_type": "EXPLICIT",
+      "source": "ACC pairwise correlations tend to be reduced when ongoing (baseline) LC activity increases but enhanced when external events evoke transient LC responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data in Figures 3-5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "9474ad80-8093-404a-81b2-b63c8323e7b0",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C5",
+      "claim": "ACC pairwise correlations are enhanced when external events evoke transient LC responses.",
+      "claim_type": "EXPLICIT",
+      "source": "ACC pairwise correlations tend to be reduced when ongoing (baseline) LC activity increases but enhanced when external events evoke transient LC responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data in Figures 7-8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "3a6e8885-3044-4ceb-be77-8b110751fca1",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C6",
+      "claim": "Both relationships between LC activation and ACC correlations covary with pupil changes that reflect LC activation and arousal.",
+      "claim_type": "EXPLICIT",
+      "source": "Both relationships covary with pupil changes that reflect LC activation and arousal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figures 5 and 8 showing relationships between pupil changes, LC activity, and ACC correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "919efde8-7a56-4c13-b462-2b3f6211c372",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C7",
+      "claim": "Changes in brain state are associated with different levels of arousal, attention, motivation, surprise, and other factors that can affect the activity patterns of large populations of cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in brain state are associated with different levels of arousal, attention, motivation, surprise, and other factors that can affect the activity patterns of large populations of cortical neurons (McAdams and Maunsell, 1999; Purcell et al., 2012; Chang et al., 2012; Falkner et al., 2013; Downer et al., 2015; Ecker et al., 2016; Thiele et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "964f1d02-a4f9-4681-89b3-26e770c7093e",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C8",
+      "claim": "Changes in cortical activity patterns are thought to result, in part, from the widespread release of neuromodulators.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes are thought to result, in part, from the widespread release of neuromodulators (Aoki et al., 1987; Devauges and Sara, 1990; Schultz et al., 1993; Dalley et al., 2001; Bouret and Sara, 2005; Aston-Jones and Cohen, 2005; McGaughy et al., 2008; Salamone et al., 2009; Pinto et al., 2013; Varazzani et al., 2015; Khani and Rainer, 2016; Minces et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "ede87920-0795-4857-8f11-863fc6cb45ee",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C9",
+      "claim": "Different neuromodulatory systems have different anatomical and physiological properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Different neuromodulatory systems have different anatomical and physiological properties (Kupfermann, 1979; Aoki et al., 1987; Xiang et al., 1998; Flores-Hernandez et al., 2000; Fern\u00e1ndez-Pastor and Meana, 2002; Ding and Perkel, 2002; Salgado et al., 2011; Herrero et al., 2013; Sugihara et al., 2016; Doyle and Meeks, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "899167fb-9b9c-46e2-be00-68134d16c58d",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C10",
+      "claim": "The ACC has strong reciprocal connectivity, both structural and functional, with the LC.",
+      "claim_type": "EXPLICIT",
+      "source": "We targeted the ACC because it has strong reciprocal connectivity, both structural and functional, with the LC (Lewis et al., 1979; Morrison et al., 1979; Porrino and Goldman-Rakic, 1982; Jones and Olpe, 1984; Fern\u00e1ndez-Pastor et al., 2005; Gompf et al., 2010; Chandler and Waterhouse, 2012; Chandler et al., 2013; Tervo et al., 2014; K\u00f6hler et al., 2016; De Gee et al., 2017; Koga et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "ed688e53-0f1d-4d3a-a796-6c1ccf3d1e03",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C11",
+      "claim": "ACC neural activity can encode computations that underlie adaptive, goal-directed behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ACC neural activity can encode computations that underlie adaptive, goal-directed behaviors, including those that are also associated with indirect measures of LC-linked arousal, such as changes in pupil size and the P300 component of the event-related potential (ERP; Shima and Tanji, 1998; Gehring and Willoughby, 2002; Holroyd and Coles, 2002; Critchley et al., 2005; Matsumoto et al., 2007; Hayden et al., 2011; Shenhav et al., 2013; Ebitz and Platt, 2015; Sarafyazd and Jazayeri, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "9e2dbf21-ccfa-4ba2-a771-11bb6b49bd65",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C12",
+      "claim": "During passive fixation, LC neurons were weakly active, with no spikes measured on more than a third of all trials.",
+      "claim_type": "EXPLICIT",
+      "source": "During passive fixation, LC neurons were weakly active, with no spikes measured on more than a third of all trials and otherwise a median (interquartile range [IQR]) firing rate of 1.8 [0.9\u20133.6] sp/s measured during 1.1 s of stable fixation (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "8e257f53-40a9-4351-8e84-aa1424d0aa90",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C13",
+      "claim": "The median firing rate of LC neurons during stable fixation was 1.8 [0.9\u20133.6] sp/s.",
+      "claim_type": "EXPLICIT",
+      "source": "During passive fixation, LC neurons were weakly active, with no spikes measured on more than a third of all trials and otherwise a median (interquartile range [IQR]) firing rate of 1.8 [0.9\u20133.6] sp/s measured during 1.1 s of stable fixation (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "ebf09c48-e236-44ff-b0ba-68e57968c723",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C14",
+      "claim": "The mean and variance of ACC spike counts increased steadily as a function of the duration of the counting window.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean and variance of ACC spike counts, along with their Fano factor (the ratio of variance over mean), increased steadily as a function of the duration of the counting window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "a16e7a8c-1323-4321-b66b-0cf955dc12ff",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C15",
+      "claim": "The Fano factor of ACC spike counts increased steadily as a function of the duration of the counting window.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean and variance of ACC spike counts, along with their Fano factor (the ratio of variance over mean), increased steadily as a function of the duration of the counting window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "29bc02f0-1b41-47fa-ba4e-725fc3efda89",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C16",
+      "claim": "The mean, variance, and Fano factor measured in the ACC were, on average, slightly higher for LCzero versus LCnon-zero trials, but these relationships were not statistically reliable.",
+      "claim_type": "EXPLICIT",
+      "source": "These trends showed an apparent, small relationship with simultaneously measured LC spiking activity, such that the mean, variance, and Fano factor measured in the ACC were, on average, slightly higher for LCzero versus LCnon-zero trials (Figure 2B\u2013D). However, these relationships were not statistically reliable when considering data from both monkeys combined together and only in one case (Figure 2G) when considering data separately for each monkey (sign-rank test for H0: median difference between LCzero and LCnon-zero conditions computed per ACC unit, or ANOVA test for an effect of LC firing rate group, p > 0.05 in all cases; Figure 2B\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "4790603d-9fab-48b0-ae9c-13b9948381c6",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C17",
+      "claim": "Pairwise spike-count correlations (rsc) in ACC had median [IQR] values of 0.03 [\u20130.01 0.07] using 200 ms counting windows.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, pairwise spike-count correlations (rsc) in ACC had median [IQR] values of 0.03 [\u20130.01 0.07] using 200 ms counting windows and systematically increased and became more variable across pairs with larger counting windows up to 1 s (0.05 [\u20130.03 0.14]; ANOVA test for effect of window size, p = 0.0243).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "29982d30-0a56-446e-ba38-d2ebaec8cde4",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C18",
+      "claim": "ACC spike-count correlations systematically increased and became more variable across pairs with larger counting windows up to 1 s (0.05 [\u20130.03 0.14]).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, pairwise spike-count correlations (rsc) in ACC had median [IQR] values of 0.03 [\u20130.01 0.07] using 200 ms counting windows and systematically increased and became more variable across pairs with larger counting windows up to 1 s (0.05 [\u20130.03 0.14]; ANOVA test for effect of window size, p = 0.0243).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and statistical analysis (ANOVA test, p = 0.0243).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "307fb618-67ff-49bc-8227-5fcf9d72fd1e",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C19",
+      "claim": "ACC spike-count correlations were largest when measured using relatively large time windows, for ACC pairs that exhibited relatively large, positive correlations independent of LC firing, and when the simultaneously recorded LC neuron was not active.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the correlations were largest when (1) they were measured using relatively large time windows; (2) for ACC pairs that exhibited relatively large, positive correlations independent of LC firing; and (3) when the simultaneously recorded LC neuron was not active (Figures 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "7a53d006-1481-4bc1-ae34-321f4a4678c4",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C20",
+      "claim": "ACC rsc values from the upper two terciles of LC-independent rsc values were reduced by up to ~50% when computed on trials with at least one or more LC spike versus trials with no LC spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, ACC rsc values from the upper two terciles of LC-independent rsc values were reduced by up to ~50% when computed on trials with at least one or more LC spike versus trials with no LC spikes (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "4328d61e-a42a-4e91-bd7d-dc6a49f43c0c",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C21",
+      "claim": "The magnitude of reductions in ACC rsc was not related in a consistent manner to the magnitude of LCnon-zero activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of these reductions was not related in a consistent manner to the magnitude of LCnon-zero activity (ANOVA test for group effect of LC firing rates > 0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis (ANOVA test).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "e28d2960-f4d7-461b-89a3-6f402a42331f",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C22",
+      "claim": "LC-linked differences in ACC rsc values did not result simply from changes in ACC neuron firing rates because the two measures were unrelated.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these LC-linked differences in ACC rsc values did not result simply from changes in ACC neuron firing rates because the two measures were unrelated (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "d7eefb2b-9c02-4adb-ba63-77016173aa58",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C23",
+      "claim": "There was a weak but statistically reliable relationship between LC-linked changes in ACC rsc and changes in ACC Fano factor.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a weak but statistically reliable relationship between LC-linked changes in ACC rsc and changes in ACC Fano factor (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "1ef00c4a-d1da-4800-844b-b8b7ad586833",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C24",
+      "claim": "Spike-count correlations (rsc) from simultaneously measured pairs of LC neurons did not depend systematically on concurrently measured ACC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, spike-count correlations (rsc) from simultaneously measured pairs of LC neurons did not depend systematically on concurrently measured ACC activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "13e7f398-9ea5-44a2-9f9f-69e659bfaeca",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C25",
+      "claim": "ACC-independent LC rsc values were roughly similar to LC-independent ACC rsc values, increasing steadily and becoming more variable as a function of the counting-window size.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, ACC-independent LC rsc values were roughly similar to LC-independent ACC rsc values, increasing steadily and becoming more variable as a function of the counting-window size; for example, median [IQR] values were 0.02 [0 0.09] for 200 ms windows and 0.06 [\u20130.02 0.19] for 1 s windows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "806a9072-c5bc-4b6e-82ed-4c13b7560c4f",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C26",
+      "claim": "Differences in single-unit LC activity were associated with differences in coordinated activity patterns of pairs of neurons in ACC, but differences in single-unit ACC activity were not associated with differences in coordinated activity patterns of pairs of neurons in LC.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, differences in single-unit LC activity were associated with differences in coordinated activity patterns of pairs of neurons in ACC, but differences in single-unit ACC activity were not associated with differences in coordinated activity patterns of pairs of neurons in LC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figures 4 and 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "c1300416-4936-43c1-99f4-63f7316fb905",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C27",
+      "claim": "During passive fixation, there is a quasi-periodic fluctuation of the pupil.",
+      "claim_type": "EXPLICIT",
+      "source": "During passive fixation, there is a quasi-periodic fluctuation of the pupil (Lowenstein and Loewenfeld, 1969; Pong and Fuchs, 2000; Joshi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "fa9a11ea-4663-47ff-99e9-a495f0450945",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C28",
+      "claim": "The timing of LC spiking was related to the phase of ongoing pupil fluctuations, such that LC spiking tended to be higher preceding dilation versus constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous findings (Joshi et al., 2016), the timing of LC spiking was related to the phase of these ongoing pupil fluctuations, such that LC spiking tended to be higher preceding dilation versus constriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 5A and prior research (Joshi et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "3d9fd38b-28de-4e97-95cb-1c5f03840272",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C29",
+      "claim": "LC spiking modulations showed a systematic precession with dilation phase that corresponded to a delay of ~270 ms from the maximum modulation of LC activity to the relevant pupil change.",
+      "claim_type": "EXPLICIT",
+      "source": "These modulations showed a systematic precession with dilation phase that corresponded to a delay of ~270 ms from the maximum modulation of LC activity to the relevant pupil change (Figure 5A; median of intercepts from linear regression of per-time-bin peaks of individual LC PETHs; bootstrapped 95% confidence interval from regression for each LC neuron = [177\u2013353 ms]; for examples of pupil cycles and measurement epochs, see Figure 5\u2014figure supplements 1 and 2, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "34d8c9c9-9596-4c7a-8372-23b209cec863",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C30",
+      "claim": "Pairwise correlations in ACC varied systematically with the phase of ongoing fluctuations in pupil diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with our current findings that pairwise correlations in ACC tended to be smaller when LC is active during passive fixation, these results predicted that pairwise correlations in ACC should also vary systematically with the phase of ongoing fluctuations in pupil diameter. We found such a relationship between pupil phase and ACC rsc values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "9a6784a6-fcb5-40a4-9d53-0493262bc934",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C31",
+      "claim": "A brief, loud sound played on randomly selected fixation trials can elicit a transient pupil dilation as well as transient responses from individual LC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed previously that a brief, loud sound played on randomly selected fixation trials ('beep trials') can elicit a transient pupil dilation as well as transient responses from individual LC neurons (Joshi et al., 2016; evoked responses from an example LC neuron are shown in Figure 6A, and the LC population average from three monkeys is shown in Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by prior research (Joshi et al., 2016) and data shown in Figure 6A-B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "0393c02d-972d-4e38-aab7-df247b33df62",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C32",
+      "claim": "The beep stimulus elicited a consistent, albeit weaker, response in the ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "The beep stimulus also elicited a consistent, albeit weaker, response in the ACC (evoked responses from an example ACC neuron are shown in Figure 6D, and the ACC population average from two monkeys is shown in Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "dc187b9a-c684-44cf-aee9-a94f501ed04d",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C33",
+      "claim": "The averaged ACC response to the beep included a slight excitation and then inhibition relative to baseline within 200 ms of stimulus presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "The averaged ACC response included a slight excitation and then inhibition relative to baseline within 200 ms of stimulus presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "284c2799-4574-4339-837e-778bab5fcadd",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C34",
+      "claim": "The startle events caused transient reductions in the trial-to-trial variability (measured as the Fano factor) of spiking activity of individual neurons in both LC and ACC, with a slightly more sustained effect in the ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "The startle events also caused transient reductions in the trial-to-trial variability (measured as the Fano factor) of spiking activity of individual neurons in both LC and ACC, with a slightly more sustained effect in the ACC (Figure 6C and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6C and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "4f75b18f-3eed-4079-a0b1-b38f0ac18bb1",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C35",
+      "claim": "The reduction in neuronal variability following the onset of a stimulus, also referred to as quenching, has been reported previously for neurons in a range of other cortical regions and for a range of task conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction in neuronal variability following the onset of a stimulus, also referred to as quenching, has been reported previously for neurons in a range of other cortical regions and for a range of task conditions (Churchland et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "42b4d75b-8f88-46cc-82a5-eff892b31f71",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C36",
+      "claim": "There was no evidence that the startling sound caused systematic changes in ACC coordinated activity when measured independently of the LC response.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ACC, we found no evidence that the startling sound caused systematic changes in coordinated activity when measured independently of the LC response. Specifically, spike-count correlations were highly variable across ACC neuron pairs, with no statistically reliable, systematic differences when compared before versus after the beep (comparing ACC rsc before versus after beep for spikes measured in 1 s bins; Mann\u2013Whitney U-test, p > 0.05 for both monkeys).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis (Mann\u2013Whitney U-test, p > 0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "3dd8f5c7-b219-40db-8fde-aaf3ed69350b",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C37",
+      "claim": "LC neurons did not show a characteristic transient response on every presentation of a startle stimulus: the median fraction of trials with a response was 54% for monkey Sp and 43% for monkey Ci.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, LC neurons did not show a characteristic transient response on every presentation of a startle stimulus: the median fraction of trials with a response that included a transient increase and then decrease in spiking activity was 54% for monkey Sp and 43% for monkey Ci (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "6412f8ec-65c8-4f3b-86cf-fe0fba1f30e4",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C38",
+      "claim": "ACC rsc tended to be larger after versus before the beep stimulus, but only for the subset of trials in which the beep also elicited the characteristic LC response.",
+      "claim_type": "EXPLICIT",
+      "source": "ACC rsc tended to be larger after versus before the beep stimulus, but only for the subset of trials in which the beep also elicited the characteristic LC response (Figure 6A and B), for both monkeys (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figures 6A-B and 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "953b14a2-209d-46f0-abb7-0ad29a202585",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C39",
+      "claim": "Modulations of ACC pairwise correlations did not reflect simply transient differences in LC firing rates but rather specific differences between the presence and absence of the stimulus-evoked LC response.",
+      "claim_type": "EXPLICIT",
+      "source": "These modulations did not reflect simply transient differences in LC firing rates but rather specific differences between the presence and absence of the stimulus-evoked LC response (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "4fc196f5-d3eb-4fcf-bb36-b4995666e5c2",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C40",
+      "claim": "Modulations of ACC pairwise correlations did not reflect LC-driven differences in the stimulus-driven quenching of response variability in ACC, which was similar on trials with and without LC-evoked responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These modulations of ACC pairwise correlations also did not reflect LC-driven differences in the stimulus-driven quenching of response variability in ACC, which was similar on trials with and without LC-evoked responses (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "f56e3d08-8ee4-44af-910f-c8bf00875301",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C41",
+      "claim": "The magnitude of beep-evoked LC responses is correlated positively with the size of the simultaneously evoked change in pupil diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed previously that the magnitude of beep-evoked LC responses is correlated positively with the size of the simultaneously evoked change in pupil diameter (Joshi et al., 2016). We reproduced those results in our current data set (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by prior research (Joshi et al., 2016) and data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "6db92bad-13a5-4988-ac9d-6931d755e745",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C42",
+      "claim": "Beep-evoked changes in ACC rsc that required an LC-evoked response were larger on trials in which the evoked LC response was accompanied by a large versus small pupil dilation.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the beep-evoked changes in ACC rsc that required an LC-evoked response were larger on trials in which the evoked LC response was accompanied by a large versus small pupil dilation (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "5b5e0cd4-3c1b-4093-8d84-591107207902",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C43",
+      "claim": "The relationship between beep-evoked changes in ACC rsc and pupil responses was not evident when considering baseline, not evoked, pupil size.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects were not evident when considering baseline, not evoked, pupil size (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "3b4969dd-2076-4939-ad7b-10231a63e92e",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C44",
+      "claim": "LC firing rates increased after the fixation point turned on and before stable fixation was acquired.",
+      "claim_type": "EXPLICIT",
+      "source": "For no-beep trials, LC firing rates increased after the fixation point turned on and before stable fixation was acquired (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "a9dbd5b1-df00-46c7-9cac-a9f1509d4d52",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C45",
+      "claim": "The epoch before stable fixation included elevated ACC rsc (particularly when the simultaneously recorded LC neuron was not active) that preceded the elevation in LC firing.",
+      "claim_type": "EXPLICIT",
+      "source": "This epoch also included elevated ACC rsc (particularly when the simultaneously recorded LC neuron was not active, consistent with the results shown in Figure 4) that preceded the elevation in LC firing (Figure 9B, gray lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "a586be8c-988c-48f9-a894-7542cc2eae79",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C46",
+      "claim": "Both LC firing and ACC rsc tended to stabilize after stable fixation was attained.",
+      "claim_type": "EXPLICIT",
+      "source": "Both LC firing and ACC rsc tended to stabilize after stable fixation was attained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 9A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "426deba2-dd83-4ecb-877d-10f5cc53afc2",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C47",
+      "claim": "The beep caused a transient increase in ACC rsc, and this increase tended to occur more rapidly on trials with versus without a concomitant LC response.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the beep caused a transient increase in ACC rsc, and this increase tended to occur more rapidly on trials with (Figure 9D, gold shaded area) versus without (Figure 9F, gold shaded area) a concomitant LC response (Mann\u2013Whitney U-test, for H0: the linear rate of increase of ACC rsc in this period was larger when LC neuron did versus did not respond, p = 0.0297).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 9D and F and statistical analysis (Mann\u2013Whitney U-test, p = 0.0297).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "5259f886-385c-4fc2-9920-3d52a9555ef4",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C48",
+      "claim": "The LC transient response peaked at the beginning of the epoch in which the ACC rsc started to increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the LC transient response (Figure 9C) peaked at the beginning of the epoch in which the ACC rsc started to increase, which is consistent with the idea that the LC-evoked response drives (or at least coincides with) a faster rate of ACC rsc increase (steeper slope in the gold region in Figure 9D compared with F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 9C-D and F, and involves inference about temporal relationships.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "c03bab1a-5b45-4ae9-b147-16b8ebe85e42",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C49",
+      "claim": "The evoked LC response was associated with a more reliable and larger increase in ACC rsc later in the trial (500\u20131000 ms after the beep).",
+      "claim_type": "EXPLICIT",
+      "source": "The evoked LC response was also associated with a more reliable and larger increase in ACC rsc later in the trial (compare Figure 9D and F; Mann\u2013Whitney U-test for H0: ACC rsc 500\u20131000 ms after the beep was the same on trials with versus without a beep-evoked LC response, p = 0.0350 for both monkeys' data pooled together)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 9D and F and statistical analysis (Mann\u2013Whitney U-test, p = 0.0350).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "e85ef8e5-1781-46f5-a645-1fa0514323aa",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C50",
+      "claim": "ACC rsc did not anticipate whether or not the beep would evoke an LC response.",
+      "claim_type": "EXPLICIT",
+      "source": "but was not associated with differences in ACC rsc in the time just before the beep (i.e., ACC rsc did not anticipate whether or not the beep would evoke an LC response; Mann\u2013Whitney U-test for H0: ACC rsc \u2013500\u20130 ms before the beep was the same on trials with versus without a beep-evoked LC response, p = 0.0693 for both monkeys' data pooled together).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis (Mann\u2013Whitney U-test, p = 0.0693).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "4d5c7fd0-1c6f-4130-bce9-d908cdf206ac",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C51",
+      "claim": "The context dependence of LC-ACC effects implies that spontaneous versus sensory-evoked activation of the LC-NE system can have different effects on coordinated patterns of activity in cortical networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The context dependence of these effects implies that spontaneous versus sensory-evoked activation of the LC-NE system can have different effects on coordinated patterns of activity in cortical networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings showing different effects under different conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "2372dd1b-9e8c-44ef-b0b4-1fd53a5902b0",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C52",
+      "claim": "Different temporal patterns of NE release could mediate a range of synaptic effects via distinct NE receptor subtypes with different affinities and different spatial distributions in different parts of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, different temporal patterns of NE release could mediate a range of synaptic effects via distinct NE receptor subtypes with different affinities and different spatial distributions in different parts of the brain (Aoki et al., 1987; Nicholas et al., 1993; Arnsten et al., 1998; Arnsten, 2000; Berridge et al., 2012; Berridge and Spencer, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "efc79382-fa00-4e15-b13f-85b5fa262054",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C53",
+      "claim": "Synaptic effects of NE can influence both excitatory and inhibitory neurons as well as astrocytes, resulting in changes in network dynamics in thalamus, cortex, and elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "These synaptic effects can influence both excitatory and inhibitory neurons as well as astrocytes, resulting in changes in network dynamics in thalamus, cortex, and elsewhere (Segal and Bloom, 1976; Dillier et al., 1978; Waterhouse et al., 1980; McCormick and Prince, 1988; Wang and McCormick, 1993; McLean and Waterhouse, 1994; Fern\u00e1ndez-Pastor and Meana, 2002; Salgado et al., 2011; Salgado et al., 2016; Paukert et al., 2014; Guan et al., 2015; Schiemann et al., 2015; Sherpa et al., 2016; Garcia-Junco-Clemente et al., 2019; Aston-Jones and Cohen, 2005; Ohshima et al., 2017; Rodenkirch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "204b8f97-9bcd-4025-815e-b35a3df9b5e1",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C54",
+      "claim": "The study did not find similarly reliable relationships between the spiking activity of individual neurons measured simultaneously in LC and ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the relationships that we identified between LC activation and coordinated ACC activity patterns, we did not find similarly reliable relationships between the spiking activity of individual neurons measured simultaneously in each of the two brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the lack of statistically significant findings in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "c00e0e36-236f-4b19-8637-50d7b2f8c8e5",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C55",
+      "claim": "Changes in single-unit ACC responses were not related reliably to properties of the concurrently measured LC response.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these changes in single-unit ACC responses were not related reliably to properties of the concurrently measured LC response that we could measure and thus may involve mechanisms other than the LC-NE system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of reliable relationships found in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "841c6bd3-dcbe-4d1b-a005-d963cc19ad8e",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C56",
+      "claim": "An increase in correlations is considered a possible mechanism for connecting neural populations over a range of spatial and temporal scales.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an increase in correlations is considered a possible mechanism for connecting neural populations over a range of spatial and temporal scales (Gray et al., 1989; Singer, 1999; Riehle et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "6a32ca9f-ea39-46a7-8f78-bd0a50094edf",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C57",
+      "claim": "An increase in correlated variability can negatively impact the information coding capacity of a large neural population, particularly over longer integration windows.",
+      "claim_type": "EXPLICIT",
+      "source": "However, an increase in correlations can also negatively impact the information coding capacity of a large neural population, particularly over longer integration windows (Zohary et al., 1994; Bair et al., 2001; Averbeck et al., 2006; Renart et al., 2010; but also see Nirenberg and Latham, 2003 Moreno-Bote et al., 2014, for alternative interpretations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "d79b6273-e678-4471-9aec-dc72b8130cce",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C58",
+      "claim": "Global states such as arousal and attention can modulate cortical correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Global states such as arousal and attention (traditionally linked with LC-NE and cholinergic systems, respectively) can modulate cortical correlations (Cohen and Maunsell, 2009; Mitchell et al., 2009; Herrero et al., 2013; Schmidt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "15152cbb-13e0-4e12-90aa-9c3c1fe07698",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C59",
+      "claim": "Event-driven transient activation of LC could help to synchronize populations of cortical neurons by shifting them to a more correlated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Event-driven transient activation of LC could help to synchronize populations of cortical neurons by shifting them to a more correlated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "0aec05c4-5762-478f-b564-459e16153401",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C60",
+      "claim": "During nonevoked, ongoing (event-independent) firing, the NE release could enhance information processing and signal-to-noise ratios by reducing cortical correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, during nonevoked, ongoing (event-independent) firing, the NE release could enhance information processing and signal-to-noise ratios by reducing cortical correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "f0269e74-7bb2-49b7-93db-f4418a5415fb",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C61",
+      "claim": "Neural recordings were conducted in three adult male rhesus monkeys (Macaca mulatta).",
+      "claim_type": "EXPLICIT",
+      "source": "Three adult male rhesus monkeys (Macaca mulatta) were used for this study (monkeys Oz, Ci, and Sp).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "6d7bafac-7916-485e-8d1e-e0303f302265",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C62",
+      "claim": "The study recorded neural activity from 84 single units in LC from monkey Sp and 84 single units from monkey Ci.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed neural activity from simultaneously measured sites in the LC (n = 84 single units, including 78 simultaneously recorded pairs from 35 sites in monkey Sp; 84/80/31 in monkey Ci)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "fea93f95-0b75-45a0-9647-9c3cd723f413",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C63",
+      "claim": "The study recorded neural activity from 372 single units in ACC from monkey Sp and 275 single units from monkey Ci.",
+      "claim_type": "EXPLICIT",
+      "source": "and ACC (372/4336/35 in monkey Sp; 275/2875/31 in monkey Ci)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "130a0ab9-bb58-4f2f-b7b5-f58bd50b17d4",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C64",
+      "claim": "Fixation trials were of variable length (1\u20135 s, uniformly distributed).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, fixation trials were of variable length (1\u20135 s, uniformly distributed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "ec541be1-dbff-4def-8e4e-151fef7c840a",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C65",
+      "claim": "On a subset of randomly chosen trials (~25%), after 1\u20131.5 s of fixation a sound (1 kHz, 0.5 s) was played over a speaker.",
+      "claim_type": "EXPLICIT",
+      "source": "On a subset of randomly chosen trials (~25%), after 1\u20131.5 s of fixation a sound (1 kHz, 0.5 s) was played over a speaker in the experimental booth ('beep trials').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "fecd2d79-3255-4f31-ad25-6067d7a16797",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C66",
+      "claim": "LC+ units had relatively long action potential waveforms, were sensitive to arousing external stimuli, and decreased firing when the monkey was drowsy.",
+      "claim_type": "EXPLICIT",
+      "source": "LC+ units had relatively long action potential waveforms, were sensitive to arousing external stimuli (e.g., door knocking), and decreased firing when the monkey was drowsy (e.g., eyelids drooped; Aston-Jones et al., 1994; Bouret and Sara, 2004; Bouret and Richmond, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing how LC neurons were identified, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "1dc75f5c-bb53-48f7-b77a-1436af65f1c7",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C67",
+      "claim": "Recording sites were verified using MRI and assessing the effects of systemic injection of clonidine on LC+ responses in monkeys Oz and Ci and by histology with electrolytic lesions and electrode-tract reconstruction in monkey Oz.",
+      "claim_type": "EXPLICIT",
+      "source": "Sites were verified using MRI and assessing the effects of systemic injection of clonidine on LC+ responses in monkeys Oz and Ci and by histology with electrolytic lesions and electrode-tract reconstruction in monkey Oz (Kalwani et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing verification procedures, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "cda84bc6-9197-4d49-818b-b6f2ba45aa82",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C68",
+      "claim": "For ACC recordings, the study targeted the dorsal bank of the anterior cingulate sulcus, ~4\u20136 mm below the cortical surface.",
+      "claim_type": "EXPLICIT",
+      "source": "For ACC recordings, we targeted the dorsal bank of the anterior cingulate sulcus, ~4\u20136 mm below the cortical surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "0d714999-160c-4e66-8e20-95a76574a9b9",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "claim_id": "C69",
+      "claim": "Spiking activity was considered only during stable fixation, defined as a 1.1 s window that began 1 s after attaining fixation in which the monkey's gaze remained within a square window 0.2\u00b0 per side centered on the fixation point.",
+      "claim_type": "EXPLICIT",
+      "source": "For each recorded neuron, we considered spiking activity only during stable fixation, defined as a 1.1 s window that began 1 s after attaining fixation in which the monkey's gaze remained within a square window 0.2\u00b0 per side centered on the fixation point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "16d7ebf8-3496-4aad-93cd-628aadbbbb74",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LC activation is associated with context-dependent changes in ACC coordinated activity patterns that are largely independent of changes in firing rates of individual ACC neurons. Specifically, ACC pairwise correlations are reduced during ongoing LC activity but enhanced during transient, event-evoked LC responses, and both relationships covary with pupil changes reflecting arousal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C6 collectively establish the main finding of the study. The data in Figures 3-5 and 7-8 demonstrate reduced ACC correlations during baseline LC activity and enhanced correlations during evoked LC responses. Statistical tests confirm these relationships (p < 0.05), and the independence from single-neuron firing rate changes is shown in Figure 2 and Figure 4\u2014figure supplement 2A. The pupil-correlation relationships are documented in Figures 5 and 8.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "d178a50b-a8f6-4816-b588-8478a64db92c",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During passive fixation, LC neurons exhibited weak activity with median firing rate of 1.8 sp/s, while ACC spike counts showed increasing mean, variance, and Fano factor with longer counting windows. However, these ACC measures showed only slight, statistically unreliable relationships with simultaneously measured LC spiking activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 describe baseline neural activity characteristics supported by data in Figure 2. The LC firing rate distribution and ACC spike statistics are clearly documented. The lack of statistically reliable relationships between LC activity and ACC single-unit measures is appropriately reported with statistical tests (p > 0.05), establishing that the main effects are on coordinated rather than individual neuron activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "011d08c0-1f46-4761-8fb7-0e51495a315a",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ACC pairwise spike-count correlations increased systematically with counting window size and were largest for positively correlated pairs when LC was inactive. These correlations were reduced by up to ~50% when LC spiked, particularly for larger time windows (\u2265600 ms) and for pairs with positive baseline correlations. The reductions were independent of ACC firing rate changes but weakly related to changes in ACC Fano factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 detail the relationship between ongoing LC activity and ACC correlations, supported by Figures 3-4. The systematic increase with window size (ANOVA p = 0.0243), the ~50% reduction in upper terciles, and the independence from firing rate changes are all documented with appropriate statistical tests. The weak relationship with Fano factor (Figure 4\u2014figure supplement 2B) is also reported. The tercile analysis effectively demonstrates the specificity of the effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "f0af9e6c-9e49-433f-a494-1928cd1a4bbe",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "LC pairwise correlations did not depend systematically on ACC activity, showing similar properties to ACC correlations but no reliable modulation by ACC firing. This asymmetry indicates that single-unit LC activity is associated with changes in ACC coordinated activity, but not vice versa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 establish directional specificity in the LC-ACC relationship, supported by Figure 4\u2014figure supplement 3. The lack of ACC-dependent modulation of LC correlations (p > 0.05) and the different distributions (Kolmogorov-Smirnov test p < 0.0189) provide strong evidence for unidirectional influence. This is an important control demonstrating specificity of the LC\u2192ACC effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "46aeff5e-8b2b-45d3-b1f0-641320649f50",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LC spiking was related to the phase of ongoing pupil fluctuations, with LC activity preceding pupil dilation by ~270 ms. ACC pairwise correlations also varied systematically with pupil phase, with temporal relationships consistent with LC-mediated modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 link LC activity and ACC correlations to pupil dynamics during passive fixation, supported by Figure 5. The ~270 ms delay is quantified with bootstrapped confidence intervals [177-353 ms], and the systematic phase relationships are demonstrated for both LC firing and ACC correlations. The similar slopes (Wilcoxon p = 0.23) support the proposed mechanistic link, though causality cannot be definitively established from correlational data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "da0b9f85-6ae5-425b-a0ec-0c45aaba771f",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A startling sound elicited transient responses in both LC and ACC neurons, with reduced trial-to-trial variability (quenching) in both regions. However, the sound did not cause systematic changes in ACC coordinated activity when measured independently of the LC response, and LC neurons showed characteristic transient responses on only 43-54% of trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34, C36-C37 describe stimulus-evoked responses supported by Figures 6-7. The transient responses and Fano factor reductions are clearly documented. The lack of LC-independent ACC correlation changes (Mann-Whitney p > 0.05) and the trial-by-trial variability in LC responses (Figure 7\u2014figure supplement 1) are important for establishing that subsequent effects depend on LC activation rather than the stimulus per se.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "ccea9193-c8c4-45b5-aec0-b76a4f239ee5",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ACC pairwise correlations increased after the beep stimulus, but only on trials when the beep elicited a characteristic LC response. These modulations reflected specific differences in LC response presence/absence rather than simply LC firing rate differences or stimulus-driven quenching of ACC variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 establish the LC-dependence of evoked ACC correlation changes, supported by Figures 7 and 7\u2014figure supplements. The specificity to LC-evoked trials is demonstrated with appropriate statistical tests, and controls show the effect is not explained by firing rate differences (Figure 7B) or Fano factor changes (Figure 7\u2014figure supplement 2). This demonstrates context-dependent LC effects on ACC correlations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "e9dbbae2-4e2d-462d-9760-f1659ee20421",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Beep-evoked changes in ACC correlations that required an LC response were larger when the LC response was accompanied by larger pupil dilations. This relationship was specific to evoked pupil changes, not baseline pupil size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 link evoked ACC correlation changes to pupil responses, supported by Figure 8 and Figure 8\u2014figure supplement 1. The positive correlation between LC response magnitude and pupil dilation is reproduced from prior work, and the relationship to ACC correlations is demonstrated with appropriate statistical tests. The specificity to evoked (not baseline) pupil size (Figure 8B) strengthens the interpretation of arousal-linked modulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "84b52d62-4122-4b29-bb28-2add04da6ac3",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Temporal analysis revealed that LC firing increased before stable fixation was acquired, preceded by elevated ACC correlations. Following beep presentation, ACC correlations increased more rapidly when accompanied by an LC response, with the LC response peak coinciding with the onset of ACC correlation increases. The evoked LC response was associated with larger, more reliable ACC correlation increases 500-1000 ms post-beep, but ACC correlations did not anticipate whether the beep would evoke an LC response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 provide detailed temporal dynamics supported by Figure 9. The timing relationships are documented with appropriate statistical tests (Mann-Whitney p = 0.0297 for rate of increase, p = 0.0350 for late effects, p = 0.0693 for pre-beep period). The temporal precision of these measurements supports mechanistic interpretations about LC-ACC interactions, though the correlational nature limits causal inference. The lack of anticipatory ACC changes (C50) is an important control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "85e690e7-a505-48da-bdca-8b294388e6c9",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The context-dependent effects imply that spontaneous versus sensory-evoked LC-NE activation can have different effects on cortical coordinated activity. Different temporal patterns of NE release could mediate diverse synaptic effects via distinct receptor subtypes, influencing excitatory and inhibitory neurons as well as astrocytes to alter network dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C53 present interpretations and mechanistic speculation based on the findings. While C51 is a reasonable inference from the demonstrated context-dependent effects, C52-C53 are speculative proposals about underlying mechanisms supported only by citations to prior work. The study does not directly measure NE release, receptor activation, or synaptic mechanisms, so these remain hypotheses requiring further experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "c73c9cc6-5cbf-4c2b-973d-5e73b969b0a9",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study did not find reliable relationships between single-unit spiking activity measured simultaneously in LC and ACC. Changes in single-unit ACC responses were not reliably related to concurrently measured LC response properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 report negative findings supported by Figure 2 and related statistical tests. The lack of reliable single-unit relationships (p > 0.05) contrasts with the robust effects on coordinated activity, establishing an important distinction. This negative result is appropriately reported and strengthens the interpretation that LC effects are primarily on network-level coordination rather than individual neuron firing rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "8e94b04b-5aaf-4630-a0cb-bfbc91c611bd",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that event-driven transient LC activation could synchronize cortical neurons by increasing correlations, while ongoing LC firing could enhance information processing by reducing correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C60 present functional interpretations of the findings. While these are plausible hypotheses consistent with the observed bidirectional effects on correlations, they remain speculative. The study does not directly measure information processing, signal-to-noise ratios, or behavioral consequences of the correlation changes. These proposals require additional experiments linking the observed neural changes to computational or behavioral outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "2099e42d-5eb8-4c0c-b393-c4cfd3222dd5",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study recorded from 84 LC units and 372/275 ACC units in two monkeys (Sp/Ci) during passive fixation tasks with randomly presented sounds on ~25% of trials. LC neurons were identified by characteristic physiological properties and recording sites were verified using MRI, pharmacology, and histology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C69 describe methodological details that are clearly documented in the Materials and methods section. The sample sizes, recording locations, behavioral paradigm, and verification procedures are appropriate and well-described. The LC identification criteria (C66) are standard in the field and supported by citations. The verification methods (C67) provide confidence in recording locations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "d3ca92b9-3887-440e-9f80-90953b583438",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establish that LC-NE projections affect cortical networks, brain state changes involve neuromodulator release, different neuromodulatory systems have distinct properties, and ACC has strong LC connectivity and encodes adaptive behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C11 provide background context supported by extensive citations to prior literature. These are well-established facts in neuroscience that appropriately motivate the study. The citations are relevant and support the claims made. This background establishes the rationale for investigating LC-ACC interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    },
+    {
+      "id": "13bb985e-1320-445b-8705-f8ba4468d446",
+      "content_id": "429f298c-5da1-4f4c-a1b5-da862e8159bf",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establish that pupil shows quasi-periodic fluctuations during fixation, stimulus-evoked variability quenching has been reported previously, and correlations can both facilitate neural communication and impair population coding depending on context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C35, C56-C58 provide additional background supported by citations to prior research. These establish relevant context for interpreting pupil measurements, variability changes, and the functional significance of correlation modulation. The citations are appropriate and the claims accurately represent prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:01:59.684127Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4f0b8163-a13f-42f4-971e-427509d9e8bc",
+      "result_id": "16d7ebf8-3496-4aad-93cd-628aadbbbb74"
+    },
+    {
+      "claim_id": "5412aec9-237d-433e-a39e-cbe76ee942fc",
+      "result_id": "16d7ebf8-3496-4aad-93cd-628aadbbbb74"
+    },
+    {
+      "claim_id": "c15c63ac-81b5-4ec0-9c9e-8062a23f1eca",
+      "result_id": "16d7ebf8-3496-4aad-93cd-628aadbbbb74"
+    },
+    {
+      "claim_id": "9474ad80-8093-404a-81b2-b63c8323e7b0",
+      "result_id": "16d7ebf8-3496-4aad-93cd-628aadbbbb74"
+    },
+    {
+      "claim_id": "3a6e8885-3044-4ceb-be77-8b110751fca1",
+      "result_id": "16d7ebf8-3496-4aad-93cd-628aadbbbb74"
+    },
+    {
+      "claim_id": "9e2dbf21-ccfa-4ba2-a771-11bb6b49bd65",
+      "result_id": "d178a50b-a8f6-4816-b588-8478a64db92c"
+    },
+    {
+      "claim_id": "8e257f53-40a9-4351-8e84-aa1424d0aa90",
+      "result_id": "d178a50b-a8f6-4816-b588-8478a64db92c"
+    },
+    {
+      "claim_id": "ebf09c48-e236-44ff-b0ba-68e57968c723",
+      "result_id": "d178a50b-a8f6-4816-b588-8478a64db92c"
+    },
+    {
+      "claim_id": "a16e7a8c-1323-4321-b66b-0cf955dc12ff",
+      "result_id": "d178a50b-a8f6-4816-b588-8478a64db92c"
+    },
+    {
+      "claim_id": "29bc02f0-1b41-47fa-ba4e-725fc3efda89",
+      "result_id": "d178a50b-a8f6-4816-b588-8478a64db92c"
+    },
+    {
+      "claim_id": "4790603d-9fab-48b0-ae9c-13b9948381c6",
+      "result_id": "011d08c0-1f46-4761-8fb7-0e51495a315a"
+    },
+    {
+      "claim_id": "29982d30-0a56-446e-ba38-d2ebaec8cde4",
+      "result_id": "011d08c0-1f46-4761-8fb7-0e51495a315a"
+    },
+    {
+      "claim_id": "307fb618-67ff-49bc-8227-5fcf9d72fd1e",
+      "result_id": "011d08c0-1f46-4761-8fb7-0e51495a315a"
+    },
+    {
+      "claim_id": "7a53d006-1481-4bc1-ae34-321f4a4678c4",
+      "result_id": "011d08c0-1f46-4761-8fb7-0e51495a315a"
+    },
+    {
+      "claim_id": "4328d61e-a42a-4e91-bd7d-dc6a49f43c0c",
+      "result_id": "011d08c0-1f46-4761-8fb7-0e51495a315a"
+    },
+    {
+      "claim_id": "e28d2960-f4d7-461b-89a3-6f402a42331f",
+      "result_id": "011d08c0-1f46-4761-8fb7-0e51495a315a"
+    },
+    {
+      "claim_id": "d7eefb2b-9c02-4adb-ba63-77016173aa58",
+      "result_id": "011d08c0-1f46-4761-8fb7-0e51495a315a"
+    },
+    {
+      "claim_id": "1ef00c4a-d1da-4800-844b-b8b7ad586833",
+      "result_id": "f0af9e6c-9e49-433f-a494-1928cd1a4bbe"
+    },
+    {
+      "claim_id": "13e7f398-9ea5-44a2-9f9f-69e659bfaeca",
+      "result_id": "f0af9e6c-9e49-433f-a494-1928cd1a4bbe"
+    },
+    {
+      "claim_id": "806a9072-c5bc-4b6e-82ed-4c13b7560c4f",
+      "result_id": "f0af9e6c-9e49-433f-a494-1928cd1a4bbe"
+    },
+    {
+      "claim_id": "fa9a11ea-4663-47ff-99e9-a495f0450945",
+      "result_id": "46aeff5e-8b2b-45d3-b1f0-641320649f50"
+    },
+    {
+      "claim_id": "3d9fd38b-28de-4e97-95cb-1c5f03840272",
+      "result_id": "46aeff5e-8b2b-45d3-b1f0-641320649f50"
+    },
+    {
+      "claim_id": "34d8c9c9-9596-4c7a-8372-23b209cec863",
+      "result_id": "46aeff5e-8b2b-45d3-b1f0-641320649f50"
+    },
+    {
+      "claim_id": "9a6784a6-fcb5-40a4-9d53-0493262bc934",
+      "result_id": "da0b9f85-6ae5-425b-a0ec-0c45aaba771f"
+    },
+    {
+      "claim_id": "0393c02d-972d-4e38-aab7-df247b33df62",
+      "result_id": "da0b9f85-6ae5-425b-a0ec-0c45aaba771f"
+    },
+    {
+      "claim_id": "dc187b9a-c684-44cf-aee9-a94f501ed04d",
+      "result_id": "da0b9f85-6ae5-425b-a0ec-0c45aaba771f"
+    },
+    {
+      "claim_id": "284c2799-4574-4339-837e-778bab5fcadd",
+      "result_id": "da0b9f85-6ae5-425b-a0ec-0c45aaba771f"
+    },
+    {
+      "claim_id": "42b4d75b-8f88-46cc-82a5-eff892b31f71",
+      "result_id": "da0b9f85-6ae5-425b-a0ec-0c45aaba771f"
+    },
+    {
+      "claim_id": "3dd8f5c7-b219-40db-8fde-aaf3ed69350b",
+      "result_id": "da0b9f85-6ae5-425b-a0ec-0c45aaba771f"
+    },
+    {
+      "claim_id": "6412f8ec-65c8-4f3b-86cf-fe0fba1f30e4",
+      "result_id": "ccea9193-c8c4-45b5-aec0-b76a4f239ee5"
+    },
+    {
+      "claim_id": "953b14a2-209d-46f0-abb7-0ad29a202585",
+      "result_id": "ccea9193-c8c4-45b5-aec0-b76a4f239ee5"
+    },
+    {
+      "claim_id": "4fc196f5-d3eb-4fcf-bb36-b4995666e5c2",
+      "result_id": "ccea9193-c8c4-45b5-aec0-b76a4f239ee5"
+    },
+    {
+      "claim_id": "f56e3d08-8ee4-44af-910f-c8bf00875301",
+      "result_id": "e9dbbae2-4e2d-462d-9760-f1659ee20421"
+    },
+    {
+      "claim_id": "6db92bad-13a5-4988-ac9d-6931d755e745",
+      "result_id": "e9dbbae2-4e2d-462d-9760-f1659ee20421"
+    },
+    {
+      "claim_id": "5b5e0cd4-3c1b-4093-8d84-591107207902",
+      "result_id": "e9dbbae2-4e2d-462d-9760-f1659ee20421"
+    },
+    {
+      "claim_id": "3b4969dd-2076-4939-ad7b-10231a63e92e",
+      "result_id": "84b52d62-4122-4b29-bb28-2add04da6ac3"
+    },
+    {
+      "claim_id": "a9dbd5b1-df00-46c7-9cac-a9f1509d4d52",
+      "result_id": "84b52d62-4122-4b29-bb28-2add04da6ac3"
+    },
+    {
+      "claim_id": "a586be8c-988c-48f9-a894-7542cc2eae79",
+      "result_id": "84b52d62-4122-4b29-bb28-2add04da6ac3"
+    },
+    {
+      "claim_id": "426deba2-dd83-4ecb-877d-10f5cc53afc2",
+      "result_id": "84b52d62-4122-4b29-bb28-2add04da6ac3"
+    },
+    {
+      "claim_id": "5259f886-385c-4fc2-9920-3d52a9555ef4",
+      "result_id": "84b52d62-4122-4b29-bb28-2add04da6ac3"
+    },
+    {
+      "claim_id": "c03bab1a-5b45-4ae9-b147-16b8ebe85e42",
+      "result_id": "84b52d62-4122-4b29-bb28-2add04da6ac3"
+    },
+    {
+      "claim_id": "e85ef8e5-1781-46f5-a645-1fa0514323aa",
+      "result_id": "84b52d62-4122-4b29-bb28-2add04da6ac3"
+    },
+    {
+      "claim_id": "4d5c7fd0-1c6f-4130-bce9-d908cdf206ac",
+      "result_id": "85e690e7-a505-48da-bdca-8b294388e6c9"
+    },
+    {
+      "claim_id": "2372dd1b-9e8c-44ef-b0b4-1fd53a5902b0",
+      "result_id": "85e690e7-a505-48da-bdca-8b294388e6c9"
+    },
+    {
+      "claim_id": "efc79382-fa00-4e15-b13f-85b5fa262054",
+      "result_id": "85e690e7-a505-48da-bdca-8b294388e6c9"
+    },
+    {
+      "claim_id": "204b8f97-9bcd-4025-815e-b35a3df9b5e1",
+      "result_id": "c73c9cc6-5cbf-4c2b-973d-5e73b969b0a9"
+    },
+    {
+      "claim_id": "c00e0e36-236f-4b19-8637-50d7b2f8c8e5",
+      "result_id": "c73c9cc6-5cbf-4c2b-973d-5e73b969b0a9"
+    },
+    {
+      "claim_id": "15152cbb-13e0-4e12-90aa-9c3c1fe07698",
+      "result_id": "8e94b04b-5aaf-4630-a0cb-bfbc91c611bd"
+    },
+    {
+      "claim_id": "0aec05c4-5762-478f-b564-459e16153401",
+      "result_id": "8e94b04b-5aaf-4630-a0cb-bfbc91c611bd"
+    },
+    {
+      "claim_id": "f0269e74-7bb2-49b7-93db-f4418a5415fb",
+      "result_id": "2099e42d-5eb8-4c0c-b393-c4cfd3222dd5"
+    },
+    {
+      "claim_id": "6d7bafac-7916-485e-8d1e-e0303f302265",
+      "result_id": "2099e42d-5eb8-4c0c-b393-c4cfd3222dd5"
+    },
+    {
+      "claim_id": "fea93f95-0b75-45a0-9647-9c3cd723f413",
+      "result_id": "2099e42d-5eb8-4c0c-b393-c4cfd3222dd5"
+    },
+    {
+      "claim_id": "130a0ab9-bb58-4f2f-b7b5-f58bd50b17d4",
+      "result_id": "2099e42d-5eb8-4c0c-b393-c4cfd3222dd5"
+    },
+    {
+      "claim_id": "ec541be1-dbff-4def-8e4e-151fef7c840a",
+      "result_id": "2099e42d-5eb8-4c0c-b393-c4cfd3222dd5"
+    },
+    {
+      "claim_id": "fecd2d79-3255-4f31-ad25-6067d7a16797",
+      "result_id": "2099e42d-5eb8-4c0c-b393-c4cfd3222dd5"
+    },
+    {
+      "claim_id": "1dc75f5c-bb53-48f7-b77a-1436af65f1c7",
+      "result_id": "2099e42d-5eb8-4c0c-b393-c4cfd3222dd5"
+    },
+    {
+      "claim_id": "cda84bc6-9197-4d49-818b-b6f2ba45aa82",
+      "result_id": "2099e42d-5eb8-4c0c-b393-c4cfd3222dd5"
+    },
+    {
+      "claim_id": "0d714999-160c-4e66-8e20-95a76574a9b9",
+      "result_id": "2099e42d-5eb8-4c0c-b393-c4cfd3222dd5"
+    },
+    {
+      "claim_id": "51793cbf-3eb6-42f5-927a-5797336002b6",
+      "result_id": "d3ca92b9-3887-440e-9f80-90953b583438"
+    },
+    {
+      "claim_id": "919efde8-7a56-4c13-b462-2b3f6211c372",
+      "result_id": "d3ca92b9-3887-440e-9f80-90953b583438"
+    },
+    {
+      "claim_id": "964f1d02-a4f9-4681-89b3-26e770c7093e",
+      "result_id": "d3ca92b9-3887-440e-9f80-90953b583438"
+    },
+    {
+      "claim_id": "ede87920-0795-4857-8f11-863fc6cb45ee",
+      "result_id": "d3ca92b9-3887-440e-9f80-90953b583438"
+    },
+    {
+      "claim_id": "899167fb-9b9c-46e2-be00-68134d16c58d",
+      "result_id": "d3ca92b9-3887-440e-9f80-90953b583438"
+    },
+    {
+      "claim_id": "ed688e53-0f1d-4d3a-a796-6c1ccf3d1e03",
+      "result_id": "d3ca92b9-3887-440e-9f80-90953b583438"
+    },
+    {
+      "claim_id": "c1300416-4936-43c1-99f4-63f7316fb905",
+      "result_id": "13bb985e-1320-445b-8705-f8ba4468d446"
+    },
+    {
+      "claim_id": "4f75b18f-3eed-4079-a0b1-b38f0ac18bb1",
+      "result_id": "13bb985e-1320-445b-8705-f8ba4468d446"
+    },
+    {
+      "claim_id": "841c6bd3-dcbe-4d1b-a005-d963cc19ad8e",
+      "result_id": "13bb985e-1320-445b-8705-f8ba4468d446"
+    },
+    {
+      "claim_id": "6a32ca9f-ea39-46a7-8f78-bd0a50094edf",
+      "result_id": "13bb985e-1320-445b-8705-f8ba4468d446"
+    },
+    {
+      "claim_id": "d79b6273-e678-4471-9aec-dc72b8130cce",
+      "result_id": "13bb985e-1320-445b-8705-f8ba4468d446"
+    }
+  ],
+  "comparisons": []
+}

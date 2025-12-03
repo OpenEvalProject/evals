@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C97",
+      "C100"
+    ],
+    "result": "A mathematical model built exclusively from monoculture growth parameters (no lag for \u0394lasR, 1h lag for WT; lower growth rate but 1.5-fold higher yield for \u0394lasR) accurately predicted the rise of LasR- strains in experimental evolution, reaching ~20% by Day 4, ~40-50% by Day 6, and ~80% by Day 8. Competition assays confirmed \u0394lasR outcompeted WT across all initial ratios (1-85%), supporting that differential growth kinetics alone, rather than social cheating, explain LasR- strain emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35, C41-C42, C45-C46 provide converging experimental and modeling evidence. The model predictions closely match Pool-Seq data (C41-C42: 22.2\u00b16.0% at Day 4, 48.5\u00b14.9% at Day 6) and phenotypic observations (C35: ~80% by Day 8). Competition data (C45-C46) showing \u0394lasR advantage at high initial frequencies contradicts pure social cheating models, supporting the metabolic mechanism (C100). The consistency across multiple independent experiments and methodologies strongly supports this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C73",
+      "C96",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "The evolution of LasR- lineages depends on the CbrAB two-component system. Deletion of cbrA or cbrB prevented LasR- phenotype emergence in both PA14 and clinical isolate DH2417 backgrounds, with no lasR mutations detected by Pool-Seq in these backgrounds despite comparable mutation rates in other genes. This dependence was confirmed across multiple media including LB, buffered LB, and artificial sputum medium, and by succinate supplementation suppressing LasR- emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C52-C53, C57-C58 provide strong genetic evidence from blinded screens and evolution experiments. The absence of lasR mutations in \u0394cbrA/B backgrounds (C57) with comparable mutation rates elsewhere (C58) is compelling. Multiple controls rule out alternative explanations: similar growth patterns (C59), pH buffering (C60), filtrate toxicity (C61), and Anr/RhlR deletions showing no effect (C50). Succinate supplementation (C73, C105) and ASM experiments (C96) provide environmental validation. The consistency across strain backgrounds (C53, C104) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C102",
+      "C132",
+      "C133"
+    ],
+    "result": "In \u0394cbrA and \u0394cbrB backgrounds where lasR mutations did not arise, compensatory mutations in crc (7 different mutations including nonsense, missense, and indels) and hfq (coding and promoter regions) emerged instead. These mutants showed FAA sensitivity consistent with loss of Crc/Hfq function, with crc mutations predominating in \u0394cbrA and hfq mutations in \u0394cbrB backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67, C132-C133 provide Pool-Seq genomic evidence showing pathway-specific mutation patterns. The FAA sensitivity assays (C68-C70) functionally validate loss of Crc/Hfq activity. The observation in both PA14 and DH2417 backgrounds (C70) and consistency with published work strengthen the finding. The differential mutation patterns between \u0394cbrA and \u0394cbrB (C132-C133) suggest mechanistic distinctions worth exploring but don't undermine the core result that the pathway is under strong selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C101",
+      "C103"
+    ],
+    "result": "\u0394lasR strains have ~2-fold higher crcZ levels than WT, and show CbrB- and Crc-dependent growth advantages on multiple carbon sources including phenylalanine, glucose, mannitol, arginine, lactate, and citrate. The growth advantage manifests as reduced lag and higher yields, is complementable by lasR, requires cbrB, and can be restored in \u0394lasR\u0394cbrB by deleting crc or overexpressing cbrB/crcZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76-C79 provide qRT-PCR and growth data with appropriate genetic controls and complementation. The phenotype is consistent across planktonic (C76-C79) and biofilm (C80-C82) growth modes and multiple substrates (C82, C93). Epistasis analysis (C77-C78) clearly demonstrates the CbrB\u2192crcZ\u2192Crc pathway. The observation that \u0394crc doesn't grow as well as \u0394lasR (C83) suggests additional LasR-regulated factors contribute, which is appropriately acknowledged. The mechanistic model (C101) is well-supported by the genetic and growth data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C108",
+      "C109"
+    ],
+    "result": "Metabolomics analysis of bronchoalveolar lavage fluid from people with CF identified compounds (phenylalanine, arginine, lactate, citrate) that negatively correlate with lung function (%FEV1). \u0394lasR strains showed CbrB- and Crc-dependent growth advantages on these compounds and had significantly higher yields across 20 CF-enriched carbon sources compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 describe the metabolomics analysis with appropriate sample sizes (10 CF, 10 non-CF) and statistical correlations. The PCA analysis (C90-C91) showing CF samples with high lung function clustering with non-CF samples validates the approach. Claims C93-C94 link the metabolomics to bacterial growth phenotypes using multiple assays (growth curves, BIOLOG arrays). The consistency with published CF airway metabolomics (C89, C108) strengthens confidence. However, the correlational nature of the clinical data and the in vitro growth assays limit mechanistic conclusions about causality in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C104",
+      "C115"
+    ],
+    "result": "LasR- strains evolved in artificial sputum medium (ASM) designed to mimic CF lung nutritional profiles in both PA14 and clinical isolate backgrounds with kinetics similar to LB. Evolution in ASM with \u0394cbrB derivatives showed no rise in LasR- phenotypes, confirming CbrAB dependence in a CF-relevant nutritional environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 provide evolution data in a more physiologically relevant medium. The consistency with LB results (C95) and CbrB dependence (C96) strengthen the translational relevance. The observation of strain-specific differences in CbrB dependence (C104) is appropriately noted. However, ASM is still an in vitro model that cannot fully recapitulate the complexity of the CF lung environment including host immune factors, spatial structure, and polymicrobial interactions. The inference about overcoming negative selective pressures (C115) is speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C43",
+      "C44"
+    ],
+    "result": "Pool-Seq identified six non-synonymous lasR mutations in functionally important domains (autoinducer binding and DNA binding) with no synonymous mutations detected. Two mutations (\u039436-38, L130P) were present in all replicates at Day 4, suggesting presence in the initial inoculum. Evolved cultures showed reduced 3OC12HSL levels (~30% by Day 2, ~90% by Day 6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 provide genomic validation of LasR- phenotypes with appropriate sequencing depth. The absence of synonymous mutations (C38) supports selection rather than neutral drift. The inference about initial inoculum (C39) is reasonable given the data. Autoinducer measurements (C43-C44) provide functional validation. The characterization of specific mutations (C40) leverages prior literature appropriately. This is strong supporting evidence for the evolution experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C71",
+      "C72",
+      "C106"
+    ],
+    "result": "Approximately 90% of evolved isolates with LasR- colony morphology showed phenotypes consistent with loss of LasR function. Succinate supplementation (40 mM) repressed crcZ expression in \u0394lasR to levels similar to \u0394lasR\u0394cbrB and enabled \u0394lasR growth on FAA-containing medium, demonstrating that LasR- strains retain CbrAB responsiveness and are not constitutively de-repressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C71-C72 provide phenotypic and molecular validation. The 90% concordance (C36) is good but not perfect, appropriately acknowledged. The succinate experiments (C71-C72) are well-controlled and demonstrate an important mechanistic point about regulation rather than constitutive de-repression (C106). This addresses a potential alternative model and strengthens the mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C112",
+      "C113",
+      "C114",
+      "C125"
+    ],
+    "result": "The steady-state growth rate for \u0394lasR was slightly lower than WT, consistent with lag-growth rate tradeoffs. The model predicts LasR- strains benefit during growth transitions (lag phase) and at high density (improved yield), but would not emerge under steady-state conditions like chemostats. This suggests P. aeruginosa undergoes frequent growth transitions in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C112 are directly supported by the growth data and model. The connection to growth-lag tradeoffs (C98, C113) is well-supported by cited literature. The prediction about chemostat conditions (C112) is testable but not yet tested. The inference about in vivo growth dynamics (C114) is reasonable but speculative. The mechanistic model about substrate concentrations (C125) is logical but not directly tested. Overall, this represents solid interpretation of the data with appropriate caveats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The LasR- growth advantages in post-exponential phase bear similarities to E. coli GASP (growth advantage in stationary phase) phenotypes, which also depend on nutrient accessibility and enhanced amino acid catabolism. However, LasR- strains evolved in buffered medium (unlike E. coli rpoS mutants requiring pH-driven lysis), and common GASP mutations (rpoS, lrp, ybeJ-gltJKL) or ppGpp synthase mutations (relA, spoT) were not detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 provide appropriate comparative analysis with E. coli systems. The buffered medium experiments (C120) distinguish the P. aeruginosa mechanism from E. coli. The absence of common GASP mutations (C121-C122) is based on Pool-Seq data and supports a distinct mechanism. This comparative analysis appropriately contextualizes the findings within broader microbial physiology while noting important differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7",
+      "C15",
+      "C16",
+      "C17",
+      "C85",
+      "C86"
+    ],
+    "result": "LasR- isolates are frequently observed in CF lung infections and other clinical settings, with detection associated with more rapid lung function decline, increased inflammation, and worse outcomes in corneal infections, despite LasR contributing to virulence through quorum sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6-C7, C15-C17, C85-C86 are all supported by citations to clinical studies. This represents established prior knowledge that motivates the study. The apparent paradox (virulence factor loss associated with worse disease) is appropriately highlighted. These claims provide important clinical context but represent prior work rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C51",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Background on quorum sensing, LasR function, social cheating models, policing mechanisms, and the CbrAB-crcZ-Crc catabolite repression pathway. Despite multiple proposed mechanisms for LasR- strain fitness, a common trait promoting their rise across diverse environments has not been established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C27, C51, C54-C56 represent established knowledge from prior literature, appropriately cited. Claim C27 accurately summarizes the knowledge gap that motivates this study. These claims provide essential background but do not represent new findings. They are well-supported by the cited literature and accurately frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C75",
+      "C107",
+      "C110",
+      "C111",
+      "C116",
+      "C117",
+      "C123",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Prior work showed higher CbrB levels in LasR- strains, but no direct LasR-CbrAB interactions are known. CF isolates show amino acid auxotrophies, enhanced uptake, and reduced succinate assimilation. LasR loss enables multiple fitness advantages (microoxic fitness, pH resistance, altered interactions) but connections to CbrAB-crcZ-Crc are unclear. The LasR regulon has growth advantages on some substrates but disadvantages on others (adenosine, proteins). Policing and oxidative stress sensitivity may limit LasR- success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C75, C107, C110-C111, C116-C117, C123, C126-C130 represent prior knowledge and knowledge gaps appropriately cited. These claims contextualize the findings within existing literature and acknowledge limitations. The statements about unknown mechanisms (C63, C117, C123) appropriately identify areas for future work. This represents accurate literature synthesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C124",
+      "C131",
+      "C134"
+    ],
+    "result": "The authors propose that in vivo metabolomes contribute to pathogen evolution, potentially influencing disease progression and treatment. The working model suggests CbrB-mediated crcZ upregulation increases transporter/enzyme levels, altering intracellular metabolite pools and driving metabolism according to Le Chatelier's principle. These findings may provide generalizable insights into metabolic control in dense populations and QS gene loss-of-function mutations in other pathogens (S. aureus agr, V. cholerae hapR). Deep sequencing of infection populations may aid future diagnostics and treatment decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C124, C131, C134 represent speculative conclusions and proposed models. While the mechanistic model (C124) is logical and consistent with the data, it lacks direct experimental validation (e.g., metabolomics of intracellular pools, direct measurement of transporter levels). The proposal about in vivo metabolomes (C10) is reasonable but correlational. The generalization to other pathogens (C131) is plausible but not tested. The clinical applications (C134) are speculative. These represent appropriate discussion points but require substantial additional work for validation.",
+    "result_type": "MINOR"
+  }
+]

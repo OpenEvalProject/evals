@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C72",
+      "C73"
+    ],
+    "result": "The study identified abundant m1A modifications in neurons across mRNAs, lncRNAs, and circRNAs, with distinct genomic distributions. In mRNAs, 54.2% of m1A peaks were in CDSs and 25.1% in 5'UTRs, while in circRNAs, 88.4% were in CDSs and 8.9% in 5'UTRs. The genomic distribution differed significantly between normal and OGD/R-treated neurons (chi-squared test, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 and C72-C73 provide consistent quantitative data on m1A peak identification and genomic distribution, supported by Figure 1B-D and statistical testing. The data show clear differences between RNA types and treatment conditions with appropriate statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C100"
+    ],
+    "result": "GA-rich motifs were identified as predominant m1A modification sites in neurons, with >90% of mRNA motifs being GA-rich compared to ~10% in circRNAs. These motifs showed similarity to ZNF263 binding sites (MA0528.1) and were associated with RNA polymerase II promoter regulation in mRNAs, suggesting RNA type-specific modification mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and related claims provide quantitative motif analysis data supported by Figure 1E and comparison with the JASPAR database. The differential prevalence of GA-rich motifs between RNA types (90% vs 10%) is clearly documented, though the functional implications remain somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C81",
+      "C82",
+      "C107"
+    ],
+    "result": "Five m1A regulators (Alkbh3, Trmt10c, Trmt61a, Ythdf2, and Ythdf3) showed statistically significant differential expression among control and OGD/R treatment groups, with different expression trends under different OGD/R durations, suggesting complex temporal regulation of m1A modification in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by Figure 1F showing differential expression data. However, the complexity inference (C82) lacks mechanistic validation beyond the observation of differential trends. The statistical significance is documented but the biological interpretation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C66"
+    ],
+    "result": "OGD/R treatment increased both the number and level of m1A-modified mRNAs in neurons. The study identified 4047, 5756, and 4948 m1A mRNAs in Control, OGD/R 1.5hr, and OGD/R 3hr groups respectively, with significantly higher m1A levels after OGD/R (p<1.1e-15 and p<2.2e-16, Kolmogorov-Smirnov test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 provide quantitative data supported by Figure 2A-C with appropriate statistical testing (Kolmogorov-Smirnov test). The increase in m1A modifications after OGD/R is well-documented with highly significant p-values, though the biological significance of this increase requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C83",
+      "C84"
+    ],
+    "result": "Differentially methylated m1A mRNAs showed time-dependent functional enrichment patterns. At OGD/R 1.5hr, decreased methylation affected synapses, neurotransmitter release, and cAMP signaling, while at OGD/R 3hr, it affected synaptic plasticity, membrane potential, and calcium signaling, suggesting temporal regulation of neuronal fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by functional enrichment analysis in Figures 2E-F. The temporal differences in biological functions are clearly documented, though the causal relationship between m1A changes and neuronal fate (C84) is inferential and requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study identified 1078, 1661, and 1294 m1A lncRNAs in Control, OGD/R 1.5hr, and OGD/R 3hr groups respectively, primarily from exon sense-overlapping and intergenic regions. m1A modification levels in lncRNAs increased significantly after OGD/R treatment (p<0.001 and p<2.508e-5, Kolmogorov-Smirnov test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide quantitative data supported by Figure 3A-D with appropriate statistical validation. The genomic source distribution and increased modification levels are well-documented, though the functional consequences require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C85",
+      "C111"
+    ],
+    "result": "m1A-modified lncRNAs Meg3 and Neat1 were predicted to bind various RBPs involved in mRNA metabolism, processing, and splicing, suggesting that m1A modification of nerve-related lncRNAs may regulate RNA metabolism and affect pathophysiological processes in neurological diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C38 are based on computational predictions from the ENCORI database and functional enrichment analysis (Figure 3E-F). While the RBP binding predictions and functional enrichments are documented, the actual binding interactions and their functional consequences (C85) remain speculative without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "m1A modification levels in circRNAs increased after OGD/R treatment, with significant differences between OGD/R 3hr and Control groups (p<0.0009, Kolmogorov-Smirnov test), but not between OGD/R 1.5hr and Control. The number of m1A circRNAs increased across all chromosomes after OGD/R treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by data in Figure 4C-D with appropriate statistical testing. The time-dependent increase in m1A circRNAs is well-documented, showing a delayed response compared to mRNAs and lncRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Differentially methylated circRNAs showed distinct functional patterns based on methylation direction. Decreased m1A levels were associated with synapses and neurotransmitter functions, while increased m1A levels were associated with diverse biological processes including morphogenesis, GTPase activity, and cellular organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by functional enrichment analysis in Figures 4E-F. The differential functional associations based on methylation direction are clearly documented, though the mechanistic basis for these associations requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C89",
+      "C90",
+      "C112",
+      "C113"
+    ],
+    "result": "Among 811 differentially m1A-modified circRNAs, 237 showed translation ability, and some contained both m1A and m6A modifications, suggesting potential regulatory roles in circRNA translation and possible crosstalk between different RNA modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C44 is supported by riboCIRC database analysis, but the functional implications (C90) and the relationship between m1A and m6A modifications (C113) are speculative. The co-occurrence of modifications is documented but their functional interaction requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C91"
+    ],
+    "result": "The study identified 69 and 81 differentially expressed miRNAs, and 1579 and 3259 differentially expressed mRNAs in OGD/R 1.5hr and 3hr groups respectively. Functional enrichment showed time-dependent shifts from cell structure-related functions at 1.5hr to neuron-specific functions (synapse, axon) at 3hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by RNA-seq data in Figures 5A-C and supplementary figures. The temporal shift in functional enrichment is well-documented, though the biological significance of this progression requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C69",
+      "C93",
+      "C110"
+    ],
+    "result": "Dual luciferase assays demonstrated that m1A methyltransferase Trmt6 can alleviate miRNA-mediated repression of target genes (Arid1a-Mir101b, p<0.05), suggesting that m1A modification of 3'UTRs can hinder miRNA-mRNA binding, though this effect was gene-specific and not observed for all tested pairs (Grin2d, Wdtc1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by experimental data from dual luciferase assays with statistical validation (Figure 5G). The gene-specific nature of the effect is appropriately documented, though the mechanism requires further investigation. Sample size (n=3) is adequate for initial validation but limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C70",
+      "C94",
+      "C95",
+      "C118",
+      "C119"
+    ],
+    "result": "NMF analysis identified three distinct m1A modification patterns in neurons: Metabolism-associated cluster (MAC), Autophagy-associated cluster (AAC), and Catabolism-associated cluster (CAC), each enriched for specific biological processes and pathways, suggesting pattern-specific regulatory mechanisms related to neuronal fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by NMF analysis (Figure 6A-E) with appropriate functional enrichment validation. The three clusters show distinct functional profiles, though the causal relationship to neuronal fate (C119) is inferential. The k=3 selection is justified by cophenetic correlation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C96"
+    ],
+    "result": "Transcription factor activity analysis revealed distinct patterns across m1A clusters: MAC and CAC showed predominantly increased TF activity, while AAC showed predominantly decreased TF activity, with cluster-specific TF regulatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by TF activity prediction analysis (Figure 6F-K). The differential TF activity patterns are clearly documented, though the predictions are computational and require experimental validation. The TF-target gene networks provide supporting evidence for cluster-specific regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Most m1A regulators showed positive correlation with metabolism-associated and autophagy-associated functions, and negative correlation with catabolism-associated functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by correlation analysis in Figure 6\u2014figure supplement 1H. The correlation patterns are clearly documented, though the biological interpretation of these correlations requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C92",
+      "C115"
+    ],
+    "result": "m1A modification mediates the circRNA/lncRNA-miRNA-mRNA ceRNA mechanism, with evidence that Neat1 sponges different miRNAs in expression versus methylation networks, suggesting m1A modification impacts ceRNA regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68 and C92 are based on ceRNA network construction (Figure 5D-E) showing differential miRNA interactions. While the network analysis is documented, the causal role of m1A modification in mediating these interactions (C68) requires experimental validation beyond network inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C71",
+      "C73"
+    ],
+    "result": "The genomic distribution pattern of m1A peaks in mRNAs was slightly different from previous findings (Dominissini et al., 2016), and the study revealed abundant m1A modifications in neurons that are affected by OGD/R treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C73 appropriately acknowledge differences from prior work while documenting the m1A landscape in neurons. The comparison is valid though the reasons for differences are not explored. The abundance of m1A modifications is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "m1A modification might affect regulatory mechanisms of noncoding RNAs, including lncRNA-RBP interactions and circRNA translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is a summary inference based on multiple analyses (lncRNA-RBP networks, circRNA translation potential). While supporting data exist, the causal role of m1A modification in these mechanisms requires direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C133"
+    ],
+    "result": "m1A-modified motifs may exhibit RNA species specificity, with speculation that different methyltransferases may regulate modification of different RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C103 are inferences based on observed motif differences across RNA types. While the differential motif patterns are documented (C100), the RNA species specificity and methyltransferase specificity (C103) are speculative and require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C125",
+      "C134"
+    ],
+    "result": "The study suggests time-specificity of m1A modifications under different OGD/R treatments and speculates that m1A modification patterns may be cell-type-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108 and C125 are speculative inferences based on observed temporal differences and comparison with other cell types. While the temporal patterns are documented, the broader claims about time-specificity and cell-type-specificity require validation across multiple developmental stages and cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "There may be interactions between different RNA modifications (m1A and m6A) in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 is speculation based on co-occurrence of m1A and m6A modifications on some circRNAs and cited evidence of crosstalk (C62-C63). While the co-occurrence is documented, the functional interaction in neurons requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Differentially expressed m1A regulators and noncoding RNAs identified in the study may be targets for mitigating OGD/R effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C130 are speculative therapeutic implications based on identification of differentially expressed regulators and noncoding RNAs. While the differential expression is documented, the therapeutic potential requires extensive validation including functional studies and in vivo models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "m1A is a relatively complex modification type with no completely conserved modification motif identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 are supported by the motif analysis showing variability across RNA types and comparison with literature. The complexity is appropriately acknowledged based on the study's findings and current knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

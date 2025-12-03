@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37",
+      "C38",
+      "C41",
+      "C42"
+    ],
+    "result": "Cln3 protein levels increase during G1 phase in a manner correlated with cell growth and carbon source quality. In rich carbon, Cln3 levels increase ~10-fold and concentration increases ~7-fold before bud emergence, while in poor carbon, levels increase ~2.5-fold and concentration increases ~2-fold. Cells in poor carbon enter the cell cycle with ~8-fold lower Cln3 levels than cells in rich carbon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C33, C37-C38, C41-C42 are supported by quantitative western blot data from synchronized cells (Figure 1D-G, 1I). The experimental design using elutriation to synchronize cells and comparing rich vs. poor carbon conditions is appropriate. Multiple biological replicates were performed (n=3). The quantification methods are clearly described and the data show consistent patterns across replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C39",
+      "C43"
+    ],
+    "result": "Whi5 protein levels do not change substantially during G1 phase and are not modulated by carbon source. Whi5 concentration decreases by only ~30% in rich carbon and ~20% in poor carbon during G1 phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C39, C43 are supported by western blot data (Figure 1D, 1H) and are consistent with multiple previous studies using fluorescence microscopy (Schmoller et al., 2015; Dorsey et al., 2018; Litsios et al., 2019; Black et al., 2020). The small changes in Whi5 concentration are consistent with the limited growth (~20-30%) that occurs during G1 phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C94"
+    ],
+    "result": "Cells in poor carbon enter the cell cycle at a much lower ratio of Cln3 to Whi5 protein (~10-fold lower) compared to cells in rich carbon, yet still successfully initiate cell cycle entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C94 are directly supported by the quantitative western blot data showing Cln3 is ~8-fold lower in poor carbon while Whi5 levels remain constant (Figure 1D, 1G). This is a key observation that challenges the Whi5 dilution model and suggests the threshold for cell cycle entry is flexible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C95",
+      "C96"
+    ],
+    "result": "Cln3 protein levels respond rapidly to nutrient shifts, showing a transient increase within 5 minutes of a shift from rich to poor carbon, followed by a dramatic decrease. Whi5 levels remain constant during this shift, demonstrating that Cln3, but not Whi5, is highly responsive to nutrient-dependent signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48, C95-C96 are supported by western blot data from nutrient shift experiments (Figure 2). The rapid response (within 5 minutes) is consistent with the requirement for rapid adjustment of growth thresholds observed in fission yeast (Fantes and Nurse, 1977). The experimental design is appropriate for testing rapid responses to nutrient changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C100",
+      "C101"
+    ],
+    "result": "Twofold changes in WHI5 dosage have minimal effects on cell size, while even a 12-fold overexpression causes only modest size increases. This indicates that Whi5 dilution is unlikely to play a major role in cell size control, and that dilution-independent mechanisms exist for overcoming Whi5 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55, C100-C101 are supported by cell size measurements using Coulter counter (Figure 3A-D). The experimental design tests multiple WHI5 dosages (0.5x, 1x, 2x, and 12x) under different nutrient conditions. The minimal effects of 2-fold changes are particularly compelling evidence against the dilution model, since Whi5 concentration changes by less than 2-fold during G1 phase. The conclusion is further supported by citations to recent studies reaching similar conclusions (Dorsey et al., 2018; Litsios et al., 2019; Barber et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C102",
+      "C103"
+    ],
+    "result": "Accumulation of Cln3 during G1 phase is dependent upon membrane trafficking events that drive plasma membrane growth. Inactivation of Sec7 blocks both cell growth and Cln3 accumulation without causing a general decrease in protein synthesis, indicating that Cln3 accumulation is specifically linked to growth-related membrane trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63, C102-C103 are supported by experiments using SEC7-AID and drug treatments (Figure 4). The key controls showing that protein synthesis continues after Sec7 inactivation (35S-methionine labeling, Figure 4F; loading control, Figure 4E) are critical for ruling out indirect effects. The finding that actin and microtubules are not required for G1 growth (Figure 4A-B) strengthens the conclusion that Sec7-dependent membrane trafficking is specifically required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Inhibition of Sch9 (TORC1 target) in G1 phase has no effect on growth rate but causes a slight delay in bud emergence and a reduction in Cln3 levels without blocking gradual Cln3 accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by experiments using sch9-as cells (Figure 5). The data show that acute inhibition of Sch9 does not have strong immediate effects on growth rate, suggesting that effects of sch9\u0394 on cell size may be long-term consequences of decreased ribosome biogenesis. The caveat that sch9-as may retain low activity in the presence of inhibitor is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Ypk1/2 kinases (yeast SGK homologs) are required for accumulation of Cln3 during G1 phase. Inhibition of ypk1-as causes rapid and complete loss of Cln3 protein without causing general shutdown of protein synthesis. Changes in Cln3 levels correlate with changes in Ypk1 phosphorylation state, establishing a link between Ypk1/2 and Cln3 that could explain how nutrient-dependent signals modulate cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77, C108-C111 are supported by experiments using ypk1-as ypk2\u0394 cells and ypk1\u0394 cells (Figure 6). The key controls showing that protein synthesis continues after Ypk1/2 inhibition (35S-methionine labeling, Figure 6\u2014figure supplement 1E; loading control) are critical. The correlation between Cln3 levels and Ypk1 phosphorylation state during nutrient shifts (Figure 6E) provides additional support. The distinction between effects of Ypk1/2 inhibition vs. Sec7 inhibition (complete loss vs. block of accumulation) suggests Ypk1/2 may play a more direct role in controlling Cln3 levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Sphingolipid-dependent signals influence Cln3 levels, but the complete loss of Cln3 caused by Ypk1/2 inhibition is not due to loss of sphingolipid synthesis. Myriocin (sphingolipid synthesis inhibitor) causes only modest decrease in Cln3 levels, while loss of ceramide synthase (lac1\u0394 lag1\u0394) causes substantial decrease. Exogenous phytosphingosine causes rapid loss of Cln3 in both wild-type and ceramide synthase mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C89 are supported by experiments using myriocin, lac1\u0394 lag1\u0394 mutants, and exogenous phytosphingosine (Figure 7). The differential effects of myriocin vs. Ypk1/2 inhibition on Cln3 levels (Figure 7A-D vs. Figure 6C) provide strong evidence that Ypk1/2 control Cln3 through mechanisms beyond sphingolipid synthesis. The model proposed in Figure 7G involving differential regulation of Ypk1/2 pools at the ER vs. plasma membrane is speculative but consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The number of Cln3 molecules per cell increases ~10-fold in rich carbon and ~2.5-fold in poor carbon before cell cycle entry. Cln3 synthesis outpaces the overall rate of protein synthesis needed for the 20-30% increase in cell size during G1 phase, potentially generating a signal with substantial dynamic range for measuring growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by quantitative western blot data from synchronized cells. Claim C93 is appropriately labeled as speculative interpretation. The conclusion that Cln3 synthesis outpaces overall protein synthesis is a reasonable inference from comparing the fold-change in Cln3 levels to the fold-change in cell size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "A fraction of Whi5 shifts to lower electrophoretic mobility forms at the time of bud emergence, likely corresponding to phosphorylation by Cln1/2-activated Cdk1. This phosphorylation is first detected 20-30 minutes after Cln3 reaches peak levels, consistent with it being an indirect consequence of Cln3 accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by western blot data showing Whi5 mobility shifts (Figure 1D) and the temporal relationship is consistent with the known positive feedback loop involving Cln1/2 (Cross and Tinkelenberg, 1991; Costanzo et al., 2004). The 20-30 minute delay between peak Cln3 and Whi5 phosphorylation supports the inference that phosphorylation is an indirect consequence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Growth in G1 phase is not dependent upon Cdk1 activity or actin filaments, unlike bud growth after cell cycle entry. This suggests substantial differences in mechanisms driving cell growth at different cell cycle stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by experiments using cdk1-as pho85-as cells and latrunculin A treatment (Figure 4A-B, Figure 5\u2014figure supplement 1A). The contrast with known requirements for bud growth (McCusker et al., 2007) is appropriately cited. However, the cdk1-as pho85-as experiment is based on a single biological replicate (n=1), which is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims establishing prior knowledge about Cln3, Whi5, Bck2, and cell size control in budding yeast, including conflicting reports about Cln3 concentration changes during G1 phase and the Whi5 dilution model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 are background claims supported by appropriate citations to prior literature. These establish the context and conflicting models that motivated the current study. The citations appear accurate and the claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Estimates of absolute Cln3 and Whi5 molecule numbers suggest there could be as few as 100 Cln3 molecules per cell in rich carbon (10-20 in poor carbon) compared to ~2500 Whi5 molecules per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 rely on estimates from prior studies (Cross et al., 2002; Ho et al., 2018; Dorsey et al., 2018) and extrapolations from the current data. The authors appropriately note considerable variance in Whi5 abundance estimates. These are useful estimates for discussion but the uncertainty in absolute molecule numbers is substantial. The current study measures relative changes rather than absolute abundances.",
+    "result_type": "MINOR"
+  }
+]

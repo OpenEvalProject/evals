@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C38",
+      "C39",
+      "C79",
+      "C80"
+    ],
+    "result": "Yeast cells respond to paraquat-induced superoxide stress through genetically controlled deletion of mitochondrial DNA segments encoding oxidative phosphorylation genes, critically involving Sod2 and Rtg2/Rtg3-mediated mito-nuclear communication. This mtDNA deletion process causes loss of respiratory growth and represents a regulated 'mtDNA editing' mechanism rather than random oxidative damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C28-C32, C34, C38-C39, and C79-C80 collectively demonstrate that mtDNA deletions are under regulatory control, requiring specific proteins (Sod2, Rtg2, Rtg3) and resulting in predictable loss of OXPHOS function. The evidence includes: (1) rapid adaptation kinetics inconsistent with random mutation (C17-C22), (2) specific mtDNA segment deletions tracked by qPCR and sequencing (C28-C32), (3) loss of adaptation in sod2\u0394, rtg2\u0394, and rtg3\u0394 strains (C44, C54-C55), (4) preadaptation of mip1\u0394 cells lacking mtDNA (C38), and (5) correlation with respiratory growth loss (C34). The convergence of genetic, molecular, and phenotypic data strongly supports regulatory control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36",
+      "C84",
+      "C85"
+    ],
+    "result": "After short-term paraquat exposure, yeast populations rapidly restore wild-type mtDNA profiles and respiratory capacity upon stress removal, with restoration occurring through a non-Darwinian mechanism likely involving heteroplasmic cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35-C36 are directly supported by experimental data showing rapid restoration of mtDNA and respiratory growth after stress release (Figures 3D, 6A). Claims C84-C85 provide mechanistic interpretation supported by the lack of selective advantage for wild-type mtDNA during recovery (Figures 1B-C), though the heteroplasmy mechanism remains speculative. The core observation of rapid, reversible mtDNA restoration is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C68",
+      "C69"
+    ],
+    "result": "Long-term paraquat exposure causes irreversible loss of intact mtDNA genomes, with populations progressing from partial deletions (\u03c1-) to near-complete loss (\u03c1--). This maladaptive persistence represents an artifactual response from prolonged activation of a regulatory mechanism evolved for short-term stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C58-C64 are strongly supported by sequencing data showing progressive, irreversible mtDNA loss over extended stress exposure (Figure 6). Claim C68 demonstrates that \u03c1-- populations grow slower than \u03c1- populations, supporting the maladaptive nature. Claim C69's interpretation as an 'artifactual response' is a reasonable inference from the data but represents a speculative evolutionary interpretation. The core observations of irreversible mtDNA loss and its maladaptive consequences are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Yeast populations adapt to paraquat extraordinarily rapidly compared to other stressors, with a biphasic response: an initial swift phase (4-10 generations, 49.3% adaptation) followed by a slower second phase (plateauing at 72.6% by 75 generations). This rapid adaptation cannot be explained by conventional mutation-selection dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are directly supported by growth kinetics data (Figure 1A). Claim C20 is supported by computational modeling showing nuclear mutations cannot explain the speed (Figure 1\u2014figure supplement 2). Claims C21-C22 demonstrate unique rapid, abrupt loss of adaptation upon stress release, distinguishing paraquat from other stressors. The convergence of empirical kinetics, computational modeling, and stress-release experiments strongly supports that adaptation occurs through a non-standard mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Paraquat exposure causes rapid mitochondrial fragmentation without substantial volume loss, and adaptation does not depend on canonical Atg32-mediated mitophagy, as atg32\u0394 populations adapt normally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by confocal and electron microscopy data (Figures 2A-B) showing morphological changes without volume reduction. Claims C26-C27 are supported by adaptation experiments showing atg32\u0394 populations adapt as well as wild-type (Figure 2C). This effectively rules out canonical mitophagy as the primary mechanism for the rapid adaptation phase, supporting the alternative mtDNA deletion mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Sod2 (mitochondrial matrix superoxide dismutase) is essential for the rapid mtDNA deletion response, while Sod1 (cytosolic/intermembrane space) is dispensable. sod2\u0394 populations show severely delayed or absent adaptation and mtDNA deletions, suggesting Sod2-dependent redox signaling in the mitochondrial matrix triggers the deletion process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by comparative adaptation experiments and qPCR data (Figure 4). The differential requirement for Sod2 vs. Sod1 (C44) and rescue of sod2\u0394 growth defect by mip1\u0394 deletion (C47) strongly support that Sod2 is required for triggering mtDNA deletions rather than just protecting against oxidative damage. Claims C49-C50 represent reasonable inferences from the subcellular localization data and differential phenotypes, though the precise signaling mechanism remains uncharacterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The retrograde response proteins Rtg2 and Rtg3 are required for paraquat-induced mtDNA deletions. rtg2\u0394 and rtg3\u0394 populations fail to adapt over 80 generations and retain respiratory capacity, supporting that mtDNA deletion is under regulatory control involving two-way mito-nuclear communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are directly supported by adaptation and respiratory growth data (Figure 5). The complete failure to adapt despite equivalent stress levels (C56) and retention of respiratory capacity (C55) strongly support that Rtg2/Rtg3 are required for the deletion process itself, not just for compensating for mtDNA loss. Claim C57's interpretation of regulatory control is well-supported by the genetic requirement for specific signaling proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The second, slower adaptation phase is explained by chromosome duplications (primarily II and V), which appear after the initial mtDNA deletion phase. These aneuploidies provide paraquat resistance but impair respiratory growth, with their combined effects accounting for the observed second-phase adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by sequencing data showing chromosome duplications at endpoint and their temporal appearance (Figure 6\u2014figure supplements 5A-B). Claims C72-C76 are supported by genetic segregation analysis demonstrating co-segregation of phenotypes with specific aneuploidies. Claim C77's quantitative prediction (81% vs. observed 72.6%) shows reasonable agreement, though the assumption of additivity is not rigorously tested. The overall conclusion that aneuploidies explain the second phase is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Deletion collection screens show that mitochondrial protein genes are overrepresented among paraquat-resistant strains, strains with low mtDNA copy number convert growth defects into advantages under paraquat, and paraquat-adapted cells show cross-resistance to menadione.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by statistical analysis of the yeast deletion collection with appropriate p-values. Claim C42 is supported by cross-resistance data (Figure 3\u2014figure supplement 3B). These results provide independent validation that loss of mitochondrial function (whether through gene deletion or mtDNA loss) confers paraquat resistance, supporting the generality of the main findings across genetic backgrounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "At 400 \u00b5g/mL, paraquat causes a 2.5-3 fold increase in cell doubling time and induces oxidative stress response genes (Sod1, Sod2, Ccp1) 2-12 fold. Vitamin C fully rescues growth, indicating paraquat impairs growth entirely through superoxide production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are directly supported by growth curves and RNA-seq data (Figure 1\u2014figure supplement 1A-B, C-D). Claim C16's inference that growth impairment is entirely due to O2\u2022\u2212 production is well-supported by the complete rescue with vitamin C, though this assumes vitamin C has no other relevant effects. The characterization of the experimental system is thorough and supports the use of paraquat as a specific mitochondrial superoxide generator.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Pre-stress mtDNA coverage is perfectly even, and retained mtDNA segments in endpoint populations form continuous stretches, confirmed by long-read sequencing. Some segments persist as tandem amplifications, consistent with yeast mtDNA organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C65-C67 are supported by sequencing data (Figure 3\u2014figure supplement 2A, Figure 6\u2014figure supplements 2A, 3) and PCR validation (Figure 6\u2014figure supplement 2C). These technical validations confirm that observed deletions are real and induced by paraquat, not pre-existing artifacts, and that retained segments represent continuous DNA molecules rather than fragmented populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The mtDNA deletion mechanism shows moderate fidelity, with clear preference for deletions in the COX1-VAR1 region while COX3-RPM1-15S rRNA segments are preferentially retained. All adapting populations lost COB or genes required for its expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by qPCR and sequencing data showing consistent deletion patterns across populations (Figures 3B, 6C). The observation that all populations lose COB-related functions (C83) is particularly important as it explains the mechanistic basis for OXPHOS shutdown. The moderate fidelity is consistent with a regulatory mechanism that achieves functional outcomes (OXPHOS loss) without requiring precise molecular targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establishing current understanding: mtDNA deletions are attributed to accidental events; mitochondrial impairment associates with aging and disease; domestication has impaired respiratory function in lab yeast strains; and paraquat generates superoxide through specific mitochondrial mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C12 are background knowledge claims supported by appropriate citations to published literature. These establish the context and rationale for the study. Claim C10-C11 justify the use of wild strain YPS128 rather than lab strains. All citations appear appropriate and the background claims are standard in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Background on \u03c10 cells and retrograde response: \u03c10 cells show twofold decreased O2\u2022\u2212 production; mtDNA deletion triggers retrograde response via Rtg2/Rtg1/Rtg3 signaling; and retrograde activation has been reported to cause mtDNA deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C51-C53 are background knowledge supported by citations (Reddi and Culotta 2013; Epstein et al. 2001; Sekito et al. 2000; Rothermel et al. 1995, 1997; Farooq et al. 2013). These establish the mechanistic context for interpreting the Rtg2/Rtg3 requirement. Claim C53 is particularly relevant as it suggests bidirectional causality between retrograde response and mtDNA deletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C86"
+    ],
+    "result": "Interpretive claims: The lack of adaptation in sod2\u0394, rtg2\u0394, and rtg3\u0394 strains is inconsistent with random oxidative damage followed by selection. Restoration of wild-type mtDNA after stress release requires either stopping replication of deleted genomes or targeted removal, or both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is a logical inference well-supported by the genetic data\u2014if deletions were random damage, specific gene deletions shouldn't prevent them. Claim C86 is a mechanistic speculation about mtDNA restoration, appropriately citing relevant literature on replication control and targeted mitophagy. Both represent reasonable interpretations of the data, though C86 acknowledges uncertainty about the precise mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Translational speculation: If results extend to humans, they may have etiological and therapeutic importance for age-related disease. Yeast and humans share conserved mitochondrial mechanisms. Doxorubicin and cisplatin accumulate in mitochondria, induce superoxide, cause oxidative injury, and increase mtDNA deletion frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is explicitly speculative ('if results extend'). Claims C88-C91 are supported by appropriate citations establishing conservation and drug effects. However, the leap from yeast to human relevance is substantial and unvalidated. The speculation is reasonable and appropriately qualified, but lacks direct evidence that the regulatory mechanism is conserved or that drug-induced deletions operate through the same pathway. This represents hypothesis generation rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

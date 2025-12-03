@@ -1,0 +1,2320 @@
+{
+  "submission": {
+    "id": "658afbc5-1f3b-4c89-92b9-1a9ae83cc232",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:19:29.360425Z",
+    "updated_at": "2025-12-03T16:19:29.360425Z"
+  },
+  "content": [
+    {
+      "id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "submission_id": "658afbc5-1f3b-4c89-92b9-1a9ae83cc232",
+      "content_type": "manuscript",
+      "content_text": "# Zbtb14 regulates monocyte and macrophage development through inhibiting pu.1 expression in zebrafish\n\n## Authors\n\n- Yun Deng<sup>1</sup>\n- Haihong Wang<sup>1</sup>\n- Xiaohui Liu<sup>1</sup>\n- Hao Yuan<sup>1</sup>\n- Jin Xu<sup>3</sup> ([ORCID: 0000-0002-6840-1359](https://orcid.org/0000-0002-6840-1359))\n- Hugues de Th\u00e9<sup>2</sup>\n- Jun Zhou<sup>1</sup> ([ORCID: 0000-0003-0472-3188](https://orcid.org/0000-0003-0472-3188)) \u2020\n- Jun Zhu<sup>2</sup> ([ORCID: 0000-0002-7983-3130](https://orcid.org/0000-0002-7983-3130)) \u2020\n\n### Affiliations\n\n1. Shanghai Institute of Hematology, State Key Laboratory of Medical Genomics, National Research Center for Translational Medicine at Shanghai, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))\n2. CNRS-LIA Hematology and Cancer, Sino-French Research Center for Life Sciences and Genomics, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))\n3. Laboratory of Immunology and Regeneration, School of Medicine, South China University of Technology Guangzhou China ([ROR:0530pts50](https://ror.org/0530pts50))\n4. Universit\u00e9 de Paris 7/INSERM/CNRS UMR 944/7212, Equipe Labellis\u00e9e Ligue Nationale Contre le Cancer, H\u00f4pital St. Louis Paris France ([ROR:049am9t04](https://ror.org/049am9t04))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMacrophages and their precursor cells, monocytes, are the first line of defense of the body against foreign pathogens and tissue damage. Although the origins of macrophages are diverse, some common transcription factors (such as PU.1) are required to ensure proper development of monocytes/macrophages. Here, we report that the deficiency of zbtb14, a transcription repressor gene belonging to ZBTB family, leads to an aberrant expansion of monocyte/macrophage population in zebrafish. Mechanistically, Zbtb14 functions as a negative regulator of pu.1, and SUMOylation on a conserved lysine is essential for the repression activity of Zbtb14. Moreover, a serine to phenylalanine mutation found in an acute myeloid leukemia (AML) patient could target ZBTB14 protein to autophagic degradation. Hence, ZBTB14 is a newly identified gene implicated in both normal and malignant myelopoiesis.\n\n## Introduction\n\nHematopoiesis is the process by which hematopoietic stem cells (HSCs) proliferate and differentiate into all blood lineages. It is driven by a variety of transcription factors, which function in a stage and lineage-specific manner (Bodine, 2017). A major goal to explore these transcription factors and their regulatory networks is to gain an intensive insight into normal hematopoiesis and its malignant counterpart, leukemia.\n\nMacrophages are key players in many biological processes such as immune response to foreign pathogens and tissue homeostasis. The developmental origin of macrophages is diverse (Kurotaki et al., 2017). Most tissue-resident macrophages arise from the blood islands of the yolk sac (Kurotaki et al., 2017). Yet, monocytes in circulation are derived from HSCs, which give rise to monocytes in a step-wise manner via common myeloid progenitors, granulocyte-monocyte progenitors, monocyte-dendritic cell progenitors, and common monocyte progenitors (Hettinger et al., 2013). During infection, circulating monocytes migrate into tissues and generate inflammatory macrophages (Menezes et al., 2016). Whatever the origin, some common transcription regulators (such as PU.1) (Glass and Natoli, 2016; Kueh et al., 2013) and signaling pathways (such as macrophage colony-stimulating factor receptor [M-CSFR]) are required in monocyte and macrophage development (Dai et al., 2002).\n\nA total of 49 zinc finger and BTB domain (ZBTB) containing transcription factors have been identified in human genome. The C-terminal zinc finger motifs of ZBTB proteins enable the binding with DNA, whereas the N-terminal BTB motif mediates the homo/hetero-dimerization/multimerization between different ZBTB family members and recruits corepressors such as NCoR and SMRT (Maeda, 2016). Thus, ZBTBs mostly function as transcription repressors.\n\nSeveral members of ZBTB family transcription factors including ZBTB16 (also known as promyelocytic leukemia zinc finger) (Sobas et al., 2020), ZBTB27 (also known as B cell leukemia/lymphoma 6) (Nakamura, 2000), ZBTB7 (also known as leukemia/lymphoma-related factor) (Constantinou et al., 2019), and ZBTB15 (also known as T-helper-inducing POZ/Kruppel-like factor) (Taniuchi, 2016) play various roles in both normal and malignant hematopoiesis in humans. In addition, at least 12 Zbtb genes are involved in hematopoietic development in mice (Maeda, 2016).\n\nZBTB14, a ZBTB family member whose function has been poorly characterized, is expressed in a variety of blood cell types (The Human Protein Atlas). Recently, a missense mutation of ZBTB14 gene (ZBTB14S8F) was detected by whole-exome sequencing in a newly diagnosed acute myeloid leukemia (AML) patient (Tyner et al., 2018). Note that mutation of ZBTB14 has not previously been identified in AML. Nevertheless, the potential role of ZBTB14 in hematopoiesis and leukemogenesis was obscure, (Yin et al., 2015).\n\nIn the present work, we provide in vivo evidence showing that the deficiency of zbtb14 leads to an expansion of monocyte/macrophage population in zebrafish. Mechanistic studies reveal that Zbtb14 functions as a negative regulator of pu.1, and SUMOylation on a conserved lysine is essential for the transcriptional repression of Zbtb14. In addition, human ZBTB14S8F mutant protein is demonstrated as a loss-of-function transcription factor. Hence, our results for the first time not only unravel the physiological function of Zbtb14 during monocyte/macrophage development, but also elucidate the defective role of its mutant in AML.\n\n## Results\n\n### Generation of a zbtb14-deficient zebrafish line\n\nThe zebrafish serves as an ideal model organism for hematopoietic development and disease studies (Gore et al., 2018). Zebrafish Zbtb14 protein shares 70% homology to its human counterpart ZBTB14. The two transcription factors bear a nearly identical N-terminal BTB motif and five consecutive C-terminal zinc finger motifs (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig1-v3.jpg)\n\n**Figure 1.:** (A) Sequence alignment of. ZBTB14 and Zbtb14 proteins. Hs: Homo sapiens, Dr: Danio rerio. The conserved BTB domain and C2H2 zinc finger domains are boxed. *: The mutated serine identified in an acute myeloid leukemia (AML) patient. The putative SUMOylated lysine K40 and the nuclear localization signal (NLS) are underlined, respectively. (B) Schematic representation of Cas9 target site in the first exon of zebrafish zbtb14. The deleted nucleotides in the mutant gene are marked by hyphens. (C) Schematic representation of wild type (442 amino acids) and mutant Zbtb14 proteins (80 amino acids). (D) Western blot analysis of HA-tagged wild type and mutant Zbtb14 proteins expressed in HEK293 cells. * indicates the adduct band.\n\nTo explore the roles of zbtb14 in hematopoiesis, especially in myelopoiesis, a mutant zebrafish line was established by using the CRISPR/Cas9 system targeting the BTB domain of Zbtb14. Ten nucleotides were deleted, which resulted in a truncated protein with only 80 amino acids by frameshifting (Figure 1B and C). The mutant zbtb14 gene was expressed in HEK293T cells, and western blot analysis revealed a short protein as anticipated (Figure 1D). Note that the presence of a weak adduct, implying certain covalent modification of Zbtb14 protein might exist.\n\n### Deficiency of zbtb14 specifically affects monocyte and macrophage development\n\nLike mammalian hematopoiesis, zebrafish hematopoiesis consists of primitive and definitive waves which occur sequentially in distinct anatomical sites (Galloway and Zon, 2003; Zon, 1995). The primitive hematopoiesis gives rise to embryonic myeloid cells (neutrophils and macrophages) and erythrocytes from two intraembryonic locations, the rostral blood island (the equivalent of mammalian yolk sac) and intermediate cell mass. The definitive HSCs which give rise to all blood lineages initiate within the ventral wall of the dorsal aorta (a tissue analogous to the mammalian aorta/gonad/mesonephros), then translocate to the caudal hematopoietic tissue (the equivalent of fetal liver) and colonize in kidney marrow (the equivalent of bone marrow) in adults (Bertrand et al., 2008; Bertrand et al., 2007).\n\nTo unravel the role of zbtb14 during embryonic hematopoiesis, whole-mount in situ hybridization (WISH) analyses were performed with multiple hematopoietic lineage-specific markers in zbtb14-deficient embryos and larvae. A significant increase of macrophage markers including mfap4, csf1ra, and mpeg1.1 (Meijer et al., 2008; Spilsbury et al., 1995; Zakrzewska et al., 2010) was observed from 19.5 hr post-fertilization (hpf) to 3 days post-fertilization (dpf) (Figure 2A\u2013G\u2019 and H). This expanded macrophage population was further confirmed in zbtb14-/-//Tg(mpeg1.1:eGFP) larvae (Figure 2I\u2013J\u2019 and K). It is worth noting that the zbtb14-deficient macrophages could still migrate toward the wound as wild type ones did, implying their function remains intact (Figure 2L\u2013M\u2019). In addition, WISH with apoeb probe (a specific microglia marker) and neutral red vital dye staining revealed an expansion of microglia (the macrophages that reside in brain) in zbtb14-deficient larvae (Figure 2N\u2013Q\u2019 and R).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig2-v3.jpg)\n\n**Figure 2.:** (A\u2013G\u2019) Whole-mount in situ hybridization (WISH) analyses of macrophage markers mfap4 (A\u2013D\u2019), csf1ra (E\u2013F\u2019), mpeg1.1 (G, G\u2019) from 19.5 hr post-fertilization (hpf) to 3 days post-fertilization (dpf) in wild type (WT) and zbtb14-deficient embryos and larvae. Red arrows indicate the main positions of positive cells for each marker. n/n, number of embryos/larvae showing representative phenotype/total number of embryos/larvae examined. (H) Statistical results for A\u2013G\u2019 (Student\u2019s t test, N=3, 14\u201328 embryos were used for each probe. Each dot represents the mean value of one experiment, which was obtained from the counts of all of the embryos/larvae in the same group. Error bars represent mean \u00b1 standard error of the mean (SEM). **p<0.01, ***p<0.001, ****p<0.0001). (I\u2013J\u2019) GFP positive cells were increased in zbtb14-/-//Tg(mpeg1.1:eGFP) embryos at 2 and 3 dpf. (K) Statistical results for I\u2013J\u2019 (Student\u2019s t test, N=3, 14\u201322 larvae were used for each experiment. Each dot represents the mean value of one experiment. Error bars represent mean \u00b1 SEM. **p<0.01, ***p<0.001). (L\u2013M\u2019) GFP positive cells in both Tg(mpeg1.1:eGFP) and zbtb14-/-//Tg(mpeg1.1:eGFP) larvae can migrate to the wound. (N\u2013Q\u2019) apoeb and neutral red positive cells were both increased in zbtb14-deficient larvae at 2 and 3 dpf. (R) Statistical results for N\u2013Q\u2019 (Student\u2019s t test, N=3, 15\u201322 larvae were used for each experiment. Each dot represents the mean value of one experiment. Error bars represent mean \u00b1 SEM. ***p<0.001, ****p<0.0001). (S\u2013T\u2019) Representative scatterplot generated by FACS analysis of WKM samples collected from WT Tg(mpeg1.1:eGFP) (up panel) and zbtb14-/-//Tg(mpeg1.1:eGFP) (bottom panel) zebrafish lines in 4-month-old adults. M: myeloid gate. (U) Statistical results for S\u2013T\u2019 in WT Tg(mpeg1.1:eGFP) and zbtb14-/-//Tg(mpeg1.1:eGFP) zebrafish. (Student\u2019s t test, N=4, each time one male and one female were used in the WT and mutant groups. Error bars represent mean \u00b1 SEM. **p<0.01).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Whole-mount in situ hybridization (WISH) analyses of neutrophil markers c/ebp1, mpx, lyz, and erythroid marker hbae1 at 22 hr post-fertilization (hpf) (A\u2013D\u2019). WISH analyses of myeloid marker c/ebp\u03b1 from 14 to 22 hpf (E\u2013H\u2019). WISH analyses of HSPCs (hematopoietic stem and progenitor cells) marker c-myb, erythroid marker hbae1, neutrophil markers mpx, lyz, and lymphoid marker rag1 at 5 days post-fertilization (dpf) (I\u2013M\u2019). (N) Statistical results for A\u2013C\u2019, H\u2013H\u2019, I\u2013I\u2019, K\u2013L\u2019 (Student\u2019s t test, N=3, 10\u201325 embryos or larvae were used for each probe. Each dot represents the mean value of one experiment, which was obtained from the counts of all of the embryos or larvae in the same group. ns: not statistically significant).\n\nThe primitive macrophages cannot sustain for a long period, which will eventually be replaced with HSC-derived macrophages as definitive hematopoiesis begins (Xu et al., 2012). Since zbtb14 mutant zebrafish were viable and fertile, the whole kidney marrow (WKM) samples were collected from wild type Tg(mpeg1.1:eGFP) and zbtb14-/-//Tg(mpeg1.1:eGFP) lines in adults. The myeloid cell fraction was analyzed, and many more macrophages were found in zbtb14-/-//Tg(mpeg1.1:eGFP) zebrafish than in controls (1.82% mpeg1.1+ versus 0.50% mpeg1.1+) (Figure 2\u2014figure supplement 1S\u2013T\u2019 and U), indicating that the development of macrophages originated from HSCs are also affected.\n\nIn addition, the expressions of neutrophil and erythrocyte markers during primitive hematopoiesis stage, as well as those of hematopoietic stem and progenitor cells, neutrophil, erythrocyte, and lymphocyte markers during definitive hematopoiesis stage were all normal (Figure 2\u2014figure supplement 1). These observations suggest that only the development of monocyte/macrophage lineage is affected in the absence of zbtb14.\n\n### Overproliferation of monocyte/macrophage progenitor is the main cause of abnormal macrophage lineage expansion in zbtb14 mutants\n\nThe aberrant expanded macrophage population in zbtb14-defective mutants could be caused by either increased proliferation or decreased apoptosis rate. To distinguish between the two possibilities, antiphosphohistone H3 (pH3) immunostaining and terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL) assays were carried out to evaluate the proliferation and apoptosis status of macrophages, respectively.\n\nA significant increase of pH3+GFP+ double-positive cells were observed in zbtb14-/-//Tg(mpeg1.1:eGFP) larvae compared to those in controls (Figure 3A\u2013C\u2019 and D). Nevertheless, the results from TUNEL assay could not show discernible differences in the percentage of TUNEL+GFP+ cells in zbtb14-/-//Tg(mpeg1.1:eGFP) larvae compared to the percentage in controls (Figure 3E\u2013G\u2019 and H). These data suggest that the expanded macrophage population is due to enhanced proliferation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig3-v3.jpg)\n\n**Figure 3.:** (A\u2013C\u2019, E\u2013G\u2019) pH3 and transferase dUTP nick end labeling (TUNEL) assays in zbtb14-/-//Tg(mpeg1.1:eGFP) and Tg(mpeg1:EGFP) control larvae. Triangles indicate positive signals. (D, H) Statistical result for A\u2013C\u2019 and E\u2013G\u2019. Data shown are the means \u00b1 standard error of the mean (SEM) of at least 15 larvae. ns: not statistically significant, **p<0.01. (I) Classification of zebrafish monocytes/macrophages is based on their morphology. (J) Quantification of mpeg1.1 + cells at each differentiation stage. Sorted macrophage lineage cells from 10-month-old zbtb14-/-//Tg(mpeg1.1:eGFP) and Tg(mpeg1.1:eGFP) larvae were subjected to May-Gr\u00fcnwald-Giemsa staining and separated into immature, intermediate, and mature groups according to their morphology. Scale bar: 10\u2005\u00b5m. Error bars represent mean \u00b1 SEM of three independent experiments. *p<0.05 (Student\u2019s t-test).\n\nMoreover, the mpeg1.1+ cells were isolated from the myeloid fraction of WKM in adult zebrafish (10-month-old) and subjected to May-Gr\u00fcnwald-Giemsa (MGG) staining. According to their morphology, the cells were classified into three populations: proliferative immature progenitors (I), intermediate (II), and non-proliferative mature cells (III) (Figure 3I). The results revealed that the proportion of immature progenitors (with a round-shape morphology and a higher nuclear/cytoplasm ratio) was obviously increased in zbtb14 mutants compared with the siblings (Figure 3J). By contrast, the proportion of fully differentiated macrophages was decreased in the mutants (Figure 3J).\n\nBased on these observations, we can draw the conclusion that the expansion of macrophage lineage is mainly due to excessive monocyte/macrophage progenitor proliferation in zbtb14 mutants.\n\n### Zbtb14 functions as a transcription repressor of pu.1 in regulating monocyte and macrophage development\n\nThe monocyte/macrophage abnormalities in zbtb14-deficient larvae could be effectively rescued with either zebrafish zbtb14 or human ZBTB14 mRNA, confirming the specificity and conservation of ZBTB14 proteins (Figure 4A\u2013D and F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig4-v3.jpg)\n\n**Figure 4.:** (A\u2013E) mRNA rescue assays in zbtb14-/- larvae. mfap4 probe was used in whole-mount in situ hybridization (WISH) to examine rescue effect with wild zbtb14 (C), ZBTB14 (D), DAXX-ZBTB14 (E) mRNA injections. (F) Statistical result for A\u2013E and O\u2013Q. The statistical significance was calculated by using one-way analysis of variance (ANOVA). The statistical significance was calculated using one-way ANOVA followed by Dunnett T3 correction. The asterisk indicates a statistical difference. (N=3, 10\u201332 larvae were used for each experiment. Each dot represents the mean value of one experiment. Error bars represent mean \u00b1 standard error of the mean (SEM). ****p<0.0001.) (G) Quantitative reverse transcriptase polymerase chain reaction analysis of zbtb14 and pu.1 in GFP positive cells enriched from Tg(mpeg1.1:eGFP) and zbtb14-/-//Tg(mpx:eGFP) larvae at 2 days post-fertilization (dpf). To determine the relative expression rate, data were normalized to the expression level of wild type (WT) groups (which were set to 1.0) after normalized to the internal control of \u03b2-actin (Student\u2019s t test, N=3. Error bars represent mean \u00b1 SEM. *p<0.05, **p<0.01). (H\u2013K\u2019) Serial WISH analyses of pu.1 in WT and zbtb14-/- embryos. (L) Statistical results for H\u2013K\u2019 (Student\u2019s t test, N=3, 10\u201316 embryos were used. Each dot represents the mean value of one experiment, which was obtained from the counts of all of the embryos in the same group. Error bars represent mean \u00b1 SEM. **p<0.01, ****p<0.0001). (M) Luciferase reporter assay of Zbtb14 on the pu.1 promoter. Bars showed the relative luciferase activity on the zebrafish pu.1 promoter (\u20130.6 kb). (Student\u2019s t test, N=3. Error bars represent mean \u00b1 SEM. **p<0.01.) (N) Chromatin immunoprecipitation polymerase chain reaction (ChIP-PCR) analysis of pu.1 promoter in zebrafish larvae expressing GFP or Zbtb14-GFP using an anti-GFP antibody. Positive: the location of the positive primers. NC: the location of the negative control primers. The statistical significance was calculated by using one-way ANOVA. The asterisk indicates a statistical difference. (N=3. Error bars represent mean \u00b1 SEM. ns: not statistically significant, ****p<0.0001.) (O\u2013Q) WISH assay of mfap4 in zbtb14-/- mutants injected with TOL2 mpeg1.1:Pu.1 DBD, pu.1\u0394371/\u0394371 mutants, and zbtb14-/-//pu.1\u0394371/\u0394371 double mutants.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The scale of color intensity was positively correlated to the fold change.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013A\u2019\u2019) Whole-mount in situ hybridization (WISH) assays of mpx in wild type, zbtb14-/-, and TOL2-mpeg1.1:pu.1-DBD injected zbtb14 mutants at 2 days post-fertilization (dpf). (B) Statistical results for A\u2013A\u2019\u2019. (Student\u2019s t test, N=3, 16\u201326 larvae were used. Each dot represents the mean value of one experiment, which was obtained from the counts of all of the larvae in the same group. ns: not statistically significant.) (C\u2013D\u2019) WISH assays of mpx and mfap4 in wild type, and TOL2-mpeg1.1:pu.1 injected wild type embryos at 2 dpf. (E) Statistical results for C\u2013D\u2019. (Student\u2019s t test, N=3, 19\u201346 larvae were used for each probe. Each dot represents the mean value of one experiment, which was obtained from the counts of all of the larvae in the same group. ns: not statistically significant, **p<0.01.)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Quantitative reverse transcriptase polymerase chain reaction analysis of zbtb14 in GFP positive cells enriched from Tg(mpx:eGFP) and Tg(mpeg1.1:eGFP) larvae at 2 and 5 days post-fertilization (dpf). To determine the relative expression rate, data were normalized to the expression level of wild type (WT) Tg(mpx:eGFP) group at 2 dpf (which were set to 1.0) after normalized to the internal control of \u03b2-actin. (Student\u2019s t test, N=3. Error bars represent mean \u00b1 standard error of the mean (SEM). **p<0.01, ****p<0.0001.)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Bars showed the relative luciferase activity on the zebrafish zbtb14 promoter (\u20131.1 kb). (Student\u2019s t test, N=3. Error bars represent mean \u00b1 standard error of the mean (SEM). **p<0.01.)\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig4-figsupp5-v3.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Quantitative reverse transcriptase polymerase chain reaction analysis of c-myc in GFP positive cells enriched from Tg(mpeg1.1:eGFP) and zbtb14-/-//Tg(mpx:eGFP) embryos at 2 days post-fertilization (dpf). To determine the relative expression rate, data were normalized to the expression level of wild type (WT) groups (which were set to 1.0) after normalized to the internal control of \u03b2-actin. (Student\u2019s t test, N=3. Error bars represent mean \u00b1 standard error of the mean (SEM). *p<0.05.)\n\nZBTB family proteins are frequently described as transcription repressors, nevertheless, ZBTB14 displays an activation or inhibition effect on different promoters (Kaplan and Calame, 1997). To distinguish the activity of Zbtb14 on transcription, the repression domain of DAXX (a transcription corepressor) (Zhou et al., 2006) was fused in frame with Zbtb14 (DAXX-Zbtb14), which forced the fusion protein to be a potent repressor. In vivo rescue assays demonstrated that DAXX-zbtb14 mRNA had an obvious rescue effect as wild type zbtb14 mRNA (Figure 4E and F), implying Zbtb14 acted as a negative regulator in monocyte/macrophage development.\n\nTo elucidate the mechanism underlying the aberrant monocyte/macrophage development, we performed RNA sequencing (RNA-seq) analyses on mpeg1.1+ cells isolated from Tg(mpeg1.1:eGFP) and zbtb14-/-//Tg(mpeg1.1:eGFP) larvae at 2 dpf. The differentially expressed genes (DEGs) analysis of the RNA-seq data indicated that multiple important regulators involving monocyte/macrophage development including pu.1, csf1ra, csf1b, il34, mafb, klf4, irf8, and c-myc were upregulated (Figure 4\u2014figure supplement 1). The expression level of pu.1, the pivotal transcription factor which can promote macrophage proliferation (Dai et al., 2002), was obviously increased. Such upregulation was further confirmed by real-time quantitative PCR (RT-qPCR) analyses (Figure 4G). In addition, WISH analyses showed that the signals of pu.1 were clearly intensified from 18 to 22 hpf in zbtb14-deficient embryos compared with the wild type ones (Figure 4H\u2013K\u2019 and L).\n\nSince Zbtb14 was identified as a transcription repressor, we postulated that pu.1 would be a major direct target of Zbtb14, whose derepression in the absence of Zbtb14 probably contributed to the expansion of monocyte/macrophage population. To test this hypothesis, a \u20130.6 kb zebrafish pu.1 promoter in luciferase reporter was co-transfected with zbtb14 expressing plasmid in HEK293T cells. As anticipated, luciferase analyses showed that Zbtb14 displayed a significant repression effect (Figure 4M).\n\nNext, in vivo chromatin immunoprecipitation polymerase chain reaction (ChIP-PCR) was conducted in zebrafish larvae expressing GFP or GFP-Zbtb14 using an anti-GFP antibody. In this experiment, the pu.1 promoter region could be specifically co-immunoprecipitated with GFP-Zbtb14 (Figure 4N).\n\nTo further demonstrate that pu.1 was upregulated in macrophage lineage, a series of in vivo experiments was performed. A prominent rescue effect could be obtained with a dominant-negative Pu.1 plasmid (the DBD domain of Pu.1 was under the control of mpeg1.1 gene\u2019s promoter, cloned in TOL2 backbone) injection in zbtb14 mutants (Figure 4O and F). Moreover, we took advantage of a zebrafish pu.1\u0394371 mutant line (a truncated Pu.1 whose transactivation activity was reduced) in which macrophages were reduced (Yu et al., 2017; Figure 4P and F), and no obvious alleviation could be found in zbtb14-/-//pu.1\u0394371 double mutant zebrafish, indicating zbtb14 was epistatic to pu.1 (Figure 4Q and F).\n\nIn summary, these findings suggest that Zbtb14 regulates monocyte and macrophage development through inhibiting the expression of pu.1.\n\n### SUMOylation is essential for the transcription repression of Zbtb14\n\nPost-translational modification plays important roles in regulating the functions of substrate proteins. Similar to ubiquitination, protein SUMOylation is catalyzed by a sequential enzymatic cascade including E1 (SAE1/SAE2), E2 (UBC9), and E3 in which SUMO (Small Ubiquitin-like MOdifier) molecules are covalently attached to lysine residues within substrate proteins (Eifler and Vertegaal, 2015). The SUMOylation is generally associated with transcriptional repression through the recruitment of corepressors such as NCoR and SMRT (Garcia-Dominguez and Reyes, 2009; Valin and Gill, 2007). We have mentioned above the presence of a weak adduct which was ~10 kD (the size of one SUMO molecule) larger than the unmodified Zbtb14 protein (Figure 1D). Combing the fact that Zbtb14 was a repressor, we reasoned Zbtb14 would be a SUMOylated substrate.\n\nTo validate this hypothesis, zbtb14-expressing plasmid was transfected with or without UBC9 and SUMO1 in HEK293T cells. Western blot analyses showed that the adduct band became much more intensive in the presence of UBC9 and SUMO1 (Figure 5A, lanes 1 and 2). Furthermore, immuno-coprecipitation assays showed that SUMO1 molecules could be coprecipitated with Zbtb14 (Figure 5B, lane 1). These results indicated that Zbtb14 could be SUMOylated in cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig5-v3.jpg)\n\n**Figure 5.:** (A) Western blot analysis (anti-HA) of HA-tagged wild type (WT), Zbtb14K40R, and Zbtb14K259R mutant proteins expressed in HEK293T cells in the absence or presence with the SUMO (Small Ubiquitin-like MOdifier) conjugating enzyme UBC9 and SUMO1. (B) HA-tagged WT or Zbtb14K40R mutant protein was immunoprecipitated with an anti-HA antibody from HEK293T cells co-expressing GFP-SUMO1, and SUMOylated Zbtb14 protein was detected by western blot with an anti-GFP antibody. (C) Immunofluorescence analysis of WT (left panel) and Zbtb14K40R mutant protein (right panel). (D) The structure of variant forms of Zbtb14, including WT, Zbtb14K40R, and SUMO1-Zbtb14K40R mutants (top panel). Repression of luciferase expression from the zebrafish pu.1 promoter (\u20130.6 kb) by Zbtb14 mutants (bottom panel). Bars showed the relative luciferase activity on the zebrafish pu.1 promoter (\u20130.6 kb). (Student\u2019s t test, N=3. Error bars represent mean \u00b1 standard error of the mean (SEM). ns: not statistically significant, ***p<0.001.) (E) mRNA rescue assays in zbtb14-/- mutant larvae. mfap4 probe was used in whole-mount in situ hybridization (WISH) to examine rescue effects of injections of zbtb14, zbtb14K40R, and SUMO1-zbtb14K40R mRNA. (F) Statistical result for E. The statistical significance was calculated by using one-way analysis of variance (ANOVA). The asterisk indicates a statistical difference. (N=3, 10\u201317 embryos were used for each experiment. Each dot represents the mean value of one experiment. Error bars represent mean \u00b1 SEM. ns: not statistically significant, ****p<0.0001.)\n\nSUMOylation is a process by which the SUMO monomer/polymer is covalently ligated to specific lysine residues of the target protein (Chang and Yeh, 2020). Dozens of potential SUMOylation sites which spread throughout the protein were predicted by bioinformatics (SUMOsp2.0 prediction software, K259 has the highest score among 41 predicted SUMOylated sites). We carried out a series of mutations and finally found that the adduct band of Zbtb14K40R mutant was abolished (Figure 5A, lanes 3\u20136), suggesting K40 was the SUMOylated site.\n\nSince K40 is located adjacent to the bipartite nuclear localization sequence of Zbtb14 (Sugiura et al., 1997; Figure 1A), we questioned whether SUMOylation would affect its protein subcellular localization. HA-tagged Zbtb14 and Zbtb14K40R were transfected in HEK293T cells, respectively. The results from immunofluorescence analyses revealed that the mutant protein was located in the nucleus as wild type Zbtb14 (Figure 5C).\n\nNext, luciferase reporter assays with the \u20130.6 kb zebrafish pu.1 promoter were carried out. While Zbtb14 and SUMO1-Zbtb14K40R (SUMO1 molecule was fused in frame with Zbtb14K40R to mimic the SUMOylated Zbtb14) displayed a strong repression effect, Zbtb14K40R completely lost the ability to repress transcription (Figure 5D).\n\nFinally, in vivo rescue assays were conducted in zbtb14-deficient larvae with zbtb14, zbtb14K40R, and SUMO1-zbtb14K40R mRNA, respectively. As expected, both zbtb14 and SUMO1-zbtb14K40R mRNAs had a remarkable rescue effect, whereas zbtb14K40R mRNA did not (Figure 5E and F).\n\nTaken together, these results suggest that SUMOylation of Zbtb14 is pivotal for transcription repression.\n\n### Human ZBTB14S8F mutant is a loss-of-function transcription factor\n\nA missense mutation, ZBTB14S8F, was detected in a de novo AML patient (Tyner et al., 2018). To assess the role of the mutant protein, we first performed in vivo rescue assays in zbtb14-deficent zebrafish. While the wild type ZBTB14 mRNA significantly rescued the expanded macrophage population, the mutant failed to display any rescue effect (Figure 6A and B), implying that the normal functions of ZBTB14 was lost.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80760/elife-80760-fig6-v3.jpg)\n\n**Figure 6.:** (A) mRNA rescue assays in zbtb14-/- mutant larvae. mfap4 probe was used in whole-mount in situ hybridization (WISH) to examine rescue effects of injections of ZBTB14 and ZBTB14S8F mRNA. (B) Statistical result for A. The statistical significance was calculated by using one-way analysis of variance (ANOVA). The asterisk indicates a statistical difference. (N=3, 10\u201316 embryos were used for each experiment. Each dot represents the mean value of one experiment. Error bars represent mean \u00b1 standard error of the mean (SEM). ns: not statistically significant, ****p<0.0001.) (C) Quantitative reverse transcriptase polymerase chain reaction analysis of ZBTB14 and ZBTB14S8F transfected in HEK293T cells. To determine the relative expression rate, data were normalized to the expression level of wild type (WT) groups (which were set to 1.0) after normalized to the internal control of \u03b2-actin. (Student\u2019s t test, N=3. Error bars represent mean \u00b1 SEM. ns: not statistically significant.) (D) Western blot analysis (anti-HA) of HA-tagged WT, ZBTB14S8A, ZBTB14S8D, ZBTB14S8F, ZBTB14S8W, and ZBTB14S8Y mutant proteins expressed in HEK293T cells in the absence or presence with baf A1 or MG132. GAPDH served as internal control.\n\nNext, we investigated the reason underlying the defects of the ZBTBS8F mutant. Although its transcription level was comparable to that of wild type ZBTB14 (Figure 6C), ZBTB14S8F protein could hardly be detected by western blot analysis, implying that the stability of the mutant protein was impaired (Figure 6D, lane 4). We thus treated ZBTB14S8F-expressing HEK293T cells with MG132 (a proteasomal inhibitor), or bafilomycin (an autophagy inhibitor). The results indicated that bafilomycin, but not MG132, inhibited ZBTB14S8F protein turnover (Figure 6D, lanes 7 and 10), suggesting that the mutant protein might be subjected to autophagic degradation. Since serine is most frequently modified with phosphorylation, which could affect the protein stability, ZBTB14S8A and ZBTB14S8D mutants were constructed to mimic the dephosphorylated or constitutively phosphorylated status of ZBTB14. However, the turnover of both two mutant proteins still kept normal (Figure 6D, lanes 2 and 3).\n\nAutophagy is a process in which cellular material is degraded through the lysosomal pathway and recycled. Selective autophagy is mediated by specific cargo receptors which interact with the Atg8 (autophagy-related 8) family proteins and thereby link the cargo with the autophagy machinery (Fracchiolla et al., 2017). MAP1LC3/LC3 (microtubule-associated protein1 light chain 3) is one of the most important autophagy-related proteins which participates in autophagosome formation (Fracchiolla et al., 2017). LC3 interacts with LIR (LC3-interacting region) motif (also termed as AIM [Atg8-interacting motif]) of selective autophagy receptors that carry cargo for degradation. The LIR/AIM motif contains the consensus sequence [W/F/Y]xx[L/I/V] (Popelka and Klionsky, 2015). The aromatic residue (W/F/Y) and hydrophobic residue (L/I/V) bind to two hydrophobic pockets formed by the ubiquitin-like fold of the Atg8 proteins (Atkinson et al., 2019). Thus, the LIR/AIM ensures the selectivity of the interaction between Atg8 proteins and their binding partners. We noticed that the S to F mutation (FETI) happened to form a \u03c6xx\u03a8 motif, which was probably the reason why the ZBTB14S8F mutant protein was targeted to undergo autophagic degradation. To further validate this point, ZBTB14S8W and ZBTB14S8Y mutants were also constructed and expressed in HEK293T cells. The results from western blots showed that the turnover of the two proteins was comparable to that of ZBTB14S8F mutant protein (Figure 6D, lanes 5, 6, 8, 9, 11, and 12).\n\nOverall, the serine to phenylalanine mutation impairs the protein stability of ZBTB14, which probably contributes to AML pathogenesis.\n\n## Discussion\n\nIn this study we characterize the roles of the previously enigmatic Zbtb14 in monocyte/macrophage development. Zbtb14 is absolutely required for proper monopoiesis during primitive hematopoiesis, which is reflected by the expansion of macrophage population in zbtb14 mutant embryos/larvae compared to wild type ones from 19.5 hpf to 3 dpf. Such a requirement of Zbtb14 continues to definitive hematopoiesis since HSCs-derived macrophages remain hyperproliferative in zbtb14-/- adults. Hence, zbtb14 is indispensable for the maintenance of proper quantity of monocytes/macrophages. Functionally, the zbtb14-deficient mpeg1.1+ cells can still be recruited to the wound, and result in a normal healing, implying these macrophages are able to terminally differentiate into mature cells.\n\nThe results from anti-pH3 and MGG staining assays indicate that the abnormal expansion of macrophages is mainly due to excessive monocyte/macrophage progenitor proliferation in zbtb14 mutants. In addition, DEGs analyses of RNA-seq data further indicate several key regulators involved in macrophage proliferation such as csf1ra, csf1b, and il34 (M-CSFR signaling genes) (Dai et al., 2002), and pu.1 (Celada et al., 1996) are all significantly upregulated.\n\nThe mechanistic studies identify that pu.1 is a direct target of Zbtb14. As a pivotal ETS family transcription factor, PU.1 is implicated in multiple stages of hematopoiesis such as generation of early myeloid progenitors, cell fate determination of granulocytic versus monocytic lineages of neutrophil-macrophage progenitors, maintenance of the accessibility of macrophage-specific genes during monocytic differentiation (Kastner and Chan, 2008). It is worth noting that while the aberrant macrophage expansion could be effectively rescued with dominant-negative Pu.1 (TOL2-mpeg1.1:pu.1-DBD), the development of neutrophil lineage still kept normal in zbtb14 mutants (Figure 4\u2014figure supplement 2A-A\u2019\u2019, B). In parallel, the overexpression of full-length pu.1 (TOL2-mpeg1.1:pu.1) in wild type embryos could induce an expansion of macrophage population without interfering neutrophil lineage development (Figure 4\u2014figure supplement 2C-D\u2019, E). In addition, we compared the expression level of zbtb14 in mpeg1.1+ and mpx+ cells at different developmental stages, and found zbtb14 transcripts were constantly higher in the former (Figure 4\u2014figure supplement 3). These observations suggest that Zbtb14 is a macrophage lineage-specific transcription factor.\n\nMeanwhile, we also investigated the transcriptional network that involved zbtb14. Bioinformatic analyses show that PU.1 is a predicted upstream transcription factor of mammalian ZBTB14. The promoter region of zebrafish zbtb14 was cloned into a reporter vector, and luciferase assay showed that PU.1 displayed a significant repression effect on it (Figure 4\u2014figure supplement 4). Therefore, a Zbtb14-Pu.1 negative feedback loop might regulate monocyte and macrophage development.\n\nApproximately 20 genes including CEBPA, RUNX1, FLT3, DNMT3A, and NPM1 are most frequently mutated in AML patients (Ley et al., 2013). Nevertheless, some rare mutations can be found in few samples (Ley et al., 2013). A missense mutation, ZBTB14S8F, was detected in a de novo AML patient (Tyner et al., 2018). In the current study, we took advantage of the zbtb14-deficient zebrafish line to demonstrate the functional conservation between the human ZBTB14 and the zebrafish ortholog zbtb14. While wild type ZBTB14 mRNA displayed a similar rescue effect as zbtb14, the ZBTB14 mutant was shown to be a loss-of-function transcription regulator in monocyte/macrophage development. Furthermore, we demonstrated that the protein stability of ZBTB14S8F was profoundly affected due to aberrant autophage.\n\nZBTB14, originally named as ZF5, was cloned as a transcriptional repressor gene on the murine c-MYC promoter (Yanagidani et al., 2000). C-MYC amplification was identified in some AML patients (Tang et al., 2021). Moreover, c-MYC is one of the most overexpressed genes in AML (Handschuh et al., 2018). Either increased expression or aberrant activation of c-MYC plays important roles in leukemogenesis (Salvatori et al., 2011). RNA-seq and RT-qPCR experiments showed that c-myc was upregulated in our zbtb14-deficient macrophages (Figure 4\u2014figure supplement 5). In addition, it has been reported that Znf161 (another alias of Zbtb14) knockout mice had a defect in genomic instability, which was associated with higher cancer risk (Kim et al., 2019). These results suggest that ZBTB14 would be a tumor suppressor, whose inactivity is tightly related with AML pathogenesis in humans.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA (Rabbit monoclonal)</td>\n      <td>CST</td>\n      <td>Cat# 3724</td>\n      <td>WB(1:1000)IP(1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-p-Histone H3 (Ser10)(Rabbit polyclonal)</td>\n      <td>Santa Cruz</td>\n      <td>Cat# sc-8656-R</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Digoxigenin-AP Fab fragments(Sheep polyclonal)</td>\n      <td>Roche</td>\n      <td>Cat# 11093274910</td>\n      <td>WISH(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>zbtb14_F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CTCGTGTGTTCGGCAGTAATTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>zbtb14_R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CTGGAGCGAAATCCTTACTGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>pu.1_F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>TCCCAGCAGTCGTAGTCCTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>pu.1_R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CCATTTCGCAGAAGGTCAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>c-myc_F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CAATTCTGGAACGGCATTCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>c-myc_R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>GAAGTAGAAGTAGGGCTGGATG</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>In Situ Cell Death Detection Kit, TMR red</td>\n      <td>Roche</td>\n      <td>Cat# 12156792910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SimpleChIP Plus Sonication Chromatin IP Kit</td>\n      <td>CST</td>\n      <td>Cat# 56383S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MG-132</td>\n      <td>MCE</td>\n      <td>Cat# HY-13259</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bafilomycin A1</td>\n      <td>MCE</td>\n      <td>Cat# HY-100558</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish maintenance and mutant generation\n\nZebrafish were raised, bred, and staged according to standard protocols (Kimmel et al., 1995). The following strains were used: AB, Tg(mpeg1.1:eGFP) (Ellett et al., 2011). For CRISPR9-mediated zbtb14 knockout zebrafish generation, guide RNA (gRNA) targeting exon1 of zbtb14 was designed using an online tool ZiFiT Targeter software (http://zifit.partners.org/ZiFiT), which was synthesized by cloning the annealed oligonucleotides into the gRNA transcription vector. Cas9 mRNA and gRNA were co-injected into one-cell stage zebrafish embryos. The injected F0 founder embryos were raised to adulthood and then outcrossed with wild type zebrafish. F1 embryos carrying potential indel mutations were raised to adulthood. Then, PCR amplification and sequencing were performed on genomic DNA isolated from tail clips of F1 zebrafish to identify mutants.\n\n### Whole-mount in situ hybridization\n\nDigoxigenin-labeled RNA probes were transcribed with T7, T3, or SP6 polymerase (Ambion, Life Technologies, Carlsbad, CA). WISH was performed as described previously (Thisse and Thisse, 2008). The probes labeled by digoxigenin were detected using alkaline phosphatase coupled anti-digoxigenin Fab fragment antibody (Roche, Basel, Switzerland) with 5-bromo-4-chloro-3-indolyl-phosphate nitro blue tetrazolium staining (Vector Laboratories, Burlingame, CA). Ten to 30 embryos were used for each probe. The positive signals were counted under a microscope, and the mean value was obtained from the counts of all of the embryos in the same group.\n\n### Neutral red staining\n\nZebrafish larvae were collected at indicated time and soaked in Neutral Red (2.5 mg/ml, Sigma-Aldrich, St Louis, MO) overnight at 28.5\u00b0C. Staining was then observed under a microscope.\n\n### Cell collection and FACS analysis\n\nCell collection and FACS analysis were performed as described (Traver et al., 2003). Wild type Tg(mpeg1.1:eGFP) and zbtb14-/-//Tg(mpeg1.1:eGFP) larvae were dissociated into single cells using 0.05% trypsin (Sigma-Aldrich, St Louis, MO) as previously described (Yan et al., 2015). These dissociated cells were passed through a 40 \u03bcm mesh, centrifuged at 450\u00d7 g, and suspended in 5% FBS/PBS before addition of propidium iodide to a final concentration of 1 \u03bcg/ml for exclusion of dead cells. Wild type zebrafish (without GFP) were used as blank to determine the background values in GFP controls. The GFP+ cells of each group were collected from a total of ~1000 larvae using a FACS Vantage flow cytometer (Beckton Dickenson) (~300 larvae once, performed three times). For the WKM samples, FACS analysis was based on forward and side scatter characteristics, propidium iodide exclusion, and GFP fluorescence. The GFP+ cells in the myeloid gate was enriched from WKM samples of wild type Tg(mpeg1.1:eGFP) and zbtb14-/-//Tg(mpeg1.1:eGFP) zebrafish (4-month-old, each time one male and one female were used in the wild-type and mutant groups).\n\n### pH3 staining and TUNEL assay\n\nTg(mpeg1.1:eGFP) and zbtb14-/-//Tg(mpeg1.1:eGFP) larvae were collected at 48 hpf and fixed in 4% paraformaldehyde. The fixed larvae were incubated with primary rabbit anti-phospho-histone H3 (pH3; Upstate Biotechnology) and goat anti-GFP (Abcam) antibodies according to the manufacturer\u2019s protocol and subsequently stained with Alexa Fluor-647 anti-rabbit and Alexa Fluor-488 anti-goat secondary antibodies (Invitrogen). TUNEL assays were performed using the In Situ Cell Death Detection Kit and TMR Red (Roche Diagnostics) according to the manufacturer\u2019s recommendations. Images were taken using Olympus FV 1000 confocal microscopy equipped with the FV10-ASW version 3 software.\n\n### MGG staining\n\nFACS sorted cells were centrifuged by cytospin onto slides and stained with MGG (Sigma-Aldrich, May-Gr\u00fcnwald solution, 63950 and Giemsa solution, 32884) following the manufacturer\u2019s instructions. Immature, intermediate, and mature monocytes/macrophages were counted based on their morphology.\n\n### RNA-seq and RT-qPCR\n\nAt 48 hpf, GFP positive cells were isolated from either wild type Tg(mpeg1.1:eGFP) or zbtb14-/-//Tg(mpeg1.1:eGFP) larvae by FACS. mRNA was extracted from sorted cells using RNeasy Micro (Qiagen, Manchester, UK) and mRNA libraries were constructed using NEBNext Ultra RNA Library Prep Kit for 52 Illumina and sequenced under Illumina HiSeq X Ten with pair end 150 bp (PE150).\n\nThe qPCR was carried out with SYBR Green Real-time PCR Master Mix (TOYOBO, Osaka, Japan) with ABI 7900HT real-time PCR machine and analyzed with Prism software. \u03b2-Actin was served as the internal control. The primers used are listed in Table 1. Each time a different batch of samples was used. The expression levels of each interested gene were normalized to internal control \u03b2-actin by RT-qPCR and compared with wild type group which was set to 1.0. RT-qPCR was performed with gene-specific primers and gene expression levels were analyzed by comparative CT method.\n\n**Table 1.**\n Primers for plasmid generation, luciferase assays, qPCR, and ChIP-qPCR.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Primers for plasmid generation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>zf zbtb14</td>\n      <td>Forward 5'-CCGGAATTCTCCGAAACTGTGAAGTATGTG-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'-CCGCTCGAG TTATGAGCAGGCGATGGACTC-3'</td>\n    </tr>\n    <tr>\n      <td>zf zbtb14K40R</td>\n      <td>Forward 5'-GTGGAGGATGTGAGGTTCAGGGCGCAT-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'ATGCGCCCTGAACCTCACATCCTCCAC-3'</td>\n    </tr>\n    <tr>\n      <td>zf zbtb14K259R</td>\n      <td>Forward 5'-GCCACCGCTGACATGAGGTTTGAGTATCTGCTG-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'-CAGCAGATACTCAAACCTCATGTCAGCGGTGGC-3'</td>\n    </tr>\n    <tr>\n      <td>tol2-mpeg1.1-pu.1 DBD</td>\n      <td>Forward 5'-CGGGGTACCATGAATTCGCTTGTATCAGTTCCTGC-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'-CCGCAATTGTTAGAGAACCTCTCCACTGAACTGG-3'</td>\n    </tr>\n    <tr>\n      <td>hs ZBTB14</td>\n      <td>Forward 5'-CCGGAATTCATGGAGTTTTTCATCAGTATG-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'-CCGCTCGAGCTAGCTACAGGCTATCGTCTC-3'</td>\n    </tr>\n    <tr>\n      <td>hs ZBTB14S8F</td>\n      <td>Forward 5'-GGAGACGTCAAAGTAAGAAAGGAGAGAGACCCTTGA-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'-TCAAGGGTCTCTCTCCTTTCTTACTTTGACGTCTCC-3'</td>\n    </tr>\n    <tr>\n      <td>hs ZBTB14S8A</td>\n      <td>Forward 5'-TTCATCAGTATGGCTGAAACCATTAAA-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'-TTTAATGGTTTCAGCCATACTGATGAA-3'</td>\n    </tr>\n    <tr>\n      <td>hs ZBTB14S8D</td>\n      <td>Forward 5'-TTCATCAGTATGGATGAAACCATTAAA-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'-TTTAATGGTTTCATCCATACTGATGAA-3'</td>\n    </tr>\n    <tr>\n      <td>hs ZBTB14S8W</td>\n      <td>Forward 5'-TTTTTCATCAGTATGTGGGAAACCATTAAATAT-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'-ATATTTAATGGTTTCCCACATACTGATGAAAAA-3'</td>\n    </tr>\n    <tr>\n      <td>hs ZBTB14S8Y</td>\n      <td>Forward 5'-CCGGAATTCATGGAGTTTTTCATCAGTATGTAT-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'-CCGCTCGAGCTAGCTACAGGCTATCGTCTCCAG-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Primers for luciferase assays</td>\n    </tr>\n    <tr>\n      <td>zf zbtb14-Promoter</td>\n      <td>Forward 5'-CGGGGTACCCATCAGTTGTATCTTAGGTACAG-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'-CCGCTCGAGTGGACTCCTCATGTTTGCTCT-3'</td>\n    </tr>\n    <tr>\n      <td>zf pu.1-Promoter</td>\n      <td>Forward 5'-CGGGGTACCACTAGTACACCTAAATTTATG-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5'-CCGCTCGAGATTTGGCAGACCAACAACTGC-3'</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Primers for quantitative PCR</td>\n    </tr>\n    <tr>\n      <td>zf \u03b2-actin</td>\n      <td>Forward 5\u2019-TGCTGTTTTCCCCTCCATTG-3\u2019</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5\u2019-TTCTGTCCCATGCCAACCA-3\u2019</td>\n    </tr>\n    <tr>\n      <td>zf zbtb14</td>\n      <td>Forward 5\u2019-CTCGTGTGTTCGGCAGTAATTG-3\u2019</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5\u2019-CTGGAGCGAAATCCTTACTGG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>zf pu.1</td>\n      <td>Forward 5\u2019-TCCCAGCAGTCGTAGTCCTC-3\u2019</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5\u2019-CCATTTCGCAGAAGGTCAA-3\u2019</td>\n    </tr>\n    <tr>\n      <td>zf c-myc</td>\n      <td>Forward 5\u2019-CAATTCTGGAACGGCATTCG-3\u2019</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5\u2019-GAAGTAGAAGTAGGGCTGGATG \u20133\u2019</td>\n    </tr>\n    <tr>\n      <td>hs \u03b2-ACTIN</td>\n      <td>Forward 5\u2019-CCAACCGCGAGAAGATGA-3\u2019</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5\u2019-CCAGAGGCGTACAGGGATAG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>hs ZBTB14</td>\n      <td>Forward 5\u2019-CAGGATATGGGTCTGCAGGA-3\u2019</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5\u2019-TCTTAATGCCTTGAACGCCA-3\u2019</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Primers for ChIP-qPCR</td>\n    </tr>\n    <tr>\n      <td>Negative control primer</td>\n      <td>Forward 5\u2019-GCTGAAATTTTGTAGTCTGTC-3\u2019</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5\u2019-ATAAGATTTTAGTCATCAAAC-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Positive primer</td>\n      <td>Forward 5\u2019-ACTAGTACACCTAAATTTATG-3\u2019</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Reverse 5\u2019-GACAGACTACAAAATTTCAGC-3\u2019</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmid construction\n\nZebrafish zbtb14 gene and its serial mutants were cloned into PCS2+ vector. For the luciferase reporter, the \u20130.6 kb promoter of zebrafish pu.1 gene and the \u20131.1 kb promoter of zebrafish zbtb14 gene were cloned into the PGL3 basic vector (Promega, Madison, WI). Tol2-plasmid was constructed by insertion of pu.1 DN under mpeg1.1 promoter (2 kb). Transgene was transiently expressed by co-injecting 80 pg of Tol2-plasmid and 120 pg of Tol2 transpose mRNA at one-cell stage. Primers used were listed in Table 1.\n\n### Morpholino and mRNA synthesis for microinjection\n\nZebrafish zbtb14 (5\u2019-ACTTCACAGTTTCGGACATACTGGA-3\u2019), pu.1 (5\u2019-AATAACTGATACAAACTCACCGTTC-3\u2019) targeting the transcriptional initiation ATG of zbtb14, pu.1 was designed and purchased from Gene Tools. Full-length capped mRNA samples were all synthesized from linearized plasmids using the mMessage mMachine SP6 kit (Invitrogen, Thermo Fisher Scientific, Waltham, MA). Microinjection concentration of mRNA was between 50 and 200 ng/\u03bcl and 2 nl of mRNA was injected at one-cell stage embryos. All injections were performed with a Harvard Apparatus microinjector.\n\n### Cell culture and luciferase reporter assay\n\nHEK293T was obtained from ATCC. Identity has been authenticated by STR profiling, and the cell line tested negative for mycoplasma. HEK293T cells were maintained in DMEM (Gibco, Life Technologies, Carlsbad, CA) with 10% fetal bovine serum (Gibco, Life Technologies, Carlsbad, CA). Plasmid transfection was carried out with Effectene Transfection Reagent (Qiagen, Manchester, UK) according to the manufacturer\u2019s instruction. For the luciferase reporter assay, cells were harvested 48 hr after transfection and analyzed using the Dual Luciferase Reporter Assay Kit (Promega, Maddison, WI), according to the manufacturer\u2019s protocols. Primers used were listed in Table 1.\n\n### Chromatin immunoprecipitation PCR\n\nFor ChIP analysis, GFP and GFP-Zbtb14 expressing larvae were harvested at 48 hpf for brief fixation. Cross-linked chromatin was immunoprecipitated with anti-GFP antibody according to the procedure described (Hart et al., 2007). The resultant immunoprecipitated samples were subjected to quantitative PCR using primer pairs (Table 1).\n\n### Statistical analysis\n\nData were analyzed by SPSS software (version 20) using two-tailed Student\u2019s t test for comparisons between two groups and one-way analysis of variance (ANOVA) among multiple groups. Differences were considered significant at p<0.05. Data are expressed as mean \u00b1 standard error of the mean (SEM).\n",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "f05630df-5dbe-42f1-9a6a-52cfbf3289e2",
+      "submission_id": "658afbc5-1f3b-4c89-92b9-1a9ae83cc232",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Florent Ginhoux, https://ror.org/036wvzt09 Agency for Science Technology and Research Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80760.sa0](https://doi.org/10.7554/eLife.80760.sa0)\n\nThis manuscript by Deng et al. is a valuable evaluation of zbtb14 and its role in normal myelopoiesis. The authors provided convincing data supporting the role played by zbtb14 in monocyte and macrophage development and its regulation involving the modulation of PU.1 expression. The finding that a mutation in ZBTB14 exists in AML patients also implies how important this gene product is in normal human myelopoiesis.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Florent Ginhoux, https://ror.org/036wvzt09 Agency for Science Technology and Research Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80760.sa1](https://doi.org/10.7554/eLife.80760.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Zbtb14 regulates monocyte and macrophage development through inhibiting pu.1 expression in zebrafish\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Satyajit Rath as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nBelow are the two major points that we think will be important to address to improve the manuscript. More details on these points can be found in the reviewer comments.\n\n1) Provide more evidence on how pu.1 overexpression mechanistically causes Mac expansion? Deeper analysis of the RNASeq data might help.\n\n2) Better differentiate between expanded mature macs and progenitors.\n\nReviewer #1 (Recommendations for the authors):\n\nAlthough the findings are interesting, but several questions need to be addressed to justify its publication.\n\n1. In figure 2, the authors show zbtb14 mutants exhibited abnormal expansion of macrophages in both embryonic and adulthood stages. However, it remains unclear whether this phenotype is due to the enhanced proliferation of macrophages or myeloid progenitors. Cell proliferation assays (like BrdU staining or anti-PH3 immunostaining) in mpeg1.1+ or pu.1+ cells would be necessary to determine the proliferative ability of embryonic macrophages or myeloid progenitors. In parallel, the FACS-based WKM analysis or May-Grunwald-Giemsa (MGG) staining can also be performed to examine whether there is an increased progenitors/myeloblasts in zbtb14 mutants.\n\n2. In figure 3, despite the evidence of the suppression role of Zbtb14 in the regulation of pu.1 expression, whether the macrophage expansion in zbtb14 mutants is indeed caused by the increased pu.1 expression remains unclear. Although macrophage-specific knockdown of pu.1 activity assay in zbtb14 mutants by injecting mpeg1.1:pu.1-DBD construct could rescue the mutant phenotype, it may not be faithful, as Pu.1 activity may be over-suppressed, thus leading to the impairment of macrophage lineage development instead of restraining the macrophage expansion. Likewise, the change of macrophage numbers between zbtb14+/+pu.1\u25b3371/\u25b3371 and zbtb14-/-pu.1\u25b3371/\u25b3371 embryos could also be caused by the loss of pu.1 function, which impairs the early development of macrophages. Given these potential problems, it would be necessary for authors to test: (1) whether there is any defect in myeloid lineage development in the rescued fish; (2) whether reduced pu.1 expression to normal level would be able to correct the mutant defect in zbtb14 mutants or whether overexpressing pu.1 in macrophages in late stage of WT fish can indeed expand macrophage population without interfering myeloid lineage development.\n\n3. It would be necessary to show the expression pattern and level of zbtb14, especially in different hematopoietic lineages at different developmental stages, which may provide additional evidence supporting the role of zbtb14 in the macrophage expansion.\n\n4. In figure 3 and lines 147-148, the authors performed RNA-seq of mpeg1.1+ macrophages in zbtb14 mutants and siblings and identified an upregulation of pu.1 expression in zbtb14 mutants. Please show the corresponding pu.1 FPKM/TPM values for the comparison. Besides, a more detailed analysis, such as the differentially expressed genes (DEGs) and the biological implications of DEGs, of the RNA-seq data is needed to provide molecular insights into the role of zbtb14 in macrophage development.\n\n5. Given the pro-proliferation role of c-myc and the elevated expression level of this gene in zbtb14-/- macrophages, it would be interesting to test whether c-myc plays a role in the macrophage expansion in the zbtb14-/- embryos.\n\nReviewer #2 (Recommendations for the authors):\n\nOverall, I think the manuscript is very strong. The data is very solid, and the story is well written. I had only one question:\n\n1. In figures (say, Figure 1), could the gene being evaluated be written in each box? For instance, C and C' are both evaluations of mfap4 (I assume), but that is not clear from the figure. Is there a better way to show those data?\n",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a4f152f4-b5d5-4550-8bc7-2081f86bddaf",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C1",
+      "claim": "Zebrafish Zbtb14 protein shares 70% homology to its human counterpart ZBTB14",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish Zbtb14 protein shares 70% homology to its human counterpart ZBTB14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the text comparing sequence homology between species",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "3a276205-7b6c-48b9-b74f-4fe31852c41b",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C2",
+      "claim": "Zebrafish and human ZBTB14 proteins bear a nearly identical N-terminal BTB motif and five consecutive C-terminal zinc finger motifs",
+      "claim_type": "EXPLICIT",
+      "source": "The two transcription factors bear a nearly identical N-terminal BTB motif and five consecutive C-terminal zinc finger motifs (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and supported by sequence alignment shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "ce4f9f7d-1e35-4631-8d44-f0fbbbd97730",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C3",
+      "claim": "A significant increase of macrophage markers including mfap4, csf1ra, and mpeg1.1 was observed from 19.5 hpf to 3 dpf in zbtb14-deficient embryos and larvae",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase of macrophage markers including mfap4, csf1ra, and mpeg1.1 (Meijer et al., 2008; Spilsbury et al., 1995; Zakrzewska et al., 2010) was observed from 19.5 hr post-fertilization (hpf) to 3 days post-fertilization (dpf) (Figure 2A\u2013G' and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation supported by WISH data and citations to prior work characterizing these markers",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "4cc186ec-d12c-493c-be04-c1cb82c6dd2e",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C4",
+      "claim": "mfap4 is a macrophage marker",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase of macrophage markers including mfap4, csf1ra, and mpeg1.1 (Meijer et al., 2008; Spilsbury et al., 1995; Zakrzewska et al., 2010) was observed from 19.5 hr post-fertilization (hpf) to 3 days post-fertilization (dpf) (Figure 2A\u2013G' and H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Characterized as a macrophage marker with supporting citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "9a0a4751-a752-43a8-84f6-28989ba3d878",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C5",
+      "claim": "csf1ra is a macrophage marker",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase of macrophage markers including mfap4, csf1ra, and mpeg1.1 (Meijer et al., 2008; Spilsbury et al., 1995; Zakrzewska et al., 2010) was observed from 19.5 hr post-fertilization (hpf) to 3 days post-fertilization (dpf) (Figure 2A\u2013G' and H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Characterized as a macrophage marker with supporting citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "db08db75-b452-4b40-a727-2fd68af75c45",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C6",
+      "claim": "mpeg1.1 is a macrophage marker",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase of macrophage markers including mfap4, csf1ra, and mpeg1.1 (Meijer et al., 2008; Spilsbury et al., 1995; Zakrzewska et al., 2010) was observed from 19.5 hr post-fertilization (hpf) to 3 days post-fertilization (dpf) (Figure 2A\u2013G' and H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Characterized as a macrophage marker with supporting citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "76f98d4e-d59e-4266-a02b-6937909460f3",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C7",
+      "claim": "The expanded macrophage population was confirmed in zbtb14-/-//Tg(mpeg1.1:eGFP) larvae",
+      "claim_type": "EXPLICIT",
+      "source": "This expanded macrophage population was further confirmed in zbtb14-/-//Tg(mpeg1.1:eGFP) larvae (Figure 2I\u2013J' and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental confirmation using transgenic reporter line",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "cdf4dc80-de31-4111-be8f-68f32006ce74",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C8",
+      "claim": "zbtb14-deficient macrophages can migrate toward wounds as wild type macrophages do",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that the zbtb14-deficient macrophages could still migrate toward the wound as wild type ones did, implying their function remains intact (Figure 2L\u2013M').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from wound migration assay",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "177a4a73-b592-4ffe-a885-ec26fd6ce98c",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C9",
+      "claim": "zbtb14-deficient macrophages retain intact function",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that the zbtb14-deficient macrophages could still migrate toward the wound as wild type ones did, implying their function remains intact (Figure 2L\u2013M').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on normal wound migration behavior",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "4399b1fe-c282-438b-9dc6-e75455745b9b",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C10",
+      "claim": "apoeb is a specific microglia marker",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, WISH with apoeb probe (a specific microglia marker) and neutral red vital dye staining revealed an expansion of microglia (the macrophages that reside in brain) in zbtb14-deficient larvae (Figure 2N\u2013Q' and R).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a specific marker for microglia",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "7019596c-9e3e-49b2-9975-4b78ff3c0d1d",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C11",
+      "claim": "Microglia are macrophages that reside in brain",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, WISH with apoeb probe (a specific microglia marker) and neutral red vital dye staining revealed an expansion of microglia (the macrophages that reside in brain) in zbtb14-deficient larvae (Figure 2N\u2013Q' and R).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition provided in the text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "1eb6e86b-323d-4e7d-8c4c-5e11ab809e59",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C12",
+      "claim": "An expansion of microglia was observed in zbtb14-deficient larvae",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, WISH with apoeb probe (a specific microglia marker) and neutral red vital dye staining revealed an expansion of microglia (the macrophages that reside in brain) in zbtb14-deficient larvae (Figure 2N\u2013Q' and R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation using WISH and neutral red staining",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "ad67b29d-2211-431a-9640-77259908cd0d",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C13",
+      "claim": "Many more macrophages were found in zbtb14-/-//Tg(mpeg1.1:eGFP) zebrafish than in controls in adult WKM samples (1.82% mpeg1.1+ versus 0.50% mpeg1.1+)",
+      "claim_type": "EXPLICIT",
+      "source": "The myeloid cell fraction was analyzed, and many more macrophages were found in zbtb14-/-//Tg(mpeg1.1:eGFP) zebrafish than in controls (1.82% mpeg1.1+ versus 0.50% mpeg1.1+) (Figure 2\u2014figure supplement 1S\u2013T' and U)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative FACS analysis data from adult zebrafish",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "e1f8bf78-f364-4d48-bfbc-41f259ebd285",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C14",
+      "claim": "The development of macrophages originated from HSCs are affected in zbtb14 mutants",
+      "claim_type": "EXPLICIT",
+      "source": "The myeloid cell fraction was analyzed, and many more macrophages were found in zbtb14-/-//Tg(mpeg1.1:eGFP) zebrafish than in controls (1.82% mpeg1.1+ versus 0.50% mpeg1.1+) (Figure 2\u2014figure supplement 1S\u2013T' and U), indicating that the development of macrophages originated from HSCs are also affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from adult macrophage expansion data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "e59764c1-1ff3-4178-ac86-463f54732817",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C15",
+      "claim": "Only the development of monocyte/macrophage lineage is affected in the absence of zbtb14",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the expressions of neutrophil and erythrocyte markers during primitive hematopoiesis stage, as well as those of hematopoietic stem and progenitor cells, neutrophil, erythrocyte, and lymphocyte markers during definitive hematopoiesis stage were all normal (Figure 2\u2014figure supplement 1). These observations suggest that only the development of monocyte/macrophage lineage is affected in the absence of zbtb14.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data showing normal expression of other lineage markers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "17ca73d8-ccb4-40fc-ac58-0a4686674203",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C16",
+      "claim": "A significant increase of pH3+GFP+ double-positive cells were observed in zbtb14-/-//Tg(mpeg1.1:eGFP) larvae compared to controls",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase of pH3+GFP+ double-positive cells were observed in zbtb14-/-//Tg(mpeg1.1:eGFP) larvae compared to those in controls (Figure 3A\u2013C' and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from pH3 immunostaining",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "4cec22ea-2fad-423a-a98c-f664dabb02a6",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C17",
+      "claim": "TUNEL assay results could not show discernible differences in the percentage of TUNEL+GFP+ cells in zbtb14-/-//Tg(mpeg1.1:eGFP) larvae compared to controls",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the results from TUNEL assay could not show discernible differences in the percentage of TUNEL+GFP+ cells in zbtb14-/-//Tg(mpeg1.1:eGFP) larvae compared to the percentage in controls (Figure 3E\u2013G' and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from TUNEL assay",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "6ab5c0f9-a8a3-4c77-8ac0-aa589366190d",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C18",
+      "claim": "The expanded macrophage population is due to enhanced proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the expanded macrophage population is due to enhanced proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from pH3 and TUNEL assay results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "4e6e4f55-9f75-46b4-b27e-31491f438b6b",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C19",
+      "claim": "The proportion of immature progenitors was obviously increased in zbtb14 mutants compared with the siblings",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that the proportion of immature progenitors (with a round-shape morphology and a higher nuclear/cytoplasm ratio) was obviously increased in zbtb14 mutants compared with the siblings (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from MGG staining and morphological analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "c45307fa-b5d9-48f8-b954-49682dd8ff6a",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C20",
+      "claim": "The proportion of fully differentiated macrophages was decreased in zbtb14 mutants",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the proportion of fully differentiated macrophages was decreased in the mutants (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from MGG staining and morphological analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "7e61d14f-2a83-45b3-a270-f2c208bd7f6a",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C21",
+      "claim": "The expansion of macrophage lineage is mainly due to excessive monocyte/macrophage progenitor proliferation in zbtb14 mutants",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations, we can draw the conclusion that the expansion of macrophage lineage is mainly due to excessive monocyte/macrophage progenitor proliferation in zbtb14 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from pH3, TUNEL, and MGG staining data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "98d1592b-d1c0-4a49-b4c2-2fa21977d73b",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C22",
+      "claim": "The monocyte/macrophage abnormalities in zbtb14-deficient larvae could be effectively rescued with zebrafish zbtb14 mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "The monocyte/macrophage abnormalities in zbtb14-deficient larvae could be effectively rescued with either zebrafish zbtb14 or human ZBTB14 mRNA, confirming the specificity and conservation of ZBTB14 proteins (Figure 4A\u2013D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental rescue data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "e872ecb5-e6f5-4089-8fcc-2faaff03a6b9",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C23",
+      "claim": "The monocyte/macrophage abnormalities in zbtb14-deficient larvae could be effectively rescued with human ZBTB14 mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "The monocyte/macrophage abnormalities in zbtb14-deficient larvae could be effectively rescued with either zebrafish zbtb14 or human ZBTB14 mRNA, confirming the specificity and conservation of ZBTB14 proteins (Figure 4A\u2013D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental rescue data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "d03497b7-d6db-46b0-ba89-53259bbc1bdd",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C24",
+      "claim": "ZBTB14 proteins are functionally conserved between zebrafish and humans",
+      "claim_type": "EXPLICIT",
+      "source": "The monocyte/macrophage abnormalities in zbtb14-deficient larvae could be effectively rescued with either zebrafish zbtb14 or human ZBTB14 mRNA, confirming the specificity and conservation of ZBTB14 proteins (Figure 4A\u2013D and F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from cross-species rescue experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "ae2285ee-c21f-46e0-9ee3-d7c284e13518",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C25",
+      "claim": "ZBTB14 displays an activation or inhibition effect on different promoters",
+      "claim_type": "EXPLICIT",
+      "source": "ZBTB family proteins are frequently described as transcription repressors, nevertheless, ZBTB14 displays an activation or inhibition effect on different promoters (Kaplan and Calame, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "b04d9189-fc17-479e-87e2-ced969eb6228",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C26",
+      "claim": "DAXX is a transcription corepressor",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish the activity of Zbtb14 on transcription, the repression domain of DAXX (a transcription corepressor) (Zhou et al., 2006) was fused in frame with Zbtb14 (DAXX-Zbtb14), which forced the fusion protein to be a potent repressor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "5ae10b1a-0f80-403a-8705-5488592e8020",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C27",
+      "claim": "DAXX-zbtb14 mRNA had an obvious rescue effect as wild type zbtb14 mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo rescue assays demonstrated that DAXX-zbtb14 mRNA had an obvious rescue effect as wild type zbtb14 mRNA (Figure 4E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental rescue data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "9e68ef89-d108-4c92-900c-51ed2f3b205b",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C28",
+      "claim": "Zbtb14 acts as a negative regulator in monocyte/macrophage development",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo rescue assays demonstrated that DAXX-zbtb14 mRNA had an obvious rescue effect as wild type zbtb14 mRNA (Figure 4E and F), implying Zbtb14 acted as a negative regulator in monocyte/macrophage development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from DAXX-fusion rescue experiment",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "6b2d290a-4969-4474-b3f2-13e5436cd87a",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C29",
+      "claim": "Multiple important regulators involving monocyte/macrophage development including pu.1, csf1ra, csf1b, il34, mafb, klf4, irf8, and c-myc were upregulated in zbtb14-deficient macrophages",
+      "claim_type": "EXPLICIT",
+      "source": "The differentially expressed genes (DEGs) analysis of the RNA-seq data indicated that multiple important regulators involving monocyte/macrophage development including pu.1, csf1ra, csf1b, il34, mafb, klf4, irf8, and c-myc were upregulated (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "ddacf7b5-227a-4df2-94cb-8d8c5da1a93a",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C30",
+      "claim": "pu.1 is a pivotal transcription factor which can promote macrophage proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "The expression level of pu.1, the pivotal transcription factor which can promote macrophage proliferation (Dai et al., 2002), was obviously increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "b221c1bc-446b-4f9d-aedb-a661a55d7eac",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C31",
+      "claim": "The expression level of pu.1 was obviously increased in zbtb14-deficient macrophages",
+      "claim_type": "EXPLICIT",
+      "source": "The expression level of pu.1, the pivotal transcription factor which can promote macrophage proliferation (Dai et al., 2002), was obviously increased. Such upregulation was further confirmed by real-time quantitative PCR (RT-qPCR) analyses (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA-seq and RT-qPCR data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "264930cd-f5b4-49d3-904a-c1e7c5d742d1",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C32",
+      "claim": "The signals of pu.1 were clearly intensified from 18 to 22 hpf in zbtb14-deficient embryos compared with wild type ones",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, WISH analyses showed that the signals of pu.1 were clearly intensified from 18 to 22 hpf in zbtb14-deficient embryos compared with the wild type ones (Figure 4H\u2013K' and L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "WISH experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "7e421d53-594d-4a1c-a073-a0722da6f077",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C33",
+      "claim": "pu.1 is a major direct target of Zbtb14",
+      "claim_type": "EXPLICIT",
+      "source": "Since Zbtb14 was identified as a transcription repressor, we postulated that pu.1 would be a major direct target of Zbtb14, whose derepression in the absence of Zbtb14 probably contributed to the expansion of monocyte/macrophage population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on repressor function and expression data",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "32d4984c-2ce6-44cb-a62a-29034dda58aa",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C34",
+      "claim": "Zbtb14 displayed a significant repression effect on the zebrafish pu.1 promoter in luciferase assays",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, a \u20130.6 kb zebrafish pu.1 promoter in luciferase reporter was co-transfected with zbtb14 expressing plasmid in HEK293T cells. As anticipated, luciferase analyses showed that Zbtb14 displayed a significant repression effect (Figure 4M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Luciferase reporter assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "06869f4e-ec94-4446-8ba5-2c366fd4671c",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C35",
+      "claim": "The pu.1 promoter region could be specifically co-immunoprecipitated with GFP-Zbtb14 in vivo",
+      "claim_type": "EXPLICIT",
+      "source": "Next, in vivo chromatin immunoprecipitation polymerase chain reaction (ChIP-PCR) was conducted in zebrafish larvae expressing GFP or GFP-Zbtb14 using an anti-GFP antibody. In this experiment, the pu.1 promoter region could be specifically co-immunoprecipitated with GFP-Zbtb14 (Figure 4N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-PCR experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "6e1a1ab6-e8cc-4eb8-bfac-c68d92222e54",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C36",
+      "claim": "A prominent rescue effect could be obtained with a dominant-negative Pu.1 plasmid injection in zbtb14 mutants",
+      "claim_type": "EXPLICIT",
+      "source": "To further demonstrate that pu.1 was upregulated in macrophage lineage, a series of in vivo experiments was performed. A prominent rescue effect could be obtained with a dominant-negative Pu.1 plasmid (the DBD domain of Pu.1 was under the control of mpeg1.1 gene's promoter, cloned in TOL2 backbone) injection in zbtb14 mutants (Figure 4O and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental rescue data with dominant-negative construct",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "866258d9-acb2-46c2-a56a-22e843529277",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C37",
+      "claim": "Macrophages are reduced in zebrafish pu.1\u0394371 mutant line",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we took advantage of a zebrafish pu.1\u0394371 mutant line (a truncated Pu.1 whose transactivation activity was reduced) in which macrophages were reduced (Yu et al., 2017; Figure 4P and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cited from prior work and confirmed by experimental data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "51dd0fee-3176-4159-b446-4fe1de33cbd5",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C38",
+      "claim": "No obvious alleviation could be found in zbtb14-/-//pu.1\u0394371 double mutant zebrafish",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we took advantage of a zebrafish pu.1\u0394371 mutant line (a truncated Pu.1 whose transactivation activity was reduced) in which macrophages were reduced (Yu et al., 2017; Figure 4P and F), and no obvious alleviation could be found in zbtb14-/-//pu.1\u0394371 double mutant zebrafish, indicating zbtb14 was epistatic to pu.1 (Figure 4Q and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from double mutant analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "4ad6eeb9-4fd0-4088-9cf6-b3f1bb3972c7",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C39",
+      "claim": "zbtb14 is epistatic to pu.1",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we took advantage of a zebrafish pu.1\u0394371 mutant line (a truncated Pu.1 whose transactivation activity was reduced) in which macrophages were reduced (Yu et al., 2017; Figure 4P and F), and no obvious alleviation could be found in zbtb14-/-//pu.1\u0394371 double mutant zebrafish, indicating zbtb14 was epistatic to pu.1 (Figure 4Q and F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from double mutant genetic analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "b7bd301c-b37a-48d9-9ea7-2c13c28d8040",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C40",
+      "claim": "Zbtb14 regulates monocyte and macrophage development through inhibiting the expression of pu.1",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these findings suggest that Zbtb14 regulates monocyte and macrophage development through inhibiting the expression of pu.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from multiple experimental approaches",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "f3b6869f-7db2-4a84-88e1-196295110f18",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C41",
+      "claim": "Protein SUMOylation is catalyzed by a sequential enzymatic cascade including E1 (SAE1/SAE2), E2 (UBC9), and E3",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to ubiquitination, protein SUMOylation is catalyzed by a sequential enzymatic cascade including E1 (SAE1/SAE2), E2 (UBC9), and E3 in which SUMO (Small Ubiquitin-like MOdifier) molecules are covalently attached to lysine residues within substrate proteins (Eifler and Vertegaal, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "de3fafed-94e4-4fd9-b790-409d49becfec",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C42",
+      "claim": "SUMOylation is generally associated with transcriptional repression through the recruitment of corepressors such as NCoR and SMRT",
+      "claim_type": "EXPLICIT",
+      "source": "The SUMOylation is generally associated with transcriptional repression through the recruitment of corepressors such as NCoR and SMRT (Garcia-Dominguez and Reyes, 2009; Valin and Gill, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "ab50b80e-eba6-41bd-a864-84c9a658e333",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C43",
+      "claim": "A weak adduct band approximately 10 kD larger than unmodified Zbtb14 protein was observed",
+      "claim_type": "EXPLICIT",
+      "source": "We have mentioned above the presence of a weak adduct which was ~10 kD (the size of one SUMO molecule) larger than the unmodified Zbtb14 protein (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation from western blot",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "daa7db2a-ba7d-43c2-b253-3ab2d917bb57",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C44",
+      "claim": "The adduct band of Zbtb14 became much more intensive in the presence of UBC9 and SUMO1",
+      "claim_type": "EXPLICIT",
+      "source": "To validate this hypothesis, zbtb14-expressing plasmid was transfected with or without UBC9 and SUMO1 in HEK293T cells. Western blot analyses showed that the adduct band became much more intensive in the presence of UBC9 and SUMO1 (Figure 5A, lanes 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from western blot",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "44870c76-6b4f-4501-b3e1-735cdd4f7796",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C45",
+      "claim": "SUMO1 molecules could be coprecipitated with Zbtb14",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, immuno-coprecipitation assays showed that SUMO1 molecules could be coprecipitated with Zbtb14 (Figure 5B, lane 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from co-immunoprecipitation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "17624c25-42d8-4f04-b667-aba96caed4f4",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C46",
+      "claim": "Zbtb14 can be SUMOylated in cells",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that Zbtb14 could be SUMOylated in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from western blot and co-IP experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "dda188c7-260e-4b0c-80c4-485bfd950179",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C47",
+      "claim": "K40 is the SUMOylated site in Zbtb14",
+      "claim_type": "EXPLICIT",
+      "source": "We carried out a series of mutations and finally found that the adduct band of Zbtb14K40R mutant was abolished (Figure 5A, lanes 3\u20136), suggesting K40 was the SUMOylated site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from mutagenesis and western blot",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "e2d57114-242f-408c-9ffb-964ed6c2c1ef",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C48",
+      "claim": "The Zbtb14K40R mutant protein was located in the nucleus as wild type Zbtb14",
+      "claim_type": "EXPLICIT",
+      "source": "HA-tagged Zbtb14 and Zbtb14K40R were transfected in HEK293T cells, respectively. The results from immunofluorescence analyses revealed that the mutant protein was located in the nucleus as wild type Zbtb14 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from immunofluorescence",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "2fc60c3b-cb39-4245-a949-62f75a7ff473",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C49",
+      "claim": "Zbtb14 and SUMO1-Zbtb14K40R displayed a strong repression effect on the pu.1 promoter",
+      "claim_type": "EXPLICIT",
+      "source": "Next, luciferase reporter assays with the \u20130.6 kb zebrafish pu.1 promoter were carried out. While Zbtb14 and SUMO1-Zbtb14K40R (SUMO1 molecule was fused in frame with Zbtb14K40R to mimic the SUMOylated Zbtb14) displayed a strong repression effect, Zbtb14K40R completely lost the ability to repress transcription (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Luciferase reporter assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "e2b53346-cee7-4359-90cc-fe9c85bc53c8",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C50",
+      "claim": "Zbtb14K40R completely lost the ability to repress transcription",
+      "claim_type": "EXPLICIT",
+      "source": "Next, luciferase reporter assays with the \u20130.6 kb zebrafish pu.1 promoter were carried out. While Zbtb14 and SUMO1-Zbtb14K40R (SUMO1 molecule was fused in frame with Zbtb14K40R to mimic the SUMOylated Zbtb14) displayed a strong repression effect, Zbtb14K40R completely lost the ability to repress transcription (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Luciferase reporter assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "357f3b21-d936-40b3-9543-ee42bb24341a",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C51",
+      "claim": "Both zbtb14 and SUMO1-zbtb14K40R mRNAs had a remarkable rescue effect in zbtb14-deficient larvae",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in vivo rescue assays were conducted in zbtb14-deficient larvae with zbtb14, zbtb14K40R, and SUMO1-zbtb14K40R mRNA, respectively. As expected, both zbtb14 and SUMO1-zbtb14K40R mRNAs had a remarkable rescue effect, whereas zbtb14K40R mRNA did not (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental rescue data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "f768f3e9-2f8c-41e5-93e1-3a287aa1e753",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C52",
+      "claim": "zbtb14K40R mRNA did not have a rescue effect in zbtb14-deficient larvae",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in vivo rescue assays were conducted in zbtb14-deficient larvae with zbtb14, zbtb14K40R, and SUMO1-zbtb14K40R mRNA, respectively. As expected, both zbtb14 and SUMO1-zbtb14K40R mRNAs had a remarkable rescue effect, whereas zbtb14K40R mRNA did not (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental rescue data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "5c42fb29-1864-49cd-8ede-ee09e1fc9a92",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C53",
+      "claim": "SUMOylation of Zbtb14 is pivotal for transcription repression",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that SUMOylation of Zbtb14 is pivotal for transcription repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from luciferase and rescue experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "414c60a6-f669-451e-928d-0ade982e3d31",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C54",
+      "claim": "A missense mutation, ZBTB14S8F, was detected in a de novo AML patient",
+      "claim_type": "EXPLICIT",
+      "source": "A missense mutation, ZBTB14S8F, was detected in a de novo AML patient (Tyner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "8da55f2d-4c94-400e-bd4a-f2de4e7a7dd6",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C55",
+      "claim": "Wild type ZBTB14 mRNA significantly rescued the expanded macrophage population in zbtb14-deficient zebrafish",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the role of the mutant protein, we first performed in vivo rescue assays in zbtb14-deficent zebrafish. While the wild type ZBTB14 mRNA significantly rescued the expanded macrophage population, the mutant failed to display any rescue effect (Figure 6A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental rescue data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "c4425b28-126c-47ca-8709-2287f0233cc4",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C56",
+      "claim": "ZBTB14S8F mutant failed to display any rescue effect in zbtb14-deficient zebrafish",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the role of the mutant protein, we first performed in vivo rescue assays in zbtb14-deficent zebrafish. While the wild type ZBTB14 mRNA significantly rescued the expanded macrophage population, the mutant failed to display any rescue effect (Figure 6A and B), implying that the normal functions of ZBTB14 was lost.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental rescue data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "f56ce28c-0c3a-49d0-a9cd-d234469ba439",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C57",
+      "claim": "The normal functions of ZBTB14 are lost in the ZBTB14S8F mutant",
+      "claim_type": "EXPLICIT",
+      "source": "While the wild type ZBTB14 mRNA significantly rescued the expanded macrophage population, the mutant failed to display any rescue effect (Figure 6A and B), implying that the normal functions of ZBTB14 was lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from failed rescue experiment",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "0d69e7e7-9f25-4c69-a8a1-a377261d410f",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C58",
+      "claim": "The transcription level of ZBTB14S8F is comparable to that of wild type ZBTB14",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we investigated the reason underlying the defects of the ZBTBS8F mutant. Although its transcription level was comparable to that of wild type ZBTB14 (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "08b3d972-a8fe-44db-b963-c0a29fa47fe9",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C59",
+      "claim": "ZBTB14S8F protein could hardly be detected by western blot analysis",
+      "claim_type": "EXPLICIT",
+      "source": "Although its transcription level was comparable to that of wild type ZBTB14 (Figure 6C), ZBTB14S8F protein could hardly be detected by western blot analysis, implying that the stability of the mutant protein was impaired (Figure 6D, lane 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "97b9ab3d-4ba8-4633-a1de-c020d7d27568",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C60",
+      "claim": "The stability of the ZBTB14S8F mutant protein is impaired",
+      "claim_type": "EXPLICIT",
+      "source": "Although its transcription level was comparable to that of wild type ZBTB14 (Figure 6C), ZBTB14S8F protein could hardly be detected by western blot analysis, implying that the stability of the mutant protein was impaired (Figure 6D, lane 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from western blot data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "1b424011-69bb-412c-bb54-087911758b3f",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C61",
+      "claim": "Bafilomycin, but not MG132, inhibited ZBTB14S8F protein turnover",
+      "claim_type": "EXPLICIT",
+      "source": "We thus treated ZBTB14S8F-expressing HEK293T cells with MG132 (a proteasomal inhibitor), or bafilomycin (an autophagy inhibitor). The results indicated that bafilomycin, but not MG132, inhibited ZBTB14S8F protein turnover (Figure 6D, lanes 7 and 10)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from inhibitor treatment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "82b2464e-b339-44c2-b859-1ae1a58fb900",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C62",
+      "claim": "The ZBTB14S8F mutant protein might be subjected to autophagic degradation",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated that bafilomycin, but not MG132, inhibited ZBTB14S8F protein turnover (Figure 6D, lanes 7 and 10), suggesting that the mutant protein might be subjected to autophagic degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from differential inhibitor effects",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "c8498fc5-99f9-49c1-ba95-368e5d64b64b",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C63",
+      "claim": "The turnover of both ZBTB14S8A and ZBTB14S8D mutant proteins kept normal",
+      "claim_type": "EXPLICIT",
+      "source": "Since serine is most frequently modified with phosphorylation, which could affect the protein stability, ZBTB14S8A and ZBTB14S8D mutants were constructed to mimic the dephosphorylated or constitutively phosphorylated status of ZBTB14. However, the turnover of both two mutant proteins still kept normal (Figure 6D, lanes 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot data from mutant analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "1d76ebb5-3ba4-4011-8dd3-0074dd24fa7a",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C64",
+      "claim": "The LIR/AIM motif contains the consensus sequence [W/F/Y]xx[L/I/V]",
+      "claim_type": "EXPLICIT",
+      "source": "The LIR/AIM motif contains the consensus sequence [W/F/Y]xx[L/I/V] (Popelka and Klionsky, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "d2dc37da-6759-4bde-abd2-e850ce3f08cb",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C65",
+      "claim": "The S to F mutation (FETI) forms a \u03c6xx\u03a8 motif",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that the S to F mutation (FETI) happened to form a \u03c6xx\u03a8 motif, which was probably the reason why the ZBTB14S8F mutant protein was targeted to undergo autophagic degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation of sequence motif formation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "dcbe02f9-8a87-4ac9-a425-8128c5080881",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C66",
+      "claim": "The turnover of ZBTB14S8W and ZBTB14S8Y mutant proteins was comparable to that of ZBTB14S8F mutant protein",
+      "claim_type": "EXPLICIT",
+      "source": "To further validate this point, ZBTB14S8W and ZBTB14S8Y mutants were also constructed and expressed in HEK293T cells. The results from western blots showed that the turnover of the two proteins was comparable to that of ZBTB14S8F mutant protein (Figure 6D, lanes 5, 6, 8, 9, 11, and 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot data from mutant analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "18cb81f3-0ab6-4ac0-af42-8347c0e8a3d1",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C67",
+      "claim": "The serine to phenylalanine mutation impairs the protein stability of ZBTB14",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the serine to phenylalanine mutation impairs the protein stability of ZBTB14, which probably contributes to AML pathogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from mutant stability experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "3b8a486b-cde8-406c-a6ea-d77599cb9d94",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C68",
+      "claim": "The serine to phenylalanine mutation probably contributes to AML pathogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the serine to phenylalanine mutation impairs the protein stability of ZBTB14, which probably contributes to AML pathogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on loss of protein stability",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "9e64b157-877e-46de-addf-e84525f01143",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C69",
+      "claim": "Zbtb14 is absolutely required for proper monopoiesis during primitive hematopoiesis",
+      "claim_type": "EXPLICIT",
+      "source": "Zbtb14 is absolutely required for proper monopoiesis during primitive hematopoiesis, which is reflected by the expansion of macrophage population in zbtb14 mutant embryos/larvae compared to wild type ones from 19.5 hpf to 3 dpf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "07c7be62-8567-4d43-9fc7-3742ac93d615",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C70",
+      "claim": "The requirement of Zbtb14 continues to definitive hematopoiesis since HSCs-derived macrophages remain hyperproliferative in zbtb14-/- adults",
+      "claim_type": "EXPLICIT",
+      "source": "Such a requirement of Zbtb14 continues to definitive hematopoiesis since HSCs-derived macrophages remain hyperproliferative in zbtb14-/- adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from adult macrophage data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "5321d94f-6959-4ee3-8b39-7cd5ac9544b3",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C71",
+      "claim": "zbtb14 is indispensable for the maintenance of proper quantity of monocytes/macrophages",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, zbtb14 is indispensable for the maintenance of proper quantity of monocytes/macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from developmental and adult data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "349e5183-0709-444f-9065-68eb203670ec",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C72",
+      "claim": "The zbtb14-deficient mpeg1.1+ cells can be recruited to the wound and result in normal healing",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, the zbtb14-deficient mpeg1.1+ cells can still be recruited to the wound, and result in a normal healing, implying these macrophages are able to terminally differentiate into mature cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from wound healing assay",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "2ef94beb-0641-4154-8792-8903bc3e84fb",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C73",
+      "claim": "zbtb14-deficient macrophages are able to terminally differentiate into mature cells",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, the zbtb14-deficient mpeg1.1+ cells can still be recruited to the wound, and result in a normal healing, implying these macrophages are able to terminally differentiate into mature cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from normal wound healing",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "3d1b88d7-3266-44bd-9e69-03fea7a47e0c",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C74",
+      "claim": "The abnormal expansion of macrophages is mainly due to excessive monocyte/macrophage progenitor proliferation in zbtb14 mutants",
+      "claim_type": "EXPLICIT",
+      "source": "The results from anti-pH3 and MGG staining assays indicate that the abnormal expansion of macrophages is mainly due to excessive monocyte/macrophage progenitor proliferation in zbtb14 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from pH3 and MGG staining data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "4bdbb1f9-d24b-4586-9831-ca688b7980cf",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C75",
+      "claim": "csf1ra, csf1b, and il34 are M-CSFR signaling genes",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, DEGs analyses of RNA-seq data further indicate several key regulators involved in macrophage proliferation such as csf1ra, csf1b, and il34 (M-CSFR signaling genes) (Dai et al., 2002), and pu.1 (Celada et al., 1996) are all significantly upregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "f8be7058-28dd-4552-8217-61a88cdbbc96",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C76",
+      "claim": "csf1ra, csf1b, il34, and pu.1 are all significantly upregulated in zbtb14-deficient macrophages",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, DEGs analyses of RNA-seq data further indicate several key regulators involved in macrophage proliferation such as csf1ra, csf1b, and il34 (M-CSFR signaling genes) (Dai et al., 2002), and pu.1 (Celada et al., 1996) are all significantly upregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "RNA-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "7c435853-4a54-4fa1-9b6a-23fe352a2f9c",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C77",
+      "claim": "pu.1 is a direct target of Zbtb14",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanistic studies identify that pu.1 is a direct target of Zbtb14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from luciferase and ChIP experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "79890539-663c-4fe0-b209-a22f57b03725",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C78",
+      "claim": "PU.1 is an ETS family transcription factor",
+      "claim_type": "EXPLICIT",
+      "source": "As a pivotal ETS family transcription factor, PU.1 is implicated in multiple stages of hematopoiesis such as generation of early myeloid progenitors, cell fate determination of granulocytic versus monocytic lineages of neutrophil-macrophage progenitors, maintenance of the accessibility of macrophage-specific genes during monocytic differentiation (Kastner and Chan, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "5b6d89ad-0699-439c-8869-00a12ad244fb",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C79",
+      "claim": "PU.1 is implicated in multiple stages of hematopoiesis",
+      "claim_type": "EXPLICIT",
+      "source": "As a pivotal ETS family transcription factor, PU.1 is implicated in multiple stages of hematopoiesis such as generation of early myeloid progenitors, cell fate determination of granulocytic versus monocytic lineages of neutrophil-macrophage progenitors, maintenance of the accessibility of macrophage-specific genes during monocytic differentiation (Kastner and Chan, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "ecb75ffe-a3f5-44a0-b7b7-eba7671396ee",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C80",
+      "claim": "The development of neutrophil lineage kept normal in zbtb14 mutants",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that while the aberrant macrophage expansion could be effectively rescued with dominant-negative Pu.1 (TOL2-mpeg1.1:pu.1-DBD), the development of neutrophil lineage still kept normal in zbtb14 mutants (Figure 4\u2014figure supplement 2A-A'', B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from WISH analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "d8daaf21-f0ce-4bdc-83e2-21d3d6be06f8",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C81",
+      "claim": "The overexpression of full-length pu.1 in wild type embryos could induce an expansion of macrophage population without interfering neutrophil lineage development",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, the overexpression of full-length pu.1 (TOL2-mpeg1.1:pu.1) in wild type embryos could induce an expansion of macrophage population without interfering neutrophil lineage development (Figure 4\u2014figure supplement 2C-D', E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from overexpression study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "85f2f46f-1a42-4d9a-9f46-4398423ade27",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C82",
+      "claim": "zbtb14 transcripts were constantly higher in mpeg1.1+ cells than in mpx+ cells at different developmental stages",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we compared the expression level of zbtb14 in mpeg1.1+ and mpx+ cells at different developmental stages, and found zbtb14 transcripts were constantly higher in the former (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR data from sorted cell populations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "74ef66a2-c145-4891-9cb6-80867407dd7e",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C83",
+      "claim": "Zbtb14 is a macrophage lineage-specific transcription factor",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that Zbtb14 is a macrophage lineage-specific transcription factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from lineage-specific expression and functional data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "3b647110-b910-4847-8d94-7743a7516105",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C84",
+      "claim": "PU.1 is a predicted upstream transcription factor of mammalian ZBTB14",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, we also investigated the transcriptional network that involved zbtb14. Bioinformatic analyses show that PU.1 is a predicted upstream transcription factor of mammalian ZBTB14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Bioinformatic prediction",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "21a1c9b7-2222-4ad9-9e95-9ea9aa6286af",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C85",
+      "claim": "PU.1 displayed a significant repression effect on the zebrafish zbtb14 promoter",
+      "claim_type": "EXPLICIT",
+      "source": "The promoter region of zebrafish zbtb14 was cloned into a reporter vector, and luciferase assay showed that PU.1 displayed a significant repression effect on it (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Luciferase reporter assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "d9899092-2347-4cdb-a2bd-9f2e817753d4",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C86",
+      "claim": "A Zbtb14-Pu.1 negative feedback loop might regulate monocyte and macrophage development",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a Zbtb14-Pu.1 negative feedback loop might regulate monocyte and macrophage development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on mutual repression data",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "0a905081-1eda-4de1-9a1d-901c8dc1e979",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C87",
+      "claim": "Approximately 20 genes including CEBPA, RUNX1, FLT3, DNMT3A, and NPM1 are most frequently mutated in AML patients",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 20 genes including CEBPA, RUNX1, FLT3, DNMT3A, and NPM1 are most frequently mutated in AML patients (Ley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "86686ec7-f826-4846-8734-8c5cc62fa3f8",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C88",
+      "claim": "Some rare mutations can be found in few AML samples",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, some rare mutations can be found in few samples (Ley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "ef906084-a8f3-4179-824e-b319497d640a",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C89",
+      "claim": "Wild type ZBTB14 mRNA displayed a similar rescue effect as zbtb14 in zebrafish",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we took advantage of the zbtb14-deficient zebrafish line to demonstrate the functional conservation between the human ZBTB14 and the zebrafish ortholog zbtb14. While wild type ZBTB14 mRNA displayed a similar rescue effect as zbtb14, the ZBTB14 mutant was shown to be a loss-of-function transcription regulator in monocyte/macrophage development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental rescue data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "c9cb931a-b3a2-4693-bf83-5d217fd3ad2f",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C90",
+      "claim": "The ZBTB14S8F mutant is a loss-of-function transcription regulator in monocyte/macrophage development",
+      "claim_type": "EXPLICIT",
+      "source": "While wild type ZBTB14 mRNA displayed a similar rescue effect as zbtb14, the ZBTB14 mutant was shown to be a loss-of-function transcription regulator in monocyte/macrophage development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from rescue experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "37c0b6f9-feff-48bd-a519-64d33280b652",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C91",
+      "claim": "The protein stability of ZBTB14S8F is profoundly affected due to aberrant autophagy",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we demonstrated that the protein stability of ZBTB14S8F was profoundly affected due to aberrant autophage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from inhibitor experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "5cae8356-e25e-4260-9e56-c994f4c5dfd9",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C92",
+      "claim": "ZBTB14 was originally cloned as a transcriptional repressor gene on the murine c-MYC promoter",
+      "claim_type": "EXPLICIT",
+      "source": "ZBTB14, originally named as ZF5, was cloned as a transcriptional repressor gene on the murine c-MYC promoter (Yanagidani et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "39e68385-463a-4422-9b89-f84a59fc1dcf",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C93",
+      "claim": "C-MYC amplification was identified in some AML patients",
+      "claim_type": "EXPLICIT",
+      "source": "C-MYC amplification was identified in some AML patients (Tang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "917eda0e-cd4a-41be-a8a2-0ccc8ac2927f",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C94",
+      "claim": "c-MYC is one of the most overexpressed genes in AML",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, c-MYC is one of the most overexpressed genes in AML (Handschuh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "28e6f1bd-c1e8-4974-991e-903c95f44d3c",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C95",
+      "claim": "Either increased expression or aberrant activation of c-MYC plays important roles in leukemogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "Either increased expression or aberrant activation of c-MYC plays important roles in leukemogenesis (Salvatori et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "006bf179-3d54-4033-8182-198bcccfa856",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C96",
+      "claim": "c-myc was upregulated in zbtb14-deficient macrophages",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq and RT-qPCR experiments showed that c-myc was upregulated in our zbtb14-deficient macrophages (Figure 4\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA-seq and RT-qPCR data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "78491194-9cab-47e7-afd1-2dee8809422e",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C97",
+      "claim": "Znf161 knockout mice had a defect in genomic instability, which was associated with higher cancer risk",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it has been reported that Znf161 (another alias of Zbtb14) knockout mice had a defect in genomic instability, which was associated with higher cancer risk (Kim et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "bb4b9636-ad69-4688-8d1a-6dea23000ef2",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C98",
+      "claim": "ZBTB14 would be a tumor suppressor",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that ZBTB14 would be a tumor suppressor, whose inactivity is tightly related with AML pathogenesis in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on multiple lines of evidence",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "08d93a9d-fd52-4b1d-9450-d9ff8c1d415f",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C99",
+      "claim": "ZBTB14 inactivity is tightly related with AML pathogenesis in humans",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that ZBTB14 would be a tumor suppressor, whose inactivity is tightly related with AML pathogenesis in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on multiple lines of evidence",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "d7f98fc5-5d81-4404-9e04-0a2ccbc435fb",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C100",
+      "claim": "The deficiency of zbtb14 leads to an aberrant expansion of monocyte/macrophage population in zebrafish",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that the deficiency of zbtb14, a transcription repressor gene belonging to ZBTB family, leads to an aberrant expansion of monocyte/macrophage population in zebrafish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "2e687cb1-a20d-4d7e-89a5-03464d740e37",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C101",
+      "claim": "Zbtb14 functions as a negative regulator of pu.1",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, Zbtb14 functions as a negative regulator of pu.1, and SUMOylation on a conserved lysine is essential for the repression activity of Zbtb14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of mechanistic findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "a40454cc-066c-490f-8753-b87b479e75f4",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C102",
+      "claim": "SUMOylation on a conserved lysine is essential for the repression activity of Zbtb14",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, Zbtb14 functions as a negative regulator of pu.1, and SUMOylation on a conserved lysine is essential for the repression activity of Zbtb14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of SUMOylation findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "08a6f1d3-6927-4843-9edf-631227a9f622",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C103",
+      "claim": "A serine to phenylalanine mutation found in an AML patient could target ZBTB14 protein to autophagic degradation",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a serine to phenylalanine mutation found in an acute myeloid leukemia (AML) patient could target ZBTB14 protein to autophagic degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of mutant characterization findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "a06aede6-dd55-4013-a0d8-2d6d19054b97",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C104",
+      "claim": "ZBTB14 is a newly identified gene implicated in both normal and malignant myelopoiesis",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, ZBTB14 is a newly identified gene implicated in both normal and malignant myelopoiesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from all experimental findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "d5615891-48d6-4f5c-ad44-12154359514d",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C105",
+      "claim": "Macrophages and their precursor cells, monocytes, are the first line of defense of the body against foreign pathogens and tissue damage",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages and their precursor cells, monocytes, are the first line of defense of the body against foreign pathogens and tissue damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "6d1767b7-0016-437d-b8eb-1ed46976000f",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C106",
+      "claim": "Some common transcription factors (such as PU.1) are required to ensure proper development of monocytes/macrophages",
+      "claim_type": "EXPLICIT",
+      "source": "Although the origins of macrophages are diverse, some common transcription factors (such as PU.1) are required to ensure proper development of monocytes/macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "6b4d104a-0d84-43e7-9435-fe53e6970154",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C107",
+      "claim": "Hematopoiesis is the process by which hematopoietic stem cells proliferate and differentiate into all blood lineages",
+      "claim_type": "EXPLICIT",
+      "source": "Hematopoiesis is the process by which hematopoietic stem cells (HSCs) proliferate and differentiate into all blood lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "79578125-b967-46c2-9c34-95e939103c62",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C108",
+      "claim": "Hematopoiesis is driven by a variety of transcription factors, which function in a stage and lineage-specific manner",
+      "claim_type": "EXPLICIT",
+      "source": "It is driven by a variety of transcription factors, which function in a stage and lineage-specific manner (Bodine, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "c13bf1eb-cba9-4803-b0c7-efb4f68cbbfa",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C109",
+      "claim": "Most tissue-resident macrophages arise from the blood islands of the yolk sac",
+      "claim_type": "EXPLICIT",
+      "source": "Most tissue-resident macrophages arise from the blood islands of the yolk sac (Kurotaki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "ce465a8b-b577-43ac-b7ab-bc8ebd167082",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C110",
+      "claim": "Monocytes in circulation are derived from HSCs",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, monocytes in circulation are derived from HSCs, which give rise to monocytes in a step-wise manner via common myeloid progenitors, granulocyte-monocyte progenitors, monocyte-dendritic cell progenitors, and common monocyte progenitors (Hettinger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "b77d8b6e-afff-4cf9-aa70-e73e47bff7e9",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C111",
+      "claim": "During infection, circulating monocytes migrate into tissues and generate inflammatory macrophages",
+      "claim_type": "EXPLICIT",
+      "source": "During infection, circulating monocytes migrate into tissues and generate inflammatory macrophages (Menezes et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "d5667bd1-1acd-4be4-888f-a22a90459345",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C112",
+      "claim": "PU.1 is required in monocyte and macrophage development",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the origin, some common transcription regulators (such as PU.1) (Glass and Natoli, 2016; Kueh et al., 2013) and signaling pathways (such as macrophage colony-stimulating factor receptor [M-CSFR]) are required in monocyte and macrophage development (Dai et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "b3f0a0e4-f1dd-4aa7-a4b4-2ac7b4979672",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C113",
+      "claim": "M-CSFR signaling pathway is required in monocyte and macrophage development",
+      "claim_type": "EXPLICIT",
+      "source": "Whatever the origin, some common transcription regulators (such as PU.1) (Glass and Natoli, 2016; Kueh et al., 2013) and signaling pathways (such as macrophage colony-stimulating factor receptor [M-CSFR]) are required in monocyte and macrophage development (Dai et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "7311d43a-53ba-4408-ba3c-f2b94e0339f3",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C114",
+      "claim": "A total of 49 zinc finger and BTB domain (ZBTB) containing transcription factors have been identified in human genome",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 49 zinc finger and BTB domain (ZBTB) containing transcription factors have been identified in human genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "11273ab5-6b05-4c8f-8d41-2bf37b43ae84",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C115",
+      "claim": "The C-terminal zinc finger motifs of ZBTB proteins enable the binding with DNA",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal zinc finger motifs of ZBTB proteins enable the binding with DNA, whereas the N-terminal BTB motif mediates the homo/hetero-dimerization/multimerization between different ZBTB family members and recruits corepressors such as NCoR and SMRT (Maeda, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "ec01c901-dd0f-459a-a6f3-f995d5e524cc",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C116",
+      "claim": "The N-terminal BTB motif of ZBTB proteins mediates the homo/hetero-dimerization/multimerization between different ZBTB family members",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal zinc finger motifs of ZBTB proteins enable the binding with DNA, whereas the N-terminal BTB motif mediates the homo/hetero-dimerization/multimerization between different ZBTB family members and recruits corepressors such as NCoR and SMRT (Maeda, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "7827dfe5-3b0a-47d8-a149-03f6bccea75a",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C117",
+      "claim": "The N-terminal BTB motif of ZBTB proteins recruits corepressors such as NCoR and SMRT",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal zinc finger motifs of ZBTB proteins enable the binding with DNA, whereas the N-terminal BTB motif mediates the homo/hetero-dimerization/multimerization between different ZBTB family members and recruits corepressors such as NCoR and SMRT (Maeda, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "96a587a6-fd7e-432c-8912-a2eedd997bfb",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C118",
+      "claim": "ZBTBs mostly function as transcription repressors",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ZBTBs mostly function as transcription repressors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from structural and functional properties",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "553eea75-1c02-4c65-9c80-f8fdc47215af",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C119",
+      "claim": "ZBTB16 plays roles in both normal and malignant hematopoiesis in humans",
+      "claim_type": "EXPLICIT",
+      "source": "Several members of ZBTB family transcription factors including ZBTB16 (also known as promyelocytic leukemia zinc finger) (Sobas et al., 2020), ZBTB27 (also known as B cell leukemia/lymphoma 6) (Nakamura, 2000), ZBTB7 (also known as leukemia/lymphoma-related factor) (Constantinou et al., 2019), and ZBTB15 (also known as T-helper-inducing POZ/Kruppel-like factor) (Taniuchi, 2016) play various roles in both normal and malignant hematopoiesis in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "4dd7a9e8-c801-498e-9437-265d8e5b1493",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C120",
+      "claim": "At least 12 Zbtb genes are involved in hematopoietic development in mice",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, at least 12 Zbtb genes are involved in hematopoietic development in mice (Maeda, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "e3087d9d-3053-4c59-a265-ed2f5b8c2bb1",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C121",
+      "claim": "ZBTB14 is expressed in a variety of blood cell types",
+      "claim_type": "EXPLICIT",
+      "source": "ZBTB14, a ZBTB family member whose function has been poorly characterized, is expressed in a variety of blood cell types (The Human Protein Atlas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from database resource",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "f0904a18-cb89-4c4d-8421-9e0b4a00b521",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C122",
+      "claim": "Mutation of ZBTB14 has not previously been identified in AML",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a missense mutation of ZBTB14 gene (ZBTB14S8F) was detected by whole-exome sequencing in a newly diagnosed acute myeloid leukemia (AML) patient (Tyner et al., 2018). Note that mutation of ZBTB14 has not previously been identified in AML.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of novelty",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "68c0c21b-66fc-408a-b585-3ff09585bb7b",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C123",
+      "claim": "The potential role of ZBTB14 in hematopoiesis and leukemogenesis was obscure",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the potential role of ZBTB14 in hematopoiesis and leukemogenesis was obscure, (Yin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "62e73ff4-af1b-4835-b31c-ff26d4c8aaae",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C124",
+      "claim": "The zebrafish serves as an ideal model organism for hematopoietic development and disease studies",
+      "claim_type": "EXPLICIT",
+      "source": "The zebrafish serves as an ideal model organism for hematopoietic development and disease studies (Gore et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "cdf59deb-7e69-4c74-b2cf-f537c558838e",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C125",
+      "claim": "Ten nucleotides were deleted in the zbtb14 mutant, which resulted in a truncated protein with only 80 amino acids by frameshifting",
+      "claim_type": "EXPLICIT",
+      "source": "Ten nucleotides were deleted, which resulted in a truncated protein with only 80 amino acids by frameshifting (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of generated mutant",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "d558ea65-d1ea-4b4e-9055-e4e7293cc2de",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C126",
+      "claim": "Zebrafish hematopoiesis consists of primitive and definitive waves which occur sequentially in distinct anatomical sites",
+      "claim_type": "EXPLICIT",
+      "source": "Like mammalian hematopoiesis, zebrafish hematopoiesis consists of primitive and definitive waves which occur sequentially in distinct anatomical sites (Galloway and Zon, 2003; Zon, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "a6c2b55d-6a0f-43e2-9496-ef447a527ffd",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C127",
+      "claim": "The primitive hematopoiesis gives rise to embryonic myeloid cells (neutrophils and macrophages) and erythrocytes from the rostral blood island and intermediate cell mass",
+      "claim_type": "EXPLICIT",
+      "source": "The primitive hematopoiesis gives rise to embryonic myeloid cells (neutrophils and macrophages) and erythrocytes from two intraembryonic locations, the rostral blood island (the equivalent of mammalian yolk sac) and intermediate cell mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General biological knowledge about zebrafish development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "90fd0481-f111-4127-87e6-4769da774455",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C128",
+      "claim": "The definitive HSCs initiate within the ventral wall of the dorsal aorta",
+      "claim_type": "EXPLICIT",
+      "source": "The definitive HSCs which give rise to all blood lineages initiate within the ventral wall of the dorsal aorta (a tissue analogous to the mammalian aorta/gonad/mesonephros), then translocate to the caudal hematopoietic tissue (the equivalent of fetal liver) and colonize in kidney marrow (the equivalent of bone marrow) in adults (Bertrand et al., 2008; Bertrand et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "bfbefb3d-0373-4d3d-87b3-0497bb5817e5",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C129",
+      "claim": "The primitive macrophages cannot sustain for a long period, which will eventually be replaced with HSC-derived macrophages as definitive hematopoiesis begins",
+      "claim_type": "EXPLICIT",
+      "source": "The primitive macrophages cannot sustain for a long period, which will eventually be replaced with HSC-derived macrophages as definitive hematopoiesis begins (Xu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "a0e126dd-7942-4251-90e7-299a68a6487f",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "claim_id": "C130",
+      "claim": "zbtb14 mutant zebrafish were viable and fertile",
+      "claim_type": "EXPLICIT",
+      "source": "Since zbtb14 mutant zebrafish were viable and fertile, the whole kidney marrow (WKM) samples were collected from wild type Tg(mpeg1.1:eGFP) and zbtb14-/-//Tg(mpeg1.1:eGFP) lines in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c7c0a1cc-ff0d-470e-b046-6dd328032058",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Zebrafish Zbtb14 shares 70% homology with human ZBTB14 and both proteins have nearly identical N-terminal BTB motifs and five consecutive C-terminal zinc finger motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are supported by direct sequence comparison data and alignment shown in Figure 1A. The homology percentage and structural conservation are explicitly stated and visually demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "1af859c1-9054-4f29-873d-331f3a9dc182",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Loss of zbtb14 specifically causes expansion of the macrophage/monocyte lineage from embryonic through adult stages in zebrafish, while other hematopoietic lineages remain unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7, C12-C15 collectively demonstrate macrophage expansion through multiple markers (mfap4, csf1ra, mpeg1.1) at embryonic stages and in adults (C13), with microglia also expanded (C12). The specificity is confirmed by normal expression of other lineage markers (C15). Data from WISH, transgenic reporters, and FACS provide converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "07ded5fd-3da5-4375-bb51-b46762498e41",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "zbtb14-deficient macrophages retain functional capacity, including wound migration and ability to terminally differentiate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C72 provide direct experimental evidence of normal wound migration. Claims C9 and C73 are reasonable inferences from the wound healing data, though additional functional assays would strengthen the conclusion about complete functional integrity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "4a15b7fc-4d1c-465d-b67b-a961e6b8f985",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The macrophage expansion in zbtb14 mutants is caused by excessive proliferation of monocyte/macrophage progenitors rather than decreased apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 and C74 provide complementary evidence: increased pH3+ cells (C16) indicate enhanced proliferation, no change in TUNEL+ cells (C17) rules out altered apoptosis, and MGG staining (C19-C20) shows increased immature progenitors with decreased mature cells. The mechanistic conclusion (C18, C21, C74) is well-supported by this data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "5d60538e-f458-428c-be55-b9bf2056e6d6",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ZBTB14 function is conserved between zebrafish and humans, as both zebrafish zbtb14 and human ZBTB14 mRNA rescue the macrophage expansion phenotype in zbtb14-deficient zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by rescue experiments shown in Figure 4A-D and F. Both zebrafish and human mRNA effectively rescue the phenotype, demonstrating functional conservation. The experimental design is appropriate for testing cross-species complementation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "ed479deb-c50f-4785-844c-ce366b0a6646",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Zbtb14 functions as a transcriptional repressor in monocyte/macrophage development, as demonstrated by rescue with DAXX-Zbtb14 fusion protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by the DAXX fusion experiment (Figure 4E-F). The DAXX repression domain fusion rescues the phenotype similarly to wild-type, indicating Zbtb14 acts as a repressor. This is a clever experimental design to distinguish activator vs. repressor function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "e6fbf233-b282-4197-8d7e-d668a4cdfcc2",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multiple macrophage development regulators including pu.1, csf1ra, csf1b, il34, mafb, klf4, irf8, and c-myc are upregulated in zbtb14-deficient macrophages, with pu.1 showing particularly strong upregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 and C76 are supported by RNA-seq data (Figure 4\u2014figure supplement 1), RT-qPCR validation (Figure 4G), and WISH analyses (Figure 4H-L). Multiple independent methods confirm the upregulation, particularly for pu.1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "bd6b6d88-b8ac-4302-bb55-56f8c2ad445e",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "pu.1 is a direct transcriptional target of Zbtb14, and Zbtb14 regulates monocyte/macrophage development through repression of pu.1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40 and C77 provide multiple lines of evidence: luciferase assays show direct repression (C34), ChIP-PCR demonstrates physical binding to the pu.1 promoter (C35), dominant-negative Pu.1 rescues the phenotype (C36), and genetic epistasis analysis (C37-C39) confirms zbtb14 acts upstream of pu.1. This is comprehensive mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "7ce57d5d-434f-4ae9-bcad-b48036809aa5",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Zbtb14 is SUMOylated at lysine 40 (K40), as demonstrated by increased adduct band intensity with UBC9/SUMO1 co-expression and abolishment of the adduct in K40R mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 provide clear biochemical evidence for SUMOylation: the ~10 kD adduct band (C43) increases with SUMO machinery (C44), SUMO1 co-immunoprecipitates with Zbtb14 (C45), and K40R mutation abolishes the adduct (C47). The mutagenesis approach definitively identifies K40 as the SUMOylation site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "b8580fb2-79eb-4505-a22b-8a7af8429949",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SUMOylation at K40 is essential for Zbtb14's transcriptional repression activity, as the K40R mutant loses repression ability while SUMO1-Zbtb14K40R fusion retains it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 and C102 demonstrate that K40R mutation does not affect nuclear localization (C48) but completely abolishes transcriptional repression (C50) and in vivo rescue activity (C52). The SUMO1 fusion to K40R restores both activities (C49, C51), elegantly demonstrating that SUMOylation itself, not the lysine residue, is functionally critical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "cf75098f-0f68-435f-91d4-982e1ad5902b",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The ZBTB14S8F mutation found in an AML patient is a loss-of-function mutation that fails to rescue the zbtb14-deficient phenotype due to impaired protein stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 and C90 show that ZBTB14S8F fails to rescue (C56), has normal mRNA levels (C58) but undetectable protein (C59), indicating protein instability (C60). The rescue experiment directly tests function, and the mRNA/protein discordance clearly points to post-transcriptional regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "79830217-c07b-4ad4-a872-764a07b74b8e",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The ZBTB14S8F mutation creates an LIR/AIM motif that targets the protein for autophagic degradation, as demonstrated by bafilomycin but not MG132 rescue, and similar instability of S8W and S8Y mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67, C91, and C103 provide strong mechanistic evidence: bafilomycin (autophagy inhibitor) but not MG132 (proteasome inhibitor) stabilizes the protein (C61), the S8F mutation creates a \u03c6xx\u03a8 motif matching the LIR/AIM consensus (C65), and S8W/S8Y mutations show similar instability (C66). The phosphorylation mimics (S8A/S8D) remain stable (C63), ruling out phosphorylation as the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "9b2cf865-0b4a-4185-a35d-6120e25dffff",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Zbtb14 is a macrophage lineage-specific transcription factor, as evidenced by its higher expression in macrophages versus neutrophils and its specific effect on macrophage but not neutrophil development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 demonstrate lineage specificity: neutrophil development is unaffected in zbtb14 mutants (C80), pu.1 overexpression expands macrophages without affecting neutrophils (C81), and zbtb14 expression is consistently higher in mpeg1.1+ (macrophage) versus mpx+ (neutrophil) cells (C82). This provides both functional and expression-based evidence for lineage specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "cdba558e-742f-45c5-97f8-f6a00df861fe",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A negative feedback loop may exist between Zbtb14 and Pu.1, as PU.1 is predicted to regulate ZBTB14 and shows repressive activity on the zbtb14 promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C86 are based on bioinformatic prediction (C84) and a single luciferase assay (C85). While the luciferase data shows PU.1 represses the zbtb14 promoter, the feedback loop hypothesis (C86) requires additional validation such as ChIP to confirm direct binding, and functional experiments to demonstrate physiological relevance. The speculation is reasonable but needs more support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "7783630e-0b87-4a45-b9b4-ea35b6a256d6",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "ZBTB14 may function as a tumor suppressor in AML, based on its role as a c-MYC repressor, c-MYC upregulation in zbtb14-deficient cells, c-MYC's role in leukemogenesis, and genomic instability in Znf161 knockout mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C99 present circumstantial evidence linking ZBTB14 to tumor suppression: ZBTB14 was originally identified as a c-MYC repressor (C92), c-MYC is amplified/overexpressed in AML (C93-C94) and important for leukemogenesis (C95), c-myc is upregulated in zbtb14-deficient macrophages (C96), and Znf161 KO mice show genomic instability (C97). However, the tumor suppressor claim (C98-C99) is speculative without direct evidence of transformation or cancer development in zbtb14 mutants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    },
+    {
+      "id": "2b0264ac-1efe-4021-85e7-8ce774a1f7c2",
+      "content_id": "f122d525-3138-4261-a3a7-d310e124ecfb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "ZBTB14 is essential for proper monopoiesis during both primitive and definitive hematopoiesis and is implicated in both normal and malignant myelopoiesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71, C100, and C104 summarize the major findings. The requirement during primitive hematopoiesis (C69) is demonstrated by embryonic phenotypes, continuation to definitive hematopoiesis (C70) by adult macrophage expansion, and the overall conclusion (C71, C100, C104) is well-supported by the comprehensive dataset. The link to malignant myelopoiesis is supported by the AML mutation analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:19:29.360425Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a4f152f4-b5d5-4550-8bc7-2081f86bddaf",
+      "result_id": "c7c0a1cc-ff0d-470e-b046-6dd328032058"
+    },
+    {
+      "claim_id": "3a276205-7b6c-48b9-b74f-4fe31852c41b",
+      "result_id": "c7c0a1cc-ff0d-470e-b046-6dd328032058"
+    },
+    {
+      "claim_id": "ce4f9f7d-1e35-4631-8d44-f0fbbbd97730",
+      "result_id": "1af859c1-9054-4f29-873d-331f3a9dc182"
+    },
+    {
+      "claim_id": "4cc186ec-d12c-493c-be04-c1cb82c6dd2e",
+      "result_id": "1af859c1-9054-4f29-873d-331f3a9dc182"
+    },
+    {
+      "claim_id": "9a0a4751-a752-43a8-84f6-28989ba3d878",
+      "result_id": "1af859c1-9054-4f29-873d-331f3a9dc182"
+    },
+    {
+      "claim_id": "db08db75-b452-4b40-a727-2fd68af75c45",
+      "result_id": "1af859c1-9054-4f29-873d-331f3a9dc182"
+    },
+    {
+      "claim_id": "76f98d4e-d59e-4266-a02b-6937909460f3",
+      "result_id": "1af859c1-9054-4f29-873d-331f3a9dc182"
+    },
+    {
+      "claim_id": "1eb6e86b-323d-4e7d-8c4c-5e11ab809e59",
+      "result_id": "1af859c1-9054-4f29-873d-331f3a9dc182"
+    },
+    {
+      "claim_id": "ad67b29d-2211-431a-9640-77259908cd0d",
+      "result_id": "1af859c1-9054-4f29-873d-331f3a9dc182"
+    },
+    {
+      "claim_id": "e1f8bf78-f364-4d48-bfbc-41f259ebd285",
+      "result_id": "1af859c1-9054-4f29-873d-331f3a9dc182"
+    },
+    {
+      "claim_id": "e59764c1-1ff3-4178-ac86-463f54732817",
+      "result_id": "1af859c1-9054-4f29-873d-331f3a9dc182"
+    },
+    {
+      "claim_id": "cdf4dc80-de31-4111-be8f-68f32006ce74",
+      "result_id": "07ded5fd-3da5-4375-bb51-b46762498e41"
+    },
+    {
+      "claim_id": "177a4a73-b592-4ffe-a885-ec26fd6ce98c",
+      "result_id": "07ded5fd-3da5-4375-bb51-b46762498e41"
+    },
+    {
+      "claim_id": "349e5183-0709-444f-9065-68eb203670ec",
+      "result_id": "07ded5fd-3da5-4375-bb51-b46762498e41"
+    },
+    {
+      "claim_id": "2ef94beb-0641-4154-8792-8903bc3e84fb",
+      "result_id": "07ded5fd-3da5-4375-bb51-b46762498e41"
+    },
+    {
+      "claim_id": "17ca73d8-ccb4-40fc-ac58-0a4686674203",
+      "result_id": "4a15b7fc-4d1c-465d-b67b-a961e6b8f985"
+    },
+    {
+      "claim_id": "4cec22ea-2fad-423a-a98c-f664dabb02a6",
+      "result_id": "4a15b7fc-4d1c-465d-b67b-a961e6b8f985"
+    },
+    {
+      "claim_id": "6ab5c0f9-a8a3-4c77-8ac0-aa589366190d",
+      "result_id": "4a15b7fc-4d1c-465d-b67b-a961e6b8f985"
+    },
+    {
+      "claim_id": "4e6e4f55-9f75-46b4-b27e-31491f438b6b",
+      "result_id": "4a15b7fc-4d1c-465d-b67b-a961e6b8f985"
+    },
+    {
+      "claim_id": "c45307fa-b5d9-48f8-b954-49682dd8ff6a",
+      "result_id": "4a15b7fc-4d1c-465d-b67b-a961e6b8f985"
+    },
+    {
+      "claim_id": "7e61d14f-2a83-45b3-a270-f2c208bd7f6a",
+      "result_id": "4a15b7fc-4d1c-465d-b67b-a961e6b8f985"
+    },
+    {
+      "claim_id": "3d1b88d7-3266-44bd-9e69-03fea7a47e0c",
+      "result_id": "4a15b7fc-4d1c-465d-b67b-a961e6b8f985"
+    },
+    {
+      "claim_id": "98d1592b-d1c0-4a49-b4c2-2fa21977d73b",
+      "result_id": "5d60538e-f458-428c-be55-b9bf2056e6d6"
+    },
+    {
+      "claim_id": "e872ecb5-e6f5-4089-8fcc-2faaff03a6b9",
+      "result_id": "5d60538e-f458-428c-be55-b9bf2056e6d6"
+    },
+    {
+      "claim_id": "d03497b7-d6db-46b0-ba89-53259bbc1bdd",
+      "result_id": "5d60538e-f458-428c-be55-b9bf2056e6d6"
+    },
+    {
+      "claim_id": "5ae10b1a-0f80-403a-8705-5488592e8020",
+      "result_id": "ed479deb-c50f-4785-844c-ce366b0a6646"
+    },
+    {
+      "claim_id": "9e68ef89-d108-4c92-900c-51ed2f3b205b",
+      "result_id": "ed479deb-c50f-4785-844c-ce366b0a6646"
+    },
+    {
+      "claim_id": "6b2d290a-4969-4474-b3f2-13e5436cd87a",
+      "result_id": "e6fbf233-b282-4197-8d7e-d668a4cdfcc2"
+    },
+    {
+      "claim_id": "ddacf7b5-227a-4df2-94cb-8d8c5da1a93a",
+      "result_id": "e6fbf233-b282-4197-8d7e-d668a4cdfcc2"
+    },
+    {
+      "claim_id": "b221c1bc-446b-4f9d-aedb-a661a55d7eac",
+      "result_id": "e6fbf233-b282-4197-8d7e-d668a4cdfcc2"
+    },
+    {
+      "claim_id": "264930cd-f5b4-49d3-904a-c1e7c5d742d1",
+      "result_id": "e6fbf233-b282-4197-8d7e-d668a4cdfcc2"
+    },
+    {
+      "claim_id": "f8be7058-28dd-4552-8217-61a88cdbbc96",
+      "result_id": "e6fbf233-b282-4197-8d7e-d668a4cdfcc2"
+    },
+    {
+      "claim_id": "7e421d53-594d-4a1c-a073-a0722da6f077",
+      "result_id": "bd6b6d88-b8ac-4302-bb55-56f8c2ad445e"
+    },
+    {
+      "claim_id": "32d4984c-2ce6-44cb-a62a-29034dda58aa",
+      "result_id": "bd6b6d88-b8ac-4302-bb55-56f8c2ad445e"
+    },
+    {
+      "claim_id": "06869f4e-ec94-4446-8ba5-2c366fd4671c",
+      "result_id": "bd6b6d88-b8ac-4302-bb55-56f8c2ad445e"
+    },
+    {
+      "claim_id": "6e1a1ab6-e8cc-4eb8-bfac-c68d92222e54",
+      "result_id": "bd6b6d88-b8ac-4302-bb55-56f8c2ad445e"
+    },
+    {
+      "claim_id": "866258d9-acb2-46c2-a56a-22e843529277",
+      "result_id": "bd6b6d88-b8ac-4302-bb55-56f8c2ad445e"
+    },
+    {
+      "claim_id": "51dd0fee-3176-4159-b446-4fe1de33cbd5",
+      "result_id": "bd6b6d88-b8ac-4302-bb55-56f8c2ad445e"
+    },
+    {
+      "claim_id": "4ad6eeb9-4fd0-4088-9cf6-b3f1bb3972c7",
+      "result_id": "bd6b6d88-b8ac-4302-bb55-56f8c2ad445e"
+    },
+    {
+      "claim_id": "b7bd301c-b37a-48d9-9ea7-2c13c28d8040",
+      "result_id": "bd6b6d88-b8ac-4302-bb55-56f8c2ad445e"
+    },
+    {
+      "claim_id": "7c435853-4a54-4fa1-9b6a-23fe352a2f9c",
+      "result_id": "bd6b6d88-b8ac-4302-bb55-56f8c2ad445e"
+    },
+    {
+      "claim_id": "ab50b80e-eba6-41bd-a864-84c9a658e333",
+      "result_id": "7ce57d5d-434f-4ae9-bcad-b48036809aa5"
+    },
+    {
+      "claim_id": "daa7db2a-ba7d-43c2-b253-3ab2d917bb57",
+      "result_id": "7ce57d5d-434f-4ae9-bcad-b48036809aa5"
+    },
+    {
+      "claim_id": "44870c76-6b4f-4501-b3e1-735cdd4f7796",
+      "result_id": "7ce57d5d-434f-4ae9-bcad-b48036809aa5"
+    },
+    {
+      "claim_id": "17624c25-42d8-4f04-b667-aba96caed4f4",
+      "result_id": "7ce57d5d-434f-4ae9-bcad-b48036809aa5"
+    },
+    {
+      "claim_id": "dda188c7-260e-4b0c-80c4-485bfd950179",
+      "result_id": "7ce57d5d-434f-4ae9-bcad-b48036809aa5"
+    },
+    {
+      "claim_id": "e2d57114-242f-408c-9ffb-964ed6c2c1ef",
+      "result_id": "b8580fb2-79eb-4505-a22b-8a7af8429949"
+    },
+    {
+      "claim_id": "2fc60c3b-cb39-4245-a949-62f75a7ff473",
+      "result_id": "b8580fb2-79eb-4505-a22b-8a7af8429949"
+    },
+    {
+      "claim_id": "e2b53346-cee7-4359-90cc-fe9c85bc53c8",
+      "result_id": "b8580fb2-79eb-4505-a22b-8a7af8429949"
+    },
+    {
+      "claim_id": "357f3b21-d936-40b3-9543-ee42bb24341a",
+      "result_id": "b8580fb2-79eb-4505-a22b-8a7af8429949"
+    },
+    {
+      "claim_id": "f768f3e9-2f8c-41e5-93e1-3a287aa1e753",
+      "result_id": "b8580fb2-79eb-4505-a22b-8a7af8429949"
+    },
+    {
+      "claim_id": "5c42fb29-1864-49cd-8ede-ee09e1fc9a92",
+      "result_id": "b8580fb2-79eb-4505-a22b-8a7af8429949"
+    },
+    {
+      "claim_id": "a40454cc-066c-490f-8753-b87b479e75f4",
+      "result_id": "b8580fb2-79eb-4505-a22b-8a7af8429949"
+    },
+    {
+      "claim_id": "414c60a6-f669-451e-928d-0ade982e3d31",
+      "result_id": "cf75098f-0f68-435f-91d4-982e1ad5902b"
+    },
+    {
+      "claim_id": "8da55f2d-4c94-400e-bd4a-f2de4e7a7dd6",
+      "result_id": "cf75098f-0f68-435f-91d4-982e1ad5902b"
+    },
+    {
+      "claim_id": "c4425b28-126c-47ca-8709-2287f0233cc4",
+      "result_id": "cf75098f-0f68-435f-91d4-982e1ad5902b"
+    },
+    {
+      "claim_id": "f56ce28c-0c3a-49d0-a9cd-d234469ba439",
+      "result_id": "cf75098f-0f68-435f-91d4-982e1ad5902b"
+    },
+    {
+      "claim_id": "0d69e7e7-9f25-4c69-a8a1-a377261d410f",
+      "result_id": "cf75098f-0f68-435f-91d4-982e1ad5902b"
+    },
+    {
+      "claim_id": "08b3d972-a8fe-44db-b963-c0a29fa47fe9",
+      "result_id": "cf75098f-0f68-435f-91d4-982e1ad5902b"
+    },
+    {
+      "claim_id": "97b9ab3d-4ba8-4633-a1de-c020d7d27568",
+      "result_id": "cf75098f-0f68-435f-91d4-982e1ad5902b"
+    },
+    {
+      "claim_id": "c9cb931a-b3a2-4693-bf83-5d217fd3ad2f",
+      "result_id": "cf75098f-0f68-435f-91d4-982e1ad5902b"
+    },
+    {
+      "claim_id": "1b424011-69bb-412c-bb54-087911758b3f",
+      "result_id": "79830217-c07b-4ad4-a872-764a07b74b8e"
+    },
+    {
+      "claim_id": "82b2464e-b339-44c2-b859-1ae1a58fb900",
+      "result_id": "79830217-c07b-4ad4-a872-764a07b74b8e"
+    },
+    {
+      "claim_id": "c8498fc5-99f9-49c1-ba95-368e5d64b64b",
+      "result_id": "79830217-c07b-4ad4-a872-764a07b74b8e"
+    },
+    {
+      "claim_id": "d2dc37da-6759-4bde-abd2-e850ce3f08cb",
+      "result_id": "79830217-c07b-4ad4-a872-764a07b74b8e"
+    },
+    {
+      "claim_id": "dcbe02f9-8a87-4ac9-a425-8128c5080881",
+      "result_id": "79830217-c07b-4ad4-a872-764a07b74b8e"
+    },
+    {
+      "claim_id": "18cb81f3-0ab6-4ac0-af42-8347c0e8a3d1",
+      "result_id": "79830217-c07b-4ad4-a872-764a07b74b8e"
+    },
+    {
+      "claim_id": "37c0b6f9-feff-48bd-a519-64d33280b652",
+      "result_id": "79830217-c07b-4ad4-a872-764a07b74b8e"
+    },
+    {
+      "claim_id": "08a6f1d3-6927-4843-9edf-631227a9f622",
+      "result_id": "79830217-c07b-4ad4-a872-764a07b74b8e"
+    },
+    {
+      "claim_id": "ecb75ffe-a3f5-44a0-b7b7-eba7671396ee",
+      "result_id": "9b2cf865-0b4a-4185-a35d-6120e25dffff"
+    },
+    {
+      "claim_id": "d8daaf21-f0ce-4bdc-83e2-21d3d6be06f8",
+      "result_id": "9b2cf865-0b4a-4185-a35d-6120e25dffff"
+    },
+    {
+      "claim_id": "85f2f46f-1a42-4d9a-9f46-4398423ade27",
+      "result_id": "9b2cf865-0b4a-4185-a35d-6120e25dffff"
+    },
+    {
+      "claim_id": "74ef66a2-c145-4891-9cb6-80867407dd7e",
+      "result_id": "9b2cf865-0b4a-4185-a35d-6120e25dffff"
+    },
+    {
+      "claim_id": "3b647110-b910-4847-8d94-7743a7516105",
+      "result_id": "cdba558e-742f-45c5-97f8-f6a00df861fe"
+    },
+    {
+      "claim_id": "21a1c9b7-2222-4ad9-9e95-9ea9aa6286af",
+      "result_id": "cdba558e-742f-45c5-97f8-f6a00df861fe"
+    },
+    {
+      "claim_id": "d9899092-2347-4cdb-a2bd-9f2e817753d4",
+      "result_id": "cdba558e-742f-45c5-97f8-f6a00df861fe"
+    },
+    {
+      "claim_id": "5cae8356-e25e-4260-9e56-c994f4c5dfd9",
+      "result_id": "7783630e-0b87-4a45-b9b4-ea35b6a256d6"
+    },
+    {
+      "claim_id": "39e68385-463a-4422-9b89-f84a59fc1dcf",
+      "result_id": "7783630e-0b87-4a45-b9b4-ea35b6a256d6"
+    },
+    {
+      "claim_id": "917eda0e-cd4a-41be-a8a2-0ccc8ac2927f",
+      "result_id": "7783630e-0b87-4a45-b9b4-ea35b6a256d6"
+    },
+    {
+      "claim_id": "28e6f1bd-c1e8-4974-991e-903c95f44d3c",
+      "result_id": "7783630e-0b87-4a45-b9b4-ea35b6a256d6"
+    },
+    {
+      "claim_id": "006bf179-3d54-4033-8182-198bcccfa856",
+      "result_id": "7783630e-0b87-4a45-b9b4-ea35b6a256d6"
+    },
+    {
+      "claim_id": "78491194-9cab-47e7-afd1-2dee8809422e",
+      "result_id": "7783630e-0b87-4a45-b9b4-ea35b6a256d6"
+    },
+    {
+      "claim_id": "bb4b9636-ad69-4688-8d1a-6dea23000ef2",
+      "result_id": "7783630e-0b87-4a45-b9b4-ea35b6a256d6"
+    },
+    {
+      "claim_id": "08d93a9d-fd52-4b1d-9450-d9ff8c1d415f",
+      "result_id": "7783630e-0b87-4a45-b9b4-ea35b6a256d6"
+    },
+    {
+      "claim_id": "9e64b157-877e-46de-addf-e84525f01143",
+      "result_id": "2b0264ac-1efe-4021-85e7-8ce774a1f7c2"
+    },
+    {
+      "claim_id": "07c7be62-8567-4d43-9fc7-3742ac93d615",
+      "result_id": "2b0264ac-1efe-4021-85e7-8ce774a1f7c2"
+    },
+    {
+      "claim_id": "5321d94f-6959-4ee3-8b39-7cd5ac9544b3",
+      "result_id": "2b0264ac-1efe-4021-85e7-8ce774a1f7c2"
+    },
+    {
+      "claim_id": "d7f98fc5-5d81-4404-9e04-0a2ccbc435fb",
+      "result_id": "2b0264ac-1efe-4021-85e7-8ce774a1f7c2"
+    },
+    {
+      "claim_id": "a06aede6-dd55-4013-a0d8-2d6d19054b97",
+      "result_id": "2b0264ac-1efe-4021-85e7-8ce774a1f7c2"
+    }
+  ],
+  "comparisons": []
+}

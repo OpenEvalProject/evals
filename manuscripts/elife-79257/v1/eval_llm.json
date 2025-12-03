@@ -1,0 +1,197 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Morphogenesis requires accurate positional inference by cells, which must contend with inherent stochasticity in morphogen production, transport, sensing, and signalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 establish the fundamental biological context and challenge addressed by the manuscript. These are well-established principles in developmental biology supported by extensive prior literature, providing the motivation for the theoretical framework developed in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Cells utilize multiple tiers of processing (compartmentalisation) and parallel branches (multiple receptor types) with feedback control to achieve accurate and robust morphogenetic decoding. Deploying both specific and nonspecific receptors simultaneously provides a strategy to buffer morphogen level variations and achieve robustness to extrinsic noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C11, C12, and C13 represent the central theoretical predictions of the manuscript. These are supported by extensive mathematical modeling, optimization analyses across multiple channel architectures, and demonstration that branched architectures with inter-branch feedback dramatically reduce inference errors (Figures 6-8). The theoretical framework is internally consistent and the conclusions follow logically from the model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "In a minimal one-tier one-branch channel architecture without feedback, inference error is optimized when receptor concentrations increase with mean input. Adding feedback to this architecture only partially reduces inference errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 are supported by optimization analysis and data shown in Figure 6 and Appendix 5. The results demonstrate that the minimal architecture has fundamental limitations in reducing inference errors, motivating the need for more complex architectures. The analysis is mathematically sound and the conclusions are appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "A one-tier two-branch channel with inter-branch feedback produces input-output relations with sharp rise and saturation, dramatically reducing inference errors to one cell's width precision. The optimized architecture shows opposing receptor profiles: non-signalling receptors decrease away from source (reading input) while signalling receptors increase (buffering noise).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are well-supported by theoretical analysis and data in Figure 7. The opposing receptor profiles emerge naturally from optimization and represent a key mechanistic insight. The dramatic reduction in inference errors is quantitatively demonstrated. However, the interpretation of functional roles (reading vs. buffering) is somewhat inferential, though logically consistent with the model behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Tiered architecture with compartmentalisation adds robustness to intrinsic noise. While adding tiers beyond two provides only marginal improvement for extrinsic noise, additional tiers significantly reduce inference errors in the presence of intrinsic noise through mutual damping of fluctuations via inter-branch feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C23, C24, and C25 are supported by data in Figures 8 and 9, including stochastic simulations using chemical master equations. The distinction between extrinsic and intrinsic noise effects is clearly demonstrated. The mechanistic explanation for damping of fluctuations is provided in the text and Appendix 9, though the full mathematical details of the stochastic analysis could be more explicit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Among the three architectural elements (branches, tiers, feedback), branched architecture with inter-branch feedback and spatially varying receptor concentrations most significantly reduces inference errors. Optimal receptor profiles require signalling receptors to decrease and non-signalling receptors to increase with mean morphogen input. Without feedback or with uniform receptor profiles, performance is substantially diminished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 synthesize key findings from the optimization studies, supported by data in Figures 6-8 and Appendices 10-11. The comparative analysis across architectures is systematic and the conclusions about the relative importance of different elements are well-justified. The requirement for spatially varying receptor profiles is demonstrated through multiple control analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Signalling receptors are under tight cellular control while non-signalling receptors can be under sloppy control. This sloppiness would allow non-signalling receptors to participate promiscuously in multiple signalling networks, as observed with HSPGs (Dally and Dlp) in Wg and Dpp signalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 connect theoretical predictions about control requirements to biological observations. The stiff/sloppy distinction is supported by curvature analysis (Appendix 13) and Fisher information metric analysis. The connection to HSPG promiscuity is supported by citations to experimental literature. However, the direct experimental validation of the predicted control differences is not provided in this manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The geometry of the inference error landscape shows that steepest variation comes from feedback parameters while other parameters produce marginal changes. The low inference error landscape resembles a ravine with shallow sloppy directions and steep stiff directions, predominantly along feedback parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 are supported by Fisher information metric analysis (Figure 10b) and Hessian eigenspectrum analysis (Figure 11b-c). The geometric characterization provides insight into parameter sensitivity and robustness. The analysis is mathematically rigorous and the visualizations clearly support the conclusions about dimensional reduction in the parameter space.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The geometry of the inference landscape in high-dimensional parameter space provides a measure for robustness and delineates stiff and sloppy directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by the comprehensive parameter space analysis using Fisher information metric and Hessian analysis (Figures 10-11). The geometric approach successfully identifies which parameters require tight control versus those that can vary more freely, providing practical insights for biological regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The Wg signalling system in Drosophila wing imaginal disc maps to a two-tier two-branch channel architecture. Wg forms a gradient from dorso-ventral boundary cells, binds to signalling receptor DFz2 and non-signalling HSPGs (Dally/Dlp), enters via distinct endocytic pathways (CME and CLIC/GEEC), and the vesicles merge in common early endosomes where only DFz2-Wg complexes generate downstream signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 establish the biological correspondence between the theoretical model and the experimental system. All claims are supported by citations to prior experimental work (Hemalatha et al., 2016 and others). The mapping between model components and biological entities is clearly articulated and well-justified based on established phenomenology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C45",
+      "C47"
+    ],
+    "result": "Experimental measurements in Wg signalling show that the optimized two-tier two-branch channel has small coefficients of variation with slight increase with position. Removing the non-signalling branch (by inhibiting CG pathway with Garz-DN) significantly increases output variation, consistent with theoretical predictions. The perturbation does not affect CME function or surface receptor levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, C45, and C47 present the experimental validation of theoretical predictions. The qualitative agreement between theory (Figure 14e) and experiment (Figure 14f) is demonstrated. However, the authors appropriately note caution in interpretation due to multiple intersecting stochastic processes. The control showing Garz-DN specificity (C47) is important but relies on prior publications rather than new data. The experimental validation is encouraging but limited in scope.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Multiple endocytic pathways participate in decoding the morphogen gradient in Drosophila wing imaginal disc Wingless signalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by the experimental system description and citations to prior work (Hemalatha et al., 2016). This provides the biological motivation for the multi-branch architecture in the theoretical model and is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Morphogen gradients are inherently noisy across multiple signalling contexts, yet achieve remarkable precision in boundary positioning (approximately one cell's width) as exemplified by Bicoid-hunchback patterning in Drosophila embryo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C8 are supported by multiple citations to experimental studies. These establish the biological phenomenon that motivates the theoretical investigation: how cells achieve precise patterning despite noisy inputs. This is well-established prior knowledge that frames the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Multiple endocytic pathways at the plasma membrane can control the extent of signalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by citations to prior literature. This represents established biological knowledge that motivates considering multiple branches (endocytic pathways) in the theoretical framework.",
+    "result_type": "MINOR"
+  }
+]

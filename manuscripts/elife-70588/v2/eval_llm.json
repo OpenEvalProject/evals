@@ -1,0 +1,454 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The authors performed a comprehensive proteomic analysis of sea star oocytes across the oocyte-to-embryo transition, identifying 8026 total proteins with high reproducibility. The proteome is remarkably stable, with 99% of proteins showing less than 2-fold change and 74.8% showing less than 1.2-fold change from prophase I to first cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by mass spectrometry data with biological triplicates and high synchrony (>90%) confirmed by immunofluorescence. The quantitative measurements are clearly presented in Figure 1 with appropriate statistical analysis. The stability of the proteome is a major finding that is robustly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Despite overall proteome stability, specific proteins show dynamic regulation during meiosis. Cyclin B levels are high in prophase I through MI but decline sharply in MII before partial restoration at first cleavage, consistent with APC/C-mediated destruction. PIM-1 kinase is absent in prophase I but translated de novo following meiotic resumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by proteomic data (Figure 1F) showing temporal protein abundance changes. The cyclin B dynamics are consistent with established APC/C biology (C7 citations). PIM-1 identification as a de novo translated protein is clearly demonstrated. These findings identify key regulated proteins within an otherwise stable proteome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Translation inhibition with emetine allows MI to proceed but prevents progression to MII, with oocytes arresting in a pronuclear-like state. Proteomic analysis revealed only 108 of 7610 proteins significantly changed with emetine treatment, enriched for cytoskeletal and actomyosin-related proteins, indicating new protein synthesis is required for progression past MI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are supported by immunofluorescence (Figure 2A,B) and proteomic data (Figure 2\u2014figure supplement 1). The experimental design appropriately uses emetine as a translation inhibitor with proper controls. The finding that most proteins are insensitive to translation inhibition but progression requires new synthesis is well-demonstrated. Statistical analysis of protein changes is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Morpholino-mediated knockdown experiments reveal differential requirements for cyclin synthesis. Blocking cyclin A synthesis prevents first cleavage but not meiotic divisions. Blocking cyclin B synthesis prevents MII but allows first cleavage. Combined knockdown of both cyclins phenocopies emetine treatment, arresting after MI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by morpholino experiments with immunofluorescence (Figure 2C,D) and western blot validation (Figure 2\u2014figure supplement 2). The differential requirements for cyclin A vs B are clearly demonstrated with appropriate controls. However, the claim that cyclin B is 'dispensable' for first cleavage (C17) should be interpreted cautiously as the oocytes may have residual cyclin B from before morpholino injection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Phosphoproteomic analysis identified 25,228 phosphopeptides across three time courses, with 11,430 identified in all three replicates. Phosphorylation was detected on 79.3% serine, 19.6% threonine, and 1.1% tyrosine residues, consistent with prior work in other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by comprehensive phosphoproteomic data with appropriate technical replicates and localization probability thresholds (\u22650.9). The S:T:Y ratios are consistent with published data from other systems (C23), providing validation. The scale and quality of the phosphoproteomic dataset is appropriate for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Prophase I-arrested oocytes display the lowest overall phosphorylation state with limited sites at maximum phosphorylation. More than half of phosphorylation sites are maximally phosphorylated in MI, with substantial reduction in MII. These patterns suggest critical roles for phosphoregulation in specializing meiotic divisions and maintaining prophase I arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are supported by hierarchical clustering and quantitative analysis of phosphoproteomic data (Figure 3B-D). The stage-specific phosphorylation patterns are clearly demonstrated. However, C28-C29 are inferential claims about functional roles that, while reasonable, are not directly tested experimentally in this section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Inhibitory phosphorylation sites on Cdk1/2 (Y21/Y15) are phosphorylated in prophase I and first cleavage but not during meiosis, suggesting Cdk is inactive in prophase I but active throughout meiotic divisions. Activating phosphorylation on MAP kinase ERK (Y204) is undetectable in prophase I, high in MI and MII, and low in first cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by both phosphoproteomics and western blot validation (Figure 3E-H). The use of phospho-specific antibodies provides orthogonal validation of the MS data. The inference about Cdk activity (C31) is reasonable based on the phosphorylation patterns but is indirect rather than direct measurement of kinase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Phosphoproteomic analysis supports SGK as the major trigger kinase for meiotic resumption. SGK activation segment phosphorylation increases following hormonal stimulation, along with phosphorylation of SGK sites on Cdc25 (S188) and Myt1 (S75). Motif analysis shows sites increasing >3-fold are enriched for SGK-like consensus motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are supported by phosphoproteomic data (Figure 3\u2014figure supplement 2A-D) and motif analysis. The evidence converges with prior work (Hiraoka et al., 2019) to support SGK as the trigger kinase. However, the conclusion is based on correlative phosphorylation patterns and motif enrichment rather than direct functional testing of SGK in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Phosphoproteomic analysis reveals regulation of PP1 activity during meiosis. PP1 T316 is hypo-phosphorylated in prophase I (suggesting high activity), while RVxF motif phosphorylation is low in prophase I and increases during meiosis, suggesting maximal PP1 binding to regulatory subunits in prophase I to promote substrate dephosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by phosphoproteomic data (Figure 3\u2014figure supplement 2F,G). The interpretation of phosphorylation states as indicators of PP1 activity (C41, C43) is based on established knowledge of PP1 regulation. However, these are indirect inferences about enzyme activity rather than direct measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "NIPP1 phosphorylation adjacent to its RVxF motif is low in prophase I but increases following meiotic resumption. Phospho-inhibitory mutations (S199A or S197A/S199A) increase NIPP1 binding to PP1 >5-fold in 293T cells, suggesting low NIPP1 phosphorylation in prophase I increases PP1-NIPP1 association, modulating phosphatase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by phosphoproteomic data (Figure 3\u2014figure supplement 4A-C) and immunoprecipitation experiments (Figure 3\u2014figure supplement 4D). However, the binding experiments were performed in human 293T cells rather than sea star oocytes, which may not fully recapitulate the endogenous regulation. The functional interpretation (C46) is reasonable but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Sea star ARPP19 phosphorylated by Greatwall kinase inhibits PP2A-B55 activity, as demonstrated by increased Cdc25 phosphorylation in human cell lysates. ARPP19 S106 phosphorylation is low in prophase I, high in GVBD and MI, and decreases in MII, serving as a proxy for PP2A-B55 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by in vitro phosphatase assays (Figure 3\u2014figure supplement 5B) and phosphoproteomic data (Figure 3\u2014figure supplement 5C). The functional validation using thiophosphorylated ARPP19 in human lysates provides evidence for conserved function. The temporal phosphorylation pattern inversely correlates with expected PP2A-B55 activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Calyculin A (PP1/PP2A inhibitor) induces spontaneous GVBD in 100% of oocytes, while tautomycetin (PP1-specific inhibitor) does not induce GVBD but causes chromosome segregation errors after hormonal stimulation. This indicates PP2A plays the critical role in maintaining prophase I arrest, while PP1 is required for high-fidelity chromosome segregation during meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by pharmacological experiments with appropriate controls (Figure 3\u2014figure supplement 6). The differential effects of calyculin A vs tautomycetin provide strong evidence for distinct roles of PP2A vs PP1. In vitro validation of tautomycetin specificity (C52) strengthens the conclusions. The functional interpretations (C55-C56) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Calyculin A treatment causes broad upregulation of phosphorylation (85% of sites highly phosphorylated after 70 min), but sites normally maximally phosphorylated in prophase I decrease. Despite increased global phosphorylation similar to meiotic entry, calyculin A-treated oocytes fail to progress past GVBD-like state, indicating PP2A inhibition alone is insufficient to recapitulate physiological meiotic resumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by phosphoproteomic analysis (Figure 3\u2014figure supplement 7A,B) and immunofluorescence (Figure 3\u2014figure supplement 7C). The finding that phosphatase inhibition increases global phosphorylation but doesn't fully recapitulate meiotic entry is important and well-demonstrated. This reveals complexity beyond simple phosphatase inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "MI displays the largest number of maximally phosphorylated sites, including many TP/SP motifs indicative of CDK/MAPK phosphorylation. These sites increase with calyculin A treatment, indicating they are PP1/PP2A substrates. Hierarchical clustering reveals three distinct clusters with different dephosphorylation kinetics after MI, potentially providing a mechanism to specify meiotic divisions and underlie the MI/MII transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 are supported by comprehensive phosphoproteomic analysis with hierarchical clustering (Figure 4A,B). The identification of distinct temporal clusters is data-driven and well-presented. However, C68 is a speculative inference about mechanism that is not directly tested. The calyculin A data (C63) provides evidence these are phosphatase substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "TP phosphorylation sites are preferentially dephosphorylated at the MI/MII transition compared to SP sites. TP phosphorylation peaks in MI and declines substantially in MII, while SP phosphorylation decreases less. This differential behavior is confirmed by western blots with pTP and pSP antibodies and is observed despite transient Cdk1 inactivation, with MAPK remaining active. A phosphatase activity is required to preferentially oppose TP sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C79 represent a major finding supported by both MS data (Figure 4D,F) and orthogonal western blot validation (Figure 4G, supplements). The temporal resolution experiments (every 10 min) strengthen the conclusions. The differential TP vs SP behavior is statistically significant and reproducible. C79 is a logical inference from the data. This is a novel and important observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Beyond T vs S identity, surrounding amino acid residues correlate with phosphorylation behavior. Sites preferentially dephosphorylated after MI (cluster 3) are enriched for basic amino acids at +2 position and depleted for acidic residues. TP sites with basic/nonpolar amino acids at +2 are more dephosphorylated than those with acidic residues. These sequence preferences match PP2A-B55 substrate specificity, suggesting PP2A-B55 drives differential TP vs SP behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by motif analysis (Figure 4C,E) and comparison to published PP2A-B55 substrate preferences. The sequence specificity analysis is rigorous and the match to known PP2A-B55 preferences is compelling. However, C83 is a speculative inference that requires direct functional testing (addressed in later experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Following MI, cyclin B levels decrease along with activating phosphorylation on Greatwall (T204) and ARPP19 (S106), which would release PP2A-B55 to dephosphorylate substrates at the MI/MII transition. This suggests PP2A-B55 is reactivated at the MI/MII transition through a conserved pathway involving ARPP19, Greatwall, and CDK/cyclin B to preferentially dephosphorylate TP/basic consensus motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 integrate multiple lines of evidence from the phosphoproteomic dataset to propose a regulatory model. The temporal correlation of cyclin B, Greatwall, and ARPP19 phosphorylation with PP2A-B55 substrate dephosphorylation is well-demonstrated (Figure 5B). However, this is a correlative model that requires direct functional validation (provided in subsequent experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Reanalysis of published Xenopus phosphoproteomic data reveals that sites decreasing between MI and MII are enriched for TP-basic sequences and depleted for SP-acidic sequences, similar to sea stars. This cross-species comparison suggests differential SP/TP phosphorylation may be a conserved regulatory mechanism for meiosis in animals, with PP2A-B55 as an important conductor of the MI/MII transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by reanalysis of published Xenopus data (Figure 5\u2014figure supplement 1C). The cross-species conservation strengthens the biological significance of the findings. However, the Xenopus samples may not perfectly correspond to MI/MII stages (acknowledged by authors), and the inference about conservation (C88-C89) is based on limited species comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "B55 substrate specificity mutants have dominant effects on meiosis. The DE/A mutant induces spontaneous GVBD in prophase I, supporting PP2A's role in maintaining arrest. After hormonal stimulation, DE/A mutants complete MI but fail in MII with abnormal spindles and reduced polar body II extrusion. The DE/K charge-swap mutant shows more severe phenotype with MI arrest. These results indicate alterations to PP2A-B55 substrate specificity allow MI but prevent MI/MII transition, supporting PP2A-B55 as essential regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C98 are supported by B55 mutant experiments with clear phenotypic analysis (Figure 5D-F, supplements). The mutant design is based on structural knowledge and targets substrate recognition. The differential phenotypes of DE/A vs DE/K mutants provide insight into substrate specificity requirements. This provides direct functional validation of the PP2A-B55 model. The dominant-negative approach is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Conserved PP2A-B55 substrate sites on PRC1 (T411), TPX2 (T508), and INCENP (T61) display stark phosphorylation decrease following MI. In contrast, SP sites on Prc1 (S571) and Tpx2 (S625) remain relatively constant or are dephosphorylated to lesser degree, demonstrating differential regulation of TP vs SP sites on individual proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 are supported by phosphoproteomic data (Figure 5\u2014figure supplement 3) and sequence alignments showing conservation. The identification of differential TP vs SP behavior on the same proteins strengthens the biological significance. These examples provide specific substrates that exemplify the global pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "INCENP-GFP localizes to centromeres in metaphase I, translocates to central spindle in anaphase I, shows reduced centromere localization in MII, and localizes to nucleolar structures at meiotic exit. B55 DE/A mutant expression significantly reduces INCENP translocation to central spindle in anaphase I, indicating selective PP2A-B55 activity is required for proper INCENP localization at MI/MII transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 are supported by live imaging of INCENP-GFP (Figure 5\u2014figure supplement 3F) and B55 mutant experiments (Figure 6B,C). The quantification of midzone signal provides statistical support. This demonstrates functional consequence of PP2A-B55 substrate specificity on a specific substrate. The localization dynamics are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "INCENP T61 phosphorylation sharply decreases following MI while other proline-directed sites remain phosphorylated. Sequence alignment reveals conserved downstream basic patch at T61, supporting conserved PP2A-B55 dephosphorylation. In contrast, T506 remains stable, likely due to downstream acidic amino acids disfavoring PP2A-B55 association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by phosphoproteomic data (Figure 6A) and sequence analysis (Figure 5\u2014figure supplement 3C). The differential behavior of T61 vs T506 on the same protein provides strong evidence for sequence-dependent PP2A-B55 specificity. The correlation with basic/acidic residues matches the global pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "INCENP T61S mutant fails to translocate to central spindle in anaphase I and remains at high levels at centromeres, suggesting T61 remains phosphorylated when substituted with serine (lower affinity PP2A-B55 substrate). This demonstrates that serine vs threonine usage, modulated by adjacent charged amino acids, can encode differential response to common kinases/phosphatases, enabling rewiring at cell cycle transitions and temporal coordination of protein behaviors with meiotic progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 are supported by INCENP T61S mutant experiments (Figure 6D,E) with quantification and consistency with prior work in mitosis. This provides direct functional evidence that T vs S identity matters for PP2A-B55 dephosphorylation and has biological consequences. C113-C114 are broader conceptual claims that are well-supported by the cumulative evidence but represent interpretive models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Summary of major findings: Overall protein levels are stable but selected cyclins require new synthesis. Proteome stability is consistent with Xenopus studies, indicating post-translational modification is the primary control mechanism. Prophase I arrest is characterized by low phosphorylation requiring phosphatase activity. Distinct TP vs SP phosphorylation behaviors occur at MI/MII transition with preferential TP dephosphorylation. Selective TP vs SP dephosphorylation by PP2A-B55 is essential for meiotic progression and represents a novel regulatory paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 are summary statements integrating the major findings. These are well-supported by the cumulative evidence from proteomics, phosphoproteomics, and functional experiments. C120 represents a conceptual advance that is justified by the data. These summary claims accurately reflect the supported results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Discussion of broader context: Preferential TP dephosphorylation has been reported in mitotic exit, but this work extends it to meiosis where it provides mechanism to specify two meiotic divisions rather than just temporal ordering. Threonine and serine phosphorylation is not interchangeable but represents important regulatory mechanism. In mitotic cells, threonine dephosphorylation is important for timely exit (e.g., Cdc20). Differential dephosphorylation provides distinct behaviors for meiotic divisions, not just kinetic delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 place the findings in broader context with appropriate citations. C122 accurately represents prior work. C123-C127 are interpretive claims about the significance and novelty of the findings that are justified by the data. The comparison to mitotic exit and extension to meiotic specification is appropriate. C124 is supported by both current data and cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Discussion of mechanistic implications: INCENP T61S substitution prevents central spindle translocation in anaphase I. The phosphorylation code is modulated by adjacent amino acid charge, with positive residues favoring PP2A-B55 association. This represents a novel paradigm for oocyte regulation during rapid meiotic transitions. PP2A-B55 is a critical conductor of oocyte cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 are supported by the INCENP experiments and broader dataset. C128 is directly demonstrated. C129 is supported by motif analysis and functional data. C130-C131 are interpretive claims about significance that are justified by the cumulative evidence. These represent appropriate conclusions from the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Discussion of evolutionary context: ARPP19/ENSA is required for prophase I exit across diverse species by inhibiting PP2A-B55. While downstream phosphorylation steps are conserved, upstream triggers have diverged (different hormones/receptors in mammals, Xenopus, echinoderms). Despite divergent upstream steps, they converge on Cdc25 activation and Myt1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C139 are supported by appropriate citations to prior work. These claims accurately represent the literature on meiotic regulation across species. This contextualizes the current findings within evolutionary conservation and divergence. The claims are appropriately referenced and represent accurate summaries of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Discussion of PP2A-B55 role and evolutionary implications: Phosphatase activity is critical for both maintaining prophase I arrest and driving MI/MII transition. Mouse Mastl (Greatwall ortholog) is essential past MI, supporting conserved PP2A-B55 role. CDK, MAPK, and PP2A-B55 provide pacemaker for meiotic progression. Encoding PP2A-B55 affinity into substrates achieves different temporal profiles. Rapid meiotic divisions (30 min apart) create selective pressure for prompt dephosphorylation of some sites while others remain phosphorylated. Evolution has fine-tuned substrate dephosphorylation through amino acid sequence selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C146 integrate the findings with evolutionary and mechanistic implications. C140-C141 are supported by current data and cited work. C142-C143 are reasonable models based on the data. C144-C146 are speculative evolutionary interpretations that are plausible but not directly tested. These represent appropriate discussion of implications while acknowledging speculative nature.",
+    "result_type": "MINOR"
+  }
+]

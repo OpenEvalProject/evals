@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C49",
+      "C50",
+      "C51",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study enrolled 302 children with acute diarrhea across Bangladesh and Mali, with 199 (66%) having assigned etiologies above the AFe threshold. Viral-only pathogens were detected in 63% of Bangladesh patients and 22% of Mali patients, with rotavirus being the most common pathogen (60% in Bangladesh, 16% in Mali). A substantial proportion of patients in Mali (54%) had no etiology assigned compared to Bangladesh (13.3%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6, C49-C51, C57-C59 provide consistent enrollment data, etiology assignment rates, and pathogen detection frequencies directly from study results. The data are internally consistent and clearly reported with specific percentages and sample sizes from TAC testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C77"
+    ],
+    "result": "The primary model (present patient + viral seasonality) achieved an AUC of 0.754 (0.665-0.843) for both sites combined, with calibration-in-the-large \u03b1 = -0.393 and calibration slope \u03b2 = 1.287. Site-specific performance varied: the present patient + recent patient model performed best in Mali (AUC 0.783), while the present patient + viral seasonality model performed best in Bangladesh (AUC 0.710).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11, C60-C64, C77 report model performance metrics with specific AUC values and confidence intervals. The data are consistent across claims and supported by Tables 4-5. The calibration metrics indicate the model tends to overestimate viral probability (negative \u03b1) with moderately extreme predictions (\u03b2 > 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C124",
+      "C125",
+      "C126",
+      "C144",
+      "C145"
+    ],
+    "result": "A methodological issue was identified during data collection in Bangladesh where the vomiting question was initially phrased ambiguously, leading patients to report regurgitation as vomiting. When data from this period were included, all models performed substantially worse. The question was revised mid-study, and primary analyses excluded the problematic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C124-C126, C144-C145 document a clear methodological problem and its resolution. The substantial decrease in model performance when including the problematic data (C65) validates that the question phrasing genuinely affected data quality. The transparent reporting of this issue and the decision to exclude affected data from primary analysis is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C156"
+    ],
+    "result": "Inter-rater reliability between two study nurses was excellent for predictor variables and App-calculated viral etiology risk. A technical issue with the 'breastfeeding' field not syncing was identified in Bangladesh and corrected before the Mali phase, with the updated software version (v2.2.5) showing good agreement between App predictions and post-hoc calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C156 report reliability assessments and technical validation. The identification and correction of the syncing issue demonstrates appropriate quality control. The excellent inter-rater reliability supports data quality, though specific reliability statistics are referenced in supplementary files rather than provided in the main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors conclude the App accurately identified children with high likelihood of viral-only diarrhea etiology, with performance comparable to the Centor score for streptococcal pharyngitis (AUC 0.72). They argue this level of performance is clinically useful since WHO guidelines recommend antibiotics for less than 10% of diarrhea cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C12 states the App 'accurately identified' children with viral etiology, but this is a subjective interpretation. The AUC of 0.754 (C7) indicates moderate discrimination, and the poor calibration (\u03b1 = -0.393, \u03b2 = 1.287) suggests systematic overestimation. While C78-C79 provide context comparing to other clinical tools, whether this performance constitutes 'accurate' identification depends on the clinical threshold and consequences of misclassification, which are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C90",
+      "C100",
+      "C101",
+      "C111",
+      "C112"
+    ],
+    "result": "The App implements a modular Bayesian approach using a 'present patient' model with five clinical variables (age, blood in stool, vomiting, breastfeeding, MUAC) combined with external data sources including viral seasonality curves. The post-test odds formulation allows flexible inclusion/exclusion of components based on data availability. Climate and recent patient data were excluded from the deployed App because they did not improve AUC in GEMS sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C90, C100-C101, C111-C112 consistently describe the model architecture and rationale for component selection. The modular approach is well-justified for LMIC settings with variable data availability. The exclusion of climate and recent patient data from the deployed App (C112) is supported by prior internal validation results, though this limits the App's potential performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C39",
+      "C40"
+    ],
+    "result": "Nurses successfully used the smartphone App after brief training in high-volume clinical settings, entering all required data and obtaining calculated outputs within several minutes per patient. The App performed all calculations on-device within 1 second, allowing use without internet connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 report direct observations of App usability, though formal assessment was not conducted. Claims C39-C40 describe technical performance specifications. The observations support feasibility, but the lack of formal usability metrics (time measurements, error rates, user satisfaction) limits the strength of conclusions about clinical utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C92",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Study sites were selected for proximity to GEMS training sites without using identical locations. Rotavirus vaccination status differed between sites: not yet introduced in Bangladesh, but introduced in Mali in 2014 with 63% coverage by 2019. Despite lower rotavirus rates in Mali due to vaccination, models performed better there than in Bangladesh, suggesting clinical features of viral diarrhea may be pathogen-independent and seasonal patterns remain relevant even with reduced rotavirus prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C85, C92 accurately describe site selection and vaccination status. However, claims C160-C162 present an interpretation that models performed 'better' in Mali and infer this means viral diarrhea features are pathogen-independent. This interpretation is complicated by: (1) different enrollment strategies (random in Bangladesh vs. consecutive in Mali), (2) the vomiting question issue in Bangladesh, (3) different seasonal timing, and (4) much lower etiology assignment rates in Mali (54% unassigned vs. 13.3% in Bangladesh). The inference about pathogen-independence is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C163",
+      "C164",
+      "C165",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Approximately one-third of enrolled patients had no etiology assigned using AFe >0.5, with much higher rates in Mali (54%) than Bangladesh (13.3%). The authors attribute this to enrollment during rotavirus season in Bangladesh when rotavirus is easier to attribute. No norovirus infections were detected, potentially due to high rotavirus prevalence, seasonal patterns, short enrollment period, or the AFe threshold used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 report the limitation of unassigned etiologies and lack of norovirus detection. Claims C87, C163, C172-C175 provide plausible explanations supported by citation to Dey et al. 2020 and Satter et al. 2021. However, the high rate of unassigned etiologies in Mali (54%) substantially limits the generalizability of model performance estimates, as the true etiology distribution is unknown for over half the Mali cohort.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C166"
+    ],
+    "result": "The authors attribute the drop in AUC from internal validation (0.83) to external validation (0.754-0.783) to changes in diarrhea epidemiology over time, differences in dataset size (>20,000 GEMS patients vs. 300 validation patients), and enrollment during a rotavirus surge. They speculate that longer enrollment accounting for seasonal variability would have improved performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C168 provide plausible explanations for performance degradation, but these are post-hoc interpretations without supporting analysis. Claim C166 is explicitly speculative ('we believe'). The substantial performance drop could also reflect overfitting in the original GEMS models, differences in patient populations, or the methodological issues identified (vomiting question, different enrollment strategies). The speculation about improved performance with longer enrollment is untestable from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "The authors acknowledge there is no gold standard for the AFe threshold used to assign etiology. The threshold of 0.5 was set a priori based on expert consultation, but the effect of this cutoff has not been explored. A lower threshold might still indicate likely etiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C171 transparently acknowledge a fundamental limitation in the outcome definition. The choice of AFe >0.5 is arbitrary and could substantially affect both the prevalence of viral-only etiology and model performance. This is a critical limitation because the 'ground truth' against which the model is validated depends on this arbitrary threshold. Sensitivity analyses using different thresholds would strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C41",
+      "C42",
+      "C43",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study enrolled children 0-59 months with acute diarrhea (\u22653 loose stools/day for <7 days) at two sites: Dhaka Hospital (Bangladesh, November-December 2019) and CSREF/CSCOM facilities (Mali, January-February 2020). Enrollment strategies differed: random selection in Bangladesh (~8 patients/day) vs. consecutive sampling in Mali. The median age was 12 months with 61.8% male patients. High rates of prior antibiotic use were reported (66% Bangladesh, 13.1% Mali).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33, C41-C43, C49, C52-C56 provide consistent methodological details about study sites, enrollment procedures, and participant characteristics. The different enrollment strategies between sites (random vs. consecutive) could introduce selection bias but is transparently reported. The high prior antibiotic use in Bangladesh (66%) is notable and could affect both clinical presentation and pathogen detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C91",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Stool samples were collected in sterile containers, stored in ethanol at -20\u00b0C or -80\u00b0C, then processed using bead beating and QIAamp extraction. Samples were tested using TaqMan Array Cards with qPCR assays for 32 pathogens. Viral-only diarrhea was defined as \u22651 viral pathogen with AFe \u22650.5 and no bacterial/parasitic pathogens with AFe \u22650.5, using attribution models from Liu et al. 2016. Patients without attributable pathogens were excluded from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48, C91, C131-C137 describe standard laboratory procedures and outcome definitions. The methods are clearly described and appropriately referenced. Claim C137 notes that prior work showed similar viral prediction distributions for cases with and without attributable pathogens, partially justifying their exclusion, though this still limits the analysis to only 66% of enrolled patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C146",
+      "C147"
+    ],
+    "result": "For analysis, MUAC measurements from two nurses were averaged, bloody stool required agreement from both nurses, and age was rounded to match the software interface. Model calibration was assessed using calibration-in-the-large (target = 0) and calibration slope (target = 1). Inter-rater reliability was assessed using Cohen's kappa. TRIPOD guidelines for prediction model validation were followed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143, C146-C147 describe appropriate statistical methods and reporting standards. The requirement for agreement on bloody stool (C139) is conservative and reduces false positives. The calibration assessment methods (C141-C143) are standard. Following TRIPOD guidelines (C147) supports transparent reporting, though some details are in supplementary files.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Sample size was calculated based on the internally validated AUC of 0.83 from prior work. To ensure confidence intervals would not cross 0.75 (considered adequate accuracy for clinical prediction models), a margin of error of 0.08 was required. Assuming 30% viral-only etiology prevalence, 300 patients (150 per site) were needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 describe a reasonable sample size calculation based on prior internal validation results. However, the calculation assumed the external validation would achieve similar performance to internal validation (AUC 0.83), which proved optimistic (actual AUC 0.754). The assumption of 30% viral prevalence was also inaccurate (actual 42% overall, but 63% Bangladesh, 22% Mali), though this would affect power rather than validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The introduction establishes that diarrheal diseases cause approximately 1 billion episodes and 500,000 deaths annually in children under five, with the greatest burden in LMICs. WHO recommends against antibiotics except for specific presentations, as antibiotics have no benefit for viral causes. However, 50-80% of children with diarrhea in LMICs receive antibiotics, with approximately 12.6 inappropriate treatments for each appropriate treatment in the GEMS study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22, C68-C70 provide background context supported by appropriate citations. The statistics establish the public health significance and the problem of antibiotic overuse. All claims are properly attributed to published sources (James et al. 2018, Troeger et al. 2018, WHO 2005, Lewnard et al. 2020, etc.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The introduction establishes that CDSSs have been used successfully in high-income countries to improve diagnosis accuracy, reduce unnecessary tests, improve antibiotic stewardship, and manage chronic conditions. Mobile CDSSs have been used in LMICs for hypertension control and neonatal care. However, there remains limited data on CDSS use for infectious disease etiology determination in LMICs, with barriers including lack of epidemiologic data and limited diagnostic test availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C71-C76, C157-C159 provide appropriate background on CDSS applications with proper citations. The claims establish both the potential of CDSSs and the gap in LMIC infectious disease applications that this study addresses. All statements are supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C37",
+      "C99",
+      "C148"
+    ],
+    "result": "The prediction models were previously derived and internally validated using data from the GEMS study, which enrolled 22,568 children under 5 years (9,439 with moderate/severe diarrhea, 13,129 controls) at seven sites in Asia and Africa. The best-performing model using present patient + viral seasonality data achieved an internally validated AUC of 0.83.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C37, C99, C148 accurately describe the prior model development work, properly citing Brintz et al. 2021 and Kotloff et al. 2013. The GEMS study details are correctly reported. This establishes the foundation for the current external validation study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C38",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114"
+    ],
+    "result": "The App was configured in English (Bangladesh) and French (Mali), with software architecture derived from two prior studies. The design aimed to identify UI weaknesses using paper data entry as reference. The codebase (Python, Java, Android, TensorFlow Lite) was iterated once between study phases. Data were encrypted for HIPAA compliance. Models were not retrained after deployment to align with medical informatics standards that validated ML models should not be iterated without validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C104-C110, C113-C114 describe appropriate software development and validation practices. The decision not to retrain models (C113-C114) is justified by citing AMIA 2021 standards, ensuring the validation tests the originally developed models rather than adapted versions. The single iteration between study phases (C106) to address technical issues is reasonable for a proof-of-concept study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "A clinical trial led by this study team is currently underway to evaluate the impact of this tool on antibiotic prescribing behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 states ongoing work to evaluate clinical impact. This is appropriate as the current study only validates prediction accuracy, not whether the tool actually changes prescribing behavior or improves patient outcomes. The statement of ongoing work is factual and does not overstate the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C154",
+      "C155"
+    ],
+    "result": "The present patient + viral seasonality model had fewer false negatives while the present patient model had fewer false positives at various thresholds, though overall sensitivity and specificity were similar between the two models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155 describe trade-offs between models with reference to Figure 3. This is important for clinical decision-making as it shows the models have different error profiles. The similar overall sensitivity/specificity despite different false positive/negative patterns suggests the models may be useful for different clinical scenarios depending on whether minimizing unnecessary antibiotics (fewer false positives) or ensuring treatment of bacterial infections (fewer false negatives) is prioritized.",
+    "result_type": "MINOR"
+  }
+]

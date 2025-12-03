@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study generated comprehensive circRNA-enriched RNA-seq data from five mammalian species (opossum, mouse, rat, rhesus macaque, human) across three organs (liver, cerebellum, testis), identifying 1535-4491 circRNAs per species with higher numbers in cerebellum. The identified circRNAs were generally small, overlapped with protein-coding exons, were tissue-specific, and flanked by long introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C32-C34 describe the dataset generation and basic circRNA characteristics. The data are presented with specific numbers, supported by Figure 1A and supplementary files, and represent straightforward descriptive statistics from the experimental pipeline. The methodology is clearly described and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CircRNA hotspot analysis revealed that the number of hotspots and circRNAs per hotspot depends on CPM thresholds, with 16-27% of loci classified as hotspots at 0.1 CPM increasing to 32-45% at 0.01 CPM. Lowering thresholds substantially increased detection of additional low-expressed circRNA species rather than new loci, raising questions about whether many circRNAs reflect gene expression noise at hotspot loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C47 present a systematic analysis of how detection thresholds affect circRNA identification, supported by Figures 1B-E and supplementary data. The threshold-dependent effects are clearly demonstrated, and the interpretation about potential noise (C47) is appropriately framed as speculation rather than definitive conclusion. The Kansl1l example provides concrete validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Cross-species analysis identified 5428 circRNA loci, with 75.6% being species-specific and only 260 loci (4.8%) producing circRNAs in all five species. Despite using circRNA enrichment strategies and lenient computational thresholds, the number of potentially conserved orthologous circRNAs was surprisingly low, with additional species reducing shared loci counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 present the core conservation analysis supported by Figure 2A and supplementary figures. The quantitative data are clearly presented, and the conclusion about low conservation is well-supported by the systematic reduction in shared loci when additional species are included (Figure 2\u2014figure supplement 1B). The orthology definition used is appropriate and clearly justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "CircRNA exons showed higher phastCons scores than non-circRNA exons from the same genes, but 85-95% of this difference was explained by parental gene conservation itself. CircRNA exons were more frequently used in multi-organ isoforms and showed higher GC amplitudes at splice sites, suggesting enrichment for constitutive exons rather than circRNA-specific conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 present a critical reanalysis of apparent circRNA conservation, supported by Figure 2B-D. The quantitative decomposition showing 85-95% of conservation explained by parental genes is a key finding. The inference about constitutive exon enrichment (C58) is appropriately cautious and well-supported by the multi-tissue usage and GC amplitude data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C100"
+    ],
+    "result": "Many circRNAs 'shared' across species may not be homologous but emerged independently through convergent evolution, as circRNAs from orthologous genes frequently show partial exon overlap rather than identical backsplice sites across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C100 propose convergent evolution as an alternative to divergent evolution from common ancestors. This is supported by Figure 2E conceptual framework and Figure 2\u2014figure supplement 1 showing partial exon overlaps. The inference is logical given the low conservation numbers and exon overlap patterns, though it represents a model rather than direct proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "CircRNA parental genes showed distinct GC content patterns compared to non-parental genes, with 82-94% distributing to GC-low groups (L1 and L2) across all five species. The increased GC amplitudes at circRNA boundaries were mainly caused by decreased intronic GC content, and parental genes showed more pronounced self-complementarity than non-parental genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 describe key structural features of circRNA parental genes, supported by Figure 3A-B and supplementary data. The GC content analysis is systematic across species showing consistent patterns. The self-complementarity analysis using megaBLAST provides quantitative support. These findings establish the 'circRNA niche' concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "CircRNA parental genes in humans are biased towards early replicating genes, show higher steady-state expression levels, and have increased haploinsufficiency scores, indicating distinct functional properties associated with important cellular roles beyond just structural features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 integrate external datasets (Steinberg et al., 2015; Pai et al., 2012; Koren et al., 2012) to characterize functional properties of parental genes, supported by Figure 3\u2014figure supplement 1. The analysis appropriately uses established datasets and the conclusions about functional importance are reasonable, though the causal relationship between these properties and circRNA formation remains correlative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Generalized linear models predicted circRNA parental genes with 72-79% accuracy across species, identifying low GC content (log-odds -1.84 to -0.72) and increased exon number (log-odds 0.30 to 0.45) as main predictors. Additional positive predictors included genomic length, repeat fragments, expression levels, and phastCons scores. These predictors were validated on independent datasets and represent generic characteristics distinguishing parental from non-parental genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 present a comprehensive machine learning analysis supported by Table 1, Figure 3C-D, and extensive supplementary data. The model performance metrics are appropriate, cross-validation was performed, and validation on independent datasets (Werfel et al., 2016) strengthens conclusions. The identification of functional circRNA parental genes (C69) provides biological validation. Statistical methods appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Short Interspersed Nuclear Elements (SINEs) are enriched in circRNA flanking introns across all species, but the TE enrichment profiles are exquisitely lineage-specific and species-specific. In mouse, B1 elements show strongest enrichment; in rat, ID elements follow B1; in primates, Alu elements are most frequent and enriched (~14 TEs per intron).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 describe TE enrichment patterns supported by Figure 4A and statistical tests. The species-specific patterns are clearly demonstrated with appropriate controls (length- and GC-matched background introns). The citations to prior work on TE amplification history (Kim et al., 1994; Batzer and Deininger, 2002) provide evolutionary context. The analysis is rigorous and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Relatively few specific dimers represent the majority of predicted dimers (top-5 dimers account for 38-78% depending on species), and these most frequent dimers are formed by recently active TE family members. The dimer repertoires are lineage-specific and species-specific, with dimer-forming sequences in circRNA flanking introns most frequently composed of recent, often currently active TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 present detailed dimer analysis supported by Figure 4B-F and extensive supplementary figures. The pairing score methodology combining phylogenetic distance and binding affinity (MFE) is innovative and appropriate. The species-specific examples (B1_Mm/Mus1/Mus2 in mouse, ID elements in rat, Alu elements in primates) are well-documented. The conclusion about recent TE activity is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The most frequent dimers in both shared and species-specific circRNA loci are consistently formed by the youngest TE elements, with species-specific patterns (rat: ID family; human: AluY elements). Dimers occur 1.4-2.1-fold more frequently in shared circRNA genes, but even shared loci like Akt3 show entirely species-specific dimer landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 compare dimer composition between shared and species-specific loci, supported by Figure 5A-B and supplementary data. The Akt3 example (Figure 5B) provides compelling visual evidence for species-specific dimers in shared loci. The statistical comparisons are appropriate (Wilcoxon Signed Rank Test), and the enrichment calculations are clearly described in supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "No significant differences in milliDiv values or minimal free energies (MFEs) of dimer formation were detected between shared and species-specific circRNA loci, suggesting dimers of shared loci are not subject to specific selection pressure. Shared loci contained the youngest, most enriched dimers rather than intermediate-age repeats found in species-specific loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 test for purifying selection on dimers using degradation rates and binding energies, supported by Figure 5C and Figure 5\u2014figure supplement 3. The lack of significant differences in milliDiv and MFE between groups argues against functional constraint. The observation about intermediate-age repeats (C93) strengthens the convergent evolution model. Statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "CircRNAs are preferentially formed from loci that have attracted transposons in recent evolutionary history. Even for shared circRNA loci, the repeat landscapes, dimer predictions, transposon ages, degradation rates, and RVC pairing energies are most consistent with convergent evolution rather than divergent evolution from a common ancestor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 synthesize the TE analysis into a major conclusion about convergent evolution. This is supported by the cumulative evidence from C73-C93 showing species-specific, young TEs in both shared and species-specific loci, lack of selection signatures, and species-specific dimer landscapes even in shared loci. The conclusion is well-supported though represents inference from multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "The study proposes that many circRNAs emerged independently through convergent evolution driven by structural commonalities of parental genes (long, exon-rich, low GC content). Orthologous parental genes share structural characteristics leading to shared TE integration biases ('TE hotspots'), but because the actual TEs are mostly species-specific and evolutionarily young, the resulting circRNAs are also evolutionarily young.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99, C101 present the central model of the paper, integrating parental gene features (C97), TE integration patterns (C98), and TE ages (C99) to explain convergent circRNA evolution. The model is well-supported by the cumulative evidence from multiple analyses. The logic is sound: shared genomic properties \u2192 shared TE integration preferences \u2192 independent recent TE insertions \u2192 convergent circRNA formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C7"
+    ],
+    "result": "If most circRNAs are evolutionarily young, it is unlikely they fulfill crucial functions. This conclusion is consistent with generally low circRNA expression levels and tissue-specific, post-mitotic accumulation patterns, and argues against widespread functional circRNA conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103, C7 draw functional implications from the evolutionary analysis. The inference that young age implies low functional importance is logical but represents an assumption that could have exceptions. The consistency with low expression (C103, citing Guo et al., 2014; Westholm et al., 2014) provides supporting evidence. The conclusion is appropriately cautious ('unlikely' rather than 'impossible').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The main conclusions of this study overlap with those of two independent manuscripts (Xu and Zhang, 2021; Santos-Rodriguez et al., 2021) that appeared during manuscript revision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 acknowledges convergent findings from independent studies. This strengthens confidence in the conclusions through independent replication, though the specific overlaps are not detailed. The claim is straightforward and supported by the citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "TE integration near strong splice sites with high GC amplitudes (typical of canonical exons) would be better tolerated than near alternative exons. CircRNA exons are typically canonical exons with strong GC amplitudes, and their increased phastCons scores are likely a consequence of higher tolerance for TE integration in introns flanking canonical exons. The probability of tolerating TE integration is lower in short genes than in long genes with long introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 propose a mechanistic model for why circRNAs arise from specific genomic contexts. The logic connecting splice site strength, TE tolerance, and gene structure is sound and supported by the data showing circRNA exons are canonical (C106) with high GC amplitudes. The inference about tolerance (C107) is reasonable though represents a model rather than direct experimental proof. Citation to Zhu et al., 2009 supports the GC-length relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Associations between RNA editing (A-to-I) and circRNA abundances are likely secondary effects from the primary purpose of editing (inhibiting TE amplification). Similarly, links between circRNAs and m6A modification may reflect general targeting of erroneous transcripts for degradation rather than circRNA-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111 reinterpret prior findings about RNA editing and m6A in light of the TE-centric model. While the logic is plausible and supported by citations about editing's role in TE suppression (Lev-Maor et al., 2008; Athanasiadis et al., 2004), these represent alternative interpretations of others' work rather than direct evidence from this study. The claims are reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Many circRNAs are likely a form of transcript noise or mis-splicing provoked by TE integration into parental genes. This conclusion is consistent with observations that pharmacological inhibition of canonical splicing increases circRNA formation in rat neurons, preferentially affecting circRNAs with long introns and many transposons. The majority of circRNAs likely lack specific molecular functions, though functional circRNAs have arisen during evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 present the major functional conclusion. The 'noise' interpretation is supported by the evolutionary analysis (young age, lack of conservation, species-specific TEs) and is consistent with independent experimental evidence (Wang et al., 2019, C113). The acknowledgment that some functional circRNAs exist (C114, citing Hansen et al., 2013; Conn et al., 2015; Du et al., 2016) appropriately qualifies the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Functional circRNAs may evolve independence from RVC-based regulation by transitioning from sequence-based to protein-based (RBP-mediated) backsplicing mechanisms. RBPs have emerged as important regulators of several circRNAs, and circRNA functions appear diverse, often involving regulation of parental genes through various mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is speculative about evolutionary trajectories but logically follows from the model. Claims C116-C117 are well-supported by citations (Ashwal-Fluss et al., 2014; Conn et al., 2015; Okholm et al., 2020; Shao et al., 2021). These claims appropriately discuss how functional circRNAs could arise from initially non-functional variants, providing a balanced perspective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "CircRNAs have emerged as reliable disease biomarkers, and their utility for predictive purposes is not diminished by the conclusion that most lack direct functions. Altered circRNA profiles could indicate misregulated transcription/splicing of parental genes, novel TE integration, or problems with RNA editing or methylation machineries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 discuss practical implications for biomarker applications. C118 is supported by citations (Memczak et al., 2015; Bahn et al., 2015). C119 provides a logical framework for interpreting circRNA biomarkers even if most circRNAs are non-functional. The reasoning is sound and provides useful perspective for translational applications.",
+    "result_type": "MINOR"
+  }
+]

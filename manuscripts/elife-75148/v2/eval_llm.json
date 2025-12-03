@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Thymic macrophages are identified as CD64+F4/80+MerTK+CD11b^lo cells with typical macrophage morphology, lacking lineage markers of other immune cells, expressing phagocytic receptors, residing in thymic parenchyma, and comprising ~0.1% of thymic cells (~4\u00d710^5 per mouse) with numbers declining between 4-11 weeks of age. These cells partially overlap with cDCs in marker expression, requiring CD64/MerTK exclusion for proper cDC identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide comprehensive phenotypic characterization through flow cytometry (Figures 1A-H), cytospin morphology (Figure 1C), and in vivo labeling experiments (Figure 1F). Claims C73-C75 document the methodological challenge of distinguishing macrophages from cDCs, supported by Figure 1\u2014figure supplement 3-4. The quantitative data on frequency and absolute numbers are well-documented with appropriate sample sizes (n=82 for C6-C7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Thymic macrophages have a distinct transcriptional profile enriched for core macrophage genes but not cDC genes, are most similar to splenic red pulp macrophages and Kupffer cells, express 44 signature genes and 25 highly expressed transcription factors including Spic. SpicGFP labels all thymic macrophages with high specificity, though only ~80% of macrophages are SpicGFP+, suggesting heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 are supported by comprehensive RNA-seq analysis from IMMGEN database (Figure 2A-D, Table 1) and validation with SpicGFP reporter mice (Figure 2\u2014figure supplements 1-3). The transcriptional signature is defined by rigorous criteria (>500 expression, >5-fold enrichment), and PCA analysis clearly demonstrates similarity to red pulp macrophages and Kupffer cells. The observation of incomplete SpicGFP labeling is appropriately interpreted as evidence of heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C57",
+      "C58",
+      "C18",
+      "C19"
+    ],
+    "result": "Thymic macrophages are enriched for GO pathways related to antigen presentation (both MHC1 and MHC2, though MHC2 is lower than in cDCs) and lysosomal degradation. Functionally, they can induce proliferation in ~30% of OT2 T cells when pulsed with ovalbumin, demonstrating competent but less efficient antigen presentation compared to DCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C57-C58 are supported by GO enrichment analysis (Figure 2E) and RNA-seq/flow cytometry data. Claims C18-C19 provide functional validation through in vitro antigen presentation assays with appropriate controls (thymic DCs and peritoneal macrophages). The quantification using FlowJo's Proliferation Modeling module provides objective measurement, though the assay is in vitro and may not fully reflect in vivo function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Thymic macrophages are avid phagocytes in vitro and are the dominant phagocytic population in vivo, with ~85% of TUNEL+ apoptotic cells co-localizing within 5 \u03bcm of MerTK+ macrophages in thymic sections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by complementary in vitro phagocytosis assays (Figure 3C-D) and in vivo TUNEL co-localization analysis (Figure 3E-G). The co-localization analysis uses appropriate methodology with Imaris software and manual curation. The 5 \u03bcm threshold for co-localization is reasonable given cell sizes, and the high percentage (85%) strongly supports the conclusion that macrophages are the dominant phagocytic population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C63"
+    ],
+    "result": "Thymic macrophages consist of two populations distinguished by Timd4 and Cx3cr1 expression with distinct spatial localization: Timd4+ cells are restricted to the cortex (particularly deep cortex near medulla), while Cx3cr1+ cells are restricted to the medulla and cortico-medullary junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C63 are supported by scRNA-Seq analysis (Figure 4C-D) identifying two distinct populations and immunofluorescent localization studies (Figure 4F, Figure 4\u2014figure supplement 3) demonstrating spatial segregation. The flow cytometry validation (Figure 4E) confirms the existence of these populations. The spatial segregation is clearly demonstrated with appropriate anatomical markers (Keratin 5 for medulla).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Timd4+ thymic macrophages are of embryonic origin while Cx3cr1+ macrophages are derived from adult HSCs. YS progenitors contribute >50% of thymic macrophages at E15.5 but decrease to ~11% by E19.5, suggesting YS progenitors establish the embryonic pool but are quickly replaced by subsequent waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by multiple complementary experimental approaches: Cx3cr1CreER fate mapping at E9.5 (Figure 5A-C), shield chimera experiments (Figure 5D-F), and embryonic thymus transplantation (Figure 5G-I, supplements). The fate mapping data are appropriately adjusted for incomplete labeling efficiency using microglia as a reference. The temporal dynamics showing decline from E15.5 to E19.5 are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38"
+    ],
+    "result": "Adult circulating monocytes have very limited contribution to TIM4+ macrophages (<2% donor-derived in shield chimeras) but contribute substantially to TIM4\u2212 macrophages (~23% HSC-derived). Embryonic thymus transplantation shows TIM4+ macrophages are ~70% donor-derived while TIM4\u2212 cells are entirely host-derived, confirming TIM4+ cells are of embryonic origin and TIM4\u2212 cells rely on adult HSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 are supported by two complementary experimental approaches: shield chimeras (Figure 5D-F) and embryonic thymus transplantation (Figure 5G-I). The shield chimera design appropriately protects the thymus from irradiation while allowing bone marrow reconstitution. The transplantation experiments demonstrate successful engraftment (>99% host-derived thymocytes, Figure 5\u2014figure supplement 1) while showing differential origin of the two macrophage populations. The conclusions are appropriately conservative, distinguishing between progenitor origin and maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A small proportion (3-5%) of thymic macrophages are actively dividing under homeostatic conditions, with most dividing cells belonging to the Cx3cr1+ (TIM4\u2212) subset. This is demonstrated by four independent approaches: Ki67 staining (~4%), EdU pulse-chase (~5% retained after 21d chase), cell cycle analysis (~3% in G2/M), and scRNA-Seq showing Mki67 expression predominantly in Cx3cr1+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are supported by multiple independent experimental approaches (Figure 6A-I) that converge on consistent estimates of 3-5% proliferating cells. The EdU pulse-chase experiment is well-designed to avoid the confounding effect of phagocytosed EdU from apoptotic thymocytes. The differential proliferation between TIM4+ and TIM4\u2212 populations is supported by both flow cytometry (Figure 6I, p=0.0105) and scRNA-Seq (Figure 6H). The convergence of four independent methods strongly supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "During development, all thymic macrophages at E14.5 are Cx3cr1+ with only ~20% also TIM4+, transitioning to predominantly TIM4+ by the neonatal period with essentially no Cx3cr1+TIM4\u2212 cells by day 7. After birth, TIM4+ macrophages follow thymus size kinetics without replacement, while Cx3cr1+ cells are continuously recruited, accumulating with age to comprise ~70% of macrophages in mice >8 months old.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C56 are supported by comprehensive developmental time course analysis (Figure 7A-C) and fate mapping experiments in neonatal and adult mice (Figure 8A-F). The temporal dynamics are clearly documented from E14.5 through adulthood. The fate mapping experiments demonstrate stable labeling of TIM4+ cells but decreasing labeling of TIM4\u2212 cells over 6 weeks, supporting continuous recruitment. The age-dependent quantification (Figure 8E-F) shows appropriate statistical analysis with one-way ANOVA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Thymic macrophages develop in three distinct waves: YS-derived progenitors dominate early development but are replaced before birth by YS-independent embryonic progenitors (most likely embryonic HSC-derived based on prior Flt3Cre fate mapping) that form the bulk of postnatal macrophages, followed by slow influx of adult HSC-derived Timd4\u2212Cx3cr1+ precursors that become predominant in older mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 synthesize findings from multiple experiments in this study (fate mapping, shield chimeras, transplantation, developmental time course) with prior work by Tacke et al., 2015. The three-wave model is well-supported by the data, though the identity of the second wave as embryonic HSC-derived relies on inference from the cited Flt3Cre fate mapping study rather than direct demonstration in this manuscript. The authors appropriately acknowledge uncertainty about HSC-independent fetal liver monocyte contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Thymic macrophages have potential roles in thymocyte selection: Timd4+ cortical macrophages might specialize in efferocytosis of double-positive thymocytes undergoing negative selection or dying by neglect, while Cx3cr1+ medullary macrophages might contribute to negative selection against tissue-restricted antigens through multiple mechanisms including carrying TRAs from blood/periphery, capturing TRAs from Aire+ mTECs, or phagocytosing apoptotic TRA-specific thymocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59 and C64-C67 are explicitly speculative, based on spatial localization data and comparison to known DC functions rather than direct functional demonstration. Claim C60 cites prior work (Kurd et al., 2019) supporting the concept that combined phagocytosis and antigen presentation enhances negative selection. While the speculation is reasonable given the data on localization, antigen presentation capacity, and phagocytic function, these functional roles require direct experimental validation. The authors appropriately use cautious language ('might', 'potential', 'speculate').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Cx3cr1+ thymic macrophages are the predominant producers of PDGF\u03b1, which is required for adipocyte stem cell maintenance and can stimulate fibrosis. The gradual accumulation of Cx3cr1+ macrophages could increase PDGF\u03b1 availability in the aging thymus, potentially stimulating extracellular matrix production and adipocyte differentiation, suggesting that limiting Cx3cr1+ macrophage influx could delay thymic involution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is supported by scRNA-Seq data (Figure 4G) showing differential PDGF\u03b1 expression. Claim C70 is supported by citations to prior work. However, claims C71-C72 are speculative connections between Cx3cr1+ macrophage accumulation and thymic involution through PDGF\u03b1. While the correlation between macrophage accumulation and aging is documented, the causal role of PDGF\u03b1 in thymic involution and the prediction about limiting macrophage influx require experimental validation. The model is plausible but remains a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The manuscript establishes context by reviewing established knowledge about tissue-resident macrophages (their importance, embryonic origin, three developmental waves) and identifies gaps in understanding of thymic macrophages (lack of consensus on phenotype, limited knowledge of ontogeny/maintenance/diversity) that motivated this study. Prior work by Tacke et al., 2015 used parabiosis and Flt3Cre fate mapping to show limited monocyte contribution and HSC origin of most thymic macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C91 represent background knowledge and literature review appropriately supported by citations to relevant prior work. These claims establish the scientific context and rationale for the study. The citations appear accurate based on the descriptions provided, though the specific claims from cited papers (e.g., C77, C79-C82, C90-C91) would require verification of the original sources. These claims serve to frame the study rather than present new findings.",
+    "result_type": "MINOR"
+  }
+]

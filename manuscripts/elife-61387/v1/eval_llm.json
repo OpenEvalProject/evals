@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Experiment 1 included 86 participants after exclusions: 20 with MDD, 12 with GAD, 26 healthy controls, and 30 community members with naturally varying internalizing symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide clear documentation of participant recruitment, diagnostic composition, exclusion criteria, and final sample size. The sample composition is appropriate for the study's aims of examining internalizing psychopathology across a spectrum of symptom severity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Bifactor analysis of internalizing symptoms identified three orthogonal factors: a general factor with high loadings across anxiety and depression items, a depression-specific factor loading on anhedonia items, and an anxiety-specific factor loading on worry and anxious arousal items. This structure was validated in an independent sample (CFI=0.962) and replicated with high congruence (cosine similarities 0.77-0.96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C17 document a rigorous bifactor analysis with appropriate statistical validation. The three-factor solution is supported by parallel analysis (C12), shows expected loading patterns consistent with prior literature (C13-C15), and demonstrates good fit and replicability in independent samples (C16-C17). The methodology is sound and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The three latent factors showed strong construct validity: the general factor correlated highly (r>0.60) with all questionnaire measures, the depression-specific factor correlated strongly with anhedonia measures (r=0.72 with MASQ-AD), and the anxiety-specific factor correlated strongly with worry measures (r=0.76 with PSWQ).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 demonstrate appropriate construct validation of the bifactor solution. The correlation patterns are consistent with the intended factor structure and support the interpretation that the factors capture general distress, depression-specific, and anxiety-specific variance as designed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Stage-wise model comparison identified an additive model combining outcome probability and magnitude as superior to a multiplicative model, with further improvements from including relative outcome value effects, subjective magnitude weighting, and a choice kernel (final model PSIS-LOO=25,037).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 document a systematic model comparison procedure with clear quantitative criteria (PSIS-LOO differences and standard errors). Each model improvement is justified and the additive structure is consistent with prior neuroimaging and behavioral findings (C22-C23). The approach is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Parameter recovery analysis demonstrated that model parameters were identifiable, with mean correlation between recovered and ground truth parameters of r=0.76 overall and r=0.88 for learning rate components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 provide essential validation that the computational model can reliably recover parameters from simulated data. The correlations indicate good parameter identifiability, particularly for the learning rate parameters that are central to the study's hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Across all participants in Experiment 1, learning rates were higher in volatile versus stable blocks, higher in the aversive versus reward task, and higher following good versus bad outcomes (all 95% HDIs excluded zero).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 report credible main effects of experimental manipulations on learning rate based on Bayesian posterior distributions. These cross-group effects establish that the task manipulations successfully modulated learning behavior as intended.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C39"
+    ],
+    "result": "High general factor scores were associated with reduced adjustment of learning rate to volatility (\u03b2_g=-0.18, 95% HDI=[-0.32,-0.05]), suggesting this deficit is common to both anxiety and depression rather than specific to either disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C39 present a key finding with appropriate statistical support (credible interval excludes zero). The interpretation that this reflects shared variance is justified by the bifactor structure. However, the claim in C39 about prior work linking this to trait anxiety (Browning et al., 2015) should be interpreted cautiously given the known limitations of the STAI discussed elsewhere in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C46",
+      "C47"
+    ],
+    "result": "Individuals with low general factor scores showed enhanced learning from positive prediction errors under volatile conditions, with greater learning rate increases in volatile versus stable blocks following good outcomes. This pattern was absent or reversed in individuals with high general factor scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 describe a nuanced interaction pattern supported by the modeling results shown in Figure 4b. The description accurately reflects the differential learning patterns as a function of general factor scores, volatility, and outcome valence. The statistical support comes from credible modulation of the relevant interaction terms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The relationship between general factor scores and learning rate adjustment to volatility following good outcomes did not differ credibly between reward and aversive task versions, as evidenced by a non-credible three-way interaction and successful parameter recovery of this interaction term.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 appropriately address domain-specificity by testing and ruling out a three-way interaction. The parameter recovery analysis (C50) strengthens the conclusion by demonstrating that the null finding is not due to lack of statistical power. This supports the generality of the deficit across outcome domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Experiment 2 recruited 147 online participants (after exclusions) who showed similar distributions of internalizing symptoms to Experiment 1 participants on the STAI, MASQ, and BDI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 document the Experiment 2 sample with clear exclusion criteria and comparison to Experiment 1. The similarity in symptom distributions supports the comparability of findings across experiments despite different recruitment methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Factor scores calculated using a reduced questionnaire set (omitting PSWQ) showed high stability for the general factor (r=0.97) and depression-specific factor (r=0.97), but only moderate correlation for the anxiety-specific factor (r=0.41), likely due to the omission of the PSWQ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 document an important methodological consideration for Experiment 2. The high correlations for general and depression factors support their robust measurement, while the lower correlation for the anxiety factor is appropriately acknowledged and explained. This transparency is important for interpreting Experiment 2 results regarding anxiety-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C65",
+      "C66"
+    ],
+    "result": "Experiment 2 replicated the key findings from Experiment 1: individuals with low general factor scores showed greater learning rate adjustment to volatility, particularly following better-than-expected outcomes, while this boost was absent in individuals with high general factor scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C65, and C66 document successful replication of the main findings in an independent sample using different task versions (reward gain/loss vs. reward gain/shock). The explicit comparisons to Experiment 1 and consistent pattern of results strengthen confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Across both experiments, failure to boost learning under volatility following better-than-expected outcomes is a shared characteristic of anxiety and depression, linked to the general internalizing factor but not to anxiety- or depression-specific factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C71-C73 synthesize the main findings across both experiments. The conclusion is well-supported by the consistent pattern of results showing general factor effects without specific factor effects. This represents the core contribution of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The impairment in adjusting learning to volatility linked to elevated internalizing symptoms generalizes across reward gain, reward loss, and aversive (shock) outcomes, with no evidence for domain-specific modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 address the domain-generality question across all three task versions. The consistent lack of credible interactions with task version/domain across both experiments supports the conclusion of domain-general impairment. This is an important finding that contrasts with some prior hypotheses about anxiety-punishment and depression-reward specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Prior literature has suggested domain-specific learning deficits (anxiety-punishment, depression-reward), but evidence is mixed. Previous studies using the STAI found trait anxiety linked to impaired learning rate adjustment with punishment, though the STAI correlates highly with depression measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 accurately summarize relevant prior literature with appropriate citations. The discussion of STAI limitations (C82) is important context for interpreting prior work and motivating the current bifactor approach. These claims appropriately contextualize the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "No evidence was found for anxiety-specific or depression-specific symptoms being differentially related to learning rate adaptation as a function of outcome domain (reward vs. punishment). The deficit is linked to shared symptom variance and is general across outcome domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 summarize null findings for specific factors and domain interactions. These null results are important given prior hypotheses and are appropriately interpreted in light of the bifactor structure. The conclusion about shared variance (C86) is well-supported by the overall pattern of results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Individuals with low general internalizing factor scores showed selective enhancement of learning from positive prediction errors under volatility, which may reflect an adaptive learning style. This asymmetry does not confer advantage in the current task but might be valuable in real-world volatile environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 are well-supported by the data. However, C89-C92 involve speculation about adaptive value and real-world implications. While C89 correctly notes the task structure makes asymmetry non-advantageous, C90-C92 are speculative interpretations about potential real-world benefits and developmental origins. These speculations are reasonable but lack direct empirical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Impoverished adjustment of learning rate to volatility is broadly linked to internalizing psychopathology, specifically to shared symptoms rather than disorder-specific symptoms, and this relationship generalizes across clinical and community samples and across outcome domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 synthesize the main conclusions. C94-C97 are well-supported by the empirical findings. C93 is a speculative suggestion about potential interventions that, while reasonable, goes beyond the data. The core empirical conclusions about the transdiagnostic nature and domain-generality of the deficit are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The ability to boost learning under volatility following positive outcomes may confer resilience, while inability to adjust to different sources of uncertainty may impair decision-making and relate to intolerance of uncertainty in anxiety and depression. Better specification of cognitive deficits mapping onto psychopathology dimensions could advance personalized medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 are largely speculative about broader implications, potential mechanisms, and future applications. While these speculations are reasonable and well-motivated by the findings, they lack direct empirical support. C100's link to intolerance of uncertainty is plausible but not tested. C101's claim about personalized medicine is aspirational rather than demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Prior work established that healthy adults adjust learning rates to volatility, that trait anxiety is associated with reduced adjustment, and that intolerance of uncertainty is a transdiagnostic feature of internalizing disorders. The neural substrates of learning may vary by outcome domain and valence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 accurately summarize relevant prior literature with appropriate citations. These provide essential background for the current study's motivation and hypotheses. The characterization of prior work is accurate and appropriately nuanced (e.g., noting STAI limitations in C104-C105).",
+    "result_type": "MINOR"
+  }
+]

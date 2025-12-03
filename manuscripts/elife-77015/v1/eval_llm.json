@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The authors screened 160,987 publicly available Eubacteria genomes for AME genes using HMM profiles based on 27 clusters of homologous genes (CHGs), detecting 46,053 AME genes in 38,523 genomes (~25% prevalence). The dataset spans 54 phyla with strong sampling bias toward Proteobacteria, Firmicutes, and Actinobacteriota (89.6% of genomes), and toward clinically relevant species (10 species comprise 43.6% of dataset).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C41-C48, and C156-C160 provide comprehensive methodological details and quantitative results that are internally consistent. The screening methodology is clearly described with specific parameters (70% overlap, 35% identity for clustering; e-value 10^-3, accuracy 0.95 for screening), and the detected prevalence (~25%) is consistent across multiple claims. The acknowledgment of sampling bias (C42-C47) strengthens rather than undermines the findings by demonstrating awareness of limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C4"
+    ],
+    "result": "AME genes were detected in samples from all continents except Antarctica, with prevalence ranging from 10% (Japan, Eastern Europe, Eastern Africa) to 50% (Indonesia, Mexico, Turkey), and across all biomes investigated with prevalence ranging from 9% (domestic animals) to nearly 40% (humans).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide specific quantitative data on geographical and ecological distribution that are internally consistent and supported by referenced figures (Figure 2A, Figure 3). The global distribution pattern is clearly documented with specific prevalence ranges. However, C148 notes that absence in Antarctica may reflect lack of genomic data rather than true absence, which is appropriately acknowledged as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The ecological spread of CHGs is strongly correlated with their phylogenetic spread (\u03c1=0.759, p=6.8\u00d710^-6), and both are negatively correlated with date of first sampling (\u03c1=0.712 and \u03c1=0.718 respectively, p<5\u00d710^-5). All ecologically ubiquitous CHGs were sampled before 1955, while CHGs never sampled before 2000 were found in at most four biomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide specific correlation statistics with p-values indicating strong statistical significance. The temporal pattern (ubiquitous CHGs sampled earlier) is consistent with either earlier emergence allowing more time to spread, or broader distribution increasing detection probability, both of which are biologically plausible explanations that the authors appropriately acknowledge as indistinguishable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C98",
+      "C101"
+    ],
+    "result": "The dataset spans bacteria sampled from 1885-2019, with 96.3% sampled after 1990. The first AME bacterium was detected in 1905 (before streptomycin discovery in 1943). AME bacteria prevalence plateaued around 30% between 1990-2019 (a period with no new aminoglycoside drug releases), though individual CHG frequencies varied substantially over this period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66, C98, and C101 provide consistent temporal data with specific percentages and dates. The detection of AME bacteria in 1905 (C62-C63, C98) predating streptomycin discovery is consistent with natural aminoglycoside production by soil bacteria (C99-C100). The plateau in overall prevalence (C64, C101) despite variation in individual CHGs (C66) is internally consistent and supported by Figure 4B-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "In European countries between 1997-2018, statistical modeling shows that ecology is the most important factor explaining AME bacteria prevalence (increasing R\u00b2adj by 24.4% on average), compared to human exchanges (4.6%) and aminoglycoside consumption (2.9%). The effect of aminoglycoside consumption is not unidirectional, being significantly positive for only 3 CHGs, negative for 3 others, and nonsignificant for the remainder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C67-C76 provide detailed statistical results from logistic regression models with spatial autocorrelation structures. The quantitative contributions to R\u00b2adj are specific and internally consistent. The example of France vs Austria (C106-C108) provides concrete evidence contradicting a simple consumption-resistance relationship. However, the authors appropriately acknowledge that this analysis is limited to a post-emergence period (1997-2018) when consumption was relatively stable, which may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Human exchanges (trade and migration) explain variation in AME bacteria prevalence for more CHGs than antibiotic consumption does. AR bacteria can be carried across continents through plant and animal products in international trade, as well as by immigrants and travelers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by the statistical modeling results (C73 shows human exchanges retained for 13/16 CHGs vs C74 showing consumption retained for 10/16) and multiple citations documenting transmission pathways. However, the correlational nature of the analysis means causation cannot be definitively established, and the authors appropriately note that direct sampling of traded products would be needed to confirm these as transmission pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C7",
+      "C116",
+      "C120"
+    ],
+    "result": "On a global scale, resistome composition shows no correlation with geography (Mantel test, p=0.585) but depends significantly on ecology (p=1\u00d710^-4). Network analysis identified three ecological modules, with soil, wildlife, and human samples having the highest centrality measures, suggesting these biomes are central to AME gene exchanges between ecological contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81, C7, C116, and C120 provide specific statistical test results (Mantel tests with p-values) and network analysis metrics (betweenness and degree centrality) that are internally consistent. The finding that ecology matters more than geography is supported by multiple lines of evidence and is consistent with the regression modeling results (C5-C6). The identification of soil and wildlife as central nodes is supported by specific centrality measures referenced in Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C154"
+    ],
+    "result": "Resistome resemblance is significantly positively correlated with bacterial community composition similarity in modules 1 (clinical/farms/human/agricultural, \u03c1\u2208[0.075, 0.335]) and 2 (soil/habitat/waste/freshwater, \u03c1\u2208[0.042, 0.278]), but not in module 3 (domestic/wild animals/plants, \u03c1\u2208[-0.042, 0.294]), suggesting AME genes spread both through bacterial migration and horizontal gene transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 provide specific correlation coefficients with 95% confidence intervals, and the pattern is consistent with prior metagenomic studies (C125-C128). The lack of correlation in module 3 (C84) is appropriately discussed as potentially reflecting higher spatial structure or HGT (C131). The inference that both bacterial migration and HGT contribute to spread (C129, C154) is reasonable given the mixed pattern of correlations, though the authors appropriately note this as requiring further investigation (C155).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C135",
+      "C136"
+    ],
+    "result": "Among AME bacteria, 16% carry multiple AME genes (maximum of 8). Functional diversity increases with gene number (R\u00b2=0.756 for FDis, R\u00b2=0.746 for RaoQE), and this increase occurs at a significantly higher rate than expected under random assortment (permutation tests, p<0.007), indicating selection for functional diversification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 and C135-C136 provide specific quantitative results with strong statistical support (high R\u00b2 values and significant permutation test results). The use of two independent functional diversity indices (FDis and RaoQE) that show consistent patterns strengthens the conclusion. The inference of selection for functional diversification (C136) is appropriately qualified as a suggestion based on the non-random pattern, and is biologically plausible given the advantage of broader resistance spectra.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C97",
+      "C132",
+      "C137",
+      "C138"
+    ],
+    "result": "Among 46,053 AME genes detected, 15,374 (33%) were associated with intergenomic mobility MGEs (plasmids/prophages/ICEs), 9,640 (21%) with intragenomic mobility MGEs (integrons/transposons), and 7,277 with both. The proportion varies widely between CHGs (0-100%). MGEs with intergenomic mobility drive the broadening of resistance spectra more strongly than expected by chance (p=0.0012).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93, C97, C132, C137-C138 provide specific counts and percentages that are internally consistent (15,374 + 9,640 - 7,277 = 17,737 total genes associated with MGEs, which is ~38% of 46,053, consistent with the ~40% claim in C97 and C132). The heterogeneity between CHGs (C92) is documented in Figure 7. The statistical evidence for MGE-driven functional diversification (C93) is strong with permutation test p-values. However, the authors appropriately note that detection may be underestimated for genes near contig ends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C134",
+      "C139",
+      "C140"
+    ],
+    "result": "MGEs increase the probability of intragenomic gene replication by at least 10-fold (p=0.0012). Half of transposable elements carrying AR genes are also located on plasmids, creating embedded structures. Gene duplication increases expression levels and allows evolution of new resistance functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 provides strong statistical evidence (10-fold increase, p=0.0012) for MGE-associated duplication. Claim C134 documents the embedded structure pattern with specific proportion (50%) referenced to Figure 7. However, claims C139-C140 about functional consequences of duplication are supported only by citations to prior work, not by data in this study. The authors appropriately acknowledge that plasmid copy number means actual gene copy number is underestimated from sequence data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The study has several acknowledged limitations: screening likely underestimates resistance frequency due to unknown AME families and alternative resistance mechanisms; genotype-phenotype relationships are poorly understood; sampling is biased toward industrialized countries and clinically relevant taxa; and frequencies are useful for comparisons but not as absolute estimates. However, main conclusions hold across multiple dataset subsets analyzed to account for sampling bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C149 provide a comprehensive and appropriately critical assessment of study limitations. The acknowledgment that screening underestimates true resistance (C141-C142) and that sampling is biased (C145-C146) demonstrates scientific rigor. Importantly, C149 provides evidence that despite these limitations, the main conclusions are robust across different subsets of the data, which was explicitly tested. The example of Antarctic absence (C148) illustrates how the authors distinguish between true absence and lack of data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background context establishes that antibiotic resistance is an increasing global health problem (1.25 million deaths in 2019), historically attributed primarily to antibiotic consumption and selective pressure, though integrative large-scale studies are lacking and AR genes have likely always existed in environmental microbial communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C22 provide appropriate background context supported by multiple citations to establish the study's motivation. The claims are internally consistent and cite appropriate sources (e.g., C14 cites a 2022 review for 2019 mortality data, C17 cites a meta-analysis of 243 studies). The counterexample of persistent sulfonamide resistance despite reduced consumption (C18) effectively motivates the study's focus on factors beyond antibiotic use. These are appropriately cited claims from prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Background on aminoglycosides establishes their mechanism of action (binding 30S ribosomal subunit), history (streptomycin introduced 1944), current limited human use (second-line treatment), continued veterinary use (3.5% of farm antimicrobial sales in 2015), high resistance prevalence in farm animals (85% in Danish turkey Salmonella, 67% in Italian E. coli), and three main resistance mechanisms including AMEs as the most common in clinical isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C40 provide comprehensive background on aminoglycosides supported by appropriate citations. The specific statistics (C29-C31) are cited to van Duijkeren et al., 2019. The description of resistance mechanisms (C33) and AME characteristics (C34-C40) are well-supported by citations. These background claims appropriately establish why aminoglycosides are a relevant model system for studying resistance distribution patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C119",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C133",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C155"
+    ],
+    "result": "Discussion and conclusions synthesize findings to argue that: (1) reducing aminoglycoside consumption is necessary but insufficient to limit resistance propagation; (2) complementary measures targeting other selection pressures and controlling exchanges between ecosystems are needed; (3) stronger sampling in natural ecosystems is required; and (4) the methods could be applied to other AR gene families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 and C99-C104 appropriately contextualize the findings. Claims C109-C112 discuss mechanisms that could maintain resistance without antibiotic pressure, supported by appropriate citations. The main conclusions (C112, C150-C152) logically follow from the presented evidence, particularly the finding that ecology and human exchanges explain more variance than antibiotic consumption. The recommendations for future work (C151-C153, C155) are reasonable extensions. However, these are interpretations and recommendations rather than direct empirical findings.",
+    "result_type": "MINOR"
+  }
+]

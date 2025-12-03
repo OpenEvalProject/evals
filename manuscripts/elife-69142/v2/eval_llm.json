@@ -1,0 +1,384 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "HiLITR is a genetically encoded tool that converts protein colocalization into transcriptional activation through proximity-dependent proteolysis of a membrane-anchored transcription factor, with light-gating via a LOV domain providing an AND gate requiring both colocalization and blue light for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15, C18-C22 describe the HiLITR mechanism and design. The mechanism is clearly demonstrated through the experimental data showing specificity of activation (C29-C30), lack of cross-reactivity (C31), and >300-fold enrichment in model selection experiments (C34). The two-gate design improving performance is supported by citation (C22) and comparison to prior tools (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Optimization of HiLITR components through stable integration, replacement of TEV with ultraTEV, replacement of eLOV with hLOV, and use of Gal4-VP64 fusion improved specificity and signal compared to transient transfection and the previous SPARK tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 describe systematic optimization steps with supporting data in Figure 1\u2014figure supplement 2. Each modification is tested and shows improvement in the relevant metric (background reduction, specificity, or signal). The comparison to SPARK (C28) provides validation that the optimizations achieved superior performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "HiLITR demonstrates high specificity for detecting protein colocalization, with clear activation only when protease and TF are targeted to the same organelle (mitochondria, ER, or peroxisome), and no cross-reactivity between OMM-TF and ERM protease despite ER-mitochondria contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by FACS data in Figure 1D showing specific activation patterns. The lack of cross-reactivity (C31) is a strong result given known ER-mitochondria contacts. The speculative explanation (C32) is reasonable but the core observation of specificity is well-demonstrated. Peroxisomal constructs (C33) provide additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "HiLITR enables >300-fold enrichment of cells with colocalized components from cells with non-colocalized components in a single round of FACS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is directly supported by qPCR data in Figure 1E-F showing 308-fold enrichment. This demonstrates the practical utility of HiLITR for pooled screening applications. The experiment is well-controlled with calibration standards.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A whole-genome CRISPRi screen with HiLITR identified genes related to protein folding, membrane trafficking, and proteasome function, along with expected false positives related to gene expression, leading to design of a focused sublibrary for three parallel screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 describe the screening strategy and results. The whole-genome screen (C52-C55) identified relevant pathways and expected false positives, validating the approach. The sublibrary design (C56-C59) with high coverage (2,000-10,000\u00d7) and biological replicates represents rigorous experimental design. Data in Figure 2\u2014figure supplement 1 supports the enrichment of relevant pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Analysis of the three-screen sublibrary by CasTLE identified 270 genes (186 in 2+ screens) that significantly impact HiLITR activation at 10% FDR, with good concordance between TA and SA screens (R\u00b2=0.69) and reproducibility between whole-genome and sublibrary TA screens (47/50 genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 describe the data analysis and reproducibility. The CasTLE analysis method is appropriate and cited (C60). The concordance between TA and SA screens (C61) validates the experimental design. The high reproducibility (C63: 47/50 genes) between whole-genome and sublibrary screens demonstrates robustness. The number of hits (C62) is reasonable for the library size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The TRC pathway, which handles ER TA protein insertion and mishandles overexpressed mitochondrial TA proteins, was identified in the screens with knockdown of SGTA and TRC40 altering HiLITR activation in TA and ER screens but not SA screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 describe validation of the screen through identification of the known TRC pathway. The pattern of effects (TA and ER screens affected, SA screen not affected) matches the known biology of the pathway (C64-C66, supported by citations). Data in Figure 3A and Figure 3\u2014figure supplement 1 confirm these results, providing strong validation of the screening approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "SAE1, the SUMO E1 ligase component, was identified as a hit with low TA score, mid-to-high SA score, and high ER score, along with other mitosis/cytoskeletal genes (BORA, CCNK, REEP4, MKI67IP, SKA1) and ATP6V1A, with four hits validated by individual sgRNA experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims describe the identification and initial validation of SAE1 and other hits from the screens. SAE1 uniquely meets all three criteria (low TA, mid-high SA, high ER scores) as shown in Figure 3. The biological context (C71-C76) is well-established by citations. Individual validation of 4/8 hits (C80) is reasonable, with SAE1 showing the strongest and most consistent effects. The identification of related mitosis/cytoskeletal genes (C77) suggests a coherent biological theme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Individual sgRNA validation confirmed SAE1 knockdown effects on HiLITR activation, specifically reducing abundance of GFP-tagged mitochondrial TA protease but not SA protease, increasing mislocalization of mTA* protease to ER/Golgi (rescued by SAE1 overexpression), with effects phenocopied by chemical inhibition of SUMOylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 describe comprehensive validation of SAE1 effects. Multiple lines of evidence support the specificity: (1) recapitulation with individual sgRNAs (C82), (2) selective effect on TA vs SA protease (C83), (3) increased mislocalization (C85) with rescue (C86), and (4) phenocopy with chemical inhibitor (C87-C88). The data in Figures 4A-G provide strong support. The speculative explanation for degradation (C84) is reasonable but the core observations are solid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "SAE1 knockdown significantly increased the non-mitochondrial fraction of endogenous mitochondrial TA protein MAVS (appearing in fibrous perinuclear structures), while TRC40 knockdown had no effect and AKAP1 (SA protein) localization was unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 demonstrate effects on endogenous proteins, a critical validation. The microscopy data in Figure 4H-I show clear mislocalization of MAVS with SAE1 knockdown but not TRC40 knockdown (C91-C92). The distinct morphology of mislocalized MAVS (C93) and lack of effect on AKAP1 (C94) support specificity for TA proteins. This extends findings from recombinant to endogenous proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Western blot analysis showed that SAE1 knockdown significantly depleted two of three tested mitochondrial TA proteins (MAVS, SYNJ2BP, FIS1) but had no effect on three non-TA mitochondrial proteins (COX4, VDAC1, AKAP1), with partial rescue by SAE1 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 provide protein-level validation of SAE1 effects. The western blot data in Figure 5A-B show selective depletion of TA proteins (2/3 tested) with no effect on non-TA proteins (0/3). The partial rescue (C97) supports specificity. The 2/3 success rate for TA proteins suggests some heterogeneity in sensitivity, which is biologically plausible. Statistical significance is reported (Figure 5B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Proteomic analysis revealed that SAE1 knockdown affected 10.8% of the proteome, substantially increased mitochondrial proteome abundance relative to non-mitochondrial proteins, resulted in relative depletion of 7/9 detected mitochondrial TA proteins (reversed by SAE1 rescue), with majority of mitochondrial TA proteins positively correlating with SAE1 while only a quarter of overall mitochondrial proteome showed this correlation, and no such pattern for ER TA proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 describe comprehensive proteomic analysis. The global effects (C98-C99) establish that SAE1 is essential and broadly impacts the proteome. The specific enrichment for mitochondrial TA protein depletion (C100-C102) is statistically significant (Figure 5D, chi-square test). The rescue experiment (C101) validates specificity. The lack of effect on ER TA proteins (C105) supports organelle specificity. The data in Figure 5 and supplements provide strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "SAE1 knockdown impairs targeting and triggers degradation of MAVS and several other endogenous mitochondrial TA proteins, but not other transmembrane mitochondrial or ER proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is a summary conclusion supported by the convergent evidence from HiLITR screens (C82), microscopy (C89-C94), western blots (C95-C97), and proteomics (C98-C105). Multiple independent methods demonstrate the selective effect on mitochondrial TA proteins. The conclusion is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Seven of nine EMC subunits reduced HiLITR activity specifically in the ER screen, suggesting the mTA* protease is an EMC client, while EMC10 uniquely increased HiLITR activity in the ER screen, opposite to other EMC subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C110 describe the identification of EMC as regulating the mTA* protease. The pattern of effects (7/9 subunits decreasing, EMC10 increasing) is clear in Figure 6A. The inference that mTA* is an EMC client (C108) is reasonable given the known function of EMC (C69, cited). The unique behavior of EMC10 (C110) is striking and well-documented. The lack of effect in TA/SA screens (C109) supports specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "EMC10 is less conserved, does not cluster with core EMC components, is dispensable for complex stability, forms contacts with EMC1/7 in the ER lumen, and mutations at the EMC1/7 interface increase SQS reporter levels, leading to the hypothesis that EMC10 antagonizes EMC activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 provide biological context for EMC10's unique behavior. The properties of EMC10 (C111-C115) are well-established by citations to prior literature. The hypothesis (C116) is reasonable given this context and the screen results. This represents appropriate integration of new findings with existing knowledge to generate a testable hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Individual validation confirmed that EMC4 and EMC8 knockdown decreased HiLITR activity and GFP-mTA* protease colocalization with Golgi, while EMC10 knockdown increased both, suggesting EMC10 knockdown increases mTA* protease insertion at ERM relative to OMM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 provide validation of the EMC screen results. The FACS data (Figure 6B) and microscopy data (Figure 6C-D) are concordant, showing opposite effects of EMC4/8 vs EMC10. The inference about increased ERM insertion (C121) is reasonable given the data. Statistical significance is reported (Figure 6D). The validation uses multiple independent sgRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "EMC10 knockdown increased HiLITR activation with full-length SQS protease and significantly increased endogenous SQS protein levels, while EMC4 knockdown decreased SQS levels, with neither affecting ER-translocon-dependent CALR or TRC-dependent VTI1B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims describe validation with native EMC client SQS. The HiLITR data with SQS protease (C122) and western blot data for endogenous SQS (C123-C124) are concordant, showing opposite effects of EMC4 vs EMC10. The lack of effect on CALR and VTI1B (C125) demonstrates specificity for EMC clients. The data in Figure 6E-F provide quantitative support with statistical significance. This validates the findings on a canonical EMC substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The effect of SAE1 knockdown appears specific to mitochondrial TA proteins but is hypothesized to be indirect, potentially through SUMOylation of chaperones (STIP1, ubiquilins) altering their activity, or through changes to cell proliferation given that SAE1 was among mitosis/cytoskeletal hits and globally upregulated mitochondrial proteins except TA proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C157 present speculative mechanistic explanations for the SAE1 effect. While the specificity is well-demonstrated (C149), the mechanistic hypotheses (C150-C157) are explicitly speculative and lack direct experimental validation. The SUMOylation of chaperones (C151-C152) and proliferation effects (C153-C157) are plausible but unproven. Additional experiments would be needed to distinguish between these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "EMC10 knockdown produced opposite effects to other EMC subunits on ER localization of mutant TA protease and increased endogenous SQS abundance, leading to the proposal that EMC10 stabilizes the EMC1/7 junction and closed insertase conformation, potentially dissociating to promote increased insertase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C169 integrate experimental findings with structural knowledge to propose a mechanism. The experimental observations (C158-C159) are well-supported by data in Figures 6. The structural context (C160-C167) is established by citations. The mechanistic proposal (C165, C168-C169) is explicitly speculative but is well-grounded in the data and prior structural studies. The concordance with EMC1/7 interface mutations (C167) provides supporting evidence. While speculative, this represents a well-reasoned hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "HiLITR provides an alternative approach to protein localization studies in pooled screens, offering advantages over existing methods including signal amplification, customizable reporters, modularity for different organelles, applicability to various protein types, and potential for time-resolved detection and chemical library screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C139 discuss the advantages and potential applications of HiLITR. The core advantages (C130-C132) are demonstrated by the successful screens. The versatility claims (C133-C136) are supported by the demonstration of multiple organelle targets (mitochondria, ER, peroxisome). The potential applications (C138-C139) are reasonable extrapolations. Some claims are speculative (C132, C136, C138-C139) but the core utility is well-demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "HiLITR has limitations including false positives in loss-of-activation screens (filterable by counterscreens), need for prior knowledge in gain-of-activation screens, lower reproducibility for hits with growth defects, potential mismatch between HiLITR activation magnitude and endogenous protein regulation, and necessity for validation on endogenous proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C148 provide an honest assessment of HiLITR's limitations. The false positive issue (C140-C142) is demonstrated by the enrichment of ribosomal proteins in the whole-genome screen. The recommendation for caution with growth defects (C144) is based on the authors' observations. The limitations regarding magnitude (C145-C147) and need for validation (C148) are appropriate caveats. This represents good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C170",
+      "C171"
+    ],
+    "result": "The EMC serves as a holdase chaperone for multipass transmembrane proteins in addition to its insertase role, and it remains to be shown whether EMC10 plays a regulatory role in this holdase function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C171 acknowledge an additional EMC function and identify a gap for future research. The holdase function (C170) is established by citation. The statement about future work (C171) is appropriate and identifies a logical extension of the current findings. This represents good scientific practice in identifying future directions.",
+    "result_type": "MINOR"
+  }
+]

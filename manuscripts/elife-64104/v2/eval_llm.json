@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C35",
+      "C4",
+      "C28",
+      "C5",
+      "C29",
+      "C44"
+    ],
+    "result": "DTN-1 and DTN-2 were identified as paralogous proteins with three tandem MYB domains at their N-termini through Y2H screening for POT-1-binding proteins. The proteins share 70% amino acid identity and their MYB domains are composed of three alpha helixes characteristic of MYB domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, C35 establish the identification method (Y2H screening), while C4, C28 demonstrate the paralogous relationship with 70% identity. Claims C5, C29, C44 provide structural evidence from modeling and secondary structure prediction showing three MYB domains with characteristic alpha-helix structure. The convergence of Y2H screening, sequence analysis, and structural prediction provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "DTN-1 and DTN-2 form complexes with POT-1 and POT-2 in vivo, with direct binding to POT-1 through their C-terminal PBR regions and indirect binding to POT-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 demonstrate direct binding to POT-1 but not POT-2 via Y2H in a PBR-dependent manner. Claims C40-C42 show co-immunoprecipitation of both POT-1 and POT-2 with DTN-1/2 using multiple orthogonal approaches (western blot, mass spectrometry, reciprocal IP). Claim C43 correctly infers direct POT-1 binding and indirect POT-2 binding based on the combined Y2H and co-IP data. The evidence is robust and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "DTN-1 and DTN-2 bind telomeric dsDNA (TTAGGC)15 in a sequence-specific manner with Kd values of 0.93 \u00b1 0.023 \u03bcM and 0.54 \u00b1 0.047 \u03bcM respectively, requiring more than three telomeric repeats for robust binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 demonstrate sequence-specific binding to telomeric DNA but not scrambled sequences via EMSA. Claim C52 provides quantitative Kd values with error estimates. Claim C53 shows weak binding to shorter sequences (1-3 repeats), supporting C54's inference about preferential binding to terminal telomeres. The EMSA data with quantification and appropriate controls provides strong biochemical evidence for sequence-specific DNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C30",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "DTN-1 and DTN-2 constitutively localize to telomeres in both somatic and germ cells throughout development, with approximately 23-24 foci per embryonic nucleus corresponding to C. elegans telomere number, and reduced foci in pachytene oocytes due to meiotic synapsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 establish ~23-24 foci per nucleus matching expected telomere number (24 telomeres from 12 chromosomes). Claims C58-C59 show reduction to ~12 foci in pachytene consistent with meiotic synapsis. Claim C60 shows 8 foci at diakinesis corresponding to bivalent chromatids. Claim C61 provides critical validation through colocalization with telomeric FISH signals. Claims C62, C64 extend observations to somatic cells. The quantitative agreement with expected telomere numbers and FISH colocalization provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "dtn-1 and dtn-2 function redundantly in maintaining fertility, with single knockouts appearing normal but double knockouts showing severe fertility defects (42% sterile in F1), while retention of a single intact allele of either gene is sufficient to rescue fertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 establish complete knockout by CRISPR-Cas9 with western blot validation. Claims C68-C69 demonstrate mutual independence of protein stability. Claims C70-C72 show single KOs and double heterozygotes are normal with Mendelian ratios, establishing non-essentiality for development (C73). Claim C74 quantifies severe fertility defects in double KO (42% sterile). Claims C75-C76 demonstrate rescue by single allele, proving redundancy. Claim C77 shows independent telomeric localization. The genetic analysis with appropriate controls and quantification strongly supports functional redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C31",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Double knockout of dtn-1 and dtn-2 results in transgenerationally progressive germline mortality, with complete sterility within a few generations and accumulation of somatic defects including dumpy phenotype and larval arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C31, C78 establish progressive sterility across generations shown in Figure 4E. Claims C79-C80 document morphological defects in late-generation worms shown in Figure 4F. The transgenerational progression with quantitative fertility data and documented morphological defects provides strong evidence for progressive germline mortality. However, the mechanism underlying the progressive nature is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C33",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Double knockout of dtn-1 and dtn-2 results in telomere hyper-elongation, with telomeric FISH signal intensities 5.7 times stronger than wild type in epidermal nuclei, without changes in telomere number indicating elongation rather than fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 provide quantitative Q-FISH data showing 5.7-fold increase in signal intensity in double KO epidermal nuclei. Claim C91 infers elongation from increased signal. Claims C92-C93 rule out telomere fusion by showing comparable telomere numbers between wild type and double KO. The quantitative FISH data with appropriate controls and the exclusion of fusion as an alternative explanation provide strong support for telomere elongation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "DTN-1 but not DTN-2 is responsible for negative regulation of telomere length, as demonstrated by elongated telomeres in dtn-1 single knockout but normal or shorter telomeres in dtn-2 single knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 provide Southern blot and Q-FISH evidence showing differential telomere length phenotypes in single knockouts. Claim C96 correctly infers that DTN-1 is the primary negative regulator based on the elongation phenotype only in dtn-1 KO. The differential phenotypes in single knockouts with multiple measurement methods (Southern blot and Q-FISH) provide strong evidence for distinct roles in telomere length regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C32",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88"
+    ],
+    "result": "Double knockout of dtn-1 and dtn-2 results in chromosomal bridges in intestinal nuclei and increased chromosomal non-disjunction in meiosis (10% male progeny vs 0.2% in wild type), with telomeric FISH signals coinciding with bridged DNA suggesting telomere-related defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 document 50-fold increase in male progeny frequency (10% vs 0.2%) indicating meiotic non-disjunction. Claims C85, C87 show chromosomal bridges with telomeric FISH signals on stretched DNA. Claim C88 infers fusion or replication defects from telomeric signal localization. The quantitative data on male frequency with appropriate wild-type comparison and the colocalization of telomeric signals with bridges provide strong support. However, the mechanistic link between telomere elongation and chromosomal defects remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The MYB domains of DTN-1 and DTN-2 are highly divergent from known telomeric dsDNA-binding proteins, with conserved tryptophans in helices 1-2 but poorly conserved basic amino acids in helix 3, forming a unique phylogenetic cluster suggesting distinct evolutionary origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C47 document sequence divergence from known telomeric proteins with poor conservation of DNA-contacting residues. Claim C46 shows conservation of structural tryptophans important for helix-turn-helix structure. Claims C48-C49 provide phylogenetic evidence for distinct evolutionary origin. The combination of sequence alignment showing selective conservation of structural but not DNA-binding residues, and phylogenetic analysis showing distinct clustering, supports the conclusion of divergent evolution. However, functional validation of the divergent residues is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C15",
+      "C34",
+      "C97"
+    ],
+    "result": "DTN-1 and DTN-2 are core shelterin components essential for germline immortality and telomere length homeostasis in C. elegans, with redundant roles in germline maintenance but distinct roles in telomere length regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent summary conclusions integrating multiple lines of evidence: telomeric localization (C8, C30), complex formation with POT proteins (C7), telomeric DNA binding (C6), redundant function in fertility (C9, C76), progressive germline mortality in double KO (C10), and telomere elongation (C11, C14). The designation as 'core shelterin components' is supported by the combination of telomeric localization, POT protein interaction, and essential functions. The claims are well-supported by the collective experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The POT-1-binding region (PBR) is located at the C-termini of DTN-1 and DTN-2 with 80% amino acid identity between the two proteins in this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by Y2H screening data identifying the C-terminal region and sequence analysis showing 80% identity in the PBR region, as shown in Figure 1B and Figure 1\u2014figure supplement 1. The localization and conservation data are straightforward and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "A single allele of either dtn-1 or dtn-2 is sufficient to sustain germline immortality, which likely explains why these factors evaded identification by conventional genetic screenings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is directly demonstrated by the fertility data in Figure 4D showing normal brood sizes in heterozygotes. Claim C101 is a reasonable inference explaining why previous genetic screens failed to identify these genes. The genetic redundancy is well-established, and the inference about screening limitations is logical given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "DTN-1 and DTN-2 have domain configuration similar to the c-MYB transcription factor, with three MYB domains at N-termini followed by an acidic domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by structural modeling and sequence analysis shown in Figure 1B and Figure 1\u2014figure supplement 2. The domain organization is clearly documented, though functional implications of this similarity are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The C-termini of DTN-1 and DTN-2 directly bind to POT-1, suggesting no bridging proteins analogous to mammalian TIN2 and TPP1 exist in C. elegans, making the C. elegans shelterin complex a more simplified system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is supported by Y2H data showing direct binding. However, claims C111-C112 represent inferences about the absence of bridging proteins. While no direct DTN-1/2-POT-2 interaction was detected (C116), POT-2 is present in the complex (C40-C41), suggesting potential uncharacterized bridging proteins (C117). The conclusion of a 'simplified system' is premature without comprehensive screening for additional complex components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "The role of DTN-1 in telomere length regulation is similar to fission yeast Taz1, budding yeast Rap1, and mammalian TRF1, as their deletions result in telomere hyper-elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 is supported by the telomere elongation phenotype in dtn-1 knockout (C94) and citations to similar phenotypes in other organisms. The functional similarity in negative telomere length regulation is well-established through comparative analysis, though mechanistic details may differ between organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Hyperelongated telomeres in dtn-1/dtn-2 double knockout are less likely to be the primary cause of chromosomal defects and mortal germlines, as pot-1/pot-2 deletions cause telomere elongation without fertility defects, suggesting additional defects such as telomere deprotection and DNA-damage response activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C122 cite prior work showing pot-1/pot-2 deletions cause telomere elongation without the severe phenotypes seen in dtn-1/dtn-2 double KO. Claims C123-C124 infer that telomere elongation alone is insufficient to explain the phenotypes and speculate about additional defects. While the comparative logic is sound, the inference remains speculative without direct evidence of telomere deprotection or DNA damage response activation in the double KO. The claims identify an important distinction but lack mechanistic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "DTN-1 and DTN-2 are much larger proteins than mammalian TRF1 and TRF2 and may have additional functions such as telomerase regulation carried out by mammalian TPP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 is supported by protein size data shown in Figure 1B. However, claim C115 is purely speculative without experimental evidence. The larger size suggests potential for additional functions, but this remains a hypothesis requiring functional validation through telomerase activity assays or other mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "No direct interaction was detected between DTN-1/2 and POT-2, suggesting there may be uncharacterized bridging proteins linking DTN-1/2 and POT-2 in C. elegans with functions analogous to mammalian TIN2 and TPP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 is supported by Y2H data (Figure 1C) showing no direct binding. However, claim C117 is speculative. While POT-2 is present in the complex (C40-C41), the mechanism of its recruitment is unclear. The speculation about bridging proteins is reasonable given the data, but remains unvalidated. Alternative explanations such as DNA-mediated interactions are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The primary role of DTN-1 and DTN-2 in telomere homeostasis remains enigmatic, though double KO worms are speculated to be defective in homeostasis of telomeric dsDNA, ssDNA, or both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C119 acknowledge uncertainty about mechanisms. While multiple phenotypes are documented (telomere elongation, chromosomal bridges, fertility defects), the mechanistic connections remain unclear. The speculation about dsDNA/ssDNA homeostasis defects is reasonable but unvalidated. These claims appropriately identify knowledge gaps requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C81",
+      "C82",
+      "C86",
+      "C98",
+      "C99",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Background knowledge claims about telomere biology, including telomere structure, functions, evolutionary conservation, the telomere paradox, canonical telomeric proteins, POT proteins, C. elegans genetics, and mammalian shelterin complex organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout. They provide necessary context for understanding the significance of DTN-1 and DTN-2 identification. The claims are well-supported by citations to primary literature and represent accurate summaries of current knowledge in telomere biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Intestinal cells in C. elegans become polyploid during post-embryonic development after undergoing several rounds of endomitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is established knowledge cited from Hedgecock and White, 1985, and is consistent with the observation of numerous GFP foci in intestinal nuclei (C64). This provides context for interpreting the localization data.",
+    "result_type": "MINOR"
+  }
+]

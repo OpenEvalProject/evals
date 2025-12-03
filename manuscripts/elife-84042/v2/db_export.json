@@ -1,0 +1,1897 @@
+{
+  "submission": {
+    "id": "9e36f744-c8ae-4d84-b225-ef16730c6f9e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:45:21.475664Z",
+    "updated_at": "2025-12-03T17:45:21.475664Z"
+  },
+  "content": [
+    {
+      "id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "submission_id": "9e36f744-c8ae-4d84-b225-ef16730c6f9e",
+      "content_type": "manuscript",
+      "content_text": "# Scratch-AID, a deep learning-based system for automatic detection of mouse scratching behavior with high accuracy\n\n## Authors\n\n- Huasheng Yu<sup>1</sup> ([ORCID: 0000-0001-5641-2512](https://orcid.org/0000-0001-5641-2512)) \u2020\n- Jingwei Xiong<sup>2</sup>\n- Adam Yongxin Ye<sup>3</sup>\n- Suna Li Cranfill<sup>1</sup> ([ORCID: 0000-0002-3431-0061](https://orcid.org/0000-0002-3431-0061))\n- Tariq Cannonier<sup>1</sup>\n- Mayank Gautam<sup>1</sup> ([ORCID: 0000-0002-7257-5837](https://orcid.org/0000-0002-7257-5837))\n- Marina Zhang<sup>4</sup>\n- Rayan Bilal<sup>1</sup>\n- Jong-Eun Park<sup>1</sup>\n- Yuji Xue<sup>1</sup>\n- Vidhur Polam<sup>1</sup>\n- Zora Vujovic<sup>1</sup>\n- Daniel Dai<sup>1</sup>\n- William Ong<sup>1</sup>\n- Jasper Ip<sup>1</sup> ([ORCID: 0000-0001-9773-1544](https://orcid.org/0000-0001-9773-1544))\n- Amanda Hsieh<sup>1</sup>\n- Nour Mimouni<sup>1</sup>\n- Alejandra Lozada<sup>1</sup>\n- Medhini Sosale<sup>1</sup>\n- Alex Ahn<sup>1</sup>\n- Minghong Ma<sup>1</sup>\n- Long Ding<sup>1</sup> ([ORCID: 0000-0002-1716-3848](https://orcid.org/0000-0002-1716-3848))\n- Javier Arsuaga<sup>5</sup>\n- Wenqin Luo<sup>1</sup> ([ORCID: 0000-0002-2486-807X](https://orcid.org/0000-0002-2486-807X)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n2. Graduate Group in Biostatistics, University of California Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))\n3. Howard Hughes Medical Institute, Program in Cellular and Molecular Medicine, Boston Children\u2019s Hospital, Harvard Medical School Boston United States ([ROR:006w34k90](https://ror.org/006w34k90))\n4. Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n5. Department of Molecular and Cellular Biology, University of California Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))\n6. Department of Mathematics, University of California Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMice are the most commonly used model animals for itch research and for development of anti-itch drugs. Most laboratories manually quantify mouse scratching behavior to assess itch intensity. This process is labor-intensive and limits large-scale genetic or drug screenings. In this study, we developed a new system, Scratch-AID (Automatic Itch Detection), which could automatically identify and quantify mouse scratching behavior with high accuracy. Our system included a custom-designed videotaping box to ensure high-quality and replicable mouse behavior recording and a convolutional recurrent neural network trained with frame-labeled mouse scratching behavior videos, induced by nape injection of chloroquine. The best trained network achieved 97.6% recall and 96.9% precision on previously unseen test videos. Remarkably, Scratch-AID could reliably identify scratching behavior in other major mouse itch models, including the acute cheek model, the histaminergic model, and a chronic itch model. Moreover, our system detected significant differences in scratching behavior between control and mice treated with an anti-itch drug. Taken together, we have established a novel deep learning-based system that could replace manual quantification for mouse scratching behavior in different itch models and for drug screening.\n\n## Introduction\n\nItch is a disturbing symptom associated with skin diseases, immune problems, systemic diseases, and mental disorders (Cevikbas and Lerner, 2020; Hong et al., 2011; Kremer et al., 2020; St\u00e4nder et al., 2007). Chronic itch affects about 13\u201317% of the population (Matterne et al., 2009; Weisshaar and Dalgard, 2009), severely worsening the quality of life of affected patients. Unfortunately, treatment options for many chronic itch conditions are still limited (Yosipovitch et al., 2018; Yu et al., 2021).\n\nMice are the most widely used model animals for studying itch mechanisms and for developing new preclinical anti-itch drugs (Han et al., 2013; Liu et al., 2009; Solinski et al., 2019; Sun and Chen, 2007). Since itch is an unpleasant sensation that provokes the desire to scratch (Ikoma et al., 2006), scratching behavior has been assessed as a proxy for itch intensity in mice (Liu et al., 2009; Morita et al., 2015). Till now, this quantification process has been mainly conducted by watching videos and manually counting scratching bouts or the total scratching time, which is tedious and time consuming, unavoidably introduces human errors and bias, and limits the large-scale genetic or drug screenings.\n\nGiven the biological importance and the obvious need, several research groups have tried different strategies to automate this process, including an acoustic recording method (Elliott et al., 2017), a method using magnetic field and metal ring to detect paw movement (Mu et al., 2017), and several video analysis-based approaches (Bohnslav et al., 2021; Kobayashi et al., 2021; Park et al., 2019; Sakamoto et al., 2022). Nevertheless, these methods have not been widely adopted by other research laboratories, due to the uncertain performance of the trained models in different lab environments, the requirement of specialized equipment, and/or inadequate evaluation of these methods in different mouse itch models.\n\nIn recent years, with the rapid progress in the field of artificial intelligence, deep learning has been applied in various scientific research areas. For example, convolutional neural networks (CNN) are widely used in computer visual recognition tasks (Gu et al., 2018), whereas recurrent neural networks (RNN) (Graves, 2013) are developed for analyzing temporal dynamic features. Moreover, rapid improvement of computing power, especially in the graphics processing unit capacity, together with new open-source deep learning libraries, such as PyTorch (Paszke et al., 2019), Keras (Gulli and Pal, 2017), and Tensorflow (Abadi et al., 2016), have greatly accelerated broad applications of deep learning.\n\nAnimal behavior analysis is one of the research areas benefiting from the applications of deep learning. For example, DeepLabCut can track different body parts in freely moving animals for behavior analysis (Mathis et al., 2018). DeepEthogram recognizes and annotates different behaviors of mice and flies (Bohnslav et al., 2021). These examples support the proof-of-principle that deep-learning is a powerful avenue for automating animal behavior analysis. Nevertheless, for a given animal behavior, like mouse scratching, a designated method, which achieves high sensitivity, specificity, and generalization to replace human observers, still needs to be established.\n\nTo meet this challenge, we developed a new deep learning-based system, Scratch-AID (Automatic Itch Detection), which achieved automatic quantification of mouse scratching behavior with high accuracy. We first designed a videotaping box to acquire high-quality recording of mouse behavior in a reproducible environment from the bottom. We recorded 40 videos of 10 adult wildtype mice (5 males and 5 females) after nape injection of a non-histamine pruritogen, chloroquine (CQ), and manually labeled all video frames as the reference. We then designed a convolutional recurrent neural network (CRNN) by combining CNN and RNN and trained it with 32 scratching videos from 8 randomly picked mice. We obtained a series of prediction models using different training parameters and evaluated these models with test videos (eight unseen test videos from the two remaining mice). The best trained model achieved 97.6% recall and 96.9% precision on test videos, similar to the manual quantification results. Impressively, Scratch-AID could also quantify scratching behavior from other major acute and chronic itch models with high accuracy. Lastly, we applied Scratch-AID in an anti-itch drug screening paradigm and found that it reliably detected the drug effect. In summary, we have established a new system for accurate automatic quantification of mouse scratching behavior. Based on the performances, Scratch-AID could replace manual quantification for various mouse itch models and for drug or genetic screenings.\n\n## Results\n\n### The overall workflow\n\nOur workflow to develop a new system for detection and quantification of mouse scratching behavior consists of four major steps (Figure 1A): (1) Videotape mouse scratching behavior induced by an acute nape itch model; (2) Manually annotate scratching frames in all videos for training and test datasets; (3) Design a deep learning neural network; train this network with randomly selected training videos and adjust different training parameters; and evaluate the performance of the trained neural networks on test videos; (4) Evaluate the generalization of the trained neural network in additional itch models and a drug screening paradigm.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig1-v2.jpg)\n\n**Figure 1.:** (A) A diagram showing the workflow to develop a deep learning-based system for automatic detection and quantification of mouse scratching behavior. (B) An image of the designed videotaping box for high-quality video recording of mouse scratching behavior. Scale bar, 5 cm. (C) A cartoon showing the acute itch model induced by the chloroquine (CQ) injection in the nape, followed by video recording in the customized videotaping box. (D) Representative images showing different phases (P1\u2013P4) of a scratching train (upper). Red arrows indicate the scratching hind paw. A cartoon showing the dynamic movement of the scratching hind paw in a scratching train (bottom). The cycle of scratching bout (P2) and paw licking (P3) may repeat once or more times in a scratching train. Scale bar, 1 cm. (E) The total number of scratching trains in each video. (F) The distribution of scratching train duration (n = 1135 scratching trains). The inset is the zoom-in of the red rectangle.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) The scratching hind paw (red arrow in A) but not the contralateral hind paw displayed rhythmic vibration during scratching behavior (B). The distance between scratching hind paw and nose (C) or mouth (D), the angle consisting of nose, scratching hind paw, and ipsilateral front paw (E), and the angle consisting of scratching hind paw, mouth, and tail (F) in the scratching or non-scratching frames (N = 1756 frames for non-scratching, 2214 frames for scratching). Error bar, standard error of the mean (SEM). Differences between the two groups were analyzed using unpaired two-tailed Student\u2019s t-test,*** p < 0.001.\n\n### Design a videotaping box for high-quality and reproducible recording of mouse scratching behavior\n\nHigh-quality videos recorded from a reproducible environment are critical for stable performance of trained prediction models and for adoption by other research laboratories. Thus, we designed a mouse videotaping box for such a purpose. It consisted of two boxes with white acrylic walls joined by a transparent acrylic floor (Figure 1B). The top (\u2018mouse\u2019) box (Length \u00d7 Width \u00d7 Height = 14.68 \u00d7 14.68 \u00d7 5 cm) had a lid for mouse access. The bottom (\u2018camera\u2019) box (Length \u00d7 Width \u00d7 Height = 14.68 \u00d7 14.68 \u00d7 23.6 cm) had a door for access to the camera (Logitech C920e Business Webcam). The walls and the lid of the box were non-transparent to minimize interference from outside visual stimuli. Ambient light penetrated the walls and provided sufficient illumination for behavior recording. A mouse could freely move inside the top box, and a camera recorded mouse behavior from the bottom (30 frames/s). Compared to the top or side views, the bottom view can clearly capture the key body parts involved in scratching behavior, such as the scratching hind paw and mouth, and their movements in great details (Video 1). The magnification, resolution, and brightness of the video can be adjusted by the camera recording software (Logitech C920e Business Webcam driver and software) to achieve consistent video recording. In short, this customized videotaping box allows high-quality video recording of mouse scratching and other behaviors in a stable and reproducible environment.\n\n![Video 1.](https://cdn.elifesciences.org/articles/84042/elife-84042-video1.mp4.jpg)\n\nSpontaneous scratching is a rare event under normal conditions in mice. Itch sensation and scratching are usually induced by different itch models for research. Common mouse itch models are classified as cheek or nape, histaminergic or non-histaminergic, and acute or chronic, based on the body location where itch sensation is evoked, the kind of pruritogens, and the duration of itch sensation (Ikoma et al., 2006; Liu and Dong, 2015; Shimada and LaMotte, 2008; Thurmond et al., 2008). We first used an acute nape itch model induced by a non-histaminergic pruritogen, CQ, because it triggered immediate and robust scratching behavior in mice (Liu et al., 2009). After intradermal injection of CQ (200 \u03bcg in 15 \u03bcl saline) into left or right nape of the mice, a 20-min video was recorded using the customized videotaping box (Figure 1C).\n\nIn response to CQ injection, mice scratched the affected skin region using their ipsilateral hind paw. Evoked mice displayed multiple episodes of scratching, which were separated by non-scratching phases. Each episode of scratching, here defined as a scratching train, usually contained four phases: start (lifting the scratching hind paw toward the affected skin), scratching bout (rhythmic movement of hind paw against the affected skin), paw licking (putting the scratching hind paw into the mouth and licking), and end (putting down the scratching hind paw back to the floor) (Figure 1D and Video 1). The cycle of scratching bout and paw licking might occur once or repeat multiple times, depending on the itch intensity and the internal state of the mouse. The time from the start to the end of a given scratching train is defined as the duration. The total scratching time is the sum of durations of all scratching trains, which is an effective parameter to quantify the scratching behavior and assess itch intensity.\n\n### Video annotation\n\nForty scratching videos from 10 adult wildtype C57 mice (5 males and 5 females, 2- to 3-month-old) were recorded (Supplementary file 1). For neural network training and testing and for comparing performances between trained neural networks and manual quantification, two methods were used to annotate mouse scratching behavior in these videos. The first method (manual annotation) was to watch these videos at normal (1\u00d7) speed (30 frames/s) and label the start and end time points (converted into frame numbers for subsequent analysis) of each scratching train. This is consistent with the field common practice for manually quantifying mouse scratching behavior. Our manual annotation results were produced by 10 human observers, thus reflecting an averaged precision of the manual quantification process. The second method (reference annotation, or ground-truth annotation) was to accurately determine the start and end of each scratching train by analyzing each video frame-by-frame. The reference annotation of the 40 videos were used as the training and test datasets. The total number of scratching train in each video and the distribution of scratching train durations were quantified (Figure 1E, F and Supplementary file 2).\n\n### Deep learning neural network design and model training\n\nMouse scratching behavior displayed unique dynamic (temporal) and static (spatial) features, which were highlighted by tracking the key body parts using DeepLabCut (Mathis et al., 2018; Figure 1\u2014figure supplement 1; Video 2). One of the most obvious dynamic features was the rhythmic movement of the scratching hind paw (Figure 1\u2014figure supplement 1A, B). Some unique static features included the relative positional relationships between the scratching hind paw and other body parts (Figure 1\u2014figure supplement 1C\u2013F). To fully capture these dynamic and static features, we designed a CRNN to take advantage of the different strengths of CNN and RNN (Figure 2A and Figure 2\u2014figure supplement 1A). The CRNN contained a CNN (ResNet-18 He et al., 2016; Figure 2\u2014figure supplement 1B) that extracts static features, such as the relative position of different body parts, an RNN (two-layer bidirectional gated recurrent unit [GRU]; Dey and Salem, 2017; Figure 2\u2014figure supplement 1C) that extracts dynamic features, such as the rhythmic movement of the scratching hind paw in consecutive frames, and a fully connected layer (the classifier) to combine the features extracted by both CNN and RNN and generate the prediction output.\n\n![Video 2.](https://cdn.elifesciences.org/articles/84042/elife-84042-video2.mp4.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cartoon showing the architecture of designed deep learning neural network consisting of the combination of convolutional neural networks (CNN), recurrent neural networks (RNN), and classifier. (B) Cartoon showing the preparation of inputs for the training dataset. Consecutive N frames were selected as one input for training. The interval between two adjacent inputs in a video was 4\u201310 frames. (C) The information of a sample training and test datasets. The training loss decreased (D) while the accuracy increased (E) during the training process with different input length (N = 3, 5, 7, 13, 23, 45 frames). The inset is the zoom-in of part of the figure.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The cartoon showing the architecture of designed convolutional recurrent neural network (CRNN). The input was first fed into convolutional neural networks (CNN, ResNet-18), then followed by a two-layer bidirectional gated recurrent unit (GRU). A final full connection (FC) layer generated the binary prediction results. (B) Details of the modified ResNet-18 network. The final FC layer was modified to output frame-wise embedding instead of classification result. Conv, convolutional layer; Batch norm, batch normalization layer; ReLU, rectified linear unit; \u2018+\u2019, element wise plus for vector. (C) Details of one GRU of the two-layer bidirectional GRU. The unit connected to embedding of frame t(xt) took the last unit\u2019s output (ht\u22121) as input and generated new output (ht). The three yellow squares inside the unit were the reset gate, update gate, and candidate activation vector. \u2018x\u2019, Hadamard product for vectors; \u2018+\u2019, vector plus.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The frequency distribution of scratching bout (A) or paw licking (B) durations. The inset figure is the zoom-in of the red square part.\n\nThe 40 videos were randomly split into two parts, 80% of them (32 videos from 8 mice) were assigned to the training dataset and 20% of them (8 videos from 2 mice) to the test dataset (Figure 2C). Each video was converted into individual frames, and each frame was classified as \u2018scratching\u2019 (within a scratching train) or \u2018non-scratching\u2019 (out of a scratching train) based on the reference annotation. For the training dataset preparation, N consecutive frames (a parameter adjusted for optimal model performance) were selected as one input to capture the dynamic features of scratching (Figure 2B). To avoid large sets of redundancy in the training dataset, two adjacent inputs were apart between 4 and 10 frames (Figure 2B). An input was labeled as \u2018scratching\u2019 (class 1) if more than half of frames (N/2) in the input were scratching frames; otherwise labeled as \u2018non-scratching\u2019 (class 0) (Figure 2B).\n\nSince the dynamic features of scratching behavior spanned multiple frames, the input length (N frames) would be a critical training parameter. In CQ triggered acute nape itch model, the average duration of one cycle of scratching bout and paw licking was around 30 frames (Figure 2\u2014figure supplement 2A, B). Thus, we tested a range of input length from 3 to 45 frames for model training. During the training process, the loss (discrepancy between model prediction and reference annotation) decreased, and the prediction accuracy (correct prediction of both scratching and non-scratching frames/all frames) increased (Figure 2D, E). After 10 epochs (one epoch means the training covers the complete training dataset for one round), the accuracy reached a plateau (Figure 2E). The prediction accuracies were more than 0.98 for all input length, improving slightly with the increase of the input length (Figure 2E). These results demonstrate that the designed CRNN network works very efficiently to capture the scratching features and recognize scratching behavior in the training dataset.\n\n### Model evaluation on test datasets\n\nWe evaluated the performance of the trained prediction models on eight unseen test videos. First, similar to what described above, each test video was converted into inputs with \u2018N\u2019 frames (the same \u2018N\u2019 was used for training and test), except that the two adjacent inputs were only 1 frame apart. Second, the trained neural network predicted each input to be \u2018scratching\u2019 or \u2018non-scratching\u2019. Third, to convert the prediction from one input (containing N frames) into the prediction for each individual frame, we used the following rule: the prediction of the middle frame of each input would be the same as that of the input. For example, if an input was predicted as \u2018scratching\u2019, then the middle frame of this input would be a \u2018scratching\u2019 frame. This conversion predicted each frame of tested videos as \u2018scratching\u2019 or \u2018non-scratching\u2019 expect for the few frames at the beginning or at the end of a video (see method for the missing data interpretation). Fourth, recall (the number of correctly predicted scratching frames/the number of reference scratching frames), precision (the number of correctly predicted scratching frames/the number of all predicted scratching frames), and F1 score (2*recall*precision/(recall + precision)) were calculated. Compared to the overall accuracy (correct prediction of both scratching and non-scratching frames/all frames), the recall, precision, and F1 score give a more precise and in depth evaluation of a model\u2019s performance (Powers, 2020), especially when scratching is a relative rare event in a video.\n\nTo rule out the possibility that the good performance of our models was due to a specific combination of the training and test datasets, we rotated the training and test videos for cross-validation. For all different combination of training and test videos, F1 scores were all above 0.9 (Figure 3\u2014figure supplement 1A, B), supporting the stable and high performance of our prediction models. In addition, the prediction model performed better with the increased input length (Figure 3\u2014figure supplement 1C). The best model, the one trained with videos 1\u201332 with the input length of 45 (N = 45), was selected for additional analyses and tests.\n\nThe average recall and precision of the best model were 97.6% and 96.9%, respectively, for the eight test videos (Figure 3A), and the recall and precision for individual videos were above 95% in most cases (Figure 3B). This performance was similar to or even slightly better than that of manual annotation, which had an average recall and precision of 95.1% and 94.2%, respectively (Figure 3C, D). When comparing the total scratching time to the reference annotation, the average discrepancy of the model prediction was 1.9% whereas that of manual annotation was 2.1% (Figure 3E). The correlation between the model prediction and the reference annotation was 0.98, similar to the manual annotation results (Figure 3F). When examining the probability traces of model prediction and the reference annotation (one example shown in Figure 3G), we found that the model successfully recognized almost all the scratching trains in test videos, and that the prediction of the start and end of each scratching train aligned well with the reference annotation (Figure 3H). Taken together, these results demonstrate the high reliability and accuracy of our model to recognize and quantify mouse scratching behavior of new videos.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig3-v2.jpg)\n\n**Figure 3.:** The recall, precision, and F1 score of the best model on average (A) or in individual videos (B). The recall, precision, and F1 score of manual annotation on average (C) or in individual videos (D). (E) The comparison among model prediction, manual quantification, and the reference annotation. The reference annotation is normalized to 100% shown as the red line. (F) The correlations between model prediction or manual quantification and reference annotation. R2, Pearson correlation coefficient. (G) An example scratching probability trace (red curve) predicted by the model and aligned with the reference annotation (green bar). (H) The two zoom-ins from (G) showing the nice alignment between the model prediction and the reference annotation.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Cross-validation of the trained prediction models by rotating the training and test datasets in 40 videos. The F1 score was calculated on the eight test videos. (B) The best performance of the models trained with input length N=45 and different combos of training and test datasets. (C) Model performances with different input lengths.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Cartoon showing five types of prediction errors. Red curves indicated scratching probability predicted by the model, and green bars indicated reference scratching trains. (B) The incidence rate of each type of errors, calculated by the ratio of the total frames in each type error over the total scratching frames of 8 test videos. Error bar, standard error of the mean (SEM). A real example of false positive prediction (C1), the duration of all false positive scratching trains (C2), and the frequency distribution of distances between false positive scratching trains to the nearest real scratching train (C3). A real example of false negative prediction (D1), the duration of all false negative scratching trains (D2), and the Type 2 error rate for scratching trains with different duration (D3). A real example of blurred boundary prediction (E1), the distribution (E2), and the average lengths (E3) of start and end shift. Error bar, SEM. A real example of missed interval (F1), the duration of all missed intervals (F2), and Type 4 error rate for intervals with different duration (F3). A real example of split scratching train (G1), the length of split frames (G2), and distribution of the Type 5 error linked to paw licking (G3).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) The incidence rate of each type of errors in manual annotation, calculated by the ratio of the total frames in each type error over the total scratching frames of eight test videos. Error bar, standard error of the mean (SEM). (B) The duration of all false positive scratching trains. The duration of all false negative trains (C1) and the Type 2 error rate for scratching trains with different duration (C2). The distribution (D1) and the average lengths (D2) of start and end shift. The duration of all missed intervals (E1) and the Type 4 error rate for intervals with different duration (E2). (F) The length of split frames.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Examples of scratching behavior prediction probability during wiping (A), grooming (B), rearing (C), locomotion (D), and resting (E).\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A\u2013C) The five type error rates of models trained with different input lengths. Error bar, standard error of the mean (SEM). (D) The correlation between the scratching train duration and the length of start shift, end shift, or start shift plus end shift. (E) The correlation between the average scratching train duration in a video and the prediction accuracy (F1 score). (F) Frequency distribution of all paw licking duration and those linked to Type 5 error.\n\n### The trained neural network model focused on the scratching hind paw to recognize mouse scratching behavior\n\nHow did the trained neural network model recognize mouse scratching behavior and distinguish them from other behaviors? Although deep learning neural networks are processed as a black box, saliency maps can give some hints (Selvaraju et al., 2017), because they plot which parts of each frame (pixels) were mainly used during model prediction. The most salient parts were centered around the scratching hind paw in the scratching frames (Figure 4A, B and Figure 4\u2014figure supplement 1A), suggesting that the prediction model focused on the features of the scratching hind paw. In some scratching frames, other body parts were also highlighted, such as the two front paws (Figure 4B), suggesting the model also utilized the positional relationship of these body parts to recognize scratching behavior. In contrast, for other \u2018non-scratching\u2019 mouse behaviors, such as wiping, grooming, rearing, and locomotion, the \u2018salient\u2019 parts showed no clear association with particular mouse body parts (Figure 4C\u2013F and Figure 4\u2014figure supplement 1B\u2013E). Together, these saliency maps indicate that the trained neural network learns to focus on the dynamic and static features of scratching for the prediction of mouse scratching behavior.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) Saliency map showing the gradient value of each pixel of scratching frames during mouse scratching behavior prediction by the best model. The model focused on the scratching hind paw (A, B) and other body parts, such as front paws (B).Scale bar, 2 cm. Saliency map showing the gradient value of each pixel of wiping (C), grooming (D), rearing (E), and locomotion (F) frames during mouse scratching behavior prediction by the model.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Additional saliency maps showing the gradient value of each pixel for frames of scratching (A), wiping (B), grooming (C), rearing (D), and locomotion (E) during the scratching behavior prediction of the best model.\n\n### Model prediction error analysis\n\nTo further understand the performance of the best trained neural network model, we systematically analyzed its prediction errors in eight test videos (Figure 3\u2014figure supplement 2) and compared to those from the manual quantification (Figure 3\u2014figure supplement 3) and other trained models. We classified the prediction errors into five categories: Type 1, false positive (non-scratching region was predicted as a scratching train); Type 2, false negative (a real scratching train was not recognized); Type 3, blurred boundary (the prediction of the start or end of a scratching train was shifted); Type 4, missed interval (two or more adjacent scratching trains were predicted as one scratching train); and Type 5 split scratching train (one scratching train was predicted as two or more scratching trains) (Figure 3\u2014figure supplement 2A). We found that the dominant prediction error of the trained neural network model was Type 3 error, accounting for around 3% of the total scratching frames, followed by Type 2 and 5 errors accounting for around 1% (Figure 3\u2014figure supplement 2B). For manual quantification, the major errors came from Types 3 and 4, accounting for 10% and 8% of the total scratching frames, respectively (Figure 3\u2014figure supplement 3A).\n\nFor Type 1 error of the model prediction (Figure 3\u2014figure supplement 2C1\u2013C3), the durations of all false positive scratching trains were shorter than 10 frames (0.3 s) (Figure 3\u2014figure supplement 2C2) and temporarily close to a real scratching train (within 30 frames, <1 s) (Figure 3\u2014figure supplement 2C3). They were not caused by confusion with other behaviors, such as wiping, grooming, rearing, locomotion, and resting (Figure 3\u2014figure supplement 4). Type 1 error was also rare for manual annotation (Figure 3\u2014figure supplement 3B).\n\nThe models might miss short scratching trains, hence caused the Type 2 error. Indeed, all missed scratching trains were shorter than 40 frames (<1.3 s) (Figure 3\u2014figure supplement 2D1, D2). For all scratching trains lasting less than 30 frames (<1 s), 18.5% of them were missed by the model prediction. This number decreased to 2.7% for scratching trains spanning between 30 and 60 frames (1\u20132 s). No scratching train was missed if they were longer than 60 frames (>2 s) (Figure 3\u2014figure supplement 2D3). The Type 2 error positively correlated with the input length (N) of prediction models. It became zero or close to zero when models trained with shorter input lengths (3, 13, and 23 frames) (Figure 3\u2014figure supplement 5A\u2013C). For manual annotation, Type 2 error was not common (Figure 3\u2014figure supplement 3C1, C2).\n\nType 3 error (Figure 3\u2014figure supplement 2E1\u2013E3) was dominant among all five type errors. The average start and end frame shift of the model prediction were 2.2 and 7.0 frames (Figure 3\u2014figure supplement 2E3), while those of the manual annotation were 11.5 and 12.8 frames (Figure 3\u2014figure supplement 3D1, D2). The start and end frame shift of the manual quantification was similar (~350 ms), which likely reflected the temporal delay of the real time human visual system processing. For the model prediction, which was an off-line frame by frame process, the temporal shifts were less than the human visual processing. In addition, the start of a scratching train was more accurately recognized by the model than the end of a scratching train (Figure 3\u2014figure supplement 2E3). This might reflect the feature of scratching trains. It was relatively clear to determine the start of a scratching train when a mouse lifted its hind paw, but more ambiguous to determine when a mouse put its hind paw back onto the floor to complete a scratching train. The start and end shift did not correlate with the length of a scratching train (Figure 3\u2014figure supplement 5D). Thus, the relative error (percentage of error frames) would decrease when the duration of a scratching train increases. Indeed, the prediction accuracy (as indicated by the F1 score) positively correlated (R2 = 0.5723) with the average scratching train duration in a video (Figure 3\u2014figure supplement 5E).\n\nType 4 error was caused when two adjacent scratching trains were too close to each other and were predicted as one scratching train (Figure 3\u2014figure supplement 2F1\u2013F3). All missed intervals were shorter than 30 frames (<1 s) (Figure 3\u2014figure supplement 2F2). Conversely, 51.4% of intervals less than 30 frames between the two adjacent scratching trains were not recognized. All intervals longer than 30 frames were recognized (Figure 3\u2014figure supplement 2F3). Type 4 error was more common in manual annotation than in the model prediction (Figure 3\u2014figure supplement 3E1, E2).\n\nType 5 error occurred when one scratching train was predicted as two or more scratching trains, separated by mispredicted intervals. The average lengths of these mispredicted intervals were around 10 frames by model prediction and around 40 frames by manual annotation (Figure 3\u2014figure supplement 2G1, G2 and Figure 3\u2014figure supplement 3F). When reviewing these intervals, we found that more than 80% of them were within or partially overlapped with a paw licking phase (Figure 3\u2014figure supplement 2G3), especially when the duration of the paw licking was more than 30 frames (Figure 3\u2014figure supplement 5F). Thus, it seems likely that the model predicted some long licking frames within a scratching train as \u2018non-scratching\u2019. Type 4 and 5 errors reflect the intrinsic complexity of scratching behavior. Human definitions and field consensus, such as using \u20182s\u2019 as the threshold between two adjacent scratching trains (Darmani and Pandya, 2000), would help to reduce these types of errors.\n\nIn summary, we have established a novel system combining a customized videotaping box and a well-trained CRNN neural network to automatically identify and quantify mouse scratching behavior with high accuracy. We named it as the Scratch-AID system.\n\n### Performance of the Scratch-AID system on other major acute itch models\n\nIn addition to the nape, the other commonly used body location to induce mouse itch sensation is the cheek (Shimada and LaMotte, 2008). To test whether the Scratch-AID system trained by the nape CQ model could also recognize and quantify scratching behavior of the cheek model, we injected CQ (200 \u03bcg in 15 \u03bcl saline) into the cheek of five wildtype mice (three males and two females) and recorded seven videos (Figure 5A). We compared the scratching behavior quantification by the Scratch-AID and manual annotation. The Scratch-AID prediction had 93.4% recall, 94.8% precision, and 0.941 F1 score (Figure 5B), while those of manual quantification were 96.0%, 88.6%, and 0.919 (Figure 5C). The correlation between the Scratch-AID prediction and reference annotation was 0.9926, and that of the manual quantification was 0.9876 (Figure 5D, E). The total scratching time in individual videos from both model prediction and manual annotation were close to the reference annotation (Figure 5F). These results demonstrate that the Scratch-AID system can reliably identify and quantify scratching behavior triggered by acute itch sensation in the cheek.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig5-v2.jpg)\n\n**Figure 5.:** (A) A cartoon showing an acute itch model induced by chloroquine (CQ) injection in the mouse cheek. The average recall, precision, and F1 score of Scratch-AID (B) or manual annotation (C). Error bar, standard error of the mean (SEM). The correlation between model prediction (D) or manual quantification (E) and reference annotation. R2, Pearson correlation coefficient. (F) The comparison among model prediction, manual quantification, and reference annotation. The reference annotation is normalized to 100% shown as the red line. (G) A cartoon showing an acute itch model induced by histamine injection in the mouse nape. The average recall, precision and F1 score of Scratch-AID (H) or manual annotation (I). Error bar, SEM. The correlation between model prediction (J) or manual quantification (K) and reference annotation. R2, Pearson correlation coefficient. (L) The comparison among model prediction, manual quantification, and reference annotation. The reference annotation is normalized to 100% shown as the red line.\n\nDifferent pruritogens administrated at the same body location trigger scratching behavior with different dynamic features (Wimalasena et al., 2021). Thus, we tested whether the Scratch-AID system trained by CQ injection could recognize scratching behavior triggered by a different pruritogen, histamine. 100 \u03bcg histamine (in 15 \u03bcl saline) was intradermally injected into the nape and four videos were recorded (Figure 5G). The recall, precision, and F1 score from the Scratch-AID prediction were 96.6%, 90.91%, and 0.936 (Figure 5H), while those of the manual annotation were 96.3%, 80.5%, and 0.877 (Figure 5I). The correlation between the Scratch-AID prediction and reference annotation is 0.9707, and that of the manual quantification is 0.9895 (Figure 5J, K). The total scratching time in individual videos from both model prediction and manual annotation was similar to those of reference annotation (Figure 5L). Taken together, these data show that our Scratch-AID system, although only trained with the CQ nape acute itch model, can recognize and quantify scratching behavior of acute itch models induced at different skin locations or triggered by different pruritogens, and that the prediction accuracy of Scratch-AID is comparable to that of the manual annotation.\n\n### Performance of the Scratch-AID system on a chronic itch model\n\nChronic itch is a devastating symptom and severely affects the quality of patients\u2019 life (Yosipovitch and Fleischer, 2003; Yu et al., 2021). Investigating the underlying mechanisms using the mouse model is important for developing novel therapies for treating chronic itch in various conditions. To test whether the Scratch-AID system could be used to study mouse chronic itch models, we generated a squaric acid dibutylester (SADBE) induced contact dermatitis chronic itch model (Beattie et al., 2022; Qu et al., 2015) and recorded nine videos from three wildtype mice (Figure 6A). Affected mice displayed spontaneous scratching toward the nape and/or head. Noticeably, dynamic features of spontaneous scratching behavior under this chronic itch condition were different from those exhibited by the CQ acute itch model: the total scratching time was less for the same given period of time (20 min) (Figure 6\u2014figure supplement 1A), and the average duration of the scratching trains was shorter (53 frames on average) than the acute scratching behavior induced by CQ (280 frames on average) (Figure 6\u2014figure supplement 1B and Figure 1F). Despite these considerable differences, the recall, precision, and F1 score of the Scratch-AID prediction were 84.1%, 88.5%, and 0.862, respectively, compared to 84.1%, 66.3%, and 0.740 of manual annotation (Figure 6B, C). A likely reason for the decreased recall and precision of both model prediction and manual annotation was the dominant short scratching trains in this chronic itch model (Figure 6\u2014figure supplement 1B). The correlation between the model prediction and reference annotation was 0.9845 (Figure 6D), which was comparable to the manual annotation 0.9887 (Figure 6E). The total scratching time quantified by the model was slightly more accurate than the manual annotation (Figure 6F). From the prediction traces (an example shown in Figure 6G), the Scratch-AID system was capable to capture the low-frequency short scratching trains.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig6-v2.jpg)\n\n**Figure 6.:** (A) A cartoon showing a squaric acid dibutylester (SADBE) induced chronic itch model. The average recall, precision, and F1 score of Scratch-AID (B) or manual annotation (C). Error bar, standard error of the mean (SEM). The correlation between model prediction (D) or manual quantification (E) and reference annotation. R2, Pearson correlation coefficient. (F) The comparison among model prediction, manual quantification, and reference annotation. The reference annotation is normalized to 100% shown as the red line. (G) An example scratching probability trace (red curve) predicted by the model and aligned with the reference annotation (green bar) (left). Zoom-in (right panel) of the blue square part showing nice alignment of the model prediction with the reference annotation.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The percentage of scratching and non-scratching frames in the squaric acid dibutylester (SADBE) chronic itch model (n = 9 videos) and chloroquine (CQ) nape acute itch model (n = 40 videos). (B) Frequency distribution of scratching train duration of SADBE chronic itch model and CQ nape acute itch model.\n\n### Application of the Scratch-AID system in anti-itch drug screening\n\nFinally, we tested whether the Scratch-AID system could be applied for anti-itch drug screening. Here, we used the histaminergic acute itch nape model and the pretreatment of Benadryl (Loew et al., 1946), an FDA approved anti-histaminergic itch cream, as a proof-of-principle example. Benadryl or control cream was topically applied onto the mouse nape skin 1 hr before the intradermal injection of histamine (200 \u03bcg in 15 \u03bcl saline). Scratching behavior was then recorded for 20 min from six C57 wildtype mice (two males, four females) in the Benardryl treated group and seven C57 wildtype mice (two males, five females) in the control group (Figure 7A). Quantification of the total scratching time (frames) using the Scratch-AID showed a significant reduction with Benardryl treatment (Figure 7B). Similar results were found by manual annotation (Figure 7C). These results suggest that the Scratch-AID system is sensitive to detect the change of scratching behavior after an anti-itch drug treatment, which highlights the potential use of the Scratch-AID system in high-throughput and large-scale anti-itch drug screenings.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/84042/elife-84042-fig7-v2.jpg)\n\n**Figure 7.:** (A) A diagram showing the experimental design of an anti-itch drug test. Quantification of scratching behavior in anti-itch cream treated group or control group by Scratch-AID (B) or manual annotation (C). Error bar, standard error of the mean (SEM). Differences between the two groups were analyzed using unpaired two-tailed Student\u2019s t-test, ** p < 0.01.\n\n## Discussion\n\nScratching is an itch-specific behavior, and the mouse is the major model animal to study itch mechanisms and to develop novel anti-itch drugs. In this study, we developed a new system, Scratch-AID, which combined a customized videotaping box and a well-trained neural network, for automatic quantification of mouse scratching behavior with high accuracy. Its performance is comparable to the manual annotation on major itch models and an anti-itch drug screening paradigm. As far as we are aware, this is the first deep learning-based system that can achieve such high accuracy and broad generalization.\n\nIt is remarkable that a model trained with CQ induced acute nape itch videos could reliably recognize scratching behavior in other itch models, even when the body sites (nape vs. cheek) or the dynamics of scratching behavior (e.g., acute vs. chronic itch, different pruritogens) were different. The impressive performance and generalization of the Scratch-AID system are likely attributed to the high-quality and reproducible video recording; a large amount of high-quality training datasets with the frame-by-frame annotation; efficient CRNN deep learning neural network design; and training parameter optimizations.\n\nVariable video recording condition is a major barrier that has prevented the adoption of a trained neural network by different laboratories. The trained models usually do not perform well with videos recorded under different conditions (illumination, field size, image resolution, magnification of mice, image angle, backgrounds, etc.). Thus, we built a customized videotaping box to provide a reproducible and high-quality recording environment (Figure 1B). This helps to standardize the videotaping process, reduce the noise, and facilitate the stable performance and generalization of the trained deep learning models. Meanwhile, this video recording box is easy to be set up, scaled up, and adopted. Combined with the well-trained prediction model that has a comparable performance as manual quantification, the Scratch-AID system is ready to replace the manual quantification.\n\nThe amount and quality of training datasets are important to train a high accurate and generalized model. In general, the performance of a prediction model positively corelates with the size of the training dataset. In this study, we recorded 40 scratching videos in total and chose the CQ induced acute nape itch model, which triggered robust scratching behavior in mice, for model training and testing. The large number of scratching videos and the high amount of incidence of targeted behavior in each video provided a high-quality training dataset. In addition, the clear definition of scratching train and accurate annotation of videos, as conducted frame by frame, were also critical for training, testing, and error analysis.\n\nCRNN is the classical deep learning neural network for analysis of animal behaviors. Here, we used ResNet (He et al., 2016) for the CNN part, which simplifies the neural network model by constructing a residual learning block through a shortcut connection of identity mapping (Figure 2\u2014figure supplement 1B). GRU was used for the RNN part for extracting dynamic features (Figure 2\u2014figure supplement 1C). Our study shows that ResNet and GRU make a good combination of deep learning architecture for analyzing animal behaviors. In addition, our network design is highly efficient that the accuracy plateau was achieved after only 10 epochs of training.\n\nThere is still some room to improve the performance of our predication models. To increase the capability of Scratch-AID to capture short scratching trains, we could train the CRNN neural network with scratching videos from chronic itch models. In addition, optimization of training parameters could also help with the improvement of prediction accuracy. For example, different error types varied when changing the input length (Figure 3\u2014figure supplement 2B and Figure 3\u2014figure supplement 5A\u2013C). The Type 2 and 4 errors increased when the input length increased, while Type 1, 3, and 5 errors decreased when the input length increased. Thus, it is a trade-off to optimize and select the best input length for different itch models. Increasing the size of the training dataset may also help to get better prediction models. When checking the videos with relatively low prediction accuracy, for example, the video number 5 (V5) in the chronic itch model (Figure 6F), we found that the missed scratching frames could be due to a rare posture during scratching behavior, in which the scratching hind paw was partially occluded by the tail (Video 3). Thus, with more training videos containing some rare scratching postures, the trained neural network models could be more \u2018knowledgeable\u2019 for the diversity of scratching behavior.\n\n![Video 3.](https://cdn.elifesciences.org/articles/84042/elife-84042-video3.mp4.jpg)\n\nQuantification of animal behaviors is critical for understanding the underlying molecular, cellular, and circuit mechanisms. Compared to manual analysis, the deep learning-based automatic analysis will not only improve efficiency and accuracy, but also reduce human bias and errors. Along this direction, we developed the Scratch-AID system to achieve automatic quantification of mouse scratching behavior. Our study also provides useful insights for developing new deep learning neural network models to achieve automatic analysis of other animal behaviors.\n\n## Materials and methods\n\n### Mouse lines and treatments\n\nMice (C57BL/6J purchased from The Jackson Laboratory, RRID: IMSR_JAX:000664) were housed in the John Morgan animal facility at the University of Pennsylvania. All animal treatments were conducted in accordance with protocols approved by the Institutional Animal Care and Use Committee and the guidelines of the National Institutes of Health (Protocol No. 804886).\n\n### Acute itch model\n\nAcute itch models were conducted as previously described (Cui et al., 2022). Mouse cheeks or napes were shaved 3 days prior to experiments, and mice were placed in the videotaping box for acclimation (15 min/day for 3 days). At the day of experiment, mice were first acclimated to the videotaping box for 5 \u2009min, CQ (Sigma, C6628) (200 \u00b5g in 15 \u03bcl saline) or histamine (Sigma, H7250) (100 \u00b5g in 15 \u03bcl saline) was then intradermally injected into either the cheek or the nape, and scratching behavior was recorded for 20 min.\n\n### Behavior recording\n\nThe mouse scratching behavior was recorded using a Microsoft laptop (Windows 10 Pro, purchased from Amazon) connecting to a web camera (Logitech C920e Business Webcam, purchased from Amazon). Logitech Capture 2.06.12 Software was used to adjust the following recording parameters: brightness 170, contrast 0, resolution 720 \u00d7 720, frame rate 30 fps. The brightness and contrast could be adjusted according to ambient light to achieve consistent illumination.\n\n### Annotation of mouse scratching behavior\n\nThe start of a scratching train was defined as when the mouse started to lift up its hind paw and prepared to scratch at the beginning of a scratching train. For the end of a scratching train, there were two cases. If the mouse did not lick its hind paw after last scratching bout, the end frame would be when the mouse put its hind paw back onto the ground; if the mouse licked its hind paw after last scratching bout, the end frame would be when the mouse put its hind paw into the mouth. For the manual annotation, each video was manually watched at the normal (1\u00d7) speed (30 frames/s). The start and end time point of each scratching train was manually annotated, the time point was converted into the frame number (30 frames/s) for downstream analysis. For the reference annotation, each video was first converted into individual frames using python package OpenCV (Bradski, 2000). Then the start and end of each scratching train was determined frame by frame. Frames within a scratching train were defined as \u2018scratching\u2019 frames, otherwise defined as \u2018non-scratching\u2019 frames. For CQ cheek acute itch video number 2 (Figure 5F V2) and SADBE chronic itch video number 5 (Figure 6F V5), long lickings (>60 frames) during scratching trains were annotated as non-scratching frames for the model evaluation. For group comparison, the annotation was performed in a double-blind manner.\n\n### Training sample preparation and preprocessing\n\nIn the training procedure, 40 videos from 10 mice were first randomly split into 32 training videos from 8 mice (V1\u2013V32), and 8 test videos from 2 mice (V33\u2013V40). For cross-validation, training and test videos were rotated. Test videos were V1\u2013V8, V9\u2013V16, V17\u2013V24, V25\u2013V32, or V33\u2013V40, and the rest of videos were used as training videos. For the model training, input was prepared by the following procedure: First, each video was converted into frames; then, consecutive N frames (N = 3, 5, 7, 13, 23, or 45) were selected as one input with an interval of 4\u201310 frames between two adjacent inputs. Then each input was annotated as \u2018scratching\u2019 (class 1) if more than N/2 frames were scratching frames, otherwise labeled as \u2018non-scratching\u2019 (class 0).\n\nAll frames in each input were first converted into gray scale images and resized to 300 \u00d7 300. Then a random square crop with size ranging from 288 \u00d7 288 to 300 \u00d7 300 was applied and followed by a random horizontal and vertical flip with probability of 0.5. Finally, these frames were resized to 256 \u00d7 256 and fed into the CRNN network.\n\n### CRNN architecture\n\nOur CRNN model (Figure 2A and Figure 2\u2014figure supplement 1) consisted of a CNN part, an RNN part, and a full connection (FC) part. The CNN was modified from ResNet-18 (He et al., 2016 ) by changing the final FC layer into an FC layer with embedding size 256. The RNN consisted of two bidirectional GRU layers with hidden vector size 512. The FC part consisted of two FC layers with embedding size 256 and ReLu activation, and embedding size 2 for the final prediction. The prediction results were transformed into maximum value in the final output vector.\n\n### Model training and predication\n\nThe model was trained by PyTorch (version 1.10.2, RRID:SCR_018536) (Paszke et al., 2019). For model training hyperparameters, batch size was set as 16 or 32 depending on the input size. The max epoch was set as 20. ADAM optimizer was used with initial learning rate 10\u22124 and the learning rate reduced by multiplying factor 0.3 every 5 epochs. The binary cross entropy was used as loss function. Dropout rate of FC layer was set as 0.2. The model was trained on a customized desktop with Intel i9-10900k CPU (purchased from Newegg), 64 GB RAM (CORSAIR Vengeance LPX 64 GB, purchased from Newegg), and NVIDIA GeForce RTX 3090 with 24 GB memory (purchased from Amazon).\n\nFor model prediction on new videos, the input preparation was similar to the training dataset, except that the adjacent inputs were only 1 frame apart. Each individual frame was predicted as \u2018scratching\u2019 or \u2018non-scratching\u2019 based on the following rule: the prediction of the middle frame of each input would be the same as the input prediction. For the few frames at the beginning or at the end of each video (depending on the input length N) that could not be the middle frame of an input, they were predicted as \u2018scratching\u2019 or \u2018non-scratching\u2019 based on the first input or last input prediction.\n\n### Saliency map\n\nTo obtain the saliency map, we first calculated gradient value of each pixel and kept the only positive gradients, then rescaled into range 0\u20131 based on a previous published paper (Selvaraju et al., 2017). Then we generated the heatmap based on the gradient values (<0.1 transparent, 0.1\u20130.6 light blue to dark blue, >0.6 dark blue) and stacked the heatmap onto the original frame.\n\n### SADBE chronic itch model\n\nMice (8\u201312 weeks) were singly housed before starting the behavior experiment. In day 1, mice were individually anesthetized in chamber using isoflurane until they did not move and showed decreased respiration rates. Mice were continued for anesthesia with a nose cone to allow access to the body of the mouse. After ensuring a mouse was fully anesthetized, the abdominal skin was shaved. In day 4, after anesthesia similar in day 1, 25 \u00b5l 1% SADBE in acetone (Sigma, 3339792) was applied to the shaved area of the abdominal skin. After application of SADBE, anesthesia continued for 3 more minutes to ensure SADBE fully absorbed before putting then back in the home cage. In days 9\u201312, mice were habituated in the videotaping box for 1 hr and 15 min. In day 11, the nape was shaved after habituation. In days 13\u201318, mice were habituated in the videotaping box for 1 hr and 15 min, then 25 \u00b5l of 1% SADBE was applied to the nape. In day 18, after 1% SADBE application, each mouse was put back into the videotaping box and recorded for three videos.\n\n### Anti-itch drug experiment\n\nThe nape of mice (8\u201312 weeks, two males, five females) was shaved 3 days prior to experiments. Mice were placed in the videotaping box for acclimation (15 min per day for 3 days). At the day of experiment, mice were randomly selected and acclimated in the videotaping box for 5 min. Then, 0.2 g anti-itch cream (Benadryl, Johnson & Johnson Consumer Inc, purchased from CVS) or control cream (Neutrogena, Johnson Consumer Inc, purchased from CVS) was applied into the nape. One hour later, histamine (200 \u00b5g in 15 \u00b5l saline) was intradermally injected into the nape, and scratching behavior was recorded for 20 min. The experimenter who did the histamine injection was blind to anti-itch cream or control cream.\n\n### Illustration drawing\n\nCartoons with mice were made partially in BioRender (BioRender, 2022, RRID:SCR_018361).\n\n### Statistical analysis\n\nData and statistical analyses were performed using Prism 6.0 (GraphPad Software, RRID:SCR_002798). The criteria for significance were: ns (not significant) p \u2265 0.05, *p < 0.05, **p < 0.01, ***p < 0.001. Differences in means between two groups were analyzed using unpaired two-tailed Student\u2019s t-test.\n",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "5a0a81d9-ccbd-435a-bd1f-b8fea18fe1e1",
+      "submission_id": "9e36f744-c8ae-4d84-b225-ef16730c6f9e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Brian S Kim, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84042.sa0](https://doi.org/10.7554/eLife.84042.sa0)\n\nScratch assays are the gold standard for measuring itch in rodents. However, the current limitation is that this is performed manually which is enormously taxing in terms of hours spent counting scratching bouts. The authors have developed a valuable automatic system to quantify scratch behavior with high accuracy and provided a valuable tool for the field. This will be resourceful for the greater itch biology community.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Brian S Kim, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84042.sa1](https://doi.org/10.7554/eLife.84042.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \" Scratch-AID: A Deep-learning Based System for Automatic Detection of Mouse Scratching Behavior with High Accuracy\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Catherine Dulca as the Senior Editor. The reviewers have opted to remain anonymous.\n\nReviewer #1 (Recommendations for the authors):\n\n1. Can Scratch-AID be modified to quantify scratching bouts?\n\n2. Saliency maps analysis suggest that the trained neural network is focusing on the movement of the hindleg to identify scratching. Although mice will spend the majority of their time scratching the injected or treated skin location, they do scratch uninjected/untreated area as well in both acute and chronic itch models. Different laboratories have different strategies to determine whether scratching to the untreated locations is included for quantification. Is Scratch-AID able to differentiate scratching directed towards treated vs untreated locations?\n\nReviewer #2 (Recommendations for the authors):\n\nMouse behavior assay is the primary readout for almost all itch research. The itch sensation triggers a stereotypical scratch-lick response by the ipsilateral hind paw, and several key parameters including the number of scratch bouts and total scratching duration can be precisely quantified and compared across genotypes and treatment groups. So far, the vast majority of itch behavior videos are manually scored, requiring hundreds of hours of labor and are prone to experimenter errors. In this paper, the authors introduce an automated system to replace the manual itch counting process. First, they designed a standardized videotaping box to produce consistent and high-quality videos of itch behaviors. They then annotated the videos frame by frame for scratch bouts, and trained a neural network to identify scratching behaviors with high precision. The system (named Scratch-AID by the authors) performed consistently with manual and reference scoring, and yielded key quantitative parameters (scratching bout counts and total scratching times). Saliency map revealed that the trained neural network focused on the scratching hind paw, which is consistent with what human observers look at. The authors further showed that Scratch-AID can be easily adapted to quantify scratching at slightly different sites (nape vs cheek), in response to different itch mediators (chloroquine vs histamine), in both acute and chronic itch models, and that it successfully revealed the effect of a generic anti-itch drug Benadryl. Overall, the model appears accurate and easily adaptable and can probably be widely used by the itch field.\n\nThere had been a few previous attempts to train neural networks to score itch behaviors (Kobayashi et al., 2021; Sakamoto et al., 2022). The main advance of this paper is the incorporation of a standardized recording system, and larger number of videos in the training dataset. The authors provided very detailed and thorough analyses of their own model, but did not compare its sensitivity and precision to the previous models. It is also unclear why the authors did not choose the high-speed video system that they previously published for detailed analyses of pain behaviors (Abdus-Saboor et al., 2019), despite evidence that multiple itch parameters can only be captured at high speed (Wimalasena, et al. 2021). The authors show that scratch-AID can accurately score multiple itch models (despite it being trained on chloroquine nape injection videos), but does not show whether it can distinguish itch behaviors induced by different mechanisms and mediators. For example, whether it can detect activation of different itch neuron populations (termed NP1, NP2 and NP3 by single cell transcriptomic analysis), or distinguish direct itch neuron activation by mediators such as chloroquine vs mast cell activators such as 48/80. Nonetheless, this study provides a great opportunity for the itch field to standardize behavior data acquisition and analysis, and will greatly enhance the throughput and quality of future itch behavior data.\n\nThe data are overall very convincing and the system an exciting advancement that will probably be widely used. I have some questions regarding data analysis and potential concerns for future users of the technology.\n\n1. Does the model distinguish ipsilateral vs contralateral scratches?\n\n2. Can the authors present the data in more detail? For example, present and compare both scratch bout count and total scratching time between scratch-AID and manual scoring for each of the itch models.\n\n3. This is probably a given but can the authors provide evidence that the model clearly distinguishes pain (by capsaicin injection) vs itch (chloroquine and histamine)?\n\n4. If all parameters are analyzed in more detail (average duration of scratch bouts, temporal distribution of scratches across the imaging period), can the model distinguish the differences between NP1(by \u03b2-alanine), NP2(by chloroquine) and NP3(by 5-HT) activation?\n\n5. Can the model distinguish direct neuronal activation (chloroquine) vs immune cell activation (48/80, anti-IgE)?\n\n6. Since the training is done with black mice, can the model detect itch behavior by white mice?\n\n7. Can the authors comment on how the new system compares to previous itch-counting apparatus (such as SCLABA-REAL) and previous neural network models?\n\n8. What's the max number of animals that can be recorded and analyzed in a single box?\n\n9. Since video quality is vital for correct predictions by neural networks, can the authors comment on the influence of potential confounding factors (urine and feces, wear and tear of the acrylic imaging surface).\n\n10. This is potentially a great opportunity for the itch field to standardize the itch behavior assay. Can the authors comment briefly in the discussion on other aspects of standardization such as time of the day for experiments (circadian rhythm), injection volumes, habituation, and sexual dimorphism?\n\n11. Can the authors discuss how the rest of the field can apply the system in their own research? Will it be released as an open source software? And will the custom video box be commercially available?\n",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a4c10f62-44cf-4098-ae6b-a086f81fac64",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C1",
+      "claim": "Mice are the most commonly used model animals for itch research and for development of anti-itch drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice are the most commonly used model animals for itch research and for development of anti-itch drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established practice in the field, representing common scientific knowledge about animal models in itch research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "4f43b835-cb71-47ca-aa7e-6f9e124e8339",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C2",
+      "claim": "Most laboratories manually quantify mouse scratching behavior to assess itch intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Most laboratories manually quantify mouse scratching behavior to assess itch intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes current standard practice in the field, representing established knowledge about methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "20ae32cb-ef07-4615-afba-bcb26c466b92",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C3",
+      "claim": "Manual quantification of mouse scratching behavior is labor-intensive and limits large-scale genetic or drug screenings.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is labor-intensive and limits large-scale genetic or drug screenings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of manual methods based on their time-consuming nature.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "1dea757b-99a9-4d0b-b33d-89a7b4233fdc",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C4",
+      "claim": "The Scratch-AID system can automatically identify and quantify mouse scratching behavior with high accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we developed a new system, Scratch-AID (Automatic Itch Detection), which could automatically identify and quantify mouse scratching behavior with high accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "fe4c2a59-5708-4d58-97f4-9610ccec09bd",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C5",
+      "claim": "The Scratch-AID system includes a custom-designed videotaping box to ensure high-quality and replicable mouse behavior recording.",
+      "claim_type": "EXPLICIT",
+      "source": "Our system included a custom-designed videotaping box to ensure high-quality and replicable mouse behavior recording and a convolutional recurrent neural network trained with frame-labeled mouse scratching behavior videos, induced by nape injection of chloroquine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design and components of the system developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "60bf3409-c8e9-4814-874d-214f6ff7471e",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C6",
+      "claim": "The Scratch-AID system uses a convolutional recurrent neural network trained with frame-labeled mouse scratching behavior videos induced by nape injection of chloroquine.",
+      "claim_type": "EXPLICIT",
+      "source": "Our system included a custom-designed videotaping box to ensure high-quality and replicable mouse behavior recording and a convolutional recurrent neural network trained with frame-labeled mouse scratching behavior videos, induced by nape injection of chloroquine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the neural network architecture and training data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "2c67f4b2-6f9d-4fac-bad1-c08ee5c80405",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C7",
+      "claim": "The best trained network achieved 97.6% recall and 96.9% precision on previously unseen test videos.",
+      "claim_type": "EXPLICIT",
+      "source": "The best trained network achieved 97.6% recall and 96.9% precision on previously unseen test videos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from testing the trained model on test videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "44b5908a-be2b-4300-8c92-bb5e76913eaf",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C8",
+      "claim": "Scratch-AID can reliably identify scratching behavior in the acute cheek model.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, Scratch-AID could reliably identify scratching behavior in other major mouse itch models, including the acute cheek model, the histaminergic model, and a chronic itch model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing the system's performance on different itch models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "c55dfffc-e067-4ade-8981-c2f4c6a2feee",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C9",
+      "claim": "Scratch-AID can reliably identify scratching behavior in the histaminergic model.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, Scratch-AID could reliably identify scratching behavior in other major mouse itch models, including the acute cheek model, the histaminergic model, and a chronic itch model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing the system's performance on different itch models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "363c981e-99f5-4892-8cd8-0fa353abf8c3",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C10",
+      "claim": "Scratch-AID can reliably identify scratching behavior in a chronic itch model.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, Scratch-AID could reliably identify scratching behavior in other major mouse itch models, including the acute cheek model, the histaminergic model, and a chronic itch model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing the system's performance on different itch models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "e3a10007-9900-4018-91bc-7dedafbdbead",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C11",
+      "claim": "Scratch-AID detected significant differences in scratching behavior between control and mice treated with an anti-itch drug.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our system detected significant differences in scratching behavior between control and mice treated with an anti-itch drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the drug screening experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "cd29ca99-c154-4c6e-bb08-98ce93ca41bd",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C12",
+      "claim": "Chronic itch affects about 13\u201317% of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic itch affects about 13\u201317% of the population (Matterne et al., 2009; Weisshaar and Dalgard, 2009), severely worsening the quality of life of affected patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "9e901ca5-f328-441f-8998-33f5df58434f",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C13",
+      "claim": "Chronic itch severely worsens the quality of life of affected patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic itch affects about 13\u201317% of the population (Matterne et al., 2009; Weisshaar and Dalgard, 2009), severely worsening the quality of life of affected patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "33c56739-a33a-4a2b-8d52-eb5103c22cad",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C14",
+      "claim": "Treatment options for many chronic itch conditions are still limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, treatment options for many chronic itch conditions are still limited (Yosipovitch et al., 2018; Yu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "d36739ec-fdf4-4cf7-b9a5-0fb923d513b0",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C15",
+      "claim": "Mice are the most widely used model animals for studying itch mechanisms and for developing new preclinical anti-itch drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice are the most widely used model animals for studying itch mechanisms and for developing new preclinical anti-itch drugs (Han et al., 2013; Liu et al., 2009; Solinski et al., 2019; Sun and Chen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "8a4cc093-2440-4cf3-86a7-5f9bfdc43509",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C16",
+      "claim": "Itch is an unpleasant sensation that provokes the desire to scratch.",
+      "claim_type": "EXPLICIT",
+      "source": "Since itch is an unpleasant sensation that provokes the desire to scratch (Ikoma et al., 2006), scratching behavior has been assessed as a proxy for itch intensity in mice (Liu et al., 2009; Morita et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established knowledge about the nature of itch.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "70d330be-ab46-49c4-8f84-3bf8c6ae9f59",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C17",
+      "claim": "Scratching behavior has been assessed as a proxy for itch intensity in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Since itch is an unpleasant sensation that provokes the desire to scratch (Ikoma et al., 2006), scratching behavior has been assessed as a proxy for itch intensity in mice (Liu et al., 2009; Morita et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies and represents established methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "c452e2cb-9804-407f-976e-7ad35bcfa168",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C18",
+      "claim": "Quantification of mouse scratching behavior has been mainly conducted by watching videos and manually counting scratching bouts or the total scratching time.",
+      "claim_type": "EXPLICIT",
+      "source": "Till now, this quantification process has been mainly conducted by watching videos and manually counting scratching bouts or the total scratching time, which is tedious and time consuming, unavoidably introduces human errors and bias, and limits the large-scale genetic or drug screenings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes current standard practice in the field, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "5adcdc8a-460d-4115-97f4-bc95b37df287",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C19",
+      "claim": "Manual quantification of scratching behavior is tedious and time consuming.",
+      "claim_type": "EXPLICIT",
+      "source": "Till now, this quantification process has been mainly conducted by watching videos and manually counting scratching bouts or the total scratching time, which is tedious and time consuming, unavoidably introduces human errors and bias, and limits the large-scale genetic or drug screenings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the nature of manual methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "20486a4a-d29f-458f-a469-609dcba6ae74",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C20",
+      "claim": "Manual quantification of scratching behavior unavoidably introduces human errors and bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Till now, this quantification process has been mainly conducted by watching videos and manually counting scratching bouts or the total scratching time, which is tedious and time consuming, unavoidably introduces human errors and bias, and limits the large-scale genetic or drug screenings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of manual methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "ac458fdb-1b0c-4f6c-9f72-29e88c01bf76",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C21",
+      "claim": "Several research groups have tried different strategies to automate the quantification of mouse scratching behavior, including an acoustic recording method.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the biological importance and the obvious need, several research groups have tried different strategies to automate this process, including an acoustic recording method (Elliott et al., 2017), a method using magnetic field and metal ring to detect paw movement (Mu et al., 2017), and several video analysis-based approaches (Bohnslav et al., 2021; Kobayashi et al., 2021; Park et al., 2019; Sakamoto et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "0f2bf36f-238f-46a4-8d91-e99de96afb93",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C22",
+      "claim": "A method using magnetic field and metal ring to detect paw movement has been developed to automate quantification of mouse scratching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the biological importance and the obvious need, several research groups have tried different strategies to automate this process, including an acoustic recording method (Elliott et al., 2017), a method using magnetic field and metal ring to detect paw movement (Mu et al., 2017), and several video analysis-based approaches (Bohnslav et al., 2021; Kobayashi et al., 2021; Park et al., 2019; Sakamoto et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "c76aa703-2e76-4051-8170-4edcfb9db0ff",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C23",
+      "claim": "Several video analysis-based approaches have been developed to automate quantification of mouse scratching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the biological importance and the obvious need, several research groups have tried different strategies to automate this process, including an acoustic recording method (Elliott et al., 2017), a method using magnetic field and metal ring to detect paw movement (Mu et al., 2017), and several video analysis-based approaches (Bohnslav et al., 2021; Kobayashi et al., 2021; Park et al., 2019; Sakamoto et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "fbda441c-ca89-4eff-9aed-a7a0a430e240",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C24",
+      "claim": "Previous automated methods for quantifying mouse scratching behavior have not been widely adopted by other research laboratories.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these methods have not been widely adopted by other research laboratories, due to the uncertain performance of the trained models in different lab environments, the requirement of specialized equipment, and/or inadequate evaluation of these methods in different mouse itch models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of widespread use of these methods in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "02de3374-406e-4085-92dc-347db5005636",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C25",
+      "claim": "Previous automated methods have uncertain performance in different lab environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these methods have not been widely adopted by other research laboratories, due to the uncertain performance of the trained models in different lab environments, the requirement of specialized equipment, and/or inadequate evaluation of these methods in different mouse itch models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of previous methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "e4b30955-a11f-4ed7-8a6b-fbadd7eff9b9",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C26",
+      "claim": "Some previous automated methods require specialized equipment.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these methods have not been widely adopted by other research laboratories, due to the uncertain performance of the trained models in different lab environments, the requirement of specialized equipment, and/or inadequate evaluation of these methods in different mouse itch models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of previous methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "d5b952b0-1420-4f2d-ba6b-a456aab53ae7",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C27",
+      "claim": "Previous automated methods have inadequate evaluation in different mouse itch models.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these methods have not been widely adopted by other research laboratories, due to the uncertain performance of the trained models in different lab environments, the requirement of specialized equipment, and/or inadequate evaluation of these methods in different mouse itch models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of previous methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "3b6fde5b-08ba-4dad-b6af-9dd7cb0cd326",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C28",
+      "claim": "Convolutional neural networks (CNN) are widely used in computer visual recognition tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, convolutional neural networks (CNN) are widely used in computer visual recognition tasks (Gu et al., 2018), whereas recurrent neural networks (RNN) (Graves, 2013) are developed for analyzing temporal dynamic features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established knowledge in the field of deep learning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "30568790-1bf3-46e2-a0d8-78f0042d3341",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C29",
+      "claim": "Recurrent neural networks (RNN) are developed for analyzing temporal dynamic features.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, convolutional neural networks (CNN) are widely used in computer visual recognition tasks (Gu et al., 2018), whereas recurrent neural networks (RNN) (Graves, 2013) are developed for analyzing temporal dynamic features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established knowledge in the field of deep learning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "2da54f2c-616b-4700-b66d-22667f04f449",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C30",
+      "claim": "DeepLabCut can track different body parts in freely moving animals for behavior analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, DeepLabCut can track different body parts in freely moving animals for behavior analysis (Mathis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "6beac58d-1b7f-4125-b145-415a4d012941",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C31",
+      "claim": "DeepEthogram recognizes and annotates different behaviors of mice and flies.",
+      "claim_type": "EXPLICIT",
+      "source": "DeepEthogram recognizes and annotates different behaviors of mice and flies (Bohnslav et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "7ea9f3ab-2a71-4bd1-afcd-5155a5b00623",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C32",
+      "claim": "The videotaping box consists of two boxes with white acrylic walls joined by a transparent acrylic floor.",
+      "claim_type": "EXPLICIT",
+      "source": "It consisted of two boxes with white acrylic walls joined by a transparent acrylic floor (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the design of the videotaping box, supported by the figure showing the box.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "e086cc8c-eb05-4680-aa24-15255363ee0c",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C33",
+      "claim": "The top box of the videotaping system has dimensions of Length \u00d7 Width \u00d7 Height = 14.68 \u00d7 14.68 \u00d7 5 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "The top ('mouse') box (Length \u00d7 Width \u00d7 Height = 14.68 \u00d7 14.68 \u00d7 5 cm) had a lid for mouse access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific measurements of the videotaping box design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "13270078-980c-4f3e-93f5-496f7230ef90",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C34",
+      "claim": "The bottom box of the videotaping system has dimensions of Length \u00d7 Width \u00d7 Height = 14.68 \u00d7 14.68 \u00d7 23.6 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "The bottom ('camera') box (Length \u00d7 Width \u00d7 Height = 14.68 \u00d7 14.68 \u00d7 23.6 cm) had a door for access to the camera (Logitech C920e Business Webcam).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific measurements of the videotaping box design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "d505d031-87d1-49b7-94d0-8da0efa0f3e3",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C35",
+      "claim": "The camera recorded mouse behavior from the bottom at 30 frames per second.",
+      "claim_type": "EXPLICIT",
+      "source": "A mouse could freely move inside the top box, and a camera recorded mouse behavior from the bottom (30 frames/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the recording parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "c39e1b12-6bb2-4f85-8a29-0c9bcc6e1232",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C36",
+      "claim": "The bottom view can clearly capture the key body parts involved in scratching behavior, such as the scratching hind paw and mouth, and their movements in great details.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the top or side views, the bottom view can clearly capture the key body parts involved in scratching behavior, such as the scratching hind paw and mouth, and their movements in great details (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the video showing the bottom view recording.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "a5984797-b786-476e-b30e-1dbbb48f9255",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C37",
+      "claim": "Forty scratching videos from 10 adult wildtype C57 mice (5 males and 5 females, 2- to 3-month-old) were recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty scratching videos from 10 adult wildtype C57 mice (5 males and 5 females, 2- to 3-month-old) were recorded (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used for training and testing the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "351933c0-4bda-450f-b25a-b2563c674dd5",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C38",
+      "claim": "A scratching train usually contains four phases: start, scratching bout, paw licking, and end.",
+      "claim_type": "EXPLICIT",
+      "source": "Each episode of scratching, here defined as a scratching train, usually contained four phases: start (lifting the scratching hind paw toward the affected skin), scratching bout (rhythmic movement of hind paw against the affected skin), paw licking (putting the scratching hind paw into the mouth and licking), and end (putting down the scratching hind paw back to the floor) (Figure 1D and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the observed behavior patterns, supported by figure and video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "89460bb4-4eae-4a3b-be36-4e68eb8a971d",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C39",
+      "claim": "The cycle of scratching bout and paw licking might occur once or repeat multiple times, depending on the itch intensity and the internal state of the mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "The cycle of scratching bout and paw licking might occur once or repeat multiple times, depending on the itch intensity and the internal state of the mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on observations of scratching behavior.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "13c6eb6e-fe4b-4e49-be28-12014b37f995",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C40",
+      "claim": "The total scratching time is the sum of durations of all scratching trains.",
+      "claim_type": "EXPLICIT",
+      "source": "The total scratching time is the sum of durations of all scratching trains, which is an effective parameter to quantify the scratching behavior and assess itch intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines a measurement parameter used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "841fa40f-9a7e-4430-9ed7-417a8ba8a8e4",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C41",
+      "claim": "The total scratching time is an effective parameter to quantify the scratching behavior and assess itch intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "The total scratching time is the sum of durations of all scratching trains, which is an effective parameter to quantify the scratching behavior and assess itch intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established practice in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "9e057d5e-a5df-4a39-b670-579db60db09c",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C42",
+      "claim": "Manual annotation results were produced by 10 human observers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our manual annotation results were produced by 10 human observers, thus reflecting an averaged precision of the manual quantification process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for creating the manual annotation dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "a26fdd48-b552-43fb-bbc6-78de77b54eae",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C43",
+      "claim": "The scratching hind paw displays rhythmic movement during scratching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most obvious dynamic features was the rhythmic movement of the scratching hind paw (Figure 1\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "78878c4f-f13f-48e7-9ccc-6ce957640555",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C44",
+      "claim": "The CRNN contains a CNN (ResNet-18) that extracts static features.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRNN contained a CNN (ResNet-18 He et al., 2016; Figure 2\u2014figure supplement 1B) that extracts static features, such as the relative position of different body parts, an RNN (two-layer bidirectional gated recurrent unit [GRU]; Dey and Salem, 2017; Figure 2\u2014figure supplement 1C) that extracts dynamic features, such as the rhythmic movement of the scratching hind paw in consecutive frames, and a fully connected layer (the classifier) to combine the features extracted by both CNN and RNN and generate the prediction output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the architecture of the neural network designed for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "e89f4222-1e29-46f8-abd0-07c0011b5502",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C45",
+      "claim": "The CRNN contains an RNN (two-layer bidirectional GRU) that extracts dynamic features.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRNN contained a CNN (ResNet-18 He et al., 2016; Figure 2\u2014figure supplement 1B) that extracts static features, such as the relative position of different body parts, an RNN (two-layer bidirectional gated recurrent unit [GRU]; Dey and Salem, 2017; Figure 2\u2014figure supplement 1C) that extracts dynamic features, such as the rhythmic movement of the scratching hind paw in consecutive frames, and a fully connected layer (the classifier) to combine the features extracted by both CNN and RNN and generate the prediction output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the architecture of the neural network designed for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "d6315595-79df-48cd-a4b7-0f1aead6db11",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C46",
+      "claim": "The CRNN contains a fully connected layer (the classifier) to combine the features extracted by both CNN and RNN and generate the prediction output.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRNN contained a CNN (ResNet-18 He et al., 2016; Figure 2\u2014figure supplement 1B) that extracts static features, such as the relative position of different body parts, an RNN (two-layer bidirectional gated recurrent unit [GRU]; Dey and Salem, 2017; Figure 2\u2014figure supplement 1C) that extracts dynamic features, such as the rhythmic movement of the scratching hind paw in consecutive frames, and a fully connected layer (the classifier) to combine the features extracted by both CNN and RNN and generate the prediction output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the architecture of the neural network designed for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "33932c8f-9708-4d6b-850b-01da07f5f3c5",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C47",
+      "claim": "The 40 videos were randomly split into 80% for training dataset (32 videos from 8 mice) and 20% for test dataset (8 videos from 2 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "The 40 videos were randomly split into two parts, 80% of them (32 videos from 8 mice) were assigned to the training dataset and 20% of them (8 videos from 2 mice) to the test dataset (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology for splitting the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "0a172aac-fc4d-4d0c-9163-aa0c1884eb92",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C48",
+      "claim": "The average duration of one cycle of scratching bout and paw licking was around 30 frames in the CQ triggered acute nape itch model.",
+      "claim_type": "EXPLICIT",
+      "source": "In CQ triggered acute nape itch model, the average duration of one cycle of scratching bout and paw licking was around 30 frames (Figure 2\u2014figure supplement 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "68f0e48c-7125-4956-84dc-c160e06c0bf5",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C49",
+      "claim": "A range of input length from 3 to 45 frames was tested for model training.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we tested a range of input length from 3 to 45 frames for model training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for optimizing the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "b60c757d-26f2-49f8-91b4-65e46967ce6d",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C50",
+      "claim": "After 10 epochs, the prediction accuracy reached a plateau.",
+      "claim_type": "EXPLICIT",
+      "source": "After 10 epochs (one epoch means the training covers the complete training dataset for one round), the accuracy reached a plateau (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "faea57a5-53d7-44b8-a8fc-0376e9abc4fe",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C51",
+      "claim": "The prediction accuracies were more than 0.98 for all input lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "The prediction accuracies were more than 0.98 for all input length, improving slightly with the increase of the input length (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "9f6c1c84-2641-4c66-874b-c9a47af72ecb",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C52",
+      "claim": "Prediction accuracy improved slightly with the increase of the input length.",
+      "claim_type": "EXPLICIT",
+      "source": "The prediction accuracies were more than 0.98 for all input length, improving slightly with the increase of the input length (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "f1596929-c4a5-404d-8c4a-29de7e56814c",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C53",
+      "claim": "For all different combinations of training and test videos, F1 scores were all above 0.9.",
+      "claim_type": "EXPLICIT",
+      "source": "To rule out the possibility that the good performance of our models was due to a specific combination of the training and test datasets, we rotated the training and test videos for cross-validation. For all different combination of training and test videos, F1 scores were all above 0.9 (Figure 3\u2014figure supplement 1A, B), supporting the stable and high performance of our prediction models.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "aaec453f-004e-4837-9581-2f30f3d84ddc",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C54",
+      "claim": "The prediction model performed better with increased input length.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the prediction model performed better with the increased input length (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "05b00374-fd33-448a-a11a-bc02c015c6d7",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C55",
+      "claim": "The best model was the one trained with videos 1\u201332 with the input length of 45 (N = 45).",
+      "claim_type": "EXPLICIT",
+      "source": "The best model, the one trained with videos 1\u201332 with the input length of 45 (N = 45), was selected for additional analyses and tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection of the best performing model based on the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "198398d9-b969-44a6-a302-a6a236c4a972",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C56",
+      "claim": "The average recall and precision of manual annotation were 95.1% and 94.2%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This performance was similar to or even slightly better than that of manual annotation, which had an average recall and precision of 95.1% and 94.2%, respectively (Figure 3C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "ba5e9afd-c6d0-441d-9d22-f1bf80bacc72",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C57",
+      "claim": "The average discrepancy of the model prediction compared to reference annotation was 1.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the total scratching time to the reference annotation, the average discrepancy of the model prediction was 1.9% whereas that of manual annotation was 2.1% (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "6589b3da-3343-4559-95c5-29316dcd1490",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C58",
+      "claim": "The average discrepancy of manual annotation compared to reference annotation was 2.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the total scratching time to the reference annotation, the average discrepancy of the model prediction was 1.9% whereas that of manual annotation was 2.1% (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "ba9aa307-e47f-44c9-ab40-f075c30be3c2",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C59",
+      "claim": "The correlation between the model prediction and the reference annotation was 0.98.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the model prediction and the reference annotation was 0.98, similar to the manual annotation results (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "0eeb2892-3b3e-48d2-8e06-80a399b00c24",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C60",
+      "claim": "The trained neural network model focused on the scratching hind paw to recognize mouse scratching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The most salient parts were centered around the scratching hind paw in the scratching frames (Figure 4A, B and Figure 4\u2014figure supplement 1A), suggesting that the prediction model focused on the features of the scratching hind paw.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by saliency map analysis shown in the figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "c626d2b3-ff88-41da-85ee-5f1f5ce9d7e7",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C61",
+      "claim": "The dominant prediction error of the trained neural network model was Type 3 error (blurred boundary), accounting for around 3% of the total scratching frames.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the dominant prediction error of the trained neural network model was Type 3 error, accounting for around 3% of the total scratching frames, followed by Type 2 and 5 errors accounting for around 1% (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by error analysis data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "f8d17ae4-a163-4c00-89a3-816d18d71aa6",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C62",
+      "claim": "For manual quantification, the major errors came from Types 3 and 4, accounting for 10% and 8% of the total scratching frames, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For manual quantification, the major errors came from Types 3 and 4, accounting for 10% and 8% of the total scratching frames, respectively (Figure 3\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by error analysis data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "72f6cd31-7e79-4600-89d5-6b8cc383f133",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C63",
+      "claim": "All false positive scratching trains predicted by the model were shorter than 10 frames (0.3 s).",
+      "claim_type": "EXPLICIT",
+      "source": "For Type 1 error of the model prediction (Figure 3\u2014figure supplement 2C1\u2013C3), the durations of all false positive scratching trains were shorter than 10 frames (0.3 s) (Figure 3\u2014figure supplement 2C2) and temporarily close to a real scratching train (within 30 frames, <1 s) (Figure 3\u2014figure supplement 2C3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by error analysis data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "7b27678f-bd00-4df2-ac98-6fa24c2fe404",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C64",
+      "claim": "All missed scratching trains (Type 2 error) were shorter than 40 frames (<1.3 s).",
+      "claim_type": "EXPLICIT",
+      "source": "The models might miss short scratching trains, hence caused the Type 2 error. Indeed, all missed scratching trains were shorter than 40 frames (<1.3 s) (Figure 3\u2014figure supplement 2D1, D2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by error analysis data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "300fdb4d-b161-494b-b055-b403522e2bcd",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C65",
+      "claim": "For all scratching trains lasting less than 30 frames (<1 s), 18.5% of them were missed by the model prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "For all scratching trains lasting less than 30 frames (<1 s), 18.5% of them were missed by the model prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by error analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "dacc2126-2f86-4f91-b4fa-7f41c9d85a40",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C66",
+      "claim": "The average start and end frame shift of the model prediction were 2.2 and 7.0 frames.",
+      "claim_type": "EXPLICIT",
+      "source": "The average start and end frame shift of the model prediction were 2.2 and 7.0 frames (Figure 3\u2014figure supplement 2E3), while those of the manual annotation were 11.5 and 12.8 frames (Figure 3\u2014figure supplement 3D1, D2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by error analysis data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "22e5947b-7dbb-41d4-9bc5-a0634b95d9ac",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C67",
+      "claim": "The average start and end frame shift of manual annotation were 11.5 and 12.8 frames.",
+      "claim_type": "EXPLICIT",
+      "source": "The average start and end frame shift of the model prediction were 2.2 and 7.0 frames (Figure 3\u2014figure supplement 2E3), while those of the manual annotation were 11.5 and 12.8 frames (Figure 3\u2014figure supplement 3D1, D2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by error analysis data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "1cec07d4-e15b-4a15-a934-1a15afaf7083",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C68",
+      "claim": "The start of a scratching train was more accurately recognized by the model than the end of a scratching train.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the start of a scratching train was more accurately recognized by the model than the end of a scratching train (Figure 3\u2014figure supplement 2E3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by error analysis data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "38020ed4-f4fb-407c-85ea-bcd1aec40f5e",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C69",
+      "claim": "All missed intervals (Type 4 error) were shorter than 30 frames (<1 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Type 4 error was caused when two adjacent scratching trains were too close to each other and were predicted as one scratching train (Figure 3\u2014figure supplement 2F1\u2013F3). All missed intervals were shorter than 30 frames (<1 s) (Figure 3\u2014figure supplement 2F2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by error analysis data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "3ba2e6e5-0d9d-4a16-9769-c1ed05585802",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C70",
+      "claim": "More than 80% of mispredicted intervals in Type 5 error were within or partially overlapped with a paw licking phase.",
+      "claim_type": "EXPLICIT",
+      "source": "When reviewing these intervals, we found that more than 80% of them were within or partially overlapped with a paw licking phase (Figure 3\u2014figure supplement 2G3), especially when the duration of the paw licking was more than 30 frames (Figure 3\u2014figure supplement 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by error analysis data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "71f2f9b9-fec4-4e2b-ba4a-52bf315be419",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C71",
+      "claim": "The Scratch-AID prediction had 93.4% recall, 94.8% precision, and 0.941 F1 score for the cheek model.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scratch-AID prediction had 93.4% recall, 94.8% precision, and 0.941 F1 score (Figure 5B), while those of manual quantification were 96.0%, 88.6%, and 0.919 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "1b5b06e7-b8ba-41a4-af64-fd843cd6d8f2",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C72",
+      "claim": "Manual quantification had 96.0% recall, 88.6% precision, and 0.919 F1 score for the cheek model.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scratch-AID prediction had 93.4% recall, 94.8% precision, and 0.941 F1 score (Figure 5B), while those of manual quantification were 96.0%, 88.6%, and 0.919 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "d5ad3dd4-188d-466e-ac5d-8e560d453395",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C73",
+      "claim": "The correlation between the Scratch-AID prediction and reference annotation was 0.9926 for the cheek model.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the Scratch-AID prediction and reference annotation was 0.9926, and that of the manual quantification was 0.9876 (Figure 5D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "9701518d-e976-414d-924b-c7a188b0dc1a",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C74",
+      "claim": "The correlation between manual quantification and reference annotation was 0.9876 for the cheek model.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the Scratch-AID prediction and reference annotation was 0.9926, and that of the manual quantification was 0.9876 (Figure 5D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "b78acf7d-c493-4ab8-997f-b0bf7c708007",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C75",
+      "claim": "The recall, precision, and F1 score from the Scratch-AID prediction for the histamine model were 96.6%, 90.91%, and 0.936.",
+      "claim_type": "EXPLICIT",
+      "source": "The recall, precision, and F1 score from the Scratch-AID prediction were 96.6%, 90.91%, and 0.936 (Figure 5H), while those of the manual annotation were 96.3%, 80.5%, and 0.877 (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "1d288b61-444c-4e71-959e-ae574d35e706",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C76",
+      "claim": "The recall, precision, and F1 score from manual annotation for the histamine model were 96.3%, 80.5%, and 0.877.",
+      "claim_type": "EXPLICIT",
+      "source": "The recall, precision, and F1 score from the Scratch-AID prediction were 96.6%, 90.91%, and 0.936 (Figure 5H), while those of the manual annotation were 96.3%, 80.5%, and 0.877 (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "9fb8e0c6-0ffd-4614-929d-fbe56f27fd9f",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C77",
+      "claim": "The correlation between the Scratch-AID prediction and reference annotation is 0.9707 for the histamine model.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the Scratch-AID prediction and reference annotation is 0.9707, and that of the manual quantification is 0.9895 (Figure 5J, K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "c002fcaa-74cc-4c22-8106-543cfa5b8ba1",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C78",
+      "claim": "The correlation between manual quantification and reference annotation is 0.9895 for the histamine model.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the Scratch-AID prediction and reference annotation is 0.9707, and that of the manual quantification is 0.9895 (Figure 5J, K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "fe4a17e2-05a5-427e-9774-10bc17e46bf2",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C79",
+      "claim": "Dynamic features of spontaneous scratching behavior under chronic itch conditions were different from those exhibited by the CQ acute itch model.",
+      "claim_type": "EXPLICIT",
+      "source": "Noticeably, dynamic features of spontaneous scratching behavior under this chronic itch condition were different from those exhibited by the CQ acute itch model: the total scratching time was less for the same given period of time (20 min) (Figure 6\u2014figure supplement 1A), and the average duration of the scratching trains was shorter (53 frames on average) than the acute scratching behavior induced by CQ (280 frames on average) (Figure 6\u2014figure supplement 1B and Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "a3c4c068-a1e7-40aa-95c1-6a822544356b",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C80",
+      "claim": "The recall, precision, and F1 score of the Scratch-AID prediction for the chronic itch model were 84.1%, 88.5%, and 0.862, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these considerable differences, the recall, precision, and F1 score of the Scratch-AID prediction were 84.1%, 88.5%, and 0.862, respectively, compared to 84.1%, 66.3%, and 0.740 of manual annotation (Figure 6B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "22f9d90a-b0ee-4824-9c6d-c37fa9b02cfe",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C81",
+      "claim": "The recall, precision, and F1 score of manual annotation for the chronic itch model were 84.1%, 66.3%, and 0.740.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these considerable differences, the recall, precision, and F1 score of the Scratch-AID prediction were 84.1%, 88.5%, and 0.862, respectively, compared to 84.1%, 66.3%, and 0.740 of manual annotation (Figure 6B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "05e59e5c-6548-4864-8ce2-f7d8d2356f21",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C82",
+      "claim": "The correlation between the model prediction and reference annotation was 0.9845 for the chronic itch model.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the model prediction and reference annotation was 0.9845 (Figure 6D), which was comparable to the manual annotation 0.9887 (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "0e81981f-d520-47b4-9f90-bcf0cd110f5e",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C83",
+      "claim": "The correlation between manual annotation and reference annotation was 0.9887 for the chronic itch model.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the model prediction and reference annotation was 0.9845 (Figure 6D), which was comparable to the manual annotation 0.9887 (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "c40b753e-2b06-4cb2-9d1e-cb3a9abc998c",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C84",
+      "claim": "Quantification of the total scratching time using the Scratch-AID showed a significant reduction with Benadryl treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the total scratching time (frames) using the Scratch-AID showed a significant reduction with Benardryl treatment (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "1c91f61e-4dc5-4097-86f6-afbb21228bf6",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C85",
+      "claim": "Manual annotation showed similar results to Scratch-AID in detecting the effect of Benadryl treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were found by manual annotation (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "509b9763-9557-40ac-8e5d-6b8711aa9a48",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C86",
+      "claim": "Variable video recording condition is a major barrier that has prevented the adoption of a trained neural network by different laboratories.",
+      "claim_type": "EXPLICIT",
+      "source": "Variable video recording condition is a major barrier that has prevented the adoption of a trained neural network by different laboratories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the challenges in the field based on the authors' understanding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "7901c406-fbf3-4230-8a33-97d936c0f0c0",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C87",
+      "claim": "Trained models usually do not perform well with videos recorded under different conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The trained models usually do not perform well with videos recorded under different conditions (illumination, field size, image resolution, magnification of mice, image angle, backgrounds, etc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known limitations of machine learning models.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "6eca8653-0319-4486-9ca3-416cea00f261",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C88",
+      "claim": "The performance of a prediction model positively correlates with the size of the training dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the performance of a prediction model positively corelates with the size of the training dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge in machine learning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "94793a97-f788-48b0-b8c0-ac86248e9670",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C89",
+      "claim": "ResNet and GRU make a good combination of deep learning architecture for analyzing animal behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that ResNet and GRU make a good combination of deep learning architecture for analyzing animal behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "5b52b286-da4c-4126-8214-c89e46dcddcf",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C90",
+      "claim": "The accuracy plateau was achieved after only 10 epochs of training.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our network design is highly efficient that the accuracy plateau was achieved after only 10 epochs of training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the training data shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "99ac890d-32b2-4fb2-8207-5b3b5918eb75",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C91",
+      "claim": "Scratch-AID is the first deep learning-based system that can achieve high accuracy and broad generalization for quantifying mouse scratching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "As far as we are aware, this is the first deep learning-based system that can achieve such high accuracy and broad generalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the system based on the authors' knowledge of the field.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "bbbcb321-ea7d-4332-bf67-051b14c3e935",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C92",
+      "claim": "A model trained with CQ induced acute nape itch videos could reliably recognize scratching behavior in other itch models.",
+      "claim_type": "EXPLICIT",
+      "source": "It is remarkable that a model trained with CQ induced acute nape itch videos could reliably recognize scratching behavior in other itch models, even when the body sites (nape vs. cheek) or the dynamics of scratching behavior (e.g., acute vs. chronic itch, different pruritogens) were different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing performance on different itch models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "811927ab-085a-4ae1-8f5b-2b146066e2c6",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "claim_id": "C93",
+      "claim": "The Scratch-AID system is ready to replace manual quantification.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with the well-trained prediction model that has a comparable performance as manual quantification, the Scratch-AID system is ready to replace the manual quantification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the performance data of the system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "381d8266-b6ed-4b9a-9930-8a4c4330e1c2",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Manual quantification of mouse scratching behavior is the current standard practice in the field but is labor-intensive, time-consuming, introduces human errors and bias, and limits large-scale genetic or drug screenings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C18-C20 establish the motivation for the study by describing current practice and its limitations. These are well-established facts in the field supported by common knowledge and logical inference about manual methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "933a16ce-9cd4-4e77-b087-be3bb98177f3",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous automated methods for quantifying mouse scratching behavior exist but have not been widely adopted due to uncertain performance in different lab environments, requirement of specialized equipment, and inadequate evaluation in different mouse itch models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 describe prior work and its limitations, supported by citations and reasonable inferences about why these methods have not been adopted. This provides context for the current study's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "16693f60-4325-4c11-9f39-961cc173a3e8",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A custom-designed videotaping box was developed with specific dimensions and bottom-view recording at 30 fps that clearly captures key body parts involved in scratching behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C32-C36 describe the videotaping system design with specific measurements and recording parameters. The design is well-documented with figures and represents a methodological contribution to ensure reproducible recording conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "5052edfa-5760-4078-85d0-46308436eeae",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Forty scratching videos from 10 mice were recorded using the CQ acute nape itch model, and scratching behavior was characterized into four phases with specific temporal dynamics, with manual annotation performed by 10 human observers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 and C48 describe the dataset creation and behavioral characterization. The methodology is clearly described with appropriate sample sizes and detailed behavioral definitions supported by figures showing the scratching phases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "f4ad663d-c06c-42f2-99e3-4d718892ebce",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A convolutional recurrent neural network (CRNN) was designed combining ResNet-18 CNN for extracting static features, bidirectional GRU RNN for extracting dynamic features, and a fully connected classifier layer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C44-C46 describe the neural network architecture. The design is well-documented with appropriate citations and figures showing the network structure. The combination of CNN and RNN is appropriate for capturing both spatial and temporal features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "ae8fff49-34a3-417f-b3ca-7a7156e8c42d",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The 40 videos were split 80/20 into training and test sets, and models were trained with input lengths ranging from 3-45 frames, achieving >0.98 accuracy after 10 epochs with slight improvement as input length increased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C49-C52 describe the training methodology and results. The data splitting and training parameters are clearly described, and the results are supported by figures showing training curves. The plateau after 10 epochs demonstrates efficient training.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "9a2b7bdd-a26f-400e-9808-476c16e2213c",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The best trained network (N=45, videos 1-32) achieved 97.6% recall and 96.9% precision on test videos, with cross-validation showing F1 scores above 0.9 for all training/test combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C53-C55 present the main performance results. The cross-validation approach strengthens the findings by ruling out specific dataset effects. The high performance metrics are well-documented with figures showing consistent results across different data splits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "28824382-c273-4186-8288-4ae10285ed9f",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model's performance (97.6% recall, 96.9% precision, 1.9% discrepancy, 0.98 correlation) was comparable to or slightly better than manual annotation (95.1% recall, 94.2% precision, 2.1% discrepancy, 0.98 correlation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 compare model performance to manual annotation. The comparison is appropriate and well-documented with figures. The similar or better performance compared to manual annotation is a key finding supporting the system's utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "ecc6af4d-e49b-4413-b793-3037da80abeb",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Saliency map analysis revealed that the trained neural network focused on the scratching hind paw to recognize mouse scratching behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by saliency map analysis shown in figures. This provides interpretability to the model's decision-making process and confirms it learned biologically relevant features.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "6fbcceeb-ebbe-4f9b-b7df-6d46bf5d4af9",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Detailed error analysis showed the model's dominant error was Type 3 (blurred boundary, ~3%), with the model outperforming manual annotation in boundary detection (2.2 vs 11.5 frame start shift, 7.0 vs 12.8 frame end shift) but missing some short scratching trains (<30 frames).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C70 provide comprehensive error analysis with specific quantification of different error types. The analysis is thorough and well-documented with supplementary figures. The comparison to manual annotation errors provides important context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "bc9a6eb3-e60c-4d24-8e53-ef18d869db04",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Scratch-AID reliably identified scratching behavior in the acute cheek model with 93.4% recall, 94.8% precision, 0.941 F1 score, and 0.9926 correlation, comparable to manual annotation performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C71-C74 demonstrate generalization to the cheek model. The performance metrics are well-documented with figures and show the model trained on nape scratching can generalize to a different body location, which is a significant finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "820a47f8-a8ed-4bb4-be52-210d65cf5ea1",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Scratch-AID reliably identified scratching behavior in the histaminergic model with 96.6% recall, 90.91% precision, 0.936 F1 score, and 0.9707 correlation, outperforming manual annotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C75-C78 demonstrate generalization to a different pruritogen (histamine vs chloroquine). The performance metrics are well-documented and show the model can generalize across different itch-inducing agents, supporting broad applicability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "c57b0ddf-97f8-40ea-8217-c62b67457042",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Scratch-AID identified scratching behavior in a chronic itch model (SADBE) with 84.1% recall, 88.5% precision, 0.862 F1 score, and 0.9845 correlation, despite different scratching dynamics (shorter trains, less total time), outperforming manual annotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C79-C83 demonstrate generalization to chronic itch with different behavioral dynamics. The lower but still good performance is appropriately contextualized by the different scratching characteristics. This is a strong test of generalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "cbf327cc-dbaa-4b5d-97c5-f8b044028352",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Scratch-AID detected significant differences in scratching behavior between control and Benadryl-treated mice in a drug screening paradigm, with results similar to manual annotation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C84, and C85 demonstrate practical application in drug screening. The significant difference detected by both methods validates the system's utility for pharmacological studies. Statistical significance is appropriately reported with p-values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "fc79bac8-654a-47a8-b94e-068856446ff9",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The Scratch-AID system can automatically identify and quantify mouse scratching behavior with high accuracy and broad generalization, representing the first deep learning-based system to achieve such performance, and is ready to replace manual quantification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C91-C93 present the main conclusions. These are well-supported by the comprehensive experimental data showing high accuracy across multiple itch models and comparable or better performance than manual annotation. The claim of being 'first' is qualified appropriately ('as far as we are aware').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "866b697d-ca41-4f11-9443-3044e3d00cdd",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Variable video recording conditions are a major barrier to adoption of trained neural networks by different laboratories, as models typically do not perform well with videos recorded under different conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 discuss a known limitation in the field based on established knowledge about machine learning model generalization. This motivates the custom videotaping box design and is a reasonable inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "3c0858c8-8ca9-4145-a4c7-5d902a340ba9",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The CRNN architecture combining ResNet and GRU is highly efficient for analyzing animal behaviors, achieving accuracy plateau after only 10 epochs, with performance positively correlating with training dataset size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 discuss the neural network design and training efficiency. C88 represents established machine learning knowledge, while C89-C90 are supported by the experimental results showing rapid convergence and good performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "beb04897-c736-4e11-a764-a4ec91a88ce5",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Chronic itch affects 13-17% of the population and severely worsens quality of life, with limited treatment options. Mice are widely used for studying itch mechanisms and developing anti-itch drugs, with scratching behavior serving as a proxy for itch intensity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 provide background context supported by citations. These establish the clinical significance and rationale for the research, representing well-established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    },
+    {
+      "id": "2da09380-4452-4c00-85d0-388d411a7f77",
+      "content_id": "532438f7-40f5-465c-880d-122ae0e841eb",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "CNNs are widely used for visual recognition tasks and RNNs for temporal analysis, with applications like DeepLabCut for body part tracking and DeepEthogram for behavior recognition in animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 provide background on deep learning methods supported by citations. This establishes the technical foundation and precedent for the approach used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:45:21.475664Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a4c10f62-44cf-4098-ae6b-a086f81fac64",
+      "result_id": "381d8266-b6ed-4b9a-9930-8a4c4330e1c2"
+    },
+    {
+      "claim_id": "4f43b835-cb71-47ca-aa7e-6f9e124e8339",
+      "result_id": "381d8266-b6ed-4b9a-9930-8a4c4330e1c2"
+    },
+    {
+      "claim_id": "20ae32cb-ef07-4615-afba-bcb26c466b92",
+      "result_id": "381d8266-b6ed-4b9a-9930-8a4c4330e1c2"
+    },
+    {
+      "claim_id": "c452e2cb-9804-407f-976e-7ad35bcfa168",
+      "result_id": "381d8266-b6ed-4b9a-9930-8a4c4330e1c2"
+    },
+    {
+      "claim_id": "5adcdc8a-460d-4115-97f4-bc95b37df287",
+      "result_id": "381d8266-b6ed-4b9a-9930-8a4c4330e1c2"
+    },
+    {
+      "claim_id": "20486a4a-d29f-458f-a469-609dcba6ae74",
+      "result_id": "381d8266-b6ed-4b9a-9930-8a4c4330e1c2"
+    },
+    {
+      "claim_id": "ac458fdb-1b0c-4f6c-9f72-29e88c01bf76",
+      "result_id": "933a16ce-9cd4-4e77-b087-be3bb98177f3"
+    },
+    {
+      "claim_id": "0f2bf36f-238f-46a4-8d91-e99de96afb93",
+      "result_id": "933a16ce-9cd4-4e77-b087-be3bb98177f3"
+    },
+    {
+      "claim_id": "c76aa703-2e76-4051-8170-4edcfb9db0ff",
+      "result_id": "933a16ce-9cd4-4e77-b087-be3bb98177f3"
+    },
+    {
+      "claim_id": "fbda441c-ca89-4eff-9aed-a7a0a430e240",
+      "result_id": "933a16ce-9cd4-4e77-b087-be3bb98177f3"
+    },
+    {
+      "claim_id": "02de3374-406e-4085-92dc-347db5005636",
+      "result_id": "933a16ce-9cd4-4e77-b087-be3bb98177f3"
+    },
+    {
+      "claim_id": "e4b30955-a11f-4ed7-8a6b-fbadd7eff9b9",
+      "result_id": "933a16ce-9cd4-4e77-b087-be3bb98177f3"
+    },
+    {
+      "claim_id": "d5b952b0-1420-4f2d-ba6b-a456aab53ae7",
+      "result_id": "933a16ce-9cd4-4e77-b087-be3bb98177f3"
+    },
+    {
+      "claim_id": "fe4c2a59-5708-4d58-97f4-9610ccec09bd",
+      "result_id": "16693f60-4325-4c11-9f39-961cc173a3e8"
+    },
+    {
+      "claim_id": "7ea9f3ab-2a71-4bd1-afcd-5155a5b00623",
+      "result_id": "16693f60-4325-4c11-9f39-961cc173a3e8"
+    },
+    {
+      "claim_id": "e086cc8c-eb05-4680-aa24-15255363ee0c",
+      "result_id": "16693f60-4325-4c11-9f39-961cc173a3e8"
+    },
+    {
+      "claim_id": "13270078-980c-4f3e-93f5-496f7230ef90",
+      "result_id": "16693f60-4325-4c11-9f39-961cc173a3e8"
+    },
+    {
+      "claim_id": "d505d031-87d1-49b7-94d0-8da0efa0f3e3",
+      "result_id": "16693f60-4325-4c11-9f39-961cc173a3e8"
+    },
+    {
+      "claim_id": "c39e1b12-6bb2-4f85-8a29-0c9bcc6e1232",
+      "result_id": "16693f60-4325-4c11-9f39-961cc173a3e8"
+    },
+    {
+      "claim_id": "a5984797-b786-476e-b30e-1dbbb48f9255",
+      "result_id": "5052edfa-5760-4078-85d0-46308436eeae"
+    },
+    {
+      "claim_id": "351933c0-4bda-450f-b25a-b2563c674dd5",
+      "result_id": "5052edfa-5760-4078-85d0-46308436eeae"
+    },
+    {
+      "claim_id": "89460bb4-4eae-4a3b-be36-4e68eb8a971d",
+      "result_id": "5052edfa-5760-4078-85d0-46308436eeae"
+    },
+    {
+      "claim_id": "13c6eb6e-fe4b-4e49-be28-12014b37f995",
+      "result_id": "5052edfa-5760-4078-85d0-46308436eeae"
+    },
+    {
+      "claim_id": "841fa40f-9a7e-4430-9ed7-417a8ba8a8e4",
+      "result_id": "5052edfa-5760-4078-85d0-46308436eeae"
+    },
+    {
+      "claim_id": "9e057d5e-a5df-4a39-b670-579db60db09c",
+      "result_id": "5052edfa-5760-4078-85d0-46308436eeae"
+    },
+    {
+      "claim_id": "a26fdd48-b552-43fb-bbc6-78de77b54eae",
+      "result_id": "5052edfa-5760-4078-85d0-46308436eeae"
+    },
+    {
+      "claim_id": "0a172aac-fc4d-4d0c-9163-aa0c1884eb92",
+      "result_id": "5052edfa-5760-4078-85d0-46308436eeae"
+    },
+    {
+      "claim_id": "60bf3409-c8e9-4814-874d-214f6ff7471e",
+      "result_id": "f4ad663d-c06c-42f2-99e3-4d718892ebce"
+    },
+    {
+      "claim_id": "78878c4f-f13f-48e7-9ccc-6ce957640555",
+      "result_id": "f4ad663d-c06c-42f2-99e3-4d718892ebce"
+    },
+    {
+      "claim_id": "e89f4222-1e29-46f8-abd0-07c0011b5502",
+      "result_id": "f4ad663d-c06c-42f2-99e3-4d718892ebce"
+    },
+    {
+      "claim_id": "d6315595-79df-48cd-a4b7-0f1aead6db11",
+      "result_id": "f4ad663d-c06c-42f2-99e3-4d718892ebce"
+    },
+    {
+      "claim_id": "33932c8f-9708-4d6b-850b-01da07f5f3c5",
+      "result_id": "ae8fff49-34a3-417f-b3ca-7a7156e8c42d"
+    },
+    {
+      "claim_id": "68f0e48c-7125-4956-84dc-c160e06c0bf5",
+      "result_id": "ae8fff49-34a3-417f-b3ca-7a7156e8c42d"
+    },
+    {
+      "claim_id": "b60c757d-26f2-49f8-91b4-65e46967ce6d",
+      "result_id": "ae8fff49-34a3-417f-b3ca-7a7156e8c42d"
+    },
+    {
+      "claim_id": "faea57a5-53d7-44b8-a8fc-0376e9abc4fe",
+      "result_id": "ae8fff49-34a3-417f-b3ca-7a7156e8c42d"
+    },
+    {
+      "claim_id": "9f6c1c84-2641-4c66-874b-c9a47af72ecb",
+      "result_id": "ae8fff49-34a3-417f-b3ca-7a7156e8c42d"
+    },
+    {
+      "claim_id": "2c67f4b2-6f9d-4fac-bad1-c08ee5c80405",
+      "result_id": "9a2b7bdd-a26f-400e-9808-476c16e2213c"
+    },
+    {
+      "claim_id": "f1596929-c4a5-404d-8c4a-29de7e56814c",
+      "result_id": "9a2b7bdd-a26f-400e-9808-476c16e2213c"
+    },
+    {
+      "claim_id": "aaec453f-004e-4837-9581-2f30f3d84ddc",
+      "result_id": "9a2b7bdd-a26f-400e-9808-476c16e2213c"
+    },
+    {
+      "claim_id": "05b00374-fd33-448a-a11a-bc02c015c6d7",
+      "result_id": "9a2b7bdd-a26f-400e-9808-476c16e2213c"
+    },
+    {
+      "claim_id": "198398d9-b969-44a6-a302-a6a236c4a972",
+      "result_id": "28824382-c273-4186-8288-4ae10285ed9f"
+    },
+    {
+      "claim_id": "ba5e9afd-c6d0-441d-9d22-f1bf80bacc72",
+      "result_id": "28824382-c273-4186-8288-4ae10285ed9f"
+    },
+    {
+      "claim_id": "6589b3da-3343-4559-95c5-29316dcd1490",
+      "result_id": "28824382-c273-4186-8288-4ae10285ed9f"
+    },
+    {
+      "claim_id": "ba9aa307-e47f-44c9-ab40-f075c30be3c2",
+      "result_id": "28824382-c273-4186-8288-4ae10285ed9f"
+    },
+    {
+      "claim_id": "0eeb2892-3b3e-48d2-8e06-80a399b00c24",
+      "result_id": "ecc6af4d-e49b-4413-b793-3037da80abeb"
+    },
+    {
+      "claim_id": "c626d2b3-ff88-41da-85ee-5f1f5ce9d7e7",
+      "result_id": "6fbcceeb-ebbe-4f9b-b7df-6d46bf5d4af9"
+    },
+    {
+      "claim_id": "f8d17ae4-a163-4c00-89a3-816d18d71aa6",
+      "result_id": "6fbcceeb-ebbe-4f9b-b7df-6d46bf5d4af9"
+    },
+    {
+      "claim_id": "72f6cd31-7e79-4600-89d5-6b8cc383f133",
+      "result_id": "6fbcceeb-ebbe-4f9b-b7df-6d46bf5d4af9"
+    },
+    {
+      "claim_id": "7b27678f-bd00-4df2-ac98-6fa24c2fe404",
+      "result_id": "6fbcceeb-ebbe-4f9b-b7df-6d46bf5d4af9"
+    },
+    {
+      "claim_id": "300fdb4d-b161-494b-b055-b403522e2bcd",
+      "result_id": "6fbcceeb-ebbe-4f9b-b7df-6d46bf5d4af9"
+    },
+    {
+      "claim_id": "dacc2126-2f86-4f91-b4fa-7f41c9d85a40",
+      "result_id": "6fbcceeb-ebbe-4f9b-b7df-6d46bf5d4af9"
+    },
+    {
+      "claim_id": "22e5947b-7dbb-41d4-9bc5-a0634b95d9ac",
+      "result_id": "6fbcceeb-ebbe-4f9b-b7df-6d46bf5d4af9"
+    },
+    {
+      "claim_id": "1cec07d4-e15b-4a15-a934-1a15afaf7083",
+      "result_id": "6fbcceeb-ebbe-4f9b-b7df-6d46bf5d4af9"
+    },
+    {
+      "claim_id": "38020ed4-f4fb-407c-85ea-bcd1aec40f5e",
+      "result_id": "6fbcceeb-ebbe-4f9b-b7df-6d46bf5d4af9"
+    },
+    {
+      "claim_id": "3ba2e6e5-0d9d-4a16-9769-c1ed05585802",
+      "result_id": "6fbcceeb-ebbe-4f9b-b7df-6d46bf5d4af9"
+    },
+    {
+      "claim_id": "44b5908a-be2b-4300-8c92-bb5e76913eaf",
+      "result_id": "bc9a6eb3-e60c-4d24-8e53-ef18d869db04"
+    },
+    {
+      "claim_id": "71f2f9b9-fec4-4e2b-ba4a-52bf315be419",
+      "result_id": "bc9a6eb3-e60c-4d24-8e53-ef18d869db04"
+    },
+    {
+      "claim_id": "1b5b06e7-b8ba-41a4-af64-fd843cd6d8f2",
+      "result_id": "bc9a6eb3-e60c-4d24-8e53-ef18d869db04"
+    },
+    {
+      "claim_id": "d5ad3dd4-188d-466e-ac5d-8e560d453395",
+      "result_id": "bc9a6eb3-e60c-4d24-8e53-ef18d869db04"
+    },
+    {
+      "claim_id": "9701518d-e976-414d-924b-c7a188b0dc1a",
+      "result_id": "bc9a6eb3-e60c-4d24-8e53-ef18d869db04"
+    },
+    {
+      "claim_id": "c55dfffc-e067-4ade-8981-c2f4c6a2feee",
+      "result_id": "820a47f8-a8ed-4bb4-be52-210d65cf5ea1"
+    },
+    {
+      "claim_id": "b78acf7d-c493-4ab8-997f-b0bf7c708007",
+      "result_id": "820a47f8-a8ed-4bb4-be52-210d65cf5ea1"
+    },
+    {
+      "claim_id": "1d288b61-444c-4e71-959e-ae574d35e706",
+      "result_id": "820a47f8-a8ed-4bb4-be52-210d65cf5ea1"
+    },
+    {
+      "claim_id": "9fb8e0c6-0ffd-4614-929d-fbe56f27fd9f",
+      "result_id": "820a47f8-a8ed-4bb4-be52-210d65cf5ea1"
+    },
+    {
+      "claim_id": "c002fcaa-74cc-4c22-8106-543cfa5b8ba1",
+      "result_id": "820a47f8-a8ed-4bb4-be52-210d65cf5ea1"
+    },
+    {
+      "claim_id": "363c981e-99f5-4892-8cd8-0fa353abf8c3",
+      "result_id": "c57b0ddf-97f8-40ea-8217-c62b67457042"
+    },
+    {
+      "claim_id": "fe4a17e2-05a5-427e-9774-10bc17e46bf2",
+      "result_id": "c57b0ddf-97f8-40ea-8217-c62b67457042"
+    },
+    {
+      "claim_id": "a3c4c068-a1e7-40aa-95c1-6a822544356b",
+      "result_id": "c57b0ddf-97f8-40ea-8217-c62b67457042"
+    },
+    {
+      "claim_id": "22f9d90a-b0ee-4824-9c6d-c37fa9b02cfe",
+      "result_id": "c57b0ddf-97f8-40ea-8217-c62b67457042"
+    },
+    {
+      "claim_id": "05e59e5c-6548-4864-8ce2-f7d8d2356f21",
+      "result_id": "c57b0ddf-97f8-40ea-8217-c62b67457042"
+    },
+    {
+      "claim_id": "0e81981f-d520-47b4-9f90-bcf0cd110f5e",
+      "result_id": "c57b0ddf-97f8-40ea-8217-c62b67457042"
+    },
+    {
+      "claim_id": "e3a10007-9900-4018-91bc-7dedafbdbead",
+      "result_id": "cbf327cc-dbaa-4b5d-97c5-f8b044028352"
+    },
+    {
+      "claim_id": "c40b753e-2b06-4cb2-9d1e-cb3a9abc998c",
+      "result_id": "cbf327cc-dbaa-4b5d-97c5-f8b044028352"
+    },
+    {
+      "claim_id": "1c91f61e-4dc5-4097-86f6-afbb21228bf6",
+      "result_id": "cbf327cc-dbaa-4b5d-97c5-f8b044028352"
+    },
+    {
+      "claim_id": "1dea757b-99a9-4d0b-b33d-89a7b4233fdc",
+      "result_id": "fc79bac8-654a-47a8-b94e-068856446ff9"
+    },
+    {
+      "claim_id": "99ac890d-32b2-4fb2-8207-5b3b5918eb75",
+      "result_id": "fc79bac8-654a-47a8-b94e-068856446ff9"
+    },
+    {
+      "claim_id": "bbbcb321-ea7d-4332-bf67-051b14c3e935",
+      "result_id": "fc79bac8-654a-47a8-b94e-068856446ff9"
+    },
+    {
+      "claim_id": "811927ab-085a-4ae1-8f5b-2b146066e2c6",
+      "result_id": "fc79bac8-654a-47a8-b94e-068856446ff9"
+    },
+    {
+      "claim_id": "509b9763-9557-40ac-8e5d-6b8711aa9a48",
+      "result_id": "866b697d-ca41-4f11-9443-3044e3d00cdd"
+    },
+    {
+      "claim_id": "7901c406-fbf3-4230-8a33-97d936c0f0c0",
+      "result_id": "866b697d-ca41-4f11-9443-3044e3d00cdd"
+    },
+    {
+      "claim_id": "6eca8653-0319-4486-9ca3-416cea00f261",
+      "result_id": "3c0858c8-8ca9-4145-a4c7-5d902a340ba9"
+    },
+    {
+      "claim_id": "94793a97-f788-48b0-b8c0-ac86248e9670",
+      "result_id": "3c0858c8-8ca9-4145-a4c7-5d902a340ba9"
+    },
+    {
+      "claim_id": "5b52b286-da4c-4126-8214-c89e46dcddcf",
+      "result_id": "3c0858c8-8ca9-4145-a4c7-5d902a340ba9"
+    },
+    {
+      "claim_id": "cd29ca99-c154-4c6e-bb08-98ce93ca41bd",
+      "result_id": "beb04897-c736-4e11-a764-a4ec91a88ce5"
+    },
+    {
+      "claim_id": "9e901ca5-f328-441f-8998-33f5df58434f",
+      "result_id": "beb04897-c736-4e11-a764-a4ec91a88ce5"
+    },
+    {
+      "claim_id": "33c56739-a33a-4a2b-8d52-eb5103c22cad",
+      "result_id": "beb04897-c736-4e11-a764-a4ec91a88ce5"
+    },
+    {
+      "claim_id": "d36739ec-fdf4-4cf7-b9a5-0fb923d513b0",
+      "result_id": "beb04897-c736-4e11-a764-a4ec91a88ce5"
+    },
+    {
+      "claim_id": "8a4cc093-2440-4cf3-86a7-5f9bfdc43509",
+      "result_id": "beb04897-c736-4e11-a764-a4ec91a88ce5"
+    },
+    {
+      "claim_id": "70d330be-ab46-49c4-8f84-3bf8c6ae9f59",
+      "result_id": "beb04897-c736-4e11-a764-a4ec91a88ce5"
+    },
+    {
+      "claim_id": "3b6fde5b-08ba-4dad-b6af-9dd7cb0cd326",
+      "result_id": "2da09380-4452-4c00-85d0-388d411a7f77"
+    },
+    {
+      "claim_id": "30568790-1bf3-46e2-a0d8-78f0042d3341",
+      "result_id": "2da09380-4452-4c00-85d0-388d411a7f77"
+    },
+    {
+      "claim_id": "2da54f2c-616b-4700-b66d-22667f04f449",
+      "result_id": "2da09380-4452-4c00-85d0-388d411a7f77"
+    },
+    {
+      "claim_id": "6beac58d-1b7f-4125-b145-415a4d012941",
+      "result_id": "2da09380-4452-4c00-85d0-388d411a7f77"
+    }
+  ],
+  "comparisons": []
+}

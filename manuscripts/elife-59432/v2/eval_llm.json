@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Proteomic analysis of SNX27 in rat cortical neurons identified 212 high-confidence interacting proteins, including established interactors (retromer, WASH complex) and novel cargoes with neuronal functions. Sixteen proteins contained optimal Type I PDZ binding motifs, with seven being integral membrane proteins including SLC1A3, SLC4A7, SLC6A11, KCNT2, KIDINS220, ADAM22, and LRFN2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe a systematic proteomic screen with appropriate controls (GFP-SNX27 localization to endosomes, C27), stringent filtering criteria (log-fold change >2, p<0.05, C28-C29), validation through known interactors (C30), and gene ontology analysis (C31). The identification of PDZ-binding motif-containing proteins (C32-C33) is well-supported by the methodology and includes appropriate citations for motif requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "AMPA receptor subunits were not detected as high-confidence SNX27 interactors in the proteomic screen, and multiple independent co-immunoprecipitation experiments in HEK293T cells and primary neurons failed to detect direct binding between SNX27 and AMPA receptor subunits (GluA1-4), suggesting SNX27-dependent AMPA receptor recycling is principally controlled by indirect binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 present converging negative evidence from multiple experimental approaches: proteomics (C34-C35), co-IP in HEK293T cells with human SNX27 (C36-C37), co-IP with rat SNX27 (C38), and co-IP in primary neurons (C39). Positive controls (SLC1A3, SLC4A7) validate the experimental approach (C36). The conclusion of indirect binding (C40) is appropriately cautious and supported by citation to prior ITC data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "LRFN1, LRFN2, and LRFN4 directly associate with SNX27 through their C-terminal PDZ binding motifs. The SNX27 PDZ domain binds the LRFN2 PDZ binding motif with Kd=1.6 \u00b5M, enhanced to Kd<1.0 \u00b5M by VPS26. This interaction was confirmed with endogenous LRFN2 in primary neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 provide multiple lines of evidence: co-IP experiments showing PDZ-motif dependence (C45-C47), direct binding measurements by ITC with quantitative affinity values (C48-C49), and validation with endogenous proteins in neurons (C50). The mutagenesis experiments (C47) and VPS26 enhancement (C49) are consistent with established SNX27 binding mechanisms and include appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "SNX27 suppression leads to reduced total and surface levels of LRFN2 (~50% total, ~52% surface) and increased LRFN2 colocalization with lysosomes (~27% increase), consistent with LRFN2 requiring SNX27 for retrieval from lysosomal degradation. SNX27 suppression also reduced surface GluA1 (~37%) and GluA2 (~64%) without affecting transferrin receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 present a coherent trafficking story with appropriate controls (transferrin receptor, C56), statistical analysis (unpaired t-tests with reported n, t, and p values), and consistency with established SNX27 cargo behavior (C53 cites Steinberg et al., 2013). The colocalization data (C52, C58) and surface biotinylation experiments (C54-C57) use complementary approaches. The conclusion (C59) appropriately synthesizes the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "LRFN2 shows overlapping surface distribution with AMPA receptors in dendrites and associates with GluA1 and GluA2 subunits. This association is principally mediated by the extracellular LRR and Ig domains of LRFN2, with deletion of these domains reducing binding by ~56-67%, and further deletion of the fibronectin III domain reducing binding by ~79-94%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 combine imaging data showing spatial overlap (C61) with biochemical co-IP experiments (C62) and systematic domain deletion analysis (C63-C64) with appropriate statistical testing (unpaired t-tests, n=4, with reported statistics). The progressive reduction in binding with sequential deletions provides strong evidence for the domain requirements. The conclusions (C65-C66) are appropriately supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "SNX27 suppression reduced surface expression of both GluA1 (~16%) and GluA2 (~34%), while LRFN2 suppression specifically reduced GluA2 surface expression (~40%) without affecting GluA1, suggesting differential regulation of AMPA receptor subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 use immunofluorescence with appropriate non-parametric statistics (Mann-Whitney U test, n=50) and include proper controls. The differential effect of LRFN2 on GluA2 vs GluA1 (C69-C70) is particularly interesting and well-supported by the statistical analysis (p<0.0001 for GluA2, p=0.8813 for GluA1). This is consistent with the biochemical data and suggests subunit-specific mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Suppression of SNX27 or LRFN2 increased internalized GluA2 intensity in the cell body and proximal dendrites (~43% and ~14% increases respectively), with GluA2 colocalizing with both endosomal (VPS35) and lysosomal (LAMP1) markers, suggesting perturbed recycling and increased retention in the endo-lysosomal system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 use appropriate trafficking assays with pulse-chase labeling and colocalization with organelle markers. The statistical analysis is appropriate (Mann-Whitney test, n=58) and the interpretation (C73) is cautious and consistent with the data. The differential magnitude of effects (SNX27 > LRFN2) is consistent with SNX27 having additional cargoes beyond LRFN2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In vivo suppression of SNX27 or LRFN2 in rat hippocampus reduced excitatory synaptic transmission (measured by fEPSPs), with SNX27 producing a larger effect than LRFN2. LRFN2 suppression also attenuated hippocampal LTP induction, indicating LRFN2 plays an important role in functional AMPA receptor expression and synaptic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 present ex vivo electrophysiology data with appropriate experimental design (lentiviral injection, 6-8 week expression, contralateral controls) and statistical analysis (two-way repeated-measures ANOVA for input-output curves, paired t-tests for LTP). The LTP data (C78-C80) shows robust potentiation in controls (p=0.011) but not in LRFN2 knockdown (p=0.15), supporting the conclusion. The comparison between SNX27 and LRFN2 effects (C76) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The SNX27 neuronal interactome includes proteins linked to various neurological conditions: SLC1A3 and SLC4A7 (glutamate neurotoxicity), SLC6A11 (GABAergic tone), KCNT2 (epileptic encephalopathies), KIDINS220 (spastic paraplegia and intellectual disability), and ADAM22 (epilepsy with auditory features).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33, C83-C88 appropriately cite published literature linking each identified protein to specific neurological functions and diseases. These claims provide important context for understanding SNX27-associated pathologies and are well-supported by the citations. However, the functional significance of these interactions for SNX27-mediated pathology would require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "SNX27 is an endosomal sorting protein containing a PDZ domain that binds both retromer and PDZ-binding motifs on cargo proteins, regulating their recycling to the plasma membrane. SNX27 dysfunction is linked to Down's syndrome and various neuropathologies, with established roles in trafficking AMPA, NMDA, serotonin receptors, and GIRK channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C23 provide essential background information that is well-supported by appropriate citations to published literature. These claims establish the known functions of SNX27 and the rationale for the current study. All statements are appropriately referenced and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior work by Clairfeuille and colleagues using isothermal titration calorimetry failed to detect quantifiable binding between SNX27 and AMPA receptor subunits GluA1 and GluA2, even with GluA1 phosphorylation or VPS26 association, which normally enhances SNX27 binding to other cargoes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 accurately cite prior published work (Clairfeuille et al., 2016) that provides important context for the current study's findings. The citation is appropriate and the description of the prior negative results is accurate. This establishes the rationale for investigating indirect mechanisms of SNX27-AMPA receptor interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "LRFN2 belongs to a family of five synaptic adhesion-like molecules (LRFN1-5), with LRFN1, LRFN2, and LRFN4 containing Type I PDZ binding motifs. LRFN1 and LRFN4 were detected in the raw proteomic data but filtered out because they were not quantified across all three biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 provide appropriate background on the LRFN family (C41-C43, with citations to Lie et al., 2018; Seabold et al., 2008) and transparently report the proteomic filtering decisions (C44). The explanation for why LRFN1 and LRFN4 were excluded from the final interactome is methodologically sound and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C82",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "LRFN2 and AMPA receptors are linked to various neurological and psychiatric disorders. LRFN2 is associated with antisocial personality disorder, autism, schizophrenia, working memory deficits, and learning disabilities, and shows the highest reduction among synaptic proteins in Alzheimer's disease, Parkinson's disease with dementia, and dementia with Lewy bodies, correlating with cognitive decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C82, C89-C95 provide important clinical and pathological context, all appropriately supported by citations to published literature. The claims about LRFN2's association with various conditions (C93-C95) and AMPA receptors' role in neurological disorders (C89-C92) establish the translational relevance of the findings. All statements are properly referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C96",
+      "C97"
+    ],
+    "result": "SNX27 controls AMPA receptor-mediated synaptic transmission and plasticity indirectly through sorting of LRFN2. Suppression of SNX27 reduces LRFN2 expression, leading to loss of surface GluA2 expression and reduced synaptic activity, providing a new mechanism for AMPA receptor regulation and insight into SNX27- and LRFN2-associated neurological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8, C96-C97 represent the main conclusions of the study, synthesizing the experimental findings into a coherent model. These conclusions are well-supported by the collective evidence from proteomics, biochemistry, cell biology, and electrophysiology experiments. The claims appropriately acknowledge this as an 'additional mechanism' (C8, C97) rather than the sole mechanism, recognizing the complexity of AMPA receptor regulation.",
+    "result_type": "MAJOR"
+  }
+]

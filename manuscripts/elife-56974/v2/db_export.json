@@ -1,0 +1,2048 @@
+{
+  "submission": {
+    "id": "5b87d486-7375-4212-866d-96e53a971157",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:56:39.241405Z",
+    "updated_at": "2025-12-03T02:56:39.241405Z"
+  },
+  "content": [
+    {
+      "id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "submission_id": "5b87d486-7375-4212-866d-96e53a971157",
+      "content_type": "manuscript",
+      "content_text": "# Spatio-temporal associations between deforestation and malaria incidence in Lao PDR\n\n## Authors\n\n- Francois Rerolle<sup>1</sup> ([ORCID: 0000-0002-3837-5700](https://orcid.org/0000-0002-3837-5700)) \u2020\n- Emily Dantzer<sup>1</sup>\n- Andrew A Lover<sup>3</sup> ([ORCID: 0000-0002-2181-3559](https://orcid.org/0000-0002-2181-3559))\n- John M Marshall<sup>4</sup> ([ORCID: 0000-0003-0603-7341](https://orcid.org/0000-0003-0603-7341))\n- Bouasy Hongvanthong<sup>5</sup>\n- Hugh JW Sturrock<sup>1</sup>\n- Adam Bennett<sup>1</sup>\n\n### Affiliations\n\n1. Malaria Elimination Initiative, The Global Health Group, University of California, San Francisco San Francisco United States\n2. Department of Epidemiology and Biostatistics, University of California, San Francisco San Francisco United States\n3. Department of Biostatistics and Epidemiology, School of Public Health and Health Sciences, University of Massachusetts Amherst Amherst United States\n4. Division of Epidemiology and Biostatistics, School of Public Health, University of California, Berkeley Berkeley United States\n5. Center for Malariology, Parasitology and Entomology, Ministry of Health Vientiane Lao People's Democratic Republic\n\n\u2020 Corresponding author\n\n## Abstract\n\nAs countries in the Greater Mekong Sub-region (GMS) increasingly focus their malaria control and elimination efforts on reducing forest-related transmission, greater understanding of the relationship between deforestation and malaria incidence will be essential for programs to assess and meet their 2030 elimination goals. Leveraging village-level health facility surveillance data and forest cover data in a spatio-temporal modeling framework, we found evidence that deforestation is associated with short-term increases, but long-term decreases confirmed malaria case incidence in Lao People\u2019s Democratic Republic (Lao PDR). We identified strong associations with deforestation measured within 30 km of villages but not with deforestation in the near (10 km) and immediate (1 km) vicinity. Results appear driven by deforestation in densely forested areas and were more pronounced for infections with Plasmodium falciparum (P. falciparum) than for Plasmodium vivax (P. vivax). These findings highlight the influence of forest activities on malaria transmission in the GMS.\n\n## Introduction\n\nEngaging in forest activities, such as logging, hunting, or spending the night in the forest, is considered a primary risk factor for malaria infection in the Greater Mekong Sub-region (GMS) (Chaveepojnkamjorn and Pichainarong, 2004; Das et al., 2004; Lansang et al., 1997; Erhart et al., 2005; Trung et al., 2004) with recent outbreaks attributed to deforestation activities (Lyttleton, 2016). This is most likely the result of increased human exposure to the forest dwelling Anopheles dirus and Anopheles minimus, the most efficient and widespread malaria vectors in the GMS (Obsomer et al., 2007; Obsomer et al., 2013). However, deforestation may also alter this \u2018forest malaria\u2019 (Sharma and Kondrashin, 1991) ecosystem and eventually reduce malaria incidence, as is generally accepted to be the case in Southeast Asia (Guerra et al., 2006). Several previous studies have assessed the relationship between deforestation and malaria, but the majority focused outside of the GMS, most notably in the Amazonian forest (Wayant et al., 2010; Olson et al., 2010; Hahn et al., 2014a; Valle and Clark, 2013; Terrazas et al., 2015) where the evidence has been met with conflicting interpretations (Tucker Lima et al., 2017). As national malaria programs across the GMS target forest-going populations for prevention and treatment efforts (Guyant et al., 2015; WHO, 2016), improved understanding of the relationship between deforestation and malaria is critical for programs to assess and meet national 2030 malaria elimination goals (World Health Organization, 2016; WHO, 2018).\n\nIn the Amazon, the \u2018frontier malaria\u2019 hypothesis (Sawyer, 1988) posits that malaria temporarily increases following deforestation efforts to open a human settlement area in the forest. Subsequently, after approximately 6\u20138 years, settlements become more urbanized and isolated from the surrounding forest, and less suitable for malaria vectors, resulting in reduced malaria transmission (de Castro et al., 2006). Recent work has challenged this hypothesis, however, and found that some older settlements were also likely to have high malaria incidence (Ilacqua et al., 2018), highlighting the importance of assessing the relationship between deforestation and malaria at different spatio-temporal scales (Singer and de Castro, 2006).\n\nA recent review of the literature on deforestation and malaria in the Amazon (Tucker Lima et al., 2017) recommended the integration of multiple socio-economic, demographic and ecological mechanisms to disentangle the relationship between deforestation and malaria. The complexity of land-use changes driving deforestation such as urbanization, agriculture, irrigation or resource mining can alter the environment in different ways. For example, deforestation in the Amazon has been shown to increase mosquitoes\u2019 larval habitat (Vittor et al., 2009) through the creation of areas with abundant sunlight and pooling water, resulting in increased human biting activity (Vittor et al., 2006). Alternatively, immigration and rapid population movements, stirring human-vector interactions, are other mechanisms affecting malaria transmission in frontier areas (Moreno et al., 2007). A modeling study (Baeza et al., 2017) showed that the temporal pattern of increased incidence followed by a decrease can vary depending on ecological and socio-economic parameters in frontiers areas.\n\nThe importance of addressing complex confounding structures influencing the relationship between deforestation and malaria was also highlighted by Bauhoff and Busch, 2020. Variables such as temperature (Beck-Johnson et al., 2013; Mordecai et al., 2013), precipitation (Parham and Michael, 2010; Parham et al., 2012), or seasonality Hay et al., 1998 are known environmental predictors of malaria, although the spatio-temporal scale of those effects often varies across different areas (Teklehaimanot et al., 2004). Furthermore, remote areas may experience higher malaria rates because of poor access to public health services, but also have denser forest cover or lower deforestation rates (Busch and Ferretti-Gallon, 2017). Finally, forest-going populations in the GMS are also at higher risk for malaria (Parker et al., 2017) due to poor adherence to protective measures against mosquitoes such as insecticide-treated bed nets (ITNs) or long-lasting insecticidal hammocks (LLIHs) (Peeters Grietens et al., 2010; WHO, 2016) and inadequate access to treatment (Guyant et al., 2015).\n\nBauhoff and Busch, 2020 identified only 10 empirical studies that assessed the relationship between deforestation and malaria with appropriate adjustments for confounding. Of these, seven reported a positive association (Austin et al., 2017; Wayant et al., 2010; Olson et al., 2010; Terrazas et al., 2015; Pattanayak et al., 2010; Garg, 2015; Fornace et al., 2016), two did not find any associations (Bauhoff and Busch, 2020; Hahn et al., 2014a), and one disputed study found a negative association (Valle and Clark, 2013; Hahn et al., 2014b; Valle, 2014). Most recently, a study found deforestation to increase malaria risk and malaria to decrease deforestation activities in the Amazon, using an instrumental variable analysis to disentangle any reverse causality loop (MacDonald and Mordecai, 2019). However, only half of the above-mentioned studies used high-resolution forest data, with most studies using spatially aggregated data and exploring only a limited range of spatial and temporal scales. Only three of these studies were conducted in Southeast Asia (Pattanayak et al., 2010; Garg, 2015; Fornace et al., 2016), and none in the GMS. Importantly, all three found that malaria increases after deforestation, but all had limitations. The two studies in Indonesia Pattanayak et al., 2010; Garg, 2015 used coarsely aggregated forest data and potentially biased self-reported malaria data. The third study, in Malaysia (Fornace et al., 2016), focused on a specific and geographically confined malaria parasite, Plasmodium knowlesi, whose primary host is the long-tailed macaque and whose presence in the GMS, where P. falciparum and P. vivax dominate, is limited.\n\nIn this analysis, we examined the relationship between deforestation and malaria incidence by combining high-resolution forest coverage data (Hansen et al., 2013) and monthly malaria incidence data from 2013 to 2016 from two separate regions in the GMS: northern Lao People\u2019s Democratic Republic (PDR) with very low malaria transmission and southern Lao PDR where P. falciparum and P. vivax are seasonal. By conducting the analysis at the village level, we were able to explore a wide range of spatial scales (1, 10, and 30 km around villages) that might be relevant in characterizing the relationship between deforestation and malaria. In addition, we leveraged the longitudinal nature of both the incidence data collected and the forest data produced from annual remote sensing imagery (Hansen et al., 2013) to explore the most relevant temporal scales. Finally, we considered alternative definitions of deforestation, restricted to areas with at least certain levels of forest cover, to investigate the type of deforestation driving the relationship with malaria.\n\nTo date, no prior studies have quantified the relationship between deforestation and malaria incidence in the GMS. Understanding this relationship is especially important in the GMS, where forest-going activities are a main source of income generation (Lao PDR, 2016) and malaria clusters in forest-going populations (World Health Organization, 2016; WHO, 2016). To assess the relationship between deforestation and malaria incidence, we modeled the monthly village-level malaria incidence in two regions of Lao PDR using health facility surveillance data and evaluated the most relevant spatio-temporal scale.\n\n## Results\n\n### Forest and environmental data\n\nFigure 1 shows the average tree crown cover within 10 km for the year 2016 and the percent area within 10 km that experienced forest loss between 2011 and 2016 in two regions of southern and northern Lao PDR. Overall, the forest cover was denser in the north than in the south and deforestation over this period was higher in the north than in the south. Appendix 1\u2014figure 6 and Appendix 1\u2014figure 7 show the distribution of forest and deforestation variables as the temporal scales and spatial scales around study villages were varied. For example, the cumulative percent area within 30 km of a village that experienced forest loss between 2011 and 2016 ranged from 0 to 10% in the north, whereas it rarely exceeded 2.5% in the south. Deforestation rate in 2015 within 10 km of a village was of about 1% in the south and 2.5% in the north. The average tree crown cover increased with increasing buffer radius around villages (1, 10, and 30 km). However, the relationship with the percent area that experienced forest loss was less clear because both the area that experienced forest loss (numerator) and the area around villages (denominator) increased. Appendix 1\u2014figure 15 and Appendix 1\u2014figure 16 show the raw time series of forest cover and percent area with forest loss.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig1-v2.jpg)\n\n**Figure 1.:** See Materials\u00a0and\u00a0methods for details on forest and deforestation metrics. Upper right indent maps northern and southern (Champasak province) Lao PDR regions.\n\nThe 284 villages in the north were overall less populated (mean 2015 population size: 498, IQR: [241; 548]) than the 207 villages in the south (2015 mean: 1095, IQR: [584; 1384]), but with some highly populated outliers. As expected, altitude differed substantially between villages of the mountainous northern region (mean: 557 m, IQR: [378; 679]) and the lowlands of the south (mean: 120 m, IQR: [98; 130]). Although both regions exhibited similar seasonal trends in precipitation and temperature, with a rainy season spanning from April to October, villages in the south experienced higher monthly precipitation and temperature than in the north over the study period (Appendix 1\u2014figure 8).\n\n### Treatment-seeking data\n\nFor villages with an estimated travel time of 0 hr to the closest health facility (same 300 m2 pixel), the predicted probability of seeking treatment for fever was 0.87 (95% CI: [0.79; 0.92]) in the north and 0.78 (95% CI: [0.63; 0.89]) in the south. A 1 hr increase in travel time to the closest health facility was associated with a similar 0.79 (95% CI: [0.55; 1.13]) reduction in the odds of seeking treatment in the north and 0.76 (95% CI: [0.43; 1.34]) in the south, almost reaching statistical significance when pooling data from both regions: 0.77 (95% CI: [0.56; 1.04]). See detailed results in Appendix 1 - S2.\n\n### Malaria case data\n\n#### Malaria infections\n\nA total of 63,040 patient records were abstracted from the malaria registries of all public health facilities in four southern districts between October 2013 and October 2016 and 1754 from all health facilities in four northern districts between January 2013 and December 2016.\n\nIn the south, 91.2% of the patients in the registries were tested for malaria, of which 78.1% were tested by RDT and 26.2% by microscopy. Overall test positivity was 33.2% for any infection, 16.4% for P. falciparum and 18.2% for P. vivax. Monthly incidence peaked to about six cases per 1000 people in the 2014 rainy season, eventually decreasing to below one case per 1000 in 2016. Incidence and test positivity were similar between P. falciparum and P. vivax in the south (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig2-v2.jpg)\n\n**Figure 2.:** Upper left boxed indent zooms in malaria incidence in the North to better show the temporal variation (see y axis for scale).\n\nIn the north, 92.1% of the patients in the registries were tested for malaria, of which 96.3% were tested by RDT and 9.6% by microscopy. Overall test positivity was 23.8% for any infection, 2.8% for P. falciparum and 22.5% for P. vivax. Monthly malaria incidence in the north was very low, never exceeding 0.3 per 1000 people. Most infections in the north were P. vivax cases with only a few seasonal P. falciparum cases (Figure 2).\n\nAppendix 1\u2014figure 9 shows the number of patients and cases recorded per month in health facility malaria registries as well as how the smoothed test positivity rates varied over time.\n\n#### Socio-demographics\n\nAge, gender, and occupation of patients seeking treatment at health facilities were also recorded in the malaria registries. On average, patients in the south were older than patients in the north with mean age of 28 years and 23 years, respectively. In the north, about half of the patients were male (53.1%), while most patients in the south were male (71.1%). Finally, the vast majority (68.2%) of patients in the south were farmers, whereas only 8% of patients in the north were farmers. Most patients in the north reported being unemployed (41.7%) or a student (31.2%) (Appendix 1\u2014figure 10).\n\n#### Geo-referencing\n\nOverall, 88.1% of malaria records were matched to one of the 491 villages in study districts. The remaining (11.7% in the south and 17.3% in the north) were removed from the analysis because of ambiguous village names, local nicknames for small villages and dissolving and grouping of villages over time. Test positivity in the south was similar in matched (33.1%) and unmatched (34.2%) records but higher in matched (26.5%) than unmatched (10.5%) records in the north. No substantial difference was found in the distribution of socio-demographic variables available in malaria registries between matched and unmatched records (Appendix 1\u2014figure 11). Fewer than 0.3% of matched malaria records were missing dates and also removed from the analysis.\n\n### Spatio-temporal analysis\n\n#### Deforestation\n\nTable 1 and Figure 3 show the adjusted incidence rate ratio (IRR) associated with deforestation, measured by a 0.1% increase in the percent area that experienced forest loss, in the previous 1\u20135 years within 1, 10, and 30 km of villages. Models controlled for various environmental factors and accounted for the probability of seeking treatment and the spatio-temporal structure of the data.\n\n**Table 1.**\n IRR between malaria incidence and a 0.1% increase in the area that experienced deforestation within 1, 10, or 30 km (left-right) of a village in the previous 1\u2013\u00a05 years (top-down) in northern and southern Lao PDR.Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials\u00a0and\u00a0methods for details.Table 1\u2014source data 1.Data for Table 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">South</th>\n      <th colspan=\"3\">North</th>\n    </tr>\n    <tr>\n      <th>Time lag</th>\n      <th colspan=\"3\">Buffer radius</th>\n      <th colspan=\"3\">Buffer radius</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>1 km</td>\n      <td>10 km</td>\n      <td>30 km</td>\n      <td>1 km</td>\n      <td>10 km</td>\n      <td>30 km</td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>1</td>\n      <td>1.01</td>\n      <td>1.16</td>\n      <td>1</td>\n      <td>1.03</td>\n      <td>1.01</td>\n    </tr>\n    <tr>\n      <td>1 year</td>\n      <td>[0.99; 1.01]</td>\n      <td>[0.99; 1.04]</td>\n      <td>[1.10; 1.22]</td>\n      <td>[1; 1.01]</td>\n      <td>[0.99; 1.06]</td>\n      <td>[0.94; 1.08]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1.08</td>\n      <td>1</td>\n      <td>1.01</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td>2 years</td>\n      <td>[0.99; 1.01]</td>\n      <td>[0.98; 1.01]</td>\n      <td>[1.04; 1.13]</td>\n      <td>[1; 1.01]</td>\n      <td>[0.99; 1.04]</td>\n      <td>[0.95; 1.03]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>0.99</td>\n      <td>0.98</td>\n      <td>0.93</td>\n      <td>1</td>\n      <td>1.01</td>\n      <td>0.96</td>\n    </tr>\n    <tr>\n      <td>3 years</td>\n      <td>[0.99; 1]</td>\n      <td>[0.97; 1]</td>\n      <td>[0.90; 0.97]</td>\n      <td>[1; 1.01]</td>\n      <td>[0.99; 1.02]</td>\n      <td>[0.94; 0.99]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>0.99</td>\n      <td>0.98</td>\n      <td>0.94</td>\n      <td>1</td>\n      <td>1</td>\n      <td>0.97</td>\n    </tr>\n    <tr>\n      <td>4 years</td>\n      <td>[0.99; 1]</td>\n      <td>[0.97; 0.99]</td>\n      <td>[0.92; 0.97]</td>\n      <td>[1; 1.01]</td>\n      <td>[0.99; 1.02]</td>\n      <td>[0.94; 0.99]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>1</td>\n      <td>0.97</td>\n      <td>0.94</td>\n      <td>1</td>\n      <td>1.01</td>\n      <td>0.96</td>\n    </tr>\n    <tr>\n      <td>5 years</td>\n      <td>[0.99; 1]</td>\n      <td>[0.96; 0.99]</td>\n      <td>[0.91; 0.97]</td>\n      <td>[1; 1.01]</td>\n      <td>[0.99; 1.02]</td>\n      <td>[0.93; 0.98]</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig3-v2.jpg)\n\n**Figure 3.:** Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials and methods for details.\n\nDeforestation within 1 or 10 km of a village was not associated with malaria incidence rate in either the south or the north, regardless of the temporal lag. However, in the south, deforestation within 30 km of a village in the previous 1 and 2 years was associated with higher malaria incidence rates (e.g. 1 year lag, IRR\u00a0=\u00a01.16, 95% CI: [1.10; 1.22]). In the north, where incidence was much lower, the results were not as clear, but a similar trend was observed with wide confidence intervals compatible with a short term increased risk. On the other hand, deforestation within 30 km of a village in the previous 3, 4, or 5 years was associated with approximately a 5% lower malaria incidence rate both in the south (e.g. 5 year lag, IRR\u00a0=\u00a00.94, 95% CI: [0.91; 0.97]) and in the north (e.g. 5 year lag, IRR\u00a0=\u00a00.96, 95% CI: [0.93; 0.98]).\n\nThese results suggest deforestation around villages, but not in the near vicinity (1 or 10 km), is associated with higher risk of malaria in the first 2 years and lower risk of malaria beyond. There was stronger evidence of associations with deforestation in the south than in the north.\n\nThe IRR effect estimates in Table 1 assume a linear relationship between deforestation and malaria. Appendix 1\u2014figure 5 shows a few of these relationships when such linearity isn\u2019t assumed in the models. The functional forms reveal that they can be reasonably well summarized linearly, especially in the south. In the north, the functional forms highlight potential non-linearities for long-term temporal lags but come with wide confidence intervals at extreme levels of deforestation.\n\n#### P. falciparum and P. vivax\n\nIn addition to different overall levels of transmission in the north and south, the relative species composition also differs by region. In the north, P. vivax is more prevalent with only a few sporadic and seasonal P. falciparum infections, whereas P. falciparum and P. vivax are co-endemic in the south (Figure 2). We used the co-endemicity and the larger amount of malaria case data collected in the south to assess the relationship between deforestation and malaria for both species separately.\n\nTable 2 and Figure 4 show that the pattern of adjusted spatio-temporal associations identified in Table 1 is primarily driven by P. falciparum, with no associations for deforestation in the near vicinity of villages (1 or 10 km) but a short-term increase (e.g. 1 year lag, IRR\u00a0=\u00a01.27, 95% CI: [1.18; 1.36]) and long-term decrease (e.g. 5-year lag, IRR\u00a0=\u00a00.83, 95% CI: [0.80; 0.87]) in P. falciparum malaria incidence for deforestation within 30 km of villages.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig4-v2.jpg)\n\n**Figure 4.:** Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials\u00a0and\u00a0methods for details.\n\n**Table 2.**\n IRR between malaria incidence and a 0.1% increase in the area that experienced deforestation within 1, 10, or 30 km (left-right) of a village in the previous 1\u20135 years (top-down) in southern Lao PDR, differentiated by malaria species.Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials\u00a0and\u00a0methods for details.Table 2\u2014source data 1.Data for Table 2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">P. falciparum</th>\n      <th colspan=\"3\">P. vivax</th>\n    </tr>\n    <tr>\n      <th>Time lag</th>\n      <th colspan=\"3\">Buffer radius</th>\n      <th colspan=\"3\">Buffer radius</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>1 km</td>\n      <td>10 km</td>\n      <td>30 km</td>\n      <td>1 km</td>\n      <td>10 km</td>\n      <td>30 km</td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>1</td>\n      <td>1.04</td>\n      <td>1.27</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1.07</td>\n    </tr>\n    <tr>\n      <td>1 year</td>\n      <td>[0.99; 1.02]</td>\n      <td>[1.01; 1.07]</td>\n      <td>[1.18; 1.36]</td>\n      <td>[0.99; 1.01]</td>\n      <td>[0.97; 1.02]</td>\n      <td>[1.01; 1.13]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>1</td>\n      <td>1.01</td>\n      <td>1.15</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1.06</td>\n    </tr>\n    <tr>\n      <td>2 years</td>\n      <td>[0.99; 1.01]</td>\n      <td>[0.99; 1.03]</td>\n      <td>[1.08; 1.22]</td>\n      <td>[0.99; 1.01]</td>\n      <td>[0.98; 1.01]</td>\n      <td>[1.01; 1.11]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>0.99</td>\n      <td>0.99</td>\n      <td>0.85</td>\n      <td>1</td>\n      <td>0.99</td>\n      <td>1.02</td>\n    </tr>\n    <tr>\n      <td>3 years</td>\n      <td>[0.98; 1]</td>\n      <td>[0.97; 1.01]</td>\n      <td>[0.80; 0.90]</td>\n      <td>[0.99; 1.01]</td>\n      <td>[0.98; 1.01]</td>\n      <td>[0.97; 1.06]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>0.99</td>\n      <td>0.98</td>\n      <td>0.85</td>\n      <td>1</td>\n      <td>0.99</td>\n      <td>1.01</td>\n    </tr>\n    <tr>\n      <td>4 years</td>\n      <td>[0.98; 1]</td>\n      <td>[0.96; 0.99]</td>\n      <td>[0.81; 0.88]</td>\n      <td>[0.99; 1]</td>\n      <td>[0.98; 1.01]</td>\n      <td>[0.98; 1.04]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>1</td>\n      <td>0.97</td>\n      <td>0.83</td>\n      <td>1</td>\n      <td>0.99</td>\n      <td>1.01</td>\n    </tr>\n    <tr>\n      <td>5 years</td>\n      <td>[0.99; 1]</td>\n      <td>[0.95; 0.98]</td>\n      <td>[0.80; 0.87]</td>\n      <td>[1; 1.01]</td>\n      <td>[0.98; 1]</td>\n      <td>[0.98; 1.04]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nOn the other hand, all the associations were attenuated for P. vivax infections. In the previous 2 years and within 30 km of villages, deforestation is still associated with a higher incidence of P. vivax (e.g. 1 year lag, IRR\u00a0=\u00a01.07, 95% CI: [1.01; 1.13]) but less so than for P. falciparum. However, regardless of the temporal lag or spatial scale, deforestation was no longer associated with lower P. vivax malaria risks.\n\nAppendix 1\u2014figure 17 plots the species-specific relationships when not assuming linearity in the models.\n\n#### Alternative definitions of deforestation and interaction with forest cover\n\nIn previous models, our definition of deforestation did not distinguish between forest losses in densely forested areas and less forested areas. To explore potential interactions between deforestation and baseline forest cover, Table 3 and Figure 5 show how the adjusted IRR estimates vary as we consider deforestation in more densely forested pixels only (tree crown cover over 68% and 87% \u2013 see Materials and methods for rationale on thresholds). We conducted this secondary analysis only for the non-null relationships previously identified, that is, when considering a 30 km buffer radius around villages.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig5-v2.jpg)\n\n**Figure 5.:** Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials\u00a0and\u00a0methods for details.\n\n**Table 3.**\n IRR between malaria incidence and a 0.1% increase in the area that experienced deforestation within 30 km of a village in the previous 1\u20135 years (top-down) and within areas with tree crown cover density above 0%, 68%, and 87% (left-right) in Lao PDR.Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials\u00a0and\u00a0methods for details.Table 3\u2014source data 1.Data for Table 3.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">South</th>\n      <th colspan=\"3\">North</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Deforestation within areas</th>\n      <th colspan=\"3\">Deforestation within areas</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td colspan=\"3\">with tree crown cover density above</td>\n      <td colspan=\"3\">with tree crown cover density above</td>\n    </tr>\n    <tr>\n      <td>Time lag</td>\n      <td>0%</td>\n      <td>68%</td>\n      <td>87%</td>\n      <td>0%</td>\n      <td>68%</td>\n      <td>87%</td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>1.16</td>\n      <td>1.32</td>\n      <td>1.28</td>\n      <td>1.01</td>\n      <td>1.04</td>\n      <td>1.34</td>\n    </tr>\n    <tr>\n      <td>1 year</td>\n      <td>[1.10; 1.22]</td>\n      <td>[1.14; 1.53]</td>\n      <td>[1; 1.64]</td>\n      <td>[0.94; 1.08]</td>\n      <td>[0.96; 1.14]</td>\n      <td>[0.99; 1.81]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>1.08</td>\n      <td>1.18</td>\n      <td>1.35</td>\n      <td>0.99</td>\n      <td>0.98</td>\n      <td>0.94</td>\n    </tr>\n    <tr>\n      <td>2 years</td>\n      <td>[1.04; 1.13]</td>\n      <td>[1.08; 1.28]</td>\n      <td>[1.15; 1.59]</td>\n      <td>[0.95; 1.09]</td>\n      <td>[0.93; 1.03]</td>\n      <td>[0.80; 1.11]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>0.93</td>\n      <td>0.93</td>\n      <td>0.89</td>\n      <td>0.96</td>\n      <td>0.96</td>\n      <td>0.86</td>\n    </tr>\n    <tr>\n      <td>3 years</td>\n      <td>[0.90; 0.97]</td>\n      <td>[0.89; 0.97]</td>\n      <td>[0.81; 0.99]</td>\n      <td>[0.94; 0.99]</td>\n      <td>[0.92; 0.99]</td>\n      <td>[0.76; 0.98]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>0.94</td>\n      <td>0.94</td>\n      <td>0.87</td>\n      <td>0.97</td>\n      <td>0.96</td>\n      <td>0.87</td>\n    </tr>\n    <tr>\n      <td>4 years</td>\n      <td>[0.92; 0.97]</td>\n      <td>[0.91; 0.97]</td>\n      <td>[0.80; 0.94]</td>\n      <td>[0.94; 0.99]</td>\n      <td>[0.93; 0.99]</td>\n      <td>[0.78; 0.96]</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Previous</td>\n      <td>0.94</td>\n      <td>0.93</td>\n      <td>0.83</td>\n      <td>0.96</td>\n      <td>0.95</td>\n      <td>0.83</td>\n    </tr>\n    <tr>\n      <td>5 years</td>\n      <td>[0.91; 0.97]</td>\n      <td>[0.90; 0.96]</td>\n      <td>[0.76; 0.90]</td>\n      <td>[0.93; 0.98]</td>\n      <td>[0.92; 0.98]</td>\n      <td>[0.75; 0.92]</td>\n    </tr>\n  </tbody>\n</table>\n\nThe associations with deforestation became more pronounced as we restricted forest losses to more forested areas: the adjusted IRR for deforestation in the previous 1 year, within 30 km of southern villages, increased from 1.16 (95% CI: [1.10; 1.22]) to 1.28 (95% CI: [1; 1.64]) when considering deforestation in areas with more than 0% and 87% tree crown cover respectively. On the other hand, the adjusted IRR for deforestation in the previous 5 years, within 30 km of southern villages, decreased from 0.94 (95% CI: [0.91; 0.97]) to 0.83 (95% CI: [0.76; 0.90]) when considering deforestation in areas with more than 0% and 87% tree crown cover, respectively. A similar trend was observed in the north, although statistical significance was\u00a0not reached as frequently as in the south.\n\nThese evidence strengthen our previous results and suggest that deforestation in deep and dense forests is more closely associated with malaria incidence in villages than deforestation in less forested areas.\n\n## Discussion\n\nBased on a large dataset of health facility surveillance records in two regions of Lao PDR, we found evidence that deforestation around villages is associated with higher malaria incidence over the short-term but lower incidence over the long-term (e.g, in the south, within 30 km of villages: IRR\u00a0=\u00a01.16 [1.10; 1.22] for deforestation in the previous year and IRR\u00a0=\u00a00.93 [0.90; 0.97] for deforestation in the previous 3 years). Our evaluation of alternative spatial scales identified strong associations for deforestation within a 30 km radius around villages but not for deforestation in the near (10 km) and immediate (1 km) vicinity. Our results incorporated correction for the probability of seeking treatment, modeled as a function of distance to the closest health facility, as well as adjustment for several environmental covariates. Results appear driven by deforestation in densely forested areas and the patterns exhibited are clearer for infections with P. falciparum than for P. vivax.\n\nThe wide availability and longitudinal nature of malaria surveillance records collected routinely by the national program enabled exploration of the relationship between deforestation and malaria incidence over multiple spatio-temporal scales and across different levels of forest density. The spatio-temporal variability highlighted here provides insights into the causal mechanisms driving local-scale malaria incidence in the GMS. This approach not only quantified the deforestation-malaria incidence association in the GMS, but also strengthened the evidence for the key influence of forest-going populations on malaria transmission in the GMS.\n\nThis study\u2019s results echo the frontier malaria hypothesis from the Amazon region, which posits an increase in malaria incidence in the first few years following deforestation and a decrease over the long term. However, we found an earlier inflexion point, 1\u20133 years after deforestation compared to 6\u20138 years in the Amazon (de Castro et al., 2006), most likely because of very different underlying human processes. Indeed, the frontier malaria hypothesis considers non-indigenous human settlements sprouting deeper and deeper in the forest whereas forest-going populations in the GMS are primarily members of established forest-fringe communities who regularly tour the forest overnight to hunt and collect wood (Dysoley et al., 2008). Industrial and agricultural projects or lucrative forest-based activities also attract mobile and migrant populations (MMPs) Guyant et al., 2015 in remote forested areas of the GMS but not on the same scale as the politically and economically driven unique colonization of the Amazon (de Castro et al., 2006).\n\nOur results are also consistent with the three previous multivariable empirical studies (Garg, 2015; Pattanayak et al., 2010; Fornace et al., 2016) that assessed the effect of deforestation on malaria in Southeast Asia.\u00a0Our study builds on these findings by using higher resolution forest data and exploring additional spatio-temporal scales. Using biennial village census data from Indonesia between 2003 and 2008 and district-aggregated remote sensing forest data, Garg, 2015 reported a 2\u201310.4% increase in the probability of a malaria outbreak in each village of districts that lost 1000 hectares of their forest cover in the same year. Using data from a 1996 cross-sectional household survey conducted in a quasi-experimental setting around a protected area in Indonesia, Pattanayak et al., 2010 found a positive association between disturbed forest (vs undisturbed) and malaria in children under 5, again using no temporal lag. Our analysis plan was largely inspired by Fornace et al., 2016, which used similar high-resolution forest data (Hansen et al., 2013) and 2008\u20132012 incidence data from Sabah, Malaysia. They reported a 2.22 (95% CI: [1.53; 2.93]) increase in the P. knowlesi incidence rate for villages where more than 14% (<8%, being the reference) of the surrounding area (within 2 km) experienced forest loss in the previous 5 years. On the other hand, our analysis explored wider spatial scales, bypassed any coarse categorization of forest and deforestation variables, corrected incidence for treatment-seeking probability, and most importantly focused on P. falciparum and P. vivax, the dominant malaria parasites in the GMS.\n\nEngaging in forest activities, such as logging, hunting or spending the night in the forest, has been reported as a major risk factor by many studies in the region (Chaveepojnkamjorn and Pichainarong, 2004; Das et al., 2004; Lansang et al., 1997; Erhart et al., 2005; Trung et al., 2004). As countries of the GMS work toward malaria elimination, the literature stresses the key role of forest-going populations (Guyant et al., 2015; Nofal et al., 2019; Bannister-Tyrrell et al., 2019; Wen et al., 2016; Smith and Whittaker, 2014), although research programs highlight the challenges of accessing them (Bennett et al., 2021 ; Lover et al., 2019) as well as their diversity (Nofal et al., 2019; Bannister-Tyrrell et al., 2019). To our knowledge, no previous study has leveraged geo-spatial statistical analyses to characterize the importance of forest-going populations in the GMS. Our results suggest that deforestation in dense forests (Table 3) around villages, particularly areas further from the village (Table 1), is a driver of malaria in Lao PDR. We argue that this is indicative of the existence of a key high-risk group linking the deforestation patterns identified to malaria in the villages, namely a forest-going population. Deforestation captured by remote sensing in this setting likely reflects locations and times of heightened activity in the forest areas near villages, and therefore greater human-vector contact. We suspect longer and deeper trips into the forest result in increased exposure to mosquitoes, putting forest-goers at higher risk.\n\nWe conducted this study in northern and southern Lao PDR, where the malaria species composition differs, and assessed species-specific relationships in the south where P. falciparum and P. vivax are co-endemic. Our results highlight the challenges ahead of national programs with P. vivax elimination after successful P. falciparum elimination, as increasingly mentioned in the literature (Cotter et al., 2013; Kaehler et al., 2019). This study identified a clear pattern of spatio-temporal associations between P. falciparum and deforestation, but these were not apparent for P. vivax (Table 2). The increase in P. vivax incidence in the first 2 years following deforestation was identified as well but the associations were smaller than for P. falciparum. Importantly, deforestation was never associated with lower risks of P. vivax. A recent study in the Amazon MacDonald and Mordecai, 2019 reported a similar attenuation of the effects of deforestation on P. vivax compared to P. falciparum, most likely because of P. vivax parasites\u2019 ability to relapse months or even years after infection, which decouples the association between transmission and incidence data. These species-specific differences may also explain why the pattern of spatio-temporal associations between malaria and deforestation were markedly clearer in the south than in the north where P. vivax dominates.\n\nOur results did have some inherent limitations based upon routine health facility surveillance data. First, reliability of such records varies across and within countries of the GMS and may depend on malaria incidence level. This could lead to unmeasured residual confounding, further exacerbated by the lack of available data on malaria control activities in the region. Another challenge with these data is obtaining an accurate denominator for incidence, as not everyone attends a public health center when febrile. We addressed this issue by modeling the probability of seeking treatment as a function of travel time to the closest health facility using data from two cross-sectional surveys. Last, the village-level geo-referencing of malaria registries ignores the possibility that patients may become infected elsewhere. Unfortunately, these surveillance records did not include information about patients\u2019 forest-going trips. Research to track and analyse micro-scale movements of forest-goers is needed to understand how they interact with the forest and where are the foci of infection.\n\nThe forest data we used has also been criticized, in particular for not distinguishing tropical forests from agroforestry (Tropek et al., 2014; Hansen et al., 2014) or man-made from natural causes of deforestation. The lack of temporal resolution for the forest gain variable (2000\u20132017 aggregate) as well as the assumption that forest loss happens all in 1 year are additional limitations of these data. Finally, our relative measure of deforestation, key to consistently compare the effects across different spatial scales, also implies that a 0.1% of the area that experienced forest loss within 30 km of a village is a much larger area (\u223c280 hectares) than within 1 km (\u223c0.3 hectare) and should be interpreted cautiously.\n\nIn conclusion, this study assessed the relationship between deforestation and malaria in Lao PDR. Our approach leveraged surveillance records collected by the national malaria program and high-resolution forest data and rigorously explored the spatio-temporal pattern of associations. As countries of the GMS work toward malaria elimination, our results highlight the challenges to transition from P. falciparum to P. vivax elimination, confirm and characterize the importance of high-risk populations engaging in forest activities and suggest malaria programs may benefit from monitoring areas of on-going deforestation using remotely sensed data.\n\n## Materials and methods\n\n### Study site and population\n\nLao PDR has seen a 92% reduction in cases between 2000 (280,000) and 2010 (23,000) (Lao PDR, 2016). Much of this progress has been attributed to heightened funding and better testing and treatments (Okayas, 2018).\n\nThis study was conducted in eight districts (Figure 6) to leverage the ecological and epidemiological diversity of Lao PDR. Four districts (Moonlapamok, Pathoomphone, Sanasomboon, and Sukhuma) are situated in the southern province of Champasak where both P. falciparum and P. vivax are endemic. The four other districts (Et, Paktha, Nambak, and Khua) each come from one of four northern provinces (Bokeo, Huaphanh, Phongsaly, Luang-Prabhang) where P. vivax is endemic but P. falciparum has reached historical lows (Lao national malaria database (dhis2), 2018).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig6-v2.jpg)\n\nThe four districts in the north were chosen in consultation with district and provincial level malaria staff to represent the epidemiology of malaria in the region. They were selected as part of a cross-sectional survey designed to assess the prevalence and risk factors for malaria in northern Lao PDR (Lover et al., 2018). This region is very mountainous and characterized by a diverse climate, low-population density and limited road access (UNFPA, 2016). Land clearing using fires for agriculture is customary.\n\nThe four districts in the south were selected within a larger cluster randomized controlled trial (RCT) study designed to assess the effectiveness of high-risk group targeted active case detection in southern Lao PDR (Lover et al., 2019), where more than 95% of the country malaria burden is concentrated (Lao national malaria database (dhis2), 2018). This region is characterized by a moderately hilly and forested terrain and a workforce primarily engaged in forest-based and agricultural activities (Bennett et al., 2021).\n\nWhen designing the study, in collaboration with the national control program, we purposefully excluded regions where we knew large programmatic activities where being implemented.\n\n### Malaria data\n\n#### Malaria case data\n\nWe conducted a retrospective review of malaria registries recorded at all health centers in the study districts between January 2013 and December 2016 in the north and between October 2013 and October 2016 in the south. The registries included information on every patient that was tested (RDT and/or microscopy) for malaria at the health center. Date, species-specific test results, demographic variables (age, gender, and occupation) and the village of residence of the patient were recorded in the registries. With help from local Lao experts, village names were matched to a geo-registry of all villages in Lao PDR compiled from the 2005 and 2015 national census Lao national census, 2020 and provided by the Center for Malariology, Parasitology and Entomology (CMPE). The geo-registry contains GPS coordinates and population of Lao PDR\u2019s villages. Unmatched records and records with missing date were removed from the analysis. Finally, these data were aggregated to extract the monthly village-level malaria incidence.\n\n#### Treatment-seeking data\n\nOne issue with using passive surveillance data is that not everyone will seek treatment at a public health facility for a febrile illness, which can lead to an underestimate of the true incidence, if not accounted for. To correct for that, we modeled the probability that an individual in a given village of the study\u2019s district would seek treatment at a public health facility when febrile. We assumed that such probability is essentially driven by the travel time to the closest health facility. See Appendix 1 - S1 for methods used to calculate travel times to closest health facilities.\n\nTo model the probability of seeking treatment, we used data from two cross-sectional household surveys conducted in the eight districts where registries were collected. In the north, 1480 households across 100 villages were surveyed in September-October 2016 (Lover et al., 2018). In the south, 1230 households across 56 villages were surveyed in the baseline assessment of the RCT (Lover et al., 2019) in December 2017. In particular, survey respondents were asked whether or not they would seek treatment at the closest health facility for a febrile illness and GPS coordinates of their household were recorded.\n\nWe then used the cross-sectional surveys to model the probability of seeking treatment (at a public health facility, implicit from now on), $\\theta$, as a function of travel time to the closest health facility, $\\tau$ (Equation 1). To account for the correlation structure induced by the stratified sampling approach used in the surveys, we modeled the number of successes (febrile patients seeking treatment), $S_{h,v}$, at the household level and included a random intercept for village in the logistic regression.\n\n$$\nS_{h,v}\u223cBin(\\theta_{h,v},N_{h,v})logit(\\theta_{h,v})=\\alpha_{0}+\\alpha_{1}\u2217\\tau_{h,v}+\\alpha_{v}\n$$\n\nwhere $N_{h,v}$ is the number of febrile individuals in household h of village v and $\\alpha_{v}\u223c\ud835\udca9\u2062(0,\\sigma_{\\alpha})$.\n\nWe fit the models separately in the north and in the south and used the region-specific model to predict the probability of seeking treatment at all villages of the study districts based on their distance to the closest health facility. The population who seek treatment was then calculated by multiplying the village population by the probability of seeking treatment. See Appendix 1 - S2 for travel times and treatment-seeking probabilities results.\n\n### Forest data\n\nFor every 30 m pixel in Lao PDR, tree crown cover density for the year 2000 and year of forest loss between 2000 and 2017, were obtained from Hansen et al., 2013. These layers were produced using decision tree classifiers on Landsat remote sensing imagery (Hansen et al., 2013). Trees are defined as \u2018all vegetation taller than 5 m in height\u2019 (Hansen et al., 2013) and forest loss as \u2018the removal or mortality of all tree cover in a Landsat pixel\u2019 (Hansen et al., 2014). For example, as depicted in Figure 7, the Hansen data indicates that the tree crown cover in 2000 in pixel 1 is 54%, meaning that 54% of the 30 m pixel is covered by vegetation taller than 5 m. The Hansen data also indicates that forest loss occurred in pixel in 2013, meaning that all of the tree canopy disappeared in 2013.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig7-v2.jpg)\n\n**Figure 7.:** The two upper plots highlight the raw data at two example pixels from the lower plot.\n\n#### Deforestation variable\n\nTo define our primary exposure variable, for all villages in the study districts and year of the study period, we calculated the percent area within a buffer radius of 1, 10, and 30 km that experienced forest loss in the previous 1, 2, 3, 4, and 5 years (Figure 7). These distances were chosen to explore a range of spatial scales at which the forest environment may be differentially relevant for village-based populations and forest-goers. To explore potential interactions between deforestation and forest cover, we computed an alternate exposure variable, restricting to areas that both experienced forest loss and had a tree crown cover density above 68% and 87%. Those thresholds are limits of the inter-quartile range (IQR) of the distribution of tree crown cover density in any 30 m pixels within 10 km of study\u2019s villages that experienced forest loss between 2000 and 2017. This alternate definition captures deforestation activities occurring in areas with denser forest cover.\n\n#### Forest cover variable\n\nWe also combined the two Hansen layers to produce annual tree crown cover maps of the study districts, assuming no changes prior to the year of forest loss but setting to 0 the pixel tree crown cover density afterwards (Figure 7). For all villages in the study districts and year of the study period, we calculated the average tree crown cover density within a buffer radius of 1, 10, and 30 km and for 0, 1, 2, and 3 year lags. This is a secondary exposure, adjusted for in the primary analysis.\n\n### Environmental covariates\n\nVillage population sizes were needed to estimate monthly malaria incidence. 2005 and 2015 population estimates for the 491 villages of study districts were obtained from the national census Lao national census, 2020. The annual population growth rate (3.7%) was used to impute population values for two villages missing 2005 estimates and for two villages missing 2015 estimates. Then, village-level population growth rates were used to estimate villages\u2019 population per year between 2008\u00a0and\u00a02016, assuming linear annual growth rate (median\u00a0=\u00a01.7%, IQR = [0%; 4.5%]).\n\nAltitude, temperature, rainfall, and access to health care were considered as potential village-level confounders of the relationship between malaria and forest cover factors. Travel time to closest health facility, computed for the treatment-seeking model, was used as a proxy for health care access and villages\u2019 remoteness. Altitude was extracted from SRTM (Jarvis et al., 2008) 1 km resolution layers. Monthly average day and night temperature were extracted from MODIS 1 km resolution product (MOD11C3 Wan et al., 2015). Finally, monthly total rainfall was extracted from CHIRPS (Funk et al., 2014) 1 km resolution publicly available data. The average and standard deviation of the annual total precipitation and the average monthly temperature from the monthly time series was computed over the 2008\u20132012 period, which corresponds to the 5 year time period directly before our malaria data (2013\u20132016). This \u2018long-term\u2019 aggregation of the climatic variables is included in the model to capture the spatial differences in overall climate between the villages of our study area. To account for the seasonal effect of these climatic variables, monthly temperatures and precipitation in the previous 1, 2, and 3 months were also extracted, as well as the average temperatures and total precipitation over the previous 1, 2, and 3 months (seven \u2018short-term\u2019 variations: in current month, in previous 1, 2, or 3 months and aggregated over current and previous 1, 2, or 3 months). See \u2018Details on covariates\u2019 below.\n\nAltitude was missing for one village and we used an online elevation finder tool (FreeMapTools) for imputation. Temperature was missing for 2.4% of the village-months over the study period, most likely because of cloud coverage of the MODIS imagery. Monthly temperature was never missing more than 2 years in a row at villages of the study\u2019s districts and we imputed the temperature of the same month of the following year (or prior year when needed), adjusting for average district-level monthly temperature differences between the 2 consecutive years. Monthly rainfall was not missing at any of the villages.\n\n### Statistical analysis\n\n#### Statistical model\n\nTo model malaria incidence (Equation 2), the number of positive cases $Y_{v,t}$ at village v over month t was modeled using a generalized additive model (GAM) (Wood, 2017). To account for overdispersion, a negative binomial distribution was used, including an additional variance parameter $\u03bd$. The probability of seeking treatment $\\theta_{v}$, estimated from the treatment-seeking model, was multiplied by the village population $P\u2062o\u2062p_{v,t}$ to derive the population seeking treatment, $P\u2062o\u2062p_{v,t}^{s\u2062e\u2062e\u2062k}$. This was included as an offset term in the incidence model. Spatial autocorrelation was accounted for by the bivariate thin plate spline smoothing function on coordinates, $f\u2062(L\u2062a\u2062t,L\u2062o\u2062n\u2062g)$ and village random intercepts were included. A non-linear temporal trend was also included with the smoothing function on month, $f\u2062(t)$. Finally, the primary exposure, deforestation, and potential environmental confounders, including forest cover, were modeled with splines in $f\u2062(X_{v,t}^{i})$. Splines add up polynomial basis functions in between knots and allow to control for very flexible relationships with covariates and spatio-temporal trends. Regularization was used to integrate model selection into the model fitting step by adding an extra penalty to each term so that the coefficients for covariates can be penalized to zero, also meaning that splines can be kept minimal if the data does not support more flexibility. See Figure 8 for a graphical visualization of our conceptual model for this analysis.\n\n$$\nY_{v,t}\u223cNegBin(E[Y_{v,t}],\u03bd)log\u2061(E[Y_{v,t}])=log\u2061(\\mu_{v,t}\u2217Pop_{v,t}^{seek})=log\u2061(\\mu_{v,t})+log\u2061(Pop_{v,t}\u2217\\theta_{v})log\u2061(\\mu_{v,t})=\\sumi\\beta^{i}\u2217f(X_{v,t}^{i})+f(t)+f(Lat,Long)+\\beta_{v}\n$$\n\nwith $\\beta_{v}\u223c\ud835\udca9\u2062(0,\\sigma_{\\beta})$.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig8-v2.jpg)\n\nWe ran 15 models separately in the north and the south, each varying the buffer radius (1, 10, and 30 km) and temporal scale for deforestation (previous 1, 2, 3, 4, and 5 years). The coefficients of the linear effect for deforestation were extracted and exponentiated to get the incidence rate ratio (IRR) associated with a 0.1% increase in the percent area that experienced forest loss around villages.\n\n#### Secondary analyses\n\nAs secondary analyses, we ran the same models, separately by malaria species (P. falciparum and P. vivax), leveraging the large amount of data and co-endemicity in the south. We also used our alternative definitions for deforestation, restricted to areas that both experienced forest loss and had a tree crown cover density above 68% and 87%, to explore the interaction between deforestation and the amount of forest cover.\n\nTo further strengthen the robustness of our analysis, we conducted a sensitivity analysis where villages\u2019 populations in the surveillance system registries were not adjusted for the probability of seeking treatment. See Appendix 1 - S3.\n\n#### Details on covariates\n\nTo prevent collinearity in the final model, for each of the three monthly climatic variables (precipitation, day and night temperature), we first selected the one of its seven \u2018short-term\u2019 variations (in current month, in previous 1, 2, or 3 months and aggregated over current and previous 1, 2, or 3 months) that provided the best AIC fit in an univariate model, solely adjusted for the spatio-temporal structure of the data ($f\u2062(t)$, $f\u2062(L\u2062a\u2062t,L\u2062o\u2062n\u2062g)$ and village random intercepts). See Appendix 1 - S6.\n\nMalaria incidence in the previous 1 and 2 months were included in the model. Results in Appendix 1 - S4 show this was necessary to fully address temporal autocorrelation and led to a better AIC fit. Different shape of the temporal trend f(t) were also explored (up to 25 spline knots, auto-regressive, cyclic cubic spline) but none accounted for temporal autocorrelation better.\n\nIn a preliminary analysis, before including the deforestation variable, we ran our model in Equation 2 with forest cover as the primary exposure. We ran 12 models separately in the north and the south, each varying the buffer radius (1, 10, and 30 km) and temporal scale (0, 1, 2, and 3 year lag) for the forest cover variable. The coefficients of the linear effect for forest cover were extracted and exponentiated to get the incidence rate ratio (IRR) associated with a 1% increase in the average tree crown cover density around villages (Appendix 1\u2014table 3). The model including average tree crown cover density within 30 km of villages with no temporal lag provided the smallest AIC value. In the final models with the deforestation variables we therefore included the average tree crown cover density within 30 km of villages in the starting year of the temporal scale for the deforestation variable considered (e.g. 3-year lag in the model with percent area that experienced forest loss in previous 3 years as the deforestation variable) to adjust for baseline forest cover.\n",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "d77feb48-4ab6-40c9-adc2-65080b9e5888",
+      "submission_id": "5b87d486-7375-4212-866d-96e53a971157",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben S Cooper, Mahidol University Thailand\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56974.sa1](https://doi.org/10.7554/eLife.56974.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Spatio-temporal associations between deforestation and malaria incidence in Lao PDR\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: James A Watson (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Please submit a revised version that addresses these concerns directly.\n\nSummary:\n\nDeforestation is widely thought to have played an important role in the declining incidence of malaria in the Greater Mekong Sub-region but detailed analyses have been lacking. In this paper the authors assemble a large dataset of geolocated malaria cases from Lao PDR together with forest cover data. Using a spatio-temporal modelling framework, they find no evidence of an association of deforestation within 1 or 10km of a village and malaria incidence. However, deforestation within 30km of a village was associated with malaria incidence, though with the direction of the association depended on the timescale considered. In the short term (1-2 years) deforestation was associated with increases in malaria incidence in the south, though no association was found in the north. In the long-term (3-5 years) deforestation was associated with a lower malaria incidence rate, with decreases of about 5% in both the south and the north.\n\nEssential revisions:\n\n1) All reviewers had concerns about variable selection and a number of suggestions were made, including regularisation, the need to adjust for climate anomalies and malaria control programme activities. The differences between the north and south were also highlighted and, following the consultation process, there was a consensus that lumping both parasites together and using one region did not seem appropriate. There were also questions about the choice of initial climate covariates. These issues need to be addressed either by conducting the analysis in a different way (we leave it to the authors to decide on the best way) or by convincing the reviewers that such changes are not needed. A better explanation and consideration of the climate covariates that were considered is also needed.\n\n2) There needs to be a more thorough exploration of the effect of inclusion of malaria cases in the previous month. As reviewer 3 points out, it is surprising that the effect of malaria cases in the previous month is left as a sensitivity analysis as the autocorrelation effect should be important in a transmission system.\n\n3) The concerns about the way forest data are used (as raised by reviewer 2) need to be addressed. The authors should justify how they have derived canopy cover from a dataset not designed to quantify annual forest canopy cover. This is quite a widely used dataset and the interpretation is unconventional. The authors could either re-analyse these data or provide further explanation of how they have modelled canopy cover levels.\n\n4) The authors should include the nonlinear trend f(t) in the results as well as the overall temporal pattern in the regions' deforestation.\n\n5) There needs to be greater clarity about what was done in the results \u2013 e.g. regarding the treatment seeking model and adjustment for confounders.\n\n6) There is a need for clarification of differences in malaria regimes in north and south in the Introduction.\n\nReviewer #1:\n\nThis is a carefully written paper on the complex associations between deforestation and malaria incidence. For someone with no background in the relevant literature it provides an easy to read introduction to previous work and shows how these new results fit with previous reports. On the whole I enjoyed reading it. My main suggestions are cosmetic.\n\nI feel that the authors have done themselves a disservice in the Results section when reporting the observed associations between deforestation and malaria incidence. When I first read it, I had the impression that no adjustment for confounders was made! This does not seem to be mentioned at all in the Results. But in fact the underlying model is quite complex (Figure 8) and the authors use elevation, precipitation and temperature as the possible confounders (if I understood correctly). I would suggest adding a few sentences in the Results to clarify this. Maybe the Discussion could have a sentence or two on any unmeasured/residual confounding? Another really important adjustment is done for treatment seeking behaviour. This is rarely done in similar stats analyses and the authors have put quite a lot of work put into constructing a sophisticated model of treatment seeking (Figure 7B is really informative! Relegating this figure to the supplementary materials is a shame.)\n\nI don't think the Results section even mentions the treatment seeking model. It is an important output and when mentioned in the Results, it should be made clear that the treatment seeking model is built using a different dataset, so there is no doubling dipping when constructing the geospatial model.\n\nI'm not very familiar with GAMs so feel free to ignore this comment: instead of doing forward/backward AIC-based variable selection, could you instead fit the full model with appropriate regularisation (ridge regression type but in a GAM framework)?\n\nFinal comment concerns P. vivax. It is to be expected that the short term associations are dampened as probably the majority of infections are relapses (as mentioned in the Discussion). So you could argue that seeing a dampened association provides some kind of reassurance that there isn't massive unmeasured confounding going on (I would worry if larger associations were seen for vivax). This argument doesn't really work for the long term associations though. Any reasons for why no long term associations are observed?\n\nReviewer #2:\n\nThis study addresses an important research gap in understanding the ecology of malaria within Lao PDR and assembles an impressive dataset of geolocated malaria cases. However, there are major limitations in this study which question the validity of results and the interpretation of data sources.\n\nFirst, without adjusting for precipitation or temperature differences annually, it is impossible to interpret whether the time lags between deforestation and malaria incidence reflect ecological changes and forest loss or whether this is due to interannual variation in other environmental factors. This time period includes a major El Nino event with extensive forest fires reported across Southeast Asia, including in Lao PDR (e.g. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6520341/). Without adjusting for the climate anomalies during this time period, it is difficult to attribute changes in risk to deforestation. Additionally, this analysis would ideally include some estimates of malaria control program activities during these time periods and whether this also varied either temporally or spatially. The authors address bias in health system reporting but no other control activities.\n\nAdditionally, assuming that the authors are simply using the forest data obtained from Hansen et al., this is not analyzed in a method consistent with how it was produced. This dataset includes tree crown coverage for 2000 (as a percentage) and a forest loss layer which reflects the change in state of a pixel from forest (defined as 50% canopy cover) to non-forest (less than 50%). As the forest loss layer only reflects a change in state (this could be 100% canopy cover to 0% or 52% to 49%), this is can only be interpreted by classifying the initial forest layer using a 50% threshold and cannot be used to estimate canopy cover percentages. There is also a forest gain layer (reflecting the change of state from non-forest to forest) which is not discussed at all within this paper. Following discussions about the accuracy of these datasets, there have also been updates to this data and additional layers available on World Resources Institute which could significantly improve this classification. As well, as forest configuration and fragmentation has widely been associated with malaria incidence in forest settings, this work would be improved by including additional metrics reflecting patterns of deforestation rather than just total area within a circular buffer.\n\nReviewer #3:\n\nThis manuscript addresses an important question in the ecology of malaria, namely what is the impact of deforestation on malaria incidence. Although there have been multiple studies and reviews on the subject for other regions especially the Amazon, an overall picture remains elusive because of the complexity of an environmental impact that is non-stationary in time as proposed in the hypothesis of \"frontier malaria\". Statistical analyses most often lack the longitudinal data needed to disentangle effects of deforestation as a function of time, and to also consider the spatial scales at which such effects are manifested. The work of Castro and colleagues for the Amazon did consider the temporal axis and provided evidence for a transient increase followed by a decrease to low endemic malaria.\n\nHere, the authors take advantage of a longitudinal and spatially-resolved malaria data set in Lao People's Democratic Republic, together with a forest data set from remote sensing, to investigate how deforestation influences malaria incidence by both P. falciparum and P. vivax at different spatial and temporal scales. They contrast results for two regions within Lao PDR, North and South, with distinct transmission regimes and populations. They provide evidence consistent with the \"frontier malaria\" hypothesis, albeit with shorter times for the turn-around, from an increasing to a decreasing trend, than reported for the Amazon. The positive and short-term positive effect on malaria incidence is stronger in the South than in the North, and for P. falciparum. These results are important in demonstrating the need to consider statistical analyses that carefully introduce time since deforestation, and in supporting a positive transient effect of deforestation on malaria that should inform both public health strategies and forest management.\n\nI have some comments that should be addressed to make the analyses and their interpretation clearer:\n\n1) The way climate covariates are incorporated may ultimately \"work\" to capture a complex set of effects in a statistical model, but it is not very convincing. In particular, model selection is conducted on the basis of non-specific cases and the South only. The South and North show very different transmission regimes not just because of different population sizes but because of different environments, especially altitude (and therefore temperatures). In the more endemic regime of the South, malaria cases are likely to reflect much less clear effects of climate covariates than in the low transmission, epidemic, North. In addition, aggregating cases for the different parasites is problematic as their transmission is affected by climate covariates in different ways, given the relapses of P. vivax which typically lead to a different seasonality and less sensitivity to climate drivers. P. falciparum shows a more epidemic behavior in the North as expected for higher altitudes/cooler temperatures. These differences make one wonder whether it is valid to conduct model selection first in terms of the South and for both parasites together, and then fix these variables in the rest of the analysis.\n\n2) The choice of initial climate covariates is also somewhat confusing. Why use WorldClim at all? One can obtain the means, or totals, and the CVs, from the time series used for the monthly data. WordClim uses a particular window of time (decades) to obtain these \"typical\" variables. It is my understanding that this time period is earlier than that considered here. Why use altitude and temperature? Aren't these strongly correlated within a region? An alternative consideration is to separate interannual and seasonal effects, by considering monthly values (as done here) and also the mean temperatures (of that same data set) over a window of time that precedes the transmission season (for P. falciparum) and corresponds to the rainy season.\n\n3) The effect of malaria cases in the previous month is left for the sensitivity analysis as one variation of the main results. This is surprising as this autocorrelation effect should be important in a transmission system. That is, it would be natural to start with that model and see what is the significance of that variable. Its inclusion seems to do more than just weaken slightly the results. The effect in the North for P. falciparum becomes non-significant and that in the South weakens considerably. I wonder what would have been the result of model selection to start with, if this variable had been included. (I understood that the \"adjusted\" model does not repeat model selection).\n\n4) The distinction of the malaria regimes in the North and South should be described more clearly in the Introduction for a general reader not familiar with malaria dynamics. The North appears seasonal low transmission or epidemic (given the altitudes and the time series), and the South, seasonal endemic. The differences in transmission characteristics between parasites should also be included early in the text; relapses are mentioned late in the Discussion. These considerations are important to how one looks at the time series and results.\n\n5) The nonlinear trend f(t) is mentioned in the model description but not in the results. I could not tell whether deforestation itself exhibits a trend and how consideration or not of f(t) influences the results. Including the resulting f(t) as well as the overall temporal pattern in the regions' deforestation would be informative.\n\n6) Similarly, I would have liked to see in the supplement the main results underlying variable selection and model selection.\n",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9961e60d-d680-4a4c-aecb-f15589d77680",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C1",
+      "claim": "Countries in the Greater Mekong Sub-region (GMS) are increasingly focusing their malaria control and elimination efforts on reducing forest-related transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "As countries in the Greater Mekong Sub-region (GMS) increasingly focus their malaria control and elimination efforts on reducing forest-related transmission, greater understanding of the relationship between deforestation and malaria incidence will be essential for programs to assess and meet their 2030 elimination goals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as context for the study, reflecting current policy direction in the GMS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "01237c92-3399-4346-b9dc-31555d342385",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C2",
+      "claim": "Deforestation is associated with short-term increases in confirmed malaria case incidence in Lao PDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Leveraging village-level health facility surveillance data and forest cover data in a spatio-temporal modeling framework, we found evidence that deforestation is associated with short-term increases, but long-term decreases confirmed malaria case incidence in Lao People's Democratic Republic (Lao PDR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's spatio-temporal modeling analysis of surveillance and forest data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "a4c81428-0be1-40fe-b0e4-302e95458066",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C3",
+      "claim": "Deforestation is associated with long-term decreases in confirmed malaria case incidence in Lao PDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Leveraging village-level health facility surveillance data and forest cover data in a spatio-temporal modeling framework, we found evidence that deforestation is associated with short-term increases, but long-term decreases confirmed malaria case incidence in Lao People's Democratic Republic (Lao PDR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's spatio-temporal modeling analysis of surveillance and forest data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "2fb8e1ef-45f1-478f-8c0c-cd246f40610a",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C4",
+      "claim": "Strong associations exist between deforestation measured within 30 km of villages and malaria incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified strong associations with deforestation measured within 30 km of villages but not with deforestation in the near (10 km) and immediate (1 km) vicinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is based on the study's analysis of different spatial scales of deforestation around villages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "10554f41-0bfd-4b5f-863f-fb1bc9d2afc4",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C5",
+      "claim": "Deforestation in the near (10 km) vicinity of villages is not associated with malaria incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified strong associations with deforestation measured within 30 km of villages but not with deforestation in the near (10 km) and immediate (1 km) vicinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is based on the study's analysis of different spatial scales of deforestation around villages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "18ee8032-3884-4310-a21b-0701f128bd1c",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C6",
+      "claim": "Deforestation in the immediate (1 km) vicinity of villages is not associated with malaria incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified strong associations with deforestation measured within 30 km of villages but not with deforestation in the near (10 km) and immediate (1 km) vicinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is based on the study's analysis of different spatial scales of deforestation around villages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "2da1e8ef-1ede-4d79-be35-bb19ebd86851",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C7",
+      "claim": "Results appear driven by deforestation in densely forested areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Results appear driven by deforestation in densely forested areas and were more pronounced for infections with Plasmodium falciparum (P. falciparum) than for Plasmodium vivax (P. vivax).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the study's analysis using alternative definitions of deforestation restricted to areas with higher tree crown cover density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "607d2cb2-2ca8-468e-9c58-113213262c40",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C8",
+      "claim": "The associations between deforestation and malaria were more pronounced for P. falciparum infections than for P. vivax infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Results appear driven by deforestation in densely forested areas and were more pronounced for infections with Plasmodium falciparum (P. falciparum) than for Plasmodium vivax (P. vivax).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on species-specific analysis conducted in the south where both species are co-endemic.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "6036569f-c803-41ef-acf2-f1f7846ff6a6",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C9",
+      "claim": "Engaging in forest activities is considered a primary risk factor for malaria infection in the Greater Mekong Sub-region.",
+      "claim_type": "EXPLICIT",
+      "source": "Engaging in forest activities, such as logging, hunting, or spending the night in the forest, is considered a primary risk factor for malaria infection in the Greater Mekong Sub-region (GMS) (Chaveepojnkamjorn and Pichainarong, 2004; Das et al., 2004; Lansang et al., 1997; Erhart et al., 2005; Trung et al., 2004) with recent outbreaks attributed to deforestation activities (Lyttleton, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies in the region.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "7b190d1e-c4bb-4f05-bbcb-9f955e1f87fd",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C10",
+      "claim": "Recent malaria outbreaks have been attributed to deforestation activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Engaging in forest activities, such as logging, hunting, or spending the night in the forest, is considered a primary risk factor for malaria infection in the Greater Mekong Sub-region (GMS) (Chaveepojnkamjorn and Pichainarong, 2004; Das et al., 2004; Lansang et al., 1997; Erhart et al., 2005; Trung et al., 2004) with recent outbreaks attributed to deforestation activities (Lyttleton, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lyttleton, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "0fce8781-9fc4-472c-814f-25db7ca4d35a",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C11",
+      "claim": "Anopheles dirus and Anopheles minimus are the most efficient and widespread malaria vectors in the GMS.",
+      "claim_type": "EXPLICIT",
+      "source": "This is most likely the result of increased human exposure to the forest dwelling Anopheles dirus and Anopheles minimus, the most efficient and widespread malaria vectors in the GMS (Obsomer et al., 2007; Obsomer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Obsomer et al., 2007 and 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "652579cc-ef7d-4ff0-8b8a-35bafc286582",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C12",
+      "claim": "Anopheles dirus and Anopheles minimus are forest dwelling mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is most likely the result of increased human exposure to the forest dwelling Anopheles dirus and Anopheles minimus, the most efficient and widespread malaria vectors in the GMS (Obsomer et al., 2007; Obsomer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "76bb6767-936c-46d4-a92c-4518be037235",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C13",
+      "claim": "Deforestation may alter the 'forest malaria' ecosystem and eventually reduce malaria incidence in Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "However, deforestation may also alter this 'forest malaria' (Sharma and Kondrashin, 1991) ecosystem and eventually reduce malaria incidence, as is generally accepted to be the case in Southeast Asia (Guerra et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sharma and Kondrashin, 1991 and Guerra et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "aafa8147-d951-4278-b06a-a03669782b52",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C14",
+      "claim": "The majority of previous studies assessing the relationship between deforestation and malaria focused outside of the GMS, most notably in the Amazonian forest.",
+      "claim_type": "EXPLICIT",
+      "source": "Several previous studies have assessed the relationship between deforestation and malaria, but the majority focused outside of the GMS, most notably in the Amazonian forest (Wayant et al., 2010; Olson et al., 2010; Hahn et al., 2014a; Valle and Clark, 2013; Terrazas et al., 2015) where the evidence has been met with conflicting interpretations (Tucker Lima et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies in the Amazon and a review noting conflicting interpretations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "adbabeb3-525c-47db-80ef-78938302f986",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C15",
+      "claim": "National malaria programs across the GMS target forest-going populations for prevention and treatment efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "As national malaria programs across the GMS target forest-going populations for prevention and treatment efforts (Guyant et al., 2015; WHO, 2016), improved understanding of the relationship between deforestation and malaria is critical for programs to assess and meet national 2030 malaria elimination goals (World Health Organization, 2016; WHO, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Guyant et al., 2015 and WHO, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "4d8fb92b-62f6-446d-8663-49228d5cc6ca",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C16",
+      "claim": "The 'frontier malaria' hypothesis posits that malaria temporarily increases following deforestation efforts to open a human settlement area in the forest.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Amazon, the 'frontier malaria' hypothesis (Sawyer, 1988) posits that malaria temporarily increases following deforestation efforts to open a human settlement area in the forest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an established hypothesis with citation to Sawyer, 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "6fe81252-32fb-453e-a409-2bb2ddc13b20",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C17",
+      "claim": "According to the frontier malaria hypothesis, after approximately 6\u20138 years, settlements become more urbanized and isolated from the surrounding forest, resulting in reduced malaria transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, after approximately 6\u20138 years, settlements become more urbanized and isolated from the surrounding forest, and less suitable for malaria vectors, resulting in reduced malaria transmission (de Castro et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the frontier malaria hypothesis description, supported by citation to de Castro et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "8876c5a5-ccad-4fe6-99dd-336475e84724",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C18",
+      "claim": "Recent work has challenged the frontier malaria hypothesis and found that some older settlements were also likely to have high malaria incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has challenged this hypothesis, however, and found that some older settlements were also likely to have high malaria incidence (Ilacqua et al., 2018), highlighting the importance of assessing the relationship between deforestation and malaria at different spatio-temporal scales (Singer and de Castro, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ilacqua et al., 2018 and Singer and de Castro, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "6d70355b-01e3-4e44-a022-e3c56b8cbcd0",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C19",
+      "claim": "A recent review recommended the integration of multiple socio-economic, demographic and ecological mechanisms to disentangle the relationship between deforestation and malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent review of the literature on deforestation and malaria in the Amazon (Tucker Lima et al., 2017) recommended the integration of multiple socio-economic, demographic and ecological mechanisms to disentangle the relationship between deforestation and malaria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tucker Lima et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "2737874c-404f-4466-9479-1f92c23d3a43",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C20",
+      "claim": "Deforestation in the Amazon has been shown to increase mosquitoes' larval habitat through the creation of areas with abundant sunlight and pooling water.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, deforestation in the Amazon has been shown to increase mosquitoes' larval habitat (Vittor et al., 2009) through the creation of areas with abundant sunlight and pooling water, resulting in increased human biting activity (Vittor et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Vittor et al., 2009 and 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "cb5bc3a1-ba77-4aed-8880-bb19dd20f3dd",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C21",
+      "claim": "Deforestation in the Amazon has resulted in increased human biting activity by mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, deforestation in the Amazon has been shown to increase mosquitoes' larval habitat (Vittor et al., 2009) through the creation of areas with abundant sunlight and pooling water, resulting in increased human biting activity (Vittor et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vittor et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "f1ff3996-fc63-4108-bdb5-800e6aced114",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C22",
+      "claim": "Immigration and rapid population movements are mechanisms affecting malaria transmission in frontier areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, immigration and rapid population movements, stirring human-vector interactions, are other mechanisms affecting malaria transmission in frontier areas (Moreno et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Moreno et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "a87da3c0-8e4e-462a-95b1-b4108d67461f",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C23",
+      "claim": "A modeling study showed that the temporal pattern of increased incidence followed by a decrease can vary depending on ecological and socio-economic parameters in frontier areas.",
+      "claim_type": "EXPLICIT",
+      "source": "A modeling study (Baeza et al., 2017) showed that the temporal pattern of increased incidence followed by a decrease can vary depending on ecological and socio-economic parameters in frontiers areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Baeza et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "1d490601-8027-4086-bfe9-4c667588e430",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C24",
+      "claim": "Temperature is a known environmental predictor of malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Variables such as temperature (Beck-Johnson et al., 2013; Mordecai et al., 2013), precipitation (Parham and Michael, 2010; Parham et al., 2012), or seasonality Hay et al., 1998 are known environmental predictors of malaria, although the spatio-temporal scale of those effects often varies across different areas (Teklehaimanot et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beck-Johnson et al., 2013 and Mordecai et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "b10d8548-741b-41b4-a2b6-7e1fe5e3d2b5",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C25",
+      "claim": "Precipitation is a known environmental predictor of malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Variables such as temperature (Beck-Johnson et al., 2013; Mordecai et al., 2013), precipitation (Parham and Michael, 2010; Parham et al., 2012), or seasonality Hay et al., 1998 are known environmental predictors of malaria, although the spatio-temporal scale of those effects often varies across different areas (Teklehaimanot et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Parham and Michael, 2010 and Parham et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "4eef3c59-6349-4b60-9d23-f313aa6753c1",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C26",
+      "claim": "Seasonality is a known environmental predictor of malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Variables such as temperature (Beck-Johnson et al., 2013; Mordecai et al., 2013), precipitation (Parham and Michael, 2010; Parham et al., 2012), or seasonality Hay et al., 1998 are known environmental predictors of malaria, although the spatio-temporal scale of those effects often varies across different areas (Teklehaimanot et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hay et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "f181465a-b4b1-4864-b27f-e080aeac9503",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C27",
+      "claim": "The spatio-temporal scale of environmental effects on malaria often varies across different areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Variables such as temperature (Beck-Johnson et al., 2013; Mordecai et al., 2013), precipitation (Parham and Michael, 2010; Parham et al., 2012), or seasonality Hay et al., 1998 are known environmental predictors of malaria, although the spatio-temporal scale of those effects often varies across different areas (Teklehaimanot et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Teklehaimanot et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "be283d03-0ba6-422c-8b9a-45dcc5f0c7fb",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C28",
+      "claim": "Remote areas may experience higher malaria rates because of poor access to public health services.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, remote areas may experience higher malaria rates because of poor access to public health services, but also have denser forest cover or lower deforestation rates (Busch and Ferretti-Gallon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Busch and Ferretti-Gallon, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "4c33d057-d635-4d20-8e78-21836c2a9909",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C29",
+      "claim": "Remote areas may have denser forest cover or lower deforestation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, remote areas may experience higher malaria rates because of poor access to public health services, but also have denser forest cover or lower deforestation rates (Busch and Ferretti-Gallon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Busch and Ferretti-Gallon, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "f7ad9ef3-c097-4fba-b4a1-da5a3d5f4fe4",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C30",
+      "claim": "Forest-going populations in the GMS are at higher risk for malaria due to poor adherence to protective measures against mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, forest-going populations in the GMS are also at higher risk for malaria (Parker et al., 2017) due to poor adherence to protective measures against mosquitoes such as insecticide-treated bed nets (ITNs) or long-lasting insecticidal hammocks (LLIHs) (Peeters Grietens et al., 2010; WHO, 2016) and inadequate access to treatment (Guyant et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Parker et al., 2017, Peeters Grietens et al., 2010, and WHO, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "b2f1ba07-939c-4705-b48e-1003f3b74368",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C31",
+      "claim": "Forest-going populations in the GMS are at higher risk for malaria due to inadequate access to treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, forest-going populations in the GMS are also at higher risk for malaria (Parker et al., 2017) due to poor adherence to protective measures against mosquitoes such as insecticide-treated bed nets (ITNs) or long-lasting insecticidal hammocks (LLIHs) (Peeters Grietens et al., 2010; WHO, 2016) and inadequate access to treatment (Guyant et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guyant et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "3726eebf-c931-4b4a-85f8-8d803855efa1",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C32",
+      "claim": "Bauhoff and Busch, 2020 identified only 10 empirical studies that assessed the relationship between deforestation and malaria with appropriate adjustments for confounding.",
+      "claim_type": "EXPLICIT",
+      "source": "Bauhoff and Busch, 2020 identified only 10 empirical studies that assessed the relationship between deforestation and malaria with appropriate adjustments for confounding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about findings from Bauhoff and Busch, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "2feda9eb-9e4a-4b6d-8d8e-66a64b124f3d",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C33",
+      "claim": "Of 10 empirical studies with appropriate confounding adjustments, seven reported a positive association between deforestation and malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, seven reported a positive association (Austin et al., 2017; Wayant et al., 2010; Olson et al., 2010; Terrazas et al., 2015; Pattanayak et al., 2010; Garg, 2015; Fornace et al., 2016), two did not find any associations (Bauhoff and Busch, 2020; Hahn et al., 2014a), and one disputed study found a negative association (Valle and Clark, 2013; Hahn et al., 2014b; Valle, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to the seven studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "7918b8cd-a4ac-4a1b-aebb-4f7e664d9d00",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C34",
+      "claim": "Of 10 empirical studies with appropriate confounding adjustments, two did not find any associations between deforestation and malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, seven reported a positive association (Austin et al., 2017; Wayant et al., 2010; Olson et al., 2010; Terrazas et al., 2015; Pattanayak et al., 2010; Garg, 2015; Fornace et al., 2016), two did not find any associations (Bauhoff and Busch, 2020; Hahn et al., 2014a), and one disputed study found a negative association (Valle and Clark, 2013; Hahn et al., 2014b; Valle, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bauhoff and Busch, 2020 and Hahn et al., 2014a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "9b023a90-3846-43b2-ae1a-8eae77e41a8c",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C35",
+      "claim": "One disputed study found a negative association between deforestation and malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, seven reported a positive association (Austin et al., 2017; Wayant et al., 2010; Olson et al., 2010; Terrazas et al., 2015; Pattanayak et al., 2010; Garg, 2015; Fornace et al., 2016), two did not find any associations (Bauhoff and Busch, 2020; Hahn et al., 2014a), and one disputed study found a negative association (Valle and Clark, 2013; Hahn et al., 2014b; Valle, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Valle and Clark, 2013, Hahn et al., 2014b, and Valle, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "d1ad2bc2-73e2-46b5-a70d-3569bbd38fde",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C36",
+      "claim": "A recent study found deforestation to increase malaria risk and malaria to decrease deforestation activities in the Amazon.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, a study found deforestation to increase malaria risk and malaria to decrease deforestation activities in the Amazon, using an instrumental variable analysis to disentangle any reverse causality loop (MacDonald and Mordecai, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to MacDonald and Mordecai, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "b97fef35-b23f-4823-a3c5-f466cd29ae5f",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C37",
+      "claim": "Only half of the studies on deforestation and malaria used high-resolution forest data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only half of the above-mentioned studies used high-resolution forest data, with most studies using spatially aggregated data and exploring only a limited range of spatial and temporal scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the review of previous studies mentioned in the text.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "63f5938a-71ad-4b85-a085-55ce56be9ccc",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C38",
+      "claim": "Only three studies on deforestation and malaria were conducted in Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "Only three of these studies were conducted in Southeast Asia (Pattanayak et al., 2010; Garg, 2015; Fornace et al., 2016), and none in the GMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the three studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "58be7175-2574-4681-b885-9d11222b24e9",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C39",
+      "claim": "No previous studies on deforestation and malaria were conducted in the GMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Only three of these studies were conducted in Southeast Asia (Pattanayak et al., 2010; Garg, 2015; Fornace et al., 2016), and none in the GMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text based on review of literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "b5ee7212-6988-4baf-a684-55aa4fd8e0af",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C40",
+      "claim": "All three studies on deforestation and malaria in Southeast Asia found that malaria increases after deforestation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all three found that malaria increases after deforestation, but all had limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on review of the three Southeast Asian studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "89657111-2125-429b-bbc5-c3ea29d2855b",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C41",
+      "claim": "The two studies in Indonesia used coarsely aggregated forest data and potentially biased self-reported malaria data.",
+      "claim_type": "EXPLICIT",
+      "source": "The two studies in Indonesia Pattanayak et al., 2010; Garg, 2015 used coarsely aggregated forest data and potentially biased self-reported malaria data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of the limitations of the two Indonesian studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "8dcc8a94-a99c-41b1-9628-b932afeca34b",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C42",
+      "claim": "The study in Malaysia focused on Plasmodium knowlesi, whose primary host is the long-tailed macaque.",
+      "claim_type": "EXPLICIT",
+      "source": "The third study, in Malaysia (Fornace et al., 2016), focused on a specific and geographically confined malaria parasite, Plasmodium knowlesi, whose primary host is the long-tailed macaque and whose presence in the GMS, where P. falciparum and P. vivax dominate, is limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fornace et al., 2016 and describes characteristics of P. knowlesi.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "492888b9-57b7-462e-9926-676f5ef02388",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C43",
+      "claim": "Plasmodium knowlesi presence in the GMS is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "The third study, in Malaysia (Fornace et al., 2016), focused on a specific and geographically confined malaria parasite, Plasmodium knowlesi, whose primary host is the long-tailed macaque and whose presence in the GMS, where P. falciparum and P. vivax dominate, is limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of P. knowlesi in the GMS context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "2e19b8af-7d09-418b-9e85-0e3e3f0244ea",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C44",
+      "claim": "P. falciparum and P. vivax dominate in the GMS.",
+      "claim_type": "EXPLICIT",
+      "source": "The third study, in Malaysia (Fornace et al., 2016), focused on a specific and geographically confined malaria parasite, Plasmodium knowlesi, whose primary host is the long-tailed macaque and whose presence in the GMS, where P. falciparum and P. vivax dominate, is limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about malaria species in the GMS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "1e6f17ea-4965-4338-a567-c1f3e3f552d5",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C45",
+      "claim": "No prior studies have quantified the relationship between deforestation and malaria incidence in the GMS.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, no prior studies have quantified the relationship between deforestation and malaria incidence in the GMS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the literature review conducted.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "a251c5a7-e72e-4b48-ae80-24517317bade",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C46",
+      "claim": "Forest-going activities are a main source of income generation in Lao PDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding this relationship is especially important in the GMS, where forest-going activities are a main source of income generation (Lao PDR, 2016) and malaria clusters in forest-going populations (World Health Organization, 2016; WHO, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lao PDR, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "6b2bf9a3-d994-491f-891b-a90f80a69115",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C47",
+      "claim": "Malaria clusters in forest-going populations in the GMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding this relationship is especially important in the GMS, where forest-going activities are a main source of income generation (Lao PDR, 2016) and malaria clusters in forest-going populations (World Health Organization, 2016; WHO, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to World Health Organization, 2016 and WHO, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "ddaf0d7a-f216-44a2-8817-b62db5e9d918",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C48",
+      "claim": "Forest cover was denser in the north than in the south of Lao PDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the forest cover was denser in the north than in the south and deforestation over this period was higher in the north than in the south.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of forest cover data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "6307f389-f7ee-434c-89ab-77e0f35b9e3c",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C49",
+      "claim": "Deforestation between 2011 and 2016 was higher in the north than in the south of Lao PDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the forest cover was denser in the north than in the south and deforestation over this period was higher in the north than in the south.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of forest loss data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "8fa22f39-1a38-4d1b-8dcf-4a48eb5efdd1",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C50",
+      "claim": "The cumulative percent area within 30 km of a village that experienced forest loss between 2011 and 2016 ranged from 0 to 10% in the north.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the cumulative percent area within 30 km of a village that experienced forest loss between 2011 and 2016 ranged from 0 to 10% in the north, whereas it rarely exceeded 2.5% in the south.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of forest loss data presented in Appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "1787e546-ae78-4494-ba8f-5ebb16c6f3df",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C51",
+      "claim": "The cumulative percent area within 30 km of a village that experienced forest loss between 2011 and 2016 rarely exceeded 2.5% in the south.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the cumulative percent area within 30 km of a village that experienced forest loss between 2011 and 2016 ranged from 0 to 10% in the north, whereas it rarely exceeded 2.5% in the south.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of forest loss data presented in Appendix figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "568db4be-e461-438c-9832-3cd36662a7e4",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C52",
+      "claim": "Deforestation rate in 2015 within 10 km of a village was about 1% in the south and 2.5% in the north.",
+      "claim_type": "EXPLICIT",
+      "source": "Deforestation rate in 2015 within 10 km of a village was of about 1% in the south and 2.5% in the north.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of forest loss data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "3c74b92b-0796-4601-8dc8-e519759ec90a",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C53",
+      "claim": "The 284 villages in the north were overall less populated than the 207 villages in the south.",
+      "claim_type": "EXPLICIT",
+      "source": "The 284 villages in the north were overall less populated (mean 2015 population size: 498, IQR: [241; 548]) than the 207 villages in the south (2015 mean: 1095, IQR: [584; 1384]), but with some highly populated outliers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of census population data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "34b5a07b-7505-43c6-9956-1a0d7260b100",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C54",
+      "claim": "Altitude differed substantially between villages of the mountainous northern region (mean: 557 m) and the lowlands of the south (mean: 120 m).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, altitude differed substantially between villages of the mountainous northern region (mean: 557 m, IQR: [378; 679]) and the lowlands of the south (mean: 120 m, IQR: [98; 130]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of elevation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "0782610d-507d-40d9-85ff-7f37fd19bbce",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C55",
+      "claim": "Both regions exhibited similar seasonal trends in precipitation and temperature, with a rainy season spanning from April to October.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both regions exhibited similar seasonal trends in precipitation and temperature, with a rainy season spanning from April to October, villages in the south experienced higher monthly precipitation and temperature than in the north over the study period (Appendix 1\u2014figure 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of climate data shown in Appendix 1\u2014figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "5719c064-63af-4031-ac76-9cf1be6fbd96",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C56",
+      "claim": "Villages in the south experienced higher monthly precipitation and temperature than in the north over the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both regions exhibited similar seasonal trends in precipitation and temperature, with a rainy season spanning from April to October, villages in the south experienced higher monthly precipitation and temperature than in the north over the study period (Appendix 1\u2014figure 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of climate data shown in Appendix 1\u2014figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "b5c90a37-5763-4825-9867-4e72e74567ec",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C57",
+      "claim": "For villages with an estimated travel time of 0 hr to the closest health facility, the predicted probability of seeking treatment for fever was 0.87 (95% CI: [0.79; 0.92]) in the north.",
+      "claim_type": "EXPLICIT",
+      "source": "For villages with an estimated travel time of 0 hr to the closest health facility (same 300 m2 pixel), the predicted probability of seeking treatment for fever was 0.87 (95% CI: [0.79; 0.92]) in the north and 0.78 (95% CI: [0.63; 0.89]) in the south.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the treatment-seeking model fitted to survey data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "8db12d8a-2ac7-48dd-b389-726266918620",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C58",
+      "claim": "For villages with an estimated travel time of 0 hr to the closest health facility, the predicted probability of seeking treatment for fever was 0.78 (95% CI: [0.63; 0.89]) in the south.",
+      "claim_type": "EXPLICIT",
+      "source": "For villages with an estimated travel time of 0 hr to the closest health facility (same 300 m2 pixel), the predicted probability of seeking treatment for fever was 0.87 (95% CI: [0.79; 0.92]) in the north and 0.78 (95% CI: [0.63; 0.89]) in the south.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the treatment-seeking model fitted to survey data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "9a2c5574-1f47-45d2-88ff-0b4521371299",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C59",
+      "claim": "A 1 hr increase in travel time to the closest health facility was associated with a 0.79 (95% CI: [0.55; 1.13]) reduction in the odds of seeking treatment in the north.",
+      "claim_type": "EXPLICIT",
+      "source": "A 1 hr increase in travel time to the closest health facility was associated with a similar 0.79 (95% CI: [0.55; 1.13]) reduction in the odds of seeking treatment in the north and 0.76 (95% CI: [0.43; 1.34]) in the south, almost reaching statistical significance when pooling data from both regions: 0.77 (95% CI: [0.56; 1.04]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the treatment-seeking model fitted to survey data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "2a01511e-8444-4386-ad96-426530294235",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C60",
+      "claim": "A 1 hr increase in travel time to the closest health facility was associated with a 0.76 (95% CI: [0.43; 1.34]) reduction in the odds of seeking treatment in the south.",
+      "claim_type": "EXPLICIT",
+      "source": "A 1 hr increase in travel time to the closest health facility was associated with a similar 0.79 (95% CI: [0.55; 1.13]) reduction in the odds of seeking treatment in the north and 0.76 (95% CI: [0.43; 1.34]) in the south, almost reaching statistical significance when pooling data from both regions: 0.77 (95% CI: [0.56; 1.04]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the treatment-seeking model fitted to survey data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "998663e3-0b28-4f59-8322-6feb661d8469",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C61",
+      "claim": "A total of 63,040 patient records were abstracted from the malaria registries of all public health facilities in four southern districts between October 2013 and October 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 63,040 patient records were abstracted from the malaria registries of all public health facilities in four southern districts between October 2013 and October 2016 and 1754 from all health facilities in four northern districts between January 2013 and December 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection from health facility registries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "2085b39e-962c-49ed-9914-17420eb78fb0",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C62",
+      "claim": "A total of 1,754 patient records were abstracted from all health facilities in four northern districts between January 2013 and December 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 63,040 patient records were abstracted from the malaria registries of all public health facilities in four southern districts between October 2013 and October 2016 and 1754 from all health facilities in four northern districts between January 2013 and December 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection from health facility registries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "52fcae66-15ee-4a5c-9859-8bd8d71c9a36",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C63",
+      "claim": "In the south, 91.2% of the patients in the registries were tested for malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "In the south, 91.2% of the patients in the registries were tested for malaria, of which 78.1% were tested by RDT and 26.2% by microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the malaria registry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "4a4d7844-a43c-4e65-b7c7-9fad280aca9d",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C64",
+      "claim": "In the south, 78.1% of tested patients were tested by RDT and 26.2% by microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "In the south, 91.2% of the patients in the registries were tested for malaria, of which 78.1% were tested by RDT and 26.2% by microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the malaria registry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "df7adcf1-22eb-4e8e-91fb-f44e73700b80",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C65",
+      "claim": "Overall test positivity in the south was 33.2% for any infection, 16.4% for P. falciparum and 18.2% for P. vivax.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall test positivity was 33.2% for any infection, 16.4% for P. falciparum and 18.2% for P. vivax.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the malaria registry data from the south.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "d7de48f7-90e8-4894-8f44-7a43f54b5883",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C66",
+      "claim": "Monthly incidence in the south peaked to about six cases per 1000 people in the 2014 rainy season.",
+      "claim_type": "EXPLICIT",
+      "source": "Monthly incidence peaked to about six cases per 1000 people in the 2014 rainy season, eventually decreasing to below one case per 1000 in 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the malaria incidence data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "5b139270-655f-4f63-b1eb-0154fe056909",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C67",
+      "claim": "Monthly incidence in the south decreased to below one case per 1000 in 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "Monthly incidence peaked to about six cases per 1000 people in the 2014 rainy season, eventually decreasing to below one case per 1000 in 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the malaria incidence data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "fd00ebd5-ada7-4929-8788-f9f2ec5e24f4",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C68",
+      "claim": "In the north, 92.1% of the patients in the registries were tested for malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "In the north, 92.1% of the patients in the registries were tested for malaria, of which 96.3% were tested by RDT and 9.6% by microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the malaria registry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "df871dea-bfb5-40c5-91cf-fe4f7a49e358",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C69",
+      "claim": "In the north, 96.3% of tested patients were tested by RDT and 9.6% by microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "In the north, 92.1% of the patients in the registries were tested for malaria, of which 96.3% were tested by RDT and 9.6% by microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the malaria registry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "1217d4ed-09ca-4010-b521-99e4d83ae284",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C70",
+      "claim": "Overall test positivity in the north was 23.8% for any infection, 2.8% for P. falciparum and 22.5% for P. vivax.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall test positivity was 23.8% for any infection, 2.8% for P. falciparum and 22.5% for P. vivax.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the malaria registry data from the north.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "d983cee0-957c-43b0-979d-44dc1de4c7de",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C71",
+      "claim": "Monthly malaria incidence in the north was very low, never exceeding 0.3 per 1000 people.",
+      "claim_type": "EXPLICIT",
+      "source": "Monthly malaria incidence in the north was very low, never exceeding 0.3 per 1000 people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the malaria incidence data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "9d3e4fad-cf49-4aaf-961f-5eea62b6b856",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C72",
+      "claim": "Most infections in the north were P. vivax cases with only a few seasonal P. falciparum cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Most infections in the north were P. vivax cases with only a few seasonal P. falciparum cases (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the malaria incidence data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "3a8d2955-db69-4ebd-a8aa-d0c7a6123e07",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C73",
+      "claim": "On average, patients in the south were older than patients in the north with mean age of 28 years and 23 years, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, patients in the south were older than patients in the north with mean age of 28 years and 23 years, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of demographic data from malaria registries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "d1559d94-3571-4374-a308-0eefb13061f9",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C74",
+      "claim": "In the north, about half of the patients were male (53.1%), while most patients in the south were male (71.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "In the north, about half of the patients were male (53.1%), while most patients in the south were male (71.1%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of demographic data from malaria registries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "68ab0cd4-a68f-47af-8dae-81a6e777b144",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C75",
+      "claim": "The vast majority (68.2%) of patients in the south were farmers.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the vast majority (68.2%) of patients in the south were farmers, whereas only 8% of patients in the north were farmers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of occupation data from malaria registries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "4c6ff425-122f-405f-99b1-90c7a9c760e4",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C76",
+      "claim": "Only 8% of patients in the north were farmers.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the vast majority (68.2%) of patients in the south were farmers, whereas only 8% of patients in the north were farmers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of occupation data from malaria registries.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "c9b57077-5de6-41a9-a932-028fd1e19934",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C77",
+      "claim": "Most patients in the north reported being unemployed (41.7%) or a student (31.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "Most patients in the north reported being unemployed (41.7%) or a student (31.2%) (Appendix 1\u2014figure 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of occupation data from malaria registries shown in Appendix 1\u2014figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "8db20ab8-b4de-4c54-a715-6df08ec37385",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C78",
+      "claim": "Overall, 88.1% of malaria records were matched to one of the 491 villages in study districts.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 88.1% of malaria records were matched to one of the 491 villages in study districts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the success rate of geo-referencing malaria records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "b17b342d-2459-40f4-a304-0f4ac0d44bff",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C79",
+      "claim": "11.7% of records in the south and 17.3% in the north were removed from the analysis because of ambiguous village names, local nicknames for small villages and dissolving and grouping of villages over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining (11.7% in the south and 17.3% in the north) were removed from the analysis because of ambiguous village names, local nicknames for small villages and dissolving and grouping of villages over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the proportion and reasons for exclusion of records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "28bb772e-acb7-4073-aabb-702a7fb7f0db",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C80",
+      "claim": "Test positivity in the south was similar in matched (33.1%) and unmatched (34.2%) records.",
+      "claim_type": "EXPLICIT",
+      "source": "Test positivity in the south was similar in matched (33.1%) and unmatched (34.2%) records but higher in matched (26.5%) than unmatched (10.5%) records in the north.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of test positivity between matched and unmatched records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "9be5c13f-0885-4443-b107-25f66f9ea788",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C81",
+      "claim": "Test positivity in the north was higher in matched (26.5%) than unmatched (10.5%) records.",
+      "claim_type": "EXPLICIT",
+      "source": "Test positivity in the south was similar in matched (33.1%) and unmatched (34.2%) records but higher in matched (26.5%) than unmatched (10.5%) records in the north.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of test positivity between matched and unmatched records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "462382ac-04fa-4309-a66b-4afb27b5af2a",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C82",
+      "claim": "Fewer than 0.3% of matched malaria records were missing dates and were removed from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer than 0.3% of matched malaria records were missing dates and also removed from the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes data exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "4cc8e826-39aa-429a-b4ea-4b33cfd1ca27",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C83",
+      "claim": "In the south, deforestation within 30 km of a village in the previous 1 year was associated with an IRR of 1.16 (95% CI: [1.10; 1.22]).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the south, deforestation within 30 km of a village in the previous 1 and 2 years was associated with higher malaria incidence rates (e.g. 1 year lag, IRR = 1.16, 95% CI: [1.10; 1.22]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the spatio-temporal model shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "9dc4f4f9-5287-4b56-bfad-61d3891a834f",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C84",
+      "claim": "In the south, deforestation within 30 km of a village in the previous 5 years was associated with an IRR of 0.94 (95% CI: [0.91; 0.97]).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, deforestation within 30 km of a village in the previous 3, 4, or 5 years was associated with approximately a 5% lower malaria incidence rate both in the south (e.g. 5 year lag, IRR = 0.94, 95% CI: [0.91; 0.97]) and in the north (e.g. 5 year lag, IRR = 0.96, 95% CI: [0.93; 0.98]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the spatio-temporal model shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "d2efdc2e-4860-497a-bf01-5e6ab28e750c",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C85",
+      "claim": "In the north, deforestation within 30 km of a village in the previous 5 years was associated with an IRR of 0.96 (95% CI: [0.93; 0.98]).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, deforestation within 30 km of a village in the previous 3, 4, or 5 years was associated with approximately a 5% lower malaria incidence rate both in the south (e.g. 5 year lag, IRR = 0.94, 95% CI: [0.91; 0.97]) and in the north (e.g. 5 year lag, IRR = 0.96, 95% CI: [0.93; 0.98]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the spatio-temporal model shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "c1e50771-a053-4ff8-8f48-ff94d6209197",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C86",
+      "claim": "Deforestation within 1 or 10 km of a village was not associated with malaria incidence rate in either the south or the north, regardless of the temporal lag.",
+      "claim_type": "EXPLICIT",
+      "source": "Deforestation within 1 or 10 km of a village was not associated with malaria incidence rate in either the south or the north, regardless of the temporal lag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the spatio-temporal model shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "222be8d8-c660-4126-a046-7179754421ba",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C87",
+      "claim": "The pattern of spatio-temporal associations between deforestation and malaria is primarily driven by P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 2 and Figure 4 show that the pattern of adjusted spatio-temporal associations identified in Table 1 is primarily driven by P. falciparum, with no associations for deforestation in the near vicinity of villages (1 or 10 km) but a short-term increase (e.g. 1 year lag, IRR = 1.27, 95% CI: [1.18; 1.36]) and long-term decrease (e.g. 5-year lag, IRR = 0.83, 95% CI: [0.80; 0.87]) in P. falciparum malaria incidence for deforestation within 30 km of villages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on species-specific analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "89b233d3-d959-4f0d-8b60-07ee8c6ca29d",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C88",
+      "claim": "For P. falciparum in the south, deforestation within 30 km in the previous 1 year was associated with an IRR of 1.27 (95% CI: [1.18; 1.36]).",
+      "claim_type": "EXPLICIT",
+      "source": "Table 2 and Figure 4 show that the pattern of adjusted spatio-temporal associations identified in Table 1 is primarily driven by P. falciparum, with no associations for deforestation in the near vicinity of villages (1 or 10 km) but a short-term increase (e.g. 1 year lag, IRR = 1.27, 95% CI: [1.18; 1.36]) and long-term decrease (e.g. 5-year lag, IRR = 0.83, 95% CI: [0.80; 0.87]) in P. falciparum malaria incidence for deforestation within 30 km of villages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on species-specific analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "3cfe91d8-0096-444e-b31a-ce7cd3a081b9",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C89",
+      "claim": "For P. falciparum in the south, deforestation within 30 km in the previous 5 years was associated with an IRR of 0.83 (95% CI: [0.80; 0.87]).",
+      "claim_type": "EXPLICIT",
+      "source": "Table 2 and Figure 4 show that the pattern of adjusted spatio-temporal associations identified in Table 1 is primarily driven by P. falciparum, with no associations for deforestation in the near vicinity of villages (1 or 10 km) but a short-term increase (e.g. 1 year lag, IRR = 1.27, 95% CI: [1.18; 1.36]) and long-term decrease (e.g. 5-year lag, IRR = 0.83, 95% CI: [0.80; 0.87]) in P. falciparum malaria incidence for deforestation within 30 km of villages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on species-specific analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "913f9a89-05e3-401d-9b41-f44e59dd1d15",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C90",
+      "claim": "All associations between deforestation and malaria were attenuated for P. vivax infections.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, all the associations were attenuated for P. vivax infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on species-specific analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "3b92676e-24cc-4d89-96b4-15f17727d839",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C91",
+      "claim": "For P. vivax in the south, deforestation within 30 km in the previous 1 year was associated with an IRR of 1.07 (95% CI: [1.01; 1.13]).",
+      "claim_type": "EXPLICIT",
+      "source": "In the previous 2 years and within 30 km of villages, deforestation is still associated with a higher incidence of P. vivax (e.g. 1 year lag, IRR = 1.07, 95% CI: [1.01; 1.13]) but less so than for P. falciparum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on species-specific analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "1c3e34c8-6fd4-4e39-ae4a-108debae30e4",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C92",
+      "claim": "Regardless of the temporal lag or spatial scale, deforestation was not associated with lower P. vivax malaria risks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, regardless of the temporal lag or spatial scale, deforestation was no longer associated with lower P. vivax malaria risks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on species-specific analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "906a7d58-3b3f-4578-a9cb-0cf1c6fb6cae",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C93",
+      "claim": "The associations with deforestation became more pronounced when restricted to forest losses in more densely forested areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations with deforestation became more pronounced as we restricted forest losses to more forested areas: the adjusted IRR for deforestation in the previous 1 year, within 30 km of southern villages, increased from 1.16 (95% CI: [1.10; 1.22]) to 1.28 (95% CI: [1; 1.64]) when considering deforestation in areas with more than 0% and 87% tree crown cover respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis using alternative definitions of deforestation shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "5121482f-e706-4bd6-85e6-59012a5d8de5",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C94",
+      "claim": "In the south, the adjusted IRR for deforestation in the previous 1 year within 30 km increased from 1.16 to 1.28 when considering deforestation in areas with more than 0% and 87% tree crown cover respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations with deforestation became more pronounced as we restricted forest losses to more forested areas: the adjusted IRR for deforestation in the previous 1 year, within 30 km of southern villages, increased from 1.16 (95% CI: [1.10; 1.22]) to 1.28 (95% CI: [1; 1.64]) when considering deforestation in areas with more than 0% and 87% tree crown cover respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis using alternative definitions of deforestation shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "b8631359-0273-4d48-8e4f-e71d2109f9bf",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C95",
+      "claim": "In the south, the adjusted IRR for deforestation in the previous 5 years within 30 km decreased from 0.94 to 0.83 when considering deforestation in areas with more than 0% and 87% tree crown cover respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the adjusted IRR for deforestation in the previous 5 years, within 30 km of southern villages, decreased from 0.94 (95% CI: [0.91; 0.97]) to 0.83 (95% CI: [0.76; 0.90]) when considering deforestation in areas with more than 0% and 87% tree crown cover, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis using alternative definitions of deforestation shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "73f8c364-5cd5-404e-892d-3d19cc60b5e6",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C96",
+      "claim": "Deforestation in deep and dense forests is more closely associated with malaria incidence in villages than deforestation in less forested areas.",
+      "claim_type": "EXPLICIT",
+      "source": "These evidence strengthen our previous results and suggest that deforestation in deep and dense forests is more closely associated with malaria incidence in villages than deforestation in less forested areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results from the alternative deforestation definitions analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "40ccca2d-7c1a-4da1-af41-5cc81704137e",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C97",
+      "claim": "The study found an earlier inflexion point (1\u20133 years after deforestation) compared to 6\u20138 years in the Amazon.",
+      "claim_type": "EXPLICIT",
+      "source": "This study's results echo the frontier malaria hypothesis from the Amazon region, which posits an increase in malaria incidence in the first few years following deforestation and a decrease over the long term. However, we found an earlier inflexion point, 1\u20133 years after deforestation compared to 6\u20138 years in the Amazon (de Castro et al., 2006), most likely because of very different underlying human processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the study's findings with the frontier malaria hypothesis from the Amazon.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "6091795f-0fed-443c-af5c-b86400ac837f",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C98",
+      "claim": "The frontier malaria hypothesis considers non-indigenous human settlements sprouting deeper in the forest whereas forest-going populations in the GMS are primarily members of established forest-fringe communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the frontier malaria hypothesis considers non-indigenous human settlements sprouting deeper and deeper in the forest whereas forest-going populations in the GMS are primarily members of established forest-fringe communities who regularly tour the forest overnight to hunt and collect wood (Dysoley et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of different human processes underlying deforestation in the Amazon versus the GMS, supported by citation to Dysoley et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "4bfd46f8-5eb6-4d24-a7f3-5b60562a827e",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C99",
+      "claim": "Forest-going populations in the GMS regularly tour the forest overnight to hunt and collect wood.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the frontier malaria hypothesis considers non-indigenous human settlements sprouting deeper and deeper in the forest whereas forest-going populations in the GMS are primarily members of established forest-fringe communities who regularly tour the forest overnight to hunt and collect wood (Dysoley et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dysoley et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "0c047b45-2579-41d3-a525-f844507f1c2d",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C100",
+      "claim": "Industrial and agricultural projects or lucrative forest-based activities attract mobile and migrant populations in remote forested areas of the GMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Industrial and agricultural projects or lucrative forest-based activities also attract mobile and migrant populations (MMPs) Guyant et al., 2015 in remote forested areas of the GMS but not on the same scale as the politically and economically driven unique colonization of the Amazon (de Castro et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guyant et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "1d0c7c1c-5069-412a-8a80-0000c5350988",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C101",
+      "claim": "The study's results are consistent with three previous multivariable empirical studies that assessed the effect of deforestation on malaria in Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are also consistent with the three previous multivariable empirical studies (Garg, 2015; Pattanayak et al., 2010; Fornace et al., 2016) that assessed the effect of deforestation on malaria in Southeast Asia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "2f83248e-ac6c-4b3a-b32c-36b710195cec",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C102",
+      "claim": "Garg, 2015 reported a 2\u201310.4% increase in the probability of a malaria outbreak in villages of districts that lost 1000 hectares of forest cover in the same year.",
+      "claim_type": "EXPLICIT",
+      "source": "Using biennial village census data from Indonesia between 2003 and 2008 and district-aggregated remote sensing forest data, Garg, 2015 reported a 2\u201310.4% increase in the probability of a malaria outbreak in each village of districts that lost 1000 hectares of their forest cover in the same year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of findings from Garg, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "90378360-47b9-45f4-b674-d458ae13ee70",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C103",
+      "claim": "Pattanayak et al., 2010 found a positive association between disturbed forest and malaria in children under 5 in Indonesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Using data from a 1996 cross-sectional household survey conducted in a quasi-experimental setting around a protected area in Indonesia, Pattanayak et al., 2010 found a positive association between disturbed forest (vs undisturbed) and malaria in children under 5, again using no temporal lag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of findings from Pattanayak et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "0033c45d-ecaf-4c40-8b84-7f038bd80c78",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C104",
+      "claim": "Fornace et al., 2016 reported a 2.22 (95% CI: [1.53; 2.93]) increase in P. knowlesi incidence rate for villages where more than 14% of the surrounding area within 2 km experienced forest loss in the previous 5 years.",
+      "claim_type": "EXPLICIT",
+      "source": "They reported a 2.22 (95% CI: [1.53; 2.93]) increase in the P. knowlesi incidence rate for villages where more than 14% (<8%, being the reference) of the surrounding area (within 2 km) experienced forest loss in the previous 5 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of findings from Fornace et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "b960af8d-1d9e-4091-b210-a4362b30bc79",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C105",
+      "claim": "Deforestation captured by remote sensing in this setting likely reflects locations and times of heightened activity in the forest areas near villages.",
+      "claim_type": "EXPLICIT",
+      "source": "Deforestation captured by remote sensing in this setting likely reflects locations and times of heightened activity in the forest areas near villages, and therefore greater human-vector contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of what the deforestation patterns represent in the GMS context.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "f0029d84-da47-463a-916e-00de44ebd4de",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C106",
+      "claim": "Longer and deeper trips into the forest result in increased exposure to mosquitoes, putting forest-goers at higher risk.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect longer and deeper trips into the forest result in increased exposure to mosquitoes, putting forest-goers at higher risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the mechanism behind the observed associations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "7ef59b3c-74ad-44b4-8469-46d50d1120aa",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C107",
+      "claim": "The increase in P. vivax incidence in the first 2 years following deforestation was smaller than for P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in P. vivax incidence in the first 2 years following deforestation was identified as well but the associations were smaller than for P. falciparum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of species-specific results in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "3ebd0b63-9713-468b-a3b6-12f266d56b0d",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C108",
+      "claim": "A recent study in the Amazon reported a similar attenuation of the effects of deforestation on P. vivax compared to P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study in the Amazon MacDonald and Mordecai, 2019 reported a similar attenuation of the effects of deforestation on P. vivax compared to P. falciparum, most likely because of P. vivax parasites' ability to relapse months or even years after infection, which decouples the association between transmission and incidence data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to MacDonald and Mordecai, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "a8d72d53-bc8f-47f7-b874-de84b4a7dc7c",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C109",
+      "claim": "P. vivax parasites have the ability to relapse months or even years after infection, which decouples the association between transmission and incidence data.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study in the Amazon MacDonald and Mordecai, 2019 reported a similar attenuation of the effects of deforestation on P. vivax compared to P. falciparum, most likely because of P. vivax parasites' ability to relapse months or even years after infection, which decouples the association between transmission and incidence data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the attenuated effects, supported by citation and biological knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "9b803a23-88f2-4d68-9fbc-143a538ee732",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C110",
+      "claim": "Lao PDR saw a 92% reduction in malaria cases between 2000 (280,000) and 2010 (23,000).",
+      "claim_type": "EXPLICIT",
+      "source": "Lao PDR has seen a 92% reduction in cases between 2000 (280,000) and 2010 (23,000) (Lao PDR, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lao PDR, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "366a1f46-c427-4ee8-ab96-dc692c315b16",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C111",
+      "claim": "Much of the progress in malaria reduction in Lao PDR has been attributed to heightened funding and better testing and treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Much of this progress has been attributed to heightened funding and better testing and treatments (Okayas, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Okayas, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "cf75210c-c75c-4aa0-9f2c-975b9ef1c8fc",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C112",
+      "claim": "The four districts in the north were chosen in consultation with district and provincial level malaria staff to represent the epidemiology of malaria in the region.",
+      "claim_type": "EXPLICIT",
+      "source": "The four districts in the north were chosen in consultation with district and provincial level malaria staff to represent the epidemiology of malaria in the region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection process for study districts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "ed262b22-a23f-4f85-8382-c93841e51e3f",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C113",
+      "claim": "The northern region is very mountainous and characterized by a diverse climate, low-population density and limited road access.",
+      "claim_type": "EXPLICIT",
+      "source": "This region is very mountainous and characterized by a diverse climate, low-population density and limited road access (UNFPA, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to UNFPA, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "7cd4ebef-b75e-4e4d-af92-2c46f5bb0e51",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C114",
+      "claim": "Land clearing using fires for agriculture is customary in the northern region.",
+      "claim_type": "EXPLICIT",
+      "source": "Land clearing using fires for agriculture is customary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the northern region.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "ef28c0ef-df1f-45cc-bb2e-7305921c6530",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C115",
+      "claim": "More than 95% of Lao PDR's malaria burden is concentrated in the southern region.",
+      "claim_type": "EXPLICIT",
+      "source": "The four districts in the south were selected within a larger cluster randomized controlled trial (RCT) study designed to assess the effectiveness of high-risk group targeted active case detection in southern Lao PDR (Lover et al., 2019), where more than 95% of the country malaria burden is concentrated (Lao national malaria database (dhis2), 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lao national malaria database (dhis2), 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "ca44453f-2891-43dc-b261-c6a44d50172c",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C116",
+      "claim": "The southern region is characterized by a moderately hilly and forested terrain and a workforce primarily engaged in forest-based and agricultural activities.",
+      "claim_type": "EXPLICIT",
+      "source": "This region is characterized by a moderately hilly and forested terrain and a workforce primarily engaged in forest-based and agricultural activities (Bennett et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bennett et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "89887fd5-9d2d-4b15-a5f8-135b5f971e77",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C117",
+      "claim": "Trees are defined as 'all vegetation taller than 5 m in height' in the Hansen et al., 2013 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Trees are defined as 'all vegetation taller than 5 m in height' (Hansen et al., 2013) and forest loss as 'the removal or mortality of all tree cover in a Landsat pixel' (Hansen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from the Hansen dataset, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "d75cde63-7fab-44dc-9246-a7028fffdef3",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C118",
+      "claim": "Forest loss is defined as 'the removal or mortality of all tree cover in a Landsat pixel' in the Hansen dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Trees are defined as 'all vegetation taller than 5 m in height' (Hansen et al., 2013) and forest loss as 'the removal or mortality of all tree cover in a Landsat pixel' (Hansen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from the Hansen dataset, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "b8f15fda-dde2-4b25-a081-3955b81a741a",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C119",
+      "claim": "The Hansen forest data has been criticized for not distinguishing tropical forests from agroforestry.",
+      "claim_type": "EXPLICIT",
+      "source": "The forest data we used has also been criticized, in particular for not distinguishing tropical forests from agroforestry (Tropek et al., 2014; Hansen et al., 2014) or man-made from natural causes of deforestation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tropek et al., 2014 and Hansen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "aee156aa-9564-42a4-8d84-8a6d6744a772",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "claim_id": "C120",
+      "claim": "The Hansen forest data has been criticized for not distinguishing man-made from natural causes of deforestation.",
+      "claim_type": "EXPLICIT",
+      "source": "The forest data we used has also been criticized, in particular for not distinguishing tropical forests from agroforestry (Tropek et al., 2014; Hansen et al., 2014) or man-made from natural causes of deforestation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the Hansen dataset.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "20574d3d-fcff-44c9-9270-a8f9f2ba3cf5",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Deforestation is associated with short-term increases (1-2 years) and long-term decreases (3-5 years) in malaria incidence in Lao PDR. These associations are specific to deforestation within 30 km of villages, with no associations found at 1 km or 10 km spatial scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C6 and C83-C86 provide converging evidence from spatio-temporal modeling with specific effect estimates and confidence intervals. The analysis controlled for treatment-seeking probability, environmental covariates, and spatio-temporal structure. The findings show statistically significant IRRs at 30 km (e.g., IRR=1.16 [1.10-1.22] at 1 year, IRR=0.94 [0.91-0.97] at 5 years in the south) but null associations at smaller spatial scales, providing strong support for the spatial and temporal specificity of the relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "e8b88e66-c8db-4a70-a243-540c59fea69b",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The associations between deforestation and malaria are driven by deforestation in densely forested areas (tree crown cover >87%) rather than less forested areas, with effect sizes becoming more pronounced when restricting analysis to denser forests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C93-C96 demonstrate that IRRs increase from 1.16 to 1.28 for short-term effects and decrease from 0.94 to 0.83 for long-term effects when restricting to areas with >87% tree crown cover. This dose-response relationship strengthens the inference that deforestation in deep, dense forests is more closely associated with malaria incidence, though confidence intervals widen at the highest forest density threshold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "eef5281c-c64a-41e7-b956-7f618bde4dc6",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The deforestation-malaria associations are more pronounced for P. falciparum than P. vivax. P. falciparum shows strong short-term increases (IRR=1.27 [1.18-1.36] at 1 year) and long-term decreases (IRR=0.83 [0.80-0.87] at 5 years), while P. vivax shows attenuated short-term increases (IRR=1.07 [1.01-1.13]) and no long-term decreases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C87-C92 provide species-specific analyses showing clear differential patterns. The P. falciparum associations mirror the overall pattern with stronger effect sizes, while P. vivax shows weaker short-term associations and no long-term protective effects. This is biologically plausible given P. vivax's relapsing capability (C109), which decouples transmission from incidence. The species-specific findings are well-supported by data from the co-endemic southern region.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "549954f4-03ad-4318-8a6a-d4b534a06f56",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study found an earlier inflection point (1-3 years) compared to the Amazon's frontier malaria hypothesis (6-8 years), likely due to different human processes: established forest-fringe communities making regular forest trips in the GMS versus new settlements in the Amazon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97-C100 and C105-C106 provide interpretation of the temporal patterns, but the mechanistic explanation is largely speculative (C105, C106 explicitly marked as speculation/inference). While the temporal pattern is well-documented in the data, the proposed mechanism about forest-going populations and exposure patterns lacks direct empirical validation. The comparison to the Amazon is reasonable but the causal pathway remains uncertain without data on actual forest-going behavior or mosquito exposure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "b7daa84c-e5eb-4b36-a105-fc391d6cb2a2",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study regions differed substantially in forest characteristics, population density, altitude, and climate. The north had denser forest cover, higher deforestation rates (2.5% vs 1% within 10 km in 2015), lower population density, higher altitude, and lower precipitation/temperature than the south.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C56 describe baseline characteristics of the study regions based on analysis of forest data (Figure 1), census data, elevation data, and climate data. These descriptive statistics are well-documented and provide important context for interpreting regional differences in malaria-deforestation associations. The data sources are appropriate and the characterizations are straightforward.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study collected 63,040 patient records from the south (October 2013-October 2016) and 1,754 from the north (January 2013-December 2016). Testing rates were high (>91%) in both regions, with test positivity of 33.2% in the south and 23.8% in the north. The regions differed in species composition, incidence levels, and patient demographics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C77 provide detailed descriptive statistics of the malaria surveillance data. The large sample sizes, high testing rates, and comprehensive demographic data support the robustness of the dataset. The regional differences in species composition (P. vivax dominant in north, co-endemic in south) and patient characteristics (age, gender, occupation) are well-documented and provide important epidemiological context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "78076ed4-eeba-42d3-afbf-b3e6c548dae3",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "88.1% of malaria records were successfully geo-referenced to study villages. Excluded records (11.7% south, 17.3% north) were due to ambiguous village names or administrative changes. Test positivity was similar between matched and unmatched records in the south but differed in the north.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 document the geo-referencing process and data quality. The high matching rate (88.1%) and similar test positivity between matched/unmatched records in the south suggest minimal selection bias. The difference in the north (26.5% vs 10.5% test positivity) raises some concern about potential bias, though the overall low incidence in the north limits the impact on main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "aad7aa73-4eaa-4ebc-920f-86763891018f",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Treatment-seeking probability was modeled as a function of travel time to health facilities. Predicted probabilities were 0.87 (north) and 0.78 (south) for villages at health facilities, with odds ratios of 0.79 (north) and 0.76 (south) per hour increase in travel time, though not reaching statistical significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C60 describe the treatment-seeking model used to adjust incidence estimates. While the approach is methodologically sound, the wide confidence intervals (crossing 1.0) indicate the associations with travel time did not reach statistical significance. This raises questions about whether the correction for treatment-seeking adequately addresses potential bias from differential health facility access, though the sensitivity analysis (mentioned but not detailed) may address this concern.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "6ad7044f-fdff-4106-b22a-8783e72374f8",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study's findings are consistent with three previous Southeast Asian studies (Garg 2015, Pattanayak et al. 2010, Fornace et al. 2016) that found positive associations between deforestation and malaria, though those studies had limitations including coarse spatial resolution and different malaria species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C104 accurately summarize prior literature and position the current study's findings in context. The comparison is fair and acknowledges both consistencies and differences (spatial resolution, species studied). This strengthens the current study by showing convergent evidence across multiple settings while highlighting methodological improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "50eac907-acbc-45ac-ba45-bfdb8524376f",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The attenuated P. vivax associations compared to P. falciparum are consistent with findings from the Amazon and are explained by P. vivax's ability to relapse months or years after infection, which decouples transmission from incidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C109 provide a biologically plausible explanation for the species-specific differences, supported by citation to MacDonald and Mordecai 2019 and established knowledge about P. vivax biology. The relapsing capability of P. vivax is well-documented and provides a mechanistic explanation for why temporal associations with environmental exposures would be weaker for P. vivax than P. falciparum.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    },
+    {
+      "id": "0b019964-26e7-4535-bdc0-ad9fc5fbb539",
+      "content_id": "69b28f1c-c49d-440b-bba5-66f6710b12e0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Hansen forest data used in the study has been criticized for not distinguishing tropical forests from agroforestry or man-made from natural causes of deforestation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C119-C120 acknowledge important limitations of the forest data source. These are legitimate concerns that could affect interpretation of results, as different types of forest loss (e.g., agricultural clearing vs. logging) may have different implications for malaria transmission. The authors appropriately acknowledge these limitations, though they do not fully address how this might bias their findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:56:39.241405Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "01237c92-3399-4346-b9dc-31555d342385",
+      "result_id": "20574d3d-fcff-44c9-9270-a8f9f2ba3cf5"
+    },
+    {
+      "claim_id": "a4c81428-0be1-40fe-b0e4-302e95458066",
+      "result_id": "20574d3d-fcff-44c9-9270-a8f9f2ba3cf5"
+    },
+    {
+      "claim_id": "2fb8e1ef-45f1-478f-8c0c-cd246f40610a",
+      "result_id": "20574d3d-fcff-44c9-9270-a8f9f2ba3cf5"
+    },
+    {
+      "claim_id": "10554f41-0bfd-4b5f-863f-fb1bc9d2afc4",
+      "result_id": "20574d3d-fcff-44c9-9270-a8f9f2ba3cf5"
+    },
+    {
+      "claim_id": "18ee8032-3884-4310-a21b-0701f128bd1c",
+      "result_id": "20574d3d-fcff-44c9-9270-a8f9f2ba3cf5"
+    },
+    {
+      "claim_id": "4cc8e826-39aa-429a-b4ea-4b33cfd1ca27",
+      "result_id": "20574d3d-fcff-44c9-9270-a8f9f2ba3cf5"
+    },
+    {
+      "claim_id": "9dc4f4f9-5287-4b56-bfad-61d3891a834f",
+      "result_id": "20574d3d-fcff-44c9-9270-a8f9f2ba3cf5"
+    },
+    {
+      "claim_id": "d2efdc2e-4860-497a-bf01-5e6ab28e750c",
+      "result_id": "20574d3d-fcff-44c9-9270-a8f9f2ba3cf5"
+    },
+    {
+      "claim_id": "c1e50771-a053-4ff8-8f48-ff94d6209197",
+      "result_id": "20574d3d-fcff-44c9-9270-a8f9f2ba3cf5"
+    },
+    {
+      "claim_id": "2da1e8ef-1ede-4d79-be35-bb19ebd86851",
+      "result_id": "e8b88e66-c8db-4a70-a243-540c59fea69b"
+    },
+    {
+      "claim_id": "906a7d58-3b3f-4578-a9cb-0cf1c6fb6cae",
+      "result_id": "e8b88e66-c8db-4a70-a243-540c59fea69b"
+    },
+    {
+      "claim_id": "5121482f-e706-4bd6-85e6-59012a5d8de5",
+      "result_id": "e8b88e66-c8db-4a70-a243-540c59fea69b"
+    },
+    {
+      "claim_id": "b8631359-0273-4d48-8e4f-e71d2109f9bf",
+      "result_id": "e8b88e66-c8db-4a70-a243-540c59fea69b"
+    },
+    {
+      "claim_id": "73f8c364-5cd5-404e-892d-3d19cc60b5e6",
+      "result_id": "e8b88e66-c8db-4a70-a243-540c59fea69b"
+    },
+    {
+      "claim_id": "607d2cb2-2ca8-468e-9c58-113213262c40",
+      "result_id": "eef5281c-c64a-41e7-b956-7f618bde4dc6"
+    },
+    {
+      "claim_id": "222be8d8-c660-4126-a046-7179754421ba",
+      "result_id": "eef5281c-c64a-41e7-b956-7f618bde4dc6"
+    },
+    {
+      "claim_id": "89b233d3-d959-4f0d-8b60-07ee8c6ca29d",
+      "result_id": "eef5281c-c64a-41e7-b956-7f618bde4dc6"
+    },
+    {
+      "claim_id": "3cfe91d8-0096-444e-b31a-ce7cd3a081b9",
+      "result_id": "eef5281c-c64a-41e7-b956-7f618bde4dc6"
+    },
+    {
+      "claim_id": "913f9a89-05e3-401d-9b41-f44e59dd1d15",
+      "result_id": "eef5281c-c64a-41e7-b956-7f618bde4dc6"
+    },
+    {
+      "claim_id": "3b92676e-24cc-4d89-96b4-15f17727d839",
+      "result_id": "eef5281c-c64a-41e7-b956-7f618bde4dc6"
+    },
+    {
+      "claim_id": "1c3e34c8-6fd4-4e39-ae4a-108debae30e4",
+      "result_id": "eef5281c-c64a-41e7-b956-7f618bde4dc6"
+    },
+    {
+      "claim_id": "7ef59b3c-74ad-44b4-8469-46d50d1120aa",
+      "result_id": "eef5281c-c64a-41e7-b956-7f618bde4dc6"
+    },
+    {
+      "claim_id": "40ccca2d-7c1a-4da1-af41-5cc81704137e",
+      "result_id": "549954f4-03ad-4318-8a6a-d4b534a06f56"
+    },
+    {
+      "claim_id": "6091795f-0fed-443c-af5c-b86400ac837f",
+      "result_id": "549954f4-03ad-4318-8a6a-d4b534a06f56"
+    },
+    {
+      "claim_id": "4bfd46f8-5eb6-4d24-a7f3-5b60562a827e",
+      "result_id": "549954f4-03ad-4318-8a6a-d4b534a06f56"
+    },
+    {
+      "claim_id": "0c047b45-2579-41d3-a525-f844507f1c2d",
+      "result_id": "549954f4-03ad-4318-8a6a-d4b534a06f56"
+    },
+    {
+      "claim_id": "b960af8d-1d9e-4091-b210-a4362b30bc79",
+      "result_id": "549954f4-03ad-4318-8a6a-d4b534a06f56"
+    },
+    {
+      "claim_id": "f0029d84-da47-463a-916e-00de44ebd4de",
+      "result_id": "549954f4-03ad-4318-8a6a-d4b534a06f56"
+    },
+    {
+      "claim_id": "ddaf0d7a-f216-44a2-8817-b62db5e9d918",
+      "result_id": "b7daa84c-e5eb-4b36-a105-fc391d6cb2a2"
+    },
+    {
+      "claim_id": "6307f389-f7ee-434c-89ab-77e0f35b9e3c",
+      "result_id": "b7daa84c-e5eb-4b36-a105-fc391d6cb2a2"
+    },
+    {
+      "claim_id": "8fa22f39-1a38-4d1b-8dcf-4a48eb5efdd1",
+      "result_id": "b7daa84c-e5eb-4b36-a105-fc391d6cb2a2"
+    },
+    {
+      "claim_id": "1787e546-ae78-4494-ba8f-5ebb16c6f3df",
+      "result_id": "b7daa84c-e5eb-4b36-a105-fc391d6cb2a2"
+    },
+    {
+      "claim_id": "568db4be-e461-438c-9832-3cd36662a7e4",
+      "result_id": "b7daa84c-e5eb-4b36-a105-fc391d6cb2a2"
+    },
+    {
+      "claim_id": "3c74b92b-0796-4601-8dc8-e519759ec90a",
+      "result_id": "b7daa84c-e5eb-4b36-a105-fc391d6cb2a2"
+    },
+    {
+      "claim_id": "34b5a07b-7505-43c6-9956-1a0d7260b100",
+      "result_id": "b7daa84c-e5eb-4b36-a105-fc391d6cb2a2"
+    },
+    {
+      "claim_id": "0782610d-507d-40d9-85ff-7f37fd19bbce",
+      "result_id": "b7daa84c-e5eb-4b36-a105-fc391d6cb2a2"
+    },
+    {
+      "claim_id": "5719c064-63af-4031-ac76-9cf1be6fbd96",
+      "result_id": "b7daa84c-e5eb-4b36-a105-fc391d6cb2a2"
+    },
+    {
+      "claim_id": "998663e3-0b28-4f59-8322-6feb661d8469",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "2085b39e-962c-49ed-9914-17420eb78fb0",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "52fcae66-15ee-4a5c-9859-8bd8d71c9a36",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "4a4d7844-a43c-4e65-b7c7-9fad280aca9d",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "df7adcf1-22eb-4e8e-91fb-f44e73700b80",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "d7de48f7-90e8-4894-8f44-7a43f54b5883",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "5b139270-655f-4f63-b1eb-0154fe056909",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "fd00ebd5-ada7-4929-8788-f9f2ec5e24f4",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "df871dea-bfb5-40c5-91cf-fe4f7a49e358",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "1217d4ed-09ca-4010-b521-99e4d83ae284",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "d983cee0-957c-43b0-979d-44dc1de4c7de",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "9d3e4fad-cf49-4aaf-961f-5eea62b6b856",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "3a8d2955-db69-4ebd-a8aa-d0c7a6123e07",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "d1559d94-3571-4374-a308-0eefb13061f9",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "68ab0cd4-a68f-47af-8dae-81a6e777b144",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "4c6ff425-122f-405f-99b1-90c7a9c760e4",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "c9b57077-5de6-41a9-a932-028fd1e19934",
+      "result_id": "5d6b7c69-79a1-452a-9a94-919c6f5d64ec"
+    },
+    {
+      "claim_id": "8db20ab8-b4de-4c54-a715-6df08ec37385",
+      "result_id": "78076ed4-eeba-42d3-afbf-b3e6c548dae3"
+    },
+    {
+      "claim_id": "b17b342d-2459-40f4-a304-0f4ac0d44bff",
+      "result_id": "78076ed4-eeba-42d3-afbf-b3e6c548dae3"
+    },
+    {
+      "claim_id": "28bb772e-acb7-4073-aabb-702a7fb7f0db",
+      "result_id": "78076ed4-eeba-42d3-afbf-b3e6c548dae3"
+    },
+    {
+      "claim_id": "9be5c13f-0885-4443-b107-25f66f9ea788",
+      "result_id": "78076ed4-eeba-42d3-afbf-b3e6c548dae3"
+    },
+    {
+      "claim_id": "462382ac-04fa-4309-a66b-4afb27b5af2a",
+      "result_id": "78076ed4-eeba-42d3-afbf-b3e6c548dae3"
+    },
+    {
+      "claim_id": "b5c90a37-5763-4825-9867-4e72e74567ec",
+      "result_id": "aad7aa73-4eaa-4ebc-920f-86763891018f"
+    },
+    {
+      "claim_id": "8db12d8a-2ac7-48dd-b389-726266918620",
+      "result_id": "aad7aa73-4eaa-4ebc-920f-86763891018f"
+    },
+    {
+      "claim_id": "9a2c5574-1f47-45d2-88ff-0b4521371299",
+      "result_id": "aad7aa73-4eaa-4ebc-920f-86763891018f"
+    },
+    {
+      "claim_id": "2a01511e-8444-4386-ad96-426530294235",
+      "result_id": "aad7aa73-4eaa-4ebc-920f-86763891018f"
+    },
+    {
+      "claim_id": "1d0c7c1c-5069-412a-8a80-0000c5350988",
+      "result_id": "6ad7044f-fdff-4106-b22a-8783e72374f8"
+    },
+    {
+      "claim_id": "2f83248e-ac6c-4b3a-b32c-36b710195cec",
+      "result_id": "6ad7044f-fdff-4106-b22a-8783e72374f8"
+    },
+    {
+      "claim_id": "90378360-47b9-45f4-b674-d458ae13ee70",
+      "result_id": "6ad7044f-fdff-4106-b22a-8783e72374f8"
+    },
+    {
+      "claim_id": "0033c45d-ecaf-4c40-8b84-7f038bd80c78",
+      "result_id": "6ad7044f-fdff-4106-b22a-8783e72374f8"
+    },
+    {
+      "claim_id": "3ebd0b63-9713-468b-a3b6-12f266d56b0d",
+      "result_id": "50eac907-acbc-45ac-ba45-bfdb8524376f"
+    },
+    {
+      "claim_id": "a8d72d53-bc8f-47f7-b874-de84b4a7dc7c",
+      "result_id": "50eac907-acbc-45ac-ba45-bfdb8524376f"
+    },
+    {
+      "claim_id": "b8f15fda-dde2-4b25-a081-3955b81a741a",
+      "result_id": "0b019964-26e7-4535-bdc0-ad9fc5fbb539"
+    },
+    {
+      "claim_id": "aee156aa-9564-42a4-8d84-8a6d6744a772",
+      "result_id": "0b019964-26e7-4535-bdc0-ad9fc5fbb539"
+    }
+  ],
+  "comparisons": []
+}

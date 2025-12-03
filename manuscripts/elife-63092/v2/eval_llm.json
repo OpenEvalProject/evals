@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C131",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors developed a subcellular scRNA-seq method combining laser capture microdissection with droplet-based sequencing that can profile soma and dendrites from hundreds of individual neurons. The method accurately measures RNA expression and detects species present in as low as four copies per sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C46 and C131-C137 collectively demonstrate method development and validation. The use of 92 synthetic RNA standards (C39-C40) provides quantitative validation of accuracy and sensitivity. The collection of 795 samples (C41) and detection of significantly more RNA in cellular samples versus empty cuts (C42-C43) demonstrates technical success. The method's advantages over FISH-based approaches (C135-C137) are appropriately stated as technical capabilities rather than requiring additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Somatic and dendritic samples exhibit distinct transcriptomic signatures, with somata differentiating by cell type (GABAergic vs glutamatergic) while dendrites cluster together. This pattern persists after downsampling and integrates with independent datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by UMAP clustering (Figure 1C), downsampling analysis (C52), and integration with Middleton et al. data (C53). The observation that dendrites show less intercellular diversity than somata (C54) is appropriately stated as a suggestion with caveats about not ruling out cell type-specific effects, demonstrating appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Five neuronal subtypes were identified from somatic transcriptomes: two glutamatergic and three GABAergic types, with distinct marker gene expression patterns. These cell types integrate with hippocampal tissue datasets and correlate with morphological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C70 demonstrate comprehensive cell type characterization through dimensionality reduction (C56), differential expression analysis (C57-C61), integration with tissue datasets (C62-C67), and morphological validation (C68-C70). The integration with two independent hippocampal datasets (Zeisel et al., Harris et al.) and morphological correlations provide orthogonal validation of the transcriptomic classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "GABAergic interneurons contain approximately 4000 mRNA species in their dendrites, representing 30% of somatic transcripts, similar to glutamatergic neurons. This includes both cell type-invariant mRNAs (Calm1, Map1a) and cell type-specific mRNAs (Lgi2, Serf2, Cnr1, Cplx2), validated by smFISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33, C71-C82 establish the major finding that GABAergic neurons localize thousands of mRNAs to dendrites. The ~4000 mRNA count (C71) is consistent with prior bulk tissue studies (C72, citing Glock et al. 2020). SmFISH validation (C77-C81) provides orthogonal confirmation of scRNA-seq findings for multiple candidate genes in both Gad+ and Gad- neurons, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Cell type-specific differences exist in dendritic transcriptomes but are less pronounced than in somatic transcriptomes. Some genes show cell type-specific dendritic localization despite uniform somatic expression, suggesting post-transcriptional regulation of mRNA localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C92 demonstrate cell type effects on dendritic transcriptomes through differential expression analysis with appropriate statistical corrections (bootstrapping for dendritic samples, C83-C84). SmFISH validation of Hpcal4 vs Bdnf (C89-C90) provides direct evidence for differential dendritic localization. The inference of post-transcriptional mechanisms (C88, C92) is appropriately stated as speculation based on the observation of dendritic specificity without somatic differential expression (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Somatic mRNA abundance significantly influences dendritic detection and abundance (p=1.29\u00d710\u207b\u2076, R\u00b2=0.50), but only partially explains variance. 463 genes are enriched and 764 de-enriched in dendrites, with enrichment patterns varying by absolute abundance and relative enrichment, validated by smFISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C116 establish the soma-dendrite relationship through appropriate statistical modeling (logistic regression, generalized linear models) with significant p-values and effect sizes. The paired differential expression analysis (C101-C102) uses appropriate methods for paired samples. SmFISH validation (C110-C115) confirms predictions for multiple genes across enrichment categories. The observation of cell-to-cell variability (C116) is appropriately noted. The speculation about active deterrence mechanisms (C109) is clearly marked as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Gene ontology analysis reveals that dendritic transcriptomes are enriched for mitochondrial, cytoskeletal, and synaptic functions, with specific enrichment for autophagy, calcium channels, and G-protein complexes. Proteasome and spliceosome genes are de-enriched despite protein presence in dendrites. mRNAs encoding proteins of the same complex show similar enrichment patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C125 present gene set enrichment analysis (GSEA) results using appropriate ranked-list methods. The observation that proteasome proteins are present in dendrites (C121, citing Bingol & Schuman 2006) despite mRNA de-enrichment is appropriately noted as intriguing and suggests differential mechanisms for protein localization. The inference that protein function influences mRNA localization (C125) is supported by the observation of similar enrichment patterns within protein complexes (C123-C124).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C37",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C134"
+    ],
+    "result": "Both glutamatergic and GABAergic neurons (including Sst+ interneurons) demonstrate local protein synthesis in their dendrites through cell type-specific metabolic labeling (BONCAT), suggesting mRNA localization and local translation are general neuronal properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C37, C126-C130, C134 establish local translation through orthogonal BONCAT experiments using conditional MetRS* expression in three Cre lines (Nex, Gad2, Sst). The 'neurite-only' labeling condition (C128) provides critical control demonstrating that signal is not due to somatic contamination. Statistical significance is shown (Figure 6C-E with p-values), and the inference that this is a pan-neuronal property (C8, C130) is appropriately supported by demonstration in both major neuronal classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The method identified the majority of genes expressed in somata, but for dendrites, the most abundant genes were identified while some less abundant genes were likely below detection limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 appropriately acknowledge the limitations of the method based on saturation analysis (Figure 1\u2014figure supplement 1E). This is an honest assessment of technical limitations and is appropriately stated as an estimate rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Dendritic mRNA abundances follow a log-normal distribution that is more zero-shifted than somatic distributions, with most dendritic mRNAs at low levels and few at moderate-to-high levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 describe the distribution of dendritic mRNA abundances based on Figure 4\u2014figure supplement 1A. This is a straightforward descriptive observation of the data distribution and the inference about abundance levels (C94) follows logically from the observed distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The authors propose several mechanistic models: cell type-specific RNA-modifying proteins or RNA-binding proteins may regulate dendritic localization; mRNAs may compete for transport machinery with abundant species having advantages; and active mechanisms may prevent dendritic entry of certain mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C146 present mechanistic speculation supported by citations to relevant literature but without direct experimental validation in this study. These are appropriately presented as proposed models and possible explanations in the Discussion section. While the models are plausible and well-supported by prior literature, they remain speculative hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C132"
+    ],
+    "result": "More cell type-specific features are observed among somatic transcriptomes than their associated dendritic transcriptomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C132 summarize a key finding supported by multiple lines of evidence including clustering analysis (C50-C51), differential expression analysis (C83-C84), and integration studies. This is a well-supported conclusion from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C133"
+    ],
+    "result": "Whether an mRNA is dendritically enriched or de-enriched strongly correlates with its cellular function, with both absolute dendritic abundance and enrichment relative to soma varying according to gene and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C133 are supported by the gene ontology analysis (C117-C125) showing functional enrichment patterns and the observation that mRNAs encoding proteins of the same complex show similar enrichment patterns (C123-C125). This represents a synthesis of multiple analytical approaches.",
+    "result_type": "MAJOR"
+  }
+]

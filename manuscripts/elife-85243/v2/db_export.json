@@ -1,0 +1,1338 @@
+{
+  "submission": {
+    "id": "653ee621-c0aa-4563-89c5-d2083b8c2c56",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:23:04.545506Z",
+    "updated_at": "2025-12-03T20:23:04.545506Z"
+  },
+  "content": [
+    {
+      "id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "submission_id": "653ee621-c0aa-4563-89c5-d2083b8c2c56",
+      "content_type": "manuscript",
+      "content_text": "# Age-related differences in prefrontal glutamate are associated with increased working memory decay that gives the appearance of learning deficits\n\n## Authors\n\n- Milena Rmus<sup>1</sup> ([ORCID: 0000-0002-2044-048X](https://orcid.org/0000-0002-2044-048X)) \u2020\n- Mingjian He<sup>2</sup> ([ORCID: 0000-0002-6688-8693](https://orcid.org/0000-0002-6688-8693))\n- Beth Baribault<sup>1</sup>\n- Edward G Walsh<sup>3</sup>\n- Elena K Festa<sup>3</sup> ([ORCID: 0000-0002-3700-4270](https://orcid.org/0000-0002-3700-4270))\n- Anne GE Collins<sup>1</sup> ([ORCID: 0000-0003-3751-3662](https://orcid.org/0000-0003-3751-3662))\n- Matthew R Nassar<sup>3</sup> ([ORCID: 0000-0002-5397-535X](https://orcid.org/0000-0002-5397-535X))\n\n### Affiliations\n\n1. University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n2. Massachusetts Institute of Technology Boston United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n3. Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ability to use past experience to effectively guide decision-making declines in older adulthood. Such declines have been theorized to emerge from either impairments of striatal reinforcement learning systems (RL) or impairments of recurrent networks in prefrontal and parietal cortex that support working memory (WM). Distinguishing between these hypotheses has been challenging because either RL or WM could be used to facilitate successful decision-making in typical laboratory tasks. Here we investigated the neurocomputational correlates of age-related decision-making deficits using an RL-WM task to disentangle these mechanisms, a computational model to quantify them, and magnetic resonance spectroscopy to link them to their molecular bases. Our results reveal that task performance is worse in older age, in a manner best explained by working memory deficits, as might be expected if cortical recurrent networks were unable to sustain persistent activity across multiple trials. Consistent with this, we show that older adults had lower levels of prefrontal glutamate, the excitatory neurotransmitter thought to support persistent activity, compared to younger adults. Individuals with the lowest prefrontal glutamate levels displayed the greatest impairments in working memory after controlling for other anatomical and metabolic factors. Together, our results suggest that lower levels of prefrontal glutamate may contribute to failures of working memory systems and impaired decision-making in older adulthood.\n\n## Introduction\n\nPeople and animals undergo a number of cognitive changes across healthy aging, and while some of these changes reflect improvements emerging from an extended lifespan of continual learning, others are characterized by declines in function with advanced age (Cattell, 1943). In particular, recent work has highlighted age-related deficits in decision-making under uncertainty, particularly in situations where decision outcomes are learned through experience (Eppinger et al., 2013). While such deficits could have critical importance for both aging individuals and society, the exact mechanisms underlying these deficits remain unclear. One possibility is that such impairments stem from an inability to retain the task-relevant information (i.e. working memory, Salthouse and Babcock, 1991), whereas another possibility is that such impairments stem from failures to learn state action values through reinforcement (i.e. reinforcement learning, Chowdhury et al., 2013). These different cognitive processes are supported by different neural systems. Understanding how they contribute to impairments in decision-making across lifespan could also help shed light on biological age-related mechanisms of impaired decision-making.\n\nPrevious work has shown that working memory declines with aging (Salthouse and Babcock, 1991). Such declines have been shown in both cross-sectional and longitudinal studies and across a range of working memory tasks (Salthouse and Babcock, 1991). Working memory is thought to be implemented through persistent activation of neural firing in similarly tuned neurons within recurrent excitatory networks in prefrontal and parietal cortices (Goldman-Rakic, 1995; Andersen and Buneo, 2002). Within such networks, successful maintenance of activity over a delay period depends on glutamatergic signaling, and in particular activation of NMDA receptors (Durstewitz et al., 2000; van Vugt et al., 2020). In aged monkeys, such persistent activations in prefrontal cortex are diminished and can be restored through local pharmacological manipulations that affect intrinsic neural excitability (Wang et al., 2011). While the mechanisms by which persistent activity deteriorates with age are not fully established, observed reductions in synapses and dendritic spines on aged prefrontal pyramidal neurons (Dumitriu et al., 2010) suggest that they result at least in part from an overall reduction in glutamatergic signaling. Thus, if age-related behavioral deficits stem from diminished working memory functions, they may result from reductions in glutamate signaling in prefrontal and parietal regions that support working memory.\n\nReinforcement learning (RL) systems are also thought to decline across healthy aging. Evidence for such declines comes from behavioral impairments in tasks where participants learn to map stimuli onto rewarded actions (Eppinger et al., 2013; Frank and Kong, 2008; H\u00e4mmerer et al., 2011). Learning in such tasks is thought to occur through reinforcement of associations between stimulus and action in the striatum driven by dopamine reward prediction error signals (Frank et al., 2004; Collins and Frank, 2014). Such reward prediction error signals are blunted in healthy aging (Samanez-Larkin et al., 2014) supporting the accounts of age-related decline in RL (Chowdhury et al., 2013; Eppinger et al., 2013). Chowdhury et al., 2013 found that boosting dopamine signaling with dopamine precursor levodopa (L-DOPA) led to restoration of RPEs and recovery of learning performance in older adults. The results from these studies appear to indicate that neural mechanisms underlying reinforcement learning are impaired in older adults; however, a number of other studies have suggested that RL systems are intact in older adults (Radulescu et al., 2016; Grogan et al., 2019). Some of the discrepancy in these results may stem from inconsistencies in the tasks used to measure RL across different studies (Eckstein et al., 2022) as many tasks that could be solved through incremental learning in the striatum according to reward prediction errors (RL) could also be solved using other cognitive systems, working memory systems being one of particular importance (Yoo and Collins, 2022).\n\nTypical reinforcement learning tasks require identifying the best action to choose when confronted with a given stimulus based on previous feedback. While RL models of such tasks assume that action values are learned incrementally, as if through adjustment of synaptic weights in the striatum, it is also possible for participants to achieve success on such tasks through short-term storage of recent trial information in working memory. Recent work has used task designs that can dissociate these potential contributors to goal directed behavior, along with models that can quantify them, to show that behavioral deficits previously thought to reflect reinforcement learning were actually attributable to working memory systems (Collins et al., 2014). The reinforcement learning\u2013working memory task (Collins and Frank, 2012; Collins, 2018; Collins et al., 2014; Collins and Frank, 2018) is a simple stimulus\u2013response association learning task with a format that is commonly observed in RL studies (Frank and Kong, 2008). However, this task includes a WM manipulation \u2013 varying the number of stimulus\u2013response actions (set size) participants need to learn. This manipulation targets WM as a capacity-limited, short-term process since increasing set-size increases both load and average duration between stimulus repetitions. Thus, varying the set size can shift contribution of RL/WM to performance and help tease apart which of the two participants are relying on when performing the task. This task has yielded important mechanistic insights into general as well as clinical populations (Collins et al., 2014; Collins and Frank, 2012; Master et al., 2020).\n\nIn this study, we combined cognitive, computational, and neural approaches to address the question of (1) how the age-related deficits in making decisions from experience emerge from RL and WM computational mechanisms and (2) how the differences in these mechanisms relate to age-related changes in relevant neural systems. To this end, we administered an RL-WM task to young and older adults and modeled their behavior using computational model that can distinguish between deficits in RL and WM systems. We used magnetic resonance spectroscopy (MRS) to measure levels of glutamate and GABA in regions thought to support working memory (prefrontal/parietal cortices) and reinforcement learning (striatum).\n\nWe found that older participants performed worse in the RL-WM task than younger adults. Group comparison of model parameters revealed that older participants had a more rapid decay of task relevant information in working memory. Older adults also had reduced glutamate levels, particularly in prefrontal and parietal cortices where glutamate is thought to support the persistent activation that underlies working memory. Furthermore, reductions in prefrontal glutamate were correlated with working memory decay across individuals \u2013 such that those with the lowest levels of prefrontal glutamate had the most rapidly decaying working memories. Taken together, our results suggest that age-related working memory differences likely contribute to decision-making deficits in older adults, and that such deficits may result from failures of recurrent excitatory networks to sustain persistent representations due to reduced levels of glutamate.\n\n## Results\n\n42 older (age mean [SD] = 68 [8.5]) and 36 younger (age mean (SD) = 21 [4.4]) participants were enrolled in a two-session study. Age-normed total The Repeatable Battery for the Assessment of Neuropsychological Status (RBANS) (Randolph et al., 1998) scores were similar in both groups (mean [std] younger: 106.4 [12.0], older: 109.0 [10.8]), suggesting that our cohorts reflected comparable samples of the population with respect to overall cognitive ability. Furthermore, all participants scored in cognitively healthy range (younger adults range: 83\u2013140; older adults range: 81\u2013141) since cognitive impairment is defined as score 70 or below. The first session required performance of an RL-WM task designed to dissociate the contributions of working memory and reinforcement learning to decision-making under uncertainty. The second study session included an MRI session in which MRS was used to measure glutamate and GABA in key regions thought to support working memory (middle frontal gyrus [MFG] of prefrontal cortex and intraparietal sulcus [IPS]) and reinforcement learning (striatum).\n\nIn the RL-WM task, older and young adults were required to learn correct stimulus\u2013response (key press) associations, with the goal of earning as many points as possible. After the stimulus appeared, the participants had 1 s to make their response, following which they received deterministic feedback. Each stimulus appeared nine times in a block, pseudo-randomly interleaved with other stimuli, allowing the participants to learn correct associations from feedback. The task has a common RL experiment structure (Frank et al., 2004), with an important difference: the number of associations varied (either three or six) between different, fully independent blocks. This enabled us to manipulate the degree to which working memory (WM), a capacity-limited system, might contribute to behavior by storing recent stimulus\u2013action\u2013outcome information. In particular, previous computational and empirical work using this task suggests that working memory will contribute less to decisions in the high set size condition (six associations), but that slower learning in high set size paradoxically leads to better retention relative to learning in a surprise \u2018test phase\u2019 in which learned associations are tested in the absence of feedback (Collins, 2018).\n\n### Behavioral results; model-independent\n\n#### Learning\n\nBoth age groups learned to make accurate responses in the learning phase and did so more quickly in blocks with fewer interleaved stimuli, but younger adults learned more successfully than their older counterparts (Figure 1B and C). The learning curves reveal patterns that are consistent with RL and WM involvement in young adults (early spike in accuracy for lower set size that is absent for larger set size and that is considered a marker of fast/one-shot learning characteristic of WM but not RL; Collins and Frank, 2012). This pattern is less clear in older adults. The average accuracy of individuals in the young and old groups was 0.74 (SD = 0.01) and 0.60 (SD = 0.01), respectively (ANOVA for group difference: $F\u2062(1,76)=45.42,p=2.71\u2062e-09$). Younger adults had higher accuracy compared to older adults for both set sizes 3 ($t\u2062(76)=4.71$,$p=1.05\u2062e-05$) and 6 ($t\u2062(76)=7.03$,$p=7.61\u2062e-10$). Furthermore, we confirmed that the difference between set size 3 and set size 6 performance was greater in older adults ($t\u2062(76)=4.12,p=9.55\u2062e-05$). Training performance deficits in both set sizes were greatest in the oldest individuals, as revealed by significant correlations between age and training accuracy within the older group (Figure 1C; $r\u2062(n_{S}=3\u2062a\u2062c\u2062c\u2062u\u2062r\u2062a\u2062c\u2062y,a\u2062g\u2062e)=-0.42$, $p=0.03$; $r(n_{S}=6\u00a0accuracy,age)=\u22120.41$, $p=0.04$).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85243/elife-85243-fig1-v2.jpg)\n\n**Figure 1.:** (A) Reinforcement learning\u2013working memory (RL-WM) task with $n_{S}=3$ and $n_{S}=6$ blocks. Participants learned three or six stimulus\u2013action associations and received truthful feedback on each trial. In the test phase, participants observed the same images observed during learning and were asked to produce the responses they remembered being correct, without being given the feedback. (B) Learning curves and learning/testing comparison for both set sizes in younger (N=36) and older adults (N=42). Younger adults performed better overall, with smaller difference in performance between the set sizes. The older participants showed greater drop-off in set size 3 between learning and testing compared to young adults. Error bars represent standard error of the mean (SEM). (C) Age spearman correlations with average accuracy in each set size conditions across both learning and testing. All full sample negative correlations between age and performance were significant (gray lines); there were no significant age\u2013performance correlations within young age group (yellow lines). Age and performance were significantly correlated within old group (blue) in all conditions except set size 3 in testing. The correlation significance was evaluated using the p < 0.05 threshold.\n\nTo test what factors (i.e. set size, reward history, delay) impact accuracy on a trial-by-trial level, we ran a mixed-effects general linear model (GLM). The GLM analysis of accuracy data indicated that both groups showed signatures of RL and WM in their behavior. We found a positive effect of reward history ($\\beta=1.74$, $t=43.51$, $p<0.0003$) that was apparent in both young and old groups (young: $\\beta=1.66$, $t=27.60$, $p<0.0003$ ; older: $\\beta=1.74$, $t=32.5$ ,$p<0.0003$). We also found negative effects of set size and delay on accuracy (set size: $\\beta=-0.26$, $t=-9.91$, $p<0.0003$ ; delay: $\\beta=\u22120.30$, $t=-13.3$, $p<0.0003$) that were apparent in both young (set size: $\\beta=-0.23$, $t=-7.55$, $p<0.0003$; delay: $\\beta=-0.21$, $t=-5.11$, $p<0.0003$) and older adults (set size: $\\beta=-0.34$, $t=-9.73$, $p<0.0003$; delay: $\\beta=-0.29$, $t=-8.92$, $p<0.0003$).\n\nCoefficients from the GLM, particularly those capturing behavioral hallmarks of working memory (i.e. set size, delay), could be used to infer participants age. A linear regression to predict the individual participants\u2019 age based on their respective coefficients from the behavioral logistic regression model yielded negative coefficients for the accuracy fixed effect ($\\beta=-17.2$, $t\u2062(71)=-5.64$, $p=3.1455\u2062e-07$) and its sensitivity to set size ($\\beta=-7.44$, $t\u2062(71)=-3.01$, $p=0.0035$), suggesting that older adults had lower overall performance but were also more affected by the set size manipulation. Reward history coefficients took positive values ($\\beta=12.73$, $t\u2062(71)=4.24$, $p=6.5262\u2062e-05$) in the same model, suggesting that older adults were also more sensitive to previous rewards than their younger counterparts.\n\n#### Testing\n\nBoth age groups experienced set size-dependent declines in performance during the test phase of the task, with older adults achieving lower levels of performance overall (Figure 1B, inset figures). Consistent with the notion that greater use of WM during learning in small set sizes weakens RL-dependent learning as expressed in the test phase (Collins, 2018), participants had greater declines in performance for set size 3 than for set size 6 between training and testing (t($\u0394_{3^{L},3^{T}}$, $\u0394_{6^{L},6^{T}}$) young: $t\u2062(35)=4.64$, $p<0.001$ ; older: $t\u2062(41)=8.1$, $p<0.001$). The set size-based asymmetry in accuracy decline from training to testing was numerically greater in older adults, but the effect was not significant ($t\u2062(76)=1.62$, $p=0.1$).\n\nA GLM fit to test phase accuracy confirmed that reward history was still strongly linked to performance in the test phase, but that set size was less important. An analogous mixed effect model to that used on the training data revealed positive reward history effects in both young and older adults (young: $\\beta=1.03$, $t=16.2$, $p<0.001$; older: $\\beta=0.92$, $t=0.92$, $p<0.001$). In contrast, in the test phase there was limited evidence for an effect of set size on performance in young adults ($\\beta=-0.15$, $t=-1.85$, $p=0.06$) and only a very modest effect in the older adults ($\\beta=-0.20$, $t=-3.07$, $p=0.002$).\n\nIn summary of our basic behavioral results, general patterns in the data are consistent with contributions of both working memory and reinforcement learning to behavior, replicate previous findings showing interactions between the two revealed in the test phase, and confirm age-related variability in performance. To better understand how the WM and RL mechanisms vary with age, we used computational modeling to further dissect the computational factors giving rise to differences in participant behavior.\n\n### Modeling results\n\nTo gain more insight into how specific learning mechanisms vary with age, we fit a computational model to the RL-WM task behavioral data. Specifically, we applied a hybrid RL-WM model that quantifies how WM and RL contribute to learning together (Figure 2; for a detailed description of how the model captures WM and RL processes see \u2018Methods\u2019 section). Parameters attributed to WM consisted of (1) WM decay ($\u03d5$) \u2013 capturing the rate at which stimulus\u2013response associations decayed during learning, and (2) set size-dependent WM reliance parameters ($\\omega^{3}$ and $\\omega^{6}$) \u2013 capturing relative reliance on WM (as opposed to RL) to make choices. RL parameters consisted of the learning rate ($\\alpha^{+}$) and test phase softmax inverse temperature ($\\beta^{T}$), governing the rate at which participants updated the stimulus\u2013response association values based on observed feedback, and the extent to which participants\u2019 test phase choices were deterministic vs. exploratory, respectively. Learning phase softmax beta ($\\beta^{L}$) captured the same dynamic during the learning phase (but unlike all other RL-WM model parameters was estimated at the group-level only; see \u2018Methods\u2019 for details). We also incorporated a negative learning rate ($\\alpha^{-}$) to differentiate learning from negative versus positive feedback, which was present in both RL and WM modules of the model. Finally, the model included a noise parameter in response selection ($\u03f5$) to capture random lapses in task performance.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85243/elife-85243-fig2-v2.jpg)\n\n**Figure 2.:** (A) Reinforcement learning\u2013working memory (RL-WM) computational model schematic. (B) Posterior predictive checks for group-level learning curves and asymptotic (last three stimulus iterations) means from our Bayesian RL-WM model. Darker color represents set size 3; lighter color represents set size 6. (C) Comparison of group-level mean parameters shows that primarily WM parameters drive differences between young and older adults, especially the forgetting rate parameter $\\mu^{\u03d5}$. Dashed lines represent equal contributions of WM and RL processes.\n\nWe implemented the RL-WM model in a hierarchical Bayesian framework, as Bayesian model fitting offers many statistical benefits (e.g. Kruschke and Liddell, 2018) and incorporating hierarchical structure allowed us to account for individual- and group-level effects simultaneously (among other practical benefits; e.g. Lee, 2011). As this represents a novel extension of the RL-WM model, we offer full model specification in the \u2018Methods\u2019 section; further details on the exact approach to Bayesian model fitting are also available in \u2018Methods.\n\n#### Model comparison\n\nWe first compared the performance among the three versions of our Bayesian RL-WM model (with different hierarchical structures; see \u2018Methods\u2019 for details) in order to select a model to use in all model-based analyses of our data. Our model comparison indicated that the \u2018two-group\u2019 version of the model, which incorporated separate hierarchies over the participants within each age group, offered the best description of our data (see Appendix 1\u2014figure 2). This two-group, hierarchical version of the model outperformed both the non-hierarchical model ($\u0394\u2062WAIC=1.62\\times10^{3}$) and the model that included a single hierarchy over all participants, regardless of their age group ($\u0394\u2062WAIC=1.86\\times10^{2}$). This model\u2019s posterior predictive learning curves and posterior predictive asymptotic means (Figure 2B) successfully captured the general patterns in performance of both age groups on the RL-WM task.\n\n#### Model parameter recovery\n\nWe used model parameter recovery to ensure that parameters in our best fitting model are separable, and that our model is sensitive to individual variability in model parameters. We ran a recovery study where we simulated data from estimated parameters according to the RL-WM model using the same task design as in our human experiment and then fit the synthetic data with our model. We confirmed that both individual-level parameters and group-level hyperparameters were recovered successfully (see Appendix 1\u2014figure 9).\n\n#### Parameter analysis\n\nWe next examined which parameters of the model differed substantially across age groups. The strongest difference between the age groups was with respect to decay rate $\u03d5$ in the WM module. The group mean decay rate was much higher in the older age group ($\u0394\u2062\\mu^{\u03d5}=-0.151$, 95% equal-tailed credible interval [CrI] = [-0.227, -0.070]) indicating that the stimulus\u2013action\u2013outcome associations stored in WM degraded faster for older adults. The mean decay rate for the younger group was 0.174, indicating that an association would decay to 83% of its original strength after a single trial, whereas in older adults the decay of 0.324 would lead to working memory degradation about twice as fast.\n\nNext, we focused on the relative WM reliance parameter $\\omega$. We were interested in exploring whether the WM reliance might follow the similar pattern observed in group-related difference in the WM decay. For instance, if older participants\u2019 WM module is markedly more forgetful, they would accordingly rely less on the association weights stored in WM to guide their action selection. In our analysis, we observed that the relative reliance on WM over RL \u2014 as captured by the set size-dependent policy mixture parameters $\\omega^{n_{S}}$ \u2014 depended heavily on the set size in both groups. While learning stimulus\u2013action associations in set size 3, participants in both groups relied more on WM ($\\omega^{3}>0.5$ for 36 of 36 younger and 40 of 42 older participants). In set size 6, participants in both groups tended to rely more on RL ($\\omega^{6}<0.5$ for 32 of 36 younger and 35 of 42 older participants). Importantly, $\\omega^{3}$ was greater than $\\omega^{6}$ for 36 of 36 younger and 40 of 42 older participants. We observed the same effect for the group mean parameters, with similar magnitudes for both groups ($\\mu^{\\omega^{3}}-\\mu^{\\omega^{6}}$, young: [0.336, 0549]; older: [0.214, 0.420]). Older adults had a somewhat reduced tendency to rely on WM ($\u0394\u2062\\mu^{\\omega\u20623}=0.090\u2062[-0.003,0.179]$) compared to younger adults, even when doing so is appropriate (i.e. for the smaller set size), but this difference was not robust. Thus, older and young adults showed similar patterns in WM reliance, contingent on the set size.\n\nThe model fits revealed very little indication of group differences in parameters specific to the RL system. We found no group differences in the test phase beta $\\beta^{T}$ ([-0.465, 7.673]) or the learning rates $\\alpha$ ([-0.007, 0.042]). Our model did have a learning rate asymmetry parameter that affected both RL and WM systems, and allowed the model to capture a consistent trend toward higher learning from positive relative to negative outcomes in both groups. This was evident in group means ($\\mu^{\\alpha^{+}}-\\mu^{\\alpha^{-}}$, young: [0.004, 0.049], older: [0.009, 0.0041]) as well as for individual participants ($\\alpha^{+}>\\alpha^{\u2212}$ for 34 of 36 young and 42 of 42 older participants). This asymmetry differed across groups, such that negative learning rates were higher in the young adult group compared to the older adults (Figure 2C) ($\u0394\u2062\\mu^{\\alpha^{-}}$ = $0.016,[0.002,0.032]$). This suggests that older adults neglected negative feedback even more relative to young adults. This result is inconsistent with the previous work, suggesting that older adults exhibit bias in learning from negative outcomes (Frank and Kong, 2008). However, this finding has not been consistent across studies, and in our paradigm a bias toward learning from positive outcomes could be viewed as an adaptive strategy when resources are limited, in that positive outcomes perfectly prescribe the correct future action, whereas negative ones only rule a single response out.\n\nImportantly, the noise/random lapse parameter did not differ between the two age groups ($\u0394\u2062\\mu^{\u03f5}=[-0.011,0.047]$), which suggests it is unlikely that the observed differences in accuracy are due to older adults simply having noisier data.\n\nTo demonstrate the impact of their higher decay rate on older adults\u2019 learning, we again simulated older adults\u2019 behavior from the fitted model, except we used the young adults\u2019 group-level decay rate in place of every older adult\u2019s individual-level decay rate. To do this, we used the same procedure as was used to generate the posterior predictive plots (as in Figure 2b; see \u2018Methods\u2019), except with the aforementioned parameter swaps. This demonstration (see Appendix 1\u2014figure 5) suggests that the older adult\u2019s higher decay rate could potentially account for most of the difference in learning behavior between the age groups.\n\nOur behavioral results revealed that older adults performed more poorly in set size 6, in which performance is more driven by RL than in set size 3, due to capacity limitations of WM. However, our modeling revealed that WM parameters, specifically WM decay $\u03d5$, show greatest group differences, rather than RL parameters. Simulation results (see Appendix 1\u2014figure 5) provided some insight into this finding by showing that decreasing the working memory decay in older adults improves training performance most notably in the set size 6 condition. The primary explanation for this is that higher set size assumes increased delay between successive presentations of the same stimuli. Longer delays, in turn, make differences in WM decay more pronounced. Furthermore, a WM impairment can have an indirect effect in RL, in that frequent failure to select correct action through WM leads to reduced ability to train RL on encoding correct responses (especially earlier in training, when the incremental RL has not \u2018caught up\u2019 yet), and thus worse performance overall. Thus, our behavioral and modeling results are not incongruous and simply highlight the importance of modeling as it allows us to identify the mechanisms that drive behavioral patterns with greater specificity (Radulescu et al., 2019; Collins and Frank, 2012).\n\n#### Linking MRS measures, model parameters, and behavioral performance\n\nThus far, our results suggest that (1) there is a significant difference in performance between two age groups, and (2) that this difference is best explained by working memory deficit in older group (most significantly WM decay, and marginally reliance on WM in smaller set size condition). Next, we aimed to test how these age-related differences relate to metabolic changes affecting brain neurochemistry. We used MRS to measure neurotransmitters (glutamate and GABA) that support working memory (Wong and Wang, 2006) in regions important for both reinforcement learning (striatum [STR]) and working memory (middle frontal gyrus of prefrontal cortex [MFG], intraparietal sulcus [IPS]). To control for larger structural changes that may covary with differences in glutamate and GABA levels, we included gray volume, white matter volume and cortical thickness (in caudal middle frontal [CMF], superior frontal [SF], and rostral middle frontal [RMF]) cortex in our analyses and to control for nonspecific metabolic changes we included measures of N-acetylaspartate (NAA).\n\nIn order to understand how differences in performance and their computational mechanisms relate to the neural measures. we took a data-driven multistep analysis approach. First, we constructed a GLM to explain overall learning performance according to structural measures collected as part of our high-resolution anatomical MRI scans (white matter, gray matter, cortical thickness), as well as neurochemical measures from MRS (glutamate, GABA, NAA). Given the correlations in our neurochemical measures across brain regions, we attempted to maximize power to detect relationships in our initial linear model by aggregating neurochemical measures across brain regions. Specifically, we averaged the MRS measures across regions (i.e. average glutamate was the average of glutamate measures from medial frontal gyrus, intraparietal sulcus, and striatum). Anatomical specificity of significant predictors was then examined in follow-up analyses. We set up a linear model predicting average learning performance using the following z-scored predictors: average GABA, glutamate, NAA, gray matter, white matter, and cortical thickness in caudal middle frontal (CMF), superior frontal (SF), and rostral middle frontal (RMF) areas (cortical thickness measure was not averaged across the three areas because these measures were selected a priori from a Freesurfer parcellation and are unrelated to the voxels; see \u2018Methods\u2019 for details). The best model identified through a regularized and cross-validated fitting procedure (see \u2018Methods\u2019) included the following predictors: GABA, glutamate, NAA, CMF cortical thickness, and SF cortical thickness ($R^{2}adjusted=0.41$, $F=7.8$, $p<0.001$, variance inflation factors: [1.16, 2.06, 1.76, 2.71, 2.37]). However, out of all the predictors in this model, the only coefficient within this model for which a value of zero could be reliably rejected was our aggregate measure of glutamate concentration ($\\beta=0.04$, $t=2.5$, $p=0.01$; Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85243/elife-85243-fig3-v2.jpg)\n\n**Figure 3.:** (A) Location of voxels from which the spectroscopy measures were sampled. (B) Neural measure predictors that provided best out-of-sample prediction of learning performance. (C) Coefficients of modeling brain-predicted performance using all reinforcement learning\u2013working memory (RL-WM) computational model parameters in a linear model (N=53). WM decay and WM weight in set size 3 are the only significant predictors. Errorbars represent standard error of the coefficients. (D) Relationship between WM decay and glutamate levels in middle frontal gyrus (MFG), with Spearman correlation shown for reference.\n\nNext, we used our best-fitting model to generate brain-based predictions of performance so that we could evaluate their computational specificity. Note that these predictions depended on all biological factors in the model with best out-of-sample accuracy, which outperformed simpler models, including one that only had glutamate as a predictor. These predictions can be thought of as projections of behavioral learning performance onto the axis of brain measures most closely related to it. We then fit a linear model that regressed the brain-predicted performance onto an explanatory matrix that contained all parameter estimates from our behavioral model in order to determine which computational elements are most tightly linked to the neural fingerprint of performance (or performance failures). The model had the following structure: brain-predicted performance \u223c1 + all RL-WM parameters. This model explained a significant amount variance in our brain-based performance measure ($R_{adjusted}^{2}=0.48$, $F=7.46$, $p<0.001$) and revealed that WM decay $\u03d5$ ($\\beta=\u20130.02$, $t=-2.24$, $p=0.03$) and set size 3 WM weight $\\omega_{3}$ ($\\beta=0.02$, $t=2.35$, $p=0.03$) contributed substantially to these predictions, suggesting that the brain-based predictions largely reflected the integrity of a working memory system (Figure 3C).\n\nHaving established that (1) glutamate contributes to accuracy and that (2) WM parameters $\u03d5$ and $\\omega_{3}$ capture the performance predictions based on neural measures (including glutamate), we next tested the anatomical specificity of the glutamate\u2013working memory relationship (see \u2018Methods\u2019). To do so, we constructed two additional regression models, in which we regressed $\u03d5$ ($R^{2}adjusted=0.32$, $F=9.22$, $p<0.001$) and $\\omega_{3}$ ($R^{2}adjusted=0.23$, $F=6.42$, $p<0.001$) onto three separate glutamate measures extracted from MFG, IPS, and striatum (model 1: $\u03d5\u223c$ 1 + MFG glutamate + IPS glutamate + STR glutamate; model 2: $\\omega_{3}$ 1 + MFG glutamate + IPS glutamate + STR glutamate). From these two models, the only significant coefficient was the effect of MFG glutamate on WM decay $\u03d5$ ($\u03d5$: MFG glutamate $\\beta=\u22120.04$, $t=-2.95$, $p=0.004$; STR glutamate $\\beta=\u22120.008$, $t=-0.66$, $p=0.50$; IPS glutamate $\\beta=-0.023$, $t=-1.67$, $p=0.10;\\omega_{3}$ : MFG glutamate $\\beta=0.02$, $t=1.48$, $p=0.14$; STR glutamate $\\beta=0.02$, $t=1.77$, $p=0.08$; IPS glutamate $\\beta=0.02$, $t=1.70$, $p=0.09$) (Figure 3D). Specifically, lower glutamate levels were associated with higher WM decay. This relationship was specific to glutamate and was not observed when we substituted measures of glutamine ($r=\u22120.05$, $p=0.70$), a molecule with a nearby spectral peak. The relationship between MFG glutamate and WM memory decay persisted even after regressing out variance related to MFG gray matter (GM) and MFG creatine (Cr) ($r=\u22120.39$, $p=0.0035$), suggesting that our results are specifically related to glutamate rather than picking up on nonspecific anatomical differences such as gray matter or tissue density. For completeness, we also tested the correlation between MFG glutamate and other model parameters. We found that MFG glutamate also correlated with $\\alpha$, $\\omega_{3}$ and $\\alpha^{-}$ (see Appendix 1\u2014figure 7). However, when these parameters were included in a model that also contained the WM decay parameter (MFG glutamate \u223c 1 + $\u03d5$ + $\\alpha$ + $\\omega_{3}$ + $\\alpha^{-}$), only $\u03d5$ was a significant predictor ($\u03d5:\\beta=0.24$, $t=\u22123.14$, $p=0.002$, $\\alpha:\\beta=\u22120.03$, $t=\u22120.42$, $p=0.67$, $\\omega_{3}:\\beta=0.12$, $t=1.84$, $p=0.07$, $\\alpha^{\u2212}\\beta=0.04$, $t=0.56$, $p=0.57$). Taken together, these results suggest that higher levels of WM decay were associated with lower prefrontal glutamate levels.\n\nNext, we examined how age factors into this relationship. We found that age negatively correlated with glutamate ($r_{Spearman}=\u22120.59$, $p=2.93\u2062e-06$) and positively correlated with decay ($r_{Spearman}=0.63$, $p=3.15\u2062e-07$). The visualization of this depicted in Figure 3D suggests that older adults have lower glutamate levels and higher decay, whereas inverse is true for younger adults. Since age was negatively correlated with glutamate and positively correlated with decay, there is a possibility that age alone could fully explain the correlation between glutamate and WM decay. To address this question, we (1) ran a model predicting WM decay using MFG glutamate and age, as well as age-by-MFG glutamate interaction, and (2) correlation between MFG glutamate and WM decay in the two age groups separately. The interaction was not significant ($\\beta=\u22120.01$, $t=0.69,p=0.48$), and the main effects of glutamate and age were not significant when entered together in the model (age: $\\beta=0.14$, $t=1.24,p=0.21$; glutamate: $\\beta=\u22120.02$, $t=\u22121.03,p=0.30$), likely due to the fact that glutamate and age are correlated. We found that glutamate did not correlate with WM decay in young adults ($r_{Spearman}=0.11,p=0.54$), but there was a trending correlation between glutamate and WM decay in older adults ($r_{Spearman}=\u22120.36,p=0.08$). Finally, we used a formal mediation model to examine whether the relationship between age and working memory decay was weakened after accounting for glutamate. While the sign of the mediating effect in the model was consistent with glutamate reducing the explanatory effects of age, the effect was not large enough to reject the null hypothesis that glutamate does not mediate the effects of age on working memory ($ACME=0.009,p=0.28$, proportion mediated = 0.13). Taken together, these results reiterate that age is closely associated with working memory decay and reduced glutamate levels, but provide very little conclusive evidence regarding the exact nature of these relationships.\n\n## Discussion\n\nOur results suggest that age-related differences in the ability to make decisions from experience are driven by increased forgetting in working memory that is linked to underlying levels of glutamate in prefrontal cortex. Our results provide a computationally specific account of learning impairments that have previously been observed over the course of healthy aging, and also provide insight into its biological underpinnings, in particular suggesting that reduced glutamate impairs the ability of prefrontal recurrent networks to maintain task relevant information over extended periods of time.\n\nWhile it has long been established that working memory declines over healthy aging (Salthouse and Babcock, 1991), our work shows that these deficits are also at the root of age-related impairments in decisions from experience (Eppinger et al., 2013). Importantly, this result held even when simultaneously accounting for RL contributions to behavior, which have also been theorized to be impacted by cognitive aging (Frank and Kong, 2008; Li et al., 2015). As shown by examples of previous work (Collins et al., 2014; Leong et al., 2017; Radulescu et al., 2019), it is important to consider the interactions between neurocognitive systems rather than studying them in isolation as this could lead to an incorrect attribution of observed behavioral patterns. Our behavioral modeling results are complementary to those of another recent study that leveraged varying delay between training and testing to examine contributions of working memory, and concluded that older adults engaged WM less than young adults during the short delays (van de Vijver and Ligneul, 2020). Our results indicated that older adults had more rapid decay of task relevant working memories, but did not substantially reduce their deployment for selecting actions. Thus, across studies, there is converging evidence that working memory deficits in older adults can negatively impact decisions from experience, perhaps providing insight into why decisions from description are relatively spared by the cognitive aging process as such decisions do not typically require working memory (Li et al., 2015). However, our results imply that older adults did not compensate for their unreliable memory system by using working memory less, thereby increasing the impact of working memory deficits on behavior. Though our framework provided an ideal setup to disentangle contributions of learning and memory to decisions, one limitation of our task is that it does not provide any behavioral information about why working memory systems fail. For example, higher working memory decay in our model could reflect failures to appropriately prioritize storage of task-relevant information, including susceptibility to interference effects such as have previously been proposed to play a major role in cognitive aging (Amer et al., 2022), but could also be explained by a gradually increasing failure to retrieve previously stored information. Thus, although our computational approach was able to show that much of the age-related decision-making impairment previously attributed to learning is actually attributable to failures of working memory, we rely on future work to better understand the exact computational nature of those failures.\n\nOur conclusion that age-related performance deficits were attributable to WM rather than RL is in conflict with previous literature (Frank and Kong, 2008; H\u00e4mmerer et al., 2011) suggesting age-related impairment of RL systems. Previous work on aging and RL, however, has yielded mixed conclusions, with some results suggesting that RL is not impaired in older adults (Grogan et al., 2019; Radulescu et al., 2016). Placing our study in the context of the existing literature, we believe that inconsistent results might have occurred due to a failure to separate and account for additional processes (WM, attention, etc.) that might contribute to performance deficits in older populations. This in particular reflects our motivation for conducting this study as quantifying contribution of cognitive processes to performance should not be studied in isolation (Radulescu et al., 2016; Radulescu et al., 2019; Collins and Frank, 2012; Collins, 2018).\n\nOn the biological side, our results suggest that age-related differences in working memory, but no other age-related behavioral changes, were associated with reductions in levels of glutamate in prefrontal cortex. Previous work has noted structural changes in the aging brain, including reduced brain volume and specific reductions in gray matter in certain brain regions, including prefrontal cortex (West, 1996; Buckner et al., 2004). While we did note some structural differences between younger and older participants, these structural changes were not related to decision-making, and instead the best neural predictions of task performance relied primarily on neurochemical levels, in particular, glutmate. Glutamate is the primary excitatory neurotransmitter in the brain, and in prefrontal cortex, is thought to support local recurrent signaling that supports the active maintenance of information in cortical neural networks. An enticing interpretation of these results is that our noninvasive MRS measures, which provide regional quantification of glutamate, may provide a readout of changes in the local synaptic architecture (e.g. decreased density of excitatory synapses) that play a causal role in the cognitive aging process.\n\nNonetheless, our study is limited in the support that it can provide for this idea. We found a relationship between glutamate and the working memory decay parameter that explained age-related differences in task performance. However, the bulk of this relationship was driven by the group differences in levels of glutamate and working memory decay, with only a trend-level correlation between the factors existing in the older adult group. Furthermore, formal mediation modeling was unable to confirm that glutamate mediates the observed relationships between age and working memory decay. There are several potential explanations for the remaining causal ambiguity, one being that our study was not particularly well powered to see within group relationships between biological variables and behavior (24 older participants with both brain and behavioral measurements), making the observed correlation in older adults (r = \u22120.39) difficult to interpret one way or the other. Mediation analysis typically requires very large samples to ensure reasonable power levels (Fritz and Mackinnon, 2007) and has an additional obstacle in our case that we cannot measure our hypothesized mediating factor directly and instead rely on a noisy proxy measurement (MRS glutamate), potentially muddying the interpretation of mediation analyses (Westfall and Yarkoni, 2016). An alternative explanation would be that age really is the causal factor driving both metabolic changes in glutamate and, separately, cognitive declines in working memory that affect performance on learning tasks. While we are unable to conclusively arbitrate between these possibilities in this study, we hope that our results inspire future work with larger samples of older adults that can effectively do so.\n\nOur study is also limited by the MRS methodology that we employed. A major limitation of MRS is that we are unable to verify that the age-related differences in glutamate that we measure are localized to synapses, or even to neurons. The chemical specificity of our findings lends some support to the idea that glutamate is playing a functional role rather than simply serving as one of many markers for the metabolic changes that occur over healthy aging, yet additional work leveraging animal models would be necessary to verify this idea and fully elucidate a causal mechanism. Beyond specificity, our MRS methodology limited the breadth of neurochemical measurements we could make. We did not measure levels of dopamine (DA), which is a critical biological marker of learning by reinforcement (Schultz et al., 1997), and could further inform our understanding of the age-related changes in neurochemistry, and its effect on cognition (B\u00e4ckman et al., 2006; Li et al., 2001). Furthermore, dopamine also might modulate WM in addition to RL (O\u2019Reilly and Frank, 2006). Thus, the role of dopamine in RL-WM interaction in the aging population would be an interesting topic to explore in future research.\n\nA third limitation of this study is the cross-sectional design. Specifically, we compared a group of young and older adults, without directly observing age-related changes within subjects (i.e. a longitudinal design). As such, the observed age group differences in performance could have been, in part, attributed to cohort effects (e.g. young adults being more comfortable with technology and computer games compared to old adults). Despite this theoretical limitation, several aspects of our data suggest that the differences we observed are related to age rather than other factors that differed across our young and older cohorts. First, we collected RBANS scores, which revealed that our two groups reflected similar samples of their age groups with respect to overall cognitive function. Second, task performance decreased with age within the older adult group rather than simply across the two groups.\n\nTo analyze our results, we developed a Bayesian hierarchical RL-WM model that captured qualitative trends in both training and testing performance as well as group differences. However, our model validation revealed that the RL-WM model predictions deviated from older participants\u2019 data in set size 6 learning (Figure 2B). Further inspection revealed that this occurred because in some set size 6 blocks some older participants learned a correct response for only a subset of stimuli, while entirely neglecting to learn correct responses for the remaining stimuli in the set. One interpretation is that older adults might have used this as a strategy to minimize the difficulty of the high set size condition (ignoring some stimuli to effectively make it a smaller set size), leading participants to deviate from our model, which learned from all stimuli. This interpretation was supported by model predictions for older adults who did not exhibit such selective learning, which displayed reduced model misfit (see Appendix 1\u2014figure 4). Thus, our hierarchical modeling not only captured core trends in behavior, but it also highlighted a previously undocumented discrepancy between RL-WM model predictions and learning behavior in specific individuals due to alternative strategies (e.g. neglecting stimuli). While we were unable to further characterize or quantify these strategies in our dataset, we hope that this observation inspires future work to design tasks better positioned to do so.\n\nWe have focused on testing healthy older adults in order to isolate the aging as dimension along which we tested the differences in RL and WM. In the future, it would also be valuable to examine these changes in clinical populations (e.g. individuals with mild cognitive impairment or individuals with Alzheimer\u2019s disease/dementia). Testing how neural mechanisms in these neurodegenerative disorders relate to RL/WM would further expand our understanding of the underpinnings of dementia-related symptoms. Furthermore, recognizing the signs of specific impairments at different stage of dementia development could inform cognitive-training programs that have been used to mitigate/delay cognitive symptoms in these neurodegenerative disorders (Clare et al., 2003). One interesting related question is that of the dynamics of age-related differences, in particular as to whether the measured age-related neural/cognitive changes are gradual or characterized by a sudden onset at a critical time point in lifespan? Based on the absence of age-related correlation with performance in young adults and negative correlation with age within the old group, it seems that the relationship between age and cognitive functions might not be linear and instead begin to decline more rapidly at older ages. Future work employing longitudinal studies could address this question and potentially link nonlinear declines in neural and behavioral measures to protracted onset of age-related disease.\n\nIn summary, we show that age-related differences in the ability to make decisions from experience are reflected in the age group variability in working memory decay. These behavioral deficits are accompanied by changes in neurochemistry, most notably reductions in prefrontal glutamate levels, that map specifically onto computational markers for working memory impairment and tend to increase with age. These findings suggest that a major component of age-related differences in decision-making could result from old adults experiencing reductions in prefrontal excitatory signaling that impair working memory systems necessary to translate recent information into appropriate action.\n\n## Methods\n\n### Participants\n\nWe recruited 78 participants in total (42 older adults \u2013 age mean [SD] = 68 [8.5]; 36 young adults, age mean [SD] = 21 [4.4]) for a two-session study. Older adults were recruited from the community. Young adults were recruited from the Brown University participant pool or from the community. Recruitment targeted young adults (18\u201330) and older adults (60\u201380); however, the inclusion criterion was broader and only required participants to be at least 18 y of age. Visual exclusion criteria for enrollment in the study included (1) direct report of color blindness or poor performance on Ishihara color plates, (2) a best-corrected visual acuity less than 20/40 in both eyes at distance or near, and (3) abnormalities in peripheral vision determined by confrontation visual field testing. Additional exclusion criteria related to the safety of MRI imaging excluded participants with contraindication to MRI including claustrophobia, pregnancy, or metal implants.\n\nDuring the first session, all participants completed an RL-WM behavioral task as well as additional cognitive testing using the RBANS. We consider the RBANS to be a fitting choice for this as, to our knowledge, compared to alternative measures such as MMSE or dementia rating scale, the RBANS does not have ceiling effect issues and is designed to increase sensitivity to small cognitive differences. During the second session, participants underwent MRS and completed additional behavioral testing. Out of 36 young adults, 6 did not complete the MRS session; out of 42 old adults, 18 did not complete the MRS session. These participants were omitted from the analyses that linked behavioral/modeling data and neural measures. The two sessions were separated by a maximum of 7 d. Participants received monetary compensation for participating in the study. All participants provided a written informed consent prior to beginning the experiment. All procedures were approved by the Brown University Institutional Review Board under protocol #0812992595 (behavioral session) and #1203000583 (MRS session).\n\n### Task\n\nA general format of reinforcement learning experiments assesses subjects\u2019 engagement of the feedback-dependent learning process, which enables them to store rewarding stimulus\u2013response associations. The RL-WM task employs the same logic, while simultaneously manipulating the working memory (WM) involvement by varying the number of stimulus\u2013response associations participants are required to learn in a given block (Collins and Frank, 2012; Collins, 2018; Collins and Frank, 2018; Figure 1). In the previous work, this manipulation yielded a way to disentangle the contribution of WM and RL to the learning process (Master et al., 2020).\n\nGiven that WM is capacity limited and susceptible to decay, participants are more likely to have stored in working memory an informative stimulus\u2013action association for a given trial when there are fewer items to store. Since WM enables fast, albeit short-lasting and limited, storage, we expected the accuracy to asymptote within very few trials \u2013 if the number of associations is within the capacity bounds. On the other hand, if the number of associations participants are required to store exceeds their WM capacity, they would be more likely need to use a more incremental but more robust system to make a choice (RL). Therefore, having two conditions (small and high set size) enabled us to dissociate the contribution of these two learning systems.\n\n#### Learning phase\n\nBefore starting the actual task, participants received detailed task instructions and a brief practice phase. They were told that the goal of the experiment was to learn a correct key press in response to the given images in order to earn as many points as possible. We provided participants with trial examples during which they were presented with a stimulus on the screen \u2013 they had 1 s to press one of the three keys and were subsequently given a 1 s deterministic feedback. If they selected a correct response, participants received a point (+1); if they selected a wrong response key, they received 0 points. Participants advanced to the next trial following the feedback termination (Figure 1A). Points were translated to an incentive payment at the end of the study.\n\nParticipants learned in 10 independent blocks, 6 with small set size (three stimuli per block) and 4 with high set size (six stimuli per block), each block with a novel set of images. There were more small-set size blocks due to the fact that learning fewer stimulus\u2013response associations provides a noisier assessment of the learning performance. In each block, each stimulus had a correct associated action that the participant needed to discover through trial and error (e.g. action 3 is correct for stimulus 1) and appeared nine times during the block. The stimulus order was pseudo-randomized to ensure a uniform distribution of delay between two successive presentations of the same stimulus (Collins, 2018). We counterbalanced correct stimulus\u2013response mappings across the blocks.\n\n#### Testing phase\n\nAfter the training phase, participants completed an unrelated 20 min task (probabilistic selection task [PST]; Frank et al., 2004) that was visually distinct from the RL-WM task and served to introduce an extended delay between training and the test phase. After completing the PST task, participants were again tested on their knowledge of the stimulus\u2013response associations learned in the RL-WM training blocks. However, unlike in the training phase, feedback was omitted to prevent new learning. Therefore, participants could only be informed by feedback received at least 20 min prior to the test phase. Thus, compared to the learning phase where WM highly contributes to performance, the test phase reflects better isolated slow, long-term learning processes (RL). Specifically, due to (1) a 20 min delay and (2) omitted feedback, WM memory involvement in test phase is effectively eliminated since WM cannot be engaged in new learning (due to absence of feedback), and the time delay over which information stored in WM has decayed. Investigating test phase performance in comparison to learning phase performance allows us to see how learning within the RL process is impacted by the use of WM during learning. If our prediction is correct, we should observe a larger decrease from training to testing performance in set size 3 (which could be learned via WM) compared to set size 6 condition (that exceeds the WM capacity and is more likely to be learned via RL that is more robust across increased delay intervals). In our task (and model), we assume that the test phase performance is supported solely by RL in the absence of WM. Nevertheless, we acknowledge that it could also reflect the contribution of an alternative long-term storage system, such as episodic memory (Bornstein and Norman, 2017), but this task is not designed to identify it.\n\n### Computational model\n\nIn order to understand the cognitive factors that drive age-related differences in behavior, we used a hybrid reinforcement learning (RL) and working memory (WM) model (RL-WM). This model is designed to disentangle the contributions of RL and WM to learning by accounting for each process in a separate RL and WM module. The RL module tracks the values, $Q$, of stimulus\u2013action associations, which are learned incrementally from the reward history. Specifically, the RL module in the model means to capture incremental learning that is not capacity limited, analogous to the RL thought to be implemented by dopaminergic processes in the brain (Schultz et al., 1997). The WM module acquires stimulus\u2013action association weights, $W$, through fast, one-shot learning, but its stored associations decay over time. By modeling learning within the two modules and their weighted contribution to action selection, the RL-WM model is able to quantify the relative influence of RL and WM processes on learning (Collins and Frank, 2012; Collins, 2018; Collins et al., 2014).\n\n#### RL learning rule\n\nThe incremental learning of stimulus\u2013action values in the RL module is based on a simple delta rule (Sutton and Barto, 2018). Specifically, on each trial $t$, the value $Q\u2062(s,a)$ of the action $a$ made in response to the presented stimulus $s$ is updated in proportion to the reward prediction error $\\delta$ (difference between expected and observed outcome):\n\n$$\n\\delta_{RL}=r\u2212Q_{t}(s,a)Q_{t+1}(s,a)={Q_{t}(s,a)+\\alpha^{+}\\delta_{RL}if\u00a0\\delta_{RL}>0Q_{t}(s,a)+\\alpha^{\u2212}\\delta_{RL}if\\delta_{RL}\\leq0\n$$\n\nwhere $\\alpha^{+}$ and $\\alpha^{-}$ are positive and negative learning rates, and $r$ is the outcome for incorrect and correct trials (0 or 1 point, respectively). Previous work suggests that individuals learn differently from positive and negative feedback, specifically suggesting that they are more likely to neglect negative feedback when learning rewarding responses (Frank et al., 2007; Gershman, 2015; Niv et al., 2012). To address this property of learning, we allow for separate learning rates when updating $Q$-values, depending on the sign of the prediction error.\n\n$Q$-values are initialized at $Q_{0}=1/n_{A}$ (where $n_{A}$ is the number of possible response actions) at the start of each block. These are uniform values (equal values for all S-A associations) that reflect the reward expectation in the absence of learned information.\n\n#### WM learning rule\n\nIn contrast, the WM module is a one-shot learning system that immediately stores and retains the information from the previous trial. To model this, we quantified WM stimulus\u2013action weights as storing the immediate outcome of the trial:\n\n$$\nW_{t+1}(s,a)=rW_{t}(x,)+\u03bd(r\u2212W_{t}(s,a))if\u00a0\\delta_{WM}>0\n$$\n\nThe neglect of negative feedback is also assumed to affect WM. To capture this, we allow for imperfect encoding of the outcome as an association weight when the WM module\u2019s prediction error is negative. The strength of this imperfection $\u03bd$ is identical to the relative neglect of negative feedback in the RL module, $\\frac{\\alpha^{-}}{\\alpha^{+}}$.\n\n$$\nW_{t+1}(s,a)=W_{t}(s,a)+\u03bd(r\u2212W_{t}(s,a))if\u00a0\\delta_{WM}\\leq0\n$$\n\nHowever, we note that as the positive and negative learning rates are not subject to any order constraint, $\u03bd$ is permitted to be greater than 1, which would imply a relative preference to learn from negative feedback.\n\nThe WM weights are initialized to W0 that is defined similarly to the initial $Q$-values, but unlike the $Q$-values, WM weights are susceptible to decay $\u03d5$. On each trial, the $\u03d5$ parameter pulls the WM weights to their initial values W0:\n\n$$\nW_{t+1}\u2062(s_{i},a_{j})=W_{t}\u2062(s_{i},a_{j})+\u03d5\u2062(W_{0}\u2062(s_{i},a_{j})-W_{t}\u2062(s_{i},a_{j}))\u2003\u2003\u2200s_{i}\u2062\u2200a_{j}\\neq(s,a)\n$$\n\nThis decay applies to all stimulus\u2013action associations except the exact association seen in the current trial.\n\n#### Policy\n\nBoth the RL and WM modules contribute to the likelihood on each trial of choosing each of the $n_{A}$ possible actions. To generate an action policy within each module, we transform the $Q$-values and WM weights separately into choice probabilities:\n\n$$\nP_{RL}(a|s)=\\frac{exp\u2061(\\beta^{L}Q_{t}(s,a))}{\\sumi=1n_{A}exp\u2061(\\beta^{L}Q_{t}(s,a_{i}))}P_{WM}(a|s)=\\frac{exp\u2061(\\beta^{L}W_{t}(s,a))}{\\sumi=1n_{A}exp\u2061(\\beta^{L}W_{t}(s,a_{i}))}\n$$\n\nThese softmax policies imply that actions with higher $Q$-values and WM weights will be selected with higher probability. The inverse temperature $\\beta^{L}$, which applies to both softmax functions, controls the overall extent to which the overall choice process is deterministic during the learning phase. Higher $\\beta^{L}$ values imply that the process will be more deterministic and less exploratory.\n\nTo integrate the RL and WM modules\u2019 policies, the RL-WM model assumes that the choice is generated as a function of a weighted mixture of the RL and WM policies, where this proportional weighting is determined by a WM weight $\\omega$ parameter that quantifies one\u2019s relative reliance on WM:\n\n$$\nP_{RL-WM}\u2062(a|s)=\\omega^{n_{S}}\u2062P_{WM}\u2062(a|s)+(1-\\omega^{n_{S}})\u2062P_{RL}\u2062(a|s)\n$$\n\nAs the number of associations to store exceeds WM\u2019s capacity, individuals should rely less on WM and more on RL. To capture this, we allow the relative reliance on each process to depend on the set size $n_{S}$. Higher $\\omega^{n_{S}}$ values imply greater reliance on WM and lower values imply greater reliance on RL while learning $n_{S}$ stimulus\u2013action associations. Modeling weighted contribution of RL and WM to policy allows us to capture the effect of learning within each module on action selection, and thus disentangle the contribution of these two modules to performance.\n\nWe further extended the policy to capture random lapses in the choice process. Specifically, individuals often make value-independent, random lapses in action \u2013 independent of the learning process. To capture this behavioral property, we added a random noise parameter in choice selection in the final policy (Collins and Frank, 2012; Nassar and Frank, 2016):\n\n$$\nP=(1\u2212\u03f5)P_{RLWM}+\u03f5\\frac{1}{n_{A}}\n$$\n\nwhere $1/n_{A}$ is the uniform random policy, and $\u03f5$ is the noise parameter.\n\n#### Test phase\n\nGiven that the test phase is administered with a delay (thus eliminating WM contribution), we assume that the choice process during this phase is exclusively supported by RL (see \u2018Task description\u2019). The choice policy is based only on the $Q$-values learned for the stimulus\u2013action associations at the end of each learning block:\n\n$$\nP_{RL}^{test}(a|s)=\\frac{exp\u2061(\\beta^{T}Q_{t}(s,a))}{\\sumi=1n_{A}exp\u2061(\\beta^{T}Q_{t}(s,a_{i}))}P^{test}=(1\u2212\u03f5)P_{RL}^{test}+\u03f5\\frac{1}{n_{A}}\n$$\n\nHere, $\\beta^{T}$ is the inverse temperature specific to the test phase (i.e. different from the learning phase $\\beta^{L}$). We also assumed some noise in this decision process, with the same lapse rate $\u03f5$ as in the learning phase (see Equation 2). $Q$-values are no longer updated as there is no feedback given during the test phase.\n\nThe list of free parameters for the RL-WM model includes a positive learning rate ($\\alpha^{+}$) and a negative learning rate ($\\alpha^{-}$), two inverse temperatures (in each phase of the task, $\\beta^{L}$ and $\\beta^{T}$), random lapse rate ($\u03f5$), decay rate ($\u03d5$), and two degrees of reliance on WM (in each set size condition, $\\omega^{3}$ and $\\omega^{6}$). For every participant, we inferred the value of each of these parameters except $\\beta^{L}$, for which we made the simplifying assumption that a singular value applies to all participants in the same age group. Most recent work with the RL-WM model has fixed $\\beta^{L}$ to the a singular value (often 50 or 100) for all participants (Collins, 2018; Master et al., 2020); our approach is similar, but ultimately more flexible as it effectively allows the data to dictate what value to fix for $\\beta^{L}$.\n\nA schematic representation of how the RL-WM process generates behavioral data in both the learning and testing phases of the RL-WM task is presented in Figure 2A.\n\n#### Hierarchical Bayesian formulation of the RL-WM model\n\nTo estimate the parameters of the RL-WM model for all participants simultaneously, we developed the first hierarchical Bayesian formulation of the RL-WM model. This Bayesian implementation is a novel extension of the RL-WM model, allowing for the inclusion of domain knowledge directly in the model (via carefully developed priors) and the incorporation of theoretically meaningful hierarchical structure. A hierarchical Bayesian approach to model fitting offers many benefits, including the ability to quantify the uncertainty in each parameter estimate and the regularization of extreme estimates with respect to the group (for an introduction, see Lee, 2011).\n\nWe compared three versions of the Bayesian RL-WM model with different hierarchical structures. First, we defined a non-hierarchical model by specifying a prior for each unobserved parameter of the RL-WM model\u2019s data-generating process (as described above). This would be equivalent to fitting the model separately to each participant\u2019s data, were it not for our simplifying assumption that the same value of $\\beta^{L}$ is used for all participants. Next, we considered a hierarchical extension of the model over participants, such that all $P$ participants\u2019 parameter values (e.g. all 78 learning rates, $\\alpha_{1},\\alpha_{2},\u2026,\\alpha_{P}$) are assumed to be drawn from a group-level distribution (e.g. $\\alpha_{p}\u223cBeta\u2062(1+a,1+b)\u2062\u2200p$). Finally, we considered a model with separate hierarchies over the participants within each age group. This version of the RL-WM includes different hyperparameters for each age group (e.g. $a_{young}$, $b_{young}$ vs. $a_{older}$, $b_{older}$), which would allow us to make inferences about group-level differences in each dynamic of the RL-WM process.\n\nFor each version of the model, we specified priors for participant-level parameters and hyperpriors for group-level hyperparameters that were mildly to moderately informative. The priors and hyperpriors used to specify the winning two-group model are detailed in Appendix 1. Prior predictive checks and other simulation-based procedures were used to confirm that the set of prior distributions and the RL-WM model likelihood taken together specified a reasonable model (Kennedy et al., 2019; Baribault and Collins, 2023; see Appendix 1\u2014figure 1).\n\n#### Model fitting\n\nFor each of the three candidate models, we used Stan (Carpenter et al., 2017) to estimate the joint posterior distribution of all model parameters via Markov chain Monte Carlo (MCMC) sampling. After running a model with four chains of 500 warmup iterations and 1500 kept iterations each, we performed a series of diagnostic checks in accordance with current best practices for MCMC methods (Vehtari et al., 2021; Betancourt, 2016; Gelman et al., 2013). We required an $R^$ value of \u2264 1.01 and an effective sample size of \u2265 400 for all parameters, a BFMI of \u2265 0.2 for all chains, and that no divergences were observed. Only kept iterations from model output that met these criteria were used for analysis.\n\nWe used the (widely applicable or Watanabe\u2013Akaike information criterion [WAIC]; Watanabe, 2010) as our model comparison metric as it is fully Bayesian, invariant to parameterization, and straightforward to compute. Because response data from successive trials of the RL-WM task are not independent, we consider one block of data from one participant as the smallest unit of data when computing log likelihood for WAIC. As WAIC is an estimate of out-of-sample prediction error, lower WAIC values indicate a better model. Our final model selection was further supported by posterior predictive checks of the models\u2019 relative descriptive adequacy (see Appendix 1\u2014figure 2). In the model-based analyses reported here, all intervals are 95% equal-tailed credible intervals (CrI) unless otherwise specified.\n\n### MRS procedure\n\nGlutamate and GABA levels were measured in three brain regions (striatum [STR], middle frontal gyrus [MFG], and intraparietal sulcus [IPS]) using MRS. First, structural images of the participant brain were acquired using a high-resolution T1-weighted sequence (MPRAGE, TR/TE/TI = 1900/3.02/900ms, 9\u00b0 flip angle, 1.0 \u00d7 1.0 \u00d7 1.0 mm3 voxel resolution) with a 64-channel RF receive coil array on a 3T MRI scanner (Siemens MAGNETOM Prisma). Next, we manually placed voxel bounding boxes in each brain region for MRS data acquisitions. The striatal voxel was 18 \u00d7 24 \u00d7 15 mm and was placed such that the anterior portion of the voxel started at the anterior extreme of the head of the caudate and that it extended posterior to maximize the inclusion of caudate and putamen and minimize inclusion of ventricular space. A 20 mm cubic voxel was placed in the right MFG immediately anterior to the precentral sulcus and immediately inferior to the superior frontal sulcus. A 20 mm cubic voxel was placed to be centered at the anterior-ventral section of the left IPS. Representative images of voxel placements are shown in Figure 3.\n\nFor each voxel, we acquired measures of GABA using a MEGA-PRESS sequence (Hu et al., 2013) (TR = 1500 ms, TE = 68 ms, average = 192) with double-banded pulses, which were used to simultaneously suppress water signal and edit the $\\gamma$-CH2 resonance of GABA at 3 ppm. Linear and second-order shimming was used to achieve typical linewidth (\u223c14 Hz). Difference spectra were obtained by subtracting the signals obtained from the selective double-banded pulse applied at 1.9 and 4.7 ppm (\u2019Edit on\u2019) from those obtained from the double-banded pulse applied at 4.7 and 7.5 ppm (\u2019Edit off\u2019). Glutamate scans were conducted using the PRESS sequence (Hancu, 2009) (TR = 3000 ms, TE = 30 ms, 90\u00b0 flip angle, average = 64). A variable pulse power and optimized relaxation delays (VAPOR) technique was used in both sequences to achieve water suppression (Tk\u00e1c et al., 1999). While MRS data were collected, participants completed a simple task that required them to push a button whenever a fixation point changed color (Shibata et al., 2017).\n\nGlutamate was quantified using LC-model (Provencher, 2001) that attempts to fit the average signal in the frequency domain using a linear combination of basis functions. Separate basis functions were used to quantify glutamate and glutamine, a molecule that has similar spectral characteristics to glutamate in the PRESS sequence. The reliability of glutamate quantifications was indicated by the Cramer\u2013Rao lower bounds, and a criterion of 20% was chosen to reject low-quality signal; however, no measurements were rejected due to this criterion.\n\nGABA was quantified using a custom peak integration process implemented in MATLAB. This quantification procedure was used because it produced higher split half reliability on our dataset than standard GABA quantification software (Edden et al., 2014). Raw data were obtained from the Siemens Prisma scanner in the form of the so-called \u2018twix\u2019 file that contains the (complex) individual signals from each receive channel for every average. Signals underwent phase shifting to equalize the starting phase of all of the receive channel signals prior to combining for each signal average. Signals were combined using weighting factors based on individual signal amplitudes. Starting with the highest amplitude signal, channels were added until there was no further increase in NAA peak SNR. Free induction decays were averaged separately for \u2018off\u2019 and \u2018on\u2019 pulse conditions and subtracted to produce a difference signal. The difference signal was transformed into frequency space with a fast Fourier transform and frequencies were converted to parts per million, where 1 PPM is equal to 123.255 MHz, and relative to a water reference of 4.8 PPM. The GABA peak was quantified by integrating chemical shifts ranging from 2.9 to 3.1 ppm and subtracting out the integrated signal in a surrounding reference window (2.8\u20132.9, 3.1\u20133.2 ppm). This procedure was validated through split half correlations in which the entire procedure was performed separately for odd and even acquisition volumes, and resulting GABA measurements for odd and even acquisitions were correlated with one another to yield relatively high reliability for MFG and IPS measures (R = 0.80 for both regions) and moderate reliability for striatal GABA measures (R = 0.68; see Appendix 1\u2014figure 6).\n\nFreesurfer 6.0 was used to reconstruct T1 anatomical scans from DICOM images collected using the MPRAGE sequence following the recon-all -all pipeline. The initial pial surface outputs were manually corrected for brainmasks that included skull tissues as described in the Freesurfer quality control documentation (https://freesurfer.net/fswiki). Next, partial volume fractions for gray matter (cortex + subcortical), white matter, and cerebrospinal fluid were computed as voxel maps using the mri_compute_volume_fractions Freesurfer command based on the edited T1 reconstruction. Then, masks for the three brain regions (striatum, MFG, and IPS) measured with MRS were constructed using the Gannet 2.1 toolbox (Edden et al., 2014) based on the voxel bounding boxes manually placed during the MRS acquisition. Gray/white matter volumes in each region were computed by summing partial volume voxel maps with masking. Similarly, anatomical measures within each region were obtained by summing tissue maps with masking using the mri_segstats Freesurfer command on labelled parcellation of the cortex using the Desikan\u2013Killiany atlas (Desikan et al., 2006) and automatic segmentation of the subcortical structures (Fischl et al., 2002).\n\n### Behavioral analyses\n\nTo visualize participants\u2019 learning trajectory, we created learning curves by collapsing participants\u2019 accuracy at each stimulus iteration. This enabled us to separate early learning and asymptotic performance (late learning accuracy). Trials with missing responses (i.e. where participants did not respond within the time limit) were excluded from analyses.\n\nWhile learning curves are useful for visualizing learning trajectory, they cannot be used to make inferences about trial-by-trial contribution of different factors (i.e. related to RL or WM) to participants\u2019 accuracy. Thus, to quantify performance in terms of factors related to RL and WM, we ran a trial-by-trial analysis using a mixed-effects general linear model (GLM), predicting accuracy (coded as 0 or 1 on each trial). Specifically, the predictors in the logistic regression consisted of the following: set size (the number of associations), delay (number of intermediate trials between two successive rewarded stimulus representations), and reward history (stimulus-dependent cumulative reward history). We also added trial and block number predictors to control for overall improvement across the task. We used participants\u2019 coefficients to predict their respective age using a linear model in order to draw a relationship between age and RL and WM-related factors\u2019 effect on performance. We excluded coefficients from two participants as these coefficients were over 2 SD above the mean following the approach implemented in previous work (Master et al., 2020).\n\n### Data-driven approach to identifying best MRS predictors\n\nTo examine the effect of brain measures on the parameters and task performance, we first had to reduce the dimensionality of highly correlated MRS data by identifying the best set of MRS predictors in explaining participants\u2019 learning performance. We focused on learning performance because unlike the test phase the learning phase contains signatures of both WM and RL (see \u2018Task description).\n\nFirst, we averaged all measures that were sampled from multiple regions across those regions (e.g. glutamate predictor in the model was an average of glutamate measures across three regions it was sampled from). The only measure that was not averaged was cortical thickness (from CMF, RMF and, SF) because these three regions were selected a priori from a Freesurfer parcellation (see \u2018MRS methods\u2019) and are unrelated to the voxels. We averaged the predictors in order to reduce the number of predictors in the model in a meaningful way (e.g. instead of three different glutamate features we would have only one) and because our power would have suffered massively due to collinearity in our predictors. As a result, we used the following features to construct a GLM: gray matter, white matter, and cortical thickness in SF, CMF, and RMF cortex (structural measures), glutamate, GABA, and NAA (neurochemical measures). Next, we implemented a $k$-fold cross-validation approach (a commonly used method in machine learning) to identify the best configuration of predictors that minimizes the loss (mean squared error) in out-of-sample prediction. Specifically, we randomly sampled 4/5 of the data to train the model, leaving out the remaining 1/5 of the data for validation, and repeated this process 200 times. On each of the 200 iterations, we stored the best configuration of predictors that minimized the loss of the model\u2019s prediction of the out-of-sample performance. We also added the regularization term, which represented a combination of $L^{1}$ and $L^{2}$ penalty (i.e. elastic net; with alpha = 0.5 such that ridge ($L^{2}$) and lasso ($L^{1}$) optimization are weighted equally; regularization coefficient $\\lambda$ was set to default \u2013 lasso sets the maximum value of $\\lambda$ that gives a non-null model) to help us eliminate the predictors that did not significantly contribute to performance and might lead to overfitting. We reasoned that this data-driven approach was a principled way of analyzing highly colinear measures that would allow us to reduce the dimensionality of our data as well as the number of hypothesis tests required to draw conclusions. After our machine learning model comparison, we fit our winning neural model using a standard regression and performed significance testing on individual beta estimates to identify the neural measures that were significantly associated with training performance within the best model.\n\nOnce we obtained the best set of features based on the cross-validation approach, we used this model to generate the brain-based performance prediction. The brain-based predicted performance represented a mapping between neural measures and behavior \u2013 that is to say, based on our brain measures, what level of training performance might be expected? Next, we regressed brain-based performance predictions onto the fit parameters from our RL-WM model in order to test which parameters were most closely related to the dimension of performance that we could identify using neural measures. This step also allowed us to measure the relationships between model parameters (i.e. decay, learning rate) and the brain-based performance predictions while controlling for all other model parameters, thereby improving the specificity with which we could map neural correlates of performance onto specific computational processes. Significance testing was performed to identify which parameters were associated with brain-based performance measures.\n\nFollow-up analyses were conducted on neural measures with significant associations to performance and model parameters with significant associations with brain-based performance predictions. Each model parameter with a significant relationship was regressed onto anatomically specific neurochemical measures that were significantly associated with performance. In practice, this follow-up analysis was only applied to the decay and set size 3 WM weight parameters, which were regressed onto glutamate concentrations in MFG, IPS, and STR.\n",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "476a6643-36d9-4084-9506-375e1aba9832",
+      "submission_id": "653ee621-c0aa-4563-89c5-d2083b8c2c56",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Claire M Gillan, https://ror.org/02tyrky19 Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85243.sa0](https://doi.org/10.7554/eLife.85243.sa0)\n\nThis important study combines behavior, computational modelling and magnetic resonance spectroscopy in a cross-sectional design to address the question of whether age-related differences in learning are driven by changes in working memory decay or deficiencies in the reinforcement learning (RL) system. The general approach is convincing, the data novel, and the analysis carefully executed. Future work requires a longitudinal design to separate aging from cohort effects and may address the generality of the effects to other RL/Working memory tasks.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Claire M Gillan, https://ror.org/02tyrky19 Trinity College Dublin Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85243.sa1](https://doi.org/10.7554/eLife.85243.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Age-related decline in prefrontal glutamate predicts failure to efficiently deploy working memory in the service of learning\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Claire M Gillan as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jonathan Roiser as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWe all enjoyed reading this paper, but all agreed that there were areas where the main claims perhaps went beyond the data. We hope that you find these recommendations helpful in strengthening the clarity of the paper and helping the reader take away what they need to.\n\n1) The causal language (including in the title) should be tempered. Phrases such as 'is associated with' are preferred over 'predicts' given the nature of the data. Similarly, the reference to a 'decline' implies longitudinal data, where it is in fact a cross-sectional design.\n\n2) The reviewers noted that no RL deficits were observed in this paper, so we did not feel it was justified to make broad claims about WM deficits 'explaining them' more generally. This bigger idea would need to be supported with data from a suite of RL tasks and would necessitate the basic observation of an RL deficit in older adults. We do not mean to say that additional data is required for publication, but absent it, the main claims need to be substantially toned down and qualified.\n\n3) A mediation analysis is desirable to strengthen the contention that glutamate changes are responsible for WM deficits in older adults.\n\n4) All reviewers queried the strength of the evidence for a working memory deficit \u2013 there was a change in decay but not deployment \u2013 can the authors support the interpretation of this as a deficit in efficient deployment of WM?\n\nReviewer #1 (Recommendations for the authors):\n\nWith respect to the computational modeling results, it would be helpful to explain to the reader (and me) a bit more about how the older adults can have faster decay of memory but it does not influence the trade-off with RL (\u03c9 parameter). Is that interpreted as \u2013 given their poorer memory / faster decay, they weight 'what they have' just as well as others. And if the model did not feature a decay (or fixed it), one would presume a difference in the weight would then be apparent. Is this the correct way to think about that result?\n\nIt appears to be a limitation that older adults were from the community while younger adults were from the Brown University participant pool. I understand the RBANs was taken, but absent major cognitive decline this is a coarse instrument (i.e. has ceiling effects in healthy samples). It does not appear there were any controls for level of education or IQ which might reasonably systemically vary across these samples. If this is the case, this may present an additional confound.\n\nThe section where the best fitting model is used to generate brain based predictions of performance was a bit hard to follow. It appears though that the effects of WM params are not just from glutamate but the other non-significant neural measures too. Why was this done? It seems the value of the two step analysis process is to identify the key contributor to performance (glutamate) and then focus on it? \"WM parameters \u03c6 and \u03c9 capture the performance predictions based on glutamate (and remaining non-significant neural measures)\"\n\nThe final section looking at how age factors into the relationship between WM and glutamate is interesting, but I wonder if it would be strengthened with a formal mediation model.\n\nReviewer #2 (Recommendations for the authors):\n\nIncluded here are some analytical suggestions for addressing some of the points I raised in the public review.\n\n1. The first point should be easy to address by conducting the same analysis using learning rates as the predicted variable [point 1].\n\n2. To argue for specificity to *prefrontal* glutamate, it would be important to show Figure 3D including the STR measurement. The authors included that information in the text, but it's easy to miss especially because brain measurements were initially averaged [point 1].\n\n3. For 3D, why not run a mixed effects model with Age Group, Glutamate, and Region regressed on WM decay? That seems like a more direct test of the question of whether PFC glutamate predicts WM decay, and whether this relationship interacts with age [point 5].\n\n4. Provided the Age x Glutamate interaction effect above is significant (that is, glutamate predicts WM decay only in the OA group), it would strengthen the conclusion of the study to see a formal mediation analysis within the OA group, asking whether the WM effect on task performance is indeed modulated by glutamate [point 5].\n\nReviewer #3 (Recommendations for the authors):\n\n1. The paper could benefit from a better description of the rationale for how RL versus WM contributions to learning are disentagled. The statements about the interpretation of set size difference Mentioned in the public review seem surprising in light of their little role in the papers conclusions.\n\n1a. The authors do not statistically test the age-by-condition difference, which would be important to know. Judging from the plots, age differences in learning performance by condition seem biggest in the set size 6 condition, suggesting that in fact gradual RL computations are impaired quite markedly.\n\n2. The rationale for emphasising the difference between learning and test performance was unclear too me. Doesn't the 20 min delay between learning and test suggest that what we see there is related to LTM consolidation, rather than WM capacity? In addition, the set size 3 vs 6 condition difference by age was marginal.\n\n3. The statical approaches could be better explained and motivated. It was unsure why the analysis of model parameters didn't include p values or test statistics. Likewise, the motivation behind the analysis that investigates the factors that relate to the brain/MRS predicted task performance was unclear to me.\n\n4. The task could be described in a bit more detail, in particular the test phase. The fact that this is only binary feedback rather than a\n\n5. Does the fitting of \u03b2 on the group level disadvantage one of the age groups? Or was this done separately for each group?\n\n6. Which regressors were part of which model in the MRS analysis remained unclear. I was wondering in particular about issues of collinearity, which can impact the ability to interpret the \u03b2 coefficients (which the paper relies on, rather then the model comparisons)\n\n7. In the section investigating the relation between age, WM decay and glutamate, it be useful to see how strong the relation between glutamate and WM is after age has been factored out.\n",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a75fc210-5d8b-4fbe-9dc6-2afc319991cb",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C1",
+      "claim": "The ability to use past experience to effectively guide decision-making declines in older adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to use past experience to effectively guide decision-making declines in older adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that frames the research question, supported by the study's findings and cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "a7048c04-ee58-43d1-a52d-9623353a0d35",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C2",
+      "claim": "Age-related decision-making declines have been theorized to emerge from impairments of striatal reinforcement learning systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Such declines have been theorized to emerge from either impairments of striatal reinforcement learning systems (RL) or impairments of recurrent networks in prefrontal and parietal cortex that support working memory (WM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references existing theoretical frameworks in the literature about age-related cognitive decline.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "2934ecf5-c5d4-47f0-9c31-8eb36749dcde",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C3",
+      "claim": "Age-related decision-making declines have been theorized to emerge from impairments of recurrent networks in prefrontal and parietal cortex that support working memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Such declines have been theorized to emerge from either impairments of striatal reinforcement learning systems (RL) or impairments of recurrent networks in prefrontal and parietal cortex that support working memory (WM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references existing theoretical frameworks in the literature about age-related cognitive decline.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "c2dbcda3-f534-4c25-bf29-84200d2a9d1a",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C4",
+      "claim": "Task performance is worse in older age.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that task performance is worse in older age, in a manner best explained by working memory deficits, as might be expected if cortical recurrent networks were unable to sustain persistent activity across multiple trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "46ef5889-f6b0-486d-81f0-32cb84a3a9f6",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C5",
+      "claim": "Age-related task performance deficits are best explained by working memory deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that task performance is worse in older age, in a manner best explained by working memory deficits, as might be expected if cortical recurrent networks were unable to sustain persistent activity across multiple trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from computational modeling analysis comparing RL and WM contributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "0a208de1-5d27-48db-9969-79af3b65c22b",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C6",
+      "claim": "Older adults had lower levels of prefrontal glutamate compared to younger adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we show that older adults had lower levels of prefrontal glutamate, the excitatory neurotransmitter thought to support persistent activity, compared to younger adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct finding from MRS measurements comparing age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "4ba45c06-2aac-447e-904b-49dceee43c9b",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C7",
+      "claim": "Glutamate is the excitatory neurotransmitter thought to support persistent activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we show that older adults had lower levels of prefrontal glutamate, the excitatory neurotransmitter thought to support persistent activity, compared to younger adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established neuroscientific knowledge about glutamate's role.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "c4fbfabf-4f92-45fd-9f33-238112639e4e",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C8",
+      "claim": "Reductions in prefrontal glutamate were correlated with working memory decay across individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, reductions in prefrontal glutamate were correlated with working memory decay across individuals \u2013 such that those with the lowest levels of prefrontal glutamate had the most rapidly decaying working memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from correlation analysis between MRS measures and model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "9f30a384-6c63-4ed9-bb23-9cab9e3f7e26",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C9",
+      "claim": "Individuals with the lowest prefrontal glutamate levels displayed the greatest impairments in working memory after controlling for other anatomical and metabolic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with the lowest prefrontal glutamate levels displayed the greatest impairments in working memory after controlling for other anatomical and metabolic factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from regression analysis controlling for confounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "490a7fcd-0a75-4cf0-9597-dadbb483186d",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C10",
+      "claim": "Lower levels of prefrontal glutamate may contribute to failures of working memory systems and impaired decision-making in older adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggest that lower levels of prefrontal glutamate may contribute to failures of working memory systems and impaired decision-making in older adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion based on the correlational findings, expressed with appropriate caution ('may contribute').",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "18baa935-904a-48e1-985d-f0b689f94244",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C11",
+      "claim": "Working memory declines with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that working memory declines with aging (Salthouse and Babcock, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "d64bade3-a4a6-46d5-bf54-81924ac6e7d0",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C12",
+      "claim": "Working memory declines have been shown in both cross-sectional and longitudinal studies and across a range of working memory tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Such declines have been shown in both cross-sectional and longitudinal studies and across a range of working memory tasks (Salthouse and Babcock, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "d4a1f088-e435-46de-ae87-311de6848422",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C13",
+      "claim": "Working memory is thought to be implemented through persistent activation of neural firing in similarly tuned neurons within recurrent excitatory networks in prefrontal and parietal cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Working memory is thought to be implemented through persistent activation of neural firing in similarly tuned neurons within recurrent excitatory networks in prefrontal and parietal cortices (Goldman-Rakic, 1995; Andersen and Buneo, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior neuroscience literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "8d810951-16db-4ec7-9850-8961c82f4061",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C14",
+      "claim": "Successful maintenance of activity over a delay period depends on glutamatergic signaling, and in particular activation of NMDA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Within such networks, successful maintenance of activity over a delay period depends on glutamatergic signaling, and in particular activation of NMDA receptors (Durstewitz et al., 2000; van Vugt et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior neuroscience literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "8175c039-62e2-471e-ab7a-bebc0b7542e2",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C15",
+      "claim": "In aged monkeys, persistent activations in prefrontal cortex are diminished and can be restored through local pharmacological manipulations that affect intrinsic neural excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "In aged monkeys, such persistent activations in prefrontal cortex are diminished and can be restored through local pharmacological manipulations that affect intrinsic neural excitability (Wang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior animal research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "b2c35542-f7a2-4ecf-8ea8-17db4580dd33",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C16",
+      "claim": "Observed reductions in synapses and dendritic spines on aged prefrontal pyramidal neurons suggest that persistent activity deterioration results at least in part from an overall reduction in glutamatergic signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "While the mechanisms by which persistent activity deteriorates with age are not fully established, observed reductions in synapses and dendritic spines on aged prefrontal pyramidal neurons (Dumitriu et al., 2010) suggest that they result at least in part from an overall reduction in glutamatergic signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited anatomical findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "10fb2214-89dd-4f7b-8b87-19eaa9d57ca7",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C17",
+      "claim": "Reinforcement learning systems are thought to decline across healthy aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Reinforcement learning (RL) systems are also thought to decline across healthy aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects a theoretical position in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "254ceb63-04f4-40d0-8cd0-61af6517ec3d",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C18",
+      "claim": "Evidence for reinforcement learning declines comes from behavioral impairments in tasks where participants learn to map stimuli onto rewarded actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for such declines comes from behavioral impairments in tasks where participants learn to map stimuli onto rewarded actions (Eppinger et al., 2013; Frank and Kong, 2008; H\u00e4mmerer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior behavioral studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "5b0ad7cc-d183-4578-b347-e5f9138d4bb8",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C19",
+      "claim": "Learning in stimulus-action mapping tasks is thought to occur through reinforcement of associations between stimulus and action in the striatum driven by dopamine reward prediction error signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning in such tasks is thought to occur through reinforcement of associations between stimulus and action in the striatum driven by dopamine reward prediction error signals (Frank et al., 2004; Collins and Frank, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established theory in reinforcement learning neuroscience.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "b8cea4ab-32e1-429e-a11e-20452e850204",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C20",
+      "claim": "Reward prediction error signals are blunted in healthy aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Such reward prediction error signals are blunted in healthy aging (Samanez-Larkin et al., 2014) supporting the accounts of age-related decline in RL (Chowdhury et al., 2013; Eppinger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior neuroimaging research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "1bc4ae9d-f183-41bc-9e04-9e3ae4ad9adc",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C21",
+      "claim": "Boosting dopamine signaling with levodopa led to restoration of RPEs and recovery of learning performance in older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Chowdhury et al., 2013 found that boosting dopamine signaling with dopamine precursor levodopa (L-DOPA) led to restoration of RPEs and recovery of learning performance in older adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited pharmacological study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "7811ba93-bcba-45a2-abc3-7e73692f0558",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C22",
+      "claim": "A number of studies have suggested that RL systems are intact in older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "however, a number of other studies have suggested that RL systems are intact in older adults (Radulescu et al., 2016; Grogan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to contradictory findings in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "3b839d18-dfe5-4fe4-b66d-b8161393e2ec",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C23",
+      "claim": "Some of the discrepancy in results about RL aging may stem from inconsistencies in the tasks used to measure RL across different studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the discrepancy in these results may stem from inconsistencies in the tasks used to measure RL across different studies (Eckstein et al., 2022) as many tasks that could be solved through incremental learning in the striatum according to reward prediction errors (RL) could also be solved using other cognitive systems, working memory systems being one of particular importance (Yoo and Collins, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by citations to methodological critiques.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "e0665158-58f8-42da-866f-64394b8cc185",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C24",
+      "claim": "42 older adults (age mean [SD] = 68 [8.5]) and 36 younger adults (age mean [SD] = 21 [4.4]) participated in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "42 older (age mean [SD] = 68 [8.5]) and 36 younger (age mean (SD) = 21 [4.4]) participants were enrolled in a two-session study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the study sample characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "fe425631-018d-4953-a859-9b9d514f3810",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C25",
+      "claim": "Age-normed total RBANS scores were similar in both groups (mean [std] younger: 106.4 [12.0], older: 109.0 [10.8]).",
+      "claim_type": "EXPLICIT",
+      "source": "Age-normed total The Repeatable Battery for the Assessment of Neuropsychological Status (RBANS) (Randolph et al., 1998) scores were similar in both groups (mean [std] younger: 106.4 [12.0], older: 109.0 [10.8])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of cognitive assessment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "e60b777c-49d2-4827-b502-c6246693e1c3",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C26",
+      "claim": "All participants scored in cognitively healthy range (younger adults range: 83\u2013140; older adults range: 81\u2013141).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, all participants scored in cognitively healthy range (younger adults range: 83\u2013140; older adults range: 81\u2013141) since cognitive impairment is defined as score 70 or below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of cognitive assessment data with reference to clinical criteria.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "5f54253b-c222-47f0-b35c-ed4a1a49a78b",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C27",
+      "claim": "Both age groups learned to make accurate responses in the learning phase and did so more quickly in blocks with fewer interleaved stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Both age groups learned to make accurate responses in the learning phase and did so more quickly in blocks with fewer interleaved stimuli, but younger adults learned more successfully than their older counterparts (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from behavioral data analysis, with reference to figure showing learning curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "036da8d5-4505-4902-8d0a-e683488e5ffc",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C28",
+      "claim": "Younger adults learned more successfully than older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Both age groups learned to make accurate responses in the learning phase and did so more quickly in blocks with fewer interleaved stimuli, but younger adults learned more successfully than their older counterparts (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from behavioral data analysis, with reference to figure showing learning curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "275176d5-ef9d-493d-ba82-b2f7329b06bc",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C33",
+      "claim": "Both groups showed signatures of RL and WM in their behavior as indicated by GLM analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The GLM analysis of accuracy data indicated that both groups showed signatures of RL and WM in their behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from GLM analysis of trial-by-trial behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "54ed9e4f-1300-47c3-a2a1-ff23bae1f8b5",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C38",
+      "claim": "Both age groups experienced set size-dependent declines in performance during the test phase of the task, with older adults achieving lower levels of performance overall.",
+      "claim_type": "EXPLICIT",
+      "source": "Both age groups experienced set size-dependent declines in performance during the test phase of the task, with older adults achieving lower levels of performance overall (Figure 1B, inset figures).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from test phase behavioral data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "522b054a-b897-41cf-8cea-75abdfb43f4a",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C40",
+      "claim": "The two-group hierarchical version of the RL-WM model offered the best description of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model comparison indicated that the 'two-group' version of the model, which incorporated separate hierarchies over the participants within each age group, offered the best description of our data (see Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model comparison using WAIC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "66d0b3e1-a223-4f0c-8f11-c8c58deb959f",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C44",
+      "claim": "In younger adults, an association would decay to 83% of its original strength after a single trial, whereas in older adults the decay would lead to working memory degradation about twice as fast.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean decay rate for the younger group was 0.174, indicating that an association would decay to 83% of its original strength after a single trial, whereas in older adults the decay of 0.324 would lead to working memory degradation about twice as fast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the decay parameter values in terms of their functional impact.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "4d7120e5-df50-443d-8e5a-7dcdbb57092d",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C49",
+      "claim": "There were very little indication of group differences in parameters specific to the RL system.",
+      "claim_type": "EXPLICIT",
+      "source": "The model fits revealed very little indication of group differences in parameters specific to the RL system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from model parameter comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "fc399c14-4c89-477e-87b3-4f78c54789c1",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C52",
+      "claim": "Older adults neglected negative feedback even more relative to young adults.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that older adults neglected negative feedback even more relative to young adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the negative learning rate difference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "a0751f64-346b-49a4-80f1-87f3f9ad963e",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C54",
+      "claim": "The older adult's higher decay rate could potentially account for most of the difference in learning behavior between the age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstration (see Appendix 1\u2014figure 5) suggests that the older adult's higher decay rate could potentially account for most of the difference in learning behavior between the age groups.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulation analysis where decay rates were swapped.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "5f9d292f-91bf-4a25-947d-2ba07e41c373",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C60",
+      "claim": "Lower glutamate levels were associated with higher WM decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, lower glutamate levels were associated with higher WM decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the negative regression coefficient.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "2e9e456c-4a55-4751-998b-6d488e8b254a",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C71",
+      "claim": "Age-related differences in the ability to make decisions from experience are driven by increased forgetting in working memory that is linked to underlying levels of glutamate in prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that age-related differences in the ability to make decisions from experience are driven by increased forgetting in working memory that is linked to underlying levels of glutamate in prefrontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion synthesizing multiple findings from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "e9651694-2b5a-4f88-b095-7902a9c1b1c2",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C72",
+      "claim": "Age-related impairments in decisions from experience are at the root of working memory deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "While it has long been established that working memory declines over healthy aging (Salthouse and Babcock, 1991), our work shows that these deficits are also at the root of age-related impairments in decisions from experience (Eppinger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the study's findings and prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "d1568584-a927-4284-91ff-476ec2fe93b6",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C73",
+      "claim": "This result held even when simultaneously accounting for RL contributions to behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this result held even when simultaneously accounting for RL contributions to behavior, which have also been theorized to be impacted by cognitive aging (Frank and Kong, 2008; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This emphasizes the robustness of the finding by noting what was controlled for.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "a0726a91-7df9-4770-835d-a937de71c30c",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C74",
+      "claim": "It is important to consider the interactions between neurocognitive systems rather than studying them in isolation as this could lead to an incorrect attribution of observed behavioral patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by examples of previous work (Collins et al., 2014; Leong et al., 2017; Radulescu et al., 2019), it is important to consider the interactions between neurocognitive systems rather than studying them in isolation as this could lead to an incorrect attribution of observed behavioral patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological point supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "ffa8c96c-ea30-4dc2-8cd6-5d16fceddb01",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C75",
+      "claim": "Older adults had more rapid decay of task relevant working memories, but did not substantially reduce their deployment for selecting actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that older adults had more rapid decay of task relevant working memories, but did not substantially reduce their deployment for selecting actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of modeling findings about WM decay and reliance parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "143b0d8a-115c-47ec-8cbc-4fc228a68346",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C76",
+      "claim": "Older adults did not compensate for their unreliable memory system by using working memory less, thereby increasing the impact of working memory deficits on behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results imply that older adults did not compensate for their unreliable memory system by using working memory less, thereby increasing the impact of working memory deficits on behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the finding that WM reliance did not differ substantially between groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "ed7b9441-7cf2-4fbb-817d-4356fd8cb569",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C77",
+      "claim": "Higher working memory decay in the model could reflect failures to appropriately prioritize storage of task-relevant information, including susceptibility to interference effects.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, higher working memory decay in our model could reflect failures to appropriately prioritize storage of task-relevant information, including susceptibility to interference effects such as have previously been proposed to play a major role in cognitive aging (Amer et al., 2022), but could also be explained by a gradually increasing failure to retrieve previously stored information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms underlying the decay parameter, with citation to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "7ed1dc69-7a4e-4448-a64f-5e408404364f",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C78",
+      "claim": "Higher working memory decay could also be explained by a gradually increasing failure to retrieve previously stored information.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, higher working memory decay in our model could reflect failures to appropriately prioritize storage of task-relevant information, including susceptibility to interference effects such as have previously been proposed to play a major role in cognitive aging (Amer et al., 2022), but could also be explained by a gradually increasing failure to retrieve previously stored information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms underlying the decay parameter.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "83a758b3-bb3b-4f15-9740-6ca5fd54a024",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C79",
+      "claim": "The conclusion that age-related performance deficits were attributable to WM rather than RL is in conflict with previous literature suggesting age-related impairment of RL systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Our conclusion that age-related performance deficits were attributable to WM rather than RL is in conflict with previous literature (Frank and Kong, 2008; H\u00e4mmerer et al., 2011) suggesting age-related impairment of RL systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges discrepancy with prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "ff3a0caf-8f0e-4696-b76c-b9b3fe5a85b6",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C80",
+      "claim": "Previous work on aging and RL has yielded mixed conclusions, with some results suggesting that RL is not impaired in older adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work on aging and RL, however, has yielded mixed conclusions, with some results suggesting that RL is not impaired in older adults (Grogan et al., 2019; Radulescu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of contradictory findings in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "337d9bb4-e034-4299-937e-9beef80c34bd",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C81",
+      "claim": "Inconsistent results in aging and RL literature might have occurred due to a failure to separate and account for additional processes (WM, attention, etc.) that might contribute to performance deficits in older populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Placing our study in the context of the existing literature, we believe that inconsistent results might have occurred due to a failure to separate and account for additional processes (WM, attention, etc.) that might contribute to performance deficits in older populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of why prior literature has been inconsistent.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "87a05d86-9739-416f-b10a-789e58e5d6c3",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C82",
+      "claim": "Age-related differences in working memory were associated with reductions in levels of glutamate in prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "On the biological side, our results suggest that age-related differences in working memory, but no other age-related behavioral changes, were associated with reductions in levels of glutamate in prefrontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the neural findings linking glutamate to WM decay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "0913d247-2dfe-448f-96eb-34e2809915f6",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C83",
+      "claim": "Previous work has noted structural changes in the aging brain, including reduced brain volume and specific reductions in gray matter in certain brain regions, including prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has noted structural changes in the aging brain, including reduced brain volume and specific reductions in gray matter in certain brain regions, including prefrontal cortex (West, 1996; Buckner et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of prior literature on brain aging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "bd01a297-f777-406d-8bd5-19d42c94be8f",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C84",
+      "claim": "Structural changes were not related to decision-making, and instead the best neural predictions of task performance relied primarily on neurochemical levels, in particular, glutamate.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did note some structural differences between younger and older participants, these structural changes were not related to decision-making, and instead the best neural predictions of task performance relied primarily on neurochemical levels, in particular, glutmate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the regression analyses comparing structural and neurochemical predictors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "6d0ae9f5-ba67-4e59-9b37-66b9bb66aefe",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C85",
+      "claim": "Glutamate is the primary excitatory neurotransmitter in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Glutamate is the primary excitatory neurotransmitter in the brain, and in prefrontal cortex, is thought to support local recurrent signaling that supports the active maintenance of information in cortical neural networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established neuroscience knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "a9bfda47-8d69-45ba-bc66-17947eff86ec",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C86",
+      "claim": "In prefrontal cortex, glutamate is thought to support local recurrent signaling that supports the active maintenance of information in cortical neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Glutamate is the primary excitatory neurotransmitter in the brain, and in prefrontal cortex, is thought to support local recurrent signaling that supports the active maintenance of information in cortical neural networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established neuroscience knowledge about glutamate's role in working memory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "60f5bc8c-5940-44ff-85fe-033f454ac187",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C87",
+      "claim": "Noninvasive MRS measures may provide a readout of changes in the local synaptic architecture (e.g. decreased density of excitatory synapses) that play a causal role in the cognitive aging process.",
+      "claim_type": "EXPLICIT",
+      "source": "An enticing interpretation of these results is that our noninvasive MRS measures, which provide regional quantification of glutamate, may provide a readout of changes in the local synaptic architecture (e.g. decreased density of excitatory synapses) that play a causal role in the cognitive aging process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about what MRS glutamate measures might reflect.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "bb946e94-4a2a-4d3a-9222-6f50b35a02bc",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C88",
+      "claim": "The bulk of the relationship between glutamate and working memory decay was driven by the group differences in levels of glutamate and working memory decay, with only a trend-level correlation between the factors existing in the older adult group.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the bulk of this relationship was driven by the group differences in levels of glutamate and working memory decay, with only a trend-level correlation between the factors existing in the older adult group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the pattern of correlations in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "71a02eb1-8bbf-4e59-ba5a-bb1880d8394e",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C89",
+      "claim": "Formal mediation modeling was unable to confirm that glutamate mediates the observed relationships between age and working memory decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, formal mediation modeling was unable to confirm that glutamate mediates the observed relationships between age and working memory decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "32d0eedf-6d02-4622-ae38-9481095a9dad",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C90",
+      "claim": "The study was not particularly well powered to see within group relationships between biological variables and behavior (24 older participants with both brain and behavioral measurements).",
+      "claim_type": "EXPLICIT",
+      "source": "There are several potential explanations for the remaining causal ambiguity, one being that our study was not particularly well powered to see within group relationships between biological variables and behavior (24 older participants with both brain and behavioral measurements), making the observed correlation in older adults (r = \u22120.39) difficult to interpret one way or the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a study limitation regarding sample size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "a0e84ea1-a935-42f4-b886-23dda936f841",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C91",
+      "claim": "Mediation analysis typically requires very large samples to ensure reasonable power levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Mediation analysis typically requires very large samples to ensure reasonable power levels (Fritz and Mackinnon, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological point supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "25ec4b67-41fc-4f05-a9d7-d622210c2c36",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C92",
+      "claim": "A major limitation of MRS is that we are unable to verify that the age-related differences in glutamate that we measure are localized to synapses, or even to neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A major limitation of MRS is that we are unable to verify that the age-related differences in glutamate that we measure are localized to synapses, or even to neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a methodological limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "8fa3e17e-016b-4b6a-9eb1-15273ad9f3ad",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C93",
+      "claim": "The study did not measure levels of dopamine, which is a critical biological marker of learning by reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not measure levels of dopamine (DA), which is a critical biological marker of learning by reinforcement (Schultz et al., 1997), and could further inform our understanding of the age-related changes in neurochemistry, and its effect on cognition (B\u00e4ckman et al., 2006; Li et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of what was not measured, with citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "02b0a7e2-cbea-46e6-b7c6-d62baab069c0",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C94",
+      "claim": "Dopamine might modulate WM in addition to RL.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, dopamine also might modulate WM in addition to RL (O'Reilly and Frank, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about dopamine's potential role, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "43137983-2ead-44f0-88f2-4ff6ecdbb022",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C95",
+      "claim": "The study used a cross-sectional design comparing young and older adults, without directly observing age-related changes within subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "A third limitation of this study is the cross-sectional design. Specifically, we compared a group of young and older adults, without directly observing age-related changes within subjects (i.e. a longitudinal design).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the study design as a limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "72f710c0-fdbe-4e94-8fe5-b94c194a14cf",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C96",
+      "claim": "The observed age group differences in performance could have been, in part, attributed to cohort effects.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the observed age group differences in performance could have been, in part, attributed to cohort effects (e.g. young adults being more comfortable with technology and computer games compared to old adults).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about alternative explanations for the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "ad121dfd-eaab-410b-9fc3-5e6ea0ba5c22",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C97",
+      "claim": "Task performance decreased with age within the older adult group rather than simply across the two groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, task performance decreased with age within the older adult group rather than simply across the two groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding that argues against cohort effects as the sole explanation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "b60cbc3b-22b8-4bdd-91cd-9c38a65c2d9c",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C98",
+      "claim": "The RL-WM model predictions deviated from older participants' data in set size 6 learning.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our model validation revealed that the RL-WM model predictions deviated from older participants' data in set size 6 learning (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from posterior predictive checks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "631010fe-3d25-48e6-98ab-bb8182bc53c7",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C99",
+      "claim": "In some set size 6 blocks some older participants learned a correct response for only a subset of stimuli, while entirely neglecting to learn correct responses for the remaining stimuli in the set.",
+      "claim_type": "EXPLICIT",
+      "source": "Further inspection revealed that this occurred because in some set size 6 blocks some older participants learned a correct response for only a subset of stimuli, while entirely neglecting to learn correct responses for the remaining stimuli in the set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from detailed inspection of individual participant data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "6eb9097a-11db-4605-87f3-1af34748cbfd",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C100",
+      "claim": "Older adults might have used selective learning as a strategy to minimize the difficulty of the high set size condition.",
+      "claim_type": "EXPLICIT",
+      "source": "One interpretation is that older adults might have used this as a strategy to minimize the difficulty of the high set size condition (ignoring some stimuli to effectively make it a smaller set size), leading participants to deviate from our model, which learned from all stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why some older adults showed selective learning.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "966ceb24-f6c7-4e65-bbf0-260ea24f8126",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C101",
+      "claim": "In the future, it would be valuable to examine these changes in clinical populations (e.g. individuals with mild cognitive impairment or individuals with Alzheimer's disease/dementia).",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, it would also be valuable to examine these changes in clinical populations (e.g. individuals with mild cognitive impairment or individuals with Alzheimer's disease/dementia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "100f440e-2683-42f0-8bc2-f340f008971f",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C102",
+      "claim": "Recognizing the signs of specific impairments at different stage of dementia development could inform cognitive-training programs that have been used to mitigate/delay cognitive symptoms in these neurodegenerative disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recognizing the signs of specific impairments at different stage of dementia development could inform cognitive-training programs that have been used to mitigate/delay cognitive symptoms in these neurodegenerative disorders (Clare et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications, with citation to relevant intervention literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "5f2c375c-cd9f-4138-91a9-dcf5f146ebcd",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C103",
+      "claim": "Based on the absence of age-related correlation with performance in young adults and negative correlation with age within the old group, it seems that the relationship between age and cognitive functions might not be linear and instead begin to decline more rapidly at older ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the absence of age-related correlation with performance in young adults and negative correlation with age within the old group, it seems that the relationship between age and cognitive functions might not be linear and instead begin to decline more rapidly at older ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the pattern of correlations observed in the data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "5511a316-2b86-4b4d-9cc5-0d781aa3bd0b",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "claim_id": "C104",
+      "claim": "A major component of age-related differences in decision-making could result from old adults experiencing reductions in prefrontal excitatory signaling that impair working memory systems necessary to translate recent information into appropriate action.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that a major component of age-related differences in decision-making could result from old adults experiencing reductions in prefrontal excitatory signaling that impair working memory systems necessary to translate recent information into appropriate action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, synthesizing behavioral, computational, and neural findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "366a1e87-9fe5-4fe1-9782-fd216ebbe88a",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Older adults (N=42, mean age 68) performed significantly worse than younger adults (N=36, mean age 21) on the RL-WM task across both learning and test phases, with performance declining with age even within the older adult group. Both groups were cognitively healthy based on RBANS scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The behavioral findings are well-supported by multiple converging analyses (learning curves, GLM, test phase performance) with appropriate statistical tests and adequate sample sizes. The within-group age correlation (C97) strengthens the case against cohort effects as the sole explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "ac2b0d38-03dd-43aa-90d3-aabebad08429",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Computational modeling revealed that age-related performance deficits are best explained by increased working memory decay (approximately twice as fast in older adults) rather than impairments in reinforcement learning parameters. Older adults did not compensate by reducing WM reliance, amplifying the impact of WM deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The hierarchical Bayesian RL-WM model was rigorously validated through model comparison (C40), parameter recovery, and simulation analyses (C54). The finding that WM decay differs substantially while RL parameters show minimal group differences (C49) is supported by credible intervals and posterior predictive checks, providing strong computational evidence for the WM deficit hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "cdee63d3-9f9d-464c-8044-4691d7cf297d",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Older adults had significantly lower levels of glutamate in prefrontal cortex compared to younger adults, and glutamate (not structural measures) was the primary neural predictor of task performance in a regularized regression model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "MRS measurements directly quantified glutamate levels across age groups, and the data-driven model selection approach (cross-validated elastic net regression) appropriately identified glutamate as the key predictor while controlling for structural and other metabolic factors. The finding is supported by appropriate MRS methodology and statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "14351c33-7822-409d-b15e-102a1f255c58",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Lower prefrontal glutamate levels were correlated with higher working memory decay across individuals (r=-0.52, p<0.001), with this relationship remaining significant after controlling for anatomical and metabolic confounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the overall correlation is statistically significant, C88 reveals this relationship is driven primarily by between-group differences, with only a trend-level correlation within the older adult group (r=-0.39, p=0.08). The small sample size for MRS data (N=24 older adults with both measures, C90) limits power to detect within-group effects, making the specificity of the glutamate-WM decay relationship ambiguous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "8eb80cb6-b055-43a7-8943-20cf14c22ffa",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Formal mediation analysis could not confirm that glutamate mediates the relationship between age and working memory decay, likely due to insufficient statistical power (only 24 older adults with both brain and behavioral measurements).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge this negative finding and provide reasonable explanations (small sample size, methodological limitations of mediation analysis with noisy proxy measures). This honest reporting of a failed mediation analysis strengthens the overall credibility of the work, though it limits causal interpretation of the glutamate-WM relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "45dbfe58-9236-417f-8a51-d090cf4658c3",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors conclude that lower prefrontal glutamate may contribute to working memory failures and impaired decision-making in older adults, though they appropriately use cautious language ('may contribute', 'could result').",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This integrative conclusion is appropriately hedged given the correlational nature of the data and failed mediation analysis. While the pattern of findings is consistent with this interpretation, the cross-sectional design (C95), limited sample size for brain-behavior correlations (C90), and inability to establish mediation (C89) prevent stronger causal claims. The conclusion represents a reasonable inference but requires longitudinal or interventional studies for confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "622bda0b-8038-4529-9d26-b86da89cd10b",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Both age groups showed behavioral signatures of RL and WM processes, but working memory deficits specifically underlie age-related impairments in decisions from experience, even when accounting for RL contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The GLM analysis (C33) and computational modeling approach successfully dissociated RL and WM contributions, addressing a key methodological concern in the aging literature (C74). The finding that WM deficits explain performance while controlling for RL (C73) is well-supported by the model comparison and parameter estimation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "c8b179dd-c3ff-4b8b-bc08-5ba2c9c921fb",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The finding that RL systems are relatively intact in older adults contradicts some prior literature but is consistent with other studies, with discrepancies potentially arising from failure to separate WM and RL contributions in previous work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately contextualize their findings within mixed prior literature (C80) and offer a reasonable methodological explanation for inconsistencies (C81). The negative learning rate difference (C52) is a secondary finding that conflicts with some prior work, but the authors acknowledge this discrepancy (C79) and the overall pattern supports intact RL with impaired WM.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "bf53541b-a215-4f69-8ad2-b7d3330ab7cb",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study has important methodological limitations: MRS cannot verify cellular localization of glutamate, and dopamine (relevant to both RL and WM) was not measured.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are appropriately acknowledged limitations that constrain interpretation. The inability to localize glutamate to synapses (C92) limits mechanistic conclusions, and the absence of dopamine measurements (C93) leaves open alternative explanations for the observed effects, particularly given dopamine's role in both RL and WM (C94).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "316c91a1-1049-4d4d-8570-7db38c20b703",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The cross-sectional design raises concerns about cohort effects, though the within-group age correlation in older adults argues against cohort effects as the sole explanation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge the cross-sectional design limitation (C95) and potential cohort effects (C96), but provide evidence against this alternative explanation through within-group correlations (C97). This balanced assessment strengthens the interpretation while acknowledging limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "a4ad16f9-9d58-48a6-9e3f-57d8775268fa",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The RL-WM model showed systematic deviations from older adults' data in set size 6 learning, where some participants appeared to use selective learning strategies (learning only a subset of stimuli) not captured by the model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Posterior predictive checks appropriately identified model misfit (C98), and detailed inspection revealed the behavioral pattern underlying this misfit (C99). The authors offer a reasonable interpretation (C100) while acknowledging this as a limitation. This honest reporting of model limitations is commendable and suggests avenues for future model development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "5dde0331-5610-4eaf-8243-5a426956e17c",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The computational WM decay parameter could reflect multiple underlying mechanisms including failures to prioritize task-relevant information, susceptibility to interference, or retrieval failures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge that their computational parameter is agnostic to specific cognitive mechanisms (C77, C78). This is an honest limitation that highlights the need for tasks designed to dissociate these mechanisms. The speculation is appropriately hedged and supported by relevant citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    },
+    {
+      "id": "07c3d398-5871-4c12-bb1f-d6b831dfb234",
+      "content_id": "2a355688-47a5-4088-828e-c8f4ad2c3521",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate that MRS glutamate measures may reflect synaptic architecture changes and that cognitive decline may accelerate nonlinearly at older ages, but acknowledge these as speculative interpretations requiring future investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These speculative claims (C87, C103) are appropriately identified as such and represent reasonable interpretations of the data patterns. The authors do not overstate these as established findings, maintaining appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:23:04.545506Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c2dbcda3-f534-4c25-bf29-84200d2a9d1a",
+      "result_id": "366a1e87-9fe5-4fe1-9782-fd216ebbe88a"
+    },
+    {
+      "claim_id": "e0665158-58f8-42da-866f-64394b8cc185",
+      "result_id": "366a1e87-9fe5-4fe1-9782-fd216ebbe88a"
+    },
+    {
+      "claim_id": "fe425631-018d-4953-a859-9b9d514f3810",
+      "result_id": "366a1e87-9fe5-4fe1-9782-fd216ebbe88a"
+    },
+    {
+      "claim_id": "e60b777c-49d2-4827-b502-c6246693e1c3",
+      "result_id": "366a1e87-9fe5-4fe1-9782-fd216ebbe88a"
+    },
+    {
+      "claim_id": "5f54253b-c222-47f0-b35c-ed4a1a49a78b",
+      "result_id": "366a1e87-9fe5-4fe1-9782-fd216ebbe88a"
+    },
+    {
+      "claim_id": "036da8d5-4505-4902-8d0a-e683488e5ffc",
+      "result_id": "366a1e87-9fe5-4fe1-9782-fd216ebbe88a"
+    },
+    {
+      "claim_id": "54ed9e4f-1300-47c3-a2a1-ff23bae1f8b5",
+      "result_id": "366a1e87-9fe5-4fe1-9782-fd216ebbe88a"
+    },
+    {
+      "claim_id": "ad121dfd-eaab-410b-9fc3-5e6ea0ba5c22",
+      "result_id": "366a1e87-9fe5-4fe1-9782-fd216ebbe88a"
+    },
+    {
+      "claim_id": "46ef5889-f6b0-486d-81f0-32cb84a3a9f6",
+      "result_id": "ac2b0d38-03dd-43aa-90d3-aabebad08429"
+    },
+    {
+      "claim_id": "522b054a-b897-41cf-8cea-75abdfb43f4a",
+      "result_id": "ac2b0d38-03dd-43aa-90d3-aabebad08429"
+    },
+    {
+      "claim_id": "66d0b3e1-a223-4f0c-8f11-c8c58deb959f",
+      "result_id": "ac2b0d38-03dd-43aa-90d3-aabebad08429"
+    },
+    {
+      "claim_id": "4d7120e5-df50-443d-8e5a-7dcdbb57092d",
+      "result_id": "ac2b0d38-03dd-43aa-90d3-aabebad08429"
+    },
+    {
+      "claim_id": "a0751f64-346b-49a4-80f1-87f3f9ad963e",
+      "result_id": "ac2b0d38-03dd-43aa-90d3-aabebad08429"
+    },
+    {
+      "claim_id": "ffa8c96c-ea30-4dc2-8cd6-5d16fceddb01",
+      "result_id": "ac2b0d38-03dd-43aa-90d3-aabebad08429"
+    },
+    {
+      "claim_id": "143b0d8a-115c-47ec-8cbc-4fc228a68346",
+      "result_id": "ac2b0d38-03dd-43aa-90d3-aabebad08429"
+    },
+    {
+      "claim_id": "0a208de1-5d27-48db-9969-79af3b65c22b",
+      "result_id": "cdee63d3-9f9d-464c-8044-4691d7cf297d"
+    },
+    {
+      "claim_id": "87a05d86-9739-416f-b10a-789e58e5d6c3",
+      "result_id": "cdee63d3-9f9d-464c-8044-4691d7cf297d"
+    },
+    {
+      "claim_id": "bd01a297-f777-406d-8bd5-19d42c94be8f",
+      "result_id": "cdee63d3-9f9d-464c-8044-4691d7cf297d"
+    },
+    {
+      "claim_id": "c4fbfabf-4f92-45fd-9f33-238112639e4e",
+      "result_id": "14351c33-7822-409d-b15e-102a1f255c58"
+    },
+    {
+      "claim_id": "9f30a384-6c63-4ed9-bb23-9cab9e3f7e26",
+      "result_id": "14351c33-7822-409d-b15e-102a1f255c58"
+    },
+    {
+      "claim_id": "5f9d292f-91bf-4a25-947d-2ba07e41c373",
+      "result_id": "14351c33-7822-409d-b15e-102a1f255c58"
+    },
+    {
+      "claim_id": "bb946e94-4a2a-4d3a-9222-6f50b35a02bc",
+      "result_id": "8eb80cb6-b055-43a7-8943-20cf14c22ffa"
+    },
+    {
+      "claim_id": "71a02eb1-8bbf-4e59-ba5a-bb1880d8394e",
+      "result_id": "8eb80cb6-b055-43a7-8943-20cf14c22ffa"
+    },
+    {
+      "claim_id": "32d0eedf-6d02-4622-ae38-9481095a9dad",
+      "result_id": "8eb80cb6-b055-43a7-8943-20cf14c22ffa"
+    },
+    {
+      "claim_id": "a0e84ea1-a935-42f4-b886-23dda936f841",
+      "result_id": "8eb80cb6-b055-43a7-8943-20cf14c22ffa"
+    },
+    {
+      "claim_id": "490a7fcd-0a75-4cf0-9597-dadbb483186d",
+      "result_id": "45dbfe58-9236-417f-8a51-d090cf4658c3"
+    },
+    {
+      "claim_id": "2e9e456c-4a55-4751-998b-6d488e8b254a",
+      "result_id": "45dbfe58-9236-417f-8a51-d090cf4658c3"
+    },
+    {
+      "claim_id": "5511a316-2b86-4b4d-9cc5-0d781aa3bd0b",
+      "result_id": "45dbfe58-9236-417f-8a51-d090cf4658c3"
+    },
+    {
+      "claim_id": "275176d5-ef9d-493d-ba82-b2f7329b06bc",
+      "result_id": "622bda0b-8038-4529-9d26-b86da89cd10b"
+    },
+    {
+      "claim_id": "e9651694-2b5a-4f88-b095-7902a9c1b1c2",
+      "result_id": "622bda0b-8038-4529-9d26-b86da89cd10b"
+    },
+    {
+      "claim_id": "d1568584-a927-4284-91ff-476ec2fe93b6",
+      "result_id": "622bda0b-8038-4529-9d26-b86da89cd10b"
+    },
+    {
+      "claim_id": "a0726a91-7df9-4770-835d-a937de71c30c",
+      "result_id": "622bda0b-8038-4529-9d26-b86da89cd10b"
+    },
+    {
+      "claim_id": "fc399c14-4c89-477e-87b3-4f78c54789c1",
+      "result_id": "c8b179dd-c3ff-4b8b-bc08-5ba2c9c921fb"
+    },
+    {
+      "claim_id": "83a758b3-bb3b-4f15-9740-6ca5fd54a024",
+      "result_id": "c8b179dd-c3ff-4b8b-bc08-5ba2c9c921fb"
+    },
+    {
+      "claim_id": "ff3a0caf-8f0e-4696-b76c-b9b3fe5a85b6",
+      "result_id": "c8b179dd-c3ff-4b8b-bc08-5ba2c9c921fb"
+    },
+    {
+      "claim_id": "337d9bb4-e034-4299-937e-9beef80c34bd",
+      "result_id": "c8b179dd-c3ff-4b8b-bc08-5ba2c9c921fb"
+    },
+    {
+      "claim_id": "25ec4b67-41fc-4f05-a9d7-d622210c2c36",
+      "result_id": "bf53541b-a215-4f69-8ad2-b7d3330ab7cb"
+    },
+    {
+      "claim_id": "8fa3e17e-016b-4b6a-9eb1-15273ad9f3ad",
+      "result_id": "bf53541b-a215-4f69-8ad2-b7d3330ab7cb"
+    },
+    {
+      "claim_id": "02b0a7e2-cbea-46e6-b7c6-d62baab069c0",
+      "result_id": "bf53541b-a215-4f69-8ad2-b7d3330ab7cb"
+    },
+    {
+      "claim_id": "43137983-2ead-44f0-88f2-4ff6ecdbb022",
+      "result_id": "316c91a1-1049-4d4d-8570-7db38c20b703"
+    },
+    {
+      "claim_id": "72f710c0-fdbe-4e94-8fe5-b94c194a14cf",
+      "result_id": "316c91a1-1049-4d4d-8570-7db38c20b703"
+    },
+    {
+      "claim_id": "ad121dfd-eaab-410b-9fc3-5e6ea0ba5c22",
+      "result_id": "316c91a1-1049-4d4d-8570-7db38c20b703"
+    },
+    {
+      "claim_id": "b60cbc3b-22b8-4bdd-91cd-9c38a65c2d9c",
+      "result_id": "a4ad16f9-9d58-48a6-9e3f-57d8775268fa"
+    },
+    {
+      "claim_id": "631010fe-3d25-48e6-98ab-bb8182bc53c7",
+      "result_id": "a4ad16f9-9d58-48a6-9e3f-57d8775268fa"
+    },
+    {
+      "claim_id": "6eb9097a-11db-4605-87f3-1af34748cbfd",
+      "result_id": "a4ad16f9-9d58-48a6-9e3f-57d8775268fa"
+    },
+    {
+      "claim_id": "ed7b9441-7cf2-4fbb-817d-4356fd8cb569",
+      "result_id": "5dde0331-5610-4eaf-8243-5a426956e17c"
+    },
+    {
+      "claim_id": "7ed1dc69-7a4e-4448-a64f-5e408404364f",
+      "result_id": "5dde0331-5610-4eaf-8243-5a426956e17c"
+    },
+    {
+      "claim_id": "60f5bc8c-5940-44ff-85fe-033f454ac187",
+      "result_id": "07c3d398-5871-4c12-bb1f-d6b831dfb234"
+    },
+    {
+      "claim_id": "5f2c375c-cd9f-4138-91a9-dcf5f146ebcd",
+      "result_id": "07c3d398-5871-4c12-bb1f-d6b831dfb234"
+    }
+  ],
+  "comparisons": []
+}

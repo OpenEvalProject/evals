@@ -1,0 +1,1918 @@
+{
+  "submission": {
+    "id": "faa0618e-19a9-46ec-947d-cb12ebd2384e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:25:16.620992Z",
+    "updated_at": "2025-12-03T01:25:16.620992Z"
+  },
+  "content": [
+    {
+      "id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "submission_id": "faa0618e-19a9-46ec-947d-cb12ebd2384e",
+      "content_type": "manuscript",
+      "content_text": "# Checkpoint inhibition of origin firing prevents inappropriate replication outside of S-phase\n\n## Authors\n\n- Mark C Johnson<sup>1</sup> ([ORCID: 0000-0002-6136-7055](https://orcid.org/0000-0002-6136-7055))\n- Geylani Can<sup>1</sup> ([ORCID: 0000-0002-1716-7830](https://orcid.org/0000-0002-1716-7830))\n- Miguel Monteiro Santos<sup>1</sup> ([ORCID: 0000-0002-5594-2682](https://orcid.org/0000-0002-5594-2682))\n- Diana Alexander<sup>1</sup> ([ORCID: 0000-0002-7785-3170](https://orcid.org/0000-0002-7785-3170))\n- Philip Zegerman<sup>1</sup> ([ORCID: 0000-0002-5707-1083](https://orcid.org/0000-0002-5707-1083)) \u2020\n\n### Affiliations\n\n1. Wellcome Trust/Cancer Research United Kingdom Gurdon Institute and Department of Biochemistry, University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCheckpoints maintain the order of cell cycle events during DNA damage or incomplete replication. How the checkpoint response is tailored to different phases of the cell cycle remains poorly understood. The S-phase checkpoint for example results in the slowing of replication, which in budding yeast occurs by Rad53-dependent inhibition of the initiation factors Sld3 and Dbf4. Despite this, we show here that Rad53 phosphorylates both of these substrates throughout the cell cycle at the same sites as in S-phase, suggesting roles for this pathway beyond S-phase. Indeed, we show that Rad53-dependent inhibition of Sld3 and Dbf4 limits re-replication in G2/M, preventing gene amplification. In addition, we show that inhibition of Sld3 and Dbf4 in G1 prevents premature initiation at all origins at the G1/S transition. This study redefines the scope of the \u2018S-phase checkpoint\u2019 with implications for understanding checkpoint function in cancers that lack cell cycle controls.\n\n## Introduction\n\nIt is vitally important that in every cell division, the entire genome is replicated once and only once. In eukaryotes, this is achieved by linking DNA replication control to the cell cycle (Siddiqui et al., 2013). The first step in replication is the formation of the pre-replicative complex (pre-RC) at origins \u2013 a process called \u2018licensing\u2019. Licensing involves the origin recognition complex 1-6 (Orc1-6) and Cdc6-dependent loading of double hexamers of the Mcm2\u20137 helicase on double-stranded DNA. Licensing is restricted to late mitosis/early G1 phase by the activity of the APC/C\u00a0(anaphase-promoting\u00a0complex/cyclosome), which eliminates licensing inhibitors such as cyclin-dependent kinase (CDK) and geminin in this window of the cell cycle. In the budding yeast Saccharomyces cerevisiae, which lacks geminin, CDK inhibits licensing from late G1 phase until mitosis by multiple mechanisms, including direct phosphorylation of Orc2/Orc6\u00a0and nuclear exclusion of the Mcm2\u20137 complex, and by mediating SCFCDC4-dependent degradation of Cdc6 (Blow and Dutta, 2005; Nguyen et al., 2001).\n\nImportantly, Mcm2\u20137 double hexamers loaded in late M/early G1 phase are inactive, and replication initiation can only occur after the inactivation of the APC/C at the G1/S transition. APC/C inactivation allows the accumulation of S-phase CDK and Dbf4-dependent kinase (DDK)\u00a0activities (Labib, 2010). DDK directly phosphorylates the inactive Mcm2\u20137 double hexamers, generating a binding site for firing factors including Sld3/Sld7 and Cdc45, while CDK phosphorylates Sld3 and an additional initiation factor Sld2, which via phospho-interactions with Dpb11, results in replisome assembly by poorly understood mechanisms (Riera et al., 2017). This duality of function of CDK, both as an inhibitor of licensing and as an activator of the replisome, is critical to ensure once per cell cycle replication (Diffley, 2004).\n\nIn light of the importance of the linkage between DNA replication control and cell cycle progression, multiple checkpoints exist to regulate DNA synthesis and genome integrity before (G1 checkpoint), during (S-phase checkpoint), and after S-phase (G2/M checkpoint, Hartwell and Weinert, 1989; Kastan and Bartek, 2004). These checkpoints are mediated by the PI3 kinase superfamily checkpoint kinases ATM/ATR\u00a0(Ataxia telangiectasia mutated/ATM and RAD3-related,\u00a0called\u00a0Tel1/Mec1 in budding yeast) and the effector checkpoint kinases Chk1/Chk2 (Chk1/Rad53 in budding yeast).\n\nIn G1 phase, DNA damage such as UV photoproducts causes checkpoint-dependent delays in the onset of DNA replication by inhibition of G1/S cyclin\u2013CDK activity (Lanz et al., 2019; Shaltiel et al., 2015). In humans, the G1\u2013S transition is delayed by ATM-Chk2-mediated stabilisation of p53, resulting in expression of the CDK inhibitor p21, as well as by checkpoint-dependent degradation of cyclin D and the CDK activator Cdc25A (Lanz et al., 2019; Shaltiel et al., 2015). In budding yeast, the delay in G1\u2013S occurs in part by Rad53-dependent phosphorylation and inhibition of the Swi6 subunit of the transcriptional activator SBF (SCB binding factor) leading to reduced cyclin transcription (Sidorova and Breeden, 1997).\n\nIn S-phase, origin firing in unperturbed cells occurs as a continuum throughout S-phase, with some origins firing in the first half (early origins) or the second half of S-phase (late origins). When replication forks emanating from early firing origins stall, for example due to DNA lesions, activation of the S-phase checkpoint kinase response results in the dramatic slowing of replication rates (Painter and Young, 1980; Paulovich and Hartwell, 1995), which occurs in large part through inhibition of late firing origins (Yekezare et al., 2013).\n\nSimilar to G1 phase, checkpoint activation in S-phase in human cells can prevent origin firing through inhibition of CDK activity, for example by Chk1- and Chk2-mediated degradation of the CDK activator Cdc25A (Bartek et al., 2004). In budding yeast however, the checkpoint kinase Rad53 blocks late origin firing, not by inhibition of CDK activity, but by directly inhibiting two replication initiation factors: the DDK subunit Dbf4 and the CDK target Sld3 (Lopez-Mosqueda et al., 2010; Zegerman and Diffley, 2010). Rad53-dependent phosphorylation of Sld3 inhibits its interactions with various other replication factors including Dpb11 (Lopez-Mosqueda et al., 2010; Zegerman and Diffley, 2010), while recent work has shown that direct interaction between Rad53 and Cdc7-Dbf4 prevents DDK from binding to the Mcm2\u20137 complex (Abd Wahab and Remus, 2020). In higher eukaryotes, in addition to inhibition of CDK activity, the checkpoint can also inhibit origin firing through direct targeting of the Sld3 orthologue Treslin (Boos et al., 2011; Guo et al., 2015) and DDK (Costanzo et al., 2003; Lee et al., 2012). Therefore, multiple mechanisms exist to ensure the robust inhibition of replication initiation in S-phase by direct targeting of Sld3/Treslin and Dbf4-dependent kinase and by inhibition of CDK activity (Lanz et al., 2019). One function of such robust inhibition of origin firing during S-phase in the presence of DNA lesions is to prevent the exhaustion of essential factors, such as topoisomerase activities, by excessive numbers of replisomes (Morafraile et al., 2019; Toledo et al., 2017).\n\nA key proposed feature of the DNA damage checkpoints is that the response is tailored to the cell cycle phase in which the DNA damage occurred (Shaltiel et al., 2015). Despite this, there is very little evidence to suggest that substrate specificity of the checkpoint kinases changes during the cell cycle. Indeed, in budding yeast, most forms of DNA damage and replication stress converge on the single effector kinase Rad53, but how different checkpoint responses in different cell cycle phases can be mediated by a single kinase is not known. In this study, we set out to explore the specificity of Rad53 towards the replication substrates Sld3 and Dbf4 across the cell cycle in the budding yeast, S. cerevisiae. We show that Rad53 phosphorylates both of these substrates throughout the cell cycle at the same sites as in S-phase. From this we hypothesised that although these substrates are deemed to be targets of the \u2018S-phase checkpoint\u2019, Rad53 may also prevent aberrant origin firing outside of S-phase. Indeed, we show that Rad53-dependent inhibition of Sld3 and Dbf4 limits re-initiation of replication in G2/M phase and also prevents premature firing of all origins, not just late origins, at the G1/S transition. This study overhauls our understanding of the cell cycle phase specificity of the \u2018S-phase checkpoint\u2019 and provides a novel mechanism that restricts replication initiation to a specific window of the cell cycle after DNA damage.\n\n## Results and discussion\n\n### Sld3 and Dbf4 are phosphorylated by Rad53 outside of S-phase\n\nSince the DNA damage checkpoint response can be activated in all phases of the cell cycle, we addressed whether the replication factors Sld3 and Dbf4 could be targeted by Rad53 outside of S-phase in vivo in budding yeast. To test this, we first analysed the consequences of DNA damage in G1 phase cells arrested with the mating pheromone alpha factor (Figure 1A). These experiments were conducted with strains containing a null mutation in the alpha factor protease, bar1\u2206, to ensure that cells were fully arrested in G1 phase and had not started DNA replication. Addition of the UV mimetic drug 4-NQO to G1 phase cells resulted in robust Rad53 activation, as determined by the accumulation of the phospho-shifted forms of the kinase (Figure 1B,C). Importantly, we observed a dramatic increase in lower mobility forms of Sld3 when Rad53 was activated in G1 phase (Figure 1B), which was indeed Rad53\u00a0dependent (Figure 1\u2014figure supplement 1B). In line with a previous study (Mattarocci et al., 2014), in G1-arrested cells in the absence of 4-NQO (Figure 1B) or in rad53\u2206 cells (Figure 1\u2014figure supplement 1B), Sld3 can be seen to migrate as a doublet on phos-tag gels. This was shown to be caused by DDK phosphorylation of Sld3 (Mattarocci et al., 2014), but does not affect the DNA damage and Rad53-dependent phosphorylation of Sld3 described here (Figure 1B). For Dbf4, which is an APC/C substrate and partially degraded in alpha factor-arrested cells (Ferreira et al., 2000), we also observed a mobility shift in G1 phase coincident with Rad53 activation (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63589/elife-63589-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Flow cytometry of strains arrested in G1 phase with the mating pheromone alpha factor. Strains were held in G1 phase, with or without the addition of 10 \u03bcg/ml 4-NQO for the indicated times. All strains are bar1\u2206 to maintain G1 arrest. (B)\u00a0Western blot of Sld3 (anti-myc) and Rad53 phosphorylation from the experiment outlined in (A). Sld3 was resolved on a phos-tag sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) gel. (C)\u00a0As (B), but for Dbf4. Both blots are from SDS\u2013PAGE. (D)\u00a0As (A), except strains were arrested in G2/M with nocodazole before the addition of 4-NQO. All strains are sml1\u2206, which is required for viability in cells lacking Rad53. (E)\u00a0Western blot of Sld3 (anti-myc) and Rad53 phosphorylation as in (B) from the experiment outlined in (D). Sld3 was resolved on a phos-tag SDS\u2013PAGE gel. *Cyclin-dependent kinase (CDK)-phosphorylated Sld3 (see Figure 1\u2014figure supplement 1C). (F)\u00a0As (E), but for Dbf4. Dbf4 is phosphorylated by other kinases in G2/M, resulting in residual phosphorylated forms remaining in rad53\u2206 cells *.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63589/elife-63589-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Flow cytometry of strains arrested in G1 phase with the mating pheromone alpha factor. Strains were held in G1 phase, with the addition of 10 \u03bcg/ml 4-NQO for the indicated times. All strains are bar1\u2206 to maintain G1 arrest and also sml1\u2206. (B)\u00a0Western blot of Sld3 and Rad53 phosphorylation from the experiment outlined in (A). Sld3 was resolved on a phos-tag sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis gel. (C)\u00a0Western blot of Sld3 from cells arrested in G2/M with nocodazole. These strains contain the cdc28-as1 allele that is inhibited by the addition of the ATP analogue 1-NM-PP1. As Cdc28 is the only catalytic CDK subunit in yeast, the addition of 1-NM-PP1 inhibits CDK activity, revealing that the lower mobility Sld3 band is CDK\u00a0dependent. The first lane contains untagged Sld3, showing that all bands in this blot correspond to Sld3-13myc.\n\nTo test whether Sld3 and Dbf4 could also be phosphorylated by Rad53 after DNA replication is complete, we performed the same experiment as in Figure 1A\u2013C, except in cells arrested in G2/M phase with nocodazole (Figure 1D). Significantly, we observed a Rad53-dependent mobility shift in Sld3 and Dbf4, even in G2/M-arrested cells (Figure 1E,F). Sld3 and Dbf4 are phosphorylated by other kinases in G2/M, such as by CDK (Holt et al., 2009), giving rise to additional isoforms of Sld3/Dbf4 proteins even in Rad53 null cells (* Figure 1E,F). Note that the CDK-phosphorylated form of Sld3 is visible in Figure 1E as this is a phos-tag gel, and we confirmed that both of the bands in rad53\u2206 cells in Figure 1E are Sld3\u00a0dependent and the upper form is indeed CDK\u00a0dependent (Figure 1\u2014figure supplement 1C).\n\nPreviously, we have identified the serine and threonine residues in Sld3 and Dbf4 that are directly phosphorylated by Rad53 in S-phase (Zegerman and Diffley, 2010). We mapped 38 such phospho-sites in Sld3 and 19 sites in Dbf4. Mutation of these serine/threonine residues to alanine in Sld3- and Dbf4-generated alleles that are refractory to Rad53 phosphorylation in S-phase (Zegerman and Diffley, 2010) and are hereafter referred to as sld3-A and dbf4-19A,\u00a0respectively. We reasoned that if the same sites in Sld3 and Dbf4 are phosphorylated by Rad53 throughout the cell cycle, then sld3-A and dbf4-19A should be defective in Rad53-dependent phosphorylation in G1 and G2/M as well. In G1 phase, the Sld3-A protein demonstrated a dramatic loss of Rad53 phosphorylation (Figure 2A), consistent with direct phosphorylation of Sld3 by Rad53 at the same sites as in S-phase. We also observed a similar result with the Dbf4-19A protein in G1 phase after Rad53 activation (Figure 2B). As in G1 phase, both Sld3-A and Dbf4-19A showed greatly reduced phosphorylation during Rad53 activation in G2/M phase (Figure 2C,D). Together, Figures 1 and 2 show that although Sld3 and Dbf4 are considered to be \u2018S-phase checkpoint\u2019 substrates of Rad53, they are phosphorylated at the same sites as in S-phase after DNA damage in G1 and G2 phase.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63589/elife-63589-fig2-v2.jpg)\n\n**Figure 2.:** sld3-A and dbf4-19A refer to mutant alleles with Rad53 phosphorylation sites mutated to alanine (38 sites for Sld3 and 19 sites for Dbf4). (C)\u00a0As Figure 1E, except this is western blot from an SDS\u2013PAGE gel. (D)\u00a0As Figure 1F.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63589/elife-63589-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Western blot of strains arrested in G1 phase with the mating pheromone alpha factor. Strains were held in G1 phase, with the addition of 10 \u03bcg/ml 4-NQO for the indicated times. All strains are bar1\u2206 to maintain G1 arrest. As is from an asynchronous culture. The dbf4-4A mutant contains four serine/threonine to alanine mutations in the phospho-sites that are critical for Rad53-dependent inhibition of Dbf4. dbf4-4A is referred to as dbf4-A in the rest of this manuscript.\n\nThe dbf4-19A mutant, although refractory to Rad53 phosphorylation, is also a hypomorph and is not fully functional for replication initiation (Zegerman and Diffley, 2010). We previously narrowed down the critical residues that are inhibited by Rad53 to four sites and generated a dbf4-4A allele, which still cannot be inhibited by Rad53, but is fully functional for its role in replication initiation (Zegerman and Diffley, 2010). In similarity to the 19A allele, Dbf4-4A was less Rad53-phosphorylated than wild type in G1 cells after DNA damage (Figure 2\u2014figure supplement 1), suggesting that it is indeed the critical residues in Dbf4 that are phosphorylated by Rad53 outside of S-phase. As this 4A allele is fully functional for Dbf4\u2019s role in replication initiation, from here on we only use this allele and refer to it as dbf4-A.\n\n### Rad53-dependent phosphorylation of Sld3 and Dbf4 reduces re-replication in G2 phase\n\nWe have previously shown that Rad53 phosphorylates Sld3 and Dbf4 in S-phase to inhibit origin firing (Lopez-Mosqueda et al., 2010; Zegerman and Diffley, 2010). As Sld3 and Dbf4 are phosphorylated at the same sites by Rad53 after DNA damage in both G1 and G2 phase (Figures 1 and 2), we wondered whether this phosphorylation could also be required to inhibit replication initiation outside of S-phase. DNA replication is tightly restricted to S-phase in large part by the action of CDK, which prevents licensing outside of late M/early G1 phase. As a result, transient reduction of CDK\u00a0activity in G2/M phase is sufficient to induce re-replication (Dahmann et al., 1995). To test a role for Rad53 phosphorylation of Sld3/Dbf4 in re-replication control, we first combined the sld3-A/dbf4-A alleles, which cannot be inhibited by Rad53 (Zegerman and Diffley, 2010), with a hypomorphic mutant of the CDK catalytic subunit Cdc28 (cdc28-as1). This allele of Cdc28 is analogue sensitive and is inhibited by the addition of the ATP-competitive inhibitor 1-NM-PP1. Interestingly, we observed that the sld3-A/dbf4-A alleles are synthetically sick with cdc28-as1 in the presence of sub-lethal doses of 1-NM-PP1 (Figure 3\u2014figure supplement 1A), suggesting that inhibition of Sld3 and Dbf4 by Rad53 is important in cells that have reduced CDK activity.\n\nTo specifically test whether the Rad53-dependent inhibition of origin firing is important to prevent re-replication, we combined the sld3-A/dbf4-A alleles with mutants that circumvent the CDK-dependent inhibition of licensing. Over-expression of Cdc6, forcing the nuclear localisation of the Mcm2-7 complex (through an Mcm7-2xNLS fusion) and mutation of the CDK phosphorylation sites in ORC is sufficient to induce re-replication in G2/M phase (Finn and Li, 2013; Nguyen et al., 2001) and has been shown to induce Rad53 activation (Archambault et al., 2005; Green and Li, 2005). Importantly, conditional over-expression of licensing mutants that cannot be inhibited by CDK combined with sld3-A and dbf4-A led to an increase in the total re-replication in nocodazole arrested cells (Figure 3A \u2013 compare flow\u00a0cytometry overlay red vs. black).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63589/elife-63589-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Flow cytometry of the indicated strains grown overnight in YPraffinose, then arrested in G2/M with nocodazole.\u00a0After addition of fresh nocodazole, 2% galactose was added for the indicated times to express the licensing mutants. Right, overlay between the 0 and 2 hr time\u00a0points for the licensing mutant strain with (red) or without (black) the sld3-A/dbf4-A alleles. (B)\u00a0Copy number analysis of Chromosome III from the experiment in (A), after 4 hr in galactose. As in (A), the strains overexpress wild type Cdc6 and the indicated pre-replicative complex mutants from the galactose inducible promoter. DNA sequencing read depth per 1 kb bin was normalised to the 0 hr time\u00a0point for each strain. Baseline was set at two as the strains are arrested in G2. The y-axis shows the DNA copy number after these steps. (C)\u00a0Schematic diagram of re-replication-induced gene amplification\u00a0(RRIGA) assay for gene amplification events. Re-replication of the split LEU2 gene from origin ARS317 results in tandem head to tail gene duplications, leading to a functional LEU2 gene. (D)\u00a0RRIGA assay in (C) was performed with the indicated strains. Strains were grown overnight in YPraffinose then arrested in G2/M with nocodazole (pre-induction, blue time\u00a0point). After addition of fresh nocodazole, 2% galactose was added for 3 hr to express the licensing mutants (red time\u00a0point). Cells were plated on YPD (viable cell count) and SC-leu plates (Leu+ count) and the % of Leu+ colonies out of the viable cell population was plotted. N\u00a0=\u00a03, error bars are SD. *The\u00a0p value was calculated as 0.0481 using an unpaired t-test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63589/elife-63589-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Growth assay of the indicated strains. (B)\u00a0Analysis of mitochondrial DNA content by sequencing.\u00a0(C)\u00a0Comparison of DNA copy number at all origins between the strain over-expressing the pre-replicative complex mutants (x-axis) vs the same strain also containing the sld3-A/dbf4-A alleles (y-axis). Each dot represents a different origin of replication, and the origins of Chromosome III are red. The green line is the line of equal copy number between the two strains and therefore dots above the line are more re-replicated in the presence of the sld3-A/dbf4-A alleles. Note that the Chr III origins are the most efficiently re-replicated in both strains, with almost all of them showing more replication due to the sld3-A/dbf4-A alleles. (D)\u00a0Schematic diagram of the RRIGA assay. Endogenous LEU2 was replaced with a split LEU2 marker, separated by the re-replication origin ARS317. The two non-functional halves contain 417 bp of identity*. Re-initiation at ARS317 followed by fork-breakage and strand annealing at the regions of LEU2 homology results in gene amplification and the generation of a functional LEU2 gene. (E)\u00a0Verification of RRIGA by PCR using the amplicons as depicted in (A). The parental strain (which is Leu\u2013) was induced to re-replicate in the presence of galactose and cells were plated on SC-leu plates. Ten\u00a0independent Leu+ colonies were assayed for the presence of the duplication and all were positive.\n\nTo analyse whether this shift in DNA content by flow cytometry was indeed due to genomic re-replication, we performed DNA sequencing and copy number analysis of the experiment in Figure 3A. While we did not detect any differences between the mitochondrial DNA content of the strains (Figure 3\u2014figure supplement 1B), we observed a dramatic increase in DNA copy number largely for Chromosome III in strains that over-express Cdc6 and pre-RC mutants that cannot be inhibited by CDK (Figure 3B, Figure 3\u2014figure supplement 1C). Previous studies have indeed shown that chromosome III is particularly susceptible to re-replication (Green et al., 2006). While we did not detect any re-replication in the sld3-A/dbf4-A strain alone (data not shown), we observed greater re-replication of chromosome III when the pre-RC mutants were combined with sld3-A and dbf4-A, which cannot be inhibited by Rad53 (Figure 3B). Together with Figure 3A, this suggests that Rad53-dependent inhibition of replication initiation can reduce inappropriate replication in G2 phase when licensing control is compromised.\n\nOne of the consequences of re-replication is the generation of head-to-tail tandem gene amplifications, a process termed re-replication-induced gene amplification\u00a0(RRIGA) (Green et al., 2010). To examine whether the Rad53-dependent inhibition of origin firing helps to prevent RRIGA we adapted an assay to quantitatively assess gene amplification events in G2/M arrested cells (Finn and Li, 2013). Briefly, a marker gene (in this case LEU2, which allows growth on media lacking leucine) was split with some remaining homology across an origin that re-initiates when licensing control is lost (ARS317 \u2013 see for example Figure 3B). Re-initiation at ARS317 followed by fork-breakage and strand annealing at the regions of LEU2 homology results in gene amplification and the generation of a functional LEU2 gene (Figure 3C,\u00a0Figure 3\u2014figure supplement 1D,E). In this assay, as in Figure 3A, the re-replication mutants were induced only in G2/M-arrested cells. In contrast to wild-type yeast or the sld3-A/dbf4-A strain alone, expression of the licensing mutants by the addition of galactose resulted in a large increase in RRIGA events, as expected (Figure 3D). Importantly, RRIGA events were even greater when the mutants that allow licensing in the presence of CDK were combined with the sld3-A/dbf4-A alleles (Figure 3D). This assay demonstrates that the checkpoint kinase Rad53 indeed reduces gene amplification events after re-replication through inhibition of Sld3 and Dbf4, even in G2/M-arrested cells.\n\n### Rad53 prevents precocious origin firing after DNA damage in G1 phase\n\nDNA damage in G1 phase delays the G1/S transition, which from humans to yeast, involves the checkpoint kinase-dependent down-regulation and/or inhibition of G1/S cyclin-CDK activity (Bertoli et al., 2013; Lanz et al., 2019; Shaltiel et al., 2015; Sidorova and Breeden, 1997). Here we have shown that DNA damage in G1 phase also results in the inhibitory checkpoint phosphorylation of two replication initiation factors, Sld3 and Dbf4 (Figures 1 and 2), suggesting that this might be an additional mechanism to prevent premature DNA replication at the G1/S transition (Figure 4A). To specifically analyse the consequences of DNA damage in G1 phase, we added 4-NQO to G1-arrested yeast cells and then released cells into S-phase in fresh medium without 4-NQO. Crucially, this approach resulted in robust Rad53 activation in G1 phase, such that cells enter S-phase with an already active checkpoint (Figure 4D, Figure 4\u2014figure supplement 1). Rad53 activation in G1 phase resulted in the slowing of the G1/S transition as detected by the delay in budding (a G1 cyclin/CDK-mediated event) and the delay in DNA synthesis (Figure 4\u2014figure supplement 1). Despite this, the sld3-A dbf4-A alleles caused little difference in S-phase progression after DNA damage in G1 phase, compared to the wild-type strain (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63589/elife-63589-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Activation of Rad53 in G1 phase can delay genome duplication by at least two mechanisms; by inhibition of the transcriptional activator Swi6, which is required for G1- and subsequently S-phase cyclin transcription and by inhibition of the origin firing factors Sld3 and Dbf4. (B)\u00a0Flow cytometry of the indicated strains grown overnight in YPraffinose, then arrested in G1 phase with alpha factor. Cells were held in fresh alpha factor, while 2% galactose and 0.5 \u03bcg/ml 4-NQO was added for 30 min (0 time\u00a0point) before washing and release from alpha factor arrest into fresh YPgal medium without 4-NQO. Swi4-t is a C-terminally truncated protein that cannot be inhibited by Rad53. (C)\u00a0Budding index from the experiment in (B). Time\u00a0point 0 refers to cells held in alpha factor + galactose + 0.5 \u03bcg/ml 4-NQO for 30\u00a0min. (D)\u00a0Rad53 western blot from experiment in (B). (E)\u00a0Copy number analysis of chromosome VII of the indicated strains 20 min after release as in (B\u2013D). The y-axis ratio refers to the amount of DNA at the 20 min time\u00a0point divided by the DNA copy number in G1 phase. Known origins are annotated above the replication profile and coloured according to their normal median replication time (Trep). (F)\u00a0Box plots of the amount of replication at all origins, split into equal quintiles depending on their normal median firing time (Trep). Initiation occurs first at early origins in the swi4-t sld3-A dbf4-A strain, for example the yellow and green quintiles are significantly different at 20\u00a0min (*p\u00a0value 0.044), but non-significantly different (ns) at 40\u00a0min. Arrows indicate that later firing origins also initiate by 40\u00a0min in the swi4-t sld3-A dbf4-A strain. P-values are from t-tests.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63589/elife-63589-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Flow cytometry of the indicated strains, which were grown overnight in YPraffinose and arrested in G1 phase with alpha factor (G1 time point).\u00a0Strains were then held in G1 phase for an extra 30 min by the addition of fresh alpha factor plus galactose, with or without 0.5 \u03bcg/ml 4-NQO. Cells were washed into fresh YPgalactose medium to release into S-phase. Note that YPraffinose and galactose medium was used in this experiment to match the exact conditions that were used in the main Figure 4B with the PGAL-swi4-t strains, allowing a direct comparison, as in (D). (B)\u00a0Budding index (a G1 cyclin/CDK-mediated event) from experiment in (A). (C)\u00a0Rad53 western blot from the 4-NQO-treated samples in (A). (D)\u00a0Overlay of budding profiles (from Figure 4C and this Figure B) between strains expressing or not expressing Swi4-t. Swi4-t, which cannot be inhibited by Rad53, causes earlier activation of G1 cyclin/CDK as shown here by budding.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63589/elife-63589-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Replication profile of chromosome VII as an example at 20, 30, and 40\u00a0min from the experiment in Figure 4B. Green * are examples of very early firing origins, which initiate at the 20 min time\u00a0point in the PGAL-swi4-t sld3-A dbf4-A strain. Purple * are examples of late firing origins which do not initiate at the 20 min time\u00a0point but are clearly firing by the 40 min time\u00a0point in the PGAL-swi4-t sld3-A dbf4-A strain. This shows that the relative timing of origin firing is not affected in the PGAL-swi4-t sld3-A dbf4-A strain.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63589/elife-63589-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Scatter plot of the fitness of the yeast genome knock out collection grown in 0.5 \u03bcg/ml phleomycin with (y-axis) or without (x-axis) the sld3-A dbf4-A alleles. Each dot corresponds to a different gene deletion. The top 25% of gene deletions (yfg, your favourite gene) that significantly enhance (green) or suppress (red) the fitness of sld3-A dbf4-A are indicated. This data was originally published in Morafraile et al., 2019.\n\nAs Rad53 is known to inhibit CDK activation through phosphorylation of the Swi6 subunit of the transcriptional activator SBF (Sidorova and Breeden, 1997), we wondered whether Rad53-dependent inhibition of both replication initiation factors and G1/S transcription might prevent precocious DNA replication after damage in G1 phase (Figure 4A). To test this, we over-expressed a truncated form of the SBF transcription factor Swi4 (Swi4-t), which lacks the C-terminus required for interaction with Swi6 and thus cannot be inhibited by Rad53 (Sidorova and Breeden, 1997). Over-expression of Swi4-t indeed resulted in faster progression through the G1/S transition in the presence of 4-NQO (Figure 4\u2014figure supplement 1D) as expected (Sidorova and Breeden, 1997). Importantly, the combination of expression of Swi4-t together with sld3-A dbf4-A resulted in much faster S-phase progression after DNA damage in G1 phase compared to Swi4-t expression alone (Figure 4B). These differences in the onset of DNA replication between swi4-t with and without sld3-A/dbf4-A were not due to differences in the G1/S transition as these strains budded at the same time (Figure 4C) and both strains also exhibited similar levels of Rad53 activation (Figure 4D). Together this suggests that Rad53 activation in G1 phase prevents precocious DNA replication initiation by inhibiting not\u00a0only\u00a0G1/S transcription, but also Sld3 and Dbf4.\n\nActivation of Rad53 during S-phase caused by fork stalling/DNA damage at early replicons results in inhibition of subsequent (late) origin firing, which in yeast is mediated by inhibition of Sld3 and Dbf4 (Lopez-Mosqueda et al., 2010; Zegerman and Diffley, 2010). We therefore wondered whether the accelerated S-phase we observe when we combine swi4-t with sld3-A dbf4-A is simply due to the canonical S-phase checkpoint inhibition of late origin firing or whether by activating Rad53 in G1 phase we are actually causing a delay in genome duplication from all origins. To assess this, we analysed the replication dynamics of the time\u00a0course in Figure 4B\u2013D by high-throughput sequencing and copy number analysis. At the earliest time\u00a0point (20\u00a0min), while the swi4-t over-expressing strain alone had barely begun to replicate (Figure 4E, chromosome VII as an example), the swi4-t sld3-A dbf4-A strain showed peaks of replication initiation at the earliest firing origins (e.g., see *, Figure 4E), even though Rad53 is highly activated (Figure 4D). By analysis of initiation at all origins, split into quintiles according to their normal firing time, we observe much greater firing of early origins in the swi4-t sld3-A dbf4-A strain compared to swi4-t alone throughout the time\u00a0course (Figure 4F,\u00a0Figure 4\u2014figure supplement 2). Over time, we also observe an increase in later firing origins in the swi4-t sld3-A dbf4-A strain (arrows Figure 4F, Figure 4\u2014figure supplement 2), suggesting that the relative timing of origin firing is not affected. Together this demonstrates that activation of Rad53 and inhibition of Sld3 and Dbf4 in G1 phase contribute to the mechanism preventing the onset of DNA replication from all origins, not just late firing origins, in the presence of DNA damage (Figure 4A).\n\nIf the checkpoint-mediated inhibition of G1/S transcription and Sld3/Dbf4 contribute to prevent precocious S-phase entry, then we hypothesised that loss of both pathways should show synthetic lethality in the presence of DNA damage. We have previously conducted genetic interaction analysis of the sld3-A/dbf4-A alleles with the yeast whole genome gene knock-out collection in the presence of the DNA damaging agent phleomycin (Morafraile et al., 2019). Loss of function of genes that result in a delay in the G1/S transition, such as CLN2, SWI4,\u00a0and BCK2 (Di Como et al., 1995), improved the growth of sld3-A/dbf4-A in the presence of phleomycin (suppressors, Figure 4\u2014figure supplement 3), whereas loss of function of genes that would result in the acceleration of G1/S, such as WHI5 and SIC1 (Bertoli et al., 2013), were synthetic sick with the sld3-A/dbf4-A alleles (enhancers, Figure 4\u2014figure supplement 3). These genetic interactions are consistent with an important role for Rad53-dependent inhibition of origin firing in preventing precocious replication after DNA damage in G1 phase.\n\nHere we show that the two critical targets of the S-phase checkpoint-mediated inhibition of origin firing, Sld3 and Dbf4, are actually regulated by Rad53 after DNA damage throughout the cell cycle (Figures 1 and 2). This has important implications for understanding the consequences of inappropriate re-replication in human cells, where the role of the checkpoint differs depending on the cell cycle phase in which re-replication occurs (Klotz-Noack et al., 2012; Liu et al., 2007). By combining tight cell cycle arrests with the separation-of-function mutants, sld3-A dbf4-A, we show specifically that the checkpoint-dependent inhibition of origin firing limits further re-replication and gene amplifications in G2 phase when licensing control is compromised (Figure 3). This pathway is likely to be evolutionarily conserved, as checkpoint activation in S-phase in human cells also appears to limit re-replication through inhibition of Dbf4 (Lee et al., 2012). As tandem head-to-tail duplications are a prominent feature of many cancers (Menghi et al., 2018), knowledge of the pathways that prevent this form of structural variation may be important for understanding oncogenesis.\n\nIn addition to preventing re-replication in G2, we show that the checkpoint also inhibits the replication initiation factors Sld3 and Dbf4 to delay all origin firing after DNA damage in G1 phase (Figure 4). This likely increases the time for DNA repair to occur before replication begins and may also serve to increase the window of time where origin firing and licensing are mutually exclusive, preventing re-replication. It is interesting that failure to inhibit Sld3 and Dbf4 alone has little effect on the G1/S transition (Figure 4\u2014figure supplement 1), probably because Sld3 (and Sld2) act downstream of CDK activation (Figure 4A). This study therefore provides evidence that two inter-connected pathways are important for restricting replication after DNA damage in G1: inhibition of G1/S CDK activity and direct Inhibition of replication initiation factors.\n\nMutations in genes such as Rb and p53 that control the G1/S transition and the G1 checkpoint response, respectively, are amongst the most common mutations in cancers (Malumbres and Barbacid, 2001; Massagu\u00e9, 2004). Work from yeast to humans has shown that defects in the G1/S transition results in increased dependence on the checkpoint kinases for survival (Rundle et al., 2017; Sidorova and Breeden, 2002). The identification of the checkpoint inhibition of all origin firing as a failsafe mechanism that prevents precocious S-phase entry when the G1 checkpoint is compromised described here (Figure 4) may provide a potential mechanistic rationale for the selective targeting of p53/Rb mutant cancers using Chk1 and ATR inhibitors, which are currently in clinical trials (Bradbury et al., 2020).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rad53, rabbit polyclonal</td>\n      <td>Abcam</td>\n      <td>(ab104232)</td>\n      <td>Antibody (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-c-myc, mouse monoclonal</td>\n      <td>Merck Life Science</td>\n      <td>(11667149001)</td>\n      <td>Antibody (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Alpha-factor</td>\n      <td>GenScript</td>\n      <td>(\ufeffRP01002)</td>\n      <td>Peptide</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TruSeq Nano DNA Low Throughput Library Prep Kit</td>\n      <td>Illumina</td>\n      <td>(20015964)</td>\n      <td>Commercial assay or kit</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phos-tag Acrylamide AAL-107</td>\n      <td>Alpha Laboratories</td>\n      <td>(304\u201393521)</td>\n      <td>Chemical</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nocodazole</td>\n      <td>Merck Life Science</td>\n      <td>(M1404)</td>\n      <td>Chemical</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4-Nitroquinoline N-oxide</td>\n      <td>Merck Life Science</td>\n      <td>(N8141)</td>\n      <td>Chemical</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LocalMapper software</td>\n      <td>Batrakou et al., 2020</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Repliscope software</td>\n      <td>Batrakou et al., 2020</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Growth conditions and yeast strains\n\nCell growth, arrests, flow cytometry, and yeast protein extracts were performed\u00a0as previously described (Zegerman and Diffley, 2010).\n\n<table>\n  <thead>\n    <tr>\n      <th>S. cerevisiae strains</th>\n      <th>All the strains used in this work are derived from W303 (ade2-1 ura3-1 his3-11,15 trp1-1 leu2-3,112 can1-100, rad5-535). SLD3 and DBF4 mutants that cannot be phosphorylated by RAD53 (sld3-38A and dbf4-4A) are abbreviated to sld3-A dbf4-A in the main text.</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>yPZ 1223</td>\n      <td>MATa SLD3-10his13myc::KanMX bar1\u2206::hisG</td>\n    </tr>\n    <tr>\n      <td>yPZ 1319</td>\n      <td>MATa sld3-38A-10his13myc::KanMX bar1\u2206::hisG</td>\n    </tr>\n    <tr>\n      <td>yPZ 1317</td>\n      <td>MATa DBF4-13myc::KanMX bar1\u2206::hisG</td>\n    </tr>\n    <tr>\n      <td>yPZ 705</td>\n      <td>MATa</td>\n    </tr>\n    <tr>\n      <td>yPZ 4076</td>\n      <td>MATa trp1::PGAL-swi4-t::TRP1</td>\n    </tr>\n    <tr>\n      <td>yPZ 4137</td>\n      <td>MATa dbf4-4A::HIS3 sld3-38A-10his13myc::KanMX trp1::PGAL-swi4-t::TRP1</td>\n    </tr>\n    <tr>\n      <td>yPZ 917</td>\n      <td>MATa dbf4-4A::HIS3 sld3-38A-10his13myc::KanMX</td>\n    </tr>\n    <tr>\n      <td>yPZ 1523</td>\n      <td>MATa sml1\u2206::URA3 rad53\u2206::LEU2 SLD3-10his13myc::KanMX bar1\u2206::hisG</td>\n    </tr>\n    <tr>\n      <td>yPZ 1522</td>\n      <td>MATa sml1\u2206::URA3 SLD3-10his13myc::KanMX bar1\u2206::hisG</td>\n    </tr>\n    <tr>\n      <td>yPZ 1198</td>\n      <td>MATa cdc28-as1 (F88G)</td>\n    </tr>\n    <tr>\n      <td>yPZ 1767</td>\n      <td>MATa cdc28-as1 (F88G) dbf4-4A::HIS3 sld3-38A-10his13myc::KanMX</td>\n    </tr>\n    <tr>\n      <td>yPZ 4014</td>\n      <td>MATa RRIGA-split LEU2 ChrIII (YCLWdelta5::HphMX-EU2-ARS317-LEU::NFS1), RAD5+ sld3-38A-10his13myc::KanMX dbf4-4A::HIS3</td>\n    </tr>\n    <tr>\n      <td>yPZ 4085</td>\n      <td>MATa RRIGA-split LEU2 ChrIII (YCLWdelta5::HphMX-EU2-ARS317-LEU::NFS1), RAD5+ trp1::orc6-4A-PGAL1-10-Mcm7-2xNLS::TRP1, ura3::PGAL-Cdc6-13myc::URA3</td>\n    </tr>\n    <tr>\n      <td>yPZ 4089</td>\n      <td>MATa RRIGA-split LEU2 ChrIII (YCLWdelta5::HphMX-EU2-ARS317-LEU::NFS1), RAD5+ trp1::orc6-4A-PGAL1-10-Mcm7-2xNLS::TRP1, ura3::PGAL-Cdc6-13myc::URA3 sld3-38A-10his13myc::KanMX dbf4-4A::HIS3</td>\n    </tr>\n    <tr>\n      <td>yPZ 125</td>\n      <td>MATa DBF4-13myc::KanMX</td>\n    </tr>\n    <tr>\n      <td>yPZ 170</td>\n      <td>MATa dbf4\u2206::TRP1 his3::PDBF4-dbf4-19A-13myc::KanMX::HIS3</td>\n    </tr>\n    <tr>\n      <td>yPZ 2</td>\n      <td>MATa sld3-38A-10his13myc::KanMX</td>\n    </tr>\n    <tr>\n      <td>yPZ 52</td>\n      <td>MATa SLD3-10his13myc::KanMX</td>\n    </tr>\n    <tr>\n      <td>yPZ 1471</td>\n      <td>MATa sml1\u2206::URA3 rad53\u2206::HphNT1 DBF4-13myc::KanMX bar1\u2206::hisG</td>\n    </tr>\n    <tr>\n      <td>yPZ 1473</td>\n      <td>MATa sml1\u2206::URA3 DBF4-13myc::KanMX bar1\u2206::hisG</td>\n    </tr>\n    <tr>\n      <td>yPZ 520</td>\n      <td>MATa sml1\u2206::URA3 SLD3-13myc::KanMX</td>\n    </tr>\n    <tr>\n      <td>yPZ 89</td>\n      <td>MATa sml1\u2206::URA3 rad53\u2206::LEU2 SLD3-13myc::KanMX</td>\n    </tr>\n    <tr>\n      <td>yPZ 519</td>\n      <td>MATa sml1\u2206::URA3 DBF4-13myc::KanMX</td>\n    </tr>\n    <tr>\n      <td>yPZ 228</td>\n      <td>MATa sml1\u2206::URA3 rad53\u2206::LEU2 DBF4-13myc::KanMX</td>\n    </tr>\n  </tbody>\n</table>\n\n### Yeast strain notes\n\ndbf4-4A refers to the Rad53 site mutant. It has serine/threonine to alanine mutations at amino acids 518, 521, 526, 528.\n\ndbf4-19A refers to the Rad53 site mutant. It has serine/threonine to alanine mutations at amino acids 53, 59, 188, 192, 203, 222, 224, 226, 228, 318, 319, 328, 374, 375, 377, 518, 521, 526, 528.\n\nsld3-38A refers to the Rad53 site mutant. It contains serine/threonine to alanine mutations at amino acids 306, 310, 421, 434, 435, 438, 442, 445, 450, 451, 452, 456, 458, 459, 479, 482, 507, 509, 514, 519,521,524, 540, 541, 546, 547, 548, 550, 556, 558, 559, 565, 569, 582, 607, 653 and 654. 539 is mutated to arginine.\n\norc6-4A refers to CDK sites 106, 116, 123, and 146 mutated to alanine.\u00a0Swi4-t refers to C-terminally truncated protein 1\u2013814.\n\n### Western blot\n\nWestern blots were performed as previously described (Can et al., 2019). Rad53 was detected with ab104232 (Abcam, dilution 1:5000).\n\n### Replication profiles\n\nYeast genomic DNA was extracted using the smash and grab method (https://fangman-brewer.genetics.washington.edu/smash-n-grab.html). DNA was sonicated using the Bioruptor Pico sonicator (Diagenode), and the libraries were prepared according to the TruSeq Nano sample preparation guide from Illumina. To generate replication timing profiles, the ratio of uniquely mapped reads in the replicating samples to the non-replicating samples was calculated following Batrakou et al., 2020. Replication profiles were generated using ggplot and smoothed using a moving average in R. The values of Trep were taken from OriDB (Siow et al., 2012).\n\n### RRIGA assay using split LEU2 marker\n\nCells were pre-grown under permissive conditions in YPraff overnight 30\u00b0C. At 1 \u00d7 107 cells/ml, nocodazole (2 mg/ml in dimethyl sulfoxide) was added to a final concentration of 10 \u03bcg/ml. Cells were arrested for 90\u00a0min at 30\u00b0C (uninduced time\u00a0point), and then galactose was added to a final concentration of 2% + fresh nocodazole for 3 hr (induced time\u00a0point).\n\nFor each time\u00a0point, a 0.5 ml sample was spun at 3.2\u00a0K for 1 min in benchtop centrifuge; cells were washed with 1 ml sterile water to remove YP, respun, and resuspended in 0.5 ml sterile water. Cells were sonicated briefly to ensure cells are separated\u00a0and then a serial dilution was made into sterile water as follows: dilution 1: 10 \u03bcl cells + 990 \u03bcl water = approx 1 \u00d7 105 cells/ml\u00a0=\u00a01\u00a0\u00d7\u00a0102 cells/\u03bcl; dilution 2: 10 \u03bcl dilution 1 + 990 \u03bcl water = approx 1 \u00d7 103 cells/ml\u00a0=\u00a01 cell/\u03bcl.\n\nOne\u00a0hundred\u00a0microlitre of dilution 2 was plated on YPD plates in triplicate for the viability calculation. One\u00a0hundred microlitre\u00a0and 10 \u03bcl of undiluted cells were plated in triplicate on SC-leu plates to obtain the fraction of viable cells that are Leu+ before and after induction of re-replication. Plates were incubated at 25\u00b0C for 48 hr before colonies were counted. To calculate the percentage of cells in the population that were Leu+,\u00a0the number of Leu+ colonies per ml was divided by the number of viable cells per ml.\n",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "f3cd3bc3-3c41-427d-a984-88e8892d2ec8",
+      "submission_id": "faa0618e-19a9-46ec-947d-cb12ebd2384e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tim Formosa, University of Utah School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63589.sa1](https://doi.org/10.7554/eLife.63589.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nJohnson et al. describe roles for the \"S-phase checkpoint\" outside of S phase, extending the reach of the factors responsible for monitoring DNA integrity to other parts of the cell cycle. This careful analysis of the general roles of this checkpoint in yeast have obvious parallels for understanding checkpoint functions more generally, and the DNA damage response in higher eukaryotes that are less amenable to the types of analysis performed here.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Checkpoint inhibition of origin firing prevents inappropriate replication outside of S-phase\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Tim Formosa as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Kevin Struhl as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Bruce Stillman (Reviewer #2); Karim Labib (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nJohnson et al. use the yeast Saccharomyces cerevisiae system to show that oxidative damage triggers phosphorylation of DNA replication initiation factors Sld3 and Dbf4 by activated Rad53 kinase in cells arrested in either G1 or G2/M. They also show that regulating the activities of these factors outside of S-phase involves the same phosphorylation target sites that are used within S-phase. Finally, they show that the inappropriate replication that occurs in the presence of damage when the checkpoint is inactivated follows the normal timing program, with early origins activated first. These results show that the same checkpoint controls that monitor S phase progression are also used during other phases of the cell cycle. The effects during G1 provide a direct mechanism for inhibiting initiation, in addition to the previously studied parallel block to S phase entry produced by the effects of Rad53 on CDK activation. The effects in G2 limit re-replication, which was previously shown to be regulated by CDK activity as well. This work takes advantage of the high resolution available in the yeast system to concisely establish a broader role for the S-phase checkpoint system than had been previously assumed, and to cleanly demonstrate how multiple factors contribute to maintaining genomic stability in the presence of DNA damage.\n\nEssential revisions:\n\n1) The authors should submit their DNA sequence copy number data to a public DNA sequence database\n\n2) Introduction: The authors should provide further support for the contention that S-phase checkpoint controls are currently assumed to act only within S phase.\n\n3) Subsection \u201cRad53-dependent phosphorylation of Sld3 and Dbf4 reduces re-replication in G2 phase\u201d and Figure 3B: The change in flow cytometry profiles seems small; have potential changes in cell size (FSC, SSC) and the variation in mitochondrial DNA associated with cell size been accounted for?\n\n4) Introduction: Parallels to the human DNA damage checkpoints should be included here, especially the role of p21-CIP. In general, more discussion of the parallel contributions of phosphorylation by Rad53 to Sld3-Dbf4 regulation and CDK activity would strengthen the manuscript. The recent results from the Remus laboratory on the effects of Rad53 on the MCM complex would also provide additional context for the Sld3-Dbf4 results described here.\n\n5) Figure 1B upper panel, Figure 1\u2014figure supplement 1B upper panel, Figure 2A upper panel: Sld3 appears as a doublet in untreated G1 cells (0 minute sample). Similarly, in Figure 1E upper panel, the bottom band that is supposed to represent unphosphorylated Sld3 only decreases slightly upon DNA damage. The authors should demonstrate that the lower band is specific to Sld3 and explain these features of the data.\n\n6) Figure 2B, D: The level of the dbf4-A mutant protein appears to be higher in cells compared to the Dbf4 WT protein. As Dbf4 is limiting for initiation and the effects of combining dbf4-A with swi4-t in Figure 4 are rather subtle, the authors should consider the possibility that the effects are due to overexpression of dbf4-A protein rather than to the lack of phosphorylation.\n\n7) Subsection \u201cRad53-dependent phosphorylation of Sld3 and Dbf4 reduces re-replication in G2 phase\u201d and Figure 3D: The statistical significance of the small change reported with 3 replicates suggests that further repeats would be needed to support the conclusion here and in Figure 4F.\n\n8) The use of dbf4 alleles to establish which phosphorylation sites are important should be clarified. It is not always clear whether the 4A allele (mutations in the sites that are essential in S phase) or the 19A allele (mutations in all mapped phosphorylation sites) are being used in specific experiments. This could affect whether or not the conclusion that the same sites are important in S phase and G1/G2 is valid, so this needs to be clarified and the reasons for using different alleles justified.\n",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b131ec77-85d7-4dda-ad66-58f455305646",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C1",
+      "claim": "The S-phase checkpoint in budding yeast results in the slowing of replication by Rad53-dependent inhibition of the initiation factors Sld3 and Dbf4.",
+      "claim_type": "EXPLICIT",
+      "source": "The S-phase checkpoint for example results in the slowing of replication, which in budding yeast occurs by Rad53-dependent inhibition of the initiation factors Sld3 and Dbf4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract and is supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "27575174-d22d-481a-8919-449560841335",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C2",
+      "claim": "Rad53 phosphorylates Sld3 and Dbf4 throughout the cell cycle at the same sites as in S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, we show here that Rad53 phosphorylates both of these substrates throughout the cell cycle at the same sites as in S-phase, suggesting roles for this pathway beyond S-phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "9b8181c9-6c62-4674-b6a8-810cd6b2a5c1",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C3",
+      "claim": "Rad53-dependent inhibition of Sld3 and Dbf4 limits re-replication in G2/M, preventing gene amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we show that Rad53-dependent inhibition of Sld3 and Dbf4 limits re-replication in G2/M, preventing gene amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "a8f88105-c8c8-4d55-bded-aedbb1c07249",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C4",
+      "claim": "Inhibition of Sld3 and Dbf4 in G1 prevents premature initiation at all origins at the G1/S transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that inhibition of Sld3 and Dbf4 in G1 prevents premature initiation at all origins at the G1/S transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "f8228b95-6581-42be-90f8-418951b0fe45",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C5",
+      "claim": "Addition of 4-NQO to G1 phase cells results in robust Rad53 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of the UV mimetic drug 4-NQO to G1 phase cells resulted in robust Rad53 activation, as determined by the accumulation of the phospho-shifted forms of the kinase (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data showing Rad53 phosphorylation in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "289a7a2c-22c6-4a5d-b5df-6c47c8124e8f",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C6",
+      "claim": "A dramatic increase in lower mobility forms of Sld3 occurs when Rad53 is activated in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed a dramatic increase in lower mobility forms of Sld3 when Rad53 was activated in G1 phase (Figure 1B), which was indeed Rad53 dependent (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phos-tag gel data in Figure 1B and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "ebbaf9a2-f4a1-40b1-939a-15237a792cdc",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C7",
+      "claim": "Dbf4 is an APC/C substrate and is partially degraded in alpha factor-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For Dbf4, which is an APC/C substrate and partially degraded in alpha factor-arrested cells (Ferreira et al., 2000), we also observed a mobility shift in G1 phase coincident with Rad53 activation (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Ferreira et al., 2000.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "ae2fe07d-d81e-4cc3-91a1-77c767522117",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C8",
+      "claim": "A mobility shift in Dbf4 occurs in G1 phase coincident with Rad53 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "For Dbf4, which is an APC/C substrate and partially degraded in alpha factor-arrested cells (Ferreira et al., 2000), we also observed a mobility shift in G1 phase coincident with Rad53 activation (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "b0665f14-50a4-4830-8c03-fac9463729fd",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C9",
+      "claim": "A Rad53-dependent mobility shift in Sld3 and Dbf4 is observed in G2/M-arrested cells after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, we observed a Rad53-dependent mobility shift in Sld3 and Dbf4, even in G2/M-arrested cells (Figure 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "2ea98e91-23c0-4851-b791-17d95f1f0b13",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C10",
+      "claim": "Sld3 and Dbf4 are phosphorylated by other kinases in G2/M, such as by CDK.",
+      "claim_type": "EXPLICIT",
+      "source": "Sld3 and Dbf4 are phosphorylated by other kinases in G2/M, such as by CDK (Holt et al., 2009), giving rise to additional isoforms of Sld3/Dbf4 proteins even in Rad53 null cells (* Figure 1E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Holt et al., 2009 and supported by data in Figure 1E,F.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "42cfced6-59c5-476e-a41f-7738e4f5f3c0",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C11",
+      "claim": "38 phospho-sites in Sld3 are directly phosphorylated by Rad53 in S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we have identified the serine and threonine residues in Sld3 and Dbf4 that are directly phosphorylated by Rad53 in S-phase (Zegerman and Diffley, 2010). We mapped 38 such phospho-sites in Sld3 and 19 sites in Dbf4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as previous work by the authors with a citation to Zegerman and Diffley, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "d7b13499-e537-4ad6-ba5e-4d355fd35950",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C12",
+      "claim": "19 phospho-sites in Dbf4 are directly phosphorylated by Rad53 in S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we have identified the serine and threonine residues in Sld3 and Dbf4 that are directly phosphorylated by Rad53 in S-phase (Zegerman and Diffley, 2010). We mapped 38 such phospho-sites in Sld3 and 19 sites in Dbf4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as previous work by the authors with a citation to Zegerman and Diffley, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "f712c9ab-e4d8-4954-a388-0ab516a35d7f",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C13",
+      "claim": "Mutation of serine/threonine residues to alanine in Sld3 and Dbf4 generates alleles that are refractory to Rad53 phosphorylation in S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of these serine/threonine residues to alanine in Sld3- and Dbf4-generated alleles that are refractory to Rad53 phosphorylation in S-phase (Zegerman and Diffley, 2010) and are hereafter referred to as sld3-A and dbf4-19A, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as previous work with a citation to Zegerman and Diffley, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "9809f696-8636-4bbe-9d1b-7e0be1170d51",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C14",
+      "claim": "The Sld3-A protein demonstrates a dramatic loss of Rad53 phosphorylation in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In G1 phase, the Sld3-A protein demonstrated a dramatic loss of Rad53 phosphorylation (Figure 2A), consistent with direct phosphorylation of Sld3 by Rad53 at the same sites as in S-phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "495363f0-b774-405e-87ec-2cb5e9163fdf",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C15",
+      "claim": "Dbf4-19A shows greatly reduced phosphorylation during Rad53 activation in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a similar result with the Dbf4-19A protein in G1 phase after Rad53 activation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "ba641db4-da28-429a-b654-24a51884b1bc",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C16",
+      "claim": "Both Sld3-A and Dbf4-19A show greatly reduced phosphorylation during Rad53 activation in G2/M phase.",
+      "claim_type": "EXPLICIT",
+      "source": "As in G1 phase, both Sld3-A and Dbf4-19A showed greatly reduced phosphorylation during Rad53 activation in G2/M phase (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "64ca8995-8262-4c7f-95de-3a7f8fcd537e",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C17",
+      "claim": "The sld3-A/dbf4-A alleles are synthetically sick with cdc28-as1 in the presence of sub-lethal doses of 1-NM-PP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the sld3-A/dbf4-A alleles are synthetically sick with cdc28-as1 in the presence of sub-lethal doses of 1-NM-PP1 (Figure 3\u2014figure supplement 1A), suggesting that inhibition of Sld3 and Dbf4 by Rad53 is important in cells that have reduced CDK activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "ab621596-99ef-4541-9d98-11ac00b02f9d",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C18",
+      "claim": "Inhibition of Sld3 and Dbf4 by Rad53 is important in cells that have reduced CDK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the sld3-A/dbf4-A alleles are synthetically sick with cdc28-as1 in the presence of sub-lethal doses of 1-NM-PP1 (Figure 3\u2014figure supplement 1A), suggesting that inhibition of Sld3 and Dbf4 by Rad53 is important in cells that have reduced CDK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the synthetic sickness observed in the growth assay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "03f38423-682e-43f1-ad7c-771c1f2cc831",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C19",
+      "claim": "Over-expression of Cdc6, forcing the nuclear localisation of the Mcm2-7 complex, and mutation of the CDK phosphorylation sites in ORC is sufficient to induce re-replication in G2/M phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of Cdc6, forcing the nuclear localisation of the Mcm2-7 complex (through an Mcm7-2xNLS fusion) and mutation of the CDK phosphorylation sites in ORC is sufficient to induce re-replication in G2/M phase (Finn and Li, 2013; Nguyen et al., 2001) and has been shown to induce Rad53 activation (Archambault et al., 2005; Green and Li, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Finn and Li, 2013 and Nguyen et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "e9daeb4f-e463-4214-84cb-93af136637c9",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C20",
+      "claim": "Over-expression of licensing mutants that cannot be inhibited by CDK induces Rad53 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of Cdc6, forcing the nuclear localisation of the Mcm2-7 complex (through an Mcm7-2xNLS fusion) and mutation of the CDK phosphorylation sites in ORC is sufficient to induce re-replication in G2/M phase (Finn and Li, 2013; Nguyen et al., 2001) and has been shown to induce Rad53 activation (Archambault et al., 2005; Green and Li, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Archambault et al., 2005 and Green and Li, 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "20e0e228-10d7-4eae-89d6-858ccf01c710",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C21",
+      "claim": "Conditional over-expression of licensing mutants that cannot be inhibited by CDK combined with sld3-A and dbf4-A leads to an increase in total re-replication in nocodazole arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, conditional over-expression of licensing mutants that cannot be inhibited by CDK combined with sld3-A and dbf4-A led to an increase in the total re-replication in nocodazole arrested cells (Figure 3A \u2013 compare flow cytometry overlay red vs. black).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "651135a4-368d-4c69-a8ae-3577704b6fad",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C22",
+      "claim": "A dramatic increase in DNA copy number largely for Chromosome III is observed in strains that over-express Cdc6 and pre-RC mutants that cannot be inhibited by CDK.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not detect any differences between the mitochondrial DNA content of the strains (Figure 3\u2014figure supplement 1B), we observed a dramatic increase in DNA copy number largely for Chromosome III in strains that over-express Cdc6 and pre-RC mutants that cannot be inhibited by CDK (Figure 3B, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by DNA sequencing and copy number analysis in Figure 3B and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "c87c1ecc-12f7-408b-abc0-88297cb97c78",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C23",
+      "claim": "Chromosome III is particularly susceptible to re-replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have indeed shown that chromosome III is particularly susceptible to re-replication (Green et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Green et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "5d0bc0f3-8467-4c49-8c47-3e373875d76a",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C24",
+      "claim": "Greater re-replication of chromosome III is observed when the pre-RC mutants are combined with sld3-A and dbf4-A.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not detect any re-replication in the sld3-A/dbf4-A strain alone (data not shown), we observed greater re-replication of chromosome III when the pre-RC mutants were combined with sld3-A and dbf4-A, which cannot be inhibited by Rad53 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by DNA copy number analysis in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "1a3938a1-06a2-4d13-af7b-4afa2fb7f60a",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C25",
+      "claim": "Rad53-dependent inhibition of replication initiation can reduce inappropriate replication in G2 phase when licensing control is compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with Figure 3A, this suggests that Rad53-dependent inhibition of replication initiation can reduce inappropriate replication in G2 phase when licensing control is compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data in Figure 3A and 3B showing increased re-replication in sld3-A/dbf4-A mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "e0b86699-ce18-4a4b-9ec5-b1ab6cdbc5d0",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C26",
+      "claim": "Re-replication generates head-to-tail tandem gene amplifications, a process termed re-replication-induced gene amplification (RRIGA).",
+      "claim_type": "EXPLICIT",
+      "source": "One of the consequences of re-replication is the generation of head-to-tail tandem gene amplifications, a process termed re-replication-induced gene amplification (RRIGA) (Green et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Green et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "caa05e5f-f3b0-4c4c-8a6f-b7f8aa30ed0f",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C27",
+      "claim": "Expression of the licensing mutants by the addition of galactose results in a large increase in RRIGA events.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to wild-type yeast or the sld3-A/dbf4-A strain alone, expression of the licensing mutants by the addition of galactose resulted in a large increase in RRIGA events, as expected (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RRIGA assay data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "1180d587-5f6c-4653-bf0c-3a7134f59b69",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C28",
+      "claim": "RRIGA events are even greater when the mutants that allow licensing in the presence of CDK are combined with the sld3-A/dbf4-A alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, RRIGA events were even greater when the mutants that allow licensing in the presence of CDK were combined with the sld3-A/dbf4-A alleles (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RRIGA assay data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "06694dd5-8695-4273-8c3a-6f8a2da6e838",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C29",
+      "claim": "The checkpoint kinase Rad53 reduces gene amplification events after re-replication through inhibition of Sld3 and Dbf4, even in G2/M-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This assay demonstrates that the checkpoint kinase Rad53 indeed reduces gene amplification events after re-replication through inhibition of Sld3 and Dbf4, even in G2/M-arrested cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the RRIGA assay data in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "e2f0c078-f40d-4bf6-a644-7a8aac0a9551",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C30",
+      "claim": "DNA damage in G1 phase delays the G1/S transition, which from humans to yeast, involves the checkpoint kinase-dependent down-regulation and/or inhibition of G1/S cyclin-CDK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA damage in G1 phase delays the G1/S transition, which from humans to yeast, involves the checkpoint kinase-dependent down-regulation and/or inhibition of G1/S cyclin-CDK activity (Bertoli et al., 2013; Lanz et al., 2019; Shaltiel et al., 2015; Sidorova and Breeden, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to multiple sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "630fec5b-5190-4086-8c20-ef9b8ef9b669",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C31",
+      "claim": "DNA damage in G1 phase results in the inhibitory checkpoint phosphorylation of two replication initiation factors, Sld3 and Dbf4.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have shown that DNA damage in G1 phase also results in the inhibitory checkpoint phosphorylation of two replication initiation factors, Sld3 and Dbf4 (Figures 1 and 2), suggesting that this might be an additional mechanism to prevent premature DNA replication at the G1/S transition (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "90f97092-c213-499f-8d7c-65b87f828aa6",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C32",
+      "claim": "Addition of 4-NQO to G1-arrested yeast cells and then release into S-phase results in robust Rad53 activation in G1 phase, such that cells enter S-phase with an already active checkpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "To specifically analyse the consequences of DNA damage in G1 phase, we added 4-NQO to G1-arrested yeast cells and then released cells into S-phase in fresh medium without 4-NQO. Crucially, this approach resulted in robust Rad53 activation in G1 phase, such that cells enter S-phase with an already active checkpoint (Figure 4D, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 4D and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "fa6cd468-21f4-412b-b1d4-2a057de01551",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C33",
+      "claim": "Rad53 activation in G1 phase results in the slowing of the G1/S transition as detected by the delay in budding and the delay in DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Rad53 activation in G1 phase resulted in the slowing of the G1/S transition as detected by the delay in budding (a G1 cyclin/CDK-mediated event) and the delay in DNA synthesis (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by budding index and flow cytometry data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "4a31f124-0317-46d9-9bc2-db62579a2656",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C34",
+      "claim": "The sld3-A dbf4-A alleles cause little difference in S-phase progression after DNA damage in G1 phase, compared to the wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, the sld3-A dbf4-A alleles caused little difference in S-phase progression after DNA damage in G1 phase, compared to the wild-type strain (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "8e38a708-1700-4559-b09f-66aae72b2eca",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C35",
+      "claim": "Rad53 inhibits CDK activation through phosphorylation of the Swi6 subunit of the transcriptional activator SBF.",
+      "claim_type": "EXPLICIT",
+      "source": "As Rad53 is known to inhibit CDK activation through phosphorylation of the Swi6 subunit of the transcriptional activator SBF (Sidorova and Breeden, 1997), we wondered whether Rad53-dependent inhibition of both replication initiation factors and G1/S transcription might prevent precocious DNA replication after damage in G1 phase (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Sidorova and Breeden, 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "aaa29960-4f12-4ea2-a3c3-ec6fa4cad88d",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C36",
+      "claim": "Swi4-t is a truncated form of the SBF transcription factor Swi4 that lacks the C-terminus required for interaction with Swi6 and thus cannot be inhibited by Rad53.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we over-expressed a truncated form of the SBF transcription factor Swi4 (Swi4-t), which lacks the C-terminus required for interaction with Swi6 and thus cannot be inhibited by Rad53 (Sidorova and Breeden, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Sidorova and Breeden, 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "908031f9-087e-4b1a-b50b-db4c673cedaf",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C37",
+      "claim": "Over-expression of Swi4-t results in faster progression through the G1/S transition in the presence of 4-NQO.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of Swi4-t indeed resulted in faster progression through the G1/S transition in the presence of 4-NQO (Figure 4\u2014figure supplement 1D) as expected (Sidorova and Breeden, 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by budding index data in Figure 4\u2014figure supplement 1D and is consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "0a9a4252-377b-4cc3-ad81-05fd744dfc2c",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C38",
+      "claim": "The combination of expression of Swi4-t together with sld3-A dbf4-A results in much faster S-phase progression after DNA damage in G1 phase compared to Swi4-t expression alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the combination of expression of Swi4-t together with sld3-A dbf4-A resulted in much faster S-phase progression after DNA damage in G1 phase compared to Swi4-t expression alone (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "8e5e5886-56eb-44a1-9f38-b2ec53628045",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C39",
+      "claim": "The differences in the onset of DNA replication between swi4-t with and without sld3-A/dbf4-A are not due to differences in the G1/S transition as these strains budded at the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences in the onset of DNA replication between swi4-t with and without sld3-A/dbf4-A were not due to differences in the G1/S transition as these strains budded at the same time (Figure 4C) and both strains also exhibited similar levels of Rad53 activation (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by budding index data in Figure 4C and western blot data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "13ea344d-4891-46f2-a357-78757c6dc4b5",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C40",
+      "claim": "Rad53 activation in G1 phase prevents precocious DNA replication initiation by inhibiting not only G1/S transcription, but also Sld3 and Dbf4.",
+      "claim_type": "EXPLICIT",
+      "source": "Together this suggests that Rad53 activation in G1 phase prevents precocious DNA replication initiation by inhibiting not only G1/S transcription, but also Sld3 and Dbf4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data in Figure 4B-D showing faster S-phase progression when both pathways are disrupted.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "f9f52847-f7a2-4379-b445-cb968e628e38",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C41",
+      "claim": "Activation of Rad53 during S-phase caused by fork stalling/DNA damage at early replicons results in inhibition of subsequent (late) origin firing, which in yeast is mediated by inhibition of Sld3 and Dbf4.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Rad53 during S-phase caused by fork stalling/DNA damage at early replicons results in inhibition of subsequent (late) origin firing, which in yeast is mediated by inhibition of Sld3 and Dbf4 (Lopez-Mosqueda et al., 2010; Zegerman and Diffley, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Lopez-Mosqueda et al., 2010 and Zegerman and Diffley, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "c2a50318-2420-4e94-bd9c-71a8e64b82dc",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C42",
+      "claim": "At the earliest time point (20 min), the swi4-t sld3-A dbf4-A strain shows peaks of replication initiation at the earliest firing origins, even though Rad53 is highly activated.",
+      "claim_type": "EXPLICIT",
+      "source": "At the earliest time point (20 min), while the swi4-t over-expressing strain alone had barely begun to replicate (Figure 4E, chromosome VII as an example), the swi4-t sld3-A dbf4-A strain showed peaks of replication initiation at the earliest firing origins (e.g., see *, Figure 4E), even though Rad53 is highly activated (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by DNA copy number analysis in Figure 4E and western blot data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "58a3ddce-5db3-463e-a68c-eb66c8a2171d",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C43",
+      "claim": "Much greater firing of early origins is observed in the swi4-t sld3-A dbf4-A strain compared to swi4-t alone throughout the time course.",
+      "claim_type": "EXPLICIT",
+      "source": "By analysis of initiation at all origins, split into quintiles according to their normal firing time, we observe much greater firing of early origins in the swi4-t sld3-A dbf4-A strain compared to swi4-t alone throughout the time course (Figure 4F, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by box plot analysis in Figure 4F and replication profiles in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "6f411ee7-237f-4084-b3f0-4aa8276b9beb",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C44",
+      "claim": "An increase in later firing origins is observed in the swi4-t sld3-A dbf4-A strain over time, suggesting that the relative timing of origin firing is not affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Over time, we also observe an increase in later firing origins in the swi4-t sld3-A dbf4-A strain (arrows Figure 4F, Figure 4\u2014figure supplement 2), suggesting that the relative timing of origin firing is not affected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by box plot analysis in Figure 4F and replication profiles in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "3d22f750-bcf2-4561-9997-843488353008",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C45",
+      "claim": "Activation of Rad53 and inhibition of Sld3 and Dbf4 in G1 phase contribute to the mechanism preventing the onset of DNA replication from all origins, not just late firing origins, in the presence of DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Together this demonstrates that activation of Rad53 and inhibition of Sld3 and Dbf4 in G1 phase contribute to the mechanism preventing the onset of DNA replication from all origins, not just late firing origins, in the presence of DNA damage (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the replication timing analysis in Figure 4E-F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "61b7bad6-8285-46c5-a83d-56dd5f701eab",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C46",
+      "claim": "Loss of function of genes that result in a delay in the G1/S transition, such as CLN2, SWI4, and BCK2, improves the growth of sld3-A/dbf4-A in the presence of phleomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of function of genes that result in a delay in the G1/S transition, such as CLN2, SWI4, and BCK2 (Di Como et al., 1995), improved the growth of sld3-A/dbf4-A in the presence of phleomycin (suppressors, Figure 4\u2014figure supplement 3), whereas loss of function of genes that would result in the acceleration of G1/S, such as WHI5 and SIC1 (Bertoli et al., 2013), were synthetic sick with the sld3-A/dbf4-A alleles (enhancers, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genetic interaction data in Figure 4\u2014figure supplement 3 and citations to Di Como et al., 1995.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "08942db7-fe13-435b-bb6a-bd1d9588acbc",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C47",
+      "claim": "Loss of function of genes that would result in the acceleration of G1/S, such as WHI5 and SIC1, are synthetic sick with the sld3-A/dbf4-A alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of function of genes that result in a delay in the G1/S transition, such as CLN2, SWI4, and BCK2 (Di Como et al., 1995), improved the growth of sld3-A/dbf4-A in the presence of phleomycin (suppressors, Figure 4\u2014figure supplement 3), whereas loss of function of genes that would result in the acceleration of G1/S, such as WHI5 and SIC1 (Bertoli et al., 2013), were synthetic sick with the sld3-A/dbf4-A alleles (enhancers, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by genetic interaction data in Figure 4\u2014figure supplement 3 and citations to Bertoli et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "94290b91-a622-4b0f-a4e5-e350d5671c49",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C48",
+      "claim": "These genetic interactions are consistent with an important role for Rad53-dependent inhibition of origin firing in preventing precocious replication after DNA damage in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "These genetic interactions are consistent with an important role for Rad53-dependent inhibition of origin firing in preventing precocious replication after DNA damage in G1 phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic interaction data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "ceec513c-af4f-4703-b89b-3f8a88697198",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C49",
+      "claim": "The checkpoint-dependent inhibition of origin firing limits further re-replication and gene amplifications in G2 phase when licensing control is compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining tight cell cycle arrests with the separation-of-function mutants, sld3-A dbf4-A, we show specifically that the checkpoint-dependent inhibition of origin firing limits further re-replication and gene amplifications in G2 phase when licensing control is compromised (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion supported by data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "32fab354-80d1-49c7-8e74-d23f80af3f18",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C50",
+      "claim": "This pathway is likely to be evolutionarily conserved, as checkpoint activation in S-phase in human cells also appears to limit re-replication through inhibition of Dbf4.",
+      "claim_type": "EXPLICIT",
+      "source": "This pathway is likely to be evolutionarily conserved, as checkpoint activation in S-phase in human cells also appears to limit re-replication through inhibition of Dbf4 (Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on a citation to Lee et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "a7765929-b7db-44ec-96e2-1b72a9f9bb66",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C51",
+      "claim": "Tandem head-to-tail duplications are a prominent feature of many cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "As tandem head-to-tail duplications are a prominent feature of many cancers (Menghi et al., 2018), knowledge of the pathways that prevent this form of structural variation may be important for understanding oncogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Menghi et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "0f08004b-f7e0-4304-8ac9-54b13dbe6839",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C52",
+      "claim": "Knowledge of the pathways that prevent tandem head-to-tail duplications may be important for understanding oncogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As tandem head-to-tail duplications are a prominent feature of many cancers (Menghi et al., 2018), knowledge of the pathways that prevent this form of structural variation may be important for understanding oncogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the connection between re-replication and cancer.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "d29caef2-bc33-420e-af80-a824b689add9",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C53",
+      "claim": "The checkpoint inhibition of all origin firing is a failsafe mechanism that prevents precocious S-phase entry when the G1 checkpoint is compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of the checkpoint inhibition of all origin firing as a failsafe mechanism that prevents precocious S-phase entry when the G1 checkpoint is compromised described here (Figure 4) may provide a potential mechanistic rationale for the selective targeting of p53/Rb mutant cancers using Chk1 and ATR inhibitors, which are currently in clinical trials (Bradbury et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study supported by data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "e0879974-4305-497e-9bfe-73beeb4130a6",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C54",
+      "claim": "Mutations in genes such as Rb and p53 that control the G1/S transition and the G1 checkpoint response, respectively, are amongst the most common mutations in cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in genes such as Rb and p53 that control the G1/S transition and the G1 checkpoint response, respectively, are amongst the most common mutations in cancers (Malumbres and Barbacid, 2001; Massagu\u00e9, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Malumbres and Barbacid, 2001 and Massagu\u00e9, 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "d413967e-dce4-4b24-a3d0-3b5b28c3e744",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C55",
+      "claim": "Defects in the G1/S transition result in increased dependence on the checkpoint kinases for survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Work from yeast to humans has shown that defects in the G1/S transition results in increased dependence on the checkpoint kinases for survival (Rundle et al., 2017; Sidorova and Breeden, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Rundle et al., 2017 and Sidorova and Breeden, 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "ec92f87c-b067-4fec-be15-1365e7f0f660",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C56",
+      "claim": "The identification of the checkpoint inhibition of all origin firing may provide a potential mechanistic rationale for the selective targeting of p53/Rb mutant cancers using Chk1 and ATR inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of the checkpoint inhibition of all origin firing as a failsafe mechanism that prevents precocious S-phase entry when the G1 checkpoint is compromised described here (Figure 4) may provide a potential mechanistic rationale for the selective targeting of p53/Rb mutant cancers using Chk1 and ATR inhibitors, which are currently in clinical trials (Bradbury et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings of the study and a citation to Bradbury et al., 2020.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "ec1aef80-6500-4cf4-8617-459d458ace5c",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C57",
+      "claim": "Chk1 and ATR inhibitors are currently in clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of the checkpoint inhibition of all origin firing as a failsafe mechanism that prevents precocious S-phase entry when the G1 checkpoint is compromised described here (Figure 4) may provide a potential mechanistic rationale for the selective targeting of p53/Rb mutant cancers using Chk1 and ATR inhibitors, which are currently in clinical trials (Bradbury et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Bradbury et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "61dfe936-f1ea-4a4d-9d99-284609e739eb",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C58",
+      "claim": "In eukaryotes, the entire genome is replicated once and only once in every cell division by linking DNA replication control to the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "It is vitally important that in every cell division, the entire genome is replicated once and only once. In eukaryotes, this is achieved by linking DNA replication control to the cell cycle (Siddiqui et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Siddiqui et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "61e149f2-4f4a-409a-80dd-92af43986b32",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C59",
+      "claim": "The first step in replication is the formation of the pre-replicative complex (pre-RC) at origins \u2013 a process called 'licensing'.",
+      "claim_type": "EXPLICIT",
+      "source": "The first step in replication is the formation of the pre-replicative complex (pre-RC) at origins \u2013 a process called 'licensing'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "2136099b-b3b5-4262-835a-0125b9001f18",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C60",
+      "claim": "Licensing involves the origin recognition complex 1-6 (Orc1-6) and Cdc6-dependent loading of double hexamers of the Mcm2\u20137 helicase on double-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Licensing involves the origin recognition complex 1-6 (Orc1-6) and Cdc6-dependent loading of double hexamers of the Mcm2\u20137 helicase on double-stranded DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "ea0f49c1-df58-43b8-b841-5565065de5d8",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C61",
+      "claim": "Licensing is restricted to late mitosis/early G1 phase by the activity of the APC/C (anaphase-promoting complex/cyclosome), which eliminates licensing inhibitors such as cyclin-dependent kinase (CDK) and geminin in this window of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Licensing is restricted to late mitosis/early G1 phase by the activity of the APC/C (anaphase-promoting complex/cyclosome), which eliminates licensing inhibitors such as cyclin-dependent kinase (CDK) and geminin in this window of the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "b376dc23-c97f-4847-bf9e-3037ece1d0a2",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C62",
+      "claim": "In the budding yeast Saccharomyces cerevisiae, which lacks geminin, CDK inhibits licensing from late G1 phase until mitosis by multiple mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "In the budding yeast Saccharomyces cerevisiae, which lacks geminin, CDK inhibits licensing from late G1 phase until mitosis by multiple mechanisms, including direct phosphorylation of Orc2/Orc6 and nuclear exclusion of the Mcm2\u20137 complex, and by mediating SCFCDC4-dependent degradation of Cdc6 (Blow and Dutta, 2005; Nguyen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Blow and Dutta, 2005 and Nguyen et al., 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "5ffd2223-6639-41d4-8e7c-c1e6165c49da",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C63",
+      "claim": "Mcm2\u20137 double hexamers loaded in late M/early G1 phase are inactive, and replication initiation can only occur after the inactivation of the APC/C at the G1/S transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Mcm2\u20137 double hexamers loaded in late M/early G1 phase are inactive, and replication initiation can only occur after the inactivation of the APC/C at the G1/S transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "c3b58b77-8b5a-4330-aedc-3da1ee75dfa2",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C64",
+      "claim": "APC/C inactivation allows the accumulation of S-phase CDK and Dbf4-dependent kinase (DDK) activities.",
+      "claim_type": "EXPLICIT",
+      "source": "APC/C inactivation allows the accumulation of S-phase CDK and Dbf4-dependent kinase (DDK) activities (Labib, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Labib, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "d68b6dc7-831f-4eab-bb66-0ff35745c589",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C65",
+      "claim": "DDK directly phosphorylates the inactive Mcm2\u20137 double hexamers, generating a binding site for firing factors including Sld3/Sld7 and Cdc45.",
+      "claim_type": "EXPLICIT",
+      "source": "DDK directly phosphorylates the inactive Mcm2\u20137 double hexamers, generating a binding site for firing factors including Sld3/Sld7 and Cdc45, while CDK phosphorylates Sld3 and an additional initiation factor Sld2, which via phospho-interactions with Dpb11, results in replisome assembly by poorly understood mechanisms (Riera et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Riera et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "704c2d29-79a9-4940-9f3f-fe50bc019959",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C66",
+      "claim": "CDK phosphorylates Sld3 and an additional initiation factor Sld2, which via phospho-interactions with Dpb11, results in replisome assembly by poorly understood mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "DDK directly phosphorylates the inactive Mcm2\u20137 double hexamers, generating a binding site for firing factors including Sld3/Sld7 and Cdc45, while CDK phosphorylates Sld3 and an additional initiation factor Sld2, which via phospho-interactions with Dpb11, results in replisome assembly by poorly understood mechanisms (Riera et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Riera et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "970c4b51-4b78-4c9b-a2a5-a04573ef5f91",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C67",
+      "claim": "The duality of function of CDK, both as an inhibitor of licensing and as an activator of the replisome, is critical to ensure once per cell cycle replication.",
+      "claim_type": "EXPLICIT",
+      "source": "This duality of function of CDK, both as an inhibitor of licensing and as an activator of the replisome, is critical to ensure once per cell cycle replication (Diffley, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Diffley, 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "ef36d6a7-008d-4b7a-abe7-e911746d8138",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C68",
+      "claim": "Multiple checkpoints exist to regulate DNA synthesis and genome integrity before (G1 checkpoint), during (S-phase checkpoint), and after S-phase (G2/M checkpoint).",
+      "claim_type": "EXPLICIT",
+      "source": "In light of the importance of the linkage between DNA replication control and cell cycle progression, multiple checkpoints exist to regulate DNA synthesis and genome integrity before (G1 checkpoint), during (S-phase checkpoint), and after S-phase (G2/M checkpoint, Hartwell and Weinert, 1989; Kastan and Bartek, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Hartwell and Weinert, 1989 and Kastan and Bartek, 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "8c0736eb-1e90-4cd9-8c86-d810359edf58",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C69",
+      "claim": "These checkpoints are mediated by the PI3 kinase superfamily checkpoint kinases ATM/ATR (Ataxia telangiectasia mutated/ATM and RAD3-related, called Tel1/Mec1 in budding yeast) and the effector checkpoint kinases Chk1/Chk2 (Chk1/Rad53 in budding yeast).",
+      "claim_type": "EXPLICIT",
+      "source": "These checkpoints are mediated by the PI3 kinase superfamily checkpoint kinases ATM/ATR (Ataxia telangiectasia mutated/ATM and RAD3-related, called Tel1/Mec1 in budding yeast) and the effector checkpoint kinases Chk1/Chk2 (Chk1/Rad53 in budding yeast).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "c491537e-9e40-4c94-a033-af1b2cb2774e",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C70",
+      "claim": "In G1 phase, DNA damage such as UV photoproducts causes checkpoint-dependent delays in the onset of DNA replication by inhibition of G1/S cyclin\u2013CDK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In G1 phase, DNA damage such as UV photoproducts causes checkpoint-dependent delays in the onset of DNA replication by inhibition of G1/S cyclin\u2013CDK activity (Lanz et al., 2019; Shaltiel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Lanz et al., 2019 and Shaltiel et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "28aec5b0-7b1c-483c-8fec-53c9d075f92d",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C71",
+      "claim": "In humans, the G1\u2013S transition is delayed by ATM-Chk2-mediated stabilisation of p53, resulting in expression of the CDK inhibitor p21, as well as by checkpoint-dependent degradation of cyclin D and the CDK activator Cdc25A.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, the G1\u2013S transition is delayed by ATM-Chk2-mediated stabilisation of p53, resulting in expression of the CDK inhibitor p21, as well as by checkpoint-dependent degradation of cyclin D and the CDK activator Cdc25A (Lanz et al., 2019; Shaltiel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Lanz et al., 2019 and Shaltiel et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "7fc4ec0e-2421-44e8-b73e-78b3724952a8",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C72",
+      "claim": "In budding yeast, the delay in G1\u2013S occurs in part by Rad53-dependent phosphorylation and inhibition of the Swi6 subunit of the transcriptional activator SBF (SCB binding factor) leading to reduced cyclin transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, the delay in G1\u2013S occurs in part by Rad53-dependent phosphorylation and inhibition of the Swi6 subunit of the transcriptional activator SBF (SCB binding factor) leading to reduced cyclin transcription (Sidorova and Breeden, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Sidorova and Breeden, 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "2e3e0dd5-7f1b-480b-8be9-e4e7a987d766",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C73",
+      "claim": "In S-phase, origin firing in unperturbed cells occurs as a continuum throughout S-phase, with some origins firing in the first half (early origins) or the second half of S-phase (late origins).",
+      "claim_type": "EXPLICIT",
+      "source": "In S-phase, origin firing in unperturbed cells occurs as a continuum throughout S-phase, with some origins firing in the first half (early origins) or the second half of S-phase (late origins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "e66166da-ab38-4c45-9ff2-e83719f18bbb",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C74",
+      "claim": "When replication forks emanating from early firing origins stall, activation of the S-phase checkpoint kinase response results in the dramatic slowing of replication rates.",
+      "claim_type": "EXPLICIT",
+      "source": "When replication forks emanating from early firing origins stall, for example due to DNA lesions, activation of the S-phase checkpoint kinase response results in the dramatic slowing of replication rates (Painter and Young, 1980; Paulovich and Hartwell, 1995), which occurs in large part through inhibition of late firing origins (Yekezare et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Painter and Young, 1980 and Paulovich and Hartwell, 1995.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "90f088ad-3bee-4042-b89f-e1c0a91bb037",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C75",
+      "claim": "The dramatic slowing of replication rates in S-phase occurs in large part through inhibition of late firing origins.",
+      "claim_type": "EXPLICIT",
+      "source": "When replication forks emanating from early firing origins stall, for example due to DNA lesions, activation of the S-phase checkpoint kinase response results in the dramatic slowing of replication rates (Painter and Young, 1980; Paulovich and Hartwell, 1995), which occurs in large part through inhibition of late firing origins (Yekezare et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Yekezare et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "ccfa8ab6-1257-47eb-b4c2-00cb0e37b5b9",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C76",
+      "claim": "Checkpoint activation in S-phase in human cells can prevent origin firing through inhibition of CDK activity, for example by Chk1- and Chk2-mediated degradation of the CDK activator Cdc25A.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to G1 phase, checkpoint activation in S-phase in human cells can prevent origin firing through inhibition of CDK activity, for example by Chk1- and Chk2-mediated degradation of the CDK activator Cdc25A (Bartek et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Bartek et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "0eab5828-3f8c-497c-9648-2b6cd88ee72f",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C77",
+      "claim": "In budding yeast, the checkpoint kinase Rad53 blocks late origin firing, not by inhibition of CDK activity, but by directly inhibiting two replication initiation factors: the DDK subunit Dbf4 and the CDK target Sld3.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast however, the checkpoint kinase Rad53 blocks late origin firing, not by inhibition of CDK activity, but by directly inhibiting two replication initiation factors: the DDK subunit Dbf4 and the CDK target Sld3 (Lopez-Mosqueda et al., 2010; Zegerman and Diffley, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Lopez-Mosqueda et al., 2010 and Zegerman and Diffley, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "68e3ae06-c94f-435f-a1c2-e2c073f14445",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C78",
+      "claim": "Rad53-dependent phosphorylation of Sld3 inhibits its interactions with various other replication factors including Dpb11.",
+      "claim_type": "EXPLICIT",
+      "source": "Rad53-dependent phosphorylation of Sld3 inhibits its interactions with various other replication factors including Dpb11 (Lopez-Mosqueda et al., 2010; Zegerman and Diffley, 2010), while recent work has shown that direct interaction between Rad53 and Cdc7-Dbf4 prevents DDK from binding to the Mcm2\u20137 complex (Abd Wahab and Remus, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Lopez-Mosqueda et al., 2010 and Zegerman and Diffley, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "1e98f0ca-1fc2-4a46-866b-ce11e392bda5",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C79",
+      "claim": "Direct interaction between Rad53 and Cdc7-Dbf4 prevents DDK from binding to the Mcm2\u20137 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Rad53-dependent phosphorylation of Sld3 inhibits its interactions with various other replication factors including Dpb11 (Lopez-Mosqueda et al., 2010; Zegerman and Diffley, 2010), while recent work has shown that direct interaction between Rad53 and Cdc7-Dbf4 prevents DDK from binding to the Mcm2\u20137 complex (Abd Wahab and Remus, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Abd Wahab and Remus, 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "86b5fd75-4574-4e7a-b6df-79bc019253d4",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C80",
+      "claim": "In higher eukaryotes, in addition to inhibition of CDK activity, the checkpoint can also inhibit origin firing through direct targeting of the Sld3 orthologue Treslin and DDK.",
+      "claim_type": "EXPLICIT",
+      "source": "In higher eukaryotes, in addition to inhibition of CDK activity, the checkpoint can also inhibit origin firing through direct targeting of the Sld3 orthologue Treslin (Boos et al., 2011; Guo et al., 2015) and DDK (Costanzo et al., 2003; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Boos et al., 2011, Guo et al., 2015, Costanzo et al., 2003, and Lee et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "5a975577-4242-463e-b2a1-05798b292ef2",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C81",
+      "claim": "Multiple mechanisms exist to ensure the robust inhibition of replication initiation in S-phase by direct targeting of Sld3/Treslin and Dbf4-dependent kinase and by inhibition of CDK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, multiple mechanisms exist to ensure the robust inhibition of replication initiation in S-phase by direct targeting of Sld3/Treslin and Dbf4-dependent kinase and by inhibition of CDK activity (Lanz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Lanz et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "fc5897b5-b6b7-48e7-8150-02c5e5435316",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C82",
+      "claim": "One function of robust inhibition of origin firing during S-phase in the presence of DNA lesions is to prevent the exhaustion of essential factors, such as topoisomerase activities, by excessive numbers of replisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "One function of such robust inhibition of origin firing during S-phase in the presence of DNA lesions is to prevent the exhaustion of essential factors, such as topoisomerase activities, by excessive numbers of replisomes (Morafraile et al., 2019; Toledo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Morafraile et al., 2019 and Toledo et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "bc79a5a6-8ef9-495f-b76f-6fa6d734a502",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C83",
+      "claim": "A key proposed feature of the DNA damage checkpoints is that the response is tailored to the cell cycle phase in which the DNA damage occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "A key proposed feature of the DNA damage checkpoints is that the response is tailored to the cell cycle phase in which the DNA damage occurred (Shaltiel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Shaltiel et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "a7a90f2f-86e5-41cb-975c-4125ff6bda2f",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C84",
+      "claim": "There is very little evidence to suggest that substrate specificity of the checkpoint kinases changes during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, there is very little evidence to suggest that substrate specificity of the checkpoint kinases changes during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "1e25cf91-c3ea-4816-8987-bc95b57fc815",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C85",
+      "claim": "In budding yeast, most forms of DNA damage and replication stress converge on the single effector kinase Rad53.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in budding yeast, most forms of DNA damage and replication stress converge on the single effector kinase Rad53, but how different checkpoint responses in different cell cycle phases can be mediated by a single kinase is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "bdadeb47-875c-4b28-b199-b9361a76d1c3",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C86",
+      "claim": "How different checkpoint responses in different cell cycle phases can be mediated by a single kinase is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in budding yeast, most forms of DNA damage and replication stress converge on the single effector kinase Rad53, but how different checkpoint responses in different cell cycle phases can be mediated by a single kinase is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "a0a7afef-72e1-4c7a-b3cf-df70abe32226",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C87",
+      "claim": "This study redefines the scope of the 'S-phase checkpoint' with implications for understanding checkpoint function in cancers that lack cell cycle controls.",
+      "claim_type": "EXPLICIT",
+      "source": "This study redefines the scope of the 'S-phase checkpoint' with implications for understanding checkpoint function in cancers that lack cell cycle controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "b079154a-0b6a-4d8c-b070-8194ba4f10fd",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C88",
+      "claim": "This study overhauls our understanding of the cell cycle phase specificity of the 'S-phase checkpoint' and provides a novel mechanism that restricts replication initiation to a specific window of the cell cycle after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "This study overhauls our understanding of the cell cycle phase specificity of the 'S-phase checkpoint' and provides a novel mechanism that restricts replication initiation to a specific window of the cell cycle after DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "154cf9ea-a389-4e22-b280-d94275e70342",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C89",
+      "claim": "In G1-arrested cells in the absence of 4-NQO or in rad53\u2206 cells, Sld3 can be seen to migrate as a doublet on phos-tag gels.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with a previous study (Mattarocci et al., 2014), in G1-arrested cells in the absence of 4-NQO (Figure 1B) or in rad53\u2206 cells (Figure 1\u2014figure supplement 1B), Sld3 can be seen to migrate as a doublet on phos-tag gels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phos-tag gel data in Figure 1B and Figure 1\u2014figure supplement 1B, and is consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "3f47bbc0-40d7-4ecb-81f5-013ca6c105f0",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C90",
+      "claim": "The Sld3 doublet in G1-arrested cells is caused by DDK phosphorylation of Sld3.",
+      "claim_type": "EXPLICIT",
+      "source": "This was shown to be caused by DDK phosphorylation of Sld3 (Mattarocci et al., 2014), but does not affect the DNA damage and Rad53-dependent phosphorylation of Sld3 described here (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Mattarocci et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "da862beb-6aab-48e0-92f0-894e9f35da73",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C91",
+      "claim": "DDK phosphorylation of Sld3 does not affect the DNA damage and Rad53-dependent phosphorylation of Sld3.",
+      "claim_type": "EXPLICIT",
+      "source": "This was shown to be caused by DDK phosphorylation of Sld3 (Mattarocci et al., 2014), but does not affect the DNA damage and Rad53-dependent phosphorylation of Sld3 described here (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "16e7e90e-5b36-437c-b1ea-706bb8c057cd",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C92",
+      "claim": "The dbf4-19A mutant is refractory to Rad53 phosphorylation but is also a hypomorph and is not fully functional for replication initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The dbf4-19A mutant, although refractory to Rad53 phosphorylation, is also a hypomorph and is not fully functional for replication initiation (Zegerman and Diffley, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Zegerman and Diffley, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "220c750b-5877-404b-b7e7-178d234ba587",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C93",
+      "claim": "The dbf4-4A allele cannot be inhibited by Rad53 but is fully functional for its role in replication initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously narrowed down the critical residues that are inhibited by Rad53 to four sites and generated a dbf4-4A allele, which still cannot be inhibited by Rad53, but is fully functional for its role in replication initiation (Zegerman and Diffley, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Zegerman and Diffley, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "aa911ead-d415-4c57-bd2c-54f6036df1cc",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C94",
+      "claim": "Dbf4-4A is less Rad53-phosphorylated than wild type in G1 cells after DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "In similarity to the 19A allele, Dbf4-4A was less Rad53-phosphorylated than wild type in G1 cells after DNA damage (Figure 2\u2014figure supplement 1), suggesting that it is indeed the critical residues in Dbf4 that are phosphorylated by Rad53 outside of S-phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "8d0e5719-3666-4bbc-b3a2-847ba93bc3da",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C95",
+      "claim": "It is the critical residues in Dbf4 that are phosphorylated by Rad53 outside of S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In similarity to the 19A allele, Dbf4-4A was less Rad53-phosphorylated than wild type in G1 cells after DNA damage (Figure 2\u2014figure supplement 1), suggesting that it is indeed the critical residues in Dbf4 that are phosphorylated by Rad53 outside of S-phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of Dbf4-4A and wild type phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "de6543c7-a17e-4ec2-9ad2-584672623d9c",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C96",
+      "claim": "Transient reduction of CDK activity in G2/M phase is sufficient to induce re-replication.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA replication is tightly restricted to S-phase in large part by the action of CDK, which prevents licensing outside of late M/early G1 phase. As a result, transient reduction of CDK activity in G2/M phase is sufficient to induce re-replication (Dahmann et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a citation to Dahmann et al., 1995.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "f7feaf05-f218-4559-befd-4bc167108f8b",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C97",
+      "claim": "No re-replication is detected in the sld3-A/dbf4-A strain alone.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not detect any re-replication in the sld3-A/dbf4-A strain alone (data not shown), we observed greater re-replication of chromosome III when the pre-RC mutants were combined with sld3-A and dbf4-A, which cannot be inhibited by Rad53 (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on data not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "e9dfe499-a33e-4cbc-afc6-a6d74ed3b41c",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C98",
+      "claim": "No differences are detected between the mitochondrial DNA content of the strains over-expressing licensing mutants with or without sld3-A/dbf4-A.",
+      "claim_type": "EXPLICIT",
+      "source": "While we did not detect any differences between the mitochondrial DNA content of the strains (Figure 3\u2014figure supplement 1B), we observed a dramatic increase in DNA copy number largely for Chromosome III in strains that over-express Cdc6 and pre-RC mutants that cannot be inhibited by CDK (Figure 3B, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mitochondrial DNA analysis in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "42476a83-3da3-4020-bc4a-318d4873a83e",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C99",
+      "claim": "The role of the checkpoint differs depending on the cell cycle phase in which re-replication occurs in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This has important implications for understanding the consequences of inappropriate re-replication in human cells, where the role of the checkpoint differs depending on the cell cycle phase in which re-replication occurs (Klotz-Noack et al., 2012; Liu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations to Klotz-Noack et al., 2012 and Liu et al., 2007.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "8858207c-c593-4caa-a002-a2d0d68429cb",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C100",
+      "claim": "Failure to inhibit Sld3 and Dbf4 alone has little effect on the G1/S transition.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting that failure to inhibit Sld3 and Dbf4 alone has little effect on the G1/S transition (Figure 4\u2014figure supplement 1), probably because Sld3 (and Sld2) act downstream of CDK activation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "6643afed-826c-4ee6-be66-f9d10ad57780",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C101",
+      "claim": "Sld3 (and Sld2) act downstream of CDK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting that failure to inhibit Sld3 and Dbf4 alone has little effect on the G1/S transition (Figure 4\u2014figure supplement 1), probably because Sld3 (and Sld2) act downstream of CDK activation (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and is used to explain the observation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "103dae77-14f1-4eb5-9798-5231b75e8812",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C102",
+      "claim": "Two inter-connected pathways are important for restricting replication after DNA damage in G1: inhibition of G1/S CDK activity and direct inhibition of replication initiation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "This study therefore provides evidence that two inter-connected pathways are important for restricting replication after DNA damage in G1: inhibition of G1/S CDK activity and direct Inhibition of replication initiation factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "1231b7c6-e2f7-464d-bd8f-53d200071c33",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C103",
+      "claim": "Inhibition of Sld3 and Dbf4 may increase the window of time where origin firing and licensing are mutually exclusive, preventing re-replication.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely increases the time for DNA repair to occur before replication begins and may also serve to increase the window of time where origin firing and licensing are mutually exclusive, preventing re-replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "a1a4df9e-1e45-4495-a1e7-9d3c1244bc1e",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "claim_id": "C104",
+      "claim": "Inhibition of Sld3 and Dbf4 likely increases the time for DNA repair to occur before replication begins.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely increases the time for DNA repair to occur before replication begins and may also serve to increase the window of time where origin firing and licensing are mutually exclusive, preventing re-replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f942eb5e-2afd-48e3-bce7-2036d5e73874",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Rad53 phosphorylates Sld3 and Dbf4 throughout the cell cycle at the same sites as in S-phase. Western blot and phos-tag gel analyses demonstrate Rad53-dependent mobility shifts of Sld3 and Dbf4 in G1 and G2/M phases after DNA damage. Mutant alleles (sld3-A and dbf4-A) lacking Rad53 phosphorylation sites show dramatically reduced phosphorylation in all cell cycle phases, confirming that the same residues are targeted by Rad53 outside of S-phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C5-C6, C8-C9, C14-C16, C89, C91, C94-C95 are supported by consistent western blot and phos-tag gel data across Figures 1 and 2. The use of separation-of-function mutants (sld3-A, dbf4-A) and rad53\u0394 controls provides strong evidence that Rad53 directly phosphorylates these substrates at the same sites throughout the cell cycle. The data are internally consistent and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "72d279b3-9abf-47db-802c-9b5c87d8365d",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Rad53-dependent inhibition of Sld3 and Dbf4 limits re-replication in G2/M phase and prevents gene amplification. When licensing control is compromised by overexpression of Cdc6 and pre-RC mutants, combining these with sld3-A/dbf4-A alleles increases re-replication (measured by flow cytometry and DNA sequencing) and gene amplification events (measured by RRIGA assay), particularly on chromosome III.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C21-C22, C24-C25, C27-C29, C49 are well-supported by multiple complementary assays in Figure 3: flow cytometry showing increased DNA content, whole-genome sequencing showing increased chromosome III copy number, and the RRIGA assay showing increased gene amplification. The experimental design appropriately uses G2/M-arrested cells with conditional expression of licensing mutants, and includes proper controls (wild-type, sld3-A/dbf4-A alone, licensing mutants alone). The p-value of 0.0481 for the RRIGA assay (C28) is marginally significant but consistent with the other data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Rad53 prevents premature initiation at all origins at the G1/S transition through two interconnected pathways: inhibition of G1/S transcription (via Swi6) and direct inhibition of Sld3 and Dbf4. When both pathways are disrupted (Swi4-t overexpression combined with sld3-A/dbf4-A), cells show accelerated S-phase progression with premature firing of early origins after DNA damage in G1 phase, while disruption of either pathway alone has minimal effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C31-C34, C37-C40, C42-C45, C100, C102 are strongly supported by the experimental design in Figure 4, which uses DNA damage in G1 followed by release into S-phase. The combination of flow cytometry, budding index, western blots, and genome-wide replication profiling provides converging evidence. The key observation that both pathways must be disrupted to see the phenotype (C38-C40) is well-controlled, with strains budding at the same time (C39) and showing similar Rad53 activation (C39). The genetic interaction data (C46-C48) from a previous study provides additional support. The replication timing analysis (C42-C45) demonstrates effects on all origins, not just late-firing origins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "624ba236-ba7c-4129-9754-45049e1bb753",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The S-phase checkpoint in budding yeast results in slowing of replication by Rad53-dependent inhibition of Sld3 and Dbf4. Previous work identified 38 phospho-sites in Sld3 and 19 sites in Dbf4 that are directly phosphorylated by Rad53 in S-phase, and mutation of these sites generates alleles refractory to Rad53 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11-C13, C41, C77-C78 represent established knowledge from prior work (primarily Zegerman and Diffley, 2010; Lopez-Mosqueda et al., 2010) that provides the foundation for the current study. These claims are appropriately cited and are not contested by the current data. They serve as background for interpreting the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "e8e5dd0b-f7eb-4edb-970e-1dc0b96c4362",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The findings redefine the scope of the 'S-phase checkpoint' and may have implications for cancer therapy. The checkpoint inhibition of origin firing may be evolutionarily conserved and could provide a mechanistic rationale for targeting p53/Rb mutant cancers with Chk1 and ATR inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50, C52-C53, C56, C87-C88, C99, C103-C104 represent speculative interpretations and potential implications of the findings. While the yeast data are solid, the extrapolation to human cells and cancer therapy (C50, C52-C53, C56) is not directly tested. The mechanistic speculation about increasing time for DNA repair (C104) and preventing re-replication (C103) is reasonable but not experimentally validated. These claims appropriately use cautious language ('may', 'likely') but require further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    },
+    {
+      "id": "c7122707-727d-421e-bcc9-dbf650fb2795",
+      "content_id": "a355ee00-d49b-4af9-909a-57e40801a234",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Background knowledge on cell cycle control, DNA replication, checkpoint mechanisms, and cancer biology that provides context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C10, C19-C20, C23, C26, C30, C35-C36, C51, C54-C55, C57-C86, C92-C93 represent established knowledge from the literature, appropriately cited throughout the manuscript. These provide necessary background and context but are not novel findings of this study. They are accepted as accurate based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:25:16.620992Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "27575174-d22d-481a-8919-449560841335",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "f8228b95-6581-42be-90f8-418951b0fe45",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "289a7a2c-22c6-4a5d-b5df-6c47c8124e8f",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "ae2fe07d-d81e-4cc3-91a1-77c767522117",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "b0665f14-50a4-4830-8c03-fac9463729fd",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "9809f696-8636-4bbe-9d1b-7e0be1170d51",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "495363f0-b774-405e-87ec-2cb5e9163fdf",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "ba641db4-da28-429a-b654-24a51884b1bc",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "154cf9ea-a389-4e22-b280-d94275e70342",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "3f47bbc0-40d7-4ecb-81f5-013ca6c105f0",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "da862beb-6aab-48e0-92f0-894e9f35da73",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "aa911ead-d415-4c57-bd2c-54f6036df1cc",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "8d0e5719-3666-4bbc-b3a2-847ba93bc3da",
+      "result_id": "f942eb5e-2afd-48e3-bce7-2036d5e73874"
+    },
+    {
+      "claim_id": "9b8181c9-6c62-4674-b6a8-810cd6b2a5c1",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "64ca8995-8262-4c7f-95de-3a7f8fcd537e",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "ab621596-99ef-4541-9d98-11ac00b02f9d",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "03f38423-682e-43f1-ad7c-771c1f2cc831",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "e9daeb4f-e463-4214-84cb-93af136637c9",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "20e0e228-10d7-4eae-89d6-858ccf01c710",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "651135a4-368d-4c69-a8ae-3577704b6fad",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "5d0bc0f3-8467-4c49-8c47-3e373875d76a",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "1a3938a1-06a2-4d13-af7b-4afa2fb7f60a",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "caa05e5f-f3b0-4c4c-8a6f-b7f8aa30ed0f",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "1180d587-5f6c-4653-bf0c-3a7134f59b69",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "06694dd5-8695-4273-8c3a-6f8a2da6e838",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "ceec513c-af4f-4703-b89b-3f8a88697198",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "de6543c7-a17e-4ec2-9ad2-584672623d9c",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "f7feaf05-f218-4559-befd-4bc167108f8b",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "e9dfe499-a33e-4cbc-afc6-a6d74ed3b41c",
+      "result_id": "72d279b3-9abf-47db-802c-9b5c87d8365d"
+    },
+    {
+      "claim_id": "a8f88105-c8c8-4d55-bded-aedbb1c07249",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "630fec5b-5190-4086-8c20-ef9b8ef9b669",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "90f97092-c213-499f-8d7c-65b87f828aa6",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "fa6cd468-21f4-412b-b1d4-2a057de01551",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "4a31f124-0317-46d9-9bc2-db62579a2656",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "8e38a708-1700-4559-b09f-66aae72b2eca",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "aaa29960-4f12-4ea2-a3c3-ec6fa4cad88d",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "908031f9-087e-4b1a-b50b-db4c673cedaf",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "0a9a4252-377b-4cc3-ad81-05fd744dfc2c",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "8e5e5886-56eb-44a1-9f38-b2ec53628045",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "13ea344d-4891-46f2-a357-78757c6dc4b5",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "c2a50318-2420-4e94-bd9c-71a8e64b82dc",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "58a3ddce-5db3-463e-a68c-eb66c8a2171d",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "6f411ee7-237f-4084-b3f0-4aa8276b9beb",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "3d22f750-bcf2-4561-9997-843488353008",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "61b7bad6-8285-46c5-a83d-56dd5f701eab",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "08942db7-fe13-435b-bb6a-bd1d9588acbc",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "94290b91-a622-4b0f-a4e5-e350d5671c49",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "8858207c-c593-4caa-a002-a2d0d68429cb",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "6643afed-826c-4ee6-be66-f9d10ad57780",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "103dae77-14f1-4eb5-9798-5231b75e8812",
+      "result_id": "97a96ce2-cabf-4be0-95e0-be6d3bd59797"
+    },
+    {
+      "claim_id": "b131ec77-85d7-4dda-ad66-58f455305646",
+      "result_id": "624ba236-ba7c-4129-9754-45049e1bb753"
+    },
+    {
+      "claim_id": "42cfced6-59c5-476e-a41f-7738e4f5f3c0",
+      "result_id": "624ba236-ba7c-4129-9754-45049e1bb753"
+    },
+    {
+      "claim_id": "d7b13499-e537-4ad6-ba5e-4d355fd35950",
+      "result_id": "624ba236-ba7c-4129-9754-45049e1bb753"
+    },
+    {
+      "claim_id": "f712c9ab-e4d8-4954-a388-0ab516a35d7f",
+      "result_id": "624ba236-ba7c-4129-9754-45049e1bb753"
+    },
+    {
+      "claim_id": "f9f52847-f7a2-4379-b445-cb968e628e38",
+      "result_id": "624ba236-ba7c-4129-9754-45049e1bb753"
+    },
+    {
+      "claim_id": "0eab5828-3f8c-497c-9648-2b6cd88ee72f",
+      "result_id": "624ba236-ba7c-4129-9754-45049e1bb753"
+    },
+    {
+      "claim_id": "68e3ae06-c94f-435f-a1c2-e2c073f14445",
+      "result_id": "624ba236-ba7c-4129-9754-45049e1bb753"
+    },
+    {
+      "claim_id": "32fab354-80d1-49c7-8e74-d23f80af3f18",
+      "result_id": "e8e5dd0b-f7eb-4edb-970e-1dc0b96c4362"
+    },
+    {
+      "claim_id": "0f08004b-f7e0-4304-8ac9-54b13dbe6839",
+      "result_id": "e8e5dd0b-f7eb-4edb-970e-1dc0b96c4362"
+    },
+    {
+      "claim_id": "d29caef2-bc33-420e-af80-a824b689add9",
+      "result_id": "e8e5dd0b-f7eb-4edb-970e-1dc0b96c4362"
+    },
+    {
+      "claim_id": "ec92f87c-b067-4fec-be15-1365e7f0f660",
+      "result_id": "e8e5dd0b-f7eb-4edb-970e-1dc0b96c4362"
+    },
+    {
+      "claim_id": "a0a7afef-72e1-4c7a-b3cf-df70abe32226",
+      "result_id": "e8e5dd0b-f7eb-4edb-970e-1dc0b96c4362"
+    },
+    {
+      "claim_id": "b079154a-0b6a-4d8c-b070-8194ba4f10fd",
+      "result_id": "e8e5dd0b-f7eb-4edb-970e-1dc0b96c4362"
+    },
+    {
+      "claim_id": "42476a83-3da3-4020-bc4a-318d4873a83e",
+      "result_id": "e8e5dd0b-f7eb-4edb-970e-1dc0b96c4362"
+    },
+    {
+      "claim_id": "1231b7c6-e2f7-464d-bd8f-53d200071c33",
+      "result_id": "e8e5dd0b-f7eb-4edb-970e-1dc0b96c4362"
+    },
+    {
+      "claim_id": "a1a4df9e-1e45-4495-a1e7-9d3c1244bc1e",
+      "result_id": "e8e5dd0b-f7eb-4edb-970e-1dc0b96c4362"
+    },
+    {
+      "claim_id": "ebbaf9a2-f4a1-40b1-939a-15237a792cdc",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "2ea98e91-23c0-4851-b791-17d95f1f0b13",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "03f38423-682e-43f1-ad7c-771c1f2cc831",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "e9daeb4f-e463-4214-84cb-93af136637c9",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "c87c1ecc-12f7-408b-abc0-88297cb97c78",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "e0b86699-ce18-4a4b-9ec5-b1ab6cdbc5d0",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "e2f0c078-f40d-4bf6-a644-7a8aac0a9551",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "8e38a708-1700-4559-b09f-66aae72b2eca",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "aaa29960-4f12-4ea2-a3c3-ec6fa4cad88d",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "a7765929-b7db-44ec-96e2-1b72a9f9bb66",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "e0879974-4305-497e-9bfe-73beeb4130a6",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "d413967e-dce4-4b24-a3d0-3b5b28c3e744",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "ec1aef80-6500-4cf4-8617-459d458ace5c",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "61dfe936-f1ea-4a4d-9d99-284609e739eb",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "61e149f2-4f4a-409a-80dd-92af43986b32",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "2136099b-b3b5-4262-835a-0125b9001f18",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "ea0f49c1-df58-43b8-b841-5565065de5d8",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "b376dc23-c97f-4847-bf9e-3037ece1d0a2",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "5ffd2223-6639-41d4-8e7c-c1e6165c49da",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "c3b58b77-8b5a-4330-aedc-3da1ee75dfa2",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "d68b6dc7-831f-4eab-bb66-0ff35745c589",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "704c2d29-79a9-4940-9f3f-fe50bc019959",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "970c4b51-4b78-4c9b-a2a5-a04573ef5f91",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "ef36d6a7-008d-4b7a-abe7-e911746d8138",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "8c0736eb-1e90-4cd9-8c86-d810359edf58",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "c491537e-9e40-4c94-a033-af1b2cb2774e",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "28aec5b0-7b1c-483c-8fec-53c9d075f92d",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "7fc4ec0e-2421-44e8-b73e-78b3724952a8",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "2e3e0dd5-7f1b-480b-8be9-e4e7a987d766",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "e66166da-ab38-4c45-9ff2-e83719f18bbb",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "90f088ad-3bee-4042-b89f-e1c0a91bb037",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "ccfa8ab6-1257-47eb-b4c2-00cb0e37b5b9",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "1e98f0ca-1fc2-4a46-866b-ce11e392bda5",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "86b5fd75-4574-4e7a-b6df-79bc019253d4",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "5a975577-4242-463e-b2a1-05798b292ef2",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "fc5897b5-b6b7-48e7-8150-02c5e5435316",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "bc79a5a6-8ef9-495f-b76f-6fa6d734a502",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "a7a90f2f-86e5-41cb-975c-4125ff6bda2f",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "1e25cf91-c3ea-4816-8987-bc95b57fc815",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "bdadeb47-875c-4b28-b199-b9361a76d1c3",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "16e7e90e-5b36-437c-b1ea-706bb8c057cd",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    },
+    {
+      "claim_id": "220c750b-5877-404b-b7e7-178d234ba587",
+      "result_id": "c7122707-727d-421e-bcc9-dbf650fb2795"
+    }
+  ],
+  "comparisons": []
+}

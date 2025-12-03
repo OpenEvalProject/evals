@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C58"
+    ],
+    "result": "On parasol RGCs exhibit stimulus-dependent spatial integration: they respond nonlinearly to contrast-reversing gratings but near-linearly to natural images, while Off parasol RGCs respond nonlinearly to both stimulus types. This spatial integration in On parasol cells varies considerably across different naturalistic stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3-C6, and C58 collectively demonstrate a clear stimulus-dependent difference in spatial integration for On parasol cells, supported by experimental data in Figures 1B and 1D, with appropriate citations to previous work. The contrast with Off parasol cells strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Excitatory synaptic inputs to On parasol cells show significantly greater nonlinear spatial integration (NLI = 0.25 \u00b1 0.05) than spike outputs (NLI = 0.08 \u00b1 0.07, p < 0.01, n = 10) in response to natural image patches. Nonlinear inhibitory input increases systematically with excitatory nonlinearity, and patches with strong nonlinear excitatory input have I/E ratios >3, sufficient to impact spike output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are well-supported by quantitative data in Figure 2 with appropriate statistical analysis (p-values, sample sizes, error bars). The systematic relationship between excitatory and inhibitory nonlinearity and the I/E ratio threshold are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C44",
+      "C45"
+    ],
+    "result": "Inhibitory input to On parasol RGCs consists of two components: feedforward inhibition (from On pathways, linear spatial integration) and crossover inhibition (from Off pathways, strongly nonlinear spatial integration). Crossover inhibitory input alone is sufficient to cancel nonlinear excitatory input and accounts for the linear spike responses to natural images. Off retinal circuits are the main source of inhibitory input regulating spatial integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15, C44-C45 are supported by clustering analysis in Figure 3 and modeling in Figure 4, with appropriate citations. The distinction between feedforward and crossover inhibition is well-established, and the modeling demonstrates the sufficiency of crossover inhibition for linearization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C40",
+      "C41"
+    ],
+    "result": "On parasol responses to flashed and contrast-reversing gratings show strong time dependence: offset responses exceed onset responses (57 \u00b1 7 vs 0 \u00b1 5 spikes, p < 0.001, n = 7), with twofold larger I/E ratios at onset than offset (p < 0.01). During contrast-reversing gratings, the first half-cycle shows substantially larger I/E ratios and smaller spike responses than subsequent cycles. Off parasol cells exhibit opposite behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21, C40-C41 are well-supported by quantitative data in Figure 5 with appropriate statistics. The time-dependent changes in I/E ratio and spike responses are clearly demonstrated, and the On/Off asymmetry is documented in supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C32"
+    ],
+    "result": "Cone photoreceptor adaptation creates three key features in responses to sinusoidal stimuli: smaller amplitude on first cycle, increment/decrement asymmetry, and faster kinetics for dark-to-light transitions. Models incorporating adapting cones predict 70-80% larger I/E ratios on the first grating cycle and temporal delays between excitatory and inhibitory inputs, matching experimental observations. Cone adaptation can explain the majority of the time dependence of On parasol responses to contrast-reversing gratings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26, C32 are supported by cone recordings in Figure 6A, biophysical modeling in Figure 6B-C, and experimental validation in Figure 7. The model predictions match experimental data well, and the conclusion about cone adaptation's role is justified by the combined modeling and experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Transformed grating stimuli designed to minimize cone adaptation effects altered cone responses as predicted and largely eliminated the time-dependent changes in On parasol responses. The decrease in I/E ratio and suppression of spike responses at grating onset were absent for transformed stimuli, and the phase shift between excitatory and inhibitory inputs was almost entirely eliminated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by experimental data in Figure 7B and 7D, showing that the light-adaptation clamp procedure successfully manipulated cone responses and altered RGC responses as predicted. This provides strong causal evidence for the role of cone adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C53"
+    ],
+    "result": "For naturalistic inputs with simulated eye movements, cone adaptation substantially attenuates cone response amplitudes and systematically increases I/E ratios compared to models with non-adapting cones. Adaptation substantially increased the number of image patches with I/E ratios >3, shifting the balance in favor of inhibitory input and decreasing sensitivity to spatial structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C53 are supported by modeling predictions in Figure 8 showing systematic effects of cone adaptation on I/E ratios across many natural images. The analysis appropriately extends the grating findings to naturalistic stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C59"
+    ],
+    "result": "The asymmetry in spatial integration between On and Off parasol cells enables joint discrimination of image patches with similar positive luminance but different spatial contrast. Image patches with positive local luminance and high spatial contrast activate both On and Off cells, and the linear On/nonlinear Off combination provides better discrimination than the reverse configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C59 are supported by modeling analysis in Figure 9 and supplementary figures. The constant-response contour analysis clearly demonstrates the enhanced discrimination capability, though this is a computational prediction rather than direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Linearity of spike responses requires that nonlinear subunits for excitatory and inhibitory circuits have similar spatial scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by modeling analysis in Figure 4D showing that doubling inhibitory subunit size substantially decreased the ability of inhibition to cancel excitatory nonlinearities. This is a clear prediction from the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Synaptic depression in upstream bipolar cells is unlikely to play a major role in the asymmetry at grating onset, as spatially uniform light steps elicited large excitatory inputs and strong spike responses in both On and Off parasol cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by experimental data in Figure 4\u2014figure supplement 1 and appropriate citations. The argument effectively rules out synaptic depression as a major contributor to the observed effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Rapid cone adaptation (<100 ms time constant) limits excitatory input amplitude at grating onset. For subsequent cycles, cones encountering light increments start from higher gain states and respond faster than those encountering decrements, increasing excitatory input relative to inhibitory input and creating a temporal window favoring excitation. These effects are absent without adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide a mechanistic explanation supported by the cone model in Figure 6 and are consistent with the experimental observations. The explanation logically connects cone adaptation properties to RGC response patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C42"
+    ],
+    "result": "Inhibitory input contributes minimally to On parasol responses to spatially uniform stimuli, and nonlinear spatial integration in excitatory input is typically generated by rectifying nonlinearities at bipolar output synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C42 are supported by appropriate citations to previous work. These establish important background context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "On and Off RGCs exhibit multiple asymmetries beyond response polarity, including differences in receptive field size, contrast sensitivity, rectification, and E/I balance. Some asymmetries have been suggested to be important for population coding of natural inputs, and asymmetries differ across RGC types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by appropriate citations to previous work. These provide important context for interpreting the current findings about On/Off asymmetries in spatial integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C67"
+    ],
+    "result": "Macaque retinas were obtained from the Regional Primate Research Center, stored in oxygenated Ames medium at 32-34\u00b0C, and dark adapted for >1 hr. Parasol RGCs were targeted based on soma size and light step responses. Experiments used mean light levels of 4000 R*/M or L-cone/s, and image patches had average spatial contrast of 0.3. 60-70% of preparations met sensitivity criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64, C67 describe standard methodological details that are clearly stated in the Materials and methods section. These are appropriate for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Cone responses are well captured by an empirically derived biophysical model of cone phototransduction, with all parameters set by previous measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by reference to Figure 6\u2014figure supplement 1 and appropriate citation. The model validation is shown in supplementary data.",
+    "result_type": "MINOR"
+  }
+]

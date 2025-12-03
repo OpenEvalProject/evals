@@ -1,0 +1,1819 @@
+{
+  "submission": {
+    "id": "1b66e369-13f4-4529-8f7b-99f3879bba02",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:15:06.221489Z",
+    "updated_at": "2025-12-03T08:15:06.221489Z"
+  },
+  "content": [
+    {
+      "id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "submission_id": "1b66e369-13f4-4529-8f7b-99f3879bba02",
+      "content_type": "manuscript",
+      "content_text": "# circFL-seq reveals full-length circular RNAs with rolling circular reverse transcription and nanopore sequencing\n\n## Authors\n\n- Zelin Liu<sup>1</sup> ([ORCID: 0000-0002-3516-3999](https://orcid.org/0000-0002-3516-3999))\n- Changyu Tao<sup>2</sup>\n- Shiwei Li<sup>3</sup>\n- Minghao Du<sup>4</sup>\n- Yongtai Bai<sup>3</sup>\n- Xueyan Hu<sup>1</sup>\n- Yu Li<sup>5</sup>\n- Jian Chen<sup>5</sup>\n- Ence Yang<sup>1</sup> ([ORCID: 0000-0002-9526-2737](https://orcid.org/0000-0002-9526-2737)) \u2020\n\n### Affiliations\n\n1. Institute of Systems Biomedicine, Department of Medical Bioinformatics, School of Basic Medical Sciences, Peking University Health Science Center, Key Laboratory for Neuroscience, Ministry of Education/National Health Commission of China , NHC Key Laboratory of Medical Immunology (Peking University) Beijing China\n2. Department of Human Anatomy, Histology & Embryology, School of Basic Medical Sciences, Peking University Health Science Center Beijing China\n3. Department of Radiation Medicine, School of Basic Medical Sciences, Peking University Health Science Center Beijing China\n4. Department of Microbiology & Infectious Disease Center, School of Basic Medical Science Peking University Health Science Center Beijing China\n5. Chinese Institute for Brain Research Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nCircular RNAs (circRNAs) act through multiple mechanisms via their sequence features to fine-tune gene expression networks. Due to overlapping sequences with linear cognates, identifying internal sequences of circRNAs remains a challenge, which hinders a comprehensive understanding of circRNA functions and mechanisms. Here, based on rolling circular reverse transcription and nanopore sequencing, we developed circFL-seq, a full-length circRNA sequencing method, to profile circRNA at the isoform level. With a customized computational pipeline to directly identify full-length sequences from rolling circular reads, we reconstructed 77,606 high-quality circRNAs from seven human cell lines and two human tissues. circFL-seq benefits from rolling circles and long-read sequencing, and the results showed more than tenfold enrichment of circRNA reads and advantages for both detection and quantification at the isoform level compared to those for short-read RNA sequencing. The concordance of the RT-qPCR and circFL-seq results for the identification of differential alternative splicing suggested wide application prospects for functional studies of internal variants in circRNAs. Moreover, the detection of fusion circRNAs at the omics scale may further expand the application of circFL-seq. Taken together, the accurate identification and quantification of full-length circRNAs make circFL-seq a potential tool for large-scale screening of functional circRNAs.\n\n## Introduction\n\nCircular RNAs (circRNAs), a class of covalently closed RNA molecules formed via back-splicing (BS) or lariat precursors, are involved in various biological processes and pathogenesis by fine-tuning the eukaryotic gene regulatory network (Kristensen et al., 2019; Chen, 2020). CircRNAs directly or indirectly regulate target gene expression via diverse mechanisms, which are largely determined by circRNA sequence features. For example, circRNAs may complementarily bind to miRNAs as sponges (Hansen et al., 2013; Memczak et al., 2013); circRNAs may interact with proteins as scaffolds (Du et al., 2017) or structural components (Li et al., 2015) based on sequence motifs; and several circRNAs are also able to translate into peptides (Zhang et al., 2018; Gao et al., 2021 ) through internal ribosome entry sites. Thus, full-length sequences of circRNAs have become the foundation for ascertaining their biological functions in transcriptional plasticity and complexity.\n\nBy detecting the back-splicing junctions (BSJs) of circRNAs with deep sequencing, short-read RNA sequencing discriminates circRNAs with low expression (as low as 1% polyadenylated RNA; Salzman et al., 2013) from their linear cognates. The full-length sequences of short circRNAs (<500 nt) can be inferred from a patchwork of BSJs and short fragments via bioinformatic approaches (Zheng et al., 2019; Wu et al., 2019b). However, a full understanding of circRNA isoforms is impossible by using short reads. Single-molecule long-read sequencing has shown methodological advances in identifying circRNAs at the isoform level. Pacific Biosciences (PacBio) sequencing has been applied to PCR products for target full-length circRNA sequences in a low-throughput and high-cost way (You et al., 2015). Very recently, several Oxford Nanopore Technology (ONT)-based methods have also been employed in genome-wide full-length circRNA reconstruction (Rahimi et al., 2019; Xin et al., 2021a; Zhang et al., 2021a).\n\nHere, we developed a high-throughput circRNA sequencing method, termed circFL-seq, with rolling circular reverse transcription (RCRT) (Boss and Arenz, 2020; Das et al., 2019) and nanopore long-read sequencing for the identification of circRNA at the isoform level. With a customized computational pipeline, we identified 77,606 high-quality full-length circRNA isoforms from seven cell lines and two human tissues. We validated circFL-seq for full-length circRNA detection and quantification by comparison to annotated circRNAs, RNA-seq, isoCirc, CIRI-long, and RT-qPCR results. By providing full-length circRNA sequences, circFL-seq allowed the study of sequence features, alternative splicing (AS), and differential expression at the isoform level. In addition, circFL-seq showed the ability to detect fusion circRNAs (f-circRNAs), which were further experimentally validated. Taken together, circFL-seq benefits from RCRT and long-read sequencing and has shown advantages for identifying high-quality full-length circRNAs at a low cost.\n\n## Results\n\n### Sequencing full-length circRNA with circFL-seq\n\nWe developed the circFL-seq approach that utilized RCRT with long-read sequencing for full-length circRNA profiling (Figure 1A). First, circRNA was enriched by rRNA depletion, poly(A) tailing (to increase the efficiency of RNase R Xiao and Wilusz, 2019), and RNase R treatment. Then, first-strand cDNA was synthesized with random primers (P1-N6) by RCRT for circRNA and regular reverse transcription (RT) for linear residuals. After tailing poly(A) of the first strand and synthesizing the second strand with an anchor primer (P2-T24), the double-strand cDNA was amplified with P1 and P2 to construct the final circFL-seq library. To benchmark full-length circRNA sequences of the circFL-seq library, eight known circRNAs were selected for PCR validation in the HEK293T library. Rolling circles of target circRNA (Figure 1B; Figure 1\u2014source data 1) and the full-length sequences obtained with Sanger sequencing (Figure 1\u2014figure supplement 1) indicated that the circRNAs were successfully amplified. Finally, the circFL-seq library was sequenced by long-read sequencing on the ONT platform.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental operation of circFL-seq consisted of circRNA enrichment, library construction, and nanopore sequencing. (B) PCR validation of rolling circle products from the circFL-seq cDNA library. The yellow and green lines indicate the positions of the PCR primers. The upward triangle, downward triangle, and circle symbols denote the 0-circle, 1-circle, and 2-circle cDNA products. (C) Computational pipeline of circFL-seq. circFL-seq clean reads were directly used in RG mode or were self-corrected for consensus sequences in cRG mode to reconstruct full-length circRNAs. circRNA, circular RNA.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** PCR was performed with the circFL-seq library of HEK293T cells as a template.\n\nBased on the nature of RCRT products in circFL-seq libraries, full-length sequences of circRNAs were reconstructed and structurally annotated with a customized computational pipeline. For the reference guide (RG) mode, clean reads (qscore\u22657) were aligned to the reference genome to identify potential back-spliced junctions (BSJs) by the sign of chiastic overlapping segments (Figure 1C). Then, reads were realigned to pseudo-references, generated by concatenating two sequences of potential BSJ regions, to accurately localize circRNA BSJs. In addition, full-length structures were adjusted with multiple alignments from rolling circular segments to improve the construction. To complement the RG mode for low-quality reads, the cRG mode identified consensus sequences (CS) from clean reads with two or more rolling circles, and triply duplicated CS were used as query sequences in RG mode to improve circRNA detection. The strand origin of circRNAs, especially non-canonical BSJs, was predicted by the primer sequences P1, P2, and P2-T24.\n\n### CircRNA profiling of eight libraries\n\nTo assess the performance of circFL-seq, we applied circFL-seq to eight libraries of six human cell lines (two replicates from HeLa cells, two replicates from SKOV3 cells, one from MCF7 cells, one from VCaP cells, one from SH-SY5Y cells, and one from HEK293T cells) and produced 30 M clean reads sequenced by using one PromethION Flow Cell (Figure 2\u2014figure supplement 1A). We detected 197,252 isoforms of 162,409 circRNA BSJs from 1.3 M reads that contained full-length circRNA sequences (Figure 2A; Figure 2\u2014figure supplement 1B; Figure 2\u2014figure supplement 2A; Supplementary file 1), 2% of which were additionally detected by cRG mode, which refined low-quality reads with CS (Figure 2\u2014figure supplement 2B-D). Quantification of replicate samples at both the BSJ and isoform levels was highly consistent (Pearson\u2019s r>0.93; Figure 2A and B; Figure 2\u2014figure supplement 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig2-v2.jpg)\n\n**Figure 2.:** (A) Stacked bar plot represents the number of full-length circRNA isoforms detected by RG and cRG for six cell lines. (B) Expression correlation matrix for circRNA BSJs and isoforms of all samples. The color scale corresponds to Pearson\u2019s correlation coefficient. (C) Stacked bar plot represents the number of circRNA isoforms with read counts\u22655 from known or novel BSJs based on the circRNA database. (D) Boxplot showing the length distribution per isoform for circRNA isoforms with read counts\u22655 in all samples. Box lefts or rights are lower or upper quartiles, the bar is the median, and whiskers are the median\u00b11.5\u00d7interquartile range. (E) Stacked bar plot showing the fraction of exon numbers per isoform for circRNA isoforms with read counts\u22655 in all samples. (F) Boxplot showing the length distribution per exon for circRNA isoforms with read counts\u22655 in all samples. Box bottoms or tops are lower or upper quartiles, the bar is the median, and the whiskers are the median\u00b11.5\u00d7interquartile range. (G) Diagram of four types of alternative splicing (AS) events in circRNA: exon skipping (ES), alternative 3\u2032 splice site (A3SS), alternative 5\u2032 splice site (A5SS), and intron retention (IR). (H) Plot showing the coverage of full-length circRNA reads in the position of CDR1as for circFL-seq data of six cell lines (replicate data were merged). Structures of the two isoforms of CDR1as are shown at the bottom. (I\u2013K) AS events (one ES and one IR) of circ-TMEM138 detected by circFL-seq (I), agarose gel electrophoresis (J), and Sanger sequencing (K). Red/blue arcs are forward/reverse primers for validation of back-splicing junctions (BSJs) and forward splicing junctions (FSJs). Asterisks denote FSJs. Downward triangles denote BSJs. BSJ, back-splicing junction; circRNA, circular RNA; RG, reference guide.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Histograms showing the distribution of clean reads (blue) and full-length circRNA reads (red) for each sample. The percentages represent the circRNA read proportion in clean reads. (B) Histograms showing the distribution of full-length circRNA read amounts. circRNA, circular RNA.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Stacked bar plot representing the number of full-length circRNA isoforms detected by RG and cRG for eight samples. (B) Boxplot showing the read qscore distribution of circRNA isoforms of all samples. The qscore representing the read quality was extracted from the sequencing summary file. Boxplot showing the error rate of mismatches (C) and indels (D) for raw reads and consensus sequence (CS) of cRG-identified circRNA isoforms. circRNA, circular RNA; RG, reference guide.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** CircRNA BSJs/isoforms with read counts>0 in at least one replicate were included. BSJ, back-splicing junction; circRNA, circular RNA.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The classification is based on the positions of BSJs and boundary exons following the principles below. Exonic: the circRNA body is totally located inside of one gene from the same strand. Both of the BSJs are identical to annotated junctions. Intronic: the circRNA body is also totally located inside one gene from the same strand. However, at least one of the boundary exons does not overlap with any annotated exon. Novel splicing site (NSS): the circRNA body is also totally located inside one gene from the same strand. However, both boundary exons overlap with annotated exons, with at least one BSJ different from the annotated linear junction. Intergenic: the whole body of circRNA is located in an intergenic region. Novel UTR: the circRNA body partially overlaps with only one gene from the same strand, and at least one BSJ is located in an intergenic region. Antisense: there is no overlap between circRNA and any gene from the same strand. However, the circRNA overlaps gene(s) from the antisense strand. Read-through: BSJs are located in different genes with the same strand. BSJ, back-splicing junction; circRNA, circular RNA.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** CircRNA isoforms were classified based on database status and annotation types. (A) For each annotation type (exonic, intronic, NSS, intergenic, novel UTR, antisense, and read-through), the cumulative distribution of read counts is classified to known and novel status based on whether their BSJs are annotated in the circRNA database. (B) For known and novel status, the cumulative distribution of read counts is classified into seven annotation types. BSJ, back-splicing junction; circRNA, circular RNA.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** RT-PCR was performed with RNase R-treated RNA. The coverage of full-length circRNA reads mapped to the reference genome is shown. circRNA, circular RNA.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** RT-PCR was performed with RNase R-treated RNA. The coverage of full-length circRNA reads mapped to the reference genome is shown. A3SS, alternative 3\u2032 splice site; alternative 5\u2032 splice site; circRNA, circular RNA.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** RT-PCR was performed with RNase R-treated RNA. The coverage of full-length circRNA reads mapped to the reference genome is shown. circRNA, circular RNA.\n\nBased on BSJs and boundary exons identified by circFL-seq, we classified circRNAs into seven types: exonic, intronic, novel splicing site (NSS), intergenic, novel UTR, antisense, and read-through (Figure 2\u2014figure supplement 4). For high-quality circRNA isoforms (read counts\u22655), the exonic type accounted for 73.2% of the identified circRNA species, while only 0.1% were from read-through (Figure 2C). Most exonic types (99.8%) could be verified in at least one database (Gla\u017ear et al., 2014; Chen et al., 2016; Dong et al., 2018; Liu et al., 2019; Vo et al., 2019; Huang et al., 2021; Figure 2C), which could be attributed to their higher expression levels (Figure 2\u2014figure supplement 5). The median length of each type varied from 402 nt of the intergenic type to 618 nt of read-throughs (Figure 2D), indicating that a notable proportion of circRNAs>500 nt cannot be reconstructed by RNA-seq. Read-through circRNAs contained more exons (Figure 2E), while the exon length of single-exon circRNA was significantly longer than that of multiple-exon circRNA (p<2.2\u00d710\u201316; Figure 2F).\n\nFrom 65,656 isoforms of 35,251 high-quality circRNA BSJs (read counts\u22655), we identified 23,267 internal AS events (Supplementary file 2), including 44.3% exon skipping (ES), 28.1% alternative 3\u2032 splicing site (A3SS), 24.1% alternative 5\u2032 splicing site (A5SS), and 3.5% intron retention (IR) events (Figure 2G). Specifically, IR events increased circRNA length by 289 nt on average (from 363 to 652 nt), which may influence their cellular localization (Huang et al., 2018). circFL-seq accurately detected the full length of two isoforms (1485 and 1301 nt) generated by the IR event of CDR1as (Hansen et al., 2011; Figure 2H). We further experimentally verified 13 AS events (5 of ES, 3 of A3SS, 1 of A5SS, and 4 of IR) of 23 isoforms from 11 high-quality circRNAs in the HeLa cell line. With divergent primers to amplify both BSJs and alternative spliced forward splicing junctions (FSJs), all but an A3SS event were validated by Sanger sequencing (Figure 2I\u2013K; Figure 2\u2014figure supplements 6\u20138).\n\n### Comparison with RNA-seq, isoCirc, and CIRI-long for circRNA detection\n\nBased on read-spanning BSJs, short-read sequencing has long been used for genome-wide characterization of circRNAs. Thus, for comparison, eight RNA-seq libraries (150 bp\u00d72) with the same circRNA enrichment method for the same six cell lines (Pearson\u2019s r>0.90 for replicates, Figure 3\u2014figure supplement 1) were generated and sequenced by the Illumina HiSeq X Ten platform. A total of 95,371 circRNA BSJs were detected by CIRI2 (Gao et al., 2018; Supplementary file 3). BSJ reads accounted for 0.15\u20130.32% of all RNA-seq reads, an amount 10 times lower than that of full-length circRNA reads with circFL-seq (2.2\u20138.5%). Compared to known BSJs that have been annotated in the database, the proportion of overlapping BSJs identified by RNA-seq seemed to be larger than that identified by circFL-seq (76.7% vs. 40.3%) (Figure 3\u2014figure supplement 2). However, when focusing on high-quality BSJs (read counts\u22655), the proportion obtained with circFL-seq (78.9%) was similar to that obtained with RNA-seq, indicating that more reads are required to confidently identify circRNAs by ONT (Figure 3\u2014figure supplement 3). As expected, the full-length construction by RNA-seq was highly dependent on circRNA length (Figure 3\u2014figure supplement 4). Approximately 96.3% of full-length circRNAs reconstructed by RNA-seq were less than 500 nt in length, while 44.4% of circRNA isoforms detected by circFL-seq were more than 500 nt in length.\n\nA recent method, isoCirc, identified full-length circRNAs by rolling circle amplification (RCA) followed by nanopore sequencing. With a single circFL-seq library of the HEK293 cell line sequenced by one MinION Flow Cell, we compared the features of the RCRT strategy and RCA strategy. circFL-seq produced more full-length circRNA reads per 109 raw bases than isoCirc (11,791 vs. 5820) (Figure 3\u2014figure supplement 5A-C) but identified fewer circRNA isoforms (Figure 3\u2014figure supplement 5D). However, 75.3% of circFL-seq-detected BSJs were annotated in the database, while the percentage of isoCirc was 43.8% (Supplementary file 4). The difference might be caused by the higher read coverage for confident circRNAs of circFL-seq (Figure 3\u2014figure supplement 5E) or by the higher sensitivity of circRNA detection of isoCirc. Although the ground truth of all BSJs was unknown, we found that circRNAs with higher read counts were more likely to be included in the database for both methods (Figure 3\u2014figure supplement 5F-I). Thus, we evaluated the precision of the two methods by top expressed circRNAs, which could eliminate the effect of the high noise of nanopore reads and the disturbance of low-expressed circRNAs without annotation in the database. All the top 100 expressed BSJs identified by circFL-seq and RNA-seq (collected from isoCirc study) were annotated in databases. In contrast, 22 of the top 100 BSJs identified by isoCirc were not supported in the databases or the RNA-seq and circFL-seq results (Figure 3\u2014figure supplement 5M). Specifically, two products among the 22 BSJs were from histone genes with linear RNAs resistant to RNase R degradation (Xiao and Wilusz, 2019). We also failed to experimentally validate the two potential circular products with divergent primers. At the isoform level in the HEK293 cell line, 87.0% of the common BSJs (10,702/12,307) between circFL-seq and isoCirc identified at least one identical isoform. Inconsistent isoforms usually had lower read counts with both circFL-seq and isoCirc (Figure 3\u2014figure supplement 5N,O), suggesting that accurate construction of full-length circRNA requires higher read coverage. In addition, circFL-seq identified more than two times ES, A3SS, and A5SS but similar numbers of IR events to isoCirc (Supplementary file 4), which may be due to the more full-length reads of circFL-seq.\n\nWe then compared circFL-seq to isoCirc in two normal human tissues (brain and testis) with high sequencing depth. isoCirc built multiple libraries for each sample and sequenced on multiple MinION Flow Cells to obtain a high sequencing depth, while circFL-seq built one library for each tissue and sequenced the two libraries on one PromethION Flow Cell to obtain a comparable sequencing depth. isoCirc and circFL-seq detected 79,312 and 34,046 known BSJs, respectively. Known BSJs detected by isoCirc were more likely (38,846 vs. 2511) to be expressed at low levels (read counts=1), indicating that more libraries were more sensitive for detecting circRNAs, overcoming bias and artifacts related to sampling, RNase R treatment, cDNA synthesis, and amplification.\n\nBoth circFL-seq and CIRI-long employed an RCRT strategy for library construction. Although the two methods were applied in different species (human vs. mouse), the computational pipelines were compatible and could be compared with each other. We employed the computational pipeline of circFL-seq and CIRI-long to analyze HEK293 cells library of circFL-seq and a mouse brain library of CIRI-long, respectively. circFL-seq detected 27,869 BSJs from HEK293 cells (75.3% known in the database) and 18,396 BSJs from the mouse brain (68.6% known in the database), while CIRI-long detected 15,242 BSJs from HEK293 cells (76.9% known in the database) and 9258 BSJs from the mouse brain (69.9% known in the database) (Supplementary file 5). Thus, the computational pipeline of circFL-seq was more sensitive with similar precision for BSJ detection. For AS events, circFL-seq identified more than 4.5 times the ES events, 12.4 times the A3SS events, 8.5 times the A5SS events, and 1.5 times the IR events, suggesting a better sensitivity of circFL-seq in AS event detection, although ground-truth circRNA isoforms were required for performance evaluation (Supplementary file 5).\n\n### Evaluation of quantification of full-length circRNAs\n\nWith the benefit of high read coverage, circFL-seq is able to quantify circRNA expression levels. For BSJs identified by circFL-seq and RNA-seq, the amounts between the two methods were significantly correlated (Pearson\u2019s r=0.41\u20130.68, Figure 3A; Figure 3\u2014figure supplement 6). We then detected differentially expressed circRNAs (DECs) between HeLa and SKOV3 cell lines as a test. For the highly expressed BSJs (read counts\u226510 in at least two samples and detected by both methods), the fold changes in HeLa to SKOV3 cells were highly concordant with the RNA-seq results (Pearson\u2019s r=0.78, Figure 3B). By using DESeq2 (Love et al., 2014), circFL-seq detected 89 DECs, 58 of which were also identified by RNA-seq. We next selected 16 circRNAs with a wide range of fold changes (7 downregulated, 5 stable, and 4 upregulated in the HeLa cell line) to validate the DECs via RT-qPCR. The consistent circFL-seq and RT-qPCR results for both total RNA (Figure 3\u2014figure supplement 7A-C) and RNase R-treated (Figure 3C and D) samples further supported the capabilities of BSJ quantification.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig3-v2.jpg)\n\n**Figure 3.:** (A) Expression correlation matrix of circRNA BSJ quantified by circFL-seq and RNA-seq for six cell lines. The numbers in the matrix represent Pearson\u2019s correlation coefficients. (B) Comparison of differentially expressed circRNA (DEC) detection between circFL-seq and RNA-seq. Top panel: Venn diagram showing the number of DECs detected by circFL-seq (green), RNA-seq (purple), and both methods (orange). Bottom panel: scatter plot showing the correlation of fold change (log base 2) for HeLa and SKOV3 cells between circFL-seq and RNA-seq. (C) Scatter plot showing the correlation of the expression levels of 16 circRNA BSJs for HeLa (left) and SKOV3 (right) cells between circFL-seq and RT-qPCR. (D) Scatter plot showing the correlation of fold changes (log base 2) of the 16 BSJs for HeLa and SKOV3 cells between circFL-seq and RT-qPCR. (E) Plot showing the adjusted coverage of full-length circRNA reads and RNA-seq reads in the position of circRNA from PLOD2. The circular structures of the two circRNA isoforms are shown in the lower panel. (F) Scatter plot showing the correlation of the transcript ratio of 18 circRNA isoforms from nine circRNA BSJs (each BSJ has two isoforms) for HeLa (left) and SKOV3 (right) cells between circFL-seq and RT-qPCR. The relative expression of target BSJs/isoforms quantified by RT-qPCR was determined with RNase R-treated samples and GAPDH from total RNA without RNase R treatment as a reference. (G) Scatter plot showing the correlation of the differential ratio (\u2206ratio) of the 18 isoforms for HeLa and SKOV3 cells between circFL-seq and RT-qPCR. The shaded areas denote 95 % confidence intervals. BSJ, back-splicing junction; circRNA, circular RNA.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Expression correlation matrix for circRNA BSJs among six cell lines. The color scale corresponds to Pearson\u2019s correlation coefficients. Scatter plot showing the correlations of BSJs between HeLa (B) or SKOV3 (C) replicates. CircRNA BSJs with read counts > 0 in at least one replicate were included.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** BSJ, back-splicing junction.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Bar plot showing the distribution of known or novel circRNA BSJs with different read counts as the threshold for circFL-seq (A) and RNA-seq (B) data. BSJ, back-splicing junction; circRNA, circular RNA.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** For RNA-seq, full-length circRNAs were reconstructed by CIRI-full. circRNA, circular RNA.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Stacked bar plot showing the number of sequenced bases. circFL-seq includes fail and clean bases. Fail bases are from low-quality reads with qscore<7 and trimmed adapters. (B) Bar plot showing the number of full-length circRNA reads. (C) Bar plot showing full-length circRNA reads per 109 raw sequenced bases. (D) Bar plot showing the number of full-length circRNA isoforms. (E) Cumulative distribution of read counts of BSJs. (F\u2013L) Stacked bar plot showing the distribution of known or novel circRNA BSJs for different read counts. (M) Plot showing the cumulative number of top expressed circRNAs of circFL-seq, isoCirc, and RNA-seq detected in the database. Stacked bar plot showing the distribution of read counts of common circRNA BSJs detected in circFL-seq (N) and isoCirc (O). \u2018Same\u2019 and \u2018different\u2019 represent BSJs w/wo the same isoforms between circFL-seq and isoCirc. The isoCirc analysis in (N, O) combines circRNA results from all six HEK293 isoCirc libraries. BSJ, back-splicing junction; circRNA, circular RNA.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** BSJ, back-splicing junction; circRNA, circular RNA.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** The relative expression of target BSJs and isoforms quantified by RT-qPCR was performed with samples without RNase R treatment.GAPDH from total RNA without RNase R treatment was used as a reference. (A, B) Scatter plot showing the correlation of expression levels of 16 circRNA BSJs for HeLa (A) and SKOV3 (B) cells between circFL-seq and RT-qPCR. (C). Scatter plot showing the correlation of fold change (log base 2) of the 16 BSJs for HeLa and SKOV3 cells between circFL-seq and RT-qPCR. (D, E) Scatter plot showing the correlation of the transcript ratio of 18 circRNA isoforms from 9 circRNA BSJs (each BSJ has two isoforms) for HeLa (D) and SKOV3 (E) cells between circFL-seq and RT-qPCR. (F) Scatter plot showing the correlation of the differential ratio (\u2206ratio) of the 18 isoforms for HeLa and SKOV3 cells between circFL-seq and RT-qPCR. BSJ, back-splicing junction; circRNA, circular RNA.\n\nWe next evaluated the quantification performance of circFL-seq for circRNA AS. From 87 BSJs that had at least two isoforms detected by both HeLa and SKOV3 cell lines, 193 isoforms were used to quantify the internal variants by the ratio of transcripts (target isoforms to total isoforms from the same BSJ). A total of 90 transcripts had more than 0.1 ratio differences between HeLa and SKOV3 cell lines. For example, circ-PLOD2 showed a higher ratio of transcripts without ES in the HeLa cell line (0.83 to 0.45) (Figure 3E). Although RNA-seq data also detected differential read coverage at the skipped exon of PLOD2, short reads were unable to discriminate different sources of ES events, that is, linear or circular isoforms. We selected 18 isoforms of 9 circRNA BSJs from a wide range of ratio differences to perform experimental validation. Both the transcript ratios and ratio differences were consistent with the RT-qPCR results (Figure 3F and G; Figure 3\u2014figure supplement 7D-F), supporting the advantage of circFL-seq for quantification at the isoform level.\n\n### circFL-seq reveals fusion circRNAs with long-read sequencing\n\nF-circRNA is a specific type of circRNA containing two fusion junctions (one junction may come from gene fusion and the other may be produced by BS) and has been found to play important roles in cancer (Guarnerio et al., 2016). Although short reads of RNA-seq may detect both fusion junctions separately, they usually fail to detect f-circRNA for the short read that is not able to combine two fusions in one fragment. circFL-seq was able to detect f-circRNA with rolling circular reads separately mapped to two loci in different chromosomes or a >1 Mbp distance in the same chromosome (Figure 4A). With circFL-seq data, we identified six high-quality f-circRNA isoforms (read count\u22655) affiliated with two fusion genes in the MCF7 cell line. For the five isoforms fused by GBF1 and MACROD2 (Figure 4B), we selected two major isoforms (circ_290 nt for 35% and circ_408 nt for 26%) to perform full-length validation. As expected, more than one product was observed (Figure 4C), and the rolling circles of full-length sequences were validated by Sanger sequencing (Figure 4D, Figure 4\u2014figure supplement 1). For comparison, we also used linear RNA from the MCF7 cell line and RNase R-treated RNA from the HeLa cell line as templates. Intriguingly, we validated the fusion junction of E2\u2013E4 with linear RNA as a template (Figure 4C), suggesting the existence of linear RNA production from the fusion gene. The decreased expression of junctions E2\u2013E4 after RNase R treatment also supported the linear production, which further suggested that the fusion direction is GBF1 to MACROD2 (Figure 4E). In addition, the f-circRNA fused by two antisense genes (PRICKLE2-AS1 and PTPRT-AS1) was experimentally validated (Figure 4F; Figure 4\u2014figure supplement 2). All the major fusion junctions of GBF1/MACROD2 and E3-E1 of PRICKLE2-AS1/PTPRT-AS1 were validated by RNA-seq of the MCF7 cell line (Figure 4G).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig4-v2.jpg)\n\n**Figure 4.:** (A) Diagram of identification of f-circRNA with circFL-seq data. (B) Diagram of five high-quality f-circRNA isoforms (read counts\u22655) fused by GBF1 and MACROD2. The transcript ratio represents the fractions of the isoforms. (C\u2013E) Validation of f-circRNA junctions from GBF1/MACROD2 by agarose gel electrophoresis (C), Sanger sequencing (D), and RT-qPCR (E). (C) Agarose gel electrophoresis showing the RT-PCR products of f-circRNA junctions with RNase R-treated MCF7 and HeLa RNA and poly(A) selected MCF7 RNA as a template. (F) Agarose gel electrophoresis showing the RT-PCR products of f-circRNA junctions from PRICKLE2-AS1/PTPRT-AS1. (G) Information on five f-circRNA junctions detected by circFL-seq, RNA-seq, and RT-qPCR.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The forward and reverse primers are highlighted. f-circRNA, fusion circRNA.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69457/elife-69457-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The forward and reverse primers are highlighted. f-circRNA, fusion circRNA.\n\n## Discussion\n\nIn this study, we established a full-length circRNA sequencing method, circFL-seq, by nanopore sequencing. Compared to short-read sequencing, which is limited to reconstructing short circRNAs (<500 nt), long-read sequencing with circFL-seq has shown advances in comprehensively identifying full-length circRNAs of all sizes (64\u20132334 nt in our data and more than 40% identified isoforms >500 nt). Very recently, isoCirc (Xin et al., 2021a) and CIRI-long (Zhang et al., 2021a) also employed nanopore sequencing to identify full-length circRNAs by utilizing rolling circles. circFL-seq and CIRI-long employ the RCRT strategy, while isoCirc employs the RCA strategy. Benefiting from RCA with a circular cDNA template from ligation of the RT product, isoCirc produces longer reads (up to 50 kb) containing more rolling circles than RCRT-based methods (ca. 1 kb) and thus has an advantage in error correction during CS identification. As a trade-off, the cost of each full-length read is much higher in isoCirc than in circFL-seq and CIRI-long. In addition, the unique ligation of cDNA in isoCirc may introduce false positives for circRNA detection by ligating cDNA from residual linear RNA or truncated cDNA of circRNA, which is hardly totally recognized and removed by computational analysis. In contrast to isoCirc, both the circFL-seq and CIRI-long-based methods employ RCRT to produce rolling circles during first-strand synthesis. However, circFL-seq synthesizes second-strand cDNA with an anchor primer, while CIRI-long uses template switching. Thus, these two methods are more resistant to the interference of residual linear RNA and generate shorter full-length reads of circRNA than isoCirc. Although decreasing the sequencing cost of nanopore, shorter full-length reads have to perform error correction among reads in addition to intra reads. Thus, RCRT-based methods are not as sensitive as isoCirc with the same number of full-length reads. The computational pipelines of circFL-seq and CIRI-long are compatible given their very similar experimental protocols. Both of these methods calculate CS from tandem repeats of reads to refine low-quality sequences, followed by localization of CS. However, CS may ignore reads that are less than two full circles. In contrast, the RG mode of circFL-seq identified 56% more full-length circRNAs with fewer than two circles in our data, which helps to improve the sensitivity of circRNA detection. In addition, circFL-seq leverages primer sequences to adjust the strand origin of circRNA, especially for BSJ with a non-canonical splicing motif. For details, we summarize the three methods in Supplementary file 6.\n\nPrevious short-read RNA sequencing was used to quantify circRNAs based on BSJ-spanning reads, while circFL-seq with full-length reads was employed to finely quantify circRNAs at the isoform level. Thus, circFL-seq is able to identify differential internal AS events, helping to unravel the function of sequence variants. In our comparisons, circFL-seq was more sensitive than isoCirc and CIRI-long for AS detection, although the performance required full evaluation by ground-truth circRNA isoforms. Another novel application of full-length circRNA sequencing is to identify f-circRNA, which has been found to play important roles in cancer pathogenesis (Guarnerio et al., 2016) and has become a promising biomarker for liquid biopsy (Tan et al., 2018a). Current methods (Guarnerio et al., 2016; Tan et al., 2018a; Tan et al., 2018b; Wu et al., 2019a) validated the proposed f-circRNA by designing divergent primers on known gene fusion junctions and thus were inefficient and possibly ignored f-circRNA from unknown gene fusions. With cancer cell line data, circFL-seq showed its ability to high-throughput identify f-circRNA, which will promote our knowledge of f-circRNA.\n\nOverall, circFL-seq is able to identify and quantify circRNAs at the isoform level and is more sensitive in circRNA AS event detection and f-circRNA detection. In addition, circFL-seq has been applied in a large-scale sequencer, PromethION, with pooling multiple libraries, which will further decrease the sequencing cost to twice that of RNA-seq. Thus, our developed circFL-seq process is an effective and affordable high-throughput full-length circRNA sequencing method for screening functional circRNAs at the omics scale.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HeLa</td>\n      <td>Jiadong Wang Laboratory</td>\n      <td>RRID:CVCL_0030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>SKOV3</td>\n      <td>Jiadong Wang Laboratory</td>\n      <td>RRID:CVCL_0532</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>MCF7</td>\n      <td>Jiadong Wang Laboratory</td>\n      <td>RRID:CVCL_0031</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK293T</td>\n      <td>Jiadong Wang Laboratory</td>\n      <td>RRID:CVCL_0063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>SH-SY5Y</td>\n      <td>Jian Chen Laboratory</td>\n      <td>RRID:CVCL_0019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>VCaP</td>\n      <td>iCell Bioscience</td>\n      <td>RRID:CVCL_2235</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK293</td>\n      <td>iCell Bioscience</td>\n      <td>RRID:CVCL_0045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Total RNA of human brain</td>\n      <td>Clontech</td>\n      <td>Cat. #: 636530</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Total RNA of human testis</td>\n      <td>Clontech</td>\n      <td>Cat. #: 636533</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and RNA isolation\n\nThe human cell lines HeLa, SKOV3, MCF7, VCaP, SH-SY5Y, HEK293T, and HEK293 were used in this study. HeLa, SKOV3, MCF7, and HEK293T cell lines were obtained from Jiadong Wang Laboratory (Xu et al., 2020). SH-SY5Y cell line was obtained from Jian Chen Laboratory. VCaP and HEK293 cell lines were purchased from iCell Bioscience. Cell lines were cultured in DMEM (Invitrogen) supplemented with 10% fetal bovine serum (YEASEN) and 1% penicillin/streptomycin (Solarbio) at 37\u00b0C with 5% CO2. Cell lines were collected at 80\u201390% confluency. All cell lines were authenticated with STR profiling and tested negative for mycoplasma contamination. Total RNA was extracted by the FastPure Cell/Tissue Total RNA Isolation Kit (Vazyme) according to the manufacturer\u2019s instructions. Total RNA from the human brain (#636530) and testis (#636533) was purchased from Clontech.\n\n### circRNA enrichment for library construction of RNA-seq and circFL-seq\n\n#### rRNA depletion\n\nSimilar to a previous method (Morlan et al., 2012), nonoverlapping synthetic DNA probes of complementary sequences (Supplementary file 7) of 18S and 28S rRNA at a final concentration of 1 \u03bcM as well as 5S and 5.8S rRNA, 12S and 16S mtrRNA, ETS, and ITS at a final concentration of 0.1 \u03bcM were pooled. About 1 \u03bcl of DNA probe was mixed with 2 \u03bcg of total RNA and 2 \u03bcl of hybridization buffer (750 mM Tris-HCl, 750 mM NaCl) at a final reaction volume of 15 \u03bcl. The mixture was heated to 95\u00b0C for 2 min, slowly cooled to 22\u00b0C (\u20130.1\u00b0C/s), and incubated for an additional 5 min at 22\u00b0C. Also, 2 \u03bcl of thermostable RNase H (NEB) was added along with 2 \u03bcl of 10\u00d7 RNase H buffer at a final reaction volume of 20 \u03bcl, incubated at 50\u00b0C for 30 min, and placed on ice. DNA probes were removed by 2.5 \u03bcl DNase I (NEB) with 3 \u03bcl 10\u00d7 DNase I buffer at a final volume of 30 \u03bcl, incubated at 37\u00b0C for 30 min, and placed on ice.\n\n#### Poly(A) tailing\n\nThe reaction above was then mixed with 4 \u03bcl ATP (10 mM), 4 \u03bcl 10\u00d7 Poly(A) Polymerase Reaction Buffer and 1 \u03bcl Poly(A) Polymerase (NEB) for poly(A) tailing and incubated at 37\u00b0C for 10 min. Purified RNA was isolated by 2.5\u00d7 RNA Clean Beads (Vazyme) according to the manufacturer\u2019s instructions.\n\n#### RNase R treatment\n\nFor circFL-seq, RNA was incubated at 37\u00b0C for 30 min and 70\u00b0C for 10 min in a 10 \u03bcl reaction that contained 1 U RNase R (Lucigen) and 1 \u03bcl 10\u00d7 RNase R buffer. For RNA-seq, RNA was incubated under the same conditions but in a 20 \u03bcl reaction containing 2 U RNase R and 2 \u03bcl 10\u00d7 RNase R buffer.\n\n### Full-length circRNA cDNA preparation for circFL-seq\n\n#### Reverse transcription\n\nAfter enrichment of circRNAs, collected RNAs were reverse transcribed into first cDNA strands in a 20 \u03bcl reaction by P1-N6 (5\u2032-GTCGACGGCGCGCCGGATCCATANNNNNN-3\u2032) with HiScript III reverse transcriptase (Vazyme) for 5 min at 25\u00b0C, 50 min at 50\u00b0C, 2 min at 70\u00b0C, and 5 s at 85\u00b0C, followed by purification with 0.75\u00d7 DNA Clean Beads (Vazyme) according to the manufacturer\u2019s instructions.\n\n#### Poly(A) tailing\n\nThen, poly(A) tails were added at the 3\u2032 ends in a 20 \u03bcl reaction by terminal deoxynucleotidyl transferase (Invitrogen) with final dATP and ddATP concentrations of 2.5 mM and 25 \u03bcM, respectively, followed by purification with 0.75\u00d7 DNA Clean Beads.\n\n#### Second-strand synthesis\n\nNext, second-strand cDNAs were synthesized using P2-T24 (5\u2032-ATATCTCGAGGGCGCGCCGGATCCTTTTTTTTTTTTTTTTTTTTTTTT-3\u2032) by I-5 High-Fidelity DNA polymerase (MCLAB) at 98\u00b0C for 2 min, 50\u00b0C for 2 min, and 72\u00b0C for 5 min.\n\n#### Amplification\n\nThen, cDNAs were equally split into four 50 \u03bcl PCRs with primers P1 (5\u2032-GTCGACGGCGCGCCGGATCCATA-3\u2032) and P2 (5\u2032-ATATCTCGAGGGCGCGCCGGATCC-3\u2032) and amplified by 20 cycles of 98\u00b0C for 10 s, 67\u00b0C for 15 s, and 72\u00b0C for 75 s, followed by 0.5\u00d7 DNA Clean Bead purification. Approximately 10\u201350 ng purified cDNAs were further amplified by 8\u201310 cycles in a set of four 50 \u03bcl PCRs with P1 and P2, followed by purification with 0.5\u00d7 DNA Clean Beads.\n\n### Nanopore library construction and sequencing\n\nA DNA library for barcoding and ligation sequencing was prepared following protocols EXP-NBD104 and SQK-LSK109. Briefly, 0.5\u20131 \u03bcg of circFL-seq cDNA was repaired and dA-tailed by NEBNext FFPE DNA Repair Mix (NEB) and NEBNext Ultra II End repair/dA-tailing Module (NEB), followed by purification with DNA Clean Beads. For multiplexing, repaired and end-prepped DNA was barcoded with Native Barcode by NEB Blunt/TA Ligase Master Mix (NEB), followed by purification with DNA Clean Beads. Barcoded samples were pooled together in equimolar amounts. Single samples without barcodes or pooled barcoded samples (700 ng) were ligated to an ONT Adapter with NEBNext Quick Ligation Module (NEB), followed by purification with DNA Clean Beads. The DNA library was mixed with sequencing buffer, and beads were loaded onto a PromethION or MinION R9.4 Flow Cell and run on a PromethION (performed by Grandomics) or MinION sequencer, respectively.\n\n### cDNA library preparation and sequencing of RNA-seq\n\nAfter circRNA enrichment, RNA was isolated by 2.5\u00d7 RNA Clean Beads (Vazyme). cDNA libraries were constructed and barcoded by the VAHTS Universal V6 RNA-seq Library Prep Kit for Illumina (Vazyme) and VAHTS RNA Adapters set1/set2 for Illumina (Vazyme) according to the manufacturer\u2019s instructions for the strand-specific rRNA depletion library. The cDNA library was fragmented, and an insert size of approximately 300 bp was selected. Eight libraries were pooled together and sequenced on the Illumina HiSeq X Ten platform of Annoroad Gene Technology with a paired-end read length of 150 bp.\n\n### Computational analysis of full-length circRNAs with circFL-seq\n\nRaw sequenced data in fast5 format files were transformed to FASTQ format files (kept reads with qscore\u22657.0) and were demultiplexed by guppy (4.2.2). We employed porechop (v0.2.4) to trim barcode and circFL-seq primers (P1 and P2) and split chimeric reads to obtain clean reads for each sample. Then, RG mode (https://github.com/yangence/circfull, Liu et al., 2021) was employed to detect circRNAs with clean reads. cRG mode was used to correct circFL-seq reads by de novo self-correction to calculate CS, and RG mode was rerun with a query sequence of three copies of CS. With primer sequences at both ends of sequenced reads, circFL-seq detected the strand origin of reads and adjusted circRNA results with strand information. Finally, we filtered out low-quality full-length circRNAs after integrating circRNA results.\n\n#### RG mode\n\nClean reads were mapped to the human genome (hg19) by minimap2 (Li, 2018) (v2.12) with the parameters \u2018-ax splice -p 0.5\u2019 or \u2018-ax splice -p 0.5 -uf\u2019 for transcript-strand reads. Aligned reads with chiastic overlapping segments were recognized as candidate circRNA reads (CCRs). CCRs were classified into three types: normal, fusion on the same chromosome, and fusion on different chromosomes. The boundaries of the chiastic segment of the CCRs were detected as potential BSJs. FSJs were determined according to the skipped region from the reference. For each read, a pseudo reference sequence was generated by concatenating two sequences from 150 nt upstream to 150 nt downstream of the BSJ region. Then, CCRs were realigned against the pseudo references, and accurate sites of BSJs were determined by integrating multiple aligned BSJs, gene annotation (GENCODE v19), and canonical splicing motifs (GT/AG). FSJs of CCRs were also corrected based on the integration of multiple aligned FSJs, gene annotation, and FSJs from other CCRs with the same BSJ. Next, the full-length circRNA was constructed based on the FSJ(s) and BSJ(s). Incorrect construction of full-length circRNAs caused by mistaken alignment against tandem repeat sequences of the reference genome was identified by TideHunter (v1.0) with parameters \u2018-f 2 \u2013c 1.2 l\u2019, and these circRNAs were filtered out.\n\n#### The de novo self-correction\n\nThe CS of clean reads was detected by TideHunter (v1.0) with the parameters \u2018-f 2 c 1.5 p 30 l\u2019. Following evaluation by Tandem Repeats Finder (v4.09) with parameters \u20182 5 7 80 5 5 2000 h -ngs\u2019, CS was removed if containing internal tandem repeats, defined by an alignment score >40 or length of internal tandem repeats longer than half of the CS.\n\n#### cRG mode\n\nTo locate the genomic region of CS, pseudo query sequences from three combined monomers of a CS were created. The position of full-length circRNA was detected with RG mode.\n\n#### Identification of the strand origin of clean reads\n\nCCRs with FSJs detected were first selected to determine the strand origin of sequenced reads, that is, first or second strand, based on the GT/AG motif of the FSJ and mapped strand. For each 100 nt flanking end of the raw read, the maximum identical number of bases to primers P1, P2, T24, and their reverse complementary sequences was calculated by the Smith-Waterman algorithm. With these numbers of identical bases as predictor variables and strand origin as the target variable, a random forest classifier was trained on 75% selected CCRs to predict the strand origin of all clean reads. The performance of the classifier was evaluated on the remaining 25% CCRs by accuracy and AUC value for each sample (Supplementary file 8). CircRNA with ambiguous strand direction was adjusted by rerunning RG mode with stranded reads.\n\n#### Filtration of low quality circRNA\n\nAfter RG detection supplemented with cRG detection, low-quality circRNAs with an unsplicing ratio of BSJ<0.1 were filtered out. CircRNA isoforms with reliable BSJs and FSJs were retained if more than half of the circRNA reads were perfectly aligned on \u00b14 bp of junctions. CircRNA BSJs were filtered out if both BSJs were located in \u00b130 bp of repeat elements.\n\n### Reverse transcription for PCR and RT-qPCR validation\n\nFor PCR validation, sample RNA was reverse transcribed to cDNA products for 5 min at 25\u00b0C, 50 min at 50\u00b0C, 2 min at 70\u00b0C, and 5 s at 85\u00b0C with random hexamers by HiScript III. For RT-qPCR, sample RNA was reverse transcribed to cDNA products for 15 min at 37\u00b0C and 5 s at 85\u00b0C with random hexamers and oligo(T) according to the manufacturer\u2019s instructions.\n\n### Validation of full-length sequences of circRNA\n\nA pair of divergent PCR primers was designed and included 6\u20138 additional G bases at the 5\u2032 end (Supplementary file 9) to reduce the accumulation of short PCR products. With cDNA products of the RT or circFL-seq library as template, PCR amplification in a 25 \u03bcl reaction of Takara Ex Taq Hot Start was carried out by the following program: 98\u00b0C for 10 s followed by 3 cycles of 98\u00b0C for 10 s, 60\u00b0C for 30 s, and 72\u00b0C for 90 s, then 30 cycles of 98\u00b0C for 10 s and 72\u00b0C for 90 s, with a final extension at 72\u00b0C for 60 s. The PCR products were analyzed on 1.2% agarose gels (TSINGKE), and the rolling circle bands were cut out and extracted, followed by TA cloning to a pEASY-T1 cloning vector (TransGen). Then, the clones with inserts were Sanger sequenced.\n\n### Validation of AS in circRNAs\n\nTotal RNA of the HeLa cell line (1 \u03bcg) was treated with RNase R (4 U) in a 10 \u03bcl reaction and then reverse transcribed to the cDNA products. For each circRNA isoform from the same BSJ, divergent primers (Supplementary file 10) targeting but not across splicing junctions were used to validate the AS junction site in a PCR volume of 25 \u03bcl. The PCR products were analyzed on 1.2% agarose gels, and the target bands were cut out and extracted, followed by TA cloning and Sanger sequencing.\n\n### Quantification of circRNA expression by RT-qPCR\n\nTotal RNA of HeLa and SKOV3 cell lines (1 \u03bcg) w/wo RNase R treatment (4 U) was reverse transcribed for RT-qPCR. For specific circRNAs, primers (Supplementary file 11) across a BSJ with cDNA as template in a 20 \u03bcl reaction were set according to the manufacturer\u2019s instructions for ChamQ Universal SYBR qPCR Master Mix (Vazyme). For specific circRNA isoforms, we designed primers (Supplementary file 12) for both specific BSJs and alternative FSJs in the reaction. For the quantification of internal AS events, two major circular isoforms 1 and 2 from the same BSJ were selected for the evaluation of the transcript ratio with the following formula: $\\frac{2^{CT_{isoform1,2}}}{2^{CT_{isoform1}}+2^{CT_{isoform2}}}$ . Primers targeting GAPDH as a reference gene were used. Thermal cycling was carried out on an Applied Biosystems 7500 Fast system at 95\u00b0C for 5 min, followed by 40 cycles of 95\u00b0C for 10 s and 60\u00b0C for 24 s.\n\n### Validation of f-circRNA\n\nTotal RNA of the MCF7 cell line (1 \u03bcg) w/wo RNase R treatment (4 U) was reverse transcribed for PCR. We validated full-length f-circRNA with primers (Supplementary file 13) for the two fusion junctions by RCRT and Sanger sequencing. Linear RNA was isolated to determine the origin of fusion junctions from BS or gene fusion. Because of the uncertainty of the poly(A) tail in linear RNA, total RNA was first treated with poly(A) tailing (NEB), and then linear RNA was selected by the poly(A) mRNA magnetic isolation module (NEB) according to the manufacturer\u2019s instructions. PCR was performed with the same primers of both fusion junctions of f-circRNA. For quantification of the fusion junction of f-circRNA, total RNA of the MCF7 cell line (1 \u03bcg) w/wo RNase R treatment (4 U) was reverse transcribed for RT-qPCR. Primers (Supplementary file 14) of target fusion junctions were designed for RT-qPCR.\n\n### CircRNA analysis from RNA-seq\n\nRNA-seq data were aligned to the human reference genome (hg19) by BWA (Li and Durbin, 2009) (v0.7.17-r1188). CircRNA BSJs were detected and quantified by CIRI2 with gene annotation (GENCODE v19). Full-length circRNA structures were constructed by CIRI-AS (Gao et al., 2016), CIRI-full (Zheng et al., 2019), and CIRI-vis (Zheng and Zhao, 2020). For fusion junctions, we directly searched the \u00b110 bp junction site in RNA-seq reads.\n\nAnalysis of isoCirc and CIRI-long data, isoCirc nanopore sequencing data were downloaded from the Sequence Read Archive (SRA: SRP235284). CircRNAs were analyzed with the isoCirc computational pipeline (https://github.com/Xinglab/isoCirc, Xin et al., 2021b) with the human reference genome (hg19) and gene annotation (GENCODE v19). CIRI-long nanopore sequencing data were downloaded from Genome Sequence Archive (GSA: CRA003317). CircRNAs were analyzed with the CIRI-long computational pipeline (https://github.com/bioinfo-biols/CIRI-long, Zhang et al., 2021b) with the mouse reference genome (mm10) and gene annotation (GENCODE vM23).\n\n### Identification of differentially expressed circRNA\n\nCircRNA BSJs with at least 10 read counts in two or more RNA-seq samples and two or more circFL-seq samples of either the HeLa or SKOV3 cell line were kept to identify differentially expressed BSJs. DESeq2 with \u2018mean\u2019 fitType was employed to analyze differential expression between HeLa and SKOV3 cells. Differential BSJs at an FDR<0.05 were recognized as DECs.\n\n### Data availability\n\nThe circFL-seq and RNA-seq data produced by this study have been deposited in SRA (PRJNA722575). Information on circRNAs detected by circFL-seq is available in the figshare repository (https://doi.org/10.6084/m9.figshare.14265650.v1). The computational software of circFL-seq can be accessed from https://github.com/yangence/circfull, (Liu et al., 2021) copy archived at swh:1:rev:2e8be5c116e9c226661c63e35223f2120272ccfc.\n",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "762dfece-57f0-4e00-9e53-a9773b75a7a4",
+      "submission_id": "1b66e369-13f4-4529-8f7b-99f3879bba02",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gene W Yeo, University of California, San Diego United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69457.sa1](https://doi.org/10.7554/eLife.69457.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nYang and colleagues report circFL-seq a method for sequencing full length circular RNAs with rolling circle RT and nanopore sequencing. While two other methods have recently been published, this manuscript does add to a growing literature on long read sequencing of circular RNAs.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"circFL-seq reveals full-length circular RNAs with rolling circular reverse transcription and nanopore sequencing\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and James Manley as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Fangqing Zhao (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Reviewers all agree that a major weakness of the present manuscript is with the comparison to existing methods. The authors should compare circFL-seq to CIRI-long, and reviewers agree that a three way comparison to isoCirc is informative. The authors should accompany their comparisons with a discussion about strengths and weaknesses of each of the methods.\n\n2. The current claims and conclusions that circFL-seq is the superior method is not well supported by their data in this version of the manuscript. The authors should provide fair critiques of the other method (see comments about ligation). The authors need to point out potential limitations. For example, Is CircFL-seq biased to detecting only highly expressed transcripts?\n\n3. In comparison to isoCirc, circFL-seq identified fewer circRNA isoforms with higher read coverage of the detected circRNAs, which may be a PCR artifact. The authors need to address this concern. In addition, in two published studies, isoCirc and CIRI-long have also used nanopore sequencing to characterize circRNA isoforms and alternative splicing events. However, both studies have reported a relatively higher percentage of retained introns (isoCirc: Figure 4b, CIRI-long: Supplementary Figure 13) compared to the number of 3.5% of intron retention events in line 139. The authors should clarify the reason behind this difference.\n\n4. The authors found six f-circ derived from GBF1-MACROD2 fusion and validated their junctions using Sanger sequencing. Besides, the authors also used short-read RNA-seq to validate the linear fusion junctions. What's the ratio of linear and circular transcript derived from these gene fusion loci? Is there any possibility that these f-circRNAs are derived from trans-splicing events? Considering that short-read RNA-seq data cannot effectively distinguish circular and linear transcripts, the authors may try to search for nanopore reads spanning the fusion region, which can provide direct evidence for these gene fusion events.\n\n5. Because of the high error rate of nanopore sequencing, the authors should compare the error rate of CS sequence before and after cRG correction to elucidate the ability to correct sequencing errors with the cRG mode.\n\n6. The authors trained a random forest classifier to predict the strand origin of circular reads. How many CCRs were used as the training set, and how's the performance of the random forest classifier? The authors should provide more data about this step.\n\nGeneral comments:\n\n1. The Figures and Supplemental Figures were not labeled with figure numbers, making it extremely difficult to read (especially some figures span across more than one page). The authors should label the figure number more clearly.\n\n2. Some figures are not clearly labeled. For example, in Figure 2j, what does each lane represent? Also, in Figure 3e, it is not clear what the y-axis is. The authors state that it is read coverage, but how come the value is from 0 to 1? In Figure 3d, the authors state that it is the correlation between HeLa and SKOV3, but it was not clear what axis is HeLa and SKOV3, respectively. Again, what does the shaded area mean in these figures (figure 3c, 3d, 3f, and 3g)? The authors should check through the figure label more carefully and correct them accordingly.\n\nReviewer #1 (Recommendations for the authors):\n\nOverall, this is a nice piece of work that can be published after revision. Below are my specific comments for the authors:\n\n1. As noted in my public review, the authors should carry out a two-way comparison between circFL-seq and CIRI-long, as well as a three-way comparison between circFL-seq, CIRI-long, and isoCirc. Given that circFL-seq and CIRI-long are both based on RCRT while isoCirc is based on RCA, it would be interesting to see if circFL-seq and CIRI-long produce more concordant results in terms of the discovery and quantitation of full-length circular RNAs, given the similarity in their experimental strategies.\n\n2. In both Introduction and Discussion, the authors noted that the use of ligation in isoCirc may lead to false discoveries of circular RNAs. While this statement is technically correct from an experimental standpoint, such false discoveries can be recognized and removed computationally \u2013 therefore this is not a fair critique of isoCirc. In fact, the isoCirc computational pipeline is designed to remove such artifacts, using stringent requirements for alignment quality and presence of canonical splice site motifs in all forward and back splice junctions within full-length circular RNA transcripts.\n\n3. Line 65-67: \"Thus, an accurate but affordable method to detect full-length circRNA remains to be developed for wide application in screening functional circRNAs at the omics scale\". This statement leaves the impression that such a method currently does not exist, which is not a fair representation of the current literature with the recent publications of isoCirc and CIRI-long.\n\n4. The authors reported that compared to isoCirc, circFL-seq produced more full-length circular RNA reads at the same library depth but identified fewer circular RNA isoforms. The authors appeared to present this finding as a positive feature of circFL-seq. For example, in line 265-267, the authors stated that \"as a trade-off, isoCirc produced fewer reads with the same sequencing depth, which raised sequencing costs and weakened its ability to detect and accurately quantify high-quality circRNAs\". There are multiple issues with this statement. In terms of the precision of circular RNA quantitation (e.g. as evaluated based on comparison among nanopore replicates as well as comparison to short-read RNA-seq data), the metrics presented for circFL-seq are in fact quite comparable to the metrics presented in the isoCirc paper, so there is no evidence that circFL-seq provides a better quantitation of circular RNAs. Moreover, given that the ground-truth is not known, an alternative interpretation to this observation is that circFL-seq may be biased towards highly expressed circular RNAs, and may lack the ability to discover moderately and lowly expressed circular RNAs. Overall, in comparing different methods, the authors should aim to provide an impartial discussion about the strengths and weaknesses of individual methods, and avoid over-interpreting the data in favor of their own method.\n\n5. The discussion about CDR1as is interesting. Can CIRI-long detect this circular RNA?\n\n6. The authors should also cite the BioRxiv preprint by Rahimi et al., (https://doi.org/10.1101/567164), which is another method for nanopore sequencing of circular RNAs.\n\n7. Overall, the manuscript is easy to read and follow, but it could benefit from a thorough editing by a language editor.\n\nReviewer #2 (Recommendations for the authors):\n\n1. In comparison to isoCirc, circFL-seq identified fewer circRNA isoforms with higher read coverage of the detected circRNAs. This raises a concern that the outcome may result from that RCRT captures circRNA less efficiently than RCA, resulting in fewer circRNA molecules are captured in circFL-seq. The higher read coverage may simply come from sequencing the same circRNA molecule from the PCR amplification artifacts. This may also explain why circFL-seq cannot detect circRNAs with low read count or lowly expressed circRNAs. In this case, the authors cannot use back splice junction (BSJ) detection saturation as an indicator to compare the required read-depth between isoCirc and circFL-seq. Also, given the concern above, the \"high read coverage\" does not necessarily mean \"high quality\" nor \"high accuracy\" as claimed by the authors. The authors should address this concern before claiming on the benefits of high read coverage.\n\n2. The advantages of circFL-seq over other existing technologies are not well-supported. For example, the authors claim that RCRT has lower residual linear RNA contamination than RCA, but the authors do not provide any data or evidence supporting the claim. Also, the authors claim that the circFL-seq gives higher circRNA read coverage; hence it is beneficial for circRNA quantification. However, the real \"benefits\" over other technologies (RNA-seq and isoCirc) for circRNA quantification are not clear since the RNA-seq (and isoCirc) quantification is significantly correlated with circFL-seq as demonstrated by the authors.\n\n3. In the manuscript, the results are often comparable with known database and existing technologies when the authors focus on the \"high quality\" circRNAs only (circFL-seq read counts >= 5) which also have high expression level. The fact suggests that circFL-seq result is trust-worthy on \"high quality\" only. It also suggests that circFL-seq may fail to detect the lowly expressed circRNAs. The authors should note and discuss these limitations.\n\nGeneral comments:\n\n1. The Figures and Supplemental Figures were not labeled with figure numbers, making it extremely difficult to read (especially some figures span across more than one page). The authors should label the figure number more clearly.\n\n2. Some figures are not clearly labeled. For example, in Figure 2j, what does each lane represent? Also, in Figure 3e, it is not clear what the y-axis is. The authors state that it is read coverage, but how come the value is from 0 to 1? In Figure 3d, the authors state that it is the correlation between HeLa and SKOV3, but it was not clear what axis is HeLa and SKOV3, respectively. Again, what does the shaded area mean in these figures (figure 3c, 3d, 3f, and 3g)? The authors should check through the figure label more carefully and correct them accordingly.\n\nSpecific comments:\n\n1. In the Abstract section, the authors claim that \"\u2026 the detection of cancer-related fusion circRNAs\u2026\". However, the authors did not provide any data or literature suggesting that the fusion circRNAs they identified by circFL-seq are really \"cancer-related\" or biologically meaningful. The claim needs to be revised or proved.\n\n2. In Figure2\u2014figure supplement 1a, the full-length circRNA reads contribute very little percentage of the total clean reads (~2-5%). How come the RCRT method generate so little full-length circRNA reads? The authors should comment on this and discuss it.\n\n3.In Figure 3\u2014figure supplement 3, the author claim that more reads are required for ONT to confidently identify circRNAs. Doesn't this compromise the cost-efficient claim of circFL-seq made by the authors earlier? The authors should comment on this and discuss it.\n\n4. In Figure 3\u2014figure supplement 6a-d, how the saturation curves are calculated? It seems like isoCirc has much lower sequencing depth (~0.3 M) than circFL-seq. How do the authors compare the BSJ saturation in this case?\n\n5. When comparing the validity of circFL-seq and isoCirc, why do the authors focus on top 100 expressed BSJ only? A better comparison should be the total BSJ in circFL-seq and isoCirc.\n\n6. The authors should not use the same absolute circFL-seq BSJ read counts to define high-quality BSJs in isoCirc for the following reasons: (i) the read counts >= 5 in circFL-seq is arbitrary, there is no evidence suggesting that the isoCirc should use the same read counts to define high-quality BSJs. (ii) Since isoCirc captures more circRNAs, a lower BSJ read counts per circRNA is expected given the same sequencing depth. In both cases, lower BSJ read counts in isoCirc does not necessarily mean the BSJ is not \"high-quality\". Thus, the authors should not use absolute circFL-seq BSJ read counts as an indicator for the BSJ quality in isoCirc.\n\n7. In the PLOD2 circFL-seq and RNA-seq example shown by the authors, the authors suggest that the circPLOD2 has lower exon skipping event than its parent linear RNA in HeLa cells. However, given that the BSJ is exactly the same between exon-skipped and non-exon-skipped circPLOD2, how does the back-splicing mechanism distinguish different parent linear RNA isoforms that selectively back-splices the non-exon-skipped linear RNA to generate specific circPLOD2 isoform in HeLa cells?\n\n8. Are the f-circ detected by circFL-seq generated by RNA fusion or genomic fusion? Although the RNA-seq suggests a genomic fusion, it does not completely eliminate the possibility of a genomic fusion. A genomic PCR followed by Sanger sequencing should be performed to validate the fusion junction of the genome.\n\nReviewer #3 (Recommendations for the authors):\n\nConsidering that there are two recently published circRNA reconstruction tools based on nanopore sequencing, the authors should comprehensively compare their method with these two tools, and carefully discuss the advantages and disadvantages of these methods.\n\nSpecific comments:\n\n1. In the Discussion section (line 260-262), the authors compared circFL-seq with the recently published CIRI-long method. Both circFL-seq and CIRI-long use a similar rolling circle reverse transcription strategy to amplify circRNAs. The authors may discuss the difference and (dis)advantages between their method and previous methods (isoCirc and CIRI-long).\n\n2. In section \"Comparison with RNA-seq and isoCirc for circRNA detection\", the authors compared circFL-seq with the isoCirc method and found that circFL-seq produced more circular reads but identified fewer circRNA isoforms, which is an interesting result. Does it mean that isoCirc has a better sensitivity or higher false discovery rate in detecting lowly expressed circRNAs? The authors should include more comparison (e.g. venn diagram between three sets under different BSJ thresholds) between circFL-seq, isoCirc, and public circRNA database (e.g. circAtlas [PMID: 32345360, PMID: 30893614]) to demonstrate the advantages of their method.\n\n3. The authors found six f-circ derived from GBF1-MACROD2 fusion and validated their junctions using Sanger sequencing. Besides, the authors also used short-read RNA-seq to validate the linear fusion junctions. What's the ratio of linear and circular transcript derived from these gene fusion loci? Is there any possibility that these f-circRNAs are derived from trans-splicing events? Considering that short-read RNA-seq data cannot effectively distinguish circular and linear transcripts, the authors may try to search for nanopore reads spanning the fusion region, which can provide direct evidence for these gene fusion events.\n\n4. Because of the high error rate of nanopore sequencing, the authors should compare the error rate of CS sequence before and after cRG correction to elucidate the ability to correct sequencing errors with the cRG mode.\n\n5. The authors trained a random forest classifier to predict the strand origin of circular reads. How many CCRs were used as the training set, and how's the performance of the random forest classifier? The authors should provide more data about this step.\n\n6. In section \"Evaluation of quantification of full-length circRNAs\", it would be nice if the authors could compare the quantification results between their method on nanopore reads and previous method (e.g. CIRIquant) on short-read RNA-seq data.\n\n7. The authors used different names (circFL-seq, circfull) to denote their sequencing and data analysis methods. It would be better if they can unify the name, say, circFL-seq, which may avoid misunderstanding.\n",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ca65ddfb-f4d9-4af8-9faa-dc51f4813d8f",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C1",
+      "claim": "Circular RNAs (circRNAs) act through multiple mechanisms via their sequence features to fine-tune gene expression networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Circular RNAs (circRNAs) act through multiple mechanisms via their sequence features to fine-tune gene expression networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about circRNA function that is presented as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "2287f997-9a23-4835-bb3f-d64991c567a0",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C2",
+      "claim": "Identifying internal sequences of circRNAs remains a challenge due to overlapping sequences with linear cognates.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to overlapping sequences with linear cognates, identifying internal sequences of circRNAs remains a challenge, which hinders a comprehensive understanding of circRNA functions and mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a known limitation in the field based on the nature of circRNA sequences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "2f2325bc-49ba-41db-8fd4-b3bfdd59ee4b",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C3",
+      "claim": "circFL-seq is a full-length circRNA sequencing method based on rolling circular reverse transcription and nanopore sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, based on rolling circular reverse transcription and nanopore sequencing, we developed circFL-seq, a full-length circRNA sequencing method, to profile circRNA at the isoform level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "6e612804-6ee2-4de4-9a01-9e5b4717b3dc",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C4",
+      "claim": "circFL-seq reconstructed 77,606 high-quality circRNAs from seven human cell lines and two human tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "With a customized computational pipeline to directly identify full-length sequences from rolling circular reads, we reconstructed 77,606 high-quality circRNAs from seven human cell lines and two human tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "303f3bd3-a3f2-48f5-a1b7-fb0b7ddba75c",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C5",
+      "claim": "circFL-seq showed more than tenfold enrichment of circRNA reads compared to short-read RNA sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "circFL-seq benefits from rolling circles and long-read sequencing, and the results showed more than tenfold enrichment of circRNA reads and advantages for both detection and quantification at the isoform level compared to those for short-read RNA sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative quantitative finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "9b6e9a3d-9d82-4251-8df6-bf2dba0a3a13",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C6",
+      "claim": "circFL-seq has advantages for both detection and quantification at the isoform level compared to short-read RNA sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "circFL-seq benefits from rolling circles and long-read sequencing, and the results showed more than tenfold enrichment of circRNA reads and advantages for both detection and quantification at the isoform level compared to those for short-read RNA sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative assessment based on the study's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "a2927ba2-7de9-437d-963d-e0c19c6eece3",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C7",
+      "claim": "The concordance of RT-qPCR and circFL-seq results for identification of differential alternative splicing suggests wide application prospects for functional studies of internal variants in circRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The concordance of the RT-qPCR and circFL-seq results for the identification of differential alternative splicing suggested wide application prospects for functional studies of internal variants in circRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the validation experiments comparing two methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "067bdf77-3cd7-4bbf-9832-08823bd71d84",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C8",
+      "claim": "circFL-seq can detect fusion circRNAs at the omics scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the detection of fusion circRNAs at the omics scale may further expand the application of circFL-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "1149682a-a1b4-4314-b428-f9b642cc354f",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C9",
+      "claim": "circRNAs are formed via back-splicing or lariat precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Circular RNAs (circRNAs), a class of covalently closed RNA molecules formed via back-splicing (BS) or lariat precursors, are involved in various biological processes and pathogenesis by fine-tuning the eukaryotic gene regulatory network (Kristensen et al., 2019; Chen, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "6546ce5b-ef11-4594-9e49-2e566e6d168c",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C10",
+      "claim": "circRNAs are involved in various biological processes and pathogenesis by fine-tuning the eukaryotic gene regulatory network.",
+      "claim_type": "EXPLICIT",
+      "source": "Circular RNAs (circRNAs), a class of covalently closed RNA molecules formed via back-splicing (BS) or lariat precursors, are involved in various biological processes and pathogenesis by fine-tuning the eukaryotic gene regulatory network (Kristensen et al., 2019; Chen, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "e09c78ed-d81d-4689-8fac-2ddbb9f24816",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C11",
+      "claim": "circRNAs may complementarily bind to miRNAs as sponges.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, circRNAs may complementarily bind to miRNAs as sponges (Hansen et al., 2013; Memczak et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "60633910-6113-40c6-85b0-74bfef9cae98",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C12",
+      "claim": "circRNAs may interact with proteins as scaffolds or structural components based on sequence motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "circRNAs may interact with proteins as scaffolds (Du et al., 2017) or structural components (Li et al., 2015) based on sequence motifs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "2f9ab2ca-11a0-49fe-9db0-42848e79ee97",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C13",
+      "claim": "Several circRNAs are able to translate into peptides through internal ribosome entry sites.",
+      "claim_type": "EXPLICIT",
+      "source": "and several circRNAs are also able to translate into peptides (Zhang et al., 2018; Gao et al., 2021 ) through internal ribosome entry sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This capability is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "a79edc99-cddf-4263-b423-a1499939a41a",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C14",
+      "claim": "Full-length sequences of circRNAs are the foundation for ascertaining their biological functions in transcriptional plasticity and complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, full-length sequences of circRNAs have become the foundation for ascertaining their biological functions in transcriptional plasticity and complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the relationship between sequence and function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "f2e01fe5-2ab2-43b0-9cd8-1f8bab5b5d2d",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C15",
+      "claim": "Short-read RNA sequencing discriminates circRNAs with low expression (as low as 1% polyadenylated RNA) from their linear cognates by detecting back-splicing junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "By detecting the back-splicing junctions (BSJs) of circRNAs with deep sequencing, short-read RNA sequencing discriminates circRNAs with low expression (as low as 1% polyadenylated RNA; Salzman et al., 2013) from their linear cognates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of short-read sequencing supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "150b2933-4558-4c2f-b8b8-35bd2f7268cd",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C16",
+      "claim": "The full-length sequences of short circRNAs (<500 nt) can be inferred from a patchwork of BSJs and short fragments via bioinformatic approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-length sequences of short circRNAs (<500 nt) can be inferred from a patchwork of BSJs and short fragments via bioinformatic approaches (Zheng et al., 2019; Wu et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a computational approach supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "a71b5004-1bb1-4420-92e8-55a7b5b686af",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C17",
+      "claim": "A full understanding of circRNA isoforms is impossible by using short reads.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a full understanding of circRNA isoforms is impossible by using short reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation inferred from the nature of short-read sequencing technology.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "b803302d-2be4-49d9-a3e1-58e3ee99ccac",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C18",
+      "claim": "Single-molecule long-read sequencing has shown methodological advances in identifying circRNAs at the isoform level.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule long-read sequencing has shown methodological advances in identifying circRNAs at the isoform level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about technological advances in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "d0307522-4e27-4e61-b2a1-5d588d80c24c",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C19",
+      "claim": "Pacific Biosciences (PacBio) sequencing has been applied to PCR products for target full-length circRNA sequences in a low-throughput and high-cost way.",
+      "claim_type": "EXPLICIT",
+      "source": "Pacific Biosciences (PacBio) sequencing has been applied to PCR products for target full-length circRNA sequences in a low-throughput and high-cost way (You et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a previous method supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "08f793a3-dda5-419b-91ec-13733a9efbb4",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C20",
+      "claim": "Several Oxford Nanopore Technology (ONT)-based methods have been employed in genome-wide full-length circRNA reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Very recently, several Oxford Nanopore Technology (ONT)-based methods have also been employed in genome-wide full-length circRNA reconstruction (Rahimi et al., 2019; Xin et al., 2021a; Zhang et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes recent methods supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "8bdd6b27-72a0-448f-9752-a8e38c6a59d2",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C21",
+      "claim": "Eight known circRNAs were selected for PCR validation in the HEK293T library.",
+      "claim_type": "EXPLICIT",
+      "source": "To benchmark full-length circRNA sequences of the circFL-seq library, eight known circRNAs were selected for PCR validation in the HEK293T library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental validation step performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "ff0b13d6-1fea-4ec4-9864-e07df8f47cbc",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C22",
+      "claim": "Rolling circles of target circRNA and full-length sequences obtained with Sanger sequencing indicated that the circRNAs were successfully amplified.",
+      "claim_type": "EXPLICIT",
+      "source": "Rolling circles of target circRNA (Figure 1B; Figure 1\u2014source data 1) and the full-length sequences obtained with Sanger sequencing (Figure 1\u2014figure supplement 1) indicated that the circRNAs were successfully amplified.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "3149e9e1-2ee4-4362-9fab-96919828dbad",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C23",
+      "claim": "circFL-seq applied to eight libraries produced 30 M clean reads sequenced by using one PromethION Flow Cell.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the performance of circFL-seq, we applied circFL-seq to eight libraries of six human cell lines (two replicates from HeLa cells, two replicates from SKOV3 cells, one from MCF7 cells, one from VCaP cells, one from SH-SY5Y cells, and one from HEK293T cells) and produced 30 M clean reads sequenced by using one PromethION Flow Cell (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the sequencing experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "893e20a9-423b-479d-8166-c0a8dcbad4cd",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C24",
+      "claim": "circFL-seq detected 197,252 isoforms of 162,409 circRNA BSJs from 1.3 M reads that contained full-length circRNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected 197,252 isoforms of 162,409 circRNA BSJs from 1.3 M reads that contained full-length circRNA sequences (Figure 2A; Figure 2\u2014figure supplement 1B; Figure 2\u2014figure supplement 2A; Supplementary file 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "b5f4e2ae-2e31-4c6e-a787-8b06ea260cbd",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C25",
+      "claim": "2% of circRNA isoforms were additionally detected by cRG mode, which refined low-quality reads with consensus sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "2% of which were additionally detected by cRG mode, which refined low-quality reads with CS (Figure 2\u2014figure supplement 2B-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result showing the contribution of the cRG mode.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "a162eaee-8850-4322-80a0-77030435eece",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C26",
+      "claim": "Quantification of replicate samples at both the BSJ and isoform levels was highly consistent (Pearson's r>0.93).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of replicate samples at both the BSJ and isoform levels was highly consistent (Pearson's r>0.93; Figure 2A and B; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical measure of reproducibility from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "65497be1-6900-473b-9500-1f98fb754d3a",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C27",
+      "claim": "The exonic type accounted for 73.2% of the identified circRNA species for high-quality circRNA isoforms (read counts\u22655).",
+      "claim_type": "EXPLICIT",
+      "source": "For high-quality circRNA isoforms (read counts\u22655), the exonic type accounted for 73.2% of the identified circRNA species, while only 0.1% were from read-through (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the classification of circRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "cee79403-e348-46bc-95e9-150f7480ec29",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C28",
+      "claim": "Most exonic types (99.8%) could be verified in at least one database.",
+      "claim_type": "EXPLICIT",
+      "source": "Most exonic types (99.8%) could be verified in at least one database (Gla\u017ear et al., 2014; Chen et al., 2016; Dong et al., 2018; Liu et al., 2019; Vo et al., 2019; Huang et al., 2021; Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result comparing detected circRNAs to existing databases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "25b0ae15-dbe2-4697-a2ca-ff9b837017ce",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C29",
+      "claim": "The median length of circRNA types varied from 402 nt of the intergenic type to 618 nt of read-throughs.",
+      "claim_type": "EXPLICIT",
+      "source": "The median length of each type varied from 402 nt of the intergenic type to 618 nt of read-throughs (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result describing circRNA length distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "ddd8dd5c-ec6b-4c70-8696-8ed6e23413d4",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C30",
+      "claim": "A notable proportion of circRNAs>500 nt cannot be reconstructed by RNA-seq.",
+      "claim_type": "IMPLICIT",
+      "source": "The median length of each type varied from 402 nt of the intergenic type to 618 nt of read-throughs (Figure 2D), indicating that a notable proportion of circRNAs>500 nt cannot be reconstructed by RNA-seq.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the length distribution data and known limitations of RNA-seq.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "d22c8c67-d675-486d-b749-b14d5ecc367c",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C31",
+      "claim": "Read-through circRNAs contained more exons than other types.",
+      "claim_type": "EXPLICIT",
+      "source": "Read-through circRNAs contained more exons (Figure 2E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative result from the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "cb753b8c-aa49-4579-b769-a15e40da24ea",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C32",
+      "claim": "The exon length of single-exon circRNA was significantly longer than that of multiple-exon circRNA (p<2.2\u00d710\u201316).",
+      "claim_type": "EXPLICIT",
+      "source": "while the exon length of single-exon circRNA was significantly longer than that of multiple-exon circRNA (p<2.2\u00d710\u201316; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of exon lengths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "72722e8a-e442-4b5f-bf44-06c4b28a6f09",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C33",
+      "claim": "From 65,656 isoforms of 35,251 high-quality circRNA BSJs (read counts\u22655), 23,267 internal AS events were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "From 65,656 isoforms of 35,251 high-quality circRNA BSJs (read counts\u22655), we identified 23,267 internal AS events (Supplementary file 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the alternative splicing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "6fe5cd2f-7e24-4105-a28a-77a8402dbcf9",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C34",
+      "claim": "Internal AS events included 44.3% exon skipping (ES), 28.1% alternative 3\u2032 splicing site (A3SS), 24.1% alternative 5\u2032 splicing site (A5SS), and 3.5% intron retention (IR) events.",
+      "claim_type": "EXPLICIT",
+      "source": "including 44.3% exon skipping (ES), 28.1% alternative 3\u2032 splicing site (A3SS), 24.1% alternative 5\u2032 splicing site (A5SS), and 3.5% intron retention (IR) events (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative breakdown of AS event types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "c76ac283-dae5-400b-9d88-91a7e96d1065",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C35",
+      "claim": "IR events increased circRNA length by 289 nt on average (from 363 to 652 nt).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, IR events increased circRNA length by 289 nt on average (from 363 to 652 nt), which may influence their cellular localization (Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the analysis of IR events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "71705cca-e69f-40be-bac9-23a87c573b9d",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C36",
+      "claim": "IR events may influence circRNA cellular localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, IR events increased circRNA length by 289 nt on average (from 363 to 652 nt), which may influence their cellular localization (Huang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by a citation to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "f5660074-6570-4dfc-82ba-cb8d77312b34",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C37",
+      "claim": "circFL-seq accurately detected the full length of two isoforms (1485 and 1301 nt) generated by the IR event of CDR1as.",
+      "claim_type": "EXPLICIT",
+      "source": "circFL-seq accurately detected the full length of two isoforms (1485 and 1301 nt) generated by the IR event of CDR1as (Hansen et al., 2011; Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific example of circRNA detection validated by the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "e0c1d188-8e1a-458d-9dc7-c3b413b6e332",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C38",
+      "claim": "13 AS events (5 of ES, 3 of A3SS, 1 of A5SS, and 4 of IR) of 23 isoforms from 11 high-quality circRNAs in the HeLa cell line were experimentally verified.",
+      "claim_type": "EXPLICIT",
+      "source": "We further experimentally verified 13 AS events (5 of ES, 3 of A3SS, 1 of A5SS, and 4 of IR) of 23 isoforms from 11 high-quality circRNAs in the HeLa cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental validation performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "2d726dbe-8619-4b6e-b30a-e16371dbc0f6",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C39",
+      "claim": "All but an A3SS event were validated by Sanger sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "With divergent primers to amplify both BSJs and alternative spliced forward splicing junctions (FSJs), all but an A3SS event were validated by Sanger sequencing (Figure 2I\u2013K; Figure 2\u2014figure supplements 6\u20138).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the experimental validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "42285418-4a1f-48cd-bcfe-afc541522179",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C40",
+      "claim": "Eight RNA-seq libraries (150 bp\u00d72) with the same circRNA enrichment method for the same six cell lines were generated and sequenced by the Illumina HiSeq X Ten platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, for comparison, eight RNA-seq libraries (150 bp\u00d72) with the same circRNA enrichment method for the same six cell lines (Pearson's r>0.90 for replicates, Figure 3\u2014figure supplement 1) were generated and sequenced by the Illumina HiSeq X Ten platform.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design for comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "2a778246-1606-49d7-9ee0-0ab2046f62fa",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C41",
+      "claim": "A total of 95,371 circRNA BSJs were detected by CIRI2 from RNA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 95,371 circRNA BSJs were detected by CIRI2 (Gao et al., 2018; Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "929734b5-52a4-4b67-8ab4-ebc730be1afd",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C42",
+      "claim": "BSJ reads accounted for 0.15\u20130.32% of all RNA-seq reads, an amount 10 times lower than that of full-length circRNA reads with circFL-seq (2.2\u20138.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "BSJ reads accounted for 0.15\u20130.32% of all RNA-seq reads, an amount 10 times lower than that of full-length circRNA reads with circFL-seq (2.2\u20138.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative quantitative result between the two methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "7e63c6d3-f8cb-48ea-9486-c14d8eb02ec0",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C43",
+      "claim": "The proportion of overlapping BSJs identified by RNA-seq seemed to be larger than that identified by circFL-seq (76.7% vs. 40.3%) when compared to known BSJs annotated in the database.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to known BSJs that have been annotated in the database, the proportion of overlapping BSJs identified by RNA-seq seemed to be larger than that identified by circFL-seq (76.7% vs. 40.3%) (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative result from the database validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "a7131f18-d630-4b55-afb5-770ed87e7b03",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C44",
+      "claim": "When focusing on high-quality BSJs (read counts\u22655), the proportion obtained with circFL-seq (78.9%) was similar to that obtained with RNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when focusing on high-quality BSJs (read counts\u22655), the proportion obtained with circFL-seq (78.9%) was similar to that obtained with RNA-seq, indicating that more reads are required to confidently identify circRNAs by ONT (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative result showing the effect of read depth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "08f07a61-66cc-49cf-8865-376b67f9a4d7",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C45",
+      "claim": "More reads are required to confidently identify circRNAs by ONT.",
+      "claim_type": "IMPLICIT",
+      "source": "However, when focusing on high-quality BSJs (read counts\u22655), the proportion obtained with circFL-seq (78.9%) was similar to that obtained with RNA-seq, indicating that more reads are required to confidently identify circRNAs by ONT (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the comparison of detection rates at different read depths.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "2cb93a01-4067-43eb-8d6d-afb51fed80e3",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C46",
+      "claim": "The full-length construction by RNA-seq was highly dependent on circRNA length.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the full-length construction by RNA-seq was highly dependent on circRNA length (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparison showing a limitation of RNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "b86d4444-f7aa-4198-8982-fda4fa4334d6",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C47",
+      "claim": "Approximately 96.3% of full-length circRNAs reconstructed by RNA-seq were less than 500 nt in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 96.3% of full-length circRNAs reconstructed by RNA-seq were less than 500 nt in length, while 44.4% of circRNA isoforms detected by circFL-seq were more than 500 nt in length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of the length distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "1905e9a9-617e-4eb5-b5a2-4890463315f3",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C48",
+      "claim": "44.4% of circRNA isoforms detected by circFL-seq were more than 500 nt in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 96.3% of full-length circRNAs reconstructed by RNA-seq were less than 500 nt in length, while 44.4% of circRNA isoforms detected by circFL-seq were more than 500 nt in length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result showing the advantage of circFL-seq for longer circRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "de4415be-6465-47b5-b469-62bf50216097",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C49",
+      "claim": "circFL-seq produced more full-length circRNA reads per 10^9 raw bases than isoCirc (11,791 vs. 5820).",
+      "claim_type": "EXPLICIT",
+      "source": "circFL-seq produced more full-length circRNA reads per 109 raw bases than isoCirc (11,791 vs. 5820) (Figure 3\u2014figure supplement 5A-C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of efficiency between methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "a0954663-228a-4917-8d0e-5fafa5b0235a",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C50",
+      "claim": "circFL-seq identified fewer circRNA isoforms than isoCirc in the HEK293 cell line comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "but identified fewer circRNA isoforms (Figure 3\u2014figure supplement 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of detection between methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "e128e04d-40d0-462c-a5ff-0c31bb50807c",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C51",
+      "claim": "75.3% of circFL-seq-detected BSJs were annotated in the database, while the percentage of isoCirc was 43.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 75.3% of circFL-seq-detected BSJs were annotated in the database, while the percentage of isoCirc was 43.8% (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative validation result using database annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "1bddd827-2b05-4a6a-bd95-360316ee10bf",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C52",
+      "claim": "All the top 100 expressed BSJs identified by circFL-seq and RNA-seq were annotated in databases.",
+      "claim_type": "EXPLICIT",
+      "source": "All the top 100 expressed BSJs identified by circFL-seq and RNA-seq (collected from isoCirc study) were annotated in databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result for highly expressed circRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "a1c24460-884d-4cf0-9480-dd494a199478",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C53",
+      "claim": "22 of the top 100 BSJs identified by isoCirc were not supported in the databases or the RNA-seq and circFL-seq results.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 22 of the top 100 BSJs identified by isoCirc were not supported in the databases or the RNA-seq and circFL-seq results (Figure 3\u2014figure supplement 5M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative validation result suggesting potential false positives in isoCirc.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "1b18480d-ed25-4693-a1dd-2b1840d5c035",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C54",
+      "claim": "At the isoform level in the HEK293 cell line, 87.0% of the common BSJs (10,702/12,307) between circFL-seq and isoCirc identified at least one identical isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "At the isoform level in the HEK293 cell line, 87.0% of the common BSJs (10,702/12,307) between circFL-seq and isoCirc identified at least one identical isoform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of isoform concordance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "b1210d55-4963-472f-be8c-acc10282d7f0",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C55",
+      "claim": "circFL-seq identified more than two times ES, A3SS, and A5SS but similar numbers of IR events to isoCirc.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, circFL-seq identified more than two times ES, A3SS, and A5SS but similar numbers of IR events to isoCirc (Supplementary file 4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative result for AS event detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "2335b0d8-a398-462e-a016-a85cd997d373",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C56",
+      "claim": "isoCirc and circFL-seq detected 79,312 and 34,046 known BSJs, respectively, in two normal human tissues (brain and testis).",
+      "claim_type": "EXPLICIT",
+      "source": "isoCirc and circFL-seq detected 79,312 and 34,046 known BSJs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison in tissue samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "18863942-03d6-4128-8500-ffb7b696990e",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C57",
+      "claim": "Known BSJs detected by isoCirc were more likely (38,846 vs. 2511) to be expressed at low levels (read counts=1).",
+      "claim_type": "EXPLICIT",
+      "source": "Known BSJs detected by isoCirc were more likely (38,846 vs. 2511) to be expressed at low levels (read counts=1), indicating that more libraries were more sensitive for detecting circRNAs, overcoming bias and artifacts related to sampling, RNase R treatment, cDNA synthesis, and amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative result with an inference about the effect of multiple libraries.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "5d57ba08-cc2b-4d63-839c-d62224d4da28",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C58",
+      "claim": "The computational pipeline of circFL-seq was more sensitive with similar precision for BSJ detection compared to CIRI-long.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the computational pipeline of circFL-seq was more sensitive with similar precision for BSJ detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative assessment of the computational methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "b865dabe-cc36-4e3f-b822-1851a678b450",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C59",
+      "claim": "For AS events, circFL-seq identified more than 4.5 times the ES events, 12.4 times the A3SS events, 8.5 times the A5SS events, and 1.5 times the IR events compared to CIRI-long.",
+      "claim_type": "EXPLICIT",
+      "source": "For AS events, circFL-seq identified more than 4.5 times the ES events, 12.4 times the A3SS events, 8.5 times the A5SS events, and 1.5 times the IR events, suggesting a better sensitivity of circFL-seq in AS event detection, although ground-truth circRNA isoforms were required for performance evaluation (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative result for AS event detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "c25fc248-dc86-4a31-b27e-8e39636e828b",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C60",
+      "claim": "For BSJs identified by circFL-seq and RNA-seq, the amounts between the two methods were significantly correlated (Pearson's r=0.41\u20130.68).",
+      "claim_type": "EXPLICIT",
+      "source": "For BSJs identified by circFL-seq and RNA-seq, the amounts between the two methods were significantly correlated (Pearson's r=0.41\u20130.68, Figure 3A; Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical measure of correlation for quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "cef56886-ac5e-4721-91ae-221e9548d42f",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C61",
+      "claim": "For highly expressed BSJs, the fold changes in HeLa to SKOV3 cells were highly concordant with the RNA-seq results (Pearson's r=0.78).",
+      "claim_type": "EXPLICIT",
+      "source": "For the highly expressed BSJs (read counts\u226510 in at least two samples and detected by both methods), the fold changes in HeLa to SKOV3 cells were highly concordant with the RNA-seq results (Pearson's r=0.78, Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical measure of concordance for differential expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "2d830692-03e8-409f-aff3-f7dc5f72837b",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C62",
+      "claim": "circFL-seq detected 89 DECs, 58 of which were also identified by RNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "By using DESeq2 (Love et al., 2014), circFL-seq detected 89 DECs, 58 of which were also identified by RNA-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "7289bbeb-8f71-4c10-bbb9-84fad61bd273",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C63",
+      "claim": "The consistent circFL-seq and RT-qPCR results for both total RNA and RNase R-treated samples supported the capabilities of BSJ quantification.",
+      "claim_type": "EXPLICIT",
+      "source": "The consistent circFL-seq and RT-qPCR results for both total RNA (Figure 3\u2014figure supplement 7A-C) and RNase R-treated (Figure 3C and D) samples further supported the capabilities of BSJ quantification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result comparing two quantification methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "f994fad3-307c-4895-b100-faddec37c294",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C64",
+      "claim": "From 87 BSJs that had at least two isoforms detected by both HeLa and SKOV3 cell lines, 193 isoforms were used to quantify the internal variants by the ratio of transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "From 87 BSJs that had at least two isoforms detected by both HeLa and SKOV3 cell lines, 193 isoforms were used to quantify the internal variants by the ratio of transcripts (target isoforms to total isoforms from the same BSJ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis approach for isoform quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "5c1d1e06-a219-49c1-b380-c15a64aa2b9d",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C65",
+      "claim": "90 transcripts had more than 0.1 ratio differences between HeLa and SKOV3 cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 90 transcripts had more than 0.1 ratio differences between HeLa and SKOV3 cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the differential isoform analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "f356a8a2-4c1b-4f02-8f13-05dbcb1d4326",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C66",
+      "claim": "circ-PLOD2 showed a higher ratio of transcripts without ES in the HeLa cell line (0.83 to 0.45).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, circ-PLOD2 showed a higher ratio of transcripts without ES in the HeLa cell line (0.83 to 0.45) (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific example of differential isoform expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "eaf31871-bcda-490b-a694-0af0fe373806",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C67",
+      "claim": "Both the transcript ratios and ratio differences were consistent with the RT-qPCR results for 18 isoforms of 9 circRNA BSJs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the transcript ratios and ratio differences were consistent with the RT-qPCR results (Figure 3F and G; Figure 3\u2014figure supplement 7D-F), supporting the advantage of circFL-seq for quantification at the isoform level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result for isoform quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "7d14520d-2805-496e-be3d-bbca0ac6ea28",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C68",
+      "claim": "circFL-seq was able to detect f-circRNA with rolling circular reads separately mapped to two loci in different chromosomes or a >1 Mbp distance in the same chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "circFL-seq was able to detect f-circRNA with rolling circular reads separately mapped to two loci in different chromosomes or a >1 Mbp distance in the same chromosome (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the capability of the method for detecting fusion circRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "998b9a83-37a0-4ffa-867d-0ad18cfb42bd",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C69",
+      "claim": "Six high-quality f-circRNA isoforms (read count\u22655) affiliated with two fusion genes were identified in the MCF7 cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "With circFL-seq data, we identified six high-quality f-circRNA isoforms (read count\u22655) affiliated with two fusion genes in the MCF7 cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the fusion circRNA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "ab94a2ff-e27b-49a0-b6c9-0a8976ef5613",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C70",
+      "claim": "The rolling circles of full-length sequences of two major isoforms from GBF1/MACROD2 fusion were validated by Sanger sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, more than one product was observed (Figure 4C), and the rolling circles of full-length sequences were validated by Sanger sequencing (Figure 4D, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental validation result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "75879ddf-9902-4054-a05d-5fe48dce5733",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C71",
+      "claim": "The fusion junction of E2\u2013E4 was validated with linear RNA as a template, suggesting the existence of linear RNA production from the fusion gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we validated the fusion junction of E2\u2013E4 with linear RNA as a template (Figure 4C), suggesting the existence of linear RNA production from the fusion gene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result with an inference about the fusion gene.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "d60d9bd7-8d5d-49ad-929d-ccf2c350bedb",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C72",
+      "claim": "The decreased expression of junctions E2\u2013E4 after RNase R treatment supported the linear production, which further suggested that the fusion direction is GBF1 to MACROD2.",
+      "claim_type": "EXPLICIT",
+      "source": "The decreased expression of junctions E2\u2013E4 after RNase R treatment also supported the linear production, which further suggested that the fusion direction is GBF1 to MACROD2 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the RNase R treatment experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "9919cead-86f8-48f9-aa5d-adf223682b12",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C73",
+      "claim": "The f-circRNA fused by two antisense genes (PRICKLE2-AS1 and PTPRT-AS1) was experimentally validated.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the f-circRNA fused by two antisense genes (PRICKLE2-AS1 and PTPRT-AS1) was experimentally validated (Figure 4F; Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental validation result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "4e754e96-8bd1-4ba6-a79e-a2bddf882287",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C74",
+      "claim": "All the major fusion junctions of GBF1/MACROD2 and E3-E1 of PRICKLE2-AS1/PTPRT-AS1 were validated by RNA-seq of the MCF7 cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "All the major fusion junctions of GBF1/MACROD2 and E3-E1 of PRICKLE2-AS1/PTPRT-AS1 were validated by RNA-seq of the MCF7 cell line (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result using RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "abe466e3-1d4e-4e62-b832-c3a7bd51223e",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C75",
+      "claim": "Long-read sequencing with circFL-seq has shown advances in comprehensively identifying full-length circRNAs of all sizes (64\u20132334 nt in our data and more than 40% identified isoforms >500 nt) compared to short-read sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to short-read sequencing, which is limited to reconstructing short circRNAs (<500 nt), long-read sequencing with circFL-seq has shown advances in comprehensively identifying full-length circRNAs of all sizes (64\u20132334 nt in our data and more than 40% identified isoforms >500 nt).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative assessment of the method's capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "2c58fc57-b2c7-44a5-ad78-1457d6b5e9a6",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C76",
+      "claim": "circFL-seq and CIRI-long employ the RCRT strategy, while isoCirc employs the RCA strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "circFL-seq and CIRI-long employ the RCRT strategy, while isoCirc employs the RCA strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of methodological approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "070e391f-ce2c-4b25-86ba-01952005e8a8",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C77",
+      "claim": "Benefiting from RCA with a circular cDNA template from ligation of the RT product, isoCirc produces longer reads (up to 50 kb) containing more rolling circles than RCRT-based methods (ca. 1 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "Benefiting from RCA with a circular cDNA template from ligation of the RT product, isoCirc produces longer reads (up to 50 kb) containing more rolling circles than RCRT-based methods (ca. 1 kb) and thus has an advantage in error correction during CS identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative assessment of the methods based on their technical features.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "98db527b-6645-4a6d-b9ab-7af20a96999e",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C78",
+      "claim": "The cost of each full-length read is much higher in isoCirc than in circFL-seq and CIRI-long.",
+      "claim_type": "EXPLICIT",
+      "source": "As a trade-off, the cost of each full-length read is much higher in isoCirc than in circFL-seq and CIRI-long.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the economic implications of the different methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "d8254bae-fbe2-4998-93e2-593ecd01b808",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C79",
+      "claim": "The unique ligation of cDNA in isoCirc may introduce false positives for circRNA detection by ligating cDNA from residual linear RNA or truncated cDNA of circRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the unique ligation of cDNA in isoCirc may introduce false positives for circRNA detection by ligating cDNA from residual linear RNA or truncated cDNA of circRNA, which is hardly totally recognized and removed by computational analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about a potential limitation of the isoCirc method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "b6284b28-3409-4374-be5a-0d93b8acf31d",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C80",
+      "claim": "circFL-seq synthesizes second-strand cDNA with an anchor primer, while CIRI-long uses template switching.",
+      "claim_type": "EXPLICIT",
+      "source": "However, circFL-seq synthesizes second-strand cDNA with an anchor primer, while CIRI-long uses template switching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of technical details between methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "61e98d14-e19b-4f06-9dcc-ba6528ec363d",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C81",
+      "claim": "circFL-seq and CIRI-long are more resistant to the interference of residual linear RNA and generate shorter full-length reads of circRNA than isoCirc.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these two methods are more resistant to the interference of residual linear RNA and generate shorter full-length reads of circRNA than isoCirc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the properties of the methods based on their technical features.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "42fe8e1b-917f-4455-b558-a0b92a41005b",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C82",
+      "claim": "RCRT-based methods are not as sensitive as isoCirc with the same number of full-length reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RCRT-based methods are not as sensitive as isoCirc with the same number of full-length reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the relative sensitivity of the methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "52920572-1f74-49af-a2d4-46808a2143fe",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C83",
+      "claim": "The RG mode of circFL-seq identified 56% more full-length circRNAs with fewer than two circles compared to methods that only use consensus sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the RG mode of circFL-seq identified 56% more full-length circRNAs with fewer than two circles in our data, which helps to improve the sensitivity of circRNA detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result showing an advantage of the RG mode.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "f2f9ad6c-3574-424e-af14-0ce67d56cb56",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C84",
+      "claim": "circFL-seq leverages primer sequences to adjust the strand origin of circRNA, especially for BSJ with a non-canonical splicing motif.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, circFL-seq leverages primer sequences to adjust the strand origin of circRNA, especially for BSJ with a non-canonical splicing motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical feature of the circFL-seq method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "58fe91b3-0d79-4388-be9c-3980c12f67a2",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C85",
+      "claim": "circFL-seq was more sensitive than isoCirc and CIRI-long for AS detection.",
+      "claim_type": "EXPLICIT",
+      "source": "In our comparisons, circFL-seq was more sensitive than isoCirc and CIRI-long for AS detection, although the performance required full evaluation by ground-truth circRNA isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative assessment with a caveat about the need for further validation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "0b11e4c9-7739-4320-9418-0b557246e794",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C86",
+      "claim": "f-circRNA has been found to play important roles in cancer pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Another novel application of full-length circRNA sequencing is to identify f-circRNA, which has been found to play important roles in cancer pathogenesis (Guarnerio et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "d61b18ed-3580-492d-b9ee-6cd3e60844f0",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C87",
+      "claim": "f-circRNA has become a promising biomarker for liquid biopsy.",
+      "claim_type": "EXPLICIT",
+      "source": "and has become a promising biomarker for liquid biopsy (Tan et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "eba04134-92c5-4019-ba99-9ceb6bcd7201",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C88",
+      "claim": "Current methods validated the proposed f-circRNA by designing divergent primers on known gene fusion junctions and thus were inefficient and possibly ignored f-circRNA from unknown gene fusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Current methods (Guarnerio et al., 2016; Tan et al., 2018a; Tan et al., 2018b; Wu et al., 2019a) validated the proposed f-circRNA by designing divergent primers on known gene fusion junctions and thus were inefficient and possibly ignored f-circRNA from unknown gene fusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of existing methods supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "2e4861f1-b366-4df0-b7f2-4285a0a5a3cb",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C89",
+      "claim": "circFL-seq showed its ability to high-throughput identify f-circRNA with cancer cell line data.",
+      "claim_type": "EXPLICIT",
+      "source": "With cancer cell line data, circFL-seq showed its ability to high-throughput identify f-circRNA, which will promote our knowledge of f-circRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the capability demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "1cd7832d-9ff6-4bf2-a52c-0a05665b8b48",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C90",
+      "claim": "circFL-seq has been applied in a large-scale sequencer, PromethION, with pooling multiple libraries, which will further decrease the sequencing cost to twice that of RNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, circFL-seq has been applied in a large-scale sequencer, PromethION, with pooling multiple libraries, which will further decrease the sequencing cost to twice that of RNA-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the scalability and cost-effectiveness of the method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "db10062e-929d-40e9-8bc7-3d2f57616ea8",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "claim_id": "C91",
+      "claim": "circFL-seq is an effective and affordable high-throughput full-length circRNA sequencing method for screening functional circRNAs at the omics scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our developed circFL-seq process is an effective and affordable high-throughput full-length circRNA sequencing method for screening functional circRNAs at the omics scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion about the method based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8e6f7db5-b238-47ff-9097-c65505b8e853",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "circFL-seq is a novel full-length circRNA sequencing method based on rolling circular reverse transcription (RCRT) and nanopore sequencing. The method was validated by PCR and Sanger sequencing of eight known circRNAs, and when applied to eight libraries from six human cell lines, it produced 30M clean reads and detected 197,252 circRNA isoforms from 162,409 BSJs with high reproducibility (Pearson's r>0.93).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C21-C26 collectively establish the development and initial validation of circFL-seq. The experimental validation (C21-C22), sequencing output (C23), detection results (C24-C25), and reproducibility metrics (C26) provide converging evidence that the method works as described. The high correlation between replicates and successful amplification of known circRNAs support the technical validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "fc3c7885-e899-46f2-b092-3d96bcf3cfba",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "circFL-seq identified circRNAs with diverse structural characteristics: 73.2% were exonic type (99.8% verified in databases), median lengths ranged from 402-618 nt across types, and a notable proportion exceeded 500 nt. Read-through circRNAs contained more exons, while single-exon circRNAs had significantly longer exons than multi-exon circRNAs (p<2.2\u00d710\u207b\u00b9\u2076).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 describe the structural characterization of detected circRNAs with specific quantitative data and statistical support. The high database verification rate (C28) validates detection accuracy, and the statistical significance of exon length differences (C32) is properly reported. These findings are internally consistent and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "da507247-483a-42e9-bf14-b6fb7b381306",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "circFL-seq identified 23,267 internal alternative splicing (AS) events from 65,656 high-quality circRNA isoforms, including ES (44.3%), A3SS (28.1%), A5SS (24.1%), and IR (3.5%) events. Experimental validation by Sanger sequencing confirmed 12 of 13 tested AS events from 11 circRNAs, including accurate detection of CDR1as isoforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 demonstrate circFL-seq's capability for AS detection with quantitative breakdowns (C33-C34) and experimental validation (C37-C39). The high validation rate (12/13 events confirmed) and specific examples like CDR1as provide strong support. The one failed validation (A3SS event) is appropriately reported, adding credibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "3c43832a-75ed-4575-936e-0e84cb108028",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Comparison with RNA-seq showed that circFL-seq achieved >10-fold enrichment of circRNA reads (2.2-8.5% vs 0.15-0.32%) and detected circRNAs >500 nt more effectively (44.4% of circFL-seq isoforms vs 96.3% <500 nt for RNA-seq). High-quality BSJs from circFL-seq showed similar database annotation rates to RNA-seq (78.9% vs 76.7%), though more reads are required for confident ONT-based detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C48 provide a systematic comparison with RNA-seq using matched samples and enrichment protocols. The >10-fold enrichment (C42) and length distribution differences (C47-C48) are quantitatively supported. The observation that high-quality BSJs show similar validation rates (C44) addresses the initial apparent discrepancy (C43) and leads to the reasonable inference about read depth requirements (C45).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "e8badd89-471d-4693-a41c-3d5c5e667b84",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Comparison with isoCirc in HEK293 cells showed circFL-seq produced more full-length reads per raw base (11,791 vs 5,820) but identified fewer isoforms. However, circFL-seq showed higher precision with 75.3% of BSJs annotated in databases vs 43.8% for isoCirc, and all top 100 circFL-seq BSJs were database-annotated compared to 22/100 unsupported for isoCirc. At the isoform level, 87% of common BSJs identified at least one identical isoform between methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 provide a nuanced comparison with isoCirc showing trade-offs between sensitivity and precision. The higher database annotation rate (C51) and validation of top expressed circRNAs (C52-C53) support circFL-seq's precision. The 87% isoform concordance (C54) and higher AS event detection (C55) are quantitatively documented. The comparison is fair in acknowledging both advantages and limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "2af3bc24-c3d0-45cc-81ae-88096afa3d96",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In tissue samples (brain and testis), circFL-seq detected 34,046 known BSJs compared to 79,312 for isoCirc, with isoCirc detecting more low-expression BSJs (38,846 vs 2,511 at read count=1). Comparison with CIRI-long showed circFL-seq's computational pipeline was more sensitive with similar precision for BSJ detection and identified 4.5-12.4\u00d7 more AS events across different types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 extend the method comparison to tissues and CIRI-long. The lower detection in tissues (C56) is reasonably attributed to library number differences (C57), and the computational pipeline comparison (C58-C59) shows clear advantages for AS detection with specific fold-change values. The caveat about needing ground-truth validation (C59) appropriately acknowledges limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "619dc66c-efb7-41e1-a518-c8122e76ae00",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "circFL-seq quantification of circRNA BSJs correlated significantly with RNA-seq (Pearson's r=0.41-0.68), with high concordance for fold changes in highly expressed BSJs (r=0.78). circFL-seq detected 89 differentially expressed circRNAs (DECs) between HeLa and SKOV3 cells, 58 overlapping with RNA-seq, and RT-qPCR validation of 16 circRNAs confirmed the quantification accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 demonstrate circFL-seq's quantification capability with correlation statistics and experimental validation. The moderate to strong correlations (C60-C61), overlap in DEC detection (C62), and RT-qPCR concordance (C63) provide converging evidence. The validation includes both total RNA and RNase R-treated samples, strengthening the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "e7e68db5-6395-4a1d-8c0c-4b3a32ed2095",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "circFL-seq enabled isoform-level quantification of alternative splicing, identifying 90 transcripts with >0.1 ratio differences between HeLa and SKOV3 cells from 193 isoforms analyzed. RT-qPCR validation of 18 isoforms from 9 circRNA BSJs confirmed both transcript ratios and ratio differences, demonstrating the method's advantage for isoform-level quantification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 establish circFL-seq's capability for differential isoform analysis. The quantitative approach using transcript ratios (C64), identification of differential isoforms (C65), specific example (C66), and RT-qPCR validation (C67) provide strong support. This represents a clear advantage over RNA-seq, which cannot distinguish circular from linear isoforms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "77932efc-7cb5-4fc5-b6b0-189b74e24679",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "circFL-seq detected fusion circRNAs (f-circRNAs) by identifying reads mapping to distant loci. Six high-quality f-circRNA isoforms from two fusion genes were identified in MCF7 cells, including GBF1/MACROD2 and PRICKLE2-AS1/PTPRT-AS1 fusions, validated by Sanger sequencing and RNA-seq. RNase R experiments suggested GBF1 to MACROD2 fusion direction and linear RNA production from the fusion gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C74 demonstrate f-circRNA detection capability with experimental validation. The detection strategy (C68), quantitative results (C69), Sanger sequencing validation (C70), and RNA-seq confirmation (C74) provide strong support. The inference about fusion direction (C72) is reasonably drawn from RNase R experiments, though the linear RNA finding (C71) is somewhat speculative but experimentally supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "circFL-seq comprehensively identifies full-length circRNAs of all sizes (64-2334 nt, >40% >500 nt) compared to short-read sequencing. The RCRT-based approach differs from isoCirc's RCA strategy in producing shorter reads with lower per-read cost but requiring more reads for confident detection. circFL-seq's RG mode identified 56% more circRNAs with <2 circles, and the method showed higher sensitivity for AS detection than isoCirc and CIRI-long.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C85 provide a comprehensive technical comparison of long-read circRNA methods. The size range data (C75), methodological differences (C76-C82), and performance comparisons (C83-C85) are well-documented. The discussion appropriately acknowledges trade-offs between methods and includes both advantages (C83-C84) and limitations (C82). The caveat about needing ground-truth validation (C85) is appropriately stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "1447265b-55ef-42b2-9cd8-362937b75f3d",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological importance of circRNAs and limitations of existing methods. circRNAs function through multiple mechanisms (miRNA sponges, protein scaffolds, translation) determined by sequence features, but identifying full-length sequences is challenging due to overlap with linear cognates. Short-read sequencing can detect circRNAs but cannot fully reconstruct isoforms, while previous long-read approaches (PacBio, ONT-based methods) have been limited by throughput or cost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C20 establish the scientific context and rationale for the study. These are primarily knowledge claims supported by appropriate citations (C9-C13, C15-C16, C19-C20) and logical inferences about technical limitations (C2, C14, C17). The background appropriately motivates the need for the developed method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "6978cebb-1eef-47b5-adf1-4c5ea0a959b6",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "circFL-seq is presented as an effective, affordable, high-throughput method for full-length circRNA sequencing that can be scaled using PromethION with multiplexed libraries to reduce costs to approximately twice that of RNA-seq. The method enables screening of functional circRNAs at the omics scale with applications in alternative splicing analysis and fusion circRNA detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8, C90-C91 summarize the method's capabilities and potential applications. The quantitative results (C4-C5), comparative advantages (C6), validation concordance (C7), and demonstrated capabilities (C8) support these conclusions. The cost projection (C90) is based on the PromethION application but represents a forward-looking claim. The overall assessment (C91) is reasonable given the demonstrated results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "e90cd250-489e-4d28-b93b-0bd7eedfce60",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Intron retention (IR) events increased circRNA length by an average of 289 nt (from 363 to 652 nt), which may influence cellular localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C35 provides quantitative data on IR event effects on length, which is supported by the analysis. However, C36's speculation about cellular localization effects is based only on a citation and not directly tested in this study. The length increase is documented, but the functional consequence remains speculative without experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "e4990c3e-436c-4d6a-b82d-a878dada89bf",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Fusion circRNAs (f-circRNAs) play important roles in cancer pathogenesis and are promising biomarkers for liquid biopsy. Current validation methods using divergent primers on known fusion junctions are inefficient and may miss f-circRNAs from unknown fusions. circFL-seq demonstrated high-throughput f-circRNA identification capability in cancer cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 establish the importance of f-circRNA detection and circFL-seq's advantage. The biological importance (C86-C87) is supported by citations, the limitation of current methods (C88) is a reasonable critique, and the demonstrated capability (C89) is supported by the experimental results in claims C68-C74. This represents an important application of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    },
+    {
+      "id": "b95a2f17-449f-4c66-ac2b-268df1110124",
+      "content_id": "b6a87e72-d9d9-4f02-9c9d-e58d672436c6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The unique ligation step in isoCirc may introduce false positives by ligating cDNA from residual linear RNA or truncated circRNA cDNA, which is difficult to computationally remove.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C79 is a speculation about a potential limitation of isoCirc. While the concern is theoretically reasonable given the ligation-based approach, this claim is not directly tested or demonstrated in the manuscript. The evidence for higher false positive rates in isoCirc (C53) provides some indirect support, but the specific mechanism proposed remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:06.221489Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2f2325bc-49ba-41db-8fd4-b3bfdd59ee4b",
+      "result_id": "8e6f7db5-b238-47ff-9097-c65505b8e853"
+    },
+    {
+      "claim_id": "8bdd6b27-72a0-448f-9752-a8e38c6a59d2",
+      "result_id": "8e6f7db5-b238-47ff-9097-c65505b8e853"
+    },
+    {
+      "claim_id": "ff0b13d6-1fea-4ec4-9864-e07df8f47cbc",
+      "result_id": "8e6f7db5-b238-47ff-9097-c65505b8e853"
+    },
+    {
+      "claim_id": "3149e9e1-2ee4-4362-9fab-96919828dbad",
+      "result_id": "8e6f7db5-b238-47ff-9097-c65505b8e853"
+    },
+    {
+      "claim_id": "893e20a9-423b-479d-8166-c0a8dcbad4cd",
+      "result_id": "8e6f7db5-b238-47ff-9097-c65505b8e853"
+    },
+    {
+      "claim_id": "b5f4e2ae-2e31-4c6e-a787-8b06ea260cbd",
+      "result_id": "8e6f7db5-b238-47ff-9097-c65505b8e853"
+    },
+    {
+      "claim_id": "a162eaee-8850-4322-80a0-77030435eece",
+      "result_id": "8e6f7db5-b238-47ff-9097-c65505b8e853"
+    },
+    {
+      "claim_id": "65497be1-6900-473b-9500-1f98fb754d3a",
+      "result_id": "fc3c7885-e899-46f2-b092-3d96bcf3cfba"
+    },
+    {
+      "claim_id": "cee79403-e348-46bc-95e9-150f7480ec29",
+      "result_id": "fc3c7885-e899-46f2-b092-3d96bcf3cfba"
+    },
+    {
+      "claim_id": "25b0ae15-dbe2-4697-a2ca-ff9b837017ce",
+      "result_id": "fc3c7885-e899-46f2-b092-3d96bcf3cfba"
+    },
+    {
+      "claim_id": "ddd8dd5c-ec6b-4c70-8696-8ed6e23413d4",
+      "result_id": "fc3c7885-e899-46f2-b092-3d96bcf3cfba"
+    },
+    {
+      "claim_id": "d22c8c67-d675-486d-b749-b14d5ecc367c",
+      "result_id": "fc3c7885-e899-46f2-b092-3d96bcf3cfba"
+    },
+    {
+      "claim_id": "cb753b8c-aa49-4579-b769-a15e40da24ea",
+      "result_id": "fc3c7885-e899-46f2-b092-3d96bcf3cfba"
+    },
+    {
+      "claim_id": "72722e8a-e442-4b5f-bf44-06c4b28a6f09",
+      "result_id": "da507247-483a-42e9-bf14-b6fb7b381306"
+    },
+    {
+      "claim_id": "6fe5cd2f-7e24-4105-a28a-77a8402dbcf9",
+      "result_id": "da507247-483a-42e9-bf14-b6fb7b381306"
+    },
+    {
+      "claim_id": "c76ac283-dae5-400b-9d88-91a7e96d1065",
+      "result_id": "da507247-483a-42e9-bf14-b6fb7b381306"
+    },
+    {
+      "claim_id": "71705cca-e69f-40be-bac9-23a87c573b9d",
+      "result_id": "da507247-483a-42e9-bf14-b6fb7b381306"
+    },
+    {
+      "claim_id": "f5660074-6570-4dfc-82ba-cb8d77312b34",
+      "result_id": "da507247-483a-42e9-bf14-b6fb7b381306"
+    },
+    {
+      "claim_id": "e0c1d188-8e1a-458d-9dc7-c3b413b6e332",
+      "result_id": "da507247-483a-42e9-bf14-b6fb7b381306"
+    },
+    {
+      "claim_id": "2d726dbe-8619-4b6e-b30a-e16371dbc0f6",
+      "result_id": "da507247-483a-42e9-bf14-b6fb7b381306"
+    },
+    {
+      "claim_id": "42285418-4a1f-48cd-bcfe-afc541522179",
+      "result_id": "3c43832a-75ed-4575-936e-0e84cb108028"
+    },
+    {
+      "claim_id": "2a778246-1606-49d7-9ee0-0ab2046f62fa",
+      "result_id": "3c43832a-75ed-4575-936e-0e84cb108028"
+    },
+    {
+      "claim_id": "929734b5-52a4-4b67-8ab4-ebc730be1afd",
+      "result_id": "3c43832a-75ed-4575-936e-0e84cb108028"
+    },
+    {
+      "claim_id": "7e63c6d3-f8cb-48ea-9486-c14d8eb02ec0",
+      "result_id": "3c43832a-75ed-4575-936e-0e84cb108028"
+    },
+    {
+      "claim_id": "a7131f18-d630-4b55-afb5-770ed87e7b03",
+      "result_id": "3c43832a-75ed-4575-936e-0e84cb108028"
+    },
+    {
+      "claim_id": "08f07a61-66cc-49cf-8865-376b67f9a4d7",
+      "result_id": "3c43832a-75ed-4575-936e-0e84cb108028"
+    },
+    {
+      "claim_id": "2cb93a01-4067-43eb-8d6d-afb51fed80e3",
+      "result_id": "3c43832a-75ed-4575-936e-0e84cb108028"
+    },
+    {
+      "claim_id": "b86d4444-f7aa-4198-8982-fda4fa4334d6",
+      "result_id": "3c43832a-75ed-4575-936e-0e84cb108028"
+    },
+    {
+      "claim_id": "1905e9a9-617e-4eb5-b5a2-4890463315f3",
+      "result_id": "3c43832a-75ed-4575-936e-0e84cb108028"
+    },
+    {
+      "claim_id": "de4415be-6465-47b5-b469-62bf50216097",
+      "result_id": "e8badd89-471d-4693-a41c-3d5c5e667b84"
+    },
+    {
+      "claim_id": "a0954663-228a-4917-8d0e-5fafa5b0235a",
+      "result_id": "e8badd89-471d-4693-a41c-3d5c5e667b84"
+    },
+    {
+      "claim_id": "e128e04d-40d0-462c-a5ff-0c31bb50807c",
+      "result_id": "e8badd89-471d-4693-a41c-3d5c5e667b84"
+    },
+    {
+      "claim_id": "1bddd827-2b05-4a6a-bd95-360316ee10bf",
+      "result_id": "e8badd89-471d-4693-a41c-3d5c5e667b84"
+    },
+    {
+      "claim_id": "a1c24460-884d-4cf0-9480-dd494a199478",
+      "result_id": "e8badd89-471d-4693-a41c-3d5c5e667b84"
+    },
+    {
+      "claim_id": "1b18480d-ed25-4693-a1dd-2b1840d5c035",
+      "result_id": "e8badd89-471d-4693-a41c-3d5c5e667b84"
+    },
+    {
+      "claim_id": "b1210d55-4963-472f-be8c-acc10282d7f0",
+      "result_id": "e8badd89-471d-4693-a41c-3d5c5e667b84"
+    },
+    {
+      "claim_id": "2335b0d8-a398-462e-a016-a85cd997d373",
+      "result_id": "2af3bc24-c3d0-45cc-81ae-88096afa3d96"
+    },
+    {
+      "claim_id": "18863942-03d6-4128-8500-ffb7b696990e",
+      "result_id": "2af3bc24-c3d0-45cc-81ae-88096afa3d96"
+    },
+    {
+      "claim_id": "5d57ba08-cc2b-4d63-839c-d62224d4da28",
+      "result_id": "2af3bc24-c3d0-45cc-81ae-88096afa3d96"
+    },
+    {
+      "claim_id": "b865dabe-cc36-4e3f-b822-1851a678b450",
+      "result_id": "2af3bc24-c3d0-45cc-81ae-88096afa3d96"
+    },
+    {
+      "claim_id": "c25fc248-dc86-4a31-b27e-8e39636e828b",
+      "result_id": "619dc66c-efb7-41e1-a518-c8122e76ae00"
+    },
+    {
+      "claim_id": "cef56886-ac5e-4721-91ae-221e9548d42f",
+      "result_id": "619dc66c-efb7-41e1-a518-c8122e76ae00"
+    },
+    {
+      "claim_id": "2d830692-03e8-409f-aff3-f7dc5f72837b",
+      "result_id": "619dc66c-efb7-41e1-a518-c8122e76ae00"
+    },
+    {
+      "claim_id": "7289bbeb-8f71-4c10-bbb9-84fad61bd273",
+      "result_id": "619dc66c-efb7-41e1-a518-c8122e76ae00"
+    },
+    {
+      "claim_id": "f994fad3-307c-4895-b100-faddec37c294",
+      "result_id": "e7e68db5-6395-4a1d-8c0c-4b3a32ed2095"
+    },
+    {
+      "claim_id": "5c1d1e06-a219-49c1-b380-c15a64aa2b9d",
+      "result_id": "e7e68db5-6395-4a1d-8c0c-4b3a32ed2095"
+    },
+    {
+      "claim_id": "f356a8a2-4c1b-4f02-8f13-05dbcb1d4326",
+      "result_id": "e7e68db5-6395-4a1d-8c0c-4b3a32ed2095"
+    },
+    {
+      "claim_id": "eaf31871-bcda-490b-a694-0af0fe373806",
+      "result_id": "e7e68db5-6395-4a1d-8c0c-4b3a32ed2095"
+    },
+    {
+      "claim_id": "7d14520d-2805-496e-be3d-bbca0ac6ea28",
+      "result_id": "77932efc-7cb5-4fc5-b6b0-189b74e24679"
+    },
+    {
+      "claim_id": "998b9a83-37a0-4ffa-867d-0ad18cfb42bd",
+      "result_id": "77932efc-7cb5-4fc5-b6b0-189b74e24679"
+    },
+    {
+      "claim_id": "ab94a2ff-e27b-49a0-b6c9-0a8976ef5613",
+      "result_id": "77932efc-7cb5-4fc5-b6b0-189b74e24679"
+    },
+    {
+      "claim_id": "75879ddf-9902-4054-a05d-5fe48dce5733",
+      "result_id": "77932efc-7cb5-4fc5-b6b0-189b74e24679"
+    },
+    {
+      "claim_id": "d60d9bd7-8d5d-49ad-929d-ccf2c350bedb",
+      "result_id": "77932efc-7cb5-4fc5-b6b0-189b74e24679"
+    },
+    {
+      "claim_id": "9919cead-86f8-48f9-aa5d-adf223682b12",
+      "result_id": "77932efc-7cb5-4fc5-b6b0-189b74e24679"
+    },
+    {
+      "claim_id": "4e754e96-8bd1-4ba6-a79e-a2bddf882287",
+      "result_id": "77932efc-7cb5-4fc5-b6b0-189b74e24679"
+    },
+    {
+      "claim_id": "abe466e3-1d4e-4e62-b832-c3a7bd51223e",
+      "result_id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7"
+    },
+    {
+      "claim_id": "2c58fc57-b2c7-44a5-ad78-1457d6b5e9a6",
+      "result_id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7"
+    },
+    {
+      "claim_id": "070e391f-ce2c-4b25-86ba-01952005e8a8",
+      "result_id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7"
+    },
+    {
+      "claim_id": "98db527b-6645-4a6d-b9ab-7af20a96999e",
+      "result_id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7"
+    },
+    {
+      "claim_id": "d8254bae-fbe2-4998-93e2-593ecd01b808",
+      "result_id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7"
+    },
+    {
+      "claim_id": "b6284b28-3409-4374-be5a-0d93b8acf31d",
+      "result_id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7"
+    },
+    {
+      "claim_id": "61e98d14-e19b-4f06-9dcc-ba6528ec363d",
+      "result_id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7"
+    },
+    {
+      "claim_id": "42fe8e1b-917f-4455-b558-a0b92a41005b",
+      "result_id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7"
+    },
+    {
+      "claim_id": "52920572-1f74-49af-a2d4-46808a2143fe",
+      "result_id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7"
+    },
+    {
+      "claim_id": "f2f9ad6c-3574-424e-af14-0ce67d56cb56",
+      "result_id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7"
+    },
+    {
+      "claim_id": "58fe91b3-0d79-4388-be9c-3980c12f67a2",
+      "result_id": "ba0483d5-b042-4dc8-a7d0-7cd8d07490e7"
+    },
+    {
+      "claim_id": "ca65ddfb-f4d9-4af8-9faa-dc51f4813d8f",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "2287f997-9a23-4835-bb3f-d64991c567a0",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "1149682a-a1b4-4314-b428-f9b642cc354f",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "6546ce5b-ef11-4594-9e49-2e566e6d168c",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "e09c78ed-d81d-4689-8fac-2ddbb9f24816",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "60633910-6113-40c6-85b0-74bfef9cae98",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "2f9ab2ca-11a0-49fe-9db0-42848e79ee97",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "a79edc99-cddf-4263-b423-a1499939a41a",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "f2e01fe5-2ab2-43b0-9cd8-1f8bab5b5d2d",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "150b2933-4558-4c2f-b8b8-35bd2f7268cd",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "a71b5004-1bb1-4420-92e8-55a7b5b686af",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "b803302d-2be4-49d9-a3e1-58e3ee99ccac",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "d0307522-4e27-4e61-b2a1-5d588d80c24c",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "08f793a3-dda5-419b-91ec-13733a9efbb4",
+      "result_id": "1447265b-55ef-42b2-9cd8-362937b75f3d"
+    },
+    {
+      "claim_id": "6e612804-6ee2-4de4-9a01-9e5b4717b3dc",
+      "result_id": "6978cebb-1eef-47b5-adf1-4c5ea0a959b6"
+    },
+    {
+      "claim_id": "303f3bd3-a3f2-48f5-a1b7-fb0b7ddba75c",
+      "result_id": "6978cebb-1eef-47b5-adf1-4c5ea0a959b6"
+    },
+    {
+      "claim_id": "9b6e9a3d-9d82-4251-8df6-bf2dba0a3a13",
+      "result_id": "6978cebb-1eef-47b5-adf1-4c5ea0a959b6"
+    },
+    {
+      "claim_id": "a2927ba2-7de9-437d-963d-e0c19c6eece3",
+      "result_id": "6978cebb-1eef-47b5-adf1-4c5ea0a959b6"
+    },
+    {
+      "claim_id": "067bdf77-3cd7-4bbf-9832-08823bd71d84",
+      "result_id": "6978cebb-1eef-47b5-adf1-4c5ea0a959b6"
+    },
+    {
+      "claim_id": "1cd7832d-9ff6-4bf2-a52c-0a05665b8b48",
+      "result_id": "6978cebb-1eef-47b5-adf1-4c5ea0a959b6"
+    },
+    {
+      "claim_id": "db10062e-929d-40e9-8bc7-3d2f57616ea8",
+      "result_id": "6978cebb-1eef-47b5-adf1-4c5ea0a959b6"
+    },
+    {
+      "claim_id": "c76ac283-dae5-400b-9d88-91a7e96d1065",
+      "result_id": "e90cd250-489e-4d28-b93b-0bd7eedfce60"
+    },
+    {
+      "claim_id": "71705cca-e69f-40be-bac9-23a87c573b9d",
+      "result_id": "e90cd250-489e-4d28-b93b-0bd7eedfce60"
+    },
+    {
+      "claim_id": "0b11e4c9-7739-4320-9418-0b557246e794",
+      "result_id": "e4990c3e-436c-4d6a-b82d-a878dada89bf"
+    },
+    {
+      "claim_id": "d61b18ed-3580-492d-b9ee-6cd3e60844f0",
+      "result_id": "e4990c3e-436c-4d6a-b82d-a878dada89bf"
+    },
+    {
+      "claim_id": "eba04134-92c5-4019-ba99-9ceb6bcd7201",
+      "result_id": "e4990c3e-436c-4d6a-b82d-a878dada89bf"
+    },
+    {
+      "claim_id": "2e4861f1-b366-4df0-b7f2-4285a0a5a3cb",
+      "result_id": "e4990c3e-436c-4d6a-b82d-a878dada89bf"
+    },
+    {
+      "claim_id": "d8254bae-fbe2-4998-93e2-593ecd01b808",
+      "result_id": "b95a2f17-449f-4c66-ac2b-268df1110124"
+    }
+  ],
+  "comparisons": []
+}

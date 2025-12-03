@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C11",
+      "C12",
+      "C14",
+      "C46",
+      "C47"
+    ],
+    "result": "Nontransitive fitness interactions arose in population BYS1-D08 over 1000 generations. The Intermediate clone (Gen 335) is 3.8% fitter than the Early clone (Gen 0), and the Late clone (Gen 1000) is 1.2% fitter than the Intermediate clone, yet the Late clone exhibits frequency-dependent fitness disadvantage against the Early clone. This nontransitivity results from beneficial nuclear mutations (yur1, ste4) combined with stepwise viral deterioration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C11-C12, C14, C46-C47 provide converging evidence for nontransitivity through fitness measurements at multiple starting frequencies (Figure 1B), virus-curing experiments demonstrating the role of the killer virus, and consistency with previously measured effects of nuclear mutations. The mechanistic explanation linking nuclear adaptation and viral deterioration is well-supported by experimental manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C38"
+    ],
+    "result": "The killer phenotype changed stepwise during evolution of BYS1-D08: the ancestral Early clone exhibits killing ability and immunity (K+I+), the Intermediate clone lost killing ability but retained immunity (K-I+), and the Late clone lost both killing ability and immunity (K-I-). Viral mutations are sufficient to explain these phenotypic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 document the phenotypic progression using halo assays (Figures 1A, 1\u2014figure supplement 2-3), and C38 demonstrates sufficiency through cytoduction experiments (Figure 5\u2014figure supplement 1) where transferred viral variants confer the expected phenotypes. The experimental design appropriately isolates viral from nuclear contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C3",
+      "C87"
+    ],
+    "result": "Approximately half of 142 evolved yeast populations lost or weakened killing ability by Generation 1000, with ~10% losing both killing and immunity. Loss of immunity without loss of killing was never observed. This indicates that multilevel selection (fixing both nuclear and viral mutations) is common under these experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are directly supported by phenotypic screening data (Figure 2, Figure 2\u2014figure supplement 1) across 142 populations. Claims C3 and C87 extend this to conclude multilevel selection is common, which is well-supported by the high frequency of phenotypic changes attributable to viral evolution combined with known nuclear adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Viral genome sequencing revealed that populations losing killing ability possess 1-3 mutations in the M1 killer virus coding sequence (mostly missense), while control populations retaining the killer phenotype had only one synonymous mutation. There is strong statistical correlation (p=1.4\u00d710\u207b\u00b9\u00b3) between viral mutations and loss of killing ability, with an estimated half of all populations fixing phenotype-altering viral variants by Generation 1000.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 are supported by viral genome sequencing data from 67 populations (Figure 3A). The strong statistical correlation (C25) and stark contrast between experimental and control populations (C23-C24) provide compelling evidence. The estimate in C26 is reasonable given the data, though it relies on extrapolation from the sequenced subset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Among populations that lost killing ability, 42 of 57 fixed one of three single nucleotide polymorphisms (D106G, D253N, I292M), which likely existed at low frequency in the ancestral culture. An additional 34 putative de novo point mutations arose during evolution of individual populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by sequencing data (Supplementary file 1) and detection of D106G in early clones (C28). The inference that common polymorphisms were ancestral standing variation is reasonable given their high frequency and detection in founding populations. The distinction between standing variation and de novo mutations is appropriately made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The K1 coding sequence shows balancing selection (dN/dS = 0.90) and extreme transition:transversion bias (R = 6.4, p<0.0001). This bias appears specific to viral genomes, as nuclear genomes show much lower ratios (R = 0.8), suggesting a mutational bias of the viral RNA-dependent RNA polymerase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by mutational spectrum analysis (Supplementary file 2) with appropriate statistical tests. The comparison to nuclear genome mutation patterns (C32) and citation of similar patterns in other viral systems strengthens the interpretation. The dN/dS ratio and transition bias are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Two viral genomes with large deletions in the K1 ORF were detected. These deletion mutants maintain cis signals for replication and packaging, and coexist with full-length viral variants in the same populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by sequencing data (Figure 3B) and appropriate citations for the functional requirements of deletion mutants (C34). The observation of coexistence (C35) is important for understanding within-host viral dynamics and is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C13"
+    ],
+    "result": "Viral sweeps often coincide with nuclear sweeps in time-course data. Since nuclear sweeps contain known driver mutations, viral variants may be hitchhiking rather than driving adaptation. Consistent with this, the Intermediate clone's viral variant confers no significant fitness effect compared to the ancestral virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by time-course sequencing (Figure 4) showing temporal coincidence of sweeps. Claim C13 provides experimental support through virus-swapping experiments (Figure 1B). The hitchhiking hypothesis is appropriately presented as a possibility (C37) rather than certainty, and is well-supported by the lack of fitness effect in C13.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Frequency-dependent selection was observed when one competitor had killing ability and the other lacked immunity. However, when killer phenotypes were compatible, host fitness was unaffected by viral variant identity or even virus presence, suggesting no detectable fitness cost of toxin production or virus maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by systematic competition experiments with cytoductants (Figure 5A). The experimental design appropriately tests different phenotypic combinations. The inference of no fitness cost (C41) is reasonable given the data, though the resolution of the fitness assay should be considered when interpreting negative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In intracellular competition experiments using heteroplasmic diploids, evolved viral variants outcompeted ancestral variants, with derived variants fixing in most lines. A de novo G131D variant arose and swept in one line. This demonstrates that viral variants have selective advantage within individual cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by intracellular competition experiments with appropriate controls to minimize among-cell selection (Figure 5B-C). The use of both Sanger and Illumina sequencing (Figure 5\u2014figure supplement 2) strengthens confidence in frequency estimates. The observation of de novo variants arising during the experiment (C44) provides additional evidence for ongoing intracellular selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C72",
+      "C73"
+    ],
+    "result": "Nuclear genomes show statistical enrichment of mutations in \u03b2-glucan biosynthesis genes (6-fold, p<0.0001) and genes conferring K1 toxin resistance (40 mutations in 11 of 36 genes, p=1.8\u00d710\u207b\u2075). Nearly all mutations in toxin-resistance genes are nonsynonymous (18 nonsense/frameshift, 21 missense, 1 synonymous). However, these mutations are not sufficient to account for loss of killing ability or immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C72-C73 are supported by appropriate statistical tests and mutation counts. The enrichment analyses are properly conducted with significant p-values. Claim C20 appropriately notes that despite enrichment, these nuclear mutations don't explain the phenotypic changes, which is consistent with the viral mutation data. The signature of positive selection (C72) is clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Nontransitivity in this system arises through interference competition rather than a co-evolutionary arms race. Mutations fix in viral and yeast populations because they provide direct fitness advantages in their respective populations, not through antagonistic host-virus coevolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 provide a mechanistic interpretation supported by the experimental data. The distinction from canonical arms race dynamics (C70) is appropriate given that viral deterioration (not increased virulence) is observed. The interpretation that mutations provide direct fitness benefits (C71) is supported by the intracellular competition data and lack of fitness costs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "The continuous action of selection can give rise to genotypes less fit than distant ancestors. Nontransitive interactions can arise quickly through multilevel selection in host/virus systems. Adaptive evolution is capable of producing nontransitive fitness interactions along evolutionary lineages, even under simple laboratory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C88 represent the main conclusions of the study and are well-supported by the comprehensive experimental evidence including fitness measurements, phenotypic tracking, genome sequencing, and mechanistic experiments. The demonstration spans multiple levels (nuclear and viral) and multiple populations, providing robust support for these broad conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors reinterpret the Paquin and Adams (1983) study, arguing that it likely observed ecological nontransitivity among contemporaneous lineages rather than genealogical nontransitivity. This reinterpretation is based on modern understanding of clonal interference and the implausibly short time for the reported number of selective sweeps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C79-C83 provide a critical reanalysis of prior work. The critique is well-reasoned, citing modern understanding of population genetics (C80) and providing quantitative arguments about sweep dynamics (C81-C82). The reinterpretation (C83) is appropriately presented as the authors' contention rather than definitive proof, and is supported by sound reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Methodological details of the evolution experiment and fitness assays are provided, including daily 1:210 dilutions (10 generations/day, effective population size ~10\u2075), clone isolation at generations coinciding with selective sweep completion, and 50-generation competition assays with fitness calculated from log-ratio slopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 describe methodological details that are clearly stated in the Materials and methods section with appropriate citations to previous work (Lang et al., 2011, 2013). These methods are standard for experimental evolution studies and are described with sufficient detail for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Intact-organism imaging of Drosophila larvae reveals multiple modes of chromatin organization including peripheral, conventional, central, and wetting droplet configurations. These organizational modes represent chromatin-aqueous phase separation at the nuclear scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18, and C2-C5 collectively describe experimental observations of chromatin organization modes in Drosophila larvae. The claims are supported by experimental imaging data (H2B-RFP and Nesprin/Klar-GFP labeling) and cited work (Amiad-Pavlov et al., 2020). The visual evidence in figures confirms these distinct organizational patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C40",
+      "C41"
+    ],
+    "result": "Chromatin organizational transitions are controlled by changes in nuclear volume and chromatin-lamina interactions. Live versus fixed cells show a ~3-fold reduction in nuclear volume with transition from peripheral to conventional organization, while lamin C overexpression causes transition from peripheral to central organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C40, and C41 describe experimental observations linking nuclear volume changes and lamin interactions to chromatin organization. The experimental data showing volume reduction in fixed cells and lamin C overexpression effects provide direct evidence for these control mechanisms. The observations are consistent across multiple experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C19"
+    ],
+    "result": "A polymeric model incorporating chromatin self-attraction and chromatin-lamina binding demonstrates that competition between these two effects determines chromatin distribution modes. The simulation results qualitatively match experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, and C19 describe the theoretical model and its validation. The simulations successfully reproduce the qualitative trends observed experimentally (Figures 2-4), and the model appropriately focuses on the regime where chromatin self-attraction and lamina interactions dominate over euchromatin/heterochromatin differences. The comparison between simulation and experiment is demonstrated throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C47"
+    ],
+    "result": "Simulations demonstrate that decreasing the fraction of LAD domains that can bind to lamina (\u03c8) causes transition from peripheral to central organization, while decreasing chromatin volume fraction (\u03c6) causes transition from conventional to peripheral organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C47 describe specific simulation results shown in Figures 3 and 4. The local volume fraction profiles quantitatively demonstrate these transitions, with clear shifts in chromatin localization as parameters are varied. The results are internally consistent and supported by multiple simulation snapshots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In peripheral organization, euchromatin (non-LAD) and heterochromatin (LAD) regions separate angularly rather than radially. Simulations show this angular separation can occur even with equal self-attraction of LAD and non-LAD, originating from stronger LAD-lamina binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe both experimental observations (Figure 6c) and simulation results (Figure 6a-b) showing angular separation of chromatin domains. The simulations successfully reproduce the experimental pattern and provide a mechanistic explanation based on differential lamina binding rather than differential self-attraction. The agreement between simulation and experiment is visually demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Chromatin cannot be modeled as a self-avoiding polymer because this would predict uniform nuclear filling, inconsistent with observed peripheral and central organizations. Experimental observations of peripheral organization indicate chromatin self-attraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide theoretical reasoning for why chromatin self-attraction is necessary in the model. The argument is logically sound: a self-avoiding polymer would have a radius of gyration larger than the nucleus and would fill the entire volume under confinement, contradicting experimental observations of phase-separated chromatin. The inference of self-attraction from peripheral condensation is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Multiple molecular mechanisms can contribute to chromatin self-attraction, including histone tail-DNA interactions, protein condensates (e.g., HP1), bridging proteins, and nucleoplasmic lamin A crosslinking. These justify treating chromatin as having effective self-attraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 cite established literature to support the existence of chromatin self-attraction mechanisms. Each mechanism is supported by appropriate citations to experimental work. While the current manuscript does not directly test these mechanisms, the literature support is adequate to justify the model assumption of effective chromatin self-attraction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The model treats a single chromosome (Drosophila X chromosome with 48% LAD domains in alternating pattern) but can be extended to multiple chromosomes by adjusting chromatin volume fraction. The coarse-grained model is independent of chromosome size and LAD distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C68-C70 describe the model scope and generalizability. The use of chromosome X data (Ho et al., 2014) provides biological realism, while Appendix 4 demonstrates that random LAD distribution gives similar results, supporting the claim of model independence from specific LAD patterns. The extension to multiple chromosomes through volume fraction adjustment is a reasonable approximation for the coarse-grained model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Brownian dynamics simulations use LAMMPS with a bead-spring chromatin model having persistence length of 2 beads (1.2 kb), based on previous estimates of 1-2 kb for interphase chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 describe computational methods with appropriate citations. The persistence length choice is justified by prior work (Marko and Siggia, 1997), and LAMMPS is a standard, validated simulation package. The model parameters are clearly specified in Table 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Simulations show that lamins prevent chromosome mixing and maintain territories, peripheral chromatin is organized fractally like conventional chromatin, and peripheral chromatin is more condensed than central but similar to conventional organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 describe additional simulation results shown in Appendix 6. These are secondary findings that support the main conclusions about chromatin organization. The contact map analysis and fractal dimension calculations provide quantitative support, though these are presented in appendices rather than main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background knowledge establishes that chromatin is a DNA-histone complex localized in the nucleus. Conventional models assume uniform chromatin-aqueous mixing with AB block copolymer-like euchromatin/heterochromatin separation, but recent microscopy reveals non-uniform chromatin distribution at submicron and nuclear scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 summarize established knowledge and prior experimental findings with appropriate citations. These provide context for the current work by contrasting conventional models with recent observations of chromatin-aqueous phase separation. The citations to textbooks and primary literature are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The nuclear lamina is a protein network that anchors chromatin through lamins (A-type and B-type). Chromatin domains binding to lamins are called LADs (A-LAD and B-LAD). In Drosophila, lamin Dm0 functions like mammalian LBR. Loss of LBR causes inverted chromatin architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 summarize established knowledge about nuclear lamina structure and function with extensive citations. The information about Drosophila-specific features (C22, C28) and experimental observations of LBR loss (C27) are appropriately cited. This background is essential for understanding the model's biological basis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Changes in nuclear volume have been demonstrated to result in changes in gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 cites experimental work (Jain et al., 2013; Thomas et al., 2002) showing that nuclear volume changes affect gene expression. This provides biological motivation for studying chromatin organization changes with nuclear volume, though the current manuscript does not directly test gene expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Lamin overexpression has been suggested to repress the bonding activity of LBR proteins that bind LAD domains to lamin B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 presents a suggested mechanism from literature (Buxboim et al., 2017; Cho et al., 2017) for how lamin overexpression affects chromatin-lamina binding. The claim is appropriately qualified as 'suggested' and is used to motivate the model parameter \u03c8. However, the mechanism remains speculative and is not directly tested in the current work.",
+    "result_type": "MINOR"
+  }
+]

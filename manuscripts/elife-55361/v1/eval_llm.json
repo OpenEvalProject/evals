@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C31",
+      "C32",
+      "C39"
+    ],
+    "result": "Attachment cells express a mixed transcriptome containing both chondrogenic and tenogenic genes. Bulk RNA-seq identified 374 genes (320 tenogenic, 54 chondrogenic) expressed in attachment cells, including key markers like Sox9, Col2a1, Acan (chondrogenic) and Col1a1, Col1a2, Scx, Col5a1 (tenogenic). PCA positioned attachment cells between tenocytes and chondrocytes, and hierarchical clustering showed attachment cells are closer to tenocytes. This bi-fated expression was validated by double-FISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C21-C27, C31-C32, and C39 provide converging evidence from bulk RNA-seq, PCA, hierarchical clustering, and FISH validation. The transcriptomic data are internally consistent, showing attachment cells express markers of both flanking cell types. The validation by orthogonal methods (FISH) strengthens the conclusion. Sample sizes and statistical analyses appear adequate for bulk RNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Single-cell RNA-seq of E13.5 Sox9+/Scx+ attachment progenitors revealed five transcriptionally distinct subpopulations, all expressing both chondrogenic and tenogenic markers. Clusters 1 and 3 were enriched for chondrogenic genes (Sox9, Sox5, Col2a1, Wwp2), clusters 2 and 4 for tenogenic genes (Scx, Hic1, Ptn, Igfbp5), and cluster 0 showed mixed identity. Single-molecule FISH confirmed co-expression of Wwp2 and Bgn at single-cell resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are well-supported by scRNA-seq data (1076 cells analyzed) and validated by smFISH. The identification of five clusters with varying but overlapping expression of chondrogenic and tenogenic markers is consistent with the bulk RNA-seq findings. The smFISH validation (C38) provides critical single-cell resolution confirmation. The heterogeneity observed is appropriately interpreted as representing differentiation states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "ATAC-seq revealed that attachment cells share accessible intergenic chromatin regions with either tenocytes or chondrocytes, suggesting a mechanism for bi-fated gene expression. Of 920 intergenic peaks accessible in attachment cells, 672 were shared with tenocytes or chondrocytes. Importantly, 74.7% of intergenic peaks associated with differentially expressed genes were cell-type-specific, while 86% of TSS peaks were accessible in all three cell types. Specific examples include shared accessibility at Mgp, Sox9, Col11a1 (chondrocyte-attachment) and Col1a2 (tenocyte-attachment) regulatory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40-C57 provide comprehensive ATAC-seq evidence for shared chromatin accessibility as a mechanism for bi-fated expression. The statistical analyses (chi-square tests with significant p-values) support the differential accessibility patterns. The specific examples (C53-C56) provide concrete validation of the general pattern. The conclusion that shared enhancers drive mixed transcriptome (C57) is a reasonable inference from the data, though direct functional validation is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Epigenomic analysis identified enhancer signatures in shared accessible regions, and transgenic mouse reporter assays validated shared enhancer activity. Five elements tested at E14.5 showed activity: Col1a1 element in tenocytes/attachment (n=2/9), Klf2 and Sox9 elements in chondrocytes (n=3/3 and n=4/7), and Mgp and Col11a1 elements in chondrocytes/attachment (n=3/3 and n=11/11). These results support the hypothesis that shared enhancers activate mixed transcriptomes in attachment cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C6 and C58-C64 provide important functional validation of predicted enhancers. However, the success rate is modest (5/8 elements tested, with variable penetrance: Col1a1 only 2/9 embryos positive). The Klf2 and Sox9 elements showed chondrocyte-specific rather than shared activity, which doesn't fully support the shared enhancer hypothesis. While the Mgp and Col11a1 results are consistent with the model, the limited number of validated shared enhancers and the failure of some predictions suggest the mechanism may be more complex than proposed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "Integrative bioinformatic analysis of ATAC-seq peaks and transcriptomic data implicated KLF transcription factors as regulators of attachment cells. Genomatix and HOMER analyses identified over-representation of KLF binding sites in accessible chromatin. Klf2 and Klf4 were upregulated in attachment cells (validated by ISH for Klf2), expressed in Sox9+/Scx+ progenitors by scRNA-seq, and three validated enhancers contained Klf2-binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C65-C68, and C70 provide converging computational and experimental evidence implicating KLFs as regulators. The bioinformatic predictions are supported by multiple independent methods (Genomatix, HOMER), and the expression of Klf2/Klf4 in attachment cells is validated by ISH and scRNA-seq. The presence of KLF binding sites in validated enhancers strengthens the connection. However, this remains correlative evidence until functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C97"
+    ],
+    "result": "Genetic deletion of Klf2 and Klf4 in limb mesenchyme (Prx1-Cre) impaired attachment cell differentiation. At E15.5, dcKO attachment cells were sparse with reduced ECM, and by E18.5 failed to differentiate. Expression of attachment markers (Col1a1, Gli1, Bsp, Bgn, Col5a1) was reduced in dcKO embryos. Bioinformatic analysis showed 72% of attachment genes had KLF2/4 binding sites (vs. 53% genome-wide, p<1e-4), including Gli1 and Col5a1. While initial attachment formation occurred, subsequent differentiation failed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C71-C78, and C97 provide strong functional evidence for KLF2/4 role in attachment cell differentiation. The genetic knockout shows clear phenotypic effects with appropriate controls, and the molecular analysis (reduced marker expression) is consistent with the histological phenotype. The enrichment of KLF2/4 binding sites in attachment genes (72% vs. 53%, p<1e-4) provides mechanistic support. The observation that initial formation occurs but differentiation fails (C97) appropriately qualifies the role of KLF2/4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "In Col2a1-Cre-tdTomato-Scx-GFP transgenic mice, fluorescent reporters failed to label attachment cells located between Col2a1-expressing chondrocytes and Scx-expressing tenocytes, though borders between tissues were clearly demarcated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 describe an unexpected observation that motivated the use of laser capture microdissection. The failure of reporters to label attachment cells is clearly documented and led to an alternative experimental approach. This is a straightforward observational result that is well-supported by the imaging data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Clustering analysis identified genes with attachment-specific expression patterns: 54 genes upregulated in adjacent cartilage, 23 genes uniquely upregulated in attachment cells (including transcription factors KLFs, Lmo1, Gli1), and 24 genes downregulated in attachment cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 describe additional gene clusters from the bulk RNA-seq analysis. The identification of attachment-specific genes is well-supported by the clustering analysis. These genes, particularly the transcription factors, provide important context for understanding attachment cell regulation and motivated the focus on KLFs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Prior literature establishes that KLF2 and KLF4 are functionally redundant transcription factors with ~90% sequence similarity in their DNA-binding domains, regulate diverse biological processes including stem cell pluripotency and tissue differentiation, and are expressed in musculoskeletal tissues including tendons and ligaments during development. Double knockout causes more severe phenotypes than single knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C90-C96 accurately summarize prior literature on KLF2/4 function, supported by appropriate citations. This background information contextualizes the current findings and justifies the focus on these transcription factors. The claims about functional redundancy and shared target genes are particularly relevant to the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The enthesis is a transitional tissue connecting elastic tendons (Young's modulus ~200 MPa) to hard bone (Young's modulus ~20 GPa), displaying a gradual shift in cellular and extracellular properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 provide established background on the mechanical properties of tendons and bone and the nature of the enthesis as a transitional tissue. These are well-established facts supported by appropriate citations and provide important context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior studies established that attachment unit progenitors express both Sox9 and Scx, differentiate into chondrocytes or tenocytes with Gli1+ cells forming the enthesis, are regulated by TGF\u03b2, BMP, FGF, and mechanical signals, and that postnatal enthesis cells (termed fibrocartilage) express various collagens, Ihh, Pthlh, Ptc1, Runx2, Tnc, and Bgn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 accurately summarize prior literature on attachment unit development and enthesis cell characteristics, supported by appropriate citations. This background establishes the foundation for the current study and identifies gaps in knowledge that the manuscript addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Enthesopathies are clinically significant: over 30% of people over 60 injure their rotator cuff, with surgical reattachment failure rates of 20-94%. Attachment cells display morphological features shared with tenocytes and chondrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 provide clinical context and prior morphological observations, supported by appropriate citations. These establish the medical relevance of understanding attachment cell biology and provide historical context for the fibrocartilage terminology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors speculate that mixed matrix gene expression may provide a mechanism for transitional tissue formation, that scRNA-seq heterogeneity may represent differentiation processes, that shared accessible intergenic sites are the main mechanism for bi-fated state, that attachment-specific elements may drive attachment-specific genes, and that limb mesenchymal progenitors may have highly accessible chromatin that becomes restricted during differentiation except in bi-fated attachment cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C87 are explicitly speculative interpretations of the data. While these are reasonable hypotheses consistent with the observations, they lack direct experimental validation. The speculation about chromatin accessibility dynamics during development (C86-C87) is particularly unsupported by the current data, which only examines single timepoints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Prior literature shows that polycomb-repressed chromatin silences alternate lineage genes leading to cell fate commitment, and that Ezh2 deletion in developing limb causes skeletal malformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 accurately cite prior literature on chromatin repression mechanisms. This background is used to contextualize the proposed mechanism for attachment cell bi-fated state, though the connection is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors speculate that KLF2/4 likely play roles in other musculoskeletal tissues and may be regulated by muscle forces, based on prior literature showing KLF2/4 expression in these tissues and mechanical regulation by shear stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 are speculative extensions based on prior literature. While the speculation is reasonable given the cited evidence for KLF2/4 expression in other tissues and mechanical regulation, these claims lack direct experimental support in the current study. The connection to muscle forces is particularly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Not all attachment genes have KLF2/4 binding sites, suggesting KLF2/4 are part of a larger transcriptional network. Prior studies identified Gli1 as an enthesis marker, and showed that loss of Scx or Sox9 leads to attachment site defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 appropriately acknowledge limitations (not all genes have KLF binding sites) and cite relevant prior literature on other regulators. This contextualizes KLF2/4 within a broader regulatory network and is supported by the bioinformatic analysis showing 72% (not 100%) of attachment genes have KLF binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "The strategy of sharing enhancers allows formation of a unique transitional tissue without developing de novo a dedicated genetic program for a third cell fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is a reasonable synthesis of the major findings. The combined transcriptomic and epigenomic data support the conclusion that attachment cells use shared regulatory elements rather than a completely novel genetic program. However, the existence of attachment-specific genes and enhancers (C29, C51, C85) suggests the mechanism is not purely based on sharing, but rather a combination of shared and specific elements.",
+    "result_type": "MAJOR"
+  }
+]

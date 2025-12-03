@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study identified 220 gene-trait pairs where protein-coding variants influence complex traits or their Mendelian cognates, combining 128 manually curated Mendelian genes with 110 genes from Backman et al., 2021 across seven phenotypes (four diseases and three quantitative traits).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C26, and C64-C66 describe the gene selection methodology and resulting dataset. The approach is well-documented with clear inclusion criteria, appropriate citations, and validation through an independent gene set (Backman et al.) to control for selection bias. The methodology is transparent and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Putatively causative genes show significant enrichment near GWAS peaks: 67% (147/220) within 1 Mb (3\u00d7 expected) and 47% (104/220) within 100 kb (10\u00d7 expected, compared to null model predictions of 43 and 11 genes respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 present enrichment analysis with appropriate statistical comparisons to null models and confidence intervals. The order-of-magnitude enrichment at 100 kb and decreasing enrichment with distance support the biological plausibility of these genes as GWAS targets. Figure 1 supplement 1 provides supporting visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C75",
+      "C76"
+    ],
+    "result": "Most putatively causative genes near GWAS peaks (91.1%, 134/147) have detectable eQTLs in at least one relevant tissue at FDR Q < 0.05 using adjusted multiple testing correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31, C75-C76 demonstrate high eQTL detection rates using appropriate FDR correction methods. The authors transparently report results under both their adjusted correction (93% overall, 91% near peaks) and standard GTEx FDR (49% overall, 52% near peaks), showing robustness. This establishes that lack of eQTL detection is not the limiting factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Colocalization methods identify very few putatively causative genes: only 4.8% (7/147) by coloc, 6.8% (10/147) by JLIM, and 5.4% (8/147) by eCAVIAR, totaling 8.2% (18/220) accounting for overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C32-C35 report consistent low colocalization rates across three independent methods. The use of multiple well-established colocalization approaches strengthens the finding. However, the claim that this is 'not obviously better than random chance' (C35) lacks formal statistical testing against a null distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "MASH analysis, which leverages cross-tissue information, increased overall GWAS-eQTL colocalizations by 26% (389 to 489) but identified only four additional putatively causative genes, indicating tissue selection was not the limiting factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 describe a methodologically sound sensitivity analysis using MASH to address potential tissue-specificity limitations. The modest improvement in identifying putatively causative genes despite substantial increase in total colocalizations supports the inference that tissue selection is not the primary issue. Figure 1 supplement 2 provides supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "TWAS identified 30% (66/220) of putatively causative genes across all tissues, but only 1.8% (4/220) when restricted to trait-relevant tissues, with most hits occurring in biologically irrelevant tissues and showing inconsistent effect directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40-C41, C82-C84 demonstrate the limitations of TWAS for identifying causative genes. The dramatic reduction from 30% to 1.8% when restricting to relevant tissues, combined with evidence of tissue-irrelevant hits and inconsistent effect directions, appropriately justifies the authors' skepticism. However, the restriction to 'relevant tissues' introduces subjective judgment that could affect results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Among 37 genes with high-confidence fine-mapped variants (PIP > 0.7) within 100 kb, 68% (25/37) have variants in regulatory regions in trait-relevant tissues, but only 20% (5/25) show corresponding eQTL effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 demonstrate a critical disconnect: fine-mapped GWAS variants fall in regulatory regions but don't colocalize with eQTLs. The use of SuSiE for fine-mapping and multiple chromatin annotation approaches (histone marks, DHS, ChromHMM) is methodologically sound. This finding is central to the paper's argument about 'missing regulation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Activity-by-distance (ABD) scoring, which combines chromatin feature activity with genomic distance, implicated only 14% (5/37) of Mendelian subset genes, similar to the low rate observed with eQTL colocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C87-C91 describe the ABD methodology and results. The approach is a simplified version of ABC scores and appropriately documented. The low success rate (14%) parallels the eQTL findings, strengthening the overall conclusion. However, ABD is acknowledged as a simplification, and the authors don't fully validate whether this approximation is appropriate for their analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C15",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The results contradict the hypothesis that most complex trait-associated variants coincide with homeostatic expression QTLs, while supporting that non-coding variants mediate effects through gene regulation via mechanisms not captured by bulk-tissue eQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C15, C47-C51 present the paper's central conclusion. The inference is well-supported by the convergent negative results from multiple methods (colocalization, TWAS, chromatin analysis) despite high eQTL detection rates and enrichment of variants in regulatory regions. The logic is sound: regulatory features are present but don't manifest as detectable homeostatic eQTLs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Common explanations for negative expression-based findings\u2014non-expression mechanisms, insufficient GWAS power, absence of eQTLs, and underpowered methods\u2014are ruled out as applicable to this study's context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 systematically address alternative explanations. The logic is sound: 67% of genes near GWAS peaks (C53), 91% with eQTLs (C54), enrichment in regulatory regions (C52), and use of multiple well-powered methods (C55) collectively rule out these explanations. However, the claim about method power (C55) relies partly on simulations from cited papers rather than power calculations specific to this dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors propose 'missing regulation' as a major undiscovered component connecting variants to gene expression, potentially involving context-dependent expression (cell-type or state-specific), expression heterogeneity/variance, or nonlinear effects through thresholding/buffering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C60 present speculative proposals for explaining the negative findings. While these hypotheses are reasonable given the data, they remain untested speculation (as indicated by 'SPECULATION' evidence type). The proposals are well-motivated by the results but represent future research directions rather than demonstrated findings. No data in the current study directly supports these specific mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "GWAS analyses were conditioned on coding variants using direct conditional tests (UK Biobank traits) or COJO (publicly available summary statistics) to remove potential confounding effects of large-effect coding variants on non-coding association signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 describe appropriate methodology to address a key confound. The use of COJO for summary statistics and direct conditioning for individual-level data is standard practice. The TOPMed reference panel for LD is appropriate. The restriction to British ancestry (C70) appropriately controls for population stratification. This methodological rigor strengthens the study's conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The study is motivated by established knowledge that complex traits are highly polygenic with non-coding variants in regulatory regions, yet only 5-40% of GWAS associations colocalize with eQTLs, and expression mediates only a minority of heritability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C14, C16-C18 establish the scientific context through citations to established literature. These background claims are well-supported by appropriate references and represent accurate characterization of the field's current understanding. This context appropriately motivates the study's research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The rationale for gene selection is based on the principle that genes whose coding variants cause phenotypic change should also be influenced by small-effect non-coding variants, exemplified by APOE and LDLR in cholesterol regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 establish the biological rationale for the study design. The APOE/LDLR example is well-documented with appropriate citations (C20-C22) and illustrates the expected relationship between Mendelian and complex trait genetics. This reasoning is biologically sound and supported by the enrichment results (C27-C30).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Prior estimates of 25-40% GWAS-eQTL colocalization do not directly evaluate the ability to find causative genes, distinguishing this study's approach from previous work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 makes an important methodological distinction. The authors correctly note that genome-wide colocalization rates don't test whether methods can identify known causative genes. This justifies their gene-centric approach and explains why their 8% rate differs from prior estimates. The logic is sound and the citations appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The challenges in linking GWAS variants to genes have constrained gene discovery and limited applications in disease-gene mapping and drug discovery, potentially requiring the field to prioritize alternative biological contexts and expression data types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 discuss implications and future directions. C61-C62 are supported by appropriate citations documenting these challenges. C63 is a conditional recommendation ('if...may need to') that logically follows from the study's findings but remains speculative about future research priorities. The claims appropriately frame the broader significance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C85",
+      "C86",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study employed standard data sources (GTEx v7 for eQTLs, UK Biobank for LD reference, Roadmap Epigenomics for chromatin data) and established computational methods (JLIM, coloc, eCAVIAR, MASH, SuSiE) with appropriate parameters and quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C77-C81, C85-C86, C92-C95 document data sources and computational methods. All are standard, well-established resources and tools with appropriate citations. The methods are clearly described and reproducible. The restriction of MASH to non-brain tissues (C81) is justified by cited evidence of brain/non-brain clustering. These methodological details support the reliability of the results.",
+    "result_type": "MINOR"
+  }
+]

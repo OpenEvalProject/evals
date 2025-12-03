@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C21",
+      "C22",
+      "C23",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Male and female mice (n=32, 16 per sex, strain B6129SF1/J) were trained on a restless two-armed spatial bandit task in touchscreen operant chambers. The task involved dynamic reward probabilities that changed independently across two target locations over 8 sessions of ~300 trials each.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C21-C23, and C112-C115 provide comprehensive methodological details about the experimental design, including sample size, strain, task structure, and housing conditions. These are directly stated in the methods and results sections with appropriate specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Both male and female mice learned the task and reached asymptotic performance, with no significant sex differences in reward acquisition above chance. Statistical tests (two-way ANOVA, Kolmogorov-Smirnov) confirmed equivalent performance distributions between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are well-supported by appropriate statistical analyses (ANOVA p=0.71 for session effects, p=0.83 for sex effects; K-S test p=0.94). The use of multiple statistical approaches strengthens the conclusion of equivalent performance between sexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C60"
+    ],
+    "result": "Females responded significantly faster than males (t(30)=3.52, p=0.0014), suggesting different decision-making computations across sexes despite similar performance. This difference persisted during both exploration and exploitation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C60 are supported by statistical analysis with appropriate tests and effect sizes. The inference that different strategies underlie the response time difference (C33-C34) is reasonable given equivalent performance but different latencies, though it remains an inference requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The Hidden Markov Model (HMM) approach was validated for use in mice by demonstrating that choice run durations fit a mixture of two exponential distributions (fast-switching at 1.7 trials, slow-switching at 6.8 trials), consistent with distinct exploratory and exploitative behavioral regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 and C116-C118 establish the rationale and validation for using HMM in mice. The mixture model analysis (likelihood ratio test p<10^-32) provides strong statistical support. The approach is well-justified by prior literature in other species and validated through multiple behavioral signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C99",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The two-parameter HMM outperformed both RL-based labeling and more complex HMM variants in identifying exploration/exploitation states. HMM-labeled exploratory choices were orthogonal to reward value, showed elevated learning, and had longer response times without increased disengagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 and C99 provide comprehensive validation of HMM labels through multiple behavioral signatures. Model comparison (C49, C121-C122) using AIC appropriately favors parsimony. The validation against normative definitions of exploration (orthogonal to value, enhanced learning) is rigorous and well-supported statistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Males showed higher levels of exploration than females (72.9\u00b111.5% vs 55.4\u00b120.4% of trials, p=0.0056), primarily because males were more likely to remain stuck in extended exploratory periods (92.1% vs 83.1% exploration repetition, p=0.045). Model dynamics analysis revealed exploration was a deeper, more 'sticky' state in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C54-C63 are well-supported by statistical analyses with appropriate tests, effect sizes, and confidence intervals. The ROC analysis (AUC=0.76) indicates reasonable discriminability. The dynamical systems analysis of model parameters (C61-C63) provides mechanistic insight, though the interpretation of 'stickiness' is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Simulations of RL agents demonstrated that both learning rate (\u03b1) and decision noise (\u03b2) influence exploration probability, and these parameters interact (GLM interaction \u03b23=-0.38, p<0.0001). At very low learning rates, agents fail to escape high-decision-noise regimes, making additional noise ineffective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by systematic simulation studies with 10,000 agents and appropriate statistical modeling (GLM). The demonstration that multiple parameters influence exploration challenges conventional assumptions and is well-illustrated in Figure 2. The mechanistic explanation (C68) follows logically from the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C100"
+    ],
+    "result": "The four-parameter RLCK model best characterized behavior in both sexes. Females had significantly higher learning rates than males (t(30)=2.40, p=0.02, AUC=0.72), with no differences in other parameters. Sex differences in exploration were attributable to learning rate differences, not decision noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 and C100 are supported by systematic model comparison using AIC and model agreement metrics. The finding that learning rate, not decision noise, drives sex differences in exploration is novel and well-supported. However, the lack of differences in other parameters (C72) with p-values ranging from 0.09-0.17 suggests potential power limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Higher learning rate in RL models does not equate to better reward acquisition performance. Simulations of 10,000 RL agents showed that different combinations of learning rate and decision noise can produce identical performance, with optimal performance achieved at moderate learning rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are well-supported by simulation studies (Figure 3F) that demonstrate the complex relationship between model parameters and performance. This clarifies why females had higher learning rates but equivalent reward acquisition, addressing a potential interpretive challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Females, but not males, showed increased learning rate over sessions (repeated measures ANOVA, F(2.26,33.97)=5.27, p=0.008 for females; F(2.5,37.52)=0.23, p=0.84 for males), suggesting potential sex differences in meta-learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by appropriate repeated measures ANOVA. However, the inference about meta-learning (C80) is speculative and would require additional experiments to validate. The result is interesting but the mechanistic interpretation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Females displayed more win-stay behavior than males (sex\u00d7reward interaction p<0.000001; post-hoc t(254)=5.53, p<0.0001), with reasonable discriminability between sexes (AUC=0.74). Males tended to switch even after rewarded choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by appropriate four-way repeated measures ANOVA and post-hoc tests. The use of session-averaged data to increase power for detecting interactions is justified. The statistical evidence is strong, though the interpretation of male behavior (C86) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Sex differences in learning were state-dependent: females showed elevated win-stay during exploration (p=0.015) but not exploitation (p=0.09), while males switched less after losses during exploration (p<0.001) but not exploitation (p=0.06). A significant three-way interaction (sex\u00d7state\u00d7reward, p=0.0438) confirmed females were better explorers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 are supported by complex statistical analyses including significant three-way interactions. The interpretation that females are 'better explorers' (C92) is reasonable given the pattern of results, though some p-values (C89, C91) approach significance, suggesting potential power limitations for detecting all effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Mutual information was higher in females than males (t(30)=2.65, p=0.013, AUC=0.74), indicating females used more information from past choices and outcomes to make current decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by appropriate statistical tests and model-free analysis. The mutual information approach provides convergent evidence for sex differences in learning strategy. However, the interpretation (C95) that this reflects 'using more information' is inferential, though reasonable given the pattern of results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C97",
+      "C98"
+    ],
+    "result": "Females showed elevated reward learning during exploration, allowing them to exploit favored choices earlier than males. Males either learned more slowly during exploration or got 'stuck' in extended exploratory periods. Sex exerts stronger influences during learning and exploration than during stable choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 and C97-C98 synthesize multiple findings into coherent interpretations. While the data support these conclusions, the causal mechanisms (C97-C98) remain ambiguous as acknowledged by the authors. The claim about stronger sex influences during exploration (C19) is well-supported by the pattern of state-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C20"
+    ],
+    "result": "The study is motivated by established knowledge that neuropsychiatric conditions show sex biases, exploration is dysregulated in these disorders, and equivalent performance can mask different underlying strategies. Exploration during decision-making is altered in addiction, depression, and neurodevelopmental disabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 and C20 establish the rationale and context for the study through appropriate citations to published literature. These background claims are well-supported by prior work, though some inferences (C2, C11, C13) about potential mechanisms are speculative and serve as motivation rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Dopamine is implicated in exploration/exploitation and is sex-modulated through estradiol effects on release, reuptake, and receptor binding. The prefrontal cortex, which receives dopamine projections, may be particularly engaged in implementing explore-exploit strategies via sex-biased learning mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C104 and C106-C107 are supported by appropriate citations. However, the connections to the current findings (C105, C108) are speculative and not directly tested in this study. These represent reasonable hypotheses for future work but lack empirical support from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The restless bandit task has translational potential as explore-exploit decisions are shared cognitive processes across species. Parallel approaches in humans have examined explore-exploit phenotypes in ADHD, addiction, and depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C111 are supported by appropriate citations. Claim C110 about establishing cross-species validity is partially supported by the successful application in mice, though direct cross-species comparison was not performed in this study. The translational claim is reasonable but somewhat aspirational.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Based on prior research showing exploratory choices take longer than exploitative choices, the authors hypothesized that males took longer to make choices because a greater proportion were exploratory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by appropriate citations. Claim C36 represents a reasonable hypothesis based on prior knowledge and observed response time differences. This hypothesis was subsequently tested and supported by the HMM analysis.",
+    "result_type": "MINOR"
+  }
+]

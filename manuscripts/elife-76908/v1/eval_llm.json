@@ -1,0 +1,426 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Target binding alone stimulates CK1\u03b1-mediated phosphorylation of hAgo2 in vitro. RNA-free and guide-only hAgo2 showed minimal phosphorylation (0.14 \u00b1 0.07 mol/mol), while guide+target hAgo2 showed substantial phosphorylation (2.6 \u00b1 0.2 mol/mol). The 5XA mutant showed no phosphorylation, confirming EI-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide direct experimental evidence from in vitro phosphorylation assays (Figure 1c) with appropriate controls including RNA-free, guide-only, and 5XA mutant conditions. The quantitative measurements with error bars support the conclusion that target binding is necessary and sufficient for phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C89"
+    ],
+    "result": "hAgo1 and hAgo3 also undergo target-binding-triggered CK1\u03b1-mediated phosphorylation in vitro, suggesting this regulatory mechanism is shared among miRNA-handling Ago orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C89 are supported by direct experimental data shown in Figure 1\u2014figure supplement 1. The extension to other Ago orthologs strengthens the generalizability of the mechanism, though the functional consequences were not tested for hAgo1/3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C100"
+    ],
+    "result": "A minimum of 14 nucleotides of target RNA is required to trigger robust phosphorylation, likely representing the shortest length capable of establishing stable pairing in the supplementary region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is directly supported by experimental data in Figure 2a showing dramatic increase in phosphorylation at 14 nt. Claim C100 provides a reasonable mechanistic interpretation. The binding affinity data (Figure 2\u2014figure supplement 1) rules out affinity differences as the explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Seed + supplementary pairing configuration specifically triggers phosphorylation. Seed-only, fully complementary, and extended 3' complementarity targets all failed to trigger robust phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by systematic testing of different target complementarity patterns in Figure 2b. The use of catalytically dead hAgo2 as a control for the fully complementary target strengthens the conclusion. The specificity for seed + supplementary pairing is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C69"
+    ],
+    "result": "HDX-MS analysis shows the EI has high deuterium exchange with no significant changes upon guide or target binding, indicating the EI remains flexible and solvent-accessible in all states, and that neither guide nor target binding offers protection to phosphorylatable residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, and C69 are supported by HDX-MS data in Figure 3. The use of 5XA mutant as a proxy for wt is justified by binding affinity and HDX comparison data (Figure 3\u2014figure supplements 1-2). The conclusion that conformational information comes from outside the EI is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C49"
+    ],
+    "result": "S828 is the only EI residue capable of CK1\u03b1-mediated phosphorylation without prior priming. Mutation of S828 to alanine prevents almost all detectable phosphorylation, and the previously proposed acidic cluster does not serve as a priming sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, and C49 are supported by systematic mutagenesis experiments in Figure 5a, 5d, and Figure 5\u2014figure supplement 1. The 'single open' mutant approach is elegant and provides clear evidence for S828 as the initiating site. The negative result with acidic cluster mutations refutes a prior hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "EI phosphorylation occurs hierarchically: pS828 primes for S831 phosphorylation, and after pS831, phosphorylation becomes more heterogeneous with multiple possible third/fourth sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 are supported by 'double open' and 'triple open' mutant experiments in Figure 5b-c. The systematic approach clearly demonstrates the hierarchical nature of phosphorylation. The heterogeneity after S831 is well-documented by the triple open mutant data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CK1\u03b1-mediated phosphorylation increases target release rate by ~7.5-fold in wt hAgo2 but has no effect on 5XA mutant. The effect is additive with more phosphorylation sites producing larger effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by target release assays in Figure 6a-b with appropriate controls and quantification. The use of 5XA as a negative control and the dose-response with 1, 2, and 3 open sites provide strong evidence for the functional consequence of phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C114"
+    ],
+    "result": "The effect of phosphorylation on target release is largely electrostatically mediated. Under high salt conditions, the difference between phosphorylated and unphosphorylated hAgo2 is reduced from ~7.5-fold to ~1.5-fold, and overall charge rather than specific sites is most important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, and C114 are supported by high salt experiments in Figure 6c and Figure 6\u2014figure supplement 1. The electrostatic shielding experiment is a strong mechanistic test. The comparison of different triple open mutants supports the charge-based model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C59",
+      "C81",
+      "C90",
+      "C92"
+    ],
+    "result": "Target binding with seed + supplementary pairing triggers hierarchical EI phosphorylation by CK1\u03b1, which electrostatically promotes target release, allowing RISC to balance binding affinity with turnover efficiency for repressing multiple targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions synthesizing all experimental findings. They are well-supported by the combined evidence from phosphorylation assays (Figures 1-2, 5), HDX-MS (Figures 3-4), and target release assays (Figure 6). The model in Figure 7 integrates the findings coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study provides a mechanistic explanation for why 3' supplementary pairing has less pronounced effects in vivo than in vitro: supplementary pairing triggers EI phosphorylation, which offsets the added binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 integrate prior literature (citations provided) with the current findings. The explanation is logical and supported by the data showing that seed + supplementary targets specifically trigger phosphorylation. This reconciles an apparent discrepancy in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C116"
+    ],
+    "result": "RISC conformation, rather than target retention time, is the primary driver of phosphorylation. The need for seed + supplementary pairing supports a role for conformational change in positioning RNA to interact with the kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C65, and C116 are supported by the differential phosphorylation observed with different target types (Figure 2b). The minimal phosphorylation of fully complementary and TDMD-like targets, despite their expected longer retention times, strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The authors propose that the target RNA backbone may bind to CK1\u03b1's Anion Binding Site 1 to prime for S828 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is explicitly speculative and not directly tested. While the hypothesis is reasonable given the non-canonical nature of S828 phosphorylation and the failure of acidic cluster mutations, it requires experimental validation such as kinase-RNA interaction studies or structural analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The 5XA mutant is validated as an appropriate proxy for dephosphorylated wt hAgo2 in HDX-MS experiments, showing similar target-binding affinity and minimal differences in deuterium exchange over the rest of the protein, with 99.4% sequence coverage achieved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by control experiments in Figure 3\u2014figure supplements 1-3. The validation of 5XA as a proxy is important for interpreting the HDX-MS results, and the high sequence coverage indicates good data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C85"
+    ],
+    "result": "EI phosphomimetics do not significantly affect slicing activity, and the phosphorylation mechanism appears specialized for miRNA-mediated repression rather than siRNA function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101 and C85 are supported by slicer assays in Figure 2\u2014figure supplement 2 and the differential phosphorylation data in Figure 2b. The conservation analysis (Figure 1a) showing EI absence in siRNA-specialized Agos further supports this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "HDX-MS reveals that RNA-free hAgo2 is more flexible overall than guide-bound, and target binding causes conformational changes localized to L1 linker and helix 7 of L2 linker, consistent with known structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 are supported by HDX-MS data in Figure 4 and Figure 4\u2014figure supplement 1, with appropriate citations to structural studies. These findings validate the HDX-MS approach and provide context for understanding why the EI itself doesn't change.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "An S828E phosphomimetic failed to prime for further phosphorylation, possibly because glutamate does not sufficiently recapitulate true phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112 and C113 are supported by data in Figure 5\u2014figure supplement 2 and a citation explaining limitations of phosphomimetics. This negative result is important for understanding why the 'open' mutant strategy was necessary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The high conservation of EI phosphosites in eukaryotic miRNA-specialized Ago proteins, but absence in prokaryotic and siRNA/piRNA-specialized Agos, suggests this regulatory mechanism is widespread among miRNA-handling Ago proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C93-C96 are supported by the conservation analysis in Figure 1a. The evolutionary pattern strongly suggests functional importance, though the inference about widespread use requires the assumption that conservation implies function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on RNAi mechanism, Ago protein structure and function, miRNA targeting rules, and human Ago orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C25) provide established background knowledge supported by appropriate citations. They set the context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Prior work established that CK1\u03b1 phosphorylates the EI cluster, affecting target association and miRNA-mediated repression, but the mechanism was undetermined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26-C32 accurately summarize prior work with appropriate citations. They establish the knowledge gap that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Each miRNA family has hundreds of targets, target sites greatly outnumber RISC complexes, and each RISC likely targets multiple mRNAs, creating a need to balance binding stability with turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by appropriate citations and provide important context for why the phosphorylation mechanism is functionally significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C63",
+      "C110",
+      "C111",
+      "C115"
+    ],
+    "result": "Background on CK1\u03b1 phosphorylation mechanisms, including canonical sequence preferences, hierarchical phosphorylation capability, and the role of Anion Binding Site 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C110, C111, and C115 provide established knowledge about CK1\u03b1 with appropriate citations, contextualizing the non-canonical phosphorylation observed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Prior studies linked hAgo2 mutations to RNAi deficits and showed that substrate tertiary structure can be critical for CK1-mediated phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 cite relevant prior work that supports the importance of conformation in CK1 phosphorylation and provides disease relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C117"
+    ],
+    "result": "Prior work showed that EI peptides alone cannot be phosphorylated and that S828 is critical in cells and C. elegans, which the current study extends by showing full-length hAgo2 with guide and specific target is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 and C117 accurately cite prior work and show how the current findings (C72) extend and refine previous understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Prior work showed EI phosphorylation doesn't affect GW182 interaction, cofactors aren't required for phosphorylation, PP6 knockout decreases RISC-mRNA binding, and the phosphorylation cycling process itself is important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 cite relevant prior work and integrate it with current findings (C77 based on current data). These provide important context for the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The authors speculate that phosphorylation occurs after target repression is established, and that multiple phosphorylations ensure time for repression initiation before target release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82 and C83 are explicitly speculative and not directly tested. While reasonable hypotheses based on prior in vivo findings, they require temporal dynamics studies to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "GW182 tethering can bypass RISC, siRNA slicing promotes target release by destabilizing the duplex, and TDMD targets with extended 3' pairing don't need phosphorylation-promoted release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C86-C88 cite appropriate prior work and integrate it with current findings (C87) to explain why different target types behave differently.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The ZT1 target corresponds to a natural miR-200 binding site in ZEB1's 3' UTR, was identified as sensitive to EI phosphorylation in prior eCLIP experiments, and is functionally relevant for epithelial-mesenchymal transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by appropriate citations and justify the choice of experimental system.",
+    "result_type": "MINOR"
+  }
+]

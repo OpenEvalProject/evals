@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors developed DetecDiv, an integrated platform combining an improved microfluidic device with 16 chambers containing 2000 traps each, and a custom benchtop microscope costing less than 40k euros that can image ~30,000 cells in parallel with 5-minute resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23-C28 collectively describe the hardware platform. The microfluidic design improvements (C24-C26) and imaging system specifications (C27-C28) are clearly documented with supporting figures. The retention rate of 94% (C95, C106) validates the trap design improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "A CNN+LSTM architecture was developed for automated cell division detection that achieved 90-95% precision/recall, R\u00b2=0.996 for cell-cycle duration prediction, R\u00b2=0.991 for lifespan correlation, and less than 2% error in generation counting, substantially outperforming CNN-only approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 describe the method, while C96-C101 provide quantitative validation metrics. The benchmarking is rigorous with proper train/test splits (C32: 250 traps split into training and test sets). The superiority of CNN+LSTM over CNN alone is clearly demonstrated in Figure 2B-D, addressing the ghost division problem (C33-C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The CNN+LSTM classifier processes 1000 images per lifespan in 3.5 seconds using 8 Tesla K80 GPUs, approximately 100 times faster than manual annotation which takes 5-10 minutes per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide specific performance metrics with clear comparisons. The computational efficiency is well-documented, though the comparison assumes continuous 24-hour human annotation (C38), which is somewhat artificial but illustrates the scale advantage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The classifier successfully recapitulated known longevity phenotypes: median RLS of 26 generations for WT (N=1880), 38 generations for fob1\u0394 (N=2531), and 12 generations for sir2\u0394 (N=1264), consistent with previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C102-C105 demonstrate biological validation against established mutant phenotypes. The large sample sizes provide statistical power, and results align with cited prior work (Defossez et al., 1999; Lin et al., 2000). Figure 2E shows clear separation of survival curves with confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The classifier trained on glucose conditions successfully generalized to galactose conditions (median RLS: 26 vs 24 generations; N=1174 and N=565 respectively), demonstrating robustness across different carbon sources and environmental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 demonstrate cross-condition generalization. The model trained only on glucose data (C44) successfully analyzed galactose data, with results consistent with prior studies (C43: Liu et al., 2015; Frenk et al., 2017). Figure 2F and supplementary validation (Figure 2\u2014figure supplement 5B-E) support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C48",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "DetecDiv performs similarly across various imaging platforms (\u00d720, \u00d740, \u00d760 objectives) and trap geometries, with both specialist classifiers for each configuration and a generalist classifier trained on pooled data showing comparable performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46-C48, C79-C81 are supported by Figure 3's comprehensive comparison across five different imaging/trap configurations. Each specialist classifier performed well on its respective dataset (C47), and the generalist model matched specialist performance (C48), demonstrating true generalization rather than overfitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C106",
+      "C107"
+    ],
+    "result": "The new trap design achieved 94% retention rate for cells undergoing at least 5 divisions, substantially higher than the 59% retention of semi-open geometries, though the method cannot systematically detect mother-daughter cell replacement events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 and C106-C107 address trap retention as a critical design parameter. The 94% retention rate (C95, C106) is well-documented and compared to alternative designs (C107: 59% for classical design). The acknowledged limitation (C83) regarding mother-daughter replacement detection is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "An LSTM sequence-to-sequence classifier successfully identified the Senescence Entry Point (SEP) with R\u00b2=0.93, recapitulating the rapid increase in cell-cycle duration upon entry into senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 describe SEP detection with strong correlation (R\u00b2=0.93, Figure 4B-C). The method uses CNN+LSTM output probabilities as input (C51), demonstrating hierarchical model composition. Results align with prior characterization of SEP (C53: Fehrmann et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "A DeepLabV3+ semantic segmentation model trained on ~1,400 brightfield images accurately determined mother cell contours and quantified volume dynamics during replicative aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 describe the segmentation approach with appropriate validation. The model achieved R\u00b2=0.91 for area prediction (Figure 5B) and successfully recapitulated known volume increase dynamics (C57, Figure 5C-D). Cross-validation (Figure 5\u2014figure supplement 2E) demonstrates robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "A similar segmentation approach with ~3,000 fluorescence images accurately segmented nuclei and recapitulated the sharp burst in nuclear fluorescence following the Senescence Entry Point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 extend segmentation to fluorescence imaging. The nuclear segmentation achieved R\u00b2=0.90 (Figure 5F) and successfully captured the known post-SEP fluorescence burst (C59, Figure 5G-H; Morlot et al., 2019), validating both technical and biological accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "DetecDiv successfully quantified cellular responses to H2O2 stress (0-0.8 mM), revealing dose-dependent cell fate partitioning, mortality rates, and Tsa1-GFP upregulation, demonstrating applicability beyond replicative aging studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 demonstrate application to stress response. The automated analysis revealed distinct cell fates (adapted, slowly dividing, dead) with dose-dependent proportions (C62-C65, Figure 6B). Death rate quantification (C66) was validated against manual annotation (Figure 6\u2014figure supplement 1). Results align with prior work (C64, C67: Goulev et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C70",
+      "C71",
+      "C72",
+      "C75"
+    ],
+    "result": "DetecDiv provides comprehensive automated analysis of multi-generational phenomena by combining CNN+LSTM for temporal information and DeepLabV3+ for spatial information, successfully characterizing replicative senescence and stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, C70-C72, C75 summarize the overall contribution. The integration of multiple deep learning architectures (C70) enables comprehensive phenotyping (C4). Successful application to both aging (C71) and stress response (C72) demonstrates versatility. The claim of \"high accuracy\" (C2) is supported by quantitative metrics throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "A graphical user interface was developed to make DetecDiv accessible without programming knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by the description in the Discussion and Materials/Methods sections. The GUI facilitates annotation and analysis, though detailed usability evaluation is not provided. The software and tutorial are made available on GitHub.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The analysis pipeline works with low optical resolution (\u00d720, N.A. 0.45 objective, ~0.7 \u00b5m theoretical resolution) without contrast-enhancing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by the successful performance of the system using the minimal microscope setup (C27-C28). This demonstrates practical accessibility, though higher resolution imaging also works well (C79).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Individual cell trapping provides 'hardware-based cell tracking' that simplifies analysis by fixing cell position, allowing classifiers to focus on the mother cell state while ignoring surrounding cells, and enabling easy coupling with recurrent neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 describe methodological advantages. The fixed trap position eliminates spatial tracking errors (C85), and Figure 2\u2014figure supplement 3 demonstrates that surrounding cell states don't affect mother cell classification (C86). The successful CNN+LSTM integration validates C87.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The current classification scheme cannot identify buds arising from mother cells, precluding measurement of mother cell volume growth rate over time and analysis of bud-localized fluorescent markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 acknowledge important limitations. The inability to segment buds (C88) logically prevents volume growth rate measurements (C89) since biomass goes into the bud during budded periods. This limitation is clearly stated and affects certain types of analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction establishes that while budding yeast is a reference model for aging research and microfluidic devices enable single-cell tracking, manual analysis remains a major bottleneck, and previous CNN-based approaches lacked sufficient accuracy for automated lifespan determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C22 provide background context supported by appropriate citations. The characterization of prior work limitations (C11-C12, C17-C18, C21-C22) motivates the current study. All claims are either directly cited or represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors speculate that DetecDiv will enable high-throughput single-cell temporal phenotyping, could be applied to other contexts with potential retraining, and may transfer to other cellular models for characterizing complex temporal patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74, C91-C94 are explicitly speculative (\"we envision,\" \"could benefit\"). While the demonstrated applications (aging, stress response) support feasibility, these remain prospective claims about future applications rather than demonstrated results. The speculation is reasonable but unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "RLS assays lasting 60-80 hours at facility costs of 10-20 euros per hour may not be affordable for many laboratories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 provide cost context but lack systematic cost analysis or survey data. The stated facility costs (C76) and assay duration (C77) are reasonable estimates, but affordability assessment depends on many factors not analyzed. This motivates the low-cost microscope but isn't rigorously demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The division counting/lifespan reconstruction classifier can readily be used to quantify cellular dynamics and mortality in response to hydrogen peroxide stress without retraining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by the H2O2 stress experiments (Figure 6) where the classifier trained on aging data was directly applied to stress conditions. This demonstrates true generalization capability, though the claim of \"readily\" being applicable to other stresses beyond H2O2 is not fully tested.",
+    "result_type": "MAJOR"
+  }
+]

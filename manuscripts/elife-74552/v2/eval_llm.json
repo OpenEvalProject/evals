@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C50",
+      "C51",
+      "C52",
+      "C106"
+    ],
+    "result": "CLUH physically interacts with astrin-1 and kinastrin proteins. CLUH binds specifically to the full-length astrin-1 isoform through its N-terminal region, but not to astrin-2. This interaction is RNA-independent and does not require kinastrin. CLUH also interacts with kinastrin and other components of the astrin/kinastrin complex, as well as centrosomal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal biochemical approaches (SILAC-MS, reciprocal co-IPs, domain mapping) consistently demonstrate the CLUH-astrin-1 interaction (C2, C3, C16, C17, C20, C26, C50). The isoform specificity is shown by overexpression and IP experiments (C20, C26, C29, C106). Polysome profiling and kinastrin depletion experiments support the independence of this interaction from translation and kinastrin (C28, C30, C31). The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C104",
+      "C105"
+    ],
+    "result": "Two astrin isoforms (astrin-1 and astrin-2) arise from alternative translation initiation of the SPAG5 mRNA. Astrin-2 is produced by translation starting from ATG3-5, and this process is regulated by an upstream ORF (uORF) in the 5' UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Systematic mutagenesis of ATG codons in SPAG5 constructs clearly demonstrates alternative translation initiation (C23, C24, C25). The uORF's role in regulating astrin-2 expression is shown by mutagenesis experiments (C23). Western blots consistently show two isoforms with the predicted molecular weights (C19). The experimental design is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C111"
+    ],
+    "result": "CLUH controls both the synthesis and stability of astrin-1 and kinastrin proteins. In CLUH KO cells, astrin-1 and kinastrin are decreased in abundance and highly unstable, while astrin-2 is unaffected. Proteasome inhibition rescues kinastrin fully and astrin-1 partially. Newly synthesized astrin-1 is reduced in CLUH KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cycloheximide chase experiments demonstrate reduced stability of astrin-1 and kinastrin in CLUH KO cells (C35, C36, C37). MG132 rescue experiments confirm proteasomal degradation (C38, C39). Metabolic labeling with 35S-methionine shows reduced synthesis of astrin-1 (C40). The combination of stability and synthesis defects is well-documented with appropriate controls and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "CLUH regulates SPAG5 mRNA stability. SPAG5 mRNA decays faster in CLUH KO cells, while steady-state levels and transcription (EU incorporation) are unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EU-labeling and chase experiments demonstrate decreased SPAG5 mRNA half-life in CLUH KO cells (C41), while steady-state levels and EU incorporation remain unchanged (C42, C43). This is consistent with CLUH's known role as an mRNA stabilizer. The experimental approach is appropriate for measuring mRNA decay rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The CLUH-astrin-1 interaction is cell cycle-regulated, being enriched in S and G2 phases but absent in prometaphase. CLUH preferentially interacts with unmodified astrin-1 in interphase, and the interaction may be controlled by astrin phosphorylation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunoprecipitation experiments in synchronized cells clearly show cell cycle-dependent interaction (C6, C47). Western blots demonstrate astrin-1 abundance increases in S/G2 while CLUH levels remain constant (C44, C45). The loss of interaction in prometaphase correlates with astrin phosphorylation (C46, C47). However, C49 is speculative about phosphorylation control and lacks direct mechanistic evidence, though the correlation is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C114"
+    ],
+    "result": "Loss of astrin or kinastrin does not recapitulate CLUH-dependent mitochondrial phenotypes. SPAG5 and KNSTRN knockout cells show normal mitochondrial distribution, morphology, ultrastructure, mtDNA levels, and respiratory complex assembly, unlike CLUH KO cells which display multiple mitochondrial defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays (immunofluorescence, electron microscopy, qPCR, BN-PAGE) consistently show that astrin/kinastrin depletion does not affect mitochondrial parameters (C55-C60), while CLUH KO cells show clear defects (C61-C63). This demonstrates that CLUH's mitochondrial functions are independent of astrin-1/kinastrin (C64, C114). The experimental design appropriately compares all three genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Astrin-depleted cells show mTORC1 hyperactivation and enhanced anabolic metabolism despite starvation. SPAG5 knockout cells display upregulated glycolysis, pentose phosphate pathway, and nucleotide biosynthesis, with accumulation of glycolytic intermediates, TCA cycle intermediates, nucleotides, and polyamines. KNSTRN knockout cells show no metabolic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blots confirm mTORC1 hyperactivation in SPAG5 KO cells (C7, C71). Proteomics and metabolomics data consistently show upregulation of anabolic pathways (C67-C69) and accumulation of metabolites (C72-C78). The metabolic profile is consistent with hyperactive mTORC1 signaling (C80). KNSTRN KO cells serve as an appropriate control showing no changes (C79). The data are comprehensive and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C116",
+      "C118"
+    ],
+    "result": "CLUH KO cells show increased mTORC1 signaling but cannot sustain anaplerotic and anabolic pathways. Despite mTORC1 hyperactivation, CLUH KO cells display decreased TCA cycle intermediates, amino acids, nucleotides, and polyamines upon starvation. This metabolic profile is opposite to that of SPAG5 KO cells, indicating CLUH plays an essential role in mTORC1-dependent metabolic rewiring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blots confirm mTORC1 hyperactivation in CLUH KO cells (C10). Comprehensive metabolomics data show decreased anaplerotic/anabolic metabolites (C81-C88, C11, C12), which is paradoxical given the mTORC1 activation (C89-C93, C118). The contrast with SPAG5 KO cells is striking and well-documented (C91). This establishes CLUH's role in metabolic rewiring (C93, C116). The data are robust and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C135"
+    ],
+    "result": "CLUH KO cells display dysregulated cell cycle progression. They fail to grow during G1, show reduced cell size, but progress faster through the cell cycle with altered pRB1 and cyclin D3 dynamics. These cells appear to overcome G1/S checkpoints despite metabolic deficiencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry data clearly demonstrate faster cell cycle progression in CLUH KO cells (C14, C95, C96). Cell size measurements confirm growth defects (C13, C101). Western blots show altered cell cycle markers (C94, C97, C98, C100). The interpretation that cells bypass G1/S checkpoints is reasonable given the data (C99, C102). The combination of faster cycling with reduced growth is paradoxical and well-documented (C103, C135).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C122",
+      "C133"
+    ],
+    "result": "CLUH couples growth signaling pathways and mitochondrial metabolism with cell cycle progression through two independent mechanisms: by regulating astrin-1 expression and by maintaining mitochondrial anaplerotic pathways via its RNA-binding function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the combination of findings: CLUH regulates astrin-1 (which inhibits mTORC1), CLUH maintains anaplerotic pathways (independent of astrin), and CLUH KO cells show dysregulated cell cycle progression with metabolic defects (C15, C122, C133). The dual mechanism is supported by the observation that astrin/kinastrin depletion doesn't affect mitochondrial function. This represents the main conceptual advance of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C139"
+    ],
+    "result": "Overexpressed astrin-1 can accumulate at centrosomes and recruit CLUH to centrosomal or peri-centrosomal structures, but endogenous CLUH is not a constitutive centrosome component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Immunofluorescence shows that overexpressed astrin-1 can localize near centrosomes and recruit CLUH (C53, C139), but endogenous CLUH doesn't colocalize with centrosome markers in unsynchronized cells (C54). The functional significance of this overexpression phenotype is unclear, and the lack of specific antibodies for endogenous astrin-1 limits interpretation. The physiological relevance of CLUH recruitment to centrosomes remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Kinastrin binds both astrin-1 and astrin-2 with no preference, consistent with its previously mapped interaction domain (residues 482-693 of astrin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunoprecipitation data show kinastrin binds both isoforms equally (C27), which is consistent with the known interaction domain that is present in both isoforms. This serves as an important control demonstrating the specificity of CLUH's preference for astrin-1. The claim is well-supported by both current data and prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C115"
+    ],
+    "result": "The manuscript discusses several speculative mechanisms regarding CLUH-astrin regulation, including the role of N-terminal phosphorylation in controlling the interaction, CLUH's role in replenishing astrin-1 after cytokinesis, and potential competition between astrin-1 binding and CLUH's polysome function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are explicitly stated as speculations or hypotheses (C109, C113, C115) or are citations to prior work (C107, C108, C112). While the speculations are reasonable given the data (e.g., phosphorylation correlates with loss of interaction), they lack direct experimental validation. These represent interesting hypotheses for future work but are not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C134",
+      "C136",
+      "C137",
+      "C138",
+      "C140"
+    ],
+    "result": "The manuscript provides extensive background on CLUH function, mTORC1 signaling, cell cycle metabolism, and astrin's known roles, citing prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge from prior work (C1, C119-C132, C136-C138, C140) or reasonable interpretations of general principles (C126, C134). They provide important context for the current findings. As background information supported by citations, these are appropriately characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The manuscript proposes that cancer cells expressing astrin-2 can proliferate despite dysregulated coupling between mitochondrial metabolism and cell cycle, making CLUH a potential therapeutic target in SPAG5-overexpressing cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the observation that HeLa cells express both astrin isoforms is supported (C141), and the differential binding is demonstrated (C142), the proposal that astrin-2 expression enables cancer cell proliferation despite metabolic dysregulation (C143) and that CLUH is a therapeutic target (C144) are speculative. These are reasonable hypotheses based on the findings but lack direct experimental validation in cancer models.",
+    "result_type": "MINOR"
+  }
+]

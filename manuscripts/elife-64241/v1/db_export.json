@@ -1,0 +1,1879 @@
+{
+  "submission": {
+    "id": "0693461d-e6c8-48c5-80cd-0cf2dd7efb27",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:32:01.595698Z",
+    "updated_at": "2025-12-03T03:32:01.595698Z"
+  },
+  "content": [
+    {
+      "id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "submission_id": "0693461d-e6c8-48c5-80cd-0cf2dd7efb27",
+      "content_type": "manuscript",
+      "content_text": "# Excitation of medium spiny neurons by \u2018inhibitory\u2019 ultrapotent chemogenetics via shifts in chloride reversal potential\n\n## Authors\n\n- Stephanie C Gantz<sup>1</sup> ([ORCID: 0000-0002-1800-4400](https://orcid.org/0000-0002-1800-4400)) \u2020\n- Maria M Ortiz<sup>2</sup>\n- Andrew J Belilos<sup>3</sup>\n- Khaled Moussawi<sup>3</sup> ([ORCID: 0000-0001-6378-0428](https://orcid.org/0000-0001-6378-0428)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Physiology and Biophysics, University of Iowa Iowa City United States\n2. Biological and Biomedical Neuroscience Program, University of North Carolina Chapel Hill United States\n3. National Institute on Drug Abuse Baltimore United States\n4. Department of Psychiatry, School of Medicine, University of Pittsburgh Pittsburgh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nUltrapotent chemogenetics, including the chloride-permeable inhibitory PSAM4-GlyR receptor, were recently proposed as a powerful strategy to selectively control neuronal activity in awake, behaving animals. We aimed to validate the inhibitory function of PSAM4-GlyR in dopamine D1 receptor-expressing medium spiny neurons (D1-MSNs) in the ventral striatum. Activation of PSAM4-GlyR with the uPSEM792 ligand enhanced rather than suppressed the activity of D1-MSNs in vivo as indicated by increased c-fos expression in D1-MSNs and in vitro as indicated by cell-attached recordings from D1-MSNs in mouse brain slices. Whole-cell recordings showed that activation of PSAM4-GlyR depolarized D1-MSNs, attenuated GABAergic inhibition, and shifted the reversal potential of PSAM4-GlyR current to more depolarized potentials, perpetuating the depolarizing effect of receptor activation. These data show that \u2018inhibitory\u2019 PSAM4-GlyR chemogenetics may activate certain cell types and highlight the pitfalls of utilizing chloride conductances to inhibit neurons.\n\n## Introduction\n\nNovel research tools like opto- and chemogenetics have been instrumental in dissecting brain circuits and understanding their relevance to normal and maladaptive behaviors. However, like any new technology, these tools have inherent limitations that could confound data interpretation.\n\nThe leading chemogenetic approach, Designer Receptors Exclusively Activated by Designer Drugs (DREADDs), acts through engineered G protein-coupled receptors, which are selectively activated by clozapine N-oxide (CNO) (Roth, 2016). However, DREADDs may disrupt signaling from endogenous G protein-coupled receptors when expressed at high levels (Saloman et al., 2016), and CNO has been found to be metabolized peripherally to clozapine, which binds to many receptors in the brain, potentially resulting in off-target effects (Gomez et al., 2017; Manvich et al., 2018). A more recent chemogenetic approach, Pharmacologically Selective Actuator/Effector Module (PSAM/PSEM), acts through engineered ligand-gated ion channels that are activated by PSEM agonists (Magnus et al., 2011; Magnus et al., 2019). The inhibitory PSAM4-GlyR is a chimeric protein of a modified \u03b17 nicotinic acetylcholine receptor ligand binding domain fused to the chloride-permeable glycine receptor ion pore domain (GlyR). After intracranial injection and expression of a virus encoding PSAM4-GlyR, application of ultrapotent agonist (e.g., uPSEM792) activates PSAM4-GlyR, which in principle selectively inhibits PSAM4-GlyR-expressing neurons (Magnus et al., 2019).\n\nIn this study, we aimed to validate the inhibitory function of PSAM4-GlyR in dopamine D1 receptor-expressing medium spiny neurons (D1-MSNs) in the ventral striatum. Intraperitoneal (i.p.) injection of uPSEM792 enhanced the expression of the immediate early gene c-fos in PSAM4-GlyR-expressing D1-MSNs, indicative of in vivo activation rather than inhibition of these neurons. Using whole-cell recordings in acute brain slices, we found that activation of PSAM4-GlyR with uPSEM792 decreased membrane resistance, induced an inward current in voltage-clamp, and depolarized the membrane potential in current-clamp, sometimes resulting in depolarization block. The majority of neurons maintained action potential firing to somatic current injection. Cell-attached recordings at subthreshold depolarized potentials also showed that activation of PSAM4-GlyR induced firing of action potentials in D1-MSNs. Further, we found that chloride influx via PSAM4-GlyR activation shifted its reversal potential to more positive values further exacerbating the depolarizing effect and attenuated GABAergic inhibition of D1-MSNs.\n\n## Results\n\n### Selective expression of PSAM4-GlyR in D1-MSNs\n\nTo first validate the selective expression of PSAM4-GlyR in ventral striatum D1-MSNs, prodynorphin-Cre mice were crossed with a Cre-reporter (Ai9) mouse line, resulting in labeling of neurons containing Cre-recombinase (i.e., D1-MSNs) with the fluorescent reporter tdTomato (Al-Hasani et al., 2015; Gerfen et al., 1990; Krashes et al., 2014). These mice received bilateral stereotaxic microinjections of AAV-syn-flex-PSAM4-GlyR-IRES-eGFP. PSAM4-GlyR expression was restricted to tdTomato+ neurons which confirmed selective Cre-dependent expression of PSAM4-GlyR in D1-MSNs (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64241/elife-64241-fig1-v1.jpg)\n\n**Figure 1.:** (A) Left, cartoon of viral injection site in the ventral striatum. Right, representative confocal images of Cre-dependent PSAM4-GlyR expression (eGFP) in Cre-expressing D1-MSNs (tdTomato). (B) Experimental design for measuring c-fos expression after activation of PSAM4-GlyR. (C) Representative maximum intensity Z-stack confocal images of c-fos immunostaining (red) in D1-MSNs with or without activation of PSAM4-GlyR, after saline vs. fentanyl injection (0.2 mg/kg, i.p.). PSAM4-GlyR* refers to PSAM4-GlyR activated with uPSEM792 (3 mg/kg, i.p.). The \u2018Control\u2019 group includes pooled data from mice with (control virus + uPSEM792 1st i.p. injection) and (PSAM4-GlyR virus + saline 1st i.p. injection). Scale bars: 50 \u00b5m. (D) Activation of PSAM4-GlyR with uPSEM792 increased c-fos expression in PSAM4-GlyR expressing D1-MSNs compared to control (two-way ANOVA with Sidak\u2019s multiple comparisons test). Data are presented as % colocalization of c-fos and eGFP/eYFP+ in transduced D1-MSNs. (E) Activation of PSAM4-GlyR did not increase c-fos expression in non-transduced cells (calculated as the number of c-fos expressing non-transduced cells/total number of non-transduced cells). Data represent mean \u00b1 SEM. * indicates statistical significance, ns denotes not significant.\n\n### PSAM4-GlyR enhances rather than suppresses c-fos expression in D1-MSNs in vivo\n\nThe immediate early gene c-fos is commonly used as a surrogate marker for neuronal activation (Chung, 2015; Cruz et al., 2015; Sheng and Greenberg, 1990; Hunt et al., 1987). Given the proposed role of PSAM4-GlyR activation in silencing neurons (Magnus et al., 2011; Magnus et al., 2019), we initially hypothesized that activating PSAM4-GlyR in vivo will suppress D1-MSNs activity and reduce c-fos expression. To avoid a potential floor effect, we treated mice with fentanyl since opioid exposure has been shown to increase the expression of c-fos and other immediate early genes in striatal neurons including D1-MSNs (Enoksson et al., 2012; Lobo et al., 2013; Chang et al., 1988; Liu et al., 1994). Prodynorphin-Cre mice received bilateral injections of either AAV-syn-flex-PSAM4-GlyR-IRES-eGFP (PSAM4-GlyR) or AAV-EF1\u03b1-DIO-eYFP. Then, after 4\u20136 weeks, mice were injected with uPSEM792 (i.p., 3 mg/kg) or saline, followed 30 min later by fentanyl (i.p., 0.2 mg/kg) or saline (Figure 1B). Mice were perfused and their brains collected for c-fos immunostaining 90 min later (120 min after the first i.p. injection). Transduced neurons were identified by expression of the fluorescent reporter (eGFP or eYFP, green, Figure 1C). Contrary to expectation, activation of PSAM4-GlyR with i.p. uPSEM792 increased c-fos expression in D1-MSNs expressing PSAM4-GlyR (Figure 1D). Two-way ANOVA showed a significant effect of PSAM4-GlyR activation on c-fos expression (F1, 34 = 30.55, p<0.0001). The experimental groups included 8\u201312 animals/group (control + saline: n\u00a0=\u00a012; PSAM4-GlyR + saline: n\u00a0=\u00a08; control + fentanyl: n\u00a0=\u00a09; PSAM4-GlyR + fentanyl: n\u00a0=\u00a09). These results support the rejection of the initial hypothesis that PSAM4-GlyR activation reduces c-fos expression in D1-MSNs. There was no difference in c-fos expression in non-transduced cells (two-way ANOVA; PSAM4-GlyR activation effect: F1, 34 = 0.82, p=0.37; Figure 1E). These results show that activation of PSAM4-GlyR increased c-fos expression in transduced cells and therefore activated rather than inhibited D1-MSNs in vivo.\n\n### PSAM4-GlyR activation depolarizes D1-MSNs\n\nTo test the effects of PSAM4-GlyR on electrophysiological properties of D1-MSNs, PSAM4-GlyR-encoding virus was injected into the ventral striatum of prodynorphin-Cre mice. After 4\u20136 weeks, whole-cell patch-clamp recordings (Vhold\u00a0\u221288 mV, corrected for junction potential) were made from eGFP+ neurons in acute mouse brain slices. The internal solution in these recordings was potassium-based and contained 12.8 mM Cl\u2212 to mimic the natural reversal potential of chloride in MSNs (ECl ~\u00a0\u221262 mV) (Misgeld et al., 1982; Bracci and Panzeri, 2006). PSAM4-GlyR was activated by application of the ligand uPSEM792. To control for any off-target effects of uPSEM792, recordings were also made from control neurons (neighboring eGFP\u2212 neurons and eYFP+ neurons from mice that received bilateral injections of AAV-EF1\u03b1-DIO-eYFP). In control neurons, 10 or 50 nM uPSEM792 had no effect on basal whole-cell current (10 nM: \u22122.8\u00a0\u00b1\u00a07.7 pA, n\u00a0=\u00a06, p=0.73, paired t-test; 50 nM: \u22129.5\u00a0\u00b1\u00a09.4 pA, n\u00a0=\u00a014, p=0.24; Figure 2A). In PSAM4-GlyR+ neurons, 10 nM uPSEM792 produced an inward current (\u221243.0\u00a0\u00b1\u00a010.1 pA, n\u00a0=\u00a021, p=0.0004, paired t-test; Figure 2A and B), consistent with the original report on PSAM4-GlyRs (Magnus et al., 2019). Higher concentrations of uPSEM792 produced substantially larger inward currents (50 nM: \u2212275.5\u00a0\u00b1\u00a057.1 pA, n\u00a0=\u00a018, p=0.0002, paired t-test; 100 nM: \u2212410.1\u00a0\u00b1\u00a0137.8 pA, n\u00a0=\u00a06, p=0.031; Figure 2A and B). To assay membrane resistance, the instantaneous change in current in response to a 10 mV step (Vhold\u00a0\u221288 to \u221278 mV) was measured before and after uPSEM792 application (Figure 2C). The basal membrane resistance of D1-MSNs was 78.6\u00a0\u00b1\u00a05.5 M\u03a9, consistent with a previous report using similar recording conditions (Planert et al., 2013), and was reduced by activation of PSAM4-GlyR (10 nM: 6.5 \u00b1 3.3% decrease, n\u00a0=\u00a09, p=0.08, paired t-test; 50 nM: 29.6 \u00b1 5.3% decrease, n\u00a0=\u00a018, p<0.0001; Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64241/elife-64241-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative traces of whole-cell voltage-clamp recordings (Vhold\u00a0\u221288 mV) demonstrate no effect of uPSEM792 (10 or 50 nM) in control neurons. In PSAM4-GlyR+ neurons, 10 or 50 nM uPSEM792 produced an inward current. Dashed line is baseline whole-cell current for ease of visualization. (B) Plot of the magnitude of the inward current produced by 10, 50, or 100 nM uPSEM792 in PSAM4-GlyR+ neurons. Line and error bars represent means \u00b1 SEM. (C) To measure membrane resistance (Rm), a 10 mV voltage step (\u221288 to \u221278 mV) was made in aCSF and during the uPSEM792-induced inward current, and the instantaneous change in current following the capacitive transient was measured (\u0394I). Representative traces are shown below the voltage step command. Dashed line is 0 pA. (D) In PSAM4-GlyR+ neurons, 50 nM uPSEM792 significantly decreased Rm (paired t-test, p<0.0001) while 10 nM showed a trend toward lower Rm (paired t-test, p=0.08). * indicates statistical significance, ns denotes not significant.\n\n### PSAM4-GlyR does not silence D1-MSN action potential firing in whole-cell recordings\n\nWe next determined the effect of PSAM4-GlyR activation on neuronal excitability. Action potential firing was evoked by somatic current injections (50 pA, 2 s) during whole-cell current-clamp recordings from control and PSAM4-GlyR+ neurons. PSAM4-GlyR activation by uPSEM792 significantly depolarized the membrane potential of PSAM4-GlyR+ neurons compared to control neurons (Figure 3A and B). Two-way ANOVA showed a significant effect of PSAM4-GlyR activation on membrane potential (F1, 37 = 9.70, p=0.004), and a significant effect of uPSEM792 concentration (F1, 37 = 4.96, p=0.03). Relative to the resting membrane potential (\u221283.3\u00a0\u00b1\u00a00.7 mV), the depolarization induced by 10 and 50 nM uPSEM792 was 6.4\u00a0\u00b1\u00a02.0 mV (n\u00a0=\u00a014, p=0.007, paired t-test) and 20.9\u00a0\u00b1\u00a03.4 mV (n\u00a0=\u00a016, p<0.0001), respectively.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64241/elife-64241-fig3-v1.jpg)\n\n**Figure 3.:** (A) In PSAM4-GlyR+ neurons, activation of PSAM4-GlyR with uPSEM792 (10\u00a0and 50 nM) significantly depolarized the membrane potential (Vm) compared to control (non-PSAM4-GlyR) neurons, measured in current-clamp (two-way ANOVA with Sidak\u2019s multiple comparisons test). (B) Representative traces of current-clamp recordings from a control (top) or PSAM4-GlyR+ neuron (bottom). Action potential firing was evoked by somatic current injection (250 pA, 2 s) in aCSF (left) and 50 nM uPSEM792 (right). Dashed line is \u221280 mV. (C) Distribution of firing response of PSAM4-GlyR+ neurons after 10 or 50 nM uPSEM792 application. In 10 nM uPSEM792, 14/14 neurons continued to fire with current injection. In 50 nM, 9/16 neurons fired with current injection (induced firing), 1/16 fired spontaneously without a current injection (spont. firing), and 6/16 went into depolarization block (DP block). (D) Representative traces of current-clamp recordings from a PSAM4-GlyR+ neuron that went into depolarization block with uPSEM792. Response to somatic current injection (250 pA, 2 s) in aCSF (gray) and after uPSEM792 application (black). The membrane potential in uPSEM792 was more depolarized than the potential where the neuron entered depolarization block in aCSF. Dashed line is \u221280 mV. (E) Plot of change in the minimum current needed to induce firing (approximate rheobase: ~rb) induced by uPSEM792 (10\u00a0and 50 nM) in control (gray) and PSAM4-GlyR+ (black) in cells that continued to fire (10/16). No significant change of ~rb was observed. (F) Plot of number of action potentials (APs) fired versus injected current in control neurons in aCSF (open) and in uPSEM792 (closed). No significant difference was observed. (G) Plot of AP firing frequency versus injected current in control neurons in aCSF (open) and in uPSEM792 (closed). No significant difference was observed. (H) Plot of number of APs fired versus injected current in PSAM4-GlyR+ neurons in aCSF (open) and in uPSEM792 (closed). No significant difference was observed. (I) Plot of AP firing frequency versus injected current in PSAM4-GlyR+ neurons in aCSF (open) and in uPSEM792 (closed). No significant difference was observed. Line and error bars represent means \u00b1 SEM, * indicates statistical significance, ns denotes not significant.\n\nIn control neurons, uPSEM792 (50 nM) did not change the number of evoked action potentials (n\u00a0=\u00a04\u20137, ANOVA mixed-effects analysis; no significant group effect: F1, 6 = 0.83, p=0.40, and no interaction: F2.1, 8.73 = 1.30, p=0.32; Figure 3B and F) or firing frequency (no significant group effect: F1, 6 = 0.29, p=0.61, and no interaction: F2.97, 12.55 = 2.78, p=0.08; Figure 3G). In PSAM4-GlyR+ neurons, all neurons treated with 10 nM uPSEM792 continued to fire action potentials with somatic current injections (n\u00a0=\u00a014, Figure 3C). In 50 nM uPSEM792, 10 of 16 neurons continued to fire action potentials with current injection and 6 of 16 neurons were depolarized sufficiently to enter into depolarization block upon uPSEM792 application (Figure 3C and D). The minimum positive current needed to evoke firing (approximation of rheobase) could not be determined in neurons that entered into depolarization block (6/16) upon activation of PSAM4-GlyR. When compared with neurons that continued to fire, neurons that entered into depolarization block with uPSEM792 application had similar resting membrane potential to other PSAM4-GlyR neurons (\u221283.1\u00a0\u00b1\u00a01.1 mV vs. \u221283.6\u00a0\u00b1\u00a01.3 mV), but had higher membrane resistance (92.4\u00a0\u00b1\u00a05.2 m\u03a9 vs. 65.8\u00a0\u00b1\u00a06.7 m\u03a9), indicating that depolarization block was not due to a generally depolarized membrane potential prior to activation of PSAM4-GlyR. In neurons that continued to fire (10/16), there was no significant change in approximation of rheobase despite membrane depolarization with PSAM4-GlyR activation, likely due to shunting (two-way ANOVA; PSAM4-GlyR activation effect: F 1, 31 = 1.17, p=0.29; uPSEM792 concentration effect: F 1, 31 =\u00a01.45, p=0.24; Figure 3E). Moreover, activation of PSAM4-GlyR with 50 nM UPSEM792 did not change the number of action potentials (n\u00a0=\u00a05\u201310, ANOVA mixed-effects analysis; no significant group effect: F1, 9 = 0.20, p=0.66, and no interaction: F9, 49 = 0.96, p=0.48; Figure 3H) or firing frequency (no significant group effect: F1, 9 = 0.05, p=0.82, and no interaction: F9, 48 = 0.66, p=0.48; Figure 3I).\n\n### PSAM4-GlyR induces action potential firing in D1-MSNs in cell-attached recordings\n\nWhole-cell recording conditions affect intracellular chloride levels, which could confound data interpretation. Therefore, we sought to determine the effect of PSAM4-GlyR activation on D1-MSN firing using loose cell-attached recording configuration, which does not perturb intracellular chloride concentrations. After obtaining a steady baseline, uPSEM792 (100 nM) was applied for 5 min, followed by high potassium-containing CSF (~40 mM) to depolarize the neurons. High potassium results in rapid depolarization and firing by shifting the reversal potential of potassium to more positive values. Activation of PSAM4-GlyR in D1-MSNs did not suppress high-potassium-induced firing of action potentials (Figure 4A and B). In fact, in one of five neurons, activation of PSAM4-GlyR induced firing prior to high potassium application (not shown). Further, the frequency of high-potassium-induced firing was not different in uPSEM-treated control vs. PSAM4-GlyR+ neurons, suggesting the absence of a silencing effect by PSAM4-GlyR activation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64241/elife-64241-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative traces of cell-attached recordings from a control (gray) or PSAM4-GlyR+ neuron in standard aCSF (4.5 mM [K+]). Action currents were evoked following uPSEM792 by applying a high external concentration of potassium (high K+,\u00a0~40 mM). The insets below the high K+ traces represent an expanded timescale at the beginning of firing; Inset scale bar\u00a0=\u00a0200 ms. (B) In PSAM4-GlyR+ neurons, activation of PSAM4-GlyR with uPSEM792 had no effect on the frequency of action currents in response to high K+. (C) Representative traces of cell-attached recordings from a control (gray) or PSAM4-GlyR+ neuron in aCSF containing 10\u201313 mM [K+]. In PSAM4-GlyR+ neurons, activation of PSAM4-GlyR with uPSEM792 produced firing. There was no further firing with application of high K+. uPSEM792 had no effect on firing in control neurons. (D) Plot of the frequency of action currents in control and PSAM4-GlyR+ neurons in aCSF, uPSEM792 and high K+ (mixed effect two-way ANOVA with Sidak\u2019s multiple comparisons test). Line and error bars represent means \u00b1 SEM.\u00a0* indicates statistical significance, ns denotes not significant.\n\nThe whole-cell recording data in Figure 3A suggest that PSAM4-GlyR activation results in\u00a0~20 mV depolarization of D1-MSNs, which is not sufficient to reach firing threshold (~ \u221243 mV [Gertler et al., 2008]) from the resting membrane potential (~\u00a0\u221283 mV). Therefore, to determine if the membrane depolarization induced by PSAM4-GlyR activation is capable of triggering action potential firing when the membrane potential is closer to firing threshold, the cell-attached experiment was repeated after depolarizing the neurons to subthreshold potentials by increasing the extracellular potassium concentration from 4.5 mM to\u00a0~11.5 mM (10\u201313 mM). Under these conditions, cell-attached recordings show that activation of PSAM4-GlyR triggered firing of D1 MSNs (Figure 4C and D). In control cells, uPSEM792 did not result in firing, unlike high potassium application (Figure 4C and D). A mixed-effects two-way ANOVA showed a significant interaction effect between PSAM4-GlyR expression (+ vs. \u2212) and recording condition (aCSF vs. uPSEM vs. high potassium) on the firing frequency (F2, 13 = 12.40, p=0.001). Post-hoc Sidak\u2019s multiple comparisons tests showed a significant increase in firing frequency with application of uPSEM792 (compared with aCSF) in PSAM4-GlyR+ but not control neurons. In contrast, high potassium after uPSEM792 caused a significant increase in firing frequency in control neurons (compared to aCSF and uPSEM792), as opposed to reduced firing frequency in PSAM4-GlyR+ neurons, likely because of depolarization block, as is also suggested by the decrement in the amplitude of action currents with uPSEM792-induced firing (Figure 4C).\n\nTaken together, the whole-cell and cell-attached recording results demonstrate that (1) activation of PSAM4-GlyR significantly depolarized the membrane potential, (2) the magnitude of the decrease in membrane resistance produced by opening of PSAM4-GlyR channels was not sufficient to inhibit neuronal firing via electrical shunting, and (3) PSAM4-GlyR activation could trigger action potential firing when neurons are depolarized to subthreshold potentials.\n\n### Sustained activation of PSAM4-GlyR results in runaway depolarization of D1-MSNs\n\nDepolarization from the resting membrane potential (\u221283 mV) by activation of PSAM4-GlyR was expected given the calculated reversal potential of the channel (\u221262 mV, see Materials\u00a0and\u00a0methods). However, in most D1-MSNs (~57%), the depolarization overshot the expected reversal potential to potentials more positive than \u221262 mV (Figure 3A). Therefore, we examined the current\u2013voltage relationship of PSAM4-GlyR. Voltage steps (from Vhold\u00a0\u221288 mV, 1 s, \u2212118 to \u221228 mV, 10 mV increments) were made in aCSF and uPSEM792, and PSAM4-GlyR current was isolated by subtraction (Figure 5A). In control neurons, uPSEM792 did not produce substantial current across the voltage range (Figure 5A and C). In PSAM4-GlyR+ neurons, uPSEM792 produced a transient current with the onset of the voltage step (inset \u20181\u2019, Figure 5A) that relaxed toward a steady-state current during the voltage step (inset \u20182\u2019, Figure 5A). The transient current reversed polarity at \u221261.4 mV (n\u00a0=\u00a021, CI: \u221264.0 to \u221259.0 mV, linear regression, r2\u00a0=\u00a00.58, F1, 103 = 142.5, p<0.0001), consistent with the calculated reversal potential of the PSAM4-GlyR channel. Transient PSAM4-GlyR current was inward at potentials more negative than \u221261 mV, and outward at potentials less negative than \u221261 mV (Figure 5C). At steady\u00a0state, the reversal potential of PSAM4-GlyR current showed a significant rightward shift to \u221244.2 mV (n\u00a0=\u00a021, CI: \u221248.3 to \u221238.2 mV, linear regression, r2\u00a0=\u00a00.39, F1, 103 = 66.9, p<0.0001; paired t-test, t\u00a0=\u00a05.73, p<0.0001, Figure 5D and E). Further, the steady-state current showed a U-shaped current\u2013voltage relationship (Figure 5D), and the outward current component was significantly smaller than the transient outward current (49.8\u00a0\u00b1\u00a038.4 pA vs. 307.1\u00a0\u00b1\u00a062.0 pA at Vhold\u00a0\u221228 mV respectively, unpaired t-test, p<0.0001; Figure 5D). Thus, in D1-MSNs, the majority of outward current carried by PSAM4-GlyR channels was transient. Hence, during the firing cycle, membrane hyperpolarization via PSAM4-GlyR activation is expected to be minimal or transient, and thus, PSAM4-GlyR activation is predominantly depolarizing.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64241/elife-64241-fig5-v1.jpg)\n\n**Figure 5.:** (A) Current was recorded in response to voltage steps (1 s, \u2212118 to \u221228 mV, 10 mV) from Vhold\u00a0\u221288 mV in aCSF and after application of uPSEM792 (50 or 100 nM). uPSEM792-induced current was isolated by subtraction. Representative traces of uPSEM792-induced current during voltage steps in a control (left) and a PSAM4-GlyR+ neuron (right). Inset numbers by trace indicate transient (Roth, 2016), steady-state (Saloman et al., 2016), and tail (Gomez et al., 2017) currents. (B) Expanded timescale of transient currents (inset \u20181\u2019 in A) in a control and a PSAM4-GlyR+ neuron. (C) Plot of current\u2013voltage relationship of the transient current (Itransient) in control (n\u00a0=\u00a011) vs. PSAM4-GlyR+ neurons (n\u00a0=\u00a021). The reversal potential of transient current in PSAM4-GlyR+ neurons was \u221261 mV. (D) Plot of current\u2013voltage relationship of the transient (inset \u20181\u2019 in A, same as in C) vs. steady-state uPSEM792-induced (inset \u20182\u2019 in A) currents in PSAM4-GlyR+ neurons. At steady state, the reversal potential of uPSEM792-induced current shifted to \u221244 mV. (E) Plot of the pairwise shift of reversal potential (Erev) between transient (Itran) and steady-state currents (Iss). (F) Expanded timescale of tail currents (inset \u20183\u2019 in A) in a control and a PSAM4-GlyR+ neuron. (G) Plot of the amplitude of tail currents measured at Vhold\u00a0\u221288 mV (Itail) versus holding potential of the preceding voltage step in control and PSAM4-GlyR+ neurons. uPSEM792-induced tail current at \u221288 mV demonstrated robust augmentation with prior depolarization and reduction with prior hyperpolarization. (H) The magnitude of the rightward shift in reversal potential between transient and steady-state current was positively correlated with the PSAM4-GlyR conductance (G in nS). Line and error bars represent means \u00b1 SEM, * indicates statistical significance.\n\n### Instability of chloride equilibrium underlies PSAM4-GlyR-mediated depolarization\n\nIn order to gain a mechanistic understanding of PSAM4-GlyR-mediated depolarization, we examined tail currents generated by stepping back to a holding potential of \u221288 mV from preceding voltage steps. In principle, relaxation of outward currents during voltage steps could reflect fewer available channels (e.g., channel desensitization, inactivation, or voltage-dependent block), which would be expected to result in smaller tail currents. Alternatively, the relaxation of outward currents could be a manifestation of reduced driving force of chloride influx through PSAM4-GlyR channels due to the accumulation of intracellular chloride over the course of the voltage steps, which would be expected to result in larger tail currents. Indeed, many reports show that sustained activation of chloride conductances including GABAA receptors (Huguenard and Alger, 1986; Staley et al., 1995; Thompson and G\u00e4hwiler, 1989), glycine receptors (Karlsson et al., 2011), and Halorhodopsin (Raimondo et al., 2012; Alfonsa et al., 2015) can lead to chloride influx that overwhelms homeostatic mechanisms to pump chloride out, thereby elevating the intracellular chloride concentration. An increase in intracellular chloride manifests as a rightward shift of the chloride reversal potential, commensurate with our observation of a rightward shift of the PSAM4-GlyR reversal potential from \u221261 mV to \u221244 mV. Further, the magnitude of the tail current increased substantially with preceding depolarizing steps (Figure 5F and G; RM two-way ANOVA, significant PSAM4-GlyR activation effect: F1, 30 = 18.05, p=0.0002; significant PSAM4-GlyR activation \u00d7 voltage step interaction: F9, 270 = 9.55, p<0.0001; Dunnett\u2019s multiple comparisons test shows that tail currents from every preceding voltage step were significantly different from current at \u221288 mV without a preceding voltage step). These data reveal that the decline in outward current was not due to fewer available channels but was consistent with a change in the driving force and shift in the reversal potential during the depolarizing voltage steps. In addition, the magnitude of the shift in reversal potential was positively correlated with the conductance of PSAM4-GlyR, measured at Vhold\u00a0\u221288 mV (Pearson\u2019s correlation, r\u00a0=\u00a00.57, p=0.0008, n\u00a0=\u00a021; Figure 5H). The tail current analysis also suggested some intrinsic voltage-sensitivity of PSAM4-GlyR. The magnitude of tail currents decreased with preceding hyperpolarizing steps (e.g., \u221298,\u00a0\u2013108, or \u2212118 mV) and increased with preceding depolarizing steps (e.g., \u221278 or \u221268 mV; Figure 5F and G), suggesting that hyperpolarization reduced the number of available channels, or that depolarization increased the number of available channels. Taken together, the results suggest that activation of PSAM4-GlyR in D1-MSNs is largely depolarizing at sub- and peri-threshold membrane potentials likely due to two mechanisms: increased channel availability with depolarization due to intrinsic voltage-sensitive mechanisms, and more prominently, a rightward shift of PSAM4-GlyR reversal potential due to accumulation of intracellular chloride at depolarized potentials.\n\n### Loss of GABAergic inhibition following activation of PSAM4-GlyR\n\nShifts in intracellular chloride concentration have been shown to result in \u2018apparent cross-desensitization\u2019 of glycine- and GABAA receptors whereby sustained activation of one chloride-permeable channel (e.g., glycine channel) results in reduced currents carried by another chloride-permeable channel (e.g., GABAA channel) and vice versa (Karlsson et al., 2011). Therefore, we examined GABAA receptor-mediated synaptic currents in PSAM4-GlyR+ neurons following activation of PSAM4-GlyR. A bipolar stimulating electrode was placed in the brain slice and GABAA receptor-mediated synaptic currents were electrically evoked. The same voltage steps were made (as to assess the current\u2013voltage relationship of PSAM4-GlyR current) and GABAA receptor-mediated synaptic currents were evoked 850 ms into the voltage step where uPSEM792 current reached steady\u00a0state (single electrical pulse, 0.1 ms, Figure 6A and B). In neurons that showed a rightward shift in reversal potential of PSAM4-GlyR (>5 mV shift, n\u00a0=\u00a05, Erevshift\u00a0=\u00a017.3\u00a0\u00b1\u00a06.3 mV), the amplitude of the GABAA receptor-mediated synaptic currents significantly decreased upon activation of PSAM4-GlyR compared with aCSF (\u221233.4\u00a0\u00b1\u00a06.0 pA vs. \u22127.8\u00a0\u00b1\u00a01.3 pA at Vhold\u00a0\u221288 mV, paired t-test: p=0.01; Figure 6C). Further, the reversal potential of GABAA receptor-mediated synaptic currents showed a significant rightward shift from \u221260.9 mV in aCSF to \u221251.6 mV upon activation of PSAM4-GlyR (aCSF: CI: \u221264.2 to \u221258.1 mV, linear regression, r2\u00a0=\u00a00.78, F1, 13 = 43.7, p<0.0001; uPSEM792: CI: \u221255.2 to \u221246.7 mV, r2\u00a0=\u00a00.66, F1, 7 = 13.7, p=0.008; test of equal intercepts: F1, 21 = 18.3, p=0.0003; Figure 6C). In neurons that did not show a shift in reversal potential of PSAM4-GlyR (n\u00a0=\u00a03, Erevshift\u00a0=\u00a02.1\u00a0\u00b1\u00a01.0 mV), there was no change in the reversal potential or amplitude of GABAA receptor-mediated synaptic currents (aCSF: GABAAErev\u00a0=\u00a0\u221264.7 mV, CI: \u221268.5 to \u221262.1 mV, linear regression, r2\u00a0=\u00a00.91, F1, 7 = 68.8, p<0.0001; uPSEM792: GABAAErev\u00a0=\u00a0\u221264.9 mV, CI: \u221266.7 to \u221263.4 mV, r2\u00a0=\u00a00.96, F1, 4 = 87.5, p=0.0007; Figure 6D). These results indicate that activation of PSAM4-GlyR reduced GABAergic inhibition of D1-MSNs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64241/elife-64241-fig6-v1.jpg)\n\n**Figure 6.:** (A) Representative traces of GABA-A receptor-mediated synaptic currents in a PSAM4-GlyR+ neuron in aCSF, evoked during voltage steps from Vhold\u00a0\u221288 mV (voltage steps: 1 s, \u2212118 to \u221228 mV, 10 mV; electrical stimulation at 850 ms into voltage steps). Panel on the right shows the traces in expanded timescale corresponding to the gray rectangle on the left. (B) Representative traces of GABA-A receptor-mediated currents evoked in the same neuron from Vhold\u00a0\u221228 mV (outward) and \u2212118 mV (inward) in aCSF (gray) and uPSEM792 (black). (C) Plot of the current\u2013voltage relationship of the GABA-A receptor synaptic currents in aCSF and uPSEM792 in neurons where the reversal potential of PSAM4-GlyR current shifted by\u00a0>5 mV (n\u00a0=\u00a05, average shift of 17.0 mV). The reversal potential of GABA-A receptor-mediated current was \u221260.9 mV in aCSF and \u221251.6 mV in uPSEM792. Inset (top left) shows values of GABA-A receptor synaptic currents in uPSEM792 near the reversal potential in an expanded scale. (D) Plot of the current\u2013voltage relationship of the GABA-A receptor-mediated synaptic current in aCSF and uPSEM792 in neurons where the reversal potential of PSAM4-GlyR current did not shift (n\u00a0=\u00a03, average shift of 2.1 mV). The reversal potential of GABA-A receptor-mediated synaptic currents was similar in aCSF (\u221264.7 mV) and uPSEM792 (\u221264.9 mV). Line and error bars represent means \u00b1 SEM, * indicates statistical significance.\n\n## Discussion\n\nStrategies to manipulate neuronal activity in defined cell populations have become instrumental in mapping neural circuits and correlating neuronal and circuit activity with behavior. Engineered receptors to promote excitation (e.g., Channelrhodopsin-2, Gq-DREADDs) have been largely successful, albeit with careful consideration of ligand-related off-target effects (Gomez et al., 2017; Manvich et al., 2018). In contrast, silencing of neuronal firing has been uniquely challenging, especially when relying on chloride conductances (Wiegert et al., 2017). The utility of a chloride conductance like PSAM4-GlyR to silence firing relies on hyperpolarization of the membrane at potentials more positive than the chloride reversal potential and/or the efficacy of the channels to shunt membrane depolarization (Doyon et al., 2016).\n\nThe present study shows that PSAM4-GlyR in D1-MSNs is predominantly depolarizing, fails to inhibit neuronal firing, triggers action potential firing when neurons are depolarized to subthreshold potentials, and has a limited capacity to hyperpolarize these neurons even at more depolarized potentials. When activated near the resting membrane potential (\u221283 mV), PSAM4-GlyR passes inward current and depolarizes D1-MSNs. When activated at potentials more depolarized than the chloride reversal potential, PSAM4-GlyR passes transient or small outward currents, likely due to influx and accumulation of intracellular chloride that overwhelms endogenous mechanisms to restore the chloride gradient (Huguenard and Alger, 1986; Staley et al., 1995; Thompson and G\u00e4hwiler, 1989; Karlsson et al., 2011; Raimondo et al., 2012; Alfonsa et al., 2015). Bath application or systemic injection of high potency exogenous agonists of chloride conductances (e.g., uPSEM792) is a very different phenomenon than physiological activation of native chloride conductances (e.g., GABAA and glycine receptors) by endogenous agonists. The release and clearance of endogenous neurotransmitters are usually tightly controlled and occur over the scale of milliseconds, allowing the neurons to better maintain a stable intra- and extracellular chloride gradient. This is unlike exogenous agonists that result in sustained activation over seconds or minutes and cause massive chloride influx and a shift in chloride reversal potential. In addition, the expression of endogenous chloride conductances is also regulated, unlike viral overexpression of exogenous conductances (e.g., PSAM4-GlyR) which only augments the magnitude of chloride influx, hence the unpredictable nature of neuronal responses to the activation of exogenous chloride conductances with exogenous agonists.\n\nMore commonly, chloride conductances inhibit action potential firing through electrical shunting. Opening channels decrease membrane resistance which reduces (shunts) depolarization in response to inward current. While there was a significant decrease in membrane resistance associated with opening PSAM4-GlyR in D1-MSNs (~30% reduction), it was not sufficient to prevent suprathreshold depolarization by current injection. The majority of neurons were equally capable of firing action potentials to current injection. Despite using high viral titer in our experiments, the decrease in membrane resistance we observed was lower than previously reported in cortical layer 2/3 neurons where PSAM4-GlyR activation suppressed firing (Magnus et al., 2019). While increasing PSAM4-GlyR conductance by further increasing expression levels could theoretically improve shunting efficacy, the data in this study show a strong correlation between PSAM4-GlyR conductance and the rightward shift in PSAM4-GlyR reversal potential, suggesting that increasing expression levels will only promote further depolarization with PSAM4-GlyR activation. The lack of shunting efficacy in D1-MSNs is likely due to their low membrane resistance (~78 M\u03a9 in brain slices as measured above) relative to other neurons in the brain (e.g., pyramidal neurons in cortex and hippocampus). It is important to note that membrane resistance is inversely proportional to temperature, age, and number/activity of synaptic inputs (Kroon et al., 2019; Waters and Helmchen, 2006; Fernandez et al., 2018), and therefore, the shunting efficacy of PSAM4-GlyRs during behavioral experiments in vivo is likely to be lower than in brain slices.\n\nIn the awake behaving state in vivo, MSNs show brief and irregular spontaneous membrane potential fluctuations between depolarizations (\u221250 to \u221260 mV) that facilitate action potential firing and hyperpolarizations (\u221280 to \u221290 mV), with the overall membrane potential following a Gaussian distribution (mean ~ \u221269 mV) (Mahon et al., 2006). The cell-attached data show that activation of PSAM4-GlyR triggers action potential firing when the neurons are depolarized to subthreshold potentials by increasing extracellular potassium. A caveat of these data is that increasing extracellular potassium may indirectly impair chloride extrusion via the potassium-chloride cotransporter, KCC2, which may exacerbate instability of the chloride gradient and make the cells more excitable. Such KCC2 perturbance is expected to affect both control and PSAM4-GlyR cells. However, the increased excitability observed in our experiments was limited to the PSAM4-GlyR cells supporting the conclusion of PSAM4-GlyR driven increase in excitability. The current-clamp data showed that activation of PSAM4-GlyR depolarized D1-MSNs by\u00a0~20 mV and was sufficient to produce depolarization block in a proportion of neurons. This implies that in vivo, PSAM4-GlyR activation will effectively increase the probability and duration of spontaneous depolarizations, and increase the probability of D1-MSN firing especially during these depolarizations. The results also show that PSAM4-GlyR activation results in \u2018apparent cross-desensitization\u2019 of GABAA synaptic currents, producing a rightward shift in the GABAA reversal potential and a profound reduction of inhibitory GABAA synaptic currents onto D1-MSNs, likely attributed to electrical shunting since the reduction was observed at all potentials. Given the critical role of local GABAergic inhibition in the striatum in regulating neuronal activity (Burke et al., 2017; Ko\u00f3s and Tepper, 1999), PSAM4-GlyR triggered reduction of GABAergic inhibition will further increase the likelihood of D1-MSNs activation rather than inhibition. Thus, increased c-fos expression in D1-MSNs following in vivo activation of PSAM4-GlyR is likely caused by PSAM4-GlyR-induced depolarization and firing in addition to loss of GABAergic inhibition, and reflects increased neuronal activity of D1-MSNs in vivo.\n\nFinally, PSAM4-GlyR-induced depolarization may allow robust calcium influx via voltage-gated calcium channels and NMDA receptors relieved from voltage-dependent magnesium pore-block (Mayer and Westbrook, 1987; Mayer et al., 1984). Calcium influx activates calcium/calmodulin-dependent protein kinases (CaMKs), calcium response elements in genes, and various other signaling cascades (Pasek et al., 2015; Clapham, 2007), which are known to influence synaptic plasticity and behavior (Lisman et al., 2002; Wayman et al., 2008). Therefore, it is possible that when used to silence neurons, PSAM4-GlyR activation could confound the interpretation of experimental results due to depolarization-induced calcium influx, independent of PSAM4-GlyR\u2019s effect on action potential firing like in the case of depolarization-block.\n\nIn summary, activation of PSAM4-GlyR expressed in D1-MSNs in the ventral striatum enhanced neuronal activity through direct depolarization and did not suppress action potential firing via membrane shunting. The results of our study show that the PSAM4-GlyR approach to silence neurons may not be suitable for all cell types and highlight the need to validate the inhibition of neuronal firing by PSAM4-GlyR in the cell type of interest prior to behavioral studies. More broadly, these data demonstrate that achieving neuronal silencing with chloride conductances continues to be challenging and may result in unexpected neuronal activation.\n\n## Materials and methods\n\n### Subjects\n\nAll experimental procedures were conducted in accordance with the guidelines of the National Institutes of Health Guide for the Care and use of Laboratory Animals, and approved by the Animal Care and Use Committee of the National Institute on Drug Abuse. We used adult female and male prodynorphin-Cre mice (pdyn-Cre; 8\u201312 weeks old, breeding facility at the Intramural Research Program, National Institute on Drug Abuse) for electrophysiology and c-fos experiments. We crossed pdyn-Cre and Ai9 Rosa-tdTomato mice to validate selectivity of viral transduction (Figure 1A). Mice were group housed four per cage and maintained under a 12 hr light cycle at 21 \u00b1 2\u00b0C. Food and water were freely available.\n\n### Stereotaxic virus injection\n\nAAV-SYN-flex-PSAM4-GlyR-IRES-EGFP was a gift from Scott Sternson (Addgene viral prep # 119741-AAV5; http://n2t.net/addgene:119741; RRID:Addgene_119741;\u00a0>1\u00a0\u00d7\u00a01013 vg/ml). Control virus was AAV1-EF1\u03b1-DIO-eYFP (>1\u00a0\u00d7\u00a01013 vg/ml, University of North Carolina Viral Core, NC). Mice were anesthetized with an i.p. injection of a cocktail of ketamine (100 mg/kg) and xylazine (10 mg/kg) and secured in a stereotaxic frame (David Kopf Instruments, CA). PSAM4-GlyR and control viruses were injected (0.2\u20130.5 \u00b5l, 0.05 \u00b5l/min) into the medial ventral striatum (targeted coordinates relative to bregma: 1.4 mm AP, 0.5 mm ML (10\u00b0), and \u22124.5 mm DV) using a 29 G stainless steel cannula connected to a 2 \u03bcl Hamilton syringe or a Nanoject system (Drummond Scientific, PA). The injectors were retracted slowly after 5 min. Mice were given carprofen (5 mg/kg) post-surgery for pain relief.\n\n### Brain slice preparation and electrophysiological recordings\n\nAfter\u00a0>4 weeks of viral incubation, mice were anesthetized with Euthasol (i.p., Virbac AH, Inc, TX) and then decapitated. Brains were rapidly removed and placed in room temperature (25\u00b0C) modified Krebs\u2019 buffer containing (in mM): 125 NaCl, 4.5 KCl, 1.0 MgCl2, 1.2 CaCl2, 1.25 NaH2PO4, 11 D-glucose, and 23.8 NaHCO3, bubbled with 95/5% O2/CO2 with 5 \u00b5M MK-801 to increase slice viability. Using a vibrating microtome (Leica Biosystems, IL). Coronal brain slices (220 \u00b5m) containing the ventral striatum were collected and incubated at 32\u00b0C for 4 min, then transferred to room temperature until use. All recordings were from neurons in the ventro-medial shell of the nucleus accumbens. Cells were visualized using IR-DIC and fluorescence on an upright Olympus BX51WI microscope (Olympus, MA). Transduced D1-MSNs were identified by visualization of eGFP or eYFP. Whole-cell patch-clamp recordings were made at 35 \u00b1 1\u00b0C with a Multiclamp 700B amplifier and Digidata 1440a digitizer with Clampex and Axoscope software (Molecular Devices, CA). Data were digitized at 20 kHz. For voltage-clamp experiments, data were filtered at 2 kHz. Recordings were performed in modified Krebs\u2019 buffer. In the majority of experiments, receptor antagonists were used to eliminate fast synaptic transmission (3 \u00b5M NBQX or DNQX and 100 \u00b5M picrotoxin). For whole-cell configuration recordings, pipette resistance was 1.5\u20132.5 M\u03a9 when filled with internal solution containing (in mM) K-methylsulfate (122), HEPES (Chung, 2015), EGTA (0.45), NaCl (Krashes et al., 2014), MgCl2 (1.8), CaCl2 (0.1), Mg-ATP (Manvich et al., 2018), Na-GTP (0.3), creatine phosphate disodium (Enoksson et al., 2012), pH 7.35 and 284 mOsm. For cell-attached configuration recordings, pipette resistance was 2\u20134 M\u03a9 when filled with Krebs\u2019 buffer. Cell-attached recordings in which the neuron did not fire under uPSEM792 or high [K+] were excluded from analysis.\n\nAssuming permeability to Cl\u2212 only, the calculated reversal potential of PSAM4-GlyR was \u221262.3 mV. Assuming that PSAM4-GlyR has similar Cl\u2212/HCO3\u2212 permeability to GlyR (PHCO3\u2212:PCl\u2212=0.14) (Jun et al., 2016), the calculated reversal potential of PSAM4-GlyR in our recording conditions was \u221260.7 mV ([Cl\u2212]out133.9 mM, [Cl\u2212]in12.8 mM, [HCO3\u2212]out23.8 mM, and assuming [HCO3\u2212]in8 mM). Series resistance was monitored throughout the recordings and not compensated. Reported voltages were corrected for a liquid junction potential of \u22128 mV between the internal and external solutions. To measure neuronal excitability, current was injected in 50 pA increments (2 s). In determining the current\u2013voltage (I-V) relationship using voltage steps, the external solution of some recordings included 1 \u03bcM tetrodotoxin (TTX) to eliminate sodium channel-dependent spiking. There were no differences in the shape of the I-V with or without TTX, so data were combined. Reversal potentials were determined by linear regression considering each replicate an individual point. Recordings in which current did not cross 0 pA were omitted from analysis (n\u00a0=\u00a02). GABAA receptor-mediated synaptic currents were evoked with electrical stimulation delivered by a bipolar stimulating electrode placed in the brain slice, in the presence of ionotropic glutamate receptor antagonists (NBQX/DNQX) to isolate fast GABAergic synaptic transmission. Peak amplitude of GABAA receptor-mediated synaptic currents was measured 3\u20134 ms from the apparent peak to remove any potential contribution from a stimulation-induced \u2018escaped\u2019 action potential.\n\n### Immunohistochemistry and confocal microscopy\n\nFor immunohistochemistry, confocal microscopy, and image analysis, the experimenter was blinded to the animal treatment group. Mice microinjected with PSAM4-GlyR vs. control AAV into the medial ventral striatum received an i.p. injection of uPSEM792 (3 mg/kg) or saline followed 30 min later by an i.p. injection of fentanyl (0.2 mg/kg) or saline (Figure 1B). After 90 min, at the expected peak of c-fos protein expression (Barros et al., 2015), mice were euthanized with Euthasol (i.p.) and transcardially perfused with 1\u00d7 PBS followed by ice-cold 4% paraformaldehyde (pH 7.4, Sigma Aldrich, MO). The brains were collected and fixed overnight in 4% paraformaldehyde at 4\u00b0C, and\u00a0then moved to PBS. Coronal brains slices (50 \u03bcm) containing the viral injection sites were collected using a vibratome (Leica Biosystems, IL). Free-floating brain slices were washed in PBS (\u00d73), permeabilized and blocked in a solution containing PBS, 0.3% Triton-X, and 5% normal donkey serum for 2 hr. Slices were then incubated at 4\u00b0 overnight in a solution containing PBS, 0.03% Triton-X, 5% normal donkey serum, and 1:4000 rabbit anti-c-fos primary antibody (Cell Signaling, MA). This was followed by a wash in PBS (\u00d73) and incubation in 1:500 donkey anti-rabbit secondary antibody, conjugated to Alexa-Fluor-647 (Jackson ImmunoResearch, PA) for 1 hr and 45 min. Slices were then washed in PBS (\u00d73) and mounted with DAPI Fluoromount mounting medium (Thermo Fisher Scientific, MA). Confocal images were collected using an Olympus Fluoview FV1000 confocal microscope with 20\u00d7 (0.75 NA) or 40\u00d7 (0.95 NA) objective lens and processed using ImageJ. Z-stack images of the viral injection site in the right hemisphere (two\u00a0to\u00a0three brain sections) were collected. Expression of c-fos and eGFP/eYFP was manually quantified by counting fluorescent cells within the image frame. The number of non-transduced cells was obtained by subtracting the number of transduced cells from the number of cells stained with DAPI. Results from all brain sections were averaged for each mouse.\n\nDrugs uPSEM792, MK-801, picrotoxin, and NBQX were purchased from Tocris (MN). All other electrophysiological reagents were obtained from Sigma-Aldrich (MO).\n\n### Data analysis\n\nData were analyzed using Clampfit 10.7. Data are presented as representative traces, or in bar graphs with means \u00b1 SEM, and in scatter plots where each point is an individual mouse (Figure 1) or cell (Figures 2\u20136). In Figure 1, n = number of mice (8\u201312/group). In Figures 2\u20136, n = number of cells. The number of mice used is as follows: Figure 2 (5\u20138/group), Figure 3 (3\u20137/group), Figure 4 (2\u20134/group), Figure 5 (4\u20137/group), and Figure 6 (Manvich et al., 2018). No sample was tested in the same experiment more than once (technical replication). Image analysis for Figure 1 was done blindly. Data were analyzed using GraphPad Prism (v 8.1.1; GraphPad software, CA). The statistical tests we used included t-tests (paired or unpaired), ANOVAs (with or without repeated measures) with Sidak\u2019s or Dunnett\u2019s multiple comparison test (as recommended by Prism), ANOVA mixed-effects analysis (when missing values prohibited repeated-measures analysis with ANOVAs), Pearson\u2019s correlation, and linear regression (we ensured there were no departures from linearity with replicates test). Significance level was set at p<0.05.\n",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "3ad12950-72c2-4e7e-a7a5-2f6b8a987eab",
+      "submission_id": "0693461d-e6c8-48c5-80cd-0cf2dd7efb27",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joseph V Raimondo, University of Cape Town South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64241.sa1](https://doi.org/10.7554/eLife.64241.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nGanz et al. demonstrate that the ultrapotent chemogenic silencing strategy utilising PSAM4-GlyR can excite D1-expressing medium spiny neurons. This highlights the need to validate the inhibition of neuronal firing by PSAM4-GlyR in the brain area and cell-type of interest. This work shows that neuronal silencing with chloride conductances can in some cases result in unexpected neuronal activation. This is likely of interest to those designing experiments which utilise the latest chemogenic silencing strategies.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Excitation of medium spiny neurons by 'inhibitory' ultrapotent chemogenetics via shifts in chloride reversal potential\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Joseph V Raimondo as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by John Huguenard as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Ofer Yizhar (Reviewer #2); Melanie A Woodin (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nThis manuscript performs a much-needed validation of a new generation of chemogenetic tools based on the PSAM family of ligand-gated chloride channels. The authors expressed PSAM4-GlyR in D1 MSNs in striatum. They then perform c-Fos staining after systemic injection of the ligand (uPSEM792) and show that paradoxically, c-Fos expression is elevated in the expressing cells. This is followed bys a detailed and thorough investigation of the electrophysiological effects of uPSEM792 delivery in acute brain slices. The authors find that uPSEM mostly depolarizes the PSAM-expressing neurons, which is expected from the chloride reversal potential in these cells, but also fails to shunt action potential firing. They further demonstrate that prolonged activation of the PSAM channels leads chloride accumulation and a further shift of the chloride reversal and a loss of GABAa-mediated inhibition in the same cells. Altogether, their findings provide a mechanistic explanation for the paradoxical excitatory effects of PSAM4-GlyR in D1 MSNs in-vivo. This amounts to a cautionary tale regarding the need to validate the effects of chemogenetic or optogenetic tools prior to their application in behavioral experiments.\n\nThe reviewers deemed your work of sufficient interest. We felt that the key finding was the raised c-Fos expression observed in D1 MSNs following activation of PSAM4-GlyRs in vivo. However, multiple reviewers raised concerns about the N and the number of mice used not being entirely clear. In particular in Figure 1D the experimental groups have only 5 data points (presumably 5 mice). Considering that the paper is resting on this important finding, the reviewing team asks that you focus your revision on increasing the N for the c-fos experiment to 8-10 animals for the experimental groups to confirm the validity of this key finding.\n\nReviewer #1:\n\nThe study is well performed.\n\nReviewer #2:\n\nThis manuscript performs a much-needed validation of a new generation of chemogenetic tools developed by the Sternson lab, based on the PSAM family of ligand-gated chloride channels that was first described by the same group in 2011. The authors expressed PSAM4-GlyR in D1 MSNs in striatum. They then perform c-Fos staining after systemic injection of the ligand (uPSEM792) and show that paradoxically, c-Fos expression is elevated in the expressing cells. What follows is a detailed and thorough investigation of the electrophysiological effects of uPSEM792 delivery in acute brain slices. The authors find that uPSEM mostly depolarizes the PSAM-expressing neurons, which is expected from the chloride reversal potential in these cells, but also fails to shunt action potential firing. They further demonstrate that prolonged activation of the PSAM channels leads to a further shift of the chloride reversal potential to more depolarized potentials and a loss of GABAa-mediated inhibition in the same cells. Altogether, their findings provide a mechanistic explanation for the surprising in-vivo finding demonstrated in Figure 1 and amount to a cautionary tale regarding the need to validate the effects of chemogenetic or optogenetic tools prior to their application in behavioral experiments. The study is well-done and written in a clear and concise manner. It would be of importance to many scientists working in this field, particularly since few studies have been published utilizing these new potentially powerful tools for chemogenetic inhibition. I support the publication of this work in eLife.\n\nReviewer #3:\n\nSince the initial report of DREADDs (Armbruster 2007, PNAS), chemogenetics has received significant attention for their ability to remotely control neuronal activity. This has included the development of additional chemogenetic tools (proteins and agonists), such as the PSAM/PSEM. The main objective of this study is to validate the use of PSAM4-GlyR activated by uPSEM792 as an inhibitory chemogenetic tool. By performing extensive electrophysiological characterization, the authors conclude that PSAM4-GlyR activated by uPSEM792 does not inhibit D1-MSNs in the ventral striatum. As a result, the authors further conclude that prior to using PSAM4-GlyR in behavioral studies, validation in the neuron-type is required.\n\nIntracellular chloride levels vary across different neuronal types, and if they are sufficiently elevated so that the chloride reversal potential sits depolarized with respect to the resting membrane potential, activation of a chloride conductance will result in depolarization and sometimes excitation. Given the previous reported electrophysiological properties for D1-MSNs, the primary finding of this paper (PSAM4-GlyR activation causes excitation) is not unexpected and thus the conceptual advance seems relatively modest. A more significant contribution could be achieved if validation was conducted in more than one cell type, and in particular with cell types with known differences in chloride homeostasis.\n\n1) In Figure 6 the authors conclude that PSAM4-GlyR activation in D1-MSNs reduces GABAergic synaptic inhibition. This conclusion was made by attempting to quantify the reversal potential, but the conductance appears to be almost non-existent for some neurons (e.g. 6C), which makes the calculation for the reversal potential meaningless. The rationale for why the GABA reversal could change makes sense (if prolonged activation of PSAM4-GlyR changed the intracellular chloride concentration), although it's not clear why or how activation of PSAM4-GlyR could change the conductance of GABAARs. The amplitudes would be decreased at some membrane potentials (due to changes in driving force), but it\u2019s not clear why they would be reduced at all potentials.\n\n2) N values are relatively low throughout, and/or aren't clearly explained. For example, the N values for experiments in Figure 1, which demonstrated that PSAM4-GlyR enhances rather than suppresses c-fos expression in D1-MSNs in vivo, are reported as \"6-7 mice/group, but some mice were eliminated because of failure of viral expression\". It\u2019s not clear how many mice were eliminated from this already relatively low N value. Also see Figure 4B PSAM for very low n values. For other experiments, it's not clear how many biological replicates were used; e.g. when the number of neurons is reported as 'n', it's not clear how many mice those neurons came from.\n\n3) The Results describe a lot of experimental detail (more appropriate for Materials and methods), but also lack appropriate experimental rationales. For example, the experimental design (Figure 1) involves a fentanyl injection, however there is no explanation for why fentanyl is being used. What is the rationale for this apparently key part of the experimental design?\n",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b37f0aa2-4f8a-4f54-9662-10a04bd35b06",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C1",
+      "claim": "PSAM4-GlyR is a chloride-permeable inhibitory receptor proposed as a strategy to selectively control neuronal activity in awake, behaving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultrapotent chemogenetics, including the chloride-permeable inhibitory PSAM4-GlyR receptor, were recently proposed as a powerful strategy to selectively control neuronal activity in awake, behaving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this as background information, citing the proposed use of PSAM4-GlyR.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "83f0fa33-5499-4e07-a4a8-43edf721575f",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C2",
+      "claim": "Activation of PSAM4-GlyR with uPSEM792 ligand enhanced rather than suppressed the activity of D1-MSNs in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of PSAM4-GlyR with the uPSEM792 ligand enhanced rather than suppressed the activity of D1-MSNs in vivo as indicated by increased c-fos expression in D1-MSNs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a primary finding based on c-fos expression data shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "bc1c336b-f7c2-4d3a-b44c-3e423d985284",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C3",
+      "claim": "Activation of PSAM4-GlyR enhanced D1-MSN activity in vitro as indicated by cell-attached recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of PSAM4-GlyR with the uPSEM792 ligand enhanced rather than suppressed the activity of D1-MSNs in vivo as indicated by increased c-fos expression in D1-MSNs and in vitro as indicated by cell-attached recordings from D1-MSNs in mouse brain slices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding based on cell-attached recording data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "af7f8daf-9eb2-4d08-9ec8-8e89cb99b2dd",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C4",
+      "claim": "Activation of PSAM4-GlyR depolarized D1-MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell recordings showed that activation of PSAM4-GlyR depolarized D1-MSNs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a finding from whole-cell recordings shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "ffa3868b-acfd-4f2a-a871-3fc9c3eb20bb",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C5",
+      "claim": "Activation of PSAM4-GlyR attenuated GABAergic inhibition of D1-MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell recordings showed that activation of PSAM4-GlyR depolarized D1-MSNs, attenuated GABAergic inhibition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a finding from whole-cell recordings shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "100fb961-6e39-4183-8afb-5cc34ec206f1",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C6",
+      "claim": "Activation of PSAM4-GlyR shifted the reversal potential of PSAM4-GlyR current to more depolarized potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell recordings showed that activation of PSAM4-GlyR depolarized D1-MSNs, attenuated GABAergic inhibition, and shifted the reversal potential of PSAM4-GlyR current to more depolarized potentials, perpetuating the depolarizing effect of receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a finding from whole-cell recordings shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "7bc2b143-3a90-4126-bc0a-00082586f8d5",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C7",
+      "claim": "DREADDs may disrupt signaling from endogenous G protein-coupled receptors when expressed at high levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DREADDs may disrupt signaling from endogenous G protein-coupled receptors when expressed at high levels (Saloman et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Saloman et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "f3a5226b-6755-4782-b603-d463f5e05239",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C8",
+      "claim": "CNO has been found to be metabolized peripherally to clozapine, which binds to many receptors in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "CNO has been found to be metabolized peripherally to clozapine, which binds to many receptors in the brain, potentially resulting in off-target effects (Gomez et al., 2017; Manvich et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Gomez et al., 2017 and Manvich et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "d7f35556-b5a2-41c7-a3e5-254ff951022d",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C9",
+      "claim": "PSAM4-GlyR is a chimeric protein of a modified \u03b17 nicotinic acetylcholine receptor ligand binding domain fused to the chloride-permeable glycine receptor ion pore domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitory PSAM4-GlyR is a chimeric protein of a modified \u03b17 nicotinic acetylcholine receptor ligand binding domain fused to the chloride-permeable glycine receptor ion pore domain (GlyR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the molecular structure of PSAM4-GlyR based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "ec5771e8-e53e-41a5-aa32-fd3853826c3a",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C10",
+      "claim": "Application of ultrapotent agonist uPSEM792 activates PSAM4-GlyR.",
+      "claim_type": "EXPLICIT",
+      "source": "After intracranial injection and expression of a virus encoding PSAM4-GlyR, application of ultrapotent agonist (e.g., uPSEM792) activates PSAM4-GlyR",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of the PSAM4-GlyR system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "06641e3c-77ca-43c4-abb4-85f16b48e9ba",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C11",
+      "claim": "PSAM4-GlyR activation was expected to selectively inhibit PSAM4-GlyR-expressing neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "application of ultrapotent agonist (e.g., uPSEM792) activates PSAM4-GlyR, which in principle selectively inhibits PSAM4-GlyR-expressing neurons (Magnus et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the expected function based on Magnus et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "75053b74-f4c3-48b2-8352-b58b98fe577d",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C12",
+      "claim": "Intraperitoneal injection of uPSEM792 enhanced the expression of c-fos in PSAM4-GlyR-expressing D1-MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Intraperitoneal (i.p.) injection of uPSEM792 enhanced the expression of the immediate early gene c-fos in PSAM4-GlyR-expressing D1-MSNs, indicative of in vivo activation rather than inhibition of these neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from the in vivo experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "92b09520-d2a8-4953-b0a7-c00b45358c89",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C13",
+      "claim": "Activation of PSAM4-GlyR with uPSEM792 decreased membrane resistance of D1-MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using whole-cell recordings in acute brain slices, we found that activation of PSAM4-GlyR with uPSEM792 decreased membrane resistance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from whole-cell recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "5585da4e-1e7c-4a33-bdf4-c34bc149a674",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C14",
+      "claim": "Activation of PSAM4-GlyR induced an inward current in voltage-clamp recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Using whole-cell recordings in acute brain slices, we found that activation of PSAM4-GlyR with uPSEM792 decreased membrane resistance, induced an inward current in voltage-clamp",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from voltage-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "567c1c0e-b937-4b48-8b49-a33a3ab89b71",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C15",
+      "claim": "Activation of PSAM4-GlyR depolarized the membrane potential in current-clamp recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Using whole-cell recordings in acute brain slices, we found that activation of PSAM4-GlyR with uPSEM792 decreased membrane resistance, induced an inward current in voltage-clamp, and depolarized the membrane potential in current-clamp",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from current-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "ae1361cc-3716-4448-a908-9855249a6c84",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C16",
+      "claim": "Activation of PSAM4-GlyR sometimes resulted in depolarization block.",
+      "claim_type": "EXPLICIT",
+      "source": "depolarized the membrane potential in current-clamp, sometimes resulting in depolarization block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an observation from current-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "8a45f280-b2b1-4111-8961-ad0945f6dd8a",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C17",
+      "claim": "The majority of D1-MSNs maintained action potential firing to somatic current injection after PSAM4-GlyR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of neurons maintained action potential firing to somatic current injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from current-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "758c39af-afd7-4cb1-a673-dc9669c2dd7d",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C18",
+      "claim": "Cell-attached recordings at subthreshold depolarized potentials showed that activation of PSAM4-GlyR induced firing of action potentials in D1-MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-attached recordings at subthreshold depolarized potentials also showed that activation of PSAM4-GlyR induced firing of action potentials in D1-MSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from cell-attached recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "31cc2096-2fb0-45a8-80c8-9586ab9e0588",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C19",
+      "claim": "Chloride influx via PSAM4-GlyR activation shifted its reversal potential to more positive values.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we found that chloride influx via PSAM4-GlyR activation shifted its reversal potential to more positive values further exacerbating the depolarizing effect",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a finding from voltage-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "e99ef50c-0cde-481f-8b56-a8b8ca60c5b7",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C20",
+      "claim": "PSAM4-GlyR expression was restricted to tdTomato+ neurons in prodynorphin-Cre mice crossed with Ai9 reporter mice.",
+      "claim_type": "EXPLICIT",
+      "source": "PSAM4-GlyR expression was restricted to tdTomato+ neurons which confirmed selective Cre-dependent expression of PSAM4-GlyR in D1-MSNs (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal imaging data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "0a40aad3-120d-41c0-88fe-4397ff8e56f8",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C21",
+      "claim": "The immediate early gene c-fos is commonly used as a surrogate marker for neuronal activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The immediate early gene c-fos is commonly used as a surrogate marker for neuronal activation (Chung, 2015; Cruz et al., 2015; Sheng and Greenberg, 1990; Hunt et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "3fce3b07-1631-4ebc-b5cb-ac4bf8772bd5",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C22",
+      "claim": "Opioid exposure has been shown to increase the expression of c-fos and other immediate early genes in striatal neurons including D1-MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid a potential floor effect, we treated mice with fentanyl since opioid exposure has been shown to increase the expression of c-fos and other immediate early genes in striatal neurons including D1-MSNs (Enoksson et al., 2012; Lobo et al., 2013; Chang et al., 1988; Liu et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "77f487c8-054e-4843-acb7-25cd4a1d913d",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C23",
+      "claim": "Activation of PSAM4-GlyR with i.p. uPSEM792 increased c-fos expression in D1-MSNs expressing PSAM4-GlyR.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to expectation, activation of PSAM4-GlyR with i.p. uPSEM792 increased c-fos expression in D1-MSNs expressing PSAM4-GlyR (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "8de37c91-e06d-4dea-addc-d74968e0003a",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C24",
+      "claim": "Two-way ANOVA showed a significant effect of PSAM4-GlyR activation on c-fos expression (F1, 34 = 30.55, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Two-way ANOVA showed a significant effect of PSAM4-GlyR activation on c-fos expression (F1, 34 = 30.55, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the c-fos expression experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "86e6d839-46d6-4fa7-a485-b0eaefcfabcd",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C25",
+      "claim": "There was no difference in c-fos expression in non-transduced cells after PSAM4-GlyR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference in c-fos expression in non-transduced cells (two-way ANOVA; PSAM4-GlyR activation effect: F1, 34 = 0.82, p=0.37; Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of immunohistochemistry data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "805c941d-502b-4f01-8859-082aff53bda8",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C26",
+      "claim": "The internal solution in whole-cell recordings contained 12.8 mM Cl\u2212 to mimic the natural reversal potential of chloride in MSNs (ECl ~ \u221262 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "The internal solution in these recordings was potassium-based and contained 12.8 mM Cl\u2212 to mimic the natural reversal potential of chloride in MSNs (ECl ~ \u221262 mV) (Misgeld et al., 1982; Bracci and Panzeri, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "732f387c-ed2f-426a-b226-5c44788d75eb",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C27",
+      "claim": "In control neurons, 10 or 50 nM uPSEM792 had no effect on basal whole-cell current.",
+      "claim_type": "EXPLICIT",
+      "source": "In control neurons, 10 or 50 nM uPSEM792 had no effect on basal whole-cell current (10 nM: \u22122.8 \u00b1 7.7 pA, n = 6, p=0.73, paired t-test; 50 nM: \u22129.5 \u00b1 9.4 pA, n = 14, p=0.24; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by voltage-clamp recording data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "90336ecf-0fec-485b-ab76-80926c382d65",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C28",
+      "claim": "In PSAM4-GlyR+ neurons, 10 nM uPSEM792 produced an inward current of \u221243.0 \u00b1 10.1 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "In PSAM4-GlyR+ neurons, 10 nM uPSEM792 produced an inward current (\u221243.0 \u00b1 10.1 pA, n = 21, p=0.0004, paired t-test; Figure 2A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by voltage-clamp recording data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "1a2d08d3-b903-4ac8-80f4-8e7d4706a209",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C29",
+      "claim": "50 nM uPSEM792 produced an inward current of \u2212275.5 \u00b1 57.1 pA in PSAM4-GlyR+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher concentrations of uPSEM792 produced substantially larger inward currents (50 nM: \u2212275.5 \u00b1 57.1 pA, n = 18, p=0.0002, paired t-test",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by voltage-clamp recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "fb8deb54-3ab1-4c02-9def-b237533ee578",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C30",
+      "claim": "100 nM uPSEM792 produced an inward current of \u2212410.1 \u00b1 137.8 pA in PSAM4-GlyR+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "100 nM: \u2212410.1 \u00b1 137.8 pA, n = 6, p=0.031; Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by voltage-clamp recording data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "4459eb30-27eb-4c5a-b6f5-cc09eed00e75",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C31",
+      "claim": "The basal membrane resistance of D1-MSNs was 78.6 \u00b1 5.5 M\u03a9.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal membrane resistance of D1-MSNs was 78.6 \u00b1 5.5 M\u03a9, consistent with a previous report using similar recording conditions (Planert et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from voltage-clamp recordings, consistent with a cited previous report.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "3d2c3a44-5f7b-4c3b-8ac9-96e162b91e32",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C32",
+      "claim": "50 nM uPSEM792 decreased membrane resistance by 29.6 \u00b1 5.3% in PSAM4-GlyR+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "and was reduced by activation of PSAM4-GlyR (10 nM: 6.5 \u00b1 3.3% decrease, n = 9, p=0.08, paired t-test; 50 nM: 29.6 \u00b1 5.3% decrease, n = 18, p<0.0001; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by voltage-clamp recording data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "5dc8b240-0555-4ae9-991c-85b31fa489b9",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C33",
+      "claim": "PSAM4-GlyR activation by uPSEM792 significantly depolarized the membrane potential of PSAM4-GlyR+ neurons compared to control neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "PSAM4-GlyR activation by uPSEM792 significantly depolarized the membrane potential of PSAM4-GlyR+ neurons compared to control neurons (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by current-clamp recording data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "3e66d580-e3a7-4167-9a64-3bcf533221f5",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C34",
+      "claim": "Two-way ANOVA showed a significant effect of PSAM4-GlyR activation on membrane potential (F1, 37 = 9.70, p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "Two-way ANOVA showed a significant effect of PSAM4-GlyR activation on membrane potential (F1, 37 = 9.70, p=0.004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from current-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "0ee74e28-7fc6-40b2-9fa1-822c44886dd7",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C35",
+      "claim": "The resting membrane potential of D1-MSNs was \u221283.3 \u00b1 0.7 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to the resting membrane potential (\u221283.3 \u00b1 0.7 mV), the depolarization induced by 10 and 50 nM uPSEM792 was 6.4 \u00b1 2.0 mV (n = 14, p=0.007, paired t-test) and 20.9 \u00b1 3.4 mV (n = 16, p<0.0001), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from current-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "8377fbf8-fac3-4c39-a7db-ebd7168645a6",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C36",
+      "claim": "10 nM uPSEM792 induced a depolarization of 6.4 \u00b1 2.0 mV in PSAM4-GlyR+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to the resting membrane potential (\u221283.3 \u00b1 0.7 mV), the depolarization induced by 10 and 50 nM uPSEM792 was 6.4 \u00b1 2.0 mV (n = 14, p=0.007, paired t-test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from current-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "b9acbd28-4e54-4247-997d-042bd5f4cdb8",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C37",
+      "claim": "50 nM uPSEM792 induced a depolarization of 20.9 \u00b1 3.4 mV in PSAM4-GlyR+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "the depolarization induced by 10 and 50 nM uPSEM792 was 6.4 \u00b1 2.0 mV (n = 14, p=0.007, paired t-test) and 20.9 \u00b1 3.4 mV (n = 16, p<0.0001), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from current-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "8b289912-5209-49b4-be7d-8f4692b790eb",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C38",
+      "claim": "In 10 nM uPSEM792, 14/14 PSAM4-GlyR+ neurons continued to fire with current injection.",
+      "claim_type": "EXPLICIT",
+      "source": "In PSAM4-GlyR+ neurons, all neurons treated with 10 nM uPSEM792 continued to fire action potentials with somatic current injections (n = 14, Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by current-clamp recording data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "efaadc59-586c-4f86-afe1-c285af37267f",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C39",
+      "claim": "In 50 nM uPSEM792, 10 of 16 PSAM4-GlyR+ neurons continued to fire action potentials with current injection.",
+      "claim_type": "EXPLICIT",
+      "source": "In 50 nM uPSEM792, 10 of 16 neurons continued to fire action potentials with current injection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by current-clamp recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "728c3269-cd02-42a7-adcb-0a431052bf25",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C40",
+      "claim": "In 50 nM uPSEM792, 6 of 16 PSAM4-GlyR+ neurons were depolarized sufficiently to enter into depolarization block.",
+      "claim_type": "EXPLICIT",
+      "source": "In 50 nM uPSEM792, 10 of 16 neurons continued to fire action potentials with current injection and 6 of 16 neurons were depolarized sufficiently to enter into depolarization block upon uPSEM792 application (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by current-clamp recording data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "826e946c-6a9a-4ec6-b81a-668db4aff249",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C41",
+      "claim": "Neurons that entered into depolarization block had higher membrane resistance (92.4 \u00b1 5.2 m\u03a9) compared to neurons that continued to fire (65.8 \u00b1 6.7 m\u03a9).",
+      "claim_type": "EXPLICIT",
+      "source": "When compared with neurons that continued to fire, neurons that entered into depolarization block with uPSEM792 application had similar resting membrane potential to other PSAM4-GlyR neurons (\u221283.1 \u00b1 1.1 mV vs. \u221283.6 \u00b1 1.3 mV), but had higher membrane resistance (92.4 \u00b1 5.2 m\u03a9 vs. 65.8 \u00b1 6.7 m\u03a9)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of electrophysiological properties between two groups of neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "a3df7360-306c-4eab-9ff6-8d13a534cda8",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C42",
+      "claim": "Activation of PSAM4-GlyR in D1-MSNs did not suppress high-potassium-induced firing of action potentials in cell-attached recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of PSAM4-GlyR in D1-MSNs did not suppress high-potassium-induced firing of action potentials (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell-attached recording data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "273e1c2e-121b-47d7-813c-2ee5d2c0f492",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C43",
+      "claim": "In one of five neurons, activation of PSAM4-GlyR induced firing prior to high potassium application in cell-attached recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in one of five neurons, activation of PSAM4-GlyR induced firing prior to high potassium application (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from cell-attached recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "87fff092-2aa3-40f9-affa-b7107d5f808a",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C44",
+      "claim": "Cell-attached recordings show that activation of PSAM4-GlyR triggered firing of D1 MSNs when neurons were depolarized to subthreshold potentials by increasing extracellular potassium.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, cell-attached recordings show that activation of PSAM4-GlyR triggered firing of D1 MSNs (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell-attached recording data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "f5d6060a-6a34-4ef4-9369-3a52ee470805",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C45",
+      "claim": "In control cells, uPSEM792 did not result in firing in cell-attached recordings with elevated extracellular potassium.",
+      "claim_type": "EXPLICIT",
+      "source": "In control cells, uPSEM792 did not result in firing, unlike high potassium application (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell-attached recording data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "855607e1-6f25-460e-b91d-83b241adfa4d",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C46",
+      "claim": "A mixed-effects two-way ANOVA showed a significant interaction effect between PSAM4-GlyR expression and recording condition on the firing frequency (F2, 13 = 12.40, p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "A mixed-effects two-way ANOVA showed a significant interaction effect between PSAM4-GlyR expression (+ vs. \u2212) and recording condition (aCSF vs. uPSEM vs. high potassium) on the firing frequency (F2, 13 = 12.40, p=0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from cell-attached recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "e8c26afd-f51f-4fb5-96f1-c4e02d7f2eb9",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C47",
+      "claim": "The transient PSAM4-GlyR current reversed polarity at \u221261.4 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The transient current reversed polarity at \u221261.4 mV (n = 21, CI: \u221264.0 to \u221259.0 mV, linear regression, r2 = 0.58, F1, 103 = 142.5, p<0.0001), consistent with the calculated reversal potential of the PSAM4-GlyR channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from voltage-clamp recordings using voltage steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "3f59a19a-9200-4185-a77c-411c6856fae2",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C48",
+      "claim": "At steady state, the reversal potential of PSAM4-GlyR current showed a significant rightward shift to \u221244.2 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "At steady state, the reversal potential of PSAM4-GlyR current showed a significant rightward shift to \u221244.2 mV (n = 21, CI: \u221248.3 to \u221238.2 mV, linear regression, r2 = 0.39, F1, 103 = 66.9, p<0.0001; paired t-test, t = 5.73, p<0.0001, Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from voltage-clamp recordings shown in Figure 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "406803fa-3eb8-489e-94e6-43ea563a161d",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C49",
+      "claim": "The steady-state current showed a U-shaped current\u2013voltage relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the steady-state current showed a U-shaped current\u2013voltage relationship (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from voltage-clamp recordings shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "b40319bf-a68c-4583-a613-bc603adce534",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C50",
+      "claim": "The steady-state outward current component was significantly smaller than the transient outward current (49.8 \u00b1 38.4 pA vs. 307.1 \u00b1 62.0 pA at Vhold \u221228 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "the outward current component was significantly smaller than the transient outward current (49.8 \u00b1 38.4 pA vs. 307.1 \u00b1 62.0 pA at Vhold \u221228 mV respectively, unpaired t-test, p<0.0001; Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of current measurements from voltage-clamp recordings shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "a5160d73-f101-4483-90ac-a593a9c738d3",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C51",
+      "claim": "The magnitude of the tail current increased substantially with preceding depolarizing steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the magnitude of the tail current increased substantially with preceding depolarizing steps (Figure 5F and G; RM two-way ANOVA, significant PSAM4-GlyR activation effect: F1, 30 = 18.05, p=0.0002; significant PSAM4-GlyR activation \u00d7 voltage step interaction: F9, 270 = 9.55, p<0.0001",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by voltage-clamp recording data shown in Figure 5F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "65753757-3fb9-433a-afb0-ead88cd88846",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C52",
+      "claim": "The magnitude of the shift in reversal potential was positively correlated with the conductance of PSAM4-GlyR (Pearson's correlation, r = 0.57, p=0.0008, n = 21).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the magnitude of the shift in reversal potential was positively correlated with the conductance of PSAM4-GlyR, measured at Vhold \u221288 mV (Pearson's correlation, r = 0.57, p=0.0008, n = 21; Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a correlation analysis of voltage-clamp recording data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "9bdbbe93-97ed-46c1-a365-ae9fe09ecabb",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C53",
+      "claim": "Sustained activation of chloride conductances including GABAA receptors can lead to chloride influx that overwhelms homeostatic mechanisms to pump chloride out.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many reports show that sustained activation of chloride conductances including GABAA receptors (Huguenard and Alger, 1986; Staley et al., 1995; Thompson and G\u00e4hwiler, 1989), glycine receptors (Karlsson et al., 2011), and Halorhodopsin (Raimondo et al., 2012; Alfonsa et al., 2015) can lead to chloride influx that overwhelms homeostatic mechanisms to pump chloride out, thereby elevating the intracellular chloride concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "23260abe-ee87-4387-96cd-6cdd1c76548f",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C54",
+      "claim": "Shifts in intracellular chloride concentration have been shown to result in 'apparent cross-desensitization' of glycine- and GABAA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Shifts in intracellular chloride concentration have been shown to result in 'apparent cross-desensitization' of glycine- and GABAA receptors whereby sustained activation of one chloride-permeable channel (e.g., glycine channel) results in reduced currents carried by another chloride-permeable channel (e.g., GABAA channel) and vice versa (Karlsson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Karlsson et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "7701396d-b124-4008-8073-0db6692524fb",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C55",
+      "claim": "In neurons that showed a rightward shift in reversal potential of PSAM4-GlyR (>5 mV shift), the amplitude of the GABAA receptor-mediated synaptic currents significantly decreased upon activation of PSAM4-GlyR.",
+      "claim_type": "EXPLICIT",
+      "source": "In neurons that showed a rightward shift in reversal potential of PSAM4-GlyR (>5 mV shift, n = 5, Erevshift = 17.3 \u00b1 6.3 mV), the amplitude of the GABAA receptor-mediated synaptic currents significantly decreased upon activation of PSAM4-GlyR compared with aCSF (\u221233.4 \u00b1 6.0 pA vs. \u22127.8 \u00b1 1.3 pA at Vhold \u221288 mV, paired t-test: p=0.01; Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by voltage-clamp recording data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "2b3c46a0-26d8-4453-9d79-3ff4fa6ed192",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C56",
+      "claim": "The reversal potential of GABAA receptor-mediated synaptic currents showed a significant rightward shift from \u221260.9 mV in aCSF to \u221251.6 mV upon activation of PSAM4-GlyR in neurons with >5 mV shift in PSAM4-GlyR reversal potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the reversal potential of GABAA receptor-mediated synaptic currents showed a significant rightward shift from \u221260.9 mV in aCSF to \u221251.6 mV upon activation of PSAM4-GlyR (aCSF: CI: \u221264.2 to \u221258.1 mV, linear regression, r2 = 0.78, F1, 13 = 43.7, p<0.0001; uPSEM792: CI: \u221255.2 to \u221246.7 mV, r2 = 0.66, F1, 7 = 13.7, p=0.008; test of equal intercepts: F1, 21 = 18.3, p=0.0003; Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by voltage-clamp recording data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "74bd95d3-f60f-4314-a0c6-56d3ddfb34f6",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C57",
+      "claim": "In neurons that did not show a shift in reversal potential of PSAM4-GlyR, there was no change in the reversal potential or amplitude of GABAA receptor-mediated synaptic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "In neurons that did not show a shift in reversal potential of PSAM4-GlyR (n = 3, Erevshift = 2.1 \u00b1 1.0 mV), there was no change in the reversal potential or amplitude of GABAA receptor-mediated synaptic currents (aCSF: GABAAErev = \u221264.7 mV, CI: \u221268.5 to \u221262.1 mV, linear regression, r2 = 0.91, F1, 7 = 68.8, p<0.0001; uPSEM792: GABAAErev = \u221264.9 mV, CI: \u221266.7 to \u221263.4 mV, r2 = 0.96, F1, 4 = 87.5, p=0.0007; Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by voltage-clamp recording data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "d981bdb4-5f8d-4d92-8286-de306eb642b4",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C58",
+      "claim": "Activation of PSAM4-GlyR reduced GABAergic inhibition of D1-MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that activation of PSAM4-GlyR reduced GABAergic inhibition of D1-MSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the GABAA receptor synaptic current data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "367ed66f-0823-4026-9831-e7172d60915c",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C59",
+      "claim": "Engineered receptors to promote excitation have been largely successful.",
+      "claim_type": "EXPLICIT",
+      "source": "Engineered receptors to promote excitation (e.g., Channelrhodopsin-2, Gq-DREADDs) have been largely successful, albeit with careful consideration of ligand-related off-target effects (Gomez et al., 2017; Manvich et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "f7074ced-c0c0-4f99-afb2-486e8ce9da80",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C60",
+      "claim": "Silencing of neuronal firing has been uniquely challenging, especially when relying on chloride conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, silencing of neuronal firing has been uniquely challenging, especially when relying on chloride conductances (Wiegert et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "1421fcb7-9aa7-46c7-b4e0-9cf6ab42f95e",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C61",
+      "claim": "The utility of a chloride conductance like PSAM4-GlyR to silence firing relies on hyperpolarization of the membrane at potentials more positive than the chloride reversal potential and/or the efficacy of the channels to shunt membrane depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "The utility of a chloride conductance like PSAM4-GlyR to silence firing relies on hyperpolarization of the membrane at potentials more positive than the chloride reversal potential and/or the efficacy of the channels to shunt membrane depolarization (Doyon et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about chloride conductances supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "3ffe4b5f-ed72-4197-80d4-622f733215b6",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C62",
+      "claim": "PSAM4-GlyR in D1-MSNs is predominantly depolarizing.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study shows that PSAM4-GlyR in D1-MSNs is predominantly depolarizing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "115d561c-aa4d-4d25-b7ee-f7158f696d6c",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C63",
+      "claim": "PSAM4-GlyR fails to inhibit neuronal firing in D1-MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study shows that PSAM4-GlyR in D1-MSNs is predominantly depolarizing, fails to inhibit neuronal firing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "149eb512-b750-42a5-be3d-b101f11e721f",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C64",
+      "claim": "PSAM4-GlyR triggers action potential firing when neurons are depolarized to subthreshold potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study shows that PSAM4-GlyR in D1-MSNs is predominantly depolarizing, fails to inhibit neuronal firing, triggers action potential firing when neurons are depolarized to subthreshold potentials",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "b803199b-5263-473e-9bda-de1482d32afc",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C65",
+      "claim": "PSAM4-GlyR has a limited capacity to hyperpolarize D1-MSNs even at more depolarized potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study shows that PSAM4-GlyR in D1-MSNs is predominantly depolarizing, fails to inhibit neuronal firing, triggers action potential firing when neurons are depolarized to subthreshold potentials, and has a limited capacity to hyperpolarize these neurons even at more depolarized potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "f41f6ca0-3253-4e40-8b5f-b4d965fec792",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C66",
+      "claim": "When activated near the resting membrane potential (\u221283 mV), PSAM4-GlyR passes inward current and depolarizes D1-MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "When activated near the resting membrane potential (\u221283 mV), PSAM4-GlyR passes inward current and depolarizes D1-MSNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from voltage-clamp and current-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "e75f55ba-9b93-4d61-88b2-99b3d2547399",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C67",
+      "claim": "When activated at potentials more depolarized than the chloride reversal potential, PSAM4-GlyR passes transient or small outward currents.",
+      "claim_type": "EXPLICIT",
+      "source": "When activated at potentials more depolarized than the chloride reversal potential, PSAM4-GlyR passes transient or small outward currents, likely due to influx and accumulation of intracellular chloride that overwhelms endogenous mechanisms to restore the chloride gradient (Huguenard and Alger, 1986; Staley et al., 1995; Thompson and G\u00e4hwiler, 1989; Karlsson et al., 2011; Raimondo et al., 2012; Alfonsa et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from voltage-clamp recordings, with mechanistic interpretation supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "bfeecce3-2648-466c-8e9f-5f9844cd5726",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C68",
+      "claim": "The release and clearance of endogenous neurotransmitters are usually tightly controlled and occur over the scale of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "The release and clearance of endogenous neurotransmitters are usually tightly controlled and occur over the scale of milliseconds, allowing the neurons to better maintain a stable intra- and extracellular chloride gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about neurotransmitter dynamics based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "adcba045-fff7-4683-bc31-5a853e6937db",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C69",
+      "claim": "Exogenous agonists result in sustained activation over seconds or minutes and cause massive chloride influx and a shift in chloride reversal potential.",
+      "claim_type": "EXPLICIT",
+      "source": "This is unlike exogenous agonists that result in sustained activation over seconds or minutes and cause massive chloride influx and a shift in chloride reversal potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between endogenous and exogenous activation, based on the study's findings and general knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "75147e32-7909-4da7-a82c-daca46b84e5e",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C70",
+      "claim": "While there was a significant decrease in membrane resistance associated with opening PSAM4-GlyR in D1-MSNs (~30% reduction), it was not sufficient to prevent suprathreshold depolarization by current injection.",
+      "claim_type": "EXPLICIT",
+      "source": "While there was a significant decrease in membrane resistance associated with opening PSAM4-GlyR in D1-MSNs (~30% reduction), it was not sufficient to prevent suprathreshold depolarization by current injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from current-clamp recordings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "547ec697-5aff-4667-ac89-fdcbccad2c6d",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C71",
+      "claim": "The decrease in membrane resistance observed was lower than previously reported in cortical layer 2/3 neurons where PSAM4-GlyR activation suppressed firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite using high viral titer in our experiments, the decrease in membrane resistance we observed was lower than previously reported in cortical layer 2/3 neurons where PSAM4-GlyR activation suppressed firing (Magnus et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with a previous study cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "5237b6ff-7a72-4595-8ff3-3df2fda3af58",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C72",
+      "claim": "The data show a strong correlation between PSAM4-GlyR conductance and the rightward shift in PSAM4-GlyR reversal potential.",
+      "claim_type": "EXPLICIT",
+      "source": "the data in this study show a strong correlation between PSAM4-GlyR conductance and the rightward shift in PSAM4-GlyR reversal potential, suggesting that increasing expression levels will only promote further depolarization with PSAM4-GlyR activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to the correlation analysis shown in Figure 5H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "66384c3b-34b4-4e74-a188-acef24f31147",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C73",
+      "claim": "The lack of shunting efficacy in D1-MSNs is likely due to their low membrane resistance (~78 M\u03a9 in brain slices) relative to other neurons in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of shunting efficacy in D1-MSNs is likely due to their low membrane resistance (~78 M\u03a9 in brain slices as measured above) relative to other neurons in the brain (e.g., pyramidal neurons in cortex and hippocampus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings based on comparison with other neuron types.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "6f910a7d-8839-4672-abab-40828f965e13",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C74",
+      "claim": "Membrane resistance is inversely proportional to temperature, age, and number/activity of synaptic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that membrane resistance is inversely proportional to temperature, age, and number/activity of synaptic inputs (Kroon et al., 2019; Waters and Helmchen, 2006; Fernandez et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "dd900a06-b4a4-484f-9198-10832827331a",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C75",
+      "claim": "The shunting efficacy of PSAM4-GlyRs during behavioral experiments in vivo is likely to be lower than in brain slices.",
+      "claim_type": "EXPLICIT",
+      "source": "and therefore, the shunting efficacy of PSAM4-GlyRs during behavioral experiments in vivo is likely to be lower than in brain slices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between membrane resistance and experimental conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "ff75f75f-75f8-45fb-beee-9e600eae7d8e",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C76",
+      "claim": "In the awake behaving state in vivo, MSNs show brief and irregular spontaneous membrane potential fluctuations between depolarizations (\u221250 to \u221260 mV) and hyperpolarizations (\u221280 to \u221290 mV), with the overall membrane potential following a Gaussian distribution (mean ~ \u221269 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "In the awake behaving state in vivo, MSNs show brief and irregular spontaneous membrane potential fluctuations between depolarizations (\u221250 to \u221260 mV) that facilitate action potential firing and hyperpolarizations (\u221280 to \u221290 mV), with the overall membrane potential following a Gaussian distribution (mean ~ \u221269 mV) (Mahon et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Mahon et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "bcf56e31-19c4-40bd-bd1c-c352a9017d60",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C77",
+      "claim": "PSAM4-GlyR activation will effectively increase the probability and duration of spontaneous depolarizations in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that in vivo, PSAM4-GlyR activation will effectively increase the probability and duration of spontaneous depolarizations, and increase the probability of D1-MSN firing especially during these depolarizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings and knowledge of MSN physiology in vivo.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "048638d8-37e8-4f52-b859-1b44b5a84b64",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C78",
+      "claim": "PSAM4-GlyR activation results in 'apparent cross-desensitization' of GABAA synaptic currents, producing a rightward shift in the GABAA reversal potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The results also show that PSAM4-GlyR activation results in 'apparent cross-desensitization' of GABAA synaptic currents, producing a rightward shift in the GABAA reversal potential and a profound reduction of inhibitory GABAA synaptic currents onto D1-MSNs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the GABAA receptor synaptic current experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "debffde0-c400-449c-b82c-685d3d58ea02",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C79",
+      "claim": "Local GABAergic inhibition in the striatum plays a critical role in regulating neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the critical role of local GABAergic inhibition in the striatum in regulating neuronal activity (Burke et al., 2017; Ko\u00f3s and Tepper, 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "66183a9a-c29e-46a9-b455-464a31e2049e",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C80",
+      "claim": "PSAM4-GlyR triggered reduction of GABAergic inhibition will further increase the likelihood of D1-MSNs activation rather than inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "PSAM4-GlyR triggered reduction of GABAergic inhibition will further increase the likelihood of D1-MSNs activation rather than inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings about GABAergic inhibition.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "547b7d04-70e8-4ffc-b480-e0596e6a3f9f",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C81",
+      "claim": "Increased c-fos expression in D1-MSNs following in vivo activation of PSAM4-GlyR is likely caused by PSAM4-GlyR-induced depolarization and firing in addition to loss of GABAergic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, increased c-fos expression in D1-MSNs following in vivo activation of PSAM4-GlyR is likely caused by PSAM4-GlyR-induced depolarization and firing in addition to loss of GABAergic inhibition, and reflects increased neuronal activity of D1-MSNs in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the c-fos findings based on the electrophysiological data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "2175a101-ef28-451e-957a-9008a05f492e",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C82",
+      "claim": "PSAM4-GlyR-induced depolarization may allow robust calcium influx via voltage-gated calcium channels and NMDA receptors relieved from voltage-dependent magnesium pore-block.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, PSAM4-GlyR-induced depolarization may allow robust calcium influx via voltage-gated calcium channels and NMDA receptors relieved from voltage-dependent magnesium pore-block (Mayer and Westbrook, 1987; Mayer et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential consequences of depolarization, supported by citations about NMDA receptor properties.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "389fe36e-b310-4b0c-95c3-1198ce20e74a",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C83",
+      "claim": "Calcium influx activates calcium/calmodulin-dependent protein kinases (CaMKs), calcium response elements in genes, and various other signaling cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium influx activates calcium/calmodulin-dependent protein kinases (CaMKs), calcium response elements in genes, and various other signaling cascades (Pasek et al., 2015; Clapham, 2007), which are known to influence synaptic plasticity and behavior (Lisman et al., 2002; Wayman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "6a858726-6705-4041-8499-95a50881d20b",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C84",
+      "claim": "When used to silence neurons, PSAM4-GlyR activation could confound the interpretation of experimental results due to depolarization-induced calcium influx, independent of PSAM4-GlyR's effect on action potential firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that when used to silence neurons, PSAM4-GlyR activation could confound the interpretation of experimental results due to depolarization-induced calcium influx, independent of PSAM4-GlyR's effect on action potential firing like in the case of depolarization-block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential confounds in experimental interpretation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "a69b460f-ca0a-480d-8389-3362082c93f2",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C85",
+      "claim": "Activation of PSAM4-GlyR expressed in D1-MSNs in the ventral striatum enhanced neuronal activity through direct depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, activation of PSAM4-GlyR expressed in D1-MSNs in the ventral striatum enhanced neuronal activity through direct depolarization",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "c54dde6a-c2ee-45d7-800f-bb5d6ccef1cb",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C86",
+      "claim": "Activation of PSAM4-GlyR did not suppress action potential firing via membrane shunting in D1-MSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "activation of PSAM4-GlyR expressed in D1-MSNs in the ventral striatum enhanced neuronal activity through direct depolarization and did not suppress action potential firing via membrane shunting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "2a75de19-4fd8-4de0-9bbc-c20ed3ee793a",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C87",
+      "claim": "The PSAM4-GlyR approach to silence neurons may not be suitable for all cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of our study show that the PSAM4-GlyR approach to silence neurons may not be suitable for all cell types",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "ab1b410f-a3f8-4725-b8dd-1ada6e3dee1a",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C88",
+      "claim": "There is a need to validate the inhibition of neuronal firing by PSAM4-GlyR in the cell type of interest prior to behavioral studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of our study show that the PSAM4-GlyR approach to silence neurons may not be suitable for all cell types and highlight the need to validate the inhibition of neuronal firing by PSAM4-GlyR in the cell type of interest prior to behavioral studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "e41c9d9d-a921-4286-ba00-750af39a9ae4",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C89",
+      "claim": "Achieving neuronal silencing with chloride conductances continues to be challenging and may result in unexpected neuronal activation.",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, these data demonstrate that achieving neuronal silencing with chloride conductances continues to be challenging and may result in unexpected neuronal activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broader conclusion about the field based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "2b6ac527-940d-4aa2-8b7b-e666d7ccd33b",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C90",
+      "claim": "Prodynorphin-Cre mice were crossed with a Cre-reporter (Ai9) mouse line, resulting in labeling of neurons containing Cre-recombinase with the fluorescent reporter tdTomato.",
+      "claim_type": "EXPLICIT",
+      "source": "To first validate the selective expression of PSAM4-GlyR in ventral striatum D1-MSNs, prodynorphin-Cre mice were crossed with a Cre-reporter (Ai9) mouse line, resulting in labeling of neurons containing Cre-recombinase (i.e., D1-MSNs) with the fluorescent reporter tdTomato (Al-Hasani et al., 2015; Gerfen et al., 1990; Krashes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "be74d8b7-429a-4d8f-b173-036d54ab019f",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C91",
+      "claim": "AAV-SYN-flex-PSAM4-GlyR-IRES-EGFP was a gift from Scott Sternson (Addgene viral prep # 119741-AAV5).",
+      "claim_type": "EXPLICIT",
+      "source": "AAV-SYN-flex-PSAM4-GlyR-IRES-EGFP was a gift from Scott Sternson (Addgene viral prep # 119741-AAV5; http://n2t.net/addgene:119741; RRID:Addgene_119741; >1 \u00d7 1013 vg/ml).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the viral construct used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "539ea4a8-4f1b-452e-8305-fb0c1f73ec0d",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C92",
+      "claim": "Assuming permeability to Cl\u2212 only, the calculated reversal potential of PSAM4-GlyR was \u221262.3 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming permeability to Cl\u2212 only, the calculated reversal potential of PSAM4-GlyR was \u221262.3 mV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value based on the Nernst equation and recording conditions.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "b6d79afc-7893-4a75-ab4b-a6d9d13e560a",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "claim_id": "C93",
+      "claim": "Assuming that PSAM4-GlyR has similar Cl\u2212/HCO3\u2212 permeability to GlyR (PHCO3\u2212:PCl\u2212=0.14), the calculated reversal potential of PSAM4-GlyR in the recording conditions was \u221260.7 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that PSAM4-GlyR has similar Cl\u2212/HCO3\u2212 permeability to GlyR (PHCO3\u2212:PCl\u2212=0.14) (Jun et al., 2016), the calculated reversal potential of PSAM4-GlyR in our recording conditions was \u221260.7 mV ([Cl\u2212]out133.9 mM, [Cl\u2212]in12.8 mM, [HCO3\u2212]out23.8 mM, and assuming [HCO3\u2212]in8 mM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value based on the Goldman-Hodgkin-Katz equation, recording conditions, and a cited permeability ratio.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f3a19a18-2834-4b0c-a849-39928668eaba",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PSAM4-GlyR was selectively expressed in D1-MSNs in the ventral striatum using Cre-dependent viral transduction in prodynorphin-Cre mice crossed with Ai9 reporter mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C90, and C91 establish the methodological approach and validation of selective PSAM4-GlyR expression. The confocal imaging data in Figure 1A demonstrates colocalization of eGFP (PSAM4-GlyR) with tdTomato (D1-MSN marker), confirming Cre-dependent expression. The methodology is well-documented with appropriate citations and viral construct details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "20006869-cf31-4de8-9b9b-d30977be6b3f",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vivo activation of PSAM4-GlyR with uPSEM792 increased c-fos expression in D1-MSNs expressing PSAM4-GlyR, indicating neuronal activation rather than inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C12, C23, and C24 present converging evidence from immunohistochemistry showing increased c-fos in PSAM4-GlyR+ neurons (two-way ANOVA F1,34=30.55, p<0.0001) with no effect in non-transduced cells (C25). The use of c-fos as a marker is well-justified (C21, C22). The experimental design includes appropriate controls and statistical analysis with n=8-12 animals per group.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PSAM4-GlyR activation induced inward currents and depolarized D1-MSNs in whole-cell voltage-clamp and current-clamp recordings in a concentration-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C15, C28-C30, and C33-C37 provide detailed electrophysiological measurements showing dose-dependent inward currents (10 nM: -43.0\u00b110.1 pA; 50 nM: -275.5\u00b157.1 pA) and membrane depolarization (10 nM: 6.4\u00b12.0 mV; 50 nM: 20.9\u00b13.4 mV). Control experiments (C27) demonstrate specificity. Statistical analyses are appropriate with paired t-tests and two-way ANOVA (F1,37=9.70, p=0.004).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "2ca4bb6a-3319-47ab-9ea7-928e060552d6",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PSAM4-GlyR activation decreased membrane resistance of D1-MSNs by approximately 30% at 50 nM uPSEM792.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C31, and C32 document baseline membrane resistance (78.6\u00b15.5 M\u03a9) consistent with prior literature (C31) and a significant 29.6\u00b15.3% decrease with 50 nM uPSEM792 (p<0.0001, n=18). The methodology for measuring membrane resistance is clearly described with voltage steps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "d736060a-85a1-404b-9822-0302157a9d37",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The majority of D1-MSNs maintained action potential firing during PSAM4-GlyR activation, with only a subset entering depolarization block at higher agonist concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C38-C40 provide quantitative data: all neurons (14/14) continued firing at 10 nM, while 10/16 continued firing and 6/16 entered depolarization block at 50 nM. Claim C41 identifies that neurons entering depolarization block had higher membrane resistance (92.4\u00b15.2 vs 65.8\u00b16.7 m\u03a9). Claims C70 and C86 correctly conclude that the ~30% decrease in membrane resistance was insufficient to prevent firing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "6baa0eb3-b0f2-4942-b621-63515b29be2d",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cell-attached recordings demonstrated that PSAM4-GlyR activation induced action potential firing in D1-MSNs when neurons were depolarized to subthreshold potentials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C44, and C64 are supported by cell-attached recordings showing PSAM4-GlyR-induced firing at subthreshold depolarization (elevated K+), with appropriate controls (C45). Statistical analysis (C46: mixed-effects two-way ANOVA, F2,13=12.40, p=0.001) confirms significant interaction. Claims C42-C43 show no suppression of high K+-induced firing. This approach avoids artifacts from intracellular chloride dialysis in whole-cell recordings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "be66398a-bc35-44c9-b9cb-501fe224f0cb",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sustained PSAM4-GlyR activation caused a rightward shift in the reversal potential from -61.4 mV (transient) to -44.2 mV (steady-state), with the magnitude of shift correlating with PSAM4-GlyR conductance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 document the reversal potential shift with appropriate statistical analysis (linear regression, paired t-test t=5.73, p<0.0001, n=21). Claim C52 shows positive correlation between conductance and shift magnitude (r=0.57, p=0.0008). Claims C49-C51 describe the U-shaped I-V relationship and tail current augmentation, supporting chloride accumulation. Calculated reversal potentials (C92-C93) provide theoretical context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "bf435e12-3eca-4316-8d6f-06e8b74da9da",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PSAM4-GlyR activation reduced GABAergic inhibition in D1-MSNs through apparent cross-desensitization, with GABAA receptor reversal potential shifting from -60.9 mV to -51.6 mV in neurons showing PSAM4-GlyR reversal potential shifts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 provide detailed measurements showing decreased GABAA current amplitude (-33.4\u00b16.0 vs -7.8\u00b11.3 pA, p=0.01) and rightward shift in GABAA reversal potential (test of equal intercepts F1,21=18.3, p=0.0003) in neurons with >5 mV PSAM4-GlyR shift (n=5). Claim C57 shows no change in neurons without PSAM4-GlyR shift (n=3), supporting specificity. The mechanism is consistent with chloride accumulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "76b27f50-bd93-4298-aa24-c97e9da77413",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The mechanism underlying PSAM4-GlyR-mediated depolarization involves chloride influx overwhelming homeostatic mechanisms, similar to sustained activation of other chloride conductances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C67 are well-supported by multiple citations documenting chloride accumulation with sustained activation of GABAA receptors, glycine receptors, and halorhodopsin. Claim C69 correctly distinguishes between brief endogenous neurotransmitter activation and sustained exogenous agonist application. The mechanistic interpretation is consistent with the observed reversal potential shifts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "a5bacb56-612a-4e5d-b6cd-3eb3c4024edd",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PSAM4-GlyR in D1-MSNs is predominantly depolarizing at physiological membrane potentials with limited capacity for hyperpolarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C65, C66, and C85 synthesize the electrophysiological findings. At resting potential (-83 mV), PSAM4-GlyR passes inward current and depolarizes neurons (supported by C14-C15, C28-C30, C33-C37). The limited hyperpolarizing capacity is supported by the U-shaped I-V relationship (C49-C50) and transient nature of outward currents at depolarized potentials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "20d4b6a9-9687-409f-ba0a-dbec89a4ff1c",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The shunting efficacy of PSAM4-GlyR in D1-MSNs is limited due to their low membrane resistance (~78 M\u03a9) relative to other neurons, and increasing expression would likely exacerbate depolarization rather than improve inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 appropriately compares results to Magnus et al. 2019 where PSAM4-GlyR suppressed firing in cortical neurons. Claim C72 correctly interprets the correlation data (C52) showing that higher conductance correlates with greater reversal potential shift. Claim C73 provides a mechanistic explanation based on the measured membrane resistance (C31) and comparison to other neuron types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "08c2c33e-4d7f-4bdc-99ed-acd93d772588",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In vivo, PSAM4-GlyR activation is predicted to increase the probability and duration of spontaneous depolarizations in D1-MSNs based on their membrane potential dynamics in awake behaving animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C77 make predictions about in vivo effects based on ex vivo data and cited literature (C76: Mahon et al. 2006). While the reasoning is logical, these are inferences rather than direct measurements. Claim C75 acknowledges that in vivo conditions (higher temperature, more synaptic inputs) would likely reduce shunting efficacy further, but this remains speculative without direct in vivo electrophysiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "18d9e9a8-ed9a-4b48-ab08-765b96e69c6c",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The increased c-fos expression observed in vivo is attributed to both PSAM4-GlyR-induced depolarization and loss of GABAergic inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 synthesize the in vivo c-fos data (C23-C24) with the mechanistic findings from electrophysiology (depolarization: C33-C37; loss of GABAergic inhibition: C55-C58). The interpretation is well-supported by the convergent evidence, though the relative contributions of each mechanism cannot be quantified from the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "e0a88ec2-8ce2-41a2-a176-1e2a1446d51e",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PSAM4-GlyR-induced depolarization may cause calcium influx through voltage-gated channels and NMDA receptors, potentially confounding experimental interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C84 present reasonable speculation about potential calcium signaling consequences of depolarization, supported by appropriate citations about NMDA receptor properties and calcium signaling. However, these are explicitly speculative (\"may allow,\" \"it is possible\") and no calcium measurements are presented. This represents a hypothesis for future investigation rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "3c16feaf-5d9d-48d6-87d9-d6a37f1058e3",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PSAM4-GlyR may not be suitable for neuronal silencing in all cell types, highlighting the need for validation in specific cell types prior to behavioral studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 present appropriate conclusions and recommendations based on the study's findings. The data clearly demonstrate that PSAM4-GlyR failed to inhibit D1-MSNs despite working in other cell types (C71). The recommendation for cell-type-specific validation (C88) is a reasonable and important practical implication of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "3b09641d-369c-4c27-b89b-ac1616af7365",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "PSAM4-GlyR is a chloride-permeable chemogenetic tool proposed for neuronal inhibition, with advantages over DREADDs in terms of specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C11 accurately describe PSAM4-GlyR based on established literature (Magnus et al. 2019). Claims C7-C8 correctly cite limitations of DREADDs (Saloman et al. 2016; Gomez et al. 2017; Manvich et al. 2018). These claims provide appropriate background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "2ac96653-c990-4d6f-b9f7-f751fecea407",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The internal recording solution contained 12.8 mM Cl\u207b to mimic the natural chloride reversal potential in MSNs (ECl ~ -62 mV).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 describes a critical methodological detail supported by appropriate citations (Misgeld et al. 1982; Bracci and Panzeri 2006). This is important for interpreting the electrophysiological results, as the internal chloride concentration determines the initial reversal potential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    },
+    {
+      "id": "9c0428a1-9a26-4411-97de-1d209ebf1338",
+      "content_id": "5e74e5c4-b952-4603-bac8-3b80b1ce9bc9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Neuronal silencing with chloride conductances is challenging due to dependence on hyperpolarization and/or shunting, unlike excitatory chemogenetic tools which have been more successful.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 provide appropriate context about the challenges of inhibitory vs excitatory chemogenetics, supported by relevant citations (Gomez et al. 2017; Manvich et al. 2018; Wiegert et al. 2017; Doyon et al. 2016). Claim C68 correctly describes endogenous neurotransmitter dynamics. These claims establish the conceptual framework for understanding why PSAM4-GlyR failed in D1-MSNs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:32:01.595698Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e99ef50c-0cde-481f-8b56-a8b8ca60c5b7",
+      "result_id": "f3a19a18-2834-4b0c-a849-39928668eaba"
+    },
+    {
+      "claim_id": "2b6ac527-940d-4aa2-8b7b-e666d7ccd33b",
+      "result_id": "f3a19a18-2834-4b0c-a849-39928668eaba"
+    },
+    {
+      "claim_id": "be74d8b7-429a-4d8f-b173-036d54ab019f",
+      "result_id": "f3a19a18-2834-4b0c-a849-39928668eaba"
+    },
+    {
+      "claim_id": "83f0fa33-5499-4e07-a4a8-43edf721575f",
+      "result_id": "20006869-cf31-4de8-9b9b-d30977be6b3f"
+    },
+    {
+      "claim_id": "75053b74-f4c3-48b2-8352-b58b98fe577d",
+      "result_id": "20006869-cf31-4de8-9b9b-d30977be6b3f"
+    },
+    {
+      "claim_id": "0a40aad3-120d-41c0-88fe-4397ff8e56f8",
+      "result_id": "20006869-cf31-4de8-9b9b-d30977be6b3f"
+    },
+    {
+      "claim_id": "3fce3b07-1631-4ebc-b5cb-ac4bf8772bd5",
+      "result_id": "20006869-cf31-4de8-9b9b-d30977be6b3f"
+    },
+    {
+      "claim_id": "77f487c8-054e-4843-acb7-25cd4a1d913d",
+      "result_id": "20006869-cf31-4de8-9b9b-d30977be6b3f"
+    },
+    {
+      "claim_id": "8de37c91-e06d-4dea-addc-d74968e0003a",
+      "result_id": "20006869-cf31-4de8-9b9b-d30977be6b3f"
+    },
+    {
+      "claim_id": "86e6d839-46d6-4fa7-a485-b0eaefcfabcd",
+      "result_id": "20006869-cf31-4de8-9b9b-d30977be6b3f"
+    },
+    {
+      "claim_id": "af7f8daf-9eb2-4d08-9ec8-8e89cb99b2dd",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "5585da4e-1e7c-4a33-bdf4-c34bc149a674",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "567c1c0e-b937-4b48-8b49-a33a3ab89b71",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "732f387c-ed2f-426a-b226-5c44788d75eb",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "90336ecf-0fec-485b-ab76-80926c382d65",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "1a2d08d3-b903-4ac8-80f4-8e7d4706a209",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "fb8deb54-3ab1-4c02-9def-b237533ee578",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "5dc8b240-0555-4ae9-991c-85b31fa489b9",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "3e66d580-e3a7-4167-9a64-3bcf533221f5",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "0ee74e28-7fc6-40b2-9fa1-822c44886dd7",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "8377fbf8-fac3-4c39-a7db-ebd7168645a6",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "b9acbd28-4e54-4247-997d-042bd5f4cdb8",
+      "result_id": "e236edff-1288-4a5f-ba6d-f6cb4f8c7806"
+    },
+    {
+      "claim_id": "92b09520-d2a8-4953-b0a7-c00b45358c89",
+      "result_id": "2ca4bb6a-3319-47ab-9ea7-928e060552d6"
+    },
+    {
+      "claim_id": "4459eb30-27eb-4c5a-b6f5-cc09eed00e75",
+      "result_id": "2ca4bb6a-3319-47ab-9ea7-928e060552d6"
+    },
+    {
+      "claim_id": "3d2c3a44-5f7b-4c3b-8ac9-96e162b91e32",
+      "result_id": "2ca4bb6a-3319-47ab-9ea7-928e060552d6"
+    },
+    {
+      "claim_id": "8a45f280-b2b1-4111-8961-ad0945f6dd8a",
+      "result_id": "d736060a-85a1-404b-9822-0302157a9d37"
+    },
+    {
+      "claim_id": "8b289912-5209-49b4-be7d-8f4692b790eb",
+      "result_id": "d736060a-85a1-404b-9822-0302157a9d37"
+    },
+    {
+      "claim_id": "efaadc59-586c-4f86-afe1-c285af37267f",
+      "result_id": "d736060a-85a1-404b-9822-0302157a9d37"
+    },
+    {
+      "claim_id": "728c3269-cd02-42a7-adcb-0a431052bf25",
+      "result_id": "d736060a-85a1-404b-9822-0302157a9d37"
+    },
+    {
+      "claim_id": "826e946c-6a9a-4ec6-b81a-668db4aff249",
+      "result_id": "d736060a-85a1-404b-9822-0302157a9d37"
+    },
+    {
+      "claim_id": "115d561c-aa4d-4d25-b7ee-f7158f696d6c",
+      "result_id": "d736060a-85a1-404b-9822-0302157a9d37"
+    },
+    {
+      "claim_id": "75147e32-7909-4da7-a82c-daca46b84e5e",
+      "result_id": "d736060a-85a1-404b-9822-0302157a9d37"
+    },
+    {
+      "claim_id": "c54dde6a-c2ee-45d7-800f-bb5d6ccef1cb",
+      "result_id": "d736060a-85a1-404b-9822-0302157a9d37"
+    },
+    {
+      "claim_id": "bc1c336b-f7c2-4d3a-b44c-3e423d985284",
+      "result_id": "6baa0eb3-b0f2-4942-b621-63515b29be2d"
+    },
+    {
+      "claim_id": "758c39af-afd7-4cb1-a673-dc9669c2dd7d",
+      "result_id": "6baa0eb3-b0f2-4942-b621-63515b29be2d"
+    },
+    {
+      "claim_id": "a3df7360-306c-4eab-9ff6-8d13a534cda8",
+      "result_id": "6baa0eb3-b0f2-4942-b621-63515b29be2d"
+    },
+    {
+      "claim_id": "273e1c2e-121b-47d7-813c-2ee5d2c0f492",
+      "result_id": "6baa0eb3-b0f2-4942-b621-63515b29be2d"
+    },
+    {
+      "claim_id": "87fff092-2aa3-40f9-affa-b7107d5f808a",
+      "result_id": "6baa0eb3-b0f2-4942-b621-63515b29be2d"
+    },
+    {
+      "claim_id": "f5d6060a-6a34-4ef4-9369-3a52ee470805",
+      "result_id": "6baa0eb3-b0f2-4942-b621-63515b29be2d"
+    },
+    {
+      "claim_id": "855607e1-6f25-460e-b91d-83b241adfa4d",
+      "result_id": "6baa0eb3-b0f2-4942-b621-63515b29be2d"
+    },
+    {
+      "claim_id": "149eb512-b750-42a5-be3d-b101f11e721f",
+      "result_id": "6baa0eb3-b0f2-4942-b621-63515b29be2d"
+    },
+    {
+      "claim_id": "100fb961-6e39-4183-8afb-5cc34ec206f1",
+      "result_id": "be66398a-bc35-44c9-b9cb-501fe224f0cb"
+    },
+    {
+      "claim_id": "31cc2096-2fb0-45a8-80c8-9586ab9e0588",
+      "result_id": "be66398a-bc35-44c9-b9cb-501fe224f0cb"
+    },
+    {
+      "claim_id": "e8c26afd-f51f-4fb5-96f1-c4e02d7f2eb9",
+      "result_id": "be66398a-bc35-44c9-b9cb-501fe224f0cb"
+    },
+    {
+      "claim_id": "3f59a19a-9200-4185-a77c-411c6856fae2",
+      "result_id": "be66398a-bc35-44c9-b9cb-501fe224f0cb"
+    },
+    {
+      "claim_id": "406803fa-3eb8-489e-94e6-43ea563a161d",
+      "result_id": "be66398a-bc35-44c9-b9cb-501fe224f0cb"
+    },
+    {
+      "claim_id": "b40319bf-a68c-4583-a613-bc603adce534",
+      "result_id": "be66398a-bc35-44c9-b9cb-501fe224f0cb"
+    },
+    {
+      "claim_id": "a5160d73-f101-4483-90ac-a593a9c738d3",
+      "result_id": "be66398a-bc35-44c9-b9cb-501fe224f0cb"
+    },
+    {
+      "claim_id": "65753757-3fb9-433a-afb0-ead88cd88846",
+      "result_id": "be66398a-bc35-44c9-b9cb-501fe224f0cb"
+    },
+    {
+      "claim_id": "539ea4a8-4f1b-452e-8305-fb0c1f73ec0d",
+      "result_id": "be66398a-bc35-44c9-b9cb-501fe224f0cb"
+    },
+    {
+      "claim_id": "b6d79afc-7893-4a75-ab4b-a6d9d13e560a",
+      "result_id": "be66398a-bc35-44c9-b9cb-501fe224f0cb"
+    },
+    {
+      "claim_id": "ffa3868b-acfd-4f2a-a871-3fc9c3eb20bb",
+      "result_id": "bf435e12-3eca-4316-8d6f-06e8b74da9da"
+    },
+    {
+      "claim_id": "7701396d-b124-4008-8073-0db6692524fb",
+      "result_id": "bf435e12-3eca-4316-8d6f-06e8b74da9da"
+    },
+    {
+      "claim_id": "2b3c46a0-26d8-4453-9d79-3ff4fa6ed192",
+      "result_id": "bf435e12-3eca-4316-8d6f-06e8b74da9da"
+    },
+    {
+      "claim_id": "74bd95d3-f60f-4314-a0c6-56d3ddfb34f6",
+      "result_id": "bf435e12-3eca-4316-8d6f-06e8b74da9da"
+    },
+    {
+      "claim_id": "d981bdb4-5f8d-4d92-8286-de306eb642b4",
+      "result_id": "bf435e12-3eca-4316-8d6f-06e8b74da9da"
+    },
+    {
+      "claim_id": "048638d8-37e8-4f52-b859-1b44b5a84b64",
+      "result_id": "bf435e12-3eca-4316-8d6f-06e8b74da9da"
+    },
+    {
+      "claim_id": "9bdbbe93-97ed-46c1-a365-ae9fe09ecabb",
+      "result_id": "76b27f50-bd93-4298-aa24-c97e9da77413"
+    },
+    {
+      "claim_id": "23260abe-ee87-4387-96cd-6cdd1c76548f",
+      "result_id": "76b27f50-bd93-4298-aa24-c97e9da77413"
+    },
+    {
+      "claim_id": "e75f55ba-9b93-4d61-88b2-99b3d2547399",
+      "result_id": "76b27f50-bd93-4298-aa24-c97e9da77413"
+    },
+    {
+      "claim_id": "adcba045-fff7-4683-bc31-5a853e6937db",
+      "result_id": "76b27f50-bd93-4298-aa24-c97e9da77413"
+    },
+    {
+      "claim_id": "3ffe4b5f-ed72-4197-80d4-622f733215b6",
+      "result_id": "a5bacb56-612a-4e5d-b6cd-3eb3c4024edd"
+    },
+    {
+      "claim_id": "b803199b-5263-473e-9bda-de1482d32afc",
+      "result_id": "a5bacb56-612a-4e5d-b6cd-3eb3c4024edd"
+    },
+    {
+      "claim_id": "f41f6ca0-3253-4e40-8b5f-b4d965fec792",
+      "result_id": "a5bacb56-612a-4e5d-b6cd-3eb3c4024edd"
+    },
+    {
+      "claim_id": "a69b460f-ca0a-480d-8389-3362082c93f2",
+      "result_id": "a5bacb56-612a-4e5d-b6cd-3eb3c4024edd"
+    },
+    {
+      "claim_id": "547ec697-5aff-4667-ac89-fdcbccad2c6d",
+      "result_id": "20d4b6a9-9687-409f-ba0a-dbec89a4ff1c"
+    },
+    {
+      "claim_id": "5237b6ff-7a72-4595-8ff3-3df2fda3af58",
+      "result_id": "20d4b6a9-9687-409f-ba0a-dbec89a4ff1c"
+    },
+    {
+      "claim_id": "66384c3b-34b4-4e74-a188-acef24f31147",
+      "result_id": "20d4b6a9-9687-409f-ba0a-dbec89a4ff1c"
+    },
+    {
+      "claim_id": "6f910a7d-8839-4672-abab-40828f965e13",
+      "result_id": "08c2c33e-4d7f-4bdc-99ed-acd93d772588"
+    },
+    {
+      "claim_id": "dd900a06-b4a4-484f-9198-10832827331a",
+      "result_id": "08c2c33e-4d7f-4bdc-99ed-acd93d772588"
+    },
+    {
+      "claim_id": "ff75f75f-75f8-45fb-beee-9e600eae7d8e",
+      "result_id": "08c2c33e-4d7f-4bdc-99ed-acd93d772588"
+    },
+    {
+      "claim_id": "bcf56e31-19c4-40bd-bd1c-c352a9017d60",
+      "result_id": "08c2c33e-4d7f-4bdc-99ed-acd93d772588"
+    },
+    {
+      "claim_id": "debffde0-c400-449c-b82c-685d3d58ea02",
+      "result_id": "18d9e9a8-ed9a-4b48-ab08-765b96e69c6c"
+    },
+    {
+      "claim_id": "66183a9a-c29e-46a9-b455-464a31e2049e",
+      "result_id": "18d9e9a8-ed9a-4b48-ab08-765b96e69c6c"
+    },
+    {
+      "claim_id": "547b7d04-70e8-4ffc-b480-e0596e6a3f9f",
+      "result_id": "18d9e9a8-ed9a-4b48-ab08-765b96e69c6c"
+    },
+    {
+      "claim_id": "2175a101-ef28-451e-957a-9008a05f492e",
+      "result_id": "e0a88ec2-8ce2-41a2-a176-1e2a1446d51e"
+    },
+    {
+      "claim_id": "389fe36e-b310-4b0c-95c3-1198ce20e74a",
+      "result_id": "e0a88ec2-8ce2-41a2-a176-1e2a1446d51e"
+    },
+    {
+      "claim_id": "6a858726-6705-4041-8499-95a50881d20b",
+      "result_id": "e0a88ec2-8ce2-41a2-a176-1e2a1446d51e"
+    },
+    {
+      "claim_id": "2a75de19-4fd8-4de0-9bbc-c20ed3ee793a",
+      "result_id": "3c16feaf-5d9d-48d6-87d9-d6a37f1058e3"
+    },
+    {
+      "claim_id": "ab1b410f-a3f8-4725-b8dd-1ada6e3dee1a",
+      "result_id": "3c16feaf-5d9d-48d6-87d9-d6a37f1058e3"
+    },
+    {
+      "claim_id": "e41c9d9d-a921-4286-ba00-750af39a9ae4",
+      "result_id": "3c16feaf-5d9d-48d6-87d9-d6a37f1058e3"
+    },
+    {
+      "claim_id": "b37f0aa2-4f8a-4f54-9662-10a04bd35b06",
+      "result_id": "3b09641d-369c-4c27-b89b-ac1616af7365"
+    },
+    {
+      "claim_id": "7bc2b143-3a90-4126-bc0a-00082586f8d5",
+      "result_id": "3b09641d-369c-4c27-b89b-ac1616af7365"
+    },
+    {
+      "claim_id": "f3a5226b-6755-4782-b603-d463f5e05239",
+      "result_id": "3b09641d-369c-4c27-b89b-ac1616af7365"
+    },
+    {
+      "claim_id": "d7f35556-b5a2-41c7-a3e5-254ff951022d",
+      "result_id": "3b09641d-369c-4c27-b89b-ac1616af7365"
+    },
+    {
+      "claim_id": "ec5771e8-e53e-41a5-aa32-fd3853826c3a",
+      "result_id": "3b09641d-369c-4c27-b89b-ac1616af7365"
+    },
+    {
+      "claim_id": "06641e3c-77ca-43c4-abb4-85f16b48e9ba",
+      "result_id": "3b09641d-369c-4c27-b89b-ac1616af7365"
+    },
+    {
+      "claim_id": "805c941d-502b-4f01-8859-082aff53bda8",
+      "result_id": "2ac96653-c990-4d6f-b9f7-f751fecea407"
+    },
+    {
+      "claim_id": "367ed66f-0823-4026-9831-e7172d60915c",
+      "result_id": "9c0428a1-9a26-4411-97de-1d209ebf1338"
+    },
+    {
+      "claim_id": "f7074ced-c0c0-4f99-afb2-486e8ce9da80",
+      "result_id": "9c0428a1-9a26-4411-97de-1d209ebf1338"
+    },
+    {
+      "claim_id": "1421fcb7-9aa7-46c7-b4e0-9cf6ab42f95e",
+      "result_id": "9c0428a1-9a26-4411-97de-1d209ebf1338"
+    },
+    {
+      "claim_id": "bfeecce3-2648-466c-8e9f-5f9844cd5726",
+      "result_id": "9c0428a1-9a26-4411-97de-1d209ebf1338"
+    }
+  ],
+  "comparisons": []
+}

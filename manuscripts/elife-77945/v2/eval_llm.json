@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C17",
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "HippUnfold is an automated pipeline that combines U-Net deep learning for tissue segmentation with Laplace-based unfolding to generate hippocampal surfaces and subfield labels. The pipeline was trained on 738 gold standard segmentations from 369 HCP-YA subjects using an incremental learning approach with nnUNet, achieving performance similar to manual segmentation protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C17, C22, C26-C33, C68-C74, and C155-C160 collectively describe the HippUnfold pipeline architecture, training data generation, and implementation details. The training procedure is well-documented with specific sample sizes (n=590 training, n=148 test), cross-validation, and hardware specifications. The incremental learning approach with manual quality control (C155-C157) provides methodological rigor. Performance metrics shown in Figure 5 support the claim of achieving manual-level accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "HippUnfold achieved Dice overlap scores similar to or better than fully manual protocols on the HCP-YA test set, with performance on T1w images only marginally poorer than T2w images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by quantitative Dice overlap data presented in Figure 5, which shows performance meeting or exceeding established benchmarks (>0.7 for good, >0.8 for larger subfields). The comparison to manual protocols is appropriately contextualized with citations to established standards (C76-C77). The marginal difference between T1w and T2w performance is documented with data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C34",
+      "C36",
+      "C37",
+      "C39",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "HippUnfold provides topological alignment between subjects through corresponding surface vertices, enabling group-averaged analysis that preserves individual topology and reveals clear distinctions in morphological and quantitative MRI features across subfield boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C34, C36-C37, C39, and C116-C118 describe the topological alignment capability and its advantages. Figure 2 provides visual evidence of clear feature distinctions across subfields in group-averaged data. The claim that this represents the first systematic topological alignment in the hippocampus (C117) is supported by the novelty of the approach. The surface-based group averaging that preserves topology (C34) is a logical consequence of the vertex correspondence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "HippUnfold compares favorably to existing methods (FS7 and ASHS), replicating age-related volume decline while avoiding topological inconsistencies such as subfield discontinuities, incorrect label ordering, and exclusion of hippocampal head/tail regions that are present in FS7 and ASHS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C67 provide a comprehensive comparison to existing methods. The age-related decline replication (C47, C50) is supported by Figure 3 and Figure 3\u2014figure supplement 1. The topological inconsistencies in FS7 and ASHS (C56-C67) are documented with specific observations and supported by citations to prior work documenting similar issues (C67). The volume differences (C48-C49, C52-C53) are quantified with specific measurements. Figure 4 provides visual evidence of the topological problems in competing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C82",
+      "C83",
+      "C103",
+      "C142"
+    ],
+    "result": "HippUnfold generalizes well to unseen datasets including HCP-A (aging population) and 7T-TSE (anisotropic high-resolution data), demonstrating flexibility across different MRI acquisition protocols and subject populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149, C82-C83, C103, and C142 describe the generalization testing. The use of multiple independent datasets (HCP-A, 7T-TSE) with different characteristics provides strong evidence for generalizability. Figure 6 shows successful application to these diverse datasets. The statement that results were 'excellent' (C103) is supported by the visual quality of segmentations shown, though quantitative metrics on these test sets would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "HippUnfold successfully segmented hippocampal subfields in a temporal lobe epilepsy patient with surgically confirmed hippocampal sclerosis, revealing relative sparing of CA2 and reduced digitations in the affected hemisphere consistent with known pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 describe a clinical case study with surgical confirmation of pathology. The observations of CA2 sparing (C88) are supported by citation to established literature on hippocampal sclerosis (Bl\u00fcmcke et al., 2013). Figure 6B provides visual evidence of the bilateral asymmetry and subfield-specific patterns. The speculation about future clinical utility (C90) is appropriately framed as requiring additional work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105"
+    ],
+    "result": "An automated quality control method based on Dice overlap with deformable registration flagged 1.6-14.3% of samples across datasets, with most failures due to missed tissue in nnUNet segmentation. Fewer failures occurred with T1w compared to T2w data, with poor image quality being the primary cause of failures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C105 describe the quality control approach and failure analysis. The flagging rates are precisely quantified (C94-C97) and the causes of failures are documented (C98, C105). The counterintuitive finding that T1w had fewer failures than T2w (C104) despite T2w showing better Dice scores is explained by scan quality issues (C100-C101). Figure 7 provides supporting visual evidence. The interpretation that poor T2w scan quality caused boundary definition problems (C101) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "HippUnfold implements FAIR principles through BIDS-App compliance, Snakemake workflow management, containerization, and standardized outputs including surfaces and quality control reports, with typical runtimes of 30-60 minutes per subject.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C115 describe the software implementation and usability features. The BIDS-App compliance (C107) is verifiable and supported by appropriate citations. The use of established tools (Snakemake, Docker/Singularity) and standards (BIDS derivatives) demonstrates adherence to FAIR principles. The runtime specification (C112) provides practical performance information. These are straightforward implementation claims that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The unfolding method uses Laplace's equation to generate three coordinate fields (AP, PD, IO) across hippocampal grey matter, with the IO field replaced by an equivolumetric model by default. Displacement fields are computed using piecewise linear interpolation and scaled to a standard 256\u00d7128\u00d716 voxel rectangular prism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C169 describe the mathematical and computational details of the unfolding algorithm. The use of Laplace's equation for geodesic coordinate generation is well-established in the field (supported by citations in C165). The specific implementation details (dimensions, interpolation method, voxel sizes) are precisely specified. The equivolumetric replacement (C165) is appropriately cited and its purpose (accounting for curvature effects) is explained. These methodological details are internally consistent and follow from established principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Dentate gyrus (DG) unfolding uses template shape injection rather than direct Laplace field computation due to the DG's sub-voxel thickness, resulting in a more traditional volumetric alignment approach rather than true topological alignment for this structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C176 describe the DG-specific methodology and its limitations. The rationale for using template shape injection (C173-C174) is clearly explained\u2014the DG is too thin for standard Laplace field generation. The acknowledgment that this represents a limitation (C175) demonstrates appropriate self-criticism. The specific dimensions (256\u00d732\u00d716) are provided (C176). This is an honest assessment of a methodological compromise necessitated by technical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The unfolding approach simplifies subfield segmentation by providing intrinsic anatomical axes, particularly the PD axis along the SRLM, which is used in manual protocols. This approach is analogous to multiplanar reformatting but considers the entire 3D hippocampal structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 describe the conceptual advantages of the unfolding approach. The connection to established manual segmentation protocols (C120) is supported by citation to Steve et al., 2017. The comparison to multiplanar reformatting (C121-C122) with citation to Gross et al., 2020 provides appropriate context. The claimed advantage of considering the full 3D structure (C123) is a logical consequence of the method. These are reasonable conceptual claims about the method's advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "HippUnfold has a limitation in that it does not consistently capture clear digitations in the hippocampal head, body, and tail, resulting in overly smoothed surfaces with artificially increased thickness, smaller surface area, and proportionally shifted subfield boundaries compared to histological ground truth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 provide an honest assessment of a significant limitation. The lack of digitation detail (C124) is documented with reference to Figure 4\u2014figure supplement 1. The consequences for morphometry (C126-C127) are logically derived from the smoothing. The suggestion for future improvement with higher-resolution data (C128) is appropriate. This represents good scientific practice in acknowledging limitations and their implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "HippUnfold uses a single BigBrain-derived subfield atlas for all subjects, though alternative atlases can be used. The extent of inter-individual variability in subfield boundaries after unfolding remains unknown, and future refinement using features like intracortical myelin would require multi-subject 3D histological ground truth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C136 discuss the subfield atlas approach and its limitations. The use of a single atlas (C129) is clearly stated, and the flexibility to use alternatives (C130) is demonstrated in Figure 4. The acknowledgment that residual variability after unfolding is unknown (C132) is honest. The speculation about future improvements (C134-C136) is appropriately framed as requiring additional validation work that is currently beyond typical MRI resolution (C136). This represents appropriate scientific caution about the limits of current knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C20"
+    ],
+    "result": "The hippocampus is a folded archicortical ribbon structure that varies in folding patterns between individuals and is critical for memory formation and affected early in many neurological diseases. Current methods typically model it as a subcortical volume, but representing it as a ribbon enables topological alignment and factorization into surface area and thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 provide background and motivation for the work. These are well-established facts in the field, appropriately supported by citations (C2-C3, C5-C6, C9-C10, C12-C15, C19-C20). The characterization of current practice (C4) and the advantages of ribbon representation (C6-C7) are accurate. These background claims establish the scientific context and are not controversial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C35",
+      "C80",
+      "C83",
+      "C150"
+    ],
+    "result": "U-Net architectures are generalizable and sensitive to anatomical variations in medical imaging. T2w images better show the SRLM and are popular in manual segmentation protocols. Anisotropic 7T data is considered optimal by many hippocampal subfield researchers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C35, C80, C83, and C150 are general knowledge claims about imaging methods and their properties, all appropriately supported by citations (Du et al., 2020; Ganzetti et al., 2014; Yushkevich et al., 2015a). These are not novel findings but rather established facts used to contextualize the methodological choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "HippUnfold enables new applications beyond subfield imaging including per-vertex statistical analysis at columnar and laminar scales, is not restricted to MRI, and stands to improve existing techniques through greater anatomical detail and topological alignment. Future applications may include examining morphological variability in development and disease, and analyzing hippocampal properties with diffusion-weighted imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C146 describe potential applications and future directions. While the technical capabilities enabling these applications are demonstrated (C137-C140 supported by prior work citations), the actual realization of these applications (C144-C145) is speculative. The claim that methods 'stand to improve' existing techniques (C146) is a reasonable inference from the demonstrated advantages, but the practical impact remains to be demonstrated. These are appropriate forward-looking statements but represent potential rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C102"
+    ],
+    "result": "Subfield boundaries were obtained from BigBrain 3D histology manual segmentation. HippUnfold is designed for sub-millimetric MRI with possible extension to microscopic resolution. MRI modality synthesis could alleviate dependency on specific contrasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C23, and C102 describe data sources and potential technical extensions. The BigBrain histology source (C21) is appropriately cited (Amunts et al., 2013; DeKraker et al., 2020). The design for sub-millimetric MRI (C23) is demonstrated throughout the results. The modality synthesis possibility (C102) is appropriately cited (Iglesias et al., 2021) as a potential future direction rather than a current capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C38",
+      "C40"
+    ],
+    "result": "Distortions in the unfolding were greatest in the hippocampal tail where the proximal-distal distance is narrow. Previous work showed features that differed between subfields on average but did not follow subfield contours as precisely as HippUnfold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C40 describe specific observations about the method's performance. The tail distortion (C38) is documented in Figure 2\u2014figure supplement 1. The comparison to previous work (C40) is appropriately cited (Vos de Wael et al., 2018; Crombe et al., 2018) and represents a fair characterization of the improvement offered by HippUnfold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Volumetric registration can become ill-posed when hippocampi have different folding configurations, potentially causing topological breaks and disproportionate stretching or compression. U-Nets avoid this by classifying voxels individually based on local and global features without explicit smoothness constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C151-C154 explain the theoretical advantage of U-Nets over deformable registration for structures with variable folding. The ill-posed nature of registration across different folding patterns (C45, C152) is a well-established limitation in the field. The example of mismatched digitation numbers (C153) is appropriately cited (DeKraker et al., 2021). The characterization of U-Net classification (C154) is accurate. These claims provide sound theoretical justification for the methodological choice.",
+    "result_type": "MINOR"
+  }
+]

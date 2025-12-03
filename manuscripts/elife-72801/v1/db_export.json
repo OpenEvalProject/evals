@@ -1,0 +1,1711 @@
+{
+  "submission": {
+    "id": "78598f4b-217e-4870-9799-837773ab45d4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:32:58.951277Z",
+    "updated_at": "2025-12-03T10:32:58.951277Z"
+  },
+  "content": [
+    {
+      "id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "submission_id": "78598f4b-217e-4870-9799-837773ab45d4",
+      "content_type": "manuscript",
+      "content_text": "# Multi-omics investigation of Clostridioides difficile-colonized patients reveals pathogen and commensal correlates of C. difficile pathogenesis\n\n## Authors\n\n- Skye RS Fishbein<sup>1</sup> ([ORCID: 0000-0002-9554-1170](https://orcid.org/0000-0002-9554-1170))\n- John I Robinson<sup>3</sup> ([ORCID: 0000-0003-3107-0047](https://orcid.org/0000-0003-3107-0047))\n- Tiffany Hink<sup>4</sup>\n- Kimberly A Reske<sup>4</sup>\n- Erin P Newcomer<sup>1</sup>\n- Carey-Ann D Burnham<sup>2</sup>\n- Jeffrey P Henderson<sup>3</sup>\n- Erik R Dubberke<sup>4</sup> \u2020\n- Gautam Dantas<sup>1</sup> ([ORCID: 0000-0003-0455-8370](https://orcid.org/0000-0003-0455-8370)) \u2020\n\n### Affiliations\n\n1. The Edison Family Center for Genome Sciences and Systems Biology, Washington University School of Medicine St Louis United States\n2. Department of Pathology and Immunology, Washington University School of Medicine St. Louis United States\n3. Center for Women\u2019s Infectious Disease Research, Division of Infectious Diseases, Department of Internal Medicine, Washington University School of Medicine St Louis United States\n4. Division of Infectious Diseases, Washington University School of Medicine St. Louis United States\n5. Department of Molecular Microbiology, Washington University School of Medicine St Louis United States\n6. Department of Pediatrics, Washington University School of Medicine St. Louis United States\n7. Department of Biomedical Engineering, Washington University in St. Louis St. Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nClostridioides difficile infection (CDI) imposes a substantial burden on the health care system in the United States. Understanding the biological basis for the spectrum of C. difficile-related disease manifestations is imperative to improving treatment and prevention of CDI. Here, we investigate the correlates of asymptomatic C. difficile colonization using a multi-omics approach. We compared the fecal microbiome and metabolome profiles of patients with CDI versus asymptomatically colonized patients, integrating clinical and pathogen factors into our analysis. We found that CDI patients were more likely to be colonized by strains with the binary toxin (CDT) locus or strains of ribotype 027, which are often hypervirulent. We find that microbiomes of asymptomatically colonized patients are significantly enriched for species in the class Clostridia relative to those of symptomatic patients. Relative to CDI microbiomes, asymptomatically colonized patient microbiomes were enriched with sucrose degradation pathways encoded by commensal Clostridia, in addition to glycoside hydrolases putatively involved in starch and sucrose degradation. Fecal metabolomics corroborates the carbohydrate degradation signature: we identify carbohydrate compounds enriched in asymptomatically colonized patients relative to CDI patients. Further, we reveal that across C. difficile isolates, the carbohydrates sucrose, rhamnose, and lactulose do not serve as robust growth substrates in vitro, consistent with their enriched detection in our metagenomic and metabolite profiling of asymptomatically colonized individuals. We conclude that pathogen genetic variation may be strongly related to disease outcome. More interestingly, we hypothesize that in asymptomatically colonized individuals, carbohydrate metabolism by other commensal Clostridia may prevent CDI by inhibiting C. difficile proliferation. These insights into C. difficile colonization and putative commensal competition suggest novel avenues to develop probiotic or prebiotic therapeutics against CDI.\n\n## Introduction\n\nClostridioides difficile infection (CDI) remains a significant cause of morbidity and mortality in the health care setting and in the community (Guh et al., 2020). Antibiotic treatments, among other risk factors associated with weakened colonization resistance, increase susceptibility to CDI (Dubberke and Olsen, 2012; Eze et al., 2017). C. difficile residence in the human gastrointestinal (GI) tract may result in a spectrum of clinical manifestations, from asymptomatic colonization to severe CDI-related colitis and fatal toxic megacolon (Crobach et al., 2018). Diagnosis of CDI relies on detection of the protein toxin, most commonly by enzyme immunoassay (EIA), or the detection of the toxin-encoding genes tcdA and tcdB, by nucleic acid amplification test (NAAT). These diagnostic tools serve as rough benchmarks for assessing the severity of disease. Discrepancies between the results of these assays, as in the case of patients with clinically significant diarrhea (CSD) who are EIA negative (EIA-) but NAAT positive for toxigenic C. difficile (Cx+), highlight the complexity of states in which C. difficile can exist in the GI tract. Because CDI is a multi-factorial interaction between the host, pathogen, and microbiome, clarifying the differences in biological correlates between asymptomatic colonization (Cx+/EIA-) and CDI (Cx+/EIA+) is critical for identifying mechanisms of colonization resistance, and for defining novel probiotic or prebiotic avenues for treatment or prevention of CDI (Kondepudi et al., 2012; R\u00e4tsep et al., 2017).\n\nC. difficile enters the GI tract as a spore, germinates in the presence of primary bile acids, and replicates through consumption of amino acids and other microbiota or host-derived nutrients (Hryckowian et al., 2017). Notably, many of these metabolic cues are characteristic of a perturbed microbiome (Nagao-Kitamoto et al., 2020; Battaglioli et al., 2018). The hallmark of C. difficile pathogenesis is the expression of the toxin locus encoded on the tcd operon; this locus is tightly regulated by nutrient levels (Martin-Verstraete et al., 2016). Correspondingly, it is hypothesized that an environment replete of nutrients induces toxinogenesis, allowing C. difficile to restructure the gut environment and acquire nutrients through inflammation (Fletcher et al., 2018; Fletcher et al., 2021). The instances of patients who are colonized but have no detectable C. difficile toxin in their stool suggests that these patients\u2019 microbiomes may be less permissive towards CDI development. Identification of metabolic traits within the microbiome of asymptomatic, C. difficile-colonized patients could reveal a number of potential therapeutic pathways toward precise amelioration of symptomatic C. difficile disease.\n\nA multitude of probiotic and prebiotic approaches have demonstrated efficacy to curb C. difficile proliferation in vivo (R\u00e4tsep et al., 2017; Chen et al., 2020; Pereira et al., 2020). While restoration of the microbiota through fecal microbiota transplantation can provide colonization resistance (Laffin et al., 2017), the molecular mechanisms of how this resistance is conferred remain unclear. Recent studies using a murine model of infection have indicated that the administration of carbohydrates (both complex and simple) in the diet can be used to curb or prevent CDI (Mefferd et al., 2020; Schnizlein et al., 2020; Hryckowian et al., 2018). Paradoxically, integrated metabolomics and transcriptomics data collected during murine C. difficile colonization indicates that simple carbohydrates are imperative for pathogen replication (Fletcher et al., 2018). It is critical to understand the mechanism by which catabolism of specific carbohydrates could inhibit C. difficile proliferation in the human GI tract.\n\nHere, we perform a multi-level investigation of two relevant patient populations, those colonized with C. difficile but EIA negative (asymptomatically colonized) and those who are EIA positive (CDI) to understand the microbial and metabolic features that may underlie protection from CDI. First, we use microbiome analyses to identify a number of non-C. difficile, clostridial species that are negatively correlated with C. difficile in asymptomatically colonized individuals. Secondly, interrogation of a metabolomics dataset from the same patient population (Robinson et al., 2019) reveals increased abundance of a number of carbohydrate metabolites in asymptomatically colonized patients. Finally, we show that some metabolites enriched in asymptomatically colonized individuals are largely non-utilizable by C. difficile isolates. Together, these datasets reveal that asymptomatically colonized patients are defined by an interaction of clostridial species and carbohydrate metabolites that may serve as a last-line of resistance against CDI in colonized patients.\n\n## Results\n\nThe clinical manifestation of C. difficile colonization in a host gastrointestinal tract is determined by a multi-factorial interaction between the host, their microbiome, and the pathogen. We hypothesized that, among these factors, natural variation in C. difficile strains infecting patients might differentiate asymptomatic from CDI patients (Dubberke et al., 2018). Through retrospective analysis of a human cohort of 124 patients (Supplementary file 1) with clinically significant diarrhea (CSD) and stool submitted for C. difficile toxin testing, we defined two cohorts: those diagnosed with CDI (Cx+/EIA+) or those asymptomatically colonized (Cx+/EIA-) (Robinson et al., 2019). EIA status (EIA+ or EIA-) was determined by the result of the clinical toxin EIA performed on the stool specimen, and a positive toxigenic culture (a C. difficile isolate with with tcdA and/or tcdB; Cx+) (Dubberke et al., 2018). In-depth analysis of C. difficile isolate factors related to EIA status was performed on the isolates corresponding to the 102 metagenomic samples analyzed (see Materials and Methods, Supplementary file 2). Multiplex PCR was used to identify isolates with cdtAB, the binary toxin locus (Cowardin et al., 2016). Notably, there was a significant enrichment of isolates with cdtAB in the stools of patients with CDI (Figure 1A; p = 0.0012, Fisher\u2019s exact test). Additionally, there were differences in the distribution of C. difficile strains associated with the two patient cohorts; CDI patients were more likely to be infected by a C. difficile isolate of the ribotype 027 lineage (Figure 1A; p = 0.0058, Fisher\u2019s exact test), a clade likely to contain virulent members (Merrigan et al., 2010). Interestingly, of the isolates positive for cdtAB (22 out of 102 isolates), 36% were considered a ribotype 027 strain. Given these genetic indicators of potential differences in virulence, we asked if strains from both groups were capable of producing toxin, using culture supernatants from in vitro broth culture. We found that 56% of isolates expressed detectable TcdA/B, with no significant different (p = 0.86) in the capacity of strains from Cx+/EIA- stools (24 out of 54 isolates) or Cx+/EIA+ (24 out of 48 isolates) to elaborate toxin (Figure 1\u2014figure supplement 1A). Predictably, differences in genetic indicators of strain virulence (as indicated by prevalence of both a prominent ribotype and a second toxin locus) were significant correlates of EIA status.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72801/elife-72801-fig1-v1.jpg)\n\n**Figure 1.:** (A) Clostridioides difficile isolate distribution based on PCR and ribotyping data for each isolate cultured from patient stools. **, p < 0.001 as measured by a Fisher\u2019s exact test. (B) Principal coordinate analysis (PCoA) of weighted Unifrac distances between stool microbiomes. Colors indicate EIA status. Groups were not significantly different as measured by a PERMANOVA (p = 0.69). (C) Significant microbial taxa associated with disease state, where a positive coefficient is associated with Cx+/EIA+ state and a negative coefficient is associated with Cx+/EIA- state. Colors indicate taxonomic Class of the microbial feature, and the size of circle corresponds to magnitude of statistical significance. Features with q-value of <0.25 were plotted. (D) Network of features associated with antibiotic exposure or EIA status. Species nodes are connected to metadata nodes by edged colored with the feature weight (coefficient) computed using linear mixed modeling (MaAslin2). All taxa displayed had a q-value of <0.25 in respective analyses.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72801/elife-72801-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Presence of protein toxins TcdA and TcdB, based on ELISA of in vitro culture supernatants. There was no significant difference in the number of isolates able to produce toxin (p = 0.86, Fisher\u2019s exact test). (B) Faith\u2019s diversity between microbiomes of asymptomatically-colonized (Cx+/EIA-) and CDI (Cx+/EIA+) patients. Diversity between groups was not significantly different (p = 0.1602, Wilcoxon rank sum test). PCoA of weighted UniFrac distances between stool metagenomes, colored by the presence of the binary toxin (CDT) locus (C) or corresponding isolate ribotype (D). (E) Phylum-level relative abundances between CDI and asymptomatically-colonized patients. (F) Relative abundance of significantly altered clostridial taxa from MaAsLin2 analysis. p-values in (E) and (F) calculated using a Wilcoxon rank sum test and corrected for multiple testing.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72801/elife-72801-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Significant microbial taxa associated with disease state, where a positive coefficient is strongly associated with CDI state. Colors indicate taxonomic Class of microbial feature, and size of circle corresponds to magnitude of statistical significance. Features with q-value of <0.25 were plotted. (B) Relative abundance of significantly altered taxa from MaAsLin2 analysis with a q-value of <0.05. p-Values indicate a corrected Wilcoxon rank sum test. (C) Relative abundance of C. difficile stratified by whether the stool contained an isolate with cdtAB or not. (D) Relative abundance of C. difficile stratified by the corresponding isolate ribotype.\n\nAs antibiotics are a well-known risk factor for CDI, we analyzed previous inpatient antibiotic orders (within one month prior to diagnosis) for patients in the Cx+/EIA- and Cx+/EIA+ cohort, as a proxy for antibiotic exposure (Table 1). Fitting antibiotic exposure to a logistic regression model (McFadden\u2019s R2 = 0.306) revealed that CDI was significantly associated with cephalosporin exposure. Analysis of potential antibiotic exposures in our patient cohort confirms the risk that antibiotics pose for CDI development (Mullish and Williams, 2018; Webb et al., 2020).\n\n**Table 1.**\n Logistic regression coefficients for antibiotic exposures associated with Cx+/EIA+ in patient cohort.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Antibiotic</th>\n      <th>Coefficient</th>\n      <th>Standard error</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cephalosporin</td>\n      <td>2.68</td>\n      <td>0.74</td>\n      <td>2.70E-04</td>\n    </tr>\n    <tr>\n      <td>Fluoroquinolone</td>\n      <td>0.19</td>\n      <td>1.09</td>\n      <td>0.86</td>\n    </tr>\n    <tr>\n      <td>Carbapenem</td>\n      <td>0.34</td>\n      <td>1.12</td>\n      <td>0.76</td>\n    </tr>\n    <tr>\n      <td>Metronidazole</td>\n      <td>1.11</td>\n      <td>0.95</td>\n      <td>0.24</td>\n    </tr>\n    <tr>\n      <td>Vancomycin (intravenous)</td>\n      <td>1.44</td>\n      <td>0.95</td>\n      <td>0.13</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Hosmer and Lemeshow Goodness of fit test p = 0.7536._\n\nAntibiotics increase susceptibility to CDI through disruption of colonization resistance, mainly conferred to the host via the gut microbiome (Theriot et al., 2014). To determine the microbial correlates of disease state, we performed shotgun metagenomic sequencing on patient stool samples from the asymptomatic (n = 54) and CDI (n = 48) groups, and classified species using MetaPhlAn2. Given the strong association with antibiotic exposure in our CDI cohort, we hypothesized that our asymptomatically colonized patients would have increased microbiome-mediated colonization resistance relative to CDI patients. We examined community structure in stool metagenomes and found that there was no significant difference in Faith\u2019s diversity (Faith and Baker, 2007), a measure of alpha-diversity that incorporates phylogenetic relationships, between patient groups (Figure 1\u2014figure supplement 1B, Wilcoxon rank-sum test, p = 0.1602). There were no significant differences in beta-diversity, as measured by weighted Unifrac distance, between EIA status (p = 0.233, permutational analysis of variance test [PERMANOVA]) (Figure 1B). Although we hypothesized that increased virulence (through additional toxin allele or ribotype) associated with EIA+ could affect microbiome structure, we found no significant association between beta-diversity and cdtAB presence (Figure 1\u2014figure supplement 1C; p = 0.799, PERMANOVA) or ribotype distribution (Figure 1\u2014figure supplement 1D; p = 0.982, PERMANOVA). Previous comparative microbiome studies have revealed phylum-level differences in Bacteroides and Firmicutes in CDI cases versus controls not colonized with C. difficile (Kachrimanidou and Tsintarakis, 2020). In contrast, we found no significant differences in relative abundance of bacterial phyla between asymptomatically colonized patients and patients with CDI (Figure 1\u2014figure supplement 1E). These data indicate that there were no gross differences in microbiome structure related to either EIA status or pathogen features.\n\nInstead, we hypothesized that differences between these states may manifest at higher resolution. We used a multivariable regression model, as implemented by MaAslin2 (Mallick et al., 2021) to identify microbial taxa predictive of either group. Interestingly, species from class Clostridia were most enriched in taxa significantly altered by EIA status (Fisher\u2019s exact test, p = 0.0022). C. difficile was the strongest predictor of CDI state, whereas non-C. difficile clostridial taxa were predictive of asymptomatic state (Figure 1C, FDR < 0.25). Correspondingly, we saw increased C. difficile relative abundance in CDI patients and increased levels of a number of non-C. difficile clostridial species, including Eubacterium spp., Dorea spp., and Lachnospiraceae spp. in asymptomatic patients (Figure 1\u2014figure supplement 1F). Given our inability to detect C. difficile in all sequenced stools (70 out of 102 culture-positive stool samples), we utilized an alternative metagenomic species classifier Kraken (Wood and Salzberg, 2014), to validate our findings. Using Kraken, we detected C. difficile in nearly all stool metagenomes (101 out of 102). Using the identical linear mixed modeling approach (MaAsLin2), we recapitulated data indicating that C. difficile abundance was the strongest predictor of EIA status and increased in Cx+/EIA+ patients. Additionally, a number of commensal clostridial taxa from the Eubacterium genus and Anaerostipes genus were strongly associated with EIA- status, confirming prior MetaPhlAn2 predictions (Figure 1\u2014figure supplement 2A,B).\n\nUsing our microbiome data, we examined the association between C. difficile levels and pathogen markers previously associated with EIA status. We found that C. difficile relative abundance was not significantly different when stratified by isolate CDT status (Figure 1\u2014figure supplement 2C; p = 0.3, Wilcoxon rank sum) or isolate ribotype (p = 0.78, Kruskal-Wallis). Notably, there was a slight, yet insignificant increase in C. difficile abundance in microbiomes associated with a ribotype 027 isolate (Figure 1\u2014figure supplement 2D) relative to microbiomes associated with C. difficile isolates of other ribotypes. We also interrogated taxonomic features that were predictive of antibiotic exposure. Expectedly, we found that taxonomic features predictive of CDI state were also associated with antibiotic exposure (Figure 1D). Our data indicate that patients with asymptomatic C. difficile colonization or CDI do not have grossly different gut microbiome community structures but instead have distinctive alterations in a subset of species from class Clostridia and class Bacilli in the microbiota.\n\nC. difficile pathogenesis is heavily affected by carbohydrate, amino acid, and bile acid levels in the gastrointestinal tract, related to the metabolism of competitive commensals (Sorbara and Pamer, 2019). To identify metabolic pathways in other clostridia that might enable them to outcompete C. difficile, we defined metabolic potential in patient microbiomes using HUMAnN2 to quantify microbial pathway abundances. We found no significant differences in alpha- or beta-diversity between overall metabolic pathway composition in the two patient microbiome groups (Figure 2\u2014figure supplement 1A,B; p = 0.2393, Wilcoxon rank sum and p = 0.054, PERMANOVA). Therefore, we trained an elastic net model to identify specific pathways associated with EIA status (Figure 2A). We found a number of carbohydrate degradation pathways and amino acid biosynthetic pathways associated with the asymptomatically-colonized (Cx+/EIA-) patients, including sucrose degradation III and fucose and rhamnose degradation. Investigation of the genera that encode such pathways revealed that the sucrose degradation III pathway was increased in asymptomatic patients, largely due to Blautia spp. and Faecalibacterium spp. of the class Clostridia (Figure 2B). Interestingly, the fucose and rhamnose degradation pathways were entirely defined by Escherichia spp., presumably E. coli. This suggests that metabolic functions such as fucose and rhamnose degradation may be confined to a smaller number of taxa than carbohydrate degradation pathways such as sucrose degradation. Using the HUMAnN2 (Franzosa et al., 2018) gene family information, we used linear mixed modeling to identify carbohydrate-active enzymes differentially associated with EIA status (Figure 2C). Supporting the pathway analysis, we found an increased abundance of a subset of glycoside hydrolase genes, specifically involved in sucrose and starch metabolism in the asymptomatically colonized patients. Our metabolic pathway analyses highlight differentially abundant carbohydrate degradation processes in clostridial taxa that could contribute to colonization resistance against C. difficile in patient microbiomes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72801/elife-72801-fig2-v1.jpg)\n\n**Figure 2.:** (A) Significant pathways associated with EIA status, as derived from the elastic net model. Mean-prediction AUC for the elastic net model was 0.825. (B) Relative abundance of taxa in pathways associated with asymptomatic patients, where each patient\u2019s metagenomic relative abundance is depicted by a single bar. Bars are colored by genera predicted to encode pathway. (C) Relative abundance of glycosidic hydrolase genes significantly associated with EIA status (q-value of <0.25) in stool metagenomes, where circles represent KEGG pathway classification.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72801/elife-72801-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Alpha-diversity (measured by richness) of metabolic pathways in patient groups. (B) Non-metric multi-dimensional scaling (NMDS) ordination of Bray-Curtis dissimilarity measurements between stool microbiome metabolic pathways. (C) NMDS ordination of Euclidean distances between stool metabolomes. A permutation test was used to quantify centroid distances between groups (p = 0.01).\n\nWe hypothesized that differences in metabolic potential of fecal microbiome communities might be reflected in metabolomic profiles, and therefore sought to identify metabolites that are altered in CDI patients relative to those asymptomatically colonized with C. difficile (Robinson et al., 2019). Ordination of Euclidean distances between Cx+/EIA- and Cx+/EIA+ stool metabolomes revealed no significant differences in metabolome structure (Figure 2\u2014figure supplement 1C, PERMANOVA = 0.426). We again used MaAslin2 to determine metabolites associated with each disease state. Consistent with previous analysis, a number of end-product Stickland fermentation metabolites (4-methypentanoic acid and 5-aminovalerate) were associated with CDI patients. While 4-hydroxyproline was the strongest predictor of asymptomaticallycolonized patients, many of the significant metabolites that were associated with asymptomatic patients were predicted to be carbohydrates (Figure 3A, FDR < 0.25; Supplementary file 3). Putative metabolite identities were initially annotated by matching metabolite spectra to the NIST14 GC-MS spectral library. The preponderance of carbohydrates in asymptomatically colonized patients and the substantial similarity of carbohydrate spectra prompted us to rigorously validate the identities of these metabolites by comparing EI spectra and GC retention times against authentic standards, where commercially available (Supplementary file 3, Figure 3\u2014figure supplement 1). These data reveal a carbohydrate signature that is depleted in CDI patients. Notably, fructose and rhamnose are either substrates or products of the sucrose degradation III and fucose and rhamnose degradation pathways, which we found to be enriched in asymptomatically colonized patients. The co-occurrence of these microbial pathways and their corresponding metabolites in asymptomatically colonized patients suggests that a commensal carbohydrate catabolism may contribute to suppression of C. difficile pathogenesis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72801/elife-72801-fig3-v1.jpg)\n\n**Figure 3.:** (A) Significant metabolites associated with EIA state, where a positive coefficient is strongly associated with Cx+/EIA+ metabolomes. Colors indicate human metabolic database (HMDB) sub-classification, and size of circle corresponds to magnitude of statistical significance. * indicates closest potential match; ** indicates two peaks from the same compound; contaminant indicates mass spectrometry contaminant. (B) Clinical and reference strains grown in C. difficile minimal medium (CDMM) with equimolar amounts of carbohydrate sources added. Growth was measured by taking maximum absorbance values over 48 hr. Each point represents the mean of two technical replicates of a unique isolate (top). Growth of C. difficile 630, from same conditions as above (bottom).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72801/elife-72801-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) EI spectra and GC retention times of identified sugar and sugar alcohol features (red) compared to spectra of authentic standards (blue). (B) EI spectrum of 4-hydroxyproline feature compared to NIST14 library spectrum.\n\nOur examination of taxa, metabolic pathways, and metabolites revealed a number of carbohydrates which we predict are undigestible by C. difficile or are end-products of a more complex commensal metabolism that is exclusionary to C. difficile. Using a set of clinical C. difficile isolates cultured from this patient cohort (8 isolates representing six different ribotypes), we examined growth of C. difficile on carbohydrates associated with asymptomatically colonized patients. Using a defined minimal media (CDMM)( Karasawa et al., 1995) to test nutrient utilization, we found that C. difficile isolates grew robustly on fructose as expected (median maximum A600 of 0.90), but did not proliferate on rhamnose or lactulose (median maximum A600 of 0.19 and 0.24, respectively). Notably, in the case of sorbitol, we found that a subset of strains, including the reference strain C. difficile 630 and C. difficile VPI10643, grew to a maximum A600 of greater than 0.47 (Figure 3B). Given that we had found sucrose degradation as a metabolic pathway enriched in asymptomatically colonized patients, we hypothesized that C. difficile would be unable to use this carbohydrate. Indeed, when grown on sucrose as the sole carbon source, strains achieved a median maximum A600 ~4.7-fold less than that of growth on fructose. C. difficile\u2019s restricted carbohydrate metabolism, coupled with the presence of commensal Clostridia could hamper progression to CDI.\n\nWe hypothesized that the differential abundance of identified stool metabolites in these patient cohorts is related to the metabolism of specific microbes or host processes. We performed a sparse partial least-squares-discriminatory analysis (sPLS-DA) with the mixOmics package to define relationships between the most predictive features of patient metabolomes and microbiomes. We optimized the number of latent components (Figure 4\u2014figure supplement 1A) and number of variables (Figure 4\u2014figure supplement 1B). Our final model contained two latent components, with the first one composed of 15 metabolites and 25 microbial species. Of the largest metagenomic variable weights, four out of five species (C. difficile, a Lachnospiraceae spp., Anaerostipes hadrus, and Clostridium clostridioforme) were also significantly associated with an EIA state (Figure 1). Of the metabolomic variable weights (Figure 4A), the 10 highest-weighted metabolites were also discovered by previous analyses (Figure 2). The predictive value of each of the components per block was greater that an area under the curve (AUC) of 0.85, with the second metagenomic block component having the best performance (AUC = 0.94, Figure 4\u2014figure supplement 1C). The strong performance of the latent components in classifying samples via EIA status validated our previous findings. Using the variables defining the first latent component, we performed correlational analyses (Figure 4B) and found a number of striking correlations. C. difficile abundance was positively correlated with a number of well-known Stickland metabolites (5-amino-valeric acid and 4-methylpentanoic acid, rho = 0.48 and 0.36, respectively)(Robinson et al., 2019), whereas C. difficile had negative correlations with fructose, rhamnose, and hydroxyproline (rho = \u20130.27, 0.36, and \u20130.34, respectively). Given our metagenomic data suggesting that Kraken metagenomic profiling yielded more sensitive estimates of C. difficile abundance, we performed an independent multi-omics analysis on the same dataset using the Kraken metagenomic data. Using a similar process of model building as above, the final model consisted of two latent components, with 15 metabolites and 15 microbes in the first component (Figure 4\u2014figure supplement 1C). C. difficile was also most positively correlated to 5-amino-valeric acid and 4-methylpentanoic acid, with corresponding negative correlations to fructose, rhamnose, and hydroxyproline (Figure 4\u2014figure supplement 1D). These microbe-metabolite relationships highlight the known pathophysiology of CDI, and identify novel C. difficile-carbohydrate relationships that define asymptomatic colonization.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72801/elife-72801-fig4-v1.jpg)\n\n**Figure 4.:** (A) Correlation circle indicating the contribution of each variable (microbe or metabolite) to latent component of sparse partial least-squares-discriminatory analysis (sPLS-DA) using MetaPhlAn2 data. (B) Heatmap of Spearman correlations between metagenomic and metabolomic variables from the first latent component using MetaPhlAn2 data.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72801/elife-72801-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Examination of error rate dependent on number of components included in model construction, related to Figure 4. (B) Balanced error rate dependent on the number of features used in each block of each component; the left number indicates the number of metagenomic features used, and the right number indicates the number of metabolomic features used. (C) ROC curves with area under the curve measurements indicated for each block and component of the MetaPhlAn2 model. (D) Correlation circle indicating the contribution of each variable (microbe or metabolite) to latent component of sparse partial least-squares-discriminatory analysis (sPLS-DA) using Kraken data. (E) Heatmap of Spearman correlations between metagenomic and metabolomic variables from the first latent component using Kraken data.\n\nGiven the anticorrelation between C. difficile and rhamnose, we sought to explain the enrichment of this carbohydrate in asymptomatically colonized patients. Though C. difficile cannot grow on rhamnose as the sole carbohydrate, in other organisms rhamnose has substantial transcriptional influence over carbon catabolite gene clusters (Egan and Schleif, 1993; Hirooka et al., 2015). We wanted to rule out the possibility that rhamnose may impact C. difficile through possibly cryptic transcriptional reprogramming, perhaps contributing to C. difficile repression in vivo. Accordingly, we performed whole transcriptome RNA sequencing on C. difficile cultures exposed to a metabolizable substrate, fructose, or a non-metabolizable substrate, rhamnose. In the presence of fructose, we found 555 genes significantly altered (adjusted p-value < 0.05 and |fold-change| > 2) (Supplementary file 4). Some of the most altered genes were indicative of carbon catabolite repression of sugar transport and upregulation of glycolytic processes to metabolize fructose. In contrast, we found only three genes significantly increased in the rhamnose condition. The lack of striking systems-level or targeted (toxin expression, sporulation) regulation by rhamnose, and C. difficile\u2019s inability to utilize it, leads us to conclude that its association with asymptomatically colonized patients\u2019 microbiomes is not through direct interaction or suppression of C. difficile. Instead, we speculate that rhamnose may be the byproduct of a complex commensal metabolism of other dietary polysaccharide substrates, which could exclude C. difficile from the GI tract.\n\n## Discussion\n\n### Factors affecting the outcome of C. difficile colonization\n\nSusceptibility to CDI is the result of a complex interaction between host factors (variation in bile acid metabolism, adaptive immunity) and abiotic factors such as antibiotic treatment and diet (Mullish and Allegretti, 2021; Littmann et al., 2021). These variables largely affect colonization resistance in the gut microbiome community and influence pathogen proliferation (germination rate, variation in toxin activity, and metabolic capacity). Our study endeavored to identify gut microbiome signatures (both taxonomic and metabolic), bacteriologic traits, and antibiotic exposure histories that might help explain Cx+/EIA- C. difficile colonization. Clinically, this manifestation is an intermediate state on the spectrum of C. difficile- associated disease and correspondingly, a diagnostic conundrum. One limitation of this study is our inability to assess dietary histories of patients leading up the diagnostic event. The metabolomic data provides a snapshot in time. While we hypothesize the increase in monosaccharides is due to an increase in carbohydrate degradation within the community, it is unclear whether the carbohydrate signature is due to microbial community differences in cross-feeding rates or differences in host diet.\n\nAnother important limitation to this study is our inability to control for C. difficile strain differences and correspondingly, heterogeneity in processes such as spore germination, nutrient utilization, and toxin expression in vivo (Kumar et al., 2019; Hunt and Ballard, 2013). Strains infecting Cx+/EIA+ patients were more likely to contain the cdtAB toxin locus, and the distribution of ribotypes was qualitatively different between the two cohorts (indicating significant pathogen variation). In vitro examination of toxin production (TcdA and TcdB) using a commercial ELISA indicated that over half of isolates expressed detectable levels of toxins. Toxin expression is well-known to be regulated by nutrient conditions and although our in vitro data indicate that both cohorts contain similar numbers of strains capable of producing toxin in vitro, such conditions are considered inadequate to predict in vivo levels of toxin production (Burnham and Carroll, 2013; Akerlund et al., 2006). Further, we found that a diverse set of clinical C. difficile strains might have variation in their ability to utilize nutrients such as sorbitol, which contrasts with reports of model C. difficile strains harboring more flexibility in their ability to utilize nutrients (Theriot et al., 2014; Jenior et al., 2017; Scaria et al., 2014). The outcome of strain level differences in metabolism and virulence is further complexified by in vivo conditions that might influence pathogen proliferation. Yet, we speculate that certain gastrointestinal environments both encourage some growth of C. difficile and discourage the elaboration of toxin, as toxin expression is actively repressed in nutrient-rich conditions.\n\nAntibiotic treatment is the most well-understood risk factor for CDI (Stevens et al., 2011; Deshpande et al., 2013), and antibiotic exposure in our cohort likely results in loss of the species we find depleted from CDI patients. Here, we confirm that exposure to a number of antibiotics is associated with CDI patients, including cephalosporins (significantly associated) and intravenous vancomycin (weakly associated). Clindamycin and quinolones, two antibiotics also associated with CDI in other human cohorts (Teng et al., 2019) are likely not significantly associated in our population due to the low prevalence of their exposure. Our microbiome data reveals decreased levels of Streptococcus, Ruminococcus, and Eubacterium spp. in CDI patients. Findings from both human cohorts and mouse models of antibiotic treatment indicate that a number of clostridial taxa are depleted upon administration of a variety of antibiotic treatments (Palleja et al., 2018; Rashid et al., 2015). It is also posited that some of these taxa are integral to protection from CDI (Mills et al., 2018). Given the attempts to use FMTs or Firmicutes-enriched probiotics to prevent CDI, we hypothesize that the restoration of lost species from class Clostridia after high-risk antibiotic treatment could be a novel avenue for CDI prevention (McGovern et al., 2021).\n\n### Gut metabolites as markers of C. difficile proliferation and the microbiome\n\nWhile metabolites associated with CDI and correlated with C. difficile abundance (4-methyl-pentanoic acid and 5-amino-valeric acid) clearly reflect C. difficile proliferation (Akerlund et al., 2006), the metabolites associated with Cx+/EIA- patients could reflect a number of non-mutually exclusive biological scenarios, indicating either the absence of C. difficile proliferation or the presence of a stable community where C. difficile pathogenesis is prevented by community metabolic elements.\n\nIn the one scenario, we reference two metabolites, 4-hydroxyproline and sorbitol, which have been considered host products of collagen degradation and inflammation (Fletcher et al., 2021; Pruss and Sonnenburg, 2021). The abundance of 4-hydroxyproline in the stools of Cx+/EIA- and its anticorrelation with C. difficile levels would suggest that it is a substrate consumed by C. difficile during pathogenesis. In a mouse model of CDI, sugar alcohols and amino acids observed before infection were considered representative of a \u2018pre-colonized state\u2019 (Fletcher et al., 2018; Theriot et al., 2014), as these nutrients declined as CDI progressed. However, we restricted our cohort to patients who were not on their way to developing CDI, by excluding patients with EIA- stool if they were subsequently diagnosed with CDI or received empiric CDI treatment within 10 days of initial stool collection (Dubberke et al., 2018).\n\nIn another scenario, the overlap of signatures between pathways, metabolites, and microbes highlights a number of possible metabolic pathways that might be exclusionary to C. difficile, namely starch/sucrose degradation and rhamnose degradation. The combination of our microbiome data, which shows enrichment of number of commensal Clostridia such as Eubacterium spp.(Desai et al., 2016), starch/sucrose degradation pathways, and our in vitro data highlights a possible microbe-metabolite combination that could prevent C. difficile proliferation. Rhamnose is a major component of plant and some bacterial cell-wall polysaccharides (Silva et al., 2020). Metabolic pathway profiling revealed an enrichment of fucose and rhamnose degradation pathways in asymptomatically colonized patients, represented by Enterobacterales taxa. Therefore, we propose that the detected rhamnose is a byproduct of commensal catabolism of more complex polysaccharides containing rhamnose (Porter and Martens, 2017; Mistou et al., 2016). These findings are of course limited by the scope of the in vitro experiment and the correlative nature of our microbiome data. Future work examining in vivo competition between diverse C. difficile isolates and commensal isolates with critical metabolic elements would be required.\n\nLactulose was a carbohydrate associated with asymptomatically-colonized patients and not a robust growth substrate for C. difficile. Interestingly, lactulose has been previously associated with a decrease in C. difficile-related diarrhea (Maltz et al., 2020) and decreased risk of CDI (Maltz et al., 2020; Agarwalla et al., 2017). Lactulose is a disaccharide product from heat treatment of lactose (a common sugar in dairy products), but it is also a component of some laxatives (Adachi, 1958). However, patients were screened and excluded from this cohort if they were prescribed laxatives in the 24 hr prior to sample collection. In addition to this screening/exclusion criteria, lactulose is almost exclusively prescribed to liver failure patients (there were none reported in this study), thus it is more likely to be present from consumption of heated milk (containing lactose). Other in vitro work demonstrates that addition of \u2018non-digestible\u2019 oligosaccharides, such as lactulose, provides a competitive advantage to Bifidobacterium spp. over C. difficile (Kondepudi et al., 2012; Hopkins and Macfarlane, 2003). While we do not recommend lactulose, a laxative, as such a prebiotic, there are a number of other \u2018non-digestible\u2019 oligosaccharides that might serve similar purposes in future interventions (Hopkins and Macfarlane, 2003). Taken together, these data emphasize the potential for synthetic or natural prebiotic interventions to shift a vulnerable microbiota away from CDI.\n\n### Strategies to ameliorate toxigenic C. difficile proliferation\n\nOur multi-omics analyses of a colonized asymptomatic patient population support a growing body of literature concerning commensal metabolism as a tool against C. difficile. Evidence from both mouse models of disease and human studies indicate that administration of polysaccharides or \u2018microbial accessible carbohydrates\u2019 may prevent C. difficile proliferation or decrease the risk of CDI (Mefferd et al., 2020; Schnizlein et al., 2020; Hryckowian et al., 2018; Maltz et al., 2020; Lewis et al., 2005). Recently, a probiotics-based attempt to design a consortium of mucosal sugar utilizers revealed its ability to decrease C. difficile colonization in vivo (Pereira et al., 2020), indicating that increasing mucosal metabolism, or carbohydrate catabolism, may be another route to strengthening commensal resistance to C. difficile. Interestingly, previous attempts to combinatorically assemble species and nutrient combinations that might inhibit C. difficile indicate that success is afforded by species able to competitively utilize carbohydrates such as sorbitol and mannitol (Ghimire et al., 2020). Given the plethora of prebiotics and probiotics explored in the C. difficile field, we emphasize the need for an approach that harnesses both probiotic- and prebiotic-based components to inhibit the proliferation of C. difficile and toxin-mediated pathogenesis.\n\n## Materials and methods\n\n### Patient cohort analysis\n\nA previous retrospective cohort study was conducted to understand C. difficile colonization. In that study, C. difficile isolates were cultured from patient stool as described. Ribotyping was performed using the DiversiLab Bacterial Barcodes software (bioMerieux) (Dubberke et al., 2018; Westblade et al., 2013). Analysis of isolate genetic traits and in vitro toxin production was performed on the 102 isolates for which we had corresponding metagenomic sequencing data (see below). Data concerning isolate ribotype was aggregated into the three most abundant ribotypes (ribotype 027, ribotype 106, ribotype 14/20), where all other ribotypes or unclassified strains were grouped into \u2018Other\u2019. For the purposes of this study, data concerning inpatient antibiotic orders were retrospectively collected from the electronic medical informatics database for patients with toxin EIA positive (Cx+/EIA+) stool (n = 62) or toxin EIA negative (Cx+/EIA-) stool (n = 62). The presence of antibiotic orders was classified into three dichotomous groups by timing of exposure: antibiotics in 0\u20137 days before stool collection (1 week), antibiotics in >7\u201314 days before stool collection (2 weeks), and antibiotics in >14\u201330 days before stool collection (1 month). To understand the specific antibiotics associated with EIA status in our patient cohort, raw antibiotic exposure data was aggregated by time. Additionally, low-prevalent antibiotics ( < 10% exposure in patients) were removed from analysis. Logistic regression analysis was performed using the glm function in R. To understand overall antibiotic exposure as it relates to EIA status, any antibiotic exposure was considered \u20181\u2019 and zero antibiotic exposure in a patient was considered \u20180\u2019. The binary antibiotic exposure variable was then used in linear mixed modeling analysis to understand species associated with antibiotic exposure.\n\n### Metagenomic sequencing and analysis of patient stool\n\nMetagenomic DNA was extracted from patient stools as previously described (Fishbein et al., 2021a). C. difficile was isolated from patient stools as previously described (Fishbein et al., 2021a). Illumina libraries of patient stool metagenomic DNA were prepared and pooled as previous described (Fishbein et al., 2021a; Baym et al., 2015). Fecal metagenomic libraries were submitted for 2 \u00d7 150 bp paired-end sequencing on an Illumina NextSeq High-Output platform. Reads were binned by index sequences and reads were trimmed and quality filtered using Trimmomatic v.0.38 (Bolger et al., 2014) to remove adapter sequences and DeconSeq (Schmieder and Edwards, 2011) to remove human sequences. Samples that were less than 15% bacterial DNA during initial sequencing were discarded, and all samples were sequenced to a depth of at least 5 million reads. Sample loss due to low bacterial DNA resulted in a smaller cohort than originally reported (Dubberke et al., 2018), with the final set of metagenomes representing 54 Cx+/EIA- and 48 Cx+/EIA+ patients.\n\nWe performed taxonomic profiling of metagenomic sequences using MetaPhlAn2 (Truong et al., 2015), and functional pathway profiling using HUMAnN2 (Franzosa et al., 2018). MetaCyc pathway abundances were normalized to relative abundances using the humann2_renorm.py function. The humann2_barplot.py function was used to assess taxonomic composition of metabolic pathways. Custom python scripts were used to parse MetaPhlAn2 \u2018_profiled_metagenome.txt\u2019 and HUMAnN2 \u2018pathwayabundance.txt\u2019 files. Data were imported to R to analyze community composition and differential associations. To analyze carbohydrate-active enzymes, we used humann2_regroup.py and humann2_rename.py function to reannotate the \u2018_genefamilies.txt\u2019 files and identify genes with the enzyme classification number EC:3.2.1.*, representing glycosidases, enzymes that participate in carbohydrate degradation (Ghimire et al., 2020).\n\n### Metagenomic data analysis\n\nFor both microbiome and metabolomic data, the nearZeroVar function of the caret package was used to remove low-prevalent or invariant taxa/pathways/metabolites (Kuhn, 2008). These filtered data sets were analyzed for differential association and multi-omics modeling. Alpha-diversity and beta-diversity were calculated using the vegan package. Weighted UniFrac distance was used as a beta-diversity metric for microbial taxa and Bray Curtis dissimiliarity was used as a beta-diversity metric for metabolic pathways, while Euclidean distance was used as a beta-diversity metric for metabolomes. The MaAslin2 package was used for linear mixed modeling to identify microbial taxa, gene families, and metabolites associated with EIA/antibiotic exposure status.\n\nTo analyze HUMAnN2 pathways enriched in cohorts, we used statistical inference of associations between microbial communities and host phenotypes (SIAMCAT) (Wirbel et al., 2021), using the siamcat package in R, to fit an elastic net model to the data. We used the following parameters: log.std normalization, 10 folds and 10 resamples for data splitting. The model.interpretation.plot function was used to display features weights for features used in >70% of models generated in training.\n\n### Determination of candidate metabolites\n\nPutative identification of metabolites of interest (Supplementary file 3) was initially performed through spectral matching against the NIST14 electron ionization spectrum library. Several features were previously identified by our group (see Robinson et al., 2019). Features predicted to be sugars or sugar alcohols were compared to a panel of authentic standards (D-sorbitol, D-mannitol, D-fructose, L-rhamnose, L-fucose, lactulose, glucose, mannose, D-galactose, D-talose, myo-inositol, and L-sorbose). Because isomeric sugars generate very similar spectra, we utilized both spectral similarity and retention time to identify sugar metabolites (Figure 3\u2014figure supplement 1).\n\n### Multi-omics analysis\n\nThe metagenomic relative abundance data was imputed with min(abundance >0)/2, and the metabolomic data was imputed with a value of 1. For both filtered datasets, a centered log-ratio transformation was used to analyze filtered metagenomic and metabolomic datasets above. The mixOmics (Rohart et al., 2017) package in R was used for multi-omics analysis of both MetaPhlAn and Kraken metagenomic relative abundance data. To avoid over-fitting on the large number of variables in our datasets, we utilized sPLS-DA. Briefly, to determine the number of variables from each dataset to keep in the final model, we estimated model error rates for all combinations of seq(15,30,5) variables for both metagenomic and metabolomic datasets, using the function tune.block.splsda (10-fold cross-validation, repeated 50 times, \u201cmax.dist\u201d distance metric). Spearman correlations were calculated between CLR-transformed microbial taxa and metabolite abundances, from the variables defining the first latent components, and plotted using the cim package.\n\n### Bacteriology and in vitro growth assays\n\nC. difficile strains were isolated from patient stools by plating on cycloserine-cefoxitin fructose agar as previously described; strains were stored at \u201380\u00b0C (Fishbein et al., 2021a). C. difficile VPI10643 and C. difficile 630 reference strains were purchased from ATCC, and included in the assays described below using the same conditions as clinical isolates. For in vitro growth assays, CDMM was prepared as previously described (Karasawa et al., 1995) and 20 mM of specified carbohydrates were added. Clinical isolates were inoculated into tryptone-yeast extract (TY) broth and grown for 16 hr, then washed with PBS and diluted 1:100 into media with different carbohydrates sources. Growth was measured in a shaking, 96-well plate at 37\u00b0C for 48 hours.\n\nIn vitro ELISAs to assess toxin production in each isolate were performed on using TGCbiomics kits for \u2018Simultaneous detection of TcdA and TcdB\u2019 and \u2018C. difficile GDH detection kit\u2019 as a control ELISA. Cultures were grown for 24 hr in TY media in deep 96-well plate. Following, cultures were spun down and culture supernatants were diluted 1:5 in dilution buffer and loaded onto ELISA plates for detection of both toxin and control protein (GmbH), per manufacturer\u2019s instructions. Isolates were considered positive for toxin if they had greater absorbance than that of the negative control.\n\n### RNA sequencing and data analysis\n\nFive mL of each strain (in biological triplicate) were grown to log-phase (OD600 ~0.4)in TY and exposed to TY- rhamnose or TY-fructose (with each carbohydrate at 30 mM). Cells were harvested by adding one volume of 1:1(v/v) acetone/ethanol to the culture to arrest growth and RNA degradation. Sample were spun at 4000 x g for 5 min. The cell pellet was washed with 500 \u00b5l TE buffer (0.5 M EDTA, 1 M Tris pH 7.4) and spun down to remove the supernatant. The cell pellet was resuspend in one mL Trizol and two rounds of bead-beating at 4500 rpm for 45 s were performed. A total of 300 \u00b5l of chloroform was added to the suspension, lysates were vortexed, and centrifuged at 4000 rpm for 10 min at 4\u00b0C. The aqueous layer was removed and RNA was precipitated using isopropanol, washed with 70% ethanol, and resolubilized in TE buffer. Total RNA was treated with Turbo DNase (for two rounds of digestion). rRNA depletion was performed using the QiaFastSelect kit (Hilden, Germany), following manufacturer\u2019s instructions. Libraries were prepared using the rRNA-depleted RNA as input for NEBNext Ultra II RNA Library Prep Kit (NEB, Ipswich, MA). Libraries were pooled and submitted for 2 \u00d7 150 bp paired-end sequencing on an Illumina NextSeq High-Output platform at the Center for Genome Sciences and Systems Biology at Washington University in St. Louis.\n\nRaw reads were trimmed using Trimmomatic v. 0.38, and aligned to a C. difficile VPI10643 reference genome (GCF_000155025.1) using Bowtie2. SAM files were converted to BAM format and indexed using samtools. Read counts for each gene feature were obtained using the featureCounts function of subread-1.6.5 package. Counts were manually imported into R, and DEseq2 was used to identify differentially expressed gene products in the case of TY-fructose relative to TY and TY-rhamnose relative to TY.\n\n### Data deposition\n\nMetagenomic reads were deposited under BioProject accession number PRJNA748262 and RNA sequencing reads were deposited under BioProject accession number PRJNA748261. All R code and metadata used to generate figures is deposited at https://github.com/srsfishbein/2021EIACdiff_multiomics, (Fishbein, 2021b copy archived at swh:1:rev:0c2a33d873e43194afb5818733e46c6ff28d6947).\n",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "6f134a15-d96f-425e-b036-42a8f824f0ff",
+      "submission_id": "78598f4b-217e-4870-9799-837773ab45d4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter J Turnbaugh, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72801.sa0](https://doi.org/10.7554/eLife.72801.sa0)\n\nNot everyone colonized by C. difficile has gut symptoms, but the reasons why are unclear. This article uses the combination of sequencing and mass spectrometry to compare patients with or without symptoms, revealing links between specific gut bacteria and diet, which could lead to diet or bacterial treatment or prevention strategies.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Peter J Turnbaugh, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72801.sa1](https://doi.org/10.7554/eLife.72801.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Multi-omics investigation of\u00a0Clostridioides difficile-colonized patients reveals protective commensal carbohydrate metabolism\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Peter J Turnbaugh as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gisela Storz as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Need to discuss the ability to exclude alternative hypotheses, including variations between C. difficile strains, dietary intake, differences in host physiology, and bile acid production/metabolism. The former seems like a critical point \u2013 are these individuals colonized by similar strains of C. difficile? Are they all toxin positive? It is critical to test if C. difficile from the Cx+/EIA- samples are actually capable of producing toxin. This is important to discern whether there are facets of the microbiome/metabolome which turn toxin off in Cx+/EIA- samples or if C. difficile in these patients have mutations which make them unable to produce toxin.\n\n2) Given the compositional nature of the sequencing data it is possible that differences in C. difficile are responsible for some of the observed differences in community structure. Please mask C. difficile reads and re-run the key analyses to check if they hold up.\n\n3) Please discuss the literature precedent for C. difficile growth on different carbohydrates and ideally include data for the type strain.\n\n4) Please check if the conclusions are impacted by removing the Cx+/EIA- samples with metagenomically undetectable C. difficile from the computational analyses used in Figures 1-3. The concern is whether these samples are driving the perceived differences between Cx+/EIA+ patients and Cx+/EIA- patients (does C. difficile abundance or metabolite abundance still differentiate Cx+/EIA+ patients from Cx+/EIA- patients?).\n\nReviewer #1:\n\nThe mechanisms that protect some individuals from C. difficile-associated colitis remain poorly understood; however, recent data has implicated both diet and the microbiome. Here, the authors use paired metagenomic and metabolomic analysis to identify differences in asymptomatic and symptomatic patients, suggesting that competition between clostridial species for carbohydrate metabolism may play a role. The data is clearly presented and provides clear hypotheses for future studies aimed at understanding the complex interactions between enteric pathogens, the gut microbiome, and host pathophysiology.\n\nStrengths of this study include its unique cohort, rigorous analysis and presentation, inclusion of some initial in vitro validation work, and potential for inspiring future hypothesis-driven experiments.\n\nWeaknesses include the lack of consideration or ability to control for alternative hypotheses, including variations between C. difficile strains, dietary intake, differences in host physiology, and bile acid production/metabolism. The effect sizes are also modest with no high-level differences in the microbiome or metabolome between groups. Finally, there is no evidence of generalizability to other patient cohorts. Given these caveats, it is important to be clear throughout that this is a hypothesis generating exercise and that the degree to which commensal carbohydrate metabolism is protective against C. difficile infection requires further clinical and mechanistic data.\n\nComments for the authors:\n\n1. Need to discuss the ability to exclude alternative hypotheses, including variations between C. difficile strains, dietary intake, differences in host physiology, and bile acid production/metabolism. The former seems like a critical point \u2013 are these individuals colonized by similar strains of C. difficile? Are they all toxin positive? I was unclear how asymptomatic carriage is defined, this is critical to the current paper and should be included in the main text and methods, not as a citation.\n\n2. Given the compositional nature of the sequencing data it is possible that differences in C. difficile are responsible for some of the observed differences in community structure. I'd recommend masking C. difficile reads and re-running the key analyses to check if they hold up.\n\n3. The in vitro validation is helpful, but I'm unclear as to whether it is new information. If any prior studies have been done they should be cited here.\n\nReviewer #2:\n\nThe manuscript by Fishbein et al. examines an exciting and timely question about the microbial and metabolomic factors in the gastrointestinal tract that determine if C. difficile remains dormant as a colonizer or triggers infection. They do this through the re-analysis of their previously published cohort wherein they can separate the colonization vs infection state on the basis of qPCR and toxin detection (EIA) which provides a unique opportunity to address their question in an excellently phenotyped cohort.\n\nUsing appropriate and current approaches, the authors find relatively subtle differences in the microbiome and metabolome of colonized/infected participants including certain carbohydrates which are elevated in asymptomatic individuals. They demonstrate these carbohydrates are not substrates for C. difficile; however, this line of experimentation sought to find negative results and it remains to be determined if they have any relevance in vivo or in complex communities. The authors could consider an additional experiment to probe this observation in more depth such as ex vivo fecal incubations or strain-strain competition experiments to provide more direct evidence for how they may influence the suppression of C. difficile.\n\nComments for the authors:\n\nGiven that this manuscript is primarily computational, it would be beneficial if the code for the analysis was shared in a public repository.\n\nPRJNA748262 does not appear to be publicly available.\n\nLine 66: would asymptomatic colonization be on the disease spectrum?\n\nReviewer #3:\n\nThis manuscript reveals exciting details of the lifestyle of C. difficile in individuals who are asymptomatic carriers and contrasts these with individuals with active CDI. It will be an important contribution to the C. difficile research field and more broadly to people interested in targeted manipulation of microbial communities.\n\nThe study team leveraged a unique patient cohort, coupled with metagenomic and metabolomic analyses, and bacterial culture techniques to suggest that the gut microbiome (namely, commensal clostridia) inhibit C. difficile proliferation. Much of the paper relies on the idea that C. difficile burdens are lower in asymptomatically colonized individuals versus those with C. difficile infection (CDI). However, many individuals who are asymptomatically colonized with C. difficile have burdens that are comparable to those who have CDI (and there may be a bimodal distribution of asymptomatically colonized individuals \u2013 those that have C. difficile detectable by metagenomic sequencing and those that do not). I worry that their conclusions are skewed by an apparent binary distribution of C. difficile burdens in both patient groups.\n\nThe patients are binned based on initial C. difficile diagnostic tests (asymptomatic individuals carry toxin-encoding C. difficile as detected by PCR but have no detectable toxin via immunoassay). I am unsure how sensitive the standard diagnostic immunoassay for C. difficile is but do know C. difficile toxin production is controlled by a complex regulatory network and abundance of these toxins can change with respect to parameters such as nutrient availability, temperature, pH, and cell density. I wonder if the isolates from the study are all capable of producing functional toxin. These strains could have mutations (in regulatory elements, for example) that may impact toxin production.\n\nThe authors perform a culture-based experiment to support their findings that certain metabolites present in the gastrointestinal tracts of asymptomatic individuals do not support the growth of C. difficile. They use isolates from the study participants but it is unclear if these isolates were taken from asymptomatic individuals or those with CDI but do not leverage strains commonly used in the research community (C. difficile 630 and C. difficile R20291).\n\nLines 67-69. What is the limit of detection of EIA? It's striking to me that, while C. difficile burdens are a predictor of Cx+/EIA+ vs. Cx+/EIA- patients, there are ~23 Cx+/EIA- patients whose relative abundance of C. difficile essentially superimposes with those of the Cx+/EIA+ group. There are fibroblast rounding assays that quantify C. difficile toxins. The limit of detection of these assays may be lower than kits used in diagnostic labs. Can the authors perform one of these assays on the samples in this study to better calibrate readers expectations of whether toxigenic C. difficile is or is not expressing toxin? As the paper stands, I assume that production of toxin in C. difficile is all-or-nothing, but prior work on regulation of toxin production in C. difficile has demonstrated that many regulatory cues influence toxin production (Martin-Verstraete et al. 2016) so I expect this to be non-binary. In addition, and considering the regulatory networks that control toxin production, are the C. difficile isolates from asymptomatic patients capable of producing toxin in vitro? Just because the gene is there doesn't mean that it's functional.\n\nLine 140-142. \"Given that C. difficile levels were an overt predictor of CDI\u2026\" Are C. difficile levels still a predictor of the Cx+/EIA+ state if the samples where C. difficile was not detectable by metagenomic sequencing were removed (see Figure S1C [bottom right hand corner of the graph], n=2 Cx+/EIA+ samples and n=? Cx+/EIA- samples)? The burdens of C. difficile in these individuals seem to be at least an order of magnitude lower than patients with low-but-detectable burdens and appear to be bimodally distributed. If there is no change to the conclusions of the study if these samples are removed, are there features (metabolites, taxa) that differentiate individuals who do or do not have metagenomically detectable C. difficile?\n\nLine 144. There is no Figure S1D in the manuscript.\n\nLines 228-230. I really like the idea that rhamnose may be the by-product of microbiome metabolism or other dietary polysaccharides which could exclude C. difficile from the gut. What is known about rhamnose metabolism by gut microbes? Do any of the taxa that associate with Cx+/EIA+ conditions metabolize rhamnose? Do any of the taxa that associiate with Cx+/EIA- conditions metabolize rhamnopolysaccharides? This could be done by mining the metagenomes for CAZymes or by performing growth assays with isolates of relevant bacteria.\n\nLines 248-251: \"The observed increased abundance of monosaccharides\u2026\" If this is true, shouldn't there be fewer sugars in both high diversity conditions and low diversity conditions? That is, in a high diversity microbiome, some microbes would metabolize complex polysaccahrides and others would cross feed on the waste products, whereas in a low diversity microbiome, there may be fewer degraders of polysaccharides, but maybe also fewer cross-feeders? Further expansion on this complexity or references to support the assertion in the sentence on lines 248-251 would be useful.\n\nLines 253-256: Given the previous reports cited in the manuscript and the range of metabolic capabilities illustrated by the clinical isolates used in this study, it would be worthwhile to assay the sugars from Figure 4 against strains of C. difficile commonly used in the C. difficile research community (at least, C. difficile 630 and difficile R0291).\n\nLines 262-264: This is really interesting. How many patients were excluded? Assaying toxin production in these patients (see comment on Lines 67-69, above) before and after diagnosis, or sequencing C. difficile from these patients at each of these time points, would be helpful in thinking about the transitions between asymptomatic carriage and symptomatic CDI. This is, of course, beyond the scope of the current study and only mentioned because it would be of scientific and clinical interest.\n\nLine 320. How many Cx+/EIA- samples were included in the study?\n\nLine 397. Please clarify in this section of the same conditions were used for VPI10643.\n\nLines 438-441. What percent of the variation in the data are expressed in this beta diversity metric? Is the conclusion different if a phylogenetically-aware metric (e.g. Weighted/Unweighted UniFrac) is used?\n\nFigure S1. Please include p values for taxa noted in Figure S1C. How many patients' stool samples have undetectable C. difficile via metagenomic analysis?\n\nFigure 4. OD readings are typically plotted on a log scale for growth curve data.\n",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7c639ff2-1a0c-48ad-8616-9cf80feab50a",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C1",
+      "claim": "Clostridioides difficile infection (CDI) imposes a substantial burden on the health care system in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Clostridioides difficile infection (CDI) imposes a substantial burden on the health care system in the United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about CDI burden that draws from established scientific consensus about the impact of CDI on healthcare systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "a36098c4-ee44-42d6-93d2-fe4b10bb2a2f",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C2",
+      "claim": "CDI patients were more likely to be colonized by strains with the binary toxin (CDT) locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CDI patients were more likely to be colonized by strains with the binary toxin (CDT) locus or strains of ribotype 027, which are often hypervirulent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from multiplex PCR analysis of C. difficile isolates and statistical testing (p = 0.0012, Fisher's exact test) as shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "59491f55-3b13-4edd-9367-a40170f3c8a2",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C3",
+      "claim": "CDI patients were more likely to be colonized by strains of ribotype 027.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CDI patients were more likely to be colonized by strains with the binary toxin (CDT) locus or strains of ribotype 027, which are often hypervirulent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from ribotyping analysis and statistical testing (p = 0.0058, Fisher's exact test) as shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "456459fc-b4a6-49b0-8e93-98d2456de33d",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C4",
+      "claim": "Ribotype 027 strains are often hypervirulent.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CDI patients were more likely to be colonized by strains with the binary toxin (CDT) locus or strains of ribotype 027, which are often hypervirulent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Merrigan et al., 2010) establishing the virulence characteristics of ribotype 027 strains.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "374e9378-8854-4dd7-a937-63dd79cb8592",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C5",
+      "claim": "Microbiomes of asymptomatically colonized patients are significantly enriched for species in the class Clostridia relative to those of symptomatic patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that microbiomes of asymptomatically colonized patients are significantly enriched for species in the class Clostridia relative to those of symptomatic patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data and statistical analysis using MaAslin2, showing enrichment of Clostridia species in asymptomatically colonized patients (Fisher's exact test, p = 0.0022).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "8b1423c7-20a8-4e11-8ae4-abca1deeedf8",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C6",
+      "claim": "Asymptomatically colonized patient microbiomes were enriched with sucrose degradation pathways encoded by commensal Clostridia.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to CDI microbiomes, asymptomatically colonized patient microbiomes were enriched with sucrose degradation pathways encoded by commensal Clostridia, in addition to glycoside hydrolases putatively involved in starch and sucrose degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by HUMAnN2 metabolic pathway analysis showing enrichment of sucrose degradation III pathway in asymptomatically colonized patients, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "10fe572f-4f1b-4de1-a433-27ab688336d3",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C7",
+      "claim": "Asymptomatically colonized patient microbiomes were enriched with glycoside hydrolases putatively involved in starch and sucrose degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to CDI microbiomes, asymptomatically colonized patient microbiomes were enriched with sucrose degradation pathways encoded by commensal Clostridia, in addition to glycoside hydrolases putatively involved in starch and sucrose degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by HUMAnN2 gene family analysis and linear mixed modeling showing increased abundance of glycoside hydrolase genes in asymptomatically colonized patients, as shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "b66f94f2-f81d-409d-9fa3-03f6d8f232be",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C8",
+      "claim": "Carbohydrate compounds are enriched in asymptomatically colonized patients relative to CDI patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Fecal metabolomics corroborates the carbohydrate degradation signature: we identify carbohydrate compounds enriched in asymptomatically colonized patients relative to CDI patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by metabolomics data analyzed using MaAslin2, showing enrichment of carbohydrate metabolites in asymptomatically colonized patients, as shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "839b16b7-e4c8-4161-a216-52317630186e",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C9",
+      "claim": "Sucrose does not serve as a robust growth substrate for C. difficile isolates in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we reveal that across C. difficile isolates, the carbohydrates sucrose, rhamnose, and lactulose do not serve as robust growth substrates in vitro, consistent with their enriched detection in our metagenomic and metabolite profiling of asymptomatically colonized individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vitro growth assays in defined minimal media (CDMM) showing that C. difficile strains achieved median maximum A600 ~4.7-fold less on sucrose than on fructose, as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "715136a8-14b5-4c16-931c-2da6eb84fe1a",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C10",
+      "claim": "Rhamnose does not serve as a robust growth substrate for C. difficile isolates in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we reveal that across C. difficile isolates, the carbohydrates sucrose, rhamnose, and lactulose do not serve as robust growth substrates in vitro, consistent with their enriched detection in our metagenomic and metabolite profiling of asymptomatically colonized individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vitro growth assays in defined minimal media (CDMM) showing that C. difficile isolates did not proliferate on rhamnose (median maximum A600 of 0.19), as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "dd2ed395-0008-458c-8b1f-b035a2e7d17b",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C11",
+      "claim": "Lactulose does not serve as a robust growth substrate for C. difficile isolates in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we reveal that across C. difficile isolates, the carbohydrates sucrose, rhamnose, and lactulose do not serve as robust growth substrates in vitro, consistent with their enriched detection in our metagenomic and metabolite profiling of asymptomatically colonized individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vitro growth assays in defined minimal media (CDMM) showing that C. difficile isolates did not proliferate on lactulose (median maximum A600 of 0.24), as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "de3e6918-3a40-43be-9b43-3131796fd7a7",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C12",
+      "claim": "Pathogen genetic variation may be strongly related to disease outcome in C. difficile colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that pathogen genetic variation may be strongly related to disease outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed associations between CDT locus presence, ribotype 027, and CDI status.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "04df14b6-a218-4e4b-9fa4-86ec33cfb700",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C13",
+      "claim": "In asymptomatically colonized individuals, carbohydrate metabolism by other commensal Clostridia may prevent CDI by inhibiting C. difficile proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "More interestingly, we hypothesize that in asymptomatically colonized individuals, carbohydrate metabolism by other commensal Clostridia may prevent CDI by inhibiting C. difficile proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a hypothesis based on the integration of metagenomic, metabolomic, and in vitro growth data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "84549c0b-939f-4607-9ab9-6d1f3a0540b4",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C14",
+      "claim": "C. difficile residence in the human gastrointestinal tract may result in a spectrum of clinical manifestations, from asymptomatic colonization to severe CDI-related colitis and fatal toxic megacolon.",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile residence in the human gastrointestinal (GI) tract may result in a spectrum of clinical manifestations, from asymptomatic colonization to severe CDI-related colitis and fatal toxic megacolon (Crobach et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Crobach et al., 2018) documenting the spectrum of C. difficile disease manifestations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "ae16c0c8-3907-484b-bbbd-6a6b872c391f",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C15",
+      "claim": "Antibiotic treatments increase susceptibility to CDI.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotic treatments, among other risk factors associated with weakened colonization resistance, increase susceptibility to CDI (Dubberke and Olsen, 2012; Eze et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature (Dubberke and Olsen, 2012; Eze et al., 2017) establishing the relationship between antibiotic use and CDI susceptibility.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "b403cefe-d140-4145-aac0-9f24a4d205a5",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C16",
+      "claim": "C. difficile enters the GI tract as a spore.",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile enters the GI tract as a spore, germinates in the presence of primary bile acids, and replicates through consumption of amino acids and other microbiota or host-derived nutrients (Hryckowian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Hryckowian et al., 2017) describing C. difficile lifecycle in the GI tract.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "3d89ed75-c50a-492a-8ae1-ce5122eb07c4",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C17",
+      "claim": "C. difficile germinates in the presence of primary bile acids.",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile enters the GI tract as a spore, germinates in the presence of primary bile acids, and replicates through consumption of amino acids and other microbiota or host-derived nutrients (Hryckowian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Hryckowian et al., 2017) describing C. difficile germination requirements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "277999f9-778d-4689-8739-bc8abebf311b",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C18",
+      "claim": "C. difficile replicates through consumption of amino acids and other microbiota or host-derived nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile enters the GI tract as a spore, germinates in the presence of primary bile acids, and replicates through consumption of amino acids and other microbiota or host-derived nutrients (Hryckowian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Hryckowian et al., 2017) describing C. difficile nutrient utilization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "1f89c3d0-d492-4df1-96ce-23e1dc49f68f",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C19",
+      "claim": "The hallmark of C. difficile pathogenesis is the expression of the toxin locus encoded on the tcd operon.",
+      "claim_type": "EXPLICIT",
+      "source": "The hallmark of C. difficile pathogenesis is the expression of the toxin locus encoded on the tcd operon; this locus is tightly regulated by nutrient levels (Martin-Verstraete et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim draws from established scientific knowledge about C. difficile pathogenesis and is supported by citation (Martin-Verstraete et al., 2016).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "30441916-c1d7-452f-ba7e-393407e72cd5",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C20",
+      "claim": "The C. difficile toxin locus is tightly regulated by nutrient levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The hallmark of C. difficile pathogenesis is the expression of the toxin locus encoded on the tcd operon; this locus is tightly regulated by nutrient levels (Martin-Verstraete et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Martin-Verstraete et al., 2016) describing regulation of C. difficile toxin expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "ec2d9a19-4c5d-4c2c-a625-b45b06541fee",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C21",
+      "claim": "An environment replete of nutrients induces C. difficile toxinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, it is hypothesized that an environment replete of nutrients induces toxinogenesis, allowing C. difficile to restructure the gut environment and acquire nutrients through inflammation (Fletcher et al., 2018; Fletcher et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature (Fletcher et al., 2018; Fletcher et al., 2021) proposing this hypothesis about nutrient-induced toxinogenesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "6d26bea9-4355-4f39-8979-0cb6fdc551a5",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C22",
+      "claim": "C. difficile toxinogenesis allows C. difficile to restructure the gut environment and acquire nutrients through inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, it is hypothesized that an environment replete of nutrients induces toxinogenesis, allowing C. difficile to restructure the gut environment and acquire nutrients through inflammation (Fletcher et al., 2018; Fletcher et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature (Fletcher et al., 2018; Fletcher et al., 2021) describing the role of toxins in C. difficile pathogenesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "98d2cb98-32d4-46fd-bef1-61fa5ad99e82",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C23",
+      "claim": "Fecal microbiota transplantation can provide colonization resistance against C. difficile.",
+      "claim_type": "EXPLICIT",
+      "source": "While restoration of the microbiota through fecal microbiota transplantation can provide colonization resistance (Laffin et al., 2017), the molecular mechanisms of how this resistance is conferred remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Laffin et al., 2017) demonstrating the efficacy of FMT for CDI.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "addf63d5-c11d-40d3-b1b5-73f1a87e0a0c",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C24",
+      "claim": "The molecular mechanisms of how fecal microbiota transplantation confers colonization resistance remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "While restoration of the microbiota through fecal microbiota transplantation can provide colonization resistance (Laffin et al., 2017), the molecular mechanisms of how this resistance is conferred remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of the current state of understanding in the field regarding FMT mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "ab0a2647-08e9-4670-9fea-344845603956",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C25",
+      "claim": "Administration of carbohydrates in the diet can be used to curb or prevent CDI in murine models.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies using a murine model of infection have indicated that the administration of carbohydrates (both complex and simple) in the diet can be used to curb or prevent CDI (Mefferd et al., 2020; Schnizlein et al., 2020; Hryckowian et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature (Mefferd et al., 2020; Schnizlein et al., 2020; Hryckowian et al., 2018) demonstrating carbohydrate-based prevention of CDI in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "dda616ba-bfbf-4b8f-b1a0-c3a1676ea54a",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C26",
+      "claim": "Simple carbohydrates are imperative for C. difficile replication during murine colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, integrated metabolomics and transcriptomics data collected during murine C. difficile colonization indicates that simple carbohydrates are imperative for pathogen replication (Fletcher et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Fletcher et al., 2018) showing the role of simple carbohydrates in C. difficile replication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "0788871a-c7c6-4164-b133-db6d52040c9c",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C27",
+      "claim": "There was a significant enrichment of isolates with cdtAB in the stools of patients with CDI.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there was a significant enrichment of isolates with cdtAB in the stools of patients with CDI (Figure 1A; p = 0.0012, Fisher's exact test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from multiplex PCR analysis and statistical testing (p = 0.0012, Fisher's exact test) as shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "b2c72369-510a-48f4-9b6f-5b521ce91bce",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C28",
+      "claim": "CDI patients were more likely to be infected by a C. difficile isolate of the ribotype 027 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there were differences in the distribution of C. difficile strains associated with the two patient cohorts; CDI patients were more likely to be infected by a C. difficile isolate of the ribotype 027 lineage (Figure 1A; p = 0.0058, Fisher's exact test), a clade likely to contain virulent members (Merrigan et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from ribotyping analysis and statistical testing (p = 0.0058, Fisher's exact test) as shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "a5b670f5-0c84-47a0-9dec-29892dbf97bb",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C29",
+      "claim": "Ribotype 027 is a clade likely to contain virulent members.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there were differences in the distribution of C. difficile strains associated with the two patient cohorts; CDI patients were more likely to be infected by a C. difficile isolate of the ribotype 027 lineage (Figure 1A; p = 0.0058, Fisher's exact test), a clade likely to contain virulent members (Merrigan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Merrigan et al., 2010) characterizing the virulence of ribotype 027 strains.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "267f4cec-3220-4c06-86c2-23fe686e2d19",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C30",
+      "claim": "36% of isolates positive for cdtAB were considered a ribotype 027 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, of the isolates positive for cdtAB (22 out of 102 isolates), 36% were considered a ribotype 027 strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from multiplex PCR and ribotyping analysis of the isolate collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "7c4d05fe-5e6e-4a37-a112-136d11dc12f1",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C31",
+      "claim": "56% of C. difficile isolates expressed detectable TcdA/B in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 56% of isolates expressed detectable TcdA/B, with no significant different (p = 0.86) in the capacity of strains from Cx+/EIA- stools (24 out of 54 isolates) or Cx+/EIA+ (24 out of 48 isolates) to elaborate toxin (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from ELISA testing of culture supernatants, as shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "26463502-e330-4aea-b25b-1a6d0b88ec28",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C32",
+      "claim": "There was no significant difference in the capacity of strains from Cx+/EIA- stools or Cx+/EIA+ stools to elaborate toxin in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 56% of isolates expressed detectable TcdA/B, with no significant different (p = 0.86) in the capacity of strains from Cx+/EIA- stools (24 out of 54 isolates) or Cx+/EIA+ (24 out of 48 isolates) to elaborate toxin (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from ELISA testing and statistical analysis (p = 0.86, Fisher's exact test) as shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "ded4e938-deac-4055-8408-8a53c73f0c07",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C33",
+      "claim": "CDI was significantly associated with cephalosporin exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting antibiotic exposure to a logistic regression model (McFadden's R2 = 0.306) revealed that CDI was significantly associated with cephalosporin exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by logistic regression analysis of antibiotic exposure data showing significant association (p = 2.70E-04) as shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "332d55e5-3d71-4fc2-a32a-0996253562fc",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C34",
+      "claim": "There was no significant difference in Faith's diversity between asymptomatic and CDI patient groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined community structure in stool metagenomes and found that there was no significant difference in Faith's diversity (Faith and Baker, 2007), a measure of alpha-diversity that incorporates phylogenetic relationships, between patient groups (Figure 1\u2014figure supplement 1B, Wilcoxon rank-sum test, p = 0.1602).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data and statistical analysis (Wilcoxon rank-sum test, p = 0.1602) as shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "5ac35c94-4175-4093-8f87-104d9a7503e8",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C35",
+      "claim": "There were no significant differences in beta-diversity between EIA status groups.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant differences in beta-diversity, as measured by weighted Unifrac distance, between EIA status (p = 0.233, permutational analysis of variance test [PERMANOVA]) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data and statistical analysis (p = 0.233, PERMANOVA) as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "877d2b19-41d7-4a93-ac50-50d68bdad1e1",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C36",
+      "claim": "There was no significant association between beta-diversity and cdtAB presence.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we hypothesized that increased virulence (through additional toxin allele or ribotype) associated with EIA+ could affect microbiome structure, we found no significant association between beta-diversity and cdtAB presence (Figure 1\u2014figure supplement 1C; p = 0.799, PERMANOVA) or ribotype distribution (Figure 1\u2014figure supplement 1D; p = 0.982, PERMANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data and statistical analysis (p = 0.799, PERMANOVA) as shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "028621d6-2c4a-40ca-b086-e4e89a140b3e",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C37",
+      "claim": "There was no significant association between beta-diversity and ribotype distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we hypothesized that increased virulence (through additional toxin allele or ribotype) associated with EIA+ could affect microbiome structure, we found no significant association between beta-diversity and cdtAB presence (Figure 1\u2014figure supplement 1C; p = 0.799, PERMANOVA) or ribotype distribution (Figure 1\u2014figure supplement 1D; p = 0.982, PERMANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data and statistical analysis (p = 0.982, PERMANOVA) as shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "685e00fe-eb7c-4c8a-9315-7f5f72113daa",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C38",
+      "claim": "There were no significant differences in relative abundance of bacterial phyla between asymptomatically colonized patients and patients with CDI.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found no significant differences in relative abundance of bacterial phyla between asymptomatically colonized patients and patients with CDI (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data and statistical analysis as shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "55b85c36-fbbd-459c-aaa6-dcaf9d3a2c72",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C39",
+      "claim": "Species from class Clostridia were most enriched in taxa significantly altered by EIA status.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, species from class Clostridia were most enriched in taxa significantly altered by EIA status (Fisher's exact test, p = 0.0022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data analyzed using MaAslin2 and statistical testing (Fisher's exact test, p = 0.0022).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "92b17adc-21ee-42a1-a66e-02932c86cab5",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C40",
+      "claim": "C. difficile was the strongest predictor of CDI state.",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile was the strongest predictor of CDI state, whereas non-C. difficile clostridial taxa were predictive of asymptomatic state (Figure 1C, FDR < 0.25).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data analyzed using MaAslin2 multivariable regression modeling, as shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "908afcbb-f27e-4b9e-b5a2-427736ae29b2",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C41",
+      "claim": "Non-C. difficile clostridial taxa were predictive of asymptomatic state.",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile was the strongest predictor of CDI state, whereas non-C. difficile clostridial taxa were predictive of asymptomatic state (Figure 1C, FDR < 0.25).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data analyzed using MaAslin2 multivariable regression modeling, as shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "a3c497bd-e406-4d37-8519-de8bdf816328",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C42",
+      "claim": "C. difficile relative abundance was not significantly different when stratified by isolate CDT status.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that C. difficile relative abundance was not significantly different when stratified by isolate CDT status (Figure 1\u2014figure supplement 2C; p = 0.3, Wilcoxon rank sum) or isolate ribotype (p = 0.78, Kruskal-Wallis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data and statistical analysis (p = 0.3, Wilcoxon rank sum) as shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "5519fbe0-c024-4d26-93fb-68415fe4eafa",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C43",
+      "claim": "C. difficile relative abundance was not significantly different when stratified by isolate ribotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that C. difficile relative abundance was not significantly different when stratified by isolate CDT status (Figure 1\u2014figure supplement 2C; p = 0.3, Wilcoxon rank sum) or isolate ribotype (p = 0.78, Kruskal-Wallis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data and statistical analysis (p = 0.78, Kruskal-Wallis) as shown in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "92a06bf6-da7e-45b0-8351-d346d56f7844",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C44",
+      "claim": "Taxonomic features predictive of CDI state were also associated with antibiotic exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "We also interrogated taxonomic features that were predictive of antibiotic exposure. Expectedly, we found that taxonomic features predictive of CDI state were also associated with antibiotic exposure (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metagenomic sequencing data analyzed using MaAslin2 to identify associations with antibiotic exposure, as shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "43614fbe-2cce-4c16-b806-0326dbac8b7d",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C45",
+      "claim": "There were no significant differences in alpha- or beta-diversity between overall metabolic pathway composition in the two patient microbiome groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant differences in alpha- or beta-diversity between overall metabolic pathway composition in the two patient microbiome groups (Figure 2\u2014figure supplement 1A,B; p = 0.2393, Wilcoxon rank sum and p = 0.054, PERMANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by HUMAnN2 metabolic pathway analysis and statistical testing (p = 0.2393, Wilcoxon rank sum and p = 0.054, PERMANOVA) as shown in Figure 2\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "02ec0672-c963-4b5b-bfab-e17ab7055a1f",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C46",
+      "claim": "Sucrose degradation III pathway was increased in asymptomatic patients, largely due to Blautia spp. and Faecalibacterium spp. of the class Clostridia.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigation of the genera that encode such pathways revealed that the sucrose degradation III pathway was increased in asymptomatic patients, largely due to Blautia spp. and Faecalibacterium spp. of the class Clostridia (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by HUMAnN2 metabolic pathway analysis showing taxonomic contributions to pathways, as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "bef088e4-6bf4-4874-9c53-04b6e246c718",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C47",
+      "claim": "Fucose and rhamnose degradation pathways were entirely defined by Escherichia spp., presumably E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the fucose and rhamnose degradation pathways were entirely defined by Escherichia spp., presumably E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by HUMAnN2 metabolic pathway analysis showing taxonomic contributions to pathways, as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "742cc445-9ebf-4d43-948a-d882c66b9a8d",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C48",
+      "claim": "There were no significant differences in metabolome structure between Cx+/EIA- and Cx+/EIA+ stool metabolomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Ordination of Euclidean distances between Cx+/EIA- and Cx+/EIA+ stool metabolomes revealed no significant differences in metabolome structure (Figure 2\u2014figure supplement 1C, PERMANOVA = 0.426).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metabolomics data and statistical analysis (PERMANOVA = 0.426) as shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "cf02929f-b21b-4241-ace0-648b3a8c8ebc",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C49",
+      "claim": "End-product Stickland fermentation metabolites (4-methypentanoic acid and 5-aminovalerate) were associated with CDI patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous analysis, a number of end-product Stickland fermentation metabolites (4-methypentanoic acid and 5-aminovalerate) were associated with CDI patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by metabolomics data analyzed using MaAslin2, as shown in Figure 3A, and is consistent with previous literature (Robinson et al., 2019).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "001885b0-b242-48e3-9f29-7adc0f18c8b8",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C50",
+      "claim": "4-hydroxyproline was the strongest predictor of asymptomatically colonized patients.",
+      "claim_type": "EXPLICIT",
+      "source": "While 4-hydroxyproline was the strongest predictor of asymptomaticallycolonized patients, many of the significant metabolites that were associated with asymptomatic patients were predicted to be carbohydrates (Figure 3A, FDR < 0.25; Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metabolomics data analyzed using MaAslin2, as shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "7e839369-957c-4495-b9f3-34ff7443a3a0",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C51",
+      "claim": "Many of the significant metabolites associated with asymptomatic patients were predicted to be carbohydrates.",
+      "claim_type": "EXPLICIT",
+      "source": "While 4-hydroxyproline was the strongest predictor of asymptomaticallycolonized patients, many of the significant metabolites that were associated with asymptomatic patients were predicted to be carbohydrates (Figure 3A, FDR < 0.25; Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by metabolomics data analyzed using MaAslin2, as shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "21fa4d83-362a-4d85-8c56-c0241d5a385a",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C52",
+      "claim": "C. difficile isolates grew robustly on fructose with a median maximum A600 of 0.90.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a defined minimal media (CDMM)( Karasawa et al., 1995) to test nutrient utilization, we found that C. difficile isolates grew robustly on fructose as expected (median maximum A600 of 0.90), but did not proliferate on rhamnose or lactulose (median maximum A600 of 0.19 and 0.24, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vitro growth assays in defined minimal media (CDMM), as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "815f07b2-8de4-4c09-b567-5bcfdc5b61dc",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C53",
+      "claim": "C. difficile isolates did not proliferate on rhamnose with a median maximum A600 of 0.19.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a defined minimal media (CDMM)( Karasawa et al., 1995) to test nutrient utilization, we found that C. difficile isolates grew robustly on fructose as expected (median maximum A600 of 0.90), but did not proliferate on rhamnose or lactulose (median maximum A600 of 0.19 and 0.24, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vitro growth assays in defined minimal media (CDMM), as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "c8b557fd-6da9-4ace-865c-67005d558e3e",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C54",
+      "claim": "C. difficile isolates did not proliferate on lactulose with a median maximum A600 of 0.24.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a defined minimal media (CDMM)( Karasawa et al., 1995) to test nutrient utilization, we found that C. difficile isolates grew robustly on fructose as expected (median maximum A600 of 0.90), but did not proliferate on rhamnose or lactulose (median maximum A600 of 0.19 and 0.24, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vitro growth assays in defined minimal media (CDMM), as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "16df218c-ebbd-4bfa-b7ab-d82b340e7d05",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C55",
+      "claim": "A subset of C. difficile strains, including C. difficile 630 and C. difficile VPI10643, grew on sorbitol to a maximum A600 of greater than 0.47.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in the case of sorbitol, we found that a subset of strains, including the reference strain C. difficile 630 and C. difficile VPI10643, grew to a maximum A600 of greater than 0.47 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vitro growth assays in defined minimal media (CDMM), as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "6d85f4bd-085c-4faa-9ea8-0b37ca5ee197",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C56",
+      "claim": "When grown on sucrose as the sole carbon source, C. difficile strains achieved a median maximum A600 ~4.7-fold less than that of growth on fructose.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when grown on sucrose as the sole carbon source, strains achieved a median maximum A600 ~4.7-fold less than that of growth on fructose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vitro growth assays in defined minimal media (CDMM), as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "074c9f7e-220f-4081-ad08-62159b52ab69",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C57",
+      "claim": "C. difficile abundance was positively correlated with 5-amino-valeric acid (rho = 0.48).",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile abundance was positively correlated with a number of well-known Stickland metabolites (5-amino-valeric acid and 4-methylpentanoic acid, rho = 0.48 and 0.36, respectively)(Robinson et al., 2019), whereas C. difficile had negative correlations with fructose, rhamnose, and hydroxyproline (rho = \u20130.27, 0.36, and \u20130.34, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sparse partial least-squares-discriminatory analysis (sPLS-DA) correlating metagenomic and metabolomic data, as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "40db1b7d-6dba-4928-ad93-5cbed0b612c0",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C58",
+      "claim": "C. difficile abundance was positively correlated with 4-methylpentanoic acid (rho = 0.36).",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile abundance was positively correlated with a number of well-known Stickland metabolites (5-amino-valeric acid and 4-methylpentanoic acid, rho = 0.48 and 0.36, respectively)(Robinson et al., 2019), whereas C. difficile had negative correlations with fructose, rhamnose, and hydroxyproline (rho = \u20130.27, 0.36, and \u20130.34, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sparse partial least-squares-discriminatory analysis (sPLS-DA) correlating metagenomic and metabolomic data, as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "b576ca90-a29c-4e97-afa7-d9e209b9d615",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C59",
+      "claim": "C. difficile had negative correlations with fructose (rho = \u20130.27).",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile abundance was positively correlated with a number of well-known Stickland metabolites (5-amino-valeric acid and 4-methylpentanoic acid, rho = 0.48 and 0.36, respectively)(Robinson et al., 2019), whereas C. difficile had negative correlations with fructose, rhamnose, and hydroxyproline (rho = \u20130.27, 0.36, and \u20130.34, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sparse partial least-squares-discriminatory analysis (sPLS-DA) correlating metagenomic and metabolomic data, as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "7bc85911-30d3-44c4-8a99-6b168917f9ec",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C60",
+      "claim": "C. difficile had negative correlations with rhamnose (rho = \u20130.36).",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile abundance was positively correlated with a number of well-known Stickland metabolites (5-amino-valeric acid and 4-methylpentanoic acid, rho = 0.48 and 0.36, respectively)(Robinson et al., 2019), whereas C. difficile had negative correlations with fructose, rhamnose, and hydroxyproline (rho = \u20130.27, 0.36, and \u20130.34, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sparse partial least-squares-discriminatory analysis (sPLS-DA) correlating metagenomic and metabolomic data, as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "9c6f8e31-f993-4027-874c-d09d5674bb73",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C61",
+      "claim": "C. difficile had negative correlations with hydroxyproline (rho = \u20130.34).",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile abundance was positively correlated with a number of well-known Stickland metabolites (5-amino-valeric acid and 4-methylpentanoic acid, rho = 0.48 and 0.36, respectively)(Robinson et al., 2019), whereas C. difficile had negative correlations with fructose, rhamnose, and hydroxyproline (rho = \u20130.27, 0.36, and \u20130.34, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sparse partial least-squares-discriminatory analysis (sPLS-DA) correlating metagenomic and metabolomic data, as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "36670162-7d4d-49bc-be77-c74e223dfb2f",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C62",
+      "claim": "In the presence of fructose, 555 genes were significantly altered in C. difficile (adjusted p-value < 0.05 and |fold-change| > 2).",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of fructose, we found 555 genes significantly altered (adjusted p-value < 0.05 and |fold-change| > 2) (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA sequencing data comparing C. difficile transcriptomes in different carbohydrate conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "bb6dd8a1-0999-40b5-bad5-55273e02cfaf",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C63",
+      "claim": "Only three genes were significantly increased in C. difficile in the rhamnose condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found only three genes significantly increased in the rhamnose condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA sequencing data comparing C. difficile transcriptomes in different carbohydrate conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "eaa51d0e-2a50-42a9-9d9b-5c6b9d79e05b",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C64",
+      "claim": "Rhamnose is a major component of plant and some bacterial cell-wall polysaccharides.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhamnose is a major component of plant and some bacterial cell-wall polysaccharides (Silva et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Silva et al., 2020) describing the biochemical properties of rhamnose.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "c8f4573c-c74f-465b-895f-2299f289a653",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C65",
+      "claim": "The detected rhamnose is a byproduct of commensal catabolism of more complex polysaccharides containing rhamnose.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that the detected rhamnose is a byproduct of commensal catabolism of more complex polysaccharides containing rhamnose (Porter and Martens, 2017; Mistou et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed hypothesis based on inference from the metabolomics and metagenomic data, supported by citations to literature on polysaccharide metabolism (Porter and Martens, 2017; Mistou et al., 2016).",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "a581cb01-60d8-4d81-b368-d27c5821d750",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C66",
+      "claim": "Lactulose has been previously associated with a decrease in C. difficile-related diarrhea.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, lactulose has been previously associated with a decrease in C. difficile-related diarrhea (Maltz et al., 2020) and decreased risk of CDI (Maltz et al., 2020; Agarwalla et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Maltz et al., 2020) showing associations between lactulose and CDI outcomes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "a56802b9-33d6-4a55-9931-29204f20793d",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C67",
+      "claim": "Lactulose has been previously associated with decreased risk of CDI.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, lactulose has been previously associated with a decrease in C. difficile-related diarrhea (Maltz et al., 2020) and decreased risk of CDI (Maltz et al., 2020; Agarwalla et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature (Maltz et al., 2020; Agarwalla et al., 2017) showing associations between lactulose and CDI risk.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "afb3de56-30c0-48bf-b9c6-b426874e891e",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C68",
+      "claim": "Lactulose is a disaccharide product from heat treatment of lactose.",
+      "claim_type": "EXPLICIT",
+      "source": "Lactulose is a disaccharide product from heat treatment of lactose (a common sugar in dairy products), but it is also a component of some laxatives (Adachi, 1958).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Adachi, 1958) describing the chemical properties of lactulose.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "86c69404-707e-4322-b967-ef5b4d46138a",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C69",
+      "claim": "Addition of 'non-digestible' oligosaccharides, such as lactulose, provides a competitive advantage to Bifidobacterium spp. over C. difficile in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Other in vitro work demonstrates that addition of 'non-digestible' oligosaccharides, such as lactulose, provides a competitive advantage to Bifidobacterium spp. over C. difficile (Kondepudi et al., 2012; Hopkins and Macfarlane, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature (Kondepudi et al., 2012; Hopkins and Macfarlane, 2003) demonstrating competitive advantages of Bifidobacterium with lactulose.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "8c7b0c03-2e30-4e9c-9801-de6ddd99a3d2",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C70",
+      "claim": "Administration of polysaccharides or 'microbial accessible carbohydrates' may prevent C. difficile proliferation or decrease the risk of CDI.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence from both mouse models of disease and human studies indicate that administration of polysaccharides or 'microbial accessible carbohydrates' may prevent C. difficile proliferation or decrease the risk of CDI (Mefferd et al., 2020; Schnizlein et al., 2020; Hryckowian et al., 2018; Maltz et al., 2020; Lewis et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature (Mefferd et al., 2020; Schnizlein et al., 2020; Hryckowian et al., 2018; Maltz et al., 2020; Lewis et al., 2005) demonstrating effects of carbohydrates on CDI.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "ef045a26-e8f4-4618-ae3b-331f6c6ef32d",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C71",
+      "claim": "A probiotics-based consortium of mucosal sugar utilizers decreased C. difficile colonization in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a probiotics-based attempt to design a consortium of mucosal sugar utilizers revealed its ability to decrease C. difficile colonization in vivo (Pereira et al., 2020), indicating that increasing mucosal metabolism, or carbohydrate catabolism, may be another route to strengthening commensal resistance to C. difficile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Pereira et al., 2020) demonstrating the efficacy of a probiotic consortium against C. difficile.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "2ccc8e21-e6fd-4451-9f87-46c86ad5a935",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C72",
+      "claim": "Increasing mucosal metabolism, or carbohydrate catabolism, may be another route to strengthening commensal resistance to C. difficile.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a probiotics-based attempt to design a consortium of mucosal sugar utilizers revealed its ability to decrease C. difficile colonization in vivo (Pereira et al., 2020), indicating that increasing mucosal metabolism, or carbohydrate catabolism, may be another route to strengthening commensal resistance to C. difficile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from the cited study (Pereira et al., 2020) and the authors' own findings.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "51397cb7-2082-4506-a26d-fe9bd9113136",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C73",
+      "claim": "Species able to competitively utilize carbohydrates such as sorbitol and mannitol can inhibit C. difficile.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, previous attempts to combinatorically assemble species and nutrient combinations that might inhibit C. difficile indicate that success is afforded by species able to competitively utilize carbohydrates such as sorbitol and mannitol (Ghimire et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature (Ghimire et al., 2020) demonstrating competitive inhibition of C. difficile by carbohydrate-utilizing species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "7df56ddf-c17e-46d9-8f6f-1ef56780cc63",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C74",
+      "claim": "The cohort consisted of 124 patients with clinically significant diarrhea (CSD) and stool submitted for C. difficile toxin testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Through retrospective analysis of a human cohort of 124 patients (Supplementary file 1) with clinically significant diarrhea (CSD) and stool submitted for C. difficile toxin testing, we defined two cohorts: those diagnosed with CDI (Cx+/EIA+) or those asymptomatically colonized (Cx+/EIA-) (Robinson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the study cohort and is supported by the study design and citation to the previous work (Robinson et al., 2019).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "e2c03316-a842-4f63-81ef-8cea51a27439",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C75",
+      "claim": "The final set of metagenomes represented 54 Cx+/EIA- and 48 Cx+/EIA+ patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample loss due to low bacterial DNA resulted in a smaller cohort than originally reported (Dubberke et al., 2018), with the final set of metagenomes representing 54 Cx+/EIA- and 48 Cx+/EIA+ patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the final sample size after quality control and is supported by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "bfe69f7a-d5aa-4a26-bd90-99321b62658b",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C76",
+      "claim": "Metagenomic DNA was extracted from patient stools.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagenomic DNA was extracted from patient stools as previously described (Fishbein et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a methodological step supported by citation to previous work (Fishbein et al., 2021a).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "47889413-15a9-4680-aad5-c6d32a2785b8",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C77",
+      "claim": "Samples were sequenced to a depth of at least 5 million reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples that were less than 15% bacterial DNA during initial sequencing were discarded, and all samples were sequenced to a depth of at least 5 million reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a methodological parameter of the sequencing experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "bfecc457-41db-4e82-a54e-26c5c58704c8",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C78",
+      "claim": "C. difficile was detected in 70 out of 102 culture-positive stool samples using MetaPhlAn2.",
+      "claim_type": "EXPLICIT",
+      "source": "Given our inability to detect C. difficile in all sequenced stools (70 out of 102 culture-positive stool samples), we utilized an alternative metagenomic species classifier Kraken (Wood and Salzberg, 2014), to validate our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the detection rate of C. difficile using MetaPhlAn2 metagenomic classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "d4961035-08d8-45ea-8689-cfce5cb627b4",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C79",
+      "claim": "Using Kraken, C. difficile was detected in 101 out of 102 culture-positive stool samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Kraken, we detected C. difficile in nearly all stool metagenomes (101 out of 102).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the detection rate of C. difficile using Kraken metagenomic classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "22c98380-3dff-4617-a4b8-7cc7b6ba6d76",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C80",
+      "claim": "The mean-prediction AUC for the elastic net model was 0.825.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean-prediction AUC for the elastic net model was 0.825.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the performance of the elastic net model used to identify pathways associated with EIA status, as shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "90f96b2d-cb1c-4957-b943-7aadd7d4fdff",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C81",
+      "claim": "The predictive value of each of the components per block was greater than an area under the curve (AUC) of 0.85.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictive value of each of the components per block was greater that an area under the curve (AUC) of 0.85, with the second metagenomic block component having the best performance (AUC = 0.94, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the performance of the sPLS-DA model components, as shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "c3863195-0d02-4030-8c09-4bbee81149b3",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C82",
+      "claim": "The second metagenomic block component had the best performance with AUC = 0.94.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictive value of each of the components per block was greater that an area under the curve (AUC) of 0.85, with the second metagenomic block component having the best performance (AUC = 0.94, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes the performance of the sPLS-DA model components, as shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "405ec020-8c8c-4e13-ba54-3f8fff9e9dd8",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C83",
+      "claim": "Asymptomatically colonized patients are defined by an interaction of clostridial species and carbohydrate metabolites that may serve as a last-line of resistance against CDI in colonized patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these datasets reveal that asymptomatically colonized patients are defined by an interaction of clostridial species and carbohydrate metabolites that may serve as a last-line of resistance against CDI in colonized patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the integration of multiple data types (metagenomics, metabolomics, in vitro assays) presented in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "f98e66dc-4775-4b92-94ac-a7acb3a3901b",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C84",
+      "claim": "Patients with asymptomatic C. difficile colonization or CDI do not have grossly different gut microbiome community structures but instead have distinctive alterations in a subset of species from class Clostridia and class Bacilli in the microbiota.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that patients with asymptomatic C. difficile colonization or CDI do not have grossly different gut microbiome community structures but instead have distinctive alterations in a subset of species from class Clostridia and class Bacilli in the microbiota.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the metagenomic analysis showing no differences in overall diversity but specific taxonomic differences.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "b53cc904-2466-4dda-a0bd-c79010c4592e",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C85",
+      "claim": "Fructose and rhamnose are either substrates or products of the sucrose degradation III and fucose and rhamnose degradation pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, fructose and rhamnose are either substrates or products of the sucrose degradation III and fucose and rhamnose degradation pathways, which we found to be enriched in asymptomatically colonized patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of metabolic pathways and inference from the pathway analysis results.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "88f2c16f-d86f-4261-a759-389a8d05d472",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C86",
+      "claim": "The co-occurrence of microbial pathways and their corresponding metabolites in asymptomatically colonized patients suggests that a commensal carbohydrate catabolism may contribute to suppression of C. difficile pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-occurrence of these microbial pathways and their corresponding metabolites in asymptomatically colonized patients suggests that a commensal carbohydrate catabolism may contribute to suppression of C. difficile pathogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from the integration of metagenomic pathway analysis and metabolomics data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "6e7fcb18-77a0-4e9a-b65b-4066ea3a417e",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C87",
+      "claim": "C. difficile's restricted carbohydrate metabolism, coupled with the presence of commensal Clostridia could hamper progression to CDI.",
+      "claim_type": "EXPLICIT",
+      "source": "C. difficile's restricted carbohydrate metabolism, coupled with the presence of commensal Clostridia could hamper progression to CDI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis inferred from the in vitro growth data and metagenomic analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "28b6f389-8a3b-4aa6-8699-30fbec7038e6",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C88",
+      "claim": "The lack of striking systems-level or targeted regulation by rhamnose leads to the conclusion that its association with asymptomatically colonized patients' microbiomes is not through direct interaction or suppression of C. difficile.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of striking systems-level or targeted (toxin expression, sporulation) regulation by rhamnose, and C. difficile's inability to utilize it, leads us to conclude that its association with asymptomatically colonized patients' microbiomes is not through direct interaction or suppression of C. difficile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the RNA sequencing data showing minimal transcriptional response to rhamnose.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "6f236821-73cd-4160-8b1b-14cbde8e7963",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "claim_id": "C89",
+      "claim": "Rhamnose may be the byproduct of a complex commensal metabolism of other dietary polysaccharide substrates, which could exclude C. difficile from the GI tract.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we speculate that rhamnose may be the byproduct of a complex commensal metabolism of other dietary polysaccharide substrates, which could exclude C. difficile from the GI tract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation based on the integration of multiple data types.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7663a5d2-a02b-4ec5-80d4-8eb48c751b13",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CDI patients were significantly more likely to harbor C. difficile strains with the binary toxin (CDT) locus (p=0.0012) and ribotype 027 (p=0.0058) compared to asymptomatically colonized patients. Among CDT-positive isolates, 36% were ribotype 027.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C27, C28, and C30 are well-supported by multiplex PCR and ribotyping data with appropriate statistical testing (Fisher's exact test). The associations are statistically significant and the methods are appropriate for this type of analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "95aeb879-84c9-4e9d-9114-1c817f7eb615",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vitro toxin production capacity did not differ significantly between isolates from asymptomatic (24/54) and CDI patients (24/48), with 56% of all isolates producing detectable TcdA/B (p=0.86).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 are supported by ELISA data with appropriate statistical testing. However, the authors acknowledge that in vitro toxin production may not reflect in vivo conditions, which is an important limitation for interpreting disease relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "ce685e50-3c97-4a1c-aa02-b139212a1af4",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Logistic regression analysis revealed that CDI was significantly associated with cephalosporin exposure (p=2.70E-04, McFadden's R\u00b2=0.306).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by appropriate logistic regression analysis. The association is statistically significant and consistent with known CDI risk factors, though the model explains only ~31% of variance, suggesting other unmeasured factors contribute.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "95bd9040-548f-4c64-a5f6-f3cebdc535b1",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "No significant differences were observed in overall microbiome diversity (alpha or beta) or phylum-level composition between asymptomatic and CDI patient groups, nor were microbiome structures associated with pathogen genetic features (CDT locus or ribotype).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are well-supported by metagenomic data with appropriate diversity metrics and statistical tests (Wilcoxon, PERMANOVA). The lack of gross differences is important for focusing subsequent analyses on specific taxa rather than community-level changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "9b4f2b08-02c1-4895-8aa8-dc4e1e13b3a1",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Species from class Clostridia were significantly enriched among taxa altered by EIA status (p=0.0022). C. difficile was the strongest predictor of CDI state, while non-C. difficile clostridial taxa (including Eubacterium, Dorea, and Lachnospiraceae spp.) were predictive of asymptomatic state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C39, C40, and C41 are supported by MaAslin2 multivariable regression with appropriate FDR correction (q<0.25). The validation using Kraken classification strengthens these findings. However, the correlative nature means directionality and causation cannot be established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "2cd92ffc-fe53-4b9c-9495-e9c79836195e",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "C. difficile relative abundance in patient microbiomes did not differ significantly when stratified by isolate CDT status (p=0.3) or ribotype (p=0.78).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C43 are supported by appropriate statistical tests. This finding suggests that pathogen genetic features influence disease outcome through mechanisms other than simply affecting pathogen abundance in the gut.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "f55d1a60-3a1d-4fd4-b9e5-b60c706c226f",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Taxonomic features predictive of CDI state were also associated with antibiotic exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by MaAslin2 analysis. This finding is expected given that antibiotic exposure is a major risk factor for CDI, but it raises important questions about confounding between antibiotic effects and disease state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "9c2b7bfa-d5de-4bb3-9da4-8e3fa4b38771",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Asymptomatically colonized patients showed enrichment of carbohydrate degradation pathways, particularly sucrose degradation III (encoded by Blautia and Faecalibacterium spp.) and fucose/rhamnose degradation (encoded by Escherichia spp.), along with increased glycoside hydrolase genes. An elastic net model identified these pathways with AUC=0.825.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C6, C7, C46, C47, and C80 are supported by HUMAnN2 pathway analysis and elastic net modeling with reasonable performance. The taxonomic attribution of pathways adds mechanistic insight. However, pathway abundance does not necessarily reflect activity, and the model performance suggests moderate but not excellent discrimination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "ac16266e-bc77-4597-8f11-71c226b45c52",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Metabolomic analysis revealed no overall structural differences between groups (PERMANOVA=0.426), but identified specific metabolites associated with each state. Stickland fermentation products (4-methylpentanoic acid, 5-aminovalerate) were associated with CDI, while 4-hydroxyproline and multiple carbohydrates were associated with asymptomatic colonization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C8, C49, C50, and C51 are supported by metabolomics data analyzed with MaAslin2. Metabolite identities were validated against authentic standards (Figure 3\u2014supplement 1), strengthening confidence. However, the lack of dietary data limits interpretation of whether differences reflect microbial metabolism vs. diet.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "ea097af9-d622-4069-9f0a-8e89df93a953",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In vitro growth assays demonstrated that C. difficile isolates grew robustly on fructose (median A600=0.90) but poorly on sucrose (~4.7-fold less growth), rhamnose (A600=0.19), and lactulose (A600=0.24).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 and C52-C54, C56 are supported by in vitro growth data in defined minimal media. The experiments used appropriate controls (fructose) and multiple clinical isolates. However, in vitro conditions may not reflect the complex in vivo environment, and the number of isolates tested (n=8) is relatively small.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "b2bb9c98-9e20-44ce-a2d9-44241b93661f",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A subset of C. difficile strains, including reference strains 630 and VPI10643, showed growth on sorbitol (A600>0.47), indicating strain-specific metabolic variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by in vitro growth data showing strain-specific differences. This highlights important metabolic heterogeneity among C. difficile strains that may influence ecological interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "773c2d6b-c25d-4175-9913-13ce4e23ff4f",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multi-omics integration using sPLS-DA revealed that C. difficile abundance positively correlated with Stickland metabolites (5-amino-valeric acid \u03c1=0.48, 4-methylpentanoic acid \u03c1=0.36) and negatively with carbohydrates (fructose \u03c1=-0.27, rhamnose \u03c1=-0.36, hydroxyproline \u03c1=-0.34). Model components achieved AUC>0.85, with the second metagenomic component reaching AUC=0.94.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 and C81-C82 are supported by sPLS-DA analysis with good model performance. The correlations are biologically plausible and consistent across MetaPhlAn2 and Kraken analyses. However, correlations do not establish causation, and the high AUC may reflect overfitting given the relatively small sample size.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "d4f46115-a9e8-46f9-8fd8-9af285ae1cfd",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "RNA-seq analysis showed that fructose induced significant transcriptional changes in C. difficile (555 genes altered), while rhamnose induced minimal response (only 3 genes), leading to the conclusion that rhamnose does not directly interact with or suppress C. difficile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C63, and C88 are supported by RNA-seq data with appropriate statistical thresholds (adjusted p<0.05, |FC|>2). The stark difference in transcriptional response supports the interpretation. However, the experiment used only one strain (VPI10643) and may not represent all C. difficile strains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "02b1f470-7adf-4d59-ad54-ad4ac7794d95",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors conclude that pathogen genetic variation (CDT locus, ribotype) may be strongly related to disease outcome in C. difficile colonization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 is supported by the significant associations between pathogen genetic features and EIA status (C2, C3, C27, C28). However, the conclusion is somewhat overstated given that C. difficile abundance did not differ by these genetic features (C42, C43), suggesting the mechanism is more complex than implied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "7a1a56b3-b7ee-45bb-92fc-2db5bd6b6427",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors hypothesize that carbohydrate metabolism by commensal Clostridia may prevent CDI by inhibiting C. difficile proliferation through competitive exclusion, representing a 'last-line of resistance' in colonized patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C13, C83, C86, and C87 represent the central hypothesis integrating all findings. While the correlative data (microbiome, metabolome, in vitro growth) are consistent with this hypothesis, direct evidence of competitive exclusion or causation is lacking. The hypothesis is plausible but requires experimental validation (e.g., co-culture experiments, in vivo competition studies, dietary interventions).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "6a83247d-ad17-48b3-bc17-9e0e22300db1",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose that detected rhamnose is a byproduct of commensal catabolism of complex polysaccharides, which could exclude C. difficile from the GI tract.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65 and C89 are explicitly stated as speculation. While supported by the observation that rhamnose is a component of plant polysaccharides (C64) and that C. difficile cannot utilize it (C10, C53), direct evidence for this mechanism is lacking. The RNA-seq data (C88) supports that rhamnose doesn't directly affect C. difficile, but the proposed indirect mechanism requires validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "8d0ec64c-f73b-4076-adc3-73f3f64a8588",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors conclude that asymptomatic and CDI patients do not have grossly different microbiome structures but show distinctive alterations in specific Clostridia and Bacilli species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 accurately summarizes the microbiome findings (C34-C38, C39-C41). This conclusion is well-supported by the data and represents an important refinement of understanding, suggesting that CDI susceptibility relates to specific taxa rather than overall dysbiosis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    },
+    {
+      "id": "c5cea522-d3f1-420b-b314-662888c297c3",
+      "content_id": "af17297c-43ff-4b24-aa32-f88e76b2679b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study analyzed 102 patients (54 Cx+/EIA-, 48 Cx+/EIA+) after quality control, with metagenomic sequencing to \u22655 million reads. C. difficile detection was more sensitive with Kraken (101/102) than MetaPhlAn2 (70/102).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 describe the cohort and methodological details. The sample size is reasonable for this type of study, though the reduction from 124 to 102 patients due to low bacterial DNA is notable. The comparison of classification methods (C78, C79) is valuable and the use of Kraken for validation strengthens the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:32:58.951277Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a36098c4-ee44-42d6-93d2-fe4b10bb2a2f",
+      "result_id": "7663a5d2-a02b-4ec5-80d4-8eb48c751b13"
+    },
+    {
+      "claim_id": "59491f55-3b13-4edd-9367-a40170f3c8a2",
+      "result_id": "7663a5d2-a02b-4ec5-80d4-8eb48c751b13"
+    },
+    {
+      "claim_id": "0788871a-c7c6-4164-b133-db6d52040c9c",
+      "result_id": "7663a5d2-a02b-4ec5-80d4-8eb48c751b13"
+    },
+    {
+      "claim_id": "b2c72369-510a-48f4-9b6f-5b521ce91bce",
+      "result_id": "7663a5d2-a02b-4ec5-80d4-8eb48c751b13"
+    },
+    {
+      "claim_id": "267f4cec-3220-4c06-86c2-23fe686e2d19",
+      "result_id": "7663a5d2-a02b-4ec5-80d4-8eb48c751b13"
+    },
+    {
+      "claim_id": "7c4d05fe-5e6e-4a37-a112-136d11dc12f1",
+      "result_id": "95aeb879-84c9-4e9d-9114-1c817f7eb615"
+    },
+    {
+      "claim_id": "26463502-e330-4aea-b25b-1a6d0b88ec28",
+      "result_id": "95aeb879-84c9-4e9d-9114-1c817f7eb615"
+    },
+    {
+      "claim_id": "ded4e938-deac-4055-8408-8a53c73f0c07",
+      "result_id": "ce685e50-3c97-4a1c-aa02-b139212a1af4"
+    },
+    {
+      "claim_id": "332d55e5-3d71-4fc2-a32a-0996253562fc",
+      "result_id": "95bd9040-548f-4c64-a5f6-f3cebdc535b1"
+    },
+    {
+      "claim_id": "5ac35c94-4175-4093-8f87-104d9a7503e8",
+      "result_id": "95bd9040-548f-4c64-a5f6-f3cebdc535b1"
+    },
+    {
+      "claim_id": "877d2b19-41d7-4a93-ac50-50d68bdad1e1",
+      "result_id": "95bd9040-548f-4c64-a5f6-f3cebdc535b1"
+    },
+    {
+      "claim_id": "028621d6-2c4a-40ca-b086-e4e89a140b3e",
+      "result_id": "95bd9040-548f-4c64-a5f6-f3cebdc535b1"
+    },
+    {
+      "claim_id": "685e00fe-eb7c-4c8a-9315-7f5f72113daa",
+      "result_id": "95bd9040-548f-4c64-a5f6-f3cebdc535b1"
+    },
+    {
+      "claim_id": "374e9378-8854-4dd7-a937-63dd79cb8592",
+      "result_id": "9b4f2b08-02c1-4895-8aa8-dc4e1e13b3a1"
+    },
+    {
+      "claim_id": "55b85c36-fbbd-459c-aaa6-dcaf9d3a2c72",
+      "result_id": "9b4f2b08-02c1-4895-8aa8-dc4e1e13b3a1"
+    },
+    {
+      "claim_id": "92b17adc-21ee-42a1-a66e-02932c86cab5",
+      "result_id": "9b4f2b08-02c1-4895-8aa8-dc4e1e13b3a1"
+    },
+    {
+      "claim_id": "908afcbb-f27e-4b9e-b5a2-427736ae29b2",
+      "result_id": "9b4f2b08-02c1-4895-8aa8-dc4e1e13b3a1"
+    },
+    {
+      "claim_id": "a3c497bd-e406-4d37-8519-de8bdf816328",
+      "result_id": "2cd92ffc-fe53-4b9c-9495-e9c79836195e"
+    },
+    {
+      "claim_id": "5519fbe0-c024-4d26-93fb-68415fe4eafa",
+      "result_id": "2cd92ffc-fe53-4b9c-9495-e9c79836195e"
+    },
+    {
+      "claim_id": "92a06bf6-da7e-45b0-8351-d346d56f7844",
+      "result_id": "f55d1a60-3a1d-4fd4-b9e5-b60c706c226f"
+    },
+    {
+      "claim_id": "43614fbe-2cce-4c16-b806-0326dbac8b7d",
+      "result_id": "9c2b7bfa-d5de-4bb3-9da4-8e3fa4b38771"
+    },
+    {
+      "claim_id": "8b1423c7-20a8-4e11-8ae4-abca1deeedf8",
+      "result_id": "9c2b7bfa-d5de-4bb3-9da4-8e3fa4b38771"
+    },
+    {
+      "claim_id": "10fe572f-4f1b-4de1-a433-27ab688336d3",
+      "result_id": "9c2b7bfa-d5de-4bb3-9da4-8e3fa4b38771"
+    },
+    {
+      "claim_id": "02ec0672-c963-4b5b-bfab-e17ab7055a1f",
+      "result_id": "9c2b7bfa-d5de-4bb3-9da4-8e3fa4b38771"
+    },
+    {
+      "claim_id": "bef088e4-6bf4-4874-9c53-04b6e246c718",
+      "result_id": "9c2b7bfa-d5de-4bb3-9da4-8e3fa4b38771"
+    },
+    {
+      "claim_id": "22c98380-3dff-4617-a4b8-7cc7b6ba6d76",
+      "result_id": "9c2b7bfa-d5de-4bb3-9da4-8e3fa4b38771"
+    },
+    {
+      "claim_id": "742cc445-9ebf-4d43-948a-d882c66b9a8d",
+      "result_id": "ac16266e-bc77-4597-8f11-71c226b45c52"
+    },
+    {
+      "claim_id": "b66f94f2-f81d-409d-9fa3-03f6d8f232be",
+      "result_id": "ac16266e-bc77-4597-8f11-71c226b45c52"
+    },
+    {
+      "claim_id": "cf02929f-b21b-4241-ace0-648b3a8c8ebc",
+      "result_id": "ac16266e-bc77-4597-8f11-71c226b45c52"
+    },
+    {
+      "claim_id": "001885b0-b242-48e3-9f29-7adc0f18c8b8",
+      "result_id": "ac16266e-bc77-4597-8f11-71c226b45c52"
+    },
+    {
+      "claim_id": "7e839369-957c-4495-b9f3-34ff7443a3a0",
+      "result_id": "ac16266e-bc77-4597-8f11-71c226b45c52"
+    },
+    {
+      "claim_id": "839b16b7-e4c8-4161-a216-52317630186e",
+      "result_id": "ea097af9-d622-4069-9f0a-8e89df93a953"
+    },
+    {
+      "claim_id": "715136a8-14b5-4c16-931c-2da6eb84fe1a",
+      "result_id": "ea097af9-d622-4069-9f0a-8e89df93a953"
+    },
+    {
+      "claim_id": "dd2ed395-0008-458c-8b1f-b035a2e7d17b",
+      "result_id": "ea097af9-d622-4069-9f0a-8e89df93a953"
+    },
+    {
+      "claim_id": "21fa4d83-362a-4d85-8c56-c0241d5a385a",
+      "result_id": "ea097af9-d622-4069-9f0a-8e89df93a953"
+    },
+    {
+      "claim_id": "815f07b2-8de4-4c09-b567-5bcfdc5b61dc",
+      "result_id": "ea097af9-d622-4069-9f0a-8e89df93a953"
+    },
+    {
+      "claim_id": "c8b557fd-6da9-4ace-865c-67005d558e3e",
+      "result_id": "ea097af9-d622-4069-9f0a-8e89df93a953"
+    },
+    {
+      "claim_id": "6d85f4bd-085c-4faa-9ea8-0b37ca5ee197",
+      "result_id": "ea097af9-d622-4069-9f0a-8e89df93a953"
+    },
+    {
+      "claim_id": "16df218c-ebbd-4bfa-b7ab-d82b340e7d05",
+      "result_id": "b2bb9c98-9e20-44ce-a2d9-44241b93661f"
+    },
+    {
+      "claim_id": "074c9f7e-220f-4081-ad08-62159b52ab69",
+      "result_id": "773c2d6b-c25d-4175-9913-13ce4e23ff4f"
+    },
+    {
+      "claim_id": "40db1b7d-6dba-4928-ad93-5cbed0b612c0",
+      "result_id": "773c2d6b-c25d-4175-9913-13ce4e23ff4f"
+    },
+    {
+      "claim_id": "b576ca90-a29c-4e97-afa7-d9e209b9d615",
+      "result_id": "773c2d6b-c25d-4175-9913-13ce4e23ff4f"
+    },
+    {
+      "claim_id": "7bc85911-30d3-44c4-8a99-6b168917f9ec",
+      "result_id": "773c2d6b-c25d-4175-9913-13ce4e23ff4f"
+    },
+    {
+      "claim_id": "9c6f8e31-f993-4027-874c-d09d5674bb73",
+      "result_id": "773c2d6b-c25d-4175-9913-13ce4e23ff4f"
+    },
+    {
+      "claim_id": "90f96b2d-cb1c-4957-b943-7aadd7d4fdff",
+      "result_id": "773c2d6b-c25d-4175-9913-13ce4e23ff4f"
+    },
+    {
+      "claim_id": "c3863195-0d02-4030-8c09-4bbee81149b3",
+      "result_id": "773c2d6b-c25d-4175-9913-13ce4e23ff4f"
+    },
+    {
+      "claim_id": "36670162-7d4d-49bc-be77-c74e223dfb2f",
+      "result_id": "d4f46115-a9e8-46f9-8fd8-9af285ae1cfd"
+    },
+    {
+      "claim_id": "bb6dd8a1-0999-40b5-bad5-55273e02cfaf",
+      "result_id": "d4f46115-a9e8-46f9-8fd8-9af285ae1cfd"
+    },
+    {
+      "claim_id": "28b6f389-8a3b-4aa6-8699-30fbec7038e6",
+      "result_id": "d4f46115-a9e8-46f9-8fd8-9af285ae1cfd"
+    },
+    {
+      "claim_id": "de3e6918-3a40-43be-9b43-3131796fd7a7",
+      "result_id": "02b1f470-7adf-4d59-ad54-ad4ac7794d95"
+    },
+    {
+      "claim_id": "04df14b6-a218-4e4b-9fa4-86ec33cfb700",
+      "result_id": "7a1a56b3-b7ee-45bb-92fc-2db5bd6b6427"
+    },
+    {
+      "claim_id": "405ec020-8c8c-4e13-ba54-3f8fff9e9dd8",
+      "result_id": "7a1a56b3-b7ee-45bb-92fc-2db5bd6b6427"
+    },
+    {
+      "claim_id": "88f2c16f-d86f-4261-a759-389a8d05d472",
+      "result_id": "7a1a56b3-b7ee-45bb-92fc-2db5bd6b6427"
+    },
+    {
+      "claim_id": "6e7fcb18-77a0-4e9a-b65b-4066ea3a417e",
+      "result_id": "7a1a56b3-b7ee-45bb-92fc-2db5bd6b6427"
+    },
+    {
+      "claim_id": "c8f4573c-c74f-465b-895f-2299f289a653",
+      "result_id": "6a83247d-ad17-48b3-bc17-9e0e22300db1"
+    },
+    {
+      "claim_id": "6f236821-73cd-4160-8b1b-14cbde8e7963",
+      "result_id": "6a83247d-ad17-48b3-bc17-9e0e22300db1"
+    },
+    {
+      "claim_id": "f98e66dc-4775-4b92-94ac-a7acb3a3901b",
+      "result_id": "8d0ec64c-f73b-4076-adc3-73f3f64a8588"
+    },
+    {
+      "claim_id": "7df56ddf-c17e-46d9-8f6f-1ef56780cc63",
+      "result_id": "c5cea522-d3f1-420b-b314-662888c297c3"
+    },
+    {
+      "claim_id": "e2c03316-a842-4f63-81ef-8cea51a27439",
+      "result_id": "c5cea522-d3f1-420b-b314-662888c297c3"
+    },
+    {
+      "claim_id": "bfe69f7a-d5aa-4a26-bd90-99321b62658b",
+      "result_id": "c5cea522-d3f1-420b-b314-662888c297c3"
+    },
+    {
+      "claim_id": "47889413-15a9-4680-aad5-c6d32a2785b8",
+      "result_id": "c5cea522-d3f1-420b-b314-662888c297c3"
+    },
+    {
+      "claim_id": "bfecc457-41db-4e82-a54e-26c5c58704c8",
+      "result_id": "c5cea522-d3f1-420b-b314-662888c297c3"
+    },
+    {
+      "claim_id": "d4961035-08d8-45ea-8689-cfce5cb627b4",
+      "result_id": "c5cea522-d3f1-420b-b314-662888c297c3"
+    }
+  ],
+  "comparisons": []
+}

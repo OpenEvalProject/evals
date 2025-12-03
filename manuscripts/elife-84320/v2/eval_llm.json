@@ -1,0 +1,436 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C38",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C52",
+      "C55",
+      "C56",
+      "C162"
+    ],
+    "result": "Rad53 binds to approximately 20% of gene promoters genome-wide in yeast. ChIP-seq analysis in asynchronous cells showed Rad53 localization concentrated within 500-bp upstream of transcription start sites (TSSs) in WT, sml1\u0394, and mec1\u0394 sml1\u0394 strains, with 1464, 1983, and 1293 genes (out of 6604) showing significant signal, respectively. Over 85% of Rad53 ChIP-seq peaks overlapped with gene promoters across all stages investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C38, C42-C46, C52, C55-C56, and C162 are well-supported by ChIP-seq data presented in Figures 1 and 2. The antibody specificity is confirmed by absence of signal in rad53\u0394 sml1\u0394 cells (C44, C70). The quantification methods are described, and multiple replicates and strains support the ~20% estimate. The distinction from hyper-ChIPable artifacts is addressed (C66-C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C57",
+      "C58",
+      "C82",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Rad53 binding to gene promoters is temporally dynamic and cell cycle-regulated. There is a general trend of increasing Rad53 binding as cells progress from G1 to HU45/HU90, paralleling S-phase entry. However, specific genes (RNR1, PCL1, TOS6) show substantially increased binding beyond the general trend, while mating response genes show decreased binding upon G1 exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C57-C58, C82, C164-C166 are supported by ChIP-seq data in synchronized cells (Figure 2a, 2c, 3c) and protein level measurements (Figure 2\u2014figure supplement 1). The temporal dynamics are demonstrated across multiple cell cycle stages with appropriate controls. The correlation with S-phase entry is validated by Orc6 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Rad53 is recruited to active replication forks in a checkpoint-independent manner. In WT cells, Rad53 signal was present at early-firing origins but not late origins (inhibited by checkpoint). However, in rad53K227A and mrc1\u0394 mutants, Rad53 was present at late origins that become active due to checkpoint defects, with a pattern similar to Cdc45. This recruitment did not require Mrc1 or Rad53's own kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by ChIP-seq data at replication origins (Figure 2\u2014figure supplement 3). The checkpoint-independent recruitment is demonstrated by Rad53 binding in mrc1\u0394 and rad53K227A mutants. The similarity to Cdc45 pattern provides additional validation. However, the mechanism of checkpoint-independent recruitment remains unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Among 435 genes identified as having dynamic Rad53 binding (top DB overlap), 337 showed increased binding and 98 showed decreased binding during G1 to HU45 transition. These genes are involved in cell cycle progression (cyclins, DNA replication regulators) and cell growth (cell wall maintenance, mating response).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by residual analysis of ChIP-seq data from two independent experiments (Figure 3a-b). The computational method for identifying dynamic binding genes is described. The functional annotation is consistent with known Rad53 roles, though the biological significance of the specific 435-gene cutoff is not statistically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C99",
+      "C100",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Rad53 promoter binding correlates with gene expression changes in a subset of genes. Among 236 genes with both dynamic binding and differential expression (DB/DEGs), there was a moderate positive correlation (Spearman r=0.5918, p<0.0001). Genes with decreased Rad53 signal were predominantly downregulated (51/54), while genes with increased signal showed both up- and downregulation. Clusters 1 and 7 showed the strongest correlations (r=0.5697 and r=0.6979, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C99-C111 are supported by integrated ChIP-seq and RNA-seq analysis (Figures 4c, 5c-d). Statistical tests (Fisher's exact test, Spearman correlation) are appropriately applied. However, the moderate correlation (r~0.6) indicates that Rad53 binding is not the sole determinant of expression changes, and the directionality is complex for genes with increased binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C72",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C174"
+    ],
+    "result": "Rad53 binding to certain gene promoters is influenced by sequence-specific transcription factors. In swi4\u0394 and swi6\u0394 mutants, Rad53 signal at SBF target genes collapsed toward the general trend, and binding was eliminated or failed to increase at specific SBF targets (TOS6, PCL1, YOX1). Z-score analysis confirmed that SBF targets deviated substantially in WT but not in SBF mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C72, C151-C156, C174 are supported by ChIP-seq experiments in transcription factor mutants (Figure 8). The loss of Rad53 binding at SBF target promoters in swi4\u0394 and swi6\u0394 mutants provides strong evidence for transcription factor-dependent recruitment. Statistical analysis (Z-score distribution, Figure 8b) supports the conclusion. However, the mechanism of recruitment (direct vs. indirect) is not determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C40",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C127",
+      "C128"
+    ],
+    "result": "In checkpoint mutants, untimely activation of late-replicating origins reduces transcription of nearby genes with concomitant Rad53 localization to gene bodies. Downregulated genes showed strong Rad53 signal in gene bodies, particularly in mrc1\u0394 (HU45/HU90) and rad53K227A (HU45). Most downregulated genes were situated close to active origins (<2 kb), with >80% downregulated when <1 kb from origins. The bias was stronger for late origins (86% vs 71%, p=0.012) and head-on orientation (86% vs 67%, p=0.0019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C40, C112-C124, C127-C128 are supported by integrated ChIP-seq and RNA-seq analysis in checkpoint mutants (Figure 6). The spatial correlation between origin proximity and gene downregulation is well-documented with appropriate statistical tests. The orientation effect (head-on vs co-directional) is consistent with replication-transcription conflicts. However, the causal mechanism remains speculative (C116, C126).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Rad53 binding and expression changes correlate significantly for targets of cell cycle transcription factors SBF, MBF, and Msn4. Among 236 DB/DEGs, 36 SBF targets showed clear positive correlation between Rad53 binding and expression (enrichment p<1E-15). Most SBF targets showed similar expression profiles in rad9\u0394 as in WT, but differed in mrc1\u0394 and rad53K227A mutants. MBF and Msn4 targets also showed significant enrichment and positive correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130, C135-C141 are supported by transcription factor target enrichment analysis and correlation analysis (Figure 7a). The statistical significance is strong (p<1E-15 for enrichment). The differential behavior in checkpoint mutants (C138-C139) provides additional validation. However, there is substantial overlap between transcription factor targets (C142-C143), complicating interpretation of specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Rad53 functions at gene promoters are not solely checkpoint-dependent. Dynamic Rad53 binding in cells replicating in HU did not necessarily depend on checkpoint signaling (e.g., PCL1, YOX1), though some genes (e.g., RNR1) showed reduced increase in checkpoint mutants. Mrc1, Mec1, and Rad53's own kinase activity are not absolutely required for recruitment to gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C167-C169 are supported by ChIP-seq data in checkpoint mutants (Figures 1b, 4\u2014figure supplement 1, 2\u2014figure supplement 4). The persistence of Rad53 binding in mec1\u0394 sml1\u0394 and rad53K227A mutants demonstrates checkpoint-independent recruitment. However, the partial reduction at some genes (C168) indicates checkpoint signaling can modulate binding levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "RNA-seq analysis revealed widespread gene expression changes during replication stress. In WT and rad9\u0394, ~2300 genes showed differential expression from G1 to HU45, increasing to ~3000 at HU90. Checkpoint mutants (rad53K227A, mrc1\u0394) showed more DEGs (~2500 at HU45, >3400 at HU90). Hierarchical clustering showed cell cycle stage contributed more to expression similarity than genotype, with rad9\u0394 clustering with WT and rad53K227A/mrc1\u0394 clustering together in HU45.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C98 are supported by RNA-seq analysis with appropriate statistical methods (DESeq2, hierarchical clustering, Figure 4a-b). The clustering patterns are consistent with known checkpoint pathway architecture. The minimal difference between WT and rad9\u0394 (only 5 DEGs) validates the specificity of the DRC pathway response. Sample sizes and replicates appear adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Coexpression analysis of DEGs in WT(G1\u2192HU45) yielded 10 clusters with dynamic Rad53 binding in most clusters. Enriched GO functions included cell cycle regulation, mating response, proteolysis, transport, oxidation-reduction process, and organic acid metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by coexpression network analysis using CoCoCoNet (Figure 5a-b). The GO enrichment analysis is appropriate for functional annotation. However, the biological significance of the specific 10-cluster partition is not statistically justified, and the method for determining optimal cluster number is not described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Among Ste12 targets, 34 were in the 236 DB/DEGs group. All Ste12 targets with decreased Rad53 binding were downregulated. Of 34 Ste12 targets in top DB group, 20 showed increased Rad53 binding in HU, and 11 of these were also SBF targets, suggesting SBF may be responsible for the correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C148 are supported by transcription factor target analysis. The overlap between Ste12 and SBF targets (C148) is documented. However, C149 is speculative about SBF being responsible for the correlation, as no direct test of this hypothesis is performed (e.g., examining Ste12 targets in SBF mutants).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "At the RNR3 promoter, Rad53 binding was low in SBF mutants despite RNR3 being a known Rfx1 target and not a known SBF/MBF target. In ixr1\u0394 mutant, Z-score distribution and ChIP-seq signal for most SBF targets remained similar to WT, except RNR1 which collapsed in all three mutants (ixr1\u0394, swi4\u0394, swi6\u0394), consistent with RNR1 being a target of Ixr1, SBF, and MBF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157, C159-C161 are supported by ChIP-seq data in transcription factor mutants (Figure 8). The RNR1 behavior in all three mutants is consistent with prior knowledge (C161, supported by citations). However, C158 is speculative about SBF playing a role in RNR3 regulation, as this is inferred only from reduced Rad53 binding in SBF mutants without direct evidence of SBF binding to RNR3 or functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Rad53 bound to the NRM1 promoter (in top DB group) and to promoters of histone genes. All histone genes were upregulated DEGs in HU45 (rad53K227A vs WT), suggesting Rad53 may control histone levels through gene expression in addition to its known role in histone degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175, C177 are supported by ChIP-seq and RNA-seq data (Figure 6\u2014figure supplement 1). C176 is a reasonable inference about additional transcriptional regulation. However, C178 is speculative as it proposes a new function without direct experimental validation. The upregulation of histone genes in rad53K227A could reflect indirect effects or loss of repression rather than direct transcriptional control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "In asynchronous cells, Rad53 signal was not concentrated at replication origins, consistent with cell cycle-regulated recruitment rather than constant binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by ChIP-seq data analysis (Figure 1c). The inference about cell cycle regulation (C49) is reasonable given the asynchronous cell population and is validated by subsequent experiments in synchronized cells showing dynamic binding patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "\u03b3-H2A ChIP-seq signals were not enriched upstream of TSSs and were lower immediately upstream of TSSs than surrounding regions, consistent with promoters being histone-free regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by ChIP-seq data (Figure 2a). The pattern is consistent with established knowledge about promoter chromatin structure. This serves as an important negative control demonstrating that the Rad53 promoter enrichment is specific and not a general feature of Mec1 targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Gini index analysis showed Swi6 had high gene specificity (0.763) while Rad53 had lower specificity (0.2918, 0.2982 for two replicates), indicating Rad53 has coverage for many promoters while Swi6 shows high coverage only for limited promoters. This suggests Rad53 would affect a wider range of genes than the Swi6 regulatory network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by Gini index analysis of ChIP-seq data (Figure 2d). The comparison to published Swi6 data is appropriate. The inference about wider gene effects (C63) is reasonable given the quantitative difference in Gini indices. However, the biological significance of the specific Gini values is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Analysis excluding hyper-ChIPable regions did not alter the pattern of Rad53 binding to TSSs. The 296 genes at hyper-ChIPable regions showed enrichment to both TSSs and gene bodies (distinct from promoter-only pattern) and were predominantly snoRNA/tRNA genes not found in Rad53 promoter binding. No enrichment was observed in rad53\u0394 sml1\u0394 or with anti-\u03b3-H2A antibodies, indicating the Rad53 binding is not promiscuous non-specific enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by analysis with and without hyper-ChIPable regions (Figure 2\u2014figure supplement 2). The distinct patterns, different gene types (snoRNA/tRNA vs protein-coding), and negative controls (rad53\u0394, \u03b3-H2A) provide strong evidence that the observed Rad53 binding is specific. This addresses an important potential artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "\u03b3-H2A was observed at genomic regions surrounding very late origins in G1-phase in both WT and mutants. This may reflect low-level ssDNA gaps at late-replicating regions carried over from the previous cell cycle, similar to unrepaired post-replication gaps in S. pombe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is supported by ChIP-seq data (Figure 2\u2014figure supplement 3b). However, C81 is highly speculative, drawing an analogy to S. pombe UV-induced gaps without direct evidence. Alternative explanations (e.g., technical artifacts, other sources of DNA damage) are not excluded. Further validation would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C59",
+      "C60",
+      "C74",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C150",
+      "C170",
+      "C172",
+      "C173",
+      "C179",
+      "C180",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C197"
+    ],
+    "result": "Background and established knowledge about Rad53/CHEK2, checkpoint pathways, transcriptional regulation, and replication-transcription conflicts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established scientific knowledge supported by appropriate citations to prior research. They provide necessary context for interpreting the current study's findings. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C41",
+      "C64",
+      "C65",
+      "C73"
+    ],
+    "result": "Prior studies have detected Rad53 binding to replication origins and forks, and identified hyper-ChIPable regions in ChIP-seq studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior research findings and are supported by appropriate citations. They provide important context for the current study's methodology and interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C125",
+      "C126",
+      "C171",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C196",
+      "C198",
+      "C199"
+    ],
+    "result": "Speculative claims about mechanisms and future directions, including: gene body signals caused by promiscuous origin activation creating replication-transcription conflicts; experimental conditions determining genes with dynamic binding; Rad53 contributing to transcriptional regulation as structural component; mechanisms of Rad53 binding to diverse promoters; preemptive recruitment to vulnerable chromatin; gene expression reduction mediated by Rad53; replication-transcription conflicts contributing to downregulation; and evolutionary significance of replication timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C116, C125-C126, C171, C181-C185, C196, C198-C199) are explicitly speculative or represent hypotheses for future investigation. While they are reasonable interpretations of the data, they lack direct experimental validation. Some (e.g., C116, C198) are supported by correlative evidence but causality is not established. Others (e.g., C183-C185, C199) are purely speculative about mechanisms or evolutionary significance.",
+    "result_type": "MINOR"
+  }
+]

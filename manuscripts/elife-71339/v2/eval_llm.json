@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Bioinformatic analysis reveals that all fully sequenced cyanobacteria with PSII contain genes for the PDH complex, while 56% also possess PFOR. Among nondiazotrophic cyanobacteria, 42% possess both enzymes, indicating that the coexistence of PDH complex and PFOR in aerobic cyanobacteria is widespread, though the PDH complex is preferred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 present bioinformatic findings showing the distribution of PDH complex and PFOR across cyanobacterial genomes. The analysis methodology is described in Materials and Methods, and results are shown in Figure 1\u2014figure supplement 1. The data support the conclusion that both enzymes commonly coexist in aerobic cyanobacteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The \u0394pfor deletion mutant shows impaired photomixotrophic growth under aerobic conditions (oxygen ~250 \u00b5M O2) starting around days 3-6, with affected stationary phase maintenance, while photoautotrophic growth remains similar to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 describe growth phenotypes supported by data in Figure 1A and Figure 1\u2014figure supplement 2. The growth impairment is clearly visible in the figures, oxygen measurements confirm aerobic conditions, and the photoautotrophic control demonstrates specificity. The experimental design includes appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Both pfor and pdhA are transcribed under photomixotrophic and photoautotrophic conditions. NADH/NAD+ ratios remain stable under photoautotrophic conditions but increase 3-4 fold during the first 5 days of photomixotrophic growth, coinciding with \u0394pfor growth impairment. NAD(P)H and ferredoxin pools are more reduced under photomixotrophic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by RT-PCR data (Figure 1\u2014figure supplement 3), NADH/NAD+ measurements (Figure 1B), and NAD(P)H/ferredoxin redox measurements (Figure 1\u2014figure supplement 4). The temporal correlation between elevated NADH/NAD+ ratios and growth impairment strengthens the mechanistic interpretation. Multiple independent measurements converge on the conclusion of highly reducing conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The recombinant dihydrolipoyl dehydrogenase (SynLPD, E3 subunit of PDH complex) loses activity at higher NADH/NAD+ ratios with a Ki of 38.3 \u00b5M, showing ~50% inhibition at NADH/NAD+ ratio of 0.1, while NADPH has no effect. Since photomixotrophic cells have NADH/NAD+ ratios >0.4, this indicates efficient PDH complex inhibition via SynLPD inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 present in vitro enzyme kinetics data shown in Figure 2A with appropriate controls (NADPH). The Ki determination follows standard enzyme kinetics methodology with Lineweaver-Burk analysis. The connection to in vivo conditions (C73-C74) is logical given the measured cellular NADH/NAD+ ratios exceed the Ki by >10-fold. The inference about PDH inhibition is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C5",
+      "C95",
+      "C96"
+    ],
+    "result": "PFOR from Synechocystis is stable when purified in the presence of oxygen but requires anaerobic conditions for pyruvate decarboxylation activity in vitro. Despite this in vitro oxygen requirement, the data strongly indicate PFOR is active in vivo under aerobic and highly reducing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 are directly supported by enzyme activity data in Figure 2B showing stability but oxygen-sensitive activity. However, the inference that PFOR is active in vivo under aerobic conditions (C96) is based on indirect evidence (growth phenotypes, genetic requirements) rather than direct measurement of PFOR activity in aerobic cells. The authors acknowledge this discrepancy and discuss potential mechanisms (microoxic niches, unknown protective mechanisms) but cannot definitively demonstrate in vivo aerobic PFOR activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Five ferredoxin genes (fx3, fx4, fx6, fx7, fx9) and flavodoxin (isiB) were successfully deleted, while fx2 and fx5 failed to fully segregate and fx8 could not be deleted. All ferredoxin deletion mutants grew normally under photoautotrophic conditions, but deletion of fx3, fx9, or isiB resulted in growth impairment similar to \u0394pfor under photomixotrophic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 describe mutant construction and phenotyping supported by Figure 3A, Figure 3\u2014figure supplement 1, and Figure 3\u2014figure supplement 2. The inability to delete certain ferredoxins suggests essentiality. The specific photomixotrophic growth defects of \u0394fx3, \u0394fx9, and \u0394isiB parallel the \u0394pfor phenotype, supporting a functional relationship. Appropriate controls and replicates are shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Synechocystis possesses two GOGAT isoenzymes: ferredoxin-dependent F-GOGAT (sll1499) and NADH-dependent N-GOGAT (sll1502). Neither \u0394f-gogat nor \u0394n-gogat show growth impairment under photoautotrophic conditions, but \u0394f-gogat displays strong growth impairment under photomixotrophic conditions while \u0394n-gogat grows like wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by growth data in Figure 3B and mutant verification in Figure 3\u2014figure supplement 1. The differential requirement for F-GOGAT specifically under photomixotrophic conditions parallels the PFOR results and supports the general shift from NAD(H)- to ferredoxin-dependent enzymes. The photoautotrophic controls demonstrate condition-specific requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Photosynthetic complex I (NDH-1) exclusively accepts electrons from reduced ferredoxin. Glucose addition increases electron donation to PSI in wild-type and \u0394glgP1\u0394glgP2, but not in \u0394ndhD1\u0394ndhD2 or \u0394hk mutants, demonstrating that photosynthesis using glucose oxidation and PSI requires ferredoxin-dependent NDH-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 combine established knowledge (C85, C89 with citations) and new experimental data (C86-C87) shown in Figure 3C. The DIRK measurements with DCMU provide a clean system to measure glucose-derived electrons entering PSI. The mutant analysis (hexokinase, NDH-1, glycogen phosphorylase) provides strong genetic evidence for the pathway. The inference (C88) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Under photomixotrophic conditions, parallel operation of photosynthesis and glucose oxidation creates highly reducing conditions (reduced NAD(P)H and ferredoxin pools). The PDH complex is inhibited at high NADH levels and functionally replaced by PFOR. Low abundant ferredoxins and F-GOGAT are required for optimal performance, and NDH-1 is required to feed glucose-derived electrons into the photosynthetic electron chain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 synthesize multiple experimental findings from Figures 1-4 into a coherent model. Each component is supported by direct experimental evidence: redox measurements (C91), enzyme inhibition studies (C92), mutant phenotypes (C93), and electron flow measurements (C94). The integration of these findings into a unified mechanism is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C136",
+      "C9",
+      "C10",
+      "C135"
+    ],
+    "result": "Thermodynamic calculations show the PDH complex reaction has \u0394rG\u2032m of -39 kJ/mol versus -23 kJ/mol for PFOR. Transferring electrons to NAD+ instead of ferredoxin stores less Gibbs-free energy but provides higher driving force. Using ferredoxins saves Gibbs-free energy but decelerates metabolic reactions as they operate closer to thermodynamic equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 presents thermodynamic calculations using eQuilibrator (Materials and Methods) with clearly stated assumptions. The values are consistent with literature (Noor et al., 2013 citation). Claims C9-C10 and C135 are logical thermodynamic inferences from these calculations. However, the direct experimental validation of metabolic rate changes is not provided\u2014this remains a theoretical prediction based on thermodynamic principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C134"
+    ],
+    "result": "The PDH complex could not be deleted from the genome, indicating it is essential, while pfor was successfully knocked out in a previous study. PFOR is dispensable under photoautotrophic conditions where cells prefer to decarboxylate pyruvate via the PDH complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C131 is supported by experimental attempts to delete PDH. Claim C132 is supported by citation to prior work. Claim C134 is supported by the \u0394pfor photoautotrophic growth data (Figure 1A) showing no defect. Together these establish the differential essentiality and preference for PDH under photoautotrophic conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C146"
+    ],
+    "result": "High NADH/NAD+ ratios inactivate NAD(H)-dependent enzymes, supporting ferredoxin-dependent isoenzymes. Shifts to more reducing conditions alter thermodynamic driving forces and may necessitate pathway shifts. Electron turntables (transhydrogenase, FNR, diaphorase) can support the shift. Cells perform a general shift from NAD(H) to ferredoxin utilization under photomixotrophic conditions, allowing them to finetune metabolism by liberating or saving Gibbs-free energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 and C146 synthesize the major findings into a general model. C140 is directly supported by the SynLPD inhibition data. C141 is a thermodynamic inference. C142 cites potential mechanisms. C143-C144 present the conceptual framework. C146 is the main conclusion supported by multiple lines of evidence (PFOR, ferredoxins, F-GOGAT requirements). The model is well-supported though some mechanistic details remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C23",
+      "C50"
+    ],
+    "result": "Pyruvate decarboxylation is catalyzed by PFOR (which reduces ferredoxin) and the PDH complex (which utilizes NAD+). Anaerobes rely on PFOR, which was replaced by PDH complex in aerobes during evolution. Cyanobacteria possess both enzyme systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C23, and C50 present established biochemical and evolutionary knowledge that provides context for the study. These are well-established facts in the field and are appropriately cited or stated as general knowledge. They form the foundation for understanding why the findings are significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Life evolved under anaerobic, reducing conditions rich in iron and sulfur. Hydrogen escape oxidized Earth. Prebiotic FeS mineral reactions are mimicked by FeS clusters in enzymes. Ferredoxins are ancient proteins with 4Fe4S, 3Fe4S, or 2Fe2S clusters, displaying redox potentials from -240 to -680 mV. FeS enzymes are widespread in anaerobes but 4Fe4S clusters are oxygen-sensitive, leading to replacement by FeS-free alternatives in aerobes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C21 present established knowledge about early Earth conditions, FeS cluster evolution, and ferredoxin properties, all appropriately cited. This background contextualizes the evolutionary significance of the findings but does not constitute new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "PFOR is an ancient, widespread enzyme that catalyzes pyruvate decarboxylation in anaerobes and can operate reversibly for autotrophy. It participates in four of seven ancient autotrophic pathways. PFORs contain 1-3 4Fe4S clusters and are generally oxygen-sensitive, with three reported exceptions (H. halobium, D. africanus, S. acidocaldarius). In vivo studies on oxygen-stable PFORs under aerobic conditions are missing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C34 present established knowledge about PFOR distribution, function, and oxygen sensitivity, appropriately cited. Claim C34 identifies a knowledge gap that this study addresses. This is background information rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "In E. coli, PFOR plays a role in aerobic cultures of ZWF mutants, probably in redox control during stationary phase, despite PFOR activity being detectable only anaerobically in vitro. E. coli possesses three pyruvate-to-acetyl-CoA enzyme systems (PDH, PFOR, PFL) with oxygen-dependent regulation. Several reports document aerobic expression of 'anaerobic' enzymes in prokaryotes and eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C107 present established knowledge from E. coli and other systems, appropriately cited. This provides comparative context for the cyanobacterial findings and supports the broader significance of the work, but represents prior knowledge rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "During evolution from anoxygenic to oxygenic photosynthesis, 4Fe4S ferredoxin was replaced by oxygen-tolerant 2Fe2S ferredoxin. NAD(P)H gained importance as an oxygen-insensitive reducing agent. The PDH complex (composed of E1, E2, E3 subunits) catalyzes irreversible pyruvate decarboxylation, is active under oxic conditions, but gets inactivated anaerobically via distinct mechanisms in prokaryotes (NADH inhibition of E3) and eukaryotes (phosphorylation of E1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 present established knowledge about ferredoxin evolution and PDH complex structure/regulation, appropriately cited. This background is essential for understanding the study's context but does not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Synechocystis sp. PCC 6803 performs oxygenic photosynthesis and lives photoautotrophically (CBB cycle), photomixotrophically (with external carbohydrates), heterotrophically (darkness), or fermentatively (anaerobic). PFOR is assumed for fermentation and PDH for aerobic respiration, though pfor is transcribed aerobically. Synechocystis possesses up to 11 ferredoxins (2Fe2S, 3Fe4S, 4Fe4S), with ferredoxin 1 (2Fe2S) being essential and the principal PSI electron acceptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 present established knowledge about Synechocystis metabolism and ferredoxin network, appropriately cited. Claim C52 notes the surprising observation of aerobic pfor transcription, which motivates the study. This is background information establishing the study system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Examples exist of oxygen-sensitive enzymes functioning aerobically: FeFe-hydrogenase in C. reinhardtii (via microoxic niches), PFOR and NiFe-hydrogenase in cyanobacteria. The PFOR of S. acidocaldarius is stable in O2 but requires oxygen consumption for in vitro activity. Living cells might maintain reducing conditions in the presence of oxygen by unknown mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 present established examples from literature, appropriately cited. Claim C111 is speculative but reasonable given the evidence. This discussion contextualizes the paradox of oxygen-sensitive enzymes in aerobic organisms but does not present new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Glucose oxidation in Synechocystis proceeds via different glycolytic routes, with intermediates entering the CBB cycle and reaching lower glycolysis to provide pyruvate. Different routes yield distinct reducing equivalents (NADPH from Zwf and Gnd; NADH from GAPDH). PFOR is the only known direct source of reduced ferredoxin from glucose oxidation besides PSI. Potential electron transfer routes include transhydrogenase (NADH to NADP+), FNR (NADPH to ferredoxin), and the NiFe-hydrogenase diaphorase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 present established knowledge about glucose metabolism in Synechocystis (appropriately cited) and identify PFOR as the key ferredoxin-reducing enzyme (C116). Claims C117-C119 discuss potential electron transfer mechanisms, with C118 being speculative and C119 citing recent in vitro data. This provides metabolic context but does not present new experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Redox potentials have been determined for Fx1 (-412 mV), Fx2 (-243 mV), and Fx4 (-440 mV). Typical ranges are -240 to -440 mV for 2Fe2S clusters, -120 to -430 mV for 3Fe4S clusters, and -300 to -680 mV for 4Fe4S clusters. Fx9 is important under photomixotrophic conditions and has an assumed redox potential of ~-420 mV based on interaction partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 present established redox potential data, appropriately cited. Claim C124 references new data from Figure 3A showing Fx9 importance. Claim C125 notes the Fx9 redox potential is assumed rather than measured. This combines background information with a new finding (Fx9 importance) but the redox potential discussion is primarily contextual.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C133",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The evolutionary replacement of FeS enzymes and ferredoxins by NAD(P)H-dependent alternatives is typically attributed to oxygen sensitivity. However, the shift from reducing to oxidizing conditions (via hydrogen escape) might have been an additional factor enabling higher driving forces and accelerated metabolism. As NADH/NAD+ pools become more reduced, they might reach ferredoxin-like potentials, provoking a metabolic shift that slows metabolism. This fits with PFOR and ferredoxins gaining importance in stationary phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C139 present a speculative evolutionary and mechanistic framework. While C126-C127 cite established knowledge, C128-C129 are explicitly speculative hypotheses. C137-C138 are theoretical predictions without direct experimental validation. C139 connects to experimental observations (Figures 1A, 3A) but the mechanistic interpretation remains hypothetical. The authors appropriately acknowledge this as speculative in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "The cyanobacterium Synechocystis encounters highly reducing conditions under photomixotrophy in the presence of oxygen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 is a summary conclusion directly supported by the redox measurements in Figures 1B and 1\u2014figure supplement 4, combined with oxygen measurements showing aerobic conditions. This is a well-supported conclusion but represents a summary rather than a distinct result.",
+    "result_type": "MINOR"
+  }
+]

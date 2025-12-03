@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C20",
+      "C45",
+      "C46",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "DopaFilm is a 2D nanosensor platform fabricated from oligonucleotide-functionalized carbon nanotubes that detects dopamine with 1 nM sensitivity (Kd=268 nM), subsecond kinetics, NIR/SWIR fluorescence (850-1350 nm), stability over 35 days, and high SNR (5-50) without altering neuronal electrophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C73-C78 provide comprehensive technical validation including dose-response curves, stability measurements, electrophysiological controls, and SNR quantification. The Kd of 268 nM is physiologically relevant (C76) and sensitivity extends to 1 nM (C45). Multiple independent measurements support the platform's technical specifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "DopaFilm detects dopamine release from axonal varicosities with spatial and temporal resolution, showing that only 32% of boutons are release-competent (range 5-65%), with turn-on kinetics of 0.46\u00b10.16 s and clearance kinetics of 3.83\u00b10.8 s. Release is Ca2+-dependent and specific to TH+ neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C34 provide robust validation through multiple controls: TH immunoreactivity confirms dopaminergic identity (79% specificity, C21-C22), Ca2+-free media abolishes activity (C34), TH- neurons show no response (C33), and hotspots co-localize with TH+ boutons (C23). Quantitative kinetic measurements (C29-C30) are provided with standard deviations. The sparse release observation (C27-C28) agrees with prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "DopaFilm hotspots localize to specific boutons with high spatial precision (<1.7 \u03bcm) across repeat stimulations. Nomifensine increases peak amplitude (15.7% to 24.5%) and prolongs clearance kinetics (\u03c4off: 4.38\u00b10.84 s to 5.70\u00b11.47 s, p=3\u00d710\u207b\u2074) without revealing subthreshold activity at silent varicosities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 demonstrate reproducibility with quantitative spatial measurements showing <1.7 \u03bcm centroid variation (C37). The nomifensine experiments (C39-C42) provide pharmacological validation with statistical significance (p=3\u00d710\u207b\u2074) and appropriate controls showing no subthreshold activity (C41), supporting the conclusion that silent varicosities truly lack release (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Glutamatergic input modulates dopamine release: NBQX abolishes spontaneous activity, and combined NBQX+D-AP5 reduces evoked release amplitude and area under the curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 demonstrate glutamatergic modulation through pharmacological manipulation. NBQX alone abolishes spontaneous activity (C43), while combined AMPA/NMDA receptor blockade reduces evoked release (C44). These experiments appropriately test the role of excitatory input in the co-culture system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "DopaFilm detects quantal dopamine release in TTX with robust SNR>5. TTX transients show reduced spatial extent and amplitude compared to evoked release, occur at 0.29\u00b10.24 s\u207b\u00b9 per site, and fit a three-component Gaussian mixture model (\u03bc\u2081=5.7%, \u03bc\u2082=9.6%, \u03bc\u2083=15.1% \u0394F/F), representing single-vesicle fusion events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 provide strong evidence for quantal detection: TTX abolishes synchronous release while preserving spontaneous events (C47), SNR remains robust (>5, C50), and statistical modeling (C51) demonstrates discrete amplitude distributions consistent with quantal release. The three-component GMM outperforms lognormal distribution (referenced in methods), supporting the interpretation of integer multiples of unitary events (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "DopaFilm reveals that dendritic dopamine release occurs from MAP2+/TH+ processes with mean spatial spread of 3.2\u00b13 \u03bcm (vs. 6.6\u00b13.6 \u03bcm in axons) and hotspot frequency of one per 7.5\u00b10.7 \u03bcm of dendritic length. Release occurs from major dendrites, fine processes, and non-varicose dendrites, is Ca2+-dependent and fast, with little direct somatic release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 provide comprehensive characterization of dendritic release with appropriate controls (MAP2 immunoreactivity confirms dendritic identity, C53; Ca2+ dependence established, C58). Quantitative spatial measurements (C55-C57) include standard deviations and compare axonal vs. dendritic properties. The observation of release from diverse dendritic morphologies (C54, C60) is well-documented with imaging data. Minimal somatic release (C59) is consistently observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Dendritic dopamine release hotspots co-localize with Bassoon, with positive correlation between Bassoon density and \u0394F/F magnitude, suggesting Bassoon organizes dendritic active zones similar to its role in axon terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 demonstrate co-localization with quantitative correlation analysis showing positive relationship between Bassoon density and release magnitude. However, C7 and C63 appropriately present the mechanistic interpretation as a suggestion rather than definitive proof, since co-localization alone cannot establish causality. The conclusion is reasonable but would benefit from functional perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C69"
+    ],
+    "result": "DopaFilm activity along dendritic processes exhibits strong correlation with synaptobrevin-2 expression, with TH+ segments lacking synaptobrevin-2 showing no corresponding activity, establishing a functional role for synaptobrevin-2 in dendritic dopamine release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C69 demonstrate correlation between synaptobrevin-2 expression and release activity. The observation that segments lacking synaptobrevin-2 show no activity (C64) provides strong correlative evidence. However, like the Bassoon result, this is correlative rather than causal evidence. The conclusion is appropriately stated as \"ascribing a role\" (C69) consistent with prior predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "DopaFilm's 2D design enables detection of dopamine efflux from source to spatial extent limit, revealing that somatodendritic release arises primarily from dendrites (not soma) with more localized spatial propagation than axonal release, and is robust, Ca2+-dependent, and enriched with Bassoon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 synthesize findings about the spatial design advantage and dendritic release properties. The estimated diffusivity of 1.1\u00b10.8\u00d710\u207b\u2076 cm\u00b2 s\u207b\u00b9 (C25) agrees with literature values, validating the spatial measurements. The comparison between dendritic and axonal propagation (C67) is quantitatively supported by FWHM measurements (C55-C56). This represents a key conceptual advance in understanding somatodendritic release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background context establishes that neuromodulators like dopamine operate at different spatiotemporal scales than fast neurotransmitters, dopamine neurons have dense varicosities, somatodendritic release is important but poorly characterized, and previous studies lack single release site resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C18 provide appropriate background context with citations to established literature. These are knowledge claims that accurately represent the field and justify the need for the current study. The gap identification (C15, C18) appropriately motivates the technical development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "DopaFilm offers advantages over genetically encoded biosensors through its 2D spatial coverage and NIR/SWIR spectral compatibility, but requires specialized InGaAs detectors and optical components optimized for NIR/SWIR transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 provide balanced discussion of DopaFilm's advantages and limitations. The comparison to genetically encoded sensors (C70) is appropriately cited, spectral compatibility is demonstrated (C71), and technical requirements are clearly stated (C72). This represents honest assessment of the technology's practical considerations.",
+    "result_type": "MINOR"
+  }
+]

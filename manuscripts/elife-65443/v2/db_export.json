@@ -1,0 +1,1865 @@
+{
+  "submission": {
+    "id": "5df52208-8a03-4be5-9e5a-46b53279f62c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:58:29.549610Z",
+    "updated_at": "2025-12-03T01:58:29.549610Z"
+  },
+  "content": [
+    {
+      "id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "submission_id": "5df52208-8a03-4be5-9e5a-46b53279f62c",
+      "content_type": "manuscript",
+      "content_text": "# NAD+ enhances ribitol and ribose rescue of \u03b1-dystroglycan functional glycosylation in human FKRP-mutant myotubes\n\n## Authors\n\n- Carolina Ortiz-Cordero<sup>1</sup> ([ORCID: 0000-0001-6953-0366](https://orcid.org/0000-0001-6953-0366))\n- Alessandro Magli<sup>2</sup> ([ORCID: 0000-0003-3874-2838](https://orcid.org/0000-0003-3874-2838))\n- Neha R Dhoke<sup>2</sup>\n- Taylor Kuebler<sup>4</sup>\n- Sridhar Selvaraj<sup>2</sup>\n- Nelio AJ Oliveira<sup>2</sup>\n- Haowen Zhou<sup>5</sup>\n- Yuk Y Sham<sup>1</sup>\n- Anne G Bang<sup>5</sup>\n- Rita CR Perlingeiro<sup>1</sup> ([ORCID: 0000-0001-9412-1118](https://orcid.org/0000-0001-9412-1118)) \u2020\n\n### Affiliations\n\n1. Department of Integrative Biology and Physiology, University of Minnesota Minneapolis United States\n2. Lillehei Heart Institute, Department of Medicine, University of Minnesota Minneapolis United States\n3. Stem Cell Institute, University of Minnesota Minneapolis United States\n4. Bioinformatics and Computational Biology Program, University of Minnesota Minneapolis United States\n5. Conrad Prebys Center for Chemical Genomics, Sanford Burnham Prebys Medical Discovery Institute La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMutations in the fukutin-related protein (FKRP) cause Walker-Warburg syndrome (WWS), a severe form of congenital muscular dystrophy. Here, we established a WWS human induced pluripotent stem cell-derived myogenic model that recapitulates hallmarks of WWS pathology. We used this model to investigate the therapeutic effect of metabolites of the pentose phosphate pathway in human WWS. We show that functional recovery of WWS myotubes is promoted not only by ribitol but also by its precursor ribose. Moreover, we found that the combination of each of these metabolites with NAD+ results in a synergistic effect, as demonstrated by rescue of \u03b1-dystroglycan glycosylation and laminin binding capacity. Mechanistically, we found that FKRP residual enzymatic capacity, characteristic of many recessive FKRP mutations, is required for rescue as supported by functional and structural mutational analyses. These findings provide the rationale for testing ribose/ribitol in combination with NAD+ to treat WWS and other diseases associated with FKRP mutations.\n\n## Introduction\n\nMutations in the fukutin-related protein (FKRP) gene result in a broad spectrum of muscular dystrophy (MD) phenotypes, ranging from mild Limb-Girdle MD (LGMDR9) to Walker-Warburg syndrome (WWS), the most severe form of congenital MD (CMD) (Beltran-Valero de Bernab\u00e9 et al., 2004; Brockington et al., 2001a; Brockington et al., 2001b). The biochemical hallmark of FKRP muscle disorders is hypoglycosylation of \u03b1-dystroglycan (\u03b1-DG), which leads to disruption in the interaction of \u03b1-DG with extracellular matrix proteins, in particular laminin-\u03b12, which is essential for muscle fiber integrity (Ervasti and Campbell, 1993; Ibraghimov-Beskrovnaya et al., 1992). Due to its rarity and reduced life expectancy (<3 years), disease pathogenesis and treatment strategies remain elusive for WWS. To date, there is no effective treatment for FKRP-associated MDs\u00a0(Ortiz-Cordero et al., 2021).\n\nFKRP is a ribitol-5-phosphate transferase, that in tandem with fukutin (FKTN), adds ribitol 5-phosphate onto the 3GalNAc-\u03b21-3GlcNAc-\u03b21\u20134(P-6) Man-1-Thr/Ser modification of \u03b1-DG (Core M3) (Manya et al., 2004; Yoshida-Moriguchi et al., 2013), using cytidine diphosphate (CDP)-ribitol, which is produced by isoprenoid synthase domain-containing protein (ISPD) (Gerin et al., 2016; Kanagawa et al., 2016; Praissman et al., 2016; Riemersma et al., 2015). The presence of ribitol-5-phosphate is essential for the subsequent addition of \u22123Xyl\u03b11-3GlcA\u03b21 and (3Xyl\u03b11-3GlcA\u03b21)n- and, therefore, for allowing \u03b1-DG to bind to extracellular membrane ligands (Inamori et al., 2012; Manya et al., 2016; Praissman et al., 2014; Willer et al., 2014). The addition of the pentose phosphate pathway (PPP) metabolites ribitol or ribose, a precursor of ribitol (Gerin et al., 2016; Huck et al., 2004), to fibroblasts from patients with ISPD mutations resulted in increased CDP-ribitol levels and rescue of \u03b1-DG functional glycosylation. However, rescue varied significantly among samples with different mutations (Gerin et al., 2016; van Tol et al., 2019). Cataldi et al., 2018 documented that ribitol treatment in FKRP mutant mice modeling severe LGMDR9 partially restored \u03b1-DG functional glycosylation. More recently, Nickolls et al., 2020 showed that ribitol treatment of embryoid bodies from an LGMDR9 patient-specific induced pluripotent stem (iPS) cell\u00a0line partly recovered the glycosylation defect. Taken together, these results raise several possibilities: (i) ribitol and ribose may also have a beneficial effect in WWS\u00a0associated with FKRP mutations,\u00a0(ii) rescue by PPP metabolites might be mutation-specific, and (iii) other metabolites may potentiate the recovery of \u03b1-DG functional glycosylation.\n\nAnother metabolite of interest is \u03b2-nicotinamide adenine (NAD+). NAD forms (NAD+, NADH, NADP, and NADPH) are essential cofactors for oxidoreductases in the PPP (Singh et al., 2017). Moreover, Bailey et al., 2019 reported that NAD+ supplementation in FKRP-deficient zebrafish led to decreased muscle degeneration and improved muscle function when administered at gastrulation, before muscle development occurs. Nevertheless, to date, no human model exists to test or validate the therapeutic potential of these or any other compounds for WWS.\n\nIn this study, we took advantage of the ability of iPS cells to differentiate into skeletal myotubes (Selvaraj et al., 2019b) to establish a novel WWS patient-specific in vitro model. Our results demonstrate that this system recapitulates the major skeletal muscle hallmarks of WWS. Moreover, we find that ribitol and ribose can partially rescue functional glycosylation of \u03b1-DG, and that administration of NAD+ along with each of these PPP metabolites significantly potentiates \u03b1-DG functional glycosylation rescue.\n\n## Results\n\n### Impaired \u03b1-DG functional glycosylation in WWS iPS cell-derived myotubes\n\nUsing an integration-free approach, we generated iPS cells from a 1-year-old WWS male patient (FP4) harboring two mutations in exon 4 of the FKRP gene, dc.558dupC (p.A187fs) and c.1418T>G(p.F473C) (Kava et al., 2013). FP4 iPS cells express pluripotency markers, display normal karyotype, and develop teratomas containing cell types from all three germ layers (Figure 1\u2014figure supplement 1). Using inducible expression of PAX7 (Darabi et al., 2012), we differentiated FP4 and control wild type (WT) iPS cells into myogenic progenitors and subsequently into terminally differentiated myosin heavy chain (MHC)-positive myotubes (Figure 1A). Immunostaining for MHC showed similar differentiation between WT and mutant FP4 myotubes (Figure 1A, upper panel). Staining with IIH6, a monoclonal antibody specific to the laminin binding domain of \u03b1-DG (Ervasti and Campbell, 1993), showed drastically reduced IIH6 immunoreactivity in FP4 myotubes (Figure 1A, lower panel), which was corroborated by western blot. In accordance with the loss of \u03b1-DG functional glycosylation, WWS FP4 myotubes showed decreased molecular weight for \u03b1-DG core (Figure 1B), marked reduction in IIH6 (Figure 1B and C), and most importantly, lack of laminin binding, as demonstrated by the laminin overlay assay (LOA) following enrichment by wheat germ agglutinin (WGA) pull-down (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative immunostaining of wild type (WT) and FP4 iPS cell-derived myotubes for myosin heavy chain\u00a0(MHC) and IIH6 (in red). DAPI stains nuclei (in blue). Scale bar, 200 \u03bcm. (B) Representative western blot for \u03b1-DG core and \u03b1-DG functional glycosylation (IIH6) in WT and FP4 myotubes. \u03b2-DG was used as loading control. Lower panel shows wheat germ agglutinin\u00a0(WGA) pull-down for these samples and representative laminin overlay assay (LOA) of WGA elutes shows laminin detection only in WT samples. (C) Graph bars show respective quantification of IIH6 (B) normalized to \u03b2-DG and shown as the fold difference of WT. Error bars represent standard errors of five independent experiments. Significance was evaluated by the unpaired Student\u2019s t test. ****p<0.0001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C) Representative images show typical (A) pluripotent colony morphology, (B) alkaline phosphatase activity, and (C) immunostaining for OCT3/4, SOX2, and NANOG (red). DAPI stains nuclei (in blue). Scale bar is 200 \u03bcm. (D) Cytogenetic analyses show normal karyotype. (E) Subcutaneous injection of FP4 iPS cells into NOD scid gamma\u00a0(NSG) mice results in teratoma formation. Representative image shows hematoxylin-eosin staining of a teratoma denoting the presence of tissues derived from all three germ layers.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative immunofluorescence staining of control (empty vector LV) and FKRP-LV FP4 iPS cell-derived myotubes for myosin heavy chain\u00a0(MHC) and IIH6 (in red). Wild\u00a0type\u00a0(WT) myotubes were used as reference. DAPI stains nuclei (in blue). Scale bar, 200 \u03bcm. (B) RT-qPCR analysis shows increased expression levels of FKRP in FKRP-LV FP4 iPS cell-derived myotubes compared to control. Error bars represent standard errors of three independent experiments. (C\u2013D) Introduction of FKRP rescues impaired functional glycosylation of \u03b1-DG in FP4 FKRP myotubes, as shown by western blot for IIH6 (C) and laminin overlay assay\u00a0(LOA) denoting laminin detection (D). \u03b2-DG was used as loading control. Lower panel shows representative wheat germ agglutinin\u00a0(WGA) pull-down. Significance was evaluated by the unpaired Student\u2019s t test. ***p<0.001.\n\nAs proof of concept, we introduced a WT FKRP transgene into FP4 cells to determine whether WT FKRP could restore functional glycosylation of \u03b1-DG. FKRP-overexpressing FP4 myogenic progenitors gave rise to MHC-positive myotubes (Figure 1\u2014figure supplement 2A) that displayed increased FKRP expression (Figure 1\u2014figure supplement 2B) and enhanced immunoreactivity to IIH6 (Figure 1\u2014figure supplement 2A and C), which led to rescue of laminin binding capacity (Figure 1\u2014figure supplement 2D).\n\n### Ribitol and ribose rescue \u03b1-DG functional glycosylation in FP4 iPS cell-derived myotubes\n\nHaving developed this platform, we tested whether ribitol, a precursor for CDP-ribitol (Figure 2A), would be able to increase functional \u03b1-DG glycosylation in the human context using the FP4 patient-specific iPS cell-derived model. At the onset of terminal myogenic differentiation, we treated myogenic progenitors with increasing concentrations of ribitol (25 mM, 50 mM, 100 mM, and 200 mM) for 5 days. Following evaluation of cell morphology and IIH6 immunoreactivity (Figure 2\u2014figure supplement 1A and B), the 50 mM concentration was chosen for the studies described here. Treated cells retained differentiation capacity, as shown by MHC levels (Figure 2B, Figure 2\u2014figure supplement 1C), and exhibited rescue of \u03b1-DG functional glycosylation (Figure 2B,C and D). Importantly, this increase in functional glycosylation of \u03b1-DG was sufficient to increase binding between \u03b1-DG and laminin, as shown by the detection of laminin only in ribitol-treated FP4 myotubes (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig2-v2.jpg)\n\n**Figure 2.:** (A) Scheme denoting the role of ribose and ribitol in the generation of Rbo5P, which is required by fukutin\u00a0(FKTN) and fukutin-related protein (FKRP) for glycosylation of \u03b1-DG. (B) Representative immunostaining for myosin heavy chain\u00a0(MHC) and IIH6 (in red) in WWS FP4 induced pluripotent stem (iPS) cell-derived myotubes that had been treated or not with ribitol. DAPI stains nuclei (in blue). Scale bar, 200 \u03bcm. (C\u2013D) Western blot shows increased IIH6 staining in WWS FP4 myotubes upon ribitol supplementation. MHC (MF-20) and \u03b2-DG were used as differentiation and loading controls, respectively. Lower panel shows wheat germ agglutinin\u00a0(WGA) pull-down for these samples, and laminin overlay assay\u00a0(LOA) of WGA elutes shows laminin detection in ribitol-treated FP4 myotubes. Wild\u00a0type\u00a0(WT) myotubes were used as positive control. (D) Bar graph shows quantification of IIH6 (from C) normalized to \u03b2-DG and shown as the fold difference of WT. Error bars represent standard errors of five independent experiments. (E) Representative immunostaining for MHC and IIH6 (in red) in FP4 iPS cell-derived myotubes that had been treated or not with ribose. DAPI stains nuclei (in blue). Scale bar, 200 \u03bcm. (F\u2013G) Western blot for IIH6 in FP4 myotubes that had been treated with ribose. MF-20 and \u03b2-DG were used as differentiation and loading controls, respectively. Lower panel shows representative WGA, and LOA shows laminin detection in ribose-treated FP4 myotubes. WT myotubes were used as positive control. (G) Bar graph shows increased IIH6 in ribose-treated myotubes. Quantification of IIH6 (F) was normalized to \u03b2-DG and shown as the fold difference of WT. Error bars represent standard errors of five independent experiments. Significance was evaluated by the unpaired Student\u2019s t test. *p<0.05, ***p<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B) Phase contrast images of FP4 myogenic progenitors that upon induction of differentiation were treated with the indicated concentrations of ribitol for 5 days. (B) Western blot shows enhanced IIH6 immunoreactivity was observed as ribitol concentration increased. \u03b2-Dystroglycan\u00a0(\u03b2-DG) was used as loading control. Scale bar, 200 \u03bcm. (C) Bar graph shows quantification of myosin heavy chain\u00a0(MHC) from ribitol-treated myotubes normalized to \u03b2-DG and shown as the fold difference to basal. Error bars represent standard errors of seven independent experiments. (D\u2013E) Phase contrast images of FP4 myogenic progenitors that were differentiated to myotubes and treated with increasing concentrations of ribose for 5 days. (E) Western blot shows IIH6 immunoreactivity. \u03b2-DG was used as loading control. Scale bar, 200 \u03bcm. (F) Bar graph shows quantification of MHC from ribose-treated myotubes normalized to \u03b2-DG and shown as the fold difference to basal. Error bars represent standard errors of seven independent experiments. Significance was evaluated by the unpaired Student\u2019s t test.\n\nSince ribitol is endogenously generated by the reduction of ribose via an oxidoreductase (Figure 2A), we hypothesized that supplementing FP4 myogenic cells with ribose might also recover \u03b1-DG functional glycosylation. As before, we treated FP4 cultures with increasing concentrations of ribose, ranging from 5 to 100 mM. Because the lowest concentration of ribose able to enhance \u03b1-DG functional glycosylation was 10 mM and higher concentrations led to cell death (>50 mM), we chose the concentration of 10 mM for further analysis (Figure 2\u2014figure supplement 1D to F). As shown in Figure 2E,F and G, we found a significant increase in functional glycosylation of \u03b1-DG upon 10 mM ribose supplementation. This increase was sufficient to enhance laminin binding capacity in FP4 myotubes (Figure 2F).\n\n### Ribitol and ribose treatment is associated with significant increases in ribitol-5-P and CDP-ribitol\n\nTo determine the effect of ribitol and ribose supplementation on the synthesis of ribitol-5-P and CDP-ribitol, we quantified the levels of these PPP metabolites after 5 days of treatment by liquid chromatography with tandem mass spectrometry (LC/MS-MS). Quantification of each metabolite was determined based on generated standard curves (Figure 3\u2014figure supplement 1). The data from this analysis revealed that both ribitol and ribose supplementation result in significant increases in ribitol, ribose, ribitol-5-P, and CDP-ribitol compared to untreated cultures (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig3-v2.jpg)\n\n**Figure 3.:** (A) Detection of ribitol, ribose, ribitol-5-P, and CDP-ribitol in WWS FP4 myotubes that had been treated or not with ribitol or ribose for 5 days (n\u00a0=\u00a03 for each cohort).\u00a0Error bars represent standard errors of three independent experiments. (B\u2013C) Sorbinil treatment for 5 days results in decreased \u03b1-dystroglycan\u00a0(\u03b1-DG) functional glycosylation, as shown by western blot for IIH6 in wild\u00a0type\u00a0(WT) myotubes (B). \u03b2-DG was used as loading control. (C) Bar graph shows quantification of IIH6 (from B) normalized to \u03b2-DG and shown as the fold difference of WT. Error bars represent standard errors of three independent experiments. (D\u2013E) Sorbinil treatment counteracts the positive effect of ribose on \u03b1-DG functional glycosylation. (D) Representative western blot shows reduction of IIH6 staining in FP4 myotubes that had been treated with both ribose and sorbinil. \u03b2-DG was used as loading control. (E) Bar graph shows quantification of IIH6 (from D) normalized to \u03b2-DG and shown as the fold difference of FP4 + ribose. Error bars represent standard errors of five independent experiments. Significance was evaluated by the one-way ANOVA followed by the Sidak\u2019s multiple comparison test in (A) and the unpaired Student\u2019s t test in (C and E). *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) Standard curves from serial dilution of metabolites (A) ribitol, (B) ribose, (C) ribitol-5-P, and (D) cytidine diphosphate\u00a0(CDP)-ribitol.\n\nThe reduction of ribose to ribitol has been suggested to be mediated by the sorbinil sensitive aldose reductase (AKR1B1) (Gerin et al., 2016). To determine whether inhibition of this aldose reductase would diminish \u03b1-DG functional glycosylation and counteract the ribose-mediated rescue, we treated WT cells at the onset of terminal differentiation with sorbinil. This resulted in a 40% reduction in IIH6 levels in WT myotubes (Figure 3B and C). Most importantly, sorbinil treatment counteracted the positive effect of ribose in FP4 myotubes by 63%, as shown by the diminished rescue of IIH6 levels (Figure 3D and E).\n\n### Rescue of \u03b1-DG function by PPP metabolites is significantly enhanced by addition of NAD+\n\nSince NAD+ has been shown to improve muscle function in the FKRP dystroglycanopathy zebrafish model (Bailey et al., 2019), we tested the effect of NAD+ alone or in combination with ribitol or ribose. We treated FP4 cultures with 100 \u03bcM of NAD+, as this concentration has been previously documented (Goody et al., 2012). In FP4 myotubes treated with NAD+ alone, we observed a small, yet significant increase in functional glycosylation of \u03b1-DG (Figure 4\u2014figure supplement 1). However, when we combined NAD+ supplementation with PPP metabolites, we observed, on average, a 59% increase in IIH6 positivity in ribitol/NAD+ when compared to ribitol alone (Figure 4A and C). The same synergistic effect was observed when FP4 cells were treated with the NAD+/ribose combination, as levels of IIH6 increased on average 50% compared to ribose alone (Figure 4B and D). Importantly, in both cases, the combination also promoted increased laminin binding capacity (Figure 4A and B). We also tested the effect of ribitol and ribose in combination with NAD+ in established myotubes. For this, we differentiated FP4 myogenic progenitors into myotubes, and 4 days later, added the compounds for 24\u201372 hr. Again, a synergistic effect was observed upon the combination of NAD+ with PPP metabolites. Ribitol/NAD+ treatment led to an 85% increase in IIH6 immunoreactivity compared to ribitol alone (Figure 4E and F). Likewise, ribose/NAD+ treatment on average doubled functional glycosylation of \u03b1-DG at 48 hr when compared to ribose alone (Figure 4G and H). These results support the beneficial effect of combining ribitol or ribose with NAD+ to enhance \u03b1-DG functional glycosylation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Western blots show increased IIH6 staining in Walker-Warburg syndrome\u00a0(WWS) FP4 myotubes that had been supplemented with ribitol and NAD+ compared to ribitol alone (A) or with ribose and NAD+ compared to ribose alone (B). Myosin heavy chain\u00a0(MHC) (MF-20) and \u03b2-DG were used as differentiation and loading controls, respectively. Lower panel shows wheat germ agglutinin\u00a0(WGA) pull-down for these samples, and respective laminin overlay assay\u00a0(LOA) of elutes shows increased laminin detection in FP4 myotubes that were treated with ribitol/NAD+ or ribose/NAD+. Wild\u00a0type\u00a0(WT) myotubes were used as positive control. (C\u2013D) Bar graph shows quantification of IIH6 (A and B, respectively) normalized to \u03b2-DG and shown as the fold difference of WT. Error bars represent standard errors of 8 (for C) or 7 (for D) independent experiments. (E\u2013H) Western blot of IIH6 in FP4 D4 differentiated myotubes treated with ribitol and ribitol/NAD+ (E) or ribose and ribose/NAD+ (F) for 24, 48, or 72 hr. MF-20 and \u03b2-DG were used as differentiation and loading controls, respectively. (G\u2013H) Bar graph shows quantification of IIH6 (from E and F, respectively) normalized to \u03b2-DG and shown as the fold difference of WT. Error bars represent standard errors of four independent experiments. Significance was evaluated by the paired Student\u2019s t test in (C and D) and by the one-way ANOVA followed by the Sidak\u2019s multiple comparison test in (F and H). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative immunostaining of FP4 myotubes treated with NAD+ and respective control wild\u00a0type\u00a0(WT) myotubes for myosin heavy chain\u00a0(MHC) and IIH6 (in red). DAPI stained nuclei (in blue). Scale bar, 200 \u03bcm. (B) Representative western blot for IIH6 shows increased immunoreactivity in NAD+ treated FP4 myotubes. MF-20 and \u03b2-DG were used as differentiation and loading controls, respectively. (C) Bar graph shows quantification of IIH6 (B) normalized to \u03b2-DG and shown as the fold difference of WT. Error bars represent standard errors of six independent experiments. Significance was evaluated by the unpaired Student\u2019s t test. *p<0.05.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Liquid chromatography with tandem mass spectrometry (LC/MS-MS) detection of ribitol, ribose, ribitol-5-P, and cytidine diphosphate\u00a0(CDP)-ribitol from FP4 myotubes untreated or supplemented with NAD+ for 5 days (n\u00a0=\u00a03).\u00a0Error bars represent standard errors of three independent experiments. (B) Detection of ribitol, ribose, ribitol-5-P, and CDP-ribitol from FP4 myotubes supplemented with ribitol, ribose, ribitol/ NAD+, or ribose/NAD+ for 5 days (n\u00a0=\u00a03 for each cohort). Error bars represent standard errors of three independent experiments. Significance was evaluated by the two-way ANOVA followed by the Sidak\u2019s multiple comparison test (A) and the one-way ANOVA followed by the Sidak\u2019s multiple comparison test in (B). *p<0.05.\n\nWhereas ribitol and ribose rescue functional glycosylation of \u03b1-DG by increasing the generation of the FKRP substrate CDP-ribitol, the mechanism for NAD+ remains unclear. Since several forms of NAD act as cofactors for oxidoreductases, we hypothesized that NAD+ could enhance the generation of ribitol-5-P and CDP-ribitol. To test this, we quantified the levels of PPP metabolites in NAD+-treated cells by LC/MS-MS, as described above for ribitol/ribose (Figure 3A). We found that NAD+ treatment led to a small increase in ribose levels compared to untreated counterparts, but no significant differences were detected in ribitol-5-P and CDP-ribitol, as shown by comparing untreated vs. NAD+, ribitol vs. ribitol/NAD+, and ribose vs. ribose/NAD+ (Figure 4\u2014figure supplement 2). These results suggest that the synergistic effect of NAD+ is independent of the FKRP substrate CDP-ribitol.\n\n### Functional FKRP is indispensable for the rescue of \u03b1-DG functional glycosylation by ribitol and ribose\n\nBecause the null mutation for FKRP is embryonic lethal (Chan et al., 2010), most FKRP mutations are thought to have some residual activity. To determine whether such residual activity of FKRP is required for the effects observed upon ribitol and ribose supplementation, we generated an FKRP-deficient pluripotent stem cell line (FKRP knockout\u00a0[KO]) using CRISPR/Cas9 genome editing. Immunostaining for MHC showed similar differentiation between FKRP KO myotubes and respective control WT counterparts (Figure 5A), but as anticipated, FKRP KO myotubes lacked functional glycosylation of \u03b1-DG, as evidenced by immunostaining and western blot to IIH6 (Figure 5A and B) and absence of laminin binding (Figure 5B). Importantly, treatment of FKRP KO myotubes with ribitol, ribose, or NAD+ did not rescue \u03b1-DG functional glycosylation (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative immunostaining of FKRP knockout\u00a0(KO) and respective control wild\u00a0type\u00a0(WT) isogenic PS cell-derived myotubes for myosin heavy chain\u00a0(MHC) and IIH6 (in red). DAPI stained nuclei (in blue). Scale bar, 200 \u03bcm. (B) Western blot for IIH6 shows absence of \u03b1-DG functional glycosylation in FKRP KO myotubes. \u03b2-DG was used as loading control. Lower panel shows representative wheat germ agglutinin\u00a0(WGA) pull-down for these samples and laminin overlay assay\u00a0(LOA) shows the lack of laminin detection in FKRP KO myotubes. Parental WT myotubes were used as positive control. (C) Deletion of FKRP abolishes ribitol, ribose, and NAD+ mediated rescue of \u03b1-DG functional glycosylation, as shown by western blot for IIH6. \u03b2-DG was used as loading control. (D) Representative immunostaining of parental WT (WT-2) and FKRP C318Y iPS cell-derived myotubes for MHC (upper panel) and IIH6 (lower panel). DAPI stains nuclei (in blue). Scale bar, 200 \u03bcm. (E) FKRP C318Y abolishes ribitol, ribose, and combinations with NAD+ mediated rescue of \u03b1-DG functional glycosylation, as shown by western blot for IIH6. \u03b2-DG was used as loading control.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013B) Western blot for core \u03b1-DG and \u03b2-DG in FKRP C318Y myotubes treated with NAD+.\u00a0(B) Total protein stain was used as loading control. (C) Bar graphs shows quantification of \u03b1-DG and \u03b2-DG normalized to total protein stain. Error bars represent standard errors of eight independent experiments. Significance was evaluated by the unpaired Student\u2019s t test. *p<0.05.\n\nTo investigate whether other mutations associated with the WWS phenotype are amenable to rescue by these metabolites, we introduced the WWS-clinically associated FKRP-C318Y mutation (Beltran-Valero de Bernab\u00e9 et al., 2004) located in the zinc finger loop of the FKRP catalytic domain into WT iPS cells using CRISPR-Cas9 genome editing. Isogenic myotubes generated from FKRP-C318Y iPS cells displayed a similar phenotype to patient-specific FP4 myotubes (Figure 5D), thus confirming the in vitro WWS phenotype. We tested ribitol, ribose, or combinations with NAD+ supplementation in cultures of FKRP-C318Y myotubes, as described above for FP4, and none of the metabolites were able to rescue \u03b1-DG functional glycosylation in these cells (Figure 5E), suggesting that rescue is mutation specific.\n\nTo understand how WWS-associated mutations (Figure 6A) may interfere with the FKRP enzymatic activity, we turned to the recently deciphered crystal structure of FKRP (Figure 6B;\u00a0Kuwabara et al., 2020). The zinc finger loop in the FKRP catalytic domain consists of four conserved cysteine residues (C289, C296, C317, C318) required for Zn2+ ion binding. The C318Y mutation disrupts direct chelation to the Zn2+ ion and sterically hinders the binding site from occupancy. This result suggests that this mutation will lead to significant, if not complete, loss of enzymatic function, and therefore metabolite-mediated rescue is not possible. On the other hand, F473 makes up a small hydrophobic pocket with L348, I357, W359, V477, and P481 that is essential for CDP-ribitol substrate binding within the catalytic domain. The mutation of F473 to cysteine (F473C) present in the FP4 patient sample leads to a free energy change in substrate binding affinity of +4.3 kcal/mol. This difference suggests that the F473C mutation results in destabilization of the Michaelis complex formation with diminished enzyme efficiency, and therefore, metabolite supplementation that increases CDP-ribitol levels allows for increased FKRP activity. These results indicate that functional FKRP is required for rescue of \u03b1-DG functional glycosylation by ribitol, ribose, and NAD+.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic representation of FKRP protein highlighting the N-terminal stem domain and the localization of C318Y and F473C mutations in the C-terminal catalytic domain. (B) Crystal structure of the catalytic domain of FKRP highlights the cytidine diphosphate-ribitol (CDP-Rbo) and \u03b1-DG M3 glycan binding sites within its catalytic domain. The FKRP C318Y mutation is one of the four required cysteine residues located in the zinc finger loop. The F473C mutation present in the FP4 patient-specific induced pluripotent stem (iPS) cell line is located adjacent to the pyrimidine ring of CDP-Rbo essential for substrate binding. An electrostatic potential surface highlights the overall cavity size and the electrostatic complementarity between the bound substrates and FKRP, with the neutral, negatively, and positively charged surfaces colored in the white, red,\u00a0and blue, respectively. The model is based on the PDB:6KAM structure.\n\n## Discussion\n\nMyoblasts harvested from patients are commonly used to model muscular dystrophies in vitro. However, in cases like WWS, the short lifespan along with the difficulty in obtaining tissue from patients represents major hurdles in establishing patient-specific myoblasts lines. The generation of patient-specific iPS cells circumvents the restricted patient tissue availability and the limited cell proliferation capacity seen in ex vivo expanded primary cells (Kondo et al., 2013; McKeithan et al., 2020; Sampaziotis et al., 2015; Young et al., 2016).\n\nTo date, several experimental studies in animal models have provided evidence supporting the potential therapeutic application of gene therapy (Gicquel et al., 2017; Xu et al., 2013) and cell therapy (Azzag et al., 2020; Frattini et al., 2017) for FKRP-associated muscular dystrophies, but these studies are still at early stages, and therefore, currently there are no clinical trials underway. In this study, we show that PPP metabolites are able to increase functional glycosylation of \u03b1-DG in WWS patient-specific iPS cell-derived myotubes associated with FKRP mutations (FP4). Besides ribitol, we show that ribose is also able to provide significant increase in IIH6 immunoreactivity in FKRP mutants, which is accompanied by rescue of laminin binding. Our results indicate that both these PPP metabolites increase ribitol-5-P and CDP-ribitol levels in FP4-treated myotubes. The enhanced functional glycosylation of \u03b1-DG in FP4 mutant myotubes is hypothesized to be due to increased CDP-ribitol levels leading to increased ribitol-5-P transferase activity in the disease-causing FKRP mutant.\n\nWe show for the first time that NAD+ can increase functional glycosylation of \u03b1-DG in a human WWS FKRP model, and when combined with ribitol or ribose, can significantly potentiate the rescue of the muscle pathology in vitro. Studies in dystroglycan (dag1) and FKRP zebrafish mutants have demonstrated a beneficial effect for NAD+ (Bailey et al., 2019; Goody et al., 2012). Although the mechanism is not entirely elucidated, NAD+ was reported to promote increased ADP-ribosylation of integrin receptors, which in turn increase integrin and laminin binding, increase laminin-111 organization and subcellular localization of paxillin to cell adhesion complexes (Goody et al., 2012; Zolkiewska, 2005). Interestingly, overexpression of paxillin rescues muscle structure in dag1 but not in FKRP mutants, suggesting a different mechanism of action (Bailey et al., 2019). Previous studies in two Duchenne MD mouse models showed that NAD+ improved muscle function via reduced parylation, as well as increased mitochondria function and expression of structural proteins (Ryu et al., 2016). Our data on the quantification of core \u03b1-DG in FKRP-C318Y myotubes that had been treated or not with NAD+ revealed a significant increase in core \u03b1-DG upon NAD+ treatment, whereas \u03b2-DG levels remained unchanged (Figure 5\u2014figure supplement 1), suggesting that NAD+ supplementation specifically increases \u03b1-DG. Although further studies are required to elucidate the mechanism by which NAD+ may lead to increased \u03b1-DG, a plausible hypothesis is a post-translational effect.\n\nImportantly, we show that functional FKRP mediates the rescue by ribitol, ribose, and NAD+ since FKRP KO\u00a0and FKRP-C318CY myotubes do not show IIH6 rescue upon treatment with any of these compounds or combinations. Based on the recently reported FKRP crystal structure (Kuwabara et al., 2020), C318 is located in the zinc finger loop (G288 to C318) of the FKRP catalytic domain, which has been proposed to be of fundamental importance for the catalytic activity of FKRP (Kuwabara et al., 2020). Our results suggest that the ability of PPP metabolites to partially rescue \u03b1-DG functional glycosylation is mutation dependent. Although further studies are required to determine which patients could benefit from this potential treatment, our results suggest that phenotypes associated with mutations in the zinc finger loop region may not be rescued by ribitol and ribose, whereas FKRP mutations in other regions of the catalytic domain are amenable to rescue, as shown for FP4. This is in line with previous studies in ISPD fibroblasts, in which rescue of functional glycosylation of \u03b1-DG was found to be mutation dependent (Gerin et al., 2016; van Tol et al., 2019).\n\nDietary interventions can provide a feasible and economically accessible solution for the treatment of MD associated with CDP-ribitol defects. Although ribitol/NAD+ showed promising results in our model, clinical trials to assess the safety of ribitol are still necessary. On the other hand, ribose is a commercially available supplement, and to date, with no major side effects in humans (Dodd et al., 2004; Seifert et al., 2017; Thompson et al., 2014). Furthermore, NAD+ levels can be increased by several vitamin B3 forms, such as nicotinic acid (niacin) and nicotinamide riboside, which have been investigated, showing no major side effects (Elhassan et al., 2019; Guyton and Bays, 2007; Pirinen et al., 2020). Although future research studies are necessary to determine the optimal dosage of the combined approach, the safety record of these compounds justifies using ribose/NAD+ as potential candidates to treat FKRP-associated MD. Together, our results support the use of iPS\u00a0cell-derived myotubes as a reliable platform for in vitro disease modeling and drug screening. Importantly, our data provide a rationale for the potential use of ribitol/NAD+ and ribose/NAD+ as therapeutics to increase \u03b1-DG functional glycosylation in patients with FKRP mutations.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens, male)</td>\n      <td>FP4</td>\n      <td>This study</td>\n      <td></td>\n      <td>Available from the Anne Bang lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Homo sapiens, male)</td>\n      <td>FKRP C318Y</td>\n      <td>This study</td>\n      <td>TC1133 FKRP C318Y</td>\n      <td>Available from the Rita Perlingeiro lab</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Homo sapiens, male)</td>\n      <td>FKRP KO</td>\n      <td>This study</td>\n      <td>H9 FKRP KO</td>\n      <td>Available from the Rita Perlingeiro lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens, male)</td>\n      <td>WT</td>\n      <td>PMID:22560081</td>\n      <td>PLZ</td>\n      <td>Control line, available from the Rita Perlingeiro lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens, male)</td>\n      <td>Parental WT FKRP KO</td>\n      <td>WiCell</td>\n      <td>H9</td>\n      <td>ESC control line (WA09)</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens, male)</td>\n      <td>Parental WT FKRP C318Y</td>\n      <td>PMID:26411904</td>\n      <td>TC-1133</td>\n      <td>Control line, available with RUCDR Infinite Biologics</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CHIR99021</td>\n      <td>Tocris</td>\n      <td>Cat# 4423</td>\n      <td>10 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>LDN193189</td>\n      <td>Cayman chemical</td>\n      <td>Cat# 19396</td>\n      <td>200 nM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SB431542</td>\n      <td>Cayman chemical</td>\n      <td>Cat# 13031</td>\n      <td>10 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPT</td>\n      <td>Cayman chemical</td>\n      <td>Cat# 13197</td>\n      <td>10 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dexamethasone</td>\n      <td>Cayman chemical</td>\n      <td>Cat# 11015</td>\n      <td>10 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Forskolin</td>\n      <td>Cayman chemical</td>\n      <td>Cat# 11018</td>\n      <td>10 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ribitol</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# A5502</td>\n      <td>50 mM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D-(\u2212)-ribose</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# R9629</td>\n      <td>10 mM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NAD+</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# N0632</td>\n      <td>100 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sorbinil</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# S7701</td>\n      <td>100 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Doxycycline</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# D9891</td>\n      <td>1 \u00b5g/ml</td>\n    </tr>\n    <tr>\n      <td>Recombinant protein</td>\n      <td>Recombinant human FGF-basic</td>\n      <td>Peprotech</td>\n      <td>Cat# 100-18B</td>\n      <td>5 ng/ml</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-alpha dystroglycan (mouse monoclonal)</td>\n      <td>Millipore</td>\n      <td>Cat# 05\u2013593, RRID:AB_309828</td>\n      <td>Dilution 1:1000 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-alpha dystroglycan (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>Cat# IIH6 C4, RRID:AB_2617216</td>\n      <td>Dilution 1:50 (IF)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human dystroglycan (sheep polyclonal)</td>\n      <td>R and D Systems</td>\n      <td>Cat# AF6868, RRID:AB_10891298</td>\n      <td>Dilution 1:1000 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MHC (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>Cat# MF20, RRID: AB_2147781</td>\n      <td>Dilution 1:50 (IF) 1:200 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-laminin (rabbit polyclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# L9393, RRID:AB_477163</td>\n      <td>Dilution 1:1000 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-beta dystroglycan, concentrated (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>Cat# MANDAG2 clone 7D11, RRID:AB_2211772</td>\n      <td>Dilution 1:1500 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-OCT3/4 (mouse monoclonal)</td>\n      <td>SCBT</td>\n      <td>Cat# C-10, RRID: AB_628051</td>\n      <td>Dilution 1:50 (IF)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-SOX2 (goat polyclonal)</td>\n      <td>SCBT</td>\n      <td>Cat# Y-17, RRID: AB_2286684</td>\n      <td>Dilution 1:50 (IF)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-NANOG (mouse monoclonal)</td>\n      <td>SCBT</td>\n      <td>Cat# H-2, RRID: AB_10918255</td>\n      <td>Dilution 1:50 (IF)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-SSEA4 (mouse monoclonal)</td>\n      <td>SCBT</td>\n      <td>Cat# sc-21704, RRID: AB_628289</td>\n      <td>Dilution 1:50 (IF)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa fluor 555 goat anti-mouse IgG and IgM (goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# A-21424, RRID: AB_141780 Cat# A-21042, RRID:AB_2535711</td>\n      <td>Dilution 1:500 (IF)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>DyLight 680 anti-rabbit IgG (goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 35568, RRID:AB_614946</td>\n      <td>Dilution 1:10000 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>DyLight 680 anti-mouse IgM (goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# SA5-10154, RRID:AB_2556734</td>\n      <td>Dilution 1:10000 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>DyLight 680 anti-sheep IgG (rabbit polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# SA5-10058, RRID:AB_2556638</td>\n      <td>Dilution 1:10000 (WB)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>DyLight 800 anti-mouse IgG (goat polyclonal)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# SA5-10176, RRID:AB_2556756</td>\n      <td>Dilution 1:10000 (WB)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>SCBT</td>\n      <td>sc-3598</td>\n      <td>(1.5 \u00b5g/ml)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Laminin from Engelbreth-Holm-Swarm murine sarcoma basement membrane</td>\n      <td>Millipore Sigma</td>\n      <td>Cat# L2020</td>\n      <td>1 \u00b5g/\u00b5l</td>\n    </tr>\n  </tbody>\n</table>\n\n### iPS cell reprogramming and cell lines\n\nFKRP mutant fibroblasts obtained from a 1-year-old male patient (Kava et al., 2013) were reprogrammed into iPS cells, named FP4, using the CytoTune-iPS 2.0 Sendai Reprogramming Kit (Thermo Fisher Scientific) using feeder-free conditions, according to the manufacturer\u2019s instructions. FP4 iPS cells were passaged with ReLeSR (STEMCELL Technologies) and cultured on Matrigel-coated dishes using mTeSR1 medium (STEMCELL Technologies). Newly generated and previously described WT iPS/embryonic\u00a0stem\u00a0(ES) cells (Darabi et al., 2012; Selvaraj et al., 2019b) are listed in the key resources table. Cell lines were authenticated by verification of genetic mutation by sanger sequencing. All cell lines were negative for mycoplasma contamination.\n\n### Mice and teratoma studies\n\nExperiments were carried out according to protocols (protocol ID 2002-37833A) approved by the University of Minnesota Institutional Animal Care and Use Committee. NOD scid gamma\u00a0(NSG) mice (Jackson laboratory) were used to perform teratoma studies. FP4 cells (1.5\u00a0\u00d7\u00a0106) were suspended in a 1:1 Dulbecco's Modified Eagle Medium: Nutrient Mixture F-12 (DMEM-F12, ThermoScientific) and Matrigel (Corning) solution and injected in the quadriceps of NSG mice. The teratoma was harvested 2 months after injection.\n\n### Myogenic differentiation and cell culture\n\nInducible PAX7 FP4 human iPS cells were generated by lentiviral transduction of the pSAM2-PAX7-IRES-GFP and pFUGW-rtTA constructs. Inducible Pax7 WT iPS cells were generated previously (Darabi et al., 2012), and they were maintained on Matrigel-coated flasks using mTeSR 1 (STEMCELL Technologies). iPAX7-iPS cells were dissociated with Accumax (Innovative Cell Technologies), and 1\u00a0\u00d7\u00a0106 cells were plated on a 6 cm non-adherent Petri dishes using mTeSR1 medium supplemented with 10 \u00b5M Y-27632 (ROCK inhibitor) and incubated on a shaker at 60 rpm (day 0). On day 2, the medium was replaced with embryoid body (EB) differentiation medium (15% fetal bovine serum (FBS), 10% horse serum, 1% KnockOut Serum Replacement, 1% GlutaMax, 1% penicillin-streptomycin, 50 \u00b5g/ml ascorbic acid, and 4.5 mM monothioglycerol in Iscove\u2019s modified Dulbecco\u2019s medium) supplemented with 10 \u00b5M CHIR990217 (GSK3 inhibitor). After 2 days of incubation of EBs in suspension, the medium was replaced with fresh EB differentiation medium containing 10 \u00b5M SB-431542 and 200 nM LDN-193189. On day 5, 1 \u00b5g/ml doxycycline was added to promote PAX7 induction. After 24 hr the media was changed with fresh (EB) differentiation medium with 1 \u00b5g/ml doxycycline. Day 8 EBs were collected and plated as a monolayer on gelatin-coated flasks using EB differentiation medium supplemented with 10 ng/ml human basic fibroblast growth factor and 1 \u00b5g/ml doxycycline. On day 12, GFP+ cells (PAX7+ myogenic progenitors) were sorted using a FACS Aria II (BD Biosciences) and expanded on gelatin-coated flasks using the same medium. At 90% cell density, cells were passaged using Trypsin-EDTA (Gibco)\u00a0and replated on new gelatin-coated flasks.\n\nMyogenic progenitors were terminally differentiated into myotubes by growing them to confluency and then switching to terminal differentiation medium, which consisted of DMEM low glucose supplemented with 2% horse serum, 1% insulin-transferrin-selenium, 1% penicillin-streptomycin, 10 \u00b5M SB-431542, 10 \u00b5M LY-374973, 10 \u00b5M Forskolin, and 10 \u00b5M dexamethasone (Selvaraj et al., 2019b). At this point, cultures were exposed to different treatments as follows: ribitol (A5502, Sigma-Aldrich), D-(\u2212)-ribose (R9629, Sigma-Aldrich), 100 \u03bcM NAD+ (N0632, Sigma-Aldrich), and/or 100 \u03bcM sorbinil (S7701, Sigma-Aldrich). Media was replenished on day 3 of differentiation, and myotubes characterization was performed after 5\u20138 days of terminal differentiation.\n\n### Cytogenetic analysis\n\nLive iPS cells were submitted to the Cytogenomics core at the University of Minnesota Masonic Cancer Center for G-band karyotype analysis. Cells were treated with colcemid for 3 hr to arrest cells, and 20 different metaphases were analyzed at a resolution of 400\u2013450 band level.\n\n### Generation of FKRP isogenic cell lines\n\nTo generate the FKRP KO pluripotent stem cell line, the previously published gRNA (CATGCGGCTCACCCGCTGCCAGG) targeting the start codon of FKRP (Yagi et al., 2016) was cloned into pSpCas9(BB)\u22122A-GFP (PX458; Addgene plasmid # 48138) (Ran et al., 2013). The ES cell line H9 was nucleofected using the Human Stem Cell Nucleofector Kit 1 (Lonza) and sorted for GFP at 48 hr post-nucleofection. ES cells were expanded, and IIH6 negative cells were sorted by FACS. The deletion was confirmed by sequencing.\n\nFKRP C318Y mutant iPS cells were generated using an HDR donor vector as previously described (Selvaraj et al., 2019a). FKRP exon 4 carrying the c.953 G>A (p.318 C>Y) mutation was cloned upstream of GFP-2A-neoR cassette (Dhoke et al., in prep). Gene editing was carried out using a ribonucleoprotein based delivery of guide RNA (Synthego) and Hifi Cas9 protein (IDT). Following antibiotic selection, FACS purified IIH6 negative cells were expanded and subjected to single cell cloning.\n\nThe FKRP vector was generated by cloning the full-length FKRP coding sequence from Dharmacon (clone 3160297) into pSAM-ires-mCherry vector (Bosnakovski et al., 2008). Plasmids were prepared using an Endofree Midiprep kit (Nucleobond). Lentiviruses were produced by co-transfection of the transfer vector and the packaging constructs (pVSV-G and p\u03948.74) into HEK 293 T cells. Transfections were performed using Lipofectamine LTX with Plus Reagent (Invitrogen) following manufacturer instructions. Supernatants containing the lentiviral particles were collected 36 hr after transfection and passed through a 0.45 \u03bcm filter. Myogenic progenitors were transduced with pSAM-ires-mCherry (empty-LV FP4) or pSAM-FKRP-iresmCherry (FKRP FP4), and subsequently mCherry-positive cells were purified by FACS.\n\n### IIH6 FACS analysis\n\nIIH6 staining for FACS was performed as previously described with minor modifications (Rojek et al., 2007). iPS cells were washed once with phosphate buffer saline (PBS) and then harvested using enzyme-free cell dissociation buffer (Gibco) following the manufacturer\u2019s instructions. Cells were collected, centrifuged, washed with PBS, and then resuspended in PBS supplemented with 10% FBS (PBSF) in the presence of Fc Block (1 \u03bcl/million cells \u2013 BD Bioscience) and incubated for 5 min. Staining was performed by adding 1 \u03bcl of anti-\u03b1-DG antibody IIH6C4 (Millipore) or normal mouse IgM (Santa Cruz Biotechnology) antibody\u00a0per\u00a0million cells followed by 20 min incubation on ice. Cells were then washed with PBS and labeled with 488- or 555-conjugated secondary antibodies (1:500 in FACS buffer) for 20 min on ice in the dark. Cells were washed with PBS and filtered through a 70 \u03bcm strain to remove cell clumps, then resuspended in PBSF. Samples were sorted using a FACS\u00a0Aria II (BD Biosciences).\n\n### Immunoblot analysis and WGA pull-downs\n\nFrozen cells were homogenized in Tris-Buffer Saline (TBS, 50 mM Tris-Cl, pH 7.5, 150 mM NaCl) with 1% Triton X-100 and a cocktail of protease inhibitors (Complete \u2013 Millipore-Sigma) at 4\u00b0C by vortexing and then centrifuged for 30 min at 30000 g. Solubilized proteins from the supernatant were quantified with Bradford reagent (Millipore-Sigma). Protein samples were prepared in Laemmli Sample Buffer (LSB, BioRad). WGA pull-downs were performed using 350\u2013600 \u03bcg of protein lysate that was loaded on 35\u201360 \u03bcl of WGA-bound agarose beads (Vector Laboratories, Inc) and incubated with end-over-end mixing at 4\u00b0C overnight. After three washes with PBS (150 mM NaCl, 8 mM NaH2PO4, 42 mM Na2HPO4, pH 7.5) with 0.1% Triton X-100, bound protein was eluted with 2x LSB and incubated at 100\u00b0C for 5 min. Protein samples were separated on 4\u201315% using precast polyacrylamide gel (BioRad) by electrophoresis and then transferred to Immobilon-FL PVDFmembranes (Millipore) for detection with the indicated antibodies using Licor\u2019s Odyssey Infrared Imaging System. Total protein detection using was preformed using LI-COR REVERT kit according to the manufacturer's instructions. Used antibodies are described in the key resources table.\n\n### Laminin overlay assay\n\nThe LOA was performed as previously described with minor modifications (Pall et al., 1996). Briefly, 20 \u03bcl of WGA purified samples were separated on 4\u201315% SDS-polyacrylamide gels by electrophoresis and then transferred to Immobilon-FL PVDF membranes. Transfers were blocked with PBS and 5% nonfat dry milk for 1 hr at room temperature, and then briefly rinsed with TBS and incubated for 2 hr at room temperature in TBS containing 1 mM CaCl2, 1 mM MgCl2 (TBSS), 3% bovine serum albumin (BSA), and 1 mg/ml native laminin (L2020, Sigma). Transfers were washed twice for 10 min in TBSS and incubated overnight at 4\u00b0C with TBSS 3% BSA and anti-laminin (L9393, Sigma). Afterward, the membrane was washed with TBSS twice for 10 min and incubated with anti-rabbit DyLight 680 for 45 min at room temperature. Finally, membranes were washed with TBSS and visualized using Licor\u2019s Odyssey Infrared Imaging System. As a negative control, TBSS without 1 mM CaCl2 was used during incubation and washes.\n\n### Metabolite extraction and LC/MS-MS analysis\n\nRibitol-5-phosphate and CDP-ribitol were synthesized by Z Biotech (Aurora, CO). Myogenic progenitors were serum-starved after changing to differentiation medium only or supplemented with ribitol, ribose, ribitol/NAD+, ribose/NAD+, or NAD+ for 5 days, washed with cold PBS three times and harvested by scrapping the cells. In a blinded manner, samples were subjected to the following procedures. Cells were homogenized with 300 \u03bcl of MeOH:acetonitrile (1:1) and then centrifugated for 5 min at 11,000 rpm. The supernatants were removed, transferred to individual wells of 96-well plate, and analyzed by LC/MS-MS. An Applied Biosystems Sciex 4000 (Applied Biosystems, Foster City, CA) equipped with a Shimadzu HPLC (Shimadzu Scientific Instruments, Inc, Columbia, MD) and Auto-sampler (LEAP Technologies, Carrboro, NC) were used to detect ribitol, ribose, ribitol-5-P, and CDP-ribitol. The analysis of metabolites was performed by Z Biotech as described previously (Cataldi et al., 2018).\n\n### Molecular modeling\n\nModeling of FKRP with its CDP-ribitol and M3 substrates (PDB: 6KAM) (Kuwabara et al., 2020) was carried out using the Schrodinger modeling suite package (Schr\u00f6dinger Release 2018-4, 2018). All missing side chains and hydrogens atoms were added according to the default protein preparation protocol at pH 7.0, followed by energy minimization using OPLS2005 force field (Jorgensen et al., 1996) to optimize all hydrogen-bonding networks. The crystallographic Ba2+ ion was replaced by its native Mg2+ ion. The relative change in substrate-binding free energy due to the effect of mutation, \u0394\u0394Gbind(F473C), was performed based on the molecular mechanics generalized Born solvent accessible method (Still et al., 1990). It is evaluated as the difference in the protein stability between the unbound and bound states of FKRP and its F473C mutant.\n\n### Immunofluorescence analysis\n\nImmunofluorescence staining was performed by fixing cells with 4% paraformaldehyde in PBS for 10 min at 4\u00b0C, followed by permeabilization with 0.1% Triton in PBS and blocking with 3% BSA in PBS, before incubation with the primary antibodies. Samples were rinsed with PBS, blocked with 3% BSA in PBS, and then incubated with DAPI and respective secondary antibodies. Antibodies used in this study are described in the key resources table.\n\n### RT-qPCR\n\nSamples were collected with TRIzol Reagent (Invitrogen), and RNA was purified using a Direct-zol RNA Miniprep Plus Kit (Zymo Research). Purified RNA was quantified with NanoDrop 2000 (Thermo Fisher Scientific) and retrotranscribed using SuperScript VILO cDNA Synthesis Kit (Invitrogen) following the manufacturer\u2019s instructions. Gene expression analyses were performed using the cDNA corresponding to 12.5 ng of starting RNA for each reaction. The RT-qPCR analysis was performed using TaqMan Universal PCR Master Mix and TaqMan probes (Applied Biosystems).\n\n### Statistical analysis\n\nFor comparisons of two independent samples, we used the unpaired or paired Student\u2019s t test. For comparisons of multiple groups, we used the two-way ANOVA followed by the Tukey\u2019s multiple comparisons test. The one-way ANOVA followed by the Sidak\u2019s multiple comparisons test was used when measuring one variable. p-values\u00a0<\u00a00.05 were considered significant. Statistical comparisons were performed using GraphPad Prism software.\n",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "147d67a4-72f1-440d-ae04-454152d812ef",
+      "submission_id": "5df52208-8a03-4be5-9e5a-46b53279f62c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christopher Cardozo, United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65443.sa1](https://doi.org/10.7554/eLife.65443.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe paper examines several questions regarding a severe form of muscular dystrophy caused by mutations of an enzyme necessary for forming the proper inter-molecular associations that anchor muscle cells to the meshwork of fibers within which they reside. This work elucidates a simple treatment with nutritional supplements using cell culture models. It will be exciting to see how this knowledge translates in other experimental systems.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"NAD+ enhances ribitol and ribose rescue of \u03b1-dystroglycan functional glycosylation in FKRP-mutant myotubes\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Christopher Cardozo as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Mone Zaidi as the Senior Editor.\n\nSummary:\n\nIn this manuscript, the authors used myotubes derived from iPS cells generated from fibroblasts from a patient with Walker-Warburg syndrome to test the therapeutic potential of pentose phosphate pathway metabolites alone or combined with NAD+ to mitigate the signature biochemical deficit of this disorder, incomplete glycosilation of \u03b1-dystroglycan resulting in impaired binding of this protein to laminin. The syndrome is caused by mutations of fukutin-related protein which result in reduced enzymatic activity. The paper biochemically validates this model through its reduced IIH6 99 and laminin binding, and rescue by FKRP transgene introduction. The authors investigate the effect of manipulations of the pentose phosphate shunt through ribose at varying concentrations, its product ribitol and NAD on rescuing the phenotype. The latter is reflected in glycosylation of \u03b1-dystroglycan and laminin binding. The rescue was associated with increased ribitol-5-P and CDP ribitol. The rescue, again assayed through reduced IIH6 99 and laminin binding was also enhanced by NAD+, which appeared to act through enhanced ribose, independent of ribitol-5-P and CDP-ribitol. It was compromised by FKRP knockout in FKRP-C318CY myotubes. The paper concludes with possible and reasonable translational suggestions and speculation strongly inviting clinical investigation.\n\nEssential revisions:\n\nThe authors are encouraged to consider the following suggestions to improve clarity of the presentation of the data.\n\nFigure 5C: Confirm in the figure or figure legend that experiments done with FKRP KO cells?\n\nFigure 1\u2014figure supplement 1. It seems appropriate to add a description of how karyotyping was done or provide a link to prior literature.\n\nFigure 2\u2014figure supplement 1A and D: it was difficult to discern what is shown in these images (phase contrast, MyHC-immunostaining, or others as appropriate).\n",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2dc788be-569b-4d46-a413-ecfebc17ee6f",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C1",
+      "claim": "Mutations in the fukutin-related protein (FKRP) cause Walker-Warburg syndrome (WWS), a severe form of congenital muscular dystrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the fukutin-related protein (FKRP) cause Walker-Warburg syndrome (WWS), a severe form of congenital muscular dystrophy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature establishing this relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "c8507009-82b2-4048-93c0-e49ac27547c7",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C2",
+      "claim": "A WWS human induced pluripotent stem cell-derived myogenic model recapitulates hallmarks of WWS pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we established a WWS human induced pluripotent stem cell-derived myogenic model that recapitulates hallmarks of WWS pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the establishment and characterization of this model with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "8cb26ee7-3d58-4918-ac11-396284321f6e",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C3",
+      "claim": "Functional recovery of WWS myotubes is promoted by ribitol.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that functional recovery of WWS myotubes is promoted not only by ribitol but also by its precursor ribose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data showing ribitol treatment rescues \u03b1-dystroglycan glycosylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "20083177-e798-4937-9bc8-a7a1f0fdc93c",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C4",
+      "claim": "Functional recovery of WWS myotubes is promoted by ribose.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that functional recovery of WWS myotubes is promoted not only by ribitol but also by its precursor ribose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data showing ribose treatment rescues \u03b1-dystroglycan glycosylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "082d30e6-a66f-4203-978e-77ea211b1b1e",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C5",
+      "claim": "The combination of ribitol with NAD+ results in a synergistic effect on rescue of \u03b1-dystroglycan glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that the combination of each of these metabolites with NAD+ results in a synergistic effect, as demonstrated by rescue of \u03b1-dystroglycan glycosylation and laminin binding capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data comparing ribitol alone versus ribitol+NAD+ treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "ac395a00-635a-4aee-9016-cf676d604368",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C6",
+      "claim": "The combination of ribose with NAD+ results in a synergistic effect on rescue of \u03b1-dystroglycan glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that the combination of each of these metabolites with NAD+ results in a synergistic effect, as demonstrated by rescue of \u03b1-dystroglycan glycosylation and laminin binding capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data comparing ribose alone versus ribose+NAD+ treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "61f0ea26-66de-427a-b7ff-0389aa59ce0a",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C7",
+      "claim": "FKRP residual enzymatic capacity is required for rescue by ribitol and ribose.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, we found that FKRP residual enzymatic capacity, characteristic of many recessive FKRP mutations, is required for rescue as supported by functional and structural mutational analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data from FKRP knockout and C318Y mutant cells showing no rescue, along with structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "74568b87-51e4-415b-8a4f-b52738cd6a6b",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C8",
+      "claim": "Mutations in FKRP result in a broad spectrum of muscular dystrophy phenotypes, ranging from mild Limb-Girdle MD (LGMDR9) to Walker-Warburg syndrome (WWS).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the fukutin-related protein (FKRP) gene result in a broad spectrum of muscular dystrophy (MD) phenotypes, ranging from mild Limb-Girdle MD (LGMDR9) to Walker-Warburg syndrome (WWS), the most severe form of congenital MD (CMD) (Beltran-Valero de Bernab\u00e9 et al., 2004; Brockington et al., 2001a; Brockington et al., 2001b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "dc8cb8f1-6af3-4aa4-affe-41c6564ee0ca",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C9",
+      "claim": "The biochemical hallmark of FKRP muscle disorders is hypoglycosylation of \u03b1-dystroglycan (\u03b1-DG).",
+      "claim_type": "EXPLICIT",
+      "source": "The biochemical hallmark of FKRP muscle disorders is hypoglycosylation of \u03b1-dystroglycan (\u03b1-DG), which leads to disruption in the interaction of \u03b1-DG with extracellular matrix proteins, in particular laminin-\u03b12, which is essential for muscle fiber integrity (Ervasti and Campbell, 1993; Ibraghimov-Beskrovnaya et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "1d27e3cb-9b5c-4675-bbab-f2811b406254",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C10",
+      "claim": "Hypoglycosylation of \u03b1-dystroglycan leads to disruption in the interaction of \u03b1-DG with extracellular matrix proteins, in particular laminin-\u03b12.",
+      "claim_type": "EXPLICIT",
+      "source": "The biochemical hallmark of FKRP muscle disorders is hypoglycosylation of \u03b1-dystroglycan (\u03b1-DG), which leads to disruption in the interaction of \u03b1-DG with extracellular matrix proteins, in particular laminin-\u03b12, which is essential for muscle fiber integrity (Ervasti and Campbell, 1993; Ibraghimov-Beskrovnaya et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "4bc908a0-0a88-4b97-bce5-bae2fd3d4579",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C11",
+      "claim": "The interaction between \u03b1-DG and laminin-\u03b12 is essential for muscle fiber integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "The biochemical hallmark of FKRP muscle disorders is hypoglycosylation of \u03b1-dystroglycan (\u03b1-DG), which leads to disruption in the interaction of \u03b1-DG with extracellular matrix proteins, in particular laminin-\u03b12, which is essential for muscle fiber integrity (Ervasti and Campbell, 1993; Ibraghimov-Beskrovnaya et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "96f682bd-f9b1-476d-be8c-e050ae671417",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C12",
+      "claim": "WWS has reduced life expectancy of less than 3 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its rarity and reduced life expectancy (<3 years), disease pathogenesis and treatment strategies remain elusive for WWS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about WWS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "2b055516-3c86-4fba-bb73-e968a2cd13f4",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C13",
+      "claim": "There is no effective treatment for FKRP-associated MDs.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, there is no effective treatment for FKRP-associated MDs (Ortiz-Cordero et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "0c5b77d5-10f3-4682-aecc-5b53d99d1b9d",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C14",
+      "claim": "FKRP is a ribitol-5-phosphate transferase.",
+      "claim_type": "EXPLICIT",
+      "source": "FKRP is a ribitol-5-phosphate transferase, that in tandem with fukutin (FKTN), adds ribitol 5-phosphate onto the 3GalNAc-\u03b21-3GlcNAc-\u03b21\u20134(P-6) Man-1-Thr/Ser modification of \u03b1-DG (Core M3) (Manya et al., 2004; Yoshida-Moriguchi et al., 2013), using cytidine diphosphate (CDP)-ribitol, which is produced by isoprenoid synthase domain-containing protein (ISPD) (Gerin et al., 2016; Kanagawa et al., 2016; Praissman et al., 2016; Riemersma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "f1225ff2-ea00-452e-a862-9c796f31e21b",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C15",
+      "claim": "FKRP, in tandem with fukutin (FKTN), adds ribitol 5-phosphate onto the 3GalNAc-\u03b21-3GlcNAc-\u03b21\u20134(P-6) Man-1-Thr/Ser modification of \u03b1-DG (Core M3).",
+      "claim_type": "EXPLICIT",
+      "source": "FKRP is a ribitol-5-phosphate transferase, that in tandem with fukutin (FKTN), adds ribitol 5-phosphate onto the 3GalNAc-\u03b21-3GlcNAc-\u03b21\u20134(P-6) Man-1-Thr/Ser modification of \u03b1-DG (Core M3) (Manya et al., 2004; Yoshida-Moriguchi et al., 2013), using cytidine diphosphate (CDP)-ribitol, which is produced by isoprenoid synthase domain-containing protein (ISPD) (Gerin et al., 2016; Kanagawa et al., 2016; Praissman et al., 2016; Riemersma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "19f7b1ca-3758-43ad-ba23-cf9cd2b11de0",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C16",
+      "claim": "FKRP uses cytidine diphosphate (CDP)-ribitol as a substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "FKRP is a ribitol-5-phosphate transferase, that in tandem with fukutin (FKTN), adds ribitol 5-phosphate onto the 3GalNAc-\u03b21-3GlcNAc-\u03b21\u20134(P-6) Man-1-Thr/Ser modification of \u03b1-DG (Core M3) (Manya et al., 2004; Yoshida-Moriguchi et al., 2013), using cytidine diphosphate (CDP)-ribitol, which is produced by isoprenoid synthase domain-containing protein (ISPD) (Gerin et al., 2016; Kanagawa et al., 2016; Praissman et al., 2016; Riemersma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "3bf22862-9ff7-4904-964a-dae88cfe26b1",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C17",
+      "claim": "CDP-ribitol is produced by isoprenoid synthase domain-containing protein (ISPD).",
+      "claim_type": "EXPLICIT",
+      "source": "FKRP is a ribitol-5-phosphate transferase, that in tandem with fukutin (FKTN), adds ribitol 5-phosphate onto the 3GalNAc-\u03b21-3GlcNAc-\u03b21\u20134(P-6) Man-1-Thr/Ser modification of \u03b1-DG (Core M3) (Manya et al., 2004; Yoshida-Moriguchi et al., 2013), using cytidine diphosphate (CDP)-ribitol, which is produced by isoprenoid synthase domain-containing protein (ISPD) (Gerin et al., 2016; Kanagawa et al., 2016; Praissman et al., 2016; Riemersma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "1b75b522-9a05-4a65-9c76-8e83757989a2",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C18",
+      "claim": "The presence of ribitol-5-phosphate is essential for the subsequent addition of \u22123Xyl\u03b11-3GlcA\u03b21 and (3Xyl\u03b11-3GlcA\u03b21)n-.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of ribitol-5-phosphate is essential for the subsequent addition of \u22123Xyl\u03b11-3GlcA\u03b21 and (3Xyl\u03b11-3GlcA\u03b21)n- and, therefore, for allowing \u03b1-DG to bind to extracellular membrane ligands (Inamori et al., 2012; Manya et al., 2016; Praissman et al., 2014; Willer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "c56bd535-0c47-49b8-99aa-4f6a2573d0ad",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C19",
+      "claim": "Ribitol-5-phosphate is essential for allowing \u03b1-DG to bind to extracellular membrane ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of ribitol-5-phosphate is essential for the subsequent addition of \u22123Xyl\u03b11-3GlcA\u03b21 and (3Xyl\u03b11-3GlcA\u03b21)n- and, therefore, for allowing \u03b1-DG to bind to extracellular membrane ligands (Inamori et al., 2012; Manya et al., 2016; Praissman et al., 2014; Willer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "6c3598df-8625-4af7-892d-2ec0fc715d1c",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C20",
+      "claim": "Addition of ribitol or ribose to fibroblasts from patients with ISPD mutations resulted in increased CDP-ribitol levels and rescue of \u03b1-DG functional glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of the pentose phosphate pathway (PPP) metabolites ribitol or ribose, a precursor of ribitol (Gerin et al., 2016; Huck et al., 2004), to fibroblasts from patients with ISPD mutations resulted in increased CDP-ribitol levels and rescue of \u03b1-DG functional glycosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "11f2af3e-0884-45d7-aa34-984d2fe78d07",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C21",
+      "claim": "Rescue of \u03b1-DG functional glycosylation by ribitol or ribose varied significantly among samples with different mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, rescue varied significantly among samples with different mutations (Gerin et al., 2016; van Tol et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "3552a997-e045-4c3e-88ee-f77aa51441a4",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C22",
+      "claim": "Ribitol treatment in FKRP mutant mice modeling severe LGMDR9 partially restored \u03b1-DG functional glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cataldi et al., 2018 documented that ribitol treatment in FKRP mutant mice modeling severe LGMDR9 partially restored \u03b1-DG functional glycosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "6b10190c-2819-45a7-8c24-469095547034",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C23",
+      "claim": "Ribitol treatment of embryoid bodies from an LGMDR9 patient-specific induced pluripotent stem cell line partly recovered the glycosylation defect.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Nickolls et al., 2020 showed that ribitol treatment of embryoid bodies from an LGMDR9 patient-specific induced pluripotent stem (iPS) cell line partly recovered the glycosylation defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "c35796fb-5b79-4a67-a165-73e165824005",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C24",
+      "claim": "NAD forms (NAD+, NADH, NADP, and NADPH) are essential cofactors for oxidoreductases in the pentose phosphate pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "NAD forms (NAD+, NADH, NADP, and NADPH) are essential cofactors for oxidoreductases in the PPP (Singh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "781ac8f0-abaf-41e0-982e-b68c1e8e4095",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C25",
+      "claim": "NAD+ supplementation in FKRP-deficient zebrafish led to decreased muscle degeneration and improved muscle function when administered at gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Bailey et al., 2019 reported that NAD+ supplementation in FKRP-deficient zebrafish led to decreased muscle degeneration and improved muscle function when administered at gastrulation, before muscle development occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "1b0f84bb-bf18-4581-8ce5-0951c78b1115",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C26",
+      "claim": "FP4 iPS cells were generated from a 1-year-old WWS male patient harboring two mutations in exon 4 of the FKRP gene: dc.558dupC (p.A187fs) and c.1418T>G(p.F473C).",
+      "claim_type": "EXPLICIT",
+      "source": "Using an integration-free approach, we generated iPS cells from a 1-year-old WWS male patient (FP4) harboring two mutations in exon 4 of the FKRP gene, dc.558dupC (p.A187fs) and c.1418T>G(p.F473C) (Kava et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the generation of the cell line used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "5e7293d6-15e5-424c-b700-6dce2bcb124b",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C27",
+      "claim": "FP4 iPS cells express pluripotency markers.",
+      "claim_type": "EXPLICIT",
+      "source": "FP4 iPS cells express pluripotency markers, display normal karyotype, and develop teratomas containing cell types from all three germ layers (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunostaining data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "3ed7e03c-9241-45be-9f90-a3ee2189182b",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C28",
+      "claim": "FP4 iPS cells display normal karyotype.",
+      "claim_type": "EXPLICIT",
+      "source": "FP4 iPS cells express pluripotency markers, display normal karyotype, and develop teratomas containing cell types from all three germ layers (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by cytogenetic analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "a5c64818-bf66-482f-af35-333c6d3784f5",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C29",
+      "claim": "FP4 iPS cells develop teratomas containing cell types from all three germ layers.",
+      "claim_type": "EXPLICIT",
+      "source": "FP4 iPS cells express pluripotency markers, display normal karyotype, and develop teratomas containing cell types from all three germ layers (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by teratoma formation data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "da0c05f9-ab34-40a6-9bff-2a7f339040ed",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C30",
+      "claim": "FP4 and control WT iPS cells show similar differentiation into MHC-positive myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining for MHC showed similar differentiation between WT and mutant FP4 myotubes (Figure 1A, upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunostaining data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "e74a774c-2597-4189-8a4d-e88d0477e200",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C31",
+      "claim": "FP4 myotubes show drastically reduced IIH6 immunoreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining with IIH6, a monoclonal antibody specific to the laminin binding domain of \u03b1-DG (Ervasti and Campbell, 1993), showed drastically reduced IIH6 immunoreactivity in FP4 myotubes (Figure 1A, lower panel), which was corroborated by western blot.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunostaining and western blot data shown in Figure 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "362009a8-a2fb-40e5-93b0-2fe61692d79b",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C32",
+      "claim": "WWS FP4 myotubes show decreased molecular weight for \u03b1-DG core.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the loss of \u03b1-DG functional glycosylation, WWS FP4 myotubes showed decreased molecular weight for \u03b1-DG core (Figure 1B), marked reduction in IIH6 (Figure 1B and C), and most importantly, lack of laminin binding, as demonstrated by the laminin overlay assay (LOA) following enrichment by wheat germ agglutinin (WGA) pull-down (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "70f9e16d-313b-4e36-bb55-12011dbc540f",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C33",
+      "claim": "WWS FP4 myotubes show marked reduction in IIH6.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the loss of \u03b1-DG functional glycosylation, WWS FP4 myotubes showed decreased molecular weight for \u03b1-DG core (Figure 1B), marked reduction in IIH6 (Figure 1B and C), and most importantly, lack of laminin binding, as demonstrated by the laminin overlay assay (LOA) following enrichment by wheat germ agglutinin (WGA) pull-down (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "a4cc2077-5110-4d3e-b611-8d70299854e3",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C34",
+      "claim": "WWS FP4 myotubes lack laminin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the loss of \u03b1-DG functional glycosylation, WWS FP4 myotubes showed decreased molecular weight for \u03b1-DG core (Figure 1B), marked reduction in IIH6 (Figure 1B and C), and most importantly, lack of laminin binding, as demonstrated by the laminin overlay assay (LOA) following enrichment by wheat germ agglutinin (WGA) pull-down (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by laminin overlay assay data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "c3f542e1-18ad-4757-a0e7-57033f3354cc",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C35",
+      "claim": "Introduction of WT FKRP transgene into FP4 cells restores functional glycosylation of \u03b1-DG.",
+      "claim_type": "EXPLICIT",
+      "source": "FKRP-overexpressing FP4 myogenic progenitors gave rise to MHC-positive myotubes (Figure 1\u2014figure supplement 2A) that displayed increased FKRP expression (Figure 1\u2014figure supplement 2B) and enhanced immunoreactivity to IIH6 (Figure 1\u2014figure supplement 2A and C), which led to rescue of laminin binding capacity (Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "41caf3a1-25f2-46e5-ab91-bf8a5320168f",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C36",
+      "claim": "Ribitol treatment at 50 mM concentration rescues \u03b1-DG functional glycosylation in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Treated cells retained differentiation capacity, as shown by MHC levels (Figure 2B, Figure 2\u2014figure supplement 1C), and exhibited rescue of \u03b1-DG functional glycosylation (Figure 2B,C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunostaining and western blot data shown in Figure 2B, C, and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "615c8637-8cc7-45cf-bc5d-04c99d1d62b2",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C37",
+      "claim": "Ribitol treatment increases binding between \u03b1-DG and laminin in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this increase in functional glycosylation of \u03b1-DG was sufficient to increase binding between \u03b1-DG and laminin, as shown by the detection of laminin only in ribitol-treated FP4 myotubes (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by laminin overlay assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "1511ebd1-ee0d-485a-bb5c-e31212fa66ae",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C38",
+      "claim": "Ribose treatment at 10 mM concentration results in significant increase in functional glycosylation of \u03b1-DG in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2E,F and G, we found a significant increase in functional glycosylation of \u03b1-DG upon 10 mM ribose supplementation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunostaining and western blot data shown in Figure 2E, F, and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "b402bfbd-c7ab-4f8c-9417-14689566a6d1",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C39",
+      "claim": "Ribose treatment enhances laminin binding capacity in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was sufficient to enhance laminin binding capacity in FP4 myotubes (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by laminin overlay assay data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "b08674f6-1559-4d9b-8928-7755dba1b80a",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C40",
+      "claim": "Ribitol supplementation results in significant increases in ribitol, ribose, ribitol-5-P, and CDP-ribitol levels in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "The data from this analysis revealed that both ribitol and ribose supplementation result in significant increases in ribitol, ribose, ribitol-5-P, and CDP-ribitol compared to untreated cultures (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LC/MS-MS data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "58efd6aa-5787-4fb5-ab10-2c40c4e55ee1",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C41",
+      "claim": "Ribose supplementation results in significant increases in ribitol, ribose, ribitol-5-P, and CDP-ribitol levels in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "The data from this analysis revealed that both ribitol and ribose supplementation result in significant increases in ribitol, ribose, ribitol-5-P, and CDP-ribitol compared to untreated cultures (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LC/MS-MS data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "e2fb82c9-9f7e-4eb8-bdcd-9ca571f7d0be",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C42",
+      "claim": "Sorbinil treatment results in decreased \u03b1-DG functional glycosylation in WT myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a 40% reduction in IIH6 levels in WT myotubes (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "50bac33e-27de-4599-bf36-19ccd32687b9",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C43",
+      "claim": "Sorbinil treatment counteracts the positive effect of ribose on \u03b1-DG functional glycosylation in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, sorbinil treatment counteracted the positive effect of ribose in FP4 myotubes by 63%, as shown by the diminished rescue of IIH6 levels (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "1d8f5d68-93a7-4625-b77e-e96dba98191d",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C44",
+      "claim": "NAD+ treatment alone results in a small, yet significant increase in functional glycosylation of \u03b1-DG in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "In FP4 myotubes treated with NAD+ alone, we observed a small, yet significant increase in functional glycosylation of \u03b1-DG (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "a1bac097-fc56-4679-ac4a-4155a60ed3f8",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C45",
+      "claim": "NAD+ combined with ribitol results in a 59% increase in IIH6 positivity compared to ribitol alone in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we combined NAD+ supplementation with PPP metabolites, we observed, on average, a 59% increase in IIH6 positivity in ribitol/NAD+ when compared to ribitol alone (Figure 4A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 4A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "63d5b96f-a414-4b88-a122-b9a10d83ae16",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C46",
+      "claim": "NAD+ combined with ribose results in a 50% increase in IIH6 levels compared to ribose alone in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "The same synergistic effect was observed when FP4 cells were treated with the NAD+/ribose combination, as levels of IIH6 increased on average 50% compared to ribose alone (Figure 4B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 4B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "b81c73f2-8a8c-4ceb-bb20-8708f693483d",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C47",
+      "claim": "The combination of NAD+ with ribitol or ribose promotes increased laminin binding capacity in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in both cases, the combination also promoted increased laminin binding capacity (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by laminin overlay assay data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "695e9f15-b962-4f16-be42-da7dfe9bfe2d",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C48",
+      "claim": "Ribitol/NAD+ treatment on established myotubes led to an 85% increase in IIH6 immunoreactivity compared to ribitol alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribitol/NAD+ treatment led to an 85% increase in IIH6 immunoreactivity compared to ribitol alone (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "f3a6ed89-30c7-4a11-ac60-616d0b5914ee",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C49",
+      "claim": "Ribose/NAD+ treatment on established myotubes doubled functional glycosylation of \u03b1-DG at 48 hr compared to ribose alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, ribose/NAD+ treatment on average doubled functional glycosylation of \u03b1-DG at 48 hr when compared to ribose alone (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 4G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "91da2cf5-b80f-490c-b0e4-7a74f2f206d0",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C50",
+      "claim": "NAD+ treatment leads to a small increase in ribose levels compared to untreated FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that NAD+ treatment led to a small increase in ribose levels compared to untreated counterparts, but no significant differences were detected in ribitol-5-P and CDP-ribitol, as shown by comparing untreated vs. NAD+, ribitol vs. ribitol/NAD+, and ribose vs. ribose/NAD+ (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LC/MS-MS data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "d7fd4bed-c0bd-462f-ac14-619804cff0e9",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C51",
+      "claim": "NAD+ treatment does not significantly affect ribitol-5-P and CDP-ribitol levels in FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that NAD+ treatment led to a small increase in ribose levels compared to untreated counterparts, but no significant differences were detected in ribitol-5-P and CDP-ribitol, as shown by comparing untreated vs. NAD+, ribitol vs. ribitol/NAD+, and ribose vs. ribose/NAD+ (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LC/MS-MS data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "7c920666-fb83-4202-8ee8-8983068e9a1c",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C52",
+      "claim": "The synergistic effect of NAD+ is independent of the FKRP substrate CDP-ribitol.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the synergistic effect of NAD+ is independent of the FKRP substrate CDP-ribitol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the metabolite quantification data showing no significant changes in CDP-ribitol with NAD+ treatment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "ac14be61-6b91-43c7-a4d6-b1898fa981a0",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C53",
+      "claim": "FKRP KO myotubes lack functional glycosylation of \u03b1-DG.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining for MHC showed similar differentiation between FKRP KO myotubes and respective control WT counterparts (Figure 5A), but as anticipated, FKRP KO myotubes lacked functional glycosylation of \u03b1-DG, as evidenced by immunostaining and western blot to IIH6 (Figure 5A and B) and absence of laminin binding (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunostaining, western blot, and laminin overlay assay data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "ccd9b0e6-2995-4251-a336-37df2b9cae56",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C54",
+      "claim": "Treatment of FKRP KO myotubes with ribitol, ribose, or NAD+ does not rescue \u03b1-DG functional glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, treatment of FKRP KO myotubes with ribitol, ribose, or NAD+ did not rescue \u03b1-DG functional glycosylation (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "8f877978-8612-49be-8de9-ef169a095585",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C55",
+      "claim": "FKRP-C318Y myotubes display a similar phenotype to patient-specific FP4 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Isogenic myotubes generated from FKRP-C318Y iPS cells displayed a similar phenotype to patient-specific FP4 myotubes (Figure 5D), thus confirming the in vitro WWS phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunostaining data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "5bbdbb94-0e06-4fcf-8395-d28f662726c8",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C56",
+      "claim": "Ribitol, ribose, or combinations with NAD+ do not rescue \u03b1-DG functional glycosylation in FKRP-C318Y myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested ribitol, ribose, or combinations with NAD+ supplementation in cultures of FKRP-C318Y myotubes, as described above for FP4, and none of the metabolites were able to rescue \u03b1-DG functional glycosylation in these cells (Figure 5E), suggesting that rescue is mutation specific.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "1c965a85-1d7b-46c2-9ed0-ba0c7f1e416b",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C57",
+      "claim": "The C318Y mutation disrupts direct chelation to the Zn2+ ion in FKRP.",
+      "claim_type": "EXPLICIT",
+      "source": "The C318Y mutation disrupts direct chelation to the Zn2+ ion and sterically hinders the binding site from occupancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the FKRP crystal structure.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "96d08708-ddd1-4b3d-89c0-c402f3063f6c",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C58",
+      "claim": "The C318Y mutation leads to significant, if not complete, loss of FKRP enzymatic function.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that this mutation will lead to significant, if not complete, loss of enzymatic function, and therefore metabolite-mediated rescue is not possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis and experimental data showing no rescue.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "e11b4704-58e6-495a-9ca9-22b31d52494a",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C59",
+      "claim": "The F473C mutation results in a free energy change in substrate binding affinity of +4.3 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation of F473 to cysteine (F473C) present in the FP4 patient sample leads to a free energy change in substrate binding affinity of +4.3 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on molecular modeling calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "50feab67-d32d-4072-b7fa-a2e71fa5af37",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C60",
+      "claim": "The F473C mutation results in destabilization of the Michaelis complex formation with diminished enzyme efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference suggests that the F473C mutation results in destabilization of the Michaelis complex formation with diminished enzyme efficiency, and therefore, metabolite supplementation that increases CDP-ribitol levels allows for increased FKRP activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the free energy calculations and experimental rescue data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "267b0fb5-a956-449c-963b-e928a972337f",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C61",
+      "claim": "Functional FKRP is required for rescue of \u03b1-DG functional glycosylation by ribitol, ribose, and NAD+.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that functional FKRP is required for rescue of \u03b1-DG functional glycosylation by ribitol, ribose, and NAD+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental data showing no rescue in FKRP KO and C318Y mutant cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "0ca8d054-a697-4b43-902b-28eccd1bb6ce",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C62",
+      "claim": "NAD+ can increase functional glycosylation of \u03b1-DG in a human WWS FKRP model.",
+      "claim_type": "EXPLICIT",
+      "source": "We show for the first time that NAD+ can increase functional glycosylation of \u03b1-DG in a human WWS FKRP model, and when combined with ribitol or ribose, can significantly potentiate the rescue of the muscle pathology in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "8a670c8a-e991-4278-9af5-0be583db8cce",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C63",
+      "claim": "NAD+ promotes increased ADP-ribosylation of integrin receptors in zebrafish models.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mechanism is not entirely elucidated, NAD+ was reported to promote increased ADP-ribosylation of integrin receptors, which in turn increase integrin and laminin binding, increase laminin-111 organization and subcellular localization of paxillin to cell adhesion complexes (Goody et al., 2012; Zolkiewska, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on zebrafish models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "b3e697b1-b611-4ea9-bb02-8eb18f4e5590",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C64",
+      "claim": "Overexpression of paxillin rescues muscle structure in dag1 but not in FKRP mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, overexpression of paxillin rescues muscle structure in dag1 but not in FKRP mutants, suggesting a different mechanism of action (Bailey et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "57141e1a-fff7-4aa7-97c1-dc2e3990df63",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C65",
+      "claim": "NAD+ improved muscle function in Duchenne MD mouse models via reduced parylation, increased mitochondria function, and increased expression of structural proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in two Duchenne MD mouse models showed that NAD+ improved muscle function via reduced parylation, as well as increased mitochondria function and expression of structural proteins (Ryu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "cf13aef1-c67d-44e4-829b-080e9923cf74",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C66",
+      "claim": "NAD+ treatment increases core \u03b1-DG levels in FKRP-C318Y myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data on the quantification of core \u03b1-DG in FKRP-C318Y myotubes that had been treated or not with NAD+ revealed a significant increase in core \u03b1-DG upon NAD+ treatment, whereas \u03b2-DG levels remained unchanged (Figure 5\u2014figure supplement 1), suggesting that NAD+ supplementation specifically increases \u03b1-DG.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "4752125f-7471-49b5-8a34-bdb0d6ec3c6d",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C67",
+      "claim": "NAD+ supplementation specifically increases \u03b1-DG but not \u03b2-DG.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data on the quantification of core \u03b1-DG in FKRP-C318Y myotubes that had been treated or not with NAD+ revealed a significant increase in core \u03b1-DG upon NAD+ treatment, whereas \u03b2-DG levels remained unchanged (Figure 5\u2014figure supplement 1), suggesting that NAD+ supplementation specifically increases \u03b1-DG.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the western blot data showing differential effects on \u03b1-DG versus \u03b2-DG.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "9b95db4d-9fb5-425a-989d-8f47dea16c39",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C68",
+      "claim": "The ability of PPP metabolites to partially rescue \u03b1-DG functional glycosylation is mutation dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the ability of PPP metabolites to partially rescue \u03b1-DG functional glycosylation is mutation dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential rescue observed in FP4 versus FKRP KO and C318Y mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "d6e09c05-d589-4bee-93a7-fca27efe0a40",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C69",
+      "claim": "Phenotypes associated with mutations in the zinc finger loop region may not be rescued by ribitol and ribose.",
+      "claim_type": "EXPLICIT",
+      "source": "Although further studies are required to determine which patients could benefit from this potential treatment, our results suggest that phenotypes associated with mutations in the zinc finger loop region may not be rescued by ribitol and ribose, whereas FKRP mutations in other regions of the catalytic domain are amenable to rescue, as shown for FP4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "7e930bd9-9286-49ac-bc2d-37592e3500cd",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C70",
+      "claim": "FKRP mutations in regions of the catalytic domain outside the zinc finger loop are amenable to rescue by ribitol and ribose.",
+      "claim_type": "EXPLICIT",
+      "source": "Although further studies are required to determine which patients could benefit from this potential treatment, our results suggest that phenotypes associated with mutations in the zinc finger loop region may not be rescued by ribitol and ribose, whereas FKRP mutations in other regions of the catalytic domain are amenable to rescue, as shown for FP4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the rescue observed in FP4 cells with the F473C mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "77b9bd67-80b9-4279-8263-2de661abaa02",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C71",
+      "claim": "Rescue of functional glycosylation of \u03b1-DG in ISPD fibroblasts was found to be mutation dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with previous studies in ISPD fibroblasts, in which rescue of functional glycosylation of \u03b1-DG was found to be mutation dependent (Gerin et al., 2016; van Tol et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "7ffb78a0-ced7-41d5-b868-65fdcf59db3e",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C72",
+      "claim": "Ribose is a commercially available supplement with no major side effects in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, ribose is a commercially available supplement, and to date, with no major side effects in humans (Dodd et al., 2004; Seifert et al., 2017; Thompson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on ribose safety.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "b0f8aac6-b23f-485a-a3fb-58e010edb6ad",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C73",
+      "claim": "NAD+ levels can be increased by several vitamin B3 forms, such as nicotinic acid (niacin) and nicotinamide riboside.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, NAD+ levels can be increased by several vitamin B3 forms, such as nicotinic acid (niacin) and nicotinamide riboside, which have been investigated, showing no major side effects (Elhassan et al., 2019; Guyton and Bays, 2007; Pirinen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "1722ed0f-a256-4d32-9b09-3289fe8b536e",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C74",
+      "claim": "Vitamin B3 forms that increase NAD+ levels have been investigated and show no major side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, NAD+ levels can be increased by several vitamin B3 forms, such as nicotinic acid (niacin) and nicotinamide riboside, which have been investigated, showing no major side effects (Elhassan et al., 2019; Guyton and Bays, 2007; Pirinen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on safety of vitamin B3 forms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "5f326fb1-ae60-4510-bace-cd8473d30d50",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C75",
+      "claim": "IPS cell-derived myotubes serve as a reliable platform for in vitro disease modeling and drug screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results support the use of iPS cell-derived myotubes as a reliable platform for in vitro disease modeling and drug screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the successful use of the FP4 iPS cell-derived myotube model in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "0bfbc167-a563-4b5b-b280-14b20ca5fac6",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C76",
+      "claim": "The data provide a rationale for the potential use of ribitol/NAD+ and ribose/NAD+ as therapeutics to increase \u03b1-DG functional glycosylation in patients with FKRP mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our data provide a rationale for the potential use of ribitol/NAD+ and ribose/NAD+ as therapeutics to increase \u03b1-DG functional glycosylation in patients with FKRP mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental data showing synergistic rescue effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "5e6af74c-6cc3-41aa-b25d-b800030c136b",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C77",
+      "claim": "The null mutation for FKRP is embryonic lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the null mutation for FKRP is embryonic lethal (Chan et al., 2010), most FKRP mutations are thought to have some residual activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "06f54c1a-8157-4435-8750-eca8af1a1bc0",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C78",
+      "claim": "Most FKRP mutations are thought to have some residual activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the null mutation for FKRP is embryonic lethal (Chan et al., 2010), most FKRP mutations are thought to have some residual activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that null mutations are lethal, so surviving patients must have some residual function.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "784dfcc9-24c7-47a5-9200-7975f24b9f9b",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C79",
+      "claim": "The zinc finger loop in the FKRP catalytic domain consists of four conserved cysteine residues (C289, C296, C317, C318) required for Zn2+ ion binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The zinc finger loop in the FKRP catalytic domain consists of four conserved cysteine residues (C289, C296, C317, C318) required for Zn2+ ion binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure analysis of FKRP.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "5ae9e74d-d982-4d39-be5b-9a32989d8fbc",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C80",
+      "claim": "F473 makes up a small hydrophobic pocket with L348, I357, W359, V477, and P481 that is essential for CDP-ribitol substrate binding within the catalytic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, F473 makes up a small hydrophobic pocket with L348, I357, W359, V477, and P481 that is essential for CDP-ribitol substrate binding within the catalytic domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the crystal structure analysis of FKRP.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "0569e895-7679-4a51-8b3f-b454b87f5bf6",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C81",
+      "claim": "Metabolite supplementation that increases CDP-ribitol levels allows for increased FKRP activity in the F473C mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference suggests that the F473C mutation results in destabilization of the Michaelis complex formation with diminished enzyme efficiency, and therefore, metabolite supplementation that increases CDP-ribitol levels allows for increased FKRP activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis and experimental rescue data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "22d561db-73a3-40f7-a499-c0b4050bbfdf",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C82",
+      "claim": "Ribose is a precursor of ribitol.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of the pentose phosphate pathway (PPP) metabolites ribitol or ribose, a precursor of ribitol (Gerin et al., 2016; Huck et al., 2004), to fibroblasts from patients with ISPD mutations resulted in increased CDP-ribitol levels and rescue of \u03b1-DG functional glycosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "1a2ec996-6172-466c-abc9-fc4f3c0646b9",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C83",
+      "claim": "The reduction of ribose to ribitol is mediated by the sorbinil sensitive aldose reductase (AKR1B1).",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction of ribose to ribitol has been suggested to be mediated by the sorbinil sensitive aldose reductase (AKR1B1) (Gerin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "21f6d927-5747-4e43-ab10-f60171fae0e0",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C84",
+      "claim": "IIH6 is a monoclonal antibody specific to the laminin binding domain of \u03b1-DG.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining with IIH6, a monoclonal antibody specific to the laminin binding domain of \u03b1-DG (Ervasti and Campbell, 1993), showed drastically reduced IIH6 immunoreactivity in FP4 myotubes (Figure 1A, lower panel), which was corroborated by western blot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "9a24f037-5962-4864-b7ec-b73f28b67d7b",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C85",
+      "claim": "FP4 patient fibroblasts were obtained from a 1-year-old male patient.",
+      "claim_type": "EXPLICIT",
+      "source": "FKRP mutant fibroblasts obtained from a 1-year-old male patient (Kava et al., 2013) were reprogrammed into iPS cells, named FP4, using the CytoTune-iPS 2.0 Sendai Reprogramming Kit (Thermo Fisher Scientific) using feeder-free conditions, according to the manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the patient cells used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "69c16bc5-3f7c-4fe3-a395-561f28d5bf2c",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C86",
+      "claim": "FP4 iPS cells were generated using an integration-free approach with the CytoTune-iPS 2.0 Sendai Reprogramming Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "FKRP mutant fibroblasts obtained from a 1-year-old male patient (Kava et al., 2013) were reprogrammed into iPS cells, named FP4, using the CytoTune-iPS 2.0 Sendai Reprogramming Kit (Thermo Fisher Scientific) using feeder-free conditions, according to the manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used to generate the FP4 iPS cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "3fd250b2-7ade-413f-80e0-5dea43d8c1a6",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C87",
+      "claim": "Ribitol treatment at concentrations higher than 50 mM did not improve rescue compared to 50 mM.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 2\u2014figure supplement 1A and B",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The figure shows that 50 mM ribitol was chosen for further studies, implying higher concentrations were not more effective.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "544ba84b-c39c-4a68-926a-fcc8df2e0313",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C88",
+      "claim": "Ribose concentrations higher than 50 mM led to cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the lowest concentration of ribose able to enhance \u03b1-DG functional glycosylation was 10 mM and higher concentrations led to cell death (>50 mM), we chose the concentration of 10 mM for further analysis (Figure 2\u2014figure supplement 1D to F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by phase contrast images in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "6e93a0f8-3146-4ed1-9add-461485af7dcb",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "claim_id": "C89",
+      "claim": "The 100 \u03bcM concentration of NAD+ was chosen based on previous documentation in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "We treated FP4 cultures with 100 \u03bcM of NAD+, as this concentration has been previously documented (Goody et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1b378cef-1eca-4751-a00a-1273773f8585",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors established a WWS patient-specific iPS cell-derived myogenic model (FP4) that recapitulates key hallmarks of WWS pathology, including impaired \u03b1-dystroglycan functional glycosylation and loss of laminin binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C34 collectively demonstrate successful generation and characterization of the FP4 model. The cells show pluripotency markers, normal karyotype, teratoma formation (C27-C29), differentiate into myotubes (C30), and critically display the WWS phenotype with reduced IIH6 immunoreactivity (C31-C33) and lack of laminin binding (C34), as shown in Figures 1A-C. This provides strong evidence for a valid disease model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "0fff23f3-d223-4007-b0d7-b377d54e8018",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Introduction of wild-type FKRP into FP4 cells restores functional glycosylation of \u03b1-dystroglycan and laminin binding capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by data in Figure 1\u2014figure supplement 2 showing that FKRP overexpression increases IIH6 immunoreactivity and rescues laminin binding. This serves as an important positive control demonstrating that the phenotype is specifically due to FKRP deficiency and is reversible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "535bd1a5-39cc-4952-a94d-4697bd7de7da",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ribitol treatment at 50 mM rescues \u03b1-dystroglycan functional glycosylation and laminin binding in FP4 myotubes, associated with increased levels of ribitol-5-P and CDP-ribitol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C36-C37, and C40 are supported by immunostaining, western blot, and laminin overlay assay data (Figures 2B-D) showing increased IIH6 and laminin binding, along with LC/MS-MS data (Figure 3A) demonstrating elevated metabolite levels. The dose-response data (Figure 2\u2014figure supplement 1) supports the 50 mM concentration choice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "7b7d0359-1306-49b9-aeca-fbfc00715145",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ribose treatment at 10 mM rescues \u03b1-dystroglycan functional glycosylation and laminin binding in FP4 myotubes, associated with increased levels of ribitol-5-P and CDP-ribitol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C38-C39, and C41 are supported by immunostaining, western blot, and laminin overlay assay data (Figures 2E-G) showing increased IIH6 and laminin binding, along with LC/MS-MS data (Figure 3A) demonstrating elevated metabolite levels. The concentration choice is justified by toxicity at higher doses (C88).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "e2decfee-3257-40f7-bf35-4f531cd544cf",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sorbinil treatment inhibits the conversion of ribose to ribitol via aldose reductase, reducing \u03b1-DG functional glycosylation in WT myotubes and counteracting the rescue effect of ribose in FP4 myotubes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by western blot data (Figures 3B-E) showing that sorbinil reduces IIH6 levels in WT cells and blocks ribose-mediated rescue in FP4 cells. This provides mechanistic evidence that ribose acts through conversion to ribitol via aldose reductase (C83), though the mechanism relies on prior literature citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "fad374f0-eed4-4946-a91c-88f62c2dc248",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NAD+ combined with ribitol produces a synergistic effect, increasing \u03b1-dystroglycan functional glycosylation and laminin binding capacity beyond ribitol alone in FP4 myotubes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C44-C45, C47-C48 are supported by western blot and laminin overlay assay data (Figures 4A, C, E-F) showing that ribitol/NAD+ combination increases IIH6 levels by 59-85% compared to ribitol alone. The effect is observed both during differentiation and in established myotubes, with statistical significance demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "41ee1db2-058e-47bf-8b9a-85d95e120c6d",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NAD+ combined with ribose produces a synergistic effect, increasing \u03b1-dystroglycan functional glycosylation and laminin binding capacity beyond ribose alone in FP4 myotubes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C44, C46-C47, C49 are supported by western blot and laminin overlay assay data (Figures 4B, D, G-H) showing that ribose/NAD+ combination increases IIH6 levels by 50-100% compared to ribose alone. The synergistic effect is demonstrated both during differentiation and in established myotubes with statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "f8411007-622c-42a4-b781-84b2a167ec28",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The synergistic effect of NAD+ is independent of CDP-ribitol levels, as NAD+ treatment does not significantly increase ribitol-5-P or CDP-ribitol concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by LC/MS-MS data (Figure 4\u2014figure supplement 2) showing no significant changes in ribitol-5-P or CDP-ribitol with NAD+ treatment. This suggests NAD+ acts through a mechanism independent of substrate availability, though the actual mechanism remains unclear and requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "3ab5c667-520f-4b02-a68e-f1b91fbca4ac",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Functional FKRP is required for rescue by ribitol, ribose, and NAD+, as demonstrated by the absence of rescue in FKRP knockout myotubes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C53-C54, C61 are supported by data from FKRP KO cells (Figure 5A-C) showing complete absence of IIH6 staining and laminin binding, with no rescue upon treatment with any metabolite. This demonstrates that residual FKRP activity is necessary for the therapeutic effect, though the manuscript does not quantify residual activity in FP4 cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "bad246c1-6a38-49a9-9ea6-4ecb21e99521",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The C318Y mutation in the zinc finger loop abolishes rescue by ribitol, ribose, and NAD+, likely due to disruption of Zn2+ binding and near-complete loss of enzymatic function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58, C68-C69 are supported by experimental data (Figures 5D-E) showing no rescue in C318Y mutant cells, combined with structural analysis indicating disruption of Zn2+ chelation. The conclusion that this mutation leads to complete loss of function is reasonable based on the structural data, though direct enzymatic activity measurements are not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "5cc253e6-5ea5-48c7-a773-2c811b283b5f",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The F473C mutation in FP4 cells results in destabilization of substrate binding (\u0394\u0394G = +4.3 kcal/mol) with diminished but not abolished enzyme efficiency, allowing rescue by metabolite supplementation that increases CDP-ribitol levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60, C70, C81 are supported by molecular modeling calculations showing the free energy change and experimental rescue data in FP4 cells. The structural analysis (Figure 6B) shows F473 is part of the substrate binding pocket. However, the modeling relies on computational predictions without direct experimental validation of binding affinity or enzymatic kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "3600d2e2-113f-4381-ba15-3ed36c485ddd",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "NAD+ treatment increases core \u03b1-dystroglycan levels specifically without affecting \u03b2-dystroglycan in FKRP-C318Y myotubes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C66-C67 are supported by western blot data (Figure 5\u2014figure supplement 1) showing increased \u03b1-DG but unchanged \u03b2-DG levels with NAD+ treatment in C318Y mutants. This suggests a specific effect on \u03b1-DG, though the mechanism remains unclear and the biological significance is uncertain given the lack of functional rescue in these cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "6c6fe53e-0ef3-4d92-a6ac-48482d2a4449",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The iPS cell-derived myotube model serves as a reliable platform for disease modeling and drug screening, providing rationale for potential therapeutic use of ribitol/NAD+ and ribose/NAD+ combinations in FKRP-associated muscular dystrophies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 are supported by the successful establishment of the disease model and demonstration of metabolite rescue effects. However, the translation to clinical application requires additional validation including in vivo studies, dose optimization, and determination of which patient mutations would be amenable to treatment. The conclusion is appropriately cautious about requiring further studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "ff70648c-e130-4ef3-beff-da46277348ae",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "FKRP mutations cause a spectrum of muscular dystrophies including WWS, characterized by \u03b1-dystroglycan hypoglycosylation leading to disrupted laminin binding, with no current effective treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C13 establish the disease background and are supported by citations to prior literature. These claims provide essential context for the study but represent established knowledge rather than new findings. The characterization of WWS as having <3 year life expectancy (C12) and lack of treatment (C13) are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "e3702516-3cc3-428d-aa14-7ec1ba0f3c9b",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "FKRP is a ribitol-5-phosphate transferase that uses CDP-ribitol (produced by ISPD from ribose) to add ribitol-5-phosphate to \u03b1-dystroglycan, which is essential for subsequent glycosylation and laminin binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19, C82 describe the established biochemical pathway and are supported by citations to prior literature. This provides essential mechanistic context for understanding how ribitol and ribose supplementation could rescue the phenotype. The pathway description is accurate based on current knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "8f7e6562-e767-418e-9b69-46646887ee60",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior studies demonstrated that ribitol and ribose can rescue \u03b1-DG glycosylation in ISPD-mutant fibroblasts and FKRP-mutant animal models with mutation-dependent efficacy, and that NAD+ improves muscle function in FKRP-deficient zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 summarize prior literature establishing the rationale for testing these metabolites in the human WWS model. These are appropriately cited and provide important context, though they represent prior work rather than new findings. The mutation-dependent rescue (C21) is particularly relevant to the current study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "d6fbb4af-f7ea-42de-a994-8f5354c260e1",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior studies in zebrafish and mouse models suggest NAD+ may act through ADP-ribosylation of integrin receptors, paxillin localization, or effects on mitochondrial function and protein expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 cite prior literature on potential NAD+ mechanisms. However, these mechanisms from zebrafish and Duchenne MD models may not directly apply to the FKRP-WWS context. The authors appropriately note the mechanism is not fully elucidated and that paxillin overexpression does not rescue FKRP mutants (C64), suggesting different mechanisms may be involved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "81f699ce-998f-48fc-883e-fd282ac5a13b",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "FKRP null mutations are embryonic lethal, suggesting most FKRP mutations in patients retain some residual enzymatic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 are supported by citation to prior literature and logical inference. This provides important context for understanding why metabolite supplementation might work\u2014it can enhance residual enzyme activity. However, the manuscript does not directly measure residual activity in the FP4 cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "f1f80830-b065-4746-b2c5-e0f67acfbf29",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Structural analysis reveals that the zinc finger loop contains four conserved cysteines required for Zn2+ binding, while F473 forms part of a hydrophobic pocket essential for CDP-ribitol substrate binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 are based on crystal structure analysis (PDB: 6KAM) and are supported by Figure 6B. This structural information provides the molecular basis for understanding why C318Y abolishes function while F473C retains partial activity. The structural analysis is appropriately used to interpret the functional data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "9cc6198b-cac2-4ae2-998d-3fcd2a41958c",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior studies show mutation-dependent rescue in ISPD fibroblasts, and ribose and NAD+-boosting compounds (vitamin B3 forms) are commercially available with established safety profiles in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 cite prior literature on mutation-dependent rescue and safety profiles of the compounds. This provides important context for potential clinical translation. However, safety in the specific patient population and at the doses required for therapeutic effect would need to be established through clinical trials.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    },
+    {
+      "id": "041fc924-f9ca-4e38-a22c-e513f8dbe0b4",
+      "content_id": "1f8fd756-d902-4545-bf42-30df5cd91a7d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Methodological details including antibody specificity, patient cell source, reprogramming method, and dose selection rationale are provided.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C89 describe methodological details that are appropriately documented. The IIH6 antibody specificity (C84), cell line generation (C85-C86), and dose selection rationale (C87-C89) are supported by data and citations. These are important for reproducibility but represent methodological rather than conceptual advances.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:58:29.549610Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1b0f84bb-bf18-4581-8ce5-0951c78b1115",
+      "result_id": "1b378cef-1eca-4751-a00a-1273773f8585"
+    },
+    {
+      "claim_id": "5e7293d6-15e5-424c-b700-6dce2bcb124b",
+      "result_id": "1b378cef-1eca-4751-a00a-1273773f8585"
+    },
+    {
+      "claim_id": "3ed7e03c-9241-45be-9f90-a3ee2189182b",
+      "result_id": "1b378cef-1eca-4751-a00a-1273773f8585"
+    },
+    {
+      "claim_id": "a5c64818-bf66-482f-af35-333c6d3784f5",
+      "result_id": "1b378cef-1eca-4751-a00a-1273773f8585"
+    },
+    {
+      "claim_id": "da0c05f9-ab34-40a6-9bff-2a7f339040ed",
+      "result_id": "1b378cef-1eca-4751-a00a-1273773f8585"
+    },
+    {
+      "claim_id": "e74a774c-2597-4189-8a4d-e88d0477e200",
+      "result_id": "1b378cef-1eca-4751-a00a-1273773f8585"
+    },
+    {
+      "claim_id": "362009a8-a2fb-40e5-93b0-2fe61692d79b",
+      "result_id": "1b378cef-1eca-4751-a00a-1273773f8585"
+    },
+    {
+      "claim_id": "70f9e16d-313b-4e36-bb55-12011dbc540f",
+      "result_id": "1b378cef-1eca-4751-a00a-1273773f8585"
+    },
+    {
+      "claim_id": "a4cc2077-5110-4d3e-b611-8d70299854e3",
+      "result_id": "1b378cef-1eca-4751-a00a-1273773f8585"
+    },
+    {
+      "claim_id": "c8507009-82b2-4048-93c0-e49ac27547c7",
+      "result_id": "1b378cef-1eca-4751-a00a-1273773f8585"
+    },
+    {
+      "claim_id": "c3f542e1-18ad-4757-a0e7-57033f3354cc",
+      "result_id": "0fff23f3-d223-4007-b0d7-b377d54e8018"
+    },
+    {
+      "claim_id": "8cb26ee7-3d58-4918-ac11-396284321f6e",
+      "result_id": "535bd1a5-39cc-4952-a94d-4697bd7de7da"
+    },
+    {
+      "claim_id": "41caf3a1-25f2-46e5-ab91-bf8a5320168f",
+      "result_id": "535bd1a5-39cc-4952-a94d-4697bd7de7da"
+    },
+    {
+      "claim_id": "615c8637-8cc7-45cf-bc5d-04c99d1d62b2",
+      "result_id": "535bd1a5-39cc-4952-a94d-4697bd7de7da"
+    },
+    {
+      "claim_id": "b08674f6-1559-4d9b-8928-7755dba1b80a",
+      "result_id": "535bd1a5-39cc-4952-a94d-4697bd7de7da"
+    },
+    {
+      "claim_id": "20083177-e798-4937-9bc8-a7a1f0fdc93c",
+      "result_id": "7b7d0359-1306-49b9-aeca-fbfc00715145"
+    },
+    {
+      "claim_id": "1511ebd1-ee0d-485a-bb5c-e31212fa66ae",
+      "result_id": "7b7d0359-1306-49b9-aeca-fbfc00715145"
+    },
+    {
+      "claim_id": "b402bfbd-c7ab-4f8c-9417-14689566a6d1",
+      "result_id": "7b7d0359-1306-49b9-aeca-fbfc00715145"
+    },
+    {
+      "claim_id": "58efd6aa-5787-4fb5-ab10-2c40c4e55ee1",
+      "result_id": "7b7d0359-1306-49b9-aeca-fbfc00715145"
+    },
+    {
+      "claim_id": "e2fb82c9-9f7e-4eb8-bdcd-9ca571f7d0be",
+      "result_id": "e2decfee-3257-40f7-bf35-4f531cd544cf"
+    },
+    {
+      "claim_id": "50bac33e-27de-4599-bf36-19ccd32687b9",
+      "result_id": "e2decfee-3257-40f7-bf35-4f531cd544cf"
+    },
+    {
+      "claim_id": "1a2ec996-6172-466c-abc9-fc4f3c0646b9",
+      "result_id": "e2decfee-3257-40f7-bf35-4f531cd544cf"
+    },
+    {
+      "claim_id": "082d30e6-a66f-4203-978e-77ea211b1b1e",
+      "result_id": "fad374f0-eed4-4946-a91c-88f62c2dc248"
+    },
+    {
+      "claim_id": "1d8f5d68-93a7-4625-b77e-e96dba98191d",
+      "result_id": "fad374f0-eed4-4946-a91c-88f62c2dc248"
+    },
+    {
+      "claim_id": "a1bac097-fc56-4679-ac4a-4155a60ed3f8",
+      "result_id": "fad374f0-eed4-4946-a91c-88f62c2dc248"
+    },
+    {
+      "claim_id": "b81c73f2-8a8c-4ceb-bb20-8708f693483d",
+      "result_id": "fad374f0-eed4-4946-a91c-88f62c2dc248"
+    },
+    {
+      "claim_id": "695e9f15-b962-4f16-be42-da7dfe9bfe2d",
+      "result_id": "fad374f0-eed4-4946-a91c-88f62c2dc248"
+    },
+    {
+      "claim_id": "ac395a00-635a-4aee-9016-cf676d604368",
+      "result_id": "41ee1db2-058e-47bf-8b9a-85d95e120c6d"
+    },
+    {
+      "claim_id": "1d8f5d68-93a7-4625-b77e-e96dba98191d",
+      "result_id": "41ee1db2-058e-47bf-8b9a-85d95e120c6d"
+    },
+    {
+      "claim_id": "63d5b96f-a414-4b88-a122-b9a10d83ae16",
+      "result_id": "41ee1db2-058e-47bf-8b9a-85d95e120c6d"
+    },
+    {
+      "claim_id": "b81c73f2-8a8c-4ceb-bb20-8708f693483d",
+      "result_id": "41ee1db2-058e-47bf-8b9a-85d95e120c6d"
+    },
+    {
+      "claim_id": "f3a6ed89-30c7-4a11-ac60-616d0b5914ee",
+      "result_id": "41ee1db2-058e-47bf-8b9a-85d95e120c6d"
+    },
+    {
+      "claim_id": "91da2cf5-b80f-490c-b0e4-7a74f2f206d0",
+      "result_id": "f8411007-622c-42a4-b781-84b2a167ec28"
+    },
+    {
+      "claim_id": "d7fd4bed-c0bd-462f-ac14-619804cff0e9",
+      "result_id": "f8411007-622c-42a4-b781-84b2a167ec28"
+    },
+    {
+      "claim_id": "7c920666-fb83-4202-8ee8-8983068e9a1c",
+      "result_id": "f8411007-622c-42a4-b781-84b2a167ec28"
+    },
+    {
+      "claim_id": "61f0ea26-66de-427a-b7ff-0389aa59ce0a",
+      "result_id": "3ab5c667-520f-4b02-a68e-f1b91fbca4ac"
+    },
+    {
+      "claim_id": "ac14be61-6b91-43c7-a4d6-b1898fa981a0",
+      "result_id": "3ab5c667-520f-4b02-a68e-f1b91fbca4ac"
+    },
+    {
+      "claim_id": "ccd9b0e6-2995-4251-a336-37df2b9cae56",
+      "result_id": "3ab5c667-520f-4b02-a68e-f1b91fbca4ac"
+    },
+    {
+      "claim_id": "267b0fb5-a956-449c-963b-e928a972337f",
+      "result_id": "3ab5c667-520f-4b02-a68e-f1b91fbca4ac"
+    },
+    {
+      "claim_id": "8f877978-8612-49be-8de9-ef169a095585",
+      "result_id": "bad246c1-6a38-49a9-9ea6-4ecb21e99521"
+    },
+    {
+      "claim_id": "5bbdbb94-0e06-4fcf-8395-d28f662726c8",
+      "result_id": "bad246c1-6a38-49a9-9ea6-4ecb21e99521"
+    },
+    {
+      "claim_id": "1c965a85-1d7b-46c2-9ed0-ba0c7f1e416b",
+      "result_id": "bad246c1-6a38-49a9-9ea6-4ecb21e99521"
+    },
+    {
+      "claim_id": "96d08708-ddd1-4b3d-89c0-c402f3063f6c",
+      "result_id": "bad246c1-6a38-49a9-9ea6-4ecb21e99521"
+    },
+    {
+      "claim_id": "9b95db4d-9fb5-425a-989d-8f47dea16c39",
+      "result_id": "bad246c1-6a38-49a9-9ea6-4ecb21e99521"
+    },
+    {
+      "claim_id": "d6e09c05-d589-4bee-93a7-fca27efe0a40",
+      "result_id": "bad246c1-6a38-49a9-9ea6-4ecb21e99521"
+    },
+    {
+      "claim_id": "e11b4704-58e6-495a-9ca9-22b31d52494a",
+      "result_id": "5cc253e6-5ea5-48c7-a773-2c811b283b5f"
+    },
+    {
+      "claim_id": "50feab67-d32d-4072-b7fa-a2e71fa5af37",
+      "result_id": "5cc253e6-5ea5-48c7-a773-2c811b283b5f"
+    },
+    {
+      "claim_id": "7e930bd9-9286-49ac-bc2d-37592e3500cd",
+      "result_id": "5cc253e6-5ea5-48c7-a773-2c811b283b5f"
+    },
+    {
+      "claim_id": "0569e895-7679-4a51-8b3f-b454b87f5bf6",
+      "result_id": "5cc253e6-5ea5-48c7-a773-2c811b283b5f"
+    },
+    {
+      "claim_id": "0ca8d054-a697-4b43-902b-28eccd1bb6ce",
+      "result_id": "3600d2e2-113f-4381-ba15-3ed36c485ddd"
+    },
+    {
+      "claim_id": "cf13aef1-c67d-44e4-829b-080e9923cf74",
+      "result_id": "3600d2e2-113f-4381-ba15-3ed36c485ddd"
+    },
+    {
+      "claim_id": "4752125f-7471-49b5-8a34-bdb0d6ec3c6d",
+      "result_id": "3600d2e2-113f-4381-ba15-3ed36c485ddd"
+    },
+    {
+      "claim_id": "5f326fb1-ae60-4510-bace-cd8473d30d50",
+      "result_id": "6c6fe53e-0ef3-4d92-a6ac-48482d2a4449"
+    },
+    {
+      "claim_id": "0bfbc167-a563-4b5b-b280-14b20ca5fac6",
+      "result_id": "6c6fe53e-0ef3-4d92-a6ac-48482d2a4449"
+    },
+    {
+      "claim_id": "2dc788be-569b-4d46-a413-ecfebc17ee6f",
+      "result_id": "ff70648c-e130-4ef3-beff-da46277348ae"
+    },
+    {
+      "claim_id": "74568b87-51e4-415b-8a4f-b52738cd6a6b",
+      "result_id": "ff70648c-e130-4ef3-beff-da46277348ae"
+    },
+    {
+      "claim_id": "dc8cb8f1-6af3-4aa4-affe-41c6564ee0ca",
+      "result_id": "ff70648c-e130-4ef3-beff-da46277348ae"
+    },
+    {
+      "claim_id": "1d27e3cb-9b5c-4675-bbab-f2811b406254",
+      "result_id": "ff70648c-e130-4ef3-beff-da46277348ae"
+    },
+    {
+      "claim_id": "4bc908a0-0a88-4b97-bce5-bae2fd3d4579",
+      "result_id": "ff70648c-e130-4ef3-beff-da46277348ae"
+    },
+    {
+      "claim_id": "96f682bd-f9b1-476d-be8c-e050ae671417",
+      "result_id": "ff70648c-e130-4ef3-beff-da46277348ae"
+    },
+    {
+      "claim_id": "2b055516-3c86-4fba-bb73-e968a2cd13f4",
+      "result_id": "ff70648c-e130-4ef3-beff-da46277348ae"
+    },
+    {
+      "claim_id": "0c5b77d5-10f3-4682-aecc-5b53d99d1b9d",
+      "result_id": "e3702516-3cc3-428d-aa14-7ec1ba0f3c9b"
+    },
+    {
+      "claim_id": "f1225ff2-ea00-452e-a862-9c796f31e21b",
+      "result_id": "e3702516-3cc3-428d-aa14-7ec1ba0f3c9b"
+    },
+    {
+      "claim_id": "19f7b1ca-3758-43ad-ba23-cf9cd2b11de0",
+      "result_id": "e3702516-3cc3-428d-aa14-7ec1ba0f3c9b"
+    },
+    {
+      "claim_id": "3bf22862-9ff7-4904-964a-dae88cfe26b1",
+      "result_id": "e3702516-3cc3-428d-aa14-7ec1ba0f3c9b"
+    },
+    {
+      "claim_id": "1b75b522-9a05-4a65-9c76-8e83757989a2",
+      "result_id": "e3702516-3cc3-428d-aa14-7ec1ba0f3c9b"
+    },
+    {
+      "claim_id": "c56bd535-0c47-49b8-99aa-4f6a2573d0ad",
+      "result_id": "e3702516-3cc3-428d-aa14-7ec1ba0f3c9b"
+    },
+    {
+      "claim_id": "22d561db-73a3-40f7-a499-c0b4050bbfdf",
+      "result_id": "e3702516-3cc3-428d-aa14-7ec1ba0f3c9b"
+    },
+    {
+      "claim_id": "6c3598df-8625-4af7-892d-2ec0fc715d1c",
+      "result_id": "8f7e6562-e767-418e-9b69-46646887ee60"
+    },
+    {
+      "claim_id": "11f2af3e-0884-45d7-aa34-984d2fe78d07",
+      "result_id": "8f7e6562-e767-418e-9b69-46646887ee60"
+    },
+    {
+      "claim_id": "3552a997-e045-4c3e-88ee-f77aa51441a4",
+      "result_id": "8f7e6562-e767-418e-9b69-46646887ee60"
+    },
+    {
+      "claim_id": "6b10190c-2819-45a7-8c24-469095547034",
+      "result_id": "8f7e6562-e767-418e-9b69-46646887ee60"
+    },
+    {
+      "claim_id": "c35796fb-5b79-4a67-a165-73e165824005",
+      "result_id": "8f7e6562-e767-418e-9b69-46646887ee60"
+    },
+    {
+      "claim_id": "781ac8f0-abaf-41e0-982e-b68c1e8e4095",
+      "result_id": "8f7e6562-e767-418e-9b69-46646887ee60"
+    },
+    {
+      "claim_id": "8a670c8a-e991-4278-9af5-0be583db8cce",
+      "result_id": "d6fbb4af-f7ea-42de-a994-8f5354c260e1"
+    },
+    {
+      "claim_id": "b3e697b1-b611-4ea9-bb02-8eb18f4e5590",
+      "result_id": "d6fbb4af-f7ea-42de-a994-8f5354c260e1"
+    },
+    {
+      "claim_id": "57141e1a-fff7-4aa7-97c1-dc2e3990df63",
+      "result_id": "d6fbb4af-f7ea-42de-a994-8f5354c260e1"
+    },
+    {
+      "claim_id": "5e6af74c-6cc3-41aa-b25d-b800030c136b",
+      "result_id": "81f699ce-998f-48fc-883e-fd282ac5a13b"
+    },
+    {
+      "claim_id": "06f54c1a-8157-4435-8750-eca8af1a1bc0",
+      "result_id": "81f699ce-998f-48fc-883e-fd282ac5a13b"
+    },
+    {
+      "claim_id": "784dfcc9-24c7-47a5-9200-7975f24b9f9b",
+      "result_id": "f1f80830-b065-4746-b2c5-e0f67acfbf29"
+    },
+    {
+      "claim_id": "5ae9e74d-d982-4d39-be5b-9a32989d8fbc",
+      "result_id": "f1f80830-b065-4746-b2c5-e0f67acfbf29"
+    },
+    {
+      "claim_id": "77b9bd67-80b9-4279-8263-2de661abaa02",
+      "result_id": "9cc6198b-cac2-4ae2-998d-3fcd2a41958c"
+    },
+    {
+      "claim_id": "7ffb78a0-ced7-41d5-b868-65fdcf59db3e",
+      "result_id": "9cc6198b-cac2-4ae2-998d-3fcd2a41958c"
+    },
+    {
+      "claim_id": "b0f8aac6-b23f-485a-a3fb-58e010edb6ad",
+      "result_id": "9cc6198b-cac2-4ae2-998d-3fcd2a41958c"
+    },
+    {
+      "claim_id": "1722ed0f-a256-4d32-9b09-3289fe8b536e",
+      "result_id": "9cc6198b-cac2-4ae2-998d-3fcd2a41958c"
+    },
+    {
+      "claim_id": "21f6d927-5747-4e43-ab10-f60171fae0e0",
+      "result_id": "041fc924-f9ca-4e38-a22c-e513f8dbe0b4"
+    },
+    {
+      "claim_id": "9a24f037-5962-4864-b7ec-b73f28b67d7b",
+      "result_id": "041fc924-f9ca-4e38-a22c-e513f8dbe0b4"
+    },
+    {
+      "claim_id": "69c16bc5-3f7c-4fe3-a395-561f28d5bf2c",
+      "result_id": "041fc924-f9ca-4e38-a22c-e513f8dbe0b4"
+    },
+    {
+      "claim_id": "3fd250b2-7ade-413f-80e0-5dea43d8c1a6",
+      "result_id": "041fc924-f9ca-4e38-a22c-e513f8dbe0b4"
+    },
+    {
+      "claim_id": "544ba84b-c39c-4a68-926a-fcc8df2e0313",
+      "result_id": "041fc924-f9ca-4e38-a22c-e513f8dbe0b4"
+    },
+    {
+      "claim_id": "6e93a0f8-3146-4ed1-9add-461485af7dcb",
+      "result_id": "041fc924-f9ca-4e38-a22c-e513f8dbe0b4"
+    }
+  ],
+  "comparisons": []
+}

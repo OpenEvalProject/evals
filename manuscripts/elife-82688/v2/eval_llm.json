@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C58",
+      "C67"
+    ],
+    "result": "rBLA and cBLA form anatomically distinct projections to PL and IL subregions of the PFC. Retrograde tracing shows PL-projecting neurons are biased toward rBLA while IL-projecting neurons are shifted toward cBLA. Anterograde tracing confirms rBLA axons primarily target PL L2 while cBLA axons target IL L5, with minimal collateralization within PFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C27, C58, and C67 are well-supported by converging anatomical evidence from both retrograde and anterograde tracing experiments (Figure 1 and supplements). The quantitative data on cell distributions and axonal fluorescence across layers provide strong anatomical evidence for distinct rBLA\u2192PL and cBLA\u2192IL projections. The retrograde-Cre experiments (C67) further confirm lack of collateralization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C59",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "rBLA preferentially drives PL L2 CA neurons while cBLA drives IL L5 PT neurons through cell type-specific monosynaptic connections. Ex vivo recordings with optogenetics show rBLA-evoked EPSCs are much larger at PL L2 CA neurons compared to other cell types, while cBLA-evoked EPSCs are much larger at IL L5 PT neurons. sCRACM mapping reveals these connections target perisomatic/basal dendrites rather than apical dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C28-C31, C59, C68-C71 are strongly supported by ex vivo electrophysiology with optogenetics (Figures 2-3). The use of TTX+4-AP to isolate monosynaptic connections is appropriate, and the large differences in EPSC amplitudes (10-100 fold) with statistical significance provide robust evidence. sCRACM data (C30-C31) adds subcellular resolution. The cell type specificity is confirmed across multiple complementary experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "rBLA and cBLA inputs evoke distinct patterns of excitation and inhibition that drive cell type-specific firing in PFC. rBLA inputs show higher E/I ratios at PL L2 CA neurons and evoke significantly more action potential firing compared to IL L5 PT neurons. In contrast, cBLA inputs strongly bias both EPSCs and IPSCs onto IL L5 PT neurons and activate only these neurons, never activating PL L2 CA neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37, C72-C74 are well-supported by ex vivo recordings under more physiological conditions (Figure 3). The paired recordings control for slice-to-slice variability, and the measurements of both EPSCs and IPSCs at physiological holding potentials provide comprehensive characterization. The E/I ratio differences and firing probability data (C36-C37) demonstrate functional consequences. Statistical significance is reported throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C60",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In vivo Neuropixels recordings confirm that cBLA mainly influences IL L5 while rBLA primarily activates PL L2 but also generates mixed activation and suppression across L5. rBLA stimulation leads to the highest proportion of activated units in PL L2 (18.2%) with suppressed units enriched in L5 of both PL and IL. cBLA-activated units are greatest in IL L5 (17.7%) with few responses elsewhere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C38-C42, C60, C75-C77 are supported by in vivo Neuropixels recordings (Figure 4). The use of awake, head-fixed mice provides physiological relevance. Statistical tests (Wilcoxon signed-rank, chi-squared with Holm-Bonferroni correction) are appropriate. The layer and subregion assignments using Allen CCF registration add rigor. However, the lack of significant latency differences between PL L2 and PL L5 activated units (noted in text) is somewhat unexpected given the polysynaptic nature proposed, though technical limitations are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C61"
+    ],
+    "result": "rBLA evokes polysynaptic activity in PL L5 PT neurons via local circuits. Subthreshold rBLA stimulation that does not activate PL L2 CA neurons evokes no responses in PL L5 PT neurons, while suprathreshold stimulation evokes robust EPSCs and IPSCs. Activity does not spread from PL L2 to IL L5 or from IL L5 to PL L5 in slices, and cBLA does not engage PL L5 via IL L5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C43-C48, C61 are supported by ex vivo recordings with graded optogenetic stimulation (Figure 5). The experimental design using subthreshold vs suprathreshold stimulation intensities is appropriate for distinguishing monosynaptic from polysynaptic responses. The lack of responses at subthreshold intensities combined with robust responses at suprathreshold intensities (C43-C44) provides strong evidence for polysynaptic mechanisms. The negative results (C45-C48) are important controls showing specificity of the PL L2\u2192PL L5 pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C62",
+      "C78",
+      "C79"
+    ],
+    "result": "PL L2 CA neurons mediate polysynaptic responses at PL L5 PT neurons through a disynaptic feedforward circuit. Soma-tagged optogenetics demonstrates layer-specific activation, with L2 stimulation driving L2 CA neurons without engaging L5 CA neurons. PL L2 CA neurons evoke prominent EPSCs and IPSCs at L2 and L5 pyramidal neurons but minimal responses at L3, with L5 pyramidal neurons showing significantly higher E/I ratios. These responses are strongly biased onto L5 PT neurons compared to L5 IT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C49-C54, C62, C78-C79 are well-supported by soma-tagged optogenetics experiments (Figures 6-7). The use of st-ChroME provides spatial specificity confirmed by control experiments (C49-C50). The layer-specific connectivity pattern (C51-C53) with statistical significance demonstrates the L2\u2192L5 pathway while bypassing L3. The cell type-specific targeting of L5 PT over L5 IT neurons (C54) is robustly demonstrated with significant differences in both EPSCs and IPSCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Activation of PL L2 CA neurons drives PL L5 PT spiking through excitatory conductances, but this can be strongly regulated by local inhibitory circuits. Dynamic-clamp recordings show excitatory conductances alone evoke robust spiking in L5 PT neurons but not L5 IT neurons, while injecting both excitatory and inhibitory conductances results in significantly attenuated spiking of PT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by dynamic-clamp experiments (Figure 7D). The approach of injecting scaled conductances derived from voltage-clamp recordings is appropriate for assessing functional impact. The differential effects on PT vs IT neurons and the attenuation by inhibition are clearly demonstrated with statistical significance. However, the dynamic-clamp approach makes assumptions about conductance kinetics and spatial integration that may not fully capture in vivo dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C63"
+    ],
+    "result": "BLA-PFC connections regulate memory and emotion and become disrupted in neuropsychiatric disorders including PTSD, depression, and autism. The BLA sends strong excitatory inputs to the PFC that contact specific cell types to drive local activity and output to downstream brain areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C11, C63 are supported by citations to prior literature. These are well-established background claims that provide context for the current study. The citations appear appropriate for these general statements about BLA-PFC function and dysfunction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The PFC is subdivided into PL and IL regions that play different functional roles, and the BLA is subdivided into anterior and posterior regions that also play distinct roles in behavior. Prior anatomical studies suggest anterior BLA targets PL while posterior BLA targets IL, though recent work suggests more complex projections. BLA inputs to PL target L2 CA neurons forming reciprocal circuits, while BLA connections in IL activate L5 PT neurons that project to subcortical regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C21 are supported by citations to prior literature. These background claims establish the anatomical and functional organization of PFC and BLA subregions and summarize prior findings on BLA-PFC connectivity. The citations appear appropriate and provide necessary context for the current study's hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Long-range inputs often make targeted connections onto specific cell types in the PFC. In motor cortex, L2/3 neurons project to deeper layers and target L5 pyramidal neurons, whereas L5 PT neurons predominantly target nearby L5 PT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by citations to prior literature. These provide relevant background on cell type-specific connectivity and translaminar projections in cortex, which inform the hypotheses and interpretation of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The influence of rBLA on PFC output will depend on the neuromodulatory state, which may alter the tightly balanced CA-evoked excitation and inhibition onto PL L5 PT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is speculative and based on inference from the E/I balance experiments combined with citations to prior literature on neuromodulation. While the E/I balance data (C55-C57) support that inhibition can regulate PT neuron firing, the claim about neuromodulatory state dependence is not directly tested in this study. This represents a reasonable hypothesis for future work but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "rBLA participates in a closed reciprocal loop with PL, contacting L2 CA neurons that project back to rBLA, while cBLA does not participate in a closed or open reciprocal loop with IL, instead making unidirectional connections onto L5 PT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by the current experimental data combined with prior literature. C81 is confirmed by the current findings showing rBLA targets PL L2 CA neurons, combined with prior work (Little and Carter, 2013) showing these neurons project back to BLA. C82 is supported by data showing cBLA targets IL L5 PT neurons (which do not project to BLA based on Figure 5\u2014figure supplement 1) rather than IL L5 CA neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "BLA to PL projections are necessary for expression of threat conditioning, and rBLA plays a key role in aversion. BLA to IL projections are involved in extinction of threat conditioning, and cBLA is involved in this learning. Recent work suggests neurons encoding both positive and negative valence exist within rBLA, meaning both PL and IL could receive signals encoding positive and negative valence from different BLA sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C85, C87 are supported by citations to prior literature. Claims C84, C86, C88 involve inference from the current study's anatomical findings combined with prior behavioral literature. The inferences are reasonable given that rBLA is the main input to PL and cBLA is the main input to IL, but the functional roles are not directly tested behaviorally in this study. These represent well-supported interpretations of how the current anatomical findings relate to prior behavioral work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Subregions of the BLA target distinct networks within the PFC and differentially influence output from PL and IL. rBLA and cBLA evoke activity in PL and IL, demonstrating how subregions of the BLA engage distinct cortical networks in the PFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are overarching conclusions supported by the comprehensive experimental data from all experiments in the study. These summary claims integrate findings from anatomy (C3, C22-C27), ex vivo physiology (C4-C5, C28-C37), in vivo recordings (C6-C7, C38-C42), and local circuit mapping (C9, C49-C57). The evidence converges to support these main conclusions.",
+    "result_type": "MAJOR"
+  }
+]

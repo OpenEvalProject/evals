@@ -1,0 +1,586 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C36",
+      "C37",
+      "C97"
+    ],
+    "result": "TGF\u03b2/Activin/Nodal signalling is active in na\u00efve hPSCs, as demonstrated by detection of phosphorylated SMAD2 (pSMAD2) at levels comparable to primed cells, which is rapidly diminished by TGF\u03b2 inhibitor SB-431542 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C36, and C37 are directly supported by Western blot data (Figure 1h) showing pSMAD2 in multiple na\u00efve hPSC lines at comparable levels to primed cells, and rapid loss of phosphorylation upon SB-431542 treatment. This establishes pathway activity in na\u00efve cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C35"
+    ],
+    "result": "Most TGF\u03b2 pathway effectors (receptors, SMAD2-4) are expressed at similar levels in na\u00efve and primed hPSCs at both transcript and protein levels, though NODAL and GDF3 show higher expression in na\u00efve cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, and C35 are supported by scRNA-seq data (Figure 1e), bulk RNA-seq (Figure 1f), and proteomic data (Figure 1g). The data consistently show similar expression of most pathway components with elevated NODAL/GDF3 in na\u00efve cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "SMAD2/3 binding is enriched in na\u00efve hPSCs to a similar degree as in primed cells, with canonical target genes (LEFTY1/2, NODAL, NANOG, SMAD7) bound in both cell types, indicating active canonical TGF\u03b2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by ChIP-seq data (Figure 2a,b) showing comparable SMAD2/3 binding enrichment and shared binding at canonical targets in both cell types. This demonstrates canonical pathway activity in na\u00efve cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Over 2000 SMAD2/3 binding sites differ between na\u00efve and primed hPSCs, with na\u00efve-specific sites located near na\u00efve pluripotency genes (DNMT3L, TFAP2C, KLF4, CDK19) and overlapping with active enhancer marks (accessible chromatin, H3K27ac).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by differential ChIP-seq analysis (Figure 2c-e) and integration with ATAC-seq and histone modification data. The data clearly show differential binding patterns with na\u00efve-specific sites at na\u00efve genes overlapping enhancer signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Primed-specific SMAD2/3 sites are located near mesendoderm/primed pluripotency genes and are enriched at promoters (46% vs 26.5% in na\u00efve), while na\u00efve-specific sites are more enriched at active enhancers (30.6% vs 21.4% in primed).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by ChIP-seq data integrated with chromatin state annotations (ChromHMM analysis, Figure 2e,f). The differential enrichment at promoters vs enhancers is quantified and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "Na\u00efve-specific SMAD2/3 sites that lose occupancy in primed cells show coordinated loss of chromatin accessibility, H3K27ac/H3K4me1, and OCT4/SOX2/NANOG binding, indicating SMAD2/3 integration within the na\u00efve transcription factor network at active enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C53 are supported by integrated analysis of ChIP-seq, ATAC-seq, and histone modification data (Figure 2g-i). The coordinated changes in multiple chromatin features at na\u00efve-specific SMAD2/3 sites demonstrate network integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C59"
+    ],
+    "result": "TGF\u03b2 inhibition (SB-431542) causes rapid downregulation of NANOG (within 2 hours), canonical targets (LEFTY1/2, SMAD7), na\u00efve pluripotency markers (DPPA3, DPPA5, KLF4, DNMT3L), and POU5F1 in na\u00efve hPSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C59 are supported by RT-qPCR data (Figure 3a) showing significant downregulation of these genes following SB treatment. The rapid NANOG response (2h) is consistent with direct SMAD2/3 regulation and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Tetracycline-inducible SMAD2/3 knockdown in na\u00efve hPSCs causes rapid loss of SMAD2/3 mRNA and significant downregulation of target genes (LEFTY2, NODAL, NANOG).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by RT-qPCR data (Figure 3c) from the OPTiKD system. This provides independent validation of the requirement for SMAD2/3 in maintaining target gene expression, complementing the pharmacological inhibition experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "TGF\u03b2 inhibition induces morphological changes in na\u00efve hPSCs (loss of dome-shaped colonies, appearance of flat colonies) accompanied by NANOG downregulation and upregulation of trophoblast markers (HAND1, TP63, MMP2, SDC1, GATA3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by phase-contrast microscopy (Figure 3d), RT-qPCR (Figure 3e), and immunofluorescence (Figure 3f,g). The coordinated morphological and molecular changes indicate trophoblast differentiation, though C61's comparison to trophoblast morphology is somewhat subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Na\u00efve hPSCs treated with SB-431542 can be converted to trophoblast stem cells (TSCs) that express TSC markers (GATA3, CK19, CK7, ITGA6, TP63), can be maintained with stable morphology, and differentiate into STB and EVT upon appropriate induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by immunofluorescence (Figure 3h), RT-qPCR (Figure 3i), and culture observations. The cells express appropriate markers and show functional differentiation capacity, demonstrating generation of multipotent TSCs from na\u00efve hPSCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Blocking TGF\u03b2 signalling in na\u00efve hPSCs rapidly destabilizes the pluripotency network and enables differentiation toward trophoblast-like cells, including multipotent TSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is a synthesis conclusion supported by the combined evidence from C54-C68, including gene expression changes, morphological changes, marker expression, and TSC derivation. The data collectively support this mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Single-cell RNA-seq reveals divergent differentiation trajectories following TGF\u03b2 inhibition: na\u00efve hPSCs induce TSC markers (HAND1, GATA2, GATA3) while primed hPSCs induce neuroectoderm markers (SOX10, PAX6, LEF1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by scRNA-seq data and UMAP visualization (Figure 4b-d). The distinct trajectories and marker expression patterns are clearly demonstrated, establishing developmental stage-specific responses to TGF\u03b2 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Louvain clustering of na\u00efve hPSCs during TGF\u03b2 inhibition resolves five clusters (A-E) representing a stepwise differentiation process: pluripotent (A), early response (B), early differentiating (C), transitional (D), and differentiated trophoblast (E), with gradual loss of pluripotency genes and sequential activation of trophoblast markers (CDX2, HAND1, GATA3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by Louvain clustering analysis and gene expression patterns (Figure 4e-g). The clustering resolves distinct populations with characteristic marker expression, demonstrating a progressive differentiation trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Integration of scRNA-seq and ChIP-seq data reveals that 21% of downregulated genes (clusters A to E) are closest to a SMAD2/3 binding site (vs 7% for random controls, p<2.2\u00d710\u207b\u00b9\u2076), including direct targets involved in pluripotency (DNMT3L, DPPA4, AIRE, ID1) and trophoblast inhibition (NLRP7, TET1), indicating functional linkage between SMAD2/3 binding and gene downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by integrated ChIP-seq/scRNA-seq analysis (Figure 4h-j) with statistical validation. The significant enrichment of SMAD2/3 peaks near downregulated genes provides strong evidence for direct transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Diffusion pseudotime analysis reveals progressive differentiation from cluster A through D to E, with initial pluripotency gene downregulation followed by sequential trophoblast marker upregulation. Cluster D contains 15-25% cells co-expressing low POU5F1 and trophoblast markers (CDX2, HAND1), confirmed by immunofluorescence, indicating transition through a pluripotent-to-trophoblast intermediate state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by diffusion pseudotime analysis (Figure 5a,b), scRNA-seq quantification (Figure 5c), and immunofluorescence validation (Figure 5\u2014supplement 1c). The co-expression data provide evidence for a transitional cell state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Comparison with human embryo scRNA-seq data shows na\u00efve hPSC differentiation clusters correlate with embryonic lineages: clusters A/B/C with epiblast, cluster D with ICM/TE, and cluster E with trophoblast derivatives. Gene expression patterns during differentiation (A\u2192D\u2192E) closely resemble embryonic EPI-to-trophoblast transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by correlation analysis (Figure 5\u2014supplement 1d), PCA (Figure 5e), and comparative gene expression heatmaps (Figure 5f). The transcriptional similarity to embryo lineages validates the developmental relevance of the in vitro differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C97",
+      "C131"
+    ],
+    "result": "There is a continuum of TGF\u03b2 pathway function in human pluripotency spanning na\u00efve to primed states, with TGF\u03b2/Activin/Nodal signaling playing a central role in protecting both pluripotent states against differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C97, C131 represent the main conclusions synthesized from all experimental data. The evidence from pathway activity, SMAD2/3 binding, functional inhibition, and divergent differentiation responses collectively support this overarching model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Prior literature establishes that primed hPSCs and mouse EpiSCs rely on TGF\u03b2/Activin/Nodal signaling for self-renewal, with inhibition causing neuroectoderm differentiation and increased activity promoting endoderm differentiation, representing an evolutionarily conserved role in primed pluripotency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7 are background claims supported by multiple citations to established literature. These provide context for the current study's findings in na\u00efve cells and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "TGF\u03b2/Activin/Nodal signaling does not have an essential role in mouse pre-implantation epiblast formation, but may be necessary for human blastocyst epiblast development, suggesting species divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are background claims supported by citations. C9 is appropriately presented as tentative ('may be necessary'), reflecting the cited study's findings. These establish the rationale for investigating TGF\u03b2 function in na\u00efve hPSCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Most na\u00efve hPSC culture media contain exogenous TGF\u03b2/Activin or TGF\u03b2 sources from feeder cells or Matrigel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by citations to multiple na\u00efve culture protocols. This observation provides rationale for investigating TGF\u03b2 function in na\u00efve cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C16"
+    ],
+    "result": "SMAD2/3 binds near genes characterizing the na\u00efve pluripotent state and is necessary to maintain expression of key pluripotency genes like NANOG, directly maintaining the na\u00efve transcriptional network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C16 are supported by ChIP-seq data showing SMAD2/3 binding near na\u00efve genes and functional data showing NANOG downregulation upon TGF\u03b2 inhibition. The integration of binding and expression data supports direct regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Single-cell RNA-seq shows na\u00efve and primed hPSCs cluster separately, with all cells expressing pan-pluripotency genes (POU5F1, NANOG, SOX2) but na\u00efve cells uniquely expressing DPPA5 and KLF4, while primed cells express CD24 and ZIC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by scRNA-seq data and UMAP visualization (Figure 1b-d). This establishes the distinct transcriptional identities of the two pluripotent states used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C27"
+    ],
+    "result": "During na\u00efve-to-primed capacitation, most TGF\u03b2 pathway effectors are expressed throughout the developmental series, with NODAL and GDF3 higher in early stages, and pathway inhibitors showing differential expression (LEFTY1/2 higher in na\u00efve).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C26, C27 are supported by RNA-seq data from capacitation time courses (Figure 1f). This demonstrates dynamic regulation of pathway components during pluripotent state transitions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Analysis of human embryo scRNA-seq data shows low TGF\u03b2 pathway expression in early ICM, substantial increase in pre-implantation epiblast (with high NODAL/GDF3 similar to na\u00efve hPSCs), and low/undetectable expression in trophectoderm and primitive endoderm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by analysis of published embryo scRNA-seq data (Petropoulos et al., 2016) shown in Figure 1f. This establishes the developmental relevance of TGF\u03b2 pathway expression patterns observed in na\u00efve hPSCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "In a blastocyst culture system, NODAL, GDF3, and TDGF1 are highly expressed in EPI cells at 6 days post-fertilization and sustained over 8 days of development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by analysis of published blastocyst culture data (Xiang et al., 2020) shown in Figure 1f. This provides additional validation of sustained TGF\u03b2 pathway activity in developing human epiblast.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Differential motif enrichment analysis reveals that SMAD2/3 sites in na\u00efve cells are relatively enriched for NF2L1, TFAP2A/C, KLF4, and FOXH1 motifs compared to primed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by motif enrichment analysis (Figure 2j). This suggests potential co-factors that may direct SMAD2/3 to na\u00efve-specific sites, though functional validation of these interactions is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "TGF\u03b2 pathway genes show rapid downregulation following inhibition: NODAL and LEFTY1 are downregulated in cluster B, while GDF3 and TDGF1 are fully downregulated by cluster D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by scRNA-seq data (Figure 4f,g). This demonstrates effective pathway inhibition and provides a molecular timeline of the response to TGF\u03b2 blockade.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Prior studies show that removing Activin from 5i/L/A increases spontaneous differentiation and reduces na\u00efve gene expression, while adding Activin to HENSM increases na\u00efve marker expression and enhances primed-to-na\u00efve reprogramming kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by citations to previous studies (Theunissen et al., 2014; Bayerl et al., 2021). These observations from prior work support the current study's findings about TGF\u03b2 function in na\u00efve cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The authors propose that TGF\u03b2 signaling maintains pluripotency throughout primed-to-na\u00efve reprogramming while enforcing na\u00efve gene expression, and predict that adding Activin to na\u00efve culture conditions would be beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 are proposals/predictions based on the current results and prior observations. While plausible given the data, these represent interpretations and predictions rather than directly tested hypotheses. Experimental validation of Activin supplementation effects would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "SMAD2/3 occupies both shared and cell type-specific genomic sites in na\u00efve and primed hPSCs, with shared targets including core pluripotency factors (NANOG) and canonical targets (LEFTY1/2, SMAD7). Disrupting TGF\u03b2 signaling causes rapid downregulation of these common targets in both states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by ChIP-seq data showing shared and differential binding, and RT-qPCR showing downregulation of common targets upon inhibition. This establishes both conserved and state-specific TGF\u03b2 functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Na\u00efve-specific SMAD2/3 targets include important na\u00efve pluripotency regulators (KLF4, TFAP2C, DNMT3L) whose expression is sensitive to TGF\u03b2 inhibition, indicating that TGF\u03b2 signaling reinforces na\u00efve pluripotency gene expression rather than repressing differentiation factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by ChIP-seq data showing na\u00efve-specific binding at these genes and RT-qPCR showing their downregulation upon TGF\u03b2 inhibition. This establishes a positive regulatory role for TGF\u03b2 in na\u00efve pluripotency maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Previous studies suggest TGF\u03b2/Activin/Nodal signaling may regulate NANOG expression in human embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is a background claim supported by citation (Blakeley et al., 2017) and appropriately presented as tentative. This provides context for the potential in vivo relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Mouse genetic studies establish Nodal-SMAD2/3 function in post-implantation epiblast and primitive streak formation, with a role in extraembryonic endoderm regionalization at pre-implantation stages, but no clear function in early epiblast, suggesting species divergence in TGF\u03b2 function during early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are background claims supported by citations and established knowledge. These provide important context for interpreting the species-specific differences in TGF\u03b2 requirements between mouse and human pluripotent cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "SMAD2/3 binding is enriched at active enhancers in na\u00efve cells but predominantly at promoters in primed cells, mirroring OCT4/SOX2/NANOG redistribution. This predicts that SMAD2/3 and OSN integrate signaling and transcription factor inputs in na\u00efve pluripotency, similar to SMAD2/3-NANOG interaction in primed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by integrated ChIP-seq analysis (Figure 2). C115 is presented as a prediction based on the data and analogy to primed cells, which is reasonable but represents an inference rather than direct demonstration of functional interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "TGF\u03b2 signaling is a core feature closely integrated within the transcriptional network of na\u00efve hPSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is a synthesis conclusion supported by the combined ChIP-seq and functional data showing SMAD2/3 binding at na\u00efve genes, co-occupancy with core transcription factors, and functional requirement for maintaining na\u00efve gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Following TGF\u03b2 inhibition, primed hPSCs rapidly differentiate to neuroectoderm (consistent with prior studies) while na\u00efve hPSCs upregulate trophoblast genes after several days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 are supported by scRNA-seq data (Figure 4) and citation to previous work. This establishes the divergent differentiation responses that are central to the study's conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The divergent differentiation responses could be due to different developmental states and differentiation potentials of na\u00efve vs primed cells, and/or different culture media components. The presence of MEK, GSK3\u03b2, and PKC inhibitors plus LIF may attenuate TGF\u03b2 inhibition effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C123 are speculations about mechanisms underlying the observed differences. While plausible, these represent hypotheses rather than tested explanations. C120-C121 cite established knowledge, but C122-C123 are untested speculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "TGF\u03b2 inhibitors are components of human TSC medium and na\u00efve-to-TSC conversion protocols, suggesting TGF\u03b2 signaling may limit trophoblast self-renewal/proliferation and that inhibitors may function both to induce pluripotency exit and promote trophoblast growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C125 are supported by citations to TSC protocols. C126 is speculation about dual functions of TGF\u03b2 inhibitors. While consistent with the data, these mechanistic interpretations are not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Following TGF\u03b2 inhibition, na\u00efve cells acquire transcriptional identity closest to ICM/early TE with transient CDX2 expression before differentiating to trophoblast. CDX1/2 are transiently expressed in primate pre-implantation TE but not in TSCs, suggesting the scRNA-seq data captures early trophoblast specification stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are supported by scRNA-seq data compared to embryo datasets and citations about CDX expression patterns. C130 is a reasonable interpretation of the data's potential utility, though somewhat speculative about what insights it may provide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "Knowledge about TGF\u03b2 signaling will be useful for establishing culture conditions for deriving different embryonic cell types in vitro and for improving human embryo culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C133 are speculations about potential applications of the findings. While plausible, these represent future possibilities rather than demonstrated outcomes. The utility would need to be validated experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C85"
+    ],
+    "result": "Upon TGF\u03b2 pathway inhibition, primed cells differentiate into neuroectoderm while na\u00efve cells exit pluripotency and acquire a TSC-like fate expressing trophoblast markers, triggered by deregulation of SMAD2/3 target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, C85 are supported by scRNA-seq data (Figure 4) showing divergent marker expression patterns. The mechanistic link to SMAD2/3 target deregulation is supported by integrated ChIP-seq/RNA-seq analysis.",
+    "result_type": "MAJOR"
+  }
+]

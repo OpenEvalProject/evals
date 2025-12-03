@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The manuscript provides background on SARS-CoV-2 variants and their immune evasion properties. Multiple VOCs (Alpha, Beta, Gamma, Delta, Omicron) are described with their epidemiological history, neutralization resistance profiles, and clinical characteristics. The Omicron variant is highlighted as having particularly strong immune evasion capabilities with 15 RBD mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 and C91-C94 are well-supported by citations to WHO classifications, epidemiological data, and published studies. The background information on variant characteristics, neutralization resistance, and clinical outcomes is appropriately referenced and provides context for the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The homo-tri-RBD vaccine consists of three prototype RBDs connected end-to-end in trimeric form, has demonstrated protection in animal experiments and clinical trials, and has completed phase I/II trials with emergency use approval in the UAE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by citations to the authors' previous work (Liang et al., 2022; Kaabi et al., 2022) and statements about regulatory status. This provides appropriate context for the current mosaic vaccine design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The mos-tri-RBD vaccine was designed with three RBDs: one from Omicron BA.1 and two artificially designed RBDs carrying eight key mutations (K417N, L452R, T478K, F490S, N501Y, K417T, S477N, E484K) selected based on frequency and presence in VOCs/VOIs. The design leverages RBD structural features including proximity of N- and C-termini and long terminal loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C43 describe the rational design of mos-tri-RBD based on structural knowledge and mutation frequency analysis. The mutation selection criteria (top 10 most frequent in VOCs/VOIs) is clearly stated with supporting data in Table 1. The structural rationale for the trimeric design is supported by citations to previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The recombinant mos-tri-RBD protein was expressed in CHO cells and characterized by SDS-PAGE (showing ~92 kDa band vs. theoretical 74 kDa due to glycosylation), ELISA (demonstrating concentration-dependent binding to MM117 antibody), confirming proper folding and trimeric assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 describe protein expression and characterization with experimental data shown in Figure 1B-C. The discrepancy between theoretical and observed molecular weight is appropriately explained by glycosylation with citation to previous work. The functional assays confirm native conformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "RBD trimers exhibit ~500-fold higher hACE2 binding avidity compared to RBD monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by citation to Routhu et al., 2021, providing context for why trimeric presentation enhances binding avidity. This supports the rationale for the trimeric vaccine design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In prime-boost immunization experiments in rats, mos-tri-RBD elicited significantly higher neutralizing antibody titers against Omicron (GMT=2876), Beta (GMT=6917), and Delta (GMT=5618) compared to homo-tri-RBD and BBIBP-CorV. Statistical significance was demonstrated (p<0.01) for Omicron neutralization. However, mos-tri-RBD showed lower neutralization against prototype strain compared to homo-tri-RBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C71 present live-virus neutralization data from Figure 2B with appropriate statistical analysis. The experimental design includes proper controls (adjuvant, BBIBP-CorV, homo-tri-RBD) and n=10 rats per group. The trade-off between variant coverage and prototype neutralization is acknowledged. Statistical tests (one-way ANOVA with LSD t-test) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "As a booster following BBIBP-CorV priming, mos-tri-RBD elicited neutralizing antibodies against Omicron BA.1, BA.2, and BA.3 (GMTs: 3249, 1459, 957) that were 3.5-fold, >3.9-fold, and >2.8-fold higher than homo-tri-RBD booster, and 8.5-fold, >8.3-fold, and >9.6-fold higher than BBIBP-CorV booster. Similar improvements were observed for other VOCs/VOIs (Beta, Gamma, Delta, Lambda, Mu) in pseudo-virus neutralization assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 present pseudo-virus neutralization data from Figure 3B with comprehensive variant coverage including three Omicron lineages. The booster study design is appropriate with n=10 rats per group. Statistical significance is demonstrated with appropriate tests. The data support broad-spectrum neutralization capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Live-virus neutralization assays confirmed that mos-tri-RBD as a booster elicited GMT of 731 against Omicron, representing >8.6-fold and 3.8-fold increases over BBIBP-CorV and homo-tri-RBD boosters, respectively. Similar improvements were observed for Beta (GMT=1568, 6.8-fold over BBIBP-CorV) and Delta (GMT=2891, 10.3-fold over BBIBP-CorV) variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 present live-virus neutralization data from Figure 4 that corroborate the pseudo-virus results. The use of both pseudo-virus and live-virus assays strengthens the findings. Statistical significance is demonstrated with appropriate tests (one-way ANOVA with LSD t-test, p<0.05 to p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Summary of booster vaccination results: mos-tri-RBD elicited 2.8-3.9-fold higher neutralizing antibodies against Omicron compared to homo-tri-RBD booster, and 8.3-9.6-fold higher compared to BBIBP-CorV booster. For other VOCs/VOIs, increases were 1.2-4.5-fold over homo-tri-RBD and 4.6-10.3-fold over BBIBP-CorV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 accurately summarize the experimental findings from both pseudo-virus and live-virus neutralization assays. The fold-change calculations are consistent with the detailed data presented in Figures 3B and 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The mosaic vaccine strategy has been successfully applied to HIV, coronavirus, and influenza vaccines, with mosaic immunogens eliciting superior B cell responses compared to homotypic immunogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by appropriate citations (Barouch et al., 2010; Cohen et al., 2021; Kanekiyo et al., 2019) providing context for the mosaic vaccine approach used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors speculate that new SARS-CoV-2 variants will continue to emerge, that the mosaic vaccine can be easily modified to incorporate new mutations, and that the mosaic strategy may be applicable to mRNA and DNA vaccines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C104 are speculative statements about future applications and adaptability. While C102 is a reasonable inference based on viral evolution, C103 and C104 are not experimentally demonstrated in this study. These represent potential future directions rather than established results.",
+    "result_type": "MINOR"
+  }
+]

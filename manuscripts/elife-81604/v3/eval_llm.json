@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6"
+    ],
+    "result": "Prior work identified five microbial community clusters in CF airways using k-means clustering and gap statistic analysis of 16S rRNA data from 167 persons with CF. These five community types explained 24% of variability in lung function, twice as high as any other factor previously identified. Two communities were dominated by single taxa (P. aeruginosa and Streptococcus, representing ~43% of samples), while the Pa.M1 and Pa.M2 mixed communities represented ~34% of samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C6 are all supported by consistent citation to Hampton et al., 2021, which performed the computational analysis and clinical correlation. The claims accurately describe prior published work that forms the foundation for the current study's model system design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Metabolic flux analysis revealed multiple similarities between predicted metabolic fluxes of Pa.M1 and Pa.M2 communities that distinguished them from Pseudomonas- and Streptococcus-dominated communities, including fluxes of ethanol, lactate, and acetate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by metabolic modeling data shown in Figure 1\u2014figure supplement 1A. The computational analysis appropriately uses SteadyCom method to predict metabolic exchanges, though the claim is limited to computational predictions rather than experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors justify selection of P. aeruginosa, S. aureus, Streptococcus spp., and Prevotella spp. for their in vitro model based on multiple lines of evidence: clinical importance in CF outcomes, co-occurrence leading to worsened outcomes, physical proximity in sputum, high abundance and prevalence in 16S rRNA data (representing >70% of reads in 62% of samples), and predicted metabolic cross-feeding. This four-member community represents a common pulmotype detected in ~34% of CF airway infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 provide a well-supported rationale for model organism selection through convergent evidence from multiple cited studies, 16S rRNA data analysis (Figure 1A-B), and metabolic modeling. The logic connecting these observations to justify the four-organism model is sound and appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "In the in vitro mixed community model, P. aeruginosa biofilm CFU counts were similar in monoculture versus mixed community, but planktonic P. aeruginosa showed a modest (~0.5 log) decrease in the mixed community. S. aureus planktonic counts were reduced in mixed community. S. sanguinis showed increased biofilm CFU in mixed community but no change in planktonic cells. P. melaninogenica could not be detected in monoculture but reached ~6 log10 CFU/mL in both biofilm and planktonic fractions when cultivated with other community members, consistent with prior metabolic modeling predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 are supported by experimental data in Figure 1C with appropriate statistical analysis (n=6, ANOVA with Tukey's post-test). The P. melaninogenica growth dependency on community members is particularly well-validated through both prediction (C23, Henson et al., 2019) and experimental confirmation (C21-C22), with oxygen effects ruled out by anoxic chamber experiments (C24-C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The inability of P. melaninogenica to grow in monoculture was not due to residual oxygen, as demonstrated by experiments in an anoxic environmental chamber where P. melaninogenica still showed no detectable CFU in ASM but grew significantly in Prevotella growth medium (PGM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by control experiments shown in Figure 1\u2014figure supplement 2 (n=3). The experimental design appropriately rules out oxygen toxicity as an alternative explanation and demonstrates that P. melaninogenica can grow under these conditions when provided appropriate nutrients (PGM), supporting the conclusion that community-dependent growth is due to metabolic cross-feeding rather than oxygen sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Productivity analysis revealed that P. aeruginosa and S. aureus monospecies biofilms had higher yield than planktonic cells, while S. sanguinis showed the opposite pattern. The observed productivity in mixed planktonic community was lower than theoretical (additive) productivity, suggesting antagonism. Mixed biofilm productivity was higher than mixed planktonic community, with no significant difference between observed and theoretical mixed biofilm productivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by productivity calculations shown in Figure 1\u2014figure supplement 3A with appropriate statistical analysis. The comparison of observed versus theoretical (additive) productivity provides insight into species interactions, though the interpretation of 'antagonism' (C29) is somewhat speculative as other factors could explain reduced productivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The in vitro mixed biofilm community composition fell within the range observed for in vivo M1/M2 mixed communities. By varying the starting inoculum of S. aureus, S. sanguinis, and P. melaninogenica while maintaining constant P. aeruginosa, the authors could generate varying community compositions reflecting microbial populations in the CF lung.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by comparison to clinical data (Figure 1\u2014figure supplement 4A) and experimental manipulation data (Figure 1\u2014figure supplement 4\u2014source data 1). This demonstrates the model's flexibility and clinical relevance, though the claim would be strengthened by quantitative metrics of how well the in vitro compositions match clinical distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Similar community-specific growth phenotypes were observed for multiple strains and CF clinical isolates of the four microbial genera. The mixed community was stable for up to 2 weeks with daily medium replacement, with all four members stably detected throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by experimental data in Figure 1\u2014figure supplement 5 (multiple strains, n=3) and Figure 1\u2014figure supplement 6 (time course, n=3). The demonstration of robustness across multiple strains and temporal stability strengthens confidence in the model system, though strain-specific variation is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Tobramycin treatment of wild-type P. aeruginosa PA14 grown in mixed community biofilms resulted in an unexpected reduction in viable cells compared to monoculture, with no detectable planktonic P. aeruginosa after treatment. Tobramycin is one of the most heavily prescribed antimicrobials in CF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by experimental data in Figure 2A (n=3, ANOVA with Tukey's post-test) and citation to CF Foundation Patient Registry. The increased sensitivity of P. aeruginosa to tobramycin in the mixed community is unexpected and well-documented, though the mechanism is not addressed in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Inoculating the community with 1000-fold less CFU of S. aureus, S. sanguinis, and P. melaninogenica than P. aeruginosa rescued the tolerance phenotype of P. aeruginosa to tobramycin. Increased killing of P. aeruginosa by tobramycin in polymicrobial environment can occur over a range of abundances of other microbial partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by experimental data in Figure 2\u2014figure supplement 1 (n=4). The dose-response relationship demonstrates that the community effect is robust across a range of relative abundances, though the lower limit for observing community-specific phenotypes is not precisely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Among six P. aeruginosa CF clinical isolates tested, two strains showed increased sensitivity to tobramycin in mixed community (similar to PA14), one showed equal sensitivity in monoculture and mixed community, and one displayed increased tolerance in polymicrobial environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by experimental data in Figure 2\u2014figure supplement 2 (n=3). The strain-specific variation in tobramycin response highlights biological complexity and suggests that genetic background influences community-specific drug responses, which is explored further with the LasR mutant analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Enhanced tobramycin-mediated killing of P. aeruginosa PA14 was observed when co-cultivated with multiple Streptococcus and Prevotella species. However, co-cultivation with S. aureus strain USA300 did not impact tobramycin sensitivity, while strains Newman and JE2 did alter sensitivity, indicating that only a subset of S. aureus strains contribute to the community-specific shift in P. aeruginosa sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by experimental data in Figure 2\u2014figure supplement 3 (n=3). The strain-specific effects for S. aureus are particularly notable and suggest that specific genetic or phenotypic features of certain strains drive the community effect, though the molecular basis is not identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Most S. aureus strains and Streptococcus spp. showed decreased tobramycin susceptibility when cultivated in mixed community in both planktonic and biofilm populations. S. aureus strain USA300 showed high tolerance to tobramycin in monoculture but was not further protected in mixed community.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by experimental data in Figures 2B-C and supplements 4-5 (n=3). The protection of S. aureus and Streptococcus from tobramycin in mixed community contrasts with the increased sensitivity of P. aeruginosa, demonstrating species-specific and context-dependent drug responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Similar phenotypes were observed using an anoxic environmental chamber compared to the GasPak system, validating the robustness of the anoxic environment. Community-specific protection from tobramycin was unlikely driven by microbial-based drug inactivation, as MBC values remained similar to ASM control when tobramycin was pre-incubated with microbial supernatants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by experimental data in Figure 2\u2014figure supplement 7 (n=3) and MBC assay data in Supplementary file 1. These controls appropriately rule out technical artifacts (oxygen effects) and drug inactivation as alternative explanations for the observed community-specific drug responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Loss-of-function mutations in lasR are frequently observed in CF airways and other environments. Strains lacking LasR function have been associated with worsened lung function, in vitro growth advantage in low oxygen, increased virulence factor production through intraspecies interactions, and greater tolerance to front-line CF drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by multiple citations to published studies characterizing LasR mutants in CF. This background information appropriately motivates the hypothesis that LasR loss-of-function might alter tobramycin response in the mixed community context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The \u0394lasR mutant showed increased tolerance to tobramycin in the mixed community compared to wild-type, which was complemented by restoring the wild-type lasR allele. Importantly, the \u0394lasR mutant showed similar sensitivity to tobramycin as wild-type in monoculture, and the recalcitrance was biofilm-specific, as planktonic cells showed equal sensitivity in mixed community and monoculture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by experimental data in Figures 3A-B (n=3, ANOVA with Tukey's post-test). The genetic complementation (C60) and monoculture control (C61) are critical for establishing that the phenotype is specifically due to LasR loss and is community-dependent. The biofilm-specific effect (C62) adds important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Inactivation of lasR did not impact endpoint CFU counts of other microbial members in the mixed community with or without tobramycin treatment. Tobramycin inactivation by the \u0394lasR mutant was unlikely, as MBC remained similar to ASM control when wild-type P. aeruginosa was treated with tobramycin pre-incubated in \u0394lasR supernatant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by experimental data in Figure 3\u2014figure supplement 1 and Supplementary file 1. These controls appropriately rule out indirect effects on other community members and drug inactivation as explanations for the \u0394lasR phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "A chronic CF clinical isolate defective for LasR activity (NC-AMT0101-1-1) displayed higher tolerance to tobramycin in mixed community than its LasR+ parent isolate (NC-AMT0101-1-2), with both equally sensitive in monoculture, suggesting a community-specific phenotype for LasR loss-of-function. Another clinical isolate (SMC1595) showed low protease activity and reduced 3-oxo-C12-HSL production, features associated with LasR loss-of-function variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by experimental data in Figure 3C (n=3) and Figure 3\u2014figure supplement 2 (n=3-4). The validation with clinical isolates strengthens the conclusion that LasR-mediated community-specific tobramycin tolerance is clinically relevant, not just a laboratory strain artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The recalcitrance of the \u0394lasR mutant to tobramycin in mixed community is dependent on the MvfR-PQS pathway, as inactivation of mvfR resensitized the \u0394lasR mutant. Inactivation of rhlR did not impact sensitivity. None of the tested QS mutants altered endpoint CFUs of other community members with or without tobramycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by experimental data in Figure 3D and Figure 3\u2014figure supplement 3 (n=3). The genetic dissection implicating MvfR-PQS but not RhlR provides important mechanistic insight into the pathway mediating community-specific tolerance, setting up the subsequent investigation of phenazines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Prior studies show that phenazine production is stimulated in LasR mutants in the presence of other microbial partners, the MvfR-PQS system is crucial for phenazine production, and phenazines drive tolerance of P. aeruginosa to various drug classes including aminoglycosides. Inactivating phenazine production increases sensitivity to tobramycin, and inactivation of lasR drives phenazine overproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by multiple citations to published studies. This background information appropriately motivates the hypothesis that phenazines mediate the community-specific tolerance of the \u0394lasR mutant, connecting the genetic (MvfR-PQS) and chemical (phenazine) mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Significantly higher PCA (phenazine-1-carboxylic acid) levels were measured in mixed community containing the \u0394lasR mutant compared to wild-type P. aeruginosa. Wild-type PCA production in mixed community was not significantly different from monoculture, while the \u0394lasR mutant showed a significant twofold increase in PCA production in community versus monoculture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by HPLC-MS/MS data in Figure 4A (n=3, ANOVA with Tukey's post-test). The quantitative measurement of phenazines directly tests the hypothesis and shows that the community context specifically enhances phenazine production by the \u0394lasR mutant, though the twofold increase is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Blocking phenazine production in the \u0394lasR background (\u0394\u0394phz\u0394lasR) resensitized the mutant to tobramycin in mixed community. Exogenous addition of the phenazine pyocyanin triggered tolerance of wild-type P. aeruginosa in mixed community in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by experimental data in Figures 4B-C (n=3-5, ANOVA with Tukey's post-test). The genetic loss-of-function (C79) and gain-of-function (C80, exogenous addition) experiments provide strong complementary evidence that phenazines are both necessary and sufficient for the community-specific tolerance phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "S. aureus and Streptococcus spp. showed decreased and increased growth, respectively, in mixed community versus monoculture, consistent with previous reports. S. aureus viability could be maintained in mixed community for up to 14 days under CF-like conditions, mirroring the capacity of P. aeruginosa and S. aureus to co-exist in the CF airway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by experimental data (Figure 1\u2014figure supplement 6B) and citations to prior studies. The observation that S. aureus persists despite P. aeruginosa's known antagonistic exoproducts is important for validating the model's clinical relevance, though the mechanistic basis for co-existence is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Prior studies have shown that P. aeruginosa-secreted exoproducts can eradicate S. aureus in co-culture, and that co-occurrence of P. aeruginosa and S. aureus alters antimicrobial susceptibility and worsens CF lung disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by citations to published studies. This background information contextualizes the clinical relevance of the P. aeruginosa-S. aureus interaction and highlights the importance of understanding polymicrobial dynamics in CF.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Tobramycin shows limited clinical efficacy in clearing P. aeruginosa from CF airways, and a recent report recommends abandoning MIC testing for CF airway infections due to poor predictive value. Distinct community types can impact clinical outcomes, and microbe-microbe interactions can drive shifts in antimicrobial susceptibility through mechanisms including metabolite production, horizontal gene transfer, and shared public goods like \u03b2-lactamases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by multiple citations to clinical and mechanistic studies. This background information establishes the clinical problem motivating the study and the known mechanisms by which polymicrobial communities can alter drug responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Chronic CF lung infections are characterized by numerous microbial taxa living as polymicrobial biofilm-like communities associated with negative clinical outcomes. Culture-independent microbiome studies show no appreciable decrease in P. aeruginosa abundance after tobramycin treatment. The disconnect between in vitro antimicrobial susceptibility profiles and clinical response poses a significant threat to eradication of mixed microbial communities, as MIC assays often fail to resolve chronic polymicrobial infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by citations to microbiome studies and clinical reports. This introduction material establishes the fundamental problem that the study addresses: the failure of monoculture-based susceptibility testing to predict clinical outcomes in polymicrobial infections.",
+    "result_type": "MINOR"
+  }
+]

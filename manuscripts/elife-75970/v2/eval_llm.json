@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Pet1 neurons at E14.5 have a unique accessible chromatin landscape with 68,871 TACs, of which 31% are unique to Pet1 neurons and 22% are novel compared to published datasets. Cell type identity accounts for 93% of variance in PCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 are supported by bulk ATAC-seq data with appropriate sequencing depth (29M reads per sample), quality control metrics, and PCA analysis. The identification of Pet1 neuron-specific TACs is validated by comparison with control Pet1neg cells and published ENCODE datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Pet1 neuron-specific TACs are enriched for active and poised distal enhancers, including 1919 super-enhancers, 42% of which are unique to Pet1 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by ChIPmentation data profiling histone modifications (H3K27ac, H3K4me1, H3K4me3, H3K27me3) and ChromHMM analysis defining chromatin states. Super-enhancer identification using established ROSE methodology is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "A Pet1 neuron-specific TAC upstream of the Pet1 promoter corresponds to a functionally validated enhancer, and Pet1 neuron TACs overlap with 38% of hindbrain VISTA enhancers but only 1% of Pet1 neuron-specific TACs overlap with VISTA enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are supported by ATAC-seq and ChIPmentation data showing enhancer marks at the Pet1 locus, with functional validation provided by citations to previous transgenic studies. Comparison with VISTA database provides orthogonal validation of enhancer predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Genes associated with Pet1 neuron-specific TACs are enriched for axon and synapse functions, including 5-HT neurotransmission genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by gene ontology analysis of genes linked to Pet1 neuron-specific TACs and genome browser visualization of ATAC-seq and ChIPmentation signals at 5-HT neurotransmission genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "scATAC-seq of E14.5 Pet1 neurons identified 124,111 TACs from 1692 nuclei, with high concordance (Spearman's correlation = 0.9) between pseudo-bulk scATAC-seq and bulk ATAC-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by scATAC-seq data with appropriate sequencing depth (>50,000 reads per nucleus) and quality control filtering. The high correlation between pseudo-bulk and bulk ATAC-seq validates the single-cell approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "scRNA-seq obtained over 80,000 reads per cell for 1612 cells with a median of 4010 genes per cell, and 95% of sorted cells expressed both Pet1 and Yfp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by scRNA-seq data with appropriate sequencing depth and quality metrics. The high percentage of Pet1/Yfp double-positive cells validates the FACS sorting strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Single Pet1 neurons at E14.5 comprise 11 major subtypes with heterogeneous chromatin accessibility and expression patterns. Two-thirds of TACs are broadly accessible while one-third are subtype-specific, with differential accessibility at rostral (En1) and caudal (Meis2) marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by integrated scATAC-seq and scRNA-seq clustering analysis showing distinct subtypes with differential accessibility at known marker genes. The identification of both shared and subtype-specific TACs is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "93% of adult DRN cells map to E14.5 rostral Pet1 neuron clusters expressing rhombomere 1 markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by UMAP projection of published adult DRN scRNA-seq data onto the E14.5 reference, showing that adult DRN neurons derive from rostral embryonic clusters as expected based on developmental anatomy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Integration of scATAC-seq and scRNA-seq yielded 41,191 TAC-gene pairings, with each gene linked to an average of 1.8 TACs. However, 10% of genes are associated with >5 TACs, and these genes are enriched for axon and synapse development functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by computational integration using logistic regression to link TACs to genes within 500 kb. The distribution of TAC-gene associations and gene ontology enrichment are consistent with the data, though the statistical significance of the logistic regression associations is not fully detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "5-HT identity genes (Tph2, Slc6a4, Slc22a3) show low expression in most Pet1 neurons at E14.5 despite accessible chromatin, but are robustly expressed in adult Pet1-lineage neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by comparison of scATAC-seq and scRNA-seq data showing accessible chromatin without corresponding gene expression at E14.5, and by immunohistochemistry and citations showing robust expression in adults. This suggests chromatin accessibility precedes gene expression during maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Chromatin accessibility in Pet1 neurons is highly dynamic during embryonic development, with 16,493 TACs opening and 9,402 closing between E11.5 and E14.5. Active enhancers are over-represented among opening TACs, and 93% of super-enhancer TACs are dynamic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by bulk ATAC-seq at three developmental time points with appropriate statistical analysis (fold change >2, FDR < 0.01) and ChromHMM chromatin state analysis. The high degree of chromatin dynamics is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Changes in chromatin accessibility at cis-regulatory regions are significantly correlated with temporal expression trajectories of target genes. Genes linked to closing TACs are enriched for neural precursor functions, while genes linked to opening TACs are enriched for axon development (E11.5-E14.5) and synaptic signaling (E14.5-E17.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by integration of ATAC-seq and RNA-seq data showing correlation between accessibility and expression changes, with gene ontology analysis revealing stage-specific functional enrichment consistent with neuronal maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Pet1-deficient neurons show reduced Pet1 footprints and decreased accessibility at many TSS-distal TACs. Pet1 directly occupies 53% of Pet1-dependent TACs, and 73-80% of Pet1-regulated TACs are unique to Pet1 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by ATAC-seq from Pet1-/- neurons, footprinting analysis, and CUT&RUN data showing direct Pet1 occupancy. The PCA showing Pet1-/- neurons cluster with wildtype suggests Pet1 deficiency does not cause complete loss of identity, consistent with the partial accessibility changes observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Pet1-dependent TACs with direct Pet1 occupancy are enriched for serotonin biosynthesis genes, including enhancers of Tph2, Gch1, Ddc, Slc22a3, and Slc6a4. Pet1-dependent TACs are mostly unique to Pet1 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by gene ontology analysis of Pet1-occupied, Pet1-dependent TACs and genome browser visualization showing reduced accessibility at 5-HT synthesis and transport gene enhancers in Pet1-/- neurons. The cell-type specificity of Pet1-dependent TACs is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Pet1 is required for initial chromatin opening at 47 TAC regions including Slc6a4 enhancers, which fail to fully open in Pet1-/- neurons. These TACs are linked to genes enriched for synaptic products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by temporal ATAC-seq data showing Slc6a4 enhancers gain accessibility from E11.5 to E17.5 in wildtype but not Pet1-/- neurons, and by Pet1 CUT&RUN showing direct occupancy. Gene ontology analysis supports the functional enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Conditional deletion of Pet1 at E12.5 results in loss of accessibility at 1834 TACs, including 936 TACs that are stable in wildtype from E11.5 to E14.5, indicating Pet1 is required to maintain chromatin accessibility. Many 5-HT neurotransmission gene enhancers lose accessibility in Pet1-cKO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by ATAC-seq from Pet1-cKO neurons showing loss of accessibility at TACs that are stable in wildtype, demonstrating a maintenance function for Pet1. The loss of accessibility at 5-HT neurotransmission gene enhancers is consistent with Pet1-/- data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Pet1 directly occupies and is required for optimal accessibility of its autoregulatory enhancer, suggesting maintenance of chromatin accessibility is an important mechanism for terminal selector autoregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by CUT&RUN showing Pet1 occupancy at the Pet1 autoregulatory enhancer and ATAC-seq showing reduced accessibility in Pet1-cKO. This is consistent with previous ChIP-seq data and provides a mechanistic link between Pet1 binding and chromatin accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Lmx1b and Pet1 binding sites significantly co-localize within TAC regions. Lmx1b-cKO neurons show altered chromatin landscape with more differentially accessible TACs than Pet1-cKO. Lmx1b directly binds 19% of differentially accessible TACs, which are enriched for serotonin synthesis genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by Lmx1b CUT&RUN showing co-occupancy with Pet1, ATAC-seq from Lmx1b-cKO showing greater chromatin changes than Pet1-cKO, and gene ontology analysis. The broader impact of Lmx1b is consistent with its known role upstream of Pet1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Lmx1b ablation results in greater loss of 5-HT neurotransmission gene TAC accessibility than Pet1 ablation, including TACs not significantly affected in Pet1-cKO. Lmx1b directly occupies enhancers of many 5-HT neurotransmission genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by comparison of ATAC-seq data from Pet1-cKO and Lmx1b-cKO showing greater accessibility loss in Lmx1b-cKO, and by Lmx1b CUT&RUN showing direct occupancy. This is consistent with Lmx1b's known role in regulating 5-HT neurotransmission genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Chromatin accessibility changes in Lmx1b-cKO are highly similar to double knockout (DKO) neurons, suggesting Lmx1b ablation has similar effects to ablating both factors. Pet1 and Lmx1b non-redundantly co-regulate accessibility at a subset of TACs, while Lmx1b independently sustains TACs for axon and synaptic formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by comparison of ATAC-seq data from Lmx1b-cKO and DKO showing similar accessibility changes, and by analysis of TACs that are dependent on both factors versus Lmx1b alone. The non-redundant co-regulation is demonstrated by TACs that require both factors for full accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Pet1 and Lmx1b shape the global gene regulatory landscape by controlling accessibility of binding sites for other TF families such as Rfx-related factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by motif enrichment analysis of differentially accessible regions in cKO and DKO neurons showing reduced accessibility at binding sites for multiple TF families. This demonstrates a broader regulatory role beyond direct target genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Pet1 and Lmx1b program TAC accessibility of genes involved in axon growth and synaptic functions, with the majority of regulated TACs gaining accessibility during development. Pet1- and Lmx1b-dependent TACs of Syt1 and Slc17a8 are Pet1 neuron-specific, and expression of these genes is decreased in cKO and DKO neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by gene ontology analysis, temporal dynamics analysis, ATAC-seq showing Pet1 neuron-specific TACs at Syt1 and Slc17a8, RNA-seq showing decreased expression in cKO/DKO, and correlation analysis between accessibility and expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "5-HT pericellular baskets are present in wildtype brains at P15 but absent in Pet1-cKO, Lmx1b-cKO, and DKO mice, despite some axons reaching the dLS. Co-localization of Syt1 and vGlut3 with TdTomato-positive axon terminals is significantly reduced in cKO and DKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by immunohistochemistry data showing presence of pericellular baskets in wildtype but not cKO/DKO mice, and quantification showing significantly reduced co-localization of synaptic markers with 5-HT axons. Statistical analysis (two-way ANOVA) supports the significance of the differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Pet1 and Lmx1b control accessibility of putative CREs for genes required for 5-HT axon extension and formation of presynaptic structure enabling 5-HT and glutamatergic co-transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by the integration of ATAC-seq showing Pet1/Lmx1b-dependent accessibility at synapse gene enhancers, RNA-seq showing reduced expression of these genes, and immunohistochemistry showing impaired synapse formation in cKO/DKO mice. The inference that these factors control CRE accessibility for synapse formation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Unique distal enhancers define the Pet1 neuron lineage, with heterogeneous single-cell chromatin landscapes established early in postmitotic neurons. Distal enhancer accessibility is highly dynamic during maturation, and Pet1 and Lmx1b control chromatin accessibility to Pet1-lineage-specific enhancers and are required to maintain accessibility, suggesting postmitotic neuronal open chromatin is unstable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are summary statements supported by the comprehensive ATAC-seq, scATAC-seq, and knockout data presented throughout the manuscript. The conclusion that postmitotic chromatin is unstable and requires continuous TF input is well-supported by the Pet1-cKO data showing loss of accessibility at stable TACs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Pet1 and Lmx1b are terminal selector TFs in 5-HT neurons that are continuously expressed, control their own expression through autoregulation, and are required for acquisition of 5-HT neuron identity, serotonergic firing characteristics, and axon architecture. FEV (human Pet1 ortholog) loss of function has been identified in autism cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by citations to published reviews and studies establishing the known functions of Pet1 and Lmx1b as terminal selectors and the clinical relevance of FEV mutations. These claims provide important background context for the current study.",
+    "result_type": "MINOR"
+  }
+]

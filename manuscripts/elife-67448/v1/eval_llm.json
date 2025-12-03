@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C54",
+      "C153",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C162",
+      "C163",
+      "C164",
+      "C167",
+      "C168",
+      "C169",
+      "C171",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Agl24 is a thermostable archaeal \u03b2-1,4-N-acetylglucosaminyltransferase that catalyzes the synthesis of the lipid-linked chitobiose core structure in S. acidocaldarius N-glycosylation. Biochemical characterization using MALDI-MS, HPLC, and NMR confirmed that Agl24 transfers a single GlcNAc from UDP-GlcNAc to a lipid-linked GlcNAc acceptor, producing a \u03b2-1,4-linked chitobiose. The enzyme is metal-independent, shows optimal activity at 70\u00b0C, and has a Km for UDP-GlcNAc of 1.37 \u00b1 0.13 mM. Mutagenesis demonstrated that the conserved H14 residue is essential for activity, while E114 substitution had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification and functional characterization of Agl24 is well-supported by multiple complementary experimental approaches. MALDI-MS data (C153-C159) clearly demonstrate single GlcNAc transfer with the expected mass shifts. NMR analysis (C173-C178) unambiguously confirms the \u03b2-1,4 linkage and inverting mechanism through coupling constant analysis and chemical shift assignments. Kinetic parameters (C171) are consistent with other GTs. The mutagenesis data (C167-C169) provide functional validation of conserved residues. Temperature optimum (C162) matches the organism's growth temperature, and metal independence (C163-C164) is consistent with the GT-B fold prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C52",
+      "C53",
+      "C77",
+      "C78",
+      "C79",
+      "C86",
+      "C87",
+      "C92",
+      "C149",
+      "C150"
+    ],
+    "result": "Agl24 shows structural and sequence similarities to eukaryotic Alg14/13 and bacterial MurG, including a conserved GGH14 motif. Despite extremely low overall sequence identity (~15-17%), Agl24 is predicted to have a GT-B fold similar to MurG. The conserved histidine residue (H14) in the GGH motif is found in all three enzyme families, and a conserved glutamic acid (E114) is also present across bacterial, eukaryotic, and archaeal sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural and sequence relationships are supported by multiple lines of evidence. Sequence alignments (C77-C79, C86-C87, C92) demonstrate domain organization and conserved motifs despite low overall identity. Structural modeling (C150, C53) predicts a GT-B fold consistent with MurG. The functional importance of H14 is experimentally validated (C6, C167-C168), supporting the significance of this conserved motif. The low sequence identity (~15-17%) is acknowledged but does not undermine the structural predictions, which are based on fold recognition methods appropriate for remote homologs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C75",
+      "C144",
+      "C145"
+    ],
+    "result": "The agl24 gene (saci1262) is essential in S. acidocaldarius. Attempts to generate deletion mutants failed, and the gene is located only eight genes downstream of the essential OST gene aglB. Essentiality is supported by transposon studies in the related organism S. islandicus, where agl24 lacks transposon insertions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The essentiality claim is well-supported by multiple independent lines of evidence. The inability to generate deletion mutants despite multiple approaches (C144, Figure 2\u2014figure supplement 1) provides strong experimental evidence. The transposon study in S. islandicus (C145) provides independent confirmation in a closely related organism. The genomic location near other essential N-glycosylation genes (C75) provides additional context. However, the authors appropriately note that essentiality cannot be generalized across all archaea (C146), as some Euryarchaeota can tolerate N-glycosylation gene deletions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C52",
+      "C53",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Bioinformatics and structural modeling revealed that Agl24 represents a new GT family (GT-115) with a GT-B fold, distinct from the GT-A fold enzymes found in Euryarchaeota. Agl24 shows similarities to eukaryotic Alg14/13 and distant relation to bacterial MurG, which catalyze the same or similar reactions. Despite lacking a transmembrane domain, Agl24 associates with membranes, likely through interaction with membrane enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural classification and evolutionary relationships are well-supported. Structural modeling (C53, C100, C150) consistently predicts a GT-B fold. The assignment to a new GT family (C101) is justified based on differences from both GT2 (euryarchaeal enzymes) and GT28 (MurG). Membrane association without a TMD (C102) is experimentally demonstrated (Figure 3\u2014figure supplement 1) and is consistent with known protein-protein interactions in analogous systems (C103). The functional similarity to Alg14/13 and MurG (C10) is supported by the shared substrate specificity and reaction mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C119",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C206"
+    ],
+    "result": "Phylogenetic analysis reveals that Agl24 homologs are found in Crenarchaeota (except Thermoproteales), Bathyarchaeota, and one Baldrarchaeota genome, suggesting these organisms contain a chitobiose N-glycan core structure. The most closely related enzymes to eukaryotic Alg14 and Alg13 are found within the Asgard superphylum. Eukaryotic Alg14-13 are monophyletic and of archaeal origin, supporting the hypothesis that eukaryotic N-glycosylation originated from an archaeal ancestor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis is comprehensive and well-executed, using appropriate methods (IQ-TREE with multiple models, ultrafast bootstrap, aLRT support). The distribution of Agl24 homologs (C109-C110, C180) is clearly documented with strong support values (Figure 7). The inference that organisms with Agl24 homologs likely have chitobiose cores (C111) is reasonable but remains a prediction requiring experimental validation. The relationship between eukaryotic Alg14-13 and Asgard archaea (C119, C183) is well-supported by the phylogenetic data. The monophyly of eukaryotic sequences (C206) is clearly demonstrated in the trees.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C213",
+      "C214",
+      "C215",
+      "C216"
+    ],
+    "result": "The origin of eukaryotic Alg14-13 cannot be unambiguously determined. Two scenarios are possible: vertical inheritance through eukaryogenesis or ancient lateral transfer from Archaea. The sparse distribution of Alg14-13 homologs among Asgards, phylogenetic incongruences, and poor resolution within Eukaryotes make it difficult to distinguish between these scenarios. The phylogenies support a two-domain tree with Eukaryotes emerging from within Archaea rather than being sister to all Archaea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge the limitations of their phylogenetic analysis and present alternative hypotheses. The uncertainty (C134-C135) is well-justified given the sparse distribution in Asgards (C136), phylogenetic incongruences between Alg13 and Alg14 trees, and poor resolution within eukaryotes (C204). The absence of sequences in most Asgards (C136, C210) is a significant observation that complicates simple vertical inheritance scenarios. The support for a two-domain tree (C215-C216) is based on both outgroup and outgroup-free rooting methods (C201), strengthening this conclusion. The authors appropriately present this as uncertain rather than making definitive claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C117",
+      "C118"
+    ],
+    "result": "Members of the Thermoproteales order lack Agl24 homologs and may use a different enzyme for N-glycan synthesis. The N-glycan of Pyrobaculum calidifontis (Thermoproteales) differs from Sulfolobales, containing di-N-acetylated \u03b2-1,4-linked GlcNAc residues with the second sugar carboxylated at C6. A candidate enzyme is Pcal_0481, showing 29.91% identity to M. voltae AglC, though its predicted mannosyltransferase function could not be experimentally confirmed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The absence of Agl24 homologs in Thermoproteales (C112, C180) is well-documented. The structural difference in P. calidifontis N-glycans (C113-C114) is supported by citation to previous work (C42). However, the proposal that Pcal_0481 is the responsible enzyme (C117-C118) is speculative. The sequence identity to AglC (29.91%) is relatively low, and the cited structural study (C118) could not confirm the predicted function. This remains a hypothesis requiring experimental validation. The claim that a \"different enzyme\" is used (C112) is reasonable but not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Bioinformatics searches using MurG and Alg13/14 sequences identified Saci1262 as the most likely candidate for the \u03b2-1,4-N-acetylglucosaminyltransferase in Sulfolobales. Delta BLAST searches with E. coli MurG identified multiple S. acidocaldarius homologs with 10-17% identity. Searches with S. cerevisiae Alg13 or the Alg14-13 fusion identified a single homolog with 17% identity. Phylogenetic studies also indicated similarities between MurG, Alg14/13, and Saci1262.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bioinformatics approach is sound and uses appropriate methods (Delta BLAST with multiple query sequences). The identification of Saci1262 as the top candidate (C73) is based on convergent evidence from multiple search strategies (C69-C71) and phylogenetic analysis (C72). The low sequence identities (10-17%) are acknowledged and are typical for remote homologs in the GT superfamily. The subsequent experimental validation of Saci1262/Agl24 function confirms that the bioinformatics prediction was correct, retrospectively validating the search strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Most eukaryotic Alg14 proteins possess an N-terminal transmembrane domain (TMD) that is absent in bacterial MurG, archaeal Agl24-like enzymes, and some eukaryotic Alg13-14 fusions. The TMD is predicted to facilitate membrane association and recruitment of Dol-PP-GlcNAc. The introduction of the TMD appears to have emerged later in eukaryotic evolution, as membrane interaction can also occur through hydrophobic patches and protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The presence/absence of TMDs across different organisms (C82) is well-documented through sequence analysis. The predicted function of the TMD (C83) is supported by citation to previous literature (Lu et al., 2012). The evolutionary inference about late emergence of the TMD (C84) is reasonable based on its distribution pattern, though this remains an inference rather than direct evidence. The observation that Agl24 associates with membranes despite lacking a TMD (C102) experimentally supports the claim that TMDs are not strictly required (C85). The alternative mechanisms for membrane association (C85) are supported by citations to previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C151",
+      "C152"
+    ],
+    "result": "The conserved GGH motif and glutamic acid residue have been proposed to be involved in acceptor binding in MurG, but structural evidence with bound acceptor is lacking. In MurG, the H14 and E125 residues are important for function, with H14A substitution causing loss of activity and E125A causing 860-fold reduction in activity. Similar results were obtained for Agl24, where H14A was inactive but E114A retained activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional importance of conserved residues is well-supported by mutagenesis data in both MurG (C94, C151-C152) and Agl24 (C167-C169). The authors appropriately note the limitations of current structural knowledge (C90-C91), acknowledging that the proposed roles for these residues (C89, C93) remain hypothetical in the absence of structures with bound acceptor. The different effects of glutamate substitution in MurG (C94, C152) versus Agl24 (C169) are interesting and suggest potential mechanistic differences, though the authors do not over-interpret this discrepancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C202",
+      "C203"
+    ],
+    "result": "Phylogenetic analysis suggests that bacterial MurG and archaeal Agl24/Alg14-13/EpsEF homologs originated from a split at the Last Universal Common Ancestor. EpsE/EpsF sequences found in bacteria are of archaeal origin and were acquired through ancient interdomain transfers. Most EpsE/EpsF and Alg14/Alg13-related genes are split, indicating a single gene split event followed by multiple independent re-fusion events across domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis supporting an ancient origin (C202) is well-executed with appropriate rooting methods (C201). The inference of archaeal origin for bacterial EpsE/EpsF (C203) is based on phylogenetic topology showing these sequences nested within archaeal clades (C185). The gene fusion/fission patterns (C188-C189) are clearly documented in the phylogenies and genomic data. However, these are evolutionary inferences based on phylogenetic patterns rather than direct evidence, and alternative scenarios cannot be completely ruled out. The authors appropriately cite previous work (Lombard, 2016) that proposed similar scenarios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Multiple lines of evidence support the hypothesis that eukaryotic N-glycosylation emerged from an ancient archaeon, likely from the TACK/Asgard superphyla. These include: similarities between archaeal and eukaryotic molecular processes, phylogenomic analyses placing eukaryotic origins near TACK/Asgard, similarities between Asgard/TACK AglB and eukaryotic Stt3, presence of double sequon motifs in Asgard/TACK AglB, detection of OST subunit homologs in Asgards, and use of Dol-PP linkage in TACK (identical to eukaryotes) versus Dol-P in Euryarchaeota.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cumulative evidence from multiple independent observations (C125-C128, C131-C132) provides strong support for an archaeal origin of eukaryotic N-glycosylation. Each individual observation is supported by citations to previous literature. The phylogenomic context (C121) provides the broader framework, though the authors acknowledge alternative views exist (C122). The biochemical similarities (lipid linkage, C131-C132) are particularly compelling as they represent functional constraints. However, the authors appropriately note (C129-C130) that some observations (like ribophorin in Asgards) require further functional validation. The synthesis of these observations into a coherent hypothesis (C133) is reasonable, though the authors acknowledge uncertainty about specific mechanisms (C134-C135).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "Distant Alg14-13 homologs exist throughout Archaea beyond the well-characterized clades, including in Bathyarchaeota and Methanobacteriales. Many Bathyarchaeota have multiple Alg14-13 homologs suggesting functional redundancy. Some Bathyarchaeota also possess Agl24 homologs. The function of these homologs is unknown, and it is unclear why Methanobacteriales (which use pseudomurein) contain Alg14-13 homologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The existence of additional divergent homologs (C138, C197) is documented in the phylogenetic analysis and supplementary data. The presence of multiple homologs in Bathyarchaeota (C140, C198-C199) is clearly shown. However, the functional implications remain speculative. The suggestion of \"functional redundancy\" (C140) is not supported by experimental data. The question about Methanobacteriales (C141) highlights an interesting puzzle but provides no resolution. The authors appropriately acknowledge that without knowledge of N-glycosylation processes in these organisms (C200), functional predictions are impossible. This represents an important observation for future research but does not constitute a resolved result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Euryarchaeal N-glycosylation enzymes (AglJ, AglG in H. volcanii; AglK, AglC in M. voltae) belong to the GT2 family with GT-A folds. In contrast, S. acidocaldarius Agl24 is the first archaeal glycosylation enzyme with a predicted GT-B structure and is assigned to the new GT family 115, distinct from both GT2 and GT28 (MurG).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of euryarchaeal enzymes (C95-C98) is well-established in the literature and properly cited. The novelty of Agl24 as the first archaeal GT-B enzyme (C100) is supported by the structural predictions and comparison with known archaeal GTs. The assignment to a new GT family (C101) is justified based on the distinct structural features and sequence divergence from both GT2 (euryarchaeal enzymes) and GT28 (MurG). This classification decision is reasonable given the available data, though formal acceptance by the CAZy database would provide additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The essentiality of N-glycosylation in S. acidocaldarius (including Agl24, AglB, and AglH) is supported by inability to generate deletion mutants and transposon studies. However, N-glycosylation essentiality cannot be generalized across all archaea, as deletion mutants of AglB can be obtained in some Euryarchaeota. The requirement for N-glycosylation may depend on factors including N-glycan composition, structure, and modification frequency, which is reported to be higher in thermophilic versus mesophilic archaea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The essentiality in S. acidocaldarius is well-supported by experimental evidence (C144-C145). The authors appropriately caution against over-generalization (C146) by citing counterexamples from Euryarchaeota. The speculation about factors affecting essentiality (C147-C148) is reasonable and supported by citations, though it remains a hypothesis. This represents a balanced assessment that acknowledges both the specific findings in S. acidocaldarius and the broader context across archaeal diversity.",
+    "result_type": "MINOR"
+  }
+]

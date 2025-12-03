@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The study identified appreciable cis-acting variation in gene expression dynamics within and between Saccharomyces species during the diauxic shift. Using RNA-seq data from five diploid hybrids (three intra-specific and two inter-specific) across 19 timepoints, the authors found that more genes showed ASE levels than ASE dynamics, with both increasing with divergence. Genes with ASE dynamics showed larger standard deviations in allele differences across timepoints, and 72% exhibited environment-dependent ASE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33, C35-C42 collectively provide strong experimental evidence for cis-acting variation in expression dynamics. The experimental design (C35-C37) is appropriate with multiple hybrids spanning different divergence levels. Statistical tests were applied with appropriate FDR correction (C38-C41), and k-means clustering analysis (C42) provides additional characterization. The data in Table 1 and associated figures support the quantitative claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Within-species ASE is associated with intergenic variants, with InDels showing stronger associations with ASE dynamics than SNPs. Logistic regression analysis revealed that upstream InDels predict ASE dynamics better than ASE levels for genes with small ASE differences, while having similar predictive ability for genes with large ASE differences. Inter-specific hybrids showed associations only between ASE dynamics and upstream variants, likely due to higher divergence rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C43-C51 are well-supported by logistic regression analysis shown in Figure 3 and supplementary figures. The statistical approach is appropriate with Bonferroni correction for multiple testing. The stratified analysis by ASE magnitude (C46-C47) strengthens the conclusions. The linear relationship between variant number and ASE frequency in intra-specific hybrids (C50-C51) provides additional support, though C51 is an inference that could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Using a high-throughput CRE-seq reporter assay, the authors identified and characterized cis-regulatory variants affecting expression dynamics in the Oak \u00d7 ChII hybrid. Of 334 regions tested, 137 correlated with RNA-seq expression, with 31 regions showing differences in expression dynamics between alleles. Individual variant testing identified 35 out of 70 variants with significant effects on expression dynamics, with enrichment for variants in regions showing dynamics differences compared to genome-wide rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C52-C66 describe a well-designed CRE-seq experiment with appropriate controls and statistical testing (FDR < 0.05). The experimental design using overlapping 130 bp regions (C53) is reasonable given synthesis constraints. The correlation analysis between CRE-seq and RNA-seq (C55-C57) validates the approach, though only ~41% of regions correlated (C55), indicating limitations. The variant enrichment analysis (C63) with Fisher's exact test provides statistical support. However, C66 indicates that only about half of regions with CRE-seq dynamics correlated with RNA-seq, suggesting incomplete recapitulation of endogenous regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Variants associated with expression dynamics showed no enrichment for PhastCons conservation scores or changes in transcription factor binding site scores compared to non-associated variants. However, PhastCons scores improved genome-wide associations between SNPs and ASE levels/dynamics but not InDel associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by statistical comparisons shown in Figure 5\u2014figure supplement 1 and Table S6. The lack of enrichment for conservation and binding site scores (C67-C68) is clearly stated, though the small sample size (n=35 positive variants) limits statistical power. The differential effect of PhastCons on SNP versus InDel associations (C69-C70) is interesting but the mechanism is not explored. These findings contrast with prior work on expression levels, which is appropriately discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C107"
+    ],
+    "result": "Chimeric promoter regions between S. cerevisiae and S. uvarum frequently generate novel expression dynamics patterns outside the parental range, indicating constraints on the evolution of gene expression dynamics. Of 348 regions examined, 88 chimeras showed expression dynamics differing from both parents, with 63 cases where chimera expression was more distant from parents than parents were from each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C71-C81, C107 provide strong evidence for constraints on expression dynamics evolution. The inter-specific CRE-seq library design (C71-C72) is appropriate with chimeric sequences enabling mapping. The statistical testing (FDR < 0.05) and distance calculations (C79-C81) are rigorous. The finding that chimeras often fall outside parental ranges (C78-C81) is compelling evidence for epistatic interactions and constraints. However, the interpretation of 'constraints' (C8, C107) is inferential and could reflect either functional constraints or neutral incompatibilities between diverged regulatory architectures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C82",
+      "C83",
+      "C84",
+      "C90"
+    ],
+    "result": "The study concludes that changes in cis-regulatory sequences can tune gene expression dynamics and that expression dynamics are interrelated to expression levels. Approximately one-third of genes with ASE dynamics also show ASE levels, and the covariation between levels, dynamics, and noise likely shapes regulatory evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C82-C84, C90 represent the main conclusions drawn from the experimental data. The overlap between ASE dynamics and levels (C83) is well-documented in Table 1. The logical relationship between temporal changes and level differences (C84) is sound. However, C90 is speculative about evolutionary implications. The conclusions are generally supported by the data presented, though the mechanistic basis for how variants specifically tune dynamics versus levels remains incompletely resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors propose that changes in nucleosome positioning sequences may mediate expression dynamics, and that dynamics may be interrelated to stochastic noise in expression. Gene expression occurs in bursts with levels dependent on burst size, noise on burst frequency, and timing on both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C89 are largely inferential and speculative, drawing on prior work (C30, C86, C88) rather than direct experimental evidence from this study. While the cited work supports these mechanisms (Barbaric et al., 2001; Floer et al., 2010; New et al., 2014; Venturelli et al., 2015; Cai et al., 2006; Carey et al., 2013), the current study does not directly test nucleosome positioning or measure single-cell noise/burst dynamics. These remain plausible hypotheses that would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study confirms several findings from prior work on expression levels also hold for expression dynamics: InDels are more strongly associated with expression differences than SNPs within species, and multiple cis-regulatory variants occur within promoter regions. The authors propose explanations for observed patterns including regional size effects and coincidence of ASE levels and dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 appropriately contextualize the current findings relative to prior work. The confirmation of InDel associations (C91) is supported by the data in Figure 3. The explanations offered (C94, C97) are reasonable inferences though speculative. The citation to supporting prior work (Massouras et al., 2012; Renganaath et al., 2020; Kita et al., 2017) is appropriate. These claims effectively integrate the current findings with the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Nearly half of genes (8/20) had multiple variants (2-5) associated with ASE dynamics, but unlike prior work on expression levels, these variants were not associated with conserved sequences or transcription factor binding sites. The authors suggest this difference could reflect distinct mechanisms underlying ASE levels versus dynamics, strain differences, or sample size limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 appropriately compare the current findings to prior work (Renganaath et al., 2020). The observation of multiple variants per gene (C99) is supported by the CRE-seq data. The lack of association with conservation/binding sites contrasts with prior work, and the authors appropriately acknowledge multiple possible explanations (C100) including technical limitations. The small sample size (n=35 variants) is a legitimate concern that limits definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors acknowledge several limitations of the CRE-seq approach: 130 bp sequences do not capture entire promoters, variants may require upstream activation sequences to show effects, and the use of only four barcode replicates likely limited detection of variants affecting ASE levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 represent appropriate acknowledgment of experimental limitations. The constraint of 130 bp synthesis (C101) is a real technical limitation, and the potential for context-dependent effects (C102) is well-recognized in the field. The low replication (C103-C104) compared to prior studies (Tewhey et al., 2016; Renganaath et al., 2020) is a valid concern that may explain the low detection rate for expression level effects. These limitations are important for interpreting the negative results and the incomplete correlation between CRE-seq and RNA-seq.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors propose a neutral model of expression divergence where small changes in dynamics within species are neutral, but when combined in chimeras yield expression patterns outside the parental range that would be deleterious. They also suggest constraints on dynamics may depend on expression levels or noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106, C108-C111 present an evolutionary interpretation of the chimera data. The neutral model (C109) is supported by citation to Fay and Wittkopp, 2008, and is consistent with the observation that within-species variants are not enriched at conserved sites (C108) while chimeras show non-parental patterns. However, this interpretation is inferential and alternative explanations (e.g., simple regulatory incompatibility without fitness consequences) are not fully excluded. The speculation about level/noise dependence (C110-C111) is reasonable but untested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "The introduction establishes the context for studying cis-regulatory variation in gene expression dynamics, reviewing prior work on the role of cis-regulatory sequences in evolution, the abundance of cis-acting variation affecting expression levels, the flexibility of cis-regulatory sequences, and the importance of expression dynamics as an aspect of gene regulation that has been understudied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C34 provide appropriate background and motivation for the study. These claims are well-supported by extensive citations to prior literature. The gap in knowledge regarding cis-regulatory variation in expression dynamics (C32) is clearly articulated and motivates the current work. The background on binding site flexibility (C18-C21), conservation (C22-C25), noise (C26-C27), and dynamics (C28-C32) appropriately frames the research questions. C2 is appropriately speculative about the potential importance of timing.",
+    "result_type": "MINOR"
+  }
+]

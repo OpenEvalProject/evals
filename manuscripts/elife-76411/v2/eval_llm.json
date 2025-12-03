@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C58",
+      "C59",
+      "C81"
+    ],
+    "result": "Participants successfully learned to bidirectionally modulate ipsilateral sensorimotor excitability (SMR-ERD) while maintaining constant contralateral excitability through spatially bivariate BCI-based neurofeedback. Ipsilateral SMR-ERD significantly increased in HIGH sessions and decreased in LOW sessions compared to baseline, while contralateral SMR-ERD remained constant across neurofeedback conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 demonstrate statistically significant bidirectional modulation of ipsilateral SMR-ERD with large effect sizes (Cohen's d=3.12-6.13, p<0.001), while C38 shows no significant differences in contralateral SMR-ERD between neurofeedback sessions. Claims C58-C59 confirm constant contralateral excitability via MEP measurements (p=0.104). The spatial localization (C43-C44) and successful bivariate control (C81) are well-documented with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C110"
+    ],
+    "result": "Volitional modulation of ipsilateral excitability successfully manipulated interhemispheric inhibition (IHI) magnitude, with significant differences between HIGH and both MID (Cohen's d=0.94, p=0.025) and LOW (Cohen's d=1.36, p<0.001) sessions, achieving a manipulation range of 32.6\u00b130.7%. However, bidirectional manipulation was incomplete as no significant difference was observed between MID and LOW sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 demonstrate statistically significant IHI manipulation with moderate to large effect sizes and appropriate corrections for multiple comparisons. The manipulation range (C52) is substantial (Cohen's d=1.50). However, C56 and C110 acknowledge a limitation: the lack of significant difference between MID and LOW sessions indicates incomplete bidirectional control. Despite this limitation, the primary finding of IHI manipulation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Ipsilateral SMR-ERD, but not contralateral SMR-ERD, significantly predicted IHI magnitude. A linear mixed-effects model showed a significant effect of ipsilateral SMR-ERD (p<0.001) but no effect of contralateral SMR-ERD (p=0.828) or interaction (p=0.058). This was confirmed by both within-participant (7/22 participants showed significant ipsilateral correlations vs. 1/22 for contralateral, chi-squared p=0.019) and across-participant analyses (rrm=-0.436, p=0.004 for ipsilateral; rrm=0.008, p=0.960 for contralateral).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The convergence of evidence from mixed-effects modeling (C60-C62), within-participant correlations (C63-C65), and across-participant repeated measures correlations (C66-C67) provides strong support for the specific role of ipsilateral SMR-ERD in IHI modulation. The chi-squared test (C65) demonstrates that ipsilateral correlations occurred more frequently than expected by chance. Multiple analytical approaches yielding consistent results strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "Individual differences in IHI manipulation capability were associated with resting-state interhemispheric network properties. Participants with greater resting IHI showed stronger manipulation capability (r=-0.447, p=0.044), larger resting-state interhemispheric functional connectivity (r=0.547, p=0.013), and stronger intrinsic ipsilateral SMR-ERD during motor imagery (r=-0.619, p=0.004), but not contralateral SMR-ERD (r=-0.283, p=0.228).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 present a coherent pattern of correlations linking resting-state measures to manipulation capability, all with p<0.05 and moderate effect sizes. The specificity to ipsilateral (C75) but not contralateral (C76) SMR-ERD is consistent with the main findings. However, these are correlational analyses with modest sample size (n=22), and some correlations approach but do not reach strong effect size thresholds. The pattern is internally consistent and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The bi-EEG-triggered dual-TMS system successfully validated IHI measurement at rest, showing intensity-dependent inhibition with conditioning stimulus intensities of 100-140% RMT. The IHI curve showed approximately 50% inhibition at ~130% RMT, consistent with previous EEG-TMS studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 describe a systematic validation of the IHI measurement protocol with appropriate statistical testing (rmANOVA, F(5,109)=8.31, p<0.001) and post-hoc comparisons. The results (C49) are explicitly stated to be compatible with previous work (Stefanou et al., 2018; Tsutsumi et al., 2012), providing external validation. The methodological rigor supports the reliability of subsequent IHI measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C95",
+      "C96"
+    ],
+    "result": "Interhemispheric functional connectivity (Network-intensity) at the EEG level showed significant differences between HIGH and MID sessions (Cohen's d=0.83, p=0.033) but not between HIGH and LOW sessions (Cohen's d=0.40, p=1.00), suggesting that functional connectivity does not directly reflect excitatory or inhibitory activity and may represent different neural populations than IHI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 present statistical evidence with appropriate corrections, though the pattern differs from IHI results. The interpretation (C71, C95-C96) that Network-intensity and IHI reflect different neural populations is reasonable given the dissociation in results, though it remains somewhat speculative. The finding is internally consistent and the statistical analysis is appropriate, but the mechanistic interpretation (C95-C96) relies on cited literature rather than direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Task difficulty was equivalent across the three neurofeedback sessions, with no significant differences in the number of triggered trials (14.2\u00b14.7 trials, p>0.05) or mean waiting time for triggered events (1.96\u00b10.81 s, p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide important control data demonstrating that differences in IHI manipulation were not due to differences in task difficulty or performance across conditions. The statistical tests (rmANOVA with post-hoc paired t-tests) are appropriate and show no significant differences, supporting the validity of comparing IHI across conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Data quality and compliance were satisfactory across all experimental sessions. Participants completed all five sessions, confirmed ability to perform kinesthetic motor imagery, maintained EEG signal quality (\u2264100 \u03bcV), showed expected SMR desynchronization patterns during motor imagery, and exhibited characteristic alpha (8-13 Hz) and beta (21-24 Hz) peak frequencies. No adverse events occurred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 describe essential quality control measures and data compliance. The observations are straightforward and well-documented (e.g., C30-C31 provide specific quantitative measurements with citations supporting expected frequency ranges). These claims establish the validity and safety of the experimental procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "This study represents the first demonstration of IHI-state manipulation with a large dynamic range using a novel spatially bivariate BCI-based neurofeedback technique that allows real-time triggering of TMS pulses at predetermined bilateral SMR amplitudes, overcoming limitations of previous observational or open-loop paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C22-C24 describe the novelty and technical innovation of the approach. The claim of being \"first\" (C77) is supported by the experimental data showing successful IHI manipulation and the technical description of the system (C22-C23). The system's capability to overcome previous limitations (C24) is demonstrated by the successful bidirectional control of ipsilateral excitability while maintaining constant contralateral excitability, which was not achievable with conventional approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C88"
+    ],
+    "result": "A trend toward disinhibition was observed during motor imagery without feedback (NoFB) compared to rest (Cohen's d=0.42, p=0.279), consistent with previous studies. The modulation of IHI magnitude was at least partly of cortical rather than spinal origin, as evidenced by pronounced cortical changes despite absent sensory input and constant MEP amplitude in the imagined hand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 describes a non-significant trend (p=0.279) that is consistent with prior literature but lacks statistical support in this study. Claim C88 makes an inference about cortical vs. spinal origin based on the pattern of results, which is reasonable but indirect. The interpretation is plausible and supported by the pattern of findings (constant contralateral MEP with varying IHI), but additional experiments (e.g., triple pulse procedures mentioned in the discussion) would provide more direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The effect size of IHI manipulation in this study (Cohen's d=1.50) was comparable to representative tDCS studies (Cohen's d=1.55) and superior to rTMS studies (Cohen's d=0.80), and larger than the medium effect sizes (0.4-0.6) reported in meta-analyses of clinical trials using rTMS and tDCS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 provide comparative context for the magnitude of the effect achieved. The comparisons are based on cited literature (Williams et al., 2010; Gilio et al., 2003; Adeyemo et al., 2012; Hsu et al., 2012) and the effect size from this study (C52). However, C100 notes that the rTMS comparison value was \"read from the graph,\" which introduces some uncertainty. The overall conclusion that the effect size is substantial and comparable to or exceeding other neuromodulation approaches is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The study had two acknowledged limitations: (1) bidirectional IHI changes were not fully achieved as there was no significant difference between MID and LOW sessions, and (2) potential order effects due to cumulative TMS pulses and elapsed time, as REST and NoFB sessions were not randomized (though the three neurofeedback sessions were randomized).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 represent honest acknowledgment of study limitations by the authors. C110 is supported by the statistical results (C56), and C111 describes a methodological limitation in the experimental design. These limitations are appropriately disclosed and do not fundamentally undermine the main findings, though they do constrain the interpretation of some results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The study had an unbalanced sex ratio (2 women, 20 men in final sample) due to free recruitment without planned equalization, limiting generalizability to females. Previous studies show sex differences in brain microstructure including corpus callosum, though whether these differences influenced the IHI results is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 acknowledge a significant limitation in sample composition. The sex imbalance is clearly documented (C119-C120), and the potential relevance is supported by citations to studies showing sex differences in relevant brain structures (C121). The authors appropriately acknowledge uncertainty about whether this affected results (C122). This is an important limitation for generalizability.",
+    "result_type": "MINOR"
+  }
+]

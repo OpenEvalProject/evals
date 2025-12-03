@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C26",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The Pioneer Factor Hypothesis (PFH) predicts that pioneer factors (PFs) like FOXA1 bind to and open inaccessible chromatin sites, then recruit non-pioneer factors (non-PFs) like HNF4A in a sequential manner to activate silent genes. This sequential activity should be required for ectopic gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C13, C14 establish the PFH framework from prior literature (C12-C20). Claims C18-C20 establish FOXA1 as a canonical PF and HNF4A as a non-PF based on citations. Claims C21, C26, C55-C57 logically derive testable predictions from the PFH. These claims accurately represent the hypothesis being tested and are well-supported by citations to established literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Co-expression of FOXA1 and HNF4A in K562 cells activated 91 liver-specific genes (p<10\u207b\u00b3\u2078) and 38 intestinal genes (p<10\u207b\u00b9\u00b3). Both TFs co-bound at inaccessible sites (43 of 53 co-bound sites within 50 kb of activated genes were initially inaccessible) and increased chromatin accessibility, conforming to PFH predictions when co-expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C42-C43, C45-C54 are supported by RNA-seq, CUT&Tag, and ATAC-seq data with appropriate statistical tests (hypergeometric p-values). The data show significant tissue-specific enrichment and demonstrate that co-expressed FOXA1 and HNF4A bind inaccessible sites and open chromatin. Comparison with HepG2 binding data (C52) validates biological relevance. The conclusion that co-expression conforms to PFH predictions (C53) is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C29",
+      "C30",
+      "C31",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "When expressed independently, both FOXA1 and HNF4A bound and opened inaccessible sites, activated endoderm-specific genes, and showed no functional distinction. FOXA1 activated 33 liver genes (p<10\u207b\u2074) and HNF4A activated 47 liver genes (p<10\u207b\u2078) and 40 intestinal genes (p<10\u207b\u00b9\u2075), with largely independent gene sets activated by each TF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C29-C31, C58-C77 are strongly supported by RNA-seq, CUT&Tag, and ATAC-seq data from single TF expression experiments. Statistical significance is demonstrated with appropriate p-values. The data show that both TFs independently bind inaccessible sites (C72-C73: 34/59 FOXA1 sites and 39/76 HNF4A sites were inaccessible), open chromatin (C74-C75), and activate tissue-specific genes (C58-C61). This directly contradicts PFH predictions (C69) and represents a major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C32",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "FOXA1 and HNF4A 'pioneered' for each other when expressed independently, but FOXA1 required fewer copies of its motif for binding (2-4 motifs) compared to HNF4A (3-6 motifs). This difference correlates with FOXA1's higher binding affinity and suggests pioneer activity depends on TF-DNA affinity rather than categorical differences between TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C32, C78-C82 are supported by motif counting analysis (C78-C79) and genome-wide motif frequency data (C80). The observation that FOXA1 requires fewer motifs is consistent with cited literature showing FOXA1 has higher binding affinity than HNF4A (C81). The hypothesis that pioneer activity depends on affinity (C82) is a reasonable inference from the data, though it remains speculative. The mutual pioneering (C7) is demonstrated by the independent binding and activation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C33",
+      "C34",
+      "C35",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "A subset of 31 liver genes required both FOXA1 and HNF4A for activation. Of 11,402 genome-wide co-bound sites, only 2,023 were FOXA1-pioneered and 3,398 were HNF4A-pioneered, while 2,192 were cooperatively bound (requiring concurrent expression of both TFs). This cooperative binding was enriched in heterochromatic regions, contradicting the sequential activity model of the PFH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C33-C35, C90-C94 are supported by comprehensive analysis of binding patterns comparing single and double expression conditions. The quantification of FP, HP, and CB sites (C91) is based on CUT&Tag data. ChromHMM analysis (C93-C94) provides mechanistic insight into where cooperative binding occurs. The conclusion that most co-bound sites do not conform to sequential PFH predictions (C10, C33) is justified by the data showing CB sites represent a substantial fraction of co-binding events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "At lower TF induction (0.05 \u00b5g/ml vs 0.5 \u00b5g/ml doxycycline), both FOXA1 and HNF4A showed reduced genome-wide binding and shifted from binding predominantly inaccessible sites to accessible sites. Gene activation decreased (FOXA1: 33\u21928 liver genes; HNF4A: 47\u219230 liver genes), but no qualitative differences between the TFs emerged, suggesting TF concentration affects binding but does not reveal categorical PF vs non-PF distinctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 are supported by dose-response experiments with CUT&Tag, ATAC-seq, and RNA-seq data at two doxycycline concentrations. The shift from inaccessible to accessible binding (C84) and reduced gene activation (C86-C87) demonstrate concentration-dependent effects. The conclusion that lowering induction does not reveal qualitative differences (C88) is justified by the parallel behavior of both TFs. The inference that reprogramming conditions don't mask differences (C89) is reasonable given the PFH was developed to explain reprogramming.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Genome-wide motif analysis showed that inaccessible binding sites had higher motif content than accessible sites and random regions for both FOXA1 and HNF4A. Motif content could predict inaccessible binding (AUC=69.0% for FOXA1, 76.6% for HNF4A) but not accessible binding. At co-bound sites, FOXA1 and HNF4A motif content was higher at FP or HP sites than CB sites, and motif thresholds could differentiate FP/HP from CB sites (AUC=72.8% and 67.8%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 are supported by systematic motif counting analysis using FIMO with appropriate p-value thresholds (1e-3). ROC curve analysis with reported AUC values demonstrates predictive power. The finding that motif content predicts inaccessible but not accessible binding (C97, C100) is consistent across individual and co-bound sites. The differential motif content at FP/HP vs CB sites (C99) provides mechanistic insight. The analysis is rigorous and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C36",
+      "C82",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C127"
+    ],
+    "result": "The authors propose an alternative to the PFH where 'pioneer activity' depends on the affinity of interaction between TF and DNA rather than categorical differences between PFs and non-PFs. They hypothesize that pioneer activity is a spectrum determined by TF binding affinity and motif count, and may be best summarized by the free energy balance between TFs, nucleosomes, and DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C36, C82, C102-C108, C127 present the authors' alternative hypothesis based on their experimental findings. While speculative (evidence_type includes SPECULATION), the hypothesis is well-supported by: (1) both FOXA1 and HNF4A showing pioneer activity (C103), (2) motif count correlating with binding (C108), (3) FOXA1 requiring fewer motifs consistent with higher affinity (C81-C82), and (4) concentration-dependent effects (C85). The hypothesis is grounded in thermodynamic principles (C127) and represents a reasonable interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C118"
+    ],
+    "result": "FOXA1 and HNF4A activated distinct functional gene sets: FOXA1 activated liver genes enriched for fibrinolysis and complement activation, while HNF4A activated liver genes enriched for cholesterol import and lipoprotein remodeling. HNF4A independently activated more intestine-specific genes than FOXA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C118 are supported by gene ontology analysis of RNA-seq data (referenced in Supplementary files 1-2). The functional enrichment analysis provides biological context for the distinct gene sets activated by each TF. Claim C118 is implicit in the data showing HNF4A activated 40 intestinal genes (C61) vs FOXA1's weak intestinal enrichment (C59). This functional distinction is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C28",
+      "C128",
+      "C130",
+      "C131"
+    ],
+    "result": "The experimental system used doxycycline-inducible lentiviruses to express FOXA1 and HNF4A in K562 cells at MOI=1. Optimal induction conditions were 0.5 \u00b5g/ml doxycycline for 24 hours, resulting in ~1000-fold TF induction. K562 cells express neither FOXA1 nor HNF4A endogenously, ensuring observed effects are due to ectopic TF expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C40-C41, C28, C128, C130-C131 describe the experimental design and are supported by qPCR data (Figure 1\u2014figure supplement 1) and RNA-seq data confirming absence of endogenous FOXA1/HNF4A expression (C62, C128). The rationale for using MOI=1 to limit nonspecific effects (C38) and focusing on 24-hour timepoint to capture primary effects (C131) is sound. The experimental design is well-justified and rigorously characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors hypothesize that HNF4A was misclassified as a non-PF due to developmental timing (FOXA1 precedes HNF4A in hepatic development) and indirect assays of pioneer activity. They suggest sequential activity may be necessary during development, but both TFs are sufficient to independently activate silent genes in ectopic contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 reconcile the experimental findings with prior literature. The hypothesis that HNF4A was misclassified (C111) is supported by the demonstration that HNF4A displays pioneer activity given appropriate sequence context (C110, based on C29-C31, C73). The distinction between developmental necessity and sufficiency in ectopic contexts (C114) is a reasonable interpretation. Citation to developmental timing (C112) provides context. This represents thoughtful discussion of how findings relate to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors hypothesize their findings may extend to other reprogramming cocktails, noting that MyoD alone can reprogram fibroblasts to myoblasts and that single TFs can drive reprogramming. They suggest titrating HNF4A activity could improve liver-specific reprogramming by reducing intestinal gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C117, C119-C120 are speculative extensions of the findings. While C116-C117 cite relevant prior work on MyoD and single-TF reprogramming, the generalization to other systems (C115) lacks direct experimental support. The suggestion about titrating HNF4A (C119) is reasonable given C118 (HNF4A activates more intestinal genes) but remains untested. These represent plausible future directions but are not directly supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Not all sites with multiple motifs were pioneered in K562 cells, indicating that sequence context (including motif positioning in nucleosomes and presence of cofactor motifs) plays an important role in determining pioneer activity. Prior work shows nucleosome positioning affects GAL4, TP53, and OCT4 binding, and certain heterochromatic states are 'pioneer resistant'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 acknowledge limitations of the motif-counting model and cite extensive prior literature (C123-C126) showing that sequence context, nucleosome positioning, and chromatin state affect TF binding. Claim C121 is supported by the observation that motif content alone doesn't perfectly predict binding (ROC AUC <100%). This represents appropriate discussion of complexity beyond the proposed affinity model and is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C12",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27"
+    ],
+    "result": "Prior literature shows that TFs face steric hindrance from nucleosomes, PFs bind only a limited subset of inaccessible motifs, some chromatin states prohibit PF binding, FOXA1 sometimes requires help from other TFs, and the bacterial protein LexA can pioneer mammalian chromatin\u2014all challenging aspects of the PFH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C22-C25, C27 accurately summarize prior literature with appropriate citations. These claims establish the context and motivation for the study by identifying inconsistencies in the PFH. The citations are to peer-reviewed publications and the characterizations appear accurate. This background appropriately frames the research question.",
+    "result_type": "MINOR"
+  }
+]

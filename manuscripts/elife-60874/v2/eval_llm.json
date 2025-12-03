@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Regulation significantly affected behavioral responses in food choice. Subjects accepted foods less often in DECREASE compared to NATURAL and HEALTH conditions, while response times were slower in both HEALTH and DECREASE compared to NATURAL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 provide clear statistical evidence (p<0.001 for acceptance rates, p=0.004 for response times) demonstrating that regulatory instructions altered both choice outcomes and decision speed. The effects are well-documented with appropriate statistical tests and show expected patterns of behavioral regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Drift-diffusion modeling revealed that both regulatory strategies (HEALTH and DECREASE) decreased the weight on tastiness, while HEALTH specifically increased the weight on healthiness. DECREASE resulted in a non-specific decrease in value constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 present a coherent pattern of model parameter changes with strong statistical support (all p<0.001). The differential effects on tastiness vs. healthiness weights across conditions provide mechanistic insight into how regulation operates. Model validation (C92) confirms good fit to data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Regulation affected decision threshold and non-decision time but not starting point bias, suggesting effects occur during post-stimulus processing rather than pre-stimulus preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 show systematic effects on DDM parameters beyond drift rate, with appropriate statistical tests. The lack of starting point bias effects (C17) provides important evidence about the timing of regulatory effects. Results are internally consistent and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Model simulations predicted distinct temporal dynamics for attribute construction versus evidence accumulation signals. Attribute signals peaked earlier (516-570 ms) than evidence accumulation signals (630-660 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 present model-based predictions with strong statistical support (p<0.001) showing temporal separation between attribute construction and evidence accumulation. These predictions provide testable hypotheses for interpreting neural data, though they rely on model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Fronto-central ERPs correlated with tastiness in the NATURAL condition and matched the predicted time course of taste attribute construction better than evidence accumulation. This ERP signal was not modulated by regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide convergent evidence linking ERPs to attribute construction rather than evidence accumulation, with strong correlations (r=0.89 for taste-AC vs r=0.77 for taste-EA, z=2.55, p=0.005). The lack of regulation effects (C24, C27) is important but limits the functional interpretation of this signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "An exploratory analysis revealed early ERPs (200-400 ms) in occipital channels correlated with healthiness in the HEALTH condition, but this signal did not correlate with behavioral regulation success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C29 describe an exploratory finding that was not predicted by the model. While statistically significant (p=0.007), the lack of correlation with behavioral changes (C29) and the post-hoc nature of the analysis limit confidence in its functional significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Alpha power suppression in frontal and parietal-occipital channels correlated with tastiness only in the NATURAL condition (500-1000 ms post-food), was disrupted during regulation, matched the predicted time course of evidence accumulation better than attribute construction, and predicted individual differences in successful down-regulation of tastiness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 provide strong convergent evidence linking alpha suppression to evidence accumulation of tastiness. The signal shows regulation-dependent modulation (C31-C32), matches EA predictions better than AC predictions (C34: z=4.09, p<0.001), and correlates with behavioral regulation success (C33: r=-0.28 to -0.29, p\u22640.05). This is a key finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Follow-up analyses of alpha signals showed response-time dependent dynamics consistent with evidence accumulation, including build-up to response in both fast and slow trials, though signals did not always reach a fixed bound, suggesting an intermediate stage of value-based evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 provide additional validation of the alpha-EA relationship through response-locked analyses. The findings are consistent with evidence accumulation (C37) but the lack of a clear fixed bound (C39) appropriately qualifies the interpretation (C40). The analyses strengthen confidence in the main result while acknowledging complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In the HEALTH condition, alpha power in frontal and parietal-occipital channels was negatively correlated with healthiness (500-1000 ms), matched the predicted time course of health-related evidence accumulation, but did not correlate with individual differences in healthiness weight changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 show alpha correlates of healthiness with strong model correspondence (r=-0.95 for health-EA, z=4.17, p<0.001). However, the lack of correlation with behavioral changes (C45) and weaker condition-specificity (C44) suggest this signal may be less robust or functionally important than the tastiness correlate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Theta power in occipital and frontal areas positively correlated with tastiness early in the trial (200-500 ms) specifically during regulation conditions, predicted greater decreases in tastiness weight, and was negatively correlated with alpha-correlate changes in DECREASE but not HEALTH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe a novel theta signal that appears during regulation, predicts behavioral success (C49: r=-0.29 to -0.36, p\u22640.04), and shows an inverse relationship with alpha changes (C50: r=0.43, p<0.001). While C48 is speculative, the overall pattern provides strong evidence for a regulatory control mechanism. The differential correlation pattern between DECREASE and HEALTH (C52) adds complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Overall, ERPs correlated with attribute construction without regulation modulation, alpha suppression correlated with evidence accumulation and tracked goal-relevant attributes, and theta power represented a regulatory control mechanism, together illuminating how regulation modifies attribute representation during evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 synthesize the main findings into a coherent framework. The distinct functional roles of ERPs, alpha, and theta are well-supported by the preceding analyses. This represents the core contribution of the paper, integrating computational modeling with neural dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study failed to replicate previous findings of gamma (46-64 Hz) signatures of value-based evidence accumulation, finding no significant gamma power increase in either food-locked or response-locked analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 clearly document a non-replication with appropriate analyses. C75 offers speculation about task differences but this remains untested. The non-replication is important to report but the lack of gamma findings doesn't undermine the main alpha/theta results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "While low-beta (18-20 Hz) power suppression was observed, only alpha suppression fully matched single-trial value-based predictions of the drift-diffusion model for evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 provide appropriate comparison with prior work and justify focus on alpha. The observation of beta suppression (C77) with weaker model correspondence (C78) helps validate the specificity of alpha findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study concludes that regulation reduces tastiness influence not by disrupting early attribute representations but through theta-mediated disruption of tastiness incorporation into alpha-related evidence accumulation, with alpha suppression serving as a signature of attribute integration into evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 present the main conclusions, which are well-supported by the convergent evidence from behavioral, modeling, ERP, alpha, and theta analyses. The mechanistic account is appropriately qualified and represents a significant advance in understanding dietary self-regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study recruited 66 participants, excluded 16 based on pre-registered criteria or technical issues, resulting in a final sample of 50 subjects (30 females, age 17-31) who fasted for 3 hours before the experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 document appropriate sample size determination, pre-registered exclusion criteria, and experimental controls. The final sample size of 50 meets the pre-registered target and provides adequate power for the main analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The experiment used a three-task design (pre-rating, choice, post-rating) with 64-channel EEG recorded at 512 Hz and referenced to averaged mastoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 describe standard experimental and recording procedures appropriate for the research questions. The methods are clearly documented and follow established practices in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The drift-diffusion model included six parameters per condition and was fit using hierarchical Bayesian estimation (HDDM), with model validation showing good correspondence between simulated and observed response times (r=0.46, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 document appropriate computational modeling procedures. The model validation (C92) provides important evidence that the model captures key aspects of the data, supporting the use of model-derived predictions for interpreting neural signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The introduction establishes theoretical background from prior work on value-based decision making, evidence accumulation, self-regulation, and EEG correlates of these processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 accurately summarize relevant prior work with appropriate citations. These claims establish the theoretical foundation and motivation for the current study. The characterizations of prior work appear accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The discussion interprets alpha suppression findings in the context of established literature on alpha oscillations reflecting release from inhibition, cortical excitability, and evidence accumulation in perceptual decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 accurately characterize prior work on alpha oscillations with appropriate citations. C61 offers reasonable speculation about mechanisms linking alpha to approach behavior, though this remains to be tested. The interpretation is well-grounded in existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The discussion interprets theta findings in the context of literature on frontal theta reflecting cognitive control and posterior theta reflecting memory encoding, speculating that the observed theta-correlate represents an inhibitory control mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 accurately summarize relevant theta literature with appropriate citations. C67 offers reasonable speculation about the functional role of the observed theta signal, appropriately qualified as speculative. The interpretation is consistent with the data pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The discussion compares findings to prior EEG work on value-based decision making, noting this is the first report of functional differentiation between ERP and oscillatory signals in value-based choice and speculating about relationships to prior findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 make appropriate comparisons to prior work and claim novelty that appears justified. C70-C72 offer reasonable speculation about relationships to prior findings (Harris et al., 2013), appropriately qualified given methodological differences. The novelty claim appears warranted.",
+    "result_type": "MINOR"
+  }
+]

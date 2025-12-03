@@ -1,0 +1,1687 @@
+{
+  "submission": {
+    "id": "aa0979ae-1dcb-4dc8-81bf-dfa1523a5423",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:06:54.512110Z",
+    "updated_at": "2025-12-03T12:06:54.512110Z"
+  },
+  "content": [
+    {
+      "id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "submission_id": "aa0979ae-1dcb-4dc8-81bf-dfa1523a5423",
+      "content_type": "manuscript",
+      "content_text": "# Parent-of-origin effects propagate through networks to shape metabolic traits\n\n## Authors\n\n- Juan F Macias-Velasco<sup>1</sup> ([ORCID: 0000-0003-2827-4647](https://orcid.org/0000-0003-2827-4647))\n- Celine L St Pierre<sup>1</sup> ([ORCID: 0000-0001-5465-6601](https://orcid.org/0000-0001-5465-6601))\n- Jessica P Wayhart<sup>1</sup>\n- Li Yin<sup>2</sup>\n- Larry Spears<sup>2</sup>\n- Mario A Miranda<sup>1</sup>\n- Caryn Carson<sup>1</sup>\n- Katsuhiko Funai<sup>3</sup>\n- James M Cheverud<sup>4</sup>\n- Clay F Semenkovich<sup>2</sup> ([ORCID: 0000-0003-1163-1871](https://orcid.org/0000-0003-1163-1871))\n- Heather A Lawson<sup>1</sup> ([ORCID: 0000-0002-3550-5485](https://orcid.org/0000-0002-3550-5485)) \u2020\n\n### Affiliations\n\n1. Department of Genetics, Washington University School of Medicine Saint Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n2. Department of Medicine, Washington University School of Medicine Saint Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))\n3. Diabetes and Metabolism Research Center, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))\n4. Department of Biology, Loyola University Chicago United States ([ROR:04b6x2g63](https://ror.org/04b6x2g63))\n\n\u2020 Corresponding author\n\n## Abstract\n\nParent-of-origin effects are unexpectedly common in complex traits, including metabolic and neurological traits. Parent-of-origin effects can be modified by the environment, but the architecture of these gene-by-environmental effects on phenotypes remains to be unraveled. Previously, quantitative trait loci (QTL) showing context-specific parent-of-origin effects on metabolic traits were mapped in the F16 generation of an advanced intercross between LG/J and SM/J inbred mice. However, these QTL were not enriched for known imprinted genes, suggesting another mechanism is needed to explain these parent-of-origin effects phenomena. We propose that non-imprinted genes can generate complex parent-of-origin effects on metabolic traits through interactions with imprinted genes. Here, we employ data from mouse populations at different levels of intercrossing (F0, F1, F2, F16) of the LG/J and SM/J inbred mouse lines to test this hypothesis. Using multiple populations and incorporating genetic, genomic, and physiological data, we leverage orthogonal evidence to identify networks of genes through which parent-of-origin effects propagate. We identify a network comprised of three imprinted and six non-imprinted genes that show parent-of-origin effects. This epistatic network forms a nutritional responsive pathway and the genes comprising it jointly serve cellular functions associated with growth. We focus on two genes, Nnat and F2r, whose interaction associates with serum glucose levels across generations in high-fat-fed females. Single-cell RNAseq reveals that Nnat expression increases and F2r expression decreases in pre-adipocytes along an adipogenic trajectory, a result that is consistent with our observations in bulk white adipose tissue.\n\n## Introduction\n\nParent-of-origin effects, where the phenotypic effect of an allele depends on whether the allele is inherited maternally or paternally, are epigenetic phenomena associated with a wide range of complex traits and diseases (Lawson et al., 2013). Thus, the functional impact of a specific genetic variant can depend on its parental origin. The best characterized parent-of-origin effect is genomic imprinting, an epigenetic process in which either the maternally or paternally inherited allele is silenced, typically through DNA methylation. In humans, there are 107 verified imprinted genes and in mice there are 124, of which ~ 70% overlap (Jirtle, 2012). Despite the rarity of imprinted genes, parent-of-origin effects on complex traits and diseases are relatively common, suggesting that canonical imprinting mechanisms are not sufficient to account for these phenomena (Mozaffari et al., 2019; Zeng et al., 2019). With so few imprinted genes, what mechanisms underlie these parent-of-origin effects? We hypothesize that a small number of imprinted genes can generate a large number of parent-of-origin effects through interactions with non-imprinted genes.\n\nIn this study, we use four populations at different levels of intercrossing of the LG/J and SM/J inbred mouse lines to test the hypothesis that non-imprinted genes can contribute to parent-of-origin effects on metabolic phenotypes through epistatic interactions with imprinted genes. Multiple populations (F0, F1, F2, F16) allow us to refine our search space and provide orthogonal evidence supporting putative networks of interacting genes. Metabolic traits were previously mapped in a F16 generation of an advanced intercross between LG/J and SM/J (Cheverud et al., 2011; Lawson et al., 2010; Lawson et al., 2011a; Lawson et al., 2011b). We generated visceral white adipose tissue gene expression profiles from 20 week-old F1 animals in order to match the age of the F16 LG/J x SM/J advanced intercross population. F1 reciprocal cross (LxS and SxL) mice were subjected to the same high and low-fat diets and phenotyping protocols as the previously-studied F16 mice to keep environmental contexts consistent. We identified genes showing parent-of-origin-dependent allele-specific expression (ASE), characterized interactions among these genes and biallelic genes that are differentially expressed by reciprocal cross (DE), and correlated interacting ASE and DE gene pairs with metabolic phenotypes in the F1 population. Pairs that significantly associated with phenotypic variation were tested for epistasis on correlated traits in the F16 population.\n\nWe identified an epistatic network that forms a nutritional environment responsive pathway mediated through calcium signaling. This network contributes to metabolic variation by balancing proliferation, differentiation, and apoptosis in adipocytes. The genes comprising this network jointly serve functions associated with growth in multiple tissues, which is consistent with the evolutionary hypothesis that sexual conflict underlies some parent-of-origin effects (Mochizuki et al., 1996). We focus on two key interacting genes: Nnat (neuronatin), a canonically imprinted gene, and F2r (coagulation factor II receptor), a biallelic gene showing significant DE by cross in F1 high-fat-fed female animals. Co-expression of these two genes associates with variation in basal glucose levels, and this association persists across generations. Further, single-cell RNAseq reveals that Nnat expression increases and F2r expression decreases in pre-adipocytes along an adipogenic trajectory, a pattern consistent both with their expression in bulk white adipose tissue and with their respective roles in adipogenesis. Our results demonstrate that incorporating orthogonal lines of evidence including genotype, allele specific expression, total gene expression, single-cell expression, and phenotype from different populations varying in their degree of intercrossing is a powerful way to identify putative mechanisms and test hypotheses underlying parent-of-origin effects on phenotype.\n\n## Results\n\n### Non-imprinted genes interact with imprinted genes and effect metabolic phenotypes\n\nWe test the hypothesis that non-imprinted genes can mediate complex parent-of-origin effects on phenotypes through genetic interactions with imprinted genes using a F1 reciprocal cross model of the LG/J and SM/J inbred mice (LxS and SxL). In this model the effects of parental origin on an allele can be tested directly and isolated from sequence dependent cis-regulatory differences. We validated our findings in LG/J and SM/J parentals (F0) as well as in F2 and F16 intercrosses of LGxSM (Figure 1). The parental F0 animals serve to anchor variation in allele-specific expression that is a function of allelic identity (L or S). Incorporating the F2 and F16 populations into our validations ensures that the interactions we observe are not solely a function of linkage in the F1 animals. We generated mRNA expression profiles in white adipose tissue from 20-week-old F1 reciprocal cross animals. These animals were subjected to the same high and low-fat diets and phenotyping protocols as the previously studied F16 animals (Cheverud et al., 2011; Lawson et al., 2011a, Lawson et al., 2010; Carson et al., 2020; Miranda et al., 2020). We identified two classes of genes: (1) imprinted genes and (2) non-imprinted genes with parent-of-origin effects on total expression.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig1-v2.jpg)\n\n**Figure 1.:** Parent-of-origin effects should be partitioned into cis mechanisms and trans mechanisms (A) An example of a cis parent-of-origin effect is a system with three regulatory elements: promoter, insulator, and enhancer. Activation of transcription requires the enhancer to act upon the promoter. Enhancer activity is blocked by the insulator when it has been bound by CTCF. CTCF cannot be bound when methylated. In this system, the insulator is selectively methylated when inherited maternally, so methylation of the maternally inherited insulator blocks CTCF binding, allowing the enhancer to activate transcription. Because the paternally inherited insulator is not methylated, it is bound by CTCF which blocks enhancer activity, silencing transcription. This canonical genomic imprinting mechanism interacts with genetic variation in the three regulatory features. For example, if one allele produces stronger enhancer activity (Alt) than the other, individuals inheriting the Alt allele maternally would have elevated expression compared to those that inherit the same allele paternally. These cis genetic effects do not occur in isolation. Due to the highly interconnected nature of biological systems, there are downstream effects. We refer to these as trans parent-of-origin effects. (B) An example of a trans parent-of-origin effect is a system with two genes each having its own promoter. The first gene is canonically imprinted, and the activity of the gene promoter is blocked by DNA methylation. The imprinted gene\u2019s promoter is methylated when inherited maternally. Consequently, the paternally inherited allele is almost exclusively expressed. As before, when genetic variation in a regulatory feature interacts with these epigenetic mechanisms, we see parent-of-origin effects on expression of the imprinted gene. In this example, the imprinted gene regulates expression of a non-imprinted gene. Despite the non-imprinted gene being agnostic to parental origin, its expression nonetheless depends on the parental origin of alleles at the imprinted locus. (C) Summary of our experimental design. Expression patterns of genes showing allele-specific expression (ASE) such as imprinted genes are shaped by parental genotypes and environment (e.g. nutrition). Downstream gene expression is a function of their genotype and the expression of upstream ASE genes. Altered parent-of-origin dependent total gene expression of ASE genes leads to differential expression of downstream genes varying only in allelic parent-of-origin (DE). Phenotype is most directly affected by expression of DE genes. Variation in DE gene expression leads to corresponding variation in phenotype. Mouse populations used to probe parts of this model are labeled F0 (inbred lines), F1 (reciprocal cross of inbred lines), F2 (intercross of F1 mice), and F16 (advanced intercross of inbred lines).\n\nTo test our model, we identified genes showing parent-of-origin dependent allele specific expression (ASE). We identified 23 genes showing significant ASE (Figure 2A; Supplementary file 1). Of these 23 genes, 17 are canonically imprinted genes, two are not reported as imprinted genes but are located in known imprinted domains, and four are novel. Next, we identified genes showing differential total expression between individuals varying only in allelic parent-of-origin (DE between reciprocal crosses, SxL vs LxS). We identified 33 genes that are significantly DE in at least one sex or dietary context (Figure 2A; Supplementary file 2). A larger set of genes show signatures of parent-of-origin effects at the total gene expression level, but do not meet the statistical rigor demanded by the massive multiple tests burden incurred by a genome-wide scan accounting for sex, diet, and parent-of-origin (see Materials and methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-v2.jpg)\n\n**Figure 2.:** (A) Mean parent-of-origin effect score across contexts. Effect size of ASE is calculated as the mean allelic bias (L / L + S) of SxL animals minus LxS animals. Effect size of DE is measured by log2(Fold Change) between LxS and SxL crosses. The single context with largest magnitude fold change is plotted for each gene. Dashed lines represent minimum acceptable effect size cut-offs within a context. Genes showing significant ASE and sufficiently large parent-of-origin effect score are shown in blue. Genes showing significant DE and sufficiently large fold change in some sex or dietary context are shown in lime. Genes showing both ASE and DE are shown in teal. Genes not meeting cut-offs are shown in gray. The two genes showing significant ASE but falling short of parent-of-origin effect score requirements are a case of context dependent bipolar parent-of-origin effect scores (i.e. paternally expressed in one context and maternally expressed in its opposite). (B) Parent-of-origin effect network constructed from ASE and DE gene pairs. (C) Significantly overrepresented ontologies after multiple tests correction in the parent-of-origin effect network. Terms are color coded by ontology domain. GO biological process (yellow), GO cellular component (orange), and Mammalian phenotype (purple). Circle size denotes the number of genes with each term. (D) Correlation of parent-of-origin effect network genes with metabolic traits. Only genes and phenotypes with at least one significant correlation after multiple test corrections are shown. The heatmap is broken up into subnetworks with the ASE gene as the first separated row followed by associated DE genes in subsequent rows. Columns correspond to metabolic traits. Coloration of each cell denotes the Pearson\u2019s correlation coefficient value.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Complexity was measured by fitting a beta-binomial distribution to the distribution of Lbias values. A representativeIn this study, we use four populations at distribution (A) of Lbias values (blue) and fit beta-binomial (orange). The shape parameters (\u03b1, \u03b2) of the beta-binomial distribution are used to calculate dispersion (\u03c1). Dispersion value less than 0.05 indicate sufficient complexity. One library was not sufficiently complex (B) and was removed from analyses.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** We isolated total RNA from white adipose (n = 32 per sex/diet/cross cohort) and constructed RNA-Seq libraries. Libraries were sequenced 1 sample per lane on an Illumina HiSeq 4000 (Illumina, San Diego, USA) using 2 \u00d7 100 bp PE reads. FASTQ files were filtered to remove low-quality reads. Remaining reads were aligned against both LG/J and SM/J pseudo-genomes simultaneously using STAR with either multimapping disallowed (allele-specific expression, ASE) or multimapping allowed (differential expression, DE). The stacked bars denotes the number of reads per million (left y-axis) and are color-coded by category (uniquely = yellow, multi-loci = green, too many = blue). For the ASE alignment, \u2018too many\u2019 reads are defined as n > 1 since multimapping was disallowed. For the DE alignment, \u2018multi-loci\u2019 reads are defined as 1 < n < 10 and \u2018too many\u2019 reads are defined as n > 10. The pink dots denote the primary alignment rates (right y-axis) for each library. Alignment rates are defined as (# reads mapped uniquely + # reads mapped multi-loci / total # input reads).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Context was permuted to generate an appropriate null model of p-values. Each iteration represents one genome wide permutation where every gene (7,869) was permuted separately, thus each iteration represents 7,869 separate shuffles. Null distribution stability was evaluated by calculating the critical value (in this case a significance estimate) for alpha = 0.05 at each iteration. The standard deviation of critical values was calculated after each iteration for the last 5 iterations. The model was considered stable once variation in critical values dropped below 1e-4 (red line). The variation in critical values of the null model approaches zero over ten genome wide iterations. This approximation towards zero demonstrates the stabilization of the null model. By 10 genome wide shuffles the critical value fluctuates <1e-4 units per iteration in the most complex model, meaning that at false discovery rate estimates might vary by \u00b11e-4.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Multiple tests correction was performed by estimating the false discovery rate using a permuted null model of p-values. Context was permuted to generate an appropriate null model of p-values. The distribution of permuted (orange) and real (blue) p-values is shown for each term in the model in the top left of each subplot. False discovery rate was estimated as the proportion of tests below a given significant threshold under the null relative to the real data (Null/Real). A ratio of 1 meaning that ~100% of observations at that significance threshold are likely false discoveries. The relationship between false discovery rate and p-value threshold is shown in the top right subplot for each mode. The number of significant tests at a given acceptable false discovery rate is shown as the bottom left subplot for each model. The number of false positives relative to the number of significant tests is shown as the bottom right subplot for each model.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Log10 transformed FDR plotted against POE score [ mean SxL Lbias \u2013 mean LxS Lbias ] for each context. Genes passing both POE score and significance thresholds are shown in orange. Genes failing to meet these criteria are shown in gray.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Multiple tests correction was performed by estimating the false discovery rate using the \u2018qvalue\u2019 R package without the generation of a permuted null model. The underlying null model is selected by the model by controlling $\\pi_{0}^$. False discovery rate (q-value) is estimated as the proportion of tests below a given significant threshold derived from the estimated null model relative to the real model (Null/Real). A ratio of 1 meaning that ~100% of observations at that significance threshold are likely false discoveries. The selection of $\\pi_{0}^$ is shown in the top left of each subplot for each model. The relationship between false discovery rate and p-value threshold is shown in the bottom left subplot for each mode. The number of significant tests at a given acceptable false discovery rate is shown as the top right subplot for each model. The number of false positives relative to the number of significant tests is shown as the bottom right subplot for each model.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Log10 transformed FDR plotted against log2 transformed fold change for each context. The FDR threshold we used was 0.1 (red line).\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** Context and expression were permuted to generate an appropriate null distribution of p-values. Significance for each pair was estimate by likelihood ratio test using a chi-squared approximation. Null distribution stability was evaluated by calculating the critical value (in this case a significance estimate) for alpha = 0.05 at each iteration. The standard deviation of critical values was calculated after each iteration for the last 5 iterations. The model was considered stable once variation in critical values dropped below 1e-4 (red line). The variation in critical values under the null model approaches zero over 100 iterations. By 500 shuffles the critical value fluctuates well below 1e-4 units per iteration in the most complex model, meaning that at worst FDR estimates would vary by well below \u00b11e-4.\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp9-v2.jpg)\n\n**Figure 2\u2014figure supplement 9.:** Multiple tests correction was performed by estimating the false discovery rate using a permuted null model of p-values. The distribution of permuted (orange) and real (blue) p-values is shown (A). False discovery rate was estimated as the proportion of tests below a given significant threshold under the null relative to the real data (Null/Real). A ratio of 1 meaning that ~100% of observations at that significance threshold are likely false discoveries. The relationship between false discovery rate and p-value threshold is shown (B). The number of significant tests at a given acceptable false discovery rate is shown (C). The number of false positives relative to the number of significant tests is shown (D).\n\n![Figure 2\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp10-v2.jpg)\n\n**Figure 2\u2014figure supplement 10.:** Log10 transformed FDR is plotted against log10 transformed mean test error (MTE). The FDR threshold value of 0.1 is shown as the red line. The MTE threshold was set to the upper 1th percentile of the permuted model MTE and is show as the gray vertical line. Each gene is represented by a single point. Coloration of points is determined by the joint FDR/MTE density.\n\n![Figure 2\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp11-v2.jpg)\n\n**Figure 2\u2014figure supplement 11.:** In order to meet the assumptions of normality required by Pearson\u2019s correlation test, non-normally distributed phenotypes were log transformed. Normality was evaluated by Shapiro-Wilkes test (p < 0.05 indicates non-normality). Serum insulin is one such phenotype. The probability distribution of serum insulin is shown before (A) and after transformation (B). This distribution is also compared to a normal distribution via quantile-quantile plot before (C) and after (D) transformation.\n\n![Figure 2\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp12-v2.jpg)\n\n**Figure 2\u2014figure supplement 12.:** Multiple tests correction was performed by estimating the false discovery rate using the \u2018qvalue\u2019 R package without generating a permuted null model. The underlying null model is selected by controlling $\\pi_{0}^$ . False discovery rate (q-value) is estimated as the proportion of tests below a given significant threshold derived from the estimated null model relative to the real model (Null/Real). A ratio of 1 meaning that ~100% of observations at that significance threshold are likely false discoveries. Selecting $\\pi_{0}^$ (A) allows us to determine the relationship between false discovery rate and p-value threshold (C). Using this relationship, we can determine the number of significant tests at a given acceptable false discovery rate (B). From this we can determine the number of false positives relative to the number of significant tests (D).\n\n![Figure 2\u2014figure supplement 13.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig2-figsupp13-v2.jpg)\n\n**Figure 2\u2014figure supplement 13.:** Log10 transformed FDR plotted against Pearson\u2019s correlation coefficient. Each dot represents a phenotype/gene pair. The FDR threshold was set to 0.1 (red line). The correlation coefficient threshold was set to |0.5| (blue line).\n\nTo identify interactions between gene sets, we constructed a network comprised of genes that could initiate a parent-of-origin effect on phenotype (ASE) and genes that may mediate the effect onto phenotype (DE). Interacting gene pairs were predicted by modeling the expression of biallelic genes that are significantly DE by reciprocal cross as a function of the expression of genes showing significant parent-of-origin-dependent ASE, their allelic bias (Lbias), diet, sex, and the diet-by-sex interaction. Genes showing parent-of-origin effects form a highly interconnected network comprised of 52 genes forming 217 gene pairs (Figure 2B)(Supplementary file 3). Most of these interactions are trans-chromosomal. We identified two genes that could serve as initiation points of propagating parent-of-origin effects through this network. These two genes, Nnat (neuronatin) and Cdkn1c (cyclin dependent kinase inhibitor 1 C), are both canonically imprinted and differentially expressed by reciprocal cross (Supplementary file 1).\n\nFunctional over representation analysis was performed and seven terms were significantly overrepresented at an FDR \u2264 0.05 (Figure 2C; Zhang et al., 2005). Enriched terms suggest this network plays a role in signaling and genetic imprinting (Supplementary file 4). In order to identify which phenotypes might be affected by genes in this network, gene expression was correlated with metabolic phenotypes collected for the F1 animals (Figure 2D). Seventy-four ASE/DE/phenotype sets were identified as candidates for subsequent testing (Supplementary file 5).\n\n### Epistasis in an F16 advanced intercross identifies a diet-responsive network affecting adipogenesis\n\nTo validate the interactions we identified in F1 animals, we tested for imprinting-by-imprinting epistasis in an F16 population. Imprinting-by-imprinting epistasis occurs when the parent-of-origin effect at a locus is dependent on the parent-of-origin of alleles at another locus. This allowed us to determine if the effect of parent-of-origin at DE genotype on phenotype is dependent upon the parent-of-origin at ASE genotype. This orthogonal approach allows us to connect genotype at these loci to phenotype as predicted in the F1 candidates. Nine epistatic interactions replicated in the F16 population (n = 1002 animals, FDR \u2264 0.1; Figure 3A; Supplementary file 6). These interactions were comprised of three ASE genes showing parent-of-origin (Cdknlc, Nnat, Plcd1), six genes that are DE by cross (Car3, F2r, Hexb, Hmger, Srgn, Tnfrsf11a) and four phenotypes (basal glucose level, AUC calculated from a glucose tolerance test, serum cholesterol, necropsy weight). Together, these nine genes form a putative diet-responsive network affecting adipogenesis (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig3-v2.jpg)\n\n**Figure 3.:** (A) There are nine significant imprinting-by-imprinting epistatic ASE/DE/phenotype sets in the F16 advanced intercross population (n = 1002). Interactions are shown as lines connecting ASE (yellow) and DE genes (purple). Chromosome number is shown around the plot. (B) The epistatic parent-of-origin effect network is comprised of key steps in a putative pathway regulating differentiation and survival of adipocytes. This pathway was constructed by incorporating previously published cellular functions. The pathway members are color coded in blue for ASE genes (Plcd1, Nnat, and Cdkn1c) and green for DE genes (F2r, Hexb, Hmgcr, Car3, Tnfrsf11a, and Srgn). The network breaks down into potentiation, transduction, and response. Nnat and Hexb potentiate signaling by managing availability and accumulation of calcium necessary for signal transduction. Once a signal is received, F2r and Plcd1 transduce it by activating second messengers to initiate a response. This response initiates an adipogenesis cellular program that affects expression of Cdkn1c, Hmgcr, Car3, Tnfrsf11a, and Srgn.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** In order to meet the assumptions of normality required by ANOVAs, non-normally distributed phenotypes were log transformed and residualized to remove the effects of sex and diet. Normality was evaluated by Shapiro-Wilkes test (p < 0.05 indicates non-normality). Serum insulin is one such phenotype. The probability distribution of serum insulin is shown before (A) and after transformation (B). This distribution is also compared to a normal distribution via quantile-quantile plot before (C) and after (D) transformation. The removal of sex and diet effects on serum insulin are shown (E) for high-fat males (dark blue), low-fat males (light blue), high-fat females (dark red), low-fat-fed females (light red).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Imprinting scores were permuted to generate an appropriate null model p-value. Null distribution stability was evaluated by calculating the total quantile deviation (TQD) at each iteration. The TQD of F-statistics under the null model approaches zero over 600 iterations.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Multiple test corrections was performed on each phenotype individually. Here were show this for the GTT area under the curve at 10 weeks phenotype using both all markers within 1.5 Mb (A\u2013D) and only the nearest marker (E\u2013H). Multiple tests correction was performed by estimating the false discovery rate using a permuted null model of p-values. Imprinting scores were permuted to generate an appropriate null model p-values. The distribution of permuted (orange) and real (blue) p-values is shown (A and E). False discovery rate was estimated as the proportion of tests below a given significant threshold under the null relative to the real data (Null/Real). A ratio of 1 meaning that ~100% of observations at that significance threshold are likely false discoveries. The relationship between false discovery rate and p-value threshold is shown (B and F). The number of significant tests at a given acceptable false discovery rate is shown (C and G). The number of false positives relative to the number of significant tests is shown (D and H).\n\nThe network can be broken down into signal potentiation, transduction, and response. Nnat (neuronatin) and Hexb (beta-hexosaminidase subunit beta) fall into the potentiation group. These genes play a role in managing the availability and accumulation of calcium necessary for signal transduction. Nnat is a paternally expressed canonically imprinted gene which encodes a proteolipid protein that localizes to the ER (Li et al., 2010). Nnat is diet-responsive and its overexpression in 3T3L1 pre-adipocytes promotes adipogenesis through increased free cytosolic calcium (Young et al., 2005). In pre-neural stem cells, Nnat binds sarco/endoplasmic reticulum Ca2+-ATPase (SERCA) to block Ca2+ uptake into the ER thereby increasing cytosolic Ca2+ levels (Lin et al., 2010). In addition to Nnat, Hexb regulates the uptake and accumulation of Ca2+ in the ER via SERCA (Pelled et al., 2003). Upon the arrival of a signal, F2r (coagulation factor II receptor) and Plcd1 (1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase delta-1) in the transduction group initiate the adipogenesis cellular program. F2r is a G-protein-bound receptor that promotes phosphoinositide hydrolysis (Soh et al., 2010). Variation in the human F2R gene is associated with obesity (Kichaev et al., 2019). G-protein-coupled receptors transmit external signals into the cell where they are then propagated by secondary messenger systems, one of which is mediated by Plcd1 (Nakamura et al., 2005; McDonald and Mamrack, 1995). The downstream effect of Plcd1-mediated signaling is the efflux of calcium into the cytosol from the ER, thereby increasing cytosolic Ca2+ levels (Thatcher, 2010; Berridge, 2016). Increased cytosolic Ca2+ in pre-adipocytes promotes phosphorylation of cAMP-response element-binding protein (CREB), which promotes activity of CCAAT/enhancer-binding protein (C/EBP) transcription factors, activating adipogenesis, altering the expression of Cdkn1c (cyclin dependent kinase inhibitor 1 C), Hmgcr (3-hydroxy-3-methylglutaryl-CoA reductase), Car3 (carbonic anhydrase 3), Tnfrsf11a (TNF receptor superfamily member 11 a), and Srgn (serglycin).\n\nCdkn1c is a canonically imprinted maternally expressed gene that inhibits cell proliferation (Kang et al., 2008). Increased expression of Cdkn1c is protective against diet-induced obesity in mice (Van de Pette et al., 2018), and in humans increased caloric intake results in decreased CDKN1C expression (Franck et al., 2011). Hmgcr is the rate-limiting enzyme in cholesterol biosynthesis (Burg and Espenshade, 2011; Jo and Debose-Boyd, 2010) and converts HMG-CoA into mevalonate, which is essential for adipocyte survival (Yeh et al., 2018). Srgn is an adipocytokine thought to be part of a feedback loop with Tnf\u03b1 (tumor necrosis factor alpha), mediating paracrine cross-talk between macrophages and adipocytes (Lemire et al., 2007; Imoto-Tsubakimoto et al., 2013; Schick et al., 2001; Zernichow et al., 2006). Srgn is known to play a role in osteoblast-mediated bone mineralization (Bigdeli et al., 2010), which along with osteoclast-driven bone deconstruction drives bone remodeling (Aubin, 1992). Osteoblasts share a lineage with adipocytes, and the quantity of osteoblasts is inversely proportional to that of marrow adipose tissue (Rodr\u00edguez et al., 2008; Prockop, 1997; Ali et al., 2005; Akune et al., 2004; Cho et al., 2011; Rosen and Bouxsein, 2006; Turner et al., 2018). Tnfrsf11a is a cell surface protein that regulates differentiation of osteoclasts (Nakagawa et al., 1998). Osteoprotegerin (OPG) is a decoy receptor for TNFRSF11A thereby inhibiting osteoclastogenesis and bone resorption (Matsuo et al., 2020). OPG is expressed during differentiation of 3T3L1 adipocytes (An et al., 2007). Expression of OPG is induced by Tnf\u03b1 in 3T3L1 adipocytes and is associated with obesity in humans (Holecki et al., 2007; Erol et al., 2016; Zaky et al., 2022).\n\nThe exact function of OPG/Tnfrsf11a outside of osteoclastogenesis is unknown, but the function of osteoclasts is to break down bone tissue during bone resorption. Bone resorption regulates the level of blood calcium. The bioavailability of calcium in the blood potentially alters ER calcium stores, creating cross-talk between bone cells and white adipose tissue calcium signaling. Osteoclasts break down bone by acidifying mineralized bone, orchestrated by osteoblasts that have become embedded in the matrix they produce (osteocytes). Oxidative stress on osteocytes from the bone acidification process is prevented by Car3. Car3 is an enzyme that catalyzes the conversion of carbonic acid to CO2 and water. Its expression in white adipose is negatively correlated with, and responsive to, long-term obesity in mice and humans (Stanton et al., 1991; Font-Clos et al., 2017). Car3 does not protect against diet-induced obesity and is not necessary for fatty acid synthesis (Renner et al., 2017). As such its exact function in adipocytes is unknown.\n\n### Nnat and F2r covary in white adipose tissue and their interaction associates with variation in basal glucose levels across generations\n\nTo better understand how these interactions affect phenotype, we focused on the negative correlation of the imprinted gene, Nnat, and the biallelic gene, F2r, in the above network in high fat-fed females, the cohort with the most significant covariation in the F1 animals (FDR = 0.05). Nnat and F2r show significant imprinting-by-imprinting epistasis for basal glucose levels in the F16 population (FDR = 6.00e\u201316; Figure 4A and B). To validate gene expression patterns, we combined F1 biological replicates and F0 high fat-fed female animals (F1 n = 13 and F0 n = 12) and again observe that F2r and Nnat are each significantly differentially expressed between reciprocal heterozygotes, that is by cross (Figure 4C and D). Further, the co-expression of Nnat and F2r also persists in the F0/F1 population (Figure 4E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig4-v2.jpg)\n\n**Figure 4.:** (A) Breeding scheme for the F16 Advanced Intercross between the LG/J and SM/J inbred strains. (B) Significant imprinting-by-imprinting epistasis associated with variation in basal glucose (n = 1002). The parent-of-origin effects of F2r on basal glucose depend on the parent-of-origin effects at Nnat. (C) Expression of Nnat across genotypes in a combined F0/F1 population of high fat-fed females (n = 25). (D) Expression of F2r across genotypes in a combined F0/F1 population of high-fat-fed females (n = 25). (E) Significant correlation between Nnat and F2r expression in the F0/F1 mice (F1 n = 13; F0 n = 12). (F) and (G) Correlations between basal glucose and Nnat and F2r in the F0/F1 mice (F1 n = 13; F0 n = 12). (H) Significant correlation between Nnat and F2r expression in the high fat-fed female F2 mice (n = 14). (I) and (J) Correlations between basal glucose and Nnat and F2r are not individually significant in the F2 mice. Alleles are ordered maternal | paternal within the genotype classes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** To determine whether the pattern of correlations is significantly different between F0/F1 and F2 populations bootstrapping was employed (N = 10, 5000 iterations). Pickets correspond to 90% confidence intervals, boxes correspond to 50% confidence intervals. Overlap of confidence intervals indicates no significant difference between populations. Correlation between F2r and Nnat expression is not significantly different (A). Correlation between Nnat and basal glucose is not significantly different (B). Correlation between F2r and basal glucose is not significantly different (C).\n\nA limitation of identifying covariation patterns in F1 and F0 populations is that all loci are linked. This makes it difficult to determine which ASE genes truly co-express with DE genes. While incorporation of orthogonal F16 genotypes and phenotypes helps reduce false discoveries, a population with randomized genetic background for which we have expression data is needed to replicate these results. To that end, F2 animals were generated and Nnat and F2r gene expression levels were measured via qPCR (n = 14). We found that F2r and Nnat are significantly co-expressed in high-fat-fed female F2 animals (Figure 4H).\n\nF2r expression significantly positively correlates with basal glucose levels in the RNA-sequenced high-fat-fed female F1 animals (r = 0.514, FDR = 0.01; Supplementary file 5). F2r expression is also significantly positively correlated with basal glucose in the combined F0/F1 population (Figure 4G). A negative trend between Nnat expression and basal glucose level is observed but not statistically significant in the combined F0/F1 animals (Figure 4F). Correlation of F2r\u2019s and Nnat\u2019s individual expression with basal glucose in F2 mice follows the same pattern as in the F0/F1\u2019s. Bootstrapping to calculate confidence intervals shows that the correlation differences between F0/F1 and F2 are not significant (Figure 4I and J; Figure 4\u2014figure supplement 1). However, the product of Nnat and F2r expression (Nnat x F2r) is significantly predictive of basal glucose (p = 0.045, R2 = 0.29). This indicates that expression of Nnat and F2r, as a function of their genotypes and allelic parent-of-origin, are not individually sufficient to explain variation in basal glucose levels. But together they are able to explain a significant amount of phenotypic variation. This is precisely what our epistatic model would predict.\n\nFinally, studying the F2 animals allows us to determine if maternal mitochondrial ancestry contributes significantly to Nnat or F2r expression or to variation in basal glucose. We find mitochondrial genome identity does not significantly covary with F2r expression (p = 0.198), Nnat expression (p = 0.365), or basal glucose (p = 0.388).\n\n### Single-cell RNAseq reveals that Nnat expression increases and F2r expression decreases in pre-adipocytes along an adipogenic trajectory\n\nTo determine what cell types express Nnat and F2r and whether the directionality of the Nnat imprinted \u2192 F2r target correlation persists along the adipogenic trajectory, we turned to single-cell RNAseq. We used publicly available scRNAseq data collected from stromal vascular cells isolated from C57BL/6 J epididymal adipose tissue (Burl et al., 2018). Cell type identity was assigned using previously reported markers for this data set (Adipoq = differentiating mesenchymal stem cells; Pdgfra = mesenchymal stem cells; Csf1r = macrophage; Cdh5 = vascular endothelial cells; Acta2 = vascular smooth muscle cells; Cd2 = B cells) (Supplementary file 7; Figure 5\u2014figure supplement 1). The adipogenic trajectory refers to cells transitioning from pre-adipocytes (mesenchymal stem cells) to cells differentiating into adipocytes. Clusters along this trajectory were identified by the opposing expression patterns of Pdgfra and Adipoq (Figure 5A-D and I). We found that Nnat expression increases along the trajectory while F2r expression decreases (Figure 5E\u2013F and H). Further there is a negative association between Nnat and F2r expression within adipocytes along the trajectory (Figure 5G). This pattern is consistent with the negative correlation we observe between Nnat and F2r in the bulk white adipose tissue. Because available scRNAseq data do not match the exact sex/ diet/ genetic background contexts of the LGxSM mice, there will be unaccounted for differences between the data sets. However, the observed consistent pattern indicates that the pathway structure persists across sex/ diet/ genetic backgrounds.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig5-v2.jpg)\n\n**Figure 5.:** (A) Adipoq is a marker of adipocytes whose expression (purple) increases along the trajectory. (B) Pdgfra is a marker of mesenchymal stem cells whose expression (pink) decreases along the trajectory. (C) Cells in clusters expressing one or both Adipoq and Pdgfra fall along an adipogenic trajectory. (D) Intensity of expression of Adipoq and Pdgfra indicated by coloration. (E) Nnat expression (blue) increases along the trajectory. (F) F2r expression (teal) decreases along the trajectory. (G) Negative association between Nnat and F2r expression within adipocytes along the trajectory. (H) Intensity of expression of Nnat and F2r indicated by coloration. (I) The adipogenic trajectory is broken into subclusters of cells with no Adipoq expression (cluster 0) to high Adipoq expression (cluster 2).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Expression of these markers is shown by coloration on UMAP plots for Adipoq = differentiating mesenchymal stem cells (A); Pdgfra = mesenchymal stem cells (B); Csf1r = macrophage(C); Cdh5 = vascular endothelial cells(D); Acta2 = vascular smooth muscle cells(E); Ptprc \u2013 T cells(F); Cd2 \u2013 B cells (G). Cell type identities were assigned by expression of these genes (H).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Cells along the adipogenic trajectory were clustered into 4 groups [0, 1, 2, X](A). Adipogenic trajectory was defined by the expression of Adipoq in differentiation MSC (B) and by Pdgfra in undifferentiated MSC (G). Expression of candidate genes identified by integrating F0/F1 RNAseq with F16 data is shown. Only cells with non-zero expression are plotted. Two candidate genes are primarily expressed by immune cells (E and F), but one of which is differentially expressed along the adipogenic trajectory (F). Two candidate genes are primarily expressed along the trajectory and are upregulated with differentiation (C and D). Five candidate genes are primarily expressed along the trajectory and downregulated with differentiation (H\u2013L).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The number of counts for a given gene in a given cell nCount (A), the number of genes expressed in a given cell nFeature (B), and their covariation (C) is predictive of cell quality. The strength of their relationship was measured as the residual for each cell in a generalized additive model predicting nCount from nFeature. Thresholds for these metrics (red/blue lines) were used to decide which cells to include. Cells with unacceptably high residuals (red dot) were thrown out.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Dimensionality reduction of high dimensional single-cell RNAseq data requires the selection of a resolution parameter. This parameter is selected by seeing how stable cluster number and assignment is across a range of resolution parameter values as shown on a cluster tree (A). Here, we selected the highest resolution parameter that stably clustered the expected cell populations. The selected value was 0.15. Using this value, dimensionality reduction is visualized using the UMAP method (B). Cluster identifiers is consistent between cluster tree and UMAP projection.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/72989/elife-72989-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** We sought to test for differential expression of genes across the adipogenic trajectory. Cells from the trajectory were subset and re-clustered. We sought to cluster cells into groups that best corresponded to the different stages of differentiation (B). To this end we used Adipoq expression as a marker of differentiation (A). This dimensionality reduction of high dimensional single-cell RNAseq data requires the selection of a resolution parameter. We tested a range of resolution parameters from 0.01 to 0.25 and observed how resolution affected clustering (E). For each resolution parameter, the variation in mean variation in non-zero Adipoq expression within all clusters was calculated (C). The same was done to calculate the mean variation in percent of cells with expression >0 within all clusters. By finding the clustering conditions that in which Adipoq expression was stably minimized, we were able to select the resolution parameter that best clustered cells into the different stages of differentiation (resolution = 0.17). Dimensionality reduction is visualized using the UMAP method (B). Cluster identifier is consistent between cluster tree and UMAP projection.\n\nIn addition to interrogating Nnat and F2r in single cells along an adipogenic trajectory, we found that eight of the nine genes comprising the epistatic parent-of-origin effect network described above are differentially expressed along the trajectory, and they associate with cell types that are consistent with their respective roles in adipose tissue (Figure 5\u2014figure supplement 2).\n\n## Discussion\n\nEpistatic interactions between imprinted and non-imprinted genes can influence complex traits when the genotypic effects of one gene depends on the parent-of-origin of alleles at another (Lawson et al., 2013; Wolf and Cheverud, 2009). Here, we examined epistatic interactions associated with parent-of-origin effects on dietary-obesity traits in white adipose using a simple yet powerful F1 reciprocal cross mouse model. Although these parent-of-origin dependent allele-specific expression biases are consistent with imprinting mechanisms, we cannot rule out that maternal and/or paternal effects also contribute to the phenomena we observe (Hager et al., 2008).\n\nInteractions between imprinted and non-imprinted genes have previously been shown to contribute to variation in metabolic phenotypes. For example, the maternally expressed transcription factor KLF14 (kruppel-like factor 14) regulates biallelic gene expression related to adiposity (Parker-Katiraee et al., 2007; Small et al., 2011). Mapping studies have identified two SNPs (rs4731702, rs972283) upstream of KLF14 associated with type II diabetes and cholesterol levels (Voight et al., 2010; Teslovich et al., 2010). Both variants have maternally restricted cis-regulatory associations with KLF14 expression in adipose tissue (Kong et al., 2009). eQTL analysis found that rs4731702 is also enriched for trans-associations with KLF family transcription factor binding sites in subcutaneous white adipose tissue, suggesting that KLF14 may be a master transcriptional regulator in adipose tissue (Small et al., 2011). Whether additional pairs of imprinted and biallelic genes are similarly co-expressed and associate with phenotypic variation remains an open question that has not been thoroughly investigated in large landmark functional genomics studies including ENCODE, GTEx, and GWAS, leaving a significant gap in our knowledge. Interactions between imprinted and biallelic genes could explain some of the observed parent-of-origin effect patterns associated with regions lacking obvious candidate genes, as described in a recent survey of 97 complex traits measured in outbred mice (Mott et al., 2014).\n\nOur model asserts that parent-of-origin effects start at ASE genes and are transduced through DE genes onto phenotype. This is illustrated in the interaction between Nnat and F2r. If a cis-regulatory effect interacts with epigenetic modifications (i.e. imprinting) at Nnat, then Nnat expression of genotypic classes are affected by paternal allele identity (Lawson et al., 2013). Between the LG/J and SM/J alleles at Nnat, the LG/J allele is more highly expressed. If our model is correct, the downstream DE gene should show a corresponding pattern (Figure 1B). In the case of Nnat and F2r, which have strong negative correlated expression, when the LG/J allele is inherited paternally at Nnat, the higher expression of Nnat should correspond with lower expression of F2r. This is what we observe (Figure 4). If this relationship is true, we should see persistent co-expression of Nnat and F2r across genetic backgrounds (F0, F1, F2), which we do (Figure 4). This supports a biologically meaningful relationship between Nnat and F2r. Our model further predicts that the DE genes should more closely affect phenotype (Pierce et al., 2014; Shan et al., 2019; Lutz and Hokanson, 2015). In the case of Nnat and F2r, we expect F2r to more strongly associate with basal glucose levels than Nnat, which we observe (Figure 4).\n\nThere is a clear relationship between Nnat and F2r in adipogenesis, but the specifics of how this relationship extends to glucose homeostasis are unclear. One possibility is that by altering SERCA function, Nnat affects not only the formation of new adipocytes, but also the beiging of adipocytes. The SERCA channel is uncoupled in beige adipocytes as part of a UCP1-independent form of non-shivering thermogenesis (Ikeda and Yamada, 2020). Non-shivering thermogenesis consumes a significant amount of energy, thereby altering glucose homeostasis (Carson et al., 2020). This hypothesis links these genes to physiological processes that are consistent with evolutionary hypotheses about the prevalence of parent-of-origin effects. Nnat and F2r are members of a putative network we identified that is coordinated by interactions between ASE and DE genes. From the literature, we found that the genes in this epistatic network function in key steps in a pathway regulating differentiation and survival of adipocytes in response to nutritional environment (Figure 3B). Specifically, there is evidence that it plays a critical role in the induction of adipogenesis. This alone demonstrates how parent-of-origin effects can move through networks along molecular pathways. Beyond proof-of-principle this network provides a clue to the puzzle of the prevalence of parent-of-origin effects.\n\nThe constituents of this single network appear to play vastly different physiological roles depending on the tissue. In white adipose the network appears to play some role in balancing proliferation, differentiation, and apoptosis as we describe above. In pancreatic \u00df-cells, members of this network affect insulin secretion (Millership et al., 2018). In bone, members of this network affect the balance of cartilage/bone growth and reabsorption. These three physiological processes may at first seem unrelated, but they share one key commonality \u2013 they are jointly critical to growth. This is consistent with the sexual conflict hypothesis attributed to parent-of-origin effects (Patten et al., 2014; Babak et al., 2015). The of size of progeny in placental mammals can have opposing fitness consequences for mothers/ maternal relatives and fathers/ paternal relatives. The fitness of fathers and paternal relatives, particularly in the case of multi-paternity litters, is improved with larger progeny (Mochizuki et al., 1996; Babak et al., 2015; Fowden and Moore, 2012; Patten et al., 2014; Wilkins and Haig, 2003; Haig, 1997). This comes at a fitness disadvantage to the mother. The fitness of mothers is improved by progeny of a manageable size, allowing her to produce multiple litters.\n\nAccording to this model, imprinting evolved in part to allow one parental lineage to hijack parts of a nutritional environment response pathway driving growth in a direction favorable to maximize the fitness of that lineage. Key processes in such a pathway driving growth would include the secretion of growth factors, construction of cartilage and bone, and the accumulation of energy stores. We present a network that appears to play a role in all three processes. If the sexual conflict hypothesis is true, then the most parsimonious place for imprinting to evolve would be in key regulatory points that affect as many aspects of growth as possible. This is consistent with the network we identified, a single pathway affecting many aspects of growth. This hints at the possibility that parent-of-origin effects are common because of the multi-purpose nature of the pathways in which genomic imprinting manifests and parent-of-origin effects propagate.\n\nBy leveraging the reciprocal F1 hybrids, we are able to integrate parent-of-origin-dependent allele specific expression and parent-of-origin-dependent differential expression with F16 phenotypes. By doing so, we identify plausible candidates for functional validation and describe discrete molecular networks that may contribute to the observed parent-of-origin effects on metabolic phenotypes. The genes and interactions we present here represent a set of actionable interacting candidates that can be probed to further identify the machinery driving these phenomena and make predictions informed by genomic sequence. The frameworks we have developed account for the genetic, epigenetic, and environmental components underlying these parent-of-origin effects, thereby improving our ability to predict complex phenotypes from genomic sequence. We focused on metabolic phenotypes in this study, but the patterns we identified may translate to other complex traits where parent-of-origin effects have been implicated.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Other</td>\n      <td>High fat diet</td>\n      <td>Teklad</td>\n      <td>TD88137</td>\n      <td>42% kcal from fat</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Low-fat diet</td>\n      <td>Research Diets</td>\n      <td>D12284</td>\n      <td>15% kcal from fat</td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RNeasy Lipid Tissue Kit</td>\n      <td>QIAgen</td>\n      <td>74,804</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>RiboZero kit</td>\n      <td>Illumina</td>\n      <td>20040529</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>DNA 1000LabChip</td>\n      <td>Agilent</td>\n      <td>5067\u20131504</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>High-Capacity cDNA Reverse Transcription Kit</td>\n      <td>Thermo Fisher</td>\n      <td>4368814</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Nnat forward primer</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Detailed information is found in the methods section</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Nnat reverse primer</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Detailed information is found in the methods section</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>F2r forward primer</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Detailed information is found in the methods section</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>F2r reverse primer</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Detailed information is found in the methods section</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>L32 forward primer</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Detailed information is found in the methods section</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>L32 reverse primer</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Detailed information is found in the methods section</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R</td>\n      <td>R</td>\n      <td>3.6.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR</td>\n      <td>STAR</td>\n      <td>DOI: 10.1093/bioinformatics/bts635</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FASTQC</td>\n      <td>FASTQC</td>\n      <td>other</td>\n      <td>https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>EdgeR</td>\n      <td>CRAN</td>\n      <td>DOI: 10.1093/bioinformatics/btp616</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>WEB-based Gene Set Analysis Toolkit</td>\n      <td>WEB-based Gene Set Analysis Toolkit</td>\n      <td>DOI: 10.1093/nar/gkz401</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Seurat</td>\n      <td>Seurat</td>\n      <td>DOI: 10.1038/nbt.3192</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculius)</td>\n      <td>SM/J</td>\n      <td>The Jackson Laboratory</td>\n      <td>000687</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>LG/J</td>\n      <td>The Jackson Laboratory</td>\n      <td>000675</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mouse husbandry and phenotyping\n\nLG/J and SM/J founders (F0) were obtained from The Jackson Laboratory (Bar Harbor, ME). F1 reciprocal cross animals were generated by mating LG/J mothers with SM/J fathers (LxS) and the inverse (SxL). F2 intercrossed animals were generated by mating LxS mothers with SxL fathers and the inverse. After weaning at 21 days, animals were separated into sex-specific cages of 3\u20135 animals per cage and randomly placed on high-fat (42% kcal from fat; Teklad TD88137) or low-fat (15% kcal from fat; Research Diets D12284) isocaloric diets. Feeding was ad libitum. There were 96 experimental F1 animals in total, with 48 animals for each cross (LxS and SxL). Within each cross, there were 24 high-fat-fed animals (12 males; 12 females) and 24 low-fat-fed animals (12 males; 12 females). The F2 animals were generated for a different study, following the same weaning protocol and diets, and we used data from the high fat-fed females (n = 14) for validation in the the current study (Carson et al., 2020). Additionally, we used data generated from founder F0 (LG/J (n = 6) and SM/J (6)) high fat-fed female animals, also generated for a different study and subjected to the same weaning protocol and diets (Carson et al., 2020). The barrier animal facilities at WUSM follow a 12/12 hr light/dark schedule, all water is autoclaved and changed weekly, and all cages are changed weekly.\n\nAll animals were weighed weekly from three weeks of age until sacrifice. At 19 weeks of age, body composition was determined by MRI and a glucose tolerance test was performed after a 4 hr fast. At 20 weeks of age, animals were given an overdose of sodium pentobarbital after a 4 hr fast and blood was collected via cardiac puncture. Euthanasia was achieved by cardiac perfusion with phosphate-buffered saline. After cardiac perfusion, the reproductive fat pad was harvested, flash frozen in liquid nitrogen, and stored at \u201380 \u00b0C.\n\n### Study design\n\nThe weaning, phenotyping protocols, and diets were chosen to reproduce the protocols and diets used in studies of the F16 Advanced Intercross of the LG/J x SM/J inbred mouse lines that were used in previously published mapping studies (Cheverud et al., 2011; Lawson et al., 2011a; Lawson et al., 2011b, Lawson et al., 2010). The experimental unit for the current study is the individual mouse. For the RNA sequencing, a single animal was randomly chosen from each cage using a random number generator in R. All other animals served as biological replicates. Mice from multiple cages representing different crosses, generations, diets, and sexes, were necropsied at the same time to avoid batch effects. Library prep and RNA sequencing was performed blinded by the WUSM Genome Technology and Access Center.\n\n### Genomes and annotations\n\nLG/J and SM/J indels and SNVs were leveraged to construct strain-specific genomes using the GRC38.72-mm10 reference as a template (Nikolskiy et al., 2015). This was done by replacing reference bases with alternative (LG/J | SM/J) bases using custom python scripts. Ensembl R72 annotations were adjusted for indel-induced indexing differences for both genomes.\n\n### RNA sequencing\n\nTotal RNA was isolated from adipose tissue using the RNeasy Lipid Tissue Kit (QIAgen) (n = 32, 4 animals per sex/diet/cross cohort). RNA concentration was measured via NanoDrop and RNA quality/integrity was assessed with a BioAnalyzer (Agilent). RNA-Seq libraries were constructed using the RiboZero kit (Illumina) from total RNA samples with RIN scores > 8.0. Libraries were checked for quality and concentration using the DNA 1000LabChip assay (Agilent) and quantitative PCR, according to manufacturer\u2019s protocol. Libraries were sequenced at 2 \u00d7 100 paired end reads on an Illumina HiSeq 4,000. After sequencing, reads were de-multiplexed and assigned to individual samples. RNAseq data are available through the NCBI-SRA, accession: PRJNA753198.\n\n### Library complexity\n\nComplexity was measured by fitting a beta-binomial distribution to the distribution of Lbias values using the VGAM package (Yee, 2010). The shape parameters (\u03b1, \u03b2) of beta-binomial distributions were estimated and used to calculate dispersion (\u03c1). Dispersion values less than 0.05 indicate our libraries are sufficiently complex (Figure 2\u2014figure supplement 1).\n\n$$\n\u03c1_{s}=\\frac{1}{1+\\alpha_{s}+\\beta_{s}}\n$$\n\nOne library was found to have insufficient complexity and was removed from the analyses.\n\n### Allele-specific expression\n\nFASTQ files were filtered to remove low quality reads and aligned against both LG/J and SM/J pseudo-genomes simultaneously using STAR with multimapping disallowed (Dobin et al., 2013). Read counts were normalized via upper quartile normalization and a minimum normalized read depth of 20 was required. Alignment summaries are provided in Supplementary file 8 and Figure 2\u2014figure supplement 2.\n\nFor each gene in each individual, allelic bias (Lbias) was calculated as the proportion of total reads for a given gene with the LG/J haplotype. Parent-of-origin-dependent allele-specific expression was detected by ANOVA using one of a number of models in which Lbias is responsive to cross and the interaction of cross with some combination of sex and diet:\n\n$$\nModel\u00a0{if\u00a0each\u00a0Cross\u00a0context\u00a0has\\geq2\u00a0samples,\u00a0Lbias\u223cCross\u00a0if\u00a0each\u00a0Cross:Sex\u00a0context\u00a0has\\geq2\u00a0samples,\u00a0Lbias\u223cCross+Cross:Sex\u00a0if\u00a0each\u00a0Cross:Diet\u00a0context\u00a0has\\geq2\u00a0samples,\u00a0\u00a0Lbias\u223cCross+Cross:Diet\u00a0if\u00a0each\u00a0context\u00a0has\\geq2\u00a0samples,\u00a0\u00a0Lbias\u223cCross+Cross:Sex+Cross:Diet+Cross:Sex:Diet\u00a0\n$$\n\nAccurately estimating the significance of these effects and correcting for multiple tests is challenging for two reasons: (1) the complexity of the many environmental contexts and (2) the correlation of allelic bias within and between imprinted domains breaks assumptions of independence. A permutation approach is an effective way to overcome these challenges. The context data was randomly shuffled for each gene independently and analyses were rerun to generate a stable null distribution of p-values (Figure 2\u2014figure supplement 3). False discovery rates were estimated for a given significance threshold as the proportion of significant tests under the permutated null model relative to significant tests under the real data model. A value of 1 meaning that 100% of tests at a given significance threshold are likely false positives. An FDR \u2264 0.1 was considered significant (Supplementary file 1, Figure 2\u2014figure supplement 4).\n\nTo determine the parental direction and size of expression biases, a parent-of-origin effect score was calculated as the difference in mean Lbias between reciprocal crosses (LxS or SxL). Parent-of-origin effect scores range from completely maternally expressed (\u20131), to biallelic (0), to completely paternally expressed ( + 1). Parent-of-origin effect score thresholds were calculated from a critical value of \u03b1 = 0.01, determined from a null distribution created by permutation Genes with significant allele-specific expression and parent-of-origin scores beyond the critical value were considered to have significant parent-of-origin-dependent allele-specific expression (Figure 2\u2014figure supplement 5).\n\n### Differential expression\n\nDifferential expression by reciprocal cross was determined by first aligning reads against the LG/J and SM/J genomes simultaneously with multimapping permitted. Reads were normalized by Trimmed mean of M-values (TMM) normalization, which estimates scale factors among samples to allow for differences in RNA composition (Robinson and Oshlack, 2010). A minimum normalized read count of 10 was required. Generalized linear models accounting for diet, sex, and diet-by-sex were fit in EdgeR (Robinson et al., 2010). Differential expression was detected by a likelihood ratio test. Significance was determined for five models for each gene:\n\n$$\n1. Expression ~ Cross\n$$\n\n\n\n$$\n2.   Expression ~ Cross:Sex\n$$\n\n\n\n$$\n3.Expression ~ Cross:Diet\n$$\n\n\n\n$$\n4. Expression ~ Cross:Sex:Diet\n$$\n\n\n\n$$\n5. Expression ~ Cross+Cross:Sex+Cross:Diet+Cross:Sex:Diet\n$$\n\nMultiple test corrections were performed by implementing the \u2018qvalue\u2019 R package to estimate false discovery rates (Figure 2\u2014figure supplement 6). Genes with a FDR of \u22640.1 and a $fold change\\geq1.5$ were considered significantly differentially expressed by reciprocal cross (Figure 2\u2014figure supplement 7 and Supplementary file 2).\n\n### Gene-gene interactions\n\nNetworks were constructed in each tissue by pairing genes showing parent-of-origin-dependent allele-specific expression with biallelic genes that are differentially expressed by cross. Pairs were predicted by modeling the expression of biallelic genes as a function of parent-of-origin-dependent allele-specific expression, Lbias, sex, diet, and sex-by-diet. The strength of a prediction was measured through model fit, which was estimated as a mean test error with 10-fold cross-validation employed to prevent overfitting. Significance was estimated by likelihood ratio test using a chi-square distribution. Given the complexity of contexts, false discovery rates were determined by permuting the context and expression data to generate a stable null-distribution of p-value (Figure 2\u2014figure supplement 8) Null distribution stability was evaluated by calculating the critical value for alpha = 0.05 at each genome wide iteration. The standard deviation of critical values was calculated after each iteration for the last 5 iterations. Genome-wide shuffling was done 500 times, with 759 independent randomized tests per iteration, meaning the stable null model is composed of 379,500 randomized observations. Using the null model, the \u2018qvalue\u2019 package estimated a $\\pi_{0}^$ . This estimate was then used to estimate false discovery rates in the real data. MTE score thresholds were calculated from a critical value of \u03b1 = 0.01, determined from a null distribution created by permutation (Figure 2\u2014figure supplement 9). Connections with an FDR \u2264 0.1 (Supplementary file 9) and MTE below the critical value were considered significant (Figure 2\u2014figure supplement 10).\n\n### Functional enrichment analysis\n\nFunctional enrichment of interacting genes showing parent-of-origin-dependent allele-specific expression with biallelic genes that are differentially expressed by cross was tested by over-representation analysis in the WEB-based Gene Set Analysis Toolkit v2019 (Zhang et al., 2005). We performed analyses of gene ontologies (biological process, cellular component, and molecular function), pathway (KEGG), and phenotype (Mammalian Phenotype Ontology). The list of all unique interacting genes was analyzed against the background of all unique genes expressed in white adipose. A Benjamini-Hochberg FDR-corrected p-value \u2264 0.01 was considered significant (Supplementary file 4).\n\n### Phenotype correlation\n\nIn order to identify which phenotypes might be affected by genes in the parent-of-origin effects network, gene expression was correlated with metabolic phenotypes collected for F1 animals with the contexts combined. Phenotypes were log transformed when necessary, as determined by Shapiro Wilkes test to approximate normality (Figure 2\u2014figure supplement 11). Additionally, the effects of sex and diet were residualized out leaving only the effect of cross. This was done to mirror later residualizing of phenotypes in the F16 population when testing for epistasis. Multiple test corrections were performed by implementing the \u2018qvalue\u2019 R package to estimate false discovery rates (Figure 2\u2014figure supplement 12). The minimum Pearson\u2019s correlation coefficient threshold was set to |0.5|. Connections with an FDR \u2264 0.05 (Supplementary file 5) and MTE below the critical value were considered significant (Figure 2\u2014figure supplement 13).\n\n### Epistasis testing\n\nThe F16 LxS advanced intercross population, phenotypes, genotypes, genotypic scores, and QTL mapping methods are described elsewhere (Cheverud et al., 2011; Lawson et al., 2011a; Lawson et al., 2011b, Lawson et al., 2010). We tested for epistasis in interacting pairs between genes showing parent-of-origin-dependent allele-specific expression and biallelic genes that are differentially expressed by cross. We selected F16 genotyped markers that fall within 1.5 Mb up- and downstream from the geometric center of each gene, defined as the genomic position halfway between the transcription start and stop position of that gene (Supplementary file 10). For every F16 animal, an \u2018imprinting score\u2019 was assigned to each marker based on that animal\u2019s genotypic values (LL = 0, LS = 1, SL = \u20131, SS = 0; maternal allele is depicted first). Non-normally distributed phenotypes (as evaluated by a Shapiro-Wilk test) were log10-transformed to approximate normality (Figure 3\u2014figure supplement 1). Because of the number of epistasis tests performed and the number of contexts represented in the data, we removed the effects of sex, diet and their interaction from each F16 phenotype with a covariate screen. We tested for epistasis on the residualized data using the following generalized linear model:\n\n$$\nR_{pheno}~ BDE_{IMP}+ASE_{IMP}+BDE_{IMP}:ASE_{IMP}\n$$\n\nwhere Rpheno is the residual phenotype, BDEIMP is the imprinted genotypic score for the biallelic gene that is differentially expressed by cross, ASEIMP is the imprinted genotypic score for the gene showing parent-of-origin-dependent allele-specific expression bias, and BDEIMP:ASEIMP is the interaction between the two genes\u2019 imprinted genotypic score. We employed a permutation approach to accurately estimate significance given the linkage of proximal markers. Imprinted genotypic values were randomly shuffled to generate a stable null model of p-values (Figure 3\u2014figure supplement 2). False discovery rates were estimated for a given significance threshold as the proportion of significant tests under the permutated null model relative to significant tests under the real data model (Figure 3\u2014figure supplement 3). An FDR \u2264 0.1 was considered significant. Epistasis was considered significant if the BDEIMP: ASEIMP interaction term met the significance threshold (Supplementary file 6).\n\n### Validation of Nnat and F2r expression patterns\n\nExpression patterns of Nnat and F2r in white adipose were validated by qRT-PCR in high-fat-fed female LG/J and SM/J mice and in biological replicates of high-fat-fed female F1 reciprocal cross animals (n = 6 LG/J homozygotes, n = 10 LxS and 10 SxL reciprocal heterozygotes, n = 6 SM/J homozygotes). Total RNA was extracted from adipose samples using the Qiagen RNeasy Lipid Kit. High-Capacity cDNA Reverse Transcription Kit (Thermo Fisher) was used for reverse transcription. Quantitative RT-PCR was performed with an Applied Biosystems (USA) QuantStudio 6 Flex instrument using SYBR Green reagent. Results were normalized to L32 expression using the \u0394\u0394Ct method. Nnat forward primer \u2013 CTACCCCAAGAGCTCCCTTT and reverse primer \u2013 CAGCTTCTGCAGGGAGTACC. F2r forward primer \u2013 TGAACCCCCGCTCATTCTTTC and reverse primer \u2013 CCAGCAGGACGCTTTCATTTTT. L32 forward primer \u2013 TCCACAATGTCAAGGAGCTG and reverse primer \u2013 GGGATTGGTGACTCTGATGG. Data points were considered outliers if they led to violation of normality assumptions or were considered outliers by box and whisker plots. ANOVA was used to estimate significance of differential expression by cross (1), paternal allele identity (2), mitochondrial ancestry (3).\n\n$$\n1.\u00a0Expression\u00a0\u223c\u00a0Cross\u00a0\\in\u00a0{LL,\u00a00\u00a0LS,\u00a0\u22121\u00a0SL,\u00a01SS,\u00a00\n$$\n\n\n\n$$\n2.\u00a0Expression\u00a0\u223c\u00a0Paternal\u00a0Allele\u00a0\\in\u00a0{\u00a0LL,\u00a00\u00a0LS,\u00a01SL,\u00a00\u00a0SS,1\n$$\n\n\n\n$$\n3.\u00a0Expression\u00a0\u223c\u00a0Mitochondrial\u00a0ancestry\u00a0\\in\u00a0{\u00a0LxS\u00a0x\u00a0SxL,\u00a00\u00a0SxL\u00a0x\u00a0LxS,\u00a01\n$$\n\nExpression patterns were also validated by qRT-PCR in high fat-fed female F2 animals (n = 14). Co-expression was determined by fitting a general linear model and estimating significance using the Wald test approximation of the LR test. Correlation with basal glucose was determined by fitting a general linear model and estimating significance using the Wald test approximation of the LR test. Pearson\u2019s correlation coefficients were calculated for each gene with basal glucose. To test whether patterns in these correlations was significantly different between F0/F1 and F2 populations, bootstrapping was used to calculate 90% confidence intervals for the Pearson\u2019s correlation coefficients. 5,000 iterations were run with 10 individuals randomly selected with replacement. scRNA analysis of Nnat and F2r scRNAseq data was downloaded from SRA: SRP145475 (Burl et al., 2018). Data were processed and aligned to the C57BL/6 J reference (mm10) using Cell Ranger (Zheng et al., 2017). Analysis and cell quality control was performed using the Seurat (3.2.2)(Stuart et al., 2019) package in R (3.6.1)(R Development Core Team, 2013). Cell quality was controlled using three metrics (Luecken and Theis, 2019): (1) number of features, (2) number of counts, (3) covariation of features and counts. High quality cells were required to have between 500 and 3000 features and read counts between 1000 and 30,000. As sequencing is a process of random sampling, the number of features and the number of counts should covary. This relationship was fit to a generalized additive model. Deviation from this relationship (residuals) were computed for each cell. High-quality cells were required to have a residual within 3 standard deviations of the mean residual of all cells (Figure 5\u2014figure supplement 3).\n\nSeurat normalization with a scale factor of 10,000 was performed. Dimensionality reduction (UMAP) was performed (dims = 1:10, resolution = 0.15). Resolution was chosen using the clustree (0.4.3) package (Zappia and Oshlack, 2018). A range of resolutions from 0.06 to 0.18 were tested, and the highest resolution with stable clustering was chosen (Figure 5\u2014figure supplement 4). Cell type markers were identified by differential expression analysis using the \u2018MAST\u2019 hurdle-model test (Finak et al., 2015). Genes overexpressed in a given cell type relative to all other cell types were considered cell type \u2018markers\u2019. Cell type identity was assigned using previously reported markers for this data set (Figure 5\u2014figure supplement 1).\n\nCells along the adipogenic trajectory were subset and subjected to dimensionality reduction (UMAP, dims = 1:10, resolution = 0.17). A range of resolutions from 0.01 to 0.25 were tested. Using Adipoq as a marker of differentiation, we sought to identify the set of clusters that would best encapsulate the stages of differentiation. To this end for every level of resolution we calculated the mean count variance ($C_{\\sigma}\u00af$). This is done by calculating the standard deviation ($\\sigma$) of Adipoq expression (E) within each cluster (G), referred to as the count variance ($C_{\\sigma}$). Cells with no expression of Adipoq were excluded. The mean of count variances for all clusters is calculated. This process is similar to k-means clustering, where the goal is to find that parameters which minimize the within group variation.\n\n$$\nCount\u00a0Variance=\u00a0\\frac{\\sumG=1n\\sigma(E_{G})}{n}\n$$\n\nWe also calculated the percent expressing variance ($P_{\\sigma}\u00af$). This was taken as the mean of the standard deviation in the percent of cells expressing Adipoq.\n\n$$\nPercent\u00a0Expressing\u00a0Variance=\u00a0\\frac{\\sumG=1n\\sigma(%E>0_{G})}{n}\n$$\n\nThe resolution 0.17 was chosen as the lowest resolution where variation is minimized and no longer significantly changes (Figure 5\u2014figure supplement 5). Using Adipoq as a marker of adipogenesis, clusters 1 and 2 were identified as pre- and post-differentiated cells, respectively. Differential expression was analyzed using the \u2018MAST\u2019 test. Expression was compared between clusters 1 and 2 only. Multiple tests correction was performed using the Bonferroni method. We required changes in expression to show either a sufficiently large fold change ($log_{2}\u2061FoldChange\\geq0.3$) OR a sufficiently large change in the percent of cells expressing the gene in question ($pct.\\Delta\\geq0.4$). The change in percent of cells expressing a gene was calculated as the difference in percent of cells expressing the gene between the clusters and scaled by dividing by the larger percentage.\n\n$$\npct.\\Delta = \\frac{pct.2-pct.1}{max\u2061(pct.1,pct.2)}\n$$\n\nSource code is available at https://github.com/LawsonLab-WUSM/POE_Epistasis, (copy archived at swh:1:rev:b39046ce35f53e0c3f15bcdefa122c274aee48b7, Lawson, 2019).\n",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "6c51391f-ec30-4b3d-8068-f55c08852882",
+      "submission_id": "aa0979ae-1dcb-4dc8-81bf-dfa1523a5423",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David B Allison, https://ror.org/01kg8sb98 Indiana University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72989.sa0](https://doi.org/10.7554/eLife.72989.sa0)\n\nWe all learned simple Mendelian Punnett Squares in Junior High or earlier when studying simple Mendelian traits. But we also all know that the world is so much richer and more complex than this. The current article explores some of that complexity, opening rich insights into intergenerational effects, offering the opportunity for mathematical thinking and further hypothesis testing, and opening up exciting new hypotheses to test. As Professor Stephen Stearns wrote, \"Many of us do not do science only, or even primarily, to achieve practical results. We do it because we are fascinated with neat ideas. Evolutionary medicine is full of them, including parent-of-origin pattern.\" Let us enjoy the wonder.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- David B Allison, https://ror.org/01kg8sb98 Indiana University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72989.sa1](https://doi.org/10.7554/eLife.72989.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Parent-of-origin effects propagate through networks to shape metabolic traits\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Matthias Barton as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: David Haig (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nOverall, the reviewers are first and foremost requesting substantial modifications to clarify what exactly was done. Methodologic transparency will allow both the reviewers and the eventual readers to better understand what was done and its implications. Please respond to all of the reviewers' requests for more information and/or clarifications.\n\nReviewer #1 (Recommendations for the authors):\n\nThe model in which some parent-of-origin effects in crosses are mediated by effects of imprinted genes on the expression of unimprinted genes is probably the 'null hypothesis' for most workers in the field but it is good to have it spelled out.\n\nSome evolutionary implications are briefly considered in the Discussion. The authors suggest that the various effects of Nnat in white adipose tissue, pancreatic \u03b2-cells, and bone are jointly critical for growth, consistent with the 'sexual conflict hypothesis' for the evolution of genomic imprinting.\n\nI will make a minor technical comment on the authors' presentation of this hypothesis before considering the possible involvement of Nnat in thermogenesis. The hypothesis is presented as a conflict between the fitness of mothers and fathers. This is not quite correct, rather the relevant conflict arises from different 'inclusive' fitness\u2019s of genes derived from mothers and genes derived from fathers (see Proc. R. Soc B 264: 1657). These two formulations are not the same because an offspring inherits only one of the two alleles present in a parent. Matrilineal and patrilineal inclusive fitness\u2019s can differ when gene expression in one individual (the focal individual) has fitness consequences for other individuals with different probabilities of carrying the focal individual's maternal and paternal allele (call these other individuals 'asymmetric kin'). The category of asymmetric kin includes the mother of the focal individual, and this is where the conflict overgrowth discussed by the authors arises, but it also includes half-sibs, cousins, etc.\n\nThermogenesis and growth are, of course, not independent processes: fuels consumed to keep warm are unavailable for anabolic processes. Imprinting evolves for traits that mediate trade-offs between the fitness\u2019s of self and others. Metabolism is likely to be central to these trade-offs.\n\n\"Imprinting-by-imprinting epistasis\" is used in the main text but not defined. Its meaning is tucked away in the Methods section\n\n\"Nnat and F2r are negatively correlated along an adipogenic trajectory\". \"Nnat increases and F2r decreases along an adipogenic trajectory\" would be more informative.\n\nReviewer #3 (Recommendations for the authors):\n\n1) P-values are repeated in the text and in figures. Please see Figure 4C and D as an example.\n\n2) Figures are out of order. For example, figure 5 I is referenced in the text before Figure 5 E-H.\n\n3) In figure 4, the authors state \"However, their interaction significantly correlates with basal glucose in the F2's (p=0.032).\" This information seems like it should be in the text rather than in the figure legend.\n\n4) In the text Figure 4F should be 4G and Figure 4G should be 4F.\n\n5) It would be helpful for the reader to provide the direction of correlations in the text. For example, instead of stating \"F2r expression significantly correlates with basal glucose\u2026\" include the word negatively or positively before the word \"correlates.\"\n\n6) Figure 5H was not referenced in the text.\n\n7) Please include the N for group housing the mice.\n\n8) The interpretation of the results seems a bit underdeveloped. The authors did all this great work, and it should be highlighted at the beginning of the discussion and then expanded upon. Rather, they lead with the second paragraph, which is unclear and appears to be out of place. What message are the authors trying to convey? Also, please include more references to support the statements being made and provide more context for the reader. For example, why would you expect F2r to be more strongly associated with glucose? Also, statements, such as \"play some role\u2026\" are vague.\n\n9) In \"differential expression\" section in the methods, please define TMM.\n",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "70418a28-0725-4720-86a7-c2802dbb036f",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C1",
+      "claim": "Parent-of-origin effects are unexpectedly common in complex traits, including metabolic and neurological traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Parent-of-origin effects are unexpectedly common in complex traits, including metabolic and neurological traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the prevalence of parent-of-origin effects supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "09b99585-209c-4064-a386-fcfd71c1b335",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C2",
+      "claim": "Parent-of-origin effects can be modified by the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Parent-of-origin effects can be modified by the environment, but the architecture of these gene-by-environmental effects on phenotypes remains to be unraveled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "878c0fba-5139-4af6-a6d6-b2d44e54b263",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C3",
+      "claim": "Quantitative trait loci (QTL) showing context-specific parent-of-origin effects on metabolic traits were mapped in the F16 generation of an advanced intercross between LG/J and SM/J inbred mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, quantitative trait loci (QTL) showing context-specific parent-of-origin effects on metabolic traits were mapped in the F16 generation of an advanced intercross between LG/J and SM/J inbred mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previously published work, as indicated by the word 'Previously'.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "c2fe0fee-15f6-43e2-a565-ea2a5761dffd",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C4",
+      "claim": "QTL showing parent-of-origin effects were not enriched for known imprinted genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these QTL were not enriched for known imprinted genes, suggesting another mechanism is needed to explain these parent-of-origin effects phenomena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from previous research that motivates the current study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "8cdb55f3-91d3-4f41-95fa-efff06785525",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C5",
+      "claim": "Non-imprinted genes can generate complex parent-of-origin effects on metabolic traits through interactions with imprinted genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that non-imprinted genes can generate complex parent-of-origin effects on metabolic traits through interactions with imprinted genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central hypothesis of the study, presented as a proposal to be tested.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "b28ce2cc-5654-4aca-888c-7050bd23bda6",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C6",
+      "claim": "A network comprised of three imprinted and six non-imprinted genes shows parent-of-origin effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify a network comprised of three imprinted and six non-imprinted genes that show parent-of-origin effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on the experimental data and analyses performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "e0e52412-6d99-401b-bbe8-e073b004cbb8",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C7",
+      "claim": "The epistatic network forms a nutritional responsive pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This epistatic network forms a nutritional responsive pathway and the genes comprising it jointly serve cellular functions associated with growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the network's function based on the data and literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "771bcc79-f583-47de-9a2c-acce42013e49",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C8",
+      "claim": "Genes in the epistatic network jointly serve cellular functions associated with growth.",
+      "claim_type": "EXPLICIT",
+      "source": "This epistatic network forms a nutritional responsive pathway and the genes comprising it jointly serve cellular functions associated with growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on functional analysis of the network genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "07499e3e-4c50-4dd4-9fd2-e4d0e2eddfa0",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C9",
+      "claim": "Nnat and F2r interaction associates with serum glucose levels across generations in high-fat-fed females.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus on two genes, Nnat and F2r, whose interaction associates with serum glucose levels across generations in high-fat-fed females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the study based on data from multiple generations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "0e312b08-641b-48bd-abea-f2bda46cc4d8",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C10",
+      "claim": "Nnat expression increases in pre-adipocytes along an adipogenic trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNAseq reveals that Nnat expression increases and F2r expression decreases in pre-adipocytes along an adipogenic trajectory, a result that is consistent with our observations in bulk white adipose tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from single-cell RNA sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "a7a562be-d56c-4770-9ea5-d6ba83b7a5aa",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C11",
+      "claim": "F2r expression decreases in pre-adipocytes along an adipogenic trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNAseq reveals that Nnat expression increases and F2r expression decreases in pre-adipocytes along an adipogenic trajectory, a result that is consistent with our observations in bulk white adipose tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from single-cell RNA sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "8fae8f94-bda3-487a-95dc-117e7eebd7c9",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C12",
+      "claim": "In humans, there are 107 verified imprinted genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, there are 107 verified imprinted genes and in mice there are 124, of which ~ 70% overlap (Jirtle, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Jirtle, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "59c1fb3f-be47-4ead-ae68-6cd742705c9a",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C13",
+      "claim": "In mice there are 124 imprinted genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, there are 107 verified imprinted genes and in mice there are 124, of which ~ 70% overlap (Jirtle, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Jirtle, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "d2e14f15-1f14-440d-9c55-53d07b3bac1d",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C14",
+      "claim": "Approximately 70% of imprinted genes overlap between humans and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, there are 107 verified imprinted genes and in mice there are 124, of which ~ 70% overlap (Jirtle, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Jirtle, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "d30543fa-520d-443f-8f44-aa1af35200f6",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C15",
+      "claim": "Parent-of-origin effects on complex traits and diseases are relatively common despite the rarity of imprinted genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the rarity of imprinted genes, parent-of-origin effects on complex traits and diseases are relatively common, suggesting that canonical imprinting mechanisms are not sufficient to account for these phenomena (Mozaffari et al., 2019; Zeng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mozaffari et al., 2019 and Zeng et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "bcb10cbc-dbeb-404e-a2a0-c096aaeb9f50",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C16",
+      "claim": "Canonical imprinting mechanisms are not sufficient to account for parent-of-origin effects phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the rarity of imprinted genes, parent-of-origin effects on complex traits and diseases are relatively common, suggesting that canonical imprinting mechanisms are not sufficient to account for these phenomena (Mozaffari et al., 2019; Zeng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that parent-of-origin effects are more common than expected given the number of imprinted genes, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "ab91dbd9-bbd9-4bf3-872b-8dcc5fbc1279",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C17",
+      "claim": "23 genes show significant parent-of-origin-dependent allele-specific expression (ASE).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 23 genes showing significant ASE (Figure 2A; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the RNA-seq analysis, with reference to Figure 2A and supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "c8eb13bb-1a66-4c0e-b5c0-45c819633ea1",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C18",
+      "claim": "Of the 23 genes showing significant ASE, 17 are canonically imprinted genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 23 genes, 17 are canonically imprinted genes, two are not reported as imprinted genes but are located in known imprinted domains, and four are novel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the ASE genes identified in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "2b281a27-3577-4cb4-ab07-bdd435955f7b",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C19",
+      "claim": "Two genes showing ASE are not reported as imprinted genes but are located in known imprinted domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 23 genes, 17 are canonically imprinted genes, two are not reported as imprinted genes but are located in known imprinted domains, and four are novel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the ASE genes identified in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "560dae67-a4e2-4087-9541-c4c6eb17d04d",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C20",
+      "claim": "Four genes showing ASE are novel.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 23 genes, 17 are canonically imprinted genes, two are not reported as imprinted genes but are located in known imprinted domains, and four are novel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the ASE genes identified in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "b1cc50df-be81-45dc-ae27-52af903bb92d",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C21",
+      "claim": "33 genes are significantly differentially expressed between reciprocal crosses in at least one sex or dietary context.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 33 genes that are significantly DE in at least one sex or dietary context (Figure 2A; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "ece14564-5333-409c-b734-63529950ae32",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C22",
+      "claim": "Genes showing parent-of-origin effects form a highly interconnected network comprised of 52 genes forming 217 gene pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes showing parent-of-origin effects form a highly interconnected network comprised of 52 genes forming 217 gene pairs (Figure 2B)(Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the network analysis, with reference to Figure 2B and supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "631e7dfc-a53c-4a2a-99eb-165dcded85bf",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C23",
+      "claim": "Most interactions in the parent-of-origin effects network are trans-chromosomal.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these interactions are trans-chromosomal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the nature of the interactions in the network.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "425382da-9f62-482d-9310-4c7176c32201",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C24",
+      "claim": "Nnat and Cdkn1c are canonically imprinted and differentially expressed by reciprocal cross.",
+      "claim_type": "EXPLICIT",
+      "source": "These two genes, Nnat (neuronatin) and Cdkn1c (cyclin dependent kinase inhibitor 1 C), are both canonically imprinted and differentially expressed by reciprocal cross (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of two specific genes based on the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "3157ebbd-fdc6-4c39-8737-6bd2c1d795a3",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C25",
+      "claim": "Seven functional terms were significantly overrepresented in the parent-of-origin effects network at an FDR \u2264 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional over representation analysis was performed and seven terms were significantly overrepresented at an FDR \u2264 0.05 (Figure 2C; Zhang et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the functional enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "533b6804-cd6b-466f-ba17-9e28b6b57395",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C26",
+      "claim": "Enriched terms suggest the network plays a role in signaling and genetic imprinting.",
+      "claim_type": "EXPLICIT",
+      "source": "Enriched terms suggest this network plays a role in signaling and genetic imprinting (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional enrichment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "702ac775-59b9-4c82-ab3d-b2ae21925117",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C27",
+      "claim": "Nine epistatic interactions replicated in the F16 population at FDR \u2264 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine epistatic interactions replicated in the F16 population (n = 1002 animals, FDR \u2264 0.1; Figure 3A; Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the epistasis testing in the F16 population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "5cf576b8-162e-4b74-9091-73b9d5ab6bda",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C28",
+      "claim": "The nine epistatic interactions involve three ASE genes (Cdknlc, Nnat, Plcd1) and six DE genes (Car3, F2r, Hexb, Hmger, Srgn, Tnfrsf11a).",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions were comprised of three ASE genes showing parent-of-origin (Cdknlc, Nnat, Plcd1), six genes that are DE by cross (Car3, F2r, Hexb, Hmger, Srgn, Tnfrsf11a) and four phenotypes (basal glucose level, AUC calculated from a glucose tolerance test, serum cholesterol, necropsy weight).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the epistatic interactions identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "ae0eca9a-e36c-4f91-ae33-02b08a1ddd54",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C29",
+      "claim": "The nine epistatic interactions are associated with four phenotypes: basal glucose level, AUC from glucose tolerance test, serum cholesterol, and necropsy weight.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions were comprised of three ASE genes showing parent-of-origin (Cdknlc, Nnat, Plcd1), six genes that are DE by cross (Car3, F2r, Hexb, Hmger, Srgn, Tnfrsf11a) and four phenotypes (basal glucose level, AUC calculated from a glucose tolerance test, serum cholesterol, necropsy weight).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the phenotypes associated with the epistatic interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "3cb4d398-66c7-4c97-9383-cae5d5141f87",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C30",
+      "claim": "The nine genes form a putative diet-responsive network affecting adipogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these nine genes form a putative diet-responsive network affecting adipogenesis (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the network's function based on the genes involved and their known functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "0def6689-e5d0-48bd-a329-ccadca04e752",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C31",
+      "claim": "Nnat is a paternally expressed canonically imprinted gene which encodes a proteolipid protein that localizes to the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "Nnat is a paternally expressed canonically imprinted gene which encodes a proteolipid protein that localizes to the ER (Li et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Li et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "a85461c7-b3b5-4fb3-86b4-a584cd6d1809",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C32",
+      "claim": "Nnat is diet-responsive.",
+      "claim_type": "EXPLICIT",
+      "source": "Nnat is diet-responsive and its overexpression in 3T3L1 pre-adipocytes promotes adipogenesis through increased free cytosolic calcium (Young et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Young et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "b790b4c6-3a9f-4045-a6e9-7cab0963a781",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C33",
+      "claim": "Overexpression of Nnat in 3T3L1 pre-adipocytes promotes adipogenesis through increased free cytosolic calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "Nnat is diet-responsive and its overexpression in 3T3L1 pre-adipocytes promotes adipogenesis through increased free cytosolic calcium (Young et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Young et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "e0e3fbcd-c5a9-4762-8ee5-b1e8da724aca",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C34",
+      "claim": "In pre-neural stem cells, Nnat binds SERCA to block Ca2+ uptake into the ER thereby increasing cytosolic Ca2+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In pre-neural stem cells, Nnat binds sarco/endoplasmic reticulum Ca2+-ATPase (SERCA) to block Ca2+ uptake into the ER thereby increasing cytosolic Ca2+ levels (Lin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Lin et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "e6edff92-dd8f-475a-9d15-0c520ac0d3c4",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C35",
+      "claim": "Hexb regulates the uptake and accumulation of Ca2+ in the ER via SERCA.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to Nnat, Hexb regulates the uptake and accumulation of Ca2+ in the ER via SERCA (Pelled et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Pelled et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "0efb552d-bd2b-428f-ae2d-15555c31e2be",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C36",
+      "claim": "F2r is a G-protein-bound receptor that promotes phosphoinositide hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "F2r is a G-protein-bound receptor that promotes phosphoinositide hydrolysis (Soh et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Soh et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "60c7a828-be81-4680-8d33-ea765ebb2fb6",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C37",
+      "claim": "Variation in the human F2R gene is associated with obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Variation in the human F2R gene is associated with obesity (Kichaev et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Kichaev et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "75a97b7a-d038-4b96-aa27-3fe661def350",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C38",
+      "claim": "The downstream effect of Plcd1-mediated signaling is the efflux of calcium into the cytosol from the ER, thereby increasing cytosolic Ca2+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The downstream effect of Plcd1-mediated signaling is the efflux of calcium into the cytosol from the ER, thereby increasing cytosolic Ca2+ levels (Thatcher, 2010; Berridge, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Thatcher, 2010 and Berridge, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "29d19698-ead2-4594-8138-db975b5640f5",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C39",
+      "claim": "Increased cytosolic Ca2+ in pre-adipocytes promotes phosphorylation of CREB, which promotes activity of C/EBP transcription factors, activating adipogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased cytosolic Ca2+ in pre-adipocytes promotes phosphorylation of cAMP-response element-binding protein (CREB), which promotes activity of CCAAT/enhancer-binding protein (C/EBP) transcription factors, activating adipogenesis, altering the expression of Cdkn1c (cyclin dependent kinase inhibitor 1 C), Hmgcr (3-hydroxy-3-methylglutaryl-CoA reductase), Car3 (carbonic anhydrase 3), Tnfrsf11a (TNF receptor superfamily member 11 a), and Srgn (serglycin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a known signaling pathway based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "79f90693-0f39-4a63-a52d-d9339d76d08d",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C40",
+      "claim": "Cdkn1c is a canonically imprinted maternally expressed gene that inhibits cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdkn1c is a canonically imprinted maternally expressed gene that inhibits cell proliferation (Kang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Kang et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "c365f410-9848-4090-9203-2706fc8cb9f5",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C41",
+      "claim": "Increased expression of Cdkn1c is protective against diet-induced obesity in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased expression of Cdkn1c is protective against diet-induced obesity in mice (Van de Pette et al., 2018), and in humans increased caloric intake results in decreased CDKN1C expression (Franck et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Van de Pette et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "e8d9dcf9-0bb3-4ec9-be5e-1fdd4fde16e0",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C42",
+      "claim": "In humans, increased caloric intake results in decreased CDKN1C expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased expression of Cdkn1c is protective against diet-induced obesity in mice (Van de Pette et al., 2018), and in humans increased caloric intake results in decreased CDKN1C expression (Franck et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Franck et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "870e1287-a70b-4692-848a-54d3cb43981e",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C43",
+      "claim": "Hmgcr is the rate-limiting enzyme in cholesterol biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hmgcr is the rate-limiting enzyme in cholesterol biosynthesis (Burg and Espenshade, 2011; Jo and Debose-Boyd, 2010) and converts HMG-CoA into mevalonate, which is essential for adipocyte survival (Yeh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Burg and Espenshade, 2011 and Jo and Debose-Boyd, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "5f74ba46-c856-465d-9198-e6cc4f02c831",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C44",
+      "claim": "Hmgcr converts HMG-CoA into mevalonate, which is essential for adipocyte survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Hmgcr is the rate-limiting enzyme in cholesterol biosynthesis (Burg and Espenshade, 2011; Jo and Debose-Boyd, 2010) and converts HMG-CoA into mevalonate, which is essential for adipocyte survival (Yeh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Yeh et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "e6d88c41-bb55-48f1-ad62-7cef5d6ec973",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C45",
+      "claim": "Srgn is an adipocytokine thought to be part of a feedback loop with Tnf\u03b1, mediating paracrine cross-talk between macrophages and adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Srgn is an adipocytokine thought to be part of a feedback loop with Tnf\u03b1 (tumor necrosis factor alpha), mediating paracrine cross-talk between macrophages and adipocytes (Lemire et al., 2007; Imoto-Tsubakimoto et al., 2013; Schick et al., 2001; Zernichow et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from multiple sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "547311bb-2377-43bd-9965-2c1ab5dabc4e",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C46",
+      "claim": "Srgn plays a role in osteoblast-mediated bone mineralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Srgn is known to play a role in osteoblast-mediated bone mineralization (Bigdeli et al., 2010), which along with osteoclast-driven bone deconstruction drives bone remodeling (Aubin, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Bigdeli et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "c3afd046-3865-4c18-b857-4a7255cf7c91",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C47",
+      "claim": "Osteoblasts share a lineage with adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoblasts share a lineage with adipocytes, and the quantity of osteoblasts is inversely proportional to that of marrow adipose tissue (Rodr\u00edguez et al., 2008; Prockop, 1997; Ali et al., 2005; Akune et al., 2004; Cho et al., 2011; Rosen and Bouxsein, 2006; Turner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from multiple sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "1c1e7086-2855-4e07-a905-93c91e2f8202",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C48",
+      "claim": "The quantity of osteoblasts is inversely proportional to that of marrow adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoblasts share a lineage with adipocytes, and the quantity of osteoblasts is inversely proportional to that of marrow adipose tissue (Rodr\u00edguez et al., 2008; Prockop, 1997; Ali et al., 2005; Akune et al., 2004; Cho et al., 2011; Rosen and Bouxsein, 2006; Turner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from multiple sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "9693761c-20dc-48fb-b8e4-70fa9564eb31",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C49",
+      "claim": "Tnfrsf11a is a cell surface protein that regulates differentiation of osteoclasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Tnfrsf11a is a cell surface protein that regulates differentiation of osteoclasts (Nakagawa et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Nakagawa et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "fa1ffdff-5040-429d-a4d5-3d274b26ef4a",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C50",
+      "claim": "Osteoprotegerin (OPG) is a decoy receptor for TNFRSF11A thereby inhibiting osteoclastogenesis and bone resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoprotegerin (OPG) is a decoy receptor for TNFRSF11A thereby inhibiting osteoclastogenesis and bone resorption (Matsuo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Matsuo et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "84226f2b-3a33-4bc6-ad5e-c624f70195e0",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C51",
+      "claim": "OPG is expressed during differentiation of 3T3L1 adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "OPG is expressed during differentiation of 3T3L1 adipocytes (An et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from An et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "28cc52f9-3c46-4df3-bfc4-3ec251f33430",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C52",
+      "claim": "Expression of OPG is induced by Tnf\u03b1 in 3T3L1 adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of OPG is induced by Tnf\u03b1 in 3T3L1 adipocytes and is associated with obesity in humans (Holecki et al., 2007; Erol et al., 2016; Zaky et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from multiple sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "507da521-b7be-4944-84cd-662266480c3c",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C53",
+      "claim": "OPG is associated with obesity in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of OPG is induced by Tnf\u03b1 in 3T3L1 adipocytes and is associated with obesity in humans (Holecki et al., 2007; Erol et al., 2016; Zaky et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from multiple sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "7365333a-953f-4d6a-b69a-b79f61c8d22e",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C54",
+      "claim": "Car3 is an enzyme that catalyzes the conversion of carbonic acid to CO2 and water.",
+      "claim_type": "EXPLICIT",
+      "source": "Car3 is an enzyme that catalyzes the conversion of carbonic acid to CO2 and water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the biochemical function of Car3 based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "6bd09b1a-8439-4a6b-8332-6ac48caac296",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C55",
+      "claim": "Car3 expression in white adipose is negatively correlated with, and responsive to, long-term obesity in mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Its expression in white adipose is negatively correlated with, and responsive to, long-term obesity in mice and humans (Stanton et al., 1991; Font-Clos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Stanton et al., 1991 and Font-Clos et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "b9009033-2b82-4900-9683-b02e27b1fa9e",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C56",
+      "claim": "Car3 does not protect against diet-induced obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Car3 does not protect against diet-induced obesity and is not necessary for fatty acid synthesis (Renner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Renner et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "d2874c61-a0af-4118-941d-fecee2e138be",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C57",
+      "claim": "Car3 is not necessary for fatty acid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Car3 does not protect against diet-induced obesity and is not necessary for fatty acid synthesis (Renner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Renner et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "58bdddce-46ee-4597-a498-927328c39393",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C58",
+      "claim": "Nnat and F2r show significant imprinting-by-imprinting epistasis for basal glucose levels in the F16 population (FDR = 6.00e\u201316).",
+      "claim_type": "EXPLICIT",
+      "source": "Nnat and F2r show significant imprinting-by-imprinting epistasis for basal glucose levels in the F16 population (FDR = 6.00e\u201316; Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the epistasis testing in the F16 population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "79f432f3-20ad-491f-a5d6-6fd5d0067064",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C59",
+      "claim": "F2r and Nnat are each significantly differentially expressed between reciprocal heterozygotes in the combined F0/F1 population.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate gene expression patterns, we combined F1 biological replicates and F0 high fat-fed female animals (F1 n = 13 and F0 n = 12) and again observe that F2r and Nnat are each significantly differentially expressed between reciprocal heterozygotes, that is by cross (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation finding from qRT-PCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "bdc2495b-525b-4f91-8a24-e8f7500741fc",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C60",
+      "claim": "The co-expression of Nnat and F2r persists in the F0/F1 population.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the co-expression of Nnat and F2r also persists in the F0/F1 population (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the combined F0/F1 analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "1caaf143-823b-4b9e-af5f-3ab89f3308dd",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C61",
+      "claim": "F2r and Nnat are significantly co-expressed in high-fat-fed female F2 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that F2r and Nnat are significantly co-expressed in high-fat-fed female F2 animals (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the F2 validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "b69dd3c8-76fa-4bbc-8007-7e8fc75334c2",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C62",
+      "claim": "F2r expression significantly positively correlates with basal glucose levels in the RNA-sequenced high-fat-fed female F1 animals (r = 0.514, FDR = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "F2r expression significantly positively correlates with basal glucose levels in the RNA-sequenced high-fat-fed female F1 animals (r = 0.514, FDR = 0.01; Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the correlation analysis in F1 animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "238153c6-b485-42ac-8fd9-cc027176effd",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C63",
+      "claim": "F2r expression is significantly positively correlated with basal glucose in the combined F0/F1 population.",
+      "claim_type": "EXPLICIT",
+      "source": "F2r expression is also significantly positively correlated with basal glucose in the combined F0/F1 population (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the combined F0/F1 analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "81af2e90-8d30-485c-b271-d739aa65b2c0",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C64",
+      "claim": "The product of Nnat and F2r expression (Nnat x F2r) is significantly predictive of basal glucose in F2 mice (p = 0.045, R2 = 0.29).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the product of Nnat and F2r expression (Nnat x F2r) is significantly predictive of basal glucose (p = 0.045, R2 = 0.29).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the F2 analysis showing the interaction effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "0df44744-ec42-4841-a9b5-487c0e0318a5",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C65",
+      "claim": "Mitochondrial genome identity does not significantly covary with F2r expression (p = 0.198).",
+      "claim_type": "EXPLICIT",
+      "source": "We find mitochondrial genome identity does not significantly covary with F2r expression (p = 0.198), Nnat expression (p = 0.365), or basal glucose (p = 0.388).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the F2 analysis testing for mitochondrial effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "45ffbe2e-3095-4a1e-8d3f-3c022a77b164",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C66",
+      "claim": "Mitochondrial genome identity does not significantly covary with Nnat expression (p = 0.365).",
+      "claim_type": "EXPLICIT",
+      "source": "We find mitochondrial genome identity does not significantly covary with F2r expression (p = 0.198), Nnat expression (p = 0.365), or basal glucose (p = 0.388).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the F2 analysis testing for mitochondrial effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "038e41ed-0031-4fe5-bc35-47152000fe1c",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C67",
+      "claim": "Mitochondrial genome identity does not significantly covary with basal glucose (p = 0.388).",
+      "claim_type": "EXPLICIT",
+      "source": "We find mitochondrial genome identity does not significantly covary with F2r expression (p = 0.198), Nnat expression (p = 0.365), or basal glucose (p = 0.388).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the F2 analysis testing for mitochondrial effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "96db090c-67a4-48e6-9a15-b1fff6c7e152",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C68",
+      "claim": "There is a negative association between Nnat and F2r expression within adipocytes along the adipogenic trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Further there is a negative association between Nnat and F2r expression within adipocytes along the trajectory (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the single-cell RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "84bc09f9-cdae-45c0-aacd-8193453a2251",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C69",
+      "claim": "Eight of the nine genes comprising the epistatic parent-of-origin effect network are differentially expressed along the adipogenic trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to interrogating Nnat and F2r in single cells along an adipogenic trajectory, we found that eight of the nine genes comprising the epistatic parent-of-origin effect network described above are differentially expressed along the trajectory, and they associate with cell types that are consistent with their respective roles in adipose tissue (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the single-cell RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "0b4c58c8-ba3d-4b23-81e7-258d61fce365",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C70",
+      "claim": "The maternally expressed transcription factor KLF14 regulates biallelic gene expression related to adiposity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the maternally expressed transcription factor KLF14 (kruppel-like factor 14) regulates biallelic gene expression related to adiposity (Parker-Katiraee et al., 2007; Small et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Parker-Katiraee et al., 2007 and Small et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "4a56c064-2bde-4304-873d-d5dd3fae4404",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C71",
+      "claim": "Two SNPs (rs4731702, rs972283) upstream of KLF14 are associated with type II diabetes and cholesterol levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping studies have identified two SNPs (rs4731702, rs972283) upstream of KLF14 associated with type II diabetes and cholesterol levels (Voight et al., 2010; Teslovich et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Voight et al., 2010 and Teslovich et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "5837a3f3-bb1c-4b4c-a331-386c7170e21a",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C72",
+      "claim": "Both variants (rs4731702, rs972283) have maternally restricted cis-regulatory associations with KLF14 expression in adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Both variants have maternally restricted cis-regulatory associations with KLF14 expression in adipose tissue (Kong et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Kong et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "be7aca13-7da7-4ff2-9ab5-e98cbbd3f022",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C73",
+      "claim": "rs4731702 is enriched for trans-associations with KLF family transcription factor binding sites in subcutaneous white adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "eQTL analysis found that rs4731702 is also enriched for trans-associations with KLF family transcription factor binding sites in subcutaneous white adipose tissue, suggesting that KLF14 may be a master transcriptional regulator in adipose tissue (Small et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Small et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "b69b4ee1-52de-4459-99bc-2b2feb1e5914",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C74",
+      "claim": "KLF14 may be a master transcriptional regulator in adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "eQTL analysis found that rs4731702 is also enriched for trans-associations with KLF family transcription factor binding sites in subcutaneous white adipose tissue, suggesting that KLF14 may be a master transcriptional regulator in adipose tissue (Small et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on cited information from Small et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "f77cd490-a39b-4c1b-b939-50e5f1c09bb9",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C75",
+      "claim": "The SERCA channel is uncoupled in beige adipocytes as part of a UCP1-independent form of non-shivering thermogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The SERCA channel is uncoupled in beige adipocytes as part of a UCP1-independent form of non-shivering thermogenesis (Ikeda and Yamada, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Ikeda and Yamada, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "31079b7c-7b64-4797-b52d-36c331b75f3d",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C76",
+      "claim": "Non-shivering thermogenesis consumes a significant amount of energy, thereby altering glucose homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-shivering thermogenesis consumes a significant amount of energy, thereby altering glucose homeostasis (Carson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from Carson et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "20a5b447-30bc-48d6-8f8a-1b057a32c19c",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C77",
+      "claim": "The fitness of fathers and paternal relatives is improved with larger progeny, particularly in the case of multi-paternity litters.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness of fathers and paternal relatives, particularly in the case of multi-paternity litters, is improved with larger progeny (Mochizuki et al., 1996; Babak et al., 2015; Fowden and Moore, 2012; Patten et al., 2014; Wilkins and Haig, 2003; Haig, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited information from multiple sources supporting the sexual conflict hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "caa59896-6d8e-4f24-adac-9a7d23cf7e74",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C78",
+      "claim": "Larger progeny come at a fitness disadvantage to the mother.",
+      "claim_type": "EXPLICIT",
+      "source": "This comes at a fitness disadvantage to the mother.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the sexual conflict hypothesis explanation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "108885e1-1f86-4498-aae7-4667023a801c",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "claim_id": "C79",
+      "claim": "The fitness of mothers is improved by progeny of a manageable size, allowing her to produce multiple litters.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness of mothers is improved by progeny of a manageable size, allowing her to produce multiple litters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the sexual conflict hypothesis explanation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fc48ae34-12ad-4d78-b20d-54d59392ceba",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study identified 23 genes showing significant parent-of-origin-dependent allele-specific expression (ASE) in F1 reciprocal crosses, of which 17 are canonically imprinted genes, 2 are located in known imprinted domains but not previously reported as imprinted, and 4 are novel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 describe the identification and characterization of ASE genes using RNA-seq data from F1 animals. The methods describe appropriate statistical approaches including permutation-based FDR estimation and parent-of-origin effect score calculations. The identification of both known and novel imprinted genes provides validation of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "f3a3b223-7afa-4950-a5ca-79bf0eced41d",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "33 genes are significantly differentially expressed (DE) between reciprocal crosses in at least one sex or dietary context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 reports differential expression analysis results using appropriate statistical methods (EdgeR with TMM normalization, FDR \u2264 0.1, fold change \u2265 1.5). The methods section describes rigorous multiple testing correction procedures using permutation-based approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "54549ab1-f467-44fd-bc18-cacd66a13650",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Genes showing parent-of-origin effects form a highly interconnected network of 52 genes forming 217 gene pairs, with most interactions being trans-chromosomal. Two genes (Nnat and Cdkn1c) are both canonically imprinted and differentially expressed by reciprocal cross.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 describe network construction from ASE and DE genes using model-based prediction with cross-validation to prevent overfitting. The identification of trans-chromosomal interactions and dual ASE/DE genes is supported by the data and methods, though the biological interpretation of these statistical associations requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "7008059a-1648-4f65-af10-ca6e30cd9b29",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Functional enrichment analysis identified seven significantly overrepresented terms (FDR \u2264 0.05) in the parent-of-origin effects network, suggesting roles in signaling and genetic imprinting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 report functional enrichment results using appropriate methods (WEB-based Gene Set Analysis Toolkit) with proper multiple testing correction. The interpretation that the network plays a role in signaling and imprinting is consistent with the enriched terms, though this remains a computational prediction requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "e2ce8ed7-9979-4afb-8582-bbfc5705b1f6",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Nine epistatic interactions involving three ASE genes (Cdkn1c, Nnat, Plcd1) and six DE genes (Car3, F2r, Hexb, Hmgcr, Srgn, Tnfrsf11a) replicated in the F16 population (FDR \u2264 0.1) and are associated with four metabolic phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 describe validation of F1-identified interactions in an independent F16 population using imprinting-by-imprinting epistasis testing. The use of an orthogonal population and appropriate statistical methods (permutation-based FDR estimation) strengthens these findings, though the FDR threshold of 0.1 is relatively permissive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "d5a7fc6d-1a1f-48ee-8f3c-d4adabc1a564",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The nine genes form a putative diet-responsive network affecting adipogenesis, forming a nutritional responsive pathway with genes jointly serving cellular functions associated with growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30, C7, and C8 make functional interpretations of the identified gene network. While the genes are statistically associated and literature supports their individual roles in adipogenesis and growth, the claim that they form a functional pathway is largely inferential and requires experimental validation of the proposed interactions and pathway structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "22bfd5a7-9039-4366-985e-256b705f01f5",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Nnat and F2r show significant epistasis for basal glucose in F16 mice (FDR = 6.00e-16), are differentially expressed by reciprocal cross in F0/F1 animals, and their co-expression persists across F0/F1 and F2 populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 demonstrate consistent patterns across multiple independent populations (F16, F0/F1, F2) using both RNA-seq and qRT-PCR validation. The highly significant epistasis in F16 and replication of expression patterns across generations provides strong support, though sample sizes in validation cohorts are modest (F0/F1 n=25, F2 n=14).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "9e00e4fc-bd44-4f21-a7d0-500d874fcdb5",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "F2r expression positively correlates with basal glucose in F1 (r=0.514, FDR=0.01) and F0/F1 populations, while the product of Nnat and F2r expression significantly predicts basal glucose in F2 mice (p=0.045, R\u00b2=0.29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 show phenotype-gene expression associations across populations. The significant correlation in F1 and the interaction effect in F2 support the epistatic model, though the modest R\u00b2 value (0.29) indicates other factors contribute substantially to glucose variation. The lack of individual gene significance in F2 but significant interaction term is consistent with epistasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "d17cab85-d040-42c5-b32e-fb7178c43cff",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mitochondrial genome identity does not significantly covary with F2r expression (p=0.198), Nnat expression (p=0.365), or basal glucose (p=0.388) in F2 mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 address potential confounding by mitochondrial inheritance. The lack of significant associations rules out mitochondrial effects as a major contributor to the observed patterns, though the modest F2 sample size (n=14) limits power to detect small effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "e4ba550e-3ce1-4aed-a26b-f83b879fb4b8",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Single-cell RNA-seq reveals that Nnat expression increases and F2r expression decreases in pre-adipocytes along an adipogenic trajectory, with a negative association between their expression within adipocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, and C68 use publicly available scRNA-seq data to validate expression patterns. The opposing expression trends along the adipogenic trajectory are consistent with bulk tissue observations, though the data come from a different genetic background (C57BL/6J) and sex/diet context than the LG/J\u00d7SM/J crosses, limiting direct comparability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "9666fac8-032a-4098-b763-3931cd9acaf5",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Eight of nine genes in the epistatic parent-of-origin effect network are differentially expressed along the adipogenic trajectory in single-cell data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 extends the single-cell analysis to the broader network. The differential expression of network genes along the trajectory supports their involvement in adipogenesis, though differences in genetic background and experimental context between the scRNA-seq data and the study populations should be noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "81a8322d-4613-4b3c-b8f5-985a40b58200",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study proposes and provides evidence that non-imprinted genes can generate complex parent-of-origin effects on metabolic traits through interactions with imprinted genes, identifying a network of three imprinted and six non-imprinted genes showing parent-of-origin effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C6 represent the central hypothesis and main finding. The identification of epistatic interactions between imprinted (ASE) and non-imprinted (DE) genes across multiple populations provides strong support for the hypothesis, though direct experimental manipulation would be needed to definitively establish causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "26bad019-e786-4b92-9690-b25491b1a691",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study synthesizes literature on the biological functions of network genes, describing their roles in calcium signaling, adipogenesis, cell proliferation, cholesterol biosynthesis, and bone remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C57 are literature-based descriptions of gene functions, appropriately cited. These provide biological context for interpreting the network but do not represent new experimental findings from this study. The synthesis is reasonable but the functional pathway model remains inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "606ce1d2-6300-4621-b55d-8d5a4a7f927b",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The maternally expressed transcription factor KLF14 regulates biallelic gene expression related to adiposity, with SNPs upstream of KLF14 showing parent-of-origin-specific associations with metabolic traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 describe prior work on KLF14 as an example of imprinted-biallelic gene interactions. These are appropriately cited and provide precedent for the study's hypothesis, though they represent background knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "f4e46e17-16c6-4e05-b249-a8409b13c4df",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The SERCA channel is uncoupled in beige adipocytes as part of UCP1-independent non-shivering thermogenesis, which consumes significant energy and alters glucose homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 cite established mechanisms linking SERCA function to thermogenesis and glucose homeostasis. These provide a plausible mechanistic connection between Nnat (which affects SERCA) and glucose phenotypes, though this remains speculative in the context of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "dad37396-5925-4096-9d6f-195dcafbe946",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The sexual conflict hypothesis posits that larger progeny improve paternal fitness but disadvantage maternal fitness, while mothers benefit from producing multiple litters of manageable size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 describe the sexual conflict hypothesis for genomic imprinting, appropriately cited. This provides evolutionary context for interpreting parent-of-origin effects but represents established theory rather than new findings. The connection to the identified network is speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "190da025-c5a8-48c2-8539-793bc61d2aa8",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Parent-of-origin effects are unexpectedly common in complex traits including metabolic and neurological traits, and can be modified by the environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 represent established knowledge in the field that motivates the study. These are general statements supported by the literature and provide appropriate context for the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "301bf7cd-de27-4e6e-bd84-eb5e10473e3e",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Previous QTL mapping in F16 LG/J\u00d7SM/J mice identified context-specific parent-of-origin effects on metabolic traits, but these QTL were not enriched for known imprinted genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 describe prior work that motivates the current study. These are appropriately cited and establish the gap in knowledge that the current work addresses\u2014namely, the mechanism underlying parent-of-origin effects in regions lacking obvious imprinted gene candidates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "dc135121-1cb1-4030-8f06-04a3947cf51f",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "There are 107 verified imprinted genes in humans and 124 in mice, with approximately 70% overlap between species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 cite established numbers of imprinted genes from Jirtle, 2012. These provide important context for the rarity of imprinted genes relative to the prevalence of parent-of-origin effects, though the numbers may have been updated since 2012.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "28655c86-f9ac-4794-8afd-983fbab7dfcd",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Despite the rarity of imprinted genes, parent-of-origin effects on complex traits are relatively common, suggesting canonical imprinting mechanisms are insufficient to explain these phenomena.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 synthesize observations from the literature to motivate the study's hypothesis. The logic is sound\u2014the discrepancy between the small number of imprinted genes and the prevalence of parent-of-origin effects suggests additional mechanisms, which this study investigates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    },
+    {
+      "id": "59c25f0e-b648-48b2-8713-b1faafd02525",
+      "content_id": "7bfc7812-6e03-427f-94be-69fb7f983ff1",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The interaction between Nnat and F2r associates with serum glucose levels across generations in high-fat-fed females.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C9 summarizes a key finding demonstrated across multiple populations (F16, F0/F1, F2) and supported by claims C58-C64. The cross-generational consistency strengthens this result, though the mechanistic basis remains to be experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:06:54.512110Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ab91dbd9-bbd9-4bf3-872b-8dcc5fbc1279",
+      "result_id": "fc48ae34-12ad-4d78-b20d-54d59392ceba"
+    },
+    {
+      "claim_id": "c8eb13bb-1a66-4c0e-b5c0-45c819633ea1",
+      "result_id": "fc48ae34-12ad-4d78-b20d-54d59392ceba"
+    },
+    {
+      "claim_id": "2b281a27-3577-4cb4-ab07-bdd435955f7b",
+      "result_id": "fc48ae34-12ad-4d78-b20d-54d59392ceba"
+    },
+    {
+      "claim_id": "560dae67-a4e2-4087-9541-c4c6eb17d04d",
+      "result_id": "fc48ae34-12ad-4d78-b20d-54d59392ceba"
+    },
+    {
+      "claim_id": "b1cc50df-be81-45dc-ae27-52af903bb92d",
+      "result_id": "f3a3b223-7afa-4950-a5ca-79bf0eced41d"
+    },
+    {
+      "claim_id": "ece14564-5333-409c-b734-63529950ae32",
+      "result_id": "54549ab1-f467-44fd-bc18-cacd66a13650"
+    },
+    {
+      "claim_id": "631e7dfc-a53c-4a2a-99eb-165dcded85bf",
+      "result_id": "54549ab1-f467-44fd-bc18-cacd66a13650"
+    },
+    {
+      "claim_id": "425382da-9f62-482d-9310-4c7176c32201",
+      "result_id": "54549ab1-f467-44fd-bc18-cacd66a13650"
+    },
+    {
+      "claim_id": "3157ebbd-fdc6-4c39-8737-6bd2c1d795a3",
+      "result_id": "7008059a-1648-4f65-af10-ca6e30cd9b29"
+    },
+    {
+      "claim_id": "533b6804-cd6b-466f-ba17-9e28b6b57395",
+      "result_id": "7008059a-1648-4f65-af10-ca6e30cd9b29"
+    },
+    {
+      "claim_id": "702ac775-59b9-4c82-ab3d-b2ae21925117",
+      "result_id": "e2ce8ed7-9979-4afb-8582-bbfc5705b1f6"
+    },
+    {
+      "claim_id": "5cf576b8-162e-4b74-9091-73b9d5ab6bda",
+      "result_id": "e2ce8ed7-9979-4afb-8582-bbfc5705b1f6"
+    },
+    {
+      "claim_id": "ae0eca9a-e36c-4f91-ae33-02b08a1ddd54",
+      "result_id": "e2ce8ed7-9979-4afb-8582-bbfc5705b1f6"
+    },
+    {
+      "claim_id": "3cb4d398-66c7-4c97-9383-cae5d5141f87",
+      "result_id": "d5a7fc6d-1a1f-48ee-8f3c-d4adabc1a564"
+    },
+    {
+      "claim_id": "e0e52412-6d99-401b-bbe8-e073b004cbb8",
+      "result_id": "d5a7fc6d-1a1f-48ee-8f3c-d4adabc1a564"
+    },
+    {
+      "claim_id": "771bcc79-f583-47de-9a2c-acce42013e49",
+      "result_id": "d5a7fc6d-1a1f-48ee-8f3c-d4adabc1a564"
+    },
+    {
+      "claim_id": "58bdddce-46ee-4597-a498-927328c39393",
+      "result_id": "22bfd5a7-9039-4366-985e-256b705f01f5"
+    },
+    {
+      "claim_id": "79f432f3-20ad-491f-a5d6-6fd5d0067064",
+      "result_id": "22bfd5a7-9039-4366-985e-256b705f01f5"
+    },
+    {
+      "claim_id": "bdc2495b-525b-4f91-8a24-e8f7500741fc",
+      "result_id": "22bfd5a7-9039-4366-985e-256b705f01f5"
+    },
+    {
+      "claim_id": "1caaf143-823b-4b9e-af5f-3ab89f3308dd",
+      "result_id": "22bfd5a7-9039-4366-985e-256b705f01f5"
+    },
+    {
+      "claim_id": "b69dd3c8-76fa-4bbc-8007-7e8fc75334c2",
+      "result_id": "9e00e4fc-bd44-4f21-a7d0-500d874fcdb5"
+    },
+    {
+      "claim_id": "238153c6-b485-42ac-8fd9-cc027176effd",
+      "result_id": "9e00e4fc-bd44-4f21-a7d0-500d874fcdb5"
+    },
+    {
+      "claim_id": "81af2e90-8d30-485c-b271-d739aa65b2c0",
+      "result_id": "9e00e4fc-bd44-4f21-a7d0-500d874fcdb5"
+    },
+    {
+      "claim_id": "0df44744-ec42-4841-a9b5-487c0e0318a5",
+      "result_id": "d17cab85-d040-42c5-b32e-fb7178c43cff"
+    },
+    {
+      "claim_id": "45ffbe2e-3095-4a1e-8d3f-3c022a77b164",
+      "result_id": "d17cab85-d040-42c5-b32e-fb7178c43cff"
+    },
+    {
+      "claim_id": "038e41ed-0031-4fe5-bc35-47152000fe1c",
+      "result_id": "d17cab85-d040-42c5-b32e-fb7178c43cff"
+    },
+    {
+      "claim_id": "0e312b08-641b-48bd-abea-f2bda46cc4d8",
+      "result_id": "e4ba550e-3ce1-4aed-a26b-f83b879fb4b8"
+    },
+    {
+      "claim_id": "a7a562be-d56c-4770-9ea5-d6ba83b7a5aa",
+      "result_id": "e4ba550e-3ce1-4aed-a26b-f83b879fb4b8"
+    },
+    {
+      "claim_id": "96db090c-67a4-48e6-9a15-b1fff6c7e152",
+      "result_id": "e4ba550e-3ce1-4aed-a26b-f83b879fb4b8"
+    },
+    {
+      "claim_id": "84bc09f9-cdae-45c0-aacd-8193453a2251",
+      "result_id": "9666fac8-032a-4098-b763-3931cd9acaf5"
+    },
+    {
+      "claim_id": "8cdb55f3-91d3-4f41-95fa-efff06785525",
+      "result_id": "81a8322d-4613-4b3c-b8f5-985a40b58200"
+    },
+    {
+      "claim_id": "b28ce2cc-5654-4aca-888c-7050bd23bda6",
+      "result_id": "81a8322d-4613-4b3c-b8f5-985a40b58200"
+    },
+    {
+      "claim_id": "0def6689-e5d0-48bd-a329-ccadca04e752",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "a85461c7-b3b5-4fb3-86b4-a584cd6d1809",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "b790b4c6-3a9f-4045-a6e9-7cab0963a781",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "e0e3fbcd-c5a9-4762-8ee5-b1e8da724aca",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "e6edff92-dd8f-475a-9d15-0c520ac0d3c4",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "0efb552d-bd2b-428f-ae2d-15555c31e2be",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "60c7a828-be81-4680-8d33-ea765ebb2fb6",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "75a97b7a-d038-4b96-aa27-3fe661def350",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "29d19698-ead2-4594-8138-db975b5640f5",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "79f90693-0f39-4a63-a52d-d9339d76d08d",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "c365f410-9848-4090-9203-2706fc8cb9f5",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "e8d9dcf9-0bb3-4ec9-be5e-1fdd4fde16e0",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "870e1287-a70b-4692-848a-54d3cb43981e",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "5f74ba46-c856-465d-9198-e6cc4f02c831",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "e6d88c41-bb55-48f1-ad62-7cef5d6ec973",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "547311bb-2377-43bd-9965-2c1ab5dabc4e",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "c3afd046-3865-4c18-b857-4a7255cf7c91",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "1c1e7086-2855-4e07-a905-93c91e2f8202",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "9693761c-20dc-48fb-b8e4-70fa9564eb31",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "fa1ffdff-5040-429d-a4d5-3d274b26ef4a",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "84226f2b-3a33-4bc6-ad5e-c624f70195e0",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "28cc52f9-3c46-4df3-bfc4-3ec251f33430",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "507da521-b7be-4944-84cd-662266480c3c",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "7365333a-953f-4d6a-b69a-b79f61c8d22e",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "6bd09b1a-8439-4a6b-8332-6ac48caac296",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "b9009033-2b82-4900-9683-b02e27b1fa9e",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "d2874c61-a0af-4118-941d-fecee2e138be",
+      "result_id": "26bad019-e786-4b92-9690-b25491b1a691"
+    },
+    {
+      "claim_id": "0b4c58c8-ba3d-4b23-81e7-258d61fce365",
+      "result_id": "606ce1d2-6300-4621-b55d-8d5a4a7f927b"
+    },
+    {
+      "claim_id": "4a56c064-2bde-4304-873d-d5dd3fae4404",
+      "result_id": "606ce1d2-6300-4621-b55d-8d5a4a7f927b"
+    },
+    {
+      "claim_id": "5837a3f3-bb1c-4b4c-a331-386c7170e21a",
+      "result_id": "606ce1d2-6300-4621-b55d-8d5a4a7f927b"
+    },
+    {
+      "claim_id": "be7aca13-7da7-4ff2-9ab5-e98cbbd3f022",
+      "result_id": "606ce1d2-6300-4621-b55d-8d5a4a7f927b"
+    },
+    {
+      "claim_id": "b69b4ee1-52de-4459-99bc-2b2feb1e5914",
+      "result_id": "606ce1d2-6300-4621-b55d-8d5a4a7f927b"
+    },
+    {
+      "claim_id": "f77cd490-a39b-4c1b-b939-50e5f1c09bb9",
+      "result_id": "f4e46e17-16c6-4e05-b249-a8409b13c4df"
+    },
+    {
+      "claim_id": "31079b7c-7b64-4797-b52d-36c331b75f3d",
+      "result_id": "f4e46e17-16c6-4e05-b249-a8409b13c4df"
+    },
+    {
+      "claim_id": "20a5b447-30bc-48d6-8f8a-1b057a32c19c",
+      "result_id": "dad37396-5925-4096-9d6f-195dcafbe946"
+    },
+    {
+      "claim_id": "caa59896-6d8e-4f24-adac-9a7d23cf7e74",
+      "result_id": "dad37396-5925-4096-9d6f-195dcafbe946"
+    },
+    {
+      "claim_id": "108885e1-1f86-4498-aae7-4667023a801c",
+      "result_id": "dad37396-5925-4096-9d6f-195dcafbe946"
+    },
+    {
+      "claim_id": "70418a28-0725-4720-86a7-c2802dbb036f",
+      "result_id": "190da025-c5a8-48c2-8539-793bc61d2aa8"
+    },
+    {
+      "claim_id": "09b99585-209c-4064-a386-fcfd71c1b335",
+      "result_id": "190da025-c5a8-48c2-8539-793bc61d2aa8"
+    },
+    {
+      "claim_id": "878c0fba-5139-4af6-a6d6-b2d44e54b263",
+      "result_id": "301bf7cd-de27-4e6e-bd84-eb5e10473e3e"
+    },
+    {
+      "claim_id": "c2fe0fee-15f6-43e2-a565-ea2a5761dffd",
+      "result_id": "301bf7cd-de27-4e6e-bd84-eb5e10473e3e"
+    },
+    {
+      "claim_id": "8fae8f94-bda3-487a-95dc-117e7eebd7c9",
+      "result_id": "dc135121-1cb1-4030-8f06-04a3947cf51f"
+    },
+    {
+      "claim_id": "59c1fb3f-be47-4ead-ae68-6cd742705c9a",
+      "result_id": "dc135121-1cb1-4030-8f06-04a3947cf51f"
+    },
+    {
+      "claim_id": "d2e14f15-1f14-440d-9c55-53d07b3bac1d",
+      "result_id": "dc135121-1cb1-4030-8f06-04a3947cf51f"
+    },
+    {
+      "claim_id": "d30543fa-520d-443f-8f44-aa1af35200f6",
+      "result_id": "28655c86-f9ac-4794-8afd-983fbab7dfcd"
+    },
+    {
+      "claim_id": "bcb10cbc-dbeb-404e-a2a0-c096aaeb9f50",
+      "result_id": "28655c86-f9ac-4794-8afd-983fbab7dfcd"
+    },
+    {
+      "claim_id": "07499e3e-4c50-4dd4-9fd2-e4d0e2eddfa0",
+      "result_id": "59c25f0e-b648-48b2-8713-b1faafd02525"
+    }
+  ],
+  "comparisons": []
+}

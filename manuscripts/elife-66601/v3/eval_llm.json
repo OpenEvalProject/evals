@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C36",
+      "C37",
+      "C59",
+      "C60"
+    ],
+    "result": "Proportionate mixing models (where interactions occur proportionally to contact rates) reduced the herd immunity threshold (HIT) compared to homogeneous models, but incorporating preferential within-group mixing (assortative mixing) increased the HIT back toward homogeneous values. For R0=3, proportionate mixing reduced HIT to 58% (NYC) and 40% (Long Island) compared to 67% in homogeneous models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C36, C37, C59, and C60 collectively demonstrate this core finding through model fitting to serosurvey data and systematic comparison across model structures. The quantitative results are specific and supported by Figures 1 and related supplements showing HIT versus R0 relationships across model types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C38",
+      "C39",
+      "C49",
+      "C50",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Across all model variants, minority populations bore a disproportionate burden of infection when the population reached the HIT. In the census-informed model for Long Island, 81% of Hispanics/Latinos and 56% of non-Hispanic Black people were infected at HIT compared to 34% of non-Hispanic whites, demonstrating the fundamentally inequitable outcome of achieving herd immunity through infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C38, C39, C49, C50, C66, C67, and C68 provide consistent quantitative evidence across multiple model variants (proportionate mixing and census-informed) for both NYC and Long Island. Figure 2 visually supports these disparities. The finding is robust across model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C46",
+      "C47",
+      "C62"
+    ],
+    "result": "Model fitting to serosurvey data estimated that minority groups had elevated contact rates relative to non-Hispanic whites. Under proportionate mixing, Hispanics/Latinos had 2.25\u00d7 (NYC) and 4.31\u00d7 (Long Island) the contact rates of non-Hispanic whites. Census-informed models yielded lower but still elevated estimates: 1.62\u00d7 (NYC) and 2.60\u00d7 (Long Island).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, C46, C47, and C62 present model-fitted parameter estimates that are internally consistent and concordant with cited mobility studies (C26, C63). The census-informed estimates are more realistic and align better with empirical mobility data, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C65"
+    ],
+    "result": "Census-informed models estimated that 46% (NYC) and 39% (Long Island) of contacts were exclusively within racial/ethnic groups, reflecting residential segregation arising from historical discriminatory practices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, and C65 describe the assortativity parameter fitted using an iterative approach combining serosurvey and census block group data. The methodology is clearly described and the interpretation linking to residential segregation is supported by citations (C65). The approach is novel and addresses limitations of proportionate mixing models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C61",
+      "C80"
+    ],
+    "result": "Instantaneous incidence rate ratios for high-contact minority groups were initially elevated but reversed after the epidemic peaked due to depletion of susceptibles in these groups. Cumulative incidence ratios remained elevated throughout but decreased in magnitude over time, highlighting the need to account for epidemic dynamics when evaluating interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C61, and C80 describe temporal dynamics of epidemiological measures supported by Figure 3 and theoretical predictions from structured models (C52). The finding is important for interpretation of observational data and is supported by citations to empirical studies showing similar patterns (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The relationship between R0 and HIT was robust to non-pharmaceutical interventions (NPIs), remaining similar between mitigated and unmitigated epidemics. However, final epidemic sizes depended strongly on NPI intensity and duration, and the most stringent NPIs did not necessarily produce the smallest final sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe sensitivity analyses examining NPI effects, supported by Figure 1 supplements 5-7. The finding that HIT is robust to mitigation while final size is not is methodologically important and clearly demonstrated. The non-monotonic relationship between NPI stringency and final size is supported by citations to optimal control literature (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study has several important limitations: serosurvey sampling biases (grocery store sampling leading to survival and ascertainment bias), assumptions of complete and non-waning immunity, equal NPI effects across groups, consideration of only one demographic characteristic, and use of a single cross-sectional serosurvey. Lack of systematically collected race/ethnicity-stratified data remains a barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C72-C79 comprehensively describe study limitations with appropriate citations. The authors are transparent about data limitations and modeling assumptions. These limitations are important for interpreting the results, which the authors explicitly state are 'illustrative and not best estimates.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Public health interventions targeting high-risk minority populations could have synergistic effects for controlling the overall epidemic. Vaccination strategies prioritizing essential workers (who are disproportionately from minority backgrounds) could both reduce transmission and address inequities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 present policy implications supported by the modeling results and citations to vaccination modeling studies (C70). The connection between model findings and intervention strategies is logical, though the authors appropriately note this requires further modeling work and careful consideration of legal/ethical dimensions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript establishes the background and motivation for the study, including definitions of key concepts (HIT), review of prior work on heterogeneous models and age-structured models, documentation of racial/ethnic disparities in COVID-19, and identification of knowledge gaps regarding how these disparities affect epidemic dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C26 provide comprehensive background supported by appropriate citations. The authors correctly identify that while age-structured models exist and racial/ethnic disparities are documented, the impact of racial/ethnic heterogeneity on epidemic dynamics is unclear (C1, C25). This establishes clear motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Funding sources are disclosed for the authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are straightforward statements of funding support that are verifiable and standard for scientific manuscripts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C81"
+    ],
+    "result": "Supporting contextual claims: frontline workers are disproportionately from minority backgrounds and unable to socially distance to the same degree as other workers; racial/ethnic disparities in seropositivity have been observed internationally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, and C81 provide supporting context with appropriate citations. These are well-established findings from prior literature that support the interpretation of the modeling results.",
+    "result_type": "MINOR"
+  }
+]

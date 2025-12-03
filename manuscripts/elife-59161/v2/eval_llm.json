@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C57",
+      "C58",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "VocalMat achieves high detection accuracy for mouse USVs, detecting over 98% of manually labeled USVs in a validated test dataset with 98.63\u00b10.20% overall accuracy, missing approximately 1 in 75 USVs. The segmentation process detected 4428 of 4441 real USVs (missing 13), and after CNN classification, achieved 99.04\u00b10.31% sensitivity and 94.40\u00b11.37% specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C34, C57-C58, C70-C75 provide converging quantitative evidence from a fully validated test dataset with manual ground-truth annotations. The reported metrics (sensitivity, specificity, accuracy) are internally consistent and supported by detailed statistical reporting including confidence intervals. The test dataset was manually curated by multiple investigators with a reconciliation process for discrepancies, providing strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "VocalMat's CNN classifier achieves 86% accuracy in classifying USVs into 11 categories, with lower accuracy for rare USV types (e.g., reverse chevron) and USVs with multiple components (e.g., multiple steps, two steps). When considering the two most likely labels, accuracy increases to 94%, suggesting possible overlap between category definitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C98-C102 are supported by experimental data from the test dataset with detailed confusion matrices provided. The observation of improved accuracy when considering top-two labels (94% vs 86%) and lower performance on rare/complex types is consistent with typical CNN behavior on imbalanced datasets. The inference about category overlap (C102) is reasonable given the data, though the manuscript acknowledges this is interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "VocalMat demonstrates superior detection sensitivity compared to existing tools when tested on external datasets, achieving 98.62\u00b10.53% accuracy on the USVSEG dataset (detecting ~6% more USVs than USVSEG) and 91.73% true positive rate on the DeepSqueak dataset (compared to DeepSqueak's 77.95%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 provide comparative performance data on independently validated external datasets from other laboratories. The comparisons show consistent superiority of VocalMat across different datasets (USVSEG pup and adult recordings, DeepSqueak recordings). However, the comparison may not be entirely fair as noted in C91 - DeepSqueak was not custom-trained on the test data, and other tools' parameters were not exhaustively optimized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C88",
+      "C89",
+      "C92",
+      "C111"
+    ],
+    "result": "VocalMat outperforms manually-configured tools (Ax, MUPET, USVSEG) and DeepSqueak in detecting USVs on the test dataset, achieving superior sensitivity and accuracy without requiring parameter tuning or custom training. Ax showed 4.99\u00b11.34% missed USVs with 37.67\u00b15.59% false discovery rate, MUPET showed 33.74\u00b13.81% missed USVs with 38.78\u00b16.56% false discovery rate, USVSEG showed 6.53\u00b12.56% missed USVs with 7.58\u00b14.31% false discovery rate, and DeepSqueak showed 27.13\u00b13.78% missed USVs with 7.61\u00b12.35% false discovery rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C84, C86, C88-C89, C92, C111 provide quantitative comparisons, the evaluation is uncertain because: (1) the manuscript acknowledges not all parameter combinations were tested for Ax, MUPET, and USVSEG, (2) DeepSqueak was not custom-trained on the test data (C91), and (3) the difficulty in fair comparison is explicitly noted (C110). The superiority claim may be valid but the comparison methodology has acknowledged limitations that prevent definitive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "VocalMat achieves satisfactory performance in detecting harmonic components of USVs, with 93.32\u00b11.96% true positive rate, 5.39\u00b11.18% false positive rate, 6.68\u00b11.96% false negative rate, and 12.19\u00b13.44% overall error rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by experimental validation against the manually annotated test dataset. The performance metrics are clearly reported with statistical measures. The characterization as 'satisfactory' (C97) is subjective but reasonable given the ~88% accuracy for this secondary feature detection task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C33",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "VocalMat uses an automated image processing pipeline to detect USVs from spectrograms without user-defined parameters. The pipeline converts audio to spectrograms via STFT, applies contrast enhancement and adaptive thresholding for binarization, refines segmentation via morphological operations, combines blobs separated by <10ms based on experimental observations, and extracts spectral features (frequency, intensity, duration, harmonic components) represented as mean values every 0.5ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C33, C37-C46 describe the detection methodology with sufficient technical detail. The approach is standard image processing combined with domain knowledge (10ms minimum interval). The claim of eliminating user-defined parameters (C5) is supported by the automated threshold calculation via differential geometry. The preservation of spectral features (C45-C46) is a direct consequence of the described methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C62",
+      "C63",
+      "C65"
+    ],
+    "result": "VocalMat implements a Local Median Filter to automatically eliminate segmentation artifacts from the pool of USV candidates. In the test dataset, this filter reduced 7741 initial candidates to 5171 by calculating a recording-specific contrast threshold based on the inflection point of the cumulative distribution function, effectively removing low-intensity segmentation noise while retaining 4421 of 4428 real USVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C62-C63, C65 describe a novel noise filtering approach with clear mathematical justification using differential geometry to find the inflection point. The effectiveness is demonstrated quantitatively (C63, C65) with minimal loss of true USVs (7 out of 4428). The approach addresses a real problem identified through data inspection (C54) and provides an automated solution without user parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C36",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "VocalMat uses transfer learning with a pre-trained AlexNet CNN modified for 12-category classification (11 USV types plus noise). The network was trained on 12,954 manually labeled images using stochastic gradient descent with momentum (learning rate 10^-4, momentum 0.9, weight decay 10^-4, batch size 128), achieving 95.28% validation accuracy after 17 minutes of training with early stopping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C36, C66-C69, C128-C134 provide comprehensive technical details of the CNN implementation and training. The use of transfer learning from ImageNet is standard practice. Training parameters are fully specified, and the validation accuracy (95.28%) is reported with training time. The 90/10 train/validation split (C132) and early stopping criterion (C133) are appropriate methodological choices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C114"
+    ],
+    "result": "VocalMat provides a flexible classification approach by outputting probability distributions across USV categories rather than single labels. Using Diffusion Maps for dimensionality reduction, the probability distributions can be visualized and compared across experimental conditions, revealing structural changes in vocal repertoires such as the robust change observed in the treatment group during the test condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106, C114 describe an analytical framework built on VocalMat's probability outputs. The use of Diffusion Maps (C104) is supported by appropriate citation. The application to experimental data (C105-C106) demonstrates the utility of this approach, though the specific biological interpretation depends on the experimental context from prior work (Zimmer et al., 2019). The methodological innovation of using probability distributions rather than hard classifications is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C135",
+      "C136"
+    ],
+    "result": "VocalMat is open-source software available on GitHub, compatible with high-performance computing clusters using the Slurm job scheduler for parallel and high-throughput analysis. The training dataset of vocalization images is publicly available on OSF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109, C135-C136 describe software availability and computational capabilities. These are verifiable factual statements about the software distribution and infrastructure compatibility. The provision of code and data enhances reproducibility and represents good scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C115",
+      "C117"
+    ],
+    "result": "VocalMat uses differential geometry to automate USV detection, which in combination with CNNs maximizes sensitivity without sacrificing accuracy and without requiring customization or parameter tuning. The pattern recognition approach learns directly from training data without manual feature extraction, while preserving spectral features including temporal dynamics, frequency, intensity, and morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113, C115, C117 summarize key methodological innovations. The use of differential geometry for automated threshold calculation (C112) is demonstrated in the Local Median Filter. The claim of maximizing sensitivity without sacrificing accuracy (C113) is supported by the comparative performance data. The CNN learning approach (C115) is standard deep learning methodology. Feature preservation (C117) follows from the described extraction process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "VocalMat's pattern recognition approach provides the possibility for adaptability to different experimental settings, including use with other species and vocal types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 is speculative about potential applications beyond the tested domain (mouse USVs). While the CNN-based approach is theoretically transferable, no evidence is provided for performance on other species or vocal types. This represents a reasonable hypothesis for future work but is not demonstrated in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The study used 5-15 day old mice from both sexes across five different strains (C57Bl6/J, NZO/HlLtJ, 129S1/SvImJ, NOD/ShiLtJ, PWK/PhJ) to maximize variability. Audio was recorded at 250 kHz sampling rate using an UltraSoundGate 416H recorder and CM16/CMPA microphone with flat response between 20-140 kHz, with a 45 kHz high-pass filter applied. All procedures were IACUC-approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C127 describe experimental methods with appropriate detail. The use of multiple strains and ages (C118-C120) supports the generalizability claims. Recording parameters (C123-C127) are fully specified and appropriate for USV detection. The high-pass filter (C127) is justified for noise reduction. Ethical approval (C122) is documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "VocalMat treats harmonic components as features of USVs rather than separate vocalizations, defining them as continuous sounds overlapping in time with the main USV component. Each detected USV candidate may or may not present a harmonic component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 describe a design decision in VocalMat's approach to harmonic components, supported by citation to Grimsley et al., 2011 (C48, C50). This is a reasonable methodological choice that differs from some other tools, and the definition (C50) is clear and operationalizable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "VocalMat exports 227\u00d7227 pixel images with USV candidates centralized in 220ms windows, defined as twice the maximum USV duration observed in mice to prevent cropping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 describe the image export format with clear justification. The 220ms window size is based on published observations (Grimsley et al., 2011) and represents a conservative choice to avoid truncation artifacts. The 227\u00d7227 pixel size matches AlexNet input requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims establish that mice emit USVs (30-110 kHz) that communicate socially relevant information about identity, status, behavior, and environmental conditions. USVs are organized in syllable sequences that vary with behavior, genetic strain, and developmental stage, and are emitted by pups when separated from the nest and by adults in various contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C24 provide background context supported by extensive citations to prior literature. These are well-established facts in the field that motivate the development of VocalMat. The claims accurately represent the current understanding of mouse USV biology and communication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Existing USV analysis tools have limitations: most depend on user inputs or have limited detection capabilities, though DeepSqueak uses neural networks for detection. Classification methods use supervised or unsupervised approaches, but no consensus exists on USV subclass biological functions. Accurate detection remains challenging in noisy conditions with low-intensity vocalizations, and classification accuracy depends on detection accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 accurately characterize the state of the field based on cited literature. The identification of limitations in existing tools (C25-C26) motivates VocalMat's development. The acknowledgment of lack of consensus on biological function (C30) and technical challenges (C31-C32) provides appropriate context for the tool's design choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C87",
+      "C110"
+    ],
+    "result": "Other USV analysis tools (Ax, MUPET, USVSEG) require manual parameter settings, making direct performance comparison difficult. Ax requires the most parameters, MUPET has fewer, and USVSEG also requires manual configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C85, C87, C110 accurately describe characteristics of competing tools based on their documentation and citations. This contextualizes VocalMat's parameter-free approach as an advantage, though the manuscript acknowledges the comparison difficulty (C110).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Manual inspection revealed DeepSqueak sometimes counted multiple USVs as single USVs, potentially inflating missed USV counts. DeepSqueak might perform better when custom-trained on the test dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 provide important caveats about the DeepSqueak comparison. C90 reports an observation from data analysis that could affect performance metrics. C91 is appropriately speculative, acknowledging a limitation in the comparison methodology that could favor VocalMat.",
+    "result_type": "MINOR"
+  }
+]

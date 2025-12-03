@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript establishes the scale of the protein annotation challenge: over 100,000 protein sequences are added to databases daily, curators assess over 60,000 papers annually, yet only ~0.03% of publicly available protein sequences are manually annotated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are supported by citations to UniProt Consortium publications (2019a, 2019b). These statistics establish the motivation for computational annotation methods and are consistent with known database growth rates and curation bottlenecks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript reviews the history of computational protein function prediction methods, from BLAST (1990) through PROSITE (1991) to profile HMMs (1990s), noting that despite their impact, one-third of bacterial proteins still cannot be computationally annotated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 provide historical context supported by appropriate citations (Altschul et al. 1990, Bairoch 1991, Krogh et al. 1994, Eddy 1998, Bateman et al. 2019, Price et al. 2018). These are well-established facts in the field and the citations appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C16",
+      "C19",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "ProteInfer employs deep dilated convolutional neural networks with residual layers, trained on Swiss-Prot data using specific hyperparameters (5 ResNet layers, 1100 filters, kernel size 9, dilation rate 3, mean pooling) for approximately 60 hours on 8 NVIDIA P100 GPUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C108 describe the model architecture and training procedure with specific technical details provided in Table 1 and the text. The architecture choices are well-documented and the training procedure is clearly specified with appropriate citations (He et al. 2015, Yu and Koltun 2015, Kingma and Ba 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study uses Swiss-Prot version 2019_01 (559,077 proteins, filtered to 548,264) with two data splitting strategies: random split (80/10/10 train/dev/test) and UniRef50 clustering split (approximately equal distribution across folds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C88-C97 describe the dataset and splitting methodology with specific numbers provided in Tables 2 and 3. The two splitting strategies address different evaluation scenarios (random annotation vs. remote homology), which is a sound experimental design. The data preprocessing steps are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C27"
+    ],
+    "result": "ProteInfer achieves high performance on EC number prediction with Fmax=0.977 on the random split test set, correctly predicting 96.7% of true labels with a 1.4% false-positive rate at the optimal threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C27 report the main performance metrics for EC prediction. The results are supported by Figure 3 and are consistent with the precision-recall curves shown. The confidence intervals are provided (0.976-0.978) and the performance is evaluated at multiple thresholds, which is appropriate for multi-label classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C39"
+    ],
+    "result": "Comparison with BLAST reveals complementary strengths: BLAST achieves higher recall at lower precision while ProteInfer provides greater precision at lower recall. The authors interpret this as neural networks learning different information than alignment-based methods, with ensemble approaches providing synergistic results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C39 describe the BLAST comparison with interpretations of the performance differences. The empirical observations (C31-C32) are supported by Figure 3B. The interpretations (C33-C34, C39) are reasonable hypotheses about why the methods differ, though C34 is explicitly speculative. The ensemble results support the claim of complementary information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "ProteInfer demonstrates strong performance even for rare labels, achieving 58% recall and 88% precision (F1=0.7) for labels occurring less than five times in the training set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by Figure 3\u2014figure supplement 12. This is an important result showing that the model can generalize from limited examples, likely due to evolutionary relationships between sequences. The performance metrics are clearly stated with appropriate reference to the figure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Class activation mapping (CAM) analysis on bifunctional enzymes shows that ProteInfer correctly localizes function to specific sequence regions, correctly predicting domain ordering in 296 of 304 (97%) bifunctional enzyme cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe the CAM analysis with specific examples (S. cerevisiae fol1) and quantitative results. The 97% accuracy for domain ordering is impressive, though the authors appropriately note limitations in functional diversity of the test set. Figure 4 provides visual evidence supporting the localization claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ProteInfer embeddings capture functional relationships beyond training labels: UMAP visualization shows hierarchical EC clustering, and embeddings enable rapid transfer learning (e.g., 97% precision, 60% recall for membrane protein prediction in 15 seconds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 demonstrate that the learned embeddings capture general protein properties. Figure 5 shows clear hierarchical structure in EC space, and Figure 6 shows structure for non-enzyme GO terms. The transfer learning example (C50-C51) provides quantitative evidence with impressive speed, though the recall is modest. The biological example of Q8RUD6 (C48-C49) is well-supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ProteInfer offers computational efficiency advantages: the browser-based implementation (5-7 MB models) performs inference in <1.5 seconds for 1500 amino acid sequences, compared to 147 seconds for InterProScan online or 34 seconds for BLAST.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 provide timing comparisons showing ProteInfer's efficiency. The measurements are specific and include important caveats (e.g., InterProScan component databases may be faster, BLAST could be optimized). The browser implementation is a notable technical achievement, though the comparison is somewhat limited as it compares online tools with different computational resources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Validation on 171 experimentally characterized bacterial proteins shows ProteInfer achieves 90% accuracy at EC hierarchy levels 1-2, 86% at level 3, and 42% at level 4 (when making predictions), with the network appropriately declining predictions at finer levels when uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 describe validation against experimental data from Price et al. 2018. The hierarchical performance degradation is expected and the model's ability to abstain from fine-grained predictions is appropriate. Specific examples (Q92SI0, A0A166Q345) where ProteInfer outperforms existing annotations strengthen the validation. Figure 7 clearly shows the performance at different hierarchy levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "For GO term prediction across 32,109 terms, ProteInfer achieves F1=0.885 (single model) and 0.899 (ensemble), with BLAST at 0.902 and the combined ensemble at 0.908. Performance varies by GO category: molecular function (F1=0.94) > biological process (F1=0.86) > cellular component (F1=0.84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 report comprehensive GO prediction results with confidence intervals. The performance hierarchy across GO categories is clearly documented. The results show that BLAST slightly outperforms individual ProteInfer models but the ensemble approach provides the best performance, consistent with the EC results. The scale of the task (32,109 terms) is impressive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Comparison with InterProScan shows ProteInfer achieves substantially higher recall (0.835 vs 0.543) at matched precision (0.937), though annotation completeness varies in Swiss-Prot (e.g., identical proteins with 24 vs 143 GO annotations). For non-IEA annotations, recall ranges from 60-75% depending on GO category.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 compare with InterProScan and acknowledge data quality issues. The dramatic example of identical proteins with different annotation counts (C77) illustrates a real problem in the evaluation. The authors appropriately caveat the comparison, noting that InterProScan and UniProt use different annotation schemas. The non-IEA analysis (C78-C80) provides additional validation on higher-quality annotations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors discuss limitations of using Swiss-Prot for benchmarking: while it provides high-quality curated data with minimal false positives, many entries derive from computational methods (BLAST, HMMs), potentially biasing evaluation toward functions easily identified by traditional techniques. They suggest semi-supervised approaches combining experimental labels with TrEMBL sequences as future directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 provide thoughtful discussion of methodological limitations. The authors appropriately acknowledge that Swiss-Prot curation includes computational predictions (C82), which could create circularity in evaluation (C83). The suggestion for semi-supervised approaches (C85) is reasonable given the limited experimental data (C84). This critical self-assessment strengthens the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The authors acknowledge known limitations of deep learning models: probabilities are often over-confident rather than well-calibrated, and networks perform poorly on out-of-distribution data without recognizing they are outside their expertise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 cite known issues with deep learning (Guo et al. 2017, Amodei et al. 2016). These are important caveats that apply to ProteInfer, though the authors don't provide specific analysis of calibration or out-of-distribution performance for their models. The acknowledgment is appropriate but could be more thorough.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Attribution analysis demonstrates that ProteInfer predictions are driven by relevant sequence regions, and the models create a generalized functional mapping useful for tasks beyond their training objectives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are high-level summaries supported by the detailed CAM analysis (C42-C44) and embedding analysis (C46-C51). The evidence from bifunctional enzymes and transfer learning experiments substantiates these claims. These represent important findings about model interpretability and generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "The authors motivate their approach by noting that current alignment-based methods conduct separate comparisons for each sequence/model and may not fully exploit shared features across functional classes, while deep neural networks have transformed image recognition by learning hierarchical features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 provide motivation for the deep learning approach. C9 is a reasonable characterization of alignment-based methods, though the claim about not exploiting shared features could be debated (HMMs do capture some shared structure). C10 is well-established with appropriate citation (Carter et al. 2019). These claims effectively motivate the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C45",
+      "C98",
+      "C99"
+    ],
+    "result": "The manuscript provides background on protein sequence variation (3 orders of magnitude in length), Swiss-Prot curation (6-stage process), annotation systems (EC numbers for enzymatic function, GO terms for molecular function/biological process/cellular component), and dataset statistics (8162 EC reactions, 5134 EC terms, 32,109 GO terms, >50,000 InterProScan signatures).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C20-C22, C24, C45, C98-C99 provide essential background information and dataset statistics. These are well-established facts appropriately cited or derived from the data. The information is necessary context for understanding the methods and results.",
+    "result_type": "MINOR"
+  }
+]

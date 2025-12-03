@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Azi-isoflurane retains the functional properties of isoflurane on TREK1 channels. Two-electrode voltage clamp studies show that azi-isoflurane causes dose-dependent potentiation of mTREK1 with an EC50 of 735 \u00b1 192 \u00b5M, and saturating doses of isoflurane and azi-isoflurane produce statistically indistinguishable effects on mTREK1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 provide converging evidence that azi-isoflurane is a valid functional analog of isoflurane. The dose-response data (C26) and the lack of statistical difference between saturating doses (C27) strongly support the use of azi-isoflurane as a photoaffinity probe for isoflurane binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Mouse and zebrafish TREK1 orthologs are functionally equivalent for the modulatory cues tested in this study. The two proteins share 78.3% sequence identity and 89.1% similarity, and both respond equivalently to azi-isoflurane, temperature, and BL1249.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 establish that drTREK1 is a suitable model for studying mTREK1 function. The sequence similarity data (C28) combined with functional equivalence across multiple modulatory cues (C30) justify the use of drTREK1 for photolabeling experiments that inform mTREK1 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Photoaffinity labeling identifies G182 as a specific isoflurane binding site in TREK1. Mass spectrometry of drTREK1 shows azi-isoflurane adduction at G182 and K194, but competitive photolabeling with 100-fold excess isoflurane protects only G182, indicating that G182 is the site specifically occupied by isoflurane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 provide strong evidence for G182 as a specific VA binding site. The competitive protection experiment (C32) is a critical control that distinguishes specific binding (G182) from non-specific modification (K194). This is a key experimental finding that anchors the rest of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Mass spectrometry coverage of drTREK1 is >91% but lacks coverage in TM3 and TM4 regions. Control experiments with non-photolabeled protein show the same gaps in coverage, indicating that poor MS coverage in these regions is due to technical limitations rather than photolabeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 appropriately acknowledge a limitation of the MS approach and provide a control experiment to rule out photolabeling-induced coverage loss. This is important for interpreting the absence of photolabeling in TM3/TM4 regions and justifies the subsequent use of MD simulations to explore these regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Position 194 is not functionally relevant to VA modulation of TREK1. Mutagenesis at position 194 has no effect on channel function, the residue is poorly conserved across species, it is not protected from photolabeling by excess isoflurane, and it is located at the periphery of the protein facing bulk solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide multiple lines of evidence that position 194 is not relevant to VA modulation. The combination of functional data, competitive photolabeling, sequence conservation, and structural location all converge to support this conclusion. This is important for focusing subsequent analysis on G182.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "G182 is a critical residue for TREK1 function and VA sensitivity. The G182W mutation causes increased basal current and loss of modulation by heat, isoflurane, and BL1249. The effect of mutagenesis at G182 correlates with the size of the introduced amino acid, with G182A showing minimal effects, G182C showing intermediate effects, and G182W showing maximal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 demonstrate that G182 is functionally important and that steric effects at this position modulate channel activity. The size-dependent effect of mutations (C45-C47) is particularly compelling evidence that steric crowding at G182 influences channel gating. This supports the hypothesis that VA binding at G182 modulates channel function through steric effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Steric crowding at G182 is an important determinant of TREK1 potentiation. MMTS modification of G182C causes persistent channel potentiation, while modification of wild-type or cysteine-free TREK1 shows only transient non-specific effects. This demonstrates that increasing side chain size at G182 through chemical modification mimics the effect of VA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 provide strong biochemical evidence that steric crowding at G182 potentiates TREK1. The use of the cysteine-free background (C50) is a critical control that confirms the specificity of the effect. This result directly supports the hypothesis that VA binding at G182 modulates channel function through steric effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The G182W mutation stabilizes the TREK1 selectivity filter gate in an open conformation. The G182W mutant is resistant to closure by extracellular acidification and to activation by BL1249, both of which are hallmarks of selectivity filter-based gating. This supports a model in which VA binding at G182 allosterically stabilizes the selectivity filter gate to increase channel activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 provide strong evidence that G182 mutations affect the selectivity filter gate. The resistance to both acid-induced closure (C54) and BL1249-induced activation (C56) are consistent with a constitutively open gate. The mechanistic model (C58) is well-supported by the data, though it remains a model rather than direct observation of gate conformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The G182 VA-binding site is positioned to influence TM4 conformational rearrangements that are known to modulate K2P gating. G182 is located on TM2 in direct opposition to TM4, and TM4 movements are known to transduce C-terminal domain signals to the selectivity filter gate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 establish the structural context for how VA binding at G182 could modulate channel gating. The location of G182 relative to TM4 (C62) and the known role of TM4 in K2P gating (C61) provide a plausible mechanistic link between VA binding and channel activation. However, this remains a hypothesis to be tested by MD simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Molecular dynamics simulations identify a VA-binding pocket near G182 and show that isoflurane is highly mobile within this pocket. Docking analysis identifies a pocket formed by G182, TM3, and TM4 as the highest-ranked binding site. MD simulations show isoflurane remains within 7 \u00c5 of G182 for >94% of the time it occupies the binding site, consistent with steric crowding at this position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 provide computational support for the photolabeling results. The high occupancy of G182 (C67) is consistent with the photolabeling data. The observed mobility of isoflurane (C64-C65) is consistent with the low binding affinity and high concentrations required for functional effects. However, MD simulations have limitations in sampling timescales and may not capture all relevant conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Isoflurane binding causes localized structural changes in the VA-binding pocket. MD simulations show no major conformational changes in TREK1, but localized increases in RMSD at F185, I189, and F214, which are due to altered side-chain rotameric orientations rather than backbone movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 identify specific structural changes induced by isoflurane binding. The distinction between backbone and side-chain movements (C71) is important for understanding the mechanism. However, the absence of major conformational changes (C69) may reflect limitations in MD simulation timescales rather than the true behavior of the protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Isoflurane binding disrupts the F185/F214 pi-stacking interaction that is proposed to stabilize the TM4-down conformation. In the absence of isoflurane, F185 and F214 are pi-stacked in 37-38% of trajectory frames, but in the presence of isoflurane, pi-stacking occurs in <2% of frames. The disruption persists even after isoflurane escapes the binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 identify a specific molecular mechanism by which isoflurane binding could influence TM4 conformation. The dramatic reduction in pi-stacking (C75-C76) and the persistence of the effect after ligand escape (C79) are compelling. However, the starting structure is in the TM4-up state, which may bias the results. Additional simulations starting from TM4-down would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "VA binding is hypothesized to alter TM4 dynamics through a combination of local structural perturbations, disruption of the F185/F214 interaction, and direct steric effects. The MD simulations start from a TM4-up conformation, and the F185/F214 interaction is predicted to favor TM4-down, consistent with the observed lack of pi-stacking in the unliganded subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C83 propose a mechanistic hypothesis based on the MD simulation results. While the hypothesis is plausible and consistent with the data, it remains speculative (C83 explicitly states this is a hypothesis). The starting conformation bias (C80) and the lack of observed TM4 movements limit the strength of this conclusion. Additional simulations and experimental validation would be needed to support this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "TRAAK channels do not bind azi-isoflurane at the VA-binding site identified in TREK1. Despite 44% sequence identity and shared functional properties with TREK1, photolabeling of hTRAAK shows no evidence of azi-isoflurane modification at the conserved G182 position or any other position in the VA-binding region. This suggests that VA insensitivity of TRAAK is due to absence of binding or significantly reduced affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 provide strong negative control data that support the specificity of the TREK1 VA-binding site. The absence of photolabeling in TRAAK (C87) despite adequate MS coverage of the relevant region (C89) is compelling evidence that VAs do not bind to this site in TRAAK. This is consistent with the known VA insensitivity of TRAAK (C84) and helps explain the selectivity of VAs for TREK1 over TRAAK.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "TRAAK-like mutations at positions F185, G186, T211, and M291 specifically reduce TREK1 VA sensitivity without affecting heat sensitivity. These residues differ between TREK1 and TRAAK and show high isoflurane occupancy in MD simulations. The mutations have additive effects on VA sensitivity, and the preservation of heat sensitivity indicates that the mutations do not cause global channel activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 provide strong functional validation of the MD simulation predictions. The selective effect on VA sensitivity without affecting heat sensitivity (C94-C95) is particularly important, as it demonstrates that these mutations specifically disrupt VA modulation rather than causing non-specific effects on channel gating. The additive effect of double mutations (C93) further supports the involvement of multiple residues in VA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study identifies a VA-binding site in TREK1 that is shared with TASK channels and proposes a mechanism by which VA binding promotes conformational rearrangements that gate K2P channels. The binding site involves residues from TM2, TM3, and TM4, including residues known to influence TM4 conformational rearrangements. Multiple point mutations within the binding pocket specifically diminish VA responsiveness without perturbing other channel functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 summarize the major findings of the study. The identification of the VA-binding site (C99) is well-supported by photolabeling, MD simulations, and mutagenesis. The proposed mechanism (C104) is supported by the data but remains somewhat speculative, as direct observation of TM4 movements was not achieved. The overlap with TASK channel VA sensitivity (C103) is supported by sequence alignment and prior literature but would benefit from direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The TREK1 VA-binding site overlaps with residues previously implicated in TASK channel VA sensitivity. TREK1 residues F185, T211, and M291 align with positions known to affect TASK VA sensitivity, and TRAAK-like mutations at these positions decrease TREK1 VA sensitivity. This suggests a shared VA-binding site across the TREK and TASK K2P subfamilies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 establish an important connection between TREK1 and TASK channel VA modulation. The alignment of key residues (C108) and the functional effects of mutations (C110) support the notion of a conserved VA-binding site. However, the evidence is primarily based on sequence alignment and indirect functional data. Direct photolabeling or structural studies of TASK channels would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "VAs are proposed to modulate K2P channel activity by influencing TM4 position, though MD simulations do not show major TM4 conformational rearrangements. Both TM4-up and TM4-down conformations can promote active channel states, but steric constraints and disruption of the F185/F214 interaction would be predicted to favor TM4-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C118 propose a mechanistic model for VA modulation, but the evidence is incomplete. The lack of observed TM4 movements in MD simulations (C116) is a significant limitation. The prediction that VA binding favors TM4-up (C118) is speculative and based on indirect evidence. Additional experimental and computational work would be needed to validate this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study acknowledges inconsistent VA responses across K2P subfamilies and proposes two possible explanations: multiple VA-binding sites acting combinatorially, or a single binding site producing opposing effects depending on subtle differences in TM4-gate connectivity. The molecular mechanisms governing TM4-gate connectivity remain poorly defined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 appropriately acknowledge limitations and inconsistencies in the field. The proposed explanations (C123, C125) are speculative but plausible. The acknowledgment that TM4-gate connectivity is poorly understood (C119) is important context. The citation of prior work showing inverted TM4 conformations in TREK1 vs TRAAK (C126) provides some support for the second explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The study discusses the relationship between VA and lipid modulation of TREK1. While structural studies have not identified lipids bound at the VA-binding site, MD simulations suggest that lipids can bind to a similar site and restrict TM4 movement. The location of the VA-binding site at a region key to transducing C-terminal signals to TM4 would allow both direct and indirect modulatory effects to converge on a shared pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C134 provide important context for interpreting the results in light of TREK1's known lipid sensitivity. The acknowledgment that the findings do not preclude indirect lipid-mediated effects (C133) is appropriate. The hypothesis that VA and lipid modulation converge on a shared pathway (C134) is plausible but speculative. This discussion appropriately acknowledges alternative mechanisms while supporting the existence of a direct VA-binding site.",
+    "result_type": "MINOR"
+  }
+]

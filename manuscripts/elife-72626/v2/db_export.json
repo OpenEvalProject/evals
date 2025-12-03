@@ -1,0 +1,1433 @@
+{
+  "submission": {
+    "id": "5e3dc876-5737-4116-a314-094584629179",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:58:09.896842Z",
+    "updated_at": "2025-12-03T10:58:09.896842Z"
+  },
+  "content": [
+    {
+      "id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "submission_id": "5e3dc876-5737-4116-a314-094584629179",
+      "content_type": "manuscript",
+      "content_text": "# Patient-specific Boolean models of signalling networks guide personalised treatments\n\n## Authors\n\n- Arnau Montagud<sup>1</sup> ([ORCID: 0000-0002-7696-1241](https://orcid.org/0000-0002-7696-1241)) \u2020\n- Jonas B\u00e9al<sup>1</sup> ([ORCID: 0000-0003-1949-9801](https://orcid.org/0000-0003-1949-9801))\n- Luis Tobalina<sup>5</sup> ([ORCID: 0000-0002-1947-8309](https://orcid.org/0000-0002-1947-8309))\n- Pauline Traynard<sup>1</sup> ([ORCID: 0000-0002-4835-9114](https://orcid.org/0000-0002-4835-9114))\n- Vigneshwari Subramanian<sup>5</sup> ([ORCID: 0000-0002-7319-8885](https://orcid.org/0000-0002-7319-8885))\n- Bence Szalai<sup>5</sup> ([ORCID: 0000-0002-9320-5704](https://orcid.org/0000-0002-9320-5704))\n- R\u00f3bert Alf\u00f6ldi<sup>7</sup>\n- L\u00e1szl\u00f3 Pusk\u00e1s<sup>7</sup>\n- Alfonso Valencia<sup>4</sup> ([ORCID: 0000-0002-8937-6789](https://orcid.org/0000-0002-8937-6789))\n- Emmanuel Barillot<sup>1</sup> ([ORCID: 0000-0003-2724-2002](https://orcid.org/0000-0003-2724-2002))\n- Julio Saez-Rodriguez<sup>5</sup> ([ORCID: 0000-0002-8552-8976](https://orcid.org/0000-0002-8552-8976))\n- Laurence Calzone<sup>1</sup> ([ORCID: 0000-0002-7835-1148](https://orcid.org/0000-0002-7835-1148)) \u2020\n\n### Affiliations\n\n1. Institut Curie, PSL Research University Paris France ([ROR:04t0gwh46](https://ror.org/04t0gwh46))\n2. INSERM, U900 Paris France ([ROR:02vjkv261](https://ror.org/02vjkv261))\n3. MINES ParisTech, PSL Research University, CBIO-Centre for Computational Biology Paris France ([ROR:04y8cs423](https://ror.org/04y8cs423))\n4. Barcelona Supercomputing Center (BSC), Pla\u00e7a Eusebi G\u00fcell, 1-3 Barcelona Spain ([ROR:05sd8tv96](https://ror.org/05sd8tv96))\n5. Faculty of Medicine, Joint Research Centre for Computational Biomedicine (JRC-COMBINE), RWTH Aachen University Aachen Germany ([ROR:04xfq0f34](https://ror.org/04xfq0f34))\n6. Semmelweis University, Faculty of Medicine, Department of Physiology Budapest Hungary ([ROR:01g9ty582](https://ror.org/01g9ty582))\n7. Astridbio Technologies Ltd Szeged Hungary\n8. ICREA, Pg. Llu\u00eds Companys 23 Barcelona Spain ([ROR:0371hy230](https://ror.org/0371hy230))\n9. Faculty of Medicine and Heidelberg University Hospital, Institute of Computational Biomedicine, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))\n\n\u2020 Corresponding author\n\n## Abstract\n\nProstate cancer is the second most occurring cancer in men worldwide. To better understand the mechanisms of tumorigenesis and possible treatment responses, we developed a mathematical model of prostate cancer which considers the major signalling pathways known to be deregulated. We personalised this Boolean model to molecular data to reflect the heterogeneity and specific response to perturbations of cancer patients. A total of 488 prostate samples were used to build patient-specific models and compared to available clinical data. Additionally, eight prostate cell line-specific models were built to validate our approach with dose-response data of several drugs. The effects of single and combined drugs were tested in these models under different growth conditions. We identified 15 actionable points of interventions in one cell line-specific model whose inactivation hinders tumorigenesis. To validate these results, we tested nine small molecule inhibitors of five of those putative targets and found a dose-dependent effect on four of them, notably those targeting HSP90 and PI3K. These results highlight the predictive power of our personalised Boolean models and illustrate how they can be used for precision oncology.\n\n## Introduction\n\nLike most cancers, prostate cancer arises from mutations in single somatic cells that induce deregulations in processes such as proliferation, invasion of adjacent tissues and metastasis. Not all prostate patients respond to the treatments in the same way, depending on the stage and type of their tumour (Chen and Zhou, 2016) and differences in their genetic and epigenetic profiles (Toth et al., 2019; Yang et al., 2018). The high heterogeneity of these profiles can be explained by a large number of interacting proteins and the complex cross-talks between the cell signalling pathways that can be altered in cancer cells. Because of this complexity, understanding the process of tumorigenesis and tumour growth would benefit from a systemic and dynamical description of the disease. At the molecular level, this can be tackled by a simplified mechanistic cell-wide model of protein interactions of the underlying pathways, dependent on external environmental signals.\n\nAlthough continuous mathematical modelling has been widely used to study cellular biochemistry dynamics (e.g. ordinary differential equations) (Goldbeter, 2002; Kholodenko et al., 1995; Le Nov\u00e8re, 2015; Sible and Tyson, 2007; Tyson et al., 2019), this formalism does not scale up well to large signalling networks, due to the difficulty of estimating kinetic parameter values (Babtie and Stumpf, 2017). In contrast, the logical (or logic) modelling formalism represents a simpler means of abstraction where the causal relationships between proteins (or genes) are encoded with logic statements, and dynamical behaviours are represented by transitions between discrete states of the system (Kauffman, 1969; Thomas, 1973). In particular, Boolean models, the simplest implementation of logical models, describe each protein as a binary variable (ON/OFF). This framework is flexible, requires in principle no quantitative information, can be hence applied to large networks combining multiple pathways, and can also provide a qualitative understanding of molecular systems lacking detailed mechanistic information.\n\nIn the last years, logical and, in particular, Boolean modelling has been successfully used to describe the dynamics of human cellular signal transduction and gene regulations (Calzone et al., 2010; Cho et al., 2016; Flobak et al., 2015; Grieco et al., 2013; Helikar et al., 2008; Traynard et al., 2016) and their deregulation in cancer (Fumi\u00e3 and Martins, 2013; Hu et al., 2015). Numerous applications of logical modelling have shown that this framework is able to delineate the main dynamical properties of complex biological regulatory networks (Abou-Jaoud\u00e9 et al., 2011; Faur\u00e9 et al., 2006).\n\nHowever, the Boolean approach is purely qualitative and does not consider the real time of cellular events (half time of proteins, triggering of apoptosis, etc.). To cope with this issue, we developed the MaBoSS software to compute continuous Markov Chain simulations on the model state transition graph (STG), in which a model state is defined as a vector of nodes that are either active or inactive. In practice, MaBoSS associates transition rates for activation and inhibition of each node of the network, enabling it to account for different time scales of the processes described by the model. Given some initial conditions, MaBoSS applies a Monte-Carlo kinetic algorithm (or Gillespie algorithm) to the STG to produce time trajectories (Stoll et al., 2017; Stoll et al., 2012) such that the time evolution of the model state probabilities can be estimated. Stochastic simulations can easily explore the model dynamics with different initial conditions by varying the probability of having a node active at the beginning of the simulations and by modifying the model such that it accounts for genetic and environmental perturbations (e.g. presence or absence of growth factors or death receptors). For each case, the effect on the probabilities of selected read-outs can be measured (Cohen et al., 2015; Montagud et al., 2019).\n\nWhen summarising the biological knowledge into a network and translating it into logical terms, the obtained model is generic and cannot explain the differences and heterogeneity between patients\u2019 responses to treatments. Models can be trained with dedicated perturbation experiments (Dorier et al., 2016; Saez-Rodriguez et al., 2009), but such data can only be obtained with non-standard procedures such as microfluidics from patients\u2019 material (Eduati et al., 2020). To address this limitation, we developed a methodology to use different omics data that are more commonly available to personalise generic models to individual cancer patients or cell lines and verified that the obtained models correlated with clinical results such as patient survival information (B\u00e9al et al., 2019). In the present work, we apply this approach to prostate cancer to suggest targeted therapy to patients based on their omics profile (Figure 1). We first built 488 patient- and eight cell line prostate-specific models using data from The Cancer Genome Atlas (TCGA) and the Genomics of Drug Sensitivity in Cancer (GDSC) projects, respectively. Simulating these models with the MaBoSS framework, we identified points of intervention that diminish the probability of reaching pro-tumorigenic phenotypes. Lastly, we developed a new methodology to simulate drug effects on these data-tailored Boolean models and present a list of viable drugs and treatments that could be used on these patient- and cell line-specific models for optimal results. Experimental validations were performed on the LNCaP prostate cell line with two predicted targets, confirming the predictions of the model.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig1-v2.jpg)\n\n**Figure 1.:** We gathered data from Fumi\u00e3 and Martins, 2013 Boolean model, Omnipath (T\u00fcrei et al., 2021) and pathways identified with ROMA (Martignetti et al., 2016) on the TCGA data to build a prostate-specific prior knowledge network. This network was manually converted into a prostate Boolean model that could be stochastically simulated using MaBoSS (Stoll et al., 2017) and tailored to different TCGA and GDSC datasets using our PROFILE tool to have personalised Boolean models. Then, we studied all the possible single and double mutants on these tailored models using our logical pipeline of tools (Montagud et al., 2019). Using these personalised models and our PROFILE_v2 tool presented in this work, we obtained tailored drug simulations and drug treatments for 488 TCGA patients and eight prostate cell lines. Lastly, we performed drug-dose experiments on a shortlist of candidate drugs that were particularly interesting in the LNCaP prostate cell line. Created with BioRender.com.\n\n## Results\n\n### Prostate Boolean model construction\n\nA network of signalling pathways and genes relevant for prostate cancer progression was assembled to recapitulate the potential deregulations that lead to high-grade tumours. Dynamical properties were added onto this network to perform simulations, uncover therapeutic targets and explore drug combinations. The model was built upon a generic cancer Boolean model by Fumi\u00e3 and Martins, 2013, which integrates major signalling pathways and their substantial cross-talks. The pathways include the regulation of cell death and proliferation in many tumours.\n\nThis initial generic network was extended to include prostate cancer-specific genes (e.g. SPOP, AR, etc.), pathways identified using ROMA (Martignetti et al., 2016), OmniPath (T\u00fcrei et al., 2021), and up-to-date literature. ROMA is applied on omics data, either transcriptomics or proteomics. In each pathway, the genes that contribute the most to the overdispersion are selected. ROMA was applied to the TCGA transcriptomics data using gene sets from cancer pathway databases (Appendix 1, Section 1.1.3, Appendix 1\u2014figure 1). These results were used as guidelines to extend the network to fully cover the alterations found in prostate cancer patients. OmniPath was used to complete our network finding connections between the proteins of interest known to play a role in the prostate and the ones identified with ROMA, and the list of genes already present in the model (Appendix 1, Sections 1.1.3 and 1.1.4, Appendix 1\u2014figures 2 and 3). The final network includes pathways such as androgen receptor, MAPK, Wnt, NFkB, PI3K/AKT, MAPK, mTOR, SHH, the cell cycle, the epithelial-mesenchymal transition (EMT), apoptosis and DNA damage pathways.\n\nThis network was then converted into a Boolean model where variables can take two values: 0 (inactivate or absent) or 1 (activate or present). Our model aims at predicting prostate phenotypic behaviours for healthy and cancer cells in different conditions. Nine inputs that represent some of these physiological conditions of interest were considered: Epithelial Growth Factor (EGF), Fibroblast Growth Factor (FGF), Transforming Growth Factor beta (TGFbeta), Nutrients, Hypoxia, Acidosis, Androgen, Tumour Necrosis Factor alpha (TNF alpha), and Carcinogen. These input nodes have no regulation. Their value is fixed according to the simulated experiment to represent the status of the microenvironmental characteristics (e.g. the presence or absence of growth factors, oxygen, etc.). A more complex multiscale approach would be required to consider the dynamical interaction with other cell types and the environment.\n\nWe defined six variables as output nodes that allow the integration of multiple phenotypic signals and simplify the analysis of the model. Two of these phenotypes represent the possible growth status of the cell: Proliferation and Apoptosis. Apoptosis is activated by Caspase 8 or Caspase 9, while Proliferation is activated by cyclins D and B (read-outs of the G1 and M phases, respectively). The Proliferation output is described in published models as specific stationary protein activation patterns, namely the following sequence of activation of cyclins: Cyclin D, then Cyclin E, then Cyclin A, and finally Cyclin B (Traynard et al., 2016). Here, we considered a proper sequence when Cyclin D activates first, allowing the release of the transcriptional factor E2F1 from the inhibitory complex it was forming with the RB (retinoblastoma protein), and then triggering a series of events leading to the activation of Cyclin B, responsible for the cell\u2019s entry into mitosis (Appendix 1, Section 2.2, Appendix 1\u2014figure 5). We also define several phenotypic outputs that are readouts of cancer hallmarks: Invasion, Migration, (bone) Metastasis and DNA repair. The final model accounts for 133 nodes and 449 edges (Figure 2, Supplementary file 1, and in GINsim format at the address: http://ginsim.org/model/signalling-prostate-cancer).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig2-v2.jpg)\n\n**Figure 2.:** Nodes (ellipses) represent biological entities, and arcs are positive (green) or negative (red) influences of one entity on another one. Orange rectangles correspond to inputs (from left to right: Epithelial Growth Factor (EGF), Fibroblast Growth Factor (FGF), Transforming Growth Factor beta (TGFbeta), Nutrients, Hypoxia, Acidosis, Androgen, fused_event, Tumour Necrosis Factor alpha (TNFalpha), SPOP, Carcinogen) and dark blue rectangles to outputs that represent biological phenotypes (from left to right: Proliferation, Migration, Invasion, Metastasis, Apoptosis, DNA_repair), the read-outs of the model. This network is available to be inspected as a Cytoscape file in the Supplementary file 1.\n\n### Prostate Boolean model simulation\n\nThe model can be considered as a model of healthy prostate cells when no mutants (or fused genes) are present. We refer to this model as the wild type model. These healthy cells mostly exhibit quiescence (neither proliferation nor apoptosis) in the absence of any input (Figure 3A). When Nutrients and growth factors (EGF or FGF) are present, Proliferation is activated (Figure 3B). Androgen is necessary for AR activation and helps in the activation of Proliferation, even though it is not necessary when Nutrients or growth factors are present. Cell death factors (such as Caspase 8 or 9) trigger Apoptosis in the absence of SPOP, while Hypoxia and Carcinogen facilitate apoptosis but are not necessary if cell death factors are present (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig3-v2.jpg)\n\n**Figure 3.:** (A) The model was simulated with all initial inputs set to 0 and all other variables random. All phenotypes are 0 at the end of the simulations, which should be understood as a quiescent state, where neither proliferation nor apoptosis is active. (B) The model was simulated with growth factors (EGF and FGF), Nutrients and Androgen ON. (C) The model was simulated with Carcinogen, Androgen, TNFalpha, Acidosis, and Hypoxia ON.\n\nIn our model, the progression towards metastasis is described as a stepwise process. Invasion is first activated by known pro-invasive proteins: either \u03b2-catenin (Francis et al., 2013) or a combination of CDH2 (De Wever et al., 2004), SMAD (Daroqui et al., 2012), or EZH2 (Ren et al., 2012). Migration is then activated by Invasion and EMT and with either AKT or AR (Castoria et al., 2011). Lastly, (bone) Metastasis is activated by Migration and one of three nodes: RUNX2 (Altieri et al., 2009), ERG (Adamo and Ladomery, 2016) or ERG fused with TMPRSS2 (St John et al., 2012), FLI1, ETV1 or ETV4 (Cancer Genome Atlas Research Network, 2015).\n\nThis prostate Boolean model was simulated stochastically using MaBoSS (Stoll et al., 2017; Stoll et al., 2012) and validated by recapitulating known phenotypes of prostate cells under physiological conditions (Figure 3 and Appendix 1, Sections 2.2 and 2.3, Appendix 1\u2014figures 5\u20137). In particular, we tested that combinations of inputs lead to non-aberrant phenotypes such as growth factors leading to apoptosis in wild type conditions; we also verified that the cell cycle events occur in proper order: as CyclinD gets activated, RB1 is phosphorylated and turned OFF, allowing E2F1 to mediate the synthesis of CyclinB (see Supplementary file 2 for the jupyter notebook and the simulation of diverse cellular conditions).\n\n### Personalisation of the prostate Boolean model\n\n#### Personalised TCGA prostate cancer patient Boolean models\n\nWe tailored the generic prostate Boolean model to a set of 488 TCGA prostate cancer patients (Appendix 1, Section 4, Appendix 1\u2014figure 9) using our personalisation method (PROFILE) (B\u00e9al et al., 2019), constructing 488 individual Boolean models, one for each patient. Personalised models were built using three types of data: discrete data such as mutations and copy number alterations (CNA) and continuous data such as RNAseq data. For discrete data, the nodes corresponding to the mutations or the CNA were forced to 0 or 1 according to the effect of alterations, based on a priori knowledge (i.e. if the mutation was reported to be activating or inhibiting the gene\u2019s activity). For continuous data, the personalisation method modifies the value for the transition rates of model variables and their initial conditions to influence the probability of some transitions. This corresponds, in a biologically meaningful way, to translating genetic mutations as lasting modifications making the gene independent of regulation, and to translating RNA expression levels as modulation of a signal but not changing the regulation rules (see Materials and methods and in Appendix 1, Section 4.1, Appendix 1\u2014figures 10\u201314).\n\nWe assess the general behaviour of the individual patient-specific models by comparing the model outputs (i.e. probabilities to reach certain phenotypes) with clinical data. Here, the clinical data consist of a Gleason grade score associated with each patient, which in turn corresponds to the gravity of the tumour based on its appearance and the stage of invasion (Chen and Zhou, 2016; Gleason, 1992; Gleason, 1977). We gathered the output probabilities for all patient-specific models and confronted them to their Gleason scores. The phenotype DNA_repair, which can be interpreted as a sensor of DNA damage and genome integrity which could lead to DNA repair, seems to separate low and high Gleason scores (Figure 4A and Appendix 1, Section 4.1, Appendix 1\u2014figures 15\u201318), confirming that DNA damage pathways are activated in patients (Marshall et al., 2019) but may not lead to the triggering of apoptosis in this model (Appendix 1, Section 4.1, Appendix 1\u2014figure 11). Also, the centroids of Gleason grades tend to move following Proliferation, Migration and Invasion variables. We then looked at the profiles of the phenotype scores across patients and their Gleason grade and found that the density of high Proliferation score (close to 1, Figure 4B) tends to increase as the Gleason score increases (from low to intermediate to high) and these distributions are significantly different (Kruskal-Wallis rank sum test, p-value = 0.00207; Appendix 1, Section 4.1). The Apoptosis phenotype probabilities, however, do not have a clear trend across grades (Figure 4C), even though the distributions are significantly different (Kruskal-Wallis rank sum test, p-value = 2.83E-6; Appendix 1, Section 4.1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig4-v2.jpg)\n\n**Figure 4.:** (A) Centroids of the Principal Component Analysis of the samples according to their Gleason grades (GG). The personalisation recipe used was mutations and copy number alterations (CNA) as discrete data and RNAseq as continuous data. Density plots of Proliferation (B) and Apoptosis (C) scores according to GG; each vignette corresponds to a specific sub-cohort with a given GG. Kruskal-Wallis rank sum test across GG is significant for Proliferation (p-value = 0.00207) and Apoptosis (p-value = 2.83E-6).\n\n### Personalised drug predictions of TCGA Boolean models\n\nUsing the 488 TCGA patient-specific models, we looked in each patient for genes that, when inhibited, hamper Proliferation or promote Apoptosis in the model. We focused on these inhibitions as most drugs interfere with the protein activity related to these genes, even though our methodology allows us to study increased protein activity related to over-expression of genes as well (B\u00e9al et al., 2019; Montagud et al., 2019). Interestingly, we found several genes that were found as suitable points of intervention in most of the patients (MYC_MAX complex and SPOP were identified in more than 80% of the cases) (Appendix 1, Section 4.2, Appendix 1\u2014figures 19 and 20), but others were specific to only some of the patients (MXI1 was identified in only 4 patients, 1% of the total, GLI in only 7% and WNT in 8% of patients). All the TCGA-specific personalised models can be found in Supplementary file 3, and the TCGA mutants and their phenotype scores can be found in Supplementary file 4.\n\nFurthermore, we explored the possibility of finding combinations of treatments that could reduce the Proliferation phenotype or increase the Apoptosis one. To lower the computational power need, we narrowed down the list of potential candidates to a set of selected genes that are targets of already-developed drugs relevant in cancer progression (Table 1) and analysed the simulations of the models with all the single and combined perturbations.\n\n**Table 1.**\n List of selected nodes, their corresponding genes and drugs that were included in the drug analysis of the models tailored for TCGA patients and LNCaP cell line.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Node</th>\n      <th>Gene</th>\n      <th>Compound / Inhibitor name</th>\n      <th>Clinical stage</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">AKT</td>\n      <td rowspan=\"3\">AKT1, AKT2, AKT3</td>\n      <td>PI-103</td>\n      <td>Preclinical</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Enzastaurin</td>\n      <td>Phase 3</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Archexin, Pictilisib</td>\n      <td>Phase 2</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">AR</td>\n      <td rowspan=\"2\">AR</td>\n      <td>Abiraterone,Enzalutamide, Formestane, Testosterone propionate</td>\n      <td>Approved</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>5alpha-androstan-3beta-ol</td>\n      <td>Preclinical</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Caspase8</td>\n      <td>CASP8</td>\n      <td>Bardoxolone</td>\n      <td>Preclinical</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>cFLAR</td>\n      <td>CFLAR</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">EGFR</td>\n      <td rowspan=\"3\">EGFR</td>\n      <td>Afatinib, Osimertinib, Neratinib, Erlotinib, Gefitinib</td>\n      <td>Approved</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Varlitinib</td>\n      <td>Phase 3</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Olmutinib, Pelitinib</td>\n      <td>Phase 2</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td rowspan=\"8\">ERK</td>\n      <td rowspan=\"3\">MAPK1</td>\n      <td>Isoprenaline</td>\n      <td>Approved</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Perifosine</td>\n      <td>Phase 3</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Turpentine, SB220025, Olomoucine, Phosphonothreonine</td>\n      <td>Preclinical</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">MAPK3, MAPK1</td>\n      <td>Arsenic trioxide</td>\n      <td>Approved</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Ulixertinib, Seliciclib</td>\n      <td>Phase 2</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Purvalanol</td>\n      <td>Preclinical</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">MAPK3</td>\n      <td>Sulindac, Cholecystokinin</td>\n      <td>Approved</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>5-iodotubercidin</td>\n      <td>Preclinical</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>GLUT1</td>\n      <td>SLC2A1</td>\n      <td>Resveratrol</td>\n      <td>Phase 4</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>HIF-1</td>\n      <td>HIF1A</td>\n      <td>CAY-10585</td>\n      <td>Preclinical</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">HSPs</td>\n      <td rowspan=\"3\">HSP90AA1, HSP90AB1, HSP90B1, HSPA1A, HSPA1B, HSPB1</td>\n      <td>Cladribine</td>\n      <td>Approved</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>17-DMAG</td>\n      <td>Phase 2</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>NMS-E973</td>\n      <td>Preclinical</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">MEK1_2</td>\n      <td rowspan=\"3\">MAP2K1, MAP2K2</td>\n      <td>Trametinib, Selumetinib</td>\n      <td>Approved</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Perifosine</td>\n      <td>Phase 3</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>PD184352 (CI-1040)</td>\n      <td>Phase 2</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>MYC_MAX</td>\n      <td>complex of MYC and MAX</td>\n      <td>10058-F4 (for MAX)</td>\n      <td>Preclinical</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>p14ARF</td>\n      <td>CDKN2A</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">PI3K</td>\n      <td rowspan=\"2\">PIK3CA, PIK3CB, PIK3CG, PIK3CD, PIK3R1, PIK3R2, PIK3R3, PIK3R4, PIK3R5, PIK3R6, PIK3C2A, PIK3C2B, PIK3C2G, PIK3C3</td>\n      <td>PI-103</td>\n      <td>Preclinical</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Pictilisib</td>\n      <td>Phase 2</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">ROS</td>\n      <td>NOX1, NOX3, NOX4</td>\n      <td>Fostamatinib</td>\n      <td>Approved</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">NOX2</td>\n      <td>Dextromethorphan</td>\n      <td>Approved</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>Tetrahydroisoquinolines (CHEMBL3733336, CHEMBL3347550, CHEMBL3347551)</td>\n      <td>Preclinical</td>\n      <td>ChEMBL</td>\n    </tr>\n    <tr>\n      <td>SPOP</td>\n      <td>SPOP</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">TERT</td>\n      <td rowspan=\"2\">TERT</td>\n      <td>Grn163l</td>\n      <td>Phase 2</td>\n      <td>Drug Bank</td>\n    </tr>\n    <tr>\n      <td>BIBR 1532</td>\n      <td>Preclinical</td>\n      <td>ChEMBL</td>\n    </tr>\n  </tbody>\n</table>\n\nWe used the models to grade the effect that the combined treatments have in each one of the 488 TCGA patient-specific models\u2019 phenotypes. This list of combinations of treatments can be used to compare the effects of drugs on each TCGA patient and allows us to propose some of them for individual patients and to suggest drugs suitable to groups of patients (Supplementary file 4). Indeed, the inactivation of some of the targeted genes had a greater effect in some patients than in others, suggesting the possibility for the design of personalised drug treatments. For instance, for the TCGA-EJ-5527 patient, the use of MYC_MAX complex inhibitor reduced Proliferation to 66%. For this patient, combining MYC_MAX with other inhibitors, such as AR or AKT, did not further reduce the Proliferation score (67% in these cases). Other patients have MYC_MAX as an interesting drug target, but the inhibition of this complex did not have such a dramatic effect on their Proliferation scores as in the case of TCGA-EJ-5527. Likewise, for the TCGA-H9-A6BX patient, the use of SPOP inhibitor increased Apoptosis by 87%, while the use of a combination of cFLAR and SPOP inhibitors further increased Apoptosis by 89%. For the rest of this section, we focus on the analysis of clinical groups rather than individuals.\n\nStudying the decrease of Proliferation, we found that AKT is the top hit in Gleason Grades 1, 2, 3, and 4, seconded by EGFR and SPOP in Grade 1, by SPOP and PIP3 in Grade 2, by PIP3 and AR in Grade 3, and by CyclinD and MYC_MAX in Grade 4. MYC_MAX is the top hit in Grade 5, seconded by AR (Appendix 1, Section 4.2, Appendix 1\u2014figure 19). In regard to the increase of Apoptosis, SPOP is the top hit in all grades, seconded by SSH in Grades 1, 2, and 3 and by AKT in Grade 4 (Appendix 1, Section 4.2, Appendix 1\u2014figure 20). It is interesting to note here that many of these genes are targeted by drugs (Table 1). Notably, AR is the target of the drug Enzalutamide, which is indicated for men with an advanced stage of the disease (Scott, 2018), or that MYC is the target of BET bromodomain inhibitors and are generally effective in castration-resistant prostate cancer cases (Coleman et al., 2019).\n\nThe work on patient data provided possible insights and suggested patient- and grade-specific potential targets. To validate our approach experimentally, we personalised the prostate model to different prostate cell lines, where we performed drug assays to confirm the predictions of the model.\n\n### Personalised drug predictions of LNCaP Boolean model\n\nWe applied the methodology for personalisation of the prostate model to eight prostate cell lines available in GDSC (Iorio et al., 2016): 22RV1, BPH-1, DU-145, NCI-H660, PC-3, PWR-1E, and VCaP (results in Appendix 1, Section 5 and are publicly available in Supplementary file 5). We decided to focus the validation on one cell line, LNCaP.\n\nLNCaP, first isolated from a human metastatic prostate adenocarcinoma found in a lymph node (Horoszewicz et al., 1983), is one of the most widely used cell lines for prostate cancer studies. Androgen-sensitive LNCaP cells are representative of patients sensitive to treatments as opposed to resistant cell lines such as DU-145. Additionally, LNCaP cells have been used to obtain numerous subsequent derivatives with different characteristics (Cunningham and You, 2015).\n\nThe LNCaP personalisation was performed based on mutations as discrete data and RNA-Seq as continuous data. The resulting LNCaP-specific Boolean model was then used to identify all possible combinations of mutations (interpreted as effects of therapies) and to study the synergy of these perturbations. For that purpose, we automatically performed single and double mutant analyses on the LNCaP-specific model (knock-out and overexpression) (Montagud et al., 2019) and focused on the model phenotype probabilities as read-outs of the simulations. The analysis of the complete set of simulations for the 32,258 mutants can be found in the Appendix 1, Section 6.1 and in Supplementary file 6, where the LNCaP cell line-specific mutants and their phenotype scores are reported for all mutants. Among all combinations, we identified the top 20 knock-out mutations that depleted Proliferation or increased Apoptosis the most. As some of them overlapped, we ended up with 29 nodes: AKT, AR, ATR, AXIN1, Bak, BIRC5, CDH2, cFLAR, CyclinB, CyclinD, E2F1, eEF2K, eEF2, eEF2K, EGFR, ERK, HSPs, MED12, mTORC1, mTORC2, MYC, MYC_MAX, PHDs, PI3K, PIP3, SPOP, TAK1, TWIST1, and VHL. We used the scores of these nodes to further trim down the list to have 10 final nodes (AKT, AR, cFLAR, EGFR, ERK, HSPs, MYC_MAX, SPOP, and PI3K) and added seven other nodes whose genes are considered relevant in cancer biology, such as AR_ERG fusion, Caspase8, HIF1, GLUT1, MEK1_2, p14ARF, ROS, and TERT (Table 1). We did not consider the overexpression mutants as they have a very difficult translation to drug uses and clinical practices.\n\nTo further analyse the mutant effects, we simulated the LNCaP model with increasing node inhibition values to mimic the effect of drugs\u2019 dosages using a methodology we specifically developed for this purpose (PROFILE_v2 and available at https://github.com/ArnauMontagud/PROFILE_v2; Montagud, 2022a). Six simulations were done for each inhibited node, with 100% of node inhibition (proper knock-out), 80%, 60%, 40%, 20% and 0% (no inhibition) (see Materials and methods). A nutrient-rich media with EGF was used for these simulations that correspond to experimental conditions that are tested here. We show results on three additional sets of initial conditions in the Appendix 1, Section 6, Appendix 1\u2014figure 27: a nutrient-rich media with androgen, with androgen and EGF, and with none, . We applied this gradual inhibition, using increasing drugs\u2019 concentrations, to a reduced list of drug-targeted genes relevant for cancer progression (Table 1). We confirmed that the inhibition of different nodes affected differently the probabilities of the outputs (Appendix 1, Section 7.3.1, Appendix 1\u2014figures 34 and 35). Notably, the Apoptosis score was slightly promoted when knocking out SPOP under all growth conditions (Appendix 1, Section 7.3.1, Appendix 1\u2014figure 35). Likewise, Proliferation depletion was accomplished when HSPs or MYC_MAX were inhibited under all conditions and, less notably, when ERK, EGFR, SPOP, or PI3K were inhibited (Appendix 1, Section 7.3.1, Appendix 1\u2014figure 35).\n\nAdditionally, these gradual inhibition analyses can be combined to study the interaction of two simultaneously inhibiting nodes (Appendix 1, Section 7.3.2, Appendix 1\u2014figures 36 and 37). For instance, the combined gradual inhibition of ERK and MYC_MAX nodes affects the Proliferation score in a balanced manner (Figure 5A) even though MYC_MAX seems to affect this phenotype more, notably at low activity levels. By extracting subnetworks of interaction around ERK and MYC_MAX and comparing them, we found that the pathways they belong to have complementary downstream targets participating in cell proliferation through targets in MAPK and cell cycle pathways. This complementarity could explain the synergistic effects observed (Figure 5A and C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig5-v2.jpg)\n\n**Figure 5.:** Proliferation score variation (A) and Bliss Independence synergy score (C) with increased node activation of nodes ERK and MYC_MAX. Proliferation score variation (B) and Bliss Independence synergy score (D) with increased node activation of nodes HSPs and PI3K. Bliss Independence synergy score <1 is characteristic of drug synergy, grey colour means one of the drugs is absent and thus no synergy score is available.\n\nLastly, drug synergies can be studied using Bliss Independence using the results from single and combined simulations with gradual inhibitions. This score compares the combined effect of two drugs with the effect of each one of them, with a synergy when the value of this score is lower than 1. We found that the combined inhibition of ERK and MYC_MAX nodes on the Proliferation score was synergistic (Figure 5C). Another synergistic pair is the combined gradual inhibition of HSPs and PI3K nodes that also affects the Proliferation score in a joint manner (Figure 5B), with some Bliss Independence synergy found (Figure 5D). A complete study on the Bliss Independence synergy of all the drugs considered in the present work on Proliferation and Apoptosis phenotypes can be found in Appendix 1, Section 7.3.2, Appendix 1\u2014figures 38 and 39.\n\n### Experimental validation of predicted targets\n\n#### Drugs associated with the proposed targets\n\nTo identify drugs that could act as potential inhibitors of the genes identified with the Boolean model, we explored the drug-target associations in DrugBank (Wishart et al., 2018) and ChEMBL (Gaulton et al., 2017). We found drugs that targeted almost all genes corresponding to the nodes of interest in Table 1, except for cFLAR, p14ARF, and SPOP. However, we could not identify experimental cases where drugs targeting both members of the proposed combinations were available (Appendix 1, Section 7.1 and in Supplementary file 6). One possible explanation is that the combinations predicted by the model suggest, in some cases, to overexpress the potential target and most of the drugs available act as inhibitors of their targets.\n\nUsing the cell line-specific models, we tested if the LNCaP cell line was more sensitive than the rest of the prostate cell lines to the LNCaP-specific drugs identified in Table 1. We compared GDSC\u2019s Z-score of these drugs in LNCaP with their Z-scores in all GDSC cell lines (Figure 6 and Appendix 1, Section 7.2, Appendix 1\u2014figure 33). We observed that LNCaP is more sensitive to drugs targeting AKT or TERT than the rest of the studied prostate cell lines. Furthermore, we saw that the drugs that targeted the genes included in the model allowed the identification of cell line specificities (Appendix 1, Section 7.1). For instance, target enrichment analysis showed that LNCaP cell lines are especially sensitive to drugs targeting PI3K/AKT/mTOR, hormone-related (AR targeting) and Chromatin (bromodomain inhibitors, regulating Myc) pathways (adjusted p-values from target enrichment: 0.001, 0.001, and 0.032, respectively, Appendix 1, Section 7.1, Appendix 1\u2014table 2), which corresponds to the model predictions (Table 1). Also, the LNCaP cell line is more sensitive to drugs targeting model-identified nodes than to drugs targeting other proteins (Appendix 1, Section 7.1, Appendix 1\u2014figure 32, Mann-Whitney U p-value 0.00041), and this effect is specific for LNCaP cell line (Mann-Whitney U p-values ranging from 0.0033 to 0.38 for other prostate cancer cell lines).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig6-v2.jpg)\n\n**Figure 6.:** GDSC z-score was obtained for all the drugs targeting genes included in the model for all the prostate cell lines in GDSC. Negative values mean that the cell line is more sensitive to the drug. Drugs included in Table 1 were highlighted. \u2018Other targets\u2019 are drugs targeting model-related genes that are not part of Table 1.\n\nOverall, the drugs proposed through this analysis suggest the possibility to repurpose drugs that are used in treating other forms of cancer for prostate cancer and open the avenue for further experimental validations based on these suggestions.\n\n### Experimental validation of drugs in LNCaP\n\nTo validate the model predictions of the candidate drugs, we selected four drugs that target HSPs and PI3K and tested them in LNCaP cell line experiments by using endpoint cell viability measurement assays and real-time cell survival assays using the xCELLigence system (see Materials and methods). The drug selection was a compromise between the drugs identified by our analyses (Table 1) and their effect in diminishing LNCaP\u2019s proliferation (see the previous section). In both assays, drugs that target HSP90AA1 and PI3K/AKT pathway genes retrieved from the model analyses were found to be effective against cell proliferation.\n\nThe Hsp90 chaperone is expressed abundantly and plays a crucial role in the correct folding of a wide variety of proteins such as protein kinases and steroid hormone receptors (Schopf et al., 2017). Hsp90 can act as a protector of less stable proteins produced by DNA mutations in cancer cells (Barrott and Haystead, 2013; Hessenkemper and Baniahmad, 2013). Currently, Hsp90 inhibitors are in clinical trials for multiple indications in cancer (Chen et al., 2020; Iwai et al., 2012; Le et al., 2017). The PI3K/AKT signalling pathway controls many different cellular processes such as cell growth, motility, proliferation, and apoptosis and is frequently altered in different cancer cells (Carceles-Cordon et al., 2020; Shorning et al., 2020). Many PI3K/AKT inhibitors are in different stages of clinical development, and some of them are approved for clinical use (Table 1).\n\nNotably, Hsp90 (NMS-E973,17-DMAG) and PI3K/AKT pathway (PI-103, Pictilisib) inhibitors showed a dose-dependent activity in the endpoint cell viability assay determined by the fluorescent resazurin after a 48 hr incubation (Figure 7). This dose-dependent activity is more notable in Hsp90 drugs (NMS-E973,17-DMAG) than in PI3K/AKT pathway (Pictilisib) ones and very modest for PI-103.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig7-v2.jpg)\n\n**Figure 7.:** (A) Cell viability assay of LNCaP cell line response to 17-DMAG HSP90 inhibitor. (B) Cell viability assay of LNCaP cell line response to PI-103 PI3K/AKT pathway inhibitor. (C) Cell viability assay of LNCaP cell line response to NMS-E973 HSP90 inhibitor. (D) Cell viability assay of LNCaP cell line response to Pictilisib PI3K/AKT pathway inhibitor. Concentrations of drugs were selected to capture their drug-dose response curves. The concentrations for the NMS-E973 are different from the rest as this drug is more potent than the rest (see Materials and methods).\n\nWe studied the real-time response of LNCaP cell viability upon drug addition and saw that the LNCaP cell line is sensitive to Hsp90 and PI3K/AKT pathway inhibitors (Figures 8 and 9, respectively). Both Hsp90 inhibitors tested, 17-DMAG and NMS-E973, reduced the cell viability 12 hr after drug supplementation (Figure 8A for 17-DMAG and Figure 8B for NMS-E973), with 17-DMAG having a stronger effect and in a more clear concentration-dependent manner than NMS-E973 (Appendix 1, Section 8, Appendix 1\u2014figure 40, panels B-D for 17-DMAG and panels F-H for NMS-E973).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig8-v2.jpg)\n\n**Figure 8.:** (A) Real-time cell electronic sensing (RT-CES) cytotoxicity assay of Hsp90 inhibitor, 17-DMAG, that uses the Cell Index as a measurement of the cell growth rate (see the Materials and methods section). The yellow dotted line represents the 17-DMAG addition. (B) RT-CES cytotoxicity assay of Hsp90 inhibitor, NMS-E973. The yellow dotted line represents the NMS-E973 addition.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/72626/elife-72626-fig9-v2.jpg)\n\n**Figure 9.:** (A) Real-time cell electronic sensing (RT-CES) cytotoxicity assay of PI3K/AKT pathway inhibitor, PI-103, that uses the Cell Index as a measurement of the cell growth rate (see the Materials and methods section). The yellow dotted line represents the PI-103 addition. (B) RT-CES cytotoxicity assay of PI3K/AKT pathway inhibitor, Pictilisib. The yellow dotted line represents the Pictilisib addition.\n\nLikewise, both PI3K/AKT pathway inhibitors tested, Pictilisib and PI-103, reduced the cell viability immediately after drug supplementation (Figure 9A for Pictilisib and Figure 9B for PI-103), in a concentration-dependent manner (Appendix 1, Section 8, Appendix 1\u2014figure 41B-D, for Pictilisib and panels F-H for PI-103). In addition, Hsp90 inhibitors had a more prolonged effect on the cells\u2019 proliferation than PI3K/AKT pathway inhibitors.\n\n## Discussion\n\nClinical assessment of cancers is moving toward more precise, personalised treatments, as the times of one-size-fits-all treatments are no longer appropriate, and patient-tailored models could boost the success rate of these treatments in clinical practice. In this study, we set out to develop a methodology to investigate drug treatments using personalised Boolean models. Our approach consists of building a model that represents the patient-specific disease status and retrieving a list of proposed interventions that affect this disease status, notably by reducing its pro-cancerous behaviours. In this work, we have showcased this methodology by applying it to TCGA prostate cancer patients and to GDSC prostate cancer cell lines, finding patient- and cell line-specific targets and validating selected cell line-specific predicted targets (Figure 1).\n\nFirst, a prostate cancer Boolean model that encompasses relevant signalling pathways in cancer was constructed based on already published models, experimental data analyses and pathway databases (Figure 2). The influence network and the assignment of logical rules for each node of this network were obtained from known interactions described in the literature (Figure 3). This model describes the regulation of invasion, migration, cell cycle, apoptosis, androgen, and growth factors signalling in prostate cancer (Appendix 1, Section 1).\n\nSecond, from this generic Boolean model, we constructed personalised models using the different datasets, that is 488 patients from TCGA and eight cell lines from GDSC. We obtained Gleason score-specific behaviours for TCGA\u2019s patients when studying their Proliferation and Apoptosis scores, observing that high Proliferation scores are higher in high Gleason grades (Figure 4). Thus, the use of these personalised models can help rationalise the relationship of Gleason grading with some of these phenotypes.\n\nLikewise, GDSC data was used with the prostate model to obtain cell line-specific prostate models (Figure 6). These models show differential behaviours, notably in terms of Invasion and Proliferation phenotypes (Appendix 1, Section 5, Appendix 1\u2014figure 21). One of these cell line-specific models, LNCaP, was chosen, and the effects of all its genetic perturbations were thoroughly studied. We studied 32,258 mutants, including single and double mutants, knock-out and over-expressed, and their phenotypes (Appendix 1, Section 6.1, Appendix 1\u2014figures 28 and 29). Thirty-two knock-out perturbations that depleted Proliferation and/or increased Apoptosis were identified, and 16 of them were selected for further analyses (Table 1). The LNCaP-specific model was simulated using different initial conditions that capture different growth media\u2019s specificities, such as RPMI media with and without androgen or epidermal growth factor (Appendix 1, Section 6, Appendix 1\u2014figure 27).\n\nThird, these personalised models were used to simulate the inhibition of druggable genes and proteins, uncovering new treatment\u2019s combination and their synergies. We developed a methodology to simulate drug inhibitions in Boolean models, termed PROFILE_v2, as an extension of previous works (B\u00e9al et al., 2019). The LNCaP-specific model was used to obtain simulations with nodes and pairs of nodes corresponding to the genes of interest inhibited with varying strengths. This study allowed us to compile a list of potential targets (Table 1) and to identify potential synergies among genes in the model (Figure 5). Some of the drugs that targeted these genes, such as AKT and TERT, were identified in GDSC as having more sensitivity in LNCaP than in the rest of the prostate cancer cell lines (Figure 6). In addition, drugs that targeted genes included in the model allowed the identification of cell line specificities (Appendix 1, Section 5).\n\nFourth, we validated the effect of Hsp90 and PI3K/AKT pathway inhibitors on the LNCaP cell line experimentally, finding a concentration-dependent inhibition of the cell line viability as predicted, confirming the role of the drugs targeting these proteins in reducing LNCaP\u2019s proliferation (Figures 7 and 8). Notably, these targets have been studied in other works on prostate cancer (Chen et al., 2020; Le et al., 2017).\n\nThe study presented here enables the study of drug combinations and their synergies. One reason for searching for combinations of drugs is that these have been described for allowing the use of lower doses of each of the two drugs reducing their toxicity (Bayat Mokhtari et al., 2017), evading compensatory mechanisms and combating drug resistances (Al-Lazikani et al., 2012; Krzyszczyk et al., 2018).\n\nEven if this approach is attractive and promising, it has some limitations. The scope of present work is to test this methodology on a prostate model and infer patient-specific prostate cancer treatments. The method need to be adapted if it were to be expanded to study other cancers by using other models and target lists. The analyses performed with the mathematical model do not aim to predict drug dosages per se but to help in the identification of potential candidates. The patient-specific changes in Proliferation and Apoptosis scores upon mutation are maximal theoretical yields that are used to rank the different potential treatments and should not be used as a direct target for experimental results or clinical trials. Our methodology suggests treatments for individual patients, but the obtained results vary greatly from patient to patient, which is not an uncommon issue of personalised medicine (Ciccarese et al., 2017; Molinari et al., 2018). This variability is an economic challenge for labs and companies to pursue true patient-specific treatments and also poses challenges in clinical trial designs aimed at validating the model based on the selection of treatments (Cunanan et al., 2017). Nowadays, and because of these constraints, it might be more commercially interesting to target group-specific treatments, which can be more easily related to clinical stages of the disease.\n\nMathematical modelling of patient profiles helps to classify them in groups with differential characteristics, providing, in essence, a grade-specific treatment. We, therefore, based our analysis on clinical grouping defined by the Gleason grades, but some works have emphasised the difficulty to properly assess them (Chen and Zhou, 2016) and, as a result, may not be the perfect predictor for the patient subgrouping in this analysis, even though it is the only available one for these datasets. The lack of subgrouping that stratifies patients adequately may undermine the analysis of our results and could explain the Proliferation and Apoptosis scores of high-grade and low-grade Gleason patients.\n\nMoreover, the behaviours observed in the simulations of the cell line-specific models do not always correspond to what is reported in the literature. The differences between simulation results and biological characteristics could be addressed in further studies by including other pathways, for example, better describing the DNA repair mechanisms, or by tailoring the model with different sets of data, as the data used to personalise these models do not allow for clustering these cell lines according to their different characteristics (Appendix 1, Section 5, Appendix 1\u2014figures 24 and 25). In this sense, another limitation is that we use static data or a snapshot of dynamic data to build dynamic models and to study its stochastic results. Thus, these personalised models would likely improve their performance if they were fitted to dynamic data (Saez-Rodriguez and Bl\u00fcthgen, 2020) or quantitative versions of the models were built, such as ODE-based, that may capture more fine differences among cell lines. As perspectives, we are working on integrating these models in multiscale models to study the effect of the tumour microenvironment (Ponce-de-Leon et al., 2021; Ponce-de-Leon et al., 2022), on including information to simulate multiple reagents targeting a single node of the model, on scaling these multiscale models to exascale high-performance computing clusters (Montagud et al., 2021; Saxena et al., 2021), and on streamlining these studies using workflows in computing clusters to fasten the processing of new, bigger cohorts, as in the PerMedCoE project (https://permedcoe.eu/).\n\nThe present work contributes to efforts aimed at using modelling (Eduati et al., 2020; Rivas-Barragan et al., 2020; G\u00f3mez Tejeda Za\u00f1udo et al., 2017) and other computational methods (Madani Tonekaboni et al., 2018; Menden et al., 2019) for the discovery of novel drug targets and combinatorial strategies. Our study expands the prostate drug catalogue and improves predictions of the impact of these in clinical strategies for prostate cancer by proposing and grading the effectiveness of a set of drugs that could be used off-label or repurposed. The insights gained from this study present the potential of using personalised models to obtain precise, personalised drug treatments for cancer patients.\n\n## Materials and methods\n\n### Data acquisition\n\nPublicly available data of 489 human prostate cancer patients from TCGA described in Hoadley et al., 2018 were used in the present work. We gathered mutations, CNA, RNA and clinical data from cBioPortal (https://www.cbioportal.org/study/summary?id=prad_tcga_pan_can_atlas_2018) for all of these samples resulting in 488 with complete omics datasets.\n\nPublicly available data of cell lines used in the present work were obtained from the Genomics of Drug Sensitivity in Cancer database (GDSC) (Iorio et al., 2016). Mutations, CNA and RNA data, as well as cell lines descriptors, were downloaded from (https://www.cancerrxgene.org/downloads). In this work, we have used 3- and 5-stage Gleason grades. Their correspondence is the following: GG Low is GG 1, GG Intermediate is GG 2 and 3, and GG High is GG 4 and 5.\n\nAll these data were used to personalise Boolean models using our PROFILE method (B\u00e9al et al., 2019).\n\n### Prior knowledge network construction\n\nSeveral sources were used in building this prostate Boolean model and, in particular, the model published by Fumi\u00e3 and Martins, 2013. This model includes several signalling pathways such as the ones involving receptor tyrosine kinase (RTKs), phosphatidylinositol 3-kinase (PI3K)/AKT, WNT/\u03b2-Catenin, transforming growth factor-\u03b2 (TGF-\u03b2)/Smads, cyclins, retinoblastoma protein (Rb), hypoxia-inducible transcription factor (HIF-1), p53 and ataxia-telangiectasia mutated (ATM)/ataxia-telangiectasia and Rad3-related (ATR) protein kinases. The model includes these pathways as well as the substantial cross-talks among them. For a complete description of the process of construction, see Appendix 1, Section 1.\n\nThe model also includes several pathways that have a relevant role in our datasets identified by ROMA (Martignetti et al., 2016), a software that uses the first principal component of a PCA analysis to summarise the coexpression of a group of genes in the gene set, identifying significantly overdispersed pathways with a relevant role in a given set of samples. This software was applied to the TCGA transcriptomics data using the gene sets described in the Atlas of Cancer Signaling Networks, ACSN (Kuperstein et al., 2015) (http://www.acsn.curie.fr/) and in the Hallmarks (Liberzon et al., 2015) (Appendix 1, Section 1.1.3, Appendix 1\u2014figure 1) and highlighted the signalling pathways that show high variance across all samples, suggesting candidate pathways and genes. Additionally, OmniPath (T\u00fcrei et al., 2021) was used to extend the model and complete it, connecting the nodes from Fumi\u00e3 and Martins and the ones from ROMA analysis. OmniPath is a comprehensive collection of literature-curated human signalling pathways, which includes several databases such as Signor (Perfetto et al., 2016) or Reactome (Fabregat et al., 2016) and that can be queried using pypath, a Python module for molecular networks and pathways analyses.\n\nFusion genes are frequently found in human prostate cancer and have been identified as a specific subtype marker (Cancer Genome Atlas Research Network, 2015). The most frequent is TMPRSS2:ERG, as it involves the transcription factor ERG, which leads to cell-cycle progression. ERG fuses with the AR-regulated TMPRSS2 gene promoter to form an oncogenic fusion gene that is especially common in hormone-refractory prostate cancer, conferring androgen responsiveness to ERG. A literature search reveals that ERG directly regulates EZH2, oncogene c-Myc and many other targets in prostate cancer (Kunderfranco et al., 2010).\n\nWe modelled the gene fusion with activation of ERG by the decoupling of ERG in a special node AR_ERG that is only activated by the AR when the fused_event input node is active. In the healthy case, fused_event (that represents TMPRSS2:ERG fusion event) is fixed to 0 or inactive. The occurrence of the gene fusion is represented with the model perturbation where fused_event is fixed to 1. This AR_ERG node is further controlled by tumour suppressor NKX3-1 that accelerates DNA_repair response, and avoids the gene fusion TMPRSS2:ERG. Thus, loss of NKX3-1 favours recruitment to the ERG gene breakpoint of proteins that promote error-prone non-homologous end-joining (Bowen et al., 2015).\n\nThe network was further documented using up-to-date literature and was constructed using GINsim (Chaouiya et al., 2012), which allowed us to study its stable states and network properties.\n\n### Boolean model construction\n\nWe converted the network to a Boolean model by defining a regulatory graph, where each node is associated with discrete levels of activity (0 or 1). Each edge represents a regulatory interaction between the source and target nodes and is labelled with a threshold and a sign (positive or negative). The model is completed by logical rules (or functions), which assign a target value to each node for each regulator level combination (Abou-Jaoud\u00e9 et al., 2016; Chaouiya et al., 2012). The regulatory graph was constructed using GINsim software (Chaouiya et al., 2012) and then exported in a format readable by MaBoSS software (see below) in order to perform stochastic simulations on the Boolean model.\n\nThe final model has a total of 133 nodes and 449 edges (Supplementary file 1) and includes pathways such as androgen receptor and growth factor signalling, several signalling pathways (Wnt, NFkB, PI3K/AKT, MAPK, mTOR, SHH), cell cycle, epithelial-mesenchymal transition (EMT), Apoptosis, DNA damage, etc. This model has nine inputs (EGF, FGF, TGF beta, Nutrients, Hypoxia, Acidosis, Androgen, TNF alpha, and Carcinogen presence) and six outputs (Proliferation, Apoptosis, Invasion, Migration, (bone) Metastasis, and DNA repair). Note that a node in the network can represent complexes or families of proteins (e.g. AMPK represents the genes PRKAA1, PRKAA2, PRKAB1, PRKAB2, PRKAG1, PRKAG2, PRKAG3). The correspondence can be found in \u201cMontagud2022_interactions_sources.xlsx\u201d and \u201cMontagud2022_nodes_in_pathways.xlsx\u201d in Supplementary file 1.\n\nThis model was deposited in the GINsim Database with identifier 252 (http://ginsim.org/model/signalling-prostate-cancer) and in BioModels (Malik-Sheriff et al., 2020) with identifier MODEL2106070001 (https://www.ebi.ac.uk/biomodels/MODEL2106070001). Supplementary file 1 is provided as a zipped folder with the model in several formats: MaBoSS, GINsim, SBML, as well as images of the networks and their annotations. An extensive description of the model construction can be found in the Appendix 1, Section 1.\n\n### Stochastic Boolean model simulation\n\nMaBoSS (Stoll et al., 2017; Stoll et al., 2012) is a C++ software for stochastically simulating continuous/discrete-time Markov processes defined on the state transition graph (STG) describing the dynamics of a Boolean model (for more details, see Abou-Jaoud\u00e9 et al., 2016; Chaouiya et al., 2012). MaBoSS associates transition rates to each node\u2019s activation and inhibition, enabling it to account for different time scales of the processes described by the model. Probabilities to reach a phenotype (to have value ON) are thus computed by simulating random walks on the probabilistic STG. Since a state in the STG can combine the activation of several phenotypic variables, not all phenotype probabilities are mutually exclusive (like the ones in Appendix 1, Section 6.1, Appendix 1\u2014figure 28). Using MaBoSS, we can study an increase or decrease of a phenotype probability when the model variables are altered (nodes status, initial conditions and transition rates), which may correspond to the effect of particular genetic or environmental perturbation. In the present work, the use of MaBoSS was focused on the readouts of the model, but this can be done for any node of the model.\n\nMaBoSS applies Monte-Carlo kinetic algorithm (i.e. Gillespie algorithm) to the STG to produce time trajectories (Stoll et al., 2017; Stoll et al., 2012), so time evolution of probabilities are estimated once a set of initial conditions are defined and a maximum time is set to ensure that the simulations reach asymptotic solutions. Results are analysed in two ways: (1) the trajectories for particular model states (states of nodes) can be interpreted as the evolution of a cell population as a function of time and (2) asymptotic solutions can be represented as pie charts to illustrate the proportions of cells in particular model states. Stochastic simulations with MaBoSS have already been successfully applied to study several Boolean models (Calzone et al., 2010; Cohen et al., 2015; Remy et al., 2015). A description of the methods we have used for the simulation of the model can be found in the Appendix 1, Section 2.\n\n### Data tailoring the Boolean model\n\nLogical models were tailored to a dataset using PROFILE to obtain personalised models that capture the particularities of a set of patients (B\u00e9al et al., 2019) and cell lines (B\u00e9al et al., 2021). Proteomics, transcriptomics, mutations and CNA data can be used to modify different variables of the MaBoSS framework, such as node activity status, transition rates and initial conditions. The resulting ensemble of models is a set of personalised variants of the original model that can show great phenotypic differences. Different recipes (use of a given data type to modify a given MaBoSS variable) can be tested to find the combination that better correlates to a given clinical or otherwise descriptive data. In the present case, TCGA patient-specific models were built using mutations, CNA and/or RNA expression data. After studying the effect of these recipes in the clustering of patients according to their Gleason grading (Appendix 1, Section 4.1, Appendix 1\u2014figures 10\u201314), we chose to use mutations and CNA as discrete data and RNA expression as continuous data.\n\nLikewise, we tried different personalisation recipes to personalise the GDSC prostate cell lines models, but as they had no associated clinical grouping features, we were left with the comparison of the different values for the model\u2019s outputs among the recipes (Appendix 1, Section 5, Appendix 1\u2014figure 23). We used mutation data as discrete data and RNA expression as continuous data as it included the most quantity of data and reproduced the desired results (Appendix 1, Section 5, Appendix 1\u2014figure 23). We decided not to include CNA as discrete data as it forced LNCaP proliferation to be zero by forcing the E2F1 node to be 0 and the SMAD node to be 1 throughout the simulation (for more details, refer to Appendix 1, Section 5).\n\nMore on PROFILE\u2019s methodology can be found in its own work (B\u00e9al et al., 2019) and at its dedicated GitHub repository (https://github.com/sysbio-curie/PROFILE; B\u00e9al, 2022). A description of the methods we have used for the personalisation of the models can be found in the Appendix 1, Section 3. The analysis of the TCGA personalisations and their patient-specific drug treatments can be found in Appendix 1, Section 4. The analysis of the prostate cell lines personalisations can be found in Appendix 1, Section 5, with a special focus on the LNCaP cell line model analysis in Section 6.\n\n### High-throughput mutant analysis of Boolean models\n\nMaBoSS allows the study of knock-out or loss-of-function (node forced to 0) and gain-of-function (node forced to 1) mutants as genetic perturbations and of initial conditions as environmental perturbations. Phenotypes\u2019 stabilities against perturbations can be studied and allow to determine driver mutations that promote phenotypic transitions (Montagud et al., 2019).\n\nGenetic interactions were thoroughly studied using our pipeline of computational methods for Boolean modelling of biological networks (available at https://github.com/sysbio-curie/Logical_modelling_pipeline; Montagud, 2022b). The LNCaP-specific Boolean model was used to perform single and double knock-out (node forced to 0) and gain-of-function (node forced to 1) mutants for each one of the 133 nodes, resulting in a total of 32,258 models. These were simulated under the same initial conditions, their phenotypic results were collected, and a PCA was applied on the wild type-centred matrix (Appendix 1, Section 6.1, Appendix 1\u2014figures 28 and 29). In addition, we found that the LNCaP model is very robust against perturbations of its logical rules by systematically changing an AND for an OR gate or vice versa in all of its logical rules (Appendix 1, Section 6.2, Appendix 1\u2014figures 30 and 31).\n\nThe 488 TCGA patient-specific models were studied in a similar way, but only perturbing 16 nodes from Table 1 shortlisted for their therapeutic target potential (AKT, AR, Caspase8, cFLAR, EGFR, ERK, GLUT1, HIF-1, HSPs, MEK1_2, MYC_MAX, p14ARF, PI3K, ROS, SPOP, and TERT). Then, the nodes that mostly contributed to a decrease of Proliferation (Appendix 1, Section 4.2, Appendix 1\u2014figure 19) or an increase in Apoptosis (Appendix 1, Section 4.2, Appendix 1\u2014figure 20) were gathered from the 488 models perturbed.\n\nAdditionally, the results of the LNCaP model\u2019s double mutants were used to quantify the level of genetic interactions (epistasis or otherwise) (Drees et al., 2005) between two genetic perturbations (resulting from either the gain-of-function mutation of a gene or from its knock-out or loss-of-function mutation) with respect to wild type phenotypes\u2019 probabilities (Calzone et al., 2015). The method was applied to the LNCaP model studying Proliferation and Apoptosis scores (Appendix 1, Section 7.3.2, Appendix 1\u2014figures 34 and 35).\n\nThis genetic interaction study uses the following equation for each gene pair, which is equation 2 in Calzone et al., 2015:\n\n$$\n\u03f5_{\u03d5}(A,B)=f_{\u03d5}^{AB}\u2212\u03c8(f_{\u03d5}^{A},\u00a0f_{\u03d5}^{B})\n$$\n\nwhere $f_{\u03d5}^{A}$ and $f_{\u03d5}^{B}$ are phenotype $\u03d5$ fitness values of single gene defects, $f_{\u03d5}^{AB}$ is the phenotype $\u03d5$ fitness of the double mutant, and $\u03c8x,y$ is one of the four functions:\n\n$$\n\u03c8^{ADD}(x,y)=x+y\u00a0(additive)\u03c8^{LOG}(x,y)=log_{2}((2^{x}\u22121)(2^{y}\u22121)+1)\u00a0(log)\u03c8^{MLT}(x,y)=x\u2217y\u00a0(multiplicative)\u03c8^{MIN}(x,y)=min(x,y)\u00a0(min)\n$$\n\nTo choose the best definition of $\u03c8x,y$ , the Pearson correlation coefficient is computed between the fitness values observed in all double mutants and estimated by the null model (more information on Drees et al., 2005). Regarding the $f_{\u03d5}^{X}$ fitness value, to a given phenotype $\u03d5$, $f_{\u03d5}^{X}<1$ represents deleterious, $f_{\u03d5}^{X}>1$ beneficial and $f_{\u03d5}^{X}\u22481$ neutral mutation.\n\n### Drug simulations in Boolean models\n\nLogical models can be used to simulate the effect of therapeutic interventions and predict the expected efficacy of candidate drugs on different genetic and environmental backgrounds by using our PROFILE_v2 methodology. MaBoSS can perform simulations changing the proportion of activated and inhibited status of a given node. This can be determined in the configuration file of each model (see, for instance, the \u2018istate\u2019 section of the CFG files in the Supplementary files 1; 3 and 5). For instance, out of 5,000 trajectories of the Gillespie algorithm, MaBoSS can simulate 70% of them with an activated AKT and 30% with an inhibited AKT node. The phenotypes\u2019 probabilities for the 5000 trajectories are averaged, and these are considered to be representative of a model with a drug that inhibits 30% of the activity of AKT. The same applies for a combined drug inhibition: a simulation of 50% AKT activity and 50% PI3K will have 50% of them with an activated AKT and 50% with an activated PI3K. Combining them, this will lead to 25% of the trajectories with both AKT and PI3K active, 25% with both nodes inactive, 25% with AKT active and 25% with PI3K active.\n\nIn the present work, the LNCaP model has been simulated with different levels of node activity, with 100% of node inhibition (proper knock-out), 80%, 60%, 40%, 20%, and 0% (no inhibition), under four different initial conditions, a nutrient-rich media that simulates RPMI Gibco media with DHT (androgen), with EGF, with both and with none. In terms of the model, the initial conditions are Nutrients is ON and Acidosis, Hypoxia, TGF beta, Carcinogen, and TNF alpha are set to OFF. EGF and Androgen values vary upon simulations. We simulated the inhibition of 17 nodes of interest. These were the 16 nodes from Table 1 with the addition of the fused AR-ERG (Appendix 1, Section 7.3.1, Appendix 1\u2014figures 34 and 35) and their 136 pairwise combinations (Appendix 1, Section 7.3.2, Appendix 1\u2014figures 36 and 37). As we used six different levels of activity for each node, the resulting Appendix 1\u2014figures 36 and 37 comprise a total of 4,998 simulations for each phenotype (136 \u00d7 6 x 6 + 17 x 6).\n\nDrug synergies have been studied using Bliss Independence. The Combination Index was calculated with the following equation (Foucquier and Guedj, 2015):\n\n$$\nCI=E_{a}+E_{b}-E_{a}*E_{b}/E_{ab}\n$$\n\nwhere $E_{a}$ and $E_{b}$ is the efficiency of the single drug inhibitions and $E_{ab}$ is the inhibition resulting from the double drug simulations. A Combination Index (CI) below 1 represents synergy among drugs (Appendix 1, Section 7.3.2, Appendix 1\u2014figures 36 and 37).\n\nThis methodology can be found in its own repository: https://github.com/ArnauMontagud/PROFILE_v2.\n\n### Identification of drugs associated with proposed targets\n\nTo identify drugs that could act as potential inhibitors of the genes identified with our models (Table 1), we explored the drug-target associations in DrugBank (Wishart et al., 2018). For those genes with multiple drug-target links, only those drugs that are selective and known to have relevance in various forms of cancer are considered here.\n\nIn addition to DrugBank searches, we also conducted exhaustive searches in ChEMBL (Gaulton et al., 2017) (http://doi.org/10.6019/CHEMBL.database.23) to suggest potential candidates for genes whose information is not well documented in Drug Bank. From the large number of bioactivities extracted from ChEMBL, we filtered human data and considered only those compounds whose bioactivities fall within a specific threshold (IC50/Kd/ Ki <100 nM).\n\nWe performed a target set enrichment analysis using the fgsea method (Korotkevich et al., 2016) from the piano R package (V\u00e4remo et al., 2013). We targeted pathway information from the GDSC1 and GDSC2 studies (Iorio et al., 2016) as target sets and performed the enrichment analysis on the normalised drug sensitivity profile of the LNCaP cell line. We normalised drug sensitivity across cell lines in the following way: cells were ranked from most sensitive to least sensitive (using ln(IC50) as the drug sensitivity metrics), and the rank was divided by the number of cell lines tested with the given drug. Thus, the most sensitive cell line has 0, while the most resistant cell line has 1 normalised sensitivity. This rank-based metric made it possible to analyse all drug sensitivities for a given cell line without drug-specific confounding factors, like mean IC50 of a given drug, etc. (Appendix 1, Sections 7.1 and 7.2).\n\n### Cell culture method\n\nFor the in vitro drug perturbation validations, we used the androgen-sensitive prostate adenocarcinoma cell line LNCaP purchased from American Type Culture Collection (ATCC, Manassas, WV, USA). ATCC found no Mycoplasma contamination and the cell line was identified using STR profiling. Cells were maintained in RPMI-1640 culture media (Gibco, Thermo Fisher Scientific, Waltham, MA, USA) containing 4.5 g/L glucose, 10% foetal bovine serum (FBS, Gibco), 1 X GlutaMAX (Gibco), 1% PenStrep antibiotics (Penicillin G sodium salt, and Streptomycin sulfate salt, Sigma-Aldrich, St. Louis, MI, USA). Cells were maintained in a humidified incubator at 37 \u00b0C with 5% CO2 (Sanyo, Osaka, Japan).\n\n### Drugs used in the cell culture experiments\n\nWe tested two drugs targeted at Hsp90 and two targeted at PI3K complex. 17-DMAG is an Hsp90 inhibitor with an IC50 of 62 nM in a cell-free assay (Pacey et al., 2011). NMS-E973 is an Hsp90 inhibitor with DC50 of <10 nM for Hsp90 binding (Fogliatto et al., 2013). Pictilisib is an inhibitor of PI3K $\\alpha/\\delta$ with IC50 of 3.3 nM in cell-free assays (Zhan et al., 2017). PI-103 is a multi-targeted PI3K inhibitor for p110 $\\alpha/\\beta/\\delta/\\gamma$ with IC50 of 2\u20133 nM in cell-free assays and less potent inhibitor to mTOR/DNA-PK with IC50 of 30 nM (Raynaud et al., 2009). All drugs were obtained from commercial vendors and added to the growth media to have concentrations of 2, 8, 32, 128, and 512 nM for NMS-E973 and 1, 5, 25, 125, and 625 nM for the rest of the drugs in the endpoint cell viability and of 3.3, 10, 30 \u00b5M for all the drugs in the RT-CES cytotoxicity assay.\n\n### Endpoint cell viability measurements\n\nIn vitro toxicity of the selected inhibitors was determined using the viability of LNCaP cells, determined by the fluorescent resazurin (Sigma-Aldrich, Germany) assay as described previously (Szebeni et al., 2017). Briefly, the \u223c10,000 LNCaP cells were seeded into 96-well plates (Corning Life Sciences, Tewksbury, MA, USA) in 100 \u00b5L RPMI media and incubated overnight. Test compounds were dissolved in dimethyl sulfoxide (DMSO, Sigma-Aldrich, Germany), and cells were treated with an increasing concentration of test compounds: 2, 8, 32, 128, and 512 nM for NMS-E973 and 1, 5, 25, 125, and 625 nM for the rest of the drugs. The highest applied DMSO content of the treated cells was 0.4%. Cell viability was determined after 48 hours of incubation. Resazurin reagent (Sigma\u2013Aldrich, Budapest, Hungary) was added at a final concentration of 25 \u00b5g/mL. After 2 hr at 37 \u00b0C 5%, CO2 (Sanyo) fluorescence (530 nm excitation/580 nm emission) was recorded on a multimode microplate reader (Cytofluor4000, PerSeptive Biosystems, Framingham, MA, USA). Viability was calculated with relation to blank wells containing media without cells and to wells with untreated cells. Each treatment was repeated in two wells per plate during the experiments, except for the PI-103 treatment with 1 nM in which only one well was used.\n\nIn these assays, a deviation of 10\u201315% for in vitro cellular assays is an acceptable variation as it is a fluorescent assay that detects the cellular metabolic activity of living cells. Thus, in our analyses, we consider changes above 1.00 to be the same value as the controls.\n\n### Real-time cell electronic sensing (RT-CES) cytotoxicity assay\n\nA real-time cytotoxicity assay was performed as previously described (Ozsv\u00e1ri et al., 2010). Briefly, RT-CES 96-well E-plate (BioTech Hungary, Budapest, Hungary) was coated with gelatin solution (0.2% in PBS, phosphate buffer saline) for 20 min at 37 \u00b0C; then gelatin was washed twice with PBS solution. Growth media (50 \u00b5L) was then gently dispensed into each well of the 96-well E-plate for background readings by the RT-CES system prior to the addition of 50 \u00b5L of the cell suspension containing 2 \u00d7 104 LNCaP cells. Plates were kept at room temperature in a tissue culture hood for 30 min prior to insertion into the RT-CES device in the incubator to allow cells to settle. Cell growth was monitored overnight by measurements of electrical impedance every 15 min. The next day cells were co-treated with different drugs with concentrations of 3.3, 10 and 30 \u00b5M. Treated and control wells were dynamically monitored over 72 hr by measurements of electrical impedance every 5 min. Each treatment was repeated in two wells per plate during the experiments, except for the 3.3 \u00b5M ones in which only one well was used. Continuous recording of impedance in cells was used as a measurement of the cell growth rate and reflected by the Cell Index value (Solly et al., 2004).\n\nNote that around hour 15, our RT-CES reader had a technical problem caused by a short blackout in our laboratory and the reader detected a minor voltage fluctuation while the uninterruptible power supply (UPS) was switched on. This caused differences that are consistent across all samples and replicates: all wild type and drug reads decrease at that time point, except Pictilisib that slightly increases. For the sake of transparency and as the overall dynamic was not affected, we decided not to remove these readings.\n",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "524e8209-c5f5-4b5e-81e8-101df4f373f9",
+      "submission_id": "5e3dc876-5737-4116-a314-094584629179",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer Flegg, https://ror.org/01ej9dk98 The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72626.sa0](https://doi.org/10.7554/eLife.72626.sa0)\n\nThis paper presents a mathematical model for prioritizing drugs for prostate cancer patients based on signal network database. The manuscript is of broad interest to the field of oncology and precision medicine. The methodology developed is sophisticated and relevant to real patient prostate cancer data. The predictions from the model are validated in an experimental setting and provide suggestions for the personalisation of prostate cancer treatment. The study can serve as a roadmap for future development of predictive, personalized models.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jennifer Flegg, https://ror.org/01ej9dk98 The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72626.sa1](https://doi.org/10.7554/eLife.72626.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Patient\u2013specific Boolean models of signaling networks guide personalized treatments\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: R\u00e9ka Albert (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. The main limitation is that the bioinformatics conclusion was validated using only one cell line experimentally. The authors might consider how to consolidate the general utility of this model.\n\n2. Another major limitation is that this model points to the existing drug targets as highlighted in the signal databases. Is it possible to identify new drug targets? When there are multiple reagents hitting the same drug target, can it advise which chemical to use? The authors should comment on this limitation.\n\n3. The authors should comment on the contribution of tumor microenvironment, and whether this model could address this issue since it seems mainly built on signaling in tumor cells.\n\n4. The author used Monte\u2013Carlo kinetic algorithm to generate the time trajectories for the state transition graph and set a maximum time to ensure an asymptotic solution. It would be better to provide more detail of situations if an asymptotic solution cannot be found or such solution can always be found and converge to the same result.\n\n5. The author has not mentioned enough detail about the transition probability between states (e.g., does the transition probability based on prior knowledge, will the transition probability, will the transition probability change when constructing a personalized Boolean model, and how does it change if it changes). It will be good if the authors can provide a transition probability matrix as an example, and any influence from prior knowledge.\n\n6. In the supplementary information, \"Personalized Boolean model of prostate cell lines\" section, the plots (S19/S20) used simulation result from random initial condition, does that mean the result is independent of the choice of initial condition? It would be helpful if the author could analyze the influence of the model output with different initial conditions (e.g., whether it will converge to the same results or different ones).\n\n7. Why does the cell viability increase with drug (e.g. 2nM) compared to no drug (i.e. 0 nM) in Figure 7? Do the drugs promote proliferation in small doses?\n\n8. It would be good to test the drug concentration cell viability experiment for larger doses of drug so we can actually see the maximal efficacy of these drugs. It seems for some of the drugs they don't even achieve their half\u2013effect in the doses tested. Is there a reason for this choice?\n\n9. Indicating the general criteria for the logical rules and giving an example in the Appendix would help a lot.\n\n10. Text queries/suggestions:\n\n\u2013 Figure 2, when the authors say phenotypes, is this also the 6 variable outputs that they mention in the text? If so, it might be good to say this in the caption so it's clear to readers.\n\n\u2013 It's challenging to really fully grasp the full model, I think the readers would benefit from more reference to appropriate sections of the supplementary material.\n\n\u2013 Can you elaborate on how the combined perturbations for already\u2013developed drugs was performed? How was the model changed for a given drug combination?\n\n\u2013 What is EGF, FGF, TGF etc? Are these acronyms? Since they are \"physiological conditions of interest\" it might be good for the readers to know what these represent.\n\n\u2013 When you say \"the final model accounts for 133 nodes and 449 edges\" can this be linked to its biological counterpart. i.e. Is this then 133 proteins and 449 protein\u2013protein pathways/interactions?\n\n\u2013 '\u2026such data can only be obtained with non\u2013standard procedures such as microfluidics from patients' material ': The authors should make it clear about what kind of information is missing from those data making those mode unavailable.\n\n\u2013 The author should clearly specify the number of pathways, genes, and cross\u2013talks involved in their models. It is unclear how many components were integrated into the network to obtain the final network containing 133 nodes and 449 edges. Please also specify how many drugs and drug combinations participated in personalised drug prediction. The authors should clarify the number of drug and drug combination instead of the word of \" several\".\n\n11. Figures queries/suggestions:\n\n\u2013 Figure S1 the text cannot be read; it needs to be larger and the graphic needs to be higher quality.\n\n\u2013 Figure 2 should also be much bigger, it's too difficult to make out the blue rectangles and in turn most of the paths are difficult to discern.\n\n\u2013 Meaning for acronyms in Figure 4 should be given before they are used, i.e. PCA and GG.\n\n\u2013 Provided more details of what is mean by Cell index (a.u.) in Figure 8 and Figure 9 in the caption.\n\n\u2013 A figure summarising the combined treatment effects for the different patients with a figure to demonstrate how AKT was the top hit in Gleason Groups 1, 2 and 3 and so on, would be helpful.\n\n\u2013 What is the strange dynamic occurring at about 15 hours where the points shift down and then jump back up?\n\n\u2013 Figure3: Why there were a sharp increase of several elements before the decay for those output with 0 activities in the final states? Why the kinetics of decaying varied across different nodes? Any interpretation?\n\n\u2013 Figure 4: The correlation between the Gleason scores and Proliferation score is not clear by the graphics. Any other means to show this?\n\n\u2013 Figure 8/9 BCD/FGH seem redundant with Figure 8/9 A/E. You can combine the two types of figures. Also, there seems a discontinuous segment in Figure8/9A/E. Is it an editing error of images? You may consider integrate them as a whole panel.\n\nReviewer #1 (Recommendations for the authors):\n\nBelow are some queries/comments I have for the authors.\n\nGeneral queries:\n\n\u2013 Why does the cell viability increase with drug (e.g. 2nM) compared to no drug (i.e. 0 nM) in Figure 7? Do the drugs promote proliferation in small doses?\n\n\u2013 It would be good to test the drug concentration cell viability experiment for larger doses of drug so we can actually see the maximal efficacy of these drugs. It seems for some of the drugs they don't even achieve their half-effect in the doses tested. Is there a reason for this choice?\n\nText queries/suggestions:\n\n\u2013 Figure 2, when the authors say phenotypes, is this also the 6 variable outputs that they mention in the text? If so, it might be good to say this in the caption so it's clear to readers\n\n\u2013 It's challenging to really fully grasp the full model, I think the readers would benefit from more reference to appropriate sections of the supplementary material\n\n\u2013 Can you elaborate on how the combined perturbations for already-developed drugs was performed? How was the model changed for a given drug combination?\n\n\u2013 What is EGF, FGF, TGF etc? Are these acronyms? Since they are \"physiological conditions of interest\" it might be good for the readers to know what these represent\n\n\u2013 When you say \"the final model accounts for 133 nodes and 449 edges\" can this be linked to its biological counterpart. i.e. Is this then 133 proteins and 449 protein-protein pathways/interactions?\n\nFigures queries/suggestions:\n\n\u2013 Figure S1 the text cannot be read; it needs to be larger and the graphic needs to be higher quality\n\n\u2013 Figure 2 should also be much bigger, it's too difficult to make out the blue rectangles and in turn most of the paths are difficult to discern.\n\n\u2013 Meaning for acronyms in Figure 4 should be given before they are used, i.e. PCA and GG.\n\n\u2013 Provided more details of what is mean by Cell index (a.u.) in Figure 8 and Figure 9 in the caption\n\n\u2013 A figure summarising the combined treatment effects for the different patients with a figure to demonstrate how AKT was the top hit in Gleason Groups 1, 2 and 3 and so on, would be helpful\n\n\u2013 What is the strange dynamic occurring at about 15 hours where the points shift down and then jump back up?\n\nReviewer #2 (Recommendations for the authors):\n\nIndicating the general criteria for the logical rules and giving an example in the Appendix would help a lot.\n\nReviewer #3 (Recommendations for the authors):\n\n1. The main limitation is that the bioinformatics conclusion was validated using only one cell line experimentally. The authors might consider how to consolidate the general utility of this model.\n\n2. Another major limitation is that this model points to the existing drug targets as highlighted in the signal databases. Is it possible to identify new drug targets? When there are multiple reagents hitting the same drug target, can it advise which chemical to use? The authors should comment on this limitation.\n\n3. The authors should comment on the contribution of tumor microenvironment, and whether this model could address this issue since it seems mainly built on signaling in tumor cells.\n\n4. The author used Monte-Carlo kinetic algorithm to generate the time trajectories for the state transition graph and set a maximum time to ensure an asymptotic solution. It would be better to provide more detail of situations if an asymptotic solution can not be found or such solution can always be found and converge to the same result.\n\n5. The author has not mentioned enough detail about the transition probability between states (e.g., does the transition probability based on prior knowledge, will the transition probability, will the transition probability change when constructing a personalized Boolean model, and how does it change if it changes). It will be good if the authors can provide a transition probability matrix as an example, and any influence from prior knowledge.\n\n6. In the supplementary information, \"Personalized Boolean model of prostate cell lines\" section, the plots (S19/S20) used simulation result from random initial condition, does that mean the result is independent of the choice of initial condition? It would be helpful if the author could analyze the influence of the model output with different initial conditions (e.g., whether it will converge to the same results or different ones).\n",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "48c1a3b3-7e55-497b-a1e3-70345d7697ff",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C1",
+      "claim": "Prostate cancer is the second most occurring cancer in men worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Prostate cancer is the second most occurring cancer in men worldwide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract without supporting data or citations in the manuscript itself, but represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "7d3cbd6e-5947-4120-978f-f178756813fc",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C2",
+      "claim": "A total of 488 prostate samples were used to build patient-specific models.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 488 prostate samples were used to build patient-specific models and compared to available clinical data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the use of 488 TCGA samples in the methods and results sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "699df99f-c362-4584-8c1d-130348c9d283",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C3",
+      "claim": "Eight prostate cell line-specific models were built to validate the approach with dose-response data.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, eight prostate cell line-specific models were built to validate our approach with dose-response data of several drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes building models for eight cell lines from GDSC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "1cd3971a-c42e-4552-a281-2f3eb84aa7e8",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C4",
+      "claim": "15 actionable points of interventions were identified in one cell line-specific model whose inactivation hinders tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 15 actionable points of interventions in one cell line-specific model whose inactivation hinders tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding based on the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "16b79c33-60be-4e0a-a22d-d2733e216301",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C5",
+      "claim": "Nine small molecule inhibitors of five putative targets were tested experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate these results, we tested nine small molecule inhibitors of five of those putative targets and found a dose-dependent effect on four of them, notably those targeting HSP90 and PI3K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes experimental validation with specific numbers of inhibitors tested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "9aeac1cf-a69d-44aa-9bbb-5b35beff2159",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C6",
+      "claim": "Drugs targeting HSP90 and PI3K showed dose-dependent effects on LNCaP cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate these results, we tested nine small molecule inhibitors of five of those putative targets and found a dose-dependent effect on four of them, notably those targeting HSP90 and PI3K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract and experimental results sections describe dose-dependent effects of these drugs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "0778311a-579c-4f07-9980-5d1861dd7e69",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C7",
+      "claim": "Not all prostate patients respond to treatments in the same way, depending on the stage and type of their tumour.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all prostate patients respond to the treatments in the same way, depending on the stage and type of their tumour (Chen and Zhou, 2016) and differences in their genetic and epigenetic profiles (Toth et al., 2019; Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "f9e8e75d-e4ab-47de-96fc-161f85125927",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C8",
+      "claim": "The high heterogeneity of prostate cancer profiles can be explained by a large number of interacting proteins and complex cross-talks between cell signalling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The high heterogeneity of these profiles can be explained by a large number of interacting proteins and the complex cross-talks between the cell signalling pathways that can be altered in cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cancer biology based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "558a4cb1-5324-494f-bbe8-521040973d68",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C9",
+      "claim": "Continuous mathematical modelling does not scale up well to large signalling networks due to difficulty of estimating kinetic parameter values.",
+      "claim_type": "EXPLICIT",
+      "source": "Although continuous mathematical modelling has been widely used to study cellular biochemistry dynamics (e.g. ordinary differential equations) (Goldbeter, 2002; Kholodenko et al., 1995; Le Nov\u00e8re, 2015; Sible and Tyson, 2007; Tyson et al., 2019), this formalism does not scale up well to large signalling networks, due to the difficulty of estimating kinetic parameter values (Babtie and Stumpf, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "31b9e696-d842-414f-a271-c10d86e7996d",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C10",
+      "claim": "Boolean models describe each protein as a binary variable (ON/OFF).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Boolean models, the simplest implementation of logical models, describe each protein as a binary variable (ON/OFF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of Boolean models based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "2f840271-fae0-44a6-adc4-5a6c0dc1aa8f",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C11",
+      "claim": "Boolean modelling has been successfully used to describe the dynamics of human cellular signal transduction and gene regulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the last years, logical and, in particular, Boolean modelling has been successfully used to describe the dynamics of human cellular signal transduction and gene regulations (Calzone et al., 2010; Cho et al., 2016; Flobak et al., 2015; Grieco et al., 2013; Helikar et al., 2008; Traynard et al., 2016) and their deregulation in cancer (Fumi\u00e3 and Martins, 2013; Hu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "2ff28f23-97db-456e-994b-b57f0f196367",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C12",
+      "claim": "MaBoSS associates transition rates for activation and inhibition of each node of the network, enabling it to account for different time scales of processes.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, MaBoSS associates transition rates for activation and inhibition of each node of the network, enabling it to account for different time scales of the processes described by the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical features of the MaBoSS software used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "9b405b43-4c30-474d-a228-edeae4854443",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C13",
+      "claim": "MaBoSS applies a Monte-Carlo kinetic algorithm (or Gillespie algorithm) to the STG to produce time trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Given some initial conditions, MaBoSS applies a Monte-Carlo kinetic algorithm (or Gillespie algorithm) to the STG to produce time trajectories (Stoll et al., 2017; Stoll et al., 2012) such that the time evolution of the model state probabilities can be estimated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used by MaBoSS, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "1ceba280-5e06-4b03-9188-d22d764f3906",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C14",
+      "claim": "The prostate Boolean model was built upon a generic cancer Boolean model by Fumi\u00e3 and Martins, 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was built upon a generic cancer Boolean model by Fumi\u00e3 and Martins, 2013, which integrates major signalling pathways and their substantial cross-talks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the foundation of the model construction, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "850056c2-3d20-42e1-9bdb-a056a5e7ad3b",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C15",
+      "claim": "The initial generic network was extended to include prostate cancer-specific genes (e.g. SPOP, AR, etc.).",
+      "claim_type": "EXPLICIT",
+      "source": "This initial generic network was extended to include prostate cancer-specific genes (e.g. SPOP, AR, etc.), pathways identified using ROMA (Martignetti et al., 2016), OmniPath (T\u00fcrei et al., 2021), and up-to-date literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model construction process using multiple data sources.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "827fa6d7-be31-4baf-b422-cc1792ac4693",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C16",
+      "claim": "ROMA was applied to TCGA transcriptomics data using gene sets from cancer pathway databases.",
+      "claim_type": "EXPLICIT",
+      "source": "ROMA was applied to the TCGA transcriptomics data using gene sets from cancer pathway databases (Appendix 1, Section 1.1.3, Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific analysis performed on TCGA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "05757546-6318-4ece-a8e8-9e30e32cc36c",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C17",
+      "claim": "The final network includes 133 nodes and 449 edges.",
+      "claim_type": "EXPLICIT",
+      "source": "The final model accounts for 133 nodes and 449 edges (Figure 2, Supplementary file 1, and in GINsim format at the address: http://ginsim.org/model/signalling-prostate-cancer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of the final model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "86c57d15-b480-47e3-8910-ef78de33903e",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C18",
+      "claim": "The model has nine inputs (EGF, FGF, TGF beta, Nutrients, Hypoxia, Acidosis, Androgen, TNF alpha, and Carcinogen).",
+      "claim_type": "EXPLICIT",
+      "source": "This model has nine inputs (EGF, FGF, TGF beta, Nutrients, Hypoxia, Acidosis, Androgen, TNF alpha, and Carcinogen presence) and six outputs (Proliferation, Apoptosis, Invasion, Migration, (bone) Metastasis, and DNA repair).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the Boolean model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "00f1609d-56e7-4c6a-813f-c9e042c8bbea",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C19",
+      "claim": "The model has six outputs (Proliferation, Apoptosis, Invasion, Migration, (bone) Metastasis, and DNA repair).",
+      "claim_type": "EXPLICIT",
+      "source": "This model has nine inputs (EGF, FGF, TGF beta, Nutrients, Hypoxia, Acidosis, Androgen, TNF alpha, and Carcinogen presence) and six outputs (Proliferation, Apoptosis, Invasion, Migration, (bone) Metastasis, and DNA repair).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the Boolean model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "8d121341-5b74-419f-acd3-3484d88bde4e",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C20",
+      "claim": "Healthy cells mostly exhibit quiescence (neither proliferation nor apoptosis) in the absence of any input.",
+      "claim_type": "EXPLICIT",
+      "source": "These healthy cells mostly exhibit quiescence (neither proliferation nor apoptosis) in the absence of any input (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a simulation result from the wild type model shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "451bb375-7047-4ff9-b2c1-4822da0defd0",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C21",
+      "claim": "When Nutrients and growth factors (EGF or FGF) are present, Proliferation is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "When Nutrients and growth factors (EGF or FGF) are present, Proliferation is activated (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a simulation result from the model shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "87c119f4-5c10-4dc2-b56d-3b5b351ad7aa",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C22",
+      "claim": "Androgen is necessary for AR activation and helps in the activation of Proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Androgen is necessary for AR activation and helps in the activation of Proliferation, even though it is not necessary when Nutrients or growth factors are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model behavior under different input conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "bc567ae7-1a0d-4f7a-8e0c-aa4ea13b27d6",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C23",
+      "claim": "Cell death factors (such as Caspase 8 or 9) trigger Apoptosis in the absence of SPOP.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell death factors (such as Caspase 8 or 9) trigger Apoptosis in the absence of SPOP, while Hypoxia and Carcinogen facilitate apoptosis but are not necessary if cell death factors are present (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a simulation result from the model shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "f36ed8ea-9cbb-4e30-9870-24acde392732",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C24",
+      "claim": "Invasion is activated by either \u03b2-catenin or a combination of CDH2, SMAD, or EZH2.",
+      "claim_type": "EXPLICIT",
+      "source": "Invasion is first activated by known pro-invasive proteins: either \u03b2-catenin (Francis et al., 2013) or a combination of CDH2 (De Wever et al., 2004), SMAD (Daroqui et al., 2012), or EZH2 (Ren et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model logic for invasion, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "72d48af1-be5a-4c2c-9846-0045c5c591de",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C25",
+      "claim": "Migration is activated by Invasion and EMT and with either AKT or AR.",
+      "claim_type": "EXPLICIT",
+      "source": "Migration is then activated by Invasion and EMT and with either AKT or AR (Castoria et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model logic for migration, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "20356f60-fd88-43fd-aa67-c9dd7e2a6ea6",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C26",
+      "claim": "Metastasis is activated by Migration and one of three nodes: RUNX2, ERG or ERG fused with TMPRSS2, FLI1, ETV1 or ETV4.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, (bone) Metastasis is activated by Migration and one of three nodes: RUNX2 (Altieri et al., 2009), ERG (Adamo and Ladomery, 2016) or ERG fused with TMPRSS2 (St John et al., 2012), FLI1, ETV1 or ETV4 (Cancer Genome Atlas Research Network, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model logic for metastasis, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "5a7e7cbb-8c26-4fa9-9da0-ae228b0bfc46",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C27",
+      "claim": "488 individual Boolean models were constructed, one for each TCGA patient.",
+      "claim_type": "EXPLICIT",
+      "source": "We tailored the generic prostate Boolean model to a set of 488 TCGA prostate cancer patients (Appendix 1, Section 4, Appendix 1\u2014figure 9) using our personalisation method (PROFILE) (B\u00e9al et al., 2019), constructing 488 individual Boolean models, one for each patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the personalization process applied to TCGA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "e09ea19b-93a2-40a1-814e-149a9d7b639b",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C28",
+      "claim": "Personalised models were built using mutations, CNA and RNA expression data.",
+      "claim_type": "EXPLICIT",
+      "source": "Personalised models were built using three types of data: discrete data such as mutations and copy number alterations (CNA) and continuous data such as RNAseq data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data types used for model personalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "e9638883-b041-4ff5-b81c-e756f872e1d4",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C29",
+      "claim": "The phenotype DNA_repair separates low and high Gleason scores.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotype DNA_repair, which can be interpreted as a sensor of DNA damage and genome integrity which could lead to DNA repair, seems to separate low and high Gleason scores (Figure 4A and Appendix 1, Section 4.1, Appendix 1\u2014figures 15\u201318), confirming that DNA damage pathways are activated in patients (Marshall et al., 2019) but may not lead to the triggering of apoptosis in this model (Appendix 1, Section 4.1, Appendix 1\u2014figure 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the personalized model simulations shown in Figure 4A, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "329e876b-5bec-4b72-ac7b-3cb94863f913",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C30",
+      "claim": "The density of high Proliferation score tends to increase as the Gleason score increases.",
+      "claim_type": "EXPLICIT",
+      "source": "We then looked at the profiles of the phenotype scores across patients and their Gleason grade and found that the density of high Proliferation score (close to 1, Figure 4B) tends to increase as the Gleason score increases (from low to intermediate to high) and these distributions are significantly different (Kruskal-Wallis rank sum test, p-value = 0.00207; Appendix 1, Section 4.1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the personalized model simulations shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "3b48468a-3fc0-4e02-b8e6-93cf1ebce2df",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C31",
+      "claim": "The Proliferation score distributions across Gleason grades are significantly different (Kruskal-Wallis rank sum test, p-value = 0.00207).",
+      "claim_type": "EXPLICIT",
+      "source": "We then looked at the profiles of the phenotype scores across patients and their Gleason grade and found that the density of high Proliferation score (close to 1, Figure 4B) tends to increase as the Gleason score increases (from low to intermediate to high) and these distributions are significantly different (Kruskal-Wallis rank sum test, p-value = 0.00207; Appendix 1, Section 4.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical test result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "8880d3ff-fbcd-4ca6-94e4-78c4971c50cf",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C32",
+      "claim": "The Apoptosis phenotype probabilities do not have a clear trend across grades.",
+      "claim_type": "EXPLICIT",
+      "source": "The Apoptosis phenotype probabilities, however, do not have a clear trend across grades (Figure 4C), even though the distributions are significantly different (Kruskal-Wallis rank sum test, p-value = 2.83E-6; Appendix 1, Section 4.1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the personalized model simulations shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "1c0ef3ff-94ef-40b8-a3f5-0dbd7482c5eb",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C33",
+      "claim": "The Apoptosis score distributions across Gleason grades are significantly different (Kruskal-Wallis rank sum test, p-value = 2.83E-6).",
+      "claim_type": "EXPLICIT",
+      "source": "The Apoptosis phenotype probabilities, however, do not have a clear trend across grades (Figure 4C), even though the distributions are significantly different (Kruskal-Wallis rank sum test, p-value = 2.83E-6; Appendix 1, Section 4.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical test result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "48fc7f5a-b2b8-4547-86cb-0dfaa2326e2e",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C34",
+      "claim": "MYC_MAX complex and SPOP were identified as suitable points of intervention in more than 80% of TCGA patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found several genes that were found as suitable points of intervention in most of the patients (MYC_MAX complex and SPOP were identified in more than 80% of the cases) (Appendix 1, Section 4.2, Appendix 1\u2014figures 19 and 20), but others were specific to only some of the patients (MXI1 was identified in only 4 patients, 1% of the total, GLI in only 7% and WNT in 8% of patients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mutant analysis of personalized TCGA models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "78834ed7-fd16-4041-a653-be9bbfc96329",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C35",
+      "claim": "MXI1 was identified as a suitable point of intervention in only 4 patients (1% of the total).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found several genes that were found as suitable points of intervention in most of the patients (MYC_MAX complex and SPOP were identified in more than 80% of the cases) (Appendix 1, Section 4.2, Appendix 1\u2014figures 19 and 20), but others were specific to only some of the patients (MXI1 was identified in only 4 patients, 1% of the total, GLI in only 7% and WNT in 8% of patients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mutant analysis of personalized TCGA models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "cac4df30-dd41-4a36-b2de-9706e84ec6f3",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C36",
+      "claim": "LNCaP was first isolated from a human metastatic prostate adenocarcinoma found in a lymph node.",
+      "claim_type": "EXPLICIT",
+      "source": "LNCaP, first isolated from a human metastatic prostate adenocarcinoma found in a lymph node (Horoszewicz et al., 1983), is one of the most widely used cell lines for prostate cancer studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact about the LNCaP cell line, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "8d438fc9-4a3d-49f6-809e-fce7d6164066",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C37",
+      "claim": "LNCaP is one of the most widely used cell lines for prostate cancer studies.",
+      "claim_type": "EXPLICIT",
+      "source": "LNCaP, first isolated from a human metastatic prostate adenocarcinoma found in a lymph node (Horoszewicz et al., 1983), is one of the most widely used cell lines for prostate cancer studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the prevalence of LNCaP use in research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "aba7392b-cef5-40b9-9598-3f93739cdc30",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C38",
+      "claim": "Androgen-sensitive LNCaP cells are representative of patients sensitive to treatments as opposed to resistant cell lines such as DU-145.",
+      "claim_type": "EXPLICIT",
+      "source": "Androgen-sensitive LNCaP cells are representative of patients sensitive to treatments as opposed to resistant cell lines such as DU-145.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of LNCaP cells based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "b1b7aea8-3a5d-464a-906f-559d7680b3b4",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C39",
+      "claim": "32,258 mutants were analyzed for the LNCaP-specific model.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of the complete set of simulations for the 32,258 mutants can be found in the Appendix 1, Section 6.1 and in Supplementary file 6, where the LNCaP cell line-specific mutants and their phenotype scores are reported for all mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of the mutant analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "ecc1d72e-ffb9-46dc-b3f7-f554695573e9",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C40",
+      "claim": "29 nodes were identified as top knock-out mutations that depleted Proliferation or increased Apoptosis the most.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all combinations, we identified the top 20 knock-out mutations that depleted Proliferation or increased Apoptosis the most. As some of them overlapped, we ended up with 29 nodes: AKT, AR, ATR, AXIN1, Bak, BIRC5, CDH2, cFLAR, CyclinB, CyclinD, E2F1, eEF2K, eEF2, eEF2K, EGFR, ERK, HSPs, MED12, mTORC1, mTORC2, MYC, MYC_MAX, PHDs, PI3K, PIP3, SPOP, TAK1, TWIST1, and VHL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the LNCaP mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "16f8a60e-d523-4c04-9a5c-1c02a5db7205",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C41",
+      "claim": "The Apoptosis score was slightly promoted when knocking out SPOP under all growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the Apoptosis score was slightly promoted when knocking out SPOP under all growth conditions (Appendix 1, Section 7.3.1, Appendix 1\u2014figure 35).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a simulation result from the LNCaP model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "6fc8b5d4-6113-4431-a942-5810f563758b",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C42",
+      "claim": "Proliferation depletion was accomplished when HSPs or MYC_MAX were inhibited under all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, Proliferation depletion was accomplished when HSPs or MYC_MAX were inhibited under all conditions and, less notably, when ERK, EGFR, SPOP, or PI3K were inhibited (Appendix 1, Section 7.3.1, Appendix 1\u2014figure 35).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a simulation result from the LNCaP model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "359de77d-5408-4735-a6eb-c0286c5a1bf8",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C43",
+      "claim": "The combined inhibition of ERK and MYC_MAX nodes on the Proliferation score was synergistic.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the combined inhibition of ERK and MYC_MAX nodes on the Proliferation score was synergistic (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the drug combination simulations shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "1d0d2843-9696-4746-84da-e75a492a4bc8",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C44",
+      "claim": "The combined gradual inhibition of HSPs and PI3K nodes affects the Proliferation score in a joint manner with some Bliss Independence synergy.",
+      "claim_type": "EXPLICIT",
+      "source": "Another synergistic pair is the combined gradual inhibition of HSPs and PI3K nodes that also affects the Proliferation score in a joint manner (Figure 5B), with some Bliss Independence synergy found (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the drug combination simulations shown in Figures 5B and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "8fc746dc-57c2-4d62-bd3e-39b498d59e29",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C45",
+      "claim": "LNCaP is more sensitive to drugs targeting AKT or TERT than the rest of the studied prostate cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that LNCaP is more sensitive to drugs targeting AKT or TERT than the rest of the studied prostate cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the GDSC drug sensitivity data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "9507abcc-fc78-4cfb-b238-a880dcbba6c8",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C46",
+      "claim": "LNCaP cell lines are especially sensitive to drugs targeting PI3K/AKT/mTOR, hormone-related (AR targeting) and Chromatin (bromodomain inhibitors, regulating Myc) pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, target enrichment analysis showed that LNCaP cell lines are especially sensitive to drugs targeting PI3K/AKT/mTOR, hormone-related (AR targeting) and Chromatin (bromodomain inhibitors, regulating Myc) pathways (adjusted p-values from target enrichment: 0.001, 0.001, and 0.032, respectively, Appendix 1, Section 7.1, Appendix 1\u2014table 2), which corresponds to the model predictions (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from target enrichment analysis with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "0845e6ce-22a5-419f-99c3-ac916a91fc3b",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C47",
+      "claim": "The LNCaP cell line is more sensitive to drugs targeting model-identified nodes than to drugs targeting other proteins (Mann-Whitney U p-value 0.00041).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the LNCaP cell line is more sensitive to drugs targeting model-identified nodes than to drugs targeting other proteins (Appendix 1, Section 7.1, Appendix 1\u2014figure 32, Mann-Whitney U p-value 0.00041), and this effect is specific for LNCaP cell line (Mann-Whitney U p-values ranging from 0.0033 to 0.38 for other prostate cancer cell lines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the drug sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "c4a95cb2-9239-41c7-9723-9e3b1955bf7a",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C48",
+      "claim": "Hsp90 (NMS-E973, 17-DMAG) and PI3K/AKT pathway (PI-103, Pictilisib) inhibitors showed a dose-dependent activity in the endpoint cell viability assay after 48 hr incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Hsp90 (NMS-E973,17-DMAG) and PI3K/AKT pathway (PI-103, Pictilisib) inhibitors showed a dose-dependent activity in the endpoint cell viability assay determined by the fluorescent resazurin after a 48 hr incubation (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "34ef64a6-f3f6-4ed8-9460-5f702cc94f80",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C49",
+      "claim": "Dose-dependent activity is more notable in Hsp90 drugs (NMS-E973, 17-DMAG) than in PI3K/AKT pathway (Pictilisib) ones and very modest for PI-103.",
+      "claim_type": "EXPLICIT",
+      "source": "This dose-dependent activity is more notable in Hsp90 drugs (NMS-E973,17-DMAG) than in PI3K/AKT pathway (Pictilisib) ones and very modest for PI-103.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental results in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "f1eed6c1-41e6-4432-bad8-e3e03ac5aa44",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C50",
+      "claim": "Both Hsp90 inhibitors tested, 17-DMAG and NMS-E973, reduced the cell viability 12 hr after drug supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Hsp90 inhibitors tested, 17-DMAG and NMS-E973, reduced the cell viability 12 hr after drug supplementation (Figure 8A for 17-DMAG and Figure 8B for NMS-E973), with 17-DMAG having a stronger effect and in a more clear concentration-dependent manner than NMS-E973 (Appendix 1, Section 8, Appendix 1\u2014figure 40, panels B-D for 17-DMAG and panels F-H for NMS-E973).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the RT-CES assay shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "3bf94410-59e5-4d1d-be6d-0dc3445cfe7d",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C51",
+      "claim": "17-DMAG had a stronger effect and in a more clear concentration-dependent manner than NMS-E973.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Hsp90 inhibitors tested, 17-DMAG and NMS-E973, reduced the cell viability 12 hr after drug supplementation (Figure 8A for 17-DMAG and Figure 8B for NMS-E973), with 17-DMAG having a stronger effect and in a more clear concentration-dependent manner than NMS-E973 (Appendix 1, Section 8, Appendix 1\u2014figure 40, panels B-D for 17-DMAG and panels F-H for NMS-E973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative observation from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "55c6250a-4a65-4d77-afbc-942624bfbae5",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C52",
+      "claim": "Both PI3K/AKT pathway inhibitors tested, Pictilisib and PI-103, reduced the cell viability immediately after drug supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, both PI3K/AKT pathway inhibitors tested, Pictilisib and PI-103, reduced the cell viability immediately after drug supplementation (Figure 9A for Pictilisib and Figure 9B for PI-103), in a concentration-dependent manner (Appendix 1, Section 8, Appendix 1\u2014figure 41B-D, for Pictilisib and panels F-H for PI-103).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result from the RT-CES assay shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "4544e3de-ab88-47a2-afb0-c2aed56eb3fc",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C53",
+      "claim": "Hsp90 inhibitors had a more prolonged effect on the cells' proliferation than PI3K/AKT pathway inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Hsp90 inhibitors had a more prolonged effect on the cells' proliferation than PI3K/AKT pathway inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative observation from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "ad7264a3-7e3a-45db-b981-bd890f0a3988",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C54",
+      "claim": "The Hsp90 chaperone is expressed abundantly and plays a crucial role in the correct folding of a wide variety of proteins such as protein kinases and steroid hormone receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hsp90 chaperone is expressed abundantly and plays a crucial role in the correct folding of a wide variety of proteins such as protein kinases and steroid hormone receptors (Schopf et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about Hsp90, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "a176a397-e28b-43e3-b2d8-e68aae165d42",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C55",
+      "claim": "Hsp90 can act as a protector of less stable proteins produced by DNA mutations in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp90 can act as a protector of less stable proteins produced by DNA mutations in cancer cells (Barrott and Haystead, 2013; Hessenkemper and Baniahmad, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about Hsp90, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "1827f64c-bd08-43a1-b496-783c7acac5f2",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C56",
+      "claim": "Hsp90 inhibitors are in clinical trials for multiple indications in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, Hsp90 inhibitors are in clinical trials for multiple indications in cancer (Chen et al., 2020; Iwai et al., 2012; Le et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about Hsp90 inhibitors, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "276f8010-5618-479c-8124-34844c3e372a",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C57",
+      "claim": "The PI3K/AKT signalling pathway controls many different cellular processes such as cell growth, motility, proliferation, and apoptosis and is frequently altered in different cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The PI3K/AKT signalling pathway controls many different cellular processes such as cell growth, motility, proliferation, and apoptosis and is frequently altered in different cancer cells (Carceles-Cordon et al., 2020; Shorning et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about the PI3K/AKT pathway, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "93ab7e2f-dc0e-4d8b-96ef-aeb949382520",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C58",
+      "claim": "Many PI3K/AKT inhibitors are in different stages of clinical development, and some of them are approved for clinical use.",
+      "claim_type": "EXPLICIT",
+      "source": "Many PI3K/AKT inhibitors are in different stages of clinical development, and some of them are approved for clinical use (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about PI3K/AKT inhibitors, with reference to Table 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "de8ccfef-9db0-4644-8437-37a6eac1c40f",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C59",
+      "claim": "The final model includes pathways such as androgen receptor, MAPK, Wnt, NFkB, PI3K/AKT, MAPK, mTOR, SHH, the cell cycle, the epithelial-mesenchymal transition (EMT), apoptosis and DNA damage pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The final network includes pathways such as androgen receptor, MAPK, Wnt, NFkB, PI3K/AKT, MAPK, mTOR, SHH, the cell cycle, the epithelial-mesenchymal transition (EMT), apoptosis and DNA damage pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pathways included in the final model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "bfe47240-74dd-486e-a15e-b0dd9de8b360",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C60",
+      "claim": "The most frequent fusion gene in prostate cancer is TMPRSS2:ERG.",
+      "claim_type": "EXPLICIT",
+      "source": "The most frequent is TMPRSS2:ERG, as it involves the transcription factor ERG, which leads to cell-cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prostate cancer genetics based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "735321c2-6061-4406-abc2-b286e4c7d2fc",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C61",
+      "claim": "ERG fuses with the AR-regulated TMPRSS2 gene promoter to form an oncogenic fusion gene that is especially common in hormone-refractory prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "ERG fuses with the AR-regulated TMPRSS2 gene promoter to form an oncogenic fusion gene that is especially common in hormone-refractory prostate cancer, conferring androgen responsiveness to ERG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the TMPRSS2:ERG fusion based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "368306b3-f0a1-4cd7-b789-9f63c66ef88e",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C62",
+      "claim": "ERG directly regulates EZH2, oncogene c-Myc and many other targets in prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "A literature search reveals that ERG directly regulates EZH2, oncogene c-Myc and many other targets in prostate cancer (Kunderfranco et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ERG function, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "d12f4f64-0ab4-4180-8928-aba1fa8dd4c3",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C63",
+      "claim": "Loss of NKX3-1 favours recruitment to the ERG gene breakpoint of proteins that promote error-prone non-homologous end-joining.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loss of NKX3-1 favours recruitment to the ERG gene breakpoint of proteins that promote error-prone non-homologous end-joining (Bowen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about NKX3-1 function, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "101475b8-66db-4064-b3c5-cf70c50f86a8",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C64",
+      "claim": "Publicly available data of 489 human prostate cancer patients from TCGA were used in the present work.",
+      "claim_type": "EXPLICIT",
+      "source": "Publicly available data of 489 human prostate cancer patients from TCGA described in Hoadley et al., 2018 were used in the present work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "2b7a4e07-f0db-4f47-ad68-f606fd1d3e43",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C65",
+      "claim": "488 samples had complete omics datasets after data gathering.",
+      "claim_type": "EXPLICIT",
+      "source": "We gathered mutations, CNA, RNA and clinical data from cBioPortal (https://www.cbioportal.org/study/summary?id=prad_tcga_pan_can_atlas_2018) for all of these samples resulting in 488 with complete omics datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final dataset used after filtering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "5bb0be3e-4746-4627-8ab7-99601cc65088",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C66",
+      "claim": "17-DMAG is an Hsp90 inhibitor with an IC50 of 62 nM in a cell-free assay.",
+      "claim_type": "EXPLICIT",
+      "source": "17-DMAG is an Hsp90 inhibitor with an IC50 of 62 nM in a cell-free assay (Pacey et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the drug, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "d030171f-a4d0-40e2-add4-3a277ca9adb1",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C67",
+      "claim": "NMS-E973 is an Hsp90 inhibitor with DC50 of <10 nM for Hsp90 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "NMS-E973 is an Hsp90 inhibitor with DC50 of <10 nM for Hsp90 binding (Fogliatto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the drug, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "1322e42d-14aa-4459-9b54-9bd86fb4a1f1",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C70",
+      "claim": "The model was deposited in the GINsim Database with identifier 252.",
+      "claim_type": "EXPLICIT",
+      "source": "This model was deposited in the GINsim Database with identifier 252 (http://ginsim.org/model/signalling-prostate-cancer) and in BioModels (Malik-Sheriff et al., 2020) with identifier MODEL2106070001 (https://www.ebi.ac.uk/biomodels/MODEL2106070001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where the model has been deposited for public access.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "aceedc6c-c059-4405-a66f-afb1b34c182e",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "claim_id": "C71",
+      "claim": "The model was deposited in BioModels with identifier MODEL2106070001.",
+      "claim_type": "EXPLICIT",
+      "source": "This model was deposited in the GINsim Database with identifier 252 (http://ginsim.org/model/signalling-prostate-cancer) and in BioModels (Malik-Sheriff et al., 2020) with identifier MODEL2106070001 (https://www.ebi.ac.uk/biomodels/MODEL2106070001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where the model has been deposited for public access.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ea36bad2-f21f-41a8-9b78-687db4d91253",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A prostate cancer-specific Boolean model was constructed by extending a generic cancer model with prostate-specific genes and pathways, resulting in a network with 133 nodes and 449 edges that includes major signaling pathways relevant to prostate cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 and C59-C63 describe the model construction process using established methods (Fumi\u00e3 and Martins model, ROMA, OmniPath) and provide specific quantitative details (133 nodes, 449 edges, 9 inputs, 6 outputs). The model structure is documented and deposited in public databases (C70-C71), and the construction methodology is well-described with appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "481033c0-4868-4da2-ae2c-33dea5db033c",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The wild-type Boolean model recapitulates expected behaviors of healthy prostate cells, including quiescence in the absence of inputs, proliferation upon growth factor stimulation, and apoptosis triggered by cell death factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 describe simulation results that validate the model's ability to reproduce known biological behaviors. These are supported by Figure 3 and citations to literature supporting the biological logic (e.g., invasion activated by \u03b2-catenin, migration by AKT/AR). The model validation demonstrates appropriate physiological responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "0f017635-54dc-4eb9-9f95-d8395a3415a1",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "488 patient-specific Boolean models were constructed from TCGA data using the PROFILE personalization method, incorporating mutations, copy number alterations, and RNA expression data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C27-C28, C64-C65 consistently describe the use of 488 TCGA samples (489 initially, 488 with complete data) and the personalization methodology. The data sources are clearly documented and the PROFILE method is cited (B\u00e9al et al., 2019), providing methodological support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "f710a568-6789-4ebe-9308-46f68321dbb6",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Personalized TCGA patient models show that proliferation scores increase with Gleason grade (p=0.00207), while DNA_repair phenotype separates low and high grades, though apoptosis shows no clear trend despite significant differences (p=2.83E-6).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 present statistical analyses with specific p-values from Kruskal-Wallis tests and are supported by Figure 4. The proliferation trend is clear and statistically significant, while the apoptosis result appropriately notes statistical significance without a clear biological trend. The DNA_repair observation is supported by citation (Marshall et al., 2019).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "ee5d7551-b2d7-4c0c-9c1d-401f53c70773",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of 488 TCGA patient models identified MYC_MAX and SPOP as intervention targets in >80% of patients, while other targets like MXI1 were patient-specific (only 1% of patients).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 provide specific quantitative findings from the mutant analysis across all patient models. The results demonstrate both common and patient-specific therapeutic targets, which is biologically plausible and supported by the computational analysis described in the methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "3ae6a621-4a48-4533-92b2-4a4a72aa531d",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Eight prostate cell line models were built from GDSC data, with detailed analysis of the LNCaP model identifying 29 nodes as top intervention targets from 32,258 mutant simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C36-C40 describe the cell line modeling approach with specific numbers (8 cell lines, 32,258 mutants, 29 target nodes). The LNCaP characterization is supported by citation (Horoszewicz et al., 1983), and the computational analysis is thoroughly documented in supplementary materials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "c16f5b51-fe0a-49d2-aa86-515a611418fb",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LNCaP model simulations identified HSPs and MYC_MAX as strong proliferation inhibitors, with synergistic effects observed for ERK+MYC_MAX and HSPs+PI3K combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 describe simulation results supported by Figure 5 showing dose-response curves and Bliss Independence synergy scores. The methodology for gradual inhibition (PROFILE_v2) is described, and the synergy analysis uses established metrics (Bliss Independence with CI<1 indicating synergy).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "3121941f-46c6-42e9-b14c-68a63f48984e",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "LNCaP cells show enhanced sensitivity to drugs targeting model-identified nodes (Mann-Whitney U p=0.00041), particularly for PI3K/AKT/mTOR, AR, and chromatin pathways (adjusted p-values 0.001, 0.001, 0.032).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 present statistical validation using GDSC drug sensitivity data with specific p-values from Mann-Whitney U tests and target enrichment analysis. The results are supported by Figure 6 and demonstrate that model predictions correlate with experimental drug sensitivity data, providing external validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "531a3cf3-b316-4ad0-9a19-5980a3fb60f7",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Experimental validation in LNCaP cells confirmed dose-dependent effects of HSP90 inhibitors (17-DMAG, NMS-E973) and PI3K inhibitors (Pictilisib, PI-103), with HSP90 inhibitors showing stronger and more prolonged effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C48-C53 describe experimental results supported by Figures 7-9 showing both endpoint viability assays and real-time monitoring. The dose-dependent effects are clearly demonstrated, with appropriate controls and replicates described in methods. The comparative assessment between drug classes is supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "150d317c-4a77-46cc-b306-ac00299bbc98",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "15 actionable intervention points were identified in one cell line-specific model whose inactivation hinders tumorigenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C4 states 15 targets were identified, but the detailed results (C40) describe 29 nodes from the top 20 knock-out mutations, and the abstract mentions testing 9 inhibitors of 5 targets. The discrepancy between 15, 29, and the actual experimental validation numbers is not clearly resolved in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "df748367-7fb4-4f71-96b1-655ba483a497",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "HSP90 and PI3K/AKT are established cancer targets with known biological functions and drugs in clinical development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 provide background information about the biological roles of HSP90 and PI3K/AKT pathways, all supported by appropriate citations. This contextualizes the experimental validation but represents established knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "cd52568b-db4b-43f6-8aea-e50551aefa9c",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prostate cancer is the second most common cancer in men worldwide, with heterogeneous treatment responses due to tumor stage, type, and molecular profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C8 provide epidemiological and clinical context supported by citations (Chen and Zhou 2016; Toth et al. 2019; Yang et al. 2018). These represent established knowledge that motivates the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "b7cf9cf8-4b5f-4146-b1ea-4a7bbef56bfa",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Boolean modeling with MaBoSS provides a scalable alternative to continuous modeling for large signaling networks, using stochastic simulations with transition rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 describe the methodological framework with appropriate citations. The limitations of ODE models (C9) and advantages of Boolean approaches (C10-C11) are well-established in the field. The MaBoSS methodology (C12-C13) is supported by citations (Stoll et al. 2017, 2012).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "1ea97e93-59ec-4ae7-9834-12ab5095abf3",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The HSP90 inhibitors used have characterized IC50/DC50 values: 17-DMAG (IC50=62 nM) and NMS-E973 (DC50<10 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 provide drug characterization data supported by citations (Pacey et al. 2011; Fogliatto et al. 2013). These are methodological details documenting the drugs used in experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    },
+    {
+      "id": "6014f386-551f-40e3-9fa6-e59cb50faa48",
+      "content_id": "5ec9dbbb-307e-4273-8534-ada1d2a39ffb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The model was deposited in public databases (GINsim Database ID 252, BioModels ID MODEL2106070001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 document data availability with specific database identifiers. This represents good scientific practice for reproducibility but is not a scientific finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:58:09.896842Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1ceba280-5e06-4b03-9188-d22d764f3906",
+      "result_id": "ea36bad2-f21f-41a8-9b78-687db4d91253"
+    },
+    {
+      "claim_id": "850056c2-3d20-42e1-9bdb-a056a5e7ad3b",
+      "result_id": "ea36bad2-f21f-41a8-9b78-687db4d91253"
+    },
+    {
+      "claim_id": "827fa6d7-be31-4baf-b422-cc1792ac4693",
+      "result_id": "ea36bad2-f21f-41a8-9b78-687db4d91253"
+    },
+    {
+      "claim_id": "05757546-6318-4ece-a8e8-9e30e32cc36c",
+      "result_id": "ea36bad2-f21f-41a8-9b78-687db4d91253"
+    },
+    {
+      "claim_id": "86c57d15-b480-47e3-8910-ef78de33903e",
+      "result_id": "ea36bad2-f21f-41a8-9b78-687db4d91253"
+    },
+    {
+      "claim_id": "00f1609d-56e7-4c6a-813f-c9e042c8bbea",
+      "result_id": "ea36bad2-f21f-41a8-9b78-687db4d91253"
+    },
+    {
+      "claim_id": "de8ccfef-9db0-4644-8437-37a6eac1c40f",
+      "result_id": "ea36bad2-f21f-41a8-9b78-687db4d91253"
+    },
+    {
+      "claim_id": "bfe47240-74dd-486e-a15e-b0dd9de8b360",
+      "result_id": "ea36bad2-f21f-41a8-9b78-687db4d91253"
+    },
+    {
+      "claim_id": "735321c2-6061-4406-abc2-b286e4c7d2fc",
+      "result_id": "ea36bad2-f21f-41a8-9b78-687db4d91253"
+    },
+    {
+      "claim_id": "368306b3-f0a1-4cd7-b789-9f63c66ef88e",
+      "result_id": "ea36bad2-f21f-41a8-9b78-687db4d91253"
+    },
+    {
+      "claim_id": "d12f4f64-0ab4-4180-8928-aba1fa8dd4c3",
+      "result_id": "ea36bad2-f21f-41a8-9b78-687db4d91253"
+    },
+    {
+      "claim_id": "8d121341-5b74-419f-acd3-3484d88bde4e",
+      "result_id": "481033c0-4868-4da2-ae2c-33dea5db033c"
+    },
+    {
+      "claim_id": "451bb375-7047-4ff9-b2c1-4822da0defd0",
+      "result_id": "481033c0-4868-4da2-ae2c-33dea5db033c"
+    },
+    {
+      "claim_id": "87c119f4-5c10-4dc2-b56d-3b5b351ad7aa",
+      "result_id": "481033c0-4868-4da2-ae2c-33dea5db033c"
+    },
+    {
+      "claim_id": "bc567ae7-1a0d-4f7a-8e0c-aa4ea13b27d6",
+      "result_id": "481033c0-4868-4da2-ae2c-33dea5db033c"
+    },
+    {
+      "claim_id": "f36ed8ea-9cbb-4e30-9870-24acde392732",
+      "result_id": "481033c0-4868-4da2-ae2c-33dea5db033c"
+    },
+    {
+      "claim_id": "72d48af1-be5a-4c2c-9846-0045c5c591de",
+      "result_id": "481033c0-4868-4da2-ae2c-33dea5db033c"
+    },
+    {
+      "claim_id": "20356f60-fd88-43fd-aa67-c9dd7e2a6ea6",
+      "result_id": "481033c0-4868-4da2-ae2c-33dea5db033c"
+    },
+    {
+      "claim_id": "7d3cbd6e-5947-4120-978f-f178756813fc",
+      "result_id": "0f017635-54dc-4eb9-9f95-d8395a3415a1"
+    },
+    {
+      "claim_id": "5a7e7cbb-8c26-4fa9-9da0-ae228b0bfc46",
+      "result_id": "0f017635-54dc-4eb9-9f95-d8395a3415a1"
+    },
+    {
+      "claim_id": "e09ea19b-93a2-40a1-814e-149a9d7b639b",
+      "result_id": "0f017635-54dc-4eb9-9f95-d8395a3415a1"
+    },
+    {
+      "claim_id": "101475b8-66db-4064-b3c5-cf70c50f86a8",
+      "result_id": "0f017635-54dc-4eb9-9f95-d8395a3415a1"
+    },
+    {
+      "claim_id": "2b7a4e07-f0db-4f47-ad68-f606fd1d3e43",
+      "result_id": "0f017635-54dc-4eb9-9f95-d8395a3415a1"
+    },
+    {
+      "claim_id": "e9638883-b041-4ff5-b81c-e756f872e1d4",
+      "result_id": "f710a568-6789-4ebe-9308-46f68321dbb6"
+    },
+    {
+      "claim_id": "329e876b-5bec-4b72-ac7b-3cb94863f913",
+      "result_id": "f710a568-6789-4ebe-9308-46f68321dbb6"
+    },
+    {
+      "claim_id": "3b48468a-3fc0-4e02-b8e6-93cf1ebce2df",
+      "result_id": "f710a568-6789-4ebe-9308-46f68321dbb6"
+    },
+    {
+      "claim_id": "8880d3ff-fbcd-4ca6-94e4-78c4971c50cf",
+      "result_id": "f710a568-6789-4ebe-9308-46f68321dbb6"
+    },
+    {
+      "claim_id": "1c0ef3ff-94ef-40b8-a3f5-0dbd7482c5eb",
+      "result_id": "f710a568-6789-4ebe-9308-46f68321dbb6"
+    },
+    {
+      "claim_id": "48fc7f5a-b2b8-4547-86cb-0dfaa2326e2e",
+      "result_id": "ee5d7551-b2d7-4c0c-9c1d-401f53c70773"
+    },
+    {
+      "claim_id": "78834ed7-fd16-4041-a653-be9bbfc96329",
+      "result_id": "ee5d7551-b2d7-4c0c-9c1d-401f53c70773"
+    },
+    {
+      "claim_id": "699df99f-c362-4584-8c1d-130348c9d283",
+      "result_id": "3ae6a621-4a48-4533-92b2-4a4a72aa531d"
+    },
+    {
+      "claim_id": "cac4df30-dd41-4a36-b2de-9706e84ec6f3",
+      "result_id": "3ae6a621-4a48-4533-92b2-4a4a72aa531d"
+    },
+    {
+      "claim_id": "8d438fc9-4a3d-49f6-809e-fce7d6164066",
+      "result_id": "3ae6a621-4a48-4533-92b2-4a4a72aa531d"
+    },
+    {
+      "claim_id": "aba7392b-cef5-40b9-9598-3f93739cdc30",
+      "result_id": "3ae6a621-4a48-4533-92b2-4a4a72aa531d"
+    },
+    {
+      "claim_id": "b1b7aea8-3a5d-464a-906f-559d7680b3b4",
+      "result_id": "3ae6a621-4a48-4533-92b2-4a4a72aa531d"
+    },
+    {
+      "claim_id": "ecc1d72e-ffb9-46dc-b3f7-f554695573e9",
+      "result_id": "3ae6a621-4a48-4533-92b2-4a4a72aa531d"
+    },
+    {
+      "claim_id": "16f8a60e-d523-4c04-9a5c-1c02a5db7205",
+      "result_id": "c16f5b51-fe0a-49d2-aa86-515a611418fb"
+    },
+    {
+      "claim_id": "6fc8b5d4-6113-4431-a942-5810f563758b",
+      "result_id": "c16f5b51-fe0a-49d2-aa86-515a611418fb"
+    },
+    {
+      "claim_id": "359de77d-5408-4735-a6eb-c0286c5a1bf8",
+      "result_id": "c16f5b51-fe0a-49d2-aa86-515a611418fb"
+    },
+    {
+      "claim_id": "1d0d2843-9696-4746-84da-e75a492a4bc8",
+      "result_id": "c16f5b51-fe0a-49d2-aa86-515a611418fb"
+    },
+    {
+      "claim_id": "8fc746dc-57c2-4d62-bd3e-39b498d59e29",
+      "result_id": "3121941f-46c6-42e9-b14c-68a63f48984e"
+    },
+    {
+      "claim_id": "9507abcc-fc78-4cfb-b238-a880dcbba6c8",
+      "result_id": "3121941f-46c6-42e9-b14c-68a63f48984e"
+    },
+    {
+      "claim_id": "0845e6ce-22a5-419f-99c3-ac916a91fc3b",
+      "result_id": "3121941f-46c6-42e9-b14c-68a63f48984e"
+    },
+    {
+      "claim_id": "16b79c33-60be-4e0a-a22d-d2733e216301",
+      "result_id": "531a3cf3-b316-4ad0-9a19-5980a3fb60f7"
+    },
+    {
+      "claim_id": "9aeac1cf-a69d-44aa-9bbb-5b35beff2159",
+      "result_id": "531a3cf3-b316-4ad0-9a19-5980a3fb60f7"
+    },
+    {
+      "claim_id": "c4a95cb2-9239-41c7-9723-9e3b1955bf7a",
+      "result_id": "531a3cf3-b316-4ad0-9a19-5980a3fb60f7"
+    },
+    {
+      "claim_id": "34ef64a6-f3f6-4ed8-9460-5f702cc94f80",
+      "result_id": "531a3cf3-b316-4ad0-9a19-5980a3fb60f7"
+    },
+    {
+      "claim_id": "f1eed6c1-41e6-4432-bad8-e3e03ac5aa44",
+      "result_id": "531a3cf3-b316-4ad0-9a19-5980a3fb60f7"
+    },
+    {
+      "claim_id": "3bf94410-59e5-4d1d-be6d-0dc3445cfe7d",
+      "result_id": "531a3cf3-b316-4ad0-9a19-5980a3fb60f7"
+    },
+    {
+      "claim_id": "55c6250a-4a65-4d77-afbc-942624bfbae5",
+      "result_id": "531a3cf3-b316-4ad0-9a19-5980a3fb60f7"
+    },
+    {
+      "claim_id": "4544e3de-ab88-47a2-afb0-c2aed56eb3fc",
+      "result_id": "531a3cf3-b316-4ad0-9a19-5980a3fb60f7"
+    },
+    {
+      "claim_id": "1cd3971a-c42e-4552-a281-2f3eb84aa7e8",
+      "result_id": "150d317c-4a77-46cc-b306-ac00299bbc98"
+    },
+    {
+      "claim_id": "ad7264a3-7e3a-45db-b981-bd890f0a3988",
+      "result_id": "df748367-7fb4-4f71-96b1-655ba483a497"
+    },
+    {
+      "claim_id": "a176a397-e28b-43e3-b2d8-e68aae165d42",
+      "result_id": "df748367-7fb4-4f71-96b1-655ba483a497"
+    },
+    {
+      "claim_id": "1827f64c-bd08-43a1-b496-783c7acac5f2",
+      "result_id": "df748367-7fb4-4f71-96b1-655ba483a497"
+    },
+    {
+      "claim_id": "276f8010-5618-479c-8124-34844c3e372a",
+      "result_id": "df748367-7fb4-4f71-96b1-655ba483a497"
+    },
+    {
+      "claim_id": "93ab7e2f-dc0e-4d8b-96ef-aeb949382520",
+      "result_id": "df748367-7fb4-4f71-96b1-655ba483a497"
+    },
+    {
+      "claim_id": "48c1a3b3-7e55-497b-a1e3-70345d7697ff",
+      "result_id": "cd52568b-db4b-43f6-8aea-e50551aefa9c"
+    },
+    {
+      "claim_id": "0778311a-579c-4f07-9980-5d1861dd7e69",
+      "result_id": "cd52568b-db4b-43f6-8aea-e50551aefa9c"
+    },
+    {
+      "claim_id": "f9e8e75d-e4ab-47de-96fc-161f85125927",
+      "result_id": "cd52568b-db4b-43f6-8aea-e50551aefa9c"
+    },
+    {
+      "claim_id": "558a4cb1-5324-494f-bbe8-521040973d68",
+      "result_id": "b7cf9cf8-4b5f-4146-b1ea-4a7bbef56bfa"
+    },
+    {
+      "claim_id": "31b9e696-d842-414f-a271-c10d86e7996d",
+      "result_id": "b7cf9cf8-4b5f-4146-b1ea-4a7bbef56bfa"
+    },
+    {
+      "claim_id": "2f840271-fae0-44a6-adc4-5a6c0dc1aa8f",
+      "result_id": "b7cf9cf8-4b5f-4146-b1ea-4a7bbef56bfa"
+    },
+    {
+      "claim_id": "2ff28f23-97db-456e-994b-b57f0f196367",
+      "result_id": "b7cf9cf8-4b5f-4146-b1ea-4a7bbef56bfa"
+    },
+    {
+      "claim_id": "9b405b43-4c30-474d-a228-edeae4854443",
+      "result_id": "b7cf9cf8-4b5f-4146-b1ea-4a7bbef56bfa"
+    },
+    {
+      "claim_id": "5bb0be3e-4746-4627-8ab7-99601cc65088",
+      "result_id": "1ea97e93-59ec-4ae7-9834-12ab5095abf3"
+    },
+    {
+      "claim_id": "d030171f-a4d0-40e2-add4-3a277ca9adb1",
+      "result_id": "1ea97e93-59ec-4ae7-9834-12ab5095abf3"
+    },
+    {
+      "claim_id": "1322e42d-14aa-4459-9b54-9bd86fb4a1f1",
+      "result_id": "6014f386-551f-40e3-9fa6-e59cb50faa48"
+    },
+    {
+      "claim_id": "aceedc6c-c059-4405-a66f-afb1b34c182e",
+      "result_id": "6014f386-551f-40e3-9fa6-e59cb50faa48"
+    }
+  ],
+  "comparisons": []
+}

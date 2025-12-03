@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript provides epidemiological context from prior literature on secondary bacterial infections and post-acute COVID-19 in hospitalized patients, citing rates of 14.3-15% for secondary infections and 10-74% for post-acute symptoms depending on patient population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are all supported by appropriate citations to published literature (Zhou et al., Langford et al., Greenhalgh et al., Arnold et al.). These provide established context for the case study and are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "A previously healthy male patient (45-55 years) tested positive for SARS-CoV-2 while asymptomatic as a household contact, developed symptoms 13 days later (within the 14-day CDC-defined incubation period), and presented to hospital with respiratory failure 20 days after initial positive test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 describe the patient's clinical timeline with specific dates and symptoms documented in the case report. C14 appropriately cites CDC guidance for the incubation period reference. The timeline is clearly presented in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "At ICU admission (day 20), RT-PCR testing of an endotracheal sample was negative for SARS-CoV-2, suggesting viral clearance, though CT scans showed classic COVID-19 features including ground-glass opacities throughout the ICU stay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C15 reports negative RT-PCR, but C16's interpretation that this indicates viral clearance is uncertain. A single negative RT-PCR from one anatomical site does not definitively prove viral clearance, especially given persistent radiological findings (C17). Alternative explanations include sampling issues, low viral load below detection threshold, or compartmentalized infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The patient developed ventilator-associated pneumonia (VAP) one week into ICU stay, with antibiotic-susceptible P. aeruginosa cultured from ETT-1 (MIC meropenem 0.5 mg/l, pip/taz 8 mg/l), which was successfully treated with a 7-day course of piperacillin-tazobactam.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe the first VAP episode with specific microbiological data (MIC values), treatment regimen, and clinical response. The diagnosis was based on multiple clinical parameters as described in methods, and clinical recovery is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "VAP recurred 8 days after completing the first antibiotic course, with a pip/taz-resistant P. aeruginosa isolated from ETT-2 (MIC >16 mg/l), which was treated with meropenem (7 days) with clinical improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 document the second VAP episode with emergence of antibiotic resistance, appropriate treatment modification, and clinical response. The timeline and microbiological data are clearly presented in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A third P. aeruginosa isolate (ETT-3) resistant to both pip/taz and meropenem was cultured 2 days after completing meropenem, though no clinical infection was diagnosed. The patient was discharged but experienced persistent post-acute COVID-19 symptoms (breathlessness, fatigue, oxygen desaturation to 84% on exertion) at 3-week follow-up and 8 months post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 document the third resistant isolate, discharge, and long-term symptoms with specific clinical measurements. C31 appropriately contextualizes these as Long COVID symptoms. The longitudinal follow-up data strengthens the case documentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Metagenomic sequencing identified P. aeruginosa ST253 (a worldwide AMR-associated clone) in both ETT-1 and ETT-3, with >99% genomic identity between isolates. ETT-3 showed greater bacterial diversity. Given the patient's prior health, the infections were likely hospital/ICU-acquired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by metagenomic data shown in Figure 2. C33 appropriately cites literature on ST253. C36-C37 provide established microbiological knowledge. C38's inference about hospital acquisition is reasonable given the patient's prior health and timing, though definitive proof of source is acknowledged as impossible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Genomic analysis revealed two SNPs in the ETT-3 P. aeruginosa strain explaining the AMR phenotype: a mexR SNP (Arg91\u2192Gln) likely causing MexAB efflux pump de-repression, and an oprD SNP (Tyr120\u2192stop) disrupting meropenem entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 describe specific molecular mechanisms of resistance with genomic data shown in Figure 2a. C40, C42, and C44 appropriately cite established literature on these resistance mechanisms. The SNPs identified provide mechanistic explanation for the observed MIC changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The authors acknowledge two possible scenarios for the resistant strain origin: evolution from the parent strain under antibiotic pressure with incomplete clearance, or new acquisition of a related AMR strain circulating in the ICU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 appropriately present alternative hypotheses for the strain origin. The authors acknowledge uncertainty about which scenario occurred, which is scientifically appropriate given the available data. The >99% genomic identity supports relatedness but cannot definitively distinguish between scenarios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Flow cytometry revealed robust activation of multiple immune cell subsets (CD4+, CD8+, TCR-\u03b3\u03b4 T-cells, NK cells, monocytes, macrophages, neutrophils) that waned between days 23-28 but increased dramatically after day 28 coinciding with secondary bacterial infection, reaching ~20% and 40% HLA-DR+CD38+ expression in CD4+ and CD8+ T-cells by day 58. Robust IgG responses to both SARS-CoV-2 and P. aeruginosa were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by extensive flow cytometry data in Figure 3 and supplements, with appropriate healthy controls. C51 appropriately contextualizes findings with prior literature (Mathew et al.). The temporal correlation between immune activation and bacterial infection is clearly documented, though causality cannot be definitively established from this single case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Intracellular cytokine staining revealed robust SARS-CoV-2-specific CD4+ T-cell responses (decreasing from day 23 to 58) and modest CD8+ responses, consistent with published patterns in severe COVID-19. P. aeruginosa-specific CD4+ and CD8+ responses increased over time with recurring infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by intracellular cytokine staining data in Figure 4. C54-C55 appropriately cite supporting literature (Peng et al., Grifoni et al.). The antigen-specific responses provide evidence for targeted immune activation, though the magnitude of total activation exceeds what can be explained by these specific responses alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "CMV-specific CD8+ T-cell responses increased over time and showed activation/proliferation markers (HLA-DR+CD38+, Ki67+) with predominantly TEMRA phenotype, suggesting bystander activation via cytokine receptors rather than TCR engagement. SARS-CoV-2 spike-1-specific CD8+ T-cells showed similar patterns with TEM phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 are supported by flow cytometry data in Figure 4 analyzing activation markers and memory phenotypes. C59, C62-C64 appropriately cite literature on bystander activation and TEMRA biology (Sandalova et al., Rivino et al., Neidleman et al., Henson et al.). The TEMRA phenotype provides indirect evidence for bystander activation, though direct proof of mechanism is acknowledged as challenging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The manuscript contextualizes findings within established knowledge that COVID-19 shows prolonged T-cell activation compared to other viral infections, potentially due to impaired immune downregulation, and that bystander T-cell activation (TCR-independent, cytokine-mediated) occurs in acute viral infections with unclear effects on patient recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C75-C78 appropriately cite literature establishing these concepts (Mathew et al., Sandalova et al., Rivino et al., Kim and Shin, Maini et al.). C66 is appropriately presented as speculative ('may be due to'). These provide necessary context for interpreting the case findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors conclude that metagenomics enabled AMR genotype identification, and that the most striking feature was escalating T-cell activation >2 months post-infection and 6 weeks post-viral clearance. The scale of activation and increased frequencies of T-cells specific for unrelated antigens (CMV) suggest significant bystander activation, potentially driven by SARS-CoV-2 infection creating a heightened immune state further stimulated by recurring bacterial infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C70-C72 summarize key findings supported by the presented data. C79-C81 present reasonable interpretations and speculation based on the TEMRA phenotype and activation patterns, though the authors appropriately acknowledge the difficulty of definitively proving bystander activation (C80). The inference is logical given the data but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors speculate that bystander T-cell activation may have contributed to illness severity and post-acute COVID-19 complications in this patient, and suggest that targeting corticosteroid use (which reduces COVID-19 mortality by 20%) to patients with similar immunological profiles might improve long-term recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C68 appropriately cites evidence for corticosteroid efficacy (Sterne et al.). However, C67 and C69 are speculative extrapolations from a single case without supporting data. The proposed therapeutic implication (C69) is not tested and represents a hypothesis for future investigation rather than a supported conclusion. The connection between bystander activation and long-term symptoms remains correlative.",
+    "result_type": "MINOR"
+  }
+]

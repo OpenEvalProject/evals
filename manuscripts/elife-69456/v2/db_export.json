@@ -1,0 +1,2087 @@
+{
+  "submission": {
+    "id": "69abc334-3552-4dcb-9252-9b36612ee52b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:27:49.193661Z",
+    "updated_at": "2025-12-03T07:27:49.193661Z"
+  },
+  "content": [
+    {
+      "id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "submission_id": "69abc334-3552-4dcb-9252-9b36612ee52b",
+      "content_type": "manuscript",
+      "content_text": "# Addressing shortfalls of laboratory HbA1c using a model that incorporates red cell lifespan\n\n## Authors\n\n- Yongjin Xu<sup>1</sup> ([ORCID: 0000-0001-9446-8402](https://orcid.org/0000-0001-9446-8402))\n- Richard M Bergenstal<sup>2</sup>\n- Timothy C Dunn<sup>1</sup> ([ORCID: 0000-0003-3487-2504](https://orcid.org/0000-0003-3487-2504))\n- Ramzi A Ajjan<sup>3</sup> ([ORCID: 0000-0002-1636-3725](https://orcid.org/0000-0002-1636-3725)) \u2020\n\n### Affiliations\n\n1. Abbott Diabetes Care Alameda United States\n2. International Diabetes Center, Park Nicollet, HealthPartners Minneapolis United States\n3. Leeds Institute of Cardiovascular and Metabolic Medicine, University of Leeds Leeds United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nLaboratory HbA1c does not always predict diabetes complications and our aim was to establish a glycaemic measure that better reflects intracellular glucose exposure in organs susceptible to complications. Six months of continuous glucose monitoring data and concurrent laboratory HbA1c were evaluated from 51 type 1 diabetes (T1D) and 80 type 2 diabetes (T2D) patients. Red blood cell (RBC) lifespan was estimated using a kinetic model of glucose and HbA1c, allowing the calculation of person-specific adjusted HbA1c (aHbA1c). Median (IQR) RBC lifespan was 100 (86\u2013102) and 100 (83\u2013101) days in T1D and T2D, respectively. The median (IQR) absolute difference between aHbA1c and laboratory HbA1c was 3.9 (3.0\u201314.3) mmol/mol [0.4 (0.3\u20131.3%)] in T1D and 5.3 (4.1\u201322.5) mmol/mol [0.5 (0.4\u20132.0%)] in T2D. aHbA1c and laboratory HbA1c showed clinically relevant differences. This suggests that the widely used measurement of HbA1c can underestimate or overestimate diabetes complication risks, which may have future clinical implications.\n\n## Introduction\n\nHigh glucose exposure in specific organs (particularly eye, kidney, and nerve) is a critical factor for the development of diabetes complications (Marcovecchio, 2017; Giacco and Brownlee, 2010). Laboratory HbA1c is routinely used to assess glycaemic control, but studies report a disconnect between this glycaemic marker and diabetes complications in some individuals (Cohen et al., 2003; Bonora and Tuomilehto, 2011). The exact mechanisms for this are not always clear but, at least in some cases, likely related to inaccurate estimation of intracellular glucose exposure in the affected organs.\n\nWhile raised intracellular glucose is responsible for diabetes complications (Giacco and Brownlee, 2010; Brownlee, 2005), extracellular hyperglycaemia selectively damages cells with limited ability to adjust cross-membrane glucose transport effectively (Brownlee, 2005). HbA1c has been used as a biomarker for diabetes-related intracellular hyperglycaemia for two main reasons. First, the glycation reaction occurs within red blood cells (RBCs) and therefore HbA1c is modulated by intracellular glucose level. Second, RBCs do not have the capacity to adjust glucose transporter GLUT1 levels and thus are unable to modify glucose uptake, behaving similarly to cells that are selectively damaged by extracellular hyperglycaemia (Brownlee, 2005). Therefore, under conditions of fixed RBC lifespan and glucose uptake, HbA1c mirrors intracellular glucose exposure in organs affected by diabetes complications. However, given the inter-individual variability in both glucose uptake and RBC lifespan (Cohen et al., 2008; Khera et al., 2008), laboratory HbA1c may not always reflect intracellular RBC glucose exposure. While variation in RBC glucose uptake is likely relevant to the risk of diabetes complications in susceptible organs, variation in red cell lifespan can affect haemoglobin glycation and HbA1c values, in turn compromising the accuracy of this glycaemic marker in predicting risk of complications. This explains the inability to clinically rely on laboratory HbA1c in those with haematological disorders characterised by abnormal RBC turnover (American Diabetes Association, 2019) and represents a possible explanation for the apparent \u2018disconnect\u2019 between laboratory HbA1c and development of complications in some individuals with diabetes (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69456/elife-69456-fig1-v2.jpg)\n\n**Figure 1.:** In some individuals, laboratory HbA1c can be misleading and resulting in undertreatment, thus increasing the risk of complications, or overtreatment, predisposing to hypoglycaemia.\n\nA kinetic model, which considers individual variations in both RBC turnover and glucose uptake, has been developed to explain the disconcordance of the glucose-HbA1c relationship on individual level (Xu et al., 2021a). The current work aims to extend this model by providing a way to normalise against RBC lifespan variation when individual RBC lifespan becomes available. We propose a new clinical marker, which we term adjusted HbA1c (aHbA1c), by adjusting laboratory HbA1c for a standard RBC lifespan of 106 days (English and Lenters-Westra, 2018) (equivalent to RBC turnover rate of 0.94% per day). The new glyacemic marker, aHbA1c, is likely to be the most accurate marker of organ exposure to hyperglycaemia and risk of future diabetes-related complications.\n\n## Results\n\nOf the 287 individuals in the original studies, 218 had predefined continuous glucose monitoring (CGM) coverage between at least two HbA1c measurements. Of these, 131 individuals had adequate continuous glucose data to estimate RBC lifespan and glucose uptake rate. The subject characteristics of this sub-cohort are presented in Table 1.\n\n**Table 1.**\n Main characteristics of the cohort studied.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>N</th>\n      <th>131</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age [years; mean \u00b1 SD (range)]</td>\n      <td>53.5 \u00b1 13.7 (18, 77)</td>\n    </tr>\n    <tr>\n      <td>Gender, male [number (percentage)]</td>\n      <td>86 (66%)</td>\n    </tr>\n    <tr>\n      <td>T1D [number (percentage)]T2D [number (percentage)]BMI [kg/m2; mean \u00b1 SD (range)]</td>\n      <td>51 (39%)80 (61%)29.8 \u00b1 5.9 (18.8, 54.1)</td>\n    </tr>\n    <tr>\n      <td>Duration of diabetes (years)</td>\n      <td>17.7 \u00b1 8.7 (2, 46)</td>\n    </tr>\n    <tr>\n      <td>Hypoglycaemic therapy</td>\n      <td>Multiple daily injections of insulin</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Data are presented as mean \u00b1 SD (min, max) or n (%)</td>\n    </tr>\n  </tbody>\n</table>\n\nMean (median, IQR) RBC lifespan was 94 (100, 86\u2013102) days in those with T1D and 92 (100, 83\u2013101) in those with T2D (Figure 2). In this cohort, the mean, median, IQR of the absolute difference between aHbA1c and laboratory HbA1c were 11.0, 3.9, 3.0\u201314.3 mmol/mol (1.0, 0.4, 0.3\u20131.3%) for T1D, and marginally higher at 15.1, 5.3, 4.1\u201322.5 mmol/mol (1.4, 0.5, 0.4\u20132.0%) for T2D subjects. As illustrated in the figure, those with the shorter RBC lifespan of 80 days showed around 22 mmol/mol (2%) lower laboratory HbA1c than aHbA1c. This may lead to underestimating intracellular glucose exposure in susceptible organs, in turn increasing the risk of complications. In contrast, those with RBC lifespan of 130 days demonstrated higher laboratory HbA1c than aHbA1c, which can give the impression of inadequate glycaemic control, leading to therapy escalation and predisposition to hypoglycaemia.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69456/elife-69456-fig2-v2.jpg)\n\n**Figure 2.:** The number (percentage) of individuals having HbA1c adjustments < 1 % (<11 mmol/mol), 1\u20132% (11\u201322 mmol/mol), 2\u20133% (22\u201333 mmol/mol), and >3% (>33 mmol/mol) were 90 (68%), 21 (16%), 12 (9%), and 8 (6%), respectively.\n\nTo further put these results into clinical context, two subjects with an identical laboratory HbA1c of 63 mmol/mol (7.9%) but different RBC lifespans of 89 and 107 days, would have RBC-lifespan-adjusted aHbA1c values of 78 mmol/mol (9.3%) and 62 mmol/mol (7.8%), respectively, indicating different future risk of diabetes complications. Another two individuals with different laboratory HbA1c of 60 mmol/mol (7.6%) and 75 mmol/mol (9.0%), and corresponding RBC lifespans of 89 and 107 days, would have identical aHbA1c value of 74 mmol/mol (8.9%). This would place them at similar risk of diabetes complications, despite the significantly different laboratory HbA1c values. Generally, in individuals with RBC lifespan of approximately 93\u2013123 days, aHbA1c and laboratory HbA1c showed relatively small differences (<11 mmol/mol or 1% when laboratory HbA1c < 64 mmol/mol or 8%). In this cohort, 90 (69%) subjects were within RBC lifespan range of 93\u2013123 days, while 39 (30%) subjects had RBC lifespan below 93 days and 2 (1.5%) subjects above 123 days.\n\n## Discussion\n\nVariation in RBC lifespan and glucose uptake between individuals can lead to different laboratory HbA1c despite similar hyperglycaemic exposure in the organs affected by diabetes complications. In order to individualise care and assess the personal risk of hyperglycaemic complications, laboratory HbA1c levels should be adjusted to account for variability in RBC turnover through our proposed aHbA1c. Without this adjustment, there is a risk of overestimating glucose levels that may cause hypoglycaemia through the unnecessary escalation of diabetes therapies, or alternatively, underestimation that may lead to undertreatment and subsequent high risk of complications. In addition, there are implications for the diagnosis of prediabetes and diabetes, as there may be misclassifications if the diagnosis is based solely on laboratory HbA1c levels due to variable RBC lifespan across individuals.\n\nRBC removal by senescence and erythrocyte apoptosis are complex processes, which can be affected by the presence of hyperglycaemia and known to vary both within and across individuals (Lang et al., 2012). In the meantime, potential differences in RBC glucose uptake (Khera et al., 2008) can also affect the relationship between blood glucose and HbA1c. Several mathematical models (Malka et al., 2016; Fabris et al., 2020) have been developed to estimate laboratory HbA1c from glucose levels or time in range, emphasising the importance of this area. Accurate estimation of \u2018clinically relevant HbA1c\u2019 will allow each person with diabetes to have an individualised glycaemic target that ensures adequate treatment, thus reducing the risk of complications while minimising hypoglycaemic risk.\n\nA unique feature of our model (Xu et al., 2021a) is the inclusion of individual-specific RBC lifespan and glycation rate in the calculations. A weakness of this model, however, is the absence of a direct measure of RBC lifespan, which remains an estimate based on a mathematical calculation. However, the ability of the model to reflect laboratory HbA1c, as we have previously shown, indicates a good level of accuracy at estimating RBC lifespan ( Xu et al., 2021c). In addition, the method is far simpler than complex methods for estimating RBC lifespan through labelling experiments that are not suited for routine clinical practice (Cohen et al., 2008). Future work may determine whether other measures, such as reticulocyte count or red cell distribution width (Brodksy, 2021; Kameyama et al., 2018; Kameyama et al., 2020), can further be added to the model to further improve the accuracy of estimating RBC lifespan and this remains an area for future research.\n\nSince aHbA1c reflects intracellular glucose exposure in RBCs, it is difficult to directly compare with extracellular glucose-derived glycaemic markers such as average glucose or time in range. As an intracellular marker, aHbA1c should correlate with intracellular glucose levels, therefore providing a potentially accurate measure of glucose exposure of organs susceptible to diabetes complications. We summarise the advantages and drawbacks of different methods that measure average glucose control in Appendix 1\u2014table 2.\n\nImportantly, our study demonstrates that laboratory HbA1c does not necessarily reflect intracellular glucose exposure of organs prone to diabetes complications. However, future work is required to show that adjusted A1c is a better predictor of diabetes complications than laboratory HbA1c. Moreover, it is unclear whether the use of aHbA1c reduces the risk of hypoglycaemic complications as compared to reliance on laboratory HbA1c, and these remain areas for future research.\n\nIn conclusion, quantitative aHbA1c, derived from laboratory HbA1c and CGM readings, has the potential to more accurately assess glycaemic exposure of different organs, providing a safer and more effective glycaemic guide for the management of individuals with diabetes. Future testing in larger populations and different ethnic groups is required to further increase confidence in the model. This to be followed by large prospective clinical studies to test the relationship between aHbA1c and future microvascular/macrovascular diabetes complications as well as reducing the risk of hypoglycaemic exposure through avoidance of unnecessary therapy escalation.\n\n## Materials and methods\n\nCGM and laboratory HbA1c data from 139 type 1 (T1D) and 148 type 2 diabetes (T2D) patients, enrolled in two previous European clinical studies (Bolinder et al., 2016; Haak et al., 2017), were evaluated to calculate aHbA1c as detailed below. These studies were designed to evaluate the benefits of CGM in those with T1D and those with T2D using multiple daily injections of insulin. Both studies were conducted after appropriate ethical approval and participants gave written informed consent. A total of 6 months\u2019 CGM data were collected using the sensor-based flash glucose monitoring system (FreeStyle Libre; Abbott Diabetes Care, Witney, UK), while HbA1c was measured by a central laboratory (ICON Laboratories, Dublin, Ireland) at 0, 3, and 6 months of the study. For T1D participants, the mean age was 44 years (range 18\u201370 years), 17 (33%) of whom were females. For T2D, the mean age was 59 years (range 33\u201377 years), 28 (35%) of whom were females.\n\nEach subject had at least one data section consisting of two HbA1c measurements connected by CGM data. Since the kinetic parameters are more sensitive to the data sections with larger between-day glucose changes, the parameters were successfully estimated for those individuals with sufficient day-to-day glucose variability, as evidenced by the model fit of RBC life converging between 50 and 180 days. These individual RBC lifespans or turnover rates were calculated according to previous model (Xu et al., 2021a) that considers both RBC turnover rate and glucose uptake. Briefly, the model aligns laboratory HbA1c and the contemporaneous CGM-derived estimate of HbA1c under optimal values for RBC turnover and glucose uptake of each individual. Since there is no simple clinical assay for RBC turnover and glucose uptake, these RBC parameters are estimated using a numerical method such that differences between laboratory HbA1c and CGM-derived estimate are minimized. While the parameter identification method can be performed by repeated permutations across all reasonably possible values for RBC lifespan and uptake, our approach uses a far more efficient and reliable numerical method, as previously described (Xu et al., 2021a). Detailed model description and derivation are provided in Appendix 1. Deriving from the same model, we constructed aHbA1c (Equation 1) that adjusts laboratory HbA1c for individual RBC turnover variation for potential clinical use.\n\n$$\naHbA1c=\\frac{HbA1c}{HbA1c+\\frac{k_{age}^{ref}}{k_{age}}(1\u2212HbA1c)}\n$$\n\nIn an approximation, $aHbA1c   \\frac{k_{age}}{k_{age}^{ref}} HbA1c$, where HbA1c is laboratory HbA1c, kage is individual RBC turnover rate (%/day), $k_{age}^{ref}$ is standard RBC turnover rate (0.94%/day). HbA1c and aHbA1c are in NGSP unit and decimal values should be used. For example, 8% HbA1c should be applied as 0.08. Equation 1 for IFCC unit is available in Appendix 1.\n\nUnder the assumption of individually constant RBC life, the relationship between RBC turnover rate (kage), RBC lifespan (LRBC) and mean RBC age (MARBC) can be inter-converted using the simple formula: $2*MA_{RBC}=L_{RBC}=\\frac{1}{k_{age}}$ . Therefore, 0.94%/day standard RBC turnover rate is equivalent to 106 days of RBC life and 53 days of mean RBC age. Of note, the adjustment is not linear, decreasing RBC lifespan corresponds to more pronounced aHbA1c adjustment than a seemingly comparable increase in RBC lifespan. All calculations in this study were done with Python/SciPy (Virtanen et al., 2020) software package.\n\nFull derivation of the model is further provided in Appendix 1.\n",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "b4a0cdc4-af8e-47c7-8814-3dab3363be64",
+      "submission_id": "69abc334-3552-4dcb-9252-9b36612ee52b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rachel Perry, Yale United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69456.sa1](https://doi.org/10.7554/eLife.69456.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper will be of interest to clinicians who provide care for persons with diabetes, educators who prepare these clinicians, as well as persons with diabetes who wish to be proactive participants in their own care. The calculation for an adjusted Hemoglobin A1c proposed by the authors can correct for individual red blood cell lifespan variations that can lead to misrepresentation of glycemic control. With the addition of a data-driven comparison to other means of assessing glycemic control, the adjusted HbA1c has the potential to improve care and subsequently decrease morbidity and mortality for persons with diabetes.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"HbA1c and Red Blood Cell Lifespan: Addressing shortfalls of the laboratory measure\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Nancy Carrasco as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Agnieszka Szadkowska (Reviewer #2); Masashi Kameyama (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) A more complete description of the derivation of the model \u2013 more detail is required as to how the computations were done.\n\n2) A comparison to other methods of assessing glycemic control (CGM, A1c). While assessment of how the authors' model predicts complications will not be required, a comparison (or at the very least, detailed discussion) of how it can compare to standard means of assessing glycemic control is necessary.Reviewer #1:\n\nThe strengths of this paper include that it builds on previous research and its sample size. However, the calculation for the individual RBC turnover rate, k age, is not included. The calculation for the adjusted HbA1c is too unwieldy for the clinician to use in practice where there is increased pressure to see many patients on a timely basis. If a \"calculator\" could be formulated allowing the clinician to plug in the relevant values and get the adjusted HbA1c, this could be widely used to improve patient care at the point of care which is the ultimate goal of this research.\n\nThe author's claims of a proposed adjusted HbA1c which is more accurate in predicting adverse outcomes due to diabetes is supported by the data.\n\nThere is a model to estimate RBC lifespan using reticulocyte count: Brodsky, R. A. Diagnosis of hemolytic anemia in the adult. In J. S. Timauer (Ed.) UpToDate, Retrieved February 17, 2020 from https://www.uptodate.com/contents/diagnosis-of-hemolytic-anemia-in-the-adult?search=hemolytic%20anemia&source=search_result&selectedTitle=1~150&usage_type=default&display_rank=1.Reviewer #2:\n\nLaboratory HbA1c values are routinely used to assess glycemic control, but differences in red blood cell lifespan can affect hemoglobin glycation and HbA1c values. The authors developed a formula for adjusted HbA1c to account for red blood cell lifespan, which would better represent hemoglobin glycation and thus could better estimate the risk of disease complications.\n\nThe authors based their formula for aHbA1c calculation on laboratory measurements of HbA1c and CGM data performed with FreeStyle Libre. When using CGM systems, we often see falsified results for the duration of hypoglycemia, especially at night, due to sensor compression. The authors did not address these technical problems that may affect the aHbA1c result.\n\nUsing CGM we now have simple parameters to assess metabolic control of diabetes on the basis of CGM: TIR, GMI, CV. What I miss is a comparative analysis between these parameters and aHbA1c to convince readers that aHbA1c will be a better parameter for long term assessment for risk of complications.\n\nThe authors achieved their goal, and the results support their conclusions.\n\nThe use of aHbA1c in daily practice can be difficult because usually the clinician wants a ready result, but for research purposes, especially in patients with shorter red blood cell lifespans, it could be useful.\n\nIt will be interesting to see if its usefulness in estimating the risk of complications will be greater than TIR or GMI with CV.\n\nSome comments on the methods and results:\n\nMethods:\n\n1. The study is based on CGM performed with FreeStyle Libre. From experience, we know that patients often have false hypoglycemia at night due to compression of the sensor. Has this been taken into account in the analysis?\n\n2. Currently we use TIR and GMI to assess metabolic control in CGM users. Since aHbA1c, a new parameter will require additional calculations from me as a clinician, does it have advantages over these parameters in assessing the risk of chronic complications. It may be worth doing additional analysis comparing aHbA1c with these parameters.\n\n3. As this is proof of concept, the details of creating the equation should be described, probably in some supplement. In addition, the idea behind the mathematical formula might help explain the equation to the readers. Secondly, the equation presented here is not clear in terms of units, and additionally operates slightly differently than the one in executed in provided excel file. The units for HbA1c here must be better emphasized. For example, if we assume HbA1c 9%, HbA1c in the numerator is treated as is (9%, % as a unit is preserved), but HbA1cs in the denominator have their units dropped (changed from 9% to 0.09). In parallel, the formula in excel does the same but multiplies the nominator by 100 (9% -> 900 %) and leaves HbA1cs in the denominator as is (and 1 becomes 100%). This creates some confusion and should be better explained, or an example calculation could be shown.\n\nResults:\n\n1. I think, that any characteristics of this group in needed. They come from already-reported cohorts but this is only a subgroup, so some basic clinical characteristics (if available) would be welcome.\n\n2. Ad Figure 2 May be it should be consider adding a scatter plot showing individual patients or HbA1c measurements. Or, for simplicity, mark how many patients (N, %) had their HbA1c adjusted by up to 1, 1-2, 2-3 and >3%. This will provide a good estimate as to the range of applicability of your equation.\n\nReviewer #3:\n\nThe authors tried to adjust HbA1c to remove influence of erythrocyte lifespan. I admit the need for the adjustment, however, the study seems to lack the confirmation of their method.\n\n1. The authors did not confirm the usefulness of their aHbA1c. The best way may be to confirm future diabetes complications as they mentioned, but it takes many years. I recommend to compare aHbA1c and average glucose derived by CGM.\n\n2. The method requires complicated calculation from CGM data. I am not sure if the method is better than the simple average glucose derived CGM. Maybe, the kinetic method does not require steady state.\n\n3. The value of kgly was not stabilized; from 4.04E-6 to 9.95E-6. kgly is a constant of non-enzymic process. It was estimated to be 6-10E-6, but the most recent one was 7.0E-6 (Kameyama et al. 2021). The average value of 5.86E-6 is smaller than the previously estimated value. I think that this instability is attributable to the nature of the calculation asking both kgly and kage.\n\n4. The value of HbA1c should be converted to IFCC value.\n\n\"While the National Glycohemoglobin Standardization Program (NGSP) is used to express HbA1c in many clinical research and medical care settings, NGSP is measured by an old standardized method and at the time of conception, HPLC was not able to distinguish true HbA1c from other products. HPLC technology later advanced, however the derived HbA1c value is adjusted to NGSP in the interest of consistency. IFCC provides a strict definition of iA1c as hemoglobin with a glycated valine in the N-terminal \u03b2-chain. Thus, iA1c value is preferred value for estimation of hemoglobin glycation.\" (Kameyama et al., 2021)\n\n5. The authors chose random destruction model of erythrocytes, however \"unlike some other species including mice, all normal human RBCs have about the same lifespan and thus exhibit non-random removal ( Franco, 2009 ).\" Kameyama et al., (2018) provided erythrocyte model based on \u0393-distribution by Shrestha et al., (2016). Program Modification from random destruction model to the uniform distribution of RBC ages model (\u0393model requires 2 parameters, so model that every RBC dies at the same age would be better to program) may be troublesome, but I think it is worth.\n\n6. Equation 1 needs the derivation. i.e. d HbA1c/dt = 0; -kage HbA1c + kgly AG(1-HbA1c) = 0, -kageref HbA1c + kgly AG(1-HbA1c) = 0\n\nKameyama M, et al., Estimation of the hemoglobin glycation rate constant. Sci Rep. 2021 Jan 13;11(1):986. doi: 10.1038/s41598-020-80024-7.\n\nFranco RS. The measurement and importance of red cell survival. Am J Hematol. 2009 Feb;84(2):109-14. doi: 10.1002/ajh.21298.\n\nKameyama M, Takeuchi S, Ishii S. Steady-state relationship between average glucose, HbA1c and RBC lifespan. J Theor Biol. 2018 Jun 14;447:111-117. doi: 10.1016/j.jtbi.2018.03.023.\n\nShrestha RP et al. Models for the red blood cell lifespan. J Pharmacokinet Pharmacodyn. 2016 Jun;43(3):259-74. doi: 10.1007/s10928-016-9470-4.\n\nI think that the merit of the author's method is to obtain the erythrocyte lifespan. It would be interesting to compare mean erythrocyte age by Kameyama's equation (Mrbc = HbA1c / ((1-(2/3)HbA1c)kg AG)) and kage.\n",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d58f29d2-6449-40ac-8636-5f19530d1eae",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C1",
+      "claim": "High glucose exposure in specific organs (particularly eye, kidney, and nerve) is a critical factor for the development of diabetes complications.",
+      "claim_type": "EXPLICIT",
+      "source": "High glucose exposure in specific organs (particularly eye, kidney, and nerve) is a critical factor for the development of diabetes complications (Marcovecchio, 2017; Giacco and Brownlee, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Marcovecchio, 2017 and Giacco and Brownlee, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "e7e75542-03a1-40d4-b7b1-010609b50726",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C2",
+      "claim": "Laboratory HbA1c is routinely used to assess glycaemic control.",
+      "claim_type": "EXPLICIT",
+      "source": "Laboratory HbA1c is routinely used to assess glycaemic control, but studies report a disconnect between this glycaemic marker and diabetes complications in some individuals (Cohen et al., 2003; Bonora and Tuomilehto, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established clinical practice and supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "58896394-f36a-4e6b-964d-516c9a0a1839",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C3",
+      "claim": "Studies report a disconnect between laboratory HbA1c and diabetes complications in some individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Laboratory HbA1c is routinely used to assess glycaemic control, but studies report a disconnect between this glycaemic marker and diabetes complications in some individuals (Cohen et al., 2003; Bonora and Tuomilehto, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cohen et al., 2003 and Bonora and Tuomilehto, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "610d5747-cdb1-4569-8b19-3ddaa23fa8a5",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C4",
+      "claim": "The disconnect between laboratory HbA1c and diabetes complications is likely related to inaccurate estimation of intracellular glucose exposure in the affected organs in at least some cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact mechanisms for this are not always clear but, at least in some cases, likely related to inaccurate estimation of intracellular glucose exposure in the affected organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the observed disconnect",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "d1ed5b37-5d99-4236-99bf-6f9e7fc80074",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C5",
+      "claim": "Raised intracellular glucose is responsible for diabetes complications.",
+      "claim_type": "EXPLICIT",
+      "source": "While raised intracellular glucose is responsible for diabetes complications (Giacco and Brownlee, 2010; Brownlee, 2005), extracellular hyperglycaemia selectively damages cells with limited ability to adjust cross-membrane glucose transport effectively (Brownlee, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Giacco and Brownlee, 2010 and Brownlee, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "309a8e55-57ac-4a7d-a5b7-1af48b35428e",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C6",
+      "claim": "Extracellular hyperglycaemia selectively damages cells with limited ability to adjust cross-membrane glucose transport effectively.",
+      "claim_type": "EXPLICIT",
+      "source": "While raised intracellular glucose is responsible for diabetes complications (Giacco and Brownlee, 2010; Brownlee, 2005), extracellular hyperglycaemia selectively damages cells with limited ability to adjust cross-membrane glucose transport effectively (Brownlee, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brownlee, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "f614eb88-a787-409e-bbe1-19af828aac0a",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C7",
+      "claim": "The glycation reaction occurs within red blood cells (RBCs).",
+      "claim_type": "EXPLICIT",
+      "source": "First, the glycation reaction occurs within red blood cells (RBCs) and therefore HbA1c is modulated by intracellular glucose level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about HbA1c formation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "2d24e7cd-1d7d-40b3-a749-949b7cf20f88",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C8",
+      "claim": "HbA1c is modulated by intracellular glucose level.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the glycation reaction occurs within red blood cells (RBCs) and therefore HbA1c is modulated by intracellular glucose level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the intracellular location of glycation reaction",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "ced090f2-87fb-4d51-97ac-dd7abe5aac68",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C9",
+      "claim": "RBCs do not have the capacity to adjust glucose transporter GLUT1 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, RBCs do not have the capacity to adjust glucose transporter GLUT1 levels and thus are unable to modify glucose uptake, behaving similarly to cells that are selectively damaged by extracellular hyperglycaemia (Brownlee, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brownlee, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "b9854633-9db7-4e32-8d2a-d50e1bc5b3f8",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C10",
+      "claim": "RBCs are unable to modify glucose uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, RBCs do not have the capacity to adjust glucose transporter GLUT1 levels and thus are unable to modify glucose uptake, behaving similarly to cells that are selectively damaged by extracellular hyperglycaemia (Brownlee, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from inability to adjust GLUT1 levels, supported by citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "84a90a9d-50bf-4784-a4dd-e89750b9d2f2",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C11",
+      "claim": "RBCs behave similarly to cells that are selectively damaged by extracellular hyperglycaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, RBCs do not have the capacity to adjust glucose transporter GLUT1 levels and thus are unable to modify glucose uptake, behaving similarly to cells that are selectively damaged by extracellular hyperglycaemia (Brownlee, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brownlee, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "0909c780-f491-42d1-b1e4-889ff746a46e",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C12",
+      "claim": "Under conditions of fixed RBC lifespan and glucose uptake, HbA1c mirrors intracellular glucose exposure in organs affected by diabetes complications.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, under conditions of fixed RBC lifespan and glucose uptake, HbA1c mirrors intracellular glucose exposure in organs affected by diabetes complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the properties of RBCs and glycation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "86f47cbd-640d-433c-9cc9-07fbe8beafbb",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C13",
+      "claim": "There is inter-individual variability in glucose uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the inter-individual variability in both glucose uptake and RBC lifespan (Cohen et al., 2008; Khera et al., 2008), laboratory HbA1c may not always reflect intracellular RBC glucose exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cohen et al., 2008 and Khera et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "e81ea40c-bc13-48de-af0d-39dfdca7d69d",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C14",
+      "claim": "There is inter-individual variability in RBC lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the inter-individual variability in both glucose uptake and RBC lifespan (Cohen et al., 2008; Khera et al., 2008), laboratory HbA1c may not always reflect intracellular RBC glucose exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cohen et al., 2008 and Khera et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "3bb7c8a0-7f31-48f6-9911-ee504b5aa820",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C15",
+      "claim": "Laboratory HbA1c may not always reflect intracellular RBC glucose exposure due to inter-individual variability in glucose uptake and RBC lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the inter-individual variability in both glucose uptake and RBC lifespan (Cohen et al., 2008; Khera et al., 2008), laboratory HbA1c may not always reflect intracellular RBC glucose exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from variability in glucose uptake and RBC lifespan, supported by citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "367afe5a-3693-448e-96cb-403c287231f6",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C16",
+      "claim": "Variation in RBC glucose uptake is likely relevant to the risk of diabetes complications in susceptible organs.",
+      "claim_type": "EXPLICIT",
+      "source": "While variation in RBC glucose uptake is likely relevant to the risk of diabetes complications in susceptible organs, variation in red cell lifespan can affect haemoglobin glycation and HbA1c values, in turn compromising the accuracy of this glycaemic marker in predicting risk of complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Involves speculative reasoning about the relevance of RBC glucose uptake variation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "61135364-cf95-4851-88fa-d2f3c665cd80",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C17",
+      "claim": "Variation in red cell lifespan can affect haemoglobin glycation and HbA1c values.",
+      "claim_type": "EXPLICIT",
+      "source": "While variation in RBC glucose uptake is likely relevant to the risk of diabetes complications in susceptible organs, variation in red cell lifespan can affect haemoglobin glycation and HbA1c values, in turn compromising the accuracy of this glycaemic marker in predicting risk of complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the kinetics of glycation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "a87eea8f-de65-4d9b-af3d-b25d7ea6924e",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C18",
+      "claim": "Variation in red cell lifespan compromises the accuracy of HbA1c in predicting risk of complications.",
+      "claim_type": "EXPLICIT",
+      "source": "While variation in RBC glucose uptake is likely relevant to the risk of diabetes complications in susceptible organs, variation in red cell lifespan can affect haemoglobin glycation and HbA1c values, in turn compromising the accuracy of this glycaemic marker in predicting risk of complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the effect of RBC lifespan on HbA1c values",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "c0bc9881-9517-4c96-9b4d-3c5fc7a1ac6f",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C19",
+      "claim": "Laboratory HbA1c cannot be clinically relied upon in those with haematological disorders characterised by abnormal RBC turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "This explains the inability to clinically rely on laboratory HbA1c in those with haematological disorders characterised by abnormal RBC turnover (American Diabetes Association, 2019) and represents a possible explanation for the apparent 'disconnect' between laboratory HbA1c and development of complications in some individuals with diabetes (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to American Diabetes Association, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "4ae66a5a-404f-4d88-b251-9a1475c375bc",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C20",
+      "claim": "RBC lifespan variation represents a possible explanation for the apparent 'disconnect' between laboratory HbA1c and development of complications in some individuals with diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "This explains the inability to clinically rely on laboratory HbA1c in those with haematological disorders characterised by abnormal RBC turnover (American Diabetes Association, 2019) and represents a possible explanation for the apparent 'disconnect' between laboratory HbA1c and development of complications in some individuals with diabetes (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on logical inference from the effect of RBC lifespan on HbA1c, illustrated in Figure 1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "7bbb10e0-5459-4bd4-90e4-7fce2f21968e",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C21",
+      "claim": "A kinetic model has been developed to explain the disconcordance of the glucose-HbA1c relationship on individual level.",
+      "claim_type": "EXPLICIT",
+      "source": "A kinetic model, which considers individual variations in both RBC turnover and glucose uptake, has been developed to explain the disconcordance of the glucose-HbA1c relationship on individual level (Xu et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xu et al., 2021a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "4afe3950-43b0-4f48-92be-0548a943a70b",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C22",
+      "claim": "The kinetic model considers individual variations in both RBC turnover and glucose uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "A kinetic model, which considers individual variations in both RBC turnover and glucose uptake, has been developed to explain the disconcordance of the glucose-HbA1c relationship on individual level (Xu et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xu et al., 2021a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "4c628dda-21b0-4e8a-8918-7f11607d014c",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C23",
+      "claim": "The current work aims to extend the kinetic model by providing a way to normalise against RBC lifespan variation when individual RBC lifespan becomes available.",
+      "claim_type": "EXPLICIT",
+      "source": "The current work aims to extend this model by providing a way to normalise against RBC lifespan variation when individual RBC lifespan becomes available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated aim of the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "d366c760-61c0-4be2-b832-2ca3c25c704d",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C24",
+      "claim": "Adjusted HbA1c (aHbA1c) is calculated by adjusting laboratory HbA1c for a standard RBC lifespan of 106 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose a new clinical marker, which we term adjusted HbA1c (aHbA1c), by adjusting laboratory HbA1c for a standard RBC lifespan of 106 days (English and Lenters-Westra, 2018) (equivalent to RBC turnover rate of 0.94% per day).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the methodology of the study, with citation for standard RBC lifespan",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "9fd426b7-333a-4b73-9e17-877b2a711d5a",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C25",
+      "claim": "A standard RBC lifespan of 106 days is equivalent to RBC turnover rate of 0.94% per day.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose a new clinical marker, which we term adjusted HbA1c (aHbA1c), by adjusting laboratory HbA1c for a standard RBC lifespan of 106 days (English and Lenters-Westra, 2018) (equivalent to RBC turnover rate of 0.94% per day).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical relationship stated in the study, with citation for standard value",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "abfe8d38-da94-4baa-b978-f476a4ddd8fd",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C26",
+      "claim": "aHbA1c is likely to be the most accurate marker of organ exposure to hyperglycaemia and risk of future diabetes-related complications.",
+      "claim_type": "EXPLICIT",
+      "source": "The new glyacemic marker, aHbA1c, is likely to be the most accurate marker of organ exposure to hyperglycaemia and risk of future diabetes-related complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Involves speculative reasoning about the potential accuracy of aHbA1c",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "945d394f-b620-4505-aae6-e0843112b358",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C27",
+      "claim": "Of the 287 individuals in the original studies, 218 had predefined continuous glucose monitoring (CGM) coverage between at least two HbA1c measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 287 individuals in the original studies, 218 had predefined continuous glucose monitoring (CGM) coverage between at least two HbA1c measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "91ae36d8-4aec-4885-abf9-15dc9689e779",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C28",
+      "claim": "Of the 218 individuals with adequate CGM coverage, 131 individuals had adequate continuous glucose data to estimate RBC lifespan and glucose uptake rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 131 individuals had adequate continuous glucose data to estimate RBC lifespan and glucose uptake rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "b7cb966a-ca20-49a8-bc00-c8e11c73f553",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C29",
+      "claim": "The cohort studied included 131 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "N\t131",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "e3f44962-5081-4b2a-836c-734a88f9c584",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C30",
+      "claim": "The mean age of the cohort was 53.5 \u00b1 13.7 years with a range of 18 to 77 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Age [years; mean \u00b1 SD (range)]\t53.5 \u00b1 13.7 (18, 77)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "2b8e8475-8987-4acc-898c-0fe452bcc29f",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C31",
+      "claim": "86 (66%) of the cohort were male.",
+      "claim_type": "EXPLICIT",
+      "source": "Gender, male [number (percentage)]\t86 (66%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "eba54531-e8a3-4e62-a524-fe255669af20",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C32",
+      "claim": "51 (39%) of the cohort had type 1 diabetes (T1D).",
+      "claim_type": "EXPLICIT",
+      "source": "T1D [number (percentage)]T2D [number (percentage)]BMI [kg/m2; mean \u00b1 SD (range)]\t51 (39%)80 (61%)29.8 \u00b1 5.9 (18.8, 54.1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "bd4da6c8-2102-4aac-8e50-4f47b0c2634f",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C33",
+      "claim": "80 (61%) of the cohort had type 2 diabetes (T2D).",
+      "claim_type": "EXPLICIT",
+      "source": "T1D [number (percentage)]T2D [number (percentage)]BMI [kg/m2; mean \u00b1 SD (range)]\t51 (39%)80 (61%)29.8 \u00b1 5.9 (18.8, 54.1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "78604a7b-ad24-4bdf-8f48-a9357f6ad2e7",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C34",
+      "claim": "The mean BMI of the cohort was 29.8 \u00b1 5.9 kg/m2 with a range of 18.8 to 54.1 kg/m2.",
+      "claim_type": "EXPLICIT",
+      "source": "T1D [number (percentage)]T2D [number (percentage)]BMI [kg/m2; mean \u00b1 SD (range)]\t51 (39%)80 (61%)29.8 \u00b1 5.9 (18.8, 54.1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "867ffb4f-5681-4ab2-9ef3-241e5c9659a0",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C35",
+      "claim": "The mean duration of diabetes in the cohort was 17.7 \u00b1 8.7 years with a range of 2 to 46 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Duration of diabetes (years)\t17.7 \u00b1 8.7 (2, 46)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "d937d780-2be9-4329-8295-b2ad8e9efcbb",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C36",
+      "claim": "Mean RBC lifespan was 94 days in those with T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean (median, IQR) RBC lifespan was 94 (100, 86\u2013102) days in those with T1D and 92 (100, 83\u2013101) in those with T2D (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports data from the study, shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "fb82e263-65e0-40b8-9114-964ef6b4b429",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C37",
+      "claim": "Median RBC lifespan was 100 days with IQR of 86\u2013102 days in those with T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean (median, IQR) RBC lifespan was 94 (100, 86\u2013102) days in those with T1D and 92 (100, 83\u2013101) in those with T2D (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports data from the study, shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "fe9e0065-7d06-412c-999c-3a7adcc01bda",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C38",
+      "claim": "Mean RBC lifespan was 92 days in those with T2D.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean (median, IQR) RBC lifespan was 94 (100, 86\u2013102) days in those with T1D and 92 (100, 83\u2013101) in those with T2D (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports data from the study, shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "40976952-700d-41bd-b967-52460183055b",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C39",
+      "claim": "Median RBC lifespan was 100 days with IQR of 83\u2013101 days in those with T2D.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean (median, IQR) RBC lifespan was 94 (100, 86\u2013102) days in those with T1D and 92 (100, 83\u2013101) in those with T2D (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports data from the study, shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "58355915-ec2e-46c9-935a-928ac0b1a2d1",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C40",
+      "claim": "The mean absolute difference between aHbA1c and laboratory HbA1c was 11.0 mmol/mol (1.0%) in T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, the mean, median, IQR of the absolute difference between aHbA1c and laboratory HbA1c were 11.0, 3.9, 3.0\u201314.3 mmol/mol (1.0, 0.4, 0.3\u20131.3%) for T1D, and marginally higher at 15.1, 5.3, 4.1\u201322.5 mmol/mol (1.4, 0.5, 0.4\u20132.0%) for T2D subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "faa98ca3-e460-48d9-8965-453c9f640d47",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C41",
+      "claim": "The median absolute difference between aHbA1c and laboratory HbA1c was 3.9 mmol/mol (0.4%) in T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, the mean, median, IQR of the absolute difference between aHbA1c and laboratory HbA1c were 11.0, 3.9, 3.0\u201314.3 mmol/mol (1.0, 0.4, 0.3\u20131.3%) for T1D, and marginally higher at 15.1, 5.3, 4.1\u201322.5 mmol/mol (1.4, 0.5, 0.4\u20132.0%) for T2D subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "98e6c2c6-121b-4a81-9399-45f4f5c0524a",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C42",
+      "claim": "The IQR of the absolute difference between aHbA1c and laboratory HbA1c was 3.0\u201314.3 mmol/mol (0.3\u20131.3%) in T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, the mean, median, IQR of the absolute difference between aHbA1c and laboratory HbA1c were 11.0, 3.9, 3.0\u201314.3 mmol/mol (1.0, 0.4, 0.3\u20131.3%) for T1D, and marginally higher at 15.1, 5.3, 4.1\u201322.5 mmol/mol (1.4, 0.5, 0.4\u20132.0%) for T2D subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "83ce3539-a194-40c2-a424-ee858c3b18a3",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C43",
+      "claim": "The mean absolute difference between aHbA1c and laboratory HbA1c was 15.1 mmol/mol (1.4%) in T2D.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, the mean, median, IQR of the absolute difference between aHbA1c and laboratory HbA1c were 11.0, 3.9, 3.0\u201314.3 mmol/mol (1.0, 0.4, 0.3\u20131.3%) for T1D, and marginally higher at 15.1, 5.3, 4.1\u201322.5 mmol/mol (1.4, 0.5, 0.4\u20132.0%) for T2D subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "f6065940-b94c-42f6-9cf2-d2e8a3e5d7cd",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C44",
+      "claim": "The median absolute difference between aHbA1c and laboratory HbA1c was 5.3 mmol/mol (0.5%) in T2D.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, the mean, median, IQR of the absolute difference between aHbA1c and laboratory HbA1c were 11.0, 3.9, 3.0\u201314.3 mmol/mol (1.0, 0.4, 0.3\u20131.3%) for T1D, and marginally higher at 15.1, 5.3, 4.1\u201322.5 mmol/mol (1.4, 0.5, 0.4\u20132.0%) for T2D subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "4dbadd8b-f866-4eb4-a35d-73f53c84d34f",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C45",
+      "claim": "The IQR of the absolute difference between aHbA1c and laboratory HbA1c was 4.1\u201322.5 mmol/mol (0.4\u20132.0%) in T2D.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, the mean, median, IQR of the absolute difference between aHbA1c and laboratory HbA1c were 11.0, 3.9, 3.0\u201314.3 mmol/mol (1.0, 0.4, 0.3\u20131.3%) for T1D, and marginally higher at 15.1, 5.3, 4.1\u201322.5 mmol/mol (1.4, 0.5, 0.4\u20132.0%) for T2D subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "09cef332-e531-4973-92be-9b1af22ce688",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C46",
+      "claim": "Those with RBC lifespan of 80 days showed around 22 mmol/mol (2%) lower laboratory HbA1c than aHbA1c.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in the figure, those with the shorter RBC lifespan of 80 days showed around 22 mmol/mol (2%) lower laboratory HbA1c than aHbA1c.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports data from the study, illustrated in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "3852ebdd-0557-4394-abd6-f40e7152611c",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C47",
+      "claim": "Lower laboratory HbA1c than aHbA1c may lead to underestimating intracellular glucose exposure in susceptible organs, in turn increasing the risk of complications.",
+      "claim_type": "EXPLICIT",
+      "source": "This may lead to underestimating intracellular glucose exposure in susceptible organs, in turn increasing the risk of complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the underestimation of glucose exposure",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "ca14fcf0-562b-45f4-8ac7-1fe21aad0b03",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C48",
+      "claim": "Those with RBC lifespan of 130 days demonstrated higher laboratory HbA1c than aHbA1c.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, those with RBC lifespan of 130 days demonstrated higher laboratory HbA1c than aHbA1c, which can give the impression of inadequate glycaemic control, leading to therapy escalation and predisposition to hypoglycaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study, illustrated in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "4bf082fe-6fab-4259-b1b0-4cae2a770db4",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C49",
+      "claim": "Higher laboratory HbA1c than aHbA1c can give the impression of inadequate glycaemic control, leading to therapy escalation and predisposition to hypoglycaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, those with RBC lifespan of 130 days demonstrated higher laboratory HbA1c than aHbA1c, which can give the impression of inadequate glycaemic control, leading to therapy escalation and predisposition to hypoglycaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the overestimation of glucose exposure",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "a12e28d6-4ee9-4e68-b5db-e4157dcca8ea",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C50",
+      "claim": "90 (68%) individuals had HbA1c adjustments < 1% (<11 mmol/mol).",
+      "claim_type": "EXPLICIT",
+      "source": "The number (percentage) of individuals having HbA1c adjustments < 1 % (<11 mmol/mol), 1\u20132% (11\u201322 mmol/mol), 2\u20133% (22\u201333 mmol/mol), and >3% (>33 mmol/mol) were 90 (68%), 21 (16%), 12 (9%), and 8 (6%), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports data from the study, shown in Figure 2 caption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "cc544a8d-3425-4d94-960d-b057a6ece801",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C51",
+      "claim": "21 (16%) individuals had HbA1c adjustments of 1\u20132% (11\u201322 mmol/mol).",
+      "claim_type": "EXPLICIT",
+      "source": "The number (percentage) of individuals having HbA1c adjustments < 1 % (<11 mmol/mol), 1\u20132% (11\u201322 mmol/mol), 2\u20133% (22\u201333 mmol/mol), and >3% (>33 mmol/mol) were 90 (68%), 21 (16%), 12 (9%), and 8 (6%), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports data from the study, shown in Figure 2 caption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "b71026dd-8594-4f93-9e61-fc0ac426b23f",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C52",
+      "claim": "12 (9%) individuals had HbA1c adjustments of 2\u20133% (22\u201333 mmol/mol).",
+      "claim_type": "EXPLICIT",
+      "source": "The number (percentage) of individuals having HbA1c adjustments < 1 % (<11 mmol/mol), 1\u20132% (11\u201322 mmol/mol), 2\u20133% (22\u201333 mmol/mol), and >3% (>33 mmol/mol) were 90 (68%), 21 (16%), 12 (9%), and 8 (6%), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports data from the study, shown in Figure 2 caption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "08777429-d713-4e33-8148-8639af4c7fb7",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C53",
+      "claim": "8 (6%) individuals had HbA1c adjustments >3% (>33 mmol/mol).",
+      "claim_type": "EXPLICIT",
+      "source": "The number (percentage) of individuals having HbA1c adjustments < 1 % (<11 mmol/mol), 1\u20132% (11\u201322 mmol/mol), 2\u20133% (22\u201333 mmol/mol), and >3% (>33 mmol/mol) were 90 (68%), 21 (16%), 12 (9%), and 8 (6%), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reports data from the study, shown in Figure 2 caption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "62e9ebbd-3b30-4139-b922-2ebdb3108aae",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C54",
+      "claim": "Two subjects with an identical laboratory HbA1c of 63 mmol/mol (7.9%) but different RBC lifespans of 89 and 107 days would have RBC-lifespan-adjusted aHbA1c values of 78 mmol/mol (9.3%) and 62 mmol/mol (7.8%), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "To further put these results into clinical context, two subjects with an identical laboratory HbA1c of 63 mmol/mol (7.9%) but different RBC lifespans of 89 and 107 days, would have RBC-lifespan-adjusted aHbA1c values of 78 mmol/mol (9.3%) and 62 mmol/mol (7.8%), respectively, indicating different future risk of diabetes complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated example based on the model to illustrate clinical implications",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "b14ea907-e68b-4e35-8398-b521ca714ca4",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C55",
+      "claim": "Two subjects with identical laboratory HbA1c but different RBC lifespans would have different aHbA1c values, indicating different future risk of diabetes complications.",
+      "claim_type": "EXPLICIT",
+      "source": "To further put these results into clinical context, two subjects with an identical laboratory HbA1c of 63 mmol/mol (7.9%) but different RBC lifespans of 89 and 107 days, would have RBC-lifespan-adjusted aHbA1c values of 78 mmol/mol (9.3%) and 62 mmol/mol (7.8%), respectively, indicating different future risk of diabetes complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the calculated example",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "b0d79f2c-3d91-4878-b31a-dc6b2c42507f",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C56",
+      "claim": "Two individuals with different laboratory HbA1c of 60 mmol/mol (7.6%) and 75 mmol/mol (9.0%), and corresponding RBC lifespans of 89 and 107 days, would have identical aHbA1c value of 74 mmol/mol (8.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "Another two individuals with different laboratory HbA1c of 60 mmol/mol (7.6%) and 75 mmol/mol (9.0%), and corresponding RBC lifespans of 89 and 107 days, would have identical aHbA1c value of 74 mmol/mol (8.9%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated example based on the model to illustrate clinical implications",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "6f5d3782-c5b3-4c18-8766-11f57791f870",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C57",
+      "claim": "Two individuals with different laboratory HbA1c but appropriate RBC lifespans would have identical aHbA1c values, placing them at similar risk of diabetes complications despite significantly different laboratory HbA1c values.",
+      "claim_type": "EXPLICIT",
+      "source": "This would place them at similar risk of diabetes complications, despite the significantly different laboratory HbA1c values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the calculated example",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "0706d157-eb13-4a25-8e4d-158d717647f5",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C58",
+      "claim": "In individuals with RBC lifespan of approximately 93\u2013123 days, aHbA1c and laboratory HbA1c showed relatively small differences (<11 mmol/mol or 1% when laboratory HbA1c < 64 mmol/mol or 8%).",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, in individuals with RBC lifespan of approximately 93\u2013123 days, aHbA1c and laboratory HbA1c showed relatively small differences (<11 mmol/mol or 1% when laboratory HbA1c < 64 mmol/mol or 8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "a1da8ac2-4764-4cba-a6f8-5a0dcfb50eba",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C59",
+      "claim": "90 (69%) subjects were within RBC lifespan range of 93\u2013123 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, 90 (69%) subjects were within RBC lifespan range of 93\u2013123 days, while 39 (30%) subjects had RBC lifespan below 93 days and 2 (1.5%) subjects above 123 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "6515726c-1c4e-453e-998c-e400cff722d2",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C60",
+      "claim": "39 (30%) subjects had RBC lifespan below 93 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, 90 (69%) subjects were within RBC lifespan range of 93\u2013123 days, while 39 (30%) subjects had RBC lifespan below 93 days and 2 (1.5%) subjects above 123 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "1caffa06-4a67-461b-aca1-e15d111c9dae",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C61",
+      "claim": "2 (1.5%) subjects had RBC lifespan above 123 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cohort, 90 (69%) subjects were within RBC lifespan range of 93\u2013123 days, while 39 (30%) subjects had RBC lifespan below 93 days and 2 (1.5%) subjects above 123 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "4f2d1707-2c9e-4526-be45-3f6ab16a81da",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C62",
+      "claim": "Variation in RBC lifespan and glucose uptake between individuals can lead to different laboratory HbA1c despite similar hyperglycaemic exposure in the organs affected by diabetes complications.",
+      "claim_type": "EXPLICIT",
+      "source": "Variation in RBC lifespan and glucose uptake between individuals can lead to different laboratory HbA1c despite similar hyperglycaemic exposure in the organs affected by diabetes complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the study findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "6a586fbf-8de9-4a99-b6fa-5a46d9fdf44f",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C63",
+      "claim": "Laboratory HbA1c levels should be adjusted to account for variability in RBC turnover through aHbA1c in order to individualise care and assess the personal risk of hyperglycaemic complications.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to individualise care and assess the personal risk of hyperglycaemic complications, laboratory HbA1c levels should be adjusted to account for variability in RBC turnover through our proposed aHbA1c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Recommendation based on the study findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "a2c8031a-8ed3-4750-9cfa-721197859f4d",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C64",
+      "claim": "Without adjustment for RBC turnover, there is a risk of overestimating glucose levels that may cause hypoglycaemia through the unnecessary escalation of diabetes therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Without this adjustment, there is a risk of overestimating glucose levels that may cause hypoglycaemia through the unnecessary escalation of diabetes therapies, or alternatively, underestimation that may lead to undertreatment and subsequent high risk of complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the study findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "3a2f0af0-c523-43c9-857f-8cf81480f492",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C65",
+      "claim": "Without adjustment for RBC turnover, there is a risk of underestimating glucose levels that may lead to undertreatment and subsequent high risk of complications.",
+      "claim_type": "EXPLICIT",
+      "source": "Without this adjustment, there is a risk of overestimating glucose levels that may cause hypoglycaemia through the unnecessary escalation of diabetes therapies, or alternatively, underestimation that may lead to undertreatment and subsequent high risk of complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the study findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "55e35399-8c90-4e6b-acda-b38dc6264bc8",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C66",
+      "claim": "There are implications for the diagnosis of prediabetes and diabetes, as there may be misclassifications if the diagnosis is based solely on laboratory HbA1c levels due to variable RBC lifespan across individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there are implications for the diagnosis of prediabetes and diabetes, as there may be misclassifications if the diagnosis is based solely on laboratory HbA1c levels due to variable RBC lifespan across individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the study findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "06f1de7e-f49c-4946-a130-2631219d235c",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C67",
+      "claim": "RBC removal by senescence and erythrocyte apoptosis are complex processes.",
+      "claim_type": "EXPLICIT",
+      "source": "RBC removal by senescence and erythrocyte apoptosis are complex processes, which can be affected by the presence of hyperglycaemia and known to vary both within and across individuals (Lang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge, supported by citation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "74735b00-4501-4857-a016-8c14e68de0a8",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C68",
+      "claim": "RBC removal by senescence and erythrocyte apoptosis can be affected by the presence of hyperglycaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "RBC removal by senescence and erythrocyte apoptosis are complex processes, which can be affected by the presence of hyperglycaemia and known to vary both within and across individuals (Lang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lang et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "a0dadb6a-2473-4f50-b4e2-8c25aa1defdb",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C69",
+      "claim": "RBC removal by senescence and erythrocyte apoptosis is known to vary both within and across individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "RBC removal by senescence and erythrocyte apoptosis are complex processes, which can be affected by the presence of hyperglycaemia and known to vary both within and across individuals (Lang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lang et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "55bba7a4-b768-4cae-97e5-acae7e74be7a",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C70",
+      "claim": "Potential differences in RBC glucose uptake can affect the relationship between blood glucose and HbA1c.",
+      "claim_type": "EXPLICIT",
+      "source": "In the meantime, potential differences in RBC glucose uptake (Khera et al., 2008) can also affect the relationship between blood glucose and HbA1c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Khera et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "b54e1095-0404-4831-a560-dfda85181b9f",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C71",
+      "claim": "Several mathematical models have been developed to estimate laboratory HbA1c from glucose levels or time in range.",
+      "claim_type": "EXPLICIT",
+      "source": "Several mathematical models (Malka et al., 2016; Fabris et al., 2020) have been developed to estimate laboratory HbA1c from glucose levels or time in range, emphasising the importance of this area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Malka et al., 2016 and Fabris et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "17053df1-fc78-4b2e-9d28-5bf4b2438817",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C72",
+      "claim": "Accurate estimation of 'clinically relevant HbA1c' will allow each person with diabetes to have an individualised glycaemic target that ensures adequate treatment, thus reducing the risk of complications while minimising hypoglycaemic risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Accurate estimation of 'clinically relevant HbA1c' will allow each person with diabetes to have an individualised glycaemic target that ensures adequate treatment, thus reducing the risk of complications while minimising hypoglycaemic risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Involves speculative reasoning about the potential benefits of accurate HbA1c estimation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "465a1abe-5802-44f6-8293-0b3a6e2f532b",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C73",
+      "claim": "A unique feature of the model is the inclusion of individual-specific RBC lifespan and glycation rate in the calculations.",
+      "claim_type": "EXPLICIT",
+      "source": "A unique feature of our model (Xu et al., 2021a) is the inclusion of individual-specific RBC lifespan and glycation rate in the calculations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the methodology of the model, with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "0ed36554-e562-48e0-8111-69b0c7c4b599",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C74",
+      "claim": "A weakness of the model is the absence of a direct measure of RBC lifespan, which remains an estimate based on a mathematical calculation.",
+      "claim_type": "EXPLICIT",
+      "source": "A weakness of this model, however, is the absence of a direct measure of RBC lifespan, which remains an estimate based on a mathematical calculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledges limitation of the model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "7fdb1556-a994-4c4f-a2a4-5865e6e49e10",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C75",
+      "claim": "The ability of the model to reflect laboratory HbA1c indicates a good level of accuracy at estimating RBC lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ability of the model to reflect laboratory HbA1c, as we have previously shown, indicates a good level of accuracy at estimating RBC lifespan ( Xu et al., 2021c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from previous validation work, supported by citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "b54c609a-789f-4c80-9a8c-85cf828349ca",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C76",
+      "claim": "The method for estimating RBC lifespan is far simpler than complex methods through labelling experiments that are not suited for routine clinical practice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the method is far simpler than complex methods for estimating RBC lifespan through labelling experiments that are not suited for routine clinical practice (Cohen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with established methods, supported by citation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "629bfd56-bc92-4986-8636-7cebfd585f88",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C77",
+      "claim": "Future work may determine whether other measures, such as reticulocyte count or red cell distribution width, can further be added to the model to further improve the accuracy of estimating RBC lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Future work may determine whether other measures, such as reticulocyte count or red cell distribution width (Brodksy, 2021; Kameyama et al., 2018; Kameyama et al., 2020), can further be added to the model to further improve the accuracy of estimating RBC lifespan and this remains an area for future research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Involves speculative reasoning about future research directions, with citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "17bf1eb7-dbc0-4667-8333-8a26e033dcfe",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C78",
+      "claim": "It is difficult to directly compare aHbA1c with extracellular glucose-derived glycaemic markers such as average glucose or time in range since aHbA1c reflects intracellular glucose exposure in RBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since aHbA1c reflects intracellular glucose exposure in RBCs, it is difficult to directly compare with extracellular glucose-derived glycaemic markers such as average glucose or time in range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the intracellular nature of aHbA1c",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "3d2d1977-e726-43a7-b505-f46d53f8065a",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C79",
+      "claim": "As an intracellular marker, aHbA1c should correlate with intracellular glucose levels, therefore providing a potentially accurate measure of glucose exposure of organs susceptible to diabetes complications.",
+      "claim_type": "EXPLICIT",
+      "source": "As an intracellular marker, aHbA1c should correlate with intracellular glucose levels, therefore providing a potentially accurate measure of glucose exposure of organs susceptible to diabetes complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the intracellular nature of aHbA1c",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "2be0d6c1-167f-472c-85f7-4f55b109d35d",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C80",
+      "claim": "Laboratory HbA1c does not necessarily reflect intracellular glucose exposure of organs prone to diabetes complications.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our study demonstrates that laboratory HbA1c does not necessarily reflect intracellular glucose exposure of organs prone to diabetes complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "c3025e30-5d55-4705-8e3b-de6e8bed2430",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C81",
+      "claim": "Future work is required to show that adjusted A1c is a better predictor of diabetes complications than laboratory HbA1c.",
+      "claim_type": "EXPLICIT",
+      "source": "However, future work is required to show that adjusted A1c is a better predictor of diabetes complications than laboratory HbA1c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledges limitation and need for future research",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "3f2ea8ef-8cb0-4ece-8554-a52970ecd038",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C82",
+      "claim": "It is unclear whether the use of aHbA1c reduces the risk of hypoglycaemic complications as compared to reliance on laboratory HbA1c.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it is unclear whether the use of aHbA1c reduces the risk of hypoglycaemic complications as compared to reliance on laboratory HbA1c, and these remain areas for future research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledges limitation and need for future research",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "8948422e-7c85-4dbc-a6b1-a4a6aeac4575",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C83",
+      "claim": "Quantitative aHbA1c, derived from laboratory HbA1c and CGM readings, has the potential to more accurately assess glycaemic exposure of different organs, providing a safer and more effective glycaemic guide for the management of individuals with diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, quantitative aHbA1c, derived from laboratory HbA1c and CGM readings, has the potential to more accurately assess glycaemic exposure of different organs, providing a safer and more effective glycaemic guide for the management of individuals with diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on the study findings, involves speculative reasoning about potential benefits",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "d69b1cd0-1252-423d-a4ea-eaa126fb4e07",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C84",
+      "claim": "Future testing in larger populations and different ethnic groups is required to further increase confidence in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Future testing in larger populations and different ethnic groups is required to further increase confidence in the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledges limitation and need for future research",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "b80053e4-91d7-4a78-a18b-911347ab4165",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C85",
+      "claim": "Large prospective clinical studies are needed to test the relationship between aHbA1c and future microvascular/macrovascular diabetes complications as well as reducing the risk of hypoglycaemic exposure through avoidance of unnecessary therapy escalation.",
+      "claim_type": "EXPLICIT",
+      "source": "This to be followed by large prospective clinical studies to test the relationship between aHbA1c and future microvascular/macrovascular diabetes complications as well as reducing the risk of hypoglycaemic exposure through avoidance of unnecessary therapy escalation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledges need for future research",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "50b8267e-fabf-43bc-9c70-61cb906da1ee",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C86",
+      "claim": "CGM and laboratory HbA1c data from 139 type 1 (T1D) and 148 type 2 diabetes (T2D) patients, enrolled in two previous European clinical studies, were evaluated to calculate aHbA1c.",
+      "claim_type": "EXPLICIT",
+      "source": "CGM and laboratory HbA1c data from 139 type 1 (T1D) and 148 type 2 diabetes (T2D) patients, enrolled in two previous European clinical studies (Bolinder et al., 2016; Haak et al., 2017), were evaluated to calculate aHbA1c as detailed below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study methodology, with citations to original studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "bf82cb95-fe72-41af-848e-70a6b63f0acc",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C87",
+      "claim": "The studies were designed to evaluate the benefits of CGM in those with T1D and those with T2D using multiple daily injections of insulin.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies were designed to evaluate the benefits of CGM in those with T1D and those with T2D using multiple daily injections of insulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the original study design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "82ef21b7-47f1-438d-915a-7fa7bec81200",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C88",
+      "claim": "Both studies were conducted after appropriate ethical approval and participants gave written informed consent.",
+      "claim_type": "EXPLICIT",
+      "source": "Both studies were conducted after appropriate ethical approval and participants gave written informed consent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports ethical compliance of the studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "4505c766-108b-4132-9485-ac5552a8d58b",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C89",
+      "claim": "A total of 6 months' CGM data were collected using the sensor-based flash glucose monitoring system (FreeStyle Libre; Abbott Diabetes Care, Witney, UK).",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 6 months' CGM data were collected using the sensor-based flash glucose monitoring system (FreeStyle Libre; Abbott Diabetes Care, Witney, UK), while HbA1c was measured by a central laboratory (ICON Laboratories, Dublin, Ireland) at 0, 3, and 6 months of the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "0f6167cb-eca6-458a-941e-e90881f8b8a7",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C90",
+      "claim": "HbA1c was measured by a central laboratory (ICON Laboratories, Dublin, Ireland) at 0, 3, and 6 months of the study.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 6 months' CGM data were collected using the sensor-based flash glucose monitoring system (FreeStyle Libre; Abbott Diabetes Care, Witney, UK), while HbA1c was measured by a central laboratory (ICON Laboratories, Dublin, Ireland) at 0, 3, and 6 months of the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "6ebd6f25-f67a-4e2a-bf17-215204abf1c9",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C91",
+      "claim": "For T1D participants, the mean age was 44 years (range 18\u201370 years), 17 (33%) of whom were females.",
+      "claim_type": "EXPLICIT",
+      "source": "For T1D participants, the mean age was 44 years (range 18\u201370 years), 17 (33%) of whom were females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the original study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "14bef0e0-b21a-44dd-9055-6836dda18b08",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C92",
+      "claim": "For T2D participants, the mean age was 59 years (range 33\u201377 years), 28 (35%) of whom were females.",
+      "claim_type": "EXPLICIT",
+      "source": "For T2D, the mean age was 59 years (range 33\u201377 years), 28 (35%) of whom were females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reports data from the original study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "a5d35f8e-03fe-4081-9366-67c94074c155",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C93",
+      "claim": "Each subject had at least one data section consisting of two HbA1c measurements connected by CGM data.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subject had at least one data section consisting of two HbA1c measurements connected by CGM data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "60bf8c35-597a-4515-b17c-61c51ec873c0",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C94",
+      "claim": "The kinetic parameters are more sensitive to the data sections with larger between-day glucose changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the kinetic parameters are more sensitive to the data sections with larger between-day glucose changes, the parameters were successfully estimated for those individuals with sufficient day-to-day glucose variability, as evidenced by the model fit of RBC life converging between 50 and 180 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the model characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "f53ed60d-3c4d-4534-aa74-abe1a1f22448",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C95",
+      "claim": "The parameters were successfully estimated for those individuals with sufficient day-to-day glucose variability, as evidenced by the model fit of RBC life converging between 50 and 180 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the kinetic parameters are more sensitive to the data sections with larger between-day glucose changes, the parameters were successfully estimated for those individuals with sufficient day-to-day glucose variability, as evidenced by the model fit of RBC life converging between 50 and 180 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study methodology and results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "cc344e5c-668f-41ca-bb3f-c23ba5707e84",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C96",
+      "claim": "Individual RBC lifespans or turnover rates were calculated according to previous model that considers both RBC turnover rate and glucose uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "These individual RBC lifespans or turnover rates were calculated according to previous model (Xu et al., 2021a) that considers both RBC turnover rate and glucose uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study methodology, with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "895b1748-edc9-44d3-88f1-ad718b5003f2",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C97",
+      "claim": "The model aligns laboratory HbA1c and the contemporaneous CGM-derived estimate of HbA1c under optimal values for RBC turnover and glucose uptake of each individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the model aligns laboratory HbA1c and the contemporaneous CGM-derived estimate of HbA1c under optimal values for RBC turnover and glucose uptake of each individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the model methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "becd2dc4-e44b-40fc-8dad-0ea9afbfe40d",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C98",
+      "claim": "There is no simple clinical assay for RBC turnover and glucose uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Since there is no simple clinical assay for RBC turnover and glucose uptake, these RBC parameters are estimated using a numerical method such that differences between laboratory HbA1c and CGM-derived estimate are minimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established clinical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "7c51cb4a-8ef4-45e4-9336-007c5e28d5bc",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C99",
+      "claim": "RBC parameters are estimated using a numerical method such that differences between laboratory HbA1c and CGM-derived estimate are minimized.",
+      "claim_type": "EXPLICIT",
+      "source": "Since there is no simple clinical assay for RBC turnover and glucose uptake, these RBC parameters are estimated using a numerical method such that differences between laboratory HbA1c and CGM-derived estimate are minimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the model methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "366d49c2-6e25-49be-8352-0500f53f6a0e",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C101",
+      "claim": "0.94%/day standard RBC turnover rate is equivalent to 106 days of RBC life and 53 days of mean RBC age.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, 0.94%/day standard RBC turnover rate is equivalent to 106 days of RBC life and 53 days of mean RBC age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mathematical calculation based on the formula",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "415394e1-da55-4adb-82cc-2dab6a299408",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C102",
+      "claim": "The adjustment is not linear, decreasing RBC lifespan corresponds to more pronounced aHbA1c adjustment than a seemingly comparable increase in RBC lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the adjustment is not linear, decreasing RBC lifespan corresponds to more pronounced aHbA1c adjustment than a seemingly comparable increase in RBC lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the mathematical properties of the model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "cc08187e-8c93-4396-82d1-2df055c9062d",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C103",
+      "claim": "All calculations in this study were done with Python/SciPy software package.",
+      "claim_type": "EXPLICIT",
+      "source": "All calculations in this study were done with Python/SciPy (Virtanen et al., 2020) software package.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the computational methods, with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "9c01491c-a7b4-449b-bdba-3f39f5341a23",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C104",
+      "claim": "In some individuals, laboratory HbA1c can be misleading and result in undertreatment, thus increasing the risk of complications, or overtreatment, predisposing to hypoglycaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "In some individuals, laboratory HbA1c can be misleading and resulting in undertreatment, thus increasing the risk of complications, or overtreatment, predisposing to hypoglycaemia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Illustrated in Figure 1, based on logical inference from RBC lifespan variation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "e38d55d8-5b0f-430b-a189-88e432bbab36",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C108",
+      "claim": "aHbA1c and laboratory HbA1c showed clinically relevant differences.",
+      "claim_type": "EXPLICIT",
+      "source": "aHbA1c and laboratory HbA1c showed clinically relevant differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study findings reported in the abstract",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "af37b714-be84-4eda-b7ca-c953d5cd72f1",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "claim_id": "C109",
+      "claim": "The widely used measurement of HbA1c can underestimate or overestimate diabetes complication risks.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the widely used measurement of HbA1c can underestimate or overestimate diabetes complication risks, which may have future clinical implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study findings reported in the abstract",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a757c9de-db84-4fd9-a38f-4a473b4c2106",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed data from 131 individuals with diabetes (51 T1D, 80 T2D) who had adequate CGM coverage and HbA1c measurements from two previous European clinical studies. The cohort had mean age 53.5\u00b113.7 years, 66% male, mean BMI 29.8\u00b15.9 kg/m\u00b2, and mean diabetes duration 17.7\u00b18.7 years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C35 and C86-C92 provide consistent demographic and methodological information about the study cohort. The data are clearly reported with appropriate descriptive statistics, and the selection criteria (adequate CGM coverage between HbA1c measurements) are explicitly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "2f965129-2684-4347-8502-791e442d0dc7",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RBC lifespan was estimated using a kinetic model, with mean values of 94 days (median 100, IQR 86-102) in T1D and 92 days (median 100, IQR 83-101) in T2D patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 report RBC lifespan estimates with appropriate descriptive statistics. The data are presented clearly in both text and Figure 2, showing similar distributions between T1D and T2D groups with median values at 100 days for both.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "d6238b1f-2d7f-46a8-8826-49a3d5402acb",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The absolute difference between aHbA1c and laboratory HbA1c showed median values of 3.9 mmol/mol (0.4%) in T1D and 5.3 mmol/mol (0.5%) in T2D. The majority (68%) had adjustments <1%, while 16% had adjustments of 1-2%, 9% had 2-3%, and 6% had >3%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 and C50-C53 provide comprehensive descriptive statistics on the differences between aHbA1c and laboratory HbA1c. The data show that while most individuals have small adjustments, a substantial minority (32%) require clinically significant adjustments \u22651%.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "0ba14e86-9720-447c-8332-113fd71a7732",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Individuals with shorter RBC lifespan (80 days) showed laboratory HbA1c approximately 22 mmol/mol (2%) lower than aHbA1c, potentially leading to underestimation of glucose exposure and increased complication risk. Conversely, those with longer RBC lifespan (130 days) showed higher laboratory HbA1c than aHbA1c, potentially leading to unnecessary therapy escalation and hypoglycemia risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 demonstrate the clinical implications of RBC lifespan variation on HbA1c interpretation. The quantitative examples are supported by the model calculations shown in Figure 2, and the logical inferences about clinical consequences (C47, C49) follow reasonably from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "a943fd6e-416b-4990-b957-d5a86098f786",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Clinical examples demonstrate that two individuals with identical laboratory HbA1c (63 mmol/mol) but different RBC lifespans (89 vs 107 days) would have different aHbA1c values (78 vs 62 mmol/mol), indicating different complication risks. Conversely, individuals with different laboratory HbA1c (60 vs 75 mmol/mol) but appropriate RBC lifespans could have identical aHbA1c (74 mmol/mol), indicating similar complication risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 provide calculated examples that illustrate the clinical significance of RBC lifespan adjustment. The calculations appear consistent with the model equation provided (Equation 1), demonstrating how RBC lifespan variation can lead to discordance between laboratory HbA1c and actual glucose exposure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "4f3ac819-9112-4354-89ea-d55dec02ae66",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In individuals with RBC lifespan of 93-123 days (69% of cohort), aHbA1c and laboratory HbA1c showed relatively small differences (<11 mmol/mol or 1%). However, 30% had RBC lifespan below 93 days and 1.5% above 123 days, where larger adjustments would be needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 characterize the distribution of RBC lifespans and identify the range where laboratory HbA1c is reasonably accurate. The data show that approximately one-third of patients fall outside this range and would benefit from adjustment, supporting the clinical utility of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "d95ac092-fc57-4446-b516-56df0f32b77b",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study proposes adjusted HbA1c (aHbA1c) calculated by normalizing laboratory HbA1c to a standard RBC lifespan of 106 days (0.94%/day turnover rate). The adjustment uses a kinetic model that aligns laboratory HbA1c with CGM-derived estimates by optimizing individual RBC turnover and glucose uptake parameters through numerical minimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 and C96-C102 describe the methodological approach for calculating aHbA1c. The model is based on prior work (Xu et al., 2021a) and uses a mathematically sound approach. The non-linear nature of the adjustment (C102) is an important characteristic that is explicitly noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "6ace2449-b82d-46bf-b7c1-fa538f0e1847",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RBC lifespan parameters were successfully estimated for individuals with sufficient day-to-day glucose variability, as evidenced by model convergence to RBC lifespans between 50-180 days. Each subject required at least one data section with two HbA1c measurements connected by CGM data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 describe the data requirements and model performance. The convergence criteria (50-180 days) appear reasonable for physiological RBC lifespans, and the requirement for glucose variability to enable parameter estimation is a valid limitation of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "0c378b53-4e40-416f-8ee4-875228fd6536",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model's unique feature is inclusion of individual-specific RBC lifespan and glycation rate. While RBC lifespan is not directly measured but mathematically estimated (a weakness), the model's ability to reflect laboratory HbA1c indicates good accuracy, and the method is simpler than labeling experiments unsuited for clinical practice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 acknowledge both strengths and limitations of the approach. The authors appropriately recognize that indirect estimation is a weakness (C74) but provide reasonable justification through validation against laboratory HbA1c (C75) and comparison to more complex methods (C76).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "e2a7ede6-b6d7-416f-b7d4-78f6166ed0bc",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study demonstrates that laboratory HbA1c does not necessarily reflect intracellular glucose exposure in organs prone to complications due to RBC lifespan variation. Without adjustment, there is risk of overestimating glucose (leading to hypoglycemia from therapy escalation) or underestimating (leading to undertreatment and complications). This has implications for diabetes diagnosis and management.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66, C80, C104, C108-C109 present the main conclusions of the study. These are well-supported by the empirical data showing clinically significant differences between aHbA1c and laboratory HbA1c in a substantial proportion of patients. The logical inferences about clinical consequences are reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "3b33444f-5061-4345-b5e4-444d7c49d67f",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes that intracellular glucose exposure causes diabetes complications, laboratory HbA1c is routinely used but shows disconnect with complications in some individuals, and this disconnect is related to inter-individual variability in RBC lifespan and glucose uptake. RBCs cannot adjust GLUT1 levels, making them similar to cells damaged by hyperglycemia, but RBC lifespan variation compromises HbA1c accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C20 provide the scientific rationale for the study, drawing on established knowledge and prior literature (appropriately cited). The logical chain connecting intracellular glucose, RBC properties, HbA1c formation, and the limitations of laboratory HbA1c is coherent and well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "10fa8505-dd98-433c-9e65-9560992d8d90",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A prior kinetic model (Xu et al., 2021a) has been developed that considers individual variations in both RBC turnover and glucose uptake to explain glucose-HbA1c discordance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 reference prior work that forms the foundation for the current study. The citation is appropriate and the description of the model's features is consistent with how it is applied in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "cc1cc2fd-2a03-4bc1-a0cf-de7c5a8e5a9d",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that aHbA1c is likely the most accurate marker of organ glucose exposure and complication risk, and has potential to provide safer and more effective glycemic management by enabling individualized targets that reduce complications while minimizing hypoglycemia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C26, C72, C79, C83 make strong assertions about aHbA1c being the most accurate marker and having clinical benefits. While the data show that aHbA1c differs from laboratory HbA1c in many patients, there is no direct evidence that aHbA1c better predicts complications or improves outcomes. These remain hypotheses requiring prospective validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "7e01b624-beac-4c2f-892e-782cc6a9e05a",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RBC removal processes are complex and affected by hyperglycemia, varying within and across individuals. RBC glucose uptake differences also affect the glucose-HbA1c relationship. Several mathematical models have been developed to estimate HbA1c from glucose data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 provide context about RBC biology and prior modeling efforts. These are appropriately cited and establish the scientific landscape in which the current work is situated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "34cf49ef-f3f4-4de2-9a1b-4d3588059415",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "It is difficult to directly compare aHbA1c with extracellular glucose-derived markers (average glucose, time in range) since aHbA1c reflects intracellular glucose exposure in RBCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 makes a valid conceptual point about the fundamental difference between intracellular (aHbA1c) and extracellular (CGM-derived) glucose measures. This is an important limitation for interpreting and validating the metric.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "c9ac2cd0-29bb-4c84-bf3c-e547e7a4b8af",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors acknowledge that future work is required to demonstrate that aHbA1c better predicts complications than laboratory HbA1c, reduces hypoglycemia risk, and performs well in larger and more diverse populations. Prospective clinical studies are needed to test relationships with microvascular/macrovascular complications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82, C84-C85 appropriately acknowledge the limitations of the current study and identify necessary future research. The authors recognize that demonstrating clinical utility requires prospective validation, which is a critical limitation of the current cross-sectional analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "685577ea-171b-4ef6-ae43-c03179e9d7e6",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Future work may determine whether other measures like reticulocyte count or red cell distribution width can be added to improve RBC lifespan estimation accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 suggests reasonable directions for future research. Reticulocyte count and RDW are clinically available markers that could potentially improve the model, and the citations provided support their relevance to RBC dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    },
+    {
+      "id": "c1f01935-39a8-4db6-b6a4-5874a2e8a456",
+      "content_id": "fd16352b-66e0-42a3-9384-1ed2d300494f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "There is no simple clinical assay for RBC turnover and glucose uptake. All calculations were performed using Python/SciPy software.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98 and C103 provide methodological details. C98 correctly states that direct clinical assays for these parameters are not available, justifying the modeling approach. C103 specifies the computational tools used with appropriate citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:27:49.193661Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "945d394f-b620-4505-aae6-e0843112b358",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "91ae36d8-4aec-4885-abf9-15dc9689e779",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "b7cb966a-ca20-49a8-bc00-c8e11c73f553",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "e3f44962-5081-4b2a-836c-734a88f9c584",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "2b8e8475-8987-4acc-898c-0fe452bcc29f",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "eba54531-e8a3-4e62-a524-fe255669af20",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "bd4da6c8-2102-4aac-8e50-4f47b0c2634f",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "78604a7b-ad24-4bdf-8f48-a9357f6ad2e7",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "867ffb4f-5681-4ab2-9ef3-241e5c9659a0",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "50b8267e-fabf-43bc-9c70-61cb906da1ee",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "bf82cb95-fe72-41af-848e-70a6b63f0acc",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "82ef21b7-47f1-438d-915a-7fa7bec81200",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "4505c766-108b-4132-9485-ac5552a8d58b",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "0f6167cb-eca6-458a-941e-e90881f8b8a7",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "6ebd6f25-f67a-4e2a-bf17-215204abf1c9",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "14bef0e0-b21a-44dd-9055-6836dda18b08",
+      "result_id": "a757c9de-db84-4fd9-a38f-4a473b4c2106"
+    },
+    {
+      "claim_id": "d937d780-2be9-4329-8295-b2ad8e9efcbb",
+      "result_id": "2f965129-2684-4347-8502-791e442d0dc7"
+    },
+    {
+      "claim_id": "fb82e263-65e0-40b8-9114-964ef6b4b429",
+      "result_id": "2f965129-2684-4347-8502-791e442d0dc7"
+    },
+    {
+      "claim_id": "fe9e0065-7d06-412c-999c-3a7adcc01bda",
+      "result_id": "2f965129-2684-4347-8502-791e442d0dc7"
+    },
+    {
+      "claim_id": "40976952-700d-41bd-b967-52460183055b",
+      "result_id": "2f965129-2684-4347-8502-791e442d0dc7"
+    },
+    {
+      "claim_id": "58355915-ec2e-46c9-935a-928ac0b1a2d1",
+      "result_id": "d6238b1f-2d7f-46a8-8826-49a3d5402acb"
+    },
+    {
+      "claim_id": "faa98ca3-e460-48d9-8965-453c9f640d47",
+      "result_id": "d6238b1f-2d7f-46a8-8826-49a3d5402acb"
+    },
+    {
+      "claim_id": "98e6c2c6-121b-4a81-9399-45f4f5c0524a",
+      "result_id": "d6238b1f-2d7f-46a8-8826-49a3d5402acb"
+    },
+    {
+      "claim_id": "83ce3539-a194-40c2-a424-ee858c3b18a3",
+      "result_id": "d6238b1f-2d7f-46a8-8826-49a3d5402acb"
+    },
+    {
+      "claim_id": "f6065940-b94c-42f6-9cf2-d2e8a3e5d7cd",
+      "result_id": "d6238b1f-2d7f-46a8-8826-49a3d5402acb"
+    },
+    {
+      "claim_id": "4dbadd8b-f866-4eb4-a35d-73f53c84d34f",
+      "result_id": "d6238b1f-2d7f-46a8-8826-49a3d5402acb"
+    },
+    {
+      "claim_id": "a12e28d6-4ee9-4e68-b5db-e4157dcca8ea",
+      "result_id": "d6238b1f-2d7f-46a8-8826-49a3d5402acb"
+    },
+    {
+      "claim_id": "cc544a8d-3425-4d94-960d-b057a6ece801",
+      "result_id": "d6238b1f-2d7f-46a8-8826-49a3d5402acb"
+    },
+    {
+      "claim_id": "b71026dd-8594-4f93-9e61-fc0ac426b23f",
+      "result_id": "d6238b1f-2d7f-46a8-8826-49a3d5402acb"
+    },
+    {
+      "claim_id": "08777429-d713-4e33-8148-8639af4c7fb7",
+      "result_id": "d6238b1f-2d7f-46a8-8826-49a3d5402acb"
+    },
+    {
+      "claim_id": "09cef332-e531-4973-92be-9b1af22ce688",
+      "result_id": "0ba14e86-9720-447c-8332-113fd71a7732"
+    },
+    {
+      "claim_id": "3852ebdd-0557-4394-abd6-f40e7152611c",
+      "result_id": "0ba14e86-9720-447c-8332-113fd71a7732"
+    },
+    {
+      "claim_id": "ca14fcf0-562b-45f4-8ac7-1fe21aad0b03",
+      "result_id": "0ba14e86-9720-447c-8332-113fd71a7732"
+    },
+    {
+      "claim_id": "4bf082fe-6fab-4259-b1b0-4cae2a770db4",
+      "result_id": "0ba14e86-9720-447c-8332-113fd71a7732"
+    },
+    {
+      "claim_id": "62e9ebbd-3b30-4139-b922-2ebdb3108aae",
+      "result_id": "a943fd6e-416b-4990-b957-d5a86098f786"
+    },
+    {
+      "claim_id": "b14ea907-e68b-4e35-8398-b521ca714ca4",
+      "result_id": "a943fd6e-416b-4990-b957-d5a86098f786"
+    },
+    {
+      "claim_id": "b0d79f2c-3d91-4878-b31a-dc6b2c42507f",
+      "result_id": "a943fd6e-416b-4990-b957-d5a86098f786"
+    },
+    {
+      "claim_id": "6f5d3782-c5b3-4c18-8766-11f57791f870",
+      "result_id": "a943fd6e-416b-4990-b957-d5a86098f786"
+    },
+    {
+      "claim_id": "0706d157-eb13-4a25-8e4d-158d717647f5",
+      "result_id": "4f3ac819-9112-4354-89ea-d55dec02ae66"
+    },
+    {
+      "claim_id": "a1da8ac2-4764-4cba-a6f8-5a0dcfb50eba",
+      "result_id": "4f3ac819-9112-4354-89ea-d55dec02ae66"
+    },
+    {
+      "claim_id": "6515726c-1c4e-453e-998c-e400cff722d2",
+      "result_id": "4f3ac819-9112-4354-89ea-d55dec02ae66"
+    },
+    {
+      "claim_id": "1caffa06-4a67-461b-aca1-e15d111c9dae",
+      "result_id": "4f3ac819-9112-4354-89ea-d55dec02ae66"
+    },
+    {
+      "claim_id": "4c628dda-21b0-4e8a-8918-7f11607d014c",
+      "result_id": "d95ac092-fc57-4446-b516-56df0f32b77b"
+    },
+    {
+      "claim_id": "d366c760-61c0-4be2-b832-2ca3c25c704d",
+      "result_id": "d95ac092-fc57-4446-b516-56df0f32b77b"
+    },
+    {
+      "claim_id": "9fd426b7-333a-4b73-9e17-877b2a711d5a",
+      "result_id": "d95ac092-fc57-4446-b516-56df0f32b77b"
+    },
+    {
+      "claim_id": "cc344e5c-668f-41ca-bb3f-c23ba5707e84",
+      "result_id": "d95ac092-fc57-4446-b516-56df0f32b77b"
+    },
+    {
+      "claim_id": "895b1748-edc9-44d3-88f1-ad718b5003f2",
+      "result_id": "d95ac092-fc57-4446-b516-56df0f32b77b"
+    },
+    {
+      "claim_id": "7c51cb4a-8ef4-45e4-9336-007c5e28d5bc",
+      "result_id": "d95ac092-fc57-4446-b516-56df0f32b77b"
+    },
+    {
+      "claim_id": "366d49c2-6e25-49be-8352-0500f53f6a0e",
+      "result_id": "d95ac092-fc57-4446-b516-56df0f32b77b"
+    },
+    {
+      "claim_id": "415394e1-da55-4adb-82cc-2dab6a299408",
+      "result_id": "d95ac092-fc57-4446-b516-56df0f32b77b"
+    },
+    {
+      "claim_id": "a5d35f8e-03fe-4081-9366-67c94074c155",
+      "result_id": "6ace2449-b82d-46bf-b7c1-fa538f0e1847"
+    },
+    {
+      "claim_id": "60bf8c35-597a-4515-b17c-61c51ec873c0",
+      "result_id": "6ace2449-b82d-46bf-b7c1-fa538f0e1847"
+    },
+    {
+      "claim_id": "f53ed60d-3c4d-4534-aa74-abe1a1f22448",
+      "result_id": "6ace2449-b82d-46bf-b7c1-fa538f0e1847"
+    },
+    {
+      "claim_id": "465a1abe-5802-44f6-8293-0b3a6e2f532b",
+      "result_id": "0c378b53-4e40-416f-8ee4-875228fd6536"
+    },
+    {
+      "claim_id": "0ed36554-e562-48e0-8111-69b0c7c4b599",
+      "result_id": "0c378b53-4e40-416f-8ee4-875228fd6536"
+    },
+    {
+      "claim_id": "7fdb1556-a994-4c4f-a2a4-5865e6e49e10",
+      "result_id": "0c378b53-4e40-416f-8ee4-875228fd6536"
+    },
+    {
+      "claim_id": "b54c609a-789f-4c80-9a8c-85cf828349ca",
+      "result_id": "0c378b53-4e40-416f-8ee4-875228fd6536"
+    },
+    {
+      "claim_id": "4f2d1707-2c9e-4526-be45-3f6ab16a81da",
+      "result_id": "e2a7ede6-b6d7-416f-b7d4-78f6166ed0bc"
+    },
+    {
+      "claim_id": "6a586fbf-8de9-4a99-b6fa-5a46d9fdf44f",
+      "result_id": "e2a7ede6-b6d7-416f-b7d4-78f6166ed0bc"
+    },
+    {
+      "claim_id": "a2c8031a-8ed3-4750-9cfa-721197859f4d",
+      "result_id": "e2a7ede6-b6d7-416f-b7d4-78f6166ed0bc"
+    },
+    {
+      "claim_id": "3a2f0af0-c523-43c9-857f-8cf81480f492",
+      "result_id": "e2a7ede6-b6d7-416f-b7d4-78f6166ed0bc"
+    },
+    {
+      "claim_id": "55e35399-8c90-4e6b-acda-b38dc6264bc8",
+      "result_id": "e2a7ede6-b6d7-416f-b7d4-78f6166ed0bc"
+    },
+    {
+      "claim_id": "2be0d6c1-167f-472c-85f7-4f55b109d35d",
+      "result_id": "e2a7ede6-b6d7-416f-b7d4-78f6166ed0bc"
+    },
+    {
+      "claim_id": "9c01491c-a7b4-449b-bdba-3f39f5341a23",
+      "result_id": "e2a7ede6-b6d7-416f-b7d4-78f6166ed0bc"
+    },
+    {
+      "claim_id": "e38d55d8-5b0f-430b-a189-88e432bbab36",
+      "result_id": "e2a7ede6-b6d7-416f-b7d4-78f6166ed0bc"
+    },
+    {
+      "claim_id": "af37b714-be84-4eda-b7ca-c953d5cd72f1",
+      "result_id": "e2a7ede6-b6d7-416f-b7d4-78f6166ed0bc"
+    },
+    {
+      "claim_id": "d58f29d2-6449-40ac-8636-5f19530d1eae",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "e7e75542-03a1-40d4-b7b1-010609b50726",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "58896394-f36a-4e6b-964d-516c9a0a1839",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "610d5747-cdb1-4569-8b19-3ddaa23fa8a5",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "d1ed5b37-5d99-4236-99bf-6f9e7fc80074",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "309a8e55-57ac-4a7d-a5b7-1af48b35428e",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "f614eb88-a787-409e-bbe1-19af828aac0a",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "2d24e7cd-1d7d-40b3-a749-949b7cf20f88",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "ced090f2-87fb-4d51-97ac-dd7abe5aac68",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "b9854633-9db7-4e32-8d2a-d50e1bc5b3f8",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "84a90a9d-50bf-4784-a4dd-e89750b9d2f2",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "0909c780-f491-42d1-b1e4-889ff746a46e",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "86f47cbd-640d-433c-9cc9-07fbe8beafbb",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "e81ea40c-bc13-48de-af0d-39dfdca7d69d",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "3bb7c8a0-7f31-48f6-9911-ee504b5aa820",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "367afe5a-3693-448e-96cb-403c287231f6",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "61135364-cf95-4851-88fa-d2f3c665cd80",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "a87eea8f-de65-4d9b-af3d-b25d7ea6924e",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "c0bc9881-9517-4c96-9b4d-3c5fc7a1ac6f",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "4ae66a5a-404f-4d88-b251-9a1475c375bc",
+      "result_id": "3b33444f-5061-4345-b5e4-444d7c49d67f"
+    },
+    {
+      "claim_id": "7bbb10e0-5459-4bd4-90e4-7fce2f21968e",
+      "result_id": "10fa8505-dd98-433c-9e65-9560992d8d90"
+    },
+    {
+      "claim_id": "4afe3950-43b0-4f48-92be-0548a943a70b",
+      "result_id": "10fa8505-dd98-433c-9e65-9560992d8d90"
+    },
+    {
+      "claim_id": "abfe8d38-da94-4baa-b978-f476a4ddd8fd",
+      "result_id": "cc1cc2fd-2a03-4bc1-a0cf-de7c5a8e5a9d"
+    },
+    {
+      "claim_id": "17053df1-fc78-4b2e-9d28-5bf4b2438817",
+      "result_id": "cc1cc2fd-2a03-4bc1-a0cf-de7c5a8e5a9d"
+    },
+    {
+      "claim_id": "3d2d1977-e726-43a7-b505-f46d53f8065a",
+      "result_id": "cc1cc2fd-2a03-4bc1-a0cf-de7c5a8e5a9d"
+    },
+    {
+      "claim_id": "8948422e-7c85-4dbc-a6b1-a4a6aeac4575",
+      "result_id": "cc1cc2fd-2a03-4bc1-a0cf-de7c5a8e5a9d"
+    },
+    {
+      "claim_id": "06f1de7e-f49c-4946-a130-2631219d235c",
+      "result_id": "7e01b624-beac-4c2f-892e-782cc6a9e05a"
+    },
+    {
+      "claim_id": "74735b00-4501-4857-a016-8c14e68de0a8",
+      "result_id": "7e01b624-beac-4c2f-892e-782cc6a9e05a"
+    },
+    {
+      "claim_id": "a0dadb6a-2473-4f50-b4e2-8c25aa1defdb",
+      "result_id": "7e01b624-beac-4c2f-892e-782cc6a9e05a"
+    },
+    {
+      "claim_id": "55bba7a4-b768-4cae-97e5-acae7e74be7a",
+      "result_id": "7e01b624-beac-4c2f-892e-782cc6a9e05a"
+    },
+    {
+      "claim_id": "b54e1095-0404-4831-a560-dfda85181b9f",
+      "result_id": "7e01b624-beac-4c2f-892e-782cc6a9e05a"
+    },
+    {
+      "claim_id": "17bf1eb7-dbc0-4667-8333-8a26e033dcfe",
+      "result_id": "34cf49ef-f3f4-4de2-9a1b-4d3588059415"
+    },
+    {
+      "claim_id": "c3025e30-5d55-4705-8e3b-de6e8bed2430",
+      "result_id": "c9ac2cd0-29bb-4c84-bf3c-e547e7a4b8af"
+    },
+    {
+      "claim_id": "3f2ea8ef-8cb0-4ece-8554-a52970ecd038",
+      "result_id": "c9ac2cd0-29bb-4c84-bf3c-e547e7a4b8af"
+    },
+    {
+      "claim_id": "d69b1cd0-1252-423d-a4ea-eaa126fb4e07",
+      "result_id": "c9ac2cd0-29bb-4c84-bf3c-e547e7a4b8af"
+    },
+    {
+      "claim_id": "b80053e4-91d7-4a78-a18b-911347ab4165",
+      "result_id": "c9ac2cd0-29bb-4c84-bf3c-e547e7a4b8af"
+    },
+    {
+      "claim_id": "629bfd56-bc92-4986-8636-7cebfd585f88",
+      "result_id": "685577ea-171b-4ef6-ae43-c03179e9d7e6"
+    },
+    {
+      "claim_id": "becd2dc4-e44b-40fc-8dad-0ea9afbfe40d",
+      "result_id": "c1f01935-39a8-4db6-b6a4-5874a2e8a456"
+    },
+    {
+      "claim_id": "cc08187e-8c93-4396-82d1-2df055c9062d",
+      "result_id": "c1f01935-39a8-4db6-b6a4-5874a2e8a456"
+    }
+  ],
+  "comparisons": []
+}

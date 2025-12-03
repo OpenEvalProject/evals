@@ -1,0 +1,1624 @@
+{
+  "submission": {
+    "id": "05f4f8f6-efb2-4a75-8792-475e2340bb97",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:49:59.047965Z",
+    "updated_at": "2025-12-03T03:49:59.047965Z"
+  },
+  "content": [
+    {
+      "id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "submission_id": "05f4f8f6-efb2-4a75-8792-475e2340bb97",
+      "content_type": "manuscript",
+      "content_text": "# Spontaneous and evoked activity patterns diverge over development\n\n## Authors\n\n- Lilach Avitan<sup>1</sup> ([ORCID: 0000-0003-1957-8702](https://orcid.org/0000-0003-1957-8702))\n- Zac Pujic<sup>1</sup>\n- Jan M\u00f6lter<sup>1</sup> ([ORCID: 0000-0002-5964-6207](https://orcid.org/0000-0002-5964-6207))\n- Shuyu Zhu<sup>1</sup>\n- Biao Sun<sup>1</sup>\n- Geoffrey J Goodhill<sup>1</sup> ([ORCID: 0000-0001-9789-9355](https://orcid.org/0000-0001-9789-9355)) \u2020\n\n### Affiliations\n\n1. Queensland Brain Institute, The University of Queensland Brisbane Australia\n2. Edmond and Lily Safra Center for Brain Sciences, The Hebrew University of Jerusalem Jerusalem Israel\n3. School of Mathematics and Physics, The University of Queensland Brisbane Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe immature brain is highly spontaneously active. Over development this activity must be integrated with emerging patterns of stimulus-evoked activity, but little is known about how this occurs. Here we investigated this question by recording spontaneous and evoked neural activity in the larval zebrafish tectum from 4 to 15 days post-fertilisation. Correlations within spontaneous and evoked activity epochs were comparable over development, and their neural assemblies refined in similar ways. However, both the similarity between evoked and spontaneous assemblies, and also the geometric distance between spontaneous and evoked patterns, decreased over development. At all stages of development, evoked activity was of higher dimension than spontaneous activity. Thus, spontaneous and evoked activity do not converge over development in this system, and these results do not support the hypothesis that spontaneous activity evolves to form a Bayesian prior for evoked activity.\n\n## Introduction\n\nAs newborn neurons mature they start to become spontaneously active (Galli and Maffei, 1988). Patterns of activity that are coordinated between groups of neurons then begin to form (Blankenship and Feller, 2010; Luhmann et al., 2016). Prominent examples include waves of activity in the developing mammalian retina (Meister et al., 1991), and neural assemblies in mammalian neocortex (Yuste et al., 1992) and the zebrafish tectum (Romano et al., 2015; Avitan et al., 2017). What is the reason for this youthful exuberance? One key functional role played by coordinated spontaneous activity in neural development is to assist with the formation of appropriate brain wiring (Leighton and Lohmann, 2016; Ackman and Crair, 2014). Evidence for this includes findings from multiple systems that disrupting the structure of spontaneous activity disrupts circuit development (Kirkby et al., 2013; Arroyo and Feller, 2016; Xu et al., 2011).\n\nHowever, spontaneous activity could also play a deeper functional role: providing an internal model for the patterns of activity likely to be evoked by sensory stimuli (Ringach, 2009). A specific mathematical formulation is that spontaneous activity could form a Bayesian prior for stimulus-evoked activity (Fiser et al., 2010). If this is the case, patterns of spontaneous activity during development should gradually refine to become more similar to stimulus-evoked patterns. Evidence supporting this comes from the developing ferret cortex, where multiunit recordings of spontaneous and evoked activity in 16 neurons showed increasing similarity over development (Berkes et al., 2011). However, whether this principle holds at larger scale and in other species is unknown.\n\nThe larval zebrafish provides a good model system for studying these questions, due to its rapid development and ease of calcium imaging of the activity of large populations of neurons (Sumbre and de Polavieja, 2014). Over the period of 4\u201315 days post-fertilisation (dpf), spontaneous activity in the zebrafish tectum follows a specific developmental trajectory (Avitan et al., 2016; Pietri et al., 2017). Starting at 5\u00a0dpf zebrafish start to hunt prey, with an effectiveness that increases with age (Avitan et al., 2020). During this same period, the neural coding of stimuli improves, as measured by the increasing accuracy with which stimulus location can be decoded from tectal activity, and increased mutual information between stimuli and responses (Avitan et al., 2020). However, the relationship between the changing statistical properties of spontaneous and evoked activity over development has not so far been examined. Here, we show that, despite having some similarities, spontaneous and evoked patterns diverge over development.\n\n## Results\n\n### Correlation structure of neural activity over development\n\nWe performed two-photon calcium imaging and recorded tectal spontaneous and stimulus driven activity in fish aged 4, 5, 8\u20139, and\u00a013\u201315\u00a0dpf (n\u00a0=\u00a011, 15, 10, 6 respectively; for convenience, we hereafter refer to the latter two groups as just 9\u00a0dpf and 15\u00a0dpf respectively) (Figure 1A). A similar average number of neurons was recorded at each age (Figure 1\u2014figure supplement 1). We recorded 30\u00a0min of spontaneous activity in the dark (we refer to this period as SA) followed by 61.6\u00a0min of evoked activity. Visual stimulation consisted of 20 repetitions of nine 6\u00b0 spots (a size likely to be interpreted as prey [Bianco et al., 2011] and a frequent stimulus of behavioural relevance for the larvae) at different positions covering 120\u00b0 of the larvae\u2019s visual field. Spots were presented for 1\u00a0s each with a 20\u00a0s gap between spots, for a total of 180 spot presentations per fish. We refer to the whole of the visual stimulation period as TEA (\u2018total evoked activity\u2019). For some later analyses, we subdivide this into the activity occurring within the first 5\u00a0s of stimulus presentation, referred to as EA (\u2018evoked activity\u2019), and the activity occurring between 6 and 20\u00a0s post stimulus presentation, referred to as SE (\u2018spontaneous within evoked activity\u2019) (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/61942/elife-61942-fig1-v2.jpg)\n\n**Figure 1.:** (A) Top: Larvae were embedded in agarose with one eye facing the projected image for two-photon calcium imaging. Bottom: The contralateral optic tectum (in this example 15\u00a0dpf)\u00a0was imaged for 96.6\u00a0min. The neuropil (NP) contour of each fish was fitted with an ellipse (dashed line) with the major axis defining the tectal anterior-posterior axis (AP axis). Periventricular layer (PVL), NP, anterior (A) and posterior (P) ends of the tectum are indicated. (B) Experimental protocol. Tectal spontaneous activity (SA) in the dark was recorded after which fish were exposed to light and given 5\u00a0min to adjust. We then recorded evoked activity (TEA) in response to 20 trials of the stimulus set consisting of spots at positions 45\u00b0, 60\u00b0, 75\u00b0, 90\u00b0, 105\u00b0, 120\u00b0, 135\u00b0, 150\u00b0, 165\u00b0 of the visual field (where 0\u00b0 was defined as the body axis), presented in an order which maximised spatial separation within a trial. The inter-trial interval was 25\u00a0s. (C) Raster plot for an example 15\u00a0dpf fish showing concerted neural activity during 8\u00a0min of spontaneous activity in the dark and then during three cycles of stimulus presentation (stimulus onset is marked by black triangles). (D) Short-range pairwise correlation coefficients were higher for TEA compared to SA (4\u00a0dpf: $p=10^{-4}$ for up to 50\u00a0\u00b5m, $p=10^{-3}$ for 50\u2013100\u00a0\u00b5m; 5\u00a0dpf: $p=10^{-3}$ for up to 50\u00a0\u00b5m, $p=10^{-3}$ for 50\u2013100\u00a0\u00b5m; 15\u00a0dpf: $p=10^{-3}$ for up to 50\u00a0\u00b5m, $p=10^{-2}$ for 50\u2013100\u00a0\u00b5m). (E) TEA and SA correlation matrices showed structural similarity (example shown is for a 15\u00a0dpf fish). Neurons were sorted by their position on the AP axis. (F) Correlation between TEA and SA correlation matrices does not change over development (one-way ANOVA, Bonferroni multiple comparison correction).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61942/elife-61942-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** One-way ANOVA, p=0.4.\n\nQualitatively similar activity was present in the absence of visual stimuli (i.e. in the dark), locked in response to visual stimuli, and between stimuli presentations (Figure 1C). To quantify these relationships, we first examined similarity in pairwise correlation profiles between spontaneous and evoked activity over development. Correlations decreased with distance for both SA and TEA, with higher short-range correlations for TEA compared to SA (Figure 1D). At the population level, neuron-neuron correlation matrices for each fish showed qualitative similarities in their structure (Figure 1E). We then calculated the correlation coefficient between each pair of correlation matrices (TEA and SA) and found no difference correlation between matrices over development (Figure 1F). Thus, in terms of correlational structure spontaneous and evoked activity did not become more similar over development.\n\n### Spontaneous and evoked assemblies undergo similar developmental changes\n\nNeural activity is often structured into assemblies, that\u00a0is, recurring groups of coactive neurons. Using a graph theory-based technique for assembly detection (Avitan et al., 2017), recently shown to have state-of-the-art performance in detecting neural assemblies in calcium imaging data (M\u00f6lter et al., 2018), we identified reoccurring assemblies separately during SA and TEA (Figure 2A). SA and TEA assemblies did not differ in the number of neurons per assembly (Figure 2B). However, the spatial coverage of SA assemblies was greater than TEA assemblies (Figure 2\u2014figure supplement 1A\u2013B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/61942/elife-61942-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Nine total evoked activity\u00a0(TEA) assemblies (black) and three spontaneous activity (SA) assemblies (gray) for the 15\u00a0dpf fish shown in Figure 1A. The outline shows the periventricular layer (PVL) within the field of view, with each dot representing a neuron. (B) Number of assembly neurons assigned to TEA or SA assemblies did not change over development (t-test 4 vs. 15 TEA $p=0.5$; SA $p=0.8$). (C-D) Centres of mass (CoMs) of assemblies within TEA or SA shifted posteriorly over development. Each column of points represents assembly CoMs for a single fish. E-F: Assembly neurons\u2019 fitted tuning curves of the most anterior (E) and posterior (F) TEA assemblies from A (inset) illustrate tuning variability within the assembly. (G) Mean assembly tuning of TEA (filled circles) and SA (empty circles) assemblies shows a posterior shift in tuning with age. Dashed line represents the perfectly linear mapping. (H) Tuning variance is higher for SA assemblies than TEA assemblies (t-test), indicating that in general tuning of spontaneous assemblies is more dispersed than stimulus driven assemblies. I: Mean overlap between TEA and SA assemblies decreases between 4 and 5\u00a0dpf and remains stable over development.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61942/elife-61942-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The area covered by the smallest polygon bounding the assembly shows no developmental trend (one-way ANOVA). (B) The area covered by spontaneous activity (SA) assemblies is larger than the area covered by evoked activity\u00a0(TEA) assemblies (t-test). (C) Assembly tuning variance shows no developmental trend (one-way ANOVA, $p=0.66$, $p=0.62$ for SA and TEA respectively). (D) Tuning variance over the anterior-posterior (AP) axis shows a decrease in tuning variance as a function of the assembly centre of mass\u00a0(CoM). Linear regression EA: $p=10^{-4}$ for 4 dpf, $p=10^{-4}$ for 5 dpf, $p=10^{-4}$ for 9 dpf, $p=10^{-4}$ for 15 dpf; SA: $p=10^{-2}$ for 4 dpf, $p=10^{-3}$ for 5 dpf, $p=0.03$ for 9 dpf, $p=0.09$ for 15 dpf.\n\nAssemblies were spatially clustered along the tectal anterior-posterior (AP) axis. Computing the centre of mass (CoM) for each assembly and projecting it onto this axis revealed that assemblies exhibited a posterior shift from 5 to 15\u00a0dpf in both TEA (Figure 2C) and SA (Figure 2D). Neurons within each assembly tended to be tuned for similar regions of visual space (Figure 2F). Assembly mean tuning (the average of the preferred stimulus of all neurons in the assembly) showed a posterior shift in the tectum, for both SA and TEA assemblies (Figure 2G), suggesting that both TEA and SA assemblies undergo some similar developmental processes.\n\nTuning variance within the assemblies showed no developmental trend (Figure 2\u2014figure supplement 1C), but decreased along the AP axis (Figure 2\u2014figure supplement 1D), an effect present in both SA and TEA assemblies. However, tuning variance within TEA assemblies was overall lower compared to SA assemblies (Figure 2H), suggesting more coherent evoked assemblies than spontaneous assemblies, driven potentially by non-identical sources of activation. The fraction of overlap in neuronal identity between TEA and SA assemblies was relatively low, \u223c20%, and this overlap decreased between 4 and 5\u00a0dpf and remined stable from 5 to 15\u00a0dpf (Figure 2I). Thus, despite some similar trends in the properties of evoked and spontaneous assemblies over development, evoked and spontaneous assemblies became progressively less similar to each other.\n\n### Evoked and spontaneous coactivity patterns become less similar and geometrically diverge over development\n\nWe found all high-coactivity frames where the number of neurons active exceeded the number expected by chance based on a shuffle control (Figure 3A, see 'Materials\u00a0and\u00a0methods'). EA patterns recruited higher coactivity levels than either SA or SE patterns (Figure 3B), and these levels of coactivity within each epoch were robust over development. In addition EA patterns had higher dimensionality than either SA or SE patterns (Figure 3C) . Thus, in contrast to the suggestion that spontaneous activity determines the realm of evoked activity (Luczak et al., 2009), we found this not to be the case here. Pattern similarity for high-coactivity frames (measured by cosine distance) compared between all pairs of epochs (i.e. EA-SA, EA-SE, SA-SE) decreased over development (Figure 3D). This was consistent with a decrease in the overlap of neuronal identity between TEA and SA assemblies over development (Figure 2I).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/61942/elife-61942-fig3-v2.jpg)\n\n**Figure 3.:** (A) Example showing the number of coactive neurons during 8\u00a0min of spontaneous activity in the dark and then during three cycles of stimulus presentation (stimulus onset is marked by black triangles). Significant peaks of coactivity levels ($p<0.05$, shuffled SA) during SA, EA (black dots), SE (open circles) are marked. (B) There are higher levels of mean coactivity during EA compared to SE and SA (one-way ANOVA, Bonferroni multiple comparison correction). (C) Number of principal components required to explain 80% of the variance (one-way ANOVA, Bonferroni multiple comparison correction) indicates higher dimensionality for evoked responses. In addition to the comparison shown, the dimensionality within the EA epoch increased over development; 4\u00a0(dpf) vs. 15\u00a0dpf $p=0.05$, one-way ANOVA, Bonferroni multiple comparison correction. (D) Pattern similarity decreased between all pairs of epochs over development. Similarity was defined as the cosine similarity between the different epochs. (E) Schematic of activity patterns geometry. The patterns of a particular epoch, in this example SA patterns, were collected (red dots), and a linear subspace spanned by these patterns was calculated ($H_{SA}$, red plane; in reality this is of higher dimension than 2). Given a particular activity pattern $\ud835\udc91$ (from a different epoch, in this example EA or SE) , $\ud835\udc77_{SA}\u2062\ud835\udc91$ is the projection of the pattern onto the subspace $H_{SA}$. This is the component of the pattern which can be explained by the space $H_{SA}$, and in the case where the pattern $\ud835\udc91$ fully resides within $H_{SA}$, $\ud835\udc77_{SA}\u2062\ud835\udc91=\ud835\udc91$. Conversely, $(\ud835\udfd9-\ud835\udc77_{SA})\u2062\ud835\udc91$ is the component of the pattern which cannot be explained by the space $H_{SA}$. It is the projection of the pattern $\ud835\udc91$ onto the orthogonal complement of the subspace spanned by SA, $H_{SA}^{\u27c2}$. (F) Projection of EA and SE patterns onto the orthogonal complement subspace spanned by SA patterns indicates that EA and SE patterns are less similar to SA over development. (G) Projection of EA and SA patterns onto the orthogonal complement subspace spanned by SE patterns indicates that EA and SA patterns are less similar to SE over development.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/61942/elife-61942-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) For equal length of recording of TEA and SA (30 min), projection of EA and SE patterns onto the orthogonal complement or of the linear subspace spanned by SA patterns indicates that EA and SE patterns are less similar to SA over development. (B) For equal length of recording of TEA and SA (30 min), mean norm of the residual after projecting each EA and SA pattern onto the space spanned by SE patterns shows an increase in residual and indicates that EA and SA patterns are less similar to SE over development.\n\nWe then projected all EA and SE patterns onto the orthogonal complement of the linear subspace spanned by SA. This measures how much of a given EA or SE pattern cannot be explained by the space spanned by SA (Figure 3E, see 'Materials and methods'). This unexplained fraction increased over development (Figure 3E,F). Similarly, the fraction of EA and SA patterns which cannot be explained by the space spanned by SE patterns also increased over development (Figure 3G). This result was not affected by matching the lengths of the SA and EA parts of the recording (Figure 3\u2014figure supplement 1). This confirms that, over development, evoked patterns gradually increase their distance from the space spanned by spontaneous activity. Together, these results show that evoked patterns have higher dimensionality than spontaneous patterns, and become less similar and geometrically further from spontaneous patterns over development.\n\n## Discussion\n\nAcross species, both evoked and spontaneous neural activity are characterised by time points of synchronised activity across a population of neurons (Yuste, 2015; Romano et al., 2015). Spontaneous activity in the zebrafish tectum was previously shown to be high dimensional (Avitan et al., 2017), similar to the mammalian cortex (Luczak et al., 2009). However, in the present work, evoked activity showed higher coactivity levels and higher dimensionality compared to spontaneous activity, in contrast to the suggestion that spontaneous activity outlines the realm of possible cortical sensory responses and that evoked patterns are a subset in this space (Luczak et al., 2009). Similarity of evoked and spontaneous patterns has been reported across species (Berkes et al., 2011; Miller et al., 2014; Romano et al., 2015; Kenet et al., 2003; Omer et al., 2019; Fore et al., 2020), with spontaneous activity being predictive of visually evoked orientation columns (Smith et al., 2018; Kenet et al., 2003) supporting the hypothesis that spontaneous activity reflects expectation of sensory experience Luczak et al., 2009, However, spontaneous activity in the adult cortex has been also related to the animal\u2019s ongoing behaviour (Stringer et al., 2019; Carrillo-Reid et al., 2019) and was recently shown to be orthogonal to evoked patterns (Stringer et al., 2019). Our results are in agreement with the latter (Figure 3F,G).\n\nA developmental increase in cortical pattern similarity between evoked and spontaneous activity has been reported when evoked activity was elicited by natural stimuli, while in contrast artificial stimuli (such as gratings) resulted in a decrease in pattern similarity (Berkes et al., 2011). While the spot stimuli we used are quite simple, they are nevertheless highly ecologically relevant for zebrafish larvae (Del Bene et al., 2010; Bianco et al., 2011; Preuss et al., 2014; Semmelhack et al., 2014) particularly for hunting behaviour (Bianco and Engert, 2015). A potential explanation for the mismatch between our results and those of Berkes et al., 2011 could be the much larger number of neurons we recorded, and that we included neurons regardless of their tuning strength.\n\nOverall, our work shows that in the larval zebrafish tectum, despite some similarities between spontaneous and evoked activity patterns, their statistics grow more distant as development proceeds. This result is consistent with the idea that early spontaneous activity in this system presents patterns which are similar enough to naturally evoked patterns to provide useful cues for initial wiring development, but do not attempt to track changing patterns of evoked activity over development.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Zebrafish: Tg(elavl3:GCaMP6s)</td>\n      <td>Vladimirov et al., 2014</td>\n      <td>RRID:ZDB-ALT-141023-2 ZFIN\u00a0Tg\u00a0insertion jf5Tg</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks</td>\n      <td>https://www.mathworks.com/products/matlab.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Psychophysics toolbox</td>\n      <td>N/A</td>\n      <td>http://psychtoolbox.org/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Zen Black 2012 Service Pack 2</td>\n      <td>Carl Zeiss Pty Ltd</td>\n      <td>http://www.zeiss.com</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish\n\nNacre zebrafish (Danio rerio) embryos expressing elavl3:H2B-GCaMP6s (Vladimirov et al., 2014) were collected and raised according to established procedures (Westerfield, 1995) and kept under a 14/10\u00a0h on/off light cycle. Larvae were fed live rotifers (Brachionus plicatilis) daily from 5\u00a0dpf. All procedures were performed with approval from The University of Queensland Animal Ethics Committee (QBI/152/16/ARC).\n\n### Two-photon calcium imaging\n\nZebrafish larvae were embedded in 2.5% low-melting-point agarose, positioned at the centre of a 35\u00a0mm diameter plastic petri dish and overlaid with E3 embryo medium. Time-lapse two-photon images were acquired at the Queensland Brain Institute\u2019s Advanced Microscopy Facility using a Zeiss LSM 710 inverted two-photon microscope. A custom-made inverter tube composed of a pair of beam-steering mirrors and two identical 60\u00a0mm focal length lenses arranged in a 4 f configuration was used to allow imaging with a 40x/1.0 NA water-dipping objective (Zeiss) in an upright configuration. Samples were excited via a Spectra-Physics Mai TaiDeepSee Ti:Sapphire laser (Spectra-Physics) at an excitation wavelength of 940\u00a0nm. Laser power at the sample plane ranged between 12 and 20\u00a0mW. Emitted light was bandpass filtered (500\u2013550\u00a0nm) and detected with a nondescanned detector. Time-lapse images (416 \u00d7 300 pixels) were obtained at 2.2\u00a0Hz. To improve stability of the recording, chambers were left to settle prior to imaging for 3\u00a0h.\n\n### Visual stimulation\n\nVisual stimuli were projected onto white diffusion paper placed around the wall of the petri dish, using a pico-projector (PK320 Optoma, USA), covering a horizontal field of view of 174\u00b0. To prevent stimulus reflection, the opposite side of the dish was covered with low-reflection black paper. To avoid interference of the projected image with the signal collected by the detector, a red long-pass filter (Zeiss LP590 filter) was placed in front of the projector. Larvae were aligned with one eye facing the projected side of the dish and body axis at right angles to the projector direction. Visual stimuli were generated using custom software based on MATLAB (MathWorks) and Psychophysics Toolbox (http://psychtoolbox.org).\n\nLarvae were imaged for spontaneous activity in the dark for 30\u00a0min after which the projector shutter was opened and larvae were given 5\u00a0min to adjust to the light conditions. We projected 20 consecutive trials of nine spots with 25\u00a0s of inter-trial interval. Each trial consisted of 6\u00b0 diameter black spots at nine different positions from 45\u00b0 to 165\u00b0 with 15\u00b0 intervals, with their order set to maximise spatial separation within a trial (45\u00b0, 120\u00b0, 60\u00b0, 135\u00b0, 75\u00b0, 150\u00b0, 90\u00b0, 165\u00b0, 105\u00b0). 0\u00b0 was defined as the direction of the larvae\u2019s body axis. Spots were presented for 1\u00a0s each, followed by 20\u00a0s of blank screen.\n\n### Automatic cell detection\n\nAlignment of data stacks and cell detection procedure were performed as in Avitan et al., 2017. All fluorescence data stacks were corrected for x-y drifts using custom MATLAB software based on rigid image registration algorithm. The software automatically detected the set of pixels of each active cell and searched for pixels that showed changes in brightness across frames, resulting in an activity heat map of all the active regions across frames (Ahrens et al., 2012). This activity map was then segmented into regions using a watershed algorithm, with a movie-specific threshold that was similar across fish. Within each segmented region, we computed correlation coefficients of all pixels in the region with the mean of the most active pixel and its eight neighbouring pixels. Correlation coefficients showed a bimodal distribution: one peak of highly correlated pixels representing pixels of the cell within the region and a second peak of relatively low correlation coefficients representing nearby pixels within the region which were not part of the cell. Using a Gaussian mixture model, we found the threshold correlation which differentiated between pixels likely to form the active cell and neighbouring pixels that were not part of the cell. We also required that each detected active area covered at least 26 pixels (5.5\u00a0\u00b5m2). The software allowed visual inspection and modification of the parameter values where needed. All pixels assigned to a given cell were averaged to give a raw fluorescence trace over time. Raw calcium signals for each cell, $F\u2062(t)$, were then converted to represent changes from baseline level, $\u0394\u2062F/F\u2062(t)$ defined as $(F\u2062(t)-F_{0}\u2062(t))/F_{0}\u2062(t)$. The time varying baseline fluorescence, $F_{0}\u2062(t)$, for each cell was a smoothed curve fitted to the lower 20% of the points. $F_{0}\u2062(t)$ was the minimum of the smoothed fluorescence trace in a 3\u00a0s window centred at $t$.\n\n### Neuron selection\n\nFor each neuron, we calculated the mean amplitude across frames 4\u20137 post stimulus presentation. These amplitudes were then averaged per stimulus, providing for each neuron a curve of mean amplitude in response to all presented stimuli. Cubic spline interpolation was used to estimate the amplitude values between the presented stimuli at 5\u00b0 intervals. This interpolated curve of amplitudes was fitted with a Gaussian with baseline offset. The fitted curve which provided the highest goodness of fit (adjusted $r^{2}$) was selected as the fit of the tuning curve. Neurons with goodness of fit greater than 0.7 were deemed to be selective neurons and included in further analysis.\n\n### Significant correlation coefficients\n\nWe computed pairwise correlation coefficients $r$ between all pairs of neurons. To assess statistical significance, we temporally displaced each neuron's calcium trace randomly with respect to the other traces using a SHIFT algorithm as described previously (Golshani et al., 2009), disrupting the temporal relationship between neurons while preserving the temporal structure within each neuron. We then calculated the correlation coefficient between all pairs of shifted traces to obtain a null distribution. Pairs of neurons with a correlation coefficient greater than the 95th percentile of correlation coefficients in the null distribution were deemed statistically significant ($p<0.05$) (Avitan et al., 2017). We included in the correlation analysis only significant correlation coefficients.\n\n### Neurons and assembly tuning\n\nAssembly tuning properties (Figure 2) were based on tuning properties of each of the assembly member neurons. To evaluate the neurons\u2019 tuning, we calculated for each neuron the mean amplitude across frames 4\u20137 post stimulus presentation. These amplitudes were then averaged per stimulus, providing for each neuron a curve of mean amplitude in response to all presented stimuli. Cubic spline interpolation was used to estimate the amplitude values between the presented stimuli at 5\u00b0 intervals. This interpolated curve of amplitudes was fitted with a Gaussian with baseline offset. Fit starting points used the mean as the stimulus value eliciting response peak amplitude, and the initial value for standard deviation was varied from low to high values. The fitted curve which provided the highest goodness of fit (adjusted $r^{2}$) was selected as the fit of the tuning curve. Neurons with goodness of fit greater than 0.7 were deemed to be selective neurons and included in further analysis. The stimulus assigned with the peak of the fitted tuning curve was determined as the preferred stimulus of the neuron. Assembly tuning was determined as the average of the preferred stimulus over all assembly neurons.\n\n### Selection of high coactivity patterns\n\nThe activity of each neuron was converted into a binary signal with an amplitude threshold of two standard deviations above its mean (Avitan et al., 2017). This provided us with a binary activity matrix where each row represents a neuron and each column represents a time bin. To establish a threshold for the significance for the number of coactive neurons, the binary activity matrix was randomly shuffled 500 times across neurons (i.e. within rows), keeping the number of 1\u2019s per cell identical, but changing their timing. The threshold corresponding to a significance level of $p<0.05$ was estimated as the number of activated neurons in a single frame that exceeded 5% of these surrogate datasets (Miller et al., 2014; Avitan et al., 2017). Every pattern which peaked in coactivity level and was above the coactivity threshold was considered in the analysis shown in Figure 3.\n\n### Geometrical relation between patterns and spaces defined by patterns\n\nWe considered all high coactivity patterns for the respective types of activity (EA, SA, SE). As vectors, these patterns lie in a linear subspace $H$ ($H_{EA},H_{SA},H_{SE}$) within a space of all possible activity patterns. We computed an orthonormal basis for this subspace using MATLAB\u2019s orth function, which we denote as ${\ud835\udc96_{\ud835\udfcf},\u2026,\ud835\udc96_{\ud835\udc72}}$. With that, we have that $H=span\u2061{\ud835\udc96_{\ud835\udfcf},\u2026,\ud835\udc96_{\ud835\udc72}}$ and $dim\u2061H=K\\leqN$. To compute the projection onto this subspace , we define the matrix $\ud835\udc7c=(\ud835\udc96_{\ud835\udfcf},\u2026\u2062\ud835\udc96_{\ud835\udc72})$, with the vectors $\ud835\udc96_{\ud835\udc8c}$ for $k=1,\u2026\u2062K$ as column vectors. Using this matrix, $\ud835\udc77=\ud835\udc7c\u2062\ud835\udc7c^{\u22a4}$ is the projection matrix onto $H$, which for the different types of activity patterns (and corresponding subspaces ) we denote as the matrices $\ud835\udc77_{EA}$, $\ud835\udc77_{SA}$, and $\ud835\udc77_{SE}$, respectively. These projections allow us to decompose any activity pattern $\ud835\udc91$ into a part that can be \u2018explained\u2019 by the activity of a given type, $\ud835\udc77\u2062\ud835\udc91$, and its orthogonal complement, $(\ud835\udfd9-\ud835\udc77)\u2062\ud835\udc91$.\n\nFor example, if we consider spontaneous activity (SA) and the projection onto its subspace , $\ud835\udc77_{SA}$, then for any given pattern of activity $\ud835\udc91$ (such as from the pool of EA or SE patterns) $\ud835\udc77_{SA}\u2062\ud835\udc91$ is the part of $\ud835\udc91$ that lies within the SA subspace , whereas $(\ud835\udfd9-\ud835\udc77_{SA})\u2062\ud835\udc91$ lies in its complement (Figure 3E). In this case, we say that the larger the component $\ud835\udc77_{SA}\u2062\ud835\udc91$ is, the better the pattern $\ud835\udc91$ is explained by SA, and conversely, the larger the component $(\ud835\udfd9-\ud835\udc77_{SA})\u2062\ud835\udc91$ is, the worse the pattern $\ud835\udc91$ is explained by SA.\n\nWe computed the fraction that could not be explained by the patterns of some type of activity. For a pattern $\ud835\udc91$, this is the quantity $(\ud835\udfd9-\ud835\udc77)\u2062\ud835\udc91/\ud835\udc91$, i.e. the fraction of a pattern\u2019s total length that was orthogonal to the subspace associated with $\ud835\udc77$. For each type of activity (EA, SA, SE), we calculated the average unexplained fraction of the high coactivity patterns corresponding to any of the two other types of activity and denote this average as \u20181 \u2013 PEA\u2019, \u20181 \u2013 PSA\u2019, and \u20181 \u2013 PSE\u2019, respectively.\n\nTo avoid bias in generating the basis for each subspace , we selected an equal number of patterns per epoch. For consistency, this was chosen to be the minimum number of the patterns across epochs for all fish (mean of minimum number of patterns\u00a0=\u00a027\u00a0\u00b1\u00a012, and a minimum of 9 patterns, across 41 fish). For this number of patterns per epoch, we randomly selected them from SE and SA pools of patterns. To select EA patterns, we randomly selected an index of EA pattern and collected consecutive patterns (aiming to cover all presented stimuli with roughly similar representation). We performed these random selections of patterns 200 times, each time generating a different seed of patterns to span the spaces $H_{EA},H_{SA},H_{SE}$ and calculating projections of patterns onto these spaces. The distances presented in Figure 3F and G are means over this set.\n\n### Sample size\n\nSample sizes are similar to those commonly used in the zebrafish neural imaging field.\n",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "0ff4e0c1-6aae-4396-af4c-cc84a826b11d",
+      "submission_id": "05f4f8f6-efb2-4a75-8792-475e2340bb97",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tatyana O Sharpee, Salk Institute for Biological Studies United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.61942.sa1](https://doi.org/10.7554/eLife.61942.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe relationship between evoked and spontaneous activity in neural development is an important unresolved issue and this study adds a new and interesting perspective to the existing literature. The results demonstrate that as the zebrafish develop, the spontaneous and evoked activity in the optic tectum become more dissimilar.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Spontaneous and evoked activity patterns diverge over development\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Emre Yaksi (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis manuscript investigates the relationship between spontaneous activity and evoked activity patterns in zebrafish tectum across development. The authors show that the correlation between spontaneous and evoked activity is getting weaker as animals develop. This is contrast to some of the recent findings and provide an important observation for the field. The presented data and its analysis is of high quality, and the manuscript is particularly well written an easy to read. Some of the analysis and the figures can be further improved for making the manuscript easier to read for a general audience. Reviewers also pointed out a number of methodological and statistical clarifications that need to be made as described below.\n\nEssential revisions:\n\n1. The part explaining the method used in figure 3 E-G should be expanded to ensure the readers can replicate the method. Specifically, it is unclear how many dimensions are necessary to describe the hyperplane H. How many basis vectors were used for the projection? Using many dimensions for the projections could bias the results towards larger angles between patterns and the hyperplane. The authors refer to [23] as the basis of their method. However, the method used in [23] is different from the method described here and puts an emphasis on finding shared dimensions between spontaneous and evoked activity subspaces.\n\n2. The effect in figure 3E, F is weak and the data do not fully support the conclusion. Specifically, there seems to be no significant difference between 4dpf and 15dpf in 3E. It is unclear, whether correction for multiple comparisons was used. An alternative presentation would be a matrix wise representation of p-values between all pairs of days.\n\n3. The reported number of components required to explain 80% of the variance for EA (Figure 3C) is high (and increases with age?) compared to the number of stimuli and assemblies found (2C). How can it be reconciled that the number of assemblies is roughly 6, while the number of PC required to explain 80% of the variance is about 40? Also, there is a possible concern here that this number shows a positive bias due to the inclusion of components representing noise. If this high number of components is used to describe the hyperplanes in Figure 3E-G, a concern for bias arises.\n\n4. In Figure 1F, despite a visible trend, the authors report no significant change in the Hamming distance of binarized correlation matrices for SA and TEA. However, it is unclear whether a Hamming distance is the most appropriate measure here (as opposed to e.g. second-order correlation between correlation matrices).\n\n5. Visual system develops earlier than other sensory systems in zebrafish. Therefore, it is likely that major rearrangements to be observed during early development are already established at 4dpf animals. Are there evidence that such features of spontaneous and evoked activity are different in younger animals (2,5dpf) that are just hatched? It is likely that this 2,5dpf represents a stage closer to earlier developmental stage of mammalian visual system.\n\n6. SA and TEA seem to have very different spatial distribution (SA covering larger spaces). If this is true this is rather interesting feature, as evoked activity might change such spatial features of ensembles. Can this be something interesting to analyze, is this a general feature that is stable across development?\n\n7. Is it possible that the evoked patterns appear to get more dissimilar to spontaneous patterns on average, because the spontaneous patterns become noisier over development, as new neurons are added to the network? Is there a way to evaluate the impact of changing noise levels (both recording noise, but also neural noise) in these comparisons?\n\n8. Also is it possible that simply by imaging only a short period of time, spontaneous activity patterns do not really capture all possible combinations of ensembles, whereas as of now the evoked activity recordings are substantially longer then spontaneous activity recordings. How much the recording duration influence such comparisons ensembles during evoked and spontaneous period. To what extent the numbers of captured ensembles depends on the recording duration ?\n\n9. I am surprised that the authors did not discuss some of their results in the context of the findings from a recent paper on the spontaneous and evoked activity in developing zebrafish habenula (doi: https://doi.org/10.1126/sciadv.aaz3173 ), which is another brain region that exhibit both spontaneous and sensory driven activity (DOI: 10.1016/j.cub.2014.01.015 ). In this study the authors showed that at the animals develop spontaneous activity changes with higher correlations between neurons and altered temporal features. Interestingly this study also shows that the spontaneous activity is a good predictor of sensory responses of neurons, and this gets better over development, which in line with the hypothesis that the spontaneous activity might indeed be a prior to evoked responses, at least for some brain regions. I think that authors should at least consider comparing their results and discuss this relationship with these earlier works in zebrafish habenula, in addition to their description of ferret visual cortex work.\n",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "06a7d932-1526-427f-b123-0f2954be87ef",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C1",
+      "claim": "Two-photon calcium imaging was performed to record tectal spontaneous and stimulus driven activity in fish aged 4, 5, 8\u20139, and 13\u201315 days post-fertilisation (dpf).",
+      "claim_type": "EXPLICIT",
+      "source": "We performed two-photon calcium imaging and recorded tectal spontaneous and stimulus driven activity in fish aged 4, 5, 8\u20139, and 13\u201315 dpf (n = 11, 15, 10, 6 respectively; for convenience, we hereafter refer to the latter two groups as just 9 dpf and 15 dpf respectively) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the experimental procedure and age groups studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "d4f30fd0-9f4c-4194-89ac-d38bd227d578",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C2",
+      "claim": "A similar average number of neurons was recorded at each age.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar average number of neurons was recorded at each age (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "e21b4941-5a86-4bc6-b1c4-6698d851bd73",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C3",
+      "claim": "30 minutes of spontaneous activity in the dark was recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded 30 min of spontaneous activity in the dark (we refer to this period as SA) followed by 61.6 min of evoked activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the recording protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "b43b0c3e-2947-4515-93f2-9ac676123f6f",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C4",
+      "claim": "Visual stimulation consisted of 20 repetitions of nine 6\u00b0 spots at different positions covering 120\u00b0 of the larvae's visual field.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual stimulation consisted of 20 repetitions of nine 6\u00b0 spots (a size likely to be interpreted as prey [Bianco et al., 2011] and a frequent stimulus of behavioural relevance for the larvae) at different positions covering 120\u00b0 of the larvae's visual field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the visual stimulation protocol and cites prior work on prey interpretation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "b82f6f03-8800-4e26-9690-76a6b695d56b",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C5",
+      "claim": "6\u00b0 spots are a size likely to be interpreted as prey by zebrafish larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual stimulation consisted of 20 repetitions of nine 6\u00b0 spots (a size likely to be interpreted as prey [Bianco et al., 2011] and a frequent stimulus of behavioural relevance for the larvae) at different positions covering 120\u00b0 of the larvae's visual field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Bianco et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "8b3fce54-f3b6-4269-9870-2c8929ea06bd",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C6",
+      "claim": "Spots were presented for 1 second each with a 20 second gap between spots.",
+      "claim_type": "EXPLICIT",
+      "source": "Spots were presented for 1 s each with a 20 s gap between spots, for a total of 180 spot presentations per fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the timing parameters of the visual stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "e8787bf1-a57b-425c-a0de-5fd345ec3d8b",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C10",
+      "claim": "Correlation between TEA and SA correlation matrices does not change over development.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation between TEA and SA correlation matrices does not change over development (one-way ANOVA, Bonferroni multiple comparison correction).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text with statistical test information and shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "260a4906-d65b-45b8-baf2-3efbf1ba86fc",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C11",
+      "claim": "In terms of correlational structure, spontaneous and evoked activity did not become more similar over development.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in terms of correlational structure spontaneous and evoked activity did not become more similar over development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the correlation analysis presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "f77b67ca-dc59-4235-8166-f4ad89207ad9",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C12",
+      "claim": "SA and TEA assemblies did not differ in the number of neurons per assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "SA and TEA assemblies did not differ in the number of neurons per assembly (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "2756da8c-70c3-4bd0-80eb-962a015e76ce",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C13",
+      "claim": "The spatial coverage of SA assemblies was greater than TEA assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the spatial coverage of SA assemblies was greater than TEA assemblies (Figure 2\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 2\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "1a027923-50e9-4f4e-9c29-d79596152dcd",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C14",
+      "claim": "Assemblies were spatially clustered along the tectal anterior-posterior (AP) axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Assemblies were spatially clustered along the tectal anterior-posterior (AP) axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the spatial organization of assemblies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "b9d09ccc-a498-4516-97cc-f833cb5e5f63",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C15",
+      "claim": "Assemblies exhibited a posterior shift from 5 to 15 dpf in both TEA and SA.",
+      "claim_type": "EXPLICIT",
+      "source": "Computing the centre of mass (CoM) for each assembly and projecting it onto this axis revealed that assemblies exhibited a posterior shift from 5 to 15 dpf in both TEA (Figure 2C) and SA (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "cfa56bb9-97f5-420b-8b83-097242ee9a2a",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C16",
+      "claim": "Neurons within each assembly tended to be tuned for similar regions of visual space.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons within each assembly tended to be tuned for similar regions of visual space (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "7304822f-5b71-469b-a645-606eca41dda9",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C17",
+      "claim": "Assembly mean tuning showed a posterior shift in the tectum for both SA and TEA assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly mean tuning (the average of the preferred stimulus of all neurons in the assembly) showed a posterior shift in the tectum, for both SA and TEA assemblies (Figure 2G), suggesting that both TEA and SA assemblies undergo some similar developmental processes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "dba36e68-f6af-4e7a-9f73-d0b4f079369f",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C18",
+      "claim": "Both TEA and SA assemblies undergo some similar developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly mean tuning (the average of the preferred stimulus of all neurons in the assembly) showed a posterior shift in the tectum, for both SA and TEA assemblies (Figure 2G), suggesting that both TEA and SA assemblies undergo some similar developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of similar posterior shifts in both assembly types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "0a4e96e5-acfe-49cd-8c1c-4dab81c40801",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C19",
+      "claim": "Tuning variance within the assemblies showed no developmental trend.",
+      "claim_type": "EXPLICIT",
+      "source": "Tuning variance within the assemblies showed no developmental trend (Figure 2\u2014figure supplement 1C), but decreased along the AP axis (Figure 2\u2014figure supplement 1D), an effect present in both SA and TEA assemblies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "80bd3bbf-d8a9-4377-8412-00952c9af3ba",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C20",
+      "claim": "Tuning variance decreased along the AP axis in both SA and TEA assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Tuning variance within the assemblies showed no developmental trend (Figure 2\u2014figure supplement 1C), but decreased along the AP axis (Figure 2\u2014figure supplement 1D), an effect present in both SA and TEA assemblies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "2c96f99f-e635-4f14-87e5-97c5758cb0ba",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C21",
+      "claim": "Tuning variance within TEA assemblies was overall lower compared to SA assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, tuning variance within TEA assemblies was overall lower compared to SA assemblies (Figure 2H), suggesting more coherent evoked assemblies than spontaneous assemblies, driven potentially by non-identical sources of activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "11a6c51f-1cf1-4c0a-bcbe-5f8692c615bb",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C22",
+      "claim": "TEA assemblies are more coherent than spontaneous assemblies, potentially driven by non-identical sources of activation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, tuning variance within TEA assemblies was overall lower compared to SA assemblies (Figure 2H), suggesting more coherent evoked assemblies than spontaneous assemblies, driven potentially by non-identical sources of activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of lower tuning variance in TEA assemblies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "3e7f26e7-085d-4500-953a-3e538aaad196",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C23",
+      "claim": "The fraction of overlap in neuronal identity between TEA and SA assemblies was approximately 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of overlap in neuronal identity between TEA and SA assemblies was relatively low, \u223c20%, and this overlap decreased between 4 and 5 dpf and remined stable from 5 to 15 dpf (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "48b9d398-9a80-46a4-af4b-f294303279d3",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C24",
+      "claim": "The overlap in neuronal identity between TEA and SA assemblies decreased between 4 and 5 dpf and remained stable from 5 to 15 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of overlap in neuronal identity between TEA and SA assemblies was relatively low, \u223c20%, and this overlap decreased between 4 and 5 dpf and remined stable from 5 to 15 dpf (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "7c66ad77-55f8-4f33-a57d-50c097ffc69b",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C25",
+      "claim": "Despite some similar trends in the properties of evoked and spontaneous assemblies over development, evoked and spontaneous assemblies became progressively less similar to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, despite some similar trends in the properties of evoked and spontaneous assemblies over development, evoked and spontaneous assemblies became progressively less similar to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the assembly analysis presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "ec177270-efad-4f01-9a0a-337f3206a837",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C26",
+      "claim": "EA patterns recruited higher coactivity levels than either SA or SE patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "EA patterns recruited higher coactivity levels than either SA or SE patterns (Figure 3B), and these levels of coactivity within each epoch were robust over development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "dfe82592-2e49-4762-97dd-81cb98f78038",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C27",
+      "claim": "Levels of coactivity within each epoch were robust over development.",
+      "claim_type": "EXPLICIT",
+      "source": "EA patterns recruited higher coactivity levels than either SA or SE patterns (Figure 3B), and these levels of coactivity within each epoch were robust over development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the text based on the coactivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "30b4f375-4c24-4b7a-a219-a9b2e88651b9",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C29",
+      "claim": "Spontaneous activity does not determine the realm of evoked activity in the zebrafish tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in contrast to the suggestion that spontaneous activity determines the realm of evoked activity (Luczak et al., 2009), we found this not to be the case here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the dimensionality analysis, contrasting with prior work by Luczak et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "f0552485-d6d5-4254-9e87-801143cc0501",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C30",
+      "claim": "Pattern similarity for high-coactivity frames decreased over development when comparing all pairs of epochs (EA-SA, EA-SE, SA-SE).",
+      "claim_type": "EXPLICIT",
+      "source": "Pattern similarity for high-coactivity frames (measured by cosine distance) compared between all pairs of epochs (i.e. EA-SA, EA-SE, SA-SE) decreased over development (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "dd352536-9e55-4367-8e05-028ed6e157ca",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C31",
+      "claim": "The decrease in pattern similarity over development was consistent with a decrease in the overlap of neuronal identity between TEA and SA assemblies over development.",
+      "claim_type": "EXPLICIT",
+      "source": "This was consistent with a decrease in the overlap of neuronal identity between TEA and SA assemblies over development (Figure 2I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting two observations from different analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "92578749-a12c-4c6e-b6f9-7493e766f7b8",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C32",
+      "claim": "The fraction of EA and SE patterns that cannot be explained by the space spanned by SA increased over development.",
+      "claim_type": "EXPLICIT",
+      "source": "This unexplained fraction increased over development (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figures 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "4a5aadb8-d471-4188-bc93-b1db613f232b",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C33",
+      "claim": "The fraction of EA and SA patterns that cannot be explained by the space spanned by SE patterns increased over development.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the fraction of EA and SA patterns which cannot be explained by the space spanned by SE patterns also increased over development (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the text and supported by data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "8f06a58e-1d17-4a76-abe0-88467a5d9274",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C34",
+      "claim": "Over development, evoked patterns gradually increase their distance from the space spanned by spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that, over development, evoked patterns gradually increase their distance from the space spanned by spontaneous activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the geometric analysis of activity patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "f41fcd68-e7ac-4a46-8cd3-3aca2f58c036",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C35",
+      "claim": "Evoked patterns have higher dimensionality than spontaneous patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that evoked patterns have higher dimensionality than spontaneous patterns, and become less similar and geometrically further from spontaneous patterns over development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the dimensionality and geometric analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "623a5943-e886-476c-8400-be9337392ff1",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C36",
+      "claim": "Evoked patterns become less similar and geometrically further from spontaneous patterns over development.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that evoked patterns have higher dimensionality than spontaneous patterns, and become less similar and geometrically further from spontaneous patterns over development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the similarity and geometric analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "e9634d1e-b9bf-45e4-95a5-d0ebe298aa40",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C37",
+      "claim": "Spontaneous activity in the zebrafish tectum was previously shown to be high dimensional.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous activity in the zebrafish tectum was previously shown to be high dimensional (Avitan et al., 2017), similar to the mammalian cortex (Luczak et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Avitan et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "1a6a0fc0-9cce-460b-ab4a-b51e5bab9582",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C38",
+      "claim": "Spontaneous activity in the mammalian cortex is high dimensional.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous activity in the zebrafish tectum was previously shown to be high dimensional (Avitan et al., 2017), similar to the mammalian cortex (Luczak et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by Luczak et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "59ee4c34-732f-4005-b718-4e0d7dffc348",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C39",
+      "claim": "Evoked activity showed higher coactivity levels and higher dimensionality compared to spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the present work, evoked activity showed higher coactivity levels and higher dimensionality compared to spontaneous activity, in contrast to the suggestion that spontaneous activity outlines the realm of possible cortical sensory responses and that evoked patterns are a subset in this space (Luczak et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the present work, contrasting with prior suggestions by Luczak et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "acc8d0f6-a850-4792-8beb-b5f7e273e03b",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C40",
+      "claim": "Similarity of evoked and spontaneous patterns has been reported across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarity of evoked and spontaneous patterns has been reported across species (Berkes et al., 2011; Miller et al., 2014; Romano et al., 2015; Kenet et al., 2003; Omer et al., 2019; Fore et al., 2020), with spontaneous activity being predictive of visually evoked orientation columns (Smith et al., 2018; Kenet et al., 2003) supporting the hypothesis that spontaneous activity reflects expectation of sensory experience Luczak et al., 2009",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work across different species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "79533a01-fdb6-4261-85c3-937f1b9ba3c1",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C41",
+      "claim": "Spontaneous activity is predictive of visually evoked orientation columns.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarity of evoked and spontaneous patterns has been reported across species (Berkes et al., 2011; Miller et al., 2014; Romano et al., 2015; Kenet et al., 2003; Omer et al., 2019; Fore et al., 2020), with spontaneous activity being predictive of visually evoked orientation columns (Smith et al., 2018; Kenet et al., 2003) supporting the hypothesis that spontaneous activity reflects expectation of sensory experience Luczak et al., 2009",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Smith et al., 2018 and Kenet et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "5099c7fd-a97b-4bc1-aed0-77b27d318f74",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C42",
+      "claim": "Spontaneous activity in the adult cortex has been related to the animal's ongoing behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "However, spontaneous activity in the adult cortex has been also related to the animal's ongoing behaviour (Stringer et al., 2019; Carrillo-Reid et al., 2019) and was recently shown to be orthogonal to evoked patterns (Stringer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Stringer et al., 2019 and Carrillo-Reid et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "b4b4ee30-0922-4897-a8e0-1c232c47944d",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C43",
+      "claim": "Spontaneous activity in the adult cortex was recently shown to be orthogonal to evoked patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "However, spontaneous activity in the adult cortex has been also related to the animal's ongoing behaviour (Stringer et al., 2019; Carrillo-Reid et al., 2019) and was recently shown to be orthogonal to evoked patterns (Stringer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Stringer et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "fb4f72b4-7fda-4b20-a921-8aa03ed44de6",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C44",
+      "claim": "The results of this study are in agreement with the finding that spontaneous activity is orthogonal to evoked patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are in agreement with the latter (Figure 3F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the geometric analysis, comparing with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "84e30246-9795-4e60-9b28-a873ad43fc18",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C45",
+      "claim": "A developmental increase in cortical pattern similarity between evoked and spontaneous activity has been reported when evoked activity was elicited by natural stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "A developmental increase in cortical pattern similarity between evoked and spontaneous activity has been reported when evoked activity was elicited by natural stimuli, while in contrast artificial stimuli (such as gratings) resulted in a decrease in pattern similarity (Berkes et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Berkes et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "8db1c602-0e96-4213-a126-d7f3edb540a7",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C46",
+      "claim": "Artificial stimuli (such as gratings) resulted in a decrease in pattern similarity between evoked and spontaneous activity over development.",
+      "claim_type": "EXPLICIT",
+      "source": "A developmental increase in cortical pattern similarity between evoked and spontaneous activity has been reported when evoked activity was elicited by natural stimuli, while in contrast artificial stimuli (such as gratings) resulted in a decrease in pattern similarity (Berkes et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Berkes et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "27ee018d-e941-4b5e-8b07-e1dc6ce4134e",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C47",
+      "claim": "The spot stimuli used in this study are highly ecologically relevant for zebrafish larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "While the spot stimuli we used are quite simple, they are nevertheless highly ecologically relevant for zebrafish larvae (Del Bene et al., 2010; Bianco et al., 2011; Preuss et al., 2014; Semmelhack et al., 2014) particularly for hunting behaviour (Bianco and Engert, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work on zebrafish behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "1f1b8cf1-27bf-404e-885c-f0557ed4ece5",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C48",
+      "claim": "The spot stimuli used in this study are particularly relevant for hunting behaviour in zebrafish larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "While the spot stimuli we used are quite simple, they are nevertheless highly ecologically relevant for zebrafish larvae (Del Bene et al., 2010; Bianco et al., 2011; Preuss et al., 2014; Semmelhack et al., 2014) particularly for hunting behaviour (Bianco and Engert, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Bianco and Engert, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "560a1809-20e9-4533-8d91-c3a31b320f99",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C49",
+      "claim": "A potential explanation for the mismatch between the results of this study and those of Berkes et al., 2011 could be the much larger number of neurons recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "A potential explanation for the mismatch between our results and those of Berkes et al., 2011 could be the much larger number of neurons we recorded, and that we included neurons regardless of their tuning strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for differences between studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "80c7ce9c-22ab-4613-8592-25fef922dfc5",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C50",
+      "claim": "A potential explanation for the mismatch between the results of this study and those of Berkes et al., 2011 could be that neurons were included regardless of their tuning strength.",
+      "claim_type": "EXPLICIT",
+      "source": "A potential explanation for the mismatch between our results and those of Berkes et al., 2011 could be the much larger number of neurons we recorded, and that we included neurons regardless of their tuning strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for differences between studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "df0961d5-260b-4372-8ba4-466d7ecd4991",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C51",
+      "claim": "In the larval zebrafish tectum, despite some similarities between spontaneous and evoked activity patterns, their statistics grow more distant as development proceeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our work shows that in the larval zebrafish tectum, despite some similarities between spontaneous and evoked activity patterns, their statistics grow more distant as development proceeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, summarizing the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "dcf97bad-8fea-4b8e-b60a-6fa96dacb04b",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C52",
+      "claim": "Early spontaneous activity in the zebrafish tectum presents patterns which are similar enough to naturally evoked patterns to provide useful cues for initial wiring development.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the idea that early spontaneous activity in this system presents patterns which are similar enough to naturally evoked patterns to provide useful cues for initial wiring development, but do not attempt to track changing patterns of evoked activity over development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of developmental wiring.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "5af316c0-96f5-4b0a-b76a-d4747f347020",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C53",
+      "claim": "Spontaneous activity in the zebrafish tectum does not attempt to track changing patterns of evoked activity over development.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the idea that early spontaneous activity in this system presents patterns which are similar enough to naturally evoked patterns to provide useful cues for initial wiring development, but do not attempt to track changing patterns of evoked activity over development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results regarding the relationship between spontaneous and evoked activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "b1ea6aa4-53bc-4362-a8ad-7d9c45f25196",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C54",
+      "claim": "The immature brain is highly spontaneously active.",
+      "claim_type": "EXPLICIT",
+      "source": "The immature brain is highly spontaneously active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about brain development presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "2e8c5a7b-2bf6-45db-b919-ff0224f78011",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C55",
+      "claim": "Correlations within spontaneous and evoked activity epochs were comparable over development.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlations within spontaneous and evoked activity epochs were comparable over development, and their neural assemblies refined in similar ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the study presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "c6a8cf72-dc17-473f-86ec-1a310e42ec53",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C56",
+      "claim": "Neural assemblies in spontaneous and evoked activity refined in similar ways over development.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlations within spontaneous and evoked activity epochs were comparable over development, and their neural assemblies refined in similar ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the study presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "9984e51d-c8ab-4bb1-a595-f04e403c1606",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C57",
+      "claim": "The similarity between evoked and spontaneous assemblies decreased over development.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both the similarity between evoked and spontaneous assemblies, and also the geometric distance between spontaneous and evoked patterns, decreased over development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the study presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "75d35575-35fa-4091-9ba7-361af04e1959",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C58",
+      "claim": "The geometric distance between spontaneous and evoked patterns decreased over development.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both the similarity between evoked and spontaneous assemblies, and also the geometric distance between spontaneous and evoked patterns, decreased over development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the study presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "589d67f6-98d7-4473-b8f1-633522cea3e2",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C59",
+      "claim": "At all stages of development, evoked activity was of higher dimension than spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "At all stages of development, evoked activity was of higher dimension than spontaneous activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the study presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "1be3d98a-5ee7-496d-8f00-77c63fd8d562",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C60",
+      "claim": "Spontaneous and evoked activity do not converge over development in the larval zebrafish tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, spontaneous and evoked activity do not converge over development in this system, and these results do not support the hypothesis that spontaneous activity evolves to form a Bayesian prior for evoked activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "d160dada-da76-4029-a163-a31ac1e27175",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C61",
+      "claim": "These results do not support the hypothesis that spontaneous activity evolves to form a Bayesian prior for evoked activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, spontaneous and evoked activity do not converge over development in this system, and these results do not support the hypothesis that spontaneous activity evolves to form a Bayesian prior for evoked activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "1b0bec3c-1310-4266-80f7-319109f2923c",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C62",
+      "claim": "As newborn neurons mature they start to become spontaneously active.",
+      "claim_type": "EXPLICIT",
+      "source": "As newborn neurons mature they start to become spontaneously active (Galli and Maffei, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Galli and Maffei, 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "14fdb8ee-0c35-41d2-a6ee-9c21cc4e6855",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C63",
+      "claim": "Patterns of activity that are coordinated between groups of neurons begin to form as neurons mature.",
+      "claim_type": "EXPLICIT",
+      "source": "Patterns of activity that are coordinated between groups of neurons then begin to form (Blankenship and Feller, 2010; Luhmann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Blankenship and Feller, 2010 and Luhmann et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "6d51eced-7a39-4d7a-8e9c-156db9b88ae0",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C64",
+      "claim": "Waves of activity occur in the developing mammalian retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Prominent examples include waves of activity in the developing mammalian retina (Meister et al., 1991), and neural assemblies in mammalian neocortex (Yuste et al., 1992) and the zebrafish tectum (Romano et al., 2015; Avitan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Meister et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "ebb2a925-634e-4d71-9ffd-decedc47b65b",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C65",
+      "claim": "Neural assemblies occur in mammalian neocortex during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Prominent examples include waves of activity in the developing mammalian retina (Meister et al., 1991), and neural assemblies in mammalian neocortex (Yuste et al., 1992) and the zebrafish tectum (Romano et al., 2015; Avitan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Yuste et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "52adbe23-e430-406c-89a1-d5f22d93a79c",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C66",
+      "claim": "Neural assemblies occur in the zebrafish tectum during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Prominent examples include waves of activity in the developing mammalian retina (Meister et al., 1991), and neural assemblies in mammalian neocortex (Yuste et al., 1992) and the zebrafish tectum (Romano et al., 2015; Avitan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Romano et al., 2015 and Avitan et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "cc5259a7-0444-4b55-a08d-c8a18e9cb4f9",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C67",
+      "claim": "One key functional role played by coordinated spontaneous activity in neural development is to assist with the formation of appropriate brain wiring.",
+      "claim_type": "EXPLICIT",
+      "source": "One key functional role played by coordinated spontaneous activity in neural development is to assist with the formation of appropriate brain wiring (Leighton and Lohmann, 2016; Ackman and Crair, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Leighton and Lohmann, 2016 and Ackman and Crair, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "0c6a97d6-5ff9-433e-85bc-367fdc8b94e8",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C68",
+      "claim": "Disrupting the structure of spontaneous activity disrupts circuit development in multiple systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for this includes findings from multiple systems that disrupting the structure of spontaneous activity disrupts circuit development (Kirkby et al., 2013; Arroyo and Feller, 2016; Xu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kirkby et al., 2013, Arroyo and Feller, 2016, and Xu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "21848ecb-3725-4cca-8de5-dc009a943201",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C69",
+      "claim": "Spontaneous activity could provide an internal model for the patterns of activity likely to be evoked by sensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "However, spontaneous activity could also play a deeper functional role: providing an internal model for the patterns of activity likely to be evoked by sensory stimuli (Ringach, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ringach, 2009.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "f3db4e3a-2ae3-4220-ae9c-ea3c5bb6a644",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C70",
+      "claim": "A specific mathematical formulation is that spontaneous activity could form a Bayesian prior for stimulus-evoked activity.",
+      "claim_type": "EXPLICIT",
+      "source": "A specific mathematical formulation is that spontaneous activity could form a Bayesian prior for stimulus-evoked activity (Fiser et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Fiser et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "5fa6a6d8-70dd-4e8e-9476-04d8eed4649c",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C71",
+      "claim": "If spontaneous activity forms a Bayesian prior for stimulus-evoked activity, patterns of spontaneous activity during development should gradually refine to become more similar to stimulus-evoked patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "If this is the case, patterns of spontaneous activity during development should gradually refine to become more similar to stimulus-evoked patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the Bayesian prior hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "6de18b4d-39bd-4b62-8361-23fd6a408f64",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C72",
+      "claim": "In the developing ferret cortex, multiunit recordings of spontaneous and evoked activity in 16 neurons showed increasing similarity over development.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence supporting this comes from the developing ferret cortex, where multiunit recordings of spontaneous and evoked activity in 16 neurons showed increasing similarity over development (Berkes et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Berkes et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "8f5ffa4c-7828-4334-af1a-715093480cde",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C73",
+      "claim": "Whether the principle that spontaneous and evoked activity become more similar over development holds at larger scale and in other species is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whether this principle holds at larger scale and in other species is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that motivates the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "31181ade-8eec-41d7-a17b-f0e0bb35afed",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C74",
+      "claim": "The larval zebrafish provides a good model system for studying these questions, due to its rapid development and ease of calcium imaging of the activity of large populations of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The larval zebrafish provides a good model system for studying these questions, due to its rapid development and ease of calcium imaging of the activity of large populations of neurons (Sumbre and de Polavieja, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sumbre and de Polavieja, 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "a577294b-30d3-40b1-a83e-67faf8f5d5a4",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C75",
+      "claim": "Over the period of 4\u201315 days post-fertilisation (dpf), spontaneous activity in the zebrafish tectum follows a specific developmental trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the period of 4\u201315 days post-fertilisation (dpf), spontaneous activity in the zebrafish tectum follows a specific developmental trajectory (Avitan et al., 2016; Pietri et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Avitan et al., 2016 and Pietri et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "1824e839-60da-451c-875e-b112f5c264c0",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C76",
+      "claim": "Starting at 5 dpf zebrafish start to hunt prey, with an effectiveness that increases with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting at 5 dpf zebrafish start to hunt prey, with an effectiveness that increases with age (Avitan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Avitan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "551de26c-87dc-419c-902b-4189975edb70",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C77",
+      "claim": "During the period of 4-15 dpf, the neural coding of stimuli improves, as measured by the increasing accuracy with which stimulus location can be decoded from tectal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "During this same period, the neural coding of stimuli improves, as measured by the increasing accuracy with which stimulus location can be decoded from tectal activity, and increased mutual information between stimuli and responses (Avitan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Avitan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "df6ad492-1f71-4bdc-8f76-a549727b3dce",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C78",
+      "claim": "During the period of 4-15 dpf, the neural coding of stimuli improves, as measured by increased mutual information between stimuli and responses.",
+      "claim_type": "EXPLICIT",
+      "source": "During this same period, the neural coding of stimuli improves, as measured by the increasing accuracy with which stimulus location can be decoded from tectal activity, and increased mutual information between stimuli and responses (Avitan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Avitan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "1daad363-accb-4d59-b293-afcec7660f90",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C79",
+      "claim": "The relationship between the changing statistical properties of spontaneous and evoked activity over development has not been examined in zebrafish prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relationship between the changing statistical properties of spontaneous and evoked activity over development has not so far been examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "db937d61-2c86-4933-89c1-aa3824322ea6",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C80",
+      "claim": "Nacre zebrafish embryos expressing elavl3:H2B-GCaMP6s were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Nacre zebrafish (Danio rerio) embryos expressing elavl3:H2B-GCaMP6s (Vladimirov et al., 2014) were collected and raised according to established procedures (Westerfield, 1995) and kept under a 14/10 h on/off light cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the zebrafish line used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "ce174548-e9b6-481d-aee6-c4fe936caa5a",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C81",
+      "claim": "Larvae were fed live rotifers (Brachionus plicatilis) daily from 5 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Larvae were fed live rotifers (Brachionus plicatilis) daily from 5 dpf.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the feeding protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "86261004-bc10-4287-aff4-3210dfd217d1",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C82",
+      "claim": "All procedures were performed with approval from The University of Queensland Animal Ethics Committee (QBI/152/16/ARC).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were performed with approval from The University of Queensland Animal Ethics Committee (QBI/152/16/ARC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "bc5923c0-a074-4b9a-85d3-53b8febcc1a0",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C83",
+      "claim": "Time-lapse two-photon images were acquired using a Zeiss LSM 710 inverted two-photon microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse two-photon images were acquired at the Queensland Brain Institute's Advanced Microscopy Facility using a Zeiss LSM 710 inverted two-photon microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the imaging equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "f40616cb-929c-4cc2-9258-74aad6f45834",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C84",
+      "claim": "Samples were excited at an excitation wavelength of 940 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were excited via a Spectra-Physics Mai TaiDeepSee Ti:Sapphire laser (Spectra-Physics) at an excitation wavelength of 940 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the excitation wavelength used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "70090a4b-ec7c-4618-94dd-67867c16583c",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C85",
+      "claim": "Laser power at the sample plane ranged between 12 and 20 mW.",
+      "claim_type": "EXPLICIT",
+      "source": "Laser power at the sample plane ranged between 12 and 20 mW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the laser power used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "59fd1935-d4cb-4f3c-a2bb-01284c0bd2a0",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C86",
+      "claim": "Time-lapse images (416 \u00d7 300 pixels) were obtained at 2.2 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse images (416 \u00d7 300 pixels) were obtained at 2.2 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "5cbd636a-9c00-4731-b1ab-6fb242b2829d",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C87",
+      "claim": "Visual stimuli were projected onto white diffusion paper placed around the wall of the petri dish, covering a horizontal field of view of 174\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual stimuli were projected onto white diffusion paper placed around the wall of the petri dish, using a pico-projector (PK320 Optoma, USA), covering a horizontal field of view of 174\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the visual stimulation setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "153653a3-3ea1-4909-8567-62281efc4b01",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C88",
+      "claim": "A graph theory-based technique for assembly detection was used to identify reoccurring assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a graph theory-based technique for assembly detection (Avitan et al., 2017), recently shown to have state-of-the-art performance in detecting neural assemblies in calcium imaging data (M\u00f6lter et al., 2018), we identified reoccurring assemblies separately during SA and TEA (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the method used for assembly detection and cites prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "c17bf390-c3fb-4b25-a86c-aceaa0abef82",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C89",
+      "claim": "The graph theory-based technique for assembly detection was recently shown to have state-of-the-art performance in detecting neural assemblies in calcium imaging data.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a graph theory-based technique for assembly detection (Avitan et al., 2017), recently shown to have state-of-the-art performance in detecting neural assemblies in calcium imaging data (M\u00f6lter et al., 2018), we identified reoccurring assemblies separately during SA and TEA (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to M\u00f6lter et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "366fa056-c84f-4d3d-ab10-e551e0bc5f50",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "claim_id": "C91",
+      "claim": "Across species, both evoked and spontaneous neural activity are characterised by time points of synchronised activity across a population of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Across species, both evoked and spontaneous neural activity are characterised by time points of synchronised activity across a population of neurons (Yuste, 2015; Romano et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yuste, 2015 and Romano et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Two-photon calcium imaging was performed on zebrafish larvae at 4, 5, 9, and 15 dpf, recording 30 minutes of spontaneous activity followed by evoked responses to 20 repetitions of nine 6\u00b0 spots presented at different visual field positions. The experimental setup, animal husbandry, imaging parameters, and visual stimulation protocol are described in detail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 and C80-C87 provide comprehensive methodological details that are internally consistent and appropriately documented. The experimental design is clearly described with specific parameters (imaging frequency, laser power, stimulus timing, etc.), sample sizes are reported, and ethical approval is documented. The methods appear technically sound for calcium imaging in zebrafish.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "05d0e2f6-f228-4cdf-8bf4-285db1c24980",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The correlation between TEA and SA correlation matrices does not change over development, indicating that spontaneous and evoked activity did not become more similar in terms of correlational structure during the developmental period studied.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 are supported by statistical analysis (one-way ANOVA with Bonferroni correction) and Figure 1F. The conclusion that correlational structure does not converge is appropriately drawn from the lack of developmental change in correlation matrix similarity. This directly addresses one of the study's main hypotheses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neural assemblies were identified using graph theory-based methods during spontaneous and evoked activity. While SA and TEA assemblies showed similar numbers of neurons per assembly and both exhibited posterior shifts in spatial location and tuning over development, SA assemblies had greater spatial coverage and higher tuning variance than TEA assemblies. The overlap in neuronal identity between TEA and SA assemblies was low (~20%) and decreased between 4-5 dpf, remaining stable thereafter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C25 and C88-C89 present a comprehensive analysis of neural assemblies with appropriate statistical support (Figures 2B-I and supplements). The assembly detection method is validated by citation to prior benchmarking work (M\u00f6lter et al., 2018). The findings reveal both similarities (posterior shifts) and differences (spatial coverage, tuning variance, neuronal overlap) between spontaneous and evoked assemblies, supporting the conclusion that these assemblies become progressively less similar despite some parallel developmental trends.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "6f6665e2-6519-4ccd-89bc-915d98e6e88c",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Evoked activity (EA) patterns showed higher coactivity levels and higher dimensionality than spontaneous activity (SA) or spontaneous-within-evoked (SE) patterns, with these levels remaining robust over development. Pattern similarity between all epoch pairs (EA-SA, EA-SE, SA-SE) decreased over development, and the fraction of EA/SE patterns that cannot be explained by SA space, and EA/SA patterns that cannot be explained by SE space, both increased developmentally. This demonstrates that evoked patterns have higher dimensionality than spontaneous patterns and become geometrically more distant from spontaneous patterns over development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C36 present the core geometric and dimensionality analyses supported by Figures 3B-G and statistical tests. The use of principal component analysis for dimensionality assessment and projection onto orthogonal complements for geometric distance is mathematically appropriate. The findings directly contradict the hypothesis that spontaneous activity determines the realm of evoked activity (Luczak et al., 2009), providing strong evidence for divergence rather than convergence of these activity patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "49647a67-5e0f-4ffc-967a-bb2551d88528",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study concludes that in the larval zebrafish tectum, spontaneous and evoked activity patterns grow more distant as development proceeds, despite some similarities. This suggests that early spontaneous activity may provide useful cues for initial wiring but does not track changing evoked patterns over development, and the results do not support the hypothesis that spontaneous activity evolves to form a Bayesian prior for evoked activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 and C60-C61 represent the main conclusions of the study, which are well-supported by the convergent evidence from correlation analysis, assembly characterization, and geometric/dimensionality analyses. The interpretation that spontaneous activity does not form a Bayesian prior is justified by the demonstrated divergence rather than convergence of activity patterns. However, C52 contains some speculation about functional implications for wiring development that goes beyond the direct evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "c4b51fb8-a3d5-4e33-96f3-589468241651",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The discussion contextualizes the findings within prior literature, noting that while spontaneous activity in zebrafish tectum and mammalian cortex is high-dimensional, the current results showing higher dimensionality for evoked activity contrast with some prior suggestions. The results align with recent findings that spontaneous activity is orthogonal to evoked patterns. Differences from prior work (Berkes et al., 2011) may relate to the larger number of neurons recorded and inclusion of neurons regardless of tuning strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C50 appropriately cite and discuss relevant prior literature, making reasonable comparisons and contrasts with the current findings. The citations appear accurate in their representation of prior work. The speculative explanations for differences between studies (C49-C50) are appropriately qualified as potential rather than definitive. The ecological relevance of the spot stimuli is well-supported by multiple citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "fe154a8a-654b-44be-9080-7682dd24c2e5",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The abstract summarizes that correlations within spontaneous and evoked activity epochs were comparable over development and their neural assemblies refined in similar ways, but the similarity between evoked and spontaneous assemblies and the geometric distance between patterns both decreased over development, with evoked activity showing higher dimensionality at all developmental stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 accurately summarize the main findings presented in the results section. These abstract claims are well-supported by the detailed analyses in the manuscript. The statement about comparable correlations (C55) is supported by C10-C11, similar assembly refinement (C56) by C15-C18, decreased similarity (C57) by C23-C25 and C30, and higher dimensionality (C59) by C26 and C35.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    },
+    {
+      "id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d",
+      "content_id": "5ffcffb6-4d9d-4293-94f1-383b4d7fffae",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The introduction establishes the background on spontaneous activity in neural development, its role in circuit wiring, and the hypothesis that it could form a Bayesian prior for evoked activity. It identifies a knowledge gap regarding whether spontaneous and evoked activity converge over development at larger scale and in other species beyond the ferret cortex study, motivating the use of larval zebrafish as a model system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C79 and C91 provide appropriate background and motivation for the study through extensive citations to relevant literature. The citations appear accurate in their representation of prior work. The identification of the knowledge gap (C73, C79) appropriately motivates the current study. The justification for using zebrafish as a model system (C74) is well-supported. These claims establish the scientific context and rationale for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:49:59.047965Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "06a7d932-1526-427f-b123-0f2954be87ef",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "d4f30fd0-9f4c-4194-89ac-d38bd227d578",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "e21b4941-5a86-4bc6-b1c4-6698d851bd73",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "b43b0c3e-2947-4515-93f2-9ac676123f6f",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "b82f6f03-8800-4e26-9690-76a6b695d56b",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "8b3fce54-f3b6-4269-9870-2c8929ea06bd",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "db937d61-2c86-4933-89c1-aa3824322ea6",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "ce174548-e9b6-481d-aee6-c4fe936caa5a",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "86261004-bc10-4287-aff4-3210dfd217d1",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "bc5923c0-a074-4b9a-85d3-53b8febcc1a0",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "f40616cb-929c-4cc2-9258-74aad6f45834",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "70090a4b-ec7c-4618-94dd-67867c16583c",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "59fd1935-d4cb-4f3c-a2bb-01284c0bd2a0",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "5cbd636a-9c00-4731-b1ab-6fb242b2829d",
+      "result_id": "77db4c9e-0a81-4e23-8004-3eaa006c4dbf"
+    },
+    {
+      "claim_id": "e8787bf1-a57b-425c-a0de-5fd345ec3d8b",
+      "result_id": "05d0e2f6-f228-4cdf-8bf4-285db1c24980"
+    },
+    {
+      "claim_id": "260a4906-d65b-45b8-baf2-3efbf1ba86fc",
+      "result_id": "05d0e2f6-f228-4cdf-8bf4-285db1c24980"
+    },
+    {
+      "claim_id": "f77b67ca-dc59-4235-8166-f4ad89207ad9",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "2756da8c-70c3-4bd0-80eb-962a015e76ce",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "1a027923-50e9-4f4e-9c29-d79596152dcd",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "b9d09ccc-a498-4516-97cc-f833cb5e5f63",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "cfa56bb9-97f5-420b-8b83-097242ee9a2a",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "7304822f-5b71-469b-a645-606eca41dda9",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "dba36e68-f6af-4e7a-9f73-d0b4f079369f",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "0a4e96e5-acfe-49cd-8c1c-4dab81c40801",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "80bd3bbf-d8a9-4377-8412-00952c9af3ba",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "2c96f99f-e635-4f14-87e5-97c5758cb0ba",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "11a6c51f-1cf1-4c0a-bcbe-5f8692c615bb",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "3e7f26e7-085d-4500-953a-3e538aaad196",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "48b9d398-9a80-46a4-af4b-f294303279d3",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "7c66ad77-55f8-4f33-a57d-50c097ffc69b",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "153653a3-3ea1-4909-8567-62281efc4b01",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "c17bf390-c3fb-4b25-a86c-aceaa0abef82",
+      "result_id": "01ce5ffe-82a0-4e2f-83ad-89da68cc0d74"
+    },
+    {
+      "claim_id": "ec177270-efad-4f01-9a0a-337f3206a837",
+      "result_id": "6f6665e2-6519-4ccd-89bc-915d98e6e88c"
+    },
+    {
+      "claim_id": "dfe82592-2e49-4762-97dd-81cb98f78038",
+      "result_id": "6f6665e2-6519-4ccd-89bc-915d98e6e88c"
+    },
+    {
+      "claim_id": "30b4f375-4c24-4b7a-a219-a9b2e88651b9",
+      "result_id": "6f6665e2-6519-4ccd-89bc-915d98e6e88c"
+    },
+    {
+      "claim_id": "f0552485-d6d5-4254-9e87-801143cc0501",
+      "result_id": "6f6665e2-6519-4ccd-89bc-915d98e6e88c"
+    },
+    {
+      "claim_id": "dd352536-9e55-4367-8e05-028ed6e157ca",
+      "result_id": "6f6665e2-6519-4ccd-89bc-915d98e6e88c"
+    },
+    {
+      "claim_id": "92578749-a12c-4c6e-b6f9-7493e766f7b8",
+      "result_id": "6f6665e2-6519-4ccd-89bc-915d98e6e88c"
+    },
+    {
+      "claim_id": "4a5aadb8-d471-4188-bc93-b1db613f232b",
+      "result_id": "6f6665e2-6519-4ccd-89bc-915d98e6e88c"
+    },
+    {
+      "claim_id": "8f06a58e-1d17-4a76-abe0-88467a5d9274",
+      "result_id": "6f6665e2-6519-4ccd-89bc-915d98e6e88c"
+    },
+    {
+      "claim_id": "f41fcd68-e7ac-4a46-8cd3-3aca2f58c036",
+      "result_id": "6f6665e2-6519-4ccd-89bc-915d98e6e88c"
+    },
+    {
+      "claim_id": "623a5943-e886-476c-8400-be9337392ff1",
+      "result_id": "6f6665e2-6519-4ccd-89bc-915d98e6e88c"
+    },
+    {
+      "claim_id": "df0961d5-260b-4372-8ba4-466d7ecd4991",
+      "result_id": "49647a67-5e0f-4ffc-967a-bb2551d88528"
+    },
+    {
+      "claim_id": "dcf97bad-8fea-4b8e-b60a-6fa96dacb04b",
+      "result_id": "49647a67-5e0f-4ffc-967a-bb2551d88528"
+    },
+    {
+      "claim_id": "5af316c0-96f5-4b0a-b76a-d4747f347020",
+      "result_id": "49647a67-5e0f-4ffc-967a-bb2551d88528"
+    },
+    {
+      "claim_id": "1be3d98a-5ee7-496d-8f00-77c63fd8d562",
+      "result_id": "49647a67-5e0f-4ffc-967a-bb2551d88528"
+    },
+    {
+      "claim_id": "d160dada-da76-4029-a163-a31ac1e27175",
+      "result_id": "49647a67-5e0f-4ffc-967a-bb2551d88528"
+    },
+    {
+      "claim_id": "e9634d1e-b9bf-45e4-95a5-d0ebe298aa40",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "1a6a0fc0-9cce-460b-ab4a-b51e5bab9582",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "59ee4c34-732f-4005-b718-4e0d7dffc348",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "acc8d0f6-a850-4792-8beb-b5f7e273e03b",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "79533a01-fdb6-4261-85c3-937f1b9ba3c1",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "5099c7fd-a97b-4bc1-aed0-77b27d318f74",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "b4b4ee30-0922-4897-a8e0-1c232c47944d",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "fb4f72b4-7fda-4b20-a921-8aa03ed44de6",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "84e30246-9795-4e60-9b28-a873ad43fc18",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "8db1c602-0e96-4213-a126-d7f3edb540a7",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "27ee018d-e941-4b5e-8b07-e1dc6ce4134e",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "1f1b8cf1-27bf-404e-885c-f0557ed4ece5",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "560a1809-20e9-4533-8d91-c3a31b320f99",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "80c7ce9c-22ab-4613-8592-25fef922dfc5",
+      "result_id": "c4b51fb8-a3d5-4e33-96f3-589468241651"
+    },
+    {
+      "claim_id": "b1ea6aa4-53bc-4362-a8ad-7d9c45f25196",
+      "result_id": "fe154a8a-654b-44be-9080-7682dd24c2e5"
+    },
+    {
+      "claim_id": "2e8c5a7b-2bf6-45db-b919-ff0224f78011",
+      "result_id": "fe154a8a-654b-44be-9080-7682dd24c2e5"
+    },
+    {
+      "claim_id": "c6a8cf72-dc17-473f-86ec-1a310e42ec53",
+      "result_id": "fe154a8a-654b-44be-9080-7682dd24c2e5"
+    },
+    {
+      "claim_id": "9984e51d-c8ab-4bb1-a595-f04e403c1606",
+      "result_id": "fe154a8a-654b-44be-9080-7682dd24c2e5"
+    },
+    {
+      "claim_id": "75d35575-35fa-4091-9ba7-361af04e1959",
+      "result_id": "fe154a8a-654b-44be-9080-7682dd24c2e5"
+    },
+    {
+      "claim_id": "589d67f6-98d7-4473-b8f1-633522cea3e2",
+      "result_id": "fe154a8a-654b-44be-9080-7682dd24c2e5"
+    },
+    {
+      "claim_id": "1b0bec3c-1310-4266-80f7-319109f2923c",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "14fdb8ee-0c35-41d2-a6ee-9c21cc4e6855",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "6d51eced-7a39-4d7a-8e9c-156db9b88ae0",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "ebb2a925-634e-4d71-9ffd-decedc47b65b",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "52adbe23-e430-406c-89a1-d5f22d93a79c",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "cc5259a7-0444-4b55-a08d-c8a18e9cb4f9",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "0c6a97d6-5ff9-433e-85bc-367fdc8b94e8",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "21848ecb-3725-4cca-8de5-dc009a943201",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "f3db4e3a-2ae3-4220-ae9c-ea3c5bb6a644",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "5fa6a6d8-70dd-4e8e-9476-04d8eed4649c",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "6de18b4d-39bd-4b62-8361-23fd6a408f64",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "8f5ffa4c-7828-4334-af1a-715093480cde",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "31181ade-8eec-41d7-a17b-f0e0bb35afed",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "a577294b-30d3-40b1-a83e-67faf8f5d5a4",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "1824e839-60da-451c-875e-b112f5c264c0",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "551de26c-87dc-419c-902b-4189975edb70",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "df6ad492-1f71-4bdc-8f76-a549727b3dce",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "1daad363-accb-4d59-b293-afcec7660f90",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    },
+    {
+      "claim_id": "366fa056-c84f-4d3d-ab10-e551e0bc5f50",
+      "result_id": "2803dd32-f4aa-4ec9-9e1d-34f1dbf5d51d"
+    }
+  ],
+  "comparisons": []
+}

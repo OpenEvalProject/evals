@@ -1,0 +1,1979 @@
+{
+  "submission": {
+    "id": "f51dcafe-65d9-4993-a2b7-9230c0e270b8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:31:53.104654Z",
+    "updated_at": "2025-12-03T17:31:53.104654Z"
+  },
+  "content": [
+    {
+      "id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "submission_id": "f51dcafe-65d9-4993-a2b7-9230c0e270b8",
+      "content_type": "manuscript",
+      "content_text": "# High-throughput proteomics of nanogram-scale samples with Zeno SWATH MS\n\n## Authors\n\n- Ziyue Wang<sup>1</sup> ([ORCID: 0000-0002-4121-4799](https://orcid.org/0000-0002-4121-4799))\n- Michael M\u00fclleder<sup>2</sup> ([ORCID: 0000-0001-9792-3861](https://orcid.org/0000-0001-9792-3861))\n- Ihor Batruch<sup>3</sup>\n- Anjali Chelur<sup>3</sup>\n- Kathrin Textoris-Taube<sup>1</sup>\n- Torsten Schwecke<sup>1</sup> ([ORCID: 0000-0002-9439-3508](https://orcid.org/0000-0002-9439-3508))\n- Johannes Hartl<sup>1</sup> ([ORCID: 0000-0001-8470-5355](https://orcid.org/0000-0001-8470-5355))\n- Jason Causon<sup>3</sup> ([ORCID: 0000-0003-2760-8115](https://orcid.org/0000-0003-2760-8115))\n- Jose Castro-Perez<sup>3</sup>\n- Vadim Demichev<sup>1</sup>\n- Stephen Tate<sup>3</sup> ([ORCID: 0000-0001-5508-0819](https://orcid.org/0000-0001-5508-0819))\n- Markus Ralser<sup>1</sup> ([ORCID: 0000-0001-9535-7413](https://orcid.org/0000-0001-9535-7413)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n2. Core Facility \u2013 High-Throughput Mass Spectrometry, Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Core Facility \u2013 High-Throughput Mass Spectrometry Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n3. Sciex Concord Canada ([ROR:037mh3841](https://ror.org/037mh3841))\n4. The Wellcome Centre for Human Genetics, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe possibility to record proteomes in high throughput and at high quality has opened new avenues for biomedical research, drug discovery, systems biology, and clinical translation. However, high-throughput proteomic experiments often require high sample amounts and can be less sensitive compared to conventional proteomic experiments. Here, we introduce and benchmark Zeno SWATH MS, a data-independent acquisition technique that employs a linear ion trap pulsing (Zeno trap pulsing) to increase the sensitivity in high-throughput proteomic experiments. We demonstrate that when combined with fast micro- or analytical flow-rate chromatography, Zeno SWATH MS increases protein identification with low sample amounts. For instance, using 20 min micro-flow-rate chromatography, Zeno SWATH MS identified more than 5000 proteins consistently, and with a coefficient of variation of 6%, from a 62.5 ng load of human cell line tryptic digest. Using 5 min analytical flow-rate chromatography (800 \u00b5l/min), Zeno SWATH MS identified 4907 proteins from a triplicate injection of 2 \u00b5g of a human cell lysate, or more than 3000 proteins from a 250 ng tryptic digest. Zeno SWATH MS hence facilitates sensitive high-throughput proteomic experiments with low sample amounts, mitigating the current bottlenecks of high-throughput proteomics.\n\n## Introduction\n\nThe proteome consists of large numbers of proteins that differ in concentration, distribution, and temporal dynamics (Eriksson and Feny\u00f6, 2007; Hixson et al., 2017). The study of the proteome hence requires the ability to address both its large dynamic range and complexity, as well as the dynamic nature of biological systems. While proteomics typically aims to quantify as many proteins as possible, many of the biological questions that are to be addressed also necessitate the processing of large sample series. For example, a minimal drug treatment experiment of a wild-type and a single mutant cell line, with five drug concentrations, five time points, and triplicate measurements, already produces 150 samples. Epidemiological studies, exemplified by the Fenland study (O\u2019Connor et al., 2015), can reach tens of thousands of samples. Processing such high sample amounts requires fast and robust measurement technologies that are quantification precise and cost effective.\n\nIn bottom-up proteomics, data-dependent acquisition (DDA) selects precursors from full-scan MS1 mass spectrum for fragmentation, generating tandem (MS/MS or MS2) mass spectra that can be matched to spectra in a database. While DDA ensures selectivity, it can result in high numbers of missing values that can originate from, for example, the stochastic nature of precursors selected for fragmentation, which limits the application in high-throughput studies. Data-independent acquisition (DIA) techniques such as SWATH acquisition (Gillet et al., 2012) address this problem by generating fragment ion spectra from all precursor ions that fall within a predefined precursor m/z range window. DIA shifted the data-processing strategies from an established spectrum-centric processing model to a peptide-centric model, requiring a shift in algorithm design and assumptions. DIA methods have facilitated applications in large-scale proteomics, including systems biology studies in various model organisms, disease states, and species (Hou et al., 2015; Gao et al., 2017; Basak et al., 2015; Zelezniak et al., 2018; Grobbler et al., 2015; Gillet et al., 2012), with one of the most common clinical applications being the discovery of (compound) biomarkers for disease in body fluids, particularly blood serum or plasma (Anjo et al., 2017; Gajbhiye et al., 2016; Russell et al., 2016; Hou et al., 2015; Pires et al., 2016).\n\nThroughput, the required measurement precision, and sample amount are major factors that need to be balanced when conducting large-scale proteomics measurements. Moreover, particular attention has to be given to batch effects that exist within large proteomic experiments. Proteomics has historically relied on nano-flow chromatography, which is highly sensitive as sample dilution is minimal (Muntel et al., 2019), but the low flow rate requires a longer gradient time, which is more susceptible to technical distortions. Moreover, columns compatible with nano-LC systems typically require exchange after a maximum of a few hundred injections, which together prolongs the acquisition time and leads to complex batch effects in larger studies. Recent advances in instrumentation and software have facilitated the use of faster gradients and higher chromatographic flow rates (Messner et al., 2020; Bian et al., 2020; Vowinckel et al., 2018). These accelerate proteomic experiments and allow highly precise measurements. These come, however, at the cost of a higher sample amount required and can yield lower proteomic depth.\n\nHere, we present a new acquisition technique, Zeno SWATH MS, that exploits a linear ion trap, the Zeno trap (Loboda and Chernushevich, 2009), in combination with SWATH MS acquisition, in order to increase the sensitivity of DIA-MS acquisition, specifically in combination with micro-flow-rate and analytical flow-rate chromatography. We demonstrate that Zeno SWATH MS increases sensitivity and expands the proteomic dynamic range coverage, generating new possibilities in the design of high-throughput proteomic experiments.\n\n## Results\n\n### Zeno SWATH MS increases proteomic depth and quantification precision\n\nThe sensitivity of SWATH MS in time-of-flight (TOF) mass spectrometers is largely determined by the MS/MS duty cycle. The pulse in the TOF accelerator, which results in a small proportion of ions situated at the right position of entering TOF, has a disproportionate impact on lower-m/z ions, resulting in a duty cycle of TOFs of only 5\u201325%. Here, we describe a setup of the Zeno trap (Loboda and Chernushevich, 2009; Figure 1\u2014figure supplement 1), where all fragment ions are trapped in an axial pseudopotential well and then released by potential energy with timing aligned to the next pulse at the accelerator, allowing a duty cycle increase, thus increasing intensity 4\u201320 times (Baba et al., 2021). We speculated that the Zeno trap could be employed in combination with SWATH MS to boost the MS/MS sensitivity, facilitating higher identification and quantification performance while requiring lower sample amounts.\n\nTo generate platforms for medium- and high-throughput proteomic experiments, we coupled a ZenoTOF 7600 system (SCIEX) equipped with a Zeno trap (Figure 1\u2014figure supplement 1) to both a micro-flow LC system (ACQUITY M-Class, Waters) and an analytical flow-rate LC (1290 Infinity II, Agilent), respectively. For data processing, we applied our deep-neural-network-based software suite, DIA-NN, which has been specifically optimised for handling complex data arising from fast chromatographic methods (Demichev et al., 2020).\n\nFirst, we examined how consistently precursor (i.e. peptide at a specific charge state) and protein intensities were measured between triplicate injections of 62.5 ng K562 human cell line standard, comparing the performance of Zeno SWATH MS with SWATH MS on the same instrument setup. Peptides were separated using the micro-flow LC running at a flow rate of 5 \u00b5l/min, 20 min micro-flow gradient chromatography (Materials and methods). For analysis, we used an experimental spectral library generated using the ZenoTOF 7600 system (Materials and methods). Zeno SWATH MS yielded 5179 consistently quantified proteins among an average of 6226 proteins identified in triplicates. These were quantified with a median coefficient of variance (CV) of 6%, and 89% of identifications or 4602 shared proteins were quantified with a CV better than 20% (Figure 1a). At the precursor level, on average 49,172 precursors were identified, of which 40,209 were repeatedly quantified. Of these, 77% were quantified with a CV of less than 20% (Figure 1b). Zeno SWATH MS showed a considerable improvement in quantification consistency compared to conventional SWATH MS using the same chromatography, mass spectrometry, and sample. SWATH MS consistently quantified 2743 proteins, of which 76% or 2083 proteins were quantified with a CV <20% (Figure 1a). At the precursor level, SWATH identified an average of 21,771 precursors in triplicate injections, of which 16,022 were consistently quantified, with a median CV of 11%.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83947/elife-83947-fig1-v1.jpg)\n\n**Figure 1.:** (a,b) Reproducibility of protein identification using SWATH MS and Zeno SWATH MS on human cell line standard (K562) separated by micro-flow chromatography with a 62.5 ng load. Average identification numbers of proteins (a) and precursors (b) across three technical replicates (grey background bar) from a human cell line (K562) proteome tryptic digest are given; numbers of consistent identifications in technical replicates are given in dark grey; proteins or precursors quantified with coefficient of variation (CV) better than 20% in grey, and those quantified with a CV better than 10% in light grey. (c) Protein-level LFQbench results for Zeno SWATH MS. Quantification precision was benchmarked using yeast proteome tryptic digests that were spiked in two different proportions (A and B, three repeat injections each) into human cell line standard (K562) (A: 30 ng K562 + 35 ng yeast; B: 30 ng K562 + 17.5 ng yeast). Raw data were processed by library-free mode DIA-NN analysis. Protein ratios between the mixtures were visualised using the LFQbench R package (Navarro et al., 2016). Black dashed lines represent the expected log2(A/B) values for human (=0) and yeast (=1). Left pane, log-transformed ratios (log2(A/B)) of proteins plotted for DIA-NN over the log-transformed intensity of sample B. Right pane, protein quantification performance shown as box plots (boxes, interquartile range; whiskers, 1\u201399 percentile; n=3414 [human] and n=1816 [yeast]). (d) Average protein quantity differences between mixture A and B. Compared to SWATH MS, Zeno SWATH MS shows an improved separation of the two-species proteomes and more accurately represents the real ratio of the precursors (log2 of human quantity ratio close to 0, while log2 of yeast quantity ratio close to 1). (e) Correlation of protein quantities between both MS schemes in different mixtures. Human and yeast protein quantities in both mixtures show a high correlation between methods. (f) Distribution of protein quantities of each species in each mixture (A and B). In both mixtures and both species, Zeno SWATH MS shows deeper proteomic coverage by quantifying more low-abundant proteins.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83947/elife-83947-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Expanded view of the Zeno trap \u2013 a linear ion trap introduced after the collision cell (Q2). When enabled, all fragment ions in the selected mass range are trapped in an axial pseudopotential well created by an additional RF (\u2018AC\u2019) voltage applied with the same amplitude and phase to all four rods of the trap in a required focal point. The release of ions from this trap is by potential energy with timing aligned to the next pulse at the accelerator.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/83947/elife-83947-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Protein-level LFQbench results for SWATH MS. (b) Precursor-level LFQbench results for SWATH MS. (c) Precursor-level LFQbench results for Zeno SWATH MS upon the separation of 1 \u00b5l injection of mixtures (A: 30 ng K562 + 35 ng yeast; B: 30 ng K562 + 17.5 ng yeast). (d) Protein-level LFQbench results for SWATH MS without normalisation (PG.Quantity was used). (e) Protein-level LFQbench results for Zeno SWATH MS without normalisation (PG.Quantity was used). (f) Protein-level LFQbench with a 50% lower amount (0.5 \u00b5l injection of mixtures [A: 30 ng K562 + 35 ng yeast; B: 30 ng K562 + 17.5 ng yeast]) results for SWATH MS. (g) Protein-level LFQbench with a 50% lower amount results for Zeno SWATH MS.\n\nThe analysis of proteomes of different species mixed in different ratios, as introduced with the LFQbench test (Navarro et al., 2016; Kuharev et al., 2015), has proven an efficient way for evaluating the capabilities of DIA workflows and data-processing software (Demichev et al., 2020; Bruderer et al., 2015). The multiple-species benchmarks evaluate both the identification and quantification precision, which is determined by the ability of the proteomic method to deconvolute the multiplexed proteomes. Herein, we assessed how well the known ratios between two-species lysates \u2013 human and yeast lysates mixed in the defined proportions: 1:1 (A/B) for human, 2:1 for yeast (Materials and methods) \u2013 were recovered in triplicates using SWATH MS and Zeno SWATH MS, followed by a library-free analysis in DIA-NN. We injected triplicates of 1 \u00b5l of both mixtures (65 ng [mixture A] and 47.5 ng [mixture B]) with micro-flow-rate chromatography. Compared with SWATH MS, Zeno SWATH MS revealed more precursors and proteins quantified at better quantification precision. At the precursor level, Zeno SWATH MS quantified 34,872 human and 15,610 yeast precursors, while SWATH quantified 16,167 human and 6847 yeast precursors (SWATH MS, Figure 1\u2014figure supplement 2b; Zeno SWATH MS, Figure 1\u2014figure supplement 2c). At the protein level, 3414 (human) and 1816 (yeast) proteins were quantified with Zeno SWATH MS, while 2064 human and 973 yeast proteins were quantified using SWATH MS. Further, 3282 human and 1692 yeast proteins were quantified with Zeno SWATH MS, showing a ratio close to the known ratio (1:1 (A/B) for human, 2:1 for yeast) in at least two replicates in each of mixture A and B, with a median CV value for human proteins measured in triplicates of mixture A and B of 6.9% and 7%, respectively. The human proteins measured with SWATH MS show a median CV value of 12.7% and 12.6% for triplicate mixture A and B, with 1741 human and 776 yeast proteins quantification close to the known ratio (Zeno SWATH MS, Figure 1c; SWATH, Figure 1\u2014figure supplement 2a). To exclude the bias introduced by data normalisation, we also compared the non-normalised data in both acquisition methods (SWATH MS, Figure 1\u2014figure supplement 2d; Zeno SWATH MS, Figure 1\u2014figure supplement 2e).\n\nIn order to account for the protein amount\u2019s effect on performance of the two-species benchmarks, we conducted a similar analysis with a 50% lower injection amount. Compared with SWATH MS, 118% more human and 133% more yeast proteins were quantified in Zeno SWATH MS with 0.5 \u00b5l injection; while 65% more human and 86% more yeast proteins quantified in Zeno SWATH MS were quantified with 1 \u00b5l injection (SWATH MS, Figure 1\u2014figure supplement 2f; Zeno SWATH MS, Figure 1\u2014figure supplement 2g). Moreover, when comparing the ratio of human and yeast proteome quantified in both mixtures (log2(A/B)), Zeno SWATH MS shows less inter-species interference and is able to represent the real quantification ratio in both species more accurately (log2(A/B)=0 (human), = 1 (yeast)) (Figure 1d).\n\nWe speculated that the more accurate quantification ratio provided by Zeno SWATH MS comes from the better identification and more accurate quantification of the lower-abundant proteins. We therefore correlated the human and yeast proteomes shared in both acquisition methods (scatter plot, Figure 1e). For both species, the quantification results from SWATH MS and Zeno SWATH MS are in very good agreement for high-abundant proteins, but diverge for low-abundant ones. Then, we compared the protein quantities of SWATH MS and Zeno SWATH MS in both species (density plot, Figure 1f). In both species, Zeno SWATH MS performs better in quantifying the lower-abundant proteins.\n\n### Zeno SWATH MS increases protein identification rate with low sample amounts\n\nNext, we tested the sensitivity of Zeno SWATH MS by analysing a concentration series of the K562 human cell line standardusing both SWATH MS and Zeno SWATH MS. The concentration series was acquired starting with the lowest concentrations injected after several blank measurements with a 20 min, 5 \u00b5l/min chromatographic gradient (Materials and methods), covering sample amounts ranging from near 1 to 500 ng (Materials and methods). For a comparison of MS systems, a similar concentration series was acquired using SWATH MS on a TripleTOF 6600 system (SCIEX) with the same 5 \u00b5l/min, 20 min chromatography setup (Materials and methods). To avoid the potential bias that system-specific experimental spectral libraries have on data from different MS systems, the benchmark was carried out using library-free data analysis.\n\nZeno SWATH MS consistently yielded better quantification performance. For instance, from the 62.5 ng K562 human cell line standard, 16,915 precursors or 2886 proteins were identified using the TripleTOF 6600 system at a 1% false discovery rate (Figure 2a). Using SWATH MS on the 7600 instrument, these numbers increased to 29,697 precursors identified from three technical replicates and an average of 3724 proteins (Figure 2a; protein identification in Figure 2\u2014figure supplement 1a, first-pass precursor identification in Figure 2\u2014figure supplement 1b). With Zeno SWATH MS on the same 7600 setup, an average of 62,769 precursors, or 5206 proteins, were identified from triplicate injections of 62.5 ng of the K562 human cell line standard. Interpreting the data in a different way, Zeno SWATH MS identified a similar number of precursors and proteins from 62.5 ng of K562 human cell line standard as SWATH MS did from 500 ng of the same sample on the same instrument (SWATH identified 64,316 precursors or 5242 proteins from 500 ng) (Figure 2a). Normalised per gradient time, this means that up to 4636 precursors were detected per minute of active runtime in Zeno SWATH MS, whereas SWATH from the ZenoTOF 7600 system quantified 2874 precursors/min and SWATH from the TripleTOF 6600 system reached 1153 precursors/min (Figure 2b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83947/elife-83947-fig2-v1.jpg)\n\n**Figure 2.:** (a) Precursor identification performance using SWATH and Zeno SWATH. Illustrated is the average number of precursors identified (n=3, error bars [\u00b11 SD] shown in plot) for a K562 standard dilution series under three acquisition methods with library-free DIA-NN analysis (second-pass data). (b) Visualisation of precursor identification across gradient time with SWATH and Zeno SWATH MS of 62.5 ng K562 standard injection. (c) Histogram (bins = 50) of the protein abundance distribution represented as copy number in log10 scale of a human proteomic reference dataset (Bekker-Jensen et al., 2017). Zeno SWATH MS increases protein identification numbers by quantifying more low-abundant proteins. (d) Correlation of protein quantity between SWATH and Zeno SWATH MS. Illustrated is the correlation of protein quantity between two MS acquisition schemes; 3671 proteins. proteins were identified and quantified in both acquisition schemes, 19 proteins only quantified with SWATH MS, 1535 proteins quantified only by Zeno SWATH MS. Among the 3671 proteins quantified by both acquisition schemes, there is a high correlation of protein quantities between the proteins identified in both acquisition schemes (r2=0.93.).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83947/elife-83947-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Protein identification performance using SWATH and Zeno SWATH MS. Illustrated is the average number of proteins identified (n=3, error bars [\u00b11 SD]) for a K562 human cell line standard dilution series under three acquisition methods with library-free DIA-NN analysis (second-pass data). (b) Precursor identification performance using SWATH and Zeno SWATH MS. Illustrated is the average number of precursors identified (n=3, error bars [\u00b11 SD] shown in plot) for a K562 human cell line standard dilution series under three acquisition methods with library-free DIA-NN analysis (first-pass data).\n\nWe speculated that the identification gains could be contributed by the better identification of low-abundant proteins by Zeno SWATH MS. We therefore assessed the proteome concentration dynamic range of the proteins covered by comparing our K562 human cell line standard results to a proteomic reference dataset with copy-number estimates for 14,178 human protein groups (Bekker-Jensen et al., 2017). SWATH MS on the 7600 system (3690 protein groups quantified) showed a larger protein concentration dynamic range coverage compared to the TripleTOF 6600 system (2881 protein groups quantified). Zeno SWATH MS increased the number of proteins identified (5206 protein groups quantified). Comparison with the standard dataset revealed that the gains are due to more low-abundant proteins quantified (Figure 2c). Also here, we report a high agreement of protein quantities between methods overall (r2=0.93), and in particular among high-abundant proteins (Figure 2d).\n\n### Zeno SWATH MS facilitates high-throughput analytical flow-rate proteomics with low sample amounts\n\nBecause of its high analytical performance and stability in combination with short chromatographic gradients, analytical flow-rate chromatography is a method of choice for large-scale projects and in diagnostic laboratories. Analytical flow-rate chromatography is also attractive for practical reasons, because columns equilibrate quickly, and the problem of dead volumes and sample carryover is substantially reduced. In our recent studies, we reduced the time between injections to 3 min or less (Messner et al., 2021). Specifically, for applications such as neat-plasma proteomics or drug screens, we have previously demonstrated proteomic experiments using flow rates of 800 \u00b5l/min, and obtained quantification of precise proteomes with gradient times that ranged from 30 s to 5 min (Messner et al., 2020; Messner et al., 2021). Consequently, even with the slowest of these gradients \u2013 5 min of active separation \u2013 the throughput of a proteomics study is increased to 180 samples per day on a single instrument. The downside so far is a reliance on relatively large sample amounts, which restricts the application space and shortens the instrument cleaning cycles. We therefore examined whether Zeno SWATH MS\u2019s performance would allow us to conduct proteomic experiments with analytical flow-rate chromatography and lower sample amounts.\n\nWe used the ZenoTOF system coupled to the 1290 Infinity II HPLC system (Agilent), running at 800 \u00b5l/min, with a 5 min gradient chromatography. We analysed the K562 human cell line standard in a concentration series, injecting increasing amounts from 4 ng to 2 \u00b5g. The obtained raw data were analysed using a spectral library. On average, Zeno SWATH MS identified 29,681 precursors and 4907 proteins with a 2 \u00b5g load of sample on the column, whereas SWATH MS identified 17,212 precursors or 3250 proteins with the same amount of sample (protein data shown in Figure 3a, respective precursor data in Figure 3\u2014figure supplement 1a). Importantly, with Zeno SWATH MS, proteomic depth was reached with analytical flow-rate chromatography even with low sample amounts. For instance, with 250 ng of K562 human cell line standard injected, around 3000 proteins were quantified with Zeno SWATH MS while a similar protein quantification number can only be reached by SWATH MS with 2 \u00b5g injection on the same instrument and chromatography (Figure 3a). Further, the stability of the analytical flow-rate LC system was reflected in the consistency of the quantification and yielded a median protein quantification CV of 6%. Expressed differently, 92% of the proteins were consistently identified with a CV <20% (Figure 3b, respective precursor data in Figure 3\u2014figure supplement 1b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83947/elife-83947-fig3-v1.jpg)\n\n**Figure 3.:** (a) Comparison of sample injection amount and identification performance with SWATH and Zeno SWATH MS. Illustrated is the average number of proteins identified (n=3, error bars [\u00b11 SD] shown in plot) for a K562 human cell line standard dilution series under two acquisition methods with spectral library DIA-NN analysis. (b) Reproducibility of proteins quantified in SWATH and Zeno SWATH MS on 2 \u00b5g of K562 human cell line standard separated by analytical flow-rate chromatography. Average protein identification number in three replicates (background), number of proteins identified in all replicates (dark grey), proteins with coefficient of variation below 20% (grey) and below 10% (light grey) of SWATH and Zeno SWATH MS. Raw data were analysed by spectral library-based DIA-NN analysis.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83947/elife-83947-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Comparison of sample injection amount and precursor identification performance with SWATH and Zeno SWATH MS. Illustrated is the average number of precursors identified (n=3, error bars [\u00b11 SD] shown in plot) for a K562 human cell line standard dilution series under two acquisition methods with spectral library DIA-NN analysis. (b) Reproducibility of precursors quantified in SWATH and Zeno SWATH MS on 2 \u00b5g of K562 human cell line standard separated by analytical flow-rate chromatography. Average precursor identification number in three replicates (background), number of precursors identified in all replicates (dark grey), precursors with coefficient of variation below 20% (grey) and below 10% (light grey) of SWATH and Zeno SWATH MS. Raw data were analysed by spectral library-based DIA-NN analysis.\n\n### Evaluation of Zeno SWATH MS on plasma, plant, fungal, and bacterial samples\n\nA key application space for high-throughput proteomics is human plasma and serum proteomics, as well as systems and synthetic biology. Plasma, bacterial, plant, and fungal sample matrices differ, however, in dynamic range and proteomic complexity from a human cell line extract such as the K562 human cell line standard. For instance, in human plasma, 99.9% of the proteomic mass is attributable to less than 200 proteins (Anderson and Anderson, 2002), while a yeast proteome coverage saturates at around 4000 proteins even with prefractionation (Thakur et al., 2011). To assess the performance of Zeno SWATH MS on various matrices, we hence assayed a concentration series (1\u2013500 ng) of human plasma as well as cell extracts from the yeast Saccharomyces cerevisiae, the bacterium Escherichia coli, and seedlings of chickpea (Cicer arietinum). The standards and samples generated were separated using 20 min micro-flow-rate chromatography (Materials and methods) and acquired with both Zeno SWATH MS and SWATH MS.\n\nIn non-depleted human plasma, Zeno SWATH MS identified 3957 precursors derived from 204 proteins with a 62.5 ng injection. In human neat plasma, Zeno SWATH MS identified 3947 precursors from 245 proteins, while with SWATH MS, 2516 precursors from 156 proteins were identified from the same amount of sample. Notably, 15 ng of sample was sufficient to quantify the dominating fraction of the plasma proteome (160 proteins) (Figure 4). Zeno SWATH MS could hence be applied to high-throughput plasma samples where sample amounts are limited, for instance to make proteomics applicable for analysing finger-prick samples or in combination with nano-sampling devices.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83947/elife-83947-fig4-v1.jpg)\n\n**Figure 4.:** We generated tryptic digests from human plasma, and protein extracts from the yeast Saccharomyces cerevisiae S228c, the Escherichia coli lab strain K-12, and chickpea (Cicer arietinum) seedlings germinated in the lab. Data were processed with library-free DIA-NN analysis. Shown data are the identification numbers of and concentration, detailed information of numbers can be found in Supplementary file 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83947/elife-83947-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** We generated tryptic digests from human plasma, and protein extracts from the yeast Saccharomyces cerevisiae S288c, the Escherichia coli lab strain K-12, and chickpea (Cicer arietinum) seedlings germinated in the lab. Data were processed with library-free DIA-NN analysis. Shown data are the identification number of respective species and concentration, detailed information of numbers can be found in Supplementary file 1.\n\nS. cerevisiae is one of the dominating workhorses of biotechnology, a key model organism for basic research, closely related to important clinical pathogens such as Candida glabrata (Oliver, 2022), and a pathogen on its own right. In a S. cerevisiae protein extract tryptic digest, micro-flow-rate Zeno SWATH MS quantified 29,339 precursors from 2915 proteins from a 62.5 ng injection, compared to 1660 proteins quantified by SWATH on the same instrument setup. From an extract of E. coli, the dominating bacterial model organism, Zeno SWATH MS identified 24,880 precursors or 2131 proteins at a 62.5 ng load, whereas conventional SWATH acquired 16,139 and 1768 precursors and proteins, respectively. And finally, we identified 33,694 precursors and 3815 proteins in 62.5 ng of chickpea (C. arietinum) seedling extract, chosen as a representative sample for a plant proteome. In comparison, 500 ng of sample was needed to reach similar identification numbers (34,573 precursors, 3807 proteins) using SWATH acquisition on the plant proteome tryptic digest (an overview of achieved protein identification is shown in Figure 4; details for respective precursor identification are shown in Figure 4\u2014figure supplement 1; identification numbers for both proteins and precursors are shown in Supplementary file 1).\n\n## Discussion\n\nProteomic experiments can be limited by sample amount or instrument sensitivity. We and others have previously presented high-throughput proteomic experiments using micro-flow-rate (Vowinckel et al., 2018; Bian et al., 2020; Bruderer et al., 2019; Zelezniak et al., 2018) and analytical flow-rate chromatography (Messner et al., 2020; Messner et al., 2021). Specifically, the latter presents highly desirable properties to increase the throughput of proteomic experiments, for example, ease of use, the ability to run fast gradients, and high reproducibility. The disadvantage of higher flow rates is however the higher dilution, resulting in a requirement for higher sample amounts and, typically, a decrease in the proteomic depth. However, new acquisition techniques can mitigate these problems.\n\nThe fast acquisition speed required to conduct proteomic experiments with fast chromatography is often reached using TOF mass spectrometers. Nonetheless, in TOF instruments, all fragment ions are recorded in parallel (quasi-simultaneously), where the ions spread by m/z across the distance between the exit of the collision cell and the TOF accelerator. When the subsequent pulse is observed at the accelerator, only a small proportion of the total fragment ion population is situated at the right location to enter the TOF, leading to a proportion of ions not being able to be detected, thus limiting sensitivity. This disproportionately impacts low-m/z ions, with the duty cycle of TOFs falling in the range of only 5\u201325%, depending on concentration range and m/z. Because of this duty cycle deficiency, many ions (especially low-m/z ions) are not detected in low-abundance samples, resulting in TOF-MS/MS not fully realising its full sensitivity potential. A linear ion trap introduced after the collision cell (Q2) \u2013 the Zeno trap \u2013 can compensate for these limitations in TOF-MS/MS (Loboda and Chernushevich, 2009). When the Zeno trap is enabled, the fragment ions in the selected mass range are trapped in an axial pseudopotential well created by an additional RF (\u2018AC\u2019) voltage applied with the same amplitude and phase to all four rods of the trap in a required focal point. Subsequently, the release of the ions occurs by potential energy with timing aligned to the next pulse at the accelerator, enabling a >90% duty cycle, thus increasing intensity 4\u201320 times (Baba et al., 2021) without loss of mass accuracy and resolution (Figure 1\u2014figure supplement 1).\n\nTo use the Zeno trap technology in high-throughput proteomics, we have established and benchmarked a DIA method termed Zeno SWATH MS. To achieve this, we modified the instrument acquisition software on a Zeno TOF 7600 system that is equipped with the Zeno trap to be able to acquire data in DIA mode, coupled the system to different chromatographic systems, and optimised acquisition parameters. We then tested Zeno SWATH MS on tryptic digests generated of protein extracts derived from a human cell line standard (K562), human plasma, as well as from yeast cultures, E. coli cultures, and chickpea seedling samples. Furthermore, we benchmarked the method on two-species mixtures of yeast and human cell line standard samples. In all cases, we identified more precursors and proteins, and quantified those with higher precision using Zeno SWATH MS in comparison to SWATH MS on the same instrument, as well as its predecessor, the TripleTOF 6600. We show that gains mostly result from the better identification and quantification of low-abundant precursors. Moreover, we report that Zeno SWATH MS can generate deep proteomes from low sample amounts, even when used in conjunction with 800 \u00b5l/min analytical flow-rate chromatography. For instance, on most matrices, we quantified a similar number of precursors from 62.5 ng of tryptic digest using Zeno SWATH MS as from 500 ng of the same tryptic digest using SWATH MS. Lowering the sample dependency in high-throughput proteomics has at least three different applications: First, high-throughput proteomics can be extended to studies where only low amounts of material are available. Second, injecting lower amounts of samples decreases the cleaning cycles of mass spectrometers and increases their uptime. Third, injecting lower sample amounts allows one to reduce costs. Reassuringly, Zeno SWATH MS improves both the number of proteins identified and quantification precision in all chromatographic methods tested. To this end, further applications of Zeno SWATH MS remain to be explored. For instance, our benchmark experiments were acquired with a ZenoTOF 7600 system running SCIEX OS 2.1.6, with an ionisation threshold for Zeno SWATH MS to prevent detector damage (\u2018ion striking\u2019) caused by excessive ions hitting the detector at the same time. This detector protection procedure limits the maximum injection amount in our benchmark to 62.5 ng, preventing us from testing the effect of high amounts of sample on the MS system. The ionization threshold (which limited the load to 62.5 ng) was experimental in nature at the time performing experiments, however, further re-optimizations to this threshold occurred enabling higher loads with Zeno SWATH MS with newer releases of SCIEX OS.\n\nBeyond the here investigated application of Zeno SWATH MS for medium-to-high flow-rate chromatography or high-throughput proteomics, the gain in sensitivity and expansion of proteomics coverage can be useful for a range of other applications. For instance, when coupled with nano-flow chromatography systems, the sensitive Zeno SWATH MS might benefit the field of single-cell proteomics. Moreover, further improvements in sensitivity in high-throughput proteomics are still possible in the future. For instance, our lab has previously introduced a scanning SWATH acquisition technique that significantly increased the identification rate of proteins using the TripleTOF 6600 system (SCIEX), particularly in ultra-fast proteomic experiments (Messner et al., 2021). Scanning SWATH combines the benefits of data-dependent and data-independent techniques by employing a \u2018sliding\u2019 quadrupole (Q1) to assign precursor masses to MS/MS traces, allowing for a faster Q1 scan than stepwise SWATH acquisition. A combination of the Zeno trapping technology with scanning SWATH is technically possible and might result in further gains in the sensitive analysis of proteomes at high throughput.\n\n## Materials and methods\n\n### Materials and reagents\n\nWater was from Merck (LiChrosolv LC-MS grade; Cat# 115333), acetonitrile was from Biosolve (LC-MS grade; Cat# 012078), 1,4-dithiothreitol (DTT; Cat# 6908.2) from Carl Roth, iodoacetamide (IAA; Bioultra; Cat# I1149) and urea (puriss. P.a., reag. Ph. Eur.; Cat# 33247) were from Sigma-Aldrich, ABC (Eluent additive for LC-MS; Cat# 40867), formic acid (LC-MS Grade; Eluent additive for LC-MS; Cat# 85178) was from Thermo Fisher Scientific, trypsin (sequence grade; Cat# V511X), K562 human cell line standard (K562, Mass Spec-Compatible Human Protein Extracts, Cat# V6951), this commercially available cell line is Homo sapiens origin, the identity has been authenticated, and tested by Promega, RRID: CVCL_0004. Digested yeast protein extract (Mass Spec-Compatible Yeast Protein Extracts, Cat# V7461) were from Promega, commercial human plasma samples (Human Source Plasma, LOT# 20CILP1034) were from ZenBio.\n\n### Sample preparation\n\nK562 human cell line standard (Promega, #V6951) and yeast tryptic digest (Promega, #V7461) stock samples were prepared via reconstitution of the powder form of the product using 200 \u00b5l of reconstitution buffer (1% ACN, 0.1% formic acid in LC grade water) and aliquoted into 4\u00d750 \u00b5l stock samples, stored at \u201380\u00b0C and defrosted before sample preparation.\n\nPlasma stock samples were prepared as follows: 5 \u00b5l of commercially available plasma sample was added to 55 \u00b5l of denaturation buffer (50 \u00b5l of 8 M urea, 100 mM ammonium bicarbonate [ABC], 5 \u00b5l of 50 mM DTT). The samples were incubated for 1 hr at room temperature before the addition of 5 \u00b5l of 100 mM IAA. After a 30 min incubation at room temperature in the dark, the samples were diluted with 340 \u00b5l of 100 mM ABC and digested overnight with 22.5 \u00b5l of 0.1 \u00b5g/\u00b5l trypsin at 37\u00b0C. The digestion was quenched by adding 50 \u00b5l of 10% formic acid. The resulting tryptic peptides were purified on a 96-well C18-based solid-phase extraction (SPE) plate (BioPureSPE Macro 96-well, 100 mg PROTO C18, The Nest Group). The purified samples were resuspended in 120 \u00b5l of 0.1% formic acid.\n\nE. coli samples were prepared from 1010 cells, thawed in 200 \u00b5l lysis buffer (7 M urea, 0.1 M ABC, 2 mM MgCl2, 0.125 U benzonase). The cell pellets were disrupted using a GenoGrinder in the presence of 100 mg of 0.1 mm ceramic beads. The lysate was incubated at 37\u00b0C for 15 min to ensure optimal benzonase activity. The supernatant was clarified by centrifugation at 4\u00b0C, 20,000 \u00d7 g for 15 min.\n\nFollowing addition of DTT to a final concentration of 5 mM, the samples were incubated for 90 min at room temperature before the addition of IAA to a final concentration of 10 mM. After 30 min incubation at room temperature in the dark, the samples were diluted fivefold with 100 mM ABC and digested overnight with 0.1 \u00b5g/\u00b5l trypsin at 37\u00b0C. The digestion was quenched by adding formic acid to a final concentration of 1%. The resulting tryptic peptides were purified using C18-based (AttractSPE, Affinisep) stage tips as described by Rappsilber et al., 2007, and dried before resuspension in 0.1% formic acid.\n\nChickpea seedling sample preparation was performed essentially as described by Wang et al., 2006. Briefly, 500 mg of chickpea seedlings, created by the germination of chickpeas in the lab, were pulverised in liquid nitrogen. The powder was washed with trichloroacetic acid/acetone, methanol, and acetone at 4\u00b0C. After removal of acetone, the pellet was dried at 50\u00b0C for 20 min, the protein was subjected to phenol extraction and precipitated by the addition of ice-cold 0.1 M ammonium acetate in 80% methanol. The resulting pellet was washed once with ice-cold methanol and once with ice-cold 80% acetone, then air-dried. The protein pellet was dissolved in 8 M urea, 100 mM Tris, pH 8.0. Following dilution to 2 M urea, the protein was reduced with 2 mM DTT for 30 min at room temperature and alkylated for 30 min with 15 mM chloroacetamide. The sample was then digested overnight with LysC and trypsin. The resulting peptides were filtered through a 30 kDa MWCO centrifugal filter and further purified by C18 stage tips as described above.\n\n#### LFQbench hybrid samples\n\nTo generate the hybridisation of different species samples, tryptic peptides were combined as previously published (Navarro et al., 2016; Meier et al., 2020), featuring similar benchmarks justified to the maximum injectable amount of MS system to avoid ion striking, the sample mixtures were in the following ratios: MIX A was composed of 30 ng/\u00b5l of K562 human cell line standard and 35 ng/\u00b5l yeast tryptic digest; MIX B was composed of 30 ng/\u00b5l of K562 human cell line standard and 17.5 ng/\u00b5l yeast tryptic digests.\n\n### Instrumentation\n\nAll ZenoTOF 7600 system-related methods were developed on research instruments in which an ionisation threshold for Zeno SWATH MS was introduced to prevent detector damage caused by too many ions hitting the detector at the same time (\u2018ion striking\u2019). SWATH window size and accumulation time were optimised and chosen to avoid ion striking while maintaining adequate precursor and protein identification numbers. The ionisation threshold has re-optimised and allow higher loads with Zeno SWATH MS with a new release of SCIEX OS.\n\nTo eliminate the potential for unreliable results due to low sample amount, before all the dilution series is acquired (as described below), we first injected replicates of blanks (50/50 v/v ACN/H2O) to exclude the identification numbers that are explained by carryover, then started with the highest dilution (lowest concentration) and performed triplicate injections to prove similar results among replicates.\n\n### ZenoTOF 7600\n\n#### Micro-flow-rate system\n\nK562 human cell line standard dilution series and all sample species were acquired on an ACQUITY UPLC M-Class system (Waters) coupled to a ZenoTOF 7600 mass spectrometer with an Optiflow source (SCIEX). Prior to MS analysis, samples were chromatographically separated with a 20 min gradient (time, % of mobile phase B: 0 min, 3%; 0.86 min, 7.1%; 2.42 min, 11.2%; 5.53 min 15.3%; 9.38 min, 19.4%; 13.02 min, 23.6%; 15.48 min, 27.7%;17.27 min, 31.8%; 19 min, 40%; 20 min, 80% followed by re-equilibration for 10 min before the next injection; Supplementary file 2) on HSS T3 column (300 \u00b5m\u00d7150 mm, 1.8 \u00b5m, Waters) heated to 35\u00b0C, using a flow rate of 5 \u00b5l/min (Zelezniak et al., 2018) where mobile phases A and B are 0.1% formic acid in water and 0.1% formic acid in ACN, respectively. To compensate for injection volume variance, 1 \u00b5l of each dilution series sample or mixture sample was loaded prior to samples entering the MS. A SWATH acquisition scheme with 60 variable-size windows covering a precursor mass range of 400\u2013900 m/z (Supplementary file 2) and 11 ms accumulation time was used. A Zeno SWATH acquisition scheme with 85 variable-size windows and 11 ms accumulation time was used (Supplementary file 2). For both methods, ion source gas 1 and 2 were set to 12 and 60 psi, respectively; curtain gas to 25, CAD gas to 7, and source temperature to 150\u00b0C; spray voltage was set to 4500 V. (Unique precursor and protein identification via different windows in 100 ng K562 human cell line standard injection with various SWATH acquisition schemes are shown in Figure 5, showing very little difference in identification performance with window number of 60 or 85.)\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83947/elife-83947-fig5-v1.jpg)\n\n**Figure 5.:** For the 40 variable window SWATH acquisition scheme, 26,115 precursors from 3904 proteins were identified; the 60 variable window SWATH acquisition scheme identified 25,884 precursors from 4025 proteins; and the 85 variable window SWATH acquisition scheme identified 25,945 precursors from 3995 proteins.\n\n#### Analytical flow-rate system\n\nStandards and samples were acquired on an 1290 Infinity II UHPLC system (Agilent) coupled to a ZenoTOF 7600 mass spectrometer with a DuoSpray TurboV source (SCIEX). Prior to MS analysis, samples were chromatographically separated on an Agilent InfinityLab Poroshell 120 EC-C18 1.9 \u00b5m, 2.1 mm \u00d7 50 mm column heated to 30\u00b0C. A 5 min 0.8 ml/min flow rate of linear-gradient ramping from 3% ACN/0.1% formic acid to 40% ACN/0.1% formic acid was applied (Messner et al., 2021). 1 \u00b5l of each dilution series sample was loaded prior to samples entering MS. A SWATH acquisition scheme with 60 variable-size windows and 11 ms accumulation time was used (Supplementary file 2). The Zeno SWATH MS has the same 60 windows as the SWATH MS and 13 ms accumulation time. For both acquisition methods, ion source gas 1 (nebuliser gas), ion source gas 2 (heater gas), and curtain gas were set to 60, 65, and 55 psi, respectively; CAD gas was set to 7, source temperature to 700\u00b0C, and spray voltage to 3500 V.\n\n### TripleTOF 6600\n\nMicro-flow system: For inter-platform comparison, K562 human cell line standard dilution series were also acquired on a nanoAcquity UPLC System (Waters) coupled to a SCIEX TripleTOF 6600 mass spectrometer. The peptides were separated with the same 20 min gradient on a Waters HSS T3 column (300 \u00b5m\u00d7150 mm, 1.8 \u00b5m) using a flow rate of 5 \u00b5l/min. The SWATH MS/MS acquisition scheme was used as described previously (40 variable-size windows and 35 ms accumulation time; Zelezniak et al., 2018).\n\n### Spectral libraries\n\nThe library for high-flow benchmarks using the K562 human cell line standard was generated from high pH reverse-phase fractionation of commercial K562 human cell line standard and HeLa (Thermo Fisher Scientific, #88329) digests. Individual pH fractions from each cell line were analysed with a ZenoTOF 7600 in IDA/DDA mode in-line with a Waters M-Class HPLC and searched with a ProteinPilot application within the OneOmics suite against a human Swiss-Prot canonical and isoform FASTA file (July 2020). The ProteinPilot results from each fraction were then merged using the Extractor application in the OneOmics suite to build a spectral library for further processing of DIA results.\n\nFor the analysis of plasma samples, a public spectral library (Bruderer et al., 2019) was used.\n\n### Data processing and analysis\n\nAll raw data from ZenoTOF 7600 system were acquired by SCIEX OS (v2.1.6) (note that SCIEX OS 3.0, which supports Zeno SWATH MS, is the commercial software available on the market), processed with DIA-NN (v1.8 beta 20) (Demichev et al., 2020) using mass accuracy of 20 and 12 ppm at the MS2 and MS1 level, respectively, scan window of 7, protein inference disabled (spectral library as described above) or relaxed (library-free, with additional command --relaxed-prot-inf), quantification strategy of \u2018Robust LC (high precision)\u2019, and library generation set as \u2018IDs, RT&IM profiling\u2019. All other settings were kept at default.\n\nThe high-flow K562 human cell line lysate benchmark data was analysed using the DDA-based library described above, with MBR disabled.\n\nThe plasma acquisition analysis was performed as described previously (Messner et al., 2020). Specifically, the \u2018Deep learning-based spectra, RTs and IMs prediction\u2019 option was activated in DIA-NN, to replace all spectra and retention times in the public spectral library (Bruderer et al., 2019) with ones predicted in silico. Further, the protein annotation in the library was replaced using the \u2018Reannotate\u2019 function in DIA-NN with the annotation from the Human UniProt (The UniProt Consortium, 2016) isoform sequence database (UP000005640, 19 October 2021). The processing was performed using the MBR mode in DIA-NN \u2013 a two-step analysis wherein a spectral library (empirical or predicted in silico) is first refined based on the DIA experiment in question, and subsequently used to reanalyse it (Demichev et al., 2020).\n\nFor the analysis of micro-flow K562 human cell line standard acquisition as well as samples from other species, the respective FASTA databases from UniProt (human: UP000005640 [10 March 2022] yeast: UP000002311_559292 [28 September 2021] E. coli: UP000000625 [19 October 2021]; chickpea: UP000087171_3827 [22 October 2021]) were used by DIA-NN in library-free mode. Specifically, following a two-step MBR approach described previously (Demichev et al., 2020), an in silico spectral library is first generated by DIA-NN from the FASTA file(s); this library is then refined based on the DIA dataset and subsequently used to reanalyse the dataset, to obtain the final results.\n\nThe data were filtered in the following way. First, a 1% run-specific q-value filter was automatically applied at the precursor level by DIA-NN. Further, to compare the protein identification numbers in the dilution series between different injection amounts and LC-MS modes, a 1% global protein group q-value filter (Lib.PG.Q.Value column in the report) was also applied. For the LFQbench-type two-species benchmarks for quantification accuracy, a 1% global protein group q-value filter and 1% run-specific protein group q-value were used instead (Lib.PG.Q.Value and PG.Q.Value column in the report). We note that in any experiment processed using the MBR mode in DIA-NN, 1% global precursor q-value filtering is also applied automatically (Demichev et al., 2020).\n\nCV were calculated for each protein or precursor as its empirical standard deviation divided by its empirical mean and are reported in percentages. CV values were calculated for proteins or precursors identified in all three replicate measurements.\n\nWe included the DIA-NN pipeline file in PRIDE (Perez-Riverol et al., 2022) PXD036786, which fully specifies the DIA-NN configuration in processing of each of the datasets analysed.\n\n### Data availability\n\nThe mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2022) partner repository with the dataset identifier PXD036786.\n\nDataset used for data analysis and visualisation are available online, DOI:10.17632/nwjcn4fy87.1 (Wang et al., 2022).\n",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "ee9febd1-56a9-427b-8177-0f287a005a1f",
+      "submission_id": "f51dcafe-65d9-4993-a2b7-9230c0e270b8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Beno\u00eet Kornmann, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83947.sa0](https://doi.org/10.7554/eLife.83947.sa0)\n\nThis paper presents a novel method for high-throughput proteomic data. This is an important improvement allowing a 5-8 fold increase in detection sensitivity over methods of similar throughput. A compelling set of data acquired on human and yeast whole-cell lysate illustrate this gain in performance.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Beno\u00eet Kornmann, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83947.sa1](https://doi.org/10.7554/eLife.83947.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "36bb003a-be95-475b-a3ed-fa7617045ab4",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C1",
+      "claim": "High-throughput proteomic experiments often require high sample amounts and can be less sensitive compared to conventional proteomic experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, high-throughput proteomic experiments often require high sample amounts and can be less sensitive compared to conventional proteomic experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background context in the abstract without specific supporting data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "cdbc31d9-7c3b-456f-91fe-d2e0fdbb669c",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C2",
+      "claim": "Zeno SWATH MS is a data-independent acquisition technique that employs a linear ion trap pulsing (Zeno trap pulsing) to increase the sensitivity in high-throughput proteomic experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we introduce and benchmark Zeno SWATH MS, a data-independent acquisition technique that employs a linear ion trap pulsing (Zeno trap pulsing) to increase the sensitivity in high-throughput proteomic experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main methodological claim of the paper, supported by subsequent experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "43bad751-1151-4059-9b0a-693cc1cba60f",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C3",
+      "claim": "Using 20 min micro-flow-rate chromatography, Zeno SWATH MS identified more than 5000 proteins consistently from a 62.5 ng load of human cell line tryptic digest.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, using 20 min micro-flow-rate chromatography, Zeno SWATH MS identified more than 5000 proteins consistently, and with a coefficient of variation of 6%, from a 62.5 ng load of human cell line tryptic digest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific quantitative result from experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "9be937b1-014a-4ec9-833e-5eb15583412a",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C4",
+      "claim": "Zeno SWATH MS identified more than 5000 proteins with a coefficient of variation of 6% from a 62.5 ng load of human cell line tryptic digest using 20 min micro-flow-rate chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, using 20 min micro-flow-rate chromatography, Zeno SWATH MS identified more than 5000 proteins consistently, and with a coefficient of variation of 6%, from a 62.5 ng load of human cell line tryptic digest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific quantitative result from experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "42ca3c87-4d3b-43d0-b4e8-5b98ebb927ea",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C5",
+      "claim": "Using 5 min analytical flow-rate chromatography (800 \u00b5l/min), Zeno SWATH MS identified 4907 proteins from a triplicate injection of 2 \u00b5g of a human cell lysate.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 5 min analytical flow-rate chromatography (800 \u00b5l/min), Zeno SWATH MS identified 4907 proteins from a triplicate injection of 2 \u00b5g of a human cell lysate, or more than 3000 proteins from a 250 ng tryptic digest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific quantitative result from experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "87c10cdd-ad30-454b-8652-b891b29ef51a",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C6",
+      "claim": "Using 5 min analytical flow-rate chromatography (800 \u00b5l/min), Zeno SWATH MS identified more than 3000 proteins from a 250 ng tryptic digest.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 5 min analytical flow-rate chromatography (800 \u00b5l/min), Zeno SWATH MS identified 4907 proteins from a triplicate injection of 2 \u00b5g of a human cell lysate, or more than 3000 proteins from a 250 ng tryptic digest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific quantitative result from experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "0fd33fcd-0e90-4ec1-b255-322ce8efc214",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C7",
+      "claim": "The proteome consists of large numbers of proteins that differ in concentration, distribution, and temporal dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The proteome consists of large numbers of proteins that differ in concentration, distribution, and temporal dynamics (Eriksson and Feny\u00f6, 2007; Hixson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "a60038b5-529f-4b5c-990c-fe1965e83b52",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C8",
+      "claim": "Data-dependent acquisition (DDA) selects precursors from full-scan MS1 mass spectrum for fragmentation, generating tandem (MS/MS or MS2) mass spectra that can be matched to spectra in a database.",
+      "claim_type": "EXPLICIT",
+      "source": "In bottom-up proteomics, data-dependent acquisition (DDA) selects precursors from full-scan MS1 mass spectrum for fragmentation, generating tandem (MS/MS or MS2) mass spectra that can be matched to spectra in a database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DDA methodology in proteomics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "6937c952-d304-482b-a226-7bde244ad4ce",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C9",
+      "claim": "DDA can result in high numbers of missing values that can originate from the stochastic nature of precursors selected for fragmentation, which limits the application in high-throughput studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While DDA ensures selectivity, it can result in high numbers of missing values that can originate from, for example, the stochastic nature of precursors selected for fragmentation, which limits the application in high-throughput studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about limitations of DDA in proteomics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "4e7687c1-6b0e-41fc-b36b-7ebf149de2a8",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C10",
+      "claim": "Data-independent acquisition (DIA) techniques such as SWATH acquisition generate fragment ion spectra from all precursor ions that fall within a predefined precursor m/z range window.",
+      "claim_type": "EXPLICIT",
+      "source": "Data-independent acquisition (DIA) techniques such as SWATH acquisition (Gillet et al., 2012) address this problem by generating fragment ion spectra from all precursor ions that fall within a predefined precursor m/z range window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DIA methodology, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "bf1a6698-e11c-4c30-b08f-be5fe31aabf0",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C11",
+      "claim": "DIA methods have facilitated applications in large-scale proteomics, including systems biology studies in various model organisms, disease states, and species.",
+      "claim_type": "EXPLICIT",
+      "source": "DIA methods have facilitated applications in large-scale proteomics, including systems biology studies in various model organisms, disease states, and species (Hou et al., 2015; Gao et al., 2017; Basak et al., 2015; Zelezniak et al., 2018; Grobbler et al., 2015; Gillet et al., 2012), with one of the most common clinical applications being the discovery of (compound) biomarkers for disease in body fluids, particularly blood serum or plasma (Anjo et al., 2017; Gajbhiye et al., 2016; Russell et al., 2016; Hou et al., 2015; Pires et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "b3bc31e2-aeab-42cb-a1f5-75dd991522f5",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C12",
+      "claim": "One of the most common clinical applications of DIA is the discovery of (compound) biomarkers for disease in body fluids, particularly blood serum or plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "DIA methods have facilitated applications in large-scale proteomics, including systems biology studies in various model organisms, disease states, and species (Hou et al., 2015; Gao et al., 2017; Basak et al., 2015; Zelezniak et al., 2018; Grobbler et al., 2015; Gillet et al., 2012), with one of the most common clinical applications being the discovery of (compound) biomarkers for disease in body fluids, particularly blood serum or plasma (Anjo et al., 2017; Gajbhiye et al., 2016; Russell et al., 2016; Hou et al., 2015; Pires et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "cf191e76-c165-4b3d-94ae-3a181f533db5",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C13",
+      "claim": "Nano-flow chromatography is highly sensitive as sample dilution is minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomics has historically relied on nano-flow chromatography, which is highly sensitive as sample dilution is minimal (Muntel et al., 2019), but the low flow rate requires a longer gradient time, which is more susceptible to technical distortions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "4003f7e8-e974-45e4-8e25-2c86aaa2f8ff",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C14",
+      "claim": "The low flow rate of nano-flow chromatography requires a longer gradient time, which is more susceptible to technical distortions.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomics has historically relied on nano-flow chromatography, which is highly sensitive as sample dilution is minimal (Muntel et al., 2019), but the low flow rate requires a longer gradient time, which is more susceptible to technical distortions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the properties of nano-flow chromatography.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "c4112408-f4d8-451d-97b0-0d2656a87849",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C15",
+      "claim": "Columns compatible with nano-LC systems typically require exchange after a maximum of a few hundred injections.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, columns compatible with nano-LC systems typically require exchange after a maximum of a few hundred injections, which together prolongs the acquisition time and leads to complex batch effects in larger studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about nano-LC systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "ef6dc309-7b24-46f7-a3b7-2a3a30e54d8b",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C16",
+      "claim": "Recent advances in instrumentation and software have facilitated the use of faster gradients and higher chromatographic flow rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in instrumentation and software have facilitated the use of faster gradients and higher chromatographic flow rates (Messner et al., 2020; Bian et al., 2020; Vowinckel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "95613975-d682-42e6-831b-691c16dffea9",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C17",
+      "claim": "Faster gradients and higher chromatographic flow rates accelerate proteomic experiments and allow highly precise measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "These accelerate proteomic experiments and allow highly precise measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the advances mentioned, supported by the preceding citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "09051beb-587d-4790-8b90-42f9aaaa68f7",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C18",
+      "claim": "Faster gradients and higher chromatographic flow rates come at the cost of a higher sample amount required and can yield lower proteomic depth.",
+      "claim_type": "EXPLICIT",
+      "source": "These come, however, at the cost of a higher sample amount required and can yield lower proteomic depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a trade-off of using faster gradients and higher flow rates.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "5518aed7-3fcf-4819-978f-f3a92d0ad03a",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C19",
+      "claim": "The sensitivity of SWATH MS in time-of-flight (TOF) mass spectrometers is largely determined by the MS/MS duty cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensitivity of SWATH MS in time-of-flight (TOF) mass spectrometers is largely determined by the MS/MS duty cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as technical knowledge about TOF mass spectrometers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "588ee397-d98f-4108-8e18-c0f6a904cb1c",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C20",
+      "claim": "The pulse in the TOF accelerator results in a duty cycle of TOFs of only 5\u201325%.",
+      "claim_type": "EXPLICIT",
+      "source": "The pulse in the TOF accelerator, which results in a small proportion of ions situated at the right position of entering TOF, has a disproportionate impact on lower-m/z ions, resulting in a duty cycle of TOFs of only 5\u201325%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as technical knowledge about TOF mass spectrometers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "d10ee752-32a5-4ef5-9c30-1c74558c7a40",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C21",
+      "claim": "The Zeno trap allows all fragment ions to be trapped in an axial pseudopotential well and then released by potential energy with timing aligned to the next pulse at the accelerator, allowing a duty cycle increase, thus increasing intensity 4\u201320 times.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a setup of the Zeno trap (Loboda and Chernushevich, 2009; Figure 1\u2014figure supplement 1), where all fragment ions are trapped in an axial pseudopotential well and then released by potential energy with timing aligned to the next pulse at the accelerator, allowing a duty cycle increase, thus increasing intensity 4\u201320 times (Baba et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and reference to a figure showing the Zeno trap setup.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "b7d86c22-66ab-4878-b915-04fb5af0dddd",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C22",
+      "claim": "Zeno SWATH MS yielded 5179 consistently quantified proteins among an average of 6226 proteins identified in triplicates from 62.5 ng K562 human cell line standard using 20 min micro-flow gradient chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "Zeno SWATH MS yielded 5179 consistently quantified proteins among an average of 6226 proteins identified in triplicates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the experiments described.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "ee8330c4-1a7f-4748-a50b-8fea4a9a6f40",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C23",
+      "claim": "Zeno SWATH MS quantified proteins with a median coefficient of variance (CV) of 6% from 62.5 ng K562 human cell line standard.",
+      "claim_type": "EXPLICIT",
+      "source": "These were quantified with a median coefficient of variance (CV) of 6%, and 89% of identifications or 4602 shared proteins were quantified with a CV better than 20% (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "f874d6a6-2880-4569-be4d-2c2b4a461f99",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C24",
+      "claim": "89% of protein identifications or 4602 shared proteins were quantified with a CV better than 20% using Zeno SWATH MS from 62.5 ng K562 human cell line standard.",
+      "claim_type": "EXPLICIT",
+      "source": "These were quantified with a median coefficient of variance (CV) of 6%, and 89% of identifications or 4602 shared proteins were quantified with a CV better than 20% (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "e68eac1b-0e95-4fdc-8ca3-1dda6f5d877f",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C25",
+      "claim": "At the precursor level, Zeno SWATH MS identified on average 49,172 precursors from 62.5 ng K562 human cell line standard, of which 40,209 were repeatedly quantified.",
+      "claim_type": "EXPLICIT",
+      "source": "At the precursor level, on average 49,172 precursors were identified, of which 40,209 were repeatedly quantified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the experiments described.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "28a0661e-8bb7-4c7c-909e-03ba0407a7e9",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C26",
+      "claim": "77% of repeatedly quantified precursors were quantified with a CV of less than 20% using Zeno SWATH MS from 62.5 ng K562 human cell line standard.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 77% were quantified with a CV of less than 20% (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "7aa02fec-2bff-4f2e-9ded-52acca8ecb57",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C27",
+      "claim": "SWATH MS consistently quantified 2743 proteins from 62.5 ng K562 human cell line standard, of which 76% or 2083 proteins were quantified with a CV <20%.",
+      "claim_type": "EXPLICIT",
+      "source": "SWATH MS consistently quantified 2743 proteins, of which 76% or 2083 proteins were quantified with a CV <20% (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result shown in Figure 1a for comparison with Zeno SWATH MS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "5efabc60-b2ad-4c06-b2d3-f1c0a9f0091c",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C28",
+      "claim": "At the precursor level, SWATH MS identified an average of 21,771 precursors in triplicate injections of 62.5 ng K562 human cell line standard, of which 16,022 were consistently quantified, with a median CV of 11%.",
+      "claim_type": "EXPLICIT",
+      "source": "At the precursor level, SWATH identified an average of 21,771 precursors in triplicate injections, of which 16,022 were consistently quantified, with a median CV of 11%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the experiments for comparison with Zeno SWATH MS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "dc1d6ab3-cde0-43db-ac98-968c17593b91",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C29",
+      "claim": "Zeno SWATH MS shows an improved separation of the two-species proteomes and more accurately represents the real ratio of the precursors compared to SWATH MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to SWATH MS, Zeno SWATH MS shows an improved separation of the two-species proteomes and more accurately represents the real ratio of the precursors (log2 of human quantity ratio close to 0, while log2 of yeast quantity ratio close to 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the LFQbench analysis comparing the two methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "8bbbb59c-16d1-49cd-b893-fc661b725ff1",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C30",
+      "claim": "In both species (human and yeast), Zeno SWATH MS performs better in quantifying the lower-abundant proteins compared to SWATH MS.",
+      "claim_type": "EXPLICIT",
+      "source": "In both species, Zeno SWATH MS performs better in quantifying the lower-abundant proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing protein quantity distributions shown in Figure 1f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "e87c1530-7939-4ee3-a7b6-064a996effbd",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C31",
+      "claim": "At the precursor level, Zeno SWATH MS quantified 34,872 human and 15,610 yeast precursors from the two-species mixture, while SWATH quantified 16,167 human and 6847 yeast precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "At the precursor level, Zeno SWATH MS quantified 34,872 human and 15,610 yeast precursors, while SWATH quantified 16,167 human and 6847 yeast precursors (SWATH MS, Figure 1\u2014figure supplement 2b; Zeno SWATH MS, Figure 1\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the two-species benchmark experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "9c22fab9-b97c-452c-a12c-17bc285a1e76",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C32",
+      "claim": "At the protein level, 3414 (human) and 1816 (yeast) proteins were quantified with Zeno SWATH MS from the two-species mixture, while 2064 human and 973 yeast proteins were quantified using SWATH MS.",
+      "claim_type": "EXPLICIT",
+      "source": "At the protein level, 3414 (human) and 1816 (yeast) proteins were quantified with Zeno SWATH MS, while 2064 human and 973 yeast proteins were quantified using SWATH MS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the two-species benchmark experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "f54f918b-2087-4137-945a-20638ea98514",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C33",
+      "claim": "3282 human and 1692 yeast proteins were quantified with Zeno SWATH MS, showing a ratio close to the known ratio (1:1 (A/B) for human, 2:1 for yeast) in at least two replicates in each of mixture A and B.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, 3282 human and 1692 yeast proteins were quantified with Zeno SWATH MS, showing a ratio close to the known ratio (1:1 (A/B) for human, 2:1 for yeast) in at least two replicates in each of mixture A and B, with a median CV value for human proteins measured in triplicates of mixture A and B of 6.9% and 7%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the two-species benchmark experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "ca816736-a6f1-4650-b80d-e0df79a566cf",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C34",
+      "claim": "The median CV value for human proteins measured in triplicates of mixture A and B with Zeno SWATH MS was 6.9% and 7%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, 3282 human and 1692 yeast proteins were quantified with Zeno SWATH MS, showing a ratio close to the known ratio (1:1 (A/B) for human, 2:1 for yeast) in at least two replicates in each of mixture A and B, with a median CV value for human proteins measured in triplicates of mixture A and B of 6.9% and 7%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the two-species benchmark experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "18a85629-a722-4eb3-9544-358289feca30",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C35",
+      "claim": "The human proteins measured with SWATH MS show a median CV value of 12.7% and 12.6% for triplicate mixture A and B.",
+      "claim_type": "EXPLICIT",
+      "source": "The human proteins measured with SWATH MS show a median CV value of 12.7% and 12.6% for triplicate mixture A and B, with 1741 human and 776 yeast proteins quantification close to the known ratio (Zeno SWATH MS, Figure 1c; SWATH, Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the two-species benchmark experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "773626ee-5abf-46fb-b7f9-5df228b27bab",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C36",
+      "claim": "With 0.5 \u00b5l injection, Zeno SWATH MS quantified 118% more human and 133% more yeast proteins compared with SWATH MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with SWATH MS, 118% more human and 133% more yeast proteins were quantified in Zeno SWATH MS with 0.5 \u00b5l injection; while 65% more human and 86% more yeast proteins quantified in Zeno SWATH MS were quantified with 1 \u00b5l injection (SWATH MS, Figure 1\u2014figure supplement 2f; Zeno SWATH MS, Figure 1\u2014figure supplement 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative comparison from the two-species benchmark experiments with lower injection amounts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "e295a98e-fce2-4033-8af5-f87240b84153",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C37",
+      "claim": "With 1 \u00b5l injection, Zeno SWATH MS quantified 65% more human and 86% more yeast proteins compared with SWATH MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with SWATH MS, 118% more human and 133% more yeast proteins were quantified in Zeno SWATH MS with 0.5 \u00b5l injection; while 65% more human and 86% more yeast proteins quantified in Zeno SWATH MS were quantified with 1 \u00b5l injection (SWATH MS, Figure 1\u2014figure supplement 2f; Zeno SWATH MS, Figure 1\u2014figure supplement 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative comparison from the two-species benchmark experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "12a027d4-af99-45b4-aaf8-8db07ee05c6c",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C38",
+      "claim": "For both human and yeast species, the quantification results from SWATH MS and Zeno SWATH MS are in very good agreement for high-abundant proteins, but diverge for low-abundant ones.",
+      "claim_type": "EXPLICIT",
+      "source": "For both species, the quantification results from SWATH MS and Zeno SWATH MS are in very good agreement for high-abundant proteins, but diverge for low-abundant ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the correlation analysis shown in Figure 1e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "aa5815c5-66bd-4214-a51d-c7d059a5c9dc",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C39",
+      "claim": "From the 62.5 ng K562 human cell line standard, 16,915 precursors or 2886 proteins were identified using the TripleTOF 6600 system at a 1% false discovery rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, from the 62.5 ng K562 human cell line standard, 16,915 precursors or 2886 proteins were identified using the TripleTOF 6600 system at a 1% false discovery rate (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the concentration series experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "ef14e8ae-e4eb-4007-a189-611084ea8457",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C40",
+      "claim": "Using SWATH MS on the 7600 instrument, 29,697 precursors and an average of 3724 proteins were identified from 62.5 ng K562 human cell line standard from three technical replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Using SWATH MS on the 7600 instrument, these numbers increased to 29,697 precursors identified from three technical replicates and an average of 3724 proteins (Figure 2a; protein identification in Figure 2\u2014figure supplement 1a, first-pass precursor identification in Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the concentration series experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "a3226982-755c-4e77-8d6a-bcd2f2dbc92a",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C41",
+      "claim": "With Zeno SWATH MS on the 7600 setup, an average of 62,769 precursors, or 5206 proteins, were identified from triplicate injections of 62.5 ng of the K562 human cell line standard.",
+      "claim_type": "EXPLICIT",
+      "source": "With Zeno SWATH MS on the same 7600 setup, an average of 62,769 precursors, or 5206 proteins, were identified from triplicate injections of 62.5 ng of the K562 human cell line standard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the concentration series experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "8d8202e8-d001-4ed2-ae53-5e9f5f0e76a9",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C42",
+      "claim": "Zeno SWATH MS identified a similar number of precursors and proteins from 62.5 ng of K562 human cell line standard as SWATH MS did from 500 ng of the same sample on the same instrument.",
+      "claim_type": "EXPLICIT",
+      "source": "Interpreting the data in a different way, Zeno SWATH MS identified a similar number of precursors and proteins from 62.5 ng of K562 human cell line standard as SWATH MS did from 500 ng of the same sample on the same instrument (SWATH identified 64,316 precursors or 5242 proteins from 500 ng) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of quantitative results from the concentration series experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "471d32ae-2cd2-4dcc-afc8-d89c0ed00fd2",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C43",
+      "claim": "SWATH MS identified 64,316 precursors or 5242 proteins from 500 ng K562 human cell line standard on the 7600 instrument.",
+      "claim_type": "EXPLICIT",
+      "source": "Interpreting the data in a different way, Zeno SWATH MS identified a similar number of precursors and proteins from 62.5 ng of K562 human cell line standard as SWATH MS did from 500 ng of the same sample on the same instrument (SWATH identified 64,316 precursors or 5242 proteins from 500 ng) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the concentration series experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "e257763a-e348-4460-813a-bafafa622a91",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C44",
+      "claim": "Up to 4636 precursors were detected per minute of active runtime in Zeno SWATH MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalised per gradient time, this means that up to 4636 precursors were detected per minute of active runtime in Zeno SWATH MS, whereas SWATH from the ZenoTOF 7600 system quantified 2874 precursors/min and SWATH from the TripleTOF 6600 system reached 1153 precursors/min (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculated metric from the experimental data normalized by gradient time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "343bb5a6-988f-4b4e-8937-fa52abc0d1f8",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C45",
+      "claim": "SWATH from the ZenoTOF 7600 system quantified 2874 precursors/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalised per gradient time, this means that up to 4636 precursors were detected per minute of active runtime in Zeno SWATH MS, whereas SWATH from the ZenoTOF 7600 system quantified 2874 precursors/min and SWATH from the TripleTOF 6600 system reached 1153 precursors/min (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculated metric from the experimental data normalized by gradient time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "965ad27b-4128-440e-8c10-6f6a46437df5",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C46",
+      "claim": "SWATH from the TripleTOF 6600 system reached 1153 precursors/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalised per gradient time, this means that up to 4636 precursors were detected per minute of active runtime in Zeno SWATH MS, whereas SWATH from the ZenoTOF 7600 system quantified 2874 precursors/min and SWATH from the TripleTOF 6600 system reached 1153 precursors/min (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculated metric from the experimental data normalized by gradient time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "5e056654-ee58-4a0d-b322-df336f3ed15d",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C47",
+      "claim": "SWATH MS on the 7600 system (3690 protein groups quantified) showed a larger protein concentration dynamic range coverage compared to the TripleTOF 6600 system (2881 protein groups quantified).",
+      "claim_type": "EXPLICIT",
+      "source": "SWATH MS on the 7600 system (3690 protein groups quantified) showed a larger protein concentration dynamic range coverage compared to the TripleTOF 6600 system (2881 protein groups quantified).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of quantitative results from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "ee80c3f6-35eb-4ae7-b483-f0505b38864f",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C48",
+      "claim": "Zeno SWATH MS increased the number of proteins identified (5206 protein groups quantified) compared to SWATH MS on the 7600 system.",
+      "claim_type": "EXPLICIT",
+      "source": "Zeno SWATH MS increased the number of proteins identified (5206 protein groups quantified).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of quantitative results from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "595d09cf-54ba-4e6d-91f3-4ecfe2918939",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C49",
+      "claim": "The identification gains from Zeno SWATH MS are due to more low-abundant proteins quantified.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with the standard dataset revealed that the gains are due to more low-abundant proteins quantified (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from comparing results to a reference dataset, shown in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "66a1b381-7432-45f3-b78c-d1a3f662b924",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C50",
+      "claim": "There is a high agreement of protein quantities between SWATH MS and Zeno SWATH MS methods overall (r2=0.93), particularly among high-abundant proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Also here, we report a high agreement of protein quantities between methods overall (r2=0.93), and in particular among high-abundant proteins (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative correlation result shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "3ec5163d-52c5-4cf1-8d64-2bc8b14750d6",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C51",
+      "claim": "On average, Zeno SWATH MS identified 29,681 precursors and 4907 proteins with a 2 \u00b5g load of K562 human cell line standard using analytical flow-rate chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, Zeno SWATH MS identified 29,681 precursors and 4907 proteins with a 2 \u00b5g load of sample on the column, whereas SWATH MS identified 17,212 precursors or 3250 proteins with the same amount of sample (protein data shown in Figure 3a, respective precursor data in Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the analytical flow-rate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "34cb7eed-6bb5-4563-bc40-3876cb17688a",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C52",
+      "claim": "SWATH MS identified 17,212 precursors or 3250 proteins with a 2 \u00b5g load of K562 human cell line standard using analytical flow-rate chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, Zeno SWATH MS identified 29,681 precursors and 4907 proteins with a 2 \u00b5g load of sample on the column, whereas SWATH MS identified 17,212 precursors or 3250 proteins with the same amount of sample (protein data shown in Figure 3a, respective precursor data in Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the analytical flow-rate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "e12d2d37-bb03-4000-9a97-895c49170846",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C53",
+      "claim": "With 250 ng of K562 human cell line standard injected, around 3000 proteins were quantified with Zeno SWATH MS using analytical flow-rate chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, with 250 ng of K562 human cell line standard injected, around 3000 proteins were quantified with Zeno SWATH MS while a similar protein quantification number can only be reached by SWATH MS with 2 \u00b5g injection on the same instrument and chromatography (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the analytical flow-rate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "16ff8cfc-557d-43a6-9359-46f54e61cebd",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C54",
+      "claim": "A similar protein quantification number (around 3000 proteins) can only be reached by SWATH MS with 2 \u00b5g injection on the same instrument and chromatography, compared to 250 ng with Zeno SWATH MS.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, with 250 ng of K562 human cell line standard injected, around 3000 proteins were quantified with Zeno SWATH MS while a similar protein quantification number can only be reached by SWATH MS with 2 \u00b5g injection on the same instrument and chromatography (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of quantitative results from the analytical flow-rate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "16840898-204a-4412-b15e-f762fd6c678e",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C55",
+      "claim": "The stability of the analytical flow-rate LC system was reflected in the consistency of the quantification and yielded a median protein quantification CV of 6%.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the stability of the analytical flow-rate LC system was reflected in the consistency of the quantification and yielded a median protein quantification CV of 6%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the analytical flow-rate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "74c86803-6f8a-411f-8f97-8bbf340dca38",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C56",
+      "claim": "92% of the proteins were consistently identified with a CV <20% using analytical flow-rate chromatography with Zeno SWATH MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressed differently, 92% of the proteins were consistently identified with a CV <20% (Figure 3b, respective precursor data in Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the analytical flow-rate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "0132a948-4c60-4728-8519-3075f8cce2c7",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C57",
+      "claim": "In non-depleted human plasma, Zeno SWATH MS identified 3957 precursors derived from 204 proteins with a 62.5 ng injection.",
+      "claim_type": "EXPLICIT",
+      "source": "In non-depleted human plasma, Zeno SWATH MS identified 3957 precursors derived from 204 proteins with a 62.5 ng injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the plasma experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "89c0bdb4-a954-4a1a-a4c2-35cdf7794549",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C58",
+      "claim": "In human neat plasma, Zeno SWATH MS identified 3947 precursors from 245 proteins with a 62.5 ng injection, while with SWATH MS, 2516 precursors from 156 proteins were identified from the same amount of sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In human neat plasma, Zeno SWATH MS identified 3947 precursors from 245 proteins, while with SWATH MS, 2516 precursors from 156 proteins were identified from the same amount of sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the plasma experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "50cc541a-65e9-4393-b3a4-a9a0bbc16738",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C59",
+      "claim": "15 ng of sample was sufficient to quantify the dominating fraction of the plasma proteome (160 proteins) using Zeno SWATH MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 15 ng of sample was sufficient to quantify the dominating fraction of the plasma proteome (160 proteins) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the plasma experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "a37d3fae-2fa9-4eff-8e14-7510e32b3e3e",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C60",
+      "claim": "In a S. cerevisiae protein extract tryptic digest, micro-flow-rate Zeno SWATH MS quantified 29,339 precursors from 2915 proteins from a 62.5 ng injection, compared to 1660 proteins quantified by SWATH on the same instrument setup.",
+      "claim_type": "EXPLICIT",
+      "source": "In a S. cerevisiae protein extract tryptic digest, micro-flow-rate Zeno SWATH MS quantified 29,339 precursors from 2915 proteins from a 62.5 ng injection, compared to 1660 proteins quantified by SWATH on the same instrument setup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the yeast experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "444c5236-8ccb-492e-bb9e-c5daae9e51da",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C61",
+      "claim": "From an extract of E. coli, Zeno SWATH MS identified 24,880 precursors or 2131 proteins at a 62.5 ng load, whereas conventional SWATH acquired 16,139 and 1768 precursors and proteins, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "From an extract of E. coli, the dominating bacterial model organism, Zeno SWATH MS identified 24,880 precursors or 2131 proteins at a 62.5 ng load, whereas conventional SWATH acquired 16,139 and 1768 precursors and proteins, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the E. coli experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "0da7da18-6ef0-49d4-a368-cb2fb0ef3254",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C62",
+      "claim": "Zeno SWATH MS identified 33,694 precursors and 3815 proteins in 62.5 ng of chickpea (C. arietinum) seedling extract.",
+      "claim_type": "EXPLICIT",
+      "source": "And finally, we identified 33,694 precursors and 3815 proteins in 62.5 ng of chickpea (C. arietinum) seedling extract, chosen as a representative sample for a plant proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from the chickpea experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "58bf392d-6591-4a0b-a92e-7c59fa4dc0f1",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C63",
+      "claim": "500 ng of chickpea sample was needed to reach similar identification numbers (34,573 precursors, 3807 proteins) using SWATH acquisition on the plant proteome tryptic digest.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, 500 ng of sample was needed to reach similar identification numbers (34,573 precursors, 3807 proteins) using SWATH acquisition on the plant proteome tryptic digest (an overview of achieved protein identification is shown in Figure 4; details for respective precursor identification are shown in Figure 4\u2014figure supplement 1; identification numbers for both proteins and precursors are shown in Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from the chickpea experiments for comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "a3e4ba4c-17b5-477a-9db5-c9ed5683ea49",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C64",
+      "claim": "In TOF instruments, all fragment ions are recorded in parallel (quasi-simultaneously), where the ions spread by m/z across the distance between the exit of the collision cell and the TOF accelerator.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, in TOF instruments, all fragment ions are recorded in parallel (quasi-simultaneously), where the ions spread by m/z across the distance between the exit of the collision cell and the TOF accelerator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is technical knowledge about TOF mass spectrometers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "5d120b73-65a4-47a9-9c8e-46971d485f66",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C65",
+      "claim": "When the subsequent pulse is observed at the accelerator, only a small proportion of the total fragment ion population is situated at the right location to enter the TOF, leading to a proportion of ions not being able to be detected, thus limiting sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "When the subsequent pulse is observed at the accelerator, only a small proportion of the total fragment ion population is situated at the right location to enter the TOF, leading to a proportion of ions not being able to be detected, thus limiting sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is technical knowledge about TOF mass spectrometers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "7522e4ca-8545-4f0b-b1e4-4203cf2af600",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C66",
+      "claim": "The duty cycle deficiency disproportionately impacts low-m/z ions, with the duty cycle of TOFs falling in the range of only 5\u201325%, depending on concentration range and m/z.",
+      "claim_type": "EXPLICIT",
+      "source": "This disproportionately impacts low-m/z ions, with the duty cycle of TOFs falling in the range of only 5\u201325%, depending on concentration range and m/z.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is technical knowledge about TOF mass spectrometers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "01ba6179-eeba-47fd-9987-516eea1f4ccc",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C67",
+      "claim": "Because of the duty cycle deficiency, many ions (especially low-m/z ions) are not detected in low-abundance samples, resulting in TOF-MS/MS not fully realising its full sensitivity potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this duty cycle deficiency, many ions (especially low-m/z ions) are not detected in low-abundance samples, resulting in TOF-MS/MS not fully realising its full sensitivity potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the technical properties of TOF mass spectrometers.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "e0ab9ce0-f989-48eb-82c8-640ae243deb8",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C68",
+      "claim": "A linear ion trap introduced after the collision cell (Q2) \u2013 the Zeno trap \u2013 can compensate for the duty cycle limitations in TOF-MS/MS.",
+      "claim_type": "EXPLICIT",
+      "source": "A linear ion trap introduced after the collision cell (Q2) \u2013 the Zeno trap \u2013 can compensate for these limitations in TOF-MS/MS (Loboda and Chernushevich, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "7622f1b4-f459-45b4-b5c6-5a209f3eaca6",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C69",
+      "claim": "When the Zeno trap is enabled, the fragment ions in the selected mass range are trapped in an axial pseudopotential well created by an additional RF ('AC') voltage applied with the same amplitude and phase to all four rods of the trap in a required focal point.",
+      "claim_type": "EXPLICIT",
+      "source": "When the Zeno trap is enabled, the fragment ions in the selected mass range are trapped in an axial pseudopotential well created by an additional RF ('AC') voltage applied with the same amplitude and phase to all four rods of the trap in a required focal point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical description of how the Zeno trap operates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "cc8a7afd-1fdd-461f-83c8-99068704ab59",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C70",
+      "claim": "The release of the ions from the Zeno trap occurs by potential energy with timing aligned to the next pulse at the accelerator, enabling a >90% duty cycle, thus increasing intensity 4\u201320 times.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the release of the ions occurs by potential energy with timing aligned to the next pulse at the accelerator, enabling a >90% duty cycle, thus increasing intensity 4\u201320 times (Baba et al., 2021) without loss of mass accuracy and resolution (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "924c9a06-198a-4eac-acbf-3f384a2ff004",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C71",
+      "claim": "The Zeno trap enables a >90% duty cycle without loss of mass accuracy and resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the release of the ions occurs by potential energy with timing aligned to the next pulse at the accelerator, enabling a >90% duty cycle, thus increasing intensity 4\u201320 times (Baba et al., 2021) without loss of mass accuracy and resolution (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "4e57f63d-c9f0-4d64-91d4-736a6af76167",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C72",
+      "claim": "In 99.9% of the proteomic mass of human plasma, less than 200 proteins are attributable.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in human plasma, 99.9% of the proteomic mass is attributable to less than 200 proteins (Anderson and Anderson, 2002), while a yeast proteome coverage saturates at around 4000 proteins even with prefractionation (Thakur et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "d1d1d089-9908-49c5-9ed2-e079ee1507ce",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C73",
+      "claim": "A yeast proteome coverage saturates at around 4000 proteins even with prefractionation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in human plasma, 99.9% of the proteomic mass is attributable to less than 200 proteins (Anderson and Anderson, 2002), while a yeast proteome coverage saturates at around 4000 proteins even with prefractionation (Thakur et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "a48cca1a-850b-49d1-ae73-a33b129a1d6e",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C74",
+      "claim": "Zeno SWATH MS could be applied to high-throughput plasma samples where sample amounts are limited, for instance to make proteomics applicable for analysing finger-prick samples or in combination with nano-sampling devices.",
+      "claim_type": "EXPLICIT",
+      "source": "Zeno SWATH MS could hence be applied to high-throughput plasma samples where sample amounts are limited, for instance to make proteomics applicable for analysing finger-prick samples or in combination with nano-sampling devices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential applications based on the demonstrated low sample requirements.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "be948456-96a7-42ff-a8db-33a2615d8578",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C75",
+      "claim": "S. cerevisiae is one of the dominating workhorses of biotechnology, a key model organism for basic research, closely related to important clinical pathogens such as Candida glabrata, and a pathogen on its own right.",
+      "claim_type": "EXPLICIT",
+      "source": "S. cerevisiae is one of the dominating workhorses of biotechnology, a key model organism for basic research, closely related to important clinical pathogens such as Candida glabrata (Oliver, 2022), and a pathogen on its own right.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about S. cerevisiae, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "ff6f95e0-179b-4a69-b87a-784e75506741",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C76",
+      "claim": "E. coli is the dominating bacterial model organism.",
+      "claim_type": "EXPLICIT",
+      "source": "From an extract of E. coli, the dominating bacterial model organism, Zeno SWATH MS identified 24,880 precursors or 2131 proteins at a 62.5 ng load, whereas conventional SWATH acquired 16,139 and 1768 precursors and proteins, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E. coli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "5e5c05a1-9948-45bb-b504-b52ebad2010a",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C77",
+      "claim": "Analytical flow-rate chromatography is a method of choice for large-scale projects and in diagnostic laboratories because of its high analytical performance and stability in combination with short chromatographic gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its high analytical performance and stability in combination with short chromatographic gradients, analytical flow-rate chromatography is a method of choice for large-scale projects and in diagnostic laboratories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about analytical flow-rate chromatography.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "0a65d814-1e40-48f0-8857-315909dd711f",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C78",
+      "claim": "Analytical flow-rate chromatography is attractive for practical reasons, because columns equilibrate quickly, and the problem of dead volumes and sample carryover is substantially reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Analytical flow-rate chromatography is also attractive for practical reasons, because columns equilibrate quickly, and the problem of dead volumes and sample carryover is substantially reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about analytical flow-rate chromatography.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "45e77f6b-17f1-4e68-a671-3135965a7aca",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C79",
+      "claim": "The authors reduced the time between injections to 3 min or less in recent studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In our recent studies, we reduced the time between injections to 3 min or less (Messner et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "c74e5cac-bf20-48fa-be8a-f837652cd477",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C80",
+      "claim": "For applications such as neat-plasma proteomics or drug screens, the authors have previously demonstrated proteomic experiments using flow rates of 800 \u00b5l/min with gradient times ranging from 30 s to 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, for applications such as neat-plasma proteomics or drug screens, we have previously demonstrated proteomic experiments using flow rates of 800 \u00b5l/min, and obtained quantification of precise proteomes with gradient times that ranged from 30 s to 5 min (Messner et al., 2020; Messner et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "83365597-bdb0-49e2-a9be-045f88aaaeb3",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C81",
+      "claim": "Even with the slowest gradient (5 min of active separation), the throughput of a proteomics study is increased to 180 samples per day on a single instrument.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, even with the slowest of these gradients \u2013 5 min of active separation \u2013 the throughput of a proteomics study is increased to 180 samples per day on a single instrument.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated metric based on the gradient time mentioned.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "8164b0d6-961b-4f33-abdf-5b0c4e51674a",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C82",
+      "claim": "The downside of analytical flow-rate chromatography so far is a reliance on relatively large sample amounts, which restricts the application space and shortens the instrument cleaning cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "The downside so far is a reliance on relatively large sample amounts, which restricts the application space and shortens the instrument cleaning cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of analytical flow-rate chromatography.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "cdd9dcf9-e21e-4d17-9143-6f01146a1e4e",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C83",
+      "claim": "Zeno SWATH MS increases sensitivity and expands the proteomic dynamic range coverage, generating new possibilities in the design of high-throughput proteomic experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that Zeno SWATH MS increases sensitivity and expands the proteomic dynamic range coverage, generating new possibilities in the design of high-throughput proteomic experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "f145dd8c-5a22-4bd1-b526-8eaa4ef985ba",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C84",
+      "claim": "Zeno SWATH MS facilitates sensitive high-throughput proteomic experiments with low sample amounts, mitigating the current bottlenecks of high-throughput proteomics.",
+      "claim_type": "EXPLICIT",
+      "source": "Zeno SWATH MS hence facilitates sensitive high-throughput proteomic experiments with low sample amounts, mitigating the current bottlenecks of high-throughput proteomics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "4bf32c60-0407-4863-a6f3-a4adddffd4dc",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C85",
+      "claim": "Lowering the sample dependency in high-throughput proteomics allows high-throughput proteomics to be extended to studies where only low amounts of material are available.",
+      "claim_type": "EXPLICIT",
+      "source": "Lowering the sample dependency in high-throughput proteomics has at least three different applications: First, high-throughput proteomics can be extended to studies where only low amounts of material are available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the applications of the demonstrated capability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "6f147b67-ca5f-4018-82d8-01352266a0e9",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C86",
+      "claim": "Injecting lower amounts of samples decreases the cleaning cycles of mass spectrometers and increases their uptime.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, injecting lower amounts of samples decreases the cleaning cycles of mass spectrometers and increases their uptime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the practical benefits of lower sample requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "1f44bbcf-daf3-4f63-8de6-c0bcec6fed63",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C87",
+      "claim": "Injecting lower sample amounts allows one to reduce costs.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, injecting lower sample amounts allows one to reduce costs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the economic benefits of lower sample requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "ec45be8c-b4ae-4258-ae09-bb0dc415323d",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C88",
+      "claim": "Zeno SWATH MS improves both the number of proteins identified and quantification precision in all chromatographic methods tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Reassuringly, Zeno SWATH MS improves both the number of proteins identified and quantification precision in all chromatographic methods tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "64ab4951-37a2-43be-a896-129c8fa2be1d",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C89",
+      "claim": "The benchmark experiments were acquired with a ZenoTOF 7600 system running SCIEX OS 2.1.6, with an ionisation threshold for Zeno SWATH MS to prevent detector damage ('ion striking') caused by excessive ions hitting the detector at the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, our benchmark experiments were acquired with a ZenoTOF 7600 system running SCIEX OS 2.1.6, with an ionisation threshold for Zeno SWATH MS to prevent detector damage ('ion striking') caused by excessive ions hitting the detector at the same time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental setup and limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "2f0cb28b-24d9-4f89-8609-f2bd9ac0d87c",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C90",
+      "claim": "The detector protection procedure limits the maximum injection amount in the benchmark to 62.5 ng.",
+      "claim_type": "EXPLICIT",
+      "source": "This detector protection procedure limits the maximum injection amount in our benchmark to 62.5 ng, preventing us from testing the effect of high amounts of sample on the MS system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "42569d19-b9a5-43f1-becd-c41fc6de476f",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C91",
+      "claim": "The ionization threshold was experimental in nature at the time of performing experiments, however, further re-optimizations to this threshold occurred enabling higher loads with Zeno SWATH MS with newer releases of SCIEX OS.",
+      "claim_type": "EXPLICIT",
+      "source": "The ionization threshold (which limited the load to 62.5 ng) was experimental in nature at the time performing experiments, however, further re-optimizations to this threshold occurred enabling higher loads with Zeno SWATH MS with newer releases of SCIEX OS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification about the experimental conditions and subsequent improvements.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "640a679e-484e-441a-8f4d-f86dd9b23536",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C92",
+      "claim": "When coupled with nano-flow chromatography systems, the sensitive Zeno SWATH MS might benefit the field of single-cell proteomics.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, when coupled with nano-flow chromatography systems, the sensitive Zeno SWATH MS might benefit the field of single-cell proteomics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "cda32f84-c515-4a39-b6a1-1f5bd75e3f0d",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C93",
+      "claim": "The authors' lab has previously introduced a scanning SWATH acquisition technique that significantly increased the identification rate of proteins using the TripleTOF 6600 system, particularly in ultra-fast proteomic experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, our lab has previously introduced a scanning SWATH acquisition technique that significantly increased the identification rate of proteins using the TripleTOF 6600 system (SCIEX), particularly in ultra-fast proteomic experiments (Messner et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "d55ba716-3dc1-4b21-af27-51ed6012705d",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C94",
+      "claim": "Scanning SWATH combines the benefits of data-dependent and data-independent techniques by employing a 'sliding' quadrupole (Q1) to assign precursor masses to MS/MS traces, allowing for a faster Q1 scan than stepwise SWATH acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Scanning SWATH combines the benefits of data-dependent and data-independent techniques by employing a 'sliding' quadrupole (Q1) to assign precursor masses to MS/MS traces, allowing for a faster Q1 scan than stepwise SWATH acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the scanning SWATH technique from prior work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "3ba7d247-b562-4eda-9c80-ee1f06a4c13b",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C95",
+      "claim": "A combination of the Zeno trapping technology with scanning SWATH is technically possible and might result in further gains in the sensitive analysis of proteomes at high throughput.",
+      "claim_type": "EXPLICIT",
+      "source": "A combination of the Zeno trapping technology with scanning SWATH is technically possible and might result in further gains in the sensitive analysis of proteomes at high throughput.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential future developments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "f1ec4542-3d91-47df-a5f0-f56fe19f113e",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C96",
+      "claim": "The K562 cell line is of Homo sapiens origin, the identity has been authenticated, and tested by Promega.",
+      "claim_type": "EXPLICIT",
+      "source": "K562 human cell line standard (K562, Mass Spec-Compatible Human Protein Extracts, Cat# V6951), this commercially available cell line is Homo sapiens origin, the identity has been authenticated, and tested by Promega, RRID: CVCL_0004.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about the cell line used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "f86b46c8-53d4-47af-943c-d18e04b409e4",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C97",
+      "claim": "All raw data from ZenoTOF 7600 system were acquired by SCIEX OS (v2.1.6).",
+      "claim_type": "EXPLICIT",
+      "source": "All raw data from ZenoTOF 7600 system were acquired by SCIEX OS (v2.1.6) (note that SCIEX OS 3.0, which supports Zeno SWATH MS, is the commercial software available on the market), processed with DIA-NN (v1.8 beta 20) (Demichev et al., 2020) using mass accuracy of 20 and 12 ppm at the MS2 and MS1 level, respectively, scan window of 7, protein inference disabled (spectral library as described above) or relaxed (library-free, with additional command --relaxed-prot-inf), quantification strategy of 'Robust LC (high precision)', and library generation set as 'IDs, RT&IM profiling'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data acquisition and processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "41a6668f-fa9c-4cd2-9f7a-5ffd5a237c80",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C98",
+      "claim": "SCIEX OS 3.0, which supports Zeno SWATH MS, is the commercial software available on the market.",
+      "claim_type": "EXPLICIT",
+      "source": "All raw data from ZenoTOF 7600 system were acquired by SCIEX OS (v2.1.6) (note that SCIEX OS 3.0, which supports Zeno SWATH MS, is the commercial software available on the market), processed with DIA-NN (v1.8 beta 20) (Demichev et al., 2020) using mass accuracy of 20 and 12 ppm at the MS2 and MS1 level, respectively, scan window of 7, protein inference disabled (spectral library as described above) or relaxed (library-free, with additional command --relaxed-prot-inf), quantification strategy of 'Robust LC (high precision)', and library generation set as 'IDs, RT&IM profiling'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about the commercial software availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "69b31c9e-db97-4a09-b247-e401bce39b48",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C99",
+      "claim": "Data were processed with DIA-NN (v1.8 beta 20) using mass accuracy of 20 and 12 ppm at the MS2 and MS1 level, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "All raw data from ZenoTOF 7600 system were acquired by SCIEX OS (v2.1.6) (note that SCIEX OS 3.0, which supports Zeno SWATH MS, is the commercial software available on the market), processed with DIA-NN (v1.8 beta 20) (Demichev et al., 2020) using mass accuracy of 20 and 12 ppm at the MS2 and MS1 level, respectively, scan window of 7, protein inference disabled (spectral library as described above) or relaxed (library-free, with additional command --relaxed-prot-inf), quantification strategy of 'Robust LC (high precision)', and library generation set as 'IDs, RT&IM profiling'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "addd1f0f-230d-4867-811e-6b27bc0c0904",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C100",
+      "claim": "A 1% run-specific q-value filter was automatically applied at the precursor level by DIA-NN.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a 1% run-specific q-value filter was automatically applied at the precursor level by DIA-NN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data filtering methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "1d5c7f51-8166-4862-b08d-0272a56a19ad",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C101",
+      "claim": "To compare the protein identification numbers in the dilution series between different injection amounts and LC-MS modes, a 1% global protein group q-value filter was applied.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, to compare the protein identification numbers in the dilution series between different injection amounts and LC-MS modes, a 1% global protein group q-value filter (Lib.PG.Q.Value column in the report) was also applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data filtering methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "87cdc912-6ff1-4a8b-9568-90a1ec471ac9",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C102",
+      "claim": "For the LFQbench-type two-species benchmarks for quantification accuracy, a 1% global protein group q-value filter and 1% run-specific protein group q-value were used.",
+      "claim_type": "EXPLICIT",
+      "source": "For the LFQbench-type two-species benchmarks for quantification accuracy, a 1% global protein group q-value filter and 1% run-specific protein group q-value were used instead (Lib.PG.Q.Value and PG.Q.Value column in the report).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data filtering methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "6ab39ccf-52cb-448d-bb69-a207ad7133bf",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C103",
+      "claim": "In any experiment processed using the MBR mode in DIA-NN, 1% global precursor q-value filtering is also applied automatically.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in any experiment processed using the MBR mode in DIA-NN, 1% global precursor q-value filtering is also applied automatically (Demichev et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data filtering methods, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "777fea3b-1226-4b34-8010-94194cacc2ec",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C104",
+      "claim": "CV values were calculated for proteins or precursors identified in all three replicate measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "CV values were calculated for proteins or precursors identified in all three replicate measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "cffc35ba-b406-4516-8a55-2b97253f4b6e",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C105",
+      "claim": "The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD036786.",
+      "claim_type": "EXPLICIT",
+      "source": "The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2022) partner repository with the dataset identifier PXD036786.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "fe22ef09-92c0-46dc-b492-7a7874ecef5b",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C106",
+      "claim": "For the 40 variable window SWATH acquisition scheme, 26,115 precursors from 3904 proteins were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 40 variable window SWATH acquisition scheme, 26,115 precursors from 3904 proteins were identified; the 60 variable window SWATH acquisition scheme identified 25,884 precursors from 4025 proteins; and the 85 variable window SWATH acquisition scheme identified 25,945 precursors from 3995 proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from comparing different SWATH window schemes, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "7851dd05-236c-40c5-8d7c-4818dcdae985",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C107",
+      "claim": "The 60 variable window SWATH acquisition scheme identified 25,884 precursors from 4025 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 40 variable window SWATH acquisition scheme, 26,115 precursors from 3904 proteins were identified; the 60 variable window SWATH acquisition scheme identified 25,884 precursors from 4025 proteins; and the 85 variable window SWATH acquisition scheme identified 25,945 precursors from 3995 proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from comparing different SWATH window schemes, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "b9b15efc-12d0-437c-9183-db72f2c7e688",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C108",
+      "claim": "The 85 variable window SWATH acquisition scheme identified 25,945 precursors from 3995 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 40 variable window SWATH acquisition scheme, 26,115 precursors from 3904 proteins were identified; the 60 variable window SWATH acquisition scheme identified 25,884 precursors from 4025 proteins; and the 85 variable window SWATH acquisition scheme identified 25,945 precursors from 3995 proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative result from comparing different SWATH window schemes, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "2d494339-4339-43ea-a9c1-7be1e50397ff",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "claim_id": "C109",
+      "claim": "There is very little difference in identification performance with window number of 60 or 85 in 100 ng K562 human cell line standard injection with various SWATH acquisition schemes.",
+      "claim_type": "EXPLICIT",
+      "source": "(Unique precursor and protein identification via different windows in 100 ng K562 human cell line standard injection with various SWATH acquisition schemes are shown in Figure 5, showing very little difference in identification performance with window number of 60 or 85.)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the comparison shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "aa3294c0-d4a3-4840-a195-c45f4e35351e",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Zeno SWATH MS is a novel data-independent acquisition technique that employs a linear ion trap (Zeno trap) to increase MS/MS duty cycle from 5-25% to >90%, thereby increasing fragment ion intensity 4-20 times without loss of mass accuracy and resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C21, C68-C71 collectively describe the Zeno trap mechanism and its integration with SWATH MS. The technical description is supported by citations (C21, C68, C70, C71) and Figure 1\u2014figure supplement 1. The mechanism is clearly explained: fragment ions are trapped in an axial pseudopotential well and released with timing aligned to the TOF accelerator pulse, achieving >90% duty cycle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "1f2dcd4a-b4ed-4796-8734-4250df750320",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using 20 min micro-flow chromatography with 62.5 ng K562 cell line standard, Zeno SWATH MS identified 5179 consistently quantified proteins (median CV 6%, 89% with CV<20%) and 40,209 precursors (77% with CV<20%), substantially outperforming conventional SWATH MS which identified 2743 proteins (76% with CV<20%) and 16,022 precursors (median CV 11%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 provide comprehensive quantitative comparisons between Zeno SWATH MS and conventional SWATH MS on the same instrument and sample. The data show consistent improvements in both protein and precursor identification and quantification precision, supported by Figure 1a-b. The experimental design includes appropriate replicates (n=3) and statistical measures (CV values).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "c8e9b4c0-0eb9-46d0-b000-b9e1f535ab15",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In two-species benchmark experiments (human/yeast mixtures), Zeno SWATH MS quantified 3414 human and 1816 yeast proteins with improved accuracy (median CV 6.9-7% for human) compared to SWATH MS (2064 human, 973 yeast proteins; median CV 12.7-12.6%), with gains primarily from better quantification of low-abundant proteins and more accurate representation of known mixing ratios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C38 describe LFQbench-type validation experiments with defined mixing ratios. The results demonstrate both increased protein identification (65-133% more proteins depending on injection amount) and improved quantification accuracy, particularly for low-abundant proteins. The data are supported by Figures 1c-f and supplementary figures, with appropriate statistical analysis showing correlation and ratio accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "6794cc75-f504-4669-b380-de51812504ef",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In concentration series experiments with 62.5 ng K562 standard, Zeno SWATH MS on the ZenoTOF 7600 identified 62,769 precursors and 5206 proteins, matching the performance of conventional SWATH MS at 500 ng (64,316 precursors, 5242 proteins), representing an ~8-fold improvement in sensitivity and achieving 4636 precursors/min compared to 2874 precursors/min for SWATH MS on the same instrument.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 provide systematic comparison across three platforms (TripleTOF 6600, ZenoTOF 7600 SWATH, ZenoTOF 7600 Zeno SWATH) using library-free analysis to avoid bias. The data demonstrate clear sensitivity improvements with appropriate controls and normalization by gradient time. Results are supported by Figure 2a-b and supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "483da59d-a81f-49d6-b949-f625a4592a8c",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Zeno SWATH MS increased protein identification to 5206 protein groups compared to 3690 for SWATH MS on the 7600 system, with gains primarily from improved detection of low-abundant proteins, while maintaining high correlation (r\u00b2=0.93) with SWATH MS for high-abundant proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 describe dynamic range improvements validated against a reference dataset (Bekker-Jensen et al., 2017) with protein copy numbers. The correlation analysis (Figure 2d) demonstrates that improvements are genuine and not artifacts, with agreement for high-abundant proteins and divergence for low-abundant ones, as expected from the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "a126d798-2266-49cd-9eb9-2b3331e5662a",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Using 5 min analytical flow-rate chromatography (800 \u00b5l/min), Zeno SWATH MS identified 4907 proteins from 2 \u00b5g K562 standard (median CV 6%, 92% with CV<20%) compared to 3250 proteins for SWATH MS, and achieved ~3000 protein identifications from only 250 ng, matching SWATH MS performance at 2 \u00b5g.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 demonstrate that Zeno SWATH MS enables high-throughput analytical flow-rate chromatography with reduced sample requirements. The ~8-fold reduction in required sample amount (250 ng vs 2 \u00b5g for similar performance) is consistent with the micro-flow results. Data are supported by Figure 3a-b with appropriate replicates and CV measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "a36f7d33-487d-4d03-8211-351caf4533ea",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Zeno SWATH MS demonstrated improved performance across diverse sample types: human plasma (245 proteins from 62.5 ng, 160 proteins from 15 ng), yeast (2915 proteins from 62.5 ng vs 1660 for SWATH), E. coli (2131 proteins from 62.5 ng vs 1768 for SWATH), and chickpea (3815 proteins from 62.5 ng, matching SWATH performance at 500 ng).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63 demonstrate generalizability across different biological matrices with varying dynamic ranges and complexities. The consistent ~8-fold improvement in sensitivity across diverse samples (plasma, yeast, bacteria, plant) validates the technology's broad applicability. Data are supported by Figure 4 and supplementary figures with appropriate concentration series.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "c2775b1f-d6f4-4ff0-8ca0-f89314297030",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The sensitivity limitation of TOF mass spectrometers in SWATH MS is primarily due to low MS/MS duty cycle (5-25%), where only a small proportion of fragment ions are positioned correctly to enter the TOF accelerator during each pulse, disproportionately affecting low-m/z ions and limiting detection of low-abundance samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 and C64-C67 provide the technical rationale for the Zeno trap innovation. The explanation of TOF duty cycle limitations is consistent with established mass spectrometry principles and provides clear mechanistic context for why the Zeno trap improves sensitivity. This is background knowledge appropriately cited and explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "f5d0247d-c895-4287-bc8e-8312edad1e43",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The benchmark experiments were performed on a ZenoTOF 7600 system running SCIEX OS 2.1.6 with an experimental ionization threshold to prevent detector damage, limiting maximum injection to 62.5 ng, though subsequent software releases (SCIEX OS 3.0) enabled higher loads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 transparently describe experimental limitations and subsequent improvements. This is important methodological information that explains why higher sample amounts were not tested in the benchmark, though it does not invalidate the low-sample-amount findings which are the primary focus. The disclosure of this limitation and its resolution is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "f8322b59-080e-42ae-be6a-31e9697f962c",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Zeno SWATH MS increases sensitivity and expands proteomic dynamic range coverage across all tested chromatographic methods, facilitating sensitive high-throughput proteomic experiments with low sample amounts and improving both protein identification numbers and quantification precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 and C88 are summary conclusions supported by the comprehensive experimental data across multiple sample types, chromatographic methods, and sample amounts (C22-C63). The conclusions are appropriately conservative and directly supported by the presented data showing consistent improvements in sensitivity, dynamic range, and precision.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "1f1d25b1-ac9d-4143-8b4f-aa33a446f2cc",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Lowering sample requirements in high-throughput proteomics enables three key applications: extending proteomics to studies with limited material availability, decreasing mass spectrometer cleaning cycles and increasing uptime, and reducing costs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 are logical inferences from the demonstrated 8-fold reduction in sample requirements. These are reasonable practical implications of the technical improvements, though they represent potential applications rather than directly tested outcomes. The inferences are appropriately presented as applications rather than proven results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "cae77c54-8af2-4ccb-9a10-d83f717ed824",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Comparison of SWATH acquisition schemes with 40, 60, and 85 variable windows on 100 ng K562 standard showed similar identification performance for 60 and 85 windows (25,884-25,945 precursors, 3995-4025 proteins), with minimal differences in identification numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C109 describe method optimization experiments shown in Figure 5. The data demonstrate that window number optimization plateaus between 60-85 windows, providing justification for the window schemes used in the main experiments. This is appropriate method validation with clear quantitative results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "8be8f6eb-5a31-4978-8ada-f3ee89f5bdde",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Potential future applications of Zeno SWATH MS include analysis of finger-prick plasma samples or nano-sampling devices, single-cell proteomics when coupled with nano-flow chromatography, and combination with scanning SWATH for further sensitivity gains in high-throughput analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74, C92, and C95 are explicitly speculative about future applications ('could be applied', 'might benefit', 'might result'). While these are reasonable extrapolations from the demonstrated capabilities, they represent untested hypotheses rather than validated results. The speculative nature is appropriately indicated in the text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    },
+    {
+      "id": "a4397761-2636-4c41-ada2-1857d545e1f2",
+      "content_id": "7b58c8ab-6051-4a14-827e-39419b7284fa",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Data were acquired using SCIEX OS v2.1.6 and processed with DIA-NN v1.8 beta 20 using specified mass accuracy parameters (20 and 12 ppm at MS2 and MS1 levels), with 1% FDR filtering at precursor and protein levels, and CV calculations for proteins/precursors identified in all replicates. Data were deposited to ProteomeXchange (PXD036786).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C105 provide comprehensive methodological details for data acquisition, processing, filtering, and availability. The methods are clearly described with specific software versions, parameters, and filtering criteria. Data deposition in a public repository (PXD036786) enables reproducibility. These are appropriate methodological descriptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:31:53.104654Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cdbc31d9-7c3b-456f-91fe-d2e0fdbb669c",
+      "result_id": "aa3294c0-d4a3-4840-a195-c45f4e35351e"
+    },
+    {
+      "claim_id": "d10ee752-32a5-4ef5-9c30-1c74558c7a40",
+      "result_id": "aa3294c0-d4a3-4840-a195-c45f4e35351e"
+    },
+    {
+      "claim_id": "e0ab9ce0-f989-48eb-82c8-640ae243deb8",
+      "result_id": "aa3294c0-d4a3-4840-a195-c45f4e35351e"
+    },
+    {
+      "claim_id": "7622f1b4-f459-45b4-b5c6-5a209f3eaca6",
+      "result_id": "aa3294c0-d4a3-4840-a195-c45f4e35351e"
+    },
+    {
+      "claim_id": "cc8a7afd-1fdd-461f-83c8-99068704ab59",
+      "result_id": "aa3294c0-d4a3-4840-a195-c45f4e35351e"
+    },
+    {
+      "claim_id": "924c9a06-198a-4eac-acbf-3f384a2ff004",
+      "result_id": "aa3294c0-d4a3-4840-a195-c45f4e35351e"
+    },
+    {
+      "claim_id": "b7d86c22-66ab-4878-b915-04fb5af0dddd",
+      "result_id": "1f2dcd4a-b4ed-4796-8734-4250df750320"
+    },
+    {
+      "claim_id": "ee8330c4-1a7f-4748-a50b-8fea4a9a6f40",
+      "result_id": "1f2dcd4a-b4ed-4796-8734-4250df750320"
+    },
+    {
+      "claim_id": "f874d6a6-2880-4569-be4d-2c2b4a461f99",
+      "result_id": "1f2dcd4a-b4ed-4796-8734-4250df750320"
+    },
+    {
+      "claim_id": "e68eac1b-0e95-4fdc-8ca3-1dda6f5d877f",
+      "result_id": "1f2dcd4a-b4ed-4796-8734-4250df750320"
+    },
+    {
+      "claim_id": "28a0661e-8bb7-4c7c-909e-03ba0407a7e9",
+      "result_id": "1f2dcd4a-b4ed-4796-8734-4250df750320"
+    },
+    {
+      "claim_id": "7aa02fec-2bff-4f2e-9ded-52acca8ecb57",
+      "result_id": "1f2dcd4a-b4ed-4796-8734-4250df750320"
+    },
+    {
+      "claim_id": "5efabc60-b2ad-4c06-b2d3-f1c0a9f0091c",
+      "result_id": "1f2dcd4a-b4ed-4796-8734-4250df750320"
+    },
+    {
+      "claim_id": "dc1d6ab3-cde0-43db-ac98-968c17593b91",
+      "result_id": "c8e9b4c0-0eb9-46d0-b000-b9e1f535ab15"
+    },
+    {
+      "claim_id": "8bbbb59c-16d1-49cd-b893-fc661b725ff1",
+      "result_id": "c8e9b4c0-0eb9-46d0-b000-b9e1f535ab15"
+    },
+    {
+      "claim_id": "e87c1530-7939-4ee3-a7b6-064a996effbd",
+      "result_id": "c8e9b4c0-0eb9-46d0-b000-b9e1f535ab15"
+    },
+    {
+      "claim_id": "9c22fab9-b97c-452c-a12c-17bc285a1e76",
+      "result_id": "c8e9b4c0-0eb9-46d0-b000-b9e1f535ab15"
+    },
+    {
+      "claim_id": "f54f918b-2087-4137-945a-20638ea98514",
+      "result_id": "c8e9b4c0-0eb9-46d0-b000-b9e1f535ab15"
+    },
+    {
+      "claim_id": "ca816736-a6f1-4650-b80d-e0df79a566cf",
+      "result_id": "c8e9b4c0-0eb9-46d0-b000-b9e1f535ab15"
+    },
+    {
+      "claim_id": "18a85629-a722-4eb3-9544-358289feca30",
+      "result_id": "c8e9b4c0-0eb9-46d0-b000-b9e1f535ab15"
+    },
+    {
+      "claim_id": "773626ee-5abf-46fb-b7f9-5df228b27bab",
+      "result_id": "c8e9b4c0-0eb9-46d0-b000-b9e1f535ab15"
+    },
+    {
+      "claim_id": "e295a98e-fce2-4033-8af5-f87240b84153",
+      "result_id": "c8e9b4c0-0eb9-46d0-b000-b9e1f535ab15"
+    },
+    {
+      "claim_id": "12a027d4-af99-45b4-aaf8-8db07ee05c6c",
+      "result_id": "c8e9b4c0-0eb9-46d0-b000-b9e1f535ab15"
+    },
+    {
+      "claim_id": "aa5815c5-66bd-4214-a51d-c7d059a5c9dc",
+      "result_id": "6794cc75-f504-4669-b380-de51812504ef"
+    },
+    {
+      "claim_id": "ef14e8ae-e4eb-4007-a189-611084ea8457",
+      "result_id": "6794cc75-f504-4669-b380-de51812504ef"
+    },
+    {
+      "claim_id": "a3226982-755c-4e77-8d6a-bcd2f2dbc92a",
+      "result_id": "6794cc75-f504-4669-b380-de51812504ef"
+    },
+    {
+      "claim_id": "8d8202e8-d001-4ed2-ae53-5e9f5f0e76a9",
+      "result_id": "6794cc75-f504-4669-b380-de51812504ef"
+    },
+    {
+      "claim_id": "471d32ae-2cd2-4dcc-afc8-d89c0ed00fd2",
+      "result_id": "6794cc75-f504-4669-b380-de51812504ef"
+    },
+    {
+      "claim_id": "e257763a-e348-4460-813a-bafafa622a91",
+      "result_id": "6794cc75-f504-4669-b380-de51812504ef"
+    },
+    {
+      "claim_id": "343bb5a6-988f-4b4e-8937-fa52abc0d1f8",
+      "result_id": "6794cc75-f504-4669-b380-de51812504ef"
+    },
+    {
+      "claim_id": "965ad27b-4128-440e-8c10-6f6a46437df5",
+      "result_id": "6794cc75-f504-4669-b380-de51812504ef"
+    },
+    {
+      "claim_id": "5e056654-ee58-4a0d-b322-df336f3ed15d",
+      "result_id": "483da59d-a81f-49d6-b949-f625a4592a8c"
+    },
+    {
+      "claim_id": "ee80c3f6-35eb-4ae7-b483-f0505b38864f",
+      "result_id": "483da59d-a81f-49d6-b949-f625a4592a8c"
+    },
+    {
+      "claim_id": "595d09cf-54ba-4e6d-91f3-4ecfe2918939",
+      "result_id": "483da59d-a81f-49d6-b949-f625a4592a8c"
+    },
+    {
+      "claim_id": "66a1b381-7432-45f3-b78c-d1a3f662b924",
+      "result_id": "483da59d-a81f-49d6-b949-f625a4592a8c"
+    },
+    {
+      "claim_id": "3ec5163d-52c5-4cf1-8d64-2bc8b14750d6",
+      "result_id": "a126d798-2266-49cd-9eb9-2b3331e5662a"
+    },
+    {
+      "claim_id": "34cb7eed-6bb5-4563-bc40-3876cb17688a",
+      "result_id": "a126d798-2266-49cd-9eb9-2b3331e5662a"
+    },
+    {
+      "claim_id": "e12d2d37-bb03-4000-9a97-895c49170846",
+      "result_id": "a126d798-2266-49cd-9eb9-2b3331e5662a"
+    },
+    {
+      "claim_id": "16ff8cfc-557d-43a6-9359-46f54e61cebd",
+      "result_id": "a126d798-2266-49cd-9eb9-2b3331e5662a"
+    },
+    {
+      "claim_id": "16840898-204a-4412-b15e-f762fd6c678e",
+      "result_id": "a126d798-2266-49cd-9eb9-2b3331e5662a"
+    },
+    {
+      "claim_id": "74c86803-6f8a-411f-8f97-8bbf340dca38",
+      "result_id": "a126d798-2266-49cd-9eb9-2b3331e5662a"
+    },
+    {
+      "claim_id": "0132a948-4c60-4728-8519-3075f8cce2c7",
+      "result_id": "a36f7d33-487d-4d03-8211-351caf4533ea"
+    },
+    {
+      "claim_id": "89c0bdb4-a954-4a1a-a4c2-35cdf7794549",
+      "result_id": "a36f7d33-487d-4d03-8211-351caf4533ea"
+    },
+    {
+      "claim_id": "50cc541a-65e9-4393-b3a4-a9a0bbc16738",
+      "result_id": "a36f7d33-487d-4d03-8211-351caf4533ea"
+    },
+    {
+      "claim_id": "a37d3fae-2fa9-4eff-8e14-7510e32b3e3e",
+      "result_id": "a36f7d33-487d-4d03-8211-351caf4533ea"
+    },
+    {
+      "claim_id": "444c5236-8ccb-492e-bb9e-c5daae9e51da",
+      "result_id": "a36f7d33-487d-4d03-8211-351caf4533ea"
+    },
+    {
+      "claim_id": "0da7da18-6ef0-49d4-a368-cb2fb0ef3254",
+      "result_id": "a36f7d33-487d-4d03-8211-351caf4533ea"
+    },
+    {
+      "claim_id": "58bf392d-6591-4a0b-a92e-7c59fa4dc0f1",
+      "result_id": "a36f7d33-487d-4d03-8211-351caf4533ea"
+    },
+    {
+      "claim_id": "5518aed7-3fcf-4819-978f-f3a92d0ad03a",
+      "result_id": "c2775b1f-d6f4-4ff0-8ca0-f89314297030"
+    },
+    {
+      "claim_id": "588ee397-d98f-4108-8e18-c0f6a904cb1c",
+      "result_id": "c2775b1f-d6f4-4ff0-8ca0-f89314297030"
+    },
+    {
+      "claim_id": "a3e4ba4c-17b5-477a-9db5-c9ed5683ea49",
+      "result_id": "c2775b1f-d6f4-4ff0-8ca0-f89314297030"
+    },
+    {
+      "claim_id": "5d120b73-65a4-47a9-9c8e-46971d485f66",
+      "result_id": "c2775b1f-d6f4-4ff0-8ca0-f89314297030"
+    },
+    {
+      "claim_id": "7522e4ca-8545-4f0b-b1e4-4203cf2af600",
+      "result_id": "c2775b1f-d6f4-4ff0-8ca0-f89314297030"
+    },
+    {
+      "claim_id": "01ba6179-eeba-47fd-9987-516eea1f4ccc",
+      "result_id": "c2775b1f-d6f4-4ff0-8ca0-f89314297030"
+    },
+    {
+      "claim_id": "64ab4951-37a2-43be-a896-129c8fa2be1d",
+      "result_id": "f5d0247d-c895-4287-bc8e-8312edad1e43"
+    },
+    {
+      "claim_id": "2f0cb28b-24d9-4f89-8609-f2bd9ac0d87c",
+      "result_id": "f5d0247d-c895-4287-bc8e-8312edad1e43"
+    },
+    {
+      "claim_id": "42569d19-b9a5-43f1-becd-c41fc6de476f",
+      "result_id": "f5d0247d-c895-4287-bc8e-8312edad1e43"
+    },
+    {
+      "claim_id": "cdd9dcf9-e21e-4d17-9143-6f01146a1e4e",
+      "result_id": "f8322b59-080e-42ae-be6a-31e9697f962c"
+    },
+    {
+      "claim_id": "f145dd8c-5a22-4bd1-b526-8eaa4ef985ba",
+      "result_id": "f8322b59-080e-42ae-be6a-31e9697f962c"
+    },
+    {
+      "claim_id": "ec45be8c-b4ae-4258-ae09-bb0dc415323d",
+      "result_id": "f8322b59-080e-42ae-be6a-31e9697f962c"
+    },
+    {
+      "claim_id": "4bf32c60-0407-4863-a6f3-a4adddffd4dc",
+      "result_id": "1f1d25b1-ac9d-4143-8b4f-aa33a446f2cc"
+    },
+    {
+      "claim_id": "6f147b67-ca5f-4018-82d8-01352266a0e9",
+      "result_id": "1f1d25b1-ac9d-4143-8b4f-aa33a446f2cc"
+    },
+    {
+      "claim_id": "1f44bbcf-daf3-4f63-8de6-c0bcec6fed63",
+      "result_id": "1f1d25b1-ac9d-4143-8b4f-aa33a446f2cc"
+    },
+    {
+      "claim_id": "fe22ef09-92c0-46dc-b492-7a7874ecef5b",
+      "result_id": "cae77c54-8af2-4ccb-9a10-d83f717ed824"
+    },
+    {
+      "claim_id": "7851dd05-236c-40c5-8d7c-4818dcdae985",
+      "result_id": "cae77c54-8af2-4ccb-9a10-d83f717ed824"
+    },
+    {
+      "claim_id": "b9b15efc-12d0-437c-9183-db72f2c7e688",
+      "result_id": "cae77c54-8af2-4ccb-9a10-d83f717ed824"
+    },
+    {
+      "claim_id": "2d494339-4339-43ea-a9c1-7be1e50397ff",
+      "result_id": "cae77c54-8af2-4ccb-9a10-d83f717ed824"
+    },
+    {
+      "claim_id": "a48cca1a-850b-49d1-ae73-a33b129a1d6e",
+      "result_id": "8be8f6eb-5a31-4978-8ada-f3ee89f5bdde"
+    },
+    {
+      "claim_id": "640a679e-484e-441a-8f4d-f86dd9b23536",
+      "result_id": "8be8f6eb-5a31-4978-8ada-f3ee89f5bdde"
+    },
+    {
+      "claim_id": "3ba7d247-b562-4eda-9c80-ee1f06a4c13b",
+      "result_id": "8be8f6eb-5a31-4978-8ada-f3ee89f5bdde"
+    },
+    {
+      "claim_id": "f86b46c8-53d4-47af-943c-d18e04b409e4",
+      "result_id": "a4397761-2636-4c41-ada2-1857d545e1f2"
+    },
+    {
+      "claim_id": "41a6668f-fa9c-4cd2-9f7a-5ffd5a237c80",
+      "result_id": "a4397761-2636-4c41-ada2-1857d545e1f2"
+    },
+    {
+      "claim_id": "69b31c9e-db97-4a09-b247-e401bce39b48",
+      "result_id": "a4397761-2636-4c41-ada2-1857d545e1f2"
+    },
+    {
+      "claim_id": "addd1f0f-230d-4867-811e-6b27bc0c0904",
+      "result_id": "a4397761-2636-4c41-ada2-1857d545e1f2"
+    },
+    {
+      "claim_id": "1d5c7f51-8166-4862-b08d-0272a56a19ad",
+      "result_id": "a4397761-2636-4c41-ada2-1857d545e1f2"
+    },
+    {
+      "claim_id": "87cdc912-6ff1-4a8b-9568-90a1ec471ac9",
+      "result_id": "a4397761-2636-4c41-ada2-1857d545e1f2"
+    },
+    {
+      "claim_id": "6ab39ccf-52cb-448d-bb69-a207ad7133bf",
+      "result_id": "a4397761-2636-4c41-ada2-1857d545e1f2"
+    },
+    {
+      "claim_id": "777fea3b-1226-4b34-8010-94194cacc2ec",
+      "result_id": "a4397761-2636-4c41-ada2-1857d545e1f2"
+    },
+    {
+      "claim_id": "cffc35ba-b406-4516-8a55-2b97253f4b6e",
+      "result_id": "a4397761-2636-4c41-ada2-1857d545e1f2"
+    }
+  ],
+  "comparisons": []
+}

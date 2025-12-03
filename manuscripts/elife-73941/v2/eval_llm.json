@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors determined cryo-EM structures of human ATAD1 in complex with a peptide substrate, resolving two distinct conformational states (open and closed) at 3.7 \u00c5 and 3.2 \u00c5 resolution, respectively. The structures reveal hexameric assemblies resembling those observed in yeast Msp1 and other AAA proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C42-C50 collectively describe the cryo-EM structure determination with appropriate resolution, particle numbers, and structural features. The data processing workflow is documented, resolutions are within acceptable ranges for model building, and the structures are consistent with prior work on Msp1. The structural observations are well-supported by the density maps and refinement statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C131"
+    ],
+    "result": "ATAD1 adopts a conserved AAA protein architecture with six subunits forming a helical spiral assembly. The structures reveal hinge motions between large and small subdomains during the ATP hydrolysis cycle, with subunits undergoing nucleotide-dependent conformational changes during substrate translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 and C131 describe the overall architecture and mechanism based on the cryo-EM structures. The observations of hinge motion, subunit translocation, and nucleotide-dependent conformational changes are directly supported by the structural data and are consistent with established AAA protein mechanisms. The structural comparisons to Msp1 and other AAA proteins validate these interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C9",
+      "C10"
+    ],
+    "result": "A C-terminal \u03b1-helix (\u03b111, amino acids 333-346) was identified in ATAD1 that mediates intersubunit contacts and distinguishes ATAD1 from other AAAMC proteins. This helix forms extensive contacts with adjacent subunits and lies beneath pore-loop 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C73, C9, and C10 describe the structural identification of \u03b111 based on cryo-EM density. The modeling is appropriate given the resolution, and the specific interactions described (L336, A339, I340, M343, A349, S346 with R254) are supported by the structural data. The distinction from other AAAMC proteins is validated by structural comparisons shown in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C132"
+    ],
+    "result": "The \u03b111 helix is required for ATAD1 function and displays a recessive phenotype. Deletion of \u03b111 (ATAD1\u0394\u03b111) causes substrate mislocalization in ATAD1-/- cells but not in wild-type cells, except at high expression levels where a positive correlation exists between expression and mislocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 and C132 describe functional validation using the cell-based mislocalization assay. The data show clear differences between ATAD1\u0394\u03b111 and ATAD11-351 (which retains \u03b111), with appropriate statistical analysis (Mann-Whitney test, p<0.0001). The recessive phenotype is demonstrated by the lack of dominant-negative effect in WT cells, and the dose-dependent effect at high expression provides mechanistic insight. Multiple experimental approaches (imaging, PCC quantification) support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "\u03b111 mediates oligomerization in vitro. ATAD1\u0394\u03b111 elutes exclusively as a monomer on size exclusion chromatography, shows substantially reduced peptide-binding affinity, displays much lower ATPase activity, and cannot be stimulated by peptide substrate addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 and C105-C107 provide biochemical validation of \u03b111's role in oligomerization. The SEC data clearly show monomeric vs. oligomeric behavior, the fluorescence polarization assay demonstrates reduced substrate binding, and the ATPase assay shows loss of both basal and substrate-stimulated activity. These multiple orthogonal approaches consistently support the conclusion that \u03b111 is required for functional oligomer formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "A microscopy-based assay was developed to directly visualize and quantify ATAD1 activity by monitoring mislocalization of EGFP-Gos28 to mitochondria. The assay uses Pearson correlation coefficient (PCC) to quantify colocalization and successfully distinguishes functional from non-functional ATAD1 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 describe the development and validation of the cell-based assay. The approach is well-designed with appropriate controls (ATAD1-/-, WT ATAD1, ATAD1E193Q), uses established image analysis methods (CellProfiler), and shows statistically significant differences (p<0.0001) between functional and non-functional variants. The validation with Pex26 (C83) demonstrates generalizability. The quantitative PCC metric provides objective measurement of substrate mislocalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The cryo-EM structures reveal peptide substrate density in the central pore, with six pore-loops 1 forming a spiral staircase. Pore-loop 1 contains a KX1X2G motif where X1 is W166 and X2 is Y167, both of which intercalate into substrate side chains. Pore-loop 2 uses H206 to contact the substrate backbone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C118 describe substrate-binding interactions observed in the cryo-EM structures. The peptide density is clearly visible at the reported resolution, and the modeling as polyalanine is appropriate given the composite nature of co-purified peptides. The specific interactions of W166, Y167, and H206 with the substrate are supported by the structural data and are consistent with previous Msp1 structures (C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C7",
+      "C8",
+      "C130"
+    ],
+    "result": "Both aromatic amino acids in pore-loop 1 (W166 and Y167) are required for ATAD1 function and cannot be substituted by aliphatic amino acids. Mutations W166A, Y167A, W166V, Y167V, and Y167L inactivate ATAD1, while the aromatic mutant Y167F retains function. W166L shows partial activity loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126, C7, C8, and C130 describe functional validation of pore-loop 1 residues using the cell-based assay. The data show clear statistical significance (p<0.0001 for most mutants) and are consistent across biological replicates. The finding that aromatic character is required (Y167F functional, but Y167V/L not) provides strong evidence for the importance of aromaticity. This contrasts with previous yeast data (C32), which the authors appropriately discuss as potentially reflecting assay sensitivity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "In vitro peptide-binding assays show that pore-loop 1 mutations (W166A, W166V, W166L, Y166A, Y167V) dramatically reduce (>100-fold) binding to peptide substrate P13. H206A and Y167F show WT-like activity in cells but weaker binding in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 provide in vitro validation of the functional importance of pore-loop residues. The fluorescence polarization assay is appropriate for measuring binding affinity, and the results are consistent with the cell-based assay for most mutants. The discrepancy between cell-based and in vitro results for H206A and Y167F is acknowledged and appropriately discussed as potentially reflecting assay sensitivity or substrate differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Mutations in H206 (pore-loop 2) did not impact ATAD1 function in the cell-based assay, despite structural data showing interaction between H206 and the substrate backbone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 reports a negative result that is clearly stated and supported by the data in Figure 5A. While the structural data show H206-substrate interactions (C118), the functional assay does not detect impairment. This is appropriately reported and the authors acknowledge the discrepancy with in vitro binding data (C129), suggesting H206 may be less critical than pore-loop 1 residues or that the assay is less sensitive to this mutation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Among disease-relevant ATAD1 mutations tested, E267stop significantly impacted function while H357Rfs*15, D221H, R9H, and E290K displayed WT-like phenotypes in the mislocalization assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 report functional testing of disease-associated mutations. The data are clearly presented in Figure 4\u2014figure supplement 4 with appropriate statistical analysis. The finding that most mutations do not affect Gos28 extraction suggests these disease phenotypes may arise through different mechanisms, which the authors appropriately note. The E267stop truncation would remove \u03b111 and the C-terminal domain, consistent with loss of function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ATAD1 belongs to the AAAMC clade but differs structurally from other members (katanin, spastin, Vps4) in the C-terminal region. While other AAAMC proteins have a shorter \u03b111 followed by \u03b112 that contacts the clockwise adjacent subunit, ATAD1 has a longer \u03b111 that contacts the counterclockwise subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 and C33-C35 describe structural comparisons supported by Figure 2\u2014figure supplement 2 and established knowledge of AAAMC proteins. The structural differences are clearly documented, and the functional importance of \u03b112 in other AAAMC proteins (C76) is supported by citation. The distinction is significant for understanding ATAD1's unique features within this protein family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C119",
+      "C120",
+      "C28",
+      "C29"
+    ],
+    "result": "Amino acids used by ATAD1 to contact substrate are phylogenetically conserved within the Msp1/ATAD1 family but differ from other AAA proteins. Most AAA proteins use only one aromatic amino acid in pore-loop 1 and an aliphatic amino acid at the X2 position that does not contact substrate, while ATAD1/Msp1 use three aromatic amino acids across two pore-loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C119, C120, C28, and C29 describe comparative structural features based on established knowledge of AAA protein structures and the current structural data. The distinctions are well-documented in the literature and supported by the structural observations. This provides important context for understanding ATAD1's specialized function in membrane protein extraction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors hypothesize that structural elements facing the cytosolic side of ATAD1/Msp1 (such as \u03b111) may be evolutionarily adapted to interact with adaptors and other factors, and that \u03b111-\u03b112 organizational differences in AAAMC subfamilies may have evolved to suit specialized functions. This view is supported by ATAD1/Msp1 occupying the basal position in the AAAMC evolutionary tree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C135 present evolutionary hypotheses based on structural observations and phylogenetic position. While the structural differences are well-documented and the phylogenetic position is supported by citation (C135), the proposed functional significance of these differences for adaptor interactions is speculative (C133, C134). No direct experimental evidence for adaptor interactions is provided, though the hypothesis is reasonable given known interactions of Msp1 with Cis1 and the proteasome (mentioned in Discussion).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors propose that bulkier, more aromatic pore-loop amino acids provide a tighter grip on substrates, which may be important for extracting hydrophobic membrane proteins even at the cost of slower translocation. This is supported by studies on ClpXP and the observation that Cdc48, another membrane protein extractor, also has two aromatic amino acids in pore-loop 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 present a mechanistic hypothesis supported by citation to ClpXP studies (C136) and comparative analysis with Cdc48 (C138-C139). The hypothesis is reasonable given the functional requirements for membrane protein extraction and is supported by the experimental demonstration that aromatic character is required for ATAD1 function. However, direct measurements of grip strength or translocation speed for ATAD1 are not provided, so this remains a well-supported hypothesis rather than a directly demonstrated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C77",
+      "C78"
+    ],
+    "result": "Background claims establishing ATAD1/Msp1's biological roles, including removal of mislocalized membrane proteins and stuck import substrates from mitochondria, maintenance of proteostasis, and the mechanism of TA protein targeting and mistargeting between ER and mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C24, C77-C78 provide established background knowledge supported by appropriate citations throughout the introduction. These claims accurately represent the current understanding of ATAD1/Msp1 function and TA protein biology based on prior work. The citations are appropriate and the claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C41"
+    ],
+    "result": "Background claims describing previous structural work on Msp1, including the hexameric architecture, mechanism of substrate translocation, hydrophobic central pore, use of multiple aromatic amino acids for substrate contact, and previous mutagenesis results in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C4, C30-C32, and C41 accurately describe prior structural and functional work on Msp1 (Wang et al., 2020) that motivated the current study. The claims are supported by appropriate citations and provide necessary context for understanding the advances made in the current work. The previous finding that Y167V did not significantly impact Msp1 function in yeast (C32) is important context for the contrasting results in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Secondary structure prediction shows ATAD1 lacks \u03b112 and instead has a longer \u03b111. Several disease-relevant mutations cluster around \u03b111, including schizophrenia-associated mutations (R9H, D221H, E290K), an encephalopathy-associated mutation (H357Rfs*15), and a mutation causing hypertonia, seizure, and death (E267stop).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe predictions and clinical associations that motivated structural investigation of the \u03b111 region. The secondary structure prediction (C36) is supported by Figure 1\u2014figure supplement 1, and the disease associations (C37-C40) are supported by appropriate citations to clinical studies. These claims provide important motivation for the structural and functional characterization of \u03b111.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C140",
+      "C141"
+    ],
+    "result": "The authors conclude that while ATAD1/Msp1 utilize a conceptually similar mechanism to other AAA proteins, the high conservation of unique features between ATAD1 and Msp1 suggests evolution fine-tuned these enzymes early in eukaryotic evolution for membrane protein extraction and protein quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 present the main conclusions of the study based on the structural and functional data. The conclusion that ATAD1 uses a conserved AAA mechanism is well-supported by the structural data (C131, C51-C61). The conclusion about evolutionary fine-tuning is supported by the high conservation between human ATAD1 and yeast Msp1 (C24, C51), the unique structural features identified (\u03b111, multiple aromatic pore-loop residues), and their demonstrated functional importance. This is a reasonable synthesis of the findings.",
+    "result_type": "MAJOR"
+  }
+]

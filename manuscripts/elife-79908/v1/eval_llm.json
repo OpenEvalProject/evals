@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript reviews prior experimental work on category learning in associative cortex. Studies have shown that neurons develop selectivity to abstract variables like category and context, with mixed selectivity patterns. Different brain areas show different correlation patterns: PFC shows negatively correlated, symmetric responses while LIP cortex shows positively correlated, asymmetric responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 accurately summarize established experimental findings from the cited literature. The authors correctly describe the two types of associations studied (fixed and flexible), the development of selectivity in associative cortex, and the contrasting findings between PFC (negative correlations) and LIP (positive correlations). All claims are supported by appropriate citations to experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The model is based on the hypothesis that synaptic connectivity evolves via gradient descent on an error function, which can be implemented in a biologically plausible manner and achieves high performance on tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 establish the theoretical foundation of the model with appropriate citations. The hypothesis that gradient-descent learning can be biologically plausible is supported by multiple recent studies (C13), and the performance capabilities are well-documented in the literature (C12). The central hypothesis (C11) is clearly stated as a modeling assumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "After learning, neurons in the model develop category selectivity that increases from zero to positive values, reproducing experimental observations. This selectivity increase is universal across all circuit models that successfully learned the task, independent of parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C21-C23 are strongly supported by both mathematical analysis and simulations (Figure 2, Figure 2\u2014figure supplement 1A). The model demonstrates that category selectivity consistently increases across parameter variations, matching experimental findings from Freedman et al., 2001; Freedman and Assad, 2006; Reinert et al., 2021. The universality claim (C23) is validated through systematic parameter exploration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C24",
+      "C25",
+      "C26",
+      "C30",
+      "C31",
+      "C33",
+      "C34"
+    ],
+    "result": "Category correlations in the model depend on circuit and task details. Before learning, activity is uncorrelated, but over learning, correlation matrices develop structure. The sign and magnitude of correlations depend on activation function parameters (threshold and gain), learning rates, and number of stimuli. The model predicts that increasing stimuli number pushes correlations from positive to negative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C24-C26, C30-C31, C33-C34 are well-supported by mathematical analysis (Equations 74-77) and simulations (Figures 2, 4). The parameter dependencies are systematically characterized, showing how threshold, gain, learning rate ratios, and stimulus number affect correlation sign. The prediction about stimulus number (C34) follows logically from the analysis. However, experimental validation of these predictions is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Over learning, all activity vectors acquire a component aligned with a common, stimulus-independent direction, leading to clustering by category.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by mathematical analysis (Equation 3) and illustrated in Figure 3. The derivation shows that activity changes can be decomposed into initial activity plus a category-dependent component along a common direction. This geometric insight explains the emergence of category selectivity and is validated by simulations (Figure 2\u2014figure supplement 1B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "The model predicts that selectivity is shaped by connectivity with downstream areas, specifically that selectivity correlates with the strength of synaptic connections to downstream readout neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are supported by mathematical analysis (Equation 65) and simulations (Figures 5B-C, 8A). The prediction that selectivity depends on initial readout connectivity (w\u2080) is derived analytically and validated numerically. The authors appropriately note consistency with recent experimental observations (Glickfeld et al., 2013; Ye et al., 2016; Hirokawa et al., 2019), though direct experimental validation of the specific prediction remains to be done.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In the context-dependent task, average category and context selectivity both increase over learning, starting from weakly negative initial values for category selectivity. These increases are robust across all circuit models regardless of parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C39-C43 are supported by simulations (Figure 6) and mathematical analysis. The initial weak negative category selectivity (C39) is explained by the composite nature of inputs. The robust increases in both category and context selectivity (C40-C43) are demonstrated across parameter variations (Figure 6\u2014figure supplement 1A) and are consistent with experimental findings (Wallis et al., 2001; Stoet and Snyder, 2004).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C51"
+    ],
+    "result": "In the context-dependent task, correlation behavior is variable across circuits and can either increase or decrease depending on parameters. The parameter region leading to positive correlations shrinks substantially compared to the simple task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C51 are supported by simulations (Figure 6F, I) and mathematical analysis (Figure 6\u2014figure supplement 2C, Figure 4D). The variability in correlation behavior is demonstrated across different parameter sets, and the shrinking of positive correlation parameter space is consistent with increased task complexity. The mathematical framework provides mechanistic insight into this phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Context-related structure emerges as a signature of gradient-descent learning because activity changes are determined by both target category and input correlations, leading to context clustering even though the readout neuron does not depend on context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by mathematical analysis (Equation 27) and citation to related work (Canatar et al., 2021). The emergence of context structure is explained mechanistically through the learning dynamics, showing how correlated inputs with similar target categories lead to clustering. This is a non-trivial prediction of the gradient-descent framework that distinguishes it from other learning rules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Neurons strongly connected to the readout develop strong selectivity. Among these, some show mixed selectivity to category and context, others show pure category selectivity, but none show pure context selectivity. This asymmetry arises because the readout learns category but not context, and can be reversed by adding a context readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by mathematical analysis (Equations 172, 181) and simulations (Figure 8A-B, Figure 6\u2014figure supplement 3E-F). The stereotyped distribution of selectivity types is derived analytically and the mechanistic explanation (C54) follows from the model structure. The prediction that adding a context readout changes the pattern (C55) is validated by simulation, providing a testable experimental prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Pure- and mixed-selective neurons can be distinguished based on patterns of initial response gain. Initial activity, though mostly unstructured, plays an important role in breaking symmetry and determining which functional specialization neurons develop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by mathematical analysis (Equation 183) and simulations (Figure 8C). The derivation shows how initial activity patterns, specifically the response gain function, determine whether neurons develop pure or mixed selectivity. This provides mechanistic insight into how task-agnostic initial conditions shape learned representations, though experimental validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Activity measures in the model are modulated by circuit details including activation function, learning rates, and initial connectivity, as well as task features like number of stimuli and context dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by systematic parameter analysis throughout the paper (Figures 4, 7, Figure 2\u2014figure supplement 1A, Figure 6\u2014figure supplement 1A-B). The dependencies on activation function parameters, learning rates, and task complexity are characterized both mathematically and through simulations. This comprehensive analysis validates the claim across multiple activity measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "During learning in the context-dependent task, some neurons develop mixed selectivity to category and context, others develop pure category selectivity, but none develop pure context selectivity. Whether a neuron develops mixed or pure selectivity depends on initial activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by simulations (Figure 8B-C) and mathematical analysis. The stereotyped distribution of selectivity types is demonstrated empirically and explained mechanistically through the relationship between initial activity patterns and selectivity outcomes. The dependence on initial activity (C20) is derived analytically (Equation 183) and illustrated in Figure 8C.",
+    "result_type": "MAJOR"
+  }
+]

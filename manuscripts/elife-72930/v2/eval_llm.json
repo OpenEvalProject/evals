@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "High sodium intake is a major global health problem associated with cardiovascular disease mortality, particularly in low- and middle-income countries, with current consumption exceeding WHO targets of <5 g/day and requiring a 30% reduction by 2025.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish the public health context through appropriate citations to GBD 2019 data and WHO guidelines. These are well-established facts in the literature and provide valid motivation for the study. The claims are properly attributed to authoritative sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The model development dataset comprised 49,776 individuals from 21 surveys across 19 countries (2013-2019), with substantial variation in demographic and physiological characteristics across populations (e.g., mean age 33-43 years, mean SBP 117.7-134.6 mmHg, mean weight 54.6-98.6 kg).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 provide descriptive statistics for the training dataset with appropriate confidence intervals. The data appear plausible and are referenced to appendix tables. The sample size is adequate for descriptive purposes, though limitations for ML modeling are acknowledged elsewhere.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Observed salt intake (via INTERSALT equation) in the test dataset showed consistent patterns: higher in men than women (8.5-10.4 g/day vs 6.8-8.3 g/day), higher in those \u226530 years old, higher in those with raised blood pressure, and varying by BMI category (all p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 report observed patterns in the test data with statistical significance testing. The sex differences and associations with age and blood pressure are biologically plausible and consistent with known physiology. Statistical tests are appropriately applied with p-values reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C52",
+      "C114"
+    ],
+    "result": "The Huber regressor ML algorithm achieved high accuracy in predicting population-level salt intake, with mean differences between observed and predicted values of -0.02 g/day in men and 0.01 g/day in women across all test countries (p<0.001), though individual country differences ranged from -1.31 to +1.23 g/day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24-C31, C52, and C114 report model performance metrics. While the overall mean differences are small, the interpretation of p<0.001 as indicating 'no substantial differences' is problematic\u2014statistical significance here actually indicates the differences ARE significant, contradicting the authors' interpretation. The large country-specific variations (>1 g/day) raise concerns about model reliability for individual countries. The claim that HuR performed best lacks comparative metrics for other algorithms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "No country in the test dataset showed mean salt intake below the WHO recommended level of <5 g/day using either observed or predicted methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by Figure 1 and appendix data. This finding is consistent with global literature on salt consumption and strengthens the public health rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The ML model was applied to 166,677 individuals from 54 WHO STEPS surveys (2004-2018), representing diverse populations with wide ranges in demographic and physiological characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 describe the application dataset with appropriate descriptive statistics and confidence intervals. The sample size is substantial and the surveys span appropriate time periods, though temporal mismatch with training data (2013-2019 vs 2004-2018) could introduce bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C55",
+      "C56",
+      "C57",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "ML-predicted mean salt intake across 54 countries ranged from 6.8 g/day (Eritrea) to 10.0 g/day (American Samoa), with highest consumption in Western Pacific countries and lowest in African countries; all countries exceeded WHO recommendations of <5 g/day, and men consistently showed higher intake than women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C51 and C55-C57 present the main application results. While the geographic patterns are consistent with prior literature (C58), the predictions lack independent validation. The model was trained on spot urine samples (2013-2019) but applied to surveys from 2004-2018, creating temporal inconsistency. Country-specific predictions showing large deviations in the test set (C25-C30) raise concerns about reliability for individual countries. The claim that predictions are 'within reasonable difference' (C113) is subjective without defined thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study's predictions for 2010 were generally consistent with Powles et al. 2013 estimates (e.g., Cambodia 7.8 vs 11.0 g/day, Eritrea 6.8 vs 5.9 g/day), with largest discrepancies in Tajikistan (8.5 vs 13.5 g/day), and provide more recent estimates for most countries post-2010.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C65 compare results to prior literature. While some estimates are similar, substantial differences exist (e.g., 3.2 g/day difference in Cambodia, 5.0 g/day in Tajikistan). The authors attribute differences to spot vs 24-hour urine methods, but this doesn't fully explain the magnitude of discrepancies. The comparison provides some external validation but also highlights potential systematic biases in the ML approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Comparisons with independent surveys showed mixed agreement: ML predictions were within 1-2.5 g/day of published estimates for Fiji, Samoa, Vanuatu, and Vietnam, though temporal mismatches complicate interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C71 provide additional external comparisons. The differences range from reasonable (Fiji: 8.7 vs 10.6 g/day) to concerning (Vanuatu: 8.4 vs 5.9 g/day, Vietnam: 7.9 vs 9.9 g/day). These comparisons involve different years and methods, limiting their value as validation. The authors don't provide systematic assessment of prediction accuracy across all available external data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study acknowledges that spot urine samples may overestimate salt intake at lower consumption levels and underestimate at higher levels, though population-level means from spot and 24-hour samples are reported to be similar in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 appropriately acknowledge a key limitation. The citations support the claim about population-level similarity, though this doesn't eliminate individual-level errors that could affect ML model training. The directional bias (overestimation at low levels, underestimation at high levels) is consistent with the observed discrepancies with Powles et al. 2013.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The ML model was developed using 21 national surveys from 19 countries with 24,889 observations, which the authors acknowledge may be limited for a data-driven ML algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 acknowledge sample size limitations. While 24,889 observations might seem adequate, the heterogeneity across 19 countries and the complexity of predicting salt intake from simple physiological variables suggest this may indeed be limiting. The authors appropriately identify this as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "The ML methodology involved training 10 algorithms (including Huber regressor, random forest, neural networks) on predictors of sex, age, weight, height, and blood pressure, with outcome defined by INTERSALT equation; data were split 50/30/20 for training/test/validation, with extensive preprocessing and exclusion criteria applied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C97 describe the methodology. While the approach appears systematic, critical details are missing: no performance metrics comparing the 10 algorithms (C95 states they 'performed similarly' without quantification), no discussion of hyperparameter tuning, no specification of random seeds for reproducibility, and insufficient justification for choosing HuR beyond 'closest to zero difference.' The exclusion criteria are reasonable but the 3-SD outlier removal (C91) after applying INTERSALT could remove valid extreme values. Survey weights are mentioned (C97) but implementation details are unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "ML models have been extensively used for predicting clinical outcomes and epidemiological indicators, and have proven useful for understanding complex outcomes from simple predictors in nationally representative surveys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 provide appropriate context for ML applications in public health, supported by relevant citations. This establishes the methodological precedent for the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "24-hour urine collection is costly and burdensome, leading to development of spot urine equations that show small population-level differences from 24-hour samples, though spot urine methods are rarely used in WHO STEPS surveys, leaving many countries without salt consumption data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 establish the practical motivation for the study. The claims are well-supported by citations and represent accurate characterization of the data availability problem in global health surveillance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study included diverse country income levels: 9 high-income, 16 low-income, 26 lower-middle-income, and 18 upper-middle-income countries, with 4 countries unclassified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 describe the economic diversity of included countries. This is appropriately documented and shows reasonable global representation, though high-income countries are underrepresented in model development (2 of 19).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors state the ML model should be used for population-level mean estimation only, not for individual-level prediction or as a diagnostic tool, and could be applied where urine samples are unavailable, with predictions within reasonable difference from available evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C113 describe intended use and limitations. While the authors appropriately caution against individual-level application, the claim that predictions are 'within reasonable difference' (C113) lacks objective criteria. The model's utility for population surveillance depends on accuracy that remains inadequately validated. The statement that it 'could be used' (C112) is conditional but may be overstated given the validation limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The funder had no role in study design, analysis, interpretation, or publication decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is a standard declaration of funding independence. No evidence suggests conflicts of interest.",
+    "result_type": "MINOR"
+  }
+]

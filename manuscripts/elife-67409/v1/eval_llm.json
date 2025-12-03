@@ -1,0 +1,489 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C12",
+      "C58",
+      "C59",
+      "C71",
+      "C77",
+      "C158"
+    ],
+    "result": "RIPK3 signals to apoptosis when Hsp90/CDC37 chaperone levels are low, requiring phosphorylation at serine 165/threonine 166 (mouse; S164/T165 human) on its kinase activation loop. This phosphorylation inactivates RIPK3 kinase activity while enabling recruitment of RIPK1, FADD, and caspase-8 to form a cytosolic caspase-activating complex that triggers apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C12, C58-C59, C71, C77, and C158 collectively establish the central mechanism. The phosphorylation requirement is demonstrated by mass spectrometry (C54), phospho-specific antibody validation (C55-C57), kinase-dead mutants failing to phosphorylate (C57), and functional assays showing phospho-mimic mutants induce apoptosis while phosphorylation-resistant mutants do not (C64-C65). The chaperone dependence is shown by differential Hsp90/CDC37 levels in apoptotic vs necroptotic cells (C79), Hsp90 inhibition switching necroptosis to apoptosis (C82-C83), and overexpression preventing phosphorylation and apoptosis (C84-C85). Complex formation is demonstrated by co-immunoprecipitation (C48-C49, C72-C77). The mechanism is conserved in mouse cells (C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Ectopic expression of RIPK3 in MCF7 and KGN cells causes apoptotic cell death that is blocked by caspase inhibitor z-VAD-fmk but not by MLKL inhibitor NSA or RIPK1 kinase inhibitor RIPA-56. In contrast, RIPK3 expression in HeLa cells does not affect viability but enables necroptosis upon TSZ treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 are supported by cell viability assays in Figures 1A-C showing differential responses across cell lines. The apoptotic nature is confirmed by inhibitor specificity (z-VAD blocks, NSA and RIPA-56 do not), distinguishing this from necroptosis and RIPK1 kinase-dependent apoptosis. The inference that this is not intrinsic mitochondrial apoptosis (C43) is logical given caspase inhibitor efficacy. However, the reasoning in C43 appears circular\u2014the text states this pathway 'could not be blocked by caspase inhibitors' but C39 shows it IS blocked by z-VAD. This is likely a typo in the manuscript referring to the intrinsic pathway's typical resistance to caspase inhibition at the mitochondrial level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Kinase-dead mutant RIPK3(K50A) does not cause cell death in MCF7 cells unless combined with RIPK3 kinase inhibitor GSK'872, which induces robust apoptosis. Mutations in the RHIM domain of RIPK3 abolish cell death induction, indicating RHIM domain interaction is required for RIPK3-mediated apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by cell viability data in Figure 1D. The K50A mutant behavior recapitulates prior findings (C45 cites Mandal et al., 2014). The RHIM domain requirement (C46-C47) is demonstrated experimentally, though the inference that this involves 'another RHIM domain-containing protein' (C47) is reasonable given RIPK1's known RHIM-mediated interaction but represents an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "RIPK3 forms a complex with RIPK1, caspase-8, and FADD, with increased complex stability when caspase-8 activity is blocked. Genetic knockout of RIPK1, caspase-8, or FADD completely blocks RIPK3-induced cell death, while cFLIP knockout enhances rather than blocks apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are supported by co-immunoprecipitation data (Figure 2A) and CRISPR/Cas9 knockout experiments (Figures 2B-E). The cFLIP result (C53) contradicts a previous report (Mandal et al., 2014) but is experimentally demonstrated. The mechanistic interpretation of increased complex stability with caspase inhibition (C49) is reasonable given known caspase-8-mediated cleavage of RIPK1. All three knockouts (RIPK1, caspase-8, FADD) show complete protection, establishing these components as essential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Serine 164 and threonine 165 of RIPK3 are specifically phosphorylated in MCF7 cells but not in HeLa cells, as identified by mass spectrometry and validated with a phospho-specific monoclonal antibody. Kinase-dead mutants RIPK3 D160N and K50A fail to generate the phospho-S164/T165 signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by mass spectrometry data (Figure 3A), phospho-specific antibody validation (Figures 3B, 3\u2014figure supplement 1A-C), and kinase-dead mutant analysis (Figure 3C). The antibody specificity is rigorously demonstrated by recognizing wild-type but not S164A/T165A mutant RIPK3, and by the absence of signal with kinase-dead mutants. The mass spectrometry provides direct identification of the phosphorylation sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The serine 164/threonine 165 region of RIPK3 is conserved among mammalian species. Phospho-mimic mutations S164D/T165E (or mouse S165D/T166E) fail to auto-phosphorylate the serine 227 (human) or serine 232 (mouse) site, similar to kinase-dead mutants, while wild-type RIPK3 readily phosphorylates this site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by sequence alignment (Figure 3\u2014figure supplement 2A) and western blot analysis of S227/S232 phosphorylation (Figures 3D, 3\u2014figure supplement 2B). The conservation across species (C60) is clearly shown. The loss of auto-phosphorylation activity with phospho-mimic mutations (C61-C62) demonstrates that these mutations inactivate kinase function, consistent with the proposed mechanism. The comparison to kinase-dead mutants strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Phospho-mimic mutations S164D/T165E increase apoptosis in MCF7 and KGN cells compared to wild-type RIPK3, while phosphorylation-resistant mutant S164A/T165A loses apoptosis-inducing ability. In HeLa cells, the S164D/T165E mutant gains apoptosis-inducing ability but loses necroptosis responsiveness, while S164A/T165A retains necroptosis function. Single-site analysis reveals S164 phosphorylation is critical for the apoptotic switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 are supported by cell viability assays across multiple cell lines (Figures 3E-G, 3\u2014figure supplement 1D-G). The phospho-mimic mutations enhance apoptosis while abolishing necroptosis, and phosphorylation-resistant mutations show the opposite pattern. The single-site mutant analysis (C69-C70) demonstrates S164 is the critical residue, with S164E/A showing the functional switch while T165E/A does not. This provides strong evidence for the specific role of S164 phosphorylation in the necroptosis-to-apoptosis switch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Phospho-mimic RIPK3 (S164D/T165E) and kinase-dead mutant D160N show robust binding with RIPK1, FADD, and caspase-8, while phosphorylation-resistant mutant S164A/T165A loses this binding ability. Single-site phospho-mimic S164E, but not T165E, associates with RIPK1, FADD, and caspase-8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by co-immunoprecipitation experiments (Figures 3H-I, 3\u2014figure supplement 1H). The binding pattern correlates perfectly with the functional data: mutants that induce apoptosis (D160N, S164D/T165E, S164E) bind the apoptotic machinery, while those that don't (wild-type in HeLa, S164A/T165A, T165E) fail to bind. This provides strong mechanistic support for the model that S164 phosphorylation enables complex formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Hsp90/CDC37 levels are higher in HT29 and HeLa cells (where RIPK3 signals to necroptosis) compared to MCF7 and KGN cells (where RIPK3 causes apoptosis). Hsp90 inhibitor 17AAG blocks necroptosis in HeLa-RIPK3 cells but not RIPK3-induced apoptosis in MCF7/KGN cells. Knocking down or inhibiting Hsp90 switches necroptosis to apoptosis and induces S164/T165 phosphorylation, while overexpressing Hsp90/CDC37 prevents phosphorylation and apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 are supported by western blots showing differential Hsp90/CDC37 levels (Figure 4A), cell viability assays with 17AAG (Figures 4B-D), phosphorylation analysis (Figures 4E, G), and co-immunoprecipitation (Figure 4H). The bidirectional manipulation (knockdown/inhibition vs. overexpression) with consistent opposite effects on phosphorylation and cell death provides strong evidence for the chaperone's regulatory role. The mechanism is internally consistent: high Hsp90/CDC37 prevents phosphorylation and apoptosis, low levels permit phosphorylation and apoptosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "In mouse L929 cells, higher concentrations of Hsp90 inhibitor 17AAG block TSZ-induced necroptosis. Knocking down or inhibiting Hsp90 in L929(Ripk3-/-)/TO-RIPK3 cells switches necroptosis to apoptosis and induces serine 165/threonine 166 phosphorylation of RIPK3, demonstrating conservation of the Hsp90/CDC37-determined, RIPK3 phosphorylation-driven apoptosis mechanism between human and mouse cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by cell viability assays and western blots in mouse cells (Figure 4\u2014figure supplement 1B-E). The higher concentration requirement for mouse Hsp90 inhibition (C87) explains previous discrepancies in the literature. The demonstration of the same phosphorylation-dependent switch in mouse cells (C88-C89) with the same functional consequences establishes evolutionary conservation. This is important for validating the in vivo mouse studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "RIPK3 forms diffused puncta in HeLa cells during necroptosis but forms distinct high-order structures in MCF7 and KGN cells during apoptosis. The phospho-S164/T165-RIPK3 signal co-localizes with these high-order structures in MCF7 cells. Formation of these structures is RIPK3-dependent (not affected by RIPK1, caspase-8, or FADD knockout) and is regulated by Hsp90/CDC37 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 are supported by immunofluorescence imaging (Figure 4\u2014figure supplement 2A-E, Figures 4I-J). The structural differences between necroptotic and apoptotic RIPK3 are clearly visualized. The demonstration that RIPK1, caspase-8, and FADD knockouts don't affect structure formation (C94) establishes that RIPK3 itself forms these structures before recruiting downstream effectors. The Hsp90/CDC37-dependent interconversion of structures (C96-C97) links structure to function. However, the functional significance of these distinct structures for the apoptotic vs. necroptotic outcome is correlative rather than causally demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Ripk3S165A-T166A/S165A-T166A homozygous mice are viable and appear normal, while Ripk3S165D-T166E/S165D-T166E homozygous mice are smaller, die within 1 month after birth, and show abnormal large intestine, small intestine, lung, spleen, and kidney with significantly increased apoptosis in these tissues. Brain, cerebellum, heart, and liver appear normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by mouse phenotyping data (Figures 5A-F, 5\u2014figure supplement 1C-G). The phosphorylation-resistant mice being viable (C99) demonstrates this phosphorylation is not required for normal development or necroptosis function. The phospho-mimic mice showing tissue-specific apoptosis and lethality (C100-C104) provides strong in vivo validation that constitutive S165/T166 phosphorylation drives apoptosis. The tissue specificity (affecting some organs but not others) correlates with RIPK3 expression patterns. Histology and cleaved caspase-3 staining confirm apoptotic cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Ripk3S165D-T166E/+ heterozygous mice are viable. This could be explained by a threshold effect where RIPK3 S165D/T166E protein becomes lethal above a certain level, or by wild-type RIPK3 preventing RIPK3(S165D/T166E) activation through dimer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 is stated as fact, but C106-C107 are explicitly speculative explanations. The heterozygous viability is an important observation that constrains the mechanism, but the manuscript acknowledges uncertainty about the explanation. Without additional experiments (e.g., measuring protein levels, testing dimer formation), these remain plausible hypotheses rather than supported conclusions. The speculation is reasonable but unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Bone marrow-derived macrophages (BMDM) from Ripk3S165D-T166E/S165D-T166E mice are resistant to necroptosis induction by TSZ, while BMDM from Ripk3S165A-T166A/S165A-T166A mice readily undergo necroptosis. Culturing BMDM from Ripk3S165D-T166E/S165D-T166E mice requires caspase inhibitor z-VAD-fmk to prevent spontaneous cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by cell viability assays (Figures 5G, 5\u2014figure supplement 1H) and stated methodology. The necroptosis resistance of S165D/T166E BMDM (C108) is consistent with the kinase-inactivating effect of this mutation. The necroptosis competence of S165A/T166A BMDM (C109) confirms these mice retain normal necroptotic function. The requirement for z-VAD during culture (C110) indicates spontaneous apoptotic signaling in S165D/T166E cells, consistent with the in vivo phenotype. These results validate the cell culture findings in primary cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "RIPK3 expression in the ovary follows a reversed bell curve pattern through the mouse lifetime. In early life, RIPK3 is restricted to follicle granulosa cells, while in later life it appears in corpus luteum and albicans. This second wave of expression coincides with age-dependent elevation of PGF2\u03b1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are supported by western blot analysis across ages (Figure 6A), immunofluorescence localization (Figure 6B), and PGF2\u03b1 ELISA (Figure 6C). The temporal correlation between RIPK3 expression and PGF2\u03b1 elevation is clearly demonstrated. The spatial restriction to different ovarian structures at different ages is well-documented by imaging. This establishes the physiological context for RIPK3-mediated apoptosis in ovarian aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Prostaglandin F receptor (PTGFR) is primarily located in corpus lutea and corpus albicans (not follicles) and co-localizes with RIPK3. Phospho-S164/T165 RIPK3 signal is absent in young (2-4 month) ovaries despite RIPK3 protein being detectable, begins appearing at 4 months, and becomes prominent in corpus albicans of 12-month-old ovaries. The signal is absent in RIPK3 knockout mice, confirming antibody specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C123 are supported by immunofluorescence co-staining (Figure 6D), western blot time course (Figure 6E), and immunohistochemistry (Figure 6F). The spatial restriction of PTGFR to corpus luteum/albicans (C116-C117) correlates with where apoptosis occurs. The age-dependent appearance of phospho-RIPK3 (C118-C122) parallels PGF2\u03b1 elevation and provides a biomarker for pathway activation. The knockout control (C123) validates antibody specificity. Together, these data establish when and where this apoptotic pathway is naturally active.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Hsp90 and CDC37 stain follicle granulosa much more strongly than corpus lutea and albicans, while RIPK3 staining is similar in both, indicating the relative level of Hsp90/CDC37 vs. RIPK3 is higher in follicles than corpus lutea/albicans. This suggests RIPK3-induced apoptosis occurs in aged corpus lutea/albicans due to relatively lower Hsp90/CDC37 chaperone levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are supported by immunofluorescence quantification (Figure 5\u2014figure supplement 2). The differential Hsp90/CDC37:RIPK3 ratio between follicles and corpus luteum/albicans (C124-C125) provides a mechanistic explanation for why RIPK3 induces apoptosis specifically in corpus luteum/albicans. The inference (C126) is logical given the established role of Hsp90/CDC37 in preventing S164/T165 phosphorylation. However, this is correlative; direct manipulation of chaperone levels specifically in corpus luteum would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Treatment of primary granulosa lutein cells with PGF2\u03b1 analog dinoprost tromethamine (DT) causes time- and dose-dependent induction of RIPK3 protein, overlapping with phospho-ERK/MEK signal appearance. MEK kinase inhibitors block RIPK3 induction, confirming induction occurs through the MEK pathway. DT-induced RIPK3 is phosphorylated at S165/T166 and cells undergo apoptosis (active caspase-3), which fails in RIPK3 knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 are supported by western blot time courses and dose responses (Figures 7A-C, 7\u2014figure supplement 1A-B). The correlation with phospho-ERK/MEK (C130) and MEK inhibitor blockade (C131-C132) establish the upstream signaling pathway. The demonstration of S165/T166 phosphorylation (C133) and caspase-3 activation (C134) in DT-treated cells links PGF2\u03b1 signaling to the RIPK3 apoptotic pathway. The RIPK3 knockout control (C135) confirms RIPK3 dependence. This establishes the complete signaling cascade from PGF2\u03b1 to apoptosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "In a hyper-ovulation model, DT treatment induces RIPK3 elevation and S164/T165 phosphorylation in corpus lutea of wild-type ovaries, causing active caspase-3 appearance. PTGFR knockout mice fail to elevate RIPK3 in response to PGF2\u03b1. DT-induced apoptosis is significantly reduced in Ripk3-/-, Ripk3S165A-T166A/S165A-T166A, Fadd-/-/Mlkl-/-, and Ptgfr-/- mice, confirming the pathway operates through RIPK3/FADD-mediated apoptosis triggered by S165/T166 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C142 are supported by immunofluorescence, western blots, and immunohistochemistry in the hyper-ovulation model (Figures 7D-G, 7\u2014figure supplement 1D). The genetic validation using multiple knockout and knock-in lines (C139-C142) provides strong evidence for the pathway. Each genetic manipulation targets a specific pathway component, and all show reduced apoptosis, establishing necessity. The PTGFR knockout failing to induce RIPK3 (C139) confirms PGF2\u03b1 acts upstream. The phosphorylation-resistant mutant showing reduced apoptosis despite normal RIPK3 induction (C140-C141) specifically validates the phosphorylation requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144"
+    ],
+    "result": "Active caspase-3 and phospho-S165/T166 RIPK3 signals mostly overlap in ovaries, indicating that serine 165/threonine 166 phosphorylated RIPK3 activates apoptosis in corpus luteum, triggered by PGF2\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 are supported by co-immunofluorescence staining (Figure 7H). The spatial overlap of the phospho-RIPK3 biomarker with active caspase-3 provides direct evidence linking S165/T166 phosphorylation to apoptosis execution in vivo. This validates the pathway in the physiological context of luteal regression. The conclusion (C144) is well-supported by the co-localization data combined with all the genetic and pharmacological evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "There is more active caspase-3 in Ripk3-/- and Ripk3S165A-T166A/S165A-T166A ovaries than in Fadd-/-/Mlkl-/- ovaries after DT treatment, suggesting a redundant RIPK3-independent but FADD-dependent apoptosis pathway may also function in corpus luteum resolution. Overall, most corpus luteum involution induced by PGF2\u03b1 occurs through the RIPK3-RIPK1/FADD/caspase-8 pathway triggered by RIPK3 induction and S165/T166 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 is supported by quantification in Figure 7G. The inference of a redundant pathway (C146) is explicitly presented as speculation ('suggesting that there might be') and is reasonable given the data pattern. The overall conclusion (C147) is well-supported by the comprehensive genetic analysis. The word 'most' appropriately acknowledges the residual FADD-dependent apoptosis while emphasizing the RIPK3 pathway as the major mechanism. This nuanced conclusion is more accurate than claiming the RIPK3 pathway is the sole mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The mutation-induced change of RIPK3 function from pro-necroptotic to apoptotic (as seen with D161N) likely mimics specific phosphorylation at serine 164. The serine 164 amide nitrogen forms a conserved H-bond with phenylalanine 160 carbonyl oxygen, important for maintaining RIPK3 active configuration. Introducing a phosphate group at serine 164 disrupts this interaction, causing loss of RIPK3 kinase function and conformational change allowing RHIM domain availability for RIPK3-RIPK1 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C151 is a reasonable proposal based on the data. Claims C152-C153 integrate structural knowledge (C152 cites Xie et al., 2013) with experimental observations. The structural explanation (C152) is established knowledge. The mechanistic inference (C153) is logical: phosphorylation would disrupt the H-bond, explaining both kinase inactivation and conformational change. This is supported by the observation that phospho-mimic mutations inactivate kinase activity (C62-C63) and enable RIPK1 binding (C72-C76). While the specific conformational change hasn't been structurally determined, the model is well-supported by functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "RIPK1 functions purely as an adaptor for recruiting FADD and caspase-8 in RIPK3-mediated apoptosis, and its kinase activity is not required. Unlike RIPK1's apoptosis/necroptosis functions in response to TNF receptor activation, the apoptosis-inducing activity of RIPK1 initiated by RIPK3 phosphorylation is not sensitive to RIPK1 kinase inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C156 are supported by the observation that RIPK1 kinase inhibitor RIPA-56 does not block RIPK3-induced apoptosis (C41, Figure 1C). The conclusion that RIPK1 functions as a scaffold rather than requiring kinase activity is well-supported. The distinction from TNF receptor-mediated pathways (C156) is an important mechanistic insight. However, a more direct test would be expressing kinase-dead RIPK1 mutants, which wasn't shown. The evidence is strong but somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C157"
+    ],
+    "result": "The phosphorylation of serine 164/threonine 165 is likely catalyzed by RIPK3 itself (auto-phosphorylation) rather than by another kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C157 is supported by the observation that both D160N and K50A kinase-dead mutants fail to generate phospho-S164/T165 signal (C57). The K50A mutation is particularly informative since it's distant from S164/T165, making it unlikely to affect substrate recognition by another kinase. The manuscript appropriately acknowledges they 'cannot completely rule out' another kinase but states the data 'favor' auto-phosphorylation. This is a reasonable conclusion, though definitive proof would require in vitro kinase assays with purified RIPK3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "In cells where RIPK3 signals to necroptosis, Hsp90/CDC37 levels are relatively high, allowing RIPK3 to fold into a configuration that can only be activated by upstream signals (RIPK1, TRIF, ZBP1/DAI). In this state, RIPK3 kinase activity is silent with no auto-phosphorylation before upstream activation. In cells with low Hsp90/CDC37 or when chaperones are inhibited/knocked down, newly generated RIPK3 can auto-phosphorylate S164/T165, triggering apoptosis through the RIPK3-RIPK1-FADD-caspase-8 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C162 synthesize the mechanistic model based on all the chaperone manipulation experiments. C159 is supported by western blot data (Figure 4A). C160-C161 are mechanistic inferences that are reasonable given the data but represent a model rather than direct observation of protein folding states. C162 is well-supported by the Hsp90 inhibition/knockdown experiments (C82-C89) and overexpression experiments (C84-C85). The model is internally consistent and explains all observations, though some aspects (like the specific conformational states) are inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Mice bearing phospho-mimic mutations S165D/T166E show spontaneous apoptosis in all RIPK3-expressing tissues and die within a month. Whether this apoptosis is caused by RIPK1-FADD-caspase-8 pathway activation requires genetic verification; if so, knocking out caspase-8 or FADD should rescue the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C163 is supported by data in Figure 5. However, C164-C165 explicitly state this 'requires genetic verification' and represent a prediction for future experiments. The manuscript appropriately identifies this as a limitation. While the cell culture data strongly suggest the RIPK1-FADD-caspase-8 pathway is involved, the in vivo validation in the S165D/T166E mice is incomplete. The prediction (C165) is logical but untested. This represents important future work rather than a current result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The chaperone level of Hsp90/CDC37 relative to RIPK3 is important for dictating necroptotic or apoptotic function in mouse RIPK3. Serine 164/threonine 165 phosphorylation of RIPK3 is a unique biomarker for RIPK3-mediated apoptosis, and the developed monoclonal antibody should be useful for identifying tissues and cells where this pathway is activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C166 is supported by the mouse cell experiments (C87-C90). Claim C167 is supported by the antibody's specificity (only recognizing phosphorylated RIPK3, not appearing in HeLa cells or with phosphorylation-resistant mutants, absent in RIPK3 knockout mice). Claim C168 is a reasonable conclusion about the antibody's utility, demonstrated by its successful use in identifying the pathway in aged ovaries. The antibody has been rigorously validated and proven useful for the studies presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Phospho-RIPK3 signal appears in aged ovary coincident with PGF2\u03b1 elevation. PGF2\u03b1 analog induces S165/T166 phosphorylated RIPK3 and apoptosis in primary granulosa cells from young mice. In the hyper-ovulation model, DT induces apoptosis that is blocked in PGF receptor, RIPK3, FADD/MLKL, and Ripk3S165A-T166A/S165A-T166A knockout mice. However, the phospho-RIPK3 signal only naturally appears in luteal granulosa cells when mice reach a certain age. RIPK3 knockout and Ripk3S165A-T166A/S165A-T166A mice show no fertility defects at normal reproductive age, indicating this pathway is not critical for luteum resolution during normal young reproductive cycles but may have a specific role during ovary aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C174 are well-supported by the ovary aging data (Figure 6) and hyper-ovulation model (Figure 7). The age-dependent appearance of the pathway (C172) and lack of fertility defects in young knockout mice (C173-C174) are important observations that contextualize the pathway's physiological role. The inference that the pathway is not critical in young mice (C174) is supported by the normal fertility. Claim C175 is explicitly speculative ('interesting to speculate') about the pathway's role in ovary aging. This is reasonable speculation but represents a hypothesis for future testing rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C127",
+      "C128",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Background knowledge claims about apoptosis, necroptosis, RIPK3, ovarian biology, and prior observations of RIPK3's apoptotic role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C13-C33, C127-C128, C148-C150) represent established background knowledge cited from the literature. They provide context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with the field. These are correctly characterized as prior knowledge rather than new results.",
+    "result_type": "MINOR"
+  }
+]

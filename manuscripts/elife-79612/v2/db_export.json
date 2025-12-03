@@ -1,0 +1,1931 @@
+{
+  "submission": {
+    "id": "cc06f544-9f70-4221-a2fb-c276422f28b6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:24:39.916115Z",
+    "updated_at": "2025-12-03T15:24:39.916115Z"
+  },
+  "content": [
+    {
+      "id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "submission_id": "cc06f544-9f70-4221-a2fb-c276422f28b6",
+      "content_type": "manuscript",
+      "content_text": "# Brain atlas for glycoprotein hormone receptors at single-transcript level\n\n## Authors\n\n- Vitaly Ryu<sup>1</sup> ([ORCID: 0000-0001-8068-4577](https://orcid.org/0000-0001-8068-4577))\n- Anisa Gumerova<sup>1</sup>\n- Funda Korkmaz<sup>1</sup>\n- Seong Su Kang<sup>3</sup> ([ORCID: 0000-0002-2517-9962](https://orcid.org/0000-0002-2517-9962))\n- Pavel Katsel<sup>4</sup> ([ORCID: 0000-0001-8076-0162](https://orcid.org/0000-0001-8076-0162))\n- Sari Miyashita<sup>1</sup>\n- Hasni Kannangara<sup>1</sup>\n- Liam Cullen<sup>1</sup>\n- Pokman Chan<sup>5</sup>\n- TanChun Kuo<sup>1</sup> ([ORCID: 0000-0001-5301-755X](https://orcid.org/0000-0001-5301-755X))\n- Ashley Padilla<sup>1</sup>\n- Farhath Sultana<sup>1</sup>\n- Soleil A Wizman<sup>1</sup>\n- Natan Kramskiy<sup>1</sup>\n- Samir Zaidi<sup>6</sup>\n- Se-Min Kim<sup>1</sup>\n- Maria I New<sup>7</sup>\n- Clifford J Rosen<sup>8</sup>\n- Ki A Goosens<sup>1</sup> ([ORCID: 0000-0002-5246-2261](https://orcid.org/0000-0002-5246-2261))\n- Tal Frolinger<sup>1</sup>\n- Vahram Haroutunian<sup>4</sup>\n- Keqiang Ye<sup>9</sup>\n- Daria Lizneva<sup>1</sup>\n- Terry F Davies<sup>1</sup>\n- Tony Yuen<sup>1</sup> \u2020\n- Mone Zaidi<sup>1</sup> ([ORCID: 0000-0001-5911-9522](https://orcid.org/0000-0001-5911-9522)) \u2020\n\n### Affiliations\n\n1. Center for Translational Medicine and Pharmacology, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n2. Department of Medicine and of Pharmacological Sciences, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n3. Department of Pathology, Emory University School of Medicine Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))\n4. Department of Psychiatry, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n5. Alamak Biosciences Beverly United States\n6. Memorial Sloan Kettering Cancer Center New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))\n7. Department of Pediatrics, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n8. Maine Medical Center Research Institute Scarborough United States ([ROR:03d1wq758](https://ror.org/03d1wq758))\n9. Faculty of Life and Health Sciences, and Brain Cognition and Brain Disease Institute, Shenzhen Institute of Advanced technology, Chinese Academy of Sciences Shenzhen China ([ROR:04gh4er46](https://ror.org/04gh4er46))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThere is increasing evidence that anterior pituitary hormones, traditionally thought to have unitary functions in regulating single endocrine targets, act on multiple somatic tissues, such as bone, fat, and liver. There is also emerging evidence for anterior pituitary hormone action on brain receptors in mediating central neural and peripheral somatic functions. Here, we have created the most comprehensive neuroanatomical atlas on the expression of TSHR, LHCGR, and FSHR. We have used RNAscope, a technology that allows the detection of mRNA at single-transcript level, together with protein level validation, to document Tshr expression in 173 and Fshr expression in 353 brain regions, nuclei and subnuclei identified using the Atlas for the Mouse Brain in Stereotaxic Coordinates. We also identified Lhcgr transcripts in 401 brain regions, nuclei and subnuclei. Complementarily, we used ViewRNA, another single-transcript detection technology, to establish the expression of FSHR in human brain samples, where transcripts were co-localized in MALAT1-positive neurons. In addition, we show high expression for all three receptors in the ventricular region\u2014with yet unknown functions. Intriguingly, Tshr and Fshr expression in the ependymal layer of the third ventricle was similar to that of the thyroid follicular cells and testicular Sertoli cells, respectively. In contrast, Fshr was localized to NeuN-positive neurons in the granular layer of the dentate gyrus in murine and human brain\u2014both are Alzheimer\u2019s disease-vulnerable regions. Our atlas thus provides a vital resource for scientists to explore the link between the stimulation or inactivation of brain glycoprotein hormone receptors on somatic function. New actionable pathways for human disease may be unmasked through further studies.\n\n## Introduction\n\nThere is increasing evidence that pituitary hormones traditionally thought of as \u2018pure\u2019 regulators of single physiological processes affect multiple bodily systems, either directly or via actions on brain receptors (Zaidi et al., 2018; Abe et al., 2003). We established, for the first time, a direct action of thyroid-stimulating hormone (TSH) on bone and found that TSH receptor (TSHR) haploinsufficiency causes profound bone loss in mice (Abe et al., 2003). We also found that follicle-stimulating hormone (FSH), hitherto thought to solely regulate gonadal function, displayed direct effects on the skeleton to cause bone loss (Sun et al., 2006), and on fat cells, to cause adipogenesis and body fat accumulation (Liu et al., 2017). Likewise, we showed that hormones from the posterior pituitary, namely, oxytocin and vasopressin, displayed direct, but opposing, skeletal actions\u2014effects that may relate to the pathogenesis of bone loss in pregnancy and lactation, and in chronic hyponatremia, respectively (Sun et al., 2019; Sun et al., 2016; Tamma et al., 2009; Tamma et al., 2013). To add to this complexity, and in addition to the poorly recognized ubiquity of pituitary hormone receptors, the ligands themselves, or their variants, are expressed widely. We find the expression of a TSH\u03b2 variant (TSH\u03b2v) in bone marrow macrophages, while oxytocin is expressed by both osteoblasts and osteoclasts (Colaianni et al., 2011; Colaianni et al., 2012; Baliram et al., 2013; Baliram et al., 2016). These studies have together shifted the paradigm from established unitary functions of pituitary hormones to an evolving array of yet unrecognized roles of physiological and pathophysiological importance.\n\nThere is a compelling body of literature to support the expression of oxytocin receptors in various brain regions, and their function in regulating peripheral actions, such as social behavior and satiety (Sun et al., 2019; Bale et al., 2001). However, there is relatively scant information on the expression and, importantly, function of the anterior pituitary glycoprotein hormone family of receptors, namely, FSHR, TSHR, and luteinizing hormone/human chorionic gonadotropin receptor (LHCGR). Discrete sites of the rat, mouse, and human brain express receptors for these hormones, with several studies pointing to their relationship to neural functions, such as cognition, learning, neuronal plasticity, and sensory perception, as well as to neuropsychiatric disorders, including affective disorders and neurodegeneration (Crisanti et al., 2001; Emanuele et al., 1985; Lei et al., 1993; Luan et al., 2020; Bi et al., 2020; Blair et al., 2019; Apaja et al., 2004; Naicker and Naidoo, 2018; Table 1). In the light of such discoveries, the link between the stimulation of these receptors in the brain and the regulation of peripheral physiological processes needs further investigation.\n\n**Table 1.**\n Known functions of thyroid-stimulating hormone receptor (TSHR), follicle-stimulating hormone receptor (FSHR), and luteinizing hormone/human chorionic gonadotropin receptor (LHCGR) in brain.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Receptor</th>\n      <th>Species</th>\n      <th>Brain region</th>\n      <th>Possible function</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"6\">TSHR</td>\n      <td>Rat</td>\n      <td>Hypothalamus</td>\n      <td>Aging</td>\n      <td>Emanuele et al., 1985</td>\n    </tr>\n    <tr>\n      <td>Mice</td>\n      <td>Hippocampus</td>\n      <td>Spatial learning and memory</td>\n      <td>Luan et al., 2020</td>\n    </tr>\n    <tr>\n      <td>Rat</td>\n      <td>Hypothalamus, hippocampus, pyriform and postcingulate cortex</td>\n      <td>Thyroid regulation</td>\n      <td>Crisanti et al., 2001</td>\n    </tr>\n    <tr>\n      <td>Rat</td>\n      <td>Hypothalamus</td>\n      <td>Feeding behavior</td>\n      <td>Burgos et al., 2016</td>\n    </tr>\n    <tr>\n      <td>Human</td>\n      <td>Hypothalamus, amygdala, cingulate gyrus, frontal cortex, hippocampus, thalamus</td>\n      <td>Mood disorders</td>\n      <td>Naicker and Naidoo, 2018</td>\n    </tr>\n    <tr>\n      <td>Quail</td>\n      <td>Hypothalamus</td>\n      <td>Seasonal reproduction</td>\n      <td>Williams, 2011</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">FSHR</td>\n      <td>Yak</td>\n      <td>Hypothalamus, pineal gland</td>\n      <td>Follicle growth, maturation, estrus</td>\n      <td>Huo et al., 2017</td>\n    </tr>\n    <tr>\n      <td>Mice</td>\n      <td>Hippocampus</td>\n      <td>Mood regulation</td>\n      <td>Bi et al., 2020</td>\n    </tr>\n    <tr>\n      <td rowspan=\"9\">LHCGR</td>\n      <td>Rat</td>\n      <td>Hypothalamus</td>\n      <td>Aging</td>\n      <td>Emanuele et al., 1985</td>\n    </tr>\n    <tr>\n      <td>Mice</td>\n      <td>Hippocampus, cortex</td>\n      <td>Spatial memory, cognition, plasticity</td>\n      <td>Blair et al., 2019</td>\n    </tr>\n    <tr>\n      <td>Rat</td>\n      <td>Hippocampus</td>\n      <td>Brain metabolism</td>\n      <td>Liu et al., 2007</td>\n    </tr>\n    <tr>\n      <td>Fish</td>\n      <td>Hypothalamus</td>\n      <td>Functional roles</td>\n      <td>Peng et al., 2018</td>\n    </tr>\n    <tr>\n      <td>Mice</td>\n      <td>Hippocampus</td>\n      <td>Promote amyloid-\u03b2 formation</td>\n      <td>Lin et al., 2010</td>\n    </tr>\n    <tr>\n      <td>Mice</td>\n      <td>Cortex</td>\n      <td>Regulation of neurosteroid production</td>\n      <td>Apaja et al., 2004</td>\n    </tr>\n    <tr>\n      <td>Mice</td>\n      <td>Hypothalamus, hippocampus, midbrain, cortex</td>\n      <td>Regulation of reproductive functions</td>\n      <td>H\u00e4m\u00e4l\u00e4inen et al., 1999</td>\n    </tr>\n    <tr>\n      <td>Yak</td>\n      <td>Hypothalamus, pineal gland</td>\n      <td>Follicle growth, maturation, estrus</td>\n      <td>Huo et al., 2017</td>\n    </tr>\n    <tr>\n      <td>Rat</td>\n      <td>Hypothalamus, hippocampus, dentate gyrus, cerebellum, brainstem, cortex</td>\n      <td>Cognitive function (Alzheimer\u2019s disease)</td>\n      <td>Lei et al., 1993</td>\n    </tr>\n  </tbody>\n</table>\n\nHere, we use RNAscope\u2014a cutting-edge technology that detects single RNA transcripts\u2014to create the most comprehensive atlas of glycoprotein hormone receptors in mouse brain. This compendium of glycoprotein hormone receptors in concrete brain regions and subregions at a single-transcript level should allow investigators to study both peripheral and central effects of the activation of individual receptors in health and disease. Our identification of brain nuclei with the highest density for each receptor should also create a new way forward in understanding the functional engagement of receptor-bearing nuclei within a large-scale functional network.\n\n## Results\n\nVery little is known about the function(s) of anterior pituitary hormone receptors in the brain, except for isolated studies showing a relationship with cognition and affect (Table 1). We therefore used RNAscope to map the expression of Tshr, Lhcgr, and Fshr in the mouse brain; immunofluorescence and qPCR to provide confirmatory evidence for Tshr and Fshr expression; and ViewRNA and qPCR to examine for FSHR expression in AD-vulnerable regions of the human brain. RNAscope, which allows the detection of single transcripts, uses ~20 pairs of transcript-specific double Z-probes to hybridize 10-\u00b5m-thick whole-brain sections. Preamplifiers first hybridize to the ~28-bp binding site formed by each double Z-probe; amplifiers then bind to the multiple binding sites on each preamplifier; and finally, labeled probes containing a fluorescent molecule bind to multiple sites of each amplifier. RNAscope data was quantified on sections from coded mice. Each section was viewed and analyzed using CaseViewer 2.4 (3DHISTECH, Budapest, Hungary) or QuPath v.0.2.3 (University of Edinburgh, UK). The Atlas for the Mouse Brain in Stereotaxic Coordinates (Paxinos and Franklin, 2007) was used to identify every nucleus or subnucleus in which we manually counted Tshr, Lhcgr, or Fshr transcripts in every tenth section using a tag feature. Repeat counting of the same section agreed within <2%. Receptor density was calculated by dividing transcript count by the total area (\u00b5m2, ImageJ) of each region, nucleus or subnucleus. Photomicrographs were prepared using Photoshop CS5.1 (Adobe) only to adjust brightness, contrast, and sharpness, remove artifacts (i.e., obscuring bubbles), and make composite plates.\n\nTshr was detected bilaterally in 173 brain nuclei and subnuclei, in the following descending order of transcript densities: ventricular region, olfactory bulb, forebrain, hypothalamus, medulla, cerebellum, midbrain and pons, cerebral cortex, hippocampus, and thalamus (Figure 1A, Figure 1\u2014source data 1). Importantly, thyroid glands from Tshr\u2013/\u2013 mice did not show a signal, proving probe specificity (Figure 1B). Tshr expression in pooled brain samples was confirmed by qPCR (Figure 1C, Figure 1\u2014source data 2). The hypothalamus and hippocampus expressed Tshr, with hypothalamic expression being considerably higher (p<0.01) in females than in males. Furthermore, within other regions of the brain, highest Tshr densities were as follows: ependymal layer of the third ventricle (slightly higher than the thyroid follicular cells); VTT in the olfactory bulb; HDB in the forebrain; MTu in the hypothalamus; SoIV in the medulla; PFI in the cerebellum; LDTg in midbrain and pons; DP in the cerebral cortex; DG in hippocampus; and PPT in the thalamus (Figure 1D, Figure 1\u2014source data 1; see Appendix 1 for nomenclature). Raw transcript counts in each region and representative micrographs are shown in Figure 1\u2014figure supplement 1 (Figure 1\u2014figure supplement 1\u2014source data 1) and Figure 1\u2014figure supplement 2, respectively.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79612/elife-79612-fig1-v2.jpg)\n\n**Figure 1.:** (A) Tshr transcript density in the thyroid and various brain regions detected by RNAscope. (B) RNAscope probe specificity is confirmed in the Tshr+/+ thyroid. Tshr\u2013/\u2013 thyroid was used as negative control. Scale bar: 50 \u00b5m. (C) Tshr expression in the mouse hypothalamus and hippocampus using quantitative PCR. The thyroid and liver serve as positive and negative controls, respectively. Statistics: mean \u00b1 SEM, N = 4\u20135 mice/group, **p<0.01. Data were analyzed by two-tailed Student\u2019s t-test using Prism v.9.3.1 (GraphPad, San Diego, CA). Significance was set at p<0.05. (D) Tshr transcript density in nuclei and subnuclei of the ventricular regions, olfactory bulb, forebrain, hypothalamus, medulla, cerebellum, midbrain and pons, cerebral cortex, hippocampus, and thalamus. (E) Abundant GFP immunofluorescence (green) was detected in the ependymal layer of the third ventricle in Tshr+/\u2013 heterozygous mice, in which a GFP cassette replaced exon 1 of the Tshr gene. This GFP signal was absent in Tshr+/+ mice. (F) GFP immunofluorescence was also detected in the subventricular zone (SVZ) of the lateral ventricle, and substantia innominata (SI) and dorsal and ventral bed nucleus of stria terminalis (BNST) in the forebrain of the Tshr+/\u2013 mice. Sections were co-stained with DAPI (blue) and a neuronal marker, NeuN (red). Scale bar: 100 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79612/elife-79612-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79612/elife-79612-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Representative RNAscope micrographs showing Tshr transcripts in the ependymal layer of the third ventricle (3V), ventral tenia tecta (VTT) of the olfactory bulb, nucleus of the horizontal limb of the diagonal band (HDB) of the forebrain, medial tuberal nucleus (MTu) of the hypothalamus, solitary nucleus, ventral part (SolV) of the medulla, paraflocculus (PFI) of the cerebellum, laterodorsal tegmental nucleus (LDTg) of the midbrain and pons, dorsal peduncular cortex (DP) of the cerebral cortex, dentate gyrus (DG) of the hippocampus, and posterior pretectal nucleus (PPT) of the thalamus.Scale bar: 50 \u00b5m.\n\nFor purposes of replicability, we employed a complementary approach to study brain Tshr expression\u2014the Tshr-deficient mouse\u2014in which exon 1 of the Tshr gene is replaced by a Gfp cassette. This reporter strategy allows for the in vivo display of Tshr locations using GFP immunoreactivity (GFP-ir) as a surrogate for Tshr expression (Abe et al., 2003). Of note is that the Tshr+/\u2013 (haploinsufficient) mouse has one Tshr allele intact with normal thyroid function but expresses GFP in lieu of one lost allele. In contrast, the Tshr+/+ mouse does not express GFP-ir because both Tshr copies are intact and are therefore our negative control.\n\nConsistent with our RNAscope finding, profound GFP-ir was noted in the ependymal region of the third ventricle, mostly in NeuN-negative cells, but with some neuronal localization (Figure 1E). The SVZ of the lateral ventricles, and the SI, and dorsal and ventral BNST of the forebrain also showed GFP-ir, but immunoreactivity was much lower than the ependymal layer of the third ventricle (Figure 1F). In all, while there was overall concordance between the two methodologies for high Tshr-expressing areas, GFP-ir was not detected in a number of Tshr-positive regions. This latter discrepancy most likely reflects the grossly lower sensitivity of immunohistochemical detection.\n\nThere is evidence that high LH levels in postmenopausal women correlate with a higher incidence of Alzheimer\u2019s disease (AD) (Henderson et al., 1994; Rocca et al., 2007); LH\u03b2 transgenic mice are cognitively impaired Casadesus et al., 2007; LH receptors (LHCGR) are present in the hippocampus (Rao, 2017; Liu et al., 2007); and hCG induces cognitive deficits in rodents (Berry et al., 2008; Barron et al., 2010). Thus, we mapped Lhcgr in mouse brain to document expression in 401 brain nuclei and subnuclei. Probe specificity was established by a positive signal in testicular Leydig cells, and with an absent signal in juxtaposed Sertoli cells (Figure 2A). Notably similar to Tshr transcripts, the ventricular regions displayed the highest transcript density (Figure 2B, Figure 2\u2014source data 1). Among the brain divisions, the densities were as follows: OV in the ventricular region; SFO in the forebrain; PFI in the cerebellum; MiA in the olfactory bulb; SCO in the thalamus; PMD in the hypothalamus; MVPO in the medulla; DT in midbrain and pons; GrDG in the hippocampus; and SL in the cerebral cortex (Figure 2C, Figure 2\u2014source data 1). Raw transcript counts in each region and representative micrographs are shown in Figure 2\u2014figure supplement 1 (Figure 1\u2014figure supplement 1\u2014source data 1) and Figure 2\u2014figure supplement 2, respectively.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79612/elife-79612-fig2-v2.jpg)\n\n**Figure 2.:** (A) RNAscope signals were detected in the Leydig cells, but not juxtaposed Sertoli cells, in the mouse testis, confirming probe specificity. Scale bar: 25 \u00b5m. (B) Lhcgr transcript density in the testis and various brain regions detected by RNAscope. (C) Lhcgr transcript density in nuclei and subnuclei of the ventricular regions, forebrain, cerebellum, olfactory bulb, thalamus, hypothalamus, medulla, midbrain and pons, hippocampus and cerebral cortex.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79612/elife-79612-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79612/elife-79612-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Representative RNAscope micrographs showing Lhcgr transcripts in the olfactory ventricle (OV), subfornical organ (SFO) of the forebrain, paraflocculus (PFI) of the cerebellum, mitral cell layer of the accessory olfactory bulb (MiA), subcommissural organ (SCO) of the thalamus, premammillary nucleus, dorsal part (PMD) of the hypothalamus, medioventral periolivary nucleus (MVPO) of the medulla, dorsal terminal nucleus of the accessory optic tract (DT) of the midbrain and pons, granular layer of the dentate gyrus (GrDG) of the hippocampus, and semilunar nucleus (SL) of the cerebral cortex.Scale bar: 50 \u00b5m.\n\nWe recently reported the expression of FSHR in mouse, rat, and human brains, particularly in AD-vulnerable regions, including hippocampus and cortex (Xiong et al., 2022). We also found that FSH exacerbated AD-like neuropathology and cognitive decline in 3xTg, APP/PS1, and APP-KI mice, while the inhibition of FSH action rescued this phenotype. Most notably, shRNA-mediated knockdown of the Fshr in the hippocampus prevented the onset of AD-like features (Xiong et al., 2022). Here, using RNAscope, we report the expression of Fshr at the single-transcript resolution in 353 brain nuclei and subnuclei\u2014and suggest that FSHR in the brain may have roles beyond cognition. Probe specificity was established by a positive signal in testicular Sertoli cells, and an absent signal in juxtaposed Leydig cells and in the testes of Fshr\u2013/\u2013 mice\u2014as negative controls (Figure 3A). Immunofluorescence confirmed the expression of FSHR in NeuN-positive neurons, but not in GFAP-positive glial cells or IBA1-positive microglia (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79612/elife-79612-fig3-v2.jpg)\n\n**Figure 3.:** (A) RNAscope signals were detected in the Sertoli cells, but not juxtaposed Leydig cells, in the mouse testis, confirming probe specificity. Scale bar: 50 \u00b5m. (B) Follicle-stimulating hormone receptor (FSHR) immunofluorescence (red) was colocalized with NeuN-positive neurons, but not with GFAP-positive glial cells or IBA1-positive microglia. Scale bar: 100 \u00b5m (magnified view, 10 \u00b5m). (C) Fshr transcript density in the testis and various brain regions detected by RNAscope. (D) Fshr transcript density in nuclei and subnuclei of the ventricular regions, cerebellum, olfactory bulb, hippocampus, cerebral cortex, medulla, midbrain and pons, forebrain, thalamus, and hypothalamus.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79612/elife-79612-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79612/elife-79612-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Representative RNAscope micrographs showing Fshr transcripts in the ependymal layer of the third ventricle (3V), paraflocculus (PFI) of the cerebellum, granule cell layer of the accessory olfactory bulb (GrA), granular layer of the dentate gyrus (GrDG) of the hippocampus, agranular insular cortex, ventral part (AIV) of the cerebral cortex, raphe magnus nucleus (RMg) of the medulla, interpeduncular nucleus, dorsolateral subnucleus (IPDL) of the midbrain and pons, anterior commissure, intrabulbar part (aci) of the forebrain, medial habenular nucleus (MHb) of the thalamus, and arcuate hypothalamic nucleus, lateral part (ArcL) of the hypothalamus.Scale bar: 50 \u00b5m.\n\nFshr transcript density was highest in the ventricular region, followed, in descending order, by the cerebellum, olfactory bulb, hippocampus, cerebral cortex, medulla, midbrain and pons, forebrain, thalamus, and hypothalamus (Figure 3C, Figure 3\u2014source data 1). Within each region, respectively, the highest transcript densities were as follows: ependymal layer of the third ventricle (slightly higher than the testicular Sertoli cells); PFI in the cerebellum; GrA in the olfactory bulb; GrDG in the hippocampus; AIV in the cerebral cortex; RMg in the medulla; MHb in the thalamus; IPDL in midbrain and pons; aci in the forebrain; and ArcL in the hypothalamus (Figure 3D, Figure 3\u2014source data 1). Raw transcript counts in each region and representative micrographs are shown in Figure 3\u2014figure supplement 1 (Figure 3\u2014figure supplement 1\u2014source data 1) and Figure 3\u2014figure supplement 2, respectively.\n\nWe used ViewRNA to examine the expression of FSHR transcripts in specific regions of the human brain (Figure 4A). Expression was noted in neuronal cells co-expressing the noncoding RNA MALAT1 in the GrDG\u2014consistent with the RNAscope data in mouse brain\u2014and in the parahippocampal cortex. This latter data is consistent with FSHR expression in a population of excitatory glutamatergic neurons noted in human brain by 10\u00d7 single-cell RNA-seq (Allen Brain Atlas). Affymetrix microarray analysis confirmed FSHR expression in the frontal, cingulate, temporal, parietal, and occipital subregions of human cortex in postmortem normal and AD brains (Figure 4B, Figure 4\u2014source data 1). Interestingly, FSHR expression trended to be higher in the frontal cortex of the AD brains compared to that of unaffected brains (p=0.060). In all, the data suggest that, beyond a primary role in regulating cognition, brain FSHR may have a wider role in the central regulation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79612/elife-79612-fig4-v2.jpg)\n\n**Figure 4.:** (A) FSHR expression in the human hippocampus and parahippocampal cortex was detected by ViewRNA in neuronal cells that coexpress the noncoding RNA MALAT1. (B) FSHR mRNA expression in the frontal, cingulate, temporal, parietal, and occipital subregions of human cortex in postmortem normal and Alzheimer\u2019s disease (AD) brains (Affymetrix microarray, from GEO accession: GSE84422). Statistics: mean \u00b1 SEM, N = 2\u201315group, Data were analyzed by two-tailed Student\u2019s t-test using Prism v.9.3.1 (GraphPad, San Diego, CA).\n\n## Discussion\n\nThe past decade has witnessed the unraveling of nontraditional physiological actions of anterior pituitary glycoprotein hormones, and hence, the unmasking of functional receptors in bone, fat, brain, and immune cells, among other organs (Zaidi et al., 2018; Sun et al., 2006; Liu et al., 2017; Liu et al., 2015; Williams, 2011; Sun et al., 2020; Fields and Shemesh, 2004). We report here for the first time that Tshr, Lhcgr, and Fshr are expressed in multiple brain regions. The data provide new insights into the distributed central neural network of anterior pituitary hormone receptors, particularly in relation to their role in regulating the somatic tissue function. Specifically, we find a surprising and striking overlap in central neural distribution of the three receptors\u2014with highest transcript densities in the ventricular regions. Furthermore, at least for the TSHR and FSHR, expression levels in ependymal layer of the third ventricle was similar to that of the thyroid follicular cells and testicular Sertoli cells, respectively. Albeit intriguing, this may suggest a primary role for these receptors in central neural regulation.\n\nAmong 173 Tshr-positive brain regions, subregions, and nuclei, the ependymal layer of the third ventricle displayed the highest Tshr transcript number and density. This region is juxtaposed to the anterior pituitary that produces TSH in response to hypothalamic TRH. Furthermore, TSH has been reported to be expressed in the hypothalamus (DeVito et al., 1986; Hojvat et al., 1983). It is therefore possible that a yet uncharacterized central TSH\u2013TSHR feedback circuit may directly regulate the hypothalamic\u2013pituitary\u2013thyroid axis, thought solely to be controlled by thyroid hormones. To add to this complexity, thyroxine-to-triiodothyronine conversion occurs in tanycytes (Fonseca et al., 2013), which calls into question whether central TSH actions regulate thyroid hormone metabolism in these cells and/or directly modulate hypothalamic TRH neuronal projections. Interestingly, it has been shown that Tshr expression is not different between young and old mice (Kerp et al., 2019). However, there is conflicting evidence for the expression of TSH with age\u2014with evidence of no difference between 6-, 15-, and 22-month-old mice (Wang et al., 2019), but a 44% increase in the old rat compared with the young rat (Miler et al., 2019).\n\nThe forebrain and olfactory bulb also displayed abundant Tshr transcripts, with the highest density in the nucleus of the horizontal limb of the diagonal band (HDB) of the forebrain and ventral tenia tecta (VTT) of the olfactory bulb. These regions are involved, respectively, in learning and odor processing (Shiotani et al., 2020; Cleland and Linster, 2019; McNamara et al., 2004; Chaves-Coira et al., 2018; Zhan et al., 2013). In the hypothalamus, the highest density was found in medial tuberal nucleus (MTu), which controls ingestive behaviors and metabolism (Luo et al., 2018). Finally, we found more recently that the modulation of TSHRs in the bed nucleus of the stria terminalis (BNST), which receives direct afferents from the MTu (Dong and Swanson, 2006), influences anxiety responses, suggesting that TSHR signaling might, in fact, mediate psychosocial behaviors.\n\nWhile LH has a key role in reproduction and sexual development, we found 401 brain regions, subregions, and nuclei expressing Lhcgr. There were nominal differences in Lhcgr expression in many brain regions, but the ventricles stood out as having the highest Lhcgr density. Two regions deserve special mention. The Lhcgr\u2013rich mitral cell layer of the accessory olfactory bulb (MiA) has a known role in scent communication during mating (Gildersleeve et al., 2012; Lydell and Doty, 1972; Huck and Banks, 1984; Singh and Bronstad, 2001). A growing body of evidence suggests that men are attracted to cues of impending ovulation in women, raising an intriguing question on whether cycling hormones affect men\u2019s attraction and sexual behavior (Gildersleeve et al., 2012; Singh and Bronstad, 2001). The broader question is whether LH surges in women during cycling may, in fact, alter male sexual behavior through central mechanisms. Second, a high Lhcgr density in the subfornical organ (SFO) of the forebrain was surprising. SFO sends efferent projections to the organum vasculosum of the lamina terminalis (OVLT) (Miselis, 1981; Lind, 1986), which is surrounded by GnRH neurons and contains estrogen receptors (ESR) (Low, 2016). We therefore speculate that circumventricular interactions between LHCGR, LH, GnRH, and ESR underpin the central regulation of reproduction.\n\nRNAscope revealed 353 Fshr-expressing brain regions, subregions, and nuclei. Highest expression was noted in the ependymal layer, not surprisingly given its anatomical proximity to the anterior pituitary gland where FSH is produced in response to hypothalamic gonadotropin-releasing hormone (GnRH). The functional significance of Fshr expressed in the cerebellum, particularly in the paraflocculus (PFI), is yet unknown. However, other Fshr-high subregions, including the granular cell layer of the accessory olfactory bulb (GrA), granular layer of the dentate gyrus (GrDG), and agranular insular cortex (AIV), have known associations with odor processing, learning, memory formation, and anticipation of reward (Eichenbaum, 2001; Nagayama et al., 2014; Kesner and Gilbert, 2007). It is possible that the anosmia of Kallman syndrome, with unclear etiology, may arise from a dysfunctional FSHR-olfaction circuitry. We also find that inactivation of the hippocampal Fshr blunts the cognitive impairment and AD-like neuropathology induced by ovariectomy in 3xTg mice. This data, together with gain- and loss-of-function studies, suggests that hippocampal and cortical FSHR could represent therapeutic targets for AD.\n\nIn all, our results provide compelling evidence for multiple central nodes being targets of the anterior pituitary glycoprotein hormones\u2014a paradigm shift that does not conform with the dogma that pituitary hormones are solely master regulators of single bodily processes. Through the intercession of emerging technologies, we compiled the most complete atlas of glycoprotein hormone receptor distribution in the brain at a single-transcript resolution. In addition, we have identified brain sites with the highest transcript expression and density, findings that are imperative toward a better understanding of the neuroanatomical and functional basis of pituitary hormone signaling in the brain. This understanding should provide the foundation for innovative pharmacological interventions for a range of human diseases, wherein direct actions of pituitary hormones have been implicated, importantly, AD.\n\n## Methods\n\n### Mice\n\nWe used Tshr+/- (strain #004858, Jackson Laboratory), Lhcgr-/- (strain #027102, Jackson Laboratory), Fshr-/- mice (Dierich et al., 1998), and their wild-type littermates in this study. Adult male mice (~3\u20134-month-old) were housed in a 12 hr:12 hr light:dark cycle at 22 \u00b1 2\u00b0C with ad libitum access to water and regular chow. All procedures were approved by the Mount Sinai Institutional Animal Care and Use Committee (approval number IACUC-2018-0047) and are in accordance with Public Health Service and United States Department of Agriculture guidelines.\n\n### RNAscope\n\nMouse brain tissue was collected for RNAscope. Briefly, mice were anesthetized with isoflurane (2\u20143% in oxygen; Baxter Healthcare, Deerfield, IL) and transcardially perfused with 0.9% heparinized saline followed by 4% paraformaldehyde (PFA). Brains were extracted and post-fixed in 4% PFA for 24 hr, dehydrated, and embedded into paraffin. Coronal sections were cut at 5 \u03bcm, with every tenth section mounted onto ~20 slides with 2\u20136 sections on each slide. This method allowed to cover the entire brain and eliminate the likelihood of counting the same transcript twice. Sections were air-dried overnight at room temperature and stored at 4\u00b0C until required.\n\nSimultaneous detection of mouse Tshr, Lhcgr, and Fshr was performed on paraffin sections using RNAscope 2.5 LS Multiplex Reagent Kit and RNAscope 2.5 LS Probes, namely, Mm-TSHR, Mm-LHCGR, and Mm-FSHR (Advanced Cell Diagnostics, ACD). RNAscope assays on thyroid glands and testes (positive controls for Tshr and Lhcgr/Fshr, respectively), as well as brains from knockout mice (negative controls), were performed in parallel.\n\nSlides were baked at 60\u00b0C for 1 hr, deparaffinized, incubated with hydrogen peroxide for 10 min at room temperature, pretreated with Target Retrieval Reagent for 20 min at 100\u00b0C and with Protease III for 30 min at 40\u00b0C. Probe hybridization and signal amplification were performed as per the manufacturer\u2019s instructions for chromogenic assays.\n\nFollowing RNAscope assay, the slides were scanned at \u00d720 magnification and the digital image analysis was successfully validated using the CaseViewer 2.4 (3DHISTECH) software. The same software was employed to capture and prepare images for the figures in the article. Detection of Tshr-, Lhcgr-, and Fshr-positive cells was also performed using the QuPath-0.2.3 (University of Edinburgh, UK) software based on receptor intensity thresholds, size, and shape.\n\n### Histology and immunofluorescence\n\nHeterozygous Tshr+/\u2013 in which a GFP cassette replaced exon 1 of the Tshr gene and their Tshr+/+ littermates were euthanized with carbon dioxide and perfused transcardially with 0.9% heparinized saline followed by 4% PFA in 0.1 M phosphate-buffered saline (PBS; pH 7.4). Brains were collected and post-fixed in the same fixative overnight at 4\u00b0C, then transferred to a 30% sucrose solution in 0.1 M PBS with 0.1% sodium azide and stored at 4\u00b0C until they were sectioned on a freezing stage sliding microtome at 30 \u03bcm. Sections were stored in 0.1 M PBS solution with 0.1% sodium azide until processed for double immunofluorescence.\n\nFor the double-label fluorescent immunohistochemistry, free-floating brain sections were rinsed in 0.1 M PBS (2 \u00d7 15 min), followed by a 30 min blocking in 3% normal horse serum (Vector Laboratories, Burlingame, CA) and 0.3% Triton X-100 in 0.1 M PBS. Sections were incubated with a mixture of primary rabbit anti-GFP antibody (1:500; Cat# SP3005P, OriGene, Rockville, MD) and mouse anti-NeuN antibody (1:1000; Cat# ab104224, Abcam, Cambridge, MA) for 18 hr. Sections were then incubated with the secondary donkey anti-rabbit Alexa 488 (1:700; Cat# 711-545-152, Jackson ImmunoResearch, West Grove, PA) and donkey anti-mouse DyLight 594 (1:700; Cat# DK-2594, Vector Laboratories) antibodies in 0.1 M PBS for 3 hr at room temperature. For immunohistochemical controls, the primary antibody was either omitted or pre-adsorbed with the immunizing peptide overnight at 4\u00b0C, resulting in no immunoreactive staining. In addition, we expectedly did not detect GFP immunoreactivity (-ir) in the Tshr+/+ littermates as the Tshr gene was intact and did not express GFP. Sections were mounted onto slides (Superfrost Plus) and cover-slipped using ProLong Gold Antifade Reagent (Life Technologies, Grand Island, NY). All steps were performed at room temperature.\n\nFor immunofluorescence staining for FSHR, free-floating brain sections were incubated overnight at 4\u00b0C with primary anti-FSHR (1:200; Cat# PA5-50963, Thermo Fisher), anti-NeuN (1:300; Cat# MAB377, Sigma-Aldrich), anti-GFAP (1:400; Cat# MAB360, Sigma-Aldrich), or anti-IBA1 (1:500; Cat# PA5-18039, Thermo Fisher) antibodies. After washing with Tris-buffered saline, the sections were incubated with a mixture of labeled secondary antibodies for detection. DAPI (Sigma-Aldrich) was used for staining nuclei.\n\n### Microarray analysis\n\nAffymetrix Human Genome U133 Plus 2.0 Array data for FSHR expression in the frontal, cingulate, temporal, parietal, and occipital cortex from both AD and non-AD human brains were curated from a previously published dataset (GEO accession #GSE84422; Wang et al., 2016).\n\n### Quantitative PCR\n\nFor quantitative RT-PCR performed on homogenates of brain tissues, total RNA from the hypothalamus and the hippocampus isolated from five Tshr+/+ mice was extracted using an RNeasy Mini kit (QIAGEN) as per the manufacturer\u2019s protocol. Thyroid and liver tissues were used as positive and negative controls, respectively. RNA was treated with DNAse I (Invitrogen), and reverse-transcribed using the SuperScript II Reverse Transcriptase (Thermo Fisher Scientific). qPCR was performed with a QuantStudio 7 Real-Time PCR system (Applied Biosystems). PCR reaction mix consisted of first-strand cDNA template, exon-spanning primer pairs, and SYBR Green PCR master mix (Thermo Fisher Scientific). Expression of the selected targets was compared to that of a panel of normalizing genes (Rps11, Tubg1, and Gapdh) measured on the same sample in parallel on the same plate, giving a Ct difference (\u0394Ct) for the normalizing gene minus the test gene. Relative expression levels were calculated by 2-\u0394\u0394Ct using thyroid as the reference tissue.\n\n### Quantitation, validation, and statistical analysis\n\nImmunofluorescent images were viewed and captured using \u00d710 or \u00d720 objectives with an Observer.Z1 fluorescence microscope (Carl Zeiss, Germany) with appropriate filters for Alexa 488, Cy3, and DAPI. The captured GFP and NeuN images were evaluated and overlaid using AxioVision v.4.8 software (Carl Zeiss, Germany) and ImageJ (NIH, Bethesda, MD).\n\nData were analyzed by two-tailed Student\u2019s t-test using Prism v.9.3.1 (GraphPad, San Diego, CA). Significance was set at p<0.05.\n",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "f17a41a8-00db-4d92-af70-cf3e83b0c645",
+      "submission_id": "cc06f544-9f70-4221-a2fb-c276422f28b6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carlos Isales, https://ror.org/012mef835 Medical College of Georgia at Augusta University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79612.sa0](https://doi.org/10.7554/eLife.79612.sa0)\n\nThis article is an excellent resource as an atlas of hypophyseal hormone localization in the brain. It is an invaluable resource to researchers in the field and provides important new information.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Carlos Isales, https://ror.org/012mef835 Medical College of Georgia at Augusta University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79612.sa1](https://doi.org/10.7554/eLife.79612.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Brain Atlas for Glycoprotein Hormone Receptors at Single-Transcript Level\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Carlos Isales as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Yunlei Yang (Reviewer #1); Christopher L-H Huang (Reviewer #2); Mei Wan (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. As the authors did not stain tanycytes using tanycyte-specific antibodies, I would suggest co-labelling tanycyte and TSHR in Figure 1, or removing the word \"tanycyte\" in the text but with an alternative statement \"ependymal layer of the third ventricle\".\n\n2. In this study, the authors used young adult animals. Are there any differences in those gene and receptor expressions in young or old mouse brains? It would gain more information to discuss.\n\n3. Figure 1C- based on the figure legend, n=4-5 mice were used for each group. The bar diagram should be changed into a scatter dot plot format.\n\n4. Figure 4A- the scale bars of the 2 images in the upper panel are not clear.\n\n5. Supplemental Figure 2- the resolution of some higher power images needs to be improved.\n",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e0d2ab12-7d2e-4171-bf94-a46c7f6cdfb3",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C1",
+      "claim": "Anterior pituitary hormones, traditionally thought to have unitary functions in regulating single endocrine targets, act on multiple somatic tissues, such as bone, fat, and liver.",
+      "claim_type": "EXPLICIT",
+      "source": "There is increasing evidence that anterior pituitary hormones, traditionally thought to have unitary functions in regulating single endocrine targets, act on multiple somatic tissues, such as bone, fat, and liver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work establishing these actions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "1489099c-6181-4ef4-9cc8-5f9fe456a0f6",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C2",
+      "claim": "There is emerging evidence for anterior pituitary hormone action on brain receptors in mediating central neural and peripheral somatic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also emerging evidence for anterior pituitary hormone action on brain receptors in mediating central neural and peripheral somatic functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the literature review and citations provided in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "57392f98-ce68-45a0-a453-17887c863e86",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C3",
+      "claim": "Tshr is expressed in 173 brain regions, nuclei and subnuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "We have used RNAscope, a technology that allows the detection of mRNA at single-transcript level, together with protein level validation, to document Tshr expression in 173 and Fshr expression in 353 brain regions, nuclei and subnuclei identified using the Atlas for the Mouse Brain in Stereotaxic Coordinates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNAscope data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "c3859095-ad46-43bf-9926-ee48f6bdffc8",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C4",
+      "claim": "Fshr is expressed in 353 brain regions, nuclei and subnuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "We have used RNAscope, a technology that allows the detection of mRNA at single-transcript level, together with protein level validation, to document Tshr expression in 173 and Fshr expression in 353 brain regions, nuclei and subnuclei identified using the Atlas for the Mouse Brain in Stereotaxic Coordinates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNAscope data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "a25bf5fd-bd2f-420e-9f3f-0a83b12c5e25",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C5",
+      "claim": "Lhcgr transcripts are identified in 401 brain regions, nuclei and subnuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified Lhcgr transcripts in 401 brain regions, nuclei and subnuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNAscope data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "f655ce83-b0f4-4d09-859c-2cceeb70d98d",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C6",
+      "claim": "FSHR transcripts are co-localized in MALAT1-positive neurons in human brain samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementarily, we used ViewRNA, another single-transcript detection technology, to establish the expression of FSHR in human brain samples, where transcripts were co-localized in MALAT1-positive neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ViewRNA data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "28d44f32-5e82-4b24-954c-8bfba682d5da",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C7",
+      "claim": "All three receptors (TSHR, LHCGR, FSHR) show high expression in the ventricular region.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show high expression for all three receptors in the ventricular region\u2014with yet unknown functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNAscope data showing transcript densities in ventricular regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "92104bc8-96f8-4b2b-81a6-6de0d3e8f736",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C8",
+      "claim": "Tshr expression in the ependymal layer of the third ventricle is similar to that of thyroid follicular cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, Tshr and Fshr expression in the ependymal layer of the third ventricle was similar to that of the thyroid follicular cells and testicular Sertoli cells, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative RNAscope data between brain and peripheral tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "ffb89e55-2443-4a35-ac9f-cbfad0c549a8",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C9",
+      "claim": "Fshr expression in the ependymal layer of the third ventricle is similar to that of testicular Sertoli cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, Tshr and Fshr expression in the ependymal layer of the third ventricle was similar to that of the thyroid follicular cells and testicular Sertoli cells, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative RNAscope data between brain and peripheral tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "354234ad-f961-494d-a693-fb377282a431",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C10",
+      "claim": "Fshr is localized to NeuN-positive neurons in the granular layer of the dentate gyrus in murine brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Fshr was localized to NeuN-positive neurons in the granular layer of the dentate gyrus in murine and human brain\u2014both are Alzheimer's disease-vulnerable regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunofluorescence data showing co-localization with NeuN.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "a48c270a-93d3-4e82-8704-057eadbe91c8",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C11",
+      "claim": "Fshr is localized to NeuN-positive neurons in the granular layer of the dentate gyrus in human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Fshr was localized to NeuN-positive neurons in the granular layer of the dentate gyrus in murine and human brain\u2014both are Alzheimer's disease-vulnerable regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ViewRNA data in human brain samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "ae2c2019-0783-4c19-b547-d6d600c45e16",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C12",
+      "claim": "The granular layer of the dentate gyrus is an Alzheimer's disease-vulnerable region.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Fshr was localized to NeuN-positive neurons in the granular layer of the dentate gyrus in murine and human brain\u2014both are Alzheimer's disease-vulnerable regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about Alzheimer's disease pathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "e5357b04-f3f1-4980-8de1-11b8a8c48279",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C13",
+      "claim": "TSH receptor (TSHR) haploinsufficiency causes profound bone loss in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We established, for the first time, a direct action of thyroid-stimulating hormone (TSH) on bone and found that TSH receptor (TSHR) haploinsufficiency causes profound bone loss in mice (Abe et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "782d8dd3-ca8b-4e1b-b0bd-9aa75ed9d7c2",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C14",
+      "claim": "Follicle-stimulating hormone (FSH) displays direct effects on the skeleton to cause bone loss.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that follicle-stimulating hormone (FSH), hitherto thought to solely regulate gonadal function, displayed direct effects on the skeleton to cause bone loss (Sun et al., 2006), and on fat cells, to cause adipogenesis and body fat accumulation (Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "cedeef77-8066-4fc0-ad14-d8bca1484c21",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C15",
+      "claim": "FSH displays direct effects on fat cells to cause adipogenesis and body fat accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that follicle-stimulating hormone (FSH), hitherto thought to solely regulate gonadal function, displayed direct effects on the skeleton to cause bone loss (Sun et al., 2006), and on fat cells, to cause adipogenesis and body fat accumulation (Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "3da63c1b-6e74-4944-8ab6-ed52393457aa",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C16",
+      "claim": "Oxytocin and vasopressin display direct, but opposing, skeletal actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we showed that hormones from the posterior pituitary, namely, oxytocin and vasopressin, displayed direct, but opposing, skeletal actions\u2014effects that may relate to the pathogenesis of bone loss in pregnancy and lactation, and in chronic hyponatremia, respectively (Sun et al., 2019; Sun et al., 2016; Tamma et al., 2009; Tamma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "b2904e71-3ef5-48d1-b552-5e7d0f1d86f1",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C17",
+      "claim": "A TSH\u03b2 variant (TSH\u03b2v) is expressed in bone marrow macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "We find the expression of a TSH\u03b2 variant (TSH\u03b2v) in bone marrow macrophages, while oxytocin is expressed by both osteoblasts and osteoclasts (Colaianni et al., 2011; Colaianni et al., 2012; Baliram et al., 2013; Baliram et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "c89a1d5c-b06f-40ab-a483-9a2eb05ce724",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C18",
+      "claim": "Oxytocin is expressed by both osteoblasts and osteoclasts.",
+      "claim_type": "EXPLICIT",
+      "source": "We find the expression of a TSH\u03b2 variant (TSH\u03b2v) in bone marrow macrophages, while oxytocin is expressed by both osteoblasts and osteoclasts (Colaianni et al., 2011; Colaianni et al., 2012; Baliram et al., 2013; Baliram et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "6b6d929a-da61-4c31-a7fb-3e949afee88c",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C19",
+      "claim": "Oxytocin receptors are expressed in various brain regions and function in regulating peripheral actions, such as social behavior and satiety.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a compelling body of literature to support the expression of oxytocin receptors in various brain regions, and their function in regulating peripheral actions, such as social behavior and satiety (Sun et al., 2019; Bale et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "36788897-3add-4634-bfe0-cb7f88e71419",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C20",
+      "claim": "There is relatively scant information on the expression and function of the anterior pituitary glycoprotein hormone family of receptors (FSHR, TSHR, and LHCGR) in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is relatively scant information on the expression and, importantly, function of the anterior pituitary glycoprotein hormone family of receptors, namely, FSHR, TSHR, and luteinizing hormone/human chorionic gonadotropin receptor (LHCGR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a review of existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "f1ee736a-5182-49e6-b016-df3d61923b4a",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C21",
+      "claim": "Discrete sites of the rat, mouse, and human brain express receptors for FSHR, TSHR, and LHCGR.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrete sites of the rat, mouse, and human brain express receptors for these hormones, with several studies pointing to their relationship to neural functions, such as cognition, learning, neuronal plasticity, and sensory perception, as well as to neuropsychiatric disorders, including affective disorders and neurodegeneration (Crisanti et al., 2001; Emanuele et al., 1985; Lei et al., 1993; Luan et al., 2020; Bi et al., 2020; Blair et al., 2019; Apaja et al., 2004; Naicker and Naidoo, 2018; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work and Table 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "20a843b4-2023-40b7-ace2-ed1f24f43a8c",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C22",
+      "claim": "Brain glycoprotein hormone receptors are related to neural functions such as cognition, learning, neuronal plasticity, and sensory perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrete sites of the rat, mouse, and human brain express receptors for these hormones, with several studies pointing to their relationship to neural functions, such as cognition, learning, neuronal plasticity, and sensory perception, as well as to neuropsychiatric disorders, including affective disorders and neurodegeneration (Crisanti et al., 2001; Emanuele et al., 1985; Lei et al., 1993; Luan et al., 2020; Bi et al., 2020; Blair et al., 2019; Apaja et al., 2004; Naicker and Naidoo, 2018; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work and Table 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "863c05e5-8175-4de9-90a0-ab99bc55a2e7",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C23",
+      "claim": "Brain glycoprotein hormone receptors are related to neuropsychiatric disorders, including affective disorders and neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Discrete sites of the rat, mouse, and human brain express receptors for these hormones, with several studies pointing to their relationship to neural functions, such as cognition, learning, neuronal plasticity, and sensory perception, as well as to neuropsychiatric disorders, including affective disorders and neurodegeneration (Crisanti et al., 2001; Emanuele et al., 1985; Lei et al., 1993; Luan et al., 2020; Bi et al., 2020; Blair et al., 2019; Apaja et al., 2004; Naicker and Naidoo, 2018; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work and Table 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "57ea3e06-4fd7-4d5e-94ae-e3b25eebc4da",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C24",
+      "claim": "RNAscope uses ~20 pairs of transcript-specific double Z-probes to hybridize 10-\u00b5m-thick whole-brain sections.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAscope, which allows the detection of single transcripts, uses ~20 pairs of transcript-specific double Z-probes to hybridize 10-\u00b5m-thick whole-brain sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the technical methodology used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "e92c9d08-4aff-4782-bda8-56b28f3b207c",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C25",
+      "claim": "Tshr was detected bilaterally in 173 brain nuclei and subnuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Tshr was detected bilaterally in 173 brain nuclei and subnuclei, in the following descending order of transcript densities: ventricular region, olfactory bulb, forebrain, hypothalamus, medulla, cerebellum, midbrain and pons, cerebral cortex, hippocampus, and thalamus (Figure 1A, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNAscope data presented in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "f522bd5a-4b3c-425f-9f7b-127162c5ad9e",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C26",
+      "claim": "Tshr transcript density is highest in the ventricular region, followed by olfactory bulb, forebrain, hypothalamus, medulla, cerebellum, midbrain and pons, cerebral cortex, hippocampus, and thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Tshr was detected bilaterally in 173 brain nuclei and subnuclei, in the following descending order of transcript densities: ventricular region, olfactory bulb, forebrain, hypothalamus, medulla, cerebellum, midbrain and pons, cerebral cortex, hippocampus, and thalamus (Figure 1A, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAscope data presented in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "44c91b10-3d42-4e5a-b983-4aeaf9458053",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C27",
+      "claim": "Thyroid glands from Tshr\u2013/\u2013 mice do not show a Tshr RNAscope signal, proving probe specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, thyroid glands from Tshr\u2013/\u2013 mice did not show a signal, proving probe specificity (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by negative control data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "b219baa6-aaa1-4c1b-8d60-7e1e703cb9cb",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C28",
+      "claim": "Tshr expression in pooled brain samples was confirmed by qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Tshr expression in pooled brain samples was confirmed by qPCR (Figure 1C, Figure 1\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data presented in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "477b1c3f-1cb5-4809-a06a-a55c8dd43f42",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C29",
+      "claim": "The hypothalamus and hippocampus express Tshr, with hypothalamic expression being considerably higher (p<0.01) in females than in males.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypothalamus and hippocampus expressed Tshr, with hypothalamic expression being considerably higher (p<0.01) in females than in males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR data showing sex differences in Tshr expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "c5e453be-77d9-432d-b52c-019246e7816e",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C30",
+      "claim": "The ependymal layer of the third ventricle has the highest Tshr transcript density among brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, within other regions of the brain, highest Tshr densities were as follows: ependymal layer of the third ventricle (slightly higher than the thyroid follicular cells); VTT in the olfactory bulb; HDB in the forebrain; MTu in the hypothalamus; SoIV in the medulla; PFI in the cerebellum; LDTg in midbrain and pons; DP in the cerebral cortex; DG in hippocampus; and PPT in the thalamus (Figure 1D, Figure 1\u2014source data 1; see Appendix 1 for nomenclature).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAscope data presented in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "ca099ce4-c1eb-454b-949c-9bd489fa5c87",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C31",
+      "claim": "Tshr transcript density in the ependymal layer of the third ventricle is slightly higher than in thyroid follicular cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, within other regions of the brain, highest Tshr densities were as follows: ependymal layer of the third ventricle (slightly higher than the thyroid follicular cells); VTT in the olfactory bulb; HDB in the forebrain; MTu in the hypothalamus; SoIV in the medulla; PFI in the cerebellum; LDTg in midbrain and pons; DP in the cerebral cortex; DG in hippocampus; and PPT in the thalamus (Figure 1D, Figure 1\u2014source data 1; see Appendix 1 for nomenclature).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparative RNAscope data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "e72024ff-7693-4a20-809d-1e7a0ea50d4e",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C32",
+      "claim": "Abundant GFP immunofluorescence was detected in the ependymal layer of the third ventricle in Tshr+/\u2013 heterozygous mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our RNAscope finding, profound GFP-ir was noted in the ependymal region of the third ventricle, mostly in NeuN-negative cells, but with some neuronal localization (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "c501c9f2-5511-493b-9a44-846903f5eabb",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C33",
+      "claim": "GFP immunofluorescence in the ependymal layer of the third ventricle is mostly in NeuN-negative cells, but with some neuronal localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our RNAscope finding, profound GFP-ir was noted in the ependymal region of the third ventricle, mostly in NeuN-negative cells, but with some neuronal localization (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "122a569f-3dc5-4a37-9e0d-d1bac6e0f990",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C34",
+      "claim": "The SVZ of the lateral ventricles, and the SI, and dorsal and ventral BNST of the forebrain show GFP immunoreactivity in Tshr+/\u2013 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The SVZ of the lateral ventricles, and the SI, and dorsal and ventral BNST of the forebrain also showed GFP-ir, but immunoreactivity was much lower than the ependymal layer of the third ventricle (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "9f5e5b38-5a1c-4481-abdd-fe9655f977cc",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C35",
+      "claim": "GFP immunoreactivity in the SVZ, SI, and BNST is much lower than in the ependymal layer of the third ventricle.",
+      "claim_type": "EXPLICIT",
+      "source": "The SVZ of the lateral ventricles, and the SI, and dorsal and ventral BNST of the forebrain also showed GFP-ir, but immunoreactivity was much lower than the ependymal layer of the third ventricle (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "53db5b6b-0dd7-403b-b5c7-64b24cddfae2",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C40",
+      "claim": "Lhcgr expression was documented in 401 brain nuclei and subnuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we mapped Lhcgr in mouse brain to document expression in 401 brain nuclei and subnuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNAscope data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "39d7ab5e-e4b8-40f7-96a4-3945f26a0d7c",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C41",
+      "claim": "Lhcgr RNAscope probe specificity was established by a positive signal in testicular Leydig cells and an absent signal in juxtaposed Sertoli cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Probe specificity was established by a positive signal in testicular Leydig cells, and with an absent signal in juxtaposed Sertoli cells (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "fb0b7585-534d-4a99-a30e-d93fff2d9948",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C42",
+      "claim": "The ventricular regions display the highest Lhcgr transcript density.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably similar to Tshr transcripts, the ventricular regions displayed the highest transcript density (Figure 2B, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAscope data presented in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "3d473721-6653-490c-a85b-2ba59c73db1d",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C43",
+      "claim": "FSHR is expressed in mouse, rat, and human brains, particularly in AD-vulnerable regions, including hippocampus and cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported the expression of FSHR in mouse, rat, and human brains, particularly in AD-vulnerable regions, including hippocampus and cortex (Xiong et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "9be855fb-be3e-4fc2-b911-5367210b64d8",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C44",
+      "claim": "FSH exacerbates AD-like neuropathology and cognitive decline in 3xTg, APP/PS1, and APP-KI mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that FSH exacerbated AD-like neuropathology and cognitive decline in 3xTg, APP/PS1, and APP-KI mice, while the inhibition of FSH action rescued this phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "1e6af1f7-559b-4107-8596-12aa697b9715",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C45",
+      "claim": "Inhibition of FSH action rescues AD-like neuropathology and cognitive decline in 3xTg, APP/PS1, and APP-KI mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that FSH exacerbated AD-like neuropathology and cognitive decline in 3xTg, APP/PS1, and APP-KI mice, while the inhibition of FSH action rescued this phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "ce26bbd6-85e3-4a4f-9a72-46bcb503bb45",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C46",
+      "claim": "shRNA-mediated knockdown of Fshr in the hippocampus prevents the onset of AD-like features.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, shRNA-mediated knockdown of the Fshr in the hippocampus prevented the onset of AD-like features (Xiong et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "029d442b-ca6e-4cc1-a619-fc66c15479c4",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C47",
+      "claim": "Fshr is expressed at single-transcript resolution in 353 brain nuclei and subnuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using RNAscope, we report the expression of Fshr at the single-transcript resolution in 353 brain nuclei and subnuclei\u2014and suggest that FSHR in the brain may have roles beyond cognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNAscope data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "e34de6eb-a5d8-4306-a557-9ec57ffecdd7",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C48",
+      "claim": "FSHR in the brain may have roles beyond cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using RNAscope, we report the expression of Fshr at the single-transcript resolution in 353 brain nuclei and subnuclei\u2014and suggest that FSHR in the brain may have roles beyond cognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the widespread expression of Fshr in multiple brain regions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "3b8bf0ca-bb13-4d78-9f51-5c21e0f793ef",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C49",
+      "claim": "Fshr RNAscope probe specificity was established by a positive signal in testicular Sertoli cells and an absent signal in juxtaposed Leydig cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Probe specificity was established by a positive signal in testicular Sertoli cells, and an absent signal in juxtaposed Leydig cells and in the testes of Fshr\u2013/\u2013 mice\u2014as negative controls (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "28101452-da07-49f6-a35e-0b6c999964fd",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C50",
+      "claim": "Fshr RNAscope probe specificity was established by an absent signal in the testes of Fshr\u2013/\u2013 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Probe specificity was established by a positive signal in testicular Sertoli cells, and an absent signal in juxtaposed Leydig cells and in the testes of Fshr\u2013/\u2013 mice\u2014as negative controls (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by negative control data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "ed1eb77f-5045-4704-8932-03cc6d03b557",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C51",
+      "claim": "FSHR is expressed in NeuN-positive neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence confirmed the expression of FSHR in NeuN-positive neurons, but not in GFAP-positive glial cells or IBA1-positive microglia (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "c9897bd3-25c9-4bbd-80d3-ac726fbb5595",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C52",
+      "claim": "FSHR is not expressed in GFAP-positive glial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence confirmed the expression of FSHR in NeuN-positive neurons, but not in GFAP-positive glial cells or IBA1-positive microglia (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "37fc238c-c8b1-4f01-94bf-687da7f582ad",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C53",
+      "claim": "FSHR is not expressed in IBA1-positive microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence confirmed the expression of FSHR in NeuN-positive neurons, but not in GFAP-positive glial cells or IBA1-positive microglia (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "27bd1d5f-622f-4126-9141-b86634da7a47",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C54",
+      "claim": "Fshr transcript density is highest in the ventricular region, followed by cerebellum, olfactory bulb, hippocampus, cerebral cortex, medulla, midbrain and pons, forebrain, thalamus, and hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Fshr transcript density was highest in the ventricular region, followed, in descending order, by the cerebellum, olfactory bulb, hippocampus, cerebral cortex, medulla, midbrain and pons, forebrain, thalamus, and hypothalamus (Figure 3C, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAscope data presented in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "0e664122-3f75-42de-9da3-a0ba452784a6",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C55",
+      "claim": "Fshr transcript density in the ependymal layer of the third ventricle is slightly higher than in testicular Sertoli cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each region, respectively, the highest transcript densities were as follows: ependymal layer of the third ventricle (slightly higher than the testicular Sertoli cells); PFI in the cerebellum; GrA in the olfactory bulb; GrDG in the hippocampus; AIV in the cerebral cortex; RMg in the medulla; MHb in the thalamus; IPDL in midbrain and pons; aci in the forebrain; and ArcL in the hypothalamus (Figure 3D, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparative RNAscope data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "7e905769-68d8-4b0e-baf7-bc36f74c9f86",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C56",
+      "claim": "FSHR expression is noted in neuronal cells co-expressing the noncoding RNA MALAT1 in the granular layer of the dentate gyrus in human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression was noted in neuronal cells co-expressing the noncoding RNA MALAT1 in the GrDG\u2014consistent with the RNAscope data in mouse brain\u2014and in the parahippocampal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ViewRNA data in human brain samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "93c9178b-183f-46be-a4bd-377e1e3b3a46",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C57",
+      "claim": "FSHR expression is noted in the parahippocampal cortex in human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression was noted in neuronal cells co-expressing the noncoding RNA MALAT1 in the GrDG\u2014consistent with the RNAscope data in mouse brain\u2014and in the parahippocampal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ViewRNA data in human brain samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "c94de362-5052-4c18-8376-50ffe468ef61",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C58",
+      "claim": "FSHR is expressed in a population of excitatory glutamatergic neurons in human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "This latter data is consistent with FSHR expression in a population of excitatory glutamatergic neurons noted in human brain by 10\u00d7 single-cell RNA-seq (Allen Brain Atlas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single-cell RNA-seq data from the Allen Brain Atlas.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "6d8a5c65-aa5a-4967-8096-af0b74be87e5",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C59",
+      "claim": "FSHR is expressed in the frontal, cingulate, temporal, parietal, and occipital subregions of human cortex in postmortem normal and AD brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Affymetrix microarray analysis confirmed FSHR expression in the frontal, cingulate, temporal, parietal, and occipital subregions of human cortex in postmortem normal and AD brains (Figure 4B, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Affymetrix microarray data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "8444c6f6-f7d7-4451-b6e3-8064fcc3bf88",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C60",
+      "claim": "FSHR expression trends to be higher in the frontal cortex of AD brains compared to unaffected brains (p=0.060).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, FSHR expression trended to be higher in the frontal cortex of the AD brains compared to that of unaffected brains (p=0.060).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Affymetrix microarray data showing a trend toward significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "d654924c-d9a1-4ea4-be24-e821ef1cda3c",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C61",
+      "claim": "Brain FSHR may have a wider role in central regulation beyond cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "In all, the data suggest that, beyond a primary role in regulating cognition, brain FSHR may have a wider role in the central regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the widespread expression of FSHR in multiple brain regions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "af1f6cc8-9ec3-4d2c-a978-c02117c67202",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C62",
+      "claim": "Tshr, Lhcgr, and Fshr are expressed in multiple brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We report here for the first time that Tshr, Lhcgr, and Fshr are expressed in multiple brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNAscope data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "d600b914-9f4e-4ea5-9df0-235032b07a69",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C63",
+      "claim": "There is a surprising and striking overlap in central neural distribution of TSHR, LHCGR, and FSHR, with highest transcript densities in the ventricular regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we find a surprising and striking overlap in central neural distribution of the three receptors\u2014with highest transcript densities in the ventricular regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNAscope data showing similar distribution patterns for all three receptors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "8233ae4d-069b-4b63-9b40-0ab09a9ee919",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C64",
+      "claim": "TSHR and FSHR expression levels in the ependymal layer of the third ventricle are similar to those of thyroid follicular cells and testicular Sertoli cells, respectively, suggesting a primary role for these receptors in central neural regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, at least for the TSHR and FSHR, expression levels in ependymal layer of the third ventricle was similar to that of the thyroid follicular cells and testicular Sertoli cells, respectively. Albeit intriguing, this may suggest a primary role for these receptors in central neural regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the comparison of expression levels between brain and peripheral tissues.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "587d58a8-7c4d-488a-a541-58bbc1e45837",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C65",
+      "claim": "The ependymal layer of the third ventricle is juxtaposed to the anterior pituitary that produces TSH in response to hypothalamic TRH.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 173 Tshr-positive brain regions, subregions, and nuclei, the ependymal layer of the third ventricle displayed the highest Tshr transcript number and density. This region is juxtaposed to the anterior pituitary that produces TSH in response to hypothalamic TRH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "dda8daa4-1135-47a3-b16b-1d21977bfa71",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C66",
+      "claim": "TSH has been reported to be expressed in the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, TSH has been reported to be expressed in the hypothalamus (DeVito et al., 1986; Hojvat et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "1e106794-269d-42d8-ad73-9204bf8fd896",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C67",
+      "claim": "A yet uncharacterized central TSH\u2013TSHR feedback circuit may directly regulate the hypothalamic\u2013pituitary\u2013thyroid axis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that a yet uncharacterized central TSH\u2013TSHR feedback circuit may directly regulate the hypothalamic\u2013pituitary\u2013thyroid axis, thought solely to be controlled by thyroid hormones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the anatomical proximity and expression patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "d3b32e9d-d617-45a6-870b-81a18e56e579",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C68",
+      "claim": "Thyroxine-to-triiodothyronine conversion occurs in tanycytes.",
+      "claim_type": "EXPLICIT",
+      "source": "To add to this complexity, thyroxine-to-triiodothyronine conversion occurs in tanycytes (Fonseca et al., 2013), which calls into question whether central TSH actions regulate thyroid hormone metabolism in these cells and/or directly modulate hypothalamic TRH neuronal projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "a0155efc-e52b-4f2a-8a74-c87be797bbac",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C69",
+      "claim": "Central TSH actions may regulate thyroid hormone metabolism in tanycytes and/or directly modulate hypothalamic TRH neuronal projections.",
+      "claim_type": "EXPLICIT",
+      "source": "To add to this complexity, thyroxine-to-triiodothyronine conversion occurs in tanycytes (Fonseca et al., 2013), which calls into question whether central TSH actions regulate thyroid hormone metabolism in these cells and/or directly modulate hypothalamic TRH neuronal projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the expression of TSHR in relevant brain regions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "a4694c3a-9b16-4515-a11d-0c6d8aee2f80",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C70",
+      "claim": "Tshr expression is not different between young and old mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it has been shown that Tshr expression is not different between young and old mice (Kerp et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "6c92bb97-ade3-4068-a074-1e77b152afba",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C71",
+      "claim": "There is conflicting evidence for the expression of TSH with age in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is conflicting evidence for the expression of TSH with age\u2014with evidence of no difference between 6-, 15-, and 22-month-old mice (Wang et al., 2019), but a 44% increase in the old rat compared with the young rat (Miler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work showing conflicting results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "9e312a62-4219-467e-b332-336d18437794",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C72",
+      "claim": "The nucleus of the horizontal limb of the diagonal band (HDB) of the forebrain is involved in learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The forebrain and olfactory bulb also displayed abundant Tshr transcripts, with the highest density in the nucleus of the horizontal limb of the diagonal band (HDB) of the forebrain and ventral tenia tecta (VTT) of the olfactory bulb. These regions are involved, respectively, in learning and odor processing (Shiotani et al., 2020; Cleland and Linster, 2019; McNamara et al., 2004; Chaves-Coira et al., 2018; Zhan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "098feb16-1e13-477b-9198-2a0c945a21d1",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C73",
+      "claim": "The ventral tenia tecta (VTT) of the olfactory bulb is involved in odor processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The forebrain and olfactory bulb also displayed abundant Tshr transcripts, with the highest density in the nucleus of the horizontal limb of the diagonal band (HDB) of the forebrain and ventral tenia tecta (VTT) of the olfactory bulb. These regions are involved, respectively, in learning and odor processing (Shiotani et al., 2020; Cleland and Linster, 2019; McNamara et al., 2004; Chaves-Coira et al., 2018; Zhan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "47e9af38-4731-4e2f-a1c5-d634d7f7743d",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C74",
+      "claim": "The medial tuberal nucleus (MTu) of the hypothalamus controls ingestive behaviors and metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "In the hypothalamus, the highest density was found in medial tuberal nucleus (MTu), which controls ingestive behaviors and metabolism (Luo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "a7dced26-c86d-4e07-85f0-08823e3ee5cf",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C75",
+      "claim": "Modulation of TSHRs in the bed nucleus of the stria terminalis (BNST) influences anxiety responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found more recently that the modulation of TSHRs in the bed nucleus of the stria terminalis (BNST), which receives direct afferents from the MTu (Dong and Swanson, 2006), influences anxiety responses, suggesting that TSHR signaling might, in fact, mediate psychosocial behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by unpublished data from the authors' recent work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "4e2e4832-d27a-4490-af2b-bdf7c071a523",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C76",
+      "claim": "The BNST receives direct afferents from the MTu.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found more recently that the modulation of TSHRs in the bed nucleus of the stria terminalis (BNST), which receives direct afferents from the MTu (Dong and Swanson, 2006), influences anxiety responses, suggesting that TSHR signaling might, in fact, mediate psychosocial behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "56ea428b-5fba-4e54-9244-e53f9cbb76be",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C77",
+      "claim": "TSHR signaling might mediate psychosocial behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found more recently that the modulation of TSHRs in the bed nucleus of the stria terminalis (BNST), which receives direct afferents from the MTu (Dong and Swanson, 2006), influences anxiety responses, suggesting that TSHR signaling might, in fact, mediate psychosocial behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the observed effects of TSHR modulation on anxiety.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "686346a8-017a-4eb1-9005-1fccccd50d57",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C78",
+      "claim": "The Lhcgr-rich mitral cell layer of the accessory olfactory bulb (MiA) has a known role in scent communication during mating.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lhcgr\u2013rich mitral cell layer of the accessory olfactory bulb (MiA) has a known role in scent communication during mating (Gildersleeve et al., 2012; Lydell and Doty, 1972; Huck and Banks, 1984; Singh and Bronstad, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "8cfe2482-197c-4ce4-a02f-ddf4c91ee1b9",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C79",
+      "claim": "Men are attracted to cues of impending ovulation in women.",
+      "claim_type": "EXPLICIT",
+      "source": "A growing body of evidence suggests that men are attracted to cues of impending ovulation in women, raising an intriguing question on whether cycling hormones affect men's attraction and sexual behavior (Gildersleeve et al., 2012; Singh and Bronstad, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "30ed4755-8551-4a42-b63f-06ddf445ee08",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C80",
+      "claim": "LH surges in women during cycling may alter male sexual behavior through central mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The broader question is whether LH surges in women during cycling may, in fact, alter male sexual behavior through central mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the expression of LHCGR in olfactory regions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "b46f01a7-cfd1-4e6f-87ea-3ebc5221bc43",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C81",
+      "claim": "The subfornical organ (SFO) sends efferent projections to the organum vasculosum of the lamina terminalis (OVLT).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a high Lhcgr density in the subfornical organ (SFO) of the forebrain was surprising. SFO sends efferent projections to the organum vasculosum of the lamina terminalis (OVLT) (Miselis, 1981; Lind, 1986), which is surrounded by GnRH neurons and contains estrogen receptors (ESR) (Low, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "a384a350-f7f8-479f-b572-7df9c8433285",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C82",
+      "claim": "The OVLT is surrounded by GnRH neurons and contains estrogen receptors (ESR).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a high Lhcgr density in the subfornical organ (SFO) of the forebrain was surprising. SFO sends efferent projections to the organum vasculosum of the lamina terminalis (OVLT) (Miselis, 1981; Lind, 1986), which is surrounded by GnRH neurons and contains estrogen receptors (ESR) (Low, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "02e9f181-068d-45b4-b50e-3d13d373f277",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C83",
+      "claim": "Circumventricular interactions between LHCGR, LH, GnRH, and ESR may underpin the central regulation of reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore speculate that circumventricular interactions between LHCGR, LH, GnRH, and ESR underpin the central regulation of reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the anatomical connections and receptor expression patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "3285f771-c9aa-4831-95f7-a31b848050fc",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C84",
+      "claim": "The granular cell layer of the accessory olfactory bulb (GrA), granular layer of the dentate gyrus (GrDG), and agranular insular cortex (AIV) have known associations with odor processing, learning, memory formation, and anticipation of reward.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other Fshr-high subregions, including the granular cell layer of the accessory olfactory bulb (GrA), granular layer of the dentate gyrus (GrDG), and agranular insular cortex (AIV), have known associations with odor processing, learning, memory formation, and anticipation of reward (Eichenbaum, 2001; Nagayama et al., 2014; Kesner and Gilbert, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "0851d007-2388-4ee5-bcc1-54aa31c1a3af",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C85",
+      "claim": "The anosmia of Kallman syndrome may arise from a dysfunctional FSHR-olfaction circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the anosmia of Kallman syndrome, with unclear etiology, may arise from a dysfunctional FSHR-olfaction circuitry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on the expression of FSHR in olfactory regions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "242b9a85-7de0-4f0e-908b-5e2339f33bb5",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C86",
+      "claim": "Inactivation of hippocampal Fshr blunts cognitive impairment and AD-like neuropathology induced by ovariectomy in 3xTg mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find that inactivation of the hippocampal Fshr blunts the cognitive impairment and AD-like neuropathology induced by ovariectomy in 3xTg mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the authors' work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "b0c6fbe5-4b27-4c10-9b96-0aa9f091c27e",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C87",
+      "claim": "Hippocampal and cortical FSHR could represent therapeutic targets for Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This data, together with gain- and loss-of-function studies, suggests that hippocampal and cortical FSHR could represent therapeutic targets for AD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative based on experimental data showing FSHR involvement in AD pathology.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "68bb7522-76e7-4f6b-9d94-09532ff2f752",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C88",
+      "claim": "The atlas provides a vital resource for scientists to explore the link between the stimulation or inactivation of brain glycoprotein hormone receptors on somatic function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our atlas thus provides a vital resource for scientists to explore the link between the stimulation or inactivation of brain glycoprotein hormone receptors on somatic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the comprehensive mapping data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "79e9f312-3a91-4aea-92c6-33764d4a4ecc",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C89",
+      "claim": "New actionable pathways for human disease may be unmasked through further studies using this atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "New actionable pathways for human disease may be unmasked through further studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "25d87d03-7d69-49f1-bc1f-720bc0f8416b",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C90",
+      "claim": "The atlas provides new insights into the distributed central neural network of anterior pituitary hormone receptors, particularly in relation to their role in regulating somatic tissue function.",
+      "claim_type": "EXPLICIT",
+      "source": "The data provide new insights into the distributed central neural network of anterior pituitary hormone receptors, particularly in relation to their role in regulating the somatic tissue function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the comprehensive mapping data presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "3a155406-12ed-4e87-8930-9876d0cad412",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C91",
+      "claim": "The ependymal layer of the third ventricle is juxtaposed to the anterior pituitary.",
+      "claim_type": "EXPLICIT",
+      "source": "Highest expression was noted in the ependymal layer, not surprisingly given its anatomical proximity to the anterior pituitary gland where FSH is produced in response to hypothalamic gonadotropin-releasing hormone (GnRH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "b17f7411-bbd6-4349-b09f-f1f3a296b0b5",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C92",
+      "claim": "FSH is produced in the anterior pituitary in response to hypothalamic gonadotropin-releasing hormone (GnRH).",
+      "claim_type": "EXPLICIT",
+      "source": "Highest expression was noted in the ependymal layer, not surprisingly given its anatomical proximity to the anterior pituitary gland where FSH is produced in response to hypothalamic gonadotropin-releasing hormone (GnRH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established endocrine physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "8c46ebfd-4e52-4417-964e-595b4232eef6",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C93",
+      "claim": "The functional significance of Fshr expressed in the cerebellum, particularly in the paraflocculus (PFI), is yet unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional significance of Fshr expressed in the cerebellum, particularly in the paraflocculus (PFI), is yet unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges a gap in current knowledge.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "ad2d359d-eb1b-4886-a660-703a9732816d",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C94",
+      "claim": "Adult male mice (~3\u20134-month-old) were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult male mice (~3\u20134-month-old) were housed in a 12 hr:12 hr light:dark cycle at 22 \u00b1 2\u00b0C with ad libitum access to water and regular chow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "fe495554-31f2-4483-9132-193cebc85939",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C95",
+      "claim": "All procedures were approved by the Mount Sinai Institutional Animal Care and Use Committee (approval number IACUC-2018-0047).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the Mount Sinai Institutional Animal Care and Use Committee (approval number IACUC-2018-0047) and are in accordance with Public Health Service and United States Department of Agriculture guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides ethical approval information for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "6fb433a2-8dff-4f70-bf07-aab0bd9ab299",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C96",
+      "claim": "RNAscope data was quantified on sections from coded mice.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAscope data was quantified on sections from coded mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the blinding procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "83ceb598-c171-4bd2-8515-31496d891a93",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C97",
+      "claim": "Repeat counting of the same section agreed within <2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeat counting of the same section agreed within <2%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides information about the reproducibility of the quantification method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "d31f2a51-dc98-492a-9940-15e92ca5f3f6",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C98",
+      "claim": "The Atlas for the Mouse Brain in Stereotaxic Coordinates was used to identify every nucleus or subnucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "The Atlas for the Mouse Brain in Stereotaxic Coordinates (Paxinos and Franklin, 2007) was used to identify every nucleus or subnucleus in which we manually counted Tshr, Lhcgr, or Fshr transcripts in every tenth section using a tag feature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the reference atlas used for anatomical identification.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "f97890b5-16ea-421f-b22c-2ce7b25e9b79",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "claim_id": "C99",
+      "claim": "Receptor density was calculated by dividing transcript count by the total area (\u00b5m2, ImageJ) of each region, nucleus or subnucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor density was calculated by dividing transcript count by the total area (\u00b5m2, ImageJ) of each region, nucleus or subnucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the method used to calculate receptor density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6a54927b-21f9-422c-8996-b5092e1aa726",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TSHR is expressed in 173 brain regions with highest density in ventricular regions, validated by RNAscope, qPCR, and GFP immunofluorescence in Tshr+/- mice. Expression shows sex differences in hypothalamus (higher in females, p<0.01) and is comparable to thyroid follicular cells in the ependymal layer of the third ventricle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25-C35 provide converging evidence from multiple methodologies (RNAscope, qPCR, immunofluorescence) with appropriate controls (Tshr-/- mice, C27). The quantification was blinded (C96) with high reproducibility (<2% variation, C97). Sex differences are statistically significant (p<0.01, C29). The comparison to peripheral tissues provides meaningful biological context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "f0213204-327e-4a69-b8bb-e64c139124d1",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FSHR is expressed in 353 brain regions with highest density in ventricular regions, validated by RNAscope with appropriate controls. FSHR localizes specifically to NeuN-positive neurons but not glial cells or microglia. Expression in the ependymal layer is comparable to testicular Sertoli cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C47, C49-C55 provide robust evidence with appropriate positive (Sertoli cells) and negative (Leydig cells, Fshr-/- mice) controls. Cell-type specificity is demonstrated by co-localization studies (C51-C53). The methodology is consistent with TSHR mapping, enhancing credibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "7f58b426-5932-4ac2-997e-444dfaa48136",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LHCGR is expressed in 401 brain regions with highest density in ventricular regions, validated by RNAscope with appropriate controls showing specificity to Leydig cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C40-C42 demonstrate LHCGR expression using the same validated methodology as TSHR and FSHR. Appropriate controls (positive signal in Leydig cells, absent in Sertoli cells) establish probe specificity. The pattern of highest expression in ventricular regions is consistent across all three receptors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "75444de9-d39f-4b78-820c-c2b7ff281aef",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FSHR is expressed in human brain, particularly in the dentate gyrus and parahippocampal cortex, co-localizing with MALAT1-positive neurons. Expression is confirmed across multiple cortical regions in postmortem normal and AD brains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C10-C11, C56-C59 provide cross-species validation using ViewRNA in human samples and microarray data. Co-localization with MALAT1 (neuronal marker) and consistency with single-cell RNA-seq data (C58) strengthen the findings. However, sample sizes for human studies are not clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "ec5c6041-0975-4e77-937b-73ec89d0e94e",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FSHR expression trends toward being higher in the frontal cortex of AD brains compared to unaffected brains (p=0.060).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 reports a trend that does not reach statistical significance (p=0.060). While suggestive, this does not meet the threshold for a definitive conclusion. Sample sizes and effect sizes are not provided, making it difficult to assess statistical power or biological significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "b35e1e07-9093-4020-811f-74d05c28b004",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "All three receptors (TSHR, LHCGR, FSHR) show striking overlap in distribution with highest expression in ventricular regions. TSHR and FSHR expression levels in the ependymal layer are comparable to their primary peripheral target tissues (thyroid follicular cells and testicular Sertoli cells, respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C63-C64 identify a key pattern across all three receptors. The comparative expression levels to peripheral tissues are quantitatively supported by RNAscope data. However, the functional interpretation (C64: 'suggesting a primary role') is speculative and should be tested experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "b831b136-48bb-48e0-ad78-97c86b03e05a",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study provides a comprehensive atlas of glycoprotein hormone receptor expression in mouse brain at single-transcript resolution, offering new insights into the distributed neural network of anterior pituitary hormone receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C88, C90 accurately summarize the descriptive contribution of the work. The atlas is comprehensive (173, 353, and 401 regions for TSHR, FSHR, and LHCGR respectively) and uses validated single-transcript detection methodology. This represents a significant resource for the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "70a012aa-84fe-4f24-a1ad-7cabe394bb59",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A central TSH-TSHR feedback circuit may directly regulate the hypothalamic-pituitary-thyroid axis, potentially through effects on thyroid hormone metabolism in tanycytes or modulation of TRH neuronal projections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67 and C69 are speculative hypotheses based on anatomical proximity and expression patterns. While the expression data support the possibility, no functional experiments are provided to test these mechanisms. The claims appropriately use cautious language ('may', 'possible') but require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "af8751b6-1f42-459e-84f4-cc9a41348bc5",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Modulation of TSHRs in the bed nucleus of the stria terminalis (BNST) influences anxiety responses, suggesting TSHR signaling might mediate psychosocial behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 references unpublished data ('we found more recently') without providing experimental details, methods, or statistical analysis. While the anatomical connection to MTu is established (C76), the functional claim cannot be fully evaluated without access to the supporting data. The interpretation (C77) is appropriately cautious but requires peer-reviewed publication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "2afec3e5-1a79-494b-a0fa-e3c1c617511d",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "LH surges in women during cycling may alter male sexual behavior through central mechanisms, potentially via circumventricular interactions between LHCGR, LH, GnRH, and ESR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80 and C83 are highly speculative hypotheses based on LHCGR expression in olfactory regions and anatomical connections. No experimental evidence is provided to support these mechanisms. While the expression data and anatomical knowledge (C78-C79, C81-C82) are sound, the functional claims require substantial experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "c0dff15f-28f1-4476-a437-d2d78fa6d80b",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The anosmia of Kallmann syndrome may arise from a dysfunctional FSHR-olfaction circuitry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is speculative and based solely on FSHR expression in olfactory regions. Kallmann syndrome has well-established genetic causes (primarily KAL1, FGFR1, and other genes involved in GnRH neuron migration), and no evidence is provided linking FSHR dysfunction to this condition. This hypothesis requires experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "e8c4170c-bea5-4062-8b29-4d9261f4200e",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Inactivation of hippocampal FSHR blunts cognitive impairment and AD-like neuropathology induced by ovariectomy in 3xTg mice, suggesting hippocampal and cortical FSHR could represent therapeutic targets for Alzheimer's disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 presents new experimental data but lacks methodological details, sample sizes, statistical analysis, and controls. The therapeutic implication (C87) is speculative without demonstration of efficacy in established AD models or understanding of mechanism. While consistent with prior work (C43-C46), the current claim requires full experimental documentation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "c95f4490-38b4-4782-974f-b77a0b40746d",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FSHR in the brain may have roles beyond cognition, including potential functions in cerebellum and other regions that remain unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C61, C93 appropriately acknowledge the widespread expression of FSHR beyond cognition-associated regions and the limitations of current functional understanding. These are reasonable inferences from the expression data that appropriately identify gaps requiring future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "aa0d65af-9525-4c24-a9c6-029ca409e387",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study employed rigorous methodology including RNAscope for single-transcript detection, blinded quantification with high reproducibility (<2%), standardized anatomical reference, and appropriate ethical approvals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C94-C99 document appropriate methodological rigor including blinding (C96), reproducibility assessment (C97), standardized anatomical reference (C98), and ethical compliance (C95). The technical description of RNAscope (C24) and density calculation (C99) are clear and appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "eac97579-51f3-49a3-a559-7fa4e286be8a",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work has established that anterior pituitary hormones act on multiple somatic tissues beyond traditional endocrine targets, with emerging evidence for brain receptor actions. However, comprehensive mapping of glycoprotein hormone receptors in brain has been limited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C13-C23 accurately summarize prior literature with appropriate citations. The characterization of the knowledge gap (C20) provides clear rationale for the current study. These background claims establish context but are not primary findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "fc131d9a-6e47-457c-b861-4041fb938753",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work by the authors demonstrated that FSHR is expressed in AD-vulnerable brain regions, FSH exacerbates AD pathology in mouse models, and hippocampal FSHR knockdown prevents AD-like features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 accurately cite prior published work (Xiong et al., 2022) that provides important context for the current atlas. These claims establish the functional relevance of FSHR in brain and motivate the comprehensive mapping effort.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "00c92b4e-7bdf-4ded-a652-7f58e9412408",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study contextualizes receptor expression patterns with established anatomical and functional knowledge about brain regions, including their roles in learning, metabolism, reproduction, and hormone regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66, C68, C70-C74, C76, C78-C79, C81-C82, C84, C91-C92 appropriately cite established anatomical and functional knowledge to interpret the expression patterns. These contextual claims are well-supported by literature and enhance interpretation of the atlas data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "155e16a1-69d5-469b-bedd-febc9c05523a",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The granular layer of the dentate gyrus is an Alzheimer's disease-vulnerable region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 states established knowledge about AD pathology. The dentate gyrus is indeed vulnerable in AD, though the degree of vulnerability varies across hippocampal subregions. This contextual claim is accurate and relevant to interpreting FSHR expression patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    },
+    {
+      "id": "ee97931d-be66-4cd5-bac7-c6315a02abb8",
+      "content_id": "2f842a9e-fd12-49af-8529-6699acfaf663",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "New actionable pathways for human disease may be unmasked through further studies using this atlas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is a reasonable forward-looking statement about the potential utility of the atlas. It appropriately uses cautious language ('may be') and acknowledges that further studies are required. This represents a valid conclusion about the resource value of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:24:39.916115Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "57392f98-ce68-45a0-a453-17887c863e86",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "e92c9d08-4aff-4782-bda8-56b28f3b207c",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "f522bd5a-4b3c-425f-9f7b-127162c5ad9e",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "44c91b10-3d42-4e5a-b983-4aeaf9458053",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "b219baa6-aaa1-4c1b-8d60-7e1e703cb9cb",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "477b1c3f-1cb5-4809-a06a-a55c8dd43f42",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "c5e453be-77d9-432d-b52c-019246e7816e",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "ca099ce4-c1eb-454b-949c-9bd489fa5c87",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "e72024ff-7693-4a20-809d-1e7a0ea50d4e",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "c501c9f2-5511-493b-9a44-846903f5eabb",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "122a569f-3dc5-4a37-9e0d-d1bac6e0f990",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "9f5e5b38-5a1c-4481-abdd-fe9655f977cc",
+      "result_id": "6a54927b-21f9-422c-8996-b5092e1aa726"
+    },
+    {
+      "claim_id": "c3859095-ad46-43bf-9926-ee48f6bdffc8",
+      "result_id": "f0213204-327e-4a69-b8bb-e64c139124d1"
+    },
+    {
+      "claim_id": "029d442b-ca6e-4cc1-a619-fc66c15479c4",
+      "result_id": "f0213204-327e-4a69-b8bb-e64c139124d1"
+    },
+    {
+      "claim_id": "3b8bf0ca-bb13-4d78-9f51-5c21e0f793ef",
+      "result_id": "f0213204-327e-4a69-b8bb-e64c139124d1"
+    },
+    {
+      "claim_id": "28101452-da07-49f6-a35e-0b6c999964fd",
+      "result_id": "f0213204-327e-4a69-b8bb-e64c139124d1"
+    },
+    {
+      "claim_id": "ed1eb77f-5045-4704-8932-03cc6d03b557",
+      "result_id": "f0213204-327e-4a69-b8bb-e64c139124d1"
+    },
+    {
+      "claim_id": "c9897bd3-25c9-4bbd-80d3-ac726fbb5595",
+      "result_id": "f0213204-327e-4a69-b8bb-e64c139124d1"
+    },
+    {
+      "claim_id": "37fc238c-c8b1-4f01-94bf-687da7f582ad",
+      "result_id": "f0213204-327e-4a69-b8bb-e64c139124d1"
+    },
+    {
+      "claim_id": "27bd1d5f-622f-4126-9141-b86634da7a47",
+      "result_id": "f0213204-327e-4a69-b8bb-e64c139124d1"
+    },
+    {
+      "claim_id": "0e664122-3f75-42de-9da3-a0ba452784a6",
+      "result_id": "f0213204-327e-4a69-b8bb-e64c139124d1"
+    },
+    {
+      "claim_id": "a25bf5fd-bd2f-420e-9f3f-0a83b12c5e25",
+      "result_id": "7f58b426-5932-4ac2-997e-444dfaa48136"
+    },
+    {
+      "claim_id": "53db5b6b-0dd7-403b-b5c7-64b24cddfae2",
+      "result_id": "7f58b426-5932-4ac2-997e-444dfaa48136"
+    },
+    {
+      "claim_id": "39d7ab5e-e4b8-40f7-96a4-3945f26a0d7c",
+      "result_id": "7f58b426-5932-4ac2-997e-444dfaa48136"
+    },
+    {
+      "claim_id": "fb0b7585-534d-4a99-a30e-d93fff2d9948",
+      "result_id": "7f58b426-5932-4ac2-997e-444dfaa48136"
+    },
+    {
+      "claim_id": "f655ce83-b0f4-4d09-859c-2cceeb70d98d",
+      "result_id": "75444de9-d39f-4b78-820c-c2b7ff281aef"
+    },
+    {
+      "claim_id": "354234ad-f961-494d-a693-fb377282a431",
+      "result_id": "75444de9-d39f-4b78-820c-c2b7ff281aef"
+    },
+    {
+      "claim_id": "a48c270a-93d3-4e82-8704-057eadbe91c8",
+      "result_id": "75444de9-d39f-4b78-820c-c2b7ff281aef"
+    },
+    {
+      "claim_id": "7e905769-68d8-4b0e-baf7-bc36f74c9f86",
+      "result_id": "75444de9-d39f-4b78-820c-c2b7ff281aef"
+    },
+    {
+      "claim_id": "93c9178b-183f-46be-a4bd-377e1e3b3a46",
+      "result_id": "75444de9-d39f-4b78-820c-c2b7ff281aef"
+    },
+    {
+      "claim_id": "c94de362-5052-4c18-8376-50ffe468ef61",
+      "result_id": "75444de9-d39f-4b78-820c-c2b7ff281aef"
+    },
+    {
+      "claim_id": "6d8a5c65-aa5a-4967-8096-af0b74be87e5",
+      "result_id": "75444de9-d39f-4b78-820c-c2b7ff281aef"
+    },
+    {
+      "claim_id": "8444c6f6-f7d7-4451-b6e3-8064fcc3bf88",
+      "result_id": "ec5c6041-0975-4e77-937b-73ec89d0e94e"
+    },
+    {
+      "claim_id": "28d44f32-5e82-4b24-954c-8bfba682d5da",
+      "result_id": "b35e1e07-9093-4020-811f-74d05c28b004"
+    },
+    {
+      "claim_id": "92104bc8-96f8-4b2b-81a6-6de0d3e8f736",
+      "result_id": "b35e1e07-9093-4020-811f-74d05c28b004"
+    },
+    {
+      "claim_id": "ffb89e55-2443-4a35-ac9f-cbfad0c549a8",
+      "result_id": "b35e1e07-9093-4020-811f-74d05c28b004"
+    },
+    {
+      "claim_id": "d600b914-9f4e-4ea5-9df0-235032b07a69",
+      "result_id": "b35e1e07-9093-4020-811f-74d05c28b004"
+    },
+    {
+      "claim_id": "8233ae4d-069b-4b63-9b40-0ab09a9ee919",
+      "result_id": "b35e1e07-9093-4020-811f-74d05c28b004"
+    },
+    {
+      "claim_id": "af1f6cc8-9ec3-4d2c-a978-c02117c67202",
+      "result_id": "b831b136-48bb-48e0-ad78-97c86b03e05a"
+    },
+    {
+      "claim_id": "68bb7522-76e7-4f6b-9d94-09532ff2f752",
+      "result_id": "b831b136-48bb-48e0-ad78-97c86b03e05a"
+    },
+    {
+      "claim_id": "25d87d03-7d69-49f1-bc1f-720bc0f8416b",
+      "result_id": "b831b136-48bb-48e0-ad78-97c86b03e05a"
+    },
+    {
+      "claim_id": "1e106794-269d-42d8-ad73-9204bf8fd896",
+      "result_id": "70a012aa-84fe-4f24-a1ad-7cabe394bb59"
+    },
+    {
+      "claim_id": "a0155efc-e52b-4f2a-8a74-c87be797bbac",
+      "result_id": "70a012aa-84fe-4f24-a1ad-7cabe394bb59"
+    },
+    {
+      "claim_id": "a7dced26-c86d-4e07-85f0-08823e3ee5cf",
+      "result_id": "af8751b6-1f42-459e-84f4-cc9a41348bc5"
+    },
+    {
+      "claim_id": "56ea428b-5fba-4e54-9244-e53f9cbb76be",
+      "result_id": "af8751b6-1f42-459e-84f4-cc9a41348bc5"
+    },
+    {
+      "claim_id": "30ed4755-8551-4a42-b63f-06ddf445ee08",
+      "result_id": "2afec3e5-1a79-494b-a0fa-e3c1c617511d"
+    },
+    {
+      "claim_id": "02e9f181-068d-45b4-b50e-3d13d373f277",
+      "result_id": "2afec3e5-1a79-494b-a0fa-e3c1c617511d"
+    },
+    {
+      "claim_id": "0851d007-2388-4ee5-bcc1-54aa31c1a3af",
+      "result_id": "c0dff15f-28f1-4476-a437-d2d78fa6d80b"
+    },
+    {
+      "claim_id": "242b9a85-7de0-4f0e-908b-5e2339f33bb5",
+      "result_id": "e8c4170c-bea5-4062-8b29-4d9261f4200e"
+    },
+    {
+      "claim_id": "b0c6fbe5-4b27-4c10-9b96-0aa9f091c27e",
+      "result_id": "e8c4170c-bea5-4062-8b29-4d9261f4200e"
+    },
+    {
+      "claim_id": "e34de6eb-a5d8-4306-a557-9ec57ffecdd7",
+      "result_id": "c95f4490-38b4-4782-974f-b77a0b40746d"
+    },
+    {
+      "claim_id": "d654924c-d9a1-4ea4-be24-e821ef1cda3c",
+      "result_id": "c95f4490-38b4-4782-974f-b77a0b40746d"
+    },
+    {
+      "claim_id": "8c46ebfd-4e52-4417-964e-595b4232eef6",
+      "result_id": "c95f4490-38b4-4782-974f-b77a0b40746d"
+    },
+    {
+      "claim_id": "57ea3e06-4fd7-4d5e-94ae-e3b25eebc4da",
+      "result_id": "aa0d65af-9525-4c24-a9c6-029ca409e387"
+    },
+    {
+      "claim_id": "ad2d359d-eb1b-4886-a660-703a9732816d",
+      "result_id": "aa0d65af-9525-4c24-a9c6-029ca409e387"
+    },
+    {
+      "claim_id": "fe495554-31f2-4483-9132-193cebc85939",
+      "result_id": "aa0d65af-9525-4c24-a9c6-029ca409e387"
+    },
+    {
+      "claim_id": "6fb433a2-8dff-4f70-bf07-aab0bd9ab299",
+      "result_id": "aa0d65af-9525-4c24-a9c6-029ca409e387"
+    },
+    {
+      "claim_id": "83ceb598-c171-4bd2-8515-31496d891a93",
+      "result_id": "aa0d65af-9525-4c24-a9c6-029ca409e387"
+    },
+    {
+      "claim_id": "d31f2a51-dc98-492a-9940-15e92ca5f3f6",
+      "result_id": "aa0d65af-9525-4c24-a9c6-029ca409e387"
+    },
+    {
+      "claim_id": "f97890b5-16ea-421f-b22c-2ce7b25e9b79",
+      "result_id": "aa0d65af-9525-4c24-a9c6-029ca409e387"
+    },
+    {
+      "claim_id": "e0d2ab12-7d2e-4171-bf94-a46c7f6cdfb3",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "1489099c-6181-4ef4-9cc8-5f9fe456a0f6",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "e5357b04-f3f1-4980-8de1-11b8a8c48279",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "782d8dd3-ca8b-4e1b-b0bd-9aa75ed9d7c2",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "cedeef77-8066-4fc0-ad14-d8bca1484c21",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "3da63c1b-6e74-4944-8ab6-ed52393457aa",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "b2904e71-3ef5-48d1-b552-5e7d0f1d86f1",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "c89a1d5c-b06f-40ab-a483-9a2eb05ce724",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "6b6d929a-da61-4c31-a7fb-3e949afee88c",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "36788897-3add-4634-bfe0-cb7f88e71419",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "f1ee736a-5182-49e6-b016-df3d61923b4a",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "20a843b4-2023-40b7-ace2-ed1f24f43a8c",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "863c05e5-8175-4de9-90a0-ab99bc55a2e7",
+      "result_id": "eac97579-51f3-49a3-a559-7fa4e286be8a"
+    },
+    {
+      "claim_id": "3d473721-6653-490c-a85b-2ba59c73db1d",
+      "result_id": "fc131d9a-6e47-457c-b861-4041fb938753"
+    },
+    {
+      "claim_id": "9be855fb-be3e-4fc2-b911-5367210b64d8",
+      "result_id": "fc131d9a-6e47-457c-b861-4041fb938753"
+    },
+    {
+      "claim_id": "1e6af1f7-559b-4107-8596-12aa697b9715",
+      "result_id": "fc131d9a-6e47-457c-b861-4041fb938753"
+    },
+    {
+      "claim_id": "ce26bbd6-85e3-4a4f-9a72-46bcb503bb45",
+      "result_id": "fc131d9a-6e47-457c-b861-4041fb938753"
+    },
+    {
+      "claim_id": "587d58a8-7c4d-488a-a541-58bbc1e45837",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "dda8daa4-1135-47a3-b16b-1d21977bfa71",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "d3b32e9d-d617-45a6-870b-81a18e56e579",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "a4694c3a-9b16-4515-a11d-0c6d8aee2f80",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "6c92bb97-ade3-4068-a074-1e77b152afba",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "9e312a62-4219-467e-b332-336d18437794",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "098feb16-1e13-477b-9198-2a0c945a21d1",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "47e9af38-4731-4e2f-a1c5-d634d7f7743d",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "4e2e4832-d27a-4490-af2b-bdf7c071a523",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "686346a8-017a-4eb1-9005-1fccccd50d57",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "8cfe2482-197c-4ce4-a02f-ddf4c91ee1b9",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "b46f01a7-cfd1-4e6f-87ea-3ebc5221bc43",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "a384a350-f7f8-479f-b572-7df9c8433285",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "3285f771-c9aa-4831-95f7-a31b848050fc",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "3a155406-12ed-4e87-8930-9876d0cad412",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "b17f7411-bbd6-4349-b09f-f1f3a296b0b5",
+      "result_id": "00c92b4e-7bdf-4ded-a652-7f58e9412408"
+    },
+    {
+      "claim_id": "ae2c2019-0783-4c19-b547-d6d600c45e16",
+      "result_id": "155e16a1-69d5-469b-bedd-febc9c05523a"
+    },
+    {
+      "claim_id": "79e9f312-3a91-4aea-92c6-33764d4a4ecc",
+      "result_id": "ee97931d-be66-4cd5-bac7-c6315a02abb8"
+    }
+  ],
+  "comparisons": []
+}

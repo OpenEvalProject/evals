@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript establishes the biological context for cell size control, defining key mechanisms (sizers and adders) and their theoretical properties. These claims describe established knowledge about cell size regulation, the diversity of control mechanisms across organisms, and the molecular basis of cell cycle control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16, C22-C24 provide well-established background knowledge supported by appropriate citations and general understanding in the field. These definitional and contextual claims are consistently supported by the cited literature and represent accepted knowledge about cell size control mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C60",
+      "C61"
+    ],
+    "result": "The manuscript reports that adders are more commonly observed than sizers in nature, with specific examples including bacteria, archaea, and cultured human cells exhibiting adder behavior, while fission yeast and mouse epidermal stem cells exhibit sizer behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C60-C61 are well-supported by multiple experimental citations. The prevalence of adders over sizers and the specific examples in different organisms are documented in the cited literature, providing a solid empirical foundation for the evolutionary simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript justifies the use of evolutionary algorithms as a computational approach, stating they mimic evolutionary processes and produce solutions constrained by evolutionary paths that resemble biologically evolved systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by appropriate citations to the evolutionary algorithm literature. The justification for using this computational approach is reasonable and consistent with established practices in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C111",
+      "C119",
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "The manuscript describes the initial seed network model structure, including a binary S/G2/M switch, exponential volume growth, symmetric division, a G1 phase with size-dependent control, and an S/G2/M timer phase with noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37, C111, C119, C122, C124-C125 describe the computational model structure and are internally consistent. The model design is clearly documented with appropriate citations to support specific assumptions (e.g., S/G2/M as a timer). The observation that certain interactions systematically appear (C124) provides empirical justification for including them in the seed network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C40"
+    ],
+    "result": "The initial quantity-sensing oscillator without evolved interactions does not perform size control and results in unstable growth. During evolution (around epoch 700), a weak control mechanism suddenly evolves that prevents excessive cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C40 are supported by simulation data shown in Appendix 1\u2014figure 3 and Figure 2A. The evolutionary trajectory clearly shows the transition from unstable growth to controlled growth, validating the need for network evolution beyond the initial seed structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C47",
+      "C48",
+      "C100"
+    ],
+    "result": "Simulations with G1 size control converge toward adder mechanisms and identify an active quantity-sensing mechanism involving titration, conceptually similar to experimentally observed dilution-based mechanisms in budding yeast, human cells, and plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C47-C48, C100 are supported by simulation data and appropriate comparisons to experimental literature. The evolved mechanism's similarity to known biological systems (particularly Whi5 dilution in budding yeast) strengthens the biological relevance of the computational findings. The distinction between passive dilution and active titration is clearly explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "Model A2 exhibits weak adder behavior overall but behaves as a sizer at volumes below equilibrium and as an adder/timer at higher volumes. This non-monotonic behavior is similar to that observed experimentally in budding yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C53-C54, C56-C57 are supported by simulation data in Figures 2I-J and 3C-D, with appropriate citations to experimental observations in budding yeast. The comparison between computational and experimental results strengthens the validity of the evolved networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C58",
+      "C59",
+      "C74"
+    ],
+    "result": "The evolutionary simulations preferentially select for adder mechanisms near equilibrium when G1 performs size control with an S/G2/M timer. This is surprising because sizers theoretically provide better size control, yet adders evolve more frequently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27-C28, C30-C31, C58-C59, C74 are supported by extensive simulation data across multiple evolutionary runs. The paradoxical preference for adders despite sizers' theoretical superiority is a key finding that motivates further investigation into cell cycle structural constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C29",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "When the cell cycle structure is inverted (G1 timer, S/G2/M sizer) to mimic fission yeast S. pombe, more sizer-like networks evolve compared to the control. This demonstrates that cell cycle structure influences the type of size control that evolves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C29, C62-C64 are supported by simulation data in Figure 4B with statistical analysis (Welch's t-test, p=0.03). The recapitulation of naturally occurring size control mechanisms (adders in budding yeast, sizers in fission yeast) through appropriate cell cycle structures validates the evolutionary approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C75"
+    ],
+    "result": "The relative durations of G1 and S/G2/M phases influence size control evolution. Shorter S/G2/M phases (longer G1) favor sizers, while longer S/G2/M phases favor adders. This explains the sizer behavior observed in mouse epidermal stem cells with extended G1 phases in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C65-C70, C75 are supported by simulation data in Figures 4C-D with statistical analysis (p=4\u00d710\u207b\u00b3 and p<10\u207b\u2074) and appropriate citations to experimental observations in mouse epidermal stem cells. The hypothesis that the longer cell cycle phase dominates size control is well-tested through systematic variation of phase durations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Increasing noise in the S/G2/M timer progressively reduces size control effectiveness. The fixed timer duration allows accurate resetting of protein concentrations between cycles, which is important for G1 control. Cell cycle structural features are critical determinants of evolved size control mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by simulation data in Appendix 1\u2014figure 5 and by inference from the overall simulation results. The mechanistic explanation for why timer noise affects control (C72) is supported by citation and is consistent with the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C106"
+    ],
+    "result": "A two-step evolutionary pathway is identified: first, a strong but imprecise sizer mechanism evolves where small cells trigger overshoots to large sizes, then variability is reduced by attenuating the size control response, resulting in a transition from noisy sizers to less noisy adders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80, C82, C106 are supported by detailed evolutionary trajectory data in Figures 2A and 5. The observation that this pathway occurs across multiple simulations with different structures strengthens the generality of this finding. This explains the paradoxical inverse correlation between sizer behavior and CV.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Evolution simulations are not deterministic\u2014there is no one-to-one correspondence between evolutionary pressure and specific size control mechanisms. A low-noise adder can produce lower CV than a high-noise sizer, but sizers are better at responding to large deviations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by the variability observed across multiple evolutionary runs and by theoretical considerations about noise and control. The nuanced discussion of when adders versus sizers are advantageous is well-reasoned and consistent with the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "A general principle emerges: having size-dependent transitions later in the cell cycle selects for sizers, while having such transitions earlier selects for adders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 synthesizes results from multiple simulation conditions (Figures 4A-D) into a unifying principle. This principle is well-supported by the systematic variation of cell cycle structure and is consistent with the rationalization that later control can compensate for earlier deviations, while earlier control followed by exponential growth amplifies deviations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C85",
+      "C87",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C109"
+    ],
+    "result": "A fluctuation-sensing mechanism evolves where small cells with larger molecular noise trigger extended G1 phases, followed by rapid divisions. This mechanism exhibits self-organized criticality (SOC) with power-law distributions of cell cycle durations and operates near a bifurcation point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C85, C87, C91-C95, C109 are supported by simulation data in Figure 6, including power-law fitting (exponent -3.05) and phase-space analysis showing the system near a bifurcation. The identification of SOC is based on appropriate criteria (order parameter feeding back on control parameter, power-law distributions). However, the claim that this is the \"first example\" (C109) of SOC in evolved gene networks is difficult to verify without comprehensive literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Recent time-lapse microscopy studies have revealed diverse cell size control phenomena characterized by correlations between cell size at birth and division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 provide general context about the field and are supported by the extensive citations throughout the manuscript. These are appropriate framing statements for the research.",
+    "result_type": "MINOR"
+  }
+]

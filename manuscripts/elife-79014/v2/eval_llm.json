@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors developed a bioinformatics workflow to identify species-specific DNA tags from 1791 genomes of 232 microorganism species, selecting 10 bacterial species that cover 76% of sepsis pathogens. Species-specific sequences comprised only 0.3-4.1% of bacterial genomes and showed random distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 describe the computational discovery stage with clear data sources (NCBI genomes), sample sizes (1791 genomes, 232 species), and results (10 bacteria covering 76%, species-specific sequences 0.3-4.1%). The algorithm development (C10) and epidemiological justification (C11) are supported by cited data and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C46"
+    ],
+    "result": "The SSBD assay was optimized to achieve a detection limit of 10^-15 M with PCR amplification, requiring 30 minutes of CRISPR/Cas12a incubation. Specificity testing showed each bacterial strain produced positive results only with its cognate SSBD panel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 describe systematic optimization experiments with clear quantitative results shown in Figure 3B and Appendix figures. The detection limit (C14, C46) is consistent with prior CRISPR/Cas12a studies (Gootenberg et al., 2018), and specificity testing (C18) demonstrates appropriate controls with statistical significance indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "In validation stage I with 77 BALF samples, SSBD detected five bacteria with 100% sensitivity and >87% specificity compared to CCT as gold standard. SSBD showed high consistency with NGS results in 11 samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 present validation data with appropriate sample size (n=77), clear performance metrics shown in Figure 4A, and orthogonal validation with NGS. However, using CCT as 'gold standard' is problematic given its known limitations (C5), and the NGS comparison is limited to only 11 samples, which weakens the validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C55",
+      "C68"
+    ],
+    "result": "Validation stage II enrolled 22 experimental and 24 control patients (target: 73 per group) before being paused due to COVID-19. Baseline characteristics were similar except age, and SSBD maintained high sensitivity and specificity in detecting bacteria from clinical samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22-C27 describe the clinical trial with clear enrollment numbers and baseline data (Table 1). However, the study was severely underpowered (46 vs. 146 planned patients, C55, C68), and the significant age difference between groups (C23) is a potential confounder. The performance metrics (C26) lack the statistical rigor of stage I validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C41",
+      "C48",
+      "C62",
+      "C66",
+      "C76"
+    ],
+    "result": "SSBD-guided therapy resulted in significantly higher antibiotic coverage rates, faster therapy adjustment (10.2\u00b18.8 vs. 96.0\u00b135.1 hours, p<0.0001), and improved APACHE II scores (p=0.0035) compared to CCT-guided therapy. Early clinical improvements were observed in temperature and WBC counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C29, C41, C48 report statistically significant clinical benefits with appropriate tests (two-way ANOVA, Mann-Whitney). However, the study was severely underpowered (46 vs. 146 patients), baseline age differences exist (C23), and the authors acknowledge no difference in endpoint outcomes (C63). The improved APACHE II but not SOFA scores (C30) is inconsistent and unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C63"
+    ],
+    "result": "SOFA scores showed no difference between experimental and control groups (p=0.8918), and endpoint clinical outcomes showed no differences, which authors attribute to insufficient patient numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C63 honestly report negative findings with appropriate statistical testing. The authors' interpretation that insufficient sample size explains the lack of difference (C63) is reasonable given the study enrolled only 46 of 146 planned patients (C22, C55), though this fundamentally undermines the clinical significance claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C42",
+      "C49",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "SSBD detected polymicrobial infections in 41.8% of samples compared to 11.7% by CCT, showing high consistency with NGS. Case studies demonstrated SSBD detected polymicrobial infections earlier than CCT, with similar pathogen species distributions between methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 present clear quantitative differences in polymicrobial detection rates with supporting data (Figure 5A-D). The case study (C73-C75) provides temporal evidence for earlier detection. However, the interpretation that CCT 'missed' infections (C49) assumes SSBD is correct, which is circular reasoning when CCT is the stated gold standard (C20, C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C43",
+      "C50",
+      "C65"
+    ],
+    "result": "Nosocomial infections were detected in 47.6% of patients at test 2 and 28.6% at test 3 by SSBD, with similar rates by CCT (40% and 27.3%). SSBD provided more timely information for clinical response despite similar detection rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 report nosocomial infection rates with clear denominators and similar findings between methods. The claim that SSBD provides 'more timely information' (C65) is supported by the 4-hour turnaround time (C47) vs. 2-5 days for CCT (C5), though the clinical impact of this timing advantage is not demonstrated given similar detection rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C45",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors demonstrate that bacterial species can show high intraspecies variation (P. aeruginosa strains <94% identity) and high interspecies similarity (E. coli and S. sonnei >98% identity). SSBD's species-specific sequences avoid cross-reactivity issues present in FilmArray Pneumonia Panel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C45 present genome comparison data supporting the rationale for species-specific tag selection. Claims C69-C70 provide specific E-values demonstrating FilmArray's potential cross-reactivity and SSBD's specificity. However, the FilmArray comparison is somewhat unfair as it uses different gene regions (rpoB, gyrB) specifically to distinguish species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "SSBD's lower detection threshold (10^-15 M) enables detection of bacteria in trace amounts and semi-quantification via fluorescence intensity levels (I-III). Cultivation bias was observed with A. baumannii being most competitive and P. aeruginosa being frequently concealed in polymicrobial samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 describe SSBD's quantification system with clear thresholds. Claims C60-C61 present observations about cultivation bias with specific sample references, though these are post-hoc interpretations rather than prospectively tested hypotheses. The semi-quantitative nature is a strength but the clinical utility of the three-level system is not validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C51",
+      "C71",
+      "C72"
+    ],
+    "result": "SSBD completes detection in 4 hours and can quantify bacterial load via fluorescence intensity. CRISPR/Cas12a offers robustness and lower equipment requirements compared to qPCR. The authors conclude SSBD is a powerful tool for severe pneumonia diagnosis with high accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47 and C71 describe SSBD's capabilities with supporting data. However, C51 is a broad conclusion that overstates the evidence given the underpowered clinical trial, lack of endpoint outcome differences (C63), and circular reasoning about CCT limitations. Claim C72 about CRISPR/Cas12a advantages is asserted without comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors establish clinical context citing that sepsis has high mortality (C1), timely antibiotics reduce mortality (C2-C3), and existing methods have limitations: CCT is slow (2-5 days) with low sensitivity (30-50%), NGS requires 2+ days, and BioFire/Curetis methods have false-positive issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide literature-based background with appropriate citations. The characterization of existing methods' limitations is well-supported, though the criticism of BioFire/Curetis (C8) is somewhat overstated as these are FDA-cleared devices with established performance characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C64",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors acknowledge study limitations including: resistance genes not included, pathogen panel derived from sepsis not pneumonia specifically, other microbes (viruses, fungi) not covered, and MDROs prevalent in ICU. They suggest the panel could be optimized for different clinical needs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C64, C77-C80 honestly acknowledge important limitations. The lack of resistance gene detection (C79) is a critical gap for ICU applications where MDROs are prevalent (C64). Claims C77-C78 about panel limitations and confounding factors are appropriate caveats. Claim C80 about future optimization is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "The study was funded by National Natural Science Foundation of China (81927808), registered at ClinicalTrials.gov (NCT04178382), recruited patients from August 2019, and followed standardized protocols for sample collection and CCT testing per international guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C56-C57 provide administrative and methodological details that are verifiable and appropriate. The clinical trial registration (C53) and adherence to international guidelines (C57) support methodological rigor, though the study's early termination limits the value of these preparations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The authors claim SSBD has enormous potential for expanding to detect pathogens from different diseases with more pathogen genomes included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is purely speculative about future applications. While the computational approach could theoretically be extended to other pathogens, no data support this claim. The current study's limitations (underpowered trial, no endpoint benefit) do not provide a strong foundation for such expansive claims.",
+    "result_type": "MINOR"
+  }
+]

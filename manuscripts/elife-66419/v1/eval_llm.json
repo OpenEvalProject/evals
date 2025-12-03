@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C34",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study enrolled 6,201 subjects for Group140/90 and 3,771 subjects for Group130/80 from a larger cohort of individuals who underwent medical examinations in 2009 and 2019. Subjects were randomly divided into training and validation sets at a 2:1 ratio after excluding those who had taken antihypertensive drugs or had missing data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide consistent and detailed information about subject enrollment, exclusion criteria, and randomization procedures (C2, C3, C34, C110-C116). The numbers are internally consistent across claims, and the methodology is clearly described with appropriate exclusion criteria to reduce bias (C112, C113).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41"
+    ],
+    "result": "The prevalence of hypertension in 2019 was 24.77% in Group140/90 and 37.92% in Group130/80. Training and validation sets showed similar prevalence rates and no significant differences in baseline characteristics between the two sets for both groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The prevalence data are clearly reported with specific numbers (C33, C35, C36, C38, C40, C41). The claim of no significant differences between training and validation sets (C37) is stated but the manuscript does not provide p-values for all variables listed, though this is a standard validation step. The consistency between sets supports the validity of the randomization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "LASSO regression identified 21 variables with nonzero coefficients in both groups. Multivariate logistic regression revealed 10 independent risk factors for Group140/90 (family history, age, SBP, DBP, BMI, MCHC, MPV, TP, TBIL, TG) and 6 for Group130/80 (family history, age, SBP, DBP, RDWSD, TBIL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical methodology is appropriate and clearly described (C4, C5). LASSO regression results are reported with specific variables identified (C42, C43, C45, C46), and multivariate logistic regression results are provided with odds ratios and p-values in Tables 3 and 4 (C44, C47). The two-stage approach (LASSO followed by logistic regression) is a valid method for feature selection and model building.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Nomogram140/90 was developed with 10 parameters and demonstrated good performance in the training set with AUC and C-index of 0.750 (95% CI: 0.733-0.767). Calibration curves showed high consistency between predicted and observed outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nomogram construction is well-documented with specific parameters listed (C6). Performance metrics are clearly reported with confidence intervals (C7, C8, C48, C49). The interpretation of C-index 0.75 as \"good predictive discrimination\" (C50) is reasonable, though somewhat subjective. Calibration is assessed visually (C51), which is standard practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Nomogram130/80 was developed with 6 parameters and showed moderate performance in the training set with AUC and C-index of 0.705 (95% CI: 0.684-0.726). The authors characterized this as \"relatively bad predictive discrimination\" with \"relatively low consistency\" in calibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nomogram construction and performance metrics are clearly reported (C9-C11, C52, C53). However, the characterization of C-index 0.705 as \"relatively bad\" (C54) is questionable\u2014this represents fair to good discrimination by standard criteria. The subjective language undermines the interpretation, though the numerical results themselves are valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Internal validation showed that nomogram140/90 maintained good performance (AUC=0.772, C-index=0.772) while nomogram130/80 showed similar performance to training (AUC=0.697, C-index=0.697). Calibration patterns were consistent with training set results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Validation results are clearly reported with confidence intervals (C56, C57, C59, C60). The improved performance of nomogram140/90 in validation (0.772 vs 0.750) is notable and suggests good generalizability. The consistency between training and validation for nomogram130/80 is also appropriate. However, this is internal validation only, not external validation, which limits generalizability claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Decision curve analysis and clinical impact curves demonstrated that both nomograms provided greater net benefit than individual factors alone, with predicted probabilities coinciding well with actual probabilities in both training and validation sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "DCA and clinical impact curves are appropriate methods for assessing clinical utility (C62-C65). The results are presented graphically in Figures 5 and 6, and the consistency between training and validation sets supports the findings. However, the manuscript lacks quantitative thresholds or specific clinical scenarios where the models would be most beneficial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C66",
+      "C67",
+      "C68",
+      "C86",
+      "C93"
+    ],
+    "result": "Comparison between nomograms using NRI and IDI showed that nomogram140/90 exhibited superior performance to nomogram130/80, with significant continuous NRI (0.1174, p<0.001) and IDI (0.0032, p=0.0432), though categorical NRI was not significant (0.0081, p=0.372).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The statistical comparison is reported with appropriate metrics (C66-C68), but the interpretation is problematic. The categorical NRI is not significant (C66), and the IDI improvement is very small (0.0032) despite statistical significance (C68). The claim that nomogram140/90 is \"the most sensitive hypertension risk prediction tool\" (C93) is not supported by the data and represents an overinterpretation. The comparison is also confounded by different sample sizes and diagnostic criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C14",
+      "C69",
+      "C126"
+    ],
+    "result": "A web-based calculator for nomogram140/90 was developed and made freely available online to help patients and physicians predict 10-year hypertension risk and improve clinical management.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The web calculator is documented with a specific URL (C69) and represents a practical application of the research (C14). However, the claim that it will \"aid\" in clinical management (C126) is speculative and not validated. The utility and usability of the tool have not been tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Gender was not identified as an independent predictor of hypertension in this study, consistent with some prior research but contradicting other studies, indicating ongoing controversy about the role of gender in hypertension risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding is clearly stated (C94) and appropriately contextualized with citations to both supporting (C95) and contradicting (C96) literature. The acknowledgment of controversy (C97) is appropriate. However, the manuscript does not explore potential reasons for this discrepancy, such as differences in study populations or adjustment for confounders.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study found hypertension incidence of 24.77% (140/90 criteria) and 37.92% (130/80 criteria), which falls within the reported range for China (23.2-44.7%). Geographic variation in hypertension prevalence may be related to dietary factors such as sodium intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The incidence data are clearly reported (C98, C99) and appropriately compared to literature values (C100). The discussion of geographic variation and dietary factors (C101, C102) is supported by citations. However, the study does not directly measure dietary factors, so this remains speculative for the current cohort.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors acknowledge several limitations including loss to follow-up and missing data reducing sample size, possible inclusion of secondary hypertension cases, lack of diagnostic strictness, medium prediction accuracy suggesting missing factors, and need for external validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations are appropriately acknowledged (C103-C107) and demonstrate scientific rigor. The suggestions for future research (C108, C109) are reasonable. However, some limitations are more serious than presented\u2014the 10-year gap with only two time points limits the ability to capture incident hypertension timing, and the lack of external validation significantly limits generalizability claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors review prior hypertension prediction models from various populations and Chinese studies, noting variability in risk factors across populations and limitations in prior Chinese studies, claiming this may be the first nomogram for hypertension prediction with systematic assessment and validation in China.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The literature review is appropriate and well-cited (C70-C81). However, the claim of being \"the first\" nomogram with systematic assessment and validation in China (C82) is qualified with \"might be\" and is difficult to verify. The criticism of prior studies (C75) for lacking validation is somewhat undermined by this study's own lack of external validation. The review appropriately contextualizes the work but the novelty claim is overstated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C125"
+    ],
+    "result": "The nomograms were constructed from routine physical examination data with readily available parameters, demonstrating favorable predictive accuracy, discrimination, and clinical utility, making them useful for assessment without physician assistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The use of routine examination data (C83, C84) is a strength for practical application. The performance metrics are documented (C87, C88, C89, C125). However, the claim that the nomograms are useful \"without the assistance of physicians\" (C85) is problematic\u2014medical interpretation is still needed for clinical decision-making. The characterization of performance as \"excellent\" (C87) for C-index 0.75 is somewhat generous, and the claim of \"favorable\" performance (C125) should be tempered by the acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study received ethics approval, used anonymized data with waived informed consent, and employed standardized measurement protocols for blood pressure, BMI, and blood samples. Statistical analyses used appropriate software with p<0.05 significance threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Ethics approval and data handling are appropriately documented (C117-C119). Measurement protocols are described (C120-C122), though some details are limited. Statistical software and significance thresholds are clearly stated (C123, C124). The waiver of informed consent (C119) is appropriate for retrospective analysis of anonymized data. However, more detail on blood pressure measurement (number of readings, device calibration) would strengthen reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The introduction establishes hypertension as a highly prevalent disorder and major contributor to global mortality, with increasing prevalence especially in low- and middle-income countries including China, where awareness and control rates are low despite high prevalence. Various risk factors and diagnostic criteria are discussed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims are well-supported by appropriate citations (C15-C32). The epidemiological data are from credible sources and accurately represent the global and Chinese burden of hypertension. The discussion of diagnostic criteria (C27-C29) appropriately frames the study's rationale for using two different thresholds. This provides solid justification for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The manuscript describes NRI and IDI as metrics originally developed for binary outcomes that have been extended to other outcome types, citing an example of their use in comparing stroke prediction models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of NRI and IDI is accurate (C90, C91) and appropriately cited. The example application (C92) provides relevant context for their use in model comparison. However, the manuscript does not discuss limitations of these metrics or appropriate interpretation thresholds, which would strengthen the methodological justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C58",
+      "C61"
+    ],
+    "result": "Both nomograms demonstrated clinical consistency based on calibration curves, though nomogram140/90 showed \"high consistency\" while nomogram130/80 showed \"relatively low consistency\" between predicted and observed outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claim of \"favorable clinical consistency\" for both nomograms (C12) contradicts the characterization of nomogram130/80 as having \"relatively low consistency\" (C55, C61). The calibration assessment relies on visual inspection of curves without quantitative metrics (Hosmer-Lemeshow test, calibration slope, etc.). The subjective language and lack of quantitative calibration metrics make it difficult to objectively assess this result.",
+    "result_type": "MAJOR"
+  }
+]

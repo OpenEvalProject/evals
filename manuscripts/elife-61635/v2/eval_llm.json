@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors generated a BAC reporter construct for eve by replacing the coding region with MS2 stem loops and the yellow gene, inserted it into chromosome 3L, and validated that it recapitulates endogenous eve expression patterns without adverse effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C85-C88, C90-C91 collectively describe the construction, insertion, validation, and imaging of the eve::MS2::yellow BAC reporter. The construct design is clearly described (C10, C85-C87), the insertion method is specified (C11), viability is confirmed (C88), and validation against known eve patterns and FISH data is provided (C12, C13). The imaging conditions are validated (C91), and the experimental setup is detailed (C90). These claims are well-supported by the methods and results sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C109"
+    ],
+    "result": "Live imaging reveals the temporal dynamics of eve stripe formation during nuclear cycle 14, with transcription beginning ~5 minutes after anaphase, initial broad domains refining into seven stripes by ~25 minutes, and differential stripe movement along the AP axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C42-C48, C93-C96, C109 describe the temporal progression of eve stripe formation with specific timing and spatial details. The claims are consistent with each other and supported by Figure 3B and Video 1. The description matches prior work (C93, C94) while providing higher temporal resolution. The quantitative measurements of stripe positions and movements are directly observable in the imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C52",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The polymerase transit time through the construct was estimated to be ~140 seconds using an autocorrelation method, consistent with the known elongation rate of ~2700 bp/min and the 6,563 bp construct length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C52, C111-C113 describe the estimation of polymerase transit time. The autocorrelation method is clearly explained (C111), the estimate of 140s is provided (C16), and this is validated against independent measurements of elongation rate (C113) and construct length (C112). The consistency between the empirical estimate and the calculated value (6563 bp / 2700 bp/min \u2248 145s) provides strong support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C8",
+      "C49",
+      "C50",
+      "C51",
+      "C89"
+    ],
+    "result": "Transcriptional bursting is a widespread phenomenon in Drosophila development, and fluorescence traces from individual nuclei show clear hallmarks of bursting modeled as stochastic switching between ON and OFF promoter states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C7-C8, C49-C51, C89 establish the context of transcriptional bursting and describe the modeling framework. These are well-supported by extensive citations to prior work (C4, C7, C8, C89) and by the observed data (C49). The modeling approach (C50, C51) follows established methods in the field. Figure 3A shows representative traces with bursting characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C53",
+      "C54",
+      "C101"
+    ],
+    "result": "DNA replication during nc14 results in two sister chromatids with the MS2 transgene in each nucleus, requiring a three-state model (OFF, one promoter ON, two promoters ON), though the interaction between sister chromatids remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C53-C54, C101 describe the biological reality of sister chromatids and the modeling implications. The timing of DNA replication (C17) is supported by citations. The experimental design with heterozygous BAC (C53) and inability to discriminate sister chromatids (C54) are clearly stated. The three-state model (C18) is a logical consequence. The acknowledgment of uncertainty about sister chromatid interactions (C101) is appropriate given current knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C55",
+      "C102"
+    ],
+    "result": "A compound-state hidden Markov Model (cpHMM) was developed to infer bursting parameters (kon, koff, r) from fluorescence traces and to determine the instantaneous promoter state for each nucleus, yielding global estimates of kon \u2248 0.60 events/min and r \u2248 67 AU/min across all stripes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C55, C102 describe the cpHMM method and its outputs. The method is described in a companion paper (Lammers et al., 2020) and applied here. The global parameter estimates (C20) are stated as outcomes of the inference. The utility of the method for determining promoter states (C55, C102) is demonstrated in Figures 4D-F and Videos 13-23. The approach is methodologically sound for this type of data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C56",
+      "C57",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "A Gaussian mixture model-based approach was developed to dynamically assign nuclei to stripes and register movies across embryos, achieving robust stripe assignment with spatial precision of 0.16% embryo length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C56-C57, C103-C106 describe the stripe assignment and registration methodology. The approach is clearly illustrated in Figure 5. The robustness is quantified through bootstrapping (C57, C106). The method appropriately handles the temporal dynamics of stripe formation by using time windows (C21) and accounts for stripes not being present early in nc14 (C105). The spatial precision is quantified (C106).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C59",
+      "C60"
+    ],
+    "result": "Interstripe regions are characterized by an almost complete absence of transcriptional bursts from 25 minutes into nc14, with sharp spatial boundaries between stripes and interstripes, and most interstripe nuclei never bursting during nc14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25, C59-C60 describe the spatial organization of bursting activity. These observations are directly visible in Figure 6 and quantified in Figure 7A-B. The sharp boundaries (C23) are consistent with classical descriptions and supported by citations. The temporal dynamics (C59) and spatial variation (C60) are clearly shown in the data. The exception of the 5-6 interstripe is noted (C22, C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C38",
+      "C39",
+      "C40",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Stripe movement is driven by the dynamic exchange of bursting nuclei, with nuclei at the posterior edge becoming quiescent and nuclei at the anterior edge becoming active. Stripe 7 moves anteriorly at ~1% embryo length per 3 minutes (~5% total), while individual nuclei move only ~1% embryo length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C27, C38-C40, C61-C65 describe stripe movement and the underlying mechanism. The quantitative measurements of stripe and nuclear movement (C26, C38, C39) are directly observable in Figure 7C. The mechanism of nuclei switching states (C27, C40, C62, C63) is demonstrated in Figure 7C-D. The generalization to all stripes (C64, C65) is supported by Figure 7D and Figure 7\u2014figure supplement 1. This is a key finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "All seven eve stripes are sculpted by the same kinetic strategy: a coupled increase in burst frequency (kon) and amplitude (r) with relatively constant burst duration (koff), with this quantitative relationship maintained across stripes despite different enhancers and molecular inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9, C28-C34, C68-C70 describe the central finding regarding bursting kinetics. The cpHMM inference results (Figure 8A-C) clearly show strong regulation of kon and r as a function of fluorescence, with weak regulation of koff (C28-C30). The spatial analysis (Figure 8E) confirms this pattern within stripes (C31). The consistency across all seven stripes (C32, C33, C70) despite different enhancers (C2, C9) is a major conclusion supported by the data in Figure 8.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The shared mode of bursting control across enhancers suggests a single molecular pathway with a single tunable parameter, though whether this is gene-specific or reflects general constraints remains an open question, and limited data from other genes suggests mechanisms may vary by gene class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35, C72-C74 present interpretations and speculations about the mechanism. While the observation of coupled kon and r regulation is well-supported, the mechanistic explanation (C35) is explicitly speculative. The open questions (C72) and alternative explanations (C74) are appropriately acknowledged. The comparison to other genes (C73) is based on limited data. These are reasonable interpretations but require further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C75",
+      "C76"
+    ],
+    "result": "The fraction of nuclei engaging in transcription is higher in stripe centers than interstripes, and this regulation appears to operate outside the bursting framework, suggesting multiple overlapping modes of regulation beyond bursting parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C75-C76 describe an additional layer of regulation. The observation that more nuclei burst in stripes than interstripes (C36) is evident from Figures 6 and 7. The interpretation that this is distinct from bursting parameter regulation (C75, C76) is reasonable given that it involves which nuclei burst rather than how they burst. This is supported by citation to prior work showing similar phenomena (C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Expression flow (movement in the pattern of regulators) dominates the anterior shift of eve stripes, especially in the posterior, in contrast to prior work suggesting equal contributions of nuclear and expression flow. The difference may arise from measuring instantaneous transcription versus accumulated mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C77-C82 compare the current findings to prior work. The observation of expression flow dominance (C37) is supported by the nuclear tracking data in Figure 7C. The comparison to Ker\u00e4nen et al. (C77, C78) is appropriate, and the explanation for the difference (C79) is plausible given the different measurement approaches. The acknowledgment of complexity (C80) and future directions (C82) are appropriate. The citation to relevant prior work (C81) provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C83",
+      "C84"
+    ],
+    "result": "The transcriptional output of eve is highly dynamic in space and time, never approaching steady state, highlighting the need for new frameworks to characterize dynamic gene expression patterns enabled by live imaging technologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C83-C84 provide broader context and perspective. The observation that eve never reaches steady state (C41) is evident throughout the imaging data (Figures 3, 6, 7). The commentary on tools and language (C83) and the new era of transcription studies (C84) are appropriate framing for the work. These claims are well-supported by the data presented and represent important conceptual contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C71"
+    ],
+    "result": "The eve stripes are produced by five largely independent enhancers responding to different combinations of transcription factors, yet creating a regular, repeating pattern of nearly identical stripes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C71 describe established knowledge about eve regulation. These are well-supported by extensive citations to prior work (Harding et al., 1989; Goto et al., 1989; Small et al., 1991, 1992; Frasch and Levine, 1987; Fujioka et al., 1999, 1995; Arnosti et al., 1996). This provides essential context for the current work but is not a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C15",
+      "C92"
+    ],
+    "result": "Eleven movies were collected covering all seven stripes with at least five replicates per stripe, yielding fluorescence traces from 2,961 nuclei at 20-second intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C92 describe the dataset. The number of movies (C15) is documented in Table 1 and Videos 2-12. The number of nuclei and temporal resolution (C92) are stated in the Results and supported by Supplementary file 1. This represents a substantial dataset for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The combined data represent a kinetic fingerprint of eve stripe formation\u2014a comprehensive record of every transcriptional burst during stripe formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 describes the nature of the dataset. This is supported by Figure 6 and Video 24, which visualize all bursts across space and time. The term 'kinetic fingerprint' is an appropriate descriptor for this comprehensive spatiotemporal record of transcriptional activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C107",
+      "C108"
+    ],
+    "result": "Due to insufficient time points in individual traces for accurate single-nucleus parameter inference, nuclei were binned by average fluorescence and stripe for cpHMM inference, with spatial bursting parameters then calculated by weighted averaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C108 describe the analytical strategy for parameter inference. The rationale for binning (C66) is clearly stated and reasonable given the data limitations. The binning approach (C107) and spatial reconstruction method (C108) are described and illustrated in Figure 8. This is a pragmatic solution to the challenge of limited data per nucleus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The bursting process is modeled in discrete 20-second time steps, with ON promoters loading \u0394t \u00d7 r polymerases per step, producing fluorescence pulses lasting 140 seconds, with the proportionality factor between polymerase loading and fluorescence folded into r.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 describe the mathematical implementation of the bursting model. The discrete time step approach (C97) matches the imaging temporal resolution. The polymerase loading model (C98) and pulse duration (C99) are clearly described and illustrated in Figure 4B-C. The treatment of the proportionality factor (C100) is a reasonable simplification given the lack of absolute calibration.",
+    "result_type": "MINOR"
+  }
+]

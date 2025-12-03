@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C39",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The authors developed a single-molecule nanopore sequencing method using signalAlign to profile 13 distinct types of modified nucleotides at 110 positions across full-length 18S and 25S rRNA from S. cerevisiae, preserving long-range associations between modification status at distant positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30, C39, C156-C158 collectively describe the development and capabilities of the method. The method is validated through multiple approaches including snoRNA knockouts (C67), comparison with ensemble methods (C74), and signal clustering (C65, C89). The training approach using wild-type as modified and IVT as unmodified is clearly described (C39), and validation experiments confirm the method's accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C115"
+    ],
+    "result": "Depletion of Nop58 or Cbf5 reveals that 2'-O-methylation and pseudouridylation are largely independent of each other, with distinct subpopulations of undermodified rRNA molecules accumulating in each depletion experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 describe the accumulation of undermodified rRNA molecules in depletion experiments, supported by hierarchical clustering (C44) and UMAP visualization (C45). Statistical analysis (C49, C50) confirms the independence of the two modification types. The validation is strengthened by comparison with IVT controls and multiple biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C84",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C142"
+    ],
+    "result": "The U24 snoRNA guides concerted modification of three nucleotides (Cm1437, Am1449, Gm1450) in the polypeptide exit tunnel, with ribosomes being either fully modified or completely unmodified at all three sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C84, C87-C90, C142 describe concerted modification at U24-guided sites. The result is supported by multiple lines of evidence: hierarchical clustering showing bimodal populations (C44, C87), statistical correlation analysis (C84, C88), and validation through raw signal clustering (C89). The observation is consistent across wild-type, depletion experiments, and helicase mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "Modifications at Um2921, Gm2922, and \u03a82923 in the peptidyl transfer center are highly concerted and refractory to loss in depletion experiments, suggesting these modifications are critical for rRNA accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 describe concerted modification at the PTC. The observation is supported by clustering data (C54) and cited literature on the importance of these modifications (C55-C57). The inference that rRNAs lacking these modifications do not accumulate efficiently (C59) is reasonable given the data, though direct evidence of rRNA stability is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Wild-type yeast ribosomes show smaller (<10%) subpopulations with correlated pairs of unmodified nucleotides, including positions guided by the same snoRNA and positions that are spatially proximal (15-22 \u00c5) in the mature ribosome structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 describe heterogeneity in wild-type ribosomes. The result is supported by hierarchical clustering (C75, C76), statistical correlation analysis with p-values (C77-C82), and structural analysis showing spatial proximity (C83). The observation of smaller subpopulations is consistent with the high overall modification frequency in wild-type cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C91",
+      "C124"
+    ],
+    "result": "Loss of Dbp3 or Prp43 RNA helicases results in distinct subpopulations of undermodified rRNA molecules with concerted loss of modifications at specific sites, including the U24-guided triad near the polypeptide exit tunnel, suggesting overlapping but distinct roles in ribosome biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88, C91, C124 describe the effects of helicase loss on rRNA modification. The result is supported by hierarchical clustering showing 2-3 distinct modification profiles (C86), statistical correlation analysis (C88), and consistency with previous ensemble studies (C85). The observation of concerted modification changes over long distances (C124) is a novel finding enabled by single-molecule profiling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C125"
+    ],
+    "result": "Pxr1, but not Sqs1, is the main G-patch protein important for Prp43 function during rRNA modification, with loss of Pxr1 producing modification profiles similar to but more severe than the prp43-cs mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95, C125 describe the role of G-patch proteins in Prp43 function. The result is supported by comparison of modification profiles across mutants (C93, C94) and the observation that Sqs1 deletion has little effect (C92). The inference that Pxr1 is the main G-patch protein for rRNA modification (C95, C125) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C117"
+    ],
+    "result": "Loss of Dbp3, Prp43, and Pxr1 creates distinct hubs of concerted modification changes at functional centers of the ribosome, including the decoding site, peptidyl transfer center, and polypeptide exit tunnel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102, C117 describe the spatial organization of modification changes in helicase mutants. The result is supported by correlation analysis and visualization in Figure 4, showing that concerted modification changes cluster at functional centers. This provides insight into the relationship between helicase function and modification at specific ribosomal sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors propose a hierarchical model for Dbp3 and Prp43/Pxr1 function during ribosome biogenesis, where Dbp3 enables snR55-dependent modification of U1269, followed by Prp43-mediated release of snR55 to allow subsequent modifications at surrounding positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C137 describe a proposed hierarchical model for helicase function. The model is supported by the observation that Prp43-Q423N permits U1269 modification but causes concerted loss of surrounding modifications (C129), and that Dbp3 loss blocks U1269 modification but permits surrounding modifications (C130, C135). The model integrates current findings with previous literature (C126-C128) and provides a mechanistic explanation for the observed patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Loss of Dbr1 reduces modification at intronic snoRNA-guided positions, while splicing mutants (prp16-302, spp382-1) show no substantial modification changes, suggesting that modification defects in prp43-cs arise from ribosome biogenesis defects rather than splicing defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 describe the effects of splicing-related perturbations on rRNA modification. The result is supported by quantitative measurements showing specific reductions in Dbr1 mutants (C104, C105) and lack of changes in splicing mutants (C106). The inference that prp43-cs defects arise from ribosome biogenesis rather than splicing (C108) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Most annotated rRNA modification patterns are refractory to rapid alterations by dramatic changes in physiological conditions including stationary phase, starvation, rapamycin treatment, cycloheximide treatment, and cold shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 describe the stability of rRNA modification patterns under various conditions. The result is supported by quantitative measurements showing no substantial changes (C109, C110). The authors appropriately note that cells had opportunity to synthesize new ribosomes (C111) and discuss the lack of known mechanisms for rapid modification reversal (C112, C113). The caveat about chronic conditions (C114) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The method can resolve populations of ribosomes differing by single modifications, as demonstrated by hierarchical clustering of a mixture of three snoRNA knockout strains and wild-type, which reveals four distinct clusters with expected positive correlations for shared snoRNAs and negative correlations for independently lost modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe validation of the method's sensitivity using snoRNA knockouts. The result is supported by hierarchical clustering showing four distinct clusters (C69), statistical correlation analysis (C70, C71), and the logical explanation for negative correlations in the mixture (C72). Signal distributions from knockouts match expected unmodified distributions (C68).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "N4-acetylcytidine modifications at positions 1280 and 1773 in 18S rRNA show concerted loss with 2'-O-methylation in Nop58 depletion, explained by the dependence of atypical C/D box snoRNAs (snR4, snR45) on Nop58 for bringing the cytidine acetylase Kre33 to these positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 describe concerted changes in N4-acetylcytidine modification. The result is supported by statistical correlation analysis (C60), cited literature on the modification mechanism (C61), and validation experiments with snR4 and snR45 knockouts (C63). The explanation for the correlation (C62) is well-supported by the known mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The model's predictions of concerted modification patterns agree with underlying event means clustering, with the exception that modification of \u03a82923 may be slightly overestimated. A conservative 10% change threshold was established for calling affected sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 describe validation and threshold setting for the method. The result is supported by comparison with raw signal clustering (C65) and analysis of wild-type variation (C66). The acknowledgment of potential overestimation at \u03a82923 demonstrates appropriate critical evaluation of the method's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The model's estimates of modification frequency at individual positions are very similar to ensemble methods (mass spectrometry, HPLC, RiboMeth-seq), with most positions >95% modified and clustering around functional centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 describe comparison with ensemble methods. The result is supported by cited literature (C73) and comparison shown in Figure 2\u2014figure supplement 4 (C74). This validation demonstrates that the single-molecule method produces accurate estimates of overall modification frequency while also capturing heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Positions guided by snR60 (Am817, Gm908) and snR67 (Gm2619, Um2724) show significantly increased correlation in pxr1\u0394 and dbp3\u0394 but not in prp43-cs, suggesting that Pxr1 and Dbp3 promote concerted modification at these sites, though the contribution of Prp43 is less clear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 describe differential effects of helicase mutants on specific modification sites. The result is supported by statistical correlation analysis with p-values (C96, C97). The interpretation that Pxr1 and Dbp3 promote concerted modification (C98) is reasonable, and the authors appropriately note uncertainty about Prp43's role (C99) with speculation about possible explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The observation that U24-guided modifications occur in an all-or-none fashion suggests a processive mechanism where one snoRNP binding event with snoRNA refolding leads to all three modifications, rather than a distributive mechanism requiring independent binding events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C147, C153-C155 describe a proposed processive mechanism for U24-mediated modification. While the observation of bimodal modification patterns (C147, C153) supports the conclusion that modifications are concerted, the distinction between processive and rapid distributive mechanisms (C155) cannot be definitively made from the current data. The proposal is reasonable speculation (C145, C154) but requires additional experiments to confirm the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The three U24-guided nucleotides (Cm1437, Am1449, Gm1450) line the polypeptide exit tunnel within a few angstroms of conserved loops of ribosomal proteins uL4 and uL22, and their absence may affect PET structure, translation, and protein folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 describe the structural context of the U24-guided modifications, supported by cited literature. The speculation about functional consequences (C121) is reasonable given the structural location but lacks direct experimental evidence. The structural observations are well-supported, but the functional implications remain to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The method has limitations including use of wild-type as the fully modified training example (though not all wild-type molecules are fully modified), reduced accuracy at positions with low signal-to-noise ratio, and difficulty resolving dense clusters of modifications without comprehensive training data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C162 describe acknowledged limitations of the method. The authors appropriately recognize these limitations (C159-C161) and suggest future improvements (C162). This critical self-assessment strengthens confidence in the reported results by demonstrating awareness of the method's boundaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The method can be applied to other nucleic acids including pre-rRNA intermediates, human rRNAs, E. coli tRNAs, and mRNAs, with potential applications in understanding disease-associated changes in rRNA modification and regulation of alternative splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C169 describe potential future applications of the method. While the general applicability of the approach is reasonable (C166), the specific applications to other systems (C167, C169) and disease biomarkers (C165) are speculative and not demonstrated in the current work. These represent promising directions for future research rather than established results.",
+    "result_type": "MINOR"
+  }
+]

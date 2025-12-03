@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "A custom CRISPR/Cas9 sgRNA library was designed and constructed targeting 1213 mouse RNA binding proteins (RBPs). The library contains 13,350 sgRNAs total (10 per gene), 72 positive control genes, and 500 negative control sgRNAs, with >98.8% of sgRNAs normally distributed within a 16-fold range. RBPs were selected from multiple RNA interactome capture studies based on specific criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C26-C31 provide detailed specifications of the library design that are internally consistent and well-documented. Claims C103-C106 describe rational selection criteria for RBP targets with appropriate citations. The library design appears methodologically sound with appropriate controls and coverage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A screen for RBPs affecting B cell proliferation/survival identified only three RBPs (Rc3h1, Caprin1, Fam46c) that limit B cell expansion. Control genes Trp53 and Myc enriched as expected, and the role of Rc3h1 was validated with individual sgRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 describe a well-controlled screen with appropriate positive controls (C33, C34) that behaved as expected. The finding that only three RBPs affect proliferation/survival (C35) is validated by prior literature for FAM46C (C36) and by independent sgRNA validation for Rc3h1 (C37), supporting the screen's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The screen identified 103 RBPs that promote and 189 RBPs that inhibit CD138+ cell abundance. Known transcription factors (Bach2, Bcl6, Spi1, Irf8, Prdm1, Irf4) enriched as expected based on their established roles, validating the screening approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 report the primary screening results. Claims C39-C42 demonstrate that known regulators of plasma cell differentiation behaved as expected, with extensive literature support (C42), providing strong validation of the screening methodology and confidence in novel findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C43"
+    ],
+    "result": "CSDE1 and STRAP, which are known binding partners, both promote CD138+ cell accumulation in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 report validation of CSDE1 and STRAP as promoters of CD138+ cells, supported by Figure 1C showing statistical significance. The fact that these proteins are known binding partners (C43) provides biological plausibility and internal consistency to the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C44",
+      "C45"
+    ],
+    "result": "EIF3K and EIF3L inhibit CD138+ cell accumulation in vitro, potentially by limiting tolerance to ER stress based on their known role in C. elegans lifespan extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C6 report validated screening hits with statistical support (Figure 1C). However, the mechanistic interpretation (C45) is explicitly speculative and based on cross-species inference from C. elegans (C44). The proposed ER stress mechanism requires direct experimental validation in the plasma cell system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Components of the CCR4-NOT complex (CNOT9, CNOT10, CNOT11) limit CD138+ cell accumulation. The authors propose that the CCR4-NOT complex acts as a post-transcriptional hub, with different adapter proteins (ZFP36-, TNRC6-, and YTHDF-families) recruiting it to suppress distinct transcript populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C49-C50, C53 report validated screening results showing CCR4-NOT components and adapter families affect CD138+ cells. The mechanistic model (C54-C56) is explicitly hypothetical and speculative. While the model is biologically plausible given known interactions (C52), it lacks direct experimental validation of which transcripts each adapter targets in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C57"
+    ],
+    "result": "All three YTHDF-family m6A binding proteins promote CD138+ cell accumulation, with YTHDF2 showing the most pronounced effect. The m6A writer complex components (Mettl3, Mettl14, Wtap) showed convergent enrichment near significance, supporting a role for m6A modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C47 report screening and validation data showing all YTHDF family members promote CD138+ cells, with YTHDF2 having the strongest effect (Figures 1D-F). Claim C48 provides supporting evidence from m6A writers. The convergent evidence from readers and writers strengthens the conclusion about m6A's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "YTHDF2 deficiency reduces CD138+ cell generation in vitro without affecting B cell proliferation, class switch recombination, or IgG1/IgE generation. The authors hypothesize YTHDF2 promotes differentiation or survival of CD138+ cells specifically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 provide experimental data showing YTHDF2 specifically affects CD138+ cell accumulation without affecting other B cell functions. The hypothesis (C62) is appropriately qualified as speculation but is well-supported by the negative results for other processes. However, the mechanism remains to be definitively determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C25",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In \u03bcMT chimeric mice, YTHDF2-deficient B cells efficiently reconstituted the B cell pool but showed threefold reductions in splenic plasmablasts and bone marrow plasma cells at day 21 post-immunization, with comparable antibody affinity maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 describe a well-controlled in vivo experiment showing YTHDF2 is required for plasma cell accumulation (threefold reduction, C66-C67) without affecting B cell development (C63) or CXCR4 expression (C68). The antibody ratio data (C64) suggests affinity maturation is intact, though the authors appropriately note potential power limitations (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In competitive bone marrow chimeras, YTHDF2-deficient cells efficiently reconstituted the B cell pool with >98% Cre-mediated deletion, but showed fivefold reductions in splenic plasmablasts and bone marrow plasma cells. Control CD45.1+ cells were unaffected, demonstrating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 describe a stringent competitive chimera experiment with appropriate controls. The fivefold reduction in plasma cells (C73, C76) is more pronounced than in \u03bcMT chimeras, likely due to competition. The specificity is well-demonstrated by unaffected control cells (C77-C79), and high deletion efficiency is confirmed (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "m6A-eCLIP identified 3370 m6A sites in 2658 transcripts in cultured B cells, enriched for DRACH/RRACU motifs and terminal exons. m6A sites were not biased to differentiation state-specific transcripts or high expression levels. Methylated transcripts include key differentiation regulators (Bach2, Pax5, Irf8, Spi1, Prdm1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 report m6A-eCLIP results with expected motif enrichment (C82) and genomic distribution (C83) consistent with published data. The lack of bias toward differentiation-specific transcripts (C84) is clearly stated. Claim C88 identifies biologically relevant methylated transcripts. The speculation about YTHDF2 binding (C86) and potential m6A-independent roles (C87) are appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study demonstrates that hundreds of RBPs regulate CD138+ cell accumulation, with YTHDF2 having an essential role in promoting plasma cell accumulation in spleen and bone marrow. The precise mechanism (differentiation, survival, or migration) remains unclear and requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 appropriately summarize the major findings. Claims C92-C97 acknowledge important limitations: mechanisms are unclear (C92), multiple explanations are possible (C93-C94), and the data suggest complexity beyond simple differentiation or migration defects (C95-C97). This honest assessment of uncertainty is scientifically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors propose YTHDF2 may promote plasma cell accumulation by limiting ER stress-induced apoptosis or through supporting the germinal center reaction. Further studies are needed to determine the precise mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 present hypotheses based on prior literature (citations provided) but lack direct experimental support in this study. Claim C102 appropriately acknowledges that mechanistic determination requires additional work. These are reasonable hypotheses for future investigation but remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction establishes background knowledge about plasma cell biology, transcriptional regulation, and the limited prior knowledge of RBP roles in plasma cell differentiation, survival, and migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C22 present established background knowledge with appropriate citations. These claims provide context for the study's rationale and are well-supported by the cited literature. The statement that few RBPs have been implicated in plasma cell biology (C19) justifies the screening approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C107",
+      "C108"
+    ],
+    "result": "The Ythdf2 conditional allele expresses a GFP-YTHDF2 fusion protein that reliably indicates YTHDF2 expression. Prior work reported a minor role for Ythdf2 in B cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 describe the genetic tool with appropriate citation. Claim C70 accurately cites prior work. The efficient reconstitution of B cells in chimeras (C63, C71) is consistent with only a minor developmental role, validating the experimental system.",
+    "result_type": "MINOR"
+  }
+]

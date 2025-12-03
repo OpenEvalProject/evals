@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C84",
+      "C85",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The murine ovarian immune system contains diverse immune cell populations including macrophages, dendritic cells (cDC1 and cDC2), neutrophils, NK cells, NKT cells, ILC1-3, B cells, CD8+ T cells, CD4+ T cells, and CD3+ CD4- CD8- double-negative T cells (DNT). In young mice, innate immune cells predominate, with ILC1 being the largest population, and DNT cells are predominantly TCR\u03b3\u03b4- and tissue-specific to the ovaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C84-C85, and C108-C110 are well-supported by scRNA-seq data combined with flow cytometry validation (Figure 1). The cell type identification used multiple complementary methods (Seurat clustering, SingleR annotation, literature-based markers), and flow cytometry confirmed key populations including the ovary-specific DNT cells and high G1-ILC fractions. The characterization of DC subtypes (cDC1/cDC2) is supported by marker expression analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C104",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Aging causes a shift in ovarian immune composition from innate to adaptive immunity, characterized by a dramatic increase in CD3+ lymphocytes (primarily DNT cells) and significant decreases in macrophages, neutrophils, ILC1, and NK cells. This shift is cycle-stage independent and tissue-specific to the ovary, as the spleen shows opposite trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C29, C104, and C111-C113 are strongly supported by converging evidence from scRNA-seq (Figure 2A-B), flow cytometry validation across multiple age groups (Figure 2C-E), and MILO algorithm analysis (Figure 2\u2014figure supplement 1). Statistical significance is demonstrated with appropriate tests (Kolmogorov-Smirnov, p<0.01), adequate sample sizes (young n=4, adult n=15, old n=12), and tissue-specific controls showing opposite trends in spleen. The cycle-stage independence is validated in Figure 2\u2014figure supplement 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Aging causes widespread transcriptional changes in ovarian immune cells, with DNT cells, ILC1, NKT cells, and CD4 T cells showing predominantly downregulated genes. GO enrichment analysis reveals global decreases in biosynthesis/metabolism, loss of regulation over various processes, and decreased cellular responsiveness to stimuli. Cell-type-specific changes include attenuated immune/inflammatory responses and decreased tissue remodeling in macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 and C91-C94 are supported by differential gene expression analysis (Figure 3A) and GO enrichment analysis (Figure 3B) from scRNA-seq data. The analysis used appropriate statistical thresholds (twofold change, FDR \u22640.1, p\u22640.05) and REVIGO clustering to identify shared and cell-type-specific processes. However, the inference that certain cell types are 'more susceptible to aging' (C31) is speculative and not directly tested. The global downregulation pattern is acknowledged and addressed with complementary CDF analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C97",
+      "C105",
+      "C114",
+      "C115"
+    ],
+    "result": "Aging causes decreased expression of inflammatory mediators in ovarian immune cells, with almost all significant chemokine and cytokine network connections downregulated. Key changes include decreased CCR5 expression in dendritic cells, reduced Cxcl2 across cell types, and decreased IL-1 and TNF superfamily members, collectively shifting the ovarian immune phenotype toward a less inflammatory state during pre-estropause aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C44, C46-C49, C97, C105, C114-C115 are well-supported by network analysis (Figure 4C-D), expression heatmaps (Figure 4A), CDF analysis (Figure 4B), and experimental validation via flow cytometry showing decreased CCR5+ dendritic cells (Figure 4\u2014figure supplement 1B, p<0.05). The cell2cell algorithm independently confirmed CCR5 as a key modulated receptor. The conclusion of a 'less inflammatory state' (C49, C97) is a reasonable inference from the comprehensive decrease in inflammatory mediators, though it remains an interpretation rather than direct functional measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C98",
+      "C101"
+    ],
+    "result": "Aging increases expression of senescent cell recognition receptors in ovarian immune cells, particularly in macrophages and neutrophils. Six SASP receptors (Ccr2, Csf2ra, Csf1r, Ighm, Clec4a2-3, Ifngr1) are significantly overexpressed in old macrophages, with statistical enrichment (FDR=10\u207b\u00b9\u00b2) indicating this is not random. The fraction of cells expressing SASP receptors increases significantly in macrophages and neutrophils, though expression levels remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C60-C62, C64-C69, C71, C98, and C101 are supported by scRNA-seq analysis showing increased fractions of cells expressing SASP receptors (Figure 5A-B), with rigorous statistical validation using CDF analysis and FDR calculations. The finding that 6/24 SASP receptors are significantly modulated in macrophages with FDR=10\u207b\u00b9\u00b2 is statistically robust. Complementary analysis (Figure 5\u2014figure supplement 1) appropriately distinguishes between fraction changes (increased) and expression level changes (unchanged). However, C101's inference about 'clearance increasing to match ovary needs' is speculative and not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C95"
+    ],
+    "result": "Decreased expression of Inhba and Acvr2a by ovarian macrophages at older age might suggest a specific role of macrophages in supporting follicular growth via Activin secretion during the estrous cycle, and macrophages may participate in inducing an inflammatory environment as part of the ovulation process in response to Activin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54, C55, and C95 are explicitly speculative interpretations (using 'might suggest' and 'may') of observed gene expression changes. While the decrease in Inhba and Acvr2a is supported by data, the proposed mechanisms linking macrophages to follicular growth and ovulation-associated inflammation are not directly tested. These remain hypotheses requiring functional validation through experiments such as macrophage depletion studies or Activin supplementation assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C83"
+    ],
+    "result": "DNT cells may result from down-regulation of CD4 and CD8 due to chronic stimulation from repeated ovulation cycles, and age-dependent changes in T lymphocyte populations may be involved in improper immune regulation leading to infertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 and C83 are speculative interpretations connecting observed DNT cell increases to chronic stimulation and potential fertility impacts. While C79 cites literature suggesting DNT cells can arise from chronic stimulation, and C80 notes the inflammatory nature of ovulation, the causal link between ovulation cycles and DNT accumulation is not experimentally demonstrated. C83's connection to infertility is based on associations from cited literature (C81-C82) but lacks direct functional evidence in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The ovaries may use ILC1 cells as orchestrators of other cell types participating in tissue remodeling processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is a speculative interpretation of ILC1 function based on their abundance (C84-C85) and known roles in tissue remodeling (C87). While the high fraction of ILC1 cells in ovaries is well-documented, their specific orchestrating role in ovarian tissue remodeling is not directly demonstrated through functional experiments such as ILC1 depletion or co-culture studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Prior to post-menopausal inflammaging, there is a novel intermediate state during pre-estropause aging characterized by decreased inflammatory characteristics in the ovary, suggesting ovarian immune aging is non-linear with alternations between anti- and pro-inflammatory environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 represent a major interpretive conclusion supported by the comprehensive data showing decreased inflammatory mediators (C3, C39-C49, C97, C105) during pre-estropause aging, contrasting with cited literature on post-menopausal inflammaging (C96, C102-C103). The 'novel intermediate state' interpretation is reasonable given the convergent evidence from gene expression, network analysis, and GO enrichment. However, this remains an interpretation of a temporal pattern rather than longitudinal data tracking the same animals through estropause.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "A decline in the macrophages population with age may result in fertility deterioration because of impaired ovarian vasculature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by data showing decreased macrophage fractions with age (C23, C25) and cites literature (Turner et al., 2011) linking macrophage depletion to impaired ovarian vasculature. While the current study does not directly measure vasculature or fertility outcomes, the claim appropriately qualifies the connection as 'may result' and is grounded in both observed data and relevant prior work (C12-C15).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C41",
+      "C45",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C63",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C81",
+      "C82",
+      "C86",
+      "C87",
+      "C88",
+      "C96",
+      "C99",
+      "C100",
+      "C102",
+      "C103"
+    ],
+    "result": "Background and contextual claims about female reproductive aging, immune system function, ovarian immune cells, DNT cells, ILC1 cells, senescence, and inflammaging based on cited literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C16, C41, C45, C50-C53, C56-C59, C63, C70, C72-C76, C78, C81-C82, C86-C88, C96, C99-C100, C102-C103 are background claims supported by appropriate citations to published literature. These provide necessary context for interpreting the study's findings. The citations appear relevant and appropriately used to establish the scientific foundation for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "The immune system plays a major role in maintaining many physiological processes in the reproductive system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a general statement supported by established scientific knowledge and elaborated through specific examples in subsequent claims (C9-C15). This serves as the foundational premise for the study.",
+    "result_type": "MINOR"
+  }
+]

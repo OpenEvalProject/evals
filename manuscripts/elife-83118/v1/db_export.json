@@ -1,0 +1,2048 @@
+{
+  "submission": {
+    "id": "d862bf1c-576b-47c3-8887-ed9c9c62f966",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:28:10.269327Z",
+    "updated_at": "2025-12-03T20:28:10.269327Z"
+  },
+  "content": [
+    {
+      "id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "submission_id": "d862bf1c-576b-47c3-8887-ed9c9c62f966",
+      "content_type": "manuscript",
+      "content_text": "# Common genetic variations in telomere length genes and lung cancer: a Mendelian randomisation study and its novel application in lung tumour transcriptome\n\n## Authors\n\n- Ricardo Cortez Cardoso Penha<sup>1</sup> ([ORCID: 0000-0002-2847-1993](https://orcid.org/0000-0002-2847-1993)) \u2020\n- Karl Smith-Byrne<sup>2</sup>\n- Joshua R Atkins<sup>1</sup>\n- Philip C Haycock<sup>3</sup> ([ORCID: 0000-0001-5001-3350](https://orcid.org/0000-0001-5001-3350))\n- Siddhartha Kar<sup>3</sup>\n- Veryan Codd<sup>4</sup>\n- Nilesh J Samani<sup>4</sup>\n- Christopher Nelson<sup>4</sup>\n- Maja Milojevic<sup>1</sup>\n- Aur\u00e9lie AG Gabriel<sup>6</sup>\n- Christopher Amos<sup>7</sup>\n- Paul Brennan<sup>1</sup>\n- Rayjean J Hung<sup>8</sup>\n- Linda Kachuri<sup>9</sup>\n- James D Mckay<sup>1</sup> ([ORCID: 0000-0002-1787-3874](https://orcid.org/0000-0002-1787-3874)) \u2020\n\n### Affiliations\n\n1. Genomic Epidemiology branch, International Agency for Research on Cancer/World Health Organization (IARC/WHO) Lyon France ([ROR:04q84b570](https://ror.org/04q84b570))\n2. Cancer Epidemiology Unit, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n3. MRC Integrative Epidemiology Unit, Bristol Population Health Science Institute, Bristol Medical School (PHS) Bristol United Kingdom ([ROR:030qtrs05](https://ror.org/030qtrs05))\n4. Department of Cardiovascular Sciences, University of Leicester Leicester United Kingdom ([ROR:04h699437](https://ror.org/04h699437))\n5. NIHR Leicester Biomedical Research Centre, Glenfield Hospital Leicester United Kingdom ([ROR:0187kwz08](https://ror.org/0187kwz08))\n6. Ludwig Lausanne Branch, Faculty of Biology and Medicine Lausanne Switzerland\n7. Institute for Clinical and Translational Research, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n8. Lunenfeld-Tanenbaum Research Institute, Sinai Health Toronto Canada ([ROR:01s5axj25](https://ror.org/01s5axj25))\n9. Departament of Epidemiology and Population Health, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Genome-wide association studies (GWASs) have identified genetic susceptibility variants for both leukocyte telomere length (LTL) and lung cancer susceptibility. Our study aims to explore the shared genetic basis between these traits and investigate their impact on somatic environment of lung tumours.Methods:We performed genetic correlation, Mendelian randomisation (MR), and colocalisation analyses using the largest available GWASs summary statistics of LTL (N=464,716) and lung cancer (N=29,239 cases and 56,450 controls). Principal components analysis based on RNA-sequencing data was used to summarise gene expression profile in lung adenocarcinoma cases from TCGA (N=343).Results:Although there was no genome-wide genetic correlation between LTL and lung cancer risk, longer LTL conferred an increased risk of lung cancer regardless of smoking status in the MR analyses, particularly for lung adenocarcinoma. Of the 144 LTL genetic instruments, 12 colocalised with lung adenocarcinoma risk and revealed novel susceptibility loci, including MPHOSPH6, PRPF6, and POLI. The polygenic risk score for LTL was associated with a specific gene expression profile (PC2) in lung adenocarcinoma tumours. The aspect of PC2 associated with longer LTL was also associated with being female, never smokers, and earlier tumour stages. PC2 was strongly associated with cell proliferation score and genomic features related to genome stability, including copy number changes and telomerase activity.Conclusions:This study identified an association between longer genetically predicted LTL and lung cancer and sheds light on the potential molecular mechanisms related to LTL in lung adenocarcinomas.Funding:Institut National du Cancer (GeniLuc2017-1-TABAC-03-CIRC-1-TABAC17\u2010022), INTEGRAL/NIH (5U19CA203654-03), CRUK (C18281/A29019), and Agence Nationale pour la Recherche (ANR-10-INBS-09).\n\n## Introduction\n\nTelomeres are a complex of repetitive TTAGGG sequences and nucleoproteins located at the end of chromosomes and have an essential role in sustaining cell proliferation and preserving genome integrity (de Lange, 2009). Telomere length progressively shortens with age in proliferative somatic cells due to incomplete telomeric regions replication (Watson, 1972) and low activity of the telomerase TERT in adult cells. The shortening of the telomere length results in cell cycle arrest, cellular senescence, and apoptosis in somatic cells (Harley et al., 1990). The maintenance of telomere length, which allows cancer cells to escape the telomere-mediated cell death pathways, is one feature related to the hallmarks of cancer (Hanahan and Weinberg, 2011).\n\nTelomere length appears to vary between individuals and has been studied in relation to many diseases. In observational studies, telomere length is measured as the average length of telomeric sequences in a given tissue (Montpetit et al., 2014). Telomere length appears correlated across tissue types (Demanelis et al., 2020), and as such, leukocyte telomere length (LTL) is generally measured in epidemiologic studies as a proxy for telomere length in other tissues. Recently, LTL has been measured in 472,174 individuals from the UK Biobank (UKBB; Codd et al., 2021), and LTL was associated with multiple biomedical traits (i.e. pulmonary and cardiovascular diseases, haematological traits, lymphomas, kidney cancer, and other cancer types). Genetic analysis of LTL also revealed 138 genetic loci linked to LTL across a variety of different genes involved in telomere biology and DNA repair (Codd et al., 2021).\n\nIn the context of lung cancer, genetic variants at several loci have been associated with both LTL and lung cancer risk, including variants near the TERT, TERC, OBFC1, and RTEL1 genes, fundamental to telomere length maintenance (McKay et al., 2008; Wang et al., 2008; Rafnar et al., 2009; Kachuri et al., 2016; McKay et al., 2017). The effects of the telomere-related variants appear more relevant to lung adenocarcinoma risk than other histologic subtypes (McKay et al., 2017; Landi et al., 2009). Accordingly, a causal relationship between LTL and susceptibility to lung cancer was observed using Mendelian randomisation (MR) approaches (Zhang et al., 2015; Haycock et al., 2017; Kachuri et al., 2019) as well as in observational studies that have associated directly measured telomere length with risk of lung cancer (Sanchez-Espiridion et al., 2014; Zhang et al., 2017).\n\nThe aim of the current work was to investigate the relationship between genetically predicted LTL and lung cancer, including lung cancer histological subtypes and smoking status. To this end, we conducted genome-wide correlations, MR, and colocalisation analyses to explore the relationship between LTL and lung cancer. We additionally undertook polygenic risk score (PRS) analysis using the LTL genetic instrument to explore the influence of LTL on the demographic, clinical, and molecular features of lung adenocarcinoma tumours.\n\n## Materials and methods\n\n### Reporting guidelines\n\nThe current study has been reported according to the STROBE-MR guidelines (Reporting Standards Document).\n\n### Data\n\nGenome-wide association studies (GWASs) summary statistics for lung cancer (29,239 cases and 56,450 controls) and stratified by histological subtype (squamous cell carcinoma, small-cell carcinoma, and adenocarcinoma) and smoking status (ever and never smokers) were obtained from the International Lung Cancer Consortium (ILCCO; McKay et al., 2017). All analyses of LTL requiring summary statistics used results from a GWAS of LTL in 464,716 individuals of European ancestry from the UKBB (Codd et al., 2021). Downstream analyses considered additional lung cancer risk factors, such as lung function and cigarette smoking. We obtained GWAS summary statistics for forced expiratory volume in 1 s (FEV1) and forced vital capacity (FVC) from a published UKBB analysis (Kachuri et al., 2020). For smoking behaviour traits, we used results from the GWAS and Sequencing Consortium of Alcohol and Nicotine use (GSCAN) consortium meta-analysis of cigarettes per day (continuous), smoking initiation (ever versus never), smoking cessation (successfully quit versus continuing), and age at smoking initiation (continuous; Liu et al., 2019) excluding the UKBB participants. For the obesity-related traits (continuous), we used the results from the UKBB and GIANT meta-analysis of BMI (Pulit et al., 2019) and waist-to-hip ratio (WHR; Pulit et al., 2019), or OpenGWAS data using UKBB participants (Elsworth et al., 2020) for high-density lipoprotein (HDL), triglycerides, and systolic and diastolic blood pressure. For the alcohol behaviour trait, we obtained the results from GSCAN phase 2 of drinks per week (continuous; Saunders et al., 2022). Colocalisation analyses of gene expression used lung tissue expression quantitative trait loci (eQTL) summary statistics from the Genotype-Tissue Expression (GTEx) data version 8.\n\nAnalyses of molecular phenotypes were performed using 343 lung adenocarcinoma samples of European ancestry from The Cancer Genome Atlas (TCGA) cohort with germline profile, RNA-sequencing, and epidemiological data available. Genotyping and imputation of germline variants have been described elsewhere (Gabriel et al., 2022). The total somatic mutation burden of TCGA samples was obtained from Ellrott et al., 2018, and DNA mutational signatures were extracted and attributed, as previously described (Gabriel et al., 2022). RNA-sequencing data were obtained from TCGA data portal using TCGA biolinks package in R (version 2.22.3; Colaprico et al., 2016). Telomere length measurement by whole-genome sequencing (WGS-measured TL, 655 samples across cancer sites) was retrieved from Barthel et al., 2017.\n\nTumour genomic characteristics were defined by the analyses of the TCGA data, including gene expression-based scores of telomerase activity (Barthel et al., 2017) and cellular proliferation (Thorsson et al., 2018), as well as the observed frequency of somatic homologous recombination-related events (represented as a homologous recombination repair deficiency score), and the average number of somatic copy number alteration within the tumours (Knijnenburg et al., 2018).\n\n### Linkage disequilibrium score regression\n\nGenetic correlations across traits were calculated using linkage disequilibrium score regression (LDSC) by the LDSC package (v1.0.0; Bulik-Sullivan et al., 2015). Linkage disequilibrium (LD) scores were generated on the 1000 Genomes Project Phase 3 reference panel with the HLA region excluded as provided by the package due to long range LD patterns. The genome-wide correlations that passed Bonferroni correction (adjusted p-values<0.05) were considered statically significant.\n\n### Mendelian randomisation\n\nMR is a method for interrogating relationships between putative risk factors and health outcomes by using genetic variants associated with the exposure of interest, typically obtained from GWAS, as instrumental variables. Assuming that fundamental MR assumptions are satisfied, this approach can be said to identify unbiased causal estimates. The genetic instrument for LTL was defined as the set of 144 genetic variants that were genome-wide significant (p<5x10\u201308) but not in linkage disequilibrium with each other (r2<0.01) and restricted to common genetic variation (minor allele frequency >1%) in European populations. Proxy variants in LD (r2>0.8, whenever possible) were chosen when a genetic variant was not available in the lung cancer GWAS. Primary MR analyses were conducted using the inverse-variance method with multiplicative random-effects (Yavorska and Burgess, 2017). Sensitivity analyses to horizontal pleiotropy and other violations of MR assumptions were performed using other MR estimation methods, such as weighted median, MR-Egger, contamination mixture model, MR-PRESSO, and MR-RAPS (Yavorska and Burgess, 2017; Sanderson et al., 2022). Multivariable MR (MVMR) methods included the inverse-variance weighted, MR-Egger, and least absolute shrinkage and selection operator (LASSO)-based methods (Yavorska and Burgess, 2017; Sanderson et al., 2019).\n\n### Colocalisation methods\n\nUnlike MR, where the goal is to assess the evidence for a causal effect of an exposure on an outcome, colocalisation is agnostic with respect to direction of effect and only assesses the probability that the two traits are affected by the same genetic variants at a given locus. Colocalisation can be viewed as a complementary approach for evaluating MR assumptions within specific genes or regions since strong evidence of colocalisation indicates overlap in genetic mechanisms affecting LTL and lung cancer. We used COLOC (v5.1.0; Wallace, 2020) to estimate the posterior probability for two traits sharing the same causal variant (PP4) in a 150 kb LD window, with PP4 >0.70 corresponding to strong evidence of colocalisation, as previously suggested (Wallace, 2020; Lopes et al., 2022). Priors chosen for the colocalisation analyses were p1=10\u20133, p2=10\u20134, and p12=10\u20135, or approximately, a 75% prior belief that a signal will only be observed in the LTL GWAS and less than 0.01% prior belief in favour of colocalisation between the two traits at a given locus (Giambartolomei et al., 2014). Conditioning and masking colocalisation methods were also used as they may identify putative shared causal variants in the presence of multiple causal variants present in a defined LD window (Wallace, 2021). We present the average PP4 from all methods as our posterior belief in favour of colocalisation between LTL and lung cancer risk. Multi-trait colocalisation based on a clustering algorithm was also performed using HyPrColoc (v1.0) to identify shared genetic signals with other lung cancer-related traits (Foley et al., 2021).\n\n### Principal component analysis based on RNA-sequencing data\n\nRead counts of RNA-sequencing data were normalised within (GC-content and gene length) and between (sequencing depth) lane procedures by EDASeq R package (version 2.28.0; Risso et al., 2011) and excluding low read counts. Principal component analysis was applied using singular value decomposition method, after excluding extreme outliers. Pathway analyses were conducted using Gene Set Enrichment Analysis software (GSEA, version 4.2.3; Subramanian et al., 2005) on gene annotations from Gene Ontology database. Pathway analyses were restricted to the top 500 genes positively and negatively correlated with each principal component that passed multiple-testing correction (Bonferroni-adjusted p-value<0.05 for 74,465 tests), which is the maximum number of genes supported by the online software.\n\nThe PRS for LTL was composed of the same 144 variants used in the MR analysis and was computed as the sum of the individual\u2019s beta-weighted genotypes using PRSice-2 software (Choi and O\u2019Reilly, 2019). Associations were estimated per SD increase in the PRS, which was normalised to have a mean of zero across lung adenocarcinoma samples of European ancestry within the TCGA cohort. The associations between the eigenvalues of the gene expression principal components (outcome) and demographic, clinical, and genomic features related to genome stability (predictors derived from TCGA published papers and TCGA data portal, except for the DNA mutational signatures [Gabriel et al., 2022]) were calculated using a multivariate linear regression model.\n\n### Inferring PC2 gene expression signature based on RNA-sequencing data\n\nThe TCGA-lung adenocarcinoma (LUAD) tumour samples were split into training (70%, N=255) and validation (30%, N=108) datasets. Principal components analysis based on RNA-sequencing data was performed to summarise the gene expression profiles of lung adenocarcinoma tumours into five principal components in the training and validation datasets separately, as previously described (see \u2018Principal component analysis based on RNA-sequencing data\u2019 section in methods). Subsequently, we applied the partial least squares-based method called rigid transformation (Hubert and Branden, 2003) to align the first five principal components in both datasets. This method compares embeddings, low-dimensional representations in both datasets, performing a slightly rotation of principal components in order to translate and match them in both training and validation datasets. To select the most informative genes of PC2 in the training dataset, RNA levels of the genes correlated with PC2 (N=3914 out of 14,893 genes, FDR <0.05 for 14,893 tests) were selected as variables for the LASSO regression models. The LASSO tune parameters were chosen by resampling the training dataset (1000 bootstraps: root mean of SE=0.12 \u00b1 0.0004, Lambda = 10 x 10\u201310, r2=0.99 \u00b1 0.00007) using the tidymodels metapackage in R (v1.0.0; wrapper of glmnet). The 10 genes selected by the LASSO model were used to infer the gene expression signature of PC2 by adding up the scaled values of the log-normalised read counts of each gene multiplied by the respective LASSO regression coefficients. For validation purpose, the inferred PC2 signature was calculated in the validation dataset and compared with the observed principal components. After validation in the subset of the TCGA-LUAD cohort, the inferred PC2 signature was calculated in TCGA-LUSC dataset to compare differences between lung cancer histological subtypes.\n\n## Results\n\n### Genome-wide genetic correlations\n\nThe design of the study is represented in Figure 1\u2014figure supplement 1. We first assessed the shared genetic basis of telomere length, lung cancer risk, and other putative lung cancer risk factors, such as smoking behaviours (age start smoking, smoking cessation, smoking initiation, and cigarettes per day) and lung function (FEV1 and FVC) using genome-wide correlations (Figure 1A). There was little evidence for genetic correlations by LDSC between LTL variants and lung cancer (rg = \u22120.01, p=0.88) or when stratified by histologic subtypes (Figure 1A). Increasing LTL was genetically correlated with older age at smoking initiation (rg = 0.13, p=3.0 \u00d7 10\u20133), and negatively correlated with smoking cessation: (rg = \u22120.21, p=6.9 \u00d7 10\u201309), smoking initiation (rg = \u22120.16, p=1.3 \u00d7 10\u201310), and cigarettes per day (rg = \u22120.19, p=2.1 \u00d7 10\u201308). Longer LTL was genetically correlated with improved lung function, as indicated by increasing values of FEV1 (rg = 0.09, p=5.1 \u00d7 10\u201307) and FVC (rg = 0.09, p=1.1 \u00d7 10\u201305). To better understand the absence of genome-wide correlations between LTL and lung cancer, we visualised the Z-scores for each trait for approximately 1.2 million variants included in the LDSC analyses (Figure 1B). A subgroup of variants associated with longer LTL was correlated with increased lung adenocarcinoma risk, while the subgroup of smoking-behaviour associated variants, which also conferred an increased risk of lung adenocarcinoma, tended to have lower LTL.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig1-v1.jpg)\n\n**Figure 1.:** (A) Heatmap representing the genetic correlation analyses (rg) for LTL across LC, histological subtypes (lung adenocarcinoma [ADE], squamous cell carcinoma [SQC], and small-cell carcinoma [SCC]), smoking propensity (cigarettes per day [CPD], smoking cessation [SmkCes], Smoking initiation [SmkInit], and age of smoking initiation [AgeSmk]), and lung function related (forced vital capacity [FVC] and forced expiratory volume [FEV1]) traits. The black star indicates correlations that passed Bonferroni correction (p<4x10\u201304). Heritability (h2) as the proportion of the phenotypic variance caused by SNPs. (B) Plot of Z-scores (ADE versus LTL), restricting to the Hapmap SNPs (~1.2 million) but excluding HLA region. Genome-wide significant SNPs (p<5x10\u201308) for each trait were coloured (CPD in red, SmkInit in dark red, LTL in dark blue, AgeSmk in blue, SmkCes in lightblue, and not genome-wide hits for LTL or any other selected trait in white). Linear regression line was coloured in red.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Upper: the leukocyte telomere length (LTL) variants were derived from the latest genome-wide association study (GWAS) in UK Biobank (UKBB) participants by Codd et al. Genome-wide correlations between LTL and lung cancer related traits were performed. Focus on a subset of LTL variants selected for Mendelian randomisation (MR) framework. Middle: selection of independent SNPs as LTL instrument for causal inference of LTL on lung cancer risk. Explore biological meaning of these variants using colocalisation methods and principal component analyses to summarise gene expression data. Bottom: calculate LTL polygenic risk score (PRS) based on the 144 SNPs and evaluate its association with principal components and epidemiological, and molecular data of lung adenocarcinoma tumours from The Cancer Genome Atlas (TCGA) dataset (TCGA-lung adenocarcinoma [LUAD]).\n\n### MR analyses\n\nFrom the 490 genetic instruments associated with LTL at genome-wide significance (p<5x10\u201308), 144 LTL genetic instruments, that explained ~3.5% of the variance in LTL, and were in low-linkage disequilibrium (r2<0.01) were used in MR analysis (Supplementary file 1a). As a sensitivity analysis, a PRS composed of these genetic instruments was associated with TL estimated from WGS in blood samples across TCGA cohorts (Beta = 0.03, 95%CI = 0.01\u20130.05, p=0.001) but was not associated with TL in tumour material from the same patients (Figure 2\u2014figure supplement 1).\n\nMR analyses demonstrated that longer genetically predicted LTL was associated with increased lung cancer risk (OR = 1.62, 95% CI = 1.44\u20131.84, p=9.91 \u00d7 10\u201315) (Figure 2; Supplementary file 1). Longer LTL conferred the largest increase in risk for lung adenocarcinoma tumours (OR = 2.43, 95% CI = 2.02\u20132.92, p=3.76 \u00d7 10\u201321), but there was limited evidence of a causal relationship for other histologic subtypes, such as squamous cell carcinoma (OR = 1.00, 95% CI = 0.84\u20131.19, p=0.98) and small-cell carcinoma (OR = 1.13, 95% CI = 0.87\u20131.45, p=0.34; Figure 2, Supplementary file 1). However, our study was underpowered to detect an association between lung small-cell carcinoma and LTL at OR of 1.13 and considering alpha type-1 error rate of 5% (Figure 2\u2014figure supplement 1). When stratifying the analyses by smoking status, LTL was associated with lung cancer risk in both never (OR = 2.02, 95% CI = 1.45\u20132.83, p=3.78 \u00d7 10\u201305) and ever smokers (OR = 1.54, 95% CI = 1.34\u20131.76, p=7.75 \u00d7 10\u201310; Figure 2, Supplementary file 1). Evidence for negative pleiotropy (supplementary file 1c) and heterogeneity (supplementary file 1d) was observed for all lung cancer outcomes except for squamous cell carcinoma. However, a significant association for LTL and lung cancer risk was found for methods robust to the significant directional pleiotropy (MR-Egger: lung cancer [OR = 2.35, p=3.37 \u00d7 10\u201313]; lung adenocarcinoma [OR = 4.48, p=7.30 \u00d7 10\u201317]; never smokers [OR = 6.84, p=2.07 \u00d7 10\u201310]; supplementary file 1b). Leave-one-out analyses detected only one outlier, rs7705526 in TERT, resulting in >10% change in MR effect size for associated lung cancer subtypes (supplementary file 1e). MVMR analyses considering instruments related to LTL and WHR, HDL, total triglycerides, systolic blood pressure, smoking, and alcohol intake, as well as multiple traits combined, suggested that the association between LTL and lung adenocarcinoma risk is independent of smoking propensity, obesity-related, and alcohol intake-related traits (supplementary file 1f, 1g).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig2-v1.jpg)\n\n**Figure 2.:** Lung cancer (by histology or by smoking status) risk associations with the LTL instrument from the inverse-variance-weighted MR analyses are expressed as OR per SD increase in genetically predicted LTL. Statistically significant associations with p-values<0.05 (red square). Heterogeneity is estimated by the statistic I2, tau variance of subgroups (\u03c42), and p-values for Cochran\u2019s Q heterogeneity measure.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Telomere length (TL) was measured by Barthel et al. in a subset of high-confident samples from The Cancer Genome Atlas (TCGA) cohorts using whole-genome sequencing (n=655). TL was directly measured in blood and tumour samples, and log(tTL/nTL) were also obtained from several TCGA cohorts. Associations were expressed as beta estimate per SD longer LTL in log scale. p-Values<0.05 (red square). Sex, age at diagnosis, cohort, and principal components of genetic ancestry (PC1-5) were used as covariates in the linear regression model. Heterogeneity is estimated by the statistic I2, tau variance of subgroups (\u03c42), and p-values for Cochran\u2019s Q heterogeneity measure. (B) Power calculation by lung cancer strata considering a variance explained by the LTL instrument of 3.5% and alpha type-1 error rate of 5%.\n\n### Colocalisation analyses\n\nWe investigated whether there was evidence of shared genetic signals between LTL and lung adenocarcinoma at loci centred on the 144 genetic instruments used in MR analyses using colocalisation methods (Figure 3A, supplementary file 1h). Loci with evidence of colocalisation between LTL and lung adenocarcinoma tended to be near genes that encode telomerase subunits and its associated complex, including genetic variants at TERT (5p15.33; rs116539972, rs7705526, rs61748181, rs71593392, and rs140648021), TERC (3q26.2; rs12638862 and rs146546514), and OBFC1 (10q24.33; rs9419958 and rs139122544). Several colocalised loci mapped to genes that have not been previously linked to lung cancer risk at genome-wide significant level: MPHOSPH6 (16q23.3; rs2303262), PRPF6 (20q13.33; rs80150989), and POLI (18q21.2; rs2276182). Other telomere maintenance genes showed limited evidence of colocalisation with lung adenocarcinoma (i.e. TERF1 and PIF1). For instance, while the RTEL1 locus (20q13.33: rs117238689, rs115610405, rs35640778, and rs35902944) harboured variants associated with both LTL and lung adenocarcinoma (Figure 3\u2014figure supplement 1), these signals appeared to be distinct and independent of each other (avg_PP3=0.999, avg_PP4=0.001; Figure 3A, supplementary file 1h).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig3-v1.jpg)\n\n**Figure 3.:** (A) Distribution of the average posterior probability for shared genetic loci between LTL and lung adenocarcinoma, highlighting in orange the telomere maintenance loci that colocalised (avg_PP4\u22650.70) and in blue the ones where there was limited evidence for colocalisation (avg_PP4<0.70). Dashed red line represents the arbitrary avg_PP4 cutoff of 0.70. Representative stack plots for the multi-trait colocalisation results within (B) MPHOSPH6 and (C) OBFC1 loci, centred on a 150 kb LD window of rs2303262 and rs9419958 variants, respectively. Left Y-axis represents the \u2013log10(p-values) of the association in the respective genome-wide association study for a given trait. The right Y-axis represents the recombination rate for the genetic loci. The X-axis represents the chromosome position. SNPs are coloured by the linkage disequilibrium correlation threshold (r2) with the query labelled SNP in European population. Sentinel SNPs within the defined LD window were labelled in each trait.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Z-score plots for genetically predicted LTL and lung adenocarcinoma risk for the four LTL variants annotated for RTEL1. The genetic variants were coloured by the linkage disequilibrium correlation threshold (r2) with the query labelled SNP in a defined LD window of 150 kb centred on the query SNP in European populations. Z-score defined as the beta estimate divided by SE for each SNPs in the respective genome-wide association study.\n\nWe further evaluated whether the loci colocalised between LTL and lung adenocarcinoma also shared genetic signals with other traits related to lung cancer susceptibility (supplementary file 1i). Multi-trait analyses at the 16q23.3 locus colocalised rs2303262 with MPHOSPH6 expression in lung tissue, FVC and FEV1, but not with any of the traits related to smoking behaviour (p=0.72; Figure 3B, supplementary file 1i). We additionally identified evidence of colocalisation (p=0.74) between lung adenocarcinoma, LTL, and gene expression in lung epithelial cells for two variants at the OBFC1 locus: rs139122544 and rs9419958 (Figure 3C, supplementary file 1i).\n\n### Genetically predicted LTL association with tumour features\n\nWe investigated the impact of genetically predicted LTL on lung adenocarcinoma tumour features by estimating molecular expression patterns within 343 lung adenocarcinomas tumours using principal component analysis in RNA-sequencing data. The first five components explained ~54% of the observed variance in the RNA-sequencing data (Figure 4, Figure 4\u2014figure supplement 1). To explore the biological meaning of the five components, we performed pathway analyses for the top 500 genes with the highest loadings in each component (supplementary file 1j, supplementary file 1k). Overall, the genes correlated with each component tended to be enriched for specific cell signaling pathways (PC1: RNA processing; PC2: cell-cycle; PC3: metabolic processes; PC4: immune response; PC5: cellular response to stress and DNA damage; false discovery rate <5%; supplementary file 1l).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig4-v1.jpg)\n\n**Figure 4.:** (A) LTL PRS association with the first five principal components based on RNA-sequencing data of lung adenocarcinomas tumours (n=343). Results are expressed as beta estimate per SD increase in genetically predicted LTL. Linear regression model adjusted by sex, age, smoking status, and PC1-5 (genetic ancestry) covariates. Statistically significant associations with p-values<0.05 (red square). (B) Heatmap representing the correlations among PC2 and selected molecular features related to telomere length canonical roles. LTL = leukocyte telomere length; PRS = polygenic risk score; PC = principal component; TMB = tumour total mutation burden; HRD = homologous recombination deficiency, SBS (single base substitution DNA mutational signatures). SBS1 and SBS5 are DNA mutational signatures associated with age-related processes, and SBS4 is associated with tobacco smoking exposure. X-shaped marker to cross correlations with p-value>0.05.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The RNA sequencing data from 343 primary lung adenocarcinoma tumour samples were retrieved. (A) Principal components analysis was applied to the centred log-transformed gene read counts, and the first five principal components were represented, which explained 53.5% of the variance in the gene expression for those samples. (B) The distributions of the first five principal components are represented in the density plots.\n\nWe then tested the association between the PRS composed of the 144 genetic instruments selected for MR analysis and the five components of gene expression within lung adenocarcinoma tumours (Figure 4A). The LTL PRS was positively associated with the second component (PC2) of tumour expression (Beta = 0.17, 95% CI = 0.12\u20130.19, p=1.0 \u00d7 10\u20133; Figure 4A). In multivariate analysis, higher values of PC2 tended to be associated with patients older at diagnosis (p=0.001), female (p=0.005), being never smokers (p=0.04), and diagnosed with early-stage tumours (p=0.002; Table 1). PC2 was also highly correlated with gene expression-based measure of cell proliferation and several genomic features related to genomic stability (Figure 4B). In multivariate analysis, higher values of PC2 were associated with reduced tumour proliferation (p=3.7 \u00d7 10\u201330), lower somatic copy number alternations (p=1.6 \u00d7 10\u201305), and higher tumour telomerase activity scores (p=1.6 \u00d7 10\u20135). Multivariate analysis also indicated that LTL PRS remained an independent predictor of PC2 when considering these genomic features (p=0.009; Table 1). It is noteworthy only nominal associations between LTL PRS and above-mentioned features and none remained statistically significant after correction for multiple testing (supplementary file 1m). We next inferred the gene expression signature of PC2, based on 10 genes informative of this component selected by the LASSO regression models, in both lung adenocarcinoma (TCGA-LUAD) and squamous cell carcinoma (TCGA-LUSC) cohorts (Figure 5, Figure 5\u2014figure supplement 1). The association between LTL PRS and inferred PC2 was observed in TCGA-LUAD (p=0.001) but not in TCGA-LUSC (p=0.729) cases (Figure 5A). The inferred PC2 signature levels were higher in TCGA-LUAD than in TCGA-LUSC (Figure 5B), while higher proliferation rate (Figure 5C, p=1.45 \u00d7 10\u2013141) and TERT activity (Figure 5D, p=1.36 \u00d7 10\u201320) were observed in TCGA-LUSC than in TCGA-LUAD cases. Of note, the low RNA levels of the telomere-related genes (less than five read counts), such as TERT and TERC, in both TCGA-LUAD and TCGA-LUSC tumour samples limited the direct comparison of these genes between these cohorts.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig5-v1.jpg)\n\n**Figure 5.:** (A) Leukocyte telomere length (LTL) polygenic risk score (PRS) association with the 10-gene expression signature of PC2 in lung adenocarcinoma (The Cancer Genome Atlas [TCGA]-LUAD, N=343) and squamous cell carcinoma (TCGA-LUSC, N=338) cases from TCGA dataset. Results are expressed as beta estimate per SD increase in genetically predicted LTL. Linear regression model adjusted by sex, age, and PC1-5 (genetic ancestry) covariates, PC2 signature as outcome. Statistically significant associations with -values<0.05. Values per SD of (B) PC2, (C) proliferation score, and (D) telomerase/TERT activity gene expression signatures by lung cancer histological subtypes (TCGA-LUAD and TCGA-LUSC). p-Values derived from Student\u2019s t-tests.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Workflow for the generation of the PC2 signature. Calculate principal components based on RNA-sequencing data in both The Cancer Genome Atlas (TCGA)-lung adenocarcinoma (LUAD) training (N=255, 70%) and validation (N=108, 30%) datasets and use partial least square (PLS)-based method to align principal components (upper). Select the most informative genes correlated with the observed PC2 in the training dataset using least absolute shrinkage and selection operator (LASSO) regression model and validate it in the validation set (middle). Apply the PC2 signature to the TCGA-LUSC (lung squamous cell carcinoma) and TCGA-LUAD cohorts. (B) The ranked absolute coefficients/importance of the 10 genes selected by the LASSO models. Negative coefficients in red and positive ones in blue. (C) Scatter plot for the correlations between PC2 gene expression signature and observed principal components (PC1-5) based on RNA-sequencing data in the validation set. PC1 in light blue, PC2 in red, PC3 in grey, PC4 in blue, and PC5 in salmon colours.\n\n**Table 1.**\n Association between PC2 (outcome) and lung adenocarcinoma tumour features in univariate and multivariate models (n=343).\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"5\">Non-molecular features</th>\n      <th colspan=\"2\"></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Predictors</td>\n      <td colspan=\"2\">Univariate model</td>\n      <td colspan=\"2\">Multivariate model</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>OR/Beta (SE)</td>\n      <td>p-value</td>\n      <td>OR/Beta (SE)</td>\n      <td>p-value</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Age at diagnosis*</td>\n      <td>0.17\u00b10.05</td>\n      <td>0.001</td>\n      <td>0.17\u00b10.05</td>\n      <td>0.001</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Gender (male)\u2020</td>\n      <td>0.73\u00b10.11</td>\n      <td>0.005</td>\n      <td>0.74\u00b10.11</td>\n      <td>0.005</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Smoking status (ever)\u2020</td>\n      <td>0.67\u00b10.16</td>\n      <td>0.013</td>\n      <td>0.72\u00b10.15</td>\n      <td>0.035</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Tumour stage (late)\u2020</td>\n      <td>0.67\u00b10.13</td>\n      <td>0.002</td>\n      <td>0.67\u00b10.13</td>\n      <td>0.002</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Molecular features</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Predictors</td>\n      <td colspan=\"2\">Univariate model</td>\n      <td colspan=\"2\">Multivariate model</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Beta (SE)</td>\n      <td>p-value</td>\n      <td>Beta (SE)</td>\n      <td>p-value</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>LTL PRS \u2021</td>\n      <td>0.17\u00b10.05</td>\n      <td>0.001</td>\n      <td>0.10\u00b10.04</td>\n      <td>0.009</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Telomerase activity</td>\n      <td>\u20130.37\u00b10.05</td>\n      <td>9.34E-13</td>\n      <td>0.25\u00b10.06</td>\n      <td>1.32E-05</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Proliferation</td>\n      <td>\u20130.69\u00b10.04</td>\n      <td>3.30E-46</td>\n      <td>\u20130.80\u00b10.06</td>\n      <td>3.66E-30</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Copy number alteration</td>\n      <td>\u20130.41\u00b10.05</td>\n      <td>6.36E-16</td>\n      <td>\u20130.23\u00b10.05</td>\n      <td>1.62E-05</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Homologous recombination deficiency</td>\n      <td>\u20130.4\u00b10.05</td>\n      <td>8.32E-15</td>\n      <td>0.12\u00b10.06</td>\n      <td>0.048</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Tumour total mutation burden</td>\n      <td>\u20130.28\u00b10.05</td>\n      <td>1.37E-07</td>\n      <td>\u20130.09\u00b10.24</td>\n      <td>0.695</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>SBS1</td>\n      <td>\u20130.18\u00b10.05</td>\n      <td>0.001</td>\n      <td>0.01\u00b10.05</td>\n      <td>0.827</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>SBS4</td>\n      <td>\u20130.24\u00b10.05</td>\n      <td>6.36E-06</td>\n      <td>0.04\u00b10.18</td>\n      <td>0.814</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>SBS5</td>\n      <td>\u20130.27\u00b10.05</td>\n      <td>4.84E-07</td>\n      <td>0.03\u00b10.09</td>\n      <td>0.770</td>\n      <td colspan=\"2\"></td>\n    </tr>\n  </tbody>\n</table>\n\n_SBS (single base substitution DNA mutational signatures); LTL = leukocyte telomere length; PC = principal component; PRS = polygenic risk score.*age of diagnosis represented as beta estimate per 1 unit of SD.\u2020OR per 1 unit of SD.\u2021LTL PRS is adjusted by first five PC of genetic ancestry in the univariate model._\n\n## Discussion\n\nThe maintenance of telomere length is one of the hallmarks of cancer, being critical for cell proliferation and genome integrity (Hanahan and Weinberg, 2011). Individual differences in telomere length, measured either directly or indirectly by germline determinates, have been linked with multiple diseases, including cancer susceptibility (Codd et al., 2021). The measurement of LTL within the UKBB has provided a resource for the development of a more powerful set of genetic instruments that capture a greater proportion of variation in LTL compared to previous studies (Codd et al., 2021). We applied genetic determinants of LTL to the largest GWAS of lung cancer to further characterise the role of telomere maintenance in lung cancer aetiology.\n\nUsing an MR analysis framework, we confirmed the previously reported relationship between genetically predicted longer LTL and increased risk of lung cancer. Our expanded genetic instrument detected systematic negative pleiotropy, which has not been observed in previous MR studies (Zhang et al., 2015; Haycock et al., 2017; Kachuri et al., 2019). Correcting for this pervasive directional bias resulted in substantially larger effects of LTL on risk of lung adenocarcinoma and lung cancer in never smokers, implying that LTL may even be more important to these phenotypes than previously estimated (Zhang et al., 2015; Haycock et al., 2017; Kachuri et al., 2019). Our observations in never smokers were also supported by multivariate MR analyses where adjustment for smoking did not attenuate the effect of LTL on lung cancer susceptibility. We used MVMR analysis (Sanderson et al., 2019) to assess the potential that factors, such as BMI, smoking, alcohol use, and other obesity related factors, may account for the association between LTL and lung cancer. While the influence of alternative unknown potential confounding factors cannot be excluded, the association of LTL with lung cancer risk was materially unaltered following adjustment for a range of potential confounders considered in our MVMR analyses.\n\nColocalisation analyses for the variants selected as the MR genetic instrument highlighted shared genetic signals between LTL and lung adenocarcinoma, including loci near genes related to telomere length maintenance (TERT, TERC, and OBFC1) and three genetic loci not previously linked to lung cancer susceptibility (POLI, PRPF6, and MPHOSPH6). The lung cancer risk allele of the MPHOSPH6 sentinel variant (rs2303262) was associated with longer LTL, reduced pulmonary function, and increased MPHOSPH6 gene expression in lung tissue. MPHOSPH6 encodes an enzyme associated with the RNA exosome complex where it modulates RNA binding activity. PRPF6 in 20q13.33 is involved in androgen binding and has been shown to promote colon tumour growth via preferential splicing of genes involved in proliferation (Adler et al., 2014). POLI is a member of the Y-family of DNA damage-tolerant polymerases involved in translesion synthesis (McIntyre, 2020). As part of its role in DNA repair and replication stress, POLI interacts with TP53 to bypass barriers during DNA replication, which may confer a pro-survival effect to stem cells and cancer cells (Guo et al., 2021).\n\nDespite the limited evidence of colocalisation between several loci important for telomere maintenance and lung cancer, the MR analyses restricting to the non-colocalised LTL SNPs pointed out that these loci might lie in the same causal pathway of LTL and lung cancer, highlighting the heterogeneity in the genetic effects of LTL loci.\n\nWe additionally identified the relationship between genetic determinants of LTL and a specific gene expression component in lung adenocarcinoma tumours. The aspect of this component associated with longer LTL was also associated with demographic and clinical features, such as never smoking, female, and early-stage tumours compared with other lung adenocarcinoma patients, which is an interesting but not completely understood lung cancer strata. This expression component also tended to be related to genomic features related to genomically stable tumours and strikingly associated with cell proliferation score, implying that this component might be a proxy for this feature. These results appear consistent with the canonical role of telomere length in preserving genome stability and cell proliferation (de Lange, 2009).\n\nA plausible explanation for why long LTL was associated with an increased risk of lung cancer might be that individuals with longer telomeres have lower rates of telomere attrition compared to individuals with shorter telomeres. Given a very large population of histologically normal cells, even a very small difference in telomere attrition would change the probability that a given cell is able to escape the telomere-mediated cell death pathways (Aviv et al., 2017). Such inter-individual differences could suffice to explain the modest lung cancer risk observed in our MR analyses. However, it is not clear why longer TL would be more relevant to lung adenocarcinoma compared to other lung cancer subtypes. A suggestion may come from our observation that longer LTL is related to genomically stable lung tumours (such as lung adenocarcinomas in never smokers and tumours with lower proliferation rates) but not genomically unstable lung tumours (such as heavy smoking related, highly proliferating lung squamous carcinomas). One possible hypothesis is that histologic normal cells exposed to highly genotoxic compounds, such as tobacco smoking, might require an intrinsic activation of telomere length maintenance at early stages of carcinogenesis that would allow them to survive, and therefore, genetic differences in telomere length are less relevant in these cells. By contrast, in more genomically stable lung tumours, where TL attrition rate is more modest, the hypothesis related to differences in TL length may be more relevant and potentially explain the heterogeneity in genetic effects between lung tumours. Alternately, we also note that the cell of origin may also differ, with lung adenocarcinoma postulated to be mostly derived from alveolar type 2 cells, the squamous cell carcinoma is from bronchiolar epithelium cells (Sainz de Aja et al., 2021), possibly suggesting that LTL might be more relevant to the former.\n\nOne surprising finding from the genetic analysis was that despite the robust and large effects of LTL on lung cancer risk observed in the MR analyses, the genetic correlation between LTL and lung cancer was effectively null. The LDSC approach considers genetic variants across the entire genome, whereas the MR approach preferentially selects variants based on their association with LTL, restricting to those that achieved genome-wide significance. One possibility for the lack of genetic correlation between LTL and lung cancer is that genetic variants may differ in the direction that they influence these traits, and we used the smoking behaviour traits to exemplify that. For example, the subgroup of genetic variants noted at genome-wide significance from LTL studies was associated with increased LTL and lung cancer risk. However, the subgroup related to smoking behaviours which, in turn, are linked with increased lung cancer risk, tends to decrease LTL. If such opposing effects were widespread across the genome, it could account for the lack of genetic correlation between LTL and lung cancer estimated by LDSC and highlights the complex nature of the genetic variants that determine LTL and lung cancer risk.\n\nSome limitations of this study should be acknowledged. A limited sample size might have limited the detection of an association between lung small-cell carcinoma and LTL. Our colocalisation approach is generally more conservative and may fail to accurately determine the posterior probability for shared genetic signals in the presence of multiple independent associations in a given locus (Hukku et al., 2021), which may be a reasonable explanation for the lack of colocalisation observed at RTEL1 locus, and we stress that many of the variants that are COLOC negative are likely to be associated with lung cancer. Furthermore, the relatively small sample size of the lung adenocarcinoma cohort from TCGA may have reduced the power of our study, and larger cohorts of expression profiles tumours will be necessary to validate and explore some of our findings. The potential limitations such as collider bias within the lung adenocarcinoma case only study design should also be considered.\n\nIn conclusion, we describe an association between long genetically predicted LTL and lung cancer risk, which provides insights into how telomere length influences the genetic basis of lung cancer aetiology, including never smoking and female lung adenocarcinoma, which is an enigmatic subset of lung cancer. By using a novel framework to explore the biological implications of genetically complex traits, we unravel one gene expression component, highly correlated with proliferation rate score and other genomic stability-related features, associated with LTL in lung adenocarcinoma tumours. As far as we are aware, this is the first time an association between a PRS related to an aetiological factor, such as telomere length, and a particular expression component in the lung tumours is reported. Our findings suggest that lung adenocarcinoma patients with longer LTL might have more genomically stable tumours than the ones with shorter LTL, shedding some light on telomere biology in those tumours.\n",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "cca9352b-a9c7-4e08-b2f6-7f76958ce62b",
+      "submission_id": "d862bf1c-576b-47c3-8887-ed9c9c62f966",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nicholas E Banovich, https://ror.org/02hfpnk21 Translational Genomics Research Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83118.sa0](https://doi.org/10.7554/eLife.83118.sa0)\n\nThis study is of interest to epidemiologists and geneticists studying the association between telomere length and lung cancer risk. This work provides useful insight into risk factors for lung cancer. Overall, the results of this study are solid, as the genetic instrument used here is better powered and the battery of Mendelian randomization analysis makes this broad set of results convincing compared to previous work.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Nicholas E Banovich, https://ror.org/02hfpnk21 Translational Genomics Research Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83118.sa1](https://doi.org/10.7554/eLife.83118.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Common genetic variations in telomere length genes and lung cancer: a Mendelian Randomization study and its novel application in lung tumor transcriptome\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Ben Voight (Reviewer #2).\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another. What follows below is the Reviewing Editor's edited compilation of the essential and ancillary points provided by reviewers in their critiques and in their interaction post-review. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you attempt to amend or expand the text to clarify the narrative accordingly.\n\nEssential revision:\n\nThe reviewers provided a set of critiques that are manageable in scale. Please respond to all of the reviewer comments.\n\nReviewer #1 (Recommendations for the authors):\n\nFigures are difficult to read as they are poor resolution.\n\nReviewer #2 (Recommendations for the authors):\n\n1. Resolution is not great on some of the figures \u2013 made reading them a little bit hard. I trust the authors will provide higher-resolution versions in the proofing phases!\n\n2. Figure 1B \u2013 Not sure what this overall means/how to be interpreted \u2013 I think this is too much data plotted on the same figure for my taste.\n\n3. I think the authors should create a supplementary table that enumerates the list of SNPs used for their instrument, along with annotated info about the SNP (pos, alleles, allele frequency), effect estimate, p-value report; then, for each SNP, the relevant outcome data of interest in the paper (effect sizes, se, P-value). That way, it is perfectly clear what SNPs are used and what estimated effects are used as input for MR experiments.\n\n4. I'm a little confused about the colocalization analysis:\n\na. Suppl. Table 6: it looks to me like there are annotation mislabelling issues.\n\nb. Also it isn't clear in this table which LTL loci have /any/ evidence of lung cancer association, i.e., PP1/2 vs. PP3.\n\nFor these, suggest checking the table and adding a column for the top lung cancer association (and SNP) in the interval tested by coloc.\n\nc. But also confusing somewhat that there appear to be multiple TERT signals and those with colocalization but are basically on top of one another whilst still being LD independent (e.g., rs61748181 and rs33977403).\n\nOverall here it looks like there may be some differences between genetic variants selected at this locus compared between Codd et al. and here. It could be these choices make sense and are reasonable, but might be worth looking back at differences to see if different choices drive the results they see.\n\n5. In methods describing the Lung cancer data, are histologic data a complete subset of the overall data? It looks like there are shared controls (? a small limitation if so), but why is the number of controls in two strata greater than the overall? The cases totals are also less than overall, are 'lost' cases here simply because a subtype isn't specified? Perhaps the authors can clarify this a bit in methods.\n\n6. Given the sample size differences, what effect sizes were the authors powered to observe in the Lung Squamous cell carcinoma and Lung Small Cell Carcinoma groups? Should this be interpreted as a false negative due to lack of power OR were the authors reasonably powered to observe (say) the estimated effect size overall in the univariate or epidemiological correlation data (but failed to see that effect), consistent with apparent heterogeneity in these strata?\n\n7. As the author indicates, the MR Egger results (Table S2) suggest substantial 'negative' confounding. This is a little confusing \u2013 in my experience, I have seen negative confounding for sure previously, but this is probably some of the stronger effects that I've seen before. I don't have any great advice about how to look at this in detail, other than perhaps through MVMR, or by looking carefully at the IV regression plot to see if there are outliers that are somehow strongly influencing MR-Egger.\n\n8. Inclusion of an epidemiological correlational data baseline between LTL >> lung cancer to compare to the MR estimates would also add value.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Common genetic variations in telomere length genes and lung cancer: a Mendelian Randomization study and its novel application in lung tumour transcriptome\" for further consideration by eLife. Your revised article has been evaluated by a Senior Editor and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nNew revisions required:\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have responded to most comments reasonably.\n\nHowever, I still have some concerns about the given report. I know the collection of these points below are a little extra work -- I am honestly not trying to \"add on\" but do think these experiments are important to bring out the robustness of the author's claim, add value to the extant literature, and interpretation at these key points around the MR they describe.\n\n1. First, focused around my original comment #2 (in the author's response, their point #6) on multivarible MR experiments. To my point that there are actually multiple potential confounders \u2013 including smoking, BMI, and waist-hip ratio that could potentially confound the interpretation that LTL explains the lung-cancer associations, the authors performed one experiment focused on BMI. They note that for each cancer trait there appears to be no impact on their primary association between LTL and Lung cancer data when considering BMI.\n\nHowever, what they present is still a bit inadequate from my point of view, in the following ways.\n\n1a. The authors perform a form of this MVMR which is a little 'less' good in my view for this -- they build a new instrument based on SNPs ascertained for association with BMI, and then include that in the MVMR regression analysis. This is not how I would do this -- this result describes a \"joint\" model for the effect of exposures (BMI, LTL) on outcome (Lung cancer). This version does not regress out any potential association of the SNPs *selected for association with LTL* has with the potential confounder. In this case, if the LTL variants had strong association with the confounder (e.g., BMI), I don't think that this would be fully accounted for.\n\nInstead, the authors should take the n=144 SNPs selected for the LTL instrument, identify associations from extant data with the putative confounder of interest (e.g., BMI), create an instrument for the genetically mediated effects of that confounder, and include that as an instrument for covariate confounding.\n\nI.e., \"regress out\" any effect that the LTL instrument might have on the confounder, and report adjusted effects of the LTL instrument on cancer risk.\n\nYes: this may NOT be a very strong instrument for the confounder -- but that's not the point here. The point is to determine the effect of genetically mediated LTL on cancer adjusting for any effect that instrument the authors built for it has on the confounder.\n\n1b. Furthermore, considering a single confounder here is really suboptimal. As indicated in the previous comments and as the authors know, smoking behavior and other anthropomorphic measures (e.g., waist-hip ratio) are also correlated with everything here. So the authors should really consider an expanded list of confounders for this to be clearly convincing that LTL really does operate as a causal exposure independently of these other risk factors.\n\n1c. In addition to experiments that are pairwise, they should also consider performing an experiment with all potential confounders included in the model\n\nCancer ~ LTL + BMI + WHR + SMOKING + \u2026..\n\nI.e., can the authors convincingly demonstrate that the observed relationship between LTL and these lung cancer outcomes is not explained by a battery of obvious confounders individually or as a collective\n\n1d. As suggested earlier \u2013 I think value and novelty would be added if the authors really took this on and explored this space a bit more -- look hard and think carefully about what confounders really *COULD* explain this result and work hard to refute that those could explain these observations\n\nI do think a robust set of experiments should be included in the primary report beyond smoking, either way (in the supplement). I think the authors report the BMI result in the rebuttal response to me but don't add those back to the paper. I'd honestly like to see a healthy version of that added to the paper, but that's my taste on this point.\n\n2. On my previous point #4 (in the rebuttal, point #8), I asked the authors to consider a subset MR analysis which focused on those where the genes/signals map quite obviously on known telomere length biology and represent some of the strongest signals. The authors respond that they can't actually do this analysis, suggesting that using the data for co-localization somehow invalidates an MR sub-set analysis.\n\nI thought about this a little bit and while I admit that I can be daft sometimes I honestly do not understand what basis \u2013 empirical or theoretical \u2013 this argument has to somehow drive positive or negative biases here, i.e., why they need an \"out of sample\" set to perform the MR after they used this data to perform colocalization. If there's specific literature or reasoning the authors would like to articulate this in more detail, that would certainly be appreciated!\n\nMy intuition is that this actually isn't much of an issue -- performing subset analyses for different reasons (biological or otherwise) is actually pretty reasonable and there are MR methods that actually try to cluster / subset instruments used.\n\nThis all goes to interpretation and as a sensitivity analysis -- if the result is driven entirely by variation at TERT, TERC, OBFC1 but not obviously by other variation that influences telomere length, then I personally think that is worth trying to understand and report. Analytically, this is a *trivial* experiment to perform in the UVMR space.\n\n3. Regarding the rebuttal point #13, which involved my point about power for discovery in the subset given the sample size, the authors state that there are sample size difference but then write something about confidence intervals overlapping that I don't quite understand.\n\nWhat I think the authors SHOULD do with respect to the tumor histology analysis is to report a credible set based on power calculation which determine what range of causal effect sizes the Lung Squamous CC and Lung Small CC were powered to discover (at an \u03b1 type-1 error rate) of 5% and/or 1%, say, given the instruments used and sample sizes involved here.\n\nThis is actually a very easy thing to do analytically with some assumptions \u2013 back of envelope -- you could check out what formula I pulled together in PMID: 25165093 to get the distribution under the alternative; I believe there are also MR power calculators out there as web tools. You easily do this with some R calculations in a straight forward way.\n\nI think the authors should be able to articulate is that effect sizes (say) of OR=1.6 or better would be discoverable in those lung cell subsets that basically catch the null hypothesis. Or, that those sets were well powered to discover ORs that were even smaller than that. This would then give you a quantitative assessment that this isn't simply a false-negative result, but that there is putative heterogeneity here. But if they are small enough that they AREN'T particularly well powered, then that's a pretty important interpretive point on this plot.\n",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2a9ece2f-2daf-4219-a045-a6ea82ff608f",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C1",
+      "claim": "Genome-wide association studies (GWASs) have identified genetic susceptibility variants for leukocyte telomere length (LTL).",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide association studies (GWASs) have identified genetic susceptibility variants for both leukocyte telomere length (LTL) and lung cancer susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established background knowledge from prior GWAS studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "f1c0dc11-63ad-4b75-8ea0-941031cc2292",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C2",
+      "claim": "Genome-wide association studies (GWASs) have identified genetic susceptibility variants for lung cancer susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide association studies (GWASs) have identified genetic susceptibility variants for both leukocyte telomere length (LTL) and lung cancer susceptibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established background knowledge from prior GWAS studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "795019a2-d09f-463e-ad20-e0b73ddd721b",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C3",
+      "claim": "There was no genome-wide genetic correlation between LTL and lung cancer risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there was no genome-wide genetic correlation between LTL and lung cancer risk, longer LTL conferred an increased risk of lung cancer regardless of smoking status in the MR analyses, particularly for lung adenocarcinoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is reported in the abstract as a result from the genetic correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "35a0e4ea-a955-4fcd-b079-9f2515d744ac",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C4",
+      "claim": "Longer LTL conferred an increased risk of lung cancer regardless of smoking status in the MR analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there was no genome-wide genetic correlation between LTL and lung cancer risk, longer LTL conferred an increased risk of lung cancer regardless of smoking status in the MR analyses, particularly for lung adenocarcinoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the Mendelian randomisation analyses conducted in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "4c027fab-1fc5-4c91-b583-f9b4c4eae02a",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C5",
+      "claim": "Longer LTL particularly conferred an increased risk of lung adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there was no genome-wide genetic correlation between LTL and lung cancer risk, longer LTL conferred an increased risk of lung cancer regardless of smoking status in the MR analyses, particularly for lung adenocarcinoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the Mendelian randomisation analyses conducted in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "238bccf6-5585-4bba-a953-597cea642188",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C6",
+      "claim": "Of the 144 LTL genetic instruments, 12 colocalised with lung adenocarcinoma risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 144 LTL genetic instruments, 12 colocalised with lung adenocarcinoma risk and revealed novel susceptibility loci, including MPHOSPH6, PRPF6, and POLI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the colocalisation analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "e53583c3-20fa-4ce4-9bf4-f6e82c1f6025",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C7",
+      "claim": "Colocalisation analyses revealed novel susceptibility loci including MPHOSPH6, PRPF6, and POLI.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 144 LTL genetic instruments, 12 colocalised with lung adenocarcinoma risk and revealed novel susceptibility loci, including MPHOSPH6, PRPF6, and POLI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the colocalisation analyses performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "1fb11703-1b48-435c-ac37-b0615989e982",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C8",
+      "claim": "The polygenic risk score for LTL was associated with a specific gene expression profile (PC2) in lung adenocarcinoma tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "The polygenic risk score for LTL was associated with a specific gene expression profile (PC2) in lung adenocarcinoma tumours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the PRS analysis in TCGA lung adenocarcinoma samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "5f47b845-52da-4886-ac0c-e9168f5b45c5",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C9",
+      "claim": "The aspect of PC2 associated with longer LTL was also associated with being female.",
+      "claim_type": "EXPLICIT",
+      "source": "The aspect of PC2 associated with longer LTL was also associated with being female, never smokers, and earlier tumour stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of PC2 associations with clinical features in TCGA samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "a1f6ce42-a2d4-4f24-85d1-0a50a3fbf47a",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C10",
+      "claim": "The aspect of PC2 associated with longer LTL was also associated with never smokers.",
+      "claim_type": "EXPLICIT",
+      "source": "The aspect of PC2 associated with longer LTL was also associated with being female, never smokers, and earlier tumour stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of PC2 associations with clinical features in TCGA samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "05f3e399-8494-4af1-9a94-6cb3ff8dc8cf",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C11",
+      "claim": "The aspect of PC2 associated with longer LTL was also associated with earlier tumour stages.",
+      "claim_type": "EXPLICIT",
+      "source": "The aspect of PC2 associated with longer LTL was also associated with being female, never smokers, and earlier tumour stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of PC2 associations with clinical features in TCGA samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "4d754a17-9045-4099-aa3c-c46566e8773f",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C12",
+      "claim": "PC2 was strongly associated with cell proliferation score.",
+      "claim_type": "EXPLICIT",
+      "source": "PC2 was strongly associated with cell proliferation score and genomic features related to genome stability, including copy number changes and telomerase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of PC2 associations with molecular features in TCGA samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "6a525eef-0aa4-4aa5-849f-11e7cff559c5",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C13",
+      "claim": "PC2 was strongly associated with genomic features related to genome stability, including copy number changes.",
+      "claim_type": "EXPLICIT",
+      "source": "PC2 was strongly associated with cell proliferation score and genomic features related to genome stability, including copy number changes and telomerase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of PC2 associations with molecular features in TCGA samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "dba7e5dc-1c6d-4c89-bbfc-2b1cad520c6b",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C14",
+      "claim": "PC2 was strongly associated with genomic features related to genome stability, including telomerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "PC2 was strongly associated with cell proliferation score and genomic features related to genome stability, including copy number changes and telomerase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of PC2 associations with molecular features in TCGA samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "aa17bc24-e28b-4d8e-8e37-ab177020e86d",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C15",
+      "claim": "Telomeres are a complex of repetitive TTAGGG sequences and nucleoproteins located at the end of chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomeres are a complex of repetitive TTAGGG sequences and nucleoproteins located at the end of chromosomes and have an essential role in sustaining cell proliferation and preserving genome integrity (de Lange, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about telomere structure, supported by citation to de Lange, 2009.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "486bf5d6-cc3e-4dad-8373-0d5cf605dc1b",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C16",
+      "claim": "Telomeres have an essential role in sustaining cell proliferation and preserving genome integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomeres are a complex of repetitive TTAGGG sequences and nucleoproteins located at the end of chromosomes and have an essential role in sustaining cell proliferation and preserving genome integrity (de Lange, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about telomere function, supported by citation to de Lange, 2009.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "f480f266-5210-4e75-b075-3a938f386129",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C17",
+      "claim": "Telomere length progressively shortens with age in proliferative somatic cells due to incomplete telomeric regions replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomere length progressively shortens with age in proliferative somatic cells due to incomplete telomeric regions replication (Watson, 1972) and low activity of the telomerase TERT in adult cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about telomere shortening, supported by citation to Watson, 1972.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "89d8f87d-edd5-4a5e-a122-c49a35334023",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C18",
+      "claim": "Telomere length progressively shortens with age in proliferative somatic cells due to low activity of the telomerase TERT in adult cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomere length progressively shortens with age in proliferative somatic cells due to incomplete telomeric regions replication (Watson, 1972) and low activity of the telomerase TERT in adult cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about telomere shortening mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "67028102-5d5b-4694-86f6-28b04bb3aa02",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C19",
+      "claim": "The shortening of the telomere length results in cell cycle arrest in somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The shortening of the telomere length results in cell cycle arrest, cellular senescence, and apoptosis in somatic cells (Harley et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about consequences of telomere shortening, supported by citation to Harley et al., 1990.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "3400485a-7d6c-4758-b706-f3e5cfd62c24",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C20",
+      "claim": "The shortening of the telomere length results in cellular senescence in somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The shortening of the telomere length results in cell cycle arrest, cellular senescence, and apoptosis in somatic cells (Harley et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about consequences of telomere shortening, supported by citation to Harley et al., 1990.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "1699f337-8b80-43d3-88a4-f2d7b9d530c4",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C21",
+      "claim": "The shortening of the telomere length results in apoptosis in somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The shortening of the telomere length results in cell cycle arrest, cellular senescence, and apoptosis in somatic cells (Harley et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about consequences of telomere shortening, supported by citation to Harley et al., 1990.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "2b0e4b0b-8842-44ed-a7e6-c4d09b383fae",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C22",
+      "claim": "The maintenance of telomere length, which allows cancer cells to escape the telomere-mediated cell death pathways, is one feature related to the hallmarks of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The maintenance of telomere length, which allows cancer cells to escape the telomere-mediated cell death pathways, is one feature related to the hallmarks of cancer (Hanahan and Weinberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about telomere maintenance in cancer, supported by citation to Hanahan and Weinberg, 2011.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "12d04625-bf68-4f5d-936e-7b42bbebcea5",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C23",
+      "claim": "Telomere length appears to vary between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomere length appears to vary between individuals and has been studied in relation to many diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about inter-individual variation in telomere length.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "e1db105c-171d-4c69-96ec-dc0397988d09",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C24",
+      "claim": "Telomere length has been studied in relation to many diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomere length appears to vary between individuals and has been studied in relation to many diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about telomere length research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "c063984b-b676-47ac-9410-09202e50920b",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C25",
+      "claim": "In observational studies, telomere length is measured as the average length of telomeric sequences in a given tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In observational studies, telomere length is measured as the average length of telomeric sequences in a given tissue (Montpetit et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the measurement approach in observational studies, supported by citation to Montpetit et al., 2014.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "0b1123eb-891f-4b6c-a514-5d1b87c1b089",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C26",
+      "claim": "Telomere length appears correlated across tissue types.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomere length appears correlated across tissue types (Demanelis et al., 2020), and as such, leukocyte telomere length (LTL) is generally measured in epidemiologic studies as a proxy for telomere length in other tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Demanelis et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "a68cb662-0a6e-48dc-ac87-1a72de25dc98",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C27",
+      "claim": "Leukocyte telomere length (LTL) is generally measured in epidemiologic studies as a proxy for telomere length in other tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomere length appears correlated across tissue types (Demanelis et al., 2020), and as such, leukocyte telomere length (LTL) is generally measured in epidemiologic studies as a proxy for telomere length in other tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes common epidemiologic practice, based on the correlation across tissue types.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "3f13aebe-00bb-400f-8e95-5c49d0546316",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C28",
+      "claim": "LTL has been measured in 472,174 individuals from the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, LTL has been measured in 472,174 individuals from the UK Biobank (UKBB; Codd et al., 2021), and LTL was associated with multiple biomedical traits (i.e. pulmonary and cardiovascular diseases, haematological traits, lymphomas, kidney cancer, and other cancer types).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the UKBB study, supported by citation to Codd et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "25e3f353-ac2b-4801-919e-958a76d0424f",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C29",
+      "claim": "LTL was associated with multiple biomedical traits including pulmonary and cardiovascular diseases, haematological traits, lymphomas, kidney cancer, and other cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, LTL has been measured in 472,174 individuals from the UK Biobank (UKBB; Codd et al., 2021), and LTL was associated with multiple biomedical traits (i.e. pulmonary and cardiovascular diseases, haematological traits, lymphomas, kidney cancer, and other cancer types).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the UKBB study, supported by citation to Codd et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "20624d4e-f1a7-4afc-a337-53948462fa55",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C30",
+      "claim": "Genetic analysis of LTL revealed 138 genetic loci linked to LTL across a variety of different genes involved in telomere biology and DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic analysis of LTL also revealed 138 genetic loci linked to LTL across a variety of different genes involved in telomere biology and DNA repair (Codd et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the UKBB genetic analysis, supported by citation to Codd et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "7f72c4b0-3a5d-493f-b1b0-e2d9a8925635",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C31",
+      "claim": "Genetic variants at several loci have been associated with both LTL and lung cancer risk, including variants near the TERT, TERC, OBFC1, and RTEL1 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of lung cancer, genetic variants at several loci have been associated with both LTL and lung cancer risk, including variants near the TERT, TERC, OBFC1, and RTEL1 genes, fundamental to telomere length maintenance (McKay et al., 2008; Wang et al., 2008; Rafnar et al., 2009; Kachuri et al., 2016; McKay et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior studies, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "dd66a601-b8d5-4cd4-9269-369e52fc1bf1",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C32",
+      "claim": "TERT, TERC, OBFC1, and RTEL1 genes are fundamental to telomere length maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of lung cancer, genetic variants at several loci have been associated with both LTL and lung cancer risk, including variants near the TERT, TERC, OBFC1, and RTEL1 genes, fundamental to telomere length maintenance (McKay et al., 2008; Wang et al., 2008; Rafnar et al., 2009; Kachuri et al., 2016; McKay et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of these genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "026ed157-c698-42f0-b19e-ade5a1d6062d",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C33",
+      "claim": "The effects of the telomere-related variants appear more relevant to lung adenocarcinoma risk than other histologic subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of the telomere-related variants appear more relevant to lung adenocarcinoma risk than other histologic subtypes (McKay et al., 2017; Landi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior studies, supported by citations to McKay et al., 2017 and Landi et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "b9e71623-2bee-45ad-89de-8863210f1a16",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C34",
+      "claim": "A causal relationship between LTL and susceptibility to lung cancer was observed using Mendelian randomisation (MR) approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, a causal relationship between LTL and susceptibility to lung cancer was observed using Mendelian randomisation (MR) approaches (Zhang et al., 2015; Haycock et al., 2017; Kachuri et al., 2019) as well as in observational studies that have associated directly measured telomere length with risk of lung cancer (Sanchez-Espiridion et al., 2014; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior MR studies, supported by citations to Zhang et al., 2015; Haycock et al., 2017; Kachuri et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "412be897-830c-411d-a1b0-d016237d4732",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C35",
+      "claim": "Observational studies have associated directly measured telomere length with risk of lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, a causal relationship between LTL and susceptibility to lung cancer was observed using Mendelian randomisation (MR) approaches (Zhang et al., 2015; Haycock et al., 2017; Kachuri et al., 2019) as well as in observational studies that have associated directly measured telomere length with risk of lung cancer (Sanchez-Espiridion et al., 2014; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior observational studies, supported by citations to Sanchez-Espiridion et al., 2014; Zhang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "a2bda6ae-43d9-43b4-8194-d1a23c31f13a",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C36",
+      "claim": "Genome-wide association studies (GWASs) summary statistics for lung cancer included 29,239 cases and 56,450 controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide association studies (GWASs) summary statistics for lung cancer (29,239 cases and 56,450 controls) and stratified by histological subtype (squamous cell carcinoma, small-cell carcinoma, and adenocarcinoma) and smoking status (ever and never smokers) were obtained from the International Lung Cancer Consortium (ILCCO; McKay et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "88785921-4a45-4076-9a90-bd035eb39c05",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C37",
+      "claim": "GWAS summary statistics used results from a GWAS of LTL in 464,716 individuals of European ancestry from the UKBB.",
+      "claim_type": "EXPLICIT",
+      "source": "All analyses of LTL requiring summary statistics used results from a GWAS of LTL in 464,716 individuals of European ancestry from the UKBB (Codd et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study, supported by citation to Codd et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "4dccc64e-a58f-4dca-a17b-a003ca3faa73",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C38",
+      "claim": "Increasing LTL was genetically correlated with older age at smoking initiation (rg = 0.13, p=3.0 \u00d7 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing LTL was genetically correlated with older age at smoking initiation (rg = 0.13, p=3.0 \u00d7 10\u20133), and negatively correlated with smoking cessation: (rg = \u22120.21, p=6.9 \u00d7 10\u201309), smoking initiation (rg = \u22120.16, p=1.3 \u00d7 10\u201310), and cigarettes per day (rg = \u22120.19, p=2.1 \u00d7 10\u201308).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the genetic correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "e51ef0e8-86e7-43b1-9858-a1f7e6786dec",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C39",
+      "claim": "Increasing LTL was negatively correlated with smoking cessation (rg = \u22120.21, p=6.9 \u00d7 10\u201309).",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing LTL was genetically correlated with older age at smoking initiation (rg = 0.13, p=3.0 \u00d7 10\u20133), and negatively correlated with smoking cessation: (rg = \u22120.21, p=6.9 \u00d7 10\u201309), smoking initiation (rg = \u22120.16, p=1.3 \u00d7 10\u201310), and cigarettes per day (rg = \u22120.19, p=2.1 \u00d7 10\u201308).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the genetic correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "ddc98474-34fe-4fde-85db-a4d4ae8659e5",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C40",
+      "claim": "Increasing LTL was negatively correlated with smoking initiation (rg = \u22120.16, p=1.3 \u00d7 10\u201310).",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing LTL was genetically correlated with older age at smoking initiation (rg = 0.13, p=3.0 \u00d7 10\u20133), and negatively correlated with smoking cessation: (rg = \u22120.21, p=6.9 \u00d7 10\u201309), smoking initiation (rg = \u22120.16, p=1.3 \u00d7 10\u201310), and cigarettes per day (rg = \u22120.19, p=2.1 \u00d7 10\u201308).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the genetic correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "d6d7ad86-c08b-428b-90ba-5ea3d4795fc1",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C41",
+      "claim": "Increasing LTL was negatively correlated with cigarettes per day (rg = \u22120.19, p=2.1 \u00d7 10\u201308).",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing LTL was genetically correlated with older age at smoking initiation (rg = 0.13, p=3.0 \u00d7 10\u20133), and negatively correlated with smoking cessation: (rg = \u22120.21, p=6.9 \u00d7 10\u201309), smoking initiation (rg = \u22120.16, p=1.3 \u00d7 10\u201310), and cigarettes per day (rg = \u22120.19, p=2.1 \u00d7 10\u201308).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the genetic correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "84c4f600-f617-45b9-9e86-96ada4aeacd4",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C42",
+      "claim": "Longer LTL was genetically correlated with improved lung function, as indicated by increasing values of FEV1 (rg = 0.09, p=5.1 \u00d7 10\u201307).",
+      "claim_type": "EXPLICIT",
+      "source": "Longer LTL was genetically correlated with improved lung function, as indicated by increasing values of FEV1 (rg = 0.09, p=5.1 \u00d7 10\u201307) and FVC (rg = 0.09, p=1.1 \u00d7 10\u201305).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the genetic correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "ae917270-1fb8-4525-a761-67aec7045501",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C43",
+      "claim": "Longer LTL was genetically correlated with improved lung function, as indicated by increasing values of FVC (rg = 0.09, p=1.1 \u00d7 10\u201305).",
+      "claim_type": "EXPLICIT",
+      "source": "Longer LTL was genetically correlated with improved lung function, as indicated by increasing values of FEV1 (rg = 0.09, p=5.1 \u00d7 10\u201307) and FVC (rg = 0.09, p=1.1 \u00d7 10\u201305).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the genetic correlation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "1bf5b5cd-11fe-40c2-9124-dc9bbf5b3bd0",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C44",
+      "claim": "A subgroup of variants associated with longer LTL was correlated with increased lung adenocarcinoma risk.",
+      "claim_type": "EXPLICIT",
+      "source": "A subgroup of variants associated with longer LTL was correlated with increased lung adenocarcinoma risk, while the subgroup of smoking-behaviour associated variants, which also conferred an increased risk of lung adenocarcinoma, tended to have lower LTL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the Z-score visualization in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "9cb8ba03-4278-400b-b2ee-07e73f37fa3e",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C45",
+      "claim": "The subgroup of smoking-behaviour associated variants, which also conferred an increased risk of lung adenocarcinoma, tended to have lower LTL.",
+      "claim_type": "EXPLICIT",
+      "source": "A subgroup of variants associated with longer LTL was correlated with increased lung adenocarcinoma risk, while the subgroup of smoking-behaviour associated variants, which also conferred an increased risk of lung adenocarcinoma, tended to have lower LTL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the Z-score visualization in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "2e353a8b-ca53-4750-801b-6865fd5a58fa",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C46",
+      "claim": "From the 490 genetic instruments associated with LTL at genome-wide significance (p<5x10\u201308), 144 LTL genetic instruments were used in MR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 490 genetic instruments associated with LTL at genome-wide significance (p<5x10\u201308), 144 LTL genetic instruments, that explained ~3.5% of the variance in LTL, and were in low-linkage disequilibrium (r2<0.01) were used in MR analysis (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection of genetic instruments for the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "5ac76fe4-103d-4080-bfa9-856ca6b1c325",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C47",
+      "claim": "The 144 LTL genetic instruments explained ~3.5% of the variance in LTL.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 490 genetic instruments associated with LTL at genome-wide significance (p<5x10\u201308), 144 LTL genetic instruments, that explained ~3.5% of the variance in LTL, and were in low-linkage disequilibrium (r2<0.01) were used in MR analysis (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the variance explained by the genetic instruments used in the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "b3c4b91d-d2eb-47e6-8847-cfa55a2234ab",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C48",
+      "claim": "The 144 LTL genetic instruments were in low-linkage disequilibrium (r2<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "From the 490 genetic instruments associated with LTL at genome-wide significance (p<5x10\u201308), 144 LTL genetic instruments, that explained ~3.5% of the variance in LTL, and were in low-linkage disequilibrium (r2<0.01) were used in MR analysis (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LD criteria for selecting genetic instruments for the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "eddfcbb4-c896-43d5-b82a-6875eb18eea8",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C49",
+      "claim": "A PRS composed of the 144 genetic instruments was associated with TL estimated from WGS in blood samples across TCGA cohorts (Beta = 0.03, 95%CI = 0.01\u20130.05, p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "As a sensitivity analysis, a PRS composed of these genetic instruments was associated with TL estimated from WGS in blood samples across TCGA cohorts (Beta = 0.03, 95%CI = 0.01\u20130.05, p=0.001) but was not associated with TL in tumour material from the same patients (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the sensitivity analysis using TCGA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "8d4e8482-1e96-4ea3-8dfd-a5d1da18afe3",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C50",
+      "claim": "The PRS composed of the 144 genetic instruments was not associated with TL in tumour material from TCGA patients.",
+      "claim_type": "EXPLICIT",
+      "source": "As a sensitivity analysis, a PRS composed of these genetic instruments was associated with TL estimated from WGS in blood samples across TCGA cohorts (Beta = 0.03, 95%CI = 0.01\u20130.05, p=0.001) but was not associated with TL in tumour material from the same patients (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the sensitivity analysis using TCGA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "72538ab9-3513-4470-b96b-225a9c38f23f",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C51",
+      "claim": "Longer genetically predicted LTL was associated with increased lung cancer risk (OR = 1.62, 95% CI = 1.44\u20131.84, p=9.91 \u00d7 10\u201315).",
+      "claim_type": "EXPLICIT",
+      "source": "MR analyses demonstrated that longer genetically predicted LTL was associated with increased lung cancer risk (OR = 1.62, 95% CI = 1.44\u20131.84, p=9.91 \u00d7 10\u201315) (Figure 2; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "423773a3-dd07-40c1-aabe-0a1f42737d5a",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C52",
+      "claim": "Longer LTL conferred the largest increase in risk for lung adenocarcinoma tumours (OR = 2.43, 95% CI = 2.02\u20132.92, p=3.76 \u00d7 10\u201321).",
+      "claim_type": "EXPLICIT",
+      "source": "Longer LTL conferred the largest increase in risk for lung adenocarcinoma tumours (OR = 2.43, 95% CI = 2.02\u20132.92, p=3.76 \u00d7 10\u201321), but there was limited evidence of a causal relationship for other histologic subtypes, such as squamous cell carcinoma (OR = 1.00, 95% CI = 0.84\u20131.19, p=0.98) and small-cell carcinoma (OR = 1.13, 95% CI = 0.87\u20131.45, p=0.34; Figure 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the MR analysis stratified by histologic subtype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "5e9a75b0-12d5-4c8f-ba66-a57d6c600e25",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C53",
+      "claim": "There was limited evidence of a causal relationship between LTL and squamous cell carcinoma (OR = 1.00, 95% CI = 0.84\u20131.19, p=0.98).",
+      "claim_type": "EXPLICIT",
+      "source": "Longer LTL conferred the largest increase in risk for lung adenocarcinoma tumours (OR = 2.43, 95% CI = 2.02\u20132.92, p=3.76 \u00d7 10\u201321), but there was limited evidence of a causal relationship for other histologic subtypes, such as squamous cell carcinoma (OR = 1.00, 95% CI = 0.84\u20131.19, p=0.98) and small-cell carcinoma (OR = 1.13, 95% CI = 0.87\u20131.45, p=0.34; Figure 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the MR analysis stratified by histologic subtype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "4792947d-f77b-452f-bd78-6db605f282ae",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C54",
+      "claim": "There was limited evidence of a causal relationship between LTL and small-cell carcinoma (OR = 1.13, 95% CI = 0.87\u20131.45, p=0.34).",
+      "claim_type": "EXPLICIT",
+      "source": "Longer LTL conferred the largest increase in risk for lung adenocarcinoma tumours (OR = 2.43, 95% CI = 2.02\u20132.92, p=3.76 \u00d7 10\u201321), but there was limited evidence of a causal relationship for other histologic subtypes, such as squamous cell carcinoma (OR = 1.00, 95% CI = 0.84\u20131.19, p=0.98) and small-cell carcinoma (OR = 1.13, 95% CI = 0.87\u20131.45, p=0.34; Figure 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the MR analysis stratified by histologic subtype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "e321558f-46ba-4301-b890-0fe7f9e490d5",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C55",
+      "claim": "The study was underpowered to detect an association between lung small-cell carcinoma and LTL at OR of 1.13 and considering alpha type-1 error rate of 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our study was underpowered to detect an association between lung small-cell carcinoma and LTL at OR of 1.13 and considering alpha type-1 error rate of 5% (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a power calculation result presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "1c2d91e0-215a-4bed-b1a4-1f1dd9e71659",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C56",
+      "claim": "LTL was associated with lung cancer risk in never smokers (OR = 2.02, 95% CI = 1.45\u20132.83, p=3.78 \u00d7 10\u201305).",
+      "claim_type": "EXPLICIT",
+      "source": "When stratifying the analyses by smoking status, LTL was associated with lung cancer risk in both never (OR = 2.02, 95% CI = 1.45\u20132.83, p=3.78 \u00d7 10\u201305) and ever smokers (OR = 1.54, 95% CI = 1.34\u20131.76, p=7.75 \u00d7 10\u201310; Figure 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the MR analysis stratified by smoking status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "30368ac0-2555-4c1e-bbad-34ae17c77783",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C57",
+      "claim": "LTL was associated with lung cancer risk in ever smokers (OR = 1.54, 95% CI = 1.34\u20131.76, p=7.75 \u00d7 10\u201310).",
+      "claim_type": "EXPLICIT",
+      "source": "When stratifying the analyses by smoking status, LTL was associated with lung cancer risk in both never (OR = 2.02, 95% CI = 1.45\u20132.83, p=3.78 \u00d7 10\u201305) and ever smokers (OR = 1.54, 95% CI = 1.34\u20131.76, p=7.75 \u00d7 10\u201310; Figure 2, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the MR analysis stratified by smoking status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "3c438dfe-6b3c-44fd-86ab-4021d856db87",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C58",
+      "claim": "Evidence for negative pleiotropy was observed for all lung cancer outcomes except for squamous cell carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for negative pleiotropy (supplementary file 1c) and heterogeneity (supplementary file 1d) was observed for all lung cancer outcomes except for squamous cell carcinoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the MR sensitivity analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "73ba73e0-552c-45b0-9ba9-976ba42a51da",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C59",
+      "claim": "Evidence for heterogeneity was observed for all lung cancer outcomes except for squamous cell carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for negative pleiotropy (supplementary file 1c) and heterogeneity (supplementary file 1d) was observed for all lung cancer outcomes except for squamous cell carcinoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the MR sensitivity analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "58f8fc34-fc85-44ab-8715-8626fc983b61",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C60",
+      "claim": "A significant association for LTL and lung cancer risk was found using MR-Egger method (lung cancer: OR = 2.35, p=3.37 \u00d7 10\u201313).",
+      "claim_type": "EXPLICIT",
+      "source": "However, a significant association for LTL and lung cancer risk was found for methods robust to the significant directional pleiotropy (MR-Egger: lung cancer [OR = 2.35, p=3.37 \u00d7 10\u201313]; lung adenocarcinoma [OR = 4.48, p=7.30 \u00d7 10\u201317]; never smokers [OR = 6.84, p=2.07 \u00d7 10\u201310]; supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the MR-Egger sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "51b1fe50-c779-43c7-9e3e-09ca47d57c31",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C61",
+      "claim": "A significant association for LTL and lung adenocarcinoma risk was found using MR-Egger method (OR = 4.48, p=7.30 \u00d7 10\u201317).",
+      "claim_type": "EXPLICIT",
+      "source": "However, a significant association for LTL and lung cancer risk was found for methods robust to the significant directional pleiotropy (MR-Egger: lung cancer [OR = 2.35, p=3.37 \u00d7 10\u201313]; lung adenocarcinoma [OR = 4.48, p=7.30 \u00d7 10\u201317]; never smokers [OR = 6.84, p=2.07 \u00d7 10\u201310]; supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the MR-Egger sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "cb642357-00b4-44a3-b0e2-b9508e6d0c06",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C62",
+      "claim": "A significant association for LTL and lung cancer risk in never smokers was found using MR-Egger method (OR = 6.84, p=2.07 \u00d7 10\u201310).",
+      "claim_type": "EXPLICIT",
+      "source": "However, a significant association for LTL and lung cancer risk was found for methods robust to the significant directional pleiotropy (MR-Egger: lung cancer [OR = 2.35, p=3.37 \u00d7 10\u201313]; lung adenocarcinoma [OR = 4.48, p=7.30 \u00d7 10\u201317]; never smokers [OR = 6.84, p=2.07 \u00d7 10\u201310]; supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the MR-Egger sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "34c9d3c4-2f86-4180-9359-7e2386baa6c2",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C63",
+      "claim": "Leave-one-out analyses detected only one outlier, rs7705526 in TERT, resulting in >10% change in MR effect size for associated lung cancer subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Leave-one-out analyses detected only one outlier, rs7705526 in TERT, resulting in >10% change in MR effect size for associated lung cancer subtypes (supplementary file 1e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the leave-one-out sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "243b58b2-5921-4dba-a6d3-756392a36d58",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C64",
+      "claim": "MVMR analyses suggested that the association between LTL and lung adenocarcinoma risk is independent of smoking propensity, obesity-related, and alcohol intake-related traits.",
+      "claim_type": "EXPLICIT",
+      "source": "MVMR analyses considering instruments related to LTL and WHR, HDL, total triglycerides, systolic blood pressure, smoking, and alcohol intake, as well as multiple traits combined, suggested that the association between LTL and lung adenocarcinoma risk is independent of smoking propensity, obesity-related, and alcohol intake-related traits (supplementary file 1f, 1g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the multivariable MR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "6c2b49e9-e650-4fe1-a432-8e1f937a7dbf",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C65",
+      "claim": "Loci with evidence of colocalisation between LTL and lung adenocarcinoma tended to be near genes that encode telomerase subunits and its associated complex, including genetic variants at TERT (5p15.33).",
+      "claim_type": "EXPLICIT",
+      "source": "Loci with evidence of colocalisation between LTL and lung adenocarcinoma tended to be near genes that encode telomerase subunits and its associated complex, including genetic variants at TERT (5p15.33; rs116539972, rs7705526, rs61748181, rs71593392, and rs140648021), TERC (3q26.2; rs12638862 and rs146546514), and OBFC1 (10q24.33; rs9419958 and rs139122544).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the colocalisation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "9e160ce4-4e23-47ae-8adf-d7b90fe1f9b7",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C66",
+      "claim": "Loci with evidence of colocalisation between LTL and lung adenocarcinoma tended to be near genes that encode telomerase subunits and its associated complex, including genetic variants at TERC (3q26.2).",
+      "claim_type": "EXPLICIT",
+      "source": "Loci with evidence of colocalisation between LTL and lung adenocarcinoma tended to be near genes that encode telomerase subunits and its associated complex, including genetic variants at TERT (5p15.33; rs116539972, rs7705526, rs61748181, rs71593392, and rs140648021), TERC (3q26.2; rs12638862 and rs146546514), and OBFC1 (10q24.33; rs9419958 and rs139122544).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the colocalisation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "a2e21bcc-a58b-4ffd-9121-64d35ee68905",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C67",
+      "claim": "Loci with evidence of colocalisation between LTL and lung adenocarcinoma tended to be near genes that encode telomerase subunits and its associated complex, including genetic variants at OBFC1 (10q24.33).",
+      "claim_type": "EXPLICIT",
+      "source": "Loci with evidence of colocalisation between LTL and lung adenocarcinoma tended to be near genes that encode telomerase subunits and its associated complex, including genetic variants at TERT (5p15.33; rs116539972, rs7705526, rs61748181, rs71593392, and rs140648021), TERC (3q26.2; rs12638862 and rs146546514), and OBFC1 (10q24.33; rs9419958 and rs139122544).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the colocalisation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "62a6a599-5ff8-4b09-b4bf-c8dc66f52a24",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C68",
+      "claim": "Several colocalised loci mapped to genes that have not been previously linked to lung cancer risk at genome-wide significant level: MPHOSPH6 (16q23.3; rs2303262).",
+      "claim_type": "EXPLICIT",
+      "source": "Several colocalised loci mapped to genes that have not been previously linked to lung cancer risk at genome-wide significant level: MPHOSPH6 (16q23.3; rs2303262), PRPF6 (20q13.33; rs80150989), and POLI (18q21.2; rs2276182).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the colocalisation analysis identifying novel loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "9dc0b905-19f4-4c97-ae9a-fba3297e90bd",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C69",
+      "claim": "Several colocalised loci mapped to genes that have not been previously linked to lung cancer risk at genome-wide significant level: PRPF6 (20q13.33; rs80150989).",
+      "claim_type": "EXPLICIT",
+      "source": "Several colocalised loci mapped to genes that have not been previously linked to lung cancer risk at genome-wide significant level: MPHOSPH6 (16q23.3; rs2303262), PRPF6 (20q13.33; rs80150989), and POLI (18q21.2; rs2276182).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the colocalisation analysis identifying novel loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "6c31b34e-53f4-42bb-a944-8b7e2940d571",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C70",
+      "claim": "Several colocalised loci mapped to genes that have not been previously linked to lung cancer risk at genome-wide significant level: POLI (18q21.2; rs2276182).",
+      "claim_type": "EXPLICIT",
+      "source": "Several colocalised loci mapped to genes that have not been previously linked to lung cancer risk at genome-wide significant level: MPHOSPH6 (16q23.3; rs2303262), PRPF6 (20q13.33; rs80150989), and POLI (18q21.2; rs2276182).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the colocalisation analysis identifying novel loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "8d2506e8-5855-445c-9778-7a9b176912ae",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C71",
+      "claim": "While the RTEL1 locus harboured variants associated with both LTL and lung adenocarcinoma, these signals appeared to be distinct and independent of each other (avg_PP3=0.999, avg_PP4=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while the RTEL1 locus (20q13.33: rs117238689, rs115610405, rs35640778, and rs35902944) harboured variants associated with both LTL and lung adenocarcinoma (Figure 3\u2014figure supplement 1), these signals appeared to be distinct and independent of each other (avg_PP3=0.999, avg_PP4=0.001; Figure 3A, supplementary file 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the colocalisation analysis at the RTEL1 locus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "a79ba3ed-4ef7-4b21-bb2d-1d4f8eead4fe",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C72",
+      "claim": "Multi-trait analyses at the 16q23.3 locus colocalised rs2303262 with MPHOSPH6 expression in lung tissue, FVC and FEV1, but not with any of the traits related to smoking behaviour (p=0.72).",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-trait analyses at the 16q23.3 locus colocalised rs2303262 with MPHOSPH6 expression in lung tissue, FVC and FEV1, but not with any of the traits related to smoking behaviour (p=0.72; Figure 3B, supplementary file 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the multi-trait colocalisation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "f8bb6dc8-d974-4093-91e8-651af19e4264",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C73",
+      "claim": "Evidence of colocalisation (p=0.74) was identified between lung adenocarcinoma, LTL, and gene expression in lung epithelial cells for two variants at the OBFC1 locus: rs139122544 and rs9419958.",
+      "claim_type": "EXPLICIT",
+      "source": "We additionally identified evidence of colocalisation (p=0.74) between lung adenocarcinoma, LTL, and gene expression in lung epithelial cells for two variants at the OBFC1 locus: rs139122544 and rs9419958 (Figure 3C, supplementary file 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the multi-trait colocalisation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "10741fa8-14df-4739-9c4e-74a2ad5756ef",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C74",
+      "claim": "The first five components of gene expression in lung adenocarcinoma tumours explained ~54% of the observed variance in the RNA-sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated the impact of genetically predicted LTL on lung adenocarcinoma tumour features by estimating molecular expression patterns within 343 lung adenocarcinomas tumours using principal component analysis in RNA-sequencing data. The first five components explained ~54% of the observed variance in the RNA-sequencing data (Figure 4, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the principal component analysis of RNA-sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "d298ebae-46a4-42f6-92cc-3d8b64fe29c6",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C75",
+      "claim": "Genes correlated with PC1 tended to be enriched for RNA processing pathways (false discovery rate <5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the genes correlated with each component tended to be enriched for specific cell signaling pathways (PC1: RNA processing; PC2: cell-cycle; PC3: metabolic processes; PC4: immune response; PC5: cellular response to stress and DNA damage; false discovery rate <5%; supplementary file 1l).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "1166df21-7ddc-46b6-9047-7e803bfe02cc",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C76",
+      "claim": "Genes correlated with PC2 tended to be enriched for cell-cycle pathways (false discovery rate <5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the genes correlated with each component tended to be enriched for specific cell signaling pathways (PC1: RNA processing; PC2: cell-cycle; PC3: metabolic processes; PC4: immune response; PC5: cellular response to stress and DNA damage; false discovery rate <5%; supplementary file 1l).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "419d0d0f-7149-4132-9f37-3929aeaf962f",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C77",
+      "claim": "Genes correlated with PC3 tended to be enriched for metabolic processes pathways (false discovery rate <5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the genes correlated with each component tended to be enriched for specific cell signaling pathways (PC1: RNA processing; PC2: cell-cycle; PC3: metabolic processes; PC4: immune response; PC5: cellular response to stress and DNA damage; false discovery rate <5%; supplementary file 1l).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "d049a1dd-0faa-4d85-abc8-ffa350a8da34",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C78",
+      "claim": "Genes correlated with PC4 tended to be enriched for immune response pathways (false discovery rate <5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the genes correlated with each component tended to be enriched for specific cell signaling pathways (PC1: RNA processing; PC2: cell-cycle; PC3: metabolic processes; PC4: immune response; PC5: cellular response to stress and DNA damage; false discovery rate <5%; supplementary file 1l).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "c30f73d5-bbb5-4994-9aa9-07940c25475b",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C79",
+      "claim": "Genes correlated with PC5 tended to be enriched for cellular response to stress and DNA damage pathways (false discovery rate <5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the genes correlated with each component tended to be enriched for specific cell signaling pathways (PC1: RNA processing; PC2: cell-cycle; PC3: metabolic processes; PC4: immune response; PC5: cellular response to stress and DNA damage; false discovery rate <5%; supplementary file 1l).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "84a0a1d4-6fbf-4472-ba71-40e0a5114834",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C80",
+      "claim": "The LTL PRS was positively associated with the second component (PC2) of tumour expression (Beta = 0.17, 95% CI = 0.12\u20130.19, p=1.0 \u00d7 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested the association between the PRS composed of the 144 genetic instruments selected for MR analysis and the five components of gene expression within lung adenocarcinoma tumours (Figure 4A). The LTL PRS was positively associated with the second component (PC2) of tumour expression (Beta = 0.17, 95% CI = 0.12\u20130.19, p=1.0 \u00d7 10\u20133; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the PRS association analysis with principal components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "69e6a635-9b57-41f9-b3ce-4ad5b264b1cc",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C81",
+      "claim": "Higher values of PC2 tended to be associated with patients older at diagnosis (p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate analysis, higher values of PC2 tended to be associated with patients older at diagnosis (p=0.001), female (p=0.005), being never smokers (p=0.04), and diagnosed with early-stage tumours (p=0.002; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the multivariate analysis of PC2 associations with clinical features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "77b859b2-4bbc-4531-b63a-3cfaae9d3b71",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C82",
+      "claim": "Higher values of PC2 tended to be associated with female patients (p=0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate analysis, higher values of PC2 tended to be associated with patients older at diagnosis (p=0.001), female (p=0.005), being never smokers (p=0.04), and diagnosed with early-stage tumours (p=0.002; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the multivariate analysis of PC2 associations with clinical features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "60ecb5db-1ae0-42ab-94c4-10dccc40ceb1",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C83",
+      "claim": "Higher values of PC2 tended to be associated with being never smokers (p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate analysis, higher values of PC2 tended to be associated with patients older at diagnosis (p=0.001), female (p=0.005), being never smokers (p=0.04), and diagnosed with early-stage tumours (p=0.002; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the multivariate analysis of PC2 associations with clinical features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "77a0f9e2-865f-4ce0-8a9b-5c8f48a43aa8",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C84",
+      "claim": "Higher values of PC2 tended to be associated with diagnosed with early-stage tumours (p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate analysis, higher values of PC2 tended to be associated with patients older at diagnosis (p=0.001), female (p=0.005), being never smokers (p=0.04), and diagnosed with early-stage tumours (p=0.002; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the multivariate analysis of PC2 associations with clinical features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "f45a1960-79da-4a52-be19-57e1bab82a35",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C85",
+      "claim": "Higher values of PC2 were associated with reduced tumour proliferation (p=3.7 \u00d7 10\u201330) in multivariate analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate analysis, higher values of PC2 were associated with reduced tumour proliferation (p=3.7 \u00d7 10\u201330), lower somatic copy number alternations (p=1.6 \u00d7 10\u201305), and higher tumour telomerase activity scores (p=1.6 \u00d7 10\u20135).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the multivariate analysis of PC2 associations with molecular features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "19cb3ae2-f5ae-4c87-a4e5-09e2227268b7",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C86",
+      "claim": "Higher values of PC2 were associated with lower somatic copy number alternations (p=1.6 \u00d7 10\u201305) in multivariate analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate analysis, higher values of PC2 were associated with reduced tumour proliferation (p=3.7 \u00d7 10\u201330), lower somatic copy number alternations (p=1.6 \u00d7 10\u201305), and higher tumour telomerase activity scores (p=1.6 \u00d7 10\u20135).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the multivariate analysis of PC2 associations with molecular features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "fb49f106-6789-4583-ac79-e9186374b549",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C87",
+      "claim": "Higher values of PC2 were associated with higher tumour telomerase activity scores (p=1.6 \u00d7 10\u20135) in multivariate analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate analysis, higher values of PC2 were associated with reduced tumour proliferation (p=3.7 \u00d7 10\u201330), lower somatic copy number alternations (p=1.6 \u00d7 10\u201305), and higher tumour telomerase activity scores (p=1.6 \u00d7 10\u20135).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the multivariate analysis of PC2 associations with molecular features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "c6ebe5e5-985f-41ce-adb3-89b4caff5285",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C88",
+      "claim": "LTL PRS remained an independent predictor of PC2 when considering genomic features (p=0.009) in multivariate analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariate analysis also indicated that LTL PRS remained an independent predictor of PC2 when considering these genomic features (p=0.009; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the multivariate analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "4f233b34-07ea-4f4a-a00d-8eb91fbb7105",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C89",
+      "claim": "The association between LTL PRS and inferred PC2 was observed in TCGA-LUAD (p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The association between LTL PRS and inferred PC2 was observed in TCGA-LUAD (p=0.001) but not in TCGA-LUSC (p=0.729) cases (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of the inferred PC2 signature in TCGA cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "048ea656-8edd-422f-b1b3-b96c58e0f766",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C90",
+      "claim": "The association between LTL PRS and inferred PC2 was not observed in TCGA-LUSC (p=0.729).",
+      "claim_type": "EXPLICIT",
+      "source": "The association between LTL PRS and inferred PC2 was observed in TCGA-LUAD (p=0.001) but not in TCGA-LUSC (p=0.729) cases (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of the inferred PC2 signature in TCGA cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "fafd55d8-b4bc-4cee-b27e-9115b33f62e6",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C91",
+      "claim": "The inferred PC2 signature levels were higher in TCGA-LUAD than in TCGA-LUSC.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred PC2 signature levels were higher in TCGA-LUAD than in TCGA-LUSC (Figure 5B), while higher proliferation rate (Figure 5C, p=1.45 \u00d7 10\u2013141) and TERT activity (Figure 5D, p=1.36 \u00d7 10\u201320) were observed in TCGA-LUSC than in TCGA-LUAD cases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparison of the inferred PC2 signature between histologic subtypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "1cef2e21-38e9-4e16-858a-68643d3cc2db",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C92",
+      "claim": "Higher proliferation rate was observed in TCGA-LUSC than in TCGA-LUAD cases (p=1.45 \u00d7 10\u2013141).",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred PC2 signature levels were higher in TCGA-LUAD than in TCGA-LUSC (Figure 5B), while higher proliferation rate (Figure 5C, p=1.45 \u00d7 10\u2013141) and TERT activity (Figure 5D, p=1.36 \u00d7 10\u201320) were observed in TCGA-LUSC than in TCGA-LUAD cases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparison of proliferation scores between histologic subtypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "e8d4a957-895d-415b-8284-ad96d001a1ee",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C93",
+      "claim": "Higher TERT activity was observed in TCGA-LUSC than in TCGA-LUAD cases (p=1.36 \u00d7 10\u201320).",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred PC2 signature levels were higher in TCGA-LUAD than in TCGA-LUSC (Figure 5B), while higher proliferation rate (Figure 5C, p=1.45 \u00d7 10\u2013141) and TERT activity (Figure 5D, p=1.36 \u00d7 10\u201320) were observed in TCGA-LUSC than in TCGA-LUAD cases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparison of TERT activity between histologic subtypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "e8b77af4-b5dc-490e-932c-b8f23e403152",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C94",
+      "claim": "MPHOSPH6 encodes an enzyme associated with the RNA exosome complex where it modulates RNA binding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "MPHOSPH6 encodes an enzyme associated with the RNA exosome complex where it modulates RNA binding activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of MPHOSPH6.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "098a43cc-0f7d-480d-b957-97f9df45723e",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C95",
+      "claim": "PRPF6 is involved in androgen binding.",
+      "claim_type": "EXPLICIT",
+      "source": "PRPF6 in 20q13.33 is involved in androgen binding and has been shown to promote colon tumour growth via preferential splicing of genes involved in proliferation (Adler et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PRPF6 function, supported by citation to Adler et al., 2014.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "c640d07d-276c-460f-9b22-47cd71754b55",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C96",
+      "claim": "PRPF6 has been shown to promote colon tumour growth via preferential splicing of genes involved in proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "PRPF6 in 20q13.33 is involved in androgen binding and has been shown to promote colon tumour growth via preferential splicing of genes involved in proliferation (Adler et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PRPF6 function, supported by citation to Adler et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "aa4108c3-e942-4ffc-8867-ea30dd899c53",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C97",
+      "claim": "POLI is a member of the Y-family of DNA damage-tolerant polymerases involved in translesion synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "POLI is a member of the Y-family of DNA damage-tolerant polymerases involved in translesion synthesis (McIntyre, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about POLI function, supported by citation to McIntyre, 2020.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "fa619845-773a-4f36-9d48-b8dd6821060c",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C98",
+      "claim": "POLI interacts with TP53 to bypass barriers during DNA replication, which may confer a pro-survival effect to stem cells and cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As part of its role in DNA repair and replication stress, POLI interacts with TP53 to bypass barriers during DNA replication, which may confer a pro-survival effect to stem cells and cancer cells (Guo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about POLI function, supported by citation to Guo et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "e01f7c77-1716-4f13-8824-9d9548555660",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C99",
+      "claim": "Individuals with longer telomeres have lower rates of telomere attrition compared to individuals with shorter telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "A plausible explanation for why long LTL was associated with an increased risk of lung cancer might be that individuals with longer telomeres have lower rates of telomere attrition compared to individuals with shorter telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "3535fce7-c7fc-4eeb-996e-38d45a787504",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C100",
+      "claim": "Even a very small difference in telomere attrition would change the probability that a given cell is able to escape the telomere-mediated cell death pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Given a very large population of histologically normal cells, even a very small difference in telomere attrition would change the probability that a given cell is able to escape the telomere-mediated cell death pathways (Aviv et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citation to Aviv et al., 2017.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "95cf5462-2a17-4fd6-87ee-90aa1947ab18",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C101",
+      "claim": "Longer LTL is related to genomically stable lung tumours such as lung adenocarcinomas in never smokers and tumours with lower proliferation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "A suggestion may come from our observation that longer LTL is related to genomically stable lung tumours (such as lung adenocarcinomas in never smokers and tumours with lower proliferation rates) but not genomically unstable lung tumours (such as heavy smoking related, highly proliferating lung squamous carcinomas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study's results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "6a37cf37-c382-44f9-9c16-35abd59a4908",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C102",
+      "claim": "Longer LTL is not related to genomically unstable lung tumours such as heavy smoking related, highly proliferating lung squamous carcinomas.",
+      "claim_type": "EXPLICIT",
+      "source": "A suggestion may come from our observation that longer LTL is related to genomically stable lung tumours (such as lung adenocarcinomas in never smokers and tumours with lower proliferation rates) but not genomically unstable lung tumours (such as heavy smoking related, highly proliferating lung squamous carcinomas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study's results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "a077ecda-5d42-4b4c-b588-50429fd3e6f1",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C103",
+      "claim": "Lung adenocarcinoma is postulated to be mostly derived from alveolar type 2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternately, we also note that the cell of origin may also differ, with lung adenocarcinoma postulated to be mostly derived from alveolar type 2 cells, the squamous cell carcinoma is from bronchiolar epithelium cells (Sainz de Aja et al., 2021), possibly suggesting that LTL might be more relevant to the former.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cell of origin, supported by citation to Sainz de Aja et al., 2021.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "941d6d75-d7b1-4136-8480-75a363dd8aab",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C104",
+      "claim": "Squamous cell carcinoma is postulated to be derived from bronchiolar epithelium cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternately, we also note that the cell of origin may also differ, with lung adenocarcinoma postulated to be mostly derived from alveolar type 2 cells, the squamous cell carcinoma is from bronchiolar epithelium cells (Sainz de Aja et al., 2021), possibly suggesting that LTL might be more relevant to the former.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cell of origin, supported by citation to Sainz de Aja et al., 2021.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "453c86e5-79f0-4d40-a3a1-502991d33c98",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C105",
+      "claim": "This is the first time an association between a PRS related to an aetiological factor, such as telomere length, and a particular expression component in the lung tumours is reported.",
+      "claim_type": "EXPLICIT",
+      "source": "As far as we are aware, this is the first time an association between a PRS related to an aetiological factor, such as telomere length, and a particular expression component in the lung tumours is reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "2d3bc931-114b-46f7-a59e-c1d7b2accce8",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "claim_id": "C106",
+      "claim": "Lung adenocarcinoma patients with longer LTL might have more genomically stable tumours than the ones with shorter LTL.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that lung adenocarcinoma patients with longer LTL might have more genomically stable tumours than the ones with shorter LTL, shedding some light on telomere biology in those tumours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c4d4186d-6bc9-40cb-96fb-01d3cc8d555c",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Genome-wide genetic correlation analysis revealed no overall correlation between LTL and lung cancer risk (C3), but LTL showed significant genetic correlations with smoking behaviors and lung function (C38-C43). Visualization of Z-scores revealed distinct subgroups: variants associated with longer LTL correlated with increased lung adenocarcinoma risk, while smoking-behavior variants associated with increased lung adenocarcinoma risk tended to have lower LTL (C44-C45).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C38-C45 are well-supported by LDSC analysis and Z-score visualization (Figure 1). The statistical significance of correlations is clearly reported with p-values, and the heterogeneity in genetic effects is demonstrated through visualization. The finding explains the paradoxical absence of genome-wide correlation despite causal effects observed in MR.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "068f9d44-5870-41c7-9b20-2fc9ab14ffeb",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mendelian randomization analysis demonstrated that longer genetically predicted LTL was causally associated with increased lung cancer risk (OR=1.62, p=9.91\u00d710\u207b\u00b9\u2075), with the strongest effect for lung adenocarcinoma (OR=2.43, p=3.76\u00d710\u207b\u00b2\u00b9) but limited evidence for squamous cell carcinoma (OR=1.00, p=0.98) or small-cell carcinoma (OR=1.13, p=0.34). The association was observed in both never smokers (OR=2.02, p=3.78\u00d710\u207b\u2075) and ever smokers (OR=1.54, p=7.75\u00d710\u207b\u00b9\u2070).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, and C51-C57 are strongly supported by MR analyses with highly significant p-values and appropriate confidence intervals (Figure 2). The study acknowledges being underpowered for small-cell carcinoma (C55), which is appropriate. Multiple sensitivity analyses (C58-C64) support robustness despite detected pleiotropy and heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "8e65b309-4374-40f9-90d4-c6c1c86f3010",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sensitivity analyses revealed evidence for negative pleiotropy and heterogeneity for all lung cancer outcomes except squamous cell carcinoma (C58-C59). However, MR-Egger and other robust methods confirmed significant associations (C60-C62), leave-one-out analysis identified only one outlier (rs7705526 in TERT, C63), and multivariable MR suggested the association is independent of smoking, obesity, and alcohol intake (C64).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C64 demonstrate appropriate sensitivity analyses that strengthen the primary MR findings. The detection of pleiotropy and heterogeneity is acknowledged, but the robustness of findings across multiple MR methods (MR-Egger, weighted median, etc.) and MVMR analyses provides strong support for the causal interpretation despite these violations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "75958349-3548-487a-b43a-fb33530b35e7",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Colocalisation analyses identified 12 of 144 LTL genetic instruments that shared genetic signals with lung adenocarcinoma risk (C6). These included known telomere maintenance genes (TERT, TERC, OBFC1; C65-C67) and three novel susceptibility loci (MPHOSPH6, PRPF6, POLI; C7, C68-C70). The RTEL1 locus showed distinct independent signals for LTL and lung adenocarcinoma (C71). Multi-trait analyses revealed colocalisation with lung function and gene expression but not smoking behaviors (C72-C73).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C65-C73 are supported by colocalisation analyses with appropriate posterior probability thresholds (PP4>0.70). The identification of novel loci is well-documented, and the distinction between colocalised and non-colocalised signals (e.g., RTEL1) demonstrates methodological rigor. Multi-trait analyses provide additional biological context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "fc5a5fee-98ac-41b7-b37d-0094f0383917",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Principal component analysis of RNA-sequencing data from 343 lung adenocarcinoma tumors identified five components explaining ~54% of variance (C74), each enriched for specific pathways (C75-C79). The LTL polygenic risk score was specifically associated with PC2 (Beta=0.17, p=1.0\u00d710\u207b\u00b3, C80), which was enriched for cell-cycle pathways (C76).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C74-C80 are supported by PCA analysis and pathway enrichment with appropriate FDR correction (<5%). The specific association between LTL PRS and PC2 is statistically significant and biologically coherent given PC2's enrichment for cell-cycle genes. However, the sample size (N=343) is modest, and the authors acknowledge this limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "aaa2921f-4402-48c1-94f9-45ce56bba823",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Higher PC2 values were associated with clinical features including being female (p=0.005), never smokers (p=0.04), earlier tumor stages (p=0.002), and older age at diagnosis (p=0.001) in multivariate analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 and C81-C84 are supported by multivariate analysis results presented in Table 1. The associations are statistically significant and consistent with the hypothesis that longer LTL is associated with genomically stable tumors. However, the p-value for never smokers (p=0.04) is marginal and close to the significance threshold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "69e4e770-9281-426b-bdfe-79518ea1c8c0",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PC2 was strongly associated with molecular features including reduced tumor proliferation (p=3.7\u00d710\u207b\u00b3\u2070), lower somatic copy number alterations (p=1.6\u00d710\u207b\u2075), and higher telomerase activity (p=1.6\u00d710\u207b\u2075). LTL PRS remained an independent predictor of PC2 after adjusting for these genomic features (p=0.009).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 and C85-C88 are strongly supported by multivariate analysis with highly significant p-values for molecular associations. The independence of LTL PRS as a predictor (C88) strengthens the causal interpretation. However, the authors note that individual associations between LTL PRS and these features did not survive multiple testing correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "a3ba2ca8-3c6a-4647-9fb7-9c3fec5ae370",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A 10-gene signature inferred from PC2 showed association with LTL PRS in lung adenocarcinoma (TCGA-LUAD, p=0.001) but not squamous cell carcinoma (TCGA-LUSC, p=0.729). The PC2 signature levels were higher in LUAD than LUSC, while proliferation rate and TERT activity were higher in LUSC than LUAD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C93 are supported by the validation of the PC2 signature using LASSO regression and comparison across histologic subtypes (Figure 5). The histology-specific associations are consistent with the MR findings showing stronger effects for adenocarcinoma. The statistical significance is clearly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "2ef07869-37f5-4579-ba4b-532d1d38e44a",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "From 490 genome-wide significant LTL variants, 144 independent variants (r\u00b2<0.01) explaining ~3.5% of LTL variance were selected as genetic instruments for MR analysis. A PRS based on these variants was associated with telomere length in blood (Beta=0.03, p=0.001) but not tumor tissue from TCGA samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 describe appropriate instrument selection criteria and validation. The association with blood-derived telomere length (C49) validates the PRS, while the lack of association with tumor telomere length (C50) is expected and appropriately interpreted as a sensitivity analysis rather than a failure of the instrument.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "e70bdc17-a3b5-4987-ab65-80ce34ff8a38",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The novel susceptibility genes identified through colocalisation have established biological functions: MPHOSPH6 modulates RNA binding in the exosome complex, PRPF6 promotes tumor growth via splicing regulation, and POLI is involved in DNA damage tolerance and replication stress response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C98 accurately describe established biological functions of the identified genes, supported by appropriate citations. These descriptions provide biological plausibility for the novel associations but represent background knowledge rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "e4c9bd9c-0584-459b-a9fd-628ea5540aa3",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that individuals with longer telomeres have lower telomere attrition rates, and even small differences could affect the probability of cells escaping telomere-mediated death pathways. They observe that longer LTL relates to genomically stable lung tumors (adenocarcinomas in never smokers with lower proliferation) but not genomically unstable tumors (smoking-related squamous carcinomas).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C100 are speculative mechanistic explanations supported by citation but not directly tested in this study. Claims C101-C102 represent interpretations of the observed associations but lack direct experimental validation of the proposed mechanism. The observations are consistent with the hypothesis but do not definitively establish the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "781bb824-2611-4806-8464-db2de43333cb",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establish that GWASs have identified variants for LTL and lung cancer, telomeres are essential for cell proliferation and genome integrity, telomere length shortens with age leading to cell death, telomere maintenance is a hallmark of cancer, LTL varies between individuals and correlates across tissues, and prior studies have identified associations between telomere-related variants and lung cancer risk, particularly for adenocarcinoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C15-C35, C103-C104 represent established background knowledge appropriately cited from prior literature. These claims provide context for the current study and are well-supported by the cited references. They are not novel findings but necessary background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "5166bb9d-06ea-44ac-8fa9-db990aa8f8d6",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study utilized GWAS summary statistics for lung cancer (29,239 cases and 56,450 controls) from ILCCO and LTL data from 464,716 individuals of European ancestry from UK Biobank.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 accurately describe the data sources used in the study with appropriate citations. These are factual statements about study design and data provenance that are verifiable and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    },
+    {
+      "id": "3bc9d1b1-c3bf-4213-a849-bee64c51d77c",
+      "content_id": "6f186e4a-81a5-4627-b536-475a185c5c6d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors claim this is the first report of an association between a PRS for an aetiological factor (telomere length) and a specific expression component in lung tumors, suggesting that lung adenocarcinoma patients with longer LTL have more genomically stable tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C105 regarding novelty cannot be fully verified without comprehensive literature review, though the approach appears innovative. Claim C106 is a reasonable inference from the data but represents a conclusion rather than a directly demonstrated finding. The genomic stability association is supported by correlations but not definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:28:10.269327Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "795019a2-d09f-463e-ad20-e0b73ddd721b",
+      "result_id": "c4d4186d-6bc9-40cb-96fb-01d3cc8d555c"
+    },
+    {
+      "claim_id": "4dccc64e-a58f-4dca-a17b-a003ca3faa73",
+      "result_id": "c4d4186d-6bc9-40cb-96fb-01d3cc8d555c"
+    },
+    {
+      "claim_id": "e51ef0e8-86e7-43b1-9858-a1f7e6786dec",
+      "result_id": "c4d4186d-6bc9-40cb-96fb-01d3cc8d555c"
+    },
+    {
+      "claim_id": "ddc98474-34fe-4fde-85db-a4d4ae8659e5",
+      "result_id": "c4d4186d-6bc9-40cb-96fb-01d3cc8d555c"
+    },
+    {
+      "claim_id": "d6d7ad86-c08b-428b-90ba-5ea3d4795fc1",
+      "result_id": "c4d4186d-6bc9-40cb-96fb-01d3cc8d555c"
+    },
+    {
+      "claim_id": "84c4f600-f617-45b9-9e86-96ada4aeacd4",
+      "result_id": "c4d4186d-6bc9-40cb-96fb-01d3cc8d555c"
+    },
+    {
+      "claim_id": "ae917270-1fb8-4525-a761-67aec7045501",
+      "result_id": "c4d4186d-6bc9-40cb-96fb-01d3cc8d555c"
+    },
+    {
+      "claim_id": "1bf5b5cd-11fe-40c2-9124-dc9bbf5b3bd0",
+      "result_id": "c4d4186d-6bc9-40cb-96fb-01d3cc8d555c"
+    },
+    {
+      "claim_id": "9cb8ba03-4278-400b-b2ee-07e73f37fa3e",
+      "result_id": "c4d4186d-6bc9-40cb-96fb-01d3cc8d555c"
+    },
+    {
+      "claim_id": "35a0e4ea-a955-4fcd-b079-9f2515d744ac",
+      "result_id": "068f9d44-5870-41c7-9b20-2fc9ab14ffeb"
+    },
+    {
+      "claim_id": "4c027fab-1fc5-4c91-b583-f9b4c4eae02a",
+      "result_id": "068f9d44-5870-41c7-9b20-2fc9ab14ffeb"
+    },
+    {
+      "claim_id": "72538ab9-3513-4470-b96b-225a9c38f23f",
+      "result_id": "068f9d44-5870-41c7-9b20-2fc9ab14ffeb"
+    },
+    {
+      "claim_id": "423773a3-dd07-40c1-aabe-0a1f42737d5a",
+      "result_id": "068f9d44-5870-41c7-9b20-2fc9ab14ffeb"
+    },
+    {
+      "claim_id": "5e9a75b0-12d5-4c8f-ba66-a57d6c600e25",
+      "result_id": "068f9d44-5870-41c7-9b20-2fc9ab14ffeb"
+    },
+    {
+      "claim_id": "4792947d-f77b-452f-bd78-6db605f282ae",
+      "result_id": "068f9d44-5870-41c7-9b20-2fc9ab14ffeb"
+    },
+    {
+      "claim_id": "e321558f-46ba-4301-b890-0fe7f9e490d5",
+      "result_id": "068f9d44-5870-41c7-9b20-2fc9ab14ffeb"
+    },
+    {
+      "claim_id": "1c2d91e0-215a-4bed-b1a4-1f1dd9e71659",
+      "result_id": "068f9d44-5870-41c7-9b20-2fc9ab14ffeb"
+    },
+    {
+      "claim_id": "30368ac0-2555-4c1e-bbad-34ae17c77783",
+      "result_id": "068f9d44-5870-41c7-9b20-2fc9ab14ffeb"
+    },
+    {
+      "claim_id": "3c438dfe-6b3c-44fd-86ab-4021d856db87",
+      "result_id": "8e65b309-4374-40f9-90d4-c6c1c86f3010"
+    },
+    {
+      "claim_id": "73ba73e0-552c-45b0-9ba9-976ba42a51da",
+      "result_id": "8e65b309-4374-40f9-90d4-c6c1c86f3010"
+    },
+    {
+      "claim_id": "58f8fc34-fc85-44ab-8715-8626fc983b61",
+      "result_id": "8e65b309-4374-40f9-90d4-c6c1c86f3010"
+    },
+    {
+      "claim_id": "51b1fe50-c779-43c7-9e3e-09ca47d57c31",
+      "result_id": "8e65b309-4374-40f9-90d4-c6c1c86f3010"
+    },
+    {
+      "claim_id": "cb642357-00b4-44a3-b0e2-b9508e6d0c06",
+      "result_id": "8e65b309-4374-40f9-90d4-c6c1c86f3010"
+    },
+    {
+      "claim_id": "34c9d3c4-2f86-4180-9359-7e2386baa6c2",
+      "result_id": "8e65b309-4374-40f9-90d4-c6c1c86f3010"
+    },
+    {
+      "claim_id": "243b58b2-5921-4dba-a6d3-756392a36d58",
+      "result_id": "8e65b309-4374-40f9-90d4-c6c1c86f3010"
+    },
+    {
+      "claim_id": "238bccf6-5585-4bba-a953-597cea642188",
+      "result_id": "75958349-3548-487a-b43a-fb33530b35e7"
+    },
+    {
+      "claim_id": "e53583c3-20fa-4ce4-9bf4-f6e82c1f6025",
+      "result_id": "75958349-3548-487a-b43a-fb33530b35e7"
+    },
+    {
+      "claim_id": "6c2b49e9-e650-4fe1-a432-8e1f937a7dbf",
+      "result_id": "75958349-3548-487a-b43a-fb33530b35e7"
+    },
+    {
+      "claim_id": "9e160ce4-4e23-47ae-8adf-d7b90fe1f9b7",
+      "result_id": "75958349-3548-487a-b43a-fb33530b35e7"
+    },
+    {
+      "claim_id": "a2e21bcc-a58b-4ffd-9121-64d35ee68905",
+      "result_id": "75958349-3548-487a-b43a-fb33530b35e7"
+    },
+    {
+      "claim_id": "62a6a599-5ff8-4b09-b4bf-c8dc66f52a24",
+      "result_id": "75958349-3548-487a-b43a-fb33530b35e7"
+    },
+    {
+      "claim_id": "9dc0b905-19f4-4c97-ae9a-fba3297e90bd",
+      "result_id": "75958349-3548-487a-b43a-fb33530b35e7"
+    },
+    {
+      "claim_id": "6c31b34e-53f4-42bb-a944-8b7e2940d571",
+      "result_id": "75958349-3548-487a-b43a-fb33530b35e7"
+    },
+    {
+      "claim_id": "8d2506e8-5855-445c-9778-7a9b176912ae",
+      "result_id": "75958349-3548-487a-b43a-fb33530b35e7"
+    },
+    {
+      "claim_id": "a79ba3ed-4ef7-4b21-bb2d-1d4f8eead4fe",
+      "result_id": "75958349-3548-487a-b43a-fb33530b35e7"
+    },
+    {
+      "claim_id": "f8bb6dc8-d974-4093-91e8-651af19e4264",
+      "result_id": "75958349-3548-487a-b43a-fb33530b35e7"
+    },
+    {
+      "claim_id": "1fb11703-1b48-435c-ac37-b0615989e982",
+      "result_id": "fc5a5fee-98ac-41b7-b37d-0094f0383917"
+    },
+    {
+      "claim_id": "10741fa8-14df-4739-9c4e-74a2ad5756ef",
+      "result_id": "fc5a5fee-98ac-41b7-b37d-0094f0383917"
+    },
+    {
+      "claim_id": "d298ebae-46a4-42f6-92cc-3d8b64fe29c6",
+      "result_id": "fc5a5fee-98ac-41b7-b37d-0094f0383917"
+    },
+    {
+      "claim_id": "1166df21-7ddc-46b6-9047-7e803bfe02cc",
+      "result_id": "fc5a5fee-98ac-41b7-b37d-0094f0383917"
+    },
+    {
+      "claim_id": "419d0d0f-7149-4132-9f37-3929aeaf962f",
+      "result_id": "fc5a5fee-98ac-41b7-b37d-0094f0383917"
+    },
+    {
+      "claim_id": "d049a1dd-0faa-4d85-abc8-ffa350a8da34",
+      "result_id": "fc5a5fee-98ac-41b7-b37d-0094f0383917"
+    },
+    {
+      "claim_id": "c30f73d5-bbb5-4994-9aa9-07940c25475b",
+      "result_id": "fc5a5fee-98ac-41b7-b37d-0094f0383917"
+    },
+    {
+      "claim_id": "84a0a1d4-6fbf-4472-ba71-40e0a5114834",
+      "result_id": "fc5a5fee-98ac-41b7-b37d-0094f0383917"
+    },
+    {
+      "claim_id": "5f47b845-52da-4886-ac0c-e9168f5b45c5",
+      "result_id": "aaa2921f-4402-48c1-94f9-45ce56bba823"
+    },
+    {
+      "claim_id": "a1f6ce42-a2d4-4f24-85d1-0a50a3fbf47a",
+      "result_id": "aaa2921f-4402-48c1-94f9-45ce56bba823"
+    },
+    {
+      "claim_id": "05f3e399-8494-4af1-9a94-6cb3ff8dc8cf",
+      "result_id": "aaa2921f-4402-48c1-94f9-45ce56bba823"
+    },
+    {
+      "claim_id": "69e6a635-9b57-41f9-b3ce-4ad5b264b1cc",
+      "result_id": "aaa2921f-4402-48c1-94f9-45ce56bba823"
+    },
+    {
+      "claim_id": "77b859b2-4bbc-4531-b63a-3cfaae9d3b71",
+      "result_id": "aaa2921f-4402-48c1-94f9-45ce56bba823"
+    },
+    {
+      "claim_id": "60ecb5db-1ae0-42ab-94c4-10dccc40ceb1",
+      "result_id": "aaa2921f-4402-48c1-94f9-45ce56bba823"
+    },
+    {
+      "claim_id": "77a0f9e2-865f-4ce0-8a9b-5c8f48a43aa8",
+      "result_id": "aaa2921f-4402-48c1-94f9-45ce56bba823"
+    },
+    {
+      "claim_id": "4d754a17-9045-4099-aa3c-c46566e8773f",
+      "result_id": "69e4e770-9281-426b-bdfe-79518ea1c8c0"
+    },
+    {
+      "claim_id": "6a525eef-0aa4-4aa5-849f-11e7cff559c5",
+      "result_id": "69e4e770-9281-426b-bdfe-79518ea1c8c0"
+    },
+    {
+      "claim_id": "dba7e5dc-1c6d-4c89-bbfc-2b1cad520c6b",
+      "result_id": "69e4e770-9281-426b-bdfe-79518ea1c8c0"
+    },
+    {
+      "claim_id": "f45a1960-79da-4a52-be19-57e1bab82a35",
+      "result_id": "69e4e770-9281-426b-bdfe-79518ea1c8c0"
+    },
+    {
+      "claim_id": "19cb3ae2-f5ae-4c87-a4e5-09e2227268b7",
+      "result_id": "69e4e770-9281-426b-bdfe-79518ea1c8c0"
+    },
+    {
+      "claim_id": "fb49f106-6789-4583-ac79-e9186374b549",
+      "result_id": "69e4e770-9281-426b-bdfe-79518ea1c8c0"
+    },
+    {
+      "claim_id": "c6ebe5e5-985f-41ce-adb3-89b4caff5285",
+      "result_id": "69e4e770-9281-426b-bdfe-79518ea1c8c0"
+    },
+    {
+      "claim_id": "4f233b34-07ea-4f4a-a00d-8eb91fbb7105",
+      "result_id": "a3ba2ca8-3c6a-4647-9fb7-9c3fec5ae370"
+    },
+    {
+      "claim_id": "048ea656-8edd-422f-b1b3-b96c58e0f766",
+      "result_id": "a3ba2ca8-3c6a-4647-9fb7-9c3fec5ae370"
+    },
+    {
+      "claim_id": "fafd55d8-b4bc-4cee-b27e-9115b33f62e6",
+      "result_id": "a3ba2ca8-3c6a-4647-9fb7-9c3fec5ae370"
+    },
+    {
+      "claim_id": "1cef2e21-38e9-4e16-858a-68643d3cc2db",
+      "result_id": "a3ba2ca8-3c6a-4647-9fb7-9c3fec5ae370"
+    },
+    {
+      "claim_id": "e8d4a957-895d-415b-8284-ad96d001a1ee",
+      "result_id": "a3ba2ca8-3c6a-4647-9fb7-9c3fec5ae370"
+    },
+    {
+      "claim_id": "2e353a8b-ca53-4750-801b-6865fd5a58fa",
+      "result_id": "2ef07869-37f5-4579-ba4b-532d1d38e44a"
+    },
+    {
+      "claim_id": "5ac76fe4-103d-4080-bfa9-856ca6b1c325",
+      "result_id": "2ef07869-37f5-4579-ba4b-532d1d38e44a"
+    },
+    {
+      "claim_id": "b3c4b91d-d2eb-47e6-8847-cfa55a2234ab",
+      "result_id": "2ef07869-37f5-4579-ba4b-532d1d38e44a"
+    },
+    {
+      "claim_id": "eddfcbb4-c896-43d5-b82a-6875eb18eea8",
+      "result_id": "2ef07869-37f5-4579-ba4b-532d1d38e44a"
+    },
+    {
+      "claim_id": "8d4e8482-1e96-4ea3-8dfd-a5d1da18afe3",
+      "result_id": "2ef07869-37f5-4579-ba4b-532d1d38e44a"
+    },
+    {
+      "claim_id": "e8b77af4-b5dc-490e-932c-b8f23e403152",
+      "result_id": "e70bdc17-a3b5-4987-ab65-80ce34ff8a38"
+    },
+    {
+      "claim_id": "098a43cc-0f7d-480d-b957-97f9df45723e",
+      "result_id": "e70bdc17-a3b5-4987-ab65-80ce34ff8a38"
+    },
+    {
+      "claim_id": "c640d07d-276c-460f-9b22-47cd71754b55",
+      "result_id": "e70bdc17-a3b5-4987-ab65-80ce34ff8a38"
+    },
+    {
+      "claim_id": "aa4108c3-e942-4ffc-8867-ea30dd899c53",
+      "result_id": "e70bdc17-a3b5-4987-ab65-80ce34ff8a38"
+    },
+    {
+      "claim_id": "fa619845-773a-4f36-9d48-b8dd6821060c",
+      "result_id": "e70bdc17-a3b5-4987-ab65-80ce34ff8a38"
+    },
+    {
+      "claim_id": "e01f7c77-1716-4f13-8824-9d9548555660",
+      "result_id": "e4c9bd9c-0584-459b-a9fd-628ea5540aa3"
+    },
+    {
+      "claim_id": "3535fce7-c7fc-4eeb-996e-38d45a787504",
+      "result_id": "e4c9bd9c-0584-459b-a9fd-628ea5540aa3"
+    },
+    {
+      "claim_id": "95cf5462-2a17-4fd6-87ee-90aa1947ab18",
+      "result_id": "e4c9bd9c-0584-459b-a9fd-628ea5540aa3"
+    },
+    {
+      "claim_id": "6a37cf37-c382-44f9-9c16-35abd59a4908",
+      "result_id": "e4c9bd9c-0584-459b-a9fd-628ea5540aa3"
+    },
+    {
+      "claim_id": "2a9ece2f-2daf-4219-a045-a6ea82ff608f",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "f1c0dc11-63ad-4b75-8ea0-941031cc2292",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "aa17bc24-e28b-4d8e-8e37-ab177020e86d",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "486bf5d6-cc3e-4dad-8373-0d5cf605dc1b",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "f480f266-5210-4e75-b075-3a938f386129",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "89d8f87d-edd5-4a5e-a122-c49a35334023",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "67028102-5d5b-4694-86f6-28b04bb3aa02",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "3400485a-7d6c-4758-b706-f3e5cfd62c24",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "1699f337-8b80-43d3-88a4-f2d7b9d530c4",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "2b0e4b0b-8842-44ed-a7e6-c4d09b383fae",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "12d04625-bf68-4f5d-936e-7b42bbebcea5",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "e1db105c-171d-4c69-96ec-dc0397988d09",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "c063984b-b676-47ac-9410-09202e50920b",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "0b1123eb-891f-4b6c-a514-5d1b87c1b089",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "a68cb662-0a6e-48dc-ac87-1a72de25dc98",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "3f13aebe-00bb-400f-8e95-5c49d0546316",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "25e3f353-ac2b-4801-919e-958a76d0424f",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "20624d4e-f1a7-4afc-a337-53948462fa55",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "7f72c4b0-3a5d-493f-b1b0-e2d9a8925635",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "dd66a601-b8d5-4cd4-9269-369e52fc1bf1",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "026ed157-c698-42f0-b19e-ade5a1d6062d",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "b9e71623-2bee-45ad-89de-8863210f1a16",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "412be897-830c-411d-a1b0-d016237d4732",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "a077ecda-5d42-4b4c-b588-50429fd3e6f1",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "941d6d75-d7b1-4136-8480-75a363dd8aab",
+      "result_id": "781bb824-2611-4806-8464-db2de43333cb"
+    },
+    {
+      "claim_id": "a2bda6ae-43d9-43b4-8194-d1a23c31f13a",
+      "result_id": "5166bb9d-06ea-44ac-8fa9-db990aa8f8d6"
+    },
+    {
+      "claim_id": "88785921-4a45-4076-9a90-bd035eb39c05",
+      "result_id": "5166bb9d-06ea-44ac-8fa9-db990aa8f8d6"
+    },
+    {
+      "claim_id": "453c86e5-79f0-4d40-a3a1-502991d33c98",
+      "result_id": "3bc9d1b1-c3bf-4213-a849-bee64c51d77c"
+    },
+    {
+      "claim_id": "2d3bc931-114b-46f7-a59e-c1d7b2accce8",
+      "result_id": "3bc9d1b1-c3bf-4213-a849-bee64c51d77c"
+    }
+  ],
+  "comparisons": []
+}

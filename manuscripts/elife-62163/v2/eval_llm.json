@@ -1,0 +1,445 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C55",
+      "C56",
+      "C57",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors determined cryo-EM structures of S. cerevisiae Dnf1\u2013Lem3 in three states (E1, E1P-ADP, E2P) and Dnf2\u2013Lem3 in five states (E1, E1-ATP, E1P-ADP, E2P, E2P-transition) at resolutions of 2.8\u20134.0 \u00c5. The complexes were purified from yeast using FLAG-tagged constructs and stabilized with detergents DDM, LMNG, and CHS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-44, C55-57 are well-supported by extensive cryo-EM data shown in Figures 2 and supplementary figures, including 2D class averages, 3D reconstructions, FSC curves, and resolution assessments. The purification methods (C48-51) are standard and appropriately described. The 2.8 \u00c5 resolution E2P structure enabled atomic model building (C57), which is excellent for cryo-EM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C91",
+      "C92",
+      "C93",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors captured phosphatidylcholine molecules at both exoplasmic (PL1) and cytosolic (PL2, PL3) sides of the flippases. Three phospholipid-like densities were observed in the E2P state structure, modeled as endogenous substrates co-purified with the complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-7, C91-93, C59-61 are supported by clear cryo-EM density shown in Figures 2A and 3A. The assignment of these densities as phospholipids is reasonable based on their location in the substrate-transport path, shape, and the precedent from other studies (C94). The inference that these are endogenous substrates (C93) is logical given no exogenous lipids were added during purification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C113"
+    ],
+    "result": "Structure-based mutagenesis and functional assays demonstrate that PL1 is at the substrate entry site on the exoplasmic side. Mutations at the PL1 site (Q610A, YQS611-FSN, N1226A) affected substrate transport differentially, with N1226A completely abolishing transport of all substrates while maintaining proper folding and plasma membrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-109, C113 are well-supported by comprehensive functional data in Figure 4A and supplementary figures. The mutagenesis is structure-guided (C99), expression levels are controlled (C100), and multiple complementary assays (lipid uptake, localization, viability) provide converging evidence. The N1226A phenotype (C105-109) is particularly strong evidence for PL1 being at the substrate entry site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "PL2 is located at the substrate exit site on the cytosolic side, with its head group stabilized by conserved residues including Arg-264, Tyr-633, Thr-648, Trp-652 of Dnf1. Mutations at this site showed varied effects: R264A enhanced transport, Y633A and T648A had no effect, while W652 mutations eliminated transport but caused ER retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-123 are supported by structural data (Figure 3) and functional assays (Figure 4A, E). The R264A gain-of-function phenotype (C118, C122-123) provides strong support for PL2 being a substrate exit site. However, the W652 mutations (C120-121) are complicated by ER retention, making it difficult to separate folding defects from direct functional effects. The speculation about R264 trapping substrates (C122) is reasonable but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C137"
+    ],
+    "result": "Lem3 contributes to substrate binding and specificity through direct interaction with substrates. Lem3 Arg-51 directly interacts with PL2, and the R51A mutation selectively increased GlcCer transport 1.5-2 fold without affecting PC or PE transport, supporting Lem3's role in substrate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C127-132, C137 are well-supported by structural data showing Lem3 R51 interacting with PL2 (Figure 3) and functional data showing substrate-specific effects of R51A mutation (Figure 4B-C, E). This is a novel finding as prior studies of PS flippases (C138) did not identify such a role for the \u03b2-subunit. The speculation about GlcCer competition (C130) is reasonable given the lack of phosphate in GlcCer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The N-terminal (\u03942-49) and C-terminal (\u0394400-414) regions of Lem3 are essential for Dnf1/Dnf2 function and trafficking. Deletion of either region significantly reduced substrate transport activity and abolished Lem3's ability to escort Dnf1 out of the ER to the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-136 are supported by functional assays (Figure 4B-C) and localization data (Figure 4E). The dual defects in both activity and trafficking make it difficult to separate direct functional roles from indirect effects via mislocalization. However, the data clearly demonstrate that both termini are essential for proper complex function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Lem3 has unique ordered N- and C-terminal regions, unlike Cdc50/CDC50a where these regions are disordered. The Lem3 N-terminal peptide forms a two-turn \u03b1-helix that binds the Dnf1 A domain through electrostatic interactions between a highly negative Lem3 segment (Glu-28 to Glu-42) and a positively charged A domain interface. This interaction likely regulates lipid transport activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-88 are supported by structural data (Figure 2, Figure 2\u2014figure supplement 11) showing ordered density for Lem3 termini and electrostatic complementarity. The exact sequence assignment (C83, C86) is appropriately cautious given partial flexibility. The regulatory role (C87-88) is inferred from A domain movement during the transport cycle and is supported by functional data on Lem3 truncations (C133-136).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C152",
+      "C173",
+      "C174",
+      "C178",
+      "C179",
+      "C195"
+    ],
+    "result": "The conformational transitions of PC transporters (Dnf1/Dnf2) match those of PS transporters (Drs2/ATP8A1), suggesting a conserved transport mechanism among P4 ATPases. ATP binding, hydrolysis, and dephosphorylation drive domain rearrangements that couple to substrate transport through the Post-Albers cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-10, C152, C173-174, C178-179, C195 are well-supported by structural comparisons across multiple states (Figure 5, Figure 6) and alignment with ATP8A1 structures. The structural similarity in domain architecture and substrate-transport path between PC and PS flippases (C178) provides strong evidence for a conserved mechanism. The mechanistic interpretation of energy transduction (C174) is reasonable based on the observed conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C196"
+    ],
+    "result": "Dnf1/Dnf2 contain a unique helix-turn-helix motif (E692-S737) in the N domain that is absent in Drs2 and ATP8A1. This motif shows state-dependent interactions with the P domain (E1, E1P-ADP states) and C-tail (E2P state), and its deletion strongly decreased transport of all substrates, confirming a crucial regulatory role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C187-194, C196 are strongly supported by structural data (Figure 6) showing the motif and its state-dependent interactions, and functional data (Figure 4A) demonstrating severe loss of function upon deletion. The systematic changes in interactions across states (C188-190) support a regulatory role (C191). This represents a unique structural feature distinguishing PC flippases from PS flippases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C176",
+      "C177"
+    ],
+    "result": "The substrate-transport pathway is located between TMH2 and TMH4, nearly perpendicular to the membrane plane and open to the lipid bilayer. The pathway is hydrophilic at entry/exit sites but hydrophobic in the middle gating region, compatible with the 'credit card' mechanism where lipid headgroups slide through the groove while acyl chains remain in the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-149, C176-177 are supported by structural analysis (Figure 3E) showing the pathway geometry and chemical properties of lining residues. The 'credit card' mechanism interpretation (C149, C177) is reasonable given the pathway properties and is consistent with prior models. The mechanistic proposal (C176) about headgroup and tail movement is logical but remains somewhat speculative without direct dynamic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Purified Dnf1\u2013Lem3 and Dnf2\u2013Lem3 complexes show substrate-specific ATPase activity. Only the substrate GlcCer, but not the non-substrate sphingomyelin, stimulated ATPase activity in a concentration-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-54 are supported by ATPase activity assay data (Figure 1C-D) showing substrate specificity and dose-dependence. This validates that the purified complexes are functional and can discriminate between substrates and non-substrates, providing important quality control for the structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Dnf1 has the expected P4 ATPase architecture with 10 TMHs, cytosolic A, P, and N domains, and largely disordered N- and C-terminal tails except for segments that interact with regulatory domains. Lem3 contains two TMHs packed against Dnf1 TMH10, a lumenal domain with two disulfide bonds and four N-glycans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-67, C77-80 describe standard structural features directly observed in the high-resolution cryo-EM structure (Figure 2). These are well-supported by clear density and are consistent with known P4 ATPase architecture. The identification of disulfide bonds and glycosylation sites is appropriate at 2.8 \u00c5 resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C76"
+    ],
+    "result": "The ordered Dnf1 C-tail segment contains a helix equivalent to an auto-inhibitory switch in Drs2, but in Dnf1 this helix is stabilized by Lem3 C-tail in an active conformation. This suggests Dnf1/Dnf2 do not require PI4P binding for activation but are instead regulated by phosphorylation, as all 17 known phosphorylation sites are in disordered regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-70, C76 are supported by structural comparison with Drs2 (C68, cited literature) and mapping of phosphorylation sites onto the structure (C75). The inference about activation mechanism (C70, C76) is logical based on structural differences from Drs2 and the location of phosphorylation sites, though direct functional validation of the phosphorylation-based activation model would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "During the transport cycle, TMH3-10, P domain, and most of Lem3 remain stationary, while TMH1-2 and A/N domains undergo significant movements coupled to substrate transport. ATP binding stabilizes A-N domain interaction, ADP release triggers N domain rotation and TMH1-2 tilting to open the exoplasmic site and close the cytosolic site, and dephosphorylation reverses these changes to drive lipid flipping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-172 describe detailed conformational changes observed across multiple states (Figure 5). These are well-supported by structural superpositions and comparison of cryo-EM maps. The coupling of domain movements to substrate transport (C156, C172) is inferred from the correlation between structural changes and lipid binding site accessibility, which is reasonable but somewhat speculative without direct observation of lipid movement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The Dnf1 substrate translocation path is composed of TMH1-4 and TMH6, consistent with biochemical studies. The GA motif (230-231) in TMH1B is near the PL1-binding site, and the PL1-binding site superimposes with the substrate-binding site of ATP8A1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-90, C110-112 are supported by structural analysis (Figure 3) and comparison with ATP8A1 (Figure 3\u2014figure supplement 1). The consistency with prior biochemical studies (C90) and the structural alignment with ATP8A1 (C112) provide strong support. The GA motif's role in GlcCer transport (C111) is supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The PL3 site is located next to PL2 and is composed of mostly non-conserved residues except F631. The authors suggest PL3 plays an accessory role, perhaps facilitating substrate release from PL2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-126 are based on structural observation (C124) and sequence conservation analysis (C125), but the proposed accessory role (C126) is speculative without functional validation. No mutagenesis data for the PL3 site is presented to test this hypothesis. The lack of conservation (C125) actually argues against a critical functional role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The three phospholipids in Dnf1 are out of register with the lipid bilayer by approximately 10 \u00c5: PL1 is moved ~10 \u00c5 into the bilayer middle, while PL2 and PL3 are moved ~10 \u00c5 into the cytosolic space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-97 are based on structural analysis of lipid positions relative to the membrane (Figure 3A). This is a reasonable interpretation of the structure, though the exact membrane boundaries can be somewhat ambiguous in detergent-solubilized structures. The out-of-register positioning is consistent with the lipids being in transit during transport.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "A concurrent study reported C. thermophilum Dnf1\u2013Cdc50 structures containing two lipids equivalent to PL1 and PL2, but without functional evidence they were substrate lipids. The equivalence indicates PC flippases in both species share a similar substrate path.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-142 appropriately reference and critically assess a concurrent study (He et al., 2020). The criticism that the other study lacked functional validation (C140) is fair, and the current study's functional data (C98-137) addresses this gap. The conclusion about conserved substrate path (C142) is reasonable based on structural equivalence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "Dnf1/2 belong to the P4A class with Drs2 and ATP8A1 in phylogenetic classification. The structural and mechanistic similarities support this classification and suggest all P4-ATPases may employ a similar transport mechanism, though more definitive support requires analysis of P4B and P4C class members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-184 appropriately relate the findings to phylogenetic classification (cited) and recent ATP11C studies (C182, cited). The suggestion of a universal mechanism (C183) is appropriately cautious, acknowledging the need for more data (C184). The structural similarities observed (C181) do support the classification scheme.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "Dnf1 and Dnf2 share 69% sequence identity, localize to the same membrane, transport the same substrates, and have redundant functions. Structures in E1, E1P-ADP, and E2P states are superimposable, indicating they have highly similar structures and go through virtually the same functional states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-204 are supported by sequence comparison (C199), cited literature (C200-202), and structural superposition (C203, Figure 2\u2014figure supplement 10). The high sequence identity and structural similarity make the conclusion about similar functional states (C204) well-supported. This justifies treating the two flippases together in the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Background information on P-type ATPases and P4 ATPases, including their classification, function, substrate specificity, and prior structural studies. This establishes the context and knowledge gaps that motivated the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-4, C13-42, C72-74 provide background knowledge and cite appropriate literature. These are well-established facts in the field and properly referenced. The identification of knowledge gaps (C3-4, C39) appropriately motivates the current study's focus on cytosolic substrate-binding sites and PC flippase mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C12",
+      "C197",
+      "C198"
+    ],
+    "result": "P4 ATPases may have retained an overall transport mechanism while evolving distinct features for different lipid substrates. The \u03b2-subunit Lem3's role in substrate binding and the helix-turn-helix motif are unique to class-3 enzymes. This work advances mechanistic understanding of P4 ATPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C197-198 represent the major conclusions synthesizing the findings. These are well-supported by the combination of conserved features (transport mechanism, C195) and unique features (Lem3 role C197, helix-turn-helix motif C196) demonstrated throughout the study. The conclusion appropriately balances conservation and divergence in P4 ATPase mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C150"
+    ],
+    "result": "During transport, the lipid head group likely inserts into and makes direct interactions with hydrophilic residues between TMH2 and TMH4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C150 is a mechanistic speculation about lipid movement during transport. While this is consistent with the 'credit card' model and the observed pathway properties, it lacks direct experimental evidence. The structures capture static snapshots, not the dynamic process of lipid movement through the pathway.",
+    "result_type": "MINOR"
+  }
+]

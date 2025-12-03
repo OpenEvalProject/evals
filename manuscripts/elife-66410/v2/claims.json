@@ -1,0 +1,1872 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "C. elegans has 302 neurons that are named and have stereotyped locations across animals.",
+    "claim_type": "EXPLICIT",
+    "source": "The nervous system of the nematode C. elegans is well characterized, such that each of the 302 neurons is named and has stereotyped locations across animals (White et al., 1986; Sulston, 1976; Witvliet et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to White et al., 1986; Sulston, 1976; Witvliet et al., 2020",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The variability in neurons' spatial arrangement in C. elegans is sufficient to make predicting neural correspondence a challenge.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the worm's overall stereotypy, the variability in neurons' spatial arrangement is sufficient to make predicting neural correspondence a challenge.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on the authors' assessment of the problem domain",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Nuclear localized markers used in whole-brain calcium imaging obscure morphological features that would assist in neural identification.",
+    "claim_type": "EXPLICIT",
+    "source": "For whole-brain calcium imaging (Schr\u00f6del et al., 2013; Venkatachalam et al., 2016; Nguyen et al., 2016), identifying neurons across animals is additionally challenging because the nuclear localized markers that are used tend to obscure morphological features that would otherwise assist in neural identification.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to calcium imaging studies and reasoning about the technical challenge",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The fDNC model is based on the transformer network architecture.",
+    "claim_type": "EXPLICIT",
+    "source": "We present an automated method to track and identify neurons in C. elegans, called 'fast Deep Neural Correspondence' or fDNC, based on the transformer network architecture.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct statement in the abstract about the model architecture",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The fDNC model is trained once on empirically derived semi-synthetic data.",
+    "claim_type": "EXPLICIT",
+    "source": "The model is trained once on empirically derived semi-synthetic data and then predicts neural correspondence across held-out real animals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct statement in the abstract about the training approach",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The same pre-trained fDNC model both tracks neurons across time and identifies corresponding neurons across individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "The same pre-trained model both tracks neurons across time and identifies corresponding neurons across individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct statement in the abstract about model capabilities",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Using only position information, the fDNC method achieves 79.1% accuracy at tracking neurons within an individual.",
+    "claim_type": "EXPLICIT",
+    "source": "Using only position information, the method achieves 79.1% accuracy at tracking neurons within an individual and 64.1% accuracy at identifying neurons across individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative performance metric reported in the abstract",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Using only position information, the fDNC method achieves 64.1% accuracy at identifying neurons across individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Using only position information, the method achieves 79.1% accuracy at tracking neurons within an individual and 64.1% accuracy at identifying neurons across individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative performance metric reported in the abstract",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The fDNC method achieves 78.2% accuracy at identifying neurons across individuals when applied to a dataset published by Chaudhary et al., 2021.",
+    "claim_type": "EXPLICIT",
+    "source": "Accuracy at identifying neurons across individuals is even higher (78.2%) when the model is applied to a dataset published by another group (Chaudhary et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative performance metric reported in the abstract with citation",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The fDNC method achieves 74.7% accuracy when using color information from NeuroPAL.",
+    "claim_type": "EXPLICIT",
+    "source": "Accuracy reaches 74.7% on our dataset when using color information from NeuroPAL.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative performance metric reported in the abstract",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "fDNC does not require straightening or transforming the animal into a canonical coordinate system.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike previous methods, fDNC does not require straightening or transforming the animal into a canonical coordinate system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct statement in the abstract about method advantages",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The fDNC method predicts correspondence in 10 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "The method is fast and predicts correspondence in 10 ms making it suitable for future real-time applications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative timing measurement reported in the abstract",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The 10 ms prediction time makes fDNC suitable for future real-time applications.",
+    "claim_type": "EXPLICIT",
+    "source": "The method is fast and predicts correspondence in 10 ms making it suitable for future real-time applications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inference based on the measured speed",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Tracking neurons within an individual across time is needed to extract calcium dynamics from neurons during freely moving population calcium imaging.",
+    "claim_type": "EXPLICIT",
+    "source": "Tracking across time is needed to extract calcium dynamics from neurons during freely moving population calcium imaging (Venkatachalam et al., 2016; Nguyen et al., 2016; Lagache et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to relevant calcium imaging studies",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Very fast real-time tracking will be needed to bring closed-loop techniques such as brain-machine interfaces and optical patch clamping to moving animals.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, very fast real-time tracking will be needed to bring closed-loop techniques such as brain-machine interfaces (Clancy et al., 2014), and optical patch clamping (Hochbaum et al., 2014) to moving animals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to relevant closed-loop technique studies",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Most automated methods for C. elegans focus on finding the extrinsic similarity between one neuron configuration and another.",
+    "claim_type": "EXPLICIT",
+    "source": "Most methods developed so far focus on finding the extrinsic similarity (Bronstein, 2007) between one neuron configuration, called a test, and another neuron configuration called a template.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Bronstein, 2007 and description of existing methods",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Non-rigid registration methods like Coherent Point Drift (CPD) optimize a warping function between neuron positions in test and template.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, a simple implementation would be to use a non-rigid registration model, like Coherent Point Drift (CPD) (Myronenko and Song, 2010) to optimize a warping function between neuron positions in the test and template.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Myronenko and Song, 2010",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "NeRVE uses a non-rigid point set registration algorithm to find a warping function that minimizes the difference between neuron configurations at different time points.",
+    "claim_type": "EXPLICIT",
+    "source": "NeRVE registration and clustering (Nguyen et al., 2017), for example, also uses a non-rigid point set registration algorithm (Jian and Vemuri, 2011) to find a warping function that minimizes the difference between a configuration of neurons at one time point and another.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to Nguyen et al., 2017 and Jian and Vemuri, 2011",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "NeRVE registers test neurons onto multiple templates to define a feature vector and finds neural correspondence by clustering those feature vectors.",
+    "claim_type": "EXPLICIT",
+    "source": "But NeRVE further registers the test neurons onto multiple templates to define a feature vector and then finds neural correspondence by clustering those feature vectors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the NeRVE method from Nguyen et al., 2017",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Generative models specify a joint probability distribution over neural labels and the locations, shapes, sizes, or appearance of neurons identified in imaging data of multiple individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "These generative models specify a joint probability distribution over neural labels and the locations, shapes, sizes, or appearance of neurons identified in the imaging data of multiple individuals (Bubnis et al., 2019; Varol et al., 2020; Nejatbakhsh et al., 2020; Nejatbakhsh and Varol, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to multiple generative modeling papers",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Recent work has used conditional random fields (CRF) to directly parameterize a conditional distribution over neuron labels.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, recent work (Chaudhary et al., 2021) has used conditional random fields (CRF) to directly parameterize a conditional distribution over neuron labels, rather than assuming a model for the high-dimensional and complex image data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Chaudhary et al., 2021",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "CRF allows for a wide range of informative features to be incorporated in the model, such as angles between neurons or their relative anterior-posterior positions.",
+    "claim_type": "EXPLICIT",
+    "source": "CRF allows for a wide range of informative features to be incorporated in the model, such as the angles between neurons, or their relative anterior-posterior positions, which are known to be useful for identifying neurons (Long et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Long et al., 2009",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Artificial neural networks require immensely large training sets.",
+    "claim_type": "EXPLICIT",
+    "source": "Artificial neural networks are ideal for tackling this problem, but they require immensely large training sets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on established knowledge about neural network training requirements",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Until now, the use of artificial neural networks for neuron identification in C. elegans has been limited.",
+    "claim_type": "EXPLICIT",
+    "source": "Until now, their use for neuron identification has been limited.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Assessment of the state of the field",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "In one tracking algorithm, artificial neural networks provide only the initialization for non-rigid registration.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, in one tracking algorithm, artificial neural networks provide only the initialization, or first guess, for non-rigid registration (Wen et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Wen et al., 2018",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "It is straightforward to generate very large semi-synthetic datasets of test and template worms that are derived from measurements.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach is based on a simple insight: it is straightforward to generate very large semi-synthetic datasets of test and template worms that nonetheless are derived from measurements.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' description of their methodological approach",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The fDNC approach uses neural positions extracted from existing imaging datasets and applies known, nonlinear transformations to warp those positions into new shapes.",
+    "claim_type": "EXPLICIT",
+    "source": "We use neural positions extracted from existing imaging datasets, and then apply known, nonlinear transformations to warp those positions into new shapes for other body postures, or other individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the data generation method",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The fDNC approach simulates types of noise that appear in real datasets, such as missing or spurious neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, we simulate the types of noise that appear in real datasets, such as missing or spurious neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the data generation method",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Using semi-synthetic data allows training the fDNC model even when completely lacking experimentally acquired ground truth data.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, using semi-synthetic data also allows us to train our model even when we completely lack experimentally acquired ground truth data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' description of their methodological advantage",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "In this work, semi-synthetic data is derived exclusively from measurements that lack any ground truth correspondence either within or across animals.",
+    "claim_type": "EXPLICIT",
+    "source": "And indeed, in this work, semi-synthetic data is derived exclusively from measurements that lack any ground truth correspondence either within-, or across animals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the training data used",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "All ground truth for training the fDNC model comes only from simulation.",
+    "claim_type": "EXPLICIT",
+    "source": "All ground truth for training comes only from simulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the training data source",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Realistic synthetic, semi-synthetic or augmented datasets have been key to cracking other challenging problems in neuroscience.",
+    "claim_type": "EXPLICIT",
+    "source": "Realistic synthetic, semi-synthetic or augmented datasets have been key to cracking other challenging problems in neurosicence (Parthasarathy et al., 2017; Yoon et al., 2017; Sun et al., 2018; Lee et al., 2020; Mathis and Mathis, 2020; Pereira et al., 2020) and have already shown promising potential for tracking neurons (Wen et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to relevant neuroscience studies",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The Transformer architecture has shown great success in natural language processing tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "In this work, we use semi-synthetic data to train a Transformer network, an artificial neural network architecture that has shown great success in natural language processing tasks (Vaswani et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Vaswani et al., 2017",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Transformers incorporate an attention mechanism that can leverage similarities between pairs of inputs.",
+    "claim_type": "EXPLICIT",
+    "source": "Transformers incorporate an attention mechanism that can leverage similarities between pairs of inputs to build a rich representation of the input sequence for downstream tasks like machine translation and sentiment prediction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the Transformer architecture based on established knowledge",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The Transformer architecture is well-suited to extract spatial relationships between neurons to facilitate finding correspondence.",
+    "claim_type": "EXPLICIT",
+    "source": "We reasoned this same architecture would be well-suited to extract spatial relationships between neurons in order to build a representation that facilitates finding correspondence to neurons in a template worm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' reasoning about why the architecture is appropriate",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The Transformer obviates the need to straighten the worm in advance.",
+    "claim_type": "EXPLICIT",
+    "source": "Not only is the Transformer well-suited to learning features for the neural correspondence problem, it also obviates the need to straighten (Peng et al., 2008) the worm in advance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' claim about the advantage of their approach",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Existing methods have either required the worm to be straightened in preprocessing or explicitly transformed during inference.",
+    "claim_type": "EXPLICIT",
+    "source": "Until now, existing methods have either required the worm to be straightened in preprocessing (Bubnis et al., 2019; Chaudhary et al., 2021) or explicitly transformed them during inference (Varol et al., 2020; Nejatbakhsh et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to multiple existing methods",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Straightening the worm is a non-trivial task and is especially error-prone for complicated poses such as when the worm rolls along its centerline.",
+    "claim_type": "EXPLICIT",
+    "source": "Straightening the worm is a non-trivial task, and it is especially error-prone for complicated poses such as when the worm rolls along its centerline.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' assessment of the difficulty of straightening",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The Transformer architecture permits parallel processing of neural positions using modern GPU hardware.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, one of the main advantages of the Transformer architecture is that it permits parallel processing of the neural positions using modern GPU hardware.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the computational advantage of the architecture",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Existing methods for neural correspondence in C. elegans have not been optimized for speed.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to existing methods, which have not been optimized for speed, the Transformer can make real-time predictions once it has been trained.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' comparison to existing methods",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The fDNC model trained on 2.304 \u00d7 10^5 semi-synthetic individuals derived from recordings of 12 individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "We trained our fDNC model on 2.304 \u00d7 105 semi-synthetic individuals (Figure 1C) and then, after training, evaluated its performance on 2000 additional held-out semi-synthetic pairs of individuals which had not been accessible to the model during training, Figure 1D and Figure 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative description of training data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The fDNC model achieved 96.5% mean accuracy on 2000 pairs of held-out semi-synthetic individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Our fDNC model achieved 96.5% mean accuracy on the 2000 pairs of held-out semi-synthetic individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative performance metric on semi-synthetic test data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "CPD achieved 31.1% mean accuracy on the same held-out semi-synthetic individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "We compared this performance to that of Coherent Point Drift (CPD) (Myronenko and Song, 2010), a classic registration method used for automatic cell annotation. CPD achieved 31.1% mean accuracy on the same held-out semi-synthetic individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative performance metric for baseline method",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The fDNC model significantly outperforms CPD at finding correspondence in semi-synthetic data.",
+    "claim_type": "EXPLICIT",
+    "source": "Our measurements show that the fDNC model significantly outperforms CPD at finding correspondence in semi-synthetic data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Comparison of performance metrics between methods",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The fDNC model's performance was evaluated on an experimentally acquired calcium imaging recording from Nguyen et al., 2017 in which human experts had manually tracked and annotated neuron positions over time.",
+    "claim_type": "EXPLICIT",
+    "source": "We evaluated model performance on an experimentally acquired calcium imaging recording of a freely moving C. elegans from Nguyen et al., 2017 in which a team of human experts had manually tracked and annotated neuron positions over time (strain AML32, 1514 volumes, six volumes per second, additional details are describeed in the 'Datasets' section of the 'Materials and methods.').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the evaluation dataset with citation",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "In the Nguyen et al., 2017 recording, the average distance a neuron travels between volumes (4.8 \u00b5m) is of similar scale to the average distance between nearest neuron neighbors (5.3 \u00b5m).",
+    "claim_type": "EXPLICIT",
+    "source": "The recording has sufficiently large animal movement that the average distance a neuron travels between volumes (4.8 \u00b5m) is of similar scale to the average distance between nearest neuron neighbors (5.3 \u00b5m).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative measurements from the dataset",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Across pairs of neuron configurations from the Nguyen et al., 2017 recording, the fDNC model showed a mean accuracy of 79.1%.",
+    "claim_type": "EXPLICIT",
+    "source": "Across the pairs, the fDNC model showed a mean accuracy of 79.1%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative performance metric on real data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The fDNC model achieved high accuracy on tracking a real worm using only neuron position information even though it is trained exclusively on semi-synthetic data.",
+    "claim_type": "EXPLICIT",
+    "source": "We emphasize that the fDNC model achieved this high accuracy on tracking a real worm using only neuron position information even though it is trained exclusively on semi-synthetic data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' emphasis on the significance of the result",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "fDNC's mean performance of 79.1% was statistically significantly more accurate than CPD's 62.7% (p=2.5\u00d710^-223).",
+    "claim_type": "EXPLICIT",
+    "source": "fDNC clearly outperformed CPD achieving 79.1% accuracy compared to CPD's 62.7%.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Quantitative comparison with statistical test shown in Figure 3C",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The NeRVE method takes 100 templates from the same individual and uses them all to inform its prediction.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, the NeRVE method takes 100 templates, where each one is a different neuron configuration from the same individual, and uses them all to inform its prediction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the NeRVE method",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "CPD, NeRVE, and fDNC are all time-independent algorithms.",
+    "claim_type": "EXPLICIT",
+    "source": "Because CPD, NeRVE, and fDNC are all time-independent algorithms, their performance on a given volume is the same, even if nearby volumes are omitted or shuffled in time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of algorithmic properties",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "One benefit of time-independent algorithms is that errors from prior volumes do not accumulate over the duration of the recording.",
+    "claim_type": "EXPLICIT",
+    "source": "One benefit of this approach is that errors from prior volumes do not accumulate over the duration of the recording.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inference about the advantage of time-independence",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Calcium activity extracted from neurons AVAL and AVAR exhibited calcium activity transients when the animal underwent prolonged backward locomotion, as expected.",
+    "claim_type": "EXPLICIT",
+    "source": "Calcium activity extracted from neurons AVAL and AVAR exhibited calcium activity transients when the animal underwent prolonged backward locomotion, as expected (Figure 3\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Observation from data analysis shown in Figure 3\u2014figure supplement 1B",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "From the time that a configuration of segmented neurons is loaded onto a GPU, it takes only an average of 10 ms for the fDNC model to predict correspondence for all neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "From the time that a configuration of segmented neurons is loaded onto a GPU, it takes only an average of 10 ms for the fDNC model to predict correspondence for all neurons on a 2.4 GHz Intel machine with an NVIDIA Tesla P100 GPU.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative timing measurement",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "If not using a GPU, the fDNC model predicts correspondence for all neurons in 50 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "If not using a GPU, the model predicts correspondence for all neurons in 50 ms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative timing measurement",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "On the same hardware, it takes CPD 930 ms to predict correspondence.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, on the same hardware it takes CPD 930 ms and it takes NeRVE on average over 10 s.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative timing measurement for comparison",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "On the same hardware, it takes NeRVE on average over 10 s to predict correspondence.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, on the same hardware it takes CPD 930 ms and it takes NeRVE on average over 10 s.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative timing measurement for comparison",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The fDNC model's speed of 100 volumes per second is an order of magnitude faster than the 6\u201310 volumes per second recording rate typically used in whole-brain imaging of freely moving C. elegans.",
+    "claim_type": "EXPLICIT",
+    "source": "The fDNC model may be a good candidate for potential closed-loop tracking applications because its speed of 100 volumes per second is an order of magnitude faster than the 6\u201310 volumes per second recording rate typically used in whole-brain imaging of freely moving C. elegans (Nguyen et al., 2016; Venkatachalam et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative comparison with citations to typical imaging rates",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "For a complete closed-loop tracking system, fast segmentation algorithms will be needed in addition to the fast registration and labeling algorithms presented here.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that for a complete closed-loop tracking system, fast segmentation algorithms will also be needed in addition to the fast registration and labeling algorithms presented here.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' assessment of system requirements",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The fDNC model is agnostic to the details of the segmentation algorithm.",
+    "claim_type": "EXPLICIT",
+    "source": "The fDNC model is agnostic to the details of the segmentation algorithm so it is well suited to take advantage of fast segmentation algorithms when they are developed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of model properties",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "NeuroPAL worms contain extra color information that allows a human to assign ground truth labels.",
+    "claim_type": "EXPLICIT",
+    "source": "NeuroPAL worms contain extra color information that allows a human to assign ground truth labels to evaluate the model's performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the NeuroPAL strain properties",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The fDNC model was blinded to NeuroPAL color information when evaluating performance at finding neural correspondence across individuals using only position information.",
+    "claim_type": "EXPLICIT",
+    "source": "Crucially, the fDNC model was blinded to this additional color information. In these experiments, NeuroPAL color information was only used to evaluate performance after the fact, not to find correspondence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the experimental design",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Across 11 NeuroPAL animals, a human assigned a ground-truth label to a mean of 43% of segmented head neurons, providing approximately 58 labeled neurons per animal.",
+    "claim_type": "EXPLICIT",
+    "source": "Across the 11 animals, a human assigned a ground-truth label to a mean of 43% of segmented head neurons, providing approximately 58 labeled neurons per animal (Figure 4C, additional details in 'Datasets' section of 'Materials and Methods').",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Quantitative description of ground truth annotations shown in Figure 4C",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "All 11 ground-truth NeuroPAL recordings were held-out in that they were not involved in the generation of the semi-synthetic data used to train the model.",
+    "claim_type": "EXPLICIT",
+    "source": "All 11 ground-truth recordings were held-out in that they were not involved in the generation of the semi-synthetic data that had been used to train the model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the experimental design",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "When considering the top three neurons, the fDNC model achieves an accuracy of 76.6% using only position information.",
+    "claim_type": "EXPLICIT",
+    "source": "When considering the top three neurons, the fDNC model achieves an accuracy of 76.6% using only position information.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative performance metric",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "On the published dataset from Chaudhary et al., 2021, using position information alone, the fDNC method achieved 78.2% accuracy while CPD achieved 58.9%.",
+    "claim_type": "EXPLICIT",
+    "source": "On this public dataset, using position information alone, our method achieved 78.2% accuracy while CPD achieved 58.9%, Figure 4F.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Quantitative performance metrics shown in Figure 4F",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "When assessing the top three candidate accuracy on the Chaudhary et al., 2021 dataset, the fDNC model performance was 91.3%.",
+    "claim_type": "EXPLICIT",
+    "source": "When assessing the top three candidate accuracy, the fDNC model performance was 91.3%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative performance metric",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The fDNC model performance was overall higher on the published dataset than on the newly collected dataset presented in this work.",
+    "claim_type": "EXPLICIT",
+    "source": "The fDNC model performance was overall higher on the published dataset than on our newly collected dataset presented here.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Comparison of performance across datasets",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The fDNC model performs well when applied to real-world datasets in the literature.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that our method performs well when applied to real-world datasets in the literature.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inference from performance on external dataset",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "CRF assigns labels to a test worm, while fDNC assigns matches between two worms or two configurations.",
+    "claim_type": "EXPLICIT",
+    "source": "CRF assigns labels to a test worm. In contrast, fDNC assigns matches between two worms or two configurations, the test and template.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of fundamental differences between methods",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "When applied to the dataset in Chaudhary et al., 2021, fDNC had an accuracy of 78%.",
+    "claim_type": "EXPLICIT",
+    "source": "When applied to the same dataset in Chaudhary et al., 2021, fDNC had an accuracy of 78%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative performance metric",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "fDNC accuracy is higher than the reported performance for the open atlas variant of CRF.",
+    "claim_type": "EXPLICIT",
+    "source": "fDNC accuracy is higher than the reported performance for the open atlas variant of CRF.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Comparison to published results in Table 2",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The fDNC method is optimized for speed and avoids the need to transform the worm into a canonical coordinate system.",
+    "claim_type": "EXPLICIT",
+    "source": "The fDNC method also offers other advantages compared to the CRF approach in that the fDNC method is optimized for speed and avoids the need to transform the worm into a canonical coordinate system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' comparison of method advantages",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Compared to the data-driven atlas variant of the CRF, the fDNC model does not require assembling a data-driven atlas from representative recordings with known ground-truth labels.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, compared to the data-driven atlas variant of the CRF, the fDNC model has an advantage in that it does not require assembling a data-driven atlas from representative recordings with known ground-truth labels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' comparison of method requirements",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The fDNC model's accuracy is comparable to that of the CRF model while also providing other advantages.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, we conclude that the fDNC model's accuracy is comparable to that of the CRF model while also providing other advantages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' overall conclusion from comparisons",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Adding color information increased the fDNC model's average accuracy from 64.1% to 74.7%.",
+    "claim_type": "EXPLICIT",
+    "source": "Adding color information increased the fDNC model's average accuracy from 64.1% to 74.7% (Figure 5B) when evaluated on our dataset, and improved the accuracy in every recording evaluated.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Quantitative performance comparison shown in Figure 5B",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Adding color information improved the fDNC accuracy in every recording evaluated.",
+    "claim_type": "EXPLICIT",
+    "source": "Adding color information increased the fDNC model's average accuracy from 64.1% to 74.7% (Figure 5B) when evaluated on our dataset, and improved the accuracy in every recording evaluated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Observation from evaluation results",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The top three candidate labels with color information attained 92.4% accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "The top three candidate labels attained 92.4% accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative performance metric",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "A more sophisticated color model would be expected to do better than the simple color model used in this work.",
+    "claim_type": "EXPLICIT",
+    "source": "Since our simple color model utilized no prior knowledge about the distributions of colors in the worm, we would expect a more sophisticated color model, for example, the statistical model used in Yemini et al., 2021, to do better.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' inference about potential improvements",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "The statistical color model from Yemini et al., 2021 evaluated on a different dataset is reported to have 86% accuracy with color.",
+    "claim_type": "EXPLICIT",
+    "source": "And indeed that model evaluated on a different dataset is reported to have a higher performance with color than our model on our dataset (86% reported accuracy in Yemini et al., 2021 compared to 75% for the fDNC evaluated here).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Comparison to published results with citation",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The model from Yemini et al., 2021 performs much worse than fDNC when both are restricted to use only neural position information (50% vs 64%).",
+    "claim_type": "EXPLICIT",
+    "source": "But that model also performs much worse than fDNC when both are restricted to use only neural position information (50% reported accuracy for Yemini et al., 2021 compared to 64% for the fDNC).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Comparison to published results with citation",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The fDNC model framework can take advantage of additional feature information like color and still perform relatively well when such information is missing.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, this suggests the fDNC model framework can take advantage of additional feature information like color and still perform relatively well when such information is missing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' inference from performance comparisons",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The fDNC model finds neural correspondence within and across individuals with an accuracy that is comparable or compares favorably to other methods.",
+    "claim_type": "EXPLICIT",
+    "source": "The fDNC model finds neural correspondence within and across individuals with an accuracy that is comparable or compares favorable to other methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' summary of performance comparisons",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "An upper bound may exist, set by variability introduced during the animal's development, that ultimately limits the accuracy with which any human or algorithm can find correspondence across individuals via only position information.",
+    "claim_type": "EXPLICIT",
+    "source": "We expect that an upper bound may exist, set by variability introduced during the animal's development, that ultimately limits the accuracy with which any human or algorithm can find correspondence across individuals via only position information.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' speculation about fundamental limits",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Pairs of neurons in one individual that perfectly switch position with respect to another individual will never be unambiguously identified by position alone.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, pairs of neurons in one individual that perfectly switch position with respect to another individual will never be unambiguously identified by position alone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Logical reasoning about fundamental limitations",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "It is unclear how close fDNC's performance comes to the hypothetical upper bound for position-based correspondence.",
+    "claim_type": "EXPLICIT",
+    "source": "It is unclear how close fDNC's performance of 64% on our dataset or 78% on the dataset in Chaudhary et al., 2021 comes to this hypothetical upper bound, but there is reason to think that at least some room for improvement remains.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' assessment of current performance",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Accuracy at tracking within an individual is not expected to be fundamentally limited because two neurons are not expected to perfectly switch position on the timescale of a single recording.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, we do not expect accuracy at tracking within an individual to be fundamentally limited, in part because we do not expect two neurons to perfectly switch position on the timescale of a single recording.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' reasoning about within-individual tracking",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "fDNC's 79% accuracy within-individuals suggests room for improving within-individual correspondence.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore fDNC's 79% accuracy within-individuals suggests room for improving within-individual correspondence, and by extension, across-individual correspondence because the latter necessarily includes all of the variability of the former.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' inference from performance results",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "One avenue for achieving higher performance could be to improve the simulator's ability to better capture variability of a real testset.",
+    "claim_type": "EXPLICIT",
+    "source": "One avenue for achieving higher performance could be to improve the simulator's ability to better capture variability of a real testset, for example by using different choices of parameters in the simulator.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' suggestion for future improvement",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Neural correspondence at 64% accuracy will allow rejection of null hypotheses about the extent to which neural coding of locomotion is stereotyped across individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, we are interested in studying neural population coding of locomotion in C. elegans (Hallinen et al., 2021), and neural correspondence at 64% accuracy will allow us to reject null hypotheses about the extent to which neural coding of locomotion is stereotyped across individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' assessment of utility for their research with citation",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The fDNC model framework makes it easy to integrate other features which further improve accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "The fDNC model framework also makes it easy to integrate other features which further improve accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' description of framework flexibility",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Performance would improve further with a more sophisticated color model that takes into account the statistics of the colors in a NeuroPAL worm.",
+    "claim_type": "EXPLICIT",
+    "source": "We expect that performance would improve further with a more sophisticated color model that takes into account the statistics of the colors in a NeuroPAL worm (Yemini et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' expectation for future improvement with citation",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The same pre-trained fDNC model performed well at both tracking neurons within a freely moving individual across time and at finding neural correspondence across different individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "First, it is versatile and general. The same pre-trained model performed well at both tracking neurons within a freely moving individual across time and at finding neural correspondence across different individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Summary of performance results",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Without any additional training, the fDNC model achieved even higher accuracy on a publicly accessible dataset acquired on different hardware with different imaging conditions from a different group.",
+    "claim_type": "EXPLICIT",
+    "source": "Without any additional training, it achieved even higher accuracy on a publicly accessible dataset acquired on different hardware with different imaging conditions from a different group.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of generalization performance",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The fDNC framework should be applicable to many real-world datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that the framework should be applicable to many real-world datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inference from generalization performance",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The fDNC model provides probability estimates of all possible matches for each neuron.",
+    "claim_type": "EXPLICIT",
+    "source": "The model provides probability estimates of all possible matches for each neuron.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of model output",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The fDNC model allows an experimenter to consider a collection of possible matches such as the top three most likely.",
+    "claim_type": "EXPLICIT",
+    "source": "This allows an experimenter to consider a collection of possible matches such as the top three most likely.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of model utility",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The fDNC model finds neural correspondence directly from neural position information even in worms that are in different poses or orientations.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead, the fDNC model finds neural correspondence directly from neural position information even in worms that are in different poses or orientations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of model capability",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The fDNC model is trained entirely on semi-synthetic data, which avoids the need for large experimentally acquired ground truth datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the model is trained entirely on semi-synthetic data, which avoids the need for large experimentally acquired ground truth datasets to train the artificial neural network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of training approach",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Acquiring ground truth neural correspondence in C. elegans is time consuming, error prone, and often requires manual hand annotation.",
+    "claim_type": "EXPLICIT",
+    "source": "Acquiring ground truth neural correspondence in C. elegans is time consuming, error prone, and often requires manual hand annotation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Assessment of the difficulty of obtaining ground truth",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The ability to train the fDNC model with semi-synthetic data derived from measurements alleviates the bottleneck of acquiring ground truth.",
+    "claim_type": "EXPLICIT",
+    "source": "The ability to train the fDNC model with semi-synthetic data derived from measurements alleviates this bottleneck and makes the model attractive for use with other organisms with stereotyped nervous systems where ground truth datasets are similarly challenging to acquire.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' assessment of the advantage of their approach",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The fDNC model is fast and finds neural correspondence of a new neural configuration in 10 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "The model is also fast and finds neural correspondence of a new neural configuration in 10 ms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative timing measurement",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The development of fast algorithms for tracking neurons are an important step for bringing real-time closed loop applications to whole-brain imaging in freely moving animals.",
+    "claim_type": "EXPLICIT",
+    "source": "The development of fast algorithms for tracking neurons are an important step for bringing real-time closed loop applications such as optical brain-machine interfaces (Clancy et al., 2014) and optical patch clamping (Hochbaum et al., 2014) to whole-brain imaging in freely moving animals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' assessment with citations to relevant applications",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Existing real-time methods for C. elegans in moving animals are restricted to small subsets of neurons, are limited to two-dimensions, and work only at low spatial resolution.",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, existing real-time methods for C. elegans in moving animals are restricted to small subsets of neurons, are limited to two-dimensions, and work only at low spatial resolution (Leifer et al., 2011; Stirman et al., 2011; Kocabas et al., 2012; Shipley et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to existing real-time methods",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "To be used in a real-time closed loop application, the fDNC model would need to be combined with faster segmentation algorithms because current segmentation algorithms are too slow for real-time use.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that to be used in a real-time closed loop application, our fDNC model would need to be combined with faster segmentation algorithms because current segmentation algorithms are too slow for real-time use.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' assessment of system requirements",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Because segmentation can be easily parallelized, faster segmentation algorithms are expected to be developed soon.",
+    "claim_type": "EXPLICIT",
+    "source": "Because segmentation can be easily paralellized, we expect that faster segmentation algorithms will be developed soon.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' expectation about future developments",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Many advantages of the fDNC model stem from its use of the transformer architecture in combination with supervised learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Many of the advantages listed here stem from the fDNC model's use of the transformer architecture (Vaswani et al., 2017) in combination with supervised learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' summary of methodological advantages with citation",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "By using supervised learning on empirically derived semi-synthetic training data of animals in a variety of different poses and orientations, the model is forced to learn relative spatial features that are informative for finding neural correspondence.",
+    "claim_type": "EXPLICIT",
+    "source": "By using supervised learning on empirically derived semi-synthetic training data of animals in a variety of different poses and orientations, the model is forced to learn relative spatial features within the neurons that are informative for finding neural correspondence across many postures and conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Authors' explanation of how the training approach works",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The transformer architecture leverages recent advances in GPU parallel processing for speed and efficiency.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, the transformer architecture leverages recent advances in GPU parallel processing for speed and efficiency, which is an important step toward future real-time applications.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of computational advantages",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The simulator transforms neural positions of a real worm and introduces noise to generate new semi-synthetic individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "The simulator transforms the neural positions of a real worm and introduces noise to generate new semi-synthetic individuals.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Description shown in Figure 1B",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "The fDNC model uses a multi-head attention mechanism to compute features.",
+    "claim_type": "EXPLICIT",
+    "source": "The features are computed via a multi-head attention mechanism.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Description of architecture shown in Figure 1F",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The simulator starts by straightening the worm in the XY plane using its centerline so that it lies in a canonical worm coordinate system.",
+    "claim_type": "EXPLICIT",
+    "source": "The simulator starts by straightening the worm in the XY plane using its centerline so that it now lies in a canonical worm coordinate system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of simulator operation",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "To introduce animal-to-animal variability in relative neural position, a non-rigid transformation is applied to the neuron point cloud using coherent point drift (CPD).",
+    "claim_type": "EXPLICIT",
+    "source": "To introduce animal-to-animal variability in relative neural position, a non-rigid transformation is applied to the neuron point cloud against a template randomly selected from recordings of the real observed worms using coherent point drift (CPD) (Myronenko and Song, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of simulator operation with citation",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "To simulate missing neurons and segmentation errors, spurious neurons are randomly added and some true neurons are randomly removed for up to 20% of the observed neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "To simulate missing neurons and segmentation errors, spurious neurons are randomly added, and some true neurons are randomly removed, for up to 20% of the observed neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of simulator operation",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The simulator randomly rescales the animal's size by up to 5%.",
+    "claim_type": "EXPLICIT",
+    "source": "Lastly, to account for variability in animals' size and orientation, a random affine transformation in the XY plane is applied that rescaled the animal's size by up to 5%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of simulator operation",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "Centerlines generated by the simulator were directly sampled from recordings of real individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Centerlines generated by the simulator were directly sampled from recordings of real individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of simulator data source",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "The magnitude of added Gaussian noise in the simulator was set to have a standard deviation of 0.42 \u00b5m.",
+    "claim_type": "EXPLICIT",
+    "source": "The magnitude of added Gaussian noise was arbitrarily set to have a standard deviation of 0.42 \u00b5m.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative parameter specification",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "The fDNC model is implemented in the automatic differentiation framework PyTorch.",
+    "claim_type": "EXPLICIT",
+    "source": "The deep neural correspondence model (fDNC) is an artificial neural network based on the Transformer (Vaswani et al., 2017) architecture (Figure 1C) and is implemented in the automatic differentiation framework PyTorch (Paszke et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of implementation with citations",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "For each worm, approximately 120 neurons are segmented and passed to the fDNC model.",
+    "claim_type": "EXPLICIT",
+    "source": "For each worm, approximately 120 neurons are segmented and passed to the fDNC model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of typical input size",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "The input neuron sequences are randomly shuffled for both template worm and test worm to eliminate the possibility that information from the original sequence order is used.",
+    "claim_type": "EXPLICIT",
+    "source": "The input neuron sequences are randomly shuffled for both template worm and test worm. This eliminates the possibility that the information from the original sequence order is used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of preprocessing step and its purpose",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "Each layer of the fDNC model consists of two sub-layers: a multi-head self-attention mechanism and a fully connected feed-forward network.",
+    "claim_type": "EXPLICIT",
+    "source": "Each layer consists of two sub-layers: a multi-head self-attention mechanism (Vaswani et al., 2017) and a fully connected feed-forward network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of model architecture with citation",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "The fDNC implementation sets the number of heads in the multi-head attention module to be eight.",
+    "claim_type": "EXPLICIT",
+    "source": "In our implementation, we set the number of heads in the multi-head attention module to be eight and we set the dimension of our feature vectors to be 128.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of hyperparameter choice",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "The fDNC implementation sets the dimension of feature vectors to be 128.",
+    "claim_type": "EXPLICIT",
+    "source": "In our implementation, we set the number of heads in the multi-head attention module to be eight and we set the dimension of our feature vectors to be 128.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of hyperparameter choice",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "The best set of hyperparameters was chosen by evaluating on a validation set distinct from the training set and from any data used for evaluation.",
+    "claim_type": "EXPLICIT",
+    "source": "We chose the best set of the hyperparameters (details in Training section) by evaluating on a validation set, which is distinct from the training set and also from any data used for evaluation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of hyperparameter selection procedure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "A residual connection and layer normalization are employed for each sub-layer in the fDNC model.",
+    "claim_type": "EXPLICIT",
+    "source": "A residual connection (He et al., 2016) and layer normalization (Jl et al., 2016) are employed for each sub-layer, as is widely used in artificial neural networks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of architectural components with citations",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "The fDNC model finds the most probable correspondence by solving a maximum weight bipartite matching problem using the Hungarian algorithm.",
+    "claim_type": "EXPLICIT",
+    "source": "We also find the most probable correspondence between the two sets of neurons by solving a maximum weight bipartite matching problem where the weights are given by the inner products between test and template worm embeddings. This is a classic combinatorial optimization problem, and it can be solved in polynomial time using the Hungarian algorithm (Kuhn, 1955).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of optimization procedure with citation",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "The fDNC model was trained for 12 hr on a 2.40 GHz Intel machine with NVIDIA Tesla P100 GPU.",
+    "claim_type": "EXPLICIT",
+    "source": "The model was trained for 12 hr on a 2.40 GHz Intel machine with NVIDIA Tesla P100 GPU.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of training procedure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "A cross-entropy loss function was used to train the fDNC model.",
+    "claim_type": "EXPLICIT",
+    "source": "We performed supervised learning with ground truth matches provided by the semi-synthetically generated data. A cross-entropy loss function was used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of training procedure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "All the fDNC models trained converged after 12 hr of training.",
+    "claim_type": "EXPLICIT",
+    "source": "All the models converged after 12 hr of training.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Observation from training",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "The model with 6 layers and 128 dimensional embedding space was chosen because it reaches the highest performance.",
+    "claim_type": "EXPLICIT",
+    "source": "We chose the model with 6 layers and 128 dimensional embedding space since it reaches the highest performance and increasing the complexity of the model did not appear to increase the performance dramatically.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Explanation of model selection based on validation results",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "Increasing the complexity of the model beyond 6 layers and 128 dimensions did not appear to increase the performance dramatically.",
+    "claim_type": "EXPLICIT",
+    "source": "We chose the model with 6 layers and 128 dimensional embedding space since it reaches the highest performance and increasing the complexity of the model did not appear to increase the performance dramatically.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Observation from hyperparameter search",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "In the evaluation, every segmented neuron in the test or template (whichever has fewer) is assigned a match.",
+    "claim_type": "EXPLICIT",
+    "source": "Every segmented neuron in the test or template (whichever has fewer) is assigned a match.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of evaluation procedure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "Accuracy is defined as the number of proposed matches that agree with ground truth, divided by the total number of ground truth matches.",
+    "claim_type": "EXPLICIT",
+    "source": "Accuracy is defined as the number of proposed matches that agree with ground truth, divided by the total number of ground truth matches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Definition of evaluation metric",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "CPD is used to find the optimal non-rigid transformation to align the test worm with respect to the template worm.",
+    "claim_type": "EXPLICIT",
+    "source": "In our implementation, CPD is used to find the optimal non-rigid transformation to align the test worm with respect to the template worm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of baseline method implementation",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "The color matching model measures similarity of color for each pair of neurons as the inverse of the Kullback\u2013Leibler divergence between their normalized color features.",
+    "claim_type": "EXPLICIT",
+    "source": "Then the similarity of color for each pair of neurons is measured as the inverse of the Kullback\u2013Leibler divergence between their normalized color features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of color model",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "To calculate the final combined matching matrix, the color similarity matrix is added to the position matching log probability matrix from the fDNC model.",
+    "claim_type": "EXPLICIT",
+    "source": "To calculate the final combined matching matrix, we add the color similarity matrix to the position matching log probability matrix from our fDNC model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of how color and position information are combined",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "The matching results are not particularly sensitive to the choice of \u03bb.",
+    "claim_type": "EXPLICIT",
+    "source": "We note the matching results are not particularly sensitive to the choice of \u03bb.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Observation about parameter sensitivity",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "Each layer of the neural network contains thousands of artificial neurons performing the same computation.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, each layer of the neural network contains thousands of artificial neurons performing the same computation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of parallel computation structure",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "Computations for each neuron in a layer can all be performed in parallel and modern GPUs have as many as 3500 CUDA cores.",
+    "claim_type": "EXPLICIT",
+    "source": "Computations for each neuron in a layer can all be performed in parallel and modern GPUs have as many as 3500 CUDA cores.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of parallel computation capability",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "Labeling one volume has no dependencies on any previous volumes and therefore each volume can be processed simultaneously.",
+    "claim_type": "EXPLICIT",
+    "source": "Labeling one volume has no dependencies on any previous volumes and therefore each volume can be processed simultaneously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of parallelization capability",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "When tracking during post-processing in this work, 32 volumes were processed simultaneously.",
+    "claim_type": "EXPLICIT",
+    "source": "When tracking during post-processing in this work, we used 32 volumes simultaneously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of implementation detail",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

@@ -1,0 +1,1739 @@
+{
+  "submission": {
+    "id": "6dc71735-4405-435f-9208-389c12569751",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:05:47.865244Z",
+    "updated_at": "2025-12-03T20:05:47.865244Z"
+  },
+  "content": [
+    {
+      "id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "submission_id": "6dc71735-4405-435f-9208-389c12569751",
+      "content_type": "manuscript",
+      "content_text": "# Phenome-wide Mendelian randomization study of plasma triglyceride levels and 2600 disease traits\n\n## Authors\n\n- Joshua K Park<sup>1</sup> ([ORCID: 0000-0002-1719-3537](https://orcid.org/0000-0002-1719-3537))\n- Shantanu Bafna<sup>1</sup>\n- Iain S Forrest<sup>1</sup>\n- \u00c1ine Duffy<sup>1</sup>\n- Carla Marquez-Luna<sup>1</sup>\n- Ben O Petrazzini<sup>1</sup>\n- Ha My Vy<sup>1</sup>\n- Daniel M Jordan<sup>1</sup>\n- Marie Verbanck<sup>4</sup>\n- Jagat Narula<sup>5</sup>\n- Robert S Rosenson<sup>5</sup>\n- Ghislain Rocheleau<sup>1</sup> ([ORCID: 0000-0002-9989-7553](https://orcid.org/0000-0002-9989-7553))\n- Ron Do<sup>1</sup> ([ORCID: 0000-0002-3144-3627](https://orcid.org/0000-0002-3144-3627)) \u2020\n\n### Affiliations\n\n1. Charles Bronfman Institute for Personalized Medicine, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n2. Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n3. Medical Scientist Training Program, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n4. Universit\u00e9 Paris Cit\u00e9 Paris France ([ROR:05f82e368](https://ror.org/05f82e368))\n5. Department of Medicine, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n6. Cardiovascular Imaging Program, Zena and Michael A. Wiener Cardiovascular Institute, Mount Sinai Heart, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n7. Metabolism and Lipids Unit, Zena and Michael A. Wiener Cardiovascular Institute, Mount Sinai Heart, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Causality between plasma triglyceride (TG) levels and atherosclerotic cardiovascular disease (ASCVD) risk remains controversial despite more than four decades of study and two recent landmark trials, STRENGTH, and REDUCE-IT. Further unclear is the association between TG levels and non-atherosclerotic diseases across organ systems.Methods:Here, we conducted a phenome-wide, two-sample Mendelian randomization (MR) analysis using inverse-variance weighted (IVW) regression to systematically infer the causal effects of plasma TG levels on 2600 disease traits in the European ancestry population of UK Biobank. For replication, we externally tested 221 nominally significant associations (p<0.05) in an independent cohort from FinnGen. To account for potential horizontal pleiotropy and the influence of invalid instrumental variables, we performed sensitivity analyses using MR-Egger regression, weighted median estimator, and MR-PRESSO. Finally, we used multivariable MR (MVMR) controlling for correlated lipid fractions to distinguish the independent effect of plasma TG levels.Results:Our results identified seven disease traits reaching Bonferroni-corrected significance in both the discovery (p<1.92 \u00d7 10-5) and replication analyses (p<2.26 \u00d7 10-4), suggesting a causal relationship between plasma TG levels and ASCVDs, including coronary artery disease (OR 1.33, 95% CI 1.24\u20131.43, p=2.47 \u00d7 10-13). We also identified 12 disease traits that were Bonferroni-significant in the discovery or replication analysis and at least nominally significant in the other analysis (p<0.05), identifying plasma TG levels as a novel potential risk factor for nine non-ASCVD diseases, including uterine leiomyoma (OR 1.19, 95% CI 1.10\u20131.29, p=1.17 \u00d7 10-5).Conclusions:Taking a phenome-wide, two-sample MR approach, we identified causal associations between plasma TG levels and 19 disease traits across organ systems. Our findings suggest unrealized drug repurposing opportunities or adverse effects related to approved and emerging TG-lowering agents, as well as mechanistic insights for future studies.Funding:RD is supported by the National Institute of General Medical Sciences of the National Institutes of Health (NIH) (R35-GM124836) and the National Heart, Lung, and Blood Institute of the NIH (R01-HL139865 and R01-HL155915).\n\n## Introduction\n\nASCVD remains the leading cause of death worldwide despite the effectiveness of statin therapy in reducing low-density lipoprotein cholesterol (LDL-C) levels (Baigent et al., 2005; Roth et al., 2020). Additional therapeutic targets and adjunctive treatments are needed to address the burden arising from residual risk (Rosenson and Goonewardena, 2021). TGs play vital roles in physiology, ranging from energy storage and mobilization to inflammation, thrombosis, and hormone-like signaling (Zewinger et al., 2020; Norata et al., 2007). However, a causal relationship between TGs and ASCVDs remains controversial (Miller et al., 2011; Albrink and Man, 1959), recently culminating in the conflicting reports of two double-blinded randomized controlled trials (RCT), STRENGTH, and REDUCE-IT (Nicholls et al., 2020; Bhatt et al., 2019; Doi et al., 2021). Nevertheless, drug development for reducing TG-rich lipoproteins (TRL) is an active area of research and several targets have now been validated, including angiopoietin-like 3 (ANGPTL3) (Graham et al., 2017; Dewey et al., 2017; Musunuru et al., 2010; Gaudet et al., 2017), angiopoietin-like 4 (ANGPTL4) (Dewey et al., 2016), and apolipoprotein C-III (APOC3) (Gaudet et al., 2015; Crosby et al., 2014). Clinical trials are currently evaluating these targets for dyslipidemias (Arrowhead, 2021b; Arrowhead, 2021a).\n\nWhether TGs are causal risk factors or simply associative biomarkers remains uncertain not only for ASCVDs but also for other diseases of different organ systems. Understanding the causal effects of TGs across a broader range of human diseases could have significant implications for drug repurposing. TG-lowering agents, such as fibrates (Frick et al., 1987; Ginsberg et al., 2010) and omega-3 fatty acids Bhatt et al., 2019 have already been approved; however, not knowing which diseases are causally affected by TGs precludes their use for indications other than hypertriglyceridemia. Understanding the protective effects of TGs could also have implications for drug safety. With the recent approval of icosapent ethyl (Bhatt et al., 2019; Gaba et al., 2022) and the ongoing development of other TG-lowering agents (Shaik and Rosenson, 2021), such as ANGPTL3 (Graham et al., 2017; Dewey et al., 2017), ANGPTL4, and APOC3 inhibitors (Gaudet et al., 2015), long-term safety becomes a matter of concern. Post-market surveillance data are limited; therefore, identifying diseases with negative causal links to TGs could suggest adverse side effects, whereas protective causal links to TGs could suggest therapeutic avenues and indices informative for drug development. Furthermore, this could inform polypharmacy and drug titration in clinical practice.\n\nSeveral methodological challenges have prohibited causal conclusions about TGs across human diseases. First, TGs are correlated with established ASCVD risk factors, such as obesity and insulin resistance (Eckel et al., 2005). They also correlate with LDL particles or apolipoprotein B (apoB) concentration (Cromwell et al., 2007) and inversely correlated with high-density lipoprotein cholesterol (HDL-C) (Phillips and Smith, 1991). Conventional observational studies have thus been limited in drawing causal inferences due to potential confounding. Second, available TG-lowering agents have pleiotropic effects on several major lipid fractions, including VLDL-C, LDL-C, HDL-C, and apolipoproteins, including APOC3 (Ginsberg et al., 2010; Keech et al., 2005; Frick et al., 1987). Thus, costly RCTs have had limited power to disentangle the effects of lowering TG specifically (Sarwar et al., 2010; Goldberg et al., 2011; Bhatt et al., 2019). Finally, MR studies have typically focused on individual diseases selected a priori (Davey Smith and Hemani, 2014), narrowing the scope of causal estimates to ASCVDs while overlooking non-ASCVD diseases (Harrison et al., 2018; Smith et al., 2014; Allara et al., 2019).\n\nPhenome-wide MR is a high-throughput extension of MR that estimates the causal effects of an exposure on multiple outcomes simultaneously. As in conventional MR, this method uses genetic variants as instrumental variables (IV) to proxy modifiable exposures (Smith and Ebrahim, 2003), and importantly, it relies on three critical assumptions: (1) The genetic variant is directly associated with the exposure; (2) The genetic variant is unrelated to confounders between the exposure and outcome; and (3) The genetic variant has no effect on the outcome other than through the exposure (Smith and Ebrahim, 2003). A distinction, however, is that phenome-wide MR enables comprehensive scans of the phenotypic spectrum, limiting bias from prior assumptions and facilitating the discovery of unforeseen causal relationships. This has recently become feasible with the maturation of large-scale biobanks providing extensive genetic and phenotypic data, such as the UK Biobank (UKB) (Bycroft et al., 2018) and FinnGen project (FinnGen, 2020).\n\nHere, we use phenome-wide MR to systematically estimate the causal effects of plasma TGs on 2600 disease outcomes in UKB, followed by replication testing in FinnGen. We then apply multiple MR methods for sensitivity analyses and MVMR to control for plasma LDL-C, HDL-C, and ApoB levels.\n\n## Methods\n\n### Study design and data sources\n\nWe followed the guidelines published by Burgess et al., 2020 and the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) guidelines (Skrivankova et al., 2021). Accordingly, we note that MR analyses rely on three important instrumental variable assumptions: (1) the genetic variant is directly associated with the exposure; (2) the genetic variant is unrelated to confounders between the exposure and outcome; and (3) the genetic variant has no effect on the outcome other than through the exposure (Smith and Ebrahim, 2003). We consider these assumptions more thoroughly in the discussion. This study uses three non-overlapping genome-wide association studies (GWAS). A schematic figure summarizes the study design (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80560/elife-80560-fig1-v2.jpg)\n\n**Figure 1.:** A schematic summarizing the study design. GLGC, Global Lipids Genetics Consortium; HDL, high-density lipoprotein; IVW, inverse-variance weighted; LDL, low-density lipoprotein; MR, Mendelian randomization; MR-PRESSO, Mendelian Randomization Pleiotropy RESidual Sum and Outlier; SNP, single-nucleotide polymorphism; TG, triglyceride; UKB, UK Biobank. Tier 1 (BB): At least Bonferroni-significant in both the discovery and replication analyses. Tier 2 (BN): At least Bonferroni-significant in the discovery analysis and at least nominally significant in the replication analysis. Tier 3 (NB): At least nominally significant in the discovery analysis and at least Bonferroni-significant in the replication analysis.\n\nFor primary and sensitivity analyses, we conducted two-sample MR taking summary statistics for genetic associations with plasma TGs from one dataset (Global Lipids Genetics Consortium, GLGC) (Willer et al., 2013) and summary statistics for genetic associations with outcomes from a second, independent dataset (UKB). The CARDIoGRAMplusC4D Metabochip study by GLGC involved 63,746 cases and 130,681 controls (Deloukas et al., 2013). UKB is a longitudinal, population-based cohort study with genetic and phenotypic data on over 500,000 participants aged 40\u201369 years at recruitment from across the United Kingdom during 2006\u20132010 (Sudlow et al., 2015). The sociodemographic and health-related characteristics of UKB participants have been described elsewhere (Fry et al., 2017).\n\nFor replication analysis, we again performed two-sample MR but used summary statistics for TG from UKB and summary statistics for outcomes from FinnGen (Release 4; 176,899 samples; 169,962,023 variants). FinnGen is a large public-private partnership started in August 2017 aiming to collect and analyze genomic and phenotypic data from 500,000 Finnish biobank participants (FinnGen, 2020; Kurki et al., 2022). For both primary and replication analysis, there is likely to be minimal sample overlap in the two-sample MR, which can cause weak-instrument bias and inflated type 1 error (Burgess et al., 2016).\n\n### Genetic instruments for plasma TG levels\n\nFor primary and secondary analyses, we identified 3086 single nucleotide polymorphisms (SNP) associated with plasma TG levels in GLGC at a genome-wide significance threshold of p<5 \u00d7 10\u20138. A total of 141 independent SNPs were then selected at a linkage disequilibrium (LD) threshold of r2 <0.05 using the 1000 Genomes LD European panel as the reference population (Auton et al., 2015). To select independent SNPs, we used the PLINK software\u2019s LD clumping command (Purcell et al., 2007) with the following options: --clump-p1 0.00000005 --clump-p2 0.0005 --clump-r2 0.05 --clump-kb 250. We note that the GLGC GWAS had excluded individuals known to be on lipid-lowering medications (Willer et al., 2013).\n\nFor replication analysis, we identified 1388 SNPs associated with plasma TG levels in UKB after restricting for genome-wide significance (p<5 \u00d7 10\u20138) and LD-clumping. The SNPs were selected at an LD threshold of r2 <0.05 using the 1000 Genomes LD European panel as the reference population. LD clumping was performed by PLINK using the same command as above. We then restricted to 1248 SNPs for genetic instrumentation based on whether the SNP was also available in the FinnGen dataset. We note that the Pan-UKB GWAS study did not exclude participants based on their use of lipid-lowering medications.\n\n### Genetic instruments for disease outcomes\n\nAs a phenome-wide investigation, this study examined many binary disease outcomes. For outcomes of primary and sensitivity analyses, we used genome-wide association summary statistics from the European ancestry subset of UKB. The focus on European ancestry was needed to reduce heterogeneity and maximize statistical power. Pan-UKB had performed 16,131 GWASs on 7221 phenotypes in ~420,531 UKB participants of European ancestry using genetic and phenotypic data (PanUKBTeam, 2020). A total of 7221 total phenotypes had been categorized as \u2018biomarker,\u2019 \u2018continuous,\u2019 \u2018categorical,\u2019 \u2018ICD-10 code,\u2019 \u2018phecode,\u2019 or \u2018prescription\u2019 (PanUKBTeam, 2020). We filtered for outcomes to retain categorical, ICD-10, and phecode types; non-null heritability in European ancestry as estimated by Pan-UKB; and relevance to disease, excluding medications. This yielded 2600 traits for the primary analysis. The exact sample size of each GWAS for each of these traits is provided in Supplementary file 1.\n\nFor outcomes of replication analysis, we used genome-wide association summary statistics from FinnGen. To allow for compatibility between UKB and FinnGen datasets, phenotypes coded as FinnGen \u2018endpoint IDs\u2019 were mapped to ICD-10 codes or phecodes corresponding to the coding convention used by UKB. Categorical traits in UKB could not be reliably mapped to FinnGen IDs, requiring us to omit categorical traits from replication analysis. Of 2444 available FinnGen outcomes, we ultimately selected 221 outcomes for replication testing based on two conditions: (1) The outcome has an equivalent phenotype documented as an ICD-10 code or phecode in UKB, which we had included in the discovery analysis, and (2) the outcome was at least nominally significant (p<0.05) in the discovery analysis.\n\n### Statistical analyses\n\nPrimary discovery analysis used a fixed-effect inverse-variance weighted (IVW) method of two-sample MR over the more horizontal pleiotropy-robust MR-Egger regression method to maximize statistical power (Burgess et al., 2013). To proxy TG, we selected the 141 TG-associated SNPs from GLGC identified above as instrumental variables in MR testing. All SNPs were harmonized to match the effect and non-effect allele at each SNP. For replication analyses, we conducted IVW tests using TG-associated SNPs from UKB as exposures and 221 traits at least nominally significant (p<0.05) in the discovery analysis as outcomes from FinnGen. We selected UKB TG GWAS loci as the instruments for replication on FinnGen outcomes, rather than GLGC TG GWAS loci, to diversify the source of TG instruments and mitigate potential biases associated with one TG GWAS. Moreover, UKB GWAS included a larger study population than GLGC GWAS, providing a greater number of genetic instruments that can together explain more of the variance in plasma TG levels, and thus, greater statistical power and precision. Nevertheless, we also performed the replication analyses using TG instruments from GLGC and included these results as supplemental data (Supplementary file 5). R (4.1.0) was used for all analyses (R Development Core Team, 2021).\n\nFor sensitivity analyses, we addressed the possible presence of horizontal pleiotropy by applying MR-Egger (Bowden et al., 2015), weighted median estimator (Bowden et al., 2016), and MR-PRESSO outlier tests (Verbanck et al., 2018) on Bonferroni-significant traits identified in the primary analysis above. The utility of these various methods has been extensively reviewed (Davies et al., 2018). MR-PRESSO outlier tests were performed on 16 traits with significant MR-PRESSO global test results (p<0.05). To account for potential horizontal pleiotropy due to outliers, we examined the MR-PRESSO outlier test p-values from the discovery analysis, and as recommended (Burgess et al., 2020), removed outlier IVs (between 1 and 10 SNPs for each outcome) based on a corrected significance threshold (p<0.05 / 141=3.55 \u00d7 10\u20134). IVW tests were then re-run without the outlier IVs in the discovery analysis.\n\nAdditionally, we fitted MVMR models controlling for plasma LDL-C, HDL-C, and ApoB levels in the discovery stage. MVMR uses genetic variants associated with multiple exposures to estimate the effect of each exposure on an outcome, thereby accounting for potentially correlated exposures (Sanderson, 2021). We extracted the 141 LD-independent TG-associated SNPs described above from the summary statistics for LDL-C and HDL-C from GLGC and for ApoB from UKB. We then performed four MVMR IVW tests against traits Bonferroni-significant in our discovery analysis with the following sets of exposures: TG and LDL; TG and HDL; TG, HDL, and LDL; or TG, HDL, LDL, and ApoB.\n\nFinally, we performed bidirectionally or reverse MR on significant results to examine the potential presence of reverse causation. We selected instruments for each disease as described above from Pan-UKB and instruments for plasma TG levels from GLGC, essentially reversing the discovery stage design using a fixed-effect IVW method.\n\nTo account for multiple testing, a conservative Bonferroni threshold for statistical significance was set to p<0.05/2600=1.92 \u00d7 10\u20135 for the discovery analysis. For replication analysis, a similar conservative Bonferroni threshold was set to p<0.05/221=2.26 \u00d7 10\u20134. We determined three tiers of statistical evidence based on the Bonferroni or nominal threshold (p<0.05) in both the discovery and replication analyses. This presentation is somewhat unconventional and partly arises from the study\u2019s use of three different datasets for instrument selection. In a traditional two-stage discovery and replication design, Bonferroni adjustment is based on the number of significant signals from the discovery that is tested in replication. Here, we used three tiers of statistical evidence to present results because a standard meta-analysis between UKB and FinnGen was not possible, given it was not possible to reliably map all phenotypes between the two datasets. Additionally, Bonferroni-significant results in the replication analysis would have been ignored in FinnGen in a sequential two-stage design if they were also only nominally associated in UKB. The three tiers are defined below:\n\n### Ethical approval\n\nUK Biobank has approval from the North West Multi-Centre Research Ethics Committee (MREC) as a Research Tissue Bank (RTB) (11/NW/0382), and all participants of UKB provided written informed consent. More information is available at (https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank/about-us/ethics). The work described in this study was approved by UKB under application number 16218. All participants of FinnGen provided written informed consent for biobank research, based on the Finnish Biobank Act. The Coordinating Ethics Committee of the Hospital District of Helsinki and Uusimaa (HUS) approved the FinnGen study protocol Nr HUS/990/2017. More information is available at (https://www.finngen.fi/en/code_of_conduct).\n\n## Results\n\n### Genetically proxied plasma TG levels and phenome-wide disease risk\n\nIn the discovery analysis, we identified nominally significant associations (p<0.05) between plasma TG levels and 598 disease traits in UKB (Supplementary file 1). Of these, 39 disease traits were statistically significant after multiple testing corrections with a conservative Bonferroni-corrected threshold (p<1.92 \u00d7 10\u20135). As a positive control, plasma TG levels were positively associated with gout with an odds ratio (OR) of 1.78 for gout (95% CI 1.52\u20132.09, p=7.41 \u00d7 10\u201311), in agreement with prior studies (Yu et al., 2021). In the replication analysis, we identified nominally significant associations (p<0.05) between plasma TG levels and 71 disease traits in FinnGen (Supplementary file 2). Of these, 22 traits were Bonferroni-significant. A summary of the 19 most statistically significant and replicated results has been organized into three predefined tiers of evidence (Figure 2). We note that the magnitude of estimates from the discovery analysis was generally greater than those from replication analysis, especially among tier 1 and tier 2 associations, potentially as a manifestation of winner\u2019s curse bias (G\u00f6ring et al., 2001).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80560/elife-80560-fig2-v2.jpg)\n\n**Figure 2.:** Causal estimates from IVW regression are shown as odds ratios (OR) per 1 SD increase in plasma TG levels (mmol/L). Asterisks indicate novel associations. Black indicates discovery analysis results using UKB. Red indicates replication analysis results using FinnGen. Horizontal error bars represent 95% CIs. Tier 1 (BB): At least Bonferroni-significant in both the discovery (p<1.92 \u00d7 10\u20135) and replication (p<2.26 \u00d7 10\u20134) analyses. Tier 2 (BN): At least Bonferroni-significant in the discovery analysis (p<1.92 \u00d7 10\u20135) and at least nominally significant in the replication analysis (p<0.05). Tier 3 (NB): At least nominally significant in the discovery analysis (p<0.05) and at least Bonferroni significant in the replication analysis (p<2.26 \u00d7 10\u20134). Full results and sample sizes (n) of each GWAS for each trait are provided in Supplementary file 1 and Supplementary file 2.\n\nFor tier 1 results, genetically determined plasma TG levels were positively associated with seven disease traits in both the discovery and replication analyses. These were Bonferroni-significant in both analyses, and all were related to dyslipidemias or ASCVD. Among traits related to ASCVD, the strongest association by statistical significance was for angina pectoris in both the discovery UKB cohort (OR 1.39, 95% CI 1.29\u20131.51, p=2.11 \u00d7 10\u201313) and the replication FinnGen cohort (OR 1.30, 95% CI 1.24\u20131.37, p=1.25 \u00d7 10\u201326). For tier 2 results, plasma TG levels were positively associated with three disease traits, including non-ASCVDs: gout, uterine leiomyoma, and \u2018other aneurysms\u2019 (phecode-442). The strongest association by significance, after gout, was for leiomyoma of the uterus in both the discovery (OR 1.19, 95% CI 1.10\u20131.29, p=1.17 \u00d7 10\u20135) and replication cohorts (OR 1.06, 95% CI 1.02\u20131.11, p=3.60 \u00d7 10\u20133). For tier 3 results, nine disease traits were identified, and a greater proportion were non-ASCVD traits. The strongest association by significance was for hypertension in both the discovery (OR 1.51, 95% CI 1.08\u20131.23, p=3.20 \u00d7 10\u20135) and replication cohorts (OR 1.17, 95% CI 1.14\u20131.22, p=9.49 \u00d7 10\u201320).\n\n### Sensitivity analyses using MR-PRESSO, MR-Egger, weighted median, and reverse MR\n\nTo account for potential horizontal pleiotropy bias due to outlier IVs, we next used the MR-PRESSO test on the 19 significant and replicated associations identified above, which were categorized into three tiers of statistical evidence. MR-PRESSO suspected outlier IVs for 16 of the 19 associations, and between 1 and 10 IVs were identified for eight associations (Supplementary file 3). We then re-ran IVW MR for these eight associations after removing outlier IVs. Among tier 1 results, all seven associations increased in significance after outlier removal (Figure 3). For tier 2 results, 2 of 3 associations had significant global MR-PRESSO test values, but no outlier IVs were removed. For tier 3 results, seven of nine associations had significant global MR-PRESSO test values, and outlier IVs were removed for one of these associations, which increased in significance: hypertension (p=3.20 \u00d7 10\u20135 to p=2.80 \u00d7 10\u20138). Importantly, all associations maintained the same effect direction after the MR-PRESSO outlier test, in keeping with the initial discovery analysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80560/elife-80560-fig3-v2.jpg)\n\n**Figure 3.:** Shown are sensitivity analysis results from the discovery stage using instruments from Global Lipids Genetics Consortium (GLGC) and outcomes from UKB. Associations with insignificant global MR-PRESSO test results (p>0.05) were not rerun and do not have data points for inverse-variance weighted (IVW) after MR-PRESSO. Tier 1 (BB): At least Bonferroni-significant in both the discovery (p<1.92 \u00d7 10\u20135) and replication (p<2.26 \u00d7 10\u20134) analyses. Tier 2 (BN): At least Bonferroni-significant in the discovery analysis (p<1.92 \u00d7 10\u20135) and at least nominally significant in the replication analysis (p<0.05). Tier 3 (NB): At least nominally significant in the discovery analysis (p<0.05) and at least Bonferroni significant in the replication analysis (p<2.26 \u00d7 10\u20134). Horizontal error bars represent 95% CIs. Full results and sample sizes (n) of each GWAS for each trait are found in Supplementary file 1 and Supplementary file 3.\n\nTo further account for horizontal pleiotropy, we conducted sensitivity analyses for the 19 significant and replicated traits using the MR-Egger and weighted median estimators on UKB data (Figure 3). MR-Egger results were comparable to IVW results for all 19 traits across the three tiers of evidence. However, weighted median results were less statistically significant than IVW and MR-Egger results for most traits except for disorders of lipid metabolism, hyperlipidemia, and hypertension.\n\nFinally, we performed reverse MR to estimate the effects of significant disease traits on plasma TG levels, selecting instruments from UKB and GLGC, respectively. Genetic data were sufficiently available to perform this analysis for 9 of the 19 diseases of interest. These results are presented in Supplementary file 6. Expectedly, \u2018disorders of lipoprotein metabolism\u2019 and \u2018hyperlipidemia\u2019 had positive effects on plasma TG levels; however, no other examined disease trait showed results suggesting reverse causation.\n\n### Separating the independent effects of plasma TG levels\n\nTo isolate the independent effect of plasma TG levels from those of correlated lipid fractions, we next conducted MVMR on the 19 significant and replicated associations using the IVW estimator on UKB data, adjusting for plasma HDL-C, LDL-C, or both simultaneously (Figure 4). For tier 1 associations, we observed an increase in statistical significance for disorders of lipid metabolism and hyperlipidemia after adjustment. For tier 2 results, we observed an increase in significance for gout. For tier 3 results, we observed an increase in significance for alcoholic liver disease, paroxysmal tachycardia, and calculus of the kidney and ureter. Aside from these, MVMR led to a decrease in statistical significance for the remaining associations. However, all 19 associations remained in the same direction of causality despite multivariable adjustment (Supplementary file 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80560/elife-80560-fig4-v2.jpg)\n\n**Figure 4.:** Shown are the multivariable MR (MVMR) results from the discovery analysis, using genetic instruments for plasma TG levels from Global Lipids Genetics Consortium (GLGC) and disease traits from UKB. Levels of statistical significance are categorized into three tiers: Tier 1 (BB): At least Bonferroni-significant in both the discovery (p<1.92 \u00d7 10\u20135) and replication (p<2.26 \u00d7 10\u20134) analyses. Tier 2 (BN): At least Bonferroni-significant in the discovery analysis (p<1.92 \u00d7 10\u20135) and at least nominally significant in the replication analysis (p<0.05). Tier 3 (NB): At least nominally significant in the discovery analysis (p<0.05) and at least Bonferroni significant in the replication analysis (p<2.26 \u00d7 10\u20134). Horizontal error bars represent 95% CIs. Full results are provided in Supplementary file 4. Sample sizes (n) of each GWAS for each trait are found in Supplementary file 1.\n\n## Discussion\n\nWe performed phenome-wide, two-sample MR to estimate the causal effects of plasma TG levels on a spectrum of human disease traits (n=2600) using a discovery cohort from UKB and a replication cohort from FinnGen. We report seven disease traits reaching Bonferroni-corrected significance in both the discovery and replication analyses, which we categorized as tier 1 results. These traits were predominantly manifestations of ASCVD, such as ischemic heart disease, angina pectoris, and myocardial infarction. Using MVMR, we found that these associations remained even after controlling for LDL-C, HDL-C, and ApoB levels (Figure 4). We also identified three disease traits that are Bonferroni-significant in discovery (p<1.92 \u00d7 10\u20135) and at least nominally significant in replication (p<0.05), categorized as tier 2 results. Lastly, we identified nine disease traits at least nominally significant in discovery and Bonferroni-significant in replication, categorized as tier 3 results. Several of these non-ASCVD disease traits have never been reported to be causally associated with TGs, potentially introducing new opportunities for drug repurposing and experimental study.\n\nOur results are consistent with prior work suggesting that plasma TG levels are causally associated with ASCVD risk (Sarwar et al., 2010; Casta\u00f1er et al., 2020; Do et al., 2013; Dewey et al., 2016; Holmes et al., 2015; White et al., 2016; Varbo et al., 2013; Ibi et al., 2021; Rosenson et al., 2021). We do not prove here that circulating TGs per se are directly atherogenic; rather, we show that plasma TG measurement, which comprises multiple classes of triglyceride-rich lipoproteins (TRL) and their remnants, captures a clinically significant mechanism that is causally associated with ASCVD (Rosenson et al., 2021). This interpretation is consistent with an emerging view that apolipoprotein B (ApoB) particle number is a more important determinant of atherogenesis than LDL-C and that TRL particles are as important a risk factor in ASCVD as LDL particles since they each carry a single ApoB molecule (Ference et al., 2019; Marston et al., 2022; Richardson et al., 2020). According to this paradigm, the causal association we observe between plasma TG levels and ASCVD risk may be mediated by the concentration of ApoB particles in TRLs, captured by plasma TG level measurements. We evaluated this possibility by accounting for ApoB levels in a MVMR framework and found that significant causal associations persist between plasma TG levels and all examined ASCVD traits, despite a modest decrease in effect size (Figure 4; Supplementary file 4). These data suggest that ApoB levels may explain at least a portion of the detected associations; however, plasma TG measurement appears to capture additional mechanisms of ASCVD risk involving cholesterol-enriched TRL remnants that remain unclear. Scientific interest in the atherogenic mechanisms of TRLs continues to grow, as recently reviewed elsewhere (Bor\u00e9n et al., 2022; Ginsberg et al., 2021).\n\nRegarding non-ASCVDs, we present suggestive genetic evidence of potentially causal associations between plasma TG levels and uterine leiomyomas (uterine fibroids), diverticular disease of the intestine, paroxysmal tachycardia, hemorrhage from respiratory passages (hemoptysis), and calculus of kidney and ureter (kidney stones). Due to the weaker statistical evidence supporting these associations, special caution is encouraged when interpreting these results to infer causality, and further replication and validation studies are essential for all tier 2 and 3 results. Nevertheless, prior studies have reported correlational associations between many of these diseases and plasma TG levels or risk factors correlated to plasma TGs. For example, studies had documented positive correlations between leiomyoma risk and plasma TG levels (Uimari et al., 2016; Tonoyan et al., 2021; Peshkova et al., 2020). Others had shown diverticular disease risk is positively associated with BMI, body fat percentage, and visceral fat area (Shih et al., 2022; Freckelton et al., 2018; B\u00f6hm, 2021). Similarly, kidney stones have been associated with the triglyceride-glucose (TyG) index (Qin et al., 2021), and atrial tachycardias have been associated with VLDL levels in metabolic syndrome patients (Lee et al., 2017; Park and Lee, 2018). Our study is the first to suggest that these associations may be causally related and specific to plasma TG levels, as opposed to confounding risk factors, such as obesity and hormone replacement therapy. However, we note that these associations were not as robust as those in tier 1 associations related to ASCVDs, and we encourage caution in drawing causal conclusions from these estimates of a causal effect. Though, we present the rationale for potentially repurposing TG-lowering agents towards these non-ASCVD indications and for pursuing mechanistic studies interrogating TG biology, RCTs remain the gold standard for assessing causality and remain necessary for assessing clinical potential.\n\nOur results also suggest a novel, negative causal association between plasma TG levels and alcoholic liver disease (ALD), suggesting that excessively reducing plasma TG levels may increase the risk of this disease trait. A mechanistic explanation for this association remains elusive as previous studies on dysregulated lipid metabolism in liver disease have generally focused on non-alcoholic fatty liver disease (NAFLD). However, one animal study suggests that medium-chain TGs may decrease lipid peroxidation and reverse established alcoholic liver injury in rat models of ALD (Nanji et al., 1996). Nevertheless, that elevated TG levels may protect against ALD is surprising and requires external validation. It remains unclear whether this association is only relevant to lifelong, chronic lowering of plasma TG levels rather than transient lowering by drug-based interventions. It is also unclear whether ALD could be prevented by increasing TG levels. This finding suggests the potential intolerability of TG-lowering agents and the importance of maintaining these drugs\u2019 concentrations within therapeutic windows for patient safety; however, we reiterate that this tier 3 association was only nominally significant in discovery, while Bonferroni-significant in replication, and future studies are needed to validate the statistical evidence.\n\nThe study has several limitations. First, MR is a powerful but potentially fallible method that relies on several key assumptions, namely that genetic instruments are (i) associated with the exposure (the relevance assumption); (ii) have no common cause with the outcome (the independence assumption); and (iii) have effects on the outcome solely through the exposure (the exclusion restriction assumption) (Hartwig et al., 2016). In MR, (i) is relatively straightforward to test, while (ii) and (iii) are difficult to establish unequivocally. As a prominent example, horizontal or type I pleiotropy has been shown to be common in genetic variation, which can bias MR estimates (Verbanck et al., 2018; Jordan et al., 2019). This occurs when a genetic instrument is associated with multiple traits other than the outcome of interest. To detect and correct for this as best as possible, we used various MR tests as sensitivity analyses that each aims to adjust for or account for the presence of horizontal pleiotropy, including MR-PRESSO, as well as MR-Egger and weighted median methods. There is no universally accepted method that is perfectly robust to horizontal pleiotropy, but we take the best current approach by using multiple methods and examining the consistency of results. A second limitation of the study is that genetic variants confer exposures that are lifelong but small in effect size; thus, MR may over- or underestimate the effect sizes of pharmacological interventions. MR also cannot make comparisons between TG-lowering agents as it evaluates drug targets, not drug subclasses and unique pharmacodynamics (Gill et al., 2019; Sofat et al., 2010). However, the utility of MR in drug target validation is well-established as estimates still indicate the presence and direction of causality (Gill et al., 2021). Third, UKB and FinnGen have innate differences in participant demographics and medical coding systems, due in part to the former being based in the United Kingdom and the latter in Finland. As such, the potential misclassification of participants in the case-control assignment is a liability to this study. We exercised caution in mapping UKB traits to FinnGen traits, but we were unable to reliably map all \u2018categorical\u2019 traits from UKB to corresponding traits in FinnGen, testing for replication only 221 of the 598 associations that were nominally significant in the primary analysis. We note however that, despite geographical differences, both datasets largely involve White European participants of older age, with the mean age in UKB and FinnGen being 56.5 and 59.8, respectively. Fourth, discovery and replication analyses were not completely independent, since UKB data were used in both analyses. This could potentially exacerbate demographic and measurement biases inherent to UKB; however, we show that taking a traditional replication approach using GLGC instead of UKB for selecting exposure instruments in replication returns comparable tier 1 results (Supplementary file 5), while losing statistical power to highlight many of the tier 2 and 3 results. Fifth, the GLGC GWAS used to select instruments for plasma TG levels in discovery had accounted for lipid-lowering treatment, while the UKB GWAS used in replication had not. Last, we acknowledge that this study was restricted to populations of European ancestry, limiting the generalizability of our findings. A recent study observed comparable MR estimates for the causal effects of lipid traits on ischemic stroke risk between African and European ancestry individuals (Fatumo et al., 2021), suggesting the potential generalizability of MR results across ancestries in some specific cases. Nevertheless, trans-ancestry MR analyses are warranted to validate our study\u2019s findings in diverse ancestry populations.\n\nIn conclusion, this study demonstrates a high-throughput application of two-sample MR to estimate the causal effects of plasma TG levels on phenome-wide disease risk. Future studies may consider the functional and qualitative attributes of TRL subtypes, and metabolomic data partitioning TRLs by size and composition may soon enable this to identify the specific component of a plasma TG measurement that drives disease risk in the detected associations (Holmes et al., 2015). With the proliferation of multi-omic data, this systematic MR approach could be generalized to study the causal effects of serum biomarkers on disease risk, at scale. However, caution is still warranted in inferring causality, as MR depends on specific assumptions and the validity of those assumptions must be carefully assessed. Thus, diverse study designs remain necessary to triangulate evidence on the causal effects of plasma TG levels.\n",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "1d931e13-ac56-4581-a991-da8a6ece81ad",
+      "submission_id": "6dc71735-4405-435f-9208-389c12569751",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nianjun Liu, https://ror.org/02k40bc56 Indiana University Bloomington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80560.sa0](https://doi.org/10.7554/eLife.80560.sa0)\n\nIn this work causal associations between plasma triglyceride (TG) levels and 19 disease traits were identified which may provide valuable insights into the mechanism of TG biology and drug repurposing of TG-lowering agents. The evidence supporting the claims of the authors is solid, based on biobank-scale data in both discovery analysis and replication analysis. The work will be of interest to cardiovascular clinicians, medical geneticists, and pharmaceutical companies.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Nianjun Liu, https://ror.org/02k40bc56 Indiana University Bloomington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80560.sa1](https://doi.org/10.7554/eLife.80560.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Phenome-wide Mendelian randomization study of plasma triglycerides and 2,600 disease traits\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by YM Dennis Lo as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Kaixiong Ye (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Additional analysis may be needed to rule out the presence of reverse causation and potential false positive findings.\n\n2) The assumptions of Mendelian randomization need to be discussed in more detail.\n\n3) It is a strength to have a discovery stage and a replication stage. However, the difference between the two stages is blurred by the use of three tiers of statistical evidence. This may increase false positive rates. Further multiple testing adjustment may be needed.\n\n4) The interpretation of the causal effects may need to be more cautious and rigorous, particularly for the findings from Tiers 2 and 3.\n\nReviewer #3 (Recommendations for the authors):\n\nI have another concern or suggestion. One possible interpretation of the causal roles of triglycerides, the authors proposed, \"the causal association we observe between plasma TG levels and ASCVD risk may be mediated by the concentration of apoB particles in TRLs, captured by plasma TG level measurements.\" The possible mediating role of apoB could be tested in the same multivariable MR framework used to exclude the effect of LDL-C and HDL-C. Since there are existing GWAS for apoB, it should be relatively easy to implement this analysis, either using the GWAS of apoB in UK Biobank and then outcome GWAS in FinGenn, or other GWAS of apoB (not in UKB) and then outcome GWAS in UKB.\n",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f44c942b-7a2f-409f-9fe8-01622adf561a",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C1",
+      "claim": "ASCVD remains the leading cause of death worldwide despite the effectiveness of statin therapy in reducing low-density lipoprotein cholesterol (LDL-C) levels.",
+      "claim_type": "EXPLICIT",
+      "source": "ASCVD remains the leading cause of death worldwide despite the effectiveness of statin therapy in reducing low-density lipoprotein cholesterol (LDL-C) levels (Baigent et al., 2005; Roth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research (Baigent et al., 2005; Roth et al., 2020) and draws from established scientific knowledge about ASCVD mortality and statin effectiveness.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "f1d2e4fc-352b-45d6-a2f2-b74bc4bcf45c",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C2",
+      "claim": "TGs play vital roles in physiology, ranging from energy storage and mobilization to inflammation, thrombosis, and hormone-like signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "TGs play vital roles in physiology, ranging from energy storage and mobilization to inflammation, thrombosis, and hormone-like signaling (Zewinger et al., 2020; Norata et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research (Zewinger et al., 2020; Norata et al., 2007) and draws from established scientific knowledge about TG functions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "7ad78718-759d-4639-97a9-490ae274d19d",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C3",
+      "claim": "A causal relationship between TGs and ASCVDs remains controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a causal relationship between TGs and ASCVDs remains controversial (Miller et al., 2011; Albrink and Man, 1959), recently culminating in the conflicting reports of two double-blinded randomized controlled trials (RCT), STRENGTH, and REDUCE-IT (Nicholls et al., 2020; Bhatt et al., 2019; Doi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research and clinical trials showing conflicting results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "7dcc8bb4-bb2e-4b16-b46e-a750212b13e6",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C4",
+      "claim": "Drug development for reducing TG-rich lipoproteins (TRL) is an active area of research.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, drug development for reducing TG-rich lipoproteins (TRL) is an active area of research and several targets have now been validated, including angiopoietin-like 3 (ANGPTL3) (Graham et al., 2017; Dewey et al., 2017; Musunuru et al., 2010; Gaudet et al., 2017), angiopoietin-like 4 (ANGPTL4) (Dewey et al., 2016), and apolipoprotein C-III (APOC3) (Gaudet et al., 2015; Crosby et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research validating specific drug targets.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "70f6fe69-d11e-4fbe-963d-c40213df9c76",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C5",
+      "claim": "Clinical trials are currently evaluating ANGPTL3, ANGPTL4, and APOC3 targets for dyslipidemias.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical trials are currently evaluating these targets for dyslipidemias (Arrowhead, 2021b; Arrowhead, 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to ongoing clinical trials.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "e47d1891-f684-40ad-bdb2-f9b1ab92f9bb",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C6",
+      "claim": "TGs are correlated with established ASCVD risk factors, such as obesity and insulin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "First, TGs are correlated with established ASCVD risk factors, such as obesity and insulin resistance (Eckel et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research and draws from established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "3691680e-730d-4b06-bc3c-51009aea6b68",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C7",
+      "claim": "TGs correlate with LDL particles or apolipoprotein B (apoB) concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "They also correlate with LDL particles or apolipoprotein B (apoB) concentration (Cromwell et al., 2007) and inversely correlated with high-density lipoprotein cholesterol (HDL-C) (Phillips and Smith, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "0e9110f2-9bf7-48b1-aa84-a3dc5b522b72",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C8",
+      "claim": "TGs are inversely correlated with high-density lipoprotein cholesterol (HDL-C).",
+      "claim_type": "EXPLICIT",
+      "source": "They also correlate with LDL particles or apolipoprotein B (apoB) concentration (Cromwell et al., 2007) and inversely correlated with high-density lipoprotein cholesterol (HDL-C) (Phillips and Smith, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "afc0421a-3fb2-44e7-9c63-b595756831ee",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C9",
+      "claim": "Available TG-lowering agents have pleiotropic effects on several major lipid fractions, including VLDL-C, LDL-C, HDL-C, and apolipoproteins, including APOC3.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, available TG-lowering agents have pleiotropic effects on several major lipid fractions, including VLDL-C, LDL-C, HDL-C, and apolipoproteins, including APOC3 (Ginsberg et al., 2010; Keech et al., 2005; Frick et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "c8aa489b-4d9c-49c4-ab58-f114f6a2f3c6",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C10",
+      "claim": "MR studies have typically focused on individual diseases selected a priori, narrowing the scope of causal estimates to ASCVDs while overlooking non-ASCVD diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, MR studies have typically focused on individual diseases selected a priori (Davey Smith and Hemani, 2014), narrowing the scope of causal estimates to ASCVDs while overlooking non-ASCVD diseases (Harrison et al., 2018; Smith et al., 2014; Allara et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior MR studies and draws from inference about their limitations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "8c8146eb-f58d-454a-811e-cf918792db00",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C11",
+      "claim": "Phenome-wide MR uses genetic variants as instrumental variables to proxy modifiable exposures.",
+      "claim_type": "EXPLICIT",
+      "source": "As in conventional MR, this method uses genetic variants as instrumental variables (IV) to proxy modifiable exposures (Smith and Ebrahim, 2003), and importantly, it relies on three critical assumptions: (1) The genetic variant is directly associated with the exposure; (2) The genetic variant is unrelated to confounders between the exposure and outcome; and (3) The genetic variant has no effect on the outcome other than through the exposure (Smith and Ebrahim, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior methodological work and draws from established scientific knowledge about MR methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "1959c53e-88db-4d2a-a0c9-f33fe5345b52",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C12",
+      "claim": "Phenome-wide MR enables comprehensive scans of the phenotypic spectrum, limiting bias from prior assumptions and facilitating the discovery of unforeseen causal relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "A distinction, however, is that phenome-wide MR enables comprehensive scans of the phenotypic spectrum, limiting bias from prior assumptions and facilitating the discovery of unforeseen causal relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference about the advantages of phenome-wide MR compared to conventional MR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "bfbedb57-772d-4a24-a806-a375208150b4",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C13",
+      "claim": "The CARDIoGRAMplusC4D Metabochip study by GLGC involved 63,746 cases and 130,681 controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The CARDIoGRAMplusC4D Metabochip study by GLGC involved 63,746 cases and 130,681 controls (Deloukas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to the GLGC study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "1c0609b5-fac4-4911-b7bc-7f18ce90640f",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C14",
+      "claim": "UKB is a longitudinal, population-based cohort study with genetic and phenotypic data on over 500,000 participants aged 40\u201369 years at recruitment from across the United Kingdom during 2006\u20132010.",
+      "claim_type": "EXPLICIT",
+      "source": "UKB is a longitudinal, population-based cohort study with genetic and phenotypic data on over 500,000 participants aged 40\u201369 years at recruitment from across the United Kingdom during 2006\u20132010 (Sudlow et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to the UKB study description.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "49bd4139-6bc7-4c25-9571-3778dc8b2ea2",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C15",
+      "claim": "FinnGen is a large public-private partnership started in August 2017 aiming to collect and analyze genomic and phenotypic data from 500,000 Finnish biobank participants.",
+      "claim_type": "EXPLICIT",
+      "source": "FinnGen is a large public-private partnership started in August 2017 aiming to collect and analyze genomic and phenotypic data from 500,000 Finnish biobank participants (FinnGen, 2020; Kurki et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to FinnGen documentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "e2e2f76b-f2e1-48fa-9d8f-9c7536213189",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C16",
+      "claim": "3086 single nucleotide polymorphisms (SNP) were associated with plasma TG levels in GLGC at a genome-wide significance threshold of p<5 \u00d7 10\u20138.",
+      "claim_type": "EXPLICIT",
+      "source": "For primary and secondary analyses, we identified 3086 single nucleotide polymorphisms (SNP) associated with plasma TG levels in GLGC at a genome-wide significance threshold of p<5 \u00d7 10\u20138.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study using GLGC data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "f17b9f49-dbcd-4335-a36e-a1403a8a4ce3",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C17",
+      "claim": "141 independent SNPs were selected at a linkage disequilibrium (LD) threshold of r2 <0.05 using the 1000 Genomes LD European panel as the reference population.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 141 independent SNPs were then selected at a linkage disequilibrium (LD) threshold of r2 <0.05 using the 1000 Genomes LD European panel as the reference population (Auton et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study and cites the reference population used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "fab1639d-09de-459d-93a2-9d48e0ab2223",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C18",
+      "claim": "The GLGC GWAS had excluded individuals known to be on lipid-lowering medications.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the GLGC GWAS had excluded individuals known to be on lipid-lowering medications (Willer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to the GLGC GWAS study design.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "b37dfc55-1b1b-4f43-bb8c-b97e169963c8",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C19",
+      "claim": "1388 SNPs were associated with plasma TG levels in UKB after restricting for genome-wide significance (p<5 \u00d7 10\u20138) and LD-clumping.",
+      "claim_type": "EXPLICIT",
+      "source": "For replication analysis, we identified 1388 SNPs associated with plasma TG levels in UKB after restricting for genome-wide significance (p<5 \u00d7 10\u20138) and LD-clumping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study using UKB data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "618e29a6-d106-4a72-9160-54cf4d109d35",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C20",
+      "claim": "1248 SNPs were used for genetic instrumentation based on whether the SNP was also available in the FinnGen dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "We then restricted to 1248 SNPs for genetic instrumentation based on whether the SNP was also available in the FinnGen dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "27ca5735-4aeb-46d7-b569-57909ff51f72",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C21",
+      "claim": "The Pan-UKB GWAS study did not exclude participants based on their use of lipid-lowering medications.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the Pan-UKB GWAS study did not exclude participants based on their use of lipid-lowering medications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of the Pan-UKB GWAS study design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "1cadec9b-047e-44ff-b3cd-44c7bab9b0c8",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C22",
+      "claim": "Pan-UKB performed 16,131 GWASs on 7221 phenotypes in ~420,531 UKB participants of European ancestry using genetic and phenotypic data.",
+      "claim_type": "EXPLICIT",
+      "source": "Pan-UKB had performed 16,131 GWASs on 7221 phenotypes in ~420,531 UKB participants of European ancestry using genetic and phenotypic data (PanUKBTeam, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to the Pan-UKB study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "3417fdc9-0753-45e4-9fa8-8d5d2dfde850",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C23",
+      "claim": "2600 traits were retained for the primary analysis after filtering for categorical, ICD-10, and phecode types; non-null heritability in European ancestry; and relevance to disease.",
+      "claim_type": "EXPLICIT",
+      "source": "We filtered for outcomes to retain categorical, ICD-10, and phecode types; non-null heritability in European ancestry as estimated by Pan-UKB; and relevance to disease, excluding medications. This yielded 2600 traits for the primary analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "69cfc4f4-5a95-4e44-a78c-7bf0c79f276e",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C24",
+      "claim": "221 outcomes were selected for replication testing based on having an equivalent phenotype in UKB and being at least nominally significant (p<0.05) in the discovery analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 2444 available FinnGen outcomes, we ultimately selected 221 outcomes for replication testing based on two conditions: (1) The outcome has an equivalent phenotype documented as an ICD-10 code or phecode in UKB, which we had included in the discovery analysis, and (2) the outcome was at least nominally significant (p<0.05) in the discovery analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "b515ad8d-58db-4fe5-8312-5b4bd846500a",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C25",
+      "claim": "In the discovery analysis, nominally significant associations (p<0.05) were identified between plasma TG levels and 598 disease traits in UKB.",
+      "claim_type": "EXPLICIT",
+      "source": "In the discovery analysis, we identified nominally significant associations (p<0.05) between plasma TG levels and 598 disease traits in UKB (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "b2cda229-87cd-4bbb-a391-bfd6119a979b",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C26",
+      "claim": "39 disease traits were statistically significant after multiple testing corrections with a conservative Bonferroni-corrected threshold (p<1.92 \u00d7 10\u20135) in the discovery analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 39 disease traits were statistically significant after multiple testing corrections with a conservative Bonferroni-corrected threshold (p<1.92 \u00d7 10\u20135).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "29640d5f-ef97-4398-97a7-2c093f7115e1",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C27",
+      "claim": "Plasma TG levels were positively associated with gout with an odds ratio (OR) of 1.78 (95% CI 1.52\u20132.09, p=7.41 \u00d7 10\u201311).",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, plasma TG levels were positively associated with gout with an odds ratio (OR) of 1.78 for gout (95% CI 1.52\u20132.09, p=7.41 \u00d7 10\u201311), in agreement with prior studies (Yu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study and is consistent with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "70d279be-32e0-43dc-9a02-ddfaf925e378",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C28",
+      "claim": "In the replication analysis, nominally significant associations (p<0.05) were identified between plasma TG levels and 71 disease traits in FinnGen.",
+      "claim_type": "EXPLICIT",
+      "source": "In the replication analysis, we identified nominally significant associations (p<0.05) between plasma TG levels and 71 disease traits in FinnGen (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "ca70be63-1b88-449c-98fe-904cb5a31cce",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C29",
+      "claim": "22 traits were Bonferroni-significant in the replication analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 22 traits were Bonferroni-significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "09c019df-8f7e-44f1-9116-1bc6344c892f",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C30",
+      "claim": "The magnitude of estimates from the discovery analysis was generally greater than those from replication analysis, especially among tier 1 and tier 2 associations, potentially as a manifestation of winner's curse bias.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the magnitude of estimates from the discovery analysis was generally greater than those from replication analysis, especially among tier 1 and tier 2 associations, potentially as a manifestation of winner's curse bias (G\u00f6ring et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study and inference about potential bias, with citation to prior work on winner's curse.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "a34ed96f-6b74-46ea-9625-d6af6178e669",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C31",
+      "claim": "Genetically determined plasma TG levels were positively associated with seven disease traits in both the discovery and replication analyses (tier 1 results), all related to dyslipidemias or ASCVD.",
+      "claim_type": "EXPLICIT",
+      "source": "For tier 1 results, genetically determined plasma TG levels were positively associated with seven disease traits in both the discovery and replication analyses. These were Bonferroni-significant in both analyses, and all were related to dyslipidemias or ASCVD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study and is shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "681cf750-c9c6-4673-9921-4584e10fd41e",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C32",
+      "claim": "The strongest association by statistical significance among ASCVD traits was for angina pectoris in both the discovery UKB cohort (OR 1.39, 95% CI 1.29\u20131.51, p=2.11 \u00d7 10\u201313) and the replication FinnGen cohort (OR 1.30, 95% CI 1.24\u20131.37, p=1.25 \u00d7 10\u201326).",
+      "claim_type": "EXPLICIT",
+      "source": "Among traits related to ASCVD, the strongest association by statistical significance was for angina pectoris in both the discovery UKB cohort (OR 1.39, 95% CI 1.29\u20131.51, p=2.11 \u00d7 10\u201313) and the replication FinnGen cohort (OR 1.30, 95% CI 1.24\u20131.37, p=1.25 \u00d7 10\u201326).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study and is shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "d22e1c60-ad74-4f5c-b967-53c706ea8b93",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C33",
+      "claim": "Plasma TG levels were positively associated with three disease traits in tier 2 results, including gout, uterine leiomyoma, and 'other aneurysms' (phecode-442).",
+      "claim_type": "EXPLICIT",
+      "source": "For tier 2 results, plasma TG levels were positively associated with three disease traits, including non-ASCVDs: gout, uterine leiomyoma, and 'other aneurysms' (phecode-442).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study and is shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "cb8166f2-96df-4ee7-bc10-83609096b54c",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C34",
+      "claim": "The strongest association by significance in tier 2 results, after gout, was for leiomyoma of the uterus in both the discovery (OR 1.19, 95% CI 1.10\u20131.29, p=1.17 \u00d7 10\u20135) and replication cohorts (OR 1.06, 95% CI 1.02\u20131.11, p=3.60 \u00d7 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest association by significance, after gout, was for leiomyoma of the uterus in both the discovery (OR 1.19, 95% CI 1.10\u20131.29, p=1.17 \u00d7 10\u20135) and replication cohorts (OR 1.06, 95% CI 1.02\u20131.11, p=3.60 \u00d7 10\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study and is shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "407b8be9-a641-44aa-976d-ad3057cd8dcc",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C35",
+      "claim": "Nine disease traits were identified in tier 3 results, with a greater proportion being non-ASCVD traits.",
+      "claim_type": "EXPLICIT",
+      "source": "For tier 3 results, nine disease traits were identified, and a greater proportion were non-ASCVD traits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study and is shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "7159e3b0-94ed-4dd0-9565-2189240af39f",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C36",
+      "claim": "The strongest association by significance in tier 3 results was for hypertension in both the discovery (OR 1.51, 95% CI 1.08\u20131.23, p=3.20 \u00d7 10\u20135) and replication cohorts (OR 1.17, 95% CI 1.14\u20131.22, p=9.49 \u00d7 10\u201320).",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest association by significance was for hypertension in both the discovery (OR 1.51, 95% CI 1.08\u20131.23, p=3.20 \u00d7 10\u20135) and replication cohorts (OR 1.17, 95% CI 1.14\u20131.22, p=9.49 \u00d7 10\u201320).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study and is shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "63de57c3-a358-4ba6-bc90-c31035f915d5",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C37",
+      "claim": "MR-PRESSO suspected outlier IVs for 16 of the 19 associations.",
+      "claim_type": "EXPLICIT",
+      "source": "MR-PRESSO suspected outlier IVs for 16 of the 19 associations, and between 1 and 10 IVs were identified for eight associations (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MR-PRESSO.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "3bc19c00-095f-4021-9c6f-87bb5c848553",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C38",
+      "claim": "Between 1 and 10 IVs were identified as outliers for eight associations.",
+      "claim_type": "EXPLICIT",
+      "source": "MR-PRESSO suspected outlier IVs for 16 of the 19 associations, and between 1 and 10 IVs were identified for eight associations (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MR-PRESSO.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "a290b8a6-0342-4001-9028-2e9f172aa5b1",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C39",
+      "claim": "Among tier 1 results, all seven associations increased in significance after outlier removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Among tier 1 results, all seven associations increased in significance after outlier removal (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study and is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "0f3036d8-488f-4e26-833d-6e94641e6693",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C40",
+      "claim": "For tier 2 results, 2 of 3 associations had significant global MR-PRESSO test values, but no outlier IVs were removed.",
+      "claim_type": "EXPLICIT",
+      "source": "For tier 2 results, 2 of 3 associations had significant global MR-PRESSO test values, but no outlier IVs were removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MR-PRESSO.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "04653551-82a4-4424-a2a4-1d979fe1c2a2",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C41",
+      "claim": "For tier 3 results, seven of nine associations had significant global MR-PRESSO test values, and outlier IVs were removed for one of these associations (hypertension), which increased in significance from p=3.20 \u00d7 10\u20135 to p=2.80 \u00d7 10\u20138.",
+      "claim_type": "EXPLICIT",
+      "source": "For tier 3 results, seven of nine associations had significant global MR-PRESSO test values, and outlier IVs were removed for one of these associations, which increased in significance: hypertension (p=3.20 \u00d7 10\u20135 to p=2.80 \u00d7 10\u20138).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MR-PRESSO.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "e5871b87-1174-4b84-8a7e-ff6908e4a568",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C42",
+      "claim": "All associations maintained the same effect direction after the MR-PRESSO outlier test, in keeping with the initial discovery analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all associations maintained the same effect direction after the MR-PRESSO outlier test, in keeping with the initial discovery analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MR-PRESSO.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "734747b5-7602-43a5-b65e-d5341d39f4b4",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C43",
+      "claim": "MR-Egger results were comparable to IVW results for all 19 traits across the three tiers of evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "MR-Egger results were comparable to IVW results for all 19 traits across the three tiers of evidence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study and is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "658b77a0-e558-4562-86a5-4c7d18836708",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C44",
+      "claim": "Weighted median results were less statistically significant than IVW and MR-Egger results for most traits except for disorders of lipid metabolism, hyperlipidemia, and hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "However, weighted median results were less statistically significant than IVW and MR-Egger results for most traits except for disorders of lipid metabolism, hyperlipidemia, and hypertension.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study and is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "ea8d212b-b773-42a2-885f-a88cbab357a2",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C45",
+      "claim": "Genetic data were sufficiently available to perform reverse MR for 9 of the 19 diseases of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we performed reverse MR to estimate the effects of significant disease traits on plasma TG levels, selecting instruments from UKB and GLGC, respectively. Genetic data were sufficiently available to perform this analysis for 9 of the 19 diseases of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "c075ead5-7952-435d-8487-3ed6c5dce60a",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C46",
+      "claim": "'Disorders of lipoprotein metabolism' and 'hyperlipidemia' had positive effects on plasma TG levels in reverse MR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Expectedly, 'disorders of lipoprotein metabolism' and 'hyperlipidemia' had positive effects on plasma TG levels; however, no other examined disease trait showed results suggesting reverse causation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study using reverse MR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "7e83e89d-22d2-4187-9630-56d726ad20fd",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C47",
+      "claim": "No disease trait other than 'disorders of lipoprotein metabolism' and 'hyperlipidemia' showed results suggesting reverse causation in reverse MR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Expectedly, 'disorders of lipoprotein metabolism' and 'hyperlipidemia' had positive effects on plasma TG levels; however, no other examined disease trait showed results suggesting reverse causation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study using reverse MR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "03590060-a1b4-429d-888d-a23888654006",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C48",
+      "claim": "For tier 1 associations, an increase in statistical significance was observed for disorders of lipid metabolism and hyperlipidemia after MVMR adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "For tier 1 associations, we observed an increase in statistical significance for disorders of lipid metabolism and hyperlipidemia after adjustment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MVMR and is shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "0d1dd685-63db-4faf-90ce-52afc9c68818",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C49",
+      "claim": "For tier 2 results, an increase in significance was observed for gout after MVMR adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "For tier 2 results, we observed an increase in significance for gout.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MVMR and is shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "31443c03-ef1b-4aef-9f9b-4d3ecfe9a0d4",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C50",
+      "claim": "For tier 3 results, an increase in significance was observed for alcoholic liver disease, paroxysmal tachycardia, and calculus of the kidney and ureter after MVMR adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "For tier 3 results, we observed an increase in significance for alcoholic liver disease, paroxysmal tachycardia, and calculus of the kidney and ureter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MVMR and is shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "4c9f0fb4-0695-433a-9ee6-0b09c4a00225",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C51",
+      "claim": "MVMR led to a decrease in statistical significance for the remaining associations aside from those that increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from these, MVMR led to a decrease in statistical significance for the remaining associations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MVMR and is shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "218b4f84-cefb-46f5-a03a-6eabf73f933a",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C52",
+      "claim": "All 19 associations remained in the same direction of causality despite multivariable adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all 19 associations remained in the same direction of causality despite multivariable adjustment (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MVMR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "1a421b4b-0a6c-4073-ad9d-f29e03134d54",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C53",
+      "claim": "The study identified seven disease traits reaching Bonferroni-corrected significance in both the discovery and replication analyses, predominantly manifestations of ASCVD.",
+      "claim_type": "EXPLICIT",
+      "source": "We report seven disease traits reaching Bonferroni-corrected significance in both the discovery and replication analyses, which we categorized as tier 1 results. These traits were predominantly manifestations of ASCVD, such as ischemic heart disease, angina pectoris, and myocardial infarction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "73605e15-2f11-48a9-bc20-4bb0bd40dc78",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C54",
+      "claim": "Tier 1 associations remained even after controlling for LDL-C, HDL-C, and ApoB levels using MVMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Using MVMR, we found that these associations remained even after controlling for LDL-C, HDL-C, and ApoB levels (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MVMR and is shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "7f0bcd3c-b3b8-4d2a-8de2-ec5ef0258856",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C55",
+      "claim": "The study's results are consistent with prior work suggesting that plasma TG levels are causally associated with ASCVD risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with prior work suggesting that plasma TG levels are causally associated with ASCVD risk (Sarwar et al., 2010; Casta\u00f1er et al., 2020; Do et al., 2013; Dewey et al., 2016; Holmes et al., 2015; White et al., 2016; Varbo et al., 2013; Ibi et al., 2021; Rosenson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study and is consistent with multiple prior studies cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "7d5b9198-617f-43f4-b15c-926f334de7bd",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C56",
+      "claim": "Plasma TG measurement, which comprises multiple classes of triglyceride-rich lipoproteins (TRL) and their remnants, captures a clinically significant mechanism that is causally associated with ASCVD.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not prove here that circulating TGs per se are directly atherogenic; rather, we show that plasma TG measurement, which comprises multiple classes of triglyceride-rich lipoproteins (TRL) and their remnants, captures a clinically significant mechanism that is causally associated with ASCVD (Rosenson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data analysis performed in this study and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "3d52d653-eb39-407b-aa51-890a702f37a9",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C57",
+      "claim": "ApoB particle number is a more important determinant of atherogenesis than LDL-C.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is consistent with an emerging view that apolipoprotein B (ApoB) particle number is a more important determinant of atherogenesis than LDL-C and that TRL particles are as important a risk factor in ASCVD as LDL particles since they each carry a single ApoB molecule (Ference et al., 2019; Marston et al., 2022; Richardson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research and draws from established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "f532080a-b82e-45be-a290-b9f224e5df35",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C58",
+      "claim": "TRL particles are as important a risk factor in ASCVD as LDL particles since they each carry a single ApoB molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is consistent with an emerging view that apolipoprotein B (ApoB) particle number is a more important determinant of atherogenesis than LDL-C and that TRL particles are as important a risk factor in ASCVD as LDL particles since they each carry a single ApoB molecule (Ference et al., 2019; Marston et al., 2022; Richardson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research and draws from established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "3061e9b6-96e9-4e9e-813c-5132f41ead41",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C59",
+      "claim": "Significant causal associations persist between plasma TG levels and all examined ASCVD traits after accounting for ApoB levels in MVMR, despite a modest decrease in effect size.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated this possibility by accounting for ApoB levels in a MVMR framework and found that significant causal associations persist between plasma TG levels and all examined ASCVD traits, despite a modest decrease in effect size (Figure 4; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data analysis performed in this study using MVMR and is shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "3e651e25-39cf-471a-952f-8995b1eeb652",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C60",
+      "claim": "ApoB levels may explain at least a portion of the detected associations between plasma TG levels and ASCVD.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that ApoB levels may explain at least a portion of the detected associations; however, plasma TG measurement appears to capture additional mechanisms of ASCVD risk involving cholesterol-enriched TRL remnants that remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data analysis performed in this study using MVMR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "283bbb4c-892b-481e-b8c5-6d56c4c76054",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C61",
+      "claim": "Plasma TG measurement appears to capture additional mechanisms of ASCVD risk involving cholesterol-enriched TRL remnants that remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that ApoB levels may explain at least a portion of the detected associations; however, plasma TG measurement appears to capture additional mechanisms of ASCVD risk involving cholesterol-enriched TRL remnants that remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data analysis performed in this study using MVMR and involves speculation about mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "fe261336-0803-4d2f-b3a5-480946bb2af2",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C62",
+      "claim": "The study presents suggestive genetic evidence of potentially causal associations between plasma TG levels and uterine leiomyomas, diverticular disease of the intestine, paroxysmal tachycardia, hemorrhage from respiratory passages, and calculus of kidney and ureter.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding non-ASCVDs, we present suggestive genetic evidence of potentially causal associations between plasma TG levels and uterine leiomyomas (uterine fibroids), diverticular disease of the intestine, paroxysmal tachycardia, hemorrhage from respiratory passages (hemoptysis), and calculus of kidney and ureter (kidney stones).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "48981ec4-c5fe-4555-8d6f-7738df981912",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C63",
+      "claim": "Prior studies have reported correlational associations between leiomyoma risk and plasma TG levels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, studies had documented positive correlations between leiomyoma risk and plasma TG levels (Uimari et al., 2016; Tonoyan et al., 2021; Peshkova et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "d86ab8be-67aa-4825-bda7-a821016287d1",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C64",
+      "claim": "Diverticular disease risk is positively associated with BMI, body fat percentage, and visceral fat area.",
+      "claim_type": "EXPLICIT",
+      "source": "Others had shown diverticular disease risk is positively associated with BMI, body fat percentage, and visceral fat area (Shih et al., 2022; Freckelton et al., 2018; B\u00f6hm, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "dc4b2059-f575-4407-bd02-4ed29c24f246",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C65",
+      "claim": "Kidney stones have been associated with the triglyceride-glucose (TyG) index.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, kidney stones have been associated with the triglyceride-glucose (TyG) index (Qin et al., 2021), and atrial tachycardias have been associated with VLDL levels in metabolic syndrome patients (Lee et al., 2017; Park and Lee, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "915b11c8-d755-4438-b76f-44d75ce26fc0",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C66",
+      "claim": "Atrial tachycardias have been associated with VLDL levels in metabolic syndrome patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, kidney stones have been associated with the triglyceride-glucose (TyG) index (Qin et al., 2021), and atrial tachycardias have been associated with VLDL levels in metabolic syndrome patients (Lee et al., 2017; Park and Lee, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "3d2314eb-99f0-4b70-a541-9391598a1932",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C67",
+      "claim": "This study is the first to suggest that associations between plasma TG levels and certain non-ASCVD diseases may be causally related and specific to plasma TG levels, as opposed to confounding risk factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study is the first to suggest that these associations may be causally related and specific to plasma TG levels, as opposed to confounding risk factors, such as obesity and hormone replacement therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data analysis performed in this study and comparison with prior research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "e7a33f1c-0531-476b-ada6-d1cf9f758d40",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C68",
+      "claim": "The study's results suggest a novel, negative causal association between plasma TG levels and alcoholic liver disease (ALD).",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also suggest a novel, negative causal association between plasma TG levels and alcoholic liver disease (ALD), suggesting that excessively reducing plasma TG levels may increase the risk of this disease trait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study and involves inference about the implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "014c6a67-664d-4987-a58b-6c0c79c1e37b",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C69",
+      "claim": "Excessively reducing plasma TG levels may increase the risk of alcoholic liver disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also suggest a novel, negative causal association between plasma TG levels and alcoholic liver disease (ALD), suggesting that excessively reducing plasma TG levels may increase the risk of this disease trait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data analysis performed in this study and involves speculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "9b071799-12f8-48c0-a520-b730843bde5a",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C70",
+      "claim": "One animal study suggests that medium-chain TGs may decrease lipid peroxidation and reverse established alcoholic liver injury in rat models of ALD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one animal study suggests that medium-chain TGs may decrease lipid peroxidation and reverse established alcoholic liver injury in rat models of ALD (Nanji et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior animal research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "11b154bd-2781-4188-8cd9-f3d249160688",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C71",
+      "claim": "Sample overlap in two-sample MR can cause weak-instrument bias and inflated type 1 error.",
+      "claim_type": "EXPLICIT",
+      "source": "For both primary and replication analysis, there is likely to be minimal sample overlap in the two-sample MR, which can cause weak-instrument bias and inflated type 1 error (Burgess et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior methodological work and draws from established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "7fe50897-225e-4905-9591-f2b31127473b",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C72",
+      "claim": "Horizontal or type I pleiotropy has been shown to be common in genetic variation, which can bias MR estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "As a prominent example, horizontal or type I pleiotropy has been shown to be common in genetic variation, which can bias MR estimates (Verbanck et al., 2018; Jordan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research and draws from established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "32b9df52-4338-471c-9698-7ab9a454d0cc",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C73",
+      "claim": "Genetic variants confer exposures that are lifelong but small in effect size; thus, MR may over- or underestimate the effect sizes of pharmacological interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "A second limitation of the study is that genetic variants confer exposures that are lifelong but small in effect size; thus, MR may over- or underestimate the effect sizes of pharmacological interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim draws from established scientific knowledge about MR limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "95417d46-bcb7-4124-be25-772ac23cfa26",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C74",
+      "claim": "MR cannot make comparisons between TG-lowering agents as it evaluates drug targets, not drug subclasses and unique pharmacodynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "MR also cannot make comparisons between TG-lowering agents as it evaluates drug targets, not drug subclasses and unique pharmacodynamics (Gill et al., 2019; Sofat et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research and draws from established scientific knowledge about MR limitations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "695d38b2-499f-4dc4-b9aa-a5fece728674",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C75",
+      "claim": "The utility of MR in drug target validation is well-established as estimates still indicate the presence and direction of causality.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the utility of MR in drug target validation is well-established as estimates still indicate the presence and direction of causality (Gill et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research and draws from established scientific knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "1d1f8989-b134-4cef-bc06-a198e5a380f4",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C76",
+      "claim": "UKB and FinnGen have innate differences in participant demographics and medical coding systems, due in part to the former being based in the United Kingdom and the latter in Finland.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, UKB and FinnGen have innate differences in participant demographics and medical coding systems, due in part to the former being based in the United Kingdom and the latter in Finland.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim draws from established knowledge about the two biobanks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "4b16c818-fe6d-42bc-a970-53a6df694c44",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C77",
+      "claim": "Both UKB and FinnGen datasets largely involve White European participants of older age, with the mean age in UKB and FinnGen being 56.5 and 59.8, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We note however that, despite geographical differences, both datasets largely involve White European participants of older age, with the mean age in UKB and FinnGen being 56.5 and 59.8, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim draws from established knowledge about the two biobanks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "78a41e12-aacd-48b5-99a4-8a6da8caa16e",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C78",
+      "claim": "Taking a traditional replication approach using GLGC instead of UKB for selecting exposure instruments in replication returns comparable tier 1 results.",
+      "claim_type": "EXPLICIT",
+      "source": "This could potentially exacerbate demographic and measurement biases inherent to UKB; however, we show that taking a traditional replication approach using GLGC instead of UKB for selecting exposure instruments in replication returns comparable tier 1 results (Supplementary file 5), while losing statistical power to highlight many of the tier 2 and 3 results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "bd6d23f3-91a9-4116-a5fb-a7c21a023fe9",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C79",
+      "claim": "A recent study observed comparable MR estimates for the causal effects of lipid traits on ischemic stroke risk between African and European ancestry individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study observed comparable MR estimates for the causal effects of lipid traits on ischemic stroke risk between African and European ancestry individuals (Fatumo et al., 2021), suggesting the potential generalizability of MR results across ancestries in some specific cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "07db5f40-e49a-4df1-8f19-ef5a74cdd865",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C80",
+      "claim": "The study was restricted to populations of European ancestry, limiting the generalizability of the findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Last, we acknowledge that this study was restricted to populations of European ancestry, limiting the generalizability of our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the study design described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "25054fb6-0ac3-4d6a-86b9-144a195c562f",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C81",
+      "claim": "The study demonstrates a high-throughput application of two-sample MR to estimate the causal effects of plasma TG levels on phenome-wide disease risk.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, this study demonstrates a high-throughput application of two-sample MR to estimate the causal effects of plasma TG levels on phenome-wide disease risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the study design and data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "d5c5fb41-04f8-483d-bcd1-33264519b270",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C82",
+      "claim": "The study identified causal associations between plasma TG levels and coronary artery disease (OR 1.33, 95% CI 1.24\u20131.43, p=2.47 \u00d7 10-13).",
+      "claim_type": "EXPLICIT",
+      "source": "Our results identified seven disease traits reaching Bonferroni-corrected significance in both the discovery (p<1.92 \u00d7 10-5) and replication analyses (p<2.26 \u00d7 10-4), suggesting a causal relationship between plasma TG levels and ASCVDs, including coronary artery disease (OR 1.33, 95% CI 1.24\u20131.43, p=2.47 \u00d7 10-13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "fd622d70-84ff-4510-bc80-50dcc64b88e8",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C83",
+      "claim": "The study identified plasma TG levels as a novel potential risk factor for nine non-ASCVD diseases, including uterine leiomyoma (OR 1.19, 95% CI 1.10\u20131.29, p=1.17 \u00d7 10-5).",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified 12 disease traits that were Bonferroni-significant in the discovery or replication analysis and at least nominally significant in the other analysis (p<0.05), identifying plasma TG levels as a novel potential risk factor for nine non-ASCVD diseases, including uterine leiomyoma (OR 1.19, 95% CI 1.10\u20131.29, p=1.17 \u00d7 10-5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "131a706c-6d9e-41ad-93d6-8046ca973423",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C84",
+      "claim": "The study identified causal associations between plasma TG levels and 19 disease traits across organ systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking a phenome-wide, two-sample MR approach, we identified causal associations between plasma TG levels and 19 disease traits across organ systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data analysis performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "44908f20-7354-4b0a-96e0-67c4b072389d",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "claim_id": "C85",
+      "claim": "The findings suggest unrealized drug repurposing opportunities or adverse effects related to approved and emerging TG-lowering agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest unrealized drug repurposing opportunities or adverse effects related to approved and emerging TG-lowering agents, as well as mechanistic insights for future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data analysis performed in this study and involves speculation about implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c2a5f36b-3cac-456a-a9dd-fbee51120521",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study selected genetic instruments for plasma TG levels from GLGC (141 independent SNPs) and UKB (1248 SNPs) using genome-wide significance thresholds and LD-clumping. For outcomes, 2600 disease traits from UKB were used in discovery, and 221 traits from FinnGen were selected for replication based on phenotype mapping and nominal significance in discovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C24 describe the instrument selection and outcome filtering procedures. The methods are clearly documented with appropriate thresholds (p<5\u00d710\u207b\u2078, r\u00b2<0.05) and sample sizes. The approach follows standard MR practices, though the study acknowledges differences in medication exclusion between GLGC and UKB cohorts (C18, C21).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "63505c24-c76f-4761-b7fe-9fb3350ac122",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the discovery analysis, plasma TG levels showed nominally significant associations with 598 disease traits, with 39 reaching Bonferroni significance. Seven tier 1 associations (Bonferroni-significant in both discovery and replication) were identified, all related to ASCVD, with the strongest being angina pectoris (discovery OR 1.39, replication OR 1.30). Coronary artery disease showed OR 1.33 in combined analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32, C82 present the primary discovery and tier 1 results with appropriate statistical thresholds and effect estimates. The associations are replicated in an independent cohort (FinnGen), strengthening causal inference. The positive control (gout, C27) validates the approach. Winner's curse bias is acknowledged (C30).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "7b611922-2547-4109-89ee-0390f6b4f602",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study identified 12 tier 2/3 associations, including nine novel non-ASCVD diseases. Tier 2 results included uterine leiomyoma (OR 1.19), gout, and other aneurysms. Tier 3 results included hypertension, diverticular disease, paroxysmal tachycardia, kidney stones, and hemorrhage from respiratory passages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C34, C62, C83 describe weaker associations (tier 2: Bonferroni in discovery, nominal in replication; tier 3: nominal in discovery, Bonferroni in replication). While statistically significant, these require additional validation. The authors appropriately characterize these as 'suggestive' evidence and caution against strong causal conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "77968651-0998-4c3c-8b2b-7bcb81f9d35c",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MR-PRESSO identified outlier instrumental variables in 16 of 19 associations, with 1-10 outliers removed for eight associations. After outlier removal, all seven tier 1 associations increased in significance, and hypertension (tier 3) increased from p=3.20\u00d710\u207b\u2075 to p=2.80\u00d710\u207b\u2078. All associations maintained the same effect direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 describe appropriate sensitivity analyses using MR-PRESSO to detect and correct for horizontal pleiotropy. The consistency of effect directions after outlier removal (C42) strengthens causal inference. The increase in significance for tier 1 associations after outlier removal is reassuring.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "86bb9249-700d-4934-b244-25e079c8f222",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sensitivity analyses using MR-Egger showed results comparable to IVW for all 19 traits. Weighted median results were less statistically significant than IVW and MR-Egger for most traits except disorders of lipid metabolism, hyperlipidemia, and hypertension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 describe additional sensitivity analyses. The consistency between MR-Egger and IVW (C43) suggests minimal directional pleiotropy. The weighted median being less significant (C44) is expected given its lower statistical power, though consistency for some traits provides additional support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "308f409b-bb7e-4a10-a6db-3c370f79ee89",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Reverse MR analysis was performed for 9 of 19 diseases. Only 'disorders of lipoprotein metabolism' and 'hyperlipidemia' showed positive effects on plasma TG levels, with no other disease traits suggesting reverse causation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 describe reverse MR to assess bidirectional causality. The expected positive effects for lipid disorders (C46) validate the approach. The absence of reverse causation for other traits (C47) strengthens the interpretation of forward causal effects, though limited genetic instruments restricted analysis to 9 diseases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "54566438-b5a4-48b8-8952-7170bddb6111",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multivariable MR adjusting for LDL-C, HDL-C, and ApoB showed increased significance for some associations (disorders of lipid metabolism, hyperlipidemia, gout, alcoholic liver disease, paroxysmal tachycardia, kidney stones) and decreased significance for others. All 19 associations maintained the same direction of causality. Tier 1 ASCVD associations remained significant after controlling for ApoB, though with modest decreases in effect size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52, C54, C59 describe MVMR to isolate independent TG effects. The persistence of tier 1 associations after adjusting for correlated lipid fractions (C54, C59) supports independent causal effects of TG-related mechanisms. The consistency of effect directions (C52) is reassuring, though decreased significance for some associations suggests potential mediation by other lipid fractions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "51f0f09f-3586-4e75-8c61-a187a025f641",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study confirms causal associations between plasma TG levels and ASCVD, consistent with prior work. Plasma TG measurement captures clinically significant mechanisms causally associated with ASCVD, potentially through TRL particles carrying ApoB. ApoB may explain part of the associations, but TG measurement appears to capture additional mechanisms involving cholesterol-enriched TRL remnants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C61 interpret the ASCVD findings in context of prior literature and biological mechanisms. The consistency with prior MR studies (C55) and the persistence of associations after ApoB adjustment (C59, C60) support the conclusions. However, C61 involves speculation about unclear mechanisms, appropriately acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "74fb2073-e7fd-486f-bb30-1e0d56a1b86a",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior observational studies have reported correlations between the identified non-ASCVD diseases and plasma TG levels or related risk factors. This study is the first to suggest these associations may be causally related and specific to plasma TG levels rather than confounding factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C67 contextualize non-ASCVD findings with prior literature. While prior correlational evidence exists (C63-C66), the claim of causality (C67) is based on weaker tier 2/3 associations. The authors appropriately note this is 'suggestive' evidence requiring validation, but the novelty claim may be overstated given the statistical evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "21e51920-31c7-4aa2-8349-3c247819eb73",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study suggests a novel negative causal association between plasma TG levels and alcoholic liver disease (ALD), suggesting that reducing TG levels may increase ALD risk. One animal study found medium-chain TGs may decrease lipid peroxidation and reverse alcoholic liver injury in rats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C70 describe a surprising negative association with ALD. This is a tier 3 result (nominal in discovery, Bonferroni in replication) requiring substantial additional validation. The mechanistic speculation (C69) and reliance on a single animal study (C70) highlight the preliminary nature. The authors appropriately express caution about this finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "20721574-d483-4966-8072-6a5d087ad695",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study acknowledges MR limitations including potential for horizontal pleiotropy, sample overlap causing weak-instrument bias, lifelong small-effect exposures potentially misestimating pharmacological intervention effects, and inability to compare between TG-lowering agents. However, MR utility for drug target validation is well-established for indicating causality presence and direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 appropriately discuss MR limitations. These are well-established methodological considerations supported by citations. The acknowledgment of limitations (C71-C74) balanced with recognition of MR's utility (C75) demonstrates appropriate scientific caution. The study attempted to address pleiotropy through multiple sensitivity analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "2a259e00-f669-469e-a2c7-24b430ec99e2",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study was restricted to European ancestry populations, limiting generalizability. UKB and FinnGen have demographic and coding differences, though both involve older White European participants (mean ages 56.5 and 59.8). Using GLGC instead of UKB instruments in replication returned comparable tier 1 results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78, C80 acknowledge important study limitations. The ancestry restriction (C80) is a significant limitation for generalizability. The demographic similarity between cohorts (C77) and consistency when using alternative instruments (C78) provide some reassurance about robustness, though phenotype mapping challenges remain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "7e338f7f-ae14-4dfe-bd56-a7e7dca86968",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The magnitude of estimates from discovery was generally greater than replication, especially for tier 1 and tier 2 associations, potentially reflecting winner's curse bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 appropriately identifies winner's curse, a well-known phenomenon in genetic studies where discovery estimates tend to be inflated. This is correctly cited and represents good scientific practice in acknowledging potential biases. The observation strengthens rather than weakens the overall conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "a87e800e-e8fd-45d7-9a5f-c3bea7731664",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study demonstrates high-throughput phenome-wide MR identifying causal associations between plasma TG levels and 19 disease traits across organ systems. The findings suggest unrealized drug repurposing opportunities or adverse effects for TG-lowering agents and provide mechanistic insights for future studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C84-C85 summarize the study's contributions. The methodological demonstration (C81, C84) is well-supported by the comprehensive analysis. However, C85's claims about drug repurposing and adverse effects are somewhat speculative, particularly for tier 2/3 associations. The authors appropriately frame these as suggestions requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "ca15f167-bccd-4182-ad43-e40103d6491a",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The introduction establishes that ASCVD remains the leading cause of death despite statins, TGs play vital physiological roles, but their causal relationship with ASCVD remains controversial. TG-lowering drug development is active with validated targets (ANGPTL3, ANGPTL4, APOC3), but methodological challenges have limited causal inference due to TG correlations with other risk factors, pleiotropic drug effects, and prior MR studies focusing on individual diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 provide background context supported by appropriate citations. These establish the scientific rationale for the study. The characterization of controversy (C3) and methodological challenges (C6-C10) accurately reflects the literature and justifies the phenome-wide approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "2f5d0a3c-6ab2-4059-89a4-a8cf94e21537",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Phenome-wide MR uses genetic variants as instrumental variables following three key assumptions (relevance, independence, exclusion restriction) and enables comprehensive phenotypic scans, limiting bias from prior assumptions and facilitating discovery of unforeseen causal relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 accurately describe phenome-wide MR methodology and its advantages. The three instrumental variable assumptions (C11) are correctly stated and well-established. The claimed advantages (C12) are logical inferences about the method's benefits, though the extent to which it truly limits bias depends on proper implementation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "5703d991-2590-4449-9f74-436fe511a9ff",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study used three data sources: GLGC CARDIoGRAMplusC4D Metabochip study (63,746 cases, 130,681 controls), UKB (longitudinal cohort with >500,000 participants aged 40-69 from 2006-2010), and FinnGen (partnership aiming for 500,000 Finnish biobank participants).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 describe the data sources with appropriate citations. These are factual descriptions of well-established biobanks and genetic consortia. The sample sizes and study designs are accurately reported based on the cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    },
+    {
+      "id": "8e7a400d-c6ee-4ee8-950d-a1c0ef7547bb",
+      "content_id": "e9d8b6c3-c1db-497e-9b55-aabac8284301",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A recent study observed comparable MR estimates for lipid trait effects on ischemic stroke risk between African and European ancestry individuals, suggesting potential generalizability of MR results across ancestries in some cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 cites prior work to suggest potential generalizability despite the study's European ancestry restriction. This is appropriately cautious ('in some specific cases') and provides context for the limitation, though it doesn't fully address the generalizability concern for the current study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:05:47.865244Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e2e2f76b-f2e1-48fa-9d8f-9c7536213189",
+      "result_id": "c2a5f36b-3cac-456a-a9dd-fbee51120521"
+    },
+    {
+      "claim_id": "f17b9f49-dbcd-4335-a36e-a1403a8a4ce3",
+      "result_id": "c2a5f36b-3cac-456a-a9dd-fbee51120521"
+    },
+    {
+      "claim_id": "fab1639d-09de-459d-93a2-9d48e0ab2223",
+      "result_id": "c2a5f36b-3cac-456a-a9dd-fbee51120521"
+    },
+    {
+      "claim_id": "b37dfc55-1b1b-4f43-bb8c-b97e169963c8",
+      "result_id": "c2a5f36b-3cac-456a-a9dd-fbee51120521"
+    },
+    {
+      "claim_id": "618e29a6-d106-4a72-9160-54cf4d109d35",
+      "result_id": "c2a5f36b-3cac-456a-a9dd-fbee51120521"
+    },
+    {
+      "claim_id": "27ca5735-4aeb-46d7-b569-57909ff51f72",
+      "result_id": "c2a5f36b-3cac-456a-a9dd-fbee51120521"
+    },
+    {
+      "claim_id": "1cadec9b-047e-44ff-b3cd-44c7bab9b0c8",
+      "result_id": "c2a5f36b-3cac-456a-a9dd-fbee51120521"
+    },
+    {
+      "claim_id": "3417fdc9-0753-45e4-9fa8-8d5d2dfde850",
+      "result_id": "c2a5f36b-3cac-456a-a9dd-fbee51120521"
+    },
+    {
+      "claim_id": "69cfc4f4-5a95-4e44-a78c-7bf0c79f276e",
+      "result_id": "c2a5f36b-3cac-456a-a9dd-fbee51120521"
+    },
+    {
+      "claim_id": "b515ad8d-58db-4fe5-8312-5b4bd846500a",
+      "result_id": "63505c24-c76f-4761-b7fe-9fb3350ac122"
+    },
+    {
+      "claim_id": "b2cda229-87cd-4bbb-a391-bfd6119a979b",
+      "result_id": "63505c24-c76f-4761-b7fe-9fb3350ac122"
+    },
+    {
+      "claim_id": "29640d5f-ef97-4398-97a7-2c093f7115e1",
+      "result_id": "63505c24-c76f-4761-b7fe-9fb3350ac122"
+    },
+    {
+      "claim_id": "70d279be-32e0-43dc-9a02-ddfaf925e378",
+      "result_id": "63505c24-c76f-4761-b7fe-9fb3350ac122"
+    },
+    {
+      "claim_id": "ca70be63-1b88-449c-98fe-904cb5a31cce",
+      "result_id": "63505c24-c76f-4761-b7fe-9fb3350ac122"
+    },
+    {
+      "claim_id": "a34ed96f-6b74-46ea-9625-d6af6178e669",
+      "result_id": "63505c24-c76f-4761-b7fe-9fb3350ac122"
+    },
+    {
+      "claim_id": "681cf750-c9c6-4673-9921-4584e10fd41e",
+      "result_id": "63505c24-c76f-4761-b7fe-9fb3350ac122"
+    },
+    {
+      "claim_id": "d5c5fb41-04f8-483d-bcd1-33264519b270",
+      "result_id": "63505c24-c76f-4761-b7fe-9fb3350ac122"
+    },
+    {
+      "claim_id": "d22e1c60-ad74-4f5c-b967-53c706ea8b93",
+      "result_id": "7b611922-2547-4109-89ee-0390f6b4f602"
+    },
+    {
+      "claim_id": "cb8166f2-96df-4ee7-bc10-83609096b54c",
+      "result_id": "7b611922-2547-4109-89ee-0390f6b4f602"
+    },
+    {
+      "claim_id": "fe261336-0803-4d2f-b3a5-480946bb2af2",
+      "result_id": "7b611922-2547-4109-89ee-0390f6b4f602"
+    },
+    {
+      "claim_id": "fd622d70-84ff-4510-bc80-50dcc64b88e8",
+      "result_id": "7b611922-2547-4109-89ee-0390f6b4f602"
+    },
+    {
+      "claim_id": "63de57c3-a358-4ba6-bc90-c31035f915d5",
+      "result_id": "77968651-0998-4c3c-8b2b-7bcb81f9d35c"
+    },
+    {
+      "claim_id": "3bc19c00-095f-4021-9c6f-87bb5c848553",
+      "result_id": "77968651-0998-4c3c-8b2b-7bcb81f9d35c"
+    },
+    {
+      "claim_id": "a290b8a6-0342-4001-9028-2e9f172aa5b1",
+      "result_id": "77968651-0998-4c3c-8b2b-7bcb81f9d35c"
+    },
+    {
+      "claim_id": "0f3036d8-488f-4e26-833d-6e94641e6693",
+      "result_id": "77968651-0998-4c3c-8b2b-7bcb81f9d35c"
+    },
+    {
+      "claim_id": "04653551-82a4-4424-a2a4-1d979fe1c2a2",
+      "result_id": "77968651-0998-4c3c-8b2b-7bcb81f9d35c"
+    },
+    {
+      "claim_id": "e5871b87-1174-4b84-8a7e-ff6908e4a568",
+      "result_id": "77968651-0998-4c3c-8b2b-7bcb81f9d35c"
+    },
+    {
+      "claim_id": "734747b5-7602-43a5-b65e-d5341d39f4b4",
+      "result_id": "86bb9249-700d-4934-b244-25e079c8f222"
+    },
+    {
+      "claim_id": "658b77a0-e558-4562-86a5-4c7d18836708",
+      "result_id": "86bb9249-700d-4934-b244-25e079c8f222"
+    },
+    {
+      "claim_id": "ea8d212b-b773-42a2-885f-a88cbab357a2",
+      "result_id": "308f409b-bb7e-4a10-a6db-3c370f79ee89"
+    },
+    {
+      "claim_id": "c075ead5-7952-435d-8487-3ed6c5dce60a",
+      "result_id": "308f409b-bb7e-4a10-a6db-3c370f79ee89"
+    },
+    {
+      "claim_id": "7e83e89d-22d2-4187-9630-56d726ad20fd",
+      "result_id": "308f409b-bb7e-4a10-a6db-3c370f79ee89"
+    },
+    {
+      "claim_id": "03590060-a1b4-429d-888d-a23888654006",
+      "result_id": "54566438-b5a4-48b8-8952-7170bddb6111"
+    },
+    {
+      "claim_id": "0d1dd685-63db-4faf-90ce-52afc9c68818",
+      "result_id": "54566438-b5a4-48b8-8952-7170bddb6111"
+    },
+    {
+      "claim_id": "31443c03-ef1b-4aef-9f9b-4d3ecfe9a0d4",
+      "result_id": "54566438-b5a4-48b8-8952-7170bddb6111"
+    },
+    {
+      "claim_id": "4c9f0fb4-0695-433a-9ee6-0b09c4a00225",
+      "result_id": "54566438-b5a4-48b8-8952-7170bddb6111"
+    },
+    {
+      "claim_id": "218b4f84-cefb-46f5-a03a-6eabf73f933a",
+      "result_id": "54566438-b5a4-48b8-8952-7170bddb6111"
+    },
+    {
+      "claim_id": "73605e15-2f11-48a9-bc20-4bb0bd40dc78",
+      "result_id": "54566438-b5a4-48b8-8952-7170bddb6111"
+    },
+    {
+      "claim_id": "3061e9b6-96e9-4e9e-813c-5132f41ead41",
+      "result_id": "54566438-b5a4-48b8-8952-7170bddb6111"
+    },
+    {
+      "claim_id": "1a421b4b-0a6c-4073-ad9d-f29e03134d54",
+      "result_id": "51f0f09f-3586-4e75-8c61-a187a025f641"
+    },
+    {
+      "claim_id": "7f0bcd3c-b3b8-4d2a-8de2-ec5ef0258856",
+      "result_id": "51f0f09f-3586-4e75-8c61-a187a025f641"
+    },
+    {
+      "claim_id": "7d5b9198-617f-43f4-b15c-926f334de7bd",
+      "result_id": "51f0f09f-3586-4e75-8c61-a187a025f641"
+    },
+    {
+      "claim_id": "3d52d653-eb39-407b-aa51-890a702f37a9",
+      "result_id": "51f0f09f-3586-4e75-8c61-a187a025f641"
+    },
+    {
+      "claim_id": "f532080a-b82e-45be-a290-b9f224e5df35",
+      "result_id": "51f0f09f-3586-4e75-8c61-a187a025f641"
+    },
+    {
+      "claim_id": "3e651e25-39cf-471a-952f-8995b1eeb652",
+      "result_id": "51f0f09f-3586-4e75-8c61-a187a025f641"
+    },
+    {
+      "claim_id": "283bbb4c-892b-481e-b8c5-6d56c4c76054",
+      "result_id": "51f0f09f-3586-4e75-8c61-a187a025f641"
+    },
+    {
+      "claim_id": "48981ec4-c5fe-4555-8d6f-7738df981912",
+      "result_id": "74fb2073-e7fd-486f-bb30-1e0d56a1b86a"
+    },
+    {
+      "claim_id": "d86ab8be-67aa-4825-bda7-a821016287d1",
+      "result_id": "74fb2073-e7fd-486f-bb30-1e0d56a1b86a"
+    },
+    {
+      "claim_id": "dc4b2059-f575-4407-bd02-4ed29c24f246",
+      "result_id": "74fb2073-e7fd-486f-bb30-1e0d56a1b86a"
+    },
+    {
+      "claim_id": "915b11c8-d755-4438-b76f-44d75ce26fc0",
+      "result_id": "74fb2073-e7fd-486f-bb30-1e0d56a1b86a"
+    },
+    {
+      "claim_id": "3d2314eb-99f0-4b70-a541-9391598a1932",
+      "result_id": "74fb2073-e7fd-486f-bb30-1e0d56a1b86a"
+    },
+    {
+      "claim_id": "e7a33f1c-0531-476b-ada6-d1cf9f758d40",
+      "result_id": "21e51920-31c7-4aa2-8349-3c247819eb73"
+    },
+    {
+      "claim_id": "014c6a67-664d-4987-a58b-6c0c79c1e37b",
+      "result_id": "21e51920-31c7-4aa2-8349-3c247819eb73"
+    },
+    {
+      "claim_id": "9b071799-12f8-48c0-a520-b730843bde5a",
+      "result_id": "21e51920-31c7-4aa2-8349-3c247819eb73"
+    },
+    {
+      "claim_id": "11b154bd-2781-4188-8cd9-f3d249160688",
+      "result_id": "20721574-d483-4966-8072-6a5d087ad695"
+    },
+    {
+      "claim_id": "7fe50897-225e-4905-9591-f2b31127473b",
+      "result_id": "20721574-d483-4966-8072-6a5d087ad695"
+    },
+    {
+      "claim_id": "32b9df52-4338-471c-9698-7ab9a454d0cc",
+      "result_id": "20721574-d483-4966-8072-6a5d087ad695"
+    },
+    {
+      "claim_id": "95417d46-bcb7-4124-be25-772ac23cfa26",
+      "result_id": "20721574-d483-4966-8072-6a5d087ad695"
+    },
+    {
+      "claim_id": "695d38b2-499f-4dc4-b9aa-a5fece728674",
+      "result_id": "20721574-d483-4966-8072-6a5d087ad695"
+    },
+    {
+      "claim_id": "1d1f8989-b134-4cef-bc06-a198e5a380f4",
+      "result_id": "2a259e00-f669-469e-a2c7-24b430ec99e2"
+    },
+    {
+      "claim_id": "4b16c818-fe6d-42bc-a970-53a6df694c44",
+      "result_id": "2a259e00-f669-469e-a2c7-24b430ec99e2"
+    },
+    {
+      "claim_id": "78a41e12-aacd-48b5-99a4-8a6da8caa16e",
+      "result_id": "2a259e00-f669-469e-a2c7-24b430ec99e2"
+    },
+    {
+      "claim_id": "07db5f40-e49a-4df1-8f19-ef5a74cdd865",
+      "result_id": "2a259e00-f669-469e-a2c7-24b430ec99e2"
+    },
+    {
+      "claim_id": "09c019df-8f7e-44f1-9116-1bc6344c892f",
+      "result_id": "7e338f7f-ae14-4dfe-bd56-a7e7dca86968"
+    },
+    {
+      "claim_id": "25054fb6-0ac3-4d6a-86b9-144a195c562f",
+      "result_id": "a87e800e-e8fd-45d7-9a5f-c3bea7731664"
+    },
+    {
+      "claim_id": "131a706c-6d9e-41ad-93d6-8046ca973423",
+      "result_id": "a87e800e-e8fd-45d7-9a5f-c3bea7731664"
+    },
+    {
+      "claim_id": "44908f20-7354-4b0a-96e0-67c4b072389d",
+      "result_id": "a87e800e-e8fd-45d7-9a5f-c3bea7731664"
+    },
+    {
+      "claim_id": "f44c942b-7a2f-409f-9fe8-01622adf561a",
+      "result_id": "ca15f167-bccd-4182-ad43-e40103d6491a"
+    },
+    {
+      "claim_id": "f1d2e4fc-352b-45d6-a2f2-b74bc4bcf45c",
+      "result_id": "ca15f167-bccd-4182-ad43-e40103d6491a"
+    },
+    {
+      "claim_id": "7ad78718-759d-4639-97a9-490ae274d19d",
+      "result_id": "ca15f167-bccd-4182-ad43-e40103d6491a"
+    },
+    {
+      "claim_id": "7dcc8bb4-bb2e-4b16-b46e-a750212b13e6",
+      "result_id": "ca15f167-bccd-4182-ad43-e40103d6491a"
+    },
+    {
+      "claim_id": "70f6fe69-d11e-4fbe-963d-c40213df9c76",
+      "result_id": "ca15f167-bccd-4182-ad43-e40103d6491a"
+    },
+    {
+      "claim_id": "e47d1891-f684-40ad-bdb2-f9b1ab92f9bb",
+      "result_id": "ca15f167-bccd-4182-ad43-e40103d6491a"
+    },
+    {
+      "claim_id": "3691680e-730d-4b06-bc3c-51009aea6b68",
+      "result_id": "ca15f167-bccd-4182-ad43-e40103d6491a"
+    },
+    {
+      "claim_id": "0e9110f2-9bf7-48b1-aa84-a3dc5b522b72",
+      "result_id": "ca15f167-bccd-4182-ad43-e40103d6491a"
+    },
+    {
+      "claim_id": "afc0421a-3fb2-44e7-9c63-b595756831ee",
+      "result_id": "ca15f167-bccd-4182-ad43-e40103d6491a"
+    },
+    {
+      "claim_id": "c8aa489b-4d9c-49c4-ab58-f114f6a2f3c6",
+      "result_id": "ca15f167-bccd-4182-ad43-e40103d6491a"
+    },
+    {
+      "claim_id": "8c8146eb-f58d-454a-811e-cf918792db00",
+      "result_id": "2f5d0a3c-6ab2-4059-89a4-a8cf94e21537"
+    },
+    {
+      "claim_id": "1959c53e-88db-4d2a-a0c9-f33fe5345b52",
+      "result_id": "2f5d0a3c-6ab2-4059-89a4-a8cf94e21537"
+    },
+    {
+      "claim_id": "bfbedb57-772d-4a24-a806-a375208150b4",
+      "result_id": "5703d991-2590-4449-9f74-436fe511a9ff"
+    },
+    {
+      "claim_id": "1c0609b5-fac4-4911-b7bc-7f18ce90640f",
+      "result_id": "5703d991-2590-4449-9f74-436fe511a9ff"
+    },
+    {
+      "claim_id": "49bd4139-6bc7-4c25-9571-3778dc8b2ea2",
+      "result_id": "5703d991-2590-4449-9f74-436fe511a9ff"
+    },
+    {
+      "claim_id": "bd6d23f3-91a9-4116-a5fb-a7c21a023fe9",
+      "result_id": "8e7a400d-c6ee-4ee8-950d-a1c0ef7547bb"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C105",
+      "C109"
+    ],
+    "result": "BehaviorDEPOT is a user-friendly software package comprising six independent modules that can detect behaviors from video timeseries, calculate kinematic and postural metrics from keypoint tracking data, and analyze results of experimental assays without requiring programming experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C33-C40, C105, and C109 collectively describe the software's architecture, functionality, and accessibility. The manuscript provides detailed descriptions of the modules, their functions, and demonstrates their use across multiple experimental paradigms. The graphical interface and data structures are documented in the methods and shown in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C106"
+    ],
+    "result": "The BehaviorDEPOT freezing detection heuristic, which combines velocity thresholding with convolution-based smoothing, achieves high accuracy (F1 scores 0.89-0.93) across different camera types and framerates, with optimal performance when DLC tracking errors are less than 4 pixels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 and C106 describe the freezing heuristic development and validation with specific performance metrics. The manuscript provides detailed statistical validation (Figure 2F-G) with precision, recall, F1, and specificity scores, and demonstrates the relationship between tracking error and performance (Figure 2\u2014figure supplement 1). Sample sizes and statistical tests are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The freezing heuristic maintains high accuracy (F1=0.91) in videos of mice wearing optogenetic patch cords and successfully detected that mPFC silencing enhanced freezing in novel contexts but not conditioned contexts, reducing the discrimination index in fear conditioned mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 describe the optogenetics experiment validating the heuristic's robustness to head-mounted hardware. Performance metrics are provided (C55), and the biological findings (C56-C58) are supported by statistical analyses shown in Figure 3F-H with appropriate controls (non-shocked mice). The comparison to human raters (C59) validates the automated approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C108"
+    ],
+    "result": "The MiniCAM, an open-source behavioral imaging platform that integrates with UCLA Miniscopes, enables synchronized behavioral and neural recordings, with the freezing heuristic achieving F1=0.89 on MiniCAM videos, forming a fully open-source pipeline from data collection to analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67, C69, and C108 describe the MiniCAM hardware and its integration with BehaviorDEPOT. Technical specifications are provided (C63-C65), performance metrics are reported (C67), and the integration is demonstrated in the PMA experiment (Figure 4). The claim of a 'fully open-source pipeline' is supported by the description of all components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Analysis of 513 mPFC neurons during platform-mediated avoidance revealed that nearly half of task-relevant neurons were specific for freezing, threat avoidance, or their combination, with significance determined by ROC analysis using circularly shuffled null distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C148-C151 describe the neural analysis from the Miniscope experiment. The manuscript provides clear methods for determining neural significance (C150-C151), reports the sample size (C149), and presents the results in Figure 4L. The statistical approach using ROC curves and permutation testing is appropriate for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "BehaviorDEPOT accurately quantified behaviors in EPM, OFT, NOE, and T-maze assays with high consistency to expert human raters, including 100% accuracy in choice detection and successful detection of increased VTE trials when task difficulty increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C76, and C80-C82 describe validation across multiple behavioral assays. Statistical comparisons to human raters are provided in Figures 5D-F and 6D-F, with appropriate statistical tests. The 100% accuracy claim (C80) is supported by statistical analysis, and the VTE detection (C81-C82) shows both biological validity and agreement with human annotations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C128"
+    ],
+    "result": "BehaviorDEPOT includes four modules (Inter-Rater, Data Exploration, Optimization, Validation) that help users develop custom heuristics by comparing human annotations, identifying predictive metrics using GLMs, and optimizing threshold parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87, C89, and C128 describe the heuristic development modules. The manuscript provides detailed descriptions of each module's functionality (Figures 7-9), demonstrates their use in developing the freezing heuristic (C87), and shows how they facilitate parameter optimization. The Inter-Rater Module's automated statistics calculation (C128) is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The freezing detection features are robust across cameras, keypoint tracking networks, experimental conditions, and rodent species, achieving F1 scores >0.9 after optimization on videos from external laboratories (rats: F1=0.91, precision=0.93; mice: F1=0.95, precision=0.98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 describe the generalizability of the freezing heuristic. The manuscript provides optimization results (Figure 9C-D) and validation on external datasets (Figure 9F-G) with detailed performance metrics. Statistical comparisons to human raters are included, supporting the robustness claim (C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Comparison with JAABA showed that MoTr and Ctrax tracking failed in fear conditioning chambers with high-contrast floors, and even with DLC-derived ellipses, BehaviorDEPOT achieved significantly higher recall and F1 scores for freezing detection, while JAABA failed to detect VTE, suggesting ellipses are insufficient for fine angular head movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 describe the JAABA comparison. The manuscript provides visual evidence of tracking failures (Figure 10A-B), statistical comparisons showing BehaviorDEPOT's superior performance (Figure 10D), and demonstrates JAABA's complete failure on VTE detection (Figure 10E). The interpretation about ellipse limitations (C102) is supported by the empirical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The Analysis Module processes keypoint tracking data by applying likelihood thresholding, Hampel transformation for outlier removal, LOWESS smoothing, and spline interpolation to generate cleaned tracking data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe the data processing pipeline. The manuscript provides detailed methods descriptions and shows the effects of smoothing and interpolation in Figure 2A and 2C. The specific algorithms (Hampel, LOWESS) are cited appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The default parameters for the velocity-based freezing heuristic are: minimum duration threshold of 0.9 s, back velocity threshold of 0.59 cm/s, and head angular velocity threshold of 15 deg/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 specify the default heuristic parameters. These are clearly stated in the Materials and methods section with citations supporting the minimum duration choice (C156). These are technical details that support the reproducibility of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The experiments used C57B1/6 J mice aged 10-16 weeks, group housed on a 12 hr light cycle, with handling for 5 days before testing and contextual fear conditioning consisting of five 0.75mA footshocks after a 2-min baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C140 describe the animal subjects and basic experimental protocols. These details are clearly stated in the Materials and methods section and are standard practices in the field. The information is sufficient for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The optogenetics experiments used AAV1-CamKIIa-stGtACR2-FusionRed (9.5x10^11 GC/ml) injected bilaterally into mPFC (400 nL per site at 100 nL/min), with post-surgical care including carprofen and amoxicillin, and optical stimulation delivered continuously at 2.5 mW.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C147 provide detailed methods for the optogenetics experiments. Viral titers, injection parameters, surgical care, and stimulation parameters are all clearly specified in the Materials and methods section, supporting reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Manual annotation criteria were established for freezing (absence of movement except respiration), NOE (head oriented toward object with nose within 2 cm), and VTE (head sweeps ~180\u00b0 in choice zone), with videos randomly assigned to development and test sets to prevent overestimation of accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C155 describe the ground truth definitions and validation methodology. The manuscript provides clear behavioral definitions with citations (C152-C154) and explains the rationale for video-level splitting (C155) to avoid temporal autocorrelation bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "BehaviorDEPOT can analyze multiple behavioral assays including fear conditioning, T-maze decision-making, open field, elevated plus maze, and novel object exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 list the assays that BehaviorDEPOT can analyze. The manuscript demonstrates each of these applications with experimental data and validation against human raters throughout the Results section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "The BehaviorDEPOT freezing detection heuristic achieves above 90% accuracy in videos of mice and rats, including those wearing tethered head-mounts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 state the overall accuracy claim from the abstract. This is supported by the detailed performance metrics throughout the manuscript (F1 scores ranging from 0.89-0.95 across different conditions), though 'accuracy' is not precisely defined in the abstract\u2014the manuscript uses F1 score as the primary metric.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "BehaviorDEPOT's heuristics are easier to interpret and can be easily tweaked compared to supervised machine learning methods, serve to standardize human-expert definitions enhancing rigor and reproducibility, and may require less human-labeled data when behaviors are clearly defined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 make comparative and qualitative statements about the advantages of the heuristic approach. These are supported by the demonstrated ease of parameter adjustment (Optimization Module), the comparison with JAABA showing better performance with less training data (6 vs 3 videos), and the conceptual argument about standardization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "BehaviorDEPOT requires users to first train keypoint tracking models, but the accuracy, precision, and flexibility achieved by keypoint tracking methods will make BehaviorDEPOT more broadly useful than classifiers based on coarse detection methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 acknowledge a limitation while arguing for the overall advantage. The requirement for DLC training is clearly stated, and the advantages over background subtraction methods are demonstrated through the JAABA comparison and the ability to work in complex environments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Freezing behavior, defined as absence of movement except respiration, is widely studied as a proxy for learned and innate fear, but most labs still score freezing manually or using expensive commercial software that often fails with tethered headmounts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide background context with citations. The definition of freezing (C51-C52) is well-established in the literature with appropriate citations. The claims about current practices (C53-C54) are general statements about the field that are supported by the citations and the motivation for developing BehaviorDEPOT.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C75"
+    ],
+    "result": "EPM and OFT are used to measure anxiety-related behaviors, with increased time in closed arms (EPM) or perimeter (OFT) interpreted as higher anxiety, and NOE is typically defined as when the animal's head is within 2 cm of the object and oriented toward it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 and C75 provide standard definitions of behavioral assays with appropriate citations. These are well-established protocols in the field and the definitions are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Effort-based decision-making involves weighing effort for valuable outcomes, with VTE thought to be a marker of deliberative decision-making, and neural signatures of VTE have been identified in hippocampus, striatum, and prefrontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 provide background on decision-making and VTE with appropriate citations. These are established concepts in the field and the citations support the claims about neural signatures of VTE.",
+    "result_type": "MINOR"
+  }
+]

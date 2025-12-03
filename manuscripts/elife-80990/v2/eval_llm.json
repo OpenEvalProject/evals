@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C66",
+      "C67",
+      "C69",
+      "C95"
+    ],
+    "result": "The computational model demonstrates that center-surround contrast filters at multiple spatial scales combined with divisive normalization eliminate sensitivity to size and spacing while making numerosity the primary determinant of neural response. Specifically, hierarchically organized filters normalize spacing through offsetting effects (C38, C44, C66), while divisive normalization eliminates size effects by reducing activity at larger filter sizes with overlapping normalization neighborhoods (C39, C46, C67). The summed normalized response is strongly modulated by number but minimally by size and spacing (C45, C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C38-C39, C42-C46, C66-C67, and C69 are directly supported by computational modeling data shown in Figures 2 and 4. The model systematically demonstrates how driving input captures total pixel intensity (C42-C43) and how divisive normalization transforms this to produce numerosity-selective responses (C45-C46). The mechanistic explanations for spacing (C66) and size (C67) normalization are well-illustrated in Figure 4 with clear visual and quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C94"
+    ],
+    "result": "The model successfully explains multiple spatial numerosity illusions including regularity effects (5.98% underestimation for irregular arrays), grouping effects (2.99% underestimation for grouped arrays), and heterogeneity effects (1.14-5.87% underestimation depending on heterogeneity level). These illusions emerge from greater normalization when neurons with overlapping neighborhoods are activated (C51), and from saturation of normalized response as dot area increases (C56). A small connectedness illusion (6%) also emerges (C94).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 are well-supported by empirical citations and modeling data shown in Figure 3A-C. The model predictions match known behavioral phenomena (C47-C48, C52) and provide mechanistic explanations (C51, C56) supported by supplementary figures. The connectedness illusion (C94) shows partial success with smaller magnitude than behavioral data, which is appropriately acknowledged. Effect sizes are quantified with Cohen's d values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Temporal divisive normalization explains numerosity adaptation effects (28.9% underestimation after high adaptor, 26.6% overestimation after low adaptor) and contextual effects where size sensitivity emerges only when size varies exclusively across trials. The model shows no adaptation for size or spacing variables (C61), and demonstrates context-dependent modulation where size effects are negligible when all dimensions vary (C64) but become apparent when only size varies (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C58-C59, C61-C65 are supported by modeling results shown in Figure 3D-E and supplementary figures. The adaptation effects match behavioral data from Aagten-Murphy and Burr (2016). The context effects replicate empirical findings from Park et al. (2016, 2021) with confidence intervals provided for statistical support (C64-C65). The mechanistic explanation via temporal normalization shifting the sigmoid response curve is coherent with the spatial normalization framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The current model differs qualitatively from previous computational models (Dehaene & Changeux 1993, deep neural networks) by implementing divisive normalization in a 2D center-surround convolution layer. Unlike the D&C model's winner-take-all approach that discretizes visual information (C76), the current model preserves visual precision through graded responses (C77) and represents additional attributes like edges and groupings (C79). The model's population-level insensitivity to non-numerical dimensions (C71) is consistent with neural data from V1, V2, and V3 (C72), unlike deep network models that show abundant sensitivity to non-numerical dimensions (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 provide well-reasoned comparisons supported by citations to empirical neural data (C72: Fornaciai et al. 2017, 2018; Paul et al. 2022) and critiques of alternative models. The distinctions from the D&C model (C75-C80) are clearly articulated with specific mechanistic differences. The consistency with population-level neural activity (C71-C72) versus inconsistency of deep network models (C73) is supported by multiple citations (DeWind et al. 2019, Park 2018, Van Rinsveld et al. 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors critique the Fourier power explanation proposed by Paul et al. (2022) for V1 numerosity sensitivity, arguing that Fourier power lacks biological plausibility due to spatially unbounded sine waves (C83) and requires a priori knowledge about appropriate harmonic cutoffs (C84-C85), which is unclear how the visual system could implement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 provide a reasonable critique of an alternative explanation. C81-C82 accurately represent Paul et al.'s findings and conclusions. The critiques in C83-C85 are logically sound: spatially unbounded sine waves are indeed less biologically plausible than spatially limited filters, and the requirement for predetermined harmonic cutoffs based on image properties is a valid mechanistic concern. However, this remains a theoretical argument rather than empirical refutation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The model's quantitative predictions depend on specific assumptions about filter distributions and sizes. Under extreme conditions (very small, densely packed dots), the model still shows primary sensitivity to number but with reduced magnitude and some moderate sensitivity to size and spacing (C89). Different behavioral characteristics emerge when dots are presented peripherally with larger receptive fields or when crowded (C87-C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 appropriately acknowledge model limitations and boundary conditions. C89 is supported by data in Figure 2\u2014figure supplement 3 showing altered sensitivity patterns under extreme stimulus conditions. C87-C88 are supported by citations to empirical studies (Li et al. 2021, Valsecchi et al. 2013, Anobile et al. 2014). This demonstrates scientific rigor in recognizing where the model's assumptions may not generalize.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The model does not imply that early visual responses directly determine behavior (C90), but rather that normalized response magnitude in early visual regions serves as the basic currency for numerosity judgments (C91). Future extensions could model decisional processes, such as constant decisional noise producing Weber's law given the log-linear response pattern (C92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 provide appropriate caveats and future directions. C90 is supported by citation to Fornaciai and Park (2018). C91 represents a reasonable inference from the modeling results combined with electrophysiology data. C92 is clearly marked as speculation about potential model extensions, appropriately referencing Figure 2C to support the log-linear pattern assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C70"
+    ],
+    "result": "The ubiquity of number sense across animal species (C1, C10-C11) suggests fundamental neural mechanisms for numerosity representation (C2). Because center-surround filters and divisive normalization are common across visual animals, numerosity perception emerges as a natural phenomenon (C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C11 are well-established facts supported by appropriate citations (Dehaene 2011, Feigenson et al. 2004). C2 and C70 represent reasonable inferences connecting the ubiquity of number sense to the computational mechanisms identified in the model. The logic is sound: if the neurocomputational principles are universal and sufficient to produce numerosity sensitivity, then the widespread number sense is explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21"
+    ],
+    "result": "Empirical evidence demonstrates that early visual cortical activity (V1, V2, V3) is sensitive to numerosity but substantially less sensitive to size and spacing. This represents feedforward processing occurring earlier than previously thought (parietal cortex), suggesting numerosity is a basic perceptual magnitude in early vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C12-C17, and C21 accurately summarize established empirical findings supported by multiple citations (Park et al. 2016, Fornaciai et al. 2017, 2018, 2021, Nieder 2016, DeWind et al. 2019, Paul et al. 2022, Van Rinsveld et al. 2020). These claims establish the empirical foundation motivating the computational model. The characterization of prior work appears accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Despite empirical evidence for early numerosity encoding, the mechanisms remain unclear (C5, C18). The discrete nature of numerosity seems incompatible with continuous neural processing (C19), leading some to propose that continuous magnitude information is integrated to produce numerosity representations (C20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C18 accurately characterize the knowledge gap the study addresses. C19 presents a logical observation about the apparent incompatibility between discrete numerosity and continuous neural codes. C20 is supported by citations to alternative theoretical frameworks (Dakin et al. 2011, Gebuis et al. 2016, Leibovich et al. 2017). These claims appropriately frame the scientific problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The Dehaene & Changeux (1993) model uses a one-dimensional retina with center-surround filters normalized via winner-take-all lateral inhibition, with summation across the convolution layer indicating numerosity. However, the strong winner-take-all discretizes visual information implausibly (C26) and produces complete insensitivity to non-numerical dimensions inconsistent with empirical data (C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 accurately describe the D&C model architecture based on the cited paper. C26-C27 present valid critiques: winner-take-all normalization does discretize information, and complete insensitivity to all non-numerical dimensions contradicts empirical findings (C27 supported by Park et al. 2021 citation). These critiques appropriately motivate the current model's different approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Previous deep learning models (Stoianov & Zorzi 2012, Kim et al. 2021) demonstrated numerosity-sensitive units through unsupervised learning or in untrained networks. However, center-surround representations emerging from unsupervised learning are common across visual stimuli (C30), and untrained CNNs suggest convolution and pooling can extract numerosity as a statistical regularity (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C31 accurately describe prior computational work with appropriate citations. C30 is supported by Bell & Sejnowski (1997), appropriately noting that center-surround development is not specific to numerosity stimuli. C32 represents a reasonable inference from Kim et al. (2021) findings. These claims provide fair context for prior computational approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C68"
+    ],
+    "result": "The model is based on established neurocomputational principles: center-surround filters at multiple scales (C33) and divisive normalization (C34-C37, C68), which reflects shunting inhibition by interneurons and is ubiquitous across species and brain systems. Divisive normalization occurs over both space and time (C40).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37, C40, and C68 are well-supported by citations to established neuroscience literature (Carandini & Heeger 2011, Huber & O'Reilly 2003). C33 is appropriately marked as a hypothesis based on prior work. The characterization of divisive normalization as a fundamental neural computation (C37) is consistent with the cited literature. These claims establish the biological plausibility of the model's core mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C96"
+    ],
+    "result": "The model predicts that numerosity illusions arise naturally within the same neural responses that encode numerosity, rather than from later processing stages (C96). While the connectedness illusion (20% underestimation behaviorally, C93) is only partially captured (6%, C94), this supports the early-vision origin of numerosity illusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C93 is supported by citation to Franconeri et al. (2009). C96 represents a strong inference from the modeling results. However, the substantial discrepancy between the model's 6% effect and the behavioral 20% effect for connectedness (C93-C94) suggests the model may be incomplete for this particular illusion. The authors acknowledge this limitation but still conclude that illusions arise from early vision. Additional mechanisms (e.g., oriented filters) may be needed, as the authors suggest in the Discussion.",
+    "result_type": "MINOR"
+  }
+]

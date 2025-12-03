@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C135",
+      "C144"
+    ],
+    "result": "EpiScores were successfully trained for 953 plasma proteins using elastic net regression with DNA methylation data from four cohorts (KORA and LBC1936 for training, STRADL and LBC1921 for testing). After adjusting for pQTL effects, 109 EpiScores met performance criteria (r > 0.1, p < 0.05) in independent test sets, explaining 1-58% of variance in protein levels. The number of CpG features per EpiScore ranged from 1 to 395 (mean 96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C74-C80 provide comprehensive methodological details and performance metrics for EpiScore generation. The elastic net approach with cross-validation is appropriate, and independent test set validation in multiple cohorts (C78, C144) strengthens the findings. The adjustment for pQTL effects (C35-C36, C52) appropriately isolates epigenetic signals from genetic effects. Performance thresholds and variance explained are clearly reported with supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C81",
+      "C107",
+      "C108"
+    ],
+    "result": "Pathway enrichment analysis of the 109 proteins used to train EpiScores revealed significant enrichment for inflammatory, complement system, and innate immune pathways, as well as extracellular matrix, cell remodeling, and cell adhesion pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C107 report pathway enrichment results with appropriate statistical thresholds (FDR p < 0.05). The biological interpretation (C108) is reasonable given the known links between inflammation and epigenetic modifications. However, the manuscript does not provide details on the specific enrichment statistics or background gene sets used, which limits full evaluation of the analysis rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C145",
+      "C146"
+    ],
+    "result": "In Generation Scotland (n=9537), 130 EpiScore-disease associations were identified over 14 years of follow-up after adjusting for common risk factors. These associations involved 70 unique EpiScores and 10 of 12 morbidities studied, with diabetes (38 associations) and COPD (37 associations) showing the most associations. Sixteen EpiScores associated with three or more morbidities, including C5 which associated with four outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C82-C89 provide detailed results from Cox proportional hazards models with appropriate statistical corrections (FDR adjustment in basic model, p<0.05 in fully adjusted model). The nested model approach controlling for age, sex, and common risk factors (C83, C146) is methodologically sound. Ten associations violated proportional hazards assumptions (C84), but sensitivity analyses across time periods showed minimal differences, supporting retention of these associations. The large sample size and long follow-up period strengthen causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C147",
+      "C148"
+    ],
+    "result": "EpiScore-disease associations were largely independent of immune cell proportions, common lifestyle factors, and biological aging. After adjusting for white blood cell proportions, 99 of 130 associations remained significant; 78 remained after additional adjustment for GrimAge acceleration. Natural killer cell proportions independently associated with decreased risk of COPD, RA, and diabetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C91-C95 demonstrate appropriate sensitivity analyses to assess confounding. The sequential adjustment approach (C147-C148) shows that most associations persist after controlling for immune cell composition and epigenetic aging, suggesting EpiScores capture additional biological information. The independent associations of NK cells (C94) and GrimAge (C95) with disease outcomes provide context for interpreting the attenuation of some EpiScore associations. However, the manuscript acknowledges that correlations between EpiScores and these covariates exist (Figure 3\u2014figure supplement 1), indicating some shared biological pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C90",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C138",
+      "C153",
+      "C154"
+    ],
+    "result": "Of 34 SOMAscan-derived EpiScore associations with incident diabetes, 28 replicated previously reported protein-diabetes associations from three large-scale proteomic studies, including top markers ACY-1, SHBG, and GHR. Six EpiScore-diabetes associations were novel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C90, and C98-C102 demonstrate strong concordance between EpiScore-diabetes associations and measured protein-diabetes associations from independent studies (C100-C101). The replication of 28 of 34 associations (82%) provides validation that EpiScores capture disease-relevant biological signals. The comparison studies represent the largest proteomic characterizations of type 2 diabetes to date (C100), strengthening the validation. However, the manuscript notes that one comparison study (Study 1) included the KORA dataset used for EpiScore training, which may inflate concordance estimates for that subset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "No significant associations were identified between EpiScores and COVID-19 outcomes (long-COVID or hospitalization) after multiple testing correction, despite previous studies finding associations between corresponding proteins and COVID-19 severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 clearly report null findings with appropriate statistical corrections (Bonferroni adjustment). The authors provide reasonable explanations for the lack of associations (C113-C116): limited case numbers (N=173 for long-COVID, N=29 for hospitalization), long lag time between baseline DNAm measurement and COVID-19 (mean ~11 years), and methodological differences from prior studies that measured proteins during acute infection. The null result is appropriately interpreted as inconclusive rather than evidence of no association, given the study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "EpiScores for proteins implicated in disease mechanisms showed associations with corresponding morbidities. For example, ACY-1 and GHR EpiScores associated with diabetes, consistent with their roles in diabetes-associated metabolic mechanisms. The C5 EpiScore associated with four morbidities, consistent with C5's role in inflammatory and autoimmune states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 and C109-C111 provide biological context for EpiScore-disease associations by citing literature on protein functions and disease mechanisms. The consistency between EpiScore associations and known protein biology (e.g., WFIKKN2 causally implicated in diabetes via Mendelian randomization, C105) supports biological plausibility. However, these claims are primarily interpretive and rely on prior literature rather than new mechanistic data from the current study. The manuscript appropriately acknowledges (C119) that EpiScores alone are insufficient to determine mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The study has several limitations: EpiScores may not generalize to new individuals due to batch effects; mechanistic inference requires paired protein-EpiScore data; SOMAscan measurements may have cross-reactivity issues; small-effect pQTLs may not have been fully adjusted; larger and more diverse training samples are needed; and associations may be confounded by medications or comorbidities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C125 provide a comprehensive and balanced discussion of study limitations. The authors appropriately acknowledge technical limitations (batch effects C118, SOMAscan cross-reactivity C120-C121), methodological limitations (incomplete pQTL adjustment C122, need for paired protein data C119), and potential confounding (medications and comorbidities C125). The discussion of generalizability issues (C123) and upper bounds of DNAm prediction (C124) demonstrates appropriate scientific caution. These limitations are standard for epigenetic association studies and do not invalidate the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "EpiScores for circulating protein levels predict incident disease up to 14 years prior to diagnosis and offer an affordable, array-based approach for disease risk stratification. The EpiScore weights are publicly available, enabling application in any cohort with Illumina DNAm data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 appropriately summarize the main findings and their implications. The 14-year prediction window (C126, C128) is supported by the longitudinal design in Generation Scotland. The inference that EpiScores capture inter-individual protein variability (C127) and highlight disease-relevant signals (C129) is supported by the validation against measured proteins (C90) and pathway enrichment results (C81). The practical advantages of EpiScores (affordability, consistency, public availability C130-C132) are valid given the widespread use of DNAm arrays (C131). However, the claim about clinical utility for risk stratification (C133) is speculative and requires prospective validation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The KORA F4 study provided training data from 944 individuals (ages 32-81) with DNAm (450K array), proteomics (SOMAscan, 1124 probes after QC), and genetic data. Protein measurements were adjusted for age, sex, pQTLs, and population structure before EpiScore training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 provide detailed cohort characteristics and data processing methods for KORA. Sample sizes, age ranges, and platform specifications are clearly stated. The preprocessing steps (rank-based inverse normalization, adjustment for covariates and pQTLs) are appropriate for reducing confounding. The use of pQTLs from a previous GWAS in the same sample (C36) is methodologically sound. Quality control procedures (excluding probes with low detection rates, C32) follow standard practices for DNAm data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The Lothian Birth Cohorts (LBC1921 N=550, LBC1936 N=1091) provided training and test data with DNAm (450K array), proteomics (Olink inflammation and neurology panels), and genetic data. After QC, 70-92 proteins were available across cohorts. Protein measurements were adjusted for age, sex, ancestry, array plate, and pQTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C52 provide comprehensive cohort descriptions and data processing details for LBC. The longitudinal design with triennial follow-ups (C42) and intelligence testing at age 11 (C39) are unique cohort features. Sample sizes and ages at measurement are clearly reported (C43-C45). Quality control procedures for both DNAm (C46) and proteomics (C47-C50) are appropriate, with removal of proteins having >40% below detection limits. The adjustment for pQTLs using cohort-specific GWAS data (C52) is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Generation Scotland is a large family-structured cohort (>24,000 individuals) with DNAm data (EPIC array) for 9537 individuals and electronic health record linkage providing up to 14 years of prospective disease data. Twelve morbidities were studied, including 10 WHO-listed leading causes of morbidity/mortality and 2 additional conditions (IBD, RA) with rising global burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C73 and C139-C142 provide detailed information on the Generation Scotland cohort and disease outcomes. The large sample size (C55, C60), family structure (C53), high consent rate for data linkage (>98%, C65), and long follow-up period (up to 14 years, C66) are major strengths for disease prediction analyses. The selection of 12 morbidities based on WHO classifications (C68) and rising disease burden (C69-C71) is well-justified. Appropriate inclusion/exclusion criteria are specified (C72-C73). Case numbers and follow-up times are clearly reported in Table 1 (C139-C142), though some outcomes have limited cases (e.g., RA N=63).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Previous DNAm scores for CRP and IL-6 showed modest test set performance (r~0.2, ~4% variance explained) but augmented or outperformed measured proteins for phenotype associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 accurately summarizes findings from prior studies (Stevenson et al. 2020, 2021) demonstrating that modest predictive performance of DNAm scores does not preclude their utility for phenotype prediction. This provides important context for interpreting the current study's EpiScore performance metrics and supports the rationale for pursuing EpiScore-disease associations despite modest correlations with measured proteins.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Wild baboons exhibit a clear monophasic sleep pattern with sleep onset occurring approximately 53 minutes before the end of evening astronomical twilight and awakening approximately 36 minutes after morning astronomical twilight begins. The average sleep period duration was 11.0 hours, with total sleep time of 9.2 hours, sleep efficiency of 85%, and sleep fragmentation of 1.8 wake bouts per hour.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 provide consistent descriptive statistics of baboon sleep patterns derived from accelerometry data (354 baboon-nights). The measurements are clearly defined, quantified with standard errors, and supported by Figure 1. The methodology for deriving these metrics is described in detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Males slept approximately 20 minutes longer than females and experienced fewer wake bouts. Juveniles and subadults slept less and experienced more fragmented sleep than adults, contrary to typical patterns observed in other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 report sex and age differences in sleep patterns with statistical support from linear mixed models including credible intervals. However, the 95% credible intervals for several estimates cross zero (e.g., males: 0.44 [-0.05, 0.94]), indicating substantial uncertainty. The authors acknowledge this unexpected finding may reflect sampling bias (exclusion of youngest individuals).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Previous night's sleep duration and fragmentation did not predict subsequent night's sleep or daytime napping. However, daytime napping predicted shorter and more fragmented nighttime sleep. Physical exertion (distance traveled or VeDBA) did not influence sleep duration or fragmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 demonstrate lack of homeostatic sleep regulation across nights using linear mixed models with credible intervals. The napping effect (C39-C41) shows credible intervals excluding zero, supporting the relationship. The lack of effect from physical exertion is well-documented with credible intervals spanning zero. This represents a key finding challenging homeostatic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Baboons' probability of being asleep did not decrease as the night progressed, contrasting with human sleep patterns where homeostatic sleep pressure is gradually relieved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by GAMM analysis (r\u00b2adj = 0.008, F(8.741) = 89.16, p<1\u00d710\u207b\u00b9\u2075) and Figure 2C. The very low r\u00b2 indicates minimal change in sleep probability across the night, supporting the claim. However, the significant p-value with such low r\u00b2 suggests the model detects cyclic patterns but not the predicted homeostatic decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Baboons showed high fidelity to particular sleep trees within their main sleep site, and individuals slept up to 33.4 minutes longer in trees to which they showed highest fidelity. They did not compensate for shorter sleep duration with less fragmented sleep in non-preferred trees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are well-supported by permutation tests (p<1.0\u00d710\u207b\u2079), linear mixed models with credible intervals excluding zero for the fidelity effect (0.21 [0.05, 0.36]), and Figure 3. The lack of compensation via reduced fragmentation is supported by credible intervals spanning zero (-0.05 [-0.24, 0.14]).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Following a leopard attack on night 21, baboons moved to a new sleep site and slept 72 minutes less with 0.50 more wake bouts per hour on the first night in the new location. This effect was limited to the first night, with sleep returning to normal thereafter. Notably, sleep was not substantially affected on the night of the attack itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe a natural experiment with strong statistical support. The lack of effect on the attack night (credible intervals spanning zero) and the substantial effect on the first night in the new site (credible intervals excluding zero: -1.52 [-2.15, -0.86] for sleep time) are well-documented. The recovery pattern is shown in Figure 3D. This provides compelling evidence for ecological factors overriding homeostatic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Contrary to the sentinel hypothesis, baboons showed synchronized rather than staggered sleep-wake patterns. The proportion of time with at least one individual awake was significantly less than expected by chance, and the proportion of the group exhibiting synchronized behavior was significantly greater than expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by permutation tests (Fisher's exact test: p<0.0001) using two different null model approaches (time-shifting and night-permutation), both yielding consistent results. Figure 4A-B and supplementary figures provide clear visualization. The methodology is rigorous with 1000 permutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Pairs of baboons showed greater sleep-wake synchronization when sharing the same tree versus different trees. Individuals slept less when sharing their tree with more group-mates, with each additional tracked group-mate resulting in a 4.0 minute decrease in total sleep time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by linear mixed models with credible intervals excluding zero (synchronization: 0.56 [0.47, 0.64]; group-mate effect: -0.53 [-0.87, -0.19]). The quantitative estimate of 4.0 minutes per additional group-mate is clearly stated. This provides mechanistic insight into the social disruption of sleep.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Baboons were substantially more likely to wake following the awakening of others in their sleep tree, and this responsiveness was not dampened by shorter or more fragmented sleep the previous night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by Bernoulli GLMM analysis showing a strong effect of group-mate activity (0.25 [0.16, 0.34]) and no significant interactions with previous night's sleep (credible intervals spanning zero). This provides evidence against homeostatic compensation via deeper sleep and demonstrates social contagion of waking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Moon phase and minimum ambient temperature during the night had no influence on baboon sleep duration or fragmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by linear mixed models with credible intervals spanning zero for all effects. This rules out these environmental factors as major drivers of sleep variation in this study, though the limited temporal scope (one month) may limit generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "At least one individual in the group was awake for 82% of the time from 21:00 to 05:00, although each individual was only awake for 16% of the same period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 provide quantitative measures of collective vigilance with standard errors. These data support the discussion of collective vigilance benefits while demonstrating that individual sleep investment remains low. The measurements are straightforward calculations from the sleep-wake data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The study adapted a well-validated human sleep classification algorithm for use in wild baboons and validated it against direct behavioral observations, achieving 80.7% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 describe the methodological approach with appropriate citations and validation results. The 80.7% accuracy is comparable to the 78-90% range cited for human studies (C24). However, the validation study details are limited in the main text, and the authors appropriately acknowledge limitations in distinguishing resting wakefulness from sleep (C25, C79).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C68",
+      "C70"
+    ],
+    "result": "Ecological and social pressures interfere with homeostatic sleep regulation in wild baboons. Baboons sacrifice sleep in unfamiliar locations and when near more group-mates, regardless of prior sleep debt or physical exertion, and do not compensate via more intense sleep. This suggests 'sleep need' is flexible, driven by opportunity costs as much as physiological benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C68, C70 represent the study's central conclusions, synthesizing findings from multiple analyses. The claims are well-supported by the collective evidence from location effects (C46-C56), social effects (C57-C63), and lack of homeostatic regulation (C38-C45, C62-C63). The interpretation (C70) is appropriately framed as a suggestion rather than definitive proof.",
+    "result_type": "MAJOR"
+  }
+]

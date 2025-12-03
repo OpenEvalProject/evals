@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "cd59 is highly expressed in developing myelinating glial cells across species. RNAseq data shows cd59 expression in zebrafish oligodendrocyte lineage cells (2145.1 \u00b1 1215.1 TPM) and Schwann cells (40.1 \u00b1 16.3 TPM) at 72 hpf, with minimal expression at 36 hpf (0.0 \u00b1 0.0 TPM). Expression increases from neural crest cells through SC precursors, immature SCs, pro-myelinating SCs, and mature myelinating/non-myelinating SCs. In oligodendrocytes, cd59 is expressed near myelination onset and primarily in mature OLs rather than OPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 provide quantitative RNAseq data with error estimates, and claims C27-C31, C33-C35 are supported by multiple published datasets and citations. The temporal and cell-type-specific expression patterns are consistently documented across zebrafish, rodent, and human studies with appropriate references to figures and supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C36"
+    ],
+    "result": "Based on expression patterns, Cd59 may be important during early SC development and in mature myelinating cells, but likely does not play a role in early OLC development, potentially influencing only mature myelinating OL function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are inferences (C32, C36) drawn from expression data rather than functional experiments. The use of 'may be' and 'could influence' indicates speculation. While the expression patterns support these hypotheses, no functional data is provided to confirm these roles, making the claims uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "cd59 RNA expression was verified in OLCs and SCs at 3 dpf using CISH and FISH, with expression largely confined to developing myelinating glial cells beyond heart and pancreas. cd59:tagrfp labels OLs and SCs with myelin-like processes. Expression is heterogeneous: cd59 is not expressed in NCCs at 24 hpf, shows sporadic expression at 36-48 hpf, and robust expression at 72 hpf in pLLN SCs. Only 4.4-9.4% of pLLN SCs express cd59:tagrfp, and cd59 is absent in spinal motor nerve SCs and MEP glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C50 are supported by multiple experimental approaches (CISH, FISH, in vivo confocal imaging) with specific references to figures. The quantitative data for subset expression (C47: 4.4 \u00b1 1.5% to 9.4 \u00b1 3.8%) is provided with error estimates. The heterogeneous expression pattern is consistently documented across developmental stages and cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Two cd59 mutant alleles were generated: cd59uva48 has a 15 bp deletion at the exon 2-intron 2 splice site producing multiple splice variants with early stop codons, resulting in severely truncated proteins (10-48 AA) lacking the Ly6/uPAR domain and GPI-anchor signal sequence. cd59uva47 has a 6 bp deletion producing a single transcript with a 117 AA protein missing two amino acids in the N-terminal signal sequence. Both homozygous adults are viable with no anatomical, behavioral, or reproductive defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by molecular characterization including RT-PCR, Sanger sequencing, and phenotypic observations. The genomic and transcript mutations are documented with specific sequences and predicted protein structures. However, C53-C54 are inferences about protein function based on sequence analysis rather than direct protein functional assays, though the reasoning is sound given the loss of critical domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Wildtype and cd59uva48 mutant larvae both have sox10, mbp, and krox20-positive SCs along the pLLN at 72 hpf, indicating Cd59 is not necessary for SC genesis or expression of genes for SC maturation and myelination. cd59 expression is significantly reduced in mutant SCs (Figure 3J), suggesting mutant RNA undergoes nonsense-mediated decay. cd59uva48 mutants can serve as a loss-of-function model for studying Cd59 in developing SCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by CISH data showing presence of SC markers. C61 provides quantitative evidence of reduced cd59 expression. C62 is a reasonable inference based on the presence of premature termination codons and reduced RNA levels, though direct NMD pathway analysis is not shown. C63 is a justified conclusion given the molecular characterization, though the lack of protein-level confirmation (acknowledged by authors) introduces some uncertainty about whether this is a true null allele.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "cd59uva48 mutant embryos and larvae have significantly more SCs compared to wildtype siblings at all stages from 36 hpf (SCP stage) through 48 hpf (iSC and pmSC stages) to 72 hpf and 7 dpf (mature MSC stages). The same phenotype was observed in cd59uva47 mutants at 48 hpf, ruling out off-target effects. Cd59 functions to limit overproliferation of SCs during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by quantitative immunofluorescence data across multiple developmental stages with statistical significance (p<0.0001 for multiple comparisons). The use of a second independent mutant allele (C68) strengthens the conclusion that the phenotype is due to cd59 mutation. C69 is a well-supported inference from the proliferation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "EdU incorporation shows increased numbers of EdU-positive SCs in cd59uva48 mutants compared to wildtypes. Time-lapse imaging reveals cd59uva48 mutant SCs undergo significantly more mitotic events than wildtype siblings between 48-55 hpf, but similar numbers of divisions between 54-75 hpf with no difference in timing of terminal division. cd59uva48 mutant larvae can terminate SC proliferation at the same developmental stage as wildtype larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by quantitative data from EdU incorporation assays and time-lapse imaging with statistical analysis. C73 is a well-supported inference showing that while initial proliferation is amplified, the mutants retain the ability to terminate proliferation normally. The temporal specificity of the proliferation defect (48-55 hpf) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "cd59 mutation does not affect SC death (AO and TUNEL assays), spinal cord neuron density, pLLG neuron numbers, cranial or spinal motor nerve NCC numbers, Sox10-positive cells on motor nerves, or truncal neuromast numbers. Neuronal and NCC proliferation are unaffected. The increase in SC number is not due to increased NCCs. Cd59 plays an early role in SC development by limiting proliferation, and this effect does not extend to other neural cells in the CNS or PNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C85 are supported by multiple negative results from various assays (AO, TUNEL, immunofluorescence) showing no differences between wildtype and mutant in cell death, neuron numbers, NCC numbers, and neuromast formation. These controls are important for demonstrating specificity of the SC proliferation phenotype. C86-C87 are well-supported conclusions from the comprehensive cell-type analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "cd59uva48 mutant SCs can produce myelin (shown by ISH, confocal imaging, and TEM). Myelin sheath length at 7 dpf does not vary between wildtype and mutants, with no overlapping sheaths. However, myelinated nerve volume is significantly reduced in mutants. Axon volume and cross-sectional area are unaltered. There is a nonsignificant decrease (p=0.0568) in average myelin wraps per axon relative to axon area, with no change in average axon area or total myelinated axons. The reduced nerve volume could be related to decreased myelin wraps per axon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C93, C95-C96 are well-supported by multiple imaging modalities. However, C94 reports a nonsignificant trend (p=0.0568), and C97 is speculative inference connecting this trend to the nerve volume reduction. The lack of statistical significance for the myelin wrapping defect, combined with the authors' own uncertainty about whether this is a direct or indirect effect of cd59 mutation, makes the mechanistic connection uncertain. Additional experiments would be needed to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "cd59uva48 mutant larvae have fewer discrete sodium channel clusters and NF186 clusters along the pLLN at 7 dpf. NF186 and sodium channels always colocalize in wildtype larvae, confirming these are bona fide nodes of Ranvier. cd59uva48 mutant larvae do not form nodes of Ranvier normally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by quantitative immunofluorescence data with statistical significance. C100 provides validation that the quantified structures are indeed nodes of Ranvier through colocalization analysis. C101-C102 are well-supported conclusions, though the authors appropriately note uncertainty about whether this is a direct effect of cd59 mutation or secondary to SC overproliferation or myelin changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Cd59 is best known as a complement inhibitory protein that protects healthy cells from lytic death by binding C8 and C9 to prevent MAC formation. CD59a is neuroprotective in multiple sclerosis and neuromyelitis optica models. Beyond complement inhibition, Cd59 can facilitate vesicle signaling in pancreatic cells, suppress cell proliferation in T cells and smooth muscle cells, and orchestrate proximal-distal cell identity during limb regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 are established knowledge supported by appropriate citations. These provide important background context for interpreting the study's findings. All claims are properly referenced to published literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Patients with congenital CD59 deficiency or germline paroxysmal nocturnal hemoglobinuria present with polyneuropathies during infancy and continue to have nervous system dysfunction throughout their lives. Neurological symptoms persist even with complement inhibition treatment. This indicates CD59 has an additional role in the developing nervous system beyond complement inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by multiple clinical case study citations. C116 is a reasonable inference from the clinical observations, particularly the persistence of neurological symptoms despite complement inhibition. This provides important clinical context and motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "cd59uva48 mutant larvae have more MACs (C5b8-C5b9) localized to sox10:megfp-positive SC membranes compared to wildtype controls at 55 hpf, indicating developing SCs are no longer protected from complement in cd59uva48 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C117 is supported by quantitative immunofluorescence data (p<0.0001) shown in Figure 6A-C. However, the authors themselves note this requires further investigation to confirm the quantification reflects increased MAC formation. C118 is an inference that, while logical, requires additional validation. The antibody specificity and whether the signal truly represents functional MAC formation versus non-specific binding needs confirmation. The authors appropriately acknowledge this as preliminary evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Dexamethasone (Dex) treatment restores SC numbers to wildtype levels in cd59uva48 mutant embryos and significantly reduces SC numbers in wildtype larvae, indicating developmental inflammation plays a role in homeostatic SC development. EdU incorporation in cd59uva48 mutant SCs returns to wildtype levels with Dex treatment, confirming Dex suppresses SC proliferation. Dex also reduces EdU incorporation in wildtype SCs, showing it can alter homeostatic SC proliferation. Developmental inflammation aids in normal SC proliferation and is amplified when cd59 is mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120, C122, C124 are supported by quantitative data from Dex treatment experiments with statistical analysis (two-way ANOVA with post-hoc tests). C121, C123, C125-C127 are well-supported inferences from the experimental data. However, the authors appropriately note that future work is needed to rule out other effects of glucocorticoid signaling and to determine if sublytic MAC formation directly affects SC proliferation in vivo. The rescue experiments provide strong evidence for the role of inflammation, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Dex treatment dramatically increases sodium channel clusters in cd59uva48 mutant larvae to wildtype levels and restores mutant nerve volume to wildtype levels at 7 dpf. Inflammation-induced SC proliferation contributes to perturbed myelin and node of Ranvier development. Inhibition of developmental inflammation can protect nerve development after cd59 mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 are supported by quantitative data from immunofluorescence and confocal imaging with Dex treatment, showing statistical significance. C130-C131 are well-supported conclusions from the rescue experiments. However, the authors appropriately note this is preliminary evidence and acknowledge uncertainty about whether the effects are direct consequences of Cd59 dysfunction, secondary to SC overproliferation, or indirect effects of developmental inflammation. The rescue of both proliferation and structural phenotypes with Dex treatment provides strong support for the role of inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Developmental inflammation stimulates SC proliferation and this process is balanced by Cd59 to ensure normal SC and myelinated nerve development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C132 is the main conclusion synthesizing all experimental findings. It is well-supported by the comprehensive data showing: (1) cd59 expression in developing SCs, (2) SC overproliferation in cd59 mutants, (3) increased MAC formation in mutants, (4) rescue of proliferation and structural defects with anti-inflammatory treatment. However, the authors appropriately acknowledge that the precise mechanism linking Cd59, MACs, and SC proliferation requires further investigation, and alternative explanations involving other glucocorticoid signaling effects cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Patients with CD59 dysfunction develop neurological dysfunction during early childhood, yet the function of Cd59 in the developing nervous system is currently undefined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C3 is supported by clinical literature citations. C4 accurately represents a knowledge gap that motivates the study. These claims provide important context for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The study demonstrates cd59 is expressed in a subset of developing SCs, developing SCs proliferate excessively in cd59 mutants, nerves may have reduced myelin volume, altered ultrastructure, and perturbed node of Ranvier assembly, complement activity is elevated in mutants, and inhibiting inflammation restores SC proliferation, myelin volume, and nodes of Ranvier to wildtype levels. This identifies Cd59 and developmental inflammation as key players in myelinating glial cell development, highlighting collaboration between glia and the innate immune system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are summary claims from the abstract that are supported by the detailed experimental results described in the manuscript. C7-C9 appropriately use 'may' to indicate some uncertainty about the myelin and node phenotypes, which is consistent with the nonsignificant myelin wrapping result and the authors' discussion of whether these are direct or indirect effects. C14-C15 are well-supported overall conclusions from the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Myelin is a specialized lipid-rich membrane that insulates axons to enhance neurotransmission and preserve axon health. It is produced by Schwann cells in the PNS and oligodendrocytes in the CNS. Normal myelin development facilitates an efficient nervous system ensuring precise motor, sensory, and cognitive function. Impaired myelination leads to neurological dysfunction causing severe physical and intellectual disabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are established knowledge properly supported by citations. These provide essential background context for understanding the importance of the study. All claims are appropriately referenced.",
+    "result_type": "MINOR"
+  }
+]

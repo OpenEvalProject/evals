@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C50"
+    ],
+    "result": "The study utilized linked California Cancer Registry and Birth Statistical Master File data from 1989-2015, encompassing 121,571 individuals including 29,249 pediatric/AYA cancer patients (29,072 probands, 112 affected siblings, 65 affected mothers) and 62,863 healthy family members. Father data was unavailable until 2004 and excluded from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide consistent demographic data about the study population with explicit numerical counts. The data sources are clearly identified (C1-C2), and the exclusion of fathers is transparently acknowledged (C50). The numbers are internally consistent across claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C55",
+      "C56"
+    ],
+    "result": "Probands were defined as the earliest-diagnosed pediatric/AYA cancer patient in each family. All 112 affected siblings were diagnosed after their proband, and 56 of 65 affected mothers (86%) were diagnosed after the proband.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C55-C56 provide clear operational definitions and temporal relationships. The proband definition ensures no temporal ambiguity, and the explicit percentages for maternal diagnoses are provided with appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "SPMs were significantly enriched in families with familial cancer risk (\u22652 primary cancers): 0.58% (14/2,432) versus 0.31% (373/119,136) in families without familial risk (p=0.023). Overall, 387 SPMs were identified among pediatric/AYA probands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 provide statistically significant evidence (p=0.023) for SPM enrichment in high-risk families. The percentages and counts are explicit and internally consistent. The statistical test appropriately addresses the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C63"
+    ],
+    "result": "Overall familial relative risk was 3.32-fold (95% CI: 2.85-3.85) for any cancer among siblings/mothers of probands. Risk was higher for solid cancers (SIR=4.54, 95% CI: 3.82-5.35) than hematologic cancers (SIR=2.97, 95% CI: 2.30-3.78). Specific cancer types including leukemias, lymphomas, CNS tumors, retinoblastomas, renal tumors, sarcomas, GCTs, and epithelial neoplasms showed significantly elevated same-type familial risks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 and C63 present consistent SIR estimates with non-overlapping confidence intervals supporting the magnitude differences. The stratified analyses by cancer type are supported by Figure 1A and Figure 2, with appropriate statistical methodology described in C59-C60.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C64",
+      "C65",
+      "C66",
+      "C74",
+      "C75"
+    ],
+    "result": "Familial cancer risk varied significantly by race/ethnicity. For solid cancers, Latinos (SIR=4.98, p=0.019) and non-Latino Blacks (SIR=7.35, p=0.026) showed higher risks than non-Latino Whites (SIR=3.02). For hematologic cancers, Asian/Pacific Islanders showed elevated risk (SIR=7.56, p=0.023) compared to non-Latino Whites (SIR=2.69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 and C64-C66 provide statistically significant ethnic differences with explicit p-values and non-overlapping confidence intervals. The pattern is consistent across multiple comparisons and supported by Figure 1B. The statistical tests appropriately compare groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Children/AYAs with a first primary malignancy showed 7.27-fold increased risk of SPMs (95% CI: 6.56-8.03). Most primary cancer types were associated with elevated SPM risk. Non-Latino Asian/Pacific Islanders showed significantly higher SPM risk (SIR=15.41, p<0.001 for any cancer; SIR=18.90, p<0.001 for hematologic) compared to non-Latino Whites, while Latinos showed similar risk to non-Latino Whites (p=0.869).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present consistent SPM risk estimates with appropriate confidence intervals and statistical comparisons. The ethnic stratification shows clear differences supported by Figure 3B. The p-values indicate robust statistical significance for API differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "The absolute risk of early-onset cancer among siblings/mothers in families with a proband (0.074%) was higher than the general population (0.023% from SEER) in the same age group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 provides explicit absolute risk comparison with an external reference (SEER). While relative risks are emphasized throughout, this absolute risk contextualization is appropriate given the rarity of pediatric cancers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Methodological approach included physician review to prevent FPM/SPM misclassification, ICCC-3 cancer classification, stratification by maternal race/ethnicity and age groups, and appropriate statistical methods (Poisson distribution for <100 cases, Breslow-Day method for \u2265100 cases) with significance threshold p<0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C62 describe clear, appropriate methodological choices. The physician review (C51) addresses a key potential bias. The statistical methods (C59-C60) are standard and appropriately applied based on sample size. Software version is specified (C61).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Among 14 affected relatives with retinoblastoma probands, 10 had the same cancer, consistent with highly penetrant germline RB1 mutations. Increased sarcoma risk given leukemia probands suggests Li-Fraumeni syndrome presence, characterized by diverse childhood/adult cancers including adrenocortical carcinoma, breast cancer, CNS tumors, sarcomas, and leukemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 provide specific examples of known genetic syndromes with appropriate citations. The retinoblastoma concordance (10/14) is consistent with known RB1 penetrance. The Li-Fraumeni inference is reasonable given the observed leukemia-sarcoma association.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Background literature establishes that both high-penetrance mutations (e.g., TP53 in Li-Fraumeni, RB1 in retinoblastoma) and low-penetrance common variants (e.g., IKZF1, ARID5B in ALL) contribute to pediatric cancer risk. Germline pathogenic variants occur in ~10% of pediatric cancer patients. Previous familial risk studies focused primarily on European ancestry populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C48 and C67-C72 appropriately cite prior literature to establish context. The ~10% germline variant frequency (C41) is well-supported by multiple citations. The limitation of prior studies to European populations (C48) justifies the current study's focus on diverse populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C98"
+    ],
+    "result": "This is claimed to be the first study quantifying familial clustering and SPM risks among early-onset cancer patients with emphasis on racial/ethnic differences, utilizing linked population-based registries to minimize selection and information biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 asserts novelty but uses qualified language ('to our knowledge'). While the ethnic stratification in a large diverse population appears novel, comprehensive verification of this claim would require systematic literature review. The methodological strength (C98) regarding bias minimization is a reasonable inference but not empirically demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C85",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Research gaps identified include: polygenic risk score contribution to pediatric familial clustering has not been studied; higher familial risk in US minorities has not been systematically investigated; genetic predispositions and environmental factors driving ethnic differences warrant further investigation; and such studies may inform genetic counseling strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C85, and C106-C109 appropriately identify research gaps and future directions based on the current findings. These are reasonable inferences from the observed ethnic differences and acknowledged limitations, though they represent speculation about future work rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Familial concordance is attributed to both genetic and environmental causes, with differential effects by race/ethnicity. Population genetic context includes Latino admixture (Native American, European, African), non-Latino Black admixture (African, European), and diverse Asian/Pacific Islander origins. Adaptive selection pressures or genetic drift may differentially influence familial cancer clustering across ethnic groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C84 and C94-C97 present reasonable interpretations but involve substantial speculation. The genetic/environmental causation (C76) is plausible but not directly tested. The population genetics background (C78-C81) is accurate. However, the evolutionary explanations (C94-C97) are highly speculative and not supported by data in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Therapy for first primary cancers is a major SPM risk factor, and multiple primaries are key features of hereditary cancer syndromes. Genetics likely play a strong role in rare secondary cancers. However, the analysis was not designed to distinguish therapy-related from genetic SPM risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 appropriately acknowledge the complexity of SPM etiology with proper citations. The limitation (C89) is transparently stated\u2014the study cannot separate treatment effects from genetic predisposition, which is a significant constraint on causal interpretation of SPM findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Study limitations include: small numbers for some cancer types limiting statistical power; inability to track cancers diagnosed outside California; insufficient 26-year follow-up for comprehensive SPM detection and maternal cancers at older ages; potential survival bias against strong predispositions; and lack of paternal data reducing ability to assess full familial risk and inherited syndromes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 transparently acknowledge multiple important limitations. These are reasonable assessments of the study's constraints. The survival bias speculation (C103) is plausible. The lack of paternal data (C104-C105) is a significant limitation for assessing autosomal dominant syndromes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The data support a need for increased attention to genetics of early-onset cancer predisposition and environmental factors in race/ethnic minority families in the United States.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is a reasonable conclusion given the demonstrated elevated familial risks in minority populations (C18-C24, C65-C66, C74-C75). However, this is an advocacy statement rather than a direct research finding, representing the authors' interpretation of the implications.",
+    "result_type": "MAJOR"
+  }
+]

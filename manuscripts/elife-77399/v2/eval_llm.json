@@ -1,0 +1,488 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Vocalisations cluster temporally both within individuals and across the infant-caregiver dyad. Infant vocalisations are more likely to occur around caregiver vocalisations (12 min before to 8 min after), caregiver vocalisations cluster around infant vocalisations (20 min before to 20 min after), and vocalisations cluster within individuals (16-20 min windows).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 provide converging statistical evidence from temporal clustering analyses showing significant increases in vocalisation likelihood across multiple time windows. The permutation-based clustering correction for multiple comparisons strengthens these findings. The results are consistent with prior literature (C33) and shown in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Infant arousal is elevated around both infant and caregiver vocalisations (16 min before to 16-18 min after), while caregiver arousal shows smaller increases around infant vocalisations (4 min before to 6 min after) but minimal association with their own vocalisations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 present consistent statistical findings from arousal analyses around vocalisations, with appropriate corrections for multiple comparisons and autocorrelation removal (mentioned in methods). The differential patterns between infants and caregivers are clearly demonstrated in Figure 2a-b, supporting the interpretation of greater vocal flexibility in adults.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Infant arousal peaks (top 10% values) are associated with increased vocalisation likelihood in both infants and adults, but adult arousal peaks show no such association, indicating greater vocal functional flexibility in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide complementary evidence to the arousal-around-vocalisations analysis. The statistical findings are shown in Figure 2c-e with appropriate controls. However, C42 notes that the adult vocalisation finding was not significant at other threshold values (Appendix), suggesting some sensitivity to analytical choices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "ROC analysis demonstrates that infant arousal significantly predicts infant vocalisation likelihood (p<0.001), while caregiver arousal does not predict caregiver vocalisation likelihood, confirming that infant vocalisations are inflexibly related to arousal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present ROC analysis results (Figure 2d) that converge with other analyses to support the vocal inflexibility hypothesis in infants. The signal detection framework is appropriate for this question, though the manuscript could benefit from reporting AUC values and confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "High arousal infant vocalisations are followed by increases in caregiver arousal (2-6 min and 10-14 min after), while high arousal caregiver vocalisations are preceded by increases in infant arousal (10-6 min before).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe cross-dyadic arousal dynamics shown in Figure 3a-b. The quartile split approach and ANOVA with permutation-based correction are appropriate. These findings support the interpretation that caregivers track and respond to infant arousal states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Video coding of physical position during vocalisations shows that most vocalisations occur while infants are freely moving (44-49%) or free but stationary (33%), with no evidence that arousal increases around vocalisations are attributable to changes in physical position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 present control analyses addressing a potential confound. The descriptive statistics are clear, and the conclusion (C61) that physical position does not explain arousal changes is supported by the supplementary analyses mentioned. This strengthens the main findings by ruling out an alternative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Fine-grained supplementary analysis in a seated tabletop interaction shows that infant arousal increases begin 5s before vocalisations and return to baseline 20s after, while caregivers show no arousal changes around their own vocalisations, suggesting arousal changes are not purely due to the physical act of vocalising.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 present control analyses from a different dataset with higher temporal resolution. The temporal pattern (arousal rising before vocalisation) and absence of caregiver arousal changes around their own vocalisations support the interpretation. However, C63 notes the infant effect was non-significant, which somewhat weakens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Infant vocalisations (all types combined) are associated with decreased infant arousal stability and increased adult arousal stability in time windows prior to the event, while adult vocalisations show no significant changes in arousal stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 present arousal stability findings shown in Figure 4a-b and 4e-f. The autocorrelation-based stability measure is appropriate. However, the manuscript notes these findings differ markedly when vocalisations are subdivided by type (Part 2), suggesting the aggregated analysis may obscure important distinctions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Significantly increased infant-caregiver arousal coupling is observed following adult vocalisations, with the same directional but non-significant effect for infant vocalisations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 present arousal coupling findings using cross-correlation. The statistical approach is sound, though the non-significant finding for infant vocalisations (C71) limits the strength of conclusions. The manuscript notes these findings also differ when vocalisations are subdivided by type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Both speech-like vocalisations and cries show temporal clustering, with vocalisations more likely to occur in extended time windows around both vocalisation types. This contrasts with laboratory findings suggesting speech-like vocalisations are often not socially directed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 present temporal clustering analyses for vocalisation subtypes. The statistical findings are clear and appropriately corrected. The contrast with laboratory findings (C76, citing Long et al., 2020) is interesting but raises questions about whether naturalistic vs. laboratory settings or other methodological differences explain the discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Both cries and speech-like vocalisations occur at elevated arousal, but cries show higher peak arousal (z=0.56 vs 0.41, p<0.01) and more rapid return to baseline, while speech-like vocalisations show sustained arousal increases lasting from -20 to +20 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 present clear differential patterns between vocalisation types shown in Figure 5c-d. The statistical comparisons are appropriate (Mann-Whitney U test), and the temporal patterns are well-characterized. These findings are central to the paper's argument about differential functions of vocalisation types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Caregiver arousal shows significant increases around infant cries (-1 to +2 min) but not around infant speech-like vocalisations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 demonstrate differential caregiver responses to vocalisation types. The statistical findings are clear and support the functional dissociation between cries and speech-like vocalisations. This is a key finding for the parental selection mechanism hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Both cries and speech-like vocalisations are significantly more likely to occur around infant arousal peaks (top 10%), with speech-like vocalisations occurring 3 min before to 5 min after peaks, and cries occurring up to 3 min after peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 show both vocalisation types are tied to arousal peaks, supporting the claim that even speech-like vocalisations remain relatively inflexible with respect to arousal at 12 months. The findings are shown in Figure 5b with appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ROC analysis shows infant arousal significantly predicts both infant cries and speech-like vocalisations (both p<0.001), while caregiver arousal does not predict either vocalisation type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 extend the ROC analysis to vocalisation subtypes (Figure 5e), confirming that both cries and speech-like vocalisations are tied to infant arousal. This is crucial evidence that speech-like vocalisations are not yet functionally flexible with respect to arousal at 12 months.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Both cries and speech-like vocalisations are associated with increases in infant arousal, but cries show higher peak arousal, while speech-like vocalisations lead to more sustained increases. Adults show arousal changes to cries but not speech-like vocalisations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 synthesize findings about differential arousal patterns for vocalisation types. The summary is well-supported by the preceding analyses (C77-C84) and represents a key conclusion about functional differences between vocalisation types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Infant cries are accompanied by reduced infant arousal stability prior to the event and increased caregiver arousal stability following the event, while no changes in arousal stability are observed around speech-like vocalisations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 present arousal stability findings for vocalisation subtypes (Figure 4c, 4g). The differential patterns between cries and speech-like vocalisations are clear and support the functional dissociation hypothesis. The autocorrelation-based stability measure is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Infant cries lead to increased caregiver-infant arousal coupling following the cry, while no changes in arousal coupling are observed for speech-like vocalisations, indicating differential effects on arousal co-regulation across the dyad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 present arousal coupling findings for vocalisation subtypes (Figure 4k). The differential patterns strongly support the hypothesis that cries and speech-like vocalisations have different functions in dyadic arousal regulation. The cross-correlation approach is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The within-individual relationship between arousal and vocalisation likelihood is strong in infants and weaker in adults, with infants showing increased vocalisation likelihood around arousal peaks (not observed in adults), and vocalisation timings predictable from arousal levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 synthesize multiple analyses (Figure 2) to support the core finding of infant vocal inflexibility vs. adult flexibility. The convergence of evidence from multiple analytical approaches (arousal around vocalisations, vocalisation likelihood around peaks, ROC) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Control analyses suggest arousal changes around vocalisations are unlikely to be purely attributable to the physical act of vocalising or to changes in physical positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 summarize control analyses that rule out alternative explanations. The evidence from supplementary fine-grained analysis (C107) and video coding (C108) supports these conclusions, though C63 noted the infant effect in the fine-grained analysis was non-significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "At 12 months, infant vocalisations (including both cries and speech-like vocalisations) remain relatively inflexible with respect to arousal, with increases in arousal necessary for infants to vocalise regardless of vocalisation type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C112-C114 present the core conclusion about infant vocal inflexibility. This is well-supported by converging evidence from multiple analyses (C85-C91, C104-C106). The contrast with prior findings on valence flexibility (C111) is noted but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Caregiver vocalisation likelihood, intensity, and type are more influenced by infant arousal than by caregivers' own arousal, demonstrating that caregivers' speech is flexible with respect to their own arousal but finely attuned to their child's arousal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C123 present converging evidence from multiple analyses (main analyses and supplementary analyses in Figures S9a-d) showing caregivers track infant arousal. The findings support the interpretation of caregiver vocal flexibility and attunement to infant states. The contrast with non-human primates (C122) strengthens the evolutionary interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Speech is an under-appreciated mechanism for arousal co-regulation during early life, with vocalisations serving as an important medium through which arousal is made manifest between caregivers and infants, supporting coregulation at the dyadic level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 present an interpretive synthesis connecting the findings to arousal co-regulation theory. The interpretation is supported by the data (especially C127, Figure 3a) and prior literature (C125-C126), though C124 and C128 involve some speculation about mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Cries occur at high arousal with decreased arousal stability, lead to increased caregiver arousal stability and caregiver-infant coupling, and are followed by decreases in infant arousal and increased stability, suggesting cries serve to down-regulate infant arousal through caregiver-infant coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C137 synthesize multiple findings about cries (Figures 4c, 4g, 4k, 5a, 5c) to propose a functional interpretation. The data support the arousal down-regulation function, though C136-C137 involve speculation about mechanisms. The interpretation is plausible but would benefit from additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Speech-like vocalisations lead to sustained increases in infant arousal and are more likely to be followed by other vocalisations from both infant and caregiver, potentially indicating increased attentional processes that support processing of caregiver responses and later vocal production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 present clear findings (Figures 5a, 5c), while C140 offers a speculative interpretation about attentional mechanisms supported by citations. The sustained arousal pattern is well-documented, but the attentional interpretation requires additional evidence (e.g., measures of attention or information processing).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Cries lead to changes in arousal stability and coupling across the dyad while speech-like vocalisations do not, suggesting functional differences at the dyadic level. Caregivers' unimpaired arousal following speech-like vocalisations may allow for more flexible and semantically attuned responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 summarize well-supported differential effects (Figure 4h, 4l). Claim C143 offers a speculative interpretation about the mechanism for selective learning in speech development. The interpretation is plausible and theoretically motivated but requires additional evidence about response flexibility and semantic content.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Speech-like vocalisations are more likely to be followed by caregiver vocalisations over a longer time period compared to cries, consistent with the idea that parental selection mechanisms grounded in stress physiology drive vocal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 presents a clear finding (Figure 5a), while C144 cites supporting prior work and C146 offers a theoretical interpretation. The data support the differential temporal patterns, and the interpretation aligns with the theoretical framework, though the causal claim about developmental mechanisms requires longitudinal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "The sparse sampling approach (5s every 60s) preserves the temporal structure of the data, and undetected vocalisations can only have weakened (not strengthened) the observed patterns of event-related change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C148 address a key methodological limitation. C147 is supported by supplementary simulation analyses (Appendix 2), and C148 presents a logical argument about the conservative nature of the approach. These claims strengthen confidence in the findings despite the sparse sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "There is a functional dissociation between speech-like vocalisations and cries at the dyadic level. Caregivers' differential responses to speech-like vocalisations (which are not yet produced flexibly by infants) may drive speech development through a bidirectional physiological process supporting progressively specialized vocalisations via parental selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 present the paper's main theoretical conclusion, synthesizing the empirical findings. C152 is well-supported by the data. C153-C154 offer developmental interpretations that are plausible and theoretically motivated but involve speculation about mechanisms and require longitudinal evidence to fully support the causal claims about development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript reviews prior theoretical and empirical work on vocal development, functional flexibility, arousal-vocalisation relationships in non-human primates, and early infant vocal behavior, establishing the theoretical framework and knowledge gaps motivating the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C28 present background knowledge and prior findings supported by appropriate citations. These claims establish the theoretical context and are generally accurate representations of the cited literature, though they should be evaluated based on the accuracy of the citations rather than the current study's data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The study recruited 91 dyads with usable data from 82 (74 with paired data), all with female caregivers. Mean recording time was 7.3 hours per day with 5s audio samples every 60s. After exclusions, mean analyzed data was 3.7 hours (221.5 epochs) per dyad. Vocal coding showed acceptable-to-substantial inter-rater reliability (\u03ba=0.60-0.70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C176 present methodological details and descriptive statistics. The sample size, data collection procedures, and coding reliability are clearly reported. The exclusion of male primary caregivers (C158) limits generalizability. The inter-rater reliability values (C169, C174) are acceptable but not excellent, which may introduce some measurement error.",
+    "result_type": "MINOR"
+  }
+]

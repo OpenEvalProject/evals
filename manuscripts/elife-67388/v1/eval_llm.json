@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C25",
+      "C26",
+      "C27",
+      "C73",
+      "C116",
+      "C117"
+    ],
+    "result": "The study utilized data from the Swiss HIV Cohort Study (SHCS), a large prospective cohort with 20,741 patients, of which 3,997 had both HLA-I and drug resistance testing data. The SHCS is representative, including about half of all HIV patients in Switzerland and three-quarters of those on ART. HLA data was obtained through SNP imputation methods validated on Caucasian populations, resulting in a study population enriched for white ethnicity (87.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13, C25-C27, C73, C116-C117 provide comprehensive documentation of the study cohort characteristics and data sources. The cohort size, representativeness, and data collection methods are well-documented with appropriate citations. The acknowledgment that the HLA imputation was validated on Caucasian populations and the resulting ethnic composition is transparent about potential limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C24",
+      "C28"
+    ],
+    "result": "The study employed a systematic screening approach, filtering 5,561 possible DRM:HLA combinations to 225 pairs with sufficient statistical power (0.8, assuming OR=3). Analysis was restricted to ART-na\u00efve individuals and DRMs defined by the Stanford Database. Multiple testing correction was applied using Benjamini-Hochberg adjustment with FDR=0.2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C14-C17, C24, C28 describe a methodologically sound screening approach. The power-based filtering is appropriate to reduce multiple testing burden, though the liberal FDR of 0.2 and assumed OR of 3 are acknowledged by the authors as intentionally permissive, with validation through subsequent analyses. The restriction to ART-na\u00efve individuals appropriately addresses confounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Initial logistic regression screening identified three significant DRM:HLA pairs after multiple testing adjustment: RT-E138:HLA-B18 (OR 6.999, 95% CI 4.662-10.413), RT-E138:HLA-A24 (OR 2.444, 95% CI 1.602-3.658), and RT-V179:HLA-B35 (OR 2.431, 95% CI 1.398-4.108). All three involved reverse transcriptase mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 report the primary screening results with specific statistical values and confidence intervals. The results are clearly presented and internally consistent. However, these are preliminary findings requiring validation through subsequent analyses, which the authors appropriately conduct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study population characteristics showed 16.7% with HLA-A24, 9.4% with HLA-B18, and 18.2% with HLA-B35. Among 3,997 patients, 18.0% had at least one DRM, with 145 patients having RT-E138 mutations and 82 having RT-V179 mutations. The specific amino acid variants at these positions were documented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 provide descriptive statistics of the study population that are internally consistent and appropriately documented. The frequencies are reasonable for a European cohort and provide context for the statistical power of subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C119"
+    ],
+    "result": "Cross-sectional analysis with interaction terms revealed that only RT-E138:HLA-B18 showed a significant interaction between infection duration and HLA presence (interaction OR 1.169, 95% CI 1.075-1.273, p<0.001). Infection duration alone was negatively associated with RT-E138 (OR 0.918, p=0.004), but this reversed in HLA-B18 carriers, suggesting immune escape counteracts fitness costs over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41, C119 describe a sophisticated analysis revealing time-dependent effects. The interaction term is statistically significant and biologically plausible: the fitness cost of RT-E138 leads to reversion over time, but HLA-B18-mediated immune pressure reverses this selection. The interpretation is well-supported by the data, though the mechanistic explanation (C40-C41) involves inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C120"
+    ],
+    "result": "Survival analysis of initially wild-type patients showed two pairs with significantly increased hazard of developing DRMs: RT-E138:HLA-B18 (HR 12.211, 95% CI 3.523-42.318, p<0.001) with 7.9% of HLA-B18 carriers developing the mutation versus 0.7% of non-carriers, and RT-V179:HLA-B35 (HR 16.116, 95% CI 1.673-155.216, p=0.016) with 2.0% versus 0.1% developing mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49, C120 present longitudinal evidence supporting the DRM:HLA associations. The hazard ratios are large and statistically significant, though confidence intervals are wide (especially for RT-V179:HLA-B35) due to small event numbers. The survival analysis provides stronger causal evidence than cross-sectional associations, as it examines mutation emergence over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C122"
+    ],
+    "result": "NetMHCpan predictions indicated weakened HLA binding to DRM-containing peptides for RT-E138:HLA-B18 and RT-V179:HLA-B35, supporting an immune escape mechanism. These two pairs showing mechanistic plausibility were the same pairs with significant survival analysis results. Prior experimental literature supports epitope binding for these pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53, C122 provide mechanistic validation through computational predictions and literature support. The convergence of NetMHCpan predictions, survival analysis results, and prior experimental evidence strengthens confidence in these two pairs. However, NetMHCpan predictions are computational and the cited experimental evidence (C53) is from other studies, not direct validation in this cohort.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C121"
+    ],
+    "result": "RT-E138:HLA-B18 was the most robustly supported pair, validated by all three analytical approaches (cross-sectional interaction analysis, survival analysis, and mechanistic plausibility). This pair had been previously investigated by Gatanaga et al. 2013, and the current study independently demonstrates its relevance at the population level in both cross-sectional and longitudinal data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C121 synthesize the multi-method validation of RT-E138:HLA-B18. The convergence of evidence across three independent analytical approaches, combined with prior experimental validation, provides strong support for this association. The study's contribution is demonstrating population-level relevance of a previously characterized molecular interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Both identified DRMs (RT-E138 and RT-V179) are associated with nonnucleoside reverse transcriptase inhibitors (NNRTIs). RT-E138A/G/K/Q confers resistance to Etravirine and Rilpivirine, while RT-V179D/F/T affects Etravirine and RT-V179L affects Rilpivirine. Virological failure rates for these drugs are estimated at 5% for Efavirenz and 11% for Rilpivirine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 provide clinical context for the identified mutations, citing established drug resistance associations and failure rates. These are well-established facts from the field, appropriately cited, that contextualize the clinical relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C123"
+    ],
+    "result": "The study demonstrates a considerable interaction between drug resistance evolution and immune escape in a representative patient population, extending the standard paradigm by showing that resistance mutations can newly emerge in untreated individuals due to immune escape. While this mechanism may not account for the majority of DRMs in untreated patients, it may not be negligible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C123 present the main conceptual contribution of the study. The evidence from multiple analytical approaches supports that HLA-mediated immune pressure can drive DRM emergence in ART-na\u00efve individuals. The authors appropriately temper their conclusions by noting this is not the dominant mechanism but may be non-negligible, which is a reasonable interpretation given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The findings have implications for understanding geographic variation in pre-treatment drug resistance. Given that ~10% of ART-na\u00efve European patients have DRMs (higher in low-resource settings), and HLA allele frequencies vary geographically, the DRM:HLA link may partially explain regional variations. Emergence of certain DRMs would be expected in populations with higher prevalence of the corresponding HLA types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C72 extrapolate the findings to explain geographic variation in DRM prevalence. While the logic is sound and HLA geographic variation is well-established (C69-C70), the actual contribution of HLA-driven immune escape to geographic DRM patterns is speculative (C71-C72). The cited DRM prevalence figures (C66-C67) provide context but don't directly test the geographic hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study has important limitations: it is best powered to detect DRM:HLA pairs in white patients and may be underpowered for HLA alleles prevalent in non-white populations where DRMs are more urgent. Limited statistical power may explain inconsistencies between analyses (e.g., RT-V179:HLA-B35 significant in survival but not cross-sectional analysis). Restriction to pol gene sequences limited detection of DRM:HLA relationships in other genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 provide transparent discussion of study limitations. The ethnic composition bias is acknowledged and explained by the imputation methodology. The speculation about power limitations (C77-C79) is reasonable given the wide confidence intervals observed. These are appropriate caveats that contextualize the generalizability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study's methodological strengths include: larger scale than prior HLA-DRM studies, systematic screening of an entire cohort, accounting for infection duration to exclude fitness-disadvantaged tDRMs, use of three complementary analytical approaches, integration of statistical and mechanistic evidence, and power-based filtering to reduce multiple testing burden. The longitudinal analysis is unique and difficult to replicate given current clinical practice of immediate ART initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C90 describe legitimate methodological strengths. The multi-method approach (cross-sectional, longitudinal, mechanistic) provides triangulation of evidence. The point about uniqueness of longitudinal data (C86-C87) is valid given current treatment guidelines. The integration of population-level statistics with mechanistic predictions (C89) is a strength, though NetMHCpan predictions are computational, not experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The findings may inform future ART strategies. While personalized HLA-based treatment selection is not feasible in resource-limited settings, the information could help anticipate higher frequencies of certain DRMs in populations with prevalent corresponding HLA types. Future availability of integrase sequencing data may enable detection of DRM:HLA pairs affecting integrase inhibitor efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C95 discuss potential applications and future directions. The practical limitations of HLA-based treatment personalization (C92) are realistic. The suggestion to use HLA prevalence data for population-level DRM prediction (C93) is reasonable but untested. The speculation about future integrase data (C94-C95) is appropriate forward-looking discussion but not a current result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C118"
+    ],
+    "result": "The introduction establishes the context: antiretroviral resistance remains a major obstacle to HIV suppression, particularly in resource-limited settings. The standard paradigm holds that DRMs are acquired during treatment failure or transmitted, then revert in untreated individuals due to fitness costs. However, this paradigm generally disregards the possibility that DRMs could be selected in untreated individuals through immune escape mechanisms, particularly HLA-mediated CTL escape. While this phenomenon has been reported for individual mutation:HLA pairs, systematic population-level assessment was lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C115, C118 provide appropriate background and rationale. The description of the standard DRM paradigm and its limitations is accurate and well-cited. The identification of a gap in systematic population-level assessment (C115) appropriately motivates the study. The biological mechanisms of HLA-mediated immune escape are established knowledge, properly cited.",
+    "result_type": "MINOR"
+  }
+]

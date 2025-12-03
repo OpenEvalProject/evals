@@ -1,0 +1,1354 @@
+{
+  "submission": {
+    "id": "bdc942db-945e-4f5f-8ff5-917903d1e7ef",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:36:46.333834Z",
+    "updated_at": "2025-12-03T16:36:46.333834Z"
+  },
+  "content": [
+    {
+      "id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "submission_id": "bdc942db-945e-4f5f-8ff5-917903d1e7ef",
+      "content_type": "manuscript",
+      "content_text": "# COVID-19 cluster size and transmission rates in schools from crowdsourced case reports\n\n## Authors\n\n- Paul Tupper<sup>2</sup> ([ORCID: 0000-0002-4340-4481](https://orcid.org/0000-0002-4340-4481)) \u2020\n- Shraddha Pai<sup>3</sup> ([ORCID: 0000-0002-1048-581X](https://orcid.org/0000-0002-1048-581X))\n- Urooj Khan ([ORCID: 0000-0001-5151-9943](https://orcid.org/0000-0001-5151-9943))\n- Caroline Colijn<sup>2</sup> ([ORCID: 0000-0001-6097-6708](https://orcid.org/0000-0001-6097-6708)) \u2020\n\n### Affiliations\n\n1. Lawson Health Research Institute London Canada ([ROR:051gsh239](https://ror.org/051gsh239))\n2. Department of Mathematics, Simon Fraser University Burnaby Canada ([ROR:0213rcc28](https://ror.org/0213rcc28))\n3. The Donnelly Centre, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))\n4. Ontario Institute for Cancer Research Toronto Canada ([ROR:043q8yx54](https://ror.org/043q8yx54))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe role of schools in the spread of SARS-CoV-2 is controversial, with some claiming they are an important driver of the pandemic and others arguing that transmission in schools is negligible. School cluster reports that have been collected in various jurisdictions are a source of data about transmission in schools. These reports consist of the name of a school, a date, and the number of students known to be infected. We provide a simple model for the frequency and size of clusters in this data, based on random arrivals of index cases at schools who then infect their classmates with a highly variable rate, fitting the overdispersion evident in the data. We fit our model to reports from four Canadian provinces, providing estimates of mean and dispersion for cluster size, as well as the distribution of the instantaneous transmission parameter \u03b2, whilst factoring in imperfect ascertainment. According to our model with parameters estimated from the data, in all four provinces (i) more than 65% of non-index cases occur in the 20% largest clusters, and (ii) reducing instantaneous transmission rate and the number of contacts a student has at any given time are effective in reducing the total number of cases, whereas strict bubbling (keeping contacts consistent over time) does not contribute much to reduce cluster sizes. We predict strict bubbling to be more valuable in scenarios with substantially higher transmission rates.\n\n## Introduction\n\nIn the management of the COVID-19 pandemic, an important consideration is the role of children and in particular schools. In most jurisdictions rates of SARS-CoV-2 infection among children are similar to those in the adult population (Centers for Disease Control and Prevention, 2021). But severity is much lower in children; the infection fatality rate (IFR) of COVID for at age 10 was estimated to be 0.002% versus an IFR of 0.01% at age 25, and 0.4% at age 55, for the original SARS-CoV-2 virus present in 2020 (Levin et al., 2020). Cases are more often asymptomatic among children, less likely to require hospitalization and ICU care (Centers for Disease Control and Prevention, 2021), and less likely to be classified as long COVID (Sudre et al., 2021). On the other hand, MIS-C is a serious condition sometimes resulting from SARS-CoV-2 infection (CDC, 2021a), and myocarditis happens more frequently as a side effect of infection among younger individuals (Singer et al., 2022).\n\nJurisdictions have had to make a choice between closing schools, with all the attendant social, economic, and psychological costs (Chaabane et al., 2021), and leaving schools open, allowing possible transmission of SARS-CoV-2 in that setting (Centers for Disease Control and Prevention, 2021). The direct downside of transmission in schools if it occurs is that children may be infected there, risking the low but non-negligible harms of COVID-19 in that age range, but also adult teachers and staff are put at risk. Transmission in schools may also contribute to overall community transmission, indirectly jeopardizing more vulnerable individuals (Walsh et al., 2021). As a concrete example, if a child contracts SARS-CoV-2 at school, they may then go on to transmit it to an elderly relative they live with, for whom the consequences are more severe (Laws et al., 2021). Estimating the magnitude of these two kinds of harm and making the decision as to what choice to make involves many sources of uncertainty and value judgements, which helps explain why different jurisdictions have taken different approaches (Harris, 2020). In some jurisdictions schools were open for the 2020\u20132021 school year, though many measures were put into place in order to reduce the risk of SARS-CoV-2 transmission (British Columbia Ministry of Education, 2020). Measures included cohorting, staggered entrance and exit times, masks, improvements in ventilation, extra sanitization measures. In other jurisdictions schools were closed for large portions of the year (Partners, 2021).\n\nStudies that have looked at the effect of school closures on the overall rate of SARS-CoV-2 transmission find mixed results: some find substantial reduction in community transmission when schools are closed, and others small or no effect (Walsh et al., 2021; Chernozhukov et al., 2021). Given that schools involve many children all sharing a room for many hours a day, it may be surprising that there is not a clearer evidence of significant transmission in schools. One explanation is that children may be less likely to transmit SARS-CoV-2 to each other, either by being less infectious or by being less susceptible (Dattner et al., 2021; Viner et al., 2021). But transmission in schools does occur, and it\u2019s worthwhile to estimate the magnitude and characterize the variation in it.\n\nOne source of evidence for transmission in schools are school exposure reports. Throughout the pandemic organizations have collected data submitted by volunteers about COVID cases in schools, and such data has subsequently been published online (National Education Association, 2020; Covid Schools Canada, 2021; Support Our Students Alberta, 2022). Data consists of reports of exposures or clusters in schools, either submitted by parents or determined from reading newspaper reports. Several such websites exist, though many ceased due to excessive workload after the 2020\u20132021 school year. In some jurisdictions there are also similar sources of data provided by local government (Government of Ontario, 2021; State of Michigan, 2021) or Public Health Agencies (Vancouver Coastal Health, 2021; Health, 2021).\n\nHere, we propose a simple model of transmission in schools, and we use these data on cluster sizes to estimate parameters of the model for four Canadian provinces. Our model allows for heterogeneity in transmission rate, which is able to capture the considerable variability in the sizes of the clusters, with most exposures leading to no further cases (and so a cluster of size 1) but with few having a large number of cases (Tufekci, 2020). We estimate the mean and overdispersion parameters for different jurisdictions. We then use our parameter estimates in a couple of ways: firstly, we explore the overdispersion of cluster sizes in different jurisdictions, giving estimates of what fraction of all cases are in the 20% largest of all clusters. Secondly, we can obtain an estimate of the distribution of the transmission rate $\\beta$, the rate at which a single infected individual infects a susceptible person when they are in contact. This parameter, in turn, could be used to simulate school transmission and explore the impacts of interventions (Tupper et al., 2020) as we explore for some parameter choices. In Appendix 1 we perform a similar analysis for eight US states, where only substantially less complete datasets were available.\n\nFinally, two important changes have occurred in 2021 that we expect to impact cluster sizes in schools. On the one hand, in many jurisdictions, large portions of children aged 5 and up have been vaccinated with the Pfizer/BioNTech vaccine (The New York Times, 2020). According to the extent to which the vaccine protects against infection, we expect cluster size will be reduced, as fewer students will be infected if they have been immunized. Observed cluster size may be reduced further even than this, if the vaccine allows harder-to-detect infections to occur. On the other hand, now more infectious variants of the coronavirus have emerged; the Alpha, Delta, and Omicron variants have all had a higher estimated transmissibility than their predecessors (CDC, 2021b; CDC, 2022). Increased transmissibility would suggest larger cluster sizes, certainly among unvaccinated ages, but the relative impact of vaccination and the new variants together is difficult to gauge. Furthermore, changes in vaccination, transmission, and immune evasion may all lead to a change in the variability in cluster sizes.\n\n## Materials and methods\n\nOur data consist of reports of confirmed cases among students, teachers, and staff in schools in four Canadian provinces during the 2020\u20132021 school year. Data was collected by Dr Shraddha Pai with COVID Schools Canada (Covid Schools Canada, 2021), an initiative of the group Masks for Canada (Canadian Doctors, Professionals, & Citizens for Masks, 2021). We included the four provinces from this dataset with the most schools reporting cases with date information. For each school, there is a list of confirmed cases among students, teachers, and staff, along with the dates on which the cases were reported. We then assigned cases to clusters based on being at the same school and being reported within 7 days of each other; if the difference in date between two cases was less than or equal to 7 days, or they could be linked by a sequence of such cases, they were put in the same cluster. We chose 7 days on the basis of estimates of the serial interval for COVID-19 of approximately 5 days (Rai et al., 2021). (We explore other choices of window in Appendix 1.) Information was not available about whether the cases at the same school were in the same classroom. Accordingly, we interpret clusters as capturing all linked cases at a given school, and not just one classroom.\n\nThere is substantial uncertainty in whether each of our determined clusters of cases accurately represents a set of cases linked by transmission. For any cluster of two or more cases, it may be that two independent sets of cases are incorrectly included in the same cluster. This may lead us to overestimate the size of clusters. Likewise, any two of our clusters in the the same school that occur further apart than 7 days may in fact be linked by a chain of undetected transmission, leading to an underestimate of cluster size. Both these factors may occur in our data, but we neglect both of them, taking the observed cluster size as given by our method. We are also unable to distinguish between transmission occurring in a school and in social activities with classmates outside of school.\n\nIn a given jurisdiction, we assume exposure events occur according to a Poisson process with variable rate. Independently of this process, once an exposure event occurs at a school, we say $Z$ additional people are infected by the index case, for a total of $Z+1$ individuals in the cluster. The variable $Z$ includes individuals directly infected by the index case, as well as any subsequent infected individuals that are included in the same cluster. Following Lloyd-Smith et al., 2005, we model $Z$ as a Poisson random variable with parameter $\u03bd$, where $\u03bd$ itself is a Gamma-distributed random variable. As described by Lloyd-Smith et al., 2005, $Z$ is then a negative binomial random variable. Rather than the usual parametrization of a negative binomial distribution, we use parameters $R_{c}$ and $k$. The parameter $R_{c}$ is the expected number of additional infections in a cluster, and $k$ is the dispersion: a measure of how far the distribution of $Z$ is from being Poisson. As $k\u2192\u221e$, the distribution of $Z$ approaches that of a Poisson distribution with mean $R_{c}$. The variance of $Z$ is $R_{c}\u2062(1+R_{c}/k)$ and so for smaller values of $k$ we expect more of the secondary cases to occur in rare large clusters rather than in frequent small clusters (Lloyd-Smith et al., 2005).\n\nThere are then a total of $Z+1$ infected individuals in the school. To give an idea of how the distribution of true cluster size depends on the parameters when they are in this range, in Figure 1 we show the theoretical distributions for varying parameters. On the left, we fix $R_{c}+1=2$ and vary $k$. Decreasing $k$ causes there to be more clusters of size 1 (i.e. no transmission) and more large clusters, but reduces the number of intermediate-sized clusters. On the right, we fix $k=0.3$ and show the effect of varying mean cluster size $R_{c}+1$. As $R_{c}$ increases, the frequency of clusters with no or little transmission decreases and the frequency of larger cluster sizes increases.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig1-v2.jpg)\n\n**Figure 1.:** Trends continue as shown for larger clusters. (Left) Fixing mean cluster size $R_{c}+1$ and varying dispersion $k$. (Right) Fixing $k$ and varying $R_{c}+1$.\n\nThe number of the total $Z+1$ cases that are actually observed, $X$, depends on the ascertainment model. We consider a model where each case is observed and contributes to the reported cluster size with probability $q$, so that the observed cluster size $X$ (conditioned on $Z$) is binomial with parameters $n=Z+1$ and probability $q$. The index case is treated the same as the infectees, so $X$ may or may not include the index case. If none of the cases in a cluster are observed, we assume the cluster is not reported, so our model factors in the effect that smaller clusters are more likely to be missed. See Appendix 1 for an explicit statement of the likelihood function.\n\nFor each collection of cluster sizes in our datasets we estimate the mean $R_{c}$ and dispersion $k$ using the ascertainment model with $q=0.75$. We base this value on the meta-analysis (Bobrovitz et al., 2021) which reports ascertainment fractions for high-income regions in the Americas between 66% (in the last quarter of 2020) and 85% (in the second quarter of 2021). We use maximum likelihood estimation to obtain estimates of $R_{c}$ and $k$, and we use the Hessian of the log-likelihood to obtain 95% confidence ellipses for the parameters [Wasserman, 2013, Sec. 9.10].\n\nFinally, we perform a second analysis using the same model, using a smaller window of time for the definition of a cluster. In this way we hope to identify only the index case and the cases directly infected by the index case. We use the model above for this (smaller) number of cases for each cluster to estimate a distribution for $\u03bd$, but then use this in turn to estimate a distribution for the instantaneous transmission rate $\\beta$. Our reasoning is that if $\u03bd$ is the random Poisson parameter when the index case it exposed to $n$ people for time $T$, then $\\beta$ has approximately the same distribution as $\u03bd/(n\u2062T)$. Under these assumptions, $\\beta$ is also a Gamma-distributed random variable with parameter we can easily identify, from those for $\u03bd$.\n\n## Results\n\nFigure 2 shows histograms of cluster size according to our definition in the four provinces. In Table 1 we show some statistics associated with the data for each province. In the top we show the number of clusters, the number of schools appearing, the number of schools with more than one reported cluster, and the fraction of schools with multiple clusters. In the bottom we show the fraction of clusters that have only one observed case, and the average number of observed cases in the clusters, the maximum observed cluster size, the index of dispersion (variance divided by mean) of cluster size, and index of dispersion of the number of cases in a cluster subtracting one for the presumed index case.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig2-v2.jpg)\n\n**Figure 2.:** Inset histograms only show clusters of size 11 or more on a different scale.Each dot represents a single cluster of size 11 or larger, and indicates the presence of (more rare) larger clusters.\n\n**Table 1.**\n Cluster statistics for each province.(Top) For each of the four Canadian provinces: number of clusters in the data, number of schools reported, number of schools with multiple clusters, fraction of schools with multiple clusters. (Bottom) Fraction of clusters with one case, mean observed cluster size, maximum observed cluster size, and index of dispersion (variance of number of cases divided by mean number of cases) with and without subtracting one for the index case.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Province</th>\n      <th>Number of Clusters</th>\n      <th>Number of Schools</th>\n      <th>Schools with Multiple clusters</th>\n      <th>Fraction of schools Multiple clusters</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Manitoba</td>\n      <td>1754</td>\n      <td>542</td>\n      <td>396</td>\n      <td>0.73</td>\n    </tr>\n    <tr>\n      <td>Saskatchewan</td>\n      <td>1211</td>\n      <td>466</td>\n      <td>295</td>\n      <td>0.63</td>\n    </tr>\n    <tr>\n      <td>Ontario</td>\n      <td>8482</td>\n      <td>3337</td>\n      <td>2147</td>\n      <td>0.64</td>\n    </tr>\n    <tr>\n      <td>Alberta</td>\n      <td>5032</td>\n      <td>1537</td>\n      <td>1158</td>\n      <td>0.75</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Province</td>\n      <td>Fraction with</td>\n      <td>Mean observed</td>\n      <td>Max observed</td>\n      <td>Index of</td>\n      <td>IoD without</td>\n    </tr>\n    <tr>\n      <td>One case</td>\n      <td>Cluster size</td>\n      <td>Cluster size</td>\n      <td>Dispersion (IoD)</td>\n      <td>Index case</td>\n    </tr>\n    <tr>\n      <td>Manitoba</td>\n      <td>0.58</td>\n      <td>2.16</td>\n      <td>44</td>\n      <td>3.44</td>\n      <td>6.43</td>\n    </tr>\n    <tr>\n      <td>Saskatchewan</td>\n      <td>0.66</td>\n      <td>1.70</td>\n      <td>16</td>\n      <td>1.23</td>\n      <td>2.98</td>\n    </tr>\n    <tr>\n      <td>Ontario</td>\n      <td>0.63</td>\n      <td>1.83</td>\n      <td>50</td>\n      <td>1.87</td>\n      <td>4.13</td>\n    </tr>\n    <tr>\n      <td>Alberta</td>\n      <td>0.47</td>\n      <td>2.45</td>\n      <td>108</td>\n      <td>4.94</td>\n      <td>8.35</td>\n    </tr>\n  </tbody>\n</table>\n\nIn Figure 3 (left) we show the rate (in clusters per day per 100,000 population) that cases appear in the dataset over time. In Figure 3 (right) we show the rate of COVID incidence per 100,000 population in the province over the same period of time. There is an apparent correspondence between the two time series, with peaks in rate of clusters per day occuring near peaks in incidence.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig3-v2.jpg)\n\n**Figure 3.:** (Left) Estimates of the rate of new clusters (per 100,000 population) as a function of time in each province. (Right) Incident cases per day (per 100,000 population) in the same province over the corresponding time interval. Case counts are averaged over a 2-week window.\n\nFigure 4 (left) shows the estimated mean cluster size ($=R_{c}+1$) and dispersion $k$ for the four Canadian provinces. Mean cluster sizes ranged from 1.9 to 2.9 cases, and dispersion ranged from 0.34 to 0.53 (recalling that no overdispersion corresponds to $k\u2192\u221e$.) Recall that we determined clusters by including cases in the same cluster if they were reported within 7 days of each other. In Appendix 1 we explore what happens if we change this window to either 4 or 10 days. We find that estimates of $k$ do not change much: there is less than a 10% change in $k$ in all cases. A window of 4 days leads to smaller cluster sizes (at most 18% smaller) and a window of 10 days leads to larger cluster sizes (at most 11% larger).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig4-v2.jpg)\n\n**Figure 4.:** (Left) Estimates of mean and dispersion of cluster size for four Canadian provinces using the individual ascertainment model with ascertainment rate 0.75. Estimate of mean includes index case. The sample size for estimates for each province is the Number of Clusters as shown in Table 1. 95% confidence ellipses are shown, computed using the inverse Hessian method. (Right) Estimated distribution of $\u03bd$ (left axis) and instantaneous transmission rate $\\beta$ (right axis) for different provinces.\n\nIn Appendix 1 we explore varying the ascertainment fraction between 0.2 and 1. Though lower ascertainment fractions yield bigger values of $R_{c}$ and smaller values of $k$, we see that the parameter estimates are relatively insensitive to values of $q$ between 0.5 and 1. For example, when q1 is reduced from 0.75 to 0.5, the range of $R_{c}+1$ shifts from 1.9\u20132.9 to 3.2\u20136.4, and the range of $k$ shifts from 0.34\u20130.53 to 0.22\u20130.39. The reason for this is that though a given cluster with multiple cases will look smaller with fewer cases detected, and lower detection will thereby bias observed size downwards, many single-case clusters will not be detected at all, biasing the observed cluster size upwards again. We also consider an alternate model of ascertainment, where the chance of a cluster being reported at all depends on the size of the cluster, and vary the rate of ascertainment in that alternate model; see Appendix 1.\n\nAnother way to visualize the variability of transmission we have inferred from the data is to show the distribution of the Poisson parameter $\u03bd$, of which $R_{c}$ is just the mean. In our model $\u03bd$ is the index case-specific expected number of further cases in a cluster, and is a gamma-distributed random variable. Figure 4 (right) shows the estimated distribution of $\u03bd$ for each jurisdiction, and Table 2 shows some key properties of the distribution for each of the provinces.\n\n**Table 2.**\n Properties of the estimated distribution for the Poisson parameter $\u03bd$, the index case-specific expected number of further cases in a cluster.The expected value of $\u03bd$ is $R_{c}$ and its distribution gives important information about overdispersion of clusters. In units of hours-1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Province</th>\n      <th>Mean</th>\n      <th>Standard deviation</th>\n      <th>Median</th>\n      <th>90th percentile</th>\n      <th>99th percentile</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Alberta</td>\n      <td>1.86</td>\n      <td>2.55</td>\n      <td>8.9e-01</td>\n      <td>5.0</td>\n      <td>11.9</td>\n    </tr>\n    <tr>\n      <td>Manitoba</td>\n      <td>1.43</td>\n      <td>2.45</td>\n      <td>4.3e-01</td>\n      <td>4.1</td>\n      <td>11.7</td>\n    </tr>\n    <tr>\n      <td>Saskatchewan</td>\n      <td>0.88</td>\n      <td>1.46</td>\n      <td>2.9e-01</td>\n      <td>2.5</td>\n      <td>7.0</td>\n    </tr>\n    <tr>\n      <td>Ontario</td>\n      <td>1.04</td>\n      <td>1.70</td>\n      <td>3.5e-01</td>\n      <td>3.0</td>\n      <td>8.1</td>\n    </tr>\n  </tbody>\n</table>\n\nAs a way of interpreting dispersion values and what they mean for cluster size, we consider the fraction of all cases that occur in the largest 20% of all clusters. (If the distribution of cases follows the Pareto principle Wikipedia contributors, 2021 then 80% of the cases will be in the top 20% largest clusters.) If we consider only secondary cases (not including the index case) we see from Figure 5 (right) the fraction that are due to the 20% largest clusters for various values of mean cluster size and $k$. For example, for Alberta with a mean cluster size of 2.9 and a dispersion $k$ of 0.53, 69% of the secondary cases are in the top 20% of the clusters by size. For Saskatchewan, with a mean cluster size of 1.9 and $k=0.37$, 82% of secondary cases are in the top 20% of clusters by size. When we include index cases, the fractions are correspondingly lower, as we see in Figure 5 (right).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig5-v2.jpg)\n\n**Figure 5.:** For a range of mean cluster size and dispersion $k$, the fraction of cases in the 20% largest clusters, counting only secondary cases (left), or all cases, index and secondary (right).Dots indicate the location of the four provinces in the plots.\n\nOur model does not consider the details of transmission at the individual level, and so does not make use of an instantaneous transmission rate per contact pair. However, by making some simple assumptions about SARS-CoV-2 transmission, we can infer a distribution of transmission rate $\\beta$ from our estimate of the distribution of the parameter $\u03bd$. Recall that $\u03bd$ is a Gamma-distributed random variable that gives mean number of secondary cases. Another way to estimate mean cluster size is to use an individual contact model where when an infectious person is in contact with a susceptible person, the susceptible person is infected with rate $\\beta$. In such a model we assume that infected individuals are in a classroom for 2 days before isolating (when they develop symptoms), and that the total contact time with their classmates is $T=12$ hr. Assuming that all individuals are in the same class, the infected individual is in contact with $n=25$ other susceptible students for that time period. Then the infected individual will on average infect $\\beta\u2062n\u2062T$ other students. So we estimate $\\beta=\u03bd/(n\u2062T)$. Since $\u03bd$ is Gamma-distributed, our estimate of $\\beta$ is too. For estimating the distribution of $\\beta$ we used a 4-day window for the definition of clusters, since this is more likely to include only people directly infected by the index case. Figure 6 shows our estimated distribution of $\\beta$ for the different Canadian provinces. Table 3 shows some of the features of the estimated distribution for $\\beta$.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig6-v2.jpg)\n\n**Figure 6.:** Estimated distribution of $\\beta$ for different provinces.\n\n**Table 3.**\n Properties of the estimated distribution for the instantaneous transmission rate \u03b2.In units of hours-1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Jurisdiction</th>\n      <th>Mean</th>\n      <th>Standard deviation</th>\n      <th>Median</th>\n      <th>90th percentile</th>\n      <th>99th percentile</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Alberta</td>\n      <td>4.8e-03</td>\n      <td>6.7e-03</td>\n      <td>2.2e-03</td>\n      <td>1.3e-02</td>\n      <td>3.2e-02</td>\n    </tr>\n    <tr>\n      <td>Manitoba</td>\n      <td>3.3e-03</td>\n      <td>5.5e-03</td>\n      <td>1.1e-03</td>\n      <td>9.5e-03</td>\n      <td>2.6e-02</td>\n    </tr>\n    <tr>\n      <td>Saskatchewan</td>\n      <td>2.5e-03</td>\n      <td>4.4e-03</td>\n      <td>7.4e-04</td>\n      <td>7.4e-03</td>\n      <td>2.1e-02</td>\n    </tr>\n    <tr>\n      <td>Ontario</td>\n      <td>2.5e-03</td>\n      <td>4.1e-03</td>\n      <td>7.8e-04</td>\n      <td>7.1e-03</td>\n      <td>2.0e-02</td>\n    </tr>\n  </tbody>\n</table>\n\nOne application of these estimates of the distribution of $\\beta$ is that we can explore the consequences of different types of interventions in the classroom setting. In Tupper et al., 2020 the authors consider a simple model of SARS-CoV-2 transmission among a group of contacts and investigate the quantity $R_{event}$, the average number of secondary infections due to the presence of a single infectious individual. $R_{event}$ is determined by $T$, the total length of time the infectious individual is with others; ncontact, the number of contacts at any point in time, $\\tau$ the length of time the individual is with a fixed set of contacts; and $\\beta$, the instantaneous transmission rate. The parameter $\\tau$ can vary between some fraction of $T$ (e.g., $T/3$, if the index case divides their time equally between three sets of ncontact contacts) or $T$ if the set of contacts is fixed. Interventions can be classified according to which of these parameters they modify: reducing transmission reduces $\\beta$, social distancing reduces ncontact, and \u2018bubbling\u2019 (staying with the same small group rather than mingling) increases $\\tau$ to $T$. If we use our distributions for $\\beta$ with the model of Tupper et al., 2020 we can estimate how the distribution of cluster sizes is changed with different interventions under different values of the parameters $R_{c}$ and $k$.\n\nIn Figure 7 we show estimated size distributions of clusters under different interventions. Our baseline simulation settings intend to capture a pre-COVID high school classroom: $T=12$ hr (2 days of exposure before the index case isolates), $\\tau=3$ hr (each student has four different classes that they attend for equal periods of time), $n_{class}=25$, and $\\beta$ is sampled from our estimated distribution for a given choice of $R_{c}$ and $k$. We consider three interventions: transmission reduction (e.g., by introducing masks) reduces \u03b2 by a factor of 2; social distancing cuts the size of a class in half; strict bubbling increases $\\tau$ to $T$. For all values of $R_{c}$ and $k$ we consider, we simulate 107 clusters to obtain a histogram of the number of secondary cases as well a mean and standard deviations, for the baseline conditions and for each of the three interventions, as shown in Figure 7. Means and standard deviations are accurate to the number of digits reported, and are shown with the corresponding histogram in the figure.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig7-v2.jpg)\n\n**Figure 7.:** Left: under parameter choice $R_{c}=1$ and $k=0.4$. Right: with $R_{c}=2.5$.\n\nFigure 7 (left) shows results for $R_{c}$ and $k$ close to that of Manitoba with a 4-day window for cluster definition ($R_{c}=1.0$, $k=0.4$). We see that both reducing transmission and social distancing are effective in reducing the total number of cases, whereas bubbling does not contribute much to reduce cluster sizes. This is characteristic of what (Tupper et al., 2020) call the linear regime: the number of secondary infections depends linearly on the time the infectious person is present with others. Figure 7 (right) shows the results in a hypothetical setting where $R_{c}$ is much larger ($R_{c}=2.5$, $k=0.4$), perhaps due to the existence of a more transmissible variant such as Omicron. Here, transmission reduction is less effective than in the linear regime, and strict bubbling more so; increasing $\\beta$ has moved us closer to the so-called saturating regime, where transmission reduction is relatively less effective than bubbling.\n\n## Discussion\n\nWe have used cluster size data to estimate the mean and dispersion in cluster sizes, accounting for imperfect case detection. We have found that in each of the provinces we consider, the majority of school transmission occurs in a small number of classrooms, with the top 20% of clusters containing between 70% and 80% of the secondary cases in school settings. We developed a method to estimate the transmission rate per contact per unit time, with reference to a simple model of classroom transmission. Having a direct estimate of the transmission rate allows us to compare the benefits of different control measures. We find that with parameters estimated from Canadian jurisdictions during the 2020\u20132021 school year, interventions that reduce transmission rates (such as masking) and reduce number of contacts at any one time (class size reduction), are more effective than strategies aimed at keeping sets of contacts consistent (such as bubbling).\n\nOverdispersion in transmission of SARS-CoV-2 and other infectious diseases is well documented (e.g., Woolhouse et al., 1997) and is often described with reference to the 20/80 rule: that 20% of the infected individuals account for 80% of the transmission. Naturally, if the more infectious 20% can be identified, interventions targeting that portion of the population are likely to have a high impact. For SARS in 2003, Lloyd-Smith et al., 2005, estimated that 20% of the cases were responsible for almost 90% of the transmission. Estimates for SARS-CoV-2 also find considerable overdispersion, with the parameter $k$ between 0.1 (Endo et al., 2020) and 0.5 (Laxminarayan et al., 2020) (with $R_{0}=2.5$ this gives the top 20% of cases causing 69\u201396% of the transmissions; see Sneppen et al., 2021, for a survey). These estimates focus on the distribution of the number of people an infectious person infects directly during the whole course of infection (with mean R0), which is of obvious epidemiological importance, but for which it is difficult to obtain high-quality data. When a case is identified, we are not always able to determine who they infected, and indirect methods must be used. We may miss cases, and others may be wrongly attributed to a given index case.\n\nIn our present study, we examined a different random quantity, the number of additional cases $Z$ infected, either directly or through intermediaries, by a given index case in a given setting. We denoted the mean of $Z$ by $R_{c}$. Including the index case means that the cluster size is $Z+1$, with mean $R_{c}+1$. Compared to estimates of R0, $R_{c}$ does not count people infected at other sites, but it does include additional cases, because it includes both direct and indirect transmission. $Z$ and its mean $R_{c}$ are therefore more focused on the particular setting (in this case a school) than R0 is. In general it will depend on the infectiousness of the index case, as well as how conducive the environment is to transmission, and what activities are undertaken there. Determining the distribution of $Z$, as we have done here, provides an alternative means of investigating transmission.\n\nHowever, these two measures of transmissibility (R0 and $R_{c}$, the mean of $Z$) may be close enough that it is instructive to compare our estimates for $Z$ with the traditional R0, and our dispersion estimates with dispersion estimates for the number of secondary infections. Our $R_{c}$ ranges from 0.9 in Saskatchewan to 1.9 in Alberta. These low values of $R_{c}$ are inconsistent with R0 estimates (which range from 2 to 6; Alimohamadi et al., 2020), and indicate that in the pre-Delta time frame in these jurisdictions schools were unlikely to be a major contributor to SARS-CoV-2 spread. However, with increased transmissibility with new variants such as Omicron, this situation may have changed. The discrepancy is even greater when we consider clusters defined by the 4-day window, which are even smaller. Our estimates for $k$ range from 0.34 (in Manitoba) to 0.53 (in Alberta), corresponding closely to earlier estimates of dispersion.\n\nOverdispersion has consequences for controlling transmission and for estimation. Estimating the average transmission rate from a small number of clusters will be difficult, and will result in a high variability. Most likely what will be observed in a small number of sampled clusters will be little to no onward transmission, which would lead to underestimates of the transmission rate. But if one or more larger clusters are included in a sample by chance, then this could lead to an overestimate of the transmission rate.\n\nIf we could identify the conditions under which the rare larger clusters occur (high-risk individuals, activities, and settings) we could achieve a disproportionately large effect on reducing transmission by applying new measures in these settings. There are myriad possible reasons for overdispersion of transmission for SARS-CoV-2, including variation in viral load (Chen et al., 2020), behaviour, and number of contacts. But a key factor in higher dispersion with SARS-CoV-2 in comparison to other pathogens such as influenza is aerosolization (Goyal et al., 2021), which allows the index case to infect others in the room even if they are not a close contact. Properties of the setting may be very important, with some settings (cramped, poor ventilation) being especially conducive to transmission. It would be good to identify classrooms or schools where there is a high risk of larger clusters. For example, if data were available on the occupancy, ventilation standards, mask use, classroom size, distancing behaviour, and other features of classrooms, we could investigate how this related to the cluster size. Rapid tests may be especially good for identifying the most infectious individuals, given that they are sensitive to viral loads (Mina and Phillips, 2021), but additional data collection is likely needed to quantify setting-level risks.\n\nTwo important changes have happened since the majority of the data here was collected. Firstly, in the jurisdictions studied, effective vaccines have been developed and deployed for those aged 5 and up (The New York Times, 2020). There are several ways in which this may effect cluster sizes in the school setting. To the extent that the general population (including adults) being vaccinated reduces incidence of COVID (Wilder-Smith and Mulholland, 2021; Leshem and Wilder-Smith, 2021; Mallapaty, 2021), there will be fewer introductions of SARS-CoV-2 into the classroom, and so fewer exposures will occur leading to fewer clusters. This effect may be dampened by relaxation of distancing and other measures that were keeping COVID-19 at bay and are no longer necessary in the context of vaccination. The distribution of cluster sizes when clusters do occur will also change: many students who might otherwise be infected will be protected by the vaccine, others who are vaccinated but infected (breakthrough infection) may have reduced symptoms and therefore may not be detected. We therefore expect the mean cluster size to be reduced by vaccination, in age ranges where vaccination has been deployed. It is unclear what the consequences will be for the dispersion.\n\nSecondly, new, more transmissible variants of SARS-CoV-2 have emerged (CDC, 2021a), most notably the Alpha variant, the Delta variant, the Omicron variant, and most recently the BA.2 strain of the Omicron variant, each with a substantially higher transmissibility than its predecessors. A natural way to implement this change in our model is to multiply $R_{c}$ by an appropriate factor, boosting the size of clusters, without changing the dispersion parameter $k$. Data from the period in which Delta was the prevalent strain is not available, but schools in the Canada and the US saw resurgences in clusters in schools around school openings (Cravey, 2021; Star staff wire services, 2021; CNN, 2021).\n\nOur data and model have some limitations. The data rely on crowdsourcing, and there is reason to believe that reporting is incomplete. Inequity may effect data collection, as wealthier districts are more likely to have the resources to identify and track transmission. In general, larger clusters may be more likely to be reported. In the modelling, we assumed a Poisson random variable for the cluster size, with an underlying gamma-distributed rate variable. This is a flexible model allowing for considerable overdispersion, but it is simple and does not explicitly handle complexities such as the differences between elementary and high schools. Our estimates of the transmission rate were derived (where feasible) from a model with a fixed number of hours that the index case would be infectious in the classroom, and fixed class sizes. Accounting for variation in these would result in more variability in the estimates.\n\nA major limitation of our analysis is how we assigned cases to clusters. Since the only data available was the number of cases reported on a given day at a school, we put cases in the same cluster if they occurred within 7 days of each other. The choice of 7 days was informed by the serial interval of COVID-19, but unavoidably, some cases will have been put in clusters that were not linked by transmission, whereas other that were linked were not put in the same cluster. Furthermore, we assumed that all clusters consisted of an index case and a number of other cases directly infected by the index case. In reality, there may be longer chains of transmission. Any of these assumptions may bias our estimates of the distribution of $\u03bd$ and $\\beta$. Finally, our illustrative modelling of the impact of interventions was simple, and used simple assumptions for the impacts of masking, distancing, and cohorts (bubbling). Our estimates of the per-contact transmission rate per unit time could, however, be used in more sophisticated simulation modelling to compare interventions.\n\nDespite these limitations, our approach has distinct advantages. We have developed estimates of the person-to-person transmission rate derived directly from data. The data we use (cluster sizes) are relatively easy to access. This approach does not require individual-level data or contact tracing information, which are often not available; individuals may be identifiable and data are held within public health institutions. However, we note that if it were available, contact tracing data would be an excellent gold standard against which to check our assumptions about cluster identification. Our estimation approach, together with cluster size data, offers a high-resolution view of transmission: we can estimate the distribution of cluster sizes in specific settings, accounting for reporting and overdispersion, and in some contexts we can estimate the transmission rate, all without requiring either individual-level data or assumptions on transmission parameters such as the serial interval (see, in contrast, Cori et al., 2013; Wallinga and Teunis, 2004, which require serial interval estimates). The results offer context-specific tools to simulate interventions in particular settings (here, schools). The methods are readily generalizable to other structured settings, such as workplace outbreaks where workplaces are similar in size and structure. Our results also suggest the need for data collection activities that can relate cluster sizes to setting variables such as occupancy, density, ventilation, activity, and distancing behaviour. Ultimately this would provide the data needed to design interventions that best reduce school and/or workplace transmission.\n",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "c07bb42f-989b-46c1-bbba-2306cda1cf56",
+      "submission_id": "bdc942db-945e-4f5f-8ff5-917903d1e7ef",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joshua T Schiffer, https://ror.org/007ps6h72 Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76174.sa0](https://doi.org/10.7554/eLife.76174.sa0)\n\nThis paper provides an important novel methodology to understand the mode of spread of SARS-CoV-2 in schools given sparse data.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Joshua T Schiffer, https://ror.org/007ps6h72 Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76174.sa1](https://doi.org/10.7554/eLife.76174.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"COVID-19 clusters in schools: frequency, size, and transmission rates from crowdsourced exposure reports\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Joshua T Schiffer as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Please submit a revised version that addresses these concerns directly. Although we expect that you will address these comments in your response letter, we also need to see the corresponding revision clearly marked in the text of the manuscript. Some of the reviewers' comments may seem to be simple queries or challenges that do not prompt revisions to the text. Please keep in mind, however, that readers may have the same perspective as the reviewers. Therefore, it is essential that you attempt to amend or expand the text to clarify the narrative accordingly.\n\nEssential revisions:\n\n1) Please reconstruct how the comparison between the US and Canadian data is done in the paper. All 3 reviewers agreed that the US data likely is hampered by overrepresentation of large super spreader events, leading to biased and inaccurate projections of the over-dispersion distribution. Please weight the 3 reviewers' suggestion for clarifying the presentation of this data.\n\n2) Please either remove the time to detection analysis or incorporate a method to account for the inherent high degree of stochasticity of this outcome.\n\n3) Please define cluster more clearly.\n\n4) Please provide a more complete discussion about the true value of q and how this might impact model conclusions.\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 Figure 1: x-axis needs labels and ticks to denote quantity.\n\n\u2013 Please remove \"not all the news is good for children\": this language is too casual.\n\n\u2013 All figures: increases font size substantially please.\n\n\u2013 Figure 2: Please add an actual correlation plot with rho coefficients and p-values to formalize what appears to be true by eye. This will be so helpful to demonstrate that the US data is insufficient for the model used in the paper (Pardon the slang but\u2026 garbage in, garbage out). The authors can then emphasize the point that appropriately thorough data is necessary to model crowd sourced data of this nature.\n\n\u2013 Table 1: given overdispersion, the median, interquartile range and full range of cluster size would be more informative than just the mean. Please add percentages to schools with multiple clusters column.\n\n\u2013 Keeping in mind that this is a generalist journal., it would be helpful to show theoretical distributions with varying values of k as a supplemental figure. This would provide valuable context for Figure 3 and how to interpret k (in addition to Figure 4 which is great).\n\n\u2013 The assumption that q=0.75 should be cited, or better yet, acknowledged up front as uncertain. The sensitivity analysis with varying values of q should be emphasized more when q is introduced.\n\n\u2013 Figure 3: would it be possible to show the median and mean on the x-axis?\n\n\u2013 Figure 4: why not include all provinces in Canada?\n\n\u2013 Figure 5 is a bit difficult to interpret except for the most statistical minded among us, and could be a supplement (both the v and \u03b2 parameters) or not included at all.\n\n\u2013 For all figures comparing US and Canada data, please normalize the y-axes so comparisons can be made by eye more easily.\n\n\u2013 When T < \u03c4, how is\u201dmingling\u201d implemented? Does the number of contacts switch with movement from \u201cclassroom to classroom\u201d. This needs greater explanation.\n\n\u2013 Figure 7 is interesting and one of the coolest parts of the paper but lacks sufficient detail. For reduced \u03b2, increased social distancing and bubbling, the distribution is impacted to various degrees but is the total number of cases lower? Is the variance in the distributions lower? Are these differences statistically significant?\n\n\u2013 Figure 7: The selection of R=0.5 and R=5 seems perhaps too extreme. Most persisting variants have been associated with R~1 (0.8-1.2) whereas omicron was 3-5 fold higher, albeit probably lower overall in classrooms. I would suggest at least testing an intermediate set of R values. Maybe 1 and 3?\n\n\u2013 Please mention the omicron variant in the discussion.\n\n\u2013 The authors make the excellent point that the crowd sourcing method is cheaper and easier than contact tracing or phylogenetic approaches but should also mention that contact tracing would be a wonderful gold-standard to validate the accuracy of crowd sourcing in terms of identifying cluster size.\n\n\u2013 Figure 8: this would be easier to interpret of the panels were square rather than rectangular.\n\nReviewer #2 (Recommendations for the authors):\n\nThe major concern with the presented analysis is the use of sparse and potentially biased data in the analysis. The authors use compiled reports of case cluster sizes in schools across a number of jurisdictions, but have no methodological means to correct for issues clearly present in the underlying data. For example, most schools in the US only report a single cluster in the dataset, which likely biases the US dataset in a number of significant ways. This is contrasted with Canadian data where almost all schools report multiple clusters. The figures showing incident cases in schools and the community recapitulates this point with the US data showing no clear relationship between schools and the community compared with the Canadian data that shows a clear relationship. In either the case where school clusters contribute to transmission in the community or clusters are simply a byproduct of community transmission, we would expect to see correlation between the incident cases. While the authors mention these limitations to their study, I believe these data issues may present an existential issue with the current analysis as it makes it nearly impossible to interpret the results (even though I admit that the authors are fairly careful in their own framing). For example, it will be natural to wonder why Florida's Rc is nearly 8 while Texas's is around 2, and I believe there is very limited to say about the situation without controlling for underlying issues in the data between the states. I would suggest that the authors consider major methodological changes that might address the potential biases in the analysis. Perhaps limiting the analysis solely to Canadian data could also solve this issue, though there are likely biases in the dataset to consider as well.\n\nThe paper focuses on describing characteristics of clusters of cases in schools, and the authors give some details on the number of clusters in their datasets, however we never get a proper definition of what is considered a cluster here. According to the text on pages 11 and 12 it seems that an assumption is that all secondary cases in a cluster are infected by the same seed case (directly or indirectly). However, the interpretation of the results generally consider it to be through the direct route, even though public health policies would diverge significantly. For example a cluster that was infected outside of the school environment but were detected in school (imagine a group of close friends) would be counted in the analysis for Rc which ultimately filters to an understanding of how mitigation measures in school could control outbreaks. Alternatively, a cluster of multiple generations sputtering along might be given a large Rc when the actual R_eff for transmission might be below or close to 1.\n\nThe cluster definition is extra important, because it also impacts the estimate of the transmission rate. The transmission rate estimation assumes all transmission is happening within schools and in a single generation. In cases where there is actually a chain of transmission, or when transmission is happening outside of the school setting the formula used to calculate \u03b2 does not hold. The authors partially acknowledge this by restricting the analysis to Canadian reports, but I think it should be more explicitly discussed in the manuscript either through an attempt to handle the complexity mathematically or with a larger discussion of the interpretation of the results.\n\nFinally, the authors use an ascertainment q=0.75, which seems high, at least for the United States reports. For the US, the CDC estimates 1 in 4 infections were reported for a period covering the authors dataset, and detection is even less likely in children who are more likely to be asymptomatic (e.g. Davies et al.). The authors mention they used an alternate model of ascertainment and running a sensitivity analysis on q, where results for q=0.5 are potentially different from the main text results. Given the very possibility that the actual value of q is in that range, I would urge that the authors revisit their main results taking this into account.\n\nReviewer #3 (Recommendations for the authors):\n\nProbably the most important observation here is that Canadian school cluster sizes and k parameters seem more consistent with a public health system that is accurately identifying (even small) school outbreaks, whereas the absence of single case outbreaks and the large fraction of very large outbreaks in the US data suggests a system which is calibrated to only identify (more obvious) superspreader events. Canada's per capita excess death rate during the pandemic has been notably lower (around 1/3) that seen in the US. Given that a relatively small contribution to mortality has come from pediatric cases, can the authors spell out a bit more explicitly how better surveillance may have blunted the pandemic's impact in Canada relative to the US?\n\nThank you for making the relevant data (https://github.com/PaulFredTupper/covid-19-clusters-in-schools/tree/main/schools_cluster_paper/datasets) and code accessible.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"COVID-19 cluster size and transmission rates in schools from crowdsourced case reports\" for further consideration by eLife. Your revised article has been evaluated by a Senior Editor and a Reviewing Editor.\n\nThe manuscript has been improved and is very close to satisfactory for acceptance but there are some remaining issues that need to be addressed, as outlined below:\n\n1. Please make the abstract more balanced between methodologic gains and scientific conclusions.\n\n2. Apply techniques to account for multiple generations of infection (or at least rerun the model assuming a smaller 4-5 day window to define clusters in line with the known serial interval) to ensure that this does not substantially impact the model's semi-quantitative conclusions.\n\nReviewer #1 (Recommendations for the authors):\n\nThank you for the extensive and extremely helpful changes to the article. It is well written, comprehensive and covers an important topic.\n\nReviewer #2 (Recommendations for the authors):\n\nI greatly appreciate the authors revisions in response to the reviewer comments. In my previous review, I had a comment about the definition of the cluster and multiple generations of transmission. Now that the authors have provided that definition I have one major comment remaining.\n\nThe authors responded to my comment with: \"These are indeed limitations of our analysis. We feel that we already addressed some of these limitations in the second-to-last paragraph of the discussion, but we have now added the following text as well: 'Furthermore, we assumed that all clusters consisted of an index case and a number of other cases directly infected by the index case. In reality, there may be longer chains of transmission. Any of these assumptions may bias our estimates of the distribution of \u03bd and \u03b2.'\"\n\nWithout strong evidence otherwise, I think the authors should address this concern within the analysis rather than simply a discussion. The definition of cluster now explicitly includes multiple transmission generations (through linking cases in successive weeks with one another). How many clusters have \"multiple generations\"? How does cluster size compare between single and multiple generation clusters? I imagine the multiple generation clusters are the largest ones, but it may not be the case.\n\nSince every cluster in the current analysis is finite and small (i.e. the size of the cluster is finite and not close to the herd immunity threshold of the school), the data suggest that the R within schools is less than 1, but the author's analysis suggests otherwise because the analysis focuses solely on the index case transmission (e.g. not accounting for the fact that for a cluster of size 9 a single individual infects 8 individuals but each of those 8 individuals are not transmitting further). There is quite a bit of literature about stuttering chains of transmission (e.g. blumberg and lloyd-smith's work for monkeypox) that could be appropriate for addressing this issue. I believe the authors could adapt their analysis to account for multiple generations explicitly using those methods or in a different way the authors deem appropriate. This point is important because ultimately it impacts the interpretation of R, the estimation of \u0392 for the subsequent analyses, and potentially the impact of interventions.\n",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "796f2e25-e8de-456d-838f-f7695c786bc7",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C1",
+      "claim": "Rates of SARS-CoV-2 infection among children are similar to those in the adult population in most jurisdictions.",
+      "claim_type": "EXPLICIT",
+      "source": "In most jurisdictions rates of SARS-CoV-2 infection among children are similar to those in the adult population (Centers for Disease Control and Prevention, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Centers for Disease Control and Prevention, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "7fd7550e-dc68-48b7-a240-80440de75bf0",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C2",
+      "claim": "The infection fatality rate (IFR) of COVID for age 10 was estimated to be 0.002%.",
+      "claim_type": "EXPLICIT",
+      "source": "the infection fatality rate (IFR) of COVID for at age 10 was estimated to be 0.002% versus an IFR of 0.01% at age 25, and 0.4% at age 55, for the original SARS-CoV-2 virus present in 2020 (Levin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Levin et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "a90b3590-4fdb-497b-995c-b6e0dd9ad277",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C3",
+      "claim": "The infection fatality rate (IFR) of COVID for age 25 was estimated to be 0.01%.",
+      "claim_type": "EXPLICIT",
+      "source": "the infection fatality rate (IFR) of COVID for at age 10 was estimated to be 0.002% versus an IFR of 0.01% at age 25, and 0.4% at age 55, for the original SARS-CoV-2 virus present in 2020 (Levin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Levin et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "a4623d27-fc5e-46b2-8f99-0032bc9d348a",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C4",
+      "claim": "The infection fatality rate (IFR) of COVID for age 55 was estimated to be 0.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "the infection fatality rate (IFR) of COVID for at age 10 was estimated to be 0.002% versus an IFR of 0.01% at age 25, and 0.4% at age 55, for the original SARS-CoV-2 virus present in 2020 (Levin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Levin et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "afdbed74-0812-48e3-a190-b22fe29bab82",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C5",
+      "claim": "Cases are more often asymptomatic among children.",
+      "claim_type": "EXPLICIT",
+      "source": "Cases are more often asymptomatic among children, less likely to require hospitalization and ICU care (Centers for Disease Control and Prevention, 2021), and less likely to be classified as long COVID (Sudre et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Centers for Disease Control and Prevention, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "7cdc4044-6dc7-4119-b350-3ab0f7f1f154",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C6",
+      "claim": "Cases among children are less likely to require hospitalization and ICU care.",
+      "claim_type": "EXPLICIT",
+      "source": "Cases are more often asymptomatic among children, less likely to require hospitalization and ICU care (Centers for Disease Control and Prevention, 2021), and less likely to be classified as long COVID (Sudre et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Centers for Disease Control and Prevention, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "269a0058-2b3f-4306-b200-fe934339ee0c",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C7",
+      "claim": "Cases among children are less likely to be classified as long COVID.",
+      "claim_type": "EXPLICIT",
+      "source": "Cases are more often asymptomatic among children, less likely to require hospitalization and ICU care (Centers for Disease Control and Prevention, 2021), and less likely to be classified as long COVID (Sudre et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sudre et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "acb9bf68-5bbb-44a1-8bc4-27f181474eff",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C8",
+      "claim": "MIS-C is a serious condition sometimes resulting from SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, MIS-C is a serious condition sometimes resulting from SARS-CoV-2 infection (CDC, 2021a), and myocarditis happens more frequently as a side effect of infection among younger individuals (Singer et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to CDC, 2021a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "04e4824d-952d-4919-b6d8-473a220bef3a",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C9",
+      "claim": "Myocarditis happens more frequently as a side effect of infection among younger individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, MIS-C is a serious condition sometimes resulting from SARS-CoV-2 infection (CDC, 2021a), and myocarditis happens more frequently as a side effect of infection among younger individuals (Singer et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Singer et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "aa9fc158-1313-4496-ab1a-9f318454e5e9",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C10",
+      "claim": "Studies that have looked at the effect of school closures on the overall rate of SARS-CoV-2 transmission find mixed results.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies that have looked at the effect of school closures on the overall rate of SARS-CoV-2 transmission find mixed results: some find substantial reduction in community transmission when schools are closed, and others small or no effect (Walsh et al., 2021; Chernozhukov et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Walsh et al., 2021 and Chernozhukov et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "8ed5312e-7c75-436c-9c41-8525eed88acc",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C11",
+      "claim": "Some studies find substantial reduction in community transmission when schools are closed.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies that have looked at the effect of school closures on the overall rate of SARS-CoV-2 transmission find mixed results: some find substantial reduction in community transmission when schools are closed, and others small or no effect (Walsh et al., 2021; Chernozhukov et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Walsh et al., 2021 and Chernozhukov et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "b8178f1c-d9ce-49f0-b22a-b86cf03807da",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C12",
+      "claim": "Some studies find small or no effect of school closures on community transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies that have looked at the effect of school closures on the overall rate of SARS-CoV-2 transmission find mixed results: some find substantial reduction in community transmission when schools are closed, and others small or no effect (Walsh et al., 2021; Chernozhukov et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Walsh et al., 2021 and Chernozhukov et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "8c4e4865-c41a-4e67-b985-f1da220f6ceb",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C13",
+      "claim": "Children may be less likely to transmit SARS-CoV-2 to each other, either by being less infectious or by being less susceptible.",
+      "claim_type": "EXPLICIT",
+      "source": "One explanation is that children may be less likely to transmit SARS-CoV-2 to each other, either by being less infectious or by being less susceptible (Dattner et al., 2021; Viner et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dattner et al., 2021 and Viner et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "5ac8c23c-db40-4d6c-86c1-3550aaca3605",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C14",
+      "claim": "Cases were assigned to clusters based on being at the same school and being reported within 7 days of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "We then assigned cases to clusters based on being at the same school and being reported within 7 days of each other; if the difference in date between two cases was less than or equal to 7 days, or they could be linked by a sequence of such cases, they were put in the same cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the methodology used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "8f4ce580-bd72-4985-97be-f5131e672d87",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C15",
+      "claim": "The choice of 7 days for cluster assignment was based on estimates of the serial interval for COVID-19 of approximately 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose 7 days on the basis of estimates of the serial interval for COVID-19 of approximately 5 days (Rai et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rai et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "20c8e30b-3a2e-415c-bf64-1ab00bd85aa8",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C16",
+      "claim": "The model assumes exposure events occur according to a Poisson process with variable rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In a given jurisdiction, we assume exposure events occur according to a Poisson process with variable rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes a modeling assumption",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "9531d894-6226-4de5-97f1-19fe6c49197a",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C26",
+      "claim": "The value q=0.75 is based on a meta-analysis reporting ascertainment fractions for high-income regions in the Americas between 66% and 85%.",
+      "claim_type": "EXPLICIT",
+      "source": "We base this value on the meta-analysis (Bobrovitz et al., 2021) which reports ascertainment fractions for high-income regions in the Americas between 66% (in the last quarter of 2020) and 85% (in the second quarter of 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bobrovitz et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "6d84a241-3b8a-4423-891b-50dc51e74d83",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C27",
+      "claim": "In Manitoba, there were 1754 clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "90f4a7f5-ccac-409a-ba7a-c17b223deb31",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C28",
+      "claim": "In Saskatchewan, there were 1211 clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "5cd5a59e-3786-4b95-b7ee-076a27e37f55",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C29",
+      "claim": "In Ontario, there were 8482 clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "17368b73-d11d-43c7-9211-b86bc7e2a8e8",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C30",
+      "claim": "In Alberta, there were 5032 clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "11edfbf1-e52f-43e3-81c0-be26626267fd",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C31",
+      "claim": "In Manitoba, 542 schools appeared in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "4b9ecf64-4545-41a1-9f57-1474284b14fa",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C32",
+      "claim": "In Saskatchewan, 466 schools appeared in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "86da22ab-0466-4889-8a51-da4c89d36d25",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C33",
+      "claim": "In Ontario, 3337 schools appeared in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "982088d1-cec6-4add-9b2d-6d9b5ab683ac",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C34",
+      "claim": "In Alberta, 1537 schools appeared in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "f84e9a88-d5d2-431e-8086-19879e0d437f",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C35",
+      "claim": "In Manitoba, 73% of schools had multiple clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "8da50eaa-2b1b-4892-a723-ac7d7f60e705",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C36",
+      "claim": "In Saskatchewan, 63% of schools had multiple clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "086de823-9bcc-4fbe-9874-d98d7af143ac",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C37",
+      "claim": "In Ontario, 64% of schools had multiple clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "11ccb874-2641-4543-bb33-3315e63d3f92",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C38",
+      "claim": "In Alberta, 75% of schools had multiple clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "207277a2-db09-4245-a815-6a7f8dc97694",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C39",
+      "claim": "In Manitoba, 58% of clusters had one case.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "a539e542-4d4d-4211-9510-ca7aa96ede22",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C40",
+      "claim": "In Saskatchewan, 66% of clusters had one case.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "97df886e-deb8-488d-a442-af1b2f41e1cc",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C41",
+      "claim": "In Ontario, 63% of clusters had one case.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "f00bda6e-cb2d-49e2-9bf5-5a2a69fa0cc2",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C42",
+      "claim": "In Alberta, 47% of clusters had one case.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "2461c5cf-3cce-4220-ad5a-a5b649b16ba5",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C43",
+      "claim": "In Manitoba, the mean observed cluster size was 2.16.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "346dd717-6d18-4a6c-b850-f3607c7042f8",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C44",
+      "claim": "In Saskatchewan, the mean observed cluster size was 1.70.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "0ceda91e-bbe6-469b-abc4-fba2f56d6064",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C45",
+      "claim": "In Ontario, the mean observed cluster size was 1.83.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "8ef0ed53-ede4-4fe6-8f15-5251d341f1f4",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C46",
+      "claim": "In Alberta, the mean observed cluster size was 2.45.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "36bd1675-488b-4a24-a5b5-d941a0442c63",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C47",
+      "claim": "In Manitoba, the maximum observed cluster size was 44.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "ce8a0913-b0b7-4d86-9d90-81f52a6e2387",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C48",
+      "claim": "In Saskatchewan, the maximum observed cluster size was 16.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "07e9f505-306a-4ff1-8435-46c0fc47cda9",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C49",
+      "claim": "In Ontario, the maximum observed cluster size was 50.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "7b71c3da-a457-4f00-8607-b494cd3974fb",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C50",
+      "claim": "In Alberta, the maximum observed cluster size was 108.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "92a15f4b-d7f0-4318-b1a2-3c8073ad7efe",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C51",
+      "claim": "There is an apparent correspondence between the rate of clusters per day and peaks in COVID incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an apparent correspondence between the two time series, with peaks in rate of clusters per day occuring near peaks in incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from Figure 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "d9e6f2e4-f670-410d-bf5a-bf92f506506b",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C55",
+      "claim": "A window of 4 days leads to smaller cluster sizes (at most 18% smaller).",
+      "claim_type": "EXPLICIT",
+      "source": "A window of 4 days leads to smaller cluster sizes (at most 18% smaller) and a window of 10 days leads to larger cluster sizes (at most 11% larger).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis described in Appendix 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "ea90e925-eaaa-4278-9a87-fc049788ec83",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C56",
+      "claim": "A window of 10 days leads to larger cluster sizes (at most 11% larger).",
+      "claim_type": "EXPLICIT",
+      "source": "A window of 4 days leads to smaller cluster sizes (at most 18% smaller) and a window of 10 days leads to larger cluster sizes (at most 11% larger).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis described in Appendix 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "5f5b605d-c269-4bf5-a15e-490180caeae9",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C59",
+      "claim": "In all four provinces, more than 65% of non-index cases occur in the 20% largest clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our model with parameters estimated from the data, in all four provinces (i) more than 65% of non-index cases occur in the 20% largest clusters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the model with estimated parameters",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "a692225c-d44d-4ebd-9ee2-9776c279cdda",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C60",
+      "claim": "Reducing instantaneous transmission rate is effective in reducing the total number of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our model with parameters estimated from the data, in all four provinces (i) more than 65% of non-index cases occur in the 20% largest clusters, and (ii) reducing instantaneous transmission rate and the number of contacts a student has at any given time are effective in reducing the total number of cases, whereas strict bubbling (keeping contacts consistent over time) does not contribute much to reduce cluster sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "090bde7b-93e3-4283-9da3-d6c94a8e18d8",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C61",
+      "claim": "Reducing the number of contacts a student has at any given time is effective in reducing the total number of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our model with parameters estimated from the data, in all four provinces (i) more than 65% of non-index cases occur in the 20% largest clusters, and (ii) reducing instantaneous transmission rate and the number of contacts a student has at any given time are effective in reducing the total number of cases, whereas strict bubbling (keeping contacts consistent over time) does not contribute much to reduce cluster sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "10d0d3f6-957b-49b7-a97e-87f65eaa9155",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C62",
+      "claim": "Strict bubbling (keeping contacts consistent over time) does not contribute much to reduce cluster sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our model with parameters estimated from the data, in all four provinces (i) more than 65% of non-index cases occur in the 20% largest clusters, and (ii) reducing instantaneous transmission rate and the number of contacts a student has at any given time are effective in reducing the total number of cases, whereas strict bubbling (keeping contacts consistent over time) does not contribute much to reduce cluster sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "1ee2a1a9-f571-45a3-ab26-0d7ccc2baaed",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C63",
+      "claim": "Strict bubbling is predicted to be more valuable in scenarios with substantially higher transmission rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict strict bubbling to be more valuable in scenarios with substantially higher transmission rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "7f28a01f-af48-4f69-9e53-111280287918",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C64",
+      "claim": "Both reducing transmission and social distancing are effective in reducing the total number of cases under parameter choice Rc=1 and k=0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that both reducing transmission and social distancing are effective in reducing the total number of cases, whereas bubbling does not contribute much to reduce cluster sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results shown in Figure 7 (left)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "9b7e03c5-66cf-43ba-af6b-684f5ae3a7d4",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C65",
+      "claim": "Bubbling does not contribute much to reduce cluster sizes under parameter choice Rc=1 and k=0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that both reducing transmission and social distancing are effective in reducing the total number of cases, whereas bubbling does not contribute much to reduce cluster sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results shown in Figure 7 (left)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "05f5aa2a-4a0e-4b95-b589-dcf9f6522a1c",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C67",
+      "claim": "In each of the provinces considered, the majority of school transmission occurs in a small number of classrooms.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that in each of the provinces we consider, the majority of school transmission occurs in a small number of classrooms, with the top 20% of clusters containing between 70% and 80% of the secondary cases in school settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the model with estimated parameters",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "a59175be-3922-4c79-b3ec-0aa111bf038c",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C68",
+      "claim": "The top 20% of clusters contain between 70% and 80% of the secondary cases in school settings.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that in each of the provinces we consider, the majority of school transmission occurs in a small number of classrooms, with the top 20% of clusters containing between 70% and 80% of the secondary cases in school settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the model with estimated parameters",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "a0ceb4b1-610a-4eea-9949-0af877545ed3",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C69",
+      "claim": "With parameters estimated from Canadian jurisdictions during the 2020\u20132021 school year, interventions that reduce transmission rates (such as masking) are more effective than strategies aimed at keeping sets of contacts consistent (such as bubbling).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that with parameters estimated from Canadian jurisdictions during the 2020\u20132021 school year, interventions that reduce transmission rates (such as masking) and reduce number of contacts at any one time (class size reduction), are more effective than strategies aimed at keeping sets of contacts consistent (such as bubbling).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "0268d569-86ac-421e-b98c-af1af559d81d",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C70",
+      "claim": "With parameters estimated from Canadian jurisdictions during the 2020\u20132021 school year, interventions that reduce number of contacts at any one time (class size reduction) are more effective than strategies aimed at keeping sets of contacts consistent (such as bubbling).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that with parameters estimated from Canadian jurisdictions during the 2020\u20132021 school year, interventions that reduce transmission rates (such as masking) and reduce number of contacts at any one time (class size reduction), are more effective than strategies aimed at keeping sets of contacts consistent (such as bubbling).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "4be24fdf-b8c4-463b-8de3-f4a715d6af46",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C71",
+      "claim": "Overdispersion in transmission of SARS-CoV-2 and other infectious diseases is well documented.",
+      "claim_type": "EXPLICIT",
+      "source": "Overdispersion in transmission of SARS-CoV-2 and other infectious diseases is well documented (e.g., Woolhouse et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Woolhouse et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "7ce1ac70-9526-4373-bcf2-9a9326480dc6",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C72",
+      "claim": "For SARS in 2003, Lloyd-Smith et al., 2005, estimated that 20% of the cases were responsible for almost 90% of the transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "For SARS in 2003, Lloyd-Smith et al., 2005, estimated that 20% of the cases were responsible for almost 90% of the transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lloyd-Smith et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "d07a61ed-ca2f-41de-9ce9-cce98b3842cb",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C80",
+      "claim": "A key factor in higher dispersion with SARS-CoV-2 in comparison to other pathogens such as influenza is aerosolization.",
+      "claim_type": "EXPLICIT",
+      "source": "But a key factor in higher dispersion with SARS-CoV-2 in comparison to other pathogens such as influenza is aerosolization (Goyal et al., 2021), which allows the index case to infect others in the room even if they are not a close contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goyal et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "01daf134-7e72-45b4-9eab-768050af39a1",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C81",
+      "claim": "Aerosolization allows the index case to infect others in the room even if they are not a close contact.",
+      "claim_type": "EXPLICIT",
+      "source": "But a key factor in higher dispersion with SARS-CoV-2 in comparison to other pathogens such as influenza is aerosolization (Goyal et al., 2021), which allows the index case to infect others in the room even if they are not a close contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goyal et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "f289926d-fe97-44d8-8c3b-6dd0380df3ab",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C82",
+      "claim": "Effective vaccines have been developed and deployed for those aged 5 and up in the jurisdictions studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, in the jurisdictions studied, effective vaccines have been developed and deployed for those aged 5 and up (The New York Times, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to The New York Times, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "8a2cd1a9-adf5-4aa0-8abf-6b562d1f2342",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C83",
+      "claim": "Vaccination of the general population reduces incidence of COVID.",
+      "claim_type": "EXPLICIT",
+      "source": "To the extent that the general population (including adults) being vaccinated reduces incidence of COVID (Wilder-Smith and Mulholland, 2021; Leshem and Wilder-Smith, 2021; Mallapaty, 2021), there will be fewer introductions of SARS-CoV-2 into the classroom, and so fewer exposures will occur leading to fewer clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wilder-Smith and Mulholland, 2021; Leshem and Wilder-Smith, 2021; Mallapaty, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "9cf4d2a2-d283-43d8-8728-2dde388072c8",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C84",
+      "claim": "New, more transmissible variants of SARS-CoV-2 have emerged, including the Alpha, Delta, and Omicron variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, new, more transmissible variants of SARS-CoV-2 have emerged (CDC, 2021a), most notably the Alpha variant, the Delta variant, the Omicron variant, and most recently the BA.2 strain of the Omicron variant, each with a substantially higher transmissibility than its predecessors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to CDC, 2021a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "69eb463c-fa6f-4203-bdda-abbc450d410b",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C85",
+      "claim": "The Alpha, Delta, and Omicron variants each have a substantially higher transmissibility than their predecessors.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, new, more transmissible variants of SARS-CoV-2 have emerged (CDC, 2021a), most notably the Alpha variant, the Delta variant, the Omicron variant, and most recently the BA.2 strain of the Omicron variant, each with a substantially higher transmissibility than its predecessors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to CDC, 2021a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "90b50d8d-5849-4f6d-95f4-588abbbd343f",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C86",
+      "claim": "The data rely on crowdsourcing, and there is reason to believe that reporting is incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "The data rely on crowdsourcing, and there is reason to believe that reporting is incomplete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of data limitation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "c449fcdf-ef53-4a02-a65a-714618d10977",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C87",
+      "claim": "Wealthier districts are more likely to have the resources to identify and track transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Inequity may effect data collection, as wealthier districts are more likely to have the resources to identify and track transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about potential bias in data collection",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "305f584e-8b10-4e4c-ba8b-05a733a56374",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "claim_id": "C88",
+      "claim": "Larger clusters may be more likely to be reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, larger clusters may be more likely to be reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about potential reporting bias",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5abdd0a1-fd7c-48b5-80a6-c84a6a01e61c",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "COVID-19 infection rates in children are similar to adults, but children experience substantially lower severity, with lower infection fatality rates, fewer hospitalizations, and less long COVID, though serious complications like MIS-C and myocarditis can occur.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 are all supported by appropriate citations to CDC and peer-reviewed literature. These claims establish the epidemiological context for the study by characterizing COVID-19 in children versus adults. The claims are internally consistent and represent well-established findings from prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "83f9df80-e3fa-4b5e-9287-bf10ff6062bd",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The effect of school closures on SARS-CoV-2 transmission is unclear, with studies showing mixed results ranging from substantial reduction to minimal effect, possibly because children may be less likely to transmit the virus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 accurately summarize the state of prior research on school transmission, supported by appropriate citations. These claims establish the scientific rationale for the current study by highlighting uncertainty in the literature about school transmission dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "db98a5ce-9fc0-458e-a76e-9d818478e811",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cases were assigned to clusters if they occurred at the same school within 7 days of each other, based on the estimated 5-day serial interval for COVID-19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 clearly describe the cluster definition methodology. The 7-day window is justified by reference to the serial interval (C15), though the authors acknowledge this approach has limitations (discussed elsewhere). The methodology is transparent and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Descriptive statistics from four Canadian provinces show substantial variation in cluster characteristics, with 1211-8482 clusters across 466-3337 schools, 47-66% of clusters having only one case, mean cluster sizes of 1.70-2.45, and maximum cluster sizes ranging from 16 to 108 cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C50 present descriptive statistics directly from Table 1 and are straightforward data summaries. The data show considerable heterogeneity across provinces in both the number of clusters and their size distributions, providing the empirical foundation for subsequent modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "7953d9a4-f12f-4e5b-ae12-1e113be051e6",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The rate of school clusters per day corresponds temporally with peaks in overall COVID-19 incidence in the provinces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 describes an observed pattern in Figure 3 showing temporal correlation between school cluster rates and community incidence. This is a descriptive observation that provides face validity for the data, though the authors appropriately do not claim causation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "dda048c0-f3e6-4552-b6a0-2c9f82ea51a8",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model assumes exposure events follow a Poisson process and uses an ascertainment rate of 0.75 based on meta-analysis estimates for high-income regions in the Americas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C26 describe key modeling assumptions. The Poisson process assumption (C16) is standard for epidemic modeling. The ascertainment rate of 0.75 (C26) is justified by citation to appropriate meta-analysis, though the authors acknowledge uncertainty in this parameter in Appendix 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "ca0783ee-5016-4c4e-a851-43af57d037e6",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sensitivity analysis shows that using a 4-day window reduces cluster sizes by at most 18%, while a 10-day window increases them by at most 11%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 report sensitivity analyses for the cluster definition window. These results demonstrate that the main findings are relatively robust to the choice of time window, though the authors appropriately acknowledge this as a source of uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "467f1e85-81ea-4cce-9170-403c012c9cfb",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Model estimates indicate that in all four provinces, more than 65% of non-index cases occur in the 20% largest clusters, with the top 20% of clusters containing 70-80% of secondary cases, demonstrating substantial overdispersion in school transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C67-C68 present a major finding about overdispersion derived from the fitted model. The estimates are based on maximum likelihood fitting to observed cluster size distributions with explicit ascertainment modeling. The finding is consistent across all four provinces and is visualized in Figure 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "17f0831c-f240-42d4-ba22-186a6510799c",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Model simulations suggest that reducing transmission rates (e.g., masking) and reducing the number of contacts (e.g., class size reduction) are effective interventions for reducing cases, while strict bubbling contributes little under the estimated 2020-2021 transmission parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C62, C64-C65, C69-C70 present simulation results about intervention effectiveness. While the simulations are based on parameter estimates from real data, they rely on a simplified transmission model with assumed values for contact time (T=12hr), class size (n=25), and other parameters. The model does not account for heterogeneity in school settings, age-specific transmission, or other complexities. The conclusions are specific to the parameter regime estimated for 2020-2021 and may not generalize. The authors acknowledge model limitations but the extent to which simplified assumptions affect conclusions is unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "cd2947ff-d7ea-441f-be6d-fe2c59ecb549",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Strict bubbling is predicted to be more valuable in scenarios with substantially higher transmission rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 is a prediction based on simulation results shown in Figure 7 (right panel). While the simulation shows this pattern for Rc=2.5, this is a theoretical prediction for a hypothetical scenario, not an empirical finding. The prediction depends on the validity of the simplified transmission model and its assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "3f73f393-9a0b-4858-8af6-7d3d869410b1",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Overdispersion in SARS-CoV-2 transmission is well-documented, with aerosolization being a key factor distinguishing SARS-CoV-2 from other pathogens like influenza by allowing transmission beyond close contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72, C80-C81 summarize prior literature on overdispersion and transmission mechanisms. All claims are supported by appropriate citations. These provide important context for interpreting the overdispersion findings in schools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "682001e7-92ef-4d8c-bcd2-582e8e51c3a0",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Two major changes occurred after data collection: vaccine deployment for ages 5+ and emergence of more transmissible variants (Alpha, Delta, Omicron), which would be expected to have opposing effects on cluster sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 describe important contextual changes that occurred after the study period, all supported by appropriate citations. The authors appropriately discuss how these changes would affect the applicability of their findings to future scenarios.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    },
+    {
+      "id": "d762ff95-c905-4533-ac2a-15b7b73d96d9",
+      "content_id": "114edee8-7ac6-408a-81ec-b4a9e520f9f7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The crowdsourced data have important limitations including incomplete reporting, potential inequity in data collection favoring wealthier districts, and possible bias toward reporting larger clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 acknowledge important data limitations. C86 is a factual statement about the data source. C87-C88 are reasonable inferences about potential biases, appropriately presented as limitations rather than definitive findings. This transparent discussion of limitations is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:36:46.333834Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "796f2e25-e8de-456d-838f-f7695c786bc7",
+      "result_id": "5abdd0a1-fd7c-48b5-80a6-c84a6a01e61c"
+    },
+    {
+      "claim_id": "7fd7550e-dc68-48b7-a240-80440de75bf0",
+      "result_id": "5abdd0a1-fd7c-48b5-80a6-c84a6a01e61c"
+    },
+    {
+      "claim_id": "a90b3590-4fdb-497b-995c-b6e0dd9ad277",
+      "result_id": "5abdd0a1-fd7c-48b5-80a6-c84a6a01e61c"
+    },
+    {
+      "claim_id": "a4623d27-fc5e-46b2-8f99-0032bc9d348a",
+      "result_id": "5abdd0a1-fd7c-48b5-80a6-c84a6a01e61c"
+    },
+    {
+      "claim_id": "afdbed74-0812-48e3-a190-b22fe29bab82",
+      "result_id": "5abdd0a1-fd7c-48b5-80a6-c84a6a01e61c"
+    },
+    {
+      "claim_id": "7cdc4044-6dc7-4119-b350-3ab0f7f1f154",
+      "result_id": "5abdd0a1-fd7c-48b5-80a6-c84a6a01e61c"
+    },
+    {
+      "claim_id": "269a0058-2b3f-4306-b200-fe934339ee0c",
+      "result_id": "5abdd0a1-fd7c-48b5-80a6-c84a6a01e61c"
+    },
+    {
+      "claim_id": "acb9bf68-5bbb-44a1-8bc4-27f181474eff",
+      "result_id": "5abdd0a1-fd7c-48b5-80a6-c84a6a01e61c"
+    },
+    {
+      "claim_id": "04e4824d-952d-4919-b6d8-473a220bef3a",
+      "result_id": "5abdd0a1-fd7c-48b5-80a6-c84a6a01e61c"
+    },
+    {
+      "claim_id": "aa9fc158-1313-4496-ab1a-9f318454e5e9",
+      "result_id": "83f9df80-e3fa-4b5e-9287-bf10ff6062bd"
+    },
+    {
+      "claim_id": "8ed5312e-7c75-436c-9c41-8525eed88acc",
+      "result_id": "83f9df80-e3fa-4b5e-9287-bf10ff6062bd"
+    },
+    {
+      "claim_id": "b8178f1c-d9ce-49f0-b22a-b86cf03807da",
+      "result_id": "83f9df80-e3fa-4b5e-9287-bf10ff6062bd"
+    },
+    {
+      "claim_id": "8c4e4865-c41a-4e67-b985-f1da220f6ceb",
+      "result_id": "83f9df80-e3fa-4b5e-9287-bf10ff6062bd"
+    },
+    {
+      "claim_id": "5ac8c23c-db40-4d6c-86c1-3550aaca3605",
+      "result_id": "db98a5ce-9fc0-458e-a76e-9d818478e811"
+    },
+    {
+      "claim_id": "8f4ce580-bd72-4985-97be-f5131e672d87",
+      "result_id": "db98a5ce-9fc0-458e-a76e-9d818478e811"
+    },
+    {
+      "claim_id": "6d84a241-3b8a-4423-891b-50dc51e74d83",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "90f4a7f5-ccac-409a-ba7a-c17b223deb31",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "5cd5a59e-3786-4b95-b7ee-076a27e37f55",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "17368b73-d11d-43c7-9211-b86bc7e2a8e8",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "11edfbf1-e52f-43e3-81c0-be26626267fd",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "4b9ecf64-4545-41a1-9f57-1474284b14fa",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "86da22ab-0466-4889-8a51-da4c89d36d25",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "982088d1-cec6-4add-9b2d-6d9b5ab683ac",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "f84e9a88-d5d2-431e-8086-19879e0d437f",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "8da50eaa-2b1b-4892-a723-ac7d7f60e705",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "086de823-9bcc-4fbe-9874-d98d7af143ac",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "11ccb874-2641-4543-bb33-3315e63d3f92",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "207277a2-db09-4245-a815-6a7f8dc97694",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "a539e542-4d4d-4211-9510-ca7aa96ede22",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "97df886e-deb8-488d-a442-af1b2f41e1cc",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "f00bda6e-cb2d-49e2-9bf5-5a2a69fa0cc2",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "2461c5cf-3cce-4220-ad5a-a5b649b16ba5",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "346dd717-6d18-4a6c-b850-f3607c7042f8",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "0ceda91e-bbe6-469b-abc4-fba2f56d6064",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "8ef0ed53-ede4-4fe6-8f15-5251d341f1f4",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "36bd1675-488b-4a24-a5b5-d941a0442c63",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "ce8a0913-b0b7-4d86-9d90-81f52a6e2387",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "07e9f505-306a-4ff1-8435-46c0fc47cda9",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "7b71c3da-a457-4f00-8607-b494cd3974fb",
+      "result_id": "bccc3c70-75c5-4966-8bed-1b28cba4d6c5"
+    },
+    {
+      "claim_id": "92a15f4b-d7f0-4318-b1a2-3c8073ad7efe",
+      "result_id": "7953d9a4-f12f-4e5b-ae12-1e113be051e6"
+    },
+    {
+      "claim_id": "20c8e30b-3a2e-415c-bf64-1ab00bd85aa8",
+      "result_id": "dda048c0-f3e6-4552-b6a0-2c9f82ea51a8"
+    },
+    {
+      "claim_id": "9531d894-6226-4de5-97f1-19fe6c49197a",
+      "result_id": "dda048c0-f3e6-4552-b6a0-2c9f82ea51a8"
+    },
+    {
+      "claim_id": "d9e6f2e4-f670-410d-bf5a-bf92f506506b",
+      "result_id": "ca0783ee-5016-4c4e-a851-43af57d037e6"
+    },
+    {
+      "claim_id": "ea90e925-eaaa-4278-9a87-fc049788ec83",
+      "result_id": "ca0783ee-5016-4c4e-a851-43af57d037e6"
+    },
+    {
+      "claim_id": "5f5b605d-c269-4bf5-a15e-490180caeae9",
+      "result_id": "467f1e85-81ea-4cce-9170-403c012c9cfb"
+    },
+    {
+      "claim_id": "05f5aa2a-4a0e-4b95-b589-dcf9f6522a1c",
+      "result_id": "467f1e85-81ea-4cce-9170-403c012c9cfb"
+    },
+    {
+      "claim_id": "a59175be-3922-4c79-b3ec-0aa111bf038c",
+      "result_id": "467f1e85-81ea-4cce-9170-403c012c9cfb"
+    },
+    {
+      "claim_id": "a692225c-d44d-4ebd-9ee2-9776c279cdda",
+      "result_id": "17f0831c-f240-42d4-ba22-186a6510799c"
+    },
+    {
+      "claim_id": "090bde7b-93e3-4283-9da3-d6c94a8e18d8",
+      "result_id": "17f0831c-f240-42d4-ba22-186a6510799c"
+    },
+    {
+      "claim_id": "10d0d3f6-957b-49b7-a97e-87f65eaa9155",
+      "result_id": "17f0831c-f240-42d4-ba22-186a6510799c"
+    },
+    {
+      "claim_id": "7f28a01f-af48-4f69-9e53-111280287918",
+      "result_id": "17f0831c-f240-42d4-ba22-186a6510799c"
+    },
+    {
+      "claim_id": "9b7e03c5-66cf-43ba-af6b-684f5ae3a7d4",
+      "result_id": "17f0831c-f240-42d4-ba22-186a6510799c"
+    },
+    {
+      "claim_id": "a0ceb4b1-610a-4eea-9949-0af877545ed3",
+      "result_id": "17f0831c-f240-42d4-ba22-186a6510799c"
+    },
+    {
+      "claim_id": "0268d569-86ac-421e-b98c-af1af559d81d",
+      "result_id": "17f0831c-f240-42d4-ba22-186a6510799c"
+    },
+    {
+      "claim_id": "1ee2a1a9-f571-45a3-ab26-0d7ccc2baaed",
+      "result_id": "cd2947ff-d7ea-441f-be6d-fe2c59ecb549"
+    },
+    {
+      "claim_id": "4be24fdf-b8c4-463b-8de3-f4a715d6af46",
+      "result_id": "3f73f393-9a0b-4858-8af6-7d3d869410b1"
+    },
+    {
+      "claim_id": "7ce1ac70-9526-4373-bcf2-9a9326480dc6",
+      "result_id": "3f73f393-9a0b-4858-8af6-7d3d869410b1"
+    },
+    {
+      "claim_id": "d07a61ed-ca2f-41de-9ce9-cce98b3842cb",
+      "result_id": "3f73f393-9a0b-4858-8af6-7d3d869410b1"
+    },
+    {
+      "claim_id": "01daf134-7e72-45b4-9eab-768050af39a1",
+      "result_id": "3f73f393-9a0b-4858-8af6-7d3d869410b1"
+    },
+    {
+      "claim_id": "f289926d-fe97-44d8-8c3b-6dd0380df3ab",
+      "result_id": "682001e7-92ef-4d8c-bcd2-582e8e51c3a0"
+    },
+    {
+      "claim_id": "8a2cd1a9-adf5-4aa0-8abf-6b562d1f2342",
+      "result_id": "682001e7-92ef-4d8c-bcd2-582e8e51c3a0"
+    },
+    {
+      "claim_id": "9cf4d2a2-d283-43d8-8728-2dde388072c8",
+      "result_id": "682001e7-92ef-4d8c-bcd2-582e8e51c3a0"
+    },
+    {
+      "claim_id": "69eb463c-fa6f-4203-bdda-abbc450d410b",
+      "result_id": "682001e7-92ef-4d8c-bcd2-582e8e51c3a0"
+    },
+    {
+      "claim_id": "90b50d8d-5849-4f6d-95f4-588abbbd343f",
+      "result_id": "d762ff95-c905-4533-ac2a-15b7b73d96d9"
+    },
+    {
+      "claim_id": "c449fcdf-ef53-4a02-a65a-714618d10977",
+      "result_id": "d762ff95-c905-4533-ac2a-15b7b73d96d9"
+    },
+    {
+      "claim_id": "305f584e-8b10-4e4c-ba8b-05a733a56374",
+      "result_id": "d762ff95-c905-4533-ac2a-15b7b73d96d9"
+    }
+  ],
+  "comparisons": []
+}
